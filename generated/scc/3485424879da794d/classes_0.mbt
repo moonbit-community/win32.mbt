@@ -1,0 +1,14 @@
+///|
+pub fn AUTHNEXTSTEP_22033f8a0716::cancel_request() -> AUTHNEXTSTEP_22033f8a0716 {
+  AUTHNEXTSTEP_22033f8a0716::from_int(2)
+}
+
+///|
+pub fn AUTHNEXTSTEP_22033f8a0716::default_behavior() -> AUTHNEXTSTEP_22033f8a0716 {
+  AUTHNEXTSTEP_22033f8a0716::from_int(0)
+}
+
+///|
+pub fn AUTHNEXTSTEP_22033f8a0716::retry_request() -> AUTHNEXTSTEP_22033f8a0716 {
+  AUTHNEXTSTEP_22033f8a0716::from_int(1)
+}

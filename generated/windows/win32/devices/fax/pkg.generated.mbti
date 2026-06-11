@@ -1,0 +1,1306 @@
+// Generated using `moon info`, DON'T EDIT IT
+package "moonbit-community/win32api/windows/win32/devices/fax"
+
+import {
+  "moonbit-community/win32api/runtime/core",
+  "moonbit-community/win32api/runtime/strings",
+  "moonbit-community/win32api/scc/333c6d3e40818eab",
+}
+
+// Values
+pub fn can_send_to_fax_recipient() -> Bool raise @core.WindowsError
+
+pub fn can_send_to_fax_recipient_raw() -> Int
+
+pub let cf_msfaxsrv_device_id : String
+
+pub let cf_msfaxsrv_fsp_guid : String
+
+pub let cf_msfaxsrv_routeext_name : String
+
+pub let cf_msfaxsrv_routing_method_guid : String
+
+pub let cf_msfaxsrv_server_name : String
+
+pub fn fax_abort(@core.RawAddress, UInt) -> Bool raise @core.WindowsError
+
+pub fn fax_abort_raw(@core.RawAddress, UInt) -> Int
+
+pub fn fax_access_check(@core.RawAddress, UInt) -> Bool raise @core.WindowsError
+
+pub fn fax_access_check_raw(@core.RawAddress, UInt) -> Int
+
+pub fn fax_close(@core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn fax_close_raw(@core.RawAddress) -> Int
+
+pub fn fax_complete_job_params_a(@core.RawAddress, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn fax_complete_job_params_a_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn fax_complete_job_params_w(@core.RawAddress, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn fax_complete_job_params_w_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub let fax_config_query : UInt
+
+pub let fax_config_set : UInt
+
+pub fn fax_connect_fax_server_a(@strings.PStr, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn fax_connect_fax_server_a_raw(@core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn fax_connect_fax_server_w(@strings.PWStr, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn fax_connect_fax_server_w_raw(@core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub let fax_e_bad_group_configuration : Int
+
+pub let fax_e_device_num_limit_exceeded : Int
+
+pub let fax_e_directory_in_use : Int
+
+pub let fax_e_file_access_denied : Int
+
+pub let fax_e_group_in_use : Int
+
+pub let fax_e_group_not_found : Int
+
+pub let fax_e_message_not_found : Int
+
+pub let fax_e_not_ntfs : Int
+
+pub let fax_e_not_supported_on_this_sku : Int
+
+pub let fax_e_recipients_limit : Int
+
+pub let fax_e_rule_not_found : Int
+
+pub let fax_e_srv_outofmemory : Int
+
+pub let fax_e_version_mismatch : Int
+
+pub fn fax_enable_routing_method_a(@core.RawAddress, @strings.PStr, Int) -> Bool raise @core.WindowsError
+
+pub fn fax_enable_routing_method_a_raw(@core.RawAddress, @core.RawAddress, Int) -> @core.RawWin32Call[Int]
+
+pub fn fax_enable_routing_method_w(@core.RawAddress, @strings.PWStr, Int) -> Bool raise @core.WindowsError
+
+pub fn fax_enable_routing_method_w_raw(@core.RawAddress, @core.RawAddress, Int) -> @core.RawWin32Call[Int]
+
+pub fn fax_enum_global_routing_info_a(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn fax_enum_global_routing_info_a_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn fax_enum_global_routing_info_w(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn fax_enum_global_routing_info_w_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn fax_enum_jobs_a(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn fax_enum_jobs_a_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn fax_enum_jobs_w(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn fax_enum_jobs_w_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn fax_enum_ports_a(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn fax_enum_ports_a_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn fax_enum_ports_w(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn fax_enum_ports_w_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn fax_enum_routing_methods_a(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn fax_enum_routing_methods_a_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn fax_enum_routing_methods_w(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn fax_enum_routing_methods_w_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub let fax_err_bad_group_configuration : Int
+
+pub let fax_err_device_num_limit_exceeded : Int
+
+pub let fax_err_directory_in_use : Int
+
+pub let fax_err_end : Int
+
+pub let fax_err_file_access_denied : Int
+
+pub let fax_err_group_in_use : Int
+
+pub let fax_err_group_not_found : Int
+
+pub let fax_err_message_not_found : Int
+
+pub let fax_err_not_ntfs : Int
+
+pub let fax_err_not_supported_on_this_sku : Int
+
+pub let fax_err_recipients_limit : Int
+
+pub let fax_err_rule_not_found : Int
+
+pub let fax_err_srv_outofmemory : Int
+
+pub let fax_err_start : Int
+
+pub let fax_err_version_mismatch : Int
+
+pub fn fax_free_buffer(@core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn fax_free_buffer_raw(@core.RawAddress) -> Unit
+
+pub fn fax_get_configuration_a(@core.RawAddress, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn fax_get_configuration_a_raw(@core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn fax_get_configuration_w(@core.RawAddress, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn fax_get_configuration_w_raw(@core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn fax_get_device_status_a(@core.RawAddress, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn fax_get_device_status_a_raw(@core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn fax_get_device_status_w(@core.RawAddress, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn fax_get_device_status_w_raw(@core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn fax_get_job_a(@core.RawAddress, UInt, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn fax_get_job_a_raw(@core.RawAddress, UInt, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn fax_get_job_w(@core.RawAddress, UInt, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn fax_get_job_w_raw(@core.RawAddress, UInt, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn fax_get_logging_categories_a(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn fax_get_logging_categories_a_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn fax_get_logging_categories_w(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn fax_get_logging_categories_w_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn fax_get_page_data(@core.RawAddress, UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn fax_get_page_data_raw(@core.RawAddress, UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn fax_get_port_a(@core.RawAddress, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn fax_get_port_a_raw(@core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn fax_get_port_w(@core.RawAddress, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn fax_get_port_w_raw(@core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn fax_get_routing_info_a(@core.RawAddress, @strings.PStr, @core.RawAddress, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn fax_get_routing_info_a_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn fax_get_routing_info_w(@core.RawAddress, @strings.PWStr, @core.RawAddress, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn fax_get_routing_info_w_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn fax_initialize_event_queue(@core.RawAddress, @core.RawAddress, UInt64, @core.RawAddress, UInt) -> Bool raise @core.WindowsError
+
+pub fn fax_initialize_event_queue_raw(@core.RawAddress, @core.RawAddress, UInt64, @core.RawAddress, UInt) -> Int
+
+pub let fax_job_manage : UInt
+
+pub let fax_job_query : UInt
+
+pub let fax_job_submit : UInt
+
+pub fn fax_open_port(@core.RawAddress, UInt, UInt, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn fax_open_port_raw(@core.RawAddress, UInt, UInt, @core.RawAddress) -> Int
+
+pub let fax_port_query : UInt
+
+pub let fax_port_set : UInt
+
+pub fn fax_print_cover_page_a(@333c6d3e40818eab.FAXCONTEXTINFOA_0ddddcc9aaf1, @333c6d3e40818eab.FAXCOVERPAGEINFOA_2f65eaff438a) -> Bool raise @core.WindowsError
+
+pub fn fax_print_cover_page_a_raw(@core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn fax_print_cover_page_w(@333c6d3e40818eab.FAXCONTEXTINFOW_189ba5c7cc8d, @333c6d3e40818eab.FAXCOVERPAGEINFOW_64b8fa7e8b3b) -> Bool raise @core.WindowsError
+
+pub fn fax_print_cover_page_w_raw(@core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn fax_register_routing_extension_w(@core.RawAddress, @strings.PWStr, @strings.PWStr, @strings.PWStr, @core.RawAddress, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn fax_register_routing_extension_w_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn fax_register_service_provider_w(@strings.PWStr, @strings.PWStr, @strings.PWStr, @strings.PWStr) -> Bool raise @core.WindowsError
+
+pub fn fax_register_service_provider_w_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn fax_send_document_a(@core.RawAddress, @strings.PStr, @333c6d3e40818eab.FAXJOBPARAMA_f05a97bd0b18, @333c6d3e40818eab.FAXCOVERPAGEINFOA_2f65eaff438a, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn fax_send_document_a_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn fax_send_document_for_broadcast_a(@core.RawAddress, @strings.PStr, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn fax_send_document_for_broadcast_a_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn fax_send_document_for_broadcast_w(@core.RawAddress, @strings.PWStr, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn fax_send_document_for_broadcast_w_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn fax_send_document_w(@core.RawAddress, @strings.PWStr, @333c6d3e40818eab.FAXJOBPARAMW_35da313996e5, @333c6d3e40818eab.FAXCOVERPAGEINFOW_64b8fa7e8b3b, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn fax_send_document_w_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn fax_set_configuration_a(@core.RawAddress, @333c6d3e40818eab.FAXCONFIGURATIONA_5fcda46407e5) -> Bool raise @core.WindowsError
+
+pub fn fax_set_configuration_a_raw(@core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn fax_set_configuration_w(@core.RawAddress, @333c6d3e40818eab.FAXCONFIGURATIONW_17a6fdef6d63) -> Bool raise @core.WindowsError
+
+pub fn fax_set_configuration_w_raw(@core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn fax_set_global_routing_info_a(@core.RawAddress, @333c6d3e40818eab.FAXGLOBALROUTINGINFOA_e5650ca81326) -> Bool raise @core.WindowsError
+
+pub fn fax_set_global_routing_info_a_raw(@core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn fax_set_global_routing_info_w(@core.RawAddress, @333c6d3e40818eab.FAXGLOBALROUTINGINFOW_6266569dc116) -> Bool raise @core.WindowsError
+
+pub fn fax_set_global_routing_info_w_raw(@core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn fax_set_job_a(@core.RawAddress, UInt, UInt, @333c6d3e40818eab.FAXJOBENTRYA_098a0bec9eb0) -> Bool raise @core.WindowsError
+
+pub fn fax_set_job_a_raw(@core.RawAddress, UInt, UInt, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn fax_set_job_w(@core.RawAddress, UInt, UInt, @333c6d3e40818eab.FAXJOBENTRYW_4266675d1639) -> Bool raise @core.WindowsError
+
+pub fn fax_set_job_w_raw(@core.RawAddress, UInt, UInt, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn fax_set_logging_categories_a(@core.RawAddress, @333c6d3e40818eab.FAXLOGCATEGORYA_d7862aa33254, UInt) -> Bool raise @core.WindowsError
+
+pub fn fax_set_logging_categories_a_raw(@core.RawAddress, @core.RawAddress, UInt) -> @core.RawWin32Call[Int]
+
+pub fn fax_set_logging_categories_w(@core.RawAddress, @333c6d3e40818eab.FAXLOGCATEGORYW_4a3195bceba4, UInt) -> Bool raise @core.WindowsError
+
+pub fn fax_set_logging_categories_w_raw(@core.RawAddress, @core.RawAddress, UInt) -> @core.RawWin32Call[Int]
+
+pub fn fax_set_port_a(@core.RawAddress, @333c6d3e40818eab.FAXPORTINFOA_79bf93b97cb1) -> Bool raise @core.WindowsError
+
+pub fn fax_set_port_a_raw(@core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn fax_set_port_w(@core.RawAddress, @333c6d3e40818eab.FAXPORTINFOW_d335db2f261d) -> Bool raise @core.WindowsError
+
+pub fn fax_set_port_w_raw(@core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn fax_set_routing_info_a(@core.RawAddress, @strings.PStr, @core.RawAddress, UInt) -> Bool raise @core.WindowsError
+
+pub fn fax_set_routing_info_a_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, UInt) -> @core.RawWin32Call[Int]
+
+pub fn fax_set_routing_info_w(@core.RawAddress, @strings.PWStr, @core.RawAddress, UInt) -> Bool raise @core.WindowsError
+
+pub fn fax_set_routing_info_w_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, UInt) -> @core.RawWin32Call[Int]
+
+pub fn fax_start_print_job_a(@strings.PStr, @333c6d3e40818eab.FAXPRINTINFOA_d299e8368e19, @core.RawAddress, @333c6d3e40818eab.FAXCONTEXTINFOA_0ddddcc9aaf1) -> Bool raise @core.WindowsError
+
+pub fn fax_start_print_job_a_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn fax_start_print_job_w(@strings.PWStr, @333c6d3e40818eab.FAXPRINTINFOW_6f2f318d127d, @core.RawAddress, @333c6d3e40818eab.FAXCONTEXTINFOW_189ba5c7cc8d) -> Bool raise @core.WindowsError
+
+pub fn fax_start_print_job_w_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn fax_unregister_service_provider_w(@strings.PWStr) -> Bool raise @core.WindowsError
+
+pub fn fax_unregister_service_provider_w_raw(@core.RawAddress) -> Int
+
+pub let faxdevreceive_size : UInt
+
+pub let faxdevreportstatus_size : UInt
+
+pub let fei_aborting : UInt
+
+pub let fei_answered : UInt
+
+pub let fei_bad_address : UInt
+
+pub let fei_busy : UInt
+
+pub let fei_call_blacklisted : UInt
+
+pub let fei_call_delayed : UInt
+
+pub let fei_completed : UInt
+
+pub let fei_deleted : UInt
+
+pub let fei_dialing : UInt
+
+pub let fei_disconnected : UInt
+
+pub let fei_fatal_error : UInt
+
+pub let fei_faxsvc_ended : UInt
+
+pub let fei_faxsvc_started : UInt
+
+pub let fei_handled : UInt
+
+pub let fei_idle : UInt
+
+pub let fei_initializing : UInt
+
+pub let fei_job_queued : UInt
+
+pub let fei_line_unavailable : UInt
+
+pub let fei_modem_powered_off : UInt
+
+pub let fei_modem_powered_on : UInt
+
+pub let fei_nevents : UInt
+
+pub let fei_no_answer : UInt
+
+pub let fei_no_dial_tone : UInt
+
+pub let fei_not_fax_call : UInt
+
+pub let fei_receiving : UInt
+
+pub let fei_ringing : UInt
+
+pub let fei_routing : UInt
+
+pub let fei_sending : UInt
+
+pub let fpf_receive : UInt
+
+pub let fpf_send : UInt
+
+pub let fpf_virtual : UInt
+
+pub let fps_aborting : UInt
+
+pub let fps_answered : UInt
+
+pub let fps_available : UInt
+
+pub let fps_bad_address : UInt
+
+pub let fps_busy : UInt
+
+pub let fps_call_blacklisted : UInt
+
+pub let fps_call_delayed : UInt
+
+pub let fps_completed : UInt
+
+pub let fps_dialing : UInt
+
+pub let fps_disconnected : UInt
+
+pub let fps_fatal_error : UInt
+
+pub let fps_handled : UInt
+
+pub let fps_initializing : UInt
+
+pub let fps_no_answer : UInt
+
+pub let fps_no_dial_tone : UInt
+
+pub let fps_not_fax_call : UInt
+
+pub let fps_offline : UInt
+
+pub let fps_receiving : UInt
+
+pub let fps_ringing : UInt
+
+pub let fps_routing : UInt
+
+pub let fps_sending : UInt
+
+pub let fps_unavailable : UInt
+
+pub let fs_answered : UInt
+
+pub let fs_bad_address : UInt
+
+pub let fs_busy : UInt
+
+pub let fs_call_blacklisted : UInt
+
+pub let fs_call_delayed : UInt
+
+pub let fs_completed : UInt
+
+pub let fs_dialing : UInt
+
+pub let fs_disconnected : UInt
+
+pub let fs_fatal_error : UInt
+
+pub let fs_handled : UInt
+
+pub let fs_initializing : UInt
+
+pub let fs_line_unavailable : UInt
+
+pub let fs_no_answer : UInt
+
+pub let fs_no_dial_tone : UInt
+
+pub let fs_not_fax_call : UInt
+
+pub let fs_receiving : UInt
+
+pub let fs_transmitting : UInt
+
+pub let fs_user_abort : UInt
+
+pub let is_digital_camera_str : String
+
+pub let is_digital_camera_val : UInt
+
+pub let js_deleting : UInt
+
+pub let js_failed : UInt
+
+pub let js_inprogress : UInt
+
+pub let js_noline : UInt
+
+pub let js_paused : UInt
+
+pub let js_pending : UInt
+
+pub let js_retries_exceeded : UInt
+
+pub let js_retrying : UInt
+
+pub let jt_fail_receive : UInt
+
+pub let jt_receive : UInt
+
+pub let jt_routing : UInt
+
+pub let jt_send : UInt
+
+pub let jt_unknown : UInt
+
+pub let l_default_prefetch_size : Int
+
+pub let max_notification_data : UInt
+
+pub let ms_faxroute_email_guid : String
+
+pub let ms_faxroute_folder_guid : String
+
+pub let ms_faxroute_printing_guid : String
+
+pub let prv_default_prefetch_size : UInt
+
+pub let regstr_val_baudrate : String
+
+pub let regstr_val_baudrate_a : String
+
+pub let regstr_val_data_w : String
+
+pub let regstr_val_dev_name_w : String
+
+pub let regstr_val_device_name_w : String
+
+pub let regstr_val_devicesubtype_w : String
+
+pub let regstr_val_devicetype_w : String
+
+pub let regstr_val_driver_desc_w : String
+
+pub let regstr_val_friendly_name_w : String
+
+pub let regstr_val_generic_caps_w : String
+
+pub let regstr_val_guid : String
+
+pub let regstr_val_guid_w : String
+
+pub let regstr_val_hardware : String
+
+pub let regstr_val_hardware_w : String
+
+pub let regstr_val_launch_apps : String
+
+pub let regstr_val_launch_apps_w : String
+
+pub let regstr_val_launchable : String
+
+pub let regstr_val_launchable_w : String
+
+pub let regstr_val_shutdowndelay : String
+
+pub let regstr_val_shutdowndelay_w : String
+
+pub let regstr_val_type_w : String
+
+pub let regstr_val_vendor_name_w : String
+
+pub fn send_to_fax_recipient(@333c6d3e40818eab.SendToMode_dd635bffbcce, @strings.PWStr) -> UInt raise @core.WindowsError
+
+pub fn send_to_fax_recipient_raw(Int, @core.RawAddress) -> UInt
+
+pub let sti_add_device_broadcast_action : String
+
+pub let sti_add_device_broadcast_string : String
+
+pub let sti_changenoeffect : Int
+
+pub fn sti_create_instance_w(@core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn sti_create_instance_w_raw(@core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> Int
+
+pub let sti_device_create_both : UInt
+
+pub let sti_device_create_data : UInt
+
+pub let sti_device_create_for_monitor : UInt
+
+pub let sti_device_create_mask : UInt
+
+pub let sti_device_create_status : UInt
+
+pub let sti_device_value_default_launchapp : String
+
+pub let sti_device_value_default_launchapp_a : String
+
+pub let sti_device_value_disable_notifications : String
+
+pub let sti_device_value_disable_notifications_a : String
+
+pub let sti_device_value_icm_profile : String
+
+pub let sti_device_value_icm_profile_a : String
+
+pub let sti_device_value_isis_name : String
+
+pub let sti_device_value_isis_name_a : String
+
+pub let sti_device_value_timeout : String
+
+pub let sti_device_value_timeout_a : String
+
+pub let sti_device_value_twain_name : String
+
+pub let sti_device_value_twain_name_a : String
+
+pub let sti_devstatus_events_state : UInt
+
+pub let sti_devstatus_online_state : UInt
+
+pub let sti_diagcode_hwpresence : UInt
+
+pub let sti_error_no_error : Int
+
+pub let sti_eventhandling_enabled : UInt
+
+pub let sti_eventhandling_pending : UInt
+
+pub let sti_eventhandling_polling : UInt
+
+pub let sti_gencap_auto_portselect : UInt
+
+pub let sti_gencap_common_mask : UInt
+
+pub let sti_gencap_generate_arrivalevent : UInt
+
+pub let sti_gencap_notifications : UInt
+
+pub let sti_gencap_polling_needed : UInt
+
+pub let sti_gencap_subset : UInt
+
+pub let sti_gencap_wia : UInt
+
+pub let sti_hw_config_parallel : UInt
+
+pub let sti_hw_config_scsi : UInt
+
+pub let sti_hw_config_serial : UInt
+
+pub let sti_hw_config_unknown : UInt
+
+pub let sti_hw_config_usb : UInt
+
+pub let sti_max_internal_name_length : UInt
+
+pub let sti_notconnected : Int
+
+pub let sti_ok : Int
+
+pub let sti_onlinestate_busy : UInt
+
+pub let sti_onlinestate_error : UInt
+
+pub let sti_onlinestate_initializing : UInt
+
+pub let sti_onlinestate_io_active : UInt
+
+pub let sti_onlinestate_offline : UInt
+
+pub let sti_onlinestate_operational : UInt
+
+pub let sti_onlinestate_paper_jam : UInt
+
+pub let sti_onlinestate_paper_problem : UInt
+
+pub let sti_onlinestate_paused : UInt
+
+pub let sti_onlinestate_pending : UInt
+
+pub let sti_onlinestate_power_save : UInt
+
+pub let sti_onlinestate_transferring : UInt
+
+pub let sti_onlinestate_user_intervention : UInt
+
+pub let sti_onlinestate_warming_up : UInt
+
+pub let sti_raw_reserved : UInt
+
+pub let sti_remove_device_broadcast_action : String
+
+pub let sti_remove_device_broadcast_string : String
+
+pub let sti_subscribe_flag_event : UInt
+
+pub let sti_subscribe_flag_window : UInt
+
+pub let sti_trace_error : UInt
+
+pub let sti_trace_information : UInt
+
+pub let sti_trace_warning : UInt
+
+pub let sti_unicode : UInt
+
+pub let sti_usd_gencap_native_pushsupport : UInt
+
+pub let sti_version : UInt
+
+pub let sti_version_flag_mask : UInt
+
+pub let sti_version_flag_unicode : UInt
+
+pub let sti_version_min_allowed : UInt
+
+pub let sti_version_real : UInt
+
+pub let stiedfl_alldevices : UInt
+
+pub let stiedfl_attachedonly : UInt
+
+pub let stierr_already_initialized : Int
+
+pub let stierr_baddriver : Int
+
+pub let stierr_beta_version : Int
+
+pub let stierr_device_locked : Int
+
+pub let stierr_device_notready : Int
+
+pub let stierr_devicenotreg : Int
+
+pub let stierr_generic : Int
+
+pub let stierr_handleexists : Int
+
+pub let stierr_invalid_device_name : Int
+
+pub let stierr_invalid_hw_type : Int
+
+pub let stierr_invalid_param : Int
+
+pub let stierr_needs_lock : Int
+
+pub let stierr_noevents : Int
+
+pub let stierr_nointerface : Int
+
+pub let stierr_not_initialized : Int
+
+pub let stierr_notinitialized : Int
+
+pub let stierr_objectnotfound : Int
+
+pub let stierr_old_version : Int
+
+pub let stierr_outofmemory : Int
+
+pub let stierr_readonly : Int
+
+pub let stierr_sharing_violation : Int
+
+pub let stierr_unsupported : Int
+
+pub let supports_mscplus_str : String
+
+pub let supports_mscplus_val : UInt
+
+pub let wchar_reassign_recipients_delimiter : UInt
+
+pub let wia_incompat_xp : UInt
+
+// Errors
+
+// Types and methods
+
+// Type aliases
+pub using @333c6d3e40818eab {type ERRORINFOW_13f662567f63 as ERRORINFOW}
+
+pub using @333c6d3e40818eab {type FAXACCESSRIGHTSENUM_eb1f5b7133db as FAXACCESSRIGHTSENUM}
+
+pub using @333c6d3e40818eab {type FAXACCESSRIGHTSENUM2_7a2eaf9ef8a6 as FAXACCESSRIGHTSENUM2}
+
+pub using @333c6d3e40818eab {type FAXACCOUNTEVENTSTYPEENUM_efce6588b000 as FAXACCOUNTEVENTSTYPEENUM}
+
+pub using @333c6d3e40818eab {type FAXCONFIGURATIONA_5fcda46407e5 as FAXCONFIGURATIONA}
+
+pub using @333c6d3e40818eab {type FAXCONFIGURATIONW_17a6fdef6d63 as FAXCONFIGURATIONW}
+
+pub using @333c6d3e40818eab {type FAXCONTEXTINFOA_0ddddcc9aaf1 as FAXCONTEXTINFOA}
+
+pub using @333c6d3e40818eab {type FAXCONTEXTINFOW_189ba5c7cc8d as FAXCONTEXTINFOW}
+
+pub using @333c6d3e40818eab {type FAXCOVERPAGEINFOA_2f65eaff438a as FAXCOVERPAGEINFOA}
+
+pub using @333c6d3e40818eab {type FAXCOVERPAGEINFOW_64b8fa7e8b3b as FAXCOVERPAGEINFOW}
+
+pub using @333c6d3e40818eab {type FAXCOVERPAGETYPEENUM_531191f96998 as FAXCOVERPAGETYPEENUM}
+
+pub using @333c6d3e40818eab {type FAXDEVICERECEIVEMODEENUM_668d31fe590e as FAXDEVICERECEIVEMODEENUM}
+
+pub using @333c6d3e40818eab {type FAXDEVICESTATUSA_686e11692b8d as FAXDEVICESTATUSA}
+
+pub using @333c6d3e40818eab {type FAXDEVICESTATUSW_fd25a0d3ac83 as FAXDEVICESTATUSW}
+
+pub using @333c6d3e40818eab {type FAXDEVSTATUS_c43111e05ca2 as FAXDEVSTATUS}
+
+pub using @333c6d3e40818eab {type FAXENUMDELIVERYREPORTTYPES_1bf6b2fd267d as FAXENUMDELIVERYREPORTTYPES}
+
+pub using @333c6d3e40818eab {type FAXENUMDEVICEIDSOURCE_9753a0035814 as FAXENUMDEVICEIDSOURCE}
+
+pub using @333c6d3e40818eab {type FAXENUMJOBCOMMANDS_9d30efff1cdc as FAXENUMJOBCOMMANDS}
+
+pub using @333c6d3e40818eab {type FAXENUMJOBSENDATTRIBUTES_00ea5af77447 as FAXENUMJOBSENDATTRIBUTES}
+
+pub using @333c6d3e40818eab {type FAXENUMLOGCATEGORIES_1a93574b81d1 as FAXENUMLOGCATEGORIES}
+
+pub using @333c6d3e40818eab {type FAXENUMLOGLEVELS_c416773f455a as FAXENUMLOGLEVELS}
+
+pub using @333c6d3e40818eab {type FAXENUMPORTOPENTYPE_83a57eca1afa as FAXENUMPORTOPENTYPE}
+
+pub using @333c6d3e40818eab {type FAXEVENTA_cd0ba08d3cc4 as FAXEVENTA}
+
+pub using @333c6d3e40818eab {type FAXEVENTW_922b4a5fee6d as FAXEVENTW}
+
+pub using @333c6d3e40818eab {type FAXGLOBALROUTINGINFOA_e5650ca81326 as FAXGLOBALROUTINGINFOA}
+
+pub using @333c6d3e40818eab {type FAXGLOBALROUTINGINFOW_6266569dc116 as FAXGLOBALROUTINGINFOW}
+
+pub using @333c6d3e40818eab {type FAXGROUPSTATUSENUM_2befcc0a6428 as FAXGROUPSTATUSENUM}
+
+pub using @333c6d3e40818eab {type FAXJOBENTRYA_098a0bec9eb0 as FAXJOBENTRYA}
+
+pub using @333c6d3e40818eab {type FAXJOBENTRYW_4266675d1639 as FAXJOBENTRYW}
+
+pub using @333c6d3e40818eab {type FAXJOBEXTENDEDSTATUSENUM_86e8fe924d78 as FAXJOBEXTENDEDSTATUSENUM}
+
+pub using @333c6d3e40818eab {type FAXJOBOPERATIONSENUM_790353ba2324 as FAXJOBOPERATIONSENUM}
+
+pub using @333c6d3e40818eab {type FAXJOBPARAMA_f05a97bd0b18 as FAXJOBPARAMA}
+
+pub using @333c6d3e40818eab {type FAXJOBPARAMW_35da313996e5 as FAXJOBPARAMW}
+
+pub using @333c6d3e40818eab {type FAXJOBSTATUSENUM_5f73aad9f4cf as FAXJOBSTATUSENUM}
+
+pub using @333c6d3e40818eab {type FAXJOBTYPEENUM_7e34fc848131 as FAXJOBTYPEENUM}
+
+pub using @333c6d3e40818eab {type FAXLOGCATEGORYA_d7862aa33254 as FAXLOGCATEGORYA}
+
+pub using @333c6d3e40818eab {type FAXLOGCATEGORYW_4a3195bceba4 as FAXLOGCATEGORYW}
+
+pub using @333c6d3e40818eab {type FAXLOGLEVELENUM_50bb9e92dd95 as FAXLOGLEVELENUM}
+
+pub using @333c6d3e40818eab {type FAXPORTINFOA_79bf93b97cb1 as FAXPORTINFOA}
+
+pub using @333c6d3e40818eab {type FAXPORTINFOW_d335db2f261d as FAXPORTINFOW}
+
+pub using @333c6d3e40818eab {type FAXPRINTINFOA_d299e8368e19 as FAXPRINTINFOA}
+
+pub using @333c6d3e40818eab {type FAXPRINTINFOW_6f2f318d127d as FAXPRINTINFOW}
+
+pub using @333c6d3e40818eab {type FAXPRIORITYTYPEENUM_e23c39c1a9f4 as FAXPRIORITYTYPEENUM}
+
+pub using @333c6d3e40818eab {type FAXPROVIDERSTATUSENUM_a300ff236f64 as FAXPROVIDERSTATUSENUM}
+
+pub using @333c6d3e40818eab {type FAXRECEIPTTYPEENUM_d489b91ae16d as FAXRECEIPTTYPEENUM}
+
+pub using @333c6d3e40818eab {type FAXRECEIVE_ea96d838111b as FAXRECEIVE}
+
+pub using @333c6d3e40818eab {type FAXROUTE_23a12fe66757 as FAXROUTE}
+
+pub using @333c6d3e40818eab {type FAXROUTECALLBACKROUTINES_1493b6261a1d as FAXROUTECALLBACKROUTINES}
+
+pub using @333c6d3e40818eab {type FAXROUTEENABLE_37147a3a4349 as FAXROUTEENABLE}
+
+pub using @333c6d3e40818eab {type FAXROUTINGMETHODA_7abbb470b510 as FAXROUTINGMETHODA}
+
+pub using @333c6d3e40818eab {type FAXROUTINGMETHODW_42b4695ca143 as FAXROUTINGMETHODW}
+
+pub using @333c6d3e40818eab {type FAXROUTINGRULECODEENUM_f2692782c441 as FAXROUTINGRULECODEENUM}
+
+pub using @333c6d3e40818eab {type FAXRULESTATUSENUM_ff231d43ba97 as FAXRULESTATUSENUM}
+
+pub using @333c6d3e40818eab {type FAXSCHEDULETYPEENUM_2ea28a1a7b27 as FAXSCHEDULETYPEENUM}
+
+pub using @333c6d3e40818eab {type FAXSEND_9f472be932fc as FAXSEND}
+
+pub using @333c6d3e40818eab {type FAXSERVERAPIVERSIONENUM_e8eacd7d1cd9 as FAXSERVERAPIVERSIONENUM}
+
+pub using @333c6d3e40818eab {type FAXSERVEREVENTSTYPEENUM_71e9c840998a as FAXSERVEREVENTSTYPEENUM}
+
+pub using @333c6d3e40818eab {type FAXSMTPAUTHENTICATIONTYPEENUM_9a0819eca279 as FAXSMTPAUTHENTICATIONTYPEENUM}
+
+pub using @333c6d3e40818eab {type FAXTIME_6c77dd8efb8d as FAXTIME}
+
+pub using @333c6d3e40818eab {type FaxAccount_577aa3939b0e as FaxAccount}
+
+pub using @333c6d3e40818eab {type FaxAccountFolders_80e6a20bd8e7 as FaxAccountFolders}
+
+pub using @333c6d3e40818eab {type FaxAccountIncomingArchive_3c43827a76fe as FaxAccountIncomingArchive}
+
+pub using @333c6d3e40818eab {type FaxAccountIncomingQueue_637f555bbd12 as FaxAccountIncomingQueue}
+
+pub using @333c6d3e40818eab {type FaxAccountOutgoingArchive_7626f572eceb as FaxAccountOutgoingArchive}
+
+pub using @333c6d3e40818eab {type FaxAccountOutgoingQueue_3fdea6659904 as FaxAccountOutgoingQueue}
+
+pub using @333c6d3e40818eab {type FaxAccountSet_e303b9387971 as FaxAccountSet}
+
+pub using @333c6d3e40818eab {type FaxAccounts_12626acbbd88 as FaxAccounts}
+
+pub using @333c6d3e40818eab {type FaxActivity_70918870828e as FaxActivity}
+
+pub using @333c6d3e40818eab {type FaxActivityLogging_538a78d97521 as FaxActivityLogging}
+
+pub using @333c6d3e40818eab {type FaxConfiguration_0ccd81624428 as FaxConfiguration}
+
+pub using @333c6d3e40818eab {type FaxDevice_9bf5ebbecfa8 as FaxDevice}
+
+pub using @333c6d3e40818eab {type FaxDeviceIds_12f24d853377 as FaxDeviceIds}
+
+pub using @333c6d3e40818eab {type FaxDeviceProvider_d75be152f5da as FaxDeviceProvider}
+
+pub using @333c6d3e40818eab {type FaxDeviceProviders_4470f75a944d as FaxDeviceProviders}
+
+pub using @333c6d3e40818eab {type FaxDevices_0ccfefbbfacd as FaxDevices}
+
+pub using @333c6d3e40818eab {type FaxDocument_dfb188c68b51 as FaxDocument}
+
+pub using @333c6d3e40818eab {type FaxEventLogging_074f9a8bd86e as FaxEventLogging}
+
+pub using @333c6d3e40818eab {type FaxFolders_95d46ef6fe15 as FaxFolders}
+
+pub using @333c6d3e40818eab {type FaxInboundRouting_3172ae588594 as FaxInboundRouting}
+
+pub using @333c6d3e40818eab {type FaxInboundRoutingExtension_5f147fad7701 as FaxInboundRoutingExtension}
+
+pub using @333c6d3e40818eab {type FaxInboundRoutingExtensions_a12ba326ea40 as FaxInboundRoutingExtensions}
+
+pub using @333c6d3e40818eab {type FaxInboundRoutingMethod_207e3ce2ce17 as FaxInboundRoutingMethod}
+
+pub using @333c6d3e40818eab {type FaxInboundRoutingMethods_a885981b3f72 as FaxInboundRoutingMethods}
+
+pub using @333c6d3e40818eab {type FaxIncomingArchive_aed7d428a958 as FaxIncomingArchive}
+
+pub using @333c6d3e40818eab {type FaxIncomingJob_7f6ebade495c as FaxIncomingJob}
+
+pub using @333c6d3e40818eab {type FaxIncomingJobs_0f52a4171090 as FaxIncomingJobs}
+
+pub using @333c6d3e40818eab {type FaxIncomingMessage_d58ee967916c as FaxIncomingMessage}
+
+pub using @333c6d3e40818eab {type FaxIncomingMessageIterator_515b17c788fc as FaxIncomingMessageIterator}
+
+pub using @333c6d3e40818eab {type FaxIncomingQueue_875abd63fa91 as FaxIncomingQueue}
+
+pub using @333c6d3e40818eab {type FaxJobStatus_711ab77bfbee as FaxJobStatus}
+
+pub using @333c6d3e40818eab {type FaxLoggingOptions_b54da8816a06 as FaxLoggingOptions}
+
+pub using @333c6d3e40818eab {type FaxOutboundRouting_fffe25c8d73a as FaxOutboundRouting}
+
+pub using @333c6d3e40818eab {type FaxOutboundRoutingGroup_a42c3de64153 as FaxOutboundRoutingGroup}
+
+pub using @333c6d3e40818eab {type FaxOutboundRoutingGroups_7d0bcf503397 as FaxOutboundRoutingGroups}
+
+pub using @333c6d3e40818eab {type FaxOutboundRoutingRule_0ae7245a60d6 as FaxOutboundRoutingRule}
+
+pub using @333c6d3e40818eab {type FaxOutboundRoutingRules_7af130289c7b as FaxOutboundRoutingRules}
+
+pub using @333c6d3e40818eab {type FaxOutgoingArchive_d60fe41f1de5 as FaxOutgoingArchive}
+
+pub using @333c6d3e40818eab {type FaxOutgoingJob_5d91936a79d2 as FaxOutgoingJob}
+
+pub using @333c6d3e40818eab {type FaxOutgoingJobs_7964169886e9 as FaxOutgoingJobs}
+
+pub using @333c6d3e40818eab {type FaxOutgoingMessage_3b684824f375 as FaxOutgoingMessage}
+
+pub using @333c6d3e40818eab {type FaxOutgoingMessageIterator_3113ee0f3b5f as FaxOutgoingMessageIterator}
+
+pub using @333c6d3e40818eab {type FaxOutgoingQueue_4737fbd49049 as FaxOutgoingQueue}
+
+pub using @333c6d3e40818eab {type FaxReceiptOptions_8685561a2e9a as FaxReceiptOptions}
+
+pub using @333c6d3e40818eab {type FaxRecipient_270af601c396 as FaxRecipient}
+
+pub using @333c6d3e40818eab {type FaxRecipients_308ae17f5c81 as FaxRecipients}
+
+pub using @333c6d3e40818eab {type FaxSecurity_557e1454a4bf as FaxSecurity}
+
+pub using @333c6d3e40818eab {type FaxSecurity2_d6fc89e9cb0a as FaxSecurity2}
+
+pub using @333c6d3e40818eab {type FaxSender_bca7f0dbf691 as FaxSender}
+
+pub using @333c6d3e40818eab {type FaxServer_2ddb7d26af17 as FaxServer}
+
+pub using @333c6d3e40818eab {type IFaxAccount_e211efd3fcba as IFaxAccount}
+
+pub using @333c6d3e40818eab {type IFaxAccountFolders_e4af4cf1db65 as IFaxAccountFolders}
+
+pub using @333c6d3e40818eab {type IFaxAccountIncomingArchive_0f641f1bb7a5 as IFaxAccountIncomingArchive}
+
+pub using @333c6d3e40818eab {type IFaxAccountIncomingQueue_fb61a14053e3 as IFaxAccountIncomingQueue}
+
+pub using @333c6d3e40818eab {type IFaxAccountNotify_22f174aa1ba9 as IFaxAccountNotify}
+
+pub using @333c6d3e40818eab {type IFaxAccountOutgoingArchive_fc1a12687fc8 as IFaxAccountOutgoingArchive}
+
+pub using @333c6d3e40818eab {type IFaxAccountOutgoingQueue_99df58d37db2 as IFaxAccountOutgoingQueue}
+
+pub using @333c6d3e40818eab {type IFaxAccountSet_2a3f638501c5 as IFaxAccountSet}
+
+pub using @333c6d3e40818eab {type IFaxAccounts_c28a15503971 as IFaxAccounts}
+
+pub using @333c6d3e40818eab {type IFaxActivity_cbe0fd8326fa as IFaxActivity}
+
+pub using @333c6d3e40818eab {type IFaxActivityLogging_e05668b4b664 as IFaxActivityLogging}
+
+pub using @333c6d3e40818eab {type IFaxConfiguration_6272098414e2 as IFaxConfiguration}
+
+pub using @333c6d3e40818eab {type IFaxDevice_3784a636522d as IFaxDevice}
+
+pub using @333c6d3e40818eab {type IFaxDeviceIds_95023154a0b5 as IFaxDeviceIds}
+
+pub using @333c6d3e40818eab {type IFaxDeviceProvider_859af2212fcd as IFaxDeviceProvider}
+
+pub using @333c6d3e40818eab {type IFaxDeviceProviders_a972d74caf57 as IFaxDeviceProviders}
+
+pub using @333c6d3e40818eab {type IFaxDevices_b8a169003010 as IFaxDevices}
+
+pub using @333c6d3e40818eab {type IFaxDocument_8620199d49e3 as IFaxDocument}
+
+pub using @333c6d3e40818eab {type IFaxDocument2_0054a73367da as IFaxDocument2}
+
+pub using @333c6d3e40818eab {type IFaxEventLogging_7e5a28f9be5f as IFaxEventLogging}
+
+pub using @333c6d3e40818eab {type IFaxFolders_78f2619d3296 as IFaxFolders}
+
+pub using @333c6d3e40818eab {type IFaxInboundRouting_4f63f0ecd98e as IFaxInboundRouting}
+
+pub using @333c6d3e40818eab {type IFaxInboundRoutingExtension_8f94cf95ef49 as IFaxInboundRoutingExtension}
+
+pub using @333c6d3e40818eab {type IFaxInboundRoutingExtensions_12ae02178233 as IFaxInboundRoutingExtensions}
+
+pub using @333c6d3e40818eab {type IFaxInboundRoutingMethod_f33c12c4d525 as IFaxInboundRoutingMethod}
+
+pub using @333c6d3e40818eab {type IFaxInboundRoutingMethods_26a1da242ce3 as IFaxInboundRoutingMethods}
+
+pub using @333c6d3e40818eab {type IFaxIncomingArchive_789f39dc512b as IFaxIncomingArchive}
+
+pub using @333c6d3e40818eab {type IFaxIncomingJob_b11b7c65d9b1 as IFaxIncomingJob}
+
+pub using @333c6d3e40818eab {type IFaxIncomingJobs_7acb92ff5d74 as IFaxIncomingJobs}
+
+pub using @333c6d3e40818eab {type IFaxIncomingMessage_9d83dccf5b3c as IFaxIncomingMessage}
+
+pub using @333c6d3e40818eab {type IFaxIncomingMessage2_91394f0bb540 as IFaxIncomingMessage2}
+
+pub using @333c6d3e40818eab {type IFaxIncomingMessageIterator_4155aab0a73c as IFaxIncomingMessageIterator}
+
+pub using @333c6d3e40818eab {type IFaxIncomingQueue_0e600d96496d as IFaxIncomingQueue}
+
+pub using @333c6d3e40818eab {type IFaxJobStatus_7c221d90d3c2 as IFaxJobStatus}
+
+pub using @333c6d3e40818eab {type IFaxLoggingOptions_bdb14d8119e6 as IFaxLoggingOptions}
+
+pub using @333c6d3e40818eab {type IFaxOutboundRouting_98fc061c9ddf as IFaxOutboundRouting}
+
+pub using @333c6d3e40818eab {type IFaxOutboundRoutingGroup_903db539cdc0 as IFaxOutboundRoutingGroup}
+
+pub using @333c6d3e40818eab {type IFaxOutboundRoutingGroups_0c746500809f as IFaxOutboundRoutingGroups}
+
+pub using @333c6d3e40818eab {type IFaxOutboundRoutingRule_d5bc67788d68 as IFaxOutboundRoutingRule}
+
+pub using @333c6d3e40818eab {type IFaxOutboundRoutingRules_c2d533c58acf as IFaxOutboundRoutingRules}
+
+pub using @333c6d3e40818eab {type IFaxOutgoingArchive_79d24991f4e6 as IFaxOutgoingArchive}
+
+pub using @333c6d3e40818eab {type IFaxOutgoingJob_0429fb537b3b as IFaxOutgoingJob}
+
+pub using @333c6d3e40818eab {type IFaxOutgoingJob2_969d61460d9f as IFaxOutgoingJob2}
+
+pub using @333c6d3e40818eab {type IFaxOutgoingJobs_90c8498d5935 as IFaxOutgoingJobs}
+
+pub using @333c6d3e40818eab {type IFaxOutgoingMessage_2cacca5eb98d as IFaxOutgoingMessage}
+
+pub using @333c6d3e40818eab {type IFaxOutgoingMessage2_f8a584fdc88a as IFaxOutgoingMessage2}
+
+pub using @333c6d3e40818eab {type IFaxOutgoingMessageIterator_e5c9cd0964f4 as IFaxOutgoingMessageIterator}
+
+pub using @333c6d3e40818eab {type IFaxOutgoingQueue_f0631e4db40b as IFaxOutgoingQueue}
+
+pub using @333c6d3e40818eab {type IFaxReceiptOptions_1e949182619d as IFaxReceiptOptions}
+
+pub using @333c6d3e40818eab {type IFaxRecipient_3437cc67772c as IFaxRecipient}
+
+pub using @333c6d3e40818eab {type IFaxRecipients_cf5ed6b205ee as IFaxRecipients}
+
+pub using @333c6d3e40818eab {type IFaxSecurity_f89827d08c98 as IFaxSecurity}
+
+pub using @333c6d3e40818eab {type IFaxSecurity2_cd41a49c3834 as IFaxSecurity2}
+
+pub using @333c6d3e40818eab {type IFaxSender_581530d3ac0b as IFaxSender}
+
+pub using @333c6d3e40818eab {type IFaxServer_278eb44b50e1 as IFaxServer}
+
+pub using @333c6d3e40818eab {type IFaxServer2_c38a5e8f6ba3 as IFaxServer2}
+
+pub using @333c6d3e40818eab {type IFaxServerNotify_2d8b6436caf2 as IFaxServerNotify}
+
+pub using @333c6d3e40818eab {type IFaxServerNotify2_cd0853a4ea75 as IFaxServerNotify2}
+
+pub using @333c6d3e40818eab {type IStiDevice_8ded1fd7a89c as IStiDevice}
+
+pub using @333c6d3e40818eab {type IStiDeviceControl_37871d3293c5 as IStiDeviceControl}
+
+pub using @333c6d3e40818eab {type IStiUSD_2773808daeee as IStiUSD}
+
+pub using @333c6d3e40818eab {type IStillImageW_b5da4ec87729 as IStillImageW}
+
+pub using @333c6d3e40818eab {type PFAXABORT_c8fbc7bce7a8 as PFAXABORT}
+
+pub using @333c6d3e40818eab {type PFAXACCESSCHECK_1c3ff1075059 as PFAXACCESSCHECK}
+
+pub using @333c6d3e40818eab {type PFAXCLOSE_c1aabd5a3178 as PFAXCLOSE}
+
+pub using @333c6d3e40818eab {type PFAXCOMPLETEJOBPARAMSA_b68682b9970f as PFAXCOMPLETEJOBPARAMSA}
+
+pub using @333c6d3e40818eab {type PFAXCOMPLETEJOBPARAMSW_9f7e73becac3 as PFAXCOMPLETEJOBPARAMSW}
+
+pub using @333c6d3e40818eab {type PFAXCONNECTFAXSERVERA_0aac641fb0a2 as PFAXCONNECTFAXSERVERA}
+
+pub using @333c6d3e40818eab {type PFAXCONNECTFAXSERVERW_02bdbb305bee as PFAXCONNECTFAXSERVERW}
+
+pub using @333c6d3e40818eab {type PFAXDEVABORTOPERATION_a29daeaa165c as PFAXDEVABORTOPERATION}
+
+pub using @333c6d3e40818eab {type PFAXDEVCONFIGURE_9d020179cd09 as PFAXDEVCONFIGURE}
+
+pub using @333c6d3e40818eab {type PFAXDEVENDJOB_2fec5f39866a as PFAXDEVENDJOB}
+
+pub using @333c6d3e40818eab {type PFAXDEVINITIALIZE_89d43a6565d0 as PFAXDEVINITIALIZE}
+
+pub using @333c6d3e40818eab {type PFAXDEVRECEIVE_5315510a772f as PFAXDEVRECEIVE}
+
+pub using @333c6d3e40818eab {type PFAXDEVREPORTSTATUS_947b8a6d9a16 as PFAXDEVREPORTSTATUS}
+
+pub using @333c6d3e40818eab {type PFAXDEVSEND_a8a0a91c4d65 as PFAXDEVSEND}
+
+pub using @333c6d3e40818eab {type PFAXDEVSHUTDOWN_caf9ebfa4ee3 as PFAXDEVSHUTDOWN}
+
+pub using @333c6d3e40818eab {type PFAXDEVSTARTJOB_774788b74b41 as PFAXDEVSTARTJOB}
+
+pub using @333c6d3e40818eab {type PFAXDEVVIRTUALDEVICECREATION_31df3785b6d9 as PFAXDEVVIRTUALDEVICECREATION}
+
+pub using @333c6d3e40818eab {type PFAXENABLEROUTINGMETHODA_7e43473edcb2 as PFAXENABLEROUTINGMETHODA}
+
+pub using @333c6d3e40818eab {type PFAXENABLEROUTINGMETHODW_8728ef16294b as PFAXENABLEROUTINGMETHODW}
+
+pub using @333c6d3e40818eab {type PFAXENUMGLOBALROUTINGINFOA_d0b40e372c3b as PFAXENUMGLOBALROUTINGINFOA}
+
+pub using @333c6d3e40818eab {type PFAXENUMGLOBALROUTINGINFOW_90548b4a68b2 as PFAXENUMGLOBALROUTINGINFOW}
+
+pub using @333c6d3e40818eab {type PFAXENUMJOBSA_eb0fcf9ffece as PFAXENUMJOBSA}
+
+pub using @333c6d3e40818eab {type PFAXENUMJOBSW_af7ec599d652 as PFAXENUMJOBSW}
+
+pub using @333c6d3e40818eab {type PFAXENUMPORTSA_0e2e6c157fa0 as PFAXENUMPORTSA}
+
+pub using @333c6d3e40818eab {type PFAXENUMPORTSW_f9ce39eb1696 as PFAXENUMPORTSW}
+
+pub using @333c6d3e40818eab {type PFAXENUMROUTINGMETHODSA_a2344ee3faef as PFAXENUMROUTINGMETHODSA}
+
+pub using @333c6d3e40818eab {type PFAXENUMROUTINGMETHODSW_43712221d407 as PFAXENUMROUTINGMETHODSW}
+
+pub using @333c6d3e40818eab {type PFAXEXTCONFIGCHANGE_0fbfcfe039da as PFAXEXTCONFIGCHANGE}
+
+pub using @333c6d3e40818eab {type PFAXEXTFREEBUFFER_bb823614938b as PFAXEXTFREEBUFFER}
+
+pub using @333c6d3e40818eab {type PFAXEXTGETDATA_b90e92ac13da as PFAXEXTGETDATA}
+
+pub using @333c6d3e40818eab {type PFAXEXTINITIALIZECONFIG_1090138537c8 as PFAXEXTINITIALIZECONFIG}
+
+pub using @333c6d3e40818eab {type PFAXEXTREGISTERFOREVENTS_3f2e9556b158 as PFAXEXTREGISTERFOREVENTS}
+
+pub using @333c6d3e40818eab {type PFAXEXTSETDATA_fcf6e01512ca as PFAXEXTSETDATA}
+
+pub using @333c6d3e40818eab {type PFAXEXTUNREGISTERFOREVENTS_2fb46a467199 as PFAXEXTUNREGISTERFOREVENTS}
+
+pub using @333c6d3e40818eab {type PFAXFREEBUFFER_53490d9ead67 as PFAXFREEBUFFER}
+
+pub using @333c6d3e40818eab {type PFAXGETCONFIGURATIONA_6b74386792f9 as PFAXGETCONFIGURATIONA}
+
+pub using @333c6d3e40818eab {type PFAXGETCONFIGURATIONW_cf36567fa33f as PFAXGETCONFIGURATIONW}
+
+pub using @333c6d3e40818eab {type PFAXGETDEVICESTATUSA_1818f5d47c3c as PFAXGETDEVICESTATUSA}
+
+pub using @333c6d3e40818eab {type PFAXGETDEVICESTATUSW_332731bd91ee as PFAXGETDEVICESTATUSW}
+
+pub using @333c6d3e40818eab {type PFAXGETJOBA_daf790be6f7a as PFAXGETJOBA}
+
+pub using @333c6d3e40818eab {type PFAXGETJOBW_4990aa53e212 as PFAXGETJOBW}
+
+pub using @333c6d3e40818eab {type PFAXGETLOGGINGCATEGORIESA_34668e269070 as PFAXGETLOGGINGCATEGORIESA}
+
+pub using @333c6d3e40818eab {type PFAXGETLOGGINGCATEGORIESW_c15193543967 as PFAXGETLOGGINGCATEGORIESW}
+
+pub using @333c6d3e40818eab {type PFAXGETPAGEDATA_b3b34b378b99 as PFAXGETPAGEDATA}
+
+pub using @333c6d3e40818eab {type PFAXGETPORTA_1bf902f80662 as PFAXGETPORTA}
+
+pub using @333c6d3e40818eab {type PFAXGETPORTW_0448cf6244aa as PFAXGETPORTW}
+
+pub using @333c6d3e40818eab {type PFAXGETROUTINGINFOA_78332be705d8 as PFAXGETROUTINGINFOA}
+
+pub using @333c6d3e40818eab {type PFAXGETROUTINGINFOW_b7719c69df77 as PFAXGETROUTINGINFOW}
+
+pub using @333c6d3e40818eab {type PFAXINITIALIZEEVENTQUEUE_f32395476451 as PFAXINITIALIZEEVENTQUEUE}
+
+pub using @333c6d3e40818eab {type PFAXLINECALLBACK_bae84d53db4f as PFAXLINECALLBACK}
+
+pub using @333c6d3e40818eab {type PFAXOPENPORT_d253153e900c as PFAXOPENPORT}
+
+pub using @333c6d3e40818eab {type PFAXPRINTCOVERPAGEA_55b415d6ec9b as PFAXPRINTCOVERPAGEA}
+
+pub using @333c6d3e40818eab {type PFAXPRINTCOVERPAGEW_61f071e4908a as PFAXPRINTCOVERPAGEW}
+
+pub using @333c6d3e40818eab {type PFAXRECIPIENTCALLBACKA_f6abd5a36d1f as PFAXRECIPIENTCALLBACKA}
+
+pub using @333c6d3e40818eab {type PFAXRECIPIENTCALLBACKW_4d079c061f05 as PFAXRECIPIENTCALLBACKW}
+
+pub using @333c6d3e40818eab {type PFAXREGISTERROUTINGEXTENSIONW_4c490125c857 as PFAXREGISTERROUTINGEXTENSIONW}
+
+pub using @333c6d3e40818eab {type PFAXREGISTERSERVICEPROVIDERW_7c75caf4e49d as PFAXREGISTERSERVICEPROVIDERW}
+
+pub using @333c6d3e40818eab {type PFAXROUTEADDFILE_3e1a921140e4 as PFAXROUTEADDFILE}
+
+pub using @333c6d3e40818eab {type PFAXROUTEDELETEFILE_fa72dc65ba3b as PFAXROUTEDELETEFILE}
+
+pub using @333c6d3e40818eab {type PFAXROUTEDEVICECHANGENOTIFICATION_050be46e3ef5 as PFAXROUTEDEVICECHANGENOTIFICATION}
+
+pub using @333c6d3e40818eab {type PFAXROUTEDEVICEENABLE_a9e715e76232 as PFAXROUTEDEVICEENABLE}
+
+pub using @333c6d3e40818eab {type PFAXROUTEENUMFILE_7746279ac12c as PFAXROUTEENUMFILE}
+
+pub using @333c6d3e40818eab {type PFAXROUTEENUMFILES_7dc153894f02 as PFAXROUTEENUMFILES}
+
+pub using @333c6d3e40818eab {type PFAXROUTEGETFILE_8924c2397ae5 as PFAXROUTEGETFILE}
+
+pub using @333c6d3e40818eab {type PFAXROUTEGETROUTINGINFO_5657b983b770 as PFAXROUTEGETROUTINGINFO}
+
+pub using @333c6d3e40818eab {type PFAXROUTEINITIALIZE_089353063d5e as PFAXROUTEINITIALIZE}
+
+pub using @333c6d3e40818eab {type PFAXROUTEMETHOD_611945e42612 as PFAXROUTEMETHOD}
+
+pub using @333c6d3e40818eab {type PFAXROUTEMODIFYROUTINGDATA_9f0134a497a5 as PFAXROUTEMODIFYROUTINGDATA}
+
+pub using @333c6d3e40818eab {type PFAXROUTESETROUTINGINFO_5daf982e6f9d as PFAXROUTESETROUTINGINFO}
+
+pub using @333c6d3e40818eab {type PFAXROUTINGINSTALLATIONCALLBACKW_5654d1777fdc as PFAXROUTINGINSTALLATIONCALLBACKW}
+
+pub using @333c6d3e40818eab {type PFAXSENDCALLBACK_a1288117455c as PFAXSENDCALLBACK}
+
+pub using @333c6d3e40818eab {type PFAXSENDDOCUMENTA_f36814537a42 as PFAXSENDDOCUMENTA}
+
+pub using @333c6d3e40818eab {type PFAXSENDDOCUMENTFORBROADCASTA_74d863e792af as PFAXSENDDOCUMENTFORBROADCASTA}
+
+pub using @333c6d3e40818eab {type PFAXSENDDOCUMENTFORBROADCASTW_b27d56c2d09c as PFAXSENDDOCUMENTFORBROADCASTW}
+
+pub using @333c6d3e40818eab {type PFAXSENDDOCUMENTW_d06632aecf5b as PFAXSENDDOCUMENTW}
+
+pub using @333c6d3e40818eab {type PFAXSERVICECALLBACK_38386bbe8177 as PFAXSERVICECALLBACK}
+
+pub using @333c6d3e40818eab {type PFAXSETCONFIGURATIONA_21e437d29bdd as PFAXSETCONFIGURATIONA}
+
+pub using @333c6d3e40818eab {type PFAXSETCONFIGURATIONW_ba2fa7c2763d as PFAXSETCONFIGURATIONW}
+
+pub using @333c6d3e40818eab {type PFAXSETGLOBALROUTINGINFOA_506a371c1f04 as PFAXSETGLOBALROUTINGINFOA}
+
+pub using @333c6d3e40818eab {type PFAXSETGLOBALROUTINGINFOW_623e8fc1b4f9 as PFAXSETGLOBALROUTINGINFOW}
+
+pub using @333c6d3e40818eab {type PFAXSETJOBA_47f0a4f475dc as PFAXSETJOBA}
+
+pub using @333c6d3e40818eab {type PFAXSETJOBW_18090a1b375e as PFAXSETJOBW}
+
+pub using @333c6d3e40818eab {type PFAXSETLOGGINGCATEGORIESA_e912b064c454 as PFAXSETLOGGINGCATEGORIESA}
+
+pub using @333c6d3e40818eab {type PFAXSETLOGGINGCATEGORIESW_117eca808e9d as PFAXSETLOGGINGCATEGORIESW}
+
+pub using @333c6d3e40818eab {type PFAXSETPORTA_b7c2843161d5 as PFAXSETPORTA}
+
+pub using @333c6d3e40818eab {type PFAXSETPORTW_fa72395a7e53 as PFAXSETPORTW}
+
+pub using @333c6d3e40818eab {type PFAXSETROUTINGINFOA_0939151eb36f as PFAXSETROUTINGINFOA}
+
+pub using @333c6d3e40818eab {type PFAXSETROUTINGINFOW_d8b2ba751de2 as PFAXSETROUTINGINFOW}
+
+pub using @333c6d3e40818eab {type PFAXSTARTPRINTJOBA_dbb44704df36 as PFAXSTARTPRINTJOBA}
+
+pub using @333c6d3e40818eab {type PFAXSTARTPRINTJOBW_965b6b572c93 as PFAXSTARTPRINTJOBW}
+
+pub using @333c6d3e40818eab {type PFAXUNREGISTERSERVICEPROVIDERW_f85312ebcc27 as PFAXUNREGISTERSERVICEPROVIDERW}
+
+pub using @333c6d3e40818eab {type STIDEVCAPS_a7089190a9fc as STIDEVCAPS}
+
+pub using @333c6d3e40818eab {type STIDEVICEINFORMATIONW_07fa57d1982e as STIDEVICEINFORMATIONW}
+
+pub using @333c6d3e40818eab {type STIDEVICEMJTYPE_4af659e60b05 as STIDEVICEMJTYPE}
+
+pub using @333c6d3e40818eab {type STIDEVICESTATUS_d242696c75ba as STIDEVICESTATUS}
+
+pub using @333c6d3e40818eab {type STIDIAG_79c0e3c0ca30 as STIDIAG}
+
+pub using @333c6d3e40818eab {type STINOTIFY_98b9d06c15bb as STINOTIFY}
+
+pub using @333c6d3e40818eab {type STISUBSCRIBE_bec0a01cdf95 as STISUBSCRIBE}
+
+pub using @333c6d3e40818eab {type STIUSDCAPS_11fd1197ab13 as STIUSDCAPS}
+
+pub using @333c6d3e40818eab {type STIWIADEVICEINFORMATIONW_d7a180aa093a as STIWIADEVICEINFORMATIONW}
+
+pub using @333c6d3e40818eab {type SendToMode_dd635bffbcce as SendToMode}
+
+// Traits

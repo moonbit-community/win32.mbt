@@ -1,0 +1,20 @@
+import {
+  "moonbit-community/win32api/scc/110c42b5852dc0b3" @dep_3a2088d8ef93,
+  "moonbit-community/win32api/scc/547e397699e40694" @dep_dc991021a228,
+  "moonbit-community/win32api/scc/5e07cc2aafb34e60" @dep_5cbff2abd092,
+  "moonbit-community/win32api/scc/bcab0927f447d71b" @dep_948ca811b740,
+  "moonbit-community/win32api/scc/fb66f520d7e12332" @dep_3fd09a349dd6,
+  "moonbit-community/win32api/runtime/core" @win32_core,
+  "moonbit-community/win32api/runtime/strings" @win32_strings,
+}
+
+supported_targets = "native"
+
+options(
+  "native-stub": [ "ffi_0.c", "ffi_1.c", "ffi_2.c" ],
+  targets: {
+    "ffi_0.mbt": [ "native" ],
+    "ffi_1.mbt": [ "native" ],
+    "ffi_2.mbt": [ "native" ],
+  },
+)

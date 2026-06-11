@@ -1,0 +1,54 @@
+///|
+pub fn WNVCANOTIFICATIONTYPE_c9a3176952b1::wnv_customer_address_added() -> WNVCANOTIFICATIONTYPE_c9a3176952b1 {
+  WNVCANOTIFICATIONTYPE_c9a3176952b1::from_int(0)
+}
+
+///|
+pub fn WNVCANOTIFICATIONTYPE_c9a3176952b1::wnv_customer_address_deleted() -> WNVCANOTIFICATIONTYPE_c9a3176952b1 {
+  WNVCANOTIFICATIONTYPE_c9a3176952b1::from_int(1)
+}
+
+///|
+pub fn WNVCANOTIFICATIONTYPE_c9a3176952b1::wnv_customer_address_max() -> WNVCANOTIFICATIONTYPE_c9a3176952b1 {
+  WNVCANOTIFICATIONTYPE_c9a3176952b1::from_int(3)
+}
+
+///|
+pub fn WNVCANOTIFICATIONTYPE_c9a3176952b1::wnv_customer_address_moved() -> WNVCANOTIFICATIONTYPE_c9a3176952b1 {
+  WNVCANOTIFICATIONTYPE_c9a3176952b1::from_int(2)
+}
+
+///|
+pub fn WNVNOTIFICATIONTYPE_a764596ec788::max() -> WNVNOTIFICATIONTYPE_a764596ec788 {
+  WNVNOTIFICATIONTYPE_a764596ec788::from_int(3)
+}
+
+///|
+pub fn WNVNOTIFICATIONTYPE_a764596ec788::wnv_object_change_type() -> WNVNOTIFICATIONTYPE_a764596ec788 {
+  WNVNOTIFICATIONTYPE_a764596ec788::from_int(2)
+}
+
+///|
+pub fn WNVNOTIFICATIONTYPE_a764596ec788::wnv_policy_mismatch_type() -> WNVNOTIFICATIONTYPE_a764596ec788 {
+  WNVNOTIFICATIONTYPE_a764596ec788::from_int(0)
+}
+
+///|
+pub fn WNVNOTIFICATIONTYPE_a764596ec788::wnv_redirect_type() -> WNVNOTIFICATIONTYPE_a764596ec788 {
+  WNVNOTIFICATIONTYPE_a764596ec788::from_int(1)
+}
+
+///|
+pub fn WNVOBJECTTYPE_c7ae77ea61c7::wnv_customer_address_type() -> WNVOBJECTTYPE_c7ae77ea61c7 {
+  WNVOBJECTTYPE_c7ae77ea61c7::from_int(1)
+}
+
+///|
+pub fn WNVOBJECTTYPE_c7ae77ea61c7::max() -> WNVOBJECTTYPE_c7ae77ea61c7 {
+  WNVOBJECTTYPE_c7ae77ea61c7::from_int(2)
+}
+
+///|
+pub fn WNVOBJECTTYPE_c7ae77ea61c7::wnv_provider_address_type() -> WNVOBJECTTYPE_c7ae77ea61c7 {
+  WNVOBJECTTYPE_c7ae77ea61c7::from_int(0)
+}

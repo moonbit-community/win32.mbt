@@ -1,0 +1,2788 @@
+// Generated using `moon info`, DON'T EDIT IT
+package "moonbit-community/win32api/windows/win32/system/diagnostics/debug/extensions"
+
+import {
+  "moonbit-community/win32api/runtime/core",
+  "moonbit-community/win32api/runtime/strings",
+  "moonbit-community/win32api/scc/1c8009a2cccca96a",
+}
+
+// Values
+pub let address_type_index_not_found : UInt
+
+pub let cannot_allocate_memory : UInt
+
+pub fn create_data_model_manager(@core.RawAddress, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn create_data_model_manager_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub let cross_platform_maximum_processors : UInt
+
+pub let current_kd_secondary_version : UInt
+
+pub let dbg_dump_address_at_end : UInt
+
+pub let dbg_dump_address_of_field : UInt
+
+pub let dbg_dump_array : UInt
+
+pub let dbg_dump_block_recurse : UInt
+
+pub let dbg_dump_call_for_each : UInt
+
+pub let dbg_dump_compact_out : UInt
+
+pub let dbg_dump_copy_type_data : UInt
+
+pub let dbg_dump_field_array : UInt
+
+pub let dbg_dump_field_call_before_print : UInt
+
+pub let dbg_dump_field_copy_field_data : UInt
+
+pub let dbg_dump_field_default_string : UInt
+
+pub let dbg_dump_field_full_name : UInt
+
+pub let dbg_dump_field_guid_string : UInt
+
+pub let dbg_dump_field_multi_string : UInt
+
+pub let dbg_dump_field_no_callback_req : UInt
+
+pub let dbg_dump_field_no_print : UInt
+
+pub let dbg_dump_field_recur_on_this : UInt
+
+pub let dbg_dump_field_return_address : UInt
+
+pub let dbg_dump_field_size_in_bits : UInt
+
+pub let dbg_dump_field_utf32_string : UInt
+
+pub let dbg_dump_field_wchar_string : UInt
+
+pub let dbg_dump_function_format : UInt
+
+pub let dbg_dump_get_size_only : UInt
+
+pub let dbg_dump_list : UInt
+
+pub let dbg_dump_match_size : UInt
+
+pub let dbg_dump_no_indent : UInt
+
+pub let dbg_dump_no_offset : UInt
+
+pub let dbg_dump_no_print : UInt
+
+pub let dbg_dump_read_physical : UInt
+
+pub let dbg_dump_verbose : UInt
+
+pub let dbg_frame_default : UInt
+
+pub let dbg_frame_ignore_inline : UInt
+
+pub let dbg_return_subtypes : UInt
+
+pub let dbg_return_type : UInt
+
+pub let dbg_return_type_values : UInt
+
+pub let dbgkd_simulation_exdi : Int
+
+pub let dbgkd_simulation_none : Int
+
+pub let dbgkd_vers_flag_data : UInt
+
+pub let dbgkd_vers_flag_hal_in_ntos : UInt
+
+pub let dbgkd_vers_flag_hss : UInt
+
+pub let dbgkd_vers_flag_mp : UInt
+
+pub let dbgkd_vers_flag_nomm : UInt
+
+pub let dbgkd_vers_flag_partitions : UInt
+
+pub let dbgkd_vers_flag_ptr64 : UInt
+
+pub let debug_addsynthmod_default : UInt
+
+pub let debug_addsynthmod_zerobase : UInt
+
+pub let debug_addsynthsym_default : UInt
+
+pub let debug_any_id : UInt
+
+pub let debug_asmopt_default : UInt
+
+pub let debug_asmopt_ignore_output_width : UInt
+
+pub let debug_asmopt_no_code_bytes : UInt
+
+pub let debug_asmopt_source_line_number : UInt
+
+pub let debug_asmopt_verbose : UInt
+
+pub let debug_attach_default : UInt
+
+pub let debug_attach_exdi_driver : UInt
+
+pub let debug_attach_existing : UInt
+
+pub let debug_attach_install_driver : UInt
+
+pub let debug_attach_invasive_no_initial_break : UInt
+
+pub let debug_attach_invasive_resume_process : UInt
+
+pub let debug_attach_kernel_connection : UInt
+
+pub let debug_attach_local_kernel : UInt
+
+pub let debug_attach_noninvasive : UInt
+
+pub let debug_attach_noninvasive_allow_partial : UInt
+
+pub let debug_attach_noninvasive_no_suspend : UInt
+
+pub let debug_break_execute : UInt
+
+pub let debug_break_io : UInt
+
+pub let debug_break_read : UInt
+
+pub let debug_break_write : UInt
+
+pub let debug_breakpoint_adder_only : UInt
+
+pub let debug_breakpoint_code : UInt
+
+pub let debug_breakpoint_data : UInt
+
+pub let debug_breakpoint_deferred : UInt
+
+pub let debug_breakpoint_enabled : UInt
+
+pub let debug_breakpoint_go_only : UInt
+
+pub let debug_breakpoint_inline : UInt
+
+pub let debug_breakpoint_one_shot : UInt
+
+pub let debug_breakpoint_time : UInt
+
+pub let debug_cds_all : UInt
+
+pub let debug_cds_data : UInt
+
+pub let debug_cds_refresh : UInt
+
+pub let debug_cds_refresh_addbreakpoint : UInt
+
+pub let debug_cds_refresh_evaluate : UInt
+
+pub let debug_cds_refresh_execute : UInt
+
+pub let debug_cds_refresh_executecommandfile : UInt
+
+pub let debug_cds_refresh_inlinestep : UInt
+
+pub let debug_cds_refresh_inlinestep_pseudo : UInt
+
+pub let debug_cds_refresh_removebreakpoint : UInt
+
+pub let debug_cds_refresh_setscope : UInt
+
+pub let debug_cds_refresh_setscopeframebyindex : UInt
+
+pub let debug_cds_refresh_setscopefromjitdebuginfo : UInt
+
+pub let debug_cds_refresh_setscopefromstoredevent : UInt
+
+pub let debug_cds_refresh_setvalue : UInt
+
+pub let debug_cds_refresh_setvalue2 : UInt
+
+pub let debug_cds_refresh_writephysical : UInt
+
+pub let debug_cds_refresh_writephysical2 : UInt
+
+pub let debug_cds_refresh_writevirtual : UInt
+
+pub let debug_cds_refresh_writevirtualuncached : UInt
+
+pub let debug_cds_registers : UInt
+
+pub let debug_ces_all : UInt
+
+pub let debug_ces_assembly_options : UInt
+
+pub let debug_ces_breakpoints : UInt
+
+pub let debug_ces_code_level : UInt
+
+pub let debug_ces_current_thread : UInt
+
+pub let debug_ces_effective_processor : UInt
+
+pub let debug_ces_engine_options : UInt
+
+pub let debug_ces_event_filters : UInt
+
+pub let debug_ces_execution_status : UInt
+
+pub let debug_ces_expression_syntax : UInt
+
+pub let debug_ces_extensions : UInt
+
+pub let debug_ces_log_file : UInt
+
+pub let debug_ces_process_options : UInt
+
+pub let debug_ces_radix : UInt
+
+pub let debug_ces_systems : UInt
+
+pub let debug_ces_text_replacements : UInt
+
+pub let debug_class_image_file : UInt
+
+pub let debug_class_kernel : UInt
+
+pub let debug_class_uninitialized : UInt
+
+pub let debug_class_user_windows : UInt
+
+pub let debug_client_cdb : UInt
+
+pub let debug_client_kd : UInt
+
+pub let debug_client_ntkd : UInt
+
+pub let debug_client_ntsd : UInt
+
+pub let debug_client_unknown : UInt
+
+pub let debug_client_vsint : UInt
+
+pub let debug_client_windbg : UInt
+
+pub let debug_client_winide : UInt
+
+pub let debug_cmdex_add_event_string : UInt
+
+pub let debug_cmdex_invalid : UInt
+
+pub let debug_cmdex_reset_event_strings : UInt
+
+pub let debug_command_exception_id : UInt
+
+pub fn debug_connect(@strings.PStr, @core.RawAddress, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn debug_connect_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub let debug_connect_session_default : UInt
+
+pub let debug_connect_session_no_announce : UInt
+
+pub let debug_connect_session_no_version : UInt
+
+pub fn debug_connect_wide(@strings.PWStr, @core.RawAddress, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn debug_connect_wide_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn debug_create(@core.RawAddress, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn debug_create_ex(@core.RawAddress, UInt, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn debug_create_ex_raw(@core.RawAddress, UInt, @core.RawAddress) -> Int
+
+pub fn debug_create_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub let debug_css_all : UInt
+
+pub let debug_css_collapse_children : UInt
+
+pub let debug_css_loads : UInt
+
+pub let debug_css_paths : UInt
+
+pub let debug_css_scope : UInt
+
+pub let debug_css_symbol_options : UInt
+
+pub let debug_css_type_options : UInt
+
+pub let debug_css_unloads : UInt
+
+pub let debug_current_default : UInt
+
+pub let debug_current_disasm : UInt
+
+pub let debug_current_registers : UInt
+
+pub let debug_current_source_line : UInt
+
+pub let debug_current_symbol : UInt
+
+pub let debug_data_base_translation_virtual_offset : UInt
+
+pub let debug_data_breakpoint_with_status_addr : UInt
+
+pub let debug_data_cm_nt_csd_version_addr : UInt
+
+pub let debug_data_dump_attributes : UInt
+
+pub let debug_data_dump_format_version : UInt
+
+pub let debug_data_dump_mm_storage : UInt
+
+pub let debug_data_dump_power_state : UInt
+
+pub let debug_data_dump_writer_status : UInt
+
+pub let debug_data_dump_writer_version : UInt
+
+pub let debug_data_etwp_debugger_data : UInt
+
+pub let debug_data_exp_number_of_paged_pools_addr : UInt
+
+pub let debug_data_exp_paged_pool_descriptor_addr : UInt
+
+pub let debug_data_exp_system_resources_list_addr : UInt
+
+pub let debug_data_iop_error_log_list_head_addr : UInt
+
+pub let debug_data_kd_print_buffer_size_addr : UInt
+
+pub let debug_data_kd_print_circular_buffer_addr : UInt
+
+pub let debug_data_kd_print_circular_buffer_end_addr : UInt
+
+pub let debug_data_kd_print_circular_buffer_ptr_addr : UInt
+
+pub let debug_data_kd_print_rollover_count_addr : UInt
+
+pub let debug_data_kd_print_write_pointer_addr : UInt
+
+pub let debug_data_ke_bug_check_callback_list_head_addr : UInt
+
+pub let debug_data_ke_time_increment_addr : UInt
+
+pub let debug_data_ke_user_callback_dispatcher_addr : UInt
+
+pub let debug_data_kern_base : UInt
+
+pub let debug_data_kernel_verifier_addr : UInt
+
+pub let debug_data_ki_bugcheck_data_addr : UInt
+
+pub let debug_data_ki_call_user_mode_addr : UInt
+
+pub let debug_data_ki_normal_system_call : UInt
+
+pub let debug_data_ki_processor_block_addr : UInt
+
+pub let debug_data_kpcr_offset : UInt
+
+pub let debug_data_kprcb_offset : UInt
+
+pub let debug_data_kthread_offset : UInt
+
+pub let debug_data_mm_allocated_non_paged_pool_addr : UInt
+
+pub let debug_data_mm_available_pages_addr : UInt
+
+pub let debug_data_mm_bad_pages_detected : UInt
+
+pub let debug_data_mm_driver_commit_addr : UInt
+
+pub let debug_data_mm_extended_commit_addr : UInt
+
+pub let debug_data_mm_free_page_list_head_addr : UInt
+
+pub let debug_data_mm_highest_physical_page_addr : UInt
+
+pub let debug_data_mm_highest_user_address_addr : UInt
+
+pub let debug_data_mm_last_unloaded_driver_addr : UInt
+
+pub let debug_data_mm_loaded_user_image_list_addr : UInt
+
+pub let debug_data_mm_lowest_physical_page_addr : UInt
+
+pub let debug_data_mm_maximum_non_paged_pool_in_bytes_addr : UInt
+
+pub let debug_data_mm_modified_no_write_page_list_head_addr : UInt
+
+pub let debug_data_mm_modified_page_list_head_addr : UInt
+
+pub let debug_data_mm_non_paged_pool_end_addr : UInt
+
+pub let debug_data_mm_non_paged_pool_start_addr : UInt
+
+pub let debug_data_mm_non_paged_system_start_addr : UInt
+
+pub let debug_data_mm_number_of_paging_files_addr : UInt
+
+pub let debug_data_mm_number_of_physical_pages_addr : UInt
+
+pub let debug_data_mm_page_size : UInt
+
+pub let debug_data_mm_paged_pool_commit_addr : UInt
+
+pub let debug_data_mm_paged_pool_end_addr : UInt
+
+pub let debug_data_mm_paged_pool_information_addr : UInt
+
+pub let debug_data_mm_paged_pool_start_addr : UInt
+
+pub let debug_data_mm_peak_commitment_addr : UInt
+
+pub let debug_data_mm_pfn_database_addr : UInt
+
+pub let debug_data_mm_physical_memory_block_addr : UInt
+
+pub let debug_data_mm_process_commit_addr : UInt
+
+pub let debug_data_mm_resident_available_pages_addr : UInt
+
+pub let debug_data_mm_session_base : UInt
+
+pub let debug_data_mm_session_size : UInt
+
+pub let debug_data_mm_shared_commit_addr : UInt
+
+pub let debug_data_mm_size_of_paged_pool_in_bytes_addr : UInt
+
+pub let debug_data_mm_special_pool_tag_addr : UInt
+
+pub let debug_data_mm_standby_page_list_head_addr : UInt
+
+pub let debug_data_mm_subsection_base_addr : UInt
+
+pub let debug_data_mm_system_cache_end_addr : UInt
+
+pub let debug_data_mm_system_cache_start_addr : UInt
+
+pub let debug_data_mm_system_cache_ws_addr : UInt
+
+pub let debug_data_mm_system_parent_table_page : UInt
+
+pub let debug_data_mm_system_ptes_end_addr : UInt
+
+pub let debug_data_mm_system_ptes_start_addr : UInt
+
+pub let debug_data_mm_system_range_start_addr : UInt
+
+pub let debug_data_mm_total_commit_limit_addr : UInt
+
+pub let debug_data_mm_total_commit_limit_maximum_addr : UInt
+
+pub let debug_data_mm_total_committed_pages_addr : UInt
+
+pub let debug_data_mm_triage_action_taken_addr : UInt
+
+pub let debug_data_mm_unloaded_drivers_addr : UInt
+
+pub let debug_data_mm_user_probe_address_addr : UInt
+
+pub let debug_data_mm_verifier_data_addr : UInt
+
+pub let debug_data_mm_virtual_translation_base : UInt
+
+pub let debug_data_mm_zeroed_page_list_head_addr : UInt
+
+pub let debug_data_non_paged_pool_descriptor_addr : UInt
+
+pub let debug_data_nt_build_lab_addr : UInt
+
+pub let debug_data_obp_root_directory_object_addr : UInt
+
+pub let debug_data_obp_type_object_type_addr : UInt
+
+pub let debug_data_offset_eprocess_directory_table_base : UInt
+
+pub let debug_data_offset_eprocess_parent_cid : UInt
+
+pub let debug_data_offset_eprocess_peb : UInt
+
+pub let debug_data_offset_k_thread_apc_process : UInt
+
+pub let debug_data_offset_k_thread_b_store : UInt
+
+pub let debug_data_offset_k_thread_b_store_limit : UInt
+
+pub let debug_data_offset_k_thread_initial_stack : UInt
+
+pub let debug_data_offset_k_thread_kernel_stack : UInt
+
+pub let debug_data_offset_k_thread_next_processor : UInt
+
+pub let debug_data_offset_k_thread_state : UInt
+
+pub let debug_data_offset_k_thread_teb : UInt
+
+pub let debug_data_offset_prcb_cpu_type : UInt
+
+pub let debug_data_offset_prcb_current_thread : UInt
+
+pub let debug_data_offset_prcb_dpc_routine : UInt
+
+pub let debug_data_offset_prcb_mhz : UInt
+
+pub let debug_data_offset_prcb_number : UInt
+
+pub let debug_data_offset_prcb_processor_state : UInt
+
+pub let debug_data_offset_prcb_vendor_string : UInt
+
+pub let debug_data_pae_enabled : UInt
+
+pub let debug_data_paging_levels : UInt
+
+pub let debug_data_pool_track_table_addr : UInt
+
+pub let debug_data_processor_identification : UInt
+
+pub let debug_data_processor_speed : UInt
+
+pub let debug_data_product_type : UInt
+
+pub let debug_data_ps_active_process_head_addr : UInt
+
+pub let debug_data_ps_loaded_module_list_addr : UInt
+
+pub let debug_data_psp_cid_table_addr : UInt
+
+pub let debug_data_pte_base : UInt
+
+pub let debug_data_saved_context_addr : UInt
+
+pub let debug_data_shared_user_data : UInt
+
+pub let debug_data_size_e_process : UInt
+
+pub let debug_data_size_e_thread : UInt
+
+pub let debug_data_size_prcb : UInt
+
+pub let debug_data_space_bus_data : UInt
+
+pub let debug_data_space_control : UInt
+
+pub let debug_data_space_count : UInt
+
+pub let debug_data_space_debugger_data : UInt
+
+pub let debug_data_space_io : UInt
+
+pub let debug_data_space_msr : UInt
+
+pub let debug_data_space_physical : UInt
+
+pub let debug_data_space_virtual : UInt
+
+pub let debug_data_suite_mask : UInt
+
+pub let debug_disasm_effective_address : UInt
+
+pub let debug_disasm_matching_symbols : UInt
+
+pub let debug_disasm_source_file_name : UInt
+
+pub let debug_disasm_source_line_number : UInt
+
+pub let debug_dump_active : UInt
+
+pub let debug_dump_default : UInt
+
+pub let debug_dump_file_base : UInt
+
+pub let debug_dump_file_load_failed_index : UInt
+
+pub let debug_dump_file_original_cab_index : UInt
+
+pub let debug_dump_file_page_file_dump : UInt
+
+pub let debug_dump_full : UInt
+
+pub let debug_dump_image_file : UInt
+
+pub let debug_dump_small : UInt
+
+pub let debug_dump_trace_log : UInt
+
+pub let debug_dump_windows_ce : UInt
+
+pub let debug_ecreate_process_default : UInt
+
+pub let debug_ecreate_process_inherit_handles : UInt
+
+pub let debug_ecreate_process_use_implicit_command_line : UInt
+
+pub let debug_ecreate_process_use_verifier_flags : UInt
+
+pub let debug_eindex_from_current : UInt
+
+pub let debug_eindex_from_end : UInt
+
+pub let debug_eindex_from_start : UInt
+
+pub let debug_eindex_name : UInt
+
+pub let debug_end_active_detach : UInt
+
+pub let debug_end_active_terminate : UInt
+
+pub let debug_end_disconnect : UInt
+
+pub let debug_end_passive : UInt
+
+pub let debug_end_reentrant : UInt
+
+pub let debug_engopt_all : UInt
+
+pub let debug_engopt_allow_network_paths : UInt
+
+pub let debug_engopt_allow_read_only_breakpoints : UInt
+
+pub let debug_engopt_debugging_sensitive_data : UInt
+
+pub let debug_engopt_disable_execution_commands : UInt
+
+pub let debug_engopt_disable_managed_support : UInt
+
+pub let debug_engopt_disable_module_symbol_load : UInt
+
+pub let debug_engopt_disable_steplines_options : UInt
+
+pub let debug_engopt_disablesqm : UInt
+
+pub let debug_engopt_disallow_image_file_mapping : UInt
+
+pub let debug_engopt_disallow_network_paths : UInt
+
+pub let debug_engopt_disallow_shell_commands : UInt
+
+pub let debug_engopt_fail_incomplete_information : UInt
+
+pub let debug_engopt_final_break : UInt
+
+pub let debug_engopt_ignore_dbghelp_version : UInt
+
+pub let debug_engopt_ignore_extension_versions : UInt
+
+pub let debug_engopt_ignore_loader_exceptions : UInt
+
+pub let debug_engopt_initial_break : UInt
+
+pub let debug_engopt_initial_module_break : UInt
+
+pub let debug_engopt_kd_quiet_mode : UInt
+
+pub let debug_engopt_no_execute_repeat : UInt
+
+pub let debug_engopt_prefer_dml : UInt
+
+pub let debug_engopt_prefer_trace_files : UInt
+
+pub let debug_engopt_resolve_shadowed_variables : UInt
+
+pub let debug_engopt_synchronize_breakpoints : UInt
+
+pub let debug_event_breakpoint : UInt
+
+pub let debug_event_change_debuggee_state : UInt
+
+pub let debug_event_change_engine_state : UInt
+
+pub let debug_event_change_symbol_state : UInt
+
+pub let debug_event_create_process : UInt
+
+pub let debug_event_create_thread : UInt
+
+pub let debug_event_exception : UInt
+
+pub let debug_event_exit_process : UInt
+
+pub let debug_event_exit_thread : UInt
+
+pub let debug_event_load_module : UInt
+
+pub let debug_event_service_exception : UInt
+
+pub let debug_event_session_status : UInt
+
+pub let debug_event_system_error : UInt
+
+pub let debug_event_unload_module : UInt
+
+pub let debug_exec_flags_nonblock : UInt
+
+pub let debug_execute_default : UInt
+
+pub let debug_execute_echo : UInt
+
+pub let debug_execute_event : UInt
+
+pub let debug_execute_extension : UInt
+
+pub let debug_execute_hotkey : UInt
+
+pub let debug_execute_internal : UInt
+
+pub let debug_execute_menu : UInt
+
+pub let debug_execute_no_repeat : UInt
+
+pub let debug_execute_not_logged : UInt
+
+pub let debug_execute_script : UInt
+
+pub let debug_execute_toolbar : UInt
+
+pub let debug_execute_user_clicked : UInt
+
+pub let debug_execute_user_typed : UInt
+
+pub let debug_expr_cplusplus : UInt
+
+pub let debug_expr_masm : UInt
+
+pub let debug_ext_pvalue_default : UInt
+
+pub let debug_ext_pvtype_is_pointer : UInt
+
+pub let debug_ext_pvtype_is_value : UInt
+
+pub let debug_ext_qvalue_default : UInt
+
+pub let debug_extension_at_engine : UInt
+
+pub let debug_extinit_has_command_help : UInt
+
+pub let debug_filter_break : UInt
+
+pub let debug_filter_create_process : UInt
+
+pub let debug_filter_create_thread : UInt
+
+pub let debug_filter_debuggee_output : UInt
+
+pub let debug_filter_exit_process : UInt
+
+pub let debug_filter_exit_thread : UInt
+
+pub let debug_filter_go_handled : UInt
+
+pub let debug_filter_go_not_handled : UInt
+
+pub let debug_filter_ignore : UInt
+
+pub let debug_filter_initial_breakpoint : UInt
+
+pub let debug_filter_initial_module_load : UInt
+
+pub let debug_filter_load_module : UInt
+
+pub let debug_filter_output : UInt
+
+pub let debug_filter_remove : UInt
+
+pub let debug_filter_second_chance_break : UInt
+
+pub let debug_filter_system_error : UInt
+
+pub let debug_filter_unload_module : UInt
+
+pub let debug_find_source_best_match : UInt
+
+pub let debug_find_source_default : UInt
+
+pub let debug_find_source_full_path : UInt
+
+pub let debug_find_source_no_srcsrv : UInt
+
+pub let debug_find_source_token_lookup : UInt
+
+pub let debug_find_source_with_checksum : UInt
+
+pub let debug_find_source_with_checksum_strict : UInt
+
+pub let debug_format_cab_secondary_all_images : UInt
+
+pub let debug_format_cab_secondary_files : UInt
+
+pub let debug_format_default : UInt
+
+pub let debug_format_no_overwrite : UInt
+
+pub let debug_format_user_small_add_avx_xstate_context : UInt
+
+pub let debug_format_user_small_code_segments : UInt
+
+pub let debug_format_user_small_data_segments : UInt
+
+pub let debug_format_user_small_filter_memory : UInt
+
+pub let debug_format_user_small_filter_paths : UInt
+
+pub let debug_format_user_small_filter_triage : UInt
+
+pub let debug_format_user_small_full_auxiliary_state : UInt
+
+pub let debug_format_user_small_full_memory : UInt
+
+pub let debug_format_user_small_full_memory_info : UInt
+
+pub let debug_format_user_small_handle_data : UInt
+
+pub let debug_format_user_small_ignore_inaccessible_mem : UInt
+
+pub let debug_format_user_small_indirect_memory : UInt
+
+pub let debug_format_user_small_ipt_trace : UInt
+
+pub let debug_format_user_small_module_headers : UInt
+
+pub let debug_format_user_small_no_auxiliary_state : UInt
+
+pub let debug_format_user_small_no_ignore_inaccessible_mem : UInt
+
+pub let debug_format_user_small_no_optional_data : UInt
+
+pub let debug_format_user_small_private_read_write_memory : UInt
+
+pub let debug_format_user_small_process_thread_data : UInt
+
+pub let debug_format_user_small_scan_partial_pages : UInt
+
+pub let debug_format_user_small_thread_info : UInt
+
+pub let debug_format_user_small_unloaded_modules : UInt
+
+pub let debug_format_write_cab : UInt
+
+pub let debug_frame_default : UInt
+
+pub let debug_frame_ignore_inline : UInt
+
+pub let debug_get_proc_default : UInt
+
+pub let debug_get_proc_full_match : UInt
+
+pub let debug_get_proc_only_match : UInt
+
+pub let debug_get_proc_service_name : UInt
+
+pub let debug_get_text_completions_is_dot_command : UInt
+
+pub let debug_get_text_completions_is_extension_command : UInt
+
+pub let debug_get_text_completions_is_symbol : UInt
+
+pub let debug_get_text_completions_no_dot_commands : UInt
+
+pub let debug_get_text_completions_no_extension_commands : UInt
+
+pub let debug_get_text_completions_no_symbols : UInt
+
+pub let debug_getfnent_default : UInt
+
+pub let debug_getfnent_raw_entry_only : UInt
+
+pub let debug_getmod_default : UInt
+
+pub let debug_getmod_no_loaded_modules : UInt
+
+pub let debug_getmod_no_unloaded_modules : UInt
+
+pub let debug_gsel_allow_higher : UInt
+
+pub let debug_gsel_allow_lower : UInt
+
+pub let debug_gsel_default : UInt
+
+pub let debug_gsel_inline_callsite : UInt
+
+pub let debug_gsel_nearest_only : UInt
+
+pub let debug_gsel_no_symbol_loads : UInt
+
+pub let debug_handle_data_type_all_handle_operations : UInt
+
+pub let debug_handle_data_type_basic : UInt
+
+pub let debug_handle_data_type_handle_count : UInt
+
+pub let debug_handle_data_type_mini_event_1 : UInt
+
+pub let debug_handle_data_type_mini_mutant_1 : UInt
+
+pub let debug_handle_data_type_mini_mutant_2 : UInt
+
+pub let debug_handle_data_type_mini_process_1 : UInt
+
+pub let debug_handle_data_type_mini_process_2 : UInt
+
+pub let debug_handle_data_type_mini_section_1 : UInt
+
+pub let debug_handle_data_type_mini_semaphore_1 : UInt
+
+pub let debug_handle_data_type_mini_thread_1 : UInt
+
+pub let debug_handle_data_type_object_name : UInt
+
+pub let debug_handle_data_type_object_name_wide : UInt
+
+pub let debug_handle_data_type_per_handle_operations : UInt
+
+pub let debug_handle_data_type_type_name : UInt
+
+pub let debug_handle_data_type_type_name_wide : UInt
+
+pub let debug_interrupt_active : UInt
+
+pub let debug_interrupt_exit : UInt
+
+pub let debug_interrupt_passive : UInt
+
+pub let debug_ioutput_addr_translate : UInt
+
+pub let debug_ioutput_breakpoint : UInt
+
+pub let debug_ioutput_event : UInt
+
+pub let debug_ioutput_kd_protocol : UInt
+
+pub let debug_ioutput_remoting : UInt
+
+pub let debug_kernel_active_dump : UInt
+
+pub let debug_kernel_connection : UInt
+
+pub let debug_kernel_dump : UInt
+
+pub let debug_kernel_exdi_driver : UInt
+
+pub let debug_kernel_full_dump : UInt
+
+pub let debug_kernel_idna : UInt
+
+pub let debug_kernel_install_driver : UInt
+
+pub let debug_kernel_local : UInt
+
+pub let debug_kernel_rept : UInt
+
+pub let debug_kernel_small_dump : UInt
+
+pub let debug_kernel_trace_log : UInt
+
+pub let debug_known_struct_get_names : UInt
+
+pub let debug_known_struct_get_single_line_output : UInt
+
+pub let debug_known_struct_suppress_type_name : UInt
+
+pub let debug_level_assembly : UInt
+
+pub let debug_level_source : UInt
+
+pub let debug_live_user_non_invasive : UInt
+
+pub let debug_log_append : UInt
+
+pub let debug_log_default : UInt
+
+pub let debug_log_dml : UInt
+
+pub let debug_log_unicode : UInt
+
+pub let debug_managed_allowed : UInt
+
+pub let debug_managed_disabled : UInt
+
+pub let debug_managed_dll_loaded : UInt
+
+pub let debug_manreset_default : UInt
+
+pub let debug_manreset_load_dll : UInt
+
+pub let debug_manstr_load_status : UInt
+
+pub let debug_manstr_loaded_support_dll : UInt
+
+pub let debug_manstr_none : UInt
+
+pub let debug_modname_image : UInt
+
+pub let debug_modname_loaded_image : UInt
+
+pub let debug_modname_mapped_image : UInt
+
+pub let debug_modname_module : UInt
+
+pub let debug_modname_symbol_file : UInt
+
+pub let debug_module_exe_module : UInt
+
+pub let debug_module_explicit : UInt
+
+pub let debug_module_loaded : UInt
+
+pub let debug_module_secondary : UInt
+
+pub let debug_module_sym_bad_checksum : UInt
+
+pub let debug_module_synthetic : UInt
+
+pub let debug_module_unloaded : UInt
+
+pub let debug_module_user_mode : UInt
+
+pub let debug_notify_session_accessible : UInt
+
+pub let debug_notify_session_active : UInt
+
+pub let debug_notify_session_inaccessible : UInt
+
+pub let debug_notify_session_inactive : UInt
+
+pub let debug_offsinfo_virtual_source : UInt
+
+pub let debug_out_text_repl_default : UInt
+
+pub let debug_outcb_dml : UInt
+
+pub let debug_outcb_explicit_flush : UInt
+
+pub let debug_outcb_text : UInt
+
+pub let debug_outcbf_combined_explicit_flush : UInt
+
+pub let debug_outcbf_dml_has_special_characters : UInt
+
+pub let debug_outcbf_dml_has_tags : UInt
+
+pub let debug_outcbi_any_format : UInt
+
+pub let debug_outcbi_dml : UInt
+
+pub let debug_outcbi_explicit_flush : UInt
+
+pub let debug_outcbi_text : UInt
+
+pub let debug_outctl_all_clients : UInt
+
+pub let debug_outctl_all_other_clients : UInt
+
+pub let debug_outctl_ambient : UInt
+
+pub let debug_outctl_ambient_dml : UInt
+
+pub let debug_outctl_ambient_text : UInt
+
+pub let debug_outctl_dml : UInt
+
+pub let debug_outctl_ignore : UInt
+
+pub let debug_outctl_log_only : UInt
+
+pub let debug_outctl_not_logged : UInt
+
+pub let debug_outctl_override_mask : UInt
+
+pub let debug_outctl_send_mask : UInt
+
+pub let debug_outctl_this_client : UInt
+
+pub let debug_output_debuggee : UInt
+
+pub let debug_output_debuggee_prompt : UInt
+
+pub let debug_output_error : UInt
+
+pub let debug_output_extension_warning : UInt
+
+pub let debug_output_identity_default : UInt
+
+pub let debug_output_name_end : String
+
+pub let debug_output_name_end_t : String
+
+pub let debug_output_name_end_wide : String
+
+pub let debug_output_normal : UInt
+
+pub let debug_output_offset_end : String
+
+pub let debug_output_offset_end_t : String
+
+pub let debug_output_offset_end_wide : String
+
+pub let debug_output_prompt : UInt
+
+pub let debug_output_prompt_registers : UInt
+
+pub let debug_output_status : UInt
+
+pub let debug_output_symbols : UInt
+
+pub let debug_output_symbols_default : UInt
+
+pub let debug_output_symbols_no_names : UInt
+
+pub let debug_output_symbols_no_offsets : UInt
+
+pub let debug_output_symbols_no_types : UInt
+
+pub let debug_output_symbols_no_values : UInt
+
+pub let debug_output_type_end : String
+
+pub let debug_output_type_end_t : String
+
+pub let debug_output_type_end_wide : String
+
+pub let debug_output_value_end : String
+
+pub let debug_output_value_end_t : String
+
+pub let debug_output_value_end_wide : String
+
+pub let debug_output_verbose : UInt
+
+pub let debug_output_warning : UInt
+
+pub let debug_output_xml : UInt
+
+pub let debug_outsym_allow_displacement : UInt
+
+pub let debug_outsym_default : UInt
+
+pub let debug_outsym_force_offset : UInt
+
+pub let debug_outsym_source_line : UInt
+
+pub let debug_outtype_address_at_end : UInt
+
+pub let debug_outtype_address_of_field : UInt
+
+pub let debug_outtype_block_recurse : UInt
+
+pub let debug_outtype_compact_output : UInt
+
+pub let debug_outtype_default : UInt
+
+pub let debug_outtype_no_indent : UInt
+
+pub let debug_outtype_no_offset : UInt
+
+pub let debug_outtype_verbose : UInt
+
+pub let debug_physical_cached : UInt
+
+pub let debug_physical_default : UInt
+
+pub let debug_physical_uncached : UInt
+
+pub let debug_physical_write_combined : UInt
+
+pub let debug_proc_desc_default : UInt
+
+pub let debug_proc_desc_no_command_line : UInt
+
+pub let debug_proc_desc_no_mts_packages : UInt
+
+pub let debug_proc_desc_no_paths : UInt
+
+pub let debug_proc_desc_no_services : UInt
+
+pub let debug_proc_desc_no_session_id : UInt
+
+pub let debug_proc_desc_no_user_name : UInt
+
+pub let debug_proc_desc_with_architecture : UInt
+
+pub let debug_proc_desc_with_packagefamily : UInt
+
+pub let debug_process_detach_on_exit : UInt
+
+pub let debug_process_only_this_process : UInt
+
+pub let debug_register_sub_register : UInt
+
+pub let debug_registers_all : UInt
+
+pub let debug_registers_default : UInt
+
+pub let debug_registers_float : UInt
+
+pub let debug_registers_int32 : UInt
+
+pub let debug_registers_int64 : UInt
+
+pub let debug_regsrc_debuggee : UInt
+
+pub let debug_regsrc_explicit : UInt
+
+pub let debug_regsrc_frame : UInt
+
+pub let debug_request_add_cached_symbol_info : UInt
+
+pub let debug_request_close_token : UInt
+
+pub let debug_request_current_output_callbacks_are_dml_aware : UInt
+
+pub let debug_request_duplicate_token : UInt
+
+pub let debug_request_ext_typed_data_ansi : UInt
+
+pub let debug_request_get_additional_create_options : UInt
+
+pub let debug_request_get_cached_symbol_info : UInt
+
+pub let debug_request_get_captured_event_code_offset : UInt
+
+pub let debug_request_get_dump_header : UInt
+
+pub let debug_request_get_extension_search_path_wide : UInt
+
+pub let debug_request_get_image_architecture : UInt
+
+pub let debug_request_get_instrumentation_version : UInt
+
+pub let debug_request_get_module_architecture : UInt
+
+pub let debug_request_get_offset_unwind_information : UInt
+
+pub let debug_request_get_text_completions_ansi : UInt
+
+pub let debug_request_get_text_completions_wide : UInt
+
+pub let debug_request_get_win32_major_minor_versions : UInt
+
+pub let debug_request_inline_query : UInt
+
+pub let debug_request_midori : UInt
+
+pub let debug_request_misc_information : UInt
+
+pub let debug_request_open_process_token : UInt
+
+pub let debug_request_open_thread_token : UInt
+
+pub let debug_request_process_descriptors : UInt
+
+pub let debug_request_query_info_token : UInt
+
+pub let debug_request_read_captured_event_code_stream : UInt
+
+pub let debug_request_read_user_minidump_stream : UInt
+
+pub let debug_request_remove_cached_symbol_info : UInt
+
+pub let debug_request_resume_thread : UInt
+
+pub let debug_request_set_additional_create_options : UInt
+
+pub let debug_request_set_dump_header : UInt
+
+pub let debug_request_set_local_implicit_command_line : UInt
+
+pub let debug_request_set_parent_hwnd : UInt
+
+pub let debug_request_source_path_has_source_server : UInt
+
+pub let debug_request_target_can_detach : UInt
+
+pub let debug_request_target_exception_context : UInt
+
+pub let debug_request_target_exception_record : UInt
+
+pub let debug_request_target_exception_thread : UInt
+
+pub let debug_request_tl_instrumentation_aware : UInt
+
+pub let debug_request_wow_module : UInt
+
+pub let debug_request_wow_process : UInt
+
+pub let debug_scope_group_all : UInt
+
+pub let debug_scope_group_arguments : UInt
+
+pub let debug_scope_group_by_datamodel : UInt
+
+pub let debug_scope_group_locals : UInt
+
+pub let debug_servers_all : UInt
+
+pub let debug_servers_debugger : UInt
+
+pub let debug_servers_process : UInt
+
+pub let debug_session_active : UInt
+
+pub let debug_session_end : UInt
+
+pub let debug_session_end_session_active_detach : UInt
+
+pub let debug_session_end_session_active_terminate : UInt
+
+pub let debug_session_end_session_passive : UInt
+
+pub let debug_session_failure : UInt
+
+pub let debug_session_hibernate : UInt
+
+pub let debug_session_reboot : UInt
+
+pub let debug_source_is_statement : UInt
+
+pub let debug_srcfile_symbol_checksuminfo : UInt
+
+pub let debug_srcfile_symbol_token : UInt
+
+pub let debug_srcfile_symbol_token_source_command_wide : UInt
+
+pub let debug_stack_arguments : UInt
+
+pub let debug_stack_column_names : UInt
+
+pub let debug_stack_dml : UInt
+
+pub let debug_stack_frame_addresses : UInt
+
+pub let debug_stack_frame_addresses_ra_only : UInt
+
+pub let debug_stack_frame_arch : UInt
+
+pub let debug_stack_frame_memory_usage : UInt
+
+pub let debug_stack_frame_numbers : UInt
+
+pub let debug_stack_frame_offsets : UInt
+
+pub let debug_stack_function_info : UInt
+
+pub let debug_stack_nonvolatile_registers : UInt
+
+pub let debug_stack_parameters : UInt
+
+pub let debug_stack_parameters_newline : UInt
+
+pub let debug_stack_provider : UInt
+
+pub let debug_stack_source_line : UInt
+
+pub let debug_status_break : UInt
+
+pub let debug_status_go : UInt
+
+pub let debug_status_go_handled : UInt
+
+pub let debug_status_go_not_handled : UInt
+
+pub let debug_status_ignore_event : UInt
+
+pub let debug_status_inside_wait : UInt64
+
+pub let debug_status_mask : UInt
+
+pub let debug_status_no_change : UInt
+
+pub let debug_status_no_debuggee : UInt
+
+pub let debug_status_out_of_sync : UInt
+
+pub let debug_status_restart_requested : UInt
+
+pub let debug_status_reverse_go : UInt
+
+pub let debug_status_reverse_step_branch : UInt
+
+pub let debug_status_reverse_step_into : UInt
+
+pub let debug_status_reverse_step_over : UInt
+
+pub let debug_status_step_branch : UInt
+
+pub let debug_status_step_into : UInt
+
+pub let debug_status_step_over : UInt
+
+pub let debug_status_timeout : UInt
+
+pub let debug_status_wait_input : UInt
+
+pub let debug_status_wait_timeout : UInt64
+
+pub let debug_symbol_expanded : UInt
+
+pub let debug_symbol_expansion_level_mask : UInt
+
+pub let debug_symbol_is_argument : UInt
+
+pub let debug_symbol_is_array : UInt
+
+pub let debug_symbol_is_float : UInt
+
+pub let debug_symbol_is_local : UInt
+
+pub let debug_symbol_read_only : UInt
+
+pub let debug_syment_is_code : UInt
+
+pub let debug_syment_is_data : UInt
+
+pub let debug_syment_is_local : UInt
+
+pub let debug_syment_is_managed : UInt
+
+pub let debug_syment_is_parameter : UInt
+
+pub let debug_syment_is_synthetic : UInt
+
+pub let debug_syminfo_breakpoint_source_line : UInt
+
+pub let debug_syminfo_get_module_symbol_names_and_offsets : UInt
+
+pub let debug_syminfo_get_symbol_name_by_offset_and_tag_wide : UInt
+
+pub let debug_syminfo_imagehlp_modulew64 : UInt
+
+pub let debug_symtype_codeview : UInt
+
+pub let debug_symtype_coff : UInt
+
+pub let debug_symtype_deferred : UInt
+
+pub let debug_symtype_dia : UInt
+
+pub let debug_symtype_export : UInt
+
+pub let debug_symtype_none : UInt
+
+pub let debug_symtype_pdb : UInt
+
+pub let debug_symtype_sym : UInt
+
+pub let debug_sysobjinfo_current_process_cookie : UInt
+
+pub let debug_sysobjinfo_thread_basic_information : UInt
+
+pub let debug_sysobjinfo_thread_name_wide : UInt
+
+pub let debug_sysverstr_build : UInt
+
+pub let debug_sysverstr_service_pack : UInt
+
+pub let debug_tbinfo_affinity : UInt
+
+pub let debug_tbinfo_all : UInt
+
+pub let debug_tbinfo_exit_status : UInt
+
+pub let debug_tbinfo_priority : UInt
+
+pub let debug_tbinfo_priority_class : UInt
+
+pub let debug_tbinfo_start_offset : UInt
+
+pub let debug_tbinfo_times : UInt
+
+pub let debug_typed_data_is_in_memory : UInt
+
+pub let debug_typed_data_physical_cached : UInt
+
+pub let debug_typed_data_physical_default : UInt
+
+pub let debug_typed_data_physical_memory : UInt
+
+pub let debug_typed_data_physical_uncached : UInt
+
+pub let debug_typed_data_physical_write_combined : UInt
+
+pub let debug_typeopts_forceradix_output : UInt
+
+pub let debug_typeopts_longstatus_display : UInt
+
+pub let debug_typeopts_match_maxsize : UInt
+
+pub let debug_typeopts_unicode_display : UInt
+
+pub let debug_user_windows_dump : UInt
+
+pub let debug_user_windows_dump_windows_ce : UInt
+
+pub let debug_user_windows_idna : UInt
+
+pub let debug_user_windows_process : UInt
+
+pub let debug_user_windows_process_server : UInt
+
+pub let debug_user_windows_rept : UInt
+
+pub let debug_user_windows_small_dump : UInt
+
+pub let debug_value_float128 : UInt
+
+pub let debug_value_float32 : UInt
+
+pub let debug_value_float64 : UInt
+
+pub let debug_value_float80 : UInt
+
+pub let debug_value_float82 : UInt
+
+pub let debug_value_int16 : UInt
+
+pub let debug_value_int32 : UInt
+
+pub let debug_value_int64 : UInt
+
+pub let debug_value_int8 : UInt
+
+pub let debug_value_invalid : UInt
+
+pub let debug_value_types : UInt
+
+pub let debug_value_vector128 : UInt
+
+pub let debug_value_vector64 : UInt
+
+pub let debug_vsearch_default : UInt
+
+pub let debug_vsearch_writable_only : UInt
+
+pub let debug_vsource_debuggee : UInt
+
+pub let debug_vsource_dump_without_meminfo : UInt
+
+pub let debug_vsource_invalid : UInt
+
+pub let debug_vsource_mapped_image : UInt
+
+pub let debug_wait_default : UInt
+
+pub let dump_handle_flag_cid_table : UInt
+
+pub let dump_handle_flag_kernel_table : UInt
+
+pub let dump_handle_flag_print_free_entry : UInt
+
+pub let dump_handle_flag_print_object : UInt
+
+pub let error_dbg_cancelled : UInt
+
+pub let error_dbg_timeout : UInt
+
+pub let exit_on_controlc : UInt
+
+pub let ext_analyzer_flag_id : UInt
+
+pub let ext_analyzer_flag_mod : UInt
+
+pub let ext_api_version_number : UInt
+
+pub let ext_api_version_number32 : UInt
+
+pub let ext_api_version_number64 : UInt
+
+pub let ext_find_file_allow_given_path : UInt
+
+pub let ext_tdf_physical_cached : UInt
+
+pub let ext_tdf_physical_default : UInt
+
+pub let ext_tdf_physical_memory : UInt
+
+pub let ext_tdf_physical_uncached : UInt
+
+pub let ext_tdf_physical_write_combined : UInt
+
+pub let extdll_data_query_build_bindir : UInt
+
+pub let extdll_data_query_build_bindir_symsrv : UInt
+
+pub let extdll_data_query_build_symdir : UInt
+
+pub let extdll_data_query_build_symdir_symsrv : UInt
+
+pub let extdll_data_query_build_wow64_bindir : UInt
+
+pub let extdll_data_query_build_wow64_bindir_symsrv : UInt
+
+pub let extdll_data_query_build_wow64_symdir : UInt
+
+pub let extdll_data_query_build_wow64_symdir_symsrv : UInt
+
+pub let extsapi_ver : UInt
+
+pub let failure_analysis_assume_hang : UInt
+
+pub let failure_analysis_autobug_processing : UInt
+
+pub let failure_analysis_autoset_sympath : UInt
+
+pub let failure_analysis_callstack_xml : UInt
+
+pub let failure_analysis_callstack_xml_full_source_info : UInt
+
+pub let failure_analysis_create_instance : UInt
+
+pub let failure_analysis_exception_as_hang : UInt
+
+pub let failure_analysis_heap_corruption_blame_function : UInt
+
+pub let failure_analysis_ignore_breakin : UInt
+
+pub let failure_analysis_live_debug_hold_check : UInt
+
+pub let failure_analysis_module_info_xml : UInt
+
+pub let failure_analysis_multi_target : UInt
+
+pub let failure_analysis_no_db_lookup : UInt
+
+pub let failure_analysis_no_image_corruption : UInt
+
+pub let failure_analysis_permit_heap_access_violations : UInt
+
+pub let failure_analysis_registry_data : UInt
+
+pub let failure_analysis_set_failure_context : UInt
+
+pub let failure_analysis_show_source : UInt
+
+pub let failure_analysis_show_wct_stacks : UInt
+
+pub let failure_analysis_user_attributes : UInt
+
+pub let failure_analysis_user_attributes_all : UInt
+
+pub let failure_analysis_user_attributes_frames : UInt
+
+pub let failure_analysis_verbose : UInt
+
+pub let failure_analysis_wmi_query_data : UInt
+
+pub let failure_analysis_xml_file_output : UInt
+
+pub let failure_analysis_xml_output : UInt
+
+pub let failure_analysis_xsd_verify : UInt
+
+pub let failure_analysis_xslt_file_input : UInt
+
+pub let failure_analysis_xslt_file_output : UInt
+
+pub let fields_did_not_match : UInt
+
+pub let ig_disassemble_buffer : UInt
+
+pub let ig_dump_symbol_info : UInt
+
+pub let ig_find_file : UInt
+
+pub let ig_get_any_module_in_range : UInt
+
+pub let ig_get_bus_data : UInt
+
+pub let ig_get_cache_size : UInt
+
+pub let ig_get_clr_data_interface : UInt
+
+pub let ig_get_context_ex : UInt
+
+pub let ig_get_current_process : UInt
+
+pub let ig_get_current_process_handle : UInt
+
+pub let ig_get_current_thread : UInt
+
+pub let ig_get_debugger_data : UInt
+
+pub let ig_get_exception_record : UInt
+
+pub let ig_get_expression_ex : UInt
+
+pub let ig_get_input_line : UInt
+
+pub let ig_get_kernel_version : UInt
+
+pub let ig_get_peb_address : UInt
+
+pub let ig_get_set_sympath : UInt
+
+pub let ig_get_teb_address : UInt
+
+pub let ig_get_thread_os_info : UInt
+
+pub let ig_get_type_size : UInt
+
+pub let ig_is_ptr64 : UInt
+
+pub let ig_kd_context : UInt
+
+pub let ig_kstack_help : UInt
+
+pub let ig_lowmem_check : UInt
+
+pub let ig_match_pattern_a : UInt
+
+pub let ig_obsolete_placeholder_36 : UInt
+
+pub let ig_physical_to_virtual : UInt
+
+pub let ig_pointer_search_physical : UInt
+
+pub let ig_query_target_interface : UInt
+
+pub let ig_read_control_space : UInt
+
+pub let ig_read_io_space : UInt
+
+pub let ig_read_io_space_ex : UInt
+
+pub let ig_read_msr : UInt
+
+pub let ig_read_physical : UInt
+
+pub let ig_read_physical_with_flags : UInt
+
+pub let ig_reload_symbols : UInt
+
+pub let ig_search_memory : UInt
+
+pub let ig_set_bus_data : UInt
+
+pub let ig_set_thread : UInt
+
+pub let ig_translate_virtual_to_physical : UInt
+
+pub let ig_typed_data : UInt
+
+pub let ig_typed_data_obsolete : UInt
+
+pub let ig_virtual_to_physical : UInt
+
+pub let ig_write_control_space : UInt
+
+pub let ig_write_io_space : UInt
+
+pub let ig_write_io_space_ex : UInt
+
+pub let ig_write_msr : UInt
+
+pub let ig_write_physical : UInt
+
+pub let ig_write_physical_with_flags : UInt
+
+pub let incorrect_version_info : UInt
+
+pub let insufficient_space_to_copy : UInt
+
+pub let kd_secondary_version_amd64_context : UInt
+
+pub let kd_secondary_version_amd64_obsolete_context_1 : UInt
+
+pub let kd_secondary_version_amd64_obsolete_context_2 : UInt
+
+pub let kd_secondary_version_default : UInt
+
+pub let kdexts_lock_callbackroutine_defined : UInt
+
+pub let max_stack_in_bytes : UInt
+
+pub let memory_read_error : UInt
+
+pub let module_orders_loadtime : UInt
+
+pub let module_orders_mask : UInt
+
+pub let module_orders_modulename : UInt
+
+pub let null_field_name : UInt
+
+pub let null_sym_dump_param : UInt
+
+pub let phys_flag_cached : UInt
+
+pub let phys_flag_default : UInt
+
+pub let phys_flag_uncached : UInt
+
+pub let phys_flag_write_combined : UInt
+
+pub let ptr_search_no_symbol_check : UInt
+
+pub let ptr_search_phys_all_hits : UInt
+
+pub let ptr_search_phys_pte : UInt
+
+pub let ptr_search_phys_range_check_only : UInt
+
+pub let ptr_search_phys_size_shift : UInt
+
+pub let stack_frame_type_ignore : UInt
+
+pub let stack_frame_type_init : UInt
+
+pub let stack_frame_type_inline : UInt
+
+pub let stack_frame_type_ra : UInt
+
+pub let stack_frame_type_stack : UInt
+
+pub let symbol_type_index_not_found : UInt
+
+pub let symbol_type_info_not_found : UInt
+
+pub let triage_followup_default : UInt
+
+pub let triage_followup_fail : UInt
+
+pub let triage_followup_ignore : UInt
+
+pub let triage_followup_success : UInt
+
+pub let unavailable_error : UInt
+
+pub let wdbgexts_address_default : UInt
+
+pub let wdbgexts_address_reserved0 : UInt
+
+pub let wdbgexts_address_seg16 : UInt
+
+pub let wdbgexts_address_seg32 : UInt
+
+// Errors
+
+// Types and methods
+
+// Type aliases
+pub using @1c8009a2cccca96a {type AddressSpaceRelation_39a9ab2e0814 as AddressSpaceRelation}
+
+pub using @1c8009a2cccca96a {type ArrayDimension_c6d1704a2761 as ArrayDimension}
+
+pub using @1c8009a2cccca96a {type BUSDATA_a1fe69739ebd as BUSDATA}
+
+pub using @1c8009a2cccca96a {type CKCLDATA_728ca7970f5d as CKCLDATA}
+
+pub using @1c8009a2cccca96a {type CKCLLISTHEAD_447bb414e777 as CKCLLISTHEAD}
+
+pub using @1c8009a2cccca96a {type CPUINFO_0278d227d360 as CPUINFO}
+
+pub using @1c8009a2cccca96a {type CPUINFOV1_bc0b5dcc891c as CPUINFOV1}
+
+pub using @1c8009a2cccca96a {type CPUINFOV2_72847b85a9ba as CPUINFOV2}
+
+pub using @1c8009a2cccca96a {type CallingConventionKind_211aa643fb6d as CallingConventionKind}
+
+pub using @1c8009a2cccca96a {type DBGKDDEBUGDATAHEADER32_7b7387945eb9 as DBGKDDEBUGDATAHEADER32}
+
+pub using @1c8009a2cccca96a {type DBGKDDEBUGDATAHEADER64_38096749384f as DBGKDDEBUGDATAHEADER64}
+
+pub using @1c8009a2cccca96a {type DBGKDGETVERSION32_04e9cd9cd8a5 as DBGKDGETVERSION32}
+
+pub using @1c8009a2cccca96a {type DBGKDGETVERSION64_fe6c11e428ab as DBGKDGETVERSION64}
+
+pub using @1c8009a2cccca96a {type DBGKDMAJORTYPES_eeb5a600652d as DBGKDMAJORTYPES}
+
+pub using @1c8009a2cccca96a {type DBGTHREADATTRIBUTES_b41a3dee7e92 as DBGTHREADATTRIBUTES}
+
+pub using @1c8009a2cccca96a {type DEBUGANALYSISPROCESSORINFO_428b196b58e6 as DEBUGANALYSISPROCESSORINFO}
+
+pub using @1c8009a2cccca96a {type DEBUGBREAKPOINTPARAMETERS_0e442eff2faf as DEBUGBREAKPOINTPARAMETERS}
+
+pub using @1c8009a2cccca96a {type DEBUGCACHEDSYMBOLINFO_50dff5c065a7 as DEBUGCACHEDSYMBOLINFO}
+
+pub using @1c8009a2cccca96a {type DEBUGCLIENTCONTEXT_0308fc5a633a as DEBUGCLIENTCONTEXT}
+
+pub using @1c8009a2cccca96a {type DEBUGCPUMICROCODEVERSION_bbeec7aacf94 as DEBUGCPUMICROCODEVERSION}
+
+pub using @1c8009a2cccca96a {type DEBUGCPUSPEEDINFO_61e9a24d9b0c as DEBUGCPUSPEEDINFO}
+
+pub using @1c8009a2cccca96a {type DEBUGCREATEPROCESSOPTIONS_439838bee448 as DEBUGCREATEPROCESSOPTIONS}
+
+pub using @1c8009a2cccca96a {type DEBUGDECODEERROR_1369dca9c29e as DEBUGDECODEERROR}
+
+pub using @1c8009a2cccca96a {type DEBUGDEVICEOBJECTINFO_953fea2204dd as DEBUGDEVICEOBJECTINFO}
+
+pub using @1c8009a2cccca96a {type DEBUGDRIVEROBJECTINFO_41dc713e5337 as DEBUGDRIVEROBJECTINFO}
+
+pub using @1c8009a2cccca96a {type DEBUGDRIVEROBJECTINFODriverNameEStruct_359db92c7783 as DEBUGDRIVEROBJECTINFODriverNameEStruct}
+
+pub using @1c8009a2cccca96a {type DEBUGEVENTCONTEXT_9402d78c4123 as DEBUGEVENTCONTEXT}
+
+pub using @1c8009a2cccca96a {type DEBUGEXCEPTIONFILTERPARAMETERS_0affff854958 as DEBUGEXCEPTIONFILTERPARAMETERS}
+
+pub using @1c8009a2cccca96a {type DEBUGFAILURETYPE_bb4f0baa44b9 as DEBUGFAILURETYPE}
+
+pub using @1c8009a2cccca96a {type DEBUGFLRPARAMTYPE_d6cb59864219 as DEBUGFLRPARAMTYPE}
+
+pub using @1c8009a2cccca96a {type DEBUGGETTEXTCOMPLETIONSIN_9ecc630124d7 as DEBUGGETTEXTCOMPLETIONSIN}
+
+pub using @1c8009a2cccca96a {type DEBUGGETTEXTCOMPLETIONSOUT_9b8f0f26c7c0 as DEBUGGETTEXTCOMPLETIONSOUT}
+
+pub using @1c8009a2cccca96a {type DEBUGHANDLEDATABASIC_2bd8c1b3dd29 as DEBUGHANDLEDATABASIC}
+
+pub using @1c8009a2cccca96a {type DEBUGIRPINFO_a20e62889d16 as DEBUGIRPINFO}
+
+pub using @1c8009a2cccca96a {type DEBUGIRPSTACKINFO_771337a89220 as DEBUGIRPSTACKINFO}
+
+pub using @1c8009a2cccca96a {type DEBUGLASTEVENTINFOBREAKPOINT_23d643eccf88 as DEBUGLASTEVENTINFOBREAKPOINT}
+
+pub using @1c8009a2cccca96a {type DEBUGLASTEVENTINFOEXCEPTION_105f2b452eec as DEBUGLASTEVENTINFOEXCEPTION}
+
+pub using @1c8009a2cccca96a {type DEBUGLASTEVENTINFOEXITPROCESS_88c10890d2d4 as DEBUGLASTEVENTINFOEXITPROCESS}
+
+pub using @1c8009a2cccca96a {type DEBUGLASTEVENTINFOEXITTHREAD_0e2bd4922913 as DEBUGLASTEVENTINFOEXITTHREAD}
+
+pub using @1c8009a2cccca96a {type DEBUGLASTEVENTINFOLOADMODULE_fa77380d801b as DEBUGLASTEVENTINFOLOADMODULE}
+
+pub using @1c8009a2cccca96a {type DEBUGLASTEVENTINFOSERVICEEXCEPTION_4115db20a944 as DEBUGLASTEVENTINFOSERVICEEXCEPTION}
+
+pub using @1c8009a2cccca96a {type DEBUGLASTEVENTINFOSYSTEMERROR_3364c6232421 as DEBUGLASTEVENTINFOSYSTEMERROR}
+
+pub using @1c8009a2cccca96a {type DEBUGLASTEVENTINFOUNLOADMODULE_b1ecba8a68b5 as DEBUGLASTEVENTINFOUNLOADMODULE}
+
+pub using @1c8009a2cccca96a {type DEBUGMODULEANDID_1c66fd3611dd as DEBUGMODULEANDID}
+
+pub using @1c8009a2cccca96a {type DEBUGMODULEPARAMETERS_53012e454f20 as DEBUGMODULEPARAMETERS}
+
+pub using @1c8009a2cccca96a {type DEBUGOFFSETREGION_ac9671c9e36a as DEBUGOFFSETREGION}
+
+pub using @1c8009a2cccca96a {type DEBUGPNPTRIAGEINFO_9a0d8f8be182 as DEBUGPNPTRIAGEINFO}
+
+pub using @1c8009a2cccca96a {type DEBUGPOOLDATA_ab934011aa67 as DEBUGPOOLDATA}
+
+pub using @1c8009a2cccca96a {type DEBUGPOOLDATAAnonymousEUnion_f09c077a6649 as DEBUGPOOLDATAAnonymousEUnion}
+
+pub using @1c8009a2cccca96a {type DEBUGPOOLDATAAnonymousEUnionAnonymousEStruct_adc0125431aa as DEBUGPOOLDATAAnonymousEUnionAnonymousEStruct}
+
+pub using @1c8009a2cccca96a {type DEBUGPOOLREGION_5c3e3f5d6c78 as DEBUGPOOLREGION}
+
+pub using @1c8009a2cccca96a {type DEBUGPOOLTAGDESCRIPTION_4d4b12c0c318 as DEBUGPOOLTAGDESCRIPTION}
+
+pub using @1c8009a2cccca96a {type DEBUGPROCESSORIDENTIFICATIONALL_7bb1b0287c0c as DEBUGPROCESSORIDENTIFICATIONALL}
+
+pub using @1c8009a2cccca96a {type DEBUGPROCESSORIDENTIFICATIONALPHA_9db1545ea707 as DEBUGPROCESSORIDENTIFICATIONALPHA}
+
+pub using @1c8009a2cccca96a {type DEBUGPROCESSORIDENTIFICATIONAMD64_b59d9c33c70f as DEBUGPROCESSORIDENTIFICATIONAMD64}
+
+pub using @1c8009a2cccca96a {type DEBUGPROCESSORIDENTIFICATIONARM_94e630004d03 as DEBUGPROCESSORIDENTIFICATIONARM}
+
+pub using @1c8009a2cccca96a {type DEBUGPROCESSORIDENTIFICATIONARM64_de8e7415a0cd as DEBUGPROCESSORIDENTIFICATIONARM64}
+
+pub using @1c8009a2cccca96a {type DEBUGPROCESSORIDENTIFICATIONIA64_9ef8b196c08a as DEBUGPROCESSORIDENTIFICATIONIA64}
+
+pub using @1c8009a2cccca96a {type DEBUGPROCESSORIDENTIFICATIONX86_1cdc26d65255 as DEBUGPROCESSORIDENTIFICATIONX86}
+
+pub using @1c8009a2cccca96a {type DEBUGREADUSERMINIDUMPSTREAM_afebc1626fc8 as DEBUGREADUSERMINIDUMPSTREAM}
+
+pub using @1c8009a2cccca96a {type DEBUGREGISTERDESCRIPTION_7a041ef7dd95 as DEBUGREGISTERDESCRIPTION}
+
+pub using @1c8009a2cccca96a {type DEBUGSMBIOSINFO_a62052f789d8 as DEBUGSMBIOSINFO}
+
+pub using @1c8009a2cccca96a {type DEBUGSPECIFICFILTERPARAMETERS_ea15666059e1 as DEBUGSPECIFICFILTERPARAMETERS}
+
+pub using @1c8009a2cccca96a {type DEBUGSTACKFRAME_aed882057680 as DEBUGSTACKFRAME}
+
+pub using @1c8009a2cccca96a {type DEBUGSTACKFRAMEEX_891475b4b879 as DEBUGSTACKFRAMEEX}
+
+pub using @1c8009a2cccca96a {type DEBUGSYMBOLENTRY_0964e4dd28a4 as DEBUGSYMBOLENTRY}
+
+pub using @1c8009a2cccca96a {type DEBUGSYMBOLPARAMETERS_9d768cd2e35c as DEBUGSYMBOLPARAMETERS}
+
+pub using @1c8009a2cccca96a {type DEBUGSYMBOLSOURCEENTRY_e2cdb21ca355 as DEBUGSYMBOLSOURCEENTRY}
+
+pub using @1c8009a2cccca96a {type DEBUGTHREADBASICINFORMATION_fb76326dff73 as DEBUGTHREADBASICINFORMATION}
+
+pub using @1c8009a2cccca96a {type DEBUGTRIAGEFOLLOWUPINFO_f0e2556348c7 as DEBUGTRIAGEFOLLOWUPINFO}
+
+pub using @1c8009a2cccca96a {type DEBUGTRIAGEFOLLOWUPINFO2_45972aba7c3f as DEBUGTRIAGEFOLLOWUPINFO2}
+
+pub using @1c8009a2cccca96a {type DEBUGTYPEDDATA_fe7cd6cf1aea as DEBUGTYPEDDATA}
+
+pub using @1c8009a2cccca96a {type DEBUGVALUE_290200454916 as DEBUGVALUE}
+
+pub using @1c8009a2cccca96a {type DEBUGVALUEAnonymousEUnion_1e89f7c7ee1e as DEBUGVALUEAnonymousEUnion}
+
+pub using @1c8009a2cccca96a {type DEBUGVALUEAnonymousEUnionAnonymousEStruct_faeedbae55d9 as DEBUGVALUEAnonymousEUnionAnonymousEStruct}
+
+pub using @1c8009a2cccca96a {type DEBUGVALUEAnonymousEUnionF128Parts64EStruct_fc3fc5718af2 as DEBUGVALUEAnonymousEUnionF128Parts64EStruct}
+
+pub using @1c8009a2cccca96a {type DEBUGVALUEAnonymousEUnionI64Parts32EStruct_1049a7c26c43 as DEBUGVALUEAnonymousEUnionI64Parts32EStruct}
+
+pub using @1c8009a2cccca96a {type DebugBaseEventCallbacks_48b2d56e33b9 as DebugBaseEventCallbacks}
+
+pub using @1c8009a2cccca96a {type DebugBaseEventCallbacksWide_8f2efebac3b4 as DebugBaseEventCallbacksWide}
+
+pub using @1c8009a2cccca96a {type ENTRYCALLBACK_82d976e625c9 as ENTRYCALLBACK}
+
+pub using @1c8009a2cccca96a {type EXTANALYSISPLUGIN_4af1efd11481 as EXTANALYSISPLUGIN}
+
+pub using @1c8009a2cccca96a {type EXTANALYZER_a6bf5038dfa5 as EXTANALYZER}
+
+pub using @1c8009a2cccca96a {type EXTAPIVERSION_ec8aed71240e as EXTAPIVERSION}
+
+pub using @1c8009a2cccca96a {type EXTCABXMLDATA_cb441c012de2 as EXTCABXMLDATA}
+
+pub using @1c8009a2cccca96a {type EXTCABXMLDATASUBTAGS_1466303b5788 as EXTCABXMLDATASUBTAGS}
+
+pub using @1c8009a2cccca96a {type EXTDECODEERROR_f7793131744f as EXTDECODEERROR}
+
+pub using @1c8009a2cccca96a {type EXTDLLITERATERTLBALANCEDNODES_57a57f76b958 as EXTDLLITERATERTLBALANCEDNODES}
+
+pub using @1c8009a2cccca96a {type EXTDLLQUERYDATABYTAG_b3524ff490c3 as EXTDLLQUERYDATABYTAG}
+
+pub using @1c8009a2cccca96a {type EXTDLLQUERYDATABYTAGEX_afafd13db498 as EXTDLLQUERYDATABYTAGEX}
+
+pub using @1c8009a2cccca96a {type EXTFINDFILE_16a22bfee5f8 as EXTFINDFILE}
+
+pub using @1c8009a2cccca96a {type EXTGETDEBUGFAILUREANALYSIS_4d09b694739b as EXTGETDEBUGFAILUREANALYSIS}
+
+pub using @1c8009a2cccca96a {type EXTGETENVIRONMENTVARIABLE_f207ad11086a as EXTGETENVIRONMENTVARIABLE}
+
+pub using @1c8009a2cccca96a {type EXTGETFAENTRIESDATA_f9d31cebb1ed as EXTGETFAENTRIESDATA}
+
+pub using @1c8009a2cccca96a {type EXTGETFAILUREANALYSIS_12e8cc8e8ad7 as EXTGETFAILUREANALYSIS}
+
+pub using @1c8009a2cccca96a {type EXTGETHANDLETRACE_289a11ea0f37 as EXTGETHANDLETRACE}
+
+pub using @1c8009a2cccca96a {type EXTMATCHPATTERNA_493350ce710e as EXTMATCHPATTERNA}
+
+pub using @1c8009a2cccca96a {type EXTRELOADTRIAGER_575b3c74db26 as EXTRELOADTRIAGER}
+
+pub using @1c8009a2cccca96a {type EXTSJOBPROCESSCALLBACK_0d1ce078b436 as EXTSJOBPROCESSCALLBACK}
+
+pub using @1c8009a2cccca96a {type EXTSTABLEENTRYCALLBACK_ea09085442e7 as EXTSTABLEENTRYCALLBACK}
+
+pub using @1c8009a2cccca96a {type EXTSTACKTRACE_f5516113dfc9 as EXTSTACKTRACE}
+
+pub using @1c8009a2cccca96a {type EXTSTACKTRACE32_0ed9ce9cbeca as EXTSTACKTRACE32}
+
+pub using @1c8009a2cccca96a {type EXTSTACKTRACE64_38b105f821e2 as EXTSTACKTRACE64}
+
+pub using @1c8009a2cccca96a {type EXTTARGETINFO_c9482628f4bb as EXTTARGETINFO}
+
+pub using @1c8009a2cccca96a {type EXTTDOP_24cbabb56058 as EXTTDOP}
+
+pub using @1c8009a2cccca96a {type EXTTRIAGEFOLLOWUP_19beaaac93a7 as EXTTRIAGEFOLLOWUP}
+
+pub using @1c8009a2cccca96a {type EXTTYPEDDATA_ff9c3789b9d2 as EXTTYPEDDATA}
+
+pub using @1c8009a2cccca96a {type EXTXMLDATA_6c37d191184e as EXTXMLDATA}
+
+pub using @1c8009a2cccca96a {type ErrorClass_efe5cf1d2f09 as ErrorClass}
+
+pub using @1c8009a2cccca96a {type ExtendedArrayDimension_5c353037064f as ExtendedArrayDimension}
+
+pub using @1c8009a2cccca96a {type ExtendedArrayDimensionFlags_e1fe648f7a17 as ExtendedArrayDimensionFlags}
+
+pub using @1c8009a2cccca96a {type FAENTRY_74fc24d720ee as FAENTRY}
+
+pub using @1c8009a2cccca96a {type FAENTRYTYPE_cdee2239e95b as FAENTRYTYPE}
+
+pub using @1c8009a2cccca96a {type FAEXTENSIONPLUGINPHASE_73e08a805345 as FAEXTENSIONPLUGINPHASE}
+
+pub using @1c8009a2cccca96a {type FIELDINFO_f2c4dbee72bc as FIELDINFO}
+
+pub using @1c8009a2cccca96a {type FIELDINFOAnonymousEUnion_2418d39c29b4 as FIELDINFOAnonymousEUnion}
+
+pub using @1c8009a2cccca96a {type FIELDINFOBitField_a3920d89103c as FIELDINFOBitField}
+
+pub using @1c8009a2cccca96a {type FnDebugFailureAnalysisCreateInstance_dccb4a71d188 as FnDebugFailureAnalysisCreateInstance}
+
+pub using @1c8009a2cccca96a {type GETCONTEXTEX_91769ca17ead as GETCONTEXTEX}
+
+pub using @1c8009a2cccca96a {type GETCURRENTPROCESSADDRESS_85a3a8c767a4 as GETCURRENTPROCESSADDRESS}
+
+pub using @1c8009a2cccca96a {type GETCURRENTTHREADADDRESS_3a004709d40d as GETCURRENTTHREADADDRESS}
+
+pub using @1c8009a2cccca96a {type GETEXPRESSIONEX_a4896b4b1ad9 as GETEXPRESSIONEX}
+
+pub using @1c8009a2cccca96a {type GETINPUTLINE_a00e2c511ee5 as GETINPUTLINE}
+
+pub using @1c8009a2cccca96a {type GETPEBADDRESS_0be128821239 as GETPEBADDRESS}
+
+pub using @1c8009a2cccca96a {type GETSETSYMPATH_eefc74410746 as GETSETSYMPATH}
+
+pub using @1c8009a2cccca96a {type GETTEBADDRESS_18ba2896097d as GETTEBADDRESS}
+
+pub using @1c8009a2cccca96a {type IActionEnumerator_f92047a60bc0 as IActionEnumerator}
+
+pub using @1c8009a2cccca96a {type IActionQueryConcept_c312b9b1a824 as IActionQueryConcept}
+
+pub using @1c8009a2cccca96a {type IActionableConcept_19d0ee12f426 as IActionableConcept}
+
+pub using @1c8009a2cccca96a {type ICodeAddressConcept_46338803964c as ICodeAddressConcept}
+
+pub using @1c8009a2cccca96a {type IComparableConcept_62ace437cea0 as IComparableConcept}
+
+pub using @1c8009a2cccca96a {type IConstructableConcept_b46e457a4a6d as IConstructableConcept}
+
+pub using @1c8009a2cccca96a {type IDataModelConcept_d51d28c02217 as IDataModelConcept}
+
+pub using @1c8009a2cccca96a {type IDataModelManager_ba77323e97e2 as IDataModelManager}
+
+pub using @1c8009a2cccca96a {type IDataModelManager2_7f882eb44c14 as IDataModelManager2}
+
+pub using @1c8009a2cccca96a {type IDataModelManager3_ce76d1fdc2b0 as IDataModelManager3}
+
+pub using @1c8009a2cccca96a {type IDataModelManager4_773587fca3ca as IDataModelManager4}
+
+pub using @1c8009a2cccca96a {type IDataModelNameBinder_5ebc425298db as IDataModelNameBinder}
+
+pub using @1c8009a2cccca96a {type IDataModelScript_399629305076 as IDataModelScript}
+
+pub using @1c8009a2cccca96a {type IDataModelScript2_ab6881af84d0 as IDataModelScript2}
+
+pub using @1c8009a2cccca96a {type IDataModelScriptClient_538c79f1dc9d as IDataModelScriptClient}
+
+pub using @1c8009a2cccca96a {type IDataModelScriptDebug_c82f57fad626 as IDataModelScriptDebug}
+
+pub using @1c8009a2cccca96a {type IDataModelScriptDebug2_135dd6ab8701 as IDataModelScriptDebug2}
+
+pub using @1c8009a2cccca96a {type IDataModelScriptDebugBreakpoint_e099df423969 as IDataModelScriptDebugBreakpoint}
+
+pub using @1c8009a2cccca96a {type IDataModelScriptDebugBreakpointEnumerator_24f6e9f3897a as IDataModelScriptDebugBreakpointEnumerator}
+
+pub using @1c8009a2cccca96a {type IDataModelScriptDebugClient_f3ffceb2ceb0 as IDataModelScriptDebugClient}
+
+pub using @1c8009a2cccca96a {type IDataModelScriptDebugStack_3102538848aa as IDataModelScriptDebugStack}
+
+pub using @1c8009a2cccca96a {type IDataModelScriptDebugStackFrame_a63faab60941 as IDataModelScriptDebugStackFrame}
+
+pub using @1c8009a2cccca96a {type IDataModelScriptDebugVariableSetEnumerator_16dfea28a28f as IDataModelScriptDebugVariableSetEnumerator}
+
+pub using @1c8009a2cccca96a {type IDataModelScriptHostContext_bfa33875f3ef as IDataModelScriptHostContext}
+
+pub using @1c8009a2cccca96a {type IDataModelScriptManager_7554b0ab3db5 as IDataModelScriptManager}
+
+pub using @1c8009a2cccca96a {type IDataModelScriptProvider_18955e897242 as IDataModelScriptProvider}
+
+pub using @1c8009a2cccca96a {type IDataModelScriptProviderEnumerator_6a20364e6df6 as IDataModelScriptProviderEnumerator}
+
+pub using @1c8009a2cccca96a {type IDataModelScriptTemplate_5b90128ee66c as IDataModelScriptTemplate}
+
+pub using @1c8009a2cccca96a {type IDataModelScriptTemplateEnumerator_228dec7035c8 as IDataModelScriptTemplateEnumerator}
+
+pub using @1c8009a2cccca96a {type IDebugAdvanced_609b301eaef9 as IDebugAdvanced}
+
+pub using @1c8009a2cccca96a {type IDebugAdvanced2_4b8641e6ff6f as IDebugAdvanced2}
+
+pub using @1c8009a2cccca96a {type IDebugAdvanced3_e6b9aaa579ff as IDebugAdvanced3}
+
+pub using @1c8009a2cccca96a {type IDebugAdvanced4_922143629a3b as IDebugAdvanced4}
+
+pub using @1c8009a2cccca96a {type IDebugBreakpoint_1570d00fd29f as IDebugBreakpoint}
+
+pub using @1c8009a2cccca96a {type IDebugBreakpoint2_9ffc1c12de3f as IDebugBreakpoint2}
+
+pub using @1c8009a2cccca96a {type IDebugBreakpoint3_65df5749c826 as IDebugBreakpoint3}
+
+pub using @1c8009a2cccca96a {type IDebugClient_b5334c5b6324 as IDebugClient}
+
+pub using @1c8009a2cccca96a {type IDebugClient2_56b8aba2c261 as IDebugClient2}
+
+pub using @1c8009a2cccca96a {type IDebugClient3_5b37718cd1b2 as IDebugClient3}
+
+pub using @1c8009a2cccca96a {type IDebugClient4_ecef3bf4eb7c as IDebugClient4}
+
+pub using @1c8009a2cccca96a {type IDebugClient5_1218fcbf869e as IDebugClient5}
+
+pub using @1c8009a2cccca96a {type IDebugClient6_c3c01d0afd61 as IDebugClient6}
+
+pub using @1c8009a2cccca96a {type IDebugClient7_e18160d2c5b3 as IDebugClient7}
+
+pub using @1c8009a2cccca96a {type IDebugClient8_9829e4f0aa6f as IDebugClient8}
+
+pub using @1c8009a2cccca96a {type IDebugClient9_c92252dd1d05 as IDebugClient9}
+
+pub using @1c8009a2cccca96a {type IDebugControl_82267e3a6319 as IDebugControl}
+
+pub using @1c8009a2cccca96a {type IDebugControl2_c6d032dc235f as IDebugControl2}
+
+pub using @1c8009a2cccca96a {type IDebugControl3_9cfd5839a0e9 as IDebugControl3}
+
+pub using @1c8009a2cccca96a {type IDebugControl4_ce00128a6e32 as IDebugControl4}
+
+pub using @1c8009a2cccca96a {type IDebugControl5_1524a7b70658 as IDebugControl5}
+
+pub using @1c8009a2cccca96a {type IDebugControl6_da98c89812b1 as IDebugControl6}
+
+pub using @1c8009a2cccca96a {type IDebugControl7_b3969e617cc3 as IDebugControl7}
+
+pub using @1c8009a2cccca96a {type IDebugDataSpaces_039fde421a11 as IDebugDataSpaces}
+
+pub using @1c8009a2cccca96a {type IDebugDataSpaces2_4775ee0bdae4 as IDebugDataSpaces2}
+
+pub using @1c8009a2cccca96a {type IDebugDataSpaces3_7c4b0027732e as IDebugDataSpaces3}
+
+pub using @1c8009a2cccca96a {type IDebugDataSpaces4_b837ad6fa328 as IDebugDataSpaces4}
+
+pub using @1c8009a2cccca96a {type IDebugEventCallbacks_7400025126a9 as IDebugEventCallbacks}
+
+pub using @1c8009a2cccca96a {type IDebugEventCallbacksWide_69a664d322a6 as IDebugEventCallbacksWide}
+
+pub using @1c8009a2cccca96a {type IDebugEventContextCallbacks_73dea9f9d7a0 as IDebugEventContextCallbacks}
+
+pub using @1c8009a2cccca96a {type IDebugFAEntryTags_4638de118da0 as IDebugFAEntryTags}
+
+pub using @1c8009a2cccca96a {type IDebugFailureAnalysis_f25c87bbbd7c as IDebugFailureAnalysis}
+
+pub using @1c8009a2cccca96a {type IDebugFailureAnalysis2_02d4da3c5c4e as IDebugFailureAnalysis2}
+
+pub using @1c8009a2cccca96a {type IDebugFailureAnalysis3_f0176e335dfa as IDebugFailureAnalysis3}
+
+pub using @1c8009a2cccca96a {type IDebugHost_8b274aadf57f as IDebugHost}
+
+pub using @1c8009a2cccca96a {type IDebugHostBaseClass_f1d09fa1eeeb as IDebugHostBaseClass}
+
+pub using @1c8009a2cccca96a {type IDebugHostBaseClass2_75597978208f as IDebugHostBaseClass2}
+
+pub using @1c8009a2cccca96a {type IDebugHostConstant_b9d2544f6182 as IDebugHostConstant}
+
+pub using @1c8009a2cccca96a {type IDebugHostContext_12f143da5a6d as IDebugHostContext}
+
+pub using @1c8009a2cccca96a {type IDebugHostContext2_a1fb441e05a5 as IDebugHostContext2}
+
+pub using @1c8009a2cccca96a {type IDebugHostContextAlternator_1144b749bb23 as IDebugHostContextAlternator}
+
+pub using @1c8009a2cccca96a {type IDebugHostContextControl_01e57f8c26a9 as IDebugHostContextControl}
+
+pub using @1c8009a2cccca96a {type IDebugHostContextExtensibility_99aa5e686d08 as IDebugHostContextExtensibility}
+
+pub using @1c8009a2cccca96a {type IDebugHostContextExtension_16ecd6e55030 as IDebugHostContextExtension}
+
+pub using @1c8009a2cccca96a {type IDebugHostContextTargetComposition_3b1a775b801f as IDebugHostContextTargetComposition}
+
+pub using @1c8009a2cccca96a {type IDebugHostData_0232174e4e36 as IDebugHostData}
+
+pub using @1c8009a2cccca96a {type IDebugHostErrorSink_9f33a99d40b8 as IDebugHostErrorSink}
+
+pub using @1c8009a2cccca96a {type IDebugHostEvaluator_a22bb4a94c72 as IDebugHostEvaluator}
+
+pub using @1c8009a2cccca96a {type IDebugHostEvaluator2_e5e155ebea26 as IDebugHostEvaluator2}
+
+pub using @1c8009a2cccca96a {type IDebugHostEvaluator3_cdf1c4605ccf as IDebugHostEvaluator3}
+
+pub using @1c8009a2cccca96a {type IDebugHostExtensibility_3fb0cb874aea as IDebugHostExtensibility}
+
+pub using @1c8009a2cccca96a {type IDebugHostExtensibility2_996c99244235 as IDebugHostExtensibility2}
+
+pub using @1c8009a2cccca96a {type IDebugHostExtensibility3_e4c518ab13c2 as IDebugHostExtensibility3}
+
+pub using @1c8009a2cccca96a {type IDebugHostField_44190508cd70 as IDebugHostField}
+
+pub using @1c8009a2cccca96a {type IDebugHostField2_687519a2c2bd as IDebugHostField2}
+
+pub using @1c8009a2cccca96a {type IDebugHostFunctionIntrospection_3b2777fa2124 as IDebugHostFunctionIntrospection}
+
+pub using @1c8009a2cccca96a {type IDebugHostFunctionIntrospection2_ececb0486ab4 as IDebugHostFunctionIntrospection2}
+
+pub using @1c8009a2cccca96a {type IDebugHostFunctionIntrospection3_13fc842a015c as IDebugHostFunctionIntrospection3}
+
+pub using @1c8009a2cccca96a {type IDebugHostFunctionLocalDetails_ec104a9a3a8e as IDebugHostFunctionLocalDetails}
+
+pub using @1c8009a2cccca96a {type IDebugHostFunctionLocalDetails2_6d3b9ddd774c as IDebugHostFunctionLocalDetails2}
+
+pub using @1c8009a2cccca96a {type IDebugHostFunctionLocalDetailsEnumerator_7ffb44a8ae1b as IDebugHostFunctionLocalDetailsEnumerator}
+
+pub using @1c8009a2cccca96a {type IDebugHostFunctionLocalStorage_23520f81464b as IDebugHostFunctionLocalStorage}
+
+pub using @1c8009a2cccca96a {type IDebugHostFunctionLocalStorage2_e5933260104b as IDebugHostFunctionLocalStorage2}
+
+pub using @1c8009a2cccca96a {type IDebugHostFunctionLocalStorageEnumerator_524440f5b6b9 as IDebugHostFunctionLocalStorageEnumerator}
+
+pub using @1c8009a2cccca96a {type IDebugHostMemory_a499c78d9107 as IDebugHostMemory}
+
+pub using @1c8009a2cccca96a {type IDebugHostMemory2_7a82cb73d042 as IDebugHostMemory2}
+
+pub using @1c8009a2cccca96a {type IDebugHostMemory3_89209d52e417 as IDebugHostMemory3}
+
+pub using @1c8009a2cccca96a {type IDebugHostMemory4_56f76206ca0a as IDebugHostMemory4}
+
+pub using @1c8009a2cccca96a {type IDebugHostMemory5_b04493935cf2 as IDebugHostMemory5}
+
+pub using @1c8009a2cccca96a {type IDebugHostModule_7aefcce0f6b8 as IDebugHostModule}
+
+pub using @1c8009a2cccca96a {type IDebugHostModule2_386714e2e715 as IDebugHostModule2}
+
+pub using @1c8009a2cccca96a {type IDebugHostModule3_be7aa7a4f529 as IDebugHostModule3}
+
+pub using @1c8009a2cccca96a {type IDebugHostModule4_3b0288eab300 as IDebugHostModule4}
+
+pub using @1c8009a2cccca96a {type IDebugHostModule5_7fc0d0c592ef as IDebugHostModule5}
+
+pub using @1c8009a2cccca96a {type IDebugHostModuleSignature_c271d3be3dff as IDebugHostModuleSignature}
+
+pub using @1c8009a2cccca96a {type IDebugHostPublic_1f39d6cc1e03 as IDebugHostPublic}
+
+pub using @1c8009a2cccca96a {type IDebugHostScriptHost_2c63d8d83b23 as IDebugHostScriptHost}
+
+pub using @1c8009a2cccca96a {type IDebugHostStatus_58a076a83b18 as IDebugHostStatus}
+
+pub using @1c8009a2cccca96a {type IDebugHostStatus2_3718007e1eaa as IDebugHostStatus2}
+
+pub using @1c8009a2cccca96a {type IDebugHostSymbol_4a05f94f0e0b as IDebugHostSymbol}
+
+pub using @1c8009a2cccca96a {type IDebugHostSymbol2_81ef8864a9ea as IDebugHostSymbol2}
+
+pub using @1c8009a2cccca96a {type IDebugHostSymbol3_ac5134f955b8 as IDebugHostSymbol3}
+
+pub using @1c8009a2cccca96a {type IDebugHostSymbolEnumerator_093a8b0fe1a3 as IDebugHostSymbolEnumerator}
+
+pub using @1c8009a2cccca96a {type IDebugHostSymbolSubstitutionEnumerator_88fd65126e11 as IDebugHostSymbolSubstitutionEnumerator}
+
+pub using @1c8009a2cccca96a {type IDebugHostSymbols_7b1370af0970 as IDebugHostSymbols}
+
+pub using @1c8009a2cccca96a {type IDebugHostSymbols2_a5a7ac90659c as IDebugHostSymbols2}
+
+pub using @1c8009a2cccca96a {type IDebugHostSymbolsTargetComposition_7b69b6156a31 as IDebugHostSymbolsTargetComposition}
+
+pub using @1c8009a2cccca96a {type IDebugHostTaggedUnionRangeEnumerator_f7a3dce682b4 as IDebugHostTaggedUnionRangeEnumerator}
+
+pub using @1c8009a2cccca96a {type IDebugHostType_4dc308a3b2b9 as IDebugHostType}
+
+pub using @1c8009a2cccca96a {type IDebugHostType2_377ec6959597 as IDebugHostType2}
+
+pub using @1c8009a2cccca96a {type IDebugHostType3_2e1940217a6e as IDebugHostType3}
+
+pub using @1c8009a2cccca96a {type IDebugHostType4_ee61257b8968 as IDebugHostType4}
+
+pub using @1c8009a2cccca96a {type IDebugHostType5_8295dbb885d8 as IDebugHostType5}
+
+pub using @1c8009a2cccca96a {type IDebugHostType6_6358b36e29b9 as IDebugHostType6}
+
+pub using @1c8009a2cccca96a {type IDebugHostTypeSignature_68184a46966a as IDebugHostTypeSignature}
+
+pub using @1c8009a2cccca96a {type IDebugInputCallbacks_9c917e33d1f4 as IDebugInputCallbacks}
+
+pub using @1c8009a2cccca96a {type IDebugOutputCallbacks_c38824bb636e as IDebugOutputCallbacks}
+
+pub using @1c8009a2cccca96a {type IDebugOutputCallbacks2_769067de8af6 as IDebugOutputCallbacks2}
+
+pub using @1c8009a2cccca96a {type IDebugOutputCallbacksWide_7122d7ceca38 as IDebugOutputCallbacksWide}
+
+pub using @1c8009a2cccca96a {type IDebugOutputStream_91faccdad4eb as IDebugOutputStream}
+
+pub using @1c8009a2cccca96a {type IDebugPlmClient_5ad50e334559 as IDebugPlmClient}
+
+pub using @1c8009a2cccca96a {type IDebugPlmClient2_678a4507733e as IDebugPlmClient2}
+
+pub using @1c8009a2cccca96a {type IDebugPlmClient3_49abb58d32da as IDebugPlmClient3}
+
+pub using @1c8009a2cccca96a {type IDebugRegisters_0d2523158d5a as IDebugRegisters}
+
+pub using @1c8009a2cccca96a {type IDebugRegisters2_ec57c4545274 as IDebugRegisters2}
+
+pub using @1c8009a2cccca96a {type IDebugServiceManager_3f2dd7f83b01 as IDebugServiceManager}
+
+pub using @1c8009a2cccca96a {type IDebugSymbolGroup_c442982d3125 as IDebugSymbolGroup}
+
+pub using @1c8009a2cccca96a {type IDebugSymbolGroup2_b47469c9a08c as IDebugSymbolGroup2}
+
+pub using @1c8009a2cccca96a {type IDebugSymbols_6cc0847c6bf1 as IDebugSymbols}
+
+pub using @1c8009a2cccca96a {type IDebugSymbols2_af19f600bd0a as IDebugSymbols2}
+
+pub using @1c8009a2cccca96a {type IDebugSymbols3_ab29d8224d89 as IDebugSymbols3}
+
+pub using @1c8009a2cccca96a {type IDebugSymbols4_adbe9e841ecc as IDebugSymbols4}
+
+pub using @1c8009a2cccca96a {type IDebugSymbols5_106618afcfb8 as IDebugSymbols5}
+
+pub using @1c8009a2cccca96a {type IDebugSystemObjects_8830eaf58845 as IDebugSystemObjects}
+
+pub using @1c8009a2cccca96a {type IDebugSystemObjects2_7d3caf71625b as IDebugSystemObjects2}
+
+pub using @1c8009a2cccca96a {type IDebugSystemObjects3_a0b202f7d68f as IDebugSystemObjects3}
+
+pub using @1c8009a2cccca96a {type IDebugSystemObjects4_0d9c520a1abd as IDebugSystemObjects4}
+
+pub using @1c8009a2cccca96a {type IDeconstructableConcept_0f4db6034fd0 as IDeconstructableConcept}
+
+pub using @1c8009a2cccca96a {type IDynamicConceptProviderConcept_ec79162e3fde as IDynamicConceptProviderConcept}
+
+pub using @1c8009a2cccca96a {type IDynamicKeyProviderConcept_32bcf7c0fb73 as IDynamicKeyProviderConcept}
+
+pub using @1c8009a2cccca96a {type IEquatableConcept_ed82460344d3 as IEquatableConcept}
+
+pub using @1c8009a2cccca96a {type IFilteredNamespacePropertyToken_ec69c64f25ac as IFilteredNamespacePropertyToken}
+
+pub using @1c8009a2cccca96a {type IHostDataModelAccess_847e2daf8eab as IHostDataModelAccess}
+
+pub using @1c8009a2cccca96a {type IIndexableConcept_70f822f630ed as IIndexableConcept}
+
+pub using @1c8009a2cccca96a {type IIterableConcept_7330412b1a19 as IIterableConcept}
+
+pub using @1c8009a2cccca96a {type IKeyEnumerator_1fbd73c8f9ea as IKeyEnumerator}
+
+pub using @1c8009a2cccca96a {type IKeyStore_f34442261fcd as IKeyStore}
+
+pub using @1c8009a2cccca96a {type IModelIterator_dcc4f601e094 as IModelIterator}
+
+pub using @1c8009a2cccca96a {type IModelKeyReference_01643b5aadec as IModelKeyReference}
+
+pub using @1c8009a2cccca96a {type IModelKeyReference2_f39c9f68a6f4 as IModelKeyReference2}
+
+pub using @1c8009a2cccca96a {type IModelMethod_4125a784d0ce as IModelMethod}
+
+pub using @1c8009a2cccca96a {type IModelObject_2b1b0b1503b3 as IModelObject}
+
+pub using @1c8009a2cccca96a {type IModelObject2_d7c788437662 as IModelObject2}
+
+pub using @1c8009a2cccca96a {type IModelPropertyAccessor_dc11a8d3e4d1 as IModelPropertyAccessor}
+
+pub using @1c8009a2cccca96a {type INLINEFRAMECONTEXT_4f613e69165c as INLINEFRAMECONTEXT}
+
+pub using @1c8009a2cccca96a {type INLINEFRAMECONTEXTAnonymousEStruct_bade6ce851ca as INLINEFRAMECONTEXTAnonymousEStruct}
+
+pub using @1c8009a2cccca96a {type INamedModelsEnumerator_3d2f8b2e5ff3 as INamedModelsEnumerator}
+
+pub using @1c8009a2cccca96a {type IOSPACE_e834830fcb3b as IOSPACE}
+
+pub using @1c8009a2cccca96a {type IOSPACE32_1e4b9bb05798 as IOSPACE32}
+
+pub using @1c8009a2cccca96a {type IOSPACE64_921b062957ce as IOSPACE64}
+
+pub using @1c8009a2cccca96a {type IOSPACEEX_044cd82aceb2 as IOSPACEEX}
+
+pub using @1c8009a2cccca96a {type IOSPACEEX32_1da80c78dfc2 as IOSPACEEX32}
+
+pub using @1c8009a2cccca96a {type IOSPACEEX64_cf82fb725a15 as IOSPACEEX64}
+
+pub using @1c8009a2cccca96a {type IObjectWrapperConcept_4d29a64a3672 as IObjectWrapperConcept}
+
+pub using @1c8009a2cccca96a {type IPreferredRuntimeTypeConcept_77e1fbcba68e as IPreferredRuntimeTypeConcept}
+
+pub using @1c8009a2cccca96a {type IRawEnumerator_07bb735f6ca2 as IRawEnumerator}
+
+pub using @1c8009a2cccca96a {type IStringDisplayableConcept_7eb343041fd5 as IStringDisplayableConcept}
+
+pub using @1c8009a2cccca96a {type ISvcExecutionUnit_3f0a2c7275e7 as ISvcExecutionUnit}
+
+pub using @1c8009a2cccca96a {type ISvcModule_88e4f012cd69 as ISvcModule}
+
+pub using @1c8009a2cccca96a {type ISvcProcess_b8bd729b2834 as ISvcProcess}
+
+pub using @1c8009a2cccca96a {type ISvcSymbolType_fc1614923562 as ISvcSymbolType}
+
+pub using @1c8009a2cccca96a {type ISvcThread_68c78d8a0b3f as ISvcThread}
+
+pub using @1c8009a2cccca96a {type IntrinsicKind_abbb5653fc46 as IntrinsicKind}
+
+pub using @1c8009a2cccca96a {type KDDEBUGGERDATA32_2d3af2ec2537 as KDDEBUGGERDATA32}
+
+pub using @1c8009a2cccca96a {type KDDEBUGGERDATA64_65354995b084 as KDDEBUGGERDATA64}
+
+pub using @1c8009a2cccca96a {type KDEXTDUMPHANDLECALLBACK_56f99b6ebe8f as KDEXTDUMPHANDLECALLBACK}
+
+pub using @1c8009a2cccca96a {type KDEXTFILELOCKOWNER_b6224977cb05 as KDEXTFILELOCKOWNER}
+
+pub using @1c8009a2cccca96a {type KDEXTHANDLEINFORMATION_dd00f4f7c5ab as KDEXTHANDLEINFORMATION}
+
+pub using @1c8009a2cccca96a {type KDEXTPROCESSFINDPARAMS_988118a01bc0 as KDEXTPROCESSFINDPARAMS}
+
+pub using @1c8009a2cccca96a {type KDEXTSLOCKCALLBACKROUTINE_16f713959ec6 as KDEXTSLOCKCALLBACKROUTINE}
+
+pub using @1c8009a2cccca96a {type KDEXTSLOCKINFO_6a9fed7dd21f as KDEXTSLOCKINFO}
+
+pub using @1c8009a2cccca96a {type KDEXTSPTEINFO_4d9c7782a941 as KDEXTSPTEINFO}
+
+pub using @1c8009a2cccca96a {type KDEXTTHREADFINDPARAMS_df1bd7f74801 as KDEXTTHREADFINDPARAMS}
+
+pub using @1c8009a2cccca96a {type KnownCompiler_bb5b8d9e7128 as KnownCompiler}
+
+pub using @1c8009a2cccca96a {type LanguageKind_b51aed2105ae as LanguageKind}
+
+pub using @1c8009a2cccca96a {type LocalKind_fab6ee618960 as LocalKind}
+
+pub using @1c8009a2cccca96a {type Location_5c0dfd533f50 as Location}
+
+pub using @1c8009a2cccca96a {type LocationKind_e985629246e1 as LocationKind}
+
+pub using @1c8009a2cccca96a {type ModelObjectKind_5d3352f16ad7 as ModelObjectKind}
+
+pub using @1c8009a2cccca96a {type OSINFO_38962abb1d4d as OSINFO}
+
+pub using @1c8009a2cccca96a {type OSINFOSEStruct_61705b537cf9 as OSINFOSEStruct}
+
+pub using @1c8009a2cccca96a {type OSINFOV1_04206050f247 as OSINFOV1}
+
+pub using @1c8009a2cccca96a {type OSINFOV1AnonymousEUnion_01662786cc2d as OSINFOV1AnonymousEUnion}
+
+pub using @1c8009a2cccca96a {type OSINFOV1AnonymousEUnionVersionEStruct_fa98ec0c02a7 as OSINFOV1AnonymousEUnionVersionEStruct}
+
+pub using @1c8009a2cccca96a {type OSINFOV1SEStruct_4840de18d207 as OSINFOV1SEStruct}
+
+pub using @1c8009a2cccca96a {type OSTYPE_70e4f671407f as OSTYPE}
+
+pub using @1c8009a2cccca96a {type PDEBUGEXTENSIONCALL_cc407246b905 as PDEBUGEXTENSIONCALL}
+
+pub using @1c8009a2cccca96a {type PDEBUGEXTENSIONCANUNLOAD_b8b50ee82231 as PDEBUGEXTENSIONCANUNLOAD}
+
+pub using @1c8009a2cccca96a {type PDEBUGEXTENSIONINITIALIZE_1caad0ad7806 as PDEBUGEXTENSIONINITIALIZE}
+
+pub using @1c8009a2cccca96a {type PDEBUGEXTENSIONKNOWNSTRUCT_adf70a0b51ea as PDEBUGEXTENSIONKNOWNSTRUCT}
+
+pub using @1c8009a2cccca96a {type PDEBUGEXTENSIONKNOWNSTRUCTEX_b6e39ad9f484 as PDEBUGEXTENSIONKNOWNSTRUCTEX}
+
+pub using @1c8009a2cccca96a {type PDEBUGEXTENSIONNOTIFY_97396452e2bd as PDEBUGEXTENSIONNOTIFY}
+
+pub using @1c8009a2cccca96a {type PDEBUGEXTENSIONPROVIDEVALUE_340df4f5f513 as PDEBUGEXTENSIONPROVIDEVALUE}
+
+pub using @1c8009a2cccca96a {type PDEBUGEXTENSIONQUERYVALUENAMES_fdfad0c36d3b as PDEBUGEXTENSIONQUERYVALUENAMES}
+
+pub using @1c8009a2cccca96a {type PDEBUGEXTENSIONUNINITIALIZE_2f96f95a7feb as PDEBUGEXTENSIONUNINITIALIZE}
+
+pub using @1c8009a2cccca96a {type PDEBUGEXTENSIONUNLOAD_5bd6eb6a487c as PDEBUGEXTENSIONUNLOAD}
+
+pub using @1c8009a2cccca96a {type PDEBUGSTACKPROVIDERBEGINTHREADSTACKRECONSTRUCTION_216d6ef3b6f6 as PDEBUGSTACKPROVIDERBEGINTHREADSTACKRECONSTRUCTION}
+
+pub using @1c8009a2cccca96a {type PDEBUGSTACKPROVIDERENDTHREADSTACKRECONSTRUCTION_1ad13c86a39a as PDEBUGSTACKPROVIDERENDTHREADSTACKRECONSTRUCTION}
+
+pub using @1c8009a2cccca96a {type PDEBUGSTACKPROVIDERFREESTACKSYMFRAMES_a6810aed68ee as PDEBUGSTACKPROVIDERFREESTACKSYMFRAMES}
+
+pub using @1c8009a2cccca96a {type PDEBUGSTACKPROVIDERRECONSTRUCTSTACK_15d4917a9e2c as PDEBUGSTACKPROVIDERRECONSTRUCTSTACK}
+
+pub using @1c8009a2cccca96a {type PENUMERATEHANDLES_daf6550080b5 as PENUMERATEHANDLES}
+
+pub using @1c8009a2cccca96a {type PENUMERATEHASHTABLE_5043efb68b68 as PENUMERATEHASHTABLE}
+
+pub using @1c8009a2cccca96a {type PENUMERATEJOBPROCESSES_c2cd43ce53f5 as PENUMERATEJOBPROCESSES}
+
+pub using @1c8009a2cccca96a {type PENUMERATESYSTEMLOCKS_ee39643524b2 as PENUMERATESYSTEMLOCKS}
+
+pub using @1c8009a2cccca96a {type PFINDFILELOCKOWNERINFO_26ad70c8ae77 as PFINDFILELOCKOWNERINFO}
+
+pub using @1c8009a2cccca96a {type PFINDMATCHINGPROCESS_743d2170e257 as PFINDMATCHINGPROCESS}
+
+pub using @1c8009a2cccca96a {type PFINDMATCHINGTHREAD_f01cf6fe95bc as PFINDMATCHINGTHREAD}
+
+pub using @1c8009a2cccca96a {type PGETCPUMICROCODEVERSION_a753aff24140 as PGETCPUMICROCODEVERSION}
+
+pub using @1c8009a2cccca96a {type PGETCPUPSPEEDINFO_72b864977917 as PGETCPUPSPEEDINFO}
+
+pub using @1c8009a2cccca96a {type PGETDEVICEOBJECTINFO_616b5054b2fd as PGETDEVICEOBJECTINFO}
+
+pub using @1c8009a2cccca96a {type PGETDRIVEROBJECTINFO_9f24c6060a2f as PGETDRIVEROBJECTINFO}
+
+pub using @1c8009a2cccca96a {type PGETFULLIMAGENAME_7a366487f21a as PGETFULLIMAGENAME}
+
+pub using @1c8009a2cccca96a {type PGETIRPINFO_2fc7e3e607af as PGETIRPINFO}
+
+pub using @1c8009a2cccca96a {type PGETPNPTRIAGEINFO_d7162702d317 as PGETPNPTRIAGEINFO}
+
+pub using @1c8009a2cccca96a {type PGETPOOLDATA_e69314b732ad as PGETPOOLDATA}
+
+pub using @1c8009a2cccca96a {type PGETPOOLREGION_6f8e998e3e72 as PGETPOOLREGION}
+
+pub using @1c8009a2cccca96a {type PGETPOOLTAGDESCRIPTION_e30856a634a4 as PGETPOOLTAGDESCRIPTION}
+
+pub using @1c8009a2cccca96a {type PGETPROCESSCOMMIT_2bc019417f6b as PGETPROCESSCOMMIT}
+
+pub using @1c8009a2cccca96a {type PGETSMBIOSINFO_f34b74481cc3 as PGETSMBIOSINFO}
+
+pub using @1c8009a2cccca96a {type PHYSICAL_f8af55e82bf7 as PHYSICAL}
+
+pub using @1c8009a2cccca96a {type PHYSICALTOVIRTUAL_75e8694cd197 as PHYSICALTOVIRTUAL}
+
+pub using @1c8009a2cccca96a {type PHYSICALWITHFLAGS_4eeca437ebc2 as PHYSICALWITHFLAGS}
+
+pub using @1c8009a2cccca96a {type PKDEXTSGETPTEINFO_84343a35b3f0 as PKDEXTSGETPTEINFO}
+
+pub using @1c8009a2cccca96a {type POINTERSEARCHPHYSICAL_8ff507835f1e as POINTERSEARCHPHYSICAL}
+
+pub using @1c8009a2cccca96a {type POOLHEADERFIELDNAME_686d7cdac8c2 as POOLHEADERFIELDNAME}
+
+pub using @1c8009a2cccca96a {type POOLHEADERSIZE64_18a799314547 as POOLHEADERSIZE64}
+
+pub using @1c8009a2cccca96a {type POOLHEADERSIZE64AnonymousEStruct_19bfa082d860 as POOLHEADERSIZE64AnonymousEStruct}
+
+pub using @1c8009a2cccca96a {type PROCESSCOMMITUSAGE_bfe02ba4db18 as PROCESSCOMMITUSAGE}
+
+pub using @1c8009a2cccca96a {type PROCESSNAMEENTRY_17cf818938f8 as PROCESSNAMEENTRY}
+
+pub using @1c8009a2cccca96a {type PROCESSORINFO_b82b53d7c331 as PROCESSORINFO}
+
+pub using @1c8009a2cccca96a {type PSYMDUMPFIELDCALLBACK_fd088950cf6d as PSYMDUMPFIELDCALLBACK}
+
+pub using @1c8009a2cccca96a {type PWINDBGCHECKCONTROLC_46314f09efeb as PWINDBGCHECKCONTROLC}
+
+pub using @1c8009a2cccca96a {type PWINDBGCHECKVERSION_0376cb3b43c2 as PWINDBGCHECKVERSION}
+
+pub using @1c8009a2cccca96a {type PWINDBGDISASM_dce98684daef as PWINDBGDISASM}
+
+pub using @1c8009a2cccca96a {type PWINDBGDISASM32_1baa8e19c870 as PWINDBGDISASM32}
+
+pub using @1c8009a2cccca96a {type PWINDBGDISASM64_ede5db83a3c5 as PWINDBGDISASM64}
+
+pub using @1c8009a2cccca96a {type PWINDBGEXTENSIONAPIVERSION_70b2bbce5caf as PWINDBGEXTENSIONAPIVERSION}
+
+pub using @1c8009a2cccca96a {type PWINDBGEXTENSIONDLLINIT_fac9704ee987 as PWINDBGEXTENSIONDLLINIT}
+
+pub using @1c8009a2cccca96a {type PWINDBGEXTENSIONDLLINIT32_3713c8eaa787 as PWINDBGEXTENSIONDLLINIT32}
+
+pub using @1c8009a2cccca96a {type PWINDBGEXTENSIONDLLINIT64_c73a955dc481 as PWINDBGEXTENSIONDLLINIT64}
+
+pub using @1c8009a2cccca96a {type PWINDBGEXTENSIONROUTINE_a845711e6a5e as PWINDBGEXTENSIONROUTINE}
+
+pub using @1c8009a2cccca96a {type PWINDBGEXTENSIONROUTINE32_2dfd4b759fd7 as PWINDBGEXTENSIONROUTINE32}
+
+pub using @1c8009a2cccca96a {type PWINDBGEXTENSIONROUTINE64_bc406b7d3982 as PWINDBGEXTENSIONROUTINE64}
+
+pub using @1c8009a2cccca96a {type PWINDBGGETEXPRESSION_8b4d5e9db473 as PWINDBGGETEXPRESSION}
+
+pub using @1c8009a2cccca96a {type PWINDBGGETEXPRESSION32_c122f9bae5a3 as PWINDBGGETEXPRESSION32}
+
+pub using @1c8009a2cccca96a {type PWINDBGGETEXPRESSION64_d75ea09d7c4c as PWINDBGGETEXPRESSION64}
+
+pub using @1c8009a2cccca96a {type PWINDBGGETSYMBOL_87d16b2ce0fc as PWINDBGGETSYMBOL}
+
+pub using @1c8009a2cccca96a {type PWINDBGGETSYMBOL32_995fd744ff80 as PWINDBGGETSYMBOL32}
+
+pub using @1c8009a2cccca96a {type PWINDBGGETSYMBOL64_9f81beb1dfe7 as PWINDBGGETSYMBOL64}
+
+pub using @1c8009a2cccca96a {type PWINDBGGETTHREADCONTEXTROUTINE_e1ba2b50284b as PWINDBGGETTHREADCONTEXTROUTINE}
+
+pub using @1c8009a2cccca96a {type PWINDBGIOCTLROUTINE_6b2d527ec97a as PWINDBGIOCTLROUTINE}
+
+pub using @1c8009a2cccca96a {type PWINDBGOLDEXTENSIONROUTINE_680f65b05d84 as PWINDBGOLDEXTENSIONROUTINE}
+
+pub using @1c8009a2cccca96a {type PWINDBGOLDKDEXTENSIONROUTINE_d7b042df287c as PWINDBGOLDKDEXTENSIONROUTINE}
+
+pub using @1c8009a2cccca96a {type PWINDBGOLDKDREADPHYSICALMEMORY_15cf3e194f8d as PWINDBGOLDKDREADPHYSICALMEMORY}
+
+pub using @1c8009a2cccca96a {type PWINDBGOLDKDWRITEPHYSICALMEMORY_c7ee905e474c as PWINDBGOLDKDWRITEPHYSICALMEMORY}
+
+pub using @1c8009a2cccca96a {type PWINDBGOUTPUTROUTINE_ec2decf70415 as PWINDBGOUTPUTROUTINE}
+
+pub using @1c8009a2cccca96a {type PWINDBGREADPROCESSMEMORYROUTINE_64c7df1cab1a as PWINDBGREADPROCESSMEMORYROUTINE}
+
+pub using @1c8009a2cccca96a {type PWINDBGREADPROCESSMEMORYROUTINE32_29f105aae54e as PWINDBGREADPROCESSMEMORYROUTINE32}
+
+pub using @1c8009a2cccca96a {type PWINDBGREADPROCESSMEMORYROUTINE64_468b8628068c as PWINDBGREADPROCESSMEMORYROUTINE64}
+
+pub using @1c8009a2cccca96a {type PWINDBGSETTHREADCONTEXTROUTINE_2407ee15ba08 as PWINDBGSETTHREADCONTEXTROUTINE}
+
+pub using @1c8009a2cccca96a {type PWINDBGSTACKTRACEROUTINE_9573d82869a3 as PWINDBGSTACKTRACEROUTINE}
+
+pub using @1c8009a2cccca96a {type PWINDBGSTACKTRACEROUTINE32_e3b6957e07dd as PWINDBGSTACKTRACEROUTINE32}
+
+pub using @1c8009a2cccca96a {type PWINDBGSTACKTRACEROUTINE64_53b38d459dd4 as PWINDBGSTACKTRACEROUTINE64}
+
+pub using @1c8009a2cccca96a {type PWINDBGWRITEPROCESSMEMORYROUTINE_5391bee682c0 as PWINDBGWRITEPROCESSMEMORYROUTINE}
+
+pub using @1c8009a2cccca96a {type PWINDBGWRITEPROCESSMEMORYROUTINE32_61ccd180db95 as PWINDBGWRITEPROCESSMEMORYROUTINE32}
+
+pub using @1c8009a2cccca96a {type PWINDBGWRITEPROCESSMEMORYROUTINE64_ff8e0fca53cc as PWINDBGWRITEPROCESSMEMORYROUTINE64}
+
+pub using @1c8009a2cccca96a {type PointerKind_790722269666 as PointerKind}
+
+pub using @1c8009a2cccca96a {type PreferredFormat_63f317cd1cd3 as PreferredFormat}
+
+pub using @1c8009a2cccca96a {type READCONTROLSPACE_ffe2deb530c4 as READCONTROLSPACE}
+
+pub using @1c8009a2cccca96a {type READCONTROLSPACE32_f2b848965b65 as READCONTROLSPACE32}
+
+pub using @1c8009a2cccca96a {type READCONTROLSPACE64_5de6b9d3eefe as READCONTROLSPACE64}
+
+pub using @1c8009a2cccca96a {type READWRITEMSR_1f5b8efb1329 as READWRITEMSR}
+
+pub using @1c8009a2cccca96a {type RawSearchFlags_94b3570c8170 as RawSearchFlags}
+
+pub using @1c8009a2cccca96a {type SEARCHMEMORY_5aa7431c910b as SEARCHMEMORY}
+
+pub using @1c8009a2cccca96a {type STACKSRCINFO_64f68700a437 as STACKSRCINFO}
+
+pub using @1c8009a2cccca96a {type STACKSYMFRAMEINFO_845ccc68ac3f as STACKSYMFRAMEINFO}
+
+pub using @1c8009a2cccca96a {type SYMBOLINFOEX_ba170496b4ce as SYMBOLINFOEX}
+
+pub using @1c8009a2cccca96a {type SYMDUMPPARAM_6640f3e9f500 as SYMDUMPPARAM}
+
+pub using @1c8009a2cccca96a {type SYMDUMPPARAMAnonymousEUnion_209ba4003a85 as SYMDUMPPARAMAnonymousEUnion}
+
+pub using @1c8009a2cccca96a {type ScriptChangeKind_ee6220c3ee8e as ScriptChangeKind}
+
+pub using @1c8009a2cccca96a {type ScriptDebugEvent_b1909a0b842b as ScriptDebugEvent}
+
+pub using @1c8009a2cccca96a {type ScriptDebugEventFilter_4927e4809752 as ScriptDebugEventFilter}
+
+pub using @1c8009a2cccca96a {type ScriptDebugEventInformation_b566c764b639 as ScriptDebugEventInformation}
+
+pub using @1c8009a2cccca96a {type ScriptDebugEventInformationUEUnion_16abef31fca7 as ScriptDebugEventInformationUEUnion}
+
+pub using @1c8009a2cccca96a {type ScriptDebugEventInformationUEUnionBreakpointInformationEStruct_c33d386c4b35 as ScriptDebugEventInformationUEUnionBreakpointInformationEStruct}
+
+pub using @1c8009a2cccca96a {type ScriptDebugEventInformationUEUnionExceptionInformationEStruct_79b2caec3b5f as ScriptDebugEventInformationUEUnionExceptionInformationEStruct}
+
+pub using @1c8009a2cccca96a {type ScriptDebugPosition_bd51054c0608 as ScriptDebugPosition}
+
+pub using @1c8009a2cccca96a {type ScriptDebugState_6755e15c53db as ScriptDebugState}
+
+pub using @1c8009a2cccca96a {type ScriptExecutionKind_1d9dcff19b0c as ScriptExecutionKind}
+
+pub using @1c8009a2cccca96a {type SignatureComparison_870306736547 as SignatureComparison}
+
+pub using @1c8009a2cccca96a {type StorageKind_2edb30da59bc as StorageKind}
+
+pub using @1c8009a2cccca96a {type SymbolKind_dde1563455dd as SymbolKind}
+
+pub using @1c8009a2cccca96a {type SymbolSearchOptions_8691b974a82a as SymbolSearchOptions}
+
+pub using @1c8009a2cccca96a {type TANALYZERETURN_a6961c316035 as TANALYZERETURN}
+
+pub using @1c8009a2cccca96a {type TARGETDEBUGINFO_e610356245e0 as TARGETDEBUGINFO}
+
+pub using @1c8009a2cccca96a {type TARGETDEBUGINFOV1_21ecdfb40883 as TARGETDEBUGINFOV1}
+
+pub using @1c8009a2cccca96a {type TARGETDEBUGINFOV2_77e8f474504a as TARGETDEBUGINFOV2}
+
+pub using @1c8009a2cccca96a {type TRANSLATEVIRTUALTOPHYSICAL_f2a37f008fe8 as TRANSLATEVIRTUALTOPHYSICAL}
+
+pub using @1c8009a2cccca96a {type TypeKind_7aecd121d316 as TypeKind}
+
+pub using @1c8009a2cccca96a {type UDTKind_6f2406c0f994 as UDTKind}
+
+pub using @1c8009a2cccca96a {type VIRTUALTOPHYSICAL_10bd3bddf46d as VIRTUALTOPHYSICAL}
+
+pub using @1c8009a2cccca96a {type VarArgsKind_2224e8974364 as VarArgsKind}
+
+pub using @1c8009a2cccca96a {type WDBGEXTSCLRDATAINTERFACE_8711485ccd5b as WDBGEXTSCLRDATAINTERFACE}
+
+pub using @1c8009a2cccca96a {type WDBGEXTSDISASSEMBLEBUFFER_5f8fc70150b3 as WDBGEXTSDISASSEMBLEBUFFER}
+
+pub using @1c8009a2cccca96a {type WDBGEXTSMODULEINRANGE_8449fe4d1691 as WDBGEXTSMODULEINRANGE}
+
+pub using @1c8009a2cccca96a {type WDBGEXTSQUERYINTERFACE_e97f28696a2d as WDBGEXTSQUERYINTERFACE}
+
+pub using @1c8009a2cccca96a {type WDBGEXTSTHREADOSINFO_0d7f5f22224b as WDBGEXTSTHREADOSINFO}
+
+pub using @1c8009a2cccca96a {type WINDBGEXTENSIONAPIS_ee237da325ea as WINDBGEXTENSIONAPIS}
+
+pub using @1c8009a2cccca96a {type WINDBGEXTENSIONAPIS32_0d3f2d77f9da as WINDBGEXTENSIONAPIS32}
+
+pub using @1c8009a2cccca96a {type WINDBGEXTENSIONAPIS64_82c7ddc8540e as WINDBGEXTENSIONAPIS64}
+
+pub using @1c8009a2cccca96a {type WINDBGOLDEXTENSIONAPIS_5cc23c26280d as WINDBGOLDEXTENSIONAPIS}
+
+pub using @1c8009a2cccca96a {type WINDBGOLDKDEXTENSIONAPIS_fea9c83c72a2 as WINDBGOLDKDEXTENSIONAPIS}
+
+pub using @1c8009a2cccca96a {type WrappedObjectPreference_0fa30e5b5dad as WrappedObjectPreference}
+
+pub using @1c8009a2cccca96a {type XMLDRIVERNODEINFO_e635f63b5918 as XMLDRIVERNODEINFO}
+
+// Traits

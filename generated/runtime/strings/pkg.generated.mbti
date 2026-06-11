@@ -1,0 +1,53 @@
+// Generated using `moon info`, DON'T EDIT IT
+package "moonbit-community/win32api/runtime/strings"
+
+import {
+  "moonbit-community/win32api/runtime/core",
+}
+
+// Values
+
+// Errors
+
+// Types and methods
+pub type BStr
+pub fn BStr::from_string(String) -> Self raise @core.WindowsError
+pub fn BStr::raw(Self) -> @core.RawAddress
+pub fn BStr::to_string(Self) -> String
+
+pub type HString
+pub fn HString::from_owned_raw(@core.RawAddress) -> Self raise @core.WindowsError
+pub fn HString::from_string(String) -> Self raise @core.WindowsError
+pub fn HString::raw(Self) -> @core.RawAddress
+pub fn HString::to_string(Self) -> String
+
+pub struct PStr(Bytes)
+pub fn PStr::bytes(Self) -> Bytes
+pub fn PStr::from_nul_terminated_bytes(Bytes) -> Self raise @core.WindowsError
+pub fn PStr::from_string(String) -> Self
+
+pub struct PWStr(Bytes)
+pub fn PWStr::bytes(Self) -> Bytes
+pub fn PWStr::from_string(String) -> Self
+
+pub struct PWStrBuffer {
+  storage : @core.NativeBuffer
+  mut logical_length : Int
+}
+pub fn PWStrBuffer::capacity(Self) -> Int raise @core.WindowsError
+pub fn PWStrBuffer::close(Self) -> Unit
+pub fn PWStrBuffer::from_string(String) -> Self raise @core.WindowsError
+pub fn PWStrBuffer::length(Self) -> Int raise @core.WindowsError
+pub fn PWStrBuffer::new(Int) -> Self raise @core.WindowsError
+pub fn PWStrBuffer::raw_address(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn PWStrBuffer::read_code_unit(Self, Int) -> UInt16 raise @core.WindowsError
+pub fn PWStrBuffer::resize(Self, Int) -> Unit raise @core.WindowsError
+pub fn PWStrBuffer::scan_nul(Self) -> Int raise @core.WindowsError
+pub fn PWStrBuffer::set_length(Self, Int) -> Unit raise @core.WindowsError
+pub fn PWStrBuffer::to_string(Self) -> String raise @core.WindowsError
+pub fn[T] PWStrBuffer::with_raw_address(Self, (@core.RawAddress) -> T raise?) -> T raise
+pub fn PWStrBuffer::write_code_unit(Self, Int, UInt16) -> Unit raise @core.WindowsError
+
+// Type aliases
+
+// Traits

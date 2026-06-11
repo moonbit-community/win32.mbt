@@ -1,0 +1,205 @@
+// Generated using `moon info`, DON'T EDIT IT
+package "moonbit-community/win32api/scc/d4cbb920b31af75b"
+
+import {
+  "moonbit-community/win32api/runtime/core",
+  "moonbit-community/win32api/runtime/strings",
+  "moonbit-community/win32api/scc/fb66f520d7e12332",
+  "moonbitlang/core/debug",
+}
+
+// Values
+pub let devprop_false_ff3aa8ef5b2d : UInt
+
+pub let devprop_mask_type_2a63c879ada1 : UInt
+
+pub let devprop_mask_typemod_e95337ac73a8 : UInt
+
+pub let devprop_store_system_7e62675803da : Int
+
+pub let devprop_store_user_c04add276ee8 : Int
+
+pub let devprop_true_96bcff80eab7 : UInt
+
+pub let devprop_type_binary_e9ae39d9ae88 : UInt
+
+pub let devprop_type_boolean_d42107d6b16d : UInt
+
+pub let devprop_type_byte_eeb1fb622eee : UInt
+
+pub let devprop_type_currency_1314246b4fc1 : UInt
+
+pub let devprop_type_date_3e092420c7b2 : UInt
+
+pub let devprop_type_decimal_e1256ce7fa15 : UInt
+
+pub let devprop_type_devpropkey_863dad75ed63 : UInt
+
+pub let devprop_type_devproptype_611699ea0d8f : UInt
+
+pub let devprop_type_double_595d361c086a : UInt
+
+pub let devprop_type_empty_5ec2c9a146a0 : UInt
+
+pub let devprop_type_error_543864ecd198 : UInt
+
+pub let devprop_type_filetime_e98709817c0a : UInt
+
+pub let devprop_type_float_2f616a1fc71e : UInt
+
+pub let devprop_type_guid_b7d851aeb854 : UInt
+
+pub let devprop_type_int16_3f439bb01520 : UInt
+
+pub let devprop_type_int32_1d4740e83d93 : UInt
+
+pub let devprop_type_int64_c1a8ac830463 : UInt
+
+pub let devprop_type_ntstatus_afa712cf0af3 : UInt
+
+pub let devprop_type_null_10df25c165d5 : UInt
+
+pub let devprop_type_sbyte_8608a7897da4 : UInt
+
+pub let devprop_type_security_descriptor_0fcb4b846460 : UInt
+
+pub let devprop_type_security_descriptor_string_38506be67c19 : UInt
+
+pub let devprop_type_string_0588e2535e1e : UInt
+
+pub let devprop_type_string_indirect_48394d4b2d08 : UInt
+
+pub let devprop_type_string_list_eaf63921acfe : UInt
+
+pub let devprop_type_uint16_a9fbe7400c6c : UInt
+
+pub let devprop_type_uint32_646103e144a2 : UInt
+
+pub let devprop_type_uint64_dd4210cba843 : UInt
+
+pub let devprop_typemod_array_da043c596114 : UInt
+
+pub let devprop_typemod_list_ebf0868addec : UInt
+
+pub let devpropboolean_e16562bd640c_alignment : Int
+
+pub let devpropboolean_e16562bd640c_size : Int
+
+pub let devpropcompkey_7b495db774f3_alignment : Int
+
+pub let devpropcompkey_7b495db774f3_size : Int
+
+pub let devproperty_5ca39975fafb_alignment : Int
+
+pub let devproperty_5ca39975fafb_size : Int
+
+pub let devpropid_first_usable_48c76fdf6ec7 : UInt
+
+pub let max_devprop_type_f81761f1a7b9 : UInt
+
+pub let max_devprop_typemod_2f5df58775e2 : UInt
+
+// Errors
+
+// Types and methods
+pub(all) struct DEVPROPBOOLEAN_e16562bd640c {
+  raw_buffer : @core.NativeBuffer
+}
+pub fn DEVPROPBOOLEAN_e16562bd640c::abi_alignment() -> Int
+pub fn DEVPROPBOOLEAN_e16562bd640c::abi_size() -> Int
+pub fn DEVPROPBOOLEAN_e16562bd640c::bytes(Self) -> Bytes raise @core.WindowsError
+pub fn DEVPROPBOOLEAN_e16562bd640c::from_bytes(Bytes) -> Self raise @core.WindowsError
+pub fn DEVPROPBOOLEAN_e16562bd640c::new() -> Self raise @core.WindowsError
+pub fn DEVPROPBOOLEAN_e16562bd640c::raw_address(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn DEVPROPBOOLEAN_e16562bd640c::set_value(Self, Byte) -> Unit raise @core.WindowsError
+pub fn DEVPROPBOOLEAN_e16562bd640c::value(Self) -> Byte raise @core.WindowsError
+pub fn[T] DEVPROPBOOLEAN_e16562bd640c::with_raw_address(Self, (@core.RawAddress) -> T raise?) -> T raise
+pub impl Eq for DEVPROPBOOLEAN_e16562bd640c
+pub impl @debug.Debug for DEVPROPBOOLEAN_e16562bd640c
+
+pub(all) struct DEVPROPCOMPKEY_7b495db774f3 {
+  raw_buffer : @core.NativeBuffer
+  mut root_locale_name : @core.NativeBuffer?
+}
+pub fn DEVPROPCOMPKEY_7b495db774f3::abi_alignment() -> Int
+pub fn DEVPROPCOMPKEY_7b495db774f3::abi_size() -> Int
+pub fn DEVPROPCOMPKEY_7b495db774f3::bytes(Self) -> Bytes raise @core.WindowsError
+pub fn DEVPROPCOMPKEY_7b495db774f3::clear_locale_name(Self) -> Unit raise @core.WindowsError
+pub fn DEVPROPCOMPKEY_7b495db774f3::from_bytes(Bytes) -> Self raise @core.WindowsError
+pub fn DEVPROPCOMPKEY_7b495db774f3::key(Self) -> @fb66f520d7e12332.DEVPROPKEY_85400926a224 raise @core.WindowsError
+pub fn DEVPROPCOMPKEY_7b495db774f3::locale_name_raw(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn DEVPROPCOMPKEY_7b495db774f3::new() -> Self raise @core.WindowsError
+pub fn DEVPROPCOMPKEY_7b495db774f3::raw_address(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn DEVPROPCOMPKEY_7b495db774f3::set_key(Self, @fb66f520d7e12332.DEVPROPKEY_85400926a224) -> Unit raise @core.WindowsError
+pub fn DEVPROPCOMPKEY_7b495db774f3::set_locale_name(Self, @strings.PWStr) -> Unit raise @core.WindowsError
+pub fn DEVPROPCOMPKEY_7b495db774f3::set_locale_name_raw(Self, @core.RawAddress) -> Unit raise @core.WindowsError
+pub fn DEVPROPCOMPKEY_7b495db774f3::set_store(Self, DEVPROPSTORE_d61f326b978d) -> Unit raise @core.WindowsError
+pub fn DEVPROPCOMPKEY_7b495db774f3::store(Self) -> DEVPROPSTORE_d61f326b978d raise @core.WindowsError
+pub fn[T] DEVPROPCOMPKEY_7b495db774f3::with_raw_address(Self, (@core.RawAddress) -> T raise?) -> T raise
+pub impl Eq for DEVPROPCOMPKEY_7b495db774f3
+pub impl @debug.Debug for DEVPROPCOMPKEY_7b495db774f3
+
+pub(all) struct DEVPROPERTY_5ca39975fafb {
+  raw_buffer : @core.NativeBuffer
+}
+pub fn DEVPROPERTY_5ca39975fafb::abi_alignment() -> Int
+pub fn DEVPROPERTY_5ca39975fafb::abi_size() -> Int
+pub fn DEVPROPERTY_5ca39975fafb::buffer_raw(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn DEVPROPERTY_5ca39975fafb::buffer_size(Self) -> UInt raise @core.WindowsError
+pub fn DEVPROPERTY_5ca39975fafb::bytes(Self) -> Bytes raise @core.WindowsError
+pub fn DEVPROPERTY_5ca39975fafb::comp_key(Self) -> DEVPROPCOMPKEY_7b495db774f3 raise @core.WindowsError
+pub fn DEVPROPERTY_5ca39975fafb::from_bytes(Bytes) -> Self raise @core.WindowsError
+pub fn DEVPROPERTY_5ca39975fafb::new() -> Self raise @core.WindowsError
+pub fn DEVPROPERTY_5ca39975fafb::raw_address(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn DEVPROPERTY_5ca39975fafb::set_buffer_raw(Self, @core.RawAddress) -> Unit raise @core.WindowsError
+pub fn DEVPROPERTY_5ca39975fafb::set_buffer_size(Self, UInt) -> Unit raise @core.WindowsError
+pub fn DEVPROPERTY_5ca39975fafb::set_comp_key(Self, DEVPROPCOMPKEY_7b495db774f3) -> Unit raise @core.WindowsError
+pub fn DEVPROPERTY_5ca39975fafb::set_type_(Self, DEVPROPTYPE_7b7a3cd2353a) -> Unit raise @core.WindowsError
+pub fn DEVPROPERTY_5ca39975fafb::type_(Self) -> DEVPROPTYPE_7b7a3cd2353a raise @core.WindowsError
+pub fn[T] DEVPROPERTY_5ca39975fafb::with_raw_address(Self, (@core.RawAddress) -> T raise?) -> T raise
+pub impl Eq for DEVPROPERTY_5ca39975fafb
+pub impl @debug.Debug for DEVPROPERTY_5ca39975fafb
+
+pub(all) struct DEVPROPSTORE_d61f326b978d(Int) derive(Compare, Eq, @debug.Debug)
+pub fn DEVPROPSTORE_d61f326b978d::devprop_store_system() -> Self
+pub fn DEVPROPSTORE_d61f326b978d::devprop_store_user() -> Self
+pub fn DEVPROPSTORE_d61f326b978d::from_int(Int) -> Self
+pub fn DEVPROPSTORE_d61f326b978d::to_int(Self) -> Int
+
+pub(all) struct DEVPROPTYPE_7b7a3cd2353a(Int) derive(Compare, Eq, @debug.Debug)
+pub fn DEVPROPTYPE_7b7a3cd2353a::devprop_type_binary() -> Self
+pub fn DEVPROPTYPE_7b7a3cd2353a::devprop_type_boolean() -> Self
+pub fn DEVPROPTYPE_7b7a3cd2353a::devprop_type_byte() -> Self
+pub fn DEVPROPTYPE_7b7a3cd2353a::devprop_type_currency() -> Self
+pub fn DEVPROPTYPE_7b7a3cd2353a::devprop_type_date() -> Self
+pub fn DEVPROPTYPE_7b7a3cd2353a::devprop_type_decimal() -> Self
+pub fn DEVPROPTYPE_7b7a3cd2353a::devprop_type_devpropkey() -> Self
+pub fn DEVPROPTYPE_7b7a3cd2353a::devprop_type_devproptype() -> Self
+pub fn DEVPROPTYPE_7b7a3cd2353a::devprop_type_double() -> Self
+pub fn DEVPROPTYPE_7b7a3cd2353a::devprop_type_empty() -> Self
+pub fn DEVPROPTYPE_7b7a3cd2353a::devprop_type_error() -> Self
+pub fn DEVPROPTYPE_7b7a3cd2353a::devprop_type_filetime() -> Self
+pub fn DEVPROPTYPE_7b7a3cd2353a::devprop_type_float() -> Self
+pub fn DEVPROPTYPE_7b7a3cd2353a::devprop_type_guid() -> Self
+pub fn DEVPROPTYPE_7b7a3cd2353a::devprop_type_int16() -> Self
+pub fn DEVPROPTYPE_7b7a3cd2353a::devprop_type_int32() -> Self
+pub fn DEVPROPTYPE_7b7a3cd2353a::devprop_type_int64() -> Self
+pub fn DEVPROPTYPE_7b7a3cd2353a::devprop_type_ntstatus() -> Self
+pub fn DEVPROPTYPE_7b7a3cd2353a::devprop_type_null() -> Self
+pub fn DEVPROPTYPE_7b7a3cd2353a::devprop_type_sbyte() -> Self
+pub fn DEVPROPTYPE_7b7a3cd2353a::devprop_type_security_descriptor() -> Self
+pub fn DEVPROPTYPE_7b7a3cd2353a::devprop_type_security_descriptor_string() -> Self
+pub fn DEVPROPTYPE_7b7a3cd2353a::devprop_type_string() -> Self
+pub fn DEVPROPTYPE_7b7a3cd2353a::devprop_type_string_indirect() -> Self
+pub fn DEVPROPTYPE_7b7a3cd2353a::devprop_type_string_list() -> Self
+pub fn DEVPROPTYPE_7b7a3cd2353a::devprop_type_uint16() -> Self
+pub fn DEVPROPTYPE_7b7a3cd2353a::devprop_type_uint32() -> Self
+pub fn DEVPROPTYPE_7b7a3cd2353a::devprop_type_uint64() -> Self
+pub fn DEVPROPTYPE_7b7a3cd2353a::devprop_typemod_array() -> Self
+pub fn DEVPROPTYPE_7b7a3cd2353a::devprop_typemod_list() -> Self
+pub fn DEVPROPTYPE_7b7a3cd2353a::from_int(Int) -> Self
+pub fn DEVPROPTYPE_7b7a3cd2353a::to_int(Self) -> Int
+
+// Type aliases
+
+// Traits

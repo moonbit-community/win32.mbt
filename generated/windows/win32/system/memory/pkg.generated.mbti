@@ -1,0 +1,553 @@
+// Generated using `moon info`, DON'T EDIT IT
+package "moonbit-community/win32api/windows/win32/system/memory"
+
+import {
+  "moonbit-community/win32api/runtime/core",
+  "moonbit-community/win32api/runtime/strings",
+  "moonbit-community/win32api/scc/8b9f17e6a08a0557",
+  "moonbit-community/win32api/scc/cc6631776d7e2373",
+}
+
+// Values
+pub fn add_secure_memory_cache_callback(@core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn add_secure_memory_cache_callback_raw(@core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn allocate_user_physical_pages(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn allocate_user_physical_pages2(@core.RawAddress, @core.RawAddress, @core.RawAddress, @8b9f17e6a08a0557.MEMEXTENDEDPARAMETER_5042548d9f2a?, UInt) -> Bool raise @core.WindowsError
+
+pub fn allocate_user_physical_pages2_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, UInt) -> Int
+
+pub fn allocate_user_physical_pages_numa(@core.RawAddress, @core.RawAddress, @core.RawAddress, UInt) -> Bool raise @core.WindowsError
+
+pub fn allocate_user_physical_pages_numa_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, UInt) -> @core.RawWin32Call[Int]
+
+pub fn allocate_user_physical_pages_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn create_file_mapping2(@core.RawAddress, @cc6631776d7e2373.SECURITYATTRIBUTES_bc2e2f0be0e1?, UInt, @8b9f17e6a08a0557.PAGEPROTECTIONFLAGS_0d699f79efc8, UInt, UInt64, @strings.PWStr?, @8b9f17e6a08a0557.MEMEXTENDEDPARAMETER_5042548d9f2a?, UInt) -> @core.RawAddress raise @core.WindowsError
+
+pub fn create_file_mapping2_raw(@core.RawAddress, @core.RawAddress, UInt, UInt, UInt, UInt64, @core.RawAddress, @core.RawAddress, UInt) -> @core.RawWin32Call[@core.RawAddress]
+
+pub fn create_file_mapping_a(@core.RawAddress, @cc6631776d7e2373.SECURITYATTRIBUTES_bc2e2f0be0e1?, @8b9f17e6a08a0557.PAGEPROTECTIONFLAGS_0d699f79efc8, UInt, UInt, @strings.PStr?) -> @core.RawAddress raise @core.WindowsError
+
+pub fn create_file_mapping_a_raw(@core.RawAddress, @core.RawAddress, UInt, UInt, UInt, @core.RawAddress) -> @core.RawWin32Call[@core.RawAddress]
+
+pub fn create_file_mapping_from_app(@core.RawAddress, @cc6631776d7e2373.SECURITYATTRIBUTES_bc2e2f0be0e1?, @8b9f17e6a08a0557.PAGEPROTECTIONFLAGS_0d699f79efc8, UInt64, @strings.PWStr?) -> @core.RawAddress raise @core.WindowsError
+
+pub fn create_file_mapping_from_app_raw(@core.RawAddress, @core.RawAddress, UInt, UInt64, @core.RawAddress) -> @core.RawWin32Call[@core.RawAddress]
+
+pub fn create_file_mapping_numa_a(@core.RawAddress, @cc6631776d7e2373.SECURITYATTRIBUTES_bc2e2f0be0e1?, @8b9f17e6a08a0557.PAGEPROTECTIONFLAGS_0d699f79efc8, UInt, UInt, @strings.PStr?, UInt) -> @core.RawAddress raise @core.WindowsError
+
+pub fn create_file_mapping_numa_a_raw(@core.RawAddress, @core.RawAddress, UInt, UInt, UInt, @core.RawAddress, UInt) -> @core.RawWin32Call[@core.RawAddress]
+
+pub fn create_file_mapping_numa_w(@core.RawAddress, @cc6631776d7e2373.SECURITYATTRIBUTES_bc2e2f0be0e1?, @8b9f17e6a08a0557.PAGEPROTECTIONFLAGS_0d699f79efc8, UInt, UInt, @strings.PWStr?, UInt) -> @core.RawAddress raise @core.WindowsError
+
+pub fn create_file_mapping_numa_w_raw(@core.RawAddress, @core.RawAddress, UInt, UInt, UInt, @core.RawAddress, UInt) -> @core.RawWin32Call[@core.RawAddress]
+
+pub fn create_file_mapping_w(@core.RawAddress, @cc6631776d7e2373.SECURITYATTRIBUTES_bc2e2f0be0e1?, @8b9f17e6a08a0557.PAGEPROTECTIONFLAGS_0d699f79efc8, UInt, UInt, @strings.PWStr?) -> @core.RawAddress raise @core.WindowsError
+
+pub fn create_file_mapping_w_raw(@core.RawAddress, @core.RawAddress, UInt, UInt, UInt, @core.RawAddress) -> @core.RawWin32Call[@core.RawAddress]
+
+pub fn create_memory_resource_notification(@8b9f17e6a08a0557.MEMORYRESOURCENOTIFICATIONTYPE_14aa0fc843c8) -> @core.RawAddress raise @core.WindowsError
+
+pub fn create_memory_resource_notification_raw(Int) -> @core.RawWin32Call[@core.RawAddress]
+
+pub fn discard_virtual_memory(@core.RawAddress, UInt64) -> UInt raise @core.WindowsError
+
+pub fn discard_virtual_memory_raw(@core.RawAddress, UInt64) -> UInt
+
+pub let file_cache_max_hard_disable : UInt
+
+pub let file_cache_max_hard_enable : UInt
+
+pub let file_cache_min_hard_disable : UInt
+
+pub let file_cache_min_hard_enable : UInt
+
+pub fn flush_view_of_file(@core.RawAddress, UInt64) -> Bool raise @core.WindowsError
+
+pub fn flush_view_of_file_raw(@core.RawAddress, UInt64) -> @core.RawWin32Call[Int]
+
+pub fn free_user_physical_pages(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn free_user_physical_pages_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn get_large_page_minimum() -> UInt64 raise @core.WindowsError
+
+pub fn get_large_page_minimum_raw() -> UInt64
+
+pub fn get_memory_error_handling_capabilities(@core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn get_memory_error_handling_capabilities_raw(@core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn get_memory_numa_closest_initiator_node(UInt, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn get_memory_numa_closest_initiator_node_raw(UInt, @core.RawAddress) -> Int
+
+pub fn get_memory_numa_performance_information(UInt, Byte, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn get_memory_numa_performance_information_raw(UInt, UInt, @core.RawAddress) -> Int
+
+pub fn get_process_heap() -> @core.RawAddress raise @core.WindowsError
+
+pub fn get_process_heap_raw() -> @core.RawWin32Call[@core.RawAddress]
+
+pub fn get_process_heaps(UInt, @core.RawAddress) -> UInt raise @core.WindowsError
+
+pub fn get_process_heaps_raw(UInt, @core.RawAddress) -> @core.RawWin32Call[UInt]
+
+pub fn get_process_working_set_size_ex(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn get_process_working_set_size_ex_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn get_system_file_cache_size(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn get_system_file_cache_size_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn get_write_watch(UInt, @core.RawAddress, UInt64, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt raise @core.WindowsError
+
+pub fn get_write_watch_raw(UInt, @core.RawAddress, UInt64, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn global_alloc(@8b9f17e6a08a0557.GLOBALALLOCFLAGS_2d1b2047ca15, UInt64) -> @core.RawAddress raise @core.WindowsError
+
+pub fn global_alloc_raw(UInt, UInt64) -> @core.RawWin32Call[@core.RawAddress]
+
+pub fn global_flags(@core.RawAddress) -> UInt raise @core.WindowsError
+
+pub fn global_flags_raw(@core.RawAddress) -> @core.RawWin32Call[UInt]
+
+pub fn global_handle(@core.RawAddress) -> @core.RawAddress raise @core.WindowsError
+
+pub fn global_handle_raw(@core.RawAddress) -> @core.RawWin32Call[@core.RawAddress]
+
+pub fn global_lock(@core.RawAddress) -> @core.RawAddress raise @core.WindowsError
+
+pub fn global_lock_raw(@core.RawAddress) -> @core.RawWin32Call[@core.RawAddress]
+
+pub fn global_re_alloc(@core.RawAddress, UInt64, UInt) -> @core.RawAddress raise @core.WindowsError
+
+pub fn global_re_alloc_raw(@core.RawAddress, UInt64, UInt) -> @core.RawWin32Call[@core.RawAddress]
+
+pub fn global_size(@core.RawAddress) -> UInt64 raise @core.WindowsError
+
+pub fn global_size_raw(@core.RawAddress) -> @core.RawWin32Call[UInt64]
+
+pub fn global_unlock(@core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn global_unlock_raw(@core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn heap_alloc(@core.RawAddress, @8b9f17e6a08a0557.HEAPFLAGS_3f93fd10ffc5, UInt64) -> @core.RawAddress raise @core.WindowsError
+
+pub fn heap_alloc_raw(@core.RawAddress, UInt, UInt64) -> @core.RawAddress
+
+pub fn heap_compact(@core.RawAddress, @8b9f17e6a08a0557.HEAPFLAGS_3f93fd10ffc5) -> UInt64 raise @core.WindowsError
+
+pub fn heap_compact_raw(@core.RawAddress, UInt) -> @core.RawWin32Call[UInt64]
+
+pub fn heap_create(@8b9f17e6a08a0557.HEAPFLAGS_3f93fd10ffc5, UInt64, UInt64) -> @core.RawAddress raise @core.WindowsError
+
+pub fn heap_create_raw(UInt, UInt64, UInt64) -> @core.RawWin32Call[@core.RawAddress]
+
+pub fn heap_destroy(@core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn heap_destroy_raw(@core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn heap_free(@core.RawAddress, @8b9f17e6a08a0557.HEAPFLAGS_3f93fd10ffc5, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn heap_free_raw(@core.RawAddress, UInt, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn heap_lock(@core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn heap_lock_raw(@core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn heap_query_information(@core.RawAddress, @8b9f17e6a08a0557.HEAPINFORMATIONCLASS_b2ff08d126b6, @core.RawAddress, UInt64, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn heap_query_information_raw(@core.RawAddress, Int, @core.RawAddress, UInt64, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn heap_re_alloc(@core.RawAddress, @8b9f17e6a08a0557.HEAPFLAGS_3f93fd10ffc5, @core.RawAddress, UInt64) -> @core.RawAddress raise @core.WindowsError
+
+pub fn heap_re_alloc_raw(@core.RawAddress, UInt, @core.RawAddress, UInt64) -> @core.RawAddress
+
+pub fn heap_set_information(@core.RawAddress, @8b9f17e6a08a0557.HEAPINFORMATIONCLASS_b2ff08d126b6, @core.RawAddress, UInt64) -> Bool raise @core.WindowsError
+
+pub fn heap_set_information_raw(@core.RawAddress, Int, @core.RawAddress, UInt64) -> @core.RawWin32Call[Int]
+
+pub fn heap_size(@core.RawAddress, @8b9f17e6a08a0557.HEAPFLAGS_3f93fd10ffc5, @core.RawAddress) -> UInt64 raise @core.WindowsError
+
+pub fn heap_size_raw(@core.RawAddress, UInt, @core.RawAddress) -> UInt64
+
+pub fn heap_summary(@core.RawAddress, UInt, @8b9f17e6a08a0557.HEAPSUMMARY_4988a9ea03a5) -> Bool raise @core.WindowsError
+
+pub fn heap_summary_raw(@core.RawAddress, UInt, @core.RawAddress) -> Int
+
+pub fn heap_unlock(@core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn heap_unlock_raw(@core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn heap_validate(@core.RawAddress, @8b9f17e6a08a0557.HEAPFLAGS_3f93fd10ffc5, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn heap_validate_raw(@core.RawAddress, UInt, @core.RawAddress) -> Int
+
+pub fn heap_walk(@core.RawAddress, @8b9f17e6a08a0557.PROCESSHEAPENTRY_aadb80992b9e) -> Bool raise @core.WindowsError
+
+pub fn heap_walk_raw(@core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn is_bad_code_ptr(@core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn is_bad_code_ptr_raw(@core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn is_bad_read_ptr(@core.RawAddress, UInt64) -> Bool raise @core.WindowsError
+
+pub fn is_bad_read_ptr_raw(@core.RawAddress, UInt64) -> Int
+
+pub fn is_bad_string_ptr_a(@strings.PStr?, UInt64) -> Bool raise @core.WindowsError
+
+pub fn is_bad_string_ptr_a_raw(@core.RawAddress, UInt64) -> Int
+
+pub fn is_bad_string_ptr_w(@strings.PWStr?, UInt64) -> Bool raise @core.WindowsError
+
+pub fn is_bad_string_ptr_w_raw(@core.RawAddress, UInt64) -> Int
+
+pub fn is_bad_write_ptr(@core.RawAddress, UInt64) -> Bool raise @core.WindowsError
+
+pub fn is_bad_write_ptr_raw(@core.RawAddress, UInt64) -> Int
+
+pub fn local_alloc(@8b9f17e6a08a0557.LOCALALLOCFLAGS_177c8d3d93d2, UInt64) -> @core.RawAddress raise @core.WindowsError
+
+pub fn local_alloc_raw(UInt, UInt64) -> @core.RawWin32Call[@core.RawAddress]
+
+pub fn local_flags(@core.RawAddress) -> UInt raise @core.WindowsError
+
+pub fn local_flags_raw(@core.RawAddress) -> @core.RawWin32Call[UInt]
+
+pub fn local_handle(@core.RawAddress) -> @core.RawAddress raise @core.WindowsError
+
+pub fn local_handle_raw(@core.RawAddress) -> @core.RawWin32Call[@core.RawAddress]
+
+pub fn local_lock(@core.RawAddress) -> @core.RawAddress raise @core.WindowsError
+
+pub fn local_lock_raw(@core.RawAddress) -> @core.RawWin32Call[@core.RawAddress]
+
+pub fn local_re_alloc(@core.RawAddress, UInt64, UInt) -> @core.RawAddress raise @core.WindowsError
+
+pub fn local_re_alloc_raw(@core.RawAddress, UInt64, UInt) -> @core.RawWin32Call[@core.RawAddress]
+
+pub fn local_size(@core.RawAddress) -> UInt64 raise @core.WindowsError
+
+pub fn local_size_raw(@core.RawAddress) -> @core.RawWin32Call[UInt64]
+
+pub fn local_unlock(@core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn local_unlock_raw(@core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn map_user_physical_pages(@core.RawAddress, UInt64, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn map_user_physical_pages_raw(@core.RawAddress, UInt64, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn map_user_physical_pages_scatter(@core.RawAddress, UInt64, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn map_user_physical_pages_scatter_raw(@core.RawAddress, UInt64, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn map_view_of_file(@core.RawAddress, @8b9f17e6a08a0557.FILEMAP_ff0a07408e58, UInt, UInt, UInt64) -> @core.RawAddress raise @core.WindowsError
+
+pub fn map_view_of_file3(@core.RawAddress, @core.RawAddress, @core.RawAddress, UInt64, UInt64, @8b9f17e6a08a0557.VIRTUALALLOCATIONTYPE_70e59c2fef0b, UInt, @8b9f17e6a08a0557.MEMEXTENDEDPARAMETER_5042548d9f2a?, UInt) -> @core.RawAddress raise @core.WindowsError
+
+pub fn map_view_of_file3_from_app(@core.RawAddress, @core.RawAddress, @core.RawAddress, UInt64, UInt64, @8b9f17e6a08a0557.VIRTUALALLOCATIONTYPE_70e59c2fef0b, UInt, @8b9f17e6a08a0557.MEMEXTENDEDPARAMETER_5042548d9f2a?, UInt) -> @core.RawAddress raise @core.WindowsError
+
+pub fn map_view_of_file3_from_app_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, UInt64, UInt64, UInt, UInt, @core.RawAddress, UInt) -> @core.RawWin32Call[@core.RawAddress]
+
+pub fn map_view_of_file3_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, UInt64, UInt64, UInt, UInt, @core.RawAddress, UInt) -> @core.RawWin32Call[@core.RawAddress]
+
+pub fn map_view_of_file_ex(@core.RawAddress, @8b9f17e6a08a0557.FILEMAP_ff0a07408e58, UInt, UInt, UInt64, @core.RawAddress) -> @core.RawAddress raise @core.WindowsError
+
+pub fn map_view_of_file_ex_numa(@core.RawAddress, @8b9f17e6a08a0557.FILEMAP_ff0a07408e58, UInt, UInt, UInt64, @core.RawAddress, UInt) -> @core.RawAddress raise @core.WindowsError
+
+pub fn map_view_of_file_ex_numa_raw(@core.RawAddress, UInt, UInt, UInt, UInt64, @core.RawAddress, UInt) -> @core.RawWin32Call[@core.RawAddress]
+
+pub fn map_view_of_file_ex_raw(@core.RawAddress, UInt, UInt, UInt, UInt64, @core.RawAddress) -> @core.RawWin32Call[@core.RawAddress]
+
+pub fn map_view_of_file_from_app(@core.RawAddress, @8b9f17e6a08a0557.FILEMAP_ff0a07408e58, UInt64, UInt64) -> @core.RawAddress raise @core.WindowsError
+
+pub fn map_view_of_file_from_app_raw(@core.RawAddress, UInt, UInt64, UInt64) -> @core.RawWin32Call[@core.RawAddress]
+
+pub fn map_view_of_file_numa2(@core.RawAddress, @core.RawAddress, UInt64, @core.RawAddress, UInt64, UInt, UInt, UInt) -> @core.RawAddress raise @core.WindowsError
+
+pub fn map_view_of_file_numa2_raw(@core.RawAddress, @core.RawAddress, UInt64, @core.RawAddress, UInt64, UInt, UInt, UInt) -> @core.RawWin32Call[@core.RawAddress]
+
+pub fn map_view_of_file_raw(@core.RawAddress, UInt, UInt, UInt, UInt64) -> @core.RawWin32Call[@core.RawAddress]
+
+pub let mehc_patrol_scrubber_present : UInt
+
+pub fn offer_virtual_memory(@core.RawAddress, UInt64, @8b9f17e6a08a0557.OFFERPRIORITY_6800c8e52a89) -> UInt raise @core.WindowsError
+
+pub fn offer_virtual_memory_raw(@core.RawAddress, UInt64, Int) -> UInt
+
+pub fn open_dedicated_memory_partition(@core.RawAddress, UInt64, UInt, Int) -> @core.RawAddress raise @core.WindowsError
+
+pub fn open_dedicated_memory_partition_raw(@core.RawAddress, UInt64, UInt, Int) -> @core.RawAddress
+
+pub fn open_file_mapping_a(UInt, Int, @strings.PStr) -> @core.RawAddress raise @core.WindowsError
+
+pub fn open_file_mapping_a_raw(UInt, Int, @core.RawAddress) -> @core.RawWin32Call[@core.RawAddress]
+
+pub fn open_file_mapping_from_app(UInt, Int, @strings.PWStr) -> @core.RawAddress raise @core.WindowsError
+
+pub fn open_file_mapping_from_app_raw(UInt, Int, @core.RawAddress) -> @core.RawWin32Call[@core.RawAddress]
+
+pub fn open_file_mapping_w(UInt, Int, @strings.PWStr) -> @core.RawAddress raise @core.WindowsError
+
+pub fn open_file_mapping_w_raw(UInt, Int, @core.RawAddress) -> @core.RawWin32Call[@core.RawAddress]
+
+pub fn prefetch_virtual_memory(@core.RawAddress, UInt64, @8b9f17e6a08a0557.WIN32MEMORYRANGEENTRY_f8e4ff2720c5, UInt) -> Bool raise @core.WindowsError
+
+pub fn prefetch_virtual_memory_raw(@core.RawAddress, UInt64, @core.RawAddress, UInt) -> @core.RawWin32Call[Int]
+
+pub fn query_memory_resource_notification(@core.RawAddress, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn query_memory_resource_notification_raw(@core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn query_partition_information(@core.RawAddress, @8b9f17e6a08a0557.WIN32MEMORYPARTITIONINFORMATIONCLASS_e5488477331f, @core.RawAddress, UInt) -> Bool raise @core.WindowsError
+
+pub fn query_partition_information_raw(@core.RawAddress, Int, @core.RawAddress, UInt) -> Int
+
+pub fn query_virtual_memory_information(@core.RawAddress, @core.RawAddress, @8b9f17e6a08a0557.WIN32MEMORYINFORMATIONCLASS_8e3ca596f894, @core.RawAddress, UInt64, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn query_virtual_memory_information_raw(@core.RawAddress, @core.RawAddress, Int, @core.RawAddress, UInt64, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn reclaim_virtual_memory(@core.RawAddress, UInt64) -> UInt raise @core.WindowsError
+
+pub fn reclaim_virtual_memory_raw(@core.RawAddress, UInt64) -> UInt
+
+pub fn register_bad_memory_notification(@core.RawAddress) -> @core.RawAddress raise @core.WindowsError
+
+pub fn register_bad_memory_notification_raw(@core.RawAddress) -> @core.RawAddress
+
+pub fn remove_secure_memory_cache_callback(@core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn remove_secure_memory_cache_callback_raw(@core.RawAddress) -> Int
+
+pub fn reset_write_watch(@core.RawAddress, UInt64) -> UInt raise @core.WindowsError
+
+pub fn reset_write_watch_raw(@core.RawAddress, UInt64) -> UInt
+
+pub fn rtl_compare_memory(@core.RawAddress, @core.RawAddress, UInt64) -> UInt64 raise @core.WindowsError
+
+pub fn rtl_compare_memory_raw(@core.RawAddress, @core.RawAddress, UInt64) -> UInt64
+
+pub fn rtl_crc32(@core.RawAddress, UInt64, UInt) -> UInt raise @core.WindowsError
+
+pub fn rtl_crc32_raw(@core.RawAddress, UInt64, UInt) -> UInt
+
+pub fn rtl_crc64(@core.RawAddress, UInt64, UInt64) -> UInt64 raise @core.WindowsError
+
+pub fn rtl_crc64_raw(@core.RawAddress, UInt64, UInt64) -> UInt64
+
+pub fn rtl_is_zero_memory(@core.RawAddress, UInt64) -> Byte raise @core.WindowsError
+
+pub fn rtl_is_zero_memory_raw(@core.RawAddress, UInt64) -> UInt
+
+pub fn set_process_valid_call_targets(@core.RawAddress, @core.RawAddress, UInt64, UInt, @8b9f17e6a08a0557.CFGCALLTARGETINFO_fbf811ba548c) -> Bool raise @core.WindowsError
+
+pub fn set_process_valid_call_targets_for_mapped_view(@core.RawAddress, @core.RawAddress, UInt64, UInt, @8b9f17e6a08a0557.CFGCALLTARGETINFO_fbf811ba548c, @core.RawAddress, UInt64) -> Bool raise @core.WindowsError
+
+pub fn set_process_valid_call_targets_for_mapped_view_raw(@core.RawAddress, @core.RawAddress, UInt64, UInt, @core.RawAddress, @core.RawAddress, UInt64) -> Int
+
+pub fn set_process_valid_call_targets_raw(@core.RawAddress, @core.RawAddress, UInt64, UInt, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn set_process_working_set_size_ex(@core.RawAddress, UInt64, UInt64, @8b9f17e6a08a0557.SETPROCESSWORKINGSETSIZEEXFLAGS_2d303aa79d60) -> Bool raise @core.WindowsError
+
+pub fn set_process_working_set_size_ex_raw(@core.RawAddress, UInt64, UInt64, UInt) -> @core.RawWin32Call[Int]
+
+pub fn set_system_file_cache_size(UInt64, UInt64, UInt) -> Bool raise @core.WindowsError
+
+pub fn set_system_file_cache_size_raw(UInt64, UInt64, UInt) -> @core.RawWin32Call[Int]
+
+pub fn unmap_view_of_file(@core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn unmap_view_of_file2(@core.RawAddress, @core.RawAddress, @8b9f17e6a08a0557.UNMAPVIEWOFFILEFLAGS_cf8484f5edb0) -> Bool raise @core.WindowsError
+
+pub fn unmap_view_of_file2_raw(@core.RawAddress, @core.RawAddress, UInt) -> @core.RawWin32Call[Int]
+
+pub fn unmap_view_of_file_ex(@core.RawAddress, @8b9f17e6a08a0557.UNMAPVIEWOFFILEFLAGS_cf8484f5edb0) -> Bool raise @core.WindowsError
+
+pub fn unmap_view_of_file_ex_raw(@core.RawAddress, UInt) -> @core.RawWin32Call[Int]
+
+pub fn unmap_view_of_file_raw(@core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn unregister_bad_memory_notification(@core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn unregister_bad_memory_notification_raw(@core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn virtual_alloc(@core.RawAddress, UInt64, @8b9f17e6a08a0557.VIRTUALALLOCATIONTYPE_70e59c2fef0b, @8b9f17e6a08a0557.PAGEPROTECTIONFLAGS_0d699f79efc8) -> @core.RawAddress raise @core.WindowsError
+
+pub fn virtual_alloc2(@core.RawAddress, @core.RawAddress, UInt64, @8b9f17e6a08a0557.VIRTUALALLOCATIONTYPE_70e59c2fef0b, UInt, @8b9f17e6a08a0557.MEMEXTENDEDPARAMETER_5042548d9f2a?, UInt) -> @core.RawAddress raise @core.WindowsError
+
+pub fn virtual_alloc2_from_app(@core.RawAddress, @core.RawAddress, UInt64, @8b9f17e6a08a0557.VIRTUALALLOCATIONTYPE_70e59c2fef0b, UInt, @8b9f17e6a08a0557.MEMEXTENDEDPARAMETER_5042548d9f2a?, UInt) -> @core.RawAddress raise @core.WindowsError
+
+pub fn virtual_alloc2_from_app_raw(@core.RawAddress, @core.RawAddress, UInt64, UInt, UInt, @core.RawAddress, UInt) -> @core.RawWin32Call[@core.RawAddress]
+
+pub fn virtual_alloc2_raw(@core.RawAddress, @core.RawAddress, UInt64, UInt, UInt, @core.RawAddress, UInt) -> @core.RawWin32Call[@core.RawAddress]
+
+pub fn virtual_alloc_ex(@core.RawAddress, @core.RawAddress, UInt64, @8b9f17e6a08a0557.VIRTUALALLOCATIONTYPE_70e59c2fef0b, @8b9f17e6a08a0557.PAGEPROTECTIONFLAGS_0d699f79efc8) -> @core.RawAddress raise @core.WindowsError
+
+pub fn virtual_alloc_ex_numa(@core.RawAddress, @core.RawAddress, UInt64, @8b9f17e6a08a0557.VIRTUALALLOCATIONTYPE_70e59c2fef0b, UInt, UInt) -> @core.RawAddress raise @core.WindowsError
+
+pub fn virtual_alloc_ex_numa_raw(@core.RawAddress, @core.RawAddress, UInt64, UInt, UInt, UInt) -> @core.RawWin32Call[@core.RawAddress]
+
+pub fn virtual_alloc_ex_raw(@core.RawAddress, @core.RawAddress, UInt64, UInt, UInt) -> @core.RawWin32Call[@core.RawAddress]
+
+pub fn virtual_alloc_from_app(@core.RawAddress, UInt64, @8b9f17e6a08a0557.VIRTUALALLOCATIONTYPE_70e59c2fef0b, UInt) -> @core.RawAddress raise @core.WindowsError
+
+pub fn virtual_alloc_from_app_raw(@core.RawAddress, UInt64, UInt, UInt) -> @core.RawWin32Call[@core.RawAddress]
+
+pub fn virtual_alloc_raw(@core.RawAddress, UInt64, UInt, UInt) -> @core.RawWin32Call[@core.RawAddress]
+
+pub fn virtual_free(@core.RawAddress, UInt64, @8b9f17e6a08a0557.VIRTUALFREETYPE_ba6c11556d12) -> Bool raise @core.WindowsError
+
+pub fn virtual_free_ex(@core.RawAddress, @core.RawAddress, UInt64, @8b9f17e6a08a0557.VIRTUALFREETYPE_ba6c11556d12) -> Bool raise @core.WindowsError
+
+pub fn virtual_free_ex_raw(@core.RawAddress, @core.RawAddress, UInt64, UInt) -> @core.RawWin32Call[Int]
+
+pub fn virtual_free_raw(@core.RawAddress, UInt64, UInt) -> @core.RawWin32Call[Int]
+
+pub fn virtual_lock(@core.RawAddress, UInt64) -> Bool raise @core.WindowsError
+
+pub fn virtual_lock_raw(@core.RawAddress, UInt64) -> @core.RawWin32Call[Int]
+
+pub fn virtual_protect(@core.RawAddress, UInt64, @8b9f17e6a08a0557.PAGEPROTECTIONFLAGS_0d699f79efc8, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn virtual_protect_ex(@core.RawAddress, @core.RawAddress, UInt64, @8b9f17e6a08a0557.PAGEPROTECTIONFLAGS_0d699f79efc8, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn virtual_protect_ex_raw(@core.RawAddress, @core.RawAddress, UInt64, UInt, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn virtual_protect_from_app(@core.RawAddress, UInt64, UInt, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn virtual_protect_from_app_raw(@core.RawAddress, UInt64, UInt, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn virtual_protect_raw(@core.RawAddress, UInt64, UInt, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn virtual_query(@core.RawAddress, @8b9f17e6a08a0557.MEMORYBASICINFORMATION_6d271225652c, UInt64) -> UInt64 raise @core.WindowsError
+
+pub fn virtual_query_ex(@core.RawAddress, @core.RawAddress, @8b9f17e6a08a0557.MEMORYBASICINFORMATION_6d271225652c, UInt64) -> UInt64 raise @core.WindowsError
+
+pub fn virtual_query_ex_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, UInt64) -> @core.RawWin32Call[UInt64]
+
+pub fn virtual_query_raw(@core.RawAddress, @core.RawAddress, UInt64) -> @core.RawWin32Call[UInt64]
+
+pub fn virtual_unlock(@core.RawAddress, UInt64) -> Bool raise @core.WindowsError
+
+pub fn virtual_unlock_ex(@core.RawAddress, @core.RawAddress, UInt64) -> Bool raise @core.WindowsError
+
+pub fn virtual_unlock_ex_raw(@core.RawAddress, @core.RawAddress, UInt64) -> Int
+
+pub fn virtual_unlock_raw(@core.RawAddress, UInt64) -> @core.RawWin32Call[Int]
+
+pub let win32_memory_numa_performance_all_target_node : UInt
+
+pub let win32_memory_numa_performance_read_bandwidth : UInt
+
+pub let win32_memory_numa_performance_read_latency : UInt
+
+pub let win32_memory_numa_performance_write_bandwidth : UInt
+
+pub let win32_memory_numa_performance_write_latency : UInt
+
+// Errors
+
+// Types and methods
+
+// Type aliases
+pub using @8b9f17e6a08a0557 {type AtlThunkDataT_b634fb1878fd as AtlThunkDataT}
+
+pub using @8b9f17e6a08a0557 {type CFGCALLTARGETINFO_fbf811ba548c as CFGCALLTARGETINFO}
+
+pub using @8b9f17e6a08a0557 {type FILEMAP_ff0a07408e58 as FILEMAP}
+
+pub using @8b9f17e6a08a0557 {type GLOBALALLOCFLAGS_2d1b2047ca15 as GLOBALALLOCFLAGS}
+
+pub using @8b9f17e6a08a0557 {type HEAPFLAGS_3f93fd10ffc5 as HEAPFLAGS}
+
+pub using @8b9f17e6a08a0557 {type HEAPINFORMATIONCLASS_b2ff08d126b6 as HEAPINFORMATIONCLASS}
+
+pub using @8b9f17e6a08a0557 {type HEAPSUMMARY_4988a9ea03a5 as HEAPSUMMARY}
+
+pub using @8b9f17e6a08a0557 {type LOCALALLOCFLAGS_177c8d3d93d2 as LOCALALLOCFLAGS}
+
+pub using @8b9f17e6a08a0557 {type MEMADDRESSREQUIREMENTS_956e3bdc083a as MEMADDRESSREQUIREMENTS}
+
+pub using @8b9f17e6a08a0557 {type MEMDEDICATEDATTRIBUTETYPE_0ecb37c9c92e as MEMDEDICATEDATTRIBUTETYPE}
+
+pub using @8b9f17e6a08a0557 {type MEMEXTENDEDPARAMETER_5042548d9f2a as MEMEXTENDEDPARAMETER}
+
+pub using @8b9f17e6a08a0557 {type MEMEXTENDEDPARAMETERAnonymous1EStruct_a65938b8e5b7 as MEMEXTENDEDPARAMETERAnonymous1EStruct}
+
+pub using @8b9f17e6a08a0557 {type MEMEXTENDEDPARAMETERAnonymous2EUnion_e99e9e844929 as MEMEXTENDEDPARAMETERAnonymous2EUnion}
+
+pub using @8b9f17e6a08a0557 {type MEMEXTENDEDPARAMETERTYPE_91830a617902 as MEMEXTENDEDPARAMETERTYPE}
+
+pub using @8b9f17e6a08a0557 {type MEMORYBASICINFORMATION_6d271225652c as MEMORYBASICINFORMATION}
+
+pub using @8b9f17e6a08a0557 {type MEMORYBASICINFORMATION32_76c34f0fc725 as MEMORYBASICINFORMATION32}
+
+pub using @8b9f17e6a08a0557 {type MEMORYBASICINFORMATION64_6f58ac1b2449 as MEMORYBASICINFORMATION64}
+
+pub using @8b9f17e6a08a0557 {type MEMORYMAPPEDVIEWADDRESS_e1ee69ea93f4 as MEMORYMAPPEDVIEWADDRESS}
+
+pub using @8b9f17e6a08a0557 {type MEMORYPARTITIONDEDICATEDMEMORYATTRIBUTE_d4f84c349e36 as MEMORYPARTITIONDEDICATEDMEMORYATTRIBUTE}
+
+pub using @8b9f17e6a08a0557 {type MEMORYPARTITIONDEDICATEDMEMORYINFORMATION_0448347fa141 as MEMORYPARTITIONDEDICATEDMEMORYINFORMATION}
+
+pub using @8b9f17e6a08a0557 {type MEMORYRESOURCENOTIFICATIONTYPE_14aa0fc843c8 as MEMORYRESOURCENOTIFICATIONTYPE}
+
+pub using @8b9f17e6a08a0557 {type MEMSECTIONEXTENDEDPARAMETERTYPE_ec0bbae1cfd2 as MEMSECTIONEXTENDEDPARAMETERTYPE}
+
+pub using @8b9f17e6a08a0557 {type OFFERPRIORITY_6800c8e52a89 as OFFERPRIORITY}
+
+pub using @8b9f17e6a08a0557 {type PAGEPROTECTIONFLAGS_0d699f79efc8 as PAGEPROTECTIONFLAGS}
+
+pub using @8b9f17e6a08a0557 {type PAGETYPE_81a7d0b136ce as PAGETYPE}
+
+pub using @8b9f17e6a08a0557 {type PBADMEMORYCALLBACKROUTINE_76a6314254c1 as PBADMEMORYCALLBACKROUTINE}
+
+pub using @8b9f17e6a08a0557 {type PROCESSHEAPENTRY_aadb80992b9e as PROCESSHEAPENTRY}
+
+pub using @8b9f17e6a08a0557 {type PROCESSHEAPENTRYAnonymousEUnion_6de1ba4fe371 as PROCESSHEAPENTRYAnonymousEUnion}
+
+pub using @8b9f17e6a08a0557 {type PROCESSHEAPENTRYAnonymousEUnionBlockEStruct_e50a5ad648a1 as PROCESSHEAPENTRYAnonymousEUnionBlockEStruct}
+
+pub using @8b9f17e6a08a0557 {type PROCESSHEAPENTRYAnonymousEUnionRegionEStruct_3d053f2295a2 as PROCESSHEAPENTRYAnonymousEUnionRegionEStruct}
+
+pub using @8b9f17e6a08a0557 {type PSECUREMEMORYCACHECALLBACK_eed49d56aa63 as PSECUREMEMORYCACHECALLBACK}
+
+pub using @8b9f17e6a08a0557 {type SECTIONFLAGS_34f4926e99d8 as SECTIONFLAGS}
+
+pub using @8b9f17e6a08a0557 {type SETPROCESSWORKINGSETSIZEEXFLAGS_2d303aa79d60 as SETPROCESSWORKINGSETSIZEEXFLAGS}
+
+pub using @8b9f17e6a08a0557 {type UNMAPVIEWOFFILEFLAGS_cf8484f5edb0 as UNMAPVIEWOFFILEFLAGS}
+
+pub using @8b9f17e6a08a0557 {type VIRTUALALLOCATIONTYPE_70e59c2fef0b as VIRTUALALLOCATIONTYPE}
+
+pub using @8b9f17e6a08a0557 {type VIRTUALFREETYPE_ba6c11556d12 as VIRTUALFREETYPE}
+
+pub using @8b9f17e6a08a0557 {type WIN32MEMORYINFORMATIONCLASS_8e3ca596f894 as WIN32MEMORYINFORMATIONCLASS}
+
+pub using @8b9f17e6a08a0557 {type WIN32MEMORYNUMAPERFORMANCEENTRY_ac6549b0660e as WIN32MEMORYNUMAPERFORMANCEENTRY}
+
+pub using @8b9f17e6a08a0557 {type WIN32MEMORYNUMAPERFORMANCEENTRYFlagsEStruct_707f21c0ba2c as WIN32MEMORYNUMAPERFORMANCEENTRYFlagsEStruct}
+
+pub using @8b9f17e6a08a0557 {type WIN32MEMORYNUMAPERFORMANCEINFORMATIONOUTPUT_c4a86d2c79e2 as WIN32MEMORYNUMAPERFORMANCEINFORMATIONOUTPUT}
+
+pub using @8b9f17e6a08a0557 {type WIN32MEMORYPARTITIONINFORMATION_5bfa89f04331 as WIN32MEMORYPARTITIONINFORMATION}
+
+pub using @8b9f17e6a08a0557 {type WIN32MEMORYPARTITIONINFORMATIONCLASS_e5488477331f as WIN32MEMORYPARTITIONINFORMATIONCLASS}
+
+pub using @8b9f17e6a08a0557 {type WIN32MEMORYRANGEENTRY_f8e4ff2720c5 as WIN32MEMORYRANGEENTRY}
+
+pub using @8b9f17e6a08a0557 {type WIN32MEMORYREGIONINFORMATION_7886f06c9e87 as WIN32MEMORYREGIONINFORMATION}
+
+pub using @8b9f17e6a08a0557 {type WIN32MEMORYREGIONINFORMATIONAnonymousEUnion_c8be7ac0c7b8 as WIN32MEMORYREGIONINFORMATIONAnonymousEUnion}
+
+pub using @8b9f17e6a08a0557 {type WIN32MEMORYREGIONINFORMATIONAnonymousEUnionAnonymousEStruct_59baeac7cba1 as WIN32MEMORYREGIONINFORMATIONAnonymousEUnionAnonymousEStruct}
+
+// Traits

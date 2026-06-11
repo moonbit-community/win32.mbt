@@ -1,0 +1,112 @@
+// Generated using `moon info`, DON'T EDIT IT
+package "moonbit-community/win32api/windows/win32/system/event_collector"
+
+import {
+  "moonbit-community/win32api/runtime/core",
+  "moonbit-community/win32api/runtime/strings",
+  "moonbit-community/win32api/scc/4f1e60c8612a95f2",
+}
+
+// Values
+pub fn ec_close(Int64) -> Bool raise @core.WindowsError
+
+pub fn ec_close_raw(Int64) -> Int
+
+pub let ec_create_new : UInt
+
+pub fn ec_delete_subscription(@strings.PWStr, UInt) -> Bool raise @core.WindowsError
+
+pub fn ec_delete_subscription_raw(@core.RawAddress, UInt) -> Int
+
+pub fn ec_enum_next_subscription(Int64, @strings.PWStrBuffer?, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn ec_enum_next_subscription_raw(Int64, UInt, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn ec_get_object_array_property(Int64, @4f1e60c8612a95f2.ECSUBSCRIPTIONPROPERTYID_fe791cab925f, UInt, UInt, UInt, @4f1e60c8612a95f2.ECVARIANT_e61e4aada065, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn ec_get_object_array_property_raw(Int64, Int, UInt, UInt, UInt, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn ec_get_object_array_size(Int64, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn ec_get_object_array_size_raw(Int64, @core.RawAddress) -> Int
+
+pub fn ec_get_subscription_property(Int64, @4f1e60c8612a95f2.ECSUBSCRIPTIONPROPERTYID_fe791cab925f, UInt, UInt, @4f1e60c8612a95f2.ECVARIANT_e61e4aada065, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn ec_get_subscription_property_raw(Int64, Int, UInt, UInt, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn ec_get_subscription_run_time_status(@strings.PWStr, @4f1e60c8612a95f2.ECSUBSCRIPTIONRUNTIMESTATUSINFOID_16ae96131e06, @strings.PWStr, UInt, UInt, @4f1e60c8612a95f2.ECVARIANT_e61e4aada065, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn ec_get_subscription_run_time_status_raw(@core.RawAddress, Int, @core.RawAddress, UInt, UInt, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn ec_insert_object_array_element(Int64, UInt) -> Bool raise @core.WindowsError
+
+pub fn ec_insert_object_array_element_raw(Int64, UInt) -> Int
+
+pub let ec_open_always : UInt
+
+pub let ec_open_existing : UInt
+
+pub fn ec_open_subscription(@strings.PWStr, UInt, UInt) -> Int64 raise @core.WindowsError
+
+pub fn ec_open_subscription_enum(UInt) -> Int64 raise @core.WindowsError
+
+pub fn ec_open_subscription_enum_raw(UInt) -> @core.RawWin32Call[Int64]
+
+pub fn ec_open_subscription_raw(@core.RawAddress, UInt, UInt) -> @core.RawWin32Call[Int64]
+
+pub let ec_read_access : UInt
+
+pub fn ec_remove_object_array_element(Int64, UInt) -> Bool raise @core.WindowsError
+
+pub fn ec_remove_object_array_element_raw(Int64, UInt) -> Int
+
+pub fn ec_retry_subscription(@strings.PWStr, @strings.PWStr, UInt) -> Bool raise @core.WindowsError
+
+pub fn ec_retry_subscription_raw(@core.RawAddress, @core.RawAddress, UInt) -> Int
+
+pub fn ec_save_subscription(Int64, UInt) -> Bool raise @core.WindowsError
+
+pub fn ec_save_subscription_raw(Int64, UInt) -> Int
+
+pub fn ec_set_object_array_property(Int64, @4f1e60c8612a95f2.ECSUBSCRIPTIONPROPERTYID_fe791cab925f, UInt, UInt, @4f1e60c8612a95f2.ECVARIANT_e61e4aada065) -> Bool raise @core.WindowsError
+
+pub fn ec_set_object_array_property_raw(Int64, Int, UInt, UInt, @core.RawAddress) -> Int
+
+pub fn ec_set_subscription_property(Int64, @4f1e60c8612a95f2.ECSUBSCRIPTIONPROPERTYID_fe791cab925f, UInt, @4f1e60c8612a95f2.ECVARIANT_e61e4aada065) -> Bool raise @core.WindowsError
+
+pub fn ec_set_subscription_property_raw(Int64, Int, UInt, @core.RawAddress) -> Int
+
+pub let ec_variant_type_array : UInt
+
+pub let ec_variant_type_mask : UInt
+
+pub let ec_write_access : UInt
+
+// Errors
+
+// Types and methods
+
+// Type aliases
+pub using @4f1e60c8612a95f2 {type ECSUBSCRIPTIONCONFIGURATIONMODE_4490dc45e18d as ECSUBSCRIPTIONCONFIGURATIONMODE}
+
+pub using @4f1e60c8612a95f2 {type ECSUBSCRIPTIONCONTENTFORMAT_d6a86acb1c82 as ECSUBSCRIPTIONCONTENTFORMAT}
+
+pub using @4f1e60c8612a95f2 {type ECSUBSCRIPTIONCREDENTIALSTYPE_810bbbf26f4b as ECSUBSCRIPTIONCREDENTIALSTYPE}
+
+pub using @4f1e60c8612a95f2 {type ECSUBSCRIPTIONDELIVERYMODE_84c3ee93e6b9 as ECSUBSCRIPTIONDELIVERYMODE}
+
+pub using @4f1e60c8612a95f2 {type ECSUBSCRIPTIONPROPERTYID_fe791cab925f as ECSUBSCRIPTIONPROPERTYID}
+
+pub using @4f1e60c8612a95f2 {type ECSUBSCRIPTIONRUNTIMESTATUSACTIVESTATUS_bfe18074b400 as ECSUBSCRIPTIONRUNTIMESTATUSACTIVESTATUS}
+
+pub using @4f1e60c8612a95f2 {type ECSUBSCRIPTIONRUNTIMESTATUSINFOID_16ae96131e06 as ECSUBSCRIPTIONRUNTIMESTATUSINFOID}
+
+pub using @4f1e60c8612a95f2 {type ECSUBSCRIPTIONTYPE_7578239f2cc1 as ECSUBSCRIPTIONTYPE}
+
+pub using @4f1e60c8612a95f2 {type ECVARIANT_e61e4aada065 as ECVARIANT}
+
+pub using @4f1e60c8612a95f2 {type ECVARIANTAnonymousEUnion_64c87e2e589e as ECVARIANTAnonymousEUnion}
+
+pub using @4f1e60c8612a95f2 {type ECVARIANTTYPE_edc8e9bcb709 as ECVARIANTTYPE}
+
+// Traits

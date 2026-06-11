@@ -1,0 +1,97 @@
+// Generated using `moon info`, DON'T EDIT IT
+package "moonbit-community/win32api/scc/e3bdf9a0425bc88a"
+
+import {
+  "moonbit-community/win32api/runtime/core",
+  "moonbitlang/core/debug",
+}
+
+// Values
+pub fn disable_thread_profiling_8ef95d8d9009(@core.RawAddress) -> UInt raise @core.WindowsError
+
+pub fn disable_thread_profiling_8ef95d8d9009_raw(@core.RawAddress) -> UInt
+
+pub fn enable_thread_profiling_7fdb4828cb84(@core.RawAddress, UInt, UInt64, @core.RawAddress) -> UInt raise @core.WindowsError
+
+pub fn enable_thread_profiling_7fdb4828cb84_raw(@core.RawAddress, UInt, UInt64, @core.RawAddress) -> UInt
+
+pub let hardwarecounterdata_dcfed48e353d_alignment : Int
+
+pub let hardwarecounterdata_dcfed48e353d_size : Int
+
+pub let max_hardware_counter_type_a391cc36d2b3 : Int
+
+pub let performancedata_f77b7ddf115c_alignment : Int
+
+pub let performancedata_f77b7ddf115c_size : Int
+
+pub let pmc_counter_c2d2e0235627 : Int
+
+pub fn query_thread_profiling_dadb3338be6e(@core.RawAddress, @core.RawAddress) -> UInt raise @core.WindowsError
+
+pub fn query_thread_profiling_dadb3338be6e_raw(@core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn read_thread_profiling_data_5ba49f2350ba(@core.RawAddress, UInt, PERFORMANCEDATA_f77b7ddf115c) -> UInt raise @core.WindowsError
+
+pub fn read_thread_profiling_data_5ba49f2350ba_raw(@core.RawAddress, UInt, @core.RawAddress) -> UInt
+
+// Errors
+
+// Types and methods
+pub(all) struct HARDWARECOUNTERDATA_dcfed48e353d {
+  raw_buffer : @core.NativeBuffer
+}
+pub fn HARDWARECOUNTERDATA_dcfed48e353d::abi_alignment() -> Int
+pub fn HARDWARECOUNTERDATA_dcfed48e353d::abi_size() -> Int
+pub fn HARDWARECOUNTERDATA_dcfed48e353d::bytes(Self) -> Bytes raise @core.WindowsError
+pub fn HARDWARECOUNTERDATA_dcfed48e353d::from_bytes(Bytes) -> Self raise @core.WindowsError
+pub fn HARDWARECOUNTERDATA_dcfed48e353d::new() -> Self raise @core.WindowsError
+pub fn HARDWARECOUNTERDATA_dcfed48e353d::raw_address(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn HARDWARECOUNTERDATA_dcfed48e353d::reserved(Self) -> UInt raise @core.WindowsError
+pub fn HARDWARECOUNTERDATA_dcfed48e353d::set_reserved(Self, UInt) -> Unit raise @core.WindowsError
+pub fn HARDWARECOUNTERDATA_dcfed48e353d::set_type_(Self, HARDWARECOUNTERTYPE_cd60759e056e) -> Unit raise @core.WindowsError
+pub fn HARDWARECOUNTERDATA_dcfed48e353d::set_value(Self, UInt64) -> Unit raise @core.WindowsError
+pub fn HARDWARECOUNTERDATA_dcfed48e353d::type_(Self) -> HARDWARECOUNTERTYPE_cd60759e056e raise @core.WindowsError
+pub fn HARDWARECOUNTERDATA_dcfed48e353d::value(Self) -> UInt64 raise @core.WindowsError
+pub fn[T] HARDWARECOUNTERDATA_dcfed48e353d::with_raw_address(Self, (@core.RawAddress) -> T raise?) -> T raise
+pub impl Eq for HARDWARECOUNTERDATA_dcfed48e353d
+pub impl @debug.Debug for HARDWARECOUNTERDATA_dcfed48e353d
+
+pub(all) struct HARDWARECOUNTERTYPE_cd60759e056e(Int) derive(Compare, Eq, @debug.Debug)
+pub fn HARDWARECOUNTERTYPE_cd60759e056e::from_int(Int) -> Self
+pub fn HARDWARECOUNTERTYPE_cd60759e056e::max_hardware_counter_type() -> Self
+pub fn HARDWARECOUNTERTYPE_cd60759e056e::pmc_counter() -> Self
+pub fn HARDWARECOUNTERTYPE_cd60759e056e::to_int(Self) -> Int
+
+pub(all) struct PERFORMANCEDATA_f77b7ddf115c {
+  raw_buffer : @core.NativeBuffer
+}
+pub fn PERFORMANCEDATA_f77b7ddf115c::abi_alignment() -> Int
+pub fn PERFORMANCEDATA_f77b7ddf115c::abi_size() -> Int
+pub fn PERFORMANCEDATA_f77b7ddf115c::bytes(Self) -> Bytes raise @core.WindowsError
+pub fn PERFORMANCEDATA_f77b7ddf115c::context_switch_count(Self) -> UInt raise @core.WindowsError
+pub fn PERFORMANCEDATA_f77b7ddf115c::cycle_time(Self) -> UInt64 raise @core.WindowsError
+pub fn PERFORMANCEDATA_f77b7ddf115c::from_bytes(Bytes) -> Self raise @core.WindowsError
+pub fn PERFORMANCEDATA_f77b7ddf115c::hw_counters_count(Self) -> Byte raise @core.WindowsError
+pub fn PERFORMANCEDATA_f77b7ddf115c::new() -> Self raise @core.WindowsError
+pub fn PERFORMANCEDATA_f77b7ddf115c::raw_address(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn PERFORMANCEDATA_f77b7ddf115c::reserved(Self) -> UInt raise @core.WindowsError
+pub fn PERFORMANCEDATA_f77b7ddf115c::retry_count(Self) -> UInt raise @core.WindowsError
+pub fn PERFORMANCEDATA_f77b7ddf115c::set_context_switch_count(Self, UInt) -> Unit raise @core.WindowsError
+pub fn PERFORMANCEDATA_f77b7ddf115c::set_cycle_time(Self, UInt64) -> Unit raise @core.WindowsError
+pub fn PERFORMANCEDATA_f77b7ddf115c::set_hw_counters_count(Self, Byte) -> Unit raise @core.WindowsError
+pub fn PERFORMANCEDATA_f77b7ddf115c::set_reserved(Self, UInt) -> Unit raise @core.WindowsError
+pub fn PERFORMANCEDATA_f77b7ddf115c::set_retry_count(Self, UInt) -> Unit raise @core.WindowsError
+pub fn PERFORMANCEDATA_f77b7ddf115c::set_size(Self, UInt16) -> Unit raise @core.WindowsError
+pub fn PERFORMANCEDATA_f77b7ddf115c::set_version(Self, Byte) -> Unit raise @core.WindowsError
+pub fn PERFORMANCEDATA_f77b7ddf115c::set_wait_reason_bit_map(Self, UInt64) -> Unit raise @core.WindowsError
+pub fn PERFORMANCEDATA_f77b7ddf115c::size(Self) -> UInt16 raise @core.WindowsError
+pub fn PERFORMANCEDATA_f77b7ddf115c::version(Self) -> Byte raise @core.WindowsError
+pub fn PERFORMANCEDATA_f77b7ddf115c::wait_reason_bit_map(Self) -> UInt64 raise @core.WindowsError
+pub fn[T] PERFORMANCEDATA_f77b7ddf115c::with_raw_address(Self, (@core.RawAddress) -> T raise?) -> T raise
+pub impl Eq for PERFORMANCEDATA_f77b7ddf115c
+pub impl @debug.Debug for PERFORMANCEDATA_f77b7ddf115c
+
+// Type aliases
+
+// Traits

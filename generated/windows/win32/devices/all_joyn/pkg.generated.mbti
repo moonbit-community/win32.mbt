@@ -1,0 +1,2465 @@
+// Generated using `moon info`, DON'T EDIT IT
+package "moonbit-community/win32api/windows/win32/devices/all_joyn"
+
+import {
+  "moonbit-community/win32api/runtime/core",
+  "moonbit-community/win32api/runtime/strings",
+  "moonbit-community/win32api/scc/94493486d51ad13f",
+  "moonbit-community/win32api/scc/cc6631776d7e2373",
+}
+
+// Values
+pub fn all_joyn_accept_bus_connection(@core.RawAddress, @core.RawAddress) -> UInt raise @core.WindowsError
+
+pub fn all_joyn_accept_bus_connection_raw(@core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn all_joyn_close_bus_handle(@core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn all_joyn_close_bus_handle_raw(@core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn all_joyn_connect_to_bus(@strings.PWStr?) -> @core.RawAddress raise @core.WindowsError
+
+pub fn all_joyn_connect_to_bus_raw(@core.RawAddress) -> @core.RawWin32Call[@core.RawAddress]
+
+pub fn all_joyn_create_bus(UInt, UInt, @cc6631776d7e2373.SECURITYATTRIBUTES_bc2e2f0be0e1?) -> @core.RawAddress raise @core.WindowsError
+
+pub fn all_joyn_create_bus_raw(UInt, UInt, @core.RawAddress) -> @core.RawAddress
+
+pub fn all_joyn_enum_events(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn all_joyn_enum_events_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn all_joyn_event_select(@core.RawAddress, @core.RawAddress, UInt) -> Bool raise @core.WindowsError
+
+pub fn all_joyn_event_select_raw(@core.RawAddress, @core.RawAddress, UInt) -> @core.RawWin32Call[Int]
+
+pub fn all_joyn_receive_from_bus(@core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn all_joyn_receive_from_bus_raw(@core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn all_joyn_send_to_bus(@core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn all_joyn_send_to_bus_raw(@core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn alljoyn_aboutdata_create(@strings.PStr) -> Int64 raise @core.WindowsError
+
+pub fn alljoyn_aboutdata_create_empty() -> Int64 raise @core.WindowsError
+
+pub fn alljoyn_aboutdata_create_empty_raw() -> Int64
+
+pub fn alljoyn_aboutdata_create_full(Int64, @strings.PStr) -> Int64 raise @core.WindowsError
+
+pub fn alljoyn_aboutdata_create_full_raw(Int64, @core.RawAddress) -> Int64
+
+pub fn alljoyn_aboutdata_create_raw(@core.RawAddress) -> Int64
+
+pub fn alljoyn_aboutdata_createfrommsgarg(Int64, Int64, @strings.PStr) -> @94493486d51ad13f.QStatus_e5e433a5ef86 raise @core.WindowsError
+
+pub fn alljoyn_aboutdata_createfrommsgarg_raw(Int64, Int64, @core.RawAddress) -> Int
+
+pub fn alljoyn_aboutdata_createfromxml(Int64, @strings.PStr) -> @94493486d51ad13f.QStatus_e5e433a5ef86 raise @core.WindowsError
+
+pub fn alljoyn_aboutdata_createfromxml_raw(Int64, @core.RawAddress) -> Int
+
+pub fn alljoyn_aboutdata_destroy(Int64) -> Unit raise @core.WindowsError
+
+pub fn alljoyn_aboutdata_destroy_raw(Int64) -> Unit
+
+pub fn alljoyn_aboutdata_getaboutdata(Int64, Int64, @strings.PStr) -> @94493486d51ad13f.QStatus_e5e433a5ef86 raise @core.WindowsError
+
+pub fn alljoyn_aboutdata_getaboutdata_raw(Int64, Int64, @core.RawAddress) -> Int
+
+pub fn alljoyn_aboutdata_getajsoftwareversion(Int64, @core.RawAddress) -> @94493486d51ad13f.QStatus_e5e433a5ef86 raise @core.WindowsError
+
+pub fn alljoyn_aboutdata_getajsoftwareversion_raw(Int64, @core.RawAddress) -> Int
+
+pub fn alljoyn_aboutdata_getannouncedaboutdata(Int64, Int64) -> @94493486d51ad13f.QStatus_e5e433a5ef86 raise @core.WindowsError
+
+pub fn alljoyn_aboutdata_getannouncedaboutdata_raw(Int64, Int64) -> Int
+
+pub fn alljoyn_aboutdata_getappid(Int64, @core.RawAddress, @core.RawAddress) -> @94493486d51ad13f.QStatus_e5e433a5ef86 raise @core.WindowsError
+
+pub fn alljoyn_aboutdata_getappid_raw(Int64, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn alljoyn_aboutdata_getappname(Int64, @core.RawAddress, @strings.PStr) -> @94493486d51ad13f.QStatus_e5e433a5ef86 raise @core.WindowsError
+
+pub fn alljoyn_aboutdata_getappname_raw(Int64, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn alljoyn_aboutdata_getdateofmanufacture(Int64, @core.RawAddress) -> @94493486d51ad13f.QStatus_e5e433a5ef86 raise @core.WindowsError
+
+pub fn alljoyn_aboutdata_getdateofmanufacture_raw(Int64, @core.RawAddress) -> Int
+
+pub fn alljoyn_aboutdata_getdefaultlanguage(Int64, @core.RawAddress) -> @94493486d51ad13f.QStatus_e5e433a5ef86 raise @core.WindowsError
+
+pub fn alljoyn_aboutdata_getdefaultlanguage_raw(Int64, @core.RawAddress) -> Int
+
+pub fn alljoyn_aboutdata_getdescription(Int64, @core.RawAddress, @strings.PStr) -> @94493486d51ad13f.QStatus_e5e433a5ef86 raise @core.WindowsError
+
+pub fn alljoyn_aboutdata_getdescription_raw(Int64, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn alljoyn_aboutdata_getdeviceid(Int64, @core.RawAddress) -> @94493486d51ad13f.QStatus_e5e433a5ef86 raise @core.WindowsError
+
+pub fn alljoyn_aboutdata_getdeviceid_raw(Int64, @core.RawAddress) -> Int
+
+pub fn alljoyn_aboutdata_getdevicename(Int64, @core.RawAddress, @strings.PStr) -> @94493486d51ad13f.QStatus_e5e433a5ef86 raise @core.WindowsError
+
+pub fn alljoyn_aboutdata_getdevicename_raw(Int64, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn alljoyn_aboutdata_getfield(Int64, @strings.PStr, @core.RawAddress, @strings.PStr) -> @94493486d51ad13f.QStatus_e5e433a5ef86 raise @core.WindowsError
+
+pub fn alljoyn_aboutdata_getfield_raw(Int64, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn alljoyn_aboutdata_getfields(Int64, @core.RawAddress, UInt64) -> UInt64 raise @core.WindowsError
+
+pub fn alljoyn_aboutdata_getfields_raw(Int64, @core.RawAddress, UInt64) -> UInt64
+
+pub fn alljoyn_aboutdata_getfieldsignature(Int64, @strings.PStr) -> @core.RawAddress raise @core.WindowsError
+
+pub fn alljoyn_aboutdata_getfieldsignature_raw(Int64, @core.RawAddress) -> @core.RawAddress
+
+pub fn alljoyn_aboutdata_gethardwareversion(Int64, @core.RawAddress) -> @94493486d51ad13f.QStatus_e5e433a5ef86 raise @core.WindowsError
+
+pub fn alljoyn_aboutdata_gethardwareversion_raw(Int64, @core.RawAddress) -> Int
+
+pub fn alljoyn_aboutdata_getmanufacturer(Int64, @core.RawAddress, @strings.PStr) -> @94493486d51ad13f.QStatus_e5e433a5ef86 raise @core.WindowsError
+
+pub fn alljoyn_aboutdata_getmanufacturer_raw(Int64, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn alljoyn_aboutdata_getmodelnumber(Int64, @core.RawAddress) -> @94493486d51ad13f.QStatus_e5e433a5ef86 raise @core.WindowsError
+
+pub fn alljoyn_aboutdata_getmodelnumber_raw(Int64, @core.RawAddress) -> Int
+
+pub fn alljoyn_aboutdata_getsoftwareversion(Int64, @core.RawAddress) -> @94493486d51ad13f.QStatus_e5e433a5ef86 raise @core.WindowsError
+
+pub fn alljoyn_aboutdata_getsoftwareversion_raw(Int64, @core.RawAddress) -> Int
+
+pub fn alljoyn_aboutdata_getsupportedlanguages(Int64, @core.RawAddress, UInt64) -> UInt64 raise @core.WindowsError
+
+pub fn alljoyn_aboutdata_getsupportedlanguages_raw(Int64, @core.RawAddress, UInt64) -> UInt64
+
+pub fn alljoyn_aboutdata_getsupporturl(Int64, @core.RawAddress) -> @94493486d51ad13f.QStatus_e5e433a5ef86 raise @core.WindowsError
+
+pub fn alljoyn_aboutdata_getsupporturl_raw(Int64, @core.RawAddress) -> Int
+
+pub fn alljoyn_aboutdata_isfieldannounced(Int64, @strings.PStr) -> Byte raise @core.WindowsError
+
+pub fn alljoyn_aboutdata_isfieldannounced_raw(Int64, @core.RawAddress) -> UInt
+
+pub fn alljoyn_aboutdata_isfieldlocalized(Int64, @strings.PStr) -> Byte raise @core.WindowsError
+
+pub fn alljoyn_aboutdata_isfieldlocalized_raw(Int64, @core.RawAddress) -> UInt
+
+pub fn alljoyn_aboutdata_isfieldrequired(Int64, @strings.PStr) -> Byte raise @core.WindowsError
+
+pub fn alljoyn_aboutdata_isfieldrequired_raw(Int64, @core.RawAddress) -> UInt
+
+pub fn alljoyn_aboutdata_isvalid(Int64, @strings.PStr) -> Byte raise @core.WindowsError
+
+pub fn alljoyn_aboutdata_isvalid_raw(Int64, @core.RawAddress) -> UInt
+
+pub fn alljoyn_aboutdata_setappid(Int64, @core.RawAddress, UInt64) -> @94493486d51ad13f.QStatus_e5e433a5ef86 raise @core.WindowsError
+
+pub fn alljoyn_aboutdata_setappid_fromstring(Int64, @strings.PStr) -> @94493486d51ad13f.QStatus_e5e433a5ef86 raise @core.WindowsError
+
+pub fn alljoyn_aboutdata_setappid_fromstring_raw(Int64, @core.RawAddress) -> Int
+
+pub fn alljoyn_aboutdata_setappid_raw(Int64, @core.RawAddress, UInt64) -> Int
+
+pub fn alljoyn_aboutdata_setappname(Int64, @strings.PStr, @strings.PStr) -> @94493486d51ad13f.QStatus_e5e433a5ef86 raise @core.WindowsError
+
+pub fn alljoyn_aboutdata_setappname_raw(Int64, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn alljoyn_aboutdata_setdateofmanufacture(Int64, @strings.PStr) -> @94493486d51ad13f.QStatus_e5e433a5ef86 raise @core.WindowsError
+
+pub fn alljoyn_aboutdata_setdateofmanufacture_raw(Int64, @core.RawAddress) -> Int
+
+pub fn alljoyn_aboutdata_setdefaultlanguage(Int64, @strings.PStr) -> @94493486d51ad13f.QStatus_e5e433a5ef86 raise @core.WindowsError
+
+pub fn alljoyn_aboutdata_setdefaultlanguage_raw(Int64, @core.RawAddress) -> Int
+
+pub fn alljoyn_aboutdata_setdescription(Int64, @strings.PStr, @strings.PStr) -> @94493486d51ad13f.QStatus_e5e433a5ef86 raise @core.WindowsError
+
+pub fn alljoyn_aboutdata_setdescription_raw(Int64, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn alljoyn_aboutdata_setdeviceid(Int64, @strings.PStr) -> @94493486d51ad13f.QStatus_e5e433a5ef86 raise @core.WindowsError
+
+pub fn alljoyn_aboutdata_setdeviceid_raw(Int64, @core.RawAddress) -> Int
+
+pub fn alljoyn_aboutdata_setdevicename(Int64, @strings.PStr, @strings.PStr) -> @94493486d51ad13f.QStatus_e5e433a5ef86 raise @core.WindowsError
+
+pub fn alljoyn_aboutdata_setdevicename_raw(Int64, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn alljoyn_aboutdata_setfield(Int64, @strings.PStr, Int64, @strings.PStr) -> @94493486d51ad13f.QStatus_e5e433a5ef86 raise @core.WindowsError
+
+pub fn alljoyn_aboutdata_setfield_raw(Int64, @core.RawAddress, Int64, @core.RawAddress) -> Int
+
+pub fn alljoyn_aboutdata_sethardwareversion(Int64, @strings.PStr) -> @94493486d51ad13f.QStatus_e5e433a5ef86 raise @core.WindowsError
+
+pub fn alljoyn_aboutdata_sethardwareversion_raw(Int64, @core.RawAddress) -> Int
+
+pub fn alljoyn_aboutdata_setmanufacturer(Int64, @strings.PStr, @strings.PStr) -> @94493486d51ad13f.QStatus_e5e433a5ef86 raise @core.WindowsError
+
+pub fn alljoyn_aboutdata_setmanufacturer_raw(Int64, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn alljoyn_aboutdata_setmodelnumber(Int64, @strings.PStr) -> @94493486d51ad13f.QStatus_e5e433a5ef86 raise @core.WindowsError
+
+pub fn alljoyn_aboutdata_setmodelnumber_raw(Int64, @core.RawAddress) -> Int
+
+pub fn alljoyn_aboutdata_setsoftwareversion(Int64, @strings.PStr) -> @94493486d51ad13f.QStatus_e5e433a5ef86 raise @core.WindowsError
+
+pub fn alljoyn_aboutdata_setsoftwareversion_raw(Int64, @core.RawAddress) -> Int
+
+pub fn alljoyn_aboutdata_setsupportedlanguage(Int64, @strings.PStr) -> @94493486d51ad13f.QStatus_e5e433a5ef86 raise @core.WindowsError
+
+pub fn alljoyn_aboutdata_setsupportedlanguage_raw(Int64, @core.RawAddress) -> Int
+
+pub fn alljoyn_aboutdata_setsupporturl(Int64, @strings.PStr) -> @94493486d51ad13f.QStatus_e5e433a5ef86 raise @core.WindowsError
+
+pub fn alljoyn_aboutdata_setsupporturl_raw(Int64, @core.RawAddress) -> Int
+
+pub fn alljoyn_aboutdatalistener_create(@94493486d51ad13f.AlljoynAboutdatalistenerCallbacks_7d6edb1149d9, @core.RawAddress) -> Int64 raise @core.WindowsError
+
+pub fn alljoyn_aboutdatalistener_create_raw(@core.RawAddress, @core.RawAddress) -> Int64
+
+pub fn alljoyn_aboutdatalistener_destroy(Int64) -> Unit raise @core.WindowsError
+
+pub fn alljoyn_aboutdatalistener_destroy_raw(Int64) -> Unit
+
+pub fn alljoyn_abouticon_clear(Int64) -> Unit raise @core.WindowsError
+
+pub fn alljoyn_abouticon_clear_raw(Int64) -> Unit
+
+pub fn alljoyn_abouticon_create() -> Int64 raise @core.WindowsError
+
+pub fn alljoyn_abouticon_create_raw() -> Int64
+
+pub fn alljoyn_abouticon_destroy(Int64) -> Unit raise @core.WindowsError
+
+pub fn alljoyn_abouticon_destroy_raw(Int64) -> Unit
+
+pub fn alljoyn_abouticon_getcontent(Int64, @core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn alljoyn_abouticon_getcontent_raw(Int64, @core.RawAddress, @core.RawAddress) -> Unit
+
+pub fn alljoyn_abouticon_geturl(Int64, @core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn alljoyn_abouticon_geturl_raw(Int64, @core.RawAddress, @core.RawAddress) -> Unit
+
+pub fn alljoyn_abouticon_setcontent(Int64, @strings.PStr, @core.RawAddress, UInt64, Byte) -> @94493486d51ad13f.QStatus_e5e433a5ef86 raise @core.WindowsError
+
+pub fn alljoyn_abouticon_setcontent_frommsgarg(Int64, Int64) -> @94493486d51ad13f.QStatus_e5e433a5ef86 raise @core.WindowsError
+
+pub fn alljoyn_abouticon_setcontent_frommsgarg_raw(Int64, Int64) -> Int
+
+pub fn alljoyn_abouticon_setcontent_raw(Int64, @core.RawAddress, @core.RawAddress, UInt64, UInt) -> Int
+
+pub fn alljoyn_abouticon_seturl(Int64, @strings.PStr, @strings.PStr) -> @94493486d51ad13f.QStatus_e5e433a5ef86 raise @core.WindowsError
+
+pub fn alljoyn_abouticon_seturl_raw(Int64, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn alljoyn_abouticonobj_create(Int64, Int64) -> Int64 raise @core.WindowsError
+
+pub fn alljoyn_abouticonobj_create_raw(Int64, Int64) -> Int64
+
+pub fn alljoyn_abouticonobj_destroy(Int64) -> Unit raise @core.WindowsError
+
+pub fn alljoyn_abouticonobj_destroy_raw(Int64) -> Unit
+
+pub fn alljoyn_abouticonproxy_create(Int64, @strings.PStr, UInt) -> Int64 raise @core.WindowsError
+
+pub fn alljoyn_abouticonproxy_create_raw(Int64, @core.RawAddress, UInt) -> Int64
+
+pub fn alljoyn_abouticonproxy_destroy(Int64) -> Unit raise @core.WindowsError
+
+pub fn alljoyn_abouticonproxy_destroy_raw(Int64) -> Unit
+
+pub fn alljoyn_abouticonproxy_geticon(Int64, Int64) -> @94493486d51ad13f.QStatus_e5e433a5ef86 raise @core.WindowsError
+
+pub fn alljoyn_abouticonproxy_geticon_raw(Int64, Int64) -> Int
+
+pub fn alljoyn_abouticonproxy_getversion(Int64, @core.RawAddress) -> @94493486d51ad13f.QStatus_e5e433a5ef86 raise @core.WindowsError
+
+pub fn alljoyn_abouticonproxy_getversion_raw(Int64, @core.RawAddress) -> Int
+
+pub fn alljoyn_aboutlistener_create(@core.RawAddress, @core.RawAddress) -> Int64 raise @core.WindowsError
+
+pub fn alljoyn_aboutlistener_create_raw(@core.RawAddress, @core.RawAddress) -> Int64
+
+pub fn alljoyn_aboutlistener_destroy(Int64) -> Unit raise @core.WindowsError
+
+pub fn alljoyn_aboutlistener_destroy_raw(Int64) -> Unit
+
+pub fn alljoyn_aboutobj_announce(Int64, UInt16, Int64) -> @94493486d51ad13f.QStatus_e5e433a5ef86 raise @core.WindowsError
+
+pub fn alljoyn_aboutobj_announce_raw(Int64, UInt, Int64) -> Int
+
+pub fn alljoyn_aboutobj_announce_using_datalistener(Int64, UInt16, Int64) -> @94493486d51ad13f.QStatus_e5e433a5ef86 raise @core.WindowsError
+
+pub fn alljoyn_aboutobj_announce_using_datalistener_raw(Int64, UInt, Int64) -> Int
+
+pub fn alljoyn_aboutobj_create(Int64, @94493486d51ad13f.AlljoynAboutAnnounceflag_7774a77d05c7) -> Int64 raise @core.WindowsError
+
+pub fn alljoyn_aboutobj_create_raw(Int64, Int) -> Int64
+
+pub fn alljoyn_aboutobj_destroy(Int64) -> Unit raise @core.WindowsError
+
+pub fn alljoyn_aboutobj_destroy_raw(Int64) -> Unit
+
+pub fn alljoyn_aboutobj_unannounce(Int64) -> @94493486d51ad13f.QStatus_e5e433a5ef86 raise @core.WindowsError
+
+pub fn alljoyn_aboutobj_unannounce_raw(Int64) -> Int
+
+pub fn alljoyn_aboutobjectdescription_clear(Int64) -> Unit raise @core.WindowsError
+
+pub fn alljoyn_aboutobjectdescription_clear_raw(Int64) -> Unit
+
+pub fn alljoyn_aboutobjectdescription_create() -> Int64 raise @core.WindowsError
+
+pub fn alljoyn_aboutobjectdescription_create_full(Int64) -> Int64 raise @core.WindowsError
+
+pub fn alljoyn_aboutobjectdescription_create_full_raw(Int64) -> Int64
+
+pub fn alljoyn_aboutobjectdescription_create_raw() -> Int64
+
+pub fn alljoyn_aboutobjectdescription_createfrommsgarg(Int64, Int64) -> @94493486d51ad13f.QStatus_e5e433a5ef86 raise @core.WindowsError
+
+pub fn alljoyn_aboutobjectdescription_createfrommsgarg_raw(Int64, Int64) -> Int
+
+pub fn alljoyn_aboutobjectdescription_destroy(Int64) -> Unit raise @core.WindowsError
+
+pub fn alljoyn_aboutobjectdescription_destroy_raw(Int64) -> Unit
+
+pub fn alljoyn_aboutobjectdescription_getinterfacepaths(Int64, @strings.PStr, @core.RawAddress, UInt64) -> UInt64 raise @core.WindowsError
+
+pub fn alljoyn_aboutobjectdescription_getinterfacepaths_raw(Int64, @core.RawAddress, @core.RawAddress, UInt64) -> UInt64
+
+pub fn alljoyn_aboutobjectdescription_getinterfaces(Int64, @strings.PStr, @core.RawAddress, UInt64) -> UInt64 raise @core.WindowsError
+
+pub fn alljoyn_aboutobjectdescription_getinterfaces_raw(Int64, @core.RawAddress, @core.RawAddress, UInt64) -> UInt64
+
+pub fn alljoyn_aboutobjectdescription_getmsgarg(Int64, Int64) -> @94493486d51ad13f.QStatus_e5e433a5ef86 raise @core.WindowsError
+
+pub fn alljoyn_aboutobjectdescription_getmsgarg_raw(Int64, Int64) -> Int
+
+pub fn alljoyn_aboutobjectdescription_getpaths(Int64, @core.RawAddress, UInt64) -> UInt64 raise @core.WindowsError
+
+pub fn alljoyn_aboutobjectdescription_getpaths_raw(Int64, @core.RawAddress, UInt64) -> UInt64
+
+pub fn alljoyn_aboutobjectdescription_hasinterface(Int64, @strings.PStr) -> Byte raise @core.WindowsError
+
+pub fn alljoyn_aboutobjectdescription_hasinterface_raw(Int64, @core.RawAddress) -> UInt
+
+pub fn alljoyn_aboutobjectdescription_hasinterfaceatpath(Int64, @strings.PStr, @strings.PStr) -> Byte raise @core.WindowsError
+
+pub fn alljoyn_aboutobjectdescription_hasinterfaceatpath_raw(Int64, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn alljoyn_aboutobjectdescription_haspath(Int64, @strings.PStr) -> Byte raise @core.WindowsError
+
+pub fn alljoyn_aboutobjectdescription_haspath_raw(Int64, @core.RawAddress) -> UInt
+
+pub fn alljoyn_aboutproxy_create(Int64, @strings.PStr, UInt) -> Int64 raise @core.WindowsError
+
+pub fn alljoyn_aboutproxy_create_raw(Int64, @core.RawAddress, UInt) -> Int64
+
+pub fn alljoyn_aboutproxy_destroy(Int64) -> Unit raise @core.WindowsError
+
+pub fn alljoyn_aboutproxy_destroy_raw(Int64) -> Unit
+
+pub fn alljoyn_aboutproxy_getaboutdata(Int64, @strings.PStr, Int64) -> @94493486d51ad13f.QStatus_e5e433a5ef86 raise @core.WindowsError
+
+pub fn alljoyn_aboutproxy_getaboutdata_raw(Int64, @core.RawAddress, Int64) -> Int
+
+pub fn alljoyn_aboutproxy_getobjectdescription(Int64, Int64) -> @94493486d51ad13f.QStatus_e5e433a5ef86 raise @core.WindowsError
+
+pub fn alljoyn_aboutproxy_getobjectdescription_raw(Int64, Int64) -> Int
+
+pub fn alljoyn_aboutproxy_getversion(Int64, @core.RawAddress) -> @94493486d51ad13f.QStatus_e5e433a5ef86 raise @core.WindowsError
+
+pub fn alljoyn_aboutproxy_getversion_raw(Int64, @core.RawAddress) -> Int
+
+pub fn alljoyn_applicationstatelistener_create(@core.RawAddress, @core.RawAddress) -> Int64 raise @core.WindowsError
+
+pub fn alljoyn_applicationstatelistener_create_raw(@core.RawAddress, @core.RawAddress) -> Int64
+
+pub fn alljoyn_applicationstatelistener_destroy(Int64) -> Unit raise @core.WindowsError
+
+pub fn alljoyn_applicationstatelistener_destroy_raw(Int64) -> Unit
+
+pub fn alljoyn_authlistener_create(@94493486d51ad13f.AlljoynAuthlistenerCallbacks_451d4ba58062, @core.RawAddress) -> Int64 raise @core.WindowsError
+
+pub fn alljoyn_authlistener_create_raw(@core.RawAddress, @core.RawAddress) -> Int64
+
+pub fn alljoyn_authlistener_destroy(Int64) -> Unit raise @core.WindowsError
+
+pub fn alljoyn_authlistener_destroy_raw(Int64) -> Unit
+
+pub fn alljoyn_authlistener_requestcredentialsresponse(Int64, @core.RawAddress, Int, Int64) -> @94493486d51ad13f.QStatus_e5e433a5ef86 raise @core.WindowsError
+
+pub fn alljoyn_authlistener_requestcredentialsresponse_raw(Int64, @core.RawAddress, Int, Int64) -> Int
+
+pub fn alljoyn_authlistener_setsharedsecret(Int64, @core.RawAddress, UInt64) -> @94493486d51ad13f.QStatus_e5e433a5ef86 raise @core.WindowsError
+
+pub fn alljoyn_authlistener_setsharedsecret_raw(Int64, @core.RawAddress, UInt64) -> Int
+
+pub fn alljoyn_authlistener_verifycredentialsresponse(Int64, @core.RawAddress, Int) -> @94493486d51ad13f.QStatus_e5e433a5ef86 raise @core.WindowsError
+
+pub fn alljoyn_authlistener_verifycredentialsresponse_raw(Int64, @core.RawAddress, Int) -> Int
+
+pub fn alljoyn_authlistenerasync_create(@94493486d51ad13f.AlljoynAuthlistenerasyncCallbacks_91a80019754e, @core.RawAddress) -> Int64 raise @core.WindowsError
+
+pub fn alljoyn_authlistenerasync_create_raw(@core.RawAddress, @core.RawAddress) -> Int64
+
+pub fn alljoyn_authlistenerasync_destroy(Int64) -> Unit raise @core.WindowsError
+
+pub fn alljoyn_authlistenerasync_destroy_raw(Int64) -> Unit
+
+pub fn alljoyn_autopinger_adddestination(Int64, @strings.PStr, @strings.PStr) -> @94493486d51ad13f.QStatus_e5e433a5ef86 raise @core.WindowsError
+
+pub fn alljoyn_autopinger_adddestination_raw(Int64, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn alljoyn_autopinger_addpinggroup(Int64, @strings.PStr, Int64, UInt) -> Unit raise @core.WindowsError
+
+pub fn alljoyn_autopinger_addpinggroup_raw(Int64, @core.RawAddress, Int64, UInt) -> Unit
+
+pub fn alljoyn_autopinger_create(Int64) -> Int64 raise @core.WindowsError
+
+pub fn alljoyn_autopinger_create_raw(Int64) -> Int64
+
+pub fn alljoyn_autopinger_destroy(Int64) -> Unit raise @core.WindowsError
+
+pub fn alljoyn_autopinger_destroy_raw(Int64) -> Unit
+
+pub fn alljoyn_autopinger_pause(Int64) -> Unit raise @core.WindowsError
+
+pub fn alljoyn_autopinger_pause_raw(Int64) -> Unit
+
+pub fn alljoyn_autopinger_removedestination(Int64, @strings.PStr, @strings.PStr, Int) -> @94493486d51ad13f.QStatus_e5e433a5ef86 raise @core.WindowsError
+
+pub fn alljoyn_autopinger_removedestination_raw(Int64, @core.RawAddress, @core.RawAddress, Int) -> Int
+
+pub fn alljoyn_autopinger_removepinggroup(Int64, @strings.PStr) -> Unit raise @core.WindowsError
+
+pub fn alljoyn_autopinger_removepinggroup_raw(Int64, @core.RawAddress) -> Unit
+
+pub fn alljoyn_autopinger_resume(Int64) -> Unit raise @core.WindowsError
+
+pub fn alljoyn_autopinger_resume_raw(Int64) -> Unit
+
+pub fn alljoyn_autopinger_setpinginterval(Int64, @strings.PStr, UInt) -> @94493486d51ad13f.QStatus_e5e433a5ef86 raise @core.WindowsError
+
+pub fn alljoyn_autopinger_setpinginterval_raw(Int64, @core.RawAddress, UInt) -> Int
+
+pub let alljoyn_big_endian : UInt
+
+pub fn alljoyn_busattachment_addlogonentry(Int64, @strings.PStr, @strings.PStr, @strings.PStr) -> @94493486d51ad13f.QStatus_e5e433a5ef86 raise @core.WindowsError
+
+pub fn alljoyn_busattachment_addlogonentry_raw(Int64, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn alljoyn_busattachment_addmatch(Int64, @strings.PStr) -> @94493486d51ad13f.QStatus_e5e433a5ef86 raise @core.WindowsError
+
+pub fn alljoyn_busattachment_addmatch_raw(Int64, @core.RawAddress) -> Int
+
+pub fn alljoyn_busattachment_advertisename(Int64, @strings.PStr, UInt16) -> @94493486d51ad13f.QStatus_e5e433a5ef86 raise @core.WindowsError
+
+pub fn alljoyn_busattachment_advertisename_raw(Int64, @core.RawAddress, UInt) -> Int
+
+pub fn alljoyn_busattachment_bindsessionport(Int64, @core.RawAddress, Int64, Int64) -> @94493486d51ad13f.QStatus_e5e433a5ef86 raise @core.WindowsError
+
+pub fn alljoyn_busattachment_bindsessionport_raw(Int64, @core.RawAddress, Int64, Int64) -> Int
+
+pub fn alljoyn_busattachment_canceladvertisename(Int64, @strings.PStr, UInt16) -> @94493486d51ad13f.QStatus_e5e433a5ef86 raise @core.WindowsError
+
+pub fn alljoyn_busattachment_canceladvertisename_raw(Int64, @core.RawAddress, UInt) -> Int
+
+pub fn alljoyn_busattachment_cancelfindadvertisedname(Int64, @strings.PStr) -> @94493486d51ad13f.QStatus_e5e433a5ef86 raise @core.WindowsError
+
+pub fn alljoyn_busattachment_cancelfindadvertisedname_raw(Int64, @core.RawAddress) -> Int
+
+pub fn alljoyn_busattachment_cancelfindadvertisednamebytransport(Int64, @strings.PStr, UInt16) -> @94493486d51ad13f.QStatus_e5e433a5ef86 raise @core.WindowsError
+
+pub fn alljoyn_busattachment_cancelfindadvertisednamebytransport_raw(Int64, @core.RawAddress, UInt) -> Int
+
+pub fn alljoyn_busattachment_cancelwhoimplements_interface(Int64, @strings.PStr) -> @94493486d51ad13f.QStatus_e5e433a5ef86 raise @core.WindowsError
+
+pub fn alljoyn_busattachment_cancelwhoimplements_interface_raw(Int64, @core.RawAddress) -> Int
+
+pub fn alljoyn_busattachment_cancelwhoimplements_interfaces(Int64, @core.RawAddress, UInt64) -> @94493486d51ad13f.QStatus_e5e433a5ef86 raise @core.WindowsError
+
+pub fn alljoyn_busattachment_cancelwhoimplements_interfaces_raw(Int64, @core.RawAddress, UInt64) -> Int
+
+pub fn alljoyn_busattachment_clearkeys(Int64, @strings.PStr) -> @94493486d51ad13f.QStatus_e5e433a5ef86 raise @core.WindowsError
+
+pub fn alljoyn_busattachment_clearkeys_raw(Int64, @core.RawAddress) -> Int
+
+pub fn alljoyn_busattachment_clearkeystore(Int64) -> Unit raise @core.WindowsError
+
+pub fn alljoyn_busattachment_clearkeystore_raw(Int64) -> Unit
+
+pub fn alljoyn_busattachment_connect(Int64, @strings.PStr) -> @94493486d51ad13f.QStatus_e5e433a5ef86 raise @core.WindowsError
+
+pub fn alljoyn_busattachment_connect_raw(Int64, @core.RawAddress) -> Int
+
+pub fn alljoyn_busattachment_create(@strings.PStr, Int) -> Int64 raise @core.WindowsError
+
+pub fn alljoyn_busattachment_create_concurrency(@strings.PStr, Int, UInt) -> Int64 raise @core.WindowsError
+
+pub fn alljoyn_busattachment_create_concurrency_raw(@core.RawAddress, Int, UInt) -> Int64
+
+pub fn alljoyn_busattachment_create_raw(@core.RawAddress, Int) -> Int64
+
+pub fn alljoyn_busattachment_createinterface(Int64, @strings.PStr, @core.RawAddress) -> @94493486d51ad13f.QStatus_e5e433a5ef86 raise @core.WindowsError
+
+pub fn alljoyn_busattachment_createinterface_raw(Int64, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn alljoyn_busattachment_createinterface_secure(Int64, @strings.PStr, @core.RawAddress, @94493486d51ad13f.AlljoynInterfacedescriptionSecuritypolicy_5efb3e2260a7) -> @94493486d51ad13f.QStatus_e5e433a5ef86 raise @core.WindowsError
+
+pub fn alljoyn_busattachment_createinterface_secure_raw(Int64, @core.RawAddress, @core.RawAddress, Int) -> Int
+
+pub fn alljoyn_busattachment_createinterfacesfromxml(Int64, @strings.PStr) -> @94493486d51ad13f.QStatus_e5e433a5ef86 raise @core.WindowsError
+
+pub fn alljoyn_busattachment_createinterfacesfromxml_raw(Int64, @core.RawAddress) -> Int
+
+pub fn alljoyn_busattachment_deletedefaultkeystore(@strings.PStr) -> @94493486d51ad13f.QStatus_e5e433a5ef86 raise @core.WindowsError
+
+pub fn alljoyn_busattachment_deletedefaultkeystore_raw(@core.RawAddress) -> Int
+
+pub fn alljoyn_busattachment_deleteinterface(Int64, Int64) -> @94493486d51ad13f.QStatus_e5e433a5ef86 raise @core.WindowsError
+
+pub fn alljoyn_busattachment_deleteinterface_raw(Int64, Int64) -> Int
+
+pub fn alljoyn_busattachment_destroy(Int64) -> Unit raise @core.WindowsError
+
+pub fn alljoyn_busattachment_destroy_raw(Int64) -> Unit
+
+pub fn alljoyn_busattachment_disconnect(Int64, @strings.PStr) -> @94493486d51ad13f.QStatus_e5e433a5ef86 raise @core.WindowsError
+
+pub fn alljoyn_busattachment_disconnect_raw(Int64, @core.RawAddress) -> Int
+
+pub fn alljoyn_busattachment_enableconcurrentcallbacks(Int64) -> Unit raise @core.WindowsError
+
+pub fn alljoyn_busattachment_enableconcurrentcallbacks_raw(Int64) -> Unit
+
+pub fn alljoyn_busattachment_enablepeersecurity(Int64, @strings.PStr, Int64, @strings.PStr, Int) -> @94493486d51ad13f.QStatus_e5e433a5ef86 raise @core.WindowsError
+
+pub fn alljoyn_busattachment_enablepeersecurity_raw(Int64, @core.RawAddress, Int64, @core.RawAddress, Int) -> Int
+
+pub fn alljoyn_busattachment_enablepeersecuritywithpermissionconfigurationlistener(Int64, @strings.PStr, Int64, @strings.PStr, Int, Int64) -> @94493486d51ad13f.QStatus_e5e433a5ef86 raise @core.WindowsError
+
+pub fn alljoyn_busattachment_enablepeersecuritywithpermissionconfigurationlistener_raw(Int64, @core.RawAddress, Int64, @core.RawAddress, Int, Int64) -> Int
+
+pub fn alljoyn_busattachment_findadvertisedname(Int64, @strings.PStr) -> @94493486d51ad13f.QStatus_e5e433a5ef86 raise @core.WindowsError
+
+pub fn alljoyn_busattachment_findadvertisedname_raw(Int64, @core.RawAddress) -> Int
+
+pub fn alljoyn_busattachment_findadvertisednamebytransport(Int64, @strings.PStr, UInt16) -> @94493486d51ad13f.QStatus_e5e433a5ef86 raise @core.WindowsError
+
+pub fn alljoyn_busattachment_findadvertisednamebytransport_raw(Int64, @core.RawAddress, UInt) -> Int
+
+pub fn alljoyn_busattachment_getalljoyndebugobj(Int64) -> Int64 raise @core.WindowsError
+
+pub fn alljoyn_busattachment_getalljoyndebugobj_raw(Int64) -> Int64
+
+pub fn alljoyn_busattachment_getalljoynproxyobj(Int64) -> Int64 raise @core.WindowsError
+
+pub fn alljoyn_busattachment_getalljoynproxyobj_raw(Int64) -> Int64
+
+pub fn alljoyn_busattachment_getconcurrency(Int64) -> UInt raise @core.WindowsError
+
+pub fn alljoyn_busattachment_getconcurrency_raw(Int64) -> UInt
+
+pub fn alljoyn_busattachment_getconnectspec(Int64) -> @core.RawAddress raise @core.WindowsError
+
+pub fn alljoyn_busattachment_getconnectspec_raw(Int64) -> @core.RawAddress
+
+pub fn alljoyn_busattachment_getdbusproxyobj(Int64) -> Int64 raise @core.WindowsError
+
+pub fn alljoyn_busattachment_getdbusproxyobj_raw(Int64) -> Int64
+
+pub fn alljoyn_busattachment_getglobalguidstring(Int64) -> @core.RawAddress raise @core.WindowsError
+
+pub fn alljoyn_busattachment_getglobalguidstring_raw(Int64) -> @core.RawAddress
+
+pub fn alljoyn_busattachment_getinterface(Int64, @strings.PStr) -> Int64 raise @core.WindowsError
+
+pub fn alljoyn_busattachment_getinterface_raw(Int64, @core.RawAddress) -> Int64
+
+pub fn alljoyn_busattachment_getinterfaces(Int64, @core.RawAddress, UInt64) -> UInt64 raise @core.WindowsError
+
+pub fn alljoyn_busattachment_getinterfaces_raw(Int64, @core.RawAddress, UInt64) -> UInt64
+
+pub fn alljoyn_busattachment_getkeyexpiration(Int64, @strings.PStr, @core.RawAddress) -> @94493486d51ad13f.QStatus_e5e433a5ef86 raise @core.WindowsError
+
+pub fn alljoyn_busattachment_getkeyexpiration_raw(Int64, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn alljoyn_busattachment_getpeerguid(Int64, @strings.PStr, @core.RawAddress, @core.RawAddress) -> @94493486d51ad13f.QStatus_e5e433a5ef86 raise @core.WindowsError
+
+pub fn alljoyn_busattachment_getpeerguid_raw(Int64, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn alljoyn_busattachment_getpermissionconfigurator(Int64) -> Int64 raise @core.WindowsError
+
+pub fn alljoyn_busattachment_getpermissionconfigurator_raw(Int64) -> Int64
+
+pub fn alljoyn_busattachment_gettimestamp() -> UInt raise @core.WindowsError
+
+pub fn alljoyn_busattachment_gettimestamp_raw() -> UInt
+
+pub fn alljoyn_busattachment_getuniquename(Int64) -> @core.RawAddress raise @core.WindowsError
+
+pub fn alljoyn_busattachment_getuniquename_raw(Int64) -> @core.RawAddress
+
+pub fn alljoyn_busattachment_isconnected(Int64) -> Int raise @core.WindowsError
+
+pub fn alljoyn_busattachment_isconnected_raw(Int64) -> Int
+
+pub fn alljoyn_busattachment_ispeersecurityenabled(Int64) -> Int raise @core.WindowsError
+
+pub fn alljoyn_busattachment_ispeersecurityenabled_raw(Int64) -> Int
+
+pub fn alljoyn_busattachment_isstarted(Int64) -> Int raise @core.WindowsError
+
+pub fn alljoyn_busattachment_isstarted_raw(Int64) -> Int
+
+pub fn alljoyn_busattachment_isstopping(Int64) -> Int raise @core.WindowsError
+
+pub fn alljoyn_busattachment_isstopping_raw(Int64) -> Int
+
+pub fn alljoyn_busattachment_join(Int64) -> @94493486d51ad13f.QStatus_e5e433a5ef86 raise @core.WindowsError
+
+pub fn alljoyn_busattachment_join_raw(Int64) -> Int
+
+pub fn alljoyn_busattachment_joinsession(Int64, @strings.PStr, UInt16, Int64, @core.RawAddress, Int64) -> @94493486d51ad13f.QStatus_e5e433a5ef86 raise @core.WindowsError
+
+pub fn alljoyn_busattachment_joinsession_raw(Int64, @core.RawAddress, UInt, Int64, @core.RawAddress, Int64) -> Int
+
+pub fn alljoyn_busattachment_joinsessionasync(Int64, @strings.PStr, UInt16, Int64, Int64, @core.RawAddress, @core.RawAddress) -> @94493486d51ad13f.QStatus_e5e433a5ef86 raise @core.WindowsError
+
+pub fn alljoyn_busattachment_joinsessionasync_raw(Int64, @core.RawAddress, UInt, Int64, Int64, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn alljoyn_busattachment_leavesession(Int64, UInt) -> @94493486d51ad13f.QStatus_e5e433a5ef86 raise @core.WindowsError
+
+pub fn alljoyn_busattachment_leavesession_raw(Int64, UInt) -> Int
+
+pub fn alljoyn_busattachment_namehasowner(Int64, @strings.PStr, @core.RawAddress) -> @94493486d51ad13f.QStatus_e5e433a5ef86 raise @core.WindowsError
+
+pub fn alljoyn_busattachment_namehasowner_raw(Int64, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn alljoyn_busattachment_ping(Int64, @strings.PStr, UInt) -> @94493486d51ad13f.QStatus_e5e433a5ef86 raise @core.WindowsError
+
+pub fn alljoyn_busattachment_ping_raw(Int64, @core.RawAddress, UInt) -> Int
+
+pub fn alljoyn_busattachment_registeraboutlistener(Int64, Int64) -> Unit raise @core.WindowsError
+
+pub fn alljoyn_busattachment_registeraboutlistener_raw(Int64, Int64) -> Unit
+
+pub fn alljoyn_busattachment_registerapplicationstatelistener(Int64, Int64) -> @94493486d51ad13f.QStatus_e5e433a5ef86 raise @core.WindowsError
+
+pub fn alljoyn_busattachment_registerapplicationstatelistener_raw(Int64, Int64) -> Int
+
+pub fn alljoyn_busattachment_registerbuslistener(Int64, Int64) -> Unit raise @core.WindowsError
+
+pub fn alljoyn_busattachment_registerbuslistener_raw(Int64, Int64) -> Unit
+
+pub fn alljoyn_busattachment_registerbusobject(Int64, Int64) -> @94493486d51ad13f.QStatus_e5e433a5ef86 raise @core.WindowsError
+
+pub fn alljoyn_busattachment_registerbusobject_raw(Int64, Int64) -> Int
+
+pub fn alljoyn_busattachment_registerbusobject_secure(Int64, Int64) -> @94493486d51ad13f.QStatus_e5e433a5ef86 raise @core.WindowsError
+
+pub fn alljoyn_busattachment_registerbusobject_secure_raw(Int64, Int64) -> Int
+
+pub fn alljoyn_busattachment_registerkeystorelistener(Int64, Int64) -> @94493486d51ad13f.QStatus_e5e433a5ef86 raise @core.WindowsError
+
+pub fn alljoyn_busattachment_registerkeystorelistener_raw(Int64, Int64) -> Int
+
+pub fn alljoyn_busattachment_registersignalhandler(Int64, @core.RawAddress, @94493486d51ad13f.AlljoynInterfacedescriptionMember_c054954b600b, @strings.PStr) -> @94493486d51ad13f.QStatus_e5e433a5ef86 raise @core.WindowsError
+
+pub fn alljoyn_busattachment_registersignalhandler_raw(Int64, @core.RawAddress, Bytes, @core.RawAddress) -> Int
+
+pub fn alljoyn_busattachment_registersignalhandlerwithrule(Int64, @core.RawAddress, @94493486d51ad13f.AlljoynInterfacedescriptionMember_c054954b600b, @strings.PStr) -> @94493486d51ad13f.QStatus_e5e433a5ef86 raise @core.WindowsError
+
+pub fn alljoyn_busattachment_registersignalhandlerwithrule_raw(Int64, @core.RawAddress, Bytes, @core.RawAddress) -> Int
+
+pub fn alljoyn_busattachment_releasename(Int64, @strings.PStr) -> @94493486d51ad13f.QStatus_e5e433a5ef86 raise @core.WindowsError
+
+pub fn alljoyn_busattachment_releasename_raw(Int64, @core.RawAddress) -> Int
+
+pub fn alljoyn_busattachment_reloadkeystore(Int64) -> @94493486d51ad13f.QStatus_e5e433a5ef86 raise @core.WindowsError
+
+pub fn alljoyn_busattachment_reloadkeystore_raw(Int64) -> Int
+
+pub fn alljoyn_busattachment_removematch(Int64, @strings.PStr) -> @94493486d51ad13f.QStatus_e5e433a5ef86 raise @core.WindowsError
+
+pub fn alljoyn_busattachment_removematch_raw(Int64, @core.RawAddress) -> Int
+
+pub fn alljoyn_busattachment_removesessionmember(Int64, UInt, @strings.PStr) -> @94493486d51ad13f.QStatus_e5e433a5ef86 raise @core.WindowsError
+
+pub fn alljoyn_busattachment_removesessionmember_raw(Int64, UInt, @core.RawAddress) -> Int
+
+pub fn alljoyn_busattachment_requestname(Int64, @strings.PStr, UInt) -> @94493486d51ad13f.QStatus_e5e433a5ef86 raise @core.WindowsError
+
+pub fn alljoyn_busattachment_requestname_raw(Int64, @core.RawAddress, UInt) -> Int
+
+pub fn alljoyn_busattachment_secureconnection(Int64, @strings.PStr, Int) -> @94493486d51ad13f.QStatus_e5e433a5ef86 raise @core.WindowsError
+
+pub fn alljoyn_busattachment_secureconnection_raw(Int64, @core.RawAddress, Int) -> Int
+
+pub fn alljoyn_busattachment_secureconnectionasync(Int64, @strings.PStr, Int) -> @94493486d51ad13f.QStatus_e5e433a5ef86 raise @core.WindowsError
+
+pub fn alljoyn_busattachment_secureconnectionasync_raw(Int64, @core.RawAddress, Int) -> Int
+
+pub fn alljoyn_busattachment_setdaemondebug(Int64, @strings.PStr, UInt) -> @94493486d51ad13f.QStatus_e5e433a5ef86 raise @core.WindowsError
+
+pub fn alljoyn_busattachment_setdaemondebug_raw(Int64, @core.RawAddress, UInt) -> Int
+
+pub fn alljoyn_busattachment_setkeyexpiration(Int64, @strings.PStr, UInt) -> @94493486d51ad13f.QStatus_e5e433a5ef86 raise @core.WindowsError
+
+pub fn alljoyn_busattachment_setkeyexpiration_raw(Int64, @core.RawAddress, UInt) -> Int
+
+pub fn alljoyn_busattachment_setlinktimeout(Int64, UInt, @core.RawAddress) -> @94493486d51ad13f.QStatus_e5e433a5ef86 raise @core.WindowsError
+
+pub fn alljoyn_busattachment_setlinktimeout_raw(Int64, UInt, @core.RawAddress) -> Int
+
+pub fn alljoyn_busattachment_setlinktimeoutasync(Int64, UInt, UInt, @core.RawAddress, @core.RawAddress) -> @94493486d51ad13f.QStatus_e5e433a5ef86 raise @core.WindowsError
+
+pub fn alljoyn_busattachment_setlinktimeoutasync_raw(Int64, UInt, UInt, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn alljoyn_busattachment_setsessionlistener(Int64, UInt, Int64) -> @94493486d51ad13f.QStatus_e5e433a5ef86 raise @core.WindowsError
+
+pub fn alljoyn_busattachment_setsessionlistener_raw(Int64, UInt, Int64) -> Int
+
+pub fn alljoyn_busattachment_start(Int64) -> @94493486d51ad13f.QStatus_e5e433a5ef86 raise @core.WindowsError
+
+pub fn alljoyn_busattachment_start_raw(Int64) -> Int
+
+pub fn alljoyn_busattachment_stop(Int64) -> @94493486d51ad13f.QStatus_e5e433a5ef86 raise @core.WindowsError
+
+pub fn alljoyn_busattachment_stop_raw(Int64) -> Int
+
+pub fn alljoyn_busattachment_unbindsessionport(Int64, UInt16) -> @94493486d51ad13f.QStatus_e5e433a5ef86 raise @core.WindowsError
+
+pub fn alljoyn_busattachment_unbindsessionport_raw(Int64, UInt) -> Int
+
+pub fn alljoyn_busattachment_unregisteraboutlistener(Int64, Int64) -> Unit raise @core.WindowsError
+
+pub fn alljoyn_busattachment_unregisteraboutlistener_raw(Int64, Int64) -> Unit
+
+pub fn alljoyn_busattachment_unregisterallaboutlisteners(Int64) -> Unit raise @core.WindowsError
+
+pub fn alljoyn_busattachment_unregisterallaboutlisteners_raw(Int64) -> Unit
+
+pub fn alljoyn_busattachment_unregisterallhandlers(Int64) -> @94493486d51ad13f.QStatus_e5e433a5ef86 raise @core.WindowsError
+
+pub fn alljoyn_busattachment_unregisterallhandlers_raw(Int64) -> Int
+
+pub fn alljoyn_busattachment_unregisterapplicationstatelistener(Int64, Int64) -> @94493486d51ad13f.QStatus_e5e433a5ef86 raise @core.WindowsError
+
+pub fn alljoyn_busattachment_unregisterapplicationstatelistener_raw(Int64, Int64) -> Int
+
+pub fn alljoyn_busattachment_unregisterbuslistener(Int64, Int64) -> Unit raise @core.WindowsError
+
+pub fn alljoyn_busattachment_unregisterbuslistener_raw(Int64, Int64) -> Unit
+
+pub fn alljoyn_busattachment_unregisterbusobject(Int64, Int64) -> Unit raise @core.WindowsError
+
+pub fn alljoyn_busattachment_unregisterbusobject_raw(Int64, Int64) -> Unit
+
+pub fn alljoyn_busattachment_unregistersignalhandler(Int64, @core.RawAddress, @94493486d51ad13f.AlljoynInterfacedescriptionMember_c054954b600b, @strings.PStr) -> @94493486d51ad13f.QStatus_e5e433a5ef86 raise @core.WindowsError
+
+pub fn alljoyn_busattachment_unregistersignalhandler_raw(Int64, @core.RawAddress, Bytes, @core.RawAddress) -> Int
+
+pub fn alljoyn_busattachment_unregistersignalhandlerwithrule(Int64, @core.RawAddress, @94493486d51ad13f.AlljoynInterfacedescriptionMember_c054954b600b, @strings.PStr) -> @94493486d51ad13f.QStatus_e5e433a5ef86 raise @core.WindowsError
+
+pub fn alljoyn_busattachment_unregistersignalhandlerwithrule_raw(Int64, @core.RawAddress, Bytes, @core.RawAddress) -> Int
+
+pub fn alljoyn_busattachment_whoimplements_interface(Int64, @strings.PStr) -> @94493486d51ad13f.QStatus_e5e433a5ef86 raise @core.WindowsError
+
+pub fn alljoyn_busattachment_whoimplements_interface_raw(Int64, @core.RawAddress) -> Int
+
+pub fn alljoyn_busattachment_whoimplements_interfaces(Int64, @core.RawAddress, UInt64) -> @94493486d51ad13f.QStatus_e5e433a5ef86 raise @core.WindowsError
+
+pub fn alljoyn_busattachment_whoimplements_interfaces_raw(Int64, @core.RawAddress, UInt64) -> Int
+
+pub fn alljoyn_buslistener_create(@94493486d51ad13f.AlljoynBuslistenerCallbacks_073775007ccf, @core.RawAddress) -> Int64 raise @core.WindowsError
+
+pub fn alljoyn_buslistener_create_raw(@core.RawAddress, @core.RawAddress) -> Int64
+
+pub fn alljoyn_buslistener_destroy(Int64) -> Unit raise @core.WindowsError
+
+pub fn alljoyn_buslistener_destroy_raw(Int64) -> Unit
+
+pub fn alljoyn_busobject_addinterface(Int64, Int64) -> @94493486d51ad13f.QStatus_e5e433a5ef86 raise @core.WindowsError
+
+pub fn alljoyn_busobject_addinterface_announced(Int64, Int64) -> @94493486d51ad13f.QStatus_e5e433a5ef86 raise @core.WindowsError
+
+pub fn alljoyn_busobject_addinterface_announced_raw(Int64, Int64) -> Int
+
+pub fn alljoyn_busobject_addinterface_raw(Int64, Int64) -> Int
+
+pub fn alljoyn_busobject_addmethodhandler(Int64, @94493486d51ad13f.AlljoynInterfacedescriptionMember_c054954b600b, @core.RawAddress, @core.RawAddress) -> @94493486d51ad13f.QStatus_e5e433a5ef86 raise @core.WindowsError
+
+pub fn alljoyn_busobject_addmethodhandler_raw(Int64, Bytes, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn alljoyn_busobject_addmethodhandlers(Int64, @94493486d51ad13f.AlljoynBusobjectMethodentry_dde488eb33d6, UInt64) -> @94493486d51ad13f.QStatus_e5e433a5ef86 raise @core.WindowsError
+
+pub fn alljoyn_busobject_addmethodhandlers_raw(Int64, @core.RawAddress, UInt64) -> Int
+
+pub fn alljoyn_busobject_cancelsessionlessmessage(Int64, Int64) -> @94493486d51ad13f.QStatus_e5e433a5ef86 raise @core.WindowsError
+
+pub fn alljoyn_busobject_cancelsessionlessmessage_raw(Int64, Int64) -> Int
+
+pub fn alljoyn_busobject_cancelsessionlessmessage_serial(Int64, UInt) -> @94493486d51ad13f.QStatus_e5e433a5ef86 raise @core.WindowsError
+
+pub fn alljoyn_busobject_cancelsessionlessmessage_serial_raw(Int64, UInt) -> Int
+
+pub fn alljoyn_busobject_create(@strings.PStr, Int, @94493486d51ad13f.AlljoynBusobjectCallbacks_27584be71382, @core.RawAddress) -> Int64 raise @core.WindowsError
+
+pub fn alljoyn_busobject_create_raw(@core.RawAddress, Int, @core.RawAddress, @core.RawAddress) -> Int64
+
+pub fn alljoyn_busobject_destroy(Int64) -> Unit raise @core.WindowsError
+
+pub fn alljoyn_busobject_destroy_raw(Int64) -> Unit
+
+pub fn alljoyn_busobject_emitpropertieschanged(Int64, @strings.PStr, @core.RawAddress, UInt64, UInt) -> Unit raise @core.WindowsError
+
+pub fn alljoyn_busobject_emitpropertieschanged_raw(Int64, @core.RawAddress, @core.RawAddress, UInt64, UInt) -> Unit
+
+pub fn alljoyn_busobject_emitpropertychanged(Int64, @strings.PStr, @strings.PStr, Int64, UInt) -> Unit raise @core.WindowsError
+
+pub fn alljoyn_busobject_emitpropertychanged_raw(Int64, @core.RawAddress, @core.RawAddress, Int64, UInt) -> Unit
+
+pub fn alljoyn_busobject_getannouncedinterfacenames(Int64, @core.RawAddress, UInt64) -> UInt64 raise @core.WindowsError
+
+pub fn alljoyn_busobject_getannouncedinterfacenames_raw(Int64, @core.RawAddress, UInt64) -> UInt64
+
+pub fn alljoyn_busobject_getbusattachment(Int64) -> Int64 raise @core.WindowsError
+
+pub fn alljoyn_busobject_getbusattachment_raw(Int64) -> Int64
+
+pub fn alljoyn_busobject_getname(Int64, @core.RawAddress, UInt64) -> UInt64 raise @core.WindowsError
+
+pub fn alljoyn_busobject_getname_raw(Int64, @core.RawAddress, UInt64) -> UInt64
+
+pub fn alljoyn_busobject_getpath(Int64) -> @core.RawAddress raise @core.WindowsError
+
+pub fn alljoyn_busobject_getpath_raw(Int64) -> @core.RawAddress
+
+pub fn alljoyn_busobject_issecure(Int64) -> Int raise @core.WindowsError
+
+pub fn alljoyn_busobject_issecure_raw(Int64) -> Int
+
+pub fn alljoyn_busobject_methodreply_args(Int64, Int64, Int64, UInt64) -> @94493486d51ad13f.QStatus_e5e433a5ef86 raise @core.WindowsError
+
+pub fn alljoyn_busobject_methodreply_args_raw(Int64, Int64, Int64, UInt64) -> Int
+
+pub fn alljoyn_busobject_methodreply_err(Int64, Int64, @strings.PStr, @strings.PStr) -> @94493486d51ad13f.QStatus_e5e433a5ef86 raise @core.WindowsError
+
+pub fn alljoyn_busobject_methodreply_err_raw(Int64, Int64, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn alljoyn_busobject_methodreply_status(Int64, Int64, @94493486d51ad13f.QStatus_e5e433a5ef86) -> @94493486d51ad13f.QStatus_e5e433a5ef86 raise @core.WindowsError
+
+pub fn alljoyn_busobject_methodreply_status_raw(Int64, Int64, Int) -> Int
+
+pub fn alljoyn_busobject_setannounceflag(Int64, Int64, @94493486d51ad13f.AlljoynAboutAnnounceflag_7774a77d05c7) -> @94493486d51ad13f.QStatus_e5e433a5ef86 raise @core.WindowsError
+
+pub fn alljoyn_busobject_setannounceflag_raw(Int64, Int64, Int) -> Int
+
+pub fn alljoyn_busobject_signal(Int64, @strings.PStr, UInt, @94493486d51ad13f.AlljoynInterfacedescriptionMember_c054954b600b, Int64, UInt64, UInt16, Byte, Int64) -> @94493486d51ad13f.QStatus_e5e433a5ef86 raise @core.WindowsError
+
+pub fn alljoyn_busobject_signal_raw(Int64, @core.RawAddress, UInt, Bytes, Int64, UInt64, UInt, UInt, Int64) -> Int
+
+pub let alljoyn_cred_cert_chain : UInt
+
+pub let alljoyn_cred_expiration : UInt
+
+pub let alljoyn_cred_logon_entry : UInt
+
+pub let alljoyn_cred_new_password : UInt
+
+pub let alljoyn_cred_one_time_pwd : UInt
+
+pub let alljoyn_cred_password : UInt
+
+pub let alljoyn_cred_private_key : UInt
+
+pub let alljoyn_cred_user_name : UInt
+
+pub fn alljoyn_credentials_clear(Int64) -> Unit raise @core.WindowsError
+
+pub fn alljoyn_credentials_clear_raw(Int64) -> Unit
+
+pub fn alljoyn_credentials_create() -> Int64 raise @core.WindowsError
+
+pub fn alljoyn_credentials_create_raw() -> Int64
+
+pub fn alljoyn_credentials_destroy(Int64) -> Unit raise @core.WindowsError
+
+pub fn alljoyn_credentials_destroy_raw(Int64) -> Unit
+
+pub fn alljoyn_credentials_getcertchain(Int64) -> @core.RawAddress raise @core.WindowsError
+
+pub fn alljoyn_credentials_getcertchain_raw(Int64) -> @core.RawAddress
+
+pub fn alljoyn_credentials_getexpiration(Int64) -> UInt raise @core.WindowsError
+
+pub fn alljoyn_credentials_getexpiration_raw(Int64) -> UInt
+
+pub fn alljoyn_credentials_getlogonentry(Int64) -> @core.RawAddress raise @core.WindowsError
+
+pub fn alljoyn_credentials_getlogonentry_raw(Int64) -> @core.RawAddress
+
+pub fn alljoyn_credentials_getpassword(Int64) -> @core.RawAddress raise @core.WindowsError
+
+pub fn alljoyn_credentials_getpassword_raw(Int64) -> @core.RawAddress
+
+pub fn alljoyn_credentials_getprivate_key(Int64) -> @core.RawAddress raise @core.WindowsError
+
+pub fn alljoyn_credentials_getprivate_key_raw(Int64) -> @core.RawAddress
+
+pub fn alljoyn_credentials_getusername(Int64) -> @core.RawAddress raise @core.WindowsError
+
+pub fn alljoyn_credentials_getusername_raw(Int64) -> @core.RawAddress
+
+pub fn alljoyn_credentials_isset(Int64, UInt16) -> Int raise @core.WindowsError
+
+pub fn alljoyn_credentials_isset_raw(Int64, UInt) -> Int
+
+pub fn alljoyn_credentials_setcertchain(Int64, @strings.PStr) -> Unit raise @core.WindowsError
+
+pub fn alljoyn_credentials_setcertchain_raw(Int64, @core.RawAddress) -> Unit
+
+pub fn alljoyn_credentials_setexpiration(Int64, UInt) -> Unit raise @core.WindowsError
+
+pub fn alljoyn_credentials_setexpiration_raw(Int64, UInt) -> Unit
+
+pub fn alljoyn_credentials_setlogonentry(Int64, @strings.PStr) -> Unit raise @core.WindowsError
+
+pub fn alljoyn_credentials_setlogonentry_raw(Int64, @core.RawAddress) -> Unit
+
+pub fn alljoyn_credentials_setpassword(Int64, @strings.PStr) -> Unit raise @core.WindowsError
+
+pub fn alljoyn_credentials_setpassword_raw(Int64, @core.RawAddress) -> Unit
+
+pub fn alljoyn_credentials_setprivatekey(Int64, @strings.PStr) -> Unit raise @core.WindowsError
+
+pub fn alljoyn_credentials_setprivatekey_raw(Int64, @core.RawAddress) -> Unit
+
+pub fn alljoyn_credentials_setusername(Int64, @strings.PStr) -> Unit raise @core.WindowsError
+
+pub fn alljoyn_credentials_setusername_raw(Int64, @core.RawAddress) -> Unit
+
+pub let alljoyn_disconnected : UInt
+
+pub fn alljoyn_getbuildinfo() -> @core.RawAddress raise @core.WindowsError
+
+pub fn alljoyn_getbuildinfo_raw() -> @core.RawAddress
+
+pub fn alljoyn_getnumericversion() -> UInt raise @core.WindowsError
+
+pub fn alljoyn_getnumericversion_raw() -> UInt
+
+pub fn alljoyn_getversion() -> @core.RawAddress raise @core.WindowsError
+
+pub fn alljoyn_getversion_raw() -> @core.RawAddress
+
+pub fn alljoyn_init() -> @94493486d51ad13f.QStatus_e5e433a5ef86 raise @core.WindowsError
+
+pub fn alljoyn_init_raw() -> Int
+
+pub fn alljoyn_interfacedescription_activate(Int64) -> Unit raise @core.WindowsError
+
+pub fn alljoyn_interfacedescription_activate_raw(Int64) -> Unit
+
+pub fn alljoyn_interfacedescription_addannotation(Int64, @strings.PStr, @strings.PStr) -> @94493486d51ad13f.QStatus_e5e433a5ef86 raise @core.WindowsError
+
+pub fn alljoyn_interfacedescription_addannotation_raw(Int64, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn alljoyn_interfacedescription_addargannotation(Int64, @strings.PStr, @strings.PStr, @strings.PStr, @strings.PStr) -> @94493486d51ad13f.QStatus_e5e433a5ef86 raise @core.WindowsError
+
+pub fn alljoyn_interfacedescription_addargannotation_raw(Int64, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn alljoyn_interfacedescription_addmember(Int64, @94493486d51ad13f.AlljoynMessagetype_a0298d676d1e, @strings.PStr, @strings.PStr, @strings.PStr, @strings.PStr, Byte) -> @94493486d51ad13f.QStatus_e5e433a5ef86 raise @core.WindowsError
+
+pub fn alljoyn_interfacedescription_addmember_raw(Int64, Int, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, UInt) -> Int
+
+pub fn alljoyn_interfacedescription_addmemberannotation(Int64, @strings.PStr, @strings.PStr, @strings.PStr) -> @94493486d51ad13f.QStatus_e5e433a5ef86 raise @core.WindowsError
+
+pub fn alljoyn_interfacedescription_addmemberannotation_raw(Int64, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn alljoyn_interfacedescription_addmethod(Int64, @strings.PStr, @strings.PStr, @strings.PStr, @strings.PStr, Byte, @strings.PStr) -> @94493486d51ad13f.QStatus_e5e433a5ef86 raise @core.WindowsError
+
+pub fn alljoyn_interfacedescription_addmethod_raw(Int64, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, UInt, @core.RawAddress) -> Int
+
+pub fn alljoyn_interfacedescription_addproperty(Int64, @strings.PStr, @strings.PStr, Byte) -> @94493486d51ad13f.QStatus_e5e433a5ef86 raise @core.WindowsError
+
+pub fn alljoyn_interfacedescription_addproperty_raw(Int64, @core.RawAddress, @core.RawAddress, UInt) -> Int
+
+pub fn alljoyn_interfacedescription_addpropertyannotation(Int64, @strings.PStr, @strings.PStr, @strings.PStr) -> @94493486d51ad13f.QStatus_e5e433a5ef86 raise @core.WindowsError
+
+pub fn alljoyn_interfacedescription_addpropertyannotation_raw(Int64, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn alljoyn_interfacedescription_addsignal(Int64, @strings.PStr, @strings.PStr, @strings.PStr, Byte, @strings.PStr) -> @94493486d51ad13f.QStatus_e5e433a5ef86 raise @core.WindowsError
+
+pub fn alljoyn_interfacedescription_addsignal_raw(Int64, @core.RawAddress, @core.RawAddress, @core.RawAddress, UInt, @core.RawAddress) -> Int
+
+pub fn alljoyn_interfacedescription_eql(Int64, Int64) -> Int raise @core.WindowsError
+
+pub fn alljoyn_interfacedescription_eql_raw(Int64, Int64) -> Int
+
+pub fn alljoyn_interfacedescription_getannotation(Int64, @strings.PStr, @core.RawAddress, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn alljoyn_interfacedescription_getannotation_raw(Int64, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn alljoyn_interfacedescription_getannotationatindex(Int64, UInt64, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn alljoyn_interfacedescription_getannotationatindex_raw(Int64, UInt64, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Unit
+
+pub fn alljoyn_interfacedescription_getannotationscount(Int64) -> UInt64 raise @core.WindowsError
+
+pub fn alljoyn_interfacedescription_getannotationscount_raw(Int64) -> UInt64
+
+pub fn alljoyn_interfacedescription_getargdescriptionforlanguage(Int64, @strings.PStr, @strings.PStr, @core.RawAddress, UInt64, @strings.PStr) -> UInt64 raise @core.WindowsError
+
+pub fn alljoyn_interfacedescription_getargdescriptionforlanguage_raw(Int64, @core.RawAddress, @core.RawAddress, @core.RawAddress, UInt64, @core.RawAddress) -> UInt64
+
+pub fn alljoyn_interfacedescription_getdescriptionforlanguage(Int64, @core.RawAddress, UInt64, @strings.PStr) -> UInt64 raise @core.WindowsError
+
+pub fn alljoyn_interfacedescription_getdescriptionforlanguage_raw(Int64, @core.RawAddress, UInt64, @core.RawAddress) -> UInt64
+
+pub fn alljoyn_interfacedescription_getdescriptionlanguages(Int64, @core.RawAddress, UInt64) -> UInt64 raise @core.WindowsError
+
+pub fn alljoyn_interfacedescription_getdescriptionlanguages2(Int64, @core.RawAddress, UInt64) -> UInt64 raise @core.WindowsError
+
+pub fn alljoyn_interfacedescription_getdescriptionlanguages2_raw(Int64, @core.RawAddress, UInt64) -> UInt64
+
+pub fn alljoyn_interfacedescription_getdescriptionlanguages_raw(Int64, @core.RawAddress, UInt64) -> UInt64
+
+pub fn alljoyn_interfacedescription_getdescriptiontranslationcallback(Int64) -> @core.RawAddress raise @core.WindowsError
+
+pub fn alljoyn_interfacedescription_getdescriptiontranslationcallback_raw(Int64) -> @core.RawAddress
+
+pub fn alljoyn_interfacedescription_getmember(Int64, @strings.PStr, @94493486d51ad13f.AlljoynInterfacedescriptionMember_c054954b600b) -> Int raise @core.WindowsError
+
+pub fn alljoyn_interfacedescription_getmember_raw(Int64, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn alljoyn_interfacedescription_getmemberannotation(Int64, @strings.PStr, @strings.PStr, @core.RawAddress, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn alljoyn_interfacedescription_getmemberannotation_raw(Int64, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn alljoyn_interfacedescription_getmemberargannotation(Int64, @strings.PStr, @strings.PStr, @strings.PStr, @core.RawAddress, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn alljoyn_interfacedescription_getmemberargannotation_raw(Int64, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn alljoyn_interfacedescription_getmemberdescriptionforlanguage(Int64, @strings.PStr, @core.RawAddress, UInt64, @strings.PStr) -> UInt64 raise @core.WindowsError
+
+pub fn alljoyn_interfacedescription_getmemberdescriptionforlanguage_raw(Int64, @core.RawAddress, @core.RawAddress, UInt64, @core.RawAddress) -> UInt64
+
+pub fn alljoyn_interfacedescription_getmembers(Int64, @94493486d51ad13f.AlljoynInterfacedescriptionMember_c054954b600b, UInt64) -> UInt64 raise @core.WindowsError
+
+pub fn alljoyn_interfacedescription_getmembers_raw(Int64, @core.RawAddress, UInt64) -> UInt64
+
+pub fn alljoyn_interfacedescription_getmethod(Int64, @strings.PStr, @94493486d51ad13f.AlljoynInterfacedescriptionMember_c054954b600b) -> Int raise @core.WindowsError
+
+pub fn alljoyn_interfacedescription_getmethod_raw(Int64, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn alljoyn_interfacedescription_getname(Int64) -> @core.RawAddress raise @core.WindowsError
+
+pub fn alljoyn_interfacedescription_getname_raw(Int64) -> @core.RawAddress
+
+pub fn alljoyn_interfacedescription_getproperties(Int64, @94493486d51ad13f.AlljoynInterfacedescriptionProperty_d18094901af0, UInt64) -> UInt64 raise @core.WindowsError
+
+pub fn alljoyn_interfacedescription_getproperties_raw(Int64, @core.RawAddress, UInt64) -> UInt64
+
+pub fn alljoyn_interfacedescription_getproperty(Int64, @strings.PStr, @94493486d51ad13f.AlljoynInterfacedescriptionProperty_d18094901af0) -> Int raise @core.WindowsError
+
+pub fn alljoyn_interfacedescription_getproperty_raw(Int64, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn alljoyn_interfacedescription_getpropertyannotation(Int64, @strings.PStr, @strings.PStr, @core.RawAddress, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn alljoyn_interfacedescription_getpropertyannotation_raw(Int64, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn alljoyn_interfacedescription_getpropertydescriptionforlanguage(Int64, @strings.PStr, @core.RawAddress, UInt64, @strings.PStr) -> UInt64 raise @core.WindowsError
+
+pub fn alljoyn_interfacedescription_getpropertydescriptionforlanguage_raw(Int64, @core.RawAddress, @core.RawAddress, UInt64, @core.RawAddress) -> UInt64
+
+pub fn alljoyn_interfacedescription_getsecuritypolicy(Int64) -> @94493486d51ad13f.AlljoynInterfacedescriptionSecuritypolicy_5efb3e2260a7 raise @core.WindowsError
+
+pub fn alljoyn_interfacedescription_getsecuritypolicy_raw(Int64) -> Int
+
+pub fn alljoyn_interfacedescription_getsignal(Int64, @strings.PStr, @94493486d51ad13f.AlljoynInterfacedescriptionMember_c054954b600b) -> Int raise @core.WindowsError
+
+pub fn alljoyn_interfacedescription_getsignal_raw(Int64, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn alljoyn_interfacedescription_hasdescription(Int64) -> Int raise @core.WindowsError
+
+pub fn alljoyn_interfacedescription_hasdescription_raw(Int64) -> Int
+
+pub fn alljoyn_interfacedescription_hasmember(Int64, @strings.PStr, @strings.PStr, @strings.PStr) -> Int raise @core.WindowsError
+
+pub fn alljoyn_interfacedescription_hasmember_raw(Int64, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn alljoyn_interfacedescription_hasproperties(Int64) -> Int raise @core.WindowsError
+
+pub fn alljoyn_interfacedescription_hasproperties_raw(Int64) -> Int
+
+pub fn alljoyn_interfacedescription_hasproperty(Int64, @strings.PStr) -> Int raise @core.WindowsError
+
+pub fn alljoyn_interfacedescription_hasproperty_raw(Int64, @core.RawAddress) -> Int
+
+pub fn alljoyn_interfacedescription_introspect(Int64, @core.RawAddress, UInt64, UInt64) -> UInt64 raise @core.WindowsError
+
+pub fn alljoyn_interfacedescription_introspect_raw(Int64, @core.RawAddress, UInt64, UInt64) -> UInt64
+
+pub fn alljoyn_interfacedescription_issecure(Int64) -> Int raise @core.WindowsError
+
+pub fn alljoyn_interfacedescription_issecure_raw(Int64) -> Int
+
+pub fn alljoyn_interfacedescription_member_eql(@94493486d51ad13f.AlljoynInterfacedescriptionMember_c054954b600b, @94493486d51ad13f.AlljoynInterfacedescriptionMember_c054954b600b) -> Int raise @core.WindowsError
+
+pub fn alljoyn_interfacedescription_member_eql_raw(Bytes, Bytes) -> Int
+
+pub fn alljoyn_interfacedescription_member_getannotation(@94493486d51ad13f.AlljoynInterfacedescriptionMember_c054954b600b, @strings.PStr, @core.RawAddress, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn alljoyn_interfacedescription_member_getannotation_raw(Bytes, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn alljoyn_interfacedescription_member_getannotationatindex(@94493486d51ad13f.AlljoynInterfacedescriptionMember_c054954b600b, UInt64, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn alljoyn_interfacedescription_member_getannotationatindex_raw(Bytes, UInt64, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Unit
+
+pub fn alljoyn_interfacedescription_member_getannotationscount(@94493486d51ad13f.AlljoynInterfacedescriptionMember_c054954b600b) -> UInt64 raise @core.WindowsError
+
+pub fn alljoyn_interfacedescription_member_getannotationscount_raw(Bytes) -> UInt64
+
+pub fn alljoyn_interfacedescription_member_getargannotation(@94493486d51ad13f.AlljoynInterfacedescriptionMember_c054954b600b, @strings.PStr, @strings.PStr, @core.RawAddress, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn alljoyn_interfacedescription_member_getargannotation_raw(Bytes, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn alljoyn_interfacedescription_member_getargannotationatindex(@94493486d51ad13f.AlljoynInterfacedescriptionMember_c054954b600b, @strings.PStr, UInt64, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn alljoyn_interfacedescription_member_getargannotationatindex_raw(Bytes, @core.RawAddress, UInt64, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Unit
+
+pub fn alljoyn_interfacedescription_member_getargannotationscount(@94493486d51ad13f.AlljoynInterfacedescriptionMember_c054954b600b, @strings.PStr) -> UInt64 raise @core.WindowsError
+
+pub fn alljoyn_interfacedescription_member_getargannotationscount_raw(Bytes, @core.RawAddress) -> UInt64
+
+pub fn alljoyn_interfacedescription_property_eql(@94493486d51ad13f.AlljoynInterfacedescriptionProperty_d18094901af0, @94493486d51ad13f.AlljoynInterfacedescriptionProperty_d18094901af0) -> Int raise @core.WindowsError
+
+pub fn alljoyn_interfacedescription_property_eql_raw(Bytes, Bytes) -> Int
+
+pub fn alljoyn_interfacedescription_property_getannotation(@94493486d51ad13f.AlljoynInterfacedescriptionProperty_d18094901af0, @strings.PStr, @core.RawAddress, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn alljoyn_interfacedescription_property_getannotation_raw(Bytes, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn alljoyn_interfacedescription_property_getannotationatindex(@94493486d51ad13f.AlljoynInterfacedescriptionProperty_d18094901af0, UInt64, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn alljoyn_interfacedescription_property_getannotationatindex_raw(Bytes, UInt64, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Unit
+
+pub fn alljoyn_interfacedescription_property_getannotationscount(@94493486d51ad13f.AlljoynInterfacedescriptionProperty_d18094901af0) -> UInt64 raise @core.WindowsError
+
+pub fn alljoyn_interfacedescription_property_getannotationscount_raw(Bytes) -> UInt64
+
+pub fn alljoyn_interfacedescription_setargdescription(Int64, @strings.PStr, @strings.PStr, @strings.PStr) -> @94493486d51ad13f.QStatus_e5e433a5ef86 raise @core.WindowsError
+
+pub fn alljoyn_interfacedescription_setargdescription_raw(Int64, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn alljoyn_interfacedescription_setargdescriptionforlanguage(Int64, @strings.PStr, @strings.PStr, @strings.PStr, @strings.PStr) -> @94493486d51ad13f.QStatus_e5e433a5ef86 raise @core.WindowsError
+
+pub fn alljoyn_interfacedescription_setargdescriptionforlanguage_raw(Int64, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn alljoyn_interfacedescription_setdescription(Int64, @strings.PStr) -> Unit raise @core.WindowsError
+
+pub fn alljoyn_interfacedescription_setdescription_raw(Int64, @core.RawAddress) -> Unit
+
+pub fn alljoyn_interfacedescription_setdescriptionforlanguage(Int64, @strings.PStr, @strings.PStr) -> @94493486d51ad13f.QStatus_e5e433a5ef86 raise @core.WindowsError
+
+pub fn alljoyn_interfacedescription_setdescriptionforlanguage_raw(Int64, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn alljoyn_interfacedescription_setdescriptionlanguage(Int64, @strings.PStr) -> Unit raise @core.WindowsError
+
+pub fn alljoyn_interfacedescription_setdescriptionlanguage_raw(Int64, @core.RawAddress) -> Unit
+
+pub fn alljoyn_interfacedescription_setdescriptiontranslationcallback(Int64, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn alljoyn_interfacedescription_setdescriptiontranslationcallback_raw(Int64, @core.RawAddress) -> Unit
+
+pub fn alljoyn_interfacedescription_setmemberdescription(Int64, @strings.PStr, @strings.PStr) -> @94493486d51ad13f.QStatus_e5e433a5ef86 raise @core.WindowsError
+
+pub fn alljoyn_interfacedescription_setmemberdescription_raw(Int64, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn alljoyn_interfacedescription_setmemberdescriptionforlanguage(Int64, @strings.PStr, @strings.PStr, @strings.PStr) -> @94493486d51ad13f.QStatus_e5e433a5ef86 raise @core.WindowsError
+
+pub fn alljoyn_interfacedescription_setmemberdescriptionforlanguage_raw(Int64, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn alljoyn_interfacedescription_setpropertydescription(Int64, @strings.PStr, @strings.PStr) -> @94493486d51ad13f.QStatus_e5e433a5ef86 raise @core.WindowsError
+
+pub fn alljoyn_interfacedescription_setpropertydescription_raw(Int64, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn alljoyn_interfacedescription_setpropertydescriptionforlanguage(Int64, @strings.PStr, @strings.PStr, @strings.PStr) -> @94493486d51ad13f.QStatus_e5e433a5ef86 raise @core.WindowsError
+
+pub fn alljoyn_interfacedescription_setpropertydescriptionforlanguage_raw(Int64, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn alljoyn_keystorelistener_create(@94493486d51ad13f.AlljoynKeystorelistenerCallbacks_0a2fdc393b27, @core.RawAddress) -> Int64 raise @core.WindowsError
+
+pub fn alljoyn_keystorelistener_create_raw(@core.RawAddress, @core.RawAddress) -> Int64
+
+pub fn alljoyn_keystorelistener_destroy(Int64) -> Unit raise @core.WindowsError
+
+pub fn alljoyn_keystorelistener_destroy_raw(Int64) -> Unit
+
+pub fn alljoyn_keystorelistener_getkeys(Int64, Int64, @core.RawAddress, @core.RawAddress) -> @94493486d51ad13f.QStatus_e5e433a5ef86 raise @core.WindowsError
+
+pub fn alljoyn_keystorelistener_getkeys_raw(Int64, Int64, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn alljoyn_keystorelistener_putkeys(Int64, Int64, @strings.PStr, @strings.PStr) -> @94493486d51ad13f.QStatus_e5e433a5ef86 raise @core.WindowsError
+
+pub fn alljoyn_keystorelistener_putkeys_raw(Int64, Int64, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn alljoyn_keystorelistener_with_synchronization_create(@94493486d51ad13f.AlljoynKeystorelistenerWithSynchronizationCallbacks_3553c9b28a3c, @core.RawAddress) -> Int64 raise @core.WindowsError
+
+pub fn alljoyn_keystorelistener_with_synchronization_create_raw(@core.RawAddress, @core.RawAddress) -> Int64
+
+pub let alljoyn_little_endian : UInt
+
+pub let alljoyn_member_annotate_deprecated : UInt
+
+pub let alljoyn_member_annotate_global_broadcast : UInt
+
+pub let alljoyn_member_annotate_no_reply : UInt
+
+pub let alljoyn_member_annotate_sessioncast : UInt
+
+pub let alljoyn_member_annotate_sessionless : UInt
+
+pub let alljoyn_member_annotate_unicast : UInt
+
+pub fn alljoyn_message_create(Int64) -> Int64 raise @core.WindowsError
+
+pub fn alljoyn_message_create_raw(Int64) -> Int64
+
+pub let alljoyn_message_default_timeout : UInt
+
+pub fn alljoyn_message_description(Int64, @core.RawAddress, UInt64) -> UInt64 raise @core.WindowsError
+
+pub fn alljoyn_message_description_raw(Int64, @core.RawAddress, UInt64) -> UInt64
+
+pub fn alljoyn_message_destroy(Int64) -> Unit raise @core.WindowsError
+
+pub fn alljoyn_message_destroy_raw(Int64) -> Unit
+
+pub fn alljoyn_message_eql(Int64, Int64) -> Int raise @core.WindowsError
+
+pub fn alljoyn_message_eql_raw(Int64, Int64) -> Int
+
+pub let alljoyn_message_flag_allow_remote_msg : UInt
+
+pub let alljoyn_message_flag_auto_start : UInt
+
+pub let alljoyn_message_flag_encrypted : UInt
+
+pub let alljoyn_message_flag_global_broadcast : UInt
+
+pub let alljoyn_message_flag_no_reply_expected : UInt
+
+pub let alljoyn_message_flag_sessionless : UInt
+
+pub fn alljoyn_message_getarg(Int64, UInt64) -> Int64 raise @core.WindowsError
+
+pub fn alljoyn_message_getarg_raw(Int64, UInt64) -> Int64
+
+pub fn alljoyn_message_getargs(Int64, @core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn alljoyn_message_getargs_raw(Int64, @core.RawAddress, @core.RawAddress) -> Unit
+
+pub fn alljoyn_message_getauthmechanism(Int64) -> @core.RawAddress raise @core.WindowsError
+
+pub fn alljoyn_message_getauthmechanism_raw(Int64) -> @core.RawAddress
+
+pub fn alljoyn_message_getcallserial(Int64) -> UInt raise @core.WindowsError
+
+pub fn alljoyn_message_getcallserial_raw(Int64) -> UInt
+
+pub fn alljoyn_message_getcompressiontoken(Int64) -> UInt raise @core.WindowsError
+
+pub fn alljoyn_message_getcompressiontoken_raw(Int64) -> UInt
+
+pub fn alljoyn_message_getdestination(Int64) -> @core.RawAddress raise @core.WindowsError
+
+pub fn alljoyn_message_getdestination_raw(Int64) -> @core.RawAddress
+
+pub fn alljoyn_message_geterrorname(Int64, @core.RawAddress, @core.RawAddress) -> @core.RawAddress raise @core.WindowsError
+
+pub fn alljoyn_message_geterrorname_raw(Int64, @core.RawAddress, @core.RawAddress) -> @core.RawAddress
+
+pub fn alljoyn_message_getflags(Int64) -> Byte raise @core.WindowsError
+
+pub fn alljoyn_message_getflags_raw(Int64) -> UInt
+
+pub fn alljoyn_message_getinterface(Int64) -> @core.RawAddress raise @core.WindowsError
+
+pub fn alljoyn_message_getinterface_raw(Int64) -> @core.RawAddress
+
+pub fn alljoyn_message_getmembername(Int64) -> @core.RawAddress raise @core.WindowsError
+
+pub fn alljoyn_message_getmembername_raw(Int64) -> @core.RawAddress
+
+pub fn alljoyn_message_getobjectpath(Int64) -> @core.RawAddress raise @core.WindowsError
+
+pub fn alljoyn_message_getobjectpath_raw(Int64) -> @core.RawAddress
+
+pub fn alljoyn_message_getreceiveendpointname(Int64) -> @core.RawAddress raise @core.WindowsError
+
+pub fn alljoyn_message_getreceiveendpointname_raw(Int64) -> @core.RawAddress
+
+pub fn alljoyn_message_getreplyserial(Int64) -> UInt raise @core.WindowsError
+
+pub fn alljoyn_message_getreplyserial_raw(Int64) -> UInt
+
+pub fn alljoyn_message_getsender(Int64) -> @core.RawAddress raise @core.WindowsError
+
+pub fn alljoyn_message_getsender_raw(Int64) -> @core.RawAddress
+
+pub fn alljoyn_message_getsessionid(Int64) -> UInt raise @core.WindowsError
+
+pub fn alljoyn_message_getsessionid_raw(Int64) -> UInt
+
+pub fn alljoyn_message_getsignature(Int64) -> @core.RawAddress raise @core.WindowsError
+
+pub fn alljoyn_message_getsignature_raw(Int64) -> @core.RawAddress
+
+pub fn alljoyn_message_gettimestamp(Int64) -> UInt raise @core.WindowsError
+
+pub fn alljoyn_message_gettimestamp_raw(Int64) -> UInt
+
+pub fn alljoyn_message_gettype(Int64) -> @94493486d51ad13f.AlljoynMessagetype_a0298d676d1e raise @core.WindowsError
+
+pub fn alljoyn_message_gettype_raw(Int64) -> Int
+
+pub fn alljoyn_message_isbroadcastsignal(Int64) -> Int raise @core.WindowsError
+
+pub fn alljoyn_message_isbroadcastsignal_raw(Int64) -> Int
+
+pub fn alljoyn_message_isencrypted(Int64) -> Int raise @core.WindowsError
+
+pub fn alljoyn_message_isencrypted_raw(Int64) -> Int
+
+pub fn alljoyn_message_isexpired(Int64, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn alljoyn_message_isexpired_raw(Int64, @core.RawAddress) -> Int
+
+pub fn alljoyn_message_isglobalbroadcast(Int64) -> Int raise @core.WindowsError
+
+pub fn alljoyn_message_isglobalbroadcast_raw(Int64) -> Int
+
+pub fn alljoyn_message_issessionless(Int64) -> Int raise @core.WindowsError
+
+pub fn alljoyn_message_issessionless_raw(Int64) -> Int
+
+pub fn alljoyn_message_isunreliable(Int64) -> Int raise @core.WindowsError
+
+pub fn alljoyn_message_isunreliable_raw(Int64) -> Int
+
+pub fn alljoyn_message_setendianess(Int) -> Unit raise @core.WindowsError
+
+pub fn alljoyn_message_setendianess_raw(Int) -> Unit
+
+pub fn alljoyn_message_tostring(Int64, @core.RawAddress, UInt64) -> UInt64 raise @core.WindowsError
+
+pub fn alljoyn_message_tostring_raw(Int64, @core.RawAddress, UInt64) -> UInt64
+
+pub fn alljoyn_msgarg_array_create(UInt64) -> Int64 raise @core.WindowsError
+
+pub fn alljoyn_msgarg_array_create_raw(UInt64) -> Int64
+
+pub fn alljoyn_msgarg_array_element(Int64, UInt64) -> Int64 raise @core.WindowsError
+
+pub fn alljoyn_msgarg_array_element_raw(Int64, UInt64) -> Int64
+
+pub fn alljoyn_msgarg_array_signature(Int64, UInt64, @core.RawAddress, UInt64) -> UInt64 raise @core.WindowsError
+
+pub fn alljoyn_msgarg_array_signature_raw(Int64, UInt64, @core.RawAddress, UInt64) -> UInt64
+
+pub fn alljoyn_msgarg_array_tostring(Int64, UInt64, @core.RawAddress, UInt64, UInt64) -> UInt64 raise @core.WindowsError
+
+pub fn alljoyn_msgarg_array_tostring_raw(Int64, UInt64, @core.RawAddress, UInt64, UInt64) -> UInt64
+
+pub fn alljoyn_msgarg_clear(Int64) -> Unit raise @core.WindowsError
+
+pub fn alljoyn_msgarg_clear_raw(Int64) -> Unit
+
+pub fn alljoyn_msgarg_clone(Int64, Int64) -> Unit raise @core.WindowsError
+
+pub fn alljoyn_msgarg_clone_raw(Int64, Int64) -> Unit
+
+pub fn alljoyn_msgarg_copy(Int64) -> Int64 raise @core.WindowsError
+
+pub fn alljoyn_msgarg_copy_raw(Int64) -> Int64
+
+pub fn alljoyn_msgarg_create() -> Int64 raise @core.WindowsError
+
+pub fn alljoyn_msgarg_create_raw() -> Int64
+
+pub fn alljoyn_msgarg_destroy(Int64) -> Unit raise @core.WindowsError
+
+pub fn alljoyn_msgarg_destroy_raw(Int64) -> Unit
+
+pub fn alljoyn_msgarg_equal(Int64, Int64) -> Int raise @core.WindowsError
+
+pub fn alljoyn_msgarg_equal_raw(Int64, Int64) -> Int
+
+pub fn alljoyn_msgarg_get_array_element(Int64, UInt64, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn alljoyn_msgarg_get_array_element_raw(Int64, UInt64, @core.RawAddress) -> Unit
+
+pub fn alljoyn_msgarg_get_array_elementsignature(Int64, UInt64) -> @core.RawAddress raise @core.WindowsError
+
+pub fn alljoyn_msgarg_get_array_elementsignature_raw(Int64, UInt64) -> @core.RawAddress
+
+pub fn alljoyn_msgarg_get_array_numberofelements(Int64) -> UInt64 raise @core.WindowsError
+
+pub fn alljoyn_msgarg_get_array_numberofelements_raw(Int64) -> UInt64
+
+pub fn alljoyn_msgarg_get_bool(Int64, @core.RawAddress) -> @94493486d51ad13f.QStatus_e5e433a5ef86 raise @core.WindowsError
+
+pub fn alljoyn_msgarg_get_bool_array(Int64, @core.RawAddress, @core.RawAddress) -> @94493486d51ad13f.QStatus_e5e433a5ef86 raise @core.WindowsError
+
+pub fn alljoyn_msgarg_get_bool_array_raw(Int64, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn alljoyn_msgarg_get_bool_raw(Int64, @core.RawAddress) -> Int
+
+pub fn alljoyn_msgarg_get_double(Int64, @core.RawAddress) -> @94493486d51ad13f.QStatus_e5e433a5ef86 raise @core.WindowsError
+
+pub fn alljoyn_msgarg_get_double_array(Int64, @core.RawAddress, @core.RawAddress) -> @94493486d51ad13f.QStatus_e5e433a5ef86 raise @core.WindowsError
+
+pub fn alljoyn_msgarg_get_double_array_raw(Int64, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn alljoyn_msgarg_get_double_raw(Int64, @core.RawAddress) -> Int
+
+pub fn alljoyn_msgarg_get_int16(Int64, @core.RawAddress) -> @94493486d51ad13f.QStatus_e5e433a5ef86 raise @core.WindowsError
+
+pub fn alljoyn_msgarg_get_int16_array(Int64, @core.RawAddress, @core.RawAddress) -> @94493486d51ad13f.QStatus_e5e433a5ef86 raise @core.WindowsError
+
+pub fn alljoyn_msgarg_get_int16_array_raw(Int64, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn alljoyn_msgarg_get_int16_raw(Int64, @core.RawAddress) -> Int
+
+pub fn alljoyn_msgarg_get_int32(Int64, @core.RawAddress) -> @94493486d51ad13f.QStatus_e5e433a5ef86 raise @core.WindowsError
+
+pub fn alljoyn_msgarg_get_int32_array(Int64, @core.RawAddress, @core.RawAddress) -> @94493486d51ad13f.QStatus_e5e433a5ef86 raise @core.WindowsError
+
+pub fn alljoyn_msgarg_get_int32_array_raw(Int64, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn alljoyn_msgarg_get_int32_raw(Int64, @core.RawAddress) -> Int
+
+pub fn alljoyn_msgarg_get_int64(Int64, @core.RawAddress) -> @94493486d51ad13f.QStatus_e5e433a5ef86 raise @core.WindowsError
+
+pub fn alljoyn_msgarg_get_int64_array(Int64, @core.RawAddress, @core.RawAddress) -> @94493486d51ad13f.QStatus_e5e433a5ef86 raise @core.WindowsError
+
+pub fn alljoyn_msgarg_get_int64_array_raw(Int64, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn alljoyn_msgarg_get_int64_raw(Int64, @core.RawAddress) -> Int
+
+pub fn alljoyn_msgarg_get_objectpath(Int64, @core.RawAddress) -> @94493486d51ad13f.QStatus_e5e433a5ef86 raise @core.WindowsError
+
+pub fn alljoyn_msgarg_get_objectpath_raw(Int64, @core.RawAddress) -> Int
+
+pub fn alljoyn_msgarg_get_signature(Int64, @core.RawAddress) -> @94493486d51ad13f.QStatus_e5e433a5ef86 raise @core.WindowsError
+
+pub fn alljoyn_msgarg_get_signature_raw(Int64, @core.RawAddress) -> Int
+
+pub fn alljoyn_msgarg_get_string(Int64, @core.RawAddress) -> @94493486d51ad13f.QStatus_e5e433a5ef86 raise @core.WindowsError
+
+pub fn alljoyn_msgarg_get_string_raw(Int64, @core.RawAddress) -> Int
+
+pub fn alljoyn_msgarg_get_uint16(Int64, @core.RawAddress) -> @94493486d51ad13f.QStatus_e5e433a5ef86 raise @core.WindowsError
+
+pub fn alljoyn_msgarg_get_uint16_array(Int64, @core.RawAddress, @core.RawAddress) -> @94493486d51ad13f.QStatus_e5e433a5ef86 raise @core.WindowsError
+
+pub fn alljoyn_msgarg_get_uint16_array_raw(Int64, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn alljoyn_msgarg_get_uint16_raw(Int64, @core.RawAddress) -> Int
+
+pub fn alljoyn_msgarg_get_uint32(Int64, @core.RawAddress) -> @94493486d51ad13f.QStatus_e5e433a5ef86 raise @core.WindowsError
+
+pub fn alljoyn_msgarg_get_uint32_array(Int64, @core.RawAddress, @core.RawAddress) -> @94493486d51ad13f.QStatus_e5e433a5ef86 raise @core.WindowsError
+
+pub fn alljoyn_msgarg_get_uint32_array_raw(Int64, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn alljoyn_msgarg_get_uint32_raw(Int64, @core.RawAddress) -> Int
+
+pub fn alljoyn_msgarg_get_uint64(Int64, @core.RawAddress) -> @94493486d51ad13f.QStatus_e5e433a5ef86 raise @core.WindowsError
+
+pub fn alljoyn_msgarg_get_uint64_array(Int64, @core.RawAddress, @core.RawAddress) -> @94493486d51ad13f.QStatus_e5e433a5ef86 raise @core.WindowsError
+
+pub fn alljoyn_msgarg_get_uint64_array_raw(Int64, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn alljoyn_msgarg_get_uint64_raw(Int64, @core.RawAddress) -> Int
+
+pub fn alljoyn_msgarg_get_uint8(Int64, @core.RawAddress) -> @94493486d51ad13f.QStatus_e5e433a5ef86 raise @core.WindowsError
+
+pub fn alljoyn_msgarg_get_uint8_array(Int64, @core.RawAddress, @core.RawAddress) -> @94493486d51ad13f.QStatus_e5e433a5ef86 raise @core.WindowsError
+
+pub fn alljoyn_msgarg_get_uint8_array_raw(Int64, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn alljoyn_msgarg_get_uint8_raw(Int64, @core.RawAddress) -> Int
+
+pub fn alljoyn_msgarg_get_variant(Int64, Int64) -> @94493486d51ad13f.QStatus_e5e433a5ef86 raise @core.WindowsError
+
+pub fn alljoyn_msgarg_get_variant_array(Int64, @strings.PStr, @core.RawAddress, @core.RawAddress) -> @94493486d51ad13f.QStatus_e5e433a5ef86 raise @core.WindowsError
+
+pub fn alljoyn_msgarg_get_variant_array_raw(Int64, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn alljoyn_msgarg_get_variant_raw(Int64, Int64) -> Int
+
+pub fn alljoyn_msgarg_getkey(Int64) -> Int64 raise @core.WindowsError
+
+pub fn alljoyn_msgarg_getkey_raw(Int64) -> Int64
+
+pub fn alljoyn_msgarg_getmember(Int64, UInt64) -> Int64 raise @core.WindowsError
+
+pub fn alljoyn_msgarg_getmember_raw(Int64, UInt64) -> Int64
+
+pub fn alljoyn_msgarg_getnummembers(Int64) -> UInt64 raise @core.WindowsError
+
+pub fn alljoyn_msgarg_getnummembers_raw(Int64) -> UInt64
+
+pub fn alljoyn_msgarg_gettype(Int64) -> @94493486d51ad13f.AlljoynTypeid_2bd6c781714b raise @core.WindowsError
+
+pub fn alljoyn_msgarg_gettype_raw(Int64) -> Int
+
+pub fn alljoyn_msgarg_getvalue(Int64) -> Int64 raise @core.WindowsError
+
+pub fn alljoyn_msgarg_getvalue_raw(Int64) -> Int64
+
+pub fn alljoyn_msgarg_hassignature(Int64, @strings.PStr) -> Int raise @core.WindowsError
+
+pub fn alljoyn_msgarg_hassignature_raw(Int64, @core.RawAddress) -> Int
+
+pub fn alljoyn_msgarg_set_bool(Int64, Int) -> @94493486d51ad13f.QStatus_e5e433a5ef86 raise @core.WindowsError
+
+pub fn alljoyn_msgarg_set_bool_array(Int64, UInt64, @core.RawAddress) -> @94493486d51ad13f.QStatus_e5e433a5ef86 raise @core.WindowsError
+
+pub fn alljoyn_msgarg_set_bool_array_raw(Int64, UInt64, @core.RawAddress) -> Int
+
+pub fn alljoyn_msgarg_set_bool_raw(Int64, Int) -> Int
+
+pub fn alljoyn_msgarg_set_double(Int64, Double) -> @94493486d51ad13f.QStatus_e5e433a5ef86 raise @core.WindowsError
+
+pub fn alljoyn_msgarg_set_double_array(Int64, UInt64, @core.RawAddress) -> @94493486d51ad13f.QStatus_e5e433a5ef86 raise @core.WindowsError
+
+pub fn alljoyn_msgarg_set_double_array_raw(Int64, UInt64, @core.RawAddress) -> Int
+
+pub fn alljoyn_msgarg_set_double_raw(Int64, Double) -> Int
+
+pub fn alljoyn_msgarg_set_int16(Int64, Int) -> @94493486d51ad13f.QStatus_e5e433a5ef86 raise @core.WindowsError
+
+pub fn alljoyn_msgarg_set_int16_array(Int64, UInt64, @core.RawAddress) -> @94493486d51ad13f.QStatus_e5e433a5ef86 raise @core.WindowsError
+
+pub fn alljoyn_msgarg_set_int16_array_raw(Int64, UInt64, @core.RawAddress) -> Int
+
+pub fn alljoyn_msgarg_set_int16_raw(Int64, Int) -> Int
+
+pub fn alljoyn_msgarg_set_int32(Int64, Int) -> @94493486d51ad13f.QStatus_e5e433a5ef86 raise @core.WindowsError
+
+pub fn alljoyn_msgarg_set_int32_array(Int64, UInt64, @core.RawAddress) -> @94493486d51ad13f.QStatus_e5e433a5ef86 raise @core.WindowsError
+
+pub fn alljoyn_msgarg_set_int32_array_raw(Int64, UInt64, @core.RawAddress) -> Int
+
+pub fn alljoyn_msgarg_set_int32_raw(Int64, Int) -> Int
+
+pub fn alljoyn_msgarg_set_int64(Int64, Int64) -> @94493486d51ad13f.QStatus_e5e433a5ef86 raise @core.WindowsError
+
+pub fn alljoyn_msgarg_set_int64_array(Int64, UInt64, @core.RawAddress) -> @94493486d51ad13f.QStatus_e5e433a5ef86 raise @core.WindowsError
+
+pub fn alljoyn_msgarg_set_int64_array_raw(Int64, UInt64, @core.RawAddress) -> Int
+
+pub fn alljoyn_msgarg_set_int64_raw(Int64, Int64) -> Int
+
+pub fn alljoyn_msgarg_set_objectpath(Int64, @strings.PStr) -> @94493486d51ad13f.QStatus_e5e433a5ef86 raise @core.WindowsError
+
+pub fn alljoyn_msgarg_set_objectpath_array(Int64, UInt64, @core.RawAddress) -> @94493486d51ad13f.QStatus_e5e433a5ef86 raise @core.WindowsError
+
+pub fn alljoyn_msgarg_set_objectpath_array_raw(Int64, UInt64, @core.RawAddress) -> Int
+
+pub fn alljoyn_msgarg_set_objectpath_raw(Int64, @core.RawAddress) -> Int
+
+pub fn alljoyn_msgarg_set_signature(Int64, @strings.PStr) -> @94493486d51ad13f.QStatus_e5e433a5ef86 raise @core.WindowsError
+
+pub fn alljoyn_msgarg_set_signature_array(Int64, UInt64, @core.RawAddress) -> @94493486d51ad13f.QStatus_e5e433a5ef86 raise @core.WindowsError
+
+pub fn alljoyn_msgarg_set_signature_array_raw(Int64, UInt64, @core.RawAddress) -> Int
+
+pub fn alljoyn_msgarg_set_signature_raw(Int64, @core.RawAddress) -> Int
+
+pub fn alljoyn_msgarg_set_string(Int64, @strings.PStr) -> @94493486d51ad13f.QStatus_e5e433a5ef86 raise @core.WindowsError
+
+pub fn alljoyn_msgarg_set_string_array(Int64, UInt64, @core.RawAddress) -> @94493486d51ad13f.QStatus_e5e433a5ef86 raise @core.WindowsError
+
+pub fn alljoyn_msgarg_set_string_array_raw(Int64, UInt64, @core.RawAddress) -> Int
+
+pub fn alljoyn_msgarg_set_string_raw(Int64, @core.RawAddress) -> Int
+
+pub fn alljoyn_msgarg_set_uint16(Int64, UInt16) -> @94493486d51ad13f.QStatus_e5e433a5ef86 raise @core.WindowsError
+
+pub fn alljoyn_msgarg_set_uint16_array(Int64, UInt64, @core.RawAddress) -> @94493486d51ad13f.QStatus_e5e433a5ef86 raise @core.WindowsError
+
+pub fn alljoyn_msgarg_set_uint16_array_raw(Int64, UInt64, @core.RawAddress) -> Int
+
+pub fn alljoyn_msgarg_set_uint16_raw(Int64, UInt) -> Int
+
+pub fn alljoyn_msgarg_set_uint32(Int64, UInt) -> @94493486d51ad13f.QStatus_e5e433a5ef86 raise @core.WindowsError
+
+pub fn alljoyn_msgarg_set_uint32_array(Int64, UInt64, @core.RawAddress) -> @94493486d51ad13f.QStatus_e5e433a5ef86 raise @core.WindowsError
+
+pub fn alljoyn_msgarg_set_uint32_array_raw(Int64, UInt64, @core.RawAddress) -> Int
+
+pub fn alljoyn_msgarg_set_uint32_raw(Int64, UInt) -> Int
+
+pub fn alljoyn_msgarg_set_uint64(Int64, UInt64) -> @94493486d51ad13f.QStatus_e5e433a5ef86 raise @core.WindowsError
+
+pub fn alljoyn_msgarg_set_uint64_array(Int64, UInt64, @core.RawAddress) -> @94493486d51ad13f.QStatus_e5e433a5ef86 raise @core.WindowsError
+
+pub fn alljoyn_msgarg_set_uint64_array_raw(Int64, UInt64, @core.RawAddress) -> Int
+
+pub fn alljoyn_msgarg_set_uint64_raw(Int64, UInt64) -> Int
+
+pub fn alljoyn_msgarg_set_uint8(Int64, Byte) -> @94493486d51ad13f.QStatus_e5e433a5ef86 raise @core.WindowsError
+
+pub fn alljoyn_msgarg_set_uint8_array(Int64, UInt64, @core.RawAddress) -> @94493486d51ad13f.QStatus_e5e433a5ef86 raise @core.WindowsError
+
+pub fn alljoyn_msgarg_set_uint8_array_raw(Int64, UInt64, @core.RawAddress) -> Int
+
+pub fn alljoyn_msgarg_set_uint8_raw(Int64, UInt) -> Int
+
+pub fn alljoyn_msgarg_setdictentry(Int64, Int64, Int64) -> @94493486d51ad13f.QStatus_e5e433a5ef86 raise @core.WindowsError
+
+pub fn alljoyn_msgarg_setdictentry_raw(Int64, Int64, Int64) -> Int
+
+pub fn alljoyn_msgarg_setstruct(Int64, Int64, UInt64) -> @94493486d51ad13f.QStatus_e5e433a5ef86 raise @core.WindowsError
+
+pub fn alljoyn_msgarg_setstruct_raw(Int64, Int64, UInt64) -> Int
+
+pub fn alljoyn_msgarg_signature(Int64, @core.RawAddress, UInt64) -> UInt64 raise @core.WindowsError
+
+pub fn alljoyn_msgarg_signature_raw(Int64, @core.RawAddress, UInt64) -> UInt64
+
+pub fn alljoyn_msgarg_stabilize(Int64) -> Unit raise @core.WindowsError
+
+pub fn alljoyn_msgarg_stabilize_raw(Int64) -> Unit
+
+pub fn alljoyn_msgarg_tostring(Int64, @core.RawAddress, UInt64, UInt64) -> UInt64 raise @core.WindowsError
+
+pub fn alljoyn_msgarg_tostring_raw(Int64, @core.RawAddress, UInt64, UInt64) -> UInt64
+
+pub let alljoyn_named_pipe_connect_spec : String
+
+pub fn alljoyn_observer_create(Int64, @core.RawAddress, UInt64) -> Int64 raise @core.WindowsError
+
+pub fn alljoyn_observer_create_raw(Int64, @core.RawAddress, UInt64) -> Int64
+
+pub fn alljoyn_observer_destroy(Int64) -> Unit raise @core.WindowsError
+
+pub fn alljoyn_observer_destroy_raw(Int64) -> Unit
+
+pub fn alljoyn_observer_get(Int64, @strings.PStr, @strings.PStr) -> Int64 raise @core.WindowsError
+
+pub fn alljoyn_observer_get_raw(Int64, @core.RawAddress, @core.RawAddress) -> Int64
+
+pub fn alljoyn_observer_getfirst(Int64) -> Int64 raise @core.WindowsError
+
+pub fn alljoyn_observer_getfirst_raw(Int64) -> Int64
+
+pub fn alljoyn_observer_getnext(Int64, Int64) -> Int64 raise @core.WindowsError
+
+pub fn alljoyn_observer_getnext_raw(Int64, Int64) -> Int64
+
+pub fn alljoyn_observer_registerlistener(Int64, Int64, Int) -> Unit raise @core.WindowsError
+
+pub fn alljoyn_observer_registerlistener_raw(Int64, Int64, Int) -> Unit
+
+pub fn alljoyn_observer_unregisteralllisteners(Int64) -> Unit raise @core.WindowsError
+
+pub fn alljoyn_observer_unregisteralllisteners_raw(Int64) -> Unit
+
+pub fn alljoyn_observer_unregisterlistener(Int64, Int64) -> Unit raise @core.WindowsError
+
+pub fn alljoyn_observer_unregisterlistener_raw(Int64, Int64) -> Unit
+
+pub fn alljoyn_observerlistener_create(@94493486d51ad13f.AlljoynObserverlistenerCallback_def66efcd38f, @core.RawAddress) -> Int64 raise @core.WindowsError
+
+pub fn alljoyn_observerlistener_create_raw(@core.RawAddress, @core.RawAddress) -> Int64
+
+pub fn alljoyn_observerlistener_destroy(Int64) -> Unit raise @core.WindowsError
+
+pub fn alljoyn_observerlistener_destroy_raw(Int64) -> Unit
+
+pub fn alljoyn_passwordmanager_setcredentials(@strings.PStr, @strings.PStr) -> @94493486d51ad13f.QStatus_e5e433a5ef86 raise @core.WindowsError
+
+pub fn alljoyn_passwordmanager_setcredentials_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn alljoyn_permissionconfigurationlistener_create(@94493486d51ad13f.AlljoynPermissionconfigurationlistenerCallbacks_f277d35ad488, @core.RawAddress) -> Int64 raise @core.WindowsError
+
+pub fn alljoyn_permissionconfigurationlistener_create_raw(@core.RawAddress, @core.RawAddress) -> Int64
+
+pub fn alljoyn_permissionconfigurationlistener_destroy(Int64) -> Unit raise @core.WindowsError
+
+pub fn alljoyn_permissionconfigurationlistener_destroy_raw(Int64) -> Unit
+
+pub fn alljoyn_permissionconfigurator_certificatechain_destroy(@core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn alljoyn_permissionconfigurator_certificatechain_destroy_raw(@core.RawAddress) -> Unit
+
+pub fn alljoyn_permissionconfigurator_certificateid_cleanup(@94493486d51ad13f.AlljoynCertificateid_bda24bdedfab) -> Unit raise @core.WindowsError
+
+pub fn alljoyn_permissionconfigurator_certificateid_cleanup_raw(@core.RawAddress) -> Unit
+
+pub fn alljoyn_permissionconfigurator_certificateidarray_cleanup(@94493486d51ad13f.AlljoynCertificateidarray_4897a96af07a) -> Unit raise @core.WindowsError
+
+pub fn alljoyn_permissionconfigurator_certificateidarray_cleanup_raw(@core.RawAddress) -> Unit
+
+pub fn alljoyn_permissionconfigurator_claim(Int64, @core.RawAddress, @core.RawAddress, @core.RawAddress, UInt64, @core.RawAddress, @core.RawAddress, UInt64) -> @94493486d51ad13f.QStatus_e5e433a5ef86 raise @core.WindowsError
+
+pub fn alljoyn_permissionconfigurator_claim_raw(Int64, @core.RawAddress, @core.RawAddress, @core.RawAddress, UInt64, @core.RawAddress, @core.RawAddress, UInt64) -> Int
+
+pub fn alljoyn_permissionconfigurator_endmanagement(Int64) -> @94493486d51ad13f.QStatus_e5e433a5ef86 raise @core.WindowsError
+
+pub fn alljoyn_permissionconfigurator_endmanagement_raw(Int64) -> Int
+
+pub fn alljoyn_permissionconfigurator_getapplicationstate(Int64, @core.RawAddress) -> @94493486d51ad13f.QStatus_e5e433a5ef86 raise @core.WindowsError
+
+pub fn alljoyn_permissionconfigurator_getapplicationstate_raw(Int64, @core.RawAddress) -> Int
+
+pub fn alljoyn_permissionconfigurator_getclaimcapabilities(Int64, @core.RawAddress) -> @94493486d51ad13f.QStatus_e5e433a5ef86 raise @core.WindowsError
+
+pub fn alljoyn_permissionconfigurator_getclaimcapabilities_raw(Int64, @core.RawAddress) -> Int
+
+pub fn alljoyn_permissionconfigurator_getclaimcapabilitiesadditionalinfo(Int64, @core.RawAddress) -> @94493486d51ad13f.QStatus_e5e433a5ef86 raise @core.WindowsError
+
+pub fn alljoyn_permissionconfigurator_getclaimcapabilitiesadditionalinfo_raw(Int64, @core.RawAddress) -> Int
+
+pub fn alljoyn_permissionconfigurator_getdefaultclaimcapabilities() -> UInt16 raise @core.WindowsError
+
+pub fn alljoyn_permissionconfigurator_getdefaultclaimcapabilities_raw() -> UInt
+
+pub fn alljoyn_permissionconfigurator_getdefaultpolicy(Int64, @core.RawAddress) -> @94493486d51ad13f.QStatus_e5e433a5ef86 raise @core.WindowsError
+
+pub fn alljoyn_permissionconfigurator_getdefaultpolicy_raw(Int64, @core.RawAddress) -> Int
+
+pub fn alljoyn_permissionconfigurator_getidentity(Int64, @core.RawAddress) -> @94493486d51ad13f.QStatus_e5e433a5ef86 raise @core.WindowsError
+
+pub fn alljoyn_permissionconfigurator_getidentity_raw(Int64, @core.RawAddress) -> Int
+
+pub fn alljoyn_permissionconfigurator_getidentitycertificateid(Int64, @94493486d51ad13f.AlljoynCertificateid_bda24bdedfab) -> @94493486d51ad13f.QStatus_e5e433a5ef86 raise @core.WindowsError
+
+pub fn alljoyn_permissionconfigurator_getidentitycertificateid_raw(Int64, @core.RawAddress) -> Int
+
+pub fn alljoyn_permissionconfigurator_getmanifests(Int64, @94493486d51ad13f.AlljoynManifestarray_43be290976fb) -> @94493486d51ad13f.QStatus_e5e433a5ef86 raise @core.WindowsError
+
+pub fn alljoyn_permissionconfigurator_getmanifests_raw(Int64, @core.RawAddress) -> Int
+
+pub fn alljoyn_permissionconfigurator_getmanifesttemplate(Int64, @core.RawAddress) -> @94493486d51ad13f.QStatus_e5e433a5ef86 raise @core.WindowsError
+
+pub fn alljoyn_permissionconfigurator_getmanifesttemplate_raw(Int64, @core.RawAddress) -> Int
+
+pub fn alljoyn_permissionconfigurator_getmembershipsummaries(Int64, @94493486d51ad13f.AlljoynCertificateidarray_4897a96af07a) -> @94493486d51ad13f.QStatus_e5e433a5ef86 raise @core.WindowsError
+
+pub fn alljoyn_permissionconfigurator_getmembershipsummaries_raw(Int64, @core.RawAddress) -> Int
+
+pub fn alljoyn_permissionconfigurator_getpolicy(Int64, @core.RawAddress) -> @94493486d51ad13f.QStatus_e5e433a5ef86 raise @core.WindowsError
+
+pub fn alljoyn_permissionconfigurator_getpolicy_raw(Int64, @core.RawAddress) -> Int
+
+pub fn alljoyn_permissionconfigurator_getpublickey(Int64, @core.RawAddress) -> @94493486d51ad13f.QStatus_e5e433a5ef86 raise @core.WindowsError
+
+pub fn alljoyn_permissionconfigurator_getpublickey_raw(Int64, @core.RawAddress) -> Int
+
+pub fn alljoyn_permissionconfigurator_installmanifests(Int64, @core.RawAddress, UInt64, Int) -> @94493486d51ad13f.QStatus_e5e433a5ef86 raise @core.WindowsError
+
+pub fn alljoyn_permissionconfigurator_installmanifests_raw(Int64, @core.RawAddress, UInt64, Int) -> Int
+
+pub fn alljoyn_permissionconfigurator_installmembership(Int64, @core.RawAddress) -> @94493486d51ad13f.QStatus_e5e433a5ef86 raise @core.WindowsError
+
+pub fn alljoyn_permissionconfigurator_installmembership_raw(Int64, @core.RawAddress) -> Int
+
+pub fn alljoyn_permissionconfigurator_manifestarray_cleanup(@94493486d51ad13f.AlljoynManifestarray_43be290976fb) -> Unit raise @core.WindowsError
+
+pub fn alljoyn_permissionconfigurator_manifestarray_cleanup_raw(@core.RawAddress) -> Unit
+
+pub fn alljoyn_permissionconfigurator_manifesttemplate_destroy(@core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn alljoyn_permissionconfigurator_manifesttemplate_destroy_raw(@core.RawAddress) -> Unit
+
+pub fn alljoyn_permissionconfigurator_policy_destroy(@core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn alljoyn_permissionconfigurator_policy_destroy_raw(@core.RawAddress) -> Unit
+
+pub fn alljoyn_permissionconfigurator_publickey_destroy(@core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn alljoyn_permissionconfigurator_publickey_destroy_raw(@core.RawAddress) -> Unit
+
+pub fn alljoyn_permissionconfigurator_removemembership(Int64, @core.RawAddress, UInt64, @core.RawAddress, @core.RawAddress, UInt64) -> @94493486d51ad13f.QStatus_e5e433a5ef86 raise @core.WindowsError
+
+pub fn alljoyn_permissionconfigurator_removemembership_raw(Int64, @core.RawAddress, UInt64, @core.RawAddress, @core.RawAddress, UInt64) -> Int
+
+pub fn alljoyn_permissionconfigurator_reset(Int64) -> @94493486d51ad13f.QStatus_e5e433a5ef86 raise @core.WindowsError
+
+pub fn alljoyn_permissionconfigurator_reset_raw(Int64) -> Int
+
+pub fn alljoyn_permissionconfigurator_resetpolicy(Int64) -> @94493486d51ad13f.QStatus_e5e433a5ef86 raise @core.WindowsError
+
+pub fn alljoyn_permissionconfigurator_resetpolicy_raw(Int64) -> Int
+
+pub fn alljoyn_permissionconfigurator_setapplicationstate(Int64, @94493486d51ad13f.AlljoynApplicationstate_07569c6018ec) -> @94493486d51ad13f.QStatus_e5e433a5ef86 raise @core.WindowsError
+
+pub fn alljoyn_permissionconfigurator_setapplicationstate_raw(Int64, Int) -> Int
+
+pub fn alljoyn_permissionconfigurator_setclaimcapabilities(Int64, UInt16) -> @94493486d51ad13f.QStatus_e5e433a5ef86 raise @core.WindowsError
+
+pub fn alljoyn_permissionconfigurator_setclaimcapabilities_raw(Int64, UInt) -> Int
+
+pub fn alljoyn_permissionconfigurator_setclaimcapabilitiesadditionalinfo(Int64, UInt16) -> @94493486d51ad13f.QStatus_e5e433a5ef86 raise @core.WindowsError
+
+pub fn alljoyn_permissionconfigurator_setclaimcapabilitiesadditionalinfo_raw(Int64, UInt) -> Int
+
+pub fn alljoyn_permissionconfigurator_setmanifesttemplatefromxml(Int64, @core.RawAddress) -> @94493486d51ad13f.QStatus_e5e433a5ef86 raise @core.WindowsError
+
+pub fn alljoyn_permissionconfigurator_setmanifesttemplatefromxml_raw(Int64, @core.RawAddress) -> Int
+
+pub fn alljoyn_permissionconfigurator_startmanagement(Int64) -> @94493486d51ad13f.QStatus_e5e433a5ef86 raise @core.WindowsError
+
+pub fn alljoyn_permissionconfigurator_startmanagement_raw(Int64) -> Int
+
+pub fn alljoyn_permissionconfigurator_updateidentity(Int64, @core.RawAddress, @core.RawAddress, UInt64) -> @94493486d51ad13f.QStatus_e5e433a5ef86 raise @core.WindowsError
+
+pub fn alljoyn_permissionconfigurator_updateidentity_raw(Int64, @core.RawAddress, @core.RawAddress, UInt64) -> Int
+
+pub fn alljoyn_permissionconfigurator_updatepolicy(Int64, @core.RawAddress) -> @94493486d51ad13f.QStatus_e5e433a5ef86 raise @core.WindowsError
+
+pub fn alljoyn_permissionconfigurator_updatepolicy_raw(Int64, @core.RawAddress) -> Int
+
+pub fn alljoyn_pinglistener_create(@94493486d51ad13f.AlljoynPinglistenerCallback_ccdf9cbb7d3f, @core.RawAddress) -> Int64 raise @core.WindowsError
+
+pub fn alljoyn_pinglistener_create_raw(@core.RawAddress, @core.RawAddress) -> Int64
+
+pub fn alljoyn_pinglistener_destroy(Int64) -> Unit raise @core.WindowsError
+
+pub fn alljoyn_pinglistener_destroy_raw(Int64) -> Unit
+
+pub let alljoyn_prop_access_read : UInt
+
+pub let alljoyn_prop_access_rw : UInt
+
+pub let alljoyn_prop_access_write : UInt
+
+pub let alljoyn_proximity_any : UInt
+
+pub let alljoyn_proximity_network : UInt
+
+pub let alljoyn_proximity_physical : UInt
+
+pub fn alljoyn_proxybusobject_addchild(Int64, Int64) -> @94493486d51ad13f.QStatus_e5e433a5ef86 raise @core.WindowsError
+
+pub fn alljoyn_proxybusobject_addchild_raw(Int64, Int64) -> Int
+
+pub fn alljoyn_proxybusobject_addinterface(Int64, Int64) -> @94493486d51ad13f.QStatus_e5e433a5ef86 raise @core.WindowsError
+
+pub fn alljoyn_proxybusobject_addinterface_by_name(Int64, @strings.PStr) -> @94493486d51ad13f.QStatus_e5e433a5ef86 raise @core.WindowsError
+
+pub fn alljoyn_proxybusobject_addinterface_by_name_raw(Int64, @core.RawAddress) -> Int
+
+pub fn alljoyn_proxybusobject_addinterface_raw(Int64, Int64) -> Int
+
+pub fn alljoyn_proxybusobject_copy(Int64) -> Int64 raise @core.WindowsError
+
+pub fn alljoyn_proxybusobject_copy_raw(Int64) -> Int64
+
+pub fn alljoyn_proxybusobject_create(Int64, @strings.PStr, @strings.PStr, UInt) -> Int64 raise @core.WindowsError
+
+pub fn alljoyn_proxybusobject_create_raw(Int64, @core.RawAddress, @core.RawAddress, UInt) -> Int64
+
+pub fn alljoyn_proxybusobject_create_secure(Int64, @strings.PStr, @strings.PStr, UInt) -> Int64 raise @core.WindowsError
+
+pub fn alljoyn_proxybusobject_create_secure_raw(Int64, @core.RawAddress, @core.RawAddress, UInt) -> Int64
+
+pub fn alljoyn_proxybusobject_destroy(Int64) -> Unit raise @core.WindowsError
+
+pub fn alljoyn_proxybusobject_destroy_raw(Int64) -> Unit
+
+pub fn alljoyn_proxybusobject_enablepropertycaching(Int64) -> Unit raise @core.WindowsError
+
+pub fn alljoyn_proxybusobject_enablepropertycaching_raw(Int64) -> Unit
+
+pub fn alljoyn_proxybusobject_getallproperties(Int64, @strings.PStr, Int64) -> @94493486d51ad13f.QStatus_e5e433a5ef86 raise @core.WindowsError
+
+pub fn alljoyn_proxybusobject_getallproperties_raw(Int64, @core.RawAddress, Int64) -> Int
+
+pub fn alljoyn_proxybusobject_getallpropertiesasync(Int64, @strings.PStr, @core.RawAddress, UInt, @core.RawAddress) -> @94493486d51ad13f.QStatus_e5e433a5ef86 raise @core.WindowsError
+
+pub fn alljoyn_proxybusobject_getallpropertiesasync_raw(Int64, @core.RawAddress, @core.RawAddress, UInt, @core.RawAddress) -> Int
+
+pub fn alljoyn_proxybusobject_getchild(Int64, @strings.PStr) -> Int64 raise @core.WindowsError
+
+pub fn alljoyn_proxybusobject_getchild_raw(Int64, @core.RawAddress) -> Int64
+
+pub fn alljoyn_proxybusobject_getchildren(Int64, @core.RawAddress, UInt64) -> UInt64 raise @core.WindowsError
+
+pub fn alljoyn_proxybusobject_getchildren_raw(Int64, @core.RawAddress, UInt64) -> UInt64
+
+pub fn alljoyn_proxybusobject_getinterface(Int64, @strings.PStr) -> Int64 raise @core.WindowsError
+
+pub fn alljoyn_proxybusobject_getinterface_raw(Int64, @core.RawAddress) -> Int64
+
+pub fn alljoyn_proxybusobject_getinterfaces(Int64, @core.RawAddress, UInt64) -> UInt64 raise @core.WindowsError
+
+pub fn alljoyn_proxybusobject_getinterfaces_raw(Int64, @core.RawAddress, UInt64) -> UInt64
+
+pub fn alljoyn_proxybusobject_getpath(Int64) -> @core.RawAddress raise @core.WindowsError
+
+pub fn alljoyn_proxybusobject_getpath_raw(Int64) -> @core.RawAddress
+
+pub fn alljoyn_proxybusobject_getproperty(Int64, @strings.PStr, @strings.PStr, Int64) -> @94493486d51ad13f.QStatus_e5e433a5ef86 raise @core.WindowsError
+
+pub fn alljoyn_proxybusobject_getproperty_raw(Int64, @core.RawAddress, @core.RawAddress, Int64) -> Int
+
+pub fn alljoyn_proxybusobject_getpropertyasync(Int64, @strings.PStr, @strings.PStr, @core.RawAddress, UInt, @core.RawAddress) -> @94493486d51ad13f.QStatus_e5e433a5ef86 raise @core.WindowsError
+
+pub fn alljoyn_proxybusobject_getpropertyasync_raw(Int64, @core.RawAddress, @core.RawAddress, @core.RawAddress, UInt, @core.RawAddress) -> Int
+
+pub fn alljoyn_proxybusobject_getservicename(Int64) -> @core.RawAddress raise @core.WindowsError
+
+pub fn alljoyn_proxybusobject_getservicename_raw(Int64) -> @core.RawAddress
+
+pub fn alljoyn_proxybusobject_getsessionid(Int64) -> UInt raise @core.WindowsError
+
+pub fn alljoyn_proxybusobject_getsessionid_raw(Int64) -> UInt
+
+pub fn alljoyn_proxybusobject_getuniquename(Int64) -> @core.RawAddress raise @core.WindowsError
+
+pub fn alljoyn_proxybusobject_getuniquename_raw(Int64) -> @core.RawAddress
+
+pub fn alljoyn_proxybusobject_implementsinterface(Int64, @strings.PStr) -> Int raise @core.WindowsError
+
+pub fn alljoyn_proxybusobject_implementsinterface_raw(Int64, @core.RawAddress) -> Int
+
+pub fn alljoyn_proxybusobject_introspectremoteobject(Int64) -> @94493486d51ad13f.QStatus_e5e433a5ef86 raise @core.WindowsError
+
+pub fn alljoyn_proxybusobject_introspectremoteobject_raw(Int64) -> Int
+
+pub fn alljoyn_proxybusobject_introspectremoteobjectasync(Int64, @core.RawAddress, @core.RawAddress) -> @94493486d51ad13f.QStatus_e5e433a5ef86 raise @core.WindowsError
+
+pub fn alljoyn_proxybusobject_introspectremoteobjectasync_raw(Int64, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn alljoyn_proxybusobject_issecure(Int64) -> Int raise @core.WindowsError
+
+pub fn alljoyn_proxybusobject_issecure_raw(Int64) -> Int
+
+pub fn alljoyn_proxybusobject_isvalid(Int64) -> Int raise @core.WindowsError
+
+pub fn alljoyn_proxybusobject_isvalid_raw(Int64) -> Int
+
+pub fn alljoyn_proxybusobject_methodcall(Int64, @strings.PStr, @strings.PStr, Int64, UInt64, Int64, UInt, Byte) -> @94493486d51ad13f.QStatus_e5e433a5ef86 raise @core.WindowsError
+
+pub fn alljoyn_proxybusobject_methodcall_member(Int64, @94493486d51ad13f.AlljoynInterfacedescriptionMember_c054954b600b, Int64, UInt64, Int64, UInt, Byte) -> @94493486d51ad13f.QStatus_e5e433a5ef86 raise @core.WindowsError
+
+pub fn alljoyn_proxybusobject_methodcall_member_noreply(Int64, @94493486d51ad13f.AlljoynInterfacedescriptionMember_c054954b600b, Int64, UInt64, Byte) -> @94493486d51ad13f.QStatus_e5e433a5ef86 raise @core.WindowsError
+
+pub fn alljoyn_proxybusobject_methodcall_member_noreply_raw(Int64, Bytes, Int64, UInt64, UInt) -> Int
+
+pub fn alljoyn_proxybusobject_methodcall_member_raw(Int64, Bytes, Int64, UInt64, Int64, UInt, UInt) -> Int
+
+pub fn alljoyn_proxybusobject_methodcall_noreply(Int64, @strings.PStr, @strings.PStr, Int64, UInt64, Byte) -> @94493486d51ad13f.QStatus_e5e433a5ef86 raise @core.WindowsError
+
+pub fn alljoyn_proxybusobject_methodcall_noreply_raw(Int64, @core.RawAddress, @core.RawAddress, Int64, UInt64, UInt) -> Int
+
+pub fn alljoyn_proxybusobject_methodcall_raw(Int64, @core.RawAddress, @core.RawAddress, Int64, UInt64, Int64, UInt, UInt) -> Int
+
+pub fn alljoyn_proxybusobject_methodcallasync(Int64, @strings.PStr, @strings.PStr, @core.RawAddress, Int64, UInt64, @core.RawAddress, UInt, Byte) -> @94493486d51ad13f.QStatus_e5e433a5ef86 raise @core.WindowsError
+
+pub fn alljoyn_proxybusobject_methodcallasync_member(Int64, @94493486d51ad13f.AlljoynInterfacedescriptionMember_c054954b600b, @core.RawAddress, Int64, UInt64, @core.RawAddress, UInt, Byte) -> @94493486d51ad13f.QStatus_e5e433a5ef86 raise @core.WindowsError
+
+pub fn alljoyn_proxybusobject_methodcallasync_member_raw(Int64, Bytes, @core.RawAddress, Int64, UInt64, @core.RawAddress, UInt, UInt) -> Int
+
+pub fn alljoyn_proxybusobject_methodcallasync_raw(Int64, @core.RawAddress, @core.RawAddress, @core.RawAddress, Int64, UInt64, @core.RawAddress, UInt, UInt) -> Int
+
+pub fn alljoyn_proxybusobject_parsexml(Int64, @strings.PStr, @strings.PStr) -> @94493486d51ad13f.QStatus_e5e433a5ef86 raise @core.WindowsError
+
+pub fn alljoyn_proxybusobject_parsexml_raw(Int64, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn alljoyn_proxybusobject_ref_create(Int64) -> Int64 raise @core.WindowsError
+
+pub fn alljoyn_proxybusobject_ref_create_raw(Int64) -> Int64
+
+pub fn alljoyn_proxybusobject_ref_decref(Int64) -> Unit raise @core.WindowsError
+
+pub fn alljoyn_proxybusobject_ref_decref_raw(Int64) -> Unit
+
+pub fn alljoyn_proxybusobject_ref_get(Int64) -> Int64 raise @core.WindowsError
+
+pub fn alljoyn_proxybusobject_ref_get_raw(Int64) -> Int64
+
+pub fn alljoyn_proxybusobject_ref_incref(Int64) -> Unit raise @core.WindowsError
+
+pub fn alljoyn_proxybusobject_ref_incref_raw(Int64) -> Unit
+
+pub fn alljoyn_proxybusobject_registerpropertieschangedlistener(Int64, @strings.PStr, @core.RawAddress, UInt64, @core.RawAddress, @core.RawAddress) -> @94493486d51ad13f.QStatus_e5e433a5ef86 raise @core.WindowsError
+
+pub fn alljoyn_proxybusobject_registerpropertieschangedlistener_raw(Int64, @core.RawAddress, @core.RawAddress, UInt64, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn alljoyn_proxybusobject_removechild(Int64, @strings.PStr) -> @94493486d51ad13f.QStatus_e5e433a5ef86 raise @core.WindowsError
+
+pub fn alljoyn_proxybusobject_removechild_raw(Int64, @core.RawAddress) -> Int
+
+pub fn alljoyn_proxybusobject_secureconnection(Int64, Int) -> @94493486d51ad13f.QStatus_e5e433a5ef86 raise @core.WindowsError
+
+pub fn alljoyn_proxybusobject_secureconnection_raw(Int64, Int) -> Int
+
+pub fn alljoyn_proxybusobject_secureconnectionasync(Int64, Int) -> @94493486d51ad13f.QStatus_e5e433a5ef86 raise @core.WindowsError
+
+pub fn alljoyn_proxybusobject_secureconnectionasync_raw(Int64, Int) -> Int
+
+pub fn alljoyn_proxybusobject_setproperty(Int64, @strings.PStr, @strings.PStr, Int64) -> @94493486d51ad13f.QStatus_e5e433a5ef86 raise @core.WindowsError
+
+pub fn alljoyn_proxybusobject_setproperty_raw(Int64, @core.RawAddress, @core.RawAddress, Int64) -> Int
+
+pub fn alljoyn_proxybusobject_setpropertyasync(Int64, @strings.PStr, @strings.PStr, Int64, @core.RawAddress, UInt, @core.RawAddress) -> @94493486d51ad13f.QStatus_e5e433a5ef86 raise @core.WindowsError
+
+pub fn alljoyn_proxybusobject_setpropertyasync_raw(Int64, @core.RawAddress, @core.RawAddress, Int64, @core.RawAddress, UInt, @core.RawAddress) -> Int
+
+pub fn alljoyn_proxybusobject_unregisterpropertieschangedlistener(Int64, @strings.PStr, @core.RawAddress) -> @94493486d51ad13f.QStatus_e5e433a5ef86 raise @core.WindowsError
+
+pub fn alljoyn_proxybusobject_unregisterpropertieschangedlistener_raw(Int64, @core.RawAddress, @core.RawAddress) -> Int
+
+pub let alljoyn_read_ready : UInt
+
+pub fn alljoyn_routerinit() -> @94493486d51ad13f.QStatus_e5e433a5ef86 raise @core.WindowsError
+
+pub fn alljoyn_routerinit_raw() -> Int
+
+pub fn alljoyn_routerinitwithconfig(@core.RawAddress) -> @94493486d51ad13f.QStatus_e5e433a5ef86 raise @core.WindowsError
+
+pub fn alljoyn_routerinitwithconfig_raw(@core.RawAddress) -> Int
+
+pub fn alljoyn_routershutdown() -> @94493486d51ad13f.QStatus_e5e433a5ef86 raise @core.WindowsError
+
+pub fn alljoyn_routershutdown_raw() -> Int
+
+pub fn alljoyn_securityapplicationproxy_claim(Int64, @core.RawAddress, @core.RawAddress, @core.RawAddress, UInt64, @core.RawAddress, @core.RawAddress, UInt64) -> @94493486d51ad13f.QStatus_e5e433a5ef86 raise @core.WindowsError
+
+pub fn alljoyn_securityapplicationproxy_claim_raw(Int64, @core.RawAddress, @core.RawAddress, @core.RawAddress, UInt64, @core.RawAddress, @core.RawAddress, UInt64) -> Int
+
+pub fn alljoyn_securityapplicationproxy_computemanifestdigest(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> @94493486d51ad13f.QStatus_e5e433a5ef86 raise @core.WindowsError
+
+pub fn alljoyn_securityapplicationproxy_computemanifestdigest_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn alljoyn_securityapplicationproxy_create(Int64, @core.RawAddress, UInt) -> Int64 raise @core.WindowsError
+
+pub fn alljoyn_securityapplicationproxy_create_raw(Int64, @core.RawAddress, UInt) -> Int64
+
+pub fn alljoyn_securityapplicationproxy_destroy(Int64) -> Unit raise @core.WindowsError
+
+pub fn alljoyn_securityapplicationproxy_destroy_raw(Int64) -> Unit
+
+pub fn alljoyn_securityapplicationproxy_digest_destroy(@core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn alljoyn_securityapplicationproxy_digest_destroy_raw(@core.RawAddress) -> Unit
+
+pub fn alljoyn_securityapplicationproxy_eccpublickey_destroy(@core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn alljoyn_securityapplicationproxy_eccpublickey_destroy_raw(@core.RawAddress) -> Unit
+
+pub fn alljoyn_securityapplicationproxy_endmanagement(Int64) -> @94493486d51ad13f.QStatus_e5e433a5ef86 raise @core.WindowsError
+
+pub fn alljoyn_securityapplicationproxy_endmanagement_raw(Int64) -> Int
+
+pub fn alljoyn_securityapplicationproxy_getapplicationstate(Int64, @core.RawAddress) -> @94493486d51ad13f.QStatus_e5e433a5ef86 raise @core.WindowsError
+
+pub fn alljoyn_securityapplicationproxy_getapplicationstate_raw(Int64, @core.RawAddress) -> Int
+
+pub fn alljoyn_securityapplicationproxy_getclaimcapabilities(Int64, @core.RawAddress) -> @94493486d51ad13f.QStatus_e5e433a5ef86 raise @core.WindowsError
+
+pub fn alljoyn_securityapplicationproxy_getclaimcapabilities_raw(Int64, @core.RawAddress) -> Int
+
+pub fn alljoyn_securityapplicationproxy_getclaimcapabilitiesadditionalinfo(Int64, @core.RawAddress) -> @94493486d51ad13f.QStatus_e5e433a5ef86 raise @core.WindowsError
+
+pub fn alljoyn_securityapplicationproxy_getclaimcapabilitiesadditionalinfo_raw(Int64, @core.RawAddress) -> Int
+
+pub fn alljoyn_securityapplicationproxy_getdefaultpolicy(Int64, @core.RawAddress) -> @94493486d51ad13f.QStatus_e5e433a5ef86 raise @core.WindowsError
+
+pub fn alljoyn_securityapplicationproxy_getdefaultpolicy_raw(Int64, @core.RawAddress) -> Int
+
+pub fn alljoyn_securityapplicationproxy_geteccpublickey(Int64, @core.RawAddress) -> @94493486d51ad13f.QStatus_e5e433a5ef86 raise @core.WindowsError
+
+pub fn alljoyn_securityapplicationproxy_geteccpublickey_raw(Int64, @core.RawAddress) -> Int
+
+pub fn alljoyn_securityapplicationproxy_getmanifesttemplate(Int64, @core.RawAddress) -> @94493486d51ad13f.QStatus_e5e433a5ef86 raise @core.WindowsError
+
+pub fn alljoyn_securityapplicationproxy_getmanifesttemplate_raw(Int64, @core.RawAddress) -> Int
+
+pub fn alljoyn_securityapplicationproxy_getpermissionmanagementsessionport() -> UInt16 raise @core.WindowsError
+
+pub fn alljoyn_securityapplicationproxy_getpermissionmanagementsessionport_raw() -> UInt
+
+pub fn alljoyn_securityapplicationproxy_getpolicy(Int64, @core.RawAddress) -> @94493486d51ad13f.QStatus_e5e433a5ef86 raise @core.WindowsError
+
+pub fn alljoyn_securityapplicationproxy_getpolicy_raw(Int64, @core.RawAddress) -> Int
+
+pub fn alljoyn_securityapplicationproxy_installmembership(Int64, @core.RawAddress) -> @94493486d51ad13f.QStatus_e5e433a5ef86 raise @core.WindowsError
+
+pub fn alljoyn_securityapplicationproxy_installmembership_raw(Int64, @core.RawAddress) -> Int
+
+pub fn alljoyn_securityapplicationproxy_manifest_destroy(@core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn alljoyn_securityapplicationproxy_manifest_destroy_raw(@core.RawAddress) -> Unit
+
+pub fn alljoyn_securityapplicationproxy_manifesttemplate_destroy(@core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn alljoyn_securityapplicationproxy_manifesttemplate_destroy_raw(@core.RawAddress) -> Unit
+
+pub fn alljoyn_securityapplicationproxy_policy_destroy(@core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn alljoyn_securityapplicationproxy_policy_destroy_raw(@core.RawAddress) -> Unit
+
+pub fn alljoyn_securityapplicationproxy_reset(Int64) -> @94493486d51ad13f.QStatus_e5e433a5ef86 raise @core.WindowsError
+
+pub fn alljoyn_securityapplicationproxy_reset_raw(Int64) -> Int
+
+pub fn alljoyn_securityapplicationproxy_resetpolicy(Int64) -> @94493486d51ad13f.QStatus_e5e433a5ef86 raise @core.WindowsError
+
+pub fn alljoyn_securityapplicationproxy_resetpolicy_raw(Int64) -> Int
+
+pub fn alljoyn_securityapplicationproxy_setmanifestsignature(@core.RawAddress, @core.RawAddress, @core.RawAddress, UInt64, @core.RawAddress) -> @94493486d51ad13f.QStatus_e5e433a5ef86 raise @core.WindowsError
+
+pub fn alljoyn_securityapplicationproxy_setmanifestsignature_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, UInt64, @core.RawAddress) -> Int
+
+pub fn alljoyn_securityapplicationproxy_signmanifest(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> @94493486d51ad13f.QStatus_e5e433a5ef86 raise @core.WindowsError
+
+pub fn alljoyn_securityapplicationproxy_signmanifest_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn alljoyn_securityapplicationproxy_startmanagement(Int64) -> @94493486d51ad13f.QStatus_e5e433a5ef86 raise @core.WindowsError
+
+pub fn alljoyn_securityapplicationproxy_startmanagement_raw(Int64) -> Int
+
+pub fn alljoyn_securityapplicationproxy_updateidentity(Int64, @core.RawAddress, @core.RawAddress, UInt64) -> @94493486d51ad13f.QStatus_e5e433a5ef86 raise @core.WindowsError
+
+pub fn alljoyn_securityapplicationproxy_updateidentity_raw(Int64, @core.RawAddress, @core.RawAddress, UInt64) -> Int
+
+pub fn alljoyn_securityapplicationproxy_updatepolicy(Int64, @core.RawAddress) -> @94493486d51ad13f.QStatus_e5e433a5ef86 raise @core.WindowsError
+
+pub fn alljoyn_securityapplicationproxy_updatepolicy_raw(Int64, @core.RawAddress) -> Int
+
+pub fn alljoyn_sessionlistener_create(@94493486d51ad13f.AlljoynSessionlistenerCallbacks_5bbf42e72431, @core.RawAddress) -> Int64 raise @core.WindowsError
+
+pub fn alljoyn_sessionlistener_create_raw(@core.RawAddress, @core.RawAddress) -> Int64
+
+pub fn alljoyn_sessionlistener_destroy(Int64) -> Unit raise @core.WindowsError
+
+pub fn alljoyn_sessionlistener_destroy_raw(Int64) -> Unit
+
+pub fn alljoyn_sessionopts_cmp(Int64, Int64) -> Int raise @core.WindowsError
+
+pub fn alljoyn_sessionopts_cmp_raw(Int64, Int64) -> Int
+
+pub fn alljoyn_sessionopts_create(Byte, Int, Byte, UInt16) -> Int64 raise @core.WindowsError
+
+pub fn alljoyn_sessionopts_create_raw(UInt, Int, UInt, UInt) -> Int64
+
+pub fn alljoyn_sessionopts_destroy(Int64) -> Unit raise @core.WindowsError
+
+pub fn alljoyn_sessionopts_destroy_raw(Int64) -> Unit
+
+pub fn alljoyn_sessionopts_get_multipoint(Int64) -> Int raise @core.WindowsError
+
+pub fn alljoyn_sessionopts_get_multipoint_raw(Int64) -> Int
+
+pub fn alljoyn_sessionopts_get_proximity(Int64) -> Byte raise @core.WindowsError
+
+pub fn alljoyn_sessionopts_get_proximity_raw(Int64) -> UInt
+
+pub fn alljoyn_sessionopts_get_traffic(Int64) -> Byte raise @core.WindowsError
+
+pub fn alljoyn_sessionopts_get_traffic_raw(Int64) -> UInt
+
+pub fn alljoyn_sessionopts_get_transports(Int64) -> UInt16 raise @core.WindowsError
+
+pub fn alljoyn_sessionopts_get_transports_raw(Int64) -> UInt
+
+pub fn alljoyn_sessionopts_iscompatible(Int64, Int64) -> Int raise @core.WindowsError
+
+pub fn alljoyn_sessionopts_iscompatible_raw(Int64, Int64) -> Int
+
+pub fn alljoyn_sessionopts_set_multipoint(Int64, Int) -> Unit raise @core.WindowsError
+
+pub fn alljoyn_sessionopts_set_multipoint_raw(Int64, Int) -> Unit
+
+pub fn alljoyn_sessionopts_set_proximity(Int64, Byte) -> Unit raise @core.WindowsError
+
+pub fn alljoyn_sessionopts_set_proximity_raw(Int64, UInt) -> Unit
+
+pub fn alljoyn_sessionopts_set_traffic(Int64, Byte) -> Unit raise @core.WindowsError
+
+pub fn alljoyn_sessionopts_set_traffic_raw(Int64, UInt) -> Unit
+
+pub fn alljoyn_sessionopts_set_transports(Int64, UInt16) -> Unit raise @core.WindowsError
+
+pub fn alljoyn_sessionopts_set_transports_raw(Int64, UInt) -> Unit
+
+pub fn alljoyn_sessionportlistener_create(@94493486d51ad13f.AlljoynSessionportlistenerCallbacks_a063d25c356b, @core.RawAddress) -> Int64 raise @core.WindowsError
+
+pub fn alljoyn_sessionportlistener_create_raw(@core.RawAddress, @core.RawAddress) -> Int64
+
+pub fn alljoyn_sessionportlistener_destroy(Int64) -> Unit raise @core.WindowsError
+
+pub fn alljoyn_sessionportlistener_destroy_raw(Int64) -> Unit
+
+pub fn alljoyn_shutdown() -> @94493486d51ad13f.QStatus_e5e433a5ef86 raise @core.WindowsError
+
+pub fn alljoyn_shutdown_raw() -> Int
+
+pub let alljoyn_traffic_type_messages : UInt
+
+pub let alljoyn_traffic_type_raw_reliable : UInt
+
+pub let alljoyn_traffic_type_raw_unreliable : UInt
+
+pub fn alljoyn_unity_deferred_callbacks_process() -> Int raise @core.WindowsError
+
+pub fn alljoyn_unity_deferred_callbacks_process_raw() -> Int
+
+pub fn alljoyn_unity_set_deferred_callback_mainthread_only(Int) -> Unit raise @core.WindowsError
+
+pub fn alljoyn_unity_set_deferred_callback_mainthread_only_raw(Int) -> Unit
+
+pub let alljoyn_write_ready : UInt
+
+pub let qcc_false : UInt
+
+pub fn qcc_status_text(@94493486d51ad13f.QStatus_e5e433a5ef86) -> @core.RawAddress raise @core.WindowsError
+
+pub fn qcc_status_text_raw(Int) -> @core.RawAddress
+
+pub let qcc_true : UInt
+
+// Errors
+
+// Types and methods
+
+// Type aliases
+pub using @94493486d51ad13f {type AlljoynAboutAnnouncedPtr_a6d1297deda3 as AlljoynAboutAnnouncedPtr}
+
+pub using @94493486d51ad13f {type AlljoynAboutAnnounceflag_7774a77d05c7 as AlljoynAboutAnnounceflag}
+
+pub using @94493486d51ad13f {type AlljoynAboutdata_d39f8e4afe81 as AlljoynAboutdata}
+
+pub using @94493486d51ad13f {type AlljoynAboutdatalistener_cd2ebf2a00fb as AlljoynAboutdatalistener}
+
+pub using @94493486d51ad13f {type AlljoynAboutdatalistenerCallbacks_7d6edb1149d9 as AlljoynAboutdatalistenerCallbacks}
+
+pub using @94493486d51ad13f {type AlljoynAboutdatalistenerGetaboutdataPtr_664d77688c0d as AlljoynAboutdatalistenerGetaboutdataPtr}
+
+pub using @94493486d51ad13f {type AlljoynAboutdatalistenerGetannouncedaboutdataPtr_3db4753f2981 as AlljoynAboutdatalistenerGetannouncedaboutdataPtr}
+
+pub using @94493486d51ad13f {type AlljoynAbouticon_dc128495ef40 as AlljoynAbouticon}
+
+pub using @94493486d51ad13f {type AlljoynAbouticonobj_bf1dc82f20f7 as AlljoynAbouticonobj}
+
+pub using @94493486d51ad13f {type AlljoynAbouticonproxy_3efe065161c4 as AlljoynAbouticonproxy}
+
+pub using @94493486d51ad13f {type AlljoynAboutlistener_e0eba018b861 as AlljoynAboutlistener}
+
+pub using @94493486d51ad13f {type AlljoynAboutlistenerCallback_6e315eeb997f as AlljoynAboutlistenerCallback}
+
+pub using @94493486d51ad13f {type AlljoynAboutobj_5d9b3367d59c as AlljoynAboutobj}
+
+pub using @94493486d51ad13f {type AlljoynAboutobjectdescription_c65be49c2f12 as AlljoynAboutobjectdescription}
+
+pub using @94493486d51ad13f {type AlljoynAboutproxy_18f39dd0ffda as AlljoynAboutproxy}
+
+pub using @94493486d51ad13f {type AlljoynApplicationstate_07569c6018ec as AlljoynApplicationstate}
+
+pub using @94493486d51ad13f {type AlljoynApplicationstatelistener_aa65f32775cf as AlljoynApplicationstatelistener}
+
+pub using @94493486d51ad13f {type AlljoynApplicationstatelistenerCallbacks_9d328801a4d8 as AlljoynApplicationstatelistenerCallbacks}
+
+pub using @94493486d51ad13f {type AlljoynApplicationstatelistenerStatePtr_d2d9f95940b5 as AlljoynApplicationstatelistenerStatePtr}
+
+pub using @94493486d51ad13f {type AlljoynAuthlistener_3063ff70f1c3 as AlljoynAuthlistener}
+
+pub using @94493486d51ad13f {type AlljoynAuthlistenerAuthenticationcompletePtr_08eb500b7e28 as AlljoynAuthlistenerAuthenticationcompletePtr}
+
+pub using @94493486d51ad13f {type AlljoynAuthlistenerCallbacks_451d4ba58062 as AlljoynAuthlistenerCallbacks}
+
+pub using @94493486d51ad13f {type AlljoynAuthlistenerRequestcredentialsPtr_ffd0648252c1 as AlljoynAuthlistenerRequestcredentialsPtr}
+
+pub using @94493486d51ad13f {type AlljoynAuthlistenerRequestcredentialsasyncPtr_c8598ee1d827 as AlljoynAuthlistenerRequestcredentialsasyncPtr}
+
+pub using @94493486d51ad13f {type AlljoynAuthlistenerSecurityviolationPtr_ce1c0e220eea as AlljoynAuthlistenerSecurityviolationPtr}
+
+pub using @94493486d51ad13f {type AlljoynAuthlistenerVerifycredentialsPtr_a9332d915fd7 as AlljoynAuthlistenerVerifycredentialsPtr}
+
+pub using @94493486d51ad13f {type AlljoynAuthlistenerVerifycredentialsasyncPtr_d2a14f4d3c56 as AlljoynAuthlistenerVerifycredentialsasyncPtr}
+
+pub using @94493486d51ad13f {type AlljoynAuthlistenerasyncCallbacks_91a80019754e as AlljoynAuthlistenerasyncCallbacks}
+
+pub using @94493486d51ad13f {type AlljoynAutopinger_42b1808a3174 as AlljoynAutopinger}
+
+pub using @94493486d51ad13f {type AlljoynAutopingerDestinationFoundPtr_70597f9ef598 as AlljoynAutopingerDestinationFoundPtr}
+
+pub using @94493486d51ad13f {type AlljoynAutopingerDestinationLostPtr_ce0c971df77e as AlljoynAutopingerDestinationLostPtr}
+
+pub using @94493486d51ad13f {type AlljoynBusattachment_4a430fad7594 as AlljoynBusattachment}
+
+pub using @94493486d51ad13f {type AlljoynBusattachmentJoinsessioncbPtr_deda5e071bc3 as AlljoynBusattachmentJoinsessioncbPtr}
+
+pub using @94493486d51ad13f {type AlljoynBusattachmentSetlinktimeoutcbPtr_583cdcca9883 as AlljoynBusattachmentSetlinktimeoutcbPtr}
+
+pub using @94493486d51ad13f {type AlljoynBuslistener_d5520b559cf3 as AlljoynBuslistener}
+
+pub using @94493486d51ad13f {type AlljoynBuslistenerBusDisconnectedPtr_0c4ad9198f3e as AlljoynBuslistenerBusDisconnectedPtr}
+
+pub using @94493486d51ad13f {type AlljoynBuslistenerBusPropChangedPtr_4df8333ff1c8 as AlljoynBuslistenerBusPropChangedPtr}
+
+pub using @94493486d51ad13f {type AlljoynBuslistenerBusStoppingPtr_d224e2ed0185 as AlljoynBuslistenerBusStoppingPtr}
+
+pub using @94493486d51ad13f {type AlljoynBuslistenerCallbacks_073775007ccf as AlljoynBuslistenerCallbacks}
+
+pub using @94493486d51ad13f {type AlljoynBuslistenerFoundAdvertisedNamePtr_5d42baabbefc as AlljoynBuslistenerFoundAdvertisedNamePtr}
+
+pub using @94493486d51ad13f {type AlljoynBuslistenerListenerRegisteredPtr_e4c943df96b5 as AlljoynBuslistenerListenerRegisteredPtr}
+
+pub using @94493486d51ad13f {type AlljoynBuslistenerListenerUnregisteredPtr_c061aa282ed3 as AlljoynBuslistenerListenerUnregisteredPtr}
+
+pub using @94493486d51ad13f {type AlljoynBuslistenerLostAdvertisedNamePtr_859dcd42fa89 as AlljoynBuslistenerLostAdvertisedNamePtr}
+
+pub using @94493486d51ad13f {type AlljoynBuslistenerNameOwnerChangedPtr_c331ccee05a6 as AlljoynBuslistenerNameOwnerChangedPtr}
+
+pub using @94493486d51ad13f {type AlljoynBusobject_d87accbd2447 as AlljoynBusobject}
+
+pub using @94493486d51ad13f {type AlljoynBusobjectCallbacks_27584be71382 as AlljoynBusobjectCallbacks}
+
+pub using @94493486d51ad13f {type AlljoynBusobjectMethodentry_dde488eb33d6 as AlljoynBusobjectMethodentry}
+
+pub using @94493486d51ad13f {type AlljoynBusobjectObjectRegistrationPtr_eb17e099d099 as AlljoynBusobjectObjectRegistrationPtr}
+
+pub using @94493486d51ad13f {type AlljoynBusobjectPropGetPtr_ee9e935f01eb as AlljoynBusobjectPropGetPtr}
+
+pub using @94493486d51ad13f {type AlljoynBusobjectPropSetPtr_6137fda69784 as AlljoynBusobjectPropSetPtr}
+
+pub using @94493486d51ad13f {type AlljoynCertificateid_bda24bdedfab as AlljoynCertificateid}
+
+pub using @94493486d51ad13f {type AlljoynCertificateidarray_4897a96af07a as AlljoynCertificateidarray}
+
+pub using @94493486d51ad13f {type AlljoynClaimcapabilityMasks_c9e6c7345469 as AlljoynClaimcapabilityMasks}
+
+pub using @94493486d51ad13f {type AlljoynClaimcapabilityadditionalinfoMasks_6cca17407aa5 as AlljoynClaimcapabilityadditionalinfoMasks}
+
+pub using @94493486d51ad13f {type AlljoynCredentials_d0d8eb9d1987 as AlljoynCredentials}
+
+pub using @94493486d51ad13f {type AlljoynInterfacedescription_e759ec821b05 as AlljoynInterfacedescription}
+
+pub using @94493486d51ad13f {type AlljoynInterfacedescriptionMember_c054954b600b as AlljoynInterfacedescriptionMember}
+
+pub using @94493486d51ad13f {type AlljoynInterfacedescriptionProperty_d18094901af0 as AlljoynInterfacedescriptionProperty}
+
+pub using @94493486d51ad13f {type AlljoynInterfacedescriptionSecuritypolicy_5efb3e2260a7 as AlljoynInterfacedescriptionSecuritypolicy}
+
+pub using @94493486d51ad13f {type AlljoynInterfacedescriptionTranslationCallbackPtr_2d98ff940f22 as AlljoynInterfacedescriptionTranslationCallbackPtr}
+
+pub using @94493486d51ad13f {type AlljoynKeystore_88d6c1fa93ea as AlljoynKeystore}
+
+pub using @94493486d51ad13f {type AlljoynKeystorelistener_885764fb59c1 as AlljoynKeystorelistener}
+
+pub using @94493486d51ad13f {type AlljoynKeystorelistenerAcquireexclusivelockPtr_5be1cc867e85 as AlljoynKeystorelistenerAcquireexclusivelockPtr}
+
+pub using @94493486d51ad13f {type AlljoynKeystorelistenerCallbacks_0a2fdc393b27 as AlljoynKeystorelistenerCallbacks}
+
+pub using @94493486d51ad13f {type AlljoynKeystorelistenerLoadrequestPtr_b7145b591a19 as AlljoynKeystorelistenerLoadrequestPtr}
+
+pub using @94493486d51ad13f {type AlljoynKeystorelistenerReleaseexclusivelockPtr_948f226b316a as AlljoynKeystorelistenerReleaseexclusivelockPtr}
+
+pub using @94493486d51ad13f {type AlljoynKeystorelistenerStorerequestPtr_5523b94db1a8 as AlljoynKeystorelistenerStorerequestPtr}
+
+pub using @94493486d51ad13f {type AlljoynKeystorelistenerWithSynchronizationCallbacks_3553c9b28a3c as AlljoynKeystorelistenerWithSynchronizationCallbacks}
+
+pub using @94493486d51ad13f {type AlljoynManifestarray_43be290976fb as AlljoynManifestarray}
+
+pub using @94493486d51ad13f {type AlljoynMessage_ef2209f06885 as AlljoynMessage}
+
+pub using @94493486d51ad13f {type AlljoynMessagereceiverMethodhandlerPtr_03ee4ab12b25 as AlljoynMessagereceiverMethodhandlerPtr}
+
+pub using @94493486d51ad13f {type AlljoynMessagereceiverReplyhandlerPtr_4b27bc38dfc7 as AlljoynMessagereceiverReplyhandlerPtr}
+
+pub using @94493486d51ad13f {type AlljoynMessagereceiverSignalhandlerPtr_5497e638f740 as AlljoynMessagereceiverSignalhandlerPtr}
+
+pub using @94493486d51ad13f {type AlljoynMessagetype_a0298d676d1e as AlljoynMessagetype}
+
+pub using @94493486d51ad13f {type AlljoynMsgarg_41d8d0a8fc35 as AlljoynMsgarg}
+
+pub using @94493486d51ad13f {type AlljoynObserver_541ef73c2552 as AlljoynObserver}
+
+pub using @94493486d51ad13f {type AlljoynObserverObjectDiscoveredPtr_51ad28025808 as AlljoynObserverObjectDiscoveredPtr}
+
+pub using @94493486d51ad13f {type AlljoynObserverObjectLostPtr_1ed91df52737 as AlljoynObserverObjectLostPtr}
+
+pub using @94493486d51ad13f {type AlljoynObserverlistener_b16180378bec as AlljoynObserverlistener}
+
+pub using @94493486d51ad13f {type AlljoynObserverlistenerCallback_def66efcd38f as AlljoynObserverlistenerCallback}
+
+pub using @94493486d51ad13f {type AlljoynPermissionconfigurationlistener_264273c453fd as AlljoynPermissionconfigurationlistener}
+
+pub using @94493486d51ad13f {type AlljoynPermissionconfigurationlistenerCallbacks_f277d35ad488 as AlljoynPermissionconfigurationlistenerCallbacks}
+
+pub using @94493486d51ad13f {type AlljoynPermissionconfigurationlistenerEndmanagementPtr_5d942565986e as AlljoynPermissionconfigurationlistenerEndmanagementPtr}
+
+pub using @94493486d51ad13f {type AlljoynPermissionconfigurationlistenerFactoryresetPtr_929fb32e9e7c as AlljoynPermissionconfigurationlistenerFactoryresetPtr}
+
+pub using @94493486d51ad13f {type AlljoynPermissionconfigurationlistenerPolicychangedPtr_54396dee2f51 as AlljoynPermissionconfigurationlistenerPolicychangedPtr}
+
+pub using @94493486d51ad13f {type AlljoynPermissionconfigurationlistenerStartmanagementPtr_494124553b96 as AlljoynPermissionconfigurationlistenerStartmanagementPtr}
+
+pub using @94493486d51ad13f {type AlljoynPermissionconfigurator_ae71637d8cbb as AlljoynPermissionconfigurator}
+
+pub using @94493486d51ad13f {type AlljoynPinglistener_4de7b15c4aa1 as AlljoynPinglistener}
+
+pub using @94493486d51ad13f {type AlljoynPinglistenerCallback_ccdf9cbb7d3f as AlljoynPinglistenerCallback}
+
+pub using @94493486d51ad13f {type AlljoynProxybusobject_2b860522c32a as AlljoynProxybusobject}
+
+pub using @94493486d51ad13f {type AlljoynProxybusobjectListenerGetallpropertiescbPtr_501f75e3edb2 as AlljoynProxybusobjectListenerGetallpropertiescbPtr}
+
+pub using @94493486d51ad13f {type AlljoynProxybusobjectListenerGetpropertycbPtr_4bb01b4a9e78 as AlljoynProxybusobjectListenerGetpropertycbPtr}
+
+pub using @94493486d51ad13f {type AlljoynProxybusobjectListenerIntrospectcbPtr_4098fac3514f as AlljoynProxybusobjectListenerIntrospectcbPtr}
+
+pub using @94493486d51ad13f {type AlljoynProxybusobjectListenerPropertieschangedPtr_69837af6f794 as AlljoynProxybusobjectListenerPropertieschangedPtr}
+
+pub using @94493486d51ad13f {type AlljoynProxybusobjectListenerSetpropertycbPtr_78ea0dae7167 as AlljoynProxybusobjectListenerSetpropertycbPtr}
+
+pub using @94493486d51ad13f {type AlljoynProxybusobjectRef_b8a1d44ae034 as AlljoynProxybusobjectRef}
+
+pub using @94493486d51ad13f {type AlljoynSecurityapplicationproxy_2b121260c2a7 as AlljoynSecurityapplicationproxy}
+
+pub using @94493486d51ad13f {type AlljoynSessionlistener_daecdd547b90 as AlljoynSessionlistener}
+
+pub using @94493486d51ad13f {type AlljoynSessionlistenerCallbacks_5bbf42e72431 as AlljoynSessionlistenerCallbacks}
+
+pub using @94493486d51ad13f {type AlljoynSessionlistenerSessionlostPtr_dea77bf0b51d as AlljoynSessionlistenerSessionlostPtr}
+
+pub using @94493486d51ad13f {type AlljoynSessionlistenerSessionmemberaddedPtr_c13635f8c949 as AlljoynSessionlistenerSessionmemberaddedPtr}
+
+pub using @94493486d51ad13f {type AlljoynSessionlistenerSessionmemberremovedPtr_ac329b3f5d9f as AlljoynSessionlistenerSessionmemberremovedPtr}
+
+pub using @94493486d51ad13f {type AlljoynSessionlostreason_efbe6520e21f as AlljoynSessionlostreason}
+
+pub using @94493486d51ad13f {type AlljoynSessionopts_dbe8f749841e as AlljoynSessionopts}
+
+pub using @94493486d51ad13f {type AlljoynSessionportlistener_e4afa50dcb78 as AlljoynSessionportlistener}
+
+pub using @94493486d51ad13f {type AlljoynSessionportlistenerAcceptsessionjoinerPtr_8c8c7b4dd80b as AlljoynSessionportlistenerAcceptsessionjoinerPtr}
+
+pub using @94493486d51ad13f {type AlljoynSessionportlistenerCallbacks_a063d25c356b as AlljoynSessionportlistenerCallbacks}
+
+pub using @94493486d51ad13f {type AlljoynSessionportlistenerSessionjoinedPtr_5a7d32403ed3 as AlljoynSessionportlistenerSessionjoinedPtr}
+
+pub using @94493486d51ad13f {type AlljoynTypeid_2bd6c781714b as AlljoynTypeid}
+
+pub using @94493486d51ad13f {type QStatus_e5e433a5ef86 as QStatus}
+
+// Traits

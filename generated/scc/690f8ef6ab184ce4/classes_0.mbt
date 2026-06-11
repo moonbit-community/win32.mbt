@@ -1,0 +1,2559 @@
+///|
+pub fn D3D111CREATEDEVICECONTEXTSTATEFLAG_4362d020776e::d3_d11_1_create_device_context_state_singlethreaded() -> D3D111CREATEDEVICECONTEXTSTATEFLAG_4362d020776e {
+  D3D111CREATEDEVICECONTEXTSTATEFLAG_4362d020776e::from_int(1)
+}
+
+///|
+pub fn D3D11ASYNCGETDATAFLAG_7c50667fbc94::d3_d11_async_getdata_donotflush() -> D3D11ASYNCGETDATAFLAG_7c50667fbc94 {
+  D3D11ASYNCGETDATAFLAG_7c50667fbc94::from_int(1)
+}
+
+///|
+pub fn D3D11AUTHENTICATEDCHANNELTYPE_afed4221eedf::d3_d11_authenticated_channel_d3_d11() -> D3D11AUTHENTICATEDCHANNELTYPE_afed4221eedf {
+  D3D11AUTHENTICATEDCHANNELTYPE_afed4221eedf::from_int(1)
+}
+
+///|
+pub fn D3D11AUTHENTICATEDCHANNELTYPE_afed4221eedf::d3_d11_authenticated_channel_driver_hardware() -> D3D11AUTHENTICATEDCHANNELTYPE_afed4221eedf {
+  D3D11AUTHENTICATEDCHANNELTYPE_afed4221eedf::from_int(3)
+}
+
+///|
+pub fn D3D11AUTHENTICATEDCHANNELTYPE_afed4221eedf::d3_d11_authenticated_channel_driver_software() -> D3D11AUTHENTICATEDCHANNELTYPE_afed4221eedf {
+  D3D11AUTHENTICATEDCHANNELTYPE_afed4221eedf::from_int(2)
+}
+
+///|
+pub fn D3D11AUTHENTICATEDPROCESSIDENTIFIERTYPE_abf5b5a7207e::d3_d11_processidtype_dwm() -> D3D11AUTHENTICATEDPROCESSIDENTIFIERTYPE_abf5b5a7207e {
+  D3D11AUTHENTICATEDPROCESSIDENTIFIERTYPE_abf5b5a7207e::from_int(1)
+}
+
+///|
+pub fn D3D11AUTHENTICATEDPROCESSIDENTIFIERTYPE_abf5b5a7207e::d3_d11_processidtype_handle() -> D3D11AUTHENTICATEDPROCESSIDENTIFIERTYPE_abf5b5a7207e {
+  D3D11AUTHENTICATEDPROCESSIDENTIFIERTYPE_abf5b5a7207e::from_int(2)
+}
+
+///|
+pub fn D3D11AUTHENTICATEDPROCESSIDENTIFIERTYPE_abf5b5a7207e::d3_d11_processidtype_unknown() -> D3D11AUTHENTICATEDPROCESSIDENTIFIERTYPE_abf5b5a7207e {
+  D3D11AUTHENTICATEDPROCESSIDENTIFIERTYPE_abf5b5a7207e::from_int(0)
+}
+
+///|
+pub fn D3D11BINDFLAG_caa18b8eb5ab::d3_d11_bind_constant_buffer() -> D3D11BINDFLAG_caa18b8eb5ab {
+  D3D11BINDFLAG_caa18b8eb5ab::from_int(4)
+}
+
+///|
+pub fn D3D11BINDFLAG_caa18b8eb5ab::d3_d11_bind_decoder() -> D3D11BINDFLAG_caa18b8eb5ab {
+  D3D11BINDFLAG_caa18b8eb5ab::from_int(512)
+}
+
+///|
+pub fn D3D11BINDFLAG_caa18b8eb5ab::d3_d11_bind_depth_stencil() -> D3D11BINDFLAG_caa18b8eb5ab {
+  D3D11BINDFLAG_caa18b8eb5ab::from_int(64)
+}
+
+///|
+pub fn D3D11BINDFLAG_caa18b8eb5ab::d3_d11_bind_index_buffer() -> D3D11BINDFLAG_caa18b8eb5ab {
+  D3D11BINDFLAG_caa18b8eb5ab::from_int(2)
+}
+
+///|
+pub fn D3D11BINDFLAG_caa18b8eb5ab::d3_d11_bind_render_target() -> D3D11BINDFLAG_caa18b8eb5ab {
+  D3D11BINDFLAG_caa18b8eb5ab::from_int(32)
+}
+
+///|
+pub fn D3D11BINDFLAG_caa18b8eb5ab::d3_d11_bind_shader_resource() -> D3D11BINDFLAG_caa18b8eb5ab {
+  D3D11BINDFLAG_caa18b8eb5ab::from_int(8)
+}
+
+///|
+pub fn D3D11BINDFLAG_caa18b8eb5ab::d3_d11_bind_stream_output() -> D3D11BINDFLAG_caa18b8eb5ab {
+  D3D11BINDFLAG_caa18b8eb5ab::from_int(16)
+}
+
+///|
+pub fn D3D11BINDFLAG_caa18b8eb5ab::d3_d11_bind_unordered_access() -> D3D11BINDFLAG_caa18b8eb5ab {
+  D3D11BINDFLAG_caa18b8eb5ab::from_int(128)
+}
+
+///|
+pub fn D3D11BINDFLAG_caa18b8eb5ab::d3_d11_bind_vertex_buffer() -> D3D11BINDFLAG_caa18b8eb5ab {
+  D3D11BINDFLAG_caa18b8eb5ab::from_int(1)
+}
+
+///|
+pub fn D3D11BINDFLAG_caa18b8eb5ab::d3_d11_bind_video_encoder() -> D3D11BINDFLAG_caa18b8eb5ab {
+  D3D11BINDFLAG_caa18b8eb5ab::from_int(1024)
+}
+
+///|
+pub fn D3D11BLEND_5b742b735d9f::blend_factor() -> D3D11BLEND_5b742b735d9f {
+  D3D11BLEND_5b742b735d9f::from_int(14)
+}
+
+///|
+pub fn D3D11BLEND_5b742b735d9f::dest_alpha() -> D3D11BLEND_5b742b735d9f {
+  D3D11BLEND_5b742b735d9f::from_int(7)
+}
+
+///|
+pub fn D3D11BLEND_5b742b735d9f::dest_color() -> D3D11BLEND_5b742b735d9f {
+  D3D11BLEND_5b742b735d9f::from_int(9)
+}
+
+///|
+pub fn D3D11BLEND_5b742b735d9f::inv_blend_factor() -> D3D11BLEND_5b742b735d9f {
+  D3D11BLEND_5b742b735d9f::from_int(15)
+}
+
+///|
+pub fn D3D11BLEND_5b742b735d9f::inv_dest_alpha() -> D3D11BLEND_5b742b735d9f {
+  D3D11BLEND_5b742b735d9f::from_int(8)
+}
+
+///|
+pub fn D3D11BLEND_5b742b735d9f::inv_dest_color() -> D3D11BLEND_5b742b735d9f {
+  D3D11BLEND_5b742b735d9f::from_int(10)
+}
+
+///|
+pub fn D3D11BLEND_5b742b735d9f::inv_src1_alpha() -> D3D11BLEND_5b742b735d9f {
+  D3D11BLEND_5b742b735d9f::from_int(19)
+}
+
+///|
+pub fn D3D11BLEND_5b742b735d9f::inv_src1_color() -> D3D11BLEND_5b742b735d9f {
+  D3D11BLEND_5b742b735d9f::from_int(17)
+}
+
+///|
+pub fn D3D11BLEND_5b742b735d9f::inv_src_alpha() -> D3D11BLEND_5b742b735d9f {
+  D3D11BLEND_5b742b735d9f::from_int(6)
+}
+
+///|
+pub fn D3D11BLEND_5b742b735d9f::inv_src_color() -> D3D11BLEND_5b742b735d9f {
+  D3D11BLEND_5b742b735d9f::from_int(4)
+}
+
+///|
+pub fn D3D11BLEND_5b742b735d9f::one() -> D3D11BLEND_5b742b735d9f {
+  D3D11BLEND_5b742b735d9f::from_int(2)
+}
+
+///|
+pub fn D3D11BLEND_5b742b735d9f::src1_alpha() -> D3D11BLEND_5b742b735d9f {
+  D3D11BLEND_5b742b735d9f::from_int(18)
+}
+
+///|
+pub fn D3D11BLEND_5b742b735d9f::src1_color() -> D3D11BLEND_5b742b735d9f {
+  D3D11BLEND_5b742b735d9f::from_int(16)
+}
+
+///|
+pub fn D3D11BLEND_5b742b735d9f::src_alpha() -> D3D11BLEND_5b742b735d9f {
+  D3D11BLEND_5b742b735d9f::from_int(5)
+}
+
+///|
+pub fn D3D11BLEND_5b742b735d9f::src_alpha_sat() -> D3D11BLEND_5b742b735d9f {
+  D3D11BLEND_5b742b735d9f::from_int(11)
+}
+
+///|
+pub fn D3D11BLEND_5b742b735d9f::src_color() -> D3D11BLEND_5b742b735d9f {
+  D3D11BLEND_5b742b735d9f::from_int(3)
+}
+
+///|
+pub fn D3D11BLEND_5b742b735d9f::zero() -> D3D11BLEND_5b742b735d9f {
+  D3D11BLEND_5b742b735d9f::from_int(1)
+}
+
+///|
+pub fn D3D11BLENDOP_fc8d12911d94::add() -> D3D11BLENDOP_fc8d12911d94 {
+  D3D11BLENDOP_fc8d12911d94::from_int(1)
+}
+
+///|
+pub fn D3D11BLENDOP_fc8d12911d94::max() -> D3D11BLENDOP_fc8d12911d94 {
+  D3D11BLENDOP_fc8d12911d94::from_int(5)
+}
+
+///|
+pub fn D3D11BLENDOP_fc8d12911d94::min() -> D3D11BLENDOP_fc8d12911d94 {
+  D3D11BLENDOP_fc8d12911d94::from_int(4)
+}
+
+///|
+pub fn D3D11BLENDOP_fc8d12911d94::rev_subtract() -> D3D11BLENDOP_fc8d12911d94 {
+  D3D11BLENDOP_fc8d12911d94::from_int(3)
+}
+
+///|
+pub fn D3D11BLENDOP_fc8d12911d94::subtract() -> D3D11BLENDOP_fc8d12911d94 {
+  D3D11BLENDOP_fc8d12911d94::from_int(2)
+}
+
+///|
+pub fn D3D11BUFFEREXSRVFLAG_9e3d4989bd77::raw() -> D3D11BUFFEREXSRVFLAG_9e3d4989bd77 {
+  D3D11BUFFEREXSRVFLAG_9e3d4989bd77::from_int(1)
+}
+
+///|
+pub fn D3D11BUFFERUAVFLAG_157fe99f3260::append() -> D3D11BUFFERUAVFLAG_157fe99f3260 {
+  D3D11BUFFERUAVFLAG_157fe99f3260::from_int(2)
+}
+
+///|
+pub fn D3D11BUFFERUAVFLAG_157fe99f3260::counter() -> D3D11BUFFERUAVFLAG_157fe99f3260 {
+  D3D11BUFFERUAVFLAG_157fe99f3260::from_int(4)
+}
+
+///|
+pub fn D3D11BUFFERUAVFLAG_157fe99f3260::raw() -> D3D11BUFFERUAVFLAG_157fe99f3260 {
+  D3D11BUFFERUAVFLAG_157fe99f3260::from_int(1)
+}
+
+///|
+pub fn D3D11BUSTYPE_a6f2a22ca43a::d3_d11_bus_impl_modifier_daughter_board_connector() -> D3D11BUSTYPE_a6f2a22ca43a {
+  D3D11BUSTYPE_a6f2a22ca43a::from_int(262144)
+}
+
+///|
+pub fn D3D11BUSTYPE_a6f2a22ca43a::d3_d11_bus_impl_modifier_daughter_board_connector_inside_of_nuae() -> D3D11BUSTYPE_a6f2a22ca43a {
+  D3D11BUSTYPE_a6f2a22ca43a::from_int(327680)
+}
+
+///|
+pub fn D3D11BUSTYPE_a6f2a22ca43a::d3_d11_bus_impl_modifier_inside_of_chipset() -> D3D11BUSTYPE_a6f2a22ca43a {
+  D3D11BUSTYPE_a6f2a22ca43a::from_int(65536)
+}
+
+///|
+pub fn D3D11BUSTYPE_a6f2a22ca43a::d3_d11_bus_impl_modifier_non_standard() -> D3D11BUSTYPE_a6f2a22ca43a {
+  D3D11BUSTYPE_a6f2a22ca43a::from_int(-2147483648)
+}
+
+///|
+pub fn D3D11BUSTYPE_a6f2a22ca43a::d3_d11_bus_impl_modifier_tracks_on_mother_board_to_chip() -> D3D11BUSTYPE_a6f2a22ca43a {
+  D3D11BUSTYPE_a6f2a22ca43a::from_int(131072)
+}
+
+///|
+pub fn D3D11BUSTYPE_a6f2a22ca43a::d3_d11_bus_impl_modifier_tracks_on_mother_board_to_socket() -> D3D11BUSTYPE_a6f2a22ca43a {
+  D3D11BUSTYPE_a6f2a22ca43a::from_int(196608)
+}
+
+///|
+pub fn D3D11BUSTYPE_a6f2a22ca43a::agp() -> D3D11BUSTYPE_a6f2a22ca43a {
+  D3D11BUSTYPE_a6f2a22ca43a::from_int(4)
+}
+
+///|
+pub fn D3D11BUSTYPE_a6f2a22ca43a::other() -> D3D11BUSTYPE_a6f2a22ca43a {
+  D3D11BUSTYPE_a6f2a22ca43a::from_int(0)
+}
+
+///|
+pub fn D3D11BUSTYPE_a6f2a22ca43a::pci() -> D3D11BUSTYPE_a6f2a22ca43a {
+  D3D11BUSTYPE_a6f2a22ca43a::from_int(1)
+}
+
+///|
+pub fn D3D11BUSTYPE_a6f2a22ca43a::pciexpress() -> D3D11BUSTYPE_a6f2a22ca43a {
+  D3D11BUSTYPE_a6f2a22ca43a::from_int(3)
+}
+
+///|
+pub fn D3D11BUSTYPE_a6f2a22ca43a::pcix() -> D3D11BUSTYPE_a6f2a22ca43a {
+  D3D11BUSTYPE_a6f2a22ca43a::from_int(2)
+}
+
+///|
+pub fn D3D11CHECKMULTISAMPLEQUALITYLEVELSFLAG_96a6df13015b::d3_d11_check_multisample_quality_levels_tiled_resource() -> D3D11CHECKMULTISAMPLEQUALITYLEVELSFLAG_96a6df13015b {
+  D3D11CHECKMULTISAMPLEQUALITYLEVELSFLAG_96a6df13015b::from_int(1)
+}
+
+///|
+pub fn D3D11CLEARFLAG_cfc231b8150a::d3_d11_clear_depth() -> D3D11CLEARFLAG_cfc231b8150a {
+  D3D11CLEARFLAG_cfc231b8150a::from_int(1U.reinterpret_as_int())
+}
+
+///|
+pub fn D3D11CLEARFLAG_cfc231b8150a::d3_d11_clear_stencil() -> D3D11CLEARFLAG_cfc231b8150a {
+  D3D11CLEARFLAG_cfc231b8150a::from_int(2U.reinterpret_as_int())
+}
+
+///|
+pub fn D3D11COLORWRITEENABLE_1ae7f88adfba::all() -> D3D11COLORWRITEENABLE_1ae7f88adfba {
+  D3D11COLORWRITEENABLE_1ae7f88adfba::from_int(15)
+}
+
+///|
+pub fn D3D11COLORWRITEENABLE_1ae7f88adfba::alpha() -> D3D11COLORWRITEENABLE_1ae7f88adfba {
+  D3D11COLORWRITEENABLE_1ae7f88adfba::from_int(8)
+}
+
+///|
+pub fn D3D11COLORWRITEENABLE_1ae7f88adfba::blue() -> D3D11COLORWRITEENABLE_1ae7f88adfba {
+  D3D11COLORWRITEENABLE_1ae7f88adfba::from_int(4)
+}
+
+///|
+pub fn D3D11COLORWRITEENABLE_1ae7f88adfba::green() -> D3D11COLORWRITEENABLE_1ae7f88adfba {
+  D3D11COLORWRITEENABLE_1ae7f88adfba::from_int(2)
+}
+
+///|
+pub fn D3D11COLORWRITEENABLE_1ae7f88adfba::red() -> D3D11COLORWRITEENABLE_1ae7f88adfba {
+  D3D11COLORWRITEENABLE_1ae7f88adfba::from_int(1)
+}
+
+///|
+pub fn D3D11COMPARISONFUNC_ec4aa54c48c9::d3_d11_comparison_always() -> D3D11COMPARISONFUNC_ec4aa54c48c9 {
+  D3D11COMPARISONFUNC_ec4aa54c48c9::from_int(8)
+}
+
+///|
+pub fn D3D11COMPARISONFUNC_ec4aa54c48c9::d3_d11_comparison_equal() -> D3D11COMPARISONFUNC_ec4aa54c48c9 {
+  D3D11COMPARISONFUNC_ec4aa54c48c9::from_int(3)
+}
+
+///|
+pub fn D3D11COMPARISONFUNC_ec4aa54c48c9::d3_d11_comparison_greater() -> D3D11COMPARISONFUNC_ec4aa54c48c9 {
+  D3D11COMPARISONFUNC_ec4aa54c48c9::from_int(5)
+}
+
+///|
+pub fn D3D11COMPARISONFUNC_ec4aa54c48c9::d3_d11_comparison_greater_equal() -> D3D11COMPARISONFUNC_ec4aa54c48c9 {
+  D3D11COMPARISONFUNC_ec4aa54c48c9::from_int(7)
+}
+
+///|
+pub fn D3D11COMPARISONFUNC_ec4aa54c48c9::d3_d11_comparison_less() -> D3D11COMPARISONFUNC_ec4aa54c48c9 {
+  D3D11COMPARISONFUNC_ec4aa54c48c9::from_int(2)
+}
+
+///|
+pub fn D3D11COMPARISONFUNC_ec4aa54c48c9::d3_d11_comparison_less_equal() -> D3D11COMPARISONFUNC_ec4aa54c48c9 {
+  D3D11COMPARISONFUNC_ec4aa54c48c9::from_int(4)
+}
+
+///|
+pub fn D3D11COMPARISONFUNC_ec4aa54c48c9::d3_d11_comparison_never() -> D3D11COMPARISONFUNC_ec4aa54c48c9 {
+  D3D11COMPARISONFUNC_ec4aa54c48c9::from_int(1)
+}
+
+///|
+pub fn D3D11COMPARISONFUNC_ec4aa54c48c9::d3_d11_comparison_not_equal() -> D3D11COMPARISONFUNC_ec4aa54c48c9 {
+  D3D11COMPARISONFUNC_ec4aa54c48c9::from_int(6)
+}
+
+///|
+pub fn D3D11CONSERVATIVERASTERIZATIONMODE_6d9c0e7d5658::off() -> D3D11CONSERVATIVERASTERIZATIONMODE_6d9c0e7d5658 {
+  D3D11CONSERVATIVERASTERIZATIONMODE_6d9c0e7d5658::from_int(0)
+}
+
+///|
+pub fn D3D11CONSERVATIVERASTERIZATIONMODE_6d9c0e7d5658::on() -> D3D11CONSERVATIVERASTERIZATIONMODE_6d9c0e7d5658 {
+  D3D11CONSERVATIVERASTERIZATIONMODE_6d9c0e7d5658::from_int(1)
+}
+
+///|
+pub fn D3D11CONSERVATIVERASTERIZATIONTIER_f6263b61502d::d3_d11_conservative_rasterization_not_supported() -> D3D11CONSERVATIVERASTERIZATIONTIER_f6263b61502d {
+  D3D11CONSERVATIVERASTERIZATIONTIER_f6263b61502d::from_int(0)
+}
+
+///|
+pub fn D3D11CONSERVATIVERASTERIZATIONTIER_f6263b61502d::n_1() -> D3D11CONSERVATIVERASTERIZATIONTIER_f6263b61502d {
+  D3D11CONSERVATIVERASTERIZATIONTIER_f6263b61502d::from_int(1)
+}
+
+///|
+pub fn D3D11CONSERVATIVERASTERIZATIONTIER_f6263b61502d::n_2() -> D3D11CONSERVATIVERASTERIZATIONTIER_f6263b61502d {
+  D3D11CONSERVATIVERASTERIZATIONTIER_f6263b61502d::from_int(2)
+}
+
+///|
+pub fn D3D11CONSERVATIVERASTERIZATIONTIER_f6263b61502d::n_3() -> D3D11CONSERVATIVERASTERIZATIONTIER_f6263b61502d {
+  D3D11CONSERVATIVERASTERIZATIONTIER_f6263b61502d::from_int(3)
+}
+
+///|
+pub fn D3D11CONTENTPROTECTIONCAPS_7a6441fedeb9::content_key() -> D3D11CONTENTPROTECTIONCAPS_7a6441fedeb9 {
+  D3D11CONTENTPROTECTIONCAPS_7a6441fedeb9::from_int(16)
+}
+
+///|
+pub fn D3D11CONTENTPROTECTIONCAPS_7a6441fedeb9::decryption_blt() -> D3D11CONTENTPROTECTIONCAPS_7a6441fedeb9 {
+  D3D11CONTENTPROTECTIONCAPS_7a6441fedeb9::from_int(1024)
+}
+
+///|
+pub fn D3D11CONTENTPROTECTIONCAPS_7a6441fedeb9::encrypted_read_back() -> D3D11CONTENTPROTECTIONCAPS_7a6441fedeb9 {
+  D3D11CONTENTPROTECTIONCAPS_7a6441fedeb9::from_int(64)
+}
+
+///|
+pub fn D3D11CONTENTPROTECTIONCAPS_7a6441fedeb9::encrypted_read_back_key() -> D3D11CONTENTPROTECTIONCAPS_7a6441fedeb9 {
+  D3D11CONTENTPROTECTIONCAPS_7a6441fedeb9::from_int(128)
+}
+
+///|
+pub fn D3D11CONTENTPROTECTIONCAPS_7a6441fedeb9::encrypt_slicedata_only() -> D3D11CONTENTPROTECTIONCAPS_7a6441fedeb9 {
+  D3D11CONTENTPROTECTIONCAPS_7a6441fedeb9::from_int(512)
+}
+
+///|
+pub fn D3D11CONTENTPROTECTIONCAPS_7a6441fedeb9::freshen_session_key() -> D3D11CONTENTPROTECTIONCAPS_7a6441fedeb9 {
+  D3D11CONTENTPROTECTIONCAPS_7a6441fedeb9::from_int(32)
+}
+
+///|
+pub fn D3D11CONTENTPROTECTIONCAPS_7a6441fedeb9::hardware() -> D3D11CONTENTPROTECTIONCAPS_7a6441fedeb9 {
+  D3D11CONTENTPROTECTIONCAPS_7a6441fedeb9::from_int(2)
+}
+
+///|
+pub fn D3D11CONTENTPROTECTIONCAPS_7a6441fedeb9::hardware_drm_communication() -> D3D11CONTENTPROTECTIONCAPS_7a6441fedeb9 {
+  D3D11CONTENTPROTECTIONCAPS_7a6441fedeb9::from_int(16384)
+}
+
+///|
+pub fn D3D11CONTENTPROTECTIONCAPS_7a6441fedeb9::hardware_drm_communication_multi_threaded() -> D3D11CONTENTPROTECTIONCAPS_7a6441fedeb9 {
+  D3D11CONTENTPROTECTIONCAPS_7a6441fedeb9::from_int(32768)
+}
+
+///|
+pub fn D3D11CONTENTPROTECTIONCAPS_7a6441fedeb9::hardware_protected_memory_pageable() -> D3D11CONTENTPROTECTIONCAPS_7a6441fedeb9 {
+  D3D11CONTENTPROTECTIONCAPS_7a6441fedeb9::from_int(4096)
+}
+
+///|
+pub fn D3D11CONTENTPROTECTIONCAPS_7a6441fedeb9::hardware_protect_uncompressed() -> D3D11CONTENTPROTECTIONCAPS_7a6441fedeb9 {
+  D3D11CONTENTPROTECTIONCAPS_7a6441fedeb9::from_int(2048)
+}
+
+///|
+pub fn D3D11CONTENTPROTECTIONCAPS_7a6441fedeb9::hardware_teardown() -> D3D11CONTENTPROTECTIONCAPS_7a6441fedeb9 {
+  D3D11CONTENTPROTECTIONCAPS_7a6441fedeb9::from_int(8192)
+}
+
+///|
+pub fn D3D11CONTENTPROTECTIONCAPS_7a6441fedeb9::partial_decryption() -> D3D11CONTENTPROTECTIONCAPS_7a6441fedeb9 {
+  D3D11CONTENTPROTECTIONCAPS_7a6441fedeb9::from_int(8)
+}
+
+///|
+pub fn D3D11CONTENTPROTECTIONCAPS_7a6441fedeb9::protection_always_on() -> D3D11CONTENTPROTECTIONCAPS_7a6441fedeb9 {
+  D3D11CONTENTPROTECTIONCAPS_7a6441fedeb9::from_int(4)
+}
+
+///|
+pub fn D3D11CONTENTPROTECTIONCAPS_7a6441fedeb9::sequential_ctr_iv() -> D3D11CONTENTPROTECTIONCAPS_7a6441fedeb9 {
+  D3D11CONTENTPROTECTIONCAPS_7a6441fedeb9::from_int(256)
+}
+
+///|
+pub fn D3D11CONTENTPROTECTIONCAPS_7a6441fedeb9::software() -> D3D11CONTENTPROTECTIONCAPS_7a6441fedeb9 {
+  D3D11CONTENTPROTECTIONCAPS_7a6441fedeb9::from_int(1)
+}
+
+///|
+pub fn D3D11CONTEXTTYPE_9f3877fea61b::n_3_d() -> D3D11CONTEXTTYPE_9f3877fea61b {
+  D3D11CONTEXTTYPE_9f3877fea61b::from_int(1)
+}
+
+///|
+pub fn D3D11CONTEXTTYPE_9f3877fea61b::all() -> D3D11CONTEXTTYPE_9f3877fea61b {
+  D3D11CONTEXTTYPE_9f3877fea61b::from_int(0)
+}
+
+///|
+pub fn D3D11CONTEXTTYPE_9f3877fea61b::compute() -> D3D11CONTEXTTYPE_9f3877fea61b {
+  D3D11CONTEXTTYPE_9f3877fea61b::from_int(2)
+}
+
+///|
+pub fn D3D11CONTEXTTYPE_9f3877fea61b::copy() -> D3D11CONTEXTTYPE_9f3877fea61b {
+  D3D11CONTEXTTYPE_9f3877fea61b::from_int(3)
+}
+
+///|
+pub fn D3D11CONTEXTTYPE_9f3877fea61b::video() -> D3D11CONTEXTTYPE_9f3877fea61b {
+  D3D11CONTEXTTYPE_9f3877fea61b::from_int(4)
+}
+
+///|
+pub fn D3D11COPYFLAGS_ee2560559e0b::d3_d11_copy_discard() -> D3D11COPYFLAGS_ee2560559e0b {
+  D3D11COPYFLAGS_ee2560559e0b::from_int(2)
+}
+
+///|
+pub fn D3D11COPYFLAGS_ee2560559e0b::d3_d11_copy_no_overwrite() -> D3D11COPYFLAGS_ee2560559e0b {
+  D3D11COPYFLAGS_ee2560559e0b::from_int(1)
+}
+
+///|
+pub fn D3D11COUNTER_07378048f4fa::device_dependent_0() -> D3D11COUNTER_07378048f4fa {
+  D3D11COUNTER_07378048f4fa::from_int(1073741824)
+}
+
+///|
+pub fn D3D11COUNTERTYPE_b082b0c422c3::float32() -> D3D11COUNTERTYPE_b082b0c422c3 {
+  D3D11COUNTERTYPE_b082b0c422c3::from_int(0)
+}
+
+///|
+pub fn D3D11COUNTERTYPE_b082b0c422c3::uint16() -> D3D11COUNTERTYPE_b082b0c422c3 {
+  D3D11COUNTERTYPE_b082b0c422c3::from_int(1)
+}
+
+///|
+pub fn D3D11COUNTERTYPE_b082b0c422c3::uint32() -> D3D11COUNTERTYPE_b082b0c422c3 {
+  D3D11COUNTERTYPE_b082b0c422c3::from_int(2)
+}
+
+///|
+pub fn D3D11COUNTERTYPE_b082b0c422c3::uint64() -> D3D11COUNTERTYPE_b082b0c422c3 {
+  D3D11COUNTERTYPE_b082b0c422c3::from_int(3)
+}
+
+///|
+pub fn D3D11CPUACCESSFLAG_4ee341687a38::d3_d11_cpu_access_read() -> D3D11CPUACCESSFLAG_4ee341687a38 {
+  D3D11CPUACCESSFLAG_4ee341687a38::from_int(131072)
+}
+
+///|
+pub fn D3D11CPUACCESSFLAG_4ee341687a38::d3_d11_cpu_access_write() -> D3D11CPUACCESSFLAG_4ee341687a38 {
+  D3D11CPUACCESSFLAG_4ee341687a38::from_int(65536)
+}
+
+///|
+pub fn D3D11CREATEDEVICEFLAG_903b97d2e846::d3_d11_create_device_bgra_support() -> D3D11CREATEDEVICEFLAG_903b97d2e846 {
+  D3D11CREATEDEVICEFLAG_903b97d2e846::from_int(32U.reinterpret_as_int())
+}
+
+///|
+pub fn D3D11CREATEDEVICEFLAG_903b97d2e846::d3_d11_create_device_debug() -> D3D11CREATEDEVICEFLAG_903b97d2e846 {
+  D3D11CREATEDEVICEFLAG_903b97d2e846::from_int(2U.reinterpret_as_int())
+}
+
+///|
+pub fn D3D11CREATEDEVICEFLAG_903b97d2e846::d3_d11_create_device_debuggable() -> D3D11CREATEDEVICEFLAG_903b97d2e846 {
+  D3D11CREATEDEVICEFLAG_903b97d2e846::from_int(64U.reinterpret_as_int())
+}
+
+///|
+pub fn D3D11CREATEDEVICEFLAG_903b97d2e846::d3_d11_create_device_disable_gpu_timeout() -> D3D11CREATEDEVICEFLAG_903b97d2e846 {
+  D3D11CREATEDEVICEFLAG_903b97d2e846::from_int(256U.reinterpret_as_int())
+}
+
+///|
+pub fn D3D11CREATEDEVICEFLAG_903b97d2e846::d3_d11_create_device_prevent_altering_layer_settings_from_registry() -> D3D11CREATEDEVICEFLAG_903b97d2e846 {
+  D3D11CREATEDEVICEFLAG_903b97d2e846::from_int(128U.reinterpret_as_int())
+}
+
+///|
+pub fn D3D11CREATEDEVICEFLAG_903b97d2e846::d3_d11_create_device_prevent_internal_threading_optimizations() -> D3D11CREATEDEVICEFLAG_903b97d2e846 {
+  D3D11CREATEDEVICEFLAG_903b97d2e846::from_int(8U.reinterpret_as_int())
+}
+
+///|
+pub fn D3D11CREATEDEVICEFLAG_903b97d2e846::d3_d11_create_device_singlethreaded() -> D3D11CREATEDEVICEFLAG_903b97d2e846 {
+  D3D11CREATEDEVICEFLAG_903b97d2e846::from_int(1U.reinterpret_as_int())
+}
+
+///|
+pub fn D3D11CREATEDEVICEFLAG_903b97d2e846::d3_d11_create_device_switch_to_ref() -> D3D11CREATEDEVICEFLAG_903b97d2e846 {
+  D3D11CREATEDEVICEFLAG_903b97d2e846::from_int(4U.reinterpret_as_int())
+}
+
+///|
+pub fn D3D11CREATEDEVICEFLAG_903b97d2e846::d3_d11_create_device_video_support() -> D3D11CREATEDEVICEFLAG_903b97d2e846 {
+  D3D11CREATEDEVICEFLAG_903b97d2e846::from_int(2048U.reinterpret_as_int())
+}
+
+///|
+pub fn D3D11CRYPTOSESSIONKEYEXCHANGEFLAGS_e511c7ca5e20::d3_d11_crypto_session_key_exchange_flag_none() -> D3D11CRYPTOSESSIONKEYEXCHANGEFLAGS_e511c7ca5e20 {
+  D3D11CRYPTOSESSIONKEYEXCHANGEFLAGS_e511c7ca5e20::from_int(0)
+}
+
+///|
+pub fn D3D11CRYPTOSESSIONSTATUS_9468ab5114c7::key_and_content_lost() -> D3D11CRYPTOSESSIONSTATUS_9468ab5114c7 {
+  D3D11CRYPTOSESSIONSTATUS_9468ab5114c7::from_int(2)
+}
+
+///|
+pub fn D3D11CRYPTOSESSIONSTATUS_9468ab5114c7::key_lost() -> D3D11CRYPTOSESSIONSTATUS_9468ab5114c7 {
+  D3D11CRYPTOSESSIONSTATUS_9468ab5114c7::from_int(1)
+}
+
+///|
+pub fn D3D11CRYPTOSESSIONSTATUS_9468ab5114c7::ok() -> D3D11CRYPTOSESSIONSTATUS_9468ab5114c7 {
+  D3D11CRYPTOSESSIONSTATUS_9468ab5114c7::from_int(0)
+}
+
+///|
+pub fn D3D11CULLMODE_e7d9265ce4b5::d3_d11_cull_back() -> D3D11CULLMODE_e7d9265ce4b5 {
+  D3D11CULLMODE_e7d9265ce4b5::from_int(3)
+}
+
+///|
+pub fn D3D11CULLMODE_e7d9265ce4b5::d3_d11_cull_front() -> D3D11CULLMODE_e7d9265ce4b5 {
+  D3D11CULLMODE_e7d9265ce4b5::from_int(2)
+}
+
+///|
+pub fn D3D11CULLMODE_e7d9265ce4b5::d3_d11_cull_none() -> D3D11CULLMODE_e7d9265ce4b5 {
+  D3D11CULLMODE_e7d9265ce4b5::from_int(1)
+}
+
+///|
+pub fn D3D11DEPTHWRITEMASK_98c0c589e528::all() -> D3D11DEPTHWRITEMASK_98c0c589e528 {
+  D3D11DEPTHWRITEMASK_98c0c589e528::from_int(1)
+}
+
+///|
+pub fn D3D11DEPTHWRITEMASK_98c0c589e528::zero() -> D3D11DEPTHWRITEMASK_98c0c589e528 {
+  D3D11DEPTHWRITEMASK_98c0c589e528::from_int(0)
+}
+
+///|
+pub fn D3D11DEVICECONTEXTTYPE_d135ac78d163::d3_d11_device_context_deferred() -> D3D11DEVICECONTEXTTYPE_d135ac78d163 {
+  D3D11DEVICECONTEXTTYPE_d135ac78d163::from_int(1)
+}
+
+///|
+pub fn D3D11DEVICECONTEXTTYPE_d135ac78d163::d3_d11_device_context_immediate() -> D3D11DEVICECONTEXTTYPE_d135ac78d163 {
+  D3D11DEVICECONTEXTTYPE_d135ac78d163::from_int(0)
+}
+
+///|
+pub fn D3D11DSVDIMENSION_46c830f1e4a7::texture1_d() -> D3D11DSVDIMENSION_46c830f1e4a7 {
+  D3D11DSVDIMENSION_46c830f1e4a7::from_int(1)
+}
+
+///|
+pub fn D3D11DSVDIMENSION_46c830f1e4a7::texture1_darray() -> D3D11DSVDIMENSION_46c830f1e4a7 {
+  D3D11DSVDIMENSION_46c830f1e4a7::from_int(2)
+}
+
+///|
+pub fn D3D11DSVDIMENSION_46c830f1e4a7::texture2_d() -> D3D11DSVDIMENSION_46c830f1e4a7 {
+  D3D11DSVDIMENSION_46c830f1e4a7::from_int(3)
+}
+
+///|
+pub fn D3D11DSVDIMENSION_46c830f1e4a7::texture2_darray() -> D3D11DSVDIMENSION_46c830f1e4a7 {
+  D3D11DSVDIMENSION_46c830f1e4a7::from_int(4)
+}
+
+///|
+pub fn D3D11DSVDIMENSION_46c830f1e4a7::texture2_dms() -> D3D11DSVDIMENSION_46c830f1e4a7 {
+  D3D11DSVDIMENSION_46c830f1e4a7::from_int(5)
+}
+
+///|
+pub fn D3D11DSVDIMENSION_46c830f1e4a7::texture2_dmsarray() -> D3D11DSVDIMENSION_46c830f1e4a7 {
+  D3D11DSVDIMENSION_46c830f1e4a7::from_int(6)
+}
+
+///|
+pub fn D3D11DSVDIMENSION_46c830f1e4a7::unknown() -> D3D11DSVDIMENSION_46c830f1e4a7 {
+  D3D11DSVDIMENSION_46c830f1e4a7::from_int(0)
+}
+
+///|
+pub fn D3D11DSVFLAG_35b349a44765::d3_d11_dsv_read_only_depth() -> D3D11DSVFLAG_35b349a44765 {
+  D3D11DSVFLAG_35b349a44765::from_int(1)
+}
+
+///|
+pub fn D3D11DSVFLAG_35b349a44765::d3_d11_dsv_read_only_stencil() -> D3D11DSVFLAG_35b349a44765 {
+  D3D11DSVFLAG_35b349a44765::from_int(2)
+}
+
+///|
+pub fn D3D11FEATURE_741394fad665::architecture_info() -> D3D11FEATURE_741394fad665 {
+  D3D11FEATURE_741394fad665::from_int(6)
+}
+
+///|
+pub fn D3D11FEATURE_741394fad665::d3_d10_x_hardware_options() -> D3D11FEATURE_741394fad665 {
+  D3D11FEATURE_741394fad665::from_int(4)
+}
+
+///|
+pub fn D3D11FEATURE_741394fad665::d3_d11_options() -> D3D11FEATURE_741394fad665 {
+  D3D11FEATURE_741394fad665::from_int(5)
+}
+
+///|
+pub fn D3D11FEATURE_741394fad665::d3_d11_options1() -> D3D11FEATURE_741394fad665 {
+  D3D11FEATURE_741394fad665::from_int(10)
+}
+
+///|
+pub fn D3D11FEATURE_741394fad665::d3_d11_options2() -> D3D11FEATURE_741394fad665 {
+  D3D11FEATURE_741394fad665::from_int(14)
+}
+
+///|
+pub fn D3D11FEATURE_741394fad665::d3_d11_options3() -> D3D11FEATURE_741394fad665 {
+  D3D11FEATURE_741394fad665::from_int(15)
+}
+
+///|
+pub fn D3D11FEATURE_741394fad665::d3_d11_options4() -> D3D11FEATURE_741394fad665 {
+  D3D11FEATURE_741394fad665::from_int(17)
+}
+
+///|
+pub fn D3D11FEATURE_741394fad665::d3_d11_options5() -> D3D11FEATURE_741394fad665 {
+  D3D11FEATURE_741394fad665::from_int(19)
+}
+
+///|
+pub fn D3D11FEATURE_741394fad665::d3_d11_options6() -> D3D11FEATURE_741394fad665 {
+  D3D11FEATURE_741394fad665::from_int(21)
+}
+
+///|
+pub fn D3D11FEATURE_741394fad665::d3_d9_options() -> D3D11FEATURE_741394fad665 {
+  D3D11FEATURE_741394fad665::from_int(7)
+}
+
+///|
+pub fn D3D11FEATURE_741394fad665::d3_d9_options1() -> D3D11FEATURE_741394fad665 {
+  D3D11FEATURE_741394fad665::from_int(13)
+}
+
+///|
+pub fn D3D11FEATURE_741394fad665::d3_d9_shadow_support() -> D3D11FEATURE_741394fad665 {
+  D3D11FEATURE_741394fad665::from_int(9)
+}
+
+///|
+pub fn D3D11FEATURE_741394fad665::d3_d9_simple_instancing_support() -> D3D11FEATURE_741394fad665 {
+  D3D11FEATURE_741394fad665::from_int(11)
+}
+
+///|
+pub fn D3D11FEATURE_741394fad665::displayable() -> D3D11FEATURE_741394fad665 {
+  D3D11FEATURE_741394fad665::from_int(20)
+}
+
+///|
+pub fn D3D11FEATURE_741394fad665::doubles() -> D3D11FEATURE_741394fad665 {
+  D3D11FEATURE_741394fad665::from_int(1)
+}
+
+///|
+pub fn D3D11FEATURE_741394fad665::format_support() -> D3D11FEATURE_741394fad665 {
+  D3D11FEATURE_741394fad665::from_int(2)
+}
+
+///|
+pub fn D3D11FEATURE_741394fad665::format_support2() -> D3D11FEATURE_741394fad665 {
+  D3D11FEATURE_741394fad665::from_int(3)
+}
+
+///|
+pub fn D3D11FEATURE_741394fad665::gpu_virtual_address_support() -> D3D11FEATURE_741394fad665 {
+  D3D11FEATURE_741394fad665::from_int(16)
+}
+
+///|
+pub fn D3D11FEATURE_741394fad665::marker_support() -> D3D11FEATURE_741394fad665 {
+  D3D11FEATURE_741394fad665::from_int(12)
+}
+
+///|
+pub fn D3D11FEATURE_741394fad665::shader_cache() -> D3D11FEATURE_741394fad665 {
+  D3D11FEATURE_741394fad665::from_int(18)
+}
+
+///|
+pub fn D3D11FEATURE_741394fad665::shader_min_precision_support() -> D3D11FEATURE_741394fad665 {
+  D3D11FEATURE_741394fad665::from_int(8)
+}
+
+///|
+pub fn D3D11FEATURE_741394fad665::threading() -> D3D11FEATURE_741394fad665 {
+  D3D11FEATURE_741394fad665::from_int(0)
+}
+
+///|
+pub fn D3D11FEATUREVIDEO_b33e4c8ed097::decoder_histogram() -> D3D11FEATUREVIDEO_b33e4c8ed097 {
+  D3D11FEATUREVIDEO_b33e4c8ed097::from_int(0)
+}
+
+///|
+pub fn D3D11FENCEFLAG_e44a3d38949f::none() -> D3D11FENCEFLAG_e44a3d38949f {
+  D3D11FENCEFLAG_e44a3d38949f::from_int(0)
+}
+
+///|
+pub fn D3D11FENCEFLAG_e44a3d38949f::non_monitored() -> D3D11FENCEFLAG_e44a3d38949f {
+  D3D11FENCEFLAG_e44a3d38949f::from_int(8)
+}
+
+///|
+pub fn D3D11FENCEFLAG_e44a3d38949f::shared() -> D3D11FENCEFLAG_e44a3d38949f {
+  D3D11FENCEFLAG_e44a3d38949f::from_int(2)
+}
+
+///|
+pub fn D3D11FENCEFLAG_e44a3d38949f::shared_cross_adapter() -> D3D11FENCEFLAG_e44a3d38949f {
+  D3D11FENCEFLAG_e44a3d38949f::from_int(4)
+}
+
+///|
+pub fn D3D11FILLMODE_bab519e34e30::d3_d11_fill_solid() -> D3D11FILLMODE_bab519e34e30 {
+  D3D11FILLMODE_bab519e34e30::from_int(3)
+}
+
+///|
+pub fn D3D11FILLMODE_bab519e34e30::d3_d11_fill_wireframe() -> D3D11FILLMODE_bab519e34e30 {
+  D3D11FILLMODE_bab519e34e30::from_int(2)
+}
+
+///|
+pub fn D3D11FILTER_2f588390944f::anisotropic() -> D3D11FILTER_2f588390944f {
+  D3D11FILTER_2f588390944f::from_int(85)
+}
+
+///|
+pub fn D3D11FILTER_2f588390944f::comparison_anisotropic() -> D3D11FILTER_2f588390944f {
+  D3D11FILTER_2f588390944f::from_int(213)
+}
+
+///|
+pub fn D3D11FILTER_2f588390944f::comparison_min_linear_mag_mip_point() -> D3D11FILTER_2f588390944f {
+  D3D11FILTER_2f588390944f::from_int(144)
+}
+
+///|
+pub fn D3D11FILTER_2f588390944f::comparison_min_linear_mag_point_mip_linear() -> D3D11FILTER_2f588390944f {
+  D3D11FILTER_2f588390944f::from_int(145)
+}
+
+///|
+pub fn D3D11FILTER_2f588390944f::comparison_min_mag_linear_mip_point() -> D3D11FILTER_2f588390944f {
+  D3D11FILTER_2f588390944f::from_int(148)
+}
+
+///|
+pub fn D3D11FILTER_2f588390944f::comparison_min_mag_mip_linear() -> D3D11FILTER_2f588390944f {
+  D3D11FILTER_2f588390944f::from_int(149)
+}
+
+///|
+pub fn D3D11FILTER_2f588390944f::comparison_min_mag_mip_point() -> D3D11FILTER_2f588390944f {
+  D3D11FILTER_2f588390944f::from_int(128)
+}
+
+///|
+pub fn D3D11FILTER_2f588390944f::comparison_min_mag_point_mip_linear() -> D3D11FILTER_2f588390944f {
+  D3D11FILTER_2f588390944f::from_int(129)
+}
+
+///|
+pub fn D3D11FILTER_2f588390944f::comparison_min_point_mag_linear_mip_point() -> D3D11FILTER_2f588390944f {
+  D3D11FILTER_2f588390944f::from_int(132)
+}
+
+///|
+pub fn D3D11FILTER_2f588390944f::comparison_min_point_mag_mip_linear() -> D3D11FILTER_2f588390944f {
+  D3D11FILTER_2f588390944f::from_int(133)
+}
+
+///|
+pub fn D3D11FILTER_2f588390944f::maximum_anisotropic() -> D3D11FILTER_2f588390944f {
+  D3D11FILTER_2f588390944f::from_int(469)
+}
+
+///|
+pub fn D3D11FILTER_2f588390944f::maximum_min_linear_mag_mip_point() -> D3D11FILTER_2f588390944f {
+  D3D11FILTER_2f588390944f::from_int(400)
+}
+
+///|
+pub fn D3D11FILTER_2f588390944f::maximum_min_linear_mag_point_mip_linear() -> D3D11FILTER_2f588390944f {
+  D3D11FILTER_2f588390944f::from_int(401)
+}
+
+///|
+pub fn D3D11FILTER_2f588390944f::maximum_min_mag_linear_mip_point() -> D3D11FILTER_2f588390944f {
+  D3D11FILTER_2f588390944f::from_int(404)
+}
+
+///|
+pub fn D3D11FILTER_2f588390944f::maximum_min_mag_mip_linear() -> D3D11FILTER_2f588390944f {
+  D3D11FILTER_2f588390944f::from_int(405)
+}
+
+///|
+pub fn D3D11FILTER_2f588390944f::maximum_min_mag_mip_point() -> D3D11FILTER_2f588390944f {
+  D3D11FILTER_2f588390944f::from_int(384)
+}
+
+///|
+pub fn D3D11FILTER_2f588390944f::maximum_min_mag_point_mip_linear() -> D3D11FILTER_2f588390944f {
+  D3D11FILTER_2f588390944f::from_int(385)
+}
+
+///|
+pub fn D3D11FILTER_2f588390944f::maximum_min_point_mag_linear_mip_point() -> D3D11FILTER_2f588390944f {
+  D3D11FILTER_2f588390944f::from_int(388)
+}
+
+///|
+pub fn D3D11FILTER_2f588390944f::maximum_min_point_mag_mip_linear() -> D3D11FILTER_2f588390944f {
+  D3D11FILTER_2f588390944f::from_int(389)
+}
+
+///|
+pub fn D3D11FILTER_2f588390944f::minimum_anisotropic() -> D3D11FILTER_2f588390944f {
+  D3D11FILTER_2f588390944f::from_int(341)
+}
+
+///|
+pub fn D3D11FILTER_2f588390944f::minimum_min_linear_mag_mip_point() -> D3D11FILTER_2f588390944f {
+  D3D11FILTER_2f588390944f::from_int(272)
+}
+
+///|
+pub fn D3D11FILTER_2f588390944f::minimum_min_linear_mag_point_mip_linear() -> D3D11FILTER_2f588390944f {
+  D3D11FILTER_2f588390944f::from_int(273)
+}
+
+///|
+pub fn D3D11FILTER_2f588390944f::minimum_min_mag_linear_mip_point() -> D3D11FILTER_2f588390944f {
+  D3D11FILTER_2f588390944f::from_int(276)
+}
+
+///|
+pub fn D3D11FILTER_2f588390944f::minimum_min_mag_mip_linear() -> D3D11FILTER_2f588390944f {
+  D3D11FILTER_2f588390944f::from_int(277)
+}
+
+///|
+pub fn D3D11FILTER_2f588390944f::minimum_min_mag_mip_point() -> D3D11FILTER_2f588390944f {
+  D3D11FILTER_2f588390944f::from_int(256)
+}
+
+///|
+pub fn D3D11FILTER_2f588390944f::minimum_min_mag_point_mip_linear() -> D3D11FILTER_2f588390944f {
+  D3D11FILTER_2f588390944f::from_int(257)
+}
+
+///|
+pub fn D3D11FILTER_2f588390944f::minimum_min_point_mag_linear_mip_point() -> D3D11FILTER_2f588390944f {
+  D3D11FILTER_2f588390944f::from_int(260)
+}
+
+///|
+pub fn D3D11FILTER_2f588390944f::minimum_min_point_mag_mip_linear() -> D3D11FILTER_2f588390944f {
+  D3D11FILTER_2f588390944f::from_int(261)
+}
+
+///|
+pub fn D3D11FILTER_2f588390944f::min_linear_mag_mip_point() -> D3D11FILTER_2f588390944f {
+  D3D11FILTER_2f588390944f::from_int(16)
+}
+
+///|
+pub fn D3D11FILTER_2f588390944f::min_linear_mag_point_mip_linear() -> D3D11FILTER_2f588390944f {
+  D3D11FILTER_2f588390944f::from_int(17)
+}
+
+///|
+pub fn D3D11FILTER_2f588390944f::min_mag_linear_mip_point() -> D3D11FILTER_2f588390944f {
+  D3D11FILTER_2f588390944f::from_int(20)
+}
+
+///|
+pub fn D3D11FILTER_2f588390944f::min_mag_mip_linear() -> D3D11FILTER_2f588390944f {
+  D3D11FILTER_2f588390944f::from_int(21)
+}
+
+///|
+pub fn D3D11FILTER_2f588390944f::min_mag_mip_point() -> D3D11FILTER_2f588390944f {
+  D3D11FILTER_2f588390944f::from_int(0)
+}
+
+///|
+pub fn D3D11FILTER_2f588390944f::min_mag_point_mip_linear() -> D3D11FILTER_2f588390944f {
+  D3D11FILTER_2f588390944f::from_int(1)
+}
+
+///|
+pub fn D3D11FILTER_2f588390944f::min_point_mag_linear_mip_point() -> D3D11FILTER_2f588390944f {
+  D3D11FILTER_2f588390944f::from_int(4)
+}
+
+///|
+pub fn D3D11FILTER_2f588390944f::min_point_mag_mip_linear() -> D3D11FILTER_2f588390944f {
+  D3D11FILTER_2f588390944f::from_int(5)
+}
+
+///|
+pub fn D3D11FILTERREDUCTIONTYPE_2967611da813::comparison() -> D3D11FILTERREDUCTIONTYPE_2967611da813 {
+  D3D11FILTERREDUCTIONTYPE_2967611da813::from_int(1)
+}
+
+///|
+pub fn D3D11FILTERREDUCTIONTYPE_2967611da813::maximum() -> D3D11FILTERREDUCTIONTYPE_2967611da813 {
+  D3D11FILTERREDUCTIONTYPE_2967611da813::from_int(3)
+}
+
+///|
+pub fn D3D11FILTERREDUCTIONTYPE_2967611da813::minimum() -> D3D11FILTERREDUCTIONTYPE_2967611da813 {
+  D3D11FILTERREDUCTIONTYPE_2967611da813::from_int(2)
+}
+
+///|
+pub fn D3D11FILTERREDUCTIONTYPE_2967611da813::standard() -> D3D11FILTERREDUCTIONTYPE_2967611da813 {
+  D3D11FILTERREDUCTIONTYPE_2967611da813::from_int(0)
+}
+
+///|
+pub fn D3D11FILTERTYPE_3c304c97e633::linear() -> D3D11FILTERTYPE_3c304c97e633 {
+  D3D11FILTERTYPE_3c304c97e633::from_int(1)
+}
+
+///|
+pub fn D3D11FILTERTYPE_3c304c97e633::point() -> D3D11FILTERTYPE_3c304c97e633 {
+  D3D11FILTERTYPE_3c304c97e633::from_int(0)
+}
+
+///|
+pub fn D3D11FORMATSUPPORT_119f8c7a4060::back_buffer_cast() -> D3D11FORMATSUPPORT_119f8c7a4060 {
+  D3D11FORMATSUPPORT_119f8c7a4060::from_int(16777216)
+}
+
+///|
+pub fn D3D11FORMATSUPPORT_119f8c7a4060::blendable() -> D3D11FORMATSUPPORT_119f8c7a4060 {
+  D3D11FORMATSUPPORT_119f8c7a4060::from_int(32768)
+}
+
+///|
+pub fn D3D11FORMATSUPPORT_119f8c7a4060::buffer() -> D3D11FORMATSUPPORT_119f8c7a4060 {
+  D3D11FORMATSUPPORT_119f8c7a4060::from_int(1)
+}
+
+///|
+pub fn D3D11FORMATSUPPORT_119f8c7a4060::cast_within_bit_layout() -> D3D11FORMATSUPPORT_119f8c7a4060 {
+  D3D11FORMATSUPPORT_119f8c7a4060::from_int(1048576)
+}
+
+///|
+pub fn D3D11FORMATSUPPORT_119f8c7a4060::cpu_lockable() -> D3D11FORMATSUPPORT_119f8c7a4060 {
+  D3D11FORMATSUPPORT_119f8c7a4060::from_int(131072)
+}
+
+///|
+pub fn D3D11FORMATSUPPORT_119f8c7a4060::decoder_output() -> D3D11FORMATSUPPORT_119f8c7a4060 {
+  D3D11FORMATSUPPORT_119f8c7a4060::from_int(134217728)
+}
+
+///|
+pub fn D3D11FORMATSUPPORT_119f8c7a4060::depth_stencil() -> D3D11FORMATSUPPORT_119f8c7a4060 {
+  D3D11FORMATSUPPORT_119f8c7a4060::from_int(65536)
+}
+
+///|
+pub fn D3D11FORMATSUPPORT_119f8c7a4060::display() -> D3D11FORMATSUPPORT_119f8c7a4060 {
+  D3D11FORMATSUPPORT_119f8c7a4060::from_int(524288)
+}
+
+///|
+pub fn D3D11FORMATSUPPORT_119f8c7a4060::ia_index_buffer() -> D3D11FORMATSUPPORT_119f8c7a4060 {
+  D3D11FORMATSUPPORT_119f8c7a4060::from_int(4)
+}
+
+///|
+pub fn D3D11FORMATSUPPORT_119f8c7a4060::ia_vertex_buffer() -> D3D11FORMATSUPPORT_119f8c7a4060 {
+  D3D11FORMATSUPPORT_119f8c7a4060::from_int(2)
+}
+
+///|
+pub fn D3D11FORMATSUPPORT_119f8c7a4060::mip() -> D3D11FORMATSUPPORT_119f8c7a4060 {
+  D3D11FORMATSUPPORT_119f8c7a4060::from_int(4096)
+}
+
+///|
+pub fn D3D11FORMATSUPPORT_119f8c7a4060::mip_autogen() -> D3D11FORMATSUPPORT_119f8c7a4060 {
+  D3D11FORMATSUPPORT_119f8c7a4060::from_int(8192)
+}
+
+///|
+pub fn D3D11FORMATSUPPORT_119f8c7a4060::multisample_load() -> D3D11FORMATSUPPORT_119f8c7a4060 {
+  D3D11FORMATSUPPORT_119f8c7a4060::from_int(4194304)
+}
+
+///|
+pub fn D3D11FORMATSUPPORT_119f8c7a4060::multisample_rendertarget() -> D3D11FORMATSUPPORT_119f8c7a4060 {
+  D3D11FORMATSUPPORT_119f8c7a4060::from_int(2097152)
+}
+
+///|
+pub fn D3D11FORMATSUPPORT_119f8c7a4060::multisample_resolve() -> D3D11FORMATSUPPORT_119f8c7a4060 {
+  D3D11FORMATSUPPORT_119f8c7a4060::from_int(262144)
+}
+
+///|
+pub fn D3D11FORMATSUPPORT_119f8c7a4060::render_target() -> D3D11FORMATSUPPORT_119f8c7a4060 {
+  D3D11FORMATSUPPORT_119f8c7a4060::from_int(16384)
+}
+
+///|
+pub fn D3D11FORMATSUPPORT_119f8c7a4060::shader_gather() -> D3D11FORMATSUPPORT_119f8c7a4060 {
+  D3D11FORMATSUPPORT_119f8c7a4060::from_int(8388608)
+}
+
+///|
+pub fn D3D11FORMATSUPPORT_119f8c7a4060::shader_gather_comparison() -> D3D11FORMATSUPPORT_119f8c7a4060 {
+  D3D11FORMATSUPPORT_119f8c7a4060::from_int(67108864)
+}
+
+///|
+pub fn D3D11FORMATSUPPORT_119f8c7a4060::shader_load() -> D3D11FORMATSUPPORT_119f8c7a4060 {
+  D3D11FORMATSUPPORT_119f8c7a4060::from_int(256)
+}
+
+///|
+pub fn D3D11FORMATSUPPORT_119f8c7a4060::shader_sample() -> D3D11FORMATSUPPORT_119f8c7a4060 {
+  D3D11FORMATSUPPORT_119f8c7a4060::from_int(512)
+}
+
+///|
+pub fn D3D11FORMATSUPPORT_119f8c7a4060::shader_sample_comparison() -> D3D11FORMATSUPPORT_119f8c7a4060 {
+  D3D11FORMATSUPPORT_119f8c7a4060::from_int(1024)
+}
+
+///|
+pub fn D3D11FORMATSUPPORT_119f8c7a4060::shader_sample_mono_text() -> D3D11FORMATSUPPORT_119f8c7a4060 {
+  D3D11FORMATSUPPORT_119f8c7a4060::from_int(2048)
+}
+
+///|
+pub fn D3D11FORMATSUPPORT_119f8c7a4060::so_buffer() -> D3D11FORMATSUPPORT_119f8c7a4060 {
+  D3D11FORMATSUPPORT_119f8c7a4060::from_int(8)
+}
+
+///|
+pub fn D3D11FORMATSUPPORT_119f8c7a4060::texture1_d() -> D3D11FORMATSUPPORT_119f8c7a4060 {
+  D3D11FORMATSUPPORT_119f8c7a4060::from_int(16)
+}
+
+///|
+pub fn D3D11FORMATSUPPORT_119f8c7a4060::texture2_d() -> D3D11FORMATSUPPORT_119f8c7a4060 {
+  D3D11FORMATSUPPORT_119f8c7a4060::from_int(32)
+}
+
+///|
+pub fn D3D11FORMATSUPPORT_119f8c7a4060::texture3_d() -> D3D11FORMATSUPPORT_119f8c7a4060 {
+  D3D11FORMATSUPPORT_119f8c7a4060::from_int(64)
+}
+
+///|
+pub fn D3D11FORMATSUPPORT_119f8c7a4060::texturecube() -> D3D11FORMATSUPPORT_119f8c7a4060 {
+  D3D11FORMATSUPPORT_119f8c7a4060::from_int(128)
+}
+
+///|
+pub fn D3D11FORMATSUPPORT_119f8c7a4060::typed_unordered_access_view() -> D3D11FORMATSUPPORT_119f8c7a4060 {
+  D3D11FORMATSUPPORT_119f8c7a4060::from_int(33554432)
+}
+
+///|
+pub fn D3D11FORMATSUPPORT_119f8c7a4060::video_encoder() -> D3D11FORMATSUPPORT_119f8c7a4060 {
+  D3D11FORMATSUPPORT_119f8c7a4060::from_int(1073741824)
+}
+
+///|
+pub fn D3D11FORMATSUPPORT_119f8c7a4060::video_processor_input() -> D3D11FORMATSUPPORT_119f8c7a4060 {
+  D3D11FORMATSUPPORT_119f8c7a4060::from_int(536870912)
+}
+
+///|
+pub fn D3D11FORMATSUPPORT_119f8c7a4060::video_processor_output() -> D3D11FORMATSUPPORT_119f8c7a4060 {
+  D3D11FORMATSUPPORT_119f8c7a4060::from_int(268435456)
+}
+
+///|
+pub fn D3D11FORMATSUPPORT2_6811226cb7c4::displayable() -> D3D11FORMATSUPPORT2_6811226cb7c4 {
+  D3D11FORMATSUPPORT2_6811226cb7c4::from_int(65536)
+}
+
+///|
+pub fn D3D11FORMATSUPPORT2_6811226cb7c4::multiplane_overlay() -> D3D11FORMATSUPPORT2_6811226cb7c4 {
+  D3D11FORMATSUPPORT2_6811226cb7c4::from_int(16384)
+}
+
+///|
+pub fn D3D11FORMATSUPPORT2_6811226cb7c4::output_merger_logic_op() -> D3D11FORMATSUPPORT2_6811226cb7c4 {
+  D3D11FORMATSUPPORT2_6811226cb7c4::from_int(256)
+}
+
+///|
+pub fn D3D11FORMATSUPPORT2_6811226cb7c4::shareable() -> D3D11FORMATSUPPORT2_6811226cb7c4 {
+  D3D11FORMATSUPPORT2_6811226cb7c4::from_int(1024)
+}
+
+///|
+pub fn D3D11FORMATSUPPORT2_6811226cb7c4::tiled() -> D3D11FORMATSUPPORT2_6811226cb7c4 {
+  D3D11FORMATSUPPORT2_6811226cb7c4::from_int(512)
+}
+
+///|
+pub fn D3D11FORMATSUPPORT2_6811226cb7c4::uav_atomic_add() -> D3D11FORMATSUPPORT2_6811226cb7c4 {
+  D3D11FORMATSUPPORT2_6811226cb7c4::from_int(1)
+}
+
+///|
+pub fn D3D11FORMATSUPPORT2_6811226cb7c4::uav_atomic_bitwise_ops() -> D3D11FORMATSUPPORT2_6811226cb7c4 {
+  D3D11FORMATSUPPORT2_6811226cb7c4::from_int(2)
+}
+
+///|
+pub fn D3D11FORMATSUPPORT2_6811226cb7c4::uav_atomic_compare_store_or_compare_exchange() -> D3D11FORMATSUPPORT2_6811226cb7c4 {
+  D3D11FORMATSUPPORT2_6811226cb7c4::from_int(4)
+}
+
+///|
+pub fn D3D11FORMATSUPPORT2_6811226cb7c4::uav_atomic_exchange() -> D3D11FORMATSUPPORT2_6811226cb7c4 {
+  D3D11FORMATSUPPORT2_6811226cb7c4::from_int(8)
+}
+
+///|
+pub fn D3D11FORMATSUPPORT2_6811226cb7c4::uav_atomic_signed_min_or_max() -> D3D11FORMATSUPPORT2_6811226cb7c4 {
+  D3D11FORMATSUPPORT2_6811226cb7c4::from_int(16)
+}
+
+///|
+pub fn D3D11FORMATSUPPORT2_6811226cb7c4::uav_atomic_unsigned_min_or_max() -> D3D11FORMATSUPPORT2_6811226cb7c4 {
+  D3D11FORMATSUPPORT2_6811226cb7c4::from_int(32)
+}
+
+///|
+pub fn D3D11FORMATSUPPORT2_6811226cb7c4::uav_typed_load() -> D3D11FORMATSUPPORT2_6811226cb7c4 {
+  D3D11FORMATSUPPORT2_6811226cb7c4::from_int(64)
+}
+
+///|
+pub fn D3D11FORMATSUPPORT2_6811226cb7c4::uav_typed_store() -> D3D11FORMATSUPPORT2_6811226cb7c4 {
+  D3D11FORMATSUPPORT2_6811226cb7c4::from_int(128)
+}
+
+///|
+pub fn D3D11INPUTCLASSIFICATION_90f7d83139be::d3_d11_input_per_instance_data() -> D3D11INPUTCLASSIFICATION_90f7d83139be {
+  D3D11INPUTCLASSIFICATION_90f7d83139be::from_int(1)
+}
+
+///|
+pub fn D3D11INPUTCLASSIFICATION_90f7d83139be::d3_d11_input_per_vertex_data() -> D3D11INPUTCLASSIFICATION_90f7d83139be {
+  D3D11INPUTCLASSIFICATION_90f7d83139be::from_int(0)
+}
+
+///|
+pub fn D3D11LOGICOP_f0d51e78d001::and_() -> D3D11LOGICOP_f0d51e78d001 {
+  D3D11LOGICOP_f0d51e78d001::from_int(6)
+}
+
+///|
+pub fn D3D11LOGICOP_f0d51e78d001::and_inverted() -> D3D11LOGICOP_f0d51e78d001 {
+  D3D11LOGICOP_f0d51e78d001::from_int(13)
+}
+
+///|
+pub fn D3D11LOGICOP_f0d51e78d001::and_reverse() -> D3D11LOGICOP_f0d51e78d001 {
+  D3D11LOGICOP_f0d51e78d001::from_int(12)
+}
+
+///|
+pub fn D3D11LOGICOP_f0d51e78d001::clear() -> D3D11LOGICOP_f0d51e78d001 {
+  D3D11LOGICOP_f0d51e78d001::from_int(0)
+}
+
+///|
+pub fn D3D11LOGICOP_f0d51e78d001::copy() -> D3D11LOGICOP_f0d51e78d001 {
+  D3D11LOGICOP_f0d51e78d001::from_int(2)
+}
+
+///|
+pub fn D3D11LOGICOP_f0d51e78d001::copy_inverted() -> D3D11LOGICOP_f0d51e78d001 {
+  D3D11LOGICOP_f0d51e78d001::from_int(3)
+}
+
+///|
+pub fn D3D11LOGICOP_f0d51e78d001::equiv() -> D3D11LOGICOP_f0d51e78d001 {
+  D3D11LOGICOP_f0d51e78d001::from_int(11)
+}
+
+///|
+pub fn D3D11LOGICOP_f0d51e78d001::invert() -> D3D11LOGICOP_f0d51e78d001 {
+  D3D11LOGICOP_f0d51e78d001::from_int(5)
+}
+
+///|
+pub fn D3D11LOGICOP_f0d51e78d001::nand() -> D3D11LOGICOP_f0d51e78d001 {
+  D3D11LOGICOP_f0d51e78d001::from_int(7)
+}
+
+///|
+pub fn D3D11LOGICOP_f0d51e78d001::noop() -> D3D11LOGICOP_f0d51e78d001 {
+  D3D11LOGICOP_f0d51e78d001::from_int(4)
+}
+
+///|
+pub fn D3D11LOGICOP_f0d51e78d001::nor() -> D3D11LOGICOP_f0d51e78d001 {
+  D3D11LOGICOP_f0d51e78d001::from_int(9)
+}
+
+///|
+pub fn D3D11LOGICOP_f0d51e78d001::or_() -> D3D11LOGICOP_f0d51e78d001 {
+  D3D11LOGICOP_f0d51e78d001::from_int(8)
+}
+
+///|
+pub fn D3D11LOGICOP_f0d51e78d001::or_inverted() -> D3D11LOGICOP_f0d51e78d001 {
+  D3D11LOGICOP_f0d51e78d001::from_int(15)
+}
+
+///|
+pub fn D3D11LOGICOP_f0d51e78d001::or_reverse() -> D3D11LOGICOP_f0d51e78d001 {
+  D3D11LOGICOP_f0d51e78d001::from_int(14)
+}
+
+///|
+pub fn D3D11LOGICOP_f0d51e78d001::set() -> D3D11LOGICOP_f0d51e78d001 {
+  D3D11LOGICOP_f0d51e78d001::from_int(1)
+}
+
+///|
+pub fn D3D11LOGICOP_f0d51e78d001::xor() -> D3D11LOGICOP_f0d51e78d001 {
+  D3D11LOGICOP_f0d51e78d001::from_int(10)
+}
+
+///|
+pub fn D3D11MAP_df5dd7e10007::read() -> D3D11MAP_df5dd7e10007 {
+  D3D11MAP_df5dd7e10007::from_int(1)
+}
+
+///|
+pub fn D3D11MAP_df5dd7e10007::read_write() -> D3D11MAP_df5dd7e10007 {
+  D3D11MAP_df5dd7e10007::from_int(3)
+}
+
+///|
+pub fn D3D11MAP_df5dd7e10007::write() -> D3D11MAP_df5dd7e10007 {
+  D3D11MAP_df5dd7e10007::from_int(2)
+}
+
+///|
+pub fn D3D11MAP_df5dd7e10007::write_discard() -> D3D11MAP_df5dd7e10007 {
+  D3D11MAP_df5dd7e10007::from_int(4)
+}
+
+///|
+pub fn D3D11MAP_df5dd7e10007::write_no_overwrite() -> D3D11MAP_df5dd7e10007 {
+  D3D11MAP_df5dd7e10007::from_int(5)
+}
+
+///|
+pub fn D3D11MAPFLAG_d4db9908192d::do_not_wait() -> D3D11MAPFLAG_d4db9908192d {
+  D3D11MAPFLAG_d4db9908192d::from_int(1048576)
+}
+
+///|
+pub fn D3D11MESSAGECATEGORY_7616ae90fce3::application_defined() -> D3D11MESSAGECATEGORY_7616ae90fce3 {
+  D3D11MESSAGECATEGORY_7616ae90fce3::from_int(0)
+}
+
+///|
+pub fn D3D11MESSAGECATEGORY_7616ae90fce3::cleanup() -> D3D11MESSAGECATEGORY_7616ae90fce3 {
+  D3D11MESSAGECATEGORY_7616ae90fce3::from_int(3)
+}
+
+///|
+pub fn D3D11MESSAGECATEGORY_7616ae90fce3::compilation() -> D3D11MESSAGECATEGORY_7616ae90fce3 {
+  D3D11MESSAGECATEGORY_7616ae90fce3::from_int(4)
+}
+
+///|
+pub fn D3D11MESSAGECATEGORY_7616ae90fce3::execution() -> D3D11MESSAGECATEGORY_7616ae90fce3 {
+  D3D11MESSAGECATEGORY_7616ae90fce3::from_int(9)
+}
+
+///|
+pub fn D3D11MESSAGECATEGORY_7616ae90fce3::initialization() -> D3D11MESSAGECATEGORY_7616ae90fce3 {
+  D3D11MESSAGECATEGORY_7616ae90fce3::from_int(2)
+}
+
+///|
+pub fn D3D11MESSAGECATEGORY_7616ae90fce3::miscellaneous() -> D3D11MESSAGECATEGORY_7616ae90fce3 {
+  D3D11MESSAGECATEGORY_7616ae90fce3::from_int(1)
+}
+
+///|
+pub fn D3D11MESSAGECATEGORY_7616ae90fce3::resource_manipulation() -> D3D11MESSAGECATEGORY_7616ae90fce3 {
+  D3D11MESSAGECATEGORY_7616ae90fce3::from_int(8)
+}
+
+///|
+pub fn D3D11MESSAGECATEGORY_7616ae90fce3::shader() -> D3D11MESSAGECATEGORY_7616ae90fce3 {
+  D3D11MESSAGECATEGORY_7616ae90fce3::from_int(10)
+}
+
+///|
+pub fn D3D11MESSAGECATEGORY_7616ae90fce3::state_creation() -> D3D11MESSAGECATEGORY_7616ae90fce3 {
+  D3D11MESSAGECATEGORY_7616ae90fce3::from_int(5)
+}
+
+///|
+pub fn D3D11MESSAGECATEGORY_7616ae90fce3::state_getting() -> D3D11MESSAGECATEGORY_7616ae90fce3 {
+  D3D11MESSAGECATEGORY_7616ae90fce3::from_int(7)
+}
+
+///|
+pub fn D3D11MESSAGECATEGORY_7616ae90fce3::state_setting() -> D3D11MESSAGECATEGORY_7616ae90fce3 {
+  D3D11MESSAGECATEGORY_7616ae90fce3::from_int(6)
+}
+
+///|
+pub fn D3D11MESSAGEID_805be12ff80c::acquirehandleforcapture_invalidarray() -> D3D11MESSAGEID_805be12ff80c {
+  D3D11MESSAGEID_805be12ff80c::from_int(3146029)
+}
+
+///|
+pub fn D3D11MESSAGEID_805be12ff80c::acquirehandleforcapture_invalidbind() -> D3D11MESSAGEID_805be12ff80c {
+  D3D11MESSAGEID_805be12ff80c::from_int(3146028)
+}
+
+///|
+pub fn D3D11MESSAGEID_805be12ff80c::acquirehandleforcapture_invalidtype() -> D3D11MESSAGEID_805be12ff80c {
+  D3D11MESSAGEID_805be12ff80c::from_int(3146027)
+}
+
+///|
+pub fn D3D11MESSAGEID_805be12ff80c::acquirehandleforcapture_nullparam() -> D3D11MESSAGEID_805be12ff80c {
+  D3D11MESSAGEID_805be12ff80c::from_int(3146026)
+}
+
+///|
+pub fn D3D11MESSAGEID_805be12ff80c::blendstate_getdesc_legacy() -> D3D11MESSAGEID_805be12ff80c {
+  D3D11MESSAGEID_805be12ff80c::from_int(392)
+}
+
+///|
+pub fn D3D11MESSAGEID_805be12ff80c::buffer_map_alreadymapped() -> D3D11MESSAGEID_805be12ff80c {
+  D3D11MESSAGEID_805be12ff80c::from_int(297)
+}
+
+///|
+pub fn D3D11MESSAGEID_805be12ff80c::buffer_map_deviceremoved_return() -> D3D11MESSAGEID_805be12ff80c {
+  D3D11MESSAGEID_805be12ff80c::from_int(298)
+}
+
+///|
+pub fn D3D11MESSAGEID_805be12ff80c::buffer_map_invalidflags() -> D3D11MESSAGEID_805be12ff80c {
+  D3D11MESSAGEID_805be12ff80c::from_int(296)
+}
+
+///|
+pub fn D3D11MESSAGEID_805be12ff80c::buffer_map_invalidmaptype() -> D3D11MESSAGEID_805be12ff80c {
+  D3D11MESSAGEID_805be12ff80c::from_int(295)
+}
+
+///|
+pub fn D3D11MESSAGEID_805be12ff80c::buffer_unmap_notmapped() -> D3D11MESSAGEID_805be12ff80c {
+  D3D11MESSAGEID_805be12ff80c::from_int(299)
+}
+
+///|
+pub fn D3D11MESSAGEID_805be12ff80c::cannot_add_tracked_workload() -> D3D11MESSAGEID_805be12ff80c {
+  D3D11MESSAGEID_805be12ff80c::from_int(3146278)
+}
+
+///|
+pub fn D3D11MESSAGEID_805be12ff80c::checkcounter_outofrange_counter() -> D3D11MESSAGEID_805be12ff80c {
+  D3D11MESSAGEID_805be12ff80c::from_int(402)
+}
+
+///|
+pub fn D3D11MESSAGEID_805be12ff80c::checkcounter_unsupported_wellknown_counter() -> D3D11MESSAGEID_805be12ff80c {
+  D3D11MESSAGEID_805be12ff80c::from_int(403)
+}
+
+///|
+pub fn D3D11MESSAGEID_805be12ff80c::checkcryptokeyexchange_invalidindex() -> D3D11MESSAGEID_805be12ff80c {
+  D3D11MESSAGEID_805be12ff80c::from_int(3145994)
+}
+
+///|
+pub fn D3D11MESSAGEID_805be12ff80c::checkcryptokeyexchange_nullparam() -> D3D11MESSAGEID_805be12ff80c {
+  D3D11MESSAGEID_805be12ff80c::from_int(3145993)
+}
+
+///|
+pub fn D3D11MESSAGEID_805be12ff80c::checkcryptosessionstatus_nullparam() -> D3D11MESSAGEID_805be12ff80c {
+  D3D11MESSAGEID_805be12ff80c::from_int(3146085)
+}
+
+///|
+pub fn D3D11MESSAGEID_805be12ff80c::checkfeaturesupport_format_deprecated() -> D3D11MESSAGEID_805be12ff80c {
+  D3D11MESSAGEID_805be12ff80c::from_int(2097371)
+}
+
+///|
+pub fn D3D11MESSAGEID_805be12ff80c::checkformatsupport_format_deprecated() -> D3D11MESSAGEID_805be12ff80c {
+  D3D11MESSAGEID_805be12ff80c::from_int(321)
+}
+
+///|
+pub fn D3D11MESSAGEID_805be12ff80c::checkformatsupport_format_not_supported() -> D3D11MESSAGEID_805be12ff80c {
+  D3D11MESSAGEID_805be12ff80c::from_int(2097401)
+}
+
+///|
+pub fn D3D11MESSAGEID_805be12ff80c::checkmultisamplequalitylevels_format_deprecated() -> D3D11MESSAGEID_805be12ff80c {
+  D3D11MESSAGEID_805be12ff80c::from_int(322)
+}
+
+///|
+pub fn D3D11MESSAGEID_805be12ff80c::checkmultisamplequalitylevels_invalidflags() -> D3D11MESSAGEID_805be12ff80c {
+  D3D11MESSAGEID_805be12ff80c::from_int(3146138)
+}
+
+///|
+pub fn D3D11MESSAGEID_805be12ff80c::checkvideodecoderdownsampling_invalidcolorspace() -> D3D11MESSAGEID_805be12ff80c {
+  D3D11MESSAGEID_805be12ff80c::from_int(3146090)
+}
+
+///|
+pub fn D3D11MESSAGEID_805be12ff80c::checkvideodecoderdownsampling_nullparam() -> D3D11MESSAGEID_805be12ff80c {
+  D3D11MESSAGEID_805be12ff80c::from_int(3146089)
+}
+
+///|
+pub fn D3D11MESSAGEID_805be12ff80c::checkvideodecoderdownsampling_zerowidthheight() -> D3D11MESSAGEID_805be12ff80c {
+  D3D11MESSAGEID_805be12ff80c::from_int(3146091)
+}
+
+///|
+pub fn D3D11MESSAGEID_805be12ff80c::checkvideodecoderformat_nullparam() -> D3D11MESSAGEID_805be12ff80c {
+  D3D11MESSAGEID_805be12ff80c::from_int(3145768)
+}
+
+///|
+pub fn D3D11MESSAGEID_805be12ff80c::checkvideodecoderformat_outofmemory_return() -> D3D11MESSAGEID_805be12ff80c {
+  D3D11MESSAGEID_805be12ff80c::from_int(3145769)
+}
+
+///|
+pub fn D3D11MESSAGEID_805be12ff80c::checkvideoprocessorformatconversion_nullparam() -> D3D11MESSAGEID_805be12ff80c {
+  D3D11MESSAGEID_805be12ff80c::from_int(3146096)
+}
+
+///|
+pub fn D3D11MESSAGEID_805be12ff80c::checkvideoprocessorformat_nullparam() -> D3D11MESSAGEID_805be12ff80c {
+  D3D11MESSAGEID_805be12ff80c::from_int(3145799)
+}
+
+///|
+pub fn D3D11MESSAGEID_805be12ff80c::cleardepthstencilview_denormflush() -> D3D11MESSAGEID_805be12ff80c {
+  D3D11MESSAGEID_805be12ff80c::from_int(262)
+}
+
+///|
+pub fn D3D11MESSAGEID_805be12ff80c::cleardepthstencilview_depth_readonly() -> D3D11MESSAGEID_805be12ff80c {
+  D3D11MESSAGEID_805be12ff80c::from_int(2097369)
+}
+
+///|
+pub fn D3D11MESSAGEID_805be12ff80c::cleardepthstencilview_invalid() -> D3D11MESSAGEID_805be12ff80c {
+  D3D11MESSAGEID_805be12ff80c::from_int(263)
+}
+
+///|
+pub fn D3D11MESSAGEID_805be12ff80c::cleardepthstencilview_stencil_readonly() -> D3D11MESSAGEID_805be12ff80c {
+  D3D11MESSAGEID_805be12ff80c::from_int(2097370)
+}
+
+///|
+pub fn D3D11MESSAGEID_805be12ff80c::clearrendertargetview_denormflush() -> D3D11MESSAGEID_805be12ff80c {
+  D3D11MESSAGEID_805be12ff80c::from_int(261)
+}
+
+///|
+pub fn D3D11MESSAGEID_805be12ff80c::clearunorderedaccessviewfloat_hazard() -> D3D11MESSAGEID_805be12ff80c {
+  D3D11MESSAGEID_805be12ff80c::from_int(3146145)
+}
+
+///|
+pub fn D3D11MESSAGEID_805be12ff80c::clearunorderedaccessviewfloat_invalidformat() -> D3D11MESSAGEID_805be12ff80c {
+  D3D11MESSAGEID_805be12ff80c::from_int(2097405)
+}
+
+///|
+pub fn D3D11MESSAGEID_805be12ff80c::clearunorderedaccessviewuint_hazard() -> D3D11MESSAGEID_805be12ff80c {
+  D3D11MESSAGEID_805be12ff80c::from_int(3146144)
+}
+
+///|
+pub fn D3D11MESSAGEID_805be12ff80c::clearunorderedaccessview_denormflush() -> D3D11MESSAGEID_805be12ff80c {
+  D3D11MESSAGEID_805be12ff80c::from_int(2097355)
+}
+
+///|
+pub fn D3D11MESSAGEID_805be12ff80c::configureauthenticatedchannel_invalidprocessidtype() -> D3D11MESSAGEID_805be12ff80c {
+  D3D11MESSAGEID_805be12ff80c::from_int(3146015)
+}
+
+///|
+pub fn D3D11MESSAGEID_805be12ff80c::configureauthenticatedchannel_nullparam() -> D3D11MESSAGEID_805be12ff80c {
+  D3D11MESSAGEID_805be12ff80c::from_int(3146011)
+}
+
+///|
+pub fn D3D11MESSAGEID_805be12ff80c::configureauthenticatedchannel_unsupportedconfigure() -> D3D11MESSAGEID_805be12ff80c {
+  D3D11MESSAGEID_805be12ff80c::from_int(3146013)
+}
+
+///|
+pub fn D3D11MESSAGEID_805be12ff80c::configureauthenticatedchannel_wrongchannel() -> D3D11MESSAGEID_805be12ff80c {
+  D3D11MESSAGEID_805be12ff80c::from_int(3146012)
+}
+
+///|
+pub fn D3D11MESSAGEID_805be12ff80c::configureauthenticatedchannel_wrongsize() -> D3D11MESSAGEID_805be12ff80c {
+  D3D11MESSAGEID_805be12ff80c::from_int(3146014)
+}
+
+///|
+pub fn D3D11MESSAGEID_805be12ff80c::copyresource_invaliddestinationstate() -> D3D11MESSAGEID_805be12ff80c {
+  D3D11MESSAGEID_805be12ff80c::from_int(285)
+}
+
+///|
+pub fn D3D11MESSAGEID_805be12ff80c::copyresource_invalidsource() -> D3D11MESSAGEID_805be12ff80c {
+  D3D11MESSAGEID_805be12ff80c::from_int(284)
+}
+
+///|
+pub fn D3D11MESSAGEID_805be12ff80c::copyresource_invalidsourcestate() -> D3D11MESSAGEID_805be12ff80c {
+  D3D11MESSAGEID_805be12ff80c::from_int(286)
+}
+
+///|
+pub fn D3D11MESSAGEID_805be12ff80c::copyresource_no_3_d_mismatched_updates() -> D3D11MESSAGEID_805be12ff80c {
+  D3D11MESSAGEID_805be12ff80c::from_int(1048637)
+}
+
+///|
+pub fn D3D11MESSAGEID_805be12ff80c::copyresource_no_texture_3_d_readback() -> D3D11MESSAGEID_805be12ff80c {
+  D3D11MESSAGEID_805be12ff80c::from_int(1048597)
+}
+
+///|
+pub fn D3D11MESSAGEID_805be12ff80c::copyresource_no_texture_only_readback() -> D3D11MESSAGEID_805be12ff80c {
+  D3D11MESSAGEID_805be12ff80c::from_int(1048598)
+}
+
+///|
+pub fn D3D11MESSAGEID_805be12ff80c::copyresource_only_texture_2_d_within_gpu_memory() -> D3D11MESSAGEID_805be12ff80c {
+  D3D11MESSAGEID_805be12ff80c::from_int(1048596)
+}
+
+///|
+pub fn D3D11MESSAGEID_805be12ff80c::copystructurecount_invaliddestinationstate() -> D3D11MESSAGEID_805be12ff80c {
+  D3D11MESSAGEID_805be12ff80c::from_int(2097399)
+}
+
+///|
+pub fn D3D11MESSAGEID_805be12ff80c::copystructurecount_invalidoffset() -> D3D11MESSAGEID_805be12ff80c {
+  D3D11MESSAGEID_805be12ff80c::from_int(2097397)
+}
+
+///|
+pub fn D3D11MESSAGEID_805be12ff80c::copystructurecount_invalidsourcestate() -> D3D11MESSAGEID_805be12ff80c {
+  D3D11MESSAGEID_805be12ff80c::from_int(2097400)
+}
+
+///|
+pub fn D3D11MESSAGEID_805be12ff80c::copystructurecount_largeoffset() -> D3D11MESSAGEID_805be12ff80c {
+  D3D11MESSAGEID_805be12ff80c::from_int(2097398)
+}
+
+///|
+pub fn D3D11MESSAGEID_805be12ff80c::copysubresourceregion1_invalidcopyflags() -> D3D11MESSAGEID_805be12ff80c {
+  D3D11MESSAGEID_805be12ff80c::from_int(3145755)
+}
+
+///|
+pub fn D3D11MESSAGEID_805be12ff80c::copysubresourceregion_emptysourcebox() -> D3D11MESSAGEID_805be12ff80c {
+  D3D11MESSAGEID_805be12ff80c::from_int(3146078)
+}
+
+///|
+pub fn D3D11MESSAGEID_805be12ff80c::copysubresourceregion_invaliddestinationstate() -> D3D11MESSAGEID_805be12ff80c {
+  D3D11MESSAGEID_805be12ff80c::from_int(282)
+}
+
+///|
+pub fn D3D11MESSAGEID_805be12ff80c::copysubresourceregion_invaliddestinationsubresource() -> D3D11MESSAGEID_805be12ff80c {
+  D3D11MESSAGEID_805be12ff80c::from_int(278)
+}
+
+///|
+pub fn D3D11MESSAGEID_805be12ff80c::copysubresourceregion_invalidsource() -> D3D11MESSAGEID_805be12ff80c {
+  D3D11MESSAGEID_805be12ff80c::from_int(281)
+}
+
+///|
+pub fn D3D11MESSAGEID_805be12ff80c::copysubresourceregion_invalidsourcebox() -> D3D11MESSAGEID_805be12ff80c {
+  D3D11MESSAGEID_805be12ff80c::from_int(280)
+}
+
+///|
+pub fn D3D11MESSAGEID_805be12ff80c::copysubresourceregion_invalidsourcestate() -> D3D11MESSAGEID_805be12ff80c {
+  D3D11MESSAGEID_805be12ff80c::from_int(283)
+}
+
+///|
+pub fn D3D11MESSAGEID_805be12ff80c::copysubresourceregion_invalidsourcesubresource() -> D3D11MESSAGEID_805be12ff80c {
+  D3D11MESSAGEID_805be12ff80c::from_int(279)
+}
+
+///|
+pub fn D3D11MESSAGEID_805be12ff80c::copytilemappings_invalid_parameter() -> D3D11MESSAGEID_805be12ff80c {
+  D3D11MESSAGEID_805be12ff80c::from_int(3146126)
+}
+
+///|
+pub fn D3D11MESSAGEID_805be12ff80c::copytiles_invalid_parameter() -> D3D11MESSAGEID_805be12ff80c {
+  D3D11MESSAGEID_805be12ff80c::from_int(3146127)
+}
+
+///|
+pub fn D3D11MESSAGEID_805be12ff80c::corrupted_multithreading() -> D3D11MESSAGEID_805be12ff80c {
+  D3D11MESSAGEID_805be12ff80c::from_int(28)
+}
+
+///|
+pub fn D3D11MESSAGEID_805be12ff80c::corrupted_parameter1() -> D3D11MESSAGEID_805be12ff80c {
+  D3D11MESSAGEID_805be12ff80c::from_int(13)
+}
+
+///|
+pub fn D3D11MESSAGEID_805be12ff80c::corrupted_parameter10() -> D3D11MESSAGEID_805be12ff80c {
+  D3D11MESSAGEID_805be12ff80c::from_int(22)
+}
+
+///|
+pub fn D3D11MESSAGEID_805be12ff80c::corrupted_parameter11() -> D3D11MESSAGEID_805be12ff80c {
+  D3D11MESSAGEID_805be12ff80c::from_int(23)
+}
+
+///|
+pub fn D3D11MESSAGEID_805be12ff80c::corrupted_parameter12() -> D3D11MESSAGEID_805be12ff80c {
+  D3D11MESSAGEID_805be12ff80c::from_int(24)
+}
+
+///|
+pub fn D3D11MESSAGEID_805be12ff80c::corrupted_parameter13() -> D3D11MESSAGEID_805be12ff80c {
+  D3D11MESSAGEID_805be12ff80c::from_int(25)
+}
+
+///|
+pub fn D3D11MESSAGEID_805be12ff80c::corrupted_parameter14() -> D3D11MESSAGEID_805be12ff80c {
+  D3D11MESSAGEID_805be12ff80c::from_int(26)
+}
+
+///|
+pub fn D3D11MESSAGEID_805be12ff80c::corrupted_parameter15() -> D3D11MESSAGEID_805be12ff80c {
+  D3D11MESSAGEID_805be12ff80c::from_int(27)
+}
+
+///|
+pub fn D3D11MESSAGEID_805be12ff80c::corrupted_parameter2() -> D3D11MESSAGEID_805be12ff80c {
+  D3D11MESSAGEID_805be12ff80c::from_int(14)
+}
+
+///|
+pub fn D3D11MESSAGEID_805be12ff80c::corrupted_parameter3() -> D3D11MESSAGEID_805be12ff80c {
+  D3D11MESSAGEID_805be12ff80c::from_int(15)
+}
+
+///|
+pub fn D3D11MESSAGEID_805be12ff80c::corrupted_parameter4() -> D3D11MESSAGEID_805be12ff80c {
+  D3D11MESSAGEID_805be12ff80c::from_int(16)
+}
+
+///|
+pub fn D3D11MESSAGEID_805be12ff80c::corrupted_parameter5() -> D3D11MESSAGEID_805be12ff80c {
+  D3D11MESSAGEID_805be12ff80c::from_int(17)
+}
+
+///|
+pub fn D3D11MESSAGEID_805be12ff80c::corrupted_parameter6() -> D3D11MESSAGEID_805be12ff80c {
+  D3D11MESSAGEID_805be12ff80c::from_int(18)
+}
+
+///|
+pub fn D3D11MESSAGEID_805be12ff80c::corrupted_parameter7() -> D3D11MESSAGEID_805be12ff80c {
+  D3D11MESSAGEID_805be12ff80c::from_int(19)
+}
+
+///|
+pub fn D3D11MESSAGEID_805be12ff80c::corrupted_parameter8() -> D3D11MESSAGEID_805be12ff80c {
+  D3D11MESSAGEID_805be12ff80c::from_int(20)
+}
+
+///|
+pub fn D3D11MESSAGEID_805be12ff80c::corrupted_parameter9() -> D3D11MESSAGEID_805be12ff80c {
+  D3D11MESSAGEID_805be12ff80c::from_int(21)
+}
+
+///|
+pub fn D3D11MESSAGEID_805be12ff80c::corrupted_this() -> D3D11MESSAGEID_805be12ff80c {
+  D3D11MESSAGEID_805be12ff80c::from_int(12)
+}
+
+///|
+pub fn D3D11MESSAGEID_805be12ff80c::createauthenticatedchannel_invalidtype() -> D3D11MESSAGEID_805be12ff80c {
+  D3D11MESSAGEID_805be12ff80c::from_int(3145997)
+}
+
+///|
+pub fn D3D11MESSAGEID_805be12ff80c::createauthenticatedchannel_nullparam() -> D3D11MESSAGEID_805be12ff80c {
+  D3D11MESSAGEID_805be12ff80c::from_int(3145995)
+}
+
+///|
+pub fn D3D11MESSAGEID_805be12ff80c::createauthenticatedchannel_outofmemory_return() -> D3D11MESSAGEID_805be12ff80c {
+  D3D11MESSAGEID_805be12ff80c::from_int(3145998)
+}
+
+///|
+pub fn D3D11MESSAGEID_805be12ff80c::createauthenticatedchannel_unsupported() -> D3D11MESSAGEID_805be12ff80c {
+  D3D11MESSAGEID_805be12ff80c::from_int(3145996)
+}
+
+///|
+pub fn D3D11MESSAGEID_805be12ff80c::createblendstate_invalidblendop() -> D3D11MESSAGEID_805be12ff80c {
+  D3D11MESSAGEID_805be12ff80c::from_int(214)
+}
+
+///|
+pub fn D3D11MESSAGEID_805be12ff80c::createblendstate_invalidblendopalpha() -> D3D11MESSAGEID_805be12ff80c {
+  D3D11MESSAGEID_805be12ff80c::from_int(217)
+}
+
+///|
+pub fn D3D11MESSAGEID_805be12ff80c::createblendstate_invaliddestblend() -> D3D11MESSAGEID_805be12ff80c {
+  D3D11MESSAGEID_805be12ff80c::from_int(213)
+}
+
+///|
+pub fn D3D11MESSAGEID_805be12ff80c::createblendstate_invaliddestblendalpha() -> D3D11MESSAGEID_805be12ff80c {
+  D3D11MESSAGEID_805be12ff80c::from_int(216)
+}
+
+///|
+pub fn D3D11MESSAGEID_805be12ff80c::createblendstate_invalidlogicops() -> D3D11MESSAGEID_805be12ff80c {
+  D3D11MESSAGEID_805be12ff80c::from_int(3145941)
+}
+
+///|
+pub fn D3D11MESSAGEID_805be12ff80c::createblendstate_invalidrendertargetwritemask() -> D3D11MESSAGEID_805be12ff80c {
+  D3D11MESSAGEID_805be12ff80c::from_int(218)
+}
+
+///|
+pub fn D3D11MESSAGEID_805be12ff80c::createblendstate_invalidsrcblend() -> D3D11MESSAGEID_805be12ff80c {
+  D3D11MESSAGEID_805be12ff80c::from_int(212)
+}
+
+///|
+pub fn D3D11MESSAGEID_805be12ff80c::createblendstate_invalidsrcblendalpha() -> D3D11MESSAGEID_805be12ff80c {
+  D3D11MESSAGEID_805be12ff80c::from_int(215)
+}
+
+///|
+pub fn D3D11MESSAGEID_805be12ff80c::createblendstate_no_alpha_to_coverage() -> D3D11MESSAGEID_805be12ff80c {
+  D3D11MESSAGEID_805be12ff80c::from_int(1048600)
+}
+
+///|
+pub fn D3D11MESSAGEID_805be12ff80c::createblendstate_no_independent_blend_enable() -> D3D11MESSAGEID_805be12ff80c {
+  D3D11MESSAGEID_805be12ff80c::from_int(1048612)
+}
+
+///|
+pub fn D3D11MESSAGEID_805be12ff80c::createblendstate_no_independent_write_masks() -> D3D11MESSAGEID_805be12ff80c {
+  D3D11MESSAGEID_805be12ff80c::from_int(1048613)
+}
+
+///|
+pub fn D3D11MESSAGEID_805be12ff80c::createblendstate_no_mrt_blend() -> D3D11MESSAGEID_805be12ff80c {
+  D3D11MESSAGEID_805be12ff80c::from_int(1048623)
+}
+
+///|
+pub fn D3D11MESSAGEID_805be12ff80c::createblendstate_no_separate_alpha_blend() -> D3D11MESSAGEID_805be12ff80c {
+  D3D11MESSAGEID_805be12ff80c::from_int(1048622)
+}
+
+///|
+pub fn D3D11MESSAGEID_805be12ff80c::createblendstate_nulldesc() -> D3D11MESSAGEID_805be12ff80c {
+  D3D11MESSAGEID_805be12ff80c::from_int(220)
+}
+
+///|
+pub fn D3D11MESSAGEID_805be12ff80c::createblendstate_operation_not_supported() -> D3D11MESSAGEID_805be12ff80c {
+  D3D11MESSAGEID_805be12ff80c::from_int(1048624)
+}
+
+///|
+pub fn D3D11MESSAGEID_805be12ff80c::createblendstate_toomanyobjects() -> D3D11MESSAGEID_805be12ff80c {
+  D3D11MESSAGEID_805be12ff80c::from_int(219)
+}
+
+///|
+pub fn D3D11MESSAGEID_805be12ff80c::createbuffer_invalidarg_return() -> D3D11MESSAGEID_805be12ff80c {
+  D3D11MESSAGEID_805be12ff80c::from_int(69)
+}
+
+///|
+pub fn D3D11MESSAGEID_805be12ff80c::createbuffer_invalidbindflags() -> D3D11MESSAGEID_805be12ff80c {
+  D3D11MESSAGEID_805be12ff80c::from_int(64)
+}
+
+///|
+pub fn D3D11MESSAGEID_805be12ff80c::createbuffer_invalidconstantbufferbindings() -> D3D11MESSAGEID_805be12ff80c {
+  D3D11MESSAGEID_805be12ff80c::from_int(72)
+}
+
+///|
+pub fn D3D11MESSAGEID_805be12ff80c::createbuffer_invalidcpuaccessflags() -> D3D11MESSAGEID_805be12ff80c {
+  D3D11MESSAGEID_805be12ff80c::from_int(63)
+}
+
+///|
+pub fn D3D11MESSAGEID_805be12ff80c::createbuffer_invaliddimensions() -> D3D11MESSAGEID_805be12ff80c {
+  D3D11MESSAGEID_805be12ff80c::from_int(66)
+}
+
+///|
+pub fn D3D11MESSAGEID_805be12ff80c::createbuffer_invalidinitialdata() -> D3D11MESSAGEID_805be12ff80c {
+  D3D11MESSAGEID_805be12ff80c::from_int(65)
+}
+
+///|
+pub fn D3D11MESSAGEID_805be12ff80c::createbuffer_invalidmiplevels() -> D3D11MESSAGEID_805be12ff80c {
+  D3D11MESSAGEID_805be12ff80c::from_int(67)
+}
+
+///|
+pub fn D3D11MESSAGEID_805be12ff80c::createbuffer_invalidmiscflags() -> D3D11MESSAGEID_805be12ff80c {
+  D3D11MESSAGEID_805be12ff80c::from_int(68)
+}
+
+///|
+pub fn D3D11MESSAGEID_805be12ff80c::createbuffer_invalidsamples() -> D3D11MESSAGEID_805be12ff80c {
+  D3D11MESSAGEID_805be12ff80c::from_int(58)
+}
+
+///|
+pub fn D3D11MESSAGEID_805be12ff80c::createbuffer_invalidstructurestride() -> D3D11MESSAGEID_805be12ff80c {
+  D3D11MESSAGEID_805be12ff80c::from_int(2097339)
+}
+
+///|
+pub fn D3D11MESSAGEID_805be12ff80c::createbuffer_invalidusage() -> D3D11MESSAGEID_805be12ff80c {
+  D3D11MESSAGEID_805be12ff80c::from_int(3146120)
+}
+
+///|
+pub fn D3D11MESSAGEID_805be12ff80c::createbuffer_largeallocation() -> D3D11MESSAGEID_805be12ff80c {
+  D3D11MESSAGEID_805be12ff80c::from_int(73)
+}
+
+///|
+pub fn D3D11MESSAGEID_805be12ff80c::createbuffer_nulldesc() -> D3D11MESSAGEID_805be12ff80c {
+  D3D11MESSAGEID_805be12ff80c::from_int(71)
+}
+
+///|
+pub fn D3D11MESSAGEID_805be12ff80c::createbuffer_outofmemory_return() -> D3D11MESSAGEID_805be12ff80c {
+  D3D11MESSAGEID_805be12ff80c::from_int(70)
+}
+
+///|
+pub fn D3D11MESSAGEID_805be12ff80c::createbuffer_unrecognizedbindflags() -> D3D11MESSAGEID_805be12ff80c {
+  D3D11MESSAGEID_805be12ff80c::from_int(60)
+}
+
+///|
+pub fn D3D11MESSAGEID_805be12ff80c::createbuffer_unrecognizedcpuaccessflags() -> D3D11MESSAGEID_805be12ff80c {
+  D3D11MESSAGEID_805be12ff80c::from_int(61)
+}
+
+///|
+pub fn D3D11MESSAGEID_805be12ff80c::createbuffer_unrecognizedformat() -> D3D11MESSAGEID_805be12ff80c {
+  D3D11MESSAGEID_805be12ff80c::from_int(57)
+}
+
+///|
+pub fn D3D11MESSAGEID_805be12ff80c::createbuffer_unrecognizedmiscflags() -> D3D11MESSAGEID_805be12ff80c {
+  D3D11MESSAGEID_805be12ff80c::from_int(62)
+}
+
+///|
+pub fn D3D11MESSAGEID_805be12ff80c::createbuffer_unrecognizedusage() -> D3D11MESSAGEID_805be12ff80c {
+  D3D11MESSAGEID_805be12ff80c::from_int(59)
+}
+
+///|
+pub fn D3D11MESSAGEID_805be12ff80c::createcomputeshader_invalidcall() -> D3D11MESSAGEID_805be12ff80c {
+  D3D11MESSAGEID_805be12ff80c::from_int(2097320)
+}
+
+///|
+pub fn D3D11MESSAGEID_805be12ff80c::createcomputeshader_invalidclasslinkage() -> D3D11MESSAGEID_805be12ff80c {
+  D3D11MESSAGEID_805be12ff80c::from_int(2097324)
+}
+
+///|
+pub fn D3D11MESSAGEID_805be12ff80c::createcomputeshader_invalidshaderbytecode() -> D3D11MESSAGEID_805be12ff80c {
+  D3D11MESSAGEID_805be12ff80c::from_int(2097322)
+}
+
+///|
+pub fn D3D11MESSAGEID_805be12ff80c::createcomputeshader_invalidshadertype() -> D3D11MESSAGEID_805be12ff80c {
+  D3D11MESSAGEID_805be12ff80c::from_int(2097323)
+}
+
+///|
+pub fn D3D11MESSAGEID_805be12ff80c::createcomputeshader_outofmemory() -> D3D11MESSAGEID_805be12ff80c {
+  D3D11MESSAGEID_805be12ff80c::from_int(2097321)
+}
+
+///|
+pub fn D3D11MESSAGEID_805be12ff80c::createcounter_nonexclusive_return() -> D3D11MESSAGEID_805be12ff80c {
+  D3D11MESSAGEID_805be12ff80c::from_int(400)
+}
+
+///|
+pub fn D3D11MESSAGEID_805be12ff80c::createcounter_nulldesc() -> D3D11MESSAGEID_805be12ff80c {
+  D3D11MESSAGEID_805be12ff80c::from_int(401)
+}
+
+///|
+pub fn D3D11MESSAGEID_805be12ff80c::createcounter_outofmemory_return() -> D3D11MESSAGEID_805be12ff80c {
+  D3D11MESSAGEID_805be12ff80c::from_int(399)
+}
+
+///|
+pub fn D3D11MESSAGEID_805be12ff80c::createcounter_outofrange_counter() -> D3D11MESSAGEID_805be12ff80c {
+  D3D11MESSAGEID_805be12ff80c::from_int(396)
+}
+
+///|
+pub fn D3D11MESSAGEID_805be12ff80c::createcounter_simultaneous_active_counters_exhausted() -> D3D11MESSAGEID_805be12ff80c {
+  D3D11MESSAGEID_805be12ff80c::from_int(397)
+}
+
+///|
+pub fn D3D11MESSAGEID_805be12ff80c::createcounter_unsupported_wellknown_counter() -> D3D11MESSAGEID_805be12ff80c {
+  D3D11MESSAGEID_805be12ff80c::from_int(398)
+}
+
+///|
+pub fn D3D11MESSAGEID_805be12ff80c::createcryptosession_nullparam() -> D3D11MESSAGEID_805be12ff80c {
+  D3D11MESSAGEID_805be12ff80c::from_int(3145951)
+}
+
+///|
+pub fn D3D11MESSAGEID_805be12ff80c::createcryptosession_outofmemory_return() -> D3D11MESSAGEID_805be12ff80c {
+  D3D11MESSAGEID_805be12ff80c::from_int(3145952)
+}
+
+///|
+pub fn D3D11MESSAGEID_805be12ff80c::createdeferredcontext_invalidarg_return() -> D3D11MESSAGEID_805be12ff80c {
+  D3D11MESSAGEID_805be12ff80c::from_int(2097163)
+}
+
+///|
+pub fn D3D11MESSAGEID_805be12ff80c::createdeferredcontext_invalid_call_return() -> D3D11MESSAGEID_805be12ff80c {
+  D3D11MESSAGEID_805be12ff80c::from_int(2097164)
+}
+
+///|
+pub fn D3D11MESSAGEID_805be12ff80c::createdeferredcontext_invalid_commandlistflags() -> D3D11MESSAGEID_805be12ff80c {
+  D3D11MESSAGEID_805be12ff80c::from_int(2097161)
+}
+
+///|
+pub fn D3D11MESSAGEID_805be12ff80c::createdeferredcontext_outofmemory_return() -> D3D11MESSAGEID_805be12ff80c {
+  D3D11MESSAGEID_805be12ff80c::from_int(2097165)
+}
+
+///|
+pub fn D3D11MESSAGEID_805be12ff80c::createdeferredcontext_singlethreaded() -> D3D11MESSAGEID_805be12ff80c {
+  D3D11MESSAGEID_805be12ff80c::from_int(2097162)
+}
+
+///|
+pub fn D3D11MESSAGEID_805be12ff80c::createdepthstencilstate_invalidbackfacestencilfailop() -> D3D11MESSAGEID_805be12ff80c {
+  D3D11MESSAGEID_805be12ff80c::from_int(206)
+}
+
+///|
+pub fn D3D11MESSAGEID_805be12ff80c::createdepthstencilstate_invalidbackfacestencilfunc() -> D3D11MESSAGEID_805be12ff80c {
+  D3D11MESSAGEID_805be12ff80c::from_int(209)
+}
+
+///|
+pub fn D3D11MESSAGEID_805be12ff80c::createdepthstencilstate_invalidbackfacestencilpassop() -> D3D11MESSAGEID_805be12ff80c {
+  D3D11MESSAGEID_805be12ff80c::from_int(208)
+}
+
+///|
+pub fn D3D11MESSAGEID_805be12ff80c::createdepthstencilstate_invalidbackfacestencilzfailop() -> D3D11MESSAGEID_805be12ff80c {
+  D3D11MESSAGEID_805be12ff80c::from_int(207)
+}
+
+///|
+pub fn D3D11MESSAGEID_805be12ff80c::createdepthstencilstate_invaliddepthfunc() -> D3D11MESSAGEID_805be12ff80c {
+  D3D11MESSAGEID_805be12ff80c::from_int(201)
+}
+
+///|
+pub fn D3D11MESSAGEID_805be12ff80c::createdepthstencilstate_invaliddepthwritemask() -> D3D11MESSAGEID_805be12ff80c {
+  D3D11MESSAGEID_805be12ff80c::from_int(200)
+}
+
+///|
+pub fn D3D11MESSAGEID_805be12ff80c::createdepthstencilstate_invalidfrontfacestencilfailop() -> D3D11MESSAGEID_805be12ff80c {
+  D3D11MESSAGEID_805be12ff80c::from_int(202)
+}
+
+///|
+pub fn D3D11MESSAGEID_805be12ff80c::createdepthstencilstate_invalidfrontfacestencilfunc() -> D3D11MESSAGEID_805be12ff80c {
+  D3D11MESSAGEID_805be12ff80c::from_int(205)
+}
+
+///|
+pub fn D3D11MESSAGEID_805be12ff80c::createdepthstencilstate_invalidfrontfacestencilpassop() -> D3D11MESSAGEID_805be12ff80c {
+  D3D11MESSAGEID_805be12ff80c::from_int(204)
+}
+
+///|
+pub fn D3D11MESSAGEID_805be12ff80c::createdepthstencilstate_invalidfrontfacestencilzfailop() -> D3D11MESSAGEID_805be12ff80c {
+  D3D11MESSAGEID_805be12ff80c::from_int(203)
+}
+
+///|
+pub fn D3D11MESSAGEID_805be12ff80c::createdepthstencilstate_nulldesc() -> D3D11MESSAGEID_805be12ff80c {
+  D3D11MESSAGEID_805be12ff80c::from_int(211)
+}
+
+///|
+pub fn D3D11MESSAGEID_805be12ff80c::createdepthstencilstate_stencil_no_two_sided() -> D3D11MESSAGEID_805be12ff80c {
+  D3D11MESSAGEID_805be12ff80c::from_int(1048577)
+}
+
+///|
+pub fn D3D11MESSAGEID_805be12ff80c::createdepthstencilstate_toomanyobjects() -> D3D11MESSAGEID_805be12ff80c {
+  D3D11MESSAGEID_805be12ff80c::from_int(210)
+}
+
+///|
+pub fn D3D11MESSAGEID_805be12ff80c::createdepthstencilview_invalidarg_return() -> D3D11MESSAGEID_805be12ff80c {
+  D3D11MESSAGEID_805be12ff80c::from_int(148)
+}
+
+///|
+pub fn D3D11MESSAGEID_805be12ff80c::createdepthstencilview_invaliddesc() -> D3D11MESSAGEID_805be12ff80c {
+  D3D11MESSAGEID_805be12ff80c::from_int(143)
+}
+
+///|
+pub fn D3D11MESSAGEID_805be12ff80c::createdepthstencilview_invaliddimensions() -> D3D11MESSAGEID_805be12ff80c {
+  D3D11MESSAGEID_805be12ff80c::from_int(145)
+}
+
+///|
+pub fn D3D11MESSAGEID_805be12ff80c::createdepthstencilview_invalidflags() -> D3D11MESSAGEID_805be12ff80c {
+  D3D11MESSAGEID_805be12ff80c::from_int(2097153)
+}
+
+///|
+pub fn D3D11MESSAGEID_805be12ff80c::createdepthstencilview_invalidformat() -> D3D11MESSAGEID_805be12ff80c {
+  D3D11MESSAGEID_805be12ff80c::from_int(144)
+}
+
+///|
+pub fn D3D11MESSAGEID_805be12ff80c::createdepthstencilview_invalidresource() -> D3D11MESSAGEID_805be12ff80c {
+  D3D11MESSAGEID_805be12ff80c::from_int(146)
+}
+
+///|
+pub fn D3D11MESSAGEID_805be12ff80c::createdepthstencilview_outofmemory_return() -> D3D11MESSAGEID_805be12ff80c {
+  D3D11MESSAGEID_805be12ff80c::from_int(149)
+}
+
+///|
+pub fn D3D11MESSAGEID_805be12ff80c::createdepthstencilview_toomanyobjects() -> D3D11MESSAGEID_805be12ff80c {
+  D3D11MESSAGEID_805be12ff80c::from_int(147)
+}
+
+///|
+pub fn D3D11MESSAGEID_805be12ff80c::createdepthstencilview_unrecognizedformat() -> D3D11MESSAGEID_805be12ff80c {
+  D3D11MESSAGEID_805be12ff80c::from_int(142)
+}
+
+///|
+pub fn D3D11MESSAGEID_805be12ff80c::createdevicecontextstate_featurelevels_not_supported() -> D3D11MESSAGEID_805be12ff80c {
+  D3D11MESSAGEID_805be12ff80c::from_int(3145752)
+}
+
+///|
+pub fn D3D11MESSAGEID_805be12ff80c::createdevicecontextstate_invalidfeaturelevel() -> D3D11MESSAGEID_805be12ff80c {
+  D3D11MESSAGEID_805be12ff80c::from_int(3145751)
+}
+
+///|
+pub fn D3D11MESSAGEID_805be12ff80c::createdevicecontextstate_invalidflags() -> D3D11MESSAGEID_805be12ff80c {
+  D3D11MESSAGEID_805be12ff80c::from_int(3145750)
+}
+
+///|
+pub fn D3D11MESSAGEID_805be12ff80c::createdevicecontextstate_invalidrefiid() -> D3D11MESSAGEID_805be12ff80c {
+  D3D11MESSAGEID_805be12ff80c::from_int(3145753)
+}
+
+///|
+pub fn D3D11MESSAGEID_805be12ff80c::createdevice_invalidargs() -> D3D11MESSAGEID_805be12ff80c {
+  D3D11MESSAGEID_805be12ff80c::from_int(3146142)
+}
+
+///|
+pub fn D3D11MESSAGEID_805be12ff80c::createdevice_warning() -> D3D11MESSAGEID_805be12ff80c {
+  D3D11MESSAGEID_805be12ff80c::from_int(3146143)
+}
+
+///|
+pub fn D3D11MESSAGEID_805be12ff80c::createdomainshader_invalidcall() -> D3D11MESSAGEID_805be12ff80c {
+  D3D11MESSAGEID_805be12ff80c::from_int(2097193)
+}
+
+///|
+pub fn D3D11MESSAGEID_805be12ff80c::createdomainshader_invalidclasslinkage() -> D3D11MESSAGEID_805be12ff80c {
+  D3D11MESSAGEID_805be12ff80c::from_int(2097197)
+}
+
+///|
+pub fn D3D11MESSAGEID_805be12ff80c::createdomainshader_invalidshaderbytecode() -> D3D11MESSAGEID_805be12ff80c {
+  D3D11MESSAGEID_805be12ff80c::from_int(2097195)
+}
+
+///|
+pub fn D3D11MESSAGEID_805be12ff80c::createdomainshader_invalidshadertype() -> D3D11MESSAGEID_805be12ff80c {
+  D3D11MESSAGEID_805be12ff80c::from_int(2097196)
+}
+
+///|
+pub fn D3D11MESSAGEID_805be12ff80c::createdomainshader_outofmemory() -> D3D11MESSAGEID_805be12ff80c {
+  D3D11MESSAGEID_805be12ff80c::from_int(2097194)
+}
+
+///|
+pub fn D3D11MESSAGEID_805be12ff80c::createfence_invalidflags() -> D3D11MESSAGEID_805be12ff80c {
+  D3D11MESSAGEID_805be12ff80c::from_int(3146256)
+}
+
+///|
+pub fn D3D11MESSAGEID_805be12ff80c::creategeometryshaderwithstreamoutput_canthaveonlygaps() -> D3D11MESSAGEID_805be12ff80c {
+  D3D11MESSAGEID_805be12ff80c::from_int(188)
+}
+
+///|
+pub fn D3D11MESSAGEID_805be12ff80c::creategeometryshaderwithstreamoutput_decltoocomplex() -> D3D11MESSAGEID_805be12ff80c {
+  D3D11MESSAGEID_805be12ff80c::from_int(189)
+}
+
+///|
+pub fn D3D11MESSAGEID_805be12ff80c::creategeometryshaderwithstreamoutput_expecteddecl() -> D3D11MESSAGEID_805be12ff80c {
+  D3D11MESSAGEID_805be12ff80c::from_int(177)
+}
+
+///|
+pub fn D3D11MESSAGEID_805be12ff80c::creategeometryshaderwithstreamoutput_invalidclasslinkage() -> D3D11MESSAGEID_805be12ff80c {
+  D3D11MESSAGEID_805be12ff80c::from_int(2097159)
+}
+
+///|
+pub fn D3D11MESSAGEID_805be12ff80c::creategeometryshaderwithstreamoutput_invalidcomponentcount() -> D3D11MESSAGEID_805be12ff80c {
+  D3D11MESSAGEID_805be12ff80c::from_int(181)
+}
+
+///|
+pub fn D3D11MESSAGEID_805be12ff80c::creategeometryshaderwithstreamoutput_invalidgapdefinition() -> D3D11MESSAGEID_805be12ff80c {
+  D3D11MESSAGEID_805be12ff80c::from_int(183)
+}
+
+///|
+pub fn D3D11MESSAGEID_805be12ff80c::creategeometryshaderwithstreamoutput_invalidnumentries() -> D3D11MESSAGEID_805be12ff80c {
+  D3D11MESSAGEID_805be12ff80c::from_int(174)
+}
+
+///|
+pub fn D3D11MESSAGEID_805be12ff80c::creategeometryshaderwithstreamoutput_invalidnumstreams() -> D3D11MESSAGEID_805be12ff80c {
+  D3D11MESSAGEID_805be12ff80c::from_int(2097156)
+}
+
+///|
+pub fn D3D11MESSAGEID_805be12ff80c::creategeometryshaderwithstreamoutput_invalidnumstrides() -> D3D11MESSAGEID_805be12ff80c {
+  D3D11MESSAGEID_805be12ff80c::from_int(2097172)
+}
+
+///|
+pub fn D3D11MESSAGEID_805be12ff80c::creategeometryshaderwithstreamoutput_invalidoutputslot() -> D3D11MESSAGEID_805be12ff80c {
+  D3D11MESSAGEID_805be12ff80c::from_int(179)
+}
+
+///|
+pub fn D3D11MESSAGEID_805be12ff80c::creategeometryshaderwithstreamoutput_invalidoutputstreamstride() -> D3D11MESSAGEID_805be12ff80c {
+  D3D11MESSAGEID_805be12ff80c::from_int(185)
+}
+
+///|
+pub fn D3D11MESSAGEID_805be12ff80c::creategeometryshaderwithstreamoutput_invalidshaderbytecode() -> D3D11MESSAGEID_805be12ff80c {
+  D3D11MESSAGEID_805be12ff80c::from_int(172)
+}
+
+///|
+pub fn D3D11MESSAGEID_805be12ff80c::creategeometryshaderwithstreamoutput_invalidshadertype() -> D3D11MESSAGEID_805be12ff80c {
+  D3D11MESSAGEID_805be12ff80c::from_int(173)
+}
+
+///|
+pub fn D3D11MESSAGEID_805be12ff80c::creategeometryshaderwithstreamoutput_invalidstartcomponentandcomponentcount() -> D3D11MESSAGEID_805be12ff80c {
+  D3D11MESSAGEID_805be12ff80c::from_int(182)
+}
+
+///|
+pub fn D3D11MESSAGEID_805be12ff80c::creategeometryshaderwithstreamoutput_invalidstream() -> D3D11MESSAGEID_805be12ff80c {
+  D3D11MESSAGEID_805be12ff80c::from_int(2097169)
+}
+
+///|
+pub fn D3D11MESSAGEID_805be12ff80c::creategeometryshaderwithstreamoutput_invalidstreamtorasterizer() -> D3D11MESSAGEID_805be12ff80c {
+  D3D11MESSAGEID_805be12ff80c::from_int(2097157)
+}
+
+///|
+pub fn D3D11MESSAGEID_805be12ff80c::creategeometryshaderwithstreamoutput_maskmismatch() -> D3D11MESSAGEID_805be12ff80c {
+  D3D11MESSAGEID_805be12ff80c::from_int(187)
+}
+
+///|
+pub fn D3D11MESSAGEID_805be12ff80c::creategeometryshaderwithstreamoutput_missingoutputsignature() -> D3D11MESSAGEID_805be12ff80c {
+  D3D11MESSAGEID_805be12ff80c::from_int(190)
+}
+
+///|
+pub fn D3D11MESSAGEID_805be12ff80c::creategeometryshaderwithstreamoutput_missingsemantic() -> D3D11MESSAGEID_805be12ff80c {
+  D3D11MESSAGEID_805be12ff80c::from_int(186)
+}
+
+///|
+pub fn D3D11MESSAGEID_805be12ff80c::creategeometryshaderwithstreamoutput_onlyoneelementperslot() -> D3D11MESSAGEID_805be12ff80c {
+  D3D11MESSAGEID_805be12ff80c::from_int(180)
+}
+
+///|
+pub fn D3D11MESSAGEID_805be12ff80c::creategeometryshaderwithstreamoutput_outofmemory() -> D3D11MESSAGEID_805be12ff80c {
+  D3D11MESSAGEID_805be12ff80c::from_int(171)
+}
+
+///|
+pub fn D3D11MESSAGEID_805be12ff80c::creategeometryshaderwithstreamoutput_outputslot0_expected() -> D3D11MESSAGEID_805be12ff80c {
+  D3D11MESSAGEID_805be12ff80c::from_int(178)
+}
+
+///|
+pub fn D3D11MESSAGEID_805be12ff80c::creategeometryshaderwithstreamoutput_outputstreamstrideunused() -> D3D11MESSAGEID_805be12ff80c {
+  D3D11MESSAGEID_805be12ff80c::from_int(175)
+}
+
+///|
+pub fn D3D11MESSAGEID_805be12ff80c::creategeometryshaderwithstreamoutput_repeatedoutput() -> D3D11MESSAGEID_805be12ff80c {
+  D3D11MESSAGEID_805be12ff80c::from_int(184)
+}
+
+///|
+pub fn D3D11MESSAGEID_805be12ff80c::creategeometryshaderwithstreamoutput_trailing_digit_in_semantic() -> D3D11MESSAGEID_805be12ff80c {
+  D3D11MESSAGEID_805be12ff80c::from_int(386)
+}
+
+///|
+pub fn D3D11MESSAGEID_805be12ff80c::creategeometryshaderwithstreamoutput_unexpecteddecl() -> D3D11MESSAGEID_805be12ff80c {
+  D3D11MESSAGEID_805be12ff80c::from_int(176)
+}
+
+///|
+pub fn D3D11MESSAGEID_805be12ff80c::creategeometryshaderwithstreamoutput_unexpectedentries() -> D3D11MESSAGEID_805be12ff80c {
+  D3D11MESSAGEID_805be12ff80c::from_int(2097170)
+}
+
+///|
+pub fn D3D11MESSAGEID_805be12ff80c::creategeometryshaderwithstreamoutput_unexpectedstreams() -> D3D11MESSAGEID_805be12ff80c {
+  D3D11MESSAGEID_805be12ff80c::from_int(2097158)
+}
+
+///|
+pub fn D3D11MESSAGEID_805be12ff80c::creategeometryshaderwithstreamoutput_unexpectedstrides() -> D3D11MESSAGEID_805be12ff80c {
+  D3D11MESSAGEID_805be12ff80c::from_int(2097171)
+}
+
+///|
+pub fn D3D11MESSAGEID_805be12ff80c::creategeometryshader_invalidclasslinkage() -> D3D11MESSAGEID_805be12ff80c {
+  D3D11MESSAGEID_805be12ff80c::from_int(2097155)
+}
+
+///|
+pub fn D3D11MESSAGEID_805be12ff80c::creategeometryshader_invalidshaderbytecode() -> D3D11MESSAGEID_805be12ff80c {
+  D3D11MESSAGEID_805be12ff80c::from_int(169)
+}
+
+///|
+pub fn D3D11MESSAGEID_805be12ff80c::creategeometryshader_invalidshadertype() -> D3D11MESSAGEID_805be12ff80c {
+  D3D11MESSAGEID_805be12ff80c::from_int(170)
+}
+
+///|
+pub fn D3D11MESSAGEID_805be12ff80c::creategeometryshader_outofmemory() -> D3D11MESSAGEID_805be12ff80c {
+  D3D11MESSAGEID_805be12ff80c::from_int(168)
+}
+
+///|
+pub fn D3D11MESSAGEID_805be12ff80c::createhullshader_invalidcall() -> D3D11MESSAGEID_805be12ff80c {
+  D3D11MESSAGEID_805be12ff80c::from_int(2097177)
+}
+
+///|
+pub fn D3D11MESSAGEID_805be12ff80c::createhullshader_invalidclasslinkage() -> D3D11MESSAGEID_805be12ff80c {
+  D3D11MESSAGEID_805be12ff80c::from_int(2097181)
+}
+
+///|
+pub fn D3D11MESSAGEID_805be12ff80c::createhullshader_invalidshaderbytecode() -> D3D11MESSAGEID_805be12ff80c {
+  D3D11MESSAGEID_805be12ff80c::from_int(2097179)
+}
+
+///|
+pub fn D3D11MESSAGEID_805be12ff80c::createhullshader_invalidshadertype() -> D3D11MESSAGEID_805be12ff80c {
+  D3D11MESSAGEID_805be12ff80c::from_int(2097180)
+}
+
+///|
+pub fn D3D11MESSAGEID_805be12ff80c::createhullshader_outofmemory() -> D3D11MESSAGEID_805be12ff80c {
+  D3D11MESSAGEID_805be12ff80c::from_int(2097178)
+}
+
+///|
+pub fn D3D11MESSAGEID_805be12ff80c::createinputlayout_duplicatesemantic() -> D3D11MESSAGEID_805be12ff80c {
+  D3D11MESSAGEID_805be12ff80c::from_int(160)
+}
+
+///|
+pub fn D3D11MESSAGEID_805be12ff80c::createinputlayout_empty_layout() -> D3D11MESSAGEID_805be12ff80c {
+  D3D11MESSAGEID_805be12ff80c::from_int(420)
+}
+
+///|
+pub fn D3D11MESSAGEID_805be12ff80c::createinputlayout_incompatibleformat() -> D3D11MESSAGEID_805be12ff80c {
+  D3D11MESSAGEID_805be12ff80c::from_int(153)
+}
+
+///|
+pub fn D3D11MESSAGEID_805be12ff80c::createinputlayout_invalidalignment() -> D3D11MESSAGEID_805be12ff80c {
+  D3D11MESSAGEID_805be12ff80c::from_int(159)
+}
+
+///|
+pub fn D3D11MESSAGEID_805be12ff80c::createinputlayout_invalidformat() -> D3D11MESSAGEID_805be12ff80c {
+  D3D11MESSAGEID_805be12ff80c::from_int(152)
+}
+
+///|
+pub fn D3D11MESSAGEID_805be12ff80c::createinputlayout_invalidinputslotclass() -> D3D11MESSAGEID_805be12ff80c {
+  D3D11MESSAGEID_805be12ff80c::from_int(155)
+}
+
+///|
+pub fn D3D11MESSAGEID_805be12ff80c::createinputlayout_invalidslot() -> D3D11MESSAGEID_805be12ff80c {
+  D3D11MESSAGEID_805be12ff80c::from_int(154)
+}
+
+///|
+pub fn D3D11MESSAGEID_805be12ff80c::createinputlayout_invalidslotclasschange() -> D3D11MESSAGEID_805be12ff80c {
+  D3D11MESSAGEID_805be12ff80c::from_int(157)
+}
+
+///|
+pub fn D3D11MESSAGEID_805be12ff80c::createinputlayout_invalidstepratechange() -> D3D11MESSAGEID_805be12ff80c {
+  D3D11MESSAGEID_805be12ff80c::from_int(158)
+}
+
+///|
+pub fn D3D11MESSAGEID_805be12ff80c::createinputlayout_level9_instancing_not_supported() -> D3D11MESSAGEID_805be12ff80c {
+  D3D11MESSAGEID_805be12ff80c::from_int(3146124)
+}
+
+///|
+pub fn D3D11MESSAGEID_805be12ff80c::createinputlayout_level9_steprate_not_1() -> D3D11MESSAGEID_805be12ff80c {
+  D3D11MESSAGEID_805be12ff80c::from_int(3146123)
+}
+
+///|
+pub fn D3D11MESSAGEID_805be12ff80c::createinputlayout_missingelement() -> D3D11MESSAGEID_805be12ff80c {
+  D3D11MESSAGEID_805be12ff80c::from_int(163)
+}
+
+///|
+pub fn D3D11MESSAGEID_805be12ff80c::createinputlayout_nulldesc() -> D3D11MESSAGEID_805be12ff80c {
+  D3D11MESSAGEID_805be12ff80c::from_int(164)
+}
+
+///|
+pub fn D3D11MESSAGEID_805be12ff80c::createinputlayout_nullsemantic() -> D3D11MESSAGEID_805be12ff80c {
+  D3D11MESSAGEID_805be12ff80c::from_int(162)
+}
+
+///|
+pub fn D3D11MESSAGEID_805be12ff80c::createinputlayout_outofmemory() -> D3D11MESSAGEID_805be12ff80c {
+  D3D11MESSAGEID_805be12ff80c::from_int(150)
+}
+
+///|
+pub fn D3D11MESSAGEID_805be12ff80c::createinputlayout_steprateslotclassmismatch() -> D3D11MESSAGEID_805be12ff80c {
+  D3D11MESSAGEID_805be12ff80c::from_int(156)
+}
+
+///|
+pub fn D3D11MESSAGEID_805be12ff80c::createinputlayout_toomanyelements() -> D3D11MESSAGEID_805be12ff80c {
+  D3D11MESSAGEID_805be12ff80c::from_int(151)
+}

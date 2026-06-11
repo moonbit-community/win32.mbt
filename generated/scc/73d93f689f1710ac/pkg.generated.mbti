@@ -1,0 +1,1081 @@
+// Generated using `moon info`, DON'T EDIT IT
+package "moonbit-community/win32api/scc/73d93f689f1710ac"
+
+import {
+  "moonbit-community/win32api/runtime/core",
+  "moonbit-community/win32api/runtime/strings",
+  "moonbitlang/core/debug",
+}
+
+// Values
+pub let dfs_add_volume_e568657ce664 : UInt
+
+pub let dfs_force_remove_dc3ce4e42f29 : UInt
+
+pub let dfs_global_high_priority_class_37e9f9e4774a : Int
+
+pub let dfs_global_low_priority_class_1a6f2ad4837d : Int
+
+pub let dfs_invalid_priority_class_edc5f12b72e7 : Int
+
+pub let dfs_move_flag_replace_if_exists_9f39119f289c : UInt
+
+pub let dfs_namespace_version_origin_combined_a6f485c8a773 : Int
+
+pub let dfs_namespace_version_origin_domain_757048690443 : Int
+
+pub let dfs_namespace_version_origin_server_044d564ed670 : Int
+
+pub let dfs_property_flag_abde_d25f43f09d1c : UInt
+
+pub let dfs_property_flag_cluster_enabled_682a3283468b : UInt
+
+pub let dfs_property_flag_insite_referrals_774f827c6d3d : UInt
+
+pub let dfs_property_flag_root_scalability_c5ceba6399f8 : UInt
+
+pub let dfs_property_flag_site_costing_7b91bb4349c7 : UInt
+
+pub let dfs_property_flag_target_failback_095157b46bce : UInt
+
+pub let dfs_restore_volume_49052554222b : UInt
+
+pub let dfs_site_cost_high_priority_class_fc2a6a5a5989 : Int
+
+pub let dfs_site_cost_low_priority_class_32e8a18f7338 : Int
+
+pub let dfs_site_cost_normal_priority_class_4adc8f1cafc5 : Int
+
+pub let dfs_site_primary_dafa37cd0a59 : UInt
+
+pub let dfs_storage_flavor_unused2_f0e7715c10f4 : UInt
+
+pub let dfs_storage_state_active_f57cfd3f30d1 : UInt
+
+pub let dfs_storage_state_offline_0e06af408c98 : UInt
+
+pub let dfs_storage_state_online_0df1bb1da1ac : UInt
+
+pub let dfs_storage_states_578873da724e : UInt
+
+pub let dfs_volume_flavor_ad_blob_290ad0be0735 : UInt
+
+pub let dfs_volume_flavor_standalone_ddc1d5974cf7 : UInt
+
+pub let dfs_volume_flavor_unused1_01c3d0ead6ca : UInt
+
+pub let dfs_volume_flavors_7c4b6169ea74 : UInt
+
+pub let dfs_volume_state_force_sync_d541b632fb9a : UInt
+
+pub let dfs_volume_state_inconsistent_c77de8b599f5 : UInt
+
+pub let dfs_volume_state_offline_46fae06a086a : UInt
+
+pub let dfs_volume_state_ok_f945a2d3fff0 : UInt
+
+pub let dfs_volume_state_online_4227d89be7fb : UInt
+
+pub let dfs_volume_state_resynchronize_0cec047d5cbb : UInt
+
+pub let dfs_volume_state_standby_853aa104f127 : UInt
+
+pub let dfs_volume_states_595cf6801497 : UInt
+
+pub let dfsgetpktentrystatearg_570aaddb494f_alignment : Int
+
+pub let dfsgetpktentrystatearg_570aaddb494f_size : Int
+
+pub let dfsinfo100_fd38419db9cb_alignment : Int
+
+pub let dfsinfo100_fd38419db9cb_size : Int
+
+pub let dfsinfo101_370003a53aa2_alignment : Int
+
+pub let dfsinfo101_370003a53aa2_size : Int
+
+pub let dfsinfo102_16cd06b19f78_alignment : Int
+
+pub let dfsinfo102_16cd06b19f78_size : Int
+
+pub let dfsinfo103_dbf6dbba53f7_alignment : Int
+
+pub let dfsinfo103_dbf6dbba53f7_size : Int
+
+pub let dfsinfo104_8d20f13686e9_alignment : Int
+
+pub let dfsinfo104_8d20f13686e9_size : Int
+
+pub let dfsinfo105_d1555c14b23b_alignment : Int
+
+pub let dfsinfo105_d1555c14b23b_size : Int
+
+pub let dfsinfo106_6bc45c881915_alignment : Int
+
+pub let dfsinfo106_6bc45c881915_size : Int
+
+pub let dfsinfo107_999b575c71f7_alignment : Int
+
+pub let dfsinfo107_999b575c71f7_size : Int
+
+pub let dfsinfo132_86d54b1b681c_alignment : Int
+
+pub let dfsinfo132_86d54b1b681c_size : Int
+
+pub let dfsinfo150_be82c9f742b4_alignment : Int
+
+pub let dfsinfo150_be82c9f742b4_size : Int
+
+pub let dfsinfo1_7d4110c4e7cb_alignment : Int
+
+pub let dfsinfo1_7d4110c4e7cb_size : Int
+
+pub let dfsinfo200_5c6845c2e118_alignment : Int
+
+pub let dfsinfo200_5c6845c2e118_size : Int
+
+pub let dfsinfo232_882eabbd416e_alignment : Int
+
+pub let dfsinfo232_882eabbd416e_size : Int
+
+pub let dfsinfo2_c6ddaf2c11f2_alignment : Int
+
+pub let dfsinfo2_c6ddaf2c11f2_size : Int
+
+pub let dfsinfo300_37f529617d44_alignment : Int
+
+pub let dfsinfo300_37f529617d44_size : Int
+
+pub let dfsinfo332_1e04a3e66fae_alignment : Int
+
+pub let dfsinfo332_1e04a3e66fae_size : Int
+
+pub let dfsinfo3_ba3051783e04_alignment : Int
+
+pub let dfsinfo3_ba3051783e04_size : Int
+
+pub let dfsinfo432_220c1f54078a_alignment : Int
+
+pub let dfsinfo432_220c1f54078a_size : Int
+
+pub let dfsinfo4_27cdd9b11c85_alignment : Int
+
+pub let dfsinfo4_27cdd9b11c85_size : Int
+
+pub let dfsinfo50_b3133575a60b_alignment : Int
+
+pub let dfsinfo50_b3133575a60b_size : Int
+
+pub let dfsinfo5_6b505d5b2497_alignment : Int
+
+pub let dfsinfo5_6b505d5b2497_size : Int
+
+pub let dfsinfo6_c94ee136f358_alignment : Int
+
+pub let dfsinfo6_c94ee136f358_size : Int
+
+pub let dfsinfo7_c8dd347bff7e_alignment : Int
+
+pub let dfsinfo7_c8dd347bff7e_size : Int
+
+pub let dfsinfo8_db500f2922d1_alignment : Int
+
+pub let dfsinfo8_db500f2922d1_size : Int
+
+pub let dfsinfo9_a45543ca3733_alignment : Int
+
+pub let dfsinfo9_a45543ca3733_size : Int
+
+pub let dfssitelistinfo_da5c9156f105_alignment : Int
+
+pub let dfssitelistinfo_da5c9156f105_size : Int
+
+pub let dfssitenameinfo_8959dae459ea_alignment : Int
+
+pub let dfssitenameinfo_8959dae459ea_size : Int
+
+pub let dfsstorageinfo032_28a26cc7ebfb_alignment : Int
+
+pub let dfsstorageinfo032_28a26cc7ebfb_size : Int
+
+pub let dfsstorageinfo1_e6c0a7bef96a_alignment : Int
+
+pub let dfsstorageinfo1_e6c0a7bef96a_size : Int
+
+pub let dfsstorageinfo_f45f19c07202_alignment : Int
+
+pub let dfsstorageinfo_f45f19c07202_size : Int
+
+pub let dfssupportednamespaceversioninfo_3200a6cf506e_alignment : Int
+
+pub let dfssupportednamespaceversioninfo_3200a6cf506e_size : Int
+
+pub let dfstargetpriority_955816a201f4_alignment : Int
+
+pub let dfstargetpriority_955816a201f4_size : Int
+
+pub let fsctl_dfs_base_b79bdda61aca : UInt
+
+pub let fsctl_dfs_get_pkt_entry_state_fd3824957b2b : UInt
+
+pub fn net_dfs_add_3170d9ef4e00(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, UInt) -> UInt raise @core.WindowsError
+
+pub fn net_dfs_add_3170d9ef4e00_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, UInt) -> UInt
+
+pub fn net_dfs_add_ft_root_c270733bd88d(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, UInt) -> UInt raise @core.WindowsError
+
+pub fn net_dfs_add_ft_root_c270733bd88d_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, UInt) -> UInt
+
+pub fn net_dfs_add_root_target_4ba4ebe0c399(@core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, UInt) -> UInt raise @core.WindowsError
+
+pub fn net_dfs_add_root_target_4ba4ebe0c399_raw(@core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, UInt) -> UInt
+
+pub fn net_dfs_add_std_root_601be21344bd(@core.RawAddress, @core.RawAddress, @core.RawAddress, UInt) -> UInt raise @core.WindowsError
+
+pub fn net_dfs_add_std_root_601be21344bd_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, UInt) -> UInt
+
+pub fn net_dfs_enum_0187a11f98d2(@core.RawAddress, UInt, UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt raise @core.WindowsError
+
+pub fn net_dfs_enum_0187a11f98d2_raw(@core.RawAddress, UInt, UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn net_dfs_get_client_info_362e787eda75(@core.RawAddress, @core.RawAddress, @core.RawAddress, UInt, @core.RawAddress) -> UInt raise @core.WindowsError
+
+pub fn net_dfs_get_client_info_362e787eda75_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, UInt, @core.RawAddress) -> UInt
+
+pub fn net_dfs_get_ft_container_security_12bf7499d1e7(@core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> UInt raise @core.WindowsError
+
+pub fn net_dfs_get_ft_container_security_12bf7499d1e7_raw(@core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn net_dfs_get_info_3e2b15068eb8(@core.RawAddress, @core.RawAddress, @core.RawAddress, UInt, @core.RawAddress) -> UInt raise @core.WindowsError
+
+pub fn net_dfs_get_info_3e2b15068eb8_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, UInt, @core.RawAddress) -> UInt
+
+pub fn net_dfs_get_security_8db05173fc38(@core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> UInt raise @core.WindowsError
+
+pub fn net_dfs_get_security_8db05173fc38_raw(@core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn net_dfs_get_std_container_security_0b8536575c5a(@core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> UInt raise @core.WindowsError
+
+pub fn net_dfs_get_std_container_security_0b8536575c5a_raw(@core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn net_dfs_get_supported_namespace_version_96c7a686b40e(DFSNAMESPACEVERSIONORIGIN_c6cfbe3df9b0, @core.RawAddress, @core.RawAddress) -> UInt raise @core.WindowsError
+
+pub fn net_dfs_get_supported_namespace_version_96c7a686b40e_raw(Int, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn net_dfs_move_b1b643839f47(@core.RawAddress, @core.RawAddress, UInt) -> UInt raise @core.WindowsError
+
+pub fn net_dfs_move_b1b643839f47_raw(@core.RawAddress, @core.RawAddress, UInt) -> UInt
+
+pub fn net_dfs_remove_278c9d2f7919(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt raise @core.WindowsError
+
+pub fn net_dfs_remove_278c9d2f7919_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn net_dfs_remove_ft_root_ff68e9b403ee(@core.RawAddress, @core.RawAddress, @core.RawAddress, UInt) -> UInt raise @core.WindowsError
+
+pub fn net_dfs_remove_ft_root_ff68e9b403ee_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, UInt) -> UInt
+
+pub fn net_dfs_remove_ft_root_forced_f4a8c4b7ee34(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, UInt) -> UInt raise @core.WindowsError
+
+pub fn net_dfs_remove_ft_root_forced_f4a8c4b7ee34_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, UInt) -> UInt
+
+pub fn net_dfs_remove_root_target_945fc0d22a93(@core.RawAddress, @core.RawAddress, UInt) -> UInt raise @core.WindowsError
+
+pub fn net_dfs_remove_root_target_945fc0d22a93_raw(@core.RawAddress, @core.RawAddress, UInt) -> UInt
+
+pub fn net_dfs_remove_std_root_b0e41e964bbf(@core.RawAddress, @core.RawAddress, UInt) -> UInt raise @core.WindowsError
+
+pub fn net_dfs_remove_std_root_b0e41e964bbf_raw(@core.RawAddress, @core.RawAddress, UInt) -> UInt
+
+pub fn net_dfs_set_client_info_bce089ed22c9(@core.RawAddress, @core.RawAddress, @core.RawAddress, UInt, @core.RawAddress) -> UInt raise @core.WindowsError
+
+pub fn net_dfs_set_client_info_bce089ed22c9_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, UInt, @core.RawAddress) -> UInt
+
+pub fn net_dfs_set_ft_container_security_662fc42362b4(@core.RawAddress, UInt, @core.RawAddress) -> UInt raise @core.WindowsError
+
+pub fn net_dfs_set_ft_container_security_662fc42362b4_raw(@core.RawAddress, UInt, @core.RawAddress) -> UInt
+
+pub fn net_dfs_set_info_23eab11b88fd(@core.RawAddress, @core.RawAddress, @core.RawAddress, UInt, @core.RawAddress) -> UInt raise @core.WindowsError
+
+pub fn net_dfs_set_info_23eab11b88fd_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, UInt, @core.RawAddress) -> UInt
+
+pub fn net_dfs_set_security_963b2b1f1b11(@core.RawAddress, UInt, @core.RawAddress) -> UInt raise @core.WindowsError
+
+pub fn net_dfs_set_security_963b2b1f1b11_raw(@core.RawAddress, UInt, @core.RawAddress) -> UInt
+
+pub fn net_dfs_set_std_container_security_863fc3b6cf5e(@core.RawAddress, UInt, @core.RawAddress) -> UInt raise @core.WindowsError
+
+pub fn net_dfs_set_std_container_security_863fc3b6cf5e_raw(@core.RawAddress, UInt, @core.RawAddress) -> UInt
+
+pub let net_dfs_setdc_flags_200638e2022b : UInt
+
+pub let net_dfs_setdc_initpkt_dd2d81ef1640 : UInt
+
+pub let net_dfs_setdc_timeout_412a0d7bf1fe : UInt
+
+// Errors
+
+// Types and methods
+pub(all) struct DFSGETPKTENTRYSTATEARG_570aaddb494f {
+  raw_buffer : @core.NativeBuffer
+}
+pub fn DFSGETPKTENTRYSTATEARG_570aaddb494f::abi_alignment() -> Int
+pub fn DFSGETPKTENTRYSTATEARG_570aaddb494f::abi_size() -> Int
+pub fn DFSGETPKTENTRYSTATEARG_570aaddb494f::bytes(Self) -> Bytes raise @core.WindowsError
+pub fn DFSGETPKTENTRYSTATEARG_570aaddb494f::dfs_entry_path_len(Self) -> UInt16 raise @core.WindowsError
+pub fn DFSGETPKTENTRYSTATEARG_570aaddb494f::from_bytes(Bytes) -> Self raise @core.WindowsError
+pub fn DFSGETPKTENTRYSTATEARG_570aaddb494f::level(Self) -> UInt raise @core.WindowsError
+pub fn DFSGETPKTENTRYSTATEARG_570aaddb494f::new() -> Self raise @core.WindowsError
+pub fn DFSGETPKTENTRYSTATEARG_570aaddb494f::raw_address(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn DFSGETPKTENTRYSTATEARG_570aaddb494f::server_name_len(Self) -> UInt16 raise @core.WindowsError
+pub fn DFSGETPKTENTRYSTATEARG_570aaddb494f::set_dfs_entry_path_len(Self, UInt16) -> Unit raise @core.WindowsError
+pub fn DFSGETPKTENTRYSTATEARG_570aaddb494f::set_level(Self, UInt) -> Unit raise @core.WindowsError
+pub fn DFSGETPKTENTRYSTATEARG_570aaddb494f::set_server_name_len(Self, UInt16) -> Unit raise @core.WindowsError
+pub fn DFSGETPKTENTRYSTATEARG_570aaddb494f::set_share_name_len(Self, UInt16) -> Unit raise @core.WindowsError
+pub fn DFSGETPKTENTRYSTATEARG_570aaddb494f::share_name_len(Self) -> UInt16 raise @core.WindowsError
+pub fn[T] DFSGETPKTENTRYSTATEARG_570aaddb494f::with_raw_address(Self, (@core.RawAddress) -> T raise?) -> T raise
+pub impl Eq for DFSGETPKTENTRYSTATEARG_570aaddb494f
+pub impl @debug.Debug for DFSGETPKTENTRYSTATEARG_570aaddb494f
+
+pub(all) struct DFSINFO100_fd38419db9cb {
+  raw_buffer : @core.NativeBuffer
+  mut root_comment : @strings.PWStrBuffer?
+}
+pub fn DFSINFO100_fd38419db9cb::abi_alignment() -> Int
+pub fn DFSINFO100_fd38419db9cb::abi_size() -> Int
+pub fn DFSINFO100_fd38419db9cb::bytes(Self) -> Bytes raise @core.WindowsError
+pub fn DFSINFO100_fd38419db9cb::clear_comment(Self) -> Unit raise @core.WindowsError
+pub fn DFSINFO100_fd38419db9cb::comment_raw(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn DFSINFO100_fd38419db9cb::from_bytes(Bytes) -> Self raise @core.WindowsError
+pub fn DFSINFO100_fd38419db9cb::new() -> Self raise @core.WindowsError
+pub fn DFSINFO100_fd38419db9cb::raw_address(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn DFSINFO100_fd38419db9cb::set_comment(Self, @strings.PWStrBuffer) -> Unit raise @core.WindowsError
+pub fn DFSINFO100_fd38419db9cb::set_comment_raw(Self, @core.RawAddress) -> Unit raise @core.WindowsError
+pub fn[T] DFSINFO100_fd38419db9cb::with_raw_address(Self, (@core.RawAddress) -> T raise?) -> T raise
+pub impl Eq for DFSINFO100_fd38419db9cb
+pub impl @debug.Debug for DFSINFO100_fd38419db9cb
+
+pub(all) struct DFSINFO101_370003a53aa2 {
+  raw_buffer : @core.NativeBuffer
+}
+pub fn DFSINFO101_370003a53aa2::abi_alignment() -> Int
+pub fn DFSINFO101_370003a53aa2::abi_size() -> Int
+pub fn DFSINFO101_370003a53aa2::bytes(Self) -> Bytes raise @core.WindowsError
+pub fn DFSINFO101_370003a53aa2::from_bytes(Bytes) -> Self raise @core.WindowsError
+pub fn DFSINFO101_370003a53aa2::new() -> Self raise @core.WindowsError
+pub fn DFSINFO101_370003a53aa2::raw_address(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn DFSINFO101_370003a53aa2::set_state(Self, UInt) -> Unit raise @core.WindowsError
+pub fn DFSINFO101_370003a53aa2::state(Self) -> UInt raise @core.WindowsError
+pub fn[T] DFSINFO101_370003a53aa2::with_raw_address(Self, (@core.RawAddress) -> T raise?) -> T raise
+pub impl Eq for DFSINFO101_370003a53aa2
+pub impl @debug.Debug for DFSINFO101_370003a53aa2
+
+pub(all) struct DFSINFO102_16cd06b19f78 {
+  raw_buffer : @core.NativeBuffer
+}
+pub fn DFSINFO102_16cd06b19f78::abi_alignment() -> Int
+pub fn DFSINFO102_16cd06b19f78::abi_size() -> Int
+pub fn DFSINFO102_16cd06b19f78::bytes(Self) -> Bytes raise @core.WindowsError
+pub fn DFSINFO102_16cd06b19f78::from_bytes(Bytes) -> Self raise @core.WindowsError
+pub fn DFSINFO102_16cd06b19f78::new() -> Self raise @core.WindowsError
+pub fn DFSINFO102_16cd06b19f78::raw_address(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn DFSINFO102_16cd06b19f78::set_timeout(Self, UInt) -> Unit raise @core.WindowsError
+pub fn DFSINFO102_16cd06b19f78::timeout(Self) -> UInt raise @core.WindowsError
+pub fn[T] DFSINFO102_16cd06b19f78::with_raw_address(Self, (@core.RawAddress) -> T raise?) -> T raise
+pub impl Eq for DFSINFO102_16cd06b19f78
+pub impl @debug.Debug for DFSINFO102_16cd06b19f78
+
+pub(all) struct DFSINFO103_dbf6dbba53f7 {
+  raw_buffer : @core.NativeBuffer
+}
+pub fn DFSINFO103_dbf6dbba53f7::abi_alignment() -> Int
+pub fn DFSINFO103_dbf6dbba53f7::abi_size() -> Int
+pub fn DFSINFO103_dbf6dbba53f7::bytes(Self) -> Bytes raise @core.WindowsError
+pub fn DFSINFO103_dbf6dbba53f7::from_bytes(Bytes) -> Self raise @core.WindowsError
+pub fn DFSINFO103_dbf6dbba53f7::new() -> Self raise @core.WindowsError
+pub fn DFSINFO103_dbf6dbba53f7::property_flag_mask(Self) -> UInt raise @core.WindowsError
+pub fn DFSINFO103_dbf6dbba53f7::property_flags(Self) -> UInt raise @core.WindowsError
+pub fn DFSINFO103_dbf6dbba53f7::raw_address(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn DFSINFO103_dbf6dbba53f7::set_property_flag_mask(Self, UInt) -> Unit raise @core.WindowsError
+pub fn DFSINFO103_dbf6dbba53f7::set_property_flags(Self, UInt) -> Unit raise @core.WindowsError
+pub fn[T] DFSINFO103_dbf6dbba53f7::with_raw_address(Self, (@core.RawAddress) -> T raise?) -> T raise
+pub impl Eq for DFSINFO103_dbf6dbba53f7
+pub impl @debug.Debug for DFSINFO103_dbf6dbba53f7
+
+pub(all) struct DFSINFO104_8d20f13686e9 {
+  raw_buffer : @core.NativeBuffer
+}
+pub fn DFSINFO104_8d20f13686e9::abi_alignment() -> Int
+pub fn DFSINFO104_8d20f13686e9::abi_size() -> Int
+pub fn DFSINFO104_8d20f13686e9::bytes(Self) -> Bytes raise @core.WindowsError
+pub fn DFSINFO104_8d20f13686e9::from_bytes(Bytes) -> Self raise @core.WindowsError
+pub fn DFSINFO104_8d20f13686e9::new() -> Self raise @core.WindowsError
+pub fn DFSINFO104_8d20f13686e9::raw_address(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn DFSINFO104_8d20f13686e9::set_target_priority(Self, DFSTARGETPRIORITY_955816a201f4) -> Unit raise @core.WindowsError
+pub fn DFSINFO104_8d20f13686e9::target_priority(Self) -> DFSTARGETPRIORITY_955816a201f4 raise @core.WindowsError
+pub fn[T] DFSINFO104_8d20f13686e9::with_raw_address(Self, (@core.RawAddress) -> T raise?) -> T raise
+pub impl Eq for DFSINFO104_8d20f13686e9
+pub impl @debug.Debug for DFSINFO104_8d20f13686e9
+
+pub(all) struct DFSINFO105_d1555c14b23b {
+  raw_buffer : @core.NativeBuffer
+  mut root_comment : @strings.PWStrBuffer?
+}
+pub fn DFSINFO105_d1555c14b23b::abi_alignment() -> Int
+pub fn DFSINFO105_d1555c14b23b::abi_size() -> Int
+pub fn DFSINFO105_d1555c14b23b::bytes(Self) -> Bytes raise @core.WindowsError
+pub fn DFSINFO105_d1555c14b23b::clear_comment(Self) -> Unit raise @core.WindowsError
+pub fn DFSINFO105_d1555c14b23b::comment_raw(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn DFSINFO105_d1555c14b23b::from_bytes(Bytes) -> Self raise @core.WindowsError
+pub fn DFSINFO105_d1555c14b23b::new() -> Self raise @core.WindowsError
+pub fn DFSINFO105_d1555c14b23b::property_flag_mask(Self) -> UInt raise @core.WindowsError
+pub fn DFSINFO105_d1555c14b23b::property_flags(Self) -> UInt raise @core.WindowsError
+pub fn DFSINFO105_d1555c14b23b::raw_address(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn DFSINFO105_d1555c14b23b::set_comment(Self, @strings.PWStrBuffer) -> Unit raise @core.WindowsError
+pub fn DFSINFO105_d1555c14b23b::set_comment_raw(Self, @core.RawAddress) -> Unit raise @core.WindowsError
+pub fn DFSINFO105_d1555c14b23b::set_property_flag_mask(Self, UInt) -> Unit raise @core.WindowsError
+pub fn DFSINFO105_d1555c14b23b::set_property_flags(Self, UInt) -> Unit raise @core.WindowsError
+pub fn DFSINFO105_d1555c14b23b::set_state(Self, UInt) -> Unit raise @core.WindowsError
+pub fn DFSINFO105_d1555c14b23b::set_timeout(Self, UInt) -> Unit raise @core.WindowsError
+pub fn DFSINFO105_d1555c14b23b::state(Self) -> UInt raise @core.WindowsError
+pub fn DFSINFO105_d1555c14b23b::timeout(Self) -> UInt raise @core.WindowsError
+pub fn[T] DFSINFO105_d1555c14b23b::with_raw_address(Self, (@core.RawAddress) -> T raise?) -> T raise
+pub impl Eq for DFSINFO105_d1555c14b23b
+pub impl @debug.Debug for DFSINFO105_d1555c14b23b
+
+pub(all) struct DFSINFO106_6bc45c881915 {
+  raw_buffer : @core.NativeBuffer
+}
+pub fn DFSINFO106_6bc45c881915::abi_alignment() -> Int
+pub fn DFSINFO106_6bc45c881915::abi_size() -> Int
+pub fn DFSINFO106_6bc45c881915::bytes(Self) -> Bytes raise @core.WindowsError
+pub fn DFSINFO106_6bc45c881915::from_bytes(Bytes) -> Self raise @core.WindowsError
+pub fn DFSINFO106_6bc45c881915::new() -> Self raise @core.WindowsError
+pub fn DFSINFO106_6bc45c881915::raw_address(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn DFSINFO106_6bc45c881915::set_state(Self, UInt) -> Unit raise @core.WindowsError
+pub fn DFSINFO106_6bc45c881915::set_target_priority(Self, DFSTARGETPRIORITY_955816a201f4) -> Unit raise @core.WindowsError
+pub fn DFSINFO106_6bc45c881915::state(Self) -> UInt raise @core.WindowsError
+pub fn DFSINFO106_6bc45c881915::target_priority(Self) -> DFSTARGETPRIORITY_955816a201f4 raise @core.WindowsError
+pub fn[T] DFSINFO106_6bc45c881915::with_raw_address(Self, (@core.RawAddress) -> T raise?) -> T raise
+pub impl Eq for DFSINFO106_6bc45c881915
+pub impl @debug.Debug for DFSINFO106_6bc45c881915
+
+pub(all) struct DFSINFO107_999b575c71f7 {
+  raw_buffer : @core.NativeBuffer
+  mut root_comment : @strings.PWStrBuffer?
+}
+pub fn DFSINFO107_999b575c71f7::abi_alignment() -> Int
+pub fn DFSINFO107_999b575c71f7::abi_size() -> Int
+pub fn DFSINFO107_999b575c71f7::bytes(Self) -> Bytes raise @core.WindowsError
+pub fn DFSINFO107_999b575c71f7::clear_comment(Self) -> Unit raise @core.WindowsError
+pub fn DFSINFO107_999b575c71f7::comment_raw(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn DFSINFO107_999b575c71f7::from_bytes(Bytes) -> Self raise @core.WindowsError
+pub fn DFSINFO107_999b575c71f7::new() -> Self raise @core.WindowsError
+pub fn DFSINFO107_999b575c71f7::p_security_descriptor_raw(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn DFSINFO107_999b575c71f7::property_flag_mask(Self) -> UInt raise @core.WindowsError
+pub fn DFSINFO107_999b575c71f7::property_flags(Self) -> UInt raise @core.WindowsError
+pub fn DFSINFO107_999b575c71f7::raw_address(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn DFSINFO107_999b575c71f7::sd_length_reserved(Self) -> UInt raise @core.WindowsError
+pub fn DFSINFO107_999b575c71f7::set_comment(Self, @strings.PWStrBuffer) -> Unit raise @core.WindowsError
+pub fn DFSINFO107_999b575c71f7::set_comment_raw(Self, @core.RawAddress) -> Unit raise @core.WindowsError
+pub fn DFSINFO107_999b575c71f7::set_p_security_descriptor_raw(Self, @core.RawAddress) -> Unit raise @core.WindowsError
+pub fn DFSINFO107_999b575c71f7::set_property_flag_mask(Self, UInt) -> Unit raise @core.WindowsError
+pub fn DFSINFO107_999b575c71f7::set_property_flags(Self, UInt) -> Unit raise @core.WindowsError
+pub fn DFSINFO107_999b575c71f7::set_sd_length_reserved(Self, UInt) -> Unit raise @core.WindowsError
+pub fn DFSINFO107_999b575c71f7::set_state(Self, UInt) -> Unit raise @core.WindowsError
+pub fn DFSINFO107_999b575c71f7::set_timeout(Self, UInt) -> Unit raise @core.WindowsError
+pub fn DFSINFO107_999b575c71f7::state(Self) -> UInt raise @core.WindowsError
+pub fn DFSINFO107_999b575c71f7::timeout(Self) -> UInt raise @core.WindowsError
+pub fn[T] DFSINFO107_999b575c71f7::with_raw_address(Self, (@core.RawAddress) -> T raise?) -> T raise
+pub impl Eq for DFSINFO107_999b575c71f7
+pub impl @debug.Debug for DFSINFO107_999b575c71f7
+
+pub(all) struct DFSINFO132_86d54b1b681c {
+  raw_buffer : @core.NativeBuffer
+}
+pub fn DFSINFO132_86d54b1b681c::abi_alignment() -> Int
+pub fn DFSINFO132_86d54b1b681c::abi_size() -> Int
+pub fn DFSINFO132_86d54b1b681c::bytes(Self) -> Bytes raise @core.WindowsError
+pub fn DFSINFO132_86d54b1b681c::entry_path(Self) -> UInt raise @core.WindowsError
+pub fn DFSINFO132_86d54b1b681c::from_bytes(Bytes) -> Self raise @core.WindowsError
+pub fn DFSINFO132_86d54b1b681c::new() -> Self raise @core.WindowsError
+pub fn DFSINFO132_86d54b1b681c::raw_address(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn DFSINFO132_86d54b1b681c::set_entry_path(Self, UInt) -> Unit raise @core.WindowsError
+pub fn[T] DFSINFO132_86d54b1b681c::with_raw_address(Self, (@core.RawAddress) -> T raise?) -> T raise
+pub impl Eq for DFSINFO132_86d54b1b681c
+pub impl @debug.Debug for DFSINFO132_86d54b1b681c
+
+pub(all) struct DFSINFO150_be82c9f742b4 {
+  raw_buffer : @core.NativeBuffer
+}
+pub fn DFSINFO150_be82c9f742b4::abi_alignment() -> Int
+pub fn DFSINFO150_be82c9f742b4::abi_size() -> Int
+pub fn DFSINFO150_be82c9f742b4::bytes(Self) -> Bytes raise @core.WindowsError
+pub fn DFSINFO150_be82c9f742b4::from_bytes(Bytes) -> Self raise @core.WindowsError
+pub fn DFSINFO150_be82c9f742b4::new() -> Self raise @core.WindowsError
+pub fn DFSINFO150_be82c9f742b4::p_security_descriptor_raw(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn DFSINFO150_be82c9f742b4::raw_address(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn DFSINFO150_be82c9f742b4::sd_length_reserved(Self) -> UInt raise @core.WindowsError
+pub fn DFSINFO150_be82c9f742b4::set_p_security_descriptor_raw(Self, @core.RawAddress) -> Unit raise @core.WindowsError
+pub fn DFSINFO150_be82c9f742b4::set_sd_length_reserved(Self, UInt) -> Unit raise @core.WindowsError
+pub fn[T] DFSINFO150_be82c9f742b4::with_raw_address(Self, (@core.RawAddress) -> T raise?) -> T raise
+pub impl Eq for DFSINFO150_be82c9f742b4
+pub impl @debug.Debug for DFSINFO150_be82c9f742b4
+
+pub(all) struct DFSINFO1_7d4110c4e7cb {
+  raw_buffer : @core.NativeBuffer
+  mut root_entry_path : @strings.PWStrBuffer?
+}
+pub fn DFSINFO1_7d4110c4e7cb::abi_alignment() -> Int
+pub fn DFSINFO1_7d4110c4e7cb::abi_size() -> Int
+pub fn DFSINFO1_7d4110c4e7cb::bytes(Self) -> Bytes raise @core.WindowsError
+pub fn DFSINFO1_7d4110c4e7cb::clear_entry_path(Self) -> Unit raise @core.WindowsError
+pub fn DFSINFO1_7d4110c4e7cb::entry_path_raw(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn DFSINFO1_7d4110c4e7cb::from_bytes(Bytes) -> Self raise @core.WindowsError
+pub fn DFSINFO1_7d4110c4e7cb::new() -> Self raise @core.WindowsError
+pub fn DFSINFO1_7d4110c4e7cb::raw_address(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn DFSINFO1_7d4110c4e7cb::set_entry_path(Self, @strings.PWStrBuffer) -> Unit raise @core.WindowsError
+pub fn DFSINFO1_7d4110c4e7cb::set_entry_path_raw(Self, @core.RawAddress) -> Unit raise @core.WindowsError
+pub fn[T] DFSINFO1_7d4110c4e7cb::with_raw_address(Self, (@core.RawAddress) -> T raise?) -> T raise
+pub impl Eq for DFSINFO1_7d4110c4e7cb
+pub impl @debug.Debug for DFSINFO1_7d4110c4e7cb
+
+pub(all) struct DFSINFO200_5c6845c2e118 {
+  raw_buffer : @core.NativeBuffer
+  mut root_ft_dfs_name : @strings.PWStrBuffer?
+}
+pub fn DFSINFO200_5c6845c2e118::abi_alignment() -> Int
+pub fn DFSINFO200_5c6845c2e118::abi_size() -> Int
+pub fn DFSINFO200_5c6845c2e118::bytes(Self) -> Bytes raise @core.WindowsError
+pub fn DFSINFO200_5c6845c2e118::clear_ft_dfs_name(Self) -> Unit raise @core.WindowsError
+pub fn DFSINFO200_5c6845c2e118::from_bytes(Bytes) -> Self raise @core.WindowsError
+pub fn DFSINFO200_5c6845c2e118::ft_dfs_name_raw(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn DFSINFO200_5c6845c2e118::new() -> Self raise @core.WindowsError
+pub fn DFSINFO200_5c6845c2e118::raw_address(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn DFSINFO200_5c6845c2e118::set_ft_dfs_name(Self, @strings.PWStrBuffer) -> Unit raise @core.WindowsError
+pub fn DFSINFO200_5c6845c2e118::set_ft_dfs_name_raw(Self, @core.RawAddress) -> Unit raise @core.WindowsError
+pub fn[T] DFSINFO200_5c6845c2e118::with_raw_address(Self, (@core.RawAddress) -> T raise?) -> T raise
+pub impl Eq for DFSINFO200_5c6845c2e118
+pub impl @debug.Debug for DFSINFO200_5c6845c2e118
+
+pub(all) struct DFSINFO232_882eabbd416e {
+  raw_buffer : @core.NativeBuffer
+}
+pub fn DFSINFO232_882eabbd416e::abi_alignment() -> Int
+pub fn DFSINFO232_882eabbd416e::abi_size() -> Int
+pub fn DFSINFO232_882eabbd416e::bytes(Self) -> Bytes raise @core.WindowsError
+pub fn DFSINFO232_882eabbd416e::comment(Self) -> UInt raise @core.WindowsError
+pub fn DFSINFO232_882eabbd416e::entry_path(Self) -> UInt raise @core.WindowsError
+pub fn DFSINFO232_882eabbd416e::from_bytes(Bytes) -> Self raise @core.WindowsError
+pub fn DFSINFO232_882eabbd416e::new() -> Self raise @core.WindowsError
+pub fn DFSINFO232_882eabbd416e::number_of_storages(Self) -> UInt raise @core.WindowsError
+pub fn DFSINFO232_882eabbd416e::raw_address(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn DFSINFO232_882eabbd416e::set_comment(Self, UInt) -> Unit raise @core.WindowsError
+pub fn DFSINFO232_882eabbd416e::set_entry_path(Self, UInt) -> Unit raise @core.WindowsError
+pub fn DFSINFO232_882eabbd416e::set_number_of_storages(Self, UInt) -> Unit raise @core.WindowsError
+pub fn DFSINFO232_882eabbd416e::set_state(Self, UInt) -> Unit raise @core.WindowsError
+pub fn DFSINFO232_882eabbd416e::state(Self) -> UInt raise @core.WindowsError
+pub fn[T] DFSINFO232_882eabbd416e::with_raw_address(Self, (@core.RawAddress) -> T raise?) -> T raise
+pub impl Eq for DFSINFO232_882eabbd416e
+pub impl @debug.Debug for DFSINFO232_882eabbd416e
+
+pub(all) struct DFSINFO2_c6ddaf2c11f2 {
+  raw_buffer : @core.NativeBuffer
+  mut root_entry_path : @strings.PWStrBuffer?
+  mut root_comment : @strings.PWStrBuffer?
+}
+pub fn DFSINFO2_c6ddaf2c11f2::abi_alignment() -> Int
+pub fn DFSINFO2_c6ddaf2c11f2::abi_size() -> Int
+pub fn DFSINFO2_c6ddaf2c11f2::bytes(Self) -> Bytes raise @core.WindowsError
+pub fn DFSINFO2_c6ddaf2c11f2::clear_comment(Self) -> Unit raise @core.WindowsError
+pub fn DFSINFO2_c6ddaf2c11f2::clear_entry_path(Self) -> Unit raise @core.WindowsError
+pub fn DFSINFO2_c6ddaf2c11f2::comment_raw(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn DFSINFO2_c6ddaf2c11f2::entry_path_raw(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn DFSINFO2_c6ddaf2c11f2::from_bytes(Bytes) -> Self raise @core.WindowsError
+pub fn DFSINFO2_c6ddaf2c11f2::new() -> Self raise @core.WindowsError
+pub fn DFSINFO2_c6ddaf2c11f2::number_of_storages(Self) -> UInt raise @core.WindowsError
+pub fn DFSINFO2_c6ddaf2c11f2::raw_address(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn DFSINFO2_c6ddaf2c11f2::set_comment(Self, @strings.PWStrBuffer) -> Unit raise @core.WindowsError
+pub fn DFSINFO2_c6ddaf2c11f2::set_comment_raw(Self, @core.RawAddress) -> Unit raise @core.WindowsError
+pub fn DFSINFO2_c6ddaf2c11f2::set_entry_path(Self, @strings.PWStrBuffer) -> Unit raise @core.WindowsError
+pub fn DFSINFO2_c6ddaf2c11f2::set_entry_path_raw(Self, @core.RawAddress) -> Unit raise @core.WindowsError
+pub fn DFSINFO2_c6ddaf2c11f2::set_number_of_storages(Self, UInt) -> Unit raise @core.WindowsError
+pub fn DFSINFO2_c6ddaf2c11f2::set_state(Self, UInt) -> Unit raise @core.WindowsError
+pub fn DFSINFO2_c6ddaf2c11f2::state(Self) -> UInt raise @core.WindowsError
+pub fn[T] DFSINFO2_c6ddaf2c11f2::with_raw_address(Self, (@core.RawAddress) -> T raise?) -> T raise
+pub impl Eq for DFSINFO2_c6ddaf2c11f2
+pub impl @debug.Debug for DFSINFO2_c6ddaf2c11f2
+
+pub(all) struct DFSINFO300_37f529617d44 {
+  raw_buffer : @core.NativeBuffer
+  mut root_dfs_name : @strings.PWStrBuffer?
+}
+pub fn DFSINFO300_37f529617d44::abi_alignment() -> Int
+pub fn DFSINFO300_37f529617d44::abi_size() -> Int
+pub fn DFSINFO300_37f529617d44::bytes(Self) -> Bytes raise @core.WindowsError
+pub fn DFSINFO300_37f529617d44::clear_dfs_name(Self) -> Unit raise @core.WindowsError
+pub fn DFSINFO300_37f529617d44::dfs_name_raw(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn DFSINFO300_37f529617d44::flags(Self) -> UInt raise @core.WindowsError
+pub fn DFSINFO300_37f529617d44::from_bytes(Bytes) -> Self raise @core.WindowsError
+pub fn DFSINFO300_37f529617d44::new() -> Self raise @core.WindowsError
+pub fn DFSINFO300_37f529617d44::raw_address(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn DFSINFO300_37f529617d44::set_dfs_name(Self, @strings.PWStrBuffer) -> Unit raise @core.WindowsError
+pub fn DFSINFO300_37f529617d44::set_dfs_name_raw(Self, @core.RawAddress) -> Unit raise @core.WindowsError
+pub fn DFSINFO300_37f529617d44::set_flags(Self, UInt) -> Unit raise @core.WindowsError
+pub fn[T] DFSINFO300_37f529617d44::with_raw_address(Self, (@core.RawAddress) -> T raise?) -> T raise
+pub impl Eq for DFSINFO300_37f529617d44
+pub impl @debug.Debug for DFSINFO300_37f529617d44
+
+pub(all) struct DFSINFO332_1e04a3e66fae {
+  raw_buffer : @core.NativeBuffer
+}
+pub fn DFSINFO332_1e04a3e66fae::abi_alignment() -> Int
+pub fn DFSINFO332_1e04a3e66fae::abi_size() -> Int
+pub fn DFSINFO332_1e04a3e66fae::bytes(Self) -> Bytes raise @core.WindowsError
+pub fn DFSINFO332_1e04a3e66fae::comment(Self) -> UInt raise @core.WindowsError
+pub fn DFSINFO332_1e04a3e66fae::entry_path(Self) -> UInt raise @core.WindowsError
+pub fn DFSINFO332_1e04a3e66fae::from_bytes(Bytes) -> Self raise @core.WindowsError
+pub fn DFSINFO332_1e04a3e66fae::new() -> Self raise @core.WindowsError
+pub fn DFSINFO332_1e04a3e66fae::number_of_storages(Self) -> UInt raise @core.WindowsError
+pub fn DFSINFO332_1e04a3e66fae::raw_address(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn DFSINFO332_1e04a3e66fae::set_comment(Self, UInt) -> Unit raise @core.WindowsError
+pub fn DFSINFO332_1e04a3e66fae::set_entry_path(Self, UInt) -> Unit raise @core.WindowsError
+pub fn DFSINFO332_1e04a3e66fae::set_number_of_storages(Self, UInt) -> Unit raise @core.WindowsError
+pub fn DFSINFO332_1e04a3e66fae::set_state(Self, UInt) -> Unit raise @core.WindowsError
+pub fn DFSINFO332_1e04a3e66fae::set_storage(Self, UInt) -> Unit raise @core.WindowsError
+pub fn DFSINFO332_1e04a3e66fae::state(Self) -> UInt raise @core.WindowsError
+pub fn DFSINFO332_1e04a3e66fae::storage(Self) -> UInt raise @core.WindowsError
+pub fn[T] DFSINFO332_1e04a3e66fae::with_raw_address(Self, (@core.RawAddress) -> T raise?) -> T raise
+pub impl Eq for DFSINFO332_1e04a3e66fae
+pub impl @debug.Debug for DFSINFO332_1e04a3e66fae
+
+pub(all) struct DFSINFO3_ba3051783e04 {
+  raw_buffer : @core.NativeBuffer
+  mut root_entry_path : @strings.PWStrBuffer?
+  mut root_comment : @strings.PWStrBuffer?
+}
+pub fn DFSINFO3_ba3051783e04::abi_alignment() -> Int
+pub fn DFSINFO3_ba3051783e04::abi_size() -> Int
+pub fn DFSINFO3_ba3051783e04::bytes(Self) -> Bytes raise @core.WindowsError
+pub fn DFSINFO3_ba3051783e04::clear_comment(Self) -> Unit raise @core.WindowsError
+pub fn DFSINFO3_ba3051783e04::clear_entry_path(Self) -> Unit raise @core.WindowsError
+pub fn DFSINFO3_ba3051783e04::comment_raw(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn DFSINFO3_ba3051783e04::entry_path_raw(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn DFSINFO3_ba3051783e04::from_bytes(Bytes) -> Self raise @core.WindowsError
+pub fn DFSINFO3_ba3051783e04::new() -> Self raise @core.WindowsError
+pub fn DFSINFO3_ba3051783e04::number_of_storages(Self) -> UInt raise @core.WindowsError
+pub fn DFSINFO3_ba3051783e04::raw_address(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn DFSINFO3_ba3051783e04::set_comment(Self, @strings.PWStrBuffer) -> Unit raise @core.WindowsError
+pub fn DFSINFO3_ba3051783e04::set_comment_raw(Self, @core.RawAddress) -> Unit raise @core.WindowsError
+pub fn DFSINFO3_ba3051783e04::set_entry_path(Self, @strings.PWStrBuffer) -> Unit raise @core.WindowsError
+pub fn DFSINFO3_ba3051783e04::set_entry_path_raw(Self, @core.RawAddress) -> Unit raise @core.WindowsError
+pub fn DFSINFO3_ba3051783e04::set_number_of_storages(Self, UInt) -> Unit raise @core.WindowsError
+pub fn DFSINFO3_ba3051783e04::set_state(Self, UInt) -> Unit raise @core.WindowsError
+pub fn DFSINFO3_ba3051783e04::set_storage_raw(Self, @core.RawAddress) -> Unit raise @core.WindowsError
+pub fn DFSINFO3_ba3051783e04::state(Self) -> UInt raise @core.WindowsError
+pub fn DFSINFO3_ba3051783e04::storage_raw(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn[T] DFSINFO3_ba3051783e04::with_raw_address(Self, (@core.RawAddress) -> T raise?) -> T raise
+pub impl Eq for DFSINFO3_ba3051783e04
+pub impl @debug.Debug for DFSINFO3_ba3051783e04
+
+pub(all) struct DFSINFO432_220c1f54078a {
+  raw_buffer : @core.NativeBuffer
+}
+pub fn DFSINFO432_220c1f54078a::abi_alignment() -> Int
+pub fn DFSINFO432_220c1f54078a::abi_size() -> Int
+pub fn DFSINFO432_220c1f54078a::bytes(Self) -> Bytes raise @core.WindowsError
+pub fn DFSINFO432_220c1f54078a::comment(Self) -> UInt raise @core.WindowsError
+pub fn DFSINFO432_220c1f54078a::entry_path(Self) -> UInt raise @core.WindowsError
+pub fn DFSINFO432_220c1f54078a::from_bytes(Bytes) -> Self raise @core.WindowsError
+pub fn DFSINFO432_220c1f54078a::new() -> Self raise @core.WindowsError
+pub fn DFSINFO432_220c1f54078a::number_of_storages(Self) -> UInt raise @core.WindowsError
+pub fn DFSINFO432_220c1f54078a::raw_address(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn DFSINFO432_220c1f54078a::set_comment(Self, UInt) -> Unit raise @core.WindowsError
+pub fn DFSINFO432_220c1f54078a::set_entry_path(Self, UInt) -> Unit raise @core.WindowsError
+pub fn DFSINFO432_220c1f54078a::set_number_of_storages(Self, UInt) -> Unit raise @core.WindowsError
+pub fn DFSINFO432_220c1f54078a::set_state(Self, UInt) -> Unit raise @core.WindowsError
+pub fn DFSINFO432_220c1f54078a::set_storage(Self, UInt) -> Unit raise @core.WindowsError
+pub fn DFSINFO432_220c1f54078a::set_timeout(Self, UInt) -> Unit raise @core.WindowsError
+pub fn DFSINFO432_220c1f54078a::state(Self) -> UInt raise @core.WindowsError
+pub fn DFSINFO432_220c1f54078a::storage(Self) -> UInt raise @core.WindowsError
+pub fn DFSINFO432_220c1f54078a::timeout(Self) -> UInt raise @core.WindowsError
+pub fn[T] DFSINFO432_220c1f54078a::with_raw_address(Self, (@core.RawAddress) -> T raise?) -> T raise
+pub impl Eq for DFSINFO432_220c1f54078a
+pub impl @debug.Debug for DFSINFO432_220c1f54078a
+
+pub(all) struct DFSINFO4_27cdd9b11c85 {
+  raw_buffer : @core.NativeBuffer
+  mut root_entry_path : @strings.PWStrBuffer?
+  mut root_comment : @strings.PWStrBuffer?
+}
+pub fn DFSINFO4_27cdd9b11c85::abi_alignment() -> Int
+pub fn DFSINFO4_27cdd9b11c85::abi_size() -> Int
+pub fn DFSINFO4_27cdd9b11c85::bytes(Self) -> Bytes raise @core.WindowsError
+pub fn DFSINFO4_27cdd9b11c85::clear_comment(Self) -> Unit raise @core.WindowsError
+pub fn DFSINFO4_27cdd9b11c85::clear_entry_path(Self) -> Unit raise @core.WindowsError
+pub fn DFSINFO4_27cdd9b11c85::comment_raw(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn DFSINFO4_27cdd9b11c85::entry_path_raw(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn DFSINFO4_27cdd9b11c85::from_bytes(Bytes) -> Self raise @core.WindowsError
+pub fn DFSINFO4_27cdd9b11c85::new() -> Self raise @core.WindowsError
+pub fn DFSINFO4_27cdd9b11c85::number_of_storages(Self) -> UInt raise @core.WindowsError
+pub fn DFSINFO4_27cdd9b11c85::raw_address(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn DFSINFO4_27cdd9b11c85::set_comment(Self, @strings.PWStrBuffer) -> Unit raise @core.WindowsError
+pub fn DFSINFO4_27cdd9b11c85::set_comment_raw(Self, @core.RawAddress) -> Unit raise @core.WindowsError
+pub fn DFSINFO4_27cdd9b11c85::set_entry_path(Self, @strings.PWStrBuffer) -> Unit raise @core.WindowsError
+pub fn DFSINFO4_27cdd9b11c85::set_entry_path_raw(Self, @core.RawAddress) -> Unit raise @core.WindowsError
+pub fn DFSINFO4_27cdd9b11c85::set_number_of_storages(Self, UInt) -> Unit raise @core.WindowsError
+pub fn DFSINFO4_27cdd9b11c85::set_state(Self, UInt) -> Unit raise @core.WindowsError
+pub fn DFSINFO4_27cdd9b11c85::set_storage_raw(Self, @core.RawAddress) -> Unit raise @core.WindowsError
+pub fn DFSINFO4_27cdd9b11c85::set_timeout(Self, UInt) -> Unit raise @core.WindowsError
+pub fn DFSINFO4_27cdd9b11c85::state(Self) -> UInt raise @core.WindowsError
+pub fn DFSINFO4_27cdd9b11c85::storage_raw(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn DFSINFO4_27cdd9b11c85::timeout(Self) -> UInt raise @core.WindowsError
+pub fn[T] DFSINFO4_27cdd9b11c85::with_raw_address(Self, (@core.RawAddress) -> T raise?) -> T raise
+pub impl Eq for DFSINFO4_27cdd9b11c85
+pub impl @debug.Debug for DFSINFO4_27cdd9b11c85
+
+pub(all) struct DFSINFO50_b3133575a60b {
+  raw_buffer : @core.NativeBuffer
+}
+pub fn DFSINFO50_b3133575a60b::abi_alignment() -> Int
+pub fn DFSINFO50_b3133575a60b::abi_size() -> Int
+pub fn DFSINFO50_b3133575a60b::bytes(Self) -> Bytes raise @core.WindowsError
+pub fn DFSINFO50_b3133575a60b::from_bytes(Bytes) -> Self raise @core.WindowsError
+pub fn DFSINFO50_b3133575a60b::namespace_capabilities(Self) -> UInt64 raise @core.WindowsError
+pub fn DFSINFO50_b3133575a60b::namespace_major_version(Self) -> UInt raise @core.WindowsError
+pub fn DFSINFO50_b3133575a60b::namespace_minor_version(Self) -> UInt raise @core.WindowsError
+pub fn DFSINFO50_b3133575a60b::new() -> Self raise @core.WindowsError
+pub fn DFSINFO50_b3133575a60b::raw_address(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn DFSINFO50_b3133575a60b::set_namespace_capabilities(Self, UInt64) -> Unit raise @core.WindowsError
+pub fn DFSINFO50_b3133575a60b::set_namespace_major_version(Self, UInt) -> Unit raise @core.WindowsError
+pub fn DFSINFO50_b3133575a60b::set_namespace_minor_version(Self, UInt) -> Unit raise @core.WindowsError
+pub fn[T] DFSINFO50_b3133575a60b::with_raw_address(Self, (@core.RawAddress) -> T raise?) -> T raise
+pub impl Eq for DFSINFO50_b3133575a60b
+pub impl @debug.Debug for DFSINFO50_b3133575a60b
+
+pub(all) struct DFSINFO5_6b505d5b2497 {
+  raw_buffer : @core.NativeBuffer
+  mut root_entry_path : @strings.PWStrBuffer?
+  mut root_comment : @strings.PWStrBuffer?
+}
+pub fn DFSINFO5_6b505d5b2497::abi_alignment() -> Int
+pub fn DFSINFO5_6b505d5b2497::abi_size() -> Int
+pub fn DFSINFO5_6b505d5b2497::bytes(Self) -> Bytes raise @core.WindowsError
+pub fn DFSINFO5_6b505d5b2497::clear_comment(Self) -> Unit raise @core.WindowsError
+pub fn DFSINFO5_6b505d5b2497::clear_entry_path(Self) -> Unit raise @core.WindowsError
+pub fn DFSINFO5_6b505d5b2497::comment_raw(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn DFSINFO5_6b505d5b2497::entry_path_raw(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn DFSINFO5_6b505d5b2497::from_bytes(Bytes) -> Self raise @core.WindowsError
+pub fn DFSINFO5_6b505d5b2497::metadata_size(Self) -> UInt raise @core.WindowsError
+pub fn DFSINFO5_6b505d5b2497::new() -> Self raise @core.WindowsError
+pub fn DFSINFO5_6b505d5b2497::number_of_storages(Self) -> UInt raise @core.WindowsError
+pub fn DFSINFO5_6b505d5b2497::property_flags(Self) -> UInt raise @core.WindowsError
+pub fn DFSINFO5_6b505d5b2497::raw_address(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn DFSINFO5_6b505d5b2497::set_comment(Self, @strings.PWStrBuffer) -> Unit raise @core.WindowsError
+pub fn DFSINFO5_6b505d5b2497::set_comment_raw(Self, @core.RawAddress) -> Unit raise @core.WindowsError
+pub fn DFSINFO5_6b505d5b2497::set_entry_path(Self, @strings.PWStrBuffer) -> Unit raise @core.WindowsError
+pub fn DFSINFO5_6b505d5b2497::set_entry_path_raw(Self, @core.RawAddress) -> Unit raise @core.WindowsError
+pub fn DFSINFO5_6b505d5b2497::set_metadata_size(Self, UInt) -> Unit raise @core.WindowsError
+pub fn DFSINFO5_6b505d5b2497::set_number_of_storages(Self, UInt) -> Unit raise @core.WindowsError
+pub fn DFSINFO5_6b505d5b2497::set_property_flags(Self, UInt) -> Unit raise @core.WindowsError
+pub fn DFSINFO5_6b505d5b2497::set_state(Self, UInt) -> Unit raise @core.WindowsError
+pub fn DFSINFO5_6b505d5b2497::set_timeout(Self, UInt) -> Unit raise @core.WindowsError
+pub fn DFSINFO5_6b505d5b2497::state(Self) -> UInt raise @core.WindowsError
+pub fn DFSINFO5_6b505d5b2497::timeout(Self) -> UInt raise @core.WindowsError
+pub fn[T] DFSINFO5_6b505d5b2497::with_raw_address(Self, (@core.RawAddress) -> T raise?) -> T raise
+pub impl Eq for DFSINFO5_6b505d5b2497
+pub impl @debug.Debug for DFSINFO5_6b505d5b2497
+
+pub(all) struct DFSINFO6_c94ee136f358 {
+  raw_buffer : @core.NativeBuffer
+  mut root_entry_path : @strings.PWStrBuffer?
+  mut root_comment : @strings.PWStrBuffer?
+}
+pub fn DFSINFO6_c94ee136f358::abi_alignment() -> Int
+pub fn DFSINFO6_c94ee136f358::abi_size() -> Int
+pub fn DFSINFO6_c94ee136f358::bytes(Self) -> Bytes raise @core.WindowsError
+pub fn DFSINFO6_c94ee136f358::clear_comment(Self) -> Unit raise @core.WindowsError
+pub fn DFSINFO6_c94ee136f358::clear_entry_path(Self) -> Unit raise @core.WindowsError
+pub fn DFSINFO6_c94ee136f358::comment_raw(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn DFSINFO6_c94ee136f358::entry_path_raw(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn DFSINFO6_c94ee136f358::from_bytes(Bytes) -> Self raise @core.WindowsError
+pub fn DFSINFO6_c94ee136f358::metadata_size(Self) -> UInt raise @core.WindowsError
+pub fn DFSINFO6_c94ee136f358::new() -> Self raise @core.WindowsError
+pub fn DFSINFO6_c94ee136f358::number_of_storages(Self) -> UInt raise @core.WindowsError
+pub fn DFSINFO6_c94ee136f358::property_flags(Self) -> UInt raise @core.WindowsError
+pub fn DFSINFO6_c94ee136f358::raw_address(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn DFSINFO6_c94ee136f358::set_comment(Self, @strings.PWStrBuffer) -> Unit raise @core.WindowsError
+pub fn DFSINFO6_c94ee136f358::set_comment_raw(Self, @core.RawAddress) -> Unit raise @core.WindowsError
+pub fn DFSINFO6_c94ee136f358::set_entry_path(Self, @strings.PWStrBuffer) -> Unit raise @core.WindowsError
+pub fn DFSINFO6_c94ee136f358::set_entry_path_raw(Self, @core.RawAddress) -> Unit raise @core.WindowsError
+pub fn DFSINFO6_c94ee136f358::set_metadata_size(Self, UInt) -> Unit raise @core.WindowsError
+pub fn DFSINFO6_c94ee136f358::set_number_of_storages(Self, UInt) -> Unit raise @core.WindowsError
+pub fn DFSINFO6_c94ee136f358::set_property_flags(Self, UInt) -> Unit raise @core.WindowsError
+pub fn DFSINFO6_c94ee136f358::set_state(Self, UInt) -> Unit raise @core.WindowsError
+pub fn DFSINFO6_c94ee136f358::set_storage_raw(Self, @core.RawAddress) -> Unit raise @core.WindowsError
+pub fn DFSINFO6_c94ee136f358::set_timeout(Self, UInt) -> Unit raise @core.WindowsError
+pub fn DFSINFO6_c94ee136f358::state(Self) -> UInt raise @core.WindowsError
+pub fn DFSINFO6_c94ee136f358::storage_raw(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn DFSINFO6_c94ee136f358::timeout(Self) -> UInt raise @core.WindowsError
+pub fn[T] DFSINFO6_c94ee136f358::with_raw_address(Self, (@core.RawAddress) -> T raise?) -> T raise
+pub impl Eq for DFSINFO6_c94ee136f358
+pub impl @debug.Debug for DFSINFO6_c94ee136f358
+
+pub(all) struct DFSINFO7_c8dd347bff7e {
+  raw_buffer : @core.NativeBuffer
+}
+pub fn DFSINFO7_c8dd347bff7e::abi_alignment() -> Int
+pub fn DFSINFO7_c8dd347bff7e::abi_size() -> Int
+pub fn DFSINFO7_c8dd347bff7e::bytes(Self) -> Bytes raise @core.WindowsError
+pub fn DFSINFO7_c8dd347bff7e::from_bytes(Bytes) -> Self raise @core.WindowsError
+pub fn DFSINFO7_c8dd347bff7e::new() -> Self raise @core.WindowsError
+pub fn DFSINFO7_c8dd347bff7e::raw_address(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn[T] DFSINFO7_c8dd347bff7e::with_raw_address(Self, (@core.RawAddress) -> T raise?) -> T raise
+pub impl Eq for DFSINFO7_c8dd347bff7e
+pub impl @debug.Debug for DFSINFO7_c8dd347bff7e
+
+pub(all) struct DFSINFO8_db500f2922d1 {
+  raw_buffer : @core.NativeBuffer
+  mut root_entry_path : @strings.PWStrBuffer?
+  mut root_comment : @strings.PWStrBuffer?
+}
+pub fn DFSINFO8_db500f2922d1::abi_alignment() -> Int
+pub fn DFSINFO8_db500f2922d1::abi_size() -> Int
+pub fn DFSINFO8_db500f2922d1::bytes(Self) -> Bytes raise @core.WindowsError
+pub fn DFSINFO8_db500f2922d1::clear_comment(Self) -> Unit raise @core.WindowsError
+pub fn DFSINFO8_db500f2922d1::clear_entry_path(Self) -> Unit raise @core.WindowsError
+pub fn DFSINFO8_db500f2922d1::comment_raw(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn DFSINFO8_db500f2922d1::entry_path_raw(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn DFSINFO8_db500f2922d1::from_bytes(Bytes) -> Self raise @core.WindowsError
+pub fn DFSINFO8_db500f2922d1::metadata_size(Self) -> UInt raise @core.WindowsError
+pub fn DFSINFO8_db500f2922d1::new() -> Self raise @core.WindowsError
+pub fn DFSINFO8_db500f2922d1::number_of_storages(Self) -> UInt raise @core.WindowsError
+pub fn DFSINFO8_db500f2922d1::p_security_descriptor_raw(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn DFSINFO8_db500f2922d1::property_flags(Self) -> UInt raise @core.WindowsError
+pub fn DFSINFO8_db500f2922d1::raw_address(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn DFSINFO8_db500f2922d1::sd_length_reserved(Self) -> UInt raise @core.WindowsError
+pub fn DFSINFO8_db500f2922d1::set_comment(Self, @strings.PWStrBuffer) -> Unit raise @core.WindowsError
+pub fn DFSINFO8_db500f2922d1::set_comment_raw(Self, @core.RawAddress) -> Unit raise @core.WindowsError
+pub fn DFSINFO8_db500f2922d1::set_entry_path(Self, @strings.PWStrBuffer) -> Unit raise @core.WindowsError
+pub fn DFSINFO8_db500f2922d1::set_entry_path_raw(Self, @core.RawAddress) -> Unit raise @core.WindowsError
+pub fn DFSINFO8_db500f2922d1::set_metadata_size(Self, UInt) -> Unit raise @core.WindowsError
+pub fn DFSINFO8_db500f2922d1::set_number_of_storages(Self, UInt) -> Unit raise @core.WindowsError
+pub fn DFSINFO8_db500f2922d1::set_p_security_descriptor_raw(Self, @core.RawAddress) -> Unit raise @core.WindowsError
+pub fn DFSINFO8_db500f2922d1::set_property_flags(Self, UInt) -> Unit raise @core.WindowsError
+pub fn DFSINFO8_db500f2922d1::set_sd_length_reserved(Self, UInt) -> Unit raise @core.WindowsError
+pub fn DFSINFO8_db500f2922d1::set_state(Self, UInt) -> Unit raise @core.WindowsError
+pub fn DFSINFO8_db500f2922d1::set_timeout(Self, UInt) -> Unit raise @core.WindowsError
+pub fn DFSINFO8_db500f2922d1::state(Self) -> UInt raise @core.WindowsError
+pub fn DFSINFO8_db500f2922d1::timeout(Self) -> UInt raise @core.WindowsError
+pub fn[T] DFSINFO8_db500f2922d1::with_raw_address(Self, (@core.RawAddress) -> T raise?) -> T raise
+pub impl Eq for DFSINFO8_db500f2922d1
+pub impl @debug.Debug for DFSINFO8_db500f2922d1
+
+pub(all) struct DFSINFO9_a45543ca3733 {
+  raw_buffer : @core.NativeBuffer
+  mut root_entry_path : @strings.PWStrBuffer?
+  mut root_comment : @strings.PWStrBuffer?
+}
+pub fn DFSINFO9_a45543ca3733::abi_alignment() -> Int
+pub fn DFSINFO9_a45543ca3733::abi_size() -> Int
+pub fn DFSINFO9_a45543ca3733::bytes(Self) -> Bytes raise @core.WindowsError
+pub fn DFSINFO9_a45543ca3733::clear_comment(Self) -> Unit raise @core.WindowsError
+pub fn DFSINFO9_a45543ca3733::clear_entry_path(Self) -> Unit raise @core.WindowsError
+pub fn DFSINFO9_a45543ca3733::comment_raw(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn DFSINFO9_a45543ca3733::entry_path_raw(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn DFSINFO9_a45543ca3733::from_bytes(Bytes) -> Self raise @core.WindowsError
+pub fn DFSINFO9_a45543ca3733::metadata_size(Self) -> UInt raise @core.WindowsError
+pub fn DFSINFO9_a45543ca3733::new() -> Self raise @core.WindowsError
+pub fn DFSINFO9_a45543ca3733::number_of_storages(Self) -> UInt raise @core.WindowsError
+pub fn DFSINFO9_a45543ca3733::p_security_descriptor_raw(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn DFSINFO9_a45543ca3733::property_flags(Self) -> UInt raise @core.WindowsError
+pub fn DFSINFO9_a45543ca3733::raw_address(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn DFSINFO9_a45543ca3733::sd_length_reserved(Self) -> UInt raise @core.WindowsError
+pub fn DFSINFO9_a45543ca3733::set_comment(Self, @strings.PWStrBuffer) -> Unit raise @core.WindowsError
+pub fn DFSINFO9_a45543ca3733::set_comment_raw(Self, @core.RawAddress) -> Unit raise @core.WindowsError
+pub fn DFSINFO9_a45543ca3733::set_entry_path(Self, @strings.PWStrBuffer) -> Unit raise @core.WindowsError
+pub fn DFSINFO9_a45543ca3733::set_entry_path_raw(Self, @core.RawAddress) -> Unit raise @core.WindowsError
+pub fn DFSINFO9_a45543ca3733::set_metadata_size(Self, UInt) -> Unit raise @core.WindowsError
+pub fn DFSINFO9_a45543ca3733::set_number_of_storages(Self, UInt) -> Unit raise @core.WindowsError
+pub fn DFSINFO9_a45543ca3733::set_p_security_descriptor_raw(Self, @core.RawAddress) -> Unit raise @core.WindowsError
+pub fn DFSINFO9_a45543ca3733::set_property_flags(Self, UInt) -> Unit raise @core.WindowsError
+pub fn DFSINFO9_a45543ca3733::set_sd_length_reserved(Self, UInt) -> Unit raise @core.WindowsError
+pub fn DFSINFO9_a45543ca3733::set_state(Self, UInt) -> Unit raise @core.WindowsError
+pub fn DFSINFO9_a45543ca3733::set_storage_raw(Self, @core.RawAddress) -> Unit raise @core.WindowsError
+pub fn DFSINFO9_a45543ca3733::set_timeout(Self, UInt) -> Unit raise @core.WindowsError
+pub fn DFSINFO9_a45543ca3733::state(Self) -> UInt raise @core.WindowsError
+pub fn DFSINFO9_a45543ca3733::storage_raw(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn DFSINFO9_a45543ca3733::timeout(Self) -> UInt raise @core.WindowsError
+pub fn[T] DFSINFO9_a45543ca3733::with_raw_address(Self, (@core.RawAddress) -> T raise?) -> T raise
+pub impl Eq for DFSINFO9_a45543ca3733
+pub impl @debug.Debug for DFSINFO9_a45543ca3733
+
+pub(all) struct DFSNAMESPACEVERSIONORIGIN_c6cfbe3df9b0(Int) derive(Compare, Eq, @debug.Debug)
+pub fn DFSNAMESPACEVERSIONORIGIN_c6cfbe3df9b0::combined() -> Self
+pub fn DFSNAMESPACEVERSIONORIGIN_c6cfbe3df9b0::domain() -> Self
+pub fn DFSNAMESPACEVERSIONORIGIN_c6cfbe3df9b0::from_int(Int) -> Self
+pub fn DFSNAMESPACEVERSIONORIGIN_c6cfbe3df9b0::server() -> Self
+pub fn DFSNAMESPACEVERSIONORIGIN_c6cfbe3df9b0::to_int(Self) -> Int
+
+pub(all) struct DFSSITELISTINFO_da5c9156f105 {
+  raw_buffer : @core.NativeBuffer
+}
+pub fn DFSSITELISTINFO_da5c9156f105::abi_alignment() -> Int
+pub fn DFSSITELISTINFO_da5c9156f105::abi_size() -> Int
+pub fn DFSSITELISTINFO_da5c9156f105::bytes(Self) -> Bytes raise @core.WindowsError
+pub fn DFSSITELISTINFO_da5c9156f105::c_sites(Self) -> UInt raise @core.WindowsError
+pub fn DFSSITELISTINFO_da5c9156f105::from_bytes(Bytes) -> Self raise @core.WindowsError
+pub fn DFSSITELISTINFO_da5c9156f105::new() -> Self raise @core.WindowsError
+pub fn DFSSITELISTINFO_da5c9156f105::raw_address(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn DFSSITELISTINFO_da5c9156f105::set_c_sites(Self, UInt) -> Unit raise @core.WindowsError
+pub fn[T] DFSSITELISTINFO_da5c9156f105::with_raw_address(Self, (@core.RawAddress) -> T raise?) -> T raise
+pub impl Eq for DFSSITELISTINFO_da5c9156f105
+pub impl @debug.Debug for DFSSITELISTINFO_da5c9156f105
+
+pub(all) struct DFSSITENAMEINFO_8959dae459ea {
+  raw_buffer : @core.NativeBuffer
+  mut root_site_name : @strings.PWStrBuffer?
+}
+pub fn DFSSITENAMEINFO_8959dae459ea::abi_alignment() -> Int
+pub fn DFSSITENAMEINFO_8959dae459ea::abi_size() -> Int
+pub fn DFSSITENAMEINFO_8959dae459ea::bytes(Self) -> Bytes raise @core.WindowsError
+pub fn DFSSITENAMEINFO_8959dae459ea::clear_site_name(Self) -> Unit raise @core.WindowsError
+pub fn DFSSITENAMEINFO_8959dae459ea::from_bytes(Bytes) -> Self raise @core.WindowsError
+pub fn DFSSITENAMEINFO_8959dae459ea::new() -> Self raise @core.WindowsError
+pub fn DFSSITENAMEINFO_8959dae459ea::raw_address(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn DFSSITENAMEINFO_8959dae459ea::set_site_flags(Self, UInt) -> Unit raise @core.WindowsError
+pub fn DFSSITENAMEINFO_8959dae459ea::set_site_name(Self, @strings.PWStrBuffer) -> Unit raise @core.WindowsError
+pub fn DFSSITENAMEINFO_8959dae459ea::set_site_name_raw(Self, @core.RawAddress) -> Unit raise @core.WindowsError
+pub fn DFSSITENAMEINFO_8959dae459ea::site_flags(Self) -> UInt raise @core.WindowsError
+pub fn DFSSITENAMEINFO_8959dae459ea::site_name_raw(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn[T] DFSSITENAMEINFO_8959dae459ea::with_raw_address(Self, (@core.RawAddress) -> T raise?) -> T raise
+pub impl Eq for DFSSITENAMEINFO_8959dae459ea
+pub impl @debug.Debug for DFSSITENAMEINFO_8959dae459ea
+
+pub(all) struct DFSSTORAGEINFO032_28a26cc7ebfb {
+  raw_buffer : @core.NativeBuffer
+}
+pub fn DFSSTORAGEINFO032_28a26cc7ebfb::abi_alignment() -> Int
+pub fn DFSSTORAGEINFO032_28a26cc7ebfb::abi_size() -> Int
+pub fn DFSSTORAGEINFO032_28a26cc7ebfb::bytes(Self) -> Bytes raise @core.WindowsError
+pub fn DFSSTORAGEINFO032_28a26cc7ebfb::from_bytes(Bytes) -> Self raise @core.WindowsError
+pub fn DFSSTORAGEINFO032_28a26cc7ebfb::new() -> Self raise @core.WindowsError
+pub fn DFSSTORAGEINFO032_28a26cc7ebfb::raw_address(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn DFSSTORAGEINFO032_28a26cc7ebfb::server_name(Self) -> UInt raise @core.WindowsError
+pub fn DFSSTORAGEINFO032_28a26cc7ebfb::set_server_name(Self, UInt) -> Unit raise @core.WindowsError
+pub fn DFSSTORAGEINFO032_28a26cc7ebfb::set_share_name(Self, UInt) -> Unit raise @core.WindowsError
+pub fn DFSSTORAGEINFO032_28a26cc7ebfb::set_state(Self, UInt) -> Unit raise @core.WindowsError
+pub fn DFSSTORAGEINFO032_28a26cc7ebfb::share_name(Self) -> UInt raise @core.WindowsError
+pub fn DFSSTORAGEINFO032_28a26cc7ebfb::state(Self) -> UInt raise @core.WindowsError
+pub fn[T] DFSSTORAGEINFO032_28a26cc7ebfb::with_raw_address(Self, (@core.RawAddress) -> T raise?) -> T raise
+pub impl Eq for DFSSTORAGEINFO032_28a26cc7ebfb
+pub impl @debug.Debug for DFSSTORAGEINFO032_28a26cc7ebfb
+
+pub(all) struct DFSSTORAGEINFO1_e6c0a7bef96a {
+  raw_buffer : @core.NativeBuffer
+  mut root_server_name : @strings.PWStrBuffer?
+  mut root_share_name : @strings.PWStrBuffer?
+}
+pub fn DFSSTORAGEINFO1_e6c0a7bef96a::abi_alignment() -> Int
+pub fn DFSSTORAGEINFO1_e6c0a7bef96a::abi_size() -> Int
+pub fn DFSSTORAGEINFO1_e6c0a7bef96a::bytes(Self) -> Bytes raise @core.WindowsError
+pub fn DFSSTORAGEINFO1_e6c0a7bef96a::clear_server_name(Self) -> Unit raise @core.WindowsError
+pub fn DFSSTORAGEINFO1_e6c0a7bef96a::clear_share_name(Self) -> Unit raise @core.WindowsError
+pub fn DFSSTORAGEINFO1_e6c0a7bef96a::from_bytes(Bytes) -> Self raise @core.WindowsError
+pub fn DFSSTORAGEINFO1_e6c0a7bef96a::new() -> Self raise @core.WindowsError
+pub fn DFSSTORAGEINFO1_e6c0a7bef96a::raw_address(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn DFSSTORAGEINFO1_e6c0a7bef96a::server_name_raw(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn DFSSTORAGEINFO1_e6c0a7bef96a::set_server_name(Self, @strings.PWStrBuffer) -> Unit raise @core.WindowsError
+pub fn DFSSTORAGEINFO1_e6c0a7bef96a::set_server_name_raw(Self, @core.RawAddress) -> Unit raise @core.WindowsError
+pub fn DFSSTORAGEINFO1_e6c0a7bef96a::set_share_name(Self, @strings.PWStrBuffer) -> Unit raise @core.WindowsError
+pub fn DFSSTORAGEINFO1_e6c0a7bef96a::set_share_name_raw(Self, @core.RawAddress) -> Unit raise @core.WindowsError
+pub fn DFSSTORAGEINFO1_e6c0a7bef96a::set_state(Self, UInt) -> Unit raise @core.WindowsError
+pub fn DFSSTORAGEINFO1_e6c0a7bef96a::set_target_priority(Self, DFSTARGETPRIORITY_955816a201f4) -> Unit raise @core.WindowsError
+pub fn DFSSTORAGEINFO1_e6c0a7bef96a::share_name_raw(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn DFSSTORAGEINFO1_e6c0a7bef96a::state(Self) -> UInt raise @core.WindowsError
+pub fn DFSSTORAGEINFO1_e6c0a7bef96a::target_priority(Self) -> DFSTARGETPRIORITY_955816a201f4 raise @core.WindowsError
+pub fn[T] DFSSTORAGEINFO1_e6c0a7bef96a::with_raw_address(Self, (@core.RawAddress) -> T raise?) -> T raise
+pub impl Eq for DFSSTORAGEINFO1_e6c0a7bef96a
+pub impl @debug.Debug for DFSSTORAGEINFO1_e6c0a7bef96a
+
+pub(all) struct DFSSTORAGEINFO_f45f19c07202 {
+  raw_buffer : @core.NativeBuffer
+  mut root_server_name : @strings.PWStrBuffer?
+  mut root_share_name : @strings.PWStrBuffer?
+}
+pub fn DFSSTORAGEINFO_f45f19c07202::abi_alignment() -> Int
+pub fn DFSSTORAGEINFO_f45f19c07202::abi_size() -> Int
+pub fn DFSSTORAGEINFO_f45f19c07202::bytes(Self) -> Bytes raise @core.WindowsError
+pub fn DFSSTORAGEINFO_f45f19c07202::clear_server_name(Self) -> Unit raise @core.WindowsError
+pub fn DFSSTORAGEINFO_f45f19c07202::clear_share_name(Self) -> Unit raise @core.WindowsError
+pub fn DFSSTORAGEINFO_f45f19c07202::from_bytes(Bytes) -> Self raise @core.WindowsError
+pub fn DFSSTORAGEINFO_f45f19c07202::new() -> Self raise @core.WindowsError
+pub fn DFSSTORAGEINFO_f45f19c07202::raw_address(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn DFSSTORAGEINFO_f45f19c07202::server_name_raw(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn DFSSTORAGEINFO_f45f19c07202::set_server_name(Self, @strings.PWStrBuffer) -> Unit raise @core.WindowsError
+pub fn DFSSTORAGEINFO_f45f19c07202::set_server_name_raw(Self, @core.RawAddress) -> Unit raise @core.WindowsError
+pub fn DFSSTORAGEINFO_f45f19c07202::set_share_name(Self, @strings.PWStrBuffer) -> Unit raise @core.WindowsError
+pub fn DFSSTORAGEINFO_f45f19c07202::set_share_name_raw(Self, @core.RawAddress) -> Unit raise @core.WindowsError
+pub fn DFSSTORAGEINFO_f45f19c07202::set_state(Self, UInt) -> Unit raise @core.WindowsError
+pub fn DFSSTORAGEINFO_f45f19c07202::share_name_raw(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn DFSSTORAGEINFO_f45f19c07202::state(Self) -> UInt raise @core.WindowsError
+pub fn[T] DFSSTORAGEINFO_f45f19c07202::with_raw_address(Self, (@core.RawAddress) -> T raise?) -> T raise
+pub impl Eq for DFSSTORAGEINFO_f45f19c07202
+pub impl @debug.Debug for DFSSTORAGEINFO_f45f19c07202
+
+pub(all) struct DFSSUPPORTEDNAMESPACEVERSIONINFO_3200a6cf506e {
+  raw_buffer : @core.NativeBuffer
+}
+pub fn DFSSUPPORTEDNAMESPACEVERSIONINFO_3200a6cf506e::abi_alignment() -> Int
+pub fn DFSSUPPORTEDNAMESPACEVERSIONINFO_3200a6cf506e::abi_size() -> Int
+pub fn DFSSUPPORTEDNAMESPACEVERSIONINFO_3200a6cf506e::bytes(Self) -> Bytes raise @core.WindowsError
+pub fn DFSSUPPORTEDNAMESPACEVERSIONINFO_3200a6cf506e::domain_dfs_capabilities(Self) -> UInt64 raise @core.WindowsError
+pub fn DFSSUPPORTEDNAMESPACEVERSIONINFO_3200a6cf506e::domain_dfs_major_version(Self) -> UInt raise @core.WindowsError
+pub fn DFSSUPPORTEDNAMESPACEVERSIONINFO_3200a6cf506e::domain_dfs_minor_version(Self) -> UInt raise @core.WindowsError
+pub fn DFSSUPPORTEDNAMESPACEVERSIONINFO_3200a6cf506e::from_bytes(Bytes) -> Self raise @core.WindowsError
+pub fn DFSSUPPORTEDNAMESPACEVERSIONINFO_3200a6cf506e::new() -> Self raise @core.WindowsError
+pub fn DFSSUPPORTEDNAMESPACEVERSIONINFO_3200a6cf506e::raw_address(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn DFSSUPPORTEDNAMESPACEVERSIONINFO_3200a6cf506e::set_domain_dfs_capabilities(Self, UInt64) -> Unit raise @core.WindowsError
+pub fn DFSSUPPORTEDNAMESPACEVERSIONINFO_3200a6cf506e::set_domain_dfs_major_version(Self, UInt) -> Unit raise @core.WindowsError
+pub fn DFSSUPPORTEDNAMESPACEVERSIONINFO_3200a6cf506e::set_domain_dfs_minor_version(Self, UInt) -> Unit raise @core.WindowsError
+pub fn DFSSUPPORTEDNAMESPACEVERSIONINFO_3200a6cf506e::set_standalone_dfs_capabilities(Self, UInt64) -> Unit raise @core.WindowsError
+pub fn DFSSUPPORTEDNAMESPACEVERSIONINFO_3200a6cf506e::set_standalone_dfs_major_version(Self, UInt) -> Unit raise @core.WindowsError
+pub fn DFSSUPPORTEDNAMESPACEVERSIONINFO_3200a6cf506e::set_standalone_dfs_minor_version(Self, UInt) -> Unit raise @core.WindowsError
+pub fn DFSSUPPORTEDNAMESPACEVERSIONINFO_3200a6cf506e::standalone_dfs_capabilities(Self) -> UInt64 raise @core.WindowsError
+pub fn DFSSUPPORTEDNAMESPACEVERSIONINFO_3200a6cf506e::standalone_dfs_major_version(Self) -> UInt raise @core.WindowsError
+pub fn DFSSUPPORTEDNAMESPACEVERSIONINFO_3200a6cf506e::standalone_dfs_minor_version(Self) -> UInt raise @core.WindowsError
+pub fn[T] DFSSUPPORTEDNAMESPACEVERSIONINFO_3200a6cf506e::with_raw_address(Self, (@core.RawAddress) -> T raise?) -> T raise
+pub impl Eq for DFSSUPPORTEDNAMESPACEVERSIONINFO_3200a6cf506e
+pub impl @debug.Debug for DFSSUPPORTEDNAMESPACEVERSIONINFO_3200a6cf506e
+
+pub(all) struct DFSTARGETPRIORITYCLASS_c197693ec275(Int) derive(Compare, Eq, @debug.Debug)
+pub fn DFSTARGETPRIORITYCLASS_c197693ec275::dfs_global_high_priority_class() -> Self
+pub fn DFSTARGETPRIORITYCLASS_c197693ec275::dfs_global_low_priority_class() -> Self
+pub fn DFSTARGETPRIORITYCLASS_c197693ec275::dfs_invalid_priority_class() -> Self
+pub fn DFSTARGETPRIORITYCLASS_c197693ec275::dfs_site_cost_high_priority_class() -> Self
+pub fn DFSTARGETPRIORITYCLASS_c197693ec275::dfs_site_cost_low_priority_class() -> Self
+pub fn DFSTARGETPRIORITYCLASS_c197693ec275::dfs_site_cost_normal_priority_class() -> Self
+pub fn DFSTARGETPRIORITYCLASS_c197693ec275::from_int(Int) -> Self
+pub fn DFSTARGETPRIORITYCLASS_c197693ec275::to_int(Self) -> Int
+
+pub(all) struct DFSTARGETPRIORITY_955816a201f4 {
+  raw_buffer : @core.NativeBuffer
+}
+pub fn DFSTARGETPRIORITY_955816a201f4::abi_alignment() -> Int
+pub fn DFSTARGETPRIORITY_955816a201f4::abi_size() -> Int
+pub fn DFSTARGETPRIORITY_955816a201f4::bytes(Self) -> Bytes raise @core.WindowsError
+pub fn DFSTARGETPRIORITY_955816a201f4::from_bytes(Bytes) -> Self raise @core.WindowsError
+pub fn DFSTARGETPRIORITY_955816a201f4::new() -> Self raise @core.WindowsError
+pub fn DFSTARGETPRIORITY_955816a201f4::raw_address(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn DFSTARGETPRIORITY_955816a201f4::reserved(Self) -> UInt16 raise @core.WindowsError
+pub fn DFSTARGETPRIORITY_955816a201f4::set_reserved(Self, UInt16) -> Unit raise @core.WindowsError
+pub fn DFSTARGETPRIORITY_955816a201f4::set_target_priority_class(Self, DFSTARGETPRIORITYCLASS_c197693ec275) -> Unit raise @core.WindowsError
+pub fn DFSTARGETPRIORITY_955816a201f4::set_target_priority_rank(Self, UInt16) -> Unit raise @core.WindowsError
+pub fn DFSTARGETPRIORITY_955816a201f4::target_priority_class(Self) -> DFSTARGETPRIORITYCLASS_c197693ec275 raise @core.WindowsError
+pub fn DFSTARGETPRIORITY_955816a201f4::target_priority_rank(Self) -> UInt16 raise @core.WindowsError
+pub fn[T] DFSTARGETPRIORITY_955816a201f4::with_raw_address(Self, (@core.RawAddress) -> T raise?) -> T raise
+pub impl Eq for DFSTARGETPRIORITY_955816a201f4
+pub impl @debug.Debug for DFSTARGETPRIORITY_955816a201f4
+
+// Type aliases
+
+// Traits

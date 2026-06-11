@@ -1,0 +1,389 @@
+///|
+pub fn DWMFLIP3DWINDOWPOLICY_d65ec0e91a55::dwmflip3_d_default() -> DWMFLIP3DWINDOWPOLICY_d65ec0e91a55 {
+  DWMFLIP3DWINDOWPOLICY_d65ec0e91a55::from_int(0)
+}
+
+///|
+pub fn DWMFLIP3DWINDOWPOLICY_d65ec0e91a55::dwmflip3_d_excludeabove() -> DWMFLIP3DWINDOWPOLICY_d65ec0e91a55 {
+  DWMFLIP3DWINDOWPOLICY_d65ec0e91a55::from_int(2)
+}
+
+///|
+pub fn DWMFLIP3DWINDOWPOLICY_d65ec0e91a55::dwmflip3_d_excludebelow() -> DWMFLIP3DWINDOWPOLICY_d65ec0e91a55 {
+  DWMFLIP3DWINDOWPOLICY_d65ec0e91a55::from_int(1)
+}
+
+///|
+pub fn DWMFLIP3DWINDOWPOLICY_d65ec0e91a55::dwmflip3_d_last() -> DWMFLIP3DWINDOWPOLICY_d65ec0e91a55 {
+  DWMFLIP3DWINDOWPOLICY_d65ec0e91a55::from_int(3)
+}
+
+///|
+pub fn DWMNCRENDERINGPOLICY_fd6e6ff6f4b1::dwmncrp_disabled() -> DWMNCRENDERINGPOLICY_fd6e6ff6f4b1 {
+  DWMNCRENDERINGPOLICY_fd6e6ff6f4b1::from_int(1)
+}
+
+///|
+pub fn DWMNCRENDERINGPOLICY_fd6e6ff6f4b1::dwmncrp_enabled() -> DWMNCRENDERINGPOLICY_fd6e6ff6f4b1 {
+  DWMNCRENDERINGPOLICY_fd6e6ff6f4b1::from_int(2)
+}
+
+///|
+pub fn DWMNCRENDERINGPOLICY_fd6e6ff6f4b1::dwmncrp_last() -> DWMNCRENDERINGPOLICY_fd6e6ff6f4b1 {
+  DWMNCRENDERINGPOLICY_fd6e6ff6f4b1::from_int(3)
+}
+
+///|
+pub fn DWMNCRENDERINGPOLICY_fd6e6ff6f4b1::dwmncrp_usewindowstyle() -> DWMNCRENDERINGPOLICY_fd6e6ff6f4b1 {
+  DWMNCRENDERINGPOLICY_fd6e6ff6f4b1::from_int(0)
+}
+
+///|
+pub fn DWMTRANSITIONOWNEDWINDOWTARGET_d04de6f3ab52::dwmtransition_ownedwindow_null() -> DWMTRANSITIONOWNEDWINDOWTARGET_d04de6f3ab52 {
+  DWMTRANSITIONOWNEDWINDOWTARGET_d04de6f3ab52::from_int(-1)
+}
+
+///|
+pub fn DWMTRANSITIONOWNEDWINDOWTARGET_d04de6f3ab52::dwmtransition_ownedwindow_reposition() -> DWMTRANSITIONOWNEDWINDOWTARGET_d04de6f3ab52 {
+  DWMTRANSITIONOWNEDWINDOWTARGET_d04de6f3ab52::from_int(0)
+}
+
+///|
+pub fn DWMWINDOWATTRIBUTE_0f7ce4c02561::dwmwa_allow_ncpaint() -> DWMWINDOWATTRIBUTE_0f7ce4c02561 {
+  DWMWINDOWATTRIBUTE_0f7ce4c02561::from_int(4)
+}
+
+///|
+pub fn DWMWINDOWATTRIBUTE_0f7ce4c02561::dwmwa_border_color() -> DWMWINDOWATTRIBUTE_0f7ce4c02561 {
+  DWMWINDOWATTRIBUTE_0f7ce4c02561::from_int(34)
+}
+
+///|
+pub fn DWMWINDOWATTRIBUTE_0f7ce4c02561::dwmwa_border_margins() -> DWMWINDOWATTRIBUTE_0f7ce4c02561 {
+  DWMWINDOWATTRIBUTE_0f7ce4c02561::from_int(40)
+}
+
+///|
+pub fn DWMWINDOWATTRIBUTE_0f7ce4c02561::dwmwa_caption_button_bounds() -> DWMWINDOWATTRIBUTE_0f7ce4c02561 {
+  DWMWINDOWATTRIBUTE_0f7ce4c02561::from_int(5)
+}
+
+///|
+pub fn DWMWINDOWATTRIBUTE_0f7ce4c02561::dwmwa_caption_color() -> DWMWINDOWATTRIBUTE_0f7ce4c02561 {
+  DWMWINDOWATTRIBUTE_0f7ce4c02561::from_int(35)
+}
+
+///|
+pub fn DWMWINDOWATTRIBUTE_0f7ce4c02561::dwmwa_cloak() -> DWMWINDOWATTRIBUTE_0f7ce4c02561 {
+  DWMWINDOWATTRIBUTE_0f7ce4c02561::from_int(13)
+}
+
+///|
+pub fn DWMWINDOWATTRIBUTE_0f7ce4c02561::dwmwa_cloaked() -> DWMWINDOWATTRIBUTE_0f7ce4c02561 {
+  DWMWINDOWATTRIBUTE_0f7ce4c02561::from_int(14)
+}
+
+///|
+pub fn DWMWINDOWATTRIBUTE_0f7ce4c02561::dwmwa_disallow_peek() -> DWMWINDOWATTRIBUTE_0f7ce4c02561 {
+  DWMWINDOWATTRIBUTE_0f7ce4c02561::from_int(11)
+}
+
+///|
+pub fn DWMWINDOWATTRIBUTE_0f7ce4c02561::dwmwa_excluded_from_peek() -> DWMWINDOWATTRIBUTE_0f7ce4c02561 {
+  DWMWINDOWATTRIBUTE_0f7ce4c02561::from_int(12)
+}
+
+///|
+pub fn DWMWINDOWATTRIBUTE_0f7ce4c02561::dwmwa_extended_frame_bounds() -> DWMWINDOWATTRIBUTE_0f7ce4c02561 {
+  DWMWINDOWATTRIBUTE_0f7ce4c02561::from_int(9)
+}
+
+///|
+pub fn DWMWINDOWATTRIBUTE_0f7ce4c02561::dwmwa_flip3_d_policy() -> DWMWINDOWATTRIBUTE_0f7ce4c02561 {
+  DWMWINDOWATTRIBUTE_0f7ce4c02561::from_int(8)
+}
+
+///|
+pub fn DWMWINDOWATTRIBUTE_0f7ce4c02561::dwmwa_force_iconic_representation() -> DWMWINDOWATTRIBUTE_0f7ce4c02561 {
+  DWMWINDOWATTRIBUTE_0f7ce4c02561::from_int(7)
+}
+
+///|
+pub fn DWMWINDOWATTRIBUTE_0f7ce4c02561::dwmwa_freeze_representation() -> DWMWINDOWATTRIBUTE_0f7ce4c02561 {
+  DWMWINDOWATTRIBUTE_0f7ce4c02561::from_int(15)
+}
+
+///|
+pub fn DWMWINDOWATTRIBUTE_0f7ce4c02561::dwmwa_has_iconic_bitmap() -> DWMWINDOWATTRIBUTE_0f7ce4c02561 {
+  DWMWINDOWATTRIBUTE_0f7ce4c02561::from_int(10)
+}
+
+///|
+pub fn DWMWINDOWATTRIBUTE_0f7ce4c02561::dwmwa_last() -> DWMWINDOWATTRIBUTE_0f7ce4c02561 {
+  DWMWINDOWATTRIBUTE_0f7ce4c02561::from_int(41)
+}
+
+///|
+pub fn DWMWINDOWATTRIBUTE_0f7ce4c02561::dwmwa_ncrendering_enabled() -> DWMWINDOWATTRIBUTE_0f7ce4c02561 {
+  DWMWINDOWATTRIBUTE_0f7ce4c02561::from_int(1)
+}
+
+///|
+pub fn DWMWINDOWATTRIBUTE_0f7ce4c02561::dwmwa_ncrendering_policy() -> DWMWINDOWATTRIBUTE_0f7ce4c02561 {
+  DWMWINDOWATTRIBUTE_0f7ce4c02561::from_int(2)
+}
+
+///|
+pub fn DWMWINDOWATTRIBUTE_0f7ce4c02561::dwmwa_nonclient_rtl_layout() -> DWMWINDOWATTRIBUTE_0f7ce4c02561 {
+  DWMWINDOWATTRIBUTE_0f7ce4c02561::from_int(6)
+}
+
+///|
+pub fn DWMWINDOWATTRIBUTE_0f7ce4c02561::dwmwa_passive_update_mode() -> DWMWINDOWATTRIBUTE_0f7ce4c02561 {
+  DWMWINDOWATTRIBUTE_0f7ce4c02561::from_int(16)
+}
+
+///|
+pub fn DWMWINDOWATTRIBUTE_0f7ce4c02561::dwmwa_redirectionbitmap_alpha() -> DWMWINDOWATTRIBUTE_0f7ce4c02561 {
+  DWMWINDOWATTRIBUTE_0f7ce4c02561::from_int(39)
+}
+
+///|
+pub fn DWMWINDOWATTRIBUTE_0f7ce4c02561::dwmwa_systembackdrop_type() -> DWMWINDOWATTRIBUTE_0f7ce4c02561 {
+  DWMWINDOWATTRIBUTE_0f7ce4c02561::from_int(38)
+}
+
+///|
+pub fn DWMWINDOWATTRIBUTE_0f7ce4c02561::dwmwa_text_color() -> DWMWINDOWATTRIBUTE_0f7ce4c02561 {
+  DWMWINDOWATTRIBUTE_0f7ce4c02561::from_int(36)
+}
+
+///|
+pub fn DWMWINDOWATTRIBUTE_0f7ce4c02561::dwmwa_transitions_forcedisabled() -> DWMWINDOWATTRIBUTE_0f7ce4c02561 {
+  DWMWINDOWATTRIBUTE_0f7ce4c02561::from_int(3)
+}
+
+///|
+pub fn DWMWINDOWATTRIBUTE_0f7ce4c02561::dwmwa_use_hostbackdropbrush() -> DWMWINDOWATTRIBUTE_0f7ce4c02561 {
+  DWMWINDOWATTRIBUTE_0f7ce4c02561::from_int(17)
+}
+
+///|
+pub fn DWMWINDOWATTRIBUTE_0f7ce4c02561::dwmwa_use_immersive_dark_mode() -> DWMWINDOWATTRIBUTE_0f7ce4c02561 {
+  DWMWINDOWATTRIBUTE_0f7ce4c02561::from_int(20)
+}
+
+///|
+pub fn DWMWINDOWATTRIBUTE_0f7ce4c02561::dwmwa_visible_frame_border_thickness() -> DWMWINDOWATTRIBUTE_0f7ce4c02561 {
+  DWMWINDOWATTRIBUTE_0f7ce4c02561::from_int(37)
+}
+
+///|
+pub fn DWMWINDOWATTRIBUTE_0f7ce4c02561::dwmwa_window_corner_preference() -> DWMWINDOWATTRIBUTE_0f7ce4c02561 {
+  DWMWINDOWATTRIBUTE_0f7ce4c02561::from_int(33)
+}
+
+///|
+pub fn DWMSHOWCONTACT_b7600b3c085c::dwmsc_all() -> DWMSHOWCONTACT_b7600b3c085c {
+  DWMSHOWCONTACT_b7600b3c085c::from_int(4294967295U.reinterpret_as_int())
+}
+
+///|
+pub fn DWMSHOWCONTACT_b7600b3c085c::dwmsc_down() -> DWMSHOWCONTACT_b7600b3c085c {
+  DWMSHOWCONTACT_b7600b3c085c::from_int(1U.reinterpret_as_int())
+}
+
+///|
+pub fn DWMSHOWCONTACT_b7600b3c085c::dwmsc_drag() -> DWMSHOWCONTACT_b7600b3c085c {
+  DWMSHOWCONTACT_b7600b3c085c::from_int(4U.reinterpret_as_int())
+}
+
+///|
+pub fn DWMSHOWCONTACT_b7600b3c085c::dwmsc_hold() -> DWMSHOWCONTACT_b7600b3c085c {
+  DWMSHOWCONTACT_b7600b3c085c::from_int(8U.reinterpret_as_int())
+}
+
+///|
+pub fn DWMSHOWCONTACT_b7600b3c085c::dwmsc_none() -> DWMSHOWCONTACT_b7600b3c085c {
+  DWMSHOWCONTACT_b7600b3c085c::from_int(0U.reinterpret_as_int())
+}
+
+///|
+pub fn DWMSHOWCONTACT_b7600b3c085c::dwmsc_penbarrel() -> DWMSHOWCONTACT_b7600b3c085c {
+  DWMSHOWCONTACT_b7600b3c085c::from_int(16U.reinterpret_as_int())
+}
+
+///|
+pub fn DWMSHOWCONTACT_b7600b3c085c::dwmsc_up() -> DWMSHOWCONTACT_b7600b3c085c {
+  DWMSHOWCONTACT_b7600b3c085c::from_int(2U.reinterpret_as_int())
+}
+
+///|
+pub fn DWMSOURCEFRAMESAMPLING_4b4251b1e7ef::coverage() -> DWMSOURCEFRAMESAMPLING_4b4251b1e7ef {
+  DWMSOURCEFRAMESAMPLING_4b4251b1e7ef::from_int(1)
+}
+
+///|
+pub fn DWMSOURCEFRAMESAMPLING_4b4251b1e7ef::last() -> DWMSOURCEFRAMESAMPLING_4b4251b1e7ef {
+  DWMSOURCEFRAMESAMPLING_4b4251b1e7ef::from_int(2)
+}
+
+///|
+pub fn DWMSOURCEFRAMESAMPLING_4b4251b1e7ef::point() -> DWMSOURCEFRAMESAMPLING_4b4251b1e7ef {
+  DWMSOURCEFRAMESAMPLING_4b4251b1e7ef::from_int(0)
+}
+
+///|
+pub fn DWMSYSTEMBACKDROPTYPE_4287f1529dd4::dwmsbt_auto() -> DWMSYSTEMBACKDROPTYPE_4287f1529dd4 {
+  DWMSYSTEMBACKDROPTYPE_4287f1529dd4::from_int(0)
+}
+
+///|
+pub fn DWMSYSTEMBACKDROPTYPE_4287f1529dd4::dwmsbt_mainwindow() -> DWMSYSTEMBACKDROPTYPE_4287f1529dd4 {
+  DWMSYSTEMBACKDROPTYPE_4287f1529dd4::from_int(2)
+}
+
+///|
+pub fn DWMSYSTEMBACKDROPTYPE_4287f1529dd4::dwmsbt_none() -> DWMSYSTEMBACKDROPTYPE_4287f1529dd4 {
+  DWMSYSTEMBACKDROPTYPE_4287f1529dd4::from_int(1)
+}
+
+///|
+pub fn DWMSYSTEMBACKDROPTYPE_4287f1529dd4::dwmsbt_tabbedwindow() -> DWMSYSTEMBACKDROPTYPE_4287f1529dd4 {
+  DWMSYSTEMBACKDROPTYPE_4287f1529dd4::from_int(4)
+}
+
+///|
+pub fn DWMSYSTEMBACKDROPTYPE_4287f1529dd4::dwmsbt_transientwindow() -> DWMSYSTEMBACKDROPTYPE_4287f1529dd4 {
+  DWMSYSTEMBACKDROPTYPE_4287f1529dd4::from_int(3)
+}
+
+///|
+pub fn DWMTABWINDOWREQUIREMENTS_3da03a82735c::dwmtwr_app_compat() -> DWMTABWINDOWREQUIREMENTS_3da03a82735c {
+  DWMTABWINDOWREQUIREMENTS_3da03a82735c::from_int(512)
+}
+
+///|
+pub fn DWMTABWINDOWREQUIREMENTS_3da03a82735c::dwmtwr_group_policy() -> DWMTABWINDOWREQUIREMENTS_3da03a82735c {
+  DWMTABWINDOWREQUIREMENTS_3da03a82735c::from_int(256)
+}
+
+///|
+pub fn DWMTABWINDOWREQUIREMENTS_3da03a82735c::dwmtwr_implemented_by_system() -> DWMTABWINDOWREQUIREMENTS_3da03a82735c {
+  DWMTABWINDOWREQUIREMENTS_3da03a82735c::from_int(1)
+}
+
+///|
+pub fn DWMTABWINDOWREQUIREMENTS_3da03a82735c::dwmtwr_none() -> DWMTABWINDOWREQUIREMENTS_3da03a82735c {
+  DWMTABWINDOWREQUIREMENTS_3da03a82735c::from_int(0)
+}
+
+///|
+pub fn DWMTABWINDOWREQUIREMENTS_3da03a82735c::dwmtwr_tabbing_enabled() -> DWMTABWINDOWREQUIREMENTS_3da03a82735c {
+  DWMTABWINDOWREQUIREMENTS_3da03a82735c::from_int(64)
+}
+
+///|
+pub fn DWMTABWINDOWREQUIREMENTS_3da03a82735c::dwmtwr_user_policy() -> DWMTABWINDOWREQUIREMENTS_3da03a82735c {
+  DWMTABWINDOWREQUIREMENTS_3da03a82735c::from_int(128)
+}
+
+///|
+pub fn DWMTABWINDOWREQUIREMENTS_3da03a82735c::dwmtwr_window_dwm_attributes() -> DWMTABWINDOWREQUIREMENTS_3da03a82735c {
+  DWMTABWINDOWREQUIREMENTS_3da03a82735c::from_int(16)
+}
+
+///|
+pub fn DWMTABWINDOWREQUIREMENTS_3da03a82735c::dwmtwr_window_margins() -> DWMTABWINDOWREQUIREMENTS_3da03a82735c {
+  DWMTABWINDOWREQUIREMENTS_3da03a82735c::from_int(32)
+}
+
+///|
+pub fn DWMTABWINDOWREQUIREMENTS_3da03a82735c::dwmtwr_window_region() -> DWMTABWINDOWREQUIREMENTS_3da03a82735c {
+  DWMTABWINDOWREQUIREMENTS_3da03a82735c::from_int(8)
+}
+
+///|
+pub fn DWMTABWINDOWREQUIREMENTS_3da03a82735c::dwmtwr_window_relationship() -> DWMTABWINDOWREQUIREMENTS_3da03a82735c {
+  DWMTABWINDOWREQUIREMENTS_3da03a82735c::from_int(2)
+}
+
+///|
+pub fn DWMTABWINDOWREQUIREMENTS_3da03a82735c::dwmtwr_window_styles() -> DWMTABWINDOWREQUIREMENTS_3da03a82735c {
+  DWMTABWINDOWREQUIREMENTS_3da03a82735c::from_int(4)
+}
+
+///|
+pub fn DWMWINDOWCORNERPREFERENCE_c179407f9d07::dwmwcp_default() -> DWMWINDOWCORNERPREFERENCE_c179407f9d07 {
+  DWMWINDOWCORNERPREFERENCE_c179407f9d07::from_int(0)
+}
+
+///|
+pub fn DWMWINDOWCORNERPREFERENCE_c179407f9d07::dwmwcp_donotround() -> DWMWINDOWCORNERPREFERENCE_c179407f9d07 {
+  DWMWINDOWCORNERPREFERENCE_c179407f9d07::from_int(1)
+}
+
+///|
+pub fn DWMWINDOWCORNERPREFERENCE_c179407f9d07::dwmwcp_round() -> DWMWINDOWCORNERPREFERENCE_c179407f9d07 {
+  DWMWINDOWCORNERPREFERENCE_c179407f9d07::from_int(2)
+}
+
+///|
+pub fn DWMWINDOWCORNERPREFERENCE_c179407f9d07::dwmwcp_roundsmall() -> DWMWINDOWCORNERPREFERENCE_c179407f9d07 {
+  DWMWINDOWCORNERPREFERENCE_c179407f9d07::from_int(3)
+}
+
+///|
+pub fn GESTURETYPE_398864bde652::gt_pen_doubletap() -> GESTURETYPE_398864bde652 {
+  GESTURETYPE_398864bde652::from_int(1)
+}
+
+///|
+pub fn GESTURETYPE_398864bde652::gt_pen_pressandhold() -> GESTURETYPE_398864bde652 {
+  GESTURETYPE_398864bde652::from_int(3)
+}
+
+///|
+pub fn GESTURETYPE_398864bde652::gt_pen_pressandholdabort() -> GESTURETYPE_398864bde652 {
+  GESTURETYPE_398864bde652::from_int(4)
+}
+
+///|
+pub fn GESTURETYPE_398864bde652::gt_pen_righttap() -> GESTURETYPE_398864bde652 {
+  GESTURETYPE_398864bde652::from_int(2)
+}
+
+///|
+pub fn GESTURETYPE_398864bde652::gt_pen_tap() -> GESTURETYPE_398864bde652 {
+  GESTURETYPE_398864bde652::from_int(0)
+}
+
+///|
+pub fn GESTURETYPE_398864bde652::gt_touch_doubletap() -> GESTURETYPE_398864bde652 {
+  GESTURETYPE_398864bde652::from_int(6)
+}
+
+///|
+pub fn GESTURETYPE_398864bde652::gt_touch_pressandhold() -> GESTURETYPE_398864bde652 {
+  GESTURETYPE_398864bde652::from_int(8)
+}
+
+///|
+pub fn GESTURETYPE_398864bde652::gt_touch_pressandholdabort() -> GESTURETYPE_398864bde652 {
+  GESTURETYPE_398864bde652::from_int(9)
+}
+
+///|
+pub fn GESTURETYPE_398864bde652::gt_touch_pressandtap() -> GESTURETYPE_398864bde652 {
+  GESTURETYPE_398864bde652::from_int(10)
+}
+
+///|
+pub fn GESTURETYPE_398864bde652::gt_touch_righttap() -> GESTURETYPE_398864bde652 {
+  GESTURETYPE_398864bde652::from_int(7)
+}
+
+///|
+pub fn GESTURETYPE_398864bde652::gt_touch_tap() -> GESTURETYPE_398864bde652 {
+  GESTURETYPE_398864bde652::from_int(5)
+}

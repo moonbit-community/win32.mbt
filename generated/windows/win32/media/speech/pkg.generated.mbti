@@ -1,0 +1,868 @@
+// Generated using `moon info`, DON'T EDIT IT
+package "moonbit-community/win32api/windows/win32/media/speech"
+
+import {
+  "moonbit-community/win32api/scc/8066e10c93dd107f",
+}
+
+// Values
+pub let default_weight : UInt
+
+pub let sapi_error_base : UInt
+
+pub let sp_emulate_result : UInt
+
+pub let sp_low_confidence : Int
+
+pub let sp_max_langids : UInt
+
+pub let sp_max_pron_length : UInt
+
+pub let sp_max_word_length : UInt
+
+pub let sp_normal_confidence : UInt
+
+pub let sp_streampos_asap : UInt
+
+pub let sp_streampos_realtime : Int
+
+pub let spalternatesclsid : String
+
+pub let spcat_applexicons : String
+
+pub let spcat_audioin : String
+
+pub let spcat_audioout : String
+
+pub let spcat_phoneconverters : String
+
+pub let spcat_recognizers : String
+
+pub let spcat_recoprofiles : String
+
+pub let spcat_textnormalizers : String
+
+pub let spcat_voices : String
+
+pub let spcurrent_user_lexicon_token_id : String
+
+pub let spcurrent_user_shortcut_token_id : String
+
+pub let spdictation : String
+
+pub let spdui_add_remove_word : String
+
+pub let spdui_audio_properties : String
+
+pub let spdui_audio_volume : String
+
+pub let spdui_engine_properties : String
+
+pub let spdui_mic_training : String
+
+pub let spdui_reco_profile_properties : String
+
+pub let spdui_share_data : String
+
+pub let spdui_tutorial : String
+
+pub let spdui_user_enrollment : String
+
+pub let spdui_user_training : String
+
+pub let speech_all_elements : Int
+
+pub let speech_default_weight : UInt
+
+pub let speech_max_pron_length : Int
+
+pub let speech_max_word_length : Int
+
+pub let speech_stream_pos_asap : Int
+
+pub let speech_stream_pos_real_time : Int
+
+pub let spinfdictation : String
+
+pub let spmmsys_audio_in_token_id : String
+
+pub let spmmsys_audio_out_token_id : String
+
+pub let spprop_adaptation_on : String
+
+pub let spprop_complex_response_speed : String
+
+pub let spprop_high_confidence_threshold : String
+
+pub let spprop_low_confidence_threshold : String
+
+pub let spprop_normal_confidence_threshold : String
+
+pub let spprop_persisted_background_adaptation : String
+
+pub let spprop_persisted_language_model_adaptation : String
+
+pub let spprop_resource_usage : String
+
+pub let spprop_response_speed : String
+
+pub let spprop_ux_is_listening : String
+
+pub let sprecoextension : String
+
+pub let spreg_local_machine_root : String
+
+pub let spreg_safe_user_tokens : String
+
+pub let spreg_user_root : String
+
+pub let sprp_normal : UInt
+
+pub let sptokenkey_attributes : String
+
+pub let sptokenkey_audio_latency_truncate : String
+
+pub let sptokenkey_audio_latency_update_interval : String
+
+pub let sptokenkey_audio_latency_warning : String
+
+pub let sptokenkey_files : String
+
+pub let sptokenkey_retainedaudio : String
+
+pub let sptokenkey_ui : String
+
+pub let sptokenvalue_clsid : String
+
+pub let sptopic_spelling : String
+
+pub let spvoicecategory_ttsrate : String
+
+pub let spwildcard : String
+
+pub let sr_localized_description : String
+
+// Errors
+
+// Types and methods
+
+// Type aliases
+pub using @8066e10c93dd107f {type DISPIDSPRG_6bac5eff5105 as DISPIDSPRG}
+
+pub using @8066e10c93dd107f {type DISPIDSPTSI_07c540cad99e as DISPIDSPTSI}
+
+pub using @8066e10c93dd107f {type DISPIDSpeechAudio_7350ddd192be as DISPIDSpeechAudio}
+
+pub using @8066e10c93dd107f {type DISPIDSpeechAudioBufferInfo_85e9aa15990b as DISPIDSpeechAudioBufferInfo}
+
+pub using @8066e10c93dd107f {type DISPIDSpeechAudioFormat_1fb2160e42bd as DISPIDSpeechAudioFormat}
+
+pub using @8066e10c93dd107f {type DISPIDSpeechAudioStatus_26ba42c3fbb3 as DISPIDSpeechAudioStatus}
+
+pub using @8066e10c93dd107f {type DISPIDSpeechBaseStream_a16673a39a08 as DISPIDSpeechBaseStream}
+
+pub using @8066e10c93dd107f {type DISPIDSpeechCustomStream_900a12da8a7f as DISPIDSpeechCustomStream}
+
+pub using @8066e10c93dd107f {type DISPIDSpeechDataKey_350f3b571028 as DISPIDSpeechDataKey}
+
+pub using @8066e10c93dd107f {type DISPIDSpeechFileStream_d7e5119de4ef as DISPIDSpeechFileStream}
+
+pub using @8066e10c93dd107f {type DISPIDSpeechGrammarRule_870d23b6dfbd as DISPIDSpeechGrammarRule}
+
+pub using @8066e10c93dd107f {type DISPIDSpeechGrammarRuleState_6ecf2cc943f4 as DISPIDSpeechGrammarRuleState}
+
+pub using @8066e10c93dd107f {type DISPIDSpeechGrammarRuleStateTransition_6be20d9f6d65 as DISPIDSpeechGrammarRuleStateTransition}
+
+pub using @8066e10c93dd107f {type DISPIDSpeechGrammarRuleStateTransitions_d9f266f282f5 as DISPIDSpeechGrammarRuleStateTransitions}
+
+pub using @8066e10c93dd107f {type DISPIDSpeechGrammarRules_135774528e1c as DISPIDSpeechGrammarRules}
+
+pub using @8066e10c93dd107f {type DISPIDSpeechLexicon_a57fc59965e0 as DISPIDSpeechLexicon}
+
+pub using @8066e10c93dd107f {type DISPIDSpeechLexiconProns_00b05e1cd44f as DISPIDSpeechLexiconProns}
+
+pub using @8066e10c93dd107f {type DISPIDSpeechLexiconPronunciation_b2b449d26690 as DISPIDSpeechLexiconPronunciation}
+
+pub using @8066e10c93dd107f {type DISPIDSpeechLexiconWord_8b93e51f9eae as DISPIDSpeechLexiconWord}
+
+pub using @8066e10c93dd107f {type DISPIDSpeechLexiconWords_f2aa473b65e5 as DISPIDSpeechLexiconWords}
+
+pub using @8066e10c93dd107f {type DISPIDSpeechMMSysAudio_15ffdcc13c5f as DISPIDSpeechMMSysAudio}
+
+pub using @8066e10c93dd107f {type DISPIDSpeechMemoryStream_a7bdf5e66bab as DISPIDSpeechMemoryStream}
+
+pub using @8066e10c93dd107f {type DISPIDSpeechObjectToken_4912fe2c32de as DISPIDSpeechObjectToken}
+
+pub using @8066e10c93dd107f {type DISPIDSpeechObjectTokenCategory_bcb9cc8432a2 as DISPIDSpeechObjectTokenCategory}
+
+pub using @8066e10c93dd107f {type DISPIDSpeechObjectTokens_7d2ed9557797 as DISPIDSpeechObjectTokens}
+
+pub using @8066e10c93dd107f {type DISPIDSpeechPhoneConverter_23d29f5bf67f as DISPIDSpeechPhoneConverter}
+
+pub using @8066e10c93dd107f {type DISPIDSpeechPhraseAlternate_9312a2f35884 as DISPIDSpeechPhraseAlternate}
+
+pub using @8066e10c93dd107f {type DISPIDSpeechPhraseAlternates_cce70f1aa306 as DISPIDSpeechPhraseAlternates}
+
+pub using @8066e10c93dd107f {type DISPIDSpeechPhraseBuilder_5086ace11e45 as DISPIDSpeechPhraseBuilder}
+
+pub using @8066e10c93dd107f {type DISPIDSpeechPhraseElement_580576bedbe0 as DISPIDSpeechPhraseElement}
+
+pub using @8066e10c93dd107f {type DISPIDSpeechPhraseElements_2dec258162d5 as DISPIDSpeechPhraseElements}
+
+pub using @8066e10c93dd107f {type DISPIDSpeechPhraseInfo_e473d1e8f702 as DISPIDSpeechPhraseInfo}
+
+pub using @8066e10c93dd107f {type DISPIDSpeechPhraseProperties_b1bff3e68e88 as DISPIDSpeechPhraseProperties}
+
+pub using @8066e10c93dd107f {type DISPIDSpeechPhraseProperty_75fe9ff07889 as DISPIDSpeechPhraseProperty}
+
+pub using @8066e10c93dd107f {type DISPIDSpeechPhraseReplacement_473e1d48727f as DISPIDSpeechPhraseReplacement}
+
+pub using @8066e10c93dd107f {type DISPIDSpeechPhraseReplacements_f9936d7a1fe2 as DISPIDSpeechPhraseReplacements}
+
+pub using @8066e10c93dd107f {type DISPIDSpeechPhraseRule_545ebd88dbb7 as DISPIDSpeechPhraseRule}
+
+pub using @8066e10c93dd107f {type DISPIDSpeechPhraseRules_5728845e0819 as DISPIDSpeechPhraseRules}
+
+pub using @8066e10c93dd107f {type DISPIDSpeechRecoContext_26633d50e9dd as DISPIDSpeechRecoContext}
+
+pub using @8066e10c93dd107f {type DISPIDSpeechRecoContextEvents_7eac5553a226 as DISPIDSpeechRecoContextEvents}
+
+pub using @8066e10c93dd107f {type DISPIDSpeechRecoResult_4a5843c8502e as DISPIDSpeechRecoResult}
+
+pub using @8066e10c93dd107f {type DISPIDSpeechRecoResult2_12a8b1358514 as DISPIDSpeechRecoResult2}
+
+pub using @8066e10c93dd107f {type DISPIDSpeechRecoResultTimes_a622a65a5f13 as DISPIDSpeechRecoResultTimes}
+
+pub using @8066e10c93dd107f {type DISPIDSpeechRecognizer_8a3aa23ca022 as DISPIDSpeechRecognizer}
+
+pub using @8066e10c93dd107f {type DISPIDSpeechRecognizerStatus_576eb1eb8e2b as DISPIDSpeechRecognizerStatus}
+
+pub using @8066e10c93dd107f {type DISPIDSpeechVoice_401cfa06fcf5 as DISPIDSpeechVoice}
+
+pub using @8066e10c93dd107f {type DISPIDSpeechVoiceEvent_8c2a78b0b046 as DISPIDSpeechVoiceEvent}
+
+pub using @8066e10c93dd107f {type DISPIDSpeechVoiceStatus_35c3ec59cc48 as DISPIDSpeechVoiceStatus}
+
+pub using @8066e10c93dd107f {type DISPIDSpeechWaveFormatEx_e1c72223cb82 as DISPIDSpeechWaveFormatEx}
+
+pub using @8066e10c93dd107f {type DISPIDSpeechXMLRecoResult_9e06b3e4dff5 as DISPIDSpeechXMLRecoResult}
+
+pub using @8066e10c93dd107f {type IEnumSpObjectTokens_265854ff0db9 as IEnumSpObjectTokens}
+
+pub using @8066e10c93dd107f {type ISpAudio_7b9aa5c2b06a as ISpAudio}
+
+pub using @8066e10c93dd107f {type ISpCFGInterpreter_4ba3fc7c5e1d as ISpCFGInterpreter}
+
+pub using @8066e10c93dd107f {type ISpCFGInterpreterSite_f979696e1231 as ISpCFGInterpreterSite}
+
+pub using @8066e10c93dd107f {type ISpContainerLexicon_a82a93e9fb66 as ISpContainerLexicon}
+
+pub using @8066e10c93dd107f {type ISpDataKey_fb9a1bf05e71 as ISpDataKey}
+
+pub using @8066e10c93dd107f {type ISpDisplayAlternates_3d919b1960b1 as ISpDisplayAlternates}
+
+pub using @8066e10c93dd107f {type ISpEnginePronunciation_4e67ea719a5d as ISpEnginePronunciation}
+
+pub using @8066e10c93dd107f {type ISpErrorLog_36f33bc0b87e as ISpErrorLog}
+
+pub using @8066e10c93dd107f {type ISpEventSink_a6da636a47f4 as ISpEventSink}
+
+pub using @8066e10c93dd107f {type ISpEventSource_46c2eee229ef as ISpEventSource}
+
+pub using @8066e10c93dd107f {type ISpEventSource2_94e95a0a087a as ISpEventSource2}
+
+pub using @8066e10c93dd107f {type ISpGramCompBackend_2e634c377470 as ISpGramCompBackend}
+
+pub using @8066e10c93dd107f {type ISpGrammarBuilder_ad5f60cdb82e as ISpGrammarBuilder}
+
+pub using @8066e10c93dd107f {type ISpGrammarBuilder2_11c6bb538a44 as ISpGrammarBuilder2}
+
+pub using @8066e10c93dd107f {type ISpGrammarCompiler_c643c9898c5d as ISpGrammarCompiler}
+
+pub using @8066e10c93dd107f {type ISpITNProcessor_16d9d84694b7 as ISpITNProcessor}
+
+pub using @8066e10c93dd107f {type ISpLexicon_93102f9b222e as ISpLexicon}
+
+pub using @8066e10c93dd107f {type ISpMMSysAudio_d76139038e7b as ISpMMSysAudio}
+
+pub using @8066e10c93dd107f {type ISpNotifyCallback_ef69c75d4580 as ISpNotifyCallback}
+
+pub using @8066e10c93dd107f {type ISpNotifySink_9044fcdf0fda as ISpNotifySink}
+
+pub using @8066e10c93dd107f {type ISpNotifySource_835a56782d0e as ISpNotifySource}
+
+pub using @8066e10c93dd107f {type ISpNotifyTranslator_951c245a106a as ISpNotifyTranslator}
+
+pub using @8066e10c93dd107f {type ISpObjectToken_2349f6464fa4 as ISpObjectToken}
+
+pub using @8066e10c93dd107f {type ISpObjectTokenCategory_cf158fe2a128 as ISpObjectTokenCategory}
+
+pub using @8066e10c93dd107f {type ISpObjectTokenEnumBuilder_6eeb776f3614 as ISpObjectTokenEnumBuilder}
+
+pub using @8066e10c93dd107f {type ISpObjectTokenInit_7e07dde43e46 as ISpObjectTokenInit}
+
+pub using @8066e10c93dd107f {type ISpObjectWithToken_34c2b427d7ee as ISpObjectWithToken}
+
+pub using @8066e10c93dd107f {type ISpPhoneConverter_f3d66699b2f4 as ISpPhoneConverter}
+
+pub using @8066e10c93dd107f {type ISpPhoneticAlphabetConverter_e288518286f1 as ISpPhoneticAlphabetConverter}
+
+pub using @8066e10c93dd107f {type ISpPhoneticAlphabetSelection_6a28f6487da8 as ISpPhoneticAlphabetSelection}
+
+pub using @8066e10c93dd107f {type ISpPhrase_cf4a285ace62 as ISpPhrase}
+
+pub using @8066e10c93dd107f {type ISpPhrase2_958b761bc781 as ISpPhrase2}
+
+pub using @8066e10c93dd107f {type ISpPhraseAlt_efa59e3c5039 as ISpPhraseAlt}
+
+pub using @8066e10c93dd107f {type ISpPhraseBuilder_1a681ee2ad89 as ISpPhraseBuilder}
+
+pub using @8066e10c93dd107f {type ISpPrivateEngineCall_96750b5b90a9 as ISpPrivateEngineCall}
+
+pub using @8066e10c93dd107f {type ISpPrivateEngineCallEx_45eb2a03520f as ISpPrivateEngineCallEx}
+
+pub using @8066e10c93dd107f {type ISpProperties_fd5d3545ceba as ISpProperties}
+
+pub using @8066e10c93dd107f {type ISpRecoContext_cf5dcb42c5d2 as ISpRecoContext}
+
+pub using @8066e10c93dd107f {type ISpRecoContext2_a6a1f2f0401d as ISpRecoContext2}
+
+pub using @8066e10c93dd107f {type ISpRecoGrammar_06fb69d04f73 as ISpRecoGrammar}
+
+pub using @8066e10c93dd107f {type ISpRecoGrammar2_13e05047a516 as ISpRecoGrammar2}
+
+pub using @8066e10c93dd107f {type ISpRecoResult_48faa308441a as ISpRecoResult}
+
+pub using @8066e10c93dd107f {type ISpRecoResult2_6e0efff73210 as ISpRecoResult2}
+
+pub using @8066e10c93dd107f {type ISpRecognizer_226142f83736 as ISpRecognizer}
+
+pub using @8066e10c93dd107f {type ISpRecognizer2_4570347ef1b2 as ISpRecognizer2}
+
+pub using @8066e10c93dd107f {type ISpRegDataKey_d32adcfbc585 as ISpRegDataKey}
+
+pub using @8066e10c93dd107f {type ISpResourceManager_90124f21a6a5 as ISpResourceManager}
+
+pub using @8066e10c93dd107f {type ISpSRAlternates_f71506b2b0c3 as ISpSRAlternates}
+
+pub using @8066e10c93dd107f {type ISpSRAlternates2_71bae29c79e9 as ISpSRAlternates2}
+
+pub using @8066e10c93dd107f {type ISpSREngine_3af01a8a6cf3 as ISpSREngine}
+
+pub using @8066e10c93dd107f {type ISpSREngine2_0f45371fbcf8 as ISpSREngine2}
+
+pub using @8066e10c93dd107f {type ISpSREngineSite_ff88ce1c4fdd as ISpSREngineSite}
+
+pub using @8066e10c93dd107f {type ISpSREngineSite2_53299d72a539 as ISpSREngineSite2}
+
+pub using @8066e10c93dd107f {type ISpSerializeState_73cdf71a9d56 as ISpSerializeState}
+
+pub using @8066e10c93dd107f {type ISpShortcut_6131ab31a6fa as ISpShortcut}
+
+pub using @8066e10c93dd107f {type ISpStream_d2b653542671 as ISpStream}
+
+pub using @8066e10c93dd107f {type ISpStreamFormat_b65772bb5e34 as ISpStreamFormat}
+
+pub using @8066e10c93dd107f {type ISpStreamFormatConverter_ea1316827ff8 as ISpStreamFormatConverter}
+
+pub using @8066e10c93dd107f {type ISpTTSEngine_a7cd5a5f38b4 as ISpTTSEngine}
+
+pub using @8066e10c93dd107f {type ISpTTSEngineSite_49c64cb7ec67 as ISpTTSEngineSite}
+
+pub using @8066e10c93dd107f {type ISpTask_8c0e1d8e1032 as ISpTask}
+
+pub using @8066e10c93dd107f {type ISpTaskManager_4acec4575b00 as ISpTaskManager}
+
+pub using @8066e10c93dd107f {type ISpThreadControl_188dc0026cad as ISpThreadControl}
+
+pub using @8066e10c93dd107f {type ISpThreadTask_7796f2de3355 as ISpThreadTask}
+
+pub using @8066e10c93dd107f {type ISpTokenUI_084588b8346d as ISpTokenUI}
+
+pub using @8066e10c93dd107f {type ISpTranscript_ab3c928037af as ISpTranscript}
+
+pub using @8066e10c93dd107f {type ISpVoice_916d44a7ea93 as ISpVoice}
+
+pub using @8066e10c93dd107f {type ISpXMLRecoResult_b5f63e7a4272 as ISpXMLRecoResult}
+
+pub using @8066e10c93dd107f {type ISpeechAudio_22c4f848b2fc as ISpeechAudio}
+
+pub using @8066e10c93dd107f {type ISpeechAudioBufferInfo_1c5cd15d0b85 as ISpeechAudioBufferInfo}
+
+pub using @8066e10c93dd107f {type ISpeechAudioFormat_42c179ef5671 as ISpeechAudioFormat}
+
+pub using @8066e10c93dd107f {type ISpeechAudioStatus_4fec3ce360e5 as ISpeechAudioStatus}
+
+pub using @8066e10c93dd107f {type ISpeechBaseStream_202392c46bf5 as ISpeechBaseStream}
+
+pub using @8066e10c93dd107f {type ISpeechCustomStream_e4383dec83c8 as ISpeechCustomStream}
+
+pub using @8066e10c93dd107f {type ISpeechDataKey_f651c90112ff as ISpeechDataKey}
+
+pub using @8066e10c93dd107f {type ISpeechFileStream_a7c1356e71eb as ISpeechFileStream}
+
+pub using @8066e10c93dd107f {type ISpeechGrammarRule_ebcdc06b4f0a as ISpeechGrammarRule}
+
+pub using @8066e10c93dd107f {type ISpeechGrammarRuleState_3f753266f11e as ISpeechGrammarRuleState}
+
+pub using @8066e10c93dd107f {type ISpeechGrammarRuleStateTransition_1a25f433e559 as ISpeechGrammarRuleStateTransition}
+
+pub using @8066e10c93dd107f {type ISpeechGrammarRuleStateTransitions_3b3bd161d1dc as ISpeechGrammarRuleStateTransitions}
+
+pub using @8066e10c93dd107f {type ISpeechGrammarRules_c29fb269444b as ISpeechGrammarRules}
+
+pub using @8066e10c93dd107f {type ISpeechLexicon_0219a8fc5716 as ISpeechLexicon}
+
+pub using @8066e10c93dd107f {type ISpeechLexiconPronunciation_3229de2c21eb as ISpeechLexiconPronunciation}
+
+pub using @8066e10c93dd107f {type ISpeechLexiconPronunciations_3231faf6af36 as ISpeechLexiconPronunciations}
+
+pub using @8066e10c93dd107f {type ISpeechLexiconWord_087cf63219da as ISpeechLexiconWord}
+
+pub using @8066e10c93dd107f {type ISpeechLexiconWords_ff7c626f4738 as ISpeechLexiconWords}
+
+pub using @8066e10c93dd107f {type ISpeechMMSysAudio_92d023a33ed1 as ISpeechMMSysAudio}
+
+pub using @8066e10c93dd107f {type ISpeechMemoryStream_d8364a819966 as ISpeechMemoryStream}
+
+pub using @8066e10c93dd107f {type ISpeechObjectToken_bc8f9c49f165 as ISpeechObjectToken}
+
+pub using @8066e10c93dd107f {type ISpeechObjectTokenCategory_ea7a8a7639fe as ISpeechObjectTokenCategory}
+
+pub using @8066e10c93dd107f {type ISpeechObjectTokens_ecb51279207c as ISpeechObjectTokens}
+
+pub using @8066e10c93dd107f {type ISpeechPhoneConverter_879371197e21 as ISpeechPhoneConverter}
+
+pub using @8066e10c93dd107f {type ISpeechPhraseAlternate_110d5fd1d5a4 as ISpeechPhraseAlternate}
+
+pub using @8066e10c93dd107f {type ISpeechPhraseAlternates_b0b0ed5f1526 as ISpeechPhraseAlternates}
+
+pub using @8066e10c93dd107f {type ISpeechPhraseElement_2e264221ee4c as ISpeechPhraseElement}
+
+pub using @8066e10c93dd107f {type ISpeechPhraseElements_68f483ced4ee as ISpeechPhraseElements}
+
+pub using @8066e10c93dd107f {type ISpeechPhraseInfo_35dcba710b88 as ISpeechPhraseInfo}
+
+pub using @8066e10c93dd107f {type ISpeechPhraseInfoBuilder_09098b056299 as ISpeechPhraseInfoBuilder}
+
+pub using @8066e10c93dd107f {type ISpeechPhraseProperties_ef93c618a089 as ISpeechPhraseProperties}
+
+pub using @8066e10c93dd107f {type ISpeechPhraseProperty_4ca2a9864302 as ISpeechPhraseProperty}
+
+pub using @8066e10c93dd107f {type ISpeechPhraseReplacement_c37fb1ade8f0 as ISpeechPhraseReplacement}
+
+pub using @8066e10c93dd107f {type ISpeechPhraseReplacements_d82d26ab2ef0 as ISpeechPhraseReplacements}
+
+pub using @8066e10c93dd107f {type ISpeechPhraseRule_1dcad3616f84 as ISpeechPhraseRule}
+
+pub using @8066e10c93dd107f {type ISpeechPhraseRules_fe7ea1497fa8 as ISpeechPhraseRules}
+
+pub using @8066e10c93dd107f {type ISpeechRecoContext_69c0d803a32e as ISpeechRecoContext}
+
+pub using @8066e10c93dd107f {type ISpeechRecoContextEvents_60a9a98988d8 as ISpeechRecoContextEvents}
+
+pub using @8066e10c93dd107f {type ISpeechRecoGrammar_1376d21c6989 as ISpeechRecoGrammar}
+
+pub using @8066e10c93dd107f {type ISpeechRecoResult_46049eafb3eb as ISpeechRecoResult}
+
+pub using @8066e10c93dd107f {type ISpeechRecoResult2_ffdf8f5be66c as ISpeechRecoResult2}
+
+pub using @8066e10c93dd107f {type ISpeechRecoResultDispatch_dcebac20525e as ISpeechRecoResultDispatch}
+
+pub using @8066e10c93dd107f {type ISpeechRecoResultTimes_65aa85dd5949 as ISpeechRecoResultTimes}
+
+pub using @8066e10c93dd107f {type ISpeechRecognizer_621a3c874a9d as ISpeechRecognizer}
+
+pub using @8066e10c93dd107f {type ISpeechRecognizerStatus_3a6601e5e9be as ISpeechRecognizerStatus}
+
+pub using @8066e10c93dd107f {type ISpeechResourceLoader_bf0bb6f36461 as ISpeechResourceLoader}
+
+pub using @8066e10c93dd107f {type ISpeechTextSelectionInformation_7e369c1badbc as ISpeechTextSelectionInformation}
+
+pub using @8066e10c93dd107f {type ISpeechVoice_acfd76afa82c as ISpeechVoice}
+
+pub using @8066e10c93dd107f {type ISpeechVoiceEvents_95ffd4a1f1bb as ISpeechVoiceEvents}
+
+pub using @8066e10c93dd107f {type ISpeechVoiceStatus_c0afe5d33450 as ISpeechVoiceStatus}
+
+pub using @8066e10c93dd107f {type ISpeechWaveFormatEx_5b6202544951 as ISpeechWaveFormatEx}
+
+pub using @8066e10c93dd107f {type ISpeechXMLRecoResult_e9068f944d3b as ISpeechXMLRecoResult}
+
+pub using @8066e10c93dd107f {type PHONETICALPHABET_9008034c508d as PHONETICALPHABET}
+
+pub using @8066e10c93dd107f {type SPADAPTATIONRELEVANCE_37169ea16ab4 as SPADAPTATIONRELEVANCE}
+
+pub using @8066e10c93dd107f {type SPADAPTATIONSETTINGS_2f8023391603 as SPADAPTATIONSETTINGS}
+
+pub using @8066e10c93dd107f {type SPAUDIOBUFFERINFO_3b590b5d8c3b as SPAUDIOBUFFERINFO}
+
+pub using @8066e10c93dd107f {type SPAUDIOOPTIONS_34a71c94d4ab as SPAUDIOOPTIONS}
+
+pub using @8066e10c93dd107f {type SPAUDIOSTATE_ef9231a77b9b as SPAUDIOSTATE}
+
+pub using @8066e10c93dd107f {type SPAUDIOSTATUS_b8131aa9d3b6 as SPAUDIOSTATUS}
+
+pub using @8066e10c93dd107f {type SPBINARYGRAMMAR_c41bf5981e40 as SPBINARYGRAMMAR}
+
+pub using @8066e10c93dd107f {type SPBOOKMARKOPTIONS_2589fc394fb1 as SPBOOKMARKOPTIONS}
+
+pub using @8066e10c93dd107f {type SPCFGNOTIFY_41b773036de8 as SPCFGNOTIFY}
+
+pub using @8066e10c93dd107f {type SPCFGRULEATTRIBUTES_394f64f81a92 as SPCFGRULEATTRIBUTES}
+
+pub using @8066e10c93dd107f {type SPCOMMITFLAGS_24072dcf4380 as SPCOMMITFLAGS}
+
+pub using @8066e10c93dd107f {type SPCONTEXTSTATE_923e38b3dc8d as SPCONTEXTSTATE}
+
+pub using @8066e10c93dd107f {type SPDATAKEYLOCATION_e99511118b20 as SPDATAKEYLOCATION}
+
+pub using @8066e10c93dd107f {type SPDISPLAYATTRIBUTES_ca043b329ffb as SPDISPLAYATTRIBUTES}
+
+pub using @8066e10c93dd107f {type SPDISPLAYPHRASE_a6483e6fd96a as SPDISPLAYPHRASE}
+
+pub using @8066e10c93dd107f {type SPDISPLAYTOKEN_3734a2ffca81 as SPDISPLAYTOKEN}
+
+pub using @8066e10c93dd107f {type SPEAKFLAGS_18fd1f4c2e86 as SPEAKFLAGS}
+
+pub using @8066e10c93dd107f {type SPENDSRSTREAMFLAGS_a6ec4620b23d as SPENDSRSTREAMFLAGS}
+
+pub using @8066e10c93dd107f {type SPEVENT_bcdd0d30b554 as SPEVENT}
+
+pub using @8066e10c93dd107f {type SPEVENTENUM_f13201f435e9 as SPEVENTENUM}
+
+pub using @8066e10c93dd107f {type SPEVENTEX_400c630817fb as SPEVENTEX}
+
+pub using @8066e10c93dd107f {type SPEVENTLPARAMTYPE_ed83ce71ca31 as SPEVENTLPARAMTYPE}
+
+pub using @8066e10c93dd107f {type SPEVENTSOURCEINFO_3dde9e9e5d35 as SPEVENTSOURCEINFO}
+
+pub using @8066e10c93dd107f {type SPFILEMODE_d0468b7167ad as SPFILEMODE}
+
+pub using @8066e10c93dd107f {type SPGRAMMARHANDLE_f1272535a1c4 as SPGRAMMARHANDLE}
+
+pub using @8066e10c93dd107f {type SPGRAMMAROPTIONS_7dc66f148089 as SPGRAMMAROPTIONS}
+
+pub using @8066e10c93dd107f {type SPGRAMMARSTATE_96cfe6b232ba as SPGRAMMARSTATE}
+
+pub using @8066e10c93dd107f {type SPGRAMMARWORDTYPE_467e9dda1605 as SPGRAMMARWORDTYPE}
+
+pub using @8066e10c93dd107f {type SPINTERFERENCE_1cdef5e6f67b as SPINTERFERENCE}
+
+pub using @8066e10c93dd107f {type SPLEXICONTYPE_c88b4ade5f54 as SPLEXICONTYPE}
+
+pub using @8066e10c93dd107f {type SPLOADOPTIONS_f32b910e1a7b as SPLOADOPTIONS}
+
+pub using @8066e10c93dd107f {type SPMATCHINGMODE_85b9820e7ae1 as SPMATCHINGMODE}
+
+pub using @8066e10c93dd107f {type SPNORMALIZATIONLIST_b3e837857a47 as SPNORMALIZATIONLIST}
+
+pub using @8066e10c93dd107f {type SPNOTIFYCALLBACK_e6dfa92f3005 as SPNOTIFYCALLBACK}
+
+pub using @8066e10c93dd107f {type SPPARSEINFO_e3e93180dbb9 as SPPARSEINFO}
+
+pub using @8066e10c93dd107f {type SPPARTOFSPEECH_c7e6c2533bae as SPPARTOFSPEECH}
+
+pub using @8066e10c93dd107f {type SPPATHENTRY_0c797aedc262 as SPPATHENTRY}
+
+pub using @8066e10c93dd107f {type SPPHRASE_e362ae1933b9 as SPPHRASE}
+
+pub using @8066e10c93dd107f {type SPPHRASE50_f0ab0b931f57 as SPPHRASE50}
+
+pub using @8066e10c93dd107f {type SPPHRASEALT_ea161b769409 as SPPHRASEALT}
+
+pub using @8066e10c93dd107f {type SPPHRASEALTREQUEST_95a13c63813a as SPPHRASEALTREQUEST}
+
+pub using @8066e10c93dd107f {type SPPHRASEELEMENT_d53db9e278d2 as SPPHRASEELEMENT}
+
+pub using @8066e10c93dd107f {type SPPHRASEPROPERTY_4933f2175e2e as SPPHRASEPROPERTY}
+
+pub using @8066e10c93dd107f {type SPPHRASEPROPERTYAnonymousEUnion_2cd232657a26 as SPPHRASEPROPERTYAnonymousEUnion}
+
+pub using @8066e10c93dd107f {type SPPHRASEPROPERTYAnonymousEUnionAnonymousEStruct_3f6303ed0e51 as SPPHRASEPROPERTYAnonymousEUnionAnonymousEStruct}
+
+pub using @8066e10c93dd107f {type SPPHRASEPROPERTYHANDLE_d0e02267300f as SPPHRASEPROPERTYHANDLE}
+
+pub using @8066e10c93dd107f {type SPPHRASEPROPERTYUNIONTYPE_5807a20fb2fb as SPPHRASEPROPERTYUNIONTYPE}
+
+pub using @8066e10c93dd107f {type SPPHRASEREPLACEMENT_e3b3102a7ef4 as SPPHRASEREPLACEMENT}
+
+pub using @8066e10c93dd107f {type SPPHRASERNG_22fb8b59b25c as SPPHRASERNG}
+
+pub using @8066e10c93dd107f {type SPPHRASERULE_f4e1361d5bfd as SPPHRASERULE}
+
+pub using @8066e10c93dd107f {type SPPHRASERULEHANDLE_1f2862ab5d54 as SPPHRASERULEHANDLE}
+
+pub using @8066e10c93dd107f {type SPPRONUNCIATIONFLAGS_ef1cd36e71a9 as SPPRONUNCIATIONFLAGS}
+
+pub using @8066e10c93dd107f {type SPPROPERTYINFO_4ceb6104352b as SPPROPERTYINFO}
+
+pub using @8066e10c93dd107f {type SPPROPSRC_850de2715cde as SPPROPSRC}
+
+pub using @8066e10c93dd107f {type SPRECOCONTEXTHANDLE_1a9d099d4d4f as SPRECOCONTEXTHANDLE}
+
+pub using @8066e10c93dd107f {type SPRECOCONTEXTSTATUS_216256c40d05 as SPRECOCONTEXTSTATUS}
+
+pub using @8066e10c93dd107f {type SPRECOEVENTFLAGS_0be4d8b8b9c9 as SPRECOEVENTFLAGS}
+
+pub using @8066e10c93dd107f {type SPRECOGNIZERSTATUS_a9c146584b8f as SPRECOGNIZERSTATUS}
+
+pub using @8066e10c93dd107f {type SPRECORESULTINFO_882a123780fe as SPRECORESULTINFO}
+
+pub using @8066e10c93dd107f {type SPRECORESULTINFOEX_b6d2e33d8752 as SPRECORESULTINFOEX}
+
+pub using @8066e10c93dd107f {type SPRECORESULTTIMES_8cdded5d27ad as SPRECORESULTTIMES}
+
+pub using @8066e10c93dd107f {type SPRECOSTATE_162d6540725e as SPRECOSTATE}
+
+pub using @8066e10c93dd107f {type SPRESULTTYPE_db856641a348 as SPRESULTTYPE}
+
+pub using @8066e10c93dd107f {type SPRULE_139d4cd36350 as SPRULE}
+
+pub using @8066e10c93dd107f {type SPRULEENTRY_4f759e01793d as SPRULEENTRY}
+
+pub using @8066e10c93dd107f {type SPRULEHANDLE_dc70312c1cd5 as SPRULEHANDLE}
+
+pub using @8066e10c93dd107f {type SPRULEINFOOPT_4e8fa15a0cef as SPRULEINFOOPT}
+
+pub using @8066e10c93dd107f {type SPRULESTATE_8c51edc77fb9 as SPRULESTATE}
+
+pub using @8066e10c93dd107f {type SPRUNSTATE_973840e751bc as SPRUNSTATE}
+
+pub using @8066e10c93dd107f {type SPSEMANTICERRORINFO_112f7a1b93ab as SPSEMANTICERRORINFO}
+
+pub using @8066e10c93dd107f {type SPSEMANTICFORMAT_340c9e0e0510 as SPSEMANTICFORMAT}
+
+pub using @8066e10c93dd107f {type SPSERIALIZEDEVENT_57edff1bc06f as SPSERIALIZEDEVENT}
+
+pub using @8066e10c93dd107f {type SPSERIALIZEDEVENT64_dbbb04fa28e4 as SPSERIALIZEDEVENT64}
+
+pub using @8066e10c93dd107f {type SPSERIALIZEDPHRASE_e26312262bbd as SPSERIALIZEDPHRASE}
+
+pub using @8066e10c93dd107f {type SPSERIALIZEDRESULT_2f161a394ca4 as SPSERIALIZEDRESULT}
+
+pub using @8066e10c93dd107f {type SPSHORTCUTPAIR_eb78ed72f0fb as SPSHORTCUTPAIR}
+
+pub using @8066e10c93dd107f {type SPSHORTCUTPAIRLIST_e947520bbc39 as SPSHORTCUTPAIRLIST}
+
+pub using @8066e10c93dd107f {type SPSHORTCUTTYPE_ff9049fc2e13 as SPSHORTCUTTYPE}
+
+pub using @8066e10c93dd107f {type SPSTATEHANDLE_6969d7cc8346 as SPSTATEHANDLE}
+
+pub using @8066e10c93dd107f {type SPSTATEINFO_678b054035bc as SPSTATEINFO}
+
+pub using @8066e10c93dd107f {type SPSTREAMFORMAT_0b521e4de395 as SPSTREAMFORMAT}
+
+pub using @8066e10c93dd107f {type SPSTREAMFORMATTYPE_2e4ef83442a3 as SPSTREAMFORMATTYPE}
+
+pub using @8066e10c93dd107f {type SPTEXTSELECTIONINFO_ef3ec470ef64 as SPTEXTSELECTIONINFO}
+
+pub using @8066e10c93dd107f {type SPTMTHREADINFO_a1030a01b9a8 as SPTMTHREADINFO}
+
+pub using @8066e10c93dd107f {type SPTRANSITIONENTRY_5a182a1f0f14 as SPTRANSITIONENTRY}
+
+pub using @8066e10c93dd107f {type SPTRANSITIONENTRYAnonymous1EStruct_9e6846e81be3 as SPTRANSITIONENTRYAnonymous1EStruct}
+
+pub using @8066e10c93dd107f {type SPTRANSITIONENTRYAnonymous2EUnion_0e22ff47dc9a as SPTRANSITIONENTRYAnonymous2EUnion}
+
+pub using @8066e10c93dd107f {type SPTRANSITIONENTRYAnonymous2EUnionAnonymous1EStruct_c3921c06d0fb as SPTRANSITIONENTRYAnonymous2EUnionAnonymous1EStruct}
+
+pub using @8066e10c93dd107f {type SPTRANSITIONENTRYAnonymous2EUnionAnonymous2EStruct_78ba6071b710 as SPTRANSITIONENTRYAnonymous2EUnionAnonymous2EStruct}
+
+pub using @8066e10c93dd107f {type SPTRANSITIONENTRYAnonymous2EUnionAnonymous3EStruct_ee895b27a89b as SPTRANSITIONENTRYAnonymous2EUnionAnonymous3EStruct}
+
+pub using @8066e10c93dd107f {type SPTRANSITIONID_31a4b4d99dd2 as SPTRANSITIONID}
+
+pub using @8066e10c93dd107f {type SPTRANSITIONPROPERTY_bf19999d9a65 as SPTRANSITIONPROPERTY}
+
+pub using @8066e10c93dd107f {type SPTRANSITIONTYPE_b2ac0761b350 as SPTRANSITIONTYPE}
+
+pub using @8066e10c93dd107f {type SPVACTIONS_4e806c4fdd21 as SPVACTIONS}
+
+pub using @8066e10c93dd107f {type SPVALUETYPE_1dcd11220420 as SPVALUETYPE}
+
+pub using @8066e10c93dd107f {type SPVCONTEXT_e094266180f6 as SPVCONTEXT}
+
+pub using @8066e10c93dd107f {type SPVESACTIONS_5b3873f6e159 as SPVESACTIONS}
+
+pub using @8066e10c93dd107f {type SPVFEATURE_5c1f4e9cbbae as SPVFEATURE}
+
+pub using @8066e10c93dd107f {type SPVISEMES_25ec9f56bb5b as SPVISEMES}
+
+pub using @8066e10c93dd107f {type SPVLIMITS_9d4964e1f438 as SPVLIMITS}
+
+pub using @8066e10c93dd107f {type SPVOICESTATUS_ae499c779eb4 as SPVOICESTATUS}
+
+pub using @8066e10c93dd107f {type SPVPITCH_c55f96dc338a as SPVPITCH}
+
+pub using @8066e10c93dd107f {type SPVPRIORITY_50fa6ca6eb85 as SPVPRIORITY}
+
+pub using @8066e10c93dd107f {type SPVSKIPTYPE_b05712e555da as SPVSKIPTYPE}
+
+pub using @8066e10c93dd107f {type SPVSTATE_80685f59254b as SPVSTATE}
+
+pub using @8066e10c93dd107f {type SPVTEXTFRAG_3a9683000655 as SPVTEXTFRAG}
+
+pub using @8066e10c93dd107f {type SPWORD_f426c664dc0f as SPWORD}
+
+pub using @8066e10c93dd107f {type SPWORDENTRY_197d673fd01b as SPWORDENTRY}
+
+pub using @8066e10c93dd107f {type SPWORDHANDLE_a21047fb789e as SPWORDHANDLE}
+
+pub using @8066e10c93dd107f {type SPWORDINFOOPT_10732359d3c0 as SPWORDINFOOPT}
+
+pub using @8066e10c93dd107f {type SPWORDLIST_2bb8a98c3d17 as SPWORDLIST}
+
+pub using @8066e10c93dd107f {type SPWORDPRONOUNCEABLE_894cd4506f57 as SPWORDPRONOUNCEABLE}
+
+pub using @8066e10c93dd107f {type SPWORDPRONUNCIATION_b8d6120db2ed as SPWORDPRONUNCIATION}
+
+pub using @8066e10c93dd107f {type SPWORDPRONUNCIATIONLIST_d6caf40fbbd1 as SPWORDPRONUNCIATIONLIST}
+
+pub using @8066e10c93dd107f {type SPWORDTYPE_82a4f1fee4e9 as SPWORDTYPE}
+
+pub using @8066e10c93dd107f {type SPXMLRESULTOPTIONS_76d79c331147 as SPXMLRESULTOPTIONS}
+
+pub using @8066e10c93dd107f {type SpAudioFormat_104c47ce26e6 as SpAudioFormat}
+
+pub using @8066e10c93dd107f {type SpCompressedLexicon_0fb89bf4657e as SpCompressedLexicon}
+
+pub using @8066e10c93dd107f {type SpCustomStream_415cfc69a011 as SpCustomStream}
+
+pub using @8066e10c93dd107f {type SpDataKey_aa2cf0ef84d9 as SpDataKey}
+
+pub using @8066e10c93dd107f {type SpFileStream_398eb1ba0b7e as SpFileStream}
+
+pub using @8066e10c93dd107f {type SpGramCompBackend_bcc9e0400ec0 as SpGramCompBackend}
+
+pub using @8066e10c93dd107f {type SpGrammarCompiler_a8a9182a6414 as SpGrammarCompiler}
+
+pub using @8066e10c93dd107f {type SpITNProcessor_bede37d29be3 as SpITNProcessor}
+
+pub using @8066e10c93dd107f {type SpInProcRecoContext_0097cb5b43f8 as SpInProcRecoContext}
+
+pub using @8066e10c93dd107f {type SpInprocRecognizer_7cfe0dc8bdc5 as SpInprocRecognizer}
+
+pub using @8066e10c93dd107f {type SpLexicon_e2cf30e5a4fa as SpLexicon}
+
+pub using @8066e10c93dd107f {type SpMMAudioEnum_5aba098147f1 as SpMMAudioEnum}
+
+pub using @8066e10c93dd107f {type SpMMAudioIn_7c38e10ee7f9 as SpMMAudioIn}
+
+pub using @8066e10c93dd107f {type SpMMAudioOut_18ff668bb943 as SpMMAudioOut}
+
+pub using @8066e10c93dd107f {type SpMemoryStream_b3d493bec795 as SpMemoryStream}
+
+pub using @8066e10c93dd107f {type SpNotifyTranslator_6ef437930e32 as SpNotifyTranslator}
+
+pub using @8066e10c93dd107f {type SpNullPhoneConverter_fb9d2ef830fa as SpNullPhoneConverter}
+
+pub using @8066e10c93dd107f {type SpObjectToken_dee5c7d04289 as SpObjectToken}
+
+pub using @8066e10c93dd107f {type SpObjectTokenCategory_70c556d48847 as SpObjectTokenCategory}
+
+pub using @8066e10c93dd107f {type SpObjectTokenEnum_c33790939d55 as SpObjectTokenEnum}
+
+pub using @8066e10c93dd107f {type SpPhoneConverter_a1c777186e63 as SpPhoneConverter}
+
+pub using @8066e10c93dd107f {type SpPhoneticAlphabetConverter_1f64d69c2746 as SpPhoneticAlphabetConverter}
+
+pub using @8066e10c93dd107f {type SpPhraseBuilder_436415bc4191 as SpPhraseBuilder}
+
+pub using @8066e10c93dd107f {type SpPhraseInfoBuilder_7d2f645d46a1 as SpPhraseInfoBuilder}
+
+pub using @8066e10c93dd107f {type SpResourceManager_140e164ce697 as SpResourceManager}
+
+pub using @8066e10c93dd107f {type SpSharedRecoContext_99bed5503818 as SpSharedRecoContext}
+
+pub using @8066e10c93dd107f {type SpSharedRecognizer_026e660618a0 as SpSharedRecognizer}
+
+pub using @8066e10c93dd107f {type SpShortcut_aaa341f836c4 as SpShortcut}
+
+pub using @8066e10c93dd107f {type SpStream_31d644c7224d as SpStream}
+
+pub using @8066e10c93dd107f {type SpStreamFormatConverter_3017adf4950f as SpStreamFormatConverter}
+
+pub using @8066e10c93dd107f {type SpTextSelectionInformation_2e226742e6ad as SpTextSelectionInformation}
+
+pub using @8066e10c93dd107f {type SpUnCompressedLexicon_66fcf8eed3e1 as SpUnCompressedLexicon}
+
+pub using @8066e10c93dd107f {type SpVoice_4c8f8643a836 as SpVoice}
+
+pub using @8066e10c93dd107f {type SpW3CGrammarCompiler_6035748e25c3 as SpW3CGrammarCompiler}
+
+pub using @8066e10c93dd107f {type SpWaveFormatEx_8fd0f3b40bf4 as SpWaveFormatEx}
+
+pub using @8066e10c93dd107f {type SpeechAudioFormatType_daaa074cd842 as SpeechAudioFormatType}
+
+pub using @8066e10c93dd107f {type SpeechAudioState_863a23fbc6c1 as SpeechAudioState}
+
+pub using @8066e10c93dd107f {type SpeechBookmarkOptions_5d9bbff01ddf as SpeechBookmarkOptions}
+
+pub using @8066e10c93dd107f {type SpeechDataKeyLocation_6581595a5f63 as SpeechDataKeyLocation}
+
+pub using @8066e10c93dd107f {type SpeechDiscardType_0929b62c50e0 as SpeechDiscardType}
+
+pub using @8066e10c93dd107f {type SpeechDisplayAttributes_bee64ce28a1a as SpeechDisplayAttributes}
+
+pub using @8066e10c93dd107f {type SpeechEmulationCompareFlags_73f635437532 as SpeechEmulationCompareFlags}
+
+pub using @8066e10c93dd107f {type SpeechEngineConfidence_943907831d87 as SpeechEngineConfidence}
+
+pub using @8066e10c93dd107f {type SpeechFormatType_212b44004abb as SpeechFormatType}
+
+pub using @8066e10c93dd107f {type SpeechGrammarRuleStateTransitionType_a8c08f236b15 as SpeechGrammarRuleStateTransitionType}
+
+pub using @8066e10c93dd107f {type SpeechGrammarState_29afd57b3d2f as SpeechGrammarState}
+
+pub using @8066e10c93dd107f {type SpeechGrammarWordType_5d48b45ff01e as SpeechGrammarWordType}
+
+pub using @8066e10c93dd107f {type SpeechInterference_8c654c7eab0c as SpeechInterference}
+
+pub using @8066e10c93dd107f {type SpeechLexiconType_49bcd702da1c as SpeechLexiconType}
+
+pub using @8066e10c93dd107f {type SpeechLoadOption_46d768f96f4e as SpeechLoadOption}
+
+pub using @8066e10c93dd107f {type SpeechPartOfSpeech_10047346e5e1 as SpeechPartOfSpeech}
+
+pub using @8066e10c93dd107f {type SpeechRecoContextState_7e80b23e7386 as SpeechRecoContextState}
+
+pub using @8066e10c93dd107f {type SpeechRecoEvents_c70f00bf2ddb as SpeechRecoEvents}
+
+pub using @8066e10c93dd107f {type SpeechRecognitionType_20479311117f as SpeechRecognitionType}
+
+pub using @8066e10c93dd107f {type SpeechRecognizerState_047dd77c8767 as SpeechRecognizerState}
+
+pub using @8066e10c93dd107f {type SpeechRetainedAudioOptions_10fe1fc85b60 as SpeechRetainedAudioOptions}
+
+pub using @8066e10c93dd107f {type SpeechRuleAttributes_7cb9ecaced8b as SpeechRuleAttributes}
+
+pub using @8066e10c93dd107f {type SpeechRuleState_0bdc3ff63f66 as SpeechRuleState}
+
+pub using @8066e10c93dd107f {type SpeechRunState_e1a8809aad0f as SpeechRunState}
+
+pub using @8066e10c93dd107f {type SpeechSpecialTransitionType_ba86805d40e6 as SpeechSpecialTransitionType}
+
+pub using @8066e10c93dd107f {type SpeechStreamFileMode_b23281b264fd as SpeechStreamFileMode}
+
+pub using @8066e10c93dd107f {type SpeechStreamSeekPositionType_abb1573b12b5 as SpeechStreamSeekPositionType}
+
+pub using @8066e10c93dd107f {type SpeechTokenContext_bbb27c3d8430 as SpeechTokenContext}
+
+pub using @8066e10c93dd107f {type SpeechTokenShellFolder_f6a398ab4e36 as SpeechTokenShellFolder}
+
+pub using @8066e10c93dd107f {type SpeechVisemeFeature_f07276663f41 as SpeechVisemeFeature}
+
+pub using @8066e10c93dd107f {type SpeechVisemeType_86eb2a86674c as SpeechVisemeType}
+
+pub using @8066e10c93dd107f {type SpeechVoiceEvents_4c6824694724 as SpeechVoiceEvents}
+
+pub using @8066e10c93dd107f {type SpeechVoicePriority_6550b30b65c5 as SpeechVoicePriority}
+
+pub using @8066e10c93dd107f {type SpeechVoiceSpeakFlags_70b716b51be2 as SpeechVoiceSpeakFlags}
+
+pub using @8066e10c93dd107f {type SpeechWordPronounceable_9dbe42f52eef as SpeechWordPronounceable}
+
+pub using @8066e10c93dd107f {type SpeechWordType_87289e6fd79e as SpeechWordType}
+
+// Traits

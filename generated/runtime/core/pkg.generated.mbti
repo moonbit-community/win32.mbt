@@ -1,0 +1,115 @@
+// Generated using `moon info`, DON'T EDIT IT
+package "moonbit-community/win32api/runtime/core"
+
+import {
+  "moonbitlang/core/debug",
+}
+
+// Values
+pub fn closed_wndproc_raw_address(FuncRef[(RawAddress, UInt, UInt64, Int64) -> Int64]) -> RawAddress
+
+// Errors
+pub(all) suberror WindowsError {
+  HResultFailure(HResult)
+  LastErrorFailure(UInt)
+  LoaderFailure(String)
+  MissingEntrypoint(String, String)
+  InvalidArgument(String)
+  NullPointer(String)
+  AllocationFailure(size~ : Int, alignment~ : Int)
+  ResourceClosed(String)
+} derive(Eq, @debug.Debug)
+
+// Types and methods
+pub struct AbiArrayBuffer {
+  storage : Bytes
+  element_size_value : Int
+  mut length_value : Int
+}
+pub fn AbiArrayBuffer::bytes(Self) -> Bytes
+pub fn AbiArrayBuffer::capacity(Self) -> Int
+pub fn AbiArrayBuffer::element_size(Self) -> Int
+pub fn AbiArrayBuffer::from_bytes(Bytes, element_size~ : Int, length~ : Int) -> Self raise WindowsError
+pub fn AbiArrayBuffer::length(Self) -> Int
+pub fn AbiArrayBuffer::new(element_size~ : Int, capacity~ : Int) -> Self raise WindowsError
+pub fn AbiArrayBuffer::set_length(Self, Int) -> Unit raise WindowsError
+pub fn AbiArrayBuffer::used_bytes(Self) -> Bytes
+
+pub(all) struct Guid {
+  data1 : UInt
+  data2 : UInt16
+  data3 : UInt16
+  data4 : Bytes
+} derive(Eq, @debug.Debug)
+pub fn Guid::from_bytes_le(Bytes) -> Self raise WindowsError
+pub fn Guid::new(data1~ : UInt, data2~ : UInt16, data3~ : UInt16, data4~ : Bytes) -> Self raise WindowsError
+pub fn Guid::to_bytes_le(Self) -> Bytes
+
+pub(all) struct HResult(Int) derive(Compare, Eq, @debug.Debug)
+pub fn HResult::from_int(Int) -> Self
+pub fn HResult::is_err(Self) -> Bool
+pub fn HResult::is_ok(Self) -> Bool
+pub fn HResult::or_raise(Self) -> Unit raise WindowsError
+pub fn HResult::to_int(Self) -> Int
+
+pub type NativeBuffer
+pub fn NativeBuffer::alignment(Self) -> Int raise WindowsError
+pub fn NativeBuffer::close(Self) -> Unit
+pub fn NativeBuffer::copy_from(Self, Self, source_offset? : Int, destination_offset? : Int, length? : Int) -> Unit raise WindowsError
+pub fn NativeBuffer::copy_from_bytes(Self, Bytes, source_offset? : Int, destination_offset? : Int, length? : Int) -> Unit raise WindowsError
+pub fn NativeBuffer::copy_to_bytes(Self, source_offset? : Int, length? : Int) -> Bytes raise WindowsError
+pub fn NativeBuffer::from_bytes(Bytes, alignment? : Int) -> Self raise WindowsError
+pub fn NativeBuffer::length(Self) -> Int raise WindowsError
+pub fn NativeBuffer::new(Int, alignment? : Int) -> Self raise WindowsError
+pub fn NativeBuffer::raw_address(Self) -> RawAddress raise WindowsError
+pub fn NativeBuffer::read_double(Self, Int) -> Double raise WindowsError
+pub fn NativeBuffer::read_float(Self, Int) -> Float raise WindowsError
+pub fn NativeBuffer::read_i16(Self, Int) -> Int raise WindowsError
+pub fn NativeBuffer::read_i32(Self, Int) -> Int raise WindowsError
+pub fn NativeBuffer::read_i64(Self, Int) -> Int64 raise WindowsError
+pub fn NativeBuffer::read_i8(Self, Int) -> Int raise WindowsError
+pub fn NativeBuffer::read_raw_address(Self, Int) -> RawAddress raise WindowsError
+pub fn NativeBuffer::read_u16(Self, Int) -> UInt16 raise WindowsError
+pub fn NativeBuffer::read_u32(Self, Int) -> UInt raise WindowsError
+pub fn NativeBuffer::read_u64(Self, Int) -> UInt64 raise WindowsError
+pub fn NativeBuffer::read_u8(Self, Int) -> Byte raise WindowsError
+pub fn NativeBuffer::resize(Self, Int) -> Unit raise WindowsError
+pub fn NativeBuffer::to_bytes(Self) -> Bytes raise WindowsError
+pub fn[T] NativeBuffer::with_raw_address(Self, (RawAddress) -> T raise?) -> T raise
+pub fn NativeBuffer::write_double(Self, Int, Double) -> Unit raise WindowsError
+pub fn NativeBuffer::write_float(Self, Int, Float) -> Unit raise WindowsError
+pub fn NativeBuffer::write_i16(Self, Int, Int) -> Unit raise WindowsError
+pub fn NativeBuffer::write_i32(Self, Int, Int) -> Unit raise WindowsError
+pub fn NativeBuffer::write_i64(Self, Int, Int64) -> Unit raise WindowsError
+pub fn NativeBuffer::write_i8(Self, Int, Int) -> Unit raise WindowsError
+pub fn NativeBuffer::write_raw_address(Self, Int, RawAddress) -> Unit raise WindowsError
+pub fn NativeBuffer::write_u16(Self, Int, UInt16) -> Unit raise WindowsError
+pub fn NativeBuffer::write_u32(Self, Int, UInt) -> Unit raise WindowsError
+pub fn NativeBuffer::write_u64(Self, Int, UInt64) -> Unit raise WindowsError
+pub fn NativeBuffer::write_u8(Self, Int, Byte) -> Unit raise WindowsError
+pub fn NativeBuffer::zero(Self) -> Unit raise WindowsError
+
+#external
+pub type RawAddress
+pub fn RawAddress::from_uint64(UInt64) -> Self
+pub fn RawAddress::is_null(Self) -> Bool
+pub fn RawAddress::null() -> Self
+pub fn RawAddress::to_uint64(Self) -> UInt64
+pub impl Eq for RawAddress
+
+pub struct RawPtr[T] {
+  address_value : RawAddress
+  marker : T?
+}
+pub fn[T] RawPtr::address(Self[T]) -> RawAddress
+pub fn[T] RawPtr::from_address(RawAddress) -> Self[T]
+
+pub(all) struct RawWin32Call[T] {
+  value : T
+  last_error : UInt
+} derive(Eq, @debug.Debug)
+pub fn[T] RawWin32Call::new(value~ : T, last_error~ : UInt) -> Self[T]
+
+// Type aliases
+
+// Traits

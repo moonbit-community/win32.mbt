@@ -1,0 +1,329 @@
+// Generated using `moon info`, DON'T EDIT IT
+package "moonbit-community/win32api/windows/win32/storage/offline_files"
+
+import {
+  "moonbit-community/win32api/runtime/core",
+  "moonbit-community/win32api/scc/3d85bea433b989a9",
+}
+
+// Values
+pub fn offline_files_enable(Int, @core.RawAddress) -> UInt raise @core.WindowsError
+
+pub fn offline_files_enable_raw(Int, @core.RawAddress) -> UInt
+
+pub fn offline_files_query_status(@core.RawAddress, @core.RawAddress) -> UInt raise @core.WindowsError
+
+pub fn offline_files_query_status_ex(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt raise @core.WindowsError
+
+pub fn offline_files_query_status_ex_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn offline_files_query_status_raw(@core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn offline_files_start() -> UInt raise @core.WindowsError
+
+pub fn offline_files_start_raw() -> UInt
+
+pub let offlinefiles_changes_local_attributes : UInt
+
+pub let offlinefiles_changes_local_size : UInt
+
+pub let offlinefiles_changes_local_time : UInt
+
+pub let offlinefiles_changes_none : UInt
+
+pub let offlinefiles_changes_remote_attributes : UInt
+
+pub let offlinefiles_changes_remote_size : UInt
+
+pub let offlinefiles_changes_remote_time : UInt
+
+pub let offlinefiles_delete_flag_admin : UInt
+
+pub let offlinefiles_delete_flag_delmodified : UInt
+
+pub let offlinefiles_delete_flag_noautocached : UInt
+
+pub let offlinefiles_delete_flag_nopinned : UInt
+
+pub let offlinefiles_encryption_control_flag_asyncprogress : UInt
+
+pub let offlinefiles_encryption_control_flag_background : UInt
+
+pub let offlinefiles_encryption_control_flag_console : UInt
+
+pub let offlinefiles_encryption_control_flag_interactive : UInt
+
+pub let offlinefiles_encryption_control_flag_lowpriority : UInt
+
+pub let offlinefiles_enum_flat : UInt
+
+pub let offlinefiles_enum_flat_filesonly : UInt
+
+pub let offlinefiles_item_filter_flag_created : UInt
+
+pub let offlinefiles_item_filter_flag_deleted : UInt
+
+pub let offlinefiles_item_filter_flag_directory : UInt
+
+pub let offlinefiles_item_filter_flag_dirty : UInt
+
+pub let offlinefiles_item_filter_flag_file : UInt
+
+pub let offlinefiles_item_filter_flag_ghost : UInt
+
+pub let offlinefiles_item_filter_flag_guest_anyaccess : UInt
+
+pub let offlinefiles_item_filter_flag_guest_read : UInt
+
+pub let offlinefiles_item_filter_flag_guest_write : UInt
+
+pub let offlinefiles_item_filter_flag_modified : UInt
+
+pub let offlinefiles_item_filter_flag_modified_attributes : UInt
+
+pub let offlinefiles_item_filter_flag_modified_data : UInt
+
+pub let offlinefiles_item_filter_flag_offline : UInt
+
+pub let offlinefiles_item_filter_flag_online : UInt
+
+pub let offlinefiles_item_filter_flag_other_anyaccess : UInt
+
+pub let offlinefiles_item_filter_flag_other_read : UInt
+
+pub let offlinefiles_item_filter_flag_other_write : UInt
+
+pub let offlinefiles_item_filter_flag_pinned : UInt
+
+pub let offlinefiles_item_filter_flag_pinned_computer : UInt
+
+pub let offlinefiles_item_filter_flag_pinned_others : UInt
+
+pub let offlinefiles_item_filter_flag_pinned_user : UInt
+
+pub let offlinefiles_item_filter_flag_sparse : UInt
+
+pub let offlinefiles_item_filter_flag_suspended : UInt
+
+pub let offlinefiles_item_filter_flag_user_anyaccess : UInt
+
+pub let offlinefiles_item_filter_flag_user_read : UInt
+
+pub let offlinefiles_item_filter_flag_user_write : UInt
+
+pub let offlinefiles_item_query_admin : UInt
+
+pub let offlinefiles_item_query_attempt_transitiononline : UInt
+
+pub let offlinefiles_item_query_connectionstate : UInt
+
+pub let offlinefiles_item_query_includetransparentcache : UInt
+
+pub let offlinefiles_item_query_localdirtybytecount : UInt
+
+pub let offlinefiles_item_query_remotedirtybytecount : UInt
+
+pub let offlinefiles_item_query_remoteinfo : UInt
+
+pub let offlinefiles_pin_control_flag_asyncprogress : UInt
+
+pub let offlinefiles_pin_control_flag_background : UInt
+
+pub let offlinefiles_pin_control_flag_console : UInt
+
+pub let offlinefiles_pin_control_flag_fill : UInt
+
+pub let offlinefiles_pin_control_flag_forall : UInt
+
+pub let offlinefiles_pin_control_flag_forredir : UInt
+
+pub let offlinefiles_pin_control_flag_foruser : UInt
+
+pub let offlinefiles_pin_control_flag_foruser_policy : UInt
+
+pub let offlinefiles_pin_control_flag_interactive : UInt
+
+pub let offlinefiles_pin_control_flag_lowpriority : UInt
+
+pub let offlinefiles_pin_control_flag_pinlinktargets : UInt
+
+pub let offlinefiles_pinlinktargets_always : UInt
+
+pub let offlinefiles_pinlinktargets_explicit : UInt
+
+pub let offlinefiles_pinlinktargets_never : UInt
+
+pub let offlinefiles_setting_pin_link_targets : String
+
+pub let offlinefiles_setting_scope_computer : UInt
+
+pub let offlinefiles_setting_scope_user : UInt
+
+pub let offlinefiles_sync_control_cr_default : UInt
+
+pub let offlinefiles_sync_control_cr_keeplatest : UInt
+
+pub let offlinefiles_sync_control_cr_keeplocal : UInt
+
+pub let offlinefiles_sync_control_cr_keepremote : UInt
+
+pub let offlinefiles_sync_control_cr_mask : UInt
+
+pub let offlinefiles_sync_control_flag_asyncprogress : UInt
+
+pub let offlinefiles_sync_control_flag_background : UInt
+
+pub let offlinefiles_sync_control_flag_console : UInt
+
+pub let offlinefiles_sync_control_flag_fillsparse : UInt
+
+pub let offlinefiles_sync_control_flag_interactive : UInt
+
+pub let offlinefiles_sync_control_flag_lowpriority : UInt
+
+pub let offlinefiles_sync_control_flag_nonewfilesout : UInt
+
+pub let offlinefiles_sync_control_flag_pinforall : UInt
+
+pub let offlinefiles_sync_control_flag_pinforredir : UInt
+
+pub let offlinefiles_sync_control_flag_pinforuser : UInt
+
+pub let offlinefiles_sync_control_flag_pinforuser_policy : UInt
+
+pub let offlinefiles_sync_control_flag_pinlinktargets : UInt
+
+pub let offlinefiles_sync_control_flag_pinnewfiles : UInt
+
+pub let offlinefiles_sync_control_flag_skipsuspendeddirs : UInt
+
+pub let offlinefiles_sync_control_flag_syncin : UInt
+
+pub let offlinefiles_sync_control_flag_syncout : UInt
+
+pub let offlinefiles_sync_item_change_attributes : UInt
+
+pub let offlinefiles_sync_item_change_changetime : UInt
+
+pub let offlinefiles_sync_item_change_filesize : UInt
+
+pub let offlinefiles_sync_item_change_none : UInt
+
+pub let offlinefiles_sync_item_change_writetime : UInt
+
+pub let offlinefiles_sync_state_local_known : UInt
+
+pub let offlinefiles_sync_state_remote_known : UInt
+
+pub let offlinefiles_transition_flag_console : UInt
+
+pub let offlinefiles_transition_flag_interactive : UInt
+
+// Errors
+
+// Types and methods
+
+// Type aliases
+pub using @3d85bea433b989a9 {type IEnumOfflineFilesItems_454be995d755 as IEnumOfflineFilesItems}
+
+pub using @3d85bea433b989a9 {type IEnumOfflineFilesSettings_663bbe2135db as IEnumOfflineFilesSettings}
+
+pub using @3d85bea433b989a9 {type IOfflineFilesCache_71d498e21b53 as IOfflineFilesCache}
+
+pub using @3d85bea433b989a9 {type IOfflineFilesCache2_96b8f26fa62c as IOfflineFilesCache2}
+
+pub using @3d85bea433b989a9 {type IOfflineFilesChangeInfo_8a177c904179 as IOfflineFilesChangeInfo}
+
+pub using @3d85bea433b989a9 {type IOfflineFilesConnectionInfo_92de82ac1d44 as IOfflineFilesConnectionInfo}
+
+pub using @3d85bea433b989a9 {type IOfflineFilesDirectoryItem_f1c66c9c76f9 as IOfflineFilesDirectoryItem}
+
+pub using @3d85bea433b989a9 {type IOfflineFilesDirtyInfo_c6bc0dcf93e9 as IOfflineFilesDirtyInfo}
+
+pub using @3d85bea433b989a9 {type IOfflineFilesErrorInfo_423e4ed331ef as IOfflineFilesErrorInfo}
+
+pub using @3d85bea433b989a9 {type IOfflineFilesEvents_cb4c171a10a2 as IOfflineFilesEvents}
+
+pub using @3d85bea433b989a9 {type IOfflineFilesEvents2_8c7b01469106 as IOfflineFilesEvents2}
+
+pub using @3d85bea433b989a9 {type IOfflineFilesEvents3_c99a46846d83 as IOfflineFilesEvents3}
+
+pub using @3d85bea433b989a9 {type IOfflineFilesEvents4_2300b31a71f6 as IOfflineFilesEvents4}
+
+pub using @3d85bea433b989a9 {type IOfflineFilesEventsFilter_a83f47cc5e05 as IOfflineFilesEventsFilter}
+
+pub using @3d85bea433b989a9 {type IOfflineFilesFileItem_29b7939c4cd4 as IOfflineFilesFileItem}
+
+pub using @3d85bea433b989a9 {type IOfflineFilesFileSysInfo_3f3b3c491ced as IOfflineFilesFileSysInfo}
+
+pub using @3d85bea433b989a9 {type IOfflineFilesGhostInfo_231f795cd9ce as IOfflineFilesGhostInfo}
+
+pub using @3d85bea433b989a9 {type IOfflineFilesItem_7d3894e4e5cc as IOfflineFilesItem}
+
+pub using @3d85bea433b989a9 {type IOfflineFilesItemContainer_fae5945c785d as IOfflineFilesItemContainer}
+
+pub using @3d85bea433b989a9 {type IOfflineFilesItemFilter_cd662ddc4715 as IOfflineFilesItemFilter}
+
+pub using @3d85bea433b989a9 {type IOfflineFilesPinInfo_362caf41dbf3 as IOfflineFilesPinInfo}
+
+pub using @3d85bea433b989a9 {type IOfflineFilesPinInfo2_b453edb60239 as IOfflineFilesPinInfo2}
+
+pub using @3d85bea433b989a9 {type IOfflineFilesProgress_2ae79a706d6b as IOfflineFilesProgress}
+
+pub using @3d85bea433b989a9 {type IOfflineFilesServerItem_b8ae928aa3e3 as IOfflineFilesServerItem}
+
+pub using @3d85bea433b989a9 {type IOfflineFilesSetting_c22b56cf92fc as IOfflineFilesSetting}
+
+pub using @3d85bea433b989a9 {type IOfflineFilesShareInfo_69d57d7aad33 as IOfflineFilesShareInfo}
+
+pub using @3d85bea433b989a9 {type IOfflineFilesShareItem_e17d65d8e3a6 as IOfflineFilesShareItem}
+
+pub using @3d85bea433b989a9 {type IOfflineFilesSimpleProgress_416e3dfff9a5 as IOfflineFilesSimpleProgress}
+
+pub using @3d85bea433b989a9 {type IOfflineFilesSuspend_a5f0a6329fff as IOfflineFilesSuspend}
+
+pub using @3d85bea433b989a9 {type IOfflineFilesSuspendInfo_f2bc8d37b8b2 as IOfflineFilesSuspendInfo}
+
+pub using @3d85bea433b989a9 {type IOfflineFilesSyncConflictHandler_190db31a319d as IOfflineFilesSyncConflictHandler}
+
+pub using @3d85bea433b989a9 {type IOfflineFilesSyncErrorInfo_e6fa0c45acc9 as IOfflineFilesSyncErrorInfo}
+
+pub using @3d85bea433b989a9 {type IOfflineFilesSyncErrorItemInfo_ede2adeb8663 as IOfflineFilesSyncErrorItemInfo}
+
+pub using @3d85bea433b989a9 {type IOfflineFilesSyncProgress_e43da1162561 as IOfflineFilesSyncProgress}
+
+pub using @3d85bea433b989a9 {type IOfflineFilesTransparentCacheInfo_be51159aef29 as IOfflineFilesTransparentCacheInfo}
+
+pub using @3d85bea433b989a9 {type OFFLINEFILESCACHINGMODE_8ea12be71a3c as OFFLINEFILESCACHINGMODE}
+
+pub using @3d85bea433b989a9 {type OFFLINEFILESCOMPARE_9f09dcca7a95 as OFFLINEFILESCOMPARE}
+
+pub using @3d85bea433b989a9 {type OFFLINEFILESCONNECTSTATE_31ac2377a3cf as OFFLINEFILESCONNECTSTATE}
+
+pub using @3d85bea433b989a9 {type OFFLINEFILESEVENTS_b0aeb16e9984 as OFFLINEFILESEVENTS}
+
+pub using @3d85bea433b989a9 {type OFFLINEFILESITEMCOPY_efca2f1c9d39 as OFFLINEFILESITEMCOPY}
+
+pub using @3d85bea433b989a9 {type OFFLINEFILESITEMTIME_8bc41d722bb6 as OFFLINEFILESITEMTIME}
+
+pub using @3d85bea433b989a9 {type OFFLINEFILESITEMTYPE_347f436ca6c7 as OFFLINEFILESITEMTYPE}
+
+pub using @3d85bea433b989a9 {type OFFLINEFILESOFFLINEREASON_ed896634d2f4 as OFFLINEFILESOFFLINEREASON}
+
+pub using @3d85bea433b989a9 {type OFFLINEFILESOPRESPONSE_bd862c084415 as OFFLINEFILESOPRESPONSE}
+
+pub using @3d85bea433b989a9 {type OFFLINEFILESPATHFILTERMATCH_e8462db164e1 as OFFLINEFILESPATHFILTERMATCH}
+
+pub using @3d85bea433b989a9 {type OFFLINEFILESSETTINGVALUETYPE_92aefa45601f as OFFLINEFILESSETTINGVALUETYPE}
+
+pub using @3d85bea433b989a9 {type OFFLINEFILESSYNCCONFLICTRESOLVE_9b0848ce3ab4 as OFFLINEFILESSYNCCONFLICTRESOLVE}
+
+pub using @3d85bea433b989a9 {type OFFLINEFILESSYNCOPERATION_3478a27f5fba as OFFLINEFILESSYNCOPERATION}
+
+pub using @3d85bea433b989a9 {type OFFLINEFILESSYNCSTATE_32fddff0daf9 as OFFLINEFILESSYNCSTATE}
+
+pub using @3d85bea433b989a9 {type OfflineFilesCache_04119a555f8b as OfflineFilesCache}
+
+pub using @3d85bea433b989a9 {type OfflineFilesSetting_9ea6e8d186e2 as OfflineFilesSetting}
+
+// Traits

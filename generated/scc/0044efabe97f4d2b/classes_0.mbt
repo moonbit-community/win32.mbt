@@ -1,0 +1,164 @@
+///|
+pub fn IKEAUTHENTICATIONMETHOD_5ef9b76ad3da::ike_authentication_preshared_key_method() -> IKEAUTHENTICATIONMETHOD_5ef9b76ad3da {
+  IKEAUTHENTICATIONMETHOD_5ef9b76ad3da::from_int(1)
+}
+
+///|
+pub fn ISCSIAUTHTYPES_7c0001cd55b3::iscsi_chap_auth_type() -> ISCSIAUTHTYPES_7c0001cd55b3 {
+  ISCSIAUTHTYPES_7c0001cd55b3::from_int(1)
+}
+
+///|
+pub fn ISCSIAUTHTYPES_7c0001cd55b3::iscsi_mutual_chap_auth_type() -> ISCSIAUTHTYPES_7c0001cd55b3 {
+  ISCSIAUTHTYPES_7c0001cd55b3::from_int(2)
+}
+
+///|
+pub fn ISCSIAUTHTYPES_7c0001cd55b3::iscsi_no_auth_type() -> ISCSIAUTHTYPES_7c0001cd55b3 {
+  ISCSIAUTHTYPES_7c0001cd55b3::from_int(0)
+}
+
+///|
+pub fn ISCSIDIGESTTYPES_2c5c6ce17d15::iscsi_digest_type_crc32_c() -> ISCSIDIGESTTYPES_2c5c6ce17d15 {
+  ISCSIDIGESTTYPES_2c5c6ce17d15::from_int(1)
+}
+
+///|
+pub fn ISCSIDIGESTTYPES_2c5c6ce17d15::iscsi_digest_type_none() -> ISCSIDIGESTTYPES_2c5c6ce17d15 {
+  ISCSIDIGESTTYPES_2c5c6ce17d15::from_int(0)
+}
+
+///|
+pub fn MPSTORAGEDIAGNOSTICLEVEL_e90be5539d2a::default_() -> MPSTORAGEDIAGNOSTICLEVEL_e90be5539d2a {
+  MPSTORAGEDIAGNOSTICLEVEL_e90be5539d2a::from_int(0)
+}
+
+///|
+pub fn MPSTORAGEDIAGNOSTICLEVEL_e90be5539d2a::max() -> MPSTORAGEDIAGNOSTICLEVEL_e90be5539d2a {
+  MPSTORAGEDIAGNOSTICLEVEL_e90be5539d2a::from_int(1)
+}
+
+///|
+pub fn MPSTORAGEDIAGNOSTICTARGETTYPE_c320703da6b2::hba_firmware() -> MPSTORAGEDIAGNOSTICTARGETTYPE_c320703da6b2 {
+  MPSTORAGEDIAGNOSTICTARGETTYPE_c320703da6b2::from_int(3)
+}
+
+///|
+pub fn MPSTORAGEDIAGNOSTICTARGETTYPE_c320703da6b2::max() -> MPSTORAGEDIAGNOSTICTARGETTYPE_c320703da6b2 {
+  MPSTORAGEDIAGNOSTICTARGETTYPE_c320703da6b2::from_int(4)
+}
+
+///|
+pub fn MPSTORAGEDIAGNOSTICTARGETTYPE_c320703da6b2::miniport() -> MPSTORAGEDIAGNOSTICTARGETTYPE_c320703da6b2 {
+  MPSTORAGEDIAGNOSTICTARGETTYPE_c320703da6b2::from_int(2)
+}
+
+///|
+pub fn MPSTORAGEDIAGNOSTICTARGETTYPE_c320703da6b2::undefined() -> MPSTORAGEDIAGNOSTICTARGETTYPE_c320703da6b2 {
+  MPSTORAGEDIAGNOSTICTARGETTYPE_c320703da6b2::from_int(0)
+}
+
+///|
+pub fn NVCACHESTATUS_7ed45932349c::nv_cache_status_disabled() -> NVCACHESTATUS_7ed45932349c {
+  NVCACHESTATUS_7ed45932349c::from_int(2)
+}
+
+///|
+pub fn NVCACHESTATUS_7ed45932349c::nv_cache_status_disabling() -> NVCACHESTATUS_7ed45932349c {
+  NVCACHESTATUS_7ed45932349c::from_int(1)
+}
+
+///|
+pub fn NVCACHESTATUS_7ed45932349c::nv_cache_status_enabled() -> NVCACHESTATUS_7ed45932349c {
+  NVCACHESTATUS_7ed45932349c::from_int(3)
+}
+
+///|
+pub fn NVCACHESTATUS_7ed45932349c::nv_cache_status_unknown() -> NVCACHESTATUS_7ed45932349c {
+  NVCACHESTATUS_7ed45932349c::from_int(0)
+}
+
+///|
+pub fn NVCACHETYPE_28f687d581bf::nv_cache_type_none() -> NVCACHETYPE_28f687d581bf {
+  NVCACHETYPE_28f687d581bf::from_int(1)
+}
+
+///|
+pub fn NVCACHETYPE_28f687d581bf::nv_cache_type_unknown() -> NVCACHETYPE_28f687d581bf {
+  NVCACHETYPE_28f687d581bf::from_int(0)
+}
+
+///|
+pub fn NVCACHETYPE_28f687d581bf::nv_cache_type_write_back() -> NVCACHETYPE_28f687d581bf {
+  NVCACHETYPE_28f687d581bf::from_int(2)
+}
+
+///|
+pub fn NVCACHETYPE_28f687d581bf::nv_cache_type_write_through() -> NVCACHETYPE_28f687d581bf {
+  NVCACHETYPE_28f687d581bf::from_int(3)
+}
+
+///|
+pub fn NVSEPWRITECACHETYPE_dc0d4c988199::nvsep_write_cache_type_none() -> NVSEPWRITECACHETYPE_dc0d4c988199 {
+  NVSEPWRITECACHETYPE_dc0d4c988199::from_int(1)
+}
+
+///|
+pub fn NVSEPWRITECACHETYPE_dc0d4c988199::nvsep_write_cache_type_unknown() -> NVSEPWRITECACHETYPE_dc0d4c988199 {
+  NVSEPWRITECACHETYPE_dc0d4c988199::from_int(0)
+}
+
+///|
+pub fn NVSEPWRITECACHETYPE_dc0d4c988199::nvsep_write_cache_type_write_back() -> NVSEPWRITECACHETYPE_dc0d4c988199 {
+  NVSEPWRITECACHETYPE_dc0d4c988199::from_int(2)
+}
+
+///|
+pub fn NVSEPWRITECACHETYPE_dc0d4c988199::nvsep_write_cache_type_write_through() -> NVSEPWRITECACHETYPE_dc0d4c988199 {
+  NVSEPWRITECACHETYPE_dc0d4c988199::from_int(3)
+}
+
+///|
+pub fn TARGETPROTOCOLTYPE_58979b36a7b3::iscsi_tcp_protocol_type() -> TARGETPROTOCOLTYPE_58979b36a7b3 {
+  TARGETPROTOCOLTYPE_58979b36a7b3::from_int(0)
+}
+
+///|
+pub fn TARGETINFORMATIONCLASS_e6fd3f5999c4::discovery_mechanisms() -> TARGETINFORMATIONCLASS_e6fd3f5999c4 {
+  TARGETINFORMATIONCLASS_e6fd3f5999c4::from_int(2)
+}
+
+///|
+pub fn TARGETINFORMATIONCLASS_e6fd3f5999c4::initiator_name() -> TARGETINFORMATIONCLASS_e6fd3f5999c4 {
+  TARGETINFORMATIONCLASS_e6fd3f5999c4::from_int(5)
+}
+
+///|
+pub fn TARGETINFORMATIONCLASS_e6fd3f5999c4::login_options() -> TARGETINFORMATIONCLASS_e6fd3f5999c4 {
+  TARGETINFORMATIONCLASS_e6fd3f5999c4::from_int(7)
+}
+
+///|
+pub fn TARGETINFORMATIONCLASS_e6fd3f5999c4::persistent_target_mappings() -> TARGETINFORMATIONCLASS_e6fd3f5999c4 {
+  TARGETINFORMATIONCLASS_e6fd3f5999c4::from_int(4)
+}
+
+///|
+pub fn TARGETINFORMATIONCLASS_e6fd3f5999c4::portal_groups() -> TARGETINFORMATIONCLASS_e6fd3f5999c4 {
+  TARGETINFORMATIONCLASS_e6fd3f5999c4::from_int(3)
+}
+
+///|
+pub fn TARGETINFORMATIONCLASS_e6fd3f5999c4::protocol_type() -> TARGETINFORMATIONCLASS_e6fd3f5999c4 {
+  TARGETINFORMATIONCLASS_e6fd3f5999c4::from_int(0)
+}
+
+///|
+pub fn TARGETINFORMATIONCLASS_e6fd3f5999c4::target_alias() -> TARGETINFORMATIONCLASS_e6fd3f5999c4 {
+  TARGETINFORMATIONCLASS_e6fd3f5999c4::from_int(1)
+}
+
+///|
+pub fn TARGETINFORMATIONCLASS_e6fd3f5999c4::target_flags() -> TARGETINFORMATIONCLASS_e6fd3f5999c4 {
+  TARGETINFORMATIONCLASS_e6fd3f5999c4::from_int(6)
+}

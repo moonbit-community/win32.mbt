@@ -1,0 +1,146 @@
+// Generated using `moon info`, DON'T EDIT IT
+package "moonbit-community/win32api/windows/win32/system/tpm_base_services"
+
+import {
+  "moonbit-community/win32api/runtime/core",
+  "moonbit-community/win32api/runtime/strings",
+  "moonbit-community/win32api/scc/c0bbbf6d66d6e604",
+}
+
+// Values
+pub fn get_device_id(@core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn get_device_id_raw(@core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn get_device_id_string(@strings.PWStrBuffer?, @core.RawAddress, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn get_device_id_string_raw(@core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> Int
+
+pub let tbs_context_version_one : UInt
+
+pub let tbs_context_version_two : UInt
+
+pub let tbs_ownerauth_type_admin : UInt
+
+pub let tbs_ownerauth_type_endorsement : UInt
+
+pub let tbs_ownerauth_type_endorsement_20 : UInt
+
+pub let tbs_ownerauth_type_full : UInt
+
+pub let tbs_ownerauth_type_storage_20 : UInt
+
+pub let tbs_ownerauth_type_user : UInt
+
+pub let tbs_success : UInt
+
+pub let tbs_tcglog_drtm_boot : UInt
+
+pub let tbs_tcglog_drtm_current : UInt
+
+pub let tbs_tcglog_drtm_resume : UInt
+
+pub let tbs_tcglog_srtm_boot : UInt
+
+pub let tbs_tcglog_srtm_current : UInt
+
+pub let tbs_tcglog_srtm_resume : UInt
+
+pub fn tbsi_context_create(@core.RawAddress, @core.RawAddress) -> UInt raise @core.WindowsError
+
+pub fn tbsi_context_create_raw(@core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn tbsi_create_windows_key(UInt) -> UInt raise @core.WindowsError
+
+pub fn tbsi_create_windows_key_raw(UInt) -> UInt
+
+pub fn tbsi_get_device_info(UInt, @core.RawAddress) -> UInt raise @core.WindowsError
+
+pub fn tbsi_get_device_info_raw(UInt, @core.RawAddress) -> UInt
+
+pub fn tbsi_get_owner_auth(@core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> UInt raise @core.WindowsError
+
+pub fn tbsi_get_owner_auth_raw(@core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn tbsi_get_tcg_log(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt raise @core.WindowsError
+
+pub fn tbsi_get_tcg_log_ex(UInt, @core.RawAddress, @core.RawAddress) -> UInt raise @core.WindowsError
+
+pub fn tbsi_get_tcg_log_ex_raw(UInt, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn tbsi_get_tcg_log_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn tbsi_is_tpm_present() -> Bool raise @core.WindowsError
+
+pub fn tbsi_is_tpm_present_raw() -> Int
+
+pub fn tbsi_physical_presence_command(@core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> UInt raise @core.WindowsError
+
+pub fn tbsi_physical_presence_command_raw(@core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn tbsi_revoke_attestation() -> UInt raise @core.WindowsError
+
+pub fn tbsi_revoke_attestation_raw() -> UInt
+
+pub fn tbsi_tpm_vendor_maintenance_mode(@core.RawAddress, @core.RawAddress) -> UInt raise @core.WindowsError
+
+pub fn tbsi_tpm_vendor_maintenance_mode_raw(@core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn tbsip_cancel_commands(@core.RawAddress) -> UInt raise @core.WindowsError
+
+pub fn tbsip_cancel_commands_raw(@core.RawAddress) -> UInt
+
+pub fn tbsip_context_close(@core.RawAddress) -> UInt raise @core.WindowsError
+
+pub fn tbsip_context_close_raw(@core.RawAddress) -> UInt
+
+pub fn tbsip_submit_command(@core.RawAddress, @c0bbbf6d66d6e604.TBSCOMMANDLOCALITY_d21865ee7ca7, @c0bbbf6d66d6e604.TBSCOMMANDPRIORITY_d596436a9483, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> UInt raise @core.WindowsError
+
+pub fn tbsip_submit_command_raw(@core.RawAddress, UInt, UInt, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub let tpm_iftype_1 : UInt
+
+pub let tpm_iftype_emulator : UInt
+
+pub let tpm_iftype_hw : UInt
+
+pub let tpm_iftype_spb : UInt
+
+pub let tpm_iftype_trustzone : UInt
+
+pub let tpm_iftype_unknown : UInt
+
+pub let tpm_version_12 : UInt
+
+pub let tpm_version_20 : UInt
+
+pub let tpm_version_unknown : UInt
+
+pub let tpm_wnf_info_clear_successful : UInt
+
+pub let tpm_wnf_info_no_reboot_required : UInt
+
+pub let tpm_wnf_info_ownership_successful : UInt
+
+// Errors
+
+// Types and methods
+
+// Type aliases
+pub using @c0bbbf6d66d6e604 {type TBSCOMMANDLOCALITY_d21865ee7ca7 as TBSCOMMANDLOCALITY}
+
+pub using @c0bbbf6d66d6e604 {type TBSCOMMANDPRIORITY_d596436a9483 as TBSCOMMANDPRIORITY}
+
+pub using @c0bbbf6d66d6e604 {type TBSCONTEXTPARAMS_a9bf5198c010 as TBSCONTEXTPARAMS}
+
+pub using @c0bbbf6d66d6e604 {type TBSCONTEXTPARAMS2_c0537658f2d0 as TBSCONTEXTPARAMS2}
+
+pub using @c0bbbf6d66d6e604 {type TBSCONTEXTPARAMS2AnonymousEUnion_8bc09cf53623 as TBSCONTEXTPARAMS2AnonymousEUnion}
+
+pub using @c0bbbf6d66d6e604 {type TBSCONTEXTPARAMS2AnonymousEUnionAnonymousEStruct_a5c8431cbb14 as TBSCONTEXTPARAMS2AnonymousEUnionAnonymousEStruct}
+
+pub using @c0bbbf6d66d6e604 {type TPMDEVICEINFO_1096182e21b4 as TPMDEVICEINFO}
+
+pub using @c0bbbf6d66d6e604 {type TPMWNFPROVISIONING_45af66bc2637 as TPMWNFPROVISIONING}
+
+// Traits

@@ -1,0 +1,396 @@
+// Generated using `moon info`, DON'T EDIT IT
+package "moonbit-community/win32api/windows/win32/graphics/imaging"
+
+import {
+  "moonbit-community/win32api/runtime/core",
+  "moonbit-community/win32api/runtime/strings",
+  "moonbit-community/win32api/scc/61616c01669c2dea",
+}
+
+// Values
+pub let facility_wincodec_err : UInt
+
+pub fn wic_convert_bitmap_source(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn wic_convert_bitmap_source_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn wic_create_bitmap_from_section(UInt, UInt, @core.RawAddress, @core.RawAddress, UInt, UInt, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn wic_create_bitmap_from_section_ex(UInt, UInt, @core.RawAddress, @core.RawAddress, UInt, UInt, @61616c01669c2dea.WICSectionAccessLevel_f9b62211cd40, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn wic_create_bitmap_from_section_ex_raw(UInt, UInt, @core.RawAddress, @core.RawAddress, UInt, UInt, Int, @core.RawAddress) -> Int
+
+pub fn wic_create_bitmap_from_section_raw(UInt, UInt, @core.RawAddress, @core.RawAddress, UInt, UInt, @core.RawAddress) -> Int
+
+pub fn wic_get_metadata_content_size(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn wic_get_metadata_content_size_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub let wic_jpeg_huffman_baseline_one : UInt
+
+pub let wic_jpeg_huffman_baseline_three : UInt
+
+pub let wic_jpeg_max_component_count : UInt
+
+pub let wic_jpeg_max_table_index : UInt
+
+pub let wic_jpeg_quantization_baseline_one : UInt
+
+pub let wic_jpeg_quantization_baseline_three : UInt
+
+pub let wic_jpeg_sample_factors_one : UInt
+
+pub let wic_jpeg_sample_factors_three_420 : UInt
+
+pub let wic_jpeg_sample_factors_three_422 : UInt
+
+pub let wic_jpeg_sample_factors_three_440 : UInt
+
+pub let wic_jpeg_sample_factors_three_444 : UInt
+
+pub fn wic_map_guid_to_short_name(@core.RawAddress, @strings.PWStrBuffer?, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn wic_map_guid_to_short_name_raw(@core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn wic_map_schema_to_name(@core.RawAddress, @core.RawAddress, @strings.PWStrBuffer?, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn wic_map_schema_to_name_raw(@core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn wic_map_short_name_to_guid(@strings.PWStr, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn wic_map_short_name_to_guid_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn wic_match_metadata_content(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn wic_match_metadata_content_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub let wic_raw_change_notification_contrast : UInt
+
+pub let wic_raw_change_notification_destination_color_context : UInt
+
+pub let wic_raw_change_notification_exposure_compensation : UInt
+
+pub let wic_raw_change_notification_gamma : UInt
+
+pub let wic_raw_change_notification_kelvin_white_point : UInt
+
+pub let wic_raw_change_notification_named_white_point : UInt
+
+pub let wic_raw_change_notification_noise_reduction : UInt
+
+pub let wic_raw_change_notification_render_mode : UInt
+
+pub let wic_raw_change_notification_rgb_white_point : UInt
+
+pub let wic_raw_change_notification_rotation : UInt
+
+pub let wic_raw_change_notification_saturation : UInt
+
+pub let wic_raw_change_notification_sharpness : UInt
+
+pub let wic_raw_change_notification_tint : UInt
+
+pub let wic_raw_change_notification_tone_curve : UInt
+
+pub fn wic_serialize_metadata_content(@core.RawAddress, @core.RawAddress, UInt, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn wic_serialize_metadata_content_raw(@core.RawAddress, @core.RawAddress, UInt, @core.RawAddress) -> Int
+
+pub let wincodec_err_aborted : Int
+
+pub let wincodec_err_accessdenied : Int
+
+pub let wincodec_err_base : UInt
+
+pub let wincodec_err_generic_error : Int
+
+pub let wincodec_err_invalidparameter : Int
+
+pub let wincodec_err_notimplemented : Int
+
+pub let wincodec_err_outofmemory : Int
+
+pub let wincodec_sdk_version : UInt
+
+pub let wincodec_sdk_version1 : UInt
+
+pub let wincodec_sdk_version2 : UInt
+
+// Errors
+
+// Types and methods
+
+// Type aliases
+pub using @61616c01669c2dea {type IWICBitmap_2d73f1ee151c as IWICBitmap}
+
+pub using @61616c01669c2dea {type IWICBitmapClipper_ca849ce69a67 as IWICBitmapClipper}
+
+pub using @61616c01669c2dea {type IWICBitmapCodecInfo_93b60543499d as IWICBitmapCodecInfo}
+
+pub using @61616c01669c2dea {type IWICBitmapCodecProgressNotification_6ce3fba0f442 as IWICBitmapCodecProgressNotification}
+
+pub using @61616c01669c2dea {type IWICBitmapDecoder_e06fa48de507 as IWICBitmapDecoder}
+
+pub using @61616c01669c2dea {type IWICBitmapDecoderInfo_7424c3374afb as IWICBitmapDecoderInfo}
+
+pub using @61616c01669c2dea {type IWICBitmapEncoder_cdfe6d7c2589 as IWICBitmapEncoder}
+
+pub using @61616c01669c2dea {type IWICBitmapEncoderInfo_99c65e3a242c as IWICBitmapEncoderInfo}
+
+pub using @61616c01669c2dea {type IWICBitmapFlipRotator_14c019f4909a as IWICBitmapFlipRotator}
+
+pub using @61616c01669c2dea {type IWICBitmapFrameChainReader_a1fea9829066 as IWICBitmapFrameChainReader}
+
+pub using @61616c01669c2dea {type IWICBitmapFrameChainWriter_d6f571a24690 as IWICBitmapFrameChainWriter}
+
+pub using @61616c01669c2dea {type IWICBitmapFrameDecode_ad1d9b3527f6 as IWICBitmapFrameDecode}
+
+pub using @61616c01669c2dea {type IWICBitmapFrameEncode_bab731502f07 as IWICBitmapFrameEncode}
+
+pub using @61616c01669c2dea {type IWICBitmapLock_17834f080780 as IWICBitmapLock}
+
+pub using @61616c01669c2dea {type IWICBitmapScaler_139c6c5953f8 as IWICBitmapScaler}
+
+pub using @61616c01669c2dea {type IWICBitmapSource_974a8e646984 as IWICBitmapSource}
+
+pub using @61616c01669c2dea {type IWICBitmapSourceTransform_9c2bcfea1ded as IWICBitmapSourceTransform}
+
+pub using @61616c01669c2dea {type IWICBitmapSourceTransform2_35646725639a as IWICBitmapSourceTransform2}
+
+pub using @61616c01669c2dea {type IWICBitmapToneMapper_9d6e9cb357c0 as IWICBitmapToneMapper}
+
+pub using @61616c01669c2dea {type IWICColorContext_319790a1cf3b as IWICColorContext}
+
+pub using @61616c01669c2dea {type IWICColorTransform_83682e5f32c2 as IWICColorTransform}
+
+pub using @61616c01669c2dea {type IWICComponentFactory_dfdf3426883c as IWICComponentFactory}
+
+pub using @61616c01669c2dea {type IWICComponentInfo_6ce995a9fc25 as IWICComponentInfo}
+
+pub using @61616c01669c2dea {type IWICD3DTextureSource_dff9ab2f2462 as IWICD3DTextureSource}
+
+pub using @61616c01669c2dea {type IWICDdsDecoder_d4181a9c3a0d as IWICDdsDecoder}
+
+pub using @61616c01669c2dea {type IWICDdsEncoder_a42c7f066fcf as IWICDdsEncoder}
+
+pub using @61616c01669c2dea {type IWICDdsFrameDecode_d6e2f0fed6c1 as IWICDdsFrameDecode}
+
+pub using @61616c01669c2dea {type IWICDevelopRaw_bd5d334a0c24 as IWICDevelopRaw}
+
+pub using @61616c01669c2dea {type IWICDevelopRawNotificationCallback_fd4be4a89eae as IWICDevelopRawNotificationCallback}
+
+pub using @61616c01669c2dea {type IWICDisplayAdaptationControl_bc8b9cd86dea as IWICDisplayAdaptationControl}
+
+pub using @61616c01669c2dea {type IWICDisplayAdaptationControl2_434916543537 as IWICDisplayAdaptationControl2}
+
+pub using @61616c01669c2dea {type IWICEnumMetadataItem_e31364b96be7 as IWICEnumMetadataItem}
+
+pub using @61616c01669c2dea {type IWICFastMetadataEncoder_089eb10c4980 as IWICFastMetadataEncoder}
+
+pub using @61616c01669c2dea {type IWICFormatConverter_56a6e3eff373 as IWICFormatConverter}
+
+pub using @61616c01669c2dea {type IWICFormatConverterInfo_c2dcb73fe743 as IWICFormatConverterInfo}
+
+pub using @61616c01669c2dea {type IWICImagingFactory_b0cccc6cd51a as IWICImagingFactory}
+
+pub using @61616c01669c2dea {type IWICJpegFrameDecode_9f664fe6f809 as IWICJpegFrameDecode}
+
+pub using @61616c01669c2dea {type IWICJpegFrameEncode_b6d47b389874 as IWICJpegFrameEncode}
+
+pub using @61616c01669c2dea {type IWICMetadataBlockReader_68037787ec6c as IWICMetadataBlockReader}
+
+pub using @61616c01669c2dea {type IWICMetadataBlockWriter_a452c1788236 as IWICMetadataBlockWriter}
+
+pub using @61616c01669c2dea {type IWICMetadataHandlerInfo_7fe4ead543e9 as IWICMetadataHandlerInfo}
+
+pub using @61616c01669c2dea {type IWICMetadataQueryReader_0b34c8a46acd as IWICMetadataQueryReader}
+
+pub using @61616c01669c2dea {type IWICMetadataQueryWriter_489d4c61e61b as IWICMetadataQueryWriter}
+
+pub using @61616c01669c2dea {type IWICMetadataReader_dd44d654c602 as IWICMetadataReader}
+
+pub using @61616c01669c2dea {type IWICMetadataReaderInfo_cd6b0dc82ec0 as IWICMetadataReaderInfo}
+
+pub using @61616c01669c2dea {type IWICMetadataWriter_31f103cc244f as IWICMetadataWriter}
+
+pub using @61616c01669c2dea {type IWICMetadataWriterInfo_ea22cac1651c as IWICMetadataWriterInfo}
+
+pub using @61616c01669c2dea {type IWICPalette_022edd4f2b2f as IWICPalette}
+
+pub using @61616c01669c2dea {type IWICPersistStream_221ba3411446 as IWICPersistStream}
+
+pub using @61616c01669c2dea {type IWICPixelFormatInfo_34f9235f0c3b as IWICPixelFormatInfo}
+
+pub using @61616c01669c2dea {type IWICPixelFormatInfo2_bf18a9ed0f58 as IWICPixelFormatInfo2}
+
+pub using @61616c01669c2dea {type IWICPlanarBitmapFrameEncode_0ac0c5e74b9b as IWICPlanarBitmapFrameEncode}
+
+pub using @61616c01669c2dea {type IWICPlanarBitmapSourceTransform_f377fe4aca38 as IWICPlanarBitmapSourceTransform}
+
+pub using @61616c01669c2dea {type IWICPlanarFormatConverter_04b346bda2c1 as IWICPlanarFormatConverter}
+
+pub using @61616c01669c2dea {type IWICProgressCallback_9377c1324abc as IWICProgressCallback}
+
+pub using @61616c01669c2dea {type IWICProgressiveLevelControl_2c92ee3f4b7d as IWICProgressiveLevelControl}
+
+pub using @61616c01669c2dea {type IWICStream_457adf878113 as IWICStream}
+
+pub using @61616c01669c2dea {type IWICStreamProvider_a1087db0baa1 as IWICStreamProvider}
+
+pub using @61616c01669c2dea {type PFNProgressNotification_99d126c7a845 as PFNProgressNotification}
+
+pub using @61616c01669c2dea {type WIC8BIMIptcDigestProperties_2da4d1d302a1 as WIC8BIMIptcDigestProperties}
+
+pub using @61616c01669c2dea {type WIC8BIMIptcProperties_18e9f96be13f as WIC8BIMIptcProperties}
+
+pub using @61616c01669c2dea {type WIC8BIMResolutionInfoProperties_e7c6cc971d3a as WIC8BIMResolutionInfoProperties}
+
+pub using @61616c01669c2dea {type WICBitmapAlphaChannelOption_72bcd3fa7eb2 as WICBitmapAlphaChannelOption}
+
+pub using @61616c01669c2dea {type WICBitmapChainType_ce21da6d2d57 as WICBitmapChainType}
+
+pub using @61616c01669c2dea {type WICBitmapCreateCacheOption_39ee3592abb1 as WICBitmapCreateCacheOption}
+
+pub using @61616c01669c2dea {type WICBitmapDecoderCapabilities_3db242a89d31 as WICBitmapDecoderCapabilities}
+
+pub using @61616c01669c2dea {type WICBitmapDitherType_86be4146e0f0 as WICBitmapDitherType}
+
+pub using @61616c01669c2dea {type WICBitmapEncoderCacheOption_0128cfc0e453 as WICBitmapEncoderCacheOption}
+
+pub using @61616c01669c2dea {type WICBitmapInterpolationMode_ebb0dba7bde7 as WICBitmapInterpolationMode}
+
+pub using @61616c01669c2dea {type WICBitmapLockFlags_9a287cf52002 as WICBitmapLockFlags}
+
+pub using @61616c01669c2dea {type WICBitmapPaletteType_f060016eefe6 as WICBitmapPaletteType}
+
+pub using @61616c01669c2dea {type WICBitmapPattern_59c1b55bd7e6 as WICBitmapPattern}
+
+pub using @61616c01669c2dea {type WICBitmapPlane_2afca30099f4 as WICBitmapPlane}
+
+pub using @61616c01669c2dea {type WICBitmapPlaneDescription_457e639abf54 as WICBitmapPlaneDescription}
+
+pub using @61616c01669c2dea {type WICBitmapToneMappingMode_4a323e777c79 as WICBitmapToneMappingMode}
+
+pub using @61616c01669c2dea {type WICBitmapTransformOptions_e4493e9b38de as WICBitmapTransformOptions}
+
+pub using @61616c01669c2dea {type WICColorContextType_331ccc1dcfbf as WICColorContextType}
+
+pub using @61616c01669c2dea {type WICComponentEnumerateOptions_b3ee7c1dff9b as WICComponentEnumerateOptions}
+
+pub using @61616c01669c2dea {type WICComponentSigning_c8177b04185d as WICComponentSigning}
+
+pub using @61616c01669c2dea {type WICComponentType_51f07a96374b as WICComponentType}
+
+pub using @61616c01669c2dea {type WICDdsAlphaMode_c6dd4d1b1ce6 as WICDdsAlphaMode}
+
+pub using @61616c01669c2dea {type WICDdsDimension_c0334fb5ccd7 as WICDdsDimension}
+
+pub using @61616c01669c2dea {type WICDdsFormatInfo_29449065c613 as WICDdsFormatInfo}
+
+pub using @61616c01669c2dea {type WICDdsParameters_48363f604e86 as WICDdsParameters}
+
+pub using @61616c01669c2dea {type WICDecodeOptions_ba4e00247623 as WICDecodeOptions}
+
+pub using @61616c01669c2dea {type WICGainMapProperties_9c63016d2268 as WICGainMapProperties}
+
+pub using @61616c01669c2dea {type WICGifApplicationExtensionProperties_dca70d8368a5 as WICGifApplicationExtensionProperties}
+
+pub using @61616c01669c2dea {type WICGifCommentExtensionProperties_18497d6facfc as WICGifCommentExtensionProperties}
+
+pub using @61616c01669c2dea {type WICGifGraphicControlExtensionProperties_e3c94b1d2da5 as WICGifGraphicControlExtensionProperties}
+
+pub using @61616c01669c2dea {type WICGifImageDescriptorProperties_11d6f333c296 as WICGifImageDescriptorProperties}
+
+pub using @61616c01669c2dea {type WICGifLogicalScreenDescriptorProperties_b419c5cf5cd0 as WICGifLogicalScreenDescriptorProperties}
+
+pub using @61616c01669c2dea {type WICHeifCompressionOption_a97c02700ef4 as WICHeifCompressionOption}
+
+pub using @61616c01669c2dea {type WICHeifHdrProperties_2c2a94ba809d as WICHeifHdrProperties}
+
+pub using @61616c01669c2dea {type WICHeifProperties_5debfb6d6372 as WICHeifProperties}
+
+pub using @61616c01669c2dea {type WICImageParameters_ce2adde6e2d1 as WICImageParameters}
+
+pub using @61616c01669c2dea {type WICJpegChrominanceProperties_144809082361 as WICJpegChrominanceProperties}
+
+pub using @61616c01669c2dea {type WICJpegCommentProperties_78910e969496 as WICJpegCommentProperties}
+
+pub using @61616c01669c2dea {type WICJpegFrameHeader_1b9299d56f82 as WICJpegFrameHeader}
+
+pub using @61616c01669c2dea {type WICJpegIndexingOptions_7b4b6da8d335 as WICJpegIndexingOptions}
+
+pub using @61616c01669c2dea {type WICJpegLuminanceProperties_232676699bd5 as WICJpegLuminanceProperties}
+
+pub using @61616c01669c2dea {type WICJpegScanHeader_4cc11a4e2d4a as WICJpegScanHeader}
+
+pub using @61616c01669c2dea {type WICJpegScanType_0d5deaee9d27 as WICJpegScanType}
+
+pub using @61616c01669c2dea {type WICJpegTransferMatrix_b731b0e712b9 as WICJpegTransferMatrix}
+
+pub using @61616c01669c2dea {type WICJpegXLAnimFrameProperties_feb3dc0ac24f as WICJpegXLAnimFrameProperties}
+
+pub using @61616c01669c2dea {type WICJpegXLAnimProperties_cd9f97b40f30 as WICJpegXLAnimProperties}
+
+pub using @61616c01669c2dea {type WICJpegYCrCbSubsamplingOption_6be20dea45f8 as WICJpegYCrCbSubsamplingOption}
+
+pub using @61616c01669c2dea {type WICMetadataCreationOptions_80868d685a14 as WICMetadataCreationOptions}
+
+pub using @61616c01669c2dea {type WICMetadataHeader_79a621a689e1 as WICMetadataHeader}
+
+pub using @61616c01669c2dea {type WICMetadataPattern_4a9afb68984d as WICMetadataPattern}
+
+pub using @61616c01669c2dea {type WICNamedWhitePoint_4eac84b158b3 as WICNamedWhitePoint}
+
+pub using @61616c01669c2dea {type WICPersistOptions_438e037e11e8 as WICPersistOptions}
+
+pub using @61616c01669c2dea {type WICPixelFormatNumericRepresentation_d89c52a73a07 as WICPixelFormatNumericRepresentation}
+
+pub using @61616c01669c2dea {type WICPlanarOptions_3e98b47cfdcf as WICPlanarOptions}
+
+pub using @61616c01669c2dea {type WICPngBkgdProperties_62fad61d0331 as WICPngBkgdProperties}
+
+pub using @61616c01669c2dea {type WICPngChrmProperties_3e6847bb02f2 as WICPngChrmProperties}
+
+pub using @61616c01669c2dea {type WICPngFilterOption_bf867656542a as WICPngFilterOption}
+
+pub using @61616c01669c2dea {type WICPngGamaProperties_55410eb60d82 as WICPngGamaProperties}
+
+pub using @61616c01669c2dea {type WICPngHistProperties_8293fd33a44c as WICPngHistProperties}
+
+pub using @61616c01669c2dea {type WICPngIccpProperties_bb0651df2a89 as WICPngIccpProperties}
+
+pub using @61616c01669c2dea {type WICPngItxtProperties_4fdabbcd23c7 as WICPngItxtProperties}
+
+pub using @61616c01669c2dea {type WICPngSrgbProperties_2084dbb1b115 as WICPngSrgbProperties}
+
+pub using @61616c01669c2dea {type WICPngTimeProperties_88ea61e9665d as WICPngTimeProperties}
+
+pub using @61616c01669c2dea {type WICProgressNotification_f347191ac71e as WICProgressNotification}
+
+pub using @61616c01669c2dea {type WICProgressOperation_d3e8f8a0f64b as WICProgressOperation}
+
+pub using @61616c01669c2dea {type WICRawCapabilities_7829d43d0d7c as WICRawCapabilities}
+
+pub using @61616c01669c2dea {type WICRawCapabilitiesInfo_d7c2505bea6f as WICRawCapabilitiesInfo}
+
+pub using @61616c01669c2dea {type WICRawParameterSet_d6084bab450a as WICRawParameterSet}
+
+pub using @61616c01669c2dea {type WICRawRenderMode_a159b4d79ead as WICRawRenderMode}
+
+pub using @61616c01669c2dea {type WICRawRotationCapabilities_e3c3c4ee8c1b as WICRawRotationCapabilities}
+
+pub using @61616c01669c2dea {type WICRawToneCurve_02903ffa89bd as WICRawToneCurve}
+
+pub using @61616c01669c2dea {type WICRawToneCurvePoint_957cd2fdbcd3 as WICRawToneCurvePoint}
+
+pub using @61616c01669c2dea {type WICRect_43a0aec7d2af as WICRect}
+
+pub using @61616c01669c2dea {type WICSectionAccessLevel_f9b62211cd40 as WICSectionAccessLevel}
+
+pub using @61616c01669c2dea {type WICTiffCompressionOption_e0c436c2dc8a as WICTiffCompressionOption}
+
+pub using @61616c01669c2dea {type WICWebpAnimProperties_3e5c830f8874 as WICWebpAnimProperties}
+
+pub using @61616c01669c2dea {type WICWebpAnmfProperties_6bafb2900b60 as WICWebpAnmfProperties}
+
+// Traits

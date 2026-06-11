@@ -1,0 +1,1659 @@
+// Generated using `moon info`, DON'T EDIT IT
+package "moonbit-community/win32api/windows/win32/system/diagnostics/etw"
+
+import {
+  "moonbit-community/win32api/runtime/core",
+  "moonbit-community/win32api/runtime/strings",
+  "moonbit-community/win32api/scc/b09f46551805a00e",
+  "moonbit-community/win32api/scc/fb66f520d7e12332",
+}
+
+// Values
+pub fn close_trace(UInt64) -> @fb66f520d7e12332.WIN32ERROR_de7527e5f234 raise @core.WindowsError
+
+pub fn close_trace_raw(UInt64) -> UInt
+
+pub fn control_trace_a(UInt64, @strings.PStr?, @b09f46551805a00e.EVENTTRACEPROPERTIES_b06992ac5f62, @b09f46551805a00e.EVENTTRACECONTROL_0d66acbbb4eb) -> @fb66f520d7e12332.WIN32ERROR_de7527e5f234 raise @core.WindowsError
+
+pub fn control_trace_a_raw(UInt64, @core.RawAddress, @core.RawAddress, UInt) -> UInt
+
+pub fn control_trace_w(UInt64, @strings.PWStr?, @b09f46551805a00e.EVENTTRACEPROPERTIES_b06992ac5f62, @b09f46551805a00e.EVENTTRACECONTROL_0d66acbbb4eb) -> @fb66f520d7e12332.WIN32ERROR_de7527e5f234 raise @core.WindowsError
+
+pub fn control_trace_w_raw(UInt64, @core.RawAddress, @core.RawAddress, UInt) -> UInt
+
+pub fn create_trace_instance_id(@core.RawAddress, @b09f46551805a00e.EVENTINSTANCEINFO_dc691074881b) -> @fb66f520d7e12332.WIN32ERROR_de7527e5f234 raise @core.WindowsError
+
+pub fn create_trace_instance_id_raw(@core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn cve_event_write(@strings.PWStr, @strings.PWStr?) -> Int raise @core.WindowsError
+
+pub fn cve_event_write_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub let diag_logger_namea : String
+
+pub let diag_logger_namew : String
+
+pub fn enable_trace(UInt, UInt, UInt, @core.RawAddress, UInt64) -> @fb66f520d7e12332.WIN32ERROR_de7527e5f234 raise @core.WindowsError
+
+pub fn enable_trace_ex(@core.RawAddress, @core.RawAddress, UInt64, UInt, Byte, UInt64, UInt64, UInt, @b09f46551805a00e.EVENTFILTERDESCRIPTOR_6d5857412cef?) -> @fb66f520d7e12332.WIN32ERROR_de7527e5f234 raise @core.WindowsError
+
+pub fn enable_trace_ex2(UInt64, @core.RawAddress, UInt, Byte, UInt64, UInt64, UInt, @b09f46551805a00e.ENABLETRACEPARAMETERS_231c33faa611?) -> @fb66f520d7e12332.WIN32ERROR_de7527e5f234 raise @core.WindowsError
+
+pub fn enable_trace_ex2_raw(UInt64, @core.RawAddress, UInt, UInt, UInt64, UInt64, UInt, @core.RawAddress) -> UInt
+
+pub fn enable_trace_ex_raw(@core.RawAddress, @core.RawAddress, UInt64, UInt, UInt, UInt64, UInt64, UInt, @core.RawAddress) -> UInt
+
+pub let enable_trace_parameters_version : UInt
+
+pub let enable_trace_parameters_version_2 : UInt
+
+pub fn enable_trace_raw(UInt, UInt, UInt, @core.RawAddress, UInt64) -> UInt
+
+pub fn enumerate_trace_guids(@core.RawAddress, UInt, @core.RawAddress) -> @fb66f520d7e12332.WIN32ERROR_de7527e5f234 raise @core.WindowsError
+
+pub fn enumerate_trace_guids_ex(@b09f46551805a00e.TRACEQUERYINFOCLASS_c23682c1423b, @core.RawAddress, UInt, @core.RawAddress, UInt, @core.RawAddress) -> @fb66f520d7e12332.WIN32ERROR_de7527e5f234 raise @core.WindowsError
+
+pub fn enumerate_trace_guids_ex_raw(Int, @core.RawAddress, UInt, @core.RawAddress, UInt, @core.RawAddress) -> UInt
+
+pub fn enumerate_trace_guids_raw(@core.RawAddress, UInt, @core.RawAddress) -> UInt
+
+pub let etw_asciichar_type_value : UInt
+
+pub let etw_asciistring_type_value : UInt
+
+pub let etw_bool_type_value : UInt
+
+pub let etw_boolean_type_value : UInt
+
+pub let etw_byte_type_value : UInt
+
+pub let etw_char_type_value : UInt
+
+pub let etw_counted_ansistring_type_value : UInt
+
+pub let etw_counted_string_type_value : UInt
+
+pub let etw_datetime_type_value : UInt
+
+pub let etw_decimal_type_value : UInt
+
+pub let etw_double_type_value : UInt
+
+pub let etw_guid_type_value : UInt
+
+pub let etw_hidden_type_value : UInt
+
+pub let etw_int16_type_value : UInt
+
+pub let etw_int32_type_value : UInt
+
+pub let etw_int64_type_value : UInt
+
+pub let etw_non_null_terminated_string_type_value : UInt
+
+pub let etw_null_type_value : UInt
+
+pub let etw_object_type_value : UInt
+
+pub let etw_pointer_type_value : UInt
+
+pub let etw_ptvector_type_value : UInt
+
+pub let etw_reduced_ansistring_type_value : UInt
+
+pub let etw_reduced_string_type_value : UInt
+
+pub let etw_refrence_type_value : UInt
+
+pub let etw_reversed_counted_ansistring_type_value : UInt
+
+pub let etw_reversed_counted_string_type_value : UInt
+
+pub let etw_sbyte_type_value : UInt
+
+pub let etw_sid_type_value : UInt
+
+pub let etw_single_type_value : UInt
+
+pub let etw_sizet_type_value : UInt
+
+pub let etw_string_type_value : UInt
+
+pub let etw_uint16_type_value : UInt
+
+pub let etw_uint32_type_value : UInt
+
+pub let etw_uint64_type_value : UInt
+
+pub let etw_variant_type_value : UInt
+
+pub let etw_wmitime_type_value : UInt
+
+pub fn event_access_control(@core.RawAddress, UInt, @core.RawAddress, UInt, Byte) -> UInt raise @core.WindowsError
+
+pub fn event_access_control_raw(@core.RawAddress, UInt, @core.RawAddress, UInt, UInt) -> UInt
+
+pub fn event_access_query(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt raise @core.WindowsError
+
+pub fn event_access_query_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn event_access_remove(@core.RawAddress) -> UInt raise @core.WindowsError
+
+pub fn event_access_remove_raw(@core.RawAddress) -> UInt
+
+pub let event_activity_ctrl_create_id : UInt
+
+pub let event_activity_ctrl_create_set_id : UInt
+
+pub let event_activity_ctrl_get_id : UInt
+
+pub let event_activity_ctrl_get_set_id : UInt
+
+pub let event_activity_ctrl_set_id : UInt
+
+pub fn event_activity_id_control(UInt, @core.RawAddress) -> UInt raise @core.WindowsError
+
+pub fn event_activity_id_control_raw(UInt, @core.RawAddress) -> UInt
+
+pub let event_data_descriptor_type_event_metadata : UInt
+
+pub let event_data_descriptor_type_none : UInt
+
+pub let event_data_descriptor_type_provider_metadata : UInt
+
+pub let event_data_descriptor_type_timestamp_override : UInt
+
+pub let event_enable_property_enable_keyword_0 : UInt
+
+pub let event_enable_property_enable_silos : UInt
+
+pub let event_enable_property_event_key : UInt
+
+pub let event_enable_property_exclude_inprivate : UInt
+
+pub let event_enable_property_ignore_keyword_0 : UInt
+
+pub let event_enable_property_process_start_key : UInt
+
+pub let event_enable_property_provider_group : UInt
+
+pub let event_enable_property_psm_key : UInt
+
+pub let event_enable_property_sid : UInt
+
+pub let event_enable_property_source_container_tracking : UInt
+
+pub let event_enable_property_stack_trace : UInt
+
+pub let event_enable_property_ts_id : UInt
+
+pub fn event_enabled(Int64, @b09f46551805a00e.EVENTDESCRIPTOR_6663bc93c138) -> Byte raise @core.WindowsError
+
+pub fn event_enabled_raw(Int64, @core.RawAddress) -> UInt
+
+pub let event_filter_type_container : UInt
+
+pub let event_filter_type_event_id : UInt
+
+pub let event_filter_type_event_name : UInt
+
+pub let event_filter_type_executable_name : UInt
+
+pub let event_filter_type_none : UInt
+
+pub let event_filter_type_package_app_id : UInt
+
+pub let event_filter_type_package_id : UInt
+
+pub let event_filter_type_payload : UInt
+
+pub let event_filter_type_pid : UInt
+
+pub let event_filter_type_schematized : UInt
+
+pub let event_filter_type_stackwalk : UInt
+
+pub let event_filter_type_stackwalk_level_kw : UInt
+
+pub let event_filter_type_stackwalk_name : UInt
+
+pub let event_filter_type_system_flags : UInt
+
+pub let event_filter_type_tracehandle : UInt
+
+pub let event_header_ext_type_container_id : UInt
+
+pub let event_header_ext_type_control_guid : UInt
+
+pub let event_header_ext_type_event_key : UInt
+
+pub let event_header_ext_type_event_schema_tl : UInt
+
+pub let event_header_ext_type_instance_info : UInt
+
+pub let event_header_ext_type_max : UInt
+
+pub let event_header_ext_type_pebs_index : UInt
+
+pub let event_header_ext_type_pmc_counters : UInt
+
+pub let event_header_ext_type_process_start_key : UInt
+
+pub let event_header_ext_type_prov_traits : UInt
+
+pub let event_header_ext_type_psm_key : UInt
+
+pub let event_header_ext_type_qpc_delta : UInt
+
+pub let event_header_ext_type_related_activityid : UInt
+
+pub let event_header_ext_type_sid : UInt
+
+pub let event_header_ext_type_stack_key32 : UInt
+
+pub let event_header_ext_type_stack_key64 : UInt
+
+pub let event_header_ext_type_stack_trace32 : UInt
+
+pub let event_header_ext_type_stack_trace64 : UInt
+
+pub let event_header_ext_type_ts_id : UInt
+
+pub let event_header_flag_32_bit_header : UInt
+
+pub let event_header_flag_64_bit_header : UInt
+
+pub let event_header_flag_classic_header : UInt
+
+pub let event_header_flag_decode_guid : UInt
+
+pub let event_header_flag_extended_info : UInt
+
+pub let event_header_flag_no_cputime : UInt
+
+pub let event_header_flag_private_session : UInt
+
+pub let event_header_flag_processor_index : UInt
+
+pub let event_header_flag_string_only : UInt
+
+pub let event_header_flag_trace_message : UInt
+
+pub let event_header_property_forwarded_xml : UInt
+
+pub let event_header_property_legacy_eventlog : UInt
+
+pub let event_header_property_reloggable : UInt
+
+pub let event_header_property_xml : UInt
+
+pub let event_logger_name : String
+
+pub let event_logger_namea : String
+
+pub let event_logger_namew : String
+
+pub let event_max_level : UInt
+
+pub let event_min_level : UInt
+
+pub fn event_provider_enabled(Int64, Byte, UInt64) -> Byte raise @core.WindowsError
+
+pub fn event_provider_enabled_raw(Int64, UInt, UInt64) -> UInt
+
+pub fn event_register(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt raise @core.WindowsError
+
+pub fn event_register_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn event_set_information(Int64, @b09f46551805a00e.EVENTINFOCLASS_b0b2666963c7, @core.RawAddress, UInt) -> UInt raise @core.WindowsError
+
+pub fn event_set_information_raw(Int64, Int, @core.RawAddress, UInt) -> UInt
+
+pub let event_trace_add_header_mode : UInt
+
+pub let event_trace_addto_triage_dump : UInt
+
+pub let event_trace_buffering_mode : UInt
+
+pub let event_trace_compressed_mode : UInt
+
+pub let event_trace_control_convert_to_realtime : UInt
+
+pub let event_trace_control_increment_file : UInt
+
+pub let event_trace_delay_open_file_mode : UInt
+
+pub let event_trace_file_mode_append : UInt
+
+pub let event_trace_file_mode_circular : UInt
+
+pub let event_trace_file_mode_newfile : UInt
+
+pub let event_trace_file_mode_none : UInt
+
+pub let event_trace_file_mode_preallocate : UInt
+
+pub let event_trace_file_mode_sequential : UInt
+
+pub let event_trace_flag_debug_events : UInt
+
+pub let event_trace_flag_enable_reserve : UInt
+
+pub let event_trace_flag_extension : UInt
+
+pub let event_trace_flag_forward_wmi : UInt
+
+pub let event_trace_independent_session_mode : UInt
+
+pub let event_trace_mode_reserved : UInt
+
+pub let event_trace_no_per_processor_buffering : UInt
+
+pub let event_trace_nonstoppable_mode : UInt
+
+pub let event_trace_persist_on_hybrid_shutdown : UInt
+
+pub let event_trace_private_in_proc : UInt
+
+pub let event_trace_private_logger_mode : UInt
+
+pub let event_trace_real_time_mode : UInt
+
+pub let event_trace_relog_mode : UInt
+
+pub let event_trace_secure_mode : UInt
+
+pub let event_trace_stop_on_hybrid_shutdown : UInt
+
+pub let event_trace_system_logger_mode : UInt
+
+pub let event_trace_type_accept : UInt
+
+pub let event_trace_type_ackdup : UInt
+
+pub let event_trace_type_ackfull : UInt
+
+pub let event_trace_type_ackpart : UInt
+
+pub let event_trace_type_checkpoint : UInt
+
+pub let event_trace_type_config : UInt
+
+pub let event_trace_type_config_boot : UInt
+
+pub let event_trace_type_config_ci_info : UInt
+
+pub let event_trace_type_config_cpu : UInt
+
+pub let event_trace_type_config_defrag : UInt
+
+pub let event_trace_type_config_devicefamily : UInt
+
+pub let event_trace_type_config_dpi : UInt
+
+pub let event_trace_type_config_flightid : UInt
+
+pub let event_trace_type_config_idechannel : UInt
+
+pub let event_trace_type_config_irq : UInt
+
+pub let event_trace_type_config_logicaldisk : UInt
+
+pub let event_trace_type_config_machineid : UInt
+
+pub let event_trace_type_config_mobileplatform : UInt
+
+pub let event_trace_type_config_netinfo : UInt
+
+pub let event_trace_type_config_nic : UInt
+
+pub let event_trace_type_config_numanode : UInt
+
+pub let event_trace_type_config_opticalmedia : UInt
+
+pub let event_trace_type_config_physicaldisk : UInt
+
+pub let event_trace_type_config_physicaldisk_ex : UInt
+
+pub let event_trace_type_config_platform : UInt
+
+pub let event_trace_type_config_pnp : UInt
+
+pub let event_trace_type_config_power : UInt
+
+pub let event_trace_type_config_processor : UInt
+
+pub let event_trace_type_config_processorgroup : UInt
+
+pub let event_trace_type_config_processornumber : UInt
+
+pub let event_trace_type_config_services : UInt
+
+pub let event_trace_type_config_video : UInt
+
+pub let event_trace_type_config_virtualization : UInt
+
+pub let event_trace_type_connect : UInt
+
+pub let event_trace_type_connfail : UInt
+
+pub let event_trace_type_copy_arp : UInt
+
+pub let event_trace_type_copy_tcp : UInt
+
+pub let event_trace_type_dbgid_rsds : UInt
+
+pub let event_trace_type_dc_end : UInt
+
+pub let event_trace_type_dc_start : UInt
+
+pub let event_trace_type_dequeue : UInt
+
+pub let event_trace_type_disconnect : UInt
+
+pub let event_trace_type_end : UInt
+
+pub let event_trace_type_extension : UInt
+
+pub let event_trace_type_flt_postop_completion : UInt
+
+pub let event_trace_type_flt_postop_failure : UInt
+
+pub let event_trace_type_flt_postop_init : UInt
+
+pub let event_trace_type_flt_preop_completion : UInt
+
+pub let event_trace_type_flt_preop_failure : UInt
+
+pub let event_trace_type_flt_preop_init : UInt
+
+pub let event_trace_type_guidmap : UInt
+
+pub let event_trace_type_info : UInt
+
+pub let event_trace_type_io_flush : UInt
+
+pub let event_trace_type_io_flush_init : UInt
+
+pub let event_trace_type_io_read : UInt
+
+pub let event_trace_type_io_read_init : UInt
+
+pub let event_trace_type_io_redirected_init : UInt
+
+pub let event_trace_type_io_write : UInt
+
+pub let event_trace_type_io_write_init : UInt
+
+pub let event_trace_type_load : UInt
+
+pub let event_trace_type_mm_av : UInt
+
+pub let event_trace_type_mm_cow : UInt
+
+pub let event_trace_type_mm_dzf : UInt
+
+pub let event_trace_type_mm_gpf : UInt
+
+pub let event_trace_type_mm_hpf : UInt
+
+pub let event_trace_type_mm_tf : UInt
+
+pub let event_trace_type_optical_io_flush : UInt
+
+pub let event_trace_type_optical_io_flush_init : UInt
+
+pub let event_trace_type_optical_io_read : UInt
+
+pub let event_trace_type_optical_io_read_init : UInt
+
+pub let event_trace_type_optical_io_write : UInt
+
+pub let event_trace_type_optical_io_write_init : UInt
+
+pub let event_trace_type_receive : UInt
+
+pub let event_trace_type_reconnect : UInt
+
+pub let event_trace_type_regclose : UInt
+
+pub let event_trace_type_regcommit : UInt
+
+pub let event_trace_type_regcreate : UInt
+
+pub let event_trace_type_regdelete : UInt
+
+pub let event_trace_type_regdeletevalue : UInt
+
+pub let event_trace_type_regenumeratekey : UInt
+
+pub let event_trace_type_regenumeratevaluekey : UInt
+
+pub let event_trace_type_regflush : UInt
+
+pub let event_trace_type_regkcbcreate : UInt
+
+pub let event_trace_type_regkcbdelete : UInt
+
+pub let event_trace_type_regkcbrundownbegin : UInt
+
+pub let event_trace_type_regkcbrundownend : UInt
+
+pub let event_trace_type_regmounthive : UInt
+
+pub let event_trace_type_regopen : UInt
+
+pub let event_trace_type_regprepare : UInt
+
+pub let event_trace_type_regquery : UInt
+
+pub let event_trace_type_regquerymultiplevalue : UInt
+
+pub let event_trace_type_regquerysecurity : UInt
+
+pub let event_trace_type_regqueryvalue : UInt
+
+pub let event_trace_type_regrollback : UInt
+
+pub let event_trace_type_regsetinformation : UInt
+
+pub let event_trace_type_regsetsecurity : UInt
+
+pub let event_trace_type_regsetvalue : UInt
+
+pub let event_trace_type_regvirtualize : UInt
+
+pub let event_trace_type_reply : UInt
+
+pub let event_trace_type_resume : UInt
+
+pub let event_trace_type_retransmit : UInt
+
+pub let event_trace_type_security : UInt
+
+pub let event_trace_type_send : UInt
+
+pub let event_trace_type_sidinfo : UInt
+
+pub let event_trace_type_start : UInt
+
+pub let event_trace_type_stop : UInt
+
+pub let event_trace_type_suspend : UInt
+
+pub let event_trace_type_terminate : UInt
+
+pub let event_trace_type_winevt_receive : UInt
+
+pub let event_trace_type_winevt_send : UInt
+
+pub let event_trace_use_global_sequence : UInt
+
+pub let event_trace_use_kbytes_for_size : UInt
+
+pub let event_trace_use_local_sequence : UInt
+
+pub let event_trace_use_nocputime : UInt
+
+pub let event_trace_use_paged_memory : UInt
+
+pub let event_trace_use_proctime : UInt
+
+pub fn event_unregister(Int64) -> UInt raise @core.WindowsError
+
+pub fn event_unregister_raw(Int64) -> UInt
+
+pub fn event_write(Int64, @b09f46551805a00e.EVENTDESCRIPTOR_6663bc93c138, UInt, @b09f46551805a00e.EVENTDATADESCRIPTOR_bdfbb3b555ba?) -> UInt raise @core.WindowsError
+
+pub fn event_write_ex(Int64, @b09f46551805a00e.EVENTDESCRIPTOR_6663bc93c138, UInt64, UInt, @core.RawAddress, @core.RawAddress, UInt, @b09f46551805a00e.EVENTDATADESCRIPTOR_bdfbb3b555ba?) -> UInt raise @core.WindowsError
+
+pub fn event_write_ex_raw(Int64, @core.RawAddress, UInt64, UInt, @core.RawAddress, @core.RawAddress, UInt, @core.RawAddress) -> UInt
+
+pub let event_write_flag_inprivate : UInt
+
+pub let event_write_flag_no_faulting : UInt
+
+pub fn event_write_raw(Int64, @core.RawAddress, UInt, @core.RawAddress) -> UInt
+
+pub fn event_write_string(Int64, Byte, UInt64, @strings.PWStr) -> UInt raise @core.WindowsError
+
+pub fn event_write_string_raw(Int64, UInt, UInt64, @core.RawAddress) -> UInt
+
+pub fn event_write_transfer(Int64, @b09f46551805a00e.EVENTDESCRIPTOR_6663bc93c138, @core.RawAddress, @core.RawAddress, UInt, @b09f46551805a00e.EVENTDATADESCRIPTOR_bdfbb3b555ba?) -> UInt raise @core.WindowsError
+
+pub fn event_write_transfer_raw(Int64, @core.RawAddress, @core.RawAddress, @core.RawAddress, UInt, @core.RawAddress) -> UInt
+
+pub fn flush_trace_a(UInt64, @strings.PStr?, @b09f46551805a00e.EVENTTRACEPROPERTIES_b06992ac5f62) -> @fb66f520d7e12332.WIN32ERROR_de7527e5f234 raise @core.WindowsError
+
+pub fn flush_trace_a_raw(UInt64, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn flush_trace_w(UInt64, @strings.PWStr?, @b09f46551805a00e.EVENTTRACEPROPERTIES_b06992ac5f62) -> @fb66f520d7e12332.WIN32ERROR_de7527e5f234 raise @core.WindowsError
+
+pub fn flush_trace_w_raw(UInt64, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn get_trace_enable_flags(UInt64) -> UInt raise @core.WindowsError
+
+pub fn get_trace_enable_flags_raw(UInt64) -> @core.RawWin32Call[UInt]
+
+pub fn get_trace_enable_level(UInt64) -> Byte raise @core.WindowsError
+
+pub fn get_trace_enable_level_raw(UInt64) -> @core.RawWin32Call[UInt]
+
+pub fn get_trace_logger_handle(@core.RawAddress) -> UInt64 raise @core.WindowsError
+
+pub fn get_trace_logger_handle_raw(@core.RawAddress) -> @core.RawWin32Call[UInt64]
+
+pub let global_logger_name : String
+
+pub let global_logger_namea : String
+
+pub let global_logger_namew : String
+
+pub let kernel_logger_name : String
+
+pub let kernel_logger_namea : String
+
+pub let kernel_logger_namew : String
+
+pub let max_event_data_descriptors : UInt
+
+pub let max_event_filter_data_size : UInt
+
+pub let max_event_filter_event_id_count : UInt
+
+pub let max_event_filter_event_name_size : UInt
+
+pub let max_event_filter_payload_size : UInt
+
+pub let max_event_filter_pid_count : UInt
+
+pub let max_event_filters_count : UInt
+
+pub let max_mof_fields : UInt
+
+pub let max_payload_predicates : UInt
+
+pub fn open_trace_a(@b09f46551805a00e.EVENTTRACELOGFILEA_3138d4eb1c64) -> UInt64 raise @core.WindowsError
+
+pub fn open_trace_a_raw(@core.RawAddress) -> @core.RawWin32Call[UInt64]
+
+pub fn open_trace_from_buffer_stream(@b09f46551805a00e.ETWOPENTRACEOPTIONS_187e3e22c843, @core.RawAddress, @core.RawAddress) -> UInt64 raise @core.WindowsError
+
+pub fn open_trace_from_buffer_stream_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt64
+
+pub fn open_trace_from_file(@strings.PWStr, @b09f46551805a00e.ETWOPENTRACEOPTIONS_187e3e22c843, @b09f46551805a00e.TRACELOGFILEHEADER_8763c469ef74?) -> UInt64 raise @core.WindowsError
+
+pub fn open_trace_from_file_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt64
+
+pub fn open_trace_from_real_time_logger(@strings.PWStr, @b09f46551805a00e.ETWOPENTRACEOPTIONS_187e3e22c843, @b09f46551805a00e.TRACELOGFILEHEADER_8763c469ef74?) -> UInt64 raise @core.WindowsError
+
+pub fn open_trace_from_real_time_logger_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt64
+
+pub fn open_trace_from_real_time_logger_with_allocation_options(@strings.PWStr, @b09f46551805a00e.ETWOPENTRACEOPTIONS_187e3e22c843, UInt64, @core.RawAddress, @b09f46551805a00e.TRACELOGFILEHEADER_8763c469ef74?) -> UInt64 raise @core.WindowsError
+
+pub fn open_trace_from_real_time_logger_with_allocation_options_raw(@core.RawAddress, @core.RawAddress, UInt64, @core.RawAddress, @core.RawAddress) -> UInt64
+
+pub fn open_trace_w(@b09f46551805a00e.EVENTTRACELOGFILEW_ee7603f6e5a8) -> UInt64 raise @core.WindowsError
+
+pub fn open_trace_w_raw(@core.RawAddress) -> @core.RawWin32Call[UInt64]
+
+pub fn process_trace(@core.RawAddress, UInt, @fb66f520d7e12332.FILETIME_255c209c37ca?, @fb66f520d7e12332.FILETIME_255c209c37ca?) -> @fb66f520d7e12332.WIN32ERROR_de7527e5f234 raise @core.WindowsError
+
+pub fn process_trace_add_buffer_to_buffer_stream(UInt64, @b09f46551805a00e.ETWBUFFERHEADER_ae8ddb2d3196, UInt) -> UInt raise @core.WindowsError
+
+pub fn process_trace_add_buffer_to_buffer_stream_raw(UInt64, @core.RawAddress, UInt) -> UInt
+
+pub fn process_trace_buffer_decrement_reference(@b09f46551805a00e.ETWBUFFERHEADER_ae8ddb2d3196) -> UInt raise @core.WindowsError
+
+pub fn process_trace_buffer_decrement_reference_raw(@core.RawAddress) -> UInt
+
+pub fn process_trace_buffer_increment_reference(UInt64, @b09f46551805a00e.ETWBUFFERHEADER_ae8ddb2d3196) -> UInt raise @core.WindowsError
+
+pub fn process_trace_buffer_increment_reference_raw(UInt64, @core.RawAddress) -> UInt
+
+pub let process_trace_mode_event_record : UInt
+
+pub let process_trace_mode_raw_timestamp : UInt
+
+pub let process_trace_mode_real_time : UInt
+
+pub fn process_trace_raw(@core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn query_all_traces_a(@core.RawAddress, UInt, @core.RawAddress) -> @fb66f520d7e12332.WIN32ERROR_de7527e5f234 raise @core.WindowsError
+
+pub fn query_all_traces_a_raw(@core.RawAddress, UInt, @core.RawAddress) -> UInt
+
+pub fn query_all_traces_w(@core.RawAddress, UInt, @core.RawAddress) -> @fb66f520d7e12332.WIN32ERROR_de7527e5f234 raise @core.WindowsError
+
+pub fn query_all_traces_w_raw(@core.RawAddress, UInt, @core.RawAddress) -> UInt
+
+pub fn query_trace_a(UInt64, @strings.PStr?, @b09f46551805a00e.EVENTTRACEPROPERTIES_b06992ac5f62) -> @fb66f520d7e12332.WIN32ERROR_de7527e5f234 raise @core.WindowsError
+
+pub fn query_trace_a_raw(UInt64, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn query_trace_processing_handle(UInt64, @b09f46551805a00e.ETWPROCESSHANDLEINFOTYPE_d125d5de2cb7, @core.RawAddress, UInt, @core.RawAddress, UInt, @core.RawAddress) -> @fb66f520d7e12332.WIN32ERROR_de7527e5f234 raise @core.WindowsError
+
+pub fn query_trace_processing_handle_raw(UInt64, Int, @core.RawAddress, UInt, @core.RawAddress, UInt, @core.RawAddress) -> UInt
+
+pub fn query_trace_w(UInt64, @strings.PWStr?, @b09f46551805a00e.EVENTTRACEPROPERTIES_b06992ac5f62) -> @fb66f520d7e12332.WIN32ERROR_de7527e5f234 raise @core.WindowsError
+
+pub fn query_trace_w_raw(UInt64, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn register_trace_guids_a(@core.RawAddress, @core.RawAddress, @core.RawAddress, UInt, @b09f46551805a00e.TRACEGUIDREGISTRATION_4a2b60943890?, @strings.PStr?, @strings.PStr?, @core.RawAddress) -> UInt raise @core.WindowsError
+
+pub fn register_trace_guids_a_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn register_trace_guids_w(@core.RawAddress, @core.RawAddress, @core.RawAddress, UInt, @b09f46551805a00e.TRACEGUIDREGISTRATION_4a2b60943890?, @strings.PWStr?, @strings.PWStr?, @core.RawAddress) -> UInt raise @core.WindowsError
+
+pub fn register_trace_guids_w_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn remove_trace_callback(@core.RawAddress) -> @fb66f520d7e12332.WIN32ERROR_de7527e5f234 raise @core.WindowsError
+
+pub fn remove_trace_callback_raw(@core.RawAddress) -> UInt
+
+pub fn set_trace_callback(@core.RawAddress, @core.RawAddress) -> @fb66f520d7e12332.WIN32ERROR_de7527e5f234 raise @core.WindowsError
+
+pub fn set_trace_callback_raw(@core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn start_trace_a(@core.RawAddress, @strings.PStr, @b09f46551805a00e.EVENTTRACEPROPERTIES_b06992ac5f62) -> @fb66f520d7e12332.WIN32ERROR_de7527e5f234 raise @core.WindowsError
+
+pub fn start_trace_a_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn start_trace_w(@core.RawAddress, @strings.PWStr, @b09f46551805a00e.EVENTTRACEPROPERTIES_b06992ac5f62) -> @fb66f520d7e12332.WIN32ERROR_de7527e5f234 raise @core.WindowsError
+
+pub fn start_trace_w_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn stop_trace_a(UInt64, @strings.PStr?, @b09f46551805a00e.EVENTTRACEPROPERTIES_b06992ac5f62) -> @fb66f520d7e12332.WIN32ERROR_de7527e5f234 raise @core.WindowsError
+
+pub fn stop_trace_a_raw(UInt64, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn stop_trace_w(UInt64, @strings.PWStr?, @b09f46551805a00e.EVENTTRACEPROPERTIES_b06992ac5f62) -> @fb66f520d7e12332.WIN32ERROR_de7527e5f234 raise @core.WindowsError
+
+pub fn stop_trace_w_raw(UInt64, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub let system_alpc_kw_general : UInt64
+
+pub let system_config_kw_graphics : UInt64
+
+pub let system_config_kw_network : UInt64
+
+pub let system_config_kw_optical : UInt64
+
+pub let system_config_kw_pnp : UInt64
+
+pub let system_config_kw_services : UInt64
+
+pub let system_config_kw_storage : UInt64
+
+pub let system_config_kw_system : UInt64
+
+pub let system_cpu_kw_cache_flush : UInt64
+
+pub let system_cpu_kw_config : UInt64
+
+pub let system_cpu_kw_domain_change : UInt64
+
+pub let system_cpu_kw_spec_control : UInt64
+
+pub let system_event_type : UInt
+
+pub let system_hypervisor_kw_callouts : UInt64
+
+pub let system_hypervisor_kw_profile : UInt64
+
+pub let system_hypervisor_kw_vtl_change : UInt64
+
+pub let system_interrupt_kw_clock_interrupt : UInt64
+
+pub let system_interrupt_kw_dpc : UInt64
+
+pub let system_interrupt_kw_dpc_queue : UInt64
+
+pub let system_interrupt_kw_general : UInt64
+
+pub let system_interrupt_kw_ipi : UInt64
+
+pub let system_interrupt_kw_wdf_dpc : UInt64
+
+pub let system_interrupt_kw_wdf_interrupt : UInt64
+
+pub let system_io_kw_cc : UInt64
+
+pub let system_io_kw_disk : UInt64
+
+pub let system_io_kw_disk_init : UInt64
+
+pub let system_io_kw_drivers : UInt64
+
+pub let system_io_kw_file : UInt64
+
+pub let system_io_kw_file_init : UInt64
+
+pub let system_io_kw_filename : UInt64
+
+pub let system_io_kw_network : UInt64
+
+pub let system_io_kw_optical : UInt64
+
+pub let system_io_kw_optical_init : UInt64
+
+pub let system_io_kw_split : UInt64
+
+pub let system_io_kw_timer : UInt64
+
+pub let system_iofilter_kw_failure : UInt64
+
+pub let system_iofilter_kw_fastio : UInt64
+
+pub let system_iofilter_kw_general : UInt64
+
+pub let system_iofilter_kw_init : UInt64
+
+pub let system_lock_kw_spinlock : UInt64
+
+pub let system_lock_kw_spinlock_counters : UInt64
+
+pub let system_lock_kw_sync_objects : UInt64
+
+pub let system_memory_kw_all_faults : UInt64
+
+pub let system_memory_kw_contmem_gen : UInt64
+
+pub let system_memory_kw_footprint : UInt64
+
+pub let system_memory_kw_general : UInt64
+
+pub let system_memory_kw_hard_faults : UInt64
+
+pub let system_memory_kw_heap : UInt64
+
+pub let system_memory_kw_meminfo : UInt64
+
+pub let system_memory_kw_meminfo_ws : UInt64
+
+pub let system_memory_kw_nontradeable : UInt64
+
+pub let system_memory_kw_pfsection : UInt64
+
+pub let system_memory_kw_pool : UInt64
+
+pub let system_memory_kw_refset : UInt64
+
+pub let system_memory_kw_session : UInt64
+
+pub let system_memory_kw_vamap : UInt64
+
+pub let system_memory_kw_virtual_alloc : UInt64
+
+pub let system_memory_kw_ws : UInt64
+
+pub let system_memory_pool_filter_id : UInt
+
+pub let system_object_kw_general : UInt64
+
+pub let system_object_kw_handle : UInt64
+
+pub let system_power_kw_general : UInt64
+
+pub let system_power_kw_hiber_rundown : UInt64
+
+pub let system_power_kw_idle_selection : UInt64
+
+pub let system_power_kw_ppm_exit_latency : UInt64
+
+pub let system_power_kw_processor_idle : UInt64
+
+pub let system_process_kw_dbgprint : UInt64
+
+pub let system_process_kw_debug_events : UInt64
+
+pub let system_process_kw_freeze : UInt64
+
+pub let system_process_kw_general : UInt64
+
+pub let system_process_kw_inswap : UInt64
+
+pub let system_process_kw_job : UInt64
+
+pub let system_process_kw_loader : UInt64
+
+pub let system_process_kw_perf_counter : UInt64
+
+pub let system_process_kw_thread : UInt64
+
+pub let system_process_kw_wake_counter : UInt64
+
+pub let system_process_kw_wake_drop : UInt64
+
+pub let system_process_kw_wake_event : UInt64
+
+pub let system_process_kw_worker_thread : UInt64
+
+pub let system_profile_kw_general : UInt64
+
+pub let system_profile_kw_pmc_profile : UInt64
+
+pub let system_registry_kw_general : UInt64
+
+pub let system_registry_kw_hive : UInt64
+
+pub let system_registry_kw_notification : UInt64
+
+pub let system_scheduler_kw_affinity : UInt64
+
+pub let system_scheduler_kw_anti_starvation : UInt64
+
+pub let system_scheduler_kw_autoboost : UInt64
+
+pub let system_scheduler_kw_compact_cswitch : UInt64
+
+pub let system_scheduler_kw_context_switch : UInt64
+
+pub let system_scheduler_kw_cpu_partition : UInt64
+
+pub let system_scheduler_kw_dispatcher : UInt64
+
+pub let system_scheduler_kw_ideal_processor : UInt64
+
+pub let system_scheduler_kw_kernel_queue : UInt64
+
+pub let system_scheduler_kw_load_balancer : UInt64
+
+pub let system_scheduler_kw_priority : UInt64
+
+pub let system_scheduler_kw_ready_queue : UInt64
+
+pub let system_scheduler_kw_schedule_thread : UInt64
+
+pub let system_scheduler_kw_should_yield : UInt64
+
+pub let system_scheduler_kw_thread_feedback_read : UInt64
+
+pub let system_scheduler_kw_workload_class_update : UInt64
+
+pub let system_scheduler_kw_xscheduler : UInt64
+
+pub let system_syscall_kw_general : UInt64
+
+pub let system_timer_kw_clock_timer : UInt64
+
+pub let system_timer_kw_general : UInt64
+
+pub fn tdh_aggregate_payload_filters(UInt, @core.RawAddress, @core.RawAddress, @b09f46551805a00e.EVENTFILTERDESCRIPTOR_6d5857412cef) -> UInt raise @core.WindowsError
+
+pub fn tdh_aggregate_payload_filters_raw(UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn tdh_cleanup_payload_event_filter_descriptor(@b09f46551805a00e.EVENTFILTERDESCRIPTOR_6d5857412cef) -> UInt raise @core.WindowsError
+
+pub fn tdh_cleanup_payload_event_filter_descriptor_raw(@core.RawAddress) -> UInt
+
+pub fn tdh_close_decoding_handle(Int64) -> UInt raise @core.WindowsError
+
+pub fn tdh_close_decoding_handle_raw(Int64) -> UInt
+
+pub fn tdh_create_payload_filter(@core.RawAddress, @b09f46551805a00e.EVENTDESCRIPTOR_6663bc93c138, Byte, UInt, @b09f46551805a00e.PAYLOADFILTERPREDICATE_732a343f9c2e, @core.RawAddress) -> UInt raise @core.WindowsError
+
+pub fn tdh_create_payload_filter_raw(@core.RawAddress, @core.RawAddress, UInt, UInt, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn tdh_delete_payload_filter(@core.RawAddress) -> UInt raise @core.WindowsError
+
+pub fn tdh_delete_payload_filter_raw(@core.RawAddress) -> UInt
+
+pub fn tdh_enumerate_manifest_provider_events(@core.RawAddress, @b09f46551805a00e.PROVIDEREVENTINFO_156673061606?, @core.RawAddress) -> UInt raise @core.WindowsError
+
+pub fn tdh_enumerate_manifest_provider_events_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn tdh_enumerate_provider_field_information(@core.RawAddress, @b09f46551805a00e.EVENTFIELDTYPE_9edcf7d5dfb1, @b09f46551805a00e.PROVIDERFIELDINFOARRAY_22d829a8d651?, @core.RawAddress) -> UInt raise @core.WindowsError
+
+pub fn tdh_enumerate_provider_field_information_raw(@core.RawAddress, Int, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn tdh_enumerate_provider_filters(@core.RawAddress, UInt, @b09f46551805a00e.TDHCONTEXT_3895d222ce16?, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt raise @core.WindowsError
+
+pub fn tdh_enumerate_provider_filters_raw(@core.RawAddress, UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn tdh_enumerate_providers(@b09f46551805a00e.PROVIDERENUMERATIONINFO_77c5fc2a1574?, @core.RawAddress) -> UInt raise @core.WindowsError
+
+pub fn tdh_enumerate_providers_for_decoding_source(@b09f46551805a00e.DECODINGSOURCE_3c070dab96ec, @b09f46551805a00e.PROVIDERENUMERATIONINFO_77c5fc2a1574?, UInt, @core.RawAddress) -> UInt raise @core.WindowsError
+
+pub fn tdh_enumerate_providers_for_decoding_source_raw(Int, @core.RawAddress, UInt, @core.RawAddress) -> UInt
+
+pub fn tdh_enumerate_providers_raw(@core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn tdh_format_property(@b09f46551805a00e.TRACEEVENTINFO_d3ae88407b43, @b09f46551805a00e.EVENTMAPINFO_9ecf0d37d5bb?, UInt, UInt16, UInt16, UInt16, UInt16, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt raise @core.WindowsError
+
+pub fn tdh_format_property_raw(@core.RawAddress, @core.RawAddress, UInt, UInt, UInt, UInt, UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn tdh_get_decoding_parameter(Int64, @b09f46551805a00e.TDHCONTEXT_3895d222ce16) -> UInt raise @core.WindowsError
+
+pub fn tdh_get_decoding_parameter_raw(Int64, @core.RawAddress) -> UInt
+
+pub fn tdh_get_event_information(@b09f46551805a00e.EVENTRECORD_2805219cf028, UInt, @b09f46551805a00e.TDHCONTEXT_3895d222ce16?, @b09f46551805a00e.TRACEEVENTINFO_d3ae88407b43?, @core.RawAddress) -> UInt raise @core.WindowsError
+
+pub fn tdh_get_event_information_raw(@core.RawAddress, UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn tdh_get_event_map_information(@b09f46551805a00e.EVENTRECORD_2805219cf028, @core.RawAddress, @b09f46551805a00e.EVENTMAPINFO_9ecf0d37d5bb?, @core.RawAddress) -> UInt raise @core.WindowsError
+
+pub fn tdh_get_event_map_information_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn tdh_get_manifest_event_information(@core.RawAddress, @b09f46551805a00e.EVENTDESCRIPTOR_6663bc93c138, @b09f46551805a00e.TRACEEVENTINFO_d3ae88407b43?, @core.RawAddress) -> UInt raise @core.WindowsError
+
+pub fn tdh_get_manifest_event_information_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn tdh_get_property(@b09f46551805a00e.EVENTRECORD_2805219cf028, UInt, @b09f46551805a00e.TDHCONTEXT_3895d222ce16?, UInt, @b09f46551805a00e.PROPERTYDATADESCRIPTOR_f69d91981fec, UInt, @core.RawAddress) -> UInt raise @core.WindowsError
+
+pub fn tdh_get_property_raw(@core.RawAddress, UInt, @core.RawAddress, UInt, @core.RawAddress, UInt, @core.RawAddress) -> UInt
+
+pub fn tdh_get_property_size(@b09f46551805a00e.EVENTRECORD_2805219cf028, UInt, @b09f46551805a00e.TDHCONTEXT_3895d222ce16?, UInt, @b09f46551805a00e.PROPERTYDATADESCRIPTOR_f69d91981fec, @core.RawAddress) -> UInt raise @core.WindowsError
+
+pub fn tdh_get_property_size_raw(@core.RawAddress, UInt, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn tdh_get_wpp_message(Int64, @b09f46551805a00e.EVENTRECORD_2805219cf028, @core.RawAddress, @core.RawAddress) -> UInt raise @core.WindowsError
+
+pub fn tdh_get_wpp_message_raw(Int64, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn tdh_get_wpp_property(Int64, @b09f46551805a00e.EVENTRECORD_2805219cf028, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt raise @core.WindowsError
+
+pub fn tdh_get_wpp_property_raw(Int64, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn tdh_load_manifest(@core.RawAddress) -> UInt raise @core.WindowsError
+
+pub fn tdh_load_manifest_from_binary(@core.RawAddress) -> UInt raise @core.WindowsError
+
+pub fn tdh_load_manifest_from_binary_raw(@core.RawAddress) -> UInt
+
+pub fn tdh_load_manifest_from_memory(@core.RawAddress, UInt) -> UInt raise @core.WindowsError
+
+pub fn tdh_load_manifest_from_memory_raw(@core.RawAddress, UInt) -> UInt
+
+pub fn tdh_load_manifest_raw(@core.RawAddress) -> UInt
+
+pub fn tdh_open_decoding_handle(@core.RawAddress) -> UInt raise @core.WindowsError
+
+pub fn tdh_open_decoding_handle_raw(@core.RawAddress) -> UInt
+
+pub fn tdh_query_provider_field_information(@core.RawAddress, UInt64, @b09f46551805a00e.EVENTFIELDTYPE_9edcf7d5dfb1, @b09f46551805a00e.PROVIDERFIELDINFOARRAY_22d829a8d651?, @core.RawAddress) -> UInt raise @core.WindowsError
+
+pub fn tdh_query_provider_field_information_raw(@core.RawAddress, UInt64, Int, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn tdh_set_decoding_parameter(Int64, @b09f46551805a00e.TDHCONTEXT_3895d222ce16) -> UInt raise @core.WindowsError
+
+pub fn tdh_set_decoding_parameter_raw(Int64, @core.RawAddress) -> UInt
+
+pub fn tdh_unload_manifest(@core.RawAddress) -> UInt raise @core.WindowsError
+
+pub fn tdh_unload_manifest_from_memory(@core.RawAddress, UInt) -> UInt raise @core.WindowsError
+
+pub fn tdh_unload_manifest_from_memory_raw(@core.RawAddress, UInt) -> UInt
+
+pub fn tdh_unload_manifest_raw(@core.RawAddress) -> UInt
+
+pub fn trace_configure_last_branch_record(UInt64, @b09f46551805a00e.TRACELBRCONFIGURATION_3f2c250ba7fb, @b09f46551805a00e.CLASSICEVENTID_9cc7e85eacc0, UInt) -> UInt raise @core.WindowsError
+
+pub fn trace_configure_last_branch_record_raw(UInt64, Int, @core.RawAddress, UInt) -> UInt
+
+pub fn trace_event(UInt64, @b09f46551805a00e.EVENTTRACEHEADER_6b55475734f5) -> @fb66f520d7e12332.WIN32ERROR_de7527e5f234 raise @core.WindowsError
+
+pub fn trace_event_instance(UInt64, @b09f46551805a00e.EVENTINSTANCEHEADER_a01e33060f77, @b09f46551805a00e.EVENTINSTANCEINFO_dc691074881b, @b09f46551805a00e.EVENTINSTANCEINFO_dc691074881b?) -> UInt raise @core.WindowsError
+
+pub fn trace_event_instance_raw(UInt64, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn trace_event_raw(UInt64, @core.RawAddress) -> UInt
+
+pub let trace_header_flag_log_wnode : UInt
+
+pub let trace_header_flag_traced_guid : UInt
+
+pub let trace_header_flag_use_guid_ptr : UInt
+
+pub let trace_header_flag_use_mof_ptr : UInt
+
+pub let trace_header_flag_use_timestamp : UInt
+
+pub let trace_lbr_event_opcode : UInt
+
+pub let trace_lbr_maximum_events : UInt
+
+pub let trace_level_critical : UInt
+
+pub let trace_level_error : UInt
+
+pub let trace_level_fatal : UInt
+
+pub let trace_level_information : UInt
+
+pub let trace_level_none : UInt
+
+pub let trace_level_reserved6 : UInt
+
+pub let trace_level_reserved7 : UInt
+
+pub let trace_level_reserved8 : UInt
+
+pub let trace_level_reserved9 : UInt
+
+pub let trace_level_verbose : UInt
+
+pub let trace_level_warning : UInt
+
+pub let trace_message_flag_mask : UInt
+
+pub let trace_message_performance_timestamp : UInt
+
+pub let trace_message_pointer32 : UInt
+
+pub let trace_message_pointer64 : UInt
+
+pub fn trace_message_va(UInt64, @b09f46551805a00e.TRACEMESSAGEFLAGS_7f286e1428c8, @core.RawAddress, UInt16, @core.RawAddress) -> @fb66f520d7e12332.WIN32ERROR_de7527e5f234 raise @core.WindowsError
+
+pub fn trace_message_va_raw(UInt64, UInt, @core.RawAddress, UInt, @core.RawAddress) -> UInt
+
+pub let trace_provider_flag_legacy : UInt
+
+pub let trace_provider_flag_pre_enable : UInt
+
+pub fn trace_query_information(UInt64, @b09f46551805a00e.TRACEQUERYINFOCLASS_c23682c1423b, @core.RawAddress, UInt, @core.RawAddress) -> @fb66f520d7e12332.WIN32ERROR_de7527e5f234 raise @core.WindowsError
+
+pub fn trace_query_information_raw(UInt64, Int, @core.RawAddress, UInt, @core.RawAddress) -> UInt
+
+pub fn trace_set_information(UInt64, @b09f46551805a00e.TRACEQUERYINFOCLASS_c23682c1423b, @core.RawAddress, UInt) -> @fb66f520d7e12332.WIN32ERROR_de7527e5f234 raise @core.WindowsError
+
+pub fn trace_set_information_raw(UInt64, Int, @core.RawAddress, UInt) -> UInt
+
+pub let tracelog_access_kernel_logger : UInt
+
+pub let tracelog_access_realtime : UInt
+
+pub let tracelog_create_inproc : UInt
+
+pub let tracelog_create_ondisk : UInt
+
+pub let tracelog_create_realtime : UInt
+
+pub let tracelog_guid_enable : UInt
+
+pub let tracelog_join_group : UInt
+
+pub let tracelog_log_event : UInt
+
+pub let tracelog_register_guids : UInt
+
+pub let typedef_tracelogger_handle : UInt
+
+pub fn unregister_trace_guids(UInt64) -> UInt raise @core.WindowsError
+
+pub fn unregister_trace_guids_raw(UInt64) -> UInt
+
+pub fn update_trace_a(UInt64, @strings.PStr?, @b09f46551805a00e.EVENTTRACEPROPERTIES_b06992ac5f62) -> @fb66f520d7e12332.WIN32ERROR_de7527e5f234 raise @core.WindowsError
+
+pub fn update_trace_a_raw(UInt64, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn update_trace_w(UInt64, @strings.PWStr?, @b09f46551805a00e.EVENTTRACEPROPERTIES_b06992ac5f62) -> @fb66f520d7e12332.WIN32ERROR_de7527e5f234 raise @core.WindowsError
+
+pub fn update_trace_w_raw(UInt64, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub let wmi_global_logger_id : UInt
+
+pub let wmi_guidtype_data : UInt
+
+pub let wmi_guidtype_event : UInt
+
+pub let wmi_guidtype_trace : UInt
+
+pub let wmi_guidtype_tracecontrol : UInt
+
+pub let wmiguid_execute : UInt
+
+pub let wmiguid_notification : UInt
+
+pub let wmiguid_query : UInt
+
+pub let wmiguid_read_description : UInt
+
+pub let wmiguid_set : UInt
+
+pub let wmireg_flag_event_only_guid : UInt
+
+pub let wmireg_flag_expensive : UInt
+
+pub let wmireg_flag_instance_basename : UInt
+
+pub let wmireg_flag_instance_list : UInt
+
+pub let wmireg_flag_instance_pdo : UInt
+
+pub let wmireg_flag_remove_guid : UInt
+
+pub let wmireg_flag_reserved1 : UInt
+
+pub let wmireg_flag_reserved2 : UInt
+
+pub let wmireg_flag_trace_control_guid : UInt
+
+pub let wmireg_flag_traced_guid : UInt
+
+pub let wnode_flag_all_data : UInt
+
+pub let wnode_flag_ansi_instancenames : UInt
+
+pub let wnode_flag_event_item : UInt
+
+pub let wnode_flag_event_reference : UInt
+
+pub let wnode_flag_fixed_instance_size : UInt
+
+pub let wnode_flag_instances_same : UInt
+
+pub let wnode_flag_internal : UInt
+
+pub let wnode_flag_log_wnode : UInt
+
+pub let wnode_flag_method_item : UInt
+
+pub let wnode_flag_no_header : UInt
+
+pub let wnode_flag_pdo_instance_names : UInt
+
+pub let wnode_flag_persist_event : UInt
+
+pub let wnode_flag_send_data_block : UInt
+
+pub let wnode_flag_severity_mask : UInt
+
+pub let wnode_flag_single_instance : UInt
+
+pub let wnode_flag_single_item : UInt
+
+pub let wnode_flag_static_instance_names : UInt
+
+pub let wnode_flag_too_small : UInt
+
+pub let wnode_flag_traced_guid : UInt
+
+pub let wnode_flag_use_guid_ptr : UInt
+
+pub let wnode_flag_use_mof_ptr : UInt
+
+pub let wnode_flag_use_timestamp : UInt
+
+pub let wnode_flag_versioned_properties : UInt
+
+// Errors
+
+// Types and methods
+
+// Type aliases
+pub using @b09f46551805a00e {type CLASSICEVENTID_9cc7e85eacc0 as CLASSICEVENTID}
+
+pub using @b09f46551805a00e {type CONTROLTRACEHANDLE_c6834a2fccb8 as CONTROLTRACEHANDLE}
+
+pub using @b09f46551805a00e {type CTraceRelogger_206d3e5ccfa9 as CTraceRelogger}
+
+pub using @b09f46551805a00e {type DECODINGSOURCE_3c070dab96ec as DECODINGSOURCE}
+
+pub using @b09f46551805a00e {type ENABLECALLBACKENABLEDSTATE_19a2ecff66f2 as ENABLECALLBACKENABLEDSTATE}
+
+pub using @b09f46551805a00e {type ENABLETRACEPARAMETERS_231c33faa611 as ENABLETRACEPARAMETERS}
+
+pub using @b09f46551805a00e {type ENABLETRACEPARAMETERSV1_42d35f4e423e as ENABLETRACEPARAMETERSV1}
+
+pub using @b09f46551805a00e {type ETWBUFFERCALLBACKINFORMATION_1c80e84179db as ETWBUFFERCALLBACKINFORMATION}
+
+pub using @b09f46551805a00e {type ETWBUFFERCONTEXT_110cbeaf5e50 as ETWBUFFERCONTEXT}
+
+pub using @b09f46551805a00e {type ETWBUFFERCONTEXTAnonymousEUnion_194e53fcab90 as ETWBUFFERCONTEXTAnonymousEUnion}
+
+pub using @b09f46551805a00e {type ETWBUFFERCONTEXTAnonymousEUnionAnonymousEStruct_3994f403732c as ETWBUFFERCONTEXTAnonymousEUnionAnonymousEStruct}
+
+pub using @b09f46551805a00e {type ETWBUFFERHEADER_ae8ddb2d3196 as ETWBUFFERHEADER}
+
+pub using @b09f46551805a00e {type ETWCOMPRESSIONRESUMPTIONMODE_6e29dbe7b67d as ETWCOMPRESSIONRESUMPTIONMODE}
+
+pub using @b09f46551805a00e {type ETWCONTEXTREGISTERTYPES_6dd458df6483 as ETWCONTEXTREGISTERTYPES}
+
+pub using @b09f46551805a00e {type ETWOPENTRACEOPTIONS_187e3e22c843 as ETWOPENTRACEOPTIONS}
+
+pub using @b09f46551805a00e {type ETWPMCCOUNTEROWNER_86b834bec78c as ETWPMCCOUNTEROWNER}
+
+pub using @b09f46551805a00e {type ETWPMCCOUNTEROWNERSHIPSTATUS_248a477737c2 as ETWPMCCOUNTEROWNERSHIPSTATUS}
+
+pub using @b09f46551805a00e {type ETWPMCCOUNTEROWNERTYPE_cd51a6c8a1d4 as ETWPMCCOUNTEROWNERTYPE}
+
+pub using @b09f46551805a00e {type ETWPMCSESSIONINFO_32161ec0d454 as ETWPMCSESSIONINFO}
+
+pub using @b09f46551805a00e {type ETWPROCESSHANDLEINFOTYPE_d125d5de2cb7 as ETWPROCESSHANDLEINFOTYPE}
+
+pub using @b09f46551805a00e {type ETWPROCESSTRACEMODES_d02d2108f2cf as ETWPROCESSTRACEMODES}
+
+pub using @b09f46551805a00e {type ETWPROVIDERTRAITTYPE_23785fd5b6dd as ETWPROVIDERTRAITTYPE}
+
+pub using @b09f46551805a00e {type ETWTRACEPARTITIONINFORMATION_fa1c1d636f82 as ETWTRACEPARTITIONINFORMATION}
+
+pub using @b09f46551805a00e {type ETWTRACEPARTITIONINFORMATIONV2_58ce77bffc72 as ETWTRACEPARTITIONINFORMATIONV2}
+
+pub using @b09f46551805a00e {type EVENTDATADESCRIPTOR_bdfbb3b555ba as EVENTDATADESCRIPTOR}
+
+pub using @b09f46551805a00e {type EVENTDATADESCRIPTORAnonymousEUnion_c0d7a436dcfb as EVENTDATADESCRIPTORAnonymousEUnion}
+
+pub using @b09f46551805a00e {type EVENTDATADESCRIPTORAnonymousEUnionAnonymousEStruct_5be847385d8f as EVENTDATADESCRIPTORAnonymousEUnionAnonymousEStruct}
+
+pub using @b09f46551805a00e {type EVENTDESCRIPTOR_6663bc93c138 as EVENTDESCRIPTOR}
+
+pub using @b09f46551805a00e {type EVENTEXTENDEDITEMEVENTKEY_b8b782db2bf8 as EVENTEXTENDEDITEMEVENTKEY}
+
+pub using @b09f46551805a00e {type EVENTEXTENDEDITEMINSTANCE_f216f389381a as EVENTEXTENDEDITEMINSTANCE}
+
+pub using @b09f46551805a00e {type EVENTEXTENDEDITEMPEBSINDEX_217c45b1ab27 as EVENTEXTENDEDITEMPEBSINDEX}
+
+pub using @b09f46551805a00e {type EVENTEXTENDEDITEMPMCCOUNTERS_a5b402b36263 as EVENTEXTENDEDITEMPMCCOUNTERS}
+
+pub using @b09f46551805a00e {type EVENTEXTENDEDITEMPROCESSSTARTKEY_5c20ec3c0f51 as EVENTEXTENDEDITEMPROCESSSTARTKEY}
+
+pub using @b09f46551805a00e {type EVENTEXTENDEDITEMRELATEDACTIVITYID_541a5b44bd8d as EVENTEXTENDEDITEMRELATEDACTIVITYID}
+
+pub using @b09f46551805a00e {type EVENTEXTENDEDITEMSTACKKEY32_39528e706cfa as EVENTEXTENDEDITEMSTACKKEY32}
+
+pub using @b09f46551805a00e {type EVENTEXTENDEDITEMSTACKKEY64_b9d5fc027375 as EVENTEXTENDEDITEMSTACKKEY64}
+
+pub using @b09f46551805a00e {type EVENTEXTENDEDITEMSTACKTRACE32_7c17a9813f2e as EVENTEXTENDEDITEMSTACKTRACE32}
+
+pub using @b09f46551805a00e {type EVENTEXTENDEDITEMSTACKTRACE64_39a0b44e8eb3 as EVENTEXTENDEDITEMSTACKTRACE64}
+
+pub using @b09f46551805a00e {type EVENTEXTENDEDITEMTSID_126dc237677b as EVENTEXTENDEDITEMTSID}
+
+pub using @b09f46551805a00e {type EVENTFIELDTYPE_9edcf7d5dfb1 as EVENTFIELDTYPE}
+
+pub using @b09f46551805a00e {type EVENTFILTERDESCRIPTOR_6d5857412cef as EVENTFILTERDESCRIPTOR}
+
+pub using @b09f46551805a00e {type EVENTFILTEREVENTID_f2b379d365dd as EVENTFILTEREVENTID}
+
+pub using @b09f46551805a00e {type EVENTFILTEREVENTNAME_3a229fd2b67b as EVENTFILTEREVENTNAME}
+
+pub using @b09f46551805a00e {type EVENTFILTERHEADER_e1ce8ff2130a as EVENTFILTERHEADER}
+
+pub using @b09f46551805a00e {type EVENTFILTERLEVELKW_12bf2ad3949d as EVENTFILTERLEVELKW}
+
+pub using @b09f46551805a00e {type EVENTHEADER_4bdfa6aad7d5 as EVENTHEADER}
+
+pub using @b09f46551805a00e {type EVENTHEADERAnonymousEUnion_04be5e3b24d0 as EVENTHEADERAnonymousEUnion}
+
+pub using @b09f46551805a00e {type EVENTHEADERAnonymousEUnionAnonymousEStruct_37598b7558d1 as EVENTHEADERAnonymousEUnionAnonymousEStruct}
+
+pub using @b09f46551805a00e {type EVENTHEADEREXTENDEDDATAITEM_1af81830b751 as EVENTHEADEREXTENDEDDATAITEM}
+
+pub using @b09f46551805a00e {type EVENTHEADEREXTENDEDDATAITEMAnonymousEStruct_c3e0ead369cc as EVENTHEADEREXTENDEDDATAITEMAnonymousEStruct}
+
+pub using @b09f46551805a00e {type EVENTINFOCLASS_b0b2666963c7 as EVENTINFOCLASS}
+
+pub using @b09f46551805a00e {type EVENTINSTANCEHEADER_a01e33060f77 as EVENTINSTANCEHEADER}
+
+pub using @b09f46551805a00e {type EVENTINSTANCEHEADERAnonymous1EUnion_803c65f4f87e as EVENTINSTANCEHEADERAnonymous1EUnion}
+
+pub using @b09f46551805a00e {type EVENTINSTANCEHEADERAnonymous1EUnionAnonymousEStruct_b7cca29609d5 as EVENTINSTANCEHEADERAnonymous1EUnionAnonymousEStruct}
+
+pub using @b09f46551805a00e {type EVENTINSTANCEHEADERAnonymous2EUnion_8ee127592442 as EVENTINSTANCEHEADERAnonymous2EUnion}
+
+pub using @b09f46551805a00e {type EVENTINSTANCEHEADERAnonymous2EUnionClassEStruct_4114ae92777c as EVENTINSTANCEHEADERAnonymous2EUnionClassEStruct}
+
+pub using @b09f46551805a00e {type EVENTINSTANCEHEADERAnonymous3EUnion_4c64c6b58da3 as EVENTINSTANCEHEADERAnonymous3EUnion}
+
+pub using @b09f46551805a00e {type EVENTINSTANCEHEADERAnonymous3EUnionAnonymous1EStruct_c63a87c8217c as EVENTINSTANCEHEADERAnonymous3EUnionAnonymous1EStruct}
+
+pub using @b09f46551805a00e {type EVENTINSTANCEHEADERAnonymous3EUnionAnonymous2EStruct_612387d86c8f as EVENTINSTANCEHEADERAnonymous3EUnionAnonymous2EStruct}
+
+pub using @b09f46551805a00e {type EVENTINSTANCEINFO_dc691074881b as EVENTINSTANCEINFO}
+
+pub using @b09f46551805a00e {type EVENTMAPENTRY_d4b362456622 as EVENTMAPENTRY}
+
+pub using @b09f46551805a00e {type EVENTMAPENTRYAnonymousEUnion_ada677e2e9e4 as EVENTMAPENTRYAnonymousEUnion}
+
+pub using @b09f46551805a00e {type EVENTMAPINFO_9ecf0d37d5bb as EVENTMAPINFO}
+
+pub using @b09f46551805a00e {type EVENTMAPINFOAnonymousEUnion_60091395cacb as EVENTMAPINFOAnonymousEUnion}
+
+pub using @b09f46551805a00e {type EVENTPROPERTYINFO_38e36fa4fc47 as EVENTPROPERTYINFO}
+
+pub using @b09f46551805a00e {type EVENTPROPERTYINFOAnonymous1EUnion_5e7015edd3cb as EVENTPROPERTYINFOAnonymous1EUnion}
+
+pub using @b09f46551805a00e {type EVENTPROPERTYINFOAnonymous1EUnionCustomSchemaType_3df236d245b4 as EVENTPROPERTYINFOAnonymous1EUnionCustomSchemaType}
+
+pub using @b09f46551805a00e {type EVENTPROPERTYINFOAnonymous1EUnionNonStructType_d4204282ce44 as EVENTPROPERTYINFOAnonymous1EUnionNonStructType}
+
+pub using @b09f46551805a00e {type EVENTPROPERTYINFOAnonymous1EUnionStructType_07ab0c99305a as EVENTPROPERTYINFOAnonymous1EUnionStructType}
+
+pub using @b09f46551805a00e {type EVENTPROPERTYINFOAnonymous2EUnion_3a0fac46921b as EVENTPROPERTYINFOAnonymous2EUnion}
+
+pub using @b09f46551805a00e {type EVENTPROPERTYINFOAnonymous3EUnion_36e58d024a84 as EVENTPROPERTYINFOAnonymous3EUnion}
+
+pub using @b09f46551805a00e {type EVENTPROPERTYINFOAnonymous4EUnion_6a9b5e554019 as EVENTPROPERTYINFOAnonymous4EUnion}
+
+pub using @b09f46551805a00e {type EVENTPROPERTYINFOAnonymous4EUnionAnonymousEStruct_66950dd28f9e as EVENTPROPERTYINFOAnonymous4EUnionAnonymousEStruct}
+
+pub using @b09f46551805a00e {type EVENTRECORD_2805219cf028 as EVENTRECORD}
+
+pub using @b09f46551805a00e {type EVENTSECURITYOPERATION_79ba176f8fc3 as EVENTSECURITYOPERATION}
+
+pub using @b09f46551805a00e {type EVENTTRACE_d9d8324b4501 as EVENTTRACE}
+
+pub using @b09f46551805a00e {type EVENTTRACEAnonymousEUnion_4ae4f379b675 as EVENTTRACEAnonymousEUnion}
+
+pub using @b09f46551805a00e {type EVENTTRACECONTROL_0d66acbbb4eb as EVENTTRACECONTROL}
+
+pub using @b09f46551805a00e {type EVENTTRACEFLAG_83c8e3de8ffd as EVENTTRACEFLAG}
+
+pub using @b09f46551805a00e {type EVENTTRACEHEADER_6b55475734f5 as EVENTTRACEHEADER}
+
+pub using @b09f46551805a00e {type EVENTTRACEHEADERAnonymous1EUnion_f293d4e263ed as EVENTTRACEHEADERAnonymous1EUnion}
+
+pub using @b09f46551805a00e {type EVENTTRACEHEADERAnonymous1EUnionAnonymousEStruct_beef6b40b0d9 as EVENTTRACEHEADERAnonymous1EUnionAnonymousEStruct}
+
+pub using @b09f46551805a00e {type EVENTTRACEHEADERAnonymous2EUnion_30d042edb2ff as EVENTTRACEHEADERAnonymous2EUnion}
+
+pub using @b09f46551805a00e {type EVENTTRACEHEADERAnonymous2EUnionClassEStruct_86b6da81b89a as EVENTTRACEHEADERAnonymous2EUnionClassEStruct}
+
+pub using @b09f46551805a00e {type EVENTTRACEHEADERAnonymous3EUnion_235e0a3037a8 as EVENTTRACEHEADERAnonymous3EUnion}
+
+pub using @b09f46551805a00e {type EVENTTRACEHEADERAnonymous4EUnion_98957d46c06b as EVENTTRACEHEADERAnonymous4EUnion}
+
+pub using @b09f46551805a00e {type EVENTTRACEHEADERAnonymous4EUnionAnonymous1EStruct_bcaf8e75907b as EVENTTRACEHEADERAnonymous4EUnionAnonymous1EStruct}
+
+pub using @b09f46551805a00e {type EVENTTRACEHEADERAnonymous4EUnionAnonymous2EStruct_aeb2c0fa7873 as EVENTTRACEHEADERAnonymous4EUnionAnonymous2EStruct}
+
+pub using @b09f46551805a00e {type EVENTTRACELOGFILEA_3138d4eb1c64 as EVENTTRACELOGFILEA}
+
+pub using @b09f46551805a00e {type EVENTTRACELOGFILEAAnonymous1EUnion_1d9fbaa8aecb as EVENTTRACELOGFILEAAnonymous1EUnion}
+
+pub using @b09f46551805a00e {type EVENTTRACELOGFILEAAnonymous2EUnion_33aeb2993b72 as EVENTTRACELOGFILEAAnonymous2EUnion}
+
+pub using @b09f46551805a00e {type EVENTTRACELOGFILEW_ee7603f6e5a8 as EVENTTRACELOGFILEW}
+
+pub using @b09f46551805a00e {type EVENTTRACELOGFILEWAnonymous1EUnion_9f943e9e9a00 as EVENTTRACELOGFILEWAnonymous1EUnion}
+
+pub using @b09f46551805a00e {type EVENTTRACELOGFILEWAnonymous2EUnion_dab1435b82e0 as EVENTTRACELOGFILEWAnonymous2EUnion}
+
+pub using @b09f46551805a00e {type EVENTTRACEPROPERTIES_b06992ac5f62 as EVENTTRACEPROPERTIES}
+
+pub using @b09f46551805a00e {type EVENTTRACEPROPERTIESAnonymousEUnion_80b2728ef9b0 as EVENTTRACEPROPERTIESAnonymousEUnion}
+
+pub using @b09f46551805a00e {type EVENTTRACEPROPERTIESV2_9317028c3d4a as EVENTTRACEPROPERTIESV2}
+
+pub using @b09f46551805a00e {type EVENTTRACEPROPERTIESV2Anonymous1EUnion_02adf390f5fd as EVENTTRACEPROPERTIESV2Anonymous1EUnion}
+
+pub using @b09f46551805a00e {type EVENTTRACEPROPERTIESV2Anonymous2EUnion_d2958313ce5f as EVENTTRACEPROPERTIESV2Anonymous2EUnion}
+
+pub using @b09f46551805a00e {type EVENTTRACEPROPERTIESV2Anonymous2EUnionAnonymousEStruct_7ff45f7afce6 as EVENTTRACEPROPERTIESV2Anonymous2EUnionAnonymousEStruct}
+
+pub using @b09f46551805a00e {type EVENTTRACEPROPERTIESV2Anonymous3EUnion_87e6832ae180 as EVENTTRACEPROPERTIESV2Anonymous3EUnion}
+
+pub using @b09f46551805a00e {type EVENTTRACEPROPERTIESV2Anonymous3EUnionAnonymousEStruct_2e18d6dbd4e9 as EVENTTRACEPROPERTIESV2Anonymous3EUnionAnonymousEStruct}
+
+pub using @b09f46551805a00e {type ITraceEvent_2d74b8972927 as ITraceEvent}
+
+pub using @b09f46551805a00e {type ITraceEventCallback_0d74541e9e30 as ITraceEventCallback}
+
+pub using @b09f46551805a00e {type ITraceRelogger_6b39f8cb4afa as ITraceRelogger}
+
+pub using @b09f46551805a00e {type MAPFLAGS_5f841c89e804 as MAPFLAGS}
+
+pub using @b09f46551805a00e {type MAPVALUETYPE_b0a2ca3016ee as MAPVALUETYPE}
+
+pub using @b09f46551805a00e {type MOFFIELD_4c7e8ca20688 as MOFFIELD}
+
+pub using @b09f46551805a00e {type OFFSETINSTANCEDATAANDLENGTH_de4777f42130 as OFFSETINSTANCEDATAANDLENGTH}
+
+pub using @b09f46551805a00e {type PAYLOADFILTERPREDICATE_732a343f9c2e as PAYLOADFILTERPREDICATE}
+
+pub using @b09f46551805a00e {type PAYLOADOPERATOR_84b37f80c68c as PAYLOADOPERATOR}
+
+pub using @b09f46551805a00e {type PENABLECALLBACK_b5262f0c77d3 as PENABLECALLBACK}
+
+pub using @b09f46551805a00e {type PETWBUFFERCALLBACK_b00d34378bd4 as PETWBUFFERCALLBACK}
+
+pub using @b09f46551805a00e {type PETWBUFFERCOMPLETIONCALLBACK_ee4b70071afc as PETWBUFFERCOMPLETIONCALLBACK}
+
+pub using @b09f46551805a00e {type PEVENTCALLBACK_5cbd77e2775e as PEVENTCALLBACK}
+
+pub using @b09f46551805a00e {type PEVENTRECORDCALLBACK_36b96b7ab487 as PEVENTRECORDCALLBACK}
+
+pub using @b09f46551805a00e {type PEVENTTRACEBUFFERCALLBACKA_a4fabfbd8c4e as PEVENTTRACEBUFFERCALLBACKA}
+
+pub using @b09f46551805a00e {type PEVENTTRACEBUFFERCALLBACKW_0f1f21b5963b as PEVENTTRACEBUFFERCALLBACKW}
+
+pub using @b09f46551805a00e {type PROCESSTRACEHANDLE_92f1514097b0 as PROCESSTRACEHANDLE}
+
+pub using @b09f46551805a00e {type PROFILESOURCEINFO_5d3142bcafc2 as PROFILESOURCEINFO}
+
+pub using @b09f46551805a00e {type PROPERTYDATADESCRIPTOR_f69d91981fec as PROPERTYDATADESCRIPTOR}
+
+pub using @b09f46551805a00e {type PROPERTYFLAGS_5e46e81a2802 as PROPERTYFLAGS}
+
+pub using @b09f46551805a00e {type PROVIDERENUMERATIONINFO_77c5fc2a1574 as PROVIDERENUMERATIONINFO}
+
+pub using @b09f46551805a00e {type PROVIDEREVENTINFO_156673061606 as PROVIDEREVENTINFO}
+
+pub using @b09f46551805a00e {type PROVIDERFIELDINFO_6d85c3072ad3 as PROVIDERFIELDINFO}
+
+pub using @b09f46551805a00e {type PROVIDERFIELDINFOARRAY_22d829a8d651 as PROVIDERFIELDINFOARRAY}
+
+pub using @b09f46551805a00e {type PROVIDERFILTERINFO_43a4d15e109d as PROVIDERFILTERINFO}
+
+pub using @b09f46551805a00e {type REGHANDLE_1106b45cb99c as REGHANDLE}
+
+pub using @b09f46551805a00e {type RELOGSTREAMHANDLE_52ca09fecb12 as RELOGSTREAMHANDLE}
+
+pub using @b09f46551805a00e {type TDHCONTEXT_3895d222ce16 as TDHCONTEXT}
+
+pub using @b09f46551805a00e {type TDHCONTEXTTYPE_f755e0b3ebc5 as TDHCONTEXTTYPE}
+
+pub using @b09f46551805a00e {type TDHHANDLE_b15d9b9141fe as TDHHANDLE}
+
+pub using @b09f46551805a00e {type TDHINTYPE_178ee09da9dc as TDHINTYPE}
+
+pub using @b09f46551805a00e {type TDHOUTTYPE_2e15c40b1cf0 as TDHOUTTYPE}
+
+pub using @b09f46551805a00e {type TEMPLATEFLAGS_b4a900c305ab as TEMPLATEFLAGS}
+
+pub using @b09f46551805a00e {type TRACECONTEXTREGISTERINFO_36f86a40ec90 as TRACECONTEXTREGISTERINFO}
+
+pub using @b09f46551805a00e {type TRACEENABLEINFO_8a97d57feb28 as TRACEENABLEINFO}
+
+pub using @b09f46551805a00e {type TRACEEVENTINFO_d3ae88407b43 as TRACEEVENTINFO}
+
+pub using @b09f46551805a00e {type TRACEEVENTINFOAnonymous1EUnion_96db24a290ad as TRACEEVENTINFOAnonymous1EUnion}
+
+pub using @b09f46551805a00e {type TRACEEVENTINFOAnonymous2EUnion_b38e6ccd330f as TRACEEVENTINFOAnonymous2EUnion}
+
+pub using @b09f46551805a00e {type TRACEEVENTINFOAnonymous3EUnion_85fa22a81b50 as TRACEEVENTINFOAnonymous3EUnion}
+
+pub using @b09f46551805a00e {type TRACEEVENTINFOAnonymous3EUnionAnonymousEStruct_99d3e8c1f007 as TRACEEVENTINFOAnonymous3EUnionAnonymousEStruct}
+
+pub using @b09f46551805a00e {type TRACEGUIDINFO_d2b330898284 as TRACEGUIDINFO}
+
+pub using @b09f46551805a00e {type TRACEGUIDPROPERTIES_0cd79306b17c as TRACEGUIDPROPERTIES}
+
+pub using @b09f46551805a00e {type TRACEGUIDREGISTRATION_4a2b60943890 as TRACEGUIDREGISTRATION}
+
+pub using @b09f46551805a00e {type TRACELBRCONFIGURATION_3f2c250ba7fb as TRACELBRCONFIGURATION}
+
+pub using @b09f46551805a00e {type TRACELOGFILEHEADER_8763c469ef74 as TRACELOGFILEHEADER}
+
+pub using @b09f46551805a00e {type TRACELOGFILEHEADER32_3f9942a7391d as TRACELOGFILEHEADER32}
+
+pub using @b09f46551805a00e {type TRACELOGFILEHEADER32Anonymous1EUnion_2a2636199c6d as TRACELOGFILEHEADER32Anonymous1EUnion}
+
+pub using @b09f46551805a00e {type TRACELOGFILEHEADER32Anonymous1EUnionVersionDetailEStruct_c85705ec4f40 as TRACELOGFILEHEADER32Anonymous1EUnionVersionDetailEStruct}
+
+pub using @b09f46551805a00e {type TRACELOGFILEHEADER32Anonymous2EUnion_e67d8581faea as TRACELOGFILEHEADER32Anonymous2EUnion}
+
+pub using @b09f46551805a00e {type TRACELOGFILEHEADER32Anonymous2EUnionAnonymousEStruct_47ad5ead9189 as TRACELOGFILEHEADER32Anonymous2EUnionAnonymousEStruct}
+
+pub using @b09f46551805a00e {type TRACELOGFILEHEADER64_6d0e0ffd7c74 as TRACELOGFILEHEADER64}
+
+pub using @b09f46551805a00e {type TRACELOGFILEHEADER64Anonymous1EUnion_0a718b0ceaaa as TRACELOGFILEHEADER64Anonymous1EUnion}
+
+pub using @b09f46551805a00e {type TRACELOGFILEHEADER64Anonymous1EUnionVersionDetailEStruct_130a9c0faaf7 as TRACELOGFILEHEADER64Anonymous1EUnionVersionDetailEStruct}
+
+pub using @b09f46551805a00e {type TRACELOGFILEHEADER64Anonymous2EUnion_19abf7a2278a as TRACELOGFILEHEADER64Anonymous2EUnion}
+
+pub using @b09f46551805a00e {type TRACELOGFILEHEADER64Anonymous2EUnionAnonymousEStruct_f56e8a0c995e as TRACELOGFILEHEADER64Anonymous2EUnionAnonymousEStruct}
+
+pub using @b09f46551805a00e {type TRACELOGFILEHEADERAnonymous1EUnion_84b1e42bcf94 as TRACELOGFILEHEADERAnonymous1EUnion}
+
+pub using @b09f46551805a00e {type TRACELOGFILEHEADERAnonymous1EUnionVersionDetailEStruct_f7c965d04f55 as TRACELOGFILEHEADERAnonymous1EUnionVersionDetailEStruct}
+
+pub using @b09f46551805a00e {type TRACELOGFILEHEADERAnonymous2EUnion_29715c595fb4 as TRACELOGFILEHEADERAnonymous2EUnion}
+
+pub using @b09f46551805a00e {type TRACELOGFILEHEADERAnonymous2EUnionAnonymousEStruct_025084934f85 as TRACELOGFILEHEADERAnonymous2EUnionAnonymousEStruct}
+
+pub using @b09f46551805a00e {type TRACEMESSAGEFLAGS_7f286e1428c8 as TRACEMESSAGEFLAGS}
+
+pub using @b09f46551805a00e {type TRACEPERIODICCAPTURESTATEINFO_193edbd58aff as TRACEPERIODICCAPTURESTATEINFO}
+
+pub using @b09f46551805a00e {type TRACEPROFILEINTERVAL_6c91e1617a01 as TRACEPROFILEINTERVAL}
+
+pub using @b09f46551805a00e {type TRACEPROVIDERINFO_57093a9f3258 as TRACEPROVIDERINFO}
+
+pub using @b09f46551805a00e {type TRACEPROVIDERINSTANCEINFO_dcb99fe54741 as TRACEPROVIDERINSTANCEINFO}
+
+pub using @b09f46551805a00e {type TRACEQUERYINFOCLASS_c23682c1423b as TRACEQUERYINFOCLASS}
+
+pub using @b09f46551805a00e {type TRACESTACKCACHINGINFO_a3693ffb4c40 as TRACESTACKCACHINGINFO}
+
+pub using @b09f46551805a00e {type TRACEVERSIONINFO_bd11e16412bb as TRACEVERSIONINFO}
+
+pub using @b09f46551805a00e {type WMIDPREQUEST_b8382d5b2138 as WMIDPREQUEST}
+
+pub using @b09f46551805a00e {type WMIDPREQUESTCODE_295e8d23cec3 as WMIDPREQUESTCODE}
+
+pub using @b09f46551805a00e {type WMIREGGUIDW_8224e07cdeb4 as WMIREGGUIDW}
+
+pub using @b09f46551805a00e {type WMIREGGUIDWAnonymousEUnion_77b85014499a as WMIREGGUIDWAnonymousEUnion}
+
+pub using @b09f46551805a00e {type WMIREGINFOW_09d6b54038a5 as WMIREGINFOW}
+
+pub using @b09f46551805a00e {type WNODEALLDATA_5cfe23d104df as WNODEALLDATA}
+
+pub using @b09f46551805a00e {type WNODEALLDATAAnonymousEUnion_24eb9f794da0 as WNODEALLDATAAnonymousEUnion}
+
+pub using @b09f46551805a00e {type WNODEEVENTITEM_c67652cfb1ca as WNODEEVENTITEM}
+
+pub using @b09f46551805a00e {type WNODEEVENTREFERENCE_47d0b914183b as WNODEEVENTREFERENCE}
+
+pub using @b09f46551805a00e {type WNODEEVENTREFERENCEAnonymousEUnion_70b6b42810c9 as WNODEEVENTREFERENCEAnonymousEUnion}
+
+pub using @b09f46551805a00e {type WNODEHEADER_8e16277dcfdf as WNODEHEADER}
+
+pub using @b09f46551805a00e {type WNODEHEADERAnonymous1EUnion_02a93e2408aa as WNODEHEADERAnonymous1EUnion}
+
+pub using @b09f46551805a00e {type WNODEHEADERAnonymous1EUnionAnonymousEStruct_8ac48306f8bf as WNODEHEADERAnonymous1EUnionAnonymousEStruct}
+
+pub using @b09f46551805a00e {type WNODEHEADERAnonymous2EUnion_8b691c30f528 as WNODEHEADERAnonymous2EUnion}
+
+pub using @b09f46551805a00e {type WNODEMETHODITEM_393f5a8f66bc as WNODEMETHODITEM}
+
+pub using @b09f46551805a00e {type WNODESINGLEINSTANCE_eb334b08203c as WNODESINGLEINSTANCE}
+
+pub using @b09f46551805a00e {type WNODESINGLEITEM_a1eae664a20f as WNODESINGLEITEM}
+
+pub using @b09f46551805a00e {type WNODETOOSMALL_e17bf1e82389 as WNODETOOSMALL}
+
+// Traits

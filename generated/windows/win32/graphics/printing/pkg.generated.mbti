@@ -1,0 +1,4471 @@
+// Generated using `moon info`, DON'T EDIT IT
+package "moonbit-community/win32api/windows/win32/graphics/printing"
+
+import {
+  "moonbit-community/win32api/runtime/core",
+  "moonbit-community/win32api/runtime/strings",
+  "moonbit-community/win32api/scc/0ae5f82d71485476",
+  "moonbit-community/win32api/scc/9ab35bf48b3f5013",
+  "moonbit-community/win32api/scc/fb66f520d7e12332",
+  "moonbit-community/win32api/scc/ff18be0a9a154b4a",
+}
+
+// Values
+pub fn abort_printer(@core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn abort_printer_raw(@core.RawAddress) -> Int
+
+pub fn add_form_a(@core.RawAddress, UInt, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn add_form_a_raw(@core.RawAddress, UInt, @core.RawAddress) -> Int
+
+pub fn add_form_w(@core.RawAddress, UInt, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn add_form_w_raw(@core.RawAddress, UInt, @core.RawAddress) -> Int
+
+pub fn add_job_a(@core.RawAddress, UInt, @core.RawAddress, UInt, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn add_job_a_raw(@core.RawAddress, UInt, @core.RawAddress, UInt, @core.RawAddress) -> Int
+
+pub fn add_job_w(@core.RawAddress, UInt, @core.RawAddress, UInt, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn add_job_w_raw(@core.RawAddress, UInt, @core.RawAddress, UInt, @core.RawAddress) -> Int
+
+pub fn add_monitor_a(@strings.PStr?, UInt, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn add_monitor_a_raw(@core.RawAddress, UInt, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn add_monitor_w(@strings.PWStr?, UInt, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn add_monitor_w_raw(@core.RawAddress, UInt, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn add_port_a(@strings.PStr?, @core.RawAddress, @strings.PStr) -> Bool raise @core.WindowsError
+
+pub fn add_port_a_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn add_port_w(@strings.PWStr?, @core.RawAddress, @strings.PWStr) -> Bool raise @core.WindowsError
+
+pub fn add_port_w_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn add_print_device_object(@core.RawAddress, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn add_print_device_object_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn add_print_processor_a(@strings.PStr?, @strings.PStr?, @strings.PStr, @strings.PStr) -> Bool raise @core.WindowsError
+
+pub fn add_print_processor_a_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn add_print_processor_w(@strings.PWStr?, @strings.PWStr?, @strings.PWStr, @strings.PWStr) -> Bool raise @core.WindowsError
+
+pub fn add_print_processor_w_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn add_print_providor_a(@core.RawAddress, UInt, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn add_print_providor_a_raw(@core.RawAddress, UInt, @core.RawAddress) -> Int
+
+pub fn add_print_providor_w(@core.RawAddress, UInt, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn add_print_providor_w_raw(@core.RawAddress, UInt, @core.RawAddress) -> Int
+
+pub fn add_printer_a(@strings.PStr?, UInt, @core.RawAddress) -> @core.RawAddress raise @core.WindowsError
+
+pub fn add_printer_a_raw(@core.RawAddress, UInt, @core.RawAddress) -> @core.RawWin32Call[@core.RawAddress]
+
+pub fn add_printer_connection2_a(@core.RawAddress, @strings.PStr, UInt, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn add_printer_connection2_a_raw(@core.RawAddress, @core.RawAddress, UInt, @core.RawAddress) -> Int
+
+pub fn add_printer_connection2_w(@core.RawAddress, @strings.PWStr, UInt, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn add_printer_connection2_w_raw(@core.RawAddress, @core.RawAddress, UInt, @core.RawAddress) -> Int
+
+pub fn add_printer_connection_a(@strings.PStr) -> Bool raise @core.WindowsError
+
+pub fn add_printer_connection_a_raw(@core.RawAddress) -> Int
+
+pub fn add_printer_connection_w(@strings.PWStr) -> Bool raise @core.WindowsError
+
+pub fn add_printer_connection_w_raw(@core.RawAddress) -> Int
+
+pub fn add_printer_driver_a(@strings.PStr?, UInt, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn add_printer_driver_a_raw(@core.RawAddress, UInt, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn add_printer_driver_ex_a(@strings.PStr?, UInt, @core.RawAddress, UInt) -> Bool raise @core.WindowsError
+
+pub fn add_printer_driver_ex_a_raw(@core.RawAddress, UInt, @core.RawAddress, UInt) -> Int
+
+pub fn add_printer_driver_ex_w(@strings.PWStr?, UInt, @core.RawAddress, UInt) -> Bool raise @core.WindowsError
+
+pub fn add_printer_driver_ex_w_raw(@core.RawAddress, UInt, @core.RawAddress, UInt) -> Int
+
+pub fn add_printer_driver_w(@strings.PWStr?, UInt, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn add_printer_driver_w_raw(@core.RawAddress, UInt, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn add_printer_w(@strings.PWStr?, UInt, @core.RawAddress) -> @core.RawAddress raise @core.WindowsError
+
+pub fn add_printer_w_raw(@core.RawAddress, UInt, @core.RawAddress) -> @core.RawWin32Call[@core.RawAddress]
+
+pub fn advanced_document_properties_a(@core.RawAddress, @core.RawAddress, @core.RawAddress, @9ab35bf48b3f5013.DEVMODEA_3b3132d875c8?, @9ab35bf48b3f5013.DEVMODEA_3b3132d875c8?) -> Int raise @core.WindowsError
+
+pub fn advanced_document_properties_a_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn advanced_document_properties_w(@core.RawAddress, @core.RawAddress, @core.RawAddress, @9ab35bf48b3f5013.DEVMODEW_12540d748e26?, @9ab35bf48b3f5013.DEVMODEW_12540d748e26?) -> Int raise @core.WindowsError
+
+pub fn advanced_document_properties_w_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub let apd_copy_all_files : UInt
+
+pub let apd_copy_from_directory : UInt
+
+pub let apd_copy_new_files : UInt
+
+pub let apd_strict_downgrade : UInt
+
+pub let apd_strict_upgrade : UInt
+
+pub fn append_printer_notify_info_data(@ff18be0a9a154b4a.PRINTERNOTIFYINFO_079796848eb1, @ff18be0a9a154b4a.PRINTERNOTIFYINFODATA_a80cd393877f?, UInt) -> Bool raise @core.WindowsError
+
+pub fn append_printer_notify_info_data_raw(@core.RawAddress, @core.RawAddress, UInt) -> Int
+
+pub let applycpsui_no_newdef : UInt
+
+pub let applycpsui_ok_cancel_button : UInt
+
+pub let bidi_access_administrator : UInt
+
+pub let bidi_access_user : UInt
+
+pub let bidi_action_enum_schema : String
+
+pub let bidi_action_get : String
+
+pub let bidi_action_get_all : String
+
+pub let bidi_action_get_with_argument : String
+
+pub let bidi_action_set : String
+
+pub let booklet_edge_left : UInt
+
+pub let booklet_edge_right : UInt
+
+pub let booklet_print : UInt
+
+pub let border_print : UInt
+
+pub fn call_router_find_first_printer_change_notification(@core.RawAddress, UInt, UInt, @core.RawAddress, @ff18be0a9a154b4a.PRINTERNOTIFYOPTIONS_df009e4d2bc9) -> UInt raise @core.WindowsError
+
+pub fn call_router_find_first_printer_change_notification_raw(@core.RawAddress, UInt, UInt, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub let cc_big5 : Int
+
+pub let cc_cp437 : Int
+
+pub let cc_cp850 : Int
+
+pub let cc_cp863 : Int
+
+pub let cc_default : UInt
+
+pub let cc_gb2312 : Int
+
+pub let cc_isc : Int
+
+pub let cc_jis : Int
+
+pub let cc_jis_ank : Int
+
+pub let cc_noprecnv : UInt
+
+pub let cc_ns86 : Int
+
+pub let cc_sjis : Int
+
+pub let cc_tca : Int
+
+pub let cc_wansung : Int
+
+pub let cdm_convert : UInt
+
+pub let cdm_convert351 : UInt
+
+pub let cdm_driver_default : UInt
+
+pub let chkboxs_false_pdata : UInt
+
+pub let chkboxs_false_true : UInt
+
+pub let chkboxs_no_pdata : UInt
+
+pub let chkboxs_no_yes : UInt
+
+pub let chkboxs_none_pdata : UInt
+
+pub let chkboxs_off_on : UInt
+
+pub let chkboxs_off_pdata : UInt
+
+pub fn close_printer(@core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn close_printer_raw(@core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn close_spool_file_handle(@core.RawAddress, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn close_spool_file_handle_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub let color_optimization : UInt
+
+pub fn commit_spool_data(@core.RawAddress, @core.RawAddress, UInt) -> @core.RawAddress raise @core.WindowsError
+
+pub fn commit_spool_data_raw(@core.RawAddress, @core.RawAddress, UInt) -> @core.RawAddress
+
+pub fn common_property_sheet_uia(@core.RawAddress, @core.RawAddress, Int64, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn common_property_sheet_uia_raw(@core.RawAddress, @core.RawAddress, Int64, @core.RawAddress) -> Int
+
+pub fn common_property_sheet_uiw(@core.RawAddress, @core.RawAddress, Int64, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn common_property_sheet_uiw_raw(@core.RawAddress, @core.RawAddress, Int64, @core.RawAddress) -> Int
+
+pub fn configure_port_a(@strings.PStr?, @core.RawAddress, @strings.PStr) -> Bool raise @core.WindowsError
+
+pub fn configure_port_a_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn configure_port_w(@strings.PWStr?, @core.RawAddress, @strings.PWStr) -> Bool raise @core.WindowsError
+
+pub fn configure_port_w_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn connect_to_printer_dlg(@core.RawAddress, UInt) -> @core.RawAddress raise @core.WindowsError
+
+pub fn connect_to_printer_dlg_raw(@core.RawAddress, UInt) -> @core.RawAddress
+
+pub let copyfile_event_add_printer_connection : UInt
+
+pub let copyfile_event_delete_printer : UInt
+
+pub let copyfile_event_delete_printer_connection : UInt
+
+pub let copyfile_event_files_changed : UInt
+
+pub let copyfile_event_set_printer_dataex : UInt
+
+pub let copyfile_flag_client_spooler : UInt
+
+pub let copyfile_flag_server_spooler : UInt
+
+pub fn core_printer_driver_installed_a(@strings.PStr?, @strings.PStr?, Bytes, @fb66f520d7e12332.FILETIME_255c209c37ca, UInt64, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn core_printer_driver_installed_a_raw(@core.RawAddress, @core.RawAddress, Bytes, Bytes, UInt64, @core.RawAddress) -> Int
+
+pub fn core_printer_driver_installed_w(@strings.PWStr?, @strings.PWStr?, Bytes, @fb66f520d7e12332.FILETIME_255c209c37ca, UInt64, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn core_printer_driver_installed_w_raw(@core.RawAddress, @core.RawAddress, Bytes, Bytes, UInt64, @core.RawAddress) -> Int
+
+pub let cpsfunc_add_hpropsheetpage : UInt
+
+pub let cpsfunc_add_pcompropsheetui : UInt
+
+pub let cpsfunc_add_pcompropsheetuia : UInt
+
+pub let cpsfunc_add_pcompropsheetuiw : UInt
+
+pub let cpsfunc_add_pfnpropsheetui : UInt
+
+pub let cpsfunc_add_pfnpropsheetuia : UInt
+
+pub let cpsfunc_add_pfnpropsheetuiw : UInt
+
+pub let cpsfunc_add_propsheetpage : UInt
+
+pub let cpsfunc_add_propsheetpagea : UInt
+
+pub let cpsfunc_add_propsheetpagew : UInt
+
+pub let cpsfunc_delete_hcompropsheet : UInt
+
+pub let cpsfunc_do_apply_cpsui : UInt
+
+pub let cpsfunc_get_hpsuipages : UInt
+
+pub let cpsfunc_get_pagecount : UInt
+
+pub let cpsfunc_get_pfnpropsheetui_icon : UInt
+
+pub let cpsfunc_ignore_cpsui_psn_apply : UInt
+
+pub let cpsfunc_insert_psuipage : UInt
+
+pub let cpsfunc_insert_psuipagea : UInt
+
+pub let cpsfunc_insert_psuipagew : UInt
+
+pub let cpsfunc_load_cpsui_icon : UInt
+
+pub let cpsfunc_load_cpsui_string : UInt
+
+pub let cpsfunc_load_cpsui_stringa : UInt
+
+pub let cpsfunc_load_cpsui_stringw : UInt
+
+pub let cpsfunc_query_datablock : UInt
+
+pub let cpsfunc_set_datablock : UInt
+
+pub let cpsfunc_set_dmpub_hidebits : UInt
+
+pub let cpsfunc_set_fusion_context : UInt
+
+pub let cpsfunc_set_hstartpage : UInt
+
+pub let cpsfunc_set_psuipage_icon : UInt
+
+pub let cpsfunc_set_psuipage_title : UInt
+
+pub let cpsfunc_set_psuipage_titlea : UInt
+
+pub let cpsfunc_set_psuipage_titlew : UInt
+
+pub let cpsfunc_set_result : UInt
+
+pub let cpsui_cancel : UInt
+
+pub let cpsui_ok : UInt
+
+pub let cpsui_rebootsystem : UInt
+
+pub let cpsui_restartwindows : UInt
+
+pub let cpsuicb_action_items_applied : UInt
+
+pub let cpsuicb_action_no_apply_exit : UInt
+
+pub let cpsuicb_action_none : UInt
+
+pub let cpsuicb_action_optif_changed : UInt
+
+pub let cpsuicb_action_reinit_items : UInt
+
+pub let cpsuicb_reason_about : UInt
+
+pub let cpsuicb_reason_applynow : UInt
+
+pub let cpsuicb_reason_dlgproc : UInt
+
+pub let cpsuicb_reason_ecb_changed : UInt
+
+pub let cpsuicb_reason_extpush : UInt
+
+pub let cpsuicb_reason_items_reverted : UInt
+
+pub let cpsuicb_reason_killactive : UInt
+
+pub let cpsuicb_reason_optitem_setfocus : UInt
+
+pub let cpsuicb_reason_pushbutton : UInt
+
+pub let cpsuicb_reason_sel_changed : UInt
+
+pub let cpsuicb_reason_setactive : UInt
+
+pub let cpsuicb_reason_undo_changes : UInt
+
+pub let cpsuif_about_callback : UInt
+
+pub let cpsuif_iconid_as_hicon : UInt
+
+pub let cpsuif_update_permission : UInt
+
+pub fn create_print_async_notify_channel(@strings.PWStr?, @core.RawAddress, @ff18be0a9a154b4a.PrintAsyncNotifyUserFilter_cbbdf1872363, @ff18be0a9a154b4a.PrintAsyncNotifyConversationStyle_57999f0c34d8, @core.RawAddress, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn create_print_async_notify_channel_raw(@core.RawAddress, @core.RawAddress, Int, Int, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn create_printer_ic(@core.RawAddress, @9ab35bf48b3f5013.DEVMODEW_12540d748e26?) -> @core.RawAddress raise @core.WindowsError
+
+pub fn create_printer_ic_raw(@core.RawAddress, @core.RawAddress) -> @core.RawAddress
+
+pub let customparam_height : UInt
+
+pub let customparam_heightoffset : UInt
+
+pub let customparam_max : UInt
+
+pub let customparam_orientation : UInt
+
+pub let customparam_width : UInt
+
+pub let customparam_widthoffset : UInt
+
+pub let def_priority : UInt
+
+pub fn delete_form_a(@core.RawAddress, @strings.PStr) -> Bool raise @core.WindowsError
+
+pub fn delete_form_a_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn delete_form_w(@core.RawAddress, @strings.PWStr) -> Bool raise @core.WindowsError
+
+pub fn delete_form_w_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn delete_job_named_property(@core.RawAddress, UInt, @strings.PWStr) -> UInt raise @core.WindowsError
+
+pub fn delete_job_named_property_raw(@core.RawAddress, UInt, @core.RawAddress) -> UInt
+
+pub fn delete_monitor_a(@strings.PStr?, @strings.PStr?, @strings.PStr) -> Bool raise @core.WindowsError
+
+pub fn delete_monitor_a_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn delete_monitor_w(@strings.PWStr?, @strings.PWStr?, @strings.PWStr) -> Bool raise @core.WindowsError
+
+pub fn delete_monitor_w_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn delete_port_a(@strings.PStr?, @core.RawAddress, @strings.PStr) -> Bool raise @core.WindowsError
+
+pub fn delete_port_a_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn delete_port_w(@strings.PWStr?, @core.RawAddress, @strings.PWStr) -> Bool raise @core.WindowsError
+
+pub fn delete_port_w_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn delete_print_processor_a(@strings.PStr?, @strings.PStr?, @strings.PStr) -> Bool raise @core.WindowsError
+
+pub fn delete_print_processor_a_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn delete_print_processor_w(@strings.PWStr?, @strings.PWStr?, @strings.PWStr) -> Bool raise @core.WindowsError
+
+pub fn delete_print_processor_w_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn delete_print_providor_a(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn delete_print_providor_a_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn delete_print_providor_w(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn delete_print_providor_w_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn delete_printer(@core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn delete_printer_connection_a(@core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn delete_printer_connection_a_raw(@core.RawAddress) -> Int
+
+pub fn delete_printer_connection_w(@core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn delete_printer_connection_w_raw(@core.RawAddress) -> Int
+
+pub fn delete_printer_data_a(@core.RawAddress, @strings.PStr) -> UInt raise @core.WindowsError
+
+pub fn delete_printer_data_a_raw(@core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn delete_printer_data_ex_a(@core.RawAddress, @strings.PStr, @strings.PStr) -> UInt raise @core.WindowsError
+
+pub fn delete_printer_data_ex_a_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn delete_printer_data_ex_w(@core.RawAddress, @strings.PWStr, @strings.PWStr) -> UInt raise @core.WindowsError
+
+pub fn delete_printer_data_ex_w_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn delete_printer_data_w(@core.RawAddress, @strings.PWStr) -> UInt raise @core.WindowsError
+
+pub fn delete_printer_data_w_raw(@core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn delete_printer_driver_a(@strings.PStr?, @strings.PStr?, @strings.PStr) -> Bool raise @core.WindowsError
+
+pub fn delete_printer_driver_a_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn delete_printer_driver_ex_a(@strings.PStr?, @strings.PStr?, @strings.PStr, UInt, UInt) -> Bool raise @core.WindowsError
+
+pub fn delete_printer_driver_ex_a_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, UInt, UInt) -> Int
+
+pub fn delete_printer_driver_ex_w(@strings.PWStr?, @strings.PWStr?, @strings.PWStr, UInt, UInt) -> Bool raise @core.WindowsError
+
+pub fn delete_printer_driver_ex_w_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, UInt, UInt) -> Int
+
+pub fn delete_printer_driver_package_a(@strings.PStr?, @strings.PStr, @strings.PStr?) -> Int raise @core.WindowsError
+
+pub fn delete_printer_driver_package_a_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn delete_printer_driver_package_w(@strings.PWStr?, @strings.PWStr, @strings.PWStr?) -> Int raise @core.WindowsError
+
+pub fn delete_printer_driver_package_w_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn delete_printer_driver_w(@strings.PWStr?, @strings.PWStr?, @strings.PWStr) -> Bool raise @core.WindowsError
+
+pub fn delete_printer_driver_w_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn delete_printer_ic(@core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn delete_printer_ic_raw(@core.RawAddress) -> Int
+
+pub fn delete_printer_key_a(@core.RawAddress, @strings.PStr) -> UInt raise @core.WindowsError
+
+pub fn delete_printer_key_a_raw(@core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn delete_printer_key_w(@core.RawAddress, @strings.PWStr) -> UInt raise @core.WindowsError
+
+pub fn delete_printer_key_w_raw(@core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn delete_printer_raw(@core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn dev_query_print(@core.RawAddress, @9ab35bf48b3f5013.DEVMODEA_3b3132d875c8, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn dev_query_print_ex(@ff18be0a9a154b4a.DEVQUERYPRINTINFO_b370a0e66607) -> Bool raise @core.WindowsError
+
+pub fn dev_query_print_ex_raw(@core.RawAddress) -> Int
+
+pub fn dev_query_print_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub let df_bksp_ok : UInt
+
+pub let df_no_bold : UInt
+
+pub let df_no_double_underline : UInt
+
+pub let df_no_strikethru : UInt
+
+pub let df_noitalic : UInt
+
+pub let df_nounder : UInt
+
+pub let df_type_capsl : UInt
+
+pub let df_type_hpintellifont : UInt
+
+pub let df_type_oem1 : UInt
+
+pub let df_type_oem2 : UInt
+
+pub let df_type_pst1 : UInt
+
+pub let df_type_truetype : UInt
+
+pub let df_xm_cr : UInt
+
+pub let di_channel : UInt
+
+pub let di_memorymap_write : UInt
+
+pub let di_read_spool_job : UInt
+
+pub let dispid_printerextension_context : UInt
+
+pub let dispid_printerextension_context_driverproperties : UInt
+
+pub let dispid_printerextension_context_printerqueue : UInt
+
+pub let dispid_printerextension_context_printschematicket : UInt
+
+pub let dispid_printerextension_context_userproperties : UInt
+
+pub let dispid_printerextension_contextcollection : UInt
+
+pub let dispid_printerextension_contextcollection_count : UInt
+
+pub let dispid_printerextension_contextcollection_getat : UInt
+
+pub let dispid_printerextension_event : UInt
+
+pub let dispid_printerextension_event_ondriverevent : UInt
+
+pub let dispid_printerextension_event_onprinterqueuesenumerated : UInt
+
+pub let dispid_printerextension_eventargs : UInt
+
+pub let dispid_printerextension_eventargs_bidinotification : UInt
+
+pub let dispid_printerextension_eventargs_detailedreasonid : UInt
+
+pub let dispid_printerextension_eventargs_reasonid : UInt
+
+pub let dispid_printerextension_eventargs_request : UInt
+
+pub let dispid_printerextension_eventargs_sourceapplication : UInt
+
+pub let dispid_printerextension_eventargs_windowmodal : UInt
+
+pub let dispid_printerextension_eventargs_windowparent : UInt
+
+pub let dispid_printerextension_request : UInt
+
+pub let dispid_printerextension_request_cancel : UInt
+
+pub let dispid_printerextension_request_complete : UInt
+
+pub let dispid_printerpropertybag : UInt
+
+pub let dispid_printerpropertybag_getbool : UInt
+
+pub let dispid_printerpropertybag_getbytes : UInt
+
+pub let dispid_printerpropertybag_getint32 : UInt
+
+pub let dispid_printerpropertybag_getreadstream : UInt
+
+pub let dispid_printerpropertybag_getstring : UInt
+
+pub let dispid_printerpropertybag_getwritestream : UInt
+
+pub let dispid_printerpropertybag_setbool : UInt
+
+pub let dispid_printerpropertybag_setbytes : UInt
+
+pub let dispid_printerpropertybag_setint32 : UInt
+
+pub let dispid_printerpropertybag_setstring : UInt
+
+pub let dispid_printerqueue : UInt
+
+pub let dispid_printerqueue_getprinterqueueview : UInt
+
+pub let dispid_printerqueue_getproperties : UInt
+
+pub let dispid_printerqueue_handle : UInt
+
+pub let dispid_printerqueue_name : UInt
+
+pub let dispid_printerqueue_sendbidiquery : UInt
+
+pub let dispid_printerqueue_sendbidisetrequestasync : UInt
+
+pub let dispid_printerqueueevent : UInt
+
+pub let dispid_printerqueueevent_onbidiresponsereceived : UInt
+
+pub let dispid_printerqueueview : UInt
+
+pub let dispid_printerqueueview_event : UInt
+
+pub let dispid_printerqueueview_event_onchanged : UInt
+
+pub let dispid_printerqueueview_setviewrange : UInt
+
+pub let dispid_printerscriptablepropertybag : UInt
+
+pub let dispid_printerscriptablepropertybag_getbool : UInt
+
+pub let dispid_printerscriptablepropertybag_getbytes : UInt
+
+pub let dispid_printerscriptablepropertybag_getint32 : UInt
+
+pub let dispid_printerscriptablepropertybag_getreadstream : UInt
+
+pub let dispid_printerscriptablepropertybag_getstreamasxml : UInt
+
+pub let dispid_printerscriptablepropertybag_getstring : UInt
+
+pub let dispid_printerscriptablepropertybag_getwritestream : UInt
+
+pub let dispid_printerscriptablepropertybag_setbool : UInt
+
+pub let dispid_printerscriptablepropertybag_setbytes : UInt
+
+pub let dispid_printerscriptablepropertybag_setint32 : UInt
+
+pub let dispid_printerscriptablepropertybag_setstring : UInt
+
+pub let dispid_printerscriptablesequentialstream : UInt
+
+pub let dispid_printerscriptablesequentialstream_read : UInt
+
+pub let dispid_printerscriptablesequentialstream_write : UInt
+
+pub let dispid_printerscriptablestream : UInt
+
+pub let dispid_printerscriptablestream_commit : UInt
+
+pub let dispid_printerscriptablestream_seek : UInt
+
+pub let dispid_printerscriptablestream_setsize : UInt
+
+pub let dispid_printerscriptcontext : UInt
+
+pub let dispid_printerscriptcontext_driverproperties : UInt
+
+pub let dispid_printerscriptcontext_queueproperties : UInt
+
+pub let dispid_printerscriptcontext_userproperties : UInt
+
+pub let dispid_printjobcollection : UInt
+
+pub let dispid_printjobcollection_count : UInt
+
+pub let dispid_printjobcollection_getat : UInt
+
+pub let dispid_printschema_asyncoperation : UInt
+
+pub let dispid_printschema_asyncoperation_cancel : UInt
+
+pub let dispid_printschema_asyncoperation_start : UInt
+
+pub let dispid_printschema_asyncoperationevent : UInt
+
+pub let dispid_printschema_asyncoperationevent_completed : UInt
+
+pub let dispid_printschema_capabilities : UInt
+
+pub let dispid_printschema_capabilities_getfeature : UInt
+
+pub let dispid_printschema_capabilities_getfeature_keyname : UInt
+
+pub let dispid_printschema_capabilities_getoptions : UInt
+
+pub let dispid_printschema_capabilities_getparameterdefinition : UInt
+
+pub let dispid_printschema_capabilities_getselectedoption : UInt
+
+pub let dispid_printschema_capabilities_jobcopiesmaxvalue : UInt
+
+pub let dispid_printschema_capabilities_jobcopiesminvalue : UInt
+
+pub let dispid_printschema_capabilities_pageimageablesize : UInt
+
+pub let dispid_printschema_displayableelement : UInt
+
+pub let dispid_printschema_displayableelement_displayname : UInt
+
+pub let dispid_printschema_element : UInt
+
+pub let dispid_printschema_element_name : UInt
+
+pub let dispid_printschema_element_namespaceuri : UInt
+
+pub let dispid_printschema_element_xmlnode : UInt
+
+pub let dispid_printschema_feature : UInt
+
+pub let dispid_printschema_feature_displayui : UInt
+
+pub let dispid_printschema_feature_getoption : UInt
+
+pub let dispid_printschema_feature_selectedoption : UInt
+
+pub let dispid_printschema_feature_selectiontype : UInt
+
+pub let dispid_printschema_nupoption : UInt
+
+pub let dispid_printschema_nupoption_pagespersheet : UInt
+
+pub let dispid_printschema_option : UInt
+
+pub let dispid_printschema_option_constrained : UInt
+
+pub let dispid_printschema_option_getpropertyvalue : UInt
+
+pub let dispid_printschema_option_selected : UInt
+
+pub let dispid_printschema_optioncollection : UInt
+
+pub let dispid_printschema_optioncollection_count : UInt
+
+pub let dispid_printschema_optioncollection_getat : UInt
+
+pub let dispid_printschema_pageimageablesize : UInt
+
+pub let dispid_printschema_pageimageablesize_extent_height : UInt
+
+pub let dispid_printschema_pageimageablesize_extent_width : UInt
+
+pub let dispid_printschema_pageimageablesize_imageable_height : UInt
+
+pub let dispid_printschema_pageimageablesize_imageable_width : UInt
+
+pub let dispid_printschema_pageimageablesize_origin_height : UInt
+
+pub let dispid_printschema_pageimageablesize_origin_width : UInt
+
+pub let dispid_printschema_pagemediasizeoption : UInt
+
+pub let dispid_printschema_pagemediasizeoption_height : UInt
+
+pub let dispid_printschema_pagemediasizeoption_width : UInt
+
+pub let dispid_printschema_parameterdefinition : UInt
+
+pub let dispid_printschema_parameterdefinition_datatype : UInt
+
+pub let dispid_printschema_parameterdefinition_rangemax : UInt
+
+pub let dispid_printschema_parameterdefinition_rangemin : UInt
+
+pub let dispid_printschema_parameterdefinition_unittype : UInt
+
+pub let dispid_printschema_parameterdefinition_userinputrequired : UInt
+
+pub let dispid_printschema_parameterinitializer : UInt
+
+pub let dispid_printschema_parameterinitializer_value : UInt
+
+pub let dispid_printschema_ticket : UInt
+
+pub let dispid_printschema_ticket_commitasync : UInt
+
+pub let dispid_printschema_ticket_getcapabilities : UInt
+
+pub let dispid_printschema_ticket_getfeature : UInt
+
+pub let dispid_printschema_ticket_getfeature_keyname : UInt
+
+pub let dispid_printschema_ticket_getparameterinitializer : UInt
+
+pub let dispid_printschema_ticket_jobcopiesalldocuments : UInt
+
+pub let dispid_printschema_ticket_notifyxmlchanged : UInt
+
+pub let dispid_printschema_ticket_validateasync : UInt
+
+pub let dm_advanced : UInt
+
+pub let dm_invalidate_driver_cache : UInt
+
+pub let dm_nopermission : UInt
+
+pub let dm_prompt_non_modal : UInt
+
+pub let dm_reserved : UInt
+
+pub let dm_user_default : UInt
+
+pub let dmpub_booklet_edge : UInt
+
+pub let dmpub_color : UInt
+
+pub let dmpub_copies_collate : UInt
+
+pub let dmpub_defsource : UInt
+
+pub let dmpub_dithertype : UInt
+
+pub let dmpub_duplex : UInt
+
+pub let dmpub_first : UInt
+
+pub let dmpub_formname : UInt
+
+pub let dmpub_icmintent : UInt
+
+pub let dmpub_icmmethod : UInt
+
+pub let dmpub_last : UInt
+
+pub let dmpub_manual_duplex : UInt
+
+pub let dmpub_mediatype : UInt
+
+pub let dmpub_none : UInt
+
+pub let dmpub_nup : UInt
+
+pub let dmpub_nup_direction : UInt
+
+pub let dmpub_oem_graphic_item : UInt
+
+pub let dmpub_oem_paper_item : UInt
+
+pub let dmpub_oem_root_item : UInt
+
+pub let dmpub_orientation : UInt
+
+pub let dmpub_outputbin : UInt
+
+pub let dmpub_pageorder : UInt
+
+pub let dmpub_printquality : UInt
+
+pub let dmpub_quality : UInt
+
+pub let dmpub_scale : UInt
+
+pub let dmpub_staple : UInt
+
+pub let dmpub_ttoption : UInt
+
+pub let dmpub_user : UInt
+
+pub let doc_info_internal_level : UInt
+
+pub fn document_properties_a(@core.RawAddress, @core.RawAddress, @core.RawAddress, @9ab35bf48b3f5013.DEVMODEA_3b3132d875c8?, @9ab35bf48b3f5013.DEVMODEA_3b3132d875c8?, UInt) -> Int raise @core.WindowsError
+
+pub fn document_properties_a_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, UInt) -> Int
+
+pub fn document_properties_w(@core.RawAddress, @core.RawAddress, @core.RawAddress, @9ab35bf48b3f5013.DEVMODEW_12540d748e26?, @9ab35bf48b3f5013.DEVMODEW_12540d748e26?, UInt) -> Int raise @core.WindowsError
+
+pub fn document_properties_w_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, UInt) -> Int
+
+pub let documentevent_abortdoc : UInt
+
+pub let documentevent_createdcpost : UInt
+
+pub let documentevent_createdcpre : UInt
+
+pub let documentevent_deletedc : UInt
+
+pub let documentevent_enddoc : UInt
+
+pub let documentevent_enddocpost : UInt
+
+pub let documentevent_enddocpre : UInt
+
+pub let documentevent_endpage : UInt
+
+pub let documentevent_escape : UInt
+
+pub let documentevent_failure : Int
+
+pub let documentevent_first : UInt
+
+pub let documentevent_last : UInt
+
+pub let documentevent_queryfilter : UInt
+
+pub let documentevent_resetdcpost : UInt
+
+pub let documentevent_resetdcpre : UInt
+
+pub let documentevent_spooled : UInt
+
+pub let documentevent_startdoc : UInt
+
+pub let documentevent_startdocpost : UInt
+
+pub let documentevent_startdocpre : UInt
+
+pub let documentevent_startpage : UInt
+
+pub let documentevent_success : UInt
+
+pub let documentevent_unsupported : UInt
+
+pub let documentevent_xps_addfixeddocumentpost : UInt
+
+pub let documentevent_xps_addfixeddocumentpre : UInt
+
+pub let documentevent_xps_addfixeddocumentprintticketpost : UInt
+
+pub let documentevent_xps_addfixeddocumentprintticketpre : UInt
+
+pub let documentevent_xps_addfixeddocumentsequencepost : UInt
+
+pub let documentevent_xps_addfixeddocumentsequencepre : UInt
+
+pub let documentevent_xps_addfixeddocumentsequenceprintticketpost : UInt
+
+pub let documentevent_xps_addfixeddocumentsequenceprintticketpre : UInt
+
+pub let documentevent_xps_addfixedpageepre : UInt
+
+pub let documentevent_xps_addfixedpagepost : UInt
+
+pub let documentevent_xps_addfixedpageprintticketpost : UInt
+
+pub let documentevent_xps_addfixedpageprintticketpre : UInt
+
+pub let documentevent_xps_canceljob : UInt
+
+pub let dont_send_extra_pages_for_duplex : UInt
+
+pub let down_then_left : UInt
+
+pub let down_then_right : UInt
+
+pub let dp_std_docproppage1 : UInt
+
+pub let dp_std_docproppage2 : UInt
+
+pub let dp_std_reserved_start : UInt
+
+pub let dp_std_treeviewpage : UInt
+
+pub let dpd_delete_all_files : UInt
+
+pub let dpd_delete_specific_version : UInt
+
+pub let dpd_delete_unused_files : UInt
+
+pub let dpf_iconid_as_hicon : UInt
+
+pub let dpf_use_hdlgtemplate : UInt
+
+pub let dps_nopermission : UInt
+
+pub let driver_event_delete : UInt
+
+pub let driver_event_initialize : UInt
+
+pub let driver_kernelmode : UInt
+
+pub let driver_usermode : UInt
+
+pub let dsprint_pending : UInt
+
+pub let dsprint_publish : UInt
+
+pub let dsprint_republish : UInt
+
+pub let dsprint_unpublish : UInt
+
+pub let dsprint_update : UInt
+
+pub let e_version_not_supported : UInt
+
+pub let ecbf_checkname_at_front : UInt
+
+pub let ecbf_checkname_only : UInt
+
+pub let ecbf_checkname_only_enabled : UInt
+
+pub let ecbf_iconid_as_hicon : UInt
+
+pub let ecbf_mask : UInt
+
+pub let ecbf_overlay_ecbicon_if_checked : UInt
+
+pub let ecbf_overlay_no_icon : UInt
+
+pub let ecbf_overlay_stop_icon : UInt
+
+pub let ecbf_overlay_warning_icon : UInt
+
+pub let emf_pp_color_optimization : UInt
+
+pub fn end_doc_printer(@core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn end_doc_printer_raw(@core.RawAddress) -> Int
+
+pub fn end_page_printer(@core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn end_page_printer_raw(@core.RawAddress) -> Int
+
+pub fn enum_forms_a(@core.RawAddress, UInt, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn enum_forms_a_raw(@core.RawAddress, UInt, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn enum_forms_w(@core.RawAddress, UInt, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn enum_forms_w_raw(@core.RawAddress, UInt, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn enum_job_named_properties(@core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> UInt raise @core.WindowsError
+
+pub fn enum_job_named_properties_raw(@core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn enum_jobs_a(@core.RawAddress, UInt, UInt, UInt, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn enum_jobs_a_raw(@core.RawAddress, UInt, UInt, UInt, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn enum_jobs_w(@core.RawAddress, UInt, UInt, UInt, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn enum_jobs_w_raw(@core.RawAddress, UInt, UInt, UInt, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn enum_monitors_a(@core.RawAddress, UInt, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn enum_monitors_a_raw(@core.RawAddress, UInt, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn enum_monitors_w(@core.RawAddress, UInt, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn enum_monitors_w_raw(@core.RawAddress, UInt, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn enum_ports_a(@core.RawAddress, UInt, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn enum_ports_a_raw(@core.RawAddress, UInt, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn enum_ports_w(@core.RawAddress, UInt, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn enum_ports_w_raw(@core.RawAddress, UInt, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn enum_print_processor_datatypes_a(@strings.PStr?, @strings.PStr, UInt, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn enum_print_processor_datatypes_a_raw(@core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn enum_print_processor_datatypes_w(@strings.PWStr?, @strings.PWStr, UInt, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn enum_print_processor_datatypes_w_raw(@core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn enum_print_processors_a(@strings.PStr?, @strings.PStr?, UInt, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn enum_print_processors_a_raw(@core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn enum_print_processors_w(@strings.PWStr?, @strings.PWStr?, UInt, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn enum_print_processors_w_raw(@core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn enum_printer_data_a(@core.RawAddress, UInt, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress, UInt, @core.RawAddress) -> UInt raise @core.WindowsError
+
+pub fn enum_printer_data_a_raw(@core.RawAddress, UInt, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress, UInt, @core.RawAddress) -> UInt
+
+pub fn enum_printer_data_ex_a(@core.RawAddress, @strings.PStr, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> UInt raise @core.WindowsError
+
+pub fn enum_printer_data_ex_a_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn enum_printer_data_ex_w(@core.RawAddress, @strings.PWStr, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> UInt raise @core.WindowsError
+
+pub fn enum_printer_data_ex_w_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn enum_printer_data_w(@core.RawAddress, UInt, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress, UInt, @core.RawAddress) -> UInt raise @core.WindowsError
+
+pub fn enum_printer_data_w_raw(@core.RawAddress, UInt, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress, UInt, @core.RawAddress) -> UInt
+
+pub fn enum_printer_drivers_a(@strings.PStr?, @strings.PStr?, UInt, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn enum_printer_drivers_a_raw(@core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn enum_printer_drivers_w(@strings.PWStr?, @strings.PWStr?, UInt, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn enum_printer_drivers_w_raw(@core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn enum_printer_key_a(@core.RawAddress, @strings.PStr, @core.RawAddress, UInt, @core.RawAddress) -> UInt raise @core.WindowsError
+
+pub fn enum_printer_key_a_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, UInt, @core.RawAddress) -> UInt
+
+pub fn enum_printer_key_w(@core.RawAddress, @strings.PWStr, @core.RawAddress, UInt, @core.RawAddress) -> UInt raise @core.WindowsError
+
+pub fn enum_printer_key_w_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, UInt, @core.RawAddress) -> UInt
+
+pub fn enum_printers_a(UInt, @strings.PStr?, UInt, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn enum_printers_a_raw(UInt, @core.RawAddress, UInt, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn enum_printers_w(UInt, @strings.PWStr?, UInt, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn enum_printers_w_raw(UInt, @core.RawAddress, UInt, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub let epf_iconid_as_hicon : UInt
+
+pub let epf_incl_setup_title : UInt
+
+pub let epf_mask : UInt
+
+pub let epf_no_dot_dot_dot : UInt
+
+pub let epf_overlay_no_icon : UInt
+
+pub let epf_overlay_stop_icon : UInt
+
+pub let epf_overlay_warning_icon : UInt
+
+pub let epf_push_type_dlgproc : UInt
+
+pub let epf_use_hdlgtemplate : UInt
+
+pub let err_cpsui_allocmem_failed : Int
+
+pub let err_cpsui_create_imagelist_failed : Int
+
+pub let err_cpsui_create_trackbar_failed : Int
+
+pub let err_cpsui_create_udarrow_failed : Int
+
+pub let err_cpsui_createproppage_failed : Int
+
+pub let err_cpsui_dmcopies_use_extpush : Int
+
+pub let err_cpsui_function_not_implemented : Int
+
+pub let err_cpsui_getlasterror : Int
+
+pub let err_cpsui_internal_error : Int
+
+pub let err_cpsui_invalid_dlgpage_cbsize : Int
+
+pub let err_cpsui_invalid_dlgpageidx : Int
+
+pub let err_cpsui_invalid_dmpub_tvot : Int
+
+pub let err_cpsui_invalid_dmpubid : Int
+
+pub let err_cpsui_invalid_ecb_cbsize : Int
+
+pub let err_cpsui_invalid_editbox_buf_size : Int
+
+pub let err_cpsui_invalid_editbox_psel : Int
+
+pub let err_cpsui_invalid_extpush_cbsize : Int
+
+pub let err_cpsui_invalid_lbcb_type : Int
+
+pub let err_cpsui_invalid_lparam : Int
+
+pub let err_cpsui_invalid_optitem_cbsize : Int
+
+pub let err_cpsui_invalid_optparam_cbsize : Int
+
+pub let err_cpsui_invalid_opttype_cbsize : Int
+
+pub let err_cpsui_invalid_opttype_count : Int
+
+pub let err_cpsui_invalid_pdata : Int
+
+pub let err_cpsui_invalid_pdlgpage : Int
+
+pub let err_cpsui_invalid_pushbutton_type : Int
+
+pub let err_cpsui_invalid_tvot_type : Int
+
+pub let err_cpsui_more_than_one_stdpage : Int
+
+pub let err_cpsui_more_than_one_tvpage : Int
+
+pub let err_cpsui_no_extpush_dlgtemplateid : Int
+
+pub let err_cpsui_no_propsheetpage : Int
+
+pub let err_cpsui_null_callername : Int
+
+pub let err_cpsui_null_ecb_pcheckedname : Int
+
+pub let err_cpsui_null_ecb_ptitle : Int
+
+pub let err_cpsui_null_extpush_callback : Int
+
+pub let err_cpsui_null_extpush_dlgproc : Int
+
+pub let err_cpsui_null_hinst : Int
+
+pub let err_cpsui_null_optitemname : Int
+
+pub let err_cpsui_null_poptitem : Int
+
+pub let err_cpsui_null_poptparam : Int
+
+pub let err_cpsui_subitem_diff_dlgpageidx : Int
+
+pub let err_cpsui_subitem_diff_optif_hide : Int
+
+pub let err_cpsui_too_many_dlgpages : Int
+
+pub let err_cpsui_too_many_propsheetpages : Int
+
+pub let err_cpsui_zero_optitem : Int
+
+pub let error_bidi_device_config_unchanged : UInt
+
+pub let error_bidi_device_offline : UInt
+
+pub let error_bidi_error_base : UInt
+
+pub let error_bidi_get_argument_not_supported : UInt
+
+pub let error_bidi_get_missing_argument : UInt
+
+pub let error_bidi_get_requires_argument : UInt
+
+pub let error_bidi_no_bidi_schema_extensions : UInt
+
+pub let error_bidi_no_localized_resources : UInt
+
+pub let error_bidi_schema_not_supported : UInt
+
+pub let error_bidi_schema_read_only : UInt
+
+pub let error_bidi_schema_write_only : UInt
+
+pub let error_bidi_server_offline : UInt
+
+pub let error_bidi_set_different_type : UInt
+
+pub let error_bidi_set_invalid_schemapath : UInt
+
+pub let error_bidi_set_multiple_schemapath : UInt
+
+pub let error_bidi_set_unknown_failure : UInt
+
+pub let error_bidi_status_ok : UInt
+
+pub let error_bidi_status_warning : UInt
+
+pub let error_bidi_unsupported_client_language : UInt
+
+pub let error_bidi_unsupported_resource_format : UInt
+
+pub fn ext_device_mode(@core.RawAddress, @core.RawAddress, @9ab35bf48b3f5013.DEVMODEA_3b3132d875c8?, @core.RawAddress, @core.RawAddress, @9ab35bf48b3f5013.DEVMODEA_3b3132d875c8?, @core.RawAddress, UInt) -> Int raise @core.WindowsError
+
+pub fn ext_device_mode_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, UInt) -> Int
+
+pub let fg_canchange : UInt
+
+pub let fill_with_defaults : UInt
+
+pub fn find_close_printer_change_notification(@core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn find_close_printer_change_notification_raw(@core.RawAddress) -> Int
+
+pub fn find_first_printer_change_notification(@core.RawAddress, UInt, UInt, @core.RawAddress) -> @core.RawAddress raise @core.WindowsError
+
+pub fn find_first_printer_change_notification_raw(@core.RawAddress, UInt, UInt, @core.RawAddress) -> @core.RawAddress
+
+pub fn find_next_printer_change_notification(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn find_next_printer_change_notification_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn flush_printer(@core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, UInt) -> Bool raise @core.WindowsError
+
+pub fn flush_printer_raw(@core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, UInt) -> Int
+
+pub let fnt_info_currentfontid : UInt
+
+pub let fnt_info_fontbold : UInt
+
+pub let fnt_info_fontheight : UInt
+
+pub let fnt_info_fontitalic : UInt
+
+pub let fnt_info_fontmaxwidth : UInt
+
+pub let fnt_info_fontstrikethru : UInt
+
+pub let fnt_info_fontunderline : UInt
+
+pub let fnt_info_fontwidth : UInt
+
+pub let fnt_info_graypercentage : UInt
+
+pub let fnt_info_max : UInt
+
+pub let fnt_info_nextfontid : UInt
+
+pub let fnt_info_nextglyph : UInt
+
+pub let fnt_info_printdirinccdegrees : UInt
+
+pub let fnt_info_textxres : UInt
+
+pub let fnt_info_textyres : UInt
+
+pub let font_dir_sorted : UInt
+
+pub let font_fl_devicefont : UInt
+
+pub let font_fl_glyphset_gtt : UInt
+
+pub let font_fl_glyphset_rle : UInt
+
+pub let font_fl_ifi : UInt
+
+pub let font_fl_permanent_sf : UInt
+
+pub let font_fl_reserved : UInt
+
+pub let font_fl_softfont : UInt
+
+pub let font_fl_ufm : UInt
+
+pub let form_builtin : UInt
+
+pub let form_printer : UInt
+
+pub let form_user : UInt
+
+pub fn free_print_named_property_array(UInt, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn free_print_named_property_array_raw(UInt, @core.RawAddress) -> Unit
+
+pub fn free_print_property_value(@ff18be0a9a154b4a.PrintPropertyValue_f2b3f9086b10) -> Unit raise @core.WindowsError
+
+pub fn free_print_property_value_raw(@core.RawAddress) -> Unit
+
+pub fn free_printer_notify_info(@ff18be0a9a154b4a.PRINTERNOTIFYINFO_079796848eb1) -> Bool raise @core.WindowsError
+
+pub fn free_printer_notify_info_raw(@core.RawAddress) -> Int
+
+pub fn gdi_delete_spool_file_handle(@core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn gdi_delete_spool_file_handle_raw(@core.RawAddress) -> Int
+
+pub fn gdi_end_doc_emf(@core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn gdi_end_doc_emf_raw(@core.RawAddress) -> Int
+
+pub fn gdi_end_page_emf(@core.RawAddress, UInt) -> Bool raise @core.WindowsError
+
+pub fn gdi_end_page_emf_raw(@core.RawAddress, UInt) -> Int
+
+pub fn gdi_get_dc(@core.RawAddress) -> @core.RawAddress raise @core.WindowsError
+
+pub fn gdi_get_dc_raw(@core.RawAddress) -> @core.RawAddress
+
+pub fn gdi_get_devmode_for_page(@core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn gdi_get_devmode_for_page_raw(@core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn gdi_get_page_count(@core.RawAddress) -> UInt raise @core.WindowsError
+
+pub fn gdi_get_page_count_raw(@core.RawAddress) -> UInt
+
+pub fn gdi_get_page_handle(@core.RawAddress, UInt, @core.RawAddress) -> @core.RawAddress raise @core.WindowsError
+
+pub fn gdi_get_page_handle_raw(@core.RawAddress, UInt, @core.RawAddress) -> @core.RawAddress
+
+pub fn gdi_get_spool_file_handle(@core.RawAddress, @9ab35bf48b3f5013.DEVMODEW_12540d748e26, @core.RawAddress) -> @core.RawAddress raise @core.WindowsError
+
+pub fn gdi_get_spool_file_handle_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> @core.RawAddress
+
+pub fn gdi_play_page_emf(@core.RawAddress, @core.RawAddress, @fb66f520d7e12332.RECT_dc5b788d9702, @fb66f520d7e12332.RECT_dc5b788d9702, @fb66f520d7e12332.RECT_dc5b788d9702) -> Bool raise @core.WindowsError
+
+pub fn gdi_play_page_emf_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn gdi_reset_dcemf(@core.RawAddress, @9ab35bf48b3f5013.DEVMODEW_12540d748e26) -> Bool raise @core.WindowsError
+
+pub fn gdi_reset_dcemf_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn gdi_start_doc_emf(@core.RawAddress, @0ae5f82d71485476.DOCINFOW_0a1727df73b8) -> Bool raise @core.WindowsError
+
+pub fn gdi_start_doc_emf_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn gdi_start_page_emf(@core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn gdi_start_page_emf_raw(@core.RawAddress) -> Int
+
+pub fn generate_copy_file_paths_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, UInt) -> UInt
+
+pub fn get_core_printer_drivers_a(@strings.PStr?, @strings.PStr?, @strings.PStr, UInt, @ff18be0a9a154b4a.COREPRINTERDRIVERA_3d21cff21489) -> Int raise @core.WindowsError
+
+pub fn get_core_printer_drivers_a_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, UInt, @core.RawAddress) -> Int
+
+pub fn get_core_printer_drivers_w(@strings.PWStr?, @strings.PWStr?, @strings.PWStr, UInt, @ff18be0a9a154b4a.COREPRINTERDRIVERW_636b4a20b451) -> Int raise @core.WindowsError
+
+pub fn get_core_printer_drivers_w_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, UInt, @core.RawAddress) -> Int
+
+pub fn get_cpsui_user_data(@core.RawAddress) -> UInt64 raise @core.WindowsError
+
+pub fn get_cpsui_user_data_raw(@core.RawAddress) -> UInt64
+
+pub fn get_default_printer_a(@core.RawAddress, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn get_default_printer_a_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn get_default_printer_w_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn get_form_a(@core.RawAddress, @strings.PStr, UInt, @core.RawAddress, UInt, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn get_form_a_raw(@core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, UInt, @core.RawAddress) -> Int
+
+pub fn get_form_w(@core.RawAddress, @strings.PWStr, UInt, @core.RawAddress, UInt, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn get_form_w_raw(@core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, UInt, @core.RawAddress) -> Int
+
+pub fn get_job_a(@core.RawAddress, UInt, UInt, @core.RawAddress, UInt, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn get_job_a_raw(@core.RawAddress, UInt, UInt, @core.RawAddress, UInt, @core.RawAddress) -> Int
+
+pub fn get_job_attributes(@core.RawAddress, @9ab35bf48b3f5013.DEVMODEW_12540d748e26, @ff18be0a9a154b4a.ATTRIBUTEINFO3_02777c4792e6) -> Bool raise @core.WindowsError
+
+pub fn get_job_attributes_ex(@core.RawAddress, @9ab35bf48b3f5013.DEVMODEW_12540d748e26, UInt, @core.RawAddress, UInt, UInt) -> Bool raise @core.WindowsError
+
+pub fn get_job_attributes_ex_raw(@core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, UInt, UInt) -> Int
+
+pub fn get_job_attributes_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn get_job_named_property_value(@core.RawAddress, UInt, @strings.PWStr, @ff18be0a9a154b4a.PrintPropertyValue_f2b3f9086b10) -> UInt raise @core.WindowsError
+
+pub fn get_job_named_property_value_raw(@core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn get_job_w(@core.RawAddress, UInt, UInt, @core.RawAddress, UInt, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn get_job_w_raw(@core.RawAddress, UInt, UInt, @core.RawAddress, UInt, @core.RawAddress) -> Int
+
+pub fn get_print_execution_data(@ff18be0a9a154b4a.PRINTEXECUTIONDATA_aa0caacc9497) -> Bool raise @core.WindowsError
+
+pub fn get_print_execution_data_raw(@core.RawAddress) -> Int
+
+pub fn get_print_output_info(@core.RawAddress, @strings.PWStr, @core.RawAddress, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn get_print_output_info_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn get_print_processor_directory_a(@strings.PStr?, @strings.PStr?, UInt, @core.RawAddress, UInt, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn get_print_processor_directory_a_raw(@core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, UInt, @core.RawAddress) -> Int
+
+pub fn get_print_processor_directory_w(@strings.PWStr?, @strings.PWStr?, UInt, @core.RawAddress, UInt, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn get_print_processor_directory_w_raw(@core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, UInt, @core.RawAddress) -> Int
+
+pub fn get_printer_a(@core.RawAddress, UInt, @core.RawAddress, UInt, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn get_printer_a_raw(@core.RawAddress, UInt, @core.RawAddress, UInt, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn get_printer_data_a(@core.RawAddress, @strings.PStr, @core.RawAddress, @core.RawAddress, UInt, @core.RawAddress) -> UInt raise @core.WindowsError
+
+pub fn get_printer_data_a_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, UInt, @core.RawAddress) -> UInt
+
+pub fn get_printer_data_ex_a(@core.RawAddress, @strings.PStr, @strings.PStr, @core.RawAddress, @core.RawAddress, UInt, @core.RawAddress) -> UInt raise @core.WindowsError
+
+pub fn get_printer_data_ex_a_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, UInt, @core.RawAddress) -> UInt
+
+pub fn get_printer_data_ex_w(@core.RawAddress, @strings.PWStr, @strings.PWStr, @core.RawAddress, @core.RawAddress, UInt, @core.RawAddress) -> UInt raise @core.WindowsError
+
+pub fn get_printer_data_ex_w_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, UInt, @core.RawAddress) -> UInt
+
+pub fn get_printer_data_w(@core.RawAddress, @strings.PWStr, @core.RawAddress, @core.RawAddress, UInt, @core.RawAddress) -> UInt raise @core.WindowsError
+
+pub fn get_printer_data_w_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, UInt, @core.RawAddress) -> UInt
+
+pub fn get_printer_driver2_a(@core.RawAddress, @core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, UInt, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn get_printer_driver2_a_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, UInt, @core.RawAddress) -> Int
+
+pub fn get_printer_driver2_w(@core.RawAddress, @core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, UInt, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn get_printer_driver2_w_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, UInt, @core.RawAddress) -> Int
+
+pub fn get_printer_driver_a(@core.RawAddress, @strings.PStr?, UInt, @core.RawAddress, UInt, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn get_printer_driver_a_raw(@core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, UInt, @core.RawAddress) -> Int
+
+pub fn get_printer_driver_directory_a(@strings.PStr?, @strings.PStr?, UInt, @core.RawAddress, UInt, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn get_printer_driver_directory_a_raw(@core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, UInt, @core.RawAddress) -> Int
+
+pub fn get_printer_driver_directory_w(@strings.PWStr?, @strings.PWStr?, UInt, @core.RawAddress, UInt, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn get_printer_driver_directory_w_raw(@core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, UInt, @core.RawAddress) -> Int
+
+pub fn get_printer_driver_package_path_a(@strings.PStr?, @strings.PStr?, @strings.PStr?, @strings.PStr, @core.RawAddress, UInt, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn get_printer_driver_package_path_a_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, UInt, @core.RawAddress) -> Int
+
+pub fn get_printer_driver_package_path_w(@strings.PWStr?, @strings.PWStr?, @strings.PWStr?, @strings.PWStr, @strings.PWStrBuffer?, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn get_printer_driver_package_path_w_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, UInt, @core.RawAddress) -> Int
+
+pub fn get_printer_driver_w(@core.RawAddress, @strings.PWStr?, UInt, @core.RawAddress, UInt, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn get_printer_driver_w_raw(@core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, UInt, @core.RawAddress) -> Int
+
+pub fn get_printer_w(@core.RawAddress, UInt, @core.RawAddress, UInt, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn get_printer_w_raw(@core.RawAddress, UInt, @core.RawAddress, UInt, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn get_spool_file_handle(@core.RawAddress) -> @core.RawAddress raise @core.WindowsError
+
+pub fn get_spool_file_handle_raw(@core.RawAddress) -> @core.RawWin32Call[@core.RawAddress]
+
+pub let gpd_oemcustomdata : UInt
+
+pub let idi_cpsui_advance : UInt
+
+pub let idi_cpsui_autosel : UInt
+
+pub let idi_cpsui_collate : UInt
+
+pub let idi_cpsui_color : UInt
+
+pub let idi_cpsui_copy : UInt
+
+pub let idi_cpsui_device : UInt
+
+pub let idi_cpsui_device2 : UInt
+
+pub let idi_cpsui_device_feature : UInt
+
+pub let idi_cpsui_dither_coarse : UInt
+
+pub let idi_cpsui_dither_fine : UInt
+
+pub let idi_cpsui_dither_lineart : UInt
+
+pub let idi_cpsui_dither_none : UInt
+
+pub let idi_cpsui_document : UInt
+
+pub let idi_cpsui_duplex_horz : UInt
+
+pub let idi_cpsui_duplex_horz_l : UInt
+
+pub let idi_cpsui_duplex_none : UInt
+
+pub let idi_cpsui_duplex_none_l : UInt
+
+pub let idi_cpsui_duplex_vert : UInt
+
+pub let idi_cpsui_duplex_vert_l : UInt
+
+pub let idi_cpsui_empty : UInt
+
+pub let idi_cpsui_envelope : UInt
+
+pub let idi_cpsui_envelope_feed : UInt
+
+pub let idi_cpsui_error : UInt
+
+pub let idi_cpsui_false : UInt
+
+pub let idi_cpsui_fax : UInt
+
+pub let idi_cpsui_fontcart : UInt
+
+pub let idi_cpsui_fontcart_slot : UInt
+
+pub let idi_cpsui_fontcarthdr : UInt
+
+pub let idi_cpsui_fontsub : UInt
+
+pub let idi_cpsui_formtrayassign : UInt
+
+pub let idi_cpsui_generic_item : UInt
+
+pub let idi_cpsui_generic_option : UInt
+
+pub let idi_cpsui_graphic : UInt
+
+pub let idi_cpsui_halftone_setup : UInt
+
+pub let idi_cpsui_ht_device : UInt
+
+pub let idi_cpsui_ht_host : UInt
+
+pub let idi_cpsui_htclradj : UInt
+
+pub let idi_cpsui_icm_intent : UInt
+
+pub let idi_cpsui_icm_method : UInt
+
+pub let idi_cpsui_icm_option : UInt
+
+pub let idi_cpsui_iconid_first : UInt
+
+pub let idi_cpsui_iconid_last : UInt
+
+pub let idi_cpsui_installable_option : UInt
+
+pub let idi_cpsui_landscape : UInt
+
+pub let idi_cpsui_layout_bmp_arrowl : UInt
+
+pub let idi_cpsui_layout_bmp_arrowlr : UInt
+
+pub let idi_cpsui_layout_bmp_arrows : UInt
+
+pub let idi_cpsui_layout_bmp_bookletl : UInt
+
+pub let idi_cpsui_layout_bmp_bookletl_nb : UInt
+
+pub let idi_cpsui_layout_bmp_bookletp : UInt
+
+pub let idi_cpsui_layout_bmp_bookletp_nb : UInt
+
+pub let idi_cpsui_layout_bmp_portrait : UInt
+
+pub let idi_cpsui_layout_bmp_rot_port : UInt
+
+pub let idi_cpsui_lf_pen_plotter : UInt
+
+pub let idi_cpsui_lf_raster_plotter : UInt
+
+pub let idi_cpsui_manual_feed : UInt
+
+pub let idi_cpsui_mem : UInt
+
+pub let idi_cpsui_mono : UInt
+
+pub let idi_cpsui_no : UInt
+
+pub let idi_cpsui_notinstalled : UInt
+
+pub let idi_cpsui_nup_border : UInt
+
+pub let idi_cpsui_off : UInt
+
+pub let idi_cpsui_on : UInt
+
+pub let idi_cpsui_option : UInt
+
+pub let idi_cpsui_option2 : UInt
+
+pub let idi_cpsui_outbin : UInt
+
+pub let idi_cpsui_output : UInt
+
+pub let idi_cpsui_page_protect : UInt
+
+pub let idi_cpsui_paper_output : UInt
+
+pub let idi_cpsui_paper_tray : UInt
+
+pub let idi_cpsui_paper_tray2 : UInt
+
+pub let idi_cpsui_paper_tray3 : UInt
+
+pub let idi_cpsui_pen_carrousel : UInt
+
+pub let idi_cpsui_plotter_pen : UInt
+
+pub let idi_cpsui_portrait : UInt
+
+pub let idi_cpsui_postscript : UInt
+
+pub let idi_cpsui_printer : UInt
+
+pub let idi_cpsui_printer2 : UInt
+
+pub let idi_cpsui_printer3 : UInt
+
+pub let idi_cpsui_printer4 : UInt
+
+pub let idi_cpsui_printer_feature : UInt
+
+pub let idi_cpsui_printer_folder : UInt
+
+pub let idi_cpsui_question : UInt
+
+pub let idi_cpsui_res_draft : UInt
+
+pub let idi_cpsui_res_high : UInt
+
+pub let idi_cpsui_res_low : UInt
+
+pub let idi_cpsui_res_medium : UInt
+
+pub let idi_cpsui_res_presentation : UInt
+
+pub let idi_cpsui_roll_paper : UInt
+
+pub let idi_cpsui_rot_land : UInt
+
+pub let idi_cpsui_rot_port : UInt
+
+pub let idi_cpsui_run_dialog : UInt
+
+pub let idi_cpsui_scaling : UInt
+
+pub let idi_cpsui_sel_none : UInt
+
+pub let idi_cpsui_sf_pen_plotter : UInt
+
+pub let idi_cpsui_sf_raster_plotter : UInt
+
+pub let idi_cpsui_stapler_off : UInt
+
+pub let idi_cpsui_stapler_on : UInt
+
+pub let idi_cpsui_std_form : UInt
+
+pub let idi_cpsui_stop : UInt
+
+pub let idi_cpsui_stop_warning_overlay : UInt
+
+pub let idi_cpsui_telephone : UInt
+
+pub let idi_cpsui_transparent : UInt
+
+pub let idi_cpsui_true : UInt
+
+pub let idi_cpsui_tt_downloadsoft : UInt
+
+pub let idi_cpsui_tt_downloadvect : UInt
+
+pub let idi_cpsui_tt_printasgraphic : UInt
+
+pub let idi_cpsui_tt_subdev : UInt
+
+pub let idi_cpsui_warning : UInt
+
+pub let idi_cpsui_warning_overlay : UInt
+
+pub let idi_cpsui_watermark : UInt
+
+pub let idi_cpsui_yes : UInt
+
+pub let ids_cpsui_about : UInt
+
+pub let ids_cpsui_advanced : UInt
+
+pub let ids_cpsui_advancedocument : UInt
+
+pub let ids_cpsui_all : UInt
+
+pub let ids_cpsui_autoselect : UInt
+
+pub let ids_cpsui_backtofront : UInt
+
+pub let ids_cpsui_bond : UInt
+
+pub let ids_cpsui_booklet : UInt
+
+pub let ids_cpsui_booklet_edge : UInt
+
+pub let ids_cpsui_booklet_edge_left : UInt
+
+pub let ids_cpsui_booklet_edge_right : UInt
+
+pub let ids_cpsui_cassette_tray : UInt
+
+pub let ids_cpsui_change : UInt
+
+pub let ids_cpsui_changed : UInt
+
+pub let ids_cpsui_changes : UInt
+
+pub let ids_cpsui_coarse : UInt
+
+pub let ids_cpsui_collate : UInt
+
+pub let ids_cpsui_collated : UInt
+
+pub let ids_cpsui_colon_sep : UInt
+
+pub let ids_cpsui_color : UInt
+
+pub let ids_cpsui_color_apperance : UInt
+
+pub let ids_cpsui_copies : UInt
+
+pub let ids_cpsui_copy : UInt
+
+pub let ids_cpsui_default : UInt
+
+pub let ids_cpsui_default_tray : UInt
+
+pub let ids_cpsui_defaultdocument : UInt
+
+pub let ids_cpsui_device : UInt
+
+pub let ids_cpsui_device_settings : UInt
+
+pub let ids_cpsui_deviceoptions : UInt
+
+pub let ids_cpsui_dithering : UInt
+
+pub let ids_cpsui_document : UInt
+
+pub let ids_cpsui_down_then_left : UInt
+
+pub let ids_cpsui_down_then_right : UInt
+
+pub let ids_cpsui_draft : UInt
+
+pub let ids_cpsui_duplex : UInt
+
+pub let ids_cpsui_envelope_tray : UInt
+
+pub let ids_cpsui_envmanual_tray : UInt
+
+pub let ids_cpsui_errdiffuse : UInt
+
+pub let ids_cpsui_error : UInt
+
+pub let ids_cpsui_exist : UInt
+
+pub let ids_cpsui_false : UInt
+
+pub let ids_cpsui_fast : UInt
+
+pub let ids_cpsui_fax : UInt
+
+pub let ids_cpsui_fine : UInt
+
+pub let ids_cpsui_formname : UInt
+
+pub let ids_cpsui_formsource : UInt
+
+pub let ids_cpsui_formtrayassign : UInt
+
+pub let ids_cpsui_fronttoback : UInt
+
+pub let ids_cpsui_glossy : UInt
+
+pub let ids_cpsui_graphic : UInt
+
+pub let ids_cpsui_grayscale : UInt
+
+pub let ids_cpsui_halftone : UInt
+
+pub let ids_cpsui_halftone_setup : UInt
+
+pub let ids_cpsui_high : UInt
+
+pub let ids_cpsui_horizontal : UInt
+
+pub let ids_cpsui_htclradj : UInt
+
+pub let ids_cpsui_icm : UInt
+
+pub let ids_cpsui_icm_blackwhite : UInt
+
+pub let ids_cpsui_icm_colormetric : UInt
+
+pub let ids_cpsui_icm_contrast : UInt
+
+pub let ids_cpsui_icm_no : UInt
+
+pub let ids_cpsui_icm_saturation : UInt
+
+pub let ids_cpsui_icm_yes : UInt
+
+pub let ids_cpsui_icmintent : UInt
+
+pub let ids_cpsui_icmmethod : UInt
+
+pub let ids_cpsui_instfontcart : UInt
+
+pub let ids_cpsui_landscape : UInt
+
+pub let ids_cpsui_largecap_tray : UInt
+
+pub let ids_cpsui_largefmt_tray : UInt
+
+pub let ids_cpsui_lbcb_nosel : UInt
+
+pub let ids_cpsui_left_angle : UInt
+
+pub let ids_cpsui_left_slot : UInt
+
+pub let ids_cpsui_left_then_down : UInt
+
+pub let ids_cpsui_lineart : UInt
+
+pub let ids_cpsui_long_side : UInt
+
+pub let ids_cpsui_low : UInt
+
+pub let ids_cpsui_lower_tray : UInt
+
+pub let ids_cpsui_mailbox : UInt
+
+pub let ids_cpsui_make : UInt
+
+pub let ids_cpsui_manual_duplex : UInt
+
+pub let ids_cpsui_manual_duplex_off : UInt
+
+pub let ids_cpsui_manual_duplex_on : UInt
+
+pub let ids_cpsui_manual_tray : UInt
+
+pub let ids_cpsui_manualfeed : UInt
+
+pub let ids_cpsui_media : UInt
+
+pub let ids_cpsui_medium : UInt
+
+pub let ids_cpsui_middle_tray : UInt
+
+pub let ids_cpsui_monochrome : UInt
+
+pub let ids_cpsui_more : UInt
+
+pub let ids_cpsui_no : UInt
+
+pub let ids_cpsui_no_name : UInt
+
+pub let ids_cpsui_none : UInt
+
+pub let ids_cpsui_not : UInt
+
+pub let ids_cpsui_notinstalled : UInt
+
+pub let ids_cpsui_num_of_copies : UInt
+
+pub let ids_cpsui_nup : UInt
+
+pub let ids_cpsui_nup_border : UInt
+
+pub let ids_cpsui_nup_bordered : UInt
+
+pub let ids_cpsui_nup_direction : UInt
+
+pub let ids_cpsui_nup_fourup : UInt
+
+pub let ids_cpsui_nup_nineup : UInt
+
+pub let ids_cpsui_nup_normal : UInt
+
+pub let ids_cpsui_nup_sixteenup : UInt
+
+pub let ids_cpsui_nup_sixup : UInt
+
+pub let ids_cpsui_nup_twoup : UInt
+
+pub let ids_cpsui_of : UInt
+
+pub let ids_cpsui_off : UInt
+
+pub let ids_cpsui_on : UInt
+
+pub let ids_cpsui_onlyone : UInt
+
+pub let ids_cpsui_option : UInt
+
+pub let ids_cpsui_options : UInt
+
+pub let ids_cpsui_orientation : UInt
+
+pub let ids_cpsui_outbinassign : UInt
+
+pub let ids_cpsui_outputbin : UInt
+
+pub let ids_cpsui_pageorder : UInt
+
+pub let ids_cpsui_pageprotect : UInt
+
+pub let ids_cpsui_paper_output : UInt
+
+pub let ids_cpsui_percent : UInt
+
+pub let ids_cpsui_plot : UInt
+
+pub let ids_cpsui_portrait : UInt
+
+pub let ids_cpsui_poster : UInt
+
+pub let ids_cpsui_poster_2x2 : UInt
+
+pub let ids_cpsui_poster_3x3 : UInt
+
+pub let ids_cpsui_poster_4x4 : UInt
+
+pub let ids_cpsui_presentation : UInt
+
+pub let ids_cpsui_print : UInt
+
+pub let ids_cpsui_printer : UInt
+
+pub let ids_cpsui_printermem_kb : UInt
+
+pub let ids_cpsui_printermem_mb : UInt
+
+pub let ids_cpsui_printfldsetting : UInt
+
+pub let ids_cpsui_printquality : UInt
+
+pub let ids_cpsui_properties : UInt
+
+pub let ids_cpsui_quality_best : UInt
+
+pub let ids_cpsui_quality_better : UInt
+
+pub let ids_cpsui_quality_custom : UInt
+
+pub let ids_cpsui_quality_draft : UInt
+
+pub let ids_cpsui_quality_settings : UInt
+
+pub let ids_cpsui_range_from : UInt
+
+pub let ids_cpsui_regular : UInt
+
+pub let ids_cpsui_reset : UInt
+
+pub let ids_cpsui_resolution : UInt
+
+pub let ids_cpsui_revert : UInt
+
+pub let ids_cpsui_right_angle : UInt
+
+pub let ids_cpsui_right_slot : UInt
+
+pub let ids_cpsui_right_then_down : UInt
+
+pub let ids_cpsui_rot_land : UInt
+
+pub let ids_cpsui_rot_port : UInt
+
+pub let ids_cpsui_rotated : UInt
+
+pub let ids_cpsui_scaling : UInt
+
+pub let ids_cpsui_setting : UInt
+
+pub let ids_cpsui_settings : UInt
+
+pub let ids_cpsui_setup : UInt
+
+pub let ids_cpsui_short_side : UInt
+
+pub let ids_cpsui_side1 : UInt
+
+pub let ids_cpsui_side2 : UInt
+
+pub let ids_cpsui_simplex : UInt
+
+pub let ids_cpsui_slash_sep : UInt
+
+pub let ids_cpsui_slot1 : UInt
+
+pub let ids_cpsui_slot2 : UInt
+
+pub let ids_cpsui_slot3 : UInt
+
+pub let ids_cpsui_slot4 : UInt
+
+pub let ids_cpsui_slow : UInt
+
+pub let ids_cpsui_smallfmt_tray : UInt
+
+pub let ids_cpsui_source : UInt
+
+pub let ids_cpsui_stacker : UInt
+
+pub let ids_cpsui_standard : UInt
+
+pub let ids_cpsui_staple : UInt
+
+pub let ids_cpsui_stapler : UInt
+
+pub let ids_cpsui_stapler_off : UInt
+
+pub let ids_cpsui_stapler_on : UInt
+
+pub let ids_cpsui_stddocproptab : UInt
+
+pub let ids_cpsui_stddocproptab1 : UInt
+
+pub let ids_cpsui_stddocproptab2 : UInt
+
+pub let ids_cpsui_stddocproptvtab : UInt
+
+pub let ids_cpsui_strid_first : UInt
+
+pub let ids_cpsui_strid_last : UInt
+
+pub let ids_cpsui_to : UInt
+
+pub let ids_cpsui_total : UInt
+
+pub let ids_cpsui_tractor_tray : UInt
+
+pub let ids_cpsui_transparency : UInt
+
+pub let ids_cpsui_true : UInt
+
+pub let ids_cpsui_tt_downloadsoft : UInt
+
+pub let ids_cpsui_tt_downloadvect : UInt
+
+pub let ids_cpsui_tt_printasgraphic : UInt
+
+pub let ids_cpsui_tt_subdev : UInt
+
+pub let ids_cpsui_ttoption : UInt
+
+pub let ids_cpsui_upper_tray : UInt
+
+pub let ids_cpsui_use_device_ht : UInt
+
+pub let ids_cpsui_use_host_ht : UInt
+
+pub let ids_cpsui_use_printer_ht : UInt
+
+pub let ids_cpsui_version : UInt
+
+pub let ids_cpsui_vertical : UInt
+
+pub let ids_cpsui_warning : UInt
+
+pub let ids_cpsui_watermark : UInt
+
+pub let ids_cpsui_yes : UInt
+
+pub fn impersonate_printer_client(@core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn impersonate_printer_client_raw(@core.RawAddress) -> Int
+
+pub let inspsuipage_mode_after : UInt
+
+pub let inspsuipage_mode_before : UInt
+
+pub let inspsuipage_mode_first_child : UInt
+
+pub let inspsuipage_mode_index : UInt
+
+pub let inspsuipage_mode_last_child : UInt
+
+pub fn install_printer_driver_from_package_a(@strings.PStr?, @strings.PStr?, @strings.PStr, @strings.PStr?, UInt) -> Int raise @core.WindowsError
+
+pub fn install_printer_driver_from_package_a_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, UInt) -> Int
+
+pub fn install_printer_driver_from_package_w(@strings.PWStr?, @strings.PWStr?, @strings.PWStr, @strings.PWStr?, UInt) -> Int raise @core.WindowsError
+
+pub fn install_printer_driver_from_package_w_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, UInt) -> Int
+
+pub let ioctl_usbprint_add_child_device : UInt
+
+pub let ioctl_usbprint_add_msipp_compat_id : UInt
+
+pub let ioctl_usbprint_cycle_port : UInt
+
+pub let ioctl_usbprint_get_1284_id : UInt
+
+pub let ioctl_usbprint_get_interface_type : UInt
+
+pub let ioctl_usbprint_get_lpt_status : UInt
+
+pub let ioctl_usbprint_get_mfg_mdl_id : UInt
+
+pub let ioctl_usbprint_get_protocol : UInt
+
+pub let ioctl_usbprint_set_device_id : UInt
+
+pub let ioctl_usbprint_set_port_number : UInt
+
+pub let ioctl_usbprint_set_protocol : UInt
+
+pub let ioctl_usbprint_soft_reset : UInt
+
+pub let ioctl_usbprint_vendor_get_command : UInt
+
+pub let ioctl_usbprint_vendor_set_command : UInt
+
+pub let ipdfp_copy_all_files : UInt
+
+pub fn is_valid_devmode_a(@9ab35bf48b3f5013.DEVMODEA_3b3132d875c8?, UInt64) -> Bool raise @core.WindowsError
+
+pub fn is_valid_devmode_a_raw(@core.RawAddress, UInt64) -> Int
+
+pub fn is_valid_devmode_w(@9ab35bf48b3f5013.DEVMODEW_12540d748e26?, UInt64) -> Bool raise @core.WindowsError
+
+pub fn is_valid_devmode_w_raw(@core.RawAddress, UInt64) -> Int
+
+pub let job_access_administer : UInt
+
+pub let job_access_read : UInt
+
+pub let job_control_cancel : UInt
+
+pub let job_control_delete : UInt
+
+pub let job_control_last_page_ejected : UInt
+
+pub let job_control_pause : UInt
+
+pub let job_control_pending_on_device : UInt
+
+pub let job_control_release : UInt
+
+pub let job_control_restart : UInt
+
+pub let job_control_resume : UInt
+
+pub let job_control_retain : UInt
+
+pub let job_control_send_toast : UInt
+
+pub let job_control_sent_to_printer : UInt
+
+pub let job_notify_field_bytes_printed : UInt
+
+pub let job_notify_field_datatype : UInt
+
+pub let job_notify_field_devmode : UInt
+
+pub let job_notify_field_document : UInt
+
+pub let job_notify_field_driver_name : UInt
+
+pub let job_notify_field_machine_name : UInt
+
+pub let job_notify_field_notify_name : UInt
+
+pub let job_notify_field_pages_printed : UInt
+
+pub let job_notify_field_parameters : UInt
+
+pub let job_notify_field_port_name : UInt
+
+pub let job_notify_field_position : UInt
+
+pub let job_notify_field_print_processor : UInt
+
+pub let job_notify_field_printer_name : UInt
+
+pub let job_notify_field_priority : UInt
+
+pub let job_notify_field_remote_job_id : UInt
+
+pub let job_notify_field_security_descriptor : UInt
+
+pub let job_notify_field_start_time : UInt
+
+pub let job_notify_field_status : UInt
+
+pub let job_notify_field_status_string : UInt
+
+pub let job_notify_field_submitted : UInt
+
+pub let job_notify_field_time : UInt
+
+pub let job_notify_field_total_bytes : UInt
+
+pub let job_notify_field_total_pages : UInt
+
+pub let job_notify_field_until_time : UInt
+
+pub let job_notify_field_user_name : UInt
+
+pub let job_notify_type : UInt
+
+pub let job_position_unspecified : UInt
+
+pub let job_status_blocked_devq : UInt
+
+pub let job_status_complete : UInt
+
+pub let job_status_deleted : UInt
+
+pub let job_status_deleting : UInt
+
+pub let job_status_error : UInt
+
+pub let job_status_offline : UInt
+
+pub let job_status_paperout : UInt
+
+pub let job_status_paused : UInt
+
+pub let job_status_printed : UInt
+
+pub let job_status_printing : UInt
+
+pub let job_status_rendering_locally : UInt
+
+pub let job_status_restart : UInt
+
+pub let job_status_retained : UInt
+
+pub let job_status_spooling : UInt
+
+pub let job_status_user_intervention : UInt
+
+pub let left_then_down : UInt
+
+pub let lpr : UInt
+
+pub let max_address_str_len : UInt
+
+pub let max_cpsfunc_index : UInt
+
+pub let max_devicedescription_str_len : UInt
+
+pub let max_dlgpage_count : UInt
+
+pub let max_form_keyword_length : UInt
+
+pub let max_ipaddr_str_len : UInt
+
+pub let max_networkname2_len : UInt
+
+pub let max_networkname_len : UInt
+
+pub let max_portname_len : UInt
+
+pub let max_priority : UInt
+
+pub let max_propsheetui_reason_index : UInt
+
+pub let max_psuipageinsert_index : UInt
+
+pub let max_queuename_len : UInt
+
+pub let max_res_str_chars : UInt
+
+pub let max_snmp_community_str_len : UInt
+
+pub let min_priority : UInt
+
+pub let ms_print_job_output_file : String
+
+pub let mtype_add : UInt
+
+pub let mtype_compose : UInt
+
+pub let mtype_direct : UInt
+
+pub let mtype_disable : UInt
+
+pub let mtype_double : UInt
+
+pub let mtype_doublebytechar_mask : UInt
+
+pub let mtype_format_mask : UInt
+
+pub let mtype_paired : UInt
+
+pub let mtype_predefin_mask : UInt
+
+pub let mtype_replace : UInt
+
+pub let mtype_single : UInt
+
+pub let mv_graphics : UInt
+
+pub let mv_physical : UInt
+
+pub let mv_relative : UInt
+
+pub let mv_sendxmovecmd : UInt
+
+pub let mv_sendymovecmd : UInt
+
+pub let mv_update : UInt
+
+pub let mxdc_escape : UInt
+
+pub let mxdcop_get_filename : UInt
+
+pub let mxdcop_printticket_fixed_doc : UInt
+
+pub let mxdcop_printticket_fixed_doc_seq : UInt
+
+pub let mxdcop_printticket_fixed_page : UInt
+
+pub let mxdcop_set_s0_page : UInt
+
+pub let mxdcop_set_s0_page_resource : UInt
+
+pub let mxdcop_set_xpspassthru_mode : UInt
+
+pub let no_border_print : UInt
+
+pub let no_color_optimization : UInt
+
+pub let no_priority : UInt
+
+pub let normal_print : UInt
+
+pub let oem_mode_publisher : UInt
+
+pub let oemcuip_docprop : UInt
+
+pub let oemcuip_prnprop : UInt
+
+pub let oemdm_convert : UInt
+
+pub let oemdm_default : UInt
+
+pub let oemdm_merge : UInt
+
+pub let oemdm_size : UInt
+
+pub let oemgds_freemem : UInt
+
+pub let oemgds_jobtimeout : UInt
+
+pub let oemgds_max : UInt
+
+pub let oemgds_maxbitmap : UInt
+
+pub let oemgds_min_docsticky : UInt
+
+pub let oemgds_min_printersticky : UInt
+
+pub let oemgds_minoutline : UInt
+
+pub let oemgds_printflags : UInt
+
+pub let oemgds_protocol : UInt
+
+pub let oemgds_psdm_customsize : UInt
+
+pub let oemgds_psdm_dialect : UInt
+
+pub let oemgds_psdm_flags : UInt
+
+pub let oemgds_psdm_nup : UInt
+
+pub let oemgds_psdm_pslevel : UInt
+
+pub let oemgds_psdm_ttdlfmt : UInt
+
+pub let oemgds_unidm_flags : UInt
+
+pub let oemgds_unidm_gpdver : UInt
+
+pub let oemgds_waittimeout : UInt
+
+pub let oemgi_getinterfaceversion : UInt
+
+pub let oemgi_getpublisherinfo : UInt
+
+pub let oemgi_getrequestedhelperinterfaces : UInt
+
+pub let oemgi_getsignature : UInt
+
+pub let oemgi_getversion : UInt
+
+pub let oempublish_default : UInt
+
+pub let oempublish_iprintcorehelper : UInt
+
+pub let oemtty_info_codepage : UInt
+
+pub let oemtty_info_margins : UInt
+
+pub let oemtty_info_num_ufms : UInt
+
+pub let oemtty_info_ufm_ids : UInt
+
+pub let oiextf_ansi_string : UInt
+
+pub fn open_printer2_a(@strings.PStr?, @core.RawAddress, @ff18be0a9a154b4a.PRINTERDEFAULTSA_b9798973b3f6?, @ff18be0a9a154b4a.PRINTEROPTIONSA_c1540711aeb2?) -> Bool raise @core.WindowsError
+
+pub fn open_printer2_a_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn open_printer2_w(@strings.PWStr?, @core.RawAddress, @ff18be0a9a154b4a.PRINTERDEFAULTSW_e1626ba49250?, @ff18be0a9a154b4a.PRINTEROPTIONSW_36eac3aae297?) -> Bool raise @core.WindowsError
+
+pub fn open_printer2_w_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn open_printer_a(@strings.PStr?, @core.RawAddress, @ff18be0a9a154b4a.PRINTERDEFAULTSA_b9798973b3f6?) -> Bool raise @core.WindowsError
+
+pub fn open_printer_a_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn open_printer_w(@strings.PWStr?, @core.RawAddress, @ff18be0a9a154b4a.PRINTERDEFAULTSW_e1626ba49250?) -> Bool raise @core.WindowsError
+
+pub fn open_printer_w_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub let optcf_hide : UInt
+
+pub let optcf_mask : UInt
+
+pub let optif_callback : Int
+
+pub let optif_changed : Int
+
+pub let optif_changeonce : Int
+
+pub let optif_collapse : Int
+
+pub let optif_disabled : Int
+
+pub let optif_ecb_checked : Int
+
+pub let optif_ext_disabled : Int
+
+pub let optif_ext_hide : Int
+
+pub let optif_ext_is_extpush : Int
+
+pub let optif_has_poiext : Int
+
+pub let optif_hide : Int
+
+pub let optif_initial_tvitem : Int
+
+pub let optif_mask : Int
+
+pub let optif_no_groupbox_name : Int
+
+pub let optif_overlay_no_icon : Int
+
+pub let optif_overlay_stop_icon : Int
+
+pub let optif_overlay_warning_icon : Int
+
+pub let optif_sel_as_hicon : Int
+
+pub let optpf_disabled : UInt
+
+pub let optpf_hide : UInt
+
+pub let optpf_iconid_as_hicon : UInt
+
+pub let optpf_mask : UInt
+
+pub let optpf_overlay_no_icon : UInt
+
+pub let optpf_overlay_stop_icon : UInt
+
+pub let optpf_overlay_warning_icon : UInt
+
+pub let optpf_use_hdlgtemplate : UInt
+
+pub let opttf_mask : UInt
+
+pub let opttf_nospace_before_postfix : UInt
+
+pub let opttf_type_disabled : UInt
+
+pub let ots_lbcb_incl_item_none : UInt
+
+pub let ots_lbcb_no_icon16_in_item : UInt
+
+pub let ots_lbcb_proppage_cbuselb : UInt
+
+pub let ots_lbcb_proppage_lbusecb : UInt
+
+pub let ots_lbcb_sort : UInt
+
+pub let ots_mask : UInt
+
+pub let ots_push_enable_always : UInt
+
+pub let ots_push_incl_setup_title : UInt
+
+pub let ots_push_no_dot_dot_dot : UInt
+
+pub fn partial_reply_printer_change_notification(@core.RawAddress, @ff18be0a9a154b4a.PRINTERNOTIFYINFODATA_a80cd393877f?) -> Bool raise @core.WindowsError
+
+pub fn partial_reply_printer_change_notification_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub let pdev_adjust_graphics_resolution_type : UInt
+
+pub let pdev_adjust_imageable_origin_area_type : UInt
+
+pub let pdev_adjust_paper_margin_type : UInt
+
+pub let pdev_adjust_physical_paper_size_type : UInt
+
+pub let pdev_hostfont_enabled_type : UInt
+
+pub let pdev_use_true_color_type : UInt
+
+pub fn play_gdi_script_on_printer_ic(@core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, UInt, UInt) -> Bool raise @core.WindowsError
+
+pub fn play_gdi_script_on_printer_ic_raw(@core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, UInt, UInt) -> Int
+
+pub let port_status_door_open : UInt
+
+pub let port_status_no_toner : UInt
+
+pub let port_status_offline : UInt
+
+pub let port_status_out_of_memory : UInt
+
+pub let port_status_output_bin_full : UInt
+
+pub let port_status_paper_jam : UInt
+
+pub let port_status_paper_out : UInt
+
+pub let port_status_paper_problem : UInt
+
+pub let port_status_power_save : UInt
+
+pub let port_status_toner_low : UInt
+
+pub let port_status_type_error : UInt
+
+pub let port_status_type_info : UInt
+
+pub let port_status_type_warning : UInt
+
+pub let port_status_user_intervention : UInt
+
+pub let port_status_warming_up : UInt
+
+pub let port_type_net_attached : UInt
+
+pub let port_type_read : UInt
+
+pub let port_type_redirected : UInt
+
+pub let port_type_write : UInt
+
+pub let ppcaps_booklet_edge : UInt
+
+pub let ppcaps_border_print : UInt
+
+pub let ppcaps_dont_send_extra_pages_for_duplex : UInt
+
+pub let ppcaps_down_then_left : UInt
+
+pub let ppcaps_down_then_right : UInt
+
+pub let ppcaps_left_then_down : UInt
+
+pub let ppcaps_reverse_pages_for_reverse_duplex : UInt
+
+pub let ppcaps_right_then_down : UInt
+
+pub let ppcaps_square_scaling : UInt
+
+pub let printer_attribute_default : UInt
+
+pub let printer_attribute_direct : UInt
+
+pub let printer_attribute_do_complete_first : UInt
+
+pub let printer_attribute_enable_bidi : UInt
+
+pub let printer_attribute_enable_devq : UInt
+
+pub let printer_attribute_enterprise_cloud : UInt
+
+pub let printer_attribute_fax : UInt
+
+pub let printer_attribute_friendly_name : UInt
+
+pub let printer_attribute_hidden : UInt
+
+pub let printer_attribute_keepprintedjobs : UInt
+
+pub let printer_attribute_local : UInt
+
+pub let printer_attribute_machine : UInt
+
+pub let printer_attribute_network : UInt
+
+pub let printer_attribute_per_user : UInt
+
+pub let printer_attribute_published : UInt
+
+pub let printer_attribute_pushed_machine : UInt
+
+pub let printer_attribute_pushed_user : UInt
+
+pub let printer_attribute_queued : UInt
+
+pub let printer_attribute_raw_only : UInt
+
+pub let printer_attribute_shared : UInt
+
+pub let printer_attribute_ts : UInt
+
+pub let printer_attribute_ts_generic_driver : UInt
+
+pub let printer_attribute_work_offline : UInt
+
+pub let printer_change_add_form : UInt
+
+pub let printer_change_add_job : UInt
+
+pub let printer_change_add_port : UInt
+
+pub let printer_change_add_print_processor : UInt
+
+pub let printer_change_add_printer : UInt
+
+pub let printer_change_add_printer_driver : UInt
+
+pub let printer_change_all : UInt
+
+pub let printer_change_configure_port : UInt
+
+pub let printer_change_delete_form : UInt
+
+pub let printer_change_delete_job : UInt
+
+pub let printer_change_delete_port : UInt
+
+pub let printer_change_delete_print_processor : UInt
+
+pub let printer_change_delete_printer : UInt
+
+pub let printer_change_delete_printer_driver : UInt
+
+pub let printer_change_failed_connection_printer : UInt
+
+pub let printer_change_form : UInt
+
+pub let printer_change_job : UInt
+
+pub let printer_change_port : UInt
+
+pub let printer_change_print_processor : UInt
+
+pub let printer_change_printer : UInt
+
+pub let printer_change_printer_driver : UInt
+
+pub let printer_change_server : UInt
+
+pub let printer_change_set_form : UInt
+
+pub let printer_change_set_job : UInt
+
+pub let printer_change_set_printer : UInt
+
+pub let printer_change_set_printer_driver : UInt
+
+pub let printer_change_timeout : UInt
+
+pub let printer_change_write_job : UInt
+
+pub let printer_connection_mismatch : UInt
+
+pub let printer_connection_no_ui : UInt
+
+pub let printer_control_pause : UInt
+
+pub let printer_control_purge : UInt
+
+pub let printer_control_resume : UInt
+
+pub let printer_control_set_status : UInt
+
+pub let printer_driver_category_3_d : UInt
+
+pub let printer_driver_category_cloud : UInt
+
+pub let printer_driver_category_fax : UInt
+
+pub let printer_driver_category_file : UInt
+
+pub let printer_driver_category_service : UInt
+
+pub let printer_driver_category_virtual : UInt
+
+pub let printer_driver_class : UInt
+
+pub let printer_driver_derived : UInt
+
+pub let printer_driver_not_shareable : UInt
+
+pub let printer_driver_package_aware : UInt
+
+pub let printer_driver_sandbox_disabled : UInt
+
+pub let printer_driver_sandbox_enabled : UInt
+
+pub let printer_driver_soft_reset_required : UInt
+
+pub let printer_driver_xps : UInt
+
+pub let printer_enum_category_3_d : UInt
+
+pub let printer_enum_category_all : UInt
+
+pub let printer_enum_connections : UInt
+
+pub let printer_enum_container : UInt
+
+pub let printer_enum_default : UInt
+
+pub let printer_enum_expand : UInt
+
+pub let printer_enum_favorite : UInt
+
+pub let printer_enum_hide : UInt
+
+pub let printer_enum_icon1 : UInt
+
+pub let printer_enum_icon2 : UInt
+
+pub let printer_enum_icon3 : UInt
+
+pub let printer_enum_icon4 : UInt
+
+pub let printer_enum_icon5 : UInt
+
+pub let printer_enum_icon6 : UInt
+
+pub let printer_enum_icon7 : UInt
+
+pub let printer_enum_icon8 : UInt
+
+pub let printer_enum_iconmask : UInt
+
+pub let printer_enum_local : UInt
+
+pub let printer_enum_name : UInt
+
+pub let printer_enum_network : UInt
+
+pub let printer_enum_remote : UInt
+
+pub let printer_enum_shared : UInt
+
+pub let printer_error_information : UInt
+
+pub let printer_error_jam : UInt
+
+pub let printer_error_outofpaper : UInt
+
+pub let printer_error_outoftoner : UInt
+
+pub let printer_error_severe : UInt
+
+pub let printer_error_warning : UInt
+
+pub let printer_event_add_connection : UInt
+
+pub let printer_event_add_connection_no_ui : UInt
+
+pub let printer_event_attributes_changed : UInt
+
+pub let printer_event_cache_delete : UInt
+
+pub let printer_event_cache_refresh : UInt
+
+pub let printer_event_configuration_change : UInt
+
+pub let printer_event_configuration_update : UInt
+
+pub let printer_event_delete : UInt
+
+pub let printer_event_delete_connection : UInt
+
+pub let printer_event_delete_connection_no_ui : UInt
+
+pub let printer_event_flag_no_ui : UInt
+
+pub let printer_event_initialize : UInt
+
+pub fn printer_message_box_a(@core.RawAddress, UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress, UInt) -> UInt raise @core.WindowsError
+
+pub fn printer_message_box_a_raw(@core.RawAddress, UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress, UInt) -> UInt
+
+pub fn printer_message_box_w(@core.RawAddress, UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress, UInt) -> UInt raise @core.WindowsError
+
+pub fn printer_message_box_w_raw(@core.RawAddress, UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress, UInt) -> UInt
+
+pub let printer_notify_category_3_d : UInt
+
+pub let printer_notify_category_all : UInt
+
+pub let printer_notify_field_attributes : UInt
+
+pub let printer_notify_field_average_ppm : UInt
+
+pub let printer_notify_field_branch_office_printing : UInt
+
+pub let printer_notify_field_bytes_printed : UInt
+
+pub let printer_notify_field_cjobs : UInt
+
+pub let printer_notify_field_comment : UInt
+
+pub let printer_notify_field_datatype : UInt
+
+pub let printer_notify_field_default_priority : UInt
+
+pub let printer_notify_field_devmode : UInt
+
+pub let printer_notify_field_driver_name : UInt
+
+pub let printer_notify_field_friendly_name : UInt
+
+pub let printer_notify_field_location : UInt
+
+pub let printer_notify_field_object_guid : UInt
+
+pub let printer_notify_field_pages_printed : UInt
+
+pub let printer_notify_field_parameters : UInt
+
+pub let printer_notify_field_port_name : UInt
+
+pub let printer_notify_field_print_processor : UInt
+
+pub let printer_notify_field_printer_name : UInt
+
+pub let printer_notify_field_priority : UInt
+
+pub let printer_notify_field_security_descriptor : UInt
+
+pub let printer_notify_field_sepfile : UInt
+
+pub let printer_notify_field_server_name : UInt
+
+pub let printer_notify_field_share_name : UInt
+
+pub let printer_notify_field_start_time : UInt
+
+pub let printer_notify_field_status : UInt
+
+pub let printer_notify_field_status_string : UInt
+
+pub let printer_notify_field_total_bytes : UInt
+
+pub let printer_notify_field_total_pages : UInt
+
+pub let printer_notify_field_until_time : UInt
+
+pub let printer_notify_info_data_compact : UInt
+
+pub let printer_notify_info_discarded : UInt
+
+pub let printer_notify_options_refresh : UInt
+
+pub let printer_notify_status_endpoint : UInt
+
+pub let printer_notify_status_info : UInt
+
+pub let printer_notify_status_poll : UInt
+
+pub let printer_notify_type : UInt
+
+pub let printer_oemintf_version : UInt
+
+pub fn printer_properties(@core.RawAddress, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn printer_properties_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub let printer_status_busy : UInt
+
+pub let printer_status_door_open : UInt
+
+pub let printer_status_driver_update_needed : UInt
+
+pub let printer_status_error : UInt
+
+pub let printer_status_initializing : UInt
+
+pub let printer_status_io_active : UInt
+
+pub let printer_status_manual_feed : UInt
+
+pub let printer_status_no_toner : UInt
+
+pub let printer_status_not_available : UInt
+
+pub let printer_status_offline : UInt
+
+pub let printer_status_out_of_memory : UInt
+
+pub let printer_status_output_bin_full : UInt
+
+pub let printer_status_page_punt : UInt
+
+pub let printer_status_paper_jam : UInt
+
+pub let printer_status_paper_out : UInt
+
+pub let printer_status_paper_problem : UInt
+
+pub let printer_status_paused : UInt
+
+pub let printer_status_pending_deletion : UInt
+
+pub let printer_status_power_save : UInt
+
+pub let printer_status_printing : UInt
+
+pub let printer_status_processing : UInt
+
+pub let printer_status_server_offline : UInt
+
+pub let printer_status_server_unknown : UInt
+
+pub let printer_status_toner_low : UInt
+
+pub let printer_status_user_intervention : UInt
+
+pub let printer_status_waiting : UInt
+
+pub let printer_status_warming_up : UInt
+
+pub let propsheetui_info_version : UInt
+
+pub let propsheetui_reason_before_init : UInt
+
+pub let propsheetui_reason_destroy : UInt
+
+pub let propsheetui_reason_get_icon : UInt
+
+pub let propsheetui_reason_get_info_header : UInt
+
+pub let propsheetui_reason_init : UInt
+
+pub let propsheetui_reason_set_result : UInt
+
+pub let protocol_lpr_type : UInt
+
+pub let protocol_rawtcp_type : UInt
+
+pub let protocol_unknown_type : UInt
+
+pub fn providor_find_close_printer_change_notification(@core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn providor_find_close_printer_change_notification_raw(@core.RawAddress) -> Int
+
+pub fn providor_find_first_printer_change_notification(@core.RawAddress, UInt, UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn providor_find_first_printer_change_notification_raw(@core.RawAddress, UInt, UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub let psuihdrf_deftitle : UInt
+
+pub let psuihdrf_exact_ptitle : UInt
+
+pub let psuihdrf_noapplynow : UInt
+
+pub let psuihdrf_obsolete : UInt
+
+pub let psuihdrf_proptitle : UInt
+
+pub let psuihdrf_usehicon : UInt
+
+pub let psuiinfo_unicode : UInt
+
+pub let psuipageinsert_dll : UInt
+
+pub let psuipageinsert_group_parent : UInt
+
+pub let psuipageinsert_hpropsheetpage : UInt
+
+pub let psuipageinsert_pcompropsheetui : UInt
+
+pub let psuipageinsert_pfnpropsheetui : UInt
+
+pub let psuipageinsert_propsheetpage : UInt
+
+pub let pushbutton_type_callback : UInt
+
+pub let pushbutton_type_dlgproc : UInt
+
+pub let pushbutton_type_htclradj : UInt
+
+pub let pushbutton_type_htsetup : UInt
+
+pub let qcp_deviceprofile : UInt
+
+pub let qcp_profiledisk : UInt
+
+pub let qcp_profilememory : UInt
+
+pub let qcp_sourceprofile : UInt
+
+pub let rawtcp : UInt
+
+pub fn read_printer(@core.RawAddress, @core.RawAddress, UInt, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn read_printer_raw(@core.RawAddress, @core.RawAddress, UInt, @core.RawAddress) -> Int
+
+pub fn register_for_print_async_notifications(@strings.PWStr?, @core.RawAddress, @ff18be0a9a154b4a.PrintAsyncNotifyUserFilter_cbbdf1872363, @ff18be0a9a154b4a.PrintAsyncNotifyConversationStyle_57999f0c34d8, @core.RawAddress, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn register_for_print_async_notifications_raw(@core.RawAddress, @core.RawAddress, Int, Int, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn remove_print_device_object(@core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn remove_print_device_object_raw(@core.RawAddress) -> Int
+
+pub fn reply_printer_change_notification(@core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn reply_printer_change_notification_ex(@core.RawAddress, UInt, UInt, @core.RawAddress, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn reply_printer_change_notification_ex_raw(@core.RawAddress, UInt, UInt, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn reply_printer_change_notification_raw(@core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn report_job_processing_progress(@core.RawAddress, UInt, @ff18be0a9a154b4a.EPrintXPSJobOperation_e53fd3681112, @ff18be0a9a154b4a.EPrintXPSJobProgress_3fcd14bbcb54) -> Int raise @core.WindowsError
+
+pub fn report_job_processing_progress_raw(@core.RawAddress, UInt, Int, Int) -> Int
+
+pub fn reset_printer_a(@core.RawAddress, @ff18be0a9a154b4a.PRINTERDEFAULTSA_b9798973b3f6?) -> Bool raise @core.WindowsError
+
+pub fn reset_printer_a_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn reset_printer_w(@core.RawAddress, @ff18be0a9a154b4a.PRINTERDEFAULTSW_e1626ba49250?) -> Bool raise @core.WindowsError
+
+pub fn reset_printer_w_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub let reverse_pages_for_reverse_duplex : UInt
+
+pub let reverse_print : UInt
+
+pub fn revert_to_printer_self() -> @core.RawAddress raise @core.WindowsError
+
+pub fn revert_to_printer_self_raw() -> @core.RawAddress
+
+pub let right_then_down : UInt
+
+pub fn router_alloc_bidi_mem(UInt64) -> @core.RawAddress raise @core.WindowsError
+
+pub fn router_alloc_bidi_mem_raw(UInt64) -> @core.RawAddress
+
+pub fn router_alloc_bidi_response_container(UInt) -> @core.RawAddress raise @core.WindowsError
+
+pub fn router_alloc_bidi_response_container_raw(UInt) -> @core.RawAddress
+
+pub fn router_alloc_printer_notify_info(UInt) -> @core.RawAddress raise @core.WindowsError
+
+pub fn router_alloc_printer_notify_info_raw(UInt) -> @core.RawAddress
+
+pub fn router_create_print_async_notification_channel(@strings.PWStr, @core.RawAddress, @ff18be0a9a154b4a.PrintAsyncNotifyUserFilter_cbbdf1872363, @ff18be0a9a154b4a.PrintAsyncNotifyConversationStyle_57999f0c34d8, @core.RawAddress, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn router_create_print_async_notification_channel_raw(@core.RawAddress, @core.RawAddress, Int, Int, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn router_free_bidi_mem(@core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn router_free_bidi_mem_raw(@core.RawAddress) -> Unit
+
+pub fn router_free_bidi_response_container(@ff18be0a9a154b4a.BIDIRESPONSECONTAINER_ac7b025aa7ed) -> UInt raise @core.WindowsError
+
+pub fn router_free_bidi_response_container_raw(@core.RawAddress) -> UInt
+
+pub fn router_free_printer_notify_info(@ff18be0a9a154b4a.PRINTERNOTIFYINFO_079796848eb1?) -> Bool raise @core.WindowsError
+
+pub fn router_free_printer_notify_info_raw(@core.RawAddress) -> Int
+
+pub fn router_get_print_class_object(@strings.PWStr, @core.RawAddress, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn router_get_print_class_object_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub let router_stop_routing : UInt
+
+pub let router_success : UInt
+
+pub let router_unknown : UInt
+
+pub fn router_unregister_for_print_async_notifications(@core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn router_unregister_for_print_async_notifications_raw(@core.RawAddress) -> Int
+
+pub let s_conflict_resolved : UInt
+
+pub let s_devcap_output_full_replacement : Int
+
+pub let s_no_conflict : UInt
+
+pub fn schedule_job(@core.RawAddress, UInt) -> Bool raise @core.WindowsError
+
+pub fn schedule_job_raw(@core.RawAddress, UInt) -> Int
+
+pub let server_notify_field_print_driver_isolation_group : UInt
+
+pub let server_notify_type : UInt
+
+pub fn set_cpsui_user_data(@core.RawAddress, UInt64) -> Bool raise @core.WindowsError
+
+pub fn set_cpsui_user_data_raw(@core.RawAddress, UInt64) -> Int
+
+pub fn set_default_printer_a(@strings.PStr?) -> Bool raise @core.WindowsError
+
+pub fn set_default_printer_a_raw(@core.RawAddress) -> Int
+
+pub fn set_default_printer_w(@strings.PWStr?) -> Bool raise @core.WindowsError
+
+pub fn set_default_printer_w_raw(@core.RawAddress) -> Int
+
+pub fn set_form_a(@core.RawAddress, @strings.PStr, UInt, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn set_form_a_raw(@core.RawAddress, @core.RawAddress, UInt, @core.RawAddress) -> Int
+
+pub fn set_form_w(@core.RawAddress, @strings.PWStr, UInt, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn set_form_w_raw(@core.RawAddress, @core.RawAddress, UInt, @core.RawAddress) -> Int
+
+pub fn set_job_a(@core.RawAddress, UInt, UInt, @core.RawAddress, UInt) -> Bool raise @core.WindowsError
+
+pub fn set_job_a_raw(@core.RawAddress, UInt, UInt, @core.RawAddress, UInt) -> Int
+
+pub fn set_job_named_property(@core.RawAddress, UInt, @ff18be0a9a154b4a.PrintNamedProperty_eb6abd1373b5) -> UInt raise @core.WindowsError
+
+pub fn set_job_named_property_raw(@core.RawAddress, UInt, @core.RawAddress) -> UInt
+
+pub fn set_job_w(@core.RawAddress, UInt, UInt, @core.RawAddress, UInt) -> Bool raise @core.WindowsError
+
+pub fn set_job_w_raw(@core.RawAddress, UInt, UInt, @core.RawAddress, UInt) -> Int
+
+pub fn set_port_a(@core.RawAddress, @core.RawAddress, UInt, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn set_port_a_raw(@core.RawAddress, @core.RawAddress, UInt, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn set_port_w(@core.RawAddress, @core.RawAddress, UInt, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn set_port_w_raw(@core.RawAddress, @core.RawAddress, UInt, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn set_printer_a(@core.RawAddress, UInt, @core.RawAddress, UInt) -> Bool raise @core.WindowsError
+
+pub fn set_printer_a_raw(@core.RawAddress, UInt, @core.RawAddress, UInt) -> @core.RawWin32Call[Int]
+
+pub fn set_printer_data_a(@core.RawAddress, @strings.PStr, UInt, @core.RawAddress, UInt) -> UInt raise @core.WindowsError
+
+pub fn set_printer_data_a_raw(@core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, UInt) -> UInt
+
+pub fn set_printer_data_ex_a(@core.RawAddress, @strings.PStr, @strings.PStr, UInt, @core.RawAddress, UInt) -> UInt raise @core.WindowsError
+
+pub fn set_printer_data_ex_a_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, UInt) -> UInt
+
+pub fn set_printer_data_ex_w(@core.RawAddress, @strings.PWStr, @strings.PWStr, UInt, @core.RawAddress, UInt) -> UInt raise @core.WindowsError
+
+pub fn set_printer_data_ex_w_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, UInt) -> UInt
+
+pub fn set_printer_data_w(@core.RawAddress, @strings.PWStr, UInt, @core.RawAddress, UInt) -> UInt raise @core.WindowsError
+
+pub fn set_printer_data_w_raw(@core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, UInt) -> UInt
+
+pub fn set_printer_w(@core.RawAddress, UInt, @core.RawAddress, UInt) -> Bool raise @core.WindowsError
+
+pub fn set_printer_w_raw(@core.RawAddress, UInt, @core.RawAddress, UInt) -> @core.RawWin32Call[Int]
+
+pub let setoptions_flag_keep_conflict : UInt
+
+pub let setoptions_flag_resolve_conflict : UInt
+
+pub let setoptions_result_conflict_remained : UInt
+
+pub let setoptions_result_conflict_resolved : UInt
+
+pub let setoptions_result_no_conflict : UInt
+
+pub fn spl_is_session_zero(@core.RawAddress, UInt, @core.RawAddress) -> UInt raise @core.WindowsError
+
+pub fn spl_is_session_zero_raw(@core.RawAddress, UInt, @core.RawAddress) -> UInt
+
+pub fn spl_prompt_ui_in_users_session(@core.RawAddress, UInt, @ff18be0a9a154b4a.SHOWUIPARAMS_c8c256e83695, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn spl_prompt_ui_in_users_session_raw(@core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> Int
+
+pub let splclient_info_internal_level : UInt
+
+pub let splds_asset_number : String
+
+pub let splds_bytes_per_minute : String
+
+pub let splds_description : String
+
+pub let splds_driver_key : String
+
+pub let splds_driver_name : String
+
+pub let splds_driver_version : String
+
+pub let splds_flags : String
+
+pub let splds_location : String
+
+pub let splds_port_name : String
+
+pub let splds_print_attributes : String
+
+pub let splds_print_bin_names : String
+
+pub let splds_print_collate : String
+
+pub let splds_print_color : String
+
+pub let splds_print_duplex_supported : String
+
+pub let splds_print_end_time : String
+
+pub let splds_print_ipp_compression_supported : String
+
+pub let splds_print_keep_printed_jobs : String
+
+pub let splds_print_language : String
+
+pub let splds_print_mac_address : String
+
+pub let splds_print_max_resolution_supported : String
+
+pub let splds_print_max_x_extent : String
+
+pub let splds_print_max_y_extent : String
+
+pub let splds_print_media_ready : String
+
+pub let splds_print_media_supported : String
+
+pub let splds_print_memory : String
+
+pub let splds_print_min_x_extent : String
+
+pub let splds_print_min_y_extent : String
+
+pub let splds_print_network_address : String
+
+pub let splds_print_notify : String
+
+pub let splds_print_number_up : String
+
+pub let splds_print_orientations_supported : String
+
+pub let splds_print_owner : String
+
+pub let splds_print_pages_per_minute : String
+
+pub let splds_print_rate : String
+
+pub let splds_print_rate_unit : String
+
+pub let splds_print_separator_file : String
+
+pub let splds_print_share_name : String
+
+pub let splds_print_spooling : String
+
+pub let splds_print_stapling_supported : String
+
+pub let splds_print_start_time : String
+
+pub let splds_print_status : String
+
+pub let splds_printer_class : String
+
+pub let splds_printer_locations : String
+
+pub let splds_printer_model : String
+
+pub let splds_printer_name : String
+
+pub let splds_printer_name_aliases : String
+
+pub let splds_priority : String
+
+pub let splds_server_name : String
+
+pub let splds_short_server_name : String
+
+pub let splds_spooler_key : String
+
+pub let splds_unc_name : String
+
+pub let splds_url : String
+
+pub let splds_user_key : String
+
+pub let splds_version_number : String
+
+pub let splprinter_user_mode_printer_driver : String
+
+pub let splreg_allow_user_manageforms : String
+
+pub let splreg_architecture : String
+
+pub let splreg_beep_enabled : String
+
+pub let splreg_default_spool_directory : String
+
+pub let splreg_dns_machine_name : String
+
+pub let splreg_ds_present : String
+
+pub let splreg_ds_present_for_user : String
+
+pub let splreg_event_log : String
+
+pub let splreg_major_version : String
+
+pub let splreg_minor_version : String
+
+pub let splreg_net_popup : String
+
+pub let splreg_net_popup_to_computer : String
+
+pub let splreg_os_version : String
+
+pub let splreg_os_versionex : String
+
+pub let splreg_port_thread_priority : String
+
+pub let splreg_port_thread_priority_default : String
+
+pub let splreg_print_driver_isolation_execution_policy : String
+
+pub let splreg_print_driver_isolation_groups : String
+
+pub let splreg_print_driver_isolation_idle_timeout : String
+
+pub let splreg_print_driver_isolation_max_objects_before_recycle : String
+
+pub let splreg_print_driver_isolation_override_policy : String
+
+pub let splreg_print_driver_isolation_time_before_recycle : String
+
+pub let splreg_print_queue_v4_driver_directory : String
+
+pub let splreg_remote_fax : String
+
+pub let splreg_restart_job_on_pool_enabled : String
+
+pub let splreg_restart_job_on_pool_error : String
+
+pub let splreg_retry_popup : String
+
+pub let splreg_scheduler_thread_priority : String
+
+pub let splreg_scheduler_thread_priority_default : String
+
+pub let splreg_websharemgmt : String
+
+pub let spool_file_persistent : UInt
+
+pub let spool_file_temporary : UInt
+
+pub fn spooler_copy_file_event(@core.RawAddress, @core.RawAddress, UInt) -> Bool raise @core.WindowsError
+
+pub fn spooler_copy_file_event_raw(@core.RawAddress, @core.RawAddress, UInt) -> Int
+
+pub fn spooler_find_close_printer_change_notification(@core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn spooler_find_close_printer_change_notification_raw(@core.RawAddress) -> Int
+
+pub fn spooler_find_first_printer_change_notification(@core.RawAddress, UInt, UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn spooler_find_first_printer_change_notification_raw(@core.RawAddress, UInt, UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn spooler_find_next_printer_change_notification(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn spooler_find_next_printer_change_notification_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn spooler_free_printer_notify_info(@ff18be0a9a154b4a.PRINTERNOTIFYINFO_079796848eb1) -> Unit raise @core.WindowsError
+
+pub fn spooler_free_printer_notify_info_raw(@core.RawAddress) -> Unit
+
+pub fn spooler_refresh_printer_change_notification(@core.RawAddress, UInt, @ff18be0a9a154b4a.PRINTERNOTIFYOPTIONS_df009e4d2bc9, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn spooler_refresh_printer_change_notification_raw(@core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> Int
+
+pub let sr_owner : UInt
+
+pub let sr_owner_parent : UInt
+
+pub let ssp_stdpage1 : UInt
+
+pub let ssp_stdpage2 : UInt
+
+pub let ssp_tvpage : UInt
+
+pub fn start_doc_printer_a(@core.RawAddress, UInt, @ff18be0a9a154b4a.DOCINFO1A_6231ae657c74) -> UInt raise @core.WindowsError
+
+pub fn start_doc_printer_a_raw(@core.RawAddress, UInt, @core.RawAddress) -> UInt
+
+pub fn start_doc_printer_w(@core.RawAddress, UInt, @ff18be0a9a154b4a.DOCINFO1W_07f2b47abe95) -> UInt raise @core.WindowsError
+
+pub fn start_doc_printer_w_raw(@core.RawAddress, UInt, @core.RawAddress) -> UInt
+
+pub fn start_page_printer(@core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn start_page_printer_raw(@core.RawAddress) -> Int
+
+pub let string_langpair : UInt
+
+pub let string_muidll : UInt
+
+pub let string_none : UInt
+
+pub let ttdownload_bitmap : UInt
+
+pub let ttdownload_dontcare : UInt
+
+pub let ttdownload_graphics : UInt
+
+pub let ttdownload_ttoutline : UInt
+
+pub let tvot_2_states : UInt
+
+pub let tvot_3_states : UInt
+
+pub let tvot_chkbox : UInt
+
+pub let tvot_combobox : UInt
+
+pub let tvot_editbox : UInt
+
+pub let tvot_listbox : UInt
+
+pub let tvot_nstates_ex : UInt
+
+pub let tvot_pushbutton : UInt
+
+pub let tvot_scrollbar : UInt
+
+pub let tvot_trackbar : UInt
+
+pub let tvot_udarrow : UInt
+
+pub let type_glyphhandle : UInt
+
+pub let type_glyphid : UInt
+
+pub let type_transdata : UInt
+
+pub let type_unicode : UInt
+
+pub let uff_version_number : UInt
+
+pub let ufm_cart : UInt
+
+pub let ufm_scalable : UInt
+
+pub let ufm_soft : UInt
+
+pub let ufo_getinfo_fontobj : UInt
+
+pub let ufo_getinfo_glyphbitmap : UInt
+
+pub let ufo_getinfo_glyphstring : UInt
+
+pub let ufo_getinfo_glyphwidth : UInt
+
+pub let ufo_getinfo_memory : UInt
+
+pub let ufo_getinfo_stdvariable : UInt
+
+pub let ufoflag_ttdownload_bitmap : UInt
+
+pub let ufoflag_ttdownload_ttoutline : UInt
+
+pub let ufoflag_ttfont : UInt
+
+pub let ufoflag_ttoutline_bold_sim : UInt
+
+pub let ufoflag_ttoutline_italic_sim : UInt
+
+pub let ufoflag_ttoutline_vertical : UInt
+
+pub let ufoflag_ttsubstituted : UInt
+
+pub fn un_register_for_print_async_notifications(@core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn un_register_for_print_async_notifications_raw(@core.RawAddress) -> Int
+
+pub let uni_glyphsetdata_version_1_0 : UInt
+
+pub let unifm_version_1_0 : UInt
+
+pub let unknown_protocol : UInt
+
+pub fn update_print_device_object(@core.RawAddress, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn update_print_device_object_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub let updp_check_driverstore : UInt
+
+pub let updp_silent_upload : UInt
+
+pub let updp_upload_always : UInt
+
+pub fn upload_printer_driver_package_a(@strings.PStr?, @strings.PStr, @strings.PStr?, UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn upload_printer_driver_package_a_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn upload_printer_driver_package_w(@core.RawAddress, @core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn upload_printer_driver_package_w_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub let usb_print_ipp_compat_id : UInt
+
+pub let usb_print_ipp_faxout : UInt
+
+pub let usb_printer_interface_classic : UInt
+
+pub let usb_printer_interface_dual : UInt
+
+pub let usb_printer_interface_ipp : UInt
+
+pub let usbprint_ioctl_index : UInt
+
+pub fn wait_for_printer_change(@core.RawAddress, UInt) -> UInt raise @core.WindowsError
+
+pub fn wait_for_printer_change_raw(@core.RawAddress, UInt) -> UInt
+
+pub let wm_fi_filename : UInt
+
+pub fn write_printer(@core.RawAddress, @core.RawAddress, UInt, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn write_printer_raw(@core.RawAddress, @core.RawAddress, UInt, @core.RawAddress) -> Int
+
+pub fn xcv_data_w(@core.RawAddress, @strings.PWStr, @core.RawAddress, UInt, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn xcv_data_w_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> Int
+
+pub let xps_fp_driver_property_bag : String
+
+pub let xps_fp_fax_job_properties : String
+
+pub let xps_fp_job_id : String
+
+pub let xps_fp_job_level_printticket : String
+
+pub let xps_fp_merged_datafile_path : String
+
+pub let xps_fp_ms_content_type : String
+
+pub let xps_fp_ms_content_type_openxps : String
+
+pub let xps_fp_ms_content_type_xps : String
+
+pub let xps_fp_output_file : String
+
+pub let xps_fp_print_class_factory : String
+
+pub let xps_fp_printdevicecapabilities : String
+
+pub let xps_fp_printer_handle : String
+
+pub let xps_fp_printer_name : String
+
+pub let xps_fp_progress_report : String
+
+pub let xps_fp_queue_property_bag : String
+
+pub let xps_fp_resource_dll_paths : String
+
+pub let xps_fp_user_print_ticket : String
+
+pub let xps_fp_user_token : String
+
+// Errors
+
+// Types and methods
+
+// Type aliases
+pub using @ff18be0a9a154b4a {type ADDJOBINFO1A_d557d15ecada as ADDJOBINFO1A}
+
+pub using @ff18be0a9a154b4a {type ADDJOBINFO1W_85a25a5fb10c as ADDJOBINFO1W}
+
+pub using @ff18be0a9a154b4a {type ATTRIBUTEINFO1_2aaa49354486 as ATTRIBUTEINFO1}
+
+pub using @ff18be0a9a154b4a {type ATTRIBUTEINFO2_9b201db3c8e4 as ATTRIBUTEINFO2}
+
+pub using @ff18be0a9a154b4a {type ATTRIBUTEINFO3_02777c4792e6 as ATTRIBUTEINFO3}
+
+pub using @ff18be0a9a154b4a {type ATTRIBUTEINFO4_f6d571be405e as ATTRIBUTEINFO4}
+
+pub using @ff18be0a9a154b4a {type BIDIDATA_8170656cb0d9 as BIDIDATA}
+
+pub using @ff18be0a9a154b4a {type BIDIDATAUEUnion_b4e492462a8f as BIDIDATAUEUnion}
+
+pub using @ff18be0a9a154b4a {type BIDIREQUESTCONTAINER_f8db46d76964 as BIDIREQUESTCONTAINER}
+
+pub using @ff18be0a9a154b4a {type BIDIREQUESTDATA_f9966756a1d2 as BIDIREQUESTDATA}
+
+pub using @ff18be0a9a154b4a {type BIDIRESPONSECONTAINER_ac7b025aa7ed as BIDIRESPONSECONTAINER}
+
+pub using @ff18be0a9a154b4a {type BIDIRESPONSEDATA_b042c3d092da as BIDIRESPONSEDATA}
+
+pub using @ff18be0a9a154b4a {type BIDITYPE_4eed56e50cba as BIDITYPE}
+
+pub using @ff18be0a9a154b4a {type BINARYCONTAINER_917e28fb6c46 as BINARYCONTAINER}
+
+pub using @ff18be0a9a154b4a {type BidiRequest_310d2f84571f as BidiRequest}
+
+pub using @ff18be0a9a154b4a {type BidiRequestContainer_2ff984c59fad as BidiRequestContainer}
+
+pub using @ff18be0a9a154b4a {type BidiSpl_89d73521fe3c as BidiSpl}
+
+pub using @ff18be0a9a154b4a {type BranchOfficeJobData_f30491014868 as BranchOfficeJobData}
+
+pub using @ff18be0a9a154b4a {type BranchOfficeJobDataContainer_07ab13f0d830 as BranchOfficeJobDataContainer}
+
+pub using @ff18be0a9a154b4a {type BranchOfficeJobDataError_1ab14669e4ea as BranchOfficeJobDataError}
+
+pub using @ff18be0a9a154b4a {type BranchOfficeJobDataJobInfoEUnion_2e308228068e as BranchOfficeJobDataJobInfoEUnion}
+
+pub using @ff18be0a9a154b4a {type BranchOfficeJobDataPipelineFailed_be33cb19115b as BranchOfficeJobDataPipelineFailed}
+
+pub using @ff18be0a9a154b4a {type BranchOfficeJobDataPrinted_9ab1cacbaaab as BranchOfficeJobDataPrinted}
+
+pub using @ff18be0a9a154b4a {type BranchOfficeJobDataRendered_0231ca98a7b1 as BranchOfficeJobDataRendered}
+
+pub using @ff18be0a9a154b4a {type BranchOfficeLogOfflineFileFull_b04289217fe1 as BranchOfficeLogOfflineFileFull}
+
+pub using @ff18be0a9a154b4a {type COMPROPSHEETUI_c6eb65fb806d as COMPROPSHEETUI}
+
+pub using @ff18be0a9a154b4a {type CONFIGINFODATA1_69e6f49ed567 as CONFIGINFODATA1}
+
+pub using @ff18be0a9a154b4a {type COREPRINTERDRIVERA_3d21cff21489 as COREPRINTERDRIVERA}
+
+pub using @ff18be0a9a154b4a {type COREPRINTERDRIVERW_636b4a20b451 as COREPRINTERDRIVERW}
+
+pub using @ff18be0a9a154b4a {type CPSUICALLBACK_f187afc3ffd4 as CPSUICALLBACK}
+
+pub using @ff18be0a9a154b4a {type CPSUICBPARAM_da58da7c3870 as CPSUICBPARAM}
+
+pub using @ff18be0a9a154b4a {type CPSUICBPARAMAnonymousEUnion_dcc098cc53d5 as CPSUICBPARAMAnonymousEUnion}
+
+pub using @ff18be0a9a154b4a {type CPSUIDATABLOCK_65315e5dc8f8 as CPSUIDATABLOCK}
+
+pub using @ff18be0a9a154b4a {type CUSTOMSIZEPARAM_a518c095ed8d as CUSTOMSIZEPARAM}
+
+pub using @ff18be0a9a154b4a {type DATAHEADER_497f9d8e94d8 as DATAHEADER}
+
+pub using @ff18be0a9a154b4a {type DATATYPESINFO1A_950f37e8b4fc as DATATYPESINFO1A}
+
+pub using @ff18be0a9a154b4a {type DATATYPESINFO1W_2f502bbe11de as DATATYPESINFO1W}
+
+pub using @ff18be0a9a154b4a {type DELETEPORTDATA1_7cb8dc18ff54 as DELETEPORTDATA1}
+
+pub using @ff18be0a9a154b4a {type DEVICEPROPERTYHEADER_2e72b950d04a as DEVICEPROPERTYHEADER}
+
+pub using @ff18be0a9a154b4a {type DEVQUERYPRINTINFO_b370a0e66607 as DEVQUERYPRINTINFO}
+
+pub using @ff18be0a9a154b4a {type DLGPAGE_088cac89eadb as DLGPAGE}
+
+pub using @ff18be0a9a154b4a {type DLGPAGEAnonymousEUnion_973a409a5477 as DLGPAGEAnonymousEUnion}
+
+pub using @ff18be0a9a154b4a {type DOCEVENTCREATEDCPRE_b9cdebebd294 as DOCEVENTCREATEDCPRE}
+
+pub using @ff18be0a9a154b4a {type DOCEVENTESCAPE_372be07e1eb0 as DOCEVENTESCAPE}
+
+pub using @ff18be0a9a154b4a {type DOCEVENTFILTER_d071d9585efe as DOCEVENTFILTER}
+
+pub using @ff18be0a9a154b4a {type DOCINFO1A_6231ae657c74 as DOCINFO1A}
+
+pub using @ff18be0a9a154b4a {type DOCINFO1W_07f2b47abe95 as DOCINFO1W}
+
+pub using @ff18be0a9a154b4a {type DOCINFO2A_555cbaca5407 as DOCINFO2A}
+
+pub using @ff18be0a9a154b4a {type DOCINFO2W_94710586d8ec as DOCINFO2W}
+
+pub using @ff18be0a9a154b4a {type DOCINFO3A_61a572352a85 as DOCINFO3A}
+
+pub using @ff18be0a9a154b4a {type DOCINFO3W_f5e294aae326 as DOCINFO3W}
+
+pub using @ff18be0a9a154b4a {type DOCINFOINTERNAL_2544e74f7f2e as DOCINFOINTERNAL}
+
+pub using @ff18be0a9a154b4a {type DOCUMENTPROPERTYHEADER_65f076455c90 as DOCUMENTPROPERTYHEADER}
+
+pub using @ff18be0a9a154b4a {type DRIVERINFO1A_cf25f977dcaf as DRIVERINFO1A}
+
+pub using @ff18be0a9a154b4a {type DRIVERINFO1W_e337dbfeecba as DRIVERINFO1W}
+
+pub using @ff18be0a9a154b4a {type DRIVERINFO2A_f279d22d7ffa as DRIVERINFO2A}
+
+pub using @ff18be0a9a154b4a {type DRIVERINFO2W_40c2cc347152 as DRIVERINFO2W}
+
+pub using @ff18be0a9a154b4a {type DRIVERINFO3A_4a92c5e08572 as DRIVERINFO3A}
+
+pub using @ff18be0a9a154b4a {type DRIVERINFO3W_f45bbd700c19 as DRIVERINFO3W}
+
+pub using @ff18be0a9a154b4a {type DRIVERINFO4A_a27b4e932dc5 as DRIVERINFO4A}
+
+pub using @ff18be0a9a154b4a {type DRIVERINFO4W_e7c68a9ef842 as DRIVERINFO4W}
+
+pub using @ff18be0a9a154b4a {type DRIVERINFO5A_234477dfbf7b as DRIVERINFO5A}
+
+pub using @ff18be0a9a154b4a {type DRIVERINFO5W_48d447054076 as DRIVERINFO5W}
+
+pub using @ff18be0a9a154b4a {type DRIVERINFO6A_e018c09fb022 as DRIVERINFO6A}
+
+pub using @ff18be0a9a154b4a {type DRIVERINFO6W_e76152e94019 as DRIVERINFO6W}
+
+pub using @ff18be0a9a154b4a {type DRIVERINFO8A_75879f56b346 as DRIVERINFO8A}
+
+pub using @ff18be0a9a154b4a {type DRIVERINFO8W_11f177b69901 as DRIVERINFO8W}
+
+pub using @ff18be0a9a154b4a {type DRIVERUPGRADEINFO1_ccaa52e7ad58 as DRIVERUPGRADEINFO1}
+
+pub using @ff18be0a9a154b4a {type DRIVERUPGRADEINFO2_1426de0d1c60 as DRIVERUPGRADEINFO2}
+
+pub using @ff18be0a9a154b4a {type EATTRIBUTEDATATYPE_4662f127ea26 as EATTRIBUTEDATATYPE}
+
+pub using @ff18be0a9a154b4a {type EBranchOfficeJobEventType_5c59c3c8170d as EBranchOfficeJobEventType}
+
+pub using @ff18be0a9a154b4a {type EMFPLAYPROC_15ae4b495c96 as EMFPLAYPROC}
+
+pub using @ff18be0a9a154b4a {type EPrintPropertyType_c78515091766 as EPrintPropertyType}
+
+pub using @ff18be0a9a154b4a {type EPrintXPSJobOperation_e53fd3681112 as EPrintXPSJobOperation}
+
+pub using @ff18be0a9a154b4a {type EPrintXPSJobProgress_3fcd14bbcb54 as EPrintXPSJobProgress}
+
+pub using @ff18be0a9a154b4a {type EXTCHKBOX_7026ba54e3b2 as EXTCHKBOX}
+
+pub using @ff18be0a9a154b4a {type EXTPUSH_0cdd8312e37c as EXTPUSH}
+
+pub using @ff18be0a9a154b4a {type EXTPUSHAnonymous1EUnion_d4468667de33 as EXTPUSHAnonymous1EUnion}
+
+pub using @ff18be0a9a154b4a {type EXTPUSHAnonymous2EUnion_4578c0cf349b as EXTPUSHAnonymous2EUnion}
+
+pub using @ff18be0a9a154b4a {type EXTTEXTMETRIC_ec2078281ae4 as EXTTEXTMETRIC}
+
+pub using @ff18be0a9a154b4a {type EXpsCompressionOptions_b9331312d337 as EXpsCompressionOptions}
+
+pub using @ff18be0a9a154b4a {type EXpsFontOptions_6e1d4ade57c3 as EXpsFontOptions}
+
+pub using @ff18be0a9a154b4a {type EXpsFontRestriction_6efcc1a4f764 as EXpsFontRestriction}
+
+pub using @ff18be0a9a154b4a {type EXpsJobConsumption_5056944621ca as EXpsJobConsumption}
+
+pub using @ff18be0a9a154b4a {type FINDPRINTERCHANGENOTIFICATIONHANDLE_2ded3a7727d7 as FINDPRINTERCHANGENOTIFICATIONHANDLE}
+
+pub using @ff18be0a9a154b4a {type FORMINFO1A_11cf741e94da as FORMINFO1A}
+
+pub using @ff18be0a9a154b4a {type FORMINFO1W_3d053428fa41 as FORMINFO1W}
+
+pub using @ff18be0a9a154b4a {type FORMINFO2A_902977424389 as FORMINFO2A}
+
+pub using @ff18be0a9a154b4a {type FORMINFO2W_5e89c0b0360a as FORMINFO2W}
+
+pub using @ff18be0a9a154b4a {type GLYPHRUN_12241750a6f5 as GLYPHRUN}
+
+pub using @ff18be0a9a154b4a {type IAsyncGetSendNotificationCookie_45cf0b6431ca as IAsyncGetSendNotificationCookie}
+
+pub using @ff18be0a9a154b4a {type IAsyncGetSrvReferralCookie_986bbd929be3 as IAsyncGetSrvReferralCookie}
+
+pub using @ff18be0a9a154b4a {type IBidiAsyncNotifyChannel_a588e38ba4cd as IBidiAsyncNotifyChannel}
+
+pub using @ff18be0a9a154b4a {type IBidiRequest_041f626716b6 as IBidiRequest}
+
+pub using @ff18be0a9a154b4a {type IBidiRequestContainer_99a1d50e2132 as IBidiRequestContainer}
+
+pub using @ff18be0a9a154b4a {type IBidiSpl_63214665b84b as IBidiSpl}
+
+pub using @ff18be0a9a154b4a {type IBidiSpl2_aea1e00ab620 as IBidiSpl2}
+
+pub using @ff18be0a9a154b4a {type IFixedDocument_9ddd49aa14e0 as IFixedDocument}
+
+pub using @ff18be0a9a154b4a {type IFixedDocumentSequence_d00e2bd35a58 as IFixedDocumentSequence}
+
+pub using @ff18be0a9a154b4a {type IFixedPage_3feb9a3a71af as IFixedPage}
+
+pub using @ff18be0a9a154b4a {type IImgCreateErrorInfo_83c539bcc2da as IImgCreateErrorInfo}
+
+pub using @ff18be0a9a154b4a {type IImgErrorInfo_a7a8fcd9bfda as IImgErrorInfo}
+
+pub using @ff18be0a9a154b4a {type IInterFilterCommunicator_1f998f2468c7 as IInterFilterCommunicator}
+
+pub using @ff18be0a9a154b4a {type INSERTPSUIPAGEINFO_996bffd892f3 as INSERTPSUIPAGEINFO}
+
+pub using @ff18be0a9a154b4a {type INVOC_21b300d97ea0 as INVOC}
+
+pub using @ff18be0a9a154b4a {type IPartBase_3758682e8a46 as IPartBase}
+
+pub using @ff18be0a9a154b4a {type IPartColorProfile_58a6e4eb1aa1 as IPartColorProfile}
+
+pub using @ff18be0a9a154b4a {type IPartDiscardControl_3c56e1c3cf3e as IPartDiscardControl}
+
+pub using @ff18be0a9a154b4a {type IPartFont_50b67db74d13 as IPartFont}
+
+pub using @ff18be0a9a154b4a {type IPartFont2_ba82a8446247 as IPartFont2}
+
+pub using @ff18be0a9a154b4a {type IPartImage_0d77490f18d9 as IPartImage}
+
+pub using @ff18be0a9a154b4a {type IPartPrintTicket_cd6cf5574e3c as IPartPrintTicket}
+
+pub using @ff18be0a9a154b4a {type IPartResourceDictionary_34535792f4c8 as IPartResourceDictionary}
+
+pub using @ff18be0a9a154b4a {type IPartThumbnail_6f6d98a8e3e3 as IPartThumbnail}
+
+pub using @ff18be0a9a154b4a {type IPrintAsyncCookie_4371df320040 as IPrintAsyncCookie}
+
+pub using @ff18be0a9a154b4a {type IPrintAsyncNewChannelCookie_bb99135ad55a as IPrintAsyncNewChannelCookie}
+
+pub using @ff18be0a9a154b4a {type IPrintAsyncNotify_6f7d142c68b0 as IPrintAsyncNotify}
+
+pub using @ff18be0a9a154b4a {type IPrintAsyncNotifyCallback_62a4f10bd563 as IPrintAsyncNotifyCallback}
+
+pub using @ff18be0a9a154b4a {type IPrintAsyncNotifyChannel_cbc8f0cc6501 as IPrintAsyncNotifyChannel}
+
+pub using @ff18be0a9a154b4a {type IPrintAsyncNotifyDataObject_e8fb5492edf2 as IPrintAsyncNotifyDataObject}
+
+pub using @ff18be0a9a154b4a {type IPrintAsyncNotifyRegistration_5f7a396857a5 as IPrintAsyncNotifyRegistration}
+
+pub using @ff18be0a9a154b4a {type IPrintAsyncNotifyServerReferral_e5e26732d014 as IPrintAsyncNotifyServerReferral}
+
+pub using @ff18be0a9a154b4a {type IPrintBidiAsyncNotifyRegistration_899fe1b75730 as IPrintBidiAsyncNotifyRegistration}
+
+pub using @ff18be0a9a154b4a {type IPrintClassObjectFactory_4d037a0f25a3 as IPrintClassObjectFactory}
+
+pub using @ff18be0a9a154b4a {type IPrintCoreHelper_3ae4b58b643b as IPrintCoreHelper}
+
+pub using @ff18be0a9a154b4a {type IPrintCoreHelperPS_2797ca7de6f8 as IPrintCoreHelperPS}
+
+pub using @ff18be0a9a154b4a {type IPrintCoreHelperUni_250cc27987ef as IPrintCoreHelperUni}
+
+pub using @ff18be0a9a154b4a {type IPrintCoreHelperUni2_a9919d5e256c as IPrintCoreHelperUni2}
+
+pub using @ff18be0a9a154b4a {type IPrintCoreUI2_59969e990259 as IPrintCoreUI2}
+
+pub using @ff18be0a9a154b4a {type IPrintJob_ce70ba230ba8 as IPrintJob}
+
+pub using @ff18be0a9a154b4a {type IPrintJobCollection_0a9aba4c70bd as IPrintJobCollection}
+
+pub using @ff18be0a9a154b4a {type IPrintOemCommon_1bd53efa8789 as IPrintOemCommon}
+
+pub using @ff18be0a9a154b4a {type IPrintOemDriverUI_8c52274dae6f as IPrintOemDriverUI}
+
+pub using @ff18be0a9a154b4a {type IPrintOemUI_f5e3facb6082 as IPrintOemUI}
+
+pub using @ff18be0a9a154b4a {type IPrintOemUI2_f72c6cdfa839 as IPrintOemUI2}
+
+pub using @ff18be0a9a154b4a {type IPrintOemUIMXDC_cadb0a554097 as IPrintOemUIMXDC}
+
+pub using @ff18be0a9a154b4a {type IPrintPipelineFilter_d1e242b18bdd as IPrintPipelineFilter}
+
+pub using @ff18be0a9a154b4a {type IPrintPipelineManagerControl_4ecf1b470318 as IPrintPipelineManagerControl}
+
+pub using @ff18be0a9a154b4a {type IPrintPipelineProgressReport_7a042b7ff20c as IPrintPipelineProgressReport}
+
+pub using @ff18be0a9a154b4a {type IPrintPipelinePropertyBag_d5bb2b3447d1 as IPrintPipelinePropertyBag}
+
+pub using @ff18be0a9a154b4a {type IPrintPreviewDxgiPackageTarget_f18f30e34e39 as IPrintPreviewDxgiPackageTarget}
+
+pub using @ff18be0a9a154b4a {type IPrintReadStream_57661e2896a9 as IPrintReadStream}
+
+pub using @ff18be0a9a154b4a {type IPrintReadStreamFactory_646a06ce10f3 as IPrintReadStreamFactory}
+
+pub using @ff18be0a9a154b4a {type IPrintSchemaAsyncOperation_05b04307ba06 as IPrintSchemaAsyncOperation}
+
+pub using @ff18be0a9a154b4a {type IPrintSchemaAsyncOperationEvent_2c304b56b39a as IPrintSchemaAsyncOperationEvent}
+
+pub using @ff18be0a9a154b4a {type IPrintSchemaCapabilities_a4dd17baf68b as IPrintSchemaCapabilities}
+
+pub using @ff18be0a9a154b4a {type IPrintSchemaCapabilities2_6335cdca72e0 as IPrintSchemaCapabilities2}
+
+pub using @ff18be0a9a154b4a {type IPrintSchemaDisplayableElement_5df16d662acf as IPrintSchemaDisplayableElement}
+
+pub using @ff18be0a9a154b4a {type IPrintSchemaElement_a1a89acc0eb3 as IPrintSchemaElement}
+
+pub using @ff18be0a9a154b4a {type IPrintSchemaFeature_34d29c91f7a8 as IPrintSchemaFeature}
+
+pub using @ff18be0a9a154b4a {type IPrintSchemaNUpOption_fdae7e7e8add as IPrintSchemaNUpOption}
+
+pub using @ff18be0a9a154b4a {type IPrintSchemaOption_b63b7fb47aa5 as IPrintSchemaOption}
+
+pub using @ff18be0a9a154b4a {type IPrintSchemaOptionCollection_7998058bcb00 as IPrintSchemaOptionCollection}
+
+pub using @ff18be0a9a154b4a {type IPrintSchemaPageImageableSize_bb4ba9f8a254 as IPrintSchemaPageImageableSize}
+
+pub using @ff18be0a9a154b4a {type IPrintSchemaPageMediaSizeOption_ede44d5030a8 as IPrintSchemaPageMediaSizeOption}
+
+pub using @ff18be0a9a154b4a {type IPrintSchemaParameterDefinition_ac2738a25532 as IPrintSchemaParameterDefinition}
+
+pub using @ff18be0a9a154b4a {type IPrintSchemaParameterInitializer_5285e04b617a as IPrintSchemaParameterInitializer}
+
+pub using @ff18be0a9a154b4a {type IPrintSchemaTicket_634ae26f3154 as IPrintSchemaTicket}
+
+pub using @ff18be0a9a154b4a {type IPrintSchemaTicket2_03f821f14a1e as IPrintSchemaTicket2}
+
+pub using @ff18be0a9a154b4a {type IPrintTicketProvider_e2140f3fe446 as IPrintTicketProvider}
+
+pub using @ff18be0a9a154b4a {type IPrintTicketProvider2_b0b9ddb8cc80 as IPrintTicketProvider2}
+
+pub using @ff18be0a9a154b4a {type IPrintUnidiAsyncNotifyRegistration_e84e4476bdfe as IPrintUnidiAsyncNotifyRegistration}
+
+pub using @ff18be0a9a154b4a {type IPrintWriteStream_4923bd3fcbb3 as IPrintWriteStream}
+
+pub using @ff18be0a9a154b4a {type IPrintWriteStreamFlush_b2cf12b7bed4 as IPrintWriteStreamFlush}
+
+pub using @ff18be0a9a154b4a {type IPrinterBidiSetRequestCallback_0976614ca8c6 as IPrinterBidiSetRequestCallback}
+
+pub using @ff18be0a9a154b4a {type IPrinterExtensionAsyncOperation_94229acbeff0 as IPrinterExtensionAsyncOperation}
+
+pub using @ff18be0a9a154b4a {type IPrinterExtensionContext_de3c5bd55977 as IPrinterExtensionContext}
+
+pub using @ff18be0a9a154b4a {type IPrinterExtensionContextCollection_0b295068e611 as IPrinterExtensionContextCollection}
+
+pub using @ff18be0a9a154b4a {type IPrinterExtensionEvent_c1244f0cb284 as IPrinterExtensionEvent}
+
+pub using @ff18be0a9a154b4a {type IPrinterExtensionEventArgs_0707cf8a7837 as IPrinterExtensionEventArgs}
+
+pub using @ff18be0a9a154b4a {type IPrinterExtensionManager_063d08e49329 as IPrinterExtensionManager}
+
+pub using @ff18be0a9a154b4a {type IPrinterExtensionRequest_89bd9121a974 as IPrinterExtensionRequest}
+
+pub using @ff18be0a9a154b4a {type IPrinterPropertyBag_9ff218f5438e as IPrinterPropertyBag}
+
+pub using @ff18be0a9a154b4a {type IPrinterQueue_133c42f1b107 as IPrinterQueue}
+
+pub using @ff18be0a9a154b4a {type IPrinterQueue2_1b9e9b669442 as IPrinterQueue2}
+
+pub using @ff18be0a9a154b4a {type IPrinterQueueEvent_7d497f7af7db as IPrinterQueueEvent}
+
+pub using @ff18be0a9a154b4a {type IPrinterQueueView_0d495d74a87b as IPrinterQueueView}
+
+pub using @ff18be0a9a154b4a {type IPrinterQueueViewEvent_94ec745412a6 as IPrinterQueueViewEvent}
+
+pub using @ff18be0a9a154b4a {type IPrinterScriptContext_cfe3679eea73 as IPrinterScriptContext}
+
+pub using @ff18be0a9a154b4a {type IPrinterScriptablePropertyBag_927cbcfd85f3 as IPrinterScriptablePropertyBag}
+
+pub using @ff18be0a9a154b4a {type IPrinterScriptablePropertyBag2_b6231dc6c7c7 as IPrinterScriptablePropertyBag2}
+
+pub using @ff18be0a9a154b4a {type IPrinterScriptableSequentialStream_44993e7c4912 as IPrinterScriptableSequentialStream}
+
+pub using @ff18be0a9a154b4a {type IPrinterScriptableStream_94c45192bff9 as IPrinterScriptableStream}
+
+pub using @ff18be0a9a154b4a {type IXpsDocument_527863c8fd56 as IXpsDocument}
+
+pub using @ff18be0a9a154b4a {type IXpsDocumentConsumer_616fd977bc39 as IXpsDocumentConsumer}
+
+pub using @ff18be0a9a154b4a {type IXpsDocumentProvider_7835b2759316 as IXpsDocumentProvider}
+
+pub using @ff18be0a9a154b4a {type IXpsPartIterator_079ed8ef138e as IXpsPartIterator}
+
+pub using @ff18be0a9a154b4a {type IXpsRasterizationFactory_9fd5856b4491 as IXpsRasterizationFactory}
+
+pub using @ff18be0a9a154b4a {type IXpsRasterizationFactory1_99f84cae9a32 as IXpsRasterizationFactory1}
+
+pub using @ff18be0a9a154b4a {type IXpsRasterizationFactory2_eb4110491f43 as IXpsRasterizationFactory2}
+
+pub using @ff18be0a9a154b4a {type IXpsRasterizer_289954695170 as IXpsRasterizer}
+
+pub using @ff18be0a9a154b4a {type IXpsRasterizerNotificationCallback_28ea0af0d6d4 as IXpsRasterizerNotificationCallback}
+
+pub using @ff18be0a9a154b4a {type ImgErrorInfo_af69abcf66f0 as ImgErrorInfo}
+
+pub using @ff18be0a9a154b4a {type JOBINFO1A_f115f022459f as JOBINFO1A}
+
+pub using @ff18be0a9a154b4a {type JOBINFO1W_e897b2cbce1a as JOBINFO1W}
+
+pub using @ff18be0a9a154b4a {type JOBINFO2A_3c2164aeb5bb as JOBINFO2A}
+
+pub using @ff18be0a9a154b4a {type JOBINFO2W_ae33f24463ff as JOBINFO2W}
+
+pub using @ff18be0a9a154b4a {type JOBINFO3_ae138a595509 as JOBINFO3}
+
+pub using @ff18be0a9a154b4a {type JOBINFO4A_82e9337b9152 as JOBINFO4A}
+
+pub using @ff18be0a9a154b4a {type JOBINFO4W_dd2614d7146c as JOBINFO4W}
+
+pub using @ff18be0a9a154b4a {type KERNDATA_d464f10738f5 as KERNDATA}
+
+pub using @ff18be0a9a154b4a {type MAPTABLE_2d545732c98f as MAPTABLE}
+
+pub using @ff18be0a9a154b4a {type MESSAGEBOXPARAMS_fce41805da5d as MESSAGEBOXPARAMS}
+
+pub using @ff18be0a9a154b4a {type MONITOR_0a7b1f5e5cc2 as MONITOR}
+
+pub using @ff18be0a9a154b4a {type MONITOR2_f37a1f02b3c2 as MONITOR2}
+
+pub using @ff18be0a9a154b4a {type MONITOREX_eefb4b614245 as MONITOREX}
+
+pub using @ff18be0a9a154b4a {type MONITORINFO1A_259277faf8e1 as MONITORINFO1A}
+
+pub using @ff18be0a9a154b4a {type MONITORINFO1W_16a07f8e5db4 as MONITORINFO1W}
+
+pub using @ff18be0a9a154b4a {type MONITORINFO2A_4295c2b53ec4 as MONITORINFO2A}
+
+pub using @ff18be0a9a154b4a {type MONITORINFO2W_105c61d05d4b as MONITORINFO2W}
+
+pub using @ff18be0a9a154b4a {type MONITORINIT_a2a72bde8920 as MONITORINIT}
+
+pub using @ff18be0a9a154b4a {type MONITORREG_804533041c31 as MONITORREG}
+
+pub using @ff18be0a9a154b4a {type MONITORUI_819a4a8ef730 as MONITORUI}
+
+pub using @ff18be0a9a154b4a {type MXDCESCAPEHEADERT_ee5f18ab0e78 as MXDCESCAPEHEADERT}
+
+pub using @ff18be0a9a154b4a {type MXDCGETFILENAMEDATAT_e642550c9548 as MXDCGETFILENAMEDATAT}
+
+pub using @ff18be0a9a154b4a {type MXDCIMAGETYPEENUMS_a0f8952dcc09 as MXDCIMAGETYPEENUMS}
+
+pub using @ff18be0a9a154b4a {type MXDCLANDSCAPEROTATIONENUMS_d4cb6744c95a as MXDCLANDSCAPEROTATIONENUMS}
+
+pub using @ff18be0a9a154b4a {type MXDCPRINTTICKETDATAT_0ba10441a421 as MXDCPRINTTICKETDATAT}
+
+pub using @ff18be0a9a154b4a {type MXDCPRINTTICKETESCAPET_acf7ea3a507a as MXDCPRINTTICKETESCAPET}
+
+pub using @ff18be0a9a154b4a {type MXDCS0PAGEDATAT_19597e863853 as MXDCS0PAGEDATAT}
+
+pub using @ff18be0a9a154b4a {type MXDCS0PAGEENUMS_c3829666a59a as MXDCS0PAGEENUMS}
+
+pub using @ff18be0a9a154b4a {type MXDCS0PAGEPASSTHROUGHESCAPET_953650aeefee as MXDCS0PAGEPASSTHROUGHESCAPET}
+
+pub using @ff18be0a9a154b4a {type MXDCS0PAGERESOURCEESCAPET_5c818ce2e88d as MXDCS0PAGERESOURCEESCAPET}
+
+pub using @ff18be0a9a154b4a {type MXDCXPSS0PAGERESOURCET_e8f2ed4330ea as MXDCXPSS0PAGERESOURCET}
+
+pub using @ff18be0a9a154b4a {type NOTIFICATIONCALLBACKCOMMANDS_9566669a453d as NOTIFICATIONCALLBACKCOMMANDS}
+
+pub using @ff18be0a9a154b4a {type NOTIFICATIONCONFIG1_054d60625c00 as NOTIFICATIONCONFIG1}
+
+pub using @ff18be0a9a154b4a {type NOTIFICATIONCONFIGFLAGS_822beb150322 as NOTIFICATIONCONFIGFLAGS}
+
+pub using @ff18be0a9a154b4a {type OEMCUIPCALLBACK_f50a40980a84 as OEMCUIPCALLBACK}
+
+pub using @ff18be0a9a154b4a {type OEMCUIPPARAM_f61f2336599b as OEMCUIPPARAM}
+
+pub using @ff18be0a9a154b4a {type OEMDMEXTRAHEADER_32770e9c6b71 as OEMDMEXTRAHEADER}
+
+pub using @ff18be0a9a154b4a {type OEMDMPARAM_fce67fa0ebc0 as OEMDMPARAM}
+
+pub using @ff18be0a9a154b4a {type OEMFONTINSTPARAM_0e11825424c5 as OEMFONTINSTPARAM}
+
+pub using @ff18be0a9a154b4a {type OEMUIOBJ_9d30a8f18e6e as OEMUIOBJ}
+
+pub using @ff18be0a9a154b4a {type OEMUIPROCS_497aec758482 as OEMUIPROCS}
+
+pub using @ff18be0a9a154b4a {type OEMUIPSPARAM_56927d084e4c as OEMUIPSPARAM}
+
+pub using @ff18be0a9a154b4a {type OIEXT_b18c8c333ad1 as OIEXT}
+
+pub using @ff18be0a9a154b4a {type OPTCOMBO_fc47e04cff6b as OPTCOMBO}
+
+pub using @ff18be0a9a154b4a {type OPTITEM_8dd7b674b8bc as OPTITEM}
+
+pub using @ff18be0a9a154b4a {type OPTITEMAnonymous1EUnion_ebc0b161c750 as OPTITEMAnonymous1EUnion}
+
+pub using @ff18be0a9a154b4a {type OPTITEMAnonymous2EUnion_24504fafa861 as OPTITEMAnonymous2EUnion}
+
+pub using @ff18be0a9a154b4a {type OPTPARAM_e801e87c74d9 as OPTPARAM}
+
+pub using @ff18be0a9a154b4a {type OPTTYPE_82e958773e48 as OPTTYPE}
+
+pub using @ff18be0a9a154b4a {type PFNCOMPROPSHEET_92122a0630a8 as PFNCOMPROPSHEET}
+
+pub using @ff18be0a9a154b4a {type PFNDrvGetDriverSetting_1ba71d2705de as PFNDrvGetDriverSetting}
+
+pub using @ff18be0a9a154b4a {type PFNDrvUpdateUISetting_fd44657dce90 as PFNDrvUpdateUISetting}
+
+pub using @ff18be0a9a154b4a {type PFNDrvUpgradeRegistrySetting_2b4e87b156e6 as PFNDrvUpgradeRegistrySetting}
+
+pub using @ff18be0a9a154b4a {type PFNPRINTINGADDPORT_e25e78ac1d4e as PFNPRINTINGADDPORT}
+
+pub using @ff18be0a9a154b4a {type PFNPRINTINGADDPORT2_9c2e5989dd45 as PFNPRINTINGADDPORT2}
+
+pub using @ff18be0a9a154b4a {type PFNPRINTINGADDPORTEX_eb895a98c042 as PFNPRINTINGADDPORTEX}
+
+pub using @ff18be0a9a154b4a {type PFNPRINTINGADDPORTEX2_b4694128cad4 as PFNPRINTINGADDPORTEX2}
+
+pub using @ff18be0a9a154b4a {type PFNPRINTINGCLOSEPORT_3c5e971ca021 as PFNPRINTINGCLOSEPORT}
+
+pub using @ff18be0a9a154b4a {type PFNPRINTINGCLOSEPORT2_ca94b4dad537 as PFNPRINTINGCLOSEPORT2}
+
+pub using @ff18be0a9a154b4a {type PFNPRINTINGCONFIGUREPORT_0102980aef20 as PFNPRINTINGCONFIGUREPORT}
+
+pub using @ff18be0a9a154b4a {type PFNPRINTINGCONFIGUREPORT2_86ff4d0ef3db as PFNPRINTINGCONFIGUREPORT2}
+
+pub using @ff18be0a9a154b4a {type PFNPRINTINGDELETEPORT_d62cf596c8b6 as PFNPRINTINGDELETEPORT}
+
+pub using @ff18be0a9a154b4a {type PFNPRINTINGDELETEPORT2_98e155fadf42 as PFNPRINTINGDELETEPORT2}
+
+pub using @ff18be0a9a154b4a {type PFNPRINTINGENDDOCPORT_5f546b98f81b as PFNPRINTINGENDDOCPORT}
+
+pub using @ff18be0a9a154b4a {type PFNPRINTINGENDDOCPORT2_2d07cb7687c0 as PFNPRINTINGENDDOCPORT2}
+
+pub using @ff18be0a9a154b4a {type PFNPRINTINGENUMPORTS_9a2a408833a2 as PFNPRINTINGENUMPORTS}
+
+pub using @ff18be0a9a154b4a {type PFNPRINTINGENUMPORTS2_225ca2e5e03a as PFNPRINTINGENUMPORTS2}
+
+pub using @ff18be0a9a154b4a {type PFNPRINTINGGETPRINTERDATAFROMPORT_ac6b40bf7f45 as PFNPRINTINGGETPRINTERDATAFROMPORT}
+
+pub using @ff18be0a9a154b4a {type PFNPRINTINGGETPRINTERDATAFROMPORT2_096f4c7a2059 as PFNPRINTINGGETPRINTERDATAFROMPORT2}
+
+pub using @ff18be0a9a154b4a {type PFNPRINTINGNOTIFYUNUSEDPORTS2_7948fed3845f as PFNPRINTINGNOTIFYUNUSEDPORTS2}
+
+pub using @ff18be0a9a154b4a {type PFNPRINTINGNOTIFYUSEDPORTS2_7d092ae16a11 as PFNPRINTINGNOTIFYUSEDPORTS2}
+
+pub using @ff18be0a9a154b4a {type PFNPRINTINGOPENPORT_1606cc47d6fa as PFNPRINTINGOPENPORT}
+
+pub using @ff18be0a9a154b4a {type PFNPRINTINGOPENPORT2_b204ad0b7d02 as PFNPRINTINGOPENPORT2}
+
+pub using @ff18be0a9a154b4a {type PFNPRINTINGOPENPORTEX_3625e21b9d02 as PFNPRINTINGOPENPORTEX}
+
+pub using @ff18be0a9a154b4a {type PFNPRINTINGOPENPORTEX2_960e2dab2c8b as PFNPRINTINGOPENPORTEX2}
+
+pub using @ff18be0a9a154b4a {type PFNPRINTINGPOWEREVENT2_10f92e951a60 as PFNPRINTINGPOWEREVENT2}
+
+pub using @ff18be0a9a154b4a {type PFNPRINTINGREADPORT_f12a96f75a11 as PFNPRINTINGREADPORT}
+
+pub using @ff18be0a9a154b4a {type PFNPRINTINGREADPORT2_1bc7973d238b as PFNPRINTINGREADPORT2}
+
+pub using @ff18be0a9a154b4a {type PFNPRINTINGSENDRECVBIDIDATAFROMPORT2_fbd76955031f as PFNPRINTINGSENDRECVBIDIDATAFROMPORT2}
+
+pub using @ff18be0a9a154b4a {type PFNPRINTINGSETPORTTIMEOUTS_a3cd4f2c3d2b as PFNPRINTINGSETPORTTIMEOUTS}
+
+pub using @ff18be0a9a154b4a {type PFNPRINTINGSETPORTTIMEOUTS2_93bff93efec0 as PFNPRINTINGSETPORTTIMEOUTS2}
+
+pub using @ff18be0a9a154b4a {type PFNPRINTINGSHUTDOWN2_72f995eaad2c as PFNPRINTINGSHUTDOWN2}
+
+pub using @ff18be0a9a154b4a {type PFNPRINTINGSTARTDOCPORT_7e379463cb37 as PFNPRINTINGSTARTDOCPORT}
+
+pub using @ff18be0a9a154b4a {type PFNPRINTINGSTARTDOCPORT2_f3fdcd01a2f6 as PFNPRINTINGSTARTDOCPORT2}
+
+pub using @ff18be0a9a154b4a {type PFNPRINTINGWRITEPORT_9ee03570e06a as PFNPRINTINGWRITEPORT}
+
+pub using @ff18be0a9a154b4a {type PFNPRINTINGWRITEPORT2_046c641b3df5 as PFNPRINTINGWRITEPORT2}
+
+pub using @ff18be0a9a154b4a {type PFNPRINTINGXCVCLOSEPORT_b4fab67db78a as PFNPRINTINGXCVCLOSEPORT}
+
+pub using @ff18be0a9a154b4a {type PFNPRINTINGXCVCLOSEPORT2_162a0977d4c1 as PFNPRINTINGXCVCLOSEPORT2}
+
+pub using @ff18be0a9a154b4a {type PFNPRINTINGXCVDATAPORT_2bc6dcd240ef as PFNPRINTINGXCVDATAPORT}
+
+pub using @ff18be0a9a154b4a {type PFNPRINTINGXCVDATAPORT2_53b496d316f5 as PFNPRINTINGXCVDATAPORT2}
+
+pub using @ff18be0a9a154b4a {type PFNPRINTINGXCVOPENPORT_31e0f3ec4a54 as PFNPRINTINGXCVOPENPORT}
+
+pub using @ff18be0a9a154b4a {type PFNPRINTINGXCVOPENPORT2_e23483f17852 as PFNPRINTINGXCVOPENPORT2}
+
+pub using @ff18be0a9a154b4a {type PFNPROPSHEETUI_6d95ea168adc as PFNPROPSHEETUI}
+
+pub using @ff18be0a9a154b4a {type PORTDATA1_551242d0c464 as PORTDATA1}
+
+pub using @ff18be0a9a154b4a {type PORTDATA2_4b0e7eb31c74 as PORTDATA2}
+
+pub using @ff18be0a9a154b4a {type PORTDATALIST1_be4b1ce3a407 as PORTDATALIST1}
+
+pub using @ff18be0a9a154b4a {type PORTINFO1A_214d29522ff6 as PORTINFO1A}
+
+pub using @ff18be0a9a154b4a {type PORTINFO1W_e44c580f59cf as PORTINFO1W}
+
+pub using @ff18be0a9a154b4a {type PORTINFO2A_194619f59104 as PORTINFO2A}
+
+pub using @ff18be0a9a154b4a {type PORTINFO2W_fead6f48e690 as PORTINFO2W}
+
+pub using @ff18be0a9a154b4a {type PORTINFO3A_900ae9531113 as PORTINFO3A}
+
+pub using @ff18be0a9a154b4a {type PORTINFO3W_c76fd755dfd5 as PORTINFO3W}
+
+pub using @ff18be0a9a154b4a {type PRINTERACCESSRIGHTS_8707b3b6f4e8 as PRINTERACCESSRIGHTS}
+
+pub using @ff18be0a9a154b4a {type PRINTERCONNECTIONINFO1A_1aa57b66d150 as PRINTERCONNECTIONINFO1A}
+
+pub using @ff18be0a9a154b4a {type PRINTERCONNECTIONINFO1W_b73e7666dea3 as PRINTERCONNECTIONINFO1W}
+
+pub using @ff18be0a9a154b4a {type PRINTERDEFAULTSA_b9798973b3f6 as PRINTERDEFAULTSA}
+
+pub using @ff18be0a9a154b4a {type PRINTERDEFAULTSW_e1626ba49250 as PRINTERDEFAULTSW}
+
+pub using @ff18be0a9a154b4a {type PRINTERENUMVALUESA_a5ccf8172242 as PRINTERENUMVALUESA}
+
+pub using @ff18be0a9a154b4a {type PRINTERENUMVALUESW_4e6f2a42c6c8 as PRINTERENUMVALUESW}
+
+pub using @ff18be0a9a154b4a {type PRINTEREVENTATTRIBUTESINFO_60d3f986339e as PRINTEREVENTATTRIBUTESINFO}
+
+pub using @ff18be0a9a154b4a {type PRINTERHANDLE_6e5789844e3d as PRINTERHANDLE}
+
+pub using @ff18be0a9a154b4a {type PRINTERINFO1A_a4947f819c73 as PRINTERINFO1A}
+
+pub using @ff18be0a9a154b4a {type PRINTERINFO1W_73e42c883c98 as PRINTERINFO1W}
+
+pub using @ff18be0a9a154b4a {type PRINTERINFO2A_e3c08e5b5a19 as PRINTERINFO2A}
+
+pub using @ff18be0a9a154b4a {type PRINTERINFO2W_c160507f3c55 as PRINTERINFO2W}
+
+pub using @ff18be0a9a154b4a {type PRINTERINFO3_c82ebf2351c3 as PRINTERINFO3}
+
+pub using @ff18be0a9a154b4a {type PRINTERINFO4A_0af8a7d8868e as PRINTERINFO4A}
+
+pub using @ff18be0a9a154b4a {type PRINTERINFO4W_bc11f9ec2ad2 as PRINTERINFO4W}
+
+pub using @ff18be0a9a154b4a {type PRINTERINFO5A_0d2fc911bec8 as PRINTERINFO5A}
+
+pub using @ff18be0a9a154b4a {type PRINTERINFO5W_d5f4c26afc31 as PRINTERINFO5W}
+
+pub using @ff18be0a9a154b4a {type PRINTERINFO6_2724e2cf1145 as PRINTERINFO6}
+
+pub using @ff18be0a9a154b4a {type PRINTERINFO7A_3915dbf64efa as PRINTERINFO7A}
+
+pub using @ff18be0a9a154b4a {type PRINTERINFO7W_80e66039c153 as PRINTERINFO7W}
+
+pub using @ff18be0a9a154b4a {type PRINTERINFO8A_0dd4227ace9b as PRINTERINFO8A}
+
+pub using @ff18be0a9a154b4a {type PRINTERINFO8W_01e073ee049a as PRINTERINFO8W}
+
+pub using @ff18be0a9a154b4a {type PRINTERINFO9A_96e0de756624 as PRINTERINFO9A}
+
+pub using @ff18be0a9a154b4a {type PRINTERINFO9W_72705b0984f8 as PRINTERINFO9W}
+
+pub using @ff18be0a9a154b4a {type PRINTERNOTIFYINFO_079796848eb1 as PRINTERNOTIFYINFO}
+
+pub using @ff18be0a9a154b4a {type PRINTERNOTIFYINFODATA_a80cd393877f as PRINTERNOTIFYINFODATA}
+
+pub using @ff18be0a9a154b4a {type PRINTERNOTIFYINFODATANotifyDataEUnion_8d11a9f099f4 as PRINTERNOTIFYINFODATANotifyDataEUnion}
+
+pub using @ff18be0a9a154b4a {type PRINTERNOTIFYINFODATANotifyDataEUnionDataEStruct_c05fe3982974 as PRINTERNOTIFYINFODATANotifyDataEUnionDataEStruct}
+
+pub using @ff18be0a9a154b4a {type PRINTERNOTIFYINIT_12136352d1e6 as PRINTERNOTIFYINIT}
+
+pub using @ff18be0a9a154b4a {type PRINTERNOTIFYOPTIONS_df009e4d2bc9 as PRINTERNOTIFYOPTIONS}
+
+pub using @ff18be0a9a154b4a {type PRINTERNOTIFYOPTIONSTYPE_4855f9371c5e as PRINTERNOTIFYOPTIONSTYPE}
+
+pub using @ff18be0a9a154b4a {type PRINTEROPTIONFLAGS_c871b99dd406 as PRINTEROPTIONFLAGS}
+
+pub using @ff18be0a9a154b4a {type PRINTEROPTIONSA_c1540711aeb2 as PRINTEROPTIONSA}
+
+pub using @ff18be0a9a154b4a {type PRINTEROPTIONSW_36eac3aae297 as PRINTEROPTIONSW}
+
+pub using @ff18be0a9a154b4a {type PRINTEXECUTIONCONTEXT_d98b9b972fbd as PRINTEXECUTIONCONTEXT}
+
+pub using @ff18be0a9a154b4a {type PRINTEXECUTIONDATA_aa0caacc9497 as PRINTEXECUTIONDATA}
+
+pub using @ff18be0a9a154b4a {type PRINTFEATUREOPTION_8da85d88d44e as PRINTFEATUREOPTION}
+
+pub using @ff18be0a9a154b4a {type PRINTIFI32_a40541cba458 as PRINTIFI32}
+
+pub using @ff18be0a9a154b4a {type PRINTPROCESSORCAPS1_d8d733b5e704 as PRINTPROCESSORCAPS1}
+
+pub using @ff18be0a9a154b4a {type PRINTPROCESSORCAPS2_b26f10ed12b1 as PRINTPROCESSORCAPS2}
+
+pub using @ff18be0a9a154b4a {type PRINTPROCESSORINFO1A_d67ed4f2cd08 as PRINTPROCESSORINFO1A}
+
+pub using @ff18be0a9a154b4a {type PRINTPROCESSORINFO1W_7d88ca3790a7 as PRINTPROCESSORINFO1W}
+
+pub using @ff18be0a9a154b4a {type PRINTPROCESSOROPENDATA_8d66a00318f3 as PRINTPROCESSOROPENDATA}
+
+pub using @ff18be0a9a154b4a {type PRINTPROVIDOR_bdaf322df58b as PRINTPROVIDOR}
+
+pub using @ff18be0a9a154b4a {type PROPSHEETUIGETICONINFO_85fb97bdd83b as PROPSHEETUIGETICONINFO}
+
+pub using @ff18be0a9a154b4a {type PROPSHEETUIINFO_f213f100f5c3 as PROPSHEETUIINFO}
+
+pub using @ff18be0a9a154b4a {type PROPSHEETUIINFOHEADER_6fe112f80cb6 as PROPSHEETUIINFOHEADER}
+
+pub using @ff18be0a9a154b4a {type PROPSHEETUIINFOHEADERAnonymousEUnion_eb848f3a5543 as PROPSHEETUIINFOHEADERAnonymousEUnion}
+
+pub using @ff18be0a9a154b4a {type PROVIDORINFO1A_3d7e3dc0bee6 as PROVIDORINFO1A}
+
+pub using @ff18be0a9a154b4a {type PROVIDORINFO1W_b0b1417d8a70 as PROVIDORINFO1W}
+
+pub using @ff18be0a9a154b4a {type PROVIDORINFO2A_a12d599b7b02 as PROVIDORINFO2A}
+
+pub using @ff18be0a9a154b4a {type PROVIDORINFO2W_f6248baffe64 as PROVIDORINFO2W}
+
+pub using @ff18be0a9a154b4a {type PSCRIPT5PRIVATEDEVMODE_4ab33a22251b as PSCRIPT5PRIVATEDEVMODE}
+
+pub using @ff18be0a9a154b4a {type PSPINFO_ae7419347529 as PSPINFO}
+
+pub using @ff18be0a9a154b4a {type PUBLISHERINFO_40db7f32875e as PUBLISHERINFO}
+
+pub using @ff18be0a9a154b4a {type PageCountType_21074f7469a3 as PageCountType}
+
+pub using @ff18be0a9a154b4a {type PrintAsyncNotifyConversationStyle_57999f0c34d8 as PrintAsyncNotifyConversationStyle}
+
+pub using @ff18be0a9a154b4a {type PrintAsyncNotifyError_31363a16aded as PrintAsyncNotifyError}
+
+pub using @ff18be0a9a154b4a {type PrintAsyncNotifyUserFilter_cbbdf1872363 as PrintAsyncNotifyUserFilter}
+
+pub using @ff18be0a9a154b4a {type PrintJobStatus_0784d9b2b3df as PrintJobStatus}
+
+pub using @ff18be0a9a154b4a {type PrintNamedProperty_eb6abd1373b5 as PrintNamedProperty}
+
+pub using @ff18be0a9a154b4a {type PrintPropertiesCollection_1241df595ed6 as PrintPropertiesCollection}
+
+pub using @ff18be0a9a154b4a {type PrintPropertyValue_f2b3f9086b10 as PrintPropertyValue}
+
+pub using @ff18be0a9a154b4a {type PrintPropertyValueValueEUnion_81e421159f1b as PrintPropertyValueValueEUnion}
+
+pub using @ff18be0a9a154b4a {type PrintPropertyValueValueEUnionPropertyBlobEStruct_7bd19a523484 as PrintPropertyValueValueEUnionPropertyBlobEStruct}
+
+pub using @ff18be0a9a154b4a {type PrintSchemaAsyncOperation_bbb605e0a499 as PrintSchemaAsyncOperation}
+
+pub using @ff18be0a9a154b4a {type PrintSchemaConstrainedSetting_8da92873369f as PrintSchemaConstrainedSetting}
+
+pub using @ff18be0a9a154b4a {type PrintSchemaParameterDataType_81591765cb6a as PrintSchemaParameterDataType}
+
+pub using @ff18be0a9a154b4a {type PrintSchemaSelectionType_c65459d3aa6e as PrintSchemaSelectionType}
+
+pub using @ff18be0a9a154b4a {type PrinterExtensionManager_fca24aeb6748 as PrinterExtensionManager}
+
+pub using @ff18be0a9a154b4a {type PrinterQueue_d2b8590c8861 as PrinterQueue}
+
+pub using @ff18be0a9a154b4a {type PrinterQueueView_a57a4adc4391 as PrinterQueueView}
+
+pub using @ff18be0a9a154b4a {type ROUTERNOTIFYCALLBACK_d4e886d5c484 as ROUTERNOTIFYCALLBACK}
+
+pub using @ff18be0a9a154b4a {type SETRESULTINFO_2b1a9f8da53f as SETRESULTINFO}
+
+pub using @ff18be0a9a154b4a {type SHIMOPTS_4ea627835494 as SHIMOPTS}
+
+pub using @ff18be0a9a154b4a {type SHOWUIPARAMS_c8c256e83695 as SHOWUIPARAMS}
+
+pub using @ff18be0a9a154b4a {type SIMULATECAPS1_75464eacca6e as SIMULATECAPS1}
+
+pub using @ff18be0a9a154b4a {type SPLCLIENTINFO1_13e803fb469a as SPLCLIENTINFO1}
+
+pub using @ff18be0a9a154b4a {type SPLCLIENTINFO2V3_2825e0b79db6 as SPLCLIENTINFO2V3}
+
+pub using @ff18be0a9a154b4a {type SPLCLIENTINFO2W2K_02c8f456383b as SPLCLIENTINFO2W2K}
+
+pub using @ff18be0a9a154b4a {type SPLCLIENTINFO2WINXP_30e5f0b436f8 as SPLCLIENTINFO2WINXP}
+
+pub using @ff18be0a9a154b4a {type SPLCLIENTINFO3VISTA_b5901e3221a8 as SPLCLIENTINFO3VISTA}
+
+pub using @ff18be0a9a154b4a {type SPLCLIENTINFOINTERNAL_fadeb04c8e21 as SPLCLIENTINFOINTERNAL}
+
+pub using @ff18be0a9a154b4a {type TRANSDATA_f2725c2bd384 as TRANSDATA}
+
+pub using @ff18be0a9a154b4a {type TRANSDATAUCodeEUnion_82b9458eea41 as TRANSDATAUCodeEUnion}
+
+pub using @ff18be0a9a154b4a {type UFFFILEHEADER_cd4cf80a8da5 as UFFFILEHEADER}
+
+pub using @ff18be0a9a154b4a {type UFFFONTDIRECTORY_c0f5d2524c37 as UFFFONTDIRECTORY}
+
+pub using @ff18be0a9a154b4a {type UITYPE_837eb524a8b6 as UITYPE}
+
+pub using @ff18be0a9a154b4a {type UNICODEPAGEINFO_be37c46721c6 as UNICODEPAGEINFO}
+
+pub using @ff18be0a9a154b4a {type UNIDRVINFO_06cd22b2ed0f as UNIDRVINFO}
+
+pub using @ff18be0a9a154b4a {type UNIDRVPRIVATEDEVMODE_d0a51d76b3d9 as UNIDRVPRIVATEDEVMODE}
+
+pub using @ff18be0a9a154b4a {type UNIFMHDR_5d0b034dccab as UNIFMHDR}
+
+pub using @ff18be0a9a154b4a {type UNIGLYPHSETDATA_5fae4ffe5506 as UNIGLYPHSETDATA}
+
+pub using @ff18be0a9a154b4a {type USERDATA_c2f6fce4ae38 as USERDATA}
+
+pub using @ff18be0a9a154b4a {type WIDTHRUN_02554218888e as WIDTHRUN}
+
+pub using @ff18be0a9a154b4a {type WIDTHTABLE_ac8808f8eca7 as WIDTHTABLE}
+
+pub using @ff18be0a9a154b4a {type XPSRASBACKGROUNDCOLOR_14f217f2e528 as XPSRASBACKGROUNDCOLOR}
+
+pub using @ff18be0a9a154b4a {type XPSRASPIXELFORMAT_dda65a3fa481 as XPSRASPIXELFORMAT}
+
+pub using @ff18be0a9a154b4a {type XPSRASRENDERINGMODE_4a54015122e1 as XPSRASRENDERINGMODE}
+
+// Traits

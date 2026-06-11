@@ -1,0 +1,580 @@
+// Generated using `moon info`, DON'T EDIT IT
+package "moonbit-community/win32api/windows/win32/networking/background_intelligent_transfer_service"
+
+import {
+  "moonbit-community/win32api/scc/648afd586b0264fd",
+}
+
+// Values
+pub let bg_copy_file_all : UInt
+
+pub let bg_copy_file_dacl : UInt
+
+pub let bg_copy_file_group : UInt
+
+pub let bg_copy_file_owner : UInt
+
+pub let bg_copy_file_sacl : UInt
+
+pub let bg_disable_branch_cache : UInt
+
+pub let bg_e_app_package_not_found : Int
+
+pub let bg_e_app_package_scenario_not_supported : Int
+
+pub let bg_e_blocked_by_background_access_policy : Int
+
+pub let bg_e_blocked_by_battery_policy : Int
+
+pub let bg_e_blocked_by_battery_saver : Int
+
+pub let bg_e_blocked_by_cost_transfer_policy : Int
+
+pub let bg_e_blocked_by_game_mode : Int
+
+pub let bg_e_blocked_by_policy : Int
+
+pub let bg_e_blocked_by_system_policy : Int
+
+pub let bg_e_busycacherecord : Int
+
+pub let bg_e_client_server_protocol_mismatch : Int
+
+pub let bg_e_commit_in_progress : Int
+
+pub let bg_e_connect_failure : Int
+
+pub let bg_e_connection_closed : Int
+
+pub let bg_e_database_corrupt : Int
+
+pub let bg_e_destination_locked : Int
+
+pub let bg_e_discovery_in_progress : Int
+
+pub let bg_e_empty : Int
+
+pub let bg_e_error_context_general_queue_manager : Int
+
+pub let bg_e_error_context_general_transport : Int
+
+pub let bg_e_error_context_local_file : Int
+
+pub let bg_e_error_context_queue_manager_notification : Int
+
+pub let bg_e_error_context_remote_application : Int
+
+pub let bg_e_error_context_remote_file : Int
+
+pub let bg_e_error_context_server_certificate_callback : Int
+
+pub let bg_e_error_context_unknown : Int
+
+pub let bg_e_error_information_unavailable : Int
+
+pub let bg_e_file_not_available : Int
+
+pub let bg_e_file_not_found : Int
+
+pub let bg_e_http_error_100 : Int
+
+pub let bg_e_http_error_101 : Int
+
+pub let bg_e_http_error_200 : Int
+
+pub let bg_e_http_error_201 : Int
+
+pub let bg_e_http_error_202 : Int
+
+pub let bg_e_http_error_203 : Int
+
+pub let bg_e_http_error_204 : Int
+
+pub let bg_e_http_error_205 : Int
+
+pub let bg_e_http_error_206 : Int
+
+pub let bg_e_http_error_300 : Int
+
+pub let bg_e_http_error_301 : Int
+
+pub let bg_e_http_error_302 : Int
+
+pub let bg_e_http_error_303 : Int
+
+pub let bg_e_http_error_304 : Int
+
+pub let bg_e_http_error_305 : Int
+
+pub let bg_e_http_error_307 : Int
+
+pub let bg_e_http_error_400 : Int
+
+pub let bg_e_http_error_401 : Int
+
+pub let bg_e_http_error_402 : Int
+
+pub let bg_e_http_error_403 : Int
+
+pub let bg_e_http_error_404 : Int
+
+pub let bg_e_http_error_405 : Int
+
+pub let bg_e_http_error_406 : Int
+
+pub let bg_e_http_error_407 : Int
+
+pub let bg_e_http_error_408 : Int
+
+pub let bg_e_http_error_409 : Int
+
+pub let bg_e_http_error_410 : Int
+
+pub let bg_e_http_error_411 : Int
+
+pub let bg_e_http_error_412 : Int
+
+pub let bg_e_http_error_413 : Int
+
+pub let bg_e_http_error_414 : Int
+
+pub let bg_e_http_error_415 : Int
+
+pub let bg_e_http_error_416 : Int
+
+pub let bg_e_http_error_417 : Int
+
+pub let bg_e_http_error_449 : Int
+
+pub let bg_e_http_error_500 : Int
+
+pub let bg_e_http_error_501 : Int
+
+pub let bg_e_http_error_502 : Int
+
+pub let bg_e_http_error_503 : Int
+
+pub let bg_e_http_error_504 : Int
+
+pub let bg_e_http_error_505 : Int
+
+pub let bg_e_insufficient_http_support : Int
+
+pub let bg_e_insufficient_range_support : Int
+
+pub let bg_e_invalid_auth_scheme : Int
+
+pub let bg_e_invalid_auth_target : Int
+
+pub let bg_e_invalid_credentials : Int
+
+pub let bg_e_invalid_hash_algorithm : Int
+
+pub let bg_e_invalid_proxy_info : Int
+
+pub let bg_e_invalid_range : Int
+
+pub let bg_e_invalid_server_response : Int
+
+pub let bg_e_invalid_state : Int
+
+pub let bg_e_local_file_changed : Int
+
+pub let bg_e_max_download_size_invalid_value : Int
+
+pub let bg_e_max_download_size_limit_reached : Int
+
+pub let bg_e_maxdownload_timeout : Int
+
+pub let bg_e_missing_file_size : Int
+
+pub let bg_e_network_disconnected : Int
+
+pub let bg_e_new_owner_diff_mapping : Int
+
+pub let bg_e_new_owner_no_file_access : Int
+
+pub let bg_e_no_progress : Int
+
+pub let bg_e_not_found : Int
+
+pub let bg_e_not_supported_with_custom_http_method : Int
+
+pub let bg_e_overlapping_ranges : Int
+
+pub let bg_e_password_too_large : Int
+
+pub let bg_e_peercaching_disabled : Int
+
+pub let bg_e_property_supported_for_download_jobs_only : Int
+
+pub let bg_e_protocol_not_available : Int
+
+pub let bg_e_proxy_bypass_list_too_large : Int
+
+pub let bg_e_proxy_list_too_large : Int
+
+pub let bg_e_random_access_not_supported : Int
+
+pub let bg_e_read_only_property : Int
+
+pub let bg_e_read_only_property_after_addfile : Int
+
+pub let bg_e_read_only_property_after_resume : Int
+
+pub let bg_e_read_only_when_job_active : Int
+
+pub let bg_e_record_deleted : Int
+
+pub let bg_e_remote_file_changed : Int
+
+pub let bg_e_remote_not_supported : Int
+
+pub let bg_e_server_cert_validation_interface_required : Int
+
+pub let bg_e_server_execute_enable : Int
+
+pub let bg_e_session_not_found : Int
+
+pub let bg_e_standby_mode : Int
+
+pub let bg_e_string_too_long : Int
+
+pub let bg_e_test_option_blocked_download : Int
+
+pub let bg_e_token_required : Int
+
+pub let bg_e_too_large : Int
+
+pub let bg_e_too_many_files : Int
+
+pub let bg_e_too_many_files_in_job : Int
+
+pub let bg_e_too_many_jobs_per_machine : Int
+
+pub let bg_e_too_many_jobs_per_user : Int
+
+pub let bg_e_too_many_ranges_in_file : Int
+
+pub let bg_e_unknown_property_id : Int
+
+pub let bg_e_unsupported_job_configuration : Int
+
+pub let bg_e_upnp_error : Int
+
+pub let bg_e_use_stored_credentials_not_supported : Int
+
+pub let bg_e_username_too_large : Int
+
+pub let bg_e_validation_failed : Int
+
+pub let bg_e_volume_changed : Int
+
+pub let bg_e_watchdog_timeout : Int
+
+pub let bg_enable_peercaching_client : UInt
+
+pub let bg_enable_peercaching_server : UInt
+
+pub let bg_http_redirect_policy_allow_https_to_http : UInt
+
+pub let bg_http_redirect_policy_allow_report : UInt
+
+pub let bg_http_redirect_policy_allow_silent : UInt
+
+pub let bg_http_redirect_policy_disallow : UInt
+
+pub let bg_http_redirect_policy_mask : UInt
+
+pub let bg_job_disable_branch_cache : UInt
+
+pub let bg_job_enable_peercaching_client : UInt
+
+pub let bg_job_enable_peercaching_server : UInt
+
+pub let bg_job_enum_all_users : UInt
+
+pub let bg_notify_disable : UInt
+
+pub let bg_notify_file_ranges_transferred : UInt
+
+pub let bg_notify_file_transferred : UInt
+
+pub let bg_notify_job_error : UInt
+
+pub let bg_notify_job_modification : UInt
+
+pub let bg_notify_job_transferred : UInt
+
+pub let bg_s_error_context_none : Int
+
+pub let bg_s_overridden_by_policy : Int
+
+pub let bg_s_partial_complete : Int
+
+pub let bg_s_proxy_changed : Int
+
+pub let bg_s_unable_to_delete_files : Int
+
+pub let bg_ssl_enable_crl_check : UInt
+
+pub let bg_ssl_ignore_cert_cn_invalid : UInt
+
+pub let bg_ssl_ignore_cert_date_invalid : UInt
+
+pub let bg_ssl_ignore_cert_wrong_usage : UInt
+
+pub let bg_ssl_ignore_unknown_ca : UInt
+
+pub let bits_cost_option_ignore_congestion : UInt
+
+pub let bits_cost_state_below_cap : UInt
+
+pub let bits_cost_state_capped_usage_unknown : UInt
+
+pub let bits_cost_state_near_cap : UInt
+
+pub let bits_cost_state_overcap_charged : UInt
+
+pub let bits_cost_state_overcap_throttled : UInt
+
+pub let bits_cost_state_reserved : UInt
+
+pub let bits_cost_state_roaming : UInt
+
+pub let bits_cost_state_unrestricted : UInt
+
+pub let bits_cost_state_usage_based : UInt
+
+pub let bits_mc_failed_to_start : Int
+
+pub let bits_mc_fatal_igd_error : Int
+
+pub let bits_mc_file_deletion_failed : Int
+
+pub let bits_mc_file_deletion_failed_more : Int
+
+pub let bits_mc_job_cancelled : Int
+
+pub let bits_mc_job_notification_failure : Int
+
+pub let bits_mc_job_property_change : Int
+
+pub let bits_mc_job_scavenged : Int
+
+pub let bits_mc_job_take_ownership : Int
+
+pub let bits_mc_peercaching_port : Int
+
+pub let bits_mc_state_file_corrupt : Int
+
+pub let bits_mc_wsd_port : Int
+
+pub let qm_e_downloader_unavailable : UInt
+
+pub let qm_e_invalid_state : UInt
+
+pub let qm_e_item_not_found : UInt
+
+pub let qm_e_service_unavailable : UInt
+
+pub let qm_notify_disable_notify : UInt
+
+pub let qm_notify_file_done : UInt
+
+pub let qm_notify_group_done : UInt
+
+pub let qm_notify_job_done : UInt
+
+pub let qm_notify_use_progressex : UInt
+
+pub let qm_progress_percent_done : UInt
+
+pub let qm_progress_size_done : UInt
+
+pub let qm_progress_time_done : UInt
+
+pub let qm_protocol_custom : UInt
+
+pub let qm_protocol_ftp : UInt
+
+pub let qm_protocol_http : UInt
+
+pub let qm_protocol_smb : UInt
+
+pub let qm_status_file_complete : UInt
+
+pub let qm_status_file_incomplete : UInt
+
+pub let qm_status_group_complete : UInt
+
+pub let qm_status_group_error : UInt
+
+pub let qm_status_group_foreground : UInt
+
+pub let qm_status_group_incomplete : UInt
+
+pub let qm_status_group_suspended : UInt
+
+pub let qm_status_job_complete : UInt
+
+pub let qm_status_job_error : UInt
+
+pub let qm_status_job_foreground : UInt
+
+pub let qm_status_job_incomplete : UInt
+
+// Errors
+
+// Types and methods
+
+// Type aliases
+pub using @648afd586b0264fd {type AsyncIBackgroundCopyCallback_82fbeb245b91 as AsyncIBackgroundCopyCallback}
+
+pub using @648afd586b0264fd {type BGAUTHCREDENTIALS_3456d3549a6d as BGAUTHCREDENTIALS}
+
+pub using @648afd586b0264fd {type BGAUTHCREDENTIALSUNION_bbf4a68cf69d as BGAUTHCREDENTIALSUNION}
+
+pub using @648afd586b0264fd {type BGAUTHSCHEME_a2430e88170a as BGAUTHSCHEME}
+
+pub using @648afd586b0264fd {type BGAUTHTARGET_7c024b9f519d as BGAUTHTARGET}
+
+pub using @648afd586b0264fd {type BGBASICCREDENTIALS_01015e5c8505 as BGBASICCREDENTIALS}
+
+pub using @648afd586b0264fd {type BGCERTSTORELOCATION_39a4953d2a31 as BGCERTSTORELOCATION}
+
+pub using @648afd586b0264fd {type BGERRORCONTEXT_6440ac292a91 as BGERRORCONTEXT}
+
+pub using @648afd586b0264fd {type BGFILEINFO_b693f9092786 as BGFILEINFO}
+
+pub using @648afd586b0264fd {type BGFILEPROGRESS_da280ca8d7f5 as BGFILEPROGRESS}
+
+pub using @648afd586b0264fd {type BGFILERANGE_841ca8520ebd as BGFILERANGE}
+
+pub using @648afd586b0264fd {type BGJOBPRIORITY_9364de45c3c3 as BGJOBPRIORITY}
+
+pub using @648afd586b0264fd {type BGJOBPROGRESS_4be9c798720f as BGJOBPROGRESS}
+
+pub using @648afd586b0264fd {type BGJOBPROXYUSAGE_b764f6e01931 as BGJOBPROXYUSAGE}
+
+pub using @648afd586b0264fd {type BGJOBREPLYPROGRESS_e49b5ca484c9 as BGJOBREPLYPROGRESS}
+
+pub using @648afd586b0264fd {type BGJOBSTATE_436494a7040b as BGJOBSTATE}
+
+pub using @648afd586b0264fd {type BGJOBTIMES_9e6c1339f9c7 as BGJOBTIMES}
+
+pub using @648afd586b0264fd {type BGJOBTYPE_045dc23989d1 as BGJOBTYPE}
+
+pub using @648afd586b0264fd {type BGTOKEN_2f80f7071d34 as BGTOKEN}
+
+pub using @648afd586b0264fd {type BITSExtensionSetupFactory_c566650452f9 as BITSExtensionSetupFactory}
+
+pub using @648afd586b0264fd {type BITSFILEPROPERTYID_ce8d9a481ef3 as BITSFILEPROPERTYID}
+
+pub using @648afd586b0264fd {type BITSFILEPROPERTYVALUE_6911dd8378c9 as BITSFILEPROPERTYVALUE}
+
+pub using @648afd586b0264fd {type BITSJOBPROPERTYID_f89af3a68348 as BITSJOBPROPERTYID}
+
+pub using @648afd586b0264fd {type BITSJOBPROPERTYVALUE_d354506858f3 as BITSJOBPROPERTYVALUE}
+
+pub using @648afd586b0264fd {type BITSJOBTRANSFERPOLICY_a26d2faba6a2 as BITSJOBTRANSFERPOLICY}
+
+pub using @648afd586b0264fd {type BackgroundCopyManager_bf968ceb8a81 as BackgroundCopyManager}
+
+pub using @648afd586b0264fd {type BackgroundCopyManager101_f660d8c75fa1 as BackgroundCopyManager101}
+
+pub using @648afd586b0264fd {type BackgroundCopyManager102_5f912d745299 as BackgroundCopyManager102}
+
+pub using @648afd586b0264fd {type BackgroundCopyManager103_7bf20e67986d as BackgroundCopyManager103}
+
+pub using @648afd586b0264fd {type BackgroundCopyManager15_a6796bdfef0a as BackgroundCopyManager15}
+
+pub using @648afd586b0264fd {type BackgroundCopyManager20_c449dc1324e0 as BackgroundCopyManager20}
+
+pub using @648afd586b0264fd {type BackgroundCopyManager25_efa10fbce16e as BackgroundCopyManager25}
+
+pub using @648afd586b0264fd {type BackgroundCopyManager30_1127ad8d9df9 as BackgroundCopyManager30}
+
+pub using @648afd586b0264fd {type BackgroundCopyManager40_9bf50a479dfe as BackgroundCopyManager40}
+
+pub using @648afd586b0264fd {type BackgroundCopyManager50_36d1a174ecdd as BackgroundCopyManager50}
+
+pub using @648afd586b0264fd {type BackgroundCopyQMgr_d3972008ce92 as BackgroundCopyQMgr}
+
+pub using @648afd586b0264fd {type FILESETINFO_8bed732393ca as FILESETINFO}
+
+pub using @648afd586b0264fd {type GROUPPROP_61994ecd173b as GROUPPROP}
+
+pub using @648afd586b0264fd {type IBITSExtensionSetup_719d926756fc as IBITSExtensionSetup}
+
+pub using @648afd586b0264fd {type IBITSExtensionSetupFactory_22348c0d4946 as IBITSExtensionSetupFactory}
+
+pub using @648afd586b0264fd {type IBackgroundCopyCallback_5839f617ae98 as IBackgroundCopyCallback}
+
+pub using @648afd586b0264fd {type IBackgroundCopyCallback1_29b7492b2dd8 as IBackgroundCopyCallback1}
+
+pub using @648afd586b0264fd {type IBackgroundCopyCallback2_6d0a100e0204 as IBackgroundCopyCallback2}
+
+pub using @648afd586b0264fd {type IBackgroundCopyCallback3_edf2b853022a as IBackgroundCopyCallback3}
+
+pub using @648afd586b0264fd {type IBackgroundCopyError_4c8229b225d2 as IBackgroundCopyError}
+
+pub using @648afd586b0264fd {type IBackgroundCopyFile_1bcf55266651 as IBackgroundCopyFile}
+
+pub using @648afd586b0264fd {type IBackgroundCopyFile2_2eeeaf0c9af4 as IBackgroundCopyFile2}
+
+pub using @648afd586b0264fd {type IBackgroundCopyFile3_59904fae29b4 as IBackgroundCopyFile3}
+
+pub using @648afd586b0264fd {type IBackgroundCopyFile4_72680645b4cc as IBackgroundCopyFile4}
+
+pub using @648afd586b0264fd {type IBackgroundCopyFile5_6c4d0a0a46b6 as IBackgroundCopyFile5}
+
+pub using @648afd586b0264fd {type IBackgroundCopyFile6_61a3284ffb9e as IBackgroundCopyFile6}
+
+pub using @648afd586b0264fd {type IBackgroundCopyGroup_3b05a884e706 as IBackgroundCopyGroup}
+
+pub using @648afd586b0264fd {type IBackgroundCopyJob_2e4d66e467c7 as IBackgroundCopyJob}
+
+pub using @648afd586b0264fd {type IBackgroundCopyJob1_b547b6f94591 as IBackgroundCopyJob1}
+
+pub using @648afd586b0264fd {type IBackgroundCopyJob2_6c55ce98b225 as IBackgroundCopyJob2}
+
+pub using @648afd586b0264fd {type IBackgroundCopyJob3_7ed8be9bf313 as IBackgroundCopyJob3}
+
+pub using @648afd586b0264fd {type IBackgroundCopyJob4_822ab690aea7 as IBackgroundCopyJob4}
+
+pub using @648afd586b0264fd {type IBackgroundCopyJob5_7d8a1aee004b as IBackgroundCopyJob5}
+
+pub using @648afd586b0264fd {type IBackgroundCopyJobHttpOptions_76d7cc3eba54 as IBackgroundCopyJobHttpOptions}
+
+pub using @648afd586b0264fd {type IBackgroundCopyJobHttpOptions2_40a3bdbfff98 as IBackgroundCopyJobHttpOptions2}
+
+pub using @648afd586b0264fd {type IBackgroundCopyJobHttpOptions3_e175aa6b4191 as IBackgroundCopyJobHttpOptions3}
+
+pub using @648afd586b0264fd {type IBackgroundCopyManager_8f9a4eecd214 as IBackgroundCopyManager}
+
+pub using @648afd586b0264fd {type IBackgroundCopyQMgr_06bc68f88637 as IBackgroundCopyQMgr}
+
+pub using @648afd586b0264fd {type IBackgroundCopyServerCertificateValidationCallback_838168e8562a as IBackgroundCopyServerCertificateValidationCallback}
+
+pub using @648afd586b0264fd {type IBitsPeer_da84ff764454 as IBitsPeer}
+
+pub using @648afd586b0264fd {type IBitsPeerCacheAdministration_cc048863dac3 as IBitsPeerCacheAdministration}
+
+pub using @648afd586b0264fd {type IBitsPeerCacheRecord_6642afd3288d as IBitsPeerCacheRecord}
+
+pub using @648afd586b0264fd {type IBitsTokenOptions_5de02d02ea5d as IBitsTokenOptions}
+
+pub using @648afd586b0264fd {type IEnumBackgroundCopyFiles_741934f3c66b as IEnumBackgroundCopyFiles}
+
+pub using @648afd586b0264fd {type IEnumBackgroundCopyGroups_4836362a6e8b as IEnumBackgroundCopyGroups}
+
+pub using @648afd586b0264fd {type IEnumBackgroundCopyJobs_870ff82337c9 as IEnumBackgroundCopyJobs}
+
+pub using @648afd586b0264fd {type IEnumBackgroundCopyJobs1_824ce6d365b6 as IEnumBackgroundCopyJobs1}
+
+pub using @648afd586b0264fd {type IEnumBitsPeerCacheRecords_0ea8fa84fcb5 as IEnumBitsPeerCacheRecords}
+
+pub using @648afd586b0264fd {type IEnumBitsPeers_157157cfd8f7 as IEnumBitsPeers}
+
+// Traits

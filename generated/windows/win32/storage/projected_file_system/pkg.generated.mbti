@@ -1,0 +1,176 @@
+// Generated using `moon info`, DON'T EDIT IT
+package "moonbit-community/win32api/windows/win32/storage/projected_file_system"
+
+import {
+  "moonbit-community/win32api/runtime/core",
+  "moonbit-community/win32api/runtime/strings",
+  "moonbit-community/win32api/scc/9f7e40973dd0861f",
+}
+
+// Values
+pub fn prj_allocate_aligned_buffer(@core.RawAddress, UInt64) -> @core.RawAddress raise @core.WindowsError
+
+pub fn prj_allocate_aligned_buffer_raw(@core.RawAddress, UInt64) -> @core.RawAddress
+
+pub fn prj_clear_negative_path_cache(@core.RawAddress, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn prj_clear_negative_path_cache_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn prj_complete_command(@core.RawAddress, Int, Int, @9f7e40973dd0861f.PRJCOMPLETECOMMANDEXTENDEDPARAMETERS_2aeadbb52145?) -> Int raise @core.WindowsError
+
+pub fn prj_complete_command_raw(@core.RawAddress, Int, Int, @core.RawAddress) -> Int
+
+pub fn prj_delete_file(@core.RawAddress, @strings.PWStr, @9f7e40973dd0861f.PRJUPDATETYPES_60c2f1f7e94e, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn prj_delete_file_raw(@core.RawAddress, @core.RawAddress, Int, @core.RawAddress) -> Int
+
+pub fn prj_does_name_contain_wild_cards(@strings.PWStr) -> Byte raise @core.WindowsError
+
+pub fn prj_does_name_contain_wild_cards_raw(@core.RawAddress) -> UInt
+
+pub fn prj_file_name_compare(@strings.PWStr, @strings.PWStr) -> Int raise @core.WindowsError
+
+pub fn prj_file_name_compare_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn prj_file_name_match(@strings.PWStr, @strings.PWStr) -> Byte raise @core.WindowsError
+
+pub fn prj_file_name_match_raw(@core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn prj_fill_dir_entry_buffer(@strings.PWStr, @9f7e40973dd0861f.PRJFILEBASICINFO_52728e3bad55?, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn prj_fill_dir_entry_buffer2(@core.RawAddress, @strings.PWStr, @9f7e40973dd0861f.PRJFILEBASICINFO_52728e3bad55?, @9f7e40973dd0861f.PRJEXTENDEDINFO_d5c6cbcd6594?) -> Int raise @core.WindowsError
+
+pub fn prj_fill_dir_entry_buffer2_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn prj_fill_dir_entry_buffer_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn prj_free_aligned_buffer(@core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn prj_free_aligned_buffer_raw(@core.RawAddress) -> Unit
+
+pub fn prj_get_on_disk_file_state(@strings.PWStr, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn prj_get_on_disk_file_state_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn prj_get_virtualization_instance_info(@core.RawAddress, @9f7e40973dd0861f.PRJVIRTUALIZATIONINSTANCEINFO_3bb243555e5c) -> Int raise @core.WindowsError
+
+pub fn prj_get_virtualization_instance_info_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn prj_mark_directory_as_placeholder(@strings.PWStr, @strings.PWStr?, @9f7e40973dd0861f.PRJPLACEHOLDERVERSIONINFO_f6e56b7360a6?, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn prj_mark_directory_as_placeholder_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn prj_start_virtualizing(@strings.PWStr, @9f7e40973dd0861f.PRJCALLBACKS_072e617fe5cb, @core.RawAddress, @9f7e40973dd0861f.PRJSTARTVIRTUALIZINGOPTIONS_f39c3feb7e42?, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn prj_start_virtualizing_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn prj_stop_virtualizing(@core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn prj_stop_virtualizing_raw(@core.RawAddress) -> Unit
+
+pub fn prj_update_file_if_needed(@core.RawAddress, @strings.PWStr, @9f7e40973dd0861f.PRJPLACEHOLDERINFO_6e7f0d06cf88, UInt, @9f7e40973dd0861f.PRJUPDATETYPES_60c2f1f7e94e, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn prj_update_file_if_needed_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, UInt, Int, @core.RawAddress) -> Int
+
+pub fn prj_write_file_data(@core.RawAddress, @core.RawAddress, @core.RawAddress, UInt64, UInt) -> Int raise @core.WindowsError
+
+pub fn prj_write_file_data_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, UInt64, UInt) -> Int
+
+pub fn prj_write_placeholder_info(@core.RawAddress, @strings.PWStr, @9f7e40973dd0861f.PRJPLACEHOLDERINFO_6e7f0d06cf88, UInt) -> Int raise @core.WindowsError
+
+pub fn prj_write_placeholder_info2(@core.RawAddress, @strings.PWStr, @9f7e40973dd0861f.PRJPLACEHOLDERINFO_6e7f0d06cf88, UInt, @9f7e40973dd0861f.PRJEXTENDEDINFO_d5c6cbcd6594?) -> Int raise @core.WindowsError
+
+pub fn prj_write_placeholder_info2_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, UInt, @core.RawAddress) -> Int
+
+pub fn prj_write_placeholder_info_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, UInt) -> Int
+
+// Errors
+
+// Types and methods
+
+// Type aliases
+pub using @9f7e40973dd0861f {type PRJCALLBACKDATA_cd2cdeec7d7e as PRJCALLBACKDATA}
+
+pub using @9f7e40973dd0861f {type PRJCALLBACKDATAFLAGS_1374a8025851 as PRJCALLBACKDATAFLAGS}
+
+pub using @9f7e40973dd0861f {type PRJCALLBACKS_072e617fe5cb as PRJCALLBACKS}
+
+pub using @9f7e40973dd0861f {type PRJCANCELCOMMANDCB_92041b1295aa as PRJCANCELCOMMANDCB}
+
+pub using @9f7e40973dd0861f {type PRJCOMPLETECOMMANDEXTENDEDPARAMETERS_2aeadbb52145 as PRJCOMPLETECOMMANDEXTENDEDPARAMETERS}
+
+pub using @9f7e40973dd0861f {type PRJCOMPLETECOMMANDEXTENDEDPARAMETERSAnonymousEUnion_fa37bea4ecdf as PRJCOMPLETECOMMANDEXTENDEDPARAMETERSAnonymousEUnion}
+
+pub using @9f7e40973dd0861f {type PRJCOMPLETECOMMANDEXTENDEDPARAMETERSAnonymousEUnionEnumerationEStruct_cce4cdc12f97 as PRJCOMPLETECOMMANDEXTENDEDPARAMETERSAnonymousEUnionEnumerationEStruct}
+
+pub using @9f7e40973dd0861f {type PRJCOMPLETECOMMANDEXTENDEDPARAMETERSAnonymousEUnionNotificationEStruct_be8e35b182de as PRJCOMPLETECOMMANDEXTENDEDPARAMETERSAnonymousEUnionNotificationEStruct}
+
+pub using @9f7e40973dd0861f {type PRJCOMPLETECOMMANDTYPE_e98058fca54c as PRJCOMPLETECOMMANDTYPE}
+
+pub using @9f7e40973dd0861f {type PRJDIRENTRYBUFFERHANDLE_7accedd51ce5 as PRJDIRENTRYBUFFERHANDLE}
+
+pub using @9f7e40973dd0861f {type PRJENDDIRECTORYENUMERATIONCB_557b4aa20b7d as PRJENDDIRECTORYENUMERATIONCB}
+
+pub using @9f7e40973dd0861f {type PRJEXTENDEDINFO_d5c6cbcd6594 as PRJEXTENDEDINFO}
+
+pub using @9f7e40973dd0861f {type PRJEXTENDEDINFOAnonymousEUnion_6593eb89ab7f as PRJEXTENDEDINFOAnonymousEUnion}
+
+pub using @9f7e40973dd0861f {type PRJEXTENDEDINFOAnonymousEUnionSymlinkEStruct_866410425397 as PRJEXTENDEDINFOAnonymousEUnionSymlinkEStruct}
+
+pub using @9f7e40973dd0861f {type PRJEXTINFOTYPE_04e0a4398a78 as PRJEXTINFOTYPE}
+
+pub using @9f7e40973dd0861f {type PRJFILEBASICINFO_52728e3bad55 as PRJFILEBASICINFO}
+
+pub using @9f7e40973dd0861f {type PRJFILESTATE_12a492c4797c as PRJFILESTATE}
+
+pub using @9f7e40973dd0861f {type PRJGETDIRECTORYENUMERATIONCB_7129b85e8b5d as PRJGETDIRECTORYENUMERATIONCB}
+
+pub using @9f7e40973dd0861f {type PRJGETFILEDATACB_3a1332ceaa46 as PRJGETFILEDATACB}
+
+pub using @9f7e40973dd0861f {type PRJGETPLACEHOLDERINFOCB_761e633a425a as PRJGETPLACEHOLDERINFOCB}
+
+pub using @9f7e40973dd0861f {type PRJNAMESPACEVIRTUALIZATIONCONTEXT_7d924cefcc48 as PRJNAMESPACEVIRTUALIZATIONCONTEXT}
+
+pub using @9f7e40973dd0861f {type PRJNOTIFICATION_e0532322850e as PRJNOTIFICATION}
+
+pub using @9f7e40973dd0861f {type PRJNOTIFICATIONCB_02e9d7ecf88b as PRJNOTIFICATIONCB}
+
+pub using @9f7e40973dd0861f {type PRJNOTIFICATIONMAPPING_d6ed7f0f6c73 as PRJNOTIFICATIONMAPPING}
+
+pub using @9f7e40973dd0861f {type PRJNOTIFICATIONPARAMETERS_61fa61beb3ce as PRJNOTIFICATIONPARAMETERS}
+
+pub using @9f7e40973dd0861f {type PRJNOTIFICATIONPARAMETERSFileDeletedOnHandleCloseEStruct_57bb70a16054 as PRJNOTIFICATIONPARAMETERSFileDeletedOnHandleCloseEStruct}
+
+pub using @9f7e40973dd0861f {type PRJNOTIFICATIONPARAMETERSFileRenamedEStruct_0a8f7569412e as PRJNOTIFICATIONPARAMETERSFileRenamedEStruct}
+
+pub using @9f7e40973dd0861f {type PRJNOTIFICATIONPARAMETERSPostCreateEStruct_86a255bb2023 as PRJNOTIFICATIONPARAMETERSPostCreateEStruct}
+
+pub using @9f7e40973dd0861f {type PRJNOTIFYTYPES_ff0618c3204b as PRJNOTIFYTYPES}
+
+pub using @9f7e40973dd0861f {type PRJPLACEHOLDERID_0d3af8e7f27a as PRJPLACEHOLDERID}
+
+pub using @9f7e40973dd0861f {type PRJPLACEHOLDERINFO_6e7f0d06cf88 as PRJPLACEHOLDERINFO}
+
+pub using @9f7e40973dd0861f {type PRJPLACEHOLDERINFOEaInformationEStruct_3b855951e5c5 as PRJPLACEHOLDERINFOEaInformationEStruct}
+
+pub using @9f7e40973dd0861f {type PRJPLACEHOLDERINFOSecurityInformationEStruct_2a910b49dc20 as PRJPLACEHOLDERINFOSecurityInformationEStruct}
+
+pub using @9f7e40973dd0861f {type PRJPLACEHOLDERINFOStreamsInformationEStruct_cdb01a104bab as PRJPLACEHOLDERINFOStreamsInformationEStruct}
+
+pub using @9f7e40973dd0861f {type PRJPLACEHOLDERVERSIONINFO_f6e56b7360a6 as PRJPLACEHOLDERVERSIONINFO}
+
+pub using @9f7e40973dd0861f {type PRJQUERYFILENAMECB_c733d4c2cb6f as PRJQUERYFILENAMECB}
+
+pub using @9f7e40973dd0861f {type PRJSTARTDIRECTORYENUMERATIONCB_3911dd7d11d4 as PRJSTARTDIRECTORYENUMERATIONCB}
+
+pub using @9f7e40973dd0861f {type PRJSTARTVIRTUALIZINGFLAGS_a2a5e4412d42 as PRJSTARTVIRTUALIZINGFLAGS}
+
+pub using @9f7e40973dd0861f {type PRJSTARTVIRTUALIZINGOPTIONS_f39c3feb7e42 as PRJSTARTVIRTUALIZINGOPTIONS}
+
+pub using @9f7e40973dd0861f {type PRJUPDATEFAILURECAUSES_54ae247b0d03 as PRJUPDATEFAILURECAUSES}
+
+pub using @9f7e40973dd0861f {type PRJUPDATETYPES_60c2f1f7e94e as PRJUPDATETYPES}
+
+pub using @9f7e40973dd0861f {type PRJVIRTUALIZATIONINSTANCEINFO_3bb243555e5c as PRJVIRTUALIZATIONINSTANCEINFO}
+
+// Traits

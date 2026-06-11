@@ -1,0 +1,2561 @@
+///|
+pub fn EFFECTIVEPOWERMODE_6757870ae787::balanced() -> EFFECTIVEPOWERMODE_6757870ae787 {
+  EFFECTIVEPOWERMODE_6757870ae787::from_int(2)
+}
+
+///|
+pub fn EFFECTIVEPOWERMODE_6757870ae787::battery_saver() -> EFFECTIVEPOWERMODE_6757870ae787 {
+  EFFECTIVEPOWERMODE_6757870ae787::from_int(0)
+}
+
+///|
+pub fn EFFECTIVEPOWERMODE_6757870ae787::better_battery() -> EFFECTIVEPOWERMODE_6757870ae787 {
+  EFFECTIVEPOWERMODE_6757870ae787::from_int(1)
+}
+
+///|
+pub fn EFFECTIVEPOWERMODE_6757870ae787::energy_saver_high_savings() -> EFFECTIVEPOWERMODE_6757870ae787 {
+  EFFECTIVEPOWERMODE_6757870ae787::from_int(0)
+}
+
+///|
+pub fn EFFECTIVEPOWERMODE_6757870ae787::energy_saver_standard() -> EFFECTIVEPOWERMODE_6757870ae787 {
+  EFFECTIVEPOWERMODE_6757870ae787::from_int(1)
+}
+
+///|
+pub fn EFFECTIVEPOWERMODE_6757870ae787::game_mode() -> EFFECTIVEPOWERMODE_6757870ae787 {
+  EFFECTIVEPOWERMODE_6757870ae787::from_int(5)
+}
+
+///|
+pub fn EFFECTIVEPOWERMODE_6757870ae787::high_performance() -> EFFECTIVEPOWERMODE_6757870ae787 {
+  EFFECTIVEPOWERMODE_6757870ae787::from_int(3)
+}
+
+///|
+pub fn EFFECTIVEPOWERMODE_6757870ae787::max_performance() -> EFFECTIVEPOWERMODE_6757870ae787 {
+  EFFECTIVEPOWERMODE_6757870ae787::from_int(4)
+}
+
+///|
+pub fn EFFECTIVEPOWERMODE_6757870ae787::mixed_reality() -> EFFECTIVEPOWERMODE_6757870ae787 {
+  EFFECTIVEPOWERMODE_6757870ae787::from_int(6)
+}
+
+///|
+pub fn EMIMEASUREMENTUNIT_0efaec249a83::picowatt_hours() -> EMIMEASUREMENTUNIT_0efaec249a83 {
+  EMIMEASUREMENTUNIT_0efaec249a83::from_int(0)
+}
+
+///|
+pub fn EXECUTIONSTATE_1e48149af0a2::es_awaymode_required() -> EXECUTIONSTATE_1e48149af0a2 {
+  EXECUTIONSTATE_1e48149af0a2::from_int(64U.reinterpret_as_int())
+}
+
+///|
+pub fn EXECUTIONSTATE_1e48149af0a2::es_continuous() -> EXECUTIONSTATE_1e48149af0a2 {
+  EXECUTIONSTATE_1e48149af0a2::from_int(2147483648U.reinterpret_as_int())
+}
+
+///|
+pub fn EXECUTIONSTATE_1e48149af0a2::es_display_required() -> EXECUTIONSTATE_1e48149af0a2 {
+  EXECUTIONSTATE_1e48149af0a2::from_int(2U.reinterpret_as_int())
+}
+
+///|
+pub fn EXECUTIONSTATE_1e48149af0a2::es_system_required() -> EXECUTIONSTATE_1e48149af0a2 {
+  EXECUTIONSTATE_1e48149af0a2::from_int(1U.reinterpret_as_int())
+}
+
+///|
+pub fn EXECUTIONSTATE_1e48149af0a2::es_user_present() -> EXECUTIONSTATE_1e48149af0a2 {
+  EXECUTIONSTATE_1e48149af0a2::from_int(4U.reinterpret_as_int())
+}
+
+///|
+pub fn LATENCYTIME_b77eb54c3a95::lt_dont_care() -> LATENCYTIME_b77eb54c3a95 {
+  LATENCYTIME_b77eb54c3a95::from_int(0)
+}
+
+///|
+pub fn LATENCYTIME_b77eb54c3a95::lt_lowest_latency() -> LATENCYTIME_b77eb54c3a95 {
+  LATENCYTIME_b77eb54c3a95::from_int(1)
+}
+
+///|
+pub fn POWERACTION_a14a039ccd95::display_off() -> POWERACTION_a14a039ccd95 {
+  POWERACTION_a14a039ccd95::from_int(8)
+}
+
+///|
+pub fn POWERACTION_a14a039ccd95::hibernate() -> POWERACTION_a14a039ccd95 {
+  POWERACTION_a14a039ccd95::from_int(3)
+}
+
+///|
+pub fn POWERACTION_a14a039ccd95::none() -> POWERACTION_a14a039ccd95 {
+  POWERACTION_a14a039ccd95::from_int(0)
+}
+
+///|
+pub fn POWERACTION_a14a039ccd95::reserved() -> POWERACTION_a14a039ccd95 {
+  POWERACTION_a14a039ccd95::from_int(1)
+}
+
+///|
+pub fn POWERACTION_a14a039ccd95::shutdown() -> POWERACTION_a14a039ccd95 {
+  POWERACTION_a14a039ccd95::from_int(4)
+}
+
+///|
+pub fn POWERACTION_a14a039ccd95::shutdown_off() -> POWERACTION_a14a039ccd95 {
+  POWERACTION_a14a039ccd95::from_int(6)
+}
+
+///|
+pub fn POWERACTION_a14a039ccd95::shutdown_reset() -> POWERACTION_a14a039ccd95 {
+  POWERACTION_a14a039ccd95::from_int(5)
+}
+
+///|
+pub fn POWERACTION_a14a039ccd95::sleep() -> POWERACTION_a14a039ccd95 {
+  POWERACTION_a14a039ccd95::from_int(2)
+}
+
+///|
+pub fn POWERACTION_a14a039ccd95::warm_eject() -> POWERACTION_a14a039ccd95 {
+  POWERACTION_a14a039ccd95::from_int(7)
+}
+
+///|
+pub fn POWERACTIONPOLICYEVENTCODE_7a12415a1577::power_force_trigger_reset() -> POWERACTIONPOLICYEVENTCODE_7a12415a1577 {
+  POWERACTIONPOLICYEVENTCODE_7a12415a1577::from_int(
+    2147483648U.reinterpret_as_int(),
+  )
+}
+
+///|
+pub fn POWERACTIONPOLICYEVENTCODE_7a12415a1577::power_level_user_notify_exec() -> POWERACTIONPOLICYEVENTCODE_7a12415a1577 {
+  POWERACTIONPOLICYEVENTCODE_7a12415a1577::from_int(4U.reinterpret_as_int())
+}
+
+///|
+pub fn POWERACTIONPOLICYEVENTCODE_7a12415a1577::power_level_user_notify_sound() -> POWERACTIONPOLICYEVENTCODE_7a12415a1577 {
+  POWERACTIONPOLICYEVENTCODE_7a12415a1577::from_int(2U.reinterpret_as_int())
+}
+
+///|
+pub fn POWERACTIONPOLICYEVENTCODE_7a12415a1577::power_level_user_notify_text() -> POWERACTIONPOLICYEVENTCODE_7a12415a1577 {
+  POWERACTIONPOLICYEVENTCODE_7a12415a1577::from_int(1U.reinterpret_as_int())
+}
+
+///|
+pub fn POWERACTIONPOLICYEVENTCODE_7a12415a1577::power_user_notify_button() -> POWERACTIONPOLICYEVENTCODE_7a12415a1577 {
+  POWERACTIONPOLICYEVENTCODE_7a12415a1577::from_int(8U.reinterpret_as_int())
+}
+
+///|
+pub fn POWERACTIONPOLICYEVENTCODE_7a12415a1577::power_user_notify_shutdown() -> POWERACTIONPOLICYEVENTCODE_7a12415a1577 {
+  POWERACTIONPOLICYEVENTCODE_7a12415a1577::from_int(16U.reinterpret_as_int())
+}
+
+///|
+pub fn POWERCOOLINGMODE_d886a0d9038a::po_tz_active() -> POWERCOOLINGMODE_d886a0d9038a {
+  POWERCOOLINGMODE_d886a0d9038a::from_int(0)
+}
+
+///|
+pub fn POWERCOOLINGMODE_d886a0d9038a::po_tz_invalid_mode() -> POWERCOOLINGMODE_d886a0d9038a {
+  POWERCOOLINGMODE_d886a0d9038a::from_int(2)
+}
+
+///|
+pub fn POWERCOOLINGMODE_d886a0d9038a::po_tz_passive() -> POWERCOOLINGMODE_d886a0d9038a {
+  POWERCOOLINGMODE_d886a0d9038a::from_int(1)
+}
+
+///|
+pub fn POWERDATAACCESSOR_dea070903452::access_active_overlay_scheme() -> POWERDATAACCESSOR_dea070903452 {
+  POWERDATAACCESSOR_dea070903452::from_int(27)
+}
+
+///|
+pub fn POWERDATAACCESSOR_dea070903452::access_active_scheme() -> POWERDATAACCESSOR_dea070903452 {
+  POWERDATAACCESSOR_dea070903452::from_int(19)
+}
+
+///|
+pub fn POWERDATAACCESSOR_dea070903452::access_ac_power_setting_index() -> POWERDATAACCESSOR_dea070903452 {
+  POWERDATAACCESSOR_dea070903452::from_int(0)
+}
+
+///|
+pub fn POWERDATAACCESSOR_dea070903452::access_ac_power_setting_max() -> POWERDATAACCESSOR_dea070903452 {
+  POWERDATAACCESSOR_dea070903452::from_int(21)
+}
+
+///|
+pub fn POWERDATAACCESSOR_dea070903452::access_ac_power_setting_min() -> POWERDATAACCESSOR_dea070903452 {
+  POWERDATAACCESSOR_dea070903452::from_int(23)
+}
+
+///|
+pub fn POWERDATAACCESSOR_dea070903452::access_attributes() -> POWERDATAACCESSOR_dea070903452 {
+  POWERDATAACCESSOR_dea070903452::from_int(15)
+}
+
+///|
+pub fn POWERDATAACCESSOR_dea070903452::access_create_scheme() -> POWERDATAACCESSOR_dea070903452 {
+  POWERDATAACCESSOR_dea070903452::from_int(20)
+}
+
+///|
+pub fn POWERDATAACCESSOR_dea070903452::access_dc_power_setting_index() -> POWERDATAACCESSOR_dea070903452 {
+  POWERDATAACCESSOR_dea070903452::from_int(1)
+}
+
+///|
+pub fn POWERDATAACCESSOR_dea070903452::access_dc_power_setting_max() -> POWERDATAACCESSOR_dea070903452 {
+  POWERDATAACCESSOR_dea070903452::from_int(22)
+}
+
+///|
+pub fn POWERDATAACCESSOR_dea070903452::access_dc_power_setting_min() -> POWERDATAACCESSOR_dea070903452 {
+  POWERDATAACCESSOR_dea070903452::from_int(24)
+}
+
+///|
+pub fn POWERDATAACCESSOR_dea070903452::access_default_ac_power_setting() -> POWERDATAACCESSOR_dea070903452 {
+  POWERDATAACCESSOR_dea070903452::from_int(7)
+}
+
+///|
+pub fn POWERDATAACCESSOR_dea070903452::access_default_dc_power_setting() -> POWERDATAACCESSOR_dea070903452 {
+  POWERDATAACCESSOR_dea070903452::from_int(8)
+}
+
+///|
+pub fn POWERDATAACCESSOR_dea070903452::access_default_security_descriptor() -> POWERDATAACCESSOR_dea070903452 {
+  POWERDATAACCESSOR_dea070903452::from_int(14)
+}
+
+///|
+pub fn POWERDATAACCESSOR_dea070903452::access_description() -> POWERDATAACCESSOR_dea070903452 {
+  POWERDATAACCESSOR_dea070903452::from_int(3)
+}
+
+///|
+pub fn POWERDATAACCESSOR_dea070903452::access_friendly_name() -> POWERDATAACCESSOR_dea070903452 {
+  POWERDATAACCESSOR_dea070903452::from_int(2)
+}
+
+///|
+pub fn POWERDATAACCESSOR_dea070903452::access_icon_resource() -> POWERDATAACCESSOR_dea070903452 {
+  POWERDATAACCESSOR_dea070903452::from_int(13)
+}
+
+///|
+pub fn POWERDATAACCESSOR_dea070903452::access_individual_setting() -> POWERDATAACCESSOR_dea070903452 {
+  POWERDATAACCESSOR_dea070903452::from_int(18)
+}
+
+///|
+pub fn POWERDATAACCESSOR_dea070903452::access_overlay_scheme() -> POWERDATAACCESSOR_dea070903452 {
+  POWERDATAACCESSOR_dea070903452::from_int(26)
+}
+
+///|
+pub fn POWERDATAACCESSOR_dea070903452::access_possible_power_setting() -> POWERDATAACCESSOR_dea070903452 {
+  POWERDATAACCESSOR_dea070903452::from_int(4)
+}
+
+///|
+pub fn POWERDATAACCESSOR_dea070903452::access_possible_power_setting_description() -> POWERDATAACCESSOR_dea070903452 {
+  POWERDATAACCESSOR_dea070903452::from_int(6)
+}
+
+///|
+pub fn POWERDATAACCESSOR_dea070903452::access_possible_power_setting_friendly_name() -> POWERDATAACCESSOR_dea070903452 {
+  POWERDATAACCESSOR_dea070903452::from_int(5)
+}
+
+///|
+pub fn POWERDATAACCESSOR_dea070903452::access_possible_value_increment() -> POWERDATAACCESSOR_dea070903452 {
+  POWERDATAACCESSOR_dea070903452::from_int(11)
+}
+
+///|
+pub fn POWERDATAACCESSOR_dea070903452::access_possible_value_max() -> POWERDATAACCESSOR_dea070903452 {
+  POWERDATAACCESSOR_dea070903452::from_int(10)
+}
+
+///|
+pub fn POWERDATAACCESSOR_dea070903452::access_possible_value_min() -> POWERDATAACCESSOR_dea070903452 {
+  POWERDATAACCESSOR_dea070903452::from_int(9)
+}
+
+///|
+pub fn POWERDATAACCESSOR_dea070903452::access_possible_value_units() -> POWERDATAACCESSOR_dea070903452 {
+  POWERDATAACCESSOR_dea070903452::from_int(12)
+}
+
+///|
+pub fn POWERDATAACCESSOR_dea070903452::access_power_mode() -> POWERDATAACCESSOR_dea070903452 {
+  POWERDATAACCESSOR_dea070903452::from_int(26)
+}
+
+///|
+pub fn POWERDATAACCESSOR_dea070903452::access_profile() -> POWERDATAACCESSOR_dea070903452 {
+  POWERDATAACCESSOR_dea070903452::from_int(25)
+}
+
+///|
+pub fn POWERDATAACCESSOR_dea070903452::access_scheme() -> POWERDATAACCESSOR_dea070903452 {
+  POWERDATAACCESSOR_dea070903452::from_int(16)
+}
+
+///|
+pub fn POWERDATAACCESSOR_dea070903452::access_subgroup() -> POWERDATAACCESSOR_dea070903452 {
+  POWERDATAACCESSOR_dea070903452::from_int(17)
+}
+
+///|
+pub fn POWERINFORMATIONLEVEL_5f66ccf5a646::administrator_power_policy() -> POWERINFORMATIONLEVEL_5f66ccf5a646 {
+  POWERINFORMATIONLEVEL_5f66ccf5a646::from_int(9)
+}
+
+///|
+pub fn POWERINFORMATIONLEVEL_5f66ccf5a646::battery_device_state() -> POWERINFORMATIONLEVEL_5f66ccf5a646 {
+  POWERINFORMATIONLEVEL_5f66ccf5a646::from_int(86)
+}
+
+///|
+pub fn POWERINFORMATIONLEVEL_5f66ccf5a646::black_box_recorder_direct_access_buffer() -> POWERINFORMATIONLEVEL_5f66ccf5a646 {
+  POWERINFORMATIONLEVEL_5f66ccf5a646::from_int(97)
+}
+
+///|
+pub fn POWERINFORMATIONLEVEL_5f66ccf5a646::cs_device_notification() -> POWERINFORMATIONLEVEL_5f66ccf5a646 {
+  POWERINFORMATIONLEVEL_5f66ccf5a646::from_int(74)
+}
+
+///|
+pub fn POWERINFORMATIONLEVEL_5f66ccf5a646::display_burst() -> POWERINFORMATIONLEVEL_5f66ccf5a646 {
+  POWERINFORMATIONLEVEL_5f66ccf5a646::from_int(77)
+}
+
+///|
+pub fn POWERINFORMATIONLEVEL_5f66ccf5a646::energy_tracker_create() -> POWERINFORMATIONLEVEL_5f66ccf5a646 {
+  POWERINFORMATIONLEVEL_5f66ccf5a646::from_int(92)
+}
+
+///|
+pub fn POWERINFORMATIONLEVEL_5f66ccf5a646::energy_tracker_query() -> POWERINFORMATIONLEVEL_5f66ccf5a646 {
+  POWERINFORMATIONLEVEL_5f66ccf5a646::from_int(93)
+}
+
+///|
+pub fn POWERINFORMATIONLEVEL_5f66ccf5a646::exit_latency_sampling_percentage() -> POWERINFORMATIONLEVEL_5f66ccf5a646 {
+  POWERINFORMATIONLEVEL_5f66ccf5a646::from_int(78)
+}
+
+///|
+pub fn POWERINFORMATIONLEVEL_5f66ccf5a646::firmware_table_information_registered() -> POWERINFORMATIONLEVEL_5f66ccf5a646 {
+  POWERINFORMATIONLEVEL_5f66ccf5a646::from_int(69)
+}
+
+///|
+pub fn POWERINFORMATIONLEVEL_5f66ccf5a646::get_power_request_list() -> POWERINFORMATIONLEVEL_5f66ccf5a646 {
+  POWERINFORMATIONLEVEL_5f66ccf5a646::from_int(45)
+}
+
+///|
+pub fn POWERINFORMATIONLEVEL_5f66ccf5a646::get_power_setting_value() -> POWERINFORMATIONLEVEL_5f66ccf5a646 {
+  POWERINFORMATIONLEVEL_5f66ccf5a646::from_int(59)
+}
+
+///|
+pub fn POWERINFORMATIONLEVEL_5f66ccf5a646::group_park() -> POWERINFORMATIONLEVEL_5f66ccf5a646 {
+  POWERINFORMATIONLEVEL_5f66ccf5a646::from_int(48)
+}
+
+///|
+pub fn POWERINFORMATIONLEVEL_5f66ccf5a646::idle_resiliency() -> POWERINFORMATIONLEVEL_5f66ccf5a646 {
+  POWERINFORMATIONLEVEL_5f66ccf5a646::from_int(60)
+}
+
+///|
+pub fn POWERINFORMATIONLEVEL_5f66ccf5a646::last_resume_performance() -> POWERINFORMATIONLEVEL_5f66ccf5a646 {
+  POWERINFORMATIONLEVEL_5f66ccf5a646::from_int(76)
+}
+
+///|
+pub fn POWERINFORMATIONLEVEL_5f66ccf5a646::last_sleep_time() -> POWERINFORMATIONLEVEL_5f66ccf5a646 {
+  POWERINFORMATIONLEVEL_5f66ccf5a646::from_int(15)
+}
+
+///|
+pub fn POWERINFORMATIONLEVEL_5f66ccf5a646::last_wake_time() -> POWERINFORMATIONLEVEL_5f66ccf5a646 {
+  POWERINFORMATIONLEVEL_5f66ccf5a646::from_int(14)
+}
+
+///|
+pub fn POWERINFORMATIONLEVEL_5f66ccf5a646::logical_processor_idling() -> POWERINFORMATIONLEVEL_5f66ccf5a646 {
+  POWERINFORMATIONLEVEL_5f66ccf5a646::from_int(56)
+}
+
+///|
+pub fn POWERINFORMATIONLEVEL_5f66ccf5a646::monitor_capabilities() -> POWERINFORMATIONLEVEL_5f66ccf5a646 {
+  POWERINFORMATIONLEVEL_5f66ccf5a646::from_int(40)
+}
+
+///|
+pub fn POWERINFORMATIONLEVEL_5f66ccf5a646::monitor_invocation() -> POWERINFORMATIONLEVEL_5f66ccf5a646 {
+  POWERINFORMATIONLEVEL_5f66ccf5a646::from_int(68)
+}
+
+///|
+pub fn POWERINFORMATIONLEVEL_5f66ccf5a646::notify_user_mode_legacy_power_event() -> POWERINFORMATIONLEVEL_5f66ccf5a646 {
+  POWERINFORMATIONLEVEL_5f66ccf5a646::from_int(47)
+}
+
+///|
+pub fn POWERINFORMATIONLEVEL_5f66ccf5a646::notify_user_power_setting() -> POWERINFORMATIONLEVEL_5f66ccf5a646 {
+  POWERINFORMATIONLEVEL_5f66ccf5a646::from_int(26)
+}
+
+///|
+pub fn POWERINFORMATIONLEVEL_5f66ccf5a646::pdc_invocation() -> POWERINFORMATIONLEVEL_5f66ccf5a646 {
+  POWERINFORMATIONLEVEL_5f66ccf5a646::from_int(67)
+}
+
+///|
+pub fn POWERINFORMATIONLEVEL_5f66ccf5a646::physical_power_button_press() -> POWERINFORMATIONLEVEL_5f66ccf5a646 {
+  POWERINFORMATIONLEVEL_5f66ccf5a646::from_int(90)
+}
+
+///|
+pub fn POWERINFORMATIONLEVEL_5f66ccf5a646::platform_idle_states() -> POWERINFORMATIONLEVEL_5f66ccf5a646 {
+  POWERINFORMATIONLEVEL_5f66ccf5a646::from_int(80)
+}
+
+///|
+pub fn POWERINFORMATIONLEVEL_5f66ccf5a646::platform_idle_veto() -> POWERINFORMATIONLEVEL_5f66ccf5a646 {
+  POWERINFORMATIONLEVEL_5f66ccf5a646::from_int(82)
+}
+
+///|
+pub fn POWERINFORMATIONLEVEL_5f66ccf5a646::platform_information() -> POWERINFORMATIONLEVEL_5f66ccf5a646 {
+  POWERINFORMATIONLEVEL_5f66ccf5a646::from_int(66)
+}
+
+///|
+pub fn POWERINFORMATIONLEVEL_5f66ccf5a646::platform_role() -> POWERINFORMATIONLEVEL_5f66ccf5a646 {
+  POWERINFORMATIONLEVEL_5f66ccf5a646::from_int(75)
+}
+
+///|
+pub fn POWERINFORMATIONLEVEL_5f66ccf5a646::plm_power_request_create() -> POWERINFORMATIONLEVEL_5f66ccf5a646 {
+  POWERINFORMATIONLEVEL_5f66ccf5a646::from_int(72)
+}
+
+///|
+pub fn POWERINFORMATIONLEVEL_5f66ccf5a646::power_information_internal() -> POWERINFORMATIONLEVEL_5f66ccf5a646 {
+  POWERINFORMATIONLEVEL_5f66ccf5a646::from_int(87)
+}
+
+///|
+pub fn POWERINFORMATIONLEVEL_5f66ccf5a646::maximum() -> POWERINFORMATIONLEVEL_5f66ccf5a646 {
+  POWERINFORMATIONLEVEL_5f66ccf5a646::from_int(99)
+}
+
+///|
+pub fn POWERINFORMATIONLEVEL_5f66ccf5a646::unused0() -> POWERINFORMATIONLEVEL_5f66ccf5a646 {
+  POWERINFORMATIONLEVEL_5f66ccf5a646::from_int(27)
+}
+
+///|
+pub fn POWERINFORMATIONLEVEL_5f66ccf5a646::power_request_action() -> POWERINFORMATIONLEVEL_5f66ccf5a646 {
+  POWERINFORMATIONLEVEL_5f66ccf5a646::from_int(44)
+}
+
+///|
+pub fn POWERINFORMATIONLEVEL_5f66ccf5a646::power_request_action_internal() -> POWERINFORMATIONLEVEL_5f66ccf5a646 {
+  POWERINFORMATIONLEVEL_5f66ccf5a646::from_int(85)
+}
+
+///|
+pub fn POWERINFORMATIONLEVEL_5f66ccf5a646::power_request_create() -> POWERINFORMATIONLEVEL_5f66ccf5a646 {
+  POWERINFORMATIONLEVEL_5f66ccf5a646::from_int(43)
+}
+
+///|
+pub fn POWERINFORMATIONLEVEL_5f66ccf5a646::power_setting_notification_name() -> POWERINFORMATIONLEVEL_5f66ccf5a646 {
+  POWERINFORMATIONLEVEL_5f66ccf5a646::from_int(58)
+}
+
+///|
+pub fn POWERINFORMATIONLEVEL_5f66ccf5a646::power_shutdown_notification() -> POWERINFORMATIONLEVEL_5f66ccf5a646 {
+  POWERINFORMATIONLEVEL_5f66ccf5a646::from_int(39)
+}
+
+///|
+pub fn POWERINFORMATIONLEVEL_5f66ccf5a646::processor_cap() -> POWERINFORMATIONLEVEL_5f66ccf5a646 {
+  POWERINFORMATIONLEVEL_5f66ccf5a646::from_int(34)
+}
+
+///|
+pub fn POWERINFORMATIONLEVEL_5f66ccf5a646::processor_idle_domains() -> POWERINFORMATIONLEVEL_5f66ccf5a646 {
+  POWERINFORMATIONLEVEL_5f66ccf5a646::from_int(49)
+}
+
+///|
+pub fn POWERINFORMATIONLEVEL_5f66ccf5a646::processor_idle_states() -> POWERINFORMATIONLEVEL_5f66ccf5a646 {
+  POWERINFORMATIONLEVEL_5f66ccf5a646::from_int(33)
+}
+
+///|
+pub fn POWERINFORMATIONLEVEL_5f66ccf5a646::processor_idle_states_hv() -> POWERINFORMATIONLEVEL_5f66ccf5a646 {
+  POWERINFORMATIONLEVEL_5f66ccf5a646::from_int(52)
+}
+
+///|
+pub fn POWERINFORMATIONLEVEL_5f66ccf5a646::processor_idle_veto() -> POWERINFORMATIONLEVEL_5f66ccf5a646 {
+  POWERINFORMATIONLEVEL_5f66ccf5a646::from_int(81)
+}
+
+///|
+pub fn POWERINFORMATIONLEVEL_5f66ccf5a646::processor_information() -> POWERINFORMATIONLEVEL_5f66ccf5a646 {
+  POWERINFORMATIONLEVEL_5f66ccf5a646::from_int(11)
+}
+
+///|
+pub fn POWERINFORMATIONLEVEL_5f66ccf5a646::processor_information_ex() -> POWERINFORMATIONLEVEL_5f66ccf5a646 {
+  POWERINFORMATIONLEVEL_5f66ccf5a646::from_int(46)
+}
+
+///|
+pub fn POWERINFORMATIONLEVEL_5f66ccf5a646::processor_load() -> POWERINFORMATIONLEVEL_5f66ccf5a646 {
+  POWERINFORMATIONLEVEL_5f66ccf5a646::from_int(38)
+}
+
+///|
+pub fn POWERINFORMATIONLEVEL_5f66ccf5a646::processor_perf_cap_hv() -> POWERINFORMATIONLEVEL_5f66ccf5a646 {
+  POWERINFORMATIONLEVEL_5f66ccf5a646::from_int(54)
+}
+
+///|
+pub fn POWERINFORMATIONLEVEL_5f66ccf5a646::processor_perf_states() -> POWERINFORMATIONLEVEL_5f66ccf5a646 {
+  POWERINFORMATIONLEVEL_5f66ccf5a646::from_int(32)
+}
+
+///|
+pub fn POWERINFORMATIONLEVEL_5f66ccf5a646::processor_perf_states_hv() -> POWERINFORMATIONLEVEL_5f66ccf5a646 {
+  POWERINFORMATIONLEVEL_5f66ccf5a646::from_int(53)
+}
+
+///|
+pub fn POWERINFORMATIONLEVEL_5f66ccf5a646::processor_power_policy_ac() -> POWERINFORMATIONLEVEL_5f66ccf5a646 {
+  POWERINFORMATIONLEVEL_5f66ccf5a646::from_int(18)
+}
+
+///|
+pub fn POWERINFORMATIONLEVEL_5f66ccf5a646::processor_power_policy_current() -> POWERINFORMATIONLEVEL_5f66ccf5a646 {
+  POWERINFORMATIONLEVEL_5f66ccf5a646::from_int(22)
+}
+
+///|
+pub fn POWERINFORMATIONLEVEL_5f66ccf5a646::processor_power_policy_dc() -> POWERINFORMATIONLEVEL_5f66ccf5a646 {
+  POWERINFORMATIONLEVEL_5f66ccf5a646::from_int(19)
+}
+
+///|
+pub fn POWERINFORMATIONLEVEL_5f66ccf5a646::processor_set_idle() -> POWERINFORMATIONLEVEL_5f66ccf5a646 {
+  POWERINFORMATIONLEVEL_5f66ccf5a646::from_int(55)
+}
+
+///|
+pub fn POWERINFORMATIONLEVEL_5f66ccf5a646::processor_state_handler() -> POWERINFORMATIONLEVEL_5f66ccf5a646 {
+  POWERINFORMATIONLEVEL_5f66ccf5a646::from_int(7)
+}
+
+///|
+pub fn POWERINFORMATIONLEVEL_5f66ccf5a646::processor_state_handler2() -> POWERINFORMATIONLEVEL_5f66ccf5a646 {
+  POWERINFORMATIONLEVEL_5f66ccf5a646::from_int(13)
+}
+
+///|
+pub fn POWERINFORMATIONLEVEL_5f66ccf5a646::query_potential_drips_constraint() -> POWERINFORMATIONLEVEL_5f66ccf5a646 {
+  POWERINFORMATIONLEVEL_5f66ccf5a646::from_int(91)
+}
+
+///|
+pub fn POWERINFORMATIONLEVEL_5f66ccf5a646::register_spm_power_settings() -> POWERINFORMATIONLEVEL_5f66ccf5a646 {
+  POWERINFORMATIONLEVEL_5f66ccf5a646::from_int(79)
+}
+
+///|
+pub fn POWERINFORMATIONLEVEL_5f66ccf5a646::screen_off() -> POWERINFORMATIONLEVEL_5f66ccf5a646 {
+  POWERINFORMATIONLEVEL_5f66ccf5a646::from_int(73)
+}
+
+///|
+pub fn POWERINFORMATIONLEVEL_5f66ccf5a646::send_suspend_resume_notification() -> POWERINFORMATIONLEVEL_5f66ccf5a646 {
+  POWERINFORMATIONLEVEL_5f66ccf5a646::from_int(96)
+}
+
+///|
+pub fn POWERINFORMATIONLEVEL_5f66ccf5a646::session_allow_external_dma_devices() -> POWERINFORMATIONLEVEL_5f66ccf5a646 {
+  POWERINFORMATIONLEVEL_5f66ccf5a646::from_int(95)
+}
+
+///|
+pub fn POWERINFORMATIONLEVEL_5f66ccf5a646::session_connect_notification() -> POWERINFORMATIONLEVEL_5f66ccf5a646 {
+  POWERINFORMATIONLEVEL_5f66ccf5a646::from_int(62)
+}
+
+///|
+pub fn POWERINFORMATIONLEVEL_5f66ccf5a646::session_display_state() -> POWERINFORMATIONLEVEL_5f66ccf5a646 {
+  POWERINFORMATIONLEVEL_5f66ccf5a646::from_int(42)
+}
+
+///|
+pub fn POWERINFORMATIONLEVEL_5f66ccf5a646::session_lock_state() -> POWERINFORMATIONLEVEL_5f66ccf5a646 {
+  POWERINFORMATIONLEVEL_5f66ccf5a646::from_int(64)
+}
+
+///|
+pub fn POWERINFORMATIONLEVEL_5f66ccf5a646::session_power_cleanup() -> POWERINFORMATIONLEVEL_5f66ccf5a646 {
+  POWERINFORMATIONLEVEL_5f66ccf5a646::from_int(63)
+}
+
+///|
+pub fn POWERINFORMATIONLEVEL_5f66ccf5a646::session_power_init() -> POWERINFORMATIONLEVEL_5f66ccf5a646 {
+  POWERINFORMATIONLEVEL_5f66ccf5a646::from_int(41)
+}
+
+///|
+pub fn POWERINFORMATIONLEVEL_5f66ccf5a646::session_rit_state() -> POWERINFORMATIONLEVEL_5f66ccf5a646 {
+  POWERINFORMATIONLEVEL_5f66ccf5a646::from_int(61)
+}
+
+///|
+pub fn POWERINFORMATIONLEVEL_5f66ccf5a646::set_power_setting_value() -> POWERINFORMATIONLEVEL_5f66ccf5a646 {
+  POWERINFORMATIONLEVEL_5f66ccf5a646::from_int(25)
+}
+
+///|
+pub fn POWERINFORMATIONLEVEL_5f66ccf5a646::set_shutdown_selected_time() -> POWERINFORMATIONLEVEL_5f66ccf5a646 {
+  POWERINFORMATIONLEVEL_5f66ccf5a646::from_int(70)
+}
+
+///|
+pub fn POWERINFORMATIONLEVEL_5f66ccf5a646::suspend_resume_invocation() -> POWERINFORMATIONLEVEL_5f66ccf5a646 {
+  POWERINFORMATIONLEVEL_5f66ccf5a646::from_int(71)
+}
+
+///|
+pub fn POWERINFORMATIONLEVEL_5f66ccf5a646::system_battery_state() -> POWERINFORMATIONLEVEL_5f66ccf5a646 {
+  POWERINFORMATIONLEVEL_5f66ccf5a646::from_int(5)
+}
+
+///|
+pub fn POWERINFORMATIONLEVEL_5f66ccf5a646::system_battery_state_precise() -> POWERINFORMATIONLEVEL_5f66ccf5a646 {
+  POWERINFORMATIONLEVEL_5f66ccf5a646::from_int(83)
+}
+
+///|
+pub fn POWERINFORMATIONLEVEL_5f66ccf5a646::system_execution_state() -> POWERINFORMATIONLEVEL_5f66ccf5a646 {
+  POWERINFORMATIONLEVEL_5f66ccf5a646::from_int(16)
+}
+
+///|
+pub fn POWERINFORMATIONLEVEL_5f66ccf5a646::system_hiber_file_information() -> POWERINFORMATIONLEVEL_5f66ccf5a646 {
+  POWERINFORMATIONLEVEL_5f66ccf5a646::from_int(36)
+}
+
+///|
+pub fn POWERINFORMATIONLEVEL_5f66ccf5a646::system_hiber_file_size() -> POWERINFORMATIONLEVEL_5f66ccf5a646 {
+  POWERINFORMATIONLEVEL_5f66ccf5a646::from_int(51)
+}
+
+///|
+pub fn POWERINFORMATIONLEVEL_5f66ccf5a646::system_hiber_file_type() -> POWERINFORMATIONLEVEL_5f66ccf5a646 {
+  POWERINFORMATIONLEVEL_5f66ccf5a646::from_int(89)
+}
+
+///|
+pub fn POWERINFORMATIONLEVEL_5f66ccf5a646::system_hiberboot_state() -> POWERINFORMATIONLEVEL_5f66ccf5a646 {
+  POWERINFORMATIONLEVEL_5f66ccf5a646::from_int(65)
+}
+
+///|
+pub fn POWERINFORMATIONLEVEL_5f66ccf5a646::system_monitor_hiber_boot_power_off() -> POWERINFORMATIONLEVEL_5f66ccf5a646 {
+  POWERINFORMATIONLEVEL_5f66ccf5a646::from_int(28)
+}
+
+///|
+pub fn POWERINFORMATIONLEVEL_5f66ccf5a646::system_power_capabilities() -> POWERINFORMATIONLEVEL_5f66ccf5a646 {
+  POWERINFORMATIONLEVEL_5f66ccf5a646::from_int(4)
+}
+
+///|
+pub fn POWERINFORMATIONLEVEL_5f66ccf5a646::system_power_information() -> POWERINFORMATIONLEVEL_5f66ccf5a646 {
+  POWERINFORMATIONLEVEL_5f66ccf5a646::from_int(12)
+}
+
+///|
+pub fn POWERINFORMATIONLEVEL_5f66ccf5a646::system_power_logging_entry() -> POWERINFORMATIONLEVEL_5f66ccf5a646 {
+  POWERINFORMATIONLEVEL_5f66ccf5a646::from_int(24)
+}
+
+///|
+pub fn POWERINFORMATIONLEVEL_5f66ccf5a646::system_power_policy_ac() -> POWERINFORMATIONLEVEL_5f66ccf5a646 {
+  POWERINFORMATIONLEVEL_5f66ccf5a646::from_int(0)
+}
+
+///|
+pub fn POWERINFORMATIONLEVEL_5f66ccf5a646::system_power_policy_current() -> POWERINFORMATIONLEVEL_5f66ccf5a646 {
+  POWERINFORMATIONLEVEL_5f66ccf5a646::from_int(8)
+}
+
+///|
+pub fn POWERINFORMATIONLEVEL_5f66ccf5a646::system_power_policy_dc() -> POWERINFORMATIONLEVEL_5f66ccf5a646 {
+  POWERINFORMATIONLEVEL_5f66ccf5a646::from_int(1)
+}
+
+///|
+pub fn POWERINFORMATIONLEVEL_5f66ccf5a646::system_power_source_state() -> POWERINFORMATIONLEVEL_5f66ccf5a646 {
+  POWERINFORMATIONLEVEL_5f66ccf5a646::from_int(98)
+}
+
+///|
+pub fn POWERINFORMATIONLEVEL_5f66ccf5a646::system_power_state_handler() -> POWERINFORMATIONLEVEL_5f66ccf5a646 {
+  POWERINFORMATIONLEVEL_5f66ccf5a646::from_int(6)
+}
+
+///|
+pub fn POWERINFORMATIONLEVEL_5f66ccf5a646::system_power_state_logging() -> POWERINFORMATIONLEVEL_5f66ccf5a646 {
+  POWERINFORMATIONLEVEL_5f66ccf5a646::from_int(23)
+}
+
+///|
+pub fn POWERINFORMATIONLEVEL_5f66ccf5a646::system_power_state_notify_handler() -> POWERINFORMATIONLEVEL_5f66ccf5a646 {
+  POWERINFORMATIONLEVEL_5f66ccf5a646::from_int(17)
+}
+
+///|
+pub fn POWERINFORMATIONLEVEL_5f66ccf5a646::system_reserve_hiber_file() -> POWERINFORMATIONLEVEL_5f66ccf5a646 {
+  POWERINFORMATIONLEVEL_5f66ccf5a646::from_int(10)
+}
+
+///|
+pub fn POWERINFORMATIONLEVEL_5f66ccf5a646::system_video_state() -> POWERINFORMATIONLEVEL_5f66ccf5a646 {
+  POWERINFORMATIONLEVEL_5f66ccf5a646::from_int(29)
+}
+
+///|
+pub fn POWERINFORMATIONLEVEL_5f66ccf5a646::system_wake_source() -> POWERINFORMATIONLEVEL_5f66ccf5a646 {
+  POWERINFORMATIONLEVEL_5f66ccf5a646::from_int(35)
+}
+
+///|
+pub fn POWERINFORMATIONLEVEL_5f66ccf5a646::thermal_event() -> POWERINFORMATIONLEVEL_5f66ccf5a646 {
+  POWERINFORMATIONLEVEL_5f66ccf5a646::from_int(84)
+}
+
+///|
+pub fn POWERINFORMATIONLEVEL_5f66ccf5a646::thermal_standby() -> POWERINFORMATIONLEVEL_5f66ccf5a646 {
+  POWERINFORMATIONLEVEL_5f66ccf5a646::from_int(88)
+}
+
+///|
+pub fn POWERINFORMATIONLEVEL_5f66ccf5a646::trace_application_power_message() -> POWERINFORMATIONLEVEL_5f66ccf5a646 {
+  POWERINFORMATIONLEVEL_5f66ccf5a646::from_int(30)
+}
+
+///|
+pub fn POWERINFORMATIONLEVEL_5f66ccf5a646::trace_application_power_message_end() -> POWERINFORMATIONLEVEL_5f66ccf5a646 {
+  POWERINFORMATIONLEVEL_5f66ccf5a646::from_int(31)
+}
+
+///|
+pub fn POWERINFORMATIONLEVEL_5f66ccf5a646::trace_service_power_message() -> POWERINFORMATIONLEVEL_5f66ccf5a646 {
+  POWERINFORMATIONLEVEL_5f66ccf5a646::from_int(37)
+}
+
+///|
+pub fn POWERINFORMATIONLEVEL_5f66ccf5a646::update_black_box_recorder() -> POWERINFORMATIONLEVEL_5f66ccf5a646 {
+  POWERINFORMATIONLEVEL_5f66ccf5a646::from_int(94)
+}
+
+///|
+pub fn POWERINFORMATIONLEVEL_5f66ccf5a646::user_presence() -> POWERINFORMATIONLEVEL_5f66ccf5a646 {
+  POWERINFORMATIONLEVEL_5f66ccf5a646::from_int(57)
+}
+
+///|
+pub fn POWERINFORMATIONLEVEL_5f66ccf5a646::verify_processor_power_policy_ac() -> POWERINFORMATIONLEVEL_5f66ccf5a646 {
+  POWERINFORMATIONLEVEL_5f66ccf5a646::from_int(20)
+}
+
+///|
+pub fn POWERINFORMATIONLEVEL_5f66ccf5a646::verify_processor_power_policy_dc() -> POWERINFORMATIONLEVEL_5f66ccf5a646 {
+  POWERINFORMATIONLEVEL_5f66ccf5a646::from_int(21)
+}
+
+///|
+pub fn POWERINFORMATIONLEVEL_5f66ccf5a646::verify_system_policy_ac() -> POWERINFORMATIONLEVEL_5f66ccf5a646 {
+  POWERINFORMATIONLEVEL_5f66ccf5a646::from_int(2)
+}
+
+///|
+pub fn POWERINFORMATIONLEVEL_5f66ccf5a646::verify_system_policy_dc() -> POWERINFORMATIONLEVEL_5f66ccf5a646 {
+  POWERINFORMATIONLEVEL_5f66ccf5a646::from_int(3)
+}
+
+///|
+pub fn POWERINFORMATIONLEVEL_5f66ccf5a646::wake_timer_list() -> POWERINFORMATIONLEVEL_5f66ccf5a646 {
+  POWERINFORMATIONLEVEL_5f66ccf5a646::from_int(50)
+}
+
+///|
+pub fn POWERMONITORREQUESTREASON_1f67a68888b9::monitor_request_reason_ac_dc_display_burst() -> POWERMONITORREQUESTREASON_1f67a68888b9 {
+  POWERMONITORREQUESTREASON_1f67a68888b9::from_int(5)
+}
+
+///|
+pub fn POWERMONITORREQUESTREASON_1f67a68888b9::monitor_request_reason_ac_dc_display_burst_suppressed() -> POWERMONITORREQUESTREASON_1f67a68888b9 {
+  POWERMONITORREQUESTREASON_1f67a68888b9::from_int(28)
+}
+
+///|
+pub fn POWERMONITORREQUESTREASON_1f67a68888b9::monitor_request_reason_austerity_battery_drain() -> POWERMONITORREQUESTREASON_1f67a68888b9 {
+  POWERMONITORREQUESTREASON_1f67a68888b9::from_int(55)
+}
+
+///|
+pub fn POWERMONITORREQUESTREASON_1f67a68888b9::monitor_request_reason_battery_count_change() -> POWERMONITORREQUESTREASON_1f67a68888b9 {
+  POWERMONITORREQUESTREASON_1f67a68888b9::from_int(16)
+}
+
+///|
+pub fn POWERMONITORREQUESTREASON_1f67a68888b9::monitor_request_reason_battery_count_change_suppressed() -> POWERMONITORREQUESTREASON_1f67a68888b9 {
+  POWERMONITORREQUESTREASON_1f67a68888b9::from_int(49)
+}
+
+///|
+pub fn POWERMONITORREQUESTREASON_1f67a68888b9::monitor_request_reason_battery_pre_critical() -> POWERMONITORREQUESTREASON_1f67a68888b9 {
+  POWERMONITORREQUESTREASON_1f67a68888b9::from_int(53)
+}
+
+///|
+pub fn POWERMONITORREQUESTREASON_1f67a68888b9::monitor_request_reason_builtin_panel() -> POWERMONITORREQUESTREASON_1f67a68888b9 {
+  POWERMONITORREQUESTREASON_1f67a68888b9::from_int(47)
+}
+
+///|
+pub fn POWERMONITORREQUESTREASON_1f67a68888b9::monitor_request_reason_dp() -> POWERMONITORREQUESTREASON_1f67a68888b9 {
+  POWERMONITORREQUESTREASON_1f67a68888b9::from_int(19)
+}
+
+///|
+pub fn POWERMONITORREQUESTREASON_1f67a68888b9::monitor_request_reason_dim() -> POWERMONITORREQUESTREASON_1f67a68888b9 {
+  POWERMONITORREQUESTREASON_1f67a68888b9::from_int(46)
+}
+
+///|
+pub fn POWERMONITORREQUESTREASON_1f67a68888b9::monitor_request_reason_directed_drips() -> POWERMONITORREQUESTREASON_1f67a68888b9 {
+  POWERMONITORREQUESTREASON_1f67a68888b9::from_int(45)
+}
+
+///|
+pub fn POWERMONITORREQUESTREASON_1f67a68888b9::monitor_request_reason_display_required_un_dim() -> POWERMONITORREQUESTREASON_1f67a68888b9 {
+  POWERMONITORREQUESTREASON_1f67a68888b9::from_int(48)
+}
+
+///|
+pub fn POWERMONITORREQUESTREASON_1f67a68888b9::monitor_request_reason_doze_restricted_standby() -> POWERMONITORREQUESTREASON_1f67a68888b9 {
+  POWERMONITORREQUESTREASON_1f67a68888b9::from_int(56)
+}
+
+///|
+pub fn POWERMONITORREQUESTREASON_1f67a68888b9::monitor_request_reason_full_wake() -> POWERMONITORREQUESTREASON_1f67a68888b9 {
+  POWERMONITORREQUESTREASON_1f67a68888b9::from_int(9)
+}
+
+///|
+pub fn POWERMONITORREQUESTREASON_1f67a68888b9::monitor_request_reason_grace_period() -> POWERMONITORREQUESTREASON_1f67a68888b9 {
+  POWERMONITORREQUESTREASON_1f67a68888b9::from_int(17)
+}
+
+///|
+pub fn POWERMONITORREQUESTREASON_1f67a68888b9::monitor_request_reason_idle_timeout() -> POWERMONITORREQUESTREASON_1f67a68888b9 {
+  POWERMONITORREQUESTREASON_1f67a68888b9::from_int(12)
+}
+
+///|
+pub fn POWERMONITORREQUESTREASON_1f67a68888b9::monitor_request_reason_lid() -> POWERMONITORREQUESTREASON_1f67a68888b9 {
+  POWERMONITORREQUESTREASON_1f67a68888b9::from_int(15)
+}
+
+///|
+pub fn POWERMONITORREQUESTREASON_1f67a68888b9::monitor_request_reason_max() -> POWERMONITORREQUESTREASON_1f67a68888b9 {
+  POWERMONITORREQUESTREASON_1f67a68888b9::from_int(58)
+}
+
+///|
+pub fn POWERMONITORREQUESTREASON_1f67a68888b9::monitor_request_reason_near_proximity() -> POWERMONITORREQUESTREASON_1f67a68888b9 {
+  POWERMONITORREQUESTREASON_1f67a68888b9::from_int(22)
+}
+
+///|
+pub fn POWERMONITORREQUESTREASON_1f67a68888b9::monitor_request_reason_pdc_signal() -> POWERMONITORREQUESTREASON_1f67a68888b9 {
+  POWERMONITORREQUESTREASON_1f67a68888b9::from_int(27)
+}
+
+///|
+pub fn POWERMONITORREQUESTREASON_1f67a68888b9::monitor_request_reason_pdc_signal_fingerprint() -> POWERMONITORREQUESTREASON_1f67a68888b9 {
+  POWERMONITORREQUESTREASON_1f67a68888b9::from_int(44)
+}
+
+///|
+pub fn POWERMONITORREQUESTREASON_1f67a68888b9::monitor_request_reason_pdc_signal_hey_cortana() -> POWERMONITORREQUESTREASON_1f67a68888b9 {
+  POWERMONITORREQUESTREASON_1f67a68888b9::from_int(42)
+}
+
+///|
+pub fn POWERMONITORREQUESTREASON_1f67a68888b9::monitor_request_reason_pdc_signal_holographic_shell() -> POWERMONITORREQUESTREASON_1f67a68888b9 {
+  POWERMONITORREQUESTREASON_1f67a68888b9::from_int(43)
+}
+
+///|
+pub fn POWERMONITORREQUESTREASON_1f67a68888b9::monitor_request_reason_pdc_signal_sensors_human_presence() -> POWERMONITORREQUESTREASON_1f67a68888b9 {
+  POWERMONITORREQUESTREASON_1f67a68888b9::from_int(52)
+}
+
+///|
+pub fn POWERMONITORREQUESTREASON_1f67a68888b9::monitor_request_reason_pdc_signal_windows_mobile_pwr_notif() -> POWERMONITORREQUESTREASON_1f67a68888b9 {
+  POWERMONITORREQUESTREASON_1f67a68888b9::from_int(40)
+}
+
+///|
+pub fn POWERMONITORREQUESTREASON_1f67a68888b9::monitor_request_reason_pdc_signal_windows_mobile_shell() -> POWERMONITORREQUESTREASON_1f67a68888b9 {
+  POWERMONITORREQUESTREASON_1f67a68888b9::from_int(41)
+}
+
+///|
+pub fn POWERMONITORREQUESTREASON_1f67a68888b9::monitor_request_reason_pn_p() -> POWERMONITORREQUESTREASON_1f67a68888b9 {
+  POWERMONITORREQUESTREASON_1f67a68888b9::from_int(18)
+}
+
+///|
+pub fn POWERMONITORREQUESTREASON_1f67a68888b9::monitor_request_reason_po_set_system_state() -> POWERMONITORREQUESTREASON_1f67a68888b9 {
+  POWERMONITORREQUESTREASON_1f67a68888b9::from_int(7)
+}
+
+///|
+pub fn POWERMONITORREQUESTREASON_1f67a68888b9::monitor_request_reason_policy_change() -> POWERMONITORREQUESTREASON_1f67a68888b9 {
+  POWERMONITORREQUESTREASON_1f67a68888b9::from_int(13)
+}
+
+///|
+pub fn POWERMONITORREQUESTREASON_1f67a68888b9::monitor_request_reason_power_button() -> POWERMONITORREQUESTREASON_1f67a68888b9 {
+  POWERMONITORREQUESTREASON_1f67a68888b9::from_int(1)
+}
+
+///|
+pub fn POWERMONITORREQUESTREASON_1f67a68888b9::monitor_request_reason_remote_connection() -> POWERMONITORREQUESTREASON_1f67a68888b9 {
+  POWERMONITORREQUESTREASON_1f67a68888b9::from_int(2)
+}
+
+///|
+pub fn POWERMONITORREQUESTREASON_1f67a68888b9::monitor_request_reason_resume_modern_standby() -> POWERMONITORREQUESTREASON_1f67a68888b9 {
+  POWERMONITORREQUESTREASON_1f67a68888b9::from_int(50)
+}
+
+///|
+pub fn POWERMONITORREQUESTREASON_1f67a68888b9::monitor_request_reason_resume_pdc() -> POWERMONITORREQUESTREASON_1f67a68888b9 {
+  POWERMONITORREQUESTREASON_1f67a68888b9::from_int(24)
+}
+
+///|
+pub fn POWERMONITORREQUESTREASON_1f67a68888b9::monitor_request_reason_resume_s4() -> POWERMONITORREQUESTREASON_1f67a68888b9 {
+  POWERMONITORREQUESTREASON_1f67a68888b9::from_int(25)
+}
+
+///|
+pub fn POWERMONITORREQUESTREASON_1f67a68888b9::monitor_request_reason_sc_monitorpower() -> POWERMONITORREQUESTREASON_1f67a68888b9 {
+  POWERMONITORREQUESTREASON_1f67a68888b9::from_int(3)
+}
+
+///|
+pub fn POWERMONITORREQUESTREASON_1f67a68888b9::monitor_request_reason_screen_off_request() -> POWERMONITORREQUESTREASON_1f67a68888b9 {
+  POWERMONITORREQUESTREASON_1f67a68888b9::from_int(11)
+}
+
+///|
+pub fn POWERMONITORREQUESTREASON_1f67a68888b9::monitor_request_reason_session_unlock() -> POWERMONITORREQUESTREASON_1f67a68888b9 {
+  POWERMONITORREQUESTREASON_1f67a68888b9::from_int(10)
+}
+
+///|
+pub fn POWERMONITORREQUESTREASON_1f67a68888b9::monitor_request_reason_set_thread_execution_state() -> POWERMONITORREQUESTREASON_1f67a68888b9 {
+  POWERMONITORREQUESTREASON_1f67a68888b9::from_int(8)
+}
+
+///|
+pub fn POWERMONITORREQUESTREASON_1f67a68888b9::monitor_request_reason_sleep_button() -> POWERMONITORREQUESTREASON_1f67a68888b9 {
+  POWERMONITORREQUESTREASON_1f67a68888b9::from_int(14)
+}
+
+///|
+pub fn POWERMONITORREQUESTREASON_1f67a68888b9::monitor_request_reason_smart_restricted_standby() -> POWERMONITORREQUESTREASON_1f67a68888b9 {
+  POWERMONITORREQUESTREASON_1f67a68888b9::from_int(57)
+}
+
+///|
+pub fn POWERMONITORREQUESTREASON_1f67a68888b9::monitor_request_reason_sx_transition() -> POWERMONITORREQUESTREASON_1f67a68888b9 {
+  POWERMONITORREQUESTREASON_1f67a68888b9::from_int(20)
+}
+
+///|
+pub fn POWERMONITORREQUESTREASON_1f67a68888b9::monitor_request_reason_system_idle() -> POWERMONITORREQUESTREASON_1f67a68888b9 {
+  POWERMONITORREQUESTREASON_1f67a68888b9::from_int(21)
+}
+
+///|
+pub fn POWERMONITORREQUESTREASON_1f67a68888b9::monitor_request_reason_system_state_entered() -> POWERMONITORREQUESTREASON_1f67a68888b9 {
+  POWERMONITORREQUESTREASON_1f67a68888b9::from_int(29)
+}
+
+///|
+pub fn POWERMONITORREQUESTREASON_1f67a68888b9::monitor_request_reason_terminal() -> POWERMONITORREQUESTREASON_1f67a68888b9 {
+  POWERMONITORREQUESTREASON_1f67a68888b9::from_int(26)
+}
+
+///|
+pub fn POWERMONITORREQUESTREASON_1f67a68888b9::monitor_request_reason_terminal_init() -> POWERMONITORREQUESTREASON_1f67a68888b9 {
+  POWERMONITORREQUESTREASON_1f67a68888b9::from_int(51)
+}
+
+///|
+pub fn POWERMONITORREQUESTREASON_1f67a68888b9::monitor_request_reason_thermal_standby() -> POWERMONITORREQUESTREASON_1f67a68888b9 {
+  POWERMONITORREQUESTREASON_1f67a68888b9::from_int(23)
+}
+
+///|
+pub fn POWERMONITORREQUESTREASON_1f67a68888b9::monitor_request_reason_unknown() -> POWERMONITORREQUESTREASON_1f67a68888b9 {
+  POWERMONITORREQUESTREASON_1f67a68888b9::from_int(0)
+}
+
+///|
+pub fn POWERMONITORREQUESTREASON_1f67a68888b9::monitor_request_reason_user_display_burst() -> POWERMONITORREQUESTREASON_1f67a68888b9 {
+  POWERMONITORREQUESTREASON_1f67a68888b9::from_int(6)
+}
+
+///|
+pub fn POWERMONITORREQUESTREASON_1f67a68888b9::monitor_request_reason_user_input() -> POWERMONITORREQUESTREASON_1f67a68888b9 {
+  POWERMONITORREQUESTREASON_1f67a68888b9::from_int(4)
+}
+
+///|
+pub fn POWERMONITORREQUESTREASON_1f67a68888b9::monitor_request_reason_user_input_accelerometer() -> POWERMONITORREQUESTREASON_1f67a68888b9 {
+  POWERMONITORREQUESTREASON_1f67a68888b9::from_int(35)
+}
+
+///|
+pub fn POWERMONITORREQUESTREASON_1f67a68888b9::monitor_request_reason_user_input_hid() -> POWERMONITORREQUESTREASON_1f67a68888b9 {
+  POWERMONITORREQUESTREASON_1f67a68888b9::from_int(36)
+}
+
+///|
+pub fn POWERMONITORREQUESTREASON_1f67a68888b9::monitor_request_reason_user_input_initialization() -> POWERMONITORREQUESTREASON_1f67a68888b9 {
+  POWERMONITORREQUESTREASON_1f67a68888b9::from_int(39)
+}
+
+///|
+pub fn POWERMONITORREQUESTREASON_1f67a68888b9::monitor_request_reason_user_input_keyboard() -> POWERMONITORREQUESTREASON_1f67a68888b9 {
+  POWERMONITORREQUESTREASON_1f67a68888b9::from_int(31)
+}
+
+///|
+pub fn POWERMONITORREQUESTREASON_1f67a68888b9::monitor_request_reason_user_input_mouse() -> POWERMONITORREQUESTREASON_1f67a68888b9 {
+  POWERMONITORREQUESTREASON_1f67a68888b9::from_int(32)
+}
+
+///|
+pub fn POWERMONITORREQUESTREASON_1f67a68888b9::monitor_request_reason_user_input_pen() -> POWERMONITORREQUESTREASON_1f67a68888b9 {
+  POWERMONITORREQUESTREASON_1f67a68888b9::from_int(34)
+}
+
+///|
+pub fn POWERMONITORREQUESTREASON_1f67a68888b9::monitor_request_reason_user_input_po_user_present() -> POWERMONITORREQUESTREASON_1f67a68888b9 {
+  POWERMONITORREQUESTREASON_1f67a68888b9::from_int(37)
+}
+
+///|
+pub fn POWERMONITORREQUESTREASON_1f67a68888b9::monitor_request_reason_user_input_session_switch() -> POWERMONITORREQUESTREASON_1f67a68888b9 {
+  POWERMONITORREQUESTREASON_1f67a68888b9::from_int(38)
+}
+
+///|
+pub fn POWERMONITORREQUESTREASON_1f67a68888b9::monitor_request_reason_user_input_touch() -> POWERMONITORREQUESTREASON_1f67a68888b9 {
+  POWERMONITORREQUESTREASON_1f67a68888b9::from_int(54)
+}
+
+///|
+pub fn POWERMONITORREQUESTREASON_1f67a68888b9::monitor_request_reason_user_input_touchpad() -> POWERMONITORREQUESTREASON_1f67a68888b9 {
+  POWERMONITORREQUESTREASON_1f67a68888b9::from_int(33)
+}
+
+///|
+pub fn POWERMONITORREQUESTREASON_1f67a68888b9::monitor_request_reason_winrt() -> POWERMONITORREQUESTREASON_1f67a68888b9 {
+  POWERMONITORREQUESTREASON_1f67a68888b9::from_int(30)
+}
+
+///|
+pub fn POWERMONITORREQUESTTYPE_237b66a4bf72::monitor_request_type_off() -> POWERMONITORREQUESTTYPE_237b66a4bf72 {
+  POWERMONITORREQUESTTYPE_237b66a4bf72::from_int(0)
+}
+
+///|
+pub fn POWERMONITORREQUESTTYPE_237b66a4bf72::monitor_request_type_on_and_present() -> POWERMONITORREQUESTTYPE_237b66a4bf72 {
+  POWERMONITORREQUESTTYPE_237b66a4bf72::from_int(1)
+}
+
+///|
+pub fn POWERMONITORREQUESTTYPE_237b66a4bf72::monitor_request_type_toggle_on() -> POWERMONITORREQUESTTYPE_237b66a4bf72 {
+  POWERMONITORREQUESTTYPE_237b66a4bf72::from_int(2)
+}
+
+///|
+pub fn POWERPLATFORMROLE_bb8a95dc5a62::platform_role_appliance_pc() -> POWERPLATFORMROLE_bb8a95dc5a62 {
+  POWERPLATFORMROLE_bb8a95dc5a62::from_int(6)
+}
+
+///|
+pub fn POWERPLATFORMROLE_bb8a95dc5a62::platform_role_desktop() -> POWERPLATFORMROLE_bb8a95dc5a62 {
+  POWERPLATFORMROLE_bb8a95dc5a62::from_int(1)
+}
+
+///|
+pub fn POWERPLATFORMROLE_bb8a95dc5a62::platform_role_enterprise_server() -> POWERPLATFORMROLE_bb8a95dc5a62 {
+  POWERPLATFORMROLE_bb8a95dc5a62::from_int(4)
+}
+
+///|
+pub fn POWERPLATFORMROLE_bb8a95dc5a62::platform_role_maximum() -> POWERPLATFORMROLE_bb8a95dc5a62 {
+  POWERPLATFORMROLE_bb8a95dc5a62::from_int(9)
+}
+
+///|
+pub fn POWERPLATFORMROLE_bb8a95dc5a62::platform_role_mobile() -> POWERPLATFORMROLE_bb8a95dc5a62 {
+  POWERPLATFORMROLE_bb8a95dc5a62::from_int(2)
+}
+
+///|
+pub fn POWERPLATFORMROLE_bb8a95dc5a62::platform_role_performance_server() -> POWERPLATFORMROLE_bb8a95dc5a62 {
+  POWERPLATFORMROLE_bb8a95dc5a62::from_int(7)
+}
+
+///|
+pub fn POWERPLATFORMROLE_bb8a95dc5a62::platform_role_soho_server() -> POWERPLATFORMROLE_bb8a95dc5a62 {
+  POWERPLATFORMROLE_bb8a95dc5a62::from_int(5)
+}
+
+///|
+pub fn POWERPLATFORMROLE_bb8a95dc5a62::platform_role_slate() -> POWERPLATFORMROLE_bb8a95dc5a62 {
+  POWERPLATFORMROLE_bb8a95dc5a62::from_int(8)
+}
+
+///|
+pub fn POWERPLATFORMROLE_bb8a95dc5a62::platform_role_unspecified() -> POWERPLATFORMROLE_bb8a95dc5a62 {
+  POWERPLATFORMROLE_bb8a95dc5a62::from_int(0)
+}
+
+///|
+pub fn POWERPLATFORMROLE_bb8a95dc5a62::platform_role_workstation() -> POWERPLATFORMROLE_bb8a95dc5a62 {
+  POWERPLATFORMROLE_bb8a95dc5a62::from_int(3)
+}
+
+///|
+pub fn POWERPLATFORMROLEVERSION_f86fa009fa64::power_platform_role_v1() -> POWERPLATFORMROLEVERSION_f86fa009fa64 {
+  POWERPLATFORMROLEVERSION_f86fa009fa64::from_int(1U.reinterpret_as_int())
+}
+
+///|
+pub fn POWERPLATFORMROLEVERSION_f86fa009fa64::power_platform_role_v2() -> POWERPLATFORMROLEVERSION_f86fa009fa64 {
+  POWERPLATFORMROLEVERSION_f86fa009fa64::from_int(2U.reinterpret_as_int())
+}
+
+///|
+pub fn POWERREQUESTTYPE_cf7c253ec97b::power_request_away_mode_required() -> POWERREQUESTTYPE_cf7c253ec97b {
+  POWERREQUESTTYPE_cf7c253ec97b::from_int(2)
+}
+
+///|
+pub fn POWERREQUESTTYPE_cf7c253ec97b::power_request_display_required() -> POWERREQUESTTYPE_cf7c253ec97b {
+  POWERREQUESTTYPE_cf7c253ec97b::from_int(0)
+}
+
+///|
+pub fn POWERREQUESTTYPE_cf7c253ec97b::power_request_execution_required() -> POWERREQUESTTYPE_cf7c253ec97b {
+  POWERREQUESTTYPE_cf7c253ec97b::from_int(3)
+}
+
+///|
+pub fn POWERREQUESTTYPE_cf7c253ec97b::power_request_system_required() -> POWERREQUESTTYPE_cf7c253ec97b {
+  POWERREQUESTTYPE_cf7c253ec97b::from_int(1)
+}
+
+///|
+pub fn POWERSETTINGALTITUDE_74a9b4c74231::altitude_group_policy() -> POWERSETTINGALTITUDE_74a9b4c74231 {
+  POWERSETTINGALTITUDE_74a9b4c74231::from_int(0)
+}
+
+///|
+pub fn POWERSETTINGALTITUDE_74a9b4c74231::altitude_internal_override() -> POWERSETTINGALTITUDE_74a9b4c74231 {
+  POWERSETTINGALTITUDE_74a9b4c74231::from_int(5)
+}
+
+///|
+pub fn POWERSETTINGALTITUDE_74a9b4c74231::altitude_oem_customization() -> POWERSETTINGALTITUDE_74a9b4c74231 {
+  POWERSETTINGALTITUDE_74a9b4c74231::from_int(4)
+}
+
+///|
+pub fn POWERSETTINGALTITUDE_74a9b4c74231::altitude_os_default() -> POWERSETTINGALTITUDE_74a9b4c74231 {
+  POWERSETTINGALTITUDE_74a9b4c74231::from_int(6)
+}
+
+///|
+pub fn POWERSETTINGALTITUDE_74a9b4c74231::altitude_provisioning() -> POWERSETTINGALTITUDE_74a9b4c74231 {
+  POWERSETTINGALTITUDE_74a9b4c74231::from_int(3)
+}
+
+///|
+pub fn POWERSETTINGALTITUDE_74a9b4c74231::altitude_runtime_override() -> POWERSETTINGALTITUDE_74a9b4c74231 {
+  POWERSETTINGALTITUDE_74a9b4c74231::from_int(2)
+}
+
+///|
+pub fn POWERSETTINGALTITUDE_74a9b4c74231::altitude_user() -> POWERSETTINGALTITUDE_74a9b4c74231 {
+  POWERSETTINGALTITUDE_74a9b4c74231::from_int(1)
+}
+
+///|
+pub fn POWERUSERPRESENCETYPE_4ae573d73d84::user_not_present() -> POWERUSERPRESENCETYPE_4ae573d73d84 {
+  POWERUSERPRESENCETYPE_4ae573d73d84::from_int(0)
+}
+
+///|
+pub fn POWERUSERPRESENCETYPE_4ae573d73d84::user_present() -> POWERUSERPRESENCETYPE_4ae573d73d84 {
+  POWERUSERPRESENCETYPE_4ae573d73d84::from_int(1)
+}
+
+///|
+pub fn POWERUSERPRESENCETYPE_4ae573d73d84::user_unknown() -> POWERUSERPRESENCETYPE_4ae573d73d84 {
+  POWERUSERPRESENCETYPE_4ae573d73d84::from_int(255)
+}
+
+///|
+pub fn SYSTEMPOWERCONDITION_6d8342fcecec::po_ac() -> SYSTEMPOWERCONDITION_6d8342fcecec {
+  SYSTEMPOWERCONDITION_6d8342fcecec::from_int(0)
+}
+
+///|
+pub fn SYSTEMPOWERCONDITION_6d8342fcecec::po_condition_maximum() -> SYSTEMPOWERCONDITION_6d8342fcecec {
+  SYSTEMPOWERCONDITION_6d8342fcecec::from_int(3)
+}
+
+///|
+pub fn SYSTEMPOWERCONDITION_6d8342fcecec::po_dc() -> SYSTEMPOWERCONDITION_6d8342fcecec {
+  SYSTEMPOWERCONDITION_6d8342fcecec::from_int(1)
+}
+
+///|
+pub fn SYSTEMPOWERCONDITION_6d8342fcecec::po_hot() -> SYSTEMPOWERCONDITION_6d8342fcecec {
+  SYSTEMPOWERCONDITION_6d8342fcecec::from_int(2)
+}
+
+///|
+pub fn SYSTEMPOWERSTATE_d96696e7c685::power_system_hibernate() -> SYSTEMPOWERSTATE_d96696e7c685 {
+  SYSTEMPOWERSTATE_d96696e7c685::from_int(5)
+}
+
+///|
+pub fn SYSTEMPOWERSTATE_d96696e7c685::power_system_maximum() -> SYSTEMPOWERSTATE_d96696e7c685 {
+  SYSTEMPOWERSTATE_d96696e7c685::from_int(7)
+}
+
+///|
+pub fn SYSTEMPOWERSTATE_d96696e7c685::power_system_shutdown() -> SYSTEMPOWERSTATE_d96696e7c685 {
+  SYSTEMPOWERSTATE_d96696e7c685::from_int(6)
+}
+
+///|
+pub fn SYSTEMPOWERSTATE_d96696e7c685::power_system_sleeping1() -> SYSTEMPOWERSTATE_d96696e7c685 {
+  SYSTEMPOWERSTATE_d96696e7c685::from_int(2)
+}
+
+///|
+pub fn SYSTEMPOWERSTATE_d96696e7c685::power_system_sleeping2() -> SYSTEMPOWERSTATE_d96696e7c685 {
+  SYSTEMPOWERSTATE_d96696e7c685::from_int(3)
+}
+
+///|
+pub fn SYSTEMPOWERSTATE_d96696e7c685::power_system_sleeping3() -> SYSTEMPOWERSTATE_d96696e7c685 {
+  SYSTEMPOWERSTATE_d96696e7c685::from_int(4)
+}
+
+///|
+pub fn SYSTEMPOWERSTATE_d96696e7c685::power_system_unspecified() -> SYSTEMPOWERSTATE_d96696e7c685 {
+  SYSTEMPOWERSTATE_d96696e7c685::from_int(0)
+}
+
+///|
+pub fn SYSTEMPOWERSTATE_d96696e7c685::power_system_working() -> SYSTEMPOWERSTATE_d96696e7c685 {
+  SYSTEMPOWERSTATE_d96696e7c685::from_int(1)
+}
+
+///|
+pub fn USBCHARGERPORT_d3facbfcca81::legacy() -> USBCHARGERPORT_d3facbfcca81 {
+  USBCHARGERPORT_d3facbfcca81::from_int(0)
+}
+
+///|
+pub fn USBCHARGERPORT_d3facbfcca81::max() -> USBCHARGERPORT_d3facbfcca81 {
+  USBCHARGERPORT_d3facbfcca81::from_int(2)
+}
+
+///|
+pub fn USBCHARGERPORT_d3facbfcca81::type_c() -> USBCHARGERPORT_d3facbfcca81 {
+  USBCHARGERPORT_d3facbfcca81::from_int(1)
+}
+
+///|
+pub fn USERACTIVITYPRESENCE_9641dc94e87c::power_user_inactive() -> USERACTIVITYPRESENCE_9641dc94e87c {
+  USERACTIVITYPRESENCE_9641dc94e87c::from_int(2)
+}
+
+///|
+pub fn USERACTIVITYPRESENCE_9641dc94e87c::power_user_invalid() -> USERACTIVITYPRESENCE_9641dc94e87c {
+  USERACTIVITYPRESENCE_9641dc94e87c::from_int(3)
+}
+
+///|
+pub fn USERACTIVITYPRESENCE_9641dc94e87c::power_user_maximum() -> USERACTIVITYPRESENCE_9641dc94e87c {
+  USERACTIVITYPRESENCE_9641dc94e87c::from_int(3)
+}
+
+///|
+pub fn USERACTIVITYPRESENCE_9641dc94e87c::power_user_not_present() -> USERACTIVITYPRESENCE_9641dc94e87c {
+  USERACTIVITYPRESENCE_9641dc94e87c::from_int(1)
+}
+
+///|
+pub fn USERACTIVITYPRESENCE_9641dc94e87c::power_user_present() -> USERACTIVITYPRESENCE_9641dc94e87c {
+  USERACTIVITYPRESENCE_9641dc94e87c::from_int(0)
+}
+
+///|
+pub fn ACCESSREASONTYPE_f300d0607805::access_reason_allowed_ace() -> ACCESSREASONTYPE_f300d0607805 {
+  ACCESSREASONTYPE_f300d0607805::from_int(65536)
+}
+
+///|
+pub fn ACCESSREASONTYPE_f300d0607805::access_reason_allowed_parent_ace() -> ACCESSREASONTYPE_f300d0607805 {
+  ACCESSREASONTYPE_f300d0607805::from_int(196608)
+}
+
+///|
+pub fn ACCESSREASONTYPE_f300d0607805::access_reason_denied_ace() -> ACCESSREASONTYPE_f300d0607805 {
+  ACCESSREASONTYPE_f300d0607805::from_int(131072)
+}
+
+///|
+pub fn ACCESSREASONTYPE_f300d0607805::access_reason_denied_parent_ace() -> ACCESSREASONTYPE_f300d0607805 {
+  ACCESSREASONTYPE_f300d0607805::from_int(262144)
+}
+
+///|
+pub fn ACCESSREASONTYPE_f300d0607805::access_reason_empty_dacl() -> ACCESSREASONTYPE_f300d0607805 {
+  ACCESSREASONTYPE_f300d0607805::from_int(6291456)
+}
+
+///|
+pub fn ACCESSREASONTYPE_f300d0607805::access_reason_filter_ace() -> ACCESSREASONTYPE_f300d0607805 {
+  ACCESSREASONTYPE_f300d0607805::from_int(10485760)
+}
+
+///|
+pub fn ACCESSREASONTYPE_f300d0607805::access_reason_from_privilege() -> ACCESSREASONTYPE_f300d0607805 {
+  ACCESSREASONTYPE_f300d0607805::from_int(2097152)
+}
+
+///|
+pub fn ACCESSREASONTYPE_f300d0607805::access_reason_integrity_level() -> ACCESSREASONTYPE_f300d0607805 {
+  ACCESSREASONTYPE_f300d0607805::from_int(3145728)
+}
+
+///|
+pub fn ACCESSREASONTYPE_f300d0607805::access_reason_missing_privilege() -> ACCESSREASONTYPE_f300d0607805 {
+  ACCESSREASONTYPE_f300d0607805::from_int(1048576)
+}
+
+///|
+pub fn ACCESSREASONTYPE_f300d0607805::access_reason_no_grant() -> ACCESSREASONTYPE_f300d0607805 {
+  ACCESSREASONTYPE_f300d0607805::from_int(8388608)
+}
+
+///|
+pub fn ACCESSREASONTYPE_f300d0607805::access_reason_no_sd() -> ACCESSREASONTYPE_f300d0607805 {
+  ACCESSREASONTYPE_f300d0607805::from_int(7340032)
+}
+
+///|
+pub fn ACCESSREASONTYPE_f300d0607805::access_reason_none() -> ACCESSREASONTYPE_f300d0607805 {
+  ACCESSREASONTYPE_f300d0607805::from_int(0)
+}
+
+///|
+pub fn ACCESSREASONTYPE_f300d0607805::access_reason_not_granted_by_cape() -> ACCESSREASONTYPE_f300d0607805 {
+  ACCESSREASONTYPE_f300d0607805::from_int(327680)
+}
+
+///|
+pub fn ACCESSREASONTYPE_f300d0607805::access_reason_not_granted_by_parent_cape() -> ACCESSREASONTYPE_f300d0607805 {
+  ACCESSREASONTYPE_f300d0607805::from_int(393216)
+}
+
+///|
+pub fn ACCESSREASONTYPE_f300d0607805::access_reason_not_granted_to_app_container() -> ACCESSREASONTYPE_f300d0607805 {
+  ACCESSREASONTYPE_f300d0607805::from_int(458752)
+}
+
+///|
+pub fn ACCESSREASONTYPE_f300d0607805::access_reason_null_dacl() -> ACCESSREASONTYPE_f300d0607805 {
+  ACCESSREASONTYPE_f300d0607805::from_int(5242880)
+}
+
+///|
+pub fn ACCESSREASONTYPE_f300d0607805::access_reason_ownership() -> ACCESSREASONTYPE_f300d0607805 {
+  ACCESSREASONTYPE_f300d0607805::from_int(4194304)
+}
+
+///|
+pub fn ACCESSREASONTYPE_f300d0607805::access_reason_trust_label() -> ACCESSREASONTYPE_f300d0607805 {
+  ACCESSREASONTYPE_f300d0607805::from_int(9437184)
+}
+
+///|
+pub fn ACTIVATIONCONTEXTINFOCLASS_df3775694a2a::activation_context_basic_information() -> ACTIVATIONCONTEXTINFOCLASS_df3775694a2a {
+  ACTIVATIONCONTEXTINFOCLASS_df3775694a2a::from_int(1)
+}
+
+///|
+pub fn ACTIVATIONCONTEXTINFOCLASS_df3775694a2a::activation_context_detailed_information() -> ACTIVATIONCONTEXTINFOCLASS_df3775694a2a {
+  ACTIVATIONCONTEXTINFOCLASS_df3775694a2a::from_int(2)
+}
+
+///|
+pub fn ACTIVATIONCONTEXTINFOCLASS_df3775694a2a::activation_context_manifest_resource_name() -> ACTIVATIONCONTEXTINFOCLASS_df3775694a2a {
+  ACTIVATIONCONTEXTINFOCLASS_df3775694a2a::from_int(7)
+}
+
+///|
+pub fn ACTIVATIONCONTEXTINFOCLASS_df3775694a2a::assembly_detailed_information_in_activation_context() -> ACTIVATIONCONTEXTINFOCLASS_df3775694a2a {
+  ACTIVATIONCONTEXTINFOCLASS_df3775694a2a::from_int(3)
+}
+
+///|
+pub fn ACTIVATIONCONTEXTINFOCLASS_df3775694a2a::assembly_detailed_information_in_activation_contxt() -> ACTIVATIONCONTEXTINFOCLASS_df3775694a2a {
+  ACTIVATIONCONTEXTINFOCLASS_df3775694a2a::from_int(3)
+}
+
+///|
+pub fn ACTIVATIONCONTEXTINFOCLASS_df3775694a2a::compatibility_information_in_activation_context() -> ACTIVATIONCONTEXTINFOCLASS_df3775694a2a {
+  ACTIVATIONCONTEXTINFOCLASS_df3775694a2a::from_int(6)
+}
+
+///|
+pub fn ACTIVATIONCONTEXTINFOCLASS_df3775694a2a::file_information_in_assembly_of_assembly_in_activation_context() -> ACTIVATIONCONTEXTINFOCLASS_df3775694a2a {
+  ACTIVATIONCONTEXTINFOCLASS_df3775694a2a::from_int(4)
+}
+
+///|
+pub fn ACTIVATIONCONTEXTINFOCLASS_df3775694a2a::file_information_in_assembly_of_assembly_in_activation_contxt() -> ACTIVATIONCONTEXTINFOCLASS_df3775694a2a {
+  ACTIVATIONCONTEXTINFOCLASS_df3775694a2a::from_int(4)
+}
+
+///|
+pub fn ACTIVATIONCONTEXTINFOCLASS_df3775694a2a::max_activation_context_info_class() -> ACTIVATIONCONTEXTINFOCLASS_df3775694a2a {
+  ACTIVATIONCONTEXTINFOCLASS_df3775694a2a::from_int(8)
+}
+
+///|
+pub fn ACTIVATIONCONTEXTINFOCLASS_df3775694a2a::runlevel_information_in_activation_context() -> ACTIVATIONCONTEXTINFOCLASS_df3775694a2a {
+  ACTIVATIONCONTEXTINFOCLASS_df3775694a2a::from_int(5)
+}
+
+///|
+pub fn ALERTSYSTEMSEV_7021a48c6fb1::alert_system_critical() -> ALERTSYSTEMSEV_7021a48c6fb1 {
+  ALERTSYSTEMSEV_7021a48c6fb1::from_int(5U.reinterpret_as_int())
+}
+
+///|
+pub fn ALERTSYSTEMSEV_7021a48c6fb1::alert_system_error() -> ALERTSYSTEMSEV_7021a48c6fb1 {
+  ALERTSYSTEMSEV_7021a48c6fb1::from_int(3U.reinterpret_as_int())
+}
+
+///|
+pub fn ALERTSYSTEMSEV_7021a48c6fb1::alert_system_informational() -> ALERTSYSTEMSEV_7021a48c6fb1 {
+  ALERTSYSTEMSEV_7021a48c6fb1::from_int(1U.reinterpret_as_int())
+}
+
+///|
+pub fn ALERTSYSTEMSEV_7021a48c6fb1::alert_system_query() -> ALERTSYSTEMSEV_7021a48c6fb1 {
+  ALERTSYSTEMSEV_7021a48c6fb1::from_int(4U.reinterpret_as_int())
+}
+
+///|
+pub fn ALERTSYSTEMSEV_7021a48c6fb1::alert_system_warning() -> ALERTSYSTEMSEV_7021a48c6fb1 {
+  ALERTSYSTEMSEV_7021a48c6fb1::from_int(2U.reinterpret_as_int())
+}
+
+///|
+pub fn APPCOMMANDID_4cabe53d5bf2::appcommand_bass_boost() -> APPCOMMANDID_4cabe53d5bf2 {
+  APPCOMMANDID_4cabe53d5bf2::from_int(20U.reinterpret_as_int())
+}
+
+///|
+pub fn APPCOMMANDID_4cabe53d5bf2::appcommand_bass_down() -> APPCOMMANDID_4cabe53d5bf2 {
+  APPCOMMANDID_4cabe53d5bf2::from_int(19U.reinterpret_as_int())
+}
+
+///|
+pub fn APPCOMMANDID_4cabe53d5bf2::appcommand_bass_up() -> APPCOMMANDID_4cabe53d5bf2 {
+  APPCOMMANDID_4cabe53d5bf2::from_int(21U.reinterpret_as_int())
+}
+
+///|
+pub fn APPCOMMANDID_4cabe53d5bf2::appcommand_browser_backward() -> APPCOMMANDID_4cabe53d5bf2 {
+  APPCOMMANDID_4cabe53d5bf2::from_int(1U.reinterpret_as_int())
+}
+
+///|
+pub fn APPCOMMANDID_4cabe53d5bf2::appcommand_browser_favorites() -> APPCOMMANDID_4cabe53d5bf2 {
+  APPCOMMANDID_4cabe53d5bf2::from_int(6U.reinterpret_as_int())
+}
+
+///|
+pub fn APPCOMMANDID_4cabe53d5bf2::appcommand_browser_forward() -> APPCOMMANDID_4cabe53d5bf2 {
+  APPCOMMANDID_4cabe53d5bf2::from_int(2U.reinterpret_as_int())
+}
+
+///|
+pub fn APPCOMMANDID_4cabe53d5bf2::appcommand_browser_home() -> APPCOMMANDID_4cabe53d5bf2 {
+  APPCOMMANDID_4cabe53d5bf2::from_int(7U.reinterpret_as_int())
+}
+
+///|
+pub fn APPCOMMANDID_4cabe53d5bf2::appcommand_browser_refresh() -> APPCOMMANDID_4cabe53d5bf2 {
+  APPCOMMANDID_4cabe53d5bf2::from_int(3U.reinterpret_as_int())
+}
+
+///|
+pub fn APPCOMMANDID_4cabe53d5bf2::appcommand_browser_search() -> APPCOMMANDID_4cabe53d5bf2 {
+  APPCOMMANDID_4cabe53d5bf2::from_int(5U.reinterpret_as_int())
+}
+
+///|
+pub fn APPCOMMANDID_4cabe53d5bf2::appcommand_browser_stop() -> APPCOMMANDID_4cabe53d5bf2 {
+  APPCOMMANDID_4cabe53d5bf2::from_int(4U.reinterpret_as_int())
+}
+
+///|
+pub fn APPCOMMANDID_4cabe53d5bf2::appcommand_close() -> APPCOMMANDID_4cabe53d5bf2 {
+  APPCOMMANDID_4cabe53d5bf2::from_int(31U.reinterpret_as_int())
+}
+
+///|
+pub fn APPCOMMANDID_4cabe53d5bf2::appcommand_copy() -> APPCOMMANDID_4cabe53d5bf2 {
+  APPCOMMANDID_4cabe53d5bf2::from_int(36U.reinterpret_as_int())
+}
+
+///|
+pub fn APPCOMMANDID_4cabe53d5bf2::appcommand_correction_list() -> APPCOMMANDID_4cabe53d5bf2 {
+  APPCOMMANDID_4cabe53d5bf2::from_int(45U.reinterpret_as_int())
+}
+
+///|
+pub fn APPCOMMANDID_4cabe53d5bf2::appcommand_cut() -> APPCOMMANDID_4cabe53d5bf2 {
+  APPCOMMANDID_4cabe53d5bf2::from_int(37U.reinterpret_as_int())
+}
+
+///|
+pub fn APPCOMMANDID_4cabe53d5bf2::appcommand_delete() -> APPCOMMANDID_4cabe53d5bf2 {
+  APPCOMMANDID_4cabe53d5bf2::from_int(53U.reinterpret_as_int())
+}
+
+///|
+pub fn APPCOMMANDID_4cabe53d5bf2::appcommand_dictate_or_command_control_toggle() -> APPCOMMANDID_4cabe53d5bf2 {
+  APPCOMMANDID_4cabe53d5bf2::from_int(43U.reinterpret_as_int())
+}
+
+///|
+pub fn APPCOMMANDID_4cabe53d5bf2::appcommand_dwm_flip3_d() -> APPCOMMANDID_4cabe53d5bf2 {
+  APPCOMMANDID_4cabe53d5bf2::from_int(54U.reinterpret_as_int())
+}
+
+///|
+pub fn APPCOMMANDID_4cabe53d5bf2::appcommand_find() -> APPCOMMANDID_4cabe53d5bf2 {
+  APPCOMMANDID_4cabe53d5bf2::from_int(28U.reinterpret_as_int())
+}
+
+///|
+pub fn APPCOMMANDID_4cabe53d5bf2::appcommand_forward_mail() -> APPCOMMANDID_4cabe53d5bf2 {
+  APPCOMMANDID_4cabe53d5bf2::from_int(40U.reinterpret_as_int())
+}
+
+///|
+pub fn APPCOMMANDID_4cabe53d5bf2::appcommand_help() -> APPCOMMANDID_4cabe53d5bf2 {
+  APPCOMMANDID_4cabe53d5bf2::from_int(27U.reinterpret_as_int())
+}
+
+///|
+pub fn APPCOMMANDID_4cabe53d5bf2::appcommand_launch_app1() -> APPCOMMANDID_4cabe53d5bf2 {
+  APPCOMMANDID_4cabe53d5bf2::from_int(17U.reinterpret_as_int())
+}
+
+///|
+pub fn APPCOMMANDID_4cabe53d5bf2::appcommand_launch_app2() -> APPCOMMANDID_4cabe53d5bf2 {
+  APPCOMMANDID_4cabe53d5bf2::from_int(18U.reinterpret_as_int())
+}
+
+///|
+pub fn APPCOMMANDID_4cabe53d5bf2::appcommand_launch_mail() -> APPCOMMANDID_4cabe53d5bf2 {
+  APPCOMMANDID_4cabe53d5bf2::from_int(15U.reinterpret_as_int())
+}
+
+///|
+pub fn APPCOMMANDID_4cabe53d5bf2::appcommand_launch_media_select() -> APPCOMMANDID_4cabe53d5bf2 {
+  APPCOMMANDID_4cabe53d5bf2::from_int(16U.reinterpret_as_int())
+}
+
+///|
+pub fn APPCOMMANDID_4cabe53d5bf2::appcommand_media_channel_down() -> APPCOMMANDID_4cabe53d5bf2 {
+  APPCOMMANDID_4cabe53d5bf2::from_int(52U.reinterpret_as_int())
+}
+
+///|
+pub fn APPCOMMANDID_4cabe53d5bf2::appcommand_media_channel_up() -> APPCOMMANDID_4cabe53d5bf2 {
+  APPCOMMANDID_4cabe53d5bf2::from_int(51U.reinterpret_as_int())
+}
+
+///|
+pub fn APPCOMMANDID_4cabe53d5bf2::appcommand_media_fast_forward() -> APPCOMMANDID_4cabe53d5bf2 {
+  APPCOMMANDID_4cabe53d5bf2::from_int(49U.reinterpret_as_int())
+}
+
+///|
+pub fn APPCOMMANDID_4cabe53d5bf2::appcommand_media_nexttrack() -> APPCOMMANDID_4cabe53d5bf2 {
+  APPCOMMANDID_4cabe53d5bf2::from_int(11U.reinterpret_as_int())
+}
+
+///|
+pub fn APPCOMMANDID_4cabe53d5bf2::appcommand_media_pause() -> APPCOMMANDID_4cabe53d5bf2 {
+  APPCOMMANDID_4cabe53d5bf2::from_int(47U.reinterpret_as_int())
+}
+
+///|
+pub fn APPCOMMANDID_4cabe53d5bf2::appcommand_media_play() -> APPCOMMANDID_4cabe53d5bf2 {
+  APPCOMMANDID_4cabe53d5bf2::from_int(46U.reinterpret_as_int())
+}
+
+///|
+pub fn APPCOMMANDID_4cabe53d5bf2::appcommand_media_play_pause() -> APPCOMMANDID_4cabe53d5bf2 {
+  APPCOMMANDID_4cabe53d5bf2::from_int(14U.reinterpret_as_int())
+}
+
+///|
+pub fn APPCOMMANDID_4cabe53d5bf2::appcommand_media_previoustrack() -> APPCOMMANDID_4cabe53d5bf2 {
+  APPCOMMANDID_4cabe53d5bf2::from_int(12U.reinterpret_as_int())
+}
+
+///|
+pub fn APPCOMMANDID_4cabe53d5bf2::appcommand_media_record() -> APPCOMMANDID_4cabe53d5bf2 {
+  APPCOMMANDID_4cabe53d5bf2::from_int(48U.reinterpret_as_int())
+}
+
+///|
+pub fn APPCOMMANDID_4cabe53d5bf2::appcommand_media_rewind() -> APPCOMMANDID_4cabe53d5bf2 {
+  APPCOMMANDID_4cabe53d5bf2::from_int(50U.reinterpret_as_int())
+}
+
+///|
+pub fn APPCOMMANDID_4cabe53d5bf2::appcommand_media_stop() -> APPCOMMANDID_4cabe53d5bf2 {
+  APPCOMMANDID_4cabe53d5bf2::from_int(13U.reinterpret_as_int())
+}
+
+///|
+pub fn APPCOMMANDID_4cabe53d5bf2::appcommand_microphone_volume_down() -> APPCOMMANDID_4cabe53d5bf2 {
+  APPCOMMANDID_4cabe53d5bf2::from_int(25U.reinterpret_as_int())
+}
+
+///|
+pub fn APPCOMMANDID_4cabe53d5bf2::appcommand_microphone_volume_mute() -> APPCOMMANDID_4cabe53d5bf2 {
+  APPCOMMANDID_4cabe53d5bf2::from_int(24U.reinterpret_as_int())
+}
+
+///|
+pub fn APPCOMMANDID_4cabe53d5bf2::appcommand_microphone_volume_up() -> APPCOMMANDID_4cabe53d5bf2 {
+  APPCOMMANDID_4cabe53d5bf2::from_int(26U.reinterpret_as_int())
+}
+
+///|
+pub fn APPCOMMANDID_4cabe53d5bf2::appcommand_mic_on_off_toggle() -> APPCOMMANDID_4cabe53d5bf2 {
+  APPCOMMANDID_4cabe53d5bf2::from_int(44U.reinterpret_as_int())
+}
+
+///|
+pub fn APPCOMMANDID_4cabe53d5bf2::appcommand_new() -> APPCOMMANDID_4cabe53d5bf2 {
+  APPCOMMANDID_4cabe53d5bf2::from_int(29U.reinterpret_as_int())
+}
+
+///|
+pub fn APPCOMMANDID_4cabe53d5bf2::appcommand_open() -> APPCOMMANDID_4cabe53d5bf2 {
+  APPCOMMANDID_4cabe53d5bf2::from_int(30U.reinterpret_as_int())
+}
+
+///|
+pub fn APPCOMMANDID_4cabe53d5bf2::appcommand_paste() -> APPCOMMANDID_4cabe53d5bf2 {
+  APPCOMMANDID_4cabe53d5bf2::from_int(38U.reinterpret_as_int())
+}
+
+///|
+pub fn APPCOMMANDID_4cabe53d5bf2::appcommand_print() -> APPCOMMANDID_4cabe53d5bf2 {
+  APPCOMMANDID_4cabe53d5bf2::from_int(33U.reinterpret_as_int())
+}
+
+///|
+pub fn APPCOMMANDID_4cabe53d5bf2::appcommand_redo() -> APPCOMMANDID_4cabe53d5bf2 {
+  APPCOMMANDID_4cabe53d5bf2::from_int(35U.reinterpret_as_int())
+}
+
+///|
+pub fn APPCOMMANDID_4cabe53d5bf2::appcommand_reply_to_mail() -> APPCOMMANDID_4cabe53d5bf2 {
+  APPCOMMANDID_4cabe53d5bf2::from_int(39U.reinterpret_as_int())
+}
+
+///|
+pub fn APPCOMMANDID_4cabe53d5bf2::appcommand_save() -> APPCOMMANDID_4cabe53d5bf2 {
+  APPCOMMANDID_4cabe53d5bf2::from_int(32U.reinterpret_as_int())
+}
+
+///|
+pub fn APPCOMMANDID_4cabe53d5bf2::appcommand_send_mail() -> APPCOMMANDID_4cabe53d5bf2 {
+  APPCOMMANDID_4cabe53d5bf2::from_int(41U.reinterpret_as_int())
+}
+
+///|
+pub fn APPCOMMANDID_4cabe53d5bf2::appcommand_spell_check() -> APPCOMMANDID_4cabe53d5bf2 {
+  APPCOMMANDID_4cabe53d5bf2::from_int(42U.reinterpret_as_int())
+}
+
+///|
+pub fn APPCOMMANDID_4cabe53d5bf2::appcommand_treble_down() -> APPCOMMANDID_4cabe53d5bf2 {
+  APPCOMMANDID_4cabe53d5bf2::from_int(22U.reinterpret_as_int())
+}
+
+///|
+pub fn APPCOMMANDID_4cabe53d5bf2::appcommand_treble_up() -> APPCOMMANDID_4cabe53d5bf2 {
+  APPCOMMANDID_4cabe53d5bf2::from_int(23U.reinterpret_as_int())
+}
+
+///|
+pub fn APPCOMMANDID_4cabe53d5bf2::appcommand_undo() -> APPCOMMANDID_4cabe53d5bf2 {
+  APPCOMMANDID_4cabe53d5bf2::from_int(34U.reinterpret_as_int())
+}
+
+///|
+pub fn APPCOMMANDID_4cabe53d5bf2::appcommand_volume_down() -> APPCOMMANDID_4cabe53d5bf2 {
+  APPCOMMANDID_4cabe53d5bf2::from_int(9U.reinterpret_as_int())
+}
+
+///|
+pub fn APPCOMMANDID_4cabe53d5bf2::appcommand_volume_mute() -> APPCOMMANDID_4cabe53d5bf2 {
+  APPCOMMANDID_4cabe53d5bf2::from_int(8U.reinterpret_as_int())
+}
+
+///|
+pub fn APPCOMMANDID_4cabe53d5bf2::appcommand_volume_up() -> APPCOMMANDID_4cabe53d5bf2 {
+  APPCOMMANDID_4cabe53d5bf2::from_int(10U.reinterpret_as_int())
+}
+
+///|
+pub fn ARM64FNPDATACR_93a2817b9efc::pdata_cr_chained() -> ARM64FNPDATACR_93a2817b9efc {
+  ARM64FNPDATACR_93a2817b9efc::from_int(3)
+}
+
+///|
+pub fn ARM64FNPDATACR_93a2817b9efc::pdata_cr_chained_with_pac() -> ARM64FNPDATACR_93a2817b9efc {
+  ARM64FNPDATACR_93a2817b9efc::from_int(2)
+}
+
+///|
+pub fn ARM64FNPDATACR_93a2817b9efc::pdata_cr_unchained() -> ARM64FNPDATACR_93a2817b9efc {
+  ARM64FNPDATACR_93a2817b9efc::from_int(0)
+}
+
+///|
+pub fn ARM64FNPDATACR_93a2817b9efc::pdata_cr_unchained_saved_lr() -> ARM64FNPDATACR_93a2817b9efc {
+  ARM64FNPDATACR_93a2817b9efc::from_int(1)
+}
+
+///|
+pub fn ARM64FNPDATAFLAGS_1f6c7d206006::pdata_packed_unwind_fragment() -> ARM64FNPDATAFLAGS_1f6c7d206006 {
+  ARM64FNPDATAFLAGS_1f6c7d206006::from_int(2)
+}
+
+///|
+pub fn ARM64FNPDATAFLAGS_1f6c7d206006::pdata_packed_unwind_function() -> ARM64FNPDATAFLAGS_1f6c7d206006 {
+  ARM64FNPDATAFLAGS_1f6c7d206006::from_int(1)
+}
+
+///|
+pub fn ARM64FNPDATAFLAGS_1f6c7d206006::pdata_ref_to_full_xdata() -> ARM64FNPDATAFLAGS_1f6c7d206006 {
+  ARM64FNPDATAFLAGS_1f6c7d206006::from_int(0)
+}
+
+///|
+pub fn ATFFLAGS_be3360c9765b::atf_onofffeedback() -> ATFFLAGS_be3360c9765b {
+  ATFFLAGS_be3360c9765b::from_int(2U.reinterpret_as_int())
+}
+
+///|
+pub fn ATFFLAGS_be3360c9765b::atf_timeouton() -> ATFFLAGS_be3360c9765b {
+  ATFFLAGS_be3360c9765b::from_int(1U.reinterpret_as_int())
+}
+
+///|
+pub fn CFEUNDERLINE_274e26530a84::cfu_cf1_underline() -> CFEUNDERLINE_274e26530a84 {
+  CFEUNDERLINE_274e26530a84::from_int(255U.reinterpret_as_int())
+}
+
+///|
+pub fn CFEUNDERLINE_274e26530a84::cfu_invert() -> CFEUNDERLINE_274e26530a84 {
+  CFEUNDERLINE_274e26530a84::from_int(254U.reinterpret_as_int())
+}
+
+///|
+pub fn CFEUNDERLINE_274e26530a84::cfu_underline() -> CFEUNDERLINE_274e26530a84 {
+  CFEUNDERLINE_274e26530a84::from_int(1U.reinterpret_as_int())
+}
+
+///|
+pub fn CFEUNDERLINE_274e26530a84::cfu_underlinedash() -> CFEUNDERLINE_274e26530a84 {
+  CFEUNDERLINE_274e26530a84::from_int(5U.reinterpret_as_int())
+}
+
+///|
+pub fn CFEUNDERLINE_274e26530a84::cfu_underlinedashdot() -> CFEUNDERLINE_274e26530a84 {
+  CFEUNDERLINE_274e26530a84::from_int(6U.reinterpret_as_int())
+}
+
+///|
+pub fn CFEUNDERLINE_274e26530a84::cfu_underlinedashdotdot() -> CFEUNDERLINE_274e26530a84 {
+  CFEUNDERLINE_274e26530a84::from_int(7U.reinterpret_as_int())
+}
+
+///|
+pub fn CFEUNDERLINE_274e26530a84::cfu_underlinedotted() -> CFEUNDERLINE_274e26530a84 {
+  CFEUNDERLINE_274e26530a84::from_int(4U.reinterpret_as_int())
+}
+
+///|
+pub fn CFEUNDERLINE_274e26530a84::cfu_underlinedouble() -> CFEUNDERLINE_274e26530a84 {
+  CFEUNDERLINE_274e26530a84::from_int(3U.reinterpret_as_int())
+}
+
+///|
+pub fn CFEUNDERLINE_274e26530a84::cfu_underlinedoublewave() -> CFEUNDERLINE_274e26530a84 {
+  CFEUNDERLINE_274e26530a84::from_int(11U.reinterpret_as_int())
+}
+
+///|
+pub fn CFEUNDERLINE_274e26530a84::cfu_underlinehairline() -> CFEUNDERLINE_274e26530a84 {
+  CFEUNDERLINE_274e26530a84::from_int(10U.reinterpret_as_int())
+}
+
+///|
+pub fn CFEUNDERLINE_274e26530a84::cfu_underlineheavywave() -> CFEUNDERLINE_274e26530a84 {
+  CFEUNDERLINE_274e26530a84::from_int(12U.reinterpret_as_int())
+}
+
+///|
+pub fn CFEUNDERLINE_274e26530a84::cfu_underlinelongdash() -> CFEUNDERLINE_274e26530a84 {
+  CFEUNDERLINE_274e26530a84::from_int(13U.reinterpret_as_int())
+}
+
+///|
+pub fn CFEUNDERLINE_274e26530a84::cfu_underlinenone() -> CFEUNDERLINE_274e26530a84 {
+  CFEUNDERLINE_274e26530a84::from_int(0U.reinterpret_as_int())
+}
+
+///|
+pub fn CFEUNDERLINE_274e26530a84::cfu_underlinethick() -> CFEUNDERLINE_274e26530a84 {
+  CFEUNDERLINE_274e26530a84::from_int(9U.reinterpret_as_int())
+}
+
+///|
+pub fn CFEUNDERLINE_274e26530a84::cfu_underlinethickdash() -> CFEUNDERLINE_274e26530a84 {
+  CFEUNDERLINE_274e26530a84::from_int(14U.reinterpret_as_int())
+}
+
+///|
+pub fn CFEUNDERLINE_274e26530a84::cfu_underlinethickdashdot() -> CFEUNDERLINE_274e26530a84 {
+  CFEUNDERLINE_274e26530a84::from_int(15U.reinterpret_as_int())
+}
+
+///|
+pub fn CFEUNDERLINE_274e26530a84::cfu_underlinethickdashdotdot() -> CFEUNDERLINE_274e26530a84 {
+  CFEUNDERLINE_274e26530a84::from_int(16U.reinterpret_as_int())
+}
+
+///|
+pub fn CFEUNDERLINE_274e26530a84::cfu_underlinethickdotted() -> CFEUNDERLINE_274e26530a84 {
+  CFEUNDERLINE_274e26530a84::from_int(17U.reinterpret_as_int())
+}
+
+///|
+pub fn CFEUNDERLINE_274e26530a84::cfu_underlinethicklongdash() -> CFEUNDERLINE_274e26530a84 {
+  CFEUNDERLINE_274e26530a84::from_int(18U.reinterpret_as_int())
+}
+
+///|
+pub fn CFEUNDERLINE_274e26530a84::cfu_underlinewave() -> CFEUNDERLINE_274e26530a84 {
+  CFEUNDERLINE_274e26530a84::from_int(8U.reinterpret_as_int())
+}
+
+///|
+pub fn CFEUNDERLINE_274e26530a84::cfu_underlineword() -> CFEUNDERLINE_274e26530a84 {
+  CFEUNDERLINE_274e26530a84::from_int(2U.reinterpret_as_int())
+}
+
+///|
+pub fn ENERGYSAVERSTATUS_4b397a5d7df1::energy_saver_high_savings() -> ENERGYSAVERSTATUS_4b397a5d7df1 {
+  ENERGYSAVERSTATUS_4b397a5d7df1::from_int(2)
+}
+
+///|
+pub fn ENERGYSAVERSTATUS_4b397a5d7df1::energy_saver_off() -> ENERGYSAVERSTATUS_4b397a5d7df1 {
+  ENERGYSAVERSTATUS_4b397a5d7df1::from_int(0)
+}
+
+///|
+pub fn ENERGYSAVERSTATUS_4b397a5d7df1::energy_saver_standard() -> ENERGYSAVERSTATUS_4b397a5d7df1 {
+  ENERGYSAVERSTATUS_4b397a5d7df1::from_int(1)
+}
+
+///|
+pub fn ENLISTMENTINFORMATIONCLASS_a03311ecc236::enlistment_basic_information() -> ENLISTMENTINFORMATIONCLASS_a03311ecc236 {
+  ENLISTMENTINFORMATIONCLASS_a03311ecc236::from_int(0)
+}
+
+///|
+pub fn ENLISTMENTINFORMATIONCLASS_a03311ecc236::enlistment_crm_information() -> ENLISTMENTINFORMATIONCLASS_a03311ecc236 {
+  ENLISTMENTINFORMATIONCLASS_a03311ecc236::from_int(2)
+}
+
+///|
+pub fn ENLISTMENTINFORMATIONCLASS_a03311ecc236::enlistment_recovery_information() -> ENLISTMENTINFORMATIONCLASS_a03311ecc236 {
+  ENLISTMENTINFORMATIONCLASS_a03311ecc236::from_int(1)
+}
+
+///|
+pub fn GESTURECONFIGFLAGS_4a761391c3ac::gc_allgestures() -> GESTURECONFIGFLAGS_4a761391c3ac {
+  GESTURECONFIGFLAGS_4a761391c3ac::from_int(1U.reinterpret_as_int())
+}
+
+///|
+pub fn GESTURECONFIGFLAGS_4a761391c3ac::gc_pan() -> GESTURECONFIGFLAGS_4a761391c3ac {
+  GESTURECONFIGFLAGS_4a761391c3ac::from_int(1U.reinterpret_as_int())
+}
+
+///|
+pub fn GESTURECONFIGFLAGS_4a761391c3ac::gc_pan_with_gutter() -> GESTURECONFIGFLAGS_4a761391c3ac {
+  GESTURECONFIGFLAGS_4a761391c3ac::from_int(8U.reinterpret_as_int())
+}
+
+///|
+pub fn GESTURECONFIGFLAGS_4a761391c3ac::gc_pan_with_inertia() -> GESTURECONFIGFLAGS_4a761391c3ac {
+  GESTURECONFIGFLAGS_4a761391c3ac::from_int(16U.reinterpret_as_int())
+}
+
+///|
+pub fn GESTURECONFIGFLAGS_4a761391c3ac::gc_pan_with_single_finger_horizontally() -> GESTURECONFIGFLAGS_4a761391c3ac {
+  GESTURECONFIGFLAGS_4a761391c3ac::from_int(4U.reinterpret_as_int())
+}
+
+///|
+pub fn GESTURECONFIGFLAGS_4a761391c3ac::gc_pan_with_single_finger_vertically() -> GESTURECONFIGFLAGS_4a761391c3ac {
+  GESTURECONFIGFLAGS_4a761391c3ac::from_int(2U.reinterpret_as_int())
+}
+
+///|
+pub fn GESTURECONFIGFLAGS_4a761391c3ac::gc_pressandtap() -> GESTURECONFIGFLAGS_4a761391c3ac {
+  GESTURECONFIGFLAGS_4a761391c3ac::from_int(1U.reinterpret_as_int())
+}
+
+///|
+pub fn GESTURECONFIGFLAGS_4a761391c3ac::gc_rollover() -> GESTURECONFIGFLAGS_4a761391c3ac {
+  GESTURECONFIGFLAGS_4a761391c3ac::from_int(1U.reinterpret_as_int())
+}
+
+///|
+pub fn GESTURECONFIGFLAGS_4a761391c3ac::gc_rotate() -> GESTURECONFIGFLAGS_4a761391c3ac {
+  GESTURECONFIGFLAGS_4a761391c3ac::from_int(1U.reinterpret_as_int())
+}
+
+///|
+pub fn GESTURECONFIGFLAGS_4a761391c3ac::gc_twofingertap() -> GESTURECONFIGFLAGS_4a761391c3ac {
+  GESTURECONFIGFLAGS_4a761391c3ac::from_int(1U.reinterpret_as_int())
+}
+
+///|
+pub fn GESTURECONFIGFLAGS_4a761391c3ac::gc_zoom() -> GESTURECONFIGFLAGS_4a761391c3ac {
+  GESTURECONFIGFLAGS_4a761391c3ac::from_int(1U.reinterpret_as_int())
+}
+
+///|
+pub fn HIBERFILEBUCKETSIZE_62e0b40188e2::hiber_file_bucket16_gb() -> HIBERFILEBUCKETSIZE_62e0b40188e2 {
+  HIBERFILEBUCKETSIZE_62e0b40188e2::from_int(4)
+}
+
+///|
+pub fn HIBERFILEBUCKETSIZE_62e0b40188e2::hiber_file_bucket1_gb() -> HIBERFILEBUCKETSIZE_62e0b40188e2 {
+  HIBERFILEBUCKETSIZE_62e0b40188e2::from_int(0)
+}
+
+///|
+pub fn HIBERFILEBUCKETSIZE_62e0b40188e2::hiber_file_bucket2_gb() -> HIBERFILEBUCKETSIZE_62e0b40188e2 {
+  HIBERFILEBUCKETSIZE_62e0b40188e2::from_int(1)
+}
+
+///|
+pub fn HIBERFILEBUCKETSIZE_62e0b40188e2::hiber_file_bucket32_gb() -> HIBERFILEBUCKETSIZE_62e0b40188e2 {
+  HIBERFILEBUCKETSIZE_62e0b40188e2::from_int(5)
+}
+
+///|
+pub fn HIBERFILEBUCKETSIZE_62e0b40188e2::hiber_file_bucket4_gb() -> HIBERFILEBUCKETSIZE_62e0b40188e2 {
+  HIBERFILEBUCKETSIZE_62e0b40188e2::from_int(2)
+}
+
+///|
+pub fn HIBERFILEBUCKETSIZE_62e0b40188e2::hiber_file_bucket8_gb() -> HIBERFILEBUCKETSIZE_62e0b40188e2 {
+  HIBERFILEBUCKETSIZE_62e0b40188e2::from_int(3)
+}
+
+///|
+pub fn HIBERFILEBUCKETSIZE_62e0b40188e2::hiber_file_bucket_max() -> HIBERFILEBUCKETSIZE_62e0b40188e2 {
+  HIBERFILEBUCKETSIZE_62e0b40188e2::from_int(7)
+}
+
+///|
+pub fn HIBERFILEBUCKETSIZE_62e0b40188e2::hiber_file_bucket_unlimited() -> HIBERFILEBUCKETSIZE_62e0b40188e2 {
+  HIBERFILEBUCKETSIZE_62e0b40188e2::from_int(6)
+}
+
+///|
+pub fn IGPID_4867e6b05d8f::igp_conversion() -> IGPID_4867e6b05d8f {
+  IGPID_4867e6b05d8f::from_int(8U.reinterpret_as_int())
+}
+
+///|
+pub fn IGPID_4867e6b05d8f::igp_getimeversion() -> IGPID_4867e6b05d8f {
+  IGPID_4867e6b05d8f::from_int(4294967292U.reinterpret_as_int())
+}
+
+///|
+pub fn IGPID_4867e6b05d8f::igp_property() -> IGPID_4867e6b05d8f {
+  IGPID_4867e6b05d8f::from_int(4U.reinterpret_as_int())
+}
+
+///|
+pub fn IGPID_4867e6b05d8f::igp_select() -> IGPID_4867e6b05d8f {
+  IGPID_4867e6b05d8f::from_int(24U.reinterpret_as_int())
+}
+
+///|
+pub fn IGPID_4867e6b05d8f::igp_sentence() -> IGPID_4867e6b05d8f {
+  IGPID_4867e6b05d8f::from_int(12U.reinterpret_as_int())
+}
+
+///|
+pub fn IGPID_4867e6b05d8f::igp_setcompstr() -> IGPID_4867e6b05d8f {
+  IGPID_4867e6b05d8f::from_int(20U.reinterpret_as_int())
+}
+
+///|
+pub fn IGPID_4867e6b05d8f::igp_ui() -> IGPID_4867e6b05d8f {
+  IGPID_4867e6b05d8f::from_int(16U.reinterpret_as_int())
+}
+
+///|
+pub fn IMAGEAUXSYMBOLTYPE_b859aae07d47::token_def() -> IMAGEAUXSYMBOLTYPE_b859aae07d47 {
+  IMAGEAUXSYMBOLTYPE_b859aae07d47::from_int(1)
+}
+
+///|
+pub fn IMAGEPOLICYENTRYTYPE_b7cf2d2c8c7e::ansi_string() -> IMAGEPOLICYENTRYTYPE_b7cf2d2c8c7e {
+  IMAGEPOLICYENTRYTYPE_b7cf2d2c8c7e::from_int(10)
+}
+
+///|
+pub fn IMAGEPOLICYENTRYTYPE_b7cf2d2c8c7e::bool_() -> IMAGEPOLICYENTRYTYPE_b7cf2d2c8c7e {
+  IMAGEPOLICYENTRYTYPE_b7cf2d2c8c7e::from_int(1)
+}
+
+///|
+pub fn IMAGEPOLICYENTRYTYPE_b7cf2d2c8c7e::int16() -> IMAGEPOLICYENTRYTYPE_b7cf2d2c8c7e {
+  IMAGEPOLICYENTRYTYPE_b7cf2d2c8c7e::from_int(4)
+}
+
+///|
+pub fn IMAGEPOLICYENTRYTYPE_b7cf2d2c8c7e::int32() -> IMAGEPOLICYENTRYTYPE_b7cf2d2c8c7e {
+  IMAGEPOLICYENTRYTYPE_b7cf2d2c8c7e::from_int(6)
+}
+
+///|
+pub fn IMAGEPOLICYENTRYTYPE_b7cf2d2c8c7e::int64() -> IMAGEPOLICYENTRYTYPE_b7cf2d2c8c7e {
+  IMAGEPOLICYENTRYTYPE_b7cf2d2c8c7e::from_int(8)
+}
+
+///|
+pub fn IMAGEPOLICYENTRYTYPE_b7cf2d2c8c7e::int8() -> IMAGEPOLICYENTRYTYPE_b7cf2d2c8c7e {
+  IMAGEPOLICYENTRYTYPE_b7cf2d2c8c7e::from_int(2)
+}
+
+///|
+pub fn IMAGEPOLICYENTRYTYPE_b7cf2d2c8c7e::maximum() -> IMAGEPOLICYENTRYTYPE_b7cf2d2c8c7e {
+  IMAGEPOLICYENTRYTYPE_b7cf2d2c8c7e::from_int(13)
+}
+
+///|
+pub fn IMAGEPOLICYENTRYTYPE_b7cf2d2c8c7e::none() -> IMAGEPOLICYENTRYTYPE_b7cf2d2c8c7e {
+  IMAGEPOLICYENTRYTYPE_b7cf2d2c8c7e::from_int(0)
+}
+
+///|
+pub fn IMAGEPOLICYENTRYTYPE_b7cf2d2c8c7e::override_() -> IMAGEPOLICYENTRYTYPE_b7cf2d2c8c7e {
+  IMAGEPOLICYENTRYTYPE_b7cf2d2c8c7e::from_int(12)
+}
+
+///|
+pub fn IMAGEPOLICYENTRYTYPE_b7cf2d2c8c7e::u_int16() -> IMAGEPOLICYENTRYTYPE_b7cf2d2c8c7e {
+  IMAGEPOLICYENTRYTYPE_b7cf2d2c8c7e::from_int(5)
+}
+
+///|
+pub fn IMAGEPOLICYENTRYTYPE_b7cf2d2c8c7e::u_int32() -> IMAGEPOLICYENTRYTYPE_b7cf2d2c8c7e {
+  IMAGEPOLICYENTRYTYPE_b7cf2d2c8c7e::from_int(7)
+}
+
+///|
+pub fn IMAGEPOLICYENTRYTYPE_b7cf2d2c8c7e::u_int64() -> IMAGEPOLICYENTRYTYPE_b7cf2d2c8c7e {
+  IMAGEPOLICYENTRYTYPE_b7cf2d2c8c7e::from_int(9)
+}
+
+///|
+pub fn IMAGEPOLICYENTRYTYPE_b7cf2d2c8c7e::u_int8() -> IMAGEPOLICYENTRYTYPE_b7cf2d2c8c7e {
+  IMAGEPOLICYENTRYTYPE_b7cf2d2c8c7e::from_int(3)
+}
+
+///|
+pub fn IMAGEPOLICYENTRYTYPE_b7cf2d2c8c7e::unicode_string() -> IMAGEPOLICYENTRYTYPE_b7cf2d2c8c7e {
+  IMAGEPOLICYENTRYTYPE_b7cf2d2c8c7e::from_int(11)
+}
+
+///|
+pub fn IMAGEPOLICYID_912b9330340b::capability() -> IMAGEPOLICYID_912b9330340b {
+  IMAGEPOLICYID_912b9330340b::from_int(10)
+}
+
+///|
+pub fn IMAGEPOLICYID_912b9330340b::capability_overridable() -> IMAGEPOLICYID_912b9330340b {
+  IMAGEPOLICYID_912b9330340b::from_int(12)
+}
+
+///|
+pub fn IMAGEPOLICYID_912b9330340b::crash_dump() -> IMAGEPOLICYID_912b9330340b {
+  IMAGEPOLICYID_912b9330340b::from_int(3)
+}
+
+///|
+pub fn IMAGEPOLICYID_912b9330340b::crash_dump_key() -> IMAGEPOLICYID_912b9330340b {
+  IMAGEPOLICYID_912b9330340b::from_int(4)
+}
+
+///|
+pub fn IMAGEPOLICYID_912b9330340b::crash_dump_key_guid() -> IMAGEPOLICYID_912b9330340b {
+  IMAGEPOLICYID_912b9330340b::from_int(5)
+}
+
+///|
+pub fn IMAGEPOLICYID_912b9330340b::debug() -> IMAGEPOLICYID_912b9330340b {
+  IMAGEPOLICYID_912b9330340b::from_int(2)
+}
+
+///|
+pub fn IMAGEPOLICYID_912b9330340b::device_id() -> IMAGEPOLICYID_912b9330340b {
+  IMAGEPOLICYID_912b9330340b::from_int(9)
+}
+
+///|
+pub fn IMAGEPOLICYID_912b9330340b::etw() -> IMAGEPOLICYID_912b9330340b {
+  IMAGEPOLICYID_912b9330340b::from_int(1)
+}
+
+///|
+pub fn IMAGEPOLICYID_912b9330340b::maximum() -> IMAGEPOLICYID_912b9330340b {
+  IMAGEPOLICYID_912b9330340b::from_int(14)
+}
+
+///|
+pub fn IMAGEPOLICYID_912b9330340b::none() -> IMAGEPOLICYID_912b9330340b {
+  IMAGEPOLICYID_912b9330340b::from_int(0)
+}
+
+///|
+pub fn IMAGEPOLICYID_912b9330340b::parent_sd() -> IMAGEPOLICYID_912b9330340b {
+  IMAGEPOLICYID_912b9330340b::from_int(6)
+}
+
+///|
+pub fn IMAGEPOLICYID_912b9330340b::parent_sd_rev() -> IMAGEPOLICYID_912b9330340b {
+  IMAGEPOLICYID_912b9330340b::from_int(7)
+}
+
+///|
+pub fn IMAGEPOLICYID_912b9330340b::scenario_id() -> IMAGEPOLICYID_912b9330340b {
+  IMAGEPOLICYID_912b9330340b::from_int(11)
+}
+
+///|
+pub fn IMAGEPOLICYID_912b9330340b::svn() -> IMAGEPOLICYID_912b9330340b {
+  IMAGEPOLICYID_912b9330340b::from_int(8)
+}
+
+///|
+pub fn IMAGEPOLICYID_912b9330340b::trustlet_id_overridable() -> IMAGEPOLICYID_912b9330340b {
+  IMAGEPOLICYID_912b9330340b::from_int(13)
+}
+
+///|
+pub fn IMPORTOBJECTNAMETYPE_c57e5d927af7::import_object_name() -> IMPORTOBJECTNAMETYPE_c57e5d927af7 {
+  IMPORTOBJECTNAMETYPE_c57e5d927af7::from_int(1)
+}
+
+///|
+pub fn IMPORTOBJECTNAMETYPE_c57e5d927af7::import_object_name_exportas() -> IMPORTOBJECTNAMETYPE_c57e5d927af7 {
+  IMPORTOBJECTNAMETYPE_c57e5d927af7::from_int(4)
+}
+
+///|
+pub fn IMPORTOBJECTNAMETYPE_c57e5d927af7::import_object_name_no_prefix() -> IMPORTOBJECTNAMETYPE_c57e5d927af7 {
+  IMPORTOBJECTNAMETYPE_c57e5d927af7::from_int(2)
+}
+
+///|
+pub fn IMPORTOBJECTNAMETYPE_c57e5d927af7::import_object_name_undecorate() -> IMPORTOBJECTNAMETYPE_c57e5d927af7 {
+  IMPORTOBJECTNAMETYPE_c57e5d927af7::from_int(3)
+}
+
+///|
+pub fn IMPORTOBJECTNAMETYPE_c57e5d927af7::import_object_ordinal() -> IMPORTOBJECTNAMETYPE_c57e5d927af7 {
+  IMPORTOBJECTNAMETYPE_c57e5d927af7::from_int(0)
+}
+
+///|
+pub fn IMPORTOBJECTTYPE_745fd002ac11::import_object_code() -> IMPORTOBJECTTYPE_745fd002ac11 {
+  IMPORTOBJECTTYPE_745fd002ac11::from_int(0)
+}
+
+///|
+pub fn IMPORTOBJECTTYPE_745fd002ac11::import_object_const() -> IMPORTOBJECTTYPE_745fd002ac11 {
+  IMPORTOBJECTTYPE_745fd002ac11::from_int(2)
+}
+
+///|
+pub fn IMPORTOBJECTTYPE_745fd002ac11::import_object_data() -> IMPORTOBJECTTYPE_745fd002ac11 {
+  IMPORTOBJECTTYPE_745fd002ac11::from_int(1)
+}
+
+///|
+pub fn KTMOBJECTTYPE_c7c9e2b33329::ktmobject_enlistment() -> KTMOBJECTTYPE_c7c9e2b33329 {
+  KTMOBJECTTYPE_c7c9e2b33329::from_int(3)
+}
+
+///|
+pub fn KTMOBJECTTYPE_c7c9e2b33329::ktmobject_invalid() -> KTMOBJECTTYPE_c7c9e2b33329 {
+  KTMOBJECTTYPE_c7c9e2b33329::from_int(4)
+}
+
+///|
+pub fn KTMOBJECTTYPE_c7c9e2b33329::ktmobject_resource_manager() -> KTMOBJECTTYPE_c7c9e2b33329 {
+  KTMOBJECTTYPE_c7c9e2b33329::from_int(2)
+}
+
+///|
+pub fn KTMOBJECTTYPE_c7c9e2b33329::ktmobject_transaction() -> KTMOBJECTTYPE_c7c9e2b33329 {
+  KTMOBJECTTYPE_c7c9e2b33329::from_int(0)
+}
+
+///|
+pub fn KTMOBJECTTYPE_c7c9e2b33329::ktmobject_transaction_manager() -> KTMOBJECTTYPE_c7c9e2b33329 {
+  KTMOBJECTTYPE_c7c9e2b33329::from_int(1)
+}
+
+///|
+pub fn MODIFIERKEYSFLAGS_61006b92c0d9::mk_control() -> MODIFIERKEYSFLAGS_61006b92c0d9 {
+  MODIFIERKEYSFLAGS_61006b92c0d9::from_int(8U.reinterpret_as_int())
+}
+
+///|
+pub fn MODIFIERKEYSFLAGS_61006b92c0d9::mk_lbutton() -> MODIFIERKEYSFLAGS_61006b92c0d9 {
+  MODIFIERKEYSFLAGS_61006b92c0d9::from_int(1U.reinterpret_as_int())
+}
+
+///|
+pub fn MODIFIERKEYSFLAGS_61006b92c0d9::mk_mbutton() -> MODIFIERKEYSFLAGS_61006b92c0d9 {
+  MODIFIERKEYSFLAGS_61006b92c0d9::from_int(16U.reinterpret_as_int())
+}
+
+///|
+pub fn MODIFIERKEYSFLAGS_61006b92c0d9::mk_rbutton() -> MODIFIERKEYSFLAGS_61006b92c0d9 {
+  MODIFIERKEYSFLAGS_61006b92c0d9::from_int(2U.reinterpret_as_int())
+}
+
+///|
+pub fn MODIFIERKEYSFLAGS_61006b92c0d9::mk_shift() -> MODIFIERKEYSFLAGS_61006b92c0d9 {
+  MODIFIERKEYSFLAGS_61006b92c0d9::from_int(4U.reinterpret_as_int())
+}
+
+///|
+pub fn MODIFIERKEYSFLAGS_61006b92c0d9::mk_xbutton1() -> MODIFIERKEYSFLAGS_61006b92c0d9 {
+  MODIFIERKEYSFLAGS_61006b92c0d9::from_int(32U.reinterpret_as_int())
+}
+
+///|
+pub fn MODIFIERKEYSFLAGS_61006b92c0d9::mk_xbutton2() -> MODIFIERKEYSFLAGS_61006b92c0d9 {
+  MODIFIERKEYSFLAGS_61006b92c0d9::from_int(64U.reinterpret_as_int())
+}
+
+///|
+pub fn MONITORDISPLAYSTATE_95a10ce4432c::power_monitor_dim() -> MONITORDISPLAYSTATE_95a10ce4432c {
+  MONITORDISPLAYSTATE_95a10ce4432c::from_int(2)
+}
+
+///|
+pub fn MONITORDISPLAYSTATE_95a10ce4432c::power_monitor_off() -> MONITORDISPLAYSTATE_95a10ce4432c {
+  MONITORDISPLAYSTATE_95a10ce4432c::from_int(0)
+}
+
+///|
+pub fn MONITORDISPLAYSTATE_95a10ce4432c::power_monitor_on() -> MONITORDISPLAYSTATE_95a10ce4432c {
+  MONITORDISPLAYSTATE_95a10ce4432c::from_int(1)
+}
+
+///|
+pub fn POWERLIMITTYPES_4eaf25335b9e::power_limit_burst() -> POWERLIMITTYPES_4eaf25335b9e {
+  POWERLIMITTYPES_4eaf25335b9e::from_int(1)
+}
+
+///|
+pub fn POWERLIMITTYPES_4eaf25335b9e::power_limit_continuous() -> POWERLIMITTYPES_4eaf25335b9e {
+  POWERLIMITTYPES_4eaf25335b9e::from_int(0)
+}
+
+///|
+pub fn POWERLIMITTYPES_4eaf25335b9e::power_limit_preemptive() -> POWERLIMITTYPES_4eaf25335b9e {
+  POWERLIMITTYPES_4eaf25335b9e::from_int(3)
+}
+
+///|
+pub fn POWERLIMITTYPES_4eaf25335b9e::power_limit_preemptive_offset() -> POWERLIMITTYPES_4eaf25335b9e {
+  POWERLIMITTYPES_4eaf25335b9e::from_int(4)
+}
+
+///|
+pub fn POWERLIMITTYPES_4eaf25335b9e::power_limit_rapid() -> POWERLIMITTYPES_4eaf25335b9e {
+  POWERLIMITTYPES_4eaf25335b9e::from_int(2)
+}
+
+///|
+pub fn POWERLIMITTYPES_4eaf25335b9e::power_limit_type1() -> POWERLIMITTYPES_4eaf25335b9e {
+  POWERLIMITTYPES_4eaf25335b9e::from_int(0)
+}
+
+///|
+pub fn POWERLIMITTYPES_4eaf25335b9e::power_limit_type2() -> POWERLIMITTYPES_4eaf25335b9e {
+  POWERLIMITTYPES_4eaf25335b9e::from_int(1)
+}
+
+///|
+pub fn POWERLIMITTYPES_4eaf25335b9e::power_limit_type3() -> POWERLIMITTYPES_4eaf25335b9e {
+  POWERLIMITTYPES_4eaf25335b9e::from_int(2)
+}
+
+///|
+pub fn POWERLIMITTYPES_4eaf25335b9e::power_limit_type4() -> POWERLIMITTYPES_4eaf25335b9e {
+  POWERLIMITTYPES_4eaf25335b9e::from_int(3)
+}
+
+///|
+pub fn POWERLIMITTYPES_4eaf25335b9e::power_limit_type_max() -> POWERLIMITTYPES_4eaf25335b9e {
+  POWERLIMITTYPES_4eaf25335b9e::from_int(5)
+}
+
+///|
+pub fn RECOFLAGS_e4dcd852f425::reco_copy() -> RECOFLAGS_e4dcd852f425 {
+  RECOFLAGS_e4dcd852f425::from_int(2U.reinterpret_as_int())
+}
+
+///|
+pub fn RECOFLAGS_e4dcd852f425::reco_cut() -> RECOFLAGS_e4dcd852f425 {
+  RECOFLAGS_e4dcd852f425::from_int(3U.reinterpret_as_int())
+}
+
+///|
+pub fn RECOFLAGS_e4dcd852f425::reco_drag() -> RECOFLAGS_e4dcd852f425 {
+  RECOFLAGS_e4dcd852f425::from_int(4U.reinterpret_as_int())
+}
+
+///|
+pub fn RECOFLAGS_e4dcd852f425::reco_drop() -> RECOFLAGS_e4dcd852f425 {
+  RECOFLAGS_e4dcd852f425::from_int(1U.reinterpret_as_int())
+}
+
+///|
+pub fn RECOFLAGS_e4dcd852f425::reco_paste() -> RECOFLAGS_e4dcd852f425 {
+  RECOFLAGS_e4dcd852f425::from_int(0U.reinterpret_as_int())
+}
+
+///|
+pub fn RESOURCEMANAGERINFORMATIONCLASS_e3c5623d4a29::resource_manager_basic_information() -> RESOURCEMANAGERINFORMATIONCLASS_e3c5623d4a29 {
+  RESOURCEMANAGERINFORMATIONCLASS_e3c5623d4a29::from_int(0)
+}
+
+///|
+pub fn RESOURCEMANAGERINFORMATIONCLASS_e3c5623d4a29::resource_manager_completion_information() -> RESOURCEMANAGERINFORMATIONCLASS_e3c5623d4a29 {
+  RESOURCEMANAGERINFORMATIONCLASS_e3c5623d4a29::from_int(1)
+}
+
+///|
+pub fn RTLUMSSCHEDULERREASON_487281bc3af3::ums_scheduler_startup() -> RTLUMSSCHEDULERREASON_487281bc3af3 {
+  RTLUMSSCHEDULERREASON_487281bc3af3::from_int(0)
+}
+
+///|
+pub fn RTLUMSSCHEDULERREASON_487281bc3af3::ums_scheduler_thread_blocked() -> RTLUMSSCHEDULERREASON_487281bc3af3 {
+  RTLUMSSCHEDULERREASON_487281bc3af3::from_int(1)
+}
+
+///|
+pub fn RTLUMSSCHEDULERREASON_487281bc3af3::ums_scheduler_thread_yield() -> RTLUMSSCHEDULERREASON_487281bc3af3 {
+  RTLUMSSCHEDULERREASON_487281bc3af3::from_int(2)
+}
+
+///|
+pub fn RUNTIMEREPORTTYPE_2db233d8e308::driver() -> RUNTIMEREPORTTYPE_2db233d8e308 {
+  RUNTIMEREPORTTYPE_2db233d8e308::from_int(0)
+}
+
+///|
+pub fn RUNTIMEREPORTTYPE_2db233d8e308::max() -> RUNTIMEREPORTTYPE_2db233d8e308 {
+  RUNTIMEREPORTTYPE_2db233d8e308::from_int(1)
+}
+
+///|
+pub fn ReplacesCorHdrNumericDefines_bbd8033e4f49::comimage_flags_32_bitpreferred() -> ReplacesCorHdrNumericDefines_bbd8033e4f49 {
+  ReplacesCorHdrNumericDefines_bbd8033e4f49::from_int(131072)
+}
+
+///|
+pub fn ReplacesCorHdrNumericDefines_bbd8033e4f49::comimage_flags_32_bitrequired() -> ReplacesCorHdrNumericDefines_bbd8033e4f49 {
+  ReplacesCorHdrNumericDefines_bbd8033e4f49::from_int(2)
+}
+
+///|
+pub fn ReplacesCorHdrNumericDefines_bbd8033e4f49::comimage_flags_ilonly() -> ReplacesCorHdrNumericDefines_bbd8033e4f49 {
+  ReplacesCorHdrNumericDefines_bbd8033e4f49::from_int(1)
+}
+
+///|
+pub fn ReplacesCorHdrNumericDefines_bbd8033e4f49::comimage_flags_il_library() -> ReplacesCorHdrNumericDefines_bbd8033e4f49 {
+  ReplacesCorHdrNumericDefines_bbd8033e4f49::from_int(4)
+}
+
+///|
+pub fn ReplacesCorHdrNumericDefines_bbd8033e4f49::comimage_flags_native_entrypoint() -> ReplacesCorHdrNumericDefines_bbd8033e4f49 {
+  ReplacesCorHdrNumericDefines_bbd8033e4f49::from_int(16)
+}
+
+///|
+pub fn ReplacesCorHdrNumericDefines_bbd8033e4f49::comimage_flags_strongnamesigned() -> ReplacesCorHdrNumericDefines_bbd8033e4f49 {
+  ReplacesCorHdrNumericDefines_bbd8033e4f49::from_int(8)
+}
+
+///|
+pub fn ReplacesCorHdrNumericDefines_bbd8033e4f49::comimage_flags_trackdebugdata() -> ReplacesCorHdrNumericDefines_bbd8033e4f49 {
+  ReplacesCorHdrNumericDefines_bbd8033e4f49::from_int(65536)
+}
+
+///|
+pub fn ReplacesCorHdrNumericDefines_bbd8033e4f49::cor_deleted_name_length() -> ReplacesCorHdrNumericDefines_bbd8033e4f49 {
+  ReplacesCorHdrNumericDefines_bbd8033e4f49::from_int(8)
+}
+
+///|
+pub fn ReplacesCorHdrNumericDefines_bbd8033e4f49::cor_ilmethod_sect_small_max_datasize() -> ReplacesCorHdrNumericDefines_bbd8033e4f49 {
+  ReplacesCorHdrNumericDefines_bbd8033e4f49::from_int(255)
+}
+
+///|
+pub fn ReplacesCorHdrNumericDefines_bbd8033e4f49::cor_version_major() -> ReplacesCorHdrNumericDefines_bbd8033e4f49 {
+  ReplacesCorHdrNumericDefines_bbd8033e4f49::from_int(2)
+}
+
+///|
+pub fn ReplacesCorHdrNumericDefines_bbd8033e4f49::cor_version_major_v2() -> ReplacesCorHdrNumericDefines_bbd8033e4f49 {
+  ReplacesCorHdrNumericDefines_bbd8033e4f49::from_int(2)
+}
+
+///|
+pub fn ReplacesCorHdrNumericDefines_bbd8033e4f49::cor_version_minor() -> ReplacesCorHdrNumericDefines_bbd8033e4f49 {
+  ReplacesCorHdrNumericDefines_bbd8033e4f49::from_int(5)
+}
+
+///|
+pub fn ReplacesCorHdrNumericDefines_bbd8033e4f49::cor_vtablegap_name_length() -> ReplacesCorHdrNumericDefines_bbd8033e4f49 {
+  ReplacesCorHdrNumericDefines_bbd8033e4f49::from_int(8)
+}
+
+///|
+pub fn ReplacesCorHdrNumericDefines_bbd8033e4f49::cor_vtable_32_bit() -> ReplacesCorHdrNumericDefines_bbd8033e4f49 {
+  ReplacesCorHdrNumericDefines_bbd8033e4f49::from_int(1)
+}
+
+///|
+pub fn ReplacesCorHdrNumericDefines_bbd8033e4f49::cor_vtable_64_bit() -> ReplacesCorHdrNumericDefines_bbd8033e4f49 {
+  ReplacesCorHdrNumericDefines_bbd8033e4f49::from_int(2)
+}
+
+///|
+pub fn ReplacesCorHdrNumericDefines_bbd8033e4f49::cor_vtable_call_most_derived() -> ReplacesCorHdrNumericDefines_bbd8033e4f49 {
+  ReplacesCorHdrNumericDefines_bbd8033e4f49::from_int(16)
+}

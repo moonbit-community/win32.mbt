@@ -1,0 +1,589 @@
+///|
+pub fn PROCESSINFOCLASS_5f459569e300::max_process_info_class() -> PROCESSINFOCLASS_5f459569e300 {
+  PROCESSINFOCLASS_5f459569e300::from_int(83)
+}
+
+///|
+pub fn PROCESSINFOCLASS_5f459569e300::process_access_token() -> PROCESSINFOCLASS_5f459569e300 {
+  PROCESSINFOCLASS_5f459569e300::from_int(9)
+}
+
+///|
+pub fn PROCESSINFOCLASS_5f459569e300::process_affinity_mask() -> PROCESSINFOCLASS_5f459569e300 {
+  PROCESSINFOCLASS_5f459569e300::from_int(21)
+}
+
+///|
+pub fn PROCESSINFOCLASS_5f459569e300::process_affinity_update_mode() -> PROCESSINFOCLASS_5f459569e300 {
+  PROCESSINFOCLASS_5f459569e300::from_int(45)
+}
+
+///|
+pub fn PROCESSINFOCLASS_5f459569e300::process_base_priority() -> PROCESSINFOCLASS_5f459569e300 {
+  PROCESSINFOCLASS_5f459569e300::from_int(5)
+}
+
+///|
+pub fn PROCESSINFOCLASS_5f459569e300::process_basic_information() -> PROCESSINFOCLASS_5f459569e300 {
+  PROCESSINFOCLASS_5f459569e300::from_int(0)
+}
+
+///|
+pub fn PROCESSINFOCLASS_5f459569e300::process_break_on_termination() -> PROCESSINFOCLASS_5f459569e300 {
+  PROCESSINFOCLASS_5f459569e300::from_int(29)
+}
+
+///|
+pub fn PROCESSINFOCLASS_5f459569e300::process_check_stack_extents_mode() -> PROCESSINFOCLASS_5f459569e300 {
+  PROCESSINFOCLASS_5f459569e300::from_int(59)
+}
+
+///|
+pub fn PROCESSINFOCLASS_5f459569e300::process_command_line_information() -> PROCESSINFOCLASS_5f459569e300 {
+  PROCESSINFOCLASS_5f459569e300::from_int(60)
+}
+
+///|
+pub fn PROCESSINFOCLASS_5f459569e300::process_commit_release_information() -> PROCESSINFOCLASS_5f459569e300 {
+  PROCESSINFOCLASS_5f459569e300::from_int(65)
+}
+
+///|
+pub fn PROCESSINFOCLASS_5f459569e300::process_cookie() -> PROCESSINFOCLASS_5f459569e300 {
+  PROCESSINFOCLASS_5f459569e300::from_int(36)
+}
+
+///|
+pub fn PROCESSINFOCLASS_5f459569e300::process_cycle_time() -> PROCESSINFOCLASS_5f459569e300 {
+  PROCESSINFOCLASS_5f459569e300::from_int(38)
+}
+
+///|
+pub fn PROCESSINFOCLASS_5f459569e300::process_debug_flags() -> PROCESSINFOCLASS_5f459569e300 {
+  PROCESSINFOCLASS_5f459569e300::from_int(31)
+}
+
+///|
+pub fn PROCESSINFOCLASS_5f459569e300::process_debug_object_handle() -> PROCESSINFOCLASS_5f459569e300 {
+  PROCESSINFOCLASS_5f459569e300::from_int(30)
+}
+
+///|
+pub fn PROCESSINFOCLASS_5f459569e300::process_debug_port() -> PROCESSINFOCLASS_5f459569e300 {
+  PROCESSINFOCLASS_5f459569e300::from_int(7)
+}
+
+///|
+pub fn PROCESSINFOCLASS_5f459569e300::process_default_hard_error_mode() -> PROCESSINFOCLASS_5f459569e300 {
+  PROCESSINFOCLASS_5f459569e300::from_int(12)
+}
+
+///|
+pub fn PROCESSINFOCLASS_5f459569e300::process_device_map() -> PROCESSINFOCLASS_5f459569e300 {
+  PROCESSINFOCLASS_5f459569e300::from_int(23)
+}
+
+///|
+pub fn PROCESSINFOCLASS_5f459569e300::process_dynamic_function_table_information() -> PROCESSINFOCLASS_5f459569e300 {
+  PROCESSINFOCLASS_5f459569e300::from_int(53)
+}
+
+///|
+pub fn PROCESSINFOCLASS_5f459569e300::process_enable_alignment_fault_fixup() -> PROCESSINFOCLASS_5f459569e300 {
+  PROCESSINFOCLASS_5f459569e300::from_int(17)
+}
+
+///|
+pub fn PROCESSINFOCLASS_5f459569e300::process_energy_tracking_state() -> PROCESSINFOCLASS_5f459569e300 {
+  PROCESSINFOCLASS_5f459569e300::from_int(82)
+}
+
+///|
+pub fn PROCESSINFOCLASS_5f459569e300::process_exception_port() -> PROCESSINFOCLASS_5f459569e300 {
+  PROCESSINFOCLASS_5f459569e300::from_int(8)
+}
+
+///|
+pub fn PROCESSINFOCLASS_5f459569e300::process_execute_flags() -> PROCESSINFOCLASS_5f459569e300 {
+  PROCESSINFOCLASS_5f459569e300::from_int(34)
+}
+
+///|
+pub fn PROCESSINFOCLASS_5f459569e300::process_fault_information() -> PROCESSINFOCLASS_5f459569e300 {
+  PROCESSINFOCLASS_5f459569e300::from_int(63)
+}
+
+///|
+pub fn PROCESSINFOCLASS_5f459569e300::process_foreground_information() -> PROCESSINFOCLASS_5f459569e300 {
+  PROCESSINFOCLASS_5f459569e300::from_int(25)
+}
+
+///|
+pub fn PROCESSINFOCLASS_5f459569e300::process_group_information() -> PROCESSINFOCLASS_5f459569e300 {
+  PROCESSINFOCLASS_5f459569e300::from_int(47)
+}
+
+///|
+pub fn PROCESSINFOCLASS_5f459569e300::process_handle_checking_mode() -> PROCESSINFOCLASS_5f459569e300 {
+  PROCESSINFOCLASS_5f459569e300::from_int(54)
+}
+
+///|
+pub fn PROCESSINFOCLASS_5f459569e300::process_handle_count() -> PROCESSINFOCLASS_5f459569e300 {
+  PROCESSINFOCLASS_5f459569e300::from_int(20)
+}
+
+///|
+pub fn PROCESSINFOCLASS_5f459569e300::process_handle_information() -> PROCESSINFOCLASS_5f459569e300 {
+  PROCESSINFOCLASS_5f459569e300::from_int(51)
+}
+
+///|
+pub fn PROCESSINFOCLASS_5f459569e300::process_handle_table() -> PROCESSINFOCLASS_5f459569e300 {
+  PROCESSINFOCLASS_5f459569e300::from_int(58)
+}
+
+///|
+pub fn PROCESSINFOCLASS_5f459569e300::process_handle_tracing() -> PROCESSINFOCLASS_5f459569e300 {
+  PROCESSINFOCLASS_5f459569e300::from_int(32)
+}
+
+///|
+pub fn PROCESSINFOCLASS_5f459569e300::process_image_file_mapping() -> PROCESSINFOCLASS_5f459569e300 {
+  PROCESSINFOCLASS_5f459569e300::from_int(44)
+}
+
+///|
+pub fn PROCESSINFOCLASS_5f459569e300::process_image_file_name() -> PROCESSINFOCLASS_5f459569e300 {
+  PROCESSINFOCLASS_5f459569e300::from_int(27)
+}
+
+///|
+pub fn PROCESSINFOCLASS_5f459569e300::process_image_file_name_win32() -> PROCESSINFOCLASS_5f459569e300 {
+  PROCESSINFOCLASS_5f459569e300::from_int(43)
+}
+
+///|
+pub fn PROCESSINFOCLASS_5f459569e300::process_image_information() -> PROCESSINFOCLASS_5f459569e300 {
+  PROCESSINFOCLASS_5f459569e300::from_int(37)
+}
+
+///|
+pub fn PROCESSINFOCLASS_5f459569e300::process_in_private() -> PROCESSINFOCLASS_5f459569e300 {
+  PROCESSINFOCLASS_5f459569e300::from_int(70)
+}
+
+///|
+pub fn PROCESSINFOCLASS_5f459569e300::process_instrumentation_callback() -> PROCESSINFOCLASS_5f459569e300 {
+  PROCESSINFOCLASS_5f459569e300::from_int(40)
+}
+
+///|
+pub fn PROCESSINFOCLASS_5f459569e300::process_io_counters() -> PROCESSINFOCLASS_5f459569e300 {
+  PROCESSINFOCLASS_5f459569e300::from_int(2)
+}
+
+///|
+pub fn PROCESSINFOCLASS_5f459569e300::process_io_port_handlers() -> PROCESSINFOCLASS_5f459569e300 {
+  PROCESSINFOCLASS_5f459569e300::from_int(13)
+}
+
+///|
+pub fn PROCESSINFOCLASS_5f459569e300::process_io_priority() -> PROCESSINFOCLASS_5f459569e300 {
+  PROCESSINFOCLASS_5f459569e300::from_int(33)
+}
+
+///|
+pub fn PROCESSINFOCLASS_5f459569e300::process_keep_alive_count() -> PROCESSINFOCLASS_5f459569e300 {
+  PROCESSINFOCLASS_5f459569e300::from_int(55)
+}
+
+///|
+pub fn PROCESSINFOCLASS_5f459569e300::process_luid_device_maps_enabled() -> PROCESSINFOCLASS_5f459569e300 {
+  PROCESSINFOCLASS_5f459569e300::from_int(28)
+}
+
+///|
+pub fn PROCESSINFOCLASS_5f459569e300::process_ldt_information() -> PROCESSINFOCLASS_5f459569e300 {
+  PROCESSINFOCLASS_5f459569e300::from_int(10)
+}
+
+///|
+pub fn PROCESSINFOCLASS_5f459569e300::process_ldt_size() -> PROCESSINFOCLASS_5f459569e300 {
+  PROCESSINFOCLASS_5f459569e300::from_int(11)
+}
+
+///|
+pub fn PROCESSINFOCLASS_5f459569e300::process_memory_allocation_mode() -> PROCESSINFOCLASS_5f459569e300 {
+  PROCESSINFOCLASS_5f459569e300::from_int(46)
+}
+
+///|
+pub fn PROCESSINFOCLASS_5f459569e300::process_memory_exhaustion() -> PROCESSINFOCLASS_5f459569e300 {
+  PROCESSINFOCLASS_5f459569e300::from_int(62)
+}
+
+///|
+pub fn PROCESSINFOCLASS_5f459569e300::process_mitigation_policy() -> PROCESSINFOCLASS_5f459569e300 {
+  PROCESSINFOCLASS_5f459569e300::from_int(52)
+}
+
+///|
+pub fn PROCESSINFOCLASS_5f459569e300::process_owner_information() -> PROCESSINFOCLASS_5f459569e300 {
+  PROCESSINFOCLASS_5f459569e300::from_int(49)
+}
+
+///|
+pub fn PROCESSINFOCLASS_5f459569e300::process_page_priority() -> PROCESSINFOCLASS_5f459569e300 {
+  PROCESSINFOCLASS_5f459569e300::from_int(39)
+}
+
+///|
+pub fn PROCESSINFOCLASS_5f459569e300::process_pooled_usage_and_limits() -> PROCESSINFOCLASS_5f459569e300 {
+  PROCESSINFOCLASS_5f459569e300::from_int(14)
+}
+
+///|
+pub fn PROCESSINFOCLASS_5f459569e300::process_priority_boost() -> PROCESSINFOCLASS_5f459569e300 {
+  PROCESSINFOCLASS_5f459569e300::from_int(22)
+}
+
+///|
+pub fn PROCESSINFOCLASS_5f459569e300::process_priority_class() -> PROCESSINFOCLASS_5f459569e300 {
+  PROCESSINFOCLASS_5f459569e300::from_int(18)
+}
+
+///|
+pub fn PROCESSINFOCLASS_5f459569e300::process_protection_information() -> PROCESSINFOCLASS_5f459569e300 {
+  PROCESSINFOCLASS_5f459569e300::from_int(61)
+}
+
+///|
+pub fn PROCESSINFOCLASS_5f459569e300::process_quota_limits() -> PROCESSINFOCLASS_5f459569e300 {
+  PROCESSINFOCLASS_5f459569e300::from_int(1)
+}
+
+///|
+pub fn PROCESSINFOCLASS_5f459569e300::process_raise_priority() -> PROCESSINFOCLASS_5f459569e300 {
+  PROCESSINFOCLASS_5f459569e300::from_int(6)
+}
+
+///|
+pub fn PROCESSINFOCLASS_5f459569e300::process_raise_um_exception_on_invalid_handle_close() -> PROCESSINFOCLASS_5f459569e300 {
+  PROCESSINFOCLASS_5f459569e300::from_int(71)
+}
+
+///|
+pub fn PROCESSINFOCLASS_5f459569e300::process_reserved1_information() -> PROCESSINFOCLASS_5f459569e300 {
+  PROCESSINFOCLASS_5f459569e300::from_int(66)
+}
+
+///|
+pub fn PROCESSINFOCLASS_5f459569e300::process_reserved2_information() -> PROCESSINFOCLASS_5f459569e300 {
+  PROCESSINFOCLASS_5f459569e300::from_int(67)
+}
+
+///|
+pub fn PROCESSINFOCLASS_5f459569e300::process_revoke_file_handles() -> PROCESSINFOCLASS_5f459569e300 {
+  PROCESSINFOCLASS_5f459569e300::from_int(56)
+}
+
+///|
+pub fn PROCESSINFOCLASS_5f459569e300::process_session_information() -> PROCESSINFOCLASS_5f459569e300 {
+  PROCESSINFOCLASS_5f459569e300::from_int(24)
+}
+
+///|
+pub fn PROCESSINFOCLASS_5f459569e300::process_subsystem_information() -> PROCESSINFOCLASS_5f459569e300 {
+  PROCESSINFOCLASS_5f459569e300::from_int(75)
+}
+
+///|
+pub fn PROCESSINFOCLASS_5f459569e300::process_subsystem_process() -> PROCESSINFOCLASS_5f459569e300 {
+  PROCESSINFOCLASS_5f459569e300::from_int(68)
+}
+
+///|
+pub fn PROCESSINFOCLASS_5f459569e300::process_telemetry_id_information() -> PROCESSINFOCLASS_5f459569e300 {
+  PROCESSINFOCLASS_5f459569e300::from_int(64)
+}
+
+///|
+pub fn PROCESSINFOCLASS_5f459569e300::process_thread_stack_allocation() -> PROCESSINFOCLASS_5f459569e300 {
+  PROCESSINFOCLASS_5f459569e300::from_int(41)
+}
+
+///|
+pub fn PROCESSINFOCLASS_5f459569e300::process_times() -> PROCESSINFOCLASS_5f459569e300 {
+  PROCESSINFOCLASS_5f459569e300::from_int(4)
+}
+
+///|
+pub fn PROCESSINFOCLASS_5f459569e300::process_tls_information() -> PROCESSINFOCLASS_5f459569e300 {
+  PROCESSINFOCLASS_5f459569e300::from_int(35)
+}
+
+///|
+pub fn PROCESSINFOCLASS_5f459569e300::process_token_virtualization_enabled() -> PROCESSINFOCLASS_5f459569e300 {
+  PROCESSINFOCLASS_5f459569e300::from_int(48)
+}
+
+///|
+pub fn PROCESSINFOCLASS_5f459569e300::process_user_mode_iopl() -> PROCESSINFOCLASS_5f459569e300 {
+  PROCESSINFOCLASS_5f459569e300::from_int(16)
+}
+
+///|
+pub fn PROCESSINFOCLASS_5f459569e300::process_vm_counters() -> PROCESSINFOCLASS_5f459569e300 {
+  PROCESSINFOCLASS_5f459569e300::from_int(3)
+}
+
+///|
+pub fn PROCESSINFOCLASS_5f459569e300::process_win32k_syscall_filter_information() -> PROCESSINFOCLASS_5f459569e300 {
+  PROCESSINFOCLASS_5f459569e300::from_int(79)
+}
+
+///|
+pub fn PROCESSINFOCLASS_5f459569e300::process_window_information() -> PROCESSINFOCLASS_5f459569e300 {
+  PROCESSINFOCLASS_5f459569e300::from_int(50)
+}
+
+///|
+pub fn PROCESSINFOCLASS_5f459569e300::process_working_set_control() -> PROCESSINFOCLASS_5f459569e300 {
+  PROCESSINFOCLASS_5f459569e300::from_int(57)
+}
+
+///|
+pub fn PROCESSINFOCLASS_5f459569e300::process_working_set_watch() -> PROCESSINFOCLASS_5f459569e300 {
+  PROCESSINFOCLASS_5f459569e300::from_int(15)
+}
+
+///|
+pub fn PROCESSINFOCLASS_5f459569e300::process_working_set_watch_ex() -> PROCESSINFOCLASS_5f459569e300 {
+  PROCESSINFOCLASS_5f459569e300::from_int(42)
+}
+
+///|
+pub fn PROCESSINFOCLASS_5f459569e300::process_wow64_information() -> PROCESSINFOCLASS_5f459569e300 {
+  PROCESSINFOCLASS_5f459569e300::from_int(26)
+}
+
+///|
+pub fn PROCESSINFOCLASS_5f459569e300::process_wx86_information() -> PROCESSINFOCLASS_5f459569e300 {
+  PROCESSINFOCLASS_5f459569e300::from_int(19)
+}
+
+///|
+pub fn THREADINFOCLASS_384e64b6c221::max_thread_info_class() -> THREADINFOCLASS_384e64b6c221 {
+  THREADINFOCLASS_384e64b6c221::from_int(56)
+}
+
+///|
+pub fn THREADINFOCLASS_384e64b6c221::thread_actual_base_priority() -> THREADINFOCLASS_384e64b6c221 {
+  THREADINFOCLASS_384e64b6c221::from_int(25)
+}
+
+///|
+pub fn THREADINFOCLASS_384e64b6c221::thread_actual_group_affinity() -> THREADINFOCLASS_384e64b6c221 {
+  THREADINFOCLASS_384e64b6c221::from_int(41)
+}
+
+///|
+pub fn THREADINFOCLASS_384e64b6c221::thread_affinity_mask() -> THREADINFOCLASS_384e64b6c221 {
+  THREADINFOCLASS_384e64b6c221::from_int(4)
+}
+
+///|
+pub fn THREADINFOCLASS_384e64b6c221::thread_am_i_last_thread() -> THREADINFOCLASS_384e64b6c221 {
+  THREADINFOCLASS_384e64b6c221::from_int(12)
+}
+
+///|
+pub fn THREADINFOCLASS_384e64b6c221::thread_base_priority() -> THREADINFOCLASS_384e64b6c221 {
+  THREADINFOCLASS_384e64b6c221::from_int(3)
+}
+
+///|
+pub fn THREADINFOCLASS_384e64b6c221::thread_basic_information() -> THREADINFOCLASS_384e64b6c221 {
+  THREADINFOCLASS_384e64b6c221::from_int(0)
+}
+
+///|
+pub fn THREADINFOCLASS_384e64b6c221::thread_break_on_termination() -> THREADINFOCLASS_384e64b6c221 {
+  THREADINFOCLASS_384e64b6c221::from_int(18)
+}
+
+///|
+pub fn THREADINFOCLASS_384e64b6c221::thread_c_switch_mon() -> THREADINFOCLASS_384e64b6c221 {
+  THREADINFOCLASS_384e64b6c221::from_int(27)
+}
+
+///|
+pub fn THREADINFOCLASS_384e64b6c221::thread_c_switch_pmu() -> THREADINFOCLASS_384e64b6c221 {
+  THREADINFOCLASS_384e64b6c221::from_int(28)
+}
+
+///|
+pub fn THREADINFOCLASS_384e64b6c221::thread_counter_profiling() -> THREADINFOCLASS_384e64b6c221 {
+  THREADINFOCLASS_384e64b6c221::from_int(32)
+}
+
+///|
+pub fn THREADINFOCLASS_384e64b6c221::thread_cpu_accounting_information() -> THREADINFOCLASS_384e64b6c221 {
+  THREADINFOCLASS_384e64b6c221::from_int(34)
+}
+
+///|
+pub fn THREADINFOCLASS_384e64b6c221::thread_cycle_time() -> THREADINFOCLASS_384e64b6c221 {
+  THREADINFOCLASS_384e64b6c221::from_int(23)
+}
+
+///|
+pub fn THREADINFOCLASS_384e64b6c221::thread_descriptor_table_entry() -> THREADINFOCLASS_384e64b6c221 {
+  THREADINFOCLASS_384e64b6c221::from_int(6)
+}
+
+///|
+pub fn THREADINFOCLASS_384e64b6c221::thread_dynamic_code_policy_info() -> THREADINFOCLASS_384e64b6c221 {
+  THREADINFOCLASS_384e64b6c221::from_int(42)
+}
+
+///|
+pub fn THREADINFOCLASS_384e64b6c221::thread_enable_alignment_fault_fixup() -> THREADINFOCLASS_384e64b6c221 {
+  THREADINFOCLASS_384e64b6c221::from_int(7)
+}
+
+///|
+pub fn THREADINFOCLASS_384e64b6c221::thread_event_pair_reusable() -> THREADINFOCLASS_384e64b6c221 {
+  THREADINFOCLASS_384e64b6c221::from_int(8)
+}
+
+///|
+pub fn THREADINFOCLASS_384e64b6c221::thread_group_information() -> THREADINFOCLASS_384e64b6c221 {
+  THREADINFOCLASS_384e64b6c221::from_int(30)
+}
+
+///|
+pub fn THREADINFOCLASS_384e64b6c221::thread_hide_from_debugger() -> THREADINFOCLASS_384e64b6c221 {
+  THREADINFOCLASS_384e64b6c221::from_int(17)
+}
+
+///|
+pub fn THREADINFOCLASS_384e64b6c221::thread_ideal_processor() -> THREADINFOCLASS_384e64b6c221 {
+  THREADINFOCLASS_384e64b6c221::from_int(13)
+}
+
+///|
+pub fn THREADINFOCLASS_384e64b6c221::thread_ideal_processor_ex() -> THREADINFOCLASS_384e64b6c221 {
+  THREADINFOCLASS_384e64b6c221::from_int(33)
+}
+
+///|
+pub fn THREADINFOCLASS_384e64b6c221::thread_impersonation_token() -> THREADINFOCLASS_384e64b6c221 {
+  THREADINFOCLASS_384e64b6c221::from_int(5)
+}
+
+///|
+pub fn THREADINFOCLASS_384e64b6c221::thread_io_priority() -> THREADINFOCLASS_384e64b6c221 {
+  THREADINFOCLASS_384e64b6c221::from_int(22)
+}
+
+///|
+pub fn THREADINFOCLASS_384e64b6c221::thread_is_io_pending() -> THREADINFOCLASS_384e64b6c221 {
+  THREADINFOCLASS_384e64b6c221::from_int(16)
+}
+
+///|
+pub fn THREADINFOCLASS_384e64b6c221::thread_is_terminated() -> THREADINFOCLASS_384e64b6c221 {
+  THREADINFOCLASS_384e64b6c221::from_int(20)
+}
+
+///|
+pub fn THREADINFOCLASS_384e64b6c221::thread_last_system_call() -> THREADINFOCLASS_384e64b6c221 {
+  THREADINFOCLASS_384e64b6c221::from_int(21)
+}
+
+///|
+pub fn THREADINFOCLASS_384e64b6c221::thread_name_information() -> THREADINFOCLASS_384e64b6c221 {
+  THREADINFOCLASS_384e64b6c221::from_int(38)
+}
+
+///|
+pub fn THREADINFOCLASS_384e64b6c221::thread_page_priority() -> THREADINFOCLASS_384e64b6c221 {
+  THREADINFOCLASS_384e64b6c221::from_int(24)
+}
+
+///|
+pub fn THREADINFOCLASS_384e64b6c221::thread_performance_count() -> THREADINFOCLASS_384e64b6c221 {
+  THREADINFOCLASS_384e64b6c221::from_int(11)
+}
+
+///|
+pub fn THREADINFOCLASS_384e64b6c221::thread_priority() -> THREADINFOCLASS_384e64b6c221 {
+  THREADINFOCLASS_384e64b6c221::from_int(2)
+}
+
+///|
+pub fn THREADINFOCLASS_384e64b6c221::thread_priority_boost() -> THREADINFOCLASS_384e64b6c221 {
+  THREADINFOCLASS_384e64b6c221::from_int(14)
+}
+
+///|
+pub fn THREADINFOCLASS_384e64b6c221::thread_query_set_win32_start_address() -> THREADINFOCLASS_384e64b6c221 {
+  THREADINFOCLASS_384e64b6c221::from_int(9)
+}
+
+///|
+pub fn THREADINFOCLASS_384e64b6c221::thread_set_tls_array_address() -> THREADINFOCLASS_384e64b6c221 {
+  THREADINFOCLASS_384e64b6c221::from_int(15)
+}
+
+///|
+pub fn THREADINFOCLASS_384e64b6c221::thread_subsystem_information() -> THREADINFOCLASS_384e64b6c221 {
+  THREADINFOCLASS_384e64b6c221::from_int(45)
+}
+
+///|
+pub fn THREADINFOCLASS_384e64b6c221::thread_suspend_count() -> THREADINFOCLASS_384e64b6c221 {
+  THREADINFOCLASS_384e64b6c221::from_int(35)
+}
+
+///|
+pub fn THREADINFOCLASS_384e64b6c221::thread_switch_legacy_state() -> THREADINFOCLASS_384e64b6c221 {
+  THREADINFOCLASS_384e64b6c221::from_int(19)
+}
+
+///|
+pub fn THREADINFOCLASS_384e64b6c221::thread_teb_information() -> THREADINFOCLASS_384e64b6c221 {
+  THREADINFOCLASS_384e64b6c221::from_int(26)
+}
+
+///|
+pub fn THREADINFOCLASS_384e64b6c221::thread_times() -> THREADINFOCLASS_384e64b6c221 {
+  THREADINFOCLASS_384e64b6c221::from_int(1)
+}
+
+///|
+pub fn THREADINFOCLASS_384e64b6c221::thread_ums_information() -> THREADINFOCLASS_384e64b6c221 {
+  THREADINFOCLASS_384e64b6c221::from_int(31)
+}
+
+///|
+pub fn THREADINFOCLASS_384e64b6c221::thread_wow64_context() -> THREADINFOCLASS_384e64b6c221 {
+  THREADINFOCLASS_384e64b6c221::from_int(29)
+}
+
+///|
+pub fn THREADINFOCLASS_384e64b6c221::thread_zero_tls_cell() -> THREADINFOCLASS_384e64b6c221 {
+  THREADINFOCLASS_384e64b6c221::from_int(10)
+}
+
+///|
+pub fn TIMERSETINFORMATIONCLASS_db75c41cc15b::max_timer_info_class() -> TIMERSETINFORMATIONCLASS_db75c41cc15b {
+  TIMERSETINFORMATIONCLASS_db75c41cc15b::from_int(1)
+}
+
+///|
+pub fn TIMERSETINFORMATIONCLASS_db75c41cc15b::timer_set_coalescable_timer() -> TIMERSETINFORMATIONCLASS_db75c41cc15b {
+  TIMERSETINFORMATIONCLASS_db75c41cc15b::from_int(0)
+}

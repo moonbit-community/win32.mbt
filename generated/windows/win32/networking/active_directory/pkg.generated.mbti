@@ -1,0 +1,2535 @@
+// Generated using `moon info`, DON'T EDIT IT
+package "moonbit-community/win32api/windows/win32/networking/active_directory"
+
+import {
+  "moonbit-community/win32api/runtime/core",
+  "moonbit-community/win32api/runtime/strings",
+  "moonbit-community/win32api/scc/56b2b15971268c58",
+  "moonbit-community/win32api/scc/58228b76ec7374fa",
+  "moonbit-community/win32api/scc/7ca9e13be49370eb",
+  "moonbit-community/win32api/scc/bcab0927f447d71b",
+}
+
+// Values
+pub fn a_ds_build_enumerator(@core.RawAddress, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn a_ds_build_enumerator_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn a_ds_build_var_array_int(@core.RawAddress, UInt, @58228b76ec7374fa.VARIANTAnonymousEUnion_440f47c7058e) -> Int raise @core.WindowsError
+
+pub fn a_ds_build_var_array_int_raw(@core.RawAddress, UInt, @core.RawAddress) -> Int
+
+pub fn a_ds_build_var_array_str(@core.RawAddress, UInt, @58228b76ec7374fa.VARIANTAnonymousEUnion_440f47c7058e) -> Int raise @core.WindowsError
+
+pub fn a_ds_build_var_array_str_raw(@core.RawAddress, UInt, @core.RawAddress) -> Int
+
+pub fn a_ds_decode_binary_data(@strings.PWStr, @core.RawAddress, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn a_ds_decode_binary_data_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn a_ds_encode_binary_data(@core.RawAddress, UInt, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn a_ds_encode_binary_data_raw(@core.RawAddress, UInt, @core.RawAddress) -> Int
+
+pub fn a_ds_enumerate_next(@core.RawAddress, UInt, @58228b76ec7374fa.VARIANTAnonymousEUnion_440f47c7058e, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn a_ds_enumerate_next_raw(@core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn a_ds_free_enumerator(@core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn a_ds_free_enumerator_raw(@core.RawAddress) -> Int
+
+pub fn a_ds_get_last_error(@core.RawAddress, @strings.PWStrBuffer, @strings.PWStrBuffer) -> Int raise @core.WindowsError
+
+pub fn a_ds_get_last_error_raw(@core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, UInt) -> @core.RawWin32Call[Int]
+
+pub fn a_ds_get_object(@strings.PWStr, @core.RawAddress, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn a_ds_get_object_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn a_ds_open_object(@strings.PWStr, @strings.PWStr, @strings.PWStr, @56b2b15971268c58.ADSAUTHENTICATIONENUM_4acfc9c44407, @core.RawAddress, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn a_ds_open_object_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn a_ds_prop_check_if_writable(@strings.PWStr, @56b2b15971268c58.ADSATTRINFO_4914f07ffa52) -> Bool raise @core.WindowsError
+
+pub fn a_ds_prop_check_if_writable_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn a_ds_prop_create_notify_obj(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn a_ds_prop_create_notify_obj_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn a_ds_prop_get_init_info(@core.RawAddress, @56b2b15971268c58.ADSPROPINITPARAMS_99bea407360c) -> Bool raise @core.WindowsError
+
+pub fn a_ds_prop_get_init_info_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn a_ds_prop_send_error_message(@core.RawAddress, @56b2b15971268c58.ADSPROPERROR_ffa00d64d2bf) -> Bool raise @core.WindowsError
+
+pub fn a_ds_prop_send_error_message_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn a_ds_prop_set_hwnd(@core.RawAddress, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn a_ds_prop_set_hwnd_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn a_ds_prop_set_hwnd_with_title(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn a_ds_prop_set_hwnd_with_title_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn a_ds_prop_show_error_dialog(@core.RawAddress, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn a_ds_prop_show_error_dialog_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn a_ds_set_last_error(UInt, @strings.PWStr, @strings.PWStr) -> Unit raise @core.WindowsError
+
+pub fn a_ds_set_last_error_raw(UInt, @core.RawAddress, @core.RawAddress) -> Unit
+
+pub let actrl_ds_control_access : UInt
+
+pub let actrl_ds_create_child : UInt
+
+pub let actrl_ds_delete_child : UInt
+
+pub let actrl_ds_delete_tree : UInt
+
+pub let actrl_ds_list : UInt
+
+pub let actrl_ds_list_object : UInt
+
+pub let actrl_ds_open : UInt
+
+pub let actrl_ds_read_prop : UInt
+
+pub let actrl_ds_self : UInt
+
+pub let actrl_ds_write_prop : UInt
+
+pub let adam_repl_authentication_mode_mutual_auth_required : UInt
+
+pub let adam_repl_authentication_mode_negotiate : UInt
+
+pub let adam_repl_authentication_mode_negotiate_pass_through : UInt
+
+pub let adam_scp_fsmo_naming_string : String
+
+pub let adam_scp_fsmo_naming_string_w : String
+
+pub let adam_scp_fsmo_schema_string : String
+
+pub let adam_scp_fsmo_schema_string_w : String
+
+pub let adam_scp_fsmo_string : String
+
+pub let adam_scp_fsmo_string_w : String
+
+pub let adam_scp_instance_name_string : String
+
+pub let adam_scp_instance_name_string_w : String
+
+pub let adam_scp_partition_string : String
+
+pub let adam_scp_partition_string_w : String
+
+pub let adam_scp_site_name_string : String
+
+pub let adam_scp_site_name_string_w : String
+
+pub let ads_attr_append : UInt
+
+pub let ads_attr_clear : UInt
+
+pub let ads_attr_delete : UInt
+
+pub let ads_attr_update : UInt
+
+pub let ads_ext_initcredentials : UInt
+
+pub let ads_ext_initialize_complete : UInt
+
+pub let ads_ext_maxextdispid : UInt
+
+pub let ads_ext_minextdispid : UInt
+
+pub fn ads_free_ads_values(@56b2b15971268c58.ADSVALUE_375c9b16d14c, UInt) -> Unit raise @core.WindowsError
+
+pub fn ads_free_ads_values_raw(@core.RawAddress, UInt) -> Unit
+
+pub fn ads_type_to_prop_variant(@56b2b15971268c58.ADSVALUE_375c9b16d14c, UInt, @58228b76ec7374fa.VARIANTAnonymousEUnion_440f47c7058e) -> Int raise @core.WindowsError
+
+pub fn ads_type_to_prop_variant_raw(@core.RawAddress, UInt, @core.RawAddress) -> Int
+
+pub fn alloc_a_ds_mem(UInt) -> @core.RawAddress raise @core.WindowsError
+
+pub fn alloc_a_ds_mem_raw(UInt) -> @core.RawAddress
+
+pub fn alloc_a_ds_str(@strings.PWStr) -> @core.RawAddress raise @core.WindowsError
+
+pub fn alloc_a_ds_str_raw(@core.RawAddress) -> @core.RawAddress
+
+pub fn binary_sd_to_security_descriptor(@core.RawAddress, @58228b76ec7374fa.VARIANTAnonymousEUnion_440f47c7058e, @strings.PWStr, @strings.PWStr, @strings.PWStr, UInt) -> Int raise @core.WindowsError
+
+pub fn binary_sd_to_security_descriptor_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, UInt) -> Int
+
+pub let cfstr_ds_display_spec_options : String
+
+pub let cfstr_dsdisplayspecoptions : String
+
+pub let cfstr_dsobjectnames : String
+
+pub let cfstr_dsop_ds_selection_list : String
+
+pub let cfstr_dspropertypageinfo : String
+
+pub let cfstr_dsqueryparams : String
+
+pub let cfstr_dsqueryscope : String
+
+pub let cqff_isoptional : UInt
+
+pub let cqff_noglobalpages : UInt
+
+pub let cqpm_clearform : UInt
+
+pub let cqpm_enable : UInt
+
+pub let cqpm_getparameters : UInt
+
+pub let cqpm_handlerspecific : UInt
+
+pub let cqpm_help : UInt
+
+pub let cqpm_initialize : UInt
+
+pub let cqpm_persist : UInt
+
+pub let cqpm_release : UInt
+
+pub let cqpm_setdefaultparameters : UInt
+
+pub let dbdtf_returnexternal : UInt
+
+pub let dbdtf_returnfqdn : UInt
+
+pub let dbdtf_returninbound : UInt
+
+pub let dbdtf_returninoutbound : UInt
+
+pub let dbdtf_returnmixeddomains : UInt
+
+pub fn ds_add_sid_history_a(@core.RawAddress, UInt, @strings.PStr, @strings.PStr, @strings.PStr?, @core.RawAddress, @strings.PStr, @strings.PStr) -> UInt raise @core.WindowsError
+
+pub fn ds_add_sid_history_a_raw(@core.RawAddress, UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn ds_add_sid_history_w(@core.RawAddress, UInt, @strings.PWStr, @strings.PWStr, @strings.PWStr?, @core.RawAddress, @strings.PWStr, @strings.PWStr) -> UInt raise @core.WindowsError
+
+pub fn ds_add_sid_history_w_raw(@core.RawAddress, UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn ds_address_to_site_names_a(@strings.PStr?, UInt, @7ca9e13be49370eb.SOCKETADDRESS_4e229ac2412e, @core.RawAddress) -> UInt raise @core.WindowsError
+
+pub fn ds_address_to_site_names_a_raw(@core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn ds_address_to_site_names_ex_a(@strings.PStr?, UInt, @7ca9e13be49370eb.SOCKETADDRESS_4e229ac2412e, @core.RawAddress, @core.RawAddress) -> UInt raise @core.WindowsError
+
+pub fn ds_address_to_site_names_ex_a_raw(@core.RawAddress, UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn ds_address_to_site_names_ex_w(@strings.PWStr?, UInt, @7ca9e13be49370eb.SOCKETADDRESS_4e229ac2412e, @core.RawAddress, @core.RawAddress) -> UInt raise @core.WindowsError
+
+pub fn ds_address_to_site_names_ex_w_raw(@core.RawAddress, UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn ds_address_to_site_names_w(@strings.PWStr?, UInt, @7ca9e13be49370eb.SOCKETADDRESS_4e229ac2412e, @core.RawAddress) -> UInt raise @core.WindowsError
+
+pub fn ds_address_to_site_names_w_raw(@core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub let ds_avoid_self : UInt
+
+pub let ds_background_only : UInt
+
+pub let ds_behavior_longhorn : UInt
+
+pub let ds_behavior_win2000 : UInt
+
+pub let ds_behavior_win2003 : UInt
+
+pub let ds_behavior_win2003_with_mixed_domains : UInt
+
+pub let ds_behavior_win2008 : UInt
+
+pub let ds_behavior_win2008_r2 : UInt
+
+pub let ds_behavior_win2012 : UInt
+
+pub let ds_behavior_win2012_r2 : UInt
+
+pub let ds_behavior_win2016 : UInt
+
+pub let ds_behavior_win2025 : UInt
+
+pub let ds_behavior_win7 : UInt
+
+pub let ds_behavior_win8 : UInt
+
+pub let ds_behavior_winblue : UInt
+
+pub let ds_behavior_winthreshold : UInt
+
+pub fn ds_bind_a(@strings.PStr?, @strings.PStr?, @core.RawAddress) -> UInt raise @core.WindowsError
+
+pub fn ds_bind_a_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn ds_bind_by_instance_a(@strings.PStr?, @strings.PStr?, @core.RawAddress, @strings.PStr?, @core.RawAddress, @strings.PStr?, UInt, @core.RawAddress) -> UInt raise @core.WindowsError
+
+pub fn ds_bind_by_instance_a_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, UInt, @core.RawAddress) -> UInt
+
+pub fn ds_bind_by_instance_w(@strings.PWStr?, @strings.PWStr?, @core.RawAddress, @strings.PWStr?, @core.RawAddress, @strings.PWStr?, UInt, @core.RawAddress) -> UInt raise @core.WindowsError
+
+pub fn ds_bind_by_instance_w_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, UInt, @core.RawAddress) -> UInt
+
+pub fn ds_bind_to_istga(@strings.PStr?, @core.RawAddress) -> UInt raise @core.WindowsError
+
+pub fn ds_bind_to_istga_raw(@core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn ds_bind_to_istgw(@strings.PWStr?, @core.RawAddress) -> UInt raise @core.WindowsError
+
+pub fn ds_bind_to_istgw_raw(@core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn ds_bind_w(@strings.PWStr?, @strings.PWStr?, @core.RawAddress) -> UInt raise @core.WindowsError
+
+pub fn ds_bind_w_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn ds_bind_with_cred_a(@strings.PStr?, @strings.PStr?, @core.RawAddress, @core.RawAddress) -> UInt raise @core.WindowsError
+
+pub fn ds_bind_with_cred_a_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn ds_bind_with_cred_w(@strings.PWStr?, @strings.PWStr?, @core.RawAddress, @core.RawAddress) -> UInt raise @core.WindowsError
+
+pub fn ds_bind_with_cred_w_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn ds_bind_with_spn_a(@strings.PStr?, @strings.PStr?, @core.RawAddress, @strings.PStr?, @core.RawAddress) -> UInt raise @core.WindowsError
+
+pub fn ds_bind_with_spn_a_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn ds_bind_with_spn_ex_a(@strings.PStr?, @strings.PStr?, @core.RawAddress, @strings.PStr?, UInt, @core.RawAddress) -> UInt raise @core.WindowsError
+
+pub fn ds_bind_with_spn_ex_a_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, UInt, @core.RawAddress) -> UInt
+
+pub fn ds_bind_with_spn_ex_w(@strings.PWStr?, @strings.PWStr?, @core.RawAddress, @strings.PWStr?, UInt, @core.RawAddress) -> UInt raise @core.WindowsError
+
+pub fn ds_bind_with_spn_ex_w_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, UInt, @core.RawAddress) -> UInt
+
+pub fn ds_bind_with_spn_w(@strings.PWStr?, @strings.PWStr?, @core.RawAddress, @strings.PWStr?, @core.RawAddress) -> UInt raise @core.WindowsError
+
+pub fn ds_bind_with_spn_w_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn ds_binding_set_timeout(@core.RawAddress, UInt) -> UInt raise @core.WindowsError
+
+pub fn ds_binding_set_timeout_raw(@core.RawAddress, UInt) -> UInt
+
+pub fn ds_browse_for_container_a(@56b2b15971268c58.DSBROWSEINFOA_ea5d04680b82) -> Int raise @core.WindowsError
+
+pub fn ds_browse_for_container_a_raw(@core.RawAddress) -> Int
+
+pub fn ds_browse_for_container_w(@56b2b15971268c58.DSBROWSEINFOW_de3d100b82a2) -> Int raise @core.WindowsError
+
+pub fn ds_browse_for_container_w_raw(@core.RawAddress) -> Int
+
+pub fn ds_client_make_spn_for_target_server_a(@strings.PStr, @strings.PStr, @core.RawAddress, @core.RawAddress) -> UInt raise @core.WindowsError
+
+pub fn ds_client_make_spn_for_target_server_a_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn ds_client_make_spn_for_target_server_w_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub let ds_closest_flag : UInt
+
+pub fn ds_crack_names_a(@core.RawAddress, @56b2b15971268c58.DSNAMEFLAGS_202bf474b5c0, @56b2b15971268c58.DSNAMEFORMAT_aba9abd3e253, @56b2b15971268c58.DSNAMEFORMAT_aba9abd3e253, UInt, @strings.PStr, @core.RawAddress) -> UInt raise @core.WindowsError
+
+pub fn ds_crack_names_a_raw(@core.RawAddress, Int, Int, Int, UInt, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn ds_crack_names_w(@core.RawAddress, @56b2b15971268c58.DSNAMEFLAGS_202bf474b5c0, @56b2b15971268c58.DSNAMEFORMAT_aba9abd3e253, @56b2b15971268c58.DSNAMEFORMAT_aba9abd3e253, UInt, @strings.PWStr, @core.RawAddress) -> UInt raise @core.WindowsError
+
+pub fn ds_crack_names_w_raw(@core.RawAddress, Int, Int, Int, UInt, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn ds_crack_spn2_a(@strings.PStr, UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt raise @core.WindowsError
+
+pub fn ds_crack_spn2_a_raw(@core.RawAddress, UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn ds_crack_spn2_w_raw(@core.RawAddress, UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn ds_crack_spn3_w_raw(@core.RawAddress, UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn ds_crack_spn4_w_raw(@core.RawAddress, UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn ds_crack_spn_a(@strings.PStr, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt raise @core.WindowsError
+
+pub fn ds_crack_spn_a_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn ds_crack_spn_w_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn ds_crack_unquoted_mangled_rdn_a(@strings.PStr, UInt, @core.RawAddress, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn ds_crack_unquoted_mangled_rdn_a_raw(@core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn ds_crack_unquoted_mangled_rdn_w(@strings.PWStr, UInt, @core.RawAddress, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn ds_crack_unquoted_mangled_rdn_w_raw(@core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn ds_deregister_dns_host_records_a(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt raise @core.WindowsError
+
+pub fn ds_deregister_dns_host_records_a_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn ds_deregister_dns_host_records_w(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt raise @core.WindowsError
+
+pub fn ds_deregister_dns_host_records_w_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub let ds_directory_service_10_required : UInt
+
+pub let ds_directory_service_13_required : UInt
+
+pub let ds_directory_service_6_required : UInt
+
+pub let ds_directory_service_8_required : UInt
+
+pub let ds_directory_service_9_required : UInt
+
+pub let ds_directory_service_preferred : UInt
+
+pub let ds_directory_service_required : UInt
+
+pub let ds_dns_controller_flag : UInt
+
+pub let ds_dns_domain_flag : UInt
+
+pub let ds_dns_forest_flag : UInt
+
+pub let ds_domain_direct_inbound : UInt
+
+pub let ds_domain_direct_outbound : UInt
+
+pub let ds_domain_in_forest : UInt
+
+pub let ds_domain_native_mode : UInt
+
+pub let ds_domain_primary : UInt
+
+pub let ds_domain_tree_root : UInt
+
+pub let ds_ds_10_flag : UInt
+
+pub let ds_ds_13_flag : UInt
+
+pub let ds_ds_8_flag : UInt
+
+pub let ds_ds_9_flag : UInt
+
+pub let ds_ds_flag : UInt
+
+pub fn ds_enumerate_domain_trusts_a(@core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> UInt raise @core.WindowsError
+
+pub fn ds_enumerate_domain_trusts_a_raw(@core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn ds_enumerate_domain_trusts_w(@core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> UInt raise @core.WindowsError
+
+pub fn ds_enumerate_domain_trusts_w_raw(@core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub let ds_exist_advisory_mode : UInt
+
+pub let ds_force_rediscovery : UInt
+
+pub fn ds_free_domain_controller_info_a(UInt, UInt, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn ds_free_domain_controller_info_a_raw(UInt, UInt, @core.RawAddress) -> Unit
+
+pub fn ds_free_domain_controller_info_w(UInt, UInt, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn ds_free_domain_controller_info_w_raw(UInt, UInt, @core.RawAddress) -> Unit
+
+pub fn ds_free_name_result_a(@56b2b15971268c58.DSNAMERESULTA_f3db6f93d791) -> Unit raise @core.WindowsError
+
+pub fn ds_free_name_result_a_raw(@core.RawAddress) -> Unit
+
+pub fn ds_free_name_result_w(@56b2b15971268c58.DSNAMERESULTW_24d0e8a94581) -> Unit raise @core.WindowsError
+
+pub fn ds_free_name_result_w_raw(@core.RawAddress) -> Unit
+
+pub fn ds_free_password_credentials(@core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn ds_free_password_credentials_raw(@core.RawAddress) -> Unit
+
+pub fn ds_free_schema_guid_map_a(@56b2b15971268c58.DSSCHEMAGUIDMAPA_1b5c36be3302) -> Unit raise @core.WindowsError
+
+pub fn ds_free_schema_guid_map_a_raw(@core.RawAddress) -> Unit
+
+pub fn ds_free_schema_guid_map_w(@56b2b15971268c58.DSSCHEMAGUIDMAPW_cab2779abb9c) -> Unit raise @core.WindowsError
+
+pub fn ds_free_schema_guid_map_w_raw(@core.RawAddress) -> Unit
+
+pub fn ds_free_spn_array_a(UInt, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn ds_free_spn_array_a_raw(UInt, @core.RawAddress) -> Unit
+
+pub fn ds_free_spn_array_w(@strings.PWStrBuffer) -> Unit raise @core.WindowsError
+
+pub fn ds_free_spn_array_w_raw(UInt, @core.RawAddress) -> Unit
+
+pub let ds_full_secret_domain_6_flag : UInt
+
+pub let ds_gc_flag : UInt
+
+pub let ds_gc_server_required : UInt
+
+pub fn ds_get_dc_close_w(@core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn ds_get_dc_close_w_raw(@core.RawAddress) -> Unit
+
+pub fn ds_get_dc_name_a(@strings.PStr?, @strings.PStr?, @core.RawAddress, @strings.PStr?, UInt, @core.RawAddress) -> UInt raise @core.WindowsError
+
+pub fn ds_get_dc_name_a_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, UInt, @core.RawAddress) -> UInt
+
+pub fn ds_get_dc_name_w(@strings.PWStr?, @strings.PWStr?, @core.RawAddress, @strings.PWStr?, UInt, @core.RawAddress) -> UInt raise @core.WindowsError
+
+pub fn ds_get_dc_name_w_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, UInt, @core.RawAddress) -> UInt
+
+pub fn ds_get_dc_next_a(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt raise @core.WindowsError
+
+pub fn ds_get_dc_next_a_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn ds_get_dc_next_w(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt raise @core.WindowsError
+
+pub fn ds_get_dc_next_w_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn ds_get_dc_open_a(@strings.PStr, UInt, @strings.PStr?, @core.RawAddress, @strings.PStr?, UInt, @core.RawAddress) -> UInt raise @core.WindowsError
+
+pub fn ds_get_dc_open_a_raw(@core.RawAddress, UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress, UInt, @core.RawAddress) -> UInt
+
+pub fn ds_get_dc_open_w(@strings.PWStr, UInt, @strings.PWStr?, @core.RawAddress, @strings.PWStr?, UInt, @core.RawAddress) -> UInt raise @core.WindowsError
+
+pub fn ds_get_dc_open_w_raw(@core.RawAddress, UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress, UInt, @core.RawAddress) -> UInt
+
+pub fn ds_get_dc_site_coverage_a(@strings.PStr?, @core.RawAddress, @core.RawAddress) -> UInt raise @core.WindowsError
+
+pub fn ds_get_dc_site_coverage_a_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn ds_get_dc_site_coverage_w(@strings.PWStr?, @core.RawAddress, @core.RawAddress) -> UInt raise @core.WindowsError
+
+pub fn ds_get_dc_site_coverage_w_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn ds_get_domain_controller_info_a(@core.RawAddress, @strings.PStr, UInt, @core.RawAddress, @core.RawAddress) -> UInt raise @core.WindowsError
+
+pub fn ds_get_domain_controller_info_a_raw(@core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn ds_get_domain_controller_info_w(@core.RawAddress, @strings.PWStr, UInt, @core.RawAddress, @core.RawAddress) -> UInt raise @core.WindowsError
+
+pub fn ds_get_domain_controller_info_w_raw(@core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn ds_get_forest_trust_information_w(@strings.PWStr?, @strings.PWStr?, UInt, @core.RawAddress) -> UInt raise @core.WindowsError
+
+pub fn ds_get_forest_trust_information_w_raw(@core.RawAddress, @core.RawAddress, UInt, @core.RawAddress) -> UInt
+
+pub fn ds_get_friendly_class_name(@strings.PWStr, @strings.PWStrBuffer) -> Int raise @core.WindowsError
+
+pub fn ds_get_friendly_class_name_raw(@core.RawAddress, @core.RawAddress, UInt) -> Int
+
+pub fn ds_get_icon(UInt, @strings.PWStr, Int, Int) -> @core.RawAddress raise @core.WindowsError
+
+pub fn ds_get_icon_raw(UInt, @core.RawAddress, Int, Int) -> @core.RawAddress
+
+pub fn ds_get_rdn_w_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn ds_get_site_name_a(@strings.PStr?, @core.RawAddress) -> UInt raise @core.WindowsError
+
+pub fn ds_get_site_name_a_raw(@core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn ds_get_site_name_w(@strings.PWStr?, @core.RawAddress) -> UInt raise @core.WindowsError
+
+pub fn ds_get_site_name_w_raw(@core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn ds_get_spn_a(@56b2b15971268c58.DSSPNNAMETYPE_eceffcda12fb, @strings.PStr, @strings.PStr?, UInt16, UInt16, @strings.PStr?, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt raise @core.WindowsError
+
+pub fn ds_get_spn_a_raw(Int, @core.RawAddress, @core.RawAddress, UInt, UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn ds_get_spn_w(@56b2b15971268c58.DSSPNNAMETYPE_eceffcda12fb, @strings.PWStr, @strings.PWStr?, UInt16, UInt16, @strings.PWStr?, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt raise @core.WindowsError
+
+pub fn ds_get_spn_w_raw(Int, @core.RawAddress, @core.RawAddress, UInt, UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub let ds_gfti_update_tdo : UInt
+
+pub let ds_gfti_valid_flags : UInt
+
+pub let ds_good_timeserv_flag : UInt
+
+pub let ds_good_timeserv_preferred : UInt
+
+pub fn ds_inherit_security_identity_a(@core.RawAddress, UInt, @strings.PStr, @strings.PStr) -> UInt raise @core.WindowsError
+
+pub fn ds_inherit_security_identity_a_raw(@core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn ds_inherit_security_identity_w(@core.RawAddress, UInt, @strings.PWStr, @strings.PWStr) -> UInt raise @core.WindowsError
+
+pub fn ds_inherit_security_identity_w_raw(@core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub let ds_instancetype_is_nc_head : UInt
+
+pub let ds_instancetype_nc_coming : UInt
+
+pub let ds_instancetype_nc_going : UInt
+
+pub let ds_instancetype_nc_is_writeable : UInt
+
+pub let ds_ip_required : UInt
+
+pub let ds_is_dns_name : UInt
+
+pub let ds_is_flat_name : UInt
+
+pub fn ds_is_mangled_dn_a(@strings.PStr, @56b2b15971268c58.DSMANGLEFOR_af0dea6ca28c) -> Bool raise @core.WindowsError
+
+pub fn ds_is_mangled_dn_a_raw(@core.RawAddress, Int) -> Int
+
+pub fn ds_is_mangled_dn_w(@strings.PWStr, @56b2b15971268c58.DSMANGLEFOR_af0dea6ca28c) -> Bool raise @core.WindowsError
+
+pub fn ds_is_mangled_dn_w_raw(@core.RawAddress, Int) -> Int
+
+pub fn ds_is_mangled_rdn_value_a(@strings.PStr, UInt, @56b2b15971268c58.DSMANGLEFOR_af0dea6ca28c) -> Bool raise @core.WindowsError
+
+pub fn ds_is_mangled_rdn_value_a_raw(@core.RawAddress, UInt, Int) -> Int
+
+pub fn ds_is_mangled_rdn_value_w(@strings.PWStr, UInt, @56b2b15971268c58.DSMANGLEFOR_af0dea6ca28c) -> Bool raise @core.WindowsError
+
+pub fn ds_is_mangled_rdn_value_w_raw(@core.RawAddress, UInt, Int) -> Int
+
+pub let ds_kcc_flag_async_op : UInt
+
+pub let ds_kcc_flag_damped : UInt
+
+pub let ds_kdc_flag : UInt
+
+pub let ds_kdc_required : UInt
+
+pub let ds_key_list_flag : UInt
+
+pub let ds_key_list_support_required : UInt
+
+pub let ds_ldap_flag : UInt
+
+pub let ds_list_account_object_for_server : UInt
+
+pub let ds_list_dns_host_name_for_server : UInt
+
+pub fn ds_list_domains_in_site_a(@core.RawAddress, @strings.PStr, @core.RawAddress) -> UInt raise @core.WindowsError
+
+pub fn ds_list_domains_in_site_a_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn ds_list_domains_in_site_w(@core.RawAddress, @strings.PWStr, @core.RawAddress) -> UInt raise @core.WindowsError
+
+pub fn ds_list_domains_in_site_w_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub let ds_list_dsa_object_for_server : UInt
+
+pub fn ds_list_info_for_server_a(@core.RawAddress, @strings.PStr, @core.RawAddress) -> UInt raise @core.WindowsError
+
+pub fn ds_list_info_for_server_a_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn ds_list_info_for_server_w(@core.RawAddress, @strings.PWStr, @core.RawAddress) -> UInt raise @core.WindowsError
+
+pub fn ds_list_info_for_server_w_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn ds_list_roles_a(@core.RawAddress, @core.RawAddress) -> UInt raise @core.WindowsError
+
+pub fn ds_list_roles_a_raw(@core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn ds_list_roles_w(@core.RawAddress, @core.RawAddress) -> UInt raise @core.WindowsError
+
+pub fn ds_list_roles_w_raw(@core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn ds_list_servers_for_domain_in_site_a(@core.RawAddress, @strings.PStr, @strings.PStr, @core.RawAddress) -> UInt raise @core.WindowsError
+
+pub fn ds_list_servers_for_domain_in_site_a_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn ds_list_servers_for_domain_in_site_w(@core.RawAddress, @strings.PWStr, @strings.PWStr, @core.RawAddress) -> UInt raise @core.WindowsError
+
+pub fn ds_list_servers_for_domain_in_site_w_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn ds_list_servers_in_site_a(@core.RawAddress, @strings.PStr, @core.RawAddress) -> UInt raise @core.WindowsError
+
+pub fn ds_list_servers_in_site_a_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn ds_list_servers_in_site_w(@core.RawAddress, @strings.PWStr, @core.RawAddress) -> UInt raise @core.WindowsError
+
+pub fn ds_list_servers_in_site_w_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn ds_list_sites_a(@core.RawAddress, @core.RawAddress) -> UInt raise @core.WindowsError
+
+pub fn ds_list_sites_a_raw(@core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn ds_list_sites_w(@core.RawAddress, @core.RawAddress) -> UInt raise @core.WindowsError
+
+pub fn ds_list_sites_w_raw(@core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn ds_make_password_credentials_a(@strings.PStr?, @strings.PStr?, @strings.PStr?, @core.RawAddress) -> UInt raise @core.WindowsError
+
+pub fn ds_make_password_credentials_a_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn ds_make_password_credentials_w(@strings.PWStr?, @strings.PWStr?, @strings.PWStr?, @core.RawAddress) -> UInt raise @core.WindowsError
+
+pub fn ds_make_password_credentials_w_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn ds_make_spn_a(@strings.PStr, @strings.PStr, @strings.PStr?, UInt16, @strings.PStr?, @core.RawAddress, @core.RawAddress) -> UInt raise @core.WindowsError
+
+pub fn ds_make_spn_a_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn ds_make_spn_w_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn ds_map_schema_guids_a(@core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> UInt raise @core.WindowsError
+
+pub fn ds_map_schema_guids_a_raw(@core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn ds_map_schema_guids_w(@core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> UInt raise @core.WindowsError
+
+pub fn ds_map_schema_guids_w_raw(@core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn ds_merge_forest_trust_information_w(@strings.PWStr, @bcab0927f447d71b.LSAFORESTTRUSTINFORMATION_75da50ac34a9, @bcab0927f447d71b.LSAFORESTTRUSTINFORMATION_75da50ac34a9?, @core.RawAddress) -> UInt raise @core.WindowsError
+
+pub fn ds_merge_forest_trust_information_w_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub let ds_ndnc_flag : UInt
+
+pub let ds_notify_after_site_records : UInt
+
+pub let ds_only_do_site_name : UInt
+
+pub let ds_only_ldap_needed : UInt
+
+pub let ds_pdc_flag : UInt
+
+pub let ds_pdc_required : UInt
+
+pub let ds_ping_flags : UInt
+
+pub let ds_prop_admin_prefix : String
+
+pub let ds_prop_shell_prefix : String
+
+pub fn ds_query_sites_by_cost_a(@core.RawAddress, @core.RawAddress, @core.RawAddress, UInt, UInt, @core.RawAddress) -> UInt raise @core.WindowsError
+
+pub fn ds_query_sites_by_cost_a_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, UInt, UInt, @core.RawAddress) -> UInt
+
+pub fn ds_query_sites_by_cost_w(@core.RawAddress, @core.RawAddress, @core.RawAddress, UInt, UInt, @core.RawAddress) -> UInt raise @core.WindowsError
+
+pub fn ds_query_sites_by_cost_w_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, UInt, UInt, @core.RawAddress) -> UInt
+
+pub fn ds_query_sites_free(@56b2b15971268c58.DSSITECOSTINFO_1608cb09ccf1) -> Unit raise @core.WindowsError
+
+pub fn ds_query_sites_free_raw(@core.RawAddress) -> Unit
+
+pub fn ds_quote_rdn_value_a(UInt, @strings.PStr, @core.RawAddress, @core.RawAddress) -> UInt raise @core.WindowsError
+
+pub fn ds_quote_rdn_value_a_raw(UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn ds_quote_rdn_value_w_raw(UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn ds_remove_ds_domain_a(@core.RawAddress, @core.RawAddress) -> UInt raise @core.WindowsError
+
+pub fn ds_remove_ds_domain_a_raw(@core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn ds_remove_ds_domain_w(@core.RawAddress, @core.RawAddress) -> UInt raise @core.WindowsError
+
+pub fn ds_remove_ds_domain_w_raw(@core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn ds_remove_ds_server_a(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, Int) -> UInt raise @core.WindowsError
+
+pub fn ds_remove_ds_server_a_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, Int) -> UInt
+
+pub fn ds_remove_ds_server_w(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, Int) -> UInt raise @core.WindowsError
+
+pub fn ds_remove_ds_server_w_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, Int) -> UInt
+
+pub let ds_repadd_asynchronous_operation : UInt
+
+pub let ds_repadd_asynchronous_replica : UInt
+
+pub let ds_repadd_critical : UInt
+
+pub let ds_repadd_disable_notification : UInt
+
+pub let ds_repadd_disable_periodic : UInt
+
+pub let ds_repadd_initial : UInt
+
+pub let ds_repadd_intersite_messaging : UInt
+
+pub let ds_repadd_never_notify : UInt
+
+pub let ds_repadd_nongc_ro_replica : UInt
+
+pub let ds_repadd_periodic : UInt
+
+pub let ds_repadd_select_secrets : UInt
+
+pub let ds_repadd_two_way : UInt
+
+pub let ds_repadd_use_compression : UInt
+
+pub let ds_repadd_writeable : UInt
+
+pub let ds_repdel_asynchronous_operation : UInt
+
+pub let ds_repdel_ignore_errors : UInt
+
+pub let ds_repdel_intersite_messaging : UInt
+
+pub let ds_repdel_local_only : UInt
+
+pub let ds_repdel_no_source : UInt
+
+pub let ds_repdel_ref_ok : UInt
+
+pub let ds_repdel_writeable : UInt
+
+pub let ds_repl_info_flag_improve_linked_attrs : UInt
+
+pub let ds_repl_nbr_compress_changes : UInt
+
+pub let ds_repl_nbr_disable_scheduled_sync : UInt
+
+pub let ds_repl_nbr_do_scheduled_syncs : UInt
+
+pub let ds_repl_nbr_full_sync_in_progress : UInt
+
+pub let ds_repl_nbr_full_sync_next_packet : UInt
+
+pub let ds_repl_nbr_gcspn : UInt
+
+pub let ds_repl_nbr_ignore_change_notifications : UInt
+
+pub let ds_repl_nbr_never_synced : UInt
+
+pub let ds_repl_nbr_no_change_notifications : UInt
+
+pub let ds_repl_nbr_nongc_ro_replica : UInt
+
+pub let ds_repl_nbr_partial_attribute_set : UInt
+
+pub let ds_repl_nbr_preempted : UInt
+
+pub let ds_repl_nbr_return_object_parents : UInt
+
+pub let ds_repl_nbr_select_secrets : UInt
+
+pub let ds_repl_nbr_sync_on_startup : UInt
+
+pub let ds_repl_nbr_two_way_sync : UInt
+
+pub let ds_repl_nbr_use_async_intersite_transport : UInt
+
+pub let ds_repl_nbr_writeable : UInt
+
+pub fn ds_replica_add_a(@core.RawAddress, @strings.PStr, @strings.PStr, @strings.PStr, @strings.PStr, @56b2b15971268c58.SCHEDULE_f67ff0cecf4d?, UInt) -> UInt raise @core.WindowsError
+
+pub fn ds_replica_add_a_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, UInt) -> UInt
+
+pub fn ds_replica_add_w(@core.RawAddress, @strings.PWStr, @strings.PWStr, @strings.PWStr, @strings.PWStr, @56b2b15971268c58.SCHEDULE_f67ff0cecf4d?, UInt) -> UInt raise @core.WindowsError
+
+pub fn ds_replica_add_w_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, UInt) -> UInt
+
+pub fn ds_replica_consistency_check(@core.RawAddress, @56b2b15971268c58.DSKCCTASKID_4b43a7d8fdbf, UInt) -> UInt raise @core.WindowsError
+
+pub fn ds_replica_consistency_check_raw(@core.RawAddress, Int, UInt) -> UInt
+
+pub fn ds_replica_del_a(@core.RawAddress, @strings.PStr, @strings.PStr, UInt) -> UInt raise @core.WindowsError
+
+pub fn ds_replica_del_a_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, UInt) -> UInt
+
+pub fn ds_replica_del_w(@core.RawAddress, @strings.PWStr, @strings.PWStr, UInt) -> UInt raise @core.WindowsError
+
+pub fn ds_replica_del_w_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, UInt) -> UInt
+
+pub fn ds_replica_free_info(@56b2b15971268c58.DSREPLINFOTYPE_73a893888f75, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn ds_replica_free_info_raw(Int, @core.RawAddress) -> Unit
+
+pub fn ds_replica_get_info2_w(@core.RawAddress, @56b2b15971268c58.DSREPLINFOTYPE_73a893888f75, @strings.PWStr?, @core.RawAddress, @strings.PWStr?, @strings.PWStr?, UInt, UInt, @core.RawAddress) -> UInt raise @core.WindowsError
+
+pub fn ds_replica_get_info2_w_raw(@core.RawAddress, Int, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, UInt, UInt, @core.RawAddress) -> UInt
+
+pub fn ds_replica_get_info_w(@core.RawAddress, @56b2b15971268c58.DSREPLINFOTYPE_73a893888f75, @strings.PWStr?, @core.RawAddress, @core.RawAddress) -> UInt raise @core.WindowsError
+
+pub fn ds_replica_get_info_w_raw(@core.RawAddress, Int, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn ds_replica_modify_a(@core.RawAddress, @strings.PStr, @core.RawAddress, @strings.PStr?, @strings.PStr, @56b2b15971268c58.SCHEDULE_f67ff0cecf4d?, UInt, UInt, UInt) -> UInt raise @core.WindowsError
+
+pub fn ds_replica_modify_a_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, UInt, UInt, UInt) -> UInt
+
+pub fn ds_replica_modify_w(@core.RawAddress, @strings.PWStr, @core.RawAddress, @strings.PWStr?, @strings.PWStr, @56b2b15971268c58.SCHEDULE_f67ff0cecf4d?, UInt, UInt, UInt) -> UInt raise @core.WindowsError
+
+pub fn ds_replica_modify_w_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, UInt, UInt, UInt) -> UInt
+
+pub fn ds_replica_sync_a(@core.RawAddress, @strings.PStr, @core.RawAddress, UInt) -> UInt raise @core.WindowsError
+
+pub fn ds_replica_sync_a_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, UInt) -> UInt
+
+pub fn ds_replica_sync_all_a(@core.RawAddress, @strings.PStr, UInt, Int64, @core.RawAddress, @core.RawAddress) -> UInt raise @core.WindowsError
+
+pub fn ds_replica_sync_all_a_raw(@core.RawAddress, @core.RawAddress, UInt, Int64, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn ds_replica_sync_all_w(@core.RawAddress, @strings.PWStr, UInt, Int64, @core.RawAddress, @core.RawAddress) -> UInt raise @core.WindowsError
+
+pub fn ds_replica_sync_all_w_raw(@core.RawAddress, @core.RawAddress, UInt, Int64, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn ds_replica_sync_w(@core.RawAddress, @strings.PWStr, @core.RawAddress, UInt) -> UInt raise @core.WindowsError
+
+pub fn ds_replica_sync_w_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, UInt) -> UInt
+
+pub fn ds_replica_update_refs_a(@core.RawAddress, @strings.PStr, @strings.PStr, @core.RawAddress, UInt) -> UInt raise @core.WindowsError
+
+pub fn ds_replica_update_refs_a_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, UInt) -> UInt
+
+pub fn ds_replica_update_refs_w(@core.RawAddress, @strings.PWStr, @strings.PWStr, @core.RawAddress, UInt) -> UInt raise @core.WindowsError
+
+pub fn ds_replica_update_refs_w_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, UInt) -> UInt
+
+pub fn ds_replica_verify_objects_a(@core.RawAddress, @strings.PStr, @core.RawAddress, UInt) -> UInt raise @core.WindowsError
+
+pub fn ds_replica_verify_objects_a_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, UInt) -> UInt
+
+pub fn ds_replica_verify_objects_w(@core.RawAddress, @strings.PWStr, @core.RawAddress, UInt) -> UInt raise @core.WindowsError
+
+pub fn ds_replica_verify_objects_w_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, UInt) -> UInt
+
+pub let ds_repmod_asynchronous_operation : UInt
+
+pub let ds_repmod_update_address : UInt
+
+pub let ds_repmod_update_flags : UInt
+
+pub let ds_repmod_update_instance : UInt
+
+pub let ds_repmod_update_result : UInt
+
+pub let ds_repmod_update_schedule : UInt
+
+pub let ds_repmod_update_transport : UInt
+
+pub let ds_repmod_writeable : UInt
+
+pub let ds_repsync_abandoned : UInt
+
+pub let ds_repsync_add_reference : UInt
+
+pub let ds_repsync_asynchronous_operation : UInt
+
+pub let ds_repsync_asynchronous_replica : UInt
+
+pub let ds_repsync_critical : UInt
+
+pub let ds_repsync_force : UInt
+
+pub let ds_repsync_full : UInt
+
+pub let ds_repsync_full_in_progress : UInt
+
+pub let ds_repsync_initial : UInt
+
+pub let ds_repsync_initial_in_progress : UInt
+
+pub let ds_repsync_intersite_messaging : UInt
+
+pub let ds_repsync_never_completed : UInt
+
+pub let ds_repsync_never_notify : UInt
+
+pub let ds_repsync_no_discard : UInt
+
+pub let ds_repsync_nongc_ro_replica : UInt
+
+pub let ds_repsync_notification : UInt
+
+pub let ds_repsync_partial_attribute_set : UInt
+
+pub let ds_repsync_periodic : UInt
+
+pub let ds_repsync_preempted : UInt
+
+pub let ds_repsync_requeue : UInt
+
+pub let ds_repsync_select_secrets : UInt
+
+pub let ds_repsync_two_way : UInt
+
+pub let ds_repsync_urgent : UInt
+
+pub let ds_repsync_use_compression : UInt
+
+pub let ds_repsync_writeable : UInt
+
+pub let ds_repsyncall_abort_if_server_unavailable : UInt
+
+pub let ds_repsyncall_cross_site_boundaries : UInt
+
+pub let ds_repsyncall_do_not_sync : UInt
+
+pub let ds_repsyncall_id_servers_by_dn : UInt
+
+pub let ds_repsyncall_no_options : UInt
+
+pub let ds_repsyncall_push_changes_outward : UInt
+
+pub let ds_repsyncall_skip_initial_check : UInt
+
+pub let ds_repsyncall_sync_adjacent_servers_only : UInt
+
+pub let ds_repupd_add_reference : UInt
+
+pub let ds_repupd_asynchronous_operation : UInt
+
+pub let ds_repupd_delete_reference : UInt
+
+pub let ds_repupd_reference_gcspn : UInt
+
+pub let ds_repupd_writeable : UInt
+
+pub let ds_return_dns_name : UInt
+
+pub let ds_return_flat_name : UInt
+
+pub let ds_role_domain_owner : UInt
+
+pub fn ds_role_free_memory(@core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn ds_role_free_memory_raw(@core.RawAddress) -> Unit
+
+pub fn ds_role_get_primary_domain_information(@strings.PWStr, @56b2b15971268c58.DSROLEPRIMARYDOMAININFOLEVEL_77b314d91c4e, @core.RawAddress) -> UInt raise @core.WindowsError
+
+pub fn ds_role_get_primary_domain_information_raw(@core.RawAddress, Int, @core.RawAddress) -> UInt
+
+pub let ds_role_infrastructure_owner : UInt
+
+pub let ds_role_pdc_owner : UInt
+
+pub let ds_role_rid_owner : UInt
+
+pub let ds_role_schema_owner : UInt
+
+pub let ds_schema_guid_attr : UInt
+
+pub let ds_schema_guid_attr_set : UInt
+
+pub let ds_schema_guid_class : UInt
+
+pub let ds_schema_guid_control_right : UInt
+
+pub let ds_schema_guid_not_found : UInt
+
+pub let ds_select_secret_domain_6_flag : UInt
+
+pub fn ds_server_register_spn_a(@56b2b15971268c58.DSSPNWRITEOP_2666d694cfbf, @strings.PStr, @strings.PStr?) -> UInt raise @core.WindowsError
+
+pub fn ds_server_register_spn_a_raw(Int, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn ds_server_register_spn_w(@56b2b15971268c58.DSSPNWRITEOP_2666d694cfbf, @strings.PWStr, @strings.PWStr?) -> UInt raise @core.WindowsError
+
+pub fn ds_server_register_spn_w_raw(Int, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub let ds_synced_event_name : String
+
+pub let ds_synced_event_name_w : String
+
+pub let ds_timeserv_flag : UInt
+
+pub let ds_timeserv_required : UInt
+
+pub let ds_try_nextclosest_site : UInt
+
+pub fn ds_un_bind_a(@core.RawAddress) -> UInt raise @core.WindowsError
+
+pub fn ds_un_bind_a_raw(@core.RawAddress) -> UInt
+
+pub fn ds_un_bind_w(@core.RawAddress) -> UInt raise @core.WindowsError
+
+pub fn ds_un_bind_w_raw(@core.RawAddress) -> UInt
+
+pub fn ds_unquote_rdn_value_a(UInt, @strings.PStr, @core.RawAddress, @core.RawAddress) -> UInt raise @core.WindowsError
+
+pub fn ds_unquote_rdn_value_a_raw(UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn ds_unquote_rdn_value_w_raw(UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn ds_validate_subnet_name_a(@strings.PStr) -> UInt raise @core.WindowsError
+
+pub fn ds_validate_subnet_name_a_raw(@core.RawAddress) -> UInt
+
+pub fn ds_validate_subnet_name_w(@strings.PWStr) -> UInt raise @core.WindowsError
+
+pub fn ds_validate_subnet_name_w_raw(@core.RawAddress) -> UInt
+
+pub let ds_web_service_required : UInt
+
+pub let ds_writable_flag : UInt
+
+pub let ds_writable_required : UInt
+
+pub fn ds_write_account_spn_a(@core.RawAddress, @56b2b15971268c58.DSSPNWRITEOP_2666d694cfbf, @strings.PStr, UInt, @strings.PStr) -> UInt raise @core.WindowsError
+
+pub fn ds_write_account_spn_a_raw(@core.RawAddress, Int, @core.RawAddress, UInt, @core.RawAddress) -> UInt
+
+pub fn ds_write_account_spn_w(@core.RawAddress, @56b2b15971268c58.DSSPNWRITEOP_2666d694cfbf, @strings.PWStr, UInt, @strings.PWStr) -> UInt raise @core.WindowsError
+
+pub fn ds_write_account_spn_w_raw(@core.RawAddress, Int, @core.RawAddress, UInt, @core.RawAddress) -> UInt
+
+pub let ds_ws_flag : UInt
+
+pub let dsa_newobj_ctx_cleanup : UInt
+
+pub let dsa_newobj_ctx_commit : UInt
+
+pub let dsa_newobj_ctx_postcommit : UInt
+
+pub let dsa_newobj_ctx_precommit : UInt
+
+pub let dsa_notify_del : UInt
+
+pub let dsa_notify_flag_additional_data : UInt
+
+pub let dsa_notify_flag_force_additional_data : UInt
+
+pub let dsa_notify_mov : UInt
+
+pub let dsa_notify_prop : UInt
+
+pub let dsa_notify_ren : UInt
+
+pub let dsb_max_displayname_chars : UInt
+
+pub let dsbf_displayname : UInt
+
+pub let dsbf_iconlocation : UInt
+
+pub let dsbf_state : UInt
+
+pub let dsbi_checkboxes : UInt
+
+pub let dsbi_dontsignseal : UInt
+
+pub let dsbi_entiredirectory : UInt
+
+pub let dsbi_expandonopen : UInt
+
+pub let dsbi_hascredentials : UInt
+
+pub let dsbi_ignoretreatasleaf : UInt
+
+pub let dsbi_includehidden : UInt
+
+pub let dsbi_nobuttons : UInt
+
+pub let dsbi_nolines : UInt
+
+pub let dsbi_nolinesatroot : UInt
+
+pub let dsbi_noroot : UInt
+
+pub let dsbi_return_format : UInt
+
+pub let dsbi_returnobjectclass : UInt
+
+pub let dsbi_simpleauthenticate : UInt
+
+pub let dsbid_banner : UInt
+
+pub let dsbid_containerlist : UInt
+
+pub let dsbm_changeimagestate : UInt
+
+pub let dsbm_contextmenu : UInt
+
+pub let dsbm_help : UInt
+
+pub let dsbm_queryinsert : UInt
+
+pub let dsbm_queryinserta : UInt
+
+pub let dsbm_queryinsertw : UInt
+
+pub let dsbs_checked : UInt
+
+pub let dsbs_hidden : UInt
+
+pub let dsbs_root : UInt
+
+pub let dsccif_haswizarddialog : UInt
+
+pub let dsccif_haswizardprimarypage : UInt
+
+pub let dsdsof_dontsignseal : UInt
+
+pub let dsdsof_dsavailable : UInt
+
+pub let dsdsof_hasuserandserverinfo : UInt
+
+pub let dsdsof_simpleauthenticate : UInt
+
+pub let dsecaf_notlisted : UInt
+
+pub let dsgif_defaultiscontainer : UInt
+
+pub let dsgif_getdefaulticon : UInt
+
+pub let dsgif_isdisabled : UInt
+
+pub let dsgif_ismask : UInt
+
+pub let dsgif_isnormal : UInt
+
+pub let dsgif_isopen : UInt
+
+pub let dsiccf_ignoretreatasleaf : UInt
+
+pub let dsobject_iscontainer : UInt
+
+pub let dsobject_readonlypages : UInt
+
+pub let dsop_downlevel_filter_all_app_packages : UInt
+
+pub let dsop_downlevel_filter_all_wellknown_sids : UInt
+
+pub let dsop_downlevel_filter_anonymous : UInt
+
+pub let dsop_downlevel_filter_authenticated_user : UInt
+
+pub let dsop_downlevel_filter_batch : UInt
+
+pub let dsop_downlevel_filter_computers : UInt
+
+pub let dsop_downlevel_filter_creator_group : UInt
+
+pub let dsop_downlevel_filter_creator_owner : UInt
+
+pub let dsop_downlevel_filter_dialup : UInt
+
+pub let dsop_downlevel_filter_exclude_builtin_groups : UInt
+
+pub let dsop_downlevel_filter_global_groups : UInt
+
+pub let dsop_downlevel_filter_iis_app_pool : UInt
+
+pub let dsop_downlevel_filter_interactive : UInt
+
+pub let dsop_downlevel_filter_internet_user : UInt
+
+pub let dsop_downlevel_filter_local_accounts : UInt
+
+pub let dsop_downlevel_filter_local_groups : UInt
+
+pub let dsop_downlevel_filter_local_logon : UInt
+
+pub let dsop_downlevel_filter_local_service : UInt
+
+pub let dsop_downlevel_filter_network : UInt
+
+pub let dsop_downlevel_filter_network_service : UInt
+
+pub let dsop_downlevel_filter_owner_rights : UInt
+
+pub let dsop_downlevel_filter_remote_logon : UInt
+
+pub let dsop_downlevel_filter_service : UInt
+
+pub let dsop_downlevel_filter_services : UInt
+
+pub let dsop_downlevel_filter_system : UInt
+
+pub let dsop_downlevel_filter_terminal_server : UInt
+
+pub let dsop_downlevel_filter_this_org_cert : UInt
+
+pub let dsop_downlevel_filter_users : UInt
+
+pub let dsop_downlevel_filter_world : UInt
+
+pub let dsop_filter_builtin_groups : UInt
+
+pub let dsop_filter_computers : UInt
+
+pub let dsop_filter_contacts : UInt
+
+pub let dsop_filter_domain_local_groups_dl : UInt
+
+pub let dsop_filter_domain_local_groups_se : UInt
+
+pub let dsop_filter_global_groups_dl : UInt
+
+pub let dsop_filter_global_groups_se : UInt
+
+pub let dsop_filter_include_advanced_view : UInt
+
+pub let dsop_filter_passwordsettings_objects : UInt
+
+pub let dsop_filter_service_accounts : UInt
+
+pub let dsop_filter_universal_groups_dl : UInt
+
+pub let dsop_filter_universal_groups_se : UInt
+
+pub let dsop_filter_users : UInt
+
+pub let dsop_filter_well_known_principals : UInt
+
+pub let dsop_flag_multiselect : UInt
+
+pub let dsop_flag_skip_target_computer_dc_check : UInt
+
+pub let dsop_scope_flag_default_filter_computers : UInt
+
+pub let dsop_scope_flag_default_filter_contacts : UInt
+
+pub let dsop_scope_flag_default_filter_groups : UInt
+
+pub let dsop_scope_flag_default_filter_passwordsettings_objects : UInt
+
+pub let dsop_scope_flag_default_filter_service_accounts : UInt
+
+pub let dsop_scope_flag_default_filter_users : UInt
+
+pub let dsop_scope_flag_starting_scope : UInt
+
+pub let dsop_scope_flag_want_downlevel_builtin_path : UInt
+
+pub let dsop_scope_flag_want_provider_gc : UInt
+
+pub let dsop_scope_flag_want_provider_ldap : UInt
+
+pub let dsop_scope_flag_want_provider_winnt : UInt
+
+pub let dsop_scope_flag_want_sid_path : UInt
+
+pub let dsop_scope_type_downlevel_joined_domain : UInt
+
+pub let dsop_scope_type_enterprise_domain : UInt
+
+pub let dsop_scope_type_external_downlevel_domain : UInt
+
+pub let dsop_scope_type_external_uplevel_domain : UInt
+
+pub let dsop_scope_type_global_catalog : UInt
+
+pub let dsop_scope_type_target_computer : UInt
+
+pub let dsop_scope_type_uplevel_joined_domain : UInt
+
+pub let dsop_scope_type_user_entered_downlevel_scope : UInt
+
+pub let dsop_scope_type_user_entered_uplevel_scope : UInt
+
+pub let dsop_scope_type_workgroup : UInt
+
+pub let dsprop_attrchanged_msg : String
+
+pub let dsprovider_ad_lds : UInt
+
+pub let dsprovider_advanced : UInt
+
+pub let dsprovider_unused_0 : UInt
+
+pub let dsprovider_unused_1 : UInt
+
+pub let dsprovider_unused_2 : UInt
+
+pub let dsprovider_unused_3 : UInt
+
+pub let dsqpf_enableadminfeatures : UInt
+
+pub let dsqpf_enableadvancedfeatures : UInt
+
+pub let dsqpf_hascredentials : UInt
+
+pub let dsqpf_nochoosecolumns : UInt
+
+pub let dsqpf_nosave : UInt
+
+pub let dsqpf_savelocation : UInt
+
+pub let dsqpf_showhiddenobjects : UInt
+
+pub let dsqpm_getclasslist : UInt
+
+pub let dsqpm_helptopics : UInt
+
+pub let dsrole_primary_domain_guid_present : UInt
+
+pub let dsrole_primary_ds_mixed_mode : UInt
+
+pub let dsrole_primary_ds_readonly : UInt
+
+pub let dsrole_primary_ds_running : UInt
+
+pub let dsrole_upgrade_in_progress : UInt
+
+pub let dsssf_dontsignseal : UInt
+
+pub let dsssf_dsavailable : UInt
+
+pub let dsssf_simpleauthenticate : UInt
+
+pub let facility_backup : UInt
+
+pub let facility_ntdsb : UInt
+
+pub let facility_system : UInt
+
+pub let flag_disablable_optional_feature : UInt
+
+pub let flag_domain_optional_feature : UInt
+
+pub let flag_forest_optional_feature : UInt
+
+pub let flag_server_optional_feature : UInt
+
+pub fn free_a_ds_mem(@core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn free_a_ds_mem_raw(@core.RawAddress) -> Int
+
+pub fn free_a_ds_str(@core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn free_a_ds_str_raw(@core.RawAddress) -> Int
+
+pub let frsconn_max_priority : UInt
+
+pub let frsconn_priority_mask : UInt
+
+pub let guid_computrs_container_a : String
+
+pub let guid_computrs_container_w : String
+
+pub let guid_database_32_k_pages_optional_feature_a : String
+
+pub let guid_database_32_k_pages_optional_feature_byte : String
+
+pub let guid_database_32_k_pages_optional_feature_w : String
+
+pub let guid_deleted_objects_container_a : String
+
+pub let guid_deleted_objects_container_w : String
+
+pub let guid_domain_controllers_container_a : String
+
+pub let guid_domain_controllers_container_w : String
+
+pub let guid_foreignsecurityprincipals_container_a : String
+
+pub let guid_foreignsecurityprincipals_container_w : String
+
+pub let guid_infrastructure_container_a : String
+
+pub let guid_infrastructure_container_w : String
+
+pub let guid_keys_container_w : String
+
+pub let guid_lostandfound_container_a : String
+
+pub let guid_lostandfound_container_w : String
+
+pub let guid_managed_service_accounts_container_w : String
+
+pub let guid_microsoft_program_data_container_a : String
+
+pub let guid_microsoft_program_data_container_w : String
+
+pub let guid_ntds_quotas_container_a : String
+
+pub let guid_ntds_quotas_container_w : String
+
+pub let guid_privileged_access_management_optional_feature_a : String
+
+pub let guid_privileged_access_management_optional_feature_w : String
+
+pub let guid_program_data_container_a : String
+
+pub let guid_program_data_container_w : String
+
+pub let guid_recycle_bin_optional_feature_a : String
+
+pub let guid_recycle_bin_optional_feature_w : String
+
+pub let guid_systems_container_a : String
+
+pub let guid_systems_container_w : String
+
+pub let guid_users_container_a : String
+
+pub let guid_users_container_w : String
+
+pub let hr_access_denied : Int
+
+pub let hr_after_initialization : Int
+
+pub let hr_already_initialized : Int
+
+pub let hr_already_open : Int
+
+pub let hr_already_prepared : Int
+
+pub let hr_backup_directory_not_empty : Int
+
+pub let hr_backup_in_progress : Int
+
+pub let hr_backup_not_allowed_yet : Int
+
+pub let hr_bad_backup_database_size : Int
+
+pub let hr_bad_checkpoint_signature : Int
+
+pub let hr_bad_column_id : Int
+
+pub let hr_bad_db_signature : Int
+
+pub let hr_bad_itag_sequence : Int
+
+pub let hr_bad_log_signature : Int
+
+pub let hr_bad_log_version : Int
+
+pub let hr_bf_in_use : Int
+
+pub let hr_bf_not_synchronous : Int
+
+pub let hr_bf_page_not_found : Int
+
+pub let hr_buffer_too_small : Int
+
+pub let hr_buffer_truncated : Int
+
+pub let hr_cannot_be_tagged : Int
+
+pub let hr_cannot_rename : Int
+
+pub let hr_checkpoint_corrupt : Int
+
+pub let hr_circular_logging : Int
+
+pub let hr_column2nd_sys_maint : Int
+
+pub let hr_column_cannot_index : Int
+
+pub let hr_column_does_not_fit : Int
+
+pub let hr_column_duplicate : Int
+
+pub let hr_column_in_use : Int
+
+pub let hr_column_indexed : Int
+
+pub let hr_column_long : Int
+
+pub let hr_column_max_truncated : Int
+
+pub let hr_column_not_found : Int
+
+pub let hr_column_not_updatable : Int
+
+pub let hr_column_null : Int
+
+pub let hr_column_set_null : Int
+
+pub let hr_column_too_big : Int
+
+pub let hr_communication_error : Int
+
+pub let hr_consistent_time_mismatch : Int
+
+pub let hr_container_not_empty : Int
+
+pub let hr_contents_expired : Int
+
+pub let hr_could_not_connect : Int
+
+pub let hr_create_index_failed : Int
+
+pub let hr_currency_stack_out_of_memory : Int
+
+pub let hr_database_attached : Int
+
+pub let hr_database_corrupted : Int
+
+pub let hr_database_duplicate : Int
+
+pub let hr_database_in_use : Int
+
+pub let hr_database_inconsistent : Int
+
+pub let hr_database_invalid_name : Int
+
+pub let hr_database_invalid_pages : Int
+
+pub let hr_database_locked : Int
+
+pub let hr_database_not_found : Int
+
+pub let hr_delete_backup_file_fail : Int
+
+pub let hr_density_invalid : Int
+
+pub let hr_disk_full : Int
+
+pub let hr_disk_io : Int
+
+pub let hr_error : Int
+
+pub let hr_existing_log_file_has_bad_signature : Int
+
+pub let hr_existing_log_file_is_not_contiguous : Int
+
+pub let hr_feature_not_available : Int
+
+pub let hr_file_access_denied : Int
+
+pub let hr_file_close : Int
+
+pub let hr_file_not_found : Int
+
+pub let hr_file_open_read_only : Int
+
+pub let hr_fld_key_too_big : Int
+
+pub let hr_fld_null_key : Int
+
+pub let hr_fld_too_many_segments : Int
+
+pub let hr_full_backup_not_taken : Int
+
+pub let hr_given_log_file_has_bad_signature : Int
+
+pub let hr_given_log_file_is_not_contiguous : Int
+
+pub let hr_illegal_operation : Int
+
+pub let hr_in_transaction : Int
+
+pub let hr_incremental_backup_disabled : Int
+
+pub let hr_index_cant_build : Int
+
+pub let hr_index_duplicate : Int
+
+pub let hr_index_has_clustered : Int
+
+pub let hr_index_has_primary : Int
+
+pub let hr_index_in_use : Int
+
+pub let hr_index_invalid_def : Int
+
+pub let hr_index_must_stay : Int
+
+pub let hr_index_not_found : Int
+
+pub let hr_invalid_backup : Int
+
+pub let hr_invalid_backup_sequence : Int
+
+pub let hr_invalid_bookmark : Int
+
+pub let hr_invalid_buffer_size : Int
+
+pub let hr_invalid_code_page : Int
+
+pub let hr_invalid_column_type : Int
+
+pub let hr_invalid_country : Int
+
+pub let hr_invalid_database : Int
+
+pub let hr_invalid_database_id : Int
+
+pub let hr_invalid_filename : Int
+
+pub let hr_invalid_handle : Int
+
+pub let hr_invalid_language_id : Int
+
+pub let hr_invalid_log_sequence : Int
+
+pub let hr_invalid_name : Int
+
+pub let hr_invalid_object : Int
+
+pub let hr_invalid_on_sort : Int
+
+pub let hr_invalid_operation : Int
+
+pub let hr_invalid_param : Int
+
+pub let hr_invalid_parameter : Int
+
+pub let hr_invalid_path : Int
+
+pub let hr_invalid_recips : Int
+
+pub let hr_invalid_sesid : Int
+
+pub let hr_invalid_table_id : Int
+
+pub let hr_key_changed : Int
+
+pub let hr_key_duplicate : Int
+
+pub let hr_key_is_made : Int
+
+pub let hr_key_not_made : Int
+
+pub let hr_log_buffer_too_small : Int
+
+pub let hr_log_corrupted : Int
+
+pub let hr_log_disk_full : Int
+
+pub let hr_log_file_corrupt : Int
+
+pub let hr_log_file_not_found : Int
+
+pub let hr_log_sequence_end : Int
+
+pub let hr_log_write_fail : Int
+
+pub let hr_logging_disabled : Int
+
+pub let hr_make_backup_directory_fail : Int
+
+pub let hr_missing_expiry_token : Int
+
+pub let hr_missing_full_backup : Int
+
+pub let hr_missing_log_file : Int
+
+pub let hr_missing_previous_log_file : Int
+
+pub let hr_missing_restore_log_files : Int
+
+pub let hr_no_backup : Int
+
+pub let hr_no_backup_directory : Int
+
+pub let hr_no_current_index : Int
+
+pub let hr_no_current_record : Int
+
+pub let hr_no_full_restore : Int
+
+pub let hr_no_idle_activity : Int
+
+pub let hr_no_write_lock : Int
+
+pub let hr_none : Int
+
+pub let hr_not_in_transaction : Int
+
+pub let hr_not_initialized : Int
+
+pub let hr_null_invalid : Int
+
+pub let hr_null_key_disallowed : Int
+
+pub let hr_nyi : Int
+
+pub let hr_object_duplicate : Int
+
+pub let hr_object_not_found : Int
+
+pub let hr_out_of_buffers : Int
+
+pub let hr_out_of_cursors : Int
+
+pub let hr_out_of_database_space : Int
+
+pub let hr_out_of_file_handles : Int
+
+pub let hr_out_of_memory : Int
+
+pub let hr_out_of_sessions : Int
+
+pub let hr_out_of_threads : Int
+
+pub let hr_patch_file_mismatch : Int
+
+pub let hr_permission_denied : Int
+
+pub let hr_pm_rec_deleted : Int
+
+pub let hr_read_verify_failure : Int
+
+pub let hr_record_clustered_changed : Int
+
+pub let hr_record_deleted : Int
+
+pub let hr_record_not_found : Int
+
+pub let hr_record_too_big : Int
+
+pub let hr_recovered_with_errors : Int
+
+pub let hr_remaining_versions : Int
+
+pub let hr_restore_in_progress : Int
+
+pub let hr_restore_log_too_high : Int
+
+pub let hr_restore_log_too_low : Int
+
+pub let hr_restore_map_exists : Int
+
+pub let hr_seek_not_equal : Int
+
+pub let hr_session_write_conflict : Int
+
+pub let hr_table_duplicate : Int
+
+pub let hr_table_empty : Int
+
+pub let hr_table_in_use : Int
+
+pub let hr_table_locked : Int
+
+pub let hr_table_not_empty : Int
+
+pub let hr_tagged_not_null : Int
+
+pub let hr_temp_file_open_error : Int
+
+pub let hr_term_in_progress : Int
+
+pub let hr_too_many_active_users : Int
+
+pub let hr_too_many_attached_databases : Int
+
+pub let hr_too_many_columns : Int
+
+pub let hr_too_many_indexes : Int
+
+pub let hr_too_many_io : Int
+
+pub let hr_too_many_keys : Int
+
+pub let hr_too_many_open_databases : Int
+
+pub let hr_too_many_open_indexes : Int
+
+pub let hr_too_many_open_tables : Int
+
+pub let hr_too_many_sorts : Int
+
+pub let hr_trans_too_deep : Int
+
+pub let hr_unknown_expiry_token_format : Int
+
+pub let hr_update_not_prepared : Int
+
+pub let hr_version_store_out_of_memory : Int
+
+pub let hr_write_conflict : Int
+
+pub let hrerr_data_has_changed : Int
+
+pub let hrwrn_data_has_changed : Int
+
+pub let ntdsapi_bind_allow_delegation : UInt
+
+pub let ntdsapi_bind_find_binding : UInt
+
+pub let ntdsapi_bind_force_kerberos : UInt
+
+pub let ntdsconn_kcc_gc_topology : UInt
+
+pub let ntdsconn_kcc_intersite_gc_topology : UInt
+
+pub let ntdsconn_kcc_intersite_topology : UInt
+
+pub let ntdsconn_kcc_minimize_hops_topology : UInt
+
+pub let ntdsconn_kcc_no_reason : UInt
+
+pub let ntdsconn_kcc_oscillating_connection_topology : UInt
+
+pub let ntdsconn_kcc_redundant_server_topology : UInt
+
+pub let ntdsconn_kcc_ring_topology : UInt
+
+pub let ntdsconn_kcc_server_failover_topology : UInt
+
+pub let ntdsconn_kcc_site_failover_topology : UInt
+
+pub let ntdsconn_kcc_stale_servers_topology : UInt
+
+pub let ntdsconn_opt_disable_intersite_compression : UInt
+
+pub let ntdsconn_opt_ignore_schedule_mask : UInt
+
+pub let ntdsconn_opt_is_generated : UInt
+
+pub let ntdsconn_opt_override_notify_default : UInt
+
+pub let ntdsconn_opt_rodc_topology : UInt
+
+pub let ntdsconn_opt_twoway_sync : UInt
+
+pub let ntdsconn_opt_use_notify : UInt
+
+pub let ntdsconn_opt_user_owned_schedule : UInt
+
+pub let ntdsdsa_opt_block_rpc : UInt
+
+pub let ntdsdsa_opt_disable_inbound_repl : UInt
+
+pub let ntdsdsa_opt_disable_ntdsconn_xlate : UInt
+
+pub let ntdsdsa_opt_disable_outbound_repl : UInt
+
+pub let ntdsdsa_opt_disable_spn_registration : UInt
+
+pub let ntdsdsa_opt_generate_own_topo : UInt
+
+pub let ntdsdsa_opt_is_gc : UInt
+
+pub let ntdssettings_default_server_redundancy : UInt
+
+pub let ntdssettings_opt_force_kcc_w2_k_election : UInt
+
+pub let ntdssettings_opt_force_kcc_whistler_behavior : UInt
+
+pub let ntdssettings_opt_is_auto_topology_disabled : UInt
+
+pub let ntdssettings_opt_is_group_caching_enabled : UInt
+
+pub let ntdssettings_opt_is_inter_site_auto_topology_disabled : UInt
+
+pub let ntdssettings_opt_is_rand_bh_selection_disabled : UInt
+
+pub let ntdssettings_opt_is_redundant_server_topology_enabled : UInt
+
+pub let ntdssettings_opt_is_schedule_hashing_enabled : UInt
+
+pub let ntdssettings_opt_is_topl_cleanup_disabled : UInt
+
+pub let ntdssettings_opt_is_topl_detect_stale_disabled : UInt
+
+pub let ntdssettings_opt_is_topl_min_hops_disabled : UInt
+
+pub let ntdssettings_opt_w2_k3_bridges_required : UInt
+
+pub let ntdssettings_opt_w2_k3_ignore_schedules : UInt
+
+pub let ntdssiteconn_opt_disable_compression : UInt
+
+pub let ntdssiteconn_opt_twoway_sync : UInt
+
+pub let ntdssiteconn_opt_use_notify : UInt
+
+pub let ntdssitelink_opt_disable_compression : UInt
+
+pub let ntdssitelink_opt_twoway_sync : UInt
+
+pub let ntdssitelink_opt_use_notify : UInt
+
+pub let ntdstransport_opt_bridges_required : UInt
+
+pub let ntdstransport_opt_ignore_schedules : UInt
+
+pub let oqwf_defaultform : UInt
+
+pub let oqwf_hidemenus : UInt
+
+pub let oqwf_hidesearchui : UInt
+
+pub let oqwf_issueonopen : UInt
+
+pub let oqwf_loadquery : UInt
+
+pub let oqwf_okcancel : UInt
+
+pub let oqwf_paramispropertybag : UInt
+
+pub let oqwf_removeforms : UInt
+
+pub let oqwf_removescopes : UInt
+
+pub let oqwf_savequeryonok : UInt
+
+pub let oqwf_showoptional : UInt
+
+pub let oqwf_singleselect : UInt
+
+pub fn prop_variant_to_ads_type(@58228b76ec7374fa.VARIANTAnonymousEUnion_440f47c7058e, UInt, @core.RawAddress, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn prop_variant_to_ads_type_raw(@core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> Int
+
+pub let queryform_changesformlist : UInt64
+
+pub let queryform_changesoptformlist : UInt64
+
+pub fn realloc_a_ds_mem(@core.RawAddress, UInt, UInt) -> @core.RawAddress raise @core.WindowsError
+
+pub fn realloc_a_ds_mem_raw(@core.RawAddress, UInt, UInt) -> @core.RawAddress
+
+pub fn realloc_a_ds_str(@core.RawAddress, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn realloc_a_ds_str_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub let schedule_bandwidth : UInt
+
+pub let schedule_interval : UInt
+
+pub let schedule_priority : UInt
+
+pub fn security_descriptor_to_binary_sd(@58228b76ec7374fa.VARIANTAnonymousEUnion_440f47c7058e, @core.RawAddress, @core.RawAddress, @strings.PWStr, @strings.PWStr, @strings.PWStr, UInt) -> Int raise @core.WindowsError
+
+pub fn security_descriptor_to_binary_sd_raw(Bytes, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, UInt) -> Int
+
+pub let wm_adsprop_notify_apply : UInt
+
+pub let wm_adsprop_notify_change : UInt
+
+pub let wm_adsprop_notify_error : UInt
+
+pub let wm_adsprop_notify_exit : UInt
+
+pub let wm_adsprop_notify_foreground : UInt
+
+pub let wm_adsprop_notify_pagehwnd : UInt
+
+pub let wm_adsprop_notify_pageinit : UInt
+
+pub let wm_adsprop_notify_setfocus : UInt
+
+// Errors
+
+// Types and methods
+
+// Type aliases
+pub using @56b2b15971268c58 {type ADSACEFLAGENUM_136fef053a1d as ADSACEFLAGENUM}
+
+pub using @56b2b15971268c58 {type ADSACETYPEENUM_4c49bfe44142 as ADSACETYPEENUM}
+
+pub using @56b2b15971268c58 {type ADSATTRDEF_14fa2d11a067 as ADSATTRDEF}
+
+pub using @56b2b15971268c58 {type ADSATTRINFO_4914f07ffa52 as ADSATTRINFO}
+
+pub using @56b2b15971268c58 {type ADSAUTHENTICATIONENUM_4acfc9c44407 as ADSAUTHENTICATIONENUM}
+
+pub using @56b2b15971268c58 {type ADSBACKLINK_9f73f4929980 as ADSBACKLINK}
+
+pub using @56b2b15971268c58 {type ADSCASEIGNORELIST_2edb95ee3c6c as ADSCASEIGNORELIST}
+
+pub using @56b2b15971268c58 {type ADSCHASEREFERRALSENUM_1adee0d81ca2 as ADSCHASEREFERRALSENUM}
+
+pub using @56b2b15971268c58 {type ADSCLASSDEF_bc77e0c0fac4 as ADSCLASSDEF}
+
+pub using @56b2b15971268c58 {type ADSDEREFENUM_d3e9e9fe4793 as ADSDEREFENUM}
+
+pub using @56b2b15971268c58 {type ADSDISPLAYENUM_74a53c82d2e2 as ADSDISPLAYENUM}
+
+pub using @56b2b15971268c58 {type ADSDNWITHBINARY_05aefb6ca5a5 as ADSDNWITHBINARY}
+
+pub using @56b2b15971268c58 {type ADSDNWITHSTRING_e15155908d39 as ADSDNWITHSTRING}
+
+pub using @56b2b15971268c58 {type ADSEMAIL_22093ab3a5c7 as ADSEMAIL}
+
+pub using @56b2b15971268c58 {type ADSESCAPEMODEENUM_1499290aafd9 as ADSESCAPEMODEENUM}
+
+pub using @56b2b15971268c58 {type ADSFAXNUMBER_1fbb490c6b14 as ADSFAXNUMBER}
+
+pub using @56b2b15971268c58 {type ADSFLAGTYPEENUM_34d2028f2515 as ADSFLAGTYPEENUM}
+
+pub using @56b2b15971268c58 {type ADSFORMATENUM_32e77e15c0cf as ADSFORMATENUM}
+
+pub using @56b2b15971268c58 {type ADSGROUPTYPEENUM_0d39f4ddfab4 as ADSGROUPTYPEENUM}
+
+pub using @56b2b15971268c58 {type ADSHOLD_17dabd9f02fc as ADSHOLD}
+
+pub using @56b2b15971268c58 {type ADSIDIALECTENUM_a6f3cd33e04d as ADSIDIALECTENUM}
+
+pub using @56b2b15971268c58 {type ADSNAMEINITTYPEENUM_a31c6c4f72a9 as ADSNAMEINITTYPEENUM}
+
+pub using @56b2b15971268c58 {type ADSNAMETYPEENUM_da059d1a6901 as ADSNAMETYPEENUM}
+
+pub using @56b2b15971268c58 {type ADSNETADDRESS_8467abbc5ed9 as ADSNETADDRESS}
+
+pub using @56b2b15971268c58 {type ADSNTSECURITYDESCRIPTOR_4a43f4d1ae88 as ADSNTSECURITYDESCRIPTOR}
+
+pub using @56b2b15971268c58 {type ADSOBJECTINFO_e7a92e89ba5d as ADSOBJECTINFO}
+
+pub using @56b2b15971268c58 {type ADSOCTETLIST_41ce5f832009 as ADSOCTETLIST}
+
+pub using @56b2b15971268c58 {type ADSOCTETSTRING_52b643cb935b as ADSOCTETSTRING}
+
+pub using @56b2b15971268c58 {type ADSOPTIONENUM_e4faffeb2877 as ADSOPTIONENUM}
+
+pub using @56b2b15971268c58 {type ADSPASSWORDENCODINGENUM_be29409dfaa1 as ADSPASSWORDENCODINGENUM}
+
+pub using @56b2b15971268c58 {type ADSPATH_fbf73e72e5ce as ADSPATH}
+
+pub using @56b2b15971268c58 {type ADSPATHTYPEENUM_402337c57238 as ADSPATHTYPEENUM}
+
+pub using @56b2b15971268c58 {type ADSPOSTALADDRESS_529c087b14ac as ADSPOSTALADDRESS}
+
+pub using @56b2b15971268c58 {type ADSPREFERENCESENUM_397fc318cefc as ADSPREFERENCESENUM}
+
+pub using @56b2b15971268c58 {type ADSPROPERROR_ffa00d64d2bf as ADSPROPERROR}
+
+pub using @56b2b15971268c58 {type ADSPROPERTYOPERATIONENUM_bbc19560dfce as ADSPROPERTYOPERATIONENUM}
+
+pub using @56b2b15971268c58 {type ADSPROPINITPARAMS_99bea407360c as ADSPROPINITPARAMS}
+
+pub using @56b2b15971268c58 {type ADSPROVSPECIFIC_27af5c02063b as ADSPROVSPECIFIC}
+
+pub using @56b2b15971268c58 {type ADSREPLICAPOINTER_d6fced4fe75d as ADSREPLICAPOINTER}
+
+pub using @56b2b15971268c58 {type ADSRIGHTSENUM_8f86782df730 as ADSRIGHTSENUM}
+
+pub using @56b2b15971268c58 {type ADSSCOPEENUM_d8f3edab677f as ADSSCOPEENUM}
+
+pub using @56b2b15971268c58 {type ADSSDCONTROLENUM_a5b6a7b083e3 as ADSSDCONTROLENUM}
+
+pub using @56b2b15971268c58 {type ADSSDFORMATENUM_e3364b1d7a5c as ADSSDFORMATENUM}
+
+pub using @56b2b15971268c58 {type ADSSDREVISIONENUM_5e53e01fd6c1 as ADSSDREVISIONENUM}
+
+pub using @56b2b15971268c58 {type ADSSEARCHCOLUMN_a9057ee72d05 as ADSSEARCHCOLUMN}
+
+pub using @56b2b15971268c58 {type ADSSEARCHHANDLE_92ea85014efb as ADSSEARCHHANDLE}
+
+pub using @56b2b15971268c58 {type ADSSEARCHPREFENUM_5fec3347a790 as ADSSEARCHPREFENUM}
+
+pub using @56b2b15971268c58 {type ADSSEARCHPREFINFO_9f62d639daa3 as ADSSEARCHPREFINFO}
+
+pub using @56b2b15971268c58 {type ADSSECURITYINFOENUM_fb87bec936f0 as ADSSECURITYINFOENUM}
+
+pub using @56b2b15971268c58 {type ADSSETTYPEENUM_5ecdc1410481 as ADSSETTYPEENUM}
+
+pub using @56b2b15971268c58 {type ADSSORTKEY_84e8f0e3863f as ADSSORTKEY}
+
+pub using @56b2b15971268c58 {type ADSSTATUSENUM_7c0e575d6331 as ADSSTATUSENUM}
+
+pub using @56b2b15971268c58 {type ADSSYSTEMFLAGENUM_1e925e1d6918 as ADSSYSTEMFLAGENUM}
+
+pub using @56b2b15971268c58 {type ADSTIMESTAMP_2bf38f934daf as ADSTIMESTAMP}
+
+pub using @56b2b15971268c58 {type ADSTYPE_7018cfd142fc as ADSTYPE}
+
+pub using @56b2b15971268c58 {type ADSTYPEDNAME_2c01ad884f2b as ADSTYPEDNAME}
+
+pub using @56b2b15971268c58 {type ADSUSERFLAGENUM_5c514598b720 as ADSUSERFLAGENUM}
+
+pub using @56b2b15971268c58 {type ADSVALUE_375c9b16d14c as ADSVALUE}
+
+pub using @56b2b15971268c58 {type ADSVALUEAnonymousEUnion_da44103b7645 as ADSVALUEAnonymousEUnion}
+
+pub using @56b2b15971268c58 {type ADSVLV_319a64b8975b as ADSVLV}
+
+pub using @56b2b15971268c58 {type ADSystemInfo_18c4e00275a5 as ADSystemInfo}
+
+pub using @56b2b15971268c58 {type ADsSecurityUtility_083e09e51605 as ADsSecurityUtility}
+
+pub using @56b2b15971268c58 {type AccessControlEntry_90ee75cf38de as AccessControlEntry}
+
+pub using @56b2b15971268c58 {type AccessControlList_e3a9768b95eb as AccessControlList}
+
+pub using @56b2b15971268c58 {type BackLink_d1fded40e231 as BackLink}
+
+pub using @56b2b15971268c58 {type CQFORM_6b7e48b96dd2 as CQFORM}
+
+pub using @56b2b15971268c58 {type CQPAGE_16df62c5689c as CQPAGE}
+
+pub using @56b2b15971268c58 {type CaseIgnoreList_9706731307c8 as CaseIgnoreList}
+
+pub using @56b2b15971268c58 {type DNWithBinary_4ad88342107e as DNWithBinary}
+
+pub using @56b2b15971268c58 {type DNWithString_2830c9a5bded as DNWithString}
+
+pub using @56b2b15971268c58 {type DOMAINCONTROLLERINFOA_9ac668149e28 as DOMAINCONTROLLERINFOA}
+
+pub using @56b2b15971268c58 {type DOMAINCONTROLLERINFOW_5297478251a3 as DOMAINCONTROLLERINFOW}
+
+pub using @56b2b15971268c58 {type DOMAINDESC_43448269f7b6 as DOMAINDESC}
+
+pub using @56b2b15971268c58 {type DOMAINTREE_b38fd49c8544 as DOMAINTREE}
+
+pub using @56b2b15971268c58 {type DSANEWOBJDISPINFO_186a8d3ab955 as DSANEWOBJDISPINFO}
+
+pub using @56b2b15971268c58 {type DSBITEMA_a97601ba7c70 as DSBITEMA}
+
+pub using @56b2b15971268c58 {type DSBITEMW_3ffcc6d49d6c as DSBITEMW}
+
+pub using @56b2b15971268c58 {type DSBROWSEINFOA_ea5d04680b82 as DSBROWSEINFOA}
+
+pub using @56b2b15971268c58 {type DSBROWSEINFOW_de3d100b82a2 as DSBROWSEINFOW}
+
+pub using @56b2b15971268c58 {type DSCLASSCREATIONINFO_59b1d4d9c633 as DSCLASSCREATIONINFO}
+
+pub using @56b2b15971268c58 {type DSCOLUMN_ecb0e3bea63d as DSCOLUMN}
+
+pub using @56b2b15971268c58 {type DSDISPLAYSPECOPTIONS_1e5534fb8f21 as DSDISPLAYSPECOPTIONS}
+
+pub using @56b2b15971268c58 {type DSDOMAINCONTROLLERINFO1A_38aae5e28bba as DSDOMAINCONTROLLERINFO1A}
+
+pub using @56b2b15971268c58 {type DSDOMAINCONTROLLERINFO1W_1fe8b1f89e3f as DSDOMAINCONTROLLERINFO1W}
+
+pub using @56b2b15971268c58 {type DSDOMAINCONTROLLERINFO2A_bcc3be24e921 as DSDOMAINCONTROLLERINFO2A}
+
+pub using @56b2b15971268c58 {type DSDOMAINCONTROLLERINFO2W_0b1c4605f5bb as DSDOMAINCONTROLLERINFO2W}
+
+pub using @56b2b15971268c58 {type DSDOMAINCONTROLLERINFO3A_9a97fe802b27 as DSDOMAINCONTROLLERINFO3A}
+
+pub using @56b2b15971268c58 {type DSDOMAINCONTROLLERINFO3W_0e7eef933189 as DSDOMAINCONTROLLERINFO3W}
+
+pub using @56b2b15971268c58 {type DSDOMAINTRUSTSA_ae012e64d73e as DSDOMAINTRUSTSA}
+
+pub using @56b2b15971268c58 {type DSDOMAINTRUSTSW_0ca0442b3d3e as DSDOMAINTRUSTSW}
+
+pub using @56b2b15971268c58 {type DSKCCTASKID_4b43a7d8fdbf as DSKCCTASKID}
+
+pub using @56b2b15971268c58 {type DSMANGLEFOR_af0dea6ca28c as DSMANGLEFOR}
+
+pub using @56b2b15971268c58 {type DSNAMEERROR_442ef28b8556 as DSNAMEERROR}
+
+pub using @56b2b15971268c58 {type DSNAMEFLAGS_202bf474b5c0 as DSNAMEFLAGS}
+
+pub using @56b2b15971268c58 {type DSNAMEFORMAT_aba9abd3e253 as DSNAMEFORMAT}
+
+pub using @56b2b15971268c58 {type DSNAMERESULTA_f3db6f93d791 as DSNAMERESULTA}
+
+pub using @56b2b15971268c58 {type DSNAMERESULTITEMA_ffa91da71da5 as DSNAMERESULTITEMA}
+
+pub using @56b2b15971268c58 {type DSNAMERESULTITEMW_3735319a00d7 as DSNAMERESULTITEMW}
+
+pub using @56b2b15971268c58 {type DSNAMERESULTW_24d0e8a94581 as DSNAMERESULTW}
+
+pub using @56b2b15971268c58 {type DSOBJECT_1153d34da175 as DSOBJECT}
+
+pub using @56b2b15971268c58 {type DSOBJECTNAMES_25a5d564055f as DSOBJECTNAMES}
+
+pub using @56b2b15971268c58 {type DSOPFILTERFLAGS_28caa48d4d35 as DSOPFILTERFLAGS}
+
+pub using @56b2b15971268c58 {type DSOPINITINFO_ec0efee5f958 as DSOPINITINFO}
+
+pub using @56b2b15971268c58 {type DSOPSCOPEINITINFO_8c63a42b9e7a as DSOPSCOPEINITINFO}
+
+pub using @56b2b15971268c58 {type DSOPUPLEVELFILTERFLAGS_64e6674d2039 as DSOPUPLEVELFILTERFLAGS}
+
+pub using @56b2b15971268c58 {type DSPROPERTYPAGEINFO_6421063df5da as DSPROPERTYPAGEINFO}
+
+pub using @56b2b15971268c58 {type DSQUERYCLASSLIST_b15491f2c3cb as DSQUERYCLASSLIST}
+
+pub using @56b2b15971268c58 {type DSQUERYINITPARAMS_68d8f55e54e1 as DSQUERYINITPARAMS}
+
+pub using @56b2b15971268c58 {type DSQUERYPARAMS_73db60f7124c as DSQUERYPARAMS}
+
+pub using @56b2b15971268c58 {type DSREPLATTRMETADATA_e14c1c93ce54 as DSREPLATTRMETADATA}
+
+pub using @56b2b15971268c58 {type DSREPLATTRMETADATA2_7f1236d49dd8 as DSREPLATTRMETADATA2}
+
+pub using @56b2b15971268c58 {type DSREPLATTRMETADATABLOB_597fca93404c as DSREPLATTRMETADATABLOB}
+
+pub using @56b2b15971268c58 {type DSREPLATTRVALUEMETADATA_d8b757edbcb5 as DSREPLATTRVALUEMETADATA}
+
+pub using @56b2b15971268c58 {type DSREPLATTRVALUEMETADATA2_8b1dbbe5af43 as DSREPLATTRVALUEMETADATA2}
+
+pub using @56b2b15971268c58 {type DSREPLATTRVALUEMETADATAEXT_9df013a787c0 as DSREPLATTRVALUEMETADATAEXT}
+
+pub using @56b2b15971268c58 {type DSREPLCURSOR_c3b71ab5d77d as DSREPLCURSOR}
+
+pub using @56b2b15971268c58 {type DSREPLCURSOR2_ff0ea2c9cf2e as DSREPLCURSOR2}
+
+pub using @56b2b15971268c58 {type DSREPLCURSOR3W_72c574a7f9ae as DSREPLCURSOR3W}
+
+pub using @56b2b15971268c58 {type DSREPLCURSORBLOB_0d679be8635b as DSREPLCURSORBLOB}
+
+pub using @56b2b15971268c58 {type DSREPLCURSORS_5810ae00d65e as DSREPLCURSORS}
+
+pub using @56b2b15971268c58 {type DSREPLCURSORS2_f115b882d65e as DSREPLCURSORS2}
+
+pub using @56b2b15971268c58 {type DSREPLCURSORS3W_d0c27fce25bf as DSREPLCURSORS3W}
+
+pub using @56b2b15971268c58 {type DSREPLINFOTYPE_73a893888f75 as DSREPLINFOTYPE}
+
+pub using @56b2b15971268c58 {type DSREPLKCCDSAFAILURESW_ac4bcb2de6c8 as DSREPLKCCDSAFAILURESW}
+
+pub using @56b2b15971268c58 {type DSREPLKCCDSAFAILUREW_e5dcabee82cb as DSREPLKCCDSAFAILUREW}
+
+pub using @56b2b15971268c58 {type DSREPLKCCDSAFAILUREWBLOB_ce27a4456b70 as DSREPLKCCDSAFAILUREWBLOB}
+
+pub using @56b2b15971268c58 {type DSREPLNEIGHBORSW_79fff9d33717 as DSREPLNEIGHBORSW}
+
+pub using @56b2b15971268c58 {type DSREPLNEIGHBORW_415282a5b519 as DSREPLNEIGHBORW}
+
+pub using @56b2b15971268c58 {type DSREPLNEIGHBORWBLOB_386cfdc1f2f9 as DSREPLNEIGHBORWBLOB}
+
+pub using @56b2b15971268c58 {type DSREPLOBJMETADATA_9228e9a787ca as DSREPLOBJMETADATA}
+
+pub using @56b2b15971268c58 {type DSREPLOBJMETADATA2_bc0be47690da as DSREPLOBJMETADATA2}
+
+pub using @56b2b15971268c58 {type DSREPLOPTYPE_caa080efe6ad as DSREPLOPTYPE}
+
+pub using @56b2b15971268c58 {type DSREPLOPW_d7a35bb5bf52 as DSREPLOPW}
+
+pub using @56b2b15971268c58 {type DSREPLOPWBLOB_cfed55b2c427 as DSREPLOPWBLOB}
+
+pub using @56b2b15971268c58 {type DSREPLPENDINGOPSW_a5721d207936 as DSREPLPENDINGOPSW}
+
+pub using @56b2b15971268c58 {type DSREPLQUEUESTATISTICSW_788a3028705b as DSREPLQUEUESTATISTICSW}
+
+pub using @56b2b15971268c58 {type DSREPLVALUEMETADATA_41ee9e5133e7 as DSREPLVALUEMETADATA}
+
+pub using @56b2b15971268c58 {type DSREPLVALUEMETADATA2_657a22db9a98 as DSREPLVALUEMETADATA2}
+
+pub using @56b2b15971268c58 {type DSREPLVALUEMETADATABLOB_a8f89f3cc1a2 as DSREPLVALUEMETADATABLOB}
+
+pub using @56b2b15971268c58 {type DSREPLVALUEMETADATABLOBEXT_af4e78210993 as DSREPLVALUEMETADATABLOBEXT}
+
+pub using @56b2b15971268c58 {type DSREPLVALUEMETADATAEXT_23ec63805e40 as DSREPLVALUEMETADATAEXT}
+
+pub using @56b2b15971268c58 {type DSREPSYNCALLERRINFOA_c8a5bb9425c9 as DSREPSYNCALLERRINFOA}
+
+pub using @56b2b15971268c58 {type DSREPSYNCALLERRINFOW_a46e4a79a1a2 as DSREPSYNCALLERRINFOW}
+
+pub using @56b2b15971268c58 {type DSREPSYNCALLERROR_cdb3db490ced as DSREPSYNCALLERROR}
+
+pub using @56b2b15971268c58 {type DSREPSYNCALLEVENT_c9ca3fc36389 as DSREPSYNCALLEVENT}
+
+pub using @56b2b15971268c58 {type DSREPSYNCALLSYNCA_cf5a8604da24 as DSREPSYNCALLSYNCA}
+
+pub using @56b2b15971268c58 {type DSREPSYNCALLSYNCW_c6f636af3f5c as DSREPSYNCALLSYNCW}
+
+pub using @56b2b15971268c58 {type DSREPSYNCALLUPDATEA_8db3c5a6ebe8 as DSREPSYNCALLUPDATEA}
+
+pub using @56b2b15971268c58 {type DSREPSYNCALLUPDATEW_9773cac20c88 as DSREPSYNCALLUPDATEW}
+
+pub using @56b2b15971268c58 {type DSROLEMACHINEROLE_a7f0120dfe58 as DSROLEMACHINEROLE}
+
+pub using @56b2b15971268c58 {type DSROLEOPERATIONSTATE_b27efe1f4f4b as DSROLEOPERATIONSTATE}
+
+pub using @56b2b15971268c58 {type DSROLEOPERATIONSTATEINFO_fd50f4fa75cd as DSROLEOPERATIONSTATEINFO}
+
+pub using @56b2b15971268c58 {type DSROLEPRIMARYDOMAININFOBASIC_1065b6f2e7e2 as DSROLEPRIMARYDOMAININFOBASIC}
+
+pub using @56b2b15971268c58 {type DSROLEPRIMARYDOMAININFOLEVEL_77b314d91c4e as DSROLEPRIMARYDOMAININFOLEVEL}
+
+pub using @56b2b15971268c58 {type DSROLESERVERSTATE_eee23c86cb03 as DSROLESERVERSTATE}
+
+pub using @56b2b15971268c58 {type DSROLEUPGRADESTATUSINFO_3c9041132bd6 as DSROLEUPGRADESTATUSINFO}
+
+pub using @56b2b15971268c58 {type DSSCHEMAGUIDMAPA_1b5c36be3302 as DSSCHEMAGUIDMAPA}
+
+pub using @56b2b15971268c58 {type DSSCHEMAGUIDMAPW_cab2779abb9c as DSSCHEMAGUIDMAPW}
+
+pub using @56b2b15971268c58 {type DSSELECTION_86adb5ff520a as DSSELECTION}
+
+pub using @56b2b15971268c58 {type DSSELECTIONLIST_e4e881dae912 as DSSELECTIONLIST}
+
+pub using @56b2b15971268c58 {type DSSITECOSTINFO_1608cb09ccf1 as DSSITECOSTINFO}
+
+pub using @56b2b15971268c58 {type DSSPNNAMETYPE_eceffcda12fb as DSSPNNAMETYPE}
+
+pub using @56b2b15971268c58 {type DSSPNWRITEOP_2666d694cfbf as DSSPNWRITEOP}
+
+pub using @56b2b15971268c58 {type Email_392f6e04c983 as Email}
+
+pub using @56b2b15971268c58 {type FaxNumber_067b3a6359ec as FaxNumber}
+
+pub using @56b2b15971268c58 {type Hold_8d3bc49918f8 as Hold}
+
+pub using @56b2b15971268c58 {type IADs_d6df3539f095 as IADs}
+
+pub using @56b2b15971268c58 {type IADsADSystemInfo_c299618c0ab7 as IADsADSystemInfo}
+
+pub using @56b2b15971268c58 {type IADsAccessControlEntry_085af516cc9b as IADsAccessControlEntry}
+
+pub using @56b2b15971268c58 {type IADsAccessControlList_891aeb968aff as IADsAccessControlList}
+
+pub using @56b2b15971268c58 {type IADsAcl_01177a8e83f2 as IADsAcl}
+
+pub using @56b2b15971268c58 {type IADsAggregatee_c14e9e06a331 as IADsAggregatee}
+
+pub using @56b2b15971268c58 {type IADsAggregator_358b3e96b05a as IADsAggregator}
+
+pub using @56b2b15971268c58 {type IADsBackLink_f26d63729c68 as IADsBackLink}
+
+pub using @56b2b15971268c58 {type IADsCaseIgnoreList_41a5c4cd7307 as IADsCaseIgnoreList}
+
+pub using @56b2b15971268c58 {type IADsClass_cd409ed67598 as IADsClass}
+
+pub using @56b2b15971268c58 {type IADsCollection_c4e1ecb78e90 as IADsCollection}
+
+pub using @56b2b15971268c58 {type IADsComputer_2767caa437f6 as IADsComputer}
+
+pub using @56b2b15971268c58 {type IADsComputerOperations_43b464dffd5c as IADsComputerOperations}
+
+pub using @56b2b15971268c58 {type IADsContainer_07607c4d37a9 as IADsContainer}
+
+pub using @56b2b15971268c58 {type IADsDNWithBinary_df613c5e48c9 as IADsDNWithBinary}
+
+pub using @56b2b15971268c58 {type IADsDNWithString_11a4838445c9 as IADsDNWithString}
+
+pub using @56b2b15971268c58 {type IADsDeleteOps_d485e6d38c56 as IADsDeleteOps}
+
+pub using @56b2b15971268c58 {type IADsDomain_068f0f2a2068 as IADsDomain}
+
+pub using @56b2b15971268c58 {type IADsEmail_a021f7b3da76 as IADsEmail}
+
+pub using @56b2b15971268c58 {type IADsExtension_1c2f931202a4 as IADsExtension}
+
+pub using @56b2b15971268c58 {type IADsFaxNumber_2414ae0c36bd as IADsFaxNumber}
+
+pub using @56b2b15971268c58 {type IADsFileService_862701b443a2 as IADsFileService}
+
+pub using @56b2b15971268c58 {type IADsFileServiceOperations_69799ce89365 as IADsFileServiceOperations}
+
+pub using @56b2b15971268c58 {type IADsFileShare_51f9345b836a as IADsFileShare}
+
+pub using @56b2b15971268c58 {type IADsGroup_eba23568de53 as IADsGroup}
+
+pub using @56b2b15971268c58 {type IADsHold_7b2075a1fd50 as IADsHold}
+
+pub using @56b2b15971268c58 {type IADsLargeInteger_5cd4de772a45 as IADsLargeInteger}
+
+pub using @56b2b15971268c58 {type IADsLocality_d1eefa8f52c7 as IADsLocality}
+
+pub using @56b2b15971268c58 {type IADsMembers_a232f8534ec4 as IADsMembers}
+
+pub using @56b2b15971268c58 {type IADsNameTranslate_62680b91a1ea as IADsNameTranslate}
+
+pub using @56b2b15971268c58 {type IADsNamespaces_a6a7ed0d4979 as IADsNamespaces}
+
+pub using @56b2b15971268c58 {type IADsNetAddress_1be7f97425f4 as IADsNetAddress}
+
+pub using @56b2b15971268c58 {type IADsO_fb72d69ecfd3 as IADsO}
+
+pub using @56b2b15971268c58 {type IADsOU_e2c6cdd64926 as IADsOU}
+
+pub using @56b2b15971268c58 {type IADsObjectOptions_7338195766af as IADsObjectOptions}
+
+pub using @56b2b15971268c58 {type IADsOctetList_fad1379a090a as IADsOctetList}
+
+pub using @56b2b15971268c58 {type IADsOpenDSObject_f3eb4591ca90 as IADsOpenDSObject}
+
+pub using @56b2b15971268c58 {type IADsPath_8408ee2b201d as IADsPath}
+
+pub using @56b2b15971268c58 {type IADsPathname_d8538a1223ea as IADsPathname}
+
+pub using @56b2b15971268c58 {type IADsPostalAddress_2f382f6721f4 as IADsPostalAddress}
+
+pub using @56b2b15971268c58 {type IADsPrintJob_07b93c2317b5 as IADsPrintJob}
+
+pub using @56b2b15971268c58 {type IADsPrintJobOperations_976d545c69aa as IADsPrintJobOperations}
+
+pub using @56b2b15971268c58 {type IADsPrintQueue_b2793f2c18fd as IADsPrintQueue}
+
+pub using @56b2b15971268c58 {type IADsPrintQueueOperations_1e3238ff4e51 as IADsPrintQueueOperations}
+
+pub using @56b2b15971268c58 {type IADsProperty_8a4923801167 as IADsProperty}
+
+pub using @56b2b15971268c58 {type IADsPropertyEntry_61c4617d36db as IADsPropertyEntry}
+
+pub using @56b2b15971268c58 {type IADsPropertyList_8c3de834b8b7 as IADsPropertyList}
+
+pub using @56b2b15971268c58 {type IADsPropertyValue_e910e30d7b96 as IADsPropertyValue}
+
+pub using @56b2b15971268c58 {type IADsPropertyValue2_79e2d43d0d8a as IADsPropertyValue2}
+
+pub using @56b2b15971268c58 {type IADsReplicaPointer_04320ced5348 as IADsReplicaPointer}
+
+pub using @56b2b15971268c58 {type IADsResource_625a4491c02c as IADsResource}
+
+pub using @56b2b15971268c58 {type IADsSecurityDescriptor_4527509b4a8c as IADsSecurityDescriptor}
+
+pub using @56b2b15971268c58 {type IADsSecurityUtility_bfe6353d5ce4 as IADsSecurityUtility}
+
+pub using @56b2b15971268c58 {type IADsService_74a6c67d2d81 as IADsService}
+
+pub using @56b2b15971268c58 {type IADsServiceOperations_ec9d6e4c6b28 as IADsServiceOperations}
+
+pub using @56b2b15971268c58 {type IADsSession_51ebde4589c0 as IADsSession}
+
+pub using @56b2b15971268c58 {type IADsSyntax_3dbf53067f0b as IADsSyntax}
+
+pub using @56b2b15971268c58 {type IADsTimestamp_58ffc1212d92 as IADsTimestamp}
+
+pub using @56b2b15971268c58 {type IADsTypedName_1b0d737f8b6f as IADsTypedName}
+
+pub using @56b2b15971268c58 {type IADsUser_b93dac3d6d9b as IADsUser}
+
+pub using @56b2b15971268c58 {type IADsWinNTSystemInfo_de7ea7e2805f as IADsWinNTSystemInfo}
+
+pub using @56b2b15971268c58 {type ICommonQuery_4a4380621dad as ICommonQuery}
+
+pub using @56b2b15971268c58 {type IDirectoryObject_15b96d2aadc2 as IDirectoryObject}
+
+pub using @56b2b15971268c58 {type IDirectorySchemaMgmt_072605dce6ee as IDirectorySchemaMgmt}
+
+pub using @56b2b15971268c58 {type IDirectorySearch_3d138962c04e as IDirectorySearch}
+
+pub using @56b2b15971268c58 {type IDsAdminCreateObj_384574e75897 as IDsAdminCreateObj}
+
+pub using @56b2b15971268c58 {type IDsAdminNewObj_c2f2063295c0 as IDsAdminNewObj}
+
+pub using @56b2b15971268c58 {type IDsAdminNewObjExt_ece33e0d1184 as IDsAdminNewObjExt}
+
+pub using @56b2b15971268c58 {type IDsAdminNewObjPrimarySite_dcd1fda65e97 as IDsAdminNewObjPrimarySite}
+
+pub using @56b2b15971268c58 {type IDsAdminNotifyHandler_517ae95893df as IDsAdminNotifyHandler}
+
+pub using @56b2b15971268c58 {type IDsBrowseDomainTree_84784b848fbe as IDsBrowseDomainTree}
+
+pub using @56b2b15971268c58 {type IDsDisplaySpecifier_651784336920 as IDsDisplaySpecifier}
+
+pub using @56b2b15971268c58 {type IDsObjectPicker_e52631c10073 as IDsObjectPicker}
+
+pub using @56b2b15971268c58 {type IDsObjectPickerCredentials_c8b03b38b54e as IDsObjectPickerCredentials}
+
+pub using @56b2b15971268c58 {type IPersistQuery_f54c475b2066 as IPersistQuery}
+
+pub using @56b2b15971268c58 {type IPrivateDispatch_9f8cf18fc423 as IPrivateDispatch}
+
+pub using @56b2b15971268c58 {type IPrivateUnknown_a3d6ece3f8e2 as IPrivateUnknown}
+
+pub using @56b2b15971268c58 {type IQueryForm_b5fcb5c733d0 as IQueryForm}
+
+pub using @56b2b15971268c58 {type LPCQADDFORMSPROC_5bc4a7289cb5 as LPCQADDFORMSPROC}
+
+pub using @56b2b15971268c58 {type LPCQADDPAGESPROC_26484fa1613b as LPCQADDPAGESPROC}
+
+pub using @56b2b15971268c58 {type LPCQPAGEPROC_22008793e9f1 as LPCQPAGEPROC}
+
+pub using @56b2b15971268c58 {type LPDSENUMATTRIBUTES_51142c4febe0 as LPDSENUMATTRIBUTES}
+
+pub using @56b2b15971268c58 {type LargeInteger_af29614fc0e0 as LargeInteger}
+
+pub using @56b2b15971268c58 {type NameTranslate_dc25e4735715 as NameTranslate}
+
+pub using @56b2b15971268c58 {type NetAddress_fc935e357fb4 as NetAddress}
+
+pub using @56b2b15971268c58 {type OPENQUERYWINDOW_938c3386e30e as OPENQUERYWINDOW}
+
+pub using @56b2b15971268c58 {type OPENQUERYWINDOWAnonymousEUnion_3639b3f9d865 as OPENQUERYWINDOWAnonymousEUnion}
+
+pub using @56b2b15971268c58 {type OctetList_2e171c2e3b34 as OctetList}
+
+pub using @56b2b15971268c58 {type Path_b0dd712526ef as Path}
+
+pub using @56b2b15971268c58 {type Pathname_26c5b3719348 as Pathname}
+
+pub using @56b2b15971268c58 {type PostalAddress_090507d37702 as PostalAddress}
+
+pub using @56b2b15971268c58 {type PropertyEntry_54f11090bc42 as PropertyEntry}
+
+pub using @56b2b15971268c58 {type PropertyValue_6b12763e571e as PropertyValue}
+
+pub using @56b2b15971268c58 {type ReplicaPointer_f290dfdb3dee as ReplicaPointer}
+
+pub using @56b2b15971268c58 {type SCHEDULE_f67ff0cecf4d as SCHEDULE}
+
+pub using @56b2b15971268c58 {type SCHEDULEHEADER_fef1ae5f0adf as SCHEDULEHEADER}
+
+pub using @56b2b15971268c58 {type SecurityDescriptor_3d9d791c6bc5 as SecurityDescriptor}
+
+pub using @56b2b15971268c58 {type Timestamp_76da1b47f1ef as Timestamp}
+
+pub using @56b2b15971268c58 {type TypedName_e66adcc4334d as TypedName}
+
+pub using @56b2b15971268c58 {type WinNTSystemInfo_e8d77b719cbe as WinNTSystemInfo}
+
+// Traits

@@ -1,0 +1,229 @@
+// Generated using `moon info`, DON'T EDIT IT
+package "moonbit-community/win32api/windows/win32/devices/enumeration/pnp"
+
+import {
+  "moonbit-community/win32api/runtime/core",
+  "moonbit-community/win32api/runtime/strings",
+  "moonbit-community/win32api/scc/438b726856428dfb",
+  "moonbit-community/win32api/scc/d4cbb920b31af75b",
+}
+
+// Values
+pub let address_family_value_name : String
+
+pub let fault_action_specific_base : UInt
+
+pub let fault_action_specific_max : UInt
+
+pub let fault_device_internal_error : UInt
+
+pub let fault_invalid_action : UInt
+
+pub let fault_invalid_arg : UInt
+
+pub let fault_invalid_sequence_number : UInt
+
+pub let fault_invalid_variable : UInt
+
+pub let remote_address_value_name : String
+
+pub fn sw_device_close(@core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn sw_device_close_raw(@core.RawAddress) -> Unit
+
+pub fn sw_device_create(@strings.PWStr, @strings.PWStr, @438b726856428dfb.SWDEVICECREATEINFO_dbc7db913250, UInt, @d4cbb920b31af75b.DEVPROPERTY_5ca39975fafb?, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn sw_device_create_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn sw_device_get_lifetime(@core.RawAddress, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn sw_device_get_lifetime_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn sw_device_interface_property_set(@core.RawAddress, @strings.PWStr, UInt, @d4cbb920b31af75b.DEVPROPERTY_5ca39975fafb) -> Int raise @core.WindowsError
+
+pub fn sw_device_interface_property_set_raw(@core.RawAddress, @core.RawAddress, UInt, @core.RawAddress) -> Int
+
+pub fn sw_device_interface_register(@core.RawAddress, @core.RawAddress, @strings.PWStr?, UInt, @d4cbb920b31af75b.DEVPROPERTY_5ca39975fafb?, Int, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn sw_device_interface_register_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, Int, @core.RawAddress) -> Int
+
+pub fn sw_device_interface_set_state(@core.RawAddress, @strings.PWStr, Int) -> Int raise @core.WindowsError
+
+pub fn sw_device_interface_set_state_raw(@core.RawAddress, @core.RawAddress, Int) -> Int
+
+pub fn sw_device_property_set(@core.RawAddress, UInt, @d4cbb920b31af75b.DEVPROPERTY_5ca39975fafb) -> Int raise @core.WindowsError
+
+pub fn sw_device_property_set_raw(@core.RawAddress, UInt, @core.RawAddress) -> Int
+
+pub fn sw_device_set_lifetime(@core.RawAddress, @438b726856428dfb.SWDEVICELIFETIME_21c6abe5c0e4) -> Int raise @core.WindowsError
+
+pub fn sw_device_set_lifetime_raw(@core.RawAddress, Int) -> Int
+
+pub fn sw_mem_free(@core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn sw_mem_free_raw(@core.RawAddress) -> Unit
+
+pub let upnp_addressfamily_both : UInt
+
+pub let upnp_addressfamily_i_pv4 : UInt
+
+pub let upnp_addressfamily_i_pv6 : UInt
+
+pub let upnp_e_action_request_failed : Int
+
+pub let upnp_e_action_specific_base : Int
+
+pub let upnp_e_device_element_expected : Int
+
+pub let upnp_e_device_error : Int
+
+pub let upnp_e_device_node_incomplete : Int
+
+pub let upnp_e_device_notregistered : Int
+
+pub let upnp_e_device_running : Int
+
+pub let upnp_e_device_timeout : Int
+
+pub let upnp_e_duplicate_not_allowed : Int
+
+pub let upnp_e_duplicate_service_id : Int
+
+pub let upnp_e_error_processing_response : Int
+
+pub let upnp_e_event_subscription_failed : Int
+
+pub let upnp_e_icon_element_expected : Int
+
+pub let upnp_e_icon_node_incomplete : Int
+
+pub let upnp_e_invalid_action : Int
+
+pub let upnp_e_invalid_arguments : Int
+
+pub let upnp_e_invalid_description : Int
+
+pub let upnp_e_invalid_document : Int
+
+pub let upnp_e_invalid_icon : Int
+
+pub let upnp_e_invalid_root_namespace : Int
+
+pub let upnp_e_invalid_service : Int
+
+pub let upnp_e_invalid_variable : Int
+
+pub let upnp_e_invalid_xml : Int
+
+pub let upnp_e_out_of_sync : Int
+
+pub let upnp_e_protocol_error : Int
+
+pub let upnp_e_required_element_error : Int
+
+pub let upnp_e_root_element_expected : Int
+
+pub let upnp_e_service_element_expected : Int
+
+pub let upnp_e_service_node_incomplete : Int
+
+pub let upnp_e_suffix_too_long : Int
+
+pub let upnp_e_transport_error : Int
+
+pub let upnp_e_urlbase_present : Int
+
+pub let upnp_e_value_too_long : Int
+
+pub let upnp_e_variable_value_unknown : Int
+
+pub let upnp_service_delay_scpd_and_subscription : UInt
+
+// Errors
+
+// Types and methods
+
+// Type aliases
+pub using @438b726856428dfb {type HSWDEVICE_e22d834efc65 as HSWDEVICE}
+
+pub using @438b726856428dfb {type IUPnPAddressFamilyControl_8f1e80dd24c4 as IUPnPAddressFamilyControl}
+
+pub using @438b726856428dfb {type IUPnPAsyncResult_c958a0bdf256 as IUPnPAsyncResult}
+
+pub using @438b726856428dfb {type IUPnPDescriptionDocument_a86e61d62400 as IUPnPDescriptionDocument}
+
+pub using @438b726856428dfb {type IUPnPDescriptionDocumentCallback_15020502b751 as IUPnPDescriptionDocumentCallback}
+
+pub using @438b726856428dfb {type IUPnPDevice_0c8bcc0958f4 as IUPnPDevice}
+
+pub using @438b726856428dfb {type IUPnPDeviceControl_9e3e8406f63b as IUPnPDeviceControl}
+
+pub using @438b726856428dfb {type IUPnPDeviceControlHttpHeaders_3dde03fa7520 as IUPnPDeviceControlHttpHeaders}
+
+pub using @438b726856428dfb {type IUPnPDeviceDocumentAccess_4c95abd03b15 as IUPnPDeviceDocumentAccess}
+
+pub using @438b726856428dfb {type IUPnPDeviceDocumentAccessEx_97ef450af092 as IUPnPDeviceDocumentAccessEx}
+
+pub using @438b726856428dfb {type IUPnPDeviceFinder_7e5224b3d861 as IUPnPDeviceFinder}
+
+pub using @438b726856428dfb {type IUPnPDeviceFinderAddCallbackWithInterface_53eb050a7658 as IUPnPDeviceFinderAddCallbackWithInterface}
+
+pub using @438b726856428dfb {type IUPnPDeviceFinderCallback_93801e956d50 as IUPnPDeviceFinderCallback}
+
+pub using @438b726856428dfb {type IUPnPDeviceProvider_f7d60e090711 as IUPnPDeviceProvider}
+
+pub using @438b726856428dfb {type IUPnPDevices_251d4149d339 as IUPnPDevices}
+
+pub using @438b726856428dfb {type IUPnPEventSink_b46c862c0587 as IUPnPEventSink}
+
+pub using @438b726856428dfb {type IUPnPEventSource_9c441bba9231 as IUPnPEventSource}
+
+pub using @438b726856428dfb {type IUPnPHttpHeaderControl_4dcbce4ef9ca as IUPnPHttpHeaderControl}
+
+pub using @438b726856428dfb {type IUPnPRegistrar_703dce249729 as IUPnPRegistrar}
+
+pub using @438b726856428dfb {type IUPnPRemoteEndpointInfo_c7a74515a076 as IUPnPRemoteEndpointInfo}
+
+pub using @438b726856428dfb {type IUPnPReregistrar_0b55f56fe835 as IUPnPReregistrar}
+
+pub using @438b726856428dfb {type IUPnPService_1a0fb459f6b5 as IUPnPService}
+
+pub using @438b726856428dfb {type IUPnPServiceAsync_fa2ef4ec4417 as IUPnPServiceAsync}
+
+pub using @438b726856428dfb {type IUPnPServiceCallback_0faf855cf69d as IUPnPServiceCallback}
+
+pub using @438b726856428dfb {type IUPnPServiceDocumentAccess_a43173b728d5 as IUPnPServiceDocumentAccess}
+
+pub using @438b726856428dfb {type IUPnPServiceEnumProperty_751baf09d910 as IUPnPServiceEnumProperty}
+
+pub using @438b726856428dfb {type IUPnPServices_26c671e26c62 as IUPnPServices}
+
+pub using @438b726856428dfb {type SWDEVICECAPABILITIES_659c7fa49a6a as SWDEVICECAPABILITIES}
+
+pub using @438b726856428dfb {type SWDEVICECREATECALLBACK_d6e1ba53db3e as SWDEVICECREATECALLBACK}
+
+pub using @438b726856428dfb {type SWDEVICECREATEINFO_dbc7db913250 as SWDEVICECREATEINFO}
+
+pub using @438b726856428dfb {type SWDEVICELIFETIME_21c6abe5c0e4 as SWDEVICELIFETIME}
+
+pub using @438b726856428dfb {type UPnPDescriptionDocument_26053263a525 as UPnPDescriptionDocument}
+
+pub using @438b726856428dfb {type UPnPDescriptionDocumentEx_51e622ab26a4 as UPnPDescriptionDocumentEx}
+
+pub using @438b726856428dfb {type UPnPDevice_270cdaf88860 as UPnPDevice}
+
+pub using @438b726856428dfb {type UPnPDeviceFinder_507da30b9aa3 as UPnPDeviceFinder}
+
+pub using @438b726856428dfb {type UPnPDeviceFinderEx_325f86876e5b as UPnPDeviceFinderEx}
+
+pub using @438b726856428dfb {type UPnPDevices_296eee70e862 as UPnPDevices}
+
+pub using @438b726856428dfb {type UPnPRegistrar_6f616fe6da88 as UPnPRegistrar}
+
+pub using @438b726856428dfb {type UPnPRemoteEndpointInfo_8da91091ffca as UPnPRemoteEndpointInfo}
+
+pub using @438b726856428dfb {type UPnPService_7983f1e7c021 as UPnPService}
+
+pub using @438b726856428dfb {type UPnPServices_5be584d94a34 as UPnPServices}
+
+// Traits

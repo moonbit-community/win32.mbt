@@ -1,0 +1,273 @@
+// Generated using `moon info`, DON'T EDIT IT
+package "moonbit-community/win32api/windows/win32/network_management/windows_firewall"
+
+import {
+  "moonbit-community/win32api/runtime/core",
+  "moonbit-community/win32api/runtime/strings",
+  "moonbit-community/win32api/scc/324c7bb9c96e2be8",
+  "moonbit-community/win32api/scc/cc6631776d7e2373",
+}
+
+// Values
+pub fn nc_free_netcon_properties(@324c7bb9c96e2be8.NETCONPROPERTIES_b6a5d462c6af) -> Unit raise @core.WindowsError
+
+pub fn nc_free_netcon_properties_raw(@core.RawAddress) -> Unit
+
+pub fn nc_is_valid_connection_name(@strings.PWStr) -> Bool raise @core.WindowsError
+
+pub fn nc_is_valid_connection_name_raw(@core.RawAddress) -> Int
+
+pub let netcon_max_name_len : UInt
+
+pub let netiso_geid_for_neutral_aware : UInt
+
+pub let netiso_geid_for_wdag : UInt
+
+pub fn network_isolation_diagnose_connect_failure_and_get_info(@strings.PWStr, @core.RawAddress) -> UInt raise @core.WindowsError
+
+pub fn network_isolation_diagnose_connect_failure_and_get_info_raw(@core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn network_isolation_enum_app_containers(UInt, @core.RawAddress, @core.RawAddress) -> UInt raise @core.WindowsError
+
+pub fn network_isolation_enum_app_containers_raw(UInt, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn network_isolation_enumerate_app_container_rules(@core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn network_isolation_enumerate_app_container_rules_raw(@core.RawAddress) -> Int
+
+pub fn network_isolation_free_app_containers(@324c7bb9c96e2be8.INETFIREWALLAPPCONTAINER_3ee21973670d) -> UInt raise @core.WindowsError
+
+pub fn network_isolation_free_app_containers_raw(@core.RawAddress) -> UInt
+
+pub fn network_isolation_get_app_container_config(@core.RawAddress, @core.RawAddress) -> UInt raise @core.WindowsError
+
+pub fn network_isolation_get_app_container_config_raw(@core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn network_isolation_get_enterprise_id_async(@strings.PWStr, UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt raise @core.WindowsError
+
+pub fn network_isolation_get_enterprise_id_async_raw(@core.RawAddress, UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn network_isolation_get_enterprise_id_close(@core.RawAddress, Int) -> UInt raise @core.WindowsError
+
+pub fn network_isolation_get_enterprise_id_close_raw(@core.RawAddress, Int) -> UInt
+
+pub fn network_isolation_register_for_app_container_changes(UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt raise @core.WindowsError
+
+pub fn network_isolation_register_for_app_container_changes_raw(UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn network_isolation_set_app_container_config(UInt, @cc6631776d7e2373.SIDANDATTRIBUTES_a5e323de8705) -> UInt raise @core.WindowsError
+
+pub fn network_isolation_set_app_container_config_raw(UInt, @core.RawAddress) -> UInt
+
+pub fn network_isolation_setup_app_container_binaries(@core.RawAddress, @strings.PWStr, @strings.PWStr, @strings.PWStr, Int, @strings.PWStr, UInt) -> Int raise @core.WindowsError
+
+pub fn network_isolation_setup_app_container_binaries_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, Int, @core.RawAddress, UInt) -> Int
+
+pub fn network_isolation_unregister_for_app_container_changes(@core.RawAddress) -> UInt raise @core.WindowsError
+
+pub fn network_isolation_unregister_for_app_container_changes_raw(@core.RawAddress) -> UInt
+
+pub let s_object_no_longer_valid : Int
+
+// Errors
+
+// Types and methods
+
+// Type aliases
+pub using @324c7bb9c96e2be8 {type FWDYNAMICKEYWORDADDRESS0_f07d8f49a731 as FWDYNAMICKEYWORDADDRESS0}
+
+pub using @324c7bb9c96e2be8 {type FWDYNAMICKEYWORDADDRESSDATA0_102bfa3f8e96 as FWDYNAMICKEYWORDADDRESSDATA0}
+
+pub using @324c7bb9c96e2be8 {type FWDYNAMICKEYWORDADDRESSENUMFLAGS_8facac0aa5b2 as FWDYNAMICKEYWORDADDRESSENUMFLAGS}
+
+pub using @324c7bb9c96e2be8 {type FWDYNAMICKEYWORDADDRESSFLAGS_e0ed404d2c32 as FWDYNAMICKEYWORDADDRESSFLAGS}
+
+pub using @324c7bb9c96e2be8 {type FWDYNAMICKEYWORDORIGINTYPE_edab2bae799d as FWDYNAMICKEYWORDORIGINTYPE}
+
+pub using @324c7bb9c96e2be8 {type ICSTARGETTYPE_ca92ca7da38b as ICSTARGETTYPE}
+
+pub using @324c7bb9c96e2be8 {type IDynamicPortMapping_0edfb6fc841c as IDynamicPortMapping}
+
+pub using @324c7bb9c96e2be8 {type IDynamicPortMappingCollection_fa9b2aee93a8 as IDynamicPortMappingCollection}
+
+pub using @324c7bb9c96e2be8 {type IEnumNetConnection_98ea2a16ec90 as IEnumNetConnection}
+
+pub using @324c7bb9c96e2be8 {type IEnumNetSharingEveryConnection_81e3d50efe1d as IEnumNetSharingEveryConnection}
+
+pub using @324c7bb9c96e2be8 {type IEnumNetSharingPortMapping_23e3f1ca3772 as IEnumNetSharingPortMapping}
+
+pub using @324c7bb9c96e2be8 {type IEnumNetSharingPrivateConnection_818b3456fd75 as IEnumNetSharingPrivateConnection}
+
+pub using @324c7bb9c96e2be8 {type IEnumNetSharingPublicConnection_cbc6d70c2366 as IEnumNetSharingPublicConnection}
+
+pub using @324c7bb9c96e2be8 {type INATEventManager_711c1c6982ff as INATEventManager}
+
+pub using @324c7bb9c96e2be8 {type INATExternalIPAddressCallback_c59ed3a00f10 as INATExternalIPAddressCallback}
+
+pub using @324c7bb9c96e2be8 {type INATNumberOfEntriesCallback_b1000fa3419a as INATNumberOfEntriesCallback}
+
+pub using @324c7bb9c96e2be8 {type INETFIREWALLACBINARIES_7a36e8c44094 as INETFIREWALLACBINARIES}
+
+pub using @324c7bb9c96e2be8 {type INETFIREWALLACCAPABILITIES_5c315d3efddd as INETFIREWALLACCAPABILITIES}
+
+pub using @324c7bb9c96e2be8 {type INETFIREWALLACCHANGE_b7e72f45d647 as INETFIREWALLACCHANGE}
+
+pub using @324c7bb9c96e2be8 {type INETFIREWALLACCHANGEAnonymousEUnion_337b61681d7a as INETFIREWALLACCHANGEAnonymousEUnion}
+
+pub using @324c7bb9c96e2be8 {type INETFIREWALLACCHANGETYPE_8033883f3e8b as INETFIREWALLACCHANGETYPE}
+
+pub using @324c7bb9c96e2be8 {type INETFIREWALLACCREATIONTYPE_4159b681c9a5 as INETFIREWALLACCREATIONTYPE}
+
+pub using @324c7bb9c96e2be8 {type INETFIREWALLAPPCONTAINER_3ee21973670d as INETFIREWALLAPPCONTAINER}
+
+pub using @324c7bb9c96e2be8 {type INetConnection_b362c05eca70 as INetConnection}
+
+pub using @324c7bb9c96e2be8 {type INetConnectionConnectUi_7256e5fb0004 as INetConnectionConnectUi}
+
+pub using @324c7bb9c96e2be8 {type INetConnectionManager_530edddc17f5 as INetConnectionManager}
+
+pub using @324c7bb9c96e2be8 {type INetConnectionProps_c9eb64ee9764 as INetConnectionProps}
+
+pub using @324c7bb9c96e2be8 {type INetFwAuthorizedApplication_bba266a488d8 as INetFwAuthorizedApplication}
+
+pub using @324c7bb9c96e2be8 {type INetFwAuthorizedApplications_7da7e9f625bd as INetFwAuthorizedApplications}
+
+pub using @324c7bb9c96e2be8 {type INetFwIcmpSettings_4e93342063c4 as INetFwIcmpSettings}
+
+pub using @324c7bb9c96e2be8 {type INetFwMgr_40b9ed3561b3 as INetFwMgr}
+
+pub using @324c7bb9c96e2be8 {type INetFwOpenPort_4ec3ecb7c4ed as INetFwOpenPort}
+
+pub using @324c7bb9c96e2be8 {type INetFwOpenPorts_d2970384e42d as INetFwOpenPorts}
+
+pub using @324c7bb9c96e2be8 {type INetFwPolicy_f7fc22b9cb94 as INetFwPolicy}
+
+pub using @324c7bb9c96e2be8 {type INetFwPolicy2_f312ceeda717 as INetFwPolicy2}
+
+pub using @324c7bb9c96e2be8 {type INetFwProduct_a1dd0155f5f6 as INetFwProduct}
+
+pub using @324c7bb9c96e2be8 {type INetFwProducts_d298f26fc125 as INetFwProducts}
+
+pub using @324c7bb9c96e2be8 {type INetFwProfile_caaba2a32e45 as INetFwProfile}
+
+pub using @324c7bb9c96e2be8 {type INetFwRemoteAdminSettings_17557becc6cb as INetFwRemoteAdminSettings}
+
+pub using @324c7bb9c96e2be8 {type INetFwRule_36c5258b5334 as INetFwRule}
+
+pub using @324c7bb9c96e2be8 {type INetFwRule2_5e2f968aa0fb as INetFwRule2}
+
+pub using @324c7bb9c96e2be8 {type INetFwRule3_52cc16076592 as INetFwRule3}
+
+pub using @324c7bb9c96e2be8 {type INetFwRules_8e7b229b0631 as INetFwRules}
+
+pub using @324c7bb9c96e2be8 {type INetFwService_ed9973b8ba3e as INetFwService}
+
+pub using @324c7bb9c96e2be8 {type INetFwServiceRestriction_1c0fbce4890a as INetFwServiceRestriction}
+
+pub using @324c7bb9c96e2be8 {type INetFwServices_8905fb412af9 as INetFwServices}
+
+pub using @324c7bb9c96e2be8 {type INetSharingConfiguration_80a32dd032ec as INetSharingConfiguration}
+
+pub using @324c7bb9c96e2be8 {type INetSharingEveryConnectionCollection_34f6676bec6a as INetSharingEveryConnectionCollection}
+
+pub using @324c7bb9c96e2be8 {type INetSharingManager_be6c297223f8 as INetSharingManager}
+
+pub using @324c7bb9c96e2be8 {type INetSharingPortMapping_e7f5ff358ee5 as INetSharingPortMapping}
+
+pub using @324c7bb9c96e2be8 {type INetSharingPortMappingCollection_d3724cc2b156 as INetSharingPortMappingCollection}
+
+pub using @324c7bb9c96e2be8 {type INetSharingPortMappingProps_41093ca63602 as INetSharingPortMappingProps}
+
+pub using @324c7bb9c96e2be8 {type INetSharingPrivateConnectionCollection_ba5b9e952274 as INetSharingPrivateConnectionCollection}
+
+pub using @324c7bb9c96e2be8 {type INetSharingPublicConnectionCollection_e9b1b8f19f8f as INetSharingPublicConnectionCollection}
+
+pub using @324c7bb9c96e2be8 {type IStaticPortMapping_b96b8637be73 as IStaticPortMapping}
+
+pub using @324c7bb9c96e2be8 {type IStaticPortMappingCollection_97a639c4bb48 as IStaticPortMappingCollection}
+
+pub using @324c7bb9c96e2be8 {type IUPnPNAT_8c6afe94daed as IUPnPNAT}
+
+pub using @324c7bb9c96e2be8 {type NETCONCHARACTERISTICFLAGS_657bcddb0b23 as NETCONCHARACTERISTICFLAGS}
+
+pub using @324c7bb9c96e2be8 {type NETCONMEDIATYPE_c1af4d648778 as NETCONMEDIATYPE}
+
+pub using @324c7bb9c96e2be8 {type NETCONMGRENUMFLAGS_ce40b1807553 as NETCONMGRENUMFLAGS}
+
+pub using @324c7bb9c96e2be8 {type NETCONPROPERTIES_b6a5d462c6af as NETCONPROPERTIES}
+
+pub using @324c7bb9c96e2be8 {type NETCONSTATUS_71361b70af74 as NETCONSTATUS}
+
+pub using @324c7bb9c96e2be8 {type NETCONTYPE_9238a71c7f1b as NETCONTYPE}
+
+pub using @324c7bb9c96e2be8 {type NETCONUICONNECTFLAGS_d26fc66396ec as NETCONUICONNECTFLAGS}
+
+pub using @324c7bb9c96e2be8 {type NETFWACTION_4458134a350d as NETFWACTION}
+
+pub using @324c7bb9c96e2be8 {type NETFWAUTHENTICATETYPE_5ce1ddcb35b9 as NETFWAUTHENTICATETYPE}
+
+pub using @324c7bb9c96e2be8 {type NETFWEDGETRAVERSALTYPE_1cd3f9d3cdcd as NETFWEDGETRAVERSALTYPE}
+
+pub using @324c7bb9c96e2be8 {type NETFWIPPROTOCOL_3ae47054bad9 as NETFWIPPROTOCOL}
+
+pub using @324c7bb9c96e2be8 {type NETFWIPVERSION_5824c51523b9 as NETFWIPVERSION}
+
+pub using @324c7bb9c96e2be8 {type NETFWMODIFYSTATE_820bca82b259 as NETFWMODIFYSTATE}
+
+pub using @324c7bb9c96e2be8 {type NETFWPOLICYTYPE_b295c65cffe4 as NETFWPOLICYTYPE}
+
+pub using @324c7bb9c96e2be8 {type NETFWPROFILETYPE_8aece1b33df5 as NETFWPROFILETYPE}
+
+pub using @324c7bb9c96e2be8 {type NETFWPROFILETYPE2_9aecc88489ba as NETFWPROFILETYPE2}
+
+pub using @324c7bb9c96e2be8 {type NETFWRULECATEGORY_76ae34e4e500 as NETFWRULECATEGORY}
+
+pub using @324c7bb9c96e2be8 {type NETFWRULEDIRECTION_4617cf6eda49 as NETFWRULEDIRECTION}
+
+pub using @324c7bb9c96e2be8 {type NETFWSCOPE_9c975da11a38 as NETFWSCOPE}
+
+pub using @324c7bb9c96e2be8 {type NETFWSERVICETYPE_265cae317c22 as NETFWSERVICETYPE}
+
+pub using @324c7bb9c96e2be8 {type NETISOERRORTYPE_bc75c19bcb44 as NETISOERRORTYPE}
+
+pub using @324c7bb9c96e2be8 {type NETISOFLAG_779209df0254 as NETISOFLAG}
+
+pub using @324c7bb9c96e2be8 {type NetFwAuthorizedApplication_d575dfa7bc57 as NetFwAuthorizedApplication}
+
+pub using @324c7bb9c96e2be8 {type NetFwMgr_dd8846e51a6b as NetFwMgr}
+
+pub using @324c7bb9c96e2be8 {type NetFwOpenPort_45b941aa536c as NetFwOpenPort}
+
+pub using @324c7bb9c96e2be8 {type NetFwPolicy2_a12e66f758fa as NetFwPolicy2}
+
+pub using @324c7bb9c96e2be8 {type NetFwProduct_e8797b40c52b as NetFwProduct}
+
+pub using @324c7bb9c96e2be8 {type NetFwProducts_19794f29f158 as NetFwProducts}
+
+pub using @324c7bb9c96e2be8 {type NetFwRule_1c840aea34e4 as NetFwRule}
+
+pub using @324c7bb9c96e2be8 {type NetSharingManager_60e654bf0c60 as NetSharingManager}
+
+pub using @324c7bb9c96e2be8 {type PACCHANGESCALLBACKFN_1fdd321e5e39 as PACCHANGESCALLBACKFN}
+
+pub using @324c7bb9c96e2be8 {type PFNFWADDDYNAMICKEYWORDADDRESS0_49fb89f5b840 as PFNFWADDDYNAMICKEYWORDADDRESS0}
+
+pub using @324c7bb9c96e2be8 {type PFNFWDELETEDYNAMICKEYWORDADDRESS0_3d334262bbdf as PFNFWDELETEDYNAMICKEYWORDADDRESS0}
+
+pub using @324c7bb9c96e2be8 {type PFNFWENUMDYNAMICKEYWORDADDRESSBYID0_eb0ad6ceb2b7 as PFNFWENUMDYNAMICKEYWORDADDRESSBYID0}
+
+pub using @324c7bb9c96e2be8 {type PFNFWENUMDYNAMICKEYWORDADDRESSESBYTYPE0_2d61cd5bbb71 as PFNFWENUMDYNAMICKEYWORDADDRESSESBYTYPE0}
+
+pub using @324c7bb9c96e2be8 {type PFNFWFREEDYNAMICKEYWORDADDRESSDATA0_e4b20dadef0e as PFNFWFREEDYNAMICKEYWORDADDRESSDATA0}
+
+pub using @324c7bb9c96e2be8 {type PFNFWUPDATEDYNAMICKEYWORDADDRESS0_832a4aebaf4b as PFNFWUPDATEDYNAMICKEYWORDADDRESS0}
+
+pub using @324c7bb9c96e2be8 {type PNETISOEDPIDCALLBACKFN_4338b281be2d as PNETISOEDPIDCALLBACKFN}
+
+pub using @324c7bb9c96e2be8 {type SHARINGCONNECTIONENUMFLAGS_a1ac197ffa3b as SHARINGCONNECTIONENUMFLAGS}
+
+pub using @324c7bb9c96e2be8 {type SHARINGCONNECTIONTYPE_676ea34ceac5 as SHARINGCONNECTIONTYPE}
+
+pub using @324c7bb9c96e2be8 {type UPnPNAT_adbce997f200 as UPnPNAT}
+
+// Traits

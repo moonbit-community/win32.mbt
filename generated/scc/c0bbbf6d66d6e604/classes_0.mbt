@@ -1,0 +1,49 @@
+///|
+pub fn TBSCOMMANDLOCALITY_d21865ee7ca7::four() -> TBSCOMMANDLOCALITY_d21865ee7ca7 {
+  TBSCOMMANDLOCALITY_d21865ee7ca7::from_int(4U.reinterpret_as_int())
+}
+
+///|
+pub fn TBSCOMMANDLOCALITY_d21865ee7ca7::one() -> TBSCOMMANDLOCALITY_d21865ee7ca7 {
+  TBSCOMMANDLOCALITY_d21865ee7ca7::from_int(1U.reinterpret_as_int())
+}
+
+///|
+pub fn TBSCOMMANDLOCALITY_d21865ee7ca7::three() -> TBSCOMMANDLOCALITY_d21865ee7ca7 {
+  TBSCOMMANDLOCALITY_d21865ee7ca7::from_int(3U.reinterpret_as_int())
+}
+
+///|
+pub fn TBSCOMMANDLOCALITY_d21865ee7ca7::two() -> TBSCOMMANDLOCALITY_d21865ee7ca7 {
+  TBSCOMMANDLOCALITY_d21865ee7ca7::from_int(2U.reinterpret_as_int())
+}
+
+///|
+pub fn TBSCOMMANDLOCALITY_d21865ee7ca7::zero() -> TBSCOMMANDLOCALITY_d21865ee7ca7 {
+  TBSCOMMANDLOCALITY_d21865ee7ca7::from_int(0U.reinterpret_as_int())
+}
+
+///|
+pub fn TBSCOMMANDPRIORITY_d596436a9483::high() -> TBSCOMMANDPRIORITY_d596436a9483 {
+  TBSCOMMANDPRIORITY_d596436a9483::from_int(300U.reinterpret_as_int())
+}
+
+///|
+pub fn TBSCOMMANDPRIORITY_d596436a9483::low() -> TBSCOMMANDPRIORITY_d596436a9483 {
+  TBSCOMMANDPRIORITY_d596436a9483::from_int(100U.reinterpret_as_int())
+}
+
+///|
+pub fn TBSCOMMANDPRIORITY_d596436a9483::max() -> TBSCOMMANDPRIORITY_d596436a9483 {
+  TBSCOMMANDPRIORITY_d596436a9483::from_int(2147483648U.reinterpret_as_int())
+}
+
+///|
+pub fn TBSCOMMANDPRIORITY_d596436a9483::normal() -> TBSCOMMANDPRIORITY_d596436a9483 {
+  TBSCOMMANDPRIORITY_d596436a9483::from_int(200U.reinterpret_as_int())
+}
+
+///|
+pub fn TBSCOMMANDPRIORITY_d596436a9483::system() -> TBSCOMMANDPRIORITY_d596436a9483 {
+  TBSCOMMANDPRIORITY_d596436a9483::from_int(400U.reinterpret_as_int())
+}

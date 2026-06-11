@@ -1,0 +1,732 @@
+// Generated using `moon info`, DON'T EDIT IT
+package "moonbit-community/win32api/windows/win32/system/real_time_communications"
+
+import {
+  "moonbit-community/win32api/scc/457794b490c55d74",
+}
+
+// Values
+pub let facility_pint_status_code : UInt
+
+pub let facility_rtc_interface : UInt
+
+pub let facility_sip_status_code : UInt
+
+pub let rtc_e_another_media_session_active : Int
+
+pub let rtc_e_basic_auth_set_tls : Int
+
+pub let rtc_e_client_already_initialized : Int
+
+pub let rtc_e_client_already_shut_down : Int
+
+pub let rtc_e_client_not_initialized : Int
+
+pub let rtc_e_destination_address_local : Int
+
+pub let rtc_e_destination_address_multicast : Int
+
+pub let rtc_e_duplicate_buddy : Int
+
+pub let rtc_e_duplicate_group : Int
+
+pub let rtc_e_duplicate_realm : Int
+
+pub let rtc_e_duplicate_watcher : Int
+
+pub let rtc_e_invalid_acl_list : Int
+
+pub let rtc_e_invalid_address_local : Int
+
+pub let rtc_e_invalid_buddy_list : Int
+
+pub let rtc_e_invalid_listen_socket : Int
+
+pub let rtc_e_invalid_object_state : Int
+
+pub let rtc_e_invalid_portrange : Int
+
+pub let rtc_e_invalid_preference_list : Int
+
+pub let rtc_e_invalid_profile : Int
+
+pub let rtc_e_invalid_proxy_address : Int
+
+pub let rtc_e_invalid_registration_state : Int
+
+pub let rtc_e_invalid_session_state : Int
+
+pub let rtc_e_invalid_session_type : Int
+
+pub let rtc_e_invalid_sip_url : Int
+
+pub let rtc_e_listening_socket_not_exist : Int
+
+pub let rtc_e_local_phone_needed : Int
+
+pub let rtc_e_malformed_xml : Int
+
+pub let rtc_e_max_pending_operations : Int
+
+pub let rtc_e_max_redirects : Int
+
+pub let rtc_e_media_aec : Int
+
+pub let rtc_e_media_audio_device_not_available : Int
+
+pub let rtc_e_media_controller_state : Int
+
+pub let rtc_e_media_disabled : Int
+
+pub let rtc_e_media_enabled : Int
+
+pub let rtc_e_media_need_terminal : Int
+
+pub let rtc_e_media_session_in_hold : Int
+
+pub let rtc_e_media_session_not_exist : Int
+
+pub let rtc_e_media_video_device_not_available : Int
+
+pub let rtc_e_no_buddy : Int
+
+pub let rtc_e_no_device : Int
+
+pub let rtc_e_no_group : Int
+
+pub let rtc_e_no_profile : Int
+
+pub let rtc_e_no_realm : Int
+
+pub let rtc_e_no_transport : Int
+
+pub let rtc_e_no_watcher : Int
+
+pub let rtc_e_not_allowed : Int
+
+pub let rtc_e_not_exist : Int
+
+pub let rtc_e_not_presence_profile : Int
+
+pub let rtc_e_operation_with_too_many_participants : Int
+
+pub let rtc_e_pint_status_rejected_all_busy : Int
+
+pub let rtc_e_pint_status_rejected_badnumber : Int
+
+pub let rtc_e_pint_status_rejected_busy : Int
+
+pub let rtc_e_pint_status_rejected_cancelled : Int
+
+pub let rtc_e_pint_status_rejected_no_answer : Int
+
+pub let rtc_e_pint_status_rejected_pl_failed : Int
+
+pub let rtc_e_pint_status_rejected_sw_failed : Int
+
+pub let rtc_e_platform_not_supported : Int
+
+pub let rtc_e_policy_not_allow : Int
+
+pub let rtc_e_port_manager_already_set : Int
+
+pub let rtc_e_port_mapping_failed : Int
+
+pub let rtc_e_port_mapping_unavailable : Int
+
+pub let rtc_e_presence_enabled : Int
+
+pub let rtc_e_presence_not_enabled : Int
+
+pub let rtc_e_profile_invalid_server_authmethod : Int
+
+pub let rtc_e_profile_invalid_server_protocol : Int
+
+pub let rtc_e_profile_invalid_server_role : Int
+
+pub let rtc_e_profile_invalid_session : Int
+
+pub let rtc_e_profile_invalid_session_party : Int
+
+pub let rtc_e_profile_invalid_session_type : Int
+
+pub let rtc_e_profile_multiple_registrars : Int
+
+pub let rtc_e_profile_no_key : Int
+
+pub let rtc_e_profile_no_name : Int
+
+pub let rtc_e_profile_no_provision : Int
+
+pub let rtc_e_profile_no_server : Int
+
+pub let rtc_e_profile_no_server_address : Int
+
+pub let rtc_e_profile_no_server_protocol : Int
+
+pub let rtc_e_profile_no_user : Int
+
+pub let rtc_e_profile_no_user_uri : Int
+
+pub let rtc_e_profile_server_unauthorized : Int
+
+pub let rtc_e_redirect_processing_failed : Int
+
+pub let rtc_e_refer_not_accepted : Int
+
+pub let rtc_e_refer_not_allowed : Int
+
+pub let rtc_e_refer_not_exist : Int
+
+pub let rtc_e_registration_deactivated : Int
+
+pub let rtc_e_registration_rejected : Int
+
+pub let rtc_e_registration_unregistered : Int
+
+pub let rtc_e_roaming_enabled : Int
+
+pub let rtc_e_roaming_failed : Int
+
+pub let rtc_e_roaming_operation_interrupted : Int
+
+pub let rtc_e_sdp_connection_addr : Int
+
+pub let rtc_e_sdp_failed_to_build : Int
+
+pub let rtc_e_sdp_multicast : Int
+
+pub let rtc_e_sdp_no_media : Int
+
+pub let rtc_e_sdp_not_present : Int
+
+pub let rtc_e_sdp_parse_failed : Int
+
+pub let rtc_e_sdp_update_failed : Int
+
+pub let rtc_e_security_level_already_set : Int
+
+pub let rtc_e_security_level_not_compatible : Int
+
+pub let rtc_e_security_level_not_defined : Int
+
+pub let rtc_e_security_level_not_supported_by_participant : Int
+
+pub let rtc_e_sip_additional_party_in_two_party_session : Int
+
+pub let rtc_e_sip_auth_failed : Int
+
+pub let rtc_e_sip_auth_header_sent : Int
+
+pub let rtc_e_sip_auth_time_skew : Int
+
+pub let rtc_e_sip_auth_type_not_supported : Int
+
+pub let rtc_e_sip_call_connection_not_established : Int
+
+pub let rtc_e_sip_call_disconnected : Int
+
+pub let rtc_e_sip_codecs_do_not_match : Int
+
+pub let rtc_e_sip_dns_fail : Int
+
+pub let rtc_e_sip_header_not_present : Int
+
+pub let rtc_e_sip_high_security_set_tls : Int
+
+pub let rtc_e_sip_hold_operation_pending : Int
+
+pub let rtc_e_sip_invalid_certificate : Int
+
+pub let rtc_e_sip_invite_transaction_pending : Int
+
+pub let rtc_e_sip_invitee_party_timeout : Int
+
+pub let rtc_e_sip_need_more_data : Int
+
+pub let rtc_e_sip_no_stream : Int
+
+pub let rtc_e_sip_other_party_join_in_progress : Int
+
+pub let rtc_e_sip_parse_failed : Int
+
+pub let rtc_e_sip_party_already_in_session : Int
+
+pub let rtc_e_sip_peer_participant_in_multiparty_session : Int
+
+pub let rtc_e_sip_refer_operation_pending : Int
+
+pub let rtc_e_sip_request_destination_addr_not_present : Int
+
+pub let rtc_e_sip_ssl_negotiation_timeout : Int
+
+pub let rtc_e_sip_ssl_tunnel_failed : Int
+
+pub let rtc_e_sip_stack_shutdown : Int
+
+pub let rtc_e_sip_stream_not_present : Int
+
+pub let rtc_e_sip_stream_present : Int
+
+pub let rtc_e_sip_tcp_fail : Int
+
+pub let rtc_e_sip_timeout : Int
+
+pub let rtc_e_sip_tls_fail : Int
+
+pub let rtc_e_sip_tls_incompatible_encryption : Int
+
+pub let rtc_e_sip_transport_not_supported : Int
+
+pub let rtc_e_sip_udp_size_exceeded : Int
+
+pub let rtc_e_sip_unhold_operation_pending : Int
+
+pub let rtc_e_start_stream : Int
+
+pub let rtc_e_status_client_address_incomplete : Int
+
+pub let rtc_e_status_client_ambiguous : Int
+
+pub let rtc_e_status_client_bad_extension : Int
+
+pub let rtc_e_status_client_bad_request : Int
+
+pub let rtc_e_status_client_busy_here : Int
+
+pub let rtc_e_status_client_conflict : Int
+
+pub let rtc_e_status_client_forbidden : Int
+
+pub let rtc_e_status_client_gone : Int
+
+pub let rtc_e_status_client_length_required : Int
+
+pub let rtc_e_status_client_loop_detected : Int
+
+pub let rtc_e_status_client_method_not_allowed : Int
+
+pub let rtc_e_status_client_not_acceptable : Int
+
+pub let rtc_e_status_client_not_found : Int
+
+pub let rtc_e_status_client_payment_required : Int
+
+pub let rtc_e_status_client_proxy_authentication_required : Int
+
+pub let rtc_e_status_client_request_entity_too_large : Int
+
+pub let rtc_e_status_client_request_timeout : Int
+
+pub let rtc_e_status_client_request_uri_too_large : Int
+
+pub let rtc_e_status_client_temporarily_not_available : Int
+
+pub let rtc_e_status_client_too_many_hops : Int
+
+pub let rtc_e_status_client_transaction_does_not_exist : Int
+
+pub let rtc_e_status_client_unauthorized : Int
+
+pub let rtc_e_status_client_unsupported_media_type : Int
+
+pub let rtc_e_status_global_busy_everywhere : Int
+
+pub let rtc_e_status_global_decline : Int
+
+pub let rtc_e_status_global_does_not_exist_anywhere : Int
+
+pub let rtc_e_status_global_not_acceptable : Int
+
+pub let rtc_e_status_info_call_forwarding : Int
+
+pub let rtc_e_status_info_queued : Int
+
+pub let rtc_e_status_info_ringing : Int
+
+pub let rtc_e_status_info_trying : Int
+
+pub let rtc_e_status_not_acceptable_here : Int
+
+pub let rtc_e_status_redirect_alternative_service : Int
+
+pub let rtc_e_status_redirect_moved_permanently : Int
+
+pub let rtc_e_status_redirect_moved_temporarily : Int
+
+pub let rtc_e_status_redirect_multiple_choices : Int
+
+pub let rtc_e_status_redirect_see_other : Int
+
+pub let rtc_e_status_redirect_use_proxy : Int
+
+pub let rtc_e_status_request_terminated : Int
+
+pub let rtc_e_status_server_bad_gateway : Int
+
+pub let rtc_e_status_server_internal_error : Int
+
+pub let rtc_e_status_server_not_implemented : Int
+
+pub let rtc_e_status_server_server_timeout : Int
+
+pub let rtc_e_status_server_service_unavailable : Int
+
+pub let rtc_e_status_server_version_not_supported : Int
+
+pub let rtc_e_status_session_progress : Int
+
+pub let rtc_e_status_success : Int
+
+pub let rtc_e_too_many_groups : Int
+
+pub let rtc_e_too_many_retries : Int
+
+pub let rtc_e_too_small_expires_value : Int
+
+pub let rtc_e_udp_not_supported : Int
+
+pub let rtc_s_roaming_not_supported : Int
+
+pub let rtcau_basic : UInt
+
+pub let rtcau_digest : UInt
+
+pub let rtcau_kerberos : UInt
+
+pub let rtcau_ntlm : UInt
+
+pub let rtcau_use_logon_cred : UInt
+
+pub let rtccs_fail_on_redirect : UInt
+
+pub let rtccs_force_profile : UInt
+
+pub let rtcef_all : UInt
+
+pub let rtcef_buddy : UInt
+
+pub let rtcef_buddy2 : UInt
+
+pub let rtcef_client : UInt
+
+pub let rtcef_group : UInt
+
+pub let rtcef_info : UInt
+
+pub let rtcef_intensity : UInt
+
+pub let rtcef_media : UInt
+
+pub let rtcef_media_request : UInt
+
+pub let rtcef_messaging : UInt
+
+pub let rtcef_participant_state_change : UInt
+
+pub let rtcef_presence_data : UInt
+
+pub let rtcef_presence_property : UInt
+
+pub let rtcef_presence_status : UInt
+
+pub let rtcef_profile : UInt
+
+pub let rtcef_registration_state_change : UInt
+
+pub let rtcef_reinvite : UInt
+
+pub let rtcef_roaming : UInt
+
+pub let rtcef_session_operation_complete : UInt
+
+pub let rtcef_session_refer_status : UInt
+
+pub let rtcef_session_referred : UInt
+
+pub let rtcef_session_state_change : UInt
+
+pub let rtcef_usersearch : UInt
+
+pub let rtcef_watcher : UInt
+
+pub let rtcef_watcher2 : UInt
+
+pub let rtcif_disable_media : UInt
+
+pub let rtcif_disable_strict_dns : UInt
+
+pub let rtcif_disable_upnp : UInt
+
+pub let rtcif_enable_server_class : UInt
+
+pub let rtcmt_audio_receive : UInt
+
+pub let rtcmt_audio_send : UInt
+
+pub let rtcmt_t120_sendrecv : UInt
+
+pub let rtcmt_video_receive : UInt
+
+pub let rtcmt_video_send : UInt
+
+pub let rtcrf_register_all : UInt
+
+pub let rtcrf_register_invite_sessions : UInt
+
+pub let rtcrf_register_message_sessions : UInt
+
+pub let rtcrf_register_notify : UInt
+
+pub let rtcrf_register_presence : UInt
+
+pub let rtcrmf_all_roaming : UInt
+
+pub let rtcrmf_buddy_roaming : UInt
+
+pub let rtcrmf_presence_roaming : UInt
+
+pub let rtcrmf_profile_roaming : UInt
+
+pub let rtcrmf_watcher_roaming : UInt
+
+pub let rtcsi_application : UInt
+
+pub let rtcsi_im : UInt
+
+pub let rtcsi_multiparty_im : UInt
+
+pub let rtcsi_pc_to_pc : UInt
+
+pub let rtcsi_pc_to_phone : UInt
+
+pub let rtcsi_phone_to_phone : UInt
+
+pub let rtctr_tcp : UInt
+
+pub let rtctr_tls : UInt
+
+pub let rtctr_udp : UInt
+
+pub let status_severity_rtc_error : UInt
+
+// Errors
+
+// Types and methods
+
+// Type aliases
+pub using @457794b490c55d74 {type INetworkTransportSettings_7a6ecc539af2 as INetworkTransportSettings}
+
+pub using @457794b490c55d74 {type INotificationTransportSync_9fd92796a21f as INotificationTransportSync}
+
+pub using @457794b490c55d74 {type IRTCBuddy_d27e306573bc as IRTCBuddy}
+
+pub using @457794b490c55d74 {type IRTCBuddy2_87602dea4903 as IRTCBuddy2}
+
+pub using @457794b490c55d74 {type IRTCBuddyEvent_5afd8967d19e as IRTCBuddyEvent}
+
+pub using @457794b490c55d74 {type IRTCBuddyEvent2_7ba5a73bf5df as IRTCBuddyEvent2}
+
+pub using @457794b490c55d74 {type IRTCBuddyGroup_be38fd66bc49 as IRTCBuddyGroup}
+
+pub using @457794b490c55d74 {type IRTCBuddyGroupEvent_5356c2fc8e46 as IRTCBuddyGroupEvent}
+
+pub using @457794b490c55d74 {type IRTCClient_c424e0770700 as IRTCClient}
+
+pub using @457794b490c55d74 {type IRTCClient2_acaaf46bae60 as IRTCClient2}
+
+pub using @457794b490c55d74 {type IRTCClientEvent_d4119849d786 as IRTCClientEvent}
+
+pub using @457794b490c55d74 {type IRTCClientPortManagement_24214fcf994b as IRTCClientPortManagement}
+
+pub using @457794b490c55d74 {type IRTCClientPresence_dc6d86cf2335 as IRTCClientPresence}
+
+pub using @457794b490c55d74 {type IRTCClientPresence2_7f551b2573ea as IRTCClientPresence2}
+
+pub using @457794b490c55d74 {type IRTCClientProvisioning_fde3bd7c826d as IRTCClientProvisioning}
+
+pub using @457794b490c55d74 {type IRTCClientProvisioning2_3350f86bcb66 as IRTCClientProvisioning2}
+
+pub using @457794b490c55d74 {type IRTCCollection_c0b88b0bf7cd as IRTCCollection}
+
+pub using @457794b490c55d74 {type IRTCDispatchEventNotification_b9c80fe686e1 as IRTCDispatchEventNotification}
+
+pub using @457794b490c55d74 {type IRTCEnumBuddies_634cbe6b2e18 as IRTCEnumBuddies}
+
+pub using @457794b490c55d74 {type IRTCEnumGroups_3de17914c374 as IRTCEnumGroups}
+
+pub using @457794b490c55d74 {type IRTCEnumParticipants_0817adfcdc68 as IRTCEnumParticipants}
+
+pub using @457794b490c55d74 {type IRTCEnumPresenceDevices_1477016b9b44 as IRTCEnumPresenceDevices}
+
+pub using @457794b490c55d74 {type IRTCEnumProfiles_2fa5a16ab937 as IRTCEnumProfiles}
+
+pub using @457794b490c55d74 {type IRTCEnumUserSearchResults_969e56224bcf as IRTCEnumUserSearchResults}
+
+pub using @457794b490c55d74 {type IRTCEnumWatchers_9e6acf3a20b1 as IRTCEnumWatchers}
+
+pub using @457794b490c55d74 {type IRTCEventNotification_ad8b6bba7167 as IRTCEventNotification}
+
+pub using @457794b490c55d74 {type IRTCInfoEvent_42e80b9c7f41 as IRTCInfoEvent}
+
+pub using @457794b490c55d74 {type IRTCIntensityEvent_f15c2bbb43d7 as IRTCIntensityEvent}
+
+pub using @457794b490c55d74 {type IRTCMediaEvent_c5d72144e9ae as IRTCMediaEvent}
+
+pub using @457794b490c55d74 {type IRTCMediaRequestEvent_6daff8d64192 as IRTCMediaRequestEvent}
+
+pub using @457794b490c55d74 {type IRTCMessagingEvent_d5cf0adf3b1a as IRTCMessagingEvent}
+
+pub using @457794b490c55d74 {type IRTCParticipant_5950ec7ec433 as IRTCParticipant}
+
+pub using @457794b490c55d74 {type IRTCParticipantStateChangeEvent_0080569979b7 as IRTCParticipantStateChangeEvent}
+
+pub using @457794b490c55d74 {type IRTCPortManager_a0b78c993d82 as IRTCPortManager}
+
+pub using @457794b490c55d74 {type IRTCPresenceContact_eedf03475e0c as IRTCPresenceContact}
+
+pub using @457794b490c55d74 {type IRTCPresenceDataEvent_fb4ee9ef894b as IRTCPresenceDataEvent}
+
+pub using @457794b490c55d74 {type IRTCPresenceDevice_b3c587671ff9 as IRTCPresenceDevice}
+
+pub using @457794b490c55d74 {type IRTCPresencePropertyEvent_a2ef536de774 as IRTCPresencePropertyEvent}
+
+pub using @457794b490c55d74 {type IRTCPresenceStatusEvent_a333e13d0af1 as IRTCPresenceStatusEvent}
+
+pub using @457794b490c55d74 {type IRTCProfile_ba132928cf81 as IRTCProfile}
+
+pub using @457794b490c55d74 {type IRTCProfile2_d047d1bc4061 as IRTCProfile2}
+
+pub using @457794b490c55d74 {type IRTCProfileEvent_18136bda7b1d as IRTCProfileEvent}
+
+pub using @457794b490c55d74 {type IRTCProfileEvent2_44246db2f5ad as IRTCProfileEvent2}
+
+pub using @457794b490c55d74 {type IRTCReInviteEvent_85d9dd07c1ed as IRTCReInviteEvent}
+
+pub using @457794b490c55d74 {type IRTCRegistrationStateChangeEvent_70fb817e2865 as IRTCRegistrationStateChangeEvent}
+
+pub using @457794b490c55d74 {type IRTCRoamingEvent_91978033b566 as IRTCRoamingEvent}
+
+pub using @457794b490c55d74 {type IRTCSession_2a2514debfd8 as IRTCSession}
+
+pub using @457794b490c55d74 {type IRTCSession2_7dc376fb1ee6 as IRTCSession2}
+
+pub using @457794b490c55d74 {type IRTCSessionCallControl_0c8315e25569 as IRTCSessionCallControl}
+
+pub using @457794b490c55d74 {type IRTCSessionDescriptionManager_b79e1db4120e as IRTCSessionDescriptionManager}
+
+pub using @457794b490c55d74 {type IRTCSessionOperationCompleteEvent_bd9ff3db94d2 as IRTCSessionOperationCompleteEvent}
+
+pub using @457794b490c55d74 {type IRTCSessionOperationCompleteEvent2_2e9a999bc23e as IRTCSessionOperationCompleteEvent2}
+
+pub using @457794b490c55d74 {type IRTCSessionPortManagement_b31b662b349c as IRTCSessionPortManagement}
+
+pub using @457794b490c55d74 {type IRTCSessionReferStatusEvent_135326a7266b as IRTCSessionReferStatusEvent}
+
+pub using @457794b490c55d74 {type IRTCSessionReferredEvent_a748f267964e as IRTCSessionReferredEvent}
+
+pub using @457794b490c55d74 {type IRTCSessionStateChangeEvent_04bd6aff884e as IRTCSessionStateChangeEvent}
+
+pub using @457794b490c55d74 {type IRTCSessionStateChangeEvent2_70b0335b17f5 as IRTCSessionStateChangeEvent2}
+
+pub using @457794b490c55d74 {type IRTCUserSearch_2771fee327c6 as IRTCUserSearch}
+
+pub using @457794b490c55d74 {type IRTCUserSearchQuery_2945e7ead715 as IRTCUserSearchQuery}
+
+pub using @457794b490c55d74 {type IRTCUserSearchResult_29759046f763 as IRTCUserSearchResult}
+
+pub using @457794b490c55d74 {type IRTCUserSearchResultsEvent_116c78d6e6ba as IRTCUserSearchResultsEvent}
+
+pub using @457794b490c55d74 {type IRTCWatcher_f84201b26762 as IRTCWatcher}
+
+pub using @457794b490c55d74 {type IRTCWatcher2_30df34cda9e5 as IRTCWatcher2}
+
+pub using @457794b490c55d74 {type IRTCWatcherEvent_6674b14d01b1 as IRTCWatcherEvent}
+
+pub using @457794b490c55d74 {type IRTCWatcherEvent2_96964054f622 as IRTCWatcherEvent2}
+
+pub using @457794b490c55d74 {type ITransportSettingsInternal_56fefd373ce0 as ITransportSettingsInternal}
+
+pub using @457794b490c55d74 {type RTCACESCOPE_d479748a2717 as RTCACESCOPE}
+
+pub using @457794b490c55d74 {type RTCANSWERMODE_8abdffcad19f as RTCANSWERMODE}
+
+pub using @457794b490c55d74 {type RTCAUDIODEVICE_3045c637aa69 as RTCAUDIODEVICE}
+
+pub using @457794b490c55d74 {type RTCBUDDYEVENTTYPE_f3e72441392a as RTCBUDDYEVENTTYPE}
+
+pub using @457794b490c55d74 {type RTCBUDDYSUBSCRIPTIONTYPE_a81cd9e94d9a as RTCBUDDYSUBSCRIPTIONTYPE}
+
+pub using @457794b490c55d74 {type RTCCLIENTEVENTTYPE_6a1671f2ea27 as RTCCLIENTEVENTTYPE}
+
+pub using @457794b490c55d74 {type RTCClient_78802594be63 as RTCClient}
+
+pub using @457794b490c55d74 {type RTCDTMF_8bc6c2f4d58d as RTCDTMF}
+
+pub using @457794b490c55d74 {type RTCEVENT_258c25200035 as RTCEVENT}
+
+pub using @457794b490c55d74 {type RTCGROUPEVENTTYPE_3c55b263741b as RTCGROUPEVENTTYPE}
+
+pub using @457794b490c55d74 {type RTCLISTENMODE_22cb3ad40241 as RTCLISTENMODE}
+
+pub using @457794b490c55d74 {type RTCMEDIAEVENTREASON_bf919f075f59 as RTCMEDIAEVENTREASON}
+
+pub using @457794b490c55d74 {type RTCMEDIAEVENTTYPE_f85156305454 as RTCMEDIAEVENTTYPE}
+
+pub using @457794b490c55d74 {type RTCMESSAGINGEVENTTYPE_80d2b1b258f9 as RTCMESSAGINGEVENTTYPE}
+
+pub using @457794b490c55d74 {type RTCMESSAGINGUSERSTATUS_b319ffe371b8 as RTCMESSAGINGUSERSTATUS}
+
+pub using @457794b490c55d74 {type RTCOFFERWATCHERMODE_5802c364e1e2 as RTCOFFERWATCHERMODE}
+
+pub using @457794b490c55d74 {type RTCPARTICIPANTSTATE_2be17f87235b as RTCPARTICIPANTSTATE}
+
+pub using @457794b490c55d74 {type RTCPORTTYPE_fa7bc3400420 as RTCPORTTYPE}
+
+pub using @457794b490c55d74 {type RTCPRESENCEPROPERTY_b86ebab33909 as RTCPRESENCEPROPERTY}
+
+pub using @457794b490c55d74 {type RTCPRESENCESTATUS_1a91e9b494cf as RTCPRESENCESTATUS}
+
+pub using @457794b490c55d74 {type RTCPRIVACYMODE_fdfb212de605 as RTCPRIVACYMODE}
+
+pub using @457794b490c55d74 {type RTCPROFILEEVENTTYPE_aa3e8842ff5c as RTCPROFILEEVENTTYPE}
+
+pub using @457794b490c55d74 {type RTCPROVIDERURI_2dcd374c1279 as RTCPROVIDERURI}
+
+pub using @457794b490c55d74 {type RTCREGISTRATIONSTATE_6a35211f362d as RTCREGISTRATIONSTATE}
+
+pub using @457794b490c55d74 {type RTCREINVITESTATE_9ceacb35c78d as RTCREINVITESTATE}
+
+pub using @457794b490c55d74 {type RTCRINGTYPE_e47fce38bc2e as RTCRINGTYPE}
+
+pub using @457794b490c55d74 {type RTCROAMINGEVENTTYPE_7c71352bb991 as RTCROAMINGEVENTTYPE}
+
+pub using @457794b490c55d74 {type RTCSECURITYLEVEL_8d946b38aa37 as RTCSECURITYLEVEL}
+
+pub using @457794b490c55d74 {type RTCSECURITYTYPE_39ddf48cc5c3 as RTCSECURITYTYPE}
+
+pub using @457794b490c55d74 {type RTCSESSIONREFERSTATUS_5e861c027cfe as RTCSESSIONREFERSTATUS}
+
+pub using @457794b490c55d74 {type RTCSESSIONSTATE_a3e777f139cc as RTCSESSIONSTATE}
+
+pub using @457794b490c55d74 {type RTCSESSIONTYPE_05f005f55bd8 as RTCSESSIONTYPE}
+
+pub using @457794b490c55d74 {type RTCT120APPLET_1ebb4c05cb69 as RTCT120APPLET}
+
+pub using @457794b490c55d74 {type RTCTERMINATEREASON_94f23ddb0db7 as RTCTERMINATEREASON}
+
+pub using @457794b490c55d74 {type RTCUSERSEARCHCOLUMN_7cd529200818 as RTCUSERSEARCHCOLUMN}
+
+pub using @457794b490c55d74 {type RTCUSERSEARCHPREFERENCE_e00994ca2cb2 as RTCUSERSEARCHPREFERENCE}
+
+pub using @457794b490c55d74 {type RTCVIDEODEVICE_ba547fb6091f as RTCVIDEODEVICE}
+
+pub using @457794b490c55d74 {type RTCWATCHEREVENTTYPE_3bc12eab8539 as RTCWATCHEREVENTTYPE}
+
+pub using @457794b490c55d74 {type RTCWATCHERMATCHMODE_968991fd25cb as RTCWATCHERMATCHMODE}
+
+pub using @457794b490c55d74 {type RTCWATCHERSTATE_98fcb5208dab as RTCWATCHERSTATE}
+
+pub using @457794b490c55d74 {type TRANSPORTSETTING_5f17252f6390 as TRANSPORTSETTING}
+
+// Traits

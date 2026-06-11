@@ -1,0 +1,496 @@
+// Generated using `moon info`, DON'T EDIT IT
+package "moonbit-community/win32api/windows/win32/system/component_services"
+
+import {
+  "moonbit-community/win32api/runtime/core",
+  "moonbit-community/win32api/scc/58228b76ec7374fa",
+  "moonbit-community/win32api/scc/640050975d0049a7",
+}
+
+// Values
+pub fn co_create_activity(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn co_create_activity_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn co_enter_service_domain(@core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn co_enter_service_domain_raw(@core.RawAddress) -> Int
+
+pub fn co_get_default_context(@58228b76ec7374fa.APTTYPE_4288508687b6, @core.RawAddress, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn co_get_default_context_raw(Int, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn co_leave_service_domain(@core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn co_leave_service_domain_raw(@core.RawAddress) -> Unit
+
+pub let crr_activation_limit : UInt
+
+pub let crr_call_limit : UInt
+
+pub let crr_lifetime_limit : UInt
+
+pub let crr_memory_limit : UInt
+
+pub let crr_no_reason_supplied : UInt
+
+pub let crr_recycled_from_ui : UInt
+
+pub let data_not_available : UInt
+
+pub fn get_dispenser_manager(@core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn get_dispenser_manager_raw(@core.RawAddress) -> Int
+
+pub fn get_managed_extensions(@core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn get_managed_extensions_raw(@core.RawAddress) -> Int
+
+pub let guid_string_size : UInt
+
+pub fn mts_create_activity(@core.RawAddress, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn mts_create_activity_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub let mtxdm_e_enlistresourcefailed : UInt
+
+pub fn recycle_surrogate(Int) -> Int raise @core.WindowsError
+
+pub fn recycle_surrogate_raw(Int) -> Int
+
+pub fn safe_ref(@core.RawAddress, @core.RawAddress) -> @core.RawAddress raise @core.WindowsError
+
+pub fn safe_ref_raw(@core.RawAddress, @core.RawAddress) -> @core.RawAddress
+
+pub let tracker_init_event : String
+
+pub let tracker_startstop_event : String
+
+// Errors
+
+// Types and methods
+
+// Type aliases
+pub using @640050975d0049a7 {type APPDATA_14e620b8980a as APPDATA}
+
+pub using @640050975d0049a7 {type APPSTATISTICS_73277d013e8e as APPSTATISTICS}
+
+pub using @640050975d0049a7 {type AppDomainHelper_821c48f7d660 as AppDomainHelper}
+
+pub using @640050975d0049a7 {type ApplicationProcessRecycleInfo_3d9716b23813 as ApplicationProcessRecycleInfo}
+
+pub using @640050975d0049a7 {type ApplicationProcessStatistics_3f0efa0ac4d5 as ApplicationProcessStatistics}
+
+pub using @640050975d0049a7 {type ApplicationProcessSummary_a79d06b086ee as ApplicationProcessSummary}
+
+pub using @640050975d0049a7 {type ApplicationSummary_802bb995523e as ApplicationSummary}
+
+pub using @640050975d0049a7 {type AutoSvcsErrorConstants_2b8d0c4be507 as AutoSvcsErrorConstants}
+
+pub using @640050975d0049a7 {type ByotServerEx_d5e5fd1fb575 as ByotServerEx}
+
+pub using @640050975d0049a7 {type CLSIDDATA_07c231fd08e8 as CLSIDDATA}
+
+pub using @640050975d0049a7 {type CLSIDDATA2_b273fe46a95f as CLSIDDATA2}
+
+pub using @640050975d0049a7 {type COMAdminAccessChecksLevelOptions_bc2be681a52f as COMAdminAccessChecksLevelOptions}
+
+pub using @640050975d0049a7 {type COMAdminActivationOptions_ff39267bc417 as COMAdminActivationOptions}
+
+pub using @640050975d0049a7 {type COMAdminApplicationExportOptions_7a2f0e3b510d as COMAdminApplicationExportOptions}
+
+pub using @640050975d0049a7 {type COMAdminApplicationInstallOptions_7828b1bff01a as COMAdminApplicationInstallOptions}
+
+pub using @640050975d0049a7 {type COMAdminAuthenticationCapabilitiesOptions_913d3c3a778e as COMAdminAuthenticationCapabilitiesOptions}
+
+pub using @640050975d0049a7 {type COMAdminAuthenticationLevelOptions_cf344216c189 as COMAdminAuthenticationLevelOptions}
+
+pub using @640050975d0049a7 {type COMAdminCatalog_d19edddf25e0 as COMAdminCatalog}
+
+pub using @640050975d0049a7 {type COMAdminCatalogCollection_cd6e17b298ab as COMAdminCatalogCollection}
+
+pub using @640050975d0049a7 {type COMAdminCatalogObject_e3fad5e549ca as COMAdminCatalogObject}
+
+pub using @640050975d0049a7 {type COMAdminComponentFlags_960d5fe8c0a1 as COMAdminComponentFlags}
+
+pub using @640050975d0049a7 {type COMAdminComponentType_cead293dd315 as COMAdminComponentType}
+
+pub using @640050975d0049a7 {type COMAdminErrorCodes_9e1a025b8900 as COMAdminErrorCodes}
+
+pub using @640050975d0049a7 {type COMAdminFileFlags_59d9293aecaa as COMAdminFileFlags}
+
+pub using @640050975d0049a7 {type COMAdminImpersonationLevelOptions_69f65d4a1dfe as COMAdminImpersonationLevelOptions}
+
+pub using @640050975d0049a7 {type COMAdminInUse_93d2519470ad as COMAdminInUse}
+
+pub using @640050975d0049a7 {type COMAdminOS_92c4f50cfa4b as COMAdminOS}
+
+pub using @640050975d0049a7 {type COMAdminQCMessageAuthenticateOptions_8a357d405d03 as COMAdminQCMessageAuthenticateOptions}
+
+pub using @640050975d0049a7 {type COMAdminServiceOptions_f3ceb30b5f83 as COMAdminServiceOptions}
+
+pub using @640050975d0049a7 {type COMAdminServiceStatusOptions_a9411a2a2e76 as COMAdminServiceStatusOptions}
+
+pub using @640050975d0049a7 {type COMAdminSynchronizationOptions_f7505b948024 as COMAdminSynchronizationOptions}
+
+pub using @640050975d0049a7 {type COMAdminThreadingModels_ebd83dfe3a48 as COMAdminThreadingModels}
+
+pub using @640050975d0049a7 {type COMAdminTransactionOptions_10524f2261d6 as COMAdminTransactionOptions}
+
+pub using @640050975d0049a7 {type COMAdminTxIsolationLevelOptions_4cb97a04e0b9 as COMAdminTxIsolationLevelOptions}
+
+pub using @640050975d0049a7 {type COMEvents_373b77449aa5 as COMEvents}
+
+pub using @640050975d0049a7 {type COMPLUSAPPTYPE_8f7ccdce0b18 as COMPLUSAPPTYPE}
+
+pub using @640050975d0049a7 {type COMSVCSEVENTINFO_96db401a73ba as COMSVCSEVENTINFO}
+
+pub using @640050975d0049a7 {type CRMClerk_589c5f5b76a0 as CRMClerk}
+
+pub using @640050975d0049a7 {type CRMFLAGS_00181801594a as CRMFLAGS}
+
+pub using @640050975d0049a7 {type CRMREGFLAGS_30cb91bfa2cc as CRMREGFLAGS}
+
+pub using @640050975d0049a7 {type CRMRecoveryClerk_df1a42b57dea as CRMRecoveryClerk}
+
+pub using @640050975d0049a7 {type CSCBinding_2fe4ea1fa3a5 as CSCBinding}
+
+pub using @640050975d0049a7 {type CSCCOMTIIntrinsicsConfig_3be70725c21a as CSCCOMTIIntrinsicsConfig}
+
+pub using @640050975d0049a7 {type CSCIISIntrinsicsConfig_d82d733f746f as CSCIISIntrinsicsConfig}
+
+pub using @640050975d0049a7 {type CSCInheritanceConfig_1c44c57df4fd as CSCInheritanceConfig}
+
+pub using @640050975d0049a7 {type CSCPartitionConfig_10cdb7e34d4e as CSCPartitionConfig}
+
+pub using @640050975d0049a7 {type CSCSxsConfig_fb1f4fe8f4a6 as CSCSxsConfig}
+
+pub using @640050975d0049a7 {type CSCSynchronizationConfig_6802244a4b04 as CSCSynchronizationConfig}
+
+pub using @640050975d0049a7 {type CSCThreadPool_ebd8ed0291b9 as CSCThreadPool}
+
+pub using @640050975d0049a7 {type CSCTrackerConfig_f9d144e11504 as CSCTrackerConfig}
+
+pub using @640050975d0049a7 {type CSCTransactionConfig_65ed6ea90103 as CSCTransactionConfig}
+
+pub using @640050975d0049a7 {type CServiceConfig_a81f1c34848e as CServiceConfig}
+
+pub using @640050975d0049a7 {type ClrAssemblyLocator_97df83b80cff as ClrAssemblyLocator}
+
+pub using @640050975d0049a7 {type CoMTSLocator_33183c0b41d6 as CoMTSLocator}
+
+pub using @640050975d0049a7 {type ComServiceEvents_5310ff39b646 as ComServiceEvents}
+
+pub using @640050975d0049a7 {type ComSystemAppEventData_e83089b7c223 as ComSystemAppEventData}
+
+pub using @640050975d0049a7 {type ComponentHangMonitorInfo_631e114462d6 as ComponentHangMonitorInfo}
+
+pub using @640050975d0049a7 {type ComponentStatistics_c13e4d52102f as ComponentStatistics}
+
+pub using @640050975d0049a7 {type ComponentSummary_606105ace010 as ComponentSummary}
+
+pub using @640050975d0049a7 {type ContextInfo_62c542a0408e as ContextInfo}
+
+pub using @640050975d0049a7 {type ContextInfo2_030687936b33 as ContextInfo2}
+
+pub using @640050975d0049a7 {type CrmLogRecordRead_2a11ba9dcbf0 as CrmLogRecordRead}
+
+pub using @640050975d0049a7 {type CrmTransactionState_75d4f3745745 as CrmTransactionState}
+
+pub using @640050975d0049a7 {type DUMPTYPE_12edc017d737 as DUMPTYPE}
+
+pub using @640050975d0049a7 {type DispenserManager_a136f0d3e2a1 as DispenserManager}
+
+pub using @640050975d0049a7 {type Dummy30040732_4bce83b0636b as Dummy30040732}
+
+pub using @640050975d0049a7 {type EventServer_59d2af39d82a as EventServer}
+
+pub using @640050975d0049a7 {type GetAppTrackerDataFlags_e4a93c76a89f as GetAppTrackerDataFlags}
+
+pub using @640050975d0049a7 {type GetSecurityCallContextAppObject_f7e2f032fa0f as GetSecurityCallContextAppObject}
+
+pub using @640050975d0049a7 {type HANGINFO_2ae99cd99fae as HANGINFO}
+
+pub using @640050975d0049a7 {type IAppDomainHelper_131364cc29ad as IAppDomainHelper}
+
+pub using @640050975d0049a7 {type IAssemblyLocator_c6098b1c7e50 as IAssemblyLocator}
+
+pub using @640050975d0049a7 {type IAsyncErrorNotify_306c338a5956 as IAsyncErrorNotify}
+
+pub using @640050975d0049a7 {type ICOMAdminCatalog_083244f4b0ed as ICOMAdminCatalog}
+
+pub using @640050975d0049a7 {type ICOMAdminCatalog2_60780b5ef0f9 as ICOMAdminCatalog2}
+
+pub using @640050975d0049a7 {type ICOMLBArguments_1a342f7a146c as ICOMLBArguments}
+
+pub using @640050975d0049a7 {type ICatalogCollection_536c4e80983a as ICatalogCollection}
+
+pub using @640050975d0049a7 {type ICatalogObject_50e888798384 as ICatalogObject}
+
+pub using @640050975d0049a7 {type ICheckSxsConfig_bcd2187d3ed2 as ICheckSxsConfig}
+
+pub using @640050975d0049a7 {type IComActivityEvents_3def229a8153 as IComActivityEvents}
+
+pub using @640050975d0049a7 {type IComApp2Events_6e763c12fa77 as IComApp2Events}
+
+pub using @640050975d0049a7 {type IComAppEvents_522bb331ec2d as IComAppEvents}
+
+pub using @640050975d0049a7 {type IComCRMEvents_189dfd707bd0 as IComCRMEvents}
+
+pub using @640050975d0049a7 {type IComExceptionEvents_a49dd1669725 as IComExceptionEvents}
+
+pub using @640050975d0049a7 {type IComIdentityEvents_e26d7753f975 as IComIdentityEvents}
+
+pub using @640050975d0049a7 {type IComInstance2Events_c55d798bc7f9 as IComInstance2Events}
+
+pub using @640050975d0049a7 {type IComInstanceEvents_284a84e88b2c as IComInstanceEvents}
+
+pub using @640050975d0049a7 {type IComLTxEvents_7b3f06147ad7 as IComLTxEvents}
+
+pub using @640050975d0049a7 {type IComMethod2Events_1cfc90052f95 as IComMethod2Events}
+
+pub using @640050975d0049a7 {type IComMethodEvents_4569d0a67b0a as IComMethodEvents}
+
+pub using @640050975d0049a7 {type IComMtaThreadPoolKnobs_f4d01eaeb5a1 as IComMtaThreadPoolKnobs}
+
+pub using @640050975d0049a7 {type IComObjectConstruction2Events_289de87f3bd7 as IComObjectConstruction2Events}
+
+pub using @640050975d0049a7 {type IComObjectConstructionEvents_441b9cb7d143 as IComObjectConstructionEvents}
+
+pub using @640050975d0049a7 {type IComObjectEvents_744a4cd18b30 as IComObjectEvents}
+
+pub using @640050975d0049a7 {type IComObjectPool2Events_db2f3b0a3ab7 as IComObjectPool2Events}
+
+pub using @640050975d0049a7 {type IComObjectPoolEvents_5d4157371956 as IComObjectPoolEvents}
+
+pub using @640050975d0049a7 {type IComObjectPoolEvents2_b1bb56fdeb16 as IComObjectPoolEvents2}
+
+pub using @640050975d0049a7 {type IComQCEvents_725ea93f61ac as IComQCEvents}
+
+pub using @640050975d0049a7 {type IComResourceEvents_01fdc74d260f as IComResourceEvents}
+
+pub using @640050975d0049a7 {type IComSecurityEvents_956bf9995e87 as IComSecurityEvents}
+
+pub using @640050975d0049a7 {type IComStaThreadPoolKnobs_b6a819048c3d as IComStaThreadPoolKnobs}
+
+pub using @640050975d0049a7 {type IComStaThreadPoolKnobs2_fc8f4f9b3d08 as IComStaThreadPoolKnobs2}
+
+pub using @640050975d0049a7 {type IComThreadEvents_cccbc9080a33 as IComThreadEvents}
+
+pub using @640050975d0049a7 {type IComTrackingInfoCollection_1adf23f2f01e as IComTrackingInfoCollection}
+
+pub using @640050975d0049a7 {type IComTrackingInfoEvents_8357312f2860 as IComTrackingInfoEvents}
+
+pub using @640050975d0049a7 {type IComTrackingInfoObject_6761e5336ae1 as IComTrackingInfoObject}
+
+pub using @640050975d0049a7 {type IComTrackingInfoProperties_34ac065cb92b as IComTrackingInfoProperties}
+
+pub using @640050975d0049a7 {type IComTransaction2Events_a740ee24792a as IComTransaction2Events}
+
+pub using @640050975d0049a7 {type IComTransactionEvents_134326c1c56c as IComTransactionEvents}
+
+pub using @640050975d0049a7 {type IComUserEvent_c972885d450e as IComUserEvent}
+
+pub using @640050975d0049a7 {type IContextProperties_a6c42d223d4c as IContextProperties}
+
+pub using @640050975d0049a7 {type IContextSecurityPerimeter_9ee0ea17628d as IContextSecurityPerimeter}
+
+pub using @640050975d0049a7 {type IContextState_21630bd0b2de as IContextState}
+
+pub using @640050975d0049a7 {type ICreateWithLocalTransaction_2948b3fe5c3d as ICreateWithLocalTransaction}
+
+pub using @640050975d0049a7 {type ICreateWithTipTransactionEx_7ebdc2468dd7 as ICreateWithTipTransactionEx}
+
+pub using @640050975d0049a7 {type ICreateWithTransactionEx_85e38e504e69 as ICreateWithTransactionEx}
+
+pub using @640050975d0049a7 {type ICrmCompensator_c77bcbe3921c as ICrmCompensator}
+
+pub using @640050975d0049a7 {type ICrmCompensatorVariants_c0a5ff872a9c as ICrmCompensatorVariants}
+
+pub using @640050975d0049a7 {type ICrmFormatLogRecords_1c1450fbbdb8 as ICrmFormatLogRecords}
+
+pub using @640050975d0049a7 {type ICrmLogControl_b58d39a66e1c as ICrmLogControl}
+
+pub using @640050975d0049a7 {type ICrmMonitor_2c7e634d6b8b as ICrmMonitor}
+
+pub using @640050975d0049a7 {type ICrmMonitorClerks_9371aeb041e9 as ICrmMonitorClerks}
+
+pub using @640050975d0049a7 {type ICrmMonitorLogRecords_538281ee8cae as ICrmMonitorLogRecords}
+
+pub using @640050975d0049a7 {type IDispenserDriver_61f4805f66d9 as IDispenserDriver}
+
+pub using @640050975d0049a7 {type IDispenserManager_5d3ccf514e87 as IDispenserManager}
+
+pub using @640050975d0049a7 {type IEnumNames_505342b2da77 as IEnumNames}
+
+pub using @640050975d0049a7 {type IEventServerTrace_6d30759e2d23 as IEventServerTrace}
+
+pub using @640050975d0049a7 {type IGetAppTrackerData_5e00228c90e3 as IGetAppTrackerData}
+
+pub using @640050975d0049a7 {type IGetContextProperties_0dfbb13058cb as IGetContextProperties}
+
+pub using @640050975d0049a7 {type IGetSecurityCallContext_3a4d2f09f3fd as IGetSecurityCallContext}
+
+pub using @640050975d0049a7 {type IHolder_44d6993277cf as IHolder}
+
+pub using @640050975d0049a7 {type ILBEvents_c0584bc6be09 as ILBEvents}
+
+pub using @640050975d0049a7 {type IMTSActivity_707e2bd81265 as IMTSActivity}
+
+pub using @640050975d0049a7 {type IMTSCall_bd00e3cd2c1e as IMTSCall}
+
+pub using @640050975d0049a7 {type IMTSLocator_a87afdcb5615 as IMTSLocator}
+
+pub using @640050975d0049a7 {type IManagedActivationEvents_2277cd46a570 as IManagedActivationEvents}
+
+pub using @640050975d0049a7 {type IManagedObjectInfo_28cfe098ac6d as IManagedObjectInfo}
+
+pub using @640050975d0049a7 {type IManagedPoolAction_370d0f122e65 as IManagedPoolAction}
+
+pub using @640050975d0049a7 {type IManagedPooledObj_ba89243b955d as IManagedPooledObj}
+
+pub using @640050975d0049a7 {type IMessageMover_c79c54c470c9 as IMessageMover}
+
+pub using @640050975d0049a7 {type IMtsEventInfo_bd0b6029c3e1 as IMtsEventInfo}
+
+pub using @640050975d0049a7 {type IMtsEvents_18ffe3d9d1b2 as IMtsEvents}
+
+pub using @640050975d0049a7 {type IMtsGrp_57fcaf0b1c2e as IMtsGrp}
+
+pub using @640050975d0049a7 {type IObjPool_631b9fc3d198 as IObjPool}
+
+pub using @640050975d0049a7 {type IObjectConstruct_4343b7511b96 as IObjectConstruct}
+
+pub using @640050975d0049a7 {type IObjectConstructString_6275f23b31d5 as IObjectConstructString}
+
+pub using @640050975d0049a7 {type IObjectContext_4d42fbf9b587 as IObjectContext}
+
+pub using @640050975d0049a7 {type IObjectContextActivity_65934d6b1d6c as IObjectContextActivity}
+
+pub using @640050975d0049a7 {type IObjectContextInfo_2f77d4e4a0cc as IObjectContextInfo}
+
+pub using @640050975d0049a7 {type IObjectContextInfo2_5fe4be7f0cf3 as IObjectContextInfo2}
+
+pub using @640050975d0049a7 {type IObjectContextTip_e6508123b30d as IObjectContextTip}
+
+pub using @640050975d0049a7 {type IObjectControl_185125fb96b2 as IObjectControl}
+
+pub using @640050975d0049a7 {type IPlaybackControl_2c1b70050e36 as IPlaybackControl}
+
+pub using @640050975d0049a7 {type IPoolManager_fb8b720d348e as IPoolManager}
+
+pub using @640050975d0049a7 {type IProcessInitializer_ecb51f51999c as IProcessInitializer}
+
+pub using @640050975d0049a7 {type ISecurityCallContext_5c82d4362dda as ISecurityCallContext}
+
+pub using @640050975d0049a7 {type ISecurityCallersColl_0564c9e5e3a8 as ISecurityCallersColl}
+
+pub using @640050975d0049a7 {type ISecurityIdentityColl_e3d7d163e1cf as ISecurityIdentityColl}
+
+pub using @640050975d0049a7 {type ISecurityProperty_4d5437719496 as ISecurityProperty}
+
+pub using @640050975d0049a7 {type ISelectCOMLBServer_639bc60c5e80 as ISelectCOMLBServer}
+
+pub using @640050975d0049a7 {type ISendMethodEvents_1c8a183ab12d as ISendMethodEvents}
+
+pub using @640050975d0049a7 {type IServiceActivity_78762d2c54eb as IServiceActivity}
+
+pub using @640050975d0049a7 {type IServiceCall_4fcfb8d02e15 as IServiceCall}
+
+pub using @640050975d0049a7 {type IServiceComTIIntrinsicsConfig_c98ff4ee08c8 as IServiceComTIIntrinsicsConfig}
+
+pub using @640050975d0049a7 {type IServiceIISIntrinsicsConfig_aee863d8dc07 as IServiceIISIntrinsicsConfig}
+
+pub using @640050975d0049a7 {type IServiceInheritanceConfig_b9a5c7247913 as IServiceInheritanceConfig}
+
+pub using @640050975d0049a7 {type IServicePartitionConfig_4632b9721909 as IServicePartitionConfig}
+
+pub using @640050975d0049a7 {type IServicePool_f1090c1c32bd as IServicePool}
+
+pub using @640050975d0049a7 {type IServicePoolConfig_534f8fa24c51 as IServicePoolConfig}
+
+pub using @640050975d0049a7 {type IServiceSxsConfig_15a2f39f76f6 as IServiceSxsConfig}
+
+pub using @640050975d0049a7 {type IServiceSynchronizationConfig_fcc0f6550d98 as IServiceSynchronizationConfig}
+
+pub using @640050975d0049a7 {type IServiceSysTxnConfig_3af7a5761a74 as IServiceSysTxnConfig}
+
+pub using @640050975d0049a7 {type IServiceThreadPoolConfig_3e582fda06ea as IServiceThreadPoolConfig}
+
+pub using @640050975d0049a7 {type IServiceTrackerConfig_f981ece72647 as IServiceTrackerConfig}
+
+pub using @640050975d0049a7 {type IServiceTransactionConfig_fd145048d598 as IServiceTransactionConfig}
+
+pub using @640050975d0049a7 {type IServiceTransactionConfigBase_7fc3cf7aa359 as IServiceTransactionConfigBase}
+
+pub using @640050975d0049a7 {type ISharedProperty_534497a4cc2c as ISharedProperty}
+
+pub using @640050975d0049a7 {type ISharedPropertyGroup_ec27ca1d3ca0 as ISharedPropertyGroup}
+
+pub using @640050975d0049a7 {type ISharedPropertyGroupManager_e08deeffebce as ISharedPropertyGroupManager}
+
+pub using @640050975d0049a7 {type ISystemAppEventData_143bde50a53d as ISystemAppEventData}
+
+pub using @640050975d0049a7 {type IThreadPoolKnobs_5fe12dc0ecc9 as IThreadPoolKnobs}
+
+pub using @640050975d0049a7 {type ITransactionContext_5ec9da4b58d3 as ITransactionContext}
+
+pub using @640050975d0049a7 {type ITransactionContextEx_fa24472280ed as ITransactionContextEx}
+
+pub using @640050975d0049a7 {type ITransactionProperty_67c4d5bef1c0 as ITransactionProperty}
+
+pub using @640050975d0049a7 {type ITransactionProxy_0fbb3b928876 as ITransactionProxy}
+
+pub using @640050975d0049a7 {type ITransactionResourcePool_f32329673f6d as ITransactionResourcePool}
+
+pub using @640050975d0049a7 {type ITransactionStatus_7d0564ff8bd8 as ITransactionStatus}
+
+pub using @640050975d0049a7 {type ITxProxyHolder_4a11664666c4 as ITxProxyHolder}
+
+pub using @640050975d0049a7 {type LBEvents_61b519947ddc as LBEvents}
+
+pub using @640050975d0049a7 {type LockModes_d4568087b97b as LockModes}
+
+pub using @640050975d0049a7 {type MessageMover_d5401875cd93 as MessageMover}
+
+pub using @640050975d0049a7 {type MtsGrp_603ee867ad8c as MtsGrp}
+
+pub using @640050975d0049a7 {type ObjectContext_69c224cfe33e as ObjectContext}
+
+pub using @640050975d0049a7 {type ObjectControl_3f3b4df8cffc as ObjectControl}
+
+pub using @640050975d0049a7 {type PoolMgr_ce6697759a48 as PoolMgr}
+
+pub using @640050975d0049a7 {type RECYCLEINFO_a69bb8ff4c3a as RECYCLEINFO}
+
+pub using @640050975d0049a7 {type ReleaseModes_026bc9741901 as ReleaseModes}
+
+pub using @640050975d0049a7 {type SecurityCallContext_a5352cc9b02a as SecurityCallContext}
+
+pub using @640050975d0049a7 {type SecurityCallers_dae31a2c4f98 as SecurityCallers}
+
+pub using @640050975d0049a7 {type SecurityIdentity_4fb98f0eb3fd as SecurityIdentity}
+
+pub using @640050975d0049a7 {type SecurityProperty_a0b1fe2baf9a as SecurityProperty}
+
+pub using @640050975d0049a7 {type ServicePool_7d1c15f563d0 as ServicePool}
+
+pub using @640050975d0049a7 {type ServicePoolConfig_c18434908391 as ServicePoolConfig}
+
+pub using @640050975d0049a7 {type SharedProperty_003df1c9045e as SharedProperty}
+
+pub using @640050975d0049a7 {type SharedPropertyGroup_168dc3ad1314 as SharedPropertyGroup}
+
+pub using @640050975d0049a7 {type SharedPropertyGroupManager_b9f0b1e10155 as SharedPropertyGroupManager}
+
+pub using @640050975d0049a7 {type TRACKINGCOLLTYPE_2a9109b7663b as TRACKINGCOLLTYPE}
+
+pub using @640050975d0049a7 {type TrackerServer_3bee66a1fab8 as TrackerServer}
+
+pub using @640050975d0049a7 {type TransactionContext_26f37419c748 as TransactionContext}
+
+pub using @640050975d0049a7 {type TransactionContextEx_76896fe3d91f as TransactionContextEx}
+
+pub using @640050975d0049a7 {type TransactionVote_58ed10725d71 as TransactionVote}
+
+// Traits

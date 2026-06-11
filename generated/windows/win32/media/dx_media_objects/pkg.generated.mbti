@@ -1,0 +1,114 @@
+// Generated using `moon info`, DON'T EDIT IT
+package "moonbit-community/win32api/windows/win32/media/dx_media_objects"
+
+import {
+  "moonbit-community/win32api/runtime/core",
+  "moonbit-community/win32api/runtime/strings",
+  "moonbit-community/win32api/scc/9f9f409ddf308cff",
+}
+
+// Values
+pub let dmo_e_invalidstreamindex : Int
+
+pub let dmo_e_invalidtype : Int
+
+pub let dmo_e_no_more_items : Int
+
+pub let dmo_e_notaccepting : Int
+
+pub let dmo_e_type_not_accepted : Int
+
+pub let dmo_e_type_not_set : Int
+
+pub fn dmo_enum(@core.RawAddress, UInt, UInt, @9f9f409ddf308cff.DMOPARTIALMEDIATYPE_7dcbb3fa26fd, UInt, @9f9f409ddf308cff.DMOPARTIALMEDIATYPE_7dcbb3fa26fd, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn dmo_enum_raw(@core.RawAddress, UInt, UInt, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn dmo_get_name(@core.RawAddress, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn dmo_get_name_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn dmo_get_types(@core.RawAddress, UInt, @core.RawAddress, @9f9f409ddf308cff.DMOPARTIALMEDIATYPE_7dcbb3fa26fd, UInt, @core.RawAddress, @9f9f409ddf308cff.DMOPARTIALMEDIATYPE_7dcbb3fa26fd) -> Int raise @core.WindowsError
+
+pub fn dmo_get_types_raw(@core.RawAddress, UInt, @core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn dmo_register(@strings.PWStr, @core.RawAddress, @core.RawAddress, UInt, UInt, @9f9f409ddf308cff.DMOPARTIALMEDIATYPE_7dcbb3fa26fd, UInt, @9f9f409ddf308cff.DMOPARTIALMEDIATYPE_7dcbb3fa26fd) -> Int raise @core.WindowsError
+
+pub fn dmo_register_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, UInt, UInt, @core.RawAddress, UInt, @core.RawAddress) -> Int
+
+pub fn dmo_unregister(@core.RawAddress, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn dmo_unregister_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn mo_copy_media_type(@9f9f409ddf308cff.DMOMEDIATYPE_137cfc647976, @9f9f409ddf308cff.DMOMEDIATYPE_137cfc647976) -> Int raise @core.WindowsError
+
+pub fn mo_copy_media_type_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn mo_create_media_type(@core.RawAddress, UInt) -> Int raise @core.WindowsError
+
+pub fn mo_create_media_type_raw(@core.RawAddress, UInt) -> Int
+
+pub fn mo_delete_media_type(@9f9f409ddf308cff.DMOMEDIATYPE_137cfc647976) -> Int raise @core.WindowsError
+
+pub fn mo_delete_media_type_raw(@core.RawAddress) -> Int
+
+pub fn mo_duplicate_media_type(@core.RawAddress, @9f9f409ddf308cff.DMOMEDIATYPE_137cfc647976) -> Int raise @core.WindowsError
+
+pub fn mo_duplicate_media_type_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn mo_free_media_type(@9f9f409ddf308cff.DMOMEDIATYPE_137cfc647976) -> Int raise @core.WindowsError
+
+pub fn mo_free_media_type_raw(@core.RawAddress) -> Int
+
+pub fn mo_init_media_type(@9f9f409ddf308cff.DMOMEDIATYPE_137cfc647976, UInt) -> Int raise @core.WindowsError
+
+pub fn mo_init_media_type_raw(@core.RawAddress, UInt) -> Int
+
+// Errors
+
+// Types and methods
+
+// Type aliases
+pub using @9f9f409ddf308cff {type DMOENUMFLAGS_564e78e3a82d as DMOENUMFLAGS}
+
+pub using @9f9f409ddf308cff {type DMOINPLACEPROCESSFLAGS_e50195401113 as DMOINPLACEPROCESSFLAGS}
+
+pub using @9f9f409ddf308cff {type DMOINPUTDATABUFFERFLAGS_88e12d599a07 as DMOINPUTDATABUFFERFLAGS}
+
+pub using @9f9f409ddf308cff {type DMOINPUTSTATUSFLAGS_21c41fb4cbdf as DMOINPUTSTATUSFLAGS}
+
+pub using @9f9f409ddf308cff {type DMOINPUTSTREAMINFOFLAGS_0a4945d0c251 as DMOINPUTSTREAMINFOFLAGS}
+
+pub using @9f9f409ddf308cff {type DMOMEDIATYPE_137cfc647976 as DMOMEDIATYPE}
+
+pub using @9f9f409ddf308cff {type DMOOUTPUTDATABUFFER_2621da7effd8 as DMOOUTPUTDATABUFFER}
+
+pub using @9f9f409ddf308cff {type DMOOUTPUTDATABUFFERFLAGS_a60a7d17eecd as DMOOUTPUTDATABUFFERFLAGS}
+
+pub using @9f9f409ddf308cff {type DMOOUTPUTSTREAMINFOFLAGS_401b20523fd3 as DMOOUTPUTSTREAMINFOFLAGS}
+
+pub using @9f9f409ddf308cff {type DMOPARTIALMEDIATYPE_7dcbb3fa26fd as DMOPARTIALMEDIATYPE}
+
+pub using @9f9f409ddf308cff {type DMOPROCESSOUTPUTFLAGS_e5c1e16154fb as DMOPROCESSOUTPUTFLAGS}
+
+pub using @9f9f409ddf308cff {type DMOQUALITYSTATUSFLAGS_5abe1566b856 as DMOQUALITYSTATUSFLAGS}
+
+pub using @9f9f409ddf308cff {type DMOREGISTERFLAGS_2620e63e36ee as DMOREGISTERFLAGS}
+
+pub using @9f9f409ddf308cff {type DMOSETTYPEFLAGS_9a65da9c81fd as DMOSETTYPEFLAGS}
+
+pub using @9f9f409ddf308cff {type DMOVIDEOOUTPUTSTREAMFLAGS_ace106c144b8 as DMOVIDEOOUTPUTSTREAMFLAGS}
+
+pub using @9f9f409ddf308cff {type IDMOQualityControl_94f09f8107ca as IDMOQualityControl}
+
+pub using @9f9f409ddf308cff {type IDMOVideoOutputOptimizations_3c5e798d75f1 as IDMOVideoOutputOptimizations}
+
+pub using @9f9f409ddf308cff {type IEnumDMO_451f52107e46 as IEnumDMO}
+
+pub using @9f9f409ddf308cff {type IMediaBuffer_abdb397cee02 as IMediaBuffer}
+
+pub using @9f9f409ddf308cff {type IMediaObject_41972d79fe34 as IMediaObject}
+
+pub using @9f9f409ddf308cff {type IMediaObjectInPlace_ed54312b976e as IMediaObjectInPlace}
+
+// Traits

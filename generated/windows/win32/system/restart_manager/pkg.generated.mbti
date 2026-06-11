@@ -1,0 +1,93 @@
+// Generated using `moon info`, DON'T EDIT IT
+package "moonbit-community/win32api/windows/win32/system/restart_manager"
+
+import {
+  "moonbit-community/win32api/runtime/core",
+  "moonbit-community/win32api/runtime/strings",
+  "moonbit-community/win32api/scc/7caaeb813f932234",
+  "moonbit-community/win32api/scc/fb66f520d7e12332",
+}
+
+// Values
+pub let cch_rm_max_app_name : UInt
+
+pub let cch_rm_max_svc_name : UInt
+
+pub let cch_rm_session_key : UInt
+
+pub fn rm_add_filter(UInt, @strings.PWStr?, @7caaeb813f932234.RMUNIQUEPROCESS_9bdcdcf5cbce?, @strings.PWStr?, @7caaeb813f932234.RMFILTERACTION_9e03b209b0a5) -> @fb66f520d7e12332.WIN32ERROR_de7527e5f234 raise @core.WindowsError
+
+pub fn rm_add_filter_raw(UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress, Int) -> UInt
+
+pub fn rm_cancel_current_task(UInt) -> @fb66f520d7e12332.WIN32ERROR_de7527e5f234 raise @core.WindowsError
+
+pub fn rm_cancel_current_task_raw(UInt) -> UInt
+
+pub fn rm_end_session(UInt) -> @fb66f520d7e12332.WIN32ERROR_de7527e5f234 raise @core.WindowsError
+
+pub fn rm_end_session_raw(UInt) -> UInt
+
+pub fn rm_get_filter_list(UInt, @core.RawAddress, UInt, @core.RawAddress) -> @fb66f520d7e12332.WIN32ERROR_de7527e5f234 raise @core.WindowsError
+
+pub fn rm_get_filter_list_raw(UInt, @core.RawAddress, UInt, @core.RawAddress) -> UInt
+
+pub fn rm_get_list(UInt, @core.RawAddress, @core.RawAddress, @7caaeb813f932234.RMPROCESSINFO_5822d426c9d8?, @core.RawAddress) -> @fb66f520d7e12332.WIN32ERROR_de7527e5f234 raise @core.WindowsError
+
+pub fn rm_get_list_raw(UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub let rm_invalid_process : Int
+
+pub let rm_invalid_ts_session : Int
+
+pub fn rm_join_session(@core.RawAddress, @strings.PWStr) -> @fb66f520d7e12332.WIN32ERROR_de7527e5f234 raise @core.WindowsError
+
+pub fn rm_join_session_raw(@core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn rm_register_resources(UInt, UInt, @strings.PWStr?, UInt, @7caaeb813f932234.RMUNIQUEPROCESS_9bdcdcf5cbce?, UInt, @strings.PWStr?) -> @fb66f520d7e12332.WIN32ERROR_de7527e5f234 raise @core.WindowsError
+
+pub fn rm_register_resources_raw(UInt, UInt, @core.RawAddress, UInt, @core.RawAddress, UInt, @core.RawAddress) -> UInt
+
+pub fn rm_remove_filter(UInt, @strings.PWStr?, @7caaeb813f932234.RMUNIQUEPROCESS_9bdcdcf5cbce?, @strings.PWStr?) -> @fb66f520d7e12332.WIN32ERROR_de7527e5f234 raise @core.WindowsError
+
+pub fn rm_remove_filter_raw(UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn rm_restart(UInt, UInt, @core.RawAddress) -> @fb66f520d7e12332.WIN32ERROR_de7527e5f234 raise @core.WindowsError
+
+pub fn rm_restart_raw(UInt, UInt, @core.RawAddress) -> UInt
+
+pub fn rm_shutdown(UInt, UInt, @core.RawAddress) -> @fb66f520d7e12332.WIN32ERROR_de7527e5f234 raise @core.WindowsError
+
+pub fn rm_shutdown_raw(UInt, UInt, @core.RawAddress) -> UInt
+
+pub fn rm_start_session(@core.RawAddress, UInt, @core.RawAddress) -> @fb66f520d7e12332.WIN32ERROR_de7527e5f234 raise @core.WindowsError
+
+pub fn rm_start_session_raw(@core.RawAddress, UInt, @core.RawAddress) -> UInt
+
+// Errors
+
+// Types and methods
+
+// Type aliases
+pub using @7caaeb813f932234 {type RMAPPSTATUS_d7128a4a0e4a as RMAPPSTATUS}
+
+pub using @7caaeb813f932234 {type RMAPPTYPE_f9ca818edbd7 as RMAPPTYPE}
+
+pub using @7caaeb813f932234 {type RMFILTERACTION_9e03b209b0a5 as RMFILTERACTION}
+
+pub using @7caaeb813f932234 {type RMFILTERINFO_84e2cdcb5bb0 as RMFILTERINFO}
+
+pub using @7caaeb813f932234 {type RMFILTERINFOAnonymousEUnion_e362ac07fad1 as RMFILTERINFOAnonymousEUnion}
+
+pub using @7caaeb813f932234 {type RMFILTERTRIGGER_262c183d2bcd as RMFILTERTRIGGER}
+
+pub using @7caaeb813f932234 {type RMPROCESSINFO_5822d426c9d8 as RMPROCESSINFO}
+
+pub using @7caaeb813f932234 {type RMREBOOTREASON_ceafd605aba1 as RMREBOOTREASON}
+
+pub using @7caaeb813f932234 {type RMSHUTDOWNTYPE_4904786e6ea9 as RMSHUTDOWNTYPE}
+
+pub using @7caaeb813f932234 {type RMUNIQUEPROCESS_9bdcdcf5cbce as RMUNIQUEPROCESS}
+
+pub using @7caaeb813f932234 {type RMWRITESTATUSCALLBACK_4e8f868d039b as RMWRITESTATUSCALLBACK}
+
+// Traits

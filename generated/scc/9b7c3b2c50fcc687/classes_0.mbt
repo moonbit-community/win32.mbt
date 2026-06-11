@@ -1,0 +1,167 @@
+///|
+pub fn SAFERCOMPUTETOKENFROMLEVELFLAGS_8485393f64aa::safer_token_compare_only() -> SAFERCOMPUTETOKENFROMLEVELFLAGS_8485393f64aa {
+  SAFERCOMPUTETOKENFROMLEVELFLAGS_8485393f64aa::from_int(
+    2U.reinterpret_as_int(),
+  )
+}
+
+///|
+pub fn SAFERCOMPUTETOKENFROMLEVELFLAGS_8485393f64aa::safer_token_make_inert() -> SAFERCOMPUTETOKENFROMLEVELFLAGS_8485393f64aa {
+  SAFERCOMPUTETOKENFROMLEVELFLAGS_8485393f64aa::from_int(
+    4U.reinterpret_as_int(),
+  )
+}
+
+///|
+pub fn SAFERCOMPUTETOKENFROMLEVELFLAGS_8485393f64aa::safer_token_null_if_equal() -> SAFERCOMPUTETOKENFROMLEVELFLAGS_8485393f64aa {
+  SAFERCOMPUTETOKENFROMLEVELFLAGS_8485393f64aa::from_int(
+    1U.reinterpret_as_int(),
+  )
+}
+
+///|
+pub fn SAFERCOMPUTETOKENFROMLEVELFLAGS_8485393f64aa::safer_token_want_flags() -> SAFERCOMPUTETOKENFROMLEVELFLAGS_8485393f64aa {
+  SAFERCOMPUTETOKENFROMLEVELFLAGS_8485393f64aa::from_int(
+    8U.reinterpret_as_int(),
+  )
+}
+
+///|
+pub fn SAFERIDENTIFICATIONTYPES_71561d3149d8::safer_identity_default() -> SAFERIDENTIFICATIONTYPES_71561d3149d8 {
+  SAFERIDENTIFICATIONTYPES_71561d3149d8::from_int(0)
+}
+
+///|
+pub fn SAFERIDENTIFICATIONTYPES_71561d3149d8::safer_identity_type_certificate() -> SAFERIDENTIFICATIONTYPES_71561d3149d8 {
+  SAFERIDENTIFICATIONTYPES_71561d3149d8::from_int(4)
+}
+
+///|
+pub fn SAFERIDENTIFICATIONTYPES_71561d3149d8::safer_identity_type_image_hash() -> SAFERIDENTIFICATIONTYPES_71561d3149d8 {
+  SAFERIDENTIFICATIONTYPES_71561d3149d8::from_int(2)
+}
+
+///|
+pub fn SAFERIDENTIFICATIONTYPES_71561d3149d8::safer_identity_type_image_name() -> SAFERIDENTIFICATIONTYPES_71561d3149d8 {
+  SAFERIDENTIFICATIONTYPES_71561d3149d8::from_int(1)
+}
+
+///|
+pub fn SAFERIDENTIFICATIONTYPES_71561d3149d8::safer_identity_type_url_zone() -> SAFERIDENTIFICATIONTYPES_71561d3149d8 {
+  SAFERIDENTIFICATIONTYPES_71561d3149d8::from_int(3)
+}
+
+///|
+pub fn SAFEROBJECTINFOCLASS_cd8763e95fd5::safer_object_all_identification_guids() -> SAFEROBJECTINFOCLASS_cd8763e95fd5 {
+  SAFEROBJECTINFOCLASS_cd8763e95fd5::from_int(14)
+}
+
+///|
+pub fn SAFEROBJECTINFOCLASS_cd8763e95fd5::safer_object_builtin() -> SAFEROBJECTINFOCLASS_cd8763e95fd5 {
+  SAFEROBJECTINFOCLASS_cd8763e95fd5::from_int(5)
+}
+
+///|
+pub fn SAFEROBJECTINFOCLASS_cd8763e95fd5::safer_object_default_owner() -> SAFEROBJECTINFOCLASS_cd8763e95fd5 {
+  SAFEROBJECTINFOCLASS_cd8763e95fd5::from_int(10)
+}
+
+///|
+pub fn SAFEROBJECTINFOCLASS_cd8763e95fd5::safer_object_deleted_privileges() -> SAFEROBJECTINFOCLASS_cd8763e95fd5 {
+  SAFEROBJECTINFOCLASS_cd8763e95fd5::from_int(9)
+}
+
+///|
+pub fn SAFEROBJECTINFOCLASS_cd8763e95fd5::safer_object_description() -> SAFEROBJECTINFOCLASS_cd8763e95fd5 {
+  SAFEROBJECTINFOCLASS_cd8763e95fd5::from_int(4)
+}
+
+///|
+pub fn SAFEROBJECTINFOCLASS_cd8763e95fd5::safer_object_disable_max_privilege() -> SAFEROBJECTINFOCLASS_cd8763e95fd5 {
+  SAFEROBJECTINFOCLASS_cd8763e95fd5::from_int(7)
+}
+
+///|
+pub fn SAFEROBJECTINFOCLASS_cd8763e95fd5::safer_object_disallowed() -> SAFEROBJECTINFOCLASS_cd8763e95fd5 {
+  SAFEROBJECTINFOCLASS_cd8763e95fd5::from_int(6)
+}
+
+///|
+pub fn SAFEROBJECTINFOCLASS_cd8763e95fd5::safer_object_extended_error() -> SAFEROBJECTINFOCLASS_cd8763e95fd5 {
+  SAFEROBJECTINFOCLASS_cd8763e95fd5::from_int(16)
+}
+
+///|
+pub fn SAFEROBJECTINFOCLASS_cd8763e95fd5::safer_object_friendly_name() -> SAFEROBJECTINFOCLASS_cd8763e95fd5 {
+  SAFEROBJECTINFOCLASS_cd8763e95fd5::from_int(3)
+}
+
+///|
+pub fn SAFEROBJECTINFOCLASS_cd8763e95fd5::safer_object_invert_deleted_privileges() -> SAFEROBJECTINFOCLASS_cd8763e95fd5 {
+  SAFEROBJECTINFOCLASS_cd8763e95fd5::from_int(8)
+}
+
+///|
+pub fn SAFEROBJECTINFOCLASS_cd8763e95fd5::safer_object_level_id() -> SAFEROBJECTINFOCLASS_cd8763e95fd5 {
+  SAFEROBJECTINFOCLASS_cd8763e95fd5::from_int(1)
+}
+
+///|
+pub fn SAFEROBJECTINFOCLASS_cd8763e95fd5::safer_object_restricted_sids_added() -> SAFEROBJECTINFOCLASS_cd8763e95fd5 {
+  SAFEROBJECTINFOCLASS_cd8763e95fd5::from_int(13)
+}
+
+///|
+pub fn SAFEROBJECTINFOCLASS_cd8763e95fd5::safer_object_restricted_sids_inverted() -> SAFEROBJECTINFOCLASS_cd8763e95fd5 {
+  SAFEROBJECTINFOCLASS_cd8763e95fd5::from_int(12)
+}
+
+///|
+pub fn SAFEROBJECTINFOCLASS_cd8763e95fd5::safer_object_scope_id() -> SAFEROBJECTINFOCLASS_cd8763e95fd5 {
+  SAFEROBJECTINFOCLASS_cd8763e95fd5::from_int(2)
+}
+
+///|
+pub fn SAFEROBJECTINFOCLASS_cd8763e95fd5::safer_object_sids_to_disable() -> SAFEROBJECTINFOCLASS_cd8763e95fd5 {
+  SAFEROBJECTINFOCLASS_cd8763e95fd5::from_int(11)
+}
+
+///|
+pub fn SAFEROBJECTINFOCLASS_cd8763e95fd5::safer_object_single_identification() -> SAFEROBJECTINFOCLASS_cd8763e95fd5 {
+  SAFEROBJECTINFOCLASS_cd8763e95fd5::from_int(15)
+}
+
+///|
+pub fn SAFERPOLICYINFOCLASS_62073acc109c::safer_policy_authenticode_enabled() -> SAFERPOLICYINFOCLASS_62073acc109c {
+  SAFERPOLICYINFOCLASS_62073acc109c::from_int(7)
+}
+
+///|
+pub fn SAFERPOLICYINFOCLASS_62073acc109c::safer_policy_default_level() -> SAFERPOLICYINFOCLASS_62073acc109c {
+  SAFERPOLICYINFOCLASS_62073acc109c::from_int(3)
+}
+
+///|
+pub fn SAFERPOLICYINFOCLASS_62073acc109c::safer_policy_default_level_flags() -> SAFERPOLICYINFOCLASS_62073acc109c {
+  SAFERPOLICYINFOCLASS_62073acc109c::from_int(6)
+}
+
+///|
+pub fn SAFERPOLICYINFOCLASS_62073acc109c::safer_policy_enable_transparent_enforcement() -> SAFERPOLICYINFOCLASS_62073acc109c {
+  SAFERPOLICYINFOCLASS_62073acc109c::from_int(2)
+}
+
+///|
+pub fn SAFERPOLICYINFOCLASS_62073acc109c::safer_policy_evaluate_user_scope() -> SAFERPOLICYINFOCLASS_62073acc109c {
+  SAFERPOLICYINFOCLASS_62073acc109c::from_int(4)
+}
+
+///|
+pub fn SAFERPOLICYINFOCLASS_62073acc109c::safer_policy_level_list() -> SAFERPOLICYINFOCLASS_62073acc109c {
+  SAFERPOLICYINFOCLASS_62073acc109c::from_int(1)
+}
+
+///|
+pub fn SAFERPOLICYINFOCLASS_62073acc109c::safer_policy_scope_flags() -> SAFERPOLICYINFOCLASS_62073acc109c {
+  SAFERPOLICYINFOCLASS_62073acc109c::from_int(5)
+}

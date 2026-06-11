@@ -1,0 +1,272 @@
+// Generated using `moon info`, DON'T EDIT IT
+package "moonbit-community/win32api/windows/win32/system/process_status"
+
+import {
+  "moonbit-community/win32api/runtime/core",
+  "moonbit-community/win32api/runtime/strings",
+  "moonbit-community/win32api/scc/d1d11f5d5e3749de",
+}
+
+// Values
+pub fn empty_working_set(@core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn empty_working_set_raw(@core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn enum_device_drivers(@core.RawAddress, UInt, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn enum_device_drivers_raw(@core.RawAddress, UInt, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn enum_page_files_a(@core.RawAddress, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn enum_page_files_a_raw(@core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn enum_page_files_w(@core.RawAddress, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn enum_page_files_w_raw(@core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn enum_process_modules(@core.RawAddress, @core.RawAddress, UInt, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn enum_process_modules_ex(@core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, @d1d11f5d5e3749de.ENUMPROCESSMODULESEXFLAGS_527da8faa106) -> Bool raise @core.WindowsError
+
+pub fn enum_process_modules_ex_raw(@core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, UInt) -> @core.RawWin32Call[Int]
+
+pub fn enum_process_modules_raw(@core.RawAddress, @core.RawAddress, UInt, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn enum_processes(@core.RawAddress, UInt, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn enum_processes_raw(@core.RawAddress, UInt, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn get_device_driver_base_name_a(@core.RawAddress, @core.RawAddress, UInt) -> UInt raise @core.WindowsError
+
+pub fn get_device_driver_base_name_a_raw(@core.RawAddress, @core.RawAddress, UInt) -> @core.RawWin32Call[UInt]
+
+pub fn get_device_driver_base_name_w(@core.RawAddress, @strings.PWStrBuffer) -> UInt raise @core.WindowsError
+
+pub fn get_device_driver_base_name_w_raw(@core.RawAddress, @core.RawAddress, UInt) -> @core.RawWin32Call[UInt]
+
+pub fn get_device_driver_file_name_a(@core.RawAddress, @core.RawAddress, UInt) -> UInt raise @core.WindowsError
+
+pub fn get_device_driver_file_name_a_raw(@core.RawAddress, @core.RawAddress, UInt) -> @core.RawWin32Call[UInt]
+
+pub fn get_device_driver_file_name_w(@core.RawAddress, @strings.PWStrBuffer) -> UInt raise @core.WindowsError
+
+pub fn get_device_driver_file_name_w_raw(@core.RawAddress, @core.RawAddress, UInt) -> @core.RawWin32Call[UInt]
+
+pub fn get_mapped_file_name_a(@core.RawAddress, @core.RawAddress, @core.RawAddress, UInt) -> UInt raise @core.WindowsError
+
+pub fn get_mapped_file_name_a_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, UInt) -> @core.RawWin32Call[UInt]
+
+pub fn get_mapped_file_name_w(@core.RawAddress, @core.RawAddress, @strings.PWStrBuffer) -> UInt raise @core.WindowsError
+
+pub fn get_mapped_file_name_w_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, UInt) -> @core.RawWin32Call[UInt]
+
+pub fn get_module_base_name_a(@core.RawAddress, @core.RawAddress, @core.RawAddress, UInt) -> UInt raise @core.WindowsError
+
+pub fn get_module_base_name_a_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, UInt) -> @core.RawWin32Call[UInt]
+
+pub fn get_module_base_name_w(@core.RawAddress, @core.RawAddress, @strings.PWStrBuffer) -> UInt raise @core.WindowsError
+
+pub fn get_module_base_name_w_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, UInt) -> @core.RawWin32Call[UInt]
+
+pub fn get_module_file_name_ex_a(@core.RawAddress, @core.RawAddress, @core.RawAddress, UInt) -> UInt raise @core.WindowsError
+
+pub fn get_module_file_name_ex_a_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, UInt) -> @core.RawWin32Call[UInt]
+
+pub fn get_module_file_name_ex_w(@core.RawAddress, @core.RawAddress, @strings.PWStrBuffer) -> UInt raise @core.WindowsError
+
+pub fn get_module_file_name_ex_w_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, UInt) -> @core.RawWin32Call[UInt]
+
+pub fn get_module_information(@core.RawAddress, @core.RawAddress, @d1d11f5d5e3749de.MODULEINFO_b548ff5671a9, UInt) -> Bool raise @core.WindowsError
+
+pub fn get_module_information_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, UInt) -> @core.RawWin32Call[Int]
+
+pub fn get_performance_info(@d1d11f5d5e3749de.PERFORMANCEINFORMATION_244db0ce1416, UInt) -> Bool raise @core.WindowsError
+
+pub fn get_performance_info_raw(@core.RawAddress, UInt) -> @core.RawWin32Call[Int]
+
+pub fn get_process_image_file_name_a(@core.RawAddress, @core.RawAddress, UInt) -> UInt raise @core.WindowsError
+
+pub fn get_process_image_file_name_a_raw(@core.RawAddress, @core.RawAddress, UInt) -> @core.RawWin32Call[UInt]
+
+pub fn get_process_image_file_name_w(@core.RawAddress, @strings.PWStrBuffer) -> UInt raise @core.WindowsError
+
+pub fn get_process_image_file_name_w_raw(@core.RawAddress, @core.RawAddress, UInt) -> @core.RawWin32Call[UInt]
+
+pub fn get_process_memory_info(@core.RawAddress, @d1d11f5d5e3749de.PROCESSMEMORYCOUNTERS_9508979cd77e, UInt) -> Bool raise @core.WindowsError
+
+pub fn get_process_memory_info_raw(@core.RawAddress, @core.RawAddress, UInt) -> @core.RawWin32Call[Int]
+
+pub fn get_ws_changes(@core.RawAddress, @d1d11f5d5e3749de.PSAPIWSWATCHINFORMATION_0b64810b43d9, UInt) -> Bool raise @core.WindowsError
+
+pub fn get_ws_changes_ex(@core.RawAddress, @d1d11f5d5e3749de.PSAPIWSWATCHINFORMATIONEX_2de0c0668ac2, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn get_ws_changes_ex_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn get_ws_changes_raw(@core.RawAddress, @core.RawAddress, UInt) -> @core.RawWin32Call[Int]
+
+pub fn initialize_process_for_ws_watch(@core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn initialize_process_for_ws_watch_raw(@core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn k32_empty_working_set(@core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn k32_empty_working_set_raw(@core.RawAddress) -> Int
+
+pub fn k32_enum_device_drivers(@core.RawAddress, UInt, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn k32_enum_device_drivers_raw(@core.RawAddress, UInt, @core.RawAddress) -> Int
+
+pub fn k32_enum_page_files_a(@core.RawAddress, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn k32_enum_page_files_a_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn k32_enum_page_files_w(@core.RawAddress, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn k32_enum_page_files_w_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn k32_enum_process_modules(@core.RawAddress, @core.RawAddress, UInt, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn k32_enum_process_modules_ex(@core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, UInt) -> Bool raise @core.WindowsError
+
+pub fn k32_enum_process_modules_ex_raw(@core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, UInt) -> Int
+
+pub fn k32_enum_process_modules_raw(@core.RawAddress, @core.RawAddress, UInt, @core.RawAddress) -> Int
+
+pub fn k32_enum_processes(@core.RawAddress, UInt, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn k32_enum_processes_raw(@core.RawAddress, UInt, @core.RawAddress) -> Int
+
+pub fn k32_get_device_driver_base_name_a(@core.RawAddress, @core.RawAddress, UInt) -> UInt raise @core.WindowsError
+
+pub fn k32_get_device_driver_base_name_a_raw(@core.RawAddress, @core.RawAddress, UInt) -> UInt
+
+pub fn k32_get_device_driver_base_name_w(@core.RawAddress, @strings.PWStrBuffer) -> UInt raise @core.WindowsError
+
+pub fn k32_get_device_driver_base_name_w_raw(@core.RawAddress, @core.RawAddress, UInt) -> UInt
+
+pub fn k32_get_device_driver_file_name_a(@core.RawAddress, @core.RawAddress, UInt) -> UInt raise @core.WindowsError
+
+pub fn k32_get_device_driver_file_name_a_raw(@core.RawAddress, @core.RawAddress, UInt) -> UInt
+
+pub fn k32_get_device_driver_file_name_w(@core.RawAddress, @strings.PWStrBuffer) -> UInt raise @core.WindowsError
+
+pub fn k32_get_device_driver_file_name_w_raw(@core.RawAddress, @core.RawAddress, UInt) -> UInt
+
+pub fn k32_get_mapped_file_name_a(@core.RawAddress, @core.RawAddress, @core.RawAddress, UInt) -> UInt raise @core.WindowsError
+
+pub fn k32_get_mapped_file_name_a_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, UInt) -> UInt
+
+pub fn k32_get_mapped_file_name_w(@core.RawAddress, @core.RawAddress, @strings.PWStrBuffer) -> UInt raise @core.WindowsError
+
+pub fn k32_get_mapped_file_name_w_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, UInt) -> UInt
+
+pub fn k32_get_module_base_name_a(@core.RawAddress, @core.RawAddress, @core.RawAddress, UInt) -> UInt raise @core.WindowsError
+
+pub fn k32_get_module_base_name_a_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, UInt) -> UInt
+
+pub fn k32_get_module_base_name_w(@core.RawAddress, @core.RawAddress, @strings.PWStrBuffer) -> UInt raise @core.WindowsError
+
+pub fn k32_get_module_base_name_w_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, UInt) -> UInt
+
+pub fn k32_get_module_file_name_ex_a(@core.RawAddress, @core.RawAddress, @core.RawAddress, UInt) -> UInt raise @core.WindowsError
+
+pub fn k32_get_module_file_name_ex_a_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, UInt) -> UInt
+
+pub fn k32_get_module_file_name_ex_w(@core.RawAddress, @core.RawAddress, @strings.PWStrBuffer) -> UInt raise @core.WindowsError
+
+pub fn k32_get_module_file_name_ex_w_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, UInt) -> UInt
+
+pub fn k32_get_module_information(@core.RawAddress, @core.RawAddress, @d1d11f5d5e3749de.MODULEINFO_b548ff5671a9, UInt) -> Bool raise @core.WindowsError
+
+pub fn k32_get_module_information_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, UInt) -> Int
+
+pub fn k32_get_performance_info(@d1d11f5d5e3749de.PERFORMANCEINFORMATION_244db0ce1416, UInt) -> Bool raise @core.WindowsError
+
+pub fn k32_get_performance_info_raw(@core.RawAddress, UInt) -> Int
+
+pub fn k32_get_process_image_file_name_a(@core.RawAddress, @core.RawAddress, UInt) -> UInt raise @core.WindowsError
+
+pub fn k32_get_process_image_file_name_a_raw(@core.RawAddress, @core.RawAddress, UInt) -> UInt
+
+pub fn k32_get_process_image_file_name_w(@core.RawAddress, @strings.PWStrBuffer) -> UInt raise @core.WindowsError
+
+pub fn k32_get_process_image_file_name_w_raw(@core.RawAddress, @core.RawAddress, UInt) -> UInt
+
+pub fn k32_get_process_memory_info(@core.RawAddress, @d1d11f5d5e3749de.PROCESSMEMORYCOUNTERS_9508979cd77e, UInt) -> Bool raise @core.WindowsError
+
+pub fn k32_get_process_memory_info_raw(@core.RawAddress, @core.RawAddress, UInt) -> Int
+
+pub fn k32_get_ws_changes(@core.RawAddress, @d1d11f5d5e3749de.PSAPIWSWATCHINFORMATION_0b64810b43d9, UInt) -> Bool raise @core.WindowsError
+
+pub fn k32_get_ws_changes_ex(@core.RawAddress, @d1d11f5d5e3749de.PSAPIWSWATCHINFORMATIONEX_2de0c0668ac2, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn k32_get_ws_changes_ex_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn k32_get_ws_changes_raw(@core.RawAddress, @core.RawAddress, UInt) -> Int
+
+pub fn k32_initialize_process_for_ws_watch(@core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn k32_initialize_process_for_ws_watch_raw(@core.RawAddress) -> Int
+
+pub fn k32_query_working_set(@core.RawAddress, @core.RawAddress, UInt) -> Bool raise @core.WindowsError
+
+pub fn k32_query_working_set_ex(@core.RawAddress, @core.RawAddress, UInt) -> Bool raise @core.WindowsError
+
+pub fn k32_query_working_set_ex_raw(@core.RawAddress, @core.RawAddress, UInt) -> Int
+
+pub fn k32_query_working_set_raw(@core.RawAddress, @core.RawAddress, UInt) -> Int
+
+pub let psapi_version : UInt
+
+pub fn query_working_set(@core.RawAddress, @core.RawAddress, UInt) -> Bool raise @core.WindowsError
+
+pub fn query_working_set_ex(@core.RawAddress, @core.RawAddress, UInt) -> Bool raise @core.WindowsError
+
+pub fn query_working_set_ex_raw(@core.RawAddress, @core.RawAddress, UInt) -> @core.RawWin32Call[Int]
+
+pub fn query_working_set_raw(@core.RawAddress, @core.RawAddress, UInt) -> @core.RawWin32Call[Int]
+
+// Errors
+
+// Types and methods
+
+// Type aliases
+pub using @d1d11f5d5e3749de {type ENUMPAGEFILEINFORMATION_c5c459b713b1 as ENUMPAGEFILEINFORMATION}
+
+pub using @d1d11f5d5e3749de {type ENUMPROCESSMODULESEXFLAGS_527da8faa106 as ENUMPROCESSMODULESEXFLAGS}
+
+pub using @d1d11f5d5e3749de {type MODULEINFO_b548ff5671a9 as MODULEINFO}
+
+pub using @d1d11f5d5e3749de {type PENUMPAGEFILECALLBACKA_a8d9be1bd23a as PENUMPAGEFILECALLBACKA}
+
+pub using @d1d11f5d5e3749de {type PENUMPAGEFILECALLBACKW_1af76419ca26 as PENUMPAGEFILECALLBACKW}
+
+pub using @d1d11f5d5e3749de {type PERFORMANCEINFORMATION_244db0ce1416 as PERFORMANCEINFORMATION}
+
+pub using @d1d11f5d5e3749de {type PROCESSMEMORYCOUNTERS_9508979cd77e as PROCESSMEMORYCOUNTERS}
+
+pub using @d1d11f5d5e3749de {type PROCESSMEMORYCOUNTERSEX_fc3fa4ae9983 as PROCESSMEMORYCOUNTERSEX}
+
+pub using @d1d11f5d5e3749de {type PROCESSMEMORYCOUNTERSEX2_dcaadfd8c19e as PROCESSMEMORYCOUNTERSEX2}
+
+pub using @d1d11f5d5e3749de {type PSAPIWORKINGSETBLOCK_93de83ad027f as PSAPIWORKINGSETBLOCK}
+
+pub using @d1d11f5d5e3749de {type PSAPIWORKINGSETBLOCKAnonymousEStruct_f36b8e5fe71e as PSAPIWORKINGSETBLOCKAnonymousEStruct}
+
+pub using @d1d11f5d5e3749de {type PSAPIWORKINGSETEXBLOCK_698a729e45c3 as PSAPIWORKINGSETEXBLOCK}
+
+pub using @d1d11f5d5e3749de {type PSAPIWORKINGSETEXBLOCKAnonymousEUnion_d57293ed3d8d as PSAPIWORKINGSETEXBLOCKAnonymousEUnion}
+
+pub using @d1d11f5d5e3749de {type PSAPIWORKINGSETEXBLOCKAnonymousEUnionAnonymousEStruct_b4cfffcc6acc as PSAPIWORKINGSETEXBLOCKAnonymousEUnionAnonymousEStruct}
+
+pub using @d1d11f5d5e3749de {type PSAPIWORKINGSETEXBLOCKAnonymousEUnionInvalidEStruct_46574687d87c as PSAPIWORKINGSETEXBLOCKAnonymousEUnionInvalidEStruct}
+
+pub using @d1d11f5d5e3749de {type PSAPIWORKINGSETEXINFORMATION_aef16a13d795 as PSAPIWORKINGSETEXINFORMATION}
+
+pub using @d1d11f5d5e3749de {type PSAPIWORKINGSETINFORMATION_adc1c51e2085 as PSAPIWORKINGSETINFORMATION}
+
+pub using @d1d11f5d5e3749de {type PSAPIWSWATCHINFORMATION_0b64810b43d9 as PSAPIWSWATCHINFORMATION}
+
+pub using @d1d11f5d5e3749de {type PSAPIWSWATCHINFORMATIONEX_2de0c0668ac2 as PSAPIWSWATCHINFORMATIONEX}
+
+// Traits

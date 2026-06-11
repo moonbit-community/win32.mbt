@@ -1,0 +1,359 @@
+///|
+pub fn CONVINFOCONVERSATIONSTATE_2e3081b6911c::xst_advackrcvd() -> CONVINFOCONVERSATIONSTATE_2e3081b6911c {
+  CONVINFOCONVERSATIONSTATE_2e3081b6911c::from_int(13U.reinterpret_as_int())
+}
+
+///|
+pub fn CONVINFOCONVERSATIONSTATE_2e3081b6911c::xst_advdataackrcvd() -> CONVINFOCONVERSATIONSTATE_2e3081b6911c {
+  CONVINFOCONVERSATIONSTATE_2e3081b6911c::from_int(16U.reinterpret_as_int())
+}
+
+///|
+pub fn CONVINFOCONVERSATIONSTATE_2e3081b6911c::xst_advdatasent() -> CONVINFOCONVERSATIONSTATE_2e3081b6911c {
+  CONVINFOCONVERSATIONSTATE_2e3081b6911c::from_int(15U.reinterpret_as_int())
+}
+
+///|
+pub fn CONVINFOCONVERSATIONSTATE_2e3081b6911c::xst_advsent() -> CONVINFOCONVERSATIONSTATE_2e3081b6911c {
+  CONVINFOCONVERSATIONSTATE_2e3081b6911c::from_int(11U.reinterpret_as_int())
+}
+
+///|
+pub fn CONVINFOCONVERSATIONSTATE_2e3081b6911c::xst_connected() -> CONVINFOCONVERSATIONSTATE_2e3081b6911c {
+  CONVINFOCONVERSATIONSTATE_2e3081b6911c::from_int(2U.reinterpret_as_int())
+}
+
+///|
+pub fn CONVINFOCONVERSATIONSTATE_2e3081b6911c::xst_datarcvd() -> CONVINFOCONVERSATIONSTATE_2e3081b6911c {
+  CONVINFOCONVERSATIONSTATE_2e3081b6911c::from_int(6U.reinterpret_as_int())
+}
+
+///|
+pub fn CONVINFOCONVERSATIONSTATE_2e3081b6911c::xst_execackrcvd() -> CONVINFOCONVERSATIONSTATE_2e3081b6911c {
+  CONVINFOCONVERSATIONSTATE_2e3081b6911c::from_int(10U.reinterpret_as_int())
+}
+
+///|
+pub fn CONVINFOCONVERSATIONSTATE_2e3081b6911c::xst_execsent() -> CONVINFOCONVERSATIONSTATE_2e3081b6911c {
+  CONVINFOCONVERSATIONSTATE_2e3081b6911c::from_int(9U.reinterpret_as_int())
+}
+
+///|
+pub fn CONVINFOCONVERSATIONSTATE_2e3081b6911c::xst_incomplete() -> CONVINFOCONVERSATIONSTATE_2e3081b6911c {
+  CONVINFOCONVERSATIONSTATE_2e3081b6911c::from_int(1U.reinterpret_as_int())
+}
+
+///|
+pub fn CONVINFOCONVERSATIONSTATE_2e3081b6911c::xst_init1() -> CONVINFOCONVERSATIONSTATE_2e3081b6911c {
+  CONVINFOCONVERSATIONSTATE_2e3081b6911c::from_int(3U.reinterpret_as_int())
+}
+
+///|
+pub fn CONVINFOCONVERSATIONSTATE_2e3081b6911c::xst_init2() -> CONVINFOCONVERSATIONSTATE_2e3081b6911c {
+  CONVINFOCONVERSATIONSTATE_2e3081b6911c::from_int(4U.reinterpret_as_int())
+}
+
+///|
+pub fn CONVINFOCONVERSATIONSTATE_2e3081b6911c::xst_null() -> CONVINFOCONVERSATIONSTATE_2e3081b6911c {
+  CONVINFOCONVERSATIONSTATE_2e3081b6911c::from_int(0U.reinterpret_as_int())
+}
+
+///|
+pub fn CONVINFOCONVERSATIONSTATE_2e3081b6911c::xst_pokeackrcvd() -> CONVINFOCONVERSATIONSTATE_2e3081b6911c {
+  CONVINFOCONVERSATIONSTATE_2e3081b6911c::from_int(8U.reinterpret_as_int())
+}
+
+///|
+pub fn CONVINFOCONVERSATIONSTATE_2e3081b6911c::xst_pokesent() -> CONVINFOCONVERSATIONSTATE_2e3081b6911c {
+  CONVINFOCONVERSATIONSTATE_2e3081b6911c::from_int(7U.reinterpret_as_int())
+}
+
+///|
+pub fn CONVINFOCONVERSATIONSTATE_2e3081b6911c::xst_reqsent() -> CONVINFOCONVERSATIONSTATE_2e3081b6911c {
+  CONVINFOCONVERSATIONSTATE_2e3081b6911c::from_int(5U.reinterpret_as_int())
+}
+
+///|
+pub fn CONVINFOCONVERSATIONSTATE_2e3081b6911c::xst_unadvackrcvd() -> CONVINFOCONVERSATIONSTATE_2e3081b6911c {
+  CONVINFOCONVERSATIONSTATE_2e3081b6911c::from_int(14U.reinterpret_as_int())
+}
+
+///|
+pub fn CONVINFOCONVERSATIONSTATE_2e3081b6911c::xst_unadvsent() -> CONVINFOCONVERSATIONSTATE_2e3081b6911c {
+  CONVINFOCONVERSATIONSTATE_2e3081b6911c::from_int(12U.reinterpret_as_int())
+}
+
+///|
+pub fn CONVINFOSTATUS_53ebea93ad14::st_advise() -> CONVINFOSTATUS_53ebea93ad14 {
+  CONVINFOSTATUS_53ebea93ad14::from_int(2U.reinterpret_as_int())
+}
+
+///|
+pub fn CONVINFOSTATUS_53ebea93ad14::st_blocked() -> CONVINFOSTATUS_53ebea93ad14 {
+  CONVINFOSTATUS_53ebea93ad14::from_int(8U.reinterpret_as_int())
+}
+
+///|
+pub fn CONVINFOSTATUS_53ebea93ad14::st_blocknext() -> CONVINFOSTATUS_53ebea93ad14 {
+  CONVINFOSTATUS_53ebea93ad14::from_int(128U.reinterpret_as_int())
+}
+
+///|
+pub fn CONVINFOSTATUS_53ebea93ad14::st_client() -> CONVINFOSTATUS_53ebea93ad14 {
+  CONVINFOSTATUS_53ebea93ad14::from_int(16U.reinterpret_as_int())
+}
+
+///|
+pub fn CONVINFOSTATUS_53ebea93ad14::st_connected() -> CONVINFOSTATUS_53ebea93ad14 {
+  CONVINFOSTATUS_53ebea93ad14::from_int(1U.reinterpret_as_int())
+}
+
+///|
+pub fn CONVINFOSTATUS_53ebea93ad14::st_inlist() -> CONVINFOSTATUS_53ebea93ad14 {
+  CONVINFOSTATUS_53ebea93ad14::from_int(64U.reinterpret_as_int())
+}
+
+///|
+pub fn CONVINFOSTATUS_53ebea93ad14::st_islocal() -> CONVINFOSTATUS_53ebea93ad14 {
+  CONVINFOSTATUS_53ebea93ad14::from_int(4U.reinterpret_as_int())
+}
+
+///|
+pub fn CONVINFOSTATUS_53ebea93ad14::st_isself() -> CONVINFOSTATUS_53ebea93ad14 {
+  CONVINFOSTATUS_53ebea93ad14::from_int(256U.reinterpret_as_int())
+}
+
+///|
+pub fn CONVINFOSTATUS_53ebea93ad14::st_terminated() -> CONVINFOSTATUS_53ebea93ad14 {
+  CONVINFOSTATUS_53ebea93ad14::from_int(32U.reinterpret_as_int())
+}
+
+///|
+pub fn DDECLIENTTRANSACTIONTYPE_d284e2a72c5b::xtyp_advdata() -> DDECLIENTTRANSACTIONTYPE_d284e2a72c5b {
+  DDECLIENTTRANSACTIONTYPE_d284e2a72c5b::from_int(16400U.reinterpret_as_int())
+}
+
+///|
+pub fn DDECLIENTTRANSACTIONTYPE_d284e2a72c5b::xtyp_advreq() -> DDECLIENTTRANSACTIONTYPE_d284e2a72c5b {
+  DDECLIENTTRANSACTIONTYPE_d284e2a72c5b::from_int(8226U.reinterpret_as_int())
+}
+
+///|
+pub fn DDECLIENTTRANSACTIONTYPE_d284e2a72c5b::xtyp_advstart() -> DDECLIENTTRANSACTIONTYPE_d284e2a72c5b {
+  DDECLIENTTRANSACTIONTYPE_d284e2a72c5b::from_int(4144U.reinterpret_as_int())
+}
+
+///|
+pub fn DDECLIENTTRANSACTIONTYPE_d284e2a72c5b::xtyp_advstop() -> DDECLIENTTRANSACTIONTYPE_d284e2a72c5b {
+  DDECLIENTTRANSACTIONTYPE_d284e2a72c5b::from_int(32832U.reinterpret_as_int())
+}
+
+///|
+pub fn DDECLIENTTRANSACTIONTYPE_d284e2a72c5b::xtyp_connect() -> DDECLIENTTRANSACTIONTYPE_d284e2a72c5b {
+  DDECLIENTTRANSACTIONTYPE_d284e2a72c5b::from_int(4194U.reinterpret_as_int())
+}
+
+///|
+pub fn DDECLIENTTRANSACTIONTYPE_d284e2a72c5b::xtyp_connect_confirm() -> DDECLIENTTRANSACTIONTYPE_d284e2a72c5b {
+  DDECLIENTTRANSACTIONTYPE_d284e2a72c5b::from_int(32882U.reinterpret_as_int())
+}
+
+///|
+pub fn DDECLIENTTRANSACTIONTYPE_d284e2a72c5b::xtyp_disconnect() -> DDECLIENTTRANSACTIONTYPE_d284e2a72c5b {
+  DDECLIENTTRANSACTIONTYPE_d284e2a72c5b::from_int(32962U.reinterpret_as_int())
+}
+
+///|
+pub fn DDECLIENTTRANSACTIONTYPE_d284e2a72c5b::xtyp_execute() -> DDECLIENTTRANSACTIONTYPE_d284e2a72c5b {
+  DDECLIENTTRANSACTIONTYPE_d284e2a72c5b::from_int(16464U.reinterpret_as_int())
+}
+
+///|
+pub fn DDECLIENTTRANSACTIONTYPE_d284e2a72c5b::xtyp_monitor() -> DDECLIENTTRANSACTIONTYPE_d284e2a72c5b {
+  DDECLIENTTRANSACTIONTYPE_d284e2a72c5b::from_int(33010U.reinterpret_as_int())
+}
+
+///|
+pub fn DDECLIENTTRANSACTIONTYPE_d284e2a72c5b::xtyp_poke() -> DDECLIENTTRANSACTIONTYPE_d284e2a72c5b {
+  DDECLIENTTRANSACTIONTYPE_d284e2a72c5b::from_int(16528U.reinterpret_as_int())
+}
+
+///|
+pub fn DDECLIENTTRANSACTIONTYPE_d284e2a72c5b::xtyp_register() -> DDECLIENTTRANSACTIONTYPE_d284e2a72c5b {
+  DDECLIENTTRANSACTIONTYPE_d284e2a72c5b::from_int(32930U.reinterpret_as_int())
+}
+
+///|
+pub fn DDECLIENTTRANSACTIONTYPE_d284e2a72c5b::xtyp_request() -> DDECLIENTTRANSACTIONTYPE_d284e2a72c5b {
+  DDECLIENTTRANSACTIONTYPE_d284e2a72c5b::from_int(8368U.reinterpret_as_int())
+}
+
+///|
+pub fn DDECLIENTTRANSACTIONTYPE_d284e2a72c5b::xtyp_unregister() -> DDECLIENTTRANSACTIONTYPE_d284e2a72c5b {
+  DDECLIENTTRANSACTIONTYPE_d284e2a72c5b::from_int(32978U.reinterpret_as_int())
+}
+
+///|
+pub fn DDECLIENTTRANSACTIONTYPE_d284e2a72c5b::xtyp_wildconnect() -> DDECLIENTTRANSACTIONTYPE_d284e2a72c5b {
+  DDECLIENTTRANSACTIONTYPE_d284e2a72c5b::from_int(8418U.reinterpret_as_int())
+}
+
+///|
+pub fn DDECLIENTTRANSACTIONTYPE_d284e2a72c5b::xtyp_xact_complete() -> DDECLIENTTRANSACTIONTYPE_d284e2a72c5b {
+  DDECLIENTTRANSACTIONTYPE_d284e2a72c5b::from_int(32896U.reinterpret_as_int())
+}
+
+///|
+pub fn DDEENABLECALLBACKCMD_dab695ff3e91::ec_disable() -> DDEENABLECALLBACKCMD_dab695ff3e91 {
+  DDEENABLECALLBACKCMD_dab695ff3e91::from_int(8U.reinterpret_as_int())
+}
+
+///|
+pub fn DDEENABLECALLBACKCMD_dab695ff3e91::ec_enableall() -> DDEENABLECALLBACKCMD_dab695ff3e91 {
+  DDEENABLECALLBACKCMD_dab695ff3e91::from_int(0U.reinterpret_as_int())
+}
+
+///|
+pub fn DDEENABLECALLBACKCMD_dab695ff3e91::ec_enableone() -> DDEENABLECALLBACKCMD_dab695ff3e91 {
+  DDEENABLECALLBACKCMD_dab695ff3e91::from_int(128U.reinterpret_as_int())
+}
+
+///|
+pub fn DDEENABLECALLBACKCMD_dab695ff3e91::ec_querywaiting() -> DDEENABLECALLBACKCMD_dab695ff3e91 {
+  DDEENABLECALLBACKCMD_dab695ff3e91::from_int(2U.reinterpret_as_int())
+}
+
+///|
+pub fn DDEINITIALIZECOMMAND_315116156aa2::appclass_monitor() -> DDEINITIALIZECOMMAND_315116156aa2 {
+  DDEINITIALIZECOMMAND_315116156aa2::from_int(1U.reinterpret_as_int())
+}
+
+///|
+pub fn DDEINITIALIZECOMMAND_315116156aa2::appclass_standard() -> DDEINITIALIZECOMMAND_315116156aa2 {
+  DDEINITIALIZECOMMAND_315116156aa2::from_int(0U.reinterpret_as_int())
+}
+
+///|
+pub fn DDEINITIALIZECOMMAND_315116156aa2::appcmd_clientonly() -> DDEINITIALIZECOMMAND_315116156aa2 {
+  DDEINITIALIZECOMMAND_315116156aa2::from_int(16U.reinterpret_as_int())
+}
+
+///|
+pub fn DDEINITIALIZECOMMAND_315116156aa2::appcmd_filterinits() -> DDEINITIALIZECOMMAND_315116156aa2 {
+  DDEINITIALIZECOMMAND_315116156aa2::from_int(32U.reinterpret_as_int())
+}
+
+///|
+pub fn DDEINITIALIZECOMMAND_315116156aa2::cbf_fail_advises() -> DDEINITIALIZECOMMAND_315116156aa2 {
+  DDEINITIALIZECOMMAND_315116156aa2::from_int(16384U.reinterpret_as_int())
+}
+
+///|
+pub fn DDEINITIALIZECOMMAND_315116156aa2::cbf_fail_allsvrxactions() -> DDEINITIALIZECOMMAND_315116156aa2 {
+  DDEINITIALIZECOMMAND_315116156aa2::from_int(258048U.reinterpret_as_int())
+}
+
+///|
+pub fn DDEINITIALIZECOMMAND_315116156aa2::cbf_fail_connections() -> DDEINITIALIZECOMMAND_315116156aa2 {
+  DDEINITIALIZECOMMAND_315116156aa2::from_int(8192U.reinterpret_as_int())
+}
+
+///|
+pub fn DDEINITIALIZECOMMAND_315116156aa2::cbf_fail_executes() -> DDEINITIALIZECOMMAND_315116156aa2 {
+  DDEINITIALIZECOMMAND_315116156aa2::from_int(32768U.reinterpret_as_int())
+}
+
+///|
+pub fn DDEINITIALIZECOMMAND_315116156aa2::cbf_fail_pokes() -> DDEINITIALIZECOMMAND_315116156aa2 {
+  DDEINITIALIZECOMMAND_315116156aa2::from_int(65536U.reinterpret_as_int())
+}
+
+///|
+pub fn DDEINITIALIZECOMMAND_315116156aa2::cbf_fail_requests() -> DDEINITIALIZECOMMAND_315116156aa2 {
+  DDEINITIALIZECOMMAND_315116156aa2::from_int(131072U.reinterpret_as_int())
+}
+
+///|
+pub fn DDEINITIALIZECOMMAND_315116156aa2::cbf_fail_selfconnections() -> DDEINITIALIZECOMMAND_315116156aa2 {
+  DDEINITIALIZECOMMAND_315116156aa2::from_int(4096U.reinterpret_as_int())
+}
+
+///|
+pub fn DDEINITIALIZECOMMAND_315116156aa2::cbf_skip_allnotifications() -> DDEINITIALIZECOMMAND_315116156aa2 {
+  DDEINITIALIZECOMMAND_315116156aa2::from_int(3932160U.reinterpret_as_int())
+}
+
+///|
+pub fn DDEINITIALIZECOMMAND_315116156aa2::cbf_skip_connect_confirms() -> DDEINITIALIZECOMMAND_315116156aa2 {
+  DDEINITIALIZECOMMAND_315116156aa2::from_int(262144U.reinterpret_as_int())
+}
+
+///|
+pub fn DDEINITIALIZECOMMAND_315116156aa2::cbf_skip_disconnects() -> DDEINITIALIZECOMMAND_315116156aa2 {
+  DDEINITIALIZECOMMAND_315116156aa2::from_int(2097152U.reinterpret_as_int())
+}
+
+///|
+pub fn DDEINITIALIZECOMMAND_315116156aa2::cbf_skip_registrations() -> DDEINITIALIZECOMMAND_315116156aa2 {
+  DDEINITIALIZECOMMAND_315116156aa2::from_int(524288U.reinterpret_as_int())
+}
+
+///|
+pub fn DDEINITIALIZECOMMAND_315116156aa2::cbf_skip_unregistrations() -> DDEINITIALIZECOMMAND_315116156aa2 {
+  DDEINITIALIZECOMMAND_315116156aa2::from_int(1048576U.reinterpret_as_int())
+}
+
+///|
+pub fn DDEINITIALIZECOMMAND_315116156aa2::mf_callbacks() -> DDEINITIALIZECOMMAND_315116156aa2 {
+  DDEINITIALIZECOMMAND_315116156aa2::from_int(134217728U.reinterpret_as_int())
+}
+
+///|
+pub fn DDEINITIALIZECOMMAND_315116156aa2::mf_conv() -> DDEINITIALIZECOMMAND_315116156aa2 {
+  DDEINITIALIZECOMMAND_315116156aa2::from_int(1073741824U.reinterpret_as_int())
+}
+
+///|
+pub fn DDEINITIALIZECOMMAND_315116156aa2::mf_errors() -> DDEINITIALIZECOMMAND_315116156aa2 {
+  DDEINITIALIZECOMMAND_315116156aa2::from_int(268435456U.reinterpret_as_int())
+}
+
+///|
+pub fn DDEINITIALIZECOMMAND_315116156aa2::mf_hsz_info() -> DDEINITIALIZECOMMAND_315116156aa2 {
+  DDEINITIALIZECOMMAND_315116156aa2::from_int(16777216U.reinterpret_as_int())
+}
+
+///|
+pub fn DDEINITIALIZECOMMAND_315116156aa2::mf_links() -> DDEINITIALIZECOMMAND_315116156aa2 {
+  DDEINITIALIZECOMMAND_315116156aa2::from_int(536870912U.reinterpret_as_int())
+}
+
+///|
+pub fn DDEINITIALIZECOMMAND_315116156aa2::mf_postmsgs() -> DDEINITIALIZECOMMAND_315116156aa2 {
+  DDEINITIALIZECOMMAND_315116156aa2::from_int(67108864U.reinterpret_as_int())
+}
+
+///|
+pub fn DDEINITIALIZECOMMAND_315116156aa2::mf_sendmsgs() -> DDEINITIALIZECOMMAND_315116156aa2 {
+  DDEINITIALIZECOMMAND_315116156aa2::from_int(33554432U.reinterpret_as_int())
+}
+
+///|
+pub fn DDENAMESERVICECMD_86d41472b221::dns_filteroff() -> DDENAMESERVICECMD_86d41472b221 {
+  DDENAMESERVICECMD_86d41472b221::from_int(8U.reinterpret_as_int())
+}
+
+///|
+pub fn DDENAMESERVICECMD_86d41472b221::dns_filteron() -> DDENAMESERVICECMD_86d41472b221 {
+  DDENAMESERVICECMD_86d41472b221::from_int(4U.reinterpret_as_int())
+}
+
+///|
+pub fn DDENAMESERVICECMD_86d41472b221::dns_register() -> DDENAMESERVICECMD_86d41472b221 {
+  DDENAMESERVICECMD_86d41472b221::from_int(1U.reinterpret_as_int())
+}
+
+///|
+pub fn DDENAMESERVICECMD_86d41472b221::dns_unregister() -> DDENAMESERVICECMD_86d41472b221 {
+  DDENAMESERVICECMD_86d41472b221::from_int(2U.reinterpret_as_int())
+}

@@ -1,0 +1,3588 @@
+// Generated using `moon info`, DON'T EDIT IT
+package "moonbit-community/win32api/windows/win32/media/kernel_streaming"
+
+import {
+  "moonbit-community/win32api/runtime/core",
+  "moonbit-community/win32api/scc/8d35a65211e461f2",
+  "moonbit-community/win32api/scc/a24dc5ca31854e4f",
+}
+
+// Values
+pub let aec_mode_full_duplex : UInt
+
+pub let aec_mode_half_duplex : UInt
+
+pub let aec_mode_pass_through : UInt
+
+pub let aec_status_fd_currently_converged : UInt
+
+pub let aec_status_fd_history_continuously_converged : UInt
+
+pub let aec_status_fd_history_previously_diverged : UInt
+
+pub let aec_status_fd_history_uninitialized : UInt
+
+pub let allocator_strategy_dont_care : UInt
+
+pub let allocator_strategy_maximize_speed : UInt
+
+pub let allocator_strategy_minimize_frame_size : UInt
+
+pub let allocator_strategy_minimize_number_of_allocators : UInt
+
+pub let allocator_strategy_minimize_number_of_frames : UInt
+
+pub let audioloopback_tappoint_caps_postvolumemute : UInt
+
+pub let audioloopback_tappoint_caps_prevolumemute : UInt
+
+pub let audiomodule_max_data_size : UInt
+
+pub let audiomodule_max_name_cch_size : UInt
+
+pub let bus_interface_reference_version : UInt
+
+pub let cc_max_hw_decode_lines : UInt
+
+pub let ioctl_ks_disable_event : UInt
+
+pub let ioctl_ks_enable_event : UInt
+
+pub let ioctl_ks_handshake : UInt
+
+pub let ioctl_ks_method : UInt
+
+pub let ioctl_ks_property : UInt
+
+pub let ioctl_ks_read_stream : UInt
+
+pub let ioctl_ks_reset_state : UInt
+
+pub let ioctl_ks_write_stream : UInt
+
+pub let jackdesc2_dynamic_format_change_capability : UInt
+
+pub let jackdesc2_presence_detect_capability : UInt
+
+pub let ks_am_use_new_css_key : Int
+
+pub let ks_amcontrol_colorinfo_present : UInt
+
+pub let ks_amcontrol_pad_to_16x9 : UInt
+
+pub let ks_amcontrol_pad_to_4x3 : UInt
+
+pub let ks_amcontrol_used : UInt
+
+pub let ks_analog_video_ntsc_mask : UInt
+
+pub let ks_analog_video_pal_mask : UInt
+
+pub let ks_analog_video_secam_mask : UInt
+
+pub let ks_bi_bitfields : Int
+
+pub let ks_bi_jpeg : Int
+
+pub let ks_bi_rgb : Int
+
+pub let ks_bi_rle4 : Int
+
+pub let ks_bi_rle8 : Int
+
+pub let ks_camera_profile_sensor_type_custom : UInt
+
+pub let ks_camera_profile_sensor_type_depth : UInt
+
+pub let ks_camera_profile_sensor_type_image_segmentation : UInt
+
+pub let ks_camera_profile_sensor_type_infrared : UInt
+
+pub let ks_camera_profile_sensor_type_pose_tracking : UInt
+
+pub let ks_camera_profile_sensor_type_rgb : UInt
+
+pub let ks_cc_substream_even : Int
+
+pub let ks_cc_substream_field1_mask : Int
+
+pub let ks_cc_substream_field2_mask : Int
+
+pub let ks_cc_substream_odd : Int
+
+pub let ks_cc_substream_service_cc1 : Int
+
+pub let ks_cc_substream_service_cc2 : Int
+
+pub let ks_cc_substream_service_cc3 : Int
+
+pub let ks_cc_substream_service_cc4 : Int
+
+pub let ks_cc_substream_service_t1 : Int
+
+pub let ks_cc_substream_service_t2 : Int
+
+pub let ks_cc_substream_service_t3 : Int
+
+pub let ks_cc_substream_service_t4 : Int
+
+pub let ks_cc_substream_service_xds : Int
+
+pub let ks_copyprotect_restrict_duplication : UInt
+
+pub fn ks_create_allocator(@core.RawAddress, @8d35a65211e461f2.KSALLOCATORFRAMING_1c108ef0bdaf, @core.RawAddress) -> UInt raise @core.WindowsError
+
+pub fn ks_create_allocator2(@core.RawAddress, @8d35a65211e461f2.KSALLOCATORFRAMING_1c108ef0bdaf, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn ks_create_allocator2_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn ks_create_allocator_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn ks_create_clock(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt raise @core.WindowsError
+
+pub fn ks_create_clock2(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn ks_create_clock2_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn ks_create_clock_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn ks_create_pin(@core.RawAddress, @8d35a65211e461f2.KSPINCONNECT_cba5587c989a, UInt, @core.RawAddress) -> UInt raise @core.WindowsError
+
+pub fn ks_create_pin2(@core.RawAddress, @8d35a65211e461f2.KSPINCONNECT_cba5587c989a, UInt, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn ks_create_pin2_raw(@core.RawAddress, @core.RawAddress, UInt, @core.RawAddress) -> Int
+
+pub fn ks_create_pin_raw(@core.RawAddress, @core.RawAddress, UInt, @core.RawAddress) -> UInt
+
+pub fn ks_create_topology_node(@core.RawAddress, @8d35a65211e461f2.KSNODECREATE_a92efd7240c4, UInt, @core.RawAddress) -> UInt raise @core.WindowsError
+
+pub fn ks_create_topology_node2(@core.RawAddress, @8d35a65211e461f2.KSNODECREATE_a92efd7240c4, UInt, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn ks_create_topology_node2_raw(@core.RawAddress, @core.RawAddress, UInt, @core.RawAddress) -> Int
+
+pub fn ks_create_topology_node_raw(@core.RawAddress, @core.RawAddress, UInt, @core.RawAddress) -> UInt
+
+pub let ks_dvd_cgms_copy_once : UInt
+
+pub let ks_dvd_cgms_copy_permitted : UInt
+
+pub let ks_dvd_cgms_copy_protect_mask : UInt
+
+pub let ks_dvd_cgms_no_copy : UInt
+
+pub let ks_dvd_cgms_reserved_mask : UInt
+
+pub let ks_dvd_copyright_mask : UInt
+
+pub let ks_dvd_copyrighted : UInt
+
+pub let ks_dvd_not_copyrighted : UInt
+
+pub let ks_dvd_sector_not_protected : UInt
+
+pub let ks_dvd_sector_protect_mask : UInt
+
+pub let ks_dvd_sector_protected : UInt
+
+pub fn ks_get_media_type(Int, @a24dc5ca31854e4f.AMMEDIATYPE_5ef5fa6a3ca7, @core.RawAddress, UInt) -> Int raise @core.WindowsError
+
+pub fn ks_get_media_type_count(@core.RawAddress, UInt, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn ks_get_media_type_count_raw(@core.RawAddress, UInt, @core.RawAddress) -> Int
+
+pub fn ks_get_media_type_raw(Int, @core.RawAddress, @core.RawAddress, UInt) -> Int
+
+pub fn ks_get_multiple_pin_factory_items(@core.RawAddress, UInt, UInt, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn ks_get_multiple_pin_factory_items_raw(@core.RawAddress, UInt, UInt, @core.RawAddress) -> Int
+
+pub let ks_i_blue : UInt
+
+pub let ks_i_ega_colors : UInt
+
+pub let ks_i_green : UInt
+
+pub let ks_i_mask_colors : UInt
+
+pub let ks_i_maxbits : UInt
+
+pub let ks_i_palette : UInt
+
+pub let ks_i_palette_colors : UInt
+
+pub let ks_i_red : UInt
+
+pub let ks_i_truecolor : UInt
+
+pub let ks_interlace_1_field_per_sample : UInt
+
+pub let ks_interlace_display_mode_bob_only : UInt
+
+pub let ks_interlace_display_mode_bob_or_weave : UInt
+
+pub let ks_interlace_display_mode_mask : UInt
+
+pub let ks_interlace_display_mode_weave_only : UInt
+
+pub let ks_interlace_field1_first : UInt
+
+pub let ks_interlace_field_pat_both_irregular : UInt
+
+pub let ks_interlace_field_pat_both_regular : UInt
+
+pub let ks_interlace_field_pat_field1_only : UInt
+
+pub let ks_interlace_field_pat_field2_only : UInt
+
+pub let ks_interlace_field_pattern_mask : UInt
+
+pub let ks_interlace_is_interlaced : UInt
+
+pub let ks_interlace_unused : UInt
+
+pub let ks_max_size_mpeg1_sequence_info : UInt
+
+pub let ks_mpeg2_27_mhz_timebase : UInt
+
+pub let ks_mpeg2_do_pan_scan : UInt
+
+pub let ks_mpeg2_dss_user_data : UInt
+
+pub let ks_mpeg2_dvb_user_data : UInt
+
+pub let ks_mpeg2_dvd_line21_field1 : UInt
+
+pub let ks_mpeg2_dvd_line21_field2 : UInt
+
+pub let ks_mpeg2_film_camera_mode : UInt
+
+pub let ks_mpeg2_letterbox_analog_out : UInt
+
+pub let ks_mpeg2_source_is_letterboxed : UInt
+
+pub let ks_mpeg2_widescreen_analog_out : UInt
+
+pub let ks_mpegaudioinfo_27_mhz_timebase : UInt
+
+pub let ks_nabts_groupid_local_cable_system_advertiser_base : UInt
+
+pub let ks_nabts_groupid_local_cable_system_content_base : UInt
+
+pub let ks_nabts_groupid_microsoft_reserved_test_data_base : UInt
+
+pub let ks_nabts_groupid_network_wide_advertiser_base : UInt
+
+pub let ks_nabts_groupid_network_wide_content_base : UInt
+
+pub let ks_nabts_groupid_original_content_advertiser_base : UInt
+
+pub let ks_nabts_groupid_original_content_base : UInt
+
+pub let ks_nabts_groupid_production_company_advertiser_base : UInt
+
+pub let ks_nabts_groupid_production_company_content_base : UInt
+
+pub let ks_nabts_groupid_syndicated_show_advertiser_base : UInt
+
+pub let ks_nabts_groupid_syndicated_show_content_base : UInt
+
+pub let ks_nabts_groupid_television_station_advertiser_base : UInt
+
+pub let ks_nabts_groupid_television_station_content_base : UInt
+
+pub fn ks_open_default_device(@core.RawAddress, UInt, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn ks_open_default_device_raw(@core.RawAddress, UInt, @core.RawAddress) -> Int
+
+pub fn ks_resolve_required_attributes(@8d35a65211e461f2.KSDATAFORMAT_821b401f7e1e, @8d35a65211e461f2.KSMULTIPLEITEM_ddb5b5c1257b?) -> Int raise @core.WindowsError
+
+pub fn ks_resolve_required_attributes_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn ks_synchronous_device_control(@core.RawAddress, UInt, @core.RawAddress, UInt, @core.RawAddress, UInt, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn ks_synchronous_device_control_raw(@core.RawAddress, UInt, @core.RawAddress, UInt, @core.RawAddress, UInt, @core.RawAddress) -> Int
+
+pub let ks_tvaudio_mode_lang_a : UInt
+
+pub let ks_tvaudio_mode_lang_b : UInt
+
+pub let ks_tvaudio_mode_lang_c : UInt
+
+pub let ks_tvaudio_mode_mono : UInt
+
+pub let ks_tvaudio_mode_stereo : UInt
+
+pub let ks_tvaudio_preset_lang_a : UInt
+
+pub let ks_tvaudio_preset_lang_b : UInt
+
+pub let ks_tvaudio_preset_lang_c : UInt
+
+pub let ks_tvaudio_preset_stereo : UInt
+
+pub let ks_tvtuner_change_begin_tune : Int
+
+pub let ks_tvtuner_change_end_tune : Int
+
+pub let ks_vbi_flag_field1 : Int
+
+pub let ks_vbi_flag_field2 : Int
+
+pub let ks_vbi_flag_frame : Int
+
+pub let ks_vbi_flag_mv_detected : Int
+
+pub let ks_vbi_flag_mv_hardware : Int
+
+pub let ks_vbi_flag_mv_present : Int
+
+pub let ks_vbi_flag_tvtuner_change : Int
+
+pub let ks_vbi_flag_vbiinfoheader_change : Int
+
+pub let ks_vbicap_protection_mv_detected : Int
+
+pub let ks_vbicap_protection_mv_hardware : Int
+
+pub let ks_vbicap_protection_mv_present : Int
+
+pub let ks_vbidatarate_cc : Int
+
+pub let ks_vbidatarate_nabts : Int
+
+pub let ks_video_alloc_vpe_agp : UInt
+
+pub let ks_video_alloc_vpe_display : UInt
+
+pub let ks_video_alloc_vpe_system : UInt
+
+pub let ks_video_flag_b_frame : Int
+
+pub let ks_video_flag_field1 : Int
+
+pub let ks_video_flag_field1_first : Int
+
+pub let ks_video_flag_field2 : Int
+
+pub let ks_video_flag_field_mask : Int
+
+pub let ks_video_flag_frame : Int
+
+pub let ks_video_flag_i_frame : Int
+
+pub let ks_video_flag_ipb_mask : Int
+
+pub let ks_video_flag_p_frame : Int
+
+pub let ks_video_flag_repeat_field : Int
+
+pub let ks_video_flag_weave : Int
+
+pub let ks_videostream_capture : UInt
+
+pub let ks_videostream_cc : UInt
+
+pub let ks_videostream_eds : UInt
+
+pub let ks_videostream_is_vpe : UInt
+
+pub let ks_videostream_nabts : UInt
+
+pub let ks_videostream_preview : UInt
+
+pub let ks_videostream_still : UInt
+
+pub let ks_videostream_teletext : UInt
+
+pub let ks_videostream_vbi : UInt
+
+pub let ksac3_alternate_audio_1 : UInt
+
+pub let ksac3_alternate_audio_2 : UInt
+
+pub let ksac3_alternate_audio_both : UInt
+
+pub let ksac3_service_commentary : UInt
+
+pub let ksac3_service_dialog_only : UInt
+
+pub let ksac3_service_emergency_flash : UInt
+
+pub let ksac3_service_hearing_impaired : UInt
+
+pub let ksac3_service_main_audio : UInt
+
+pub let ksac3_service_no_dialog : UInt
+
+pub let ksac3_service_visually_impaired : UInt
+
+pub let ksac3_service_voice_over : UInt
+
+pub let ksallocator_flag_2_d_buffer_required : UInt
+
+pub let ksallocator_flag_allocator_exists : UInt
+
+pub let ksallocator_flag_attention_stepping : UInt
+
+pub let ksallocator_flag_can_allocate : UInt
+
+pub let ksallocator_flag_cycle : UInt
+
+pub let ksallocator_flag_device_specific : UInt
+
+pub let ksallocator_flag_enable_cached_mdl : UInt
+
+pub let ksallocator_flag_independent_ranges : UInt
+
+pub let ksallocator_flag_insist_on_framesize_ratio : UInt
+
+pub let ksallocator_flag_multiple_output : UInt
+
+pub let ksallocator_flag_no_frame_integrity : UInt
+
+pub let ksallocator_flag_partial_read_support : UInt
+
+pub let ksallocator_optionf_compatible : UInt
+
+pub let ksallocator_optionf_system_memory : UInt
+
+pub let ksallocator_optionf_valid : UInt
+
+pub let ksallocator_requirementf_frame_integrity : UInt
+
+pub let ksallocator_requirementf_inplace_modifier : UInt
+
+pub let ksallocator_requirementf_must_allocate : UInt
+
+pub let ksallocator_requirementf_preferences_only : UInt
+
+pub let ksallocator_requirementf_system_memory : UInt
+
+pub let ksallocator_requirementf_system_memory_custom_allocation : UInt
+
+pub let ksattribute_required : UInt
+
+pub let ksauddecoutmode_pcm_51 : UInt
+
+pub let ksauddecoutmode_spdiff : UInt
+
+pub let ksauddecoutmode_stereo_analog : UInt
+
+pub let ksaudio_cpu_resources_host_cpu : UInt
+
+pub let ksaudio_cpu_resources_not_host_cpu : UInt
+
+pub let ksaudio_quality_advanced : UInt
+
+pub let ksaudio_quality_basic : UInt
+
+pub let ksaudio_quality_pc : UInt
+
+pub let ksaudio_quality_worst : UInt
+
+pub let ksaudio_speaker_directout : UInt
+
+pub let ksaudio_speaker_ground_front_center : UInt
+
+pub let ksaudio_speaker_ground_front_left : UInt
+
+pub let ksaudio_speaker_ground_front_right : UInt
+
+pub let ksaudio_speaker_ground_rear_left : UInt
+
+pub let ksaudio_speaker_ground_rear_right : UInt
+
+pub let ksaudio_speaker_mono : UInt
+
+pub let ksaudio_speaker_super_woofer : UInt
+
+pub let ksaudio_speaker_top_middle : UInt
+
+pub let ksaudio_stereo_speaker_geometry_headphone : Int
+
+pub let ksaudio_stereo_speaker_geometry_max : UInt
+
+pub let ksaudio_stereo_speaker_geometry_min : UInt
+
+pub let ksaudio_stereo_speaker_geometry_narrow : UInt
+
+pub let ksaudio_stereo_speaker_geometry_wide : UInt
+
+pub let kscamera_extendedprop_advancedphoto_auto : UInt64
+
+pub let kscamera_extendedprop_advancedphoto_fnf : UInt64
+
+pub let kscamera_extendedprop_advancedphoto_hdr : UInt64
+
+pub let kscamera_extendedprop_advancedphoto_off : UInt64
+
+pub let kscamera_extendedprop_advancedphoto_ultralowlight : UInt64
+
+pub let kscamera_extendedprop_backgroundsegmentation_blur : UInt64
+
+pub let kscamera_extendedprop_backgroundsegmentation_mask : UInt64
+
+pub let kscamera_extendedprop_backgroundsegmentation_off : UInt64
+
+pub let kscamera_extendedprop_backgroundsegmentation_shallowfocus : UInt64
+
+pub let kscamera_extendedprop_caps_asynccontrol : UInt64
+
+pub let kscamera_extendedprop_caps_cancellable : UInt64
+
+pub let kscamera_extendedprop_caps_mask : UInt64
+
+pub let kscamera_extendedprop_caps_reserved : UInt64
+
+pub let kscamera_extendedprop_digitalwindow_autofaceframing : UInt64
+
+pub let kscamera_extendedprop_digitalwindow_manual : UInt64
+
+pub let kscamera_extendedprop_evcomp_fullstep : UInt64
+
+pub let kscamera_extendedprop_evcomp_halfstep : UInt64
+
+pub let kscamera_extendedprop_evcomp_quarterstep : UInt64
+
+pub let kscamera_extendedprop_evcomp_sixthstep : UInt64
+
+pub let kscamera_extendedprop_evcomp_thirdstep : UInt64
+
+pub let kscamera_extendedprop_eyegazecorrection_off : UInt64
+
+pub let kscamera_extendedprop_eyegazecorrection_on : UInt64
+
+pub let kscamera_extendedprop_eyegazecorrection_stare : UInt64
+
+pub let kscamera_extendedprop_faceauth_mode_alternative_frame_illumination : UInt64
+
+pub let kscamera_extendedprop_faceauth_mode_background_subtraction : UInt64
+
+pub let kscamera_extendedprop_faceauth_mode_disabled : UInt64
+
+pub let kscamera_extendedprop_facedetection_blink : UInt64
+
+pub let kscamera_extendedprop_facedetection_off : UInt64
+
+pub let kscamera_extendedprop_facedetection_on : UInt64
+
+pub let kscamera_extendedprop_facedetection_photo : UInt64
+
+pub let kscamera_extendedprop_facedetection_preview : UInt64
+
+pub let kscamera_extendedprop_facedetection_smile : UInt64
+
+pub let kscamera_extendedprop_facedetection_video : UInt64
+
+pub let kscamera_extendedprop_filterscope : UInt
+
+pub let kscamera_extendedprop_flag_canceloperation : UInt64
+
+pub let kscamera_extendedprop_flag_mask : UInt64
+
+pub let kscamera_extendedprop_flash_assistant_auto : UInt64
+
+pub let kscamera_extendedprop_flash_assistant_off : UInt64
+
+pub let kscamera_extendedprop_flash_assistant_on : UInt64
+
+pub let kscamera_extendedprop_flash_auto : UInt64
+
+pub let kscamera_extendedprop_flash_auto_adjustablepower : UInt64
+
+pub let kscamera_extendedprop_flash_multiflashsupported : UInt64
+
+pub let kscamera_extendedprop_flash_off : UInt64
+
+pub let kscamera_extendedprop_flash_on : UInt64
+
+pub let kscamera_extendedprop_flash_on_adjustablepower : UInt64
+
+pub let kscamera_extendedprop_flash_redeyereduction : UInt64
+
+pub let kscamera_extendedprop_flash_singleflash : UInt64
+
+pub let kscamera_extendedprop_focus_continuous : UInt64
+
+pub let kscamera_extendedprop_focus_continuouslock : UInt64
+
+pub let kscamera_extendedprop_focus_distance_hyperfocal : UInt64
+
+pub let kscamera_extendedprop_focus_distance_infinity : UInt64
+
+pub let kscamera_extendedprop_focus_distance_nearest : UInt64
+
+pub let kscamera_extendedprop_focus_driverfallback_off : UInt64
+
+pub let kscamera_extendedprop_focus_range_fullrange : UInt64
+
+pub let kscamera_extendedprop_focus_range_hyperfocal : UInt64
+
+pub let kscamera_extendedprop_focus_range_infinity : UInt64
+
+pub let kscamera_extendedprop_focus_range_macro : UInt64
+
+pub let kscamera_extendedprop_focus_range_normal : UInt64
+
+pub let kscamera_extendedprop_focus_regionbased : UInt64
+
+pub let kscamera_extendedprop_focus_unlock : UInt64
+
+pub let kscamera_extendedprop_focuspriority_off : UInt64
+
+pub let kscamera_extendedprop_focuspriority_on : UInt64
+
+pub let kscamera_extendedprop_framerate_throttle_off : UInt64
+
+pub let kscamera_extendedprop_framerate_throttle_on : UInt64
+
+pub let kscamera_extendedprop_histogram_off : UInt64
+
+pub let kscamera_extendedprop_histogram_on : UInt64
+
+pub let kscamera_extendedprop_irtorchmode_alternating_frame_illumination : UInt64
+
+pub let kscamera_extendedprop_irtorchmode_always_on : UInt64
+
+pub let kscamera_extendedprop_irtorchmode_off : UInt64
+
+pub let kscamera_extendedprop_iso_100 : UInt64
+
+pub let kscamera_extendedprop_iso_12800 : UInt64
+
+pub let kscamera_extendedprop_iso_1600 : UInt64
+
+pub let kscamera_extendedprop_iso_200 : UInt64
+
+pub let kscamera_extendedprop_iso_25600 : UInt64
+
+pub let kscamera_extendedprop_iso_3200 : UInt64
+
+pub let kscamera_extendedprop_iso_400 : UInt64
+
+pub let kscamera_extendedprop_iso_50 : UInt64
+
+pub let kscamera_extendedprop_iso_6400 : UInt64
+
+pub let kscamera_extendedprop_iso_80 : UInt64
+
+pub let kscamera_extendedprop_iso_800 : UInt64
+
+pub let kscamera_extendedprop_iso_auto : UInt64
+
+pub let kscamera_extendedprop_iso_manual : UInt64
+
+pub let kscamera_extendedprop_metadata_alignmentrequired : UInt64
+
+pub let kscamera_extendedprop_metadata_memorytype_mask : UInt64
+
+pub let kscamera_extendedprop_metadata_systemmemory : UInt64
+
+pub let kscamera_extendedprop_ois_auto : UInt64
+
+pub let kscamera_extendedprop_ois_off : UInt64
+
+pub let kscamera_extendedprop_ois_on : UInt64
+
+pub let kscamera_extendedprop_optimization_default : UInt64
+
+pub let kscamera_extendedprop_optimization_latency : UInt64
+
+pub let kscamera_extendedprop_optimization_photo : UInt64
+
+pub let kscamera_extendedprop_optimization_power : UInt64
+
+pub let kscamera_extendedprop_optimization_quality : UInt64
+
+pub let kscamera_extendedprop_optimization_video : UInt64
+
+pub let kscamera_extendedprop_photoconfirmation_off : UInt64
+
+pub let kscamera_extendedprop_photoconfirmation_on : UInt64
+
+pub let kscamera_extendedprop_photomode_normal : UInt64
+
+pub let kscamera_extendedprop_photomode_sequence : UInt64
+
+pub let kscamera_extendedprop_photomode_sequence_sub_none : UInt
+
+pub let kscamera_extendedprop_photomode_sequence_sub_variable : UInt
+
+pub let kscamera_extendedprop_photothumbnail_16_x : UInt64
+
+pub let kscamera_extendedprop_photothumbnail_2_x : UInt64
+
+pub let kscamera_extendedprop_photothumbnail_4_x : UInt64
+
+pub let kscamera_extendedprop_photothumbnail_8_x : UInt64
+
+pub let kscamera_extendedprop_photothumbnail_disable : UInt64
+
+pub let kscamera_extendedprop_relativepaneloptimization_dynamic : UInt64
+
+pub let kscamera_extendedprop_relativepaneloptimization_off : UInt64
+
+pub let kscamera_extendedprop_relativepaneloptimization_on : UInt64
+
+pub let kscamera_extendedprop_scenemode_auto : UInt64
+
+pub let kscamera_extendedprop_scenemode_backlit : UInt64
+
+pub let kscamera_extendedprop_scenemode_beach : UInt64
+
+pub let kscamera_extendedprop_scenemode_candlelight : UInt64
+
+pub let kscamera_extendedprop_scenemode_landscape : UInt64
+
+pub let kscamera_extendedprop_scenemode_macro : UInt64
+
+pub let kscamera_extendedprop_scenemode_manual : UInt64
+
+pub let kscamera_extendedprop_scenemode_night : UInt64
+
+pub let kscamera_extendedprop_scenemode_nightportrait : UInt64
+
+pub let kscamera_extendedprop_scenemode_portrait : UInt64
+
+pub let kscamera_extendedprop_scenemode_snow : UInt64
+
+pub let kscamera_extendedprop_scenemode_sport : UInt64
+
+pub let kscamera_extendedprop_scenemode_sunset : UInt64
+
+pub let kscamera_extendedprop_securemode_disabled : UInt64
+
+pub let kscamera_extendedprop_securemode_enabled : UInt64
+
+pub let kscamera_extendedprop_vfr_off : UInt64
+
+pub let kscamera_extendedprop_vfr_on : UInt64
+
+pub let kscamera_extendedprop_videohdr_auto : UInt64
+
+pub let kscamera_extendedprop_videohdr_off : UInt64
+
+pub let kscamera_extendedprop_videohdr_on : UInt64
+
+pub let kscamera_extendedprop_videoprocflag_auto : UInt64
+
+pub let kscamera_extendedprop_videoprocflag_lock : UInt64
+
+pub let kscamera_extendedprop_videoprocflag_manual : UInt64
+
+pub let kscamera_extendedprop_videostabilization_auto : UInt64
+
+pub let kscamera_extendedprop_videostabilization_off : UInt64
+
+pub let kscamera_extendedprop_videostabilization_on : UInt64
+
+pub let kscamera_extendedprop_videotemporaldenoising_auto : UInt64
+
+pub let kscamera_extendedprop_videotemporaldenoising_off : UInt64
+
+pub let kscamera_extendedprop_videotemporaldenoising_on : UInt64
+
+pub let kscamera_extendedprop_videotorch_off : UInt64
+
+pub let kscamera_extendedprop_videotorch_on : UInt64
+
+pub let kscamera_extendedprop_videotorch_on_adjustablepower : UInt64
+
+pub let kscamera_extendedprop_warmstart_mode_disabled : UInt64
+
+pub let kscamera_extendedprop_warmstart_mode_enabled : UInt64
+
+pub let kscamera_extendedprop_zoom_default : UInt64
+
+pub let kscamera_extendedprop_zoom_direct : UInt64
+
+pub let kscamera_extendedprop_zoom_smooth : UInt64
+
+pub let kscamera_metadata_capturestats_flag_exposurecompensation : UInt
+
+pub let kscamera_metadata_capturestats_flag_exposuretime : UInt
+
+pub let kscamera_metadata_capturestats_flag_flash : UInt
+
+pub let kscamera_metadata_capturestats_flag_flashpower : UInt
+
+pub let kscamera_metadata_capturestats_flag_focusstate : UInt
+
+pub let kscamera_metadata_capturestats_flag_isospeed : UInt
+
+pub let kscamera_metadata_capturestats_flag_lensposition : UInt
+
+pub let kscamera_metadata_capturestats_flag_scenemode : UInt
+
+pub let kscamera_metadata_capturestats_flag_sensorframerate : UInt
+
+pub let kscamera_metadata_capturestats_flag_whitebalance : UInt
+
+pub let kscamera_metadata_capturestats_flag_zoomfactor : UInt
+
+pub let kscamera_metadata_frameillumination_flag_on : UInt
+
+pub let kscamera_perframesetting_auto : UInt64
+
+pub let kscamera_perframesetting_manual : UInt64
+
+pub let kscameraprofile_flags_facedetection : UInt64
+
+pub let kscameraprofile_flags_photohdr : UInt64
+
+pub let kscameraprofile_flags_preview_res_mustmatch : UInt64
+
+pub let kscameraprofile_flags_variablephotosequence : UInt64
+
+pub let kscameraprofile_flags_videohdr : UInt64
+
+pub let kscameraprofile_flags_videostablization : UInt64
+
+pub let kscreate_item_freeonstop : UInt
+
+pub let kscreate_item_noparameters : UInt
+
+pub let kscreate_item_securitychanged : UInt
+
+pub let kscreate_item_wildcard : UInt
+
+pub let ksdataformat_bit_attributes : UInt
+
+pub let ksdataformat_bit_temporal_compression : UInt
+
+pub let ksdatarange_bit_attributes : UInt
+
+pub let ksdatarange_bit_required_attributes : UInt
+
+pub let ksdevice_descriptor_version : UInt
+
+pub let ksdevice_descriptor_version_2 : UInt
+
+pub let ksdevice_flag_enable_queryinterface : UInt
+
+pub let ksdevice_flag_enable_remote_wakeup : UInt
+
+pub let ksdevice_flag_lowpower_passthrough : UInt
+
+pub let ksdevice_profile_type_camera : UInt
+
+pub let ksdevice_profile_type_unknown : UInt
+
+pub let ksdispatch_fastio : UInt
+
+pub let ksdsound_3_d_mode_disable : UInt
+
+pub let ksdsound_3_d_mode_headrelative : UInt
+
+pub let ksdsound_3_d_mode_normal : UInt
+
+pub let ksdsound_buffer_ctrl_3_d : UInt
+
+pub let ksdsound_buffer_ctrl_frequency : UInt
+
+pub let ksdsound_buffer_ctrl_hrtf_3_d : UInt
+
+pub let ksdsound_buffer_ctrl_pan : UInt
+
+pub let ksdsound_buffer_ctrl_positionnotify : UInt
+
+pub let ksdsound_buffer_ctrl_volume : UInt
+
+pub let ksdsound_buffer_lochardware : UInt
+
+pub let ksdsound_buffer_locsoftware : UInt
+
+pub let ksdsound_buffer_primary : UInt
+
+pub let ksdsound_buffer_static : UInt
+
+pub let ksevent_entry_buffered : UInt
+
+pub let ksevent_entry_deleted : UInt
+
+pub let ksevent_entry_oneshot : UInt
+
+pub let ksevent_type_basicsupport : UInt
+
+pub let ksevent_type_enable : UInt
+
+pub let ksevent_type_enablebuffered : UInt
+
+pub let ksevent_type_oneshot : UInt
+
+pub let ksevent_type_querybuffer : UInt
+
+pub let ksevent_type_setsupport : UInt
+
+pub let ksevent_type_topology : UInt
+
+pub let kseventf_dpc : UInt
+
+pub let kseventf_event_handle : UInt
+
+pub let kseventf_event_object : UInt
+
+pub let kseventf_ksworkitem : UInt
+
+pub let kseventf_semaphore_handle : UInt
+
+pub let kseventf_semaphore_object : UInt
+
+pub let kseventf_workitem : UInt
+
+pub let ksfilter_flag_critical_processing : UInt
+
+pub let ksfilter_flag_deny_usermode_access : UInt
+
+pub let ksfilter_flag_dispatch_level_processing : UInt
+
+pub let ksfilter_flag_hypercritical_processing : UInt
+
+pub let ksfilter_flag_prioritize_referenceguid : UInt
+
+pub let ksfilter_flag_receive_zero_length_samples : UInt
+
+pub let ksframetime_variablesize : UInt
+
+pub let ksmedium_standard_devio : UInt
+
+pub let ksmedium_type_anyinstance : UInt
+
+pub let ksmethod_type_basicsupport : UInt
+
+pub let ksmethod_type_modify : UInt
+
+pub let ksmethod_type_none : UInt
+
+pub let ksmethod_type_read : UInt
+
+pub let ksmethod_type_send : UInt
+
+pub let ksmethod_type_setsupport : UInt
+
+pub let ksmethod_type_source : UInt
+
+pub let ksmethod_type_topology : UInt
+
+pub let ksmethod_type_write : UInt
+
+pub let ksmethod_wave_queued_breakloop : UInt
+
+pub let ksmpegvidmode_ltrbox : UInt
+
+pub let ksmpegvidmode_panscan : UInt
+
+pub let ksmpegvidmode_scale : UInt
+
+pub let ksnodepin_aec_capture_in : UInt
+
+pub let ksnodepin_aec_capture_out : UInt
+
+pub let ksnodepin_aec_render_in : UInt
+
+pub let ksnodepin_aec_render_out : UInt
+
+pub let ksnodepin_demux_in : UInt
+
+pub let ksnodepin_demux_out : UInt
+
+pub let ksnodepin_standard_in : UInt
+
+pub let ksnodepin_standard_out : UInt
+
+pub let ksnodepin_sum_mux_in : UInt
+
+pub let ksnodepin_sum_mux_out : UInt
+
+pub let kspin_flag_asynchronous_processing : UInt
+
+pub let kspin_flag_critical_processing : UInt
+
+pub let kspin_flag_deny_usermode_access : UInt
+
+pub let kspin_flag_dispatch_level_processing : UInt
+
+pub let kspin_flag_distinct_trailing_edge : UInt
+
+pub let kspin_flag_do_not_initiate_processing : UInt
+
+pub let kspin_flag_do_not_use_standard_transport : UInt
+
+pub let kspin_flag_enforce_fifo : UInt
+
+pub let kspin_flag_fixed_format : UInt
+
+pub let kspin_flag_frames_not_required_for_processing : UInt
+
+pub let kspin_flag_generate_eos_events : UInt
+
+pub let kspin_flag_generate_mappings : UInt
+
+pub let kspin_flag_hypercritical_processing : UInt
+
+pub let kspin_flag_implement_clock : UInt
+
+pub let kspin_flag_initiate_processing_on_every_arrival : UInt
+
+pub let kspin_flag_process_if_any_in_run_state : UInt
+
+pub let kspin_flag_process_in_run_state_only : UInt
+
+pub let kspin_flag_some_frames_required_for_processing : UInt
+
+pub let kspin_flag_splitter : UInt
+
+pub let kspin_flag_use_standard_transport : UInt
+
+pub let kspriority_exclusive : UInt
+
+pub let kspriority_high : UInt
+
+pub let kspriority_low : UInt
+
+pub let kspriority_normal : UInt
+
+pub let ksprobe_allocatemdl : UInt
+
+pub let ksprobe_allowformatchange : UInt
+
+pub let ksprobe_modify : UInt
+
+pub let ksprobe_probeandlock : UInt
+
+pub let ksprobe_streamread : UInt
+
+pub let ksprobe_streamwrite : UInt
+
+pub let ksprobe_systemaddress : UInt
+
+pub let ksproperty_audio_buffer_duration : UInt
+
+pub let ksproperty_cameracontrol_flags_absolute : Int
+
+pub let ksproperty_cameracontrol_flags_asynchronous : Int
+
+pub let ksproperty_cameracontrol_flags_auto : Int
+
+pub let ksproperty_cameracontrol_flags_manual : Int
+
+pub let ksproperty_cameracontrol_flags_relative : Int
+
+pub let ksproperty_cameracontrol_flash_auto : Int
+
+pub let ksproperty_cameracontrol_flash_flags_auto : Int
+
+pub let ksproperty_cameracontrol_flash_flags_manual : Int
+
+pub let ksproperty_cameracontrol_flash_off : Int
+
+pub let ksproperty_cameracontrol_flash_on : Int
+
+pub let ksproperty_cameracontrol_image_pin_capability_exclusive_with_record : Int
+
+pub let ksproperty_cameracontrol_image_pin_capability_sequence_exclusive_with_record : Int
+
+pub let ksproperty_cameracontrol_region_of_interest_config_exposure : Int
+
+pub let ksproperty_cameracontrol_region_of_interest_config_focus : Int
+
+pub let ksproperty_cameracontrol_region_of_interest_config_wb : Int
+
+pub let ksproperty_cameracontrol_region_of_interest_convergemode : Int
+
+pub let ksproperty_cameracontrol_region_of_interest_flags_async : Int
+
+pub let ksproperty_cameracontrol_region_of_interest_flags_auto : Int
+
+pub let ksproperty_cameracontrol_region_of_interest_flags_manual : Int
+
+pub let ksproperty_cameracontrol_videostabilization_mode_auto : Int
+
+pub let ksproperty_cameracontrol_videostabilization_mode_flags_auto : Int
+
+pub let ksproperty_cameracontrol_videostabilization_mode_flags_manual : Int
+
+pub let ksproperty_cameracontrol_videostabilization_mode_high : Int
+
+pub let ksproperty_cameracontrol_videostabilization_mode_low : Int
+
+pub let ksproperty_cameracontrol_videostabilization_mode_medium : Int
+
+pub let ksproperty_cameracontrol_videostabilization_mode_off : Int
+
+pub let ksproperty_member_flag_basicsupport_multichannel : UInt
+
+pub let ksproperty_member_flag_basicsupport_uniform : UInt
+
+pub let ksproperty_member_flag_default : UInt
+
+pub let ksproperty_member_ranges : UInt
+
+pub let ksproperty_member_steppedranges : UInt
+
+pub let ksproperty_member_values : UInt
+
+pub let ksproperty_memory_transport : Int
+
+pub let ksproperty_pin_flags_attribute_range_aware : UInt
+
+pub let ksproperty_pin_flags_mask : UInt
+
+pub let ksproperty_type_basicsupport : UInt
+
+pub let ksproperty_type_copypayload : UInt
+
+pub let ksproperty_type_defaultvalues : UInt
+
+pub let ksproperty_type_fsfilterscope : UInt
+
+pub let ksproperty_type_get : UInt
+
+pub let ksproperty_type_getpayloadsize : UInt
+
+pub let ksproperty_type_highpriority : UInt
+
+pub let ksproperty_type_relations : UInt
+
+pub let ksproperty_type_serializeraw : UInt
+
+pub let ksproperty_type_serializeset : UInt
+
+pub let ksproperty_type_serializesize : UInt
+
+pub let ksproperty_type_set : UInt
+
+pub let ksproperty_type_setsupport : UInt
+
+pub let ksproperty_type_topology : UInt
+
+pub let ksproperty_type_unserializeraw : UInt
+
+pub let ksproperty_type_unserializeset : UInt
+
+pub let ksproperty_videoprocamp_flags_auto : Int
+
+pub let ksproperty_videoprocamp_flags_manual : Int
+
+pub let ksproperty_wave_queued_position : UInt
+
+pub let ksrate_nopresentationduration : UInt
+
+pub let ksrate_nopresentationstart : UInt
+
+pub let ksrelativeevent_flag_handle : UInt
+
+pub let ksrelativeevent_flag_pointer : UInt
+
+pub let ksstream_failureexception : UInt
+
+pub let ksstream_header_optionsf_bufferedtransfer : UInt
+
+pub let ksstream_header_optionsf_datadiscontinuity : UInt
+
+pub let ksstream_header_optionsf_durationvalid : UInt
+
+pub let ksstream_header_optionsf_endofphotosequence : UInt
+
+pub let ksstream_header_optionsf_endofstream : UInt
+
+pub let ksstream_header_optionsf_flushonpause : UInt
+
+pub let ksstream_header_optionsf_frameinfo : UInt
+
+pub let ksstream_header_optionsf_loopeddata : UInt
+
+pub let ksstream_header_optionsf_metadata : UInt
+
+pub let ksstream_header_optionsf_persist_sample : UInt
+
+pub let ksstream_header_optionsf_preroll : UInt
+
+pub let ksstream_header_optionsf_sample_persisted : UInt
+
+pub let ksstream_header_optionsf_securebuffertransfer : UInt
+
+pub let ksstream_header_optionsf_splicepoint : UInt
+
+pub let ksstream_header_optionsf_timediscontinuity : UInt
+
+pub let ksstream_header_optionsf_timevalid : UInt
+
+pub let ksstream_header_optionsf_typechanged : UInt
+
+pub let ksstream_header_optionsf_vram_data_transfer : UInt
+
+pub let ksstream_header_track_completion_numbers : UInt
+
+pub let ksstream_nonpaged_data : UInt
+
+pub let ksstream_paged_data : UInt
+
+pub let ksstream_read : UInt
+
+pub let ksstream_synchronous : UInt
+
+pub let ksstream_uvc_secure_attribute_size : UInt
+
+pub let ksstream_write : UInt
+
+pub let ksstring_allocator : String
+
+pub let ksstring_allocator_ex : String
+
+pub let ksstring_clock : String
+
+pub let ksstring_filter : String
+
+pub let ksstring_pin : String
+
+pub let ksstring_topology_node : String
+
+pub let kswave_buffer_attributef_looping : UInt
+
+pub let kswave_buffer_attributef_static : UInt
+
+pub let kswave_compatcaps_input : UInt
+
+pub let kswave_compatcaps_output : UInt
+
+pub let max_nabts_vbi_lines_per_field : UInt
+
+pub let max_resourcegroupid_length : UInt
+
+pub let max_sink_description_name_length : UInt
+
+pub let max_wst_vbi_lines_per_field : UInt
+
+pub let min_dev_ver_for_flags : UInt
+
+pub let min_dev_ver_for_qi : UInt
+
+pub let nabts_buffer_picturenumber_support : UInt
+
+pub let nabts_bytes_per_line : UInt
+
+pub let nabts_lines_per_bundle : UInt
+
+pub let nabts_payload_per_line : UInt
+
+pub let nanoseconds : UInt
+
+pub let pipe_factor_align : UInt
+
+pub let pipe_factor_buffers : UInt
+
+pub let pipe_factor_fixed_compression : UInt
+
+pub let pipe_factor_flags : UInt
+
+pub let pipe_factor_logical_end : UInt
+
+pub let pipe_factor_memory_types : UInt
+
+pub let pipe_factor_none : UInt
+
+pub let pipe_factor_optimal_ranges : UInt
+
+pub let pipe_factor_physical_end : UInt
+
+pub let pipe_factor_physical_ranges : UInt
+
+pub let pipe_factor_unknown_compression : UInt
+
+pub let pipe_factor_user_mode_downstream : UInt
+
+pub let pipe_factor_user_mode_upstream : UInt
+
+pub let rt_rcdata : UInt
+
+pub let rt_string : UInt
+
+pub let speaker_all : UInt
+
+pub let speaker_back_center : UInt
+
+pub let speaker_back_left : UInt
+
+pub let speaker_back_right : UInt
+
+pub let speaker_front_center : UInt
+
+pub let speaker_front_left : UInt
+
+pub let speaker_front_left_of_center : UInt
+
+pub let speaker_front_right : UInt
+
+pub let speaker_front_right_of_center : UInt
+
+pub let speaker_low_frequency : UInt
+
+pub let speaker_reserved : UInt
+
+pub let speaker_side_left : UInt
+
+pub let speaker_side_right : UInt
+
+pub let speaker_top_back_center : UInt
+
+pub let speaker_top_back_left : UInt
+
+pub let speaker_top_back_right : UInt
+
+pub let speaker_top_center : UInt
+
+pub let speaker_top_front_center : UInt
+
+pub let speaker_top_front_left : UInt
+
+pub let speaker_top_front_right : UInt
+
+pub let sysaudio_flags_clear_preferred : UInt
+
+pub let sysaudio_flags_dont_combine_pins : UInt
+
+pub let wave_format_extensible : UInt
+
+pub let wst_bytes_per_line : UInt
+
+pub let wst_tvtuner_change_begin_tune : Int
+
+pub let wst_tvtuner_change_end_tune : Int
+
+// Errors
+
+// Types and methods
+
+// Type aliases
+pub using @8d35a65211e461f2 {type ALLOCATORPROPERTIESEX_dbfa09e2cd70 as ALLOCATORPROPERTIESEX}
+
+pub using @8d35a65211e461f2 {type APOCLASSUUID_4e355b4a0980 as APOCLASSUUID}
+
+pub using @8d35a65211e461f2 {type AUDIOCURVETYPE_c15b62dc3ad0 as AUDIOCURVETYPE}
+
+pub using @8d35a65211e461f2 {type AUDIOEFFECTTYPEACOUSTICECHOCANCELLATION_dfdd03a787db as AUDIOEFFECTTYPEACOUSTICECHOCANCELLATION}
+
+pub using @8d35a65211e461f2 {type AUDIOEFFECTTYPEAUTOMATICGAINCONTROL_6ef7018ecbcb as AUDIOEFFECTTYPEAUTOMATICGAINCONTROL}
+
+pub using @8d35a65211e461f2 {type AUDIOEFFECTTYPEBASSBOOST_265a32d08223 as AUDIOEFFECTTYPEBASSBOOST}
+
+pub using @8d35a65211e461f2 {type AUDIOEFFECTTYPEBASSMANAGEMENT_e2d9793fb3e1 as AUDIOEFFECTTYPEBASSMANAGEMENT}
+
+pub using @8d35a65211e461f2 {type AUDIOEFFECTTYPEBEAMFORMING_51289a5ffec0 as AUDIOEFFECTTYPEBEAMFORMING}
+
+pub using @8d35a65211e461f2 {type AUDIOEFFECTTYPECONSTANTTONEREMOVAL_a0656810aa74 as AUDIOEFFECTTYPECONSTANTTONEREMOVAL}
+
+pub using @8d35a65211e461f2 {type AUDIOEFFECTTYPEDEEPNOISESUPPRESSION_05ef02fe7697 as AUDIOEFFECTTYPEDEEPNOISESUPPRESSION}
+
+pub using @8d35a65211e461f2 {type AUDIOEFFECTTYPEDYNAMICRANGECOMPRESSION_23b787d64252 as AUDIOEFFECTTYPEDYNAMICRANGECOMPRESSION}
+
+pub using @8d35a65211e461f2 {type AUDIOEFFECTTYPEENVIRONMENTALEFFECTS_fb20ebe45d34 as AUDIOEFFECTTYPEENVIRONMENTALEFFECTS}
+
+pub using @8d35a65211e461f2 {type AUDIOEFFECTTYPEEQUALIZER_1b885f8c7449 as AUDIOEFFECTTYPEEQUALIZER}
+
+pub using @8d35a65211e461f2 {type AUDIOEFFECTTYPEFARFIELDBEAMFORMING_19c4f1df9a86 as AUDIOEFFECTTYPEFARFIELDBEAMFORMING}
+
+pub using @8d35a65211e461f2 {type AUDIOEFFECTTYPELOUDNESSEQUALIZER_f26572aaf9b2 as AUDIOEFFECTTYPELOUDNESSEQUALIZER}
+
+pub using @8d35a65211e461f2 {type AUDIOEFFECTTYPENOISESUPPRESSION_cea1625864c1 as AUDIOEFFECTTYPENOISESUPPRESSION}
+
+pub using @8d35a65211e461f2 {type AUDIOEFFECTTYPEROOMCORRECTION_64f4ad81916a as AUDIOEFFECTTYPEROOMCORRECTION}
+
+pub using @8d35a65211e461f2 {type AUDIOEFFECTTYPESPEAKERCOMPENSATION_616f0c122fb4 as AUDIOEFFECTTYPESPEAKERCOMPENSATION}
+
+pub using @8d35a65211e461f2 {type AUDIOEFFECTTYPESPEAKERFILL_244c649acda8 as AUDIOEFFECTTYPESPEAKERFILL}
+
+pub using @8d35a65211e461f2 {type AUDIOEFFECTTYPESPEAKERPROTECTION_c9f6da7c8807 as AUDIOEFFECTTYPESPEAKERPROTECTION}
+
+pub using @8d35a65211e461f2 {type AUDIOEFFECTTYPEVIRTUALHEADPHONES_5cc060673e30 as AUDIOEFFECTTYPEVIRTUALHEADPHONES}
+
+pub using @8d35a65211e461f2 {type AUDIOEFFECTTYPEVIRTUALSURROUND_dffaddd78f29 as AUDIOEFFECTTYPEVIRTUALSURROUND}
+
+pub using @8d35a65211e461f2 {type AUDIOENDPOINTCLASSUUID_d1b176f38098 as AUDIOENDPOINTCLASSUUID}
+
+pub using @8d35a65211e461f2 {type AUDIOLOOPBACKTAPPOINTTYPE_a0406cc2488d as AUDIOLOOPBACKTAPPOINTTYPE}
+
+pub using @8d35a65211e461f2 {type AUDIOPOSTUREORIENTATION_f3e45fde1e12 as AUDIOPOSTUREORIENTATION}
+
+pub using @8d35a65211e461f2 {type AUDIORESOURCEMANAGEMENTRESOURCEGROUP_bc207a194892 as AUDIORESOURCEMANAGEMENTRESOURCEGROUP}
+
+pub using @8d35a65211e461f2 {type AUDIOSIGNALPROCESSINGMODECOMMUNICATIONS_a1d2245c18e5 as AUDIOSIGNALPROCESSINGMODECOMMUNICATIONS}
+
+pub using @8d35a65211e461f2 {type AUDIOSIGNALPROCESSINGMODEDEFAULT_df6e36fd8601 as AUDIOSIGNALPROCESSINGMODEDEFAULT}
+
+pub using @8d35a65211e461f2 {type AUDIOSIGNALPROCESSINGMODEFARFIELDSPEECH_f3cc2b5b6e47 as AUDIOSIGNALPROCESSINGMODEFARFIELDSPEECH}
+
+pub using @8d35a65211e461f2 {type AUDIOSIGNALPROCESSINGMODEMEDIA_0912e33dc179 as AUDIOSIGNALPROCESSINGMODEMEDIA}
+
+pub using @8d35a65211e461f2 {type AUDIOSIGNALPROCESSINGMODEMOVIE_f4b6f6ef9b2d as AUDIOSIGNALPROCESSINGMODEMOVIE}
+
+pub using @8d35a65211e461f2 {type AUDIOSIGNALPROCESSINGMODENOTIFICATION_2d9f2925e355 as AUDIOSIGNALPROCESSINGMODENOTIFICATION}
+
+pub using @8d35a65211e461f2 {type AUDIOSIGNALPROCESSINGMODERAW_2418cafe2e9a as AUDIOSIGNALPROCESSINGMODERAW}
+
+pub using @8d35a65211e461f2 {type AUDIOSIGNALPROCESSINGMODESPEECH_b39808f1a3b6 as AUDIOSIGNALPROCESSINGMODESPEECH}
+
+pub using @8d35a65211e461f2 {type BLUETOOTHLEMIDISERVICEUUID_243553dd1bbd as BLUETOOTHLEMIDISERVICEUUID}
+
+pub using @8d35a65211e461f2 {type BLUETOOTHMIDIDATAIOCHARACTERISTIC_c8399d5db936 as BLUETOOTHMIDIDATAIOCHARACTERISTIC}
+
+pub using @8d35a65211e461f2 {type CAPTUREMEMORYALLOCATIONFLAGS_2f42b9723667 as CAPTUREMEMORYALLOCATIONFLAGS}
+
+pub using @8d35a65211e461f2 {type CCBYTEPAIR_3641c3b2d78e as CCBYTEPAIR}
+
+pub using @8d35a65211e461f2 {type CCHWFIELD_10d24219a610 as CCHWFIELD}
+
+pub using @8d35a65211e461f2 {type CLSIDKsIBasicAudioInterfaceHandler_b54ff92eb813 as CLSIDKsIBasicAudioInterfaceHandler}
+
+pub using @8d35a65211e461f2 {type CLSIDProxy_11e8e5bf49f2 as CLSIDProxy}
+
+pub using @8d35a65211e461f2 {type CONSTRICTOROPTION_13867a5a7d53 as CONSTRICTOROPTION}
+
+pub using @8d35a65211e461f2 {type DEVCAPS_b238c1bf15a0 as DEVCAPS}
+
+pub using @8d35a65211e461f2 {type DS3DVECTOR_3c1a53828dcd as DS3DVECTOR}
+
+pub using @8d35a65211e461f2 {type DS3DVECTORAnonymous1EUnion_82ba4b5aa4d3 as DS3DVECTORAnonymous1EUnion}
+
+pub using @8d35a65211e461f2 {type DS3DVECTORAnonymous2EUnion_c34f93511624 as DS3DVECTORAnonymous2EUnion}
+
+pub using @8d35a65211e461f2 {type DS3DVECTORAnonymous3EUnion_6ecfa00ab46e as DS3DVECTORAnonymous3EUnion}
+
+pub using @8d35a65211e461f2 {type EDeviceControlUseType_0b6e4e605c2e as EDeviceControlUseType}
+
+pub using @8d35a65211e461f2 {type EPcxConnectionType_7e6dc48203f2 as EPcxConnectionType}
+
+pub using @8d35a65211e461f2 {type EPcxGenLocation_dc5b479ec481 as EPcxGenLocation}
+
+pub using @8d35a65211e461f2 {type EPcxGeoLocation_4bde6c6e462d as EPcxGeoLocation}
+
+pub using @8d35a65211e461f2 {type EPxcPortConnection_e5f05090156c as EPxcPortConnection}
+
+pub using @8d35a65211e461f2 {type EVENTSETIDCROSSBAR_f0daeca67eb3 as EVENTSETIDCROSSBAR}
+
+pub using @8d35a65211e461f2 {type EVENTSETIDTUNER_b0fd646f0d3b as EVENTSETIDTUNER}
+
+pub using @8d35a65211e461f2 {type EVENTSETIDVIDCAPCAMERACONTROLREGIONOFINTEREST_7c905dc66d62 as EVENTSETIDVIDCAPCAMERACONTROLREGIONOFINTEREST}
+
+pub using @8d35a65211e461f2 {type EVENTSETIDVIDEODECODER_dbd336e8a81a as EVENTSETIDVIDEODECODER}
+
+pub using @8d35a65211e461f2 {type FRAMINGCACHEOPS_9b3912e51e3b as FRAMINGCACHEOPS}
+
+pub using @8d35a65211e461f2 {type FRAMINGPROP_d630cf5336ef as FRAMINGPROP}
+
+pub using @8d35a65211e461f2 {type GUIDNULL_cb0144b0ecda as GUIDNULL}
+
+pub using @8d35a65211e461f2 {type IKsAggregateControl_9d175d6dca4a as IKsAggregateControl}
+
+pub using @8d35a65211e461f2 {type IKsAllocator_e6a58ac87d8e as IKsAllocator}
+
+pub using @8d35a65211e461f2 {type IKsAllocatorEx_d0f5124df816 as IKsAllocatorEx}
+
+pub using @8d35a65211e461f2 {type IKsClockPropertySet_6be7b3a4d69f as IKsClockPropertySet}
+
+pub using @8d35a65211e461f2 {type IKsControl_b4f2f0c97f9b as IKsControl}
+
+pub using @8d35a65211e461f2 {type IKsDataTypeCompletion_8458d5855ef8 as IKsDataTypeCompletion}
+
+pub using @8d35a65211e461f2 {type IKsDataTypeHandler_209d6c6c24a1 as IKsDataTypeHandler}
+
+pub using @8d35a65211e461f2 {type IKsFormatSupport_75e328cc1f4b as IKsFormatSupport}
+
+pub using @8d35a65211e461f2 {type IKsInterfaceHandler_cdefac217d62 as IKsInterfaceHandler}
+
+pub using @8d35a65211e461f2 {type IKsJackContainerId_cb49abbe6ca3 as IKsJackContainerId}
+
+pub using @8d35a65211e461f2 {type IKsJackDescription_884dc4a6cef8 as IKsJackDescription}
+
+pub using @8d35a65211e461f2 {type IKsJackDescription2_4a31208f1ca5 as IKsJackDescription2}
+
+pub using @8d35a65211e461f2 {type IKsJackDescription3_c98c53081241 as IKsJackDescription3}
+
+pub using @8d35a65211e461f2 {type IKsJackSinkInformation_064cdc00acd4 as IKsJackSinkInformation}
+
+pub using @8d35a65211e461f2 {type IKsNodeControl_19d0b521ebae as IKsNodeControl}
+
+pub using @8d35a65211e461f2 {type IKsNotifyEvent_0b6e8100191b as IKsNotifyEvent}
+
+pub using @8d35a65211e461f2 {type IKsObject_ef743cea15cd as IKsObject}
+
+pub using @8d35a65211e461f2 {type IKsPin_0b4e0742db75 as IKsPin}
+
+pub using @8d35a65211e461f2 {type IKsPinEx_6524614b788c as IKsPinEx}
+
+pub using @8d35a65211e461f2 {type IKsPinFactory_f1ec669dab2f as IKsPinFactory}
+
+pub using @8d35a65211e461f2 {type IKsPinPipe_ceda476665ee as IKsPinPipe}
+
+pub using @8d35a65211e461f2 {type IKsPropertySet_e19c7eca70f1 as IKsPropertySet}
+
+pub using @8d35a65211e461f2 {type IKsQualityForwarder_113badc84a64 as IKsQualityForwarder}
+
+pub using @8d35a65211e461f2 {type IKsTopology_5d8d0946a82f as IKsTopology}
+
+pub using @8d35a65211e461f2 {type IKsTopologyInfo_1acc1704654e as IKsTopologyInfo}
+
+pub using @8d35a65211e461f2 {type INTERLEAVEDAUDIOFORMATINFORMATION_b2a9ff025882 as INTERLEAVEDAUDIOFORMATINFORMATION}
+
+pub using @8d35a65211e461f2 {type KSAC3ALTERNATEAUDIO_b623933dd9a0 as KSAC3ALTERNATEAUDIO}
+
+pub using @8d35a65211e461f2 {type KSAC3BITSTREAMMODE_aa8f3d5b5d34 as KSAC3BITSTREAMMODE}
+
+pub using @8d35a65211e461f2 {type KSAC3DIALOGUELEVEL_60ab0327ac2d as KSAC3DIALOGUELEVEL}
+
+pub using @8d35a65211e461f2 {type KSAC3DOWNMIX_651bb09b1d01 as KSAC3DOWNMIX}
+
+pub using @8d35a65211e461f2 {type KSAC3ERRORCONCEALMENT_fcfea827824a as KSAC3ERRORCONCEALMENT}
+
+pub using @8d35a65211e461f2 {type KSAC3ROOMTYPE_c61a2da1b479 as KSAC3ROOMTYPE}
+
+pub using @8d35a65211e461f2 {type KSALGORITHMINSTANCESYSTEMACOUSTICECHOCANCEL_cf59ce537fe3 as KSALGORITHMINSTANCESYSTEMACOUSTICECHOCANCEL}
+
+pub using @8d35a65211e461f2 {type KSALGORITHMINSTANCESYSTEMAGC_2e410d73cde0 as KSALGORITHMINSTANCESYSTEMAGC}
+
+pub using @8d35a65211e461f2 {type KSALGORITHMINSTANCESYSTEMMICROPHONEARRAYPROCESSOR_5b2c04497681 as KSALGORITHMINSTANCESYSTEMMICROPHONEARRAYPROCESSOR}
+
+pub using @8d35a65211e461f2 {type KSALGORITHMINSTANCESYSTEMNOISESUPPRESS_6489d632ba4d as KSALGORITHMINSTANCESYSTEMNOISESUPPRESS}
+
+pub using @8d35a65211e461f2 {type KSALLOCATORFRAMING_1c108ef0bdaf as KSALLOCATORFRAMING}
+
+pub using @8d35a65211e461f2 {type KSALLOCATORFRAMINGAnonymous1EUnion_754a97e3ba64 as KSALLOCATORFRAMINGAnonymous1EUnion}
+
+pub using @8d35a65211e461f2 {type KSALLOCATORFRAMINGAnonymous2EUnion_16cd2cb55ce4 as KSALLOCATORFRAMINGAnonymous2EUnion}
+
+pub using @8d35a65211e461f2 {type KSALLOCATORFRAMINGEX_2f744e0069dd as KSALLOCATORFRAMINGEX}
+
+pub using @8d35a65211e461f2 {type KSALLOCATORMODE_e6d50a4b2ef2 as KSALLOCATORMODE}
+
+pub using @8d35a65211e461f2 {type KSAMExactRateChange_fe2d6f22fc61 as KSAMExactRateChange}
+
+pub using @8d35a65211e461f2 {type KSAMPROPERTYTSRATECHANGE_e97f5aa82b60 as KSAMPROPERTYTSRATECHANGE}
+
+pub using @8d35a65211e461f2 {type KSAMPixAspectRatio_7ab90e59abce as KSAMPixAspectRatio}
+
+pub using @8d35a65211e461f2 {type KSAMSimpleRateChange_a0203022b9bc as KSAMSimpleRateChange}
+
+pub using @8d35a65211e461f2 {type KSAMVPDATAINFO_17c399c07d4d as KSAMVPDATAINFO}
+
+pub using @8d35a65211e461f2 {type KSAMVPDIMINFO_738b2b0250fa as KSAMVPDIMINFO}
+
+pub using @8d35a65211e461f2 {type KSAMVPMODE_1c8f46d41920 as KSAMVPMODE}
+
+pub using @8d35a65211e461f2 {type KSAMVPSELECTFORMATBY_21a3a331ab1a as KSAMVPSELECTFORMATBY}
+
+pub using @8d35a65211e461f2 {type KSAMVPSIZE_26f8b31858a8 as KSAMVPSIZE}
+
+pub using @8d35a65211e461f2 {type KSANALOGVIDEOINFO_9080621d51ea as KSANALOGVIDEOINFO}
+
+pub using @8d35a65211e461f2 {type KSATTRIBUTE_7f77914dc05e as KSATTRIBUTE}
+
+pub using @8d35a65211e461f2 {type KSATTRIBUTEAUDIOLOOPBACKTAPPOINT_778359432def as KSATTRIBUTEAUDIOLOOPBACKTAPPOINT}
+
+pub using @8d35a65211e461f2 {type KSATTRIBUTEAUDIOSIGNALPROCESSINGMODE_7ac4a37b6e39 as KSATTRIBUTEAUDIOSIGNALPROCESSINGMODE}
+
+pub using @8d35a65211e461f2 {type KSATTRIBUTEIDAUDIOLOOPBACKTAPPOINT_e827b34344fb as KSATTRIBUTEIDAUDIOLOOPBACKTAPPOINT}
+
+pub using @8d35a65211e461f2 {type KSATTRIBUTEIDAUDIOSIGNALPROCESSINGMODE_4fab67075756 as KSATTRIBUTEIDAUDIOSIGNALPROCESSINGMODE}
+
+pub using @8d35a65211e461f2 {type KSATTRIBUTEIDVIDEOFORMATDX12_6fe22ed7ab35 as KSATTRIBUTEIDVIDEOFORMATDX12}
+
+pub using @8d35a65211e461f2 {type KSAUDFNAME3DCENTER_f1ce9d13aa38 as KSAUDFNAME3DCENTER}
+
+pub using @8d35a65211e461f2 {type KSAUDFNAME3DDEPTH_648662cd01ae as KSAUDFNAME3DDEPTH}
+
+pub using @8d35a65211e461f2 {type KSAUDFNAME3DSTEREO_dd759d37d8e9 as KSAUDFNAME3DSTEREO}
+
+pub using @8d35a65211e461f2 {type KSAUDFNAMEALTERNATEMICROPHONE_dc0456c479fb as KSAUDFNAMEALTERNATEMICROPHONE}
+
+pub using @8d35a65211e461f2 {type KSAUDFNAMEAUX_423e3a69ae08 as KSAUDFNAMEAUX}
+
+pub using @8d35a65211e461f2 {type KSAUDFNAMEAUXMUTE_7bea8528e35b as KSAUDFNAMEAUXMUTE}
+
+pub using @8d35a65211e461f2 {type KSAUDFNAMEAUXVOLUME_c529c27c4dbc as KSAUDFNAMEAUXVOLUME}
+
+pub using @8d35a65211e461f2 {type KSAUDFNAMEBASS_577e4219efaa as KSAUDFNAMEBASS}
+
+pub using @8d35a65211e461f2 {type KSAUDFNAMECDAUDIO_32c1bc83361d as KSAUDFNAMECDAUDIO}
+
+pub using @8d35a65211e461f2 {type KSAUDFNAMECDINVOLUME_b8285866079f as KSAUDFNAMECDINVOLUME}
+
+pub using @8d35a65211e461f2 {type KSAUDFNAMECDMUTE_e92dbe0e1771 as KSAUDFNAMECDMUTE}
+
+pub using @8d35a65211e461f2 {type KSAUDFNAMECDVOLUME_271fe5fbea86 as KSAUDFNAMECDVOLUME}
+
+pub using @8d35a65211e461f2 {type KSAUDFNAMELINEIN_d0b8c1dbe6ff as KSAUDFNAMELINEIN}
+
+pub using @8d35a65211e461f2 {type KSAUDFNAMELINEINVOLUME_73bb5e8d901c as KSAUDFNAMELINEINVOLUME}
+
+pub using @8d35a65211e461f2 {type KSAUDFNAMELINEMUTE_a4f8062c2642 as KSAUDFNAMELINEMUTE}
+
+pub using @8d35a65211e461f2 {type KSAUDFNAMELINEVOLUME_1e41827ede03 as KSAUDFNAMELINEVOLUME}
+
+pub using @8d35a65211e461f2 {type KSAUDFNAMEMASTERMUTE_2ac0f16ebcb2 as KSAUDFNAMEMASTERMUTE}
+
+pub using @8d35a65211e461f2 {type KSAUDFNAMEMASTERVOLUME_aff886243f2e as KSAUDFNAMEMASTERVOLUME}
+
+pub using @8d35a65211e461f2 {type KSAUDFNAMEMICINVOLUME_5fccf257dc6e as KSAUDFNAMEMICINVOLUME}
+
+pub using @8d35a65211e461f2 {type KSAUDFNAMEMICMUTE_617b467c9def as KSAUDFNAMEMICMUTE}
+
+pub using @8d35a65211e461f2 {type KSAUDFNAMEMICROPHONEBOOST_7ef598baf379 as KSAUDFNAMEMICROPHONEBOOST}
+
+pub using @8d35a65211e461f2 {type KSAUDFNAMEMICVOLUME_e8412eaa2ce8 as KSAUDFNAMEMICVOLUME}
+
+pub using @8d35a65211e461f2 {type KSAUDFNAMEMIDI_f864d1c6afbd as KSAUDFNAMEMIDI}
+
+pub using @8d35a65211e461f2 {type KSAUDFNAMEMIDIINVOLUME_ea4d7391d566 as KSAUDFNAMEMIDIINVOLUME}
+
+pub using @8d35a65211e461f2 {type KSAUDFNAMEMIDIMUTE_48d7905b7689 as KSAUDFNAMEMIDIMUTE}
+
+pub using @8d35a65211e461f2 {type KSAUDFNAMEMIDIVOLUME_c6bd12f2aeef as KSAUDFNAMEMIDIVOLUME}
+
+pub using @8d35a65211e461f2 {type KSAUDFNAMEMIDRANGE_cc9010e26b1b as KSAUDFNAMEMIDRANGE}
+
+pub using @8d35a65211e461f2 {type KSAUDFNAMEMONOMIX_b57001babc02 as KSAUDFNAMEMONOMIX}
+
+pub using @8d35a65211e461f2 {type KSAUDFNAMEMONOMIXMUTE_50fb6bc1d11c as KSAUDFNAMEMONOMIXMUTE}
+
+pub using @8d35a65211e461f2 {type KSAUDFNAMEMONOMIXVOLUME_bcb613b3fce5 as KSAUDFNAMEMONOMIXVOLUME}
+
+pub using @8d35a65211e461f2 {type KSAUDFNAMEMONOOUT_2084d6d756a1 as KSAUDFNAMEMONOOUT}
+
+pub using @8d35a65211e461f2 {type KSAUDFNAMEMONOOUTMUTE_e859b1eea133 as KSAUDFNAMEMONOOUTMUTE}
+
+pub using @8d35a65211e461f2 {type KSAUDFNAMEMONOOUTVOLUME_fd593f430f92 as KSAUDFNAMEMONOOUTVOLUME}
+
+pub using @8d35a65211e461f2 {type KSAUDFNAMEPCSPEAKER_3c4b484b7e3b as KSAUDFNAMEPCSPEAKER}
+
+pub using @8d35a65211e461f2 {type KSAUDFNAMEPCSPEAKERMUTE_6f17b3973112 as KSAUDFNAMEPCSPEAKERMUTE}
+
+pub using @8d35a65211e461f2 {type KSAUDFNAMEPCSPEAKERVOLUME_e5e34c7a6040 as KSAUDFNAMEPCSPEAKERVOLUME}
+
+pub using @8d35a65211e461f2 {type KSAUDFNAMEPEAKMETER_d0092a59cc31 as KSAUDFNAMEPEAKMETER}
+
+pub using @8d35a65211e461f2 {type KSAUDFNAMERECORDINGCONTROL_f38c7eb08a4b as KSAUDFNAMERECORDINGCONTROL}
+
+pub using @8d35a65211e461f2 {type KSAUDFNAMERECORDINGSOURCE_71524a74ff1f as KSAUDFNAMERECORDINGSOURCE}
+
+pub using @8d35a65211e461f2 {type KSAUDFNAMESTEREOMIX_94175b79d277 as KSAUDFNAMESTEREOMIX}
+
+pub using @8d35a65211e461f2 {type KSAUDFNAMESTEREOMIXMUTE_b5051f150463 as KSAUDFNAMESTEREOMIXMUTE}
+
+pub using @8d35a65211e461f2 {type KSAUDFNAMESTEREOMIXVOLUME_17d588470693 as KSAUDFNAMESTEREOMIXVOLUME}
+
+pub using @8d35a65211e461f2 {type KSAUDFNAMETREBLE_780f4b2088c0 as KSAUDFNAMETREBLE}
+
+pub using @8d35a65211e461f2 {type KSAUDFNAMEVIDEO_6546edfd2261 as KSAUDFNAMEVIDEO}
+
+pub using @8d35a65211e461f2 {type KSAUDFNAMEVIDEOMUTE_7c2c276dc0e4 as KSAUDFNAMEVIDEOMUTE}
+
+pub using @8d35a65211e461f2 {type KSAUDFNAMEVIDEOVOLUME_2bc123735010 as KSAUDFNAMEVIDEOVOLUME}
+
+pub using @8d35a65211e461f2 {type KSAUDFNAMEVOLUMECONTROL_c1e85271f0ea as KSAUDFNAMEVOLUMECONTROL}
+
+pub using @8d35a65211e461f2 {type KSAUDFNAMEWAVEINVOLUME_3ce8c8e66ae4 as KSAUDFNAMEWAVEINVOLUME}
+
+pub using @8d35a65211e461f2 {type KSAUDFNAMEWAVEMUTE_b66174537d0d as KSAUDFNAMEWAVEMUTE}
+
+pub using @8d35a65211e461f2 {type KSAUDFNAMEWAVEOUTMIX_8837137f0bb2 as KSAUDFNAMEWAVEOUTMIX}
+
+pub using @8d35a65211e461f2 {type KSAUDFNAMEWAVEVOLUME_d8b63c901dfb as KSAUDFNAMEWAVEVOLUME}
+
+pub using @8d35a65211e461f2 {type KSAUDIOCHANNELCONFIG_cb5bdc02aa1e as KSAUDIOCHANNELCONFIG}
+
+pub using @8d35a65211e461f2 {type KSAUDIOCOPYPROTECTION_06e1c96ceb05 as KSAUDIOCOPYPROTECTION}
+
+pub using @8d35a65211e461f2 {type KSAUDIODYNAMICRANGE_46479ea53ce6 as KSAUDIODYNAMICRANGE}
+
+pub using @8d35a65211e461f2 {type KSAUDIOENGINEBUFFERSIZERANGE_b9630cf51544 as KSAUDIOENGINEBUFFERSIZERANGE}
+
+pub using @8d35a65211e461f2 {type KSAUDIOENGINEDESCRIPTOR_763fba03ef7c as KSAUDIOENGINEDESCRIPTOR}
+
+pub using @8d35a65211e461f2 {type KSAUDIOENGINEDEVICECONTROLS_81e50704f70d as KSAUDIOENGINEDEVICECONTROLS}
+
+pub using @8d35a65211e461f2 {type KSAUDIOENGINEVOLUMELEVEL_61a833558ac6 as KSAUDIOENGINEVOLUMELEVEL}
+
+pub using @8d35a65211e461f2 {type KSAUDIOMICARRAYGEOMETRY_a08129334832 as KSAUDIOMICARRAYGEOMETRY}
+
+pub using @8d35a65211e461f2 {type KSAUDIOMICROPHONECOORDINATES_710b10d51db7 as KSAUDIOMICROPHONECOORDINATES}
+
+pub using @8d35a65211e461f2 {type KSAUDIOMIXCAPS_ec49d2f734ea as KSAUDIOMIXCAPS}
+
+pub using @8d35a65211e461f2 {type KSAUDIOMIXCAPSAnonymousEUnion_4ea3ffe0294b as KSAUDIOMIXCAPSAnonymousEUnion}
+
+pub using @8d35a65211e461f2 {type KSAUDIOMIXCAPTABLE_6886896abf77 as KSAUDIOMIXCAPTABLE}
+
+pub using @8d35a65211e461f2 {type KSAUDIOMIXLEVEL_55bfb9d8f2b3 as KSAUDIOMIXLEVEL}
+
+pub using @8d35a65211e461f2 {type KSAUDIOMODULEDESCRIPTOR_8309872dbece as KSAUDIOMODULEDESCRIPTOR}
+
+pub using @8d35a65211e461f2 {type KSAUDIOMODULENOTIFICATION_5c798be930e7 as KSAUDIOMODULENOTIFICATION}
+
+pub using @8d35a65211e461f2 {type KSAUDIOMODULENOTIFICATIONAnonymousEUnion_904c907f9461 as KSAUDIOMODULENOTIFICATIONAnonymousEUnion}
+
+pub using @8d35a65211e461f2 {type KSAUDIOMODULENOTIFICATIONAnonymousEUnionProviderIdEStruct_cae1e1d9de62 as KSAUDIOMODULENOTIFICATIONAnonymousEUnionProviderIdEStruct}
+
+pub using @8d35a65211e461f2 {type KSAUDIOMODULEPROPERTY_2d726450179c as KSAUDIOMODULEPROPERTY}
+
+pub using @8d35a65211e461f2 {type KSAUDIOPACKETSIZECONSTRAINTS_aa72b857b28f as KSAUDIOPACKETSIZECONSTRAINTS}
+
+pub using @8d35a65211e461f2 {type KSAUDIOPACKETSIZECONSTRAINTS2_ac6bc40dbaa5 as KSAUDIOPACKETSIZECONSTRAINTS2}
+
+pub using @8d35a65211e461f2 {type KSAUDIOPACKETSIZEPROCESSINGMODECONSTRAINT_529ccb09aab0 as KSAUDIOPACKETSIZEPROCESSINGMODECONSTRAINT}
+
+pub using @8d35a65211e461f2 {type KSAUDIOPOSITION_f6f6ccaf4ed8 as KSAUDIOPOSITION}
+
+pub using @8d35a65211e461f2 {type KSAUDIOPOSITIONEX_a794e282c747 as KSAUDIOPOSITIONEX}
+
+pub using @8d35a65211e461f2 {type KSAUDIOPRESENTATIONPOSITION_21f18d7b4851 as KSAUDIOPRESENTATIONPOSITION}
+
+pub using @8d35a65211e461f2 {type KSAnalogVideoStandard_91da9004c7e6 as KSAnalogVideoStandard}
+
+pub using @8d35a65211e461f2 {type KSBITMAPINFOHEADER_8ed774ddbea0 as KSBITMAPINFOHEADER}
+
+pub using @8d35a65211e461f2 {type KSCAMERAEXTENDEDPROPBACKGROUNDSEGMENTATIONCONFIGCAPS_e968632024d6 as KSCAMERAEXTENDEDPROPBACKGROUNDSEGMENTATIONCONFIGCAPS}
+
+pub using @8d35a65211e461f2 {type KSCAMERAEXTENDEDPROPBACKGROUNDSEGMENTATIONCONFIGCAPSMaxFrameRateEStruct_77cbc6856ee5 as KSCAMERAEXTENDEDPROPBACKGROUNDSEGMENTATIONCONFIGCAPSMaxFrameRateEStruct}
+
+pub using @8d35a65211e461f2 {type KSCAMERAEXTENDEDPROPCAMERAOFFSET_5a95eee75e52 as KSCAMERAEXTENDEDPROPCAMERAOFFSET}
+
+pub using @8d35a65211e461f2 {type KSCAMERAEXTENDEDPROPDIGITALWINDOWCONFIGCAPS_f90fff50687c as KSCAMERAEXTENDEDPROPDIGITALWINDOWCONFIGCAPS}
+
+pub using @8d35a65211e461f2 {type KSCAMERAEXTENDEDPROPDIGITALWINDOWCONFIGCAPSHEADER_c7f9e47b7c0c as KSCAMERAEXTENDEDPROPDIGITALWINDOWCONFIGCAPSHEADER}
+
+pub using @8d35a65211e461f2 {type KSCAMERAEXTENDEDPROPDIGITALWINDOWSETTING_416cd56d215a as KSCAMERAEXTENDEDPROPDIGITALWINDOWSETTING}
+
+pub using @8d35a65211e461f2 {type KSCAMERAEXTENDEDPROPEVCOMPENSATION_da5a0b973643 as KSCAMERAEXTENDEDPROPEVCOMPENSATION}
+
+pub using @8d35a65211e461f2 {type KSCAMERAEXTENDEDPROPFIELDOFVIEW_76d71913f322 as KSCAMERAEXTENDEDPROPFIELDOFVIEW}
+
+pub using @8d35a65211e461f2 {type KSCAMERAEXTENDEDPROPFIELDOFVIEW2CONFIGCAPS_e585ded809cb as KSCAMERAEXTENDEDPROPFIELDOFVIEW2CONFIGCAPS}
+
+pub using @8d35a65211e461f2 {type KSCAMERAEXTENDEDPROPFOCUSSTATE_fab7bad0b8e2 as KSCAMERAEXTENDEDPROPFOCUSSTATE}
+
+pub using @8d35a65211e461f2 {type KSCAMERAEXTENDEDPROPHEADER_5cf94d772704 as KSCAMERAEXTENDEDPROPHEADER}
+
+pub using @8d35a65211e461f2 {type KSCAMERAEXTENDEDPROPMETADATAINFO_6f2f8e9af35e as KSCAMERAEXTENDEDPROPMETADATAINFO}
+
+pub using @8d35a65211e461f2 {type KSCAMERAEXTENDEDPROPMetadataAlignment_001a33c66ca0 as KSCAMERAEXTENDEDPROPMetadataAlignment}
+
+pub using @8d35a65211e461f2 {type KSCAMERAEXTENDEDPROPPHOTOMODE_aee1d80f99bd as KSCAMERAEXTENDEDPROPPHOTOMODE}
+
+pub using @8d35a65211e461f2 {type KSCAMERAEXTENDEDPROPPROFILE_962fe4c80e04 as KSCAMERAEXTENDEDPROPPROFILE}
+
+pub using @8d35a65211e461f2 {type KSCAMERAEXTENDEDPROPROICONFIGCAPS_9576b82b4d47 as KSCAMERAEXTENDEDPROPROICONFIGCAPS}
+
+pub using @8d35a65211e461f2 {type KSCAMERAEXTENDEDPROPROICONFIGCAPSHEADER_3856d537b68a as KSCAMERAEXTENDEDPROPROICONFIGCAPSHEADER}
+
+pub using @8d35a65211e461f2 {type KSCAMERAEXTENDEDPROPROIEXPOSURE_727104fa7ed2 as KSCAMERAEXTENDEDPROPROIEXPOSURE}
+
+pub using @8d35a65211e461f2 {type KSCAMERAEXTENDEDPROPROIFOCUS_7ee287b4b5ca as KSCAMERAEXTENDEDPROPROIFOCUS}
+
+pub using @8d35a65211e461f2 {type KSCAMERAEXTENDEDPROPROIINFO_7056fd25e0af as KSCAMERAEXTENDEDPROPROIINFO}
+
+pub using @8d35a65211e461f2 {type KSCAMERAEXTENDEDPROPROIISPCONTROL_1e643c1fa8bd as KSCAMERAEXTENDEDPROPROIISPCONTROL}
+
+pub using @8d35a65211e461f2 {type KSCAMERAEXTENDEDPROPROIISPCONTROLHEADER_bb43f08f4722 as KSCAMERAEXTENDEDPROPROIISPCONTROLHEADER}
+
+pub using @8d35a65211e461f2 {type KSCAMERAEXTENDEDPROPROITYPE_2bcf7eb643f6 as KSCAMERAEXTENDEDPROPROITYPE}
+
+pub using @8d35a65211e461f2 {type KSCAMERAEXTENDEDPROPROIWHITEBALANCE_ea32c8fe29d8 as KSCAMERAEXTENDEDPROPROIWHITEBALANCE}
+
+pub using @8d35a65211e461f2 {type KSCAMERAEXTENDEDPROPVALUE_ab1ca3d272e2 as KSCAMERAEXTENDEDPROPVALUE}
+
+pub using @8d35a65211e461f2 {type KSCAMERAEXTENDEDPROPVALUEValueEUnion_02a69ae0ba12 as KSCAMERAEXTENDEDPROPVALUEValueEUnion}
+
+pub using @8d35a65211e461f2 {type KSCAMERAEXTENDEDPROPVIDEOPROCSETTING_edcf2a84e514 as KSCAMERAEXTENDEDPROPVIDEOPROCSETTING}
+
+pub using @8d35a65211e461f2 {type KSCAMERAEXTENDEDPROPWBPRESET_6e1f3e7576ae as KSCAMERAEXTENDEDPROPWBPRESET}
+
+pub using @8d35a65211e461f2 {type KSCAMERAEXTENDEDPROPWHITEBALANCEMODE_40f62ecacb30 as KSCAMERAEXTENDEDPROPWHITEBALANCEMODE}
+
+pub using @8d35a65211e461f2 {type KSCAMERAMAXVIDEOFPSFORPHOTORES_6b2cd24a1524 as KSCAMERAMAXVIDEOFPSFORPHOTORES}
+
+pub using @8d35a65211e461f2 {type KSCAMERAMETADATABACKGROUNDSEGMENTATIONMASK_fb027d43edeb as KSCAMERAMETADATABACKGROUNDSEGMENTATIONMASK}
+
+pub using @8d35a65211e461f2 {type KSCAMERAMETADATACAPTURESTATS_71df7f26e11a as KSCAMERAMETADATACAPTURESTATS}
+
+pub using @8d35a65211e461f2 {type KSCAMERAMETADATADIGITALWINDOW_0db3b21f6250 as KSCAMERAMETADATADIGITALWINDOW}
+
+pub using @8d35a65211e461f2 {type KSCAMERAMETADATAFRAMEILLUMINATION_9cd27870b642 as KSCAMERAMETADATAFRAMEILLUMINATION}
+
+pub using @8d35a65211e461f2 {type KSCAMERAMETADATAITEMHEADER_98b4ab8fdf06 as KSCAMERAMETADATAITEMHEADER}
+
+pub using @8d35a65211e461f2 {type KSCAMERAMETADATAPHOTOCONFIRMATION_b8836ba099cb as KSCAMERAMETADATAPHOTOCONFIRMATION}
+
+pub using @8d35a65211e461f2 {type KSCAMERAMetadataId_a26d90d6f49d as KSCAMERAMetadataId}
+
+pub using @8d35a65211e461f2 {type KSCAMERAPERFRAMESETTINGCAPHEADER_478160871af9 as KSCAMERAPERFRAMESETTINGCAPHEADER}
+
+pub using @8d35a65211e461f2 {type KSCAMERAPERFRAMESETTINGCAPITEMHEADER_dada5e7fe461 as KSCAMERAPERFRAMESETTINGCAPITEMHEADER}
+
+pub using @8d35a65211e461f2 {type KSCAMERAPERFRAMESETTINGCUSTOMITEM_7a5789bc6567 as KSCAMERAPERFRAMESETTINGCUSTOMITEM}
+
+pub using @8d35a65211e461f2 {type KSCAMERAPERFRAMESETTINGFRAMEHEADER_84e4da4d5980 as KSCAMERAPERFRAMESETTINGFRAMEHEADER}
+
+pub using @8d35a65211e461f2 {type KSCAMERAPERFRAMESETTINGHEADER_1db4bfaa24dd as KSCAMERAPERFRAMESETTINGHEADER}
+
+pub using @8d35a65211e461f2 {type KSCAMERAPERFRAMESETTINGITEMHEADER_3735a5ddb2b0 as KSCAMERAPERFRAMESETTINGITEMHEADER}
+
+pub using @8d35a65211e461f2 {type KSCAMERAPERFRAMESETTINGITEMTYPE_709513382945 as KSCAMERAPERFRAMESETTINGITEMTYPE}
+
+pub using @8d35a65211e461f2 {type KSCAMERAPROFILEBalancedVideoAndPhoto_968b61ca2459 as KSCAMERAPROFILEBalancedVideoAndPhoto}
+
+pub using @8d35a65211e461f2 {type KSCAMERAPROFILECONCURRENCYINFO_f88f605c9e8b as KSCAMERAPROFILECONCURRENCYINFO}
+
+pub using @8d35a65211e461f2 {type KSCAMERAPROFILECompressedCamera_ceefbd773e52 as KSCAMERAPROFILECompressedCamera}
+
+pub using @8d35a65211e461f2 {type KSCAMERAPROFILEFaceAuthMode_23d8bdd0bfc5 as KSCAMERAPROFILEFaceAuthMode}
+
+pub using @8d35a65211e461f2 {type KSCAMERAPROFILEHDRWithWCGPhoto_3e9960550ff0 as KSCAMERAPROFILEHDRWithWCGPhoto}
+
+pub using @8d35a65211e461f2 {type KSCAMERAPROFILEHDRWithWCGVideo_b164b50b2c64 as KSCAMERAPROFILEHDRWithWCGVideo}
+
+pub using @8d35a65211e461f2 {type KSCAMERAPROFILEHighFrameRate_ae0eaa30b641 as KSCAMERAPROFILEHighFrameRate}
+
+pub using @8d35a65211e461f2 {type KSCAMERAPROFILEHighQualityPhoto_517b4b51bb06 as KSCAMERAPROFILEHighQualityPhoto}
+
+pub using @8d35a65211e461f2 {type KSCAMERAPROFILEINFO_c1e4eebf3eca as KSCAMERAPROFILEINFO}
+
+pub using @8d35a65211e461f2 {type KSCAMERAPROFILELegacy_dff1b62d1cbd as KSCAMERAPROFILELegacy}
+
+pub using @8d35a65211e461f2 {type KSCAMERAPROFILEMEDIAINFO_030bbeb2ffb7 as KSCAMERAPROFILEMEDIAINFO}
+
+pub using @8d35a65211e461f2 {type KSCAMERAPROFILEMEDIAINFOMaxFrameRateEStruct_75e41aeb0b90 as KSCAMERAPROFILEMEDIAINFOMaxFrameRateEStruct}
+
+pub using @8d35a65211e461f2 {type KSCAMERAPROFILEMEDIAINFOResolutionEStruct_41ab73015230 as KSCAMERAPROFILEMEDIAINFOResolutionEStruct}
+
+pub using @8d35a65211e461f2 {type KSCAMERAPROFILEPININFO_206546d92e1f as KSCAMERAPROFILEPININFO}
+
+pub using @8d35a65211e461f2 {type KSCAMERAPROFILEPININFOAnonymousEUnion_2eba72d4835b as KSCAMERAPROFILEPININFOAnonymousEUnion}
+
+pub using @8d35a65211e461f2 {type KSCAMERAPROFILEPININFOAnonymousEUnionAnonymousEStruct_5b63a15ce4b4 as KSCAMERAPROFILEPININFOAnonymousEUnionAnonymousEStruct}
+
+pub using @8d35a65211e461f2 {type KSCAMERAPROFILEPhotoSequence_4076e2252503 as KSCAMERAPROFILEPhotoSequence}
+
+pub using @8d35a65211e461f2 {type KSCAMERAPROFILEVariablePhotoSequence_d19e37385fcb as KSCAMERAPROFILEVariablePhotoSequence}
+
+pub using @8d35a65211e461f2 {type KSCAMERAPROFILEVideoConferencing_6aa6e6db6031 as KSCAMERAPROFILEVideoConferencing}
+
+pub using @8d35a65211e461f2 {type KSCAMERAPROFILEVideoHDR8_70aecb0ff0d2 as KSCAMERAPROFILEVideoHDR8}
+
+pub using @8d35a65211e461f2 {type KSCAMERAPROFILEVideoRecording_e10bc649cb2b as KSCAMERAPROFILEVideoRecording}
+
+pub using @8d35a65211e461f2 {type KSCATEGORYACOUSTICECHOCANCEL_6be48760a59b as KSCATEGORYACOUSTICECHOCANCEL}
+
+pub using @8d35a65211e461f2 {type KSCATEGORYAUDIO_7e586a09e8f4 as KSCATEGORYAUDIO}
+
+pub using @8d35a65211e461f2 {type KSCATEGORYBRIDGE_f46b515e1024 as KSCATEGORYBRIDGE}
+
+pub using @8d35a65211e461f2 {type KSCATEGORYCAPTURE_4bc264c6732e as KSCATEGORYCAPTURE}
+
+pub using @8d35a65211e461f2 {type KSCATEGORYCLOCK_5ea51436ee5c as KSCATEGORYCLOCK}
+
+pub using @8d35a65211e461f2 {type KSCATEGORYCOMMUNICATIONSTRANSFORM_8db5eb7473ea as KSCATEGORYCOMMUNICATIONSTRANSFORM}
+
+pub using @8d35a65211e461f2 {type KSCATEGORYCROSSBAR_6594e9b2de34 as KSCATEGORYCROSSBAR}
+
+pub using @8d35a65211e461f2 {type KSCATEGORYDATACOMPRESSOR_b4d11beaded6 as KSCATEGORYDATACOMPRESSOR}
+
+pub using @8d35a65211e461f2 {type KSCATEGORYDATADECOMPRESSOR_9b6265556dd2 as KSCATEGORYDATADECOMPRESSOR}
+
+pub using @8d35a65211e461f2 {type KSCATEGORYDATATRANSFORM_c183fb19770b as KSCATEGORYDATATRANSFORM}
+
+pub using @8d35a65211e461f2 {type KSCATEGORYENCODER_1427bdafea83 as KSCATEGORYENCODER}
+
+pub using @8d35a65211e461f2 {type KSCATEGORYESCALANTEPLATFORMDRIVER_2e64932da646 as KSCATEGORYESCALANTEPLATFORMDRIVER}
+
+pub using @8d35a65211e461f2 {type KSCATEGORYFILESYSTEM_d7b777cacef4 as KSCATEGORYFILESYSTEM}
+
+pub using @8d35a65211e461f2 {type KSCATEGORYINTERFACETRANSFORM_2f8d2d80511a as KSCATEGORYINTERFACETRANSFORM}
+
+pub using @8d35a65211e461f2 {type KSCATEGORYMEDIUMTRANSFORM_1118a560452f as KSCATEGORYMEDIUMTRANSFORM}
+
+pub using @8d35a65211e461f2 {type KSCATEGORYMICROPHONEARRAYPROCESSOR_c0814030a01c as KSCATEGORYMICROPHONEARRAYPROCESSOR}
+
+pub using @8d35a65211e461f2 {type KSCATEGORYMIXER_9a6f17f6241b as KSCATEGORYMIXER}
+
+pub using @8d35a65211e461f2 {type KSCATEGORYMULTIPLEXER_cef3227b89b4 as KSCATEGORYMULTIPLEXER}
+
+pub using @8d35a65211e461f2 {type KSCATEGORYNETWORK_41c8cfd02c33 as KSCATEGORYNETWORK}
+
+pub using @8d35a65211e461f2 {type KSCATEGORYNETWORKCAMERA_4ac714a64488 as KSCATEGORYNETWORKCAMERA}
+
+pub using @8d35a65211e461f2 {type KSCATEGORYPROXY_f4789075048f as KSCATEGORYPROXY}
+
+pub using @8d35a65211e461f2 {type KSCATEGORYQUALITY_8f2ffd6e3f57 as KSCATEGORYQUALITY}
+
+pub using @8d35a65211e461f2 {type KSCATEGORYREALTIME_bc0f087f13fb as KSCATEGORYREALTIME}
+
+pub using @8d35a65211e461f2 {type KSCATEGORYRENDER_b07919306405 as KSCATEGORYRENDER}
+
+pub using @8d35a65211e461f2 {type KSCATEGORYSENSORCAMERA_2652dd8dcf40 as KSCATEGORYSENSORCAMERA}
+
+pub using @8d35a65211e461f2 {type KSCATEGORYSENSORGROUP_17112f56cac5 as KSCATEGORYSENSORGROUP}
+
+pub using @8d35a65211e461f2 {type KSCATEGORYSPLITTER_38077a384ff4 as KSCATEGORYSPLITTER}
+
+pub using @8d35a65211e461f2 {type KSCATEGORYTEXT_9fc5b224527e as KSCATEGORYTEXT}
+
+pub using @8d35a65211e461f2 {type KSCATEGORYTOPOLOGY_48338522829a as KSCATEGORYTOPOLOGY}
+
+pub using @8d35a65211e461f2 {type KSCATEGORYTVAUDIO_148669303cf0 as KSCATEGORYTVAUDIO}
+
+pub using @8d35a65211e461f2 {type KSCATEGORYTVTUNER_65831448e746 as KSCATEGORYTVTUNER}
+
+pub using @8d35a65211e461f2 {type KSCATEGORYVBICODEC_c9aa3a2d439b as KSCATEGORYVBICODEC}
+
+pub using @8d35a65211e461f2 {type KSCATEGORYVIDEO_9b1e6b55d4c9 as KSCATEGORYVIDEO}
+
+pub using @8d35a65211e461f2 {type KSCATEGORYVIDEOCAMERA_fe2220a601e4 as KSCATEGORYVIDEOCAMERA}
+
+pub using @8d35a65211e461f2 {type KSCATEGORYVIRTUAL_19b5ee9f6e3f as KSCATEGORYVIRTUAL}
+
+pub using @8d35a65211e461f2 {type KSCATEGORYVPMUX_b3f1d6530661 as KSCATEGORYVPMUX}
+
+pub using @8d35a65211e461f2 {type KSCATEGORYWDMAUDUSEPINNAME_944b45d65ace as KSCATEGORYWDMAUDUSEPINNAME}
+
+pub using @8d35a65211e461f2 {type KSCLOCKCREATE_a15cb730b1a3 as KSCLOCKCREATE}
+
+pub using @8d35a65211e461f2 {type KSCOLCON_b47a6f5f210f as KSCOLCON}
+
+pub using @8d35a65211e461f2 {type KSCOMPONENTID_01bea7f4935e as KSCOMPONENTID}
+
+pub using @8d35a65211e461f2 {type KSCOMPONENTIDUSBAUDIO_66835b64f1c7 as KSCOMPONENTIDUSBAUDIO}
+
+pub using @8d35a65211e461f2 {type KSCOMPRESSION_0a8e9b8f871d as KSCOMPRESSION}
+
+pub using @8d35a65211e461f2 {type KSCOPYMACROVISION_d908a0a69053 as KSCOPYMACROVISION}
+
+pub using @8d35a65211e461f2 {type KSCOPYMACROVISIONLEVEL_66185a709626 as KSCOPYMACROVISIONLEVEL}
+
+pub using @8d35a65211e461f2 {type KSCORRELATEDTIME_237bfab817eb as KSCORRELATEDTIME}
+
+pub using @8d35a65211e461f2 {type KSCameraControlAsyncOperation_875e1f31f807 as KSCameraControlAsyncOperation}
+
+pub using @8d35a65211e461f2 {type KSCompressionCaps_9cb6a845b0fa as KSCompressionCaps}
+
+pub using @8d35a65211e461f2 {type KSDATAFORMAT_821b401f7e1e as KSDATAFORMAT}
+
+pub using @8d35a65211e461f2 {type KSDATAFORMATAnonymousEStruct_3742de2765ce as KSDATAFORMATAnonymousEStruct}
+
+pub using @8d35a65211e461f2 {type KSDATAFORMATH264VIDEOINFO_9fb53351237a as KSDATAFORMATH264VIDEOINFO}
+
+pub using @8d35a65211e461f2 {type KSDATAFORMATIMAGEINFO_35dc038d2b0f as KSDATAFORMATIMAGEINFO}
+
+pub using @8d35a65211e461f2 {type KSDATAFORMATMPEGVIDEOINFO2_7e082f367b1d as KSDATAFORMATMPEGVIDEOINFO2}
+
+pub using @8d35a65211e461f2 {type KSDATAFORMATSPECIFIERAC3AUDIO_958dae12e714 as KSDATAFORMATSPECIFIERAC3AUDIO}
+
+pub using @8d35a65211e461f2 {type KSDATAFORMATSPECIFIERANALOGVIDEO_49adb6ef6e27 as KSDATAFORMATSPECIFIERANALOGVIDEO}
+
+pub using @8d35a65211e461f2 {type KSDATAFORMATSPECIFIERDIALECTAC3AUDIO_7d5508fe3ca3 as KSDATAFORMATSPECIFIERDIALECTAC3AUDIO}
+
+pub using @8d35a65211e461f2 {type KSDATAFORMATSPECIFIERDIALECTMPEG1AUDIO_a340eefeffb8 as KSDATAFORMATSPECIFIERDIALECTMPEG1AUDIO}
+
+pub using @8d35a65211e461f2 {type KSDATAFORMATSPECIFIERDIALECTMPEG1VIDEO_b09627d0cc3b as KSDATAFORMATSPECIFIERDIALECTMPEG1VIDEO}
+
+pub using @8d35a65211e461f2 {type KSDATAFORMATSPECIFIERDIALECTMPEG2AUDIO_c2b7afabe481 as KSDATAFORMATSPECIFIERDIALECTMPEG2AUDIO}
+
+pub using @8d35a65211e461f2 {type KSDATAFORMATSPECIFIERDIALECTMPEG2VIDEO_5814dfa534b4 as KSDATAFORMATSPECIFIERDIALECTMPEG2VIDEO}
+
+pub using @8d35a65211e461f2 {type KSDATAFORMATSPECIFIERDSOUND_aa1815f8b8dc as KSDATAFORMATSPECIFIERDSOUND}
+
+pub using @8d35a65211e461f2 {type KSDATAFORMATSPECIFIERFILEHANDLE_f13298d66869 as KSDATAFORMATSPECIFIERFILEHANDLE}
+
+pub using @8d35a65211e461f2 {type KSDATAFORMATSPECIFIERFILENAME_f39752b03172 as KSDATAFORMATSPECIFIERFILENAME}
+
+pub using @8d35a65211e461f2 {type KSDATAFORMATSPECIFIERH264VIDEO_40bf738b64fd as KSDATAFORMATSPECIFIERH264VIDEO}
+
+pub using @8d35a65211e461f2 {type KSDATAFORMATSPECIFIERIMAGE_8b1079c6bf3f as KSDATAFORMATSPECIFIERIMAGE}
+
+pub using @8d35a65211e461f2 {type KSDATAFORMATSPECIFIERJPEGIMAGE_22cc4099960d as KSDATAFORMATSPECIFIERJPEGIMAGE}
+
+pub using @8d35a65211e461f2 {type KSDATAFORMATSPECIFIERLPCMAUDIO_4e765c7d186b as KSDATAFORMATSPECIFIERLPCMAUDIO}
+
+pub using @8d35a65211e461f2 {type KSDATAFORMATSPECIFIERMPEG1VIDEO_d93c429f4408 as KSDATAFORMATSPECIFIERMPEG1VIDEO}
+
+pub using @8d35a65211e461f2 {type KSDATAFORMATSPECIFIERMPEG2AUDIO_d438c75eba54 as KSDATAFORMATSPECIFIERMPEG2AUDIO}
+
+pub using @8d35a65211e461f2 {type KSDATAFORMATSPECIFIERMPEG2VIDEO_e05af6f7d8f3 as KSDATAFORMATSPECIFIERMPEG2VIDEO}
+
+pub using @8d35a65211e461f2 {type KSDATAFORMATSPECIFIERNONE_74e731dd0f3b as KSDATAFORMATSPECIFIERNONE}
+
+pub using @8d35a65211e461f2 {type KSDATAFORMATSPECIFIERVBI_360e1e05895f as KSDATAFORMATSPECIFIERVBI}
+
+pub using @8d35a65211e461f2 {type KSDATAFORMATSPECIFIERVCID_d8dca1ebc0d0 as KSDATAFORMATSPECIFIERVCID}
+
+pub using @8d35a65211e461f2 {type KSDATAFORMATSPECIFIERVIDEOINFO_b2b85f645d12 as KSDATAFORMATSPECIFIERVIDEOINFO}
+
+pub using @8d35a65211e461f2 {type KSDATAFORMATSPECIFIERVIDEOINFO2_3497c8188591 as KSDATAFORMATSPECIFIERVIDEOINFO2}
+
+pub using @8d35a65211e461f2 {type KSDATAFORMATSPECIFIERWAVEFORMATEX_e8f7c58641e5 as KSDATAFORMATSPECIFIERWAVEFORMATEX}
+
+pub using @8d35a65211e461f2 {type KSDATAFORMATSUBTYPEAC3AUDIO_97712c26867e as KSDATAFORMATSUBTYPEAC3AUDIO}
+
+pub using @8d35a65211e461f2 {type KSDATAFORMATSUBTYPEANALOG_b72098d0ff18 as KSDATAFORMATSUBTYPEANALOG}
+
+pub using @8d35a65211e461f2 {type KSDATAFORMATSUBTYPECC_41096a1e84d8 as KSDATAFORMATSUBTYPECC}
+
+pub using @8d35a65211e461f2 {type KSDATAFORMATSUBTYPED16_1ceaa1e85458 as KSDATAFORMATSUBTYPED16}
+
+pub using @8d35a65211e461f2 {type KSDATAFORMATSUBTYPEDSSAUDIO_711f6170887f as KSDATAFORMATSUBTYPEDSSAUDIO}
+
+pub using @8d35a65211e461f2 {type KSDATAFORMATSUBTYPEDSSVIDEO_ebdf1f8f97be as KSDATAFORMATSUBTYPEDSSVIDEO}
+
+pub using @8d35a65211e461f2 {type KSDATAFORMATSUBTYPEDTSAUDIO_8db1fce0b5ec as KSDATAFORMATSUBTYPEDTSAUDIO}
+
+pub using @8d35a65211e461f2 {type KSDATAFORMATSUBTYPEIEC61937AAC_d6deac24d8ed as KSDATAFORMATSUBTYPEIEC61937AAC}
+
+pub using @8d35a65211e461f2 {type KSDATAFORMATSUBTYPEIEC61937ATRAC_fd755ab9e24d as KSDATAFORMATSUBTYPEIEC61937ATRAC}
+
+pub using @8d35a65211e461f2 {type KSDATAFORMATSUBTYPEIEC61937DOLBYDIGITAL_189ea41ade4a as KSDATAFORMATSUBTYPEIEC61937DOLBYDIGITAL}
+
+pub using @8d35a65211e461f2 {type KSDATAFORMATSUBTYPEIEC61937DOLBYDIGITALPLUS_5f89effbb5a1 as KSDATAFORMATSUBTYPEIEC61937DOLBYDIGITALPLUS}
+
+pub using @8d35a65211e461f2 {type KSDATAFORMATSUBTYPEIEC61937DOLBYDIGITALPLUSATMOS_72e31e83c1c8 as KSDATAFORMATSUBTYPEIEC61937DOLBYDIGITALPLUSATMOS}
+
+pub using @8d35a65211e461f2 {type KSDATAFORMATSUBTYPEIEC61937DOLBYMAT20_cb15786adf9d as KSDATAFORMATSUBTYPEIEC61937DOLBYMAT20}
+
+pub using @8d35a65211e461f2 {type KSDATAFORMATSUBTYPEIEC61937DOLBYMAT21_1d467ecab0a5 as KSDATAFORMATSUBTYPEIEC61937DOLBYMAT21}
+
+pub using @8d35a65211e461f2 {type KSDATAFORMATSUBTYPEIEC61937DOLBYMAT21PROFILE4_cbbd1b890caa as KSDATAFORMATSUBTYPEIEC61937DOLBYMAT21PROFILE4}
+
+pub using @8d35a65211e461f2 {type KSDATAFORMATSUBTYPEIEC61937DOLBYMLP_96585b458372 as KSDATAFORMATSUBTYPEIEC61937DOLBYMLP}
+
+pub using @8d35a65211e461f2 {type KSDATAFORMATSUBTYPEIEC61937DST_f41b4faea7fc as KSDATAFORMATSUBTYPEIEC61937DST}
+
+pub using @8d35a65211e461f2 {type KSDATAFORMATSUBTYPEIEC61937DTS_d056a24e32d5 as KSDATAFORMATSUBTYPEIEC61937DTS}
+
+pub using @8d35a65211e461f2 {type KSDATAFORMATSUBTYPEIEC61937DTSHD_e3ca18391701 as KSDATAFORMATSUBTYPEIEC61937DTSHD}
+
+pub using @8d35a65211e461f2 {type KSDATAFORMATSUBTYPEIEC61937DTSXE1_d84f523530ef as KSDATAFORMATSUBTYPEIEC61937DTSXE1}
+
+pub using @8d35a65211e461f2 {type KSDATAFORMATSUBTYPEIEC61937DTSXE2_ca3eb01f5971 as KSDATAFORMATSUBTYPEIEC61937DTSXE2}
+
+pub using @8d35a65211e461f2 {type KSDATAFORMATSUBTYPEIEC61937MPEG1_5df1de5b0a5f as KSDATAFORMATSUBTYPEIEC61937MPEG1}
+
+pub using @8d35a65211e461f2 {type KSDATAFORMATSUBTYPEIEC61937MPEG2_b630bab91f2d as KSDATAFORMATSUBTYPEIEC61937MPEG2}
+
+pub using @8d35a65211e461f2 {type KSDATAFORMATSUBTYPEIEC61937MPEG3_c63a67b9ff2c as KSDATAFORMATSUBTYPEIEC61937MPEG3}
+
+pub using @8d35a65211e461f2 {type KSDATAFORMATSUBTYPEIEC61937MPEGHLEVEL1BL_310087ef00df as KSDATAFORMATSUBTYPEIEC61937MPEGHLEVEL1BL}
+
+pub using @8d35a65211e461f2 {type KSDATAFORMATSUBTYPEIEC61937MPEGHLEVEL1LC_503c6df57af8 as KSDATAFORMATSUBTYPEIEC61937MPEGHLEVEL1LC}
+
+pub using @8d35a65211e461f2 {type KSDATAFORMATSUBTYPEIEC61937MPEGHLEVEL2BL_189ae8931909 as KSDATAFORMATSUBTYPEIEC61937MPEGHLEVEL2BL}
+
+pub using @8d35a65211e461f2 {type KSDATAFORMATSUBTYPEIEC61937MPEGHLEVEL2LC_651bc4dc2dbe as KSDATAFORMATSUBTYPEIEC61937MPEGHLEVEL2LC}
+
+pub using @8d35a65211e461f2 {type KSDATAFORMATSUBTYPEIEC61937MPEGHLEVEL3BL_a839f4723e51 as KSDATAFORMATSUBTYPEIEC61937MPEGHLEVEL3BL}
+
+pub using @8d35a65211e461f2 {type KSDATAFORMATSUBTYPEIEC61937MPEGHLEVEL3LC_490952277727 as KSDATAFORMATSUBTYPEIEC61937MPEGHLEVEL3LC}
+
+pub using @8d35a65211e461f2 {type KSDATAFORMATSUBTYPEIEC61937MPEGHLEVEL4BL_6c75af10edfc as KSDATAFORMATSUBTYPEIEC61937MPEGHLEVEL4BL}
+
+pub using @8d35a65211e461f2 {type KSDATAFORMATSUBTYPEIEC61937MPEGHLEVEL4LC_673e1dfd3f07 as KSDATAFORMATSUBTYPEIEC61937MPEGHLEVEL4LC}
+
+pub using @8d35a65211e461f2 {type KSDATAFORMATSUBTYPEIEC61937MPEGHLEVEL5BL_dcb1c5500fd7 as KSDATAFORMATSUBTYPEIEC61937MPEGHLEVEL5BL}
+
+pub using @8d35a65211e461f2 {type KSDATAFORMATSUBTYPEIEC61937MPEGHLEVEL5LC_800d48b5d0fa as KSDATAFORMATSUBTYPEIEC61937MPEGHLEVEL5LC}
+
+pub using @8d35a65211e461f2 {type KSDATAFORMATSUBTYPEIEC61937ONEBITAUDIO_6611d2942ca0 as KSDATAFORMATSUBTYPEIEC61937ONEBITAUDIO}
+
+pub using @8d35a65211e461f2 {type KSDATAFORMATSUBTYPEIEC61937WMAPRO_904f7d6ec11e as KSDATAFORMATSUBTYPEIEC61937WMAPRO}
+
+pub using @8d35a65211e461f2 {type KSDATAFORMATSUBTYPEIMAGERGB32_a576cba1a0be as KSDATAFORMATSUBTYPEIMAGERGB32}
+
+pub using @8d35a65211e461f2 {type KSDATAFORMATSUBTYPEJPEG_9c1893828b86 as KSDATAFORMATSUBTYPEJPEG}
+
+pub using @8d35a65211e461f2 {type KSDATAFORMATSUBTYPEL16_91bc0c51ea4a as KSDATAFORMATSUBTYPEL16}
+
+pub using @8d35a65211e461f2 {type KSDATAFORMATSUBTYPEL16CUSTOM_1f3fad79efdd as KSDATAFORMATSUBTYPEL16CUSTOM}
+
+pub using @8d35a65211e461f2 {type KSDATAFORMATSUBTYPEL16IR_6f5f1d93f15e as KSDATAFORMATSUBTYPEL16IR}
+
+pub using @8d35a65211e461f2 {type KSDATAFORMATSUBTYPEL8_89a60398ed1e as KSDATAFORMATSUBTYPEL8}
+
+pub using @8d35a65211e461f2 {type KSDATAFORMATSUBTYPEL8CUSTOM_307dc6c6bfa8 as KSDATAFORMATSUBTYPEL8CUSTOM}
+
+pub using @8d35a65211e461f2 {type KSDATAFORMATSUBTYPEL8IR_1569ad244ba5 as KSDATAFORMATSUBTYPEL8IR}
+
+pub using @8d35a65211e461f2 {type KSDATAFORMATSUBTYPELPCMAUDIO_4f89b846d1d7 as KSDATAFORMATSUBTYPELPCMAUDIO}
+
+pub using @8d35a65211e461f2 {type KSDATAFORMATSUBTYPELine21BytePair_c47041ee864a as KSDATAFORMATSUBTYPELine21BytePair}
+
+pub using @8d35a65211e461f2 {type KSDATAFORMATSUBTYPELine21GOPPacket_ac8418cb8ae7 as KSDATAFORMATSUBTYPELine21GOPPacket}
+
+pub using @8d35a65211e461f2 {type KSDATAFORMATSUBTYPEMIDI_126758ca8462 as KSDATAFORMATSUBTYPEMIDI}
+
+pub using @8d35a65211e461f2 {type KSDATAFORMATSUBTYPEMIDIBUS_ec0c792310a4 as KSDATAFORMATSUBTYPEMIDIBUS}
+
+pub using @8d35a65211e461f2 {type KSDATAFORMATSUBTYPEMJPGCUSTOM_f561b9ae99d8 as KSDATAFORMATSUBTYPEMJPGCUSTOM}
+
+pub using @8d35a65211e461f2 {type KSDATAFORMATSUBTYPEMJPGDEPTH_810aee0934d5 as KSDATAFORMATSUBTYPEMJPGDEPTH}
+
+pub using @8d35a65211e461f2 {type KSDATAFORMATSUBTYPEMJPGIR_df03fddfe77b as KSDATAFORMATSUBTYPEMJPGIR}
+
+pub using @8d35a65211e461f2 {type KSDATAFORMATSUBTYPEMPEG1Packet_dcd9db127910 as KSDATAFORMATSUBTYPEMPEG1Packet}
+
+pub using @8d35a65211e461f2 {type KSDATAFORMATSUBTYPEMPEG1Payload_6ee5de298308 as KSDATAFORMATSUBTYPEMPEG1Payload}
+
+pub using @8d35a65211e461f2 {type KSDATAFORMATSUBTYPEMPEG1Video_28331e8ac376 as KSDATAFORMATSUBTYPEMPEG1Video}
+
+pub using @8d35a65211e461f2 {type KSDATAFORMATSUBTYPEMPEG2AUDIO_302d1152e28d as KSDATAFORMATSUBTYPEMPEG2AUDIO}
+
+pub using @8d35a65211e461f2 {type KSDATAFORMATSUBTYPEMPEG2VIDEO_5d2a0a6aac6a as KSDATAFORMATSUBTYPEMPEG2VIDEO}
+
+pub using @8d35a65211e461f2 {type KSDATAFORMATSUBTYPEMPEGHEAAC_de84a10dcc45 as KSDATAFORMATSUBTYPEMPEGHEAAC}
+
+pub using @8d35a65211e461f2 {type KSDATAFORMATSUBTYPEMPEGLAYER3_a10b55916e8e as KSDATAFORMATSUBTYPEMPEGLAYER3}
+
+pub using @8d35a65211e461f2 {type KSDATAFORMATSUBTYPENABTS_ad069d370144 as KSDATAFORMATSUBTYPENABTS}
+
+pub using @8d35a65211e461f2 {type KSDATAFORMATSUBTYPENABTSFEC_fc1936e91171 as KSDATAFORMATSUBTYPENABTSFEC}
+
+pub using @8d35a65211e461f2 {type KSDATAFORMATSUBTYPENONE_8ed69bd3f673 as KSDATAFORMATSUBTYPENONE}
+
+pub using @8d35a65211e461f2 {type KSDATAFORMATSUBTYPEOVERLAY_4875278f4e00 as KSDATAFORMATSUBTYPEOVERLAY}
+
+pub using @8d35a65211e461f2 {type KSDATAFORMATSUBTYPEPCM_d68a1fc2246c as KSDATAFORMATSUBTYPEPCM}
+
+pub using @8d35a65211e461f2 {type KSDATAFORMATSUBTYPERAW8_67238c0aca0d as KSDATAFORMATSUBTYPERAW8}
+
+pub using @8d35a65211e461f2 {type KSDATAFORMATSUBTYPERIFF_97a758784037 as KSDATAFORMATSUBTYPERIFF}
+
+pub using @8d35a65211e461f2 {type KSDATAFORMATSUBTYPERIFFMIDI_4dbd28fd434a as KSDATAFORMATSUBTYPERIFFMIDI}
+
+pub using @8d35a65211e461f2 {type KSDATAFORMATSUBTYPERIFFWAVE_b40920c9624d as KSDATAFORMATSUBTYPERIFFWAVE}
+
+pub using @8d35a65211e461f2 {type KSDATAFORMATSUBTYPESDDSAUDIO_c695e34b8d6b as KSDATAFORMATSUBTYPESDDSAUDIO}
+
+pub using @8d35a65211e461f2 {type KSDATAFORMATSUBTYPESTANDARDAC3AUDIO_fff45a779e53 as KSDATAFORMATSUBTYPESTANDARDAC3AUDIO}
+
+pub using @8d35a65211e461f2 {type KSDATAFORMATSUBTYPESTANDARDMPEG1AUDIO_675d1886a7eb as KSDATAFORMATSUBTYPESTANDARDMPEG1AUDIO}
+
+pub using @8d35a65211e461f2 {type KSDATAFORMATSUBTYPESTANDARDMPEG1VIDEO_7501de95f7f8 as KSDATAFORMATSUBTYPESTANDARDMPEG1VIDEO}
+
+pub using @8d35a65211e461f2 {type KSDATAFORMATSUBTYPESTANDARDMPEG2AUDIO_3868c60cafe7 as KSDATAFORMATSUBTYPESTANDARDMPEG2AUDIO}
+
+pub using @8d35a65211e461f2 {type KSDATAFORMATSUBTYPESTANDARDMPEG2VIDEO_cb67da5de493 as KSDATAFORMATSUBTYPESTANDARDMPEG2VIDEO}
+
+pub using @8d35a65211e461f2 {type KSDATAFORMATSUBTYPESUBPICTURE_ed846cb79f6c as KSDATAFORMATSUBTYPESUBPICTURE}
+
+pub using @8d35a65211e461f2 {type KSDATAFORMATSUBTYPETELETEXT_428275eeb35f as KSDATAFORMATSUBTYPETELETEXT}
+
+pub using @8d35a65211e461f2 {type KSDATAFORMATSUBTYPEUNIVERSALMIDIPACKET_6871dcf83708 as KSDATAFORMATSUBTYPEUNIVERSALMIDIPACKET}
+
+pub using @8d35a65211e461f2 {type KSDATAFORMATSUBTYPEVPVBI_2bb962aab83a as KSDATAFORMATSUBTYPEVPVBI}
+
+pub using @8d35a65211e461f2 {type KSDATAFORMATSUBTYPEVPVideo_84d8142a5b77 as KSDATAFORMATSUBTYPEVPVideo}
+
+pub using @8d35a65211e461f2 {type KSDATAFORMATSUBTYPEWAVEFORMATEX_ebe3cfe82103 as KSDATAFORMATSUBTYPEWAVEFORMATEX}
+
+pub using @8d35a65211e461f2 {type KSDATAFORMATSUBTYPEWMAUDIO2_d5d58d0da4e6 as KSDATAFORMATSUBTYPEWMAUDIO2}
+
+pub using @8d35a65211e461f2 {type KSDATAFORMATSUBTYPEWMAUDIO3_d90398edb09e as KSDATAFORMATSUBTYPEWMAUDIO3}
+
+pub using @8d35a65211e461f2 {type KSDATAFORMATSUBTYPEWMAUDIOLOSSLESS_9275455bef50 as KSDATAFORMATSUBTYPEWMAUDIOLOSSLESS}
+
+pub using @8d35a65211e461f2 {type KSDATAFORMATTYPEANALOGAUDIO_72b1c8b2a626 as KSDATAFORMATTYPEANALOGAUDIO}
+
+pub using @8d35a65211e461f2 {type KSDATAFORMATTYPEANALOGVIDEO_38f60a264183 as KSDATAFORMATTYPEANALOGVIDEO}
+
+pub using @8d35a65211e461f2 {type KSDATAFORMATTYPEAUDIO_0efe3bee64d9 as KSDATAFORMATTYPEAUDIO}
+
+pub using @8d35a65211e461f2 {type KSDATAFORMATTYPEAUXLine21Data_e99a8c259954 as KSDATAFORMATTYPEAUXLine21Data}
+
+pub using @8d35a65211e461f2 {type KSDATAFORMATTYPEDVDENCRYPTEDPACK_91cbf9ead014 as KSDATAFORMATTYPEDVDENCRYPTEDPACK}
+
+pub using @8d35a65211e461f2 {type KSDATAFORMATTYPEIMAGE_1e089489fbd1 as KSDATAFORMATTYPEIMAGE}
+
+pub using @8d35a65211e461f2 {type KSDATAFORMATTYPEMIDI_2476ea2e9792 as KSDATAFORMATTYPEMIDI}
+
+pub using @8d35a65211e461f2 {type KSDATAFORMATTYPEMPEG2PES_241a33da0ab9 as KSDATAFORMATTYPEMPEG2PES}
+
+pub using @8d35a65211e461f2 {type KSDATAFORMATTYPEMPEG2PROGRAM_efeef16931f0 as KSDATAFORMATTYPEMPEG2PROGRAM}
+
+pub using @8d35a65211e461f2 {type KSDATAFORMATTYPEMPEG2TRANSPORT_026b16947588 as KSDATAFORMATTYPEMPEG2TRANSPORT}
+
+pub using @8d35a65211e461f2 {type KSDATAFORMATTYPEMUSIC_6251a35e20c0 as KSDATAFORMATTYPEMUSIC}
+
+pub using @8d35a65211e461f2 {type KSDATAFORMATTYPENABTS_644f06099ea5 as KSDATAFORMATTYPENABTS}
+
+pub using @8d35a65211e461f2 {type KSDATAFORMATTYPESTANDARDELEMENTARYSTREAM_e616957ce065 as KSDATAFORMATTYPESTANDARDELEMENTARYSTREAM}
+
+pub using @8d35a65211e461f2 {type KSDATAFORMATTYPESTANDARDPACKHEADER_f408d6f39114 as KSDATAFORMATTYPESTANDARDPACKHEADER}
+
+pub using @8d35a65211e461f2 {type KSDATAFORMATTYPESTANDARDPESPACKET_0e865e1a41bd as KSDATAFORMATTYPESTANDARDPESPACKET}
+
+pub using @8d35a65211e461f2 {type KSDATAFORMATTYPESTREAM_f708d7ee07df as KSDATAFORMATTYPESTREAM}
+
+pub using @8d35a65211e461f2 {type KSDATAFORMATTYPETEXT_d5dd3edf6cad as KSDATAFORMATTYPETEXT}
+
+pub using @8d35a65211e461f2 {type KSDATAFORMATTYPEVBI_1a678018641f as KSDATAFORMATTYPEVBI}
+
+pub using @8d35a65211e461f2 {type KSDATAFORMATTYPEVIDEO_9c458875003f as KSDATAFORMATTYPEVIDEO}
+
+pub using @8d35a65211e461f2 {type KSDATAFORMATVBIINFOHEADER_c0978d3a4f1f as KSDATAFORMATVBIINFOHEADER}
+
+pub using @8d35a65211e461f2 {type KSDATAFORMATVIDEOINFOHEADER_6560586f566f as KSDATAFORMATVIDEOINFOHEADER}
+
+pub using @8d35a65211e461f2 {type KSDATAFORMATVIDEOINFOHEADER2_d91a7ca0154c as KSDATAFORMATVIDEOINFOHEADER2}
+
+pub using @8d35a65211e461f2 {type KSDATAFORMATVIDEOINFOPALETTE_80a4571f0322 as KSDATAFORMATVIDEOINFOPALETTE}
+
+pub using @8d35a65211e461f2 {type KSDATARANGEANALOGVIDEO_6d0d3f8563d2 as KSDATARANGEANALOGVIDEO}
+
+pub using @8d35a65211e461f2 {type KSDATARANGEAUDIO_885e2d674dc3 as KSDATARANGEAUDIO}
+
+pub using @8d35a65211e461f2 {type KSDATARANGEH264VIDEO_95b082c7d631 as KSDATARANGEH264VIDEO}
+
+pub using @8d35a65211e461f2 {type KSDATARANGEIMAGE_c1d0c86c6b52 as KSDATARANGEIMAGE}
+
+pub using @8d35a65211e461f2 {type KSDATARANGEMPEG1VIDEO_f764b9fcc8fb as KSDATARANGEMPEG1VIDEO}
+
+pub using @8d35a65211e461f2 {type KSDATARANGEMPEG2VIDEO_f8f832f1be97 as KSDATARANGEMPEG2VIDEO}
+
+pub using @8d35a65211e461f2 {type KSDATARANGEMUSIC_0348edc1e401 as KSDATARANGEMUSIC}
+
+pub using @8d35a65211e461f2 {type KSDATARANGEVIDEO_921be674af9b as KSDATARANGEVIDEO}
+
+pub using @8d35a65211e461f2 {type KSDATARANGEVIDEO2_362ca14bf6df as KSDATARANGEVIDEO2}
+
+pub using @8d35a65211e461f2 {type KSDATARANGEVIDEOPALETTE_90226d163a05 as KSDATARANGEVIDEOPALETTE}
+
+pub using @8d35a65211e461f2 {type KSDATARANGEVIDEOVBI_b9f88be4da3d as KSDATARANGEVIDEOVBI}
+
+pub using @8d35a65211e461f2 {type KSDEGRADESETIDStandard_eab1b4f5eac6 as KSDEGRADESETIDStandard}
+
+pub using @8d35a65211e461f2 {type KSDEGRADESTANDARD_ba937429b28e as KSDEGRADESTANDARD}
+
+pub using @8d35a65211e461f2 {type KSDEVICEPROFILEINFO_7b3755583fb5 as KSDEVICEPROFILEINFO}
+
+pub using @8d35a65211e461f2 {type KSDEVICEPROFILEINFOAnonymousEUnion_59c2d0b81f21 as KSDEVICEPROFILEINFOAnonymousEUnion}
+
+pub using @8d35a65211e461f2 {type KSDEVICEPROFILEINFOAnonymousEUnionCameraEStruct_9ccfc60361d5 as KSDEVICEPROFILEINFOAnonymousEUnionCameraEStruct}
+
+pub using @8d35a65211e461f2 {type KSDEVICETHERMALSTATE_a343bee61ef0 as KSDEVICETHERMALSTATE}
+
+pub using @8d35a65211e461f2 {type KSDISPLAYCHANGE_8b5904dfe154 as KSDISPLAYCHANGE}
+
+pub using @8d35a65211e461f2 {type KSDS3DBUFFERALL_08864f9d67bd as KSDS3DBUFFERALL}
+
+pub using @8d35a65211e461f2 {type KSDS3DBUFFERCONEANGLES_6991d2577682 as KSDS3DBUFFERCONEANGLES}
+
+pub using @8d35a65211e461f2 {type KSDS3DHRTFCOEFFFORMAT_290988943024 as KSDS3DHRTFCOEFFFORMAT}
+
+pub using @8d35a65211e461f2 {type KSDS3DHRTFFILTERFORMATMSG_4ce49ae4980f as KSDS3DHRTFFILTERFORMATMSG}
+
+pub using @8d35a65211e461f2 {type KSDS3DHRTFFILTERMETHOD_901b069dfde2 as KSDS3DHRTFFILTERMETHOD}
+
+pub using @8d35a65211e461f2 {type KSDS3DHRTFFILTERQUALITY_7f9be80df1c5 as KSDS3DHRTFFILTERQUALITY}
+
+pub using @8d35a65211e461f2 {type KSDS3DHRTFFILTERVERSION_43c13010fefd as KSDS3DHRTFFILTERVERSION}
+
+pub using @8d35a65211e461f2 {type KSDS3DHRTFINITMSG_70bc4f2dde90 as KSDS3DHRTFINITMSG}
+
+pub using @8d35a65211e461f2 {type KSDS3DHRTFPARAMSMSG_8ad7efd02a28 as KSDS3DHRTFPARAMSMSG}
+
+pub using @8d35a65211e461f2 {type KSDS3DITDPARAMS_520572f49112 as KSDS3DITDPARAMS}
+
+pub using @8d35a65211e461f2 {type KSDS3DITDPARAMSMSG_f3b546953f96 as KSDS3DITDPARAMSMSG}
+
+pub using @8d35a65211e461f2 {type KSDS3DLISTENERALL_351b1713ff74 as KSDS3DLISTENERALL}
+
+pub using @8d35a65211e461f2 {type KSDS3DLISTENERORIENTATION_dc49e4bd827c as KSDS3DLISTENERORIENTATION}
+
+pub using @8d35a65211e461f2 {type KSDVDCOPYBUSKEY_a4adfeb00d54 as KSDVDCOPYBUSKEY}
+
+pub using @8d35a65211e461f2 {type KSDVDCOPYCHLGKEY_0ee62b86e1d8 as KSDVDCOPYCHLGKEY}
+
+pub using @8d35a65211e461f2 {type KSDVDCOPYDISCKEY_02f5baee5301 as KSDVDCOPYDISCKEY}
+
+pub using @8d35a65211e461f2 {type KSDVDCOPYREGION_ac681f8f3924 as KSDVDCOPYREGION}
+
+pub using @8d35a65211e461f2 {type KSDVDCOPYSETCOPYSTATE_d2166ae77b40 as KSDVDCOPYSETCOPYSTATE}
+
+pub using @8d35a65211e461f2 {type KSDVDCOPYSTATE_6cdc7b340ecf as KSDVDCOPYSTATE}
+
+pub using @8d35a65211e461f2 {type KSDVDCOPYTITLEKEY_85c9e6ffbdea as KSDVDCOPYTITLEKEY}
+
+pub using @8d35a65211e461f2 {type KSDVDYCrCb_8f403bdcba73 as KSDVDYCrCb}
+
+pub using @8d35a65211e461f2 {type KSDVDYUV_e03ae241d37d as KSDVDYUV}
+
+pub using @8d35a65211e461f2 {type KSENODE_9bff91825f46 as KSENODE}
+
+pub using @8d35a65211e461f2 {type KSEPIN_0fb1e08bd6bb as KSEPIN}
+
+pub using @8d35a65211e461f2 {type KSERROR_dcebb774adfc as KSERROR}
+
+pub using @8d35a65211e461f2 {type KSEVENTAUDIOCONTROLCHANGE_e0875b66ea07 as KSEVENTAUDIOCONTROLCHANGE}
+
+pub using @8d35a65211e461f2 {type KSEVENTCAMERACONTROL_7a0a61816ca8 as KSEVENTCAMERACONTROL}
+
+pub using @8d35a65211e461f2 {type KSEVENTCAMERAEVENT_675b1381f3e4 as KSEVENTCAMERAEVENT}
+
+pub using @8d35a65211e461f2 {type KSEVENTCLOCKPOSITION_8b0afe0687d8 as KSEVENTCLOCKPOSITION}
+
+pub using @8d35a65211e461f2 {type KSEVENTCONNECTION_a14ca3eefca2 as KSEVENTCONNECTION}
+
+pub using @8d35a65211e461f2 {type KSEVENTCROSSBAR_5d652f9c330d as KSEVENTCROSSBAR}
+
+pub using @8d35a65211e461f2 {type KSEVENTDATA_50f28b1c5dbc as KSEVENTDATA}
+
+pub using @8d35a65211e461f2 {type KSEVENTDATAAnonymousEUnion_2065c2773a72 as KSEVENTDATAAnonymousEUnion}
+
+pub using @8d35a65211e461f2 {type KSEVENTDATAAnonymousEUnionAlignmentEStruct_58797f614efd as KSEVENTDATAAnonymousEUnionAlignmentEStruct}
+
+pub using @8d35a65211e461f2 {type KSEVENTDATAAnonymousEUnionEventHandleEStruct_a6929d9f73ab as KSEVENTDATAAnonymousEUnionEventHandleEStruct}
+
+pub using @8d35a65211e461f2 {type KSEVENTDATAAnonymousEUnionSemaphoreHandleEStruct_0a0221d73f4a as KSEVENTDATAAnonymousEUnionSemaphoreHandleEStruct}
+
+pub using @8d35a65211e461f2 {type KSEVENTDEVCMD_5090d076c676 as KSEVENTDEVCMD}
+
+pub using @8d35a65211e461f2 {type KSEVENTDEVICE_51558c884b0a as KSEVENTDEVICE}
+
+pub using @8d35a65211e461f2 {type KSEVENTDYNAMICFORMATCHANGE_5973e7d6fdda as KSEVENTDYNAMICFORMATCHANGE}
+
+pub using @8d35a65211e461f2 {type KSEVENTLOOPEDSTREAMING_ec1ab0dbe312 as KSEVENTLOOPEDSTREAMING}
+
+pub using @8d35a65211e461f2 {type KSEVENTPINCAPSCHANGENOTIFICATIONS_f0b7b6830799 as KSEVENTPINCAPSCHANGENOTIFICATIONS}
+
+pub using @8d35a65211e461f2 {type KSEVENTSETIDAudioControlChange_63251cc84315 as KSEVENTSETIDAudioControlChange}
+
+pub using @8d35a65211e461f2 {type KSEVENTSETIDCameraAsyncControl_c3ec3a0a037b as KSEVENTSETIDCameraAsyncControl}
+
+pub using @8d35a65211e461f2 {type KSEVENTSETIDCameraEvent_bcddc59caa12 as KSEVENTSETIDCameraEvent}
+
+pub using @8d35a65211e461f2 {type KSEVENTSETIDClock_4eff5b59926c as KSEVENTSETIDClock}
+
+pub using @8d35a65211e461f2 {type KSEVENTSETIDConnection_55be4680bbc2 as KSEVENTSETIDConnection}
+
+pub using @8d35a65211e461f2 {type KSEVENTSETIDDevice_fa7c1d7aa380 as KSEVENTSETIDDevice}
+
+pub using @8d35a65211e461f2 {type KSEVENTSETIDDynamicFormatChange_e10440ea21d9 as KSEVENTSETIDDynamicFormatChange}
+
+pub using @8d35a65211e461f2 {type KSEVENTSETIDEXTDEVCommand_52f259b46208 as KSEVENTSETIDEXTDEVCommand}
+
+pub using @8d35a65211e461f2 {type KSEVENTSETIDExtendedCameraControl_dc29a39dda84 as KSEVENTSETIDExtendedCameraControl}
+
+pub using @8d35a65211e461f2 {type KSEVENTSETIDLoopedStreaming_7c64d967a1c3 as KSEVENTSETIDLoopedStreaming}
+
+pub using @8d35a65211e461f2 {type KSEVENTSETIDPinCapsChange_1f4e944c0840 as KSEVENTSETIDPinCapsChange}
+
+pub using @8d35a65211e461f2 {type KSEVENTSETIDSoundDetector_269515d5a440 as KSEVENTSETIDSoundDetector}
+
+pub using @8d35a65211e461f2 {type KSEVENTSETIDStreamAllocator_8f1d11ad2898 as KSEVENTSETIDStreamAllocator}
+
+pub using @8d35a65211e461f2 {type KSEVENTSETIDTelephony_3482243b649c as KSEVENTSETIDTelephony}
+
+pub using @8d35a65211e461f2 {type KSEVENTSETIDVIDCAPTOSTI_2fd75414de15 as KSEVENTSETIDVIDCAPTOSTI}
+
+pub using @8d35a65211e461f2 {type KSEVENTSETIDVIDCAPTVAUDIO_3b58ce977991 as KSEVENTSETIDVIDCAPTVAUDIO}
+
+pub using @8d35a65211e461f2 {type KSEVENTSETIDVPNotify_8d0e0737d8dc as KSEVENTSETIDVPNotify}
+
+pub using @8d35a65211e461f2 {type KSEVENTSETIDVPVBINotify_c67bc09797cb as KSEVENTSETIDVPVBINotify}
+
+pub using @8d35a65211e461f2 {type KSEVENTSETIDVolumeLimit_148d1e8ba781 as KSEVENTSETIDVolumeLimit}
+
+pub using @8d35a65211e461f2 {type KSEVENTSOUNDDETECTOR_a891585fa42a as KSEVENTSOUNDDETECTOR}
+
+pub using @8d35a65211e461f2 {type KSEVENTSTREAMALLOCATOR_97d5d5557f3a as KSEVENTSTREAMALLOCATOR}
+
+pub using @8d35a65211e461f2 {type KSEVENTTELEPHONY_23171e4a40a8 as KSEVENTTELEPHONY}
+
+pub using @8d35a65211e461f2 {type KSEVENTTIMEINTERVAL_929e0114e998 as KSEVENTTIMEINTERVAL}
+
+pub using @8d35a65211e461f2 {type KSEVENTTIMEMARK_f56e0278712a as KSEVENTTIMEMARK}
+
+pub using @8d35a65211e461f2 {type KSEVENTTUNER_2e36a3181a02 as KSEVENTTUNER}
+
+pub using @8d35a65211e461f2 {type KSEVENTTUNERINITIATESCANS_79c583c04efb as KSEVENTTUNERINITIATESCANS}
+
+pub using @8d35a65211e461f2 {type KSEVENTTVAUDIO_49138d57c882 as KSEVENTTVAUDIO}
+
+pub using @8d35a65211e461f2 {type KSEVENTVIDCAPTOSTI_042e842287f0 as KSEVENTVIDCAPTOSTI}
+
+pub using @8d35a65211e461f2 {type KSEVENTVIDEODECODER_55ec6d1d7ec2 as KSEVENTVIDEODECODER}
+
+pub using @8d35a65211e461f2 {type KSEVENTVOLUMELIMIT_b7fff1335ed6 as KSEVENTVOLUMELIMIT}
+
+pub using @8d35a65211e461f2 {type KSEVENTVPNOTIFY_a92311c8ed12 as KSEVENTVPNOTIFY}
+
+pub using @8d35a65211e461f2 {type KSEVENTVPVBINOTIFY_88de5df8217e as KSEVENTVPVBINOTIFY}
+
+pub using @8d35a65211e461f2 {type KSFRAMEINFO_cd67ec666b1c as KSFRAMEINFO}
+
+pub using @8d35a65211e461f2 {type KSFRAMEINFOAnonymous1EUnion_d6364dcf844d as KSFRAMEINFOAnonymous1EUnion}
+
+pub using @8d35a65211e461f2 {type KSFRAMEINFOAnonymous2EUnion_d1a3ee33eced as KSFRAMEINFOAnonymous2EUnion}
+
+pub using @8d35a65211e461f2 {type KSFRAMEINFOAnonymous2EUnionAnonymousEStruct_a485843449b2 as KSFRAMEINFOAnonymous2EUnionAnonymousEStruct}
+
+pub using @8d35a65211e461f2 {type KSFRAMETIME_b56f15f9491b as KSFRAMETIME}
+
+pub using @8d35a65211e461f2 {type KSFRAMINGITEM_9ee7dee40b91 as KSFRAMINGITEM}
+
+pub using @8d35a65211e461f2 {type KSFRAMINGITEMAnonymousEUnion_b33fd37bf378 as KSFRAMINGITEMAnonymousEUnion}
+
+pub using @8d35a65211e461f2 {type KSFRAMINGRANGE_595f1edb8e8d as KSFRAMINGRANGE}
+
+pub using @8d35a65211e461f2 {type KSFRAMINGRANGEWEIGHTED_37ed376159a4 as KSFRAMINGRANGEWEIGHTED}
+
+pub using @8d35a65211e461f2 {type KSGOPUSERDATA_7f6518ab2541 as KSGOPUSERDATA}
+
+pub using @8d35a65211e461f2 {type KSH264VIDEOINFO_c0de455e0ff1 as KSH264VIDEOINFO}
+
+pub using @8d35a65211e461f2 {type KSIDENTIFIER_901c94e5826f as KSIDENTIFIER}
+
+pub using @8d35a65211e461f2 {type KSIDENTIFIERAnonymousEUnion_6b8b34603b84 as KSIDENTIFIERAnonymousEUnion}
+
+pub using @8d35a65211e461f2 {type KSIDENTIFIERAnonymousEUnionAnonymousEStruct_9c3c6029c3ec as KSIDENTIFIERAnonymousEUnionAnonymousEStruct}
+
+pub using @8d35a65211e461f2 {type KSINTERFACEFILEIO_a13283cdef3e as KSINTERFACEFILEIO}
+
+pub using @8d35a65211e461f2 {type KSINTERFACEMEDIA_e936a2bc84b2 as KSINTERFACEMEDIA}
+
+pub using @8d35a65211e461f2 {type KSINTERFACESETIDFileIo_3550417cc6f2 as KSINTERFACESETIDFileIo}
+
+pub using @8d35a65211e461f2 {type KSINTERFACESETIDMedia_9ed6431a0433 as KSINTERFACESETIDMedia}
+
+pub using @8d35a65211e461f2 {type KSINTERFACESETIDStandard_817029085ff1 as KSINTERFACESETIDStandard}
+
+pub using @8d35a65211e461f2 {type KSINTERFACESTANDARD_56b7187cdb8c as KSINTERFACESTANDARD}
+
+pub using @8d35a65211e461f2 {type KSINTERVAL_331f0531d0fd as KSINTERVAL}
+
+pub using @8d35a65211e461f2 {type KSIOOPERATION_62a2fc732242 as KSIOOPERATION}
+
+pub using @8d35a65211e461f2 {type KSJACKDESCRIPTION_f3b18bcb8509 as KSJACKDESCRIPTION}
+
+pub using @8d35a65211e461f2 {type KSJACKDESCRIPTION2_f2131f28d8bb as KSJACKDESCRIPTION2}
+
+pub using @8d35a65211e461f2 {type KSJACKDESCRIPTION3_4cf68b79b94d as KSJACKDESCRIPTION3}
+
+pub using @8d35a65211e461f2 {type KSJACKSINKCONNECTIONTYPE_81f3448c1673 as KSJACKSINKCONNECTIONTYPE}
+
+pub using @8d35a65211e461f2 {type KSJACKSINKINFORMATION_bb8579d1a60c as KSJACKSINKINFORMATION}
+
+pub using @8d35a65211e461f2 {type KSLogicalMemoryType_fde68a2c0033 as KSLogicalMemoryType}
+
+pub using @8d35a65211e461f2 {type KSMEDIUMSETIDMidiBus_f8059fd7a5d6 as KSMEDIUMSETIDMidiBus}
+
+pub using @8d35a65211e461f2 {type KSMEDIUMSETIDStandard_b6314ebb5f92 as KSMEDIUMSETIDStandard}
+
+pub using @8d35a65211e461f2 {type KSMEDIUMSETIDVPBus_1ad3e6f26915 as KSMEDIUMSETIDVPBus}
+
+pub using @8d35a65211e461f2 {type KSMEMORYTYPEDEVICEUNKNOWN_cc68e789aebc as KSMEMORYTYPEDEVICEUNKNOWN}
+
+pub using @8d35a65211e461f2 {type KSMEMORYTYPEKERNELNONPAGED_b6dd7d9940f1 as KSMEMORYTYPEKERNELNONPAGED}
+
+pub using @8d35a65211e461f2 {type KSMEMORYTYPEKERNELPAGED_e0d98fa0186d as KSMEMORYTYPEKERNELPAGED}
+
+pub using @8d35a65211e461f2 {type KSMEMORYTYPESYSTEM_88b480f27b2a as KSMEMORYTYPESYSTEM}
+
+pub using @8d35a65211e461f2 {type KSMEMORYTYPEUSER_d1199ace03da as KSMEMORYTYPEUSER}
+
+pub using @8d35a65211e461f2 {type KSMETHODSETIDStreamAllocator_cf679a6d2d43 as KSMETHODSETIDStreamAllocator}
+
+pub using @8d35a65211e461f2 {type KSMETHODSETIDStreamIo_68a0c679b225 as KSMETHODSETIDStreamIo}
+
+pub using @8d35a65211e461f2 {type KSMETHODSETIDWavetable_4cc141862865 as KSMETHODSETIDWavetable}
+
+pub using @8d35a65211e461f2 {type KSMETHODSTREAMALLOCATOR_d69b2211c920 as KSMETHODSTREAMALLOCATOR}
+
+pub using @8d35a65211e461f2 {type KSMETHODSTREAMIO_8989018ce13a as KSMETHODSTREAMIO}
+
+pub using @8d35a65211e461f2 {type KSMETHODWAVETABLE_9ba12f0ab2a5 as KSMETHODWAVETABLE}
+
+pub using @8d35a65211e461f2 {type KSMFTCATEGORYAUDIODECODER_11a4c3b4c47b as KSMFTCATEGORYAUDIODECODER}
+
+pub using @8d35a65211e461f2 {type KSMFTCATEGORYAUDIOEFFECT_a549c1dac76c as KSMFTCATEGORYAUDIOEFFECT}
+
+pub using @8d35a65211e461f2 {type KSMFTCATEGORYAUDIOENCODER_06a0562de2e6 as KSMFTCATEGORYAUDIOENCODER}
+
+pub using @8d35a65211e461f2 {type KSMFTCATEGORYDEMULTIPLEXER_ef1c632c987d as KSMFTCATEGORYDEMULTIPLEXER}
+
+pub using @8d35a65211e461f2 {type KSMFTCATEGORYMULTIPLEXER_efe77bb089aa as KSMFTCATEGORYMULTIPLEXER}
+
+pub using @8d35a65211e461f2 {type KSMFTCATEGORYOTHER_2baf8aa735a2 as KSMFTCATEGORYOTHER}
+
+pub using @8d35a65211e461f2 {type KSMFTCATEGORYVIDEODECODER_2b628cb17709 as KSMFTCATEGORYVIDEODECODER}
+
+pub using @8d35a65211e461f2 {type KSMFTCATEGORYVIDEOEFFECT_20a8222b44a3 as KSMFTCATEGORYVIDEOEFFECT}
+
+pub using @8d35a65211e461f2 {type KSMFTCATEGORYVIDEOENCODER_8c20115809b6 as KSMFTCATEGORYVIDEOENCODER}
+
+pub using @8d35a65211e461f2 {type KSMFTCATEGORYVIDEOPROCESSOR_d7ea57d90325 as KSMFTCATEGORYVIDEOPROCESSOR}
+
+pub using @8d35a65211e461f2 {type KSMICARRAYMICARRAYTYPE_8e32201ceb57 as KSMICARRAYMICARRAYTYPE}
+
+pub using @8d35a65211e461f2 {type KSMICARRAYMICTYPE_6e5ce71c224b as KSMICARRAYMICTYPE}
+
+pub using @8d35a65211e461f2 {type KSMIDILOOPEDBUFFER_03e9fb3206ab as KSMIDILOOPEDBUFFER}
+
+pub using @8d35a65211e461f2 {type KSMIDILOOPEDBUFFERPROPERTY_01002c523fd4 as KSMIDILOOPEDBUFFERPROPERTY}
+
+pub using @8d35a65211e461f2 {type KSMIDILOOPEDEVENT_04f161274174 as KSMIDILOOPEDEVENT}
+
+pub using @8d35a65211e461f2 {type KSMIDILOOPEDEVENT2_ee08d176d188 as KSMIDILOOPEDEVENT2}
+
+pub using @8d35a65211e461f2 {type KSMIDILOOPEDREGISTERS_b16801a84fb7 as KSMIDILOOPEDREGISTERS}
+
+pub using @8d35a65211e461f2 {type KSMNODE_e85fc5b8465e as KSMNODE}
+
+pub using @8d35a65211e461f2 {type KSMPEG1VIDEOINFO_157e0b679313 as KSMPEG1VIDEOINFO}
+
+pub using @8d35a65211e461f2 {type KSMPEG2Level_cb5a91559599 as KSMPEG2Level}
+
+pub using @8d35a65211e461f2 {type KSMPEG2Profile_639c76b714ee as KSMPEG2Profile}
+
+pub using @8d35a65211e461f2 {type KSMPEGAUDIOINFO_a95a74e48b4a as KSMPEGAUDIOINFO}
+
+pub using @8d35a65211e461f2 {type KSMPEGVIDEOINFO2_f348e385981b as KSMPEGVIDEOINFO2}
+
+pub using @8d35a65211e461f2 {type KSMPEGVIDRECT_d92843cfb7aa as KSMPEGVIDRECT}
+
+pub using @8d35a65211e461f2 {type KSMULTIPLEDATAPROP_69c260717743 as KSMULTIPLEDATAPROP}
+
+pub using @8d35a65211e461f2 {type KSMULTIPLEITEM_ddb5b5c1257b as KSMULTIPLEITEM}
+
+pub using @8d35a65211e461f2 {type KSMUSICFORMAT_89f2997453cc as KSMUSICFORMAT}
+
+pub using @8d35a65211e461f2 {type KSMUSICTECHNOLOGYFMSYNTH_a67789fddc17 as KSMUSICTECHNOLOGYFMSYNTH}
+
+pub using @8d35a65211e461f2 {type KSMUSICTECHNOLOGYPORT_449935c7bb92 as KSMUSICTECHNOLOGYPORT}
+
+pub using @8d35a65211e461f2 {type KSMUSICTECHNOLOGYSQSYNTH_02fc6598e4d3 as KSMUSICTECHNOLOGYSQSYNTH}
+
+pub using @8d35a65211e461f2 {type KSMUSICTECHNOLOGYSWSYNTH_aecc7acb6ab2 as KSMUSICTECHNOLOGYSWSYNTH}
+
+pub using @8d35a65211e461f2 {type KSMUSICTECHNOLOGYWAVETABLE_c52bc2de935f as KSMUSICTECHNOLOGYWAVETABLE}
+
+pub using @8d35a65211e461f2 {type KSNAMEAllocator_5ae728c0497b as KSNAMEAllocator}
+
+pub using @8d35a65211e461f2 {type KSNAMEClock_24e6a55e2ae8 as KSNAMEClock}
+
+pub using @8d35a65211e461f2 {type KSNAMEFilter_ba9ab3e59803 as KSNAMEFilter}
+
+pub using @8d35a65211e461f2 {type KSNAMEPin_20df8acd9068 as KSNAMEPin}
+
+pub using @8d35a65211e461f2 {type KSNAMETopologyNode_d45a99c6c94a as KSNAMETopologyNode}
+
+pub using @8d35a65211e461f2 {type KSNODECREATE_a92efd7240c4 as KSNODECREATE}
+
+pub using @8d35a65211e461f2 {type KSNODEPROPERTY_50e6cea9d0a0 as KSNODEPROPERTY}
+
+pub using @8d35a65211e461f2 {type KSNODEPROPERTYAUDIO3DLISTENER_eadb3a57c132 as KSNODEPROPERTYAUDIO3DLISTENER}
+
+pub using @8d35a65211e461f2 {type KSNODEPROPERTYAUDIOCHANNEL_86684d5e4de6 as KSNODEPROPERTYAUDIOCHANNEL}
+
+pub using @8d35a65211e461f2 {type KSNODEPROPERTYAUDIODEVSPECIFIC_62fcb9b1ba15 as KSNODEPROPERTYAUDIODEVSPECIFIC}
+
+pub using @8d35a65211e461f2 {type KSNODEPROPERTYAUDIOPROPERTY_90010c2dfc56 as KSNODEPROPERTYAUDIOPROPERTY}
+
+pub using @8d35a65211e461f2 {type KSNODETYPE1394DASTREAM_3165289ae46d as KSNODETYPE1394DASTREAM}
+
+pub using @8d35a65211e461f2 {type KSNODETYPE1394DVSTREAMSOUNDTRACK_1e45c86273e6 as KSNODETYPE1394DVSTREAMSOUNDTRACK}
+
+pub using @8d35a65211e461f2 {type KSNODETYPE3DEFFECTS_07588c1b3842 as KSNODETYPE3DEFFECTS}
+
+pub using @8d35a65211e461f2 {type KSNODETYPEADC_2b073226b2e2 as KSNODETYPEADC}
+
+pub using @8d35a65211e461f2 {type KSNODETYPEAGC_2b1a5de08b7a as KSNODETYPEAGC}
+
+pub using @8d35a65211e461f2 {type KSNODETYPEANALOGCONNECTOR_38fe414057ed as KSNODETYPEANALOGCONNECTOR}
+
+pub using @8d35a65211e461f2 {type KSNODETYPEANALOGTAPE_db70b8377f51 as KSNODETYPEANALOGTAPE}
+
+pub using @8d35a65211e461f2 {type KSNODETYPEAUDIOENGINE_c79a75b8f06f as KSNODETYPEAUDIOENGINE}
+
+pub using @8d35a65211e461f2 {type KSNODETYPEAUDIOKEYWORDDETECTOR_d35c5e61f8c3 as KSNODETYPEAUDIOKEYWORDDETECTOR}
+
+pub using @8d35a65211e461f2 {type KSNODETYPEAUDIOLOOPBACK_ba68988a9472 as KSNODETYPEAUDIOLOOPBACK}
+
+pub using @8d35a65211e461f2 {type KSNODETYPEAUDIOMODULE_8bbe1231e52c as KSNODETYPEAUDIOMODULE}
+
+pub using @8d35a65211e461f2 {type KSNODETYPEBIDIRECTIONALUNDEFINED_cf70d1541526 as KSNODETYPEBIDIRECTIONALUNDEFINED}
+
+pub using @8d35a65211e461f2 {type KSNODETYPECABLETUNERAUDIO_1827bae0bd40 as KSNODETYPECABLETUNERAUDIO}
+
+pub using @8d35a65211e461f2 {type KSNODETYPECDPLAYER_7723ae2c1099 as KSNODETYPECDPLAYER}
+
+pub using @8d35a65211e461f2 {type KSNODETYPECHORUS_ae496813b569 as KSNODETYPECHORUS}
+
+pub using @8d35a65211e461f2 {type KSNODETYPECOMMUNICATIONSPEAKER_fab6736d386e as KSNODETYPECOMMUNICATIONSPEAKER}
+
+pub using @8d35a65211e461f2 {type KSNODETYPEDAC_2ed73f557c4d as KSNODETYPEDAC}
+
+pub using @8d35a65211e461f2 {type KSNODETYPEDATIODIGITALAUDIOTAPE_c8ab12cfdec7 as KSNODETYPEDATIODIGITALAUDIOTAPE}
+
+pub using @8d35a65211e461f2 {type KSNODETYPEDCCIODIGITALCOMPACTCASSETTE_db7cba62f147 as KSNODETYPEDCCIODIGITALCOMPACTCASSETTE}
+
+pub using @8d35a65211e461f2 {type KSNODETYPEDELAY_9e63af38e70f as KSNODETYPEDELAY}
+
+pub using @8d35a65211e461f2 {type KSNODETYPEDEMUX_c0d6ce68afb2 as KSNODETYPEDEMUX}
+
+pub using @8d35a65211e461f2 {type KSNODETYPEDESKTOPMICROPHONE_b0ef2a270d0f as KSNODETYPEDESKTOPMICROPHONE}
+
+pub using @8d35a65211e461f2 {type KSNODETYPEDESKTOPSPEAKER_2b2fde43e2db as KSNODETYPEDESKTOPSPEAKER}
+
+pub using @8d35a65211e461f2 {type KSNODETYPEDEVSPECIFIC_16cf922d0235 as KSNODETYPEDEVSPECIFIC}
+
+pub using @8d35a65211e461f2 {type KSNODETYPEDIGITALAUDIOINTERFACE_beec5f15e175 as KSNODETYPEDIGITALAUDIOINTERFACE}
+
+pub using @8d35a65211e461f2 {type KSNODETYPEDISPLAYPORTINTERFACE_1d232a303791 as KSNODETYPEDISPLAYPORTINTERFACE}
+
+pub using @8d35a65211e461f2 {type KSNODETYPEDOWNLINEPHONE_1e14b50d5736 as KSNODETYPEDOWNLINEPHONE}
+
+pub using @8d35a65211e461f2 {type KSNODETYPEDRMDESCRAMBLE_37f8e317c893 as KSNODETYPEDRMDESCRAMBLE}
+
+pub using @8d35a65211e461f2 {type KSNODETYPEDSSAUDIO_d0ab4246d923 as KSNODETYPEDSSAUDIO}
+
+pub using @8d35a65211e461f2 {type KSNODETYPEDVDAUDIO_20f47a970c8a as KSNODETYPEDVDAUDIO}
+
+pub using @8d35a65211e461f2 {type KSNODETYPEDYNRANGECOMPRESSOR_5395425a6c04 as KSNODETYPEDYNRANGECOMPRESSOR}
+
+pub using @8d35a65211e461f2 {type KSNODETYPEECHOCANCELINGSPEAKERPHONE_22d1250fde94 as KSNODETYPEECHOCANCELINGSPEAKERPHONE}
+
+pub using @8d35a65211e461f2 {type KSNODETYPEECHOSUPPRESSINGSPEAKERPHONE_3083bba00ad8 as KSNODETYPEECHOSUPPRESSINGSPEAKERPHONE}
+
+pub using @8d35a65211e461f2 {type KSNODETYPEEMBEDDEDUNDEFINED_8489a50ad507 as KSNODETYPEEMBEDDEDUNDEFINED}
+
+pub using @8d35a65211e461f2 {type KSNODETYPEEQUALIZATIONNOISE_2211affca5f8 as KSNODETYPEEQUALIZATIONNOISE}
+
+pub using @8d35a65211e461f2 {type KSNODETYPEEQUALIZER_80b065d79520 as KSNODETYPEEQUALIZER}
+
+pub using @8d35a65211e461f2 {type KSNODETYPEEXTERNALUNDEFINED_fb1285774ebd as KSNODETYPEEXTERNALUNDEFINED}
+
+pub using @8d35a65211e461f2 {type KSNODETYPEFMRX_9e7e137b02c4 as KSNODETYPEFMRX}
+
+pub using @8d35a65211e461f2 {type KSNODETYPEHANDSET_18c2957d7a7e as KSNODETYPEHANDSET}
+
+pub using @8d35a65211e461f2 {type KSNODETYPEHDMIINTERFACE_25460bd883a0 as KSNODETYPEHDMIINTERFACE}
+
+pub using @8d35a65211e461f2 {type KSNODETYPEHEADMOUNTEDDISPLAYAUDIO_80a508464c9e as KSNODETYPEHEADMOUNTEDDISPLAYAUDIO}
+
+pub using @8d35a65211e461f2 {type KSNODETYPEHEADPHONES_2f8f13bc924d as KSNODETYPEHEADPHONES}
+
+pub using @8d35a65211e461f2 {type KSNODETYPEHEADSET_5eb6be62f400 as KSNODETYPEHEADSET}
+
+pub using @8d35a65211e461f2 {type KSNODETYPEINPUTUNDEFINED_aae4aa0cbba1 as KSNODETYPEINPUTUNDEFINED}
+
+pub using @8d35a65211e461f2 {type KSNODETYPELEGACYAUDIOCONNECTOR_7555d40dfd74 as KSNODETYPELEGACYAUDIOCONNECTOR}
+
+pub using @8d35a65211e461f2 {type KSNODETYPELEVELCALIBRATIONNOISESOURCE_1d8e1a882374 as KSNODETYPELEVELCALIBRATIONNOISESOURCE}
+
+pub using @8d35a65211e461f2 {type KSNODETYPELINECONNECTOR_e83dfefc5fee as KSNODETYPELINECONNECTOR}
+
+pub using @8d35a65211e461f2 {type KSNODETYPELOUDNESS_9cf7db640643 as KSNODETYPELOUDNESS}
+
+pub using @8d35a65211e461f2 {type KSNODETYPELOWFREQUENCYEFFECTSSPEAKER_6c20a8957be5 as KSNODETYPELOWFREQUENCYEFFECTSSPEAKER}
+
+pub using @8d35a65211e461f2 {type KSNODETYPEMICROPHONE_c96649f60dbf as KSNODETYPEMICROPHONE}
+
+pub using @8d35a65211e461f2 {type KSNODETYPEMICROPHONEARRAY_9a1c408de443 as KSNODETYPEMICROPHONEARRAY}
+
+pub using @8d35a65211e461f2 {type KSNODETYPEMIDIELEMENT_df2036745f34 as KSNODETYPEMIDIELEMENT}
+
+pub using @8d35a65211e461f2 {type KSNODETYPEMIDIJACK_3395adf4b756 as KSNODETYPEMIDIJACK}
+
+pub using @8d35a65211e461f2 {type KSNODETYPEMINIDISK_f04486a113c4 as KSNODETYPEMINIDISK}
+
+pub using @8d35a65211e461f2 {type KSNODETYPEMULTITRACKRECORDER_200c7741235b as KSNODETYPEMULTITRACKRECORDER}
+
+pub using @8d35a65211e461f2 {type KSNODETYPEMUTE_1298f1f5cc01 as KSNODETYPEMUTE}
+
+pub using @8d35a65211e461f2 {type KSNODETYPEMUX_05007a697b7f as KSNODETYPEMUX}
+
+pub using @8d35a65211e461f2 {type KSNODETYPENOISESUPPRESS_ccc2bfe08e24 as KSNODETYPENOISESUPPRESS}
+
+pub using @8d35a65211e461f2 {type KSNODETYPEOMNIDIRECTIONALMICROPHONE_f6f7d9b2b6b7 as KSNODETYPEOMNIDIRECTIONALMICROPHONE}
+
+pub using @8d35a65211e461f2 {type KSNODETYPEOUTPUTUNDEFINED_c76de8969c47 as KSNODETYPEOUTPUTUNDEFINED}
+
+pub using @8d35a65211e461f2 {type KSNODETYPEPARAMETRICEQUALIZER_77a616bdd6b3 as KSNODETYPEPARAMETRICEQUALIZER}
+
+pub using @8d35a65211e461f2 {type KSNODETYPEPEAKMETER_12111d3e3081 as KSNODETYPEPEAKMETER}
+
+pub using @8d35a65211e461f2 {type KSNODETYPEPERSONALMICROPHONE_673b7eebd936 as KSNODETYPEPERSONALMICROPHONE}
+
+pub using @8d35a65211e461f2 {type KSNODETYPEPHONELINE_b0e789215301 as KSNODETYPEPHONELINE}
+
+pub using @8d35a65211e461f2 {type KSNODETYPEPHONOGRAPH_5d75cd914238 as KSNODETYPEPHONOGRAPH}
+
+pub using @8d35a65211e461f2 {type KSNODETYPEPROCESSINGMICROPHONEARRAY_052799ec905e as KSNODETYPEPROCESSINGMICROPHONEARRAY}
+
+pub using @8d35a65211e461f2 {type KSNODETYPEPROLOGICDECODER_1d37e0909798 as KSNODETYPEPROLOGICDECODER}
+
+pub using @8d35a65211e461f2 {type KSNODETYPEPROLOGICENCODER_76411b09b633 as KSNODETYPEPROLOGICENCODER}
+
+pub using @8d35a65211e461f2 {type KSNODETYPERADIORECEIVER_923021a8a571 as KSNODETYPERADIORECEIVER}
+
+pub using @8d35a65211e461f2 {type KSNODETYPERADIOTRANSMITTER_21477b96c7fd as KSNODETYPERADIOTRANSMITTER}
+
+pub using @8d35a65211e461f2 {type KSNODETYPEREVERB_46e509981bb3 as KSNODETYPEREVERB}
+
+pub using @8d35a65211e461f2 {type KSNODETYPEROOMSPEAKER_31593dbca4ca as KSNODETYPEROOMSPEAKER}
+
+pub using @8d35a65211e461f2 {type KSNODETYPESATELLITERECEIVERAUDIO_696178412050 as KSNODETYPESATELLITERECEIVERAUDIO}
+
+pub using @8d35a65211e461f2 {type KSNODETYPESPDIFINTERFACE_5c69d4d32532 as KSNODETYPESPDIFINTERFACE}
+
+pub using @8d35a65211e461f2 {type KSNODETYPESPEAKER_3f2fa9446923 as KSNODETYPESPEAKER}
+
+pub using @8d35a65211e461f2 {type KSNODETYPESPEAKERPHONENOECHOREDUCTION_ccf0d7751240 as KSNODETYPESPEAKERPHONENOECHOREDUCTION}
+
+pub using @8d35a65211e461f2 {type KSNODETYPESPEAKERSSTATICJACK_978cdc8950ef as KSNODETYPESPEAKERSSTATICJACK}
+
+pub using @8d35a65211e461f2 {type KSNODETYPESRC_e707ca252613 as KSNODETYPESRC}
+
+pub using @8d35a65211e461f2 {type KSNODETYPESTEREOWIDE_eabf8a1a99e7 as KSNODETYPESTEREOWIDE}
+
+pub using @8d35a65211e461f2 {type KSNODETYPESUM_17c3bd50f65d as KSNODETYPESUM}
+
+pub using @8d35a65211e461f2 {type KSNODETYPESUPERMIX_a95de6c316f0 as KSNODETYPESUPERMIX}
+
+pub using @8d35a65211e461f2 {type KSNODETYPESYNTHESIZER_9a2e7037b3a0 as KSNODETYPESYNTHESIZER}
+
+pub using @8d35a65211e461f2 {type KSNODETYPETELEPHONE_bfde23dc8a98 as KSNODETYPETELEPHONE}
+
+pub using @8d35a65211e461f2 {type KSNODETYPETELEPHONYBIDI_cbf0e4e7fbe5 as KSNODETYPETELEPHONYBIDI}
+
+pub using @8d35a65211e461f2 {type KSNODETYPETELEPHONYUNDEFINED_015e063d8b45 as KSNODETYPETELEPHONYUNDEFINED}
+
+pub using @8d35a65211e461f2 {type KSNODETYPETONE_3b520d73bce7 as KSNODETYPETONE}
+
+pub using @8d35a65211e461f2 {type KSNODETYPETVTUNERAUDIO_5f67180b6e14 as KSNODETYPETVTUNERAUDIO}
+
+pub using @8d35a65211e461f2 {type KSNODETYPEUPDOWNMIX_ce5337466470 as KSNODETYPEUPDOWNMIX}
+
+pub using @8d35a65211e461f2 {type KSNODETYPEVCRAUDIO_687743d95dbd as KSNODETYPEVCRAUDIO}
+
+pub using @8d35a65211e461f2 {type KSNODETYPEVIDEOCAMERATERMINAL_6ce8e58b0def as KSNODETYPEVIDEOCAMERATERMINAL}
+
+pub using @8d35a65211e461f2 {type KSNODETYPEVIDEODISCAUDIO_f882eaa47aae as KSNODETYPEVIDEODISCAUDIO}
+
+pub using @8d35a65211e461f2 {type KSNODETYPEVIDEOINPUTMTT_dbdfccecdb83 as KSNODETYPEVIDEOINPUTMTT}
+
+pub using @8d35a65211e461f2 {type KSNODETYPEVIDEOINPUTTERMINAL_aa14236bff1a as KSNODETYPEVIDEOINPUTTERMINAL}
+
+pub using @8d35a65211e461f2 {type KSNODETYPEVIDEOOUTPUTMTT_d59e0113516d as KSNODETYPEVIDEOOUTPUTMTT}
+
+pub using @8d35a65211e461f2 {type KSNODETYPEVIDEOOUTPUTTERMINAL_c258e4a5bfc7 as KSNODETYPEVIDEOOUTPUTTERMINAL}
+
+pub using @8d35a65211e461f2 {type KSNODETYPEVIDEOPROCESSING_2af0ceed57f3 as KSNODETYPEVIDEOPROCESSING}
+
+pub using @8d35a65211e461f2 {type KSNODETYPEVIDEOSELECTOR_5d1c1f8528f7 as KSNODETYPEVIDEOSELECTOR}
+
+pub using @8d35a65211e461f2 {type KSNODETYPEVIDEOSTREAMING_226f099ceb9a as KSNODETYPEVIDEOSTREAMING}
+
+pub using @8d35a65211e461f2 {type KSNODETYPEVOLUME_825220afcb84 as KSNODETYPEVOLUME}
+
+pub using @8d35a65211e461f2 {type KSNOTIFICATIONIDAudioModule_9957e7edf3f6 as KSNOTIFICATIONIDAudioModule}
+
+pub using @8d35a65211e461f2 {type KSNOTIFICATIONIDSoundDetector_0f70205e5301 as KSNOTIFICATIONIDSoundDetector}
+
+pub using @8d35a65211e461f2 {type KSPEEKOPERATION_8d6ee877e491 as KSPEEKOPERATION}
+
+pub using @8d35a65211e461f2 {type KSPINCINSTANCES_d5675f225522 as KSPINCINSTANCES}
+
+pub using @8d35a65211e461f2 {type KSPINCOMMUNICATION_17ce26d23e0d as KSPINCOMMUNICATION}
+
+pub using @8d35a65211e461f2 {type KSPINCONNECT_cba5587c989a as KSPINCONNECT}
+
+pub using @8d35a65211e461f2 {type KSPINDATAFLOW_13bdbb1ce1f1 as KSPINDATAFLOW}
+
+pub using @8d35a65211e461f2 {type KSPINMDLCACHINGEVENT_1bfd13b53ee4 as KSPINMDLCACHINGEVENT}
+
+pub using @8d35a65211e461f2 {type KSPINMDLCACHINGNOTIFICATION_709638422bc0 as KSPINMDLCACHINGNOTIFICATION}
+
+pub using @8d35a65211e461f2 {type KSPINMDLCACHINGNOTIFICATION32_51d68277e540 as KSPINMDLCACHINGNOTIFICATION32}
+
+pub using @8d35a65211e461f2 {type KSPINPHYSICALCONNECTION_2252bd202bc0 as KSPINPHYSICALCONNECTION}
+
+pub using @8d35a65211e461f2 {type KSPNODE_9b45ba8665f8 as KSPNODE}
+
+pub using @8d35a65211e461f2 {type KSPPIN_0838b37e877d as KSPPIN}
+
+pub using @8d35a65211e461f2 {type KSPPINAnonymousEUnion_8e69268b490e as KSPPINAnonymousEUnion}
+
+pub using @8d35a65211e461f2 {type KSPPROPERTYALLOCATORMDLCACHING_457d1047b168 as KSPPROPERTYALLOCATORMDLCACHING}
+
+pub using @8d35a65211e461f2 {type KSPRIORITY_3a12f882dcf9 as KSPRIORITY}
+
+pub using @8d35a65211e461f2 {type KSPROPERTYAC3_1142966aeec9 as KSPROPERTYAC3}
+
+pub using @8d35a65211e461f2 {type KSPROPERTYALLOCATORCONTROL_547bc7d2eedf as KSPROPERTYALLOCATORCONTROL}
+
+pub using @8d35a65211e461f2 {type KSPROPERTYALLOCATORCONTROLCAPTURECAPSS_5ede1410c1c8 as KSPROPERTYALLOCATORCONTROLCAPTURECAPSS}
+
+pub using @8d35a65211e461f2 {type KSPROPERTYALLOCATORCONTROLCAPTUREINTERLEAVES_c6c5bc344a17 as KSPROPERTYALLOCATORCONTROLCAPTUREINTERLEAVES}
+
+pub using @8d35a65211e461f2 {type KSPROPERTYALLOCATORCONTROLSURFACESIZES_e5983ce367e7 as KSPROPERTYALLOCATORCONTROLSURFACESIZES}
+
+pub using @8d35a65211e461f2 {type KSPROPERTYAUDDECOUT_c44ce52e00b5 as KSPROPERTYAUDDECOUT}
+
+pub using @8d35a65211e461f2 {type KSPROPERTYAUDIO_bb8a684de1d3 as KSPROPERTYAUDIO}
+
+pub using @8d35a65211e461f2 {type KSPROPERTYAUDIOENGINE_4c882454af5f as KSPROPERTYAUDIOENGINE}
+
+pub using @8d35a65211e461f2 {type KSPROPERTYAUDIOLOOPBACK_3ca81a348f48 as KSPROPERTYAUDIOLOOPBACK}
+
+pub using @8d35a65211e461f2 {type KSPROPERTYAUDIOMODULE_f8b46ddd926a as KSPROPERTYAUDIOMODULE}
+
+pub using @8d35a65211e461f2 {type KSPROPERTYAUDIOPOSTURE_78b852b6a5b9 as KSPROPERTYAUDIOPOSTURE}
+
+pub using @8d35a65211e461f2 {type KSPROPERTYAUDIORESOURCEMANAGEMENT_1f30ec2bdb69 as KSPROPERTYAUDIORESOURCEMANAGEMENT}
+
+pub using @8d35a65211e461f2 {type KSPROPERTYAUDIOSIGNALPROCESSING_cb505234f93a as KSPROPERTYAUDIOSIGNALPROCESSING}
+
+pub using @8d35a65211e461f2 {type KSPROPERTYBIBLIOGRAPHIC_da97d5156b9e as KSPROPERTYBIBLIOGRAPHIC}
+
+pub using @8d35a65211e461f2 {type KSPROPERTYBOUNDSLONG_763556b79313 as KSPROPERTYBOUNDSLONG}
+
+pub using @8d35a65211e461f2 {type KSPROPERTYBOUNDSLONGAnonymous1EStruct_6a1ef12aa9e0 as KSPROPERTYBOUNDSLONGAnonymous1EStruct}
+
+pub using @8d35a65211e461f2 {type KSPROPERTYBOUNDSLONGAnonymous2EStruct_fe0af420c9e2 as KSPROPERTYBOUNDSLONGAnonymous2EStruct}
+
+pub using @8d35a65211e461f2 {type KSPROPERTYBOUNDSLONGLONG_419f694bc6e0 as KSPROPERTYBOUNDSLONGLONG}
+
+pub using @8d35a65211e461f2 {type KSPROPERTYBOUNDSLONGLONGAnonymous1EStruct_63aa95b04bf0 as KSPROPERTYBOUNDSLONGLONGAnonymous1EStruct}
+
+pub using @8d35a65211e461f2 {type KSPROPERTYBOUNDSLONGLONGAnonymous2EStruct_d1af8c97908a as KSPROPERTYBOUNDSLONGLONGAnonymous2EStruct}
+
+pub using @8d35a65211e461f2 {type KSPROPERTYBTAUDIO_cbd84ed867ab as KSPROPERTYBTAUDIO}
+
+pub using @8d35a65211e461f2 {type KSPROPERTYCAMERACONTROLEXTENDEDPROPERTY_b589092a1878 as KSPROPERTYCAMERACONTROLEXTENDEDPROPERTY}
+
+pub using @8d35a65211e461f2 {type KSPROPERTYCAMERACONTROLFLASH_61b1d17acfc2 as KSPROPERTYCAMERACONTROLFLASH}
+
+pub using @8d35a65211e461f2 {type KSPROPERTYCAMERACONTROLFLASHS_3fdbce0b7fcd as KSPROPERTYCAMERACONTROLFLASHS}
+
+pub using @8d35a65211e461f2 {type KSPROPERTYCAMERACONTROLFOCALLENGTHS_171144dd5e62 as KSPROPERTYCAMERACONTROLFOCALLENGTHS}
+
+pub using @8d35a65211e461f2 {type KSPROPERTYCAMERACONTROLIMAGEPINCAPABILITY_b8f067b8c5fa as KSPROPERTYCAMERACONTROLIMAGEPINCAPABILITY}
+
+pub using @8d35a65211e461f2 {type KSPROPERTYCAMERACONTROLIMAGEPINCAPABILITYS_0e7f764ece5a as KSPROPERTYCAMERACONTROLIMAGEPINCAPABILITYS}
+
+pub using @8d35a65211e461f2 {type KSPROPERTYCAMERACONTROLNODEFOCALLENGTHS_628391db7c6d as KSPROPERTYCAMERACONTROLNODEFOCALLENGTHS}
+
+pub using @8d35a65211e461f2 {type KSPROPERTYCAMERACONTROLNODES_929e6e156152 as KSPROPERTYCAMERACONTROLNODES}
+
+pub using @8d35a65211e461f2 {type KSPROPERTYCAMERACONTROLNODES2_3dd4112efcc9 as KSPROPERTYCAMERACONTROLNODES2}
+
+pub using @8d35a65211e461f2 {type KSPROPERTYCAMERACONTROLPERFRAMESETTINGPROPERTY_dbd7afbb98f4 as KSPROPERTYCAMERACONTROLPERFRAMESETTINGPROPERTY}
+
+pub using @8d35a65211e461f2 {type KSPROPERTYCAMERACONTROLREGIONOFINTEREST_03db6474e86f as KSPROPERTYCAMERACONTROLREGIONOFINTEREST}
+
+pub using @8d35a65211e461f2 {type KSPROPERTYCAMERACONTROLREGIONOFINTERESTS_3ae7acfa2ada as KSPROPERTYCAMERACONTROLREGIONOFINTERESTS}
+
+pub using @8d35a65211e461f2 {type KSPROPERTYCAMERACONTROLREGIONOFINTERESTSAnonymousEUnion_f3e2691544b2 as KSPROPERTYCAMERACONTROLREGIONOFINTERESTSAnonymousEUnion}
+
+pub using @8d35a65211e461f2 {type KSPROPERTYCAMERACONTROLS_bd345a426633 as KSPROPERTYCAMERACONTROLS}
+
+pub using @8d35a65211e461f2 {type KSPROPERTYCAMERACONTROLS2_d043b192b4f3 as KSPROPERTYCAMERACONTROLS2}
+
+pub using @8d35a65211e461f2 {type KSPROPERTYCAMERACONTROLSEX_7fa995b1948c as KSPROPERTYCAMERACONTROLSEX}
+
+pub using @8d35a65211e461f2 {type KSPROPERTYCAMERACONTROLVIDEOSTABILIZATIONMODE_d30b4aa8474c as KSPROPERTYCAMERACONTROLVIDEOSTABILIZATIONMODE}
+
+pub using @8d35a65211e461f2 {type KSPROPERTYCAMERACONTROLVIDEOSTABILIZATIONMODES_abe45f972430 as KSPROPERTYCAMERACONTROLVIDEOSTABILIZATIONMODES}
+
+pub using @8d35a65211e461f2 {type KSPROPERTYCAMERAPHOTOTRIGGERTIMEFLAGS_25df1d9e1e67 as KSPROPERTYCAMERAPHOTOTRIGGERTIMEFLAGS}
+
+pub using @8d35a65211e461f2 {type KSPROPERTYCLOCK_6417ae85b3f3 as KSPROPERTYCLOCK}
+
+pub using @8d35a65211e461f2 {type KSPROPERTYCONNECTION_032bd7b20b44 as KSPROPERTYCONNECTION}
+
+pub using @8d35a65211e461f2 {type KSPROPERTYCOPYPROT_c4c0115d4ec9 as KSPROPERTYCOPYPROT}
+
+pub using @8d35a65211e461f2 {type KSPROPERTYCROSSBARACTIVES_5035d48f7885 as KSPROPERTYCROSSBARACTIVES}
+
+pub using @8d35a65211e461f2 {type KSPROPERTYCROSSBARCAPSS_bfda4a1afdd6 as KSPROPERTYCROSSBARCAPSS}
+
+pub using @8d35a65211e461f2 {type KSPROPERTYCROSSBARPININFOS_f1f8febd7f30 as KSPROPERTYCROSSBARPININFOS}
+
+pub using @8d35a65211e461f2 {type KSPROPERTYCROSSBARROUTES_38f5a5f78b1b as KSPROPERTYCROSSBARROUTES}
+
+pub using @8d35a65211e461f2 {type KSPROPERTYCYCLIC_95cd2dc49164 as KSPROPERTYCYCLIC}
+
+pub using @8d35a65211e461f2 {type KSPROPERTYDESCRIPTION_c667ce7ccb3b as KSPROPERTYDESCRIPTION}
+
+pub using @8d35a65211e461f2 {type KSPROPERTYDIRECTSOUND3DBUFFER_b4238e5fe1dd as KSPROPERTYDIRECTSOUND3DBUFFER}
+
+pub using @8d35a65211e461f2 {type KSPROPERTYDIRECTSOUND3DLISTENER_c5c83401b864 as KSPROPERTYDIRECTSOUND3DLISTENER}
+
+pub using @8d35a65211e461f2 {type KSPROPERTYDRMAUDIOSTREAM_937ba8500762 as KSPROPERTYDRMAUDIOSTREAM}
+
+pub using @8d35a65211e461f2 {type KSPROPERTYDROPPEDFRAMESCURRENTS_d6433b2076f4 as KSPROPERTYDROPPEDFRAMESCURRENTS}
+
+pub using @8d35a65211e461f2 {type KSPROPERTYDVDSUBPIC_01b3d107564b as KSPROPERTYDVDSUBPIC}
+
+pub using @8d35a65211e461f2 {type KSPROPERTYEXTDEVICE_4675b866d9ae as KSPROPERTYEXTDEVICE}
+
+pub using @8d35a65211e461f2 {type KSPROPERTYEXTDEVICES_2679c0722496 as KSPROPERTYEXTDEVICES}
+
+pub using @8d35a65211e461f2 {type KSPROPERTYEXTDEVICESUEUnion_cef352e75c45 as KSPROPERTYEXTDEVICESUEUnion}
+
+pub using @8d35a65211e461f2 {type KSPROPERTYEXTENSIONUNIT_6560d849ad36 as KSPROPERTYEXTENSIONUNIT}
+
+pub using @8d35a65211e461f2 {type KSPROPERTYEXTXPORT_5c4cb54e3505 as KSPROPERTYEXTXPORT}
+
+pub using @8d35a65211e461f2 {type KSPROPERTYEXTXPORTNODES_c1dedb49d2f3 as KSPROPERTYEXTXPORTNODES}
+
+pub using @8d35a65211e461f2 {type KSPROPERTYEXTXPORTNODESUEUnion_5d987f53b346 as KSPROPERTYEXTXPORTNODESUEUnion}
+
+pub using @8d35a65211e461f2 {type KSPROPERTYEXTXPORTNODESUEUnionRawAVCEStruct_ba413b38ce6c as KSPROPERTYEXTXPORTNODESUEUnionRawAVCEStruct}
+
+pub using @8d35a65211e461f2 {type KSPROPERTYEXTXPORTNODESUEUnionTimecodeEStruct_8c50ed2083ce as KSPROPERTYEXTXPORTNODESUEUnionTimecodeEStruct}
+
+pub using @8d35a65211e461f2 {type KSPROPERTYEXTXPORTS_8a315ba2f589 as KSPROPERTYEXTXPORTS}
+
+pub using @8d35a65211e461f2 {type KSPROPERTYEXTXPORTSUEUnion_769072117fb4 as KSPROPERTYEXTXPORTSUEUnion}
+
+pub using @8d35a65211e461f2 {type KSPROPERTYEXTXPORTSUEUnionRawAVCEStruct_eeed3e87a755 as KSPROPERTYEXTXPORTSUEUnionRawAVCEStruct}
+
+pub using @8d35a65211e461f2 {type KSPROPERTYEXTXPORTSUEUnionTimecodeEStruct_3adff2d925c4 as KSPROPERTYEXTXPORTSUEUnionTimecodeEStruct}
+
+pub using @8d35a65211e461f2 {type KSPROPERTYFMRXCONTROL_c2d1771805a7 as KSPROPERTYFMRXCONTROL}
+
+pub using @8d35a65211e461f2 {type KSPROPERTYFMRXTOPOLOGY_8166b2c5b795 as KSPROPERTYFMRXTOPOLOGY}
+
+pub using @8d35a65211e461f2 {type KSPROPERTYGENERAL_3179221504a2 as KSPROPERTYGENERAL}
+
+pub using @8d35a65211e461f2 {type KSPROPERTYHRTF3D_a94039f73941 as KSPROPERTYHRTF3D}
+
+pub using @8d35a65211e461f2 {type KSPROPERTYINTERLEAVEDAUDIO_b1e5e180b3a1 as KSPROPERTYINTERLEAVEDAUDIO}
+
+pub using @8d35a65211e461f2 {type KSPROPERTYITD3D_3068621cc50b as KSPROPERTYITD3D}
+
+pub using @8d35a65211e461f2 {type KSPROPERTYJACK_957159cb7be4 as KSPROPERTYJACK}
+
+pub using @8d35a65211e461f2 {type KSPROPERTYMEDIAAVAILABLE_014cc2ae570f as KSPROPERTYMEDIAAVAILABLE}
+
+pub using @8d35a65211e461f2 {type KSPROPERTYMEDIASEEKING_6548a1bc3ca1 as KSPROPERTYMEDIASEEKING}
+
+pub using @8d35a65211e461f2 {type KSPROPERTYMEMBERSHEADER_d9c80dacd908 as KSPROPERTYMEMBERSHEADER}
+
+pub using @8d35a65211e461f2 {type KSPROPERTYMIDILOOPEDSTREAMING_66283ebee1e8 as KSPROPERTYMIDILOOPEDSTREAMING}
+
+pub using @8d35a65211e461f2 {type KSPROPERTYMPEG2VID_6735fa7cd35c as KSPROPERTYMPEG2VID}
+
+pub using @8d35a65211e461f2 {type KSPROPERTYMPEG4MEDIATYPEATTRIBUTES_e039775255a0 as KSPROPERTYMPEG4MEDIATYPEATTRIBUTES}
+
+pub using @8d35a65211e461f2 {type KSPROPERTYNETWORKCAMERACONTROLEVENTINFO_26a9674d7f6b as KSPROPERTYNETWORKCAMERACONTROLEVENTINFO}
+
+pub using @8d35a65211e461f2 {type KSPROPERTYNETWORKCAMERACONTROLMETADATAINFO_f04369f1cbde as KSPROPERTYNETWORKCAMERACONTROLMETADATAINFO}
+
+pub using @8d35a65211e461f2 {type KSPROPERTYNETWORKCAMERACONTROLMETADATATYPE_f74f3ae9dfeb as KSPROPERTYNETWORKCAMERACONTROLMETADATATYPE}
+
+pub using @8d35a65211e461f2 {type KSPROPERTYNETWORKCAMERACONTROLNTPINFOHEADER_f1837b0fdeb3 as KSPROPERTYNETWORKCAMERACONTROLNTPINFOHEADER}
+
+pub using @8d35a65211e461f2 {type KSPROPERTYNETWORKCAMERACONTROLNTPINFOTYPE_77e609abfa97 as KSPROPERTYNETWORKCAMERACONTROLNTPINFOTYPE}
+
+pub using @8d35a65211e461f2 {type KSPROPERTYNETWORKCAMERACONTROLPROPERTY_466285ff45cd as KSPROPERTYNETWORKCAMERACONTROLPROPERTY}
+
+pub using @8d35a65211e461f2 {type KSPROPERTYOVERLAYUPDATE_5283ee8d6e8c as KSPROPERTYOVERLAYUPDATE}
+
+pub using @8d35a65211e461f2 {type KSPROPERTYPIN_fb7f9dd7cd49 as KSPROPERTYPIN}
+
+pub using @8d35a65211e461f2 {type KSPROPERTYPOSITIONS_332d5bfa9ab6 as KSPROPERTYPOSITIONS}
+
+pub using @8d35a65211e461f2 {type KSPROPERTYQUALITY_f4e702cd56ef as KSPROPERTYQUALITY}
+
+pub using @8d35a65211e461f2 {type KSPROPERTYRTAUDIO_b9b34a04d70b as KSPROPERTYRTAUDIO}
+
+pub using @8d35a65211e461f2 {type KSPROPERTYSELECTORNODES_e66c042f2789 as KSPROPERTYSELECTORNODES}
+
+pub using @8d35a65211e461f2 {type KSPROPERTYSELECTORS_7aed7b2404f7 as KSPROPERTYSELECTORS}
+
+pub using @8d35a65211e461f2 {type KSPROPERTYSERIAL_61bbf8e39ffd as KSPROPERTYSERIAL}
+
+pub using @8d35a65211e461f2 {type KSPROPERTYSERIALHDR_665001adb58f as KSPROPERTYSERIALHDR}
+
+pub using @8d35a65211e461f2 {type KSPROPERTYSETIDExtendedCameraControl_9d752e19b6b1 as KSPROPERTYSETIDExtendedCameraControl}
+
+pub using @8d35a65211e461f2 {type KSPROPERTYSETIDNetworkCameraControl_d4858d34e1ed as KSPROPERTYSETIDNetworkCameraControl}
+
+pub using @8d35a65211e461f2 {type KSPROPERTYSETIDPerFrameSettingControl_99866c4b6d7e as KSPROPERTYSETIDPerFrameSettingControl}
+
+pub using @8d35a65211e461f2 {type KSPROPERTYSETIDWindowsCameraEffect_e1cd10a13256 as KSPROPERTYSETIDWindowsCameraEffect}
+
+pub using @8d35a65211e461f2 {type KSPROPERTYSOUNDDETECTOR_0e24c2e0dc0b as KSPROPERTYSOUNDDETECTOR}
+
+pub using @8d35a65211e461f2 {type KSPROPERTYSPHLI_98126df45f41 as KSPROPERTYSPHLI}
+
+pub using @8d35a65211e461f2 {type KSPROPERTYSPPAL_90ecd8caf3dd as KSPROPERTYSPPAL}
+
+pub using @8d35a65211e461f2 {type KSPROPERTYSTEPPINGLONG_a59e70df9e4e as KSPROPERTYSTEPPINGLONG}
+
+pub using @8d35a65211e461f2 {type KSPROPERTYSTEPPINGLONGLONG_df1134377486 as KSPROPERTYSTEPPINGLONGLONG}
+
+pub using @8d35a65211e461f2 {type KSPROPERTYSTREAM_9878293551e6 as KSPROPERTYSTREAM}
+
+pub using @8d35a65211e461f2 {type KSPROPERTYSTREAMINTERFACE_2657e14d94c1 as KSPROPERTYSTREAMINTERFACE}
+
+pub using @8d35a65211e461f2 {type KSPROPERTYTELEPHONYCONTROL_66c1168537d9 as KSPROPERTYTELEPHONYCONTROL}
+
+pub using @8d35a65211e461f2 {type KSPROPERTYTELEPHONYTOPOLOGY_b0e7682359a7 as KSPROPERTYTELEPHONYTOPOLOGY}
+
+pub using @8d35a65211e461f2 {type KSPROPERTYTIMECODE_be48f7fbceb5 as KSPROPERTYTIMECODE}
+
+pub using @8d35a65211e461f2 {type KSPROPERTYTIMECODENODES_2b23c6530fa7 as KSPROPERTYTIMECODENODES}
+
+pub using @8d35a65211e461f2 {type KSPROPERTYTIMECODES_902188bdb0e6 as KSPROPERTYTIMECODES}
+
+pub using @8d35a65211e461f2 {type KSPROPERTYTOPOLOGY_a5062ff90982 as KSPROPERTYTOPOLOGY}
+
+pub using @8d35a65211e461f2 {type KSPROPERTYTOPOLOGYNODE_909ec21a18b0 as KSPROPERTYTOPOLOGYNODE}
+
+pub using @8d35a65211e461f2 {type KSPROPERTYTUNER_3aa632f86c4d as KSPROPERTYTUNER}
+
+pub using @8d35a65211e461f2 {type KSPROPERTYTUNERCAPSS_ff0b7a923a36 as KSPROPERTYTUNERCAPSS}
+
+pub using @8d35a65211e461f2 {type KSPROPERTYTUNERFREQUENCYS_96fc4baeee62 as KSPROPERTYTUNERFREQUENCYS}
+
+pub using @8d35a65211e461f2 {type KSPROPERTYTUNERIFMEDIUMS_d92d0a9f2ede as KSPROPERTYTUNERIFMEDIUMS}
+
+pub using @8d35a65211e461f2 {type KSPROPERTYTUNERINPUTS_7bd08a50ae35 as KSPROPERTYTUNERINPUTS}
+
+pub using @8d35a65211e461f2 {type KSPROPERTYTUNERMODECAPSS_14e726055928 as KSPROPERTYTUNERMODECAPSS}
+
+pub using @8d35a65211e461f2 {type KSPROPERTYTUNERMODES_ced7e0a517bb as KSPROPERTYTUNERMODES}
+
+pub using @8d35a65211e461f2 {type KSPROPERTYTUNERMODES_5a4fc2f619e2 as KSPROPERTYTUNERMODES_no_args}
+
+pub using @8d35a65211e461f2 {type KSPROPERTYTUNERNETWORKTYPESCANCAPSS_8635bdd74088 as KSPROPERTYTUNERNETWORKTYPESCANCAPSS}
+
+pub using @8d35a65211e461f2 {type KSPROPERTYTUNERSCANCAPSS_9f7ca2726029 as KSPROPERTYTUNERSCANCAPSS}
+
+pub using @8d35a65211e461f2 {type KSPROPERTYTUNERSCANSTATUSS_d527e4c464d2 as KSPROPERTYTUNERSCANSTATUSS}
+
+pub using @8d35a65211e461f2 {type KSPROPERTYTUNERSTANDARDMODES_f1bf853ec0d5 as KSPROPERTYTUNERSTANDARDMODES}
+
+pub using @8d35a65211e461f2 {type KSPROPERTYTUNERSTANDARDS_7b0ff51c84d1 as KSPROPERTYTUNERSTANDARDS}
+
+pub using @8d35a65211e461f2 {type KSPROPERTYTUNERSTATUSS_b39f6737a090 as KSPROPERTYTUNERSTATUSS}
+
+pub using @8d35a65211e461f2 {type KSPROPERTYTVAUDIOCAPSS_cc68c756d575 as KSPROPERTYTVAUDIOCAPSS}
+
+pub using @8d35a65211e461f2 {type KSPROPERTYTVAUDIOS_822af1b1ff6c as KSPROPERTYTVAUDIOS}
+
+pub using @8d35a65211e461f2 {type KSPROPERTYVBICAP_fcd0e9c59c2c as KSPROPERTYVBICAP}
+
+pub using @8d35a65211e461f2 {type KSPROPERTYVBICODECFILTERING_6e7ee3c21339 as KSPROPERTYVBICODECFILTERING}
+
+pub using @8d35a65211e461f2 {type KSPROPERTYVBICODECFILTERINGCCSUBSTREAMSS_c95321feed2b as KSPROPERTYVBICODECFILTERINGCCSUBSTREAMSS}
+
+pub using @8d35a65211e461f2 {type KSPROPERTYVBICODECFILTERINGNABTSSUBSTREAMSS_68c413369d12 as KSPROPERTYVBICODECFILTERINGNABTSSUBSTREAMSS}
+
+pub using @8d35a65211e461f2 {type KSPROPERTYVBICODECFILTERINGSCANLINESS_9dc78fe3e9aa as KSPROPERTYVBICODECFILTERINGSCANLINESS}
+
+pub using @8d35a65211e461f2 {type KSPROPERTYVBICODECFILTERINGSTATISTICSCCPINS_14a9e8e8bb8e as KSPROPERTYVBICODECFILTERINGSTATISTICSCCPINS}
+
+pub using @8d35a65211e461f2 {type KSPROPERTYVBICODECFILTERINGSTATISTICSCCS_e0aa5ed0497a as KSPROPERTYVBICODECFILTERINGSTATISTICSCCS}
+
+pub using @8d35a65211e461f2 {type KSPROPERTYVBICODECFILTERINGSTATISTICSCOMMONPINS_44fad4b1d43c as KSPROPERTYVBICODECFILTERINGSTATISTICSCOMMONPINS}
+
+pub using @8d35a65211e461f2 {type KSPROPERTYVBICODECFILTERINGSTATISTICSCOMMONS_66d8853fc90a as KSPROPERTYVBICODECFILTERINGSTATISTICSCOMMONS}
+
+pub using @8d35a65211e461f2 {type KSPROPERTYVBICODECFILTERINGSTATISTICSNABTSPINS_70873ab9a5fd as KSPROPERTYVBICODECFILTERINGSTATISTICSNABTSPINS}
+
+pub using @8d35a65211e461f2 {type KSPROPERTYVBICODECFILTERINGSTATISTICSNABTSS_b1e7fe2e68be as KSPROPERTYVBICODECFILTERINGSTATISTICSNABTSS}
+
+pub using @8d35a65211e461f2 {type KSPROPERTYVIDCAPCAMERACONTROL_dcff38b4f343 as KSPROPERTYVIDCAPCAMERACONTROL}
+
+pub using @8d35a65211e461f2 {type KSPROPERTYVIDCAPCROSSBAR_3cb09f352049 as KSPROPERTYVIDCAPCROSSBAR}
+
+pub using @8d35a65211e461f2 {type KSPROPERTYVIDCAPDROPPEDFRAMES_52d91bb70d04 as KSPROPERTYVIDCAPDROPPEDFRAMES}
+
+pub using @8d35a65211e461f2 {type KSPROPERTYVIDCAPSELECTOR_150d1a9cf68b as KSPROPERTYVIDCAPSELECTOR}
+
+pub using @8d35a65211e461f2 {type KSPROPERTYVIDCAPTVAUDIO_165e14f50f93 as KSPROPERTYVIDCAPTVAUDIO}
+
+pub using @8d35a65211e461f2 {type KSPROPERTYVIDCAPVIDEOCOMPRESSION_e929064451b0 as KSPROPERTYVIDCAPVIDEOCOMPRESSION}
+
+pub using @8d35a65211e461f2 {type KSPROPERTYVIDCAPVIDEOCONTROL_9158a69fc50d as KSPROPERTYVIDCAPVIDEOCONTROL}
+
+pub using @8d35a65211e461f2 {type KSPROPERTYVIDCAPVIDEODECODER_09fc905f0db1 as KSPROPERTYVIDCAPVIDEODECODER}
+
+pub using @8d35a65211e461f2 {type KSPROPERTYVIDCAPVIDEOENCODER_c3e3611f06e4 as KSPROPERTYVIDCAPVIDEOENCODER}
+
+pub using @8d35a65211e461f2 {type KSPROPERTYVIDCAPVIDEOPROCAMP_f38603ce2e26 as KSPROPERTYVIDCAPVIDEOPROCAMP}
+
+pub using @8d35a65211e461f2 {type KSPROPERTYVIDEOCOMPRESSIONGETINFOS_755d82cc40a3 as KSPROPERTYVIDEOCOMPRESSIONGETINFOS}
+
+pub using @8d35a65211e461f2 {type KSPROPERTYVIDEOCOMPRESSIONS_80bb3ca14167 as KSPROPERTYVIDEOCOMPRESSIONS}
+
+pub using @8d35a65211e461f2 {type KSPROPERTYVIDEOCOMPRESSIONS1_a09660efd227 as KSPROPERTYVIDEOCOMPRESSIONS1}
+
+pub using @8d35a65211e461f2 {type KSPROPERTYVIDEOCONTROLACTUALFRAMERATES_d05e7954616e as KSPROPERTYVIDEOCONTROLACTUALFRAMERATES}
+
+pub using @8d35a65211e461f2 {type KSPROPERTYVIDEOCONTROLCAPSS_a33a8ee44a86 as KSPROPERTYVIDEOCONTROLCAPSS}
+
+pub using @8d35a65211e461f2 {type KSPROPERTYVIDEOCONTROLFRAMERATESS_cdbd216ad661 as KSPROPERTYVIDEOCONTROLFRAMERATESS}
+
+pub using @8d35a65211e461f2 {type KSPROPERTYVIDEOCONTROLMODES_d11501262b79 as KSPROPERTYVIDEOCONTROLMODES}
+
+pub using @8d35a65211e461f2 {type KSPROPERTYVIDEODECODERCAPSS_1b3b6c723265 as KSPROPERTYVIDEODECODERCAPSS}
+
+pub using @8d35a65211e461f2 {type KSPROPERTYVIDEODECODERS_c63765a5a45f as KSPROPERTYVIDEODECODERS}
+
+pub using @8d35a65211e461f2 {type KSPROPERTYVIDEODECODERSTATUS2S_3269919b5638 as KSPROPERTYVIDEODECODERSTATUS2S}
+
+pub using @8d35a65211e461f2 {type KSPROPERTYVIDEODECODERSTATUSS_187c1d81d2cc as KSPROPERTYVIDEODECODERSTATUSS}
+
+pub using @8d35a65211e461f2 {type KSPROPERTYVIDEOENCODERS_49bf74bb3560 as KSPROPERTYVIDEOENCODERS}
+
+pub using @8d35a65211e461f2 {type KSPROPERTYVIDEOPROCAMPNODES_c33a4dd3bc21 as KSPROPERTYVIDEOPROCAMPNODES}
+
+pub using @8d35a65211e461f2 {type KSPROPERTYVIDEOPROCAMPNODES2_9b70f84fae3c as KSPROPERTYVIDEOPROCAMPNODES2}
+
+pub using @8d35a65211e461f2 {type KSPROPERTYVIDEOPROCAMPS_70a401da1fad as KSPROPERTYVIDEOPROCAMPS}
+
+pub using @8d35a65211e461f2 {type KSPROPERTYVIDEOPROCAMPS2_65ba63fa56b1 as KSPROPERTYVIDEOPROCAMPS2}
+
+pub using @8d35a65211e461f2 {type KSPROPERTYVIDMEMTRANSPORT_2586b2600937 as KSPROPERTYVIDMEMTRANSPORT}
+
+pub using @8d35a65211e461f2 {type KSPROPERTYVPCONFIG_0c54aa974fdc as KSPROPERTYVPCONFIG}
+
+pub using @8d35a65211e461f2 {type KSPROPERTYWAVE_4ad5620f6c11 as KSPROPERTYWAVE}
+
+pub using @8d35a65211e461f2 {type KSPROPSETIDAC3_91812c0e127b as KSPROPSETIDAC3}
+
+pub using @8d35a65211e461f2 {type KSPROPSETIDAudio_3edffdeb8f6c as KSPROPSETIDAudio}
+
+pub using @8d35a65211e461f2 {type KSPROPSETIDAudioBufferDuration_c93ede091819 as KSPROPSETIDAudioBufferDuration}
+
+pub using @8d35a65211e461f2 {type KSPROPSETIDAudioDecoderOut_e466aeb9f606 as KSPROPSETIDAudioDecoderOut}
+
+pub using @8d35a65211e461f2 {type KSPROPSETIDAudioEngine_a4a3bdf1564f as KSPROPSETIDAudioEngine}
+
+pub using @8d35a65211e461f2 {type KSPROPSETIDAudioLoopback_5195bceeb6b9 as KSPROPSETIDAudioLoopback}
+
+pub using @8d35a65211e461f2 {type KSPROPSETIDAudioModule_e3ddd53e5f9d as KSPROPSETIDAudioModule}
+
+pub using @8d35a65211e461f2 {type KSPROPSETIDAudioPosture_08f17bfad913 as KSPROPSETIDAudioPosture}
+
+pub using @8d35a65211e461f2 {type KSPROPSETIDAudioResourceManagement_5ac4aad3d384 as KSPROPSETIDAudioResourceManagement}
+
+pub using @8d35a65211e461f2 {type KSPROPSETIDAudioSignalProcessing_72bd721e78eb as KSPROPSETIDAudioSignalProcessing}
+
+pub using @8d35a65211e461f2 {type KSPROPSETIDBibliographic_f4b48e587038 as KSPROPSETIDBibliographic}
+
+pub using @8d35a65211e461f2 {type KSPROPSETIDBtAudio_757ca15787c4 as KSPROPSETIDBtAudio}
+
+pub using @8d35a65211e461f2 {type KSPROPSETIDClock_8c91bcf40c3e as KSPROPSETIDClock}
+
+pub using @8d35a65211e461f2 {type KSPROPSETIDConnection_ac36c37a7f13 as KSPROPSETIDConnection}
+
+pub using @8d35a65211e461f2 {type KSPROPSETIDCopyProt_9cada72541a5 as KSPROPSETIDCopyProt}
+
+pub using @8d35a65211e461f2 {type KSPROPSETIDCyclic_1434f43c6f22 as KSPROPSETIDCyclic}
+
+pub using @8d35a65211e461f2 {type KSPROPSETIDDirectSound3DBuffer_dbad6449a116 as KSPROPSETIDDirectSound3DBuffer}
+
+pub using @8d35a65211e461f2 {type KSPROPSETIDDirectSound3DListener_2a1e689c2196 as KSPROPSETIDDirectSound3DListener}
+
+pub using @8d35a65211e461f2 {type KSPROPSETIDDrmAudioStream_a7ecfa5a92ca as KSPROPSETIDDrmAudioStream}
+
+pub using @8d35a65211e461f2 {type KSPROPSETIDDvdSubPic_3740d4535815 as KSPROPSETIDDvdSubPic}
+
+pub using @8d35a65211e461f2 {type KSPROPSETIDFMRXControl_56ed916e5248 as KSPROPSETIDFMRXControl}
+
+pub using @8d35a65211e461f2 {type KSPROPSETIDFMRXTopology_62866e94b448 as KSPROPSETIDFMRXTopology}
+
+pub using @8d35a65211e461f2 {type KSPROPSETIDGeneral_216c812d9c6e as KSPROPSETIDGeneral}
+
+pub using @8d35a65211e461f2 {type KSPROPSETIDHrtf3d_4382d70c27c4 as KSPROPSETIDHrtf3d}
+
+pub using @8d35a65211e461f2 {type KSPROPSETIDInterleavedAudio_0dcea6fedc4b as KSPROPSETIDInterleavedAudio}
+
+pub using @8d35a65211e461f2 {type KSPROPSETIDItd3d_b072af86e2ad as KSPROPSETIDItd3d}
+
+pub using @8d35a65211e461f2 {type KSPROPSETIDJack_c3f9141adc84 as KSPROPSETIDJack}
+
+pub using @8d35a65211e461f2 {type KSPROPSETIDMPEG4MediaTypeAttributes_ab5e8aae645f as KSPROPSETIDMPEG4MediaTypeAttributes}
+
+pub using @8d35a65211e461f2 {type KSPROPSETIDMediaSeeking_6bac01324ee5 as KSPROPSETIDMediaSeeking}
+
+pub using @8d35a65211e461f2 {type KSPROPSETIDMemoryTransport_70edb056e79d as KSPROPSETIDMemoryTransport}
+
+pub using @8d35a65211e461f2 {type KSPROPSETIDMidiLoopedStreaming_8571e6fbfee6 as KSPROPSETIDMidiLoopedStreaming}
+
+pub using @8d35a65211e461f2 {type KSPROPSETIDMpeg2Vid_05ffefd90acb as KSPROPSETIDMpeg2Vid}
+
+pub using @8d35a65211e461f2 {type KSPROPSETIDOverlayUpdate_bc96275c421e as KSPROPSETIDOverlayUpdate}
+
+pub using @8d35a65211e461f2 {type KSPROPSETIDPin_6e696a1a69a2 as KSPROPSETIDPin}
+
+pub using @8d35a65211e461f2 {type KSPROPSETIDPinMDLCacheClearProp_4de859ff5c11 as KSPROPSETIDPinMDLCacheClearProp}
+
+pub using @8d35a65211e461f2 {type KSPROPSETIDQuality_87f721e68f14 as KSPROPSETIDQuality}
+
+pub using @8d35a65211e461f2 {type KSPROPSETIDRtAudio_6e09e4783519 as KSPROPSETIDRtAudio}
+
+pub using @8d35a65211e461f2 {type KSPROPSETIDSoundDetector_a2e7455ba208 as KSPROPSETIDSoundDetector}
+
+pub using @8d35a65211e461f2 {type KSPROPSETIDSoundDetector2_d5237b68ec31 as KSPROPSETIDSoundDetector2}
+
+pub using @8d35a65211e461f2 {type KSPROPSETIDStream_fd3d566d3f7a as KSPROPSETIDStream}
+
+pub using @8d35a65211e461f2 {type KSPROPSETIDStreamAllocator_1e3677ba4913 as KSPROPSETIDStreamAllocator}
+
+pub using @8d35a65211e461f2 {type KSPROPSETIDStreamInterface_f6453d38c2dc as KSPROPSETIDStreamInterface}
+
+pub using @8d35a65211e461f2 {type KSPROPSETIDTSRateChange_271c7c7f386a as KSPROPSETIDTSRateChange}
+
+pub using @8d35a65211e461f2 {type KSPROPSETIDTelephonyControl_9867ea702c8e as KSPROPSETIDTelephonyControl}
+
+pub using @8d35a65211e461f2 {type KSPROPSETIDTelephonyTopology_b31776c9c099 as KSPROPSETIDTelephonyTopology}
+
+pub using @8d35a65211e461f2 {type KSPROPSETIDTopology_5297945438a5 as KSPROPSETIDTopology}
+
+pub using @8d35a65211e461f2 {type KSPROPSETIDTopologyNode_4be3dc29c123 as KSPROPSETIDTopologyNode}
+
+pub using @8d35a65211e461f2 {type KSPROPSETIDVBICAPPROPERTIES_38a05fde7dc4 as KSPROPSETIDVBICAPPROPERTIES}
+
+pub using @8d35a65211e461f2 {type KSPROPSETIDVBICodecFiltering_a74bea84c82d as KSPROPSETIDVBICodecFiltering}
+
+pub using @8d35a65211e461f2 {type KSPROPSETIDVPConfig_aaae1499cc60 as KSPROPSETIDVPConfig}
+
+pub using @8d35a65211e461f2 {type KSPROPSETIDVPVBIConfig_81fb4b301687 as KSPROPSETIDVPVBIConfig}
+
+pub using @8d35a65211e461f2 {type KSPROPSETIDVramCapture_dae2cda4add8 as KSPROPSETIDVramCapture}
+
+pub using @8d35a65211e461f2 {type KSPROPSETIDWave_016008207523 as KSPROPSETIDWave}
+
+pub using @8d35a65211e461f2 {type KSPROPTYPESETIDGeneral_52920e5c9ebc as KSPROPTYPESETIDGeneral}
+
+pub using @8d35a65211e461f2 {type KSPTIMEFORMAT_9ded0e3f487d as KSPTIMEFORMAT}
+
+pub using @8d35a65211e461f2 {type KSPhysicalConnectorType_112b2cb97d5e as KSPhysicalConnectorType}
+
+pub using @8d35a65211e461f2 {type KSQUALITY_b650035e8a05 as KSQUALITY}
+
+pub using @8d35a65211e461f2 {type KSQUALITYMANAGER_e6e34308d822 as KSQUALITYMANAGER}
+
+pub using @8d35a65211e461f2 {type KSQUERYBUFFER_6496187c7315 as KSQUERYBUFFER}
+
+pub using @8d35a65211e461f2 {type KSRATE_bb04cff0e477 as KSRATE}
+
+pub using @8d35a65211e461f2 {type KSRATECAPABILITY_ade2542d8d46 as KSRATECAPABILITY}
+
+pub using @8d35a65211e461f2 {type KSRELATIVEEVENT_ae581c3c49bb as KSRELATIVEEVENT}
+
+pub using @8d35a65211e461f2 {type KSRELATIVEEVENTAnonymousEUnion_deeb32ced052 as KSRELATIVEEVENTAnonymousEUnion}
+
+pub using @8d35a65211e461f2 {type KSRESET_8bfed11b7811 as KSRESET}
+
+pub using @8d35a65211e461f2 {type KSRESOLUTION_37689b7c8f81 as KSRESOLUTION}
+
+pub using @8d35a65211e461f2 {type KSRGBQUAD_09cfbc80d681 as KSRGBQUAD}
+
+pub using @8d35a65211e461f2 {type KSRTAUDIOBUFFER_0e72bbe1bbed as KSRTAUDIOBUFFER}
+
+pub using @8d35a65211e461f2 {type KSRTAUDIOBUFFER32_4d84527759ed as KSRTAUDIOBUFFER32}
+
+pub using @8d35a65211e461f2 {type KSRTAUDIOBUFFERPROPERTY_34a447c6024e as KSRTAUDIOBUFFERPROPERTY}
+
+pub using @8d35a65211e461f2 {type KSRTAUDIOBUFFERPROPERTY32_d2bc6e5d87f4 as KSRTAUDIOBUFFERPROPERTY32}
+
+pub using @8d35a65211e461f2 {type KSRTAUDIOBUFFERPROPERTYWITHNOTIFICATION_3f30669d4f6b as KSRTAUDIOBUFFERPROPERTYWITHNOTIFICATION}
+
+pub using @8d35a65211e461f2 {type KSRTAUDIOBUFFERPROPERTYWITHNOTIFICATION32_e687c14b9344 as KSRTAUDIOBUFFERPROPERTYWITHNOTIFICATION32}
+
+pub using @8d35a65211e461f2 {type KSRTAUDIOGETREADPACKETINFO_601747d023c7 as KSRTAUDIOGETREADPACKETINFO}
+
+pub using @8d35a65211e461f2 {type KSRTAUDIOHWLATENCY_b1578e764131 as KSRTAUDIOHWLATENCY}
+
+pub using @8d35a65211e461f2 {type KSRTAUDIOHWREGISTER_1040b7a28215 as KSRTAUDIOHWREGISTER}
+
+pub using @8d35a65211e461f2 {type KSRTAUDIOHWREGISTER32_7a56c556a0b9 as KSRTAUDIOHWREGISTER32}
+
+pub using @8d35a65211e461f2 {type KSRTAUDIOHWREGISTERPROPERTY_ccf24ae2eabc as KSRTAUDIOHWREGISTERPROPERTY}
+
+pub using @8d35a65211e461f2 {type KSRTAUDIOHWREGISTERPROPERTY32_80cf00e397dc as KSRTAUDIOHWREGISTERPROPERTY32}
+
+pub using @8d35a65211e461f2 {type KSRTAUDIONOTIFICATIONEVENTPROPERTY_7c1a100b9ecd as KSRTAUDIONOTIFICATIONEVENTPROPERTY}
+
+pub using @8d35a65211e461f2 {type KSRTAUDIONOTIFICATIONEVENTPROPERTY32_d2aef849d28f as KSRTAUDIONOTIFICATIONEVENTPROPERTY32}
+
+pub using @8d35a65211e461f2 {type KSRTAUDIOPACKETVREGISTER_0798a6022811 as KSRTAUDIOPACKETVREGISTER}
+
+pub using @8d35a65211e461f2 {type KSRTAUDIOPACKETVREGISTERPROPERTY_1554c6b762e4 as KSRTAUDIOPACKETVREGISTERPROPERTY}
+
+pub using @8d35a65211e461f2 {type KSRTAUDIOSETWRITEPACKETINFO_38044e75d274 as KSRTAUDIOSETWRITEPACKETINFO}
+
+pub using @8d35a65211e461f2 {type KSSECURECAMERASCENARIOID_12bc930415bb as KSSECURECAMERASCENARIOID}
+
+pub using @8d35a65211e461f2 {type KSSEEKINGCAPABILITIES_030c3576a925 as KSSEEKINGCAPABILITIES}
+
+pub using @8d35a65211e461f2 {type KSSEEKINGFLAGS_2e1e9711757e as KSSEEKINGFLAGS}
+
+pub using @8d35a65211e461f2 {type KSSOUNDDETECTORPROPERTY_d5dc659c1f39 as KSSOUNDDETECTORPROPERTY}
+
+pub using @8d35a65211e461f2 {type KSSTATE_f5b2a48e3ce1 as KSSTATE}
+
+pub using @8d35a65211e461f2 {type KSSTREAMALLOCATORSTATUS_36496c5ad6ff as KSSTREAMALLOCATORSTATUS}
+
+pub using @8d35a65211e461f2 {type KSSTREAMALLOCATORSTATUSEX_a2ebfb608902 as KSSTREAMALLOCATORSTATUSEX}
+
+pub using @8d35a65211e461f2 {type KSSTREAMHEADER_de3e8893399c as KSSTREAMHEADER}
+
+pub using @8d35a65211e461f2 {type KSSTREAMMETADATAINFO_92f178cf2341 as KSSTREAMMETADATAINFO}
+
+pub using @8d35a65211e461f2 {type KSSTREAMSEGMENT_dbda90e4581b as KSSTREAMSEGMENT}
+
+pub using @8d35a65211e461f2 {type KSSTREAMUVCMETADATA_0a19c95ebb0c as KSSTREAMUVCMETADATA}
+
+pub using @8d35a65211e461f2 {type KSSTREAMUVCMETADATATYPETIMESTAMP_6d80a00900fc as KSSTREAMUVCMETADATATYPETIMESTAMP}
+
+pub using @8d35a65211e461f2 {type KSSTREAMUVCMETADATATYPETIMESTAMPAnonymousEUnion_aae31938fdfb as KSSTREAMUVCMETADATATYPETIMESTAMPAnonymousEUnion}
+
+pub using @8d35a65211e461f2 {type KSSTREAMUVCMETADATATYPETIMESTAMPAnonymousEUnionAnonymousEStruct_f0c3e49f5a6f as KSSTREAMUVCMETADATATYPETIMESTAMPAnonymousEUnionAnonymousEStruct}
+
+pub using @8d35a65211e461f2 {type KSTELEPHONYCALLCONTROL_e5c253b28390 as KSTELEPHONYCALLCONTROL}
+
+pub using @8d35a65211e461f2 {type KSTELEPHONYCALLINFO_64413932064a as KSTELEPHONYCALLINFO}
+
+pub using @8d35a65211e461f2 {type KSTELEPHONYPROVIDERCHANGE_8622d1866393 as KSTELEPHONYPROVIDERCHANGE}
+
+pub using @8d35a65211e461f2 {type KSTIME_1bb7487f28fa as KSTIME}
+
+pub using @8d35a65211e461f2 {type KSTIMEFORMATBYTE_e5a5ec4d3c60 as KSTIMEFORMATBYTE}
+
+pub using @8d35a65211e461f2 {type KSTIMEFORMATFIELD_2a8ad88c6799 as KSTIMEFORMATFIELD}
+
+pub using @8d35a65211e461f2 {type KSTIMEFORMATFRAME_9e1d2e10f3c7 as KSTIMEFORMATFRAME}
+
+pub using @8d35a65211e461f2 {type KSTIMEFORMATMEDIATIME_19c64603e154 as KSTIMEFORMATMEDIATIME}
+
+pub using @8d35a65211e461f2 {type KSTIMEFORMATSAMPLE_68178c7b69f6 as KSTIMEFORMATSAMPLE}
+
+pub using @8d35a65211e461f2 {type KSTOPOLOGY_894fba01042d as KSTOPOLOGY}
+
+pub using @8d35a65211e461f2 {type KSTOPOLOGYCONNECTION_f9ed53d58490 as KSTOPOLOGYCONNECTION}
+
+pub using @8d35a65211e461f2 {type KSTOPOLOGYENDPOINTID_063dcf77a478 as KSTOPOLOGYENDPOINTID}
+
+pub using @8d35a65211e461f2 {type KSTOPOLOGYENDPOINTIDPAIR_83c548e56643 as KSTOPOLOGYENDPOINTIDPAIR}
+
+pub using @8d35a65211e461f2 {type KSTRUECOLORINFO_5698ae04ee0a as KSTRUECOLORINFO}
+
+pub using @8d35a65211e461f2 {type KSTUNERSTRATEGY_ad1824b01f49 as KSTUNERSTRATEGY}
+
+pub using @8d35a65211e461f2 {type KSTUNERTUNINGFLAGS_08a2f71e159f as KSTUNERTUNINGFLAGS}
+
+pub using @8d35a65211e461f2 {type KSTVTUNERCHANGEINFO_7121c5d68d22 as KSTVTUNERCHANGEINFO}
+
+pub using @8d35a65211e461f2 {type KSVBIFRAMEINFO_f9564de3e5b1 as KSVBIFRAMEINFO}
+
+pub using @8d35a65211e461f2 {type KSVBIINFOHEADER_907bfdc2bfb9 as KSVBIINFOHEADER}
+
+pub using @8d35a65211e461f2 {type KSVIDEODECODERFLAGS_dac86d6be3f5 as KSVIDEODECODERFLAGS}
+
+pub using @8d35a65211e461f2 {type KSVIDEOINFO_e4b3f18ddb15 as KSVIDEOINFO}
+
+pub using @8d35a65211e461f2 {type KSVIDEOINFOAnonymousEUnion_bcf1e1386145 as KSVIDEOINFOAnonymousEUnion}
+
+pub using @8d35a65211e461f2 {type KSVIDEOINFOHEADER_7cb2134d00c9 as KSVIDEOINFOHEADER}
+
+pub using @8d35a65211e461f2 {type KSVIDEOINFOHEADER2_b8a9ade43759 as KSVIDEOINFOHEADER2}
+
+pub using @8d35a65211e461f2 {type KSVIDEOINFOHEADER2AnonymousEUnion_a783d1b31f08 as KSVIDEOINFOHEADER2AnonymousEUnion}
+
+pub using @8d35a65211e461f2 {type KSVIDEOSTREAMCONFIGCAPS_6051565fce05 as KSVIDEOSTREAMCONFIGCAPS}
+
+pub using @8d35a65211e461f2 {type KSVPMAXPIXELRATE_429b6ae28c51 as KSVPMAXPIXELRATE}
+
+pub using @8d35a65211e461f2 {type KSVPSIZEPROP_6a52c6039982 as KSVPSIZEPROP}
+
+pub using @8d35a65211e461f2 {type KSVPSURFACEPARAMS_763797fa9f04 as KSVPSURFACEPARAMS}
+
+pub using @8d35a65211e461f2 {type KSVideoControlFlags_5f2f6b56cf03 as KSVideoControlFlags}
+
+pub using @8d35a65211e461f2 {type KSVideoStreamingHints_0b848b8096a9 as KSVideoStreamingHints}
+
+pub using @8d35a65211e461f2 {type KSWAVEBUFFER_52fb62bdbcab as KSWAVEBUFFER}
+
+pub using @8d35a65211e461f2 {type KSWAVECOMPATCAPS_ff2f3f905cd5 as KSWAVECOMPATCAPS}
+
+pub using @8d35a65211e461f2 {type KSWAVEINPUTCAPABILITIES_f155e62cf61c as KSWAVEINPUTCAPABILITIES}
+
+pub using @8d35a65211e461f2 {type KSWAVEOUTPUTCAPABILITIES_10c3296c04bb as KSWAVEOUTPUTCAPABILITIES}
+
+pub using @8d35a65211e461f2 {type KSWAVETABLEWAVEDESC_1e8064b5613b as KSWAVETABLEWAVEDESC}
+
+pub using @8d35a65211e461f2 {type KSWAVEVOLUME_fd10440e2200 as KSWAVEVOLUME}
+
+pub using @8d35a65211e461f2 {type LOOPEDSTREAMINGPOSITIONEVENTDATA_ddb72e394ded as LOOPEDSTREAMINGPOSITIONEVENTDATA}
+
+pub using @8d35a65211e461f2 {type MEDIUMINFO_cb19915c64f6 as MEDIUMINFO}
+
+pub using @8d35a65211e461f2 {type MFMDLSHAREDPAYLOADKEY_128a11038305 as MFMDLSHAREDPAYLOADKEY}
+
+pub using @8d35a65211e461f2 {type MFMDLSHAREDPAYLOADKEYCombinedEStruct_80586aeae9f6 as MFMDLSHAREDPAYLOADKEYCombinedEStruct}
+
+pub using @8d35a65211e461f2 {type NABTSBUFFER_38293c55d12d as NABTSBUFFER}
+
+pub using @8d35a65211e461f2 {type NABTSBUFFERLINE_1b93830aed91 as NABTSBUFFERLINE}
+
+pub using @8d35a65211e461f2 {type NABTSFECBUFFER_438132d362d1 as NABTSFECBUFFER}
+
+pub using @8d35a65211e461f2 {type OPTIMALWEIGHTTOTALS_eb0012a2dc19 as OPTIMALWEIGHTTOTALS}
+
+pub using @8d35a65211e461f2 {type PINNAMEDISPLAYPORTOUT_97cb7a65ba61 as PINNAMEDISPLAYPORTOUT}
+
+pub using @8d35a65211e461f2 {type PINNAMEHDMIOUT_acc922e3f84e as PINNAMEHDMIOUT}
+
+pub using @8d35a65211e461f2 {type PINNAMEIMAGE_7cc72b45bd03 as PINNAMEIMAGE}
+
+pub using @8d35a65211e461f2 {type PINNAMESPDIFIN_6750717adde2 as PINNAMESPDIFIN}
+
+pub using @8d35a65211e461f2 {type PINNAMESPDIFOUT_f37e84255c37 as PINNAMESPDIFOUT}
+
+pub using @8d35a65211e461f2 {type PINNAMEVIDEOANALOGVIDEOIN_061ab91dc6d2 as PINNAMEVIDEOANALOGVIDEOIN}
+
+pub using @8d35a65211e461f2 {type PINNAMEVIDEOCAPTURE_4a2e717384a8 as PINNAMEVIDEOCAPTURE}
+
+pub using @8d35a65211e461f2 {type PINNAMEVIDEOCC_4946360d2163 as PINNAMEVIDEOCC}
+
+pub using @8d35a65211e461f2 {type PINNAMEVIDEOCCCAPTURE_5bd8cd2f96be as PINNAMEVIDEOCCCAPTURE}
+
+pub using @8d35a65211e461f2 {type PINNAMEVIDEOEDS_8d66c25dc778 as PINNAMEVIDEOEDS}
+
+pub using @8d35a65211e461f2 {type PINNAMEVIDEONABTS_394206304059 as PINNAMEVIDEONABTS}
+
+pub using @8d35a65211e461f2 {type PINNAMEVIDEONABTSCAPTURE_6c5130679d0a as PINNAMEVIDEONABTSCAPTURE}
+
+pub using @8d35a65211e461f2 {type PINNAMEVIDEOPREVIEW_9fb8cd77f4e5 as PINNAMEVIDEOPREVIEW}
+
+pub using @8d35a65211e461f2 {type PINNAMEVIDEOSTILL_50feb4aa3605 as PINNAMEVIDEOSTILL}
+
+pub using @8d35a65211e461f2 {type PINNAMEVIDEOTELETEXT_67982295f37a as PINNAMEVIDEOTELETEXT}
+
+pub using @8d35a65211e461f2 {type PINNAMEVIDEOTIMECODE_c7a94cff7436 as PINNAMEVIDEOTIMECODE}
+
+pub using @8d35a65211e461f2 {type PINNAMEVIDEOVBI_ff5659d2b1e4 as PINNAMEVIDEOVBI}
+
+pub using @8d35a65211e461f2 {type PINNAMEVIDEOVIDEOPORT_a42ae50f8fa9 as PINNAMEVIDEOVIDEOPORT}
+
+pub using @8d35a65211e461f2 {type PINNAMEVIDEOVIDEOPORTVBI_a87076527a01 as PINNAMEVIDEOVIDEOPORTVBI}
+
+pub using @8d35a65211e461f2 {type PIPEALLOCATORPLACE_76c7533ae512 as PIPEALLOCATORPLACE}
+
+pub using @8d35a65211e461f2 {type PIPEDIMENSIONS_b38d9d8d4c28 as PIPEDIMENSIONS}
+
+pub using @8d35a65211e461f2 {type PIPESTATE_659532676433 as PIPESTATE}
+
+pub using @8d35a65211e461f2 {type PIPETERMINATION_becf8b6c8a8f as PIPETERMINATION}
+
+pub using @8d35a65211e461f2 {type PROPSETIDALLOCATORCONTROL_e5142507ca03 as PROPSETIDALLOCATORCONTROL}
+
+pub using @8d35a65211e461f2 {type PROPSETIDEXTDEVICE_042517333afd as PROPSETIDEXTDEVICE}
+
+pub using @8d35a65211e461f2 {type PROPSETIDEXTTRANSPORT_d3eb42f4f8f3 as PROPSETIDEXTTRANSPORT}
+
+pub using @8d35a65211e461f2 {type PROPSETIDTIMECODEREADER_9d96c2d09546 as PROPSETIDTIMECODEREADER}
+
+pub using @8d35a65211e461f2 {type PROPSETIDTUNER_872855f2c98c as PROPSETIDTUNER}
+
+pub using @8d35a65211e461f2 {type PROPSETIDVIDCAPCAMERACONTROL_0d4cc36cf645 as PROPSETIDVIDCAPCAMERACONTROL}
+
+pub using @8d35a65211e461f2 {type PROPSETIDVIDCAPCAMERACONTROLFLASH_004161845fed as PROPSETIDVIDCAPCAMERACONTROLFLASH}
+
+pub using @8d35a65211e461f2 {type PROPSETIDVIDCAPCAMERACONTROLIMAGEPINCAPABILITY_81c6c84df169 as PROPSETIDVIDCAPCAMERACONTROLIMAGEPINCAPABILITY}
+
+pub using @8d35a65211e461f2 {type PROPSETIDVIDCAPCAMERACONTROLREGIONOFINTEREST_3046e8c50b45 as PROPSETIDVIDCAPCAMERACONTROLREGIONOFINTEREST}
+
+pub using @8d35a65211e461f2 {type PROPSETIDVIDCAPCAMERACONTROLVIDEOSTABILIZATION_792c2339c014 as PROPSETIDVIDCAPCAMERACONTROLVIDEOSTABILIZATION}
+
+pub using @8d35a65211e461f2 {type PROPSETIDVIDCAPCROSSBAR_430470a84d5a as PROPSETIDVIDCAPCROSSBAR}
+
+pub using @8d35a65211e461f2 {type PROPSETIDVIDCAPDROPPEDFRAMES_ba938023c86f as PROPSETIDVIDCAPDROPPEDFRAMES}
+
+pub using @8d35a65211e461f2 {type PROPSETIDVIDCAPSELECTOR_ea5de639ec05 as PROPSETIDVIDCAPSELECTOR}
+
+pub using @8d35a65211e461f2 {type PROPSETIDVIDCAPTVAUDIO_9e1e6c584ec7 as PROPSETIDVIDCAPTVAUDIO}
+
+pub using @8d35a65211e461f2 {type PROPSETIDVIDCAPVIDEOCOMPRESSION_f3e0912c96ae as PROPSETIDVIDCAPVIDEOCOMPRESSION}
+
+pub using @8d35a65211e461f2 {type PROPSETIDVIDCAPVIDEOCONTROL_ac4502dae8e8 as PROPSETIDVIDCAPVIDEOCONTROL}
+
+pub using @8d35a65211e461f2 {type PROPSETIDVIDCAPVIDEODECODER_c8b959074b9d as PROPSETIDVIDCAPVIDEODECODER}
+
+pub using @8d35a65211e461f2 {type PROPSETIDVIDCAPVIDEOENCODER_005195583c78 as PROPSETIDVIDCAPVIDEOENCODER}
+
+pub using @8d35a65211e461f2 {type PROPSETIDVIDCAPVIDEOPROCAMP_7518d193c6f5 as PROPSETIDVIDCAPVIDEOPROCAMP}
+
+pub using @8d35a65211e461f2 {type SECUREBUFFERINFO_ecbce3e6a620 as SECUREBUFFERINFO}
+
+pub using @8d35a65211e461f2 {type SOUNDDETECTORPATTERNHEADER_062fe356a21c as SOUNDDETECTORPATTERNHEADER}
+
+pub using @8d35a65211e461f2 {type TELEPHONYCALLCONTROLOP_d910f1042dc0 as TELEPHONYCALLCONTROLOP}
+
+pub using @8d35a65211e461f2 {type TELEPHONYCALLSTATE_383e81132bf1 as TELEPHONYCALLSTATE}
+
+pub using @8d35a65211e461f2 {type TELEPHONYCALLTYPE_07fd9f191384 as TELEPHONYCALLTYPE}
+
+pub using @8d35a65211e461f2 {type TELEPHONYPROVIDERCHANGEOP_392c9185b2ee as TELEPHONYPROVIDERCHANGEOP}
+
+pub using @8d35a65211e461f2 {type TRANSPORTAUDIOPARMS_600fbc03a47b as TRANSPORTAUDIOPARMS}
+
+pub using @8d35a65211e461f2 {type TRANSPORTBASICPARMS_73d7a25c0453 as TRANSPORTBASICPARMS}
+
+pub using @8d35a65211e461f2 {type TRANSPORTSTATE_22b8e0a98672 as TRANSPORTSTATE}
+
+pub using @8d35a65211e461f2 {type TRANSPORTSTATUS_6e3cc1236bc4 as TRANSPORTSTATUS}
+
+pub using @8d35a65211e461f2 {type TRANSPORTVIDEOPARMS_c52e5d978d96 as TRANSPORTVIDEOPARMS}
+
+pub using @8d35a65211e461f2 {type TUNERANALOGCAPSS_7c4108fa195d as TUNERANALOGCAPSS}
+
+pub using @8d35a65211e461f2 {type TunerLockType_86de05560abf as TunerLockType}
+
+pub using @8d35a65211e461f2 {type UMPDATAFORMAT_ebd5f690413b as UMPDATAFORMAT}
+
+pub using @8d35a65211e461f2 {type VBICAPPROPERTIESPROTECTIONS_8e9462a5f6db as VBICAPPROPERTIESPROTECTIONS}
+
+pub using @8d35a65211e461f2 {type VBICODECFILTERINGCCSUBSTREAMS_e65636a1b865 as VBICODECFILTERINGCCSUBSTREAMS}
+
+pub using @8d35a65211e461f2 {type VBICODECFILTERINGNABTSSUBSTREAMS_62fabd2a5e94 as VBICODECFILTERINGNABTSSUBSTREAMS}
+
+pub using @8d35a65211e461f2 {type VBICODECFILTERINGSCANLINES_d31e9949cc1b as VBICODECFILTERINGSCANLINES}
+
+pub using @8d35a65211e461f2 {type VBICODECFILTERINGSTATISTICSCC_61d03f08d19e as VBICODECFILTERINGSTATISTICSCC}
+
+pub using @8d35a65211e461f2 {type VBICODECFILTERINGSTATISTICSCCPIN_9b2ad67ddb8f as VBICODECFILTERINGSTATISTICSCCPIN}
+
+pub using @8d35a65211e461f2 {type VBICODECFILTERINGSTATISTICSCOMMON_b34d76eee43f as VBICODECFILTERINGSTATISTICSCOMMON}
+
+pub using @8d35a65211e461f2 {type VBICODECFILTERINGSTATISTICSCOMMONPIN_e672ad847e91 as VBICODECFILTERINGSTATISTICSCOMMONPIN}
+
+pub using @8d35a65211e461f2 {type VBICODECFILTERINGSTATISTICSNABTS_935b51ea08f0 as VBICODECFILTERINGSTATISTICSNABTS}
+
+pub using @8d35a65211e461f2 {type VBICODECFILTERINGSTATISTICSNABTSPIN_d909d12cc401 as VBICODECFILTERINGSTATISTICSNABTSPIN}
+
+pub using @8d35a65211e461f2 {type VBICODECFILTERINGSTATISTICSTELETEXT_e5f63515f5a9 as VBICODECFILTERINGSTATISTICSTELETEXT}
+
+pub using @8d35a65211e461f2 {type VBICODECFILTERINGSTATISTICSTELETEXTPIN_fdd77e097b31 as VBICODECFILTERINGSTATISTICSTELETEXTPIN}
+
+pub using @8d35a65211e461f2 {type VIDEOFORMATDX12_789858f8a6ca as VIDEOFORMATDX12}
+
+pub using @8d35a65211e461f2 {type VRAMSURFACEINFO_1b8bfd7f2d54 as VRAMSURFACEINFO}
+
+pub using @8d35a65211e461f2 {type VRAMSURFACEINFOPROPERTYS_b0b6d28e0d3b as VRAMSURFACEINFOPROPERTYS}
+
+pub using @8d35a65211e461f2 {type WNFKSCAMERASTREAMSTATEINFO_696233d5c1a7 as WNFKSCAMERASTREAMSTATEINFO}
+
+pub using @8d35a65211e461f2 {type WSTBUFFER_b987fa12ccb1 as WSTBUFFER}
+
+pub using @8d35a65211e461f2 {type WSTBUFFERLINE_3db95d0eb5b0 as WSTBUFFERLINE}
+
+// Traits

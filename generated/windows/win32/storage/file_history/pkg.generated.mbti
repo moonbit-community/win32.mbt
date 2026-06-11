@@ -1,0 +1,157 @@
+// Generated using `moon info`, DON'T EDIT IT
+package "moonbit-community/win32api/windows/win32/storage/file_history"
+
+import {
+  "moonbit-community/win32api/runtime/core",
+  "moonbit-community/win32api/scc/c1510b7ee35c677a",
+}
+
+// Values
+pub fn fh_service_block_backup(@core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn fh_service_block_backup_raw(@core.RawAddress) -> Int
+
+pub fn fh_service_close_pipe(@core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn fh_service_close_pipe_raw(@core.RawAddress) -> Int
+
+pub fn fh_service_open_pipe(Int, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn fh_service_open_pipe_raw(Int, @core.RawAddress) -> Int
+
+pub fn fh_service_reload_configuration(@core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn fh_service_reload_configuration_raw(@core.RawAddress) -> Int
+
+pub fn fh_service_start_backup(@core.RawAddress, Int) -> Int raise @core.WindowsError
+
+pub fn fh_service_start_backup_raw(@core.RawAddress, Int) -> Int
+
+pub fn fh_service_stop_backup(@core.RawAddress, Int) -> Int raise @core.WindowsError
+
+pub fn fh_service_stop_backup_raw(@core.RawAddress, Int) -> Int
+
+pub fn fh_service_unblock_backup(@core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn fh_service_unblock_backup_raw(@core.RawAddress) -> Int
+
+pub let fh_state_backup_not_supported : UInt
+
+pub let fh_state_disabled_by_gp : UInt
+
+pub let fh_state_fatal_config_error : UInt
+
+pub let fh_state_migrating : UInt
+
+pub let fh_state_no_error : UInt
+
+pub let fh_state_not_tracked : UInt
+
+pub let fh_state_off : UInt
+
+pub let fh_state_rehydrating : UInt
+
+pub let fh_state_running : UInt
+
+pub let fh_state_staging_full : UInt
+
+pub let fh_state_target_absent : UInt
+
+pub let fh_state_target_access_denied : UInt
+
+pub let fh_state_target_fs_limitation : UInt
+
+pub let fh_state_target_full : UInt
+
+pub let fh_state_target_full_retention_max : UInt
+
+pub let fh_state_target_low_space : UInt
+
+pub let fh_state_target_low_space_retention_max : UInt
+
+pub let fh_state_target_volume_dirty : UInt
+
+pub let fh_state_too_much_behind : UInt
+
+pub let fhcfg_e_config_already_exists : Int
+
+pub let fhcfg_e_config_file_not_found : Int
+
+pub let fhcfg_e_configuration_previously_loaded : Int
+
+pub let fhcfg_e_corrupt_config_file : Int
+
+pub let fhcfg_e_invalid_rehydration_state : Int
+
+pub let fhcfg_e_legacy_backup_not_found : Int
+
+pub let fhcfg_e_legacy_backup_user_excluded : Int
+
+pub let fhcfg_e_legacy_target_unsupported : Int
+
+pub let fhcfg_e_legacy_target_validation_unsupported : Int
+
+pub let fhcfg_e_no_valid_configuration_loaded : Int
+
+pub let fhcfg_e_recommendation_change_not_allowed : Int
+
+pub let fhcfg_e_target_cannot_be_used : Int
+
+pub let fhcfg_e_target_not_configured : Int
+
+pub let fhcfg_e_target_not_connected : Int
+
+pub let fhcfg_e_target_not_enough_free_space : Int
+
+pub let fhcfg_e_target_rehydrated_elsewhere : Int
+
+pub let fhcfg_e_target_verification_failed : Int
+
+pub let fhsvc_e_backup_blocked : Int
+
+pub let fhsvc_e_config_disabled : Int
+
+pub let fhsvc_e_config_disabled_gp : Int
+
+pub let fhsvc_e_config_rehydrating : Int
+
+pub let fhsvc_e_fatal_config_error : Int
+
+pub let fhsvc_e_not_configured : Int
+
+// Errors
+
+// Types and methods
+
+// Type aliases
+pub using @c1510b7ee35c677a {type FHBACKUPSTATUS_750af3f7c843 as FHBACKUPSTATUS}
+
+pub using @c1510b7ee35c677a {type FHDEVICEVALIDATIONRESULT_23d0053180ad as FHDEVICEVALIDATIONRESULT}
+
+pub using @c1510b7ee35c677a {type FHLOCALPOLICYTYPE_c6bfdbfb332c as FHLOCALPOLICYTYPE}
+
+pub using @c1510b7ee35c677a {type FHPROTECTEDITEMCATEGORY_332144ed8b60 as FHPROTECTEDITEMCATEGORY}
+
+pub using @c1510b7ee35c677a {type FHRETENTIONTYPES_bd963a00a312 as FHRETENTIONTYPES}
+
+pub using @c1510b7ee35c677a {type FHSERVICEPIPEHANDLE_4d6473109c3b as FHSERVICEPIPEHANDLE}
+
+pub using @c1510b7ee35c677a {type FHTARGETDRIVETYPES_94f8e92d1c19 as FHTARGETDRIVETYPES}
+
+pub using @c1510b7ee35c677a {type FHTARGETPROPERTYTYPE_075b37591074 as FHTARGETPROPERTYTYPE}
+
+pub using @c1510b7ee35c677a {type FhBackupStopReason_5dd580d7eac1 as FhBackupStopReason}
+
+pub using @c1510b7ee35c677a {type FhConfigMgr_89977eb23972 as FhConfigMgr}
+
+pub using @c1510b7ee35c677a {type FhReassociation_e69e428e9889 as FhReassociation}
+
+pub using @c1510b7ee35c677a {type IFhConfigMgr_6278e40a86ba as IFhConfigMgr}
+
+pub using @c1510b7ee35c677a {type IFhReassociation_cafdbafb8a4a as IFhReassociation}
+
+pub using @c1510b7ee35c677a {type IFhScopeIterator_41c72d77c201 as IFhScopeIterator}
+
+pub using @c1510b7ee35c677a {type IFhTarget_78accc7eb95d as IFhTarget}
+
+// Traits

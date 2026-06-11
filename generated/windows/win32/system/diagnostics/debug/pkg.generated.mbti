@@ -1,0 +1,2719 @@
+// Generated using `moon info`, DON'T EDIT IT
+package "moonbit-community/win32api/windows/win32/system/diagnostics/debug"
+
+import {
+  "moonbit-community/win32api/runtime/core",
+  "moonbit-community/win32api/runtime/strings",
+  "moonbit-community/win32api/scc/6b6e654cfa99a060",
+  "moonbit-community/win32api/scc/a96faf5bf034fb54",
+  "moonbit-community/win32api/scc/d6dafc0d8b9c5b59",
+  "moonbit-community/win32api/scc/fb66f520d7e12332",
+}
+
+// Values
+pub fn add_vectored_continue_handler(UInt, @core.RawAddress) -> @core.RawAddress raise @core.WindowsError
+
+pub fn add_vectored_continue_handler_raw(UInt, @core.RawAddress) -> @core.RawAddress
+
+pub fn add_vectored_exception_handler(UInt, @core.RawAddress) -> @core.RawAddress raise @core.WindowsError
+
+pub fn add_vectored_exception_handler_raw(UInt, @core.RawAddress) -> @core.RawAddress
+
+pub let api_version_number : UInt
+
+pub fn beep(UInt, UInt) -> Bool raise @core.WindowsError
+
+pub fn beep_raw(UInt, UInt) -> @core.RawWin32Call[Int]
+
+pub let bind_all_images : UInt
+
+pub let bind_cache_import_dlls : UInt
+
+pub fn bind_image(@strings.PStr, @strings.PStr, @strings.PStr) -> Bool raise @core.WindowsError
+
+pub fn bind_image_ex(UInt, @strings.PStr, @strings.PStr, @strings.PStr, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn bind_image_ex_raw(UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn bind_image_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub let bind_no_bound_imports : UInt
+
+pub let bind_no_update : UInt
+
+pub let bind_report_64_bit_va : UInt
+
+pub let cba_check_arm_machine_thumb_type_override : UInt
+
+pub let cba_check_engopt_disallow_network_paths : UInt
+
+pub let cba_debug_info : UInt
+
+pub let cba_deferred_symbol_load_cancel : UInt
+
+pub let cba_deferred_symbol_load_complete : UInt
+
+pub let cba_deferred_symbol_load_failure : UInt
+
+pub let cba_deferred_symbol_load_partial : UInt
+
+pub let cba_deferred_symbol_load_start : UInt
+
+pub let cba_duplicate_symbol : UInt
+
+pub let cba_engine_present : UInt
+
+pub let cba_event : UInt
+
+pub let cba_map_jit_symbol : UInt
+
+pub let cba_read_memory : UInt
+
+pub let cba_set_options : UInt
+
+pub let cba_srcsrv_event : UInt
+
+pub let cba_srcsrv_info : UInt
+
+pub let cba_symbols_unloaded : UInt
+
+pub let cba_update_status_bar : UInt
+
+pub let cba_xml_log : UInt
+
+pub let cert_pe_image_digest_all_import_info : UInt
+
+pub let cert_pe_image_digest_debug_info : UInt
+
+pub let cert_pe_image_digest_non_pe_info : UInt
+
+pub let cert_pe_image_digest_resources : UInt
+
+pub let cert_section_type_any : UInt
+
+pub fn check_remote_debugger_present(@core.RawAddress, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn check_remote_debugger_present_raw(@core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn check_sum_mapped_file(@core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> @core.RawAddress raise @core.WindowsError
+
+pub fn check_sum_mapped_file_raw(@core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[@core.RawAddress]
+
+pub let checksum_map_failure : UInt
+
+pub let checksum_mapview_failure : UInt
+
+pub let checksum_open_failure : UInt
+
+pub let checksum_success : UInt
+
+pub let checksum_unicode_failure : UInt
+
+pub fn close_thread_wait_chain_session(@core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn close_thread_wait_chain_session_raw(@core.RawAddress) -> Unit
+
+pub fn continue_debug_event(UInt, UInt, Int) -> Bool raise @core.WindowsError
+
+pub fn continue_debug_event_raw(UInt, UInt, Int) -> @core.RawWin32Call[Int]
+
+pub fn copy_context(@6b6e654cfa99a060.CONTEXT_abe215a18557, @6b6e654cfa99a060.CONTEXTFLAGS_36477fe4b0eb, @6b6e654cfa99a060.CONTEXT_abe215a18557) -> Bool raise @core.WindowsError
+
+pub fn copy_context_raw(@core.RawAddress, UInt, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn dbg_help_create_user_dump(@strings.PStr?, @core.RawAddress, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn dbg_help_create_user_dump_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn dbg_help_create_user_dump_w(@strings.PWStr?, @core.RawAddress, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn dbg_help_create_user_dump_w_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub let dbhheader_pdbguid : UInt
+
+pub fn debug_active_process(UInt) -> Bool raise @core.WindowsError
+
+pub fn debug_active_process_raw(UInt) -> @core.RawWin32Call[Int]
+
+pub fn debug_active_process_stop(UInt) -> Bool raise @core.WindowsError
+
+pub fn debug_active_process_stop_raw(UInt) -> @core.RawWin32Call[Int]
+
+pub fn debug_break() -> Unit raise @core.WindowsError
+
+pub fn debug_break_process(@core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn debug_break_process_raw(@core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn debug_break_raw() -> Unit
+
+pub fn debug_set_process_kill_on_exit(Int) -> Bool raise @core.WindowsError
+
+pub fn debug_set_process_kill_on_exit_raw(Int) -> @core.RawWin32Call[Int]
+
+pub fn decode_pointer(@core.RawAddress) -> @core.RawAddress raise @core.WindowsError
+
+pub fn decode_pointer_raw(@core.RawAddress) -> @core.RawAddress
+
+pub fn decode_remote_pointer(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn decode_remote_pointer_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn decode_system_pointer(@core.RawAddress) -> @core.RawAddress raise @core.WindowsError
+
+pub fn decode_system_pointer_raw(@core.RawAddress) -> @core.RawAddress
+
+pub let dmp_context_record_size_32 : UInt
+
+pub let dmp_context_record_size_64 : UInt
+
+pub let dmp_header_comment_size : UInt
+
+pub let dmp_physical_memory_block_size_32 : UInt
+
+pub let dmp_physical_memory_block_size_64 : UInt
+
+pub let dmp_reserved_0_size_32 : UInt
+
+pub let dmp_reserved_0_size_64 : UInt
+
+pub let dmp_reserved_2_size_32 : UInt
+
+pub let dmp_reserved_3_size_32 : UInt
+
+pub let dslflag_mismatched_dbg : UInt
+
+pub let dslflag_mismatched_pdb : UInt
+
+pub let dump_summary_valid_current_user_va : UInt
+
+pub let dump_summary_valid_kernel_va : UInt
+
+pub fn encode_pointer(@core.RawAddress) -> @core.RawAddress raise @core.WindowsError
+
+pub fn encode_pointer_raw(@core.RawAddress) -> @core.RawAddress
+
+pub fn encode_remote_pointer(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn encode_remote_pointer_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn encode_system_pointer(@core.RawAddress) -> @core.RawAddress raise @core.WindowsError
+
+pub fn encode_system_pointer_raw(@core.RawAddress) -> @core.RawAddress
+
+pub fn enum_dir_tree(@core.RawAddress, @strings.PStr, @strings.PStr, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn enum_dir_tree_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn enum_dir_tree_w(@core.RawAddress, @strings.PWStr, @strings.PWStr, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn enum_dir_tree_w_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn enumerate_loaded_modules64(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn enumerate_loaded_modules64_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn enumerate_loaded_modules_ex(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn enumerate_loaded_modules_ex_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn enumerate_loaded_modules_ex_w(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn enumerate_loaded_modules_ex_w_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn enumerate_loaded_modules_w64(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn enumerate_loaded_modules_w64_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub let error_image_not_stripped : UInt
+
+pub let error_no_dbg_pointer : UInt
+
+pub let error_no_pdb_pointer : UInt
+
+pub let eslflag_fullpath : UInt
+
+pub let eslflag_inline_site : UInt
+
+pub let eslflag_nearest : UInt
+
+pub let eslflag_next : UInt
+
+pub let eslflag_prev : UInt
+
+pub let event_srcspew : UInt
+
+pub let event_srcspew_end : UInt
+
+pub let event_srcspew_start : UInt
+
+pub let exception_continue_execution : Int
+
+pub let exception_continue_search : Int
+
+pub let exception_execute_handler : Int
+
+pub let ext_output_ver : UInt
+
+pub fn fatal_app_exit_a(UInt, @strings.PStr) -> Unit raise @core.WindowsError
+
+pub fn fatal_app_exit_a_raw(UInt, @core.RawAddress) -> Unit
+
+pub fn fatal_app_exit_w(UInt, @strings.PWStr) -> Unit raise @core.WindowsError
+
+pub fn fatal_app_exit_w_raw(UInt, @core.RawAddress) -> Unit
+
+pub fn fatal_exit(Int) -> Unit raise @core.WindowsError
+
+pub fn fatal_exit_raw(Int) -> Unit
+
+pub fn find_debug_info_file(@strings.PStr, @strings.PStr, @core.RawAddress) -> @core.RawAddress raise @core.WindowsError
+
+pub fn find_debug_info_file_ex(@strings.PStr, @strings.PStr, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> @core.RawAddress raise @core.WindowsError
+
+pub fn find_debug_info_file_ex_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[@core.RawAddress]
+
+pub fn find_debug_info_file_ex_w(@strings.PWStr, @strings.PWStr, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> @core.RawAddress raise @core.WindowsError
+
+pub fn find_debug_info_file_ex_w_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[@core.RawAddress]
+
+pub fn find_debug_info_file_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[@core.RawAddress]
+
+pub fn find_executable_image(@strings.PStr, @strings.PStr, @core.RawAddress) -> @core.RawAddress raise @core.WindowsError
+
+pub fn find_executable_image_ex(@strings.PStr, @strings.PStr, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> @core.RawAddress raise @core.WindowsError
+
+pub fn find_executable_image_ex_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[@core.RawAddress]
+
+pub fn find_executable_image_ex_w(@strings.PWStr, @strings.PWStr, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> @core.RawAddress raise @core.WindowsError
+
+pub fn find_executable_image_ex_w_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[@core.RawAddress]
+
+pub fn find_executable_image_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[@core.RawAddress]
+
+pub fn find_file_in_path(@core.RawAddress, @strings.PStr, @strings.PStr, @core.RawAddress, UInt, UInt, UInt, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn find_file_in_path_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, UInt, UInt, UInt, @core.RawAddress) -> Int
+
+pub fn find_file_in_search_path(@core.RawAddress, @strings.PStr, @strings.PStr, UInt, UInt, UInt, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn find_file_in_search_path_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, UInt, UInt, UInt, @core.RawAddress) -> Int
+
+pub let flag_engine_present : UInt
+
+pub let flag_engopt_disallow_network_paths : UInt
+
+pub let flag_override_arm_machine_type : UInt
+
+pub fn flush_instruction_cache(@core.RawAddress, @core.RawAddress, UInt64) -> Bool raise @core.WindowsError
+
+pub fn flush_instruction_cache_raw(@core.RawAddress, @core.RawAddress, UInt64) -> @core.RawWin32Call[Int]
+
+pub fn format_message_a(@6b6e654cfa99a060.FORMATMESSAGEOPTIONS_26f71e1c0cee, @core.RawAddress, UInt, UInt, @core.RawAddress, UInt, @core.RawAddress) -> UInt raise @core.WindowsError
+
+pub fn format_message_a_raw(UInt, @core.RawAddress, UInt, UInt, @core.RawAddress, UInt, @core.RawAddress) -> @core.RawWin32Call[UInt]
+
+pub fn format_message_w(@6b6e654cfa99a060.FORMATMESSAGEOPTIONS_26f71e1c0cee, @core.RawAddress, UInt, UInt, @core.RawAddress, UInt, @core.RawAddress) -> UInt raise @core.WindowsError
+
+pub fn format_message_w_raw(UInt, @core.RawAddress, UInt, UInt, @core.RawAddress, UInt, @core.RawAddress) -> @core.RawWin32Call[UInt]
+
+pub fn get_enabled_x_state_features() -> UInt64 raise @core.WindowsError
+
+pub fn get_enabled_x_state_features_raw() -> UInt64
+
+pub fn get_error_mode() -> UInt raise @core.WindowsError
+
+pub fn get_error_mode_raw() -> UInt
+
+pub fn get_image_config_information(@6b6e654cfa99a060.LOADEDIMAGE_c51b4c013e63, @6b6e654cfa99a060.IMAGELOADCONFIGDIRECTORY64_81a1db07046c) -> Bool raise @core.WindowsError
+
+pub fn get_image_config_information_raw(@core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn get_image_unused_header_bytes(@6b6e654cfa99a060.LOADEDIMAGE_c51b4c013e63, @core.RawAddress) -> UInt raise @core.WindowsError
+
+pub fn get_image_unused_header_bytes_raw(@core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[UInt]
+
+pub fn get_sym_load_error() -> UInt raise @core.WindowsError
+
+pub fn get_sym_load_error_raw() -> UInt
+
+pub fn get_thread_context(@core.RawAddress, @6b6e654cfa99a060.CONTEXT_abe215a18557) -> Bool raise @core.WindowsError
+
+pub fn get_thread_context_raw(@core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn get_thread_error_mode() -> UInt raise @core.WindowsError
+
+pub fn get_thread_error_mode_raw() -> UInt
+
+pub fn get_thread_selector_entry(@core.RawAddress, UInt, @6b6e654cfa99a060.LDTENTRY_187274016dd2) -> Bool raise @core.WindowsError
+
+pub fn get_thread_selector_entry_raw(@core.RawAddress, UInt, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn get_thread_wait_chain(@core.RawAddress, UInt64, @6b6e654cfa99a060.WAITCHAINTHREADOPTIONS_47e3b61be864, UInt, @core.RawAddress, @6b6e654cfa99a060.WAITCHAINNODEINFO_5e7969a10642, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn get_thread_wait_chain_raw(@core.RawAddress, UInt64, UInt, UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn get_timestamp_for_loaded_library(@core.RawAddress) -> UInt raise @core.WindowsError
+
+pub fn get_timestamp_for_loaded_library_raw(@core.RawAddress) -> @core.RawWin32Call[UInt]
+
+pub fn get_x_state_features_mask(@6b6e654cfa99a060.CONTEXT_abe215a18557, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn get_x_state_features_mask_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn image_add_certificate(@core.RawAddress, @d6dafc0d8b9c5b59.WINCERTIFICATE_4b951ce6b6d8, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn image_add_certificate_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn image_directory_entry_to_data(@core.RawAddress, Byte, @6b6e654cfa99a060.IMAGEDIRECTORYENTRY_93831aa972fa, @core.RawAddress) -> @core.RawAddress raise @core.WindowsError
+
+pub fn image_directory_entry_to_data_ex(@core.RawAddress, Byte, @6b6e654cfa99a060.IMAGEDIRECTORYENTRY_93831aa972fa, @core.RawAddress, @core.RawAddress) -> @core.RawAddress raise @core.WindowsError
+
+pub fn image_directory_entry_to_data_ex_raw(@core.RawAddress, UInt, UInt, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[@core.RawAddress]
+
+pub fn image_directory_entry_to_data_raw(@core.RawAddress, UInt, UInt, @core.RawAddress) -> @core.RawWin32Call[@core.RawAddress]
+
+pub fn image_enumerate_certificates(@core.RawAddress, UInt16, @core.RawAddress, @core.RawAddress, UInt) -> Bool raise @core.WindowsError
+
+pub fn image_enumerate_certificates_raw(@core.RawAddress, UInt, @core.RawAddress, @core.RawAddress, UInt) -> @core.RawWin32Call[Int]
+
+pub fn image_get_certificate_data(@core.RawAddress, UInt, @d6dafc0d8b9c5b59.WINCERTIFICATE_4b951ce6b6d8, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn image_get_certificate_data_raw(@core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn image_get_certificate_header(@core.RawAddress, UInt, @d6dafc0d8b9c5b59.WINCERTIFICATE_4b951ce6b6d8) -> Bool raise @core.WindowsError
+
+pub fn image_get_certificate_header_raw(@core.RawAddress, UInt, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn image_get_digest_stream(@core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn image_get_digest_stream_raw(@core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn image_load(@strings.PStr, @strings.PStr?) -> @core.RawAddress raise @core.WindowsError
+
+pub fn image_load_raw(@core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[@core.RawAddress]
+
+pub fn image_nt_header(@core.RawAddress) -> @core.RawAddress raise @core.WindowsError
+
+pub fn image_nt_header_raw(@core.RawAddress) -> @core.RawWin32Call[@core.RawAddress]
+
+pub fn image_remove_certificate(@core.RawAddress, UInt) -> Bool raise @core.WindowsError
+
+pub fn image_remove_certificate_raw(@core.RawAddress, UInt) -> @core.RawWin32Call[Int]
+
+pub fn image_rva_to_section(@6b6e654cfa99a060.IMAGENTHEADERS64_0abd1ebb56f6, @core.RawAddress, UInt) -> @core.RawAddress raise @core.WindowsError
+
+pub fn image_rva_to_section_raw(@core.RawAddress, @core.RawAddress, UInt) -> @core.RawWin32Call[@core.RawAddress]
+
+pub fn image_rva_to_va(@6b6e654cfa99a060.IMAGENTHEADERS64_0abd1ebb56f6, @core.RawAddress, UInt, @core.RawAddress) -> @core.RawAddress raise @core.WindowsError
+
+pub fn image_rva_to_va_raw(@core.RawAddress, @core.RawAddress, UInt, @core.RawAddress) -> @core.RawWin32Call[@core.RawAddress]
+
+pub fn image_unload(@6b6e654cfa99a060.LOADEDIMAGE_c51b4c013e63) -> Bool raise @core.WindowsError
+
+pub fn image_unload_raw(@core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn imagehlp_api_version() -> @core.RawAddress raise @core.WindowsError
+
+pub fn imagehlp_api_version_ex(@6b6e654cfa99a060.APIVERSION_ba04f4cf8680) -> @core.RawAddress raise @core.WindowsError
+
+pub fn imagehlp_api_version_ex_raw(@core.RawAddress) -> @core.RawAddress
+
+pub fn imagehlp_api_version_raw() -> @core.RawAddress
+
+pub let imagehlp_module_region_additional : UInt
+
+pub let imagehlp_module_region_all : UInt
+
+pub let imagehlp_module_region_dllbase : UInt
+
+pub let imagehlp_module_region_dllrange : UInt
+
+pub let imagehlp_module_region_jit : UInt
+
+pub let imagehlp_rmap_big_endian : UInt
+
+pub let imagehlp_rmap_fixup_arm64_x : UInt
+
+pub let imagehlp_rmap_fixup_imagebase : UInt
+
+pub let imagehlp_rmap_ignore_miscompare : UInt
+
+pub let imagehlp_rmap_load_rw_data_sections : UInt
+
+pub let imagehlp_rmap_mapped_flat : UInt
+
+pub let imagehlp_rmap_omit_shared_rw_data_sections : UInt
+
+pub let imagehlp_symbol_function : UInt
+
+pub let imagehlp_symbol_info_constant : UInt
+
+pub let imagehlp_symbol_info_framerelative : UInt
+
+pub let imagehlp_symbol_info_local : UInt
+
+pub let imagehlp_symbol_info_parameter : UInt
+
+pub let imagehlp_symbol_info_register : UInt
+
+pub let imagehlp_symbol_info_regrelative : UInt
+
+pub let imagehlp_symbol_info_tlsrelative : UInt
+
+pub let imagehlp_symbol_info_valuepresent : UInt
+
+pub let imagehlp_symbol_thunk : UInt
+
+pub let imagehlp_symbol_virtual : UInt
+
+pub fn initialize_context(@core.RawAddress, @6b6e654cfa99a060.CONTEXTFLAGS_36477fe4b0eb, @core.RawAddress, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn initialize_context2(@core.RawAddress, @6b6e654cfa99a060.CONTEXTFLAGS_36477fe4b0eb, @core.RawAddress, @core.RawAddress, UInt64) -> Bool raise @core.WindowsError
+
+pub fn initialize_context2_raw(@core.RawAddress, UInt, @core.RawAddress, @core.RawAddress, UInt64) -> @core.RawWin32Call[Int]
+
+pub fn initialize_context_raw(@core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub let inline_frame_context_ignore : UInt
+
+pub let inline_frame_context_init : UInt
+
+pub let interface_uses_dispex : UInt
+
+pub let interface_uses_security_manager : UInt
+
+pub let interfacesafe_for_untrusted_caller : UInt
+
+pub let interfacesafe_for_untrusted_data : UInt
+
+pub let ioctl_ipmi_internal_record_sel_event : UInt
+
+pub let ipmi_ioctl_index : UInt
+
+pub let ipmi_os_sel_record_mask : UInt
+
+pub let ipmi_os_sel_record_version : UInt
+
+pub let ipmi_os_sel_record_version_1 : UInt
+
+pub fn is_debugger_present() -> Bool raise @core.WindowsError
+
+pub fn is_debugger_present_raw() -> Int
+
+pub fn locate_x_state_feature(@6b6e654cfa99a060.CONTEXT_abe215a18557, UInt, @core.RawAddress) -> @core.RawAddress raise @core.WindowsError
+
+pub fn locate_x_state_feature_raw(@core.RawAddress, UInt, @core.RawAddress) -> @core.RawAddress
+
+pub fn make_sure_directory_path_exists(@strings.PStr) -> Bool raise @core.WindowsError
+
+pub fn make_sure_directory_path_exists_raw(@core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn map_and_load(@strings.PStr, @strings.PStr?, @6b6e654cfa99a060.LOADEDIMAGE_c51b4c013e63, Int, Int) -> Bool raise @core.WindowsError
+
+pub fn map_and_load_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, Int, Int) -> @core.RawWin32Call[Int]
+
+pub fn map_file_and_check_sum_a(@strings.PStr, @core.RawAddress, @core.RawAddress) -> UInt raise @core.WindowsError
+
+pub fn map_file_and_check_sum_a_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn map_file_and_check_sum_w(@strings.PWStr, @core.RawAddress, @core.RawAddress) -> UInt raise @core.WindowsError
+
+pub fn map_file_and_check_sum_w_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub let max_sym_name : UInt
+
+pub fn message_beep(@a96faf5bf034fb54.MESSAGEBOXSTYLE_365231501e9a) -> Bool raise @core.WindowsError
+
+pub fn message_beep_raw(UInt) -> @core.RawWin32Call[Int]
+
+pub fn mini_dump_read_dump_stream(@core.RawAddress, UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn mini_dump_read_dump_stream_raw(@core.RawAddress, UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn mini_dump_write_dump(@core.RawAddress, UInt, @core.RawAddress, @6b6e654cfa99a060.MINIDUMPTYPE_2722e4e77d55, @6b6e654cfa99a060.MINIDUMPEXCEPTIONINFORMATION_ee0b35a12551?, @6b6e654cfa99a060.MINIDUMPUSERSTREAMINFORMATION_d5f0771e5d92?, @6b6e654cfa99a060.MINIDUMPCALLBACKINFORMATION_7e1743651d1c?) -> Bool raise @core.WindowsError
+
+pub fn mini_dump_write_dump_raw(@core.RawAddress, UInt, @core.RawAddress, Int, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub let minidump_misc1_processor_power_info : UInt
+
+pub let minidump_misc3_process_execute_flags : UInt
+
+pub let minidump_misc3_process_integrity : UInt
+
+pub let minidump_misc3_protected_process : UInt
+
+pub let minidump_misc3_timezone : UInt
+
+pub let minidump_misc4_buildstring : UInt
+
+pub let minidump_misc5_process_cookie : UInt
+
+pub let minidump_process_vm_counters : UInt
+
+pub let minidump_process_vm_counters_ex : UInt
+
+pub let minidump_process_vm_counters_ex2 : UInt
+
+pub let minidump_process_vm_counters_job : UInt
+
+pub let minidump_process_vm_counters_virtualsize : UInt
+
+pub let minidump_sysmeminfo1_basicperf : UInt
+
+pub let minidump_sysmeminfo1_filecache_transitionrepurposecount_flags : UInt
+
+pub let minidump_sysmeminfo1_perf_cctotaldirtypages_ccdirtypagethreshold : UInt
+
+pub let minidump_sysmeminfo1_perf_mdlpagesallocated_pfndatabasecommittedpages : UInt
+
+pub let minidump_sysmeminfo1_perf_residentavailablepages_sharedcommitpages : UInt
+
+pub let minidump_sysmeminfo1_perf_systempagetablecommittedpages_contiguouspagesallocated : UInt
+
+pub let minidump_version : UInt
+
+pub let num_ssrvopts : UInt
+
+pub fn open_thread_wait_chain_session(@6b6e654cfa99a060.OPENTHREADWAITCHAINSESSIONFLAGS_bac433391f7e, @core.RawAddress) -> @core.RawAddress raise @core.WindowsError
+
+pub fn open_thread_wait_chain_session_raw(UInt, @core.RawAddress) -> @core.RawWin32Call[@core.RawAddress]
+
+pub fn output_debug_string_a(@strings.PStr?) -> Unit raise @core.WindowsError
+
+pub fn output_debug_string_a_raw(@core.RawAddress) -> Unit
+
+pub fn output_debug_string_w(@strings.PWStr?) -> Unit raise @core.WindowsError
+
+pub fn output_debug_string_w_raw(@core.RawAddress) -> Unit
+
+pub fn raise_exception(UInt, UInt, UInt, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn raise_exception_raw(UInt, UInt, UInt, @core.RawAddress) -> Unit
+
+pub fn raise_fail_fast_exception(@6b6e654cfa99a060.EXCEPTIONRECORD_c7c3688bc21b?, @6b6e654cfa99a060.CONTEXT_abe215a18557?, UInt) -> Unit raise @core.WindowsError
+
+pub fn raise_fail_fast_exception_raw(@core.RawAddress, @core.RawAddress, UInt) -> Unit
+
+pub fn range_map_add_pe_image_sections(@core.RawAddress, @strings.PWStr?, @core.RawAddress, UInt, UInt64, UInt64, UInt) -> Bool raise @core.WindowsError
+
+pub fn range_map_add_pe_image_sections_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, UInt, UInt64, UInt64, UInt) -> Int
+
+pub fn range_map_create() -> @core.RawAddress raise @core.WindowsError
+
+pub fn range_map_create_raw() -> @core.RawAddress
+
+pub fn range_map_free(@core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn range_map_free_raw(@core.RawAddress) -> Unit
+
+pub fn range_map_read(@core.RawAddress, UInt64, @core.RawAddress, UInt, UInt, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn range_map_read_raw(@core.RawAddress, UInt64, @core.RawAddress, UInt, UInt, @core.RawAddress) -> Int
+
+pub fn range_map_remove(@core.RawAddress, UInt64) -> Bool raise @core.WindowsError
+
+pub fn range_map_remove_raw(@core.RawAddress, UInt64) -> Int
+
+pub fn range_map_write(@core.RawAddress, UInt64, @core.RawAddress, UInt, UInt, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn range_map_write_raw(@core.RawAddress, UInt64, @core.RawAddress, UInt, UInt, @core.RawAddress) -> Int
+
+pub fn re_base_image(@strings.PStr, @strings.PStr, Int, Int, Int, UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, UInt) -> Bool raise @core.WindowsError
+
+pub fn re_base_image64(@strings.PStr, @strings.PStr, Int, Int, Int, UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, UInt) -> Bool raise @core.WindowsError
+
+pub fn re_base_image64_raw(@core.RawAddress, @core.RawAddress, Int, Int, Int, UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, UInt) -> @core.RawWin32Call[Int]
+
+pub fn re_base_image_raw(@core.RawAddress, @core.RawAddress, Int, Int, Int, UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, UInt) -> @core.RawWin32Call[Int]
+
+pub fn read_process_memory(@core.RawAddress, @core.RawAddress, @core.RawAddress, UInt64, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn read_process_memory_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, UInt64, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn register_wait_chain_com_callback(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn register_wait_chain_com_callback_raw(@core.RawAddress, @core.RawAddress) -> Unit
+
+pub fn remove_invalid_module_list(@core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn remove_invalid_module_list_raw(@core.RawAddress) -> Unit
+
+pub fn remove_vectored_continue_handler(@core.RawAddress) -> UInt raise @core.WindowsError
+
+pub fn remove_vectored_continue_handler_raw(@core.RawAddress) -> UInt
+
+pub fn remove_vectored_exception_handler(@core.RawAddress) -> UInt raise @core.WindowsError
+
+pub fn remove_vectored_exception_handler_raw(@core.RawAddress) -> UInt
+
+pub fn report_symbol_load_summary(@core.RawAddress, @strings.PWStr?, @6b6e654cfa99a060.DBGHELPDATAREPORTSTRUCT_152abcb0b3bd) -> Bool raise @core.WindowsError
+
+pub fn report_symbol_load_summary_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub let restore_last_error_name : String
+
+pub let restore_last_error_name_a : String
+
+pub let restore_last_error_name_w : String
+
+pub fn rtl_add_function_table(@6b6e654cfa99a060.IMAGERUNTIMEFUNCTIONENTRY_c21c3da6ddaa, UInt, UInt64) -> Byte raise @core.WindowsError
+
+pub fn rtl_add_function_table_raw(@core.RawAddress, UInt, UInt64) -> UInt
+
+pub fn rtl_add_growable_function_table(@core.RawAddress, @6b6e654cfa99a060.IMAGERUNTIMEFUNCTIONENTRY_c21c3da6ddaa, UInt, UInt, UInt64, UInt64) -> UInt raise @core.WindowsError
+
+pub fn rtl_add_growable_function_table_raw(@core.RawAddress, @core.RawAddress, UInt, UInt, UInt64, UInt64) -> UInt
+
+pub fn rtl_capture_context(@6b6e654cfa99a060.CONTEXT_abe215a18557) -> Unit raise @core.WindowsError
+
+pub fn rtl_capture_context2(@6b6e654cfa99a060.CONTEXT_abe215a18557) -> Unit raise @core.WindowsError
+
+pub fn rtl_capture_context2_raw(@core.RawAddress) -> Unit
+
+pub fn rtl_capture_context_raw(@core.RawAddress) -> Unit
+
+pub fn rtl_capture_stack_back_trace(UInt, UInt, @core.RawAddress, @core.RawAddress) -> UInt16 raise @core.WindowsError
+
+pub fn rtl_capture_stack_back_trace_raw(UInt, UInt, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn rtl_delete_function_table(@6b6e654cfa99a060.IMAGERUNTIMEFUNCTIONENTRY_c21c3da6ddaa) -> Byte raise @core.WindowsError
+
+pub fn rtl_delete_function_table_raw(@core.RawAddress) -> UInt
+
+pub fn rtl_delete_growable_function_table(@core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn rtl_delete_growable_function_table_raw(@core.RawAddress) -> Unit
+
+pub fn rtl_grow_function_table(@core.RawAddress, UInt) -> Unit raise @core.WindowsError
+
+pub fn rtl_grow_function_table_raw(@core.RawAddress, UInt) -> Unit
+
+pub fn rtl_install_function_table_callback(UInt64, UInt64, UInt, @core.RawAddress, @core.RawAddress, @strings.PWStr?) -> Byte raise @core.WindowsError
+
+pub fn rtl_install_function_table_callback_raw(UInt64, UInt64, UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn rtl_lookup_function_entry(UInt64, @core.RawAddress, @6b6e654cfa99a060.UNWINDHISTORYTABLE_39e89f09b372?) -> @core.RawAddress raise @core.WindowsError
+
+pub fn rtl_lookup_function_entry_raw(UInt64, @core.RawAddress, @core.RawAddress) -> @core.RawAddress
+
+pub fn rtl_pc_to_file_header(@core.RawAddress, @core.RawAddress) -> @core.RawAddress raise @core.WindowsError
+
+pub fn rtl_pc_to_file_header_raw(@core.RawAddress, @core.RawAddress) -> @core.RawAddress
+
+pub fn rtl_raise_exception(@6b6e654cfa99a060.EXCEPTIONRECORD_c7c3688bc21b) -> Unit raise @core.WindowsError
+
+pub fn rtl_raise_exception_raw(@core.RawAddress) -> Unit
+
+pub fn rtl_restore_context(@6b6e654cfa99a060.CONTEXT_abe215a18557, @6b6e654cfa99a060.EXCEPTIONRECORD_c7c3688bc21b?) -> Unit raise @core.WindowsError
+
+pub fn rtl_restore_context_raw(@core.RawAddress, @core.RawAddress) -> Unit
+
+pub fn rtl_unwind(@core.RawAddress, @core.RawAddress, @6b6e654cfa99a060.EXCEPTIONRECORD_c7c3688bc21b?, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn rtl_unwind_ex(@core.RawAddress, @core.RawAddress, @6b6e654cfa99a060.EXCEPTIONRECORD_c7c3688bc21b?, @core.RawAddress, @6b6e654cfa99a060.CONTEXT_abe215a18557, @6b6e654cfa99a060.UNWINDHISTORYTABLE_39e89f09b372?) -> Unit raise @core.WindowsError
+
+pub fn rtl_unwind_ex_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Unit
+
+pub fn rtl_unwind_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Unit
+
+pub fn rtl_virtual_unwind(@6b6e654cfa99a060.RTLVIRTUALUNWINDHANDLERTYPE_10dd0e1f0ee2, UInt64, UInt64, @6b6e654cfa99a060.IMAGERUNTIMEFUNCTIONENTRY_c21c3da6ddaa, @6b6e654cfa99a060.CONTEXT_abe215a18557, @core.RawAddress, @core.RawAddress, @6b6e654cfa99a060.KNONVOLATILECONTEXTPOINTERS_ed73099a78a2?) -> @core.RawAddress raise @core.WindowsError
+
+pub fn rtl_virtual_unwind_raw(UInt, UInt64, UInt64, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> @core.RawAddress
+
+pub fn search_tree_for_file(@strings.PStr, @strings.PStr, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn search_tree_for_file_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn search_tree_for_file_w(@strings.PWStr, @strings.PWStr, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn search_tree_for_file_w_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn set_check_user_interrupt_shared(@core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn set_check_user_interrupt_shared_raw(@core.RawAddress) -> Unit
+
+pub fn set_error_mode(@6b6e654cfa99a060.THREADERRORMODE_88c169909260) -> @6b6e654cfa99a060.THREADERRORMODE_88c169909260 raise @core.WindowsError
+
+pub fn set_error_mode_raw(UInt) -> UInt
+
+pub fn set_image_config_information(@6b6e654cfa99a060.LOADEDIMAGE_c51b4c013e63, @6b6e654cfa99a060.IMAGELOADCONFIGDIRECTORY64_81a1db07046c) -> Bool raise @core.WindowsError
+
+pub fn set_image_config_information_raw(@core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn set_sym_load_error(UInt) -> Unit raise @core.WindowsError
+
+pub fn set_sym_load_error_raw(UInt) -> Unit
+
+pub fn set_thread_context(@core.RawAddress, @6b6e654cfa99a060.CONTEXT_abe215a18557) -> Bool raise @core.WindowsError
+
+pub fn set_thread_context_raw(@core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn set_thread_error_mode(@6b6e654cfa99a060.THREADERRORMODE_88c169909260, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn set_thread_error_mode_raw(UInt, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn set_unhandled_exception_filter(@core.RawAddress) -> @core.RawAddress raise @core.WindowsError
+
+pub fn set_unhandled_exception_filter_raw(@core.RawAddress) -> @core.RawAddress
+
+pub fn set_x_state_features_mask(@6b6e654cfa99a060.CONTEXT_abe215a18557, UInt64) -> Bool raise @core.WindowsError
+
+pub fn set_x_state_features_mask_raw(@core.RawAddress, UInt64) -> Int
+
+pub let sev_max : Int
+
+pub let splitsym_extract_all : UInt
+
+pub let splitsym_remove_private : UInt
+
+pub let splitsym_symbolpath_is_src : UInt
+
+pub let ssrvaction_checksumstatus : UInt
+
+pub let ssrvaction_event : UInt
+
+pub let ssrvaction_eventw : UInt
+
+pub let ssrvaction_httpstatus : UInt
+
+pub let ssrvaction_querycancel : UInt
+
+pub let ssrvaction_size : UInt
+
+pub let ssrvaction_trace : UInt
+
+pub let ssrvaction_xmloutput : UInt
+
+pub let ssrvopt_callback : UInt
+
+pub let ssrvopt_callbackw : UInt
+
+pub let ssrvopt_disable_ping_host : UInt
+
+pub let ssrvopt_disable_timeout : UInt
+
+pub let ssrvopt_dont_uncompress : UInt
+
+pub let ssrvopt_downstream_store : UInt
+
+pub let ssrvopt_enable_comm_msg : UInt
+
+pub let ssrvopt_favor_compressed : UInt
+
+pub let ssrvopt_flat_default_store : UInt
+
+pub let ssrvopt_getpath : UInt
+
+pub let ssrvopt_max : UInt
+
+pub let ssrvopt_message : UInt
+
+pub let ssrvopt_nocopy : UInt
+
+pub let ssrvopt_oldguidptr : UInt
+
+pub let ssrvopt_overwrite : UInt
+
+pub let ssrvopt_paramtype : UInt
+
+pub let ssrvopt_parentwin : UInt
+
+pub let ssrvopt_proxy : UInt
+
+pub let ssrvopt_proxyw : UInt
+
+pub let ssrvopt_resettou : UInt
+
+pub let ssrvopt_retry_app_hang : UInt
+
+pub let ssrvopt_secure : UInt
+
+pub let ssrvopt_service : UInt
+
+pub let ssrvopt_setcontext : UInt
+
+pub let ssrvopt_string : UInt
+
+pub let ssrvopt_trace : UInt
+
+pub let ssrvopt_unattended : UInt
+
+pub let ssrvopt_uri_filter : UInt
+
+pub let ssrvopt_uri_tiers : UInt
+
+pub let ssrvopt_winhttp : UInt
+
+pub let ssrvopt_wininet : UInt
+
+pub let ssrvuri_all : UInt
+
+pub let ssrvuri_compressed : UInt
+
+pub let ssrvuri_fileptr : UInt
+
+pub let ssrvuri_http_compressed : UInt
+
+pub let ssrvuri_http_fileptr : UInt
+
+pub let ssrvuri_http_mask : UInt
+
+pub let ssrvuri_http_normal : UInt
+
+pub let ssrvuri_normal : UInt
+
+pub let ssrvuri_unc_compressed : UInt
+
+pub let ssrvuri_unc_fileptr : UInt
+
+pub let ssrvuri_unc_mask : UInt
+
+pub let ssrvuri_unc_normal : UInt
+
+pub fn stack_walk2(UInt, @core.RawAddress, @core.RawAddress, @6b6e654cfa99a060.STACKFRAMEEX_cef2e22eb81c, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, UInt) -> Bool raise @core.WindowsError
+
+pub fn stack_walk2_raw(UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, UInt) -> Int
+
+pub fn stack_walk64(UInt, @core.RawAddress, @core.RawAddress, @6b6e654cfa99a060.STACKFRAME64_1528d937d575, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn stack_walk64_raw(UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn stack_walk_ex(UInt, @core.RawAddress, @core.RawAddress, @6b6e654cfa99a060.STACKFRAMEEX_cef2e22eb81c, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, UInt) -> Bool raise @core.WindowsError
+
+pub fn stack_walk_ex_raw(UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, UInt) -> Int
+
+pub fn sym_add_source_stream(@core.RawAddress, UInt64, @strings.PStr?, @core.RawAddress, UInt64) -> Bool raise @core.WindowsError
+
+pub fn sym_add_source_stream_a(@core.RawAddress, UInt64, @strings.PStr?, @core.RawAddress, UInt64) -> Bool raise @core.WindowsError
+
+pub fn sym_add_source_stream_a_raw(@core.RawAddress, UInt64, @core.RawAddress, @core.RawAddress, UInt64) -> Int
+
+pub fn sym_add_source_stream_raw(@core.RawAddress, UInt64, @core.RawAddress, @core.RawAddress, UInt64) -> @core.RawWin32Call[Int]
+
+pub fn sym_add_source_stream_w(@core.RawAddress, UInt64, @strings.PWStr?, @core.RawAddress, UInt64) -> Bool raise @core.WindowsError
+
+pub fn sym_add_source_stream_w_raw(@core.RawAddress, UInt64, @core.RawAddress, @core.RawAddress, UInt64) -> @core.RawWin32Call[Int]
+
+pub fn sym_add_symbol(@core.RawAddress, UInt64, @strings.PStr, UInt64, UInt, UInt) -> Bool raise @core.WindowsError
+
+pub fn sym_add_symbol_raw(@core.RawAddress, UInt64, @core.RawAddress, UInt64, UInt, UInt) -> @core.RawWin32Call[Int]
+
+pub fn sym_add_symbol_w(@core.RawAddress, UInt64, @strings.PWStr, UInt64, UInt, UInt) -> Bool raise @core.WindowsError
+
+pub fn sym_add_symbol_w_raw(@core.RawAddress, UInt64, @core.RawAddress, UInt64, UInt, UInt) -> @core.RawWin32Call[Int]
+
+pub fn sym_addr_include_inline_trace(@core.RawAddress, UInt64) -> UInt raise @core.WindowsError
+
+pub fn sym_addr_include_inline_trace_raw(@core.RawAddress, UInt64) -> UInt
+
+pub fn sym_cleanup(@core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn sym_cleanup_raw(@core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn sym_compare_inline_trace(@core.RawAddress, UInt64, UInt, UInt64, UInt64, UInt64) -> UInt raise @core.WindowsError
+
+pub fn sym_compare_inline_trace_raw(@core.RawAddress, UInt64, UInt, UInt64, UInt64, UInt64) -> UInt
+
+pub fn sym_delete_symbol(@core.RawAddress, UInt64, @strings.PStr?, UInt64, UInt) -> Bool raise @core.WindowsError
+
+pub fn sym_delete_symbol_raw(@core.RawAddress, UInt64, @core.RawAddress, UInt64, UInt) -> @core.RawWin32Call[Int]
+
+pub fn sym_delete_symbol_w(@core.RawAddress, UInt64, @strings.PWStr?, UInt64, UInt) -> Bool raise @core.WindowsError
+
+pub fn sym_delete_symbol_w_raw(@core.RawAddress, UInt64, @core.RawAddress, UInt64, UInt) -> @core.RawWin32Call[Int]
+
+pub fn sym_enum_lines(@core.RawAddress, UInt64, @strings.PStr?, @strings.PStr?, @core.RawAddress, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn sym_enum_lines_raw(@core.RawAddress, UInt64, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn sym_enum_lines_w(@core.RawAddress, UInt64, @strings.PWStr?, @strings.PWStr?, @core.RawAddress, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn sym_enum_lines_w_raw(@core.RawAddress, UInt64, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn sym_enum_processes(@core.RawAddress, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn sym_enum_processes_raw(@core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn sym_enum_source_file_tokens(@core.RawAddress, UInt64, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn sym_enum_source_file_tokens_raw(@core.RawAddress, UInt64, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn sym_enum_source_files(@core.RawAddress, UInt64, @strings.PStr?, @core.RawAddress, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn sym_enum_source_files_raw(@core.RawAddress, UInt64, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn sym_enum_source_files_w(@core.RawAddress, UInt64, @strings.PWStr?, @core.RawAddress, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn sym_enum_source_files_w_raw(@core.RawAddress, UInt64, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn sym_enum_source_lines(@core.RawAddress, UInt64, @strings.PStr?, @strings.PStr?, UInt, UInt, @core.RawAddress, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn sym_enum_source_lines_raw(@core.RawAddress, UInt64, @core.RawAddress, @core.RawAddress, UInt, UInt, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn sym_enum_source_lines_w(@core.RawAddress, UInt64, @strings.PWStr?, @strings.PWStr?, UInt, UInt, @core.RawAddress, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn sym_enum_source_lines_w_raw(@core.RawAddress, UInt64, @core.RawAddress, @core.RawAddress, UInt, UInt, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn sym_enum_sym(@core.RawAddress, UInt64, @core.RawAddress, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn sym_enum_sym_raw(@core.RawAddress, UInt64, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn sym_enum_symbols(@core.RawAddress, UInt64, @strings.PStr?, @core.RawAddress, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn sym_enum_symbols_ex(@core.RawAddress, UInt64, @strings.PStr?, @core.RawAddress, @core.RawAddress, UInt) -> Bool raise @core.WindowsError
+
+pub fn sym_enum_symbols_ex_raw(@core.RawAddress, UInt64, @core.RawAddress, @core.RawAddress, @core.RawAddress, UInt) -> @core.RawWin32Call[Int]
+
+pub fn sym_enum_symbols_ex_w(@core.RawAddress, UInt64, @strings.PWStr?, @core.RawAddress, @core.RawAddress, UInt) -> Bool raise @core.WindowsError
+
+pub fn sym_enum_symbols_ex_w_raw(@core.RawAddress, UInt64, @core.RawAddress, @core.RawAddress, @core.RawAddress, UInt) -> @core.RawWin32Call[Int]
+
+pub fn sym_enum_symbols_for_addr(@core.RawAddress, UInt64, @core.RawAddress, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn sym_enum_symbols_for_addr_raw(@core.RawAddress, UInt64, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn sym_enum_symbols_for_addr_w(@core.RawAddress, UInt64, @core.RawAddress, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn sym_enum_symbols_for_addr_w_raw(@core.RawAddress, UInt64, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn sym_enum_symbols_raw(@core.RawAddress, UInt64, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn sym_enum_symbols_w(@core.RawAddress, UInt64, @strings.PWStr?, @core.RawAddress, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn sym_enum_symbols_w_raw(@core.RawAddress, UInt64, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn sym_enum_types(@core.RawAddress, UInt64, @core.RawAddress, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn sym_enum_types_by_name(@core.RawAddress, UInt64, @strings.PStr?, @core.RawAddress, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn sym_enum_types_by_name_raw(@core.RawAddress, UInt64, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn sym_enum_types_by_name_w(@core.RawAddress, UInt64, @strings.PWStr?, @core.RawAddress, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn sym_enum_types_by_name_w_raw(@core.RawAddress, UInt64, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn sym_enum_types_raw(@core.RawAddress, UInt64, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn sym_enum_types_w(@core.RawAddress, UInt64, @core.RawAddress, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn sym_enum_types_w_raw(@core.RawAddress, UInt64, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn sym_enumerate_modules64(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn sym_enumerate_modules64_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn sym_enumerate_modules_w64(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn sym_enumerate_modules_w64_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn sym_enumerate_symbols64(@core.RawAddress, UInt64, @core.RawAddress, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn sym_enumerate_symbols64_raw(@core.RawAddress, UInt64, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn sym_enumerate_symbols_w64(@core.RawAddress, UInt64, @core.RawAddress, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn sym_enumerate_symbols_w64_raw(@core.RawAddress, UInt64, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn sym_find_debug_info_file(@core.RawAddress, @strings.PStr, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> @core.RawAddress raise @core.WindowsError
+
+pub fn sym_find_debug_info_file_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[@core.RawAddress]
+
+pub fn sym_find_debug_info_file_w(@core.RawAddress, @strings.PWStr, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> @core.RawAddress raise @core.WindowsError
+
+pub fn sym_find_debug_info_file_w_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[@core.RawAddress]
+
+pub fn sym_find_executable_image(@core.RawAddress, @strings.PStr, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> @core.RawAddress raise @core.WindowsError
+
+pub fn sym_find_executable_image_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[@core.RawAddress]
+
+pub fn sym_find_executable_image_w(@core.RawAddress, @strings.PWStr, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> @core.RawAddress raise @core.WindowsError
+
+pub fn sym_find_executable_image_w_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[@core.RawAddress]
+
+pub fn sym_find_file_in_path(@core.RawAddress, @strings.PStr?, @strings.PStr, @core.RawAddress, UInt, UInt, @6b6e654cfa99a060.SYMFINDIDOPTION_f8b40a9a2b73, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn sym_find_file_in_path_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, UInt, UInt, UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn sym_find_file_in_path_w(@core.RawAddress, @strings.PWStr?, @strings.PWStr, @core.RawAddress, UInt, UInt, @6b6e654cfa99a060.SYMFINDIDOPTION_f8b40a9a2b73, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn sym_find_file_in_path_w_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, UInt, UInt, UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn sym_from_addr(@core.RawAddress, UInt64, @core.RawAddress, @6b6e654cfa99a060.SYMBOLINFO_f65697c47800) -> Bool raise @core.WindowsError
+
+pub fn sym_from_addr_raw(@core.RawAddress, UInt64, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn sym_from_addr_w(@core.RawAddress, UInt64, @core.RawAddress, @6b6e654cfa99a060.SYMBOLINFOW_97615cbddbf1) -> Bool raise @core.WindowsError
+
+pub fn sym_from_addr_w_raw(@core.RawAddress, UInt64, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn sym_from_index(@core.RawAddress, UInt64, UInt, @6b6e654cfa99a060.SYMBOLINFO_f65697c47800) -> Bool raise @core.WindowsError
+
+pub fn sym_from_index_raw(@core.RawAddress, UInt64, UInt, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn sym_from_index_w(@core.RawAddress, UInt64, UInt, @6b6e654cfa99a060.SYMBOLINFOW_97615cbddbf1) -> Bool raise @core.WindowsError
+
+pub fn sym_from_index_w_raw(@core.RawAddress, UInt64, UInt, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn sym_from_inline_context(@core.RawAddress, UInt64, UInt, @core.RawAddress, @6b6e654cfa99a060.SYMBOLINFO_f65697c47800) -> Bool raise @core.WindowsError
+
+pub fn sym_from_inline_context_raw(@core.RawAddress, UInt64, UInt, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn sym_from_inline_context_w(@core.RawAddress, UInt64, UInt, @core.RawAddress, @6b6e654cfa99a060.SYMBOLINFOW_97615cbddbf1) -> Bool raise @core.WindowsError
+
+pub fn sym_from_inline_context_w_raw(@core.RawAddress, UInt64, UInt, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn sym_from_name(@core.RawAddress, @strings.PStr, @6b6e654cfa99a060.SYMBOLINFO_f65697c47800) -> Bool raise @core.WindowsError
+
+pub fn sym_from_name_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn sym_from_name_w(@core.RawAddress, @strings.PWStr, @6b6e654cfa99a060.SYMBOLINFOW_97615cbddbf1) -> Bool raise @core.WindowsError
+
+pub fn sym_from_name_w_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn sym_from_token(@core.RawAddress, UInt64, UInt, @6b6e654cfa99a060.SYMBOLINFO_f65697c47800) -> Bool raise @core.WindowsError
+
+pub fn sym_from_token_raw(@core.RawAddress, UInt64, UInt, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn sym_from_token_w(@core.RawAddress, UInt64, UInt, @6b6e654cfa99a060.SYMBOLINFOW_97615cbddbf1) -> Bool raise @core.WindowsError
+
+pub fn sym_from_token_w_raw(@core.RawAddress, UInt64, UInt, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn sym_function_table_access64(@core.RawAddress, UInt64) -> @core.RawAddress raise @core.WindowsError
+
+pub fn sym_function_table_access64_access_routines(@core.RawAddress, UInt64, @core.RawAddress, @core.RawAddress) -> @core.RawAddress raise @core.WindowsError
+
+pub fn sym_function_table_access64_access_routines_raw(@core.RawAddress, UInt64, @core.RawAddress, @core.RawAddress) -> @core.RawAddress
+
+pub fn sym_function_table_access64_raw(@core.RawAddress, UInt64) -> @core.RawWin32Call[@core.RawAddress]
+
+pub fn sym_get_extended_option(@6b6e654cfa99a060.IMAGEHLPEXTENDEDOPTIONS_60024516f29a) -> Bool raise @core.WindowsError
+
+pub fn sym_get_extended_option_raw(Int) -> Int
+
+pub fn sym_get_file_line_offsets64(@core.RawAddress, @strings.PStr?, @strings.PStr, @core.RawAddress, UInt) -> UInt raise @core.WindowsError
+
+pub fn sym_get_file_line_offsets64_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, UInt) -> @core.RawWin32Call[UInt]
+
+pub fn sym_get_home_directory(UInt, @core.RawAddress, UInt64) -> @core.RawAddress raise @core.WindowsError
+
+pub fn sym_get_home_directory_raw(UInt, @core.RawAddress, UInt64) -> @core.RawWin32Call[@core.RawAddress]
+
+pub fn sym_get_home_directory_w(UInt, @strings.PWStrBuffer) -> @core.RawAddress raise @core.WindowsError
+
+pub fn sym_get_home_directory_w_raw(UInt, @core.RawAddress, UInt64) -> @core.RawWin32Call[@core.RawAddress]
+
+pub fn sym_get_line_from_addr64(@core.RawAddress, UInt64, @core.RawAddress, @6b6e654cfa99a060.IMAGEHLPLINE64_642a89f9f539) -> Bool raise @core.WindowsError
+
+pub fn sym_get_line_from_addr64_raw(@core.RawAddress, UInt64, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn sym_get_line_from_addr_w64(@core.RawAddress, UInt64, @core.RawAddress, @6b6e654cfa99a060.IMAGEHLPLINEW64_d07e7dd8f410) -> Bool raise @core.WindowsError
+
+pub fn sym_get_line_from_addr_w64_raw(@core.RawAddress, UInt64, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn sym_get_line_from_inline_context(@core.RawAddress, UInt64, UInt, UInt64, @core.RawAddress, @6b6e654cfa99a060.IMAGEHLPLINE64_642a89f9f539) -> Bool raise @core.WindowsError
+
+pub fn sym_get_line_from_inline_context_raw(@core.RawAddress, UInt64, UInt, UInt64, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn sym_get_line_from_inline_context_w(@core.RawAddress, UInt64, UInt, UInt64, @core.RawAddress, @6b6e654cfa99a060.IMAGEHLPLINEW64_d07e7dd8f410) -> Bool raise @core.WindowsError
+
+pub fn sym_get_line_from_inline_context_w_raw(@core.RawAddress, UInt64, UInt, UInt64, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn sym_get_line_from_name64(@core.RawAddress, @strings.PStr?, @strings.PStr?, UInt, @core.RawAddress, @6b6e654cfa99a060.IMAGEHLPLINE64_642a89f9f539) -> Bool raise @core.WindowsError
+
+pub fn sym_get_line_from_name64_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn sym_get_line_from_name_w64(@core.RawAddress, @strings.PWStr?, @strings.PWStr?, UInt, @core.RawAddress, @6b6e654cfa99a060.IMAGEHLPLINEW64_d07e7dd8f410) -> Bool raise @core.WindowsError
+
+pub fn sym_get_line_from_name_w64_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn sym_get_line_next64(@core.RawAddress, @6b6e654cfa99a060.IMAGEHLPLINE64_642a89f9f539) -> Bool raise @core.WindowsError
+
+pub fn sym_get_line_next64_raw(@core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn sym_get_line_next_w64(@core.RawAddress, @6b6e654cfa99a060.IMAGEHLPLINEW64_d07e7dd8f410) -> Bool raise @core.WindowsError
+
+pub fn sym_get_line_next_w64_raw(@core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn sym_get_line_prev64(@core.RawAddress, @6b6e654cfa99a060.IMAGEHLPLINE64_642a89f9f539) -> Bool raise @core.WindowsError
+
+pub fn sym_get_line_prev64_raw(@core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn sym_get_line_prev_w64(@core.RawAddress, @6b6e654cfa99a060.IMAGEHLPLINEW64_d07e7dd8f410) -> Bool raise @core.WindowsError
+
+pub fn sym_get_line_prev_w64_raw(@core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn sym_get_module_base64(@core.RawAddress, UInt64) -> UInt64 raise @core.WindowsError
+
+pub fn sym_get_module_base64_raw(@core.RawAddress, UInt64) -> @core.RawWin32Call[UInt64]
+
+pub fn sym_get_module_info64(@core.RawAddress, UInt64, @6b6e654cfa99a060.IMAGEHLPMODULE64_a295ce1ff5fc) -> Bool raise @core.WindowsError
+
+pub fn sym_get_module_info64_raw(@core.RawAddress, UInt64, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn sym_get_module_info_w64(@core.RawAddress, UInt64, @6b6e654cfa99a060.IMAGEHLPMODULEW64_181e6ae67fd6) -> Bool raise @core.WindowsError
+
+pub fn sym_get_module_info_w64_raw(@core.RawAddress, UInt64, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn sym_get_omaps(@core.RawAddress, UInt64, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn sym_get_omaps_raw(@core.RawAddress, UInt64, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn sym_get_options() -> UInt raise @core.WindowsError
+
+pub fn sym_get_options_raw() -> UInt
+
+pub fn sym_get_parent_window(@core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn sym_get_parent_window_raw(@core.RawAddress) -> Int
+
+pub fn sym_get_scope(@core.RawAddress, UInt64, UInt, @6b6e654cfa99a060.SYMBOLINFO_f65697c47800) -> Bool raise @core.WindowsError
+
+pub fn sym_get_scope_raw(@core.RawAddress, UInt64, UInt, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn sym_get_scope_w(@core.RawAddress, UInt64, UInt, @6b6e654cfa99a060.SYMBOLINFOW_97615cbddbf1) -> Bool raise @core.WindowsError
+
+pub fn sym_get_scope_w_raw(@core.RawAddress, UInt64, UInt, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn sym_get_search_path(@core.RawAddress, @core.RawAddress, UInt) -> Bool raise @core.WindowsError
+
+pub fn sym_get_search_path_raw(@core.RawAddress, @core.RawAddress, UInt) -> @core.RawWin32Call[Int]
+
+pub fn sym_get_search_path_w(@core.RawAddress, @strings.PWStrBuffer) -> Bool raise @core.WindowsError
+
+pub fn sym_get_search_path_w_raw(@core.RawAddress, @core.RawAddress, UInt) -> @core.RawWin32Call[Int]
+
+pub fn sym_get_source_file(@core.RawAddress, UInt64, @strings.PStr?, @strings.PStr, @core.RawAddress, UInt) -> Bool raise @core.WindowsError
+
+pub fn sym_get_source_file_checksum(@core.RawAddress, UInt64, @strings.PStr, @core.RawAddress, @core.RawAddress, UInt, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn sym_get_source_file_checksum_raw(@core.RawAddress, UInt64, @core.RawAddress, @core.RawAddress, @core.RawAddress, UInt, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn sym_get_source_file_checksum_w(@core.RawAddress, UInt64, @strings.PWStr, @core.RawAddress, @core.RawAddress, UInt, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn sym_get_source_file_checksum_w_raw(@core.RawAddress, UInt64, @core.RawAddress, @core.RawAddress, @core.RawAddress, UInt, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn sym_get_source_file_from_token(@core.RawAddress, @core.RawAddress, @strings.PStr?, @core.RawAddress, UInt) -> Bool raise @core.WindowsError
+
+pub fn sym_get_source_file_from_token_by_token_name(@core.RawAddress, @core.RawAddress, @strings.PStr?, @strings.PStr?, @core.RawAddress, UInt) -> Bool raise @core.WindowsError
+
+pub fn sym_get_source_file_from_token_by_token_name_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, UInt) -> Int
+
+pub fn sym_get_source_file_from_token_by_token_name_w(@core.RawAddress, @core.RawAddress, @strings.PWStr?, @strings.PWStr?, @strings.PWStrBuffer) -> Bool raise @core.WindowsError
+
+pub fn sym_get_source_file_from_token_by_token_name_w_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, UInt) -> Int
+
+pub fn sym_get_source_file_from_token_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, UInt) -> @core.RawWin32Call[Int]
+
+pub fn sym_get_source_file_from_token_w(@core.RawAddress, @core.RawAddress, @strings.PWStr?, @strings.PWStrBuffer) -> Bool raise @core.WindowsError
+
+pub fn sym_get_source_file_from_token_w_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, UInt) -> @core.RawWin32Call[Int]
+
+pub fn sym_get_source_file_raw(@core.RawAddress, UInt64, @core.RawAddress, @core.RawAddress, @core.RawAddress, UInt) -> @core.RawWin32Call[Int]
+
+pub fn sym_get_source_file_token(@core.RawAddress, UInt64, @strings.PStr, @core.RawAddress, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn sym_get_source_file_token_by_token_name(@core.RawAddress, UInt64, @strings.PStr, @strings.PStr, @strings.PStr?, @core.RawAddress, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn sym_get_source_file_token_by_token_name_raw(@core.RawAddress, UInt64, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn sym_get_source_file_token_by_token_name_w(@core.RawAddress, UInt64, @strings.PWStr, @strings.PWStr, @strings.PWStr?, @core.RawAddress, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn sym_get_source_file_token_by_token_name_w_raw(@core.RawAddress, UInt64, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn sym_get_source_file_token_raw(@core.RawAddress, UInt64, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn sym_get_source_file_token_w(@core.RawAddress, UInt64, @strings.PWStr, @core.RawAddress, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn sym_get_source_file_token_w_raw(@core.RawAddress, UInt64, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn sym_get_source_file_w(@core.RawAddress, UInt64, @strings.PWStr?, @strings.PWStr, @strings.PWStrBuffer) -> Bool raise @core.WindowsError
+
+pub fn sym_get_source_file_w_raw(@core.RawAddress, UInt64, @core.RawAddress, @core.RawAddress, @core.RawAddress, UInt) -> @core.RawWin32Call[Int]
+
+pub fn sym_get_source_var_from_token(@core.RawAddress, @core.RawAddress, @strings.PStr?, @strings.PStr, @core.RawAddress, UInt) -> Bool raise @core.WindowsError
+
+pub fn sym_get_source_var_from_token_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, UInt) -> @core.RawWin32Call[Int]
+
+pub fn sym_get_source_var_from_token_w(@core.RawAddress, @core.RawAddress, @strings.PWStr?, @strings.PWStr, @strings.PWStrBuffer) -> Bool raise @core.WindowsError
+
+pub fn sym_get_source_var_from_token_w_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, UInt) -> @core.RawWin32Call[Int]
+
+pub fn sym_get_sym_from_addr64(@core.RawAddress, UInt64, @core.RawAddress, @6b6e654cfa99a060.IMAGEHLPSYMBOL64_c4f1274cf0d6) -> Bool raise @core.WindowsError
+
+pub fn sym_get_sym_from_addr64_raw(@core.RawAddress, UInt64, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn sym_get_sym_from_name64(@core.RawAddress, @strings.PStr, @6b6e654cfa99a060.IMAGEHLPSYMBOL64_c4f1274cf0d6) -> Bool raise @core.WindowsError
+
+pub fn sym_get_sym_from_name64_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn sym_get_sym_next64(@core.RawAddress, @6b6e654cfa99a060.IMAGEHLPSYMBOL64_c4f1274cf0d6) -> Bool raise @core.WindowsError
+
+pub fn sym_get_sym_next64_raw(@core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn sym_get_sym_prev64(@core.RawAddress, @6b6e654cfa99a060.IMAGEHLPSYMBOL64_c4f1274cf0d6) -> Bool raise @core.WindowsError
+
+pub fn sym_get_sym_prev64_raw(@core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn sym_get_symbol_file(@core.RawAddress, @strings.PStr?, @strings.PStr, UInt, @core.RawAddress, UInt64, @core.RawAddress, UInt64) -> Bool raise @core.WindowsError
+
+pub fn sym_get_symbol_file_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, UInt64, @core.RawAddress, UInt64) -> @core.RawWin32Call[Int]
+
+pub fn sym_get_symbol_file_w(@core.RawAddress, @strings.PWStr?, @strings.PWStr, UInt, @strings.PWStrBuffer, @strings.PWStrBuffer) -> Bool raise @core.WindowsError
+
+pub fn sym_get_symbol_file_w_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, UInt64, @core.RawAddress, UInt64) -> @core.RawWin32Call[Int]
+
+pub fn sym_get_type_from_name(@core.RawAddress, UInt64, @strings.PStr, @6b6e654cfa99a060.SYMBOLINFO_f65697c47800) -> Bool raise @core.WindowsError
+
+pub fn sym_get_type_from_name_raw(@core.RawAddress, UInt64, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn sym_get_type_from_name_w(@core.RawAddress, UInt64, @strings.PWStr, @6b6e654cfa99a060.SYMBOLINFOW_97615cbddbf1) -> Bool raise @core.WindowsError
+
+pub fn sym_get_type_from_name_w_raw(@core.RawAddress, UInt64, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn sym_get_type_info(@core.RawAddress, UInt64, UInt, @6b6e654cfa99a060.IMAGEHLPSYMBOLTYPEINFO_555d1cc84c93, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn sym_get_type_info_ex(@core.RawAddress, UInt64, @6b6e654cfa99a060.IMAGEHLPGETTYPEINFOPARAMS_0144c5f4cab0) -> Bool raise @core.WindowsError
+
+pub fn sym_get_type_info_ex_raw(@core.RawAddress, UInt64, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn sym_get_type_info_raw(@core.RawAddress, UInt64, UInt, Int, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn sym_get_unwind_info(@core.RawAddress, UInt64, @core.RawAddress, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn sym_get_unwind_info_raw(@core.RawAddress, UInt64, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn sym_initialize(@core.RawAddress, @strings.PStr?, Int) -> Bool raise @core.WindowsError
+
+pub fn sym_initialize_raw(@core.RawAddress, @core.RawAddress, Int) -> @core.RawWin32Call[Int]
+
+pub fn sym_initialize_w(@core.RawAddress, @strings.PWStr?, Int) -> Bool raise @core.WindowsError
+
+pub fn sym_initialize_w_raw(@core.RawAddress, @core.RawAddress, Int) -> @core.RawWin32Call[Int]
+
+pub let sym_inline_comp_different : UInt
+
+pub let sym_inline_comp_error : UInt
+
+pub let sym_inline_comp_identical : UInt
+
+pub let sym_inline_comp_stepin : UInt
+
+pub let sym_inline_comp_stepout : UInt
+
+pub let sym_inline_comp_stepover : UInt
+
+pub fn sym_load_module64(@core.RawAddress, @core.RawAddress, @strings.PStr?, @strings.PStr?, UInt64, UInt) -> UInt64 raise @core.WindowsError
+
+pub fn sym_load_module64_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, UInt64, UInt) -> @core.RawWin32Call[UInt64]
+
+pub fn sym_load_module_ex(@core.RawAddress, @core.RawAddress, @strings.PStr?, @strings.PStr?, UInt64, UInt, @6b6e654cfa99a060.MODLOADDATA_9aa15007f52f?, @6b6e654cfa99a060.SYMLOADFLAGS_d32769729ac6) -> UInt64 raise @core.WindowsError
+
+pub fn sym_load_module_ex_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, UInt64, UInt, @core.RawAddress, UInt) -> @core.RawWin32Call[UInt64]
+
+pub fn sym_load_module_ex_w(@core.RawAddress, @core.RawAddress, @strings.PWStr?, @strings.PWStr?, UInt64, UInt, @6b6e654cfa99a060.MODLOADDATA_9aa15007f52f?, @6b6e654cfa99a060.SYMLOADFLAGS_d32769729ac6) -> UInt64 raise @core.WindowsError
+
+pub fn sym_load_module_ex_w_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, UInt64, UInt, @core.RawAddress, UInt) -> @core.RawWin32Call[UInt64]
+
+pub fn sym_match_file_name(@strings.PStr, @strings.PStr, @core.RawAddress, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn sym_match_file_name_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn sym_match_file_name_w(@strings.PWStr, @strings.PWStr, @core.RawAddress, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn sym_match_file_name_w_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn sym_match_string(@strings.PStr, @strings.PStr, Int) -> Bool raise @core.WindowsError
+
+pub fn sym_match_string_a(@strings.PStr, @strings.PStr, Int) -> Bool raise @core.WindowsError
+
+pub fn sym_match_string_a_raw(@core.RawAddress, @core.RawAddress, Int) -> Int
+
+pub fn sym_match_string_raw(@core.RawAddress, @core.RawAddress, Int) -> @core.RawWin32Call[Int]
+
+pub fn sym_match_string_w(@strings.PWStr, @strings.PWStr, Int) -> Bool raise @core.WindowsError
+
+pub fn sym_match_string_w_raw(@core.RawAddress, @core.RawAddress, Int) -> @core.RawWin32Call[Int]
+
+pub fn sym_next(@core.RawAddress, @6b6e654cfa99a060.SYMBOLINFO_f65697c47800) -> Bool raise @core.WindowsError
+
+pub fn sym_next_raw(@core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn sym_next_w(@core.RawAddress, @6b6e654cfa99a060.SYMBOLINFOW_97615cbddbf1) -> Bool raise @core.WindowsError
+
+pub fn sym_next_w_raw(@core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn sym_prev(@core.RawAddress, @6b6e654cfa99a060.SYMBOLINFO_f65697c47800) -> Bool raise @core.WindowsError
+
+pub fn sym_prev_raw(@core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn sym_prev_w(@core.RawAddress, @6b6e654cfa99a060.SYMBOLINFOW_97615cbddbf1) -> Bool raise @core.WindowsError
+
+pub fn sym_prev_w_raw(@core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn sym_query_inline_trace(@core.RawAddress, UInt64, UInt, UInt64, UInt64, @core.RawAddress, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn sym_query_inline_trace_raw(@core.RawAddress, UInt64, UInt, UInt64, UInt64, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn sym_refresh_module_list(@core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn sym_refresh_module_list_raw(@core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn sym_register_callback64(@core.RawAddress, @core.RawAddress, UInt64) -> Bool raise @core.WindowsError
+
+pub fn sym_register_callback64_raw(@core.RawAddress, @core.RawAddress, UInt64) -> @core.RawWin32Call[Int]
+
+pub fn sym_register_callback_w64(@core.RawAddress, @core.RawAddress, UInt64) -> Bool raise @core.WindowsError
+
+pub fn sym_register_callback_w64_raw(@core.RawAddress, @core.RawAddress, UInt64) -> @core.RawWin32Call[Int]
+
+pub fn sym_register_function_entry_callback64(@core.RawAddress, @core.RawAddress, UInt64) -> Bool raise @core.WindowsError
+
+pub fn sym_register_function_entry_callback64_raw(@core.RawAddress, @core.RawAddress, UInt64) -> @core.RawWin32Call[Int]
+
+pub fn sym_search(@core.RawAddress, UInt64, UInt, UInt, @strings.PStr?, UInt64, @core.RawAddress, @core.RawAddress, UInt) -> Bool raise @core.WindowsError
+
+pub fn sym_search_raw(@core.RawAddress, UInt64, UInt, UInt, @core.RawAddress, UInt64, @core.RawAddress, @core.RawAddress, UInt) -> @core.RawWin32Call[Int]
+
+pub fn sym_search_w(@core.RawAddress, UInt64, UInt, UInt, @strings.PWStr?, UInt64, @core.RawAddress, @core.RawAddress, UInt) -> Bool raise @core.WindowsError
+
+pub fn sym_search_w_raw(@core.RawAddress, UInt64, UInt, UInt, @core.RawAddress, UInt64, @core.RawAddress, @core.RawAddress, UInt) -> @core.RawWin32Call[Int]
+
+pub fn sym_set_context(@core.RawAddress, @6b6e654cfa99a060.IMAGEHLPSTACKFRAME_c213432e2da7, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn sym_set_context_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn sym_set_extended_option(@6b6e654cfa99a060.IMAGEHLPEXTENDEDOPTIONS_60024516f29a, Int) -> Bool raise @core.WindowsError
+
+pub fn sym_set_extended_option_raw(Int, Int) -> Int
+
+pub fn sym_set_home_directory(@core.RawAddress, @strings.PStr?) -> @core.RawAddress raise @core.WindowsError
+
+pub fn sym_set_home_directory_raw(@core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[@core.RawAddress]
+
+pub fn sym_set_home_directory_w(@core.RawAddress, @strings.PWStr?) -> @core.RawAddress raise @core.WindowsError
+
+pub fn sym_set_home_directory_w_raw(@core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[@core.RawAddress]
+
+pub fn sym_set_options(UInt) -> UInt raise @core.WindowsError
+
+pub fn sym_set_options_raw(UInt) -> UInt
+
+pub fn sym_set_parent_window(@core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn sym_set_parent_window_raw(@core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn sym_set_scope_from_addr(@core.RawAddress, UInt64) -> Bool raise @core.WindowsError
+
+pub fn sym_set_scope_from_addr_raw(@core.RawAddress, UInt64) -> @core.RawWin32Call[Int]
+
+pub fn sym_set_scope_from_index(@core.RawAddress, UInt64, UInt) -> Bool raise @core.WindowsError
+
+pub fn sym_set_scope_from_index_raw(@core.RawAddress, UInt64, UInt) -> @core.RawWin32Call[Int]
+
+pub fn sym_set_scope_from_inline_context(@core.RawAddress, UInt64, UInt) -> Bool raise @core.WindowsError
+
+pub fn sym_set_scope_from_inline_context_raw(@core.RawAddress, UInt64, UInt) -> @core.RawWin32Call[Int]
+
+pub fn sym_set_search_path(@core.RawAddress, @strings.PStr?) -> Bool raise @core.WindowsError
+
+pub fn sym_set_search_path_raw(@core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn sym_set_search_path_w(@core.RawAddress, @strings.PWStr?) -> Bool raise @core.WindowsError
+
+pub fn sym_set_search_path_w_raw(@core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn sym_srv_delta_name(@core.RawAddress, @strings.PStr?, @strings.PStr, @strings.PStr, @strings.PStr) -> @core.RawAddress raise @core.WindowsError
+
+pub fn sym_srv_delta_name_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[@core.RawAddress]
+
+pub fn sym_srv_delta_name_w(@core.RawAddress, @strings.PWStr?, @strings.PWStr, @strings.PWStr, @strings.PWStr) -> @core.RawAddress raise @core.WindowsError
+
+pub fn sym_srv_delta_name_w_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[@core.RawAddress]
+
+pub fn sym_srv_get_file_index_info(@strings.PStr, @6b6e654cfa99a060.SYMSRVINDEXINFO_98040dcd8c08, UInt) -> Bool raise @core.WindowsError
+
+pub fn sym_srv_get_file_index_info_raw(@core.RawAddress, @core.RawAddress, UInt) -> @core.RawWin32Call[Int]
+
+pub fn sym_srv_get_file_index_info_w(@strings.PWStr, @6b6e654cfa99a060.SYMSRVINDEXINFOW_a1d3906e5d79, UInt) -> Bool raise @core.WindowsError
+
+pub fn sym_srv_get_file_index_info_w_raw(@core.RawAddress, @core.RawAddress, UInt) -> @core.RawWin32Call[Int]
+
+pub fn sym_srv_get_file_index_string(@core.RawAddress, @strings.PStr?, @strings.PStr, @core.RawAddress, UInt64, UInt) -> Bool raise @core.WindowsError
+
+pub fn sym_srv_get_file_index_string_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, UInt64, UInt) -> @core.RawWin32Call[Int]
+
+pub fn sym_srv_get_file_index_string_w(@core.RawAddress, @strings.PWStr?, @strings.PWStr, @strings.PWStrBuffer, UInt) -> Bool raise @core.WindowsError
+
+pub fn sym_srv_get_file_index_string_w_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, UInt64, UInt) -> @core.RawWin32Call[Int]
+
+pub fn sym_srv_get_file_indexes(@strings.PStr, @core.RawAddress, @core.RawAddress, @core.RawAddress, UInt) -> Bool raise @core.WindowsError
+
+pub fn sym_srv_get_file_indexes_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, UInt) -> @core.RawWin32Call[Int]
+
+pub fn sym_srv_get_file_indexes_w(@strings.PWStr, @core.RawAddress, @core.RawAddress, @core.RawAddress, UInt) -> Bool raise @core.WindowsError
+
+pub fn sym_srv_get_file_indexes_w_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, UInt) -> @core.RawWin32Call[Int]
+
+pub fn sym_srv_get_supplement(@core.RawAddress, @strings.PStr?, @strings.PStr, @strings.PStr) -> @core.RawAddress raise @core.WindowsError
+
+pub fn sym_srv_get_supplement_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[@core.RawAddress]
+
+pub fn sym_srv_get_supplement_w(@core.RawAddress, @strings.PWStr?, @strings.PWStr, @strings.PWStr) -> @core.RawAddress raise @core.WindowsError
+
+pub fn sym_srv_get_supplement_w_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[@core.RawAddress]
+
+pub fn sym_srv_is_store(@core.RawAddress, @strings.PStr) -> Bool raise @core.WindowsError
+
+pub fn sym_srv_is_store_raw(@core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn sym_srv_is_store_w(@core.RawAddress, @strings.PWStr) -> Bool raise @core.WindowsError
+
+pub fn sym_srv_is_store_w_raw(@core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn sym_srv_store_file(@core.RawAddress, @strings.PStr?, @strings.PStr, @6b6e654cfa99a060.SYMSRVSTOREFILEFLAGS_4dcab9c3e805) -> @core.RawAddress raise @core.WindowsError
+
+pub fn sym_srv_store_file_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, UInt) -> @core.RawWin32Call[@core.RawAddress]
+
+pub fn sym_srv_store_file_w(@core.RawAddress, @strings.PWStr?, @strings.PWStr, @6b6e654cfa99a060.SYMSRVSTOREFILEFLAGS_4dcab9c3e805) -> @core.RawAddress raise @core.WindowsError
+
+pub fn sym_srv_store_file_w_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, UInt) -> @core.RawWin32Call[@core.RawAddress]
+
+pub fn sym_srv_store_supplement(@core.RawAddress, @strings.PStr?, @strings.PStr, @strings.PStr, UInt) -> @core.RawAddress raise @core.WindowsError
+
+pub fn sym_srv_store_supplement_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, UInt) -> @core.RawWin32Call[@core.RawAddress]
+
+pub fn sym_srv_store_supplement_w(@core.RawAddress, @strings.PWStr?, @strings.PWStr, @strings.PWStr, UInt) -> @core.RawAddress raise @core.WindowsError
+
+pub fn sym_srv_store_supplement_w_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, UInt) -> @core.RawWin32Call[@core.RawAddress]
+
+pub let sym_stkwalk_default : UInt
+
+pub let sym_stkwalk_force_frameptr : UInt
+
+pub let sym_stkwalk_zeroextend_ptrs : UInt
+
+pub fn sym_un_d_name64(@6b6e654cfa99a060.IMAGEHLPSYMBOL64_c4f1274cf0d6, @core.RawAddress, UInt) -> Bool raise @core.WindowsError
+
+pub fn sym_un_d_name64_raw(@core.RawAddress, @core.RawAddress, UInt) -> @core.RawWin32Call[Int]
+
+pub fn sym_unload_module64(@core.RawAddress, UInt64) -> Bool raise @core.WindowsError
+
+pub fn sym_unload_module64_raw(@core.RawAddress, UInt64) -> @core.RawWin32Call[Int]
+
+pub let symenum_options_default : UInt
+
+pub let symenum_options_inline : UInt
+
+pub let symf_constant : UInt
+
+pub let symf_export : UInt
+
+pub let symf_forwarder : UInt
+
+pub let symf_framerel : UInt
+
+pub let symf_function : UInt
+
+pub let symf_local : UInt
+
+pub let symf_omap_generated : UInt
+
+pub let symf_omap_modified : UInt
+
+pub let symf_parameter : UInt
+
+pub let symf_register : UInt
+
+pub let symf_regrel : UInt
+
+pub let symf_thunk : UInt
+
+pub let symf_tlsrel : UInt
+
+pub let symf_virtual : UInt
+
+pub let symflag_complex : UInt
+
+pub let symflag_fixup_arm64_x : UInt
+
+pub let symflag_func_no_return : UInt
+
+pub let symflag_global : UInt
+
+pub let symflag_null : UInt
+
+pub let symflag_public_code : UInt
+
+pub let symflag_regrel_aliasindir : UInt
+
+pub let symflag_reset : UInt
+
+pub let symflag_synthetic_zerobase : UInt
+
+pub let symopt_allow_absolute_symbols : UInt
+
+pub let symopt_allow_zero_address : UInt
+
+pub let symopt_auto_publics : UInt
+
+pub let symopt_case_insensitive : UInt
+
+pub let symopt_debug : UInt
+
+pub let symopt_deferred_loads : UInt
+
+pub let symopt_disable_fast_symbols : UInt
+
+pub let symopt_disable_srvstar_on_startup : UInt
+
+pub let symopt_disable_symsrv_autodetect : UInt
+
+pub let symopt_disable_symsrv_timeout : UInt
+
+pub let symopt_exact_symbols : UInt
+
+pub let symopt_fail_critical_errors : UInt
+
+pub let symopt_favor_compressed : UInt
+
+pub let symopt_flat_directory : UInt
+
+pub let symopt_ignore_cvrec : UInt
+
+pub let symopt_ignore_imagedir : UInt
+
+pub let symopt_ignore_nt_sympath : UInt
+
+pub let symopt_include_32_bit_modules : UInt
+
+pub let symopt_load_anything : UInt
+
+pub let symopt_load_lines : UInt
+
+pub let symopt_no_cpp : UInt
+
+pub let symopt_no_image_search : UInt
+
+pub let symopt_no_prompts : UInt
+
+pub let symopt_no_publics : UInt
+
+pub let symopt_no_unqualified_loads : UInt
+
+pub let symopt_omap_find_nearest : UInt
+
+pub let symopt_overwrite : UInt
+
+pub let symopt_publics_only : UInt
+
+pub let symopt_readonly_cache : UInt
+
+pub let symopt_secure : UInt
+
+pub let symopt_sympath_last : UInt
+
+pub let symopt_undname : UInt
+
+pub let symsearch_allitems : UInt
+
+pub let symsearch_globalsonly : UInt
+
+pub let symsearch_maskobjs : UInt
+
+pub let symsearch_recurse : UInt
+
+pub let symsrv_version : UInt
+
+pub let symstoreopt_alt_index : UInt
+
+pub let symstoreopt_unicode : UInt
+
+pub let target_attribute_pacmask : UInt
+
+pub fn terminate_process_on_memory_exhaustion(UInt64) -> Unit raise @core.WindowsError
+
+pub fn terminate_process_on_memory_exhaustion_raw(UInt64) -> Unit
+
+pub fn touch_file_times(@core.RawAddress, @fb66f520d7e12332.SYSTEMTIME_312dc00e2237?) -> Bool raise @core.WindowsError
+
+pub fn touch_file_times_raw(@core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn un_decorate_symbol_name(@strings.PStr, @core.RawAddress, UInt, UInt) -> UInt raise @core.WindowsError
+
+pub fn un_decorate_symbol_name_raw(@core.RawAddress, @core.RawAddress, UInt, UInt) -> @core.RawWin32Call[UInt]
+
+pub fn un_decorate_symbol_name_w(@strings.PWStr, @strings.PWStrBuffer, UInt) -> UInt raise @core.WindowsError
+
+pub fn un_decorate_symbol_name_w_raw(@core.RawAddress, @core.RawAddress, UInt, UInt) -> @core.RawWin32Call[UInt]
+
+pub fn un_map_and_load(@6b6e654cfa99a060.LOADEDIMAGE_c51b4c013e63) -> Bool raise @core.WindowsError
+
+pub fn un_map_and_load_raw(@core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub let undname_32_bit_decode : UInt
+
+pub let undname_complete : UInt
+
+pub let undname_name_only : UInt
+
+pub let undname_no_access_specifiers : UInt
+
+pub let undname_no_allocation_language : UInt
+
+pub let undname_no_allocation_model : UInt
+
+pub let undname_no_arguments : UInt
+
+pub let undname_no_cv_thistype : UInt
+
+pub let undname_no_function_returns : UInt
+
+pub let undname_no_leading_underscores : UInt
+
+pub let undname_no_member_type : UInt
+
+pub let undname_no_ms_keywords : UInt
+
+pub let undname_no_ms_thistype : UInt
+
+pub let undname_no_return_udt_model : UInt
+
+pub let undname_no_special_syms : UInt
+
+pub let undname_no_thistype : UInt
+
+pub let undname_no_throw_signatures : UInt
+
+pub fn unhandled_exception_filter(@6b6e654cfa99a060.EXCEPTIONPOINTERS_eeab20700636) -> Int raise @core.WindowsError
+
+pub fn unhandled_exception_filter_raw(@core.RawAddress) -> Int
+
+pub fn update_debug_info_file(@strings.PStr, @strings.PStr, @core.RawAddress, @6b6e654cfa99a060.IMAGENTHEADERS32_48271db73677) -> Bool raise @core.WindowsError
+
+pub fn update_debug_info_file_ex(@strings.PStr, @strings.PStr, @core.RawAddress, @6b6e654cfa99a060.IMAGENTHEADERS32_48271db73677, UInt) -> Bool raise @core.WindowsError
+
+pub fn update_debug_info_file_ex_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, UInt) -> Int
+
+pub fn update_debug_info_file_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn wait_for_debug_event(@6b6e654cfa99a060.DEBUGEVENT_7287c0fdcfe1, UInt) -> Bool raise @core.WindowsError
+
+pub fn wait_for_debug_event_ex(@6b6e654cfa99a060.DEBUGEVENT_7287c0fdcfe1, UInt) -> Bool raise @core.WindowsError
+
+pub fn wait_for_debug_event_ex_raw(@core.RawAddress, UInt) -> @core.RawWin32Call[Int]
+
+pub fn wait_for_debug_event_raw(@core.RawAddress, UInt) -> @core.RawWin32Call[Int]
+
+pub let wct_max_node_count : UInt
+
+pub let wct_network_io_flag : UInt
+
+pub let wct_objname_length : UInt
+
+pub let whea_bad_page_list_location : UInt
+
+pub let whea_bad_page_list_max_size : UInt
+
+pub let whea_cmci_threshold_count : UInt
+
+pub let whea_cmci_threshold_poll_count : UInt
+
+pub let whea_cmci_threshold_time : UInt
+
+pub let whea_device_driver_buffer_set_max : UInt
+
+pub let whea_device_driver_buffer_set_min : UInt
+
+pub let whea_device_driver_buffer_set_v1 : UInt
+
+pub let whea_device_driver_config_max : UInt
+
+pub let whea_device_driver_config_min : UInt
+
+pub let whea_device_driver_config_v1 : UInt
+
+pub let whea_device_driver_config_v2 : UInt
+
+pub let whea_disable_dummy_write : UInt
+
+pub let whea_disable_offline : UInt
+
+pub let whea_disable_prm_address_translation : UInt
+
+pub let whea_enable_batched_row_offline : UInt
+
+pub let whea_err_src_override_flag : UInt
+
+pub let whea_error_source_descriptor_type_aerbridge : UInt
+
+pub let whea_error_source_descriptor_type_aerendpoint : UInt
+
+pub let whea_error_source_descriptor_type_aerrootport : UInt
+
+pub let whea_error_source_descriptor_type_generic : UInt
+
+pub let whea_error_source_descriptor_type_generic_v2 : UInt
+
+pub let whea_error_source_descriptor_type_ipfcmc : UInt
+
+pub let whea_error_source_descriptor_type_ipfcpe : UInt
+
+pub let whea_error_source_descriptor_type_ipfmca : UInt
+
+pub let whea_error_source_descriptor_type_xpfcmc : UInt
+
+pub let whea_error_source_descriptor_type_xpfmce : UInt
+
+pub let whea_error_source_descriptor_type_xpfnmi : UInt
+
+pub let whea_error_source_descriptor_version_10 : UInt
+
+pub let whea_error_source_descriptor_version_11 : UInt
+
+pub let whea_error_source_flag_defaultsource : UInt
+
+pub let whea_error_source_flag_firmwarefirst : UInt
+
+pub let whea_error_source_flag_ghes_assist : UInt
+
+pub let whea_error_source_flag_global : UInt
+
+pub let whea_error_source_invalid_related_source : UInt
+
+pub let whea_max_mc_banks : UInt
+
+pub let whea_mem_persistoffline : UInt
+
+pub let whea_mem_pfa_disable : UInt
+
+pub let whea_mem_pfa_pagecount : UInt
+
+pub let whea_mem_pfa_threshold : UInt
+
+pub let whea_mem_pfa_timeout : UInt
+
+pub let whea_notification_type_armv8_sea : UInt
+
+pub let whea_notification_type_armv8_sei : UInt
+
+pub let whea_notification_type_cmci : UInt
+
+pub let whea_notification_type_externalinterrupt : UInt
+
+pub let whea_notification_type_externalinterrupt_gsiv : UInt
+
+pub let whea_notification_type_gpio_signal : UInt
+
+pub let whea_notification_type_localinterrupt : UInt
+
+pub let whea_notification_type_mce : UInt
+
+pub let whea_notification_type_nmi : UInt
+
+pub let whea_notification_type_polled : UInt
+
+pub let whea_notification_type_sci : UInt
+
+pub let whea_notification_type_sdei : UInt
+
+pub let whea_notify_all_offlines : UInt
+
+pub let whea_pending_page_list_sz : UInt
+
+pub let whea_restore_cmci_attempts : UInt
+
+pub let whea_restore_cmci_enabled : UInt
+
+pub let whea_restore_cmci_err_limit : UInt
+
+pub let whea_row_fail_check_enable : UInt
+
+pub let whea_row_fail_check_extent : UInt
+
+pub let whea_row_fail_check_threshold : UInt
+
+pub let whea_xpf_mc_bank_statusformat_amd64_mca : UInt
+
+pub let whea_xpf_mc_bank_statusformat_ia32_mca : UInt
+
+pub let whea_xpf_mc_bank_statusformat_intel64_mca : UInt
+
+pub fn wow64_get_thread_context(@core.RawAddress, @6b6e654cfa99a060.WOW64CONTEXT_67abd7ec7183) -> Bool raise @core.WindowsError
+
+pub fn wow64_get_thread_context_raw(@core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn wow64_get_thread_selector_entry(@core.RawAddress, UInt, @6b6e654cfa99a060.WOW64LDTENTRY_8460b3253baf) -> Bool raise @core.WindowsError
+
+pub fn wow64_get_thread_selector_entry_raw(@core.RawAddress, UInt, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub let wow64_maximum_supported_extension : UInt
+
+pub fn wow64_set_thread_context(@core.RawAddress, @6b6e654cfa99a060.WOW64CONTEXT_67abd7ec7183) -> Bool raise @core.WindowsError
+
+pub fn wow64_set_thread_context_raw(@core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub let wow64_size_of_80387_registers : UInt
+
+pub fn write_process_memory(@core.RawAddress, @core.RawAddress, @core.RawAddress, UInt64, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn write_process_memory_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, UInt64, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+// Errors
+
+// Types and methods
+
+// Type aliases
+pub using @6b6e654cfa99a060 {type ADDRESS64_4d2699276e53 as ADDRESS64}
+
+pub using @6b6e654cfa99a060 {type ADDRESSMODE_4e2a3141a2a6 as ADDRESSMODE}
+
+pub using @6b6e654cfa99a060 {type AERBRIDGEDESCRIPTORFLAGS_28aa6f908ada as AERBRIDGEDESCRIPTORFLAGS}
+
+pub using @6b6e654cfa99a060 {type AERBRIDGEDESCRIPTORFLAGSAnonymousEStruct_1e899a4678a3 as AERBRIDGEDESCRIPTORFLAGSAnonymousEStruct}
+
+pub using @6b6e654cfa99a060 {type AERENDPOINTDESCRIPTORFLAGS_09ef4ca8af16 as AERENDPOINTDESCRIPTORFLAGS}
+
+pub using @6b6e654cfa99a060 {type AERENDPOINTDESCRIPTORFLAGSAnonymousEStruct_db5d147a76fb as AERENDPOINTDESCRIPTORFLAGSAnonymousEStruct}
+
+pub using @6b6e654cfa99a060 {type AERROOTPORTDESCRIPTORFLAGS_838955a0bcb7 as AERROOTPORTDESCRIPTORFLAGS}
+
+pub using @6b6e654cfa99a060 {type AERROOTPORTDESCRIPTORFLAGSAnonymousEStruct_025bb0905a14 as AERROOTPORTDESCRIPTORFLAGSAnonymousEStruct}
+
+pub using @6b6e654cfa99a060 {type APCCALLBACKDATA_c91b905e66c8 as APCCALLBACKDATA}
+
+pub using @6b6e654cfa99a060 {type APIVERSION_ba04f4cf8680 as APIVERSION}
+
+pub using @6b6e654cfa99a060 {type ARM64NTCONTEXT_0727247dab30 as ARM64NTCONTEXT}
+
+pub using @6b6e654cfa99a060 {type ARM64NTCONTEXTAnonymousEUnion_8a339aed3fdd as ARM64NTCONTEXTAnonymousEUnion}
+
+pub using @6b6e654cfa99a060 {type ARM64NTCONTEXTAnonymousEUnionAnonymousEStruct_4b7bded232cf as ARM64NTCONTEXTAnonymousEUnionAnonymousEStruct}
+
+pub using @6b6e654cfa99a060 {type ARM64NTNEON128_a975bb0541c5 as ARM64NTNEON128}
+
+pub using @6b6e654cfa99a060 {type ARM64NTNEON128AnonymousEStruct_cd75ca66d438 as ARM64NTNEON128AnonymousEStruct}
+
+pub using @6b6e654cfa99a060 {type BUGCHECKERROR_deac2ce82d6f as BUGCHECKERROR}
+
+pub using @6b6e654cfa99a060 {type CONTEXT_abe215a18557 as CONTEXT}
+
+pub using @6b6e654cfa99a060 {type CONTEXTAnonymousEUnion_d072dd2cf9a3 as CONTEXTAnonymousEUnion}
+
+pub using @6b6e654cfa99a060 {type CONTEXTAnonymousEUnionAnonymousEStruct_2e05a688a384 as CONTEXTAnonymousEUnionAnonymousEStruct}
+
+pub using @6b6e654cfa99a060 {type CONTEXTFLAGS_36477fe4b0eb as CONTEXTFLAGS}
+
+pub using @6b6e654cfa99a060 {type CPUINFORMATION_54db7248fcd0 as CPUINFORMATION}
+
+pub using @6b6e654cfa99a060 {type CPUINFORMATIONOtherCpuInfoEStruct_397ea1a48c1a as CPUINFORMATIONOtherCpuInfoEStruct}
+
+pub using @6b6e654cfa99a060 {type CPUINFORMATIONX86CpuInfoEStruct_326cd4edfac9 as CPUINFORMATIONX86CpuInfoEStruct}
+
+pub using @6b6e654cfa99a060 {type CREATEPROCESSDEBUGINFO_1efccb7041bc as CREATEPROCESSDEBUGINFO}
+
+pub using @6b6e654cfa99a060 {type CREATETHREADDEBUGINFO_cd8f8db2fbce as CREATETHREADDEBUGINFO}
+
+pub using @6b6e654cfa99a060 {type DBGHELPDATAREPORTSTRUCT_152abcb0b3bd as DBGHELPDATAREPORTSTRUCT}
+
+pub using @6b6e654cfa99a060 {type DBGPROPATTRIBFLAGS_34d515f0b184 as DBGPROPATTRIBFLAGS}
+
+pub using @6b6e654cfa99a060 {type DBGPROPINFO_7d82f68d42dc as DBGPROPINFO}
+
+pub using @6b6e654cfa99a060 {type DEBUGEVENT_7287c0fdcfe1 as DEBUGEVENT}
+
+pub using @6b6e654cfa99a060 {type DEBUGEVENTCODE_7c3352b4d8ca as DEBUGEVENTCODE}
+
+pub using @6b6e654cfa99a060 {type DEBUGEVENTUEUnion_2df96469b291 as DEBUGEVENTUEUnion}
+
+pub using @6b6e654cfa99a060 {type DIGESTFUNCTION_f82953dd582c as DIGESTFUNCTION}
+
+pub using @6b6e654cfa99a060 {type DIMMADDRESS_180d77a0ea7b as DIMMADDRESS}
+
+pub using @6b6e654cfa99a060 {type DIMMADDRESSDdr4EStruct_e9a85f87e2d6 as DIMMADDRESSDdr4EStruct}
+
+pub using @6b6e654cfa99a060 {type DIMMADDRESSDdr5EStruct_2557dcdf072d as DIMMADDRESSDdr5EStruct}
+
+pub using @6b6e654cfa99a060 {type DIMMADDRVALIDBITS_e2b0c7704b0c as DIMMADDRVALIDBITS}
+
+pub using @6b6e654cfa99a060 {type DIMMADDRVALIDBITSDDR4_4e29cb72994b as DIMMADDRVALIDBITSDDR4}
+
+pub using @6b6e654cfa99a060 {type DIMMADDRVALIDBITSDDR5_4d2cc5d7f5b8 as DIMMADDRVALIDBITSDDR5}
+
+pub using @6b6e654cfa99a060 {type DIMMINFO_0f09de641a06 as DIMMINFO}
+
+pub using @6b6e654cfa99a060 {type DISCRIMINATEDUNIONTAGVALUE_e701c9900469 as DISCRIMINATEDUNIONTAGVALUE}
+
+pub using @6b6e654cfa99a060 {type DISPATCHERCONTEXT_1534fc6499a5 as DISPATCHERCONTEXT}
+
+pub using @6b6e654cfa99a060 {type DUMPFILEATTRIBUTES_410d2bdbbf08 as DUMPFILEATTRIBUTES}
+
+pub using @6b6e654cfa99a060 {type DUMPFILEATTRIBUTESAnonymousEStruct_60c21aa3a019 as DUMPFILEATTRIBUTESAnonymousEStruct}
+
+pub using @6b6e654cfa99a060 {type DUMPHEADER32_cf0766e3ae12 as DUMPHEADER32}
+
+pub using @6b6e654cfa99a060 {type DUMPHEADER32AnonymousEUnion_85aa20b3023f as DUMPHEADER32AnonymousEUnion}
+
+pub using @6b6e654cfa99a060 {type DUMPHEADER64_171763e7debf as DUMPHEADER64}
+
+pub using @6b6e654cfa99a060 {type DUMPHEADER64AnonymousEUnion_d245762b68b7 as DUMPHEADER64AnonymousEUnion}
+
+pub using @6b6e654cfa99a060 {type DUMPTYPE_62fd5bb68451 as DUMPTYPE}
+
+pub using @6b6e654cfa99a060 {type DebugPropertyInfo_5680a598f3fa as DebugPropertyInfo}
+
+pub using @6b6e654cfa99a060 {type EXCEPTIONDEBUGINFO_6faa59e8a5c0 as EXCEPTIONDEBUGINFO}
+
+pub using @6b6e654cfa99a060 {type EXCEPTIONPOINTERS_eeab20700636 as EXCEPTIONPOINTERS}
+
+pub using @6b6e654cfa99a060 {type EXCEPTIONRECORD_c7c3688bc21b as EXCEPTIONRECORD}
+
+pub using @6b6e654cfa99a060 {type EXCEPTIONRECORD32_91b8cf274910 as EXCEPTIONRECORD32}
+
+pub using @6b6e654cfa99a060 {type EXCEPTIONRECORD64_02f99e04f515 as EXCEPTIONRECORD64}
+
+pub using @6b6e654cfa99a060 {type EXITPROCESSDEBUGINFO_eb43c420c9b1 as EXITPROCESSDEBUGINFO}
+
+pub using @6b6e654cfa99a060 {type EXITTHREADDEBUGINFO_73ef31580d22 as EXITTHREADDEBUGINFO}
+
+pub using @6b6e654cfa99a060 {type EXPROPINFOFLAGS_6f408a60c518 as EXPROPINFOFLAGS}
+
+pub using @6b6e654cfa99a060 {type ExtendedDebugPropertyInfo_734066e53f9f as ExtendedDebugPropertyInfo}
+
+pub using @6b6e654cfa99a060 {type FACILITYCODE_416b04f726e7 as FACILITYCODE}
+
+pub using @6b6e654cfa99a060 {type FORMATMESSAGEOPTIONS_26f71e1c0cee as FORMATMESSAGEOPTIONS}
+
+pub using @6b6e654cfa99a060 {type FPODATA_14ffd87ab0d7 as FPODATA}
+
+pub using @6b6e654cfa99a060 {type IDebugExtendedProperty_60a431ed143e as IDebugExtendedProperty}
+
+pub using @6b6e654cfa99a060 {type IDebugProperty_0654a797aca8 as IDebugProperty}
+
+pub using @6b6e654cfa99a060 {type IDebugPropertyEnumTypeAll_83d364e9ca83 as IDebugPropertyEnumTypeAll}
+
+pub using @6b6e654cfa99a060 {type IDebugPropertyEnumTypeArguments_89d1157b1438 as IDebugPropertyEnumTypeArguments}
+
+pub using @6b6e654cfa99a060 {type IDebugPropertyEnumTypeLocals_9aaf9812b45b as IDebugPropertyEnumTypeLocals}
+
+pub using @6b6e654cfa99a060 {type IDebugPropertyEnumTypeLocalsPlusArgs_84dccd865321 as IDebugPropertyEnumTypeLocalsPlusArgs}
+
+pub using @6b6e654cfa99a060 {type IDebugPropertyEnumTypeRegisters_4806b4d896dc as IDebugPropertyEnumTypeRegisters}
+
+pub using @6b6e654cfa99a060 {type IEnumDebugExtendedPropertyInfo_6d53b2b842ad as IEnumDebugExtendedPropertyInfo}
+
+pub using @6b6e654cfa99a060 {type IEnumDebugPropertyInfo_ee5a16418cc9 as IEnumDebugPropertyInfo}
+
+pub using @6b6e654cfa99a060 {type IMAGEARM64RUNTIMEFUNCTIONENTRY_7386f6f426fd as IMAGEARM64RUNTIMEFUNCTIONENTRY}
+
+pub using @6b6e654cfa99a060 {type IMAGEARM64RUNTIMEFUNCTIONENTRYAnonymousEUnion_d9edfd850dad as IMAGEARM64RUNTIMEFUNCTIONENTRYAnonymousEUnion}
+
+pub using @6b6e654cfa99a060 {type IMAGEARM64RUNTIMEFUNCTIONENTRYAnonymousEUnionAnonymousEStruct_8a0dbe03435b as IMAGEARM64RUNTIMEFUNCTIONENTRYAnonymousEUnionAnonymousEStruct}
+
+pub using @6b6e654cfa99a060 {type IMAGECOFFSYMBOLSHEADER_61dc90c213de as IMAGECOFFSYMBOLSHEADER}
+
+pub using @6b6e654cfa99a060 {type IMAGECOR20HEADER_8b328e5f4983 as IMAGECOR20HEADER}
+
+pub using @6b6e654cfa99a060 {type IMAGECOR20HEADERAnonymousEUnion_81ff5c1a5a6d as IMAGECOR20HEADERAnonymousEUnion}
+
+pub using @6b6e654cfa99a060 {type IMAGEDATADIRECTORY_8fdf358bff1a as IMAGEDATADIRECTORY}
+
+pub using @6b6e654cfa99a060 {type IMAGEDEBUGDIRECTORY_9e769ff507f1 as IMAGEDEBUGDIRECTORY}
+
+pub using @6b6e654cfa99a060 {type IMAGEDEBUGTYPE_509368cb0fc0 as IMAGEDEBUGTYPE}
+
+pub using @6b6e654cfa99a060 {type IMAGEDIRECTORYENTRY_93831aa972fa as IMAGEDIRECTORYENTRY}
+
+pub using @6b6e654cfa99a060 {type IMAGEDLLCHARACTERISTICS_767c814ab601 as IMAGEDLLCHARACTERISTICS}
+
+pub using @6b6e654cfa99a060 {type IMAGEFILECHARACTERISTICS_a4e3473daf19 as IMAGEFILECHARACTERISTICS}
+
+pub using @6b6e654cfa99a060 {type IMAGEFILECHARACTERISTICS2_42365e90a390 as IMAGEFILECHARACTERISTICS2}
+
+pub using @6b6e654cfa99a060 {type IMAGEFILEHEADER_288ca7711d9b as IMAGEFILEHEADER}
+
+pub using @6b6e654cfa99a060 {type IMAGEFUNCTIONENTRY_4d480db7d6ac as IMAGEFUNCTIONENTRY}
+
+pub using @6b6e654cfa99a060 {type IMAGEFUNCTIONENTRY64_7fee87eb55dd as IMAGEFUNCTIONENTRY64}
+
+pub using @6b6e654cfa99a060 {type IMAGEFUNCTIONENTRY64AnonymousEUnion_c8b24b540405 as IMAGEFUNCTIONENTRY64AnonymousEUnion}
+
+pub using @6b6e654cfa99a060 {type IMAGEHLPCBAEVENT_6a97c51524b3 as IMAGEHLPCBAEVENT}
+
+pub using @6b6e654cfa99a060 {type IMAGEHLPCBAEVENTSEVERITY_7bb26d7ab499 as IMAGEHLPCBAEVENTSEVERITY}
+
+pub using @6b6e654cfa99a060 {type IMAGEHLPCBAEVENTW_c954ef3a11be as IMAGEHLPCBAEVENTW}
+
+pub using @6b6e654cfa99a060 {type IMAGEHLPCBAREADMEMORY_26a5d004d031 as IMAGEHLPCBAREADMEMORY}
+
+pub using @6b6e654cfa99a060 {type IMAGEHLPDEFERREDSYMBOLLOAD64_06fecff74e31 as IMAGEHLPDEFERREDSYMBOLLOAD64}
+
+pub using @6b6e654cfa99a060 {type IMAGEHLPDEFERREDSYMBOLLOADW64_f7881fa7964d as IMAGEHLPDEFERREDSYMBOLLOADW64}
+
+pub using @6b6e654cfa99a060 {type IMAGEHLPDUPLICATESYMBOL64_f5e65eb9b932 as IMAGEHLPDUPLICATESYMBOL64}
+
+pub using @6b6e654cfa99a060 {type IMAGEHLPEXTENDEDOPTIONS_60024516f29a as IMAGEHLPEXTENDEDOPTIONS}
+
+pub using @6b6e654cfa99a060 {type IMAGEHLPGETTYPEINFOFLAGS_66870afa98e5 as IMAGEHLPGETTYPEINFOFLAGS}
+
+pub using @6b6e654cfa99a060 {type IMAGEHLPGETTYPEINFOPARAMS_0144c5f4cab0 as IMAGEHLPGETTYPEINFOPARAMS}
+
+pub using @6b6e654cfa99a060 {type IMAGEHLPHDTYPE_3e86dad82b7e as IMAGEHLPHDTYPE}
+
+pub using @6b6e654cfa99a060 {type IMAGEHLPJITSYMBOLMAP_f7237a038ae3 as IMAGEHLPJITSYMBOLMAP}
+
+pub using @6b6e654cfa99a060 {type IMAGEHLPLINE64_642a89f9f539 as IMAGEHLPLINE64}
+
+pub using @6b6e654cfa99a060 {type IMAGEHLPLINEW64_d07e7dd8f410 as IMAGEHLPLINEW64}
+
+pub using @6b6e654cfa99a060 {type IMAGEHLPMODULE64_a295ce1ff5fc as IMAGEHLPMODULE64}
+
+pub using @6b6e654cfa99a060 {type IMAGEHLPMODULE64EX_8ce3aa0e91af as IMAGEHLPMODULE64EX}
+
+pub using @6b6e654cfa99a060 {type IMAGEHLPMODULEW64_181e6ae67fd6 as IMAGEHLPMODULEW64}
+
+pub using @6b6e654cfa99a060 {type IMAGEHLPMODULEW64EX_ea7b39b0d49f as IMAGEHLPMODULEW64EX}
+
+pub using @6b6e654cfa99a060 {type IMAGEHLPSFTYPE_5949503897c8 as IMAGEHLPSFTYPE}
+
+pub using @6b6e654cfa99a060 {type IMAGEHLPSTACKFRAME_c213432e2da7 as IMAGEHLPSTACKFRAME}
+
+pub using @6b6e654cfa99a060 {type IMAGEHLPSTATUSREASON_67a27fae254d as IMAGEHLPSTATUSREASON}
+
+pub using @6b6e654cfa99a060 {type IMAGEHLPSYMBOL64_c4f1274cf0d6 as IMAGEHLPSYMBOL64}
+
+pub using @6b6e654cfa99a060 {type IMAGEHLPSYMBOL64PACKAGE_5cb28a5bf2d8 as IMAGEHLPSYMBOL64PACKAGE}
+
+pub using @6b6e654cfa99a060 {type IMAGEHLPSYMBOLSRC_6d5f69df3e0f as IMAGEHLPSYMBOLSRC}
+
+pub using @6b6e654cfa99a060 {type IMAGEHLPSYMBOLTYPEINFO_555d1cc84c93 as IMAGEHLPSYMBOLTYPEINFO}
+
+pub using @6b6e654cfa99a060 {type IMAGEHLPSYMBOLW64_1f422657a436 as IMAGEHLPSYMBOLW64}
+
+pub using @6b6e654cfa99a060 {type IMAGEHLPSYMBOLW64PACKAGE_06d48d465789 as IMAGEHLPSYMBOLW64PACKAGE}
+
+pub using @6b6e654cfa99a060 {type IMAGELOADCONFIGCODEINTEGRITY_fd5c90f587d7 as IMAGELOADCONFIGCODEINTEGRITY}
+
+pub using @6b6e654cfa99a060 {type IMAGELOADCONFIGDIRECTORY32_27006d5b8d89 as IMAGELOADCONFIGDIRECTORY32}
+
+pub using @6b6e654cfa99a060 {type IMAGELOADCONFIGDIRECTORY64_81a1db07046c as IMAGELOADCONFIGDIRECTORY64}
+
+pub using @6b6e654cfa99a060 {type IMAGENTHEADERS32_48271db73677 as IMAGENTHEADERS32}
+
+pub using @6b6e654cfa99a060 {type IMAGENTHEADERS64_0abd1ebb56f6 as IMAGENTHEADERS64}
+
+pub using @6b6e654cfa99a060 {type IMAGEOPTIONALHEADER32_09273bbaa847 as IMAGEOPTIONALHEADER32}
+
+pub using @6b6e654cfa99a060 {type IMAGEOPTIONALHEADER64_59eca3e520c0 as IMAGEOPTIONALHEADER64}
+
+pub using @6b6e654cfa99a060 {type IMAGEOPTIONALHEADERMAGIC_d86285bb319a as IMAGEOPTIONALHEADERMAGIC}
+
+pub using @6b6e654cfa99a060 {type IMAGEROMHEADERS_16022e5b8775 as IMAGEROMHEADERS}
+
+pub using @6b6e654cfa99a060 {type IMAGEROMOPTIONALHEADER_0fff04b3e5ee as IMAGEROMOPTIONALHEADER}
+
+pub using @6b6e654cfa99a060 {type IMAGERUNTIMEFUNCTIONENTRY_c21c3da6ddaa as IMAGERUNTIMEFUNCTIONENTRY}
+
+pub using @6b6e654cfa99a060 {type IMAGERUNTIMEFUNCTIONENTRYAnonymousEUnion_dc9db5504022 as IMAGERUNTIMEFUNCTIONENTRYAnonymousEUnion}
+
+pub using @6b6e654cfa99a060 {type IMAGESECTIONCHARACTERISTICS_23f9f2f1c126 as IMAGESECTIONCHARACTERISTICS}
+
+pub using @6b6e654cfa99a060 {type IMAGESECTIONHEADER_0ff6b2ca1bba as IMAGESECTIONHEADER}
+
+pub using @6b6e654cfa99a060 {type IMAGESECTIONHEADERMiscEUnion_3c9a3678d813 as IMAGESECTIONHEADERMiscEUnion}
+
+pub using @6b6e654cfa99a060 {type IMAGESUBSYSTEM_659ea64749a4 as IMAGESUBSYSTEM}
+
+pub using @6b6e654cfa99a060 {type IObjectSafety_ddebeae63c1d as IObjectSafety}
+
+pub using @6b6e654cfa99a060 {type IPMIOSSELRECORD_9d26ccbcd01b as IPMIOSSELRECORD}
+
+pub using @6b6e654cfa99a060 {type IPMIOSSELRECORDTYPE_7ff00e19af44 as IPMIOSSELRECORDTYPE}
+
+pub using @6b6e654cfa99a060 {type IPerPropertyBrowsing2_0247ac03413c as IPerPropertyBrowsing2}
+
+pub using @6b6e654cfa99a060 {type KDHELP64_fb841f82c215 as KDHELP64}
+
+pub using @6b6e654cfa99a060 {type KNONVOLATILECONTEXTPOINTERS_ed73099a78a2 as KNONVOLATILECONTEXTPOINTERS}
+
+pub using @6b6e654cfa99a060 {type KNONVOLATILECONTEXTPOINTERSAnonymous1EUnion_2691afe4a149 as KNONVOLATILECONTEXTPOINTERSAnonymous1EUnion}
+
+pub using @6b6e654cfa99a060 {type KNONVOLATILECONTEXTPOINTERSAnonymous1EUnionAnonymousEStruct_79358db3d79f as KNONVOLATILECONTEXTPOINTERSAnonymous1EUnionAnonymousEStruct}
+
+pub using @6b6e654cfa99a060 {type KNONVOLATILECONTEXTPOINTERSAnonymous2EUnion_b27bf1bc6e35 as KNONVOLATILECONTEXTPOINTERSAnonymous2EUnion}
+
+pub using @6b6e654cfa99a060 {type KNONVOLATILECONTEXTPOINTERSAnonymous2EUnionAnonymousEStruct_4a74aec34757 as KNONVOLATILECONTEXTPOINTERSAnonymous2EUnionAnonymousEStruct}
+
+pub using @6b6e654cfa99a060 {type LDTENTRY_187274016dd2 as LDTENTRY}
+
+pub using @6b6e654cfa99a060 {type LDTENTRYHighWordEUnion_b38728976715 as LDTENTRYHighWordEUnion}
+
+pub using @6b6e654cfa99a060 {type LDTENTRYHighWordEUnionBitsEStruct_f6f1d1493c91 as LDTENTRYHighWordEUnionBitsEStruct}
+
+pub using @6b6e654cfa99a060 {type LDTENTRYHighWordEUnionBytesEStruct_4430c2edb179 as LDTENTRYHighWordEUnionBytesEStruct}
+
+pub using @6b6e654cfa99a060 {type LOADDLLDEBUGINFO_5b5ad73cdf3d as LOADDLLDEBUGINFO}
+
+pub using @6b6e654cfa99a060 {type LOADEDIMAGE_c51b4c013e63 as LOADEDIMAGE}
+
+pub using @6b6e654cfa99a060 {type LPCALLBACKUSERINTERRUPTROUTINE_840e2eff896e as LPCALLBACKUSERINTERRUPTROUTINE}
+
+pub using @6b6e654cfa99a060 {type LPTOPLEVELEXCEPTIONFILTER_91a098ab4e3e as LPTOPLEVELEXCEPTIONFILTER}
+
+pub using @6b6e654cfa99a060 {type M128A_cdc98c936be8 as M128A}
+
+pub using @6b6e654cfa99a060 {type MEMORYDEFECT_eab33828d55b as MEMORYDEFECT}
+
+pub using @6b6e654cfa99a060 {type MINIDUMPCALLBACKINFORMATION_7e1743651d1c as MINIDUMPCALLBACKINFORMATION}
+
+pub using @6b6e654cfa99a060 {type MINIDUMPCALLBACKINPUT_5f92e2cac92d as MINIDUMPCALLBACKINPUT}
+
+pub using @6b6e654cfa99a060 {type MINIDUMPCALLBACKINPUTAnonymousEUnion_d77c5abefd93 as MINIDUMPCALLBACKINPUTAnonymousEUnion}
+
+pub using @6b6e654cfa99a060 {type MINIDUMPCALLBACKOUTPUT_b8c6f956b6b9 as MINIDUMPCALLBACKOUTPUT}
+
+pub using @6b6e654cfa99a060 {type MINIDUMPCALLBACKOUTPUTAnonymousEUnion_645f88c650b6 as MINIDUMPCALLBACKOUTPUTAnonymousEUnion}
+
+pub using @6b6e654cfa99a060 {type MINIDUMPCALLBACKOUTPUTAnonymousEUnionAnonymous1EStruct_8b3144a15920 as MINIDUMPCALLBACKOUTPUTAnonymousEUnionAnonymous1EStruct}
+
+pub using @6b6e654cfa99a060 {type MINIDUMPCALLBACKOUTPUTAnonymousEUnionAnonymous2EStruct_abb63104a63b as MINIDUMPCALLBACKOUTPUTAnonymousEUnionAnonymous2EStruct}
+
+pub using @6b6e654cfa99a060 {type MINIDUMPCALLBACKOUTPUTAnonymousEUnionAnonymous3EStruct_313ad31c7819 as MINIDUMPCALLBACKOUTPUTAnonymousEUnionAnonymous3EStruct}
+
+pub using @6b6e654cfa99a060 {type MINIDUMPCALLBACKOUTPUTAnonymousEUnionAnonymous4EStruct_d5b61d11a3d8 as MINIDUMPCALLBACKOUTPUTAnonymousEUnionAnonymous4EStruct}
+
+pub using @6b6e654cfa99a060 {type MINIDUMPCALLBACKOUTPUTAnonymousEUnionAnonymous5EStruct_02518e6dc82b as MINIDUMPCALLBACKOUTPUTAnonymousEUnionAnonymous5EStruct}
+
+pub using @6b6e654cfa99a060 {type MINIDUMPCALLBACKROUTINE_307649b21de3 as MINIDUMPCALLBACKROUTINE}
+
+pub using @6b6e654cfa99a060 {type MINIDUMPCALLBACKTYPE_d00143216586 as MINIDUMPCALLBACKTYPE}
+
+pub using @6b6e654cfa99a060 {type MINIDUMPDIRECTORY_423cef82a5bb as MINIDUMPDIRECTORY}
+
+pub using @6b6e654cfa99a060 {type MINIDUMPEXCEPTION_5e825e0bea32 as MINIDUMPEXCEPTION}
+
+pub using @6b6e654cfa99a060 {type MINIDUMPEXCEPTIONINFORMATION_ee0b35a12551 as MINIDUMPEXCEPTIONINFORMATION}
+
+pub using @6b6e654cfa99a060 {type MINIDUMPEXCEPTIONINFORMATION64_c4eef6c109c3 as MINIDUMPEXCEPTIONINFORMATION64}
+
+pub using @6b6e654cfa99a060 {type MINIDUMPEXCEPTIONSTREAM_c2e1e7c2289b as MINIDUMPEXCEPTIONSTREAM}
+
+pub using @6b6e654cfa99a060 {type MINIDUMPFUNCTIONTABLEDESCRIPTOR_b97b0bb19dea as MINIDUMPFUNCTIONTABLEDESCRIPTOR}
+
+pub using @6b6e654cfa99a060 {type MINIDUMPFUNCTIONTABLESTREAM_a5166ecb046c as MINIDUMPFUNCTIONTABLESTREAM}
+
+pub using @6b6e654cfa99a060 {type MINIDUMPHANDLEDATASTREAM_e53ce84a8a3d as MINIDUMPHANDLEDATASTREAM}
+
+pub using @6b6e654cfa99a060 {type MINIDUMPHANDLEDESCRIPTOR_6ddc0677d112 as MINIDUMPHANDLEDESCRIPTOR}
+
+pub using @6b6e654cfa99a060 {type MINIDUMPHANDLEDESCRIPTOR2_cdbece4c976e as MINIDUMPHANDLEDESCRIPTOR2}
+
+pub using @6b6e654cfa99a060 {type MINIDUMPHANDLEOBJECTINFORMATION_b48949a4af91 as MINIDUMPHANDLEOBJECTINFORMATION}
+
+pub using @6b6e654cfa99a060 {type MINIDUMPHANDLEOBJECTINFORMATIONTYPE_c663e4e101df as MINIDUMPHANDLEOBJECTINFORMATIONTYPE}
+
+pub using @6b6e654cfa99a060 {type MINIDUMPHANDLEOPERATIONLIST_113e29f36e64 as MINIDUMPHANDLEOPERATIONLIST}
+
+pub using @6b6e654cfa99a060 {type MINIDUMPHEADER_8eb11c537e90 as MINIDUMPHEADER}
+
+pub using @6b6e654cfa99a060 {type MINIDUMPHEADERAnonymousEUnion_86c45e98a2f8 as MINIDUMPHEADERAnonymousEUnion}
+
+pub using @6b6e654cfa99a060 {type MINIDUMPINCLUDEMODULECALLBACK_9b3dede9e7e0 as MINIDUMPINCLUDEMODULECALLBACK}
+
+pub using @6b6e654cfa99a060 {type MINIDUMPINCLUDETHREADCALLBACK_358d60fb122c as MINIDUMPINCLUDETHREADCALLBACK}
+
+pub using @6b6e654cfa99a060 {type MINIDUMPIOCALLBACK_aeff54340634 as MINIDUMPIOCALLBACK}
+
+pub using @6b6e654cfa99a060 {type MINIDUMPLOCATIONDESCRIPTOR_4df94d80dcbc as MINIDUMPLOCATIONDESCRIPTOR}
+
+pub using @6b6e654cfa99a060 {type MINIDUMPLOCATIONDESCRIPTOR64_baf310268c9d as MINIDUMPLOCATIONDESCRIPTOR64}
+
+pub using @6b6e654cfa99a060 {type MINIDUMPMEMORY64LIST_6c6bfe50cbdd as MINIDUMPMEMORY64LIST}
+
+pub using @6b6e654cfa99a060 {type MINIDUMPMEMORYDESCRIPTOR_1bdd28386807 as MINIDUMPMEMORYDESCRIPTOR}
+
+pub using @6b6e654cfa99a060 {type MINIDUMPMEMORYDESCRIPTOR64_271878e8dbe0 as MINIDUMPMEMORYDESCRIPTOR64}
+
+pub using @6b6e654cfa99a060 {type MINIDUMPMEMORYINFO_e1faa271857c as MINIDUMPMEMORYINFO}
+
+pub using @6b6e654cfa99a060 {type MINIDUMPMEMORYINFOLIST_12851055687a as MINIDUMPMEMORYINFOLIST}
+
+pub using @6b6e654cfa99a060 {type MINIDUMPMEMORYLIST_7c5c62afad9a as MINIDUMPMEMORYLIST}
+
+pub using @6b6e654cfa99a060 {type MINIDUMPMISCINFO_a82c9627fa9d as MINIDUMPMISCINFO}
+
+pub using @6b6e654cfa99a060 {type MINIDUMPMISCINFO2_5e83f2140602 as MINIDUMPMISCINFO2}
+
+pub using @6b6e654cfa99a060 {type MINIDUMPMISCINFO3_57052c2ffa04 as MINIDUMPMISCINFO3}
+
+pub using @6b6e654cfa99a060 {type MINIDUMPMISCINFO4_515aaeca3559 as MINIDUMPMISCINFO4}
+
+pub using @6b6e654cfa99a060 {type MINIDUMPMISCINFO5_f94fade2f927 as MINIDUMPMISCINFO5}
+
+pub using @6b6e654cfa99a060 {type MINIDUMPMISCINFOFLAGS_560f09b61622 as MINIDUMPMISCINFOFLAGS}
+
+pub using @6b6e654cfa99a060 {type MINIDUMPMODULE_394c58ddc7d8 as MINIDUMPMODULE}
+
+pub using @6b6e654cfa99a060 {type MINIDUMPMODULECALLBACK_82348d3ca4ae as MINIDUMPMODULECALLBACK}
+
+pub using @6b6e654cfa99a060 {type MINIDUMPMODULELIST_74422e32dbfb as MINIDUMPMODULELIST}
+
+pub using @6b6e654cfa99a060 {type MINIDUMPPROCESSVMCOUNTERS1_8eaeed3d16dd as MINIDUMPPROCESSVMCOUNTERS1}
+
+pub using @6b6e654cfa99a060 {type MINIDUMPPROCESSVMCOUNTERS2_c01c25b2189c as MINIDUMPPROCESSVMCOUNTERS2}
+
+pub using @6b6e654cfa99a060 {type MINIDUMPREADMEMORYFAILURECALLBACK_eb76681aa85e as MINIDUMPREADMEMORYFAILURECALLBACK}
+
+pub using @6b6e654cfa99a060 {type MINIDUMPSECONDARYFLAGS_11275b11eb68 as MINIDUMPSECONDARYFLAGS}
+
+pub using @6b6e654cfa99a060 {type MINIDUMPSTREAMTYPE_6e408ac8f5e5 as MINIDUMPSTREAMTYPE}
+
+pub using @6b6e654cfa99a060 {type MINIDUMPSTRING_07d0295d06af as MINIDUMPSTRING}
+
+pub using @6b6e654cfa99a060 {type MINIDUMPSYSTEMBASICINFORMATION_86211e774e5d as MINIDUMPSYSTEMBASICINFORMATION}
+
+pub using @6b6e654cfa99a060 {type MINIDUMPSYSTEMBASICPERFORMANCEINFORMATION_6b2d28b1b80c as MINIDUMPSYSTEMBASICPERFORMANCEINFORMATION}
+
+pub using @6b6e654cfa99a060 {type MINIDUMPSYSTEMFILECACHEINFORMATION_ad279ec8409e as MINIDUMPSYSTEMFILECACHEINFORMATION}
+
+pub using @6b6e654cfa99a060 {type MINIDUMPSYSTEMINFO_8de657ec1ce8 as MINIDUMPSYSTEMINFO}
+
+pub using @6b6e654cfa99a060 {type MINIDUMPSYSTEMINFOAnonymous1EUnion_ce806b268791 as MINIDUMPSYSTEMINFOAnonymous1EUnion}
+
+pub using @6b6e654cfa99a060 {type MINIDUMPSYSTEMINFOAnonymous1EUnionAnonymousEStruct_2409377d23ff as MINIDUMPSYSTEMINFOAnonymous1EUnionAnonymousEStruct}
+
+pub using @6b6e654cfa99a060 {type MINIDUMPSYSTEMINFOAnonymous2EUnion_5950f1b9b502 as MINIDUMPSYSTEMINFOAnonymous2EUnion}
+
+pub using @6b6e654cfa99a060 {type MINIDUMPSYSTEMINFOAnonymous2EUnionAnonymousEStruct_3a035cd23b53 as MINIDUMPSYSTEMINFOAnonymous2EUnionAnonymousEStruct}
+
+pub using @6b6e654cfa99a060 {type MINIDUMPSYSTEMMEMORYINFO1_4409e3176b51 as MINIDUMPSYSTEMMEMORYINFO1}
+
+pub using @6b6e654cfa99a060 {type MINIDUMPSYSTEMMEMORYINFO2_4d5db69125ca as MINIDUMPSYSTEMMEMORYINFO2}
+
+pub using @6b6e654cfa99a060 {type MINIDUMPSYSTEMPERFORMANCEINFORMATION_63d6cfd27aa2 as MINIDUMPSYSTEMPERFORMANCEINFORMATION}
+
+pub using @6b6e654cfa99a060 {type MINIDUMPSYSTEMPERFORMANCEINFORMATION2_423e12c3ef38 as MINIDUMPSYSTEMPERFORMANCEINFORMATION2}
+
+pub using @6b6e654cfa99a060 {type MINIDUMPTHREAD_b5de5b712b88 as MINIDUMPTHREAD}
+
+pub using @6b6e654cfa99a060 {type MINIDUMPTHREADCALLBACK_7b1831e409c0 as MINIDUMPTHREADCALLBACK}
+
+pub using @6b6e654cfa99a060 {type MINIDUMPTHREADEX_862620ebe846 as MINIDUMPTHREADEX}
+
+pub using @6b6e654cfa99a060 {type MINIDUMPTHREADEXCALLBACK_e57e0ea4a641 as MINIDUMPTHREADEXCALLBACK}
+
+pub using @6b6e654cfa99a060 {type MINIDUMPTHREADEXLIST_083890b29308 as MINIDUMPTHREADEXLIST}
+
+pub using @6b6e654cfa99a060 {type MINIDUMPTHREADINFO_e80d18a50681 as MINIDUMPTHREADINFO}
+
+pub using @6b6e654cfa99a060 {type MINIDUMPTHREADINFODUMPFLAGS_199d79919ac6 as MINIDUMPTHREADINFODUMPFLAGS}
+
+pub using @6b6e654cfa99a060 {type MINIDUMPTHREADINFOLIST_525e828a0a04 as MINIDUMPTHREADINFOLIST}
+
+pub using @6b6e654cfa99a060 {type MINIDUMPTHREADLIST_adccfc2a0055 as MINIDUMPTHREADLIST}
+
+pub using @6b6e654cfa99a060 {type MINIDUMPTHREADNAME_55a468218ec1 as MINIDUMPTHREADNAME}
+
+pub using @6b6e654cfa99a060 {type MINIDUMPTHREADNAMELIST_fde39f179147 as MINIDUMPTHREADNAMELIST}
+
+pub using @6b6e654cfa99a060 {type MINIDUMPTOKENINFOHEADER_21ebab08a8cc as MINIDUMPTOKENINFOHEADER}
+
+pub using @6b6e654cfa99a060 {type MINIDUMPTOKENINFOLIST_ebe2ad64f9c6 as MINIDUMPTOKENINFOLIST}
+
+pub using @6b6e654cfa99a060 {type MINIDUMPTYPE_2722e4e77d55 as MINIDUMPTYPE}
+
+pub using @6b6e654cfa99a060 {type MINIDUMPUNLOADEDMODULE_f7332b9cf2c5 as MINIDUMPUNLOADEDMODULE}
+
+pub using @6b6e654cfa99a060 {type MINIDUMPUNLOADEDMODULELIST_63db1202d0a5 as MINIDUMPUNLOADEDMODULELIST}
+
+pub using @6b6e654cfa99a060 {type MINIDUMPUSERRECORD_4c507aecbfab as MINIDUMPUSERRECORD}
+
+pub using @6b6e654cfa99a060 {type MINIDUMPUSERSTREAM_35070c29ad7d as MINIDUMPUSERSTREAM}
+
+pub using @6b6e654cfa99a060 {type MINIDUMPUSERSTREAMINFORMATION_d5f0771e5d92 as MINIDUMPUSERSTREAMINFORMATION}
+
+pub using @6b6e654cfa99a060 {type MINIDUMPVMPOSTREADCALLBACK_7a1966c36c3c as MINIDUMPVMPOSTREADCALLBACK}
+
+pub using @6b6e654cfa99a060 {type MINIDUMPVMPREREADCALLBACK_9fd58426c6c1 as MINIDUMPVMPREREADCALLBACK}
+
+pub using @6b6e654cfa99a060 {type MINIDUMPVMQUERYCALLBACK_4f60551304b3 as MINIDUMPVMQUERYCALLBACK}
+
+pub using @6b6e654cfa99a060 {type MODLOADCVMISC_4bd0d0e32e45 as MODLOADCVMISC}
+
+pub using @6b6e654cfa99a060 {type MODLOADDATA_9aa15007f52f as MODLOADDATA}
+
+pub using @6b6e654cfa99a060 {type MODLOADDATATYPE_94bd53d24acd as MODLOADDATATYPE}
+
+pub using @6b6e654cfa99a060 {type MODLOADPDBGUIDPDBAGE_0506174ff6c5 as MODLOADPDBGUIDPDBAGE}
+
+pub using @6b6e654cfa99a060 {type MODULETYPEINFO_e7565bfce294 as MODULETYPEINFO}
+
+pub using @6b6e654cfa99a060 {type MODULEWRITEFLAGS_607c70468325 as MODULEWRITEFLAGS}
+
+pub using @6b6e654cfa99a060 {type OBJECTATTRIBFLAGS_05a127430cb6 as OBJECTATTRIBFLAGS}
+
+pub using @6b6e654cfa99a060 {type OMAP_3332063c0056 as OMAP}
+
+pub using @6b6e654cfa99a060 {type OPENTHREADWAITCHAINSESSIONFLAGS_bac433391f7e as OPENTHREADWAITCHAINSESSIONFLAGS}
+
+pub using @6b6e654cfa99a060 {type OUTPUTDEBUGSTRINGINFO_1c15bbf73465 as OUTPUTDEBUGSTRINGINFO}
+
+pub using @6b6e654cfa99a060 {type PAGEOFFLINEERRORTYPES_b72313c7a8e6 as PAGEOFFLINEERRORTYPES}
+
+pub using @6b6e654cfa99a060 {type PAGEOFFLINEVALIDBITS_a6d36a895a55 as PAGEOFFLINEVALIDBITS}
+
+pub using @6b6e654cfa99a060 {type PAGEOFFLINEVALIDBITSAnonymousEStruct_82108dc5a111 as PAGEOFFLINEVALIDBITSAnonymousEStruct}
+
+pub using @6b6e654cfa99a060 {type PCOGETACTIVATIONSTATE_8785352b5931 as PCOGETACTIVATIONSTATE}
+
+pub using @6b6e654cfa99a060 {type PCOGETCALLSTATE_7c4ecb29a30b as PCOGETCALLSTATE}
+
+pub using @6b6e654cfa99a060 {type PDBGHELPCREATEUSERDUMPCALLBACK_e95398f22230 as PDBGHELPCREATEUSERDUMPCALLBACK}
+
+pub using @6b6e654cfa99a060 {type PENUMDIRTREECALLBACK_2447f47aed70 as PENUMDIRTREECALLBACK}
+
+pub using @6b6e654cfa99a060 {type PENUMDIRTREECALLBACKW_bc4031e95930 as PENUMDIRTREECALLBACKW}
+
+pub using @6b6e654cfa99a060 {type PENUMLOADEDMODULESCALLBACK64_d5d32d97eae9 as PENUMLOADEDMODULESCALLBACK64}
+
+pub using @6b6e654cfa99a060 {type PENUMLOADEDMODULESCALLBACKW64_45219a198978 as PENUMLOADEDMODULESCALLBACKW64}
+
+pub using @6b6e654cfa99a060 {type PENUMSOURCEFILETOKENSCALLBACK_317dd742f06a as PENUMSOURCEFILETOKENSCALLBACK}
+
+pub using @6b6e654cfa99a060 {type PFINDDEBUGFILECALLBACK_5bf8496805f1 as PFINDDEBUGFILECALLBACK}
+
+pub using @6b6e654cfa99a060 {type PFINDDEBUGFILECALLBACKW_4eaef6060003 as PFINDDEBUGFILECALLBACKW}
+
+pub using @6b6e654cfa99a060 {type PFINDEXEFILECALLBACK_52feadc8a292 as PFINDEXEFILECALLBACK}
+
+pub using @6b6e654cfa99a060 {type PFINDEXEFILECALLBACKW_4a8d7ec016f0 as PFINDEXEFILECALLBACKW}
+
+pub using @6b6e654cfa99a060 {type PFINDFILEINPATHCALLBACK_cb2476c61887 as PFINDFILEINPATHCALLBACK}
+
+pub using @6b6e654cfa99a060 {type PFINDFILEINPATHCALLBACKW_eb410859cd80 as PFINDFILEINPATHCALLBACKW}
+
+pub using @6b6e654cfa99a060 {type PFUNCTIONTABLEACCESSROUTINE64_72b63212d8d7 as PFUNCTIONTABLEACCESSROUTINE64}
+
+pub using @6b6e654cfa99a060 {type PGETMODULEBASEROUTINE64_bd01207f1670 as PGETMODULEBASEROUTINE64}
+
+pub using @6b6e654cfa99a060 {type PGETRUNTIMEFUNCTIONCALLBACK_90280a257b86 as PGETRUNTIMEFUNCTIONCALLBACK}
+
+pub using @6b6e654cfa99a060 {type PGETTARGETATTRIBUTEVALUE64_5e2933269b15 as PGETTARGETATTRIBUTEVALUE64}
+
+pub using @6b6e654cfa99a060 {type PHYSICALMEMORYDESCRIPTOR32_3a5aad84fa33 as PHYSICALMEMORYDESCRIPTOR32}
+
+pub using @6b6e654cfa99a060 {type PHYSICALMEMORYDESCRIPTOR64_0c47ec6f6369 as PHYSICALMEMORYDESCRIPTOR64}
+
+pub using @6b6e654cfa99a060 {type PHYSICALMEMORYRUN32_ef66a07d1107 as PHYSICALMEMORYRUN32}
+
+pub using @6b6e654cfa99a060 {type PHYSICALMEMORYRUN64_4454cc653ba5 as PHYSICALMEMORYRUN64}
+
+pub using @6b6e654cfa99a060 {type PIMAGEHLPSTATUSROUTINE_bc16259420e5 as PIMAGEHLPSTATUSROUTINE}
+
+pub using @6b6e654cfa99a060 {type PIMAGEHLPSTATUSROUTINE32_deea342c1371 as PIMAGEHLPSTATUSROUTINE32}
+
+pub using @6b6e654cfa99a060 {type PIMAGEHLPSTATUSROUTINE64_ad26a0ccd738 as PIMAGEHLPSTATUSROUTINE64}
+
+pub using @6b6e654cfa99a060 {type PREADPROCESSMEMORYROUTINE64_649bcae66f71 as PREADPROCESSMEMORYROUTINE64}
+
+pub using @6b6e654cfa99a060 {type PROPINFOFLAGS_a62fc950e77f as PROPINFOFLAGS}
+
+pub using @6b6e654cfa99a060 {type PSYMBOLFUNCENTRYCALLBACK_ce58f8fa8d17 as PSYMBOLFUNCENTRYCALLBACK}
+
+pub using @6b6e654cfa99a060 {type PSYMBOLFUNCENTRYCALLBACK64_e3fc72e0d01f as PSYMBOLFUNCENTRYCALLBACK64}
+
+pub using @6b6e654cfa99a060 {type PSYMBOLREGISTEREDCALLBACK64_0bd0f959fd56 as PSYMBOLREGISTEREDCALLBACK64}
+
+pub using @6b6e654cfa99a060 {type PSYMBOLSERVERBYINDEXPROC_b63bceca72c3 as PSYMBOLSERVERBYINDEXPROC}
+
+pub using @6b6e654cfa99a060 {type PSYMBOLSERVERBYINDEXPROCA_4bb17d7bc496 as PSYMBOLSERVERBYINDEXPROCA}
+
+pub using @6b6e654cfa99a060 {type PSYMBOLSERVERBYINDEXPROCW_790558b41a56 as PSYMBOLSERVERBYINDEXPROCW}
+
+pub using @6b6e654cfa99a060 {type PSYMBOLSERVERCALLBACKPROC_a6b6f6151a9e as PSYMBOLSERVERCALLBACKPROC}
+
+pub using @6b6e654cfa99a060 {type PSYMBOLSERVERCLOSEPROC_613a2740d072 as PSYMBOLSERVERCLOSEPROC}
+
+pub using @6b6e654cfa99a060 {type PSYMBOLSERVERDELTANAME_3c6c32a17793 as PSYMBOLSERVERDELTANAME}
+
+pub using @6b6e654cfa99a060 {type PSYMBOLSERVERDELTANAMEW_a98647f3eb06 as PSYMBOLSERVERDELTANAMEW}
+
+pub using @6b6e654cfa99a060 {type PSYMBOLSERVERGETINDEXSTRING_1ea63a229861 as PSYMBOLSERVERGETINDEXSTRING}
+
+pub using @6b6e654cfa99a060 {type PSYMBOLSERVERGETINDEXSTRINGW_e917f1e7cad5 as PSYMBOLSERVERGETINDEXSTRINGW}
+
+pub using @6b6e654cfa99a060 {type PSYMBOLSERVERGETOPTIONDATAPROC_c72bf16b3433 as PSYMBOLSERVERGETOPTIONDATAPROC}
+
+pub using @6b6e654cfa99a060 {type PSYMBOLSERVERGETOPTIONSPROC_72cb0334cafb as PSYMBOLSERVERGETOPTIONSPROC}
+
+pub using @6b6e654cfa99a060 {type PSYMBOLSERVERGETSUPPLEMENT_6a881b283cb1 as PSYMBOLSERVERGETSUPPLEMENT}
+
+pub using @6b6e654cfa99a060 {type PSYMBOLSERVERGETSUPPLEMENTW_1b7048bd4ddb as PSYMBOLSERVERGETSUPPLEMENTW}
+
+pub using @6b6e654cfa99a060 {type PSYMBOLSERVERGETVERSION_845ec0b99728 as PSYMBOLSERVERGETVERSION}
+
+pub using @6b6e654cfa99a060 {type PSYMBOLSERVERISSTORE_218f9b34ed99 as PSYMBOLSERVERISSTORE}
+
+pub using @6b6e654cfa99a060 {type PSYMBOLSERVERISSTOREW_2c144b6d2fed as PSYMBOLSERVERISSTOREW}
+
+pub using @6b6e654cfa99a060 {type PSYMBOLSERVERMESSAGEPROC_51845d29e737 as PSYMBOLSERVERMESSAGEPROC}
+
+pub using @6b6e654cfa99a060 {type PSYMBOLSERVEROPENPROC_00cd206c47c6 as PSYMBOLSERVEROPENPROC}
+
+pub using @6b6e654cfa99a060 {type PSYMBOLSERVERPINGPROC_b1ec8fa612ba as PSYMBOLSERVERPINGPROC}
+
+pub using @6b6e654cfa99a060 {type PSYMBOLSERVERPINGPROCA_6f40dea91e58 as PSYMBOLSERVERPINGPROCA}
+
+pub using @6b6e654cfa99a060 {type PSYMBOLSERVERPINGPROCW_5b342ab8749f as PSYMBOLSERVERPINGPROCW}
+
+pub using @6b6e654cfa99a060 {type PSYMBOLSERVERPINGPROCWEX_c4080607a3a6 as PSYMBOLSERVERPINGPROCWEX}
+
+pub using @6b6e654cfa99a060 {type PSYMBOLSERVERPROC_f846e24a6627 as PSYMBOLSERVERPROC}
+
+pub using @6b6e654cfa99a060 {type PSYMBOLSERVERPROCA_381bc29f17b5 as PSYMBOLSERVERPROCA}
+
+pub using @6b6e654cfa99a060 {type PSYMBOLSERVERPROCW_f058e067d3af as PSYMBOLSERVERPROCW}
+
+pub using @6b6e654cfa99a060 {type PSYMBOLSERVERSETHTTPAUTHHEADER_22e632c30a49 as PSYMBOLSERVERSETHTTPAUTHHEADER}
+
+pub using @6b6e654cfa99a060 {type PSYMBOLSERVERSETOPTIONSPROC_ebcd1b3e5007 as PSYMBOLSERVERSETOPTIONSPROC}
+
+pub using @6b6e654cfa99a060 {type PSYMBOLSERVERSETOPTIONSWPROC_611dfa6f3520 as PSYMBOLSERVERSETOPTIONSWPROC}
+
+pub using @6b6e654cfa99a060 {type PSYMBOLSERVERSTOREFILE_446a0bf0f892 as PSYMBOLSERVERSTOREFILE}
+
+pub using @6b6e654cfa99a060 {type PSYMBOLSERVERSTOREFILEW_1de8e06d3f68 as PSYMBOLSERVERSTOREFILEW}
+
+pub using @6b6e654cfa99a060 {type PSYMBOLSERVERSTORESUPPLEMENT_979fd62df14b as PSYMBOLSERVERSTORESUPPLEMENT}
+
+pub using @6b6e654cfa99a060 {type PSYMBOLSERVERSTORESUPPLEMENTW_20b6a6d90799 as PSYMBOLSERVERSTORESUPPLEMENTW}
+
+pub using @6b6e654cfa99a060 {type PSYMBOLSERVERVERSION_01c07ecd569f as PSYMBOLSERVERVERSION}
+
+pub using @6b6e654cfa99a060 {type PSYMBOLSERVERWEXPROC_461718af9c85 as PSYMBOLSERVERWEXPROC}
+
+pub using @6b6e654cfa99a060 {type PSYMENUMERATESYMBOLSCALLBACK_da215b4ed8c7 as PSYMENUMERATESYMBOLSCALLBACK}
+
+pub using @6b6e654cfa99a060 {type PSYMENUMERATESYMBOLSCALLBACKW_451eb955ff87 as PSYMENUMERATESYMBOLSCALLBACKW}
+
+pub using @6b6e654cfa99a060 {type PSYMENUMLINESCALLBACK_d323308371ab as PSYMENUMLINESCALLBACK}
+
+pub using @6b6e654cfa99a060 {type PSYMENUMLINESCALLBACKW_be710081be3e as PSYMENUMLINESCALLBACKW}
+
+pub using @6b6e654cfa99a060 {type PSYMENUMMODULESCALLBACK64_887392f5ded4 as PSYMENUMMODULESCALLBACK64}
+
+pub using @6b6e654cfa99a060 {type PSYMENUMMODULESCALLBACKW64_d50358609e6b as PSYMENUMMODULESCALLBACKW64}
+
+pub using @6b6e654cfa99a060 {type PSYMENUMPROCESSESCALLBACK_926ebba39f29 as PSYMENUMPROCESSESCALLBACK}
+
+pub using @6b6e654cfa99a060 {type PSYMENUMSOURCEFILESCALLBACK_1963e40b597e as PSYMENUMSOURCEFILESCALLBACK}
+
+pub using @6b6e654cfa99a060 {type PSYMENUMSOURCEFILESCALLBACKW_95df14a8f128 as PSYMENUMSOURCEFILESCALLBACKW}
+
+pub using @6b6e654cfa99a060 {type PSYMENUMSYMBOLSCALLBACK64_716a66567184 as PSYMENUMSYMBOLSCALLBACK64}
+
+pub using @6b6e654cfa99a060 {type PSYMENUMSYMBOLSCALLBACK64W_75f4c7bcceed as PSYMENUMSYMBOLSCALLBACK64W}
+
+pub using @6b6e654cfa99a060 {type PTRANSLATEADDRESSROUTINE64_a6c362f802fc as PTRANSLATEADDRESSROUTINE64}
+
+pub using @6b6e654cfa99a060 {type PVECTOREDEXCEPTIONHANDLER_a35e3c26619c as PVECTOREDEXCEPTIONHANDLER}
+
+pub using @6b6e654cfa99a060 {type PWAITCHAINCALLBACK_017ad02c83ca as PWAITCHAINCALLBACK}
+
+pub using @6b6e654cfa99a060 {type RIPINFO_982ee73f5dc5 as RIPINFO}
+
+pub using @6b6e654cfa99a060 {type RIPINFOTYPE_5ec52c3021c6 as RIPINFOTYPE}
+
+pub using @6b6e654cfa99a060 {type RTLVIRTUALUNWINDHANDLERTYPE_10dd0e1f0ee2 as RTLVIRTUALUNWINDHANDLERTYPE}
+
+pub using @6b6e654cfa99a060 {type SOURCEFILE_f5ffb5f251ea as SOURCEFILE}
+
+pub using @6b6e654cfa99a060 {type SOURCEFILEW_b7e46836e8d5 as SOURCEFILEW}
+
+pub using @6b6e654cfa99a060 {type SRCCODEINFO_ccfcca653a3d as SRCCODEINFO}
+
+pub using @6b6e654cfa99a060 {type SRCCODEINFOW_c1c80497e80d as SRCCODEINFOW}
+
+pub using @6b6e654cfa99a060 {type STACKFRAME64_1528d937d575 as STACKFRAME64}
+
+pub using @6b6e654cfa99a060 {type STACKFRAMEEX_cef2e22eb81c as STACKFRAMEEX}
+
+pub using @6b6e654cfa99a060 {type SYMADDSOURCESTREAM_5282b14e9752 as SYMADDSOURCESTREAM}
+
+pub using @6b6e654cfa99a060 {type SYMADDSOURCESTREAMA_363e25ec729d as SYMADDSOURCESTREAMA}
+
+pub using @6b6e654cfa99a060 {type SYMBOLINFO_f65697c47800 as SYMBOLINFO}
+
+pub using @6b6e654cfa99a060 {type SYMBOLINFOFLAGS_fddc7be59a9e as SYMBOLINFOFLAGS}
+
+pub using @6b6e654cfa99a060 {type SYMBOLINFOPACKAGE_98aa6cf19521 as SYMBOLINFOPACKAGE}
+
+pub using @6b6e654cfa99a060 {type SYMBOLINFOPACKAGEW_5caa3e9dd46c as SYMBOLINFOPACKAGEW}
+
+pub using @6b6e654cfa99a060 {type SYMBOLINFOW_97615cbddbf1 as SYMBOLINFOW}
+
+pub using @6b6e654cfa99a060 {type SYMFINDIDOPTION_f8b40a9a2b73 as SYMFINDIDOPTION}
+
+pub using @6b6e654cfa99a060 {type SYMLOADFLAGS_d32769729ac6 as SYMLOADFLAGS}
+
+pub using @6b6e654cfa99a060 {type SYMSRVEXTENDEDOUTPUTDATA_f6e3d5f76b97 as SYMSRVEXTENDEDOUTPUTDATA}
+
+pub using @6b6e654cfa99a060 {type SYMSRVINDEXINFO_98040dcd8c08 as SYMSRVINDEXINFO}
+
+pub using @6b6e654cfa99a060 {type SYMSRVINDEXINFOW_a1d3906e5d79 as SYMSRVINDEXINFOW}
+
+pub using @6b6e654cfa99a060 {type SYMSRVSTOREFILEFLAGS_4dcab9c3e805 as SYMSRVSTOREFILEFLAGS}
+
+pub using @6b6e654cfa99a060 {type SYMTYPE_97278f203315 as SYMTYPE}
+
+pub using @6b6e654cfa99a060 {type THREADERRORMODE_88c169909260 as THREADERRORMODE}
+
+pub using @6b6e654cfa99a060 {type THREADWRITEFLAGS_c935d86a645a as THREADWRITEFLAGS}
+
+pub using @6b6e654cfa99a060 {type TIFINDCHILDRENPARAMS_c262a5e11fb4 as TIFINDCHILDRENPARAMS}
+
+pub using @6b6e654cfa99a060 {type TIGETDISCRIMINATEDUNIONTAGRANGESPARAMS_a748250c0e2b as TIGETDISCRIMINATEDUNIONTAGRANGESPARAMS}
+
+pub using @6b6e654cfa99a060 {type UNLOADDLLDEBUGINFO_6300e50b09d7 as UNLOADDLLDEBUGINFO}
+
+pub using @6b6e654cfa99a060 {type UNWINDHISTORYTABLE_39e89f09b372 as UNWINDHISTORYTABLE}
+
+pub using @6b6e654cfa99a060 {type UNWINDHISTORYTABLEENTRY_f35cd66c1fd0 as UNWINDHISTORYTABLEENTRY}
+
+pub using @6b6e654cfa99a060 {type VERPLATFORM_63f24deae54e as VERPLATFORM}
+
+pub using @6b6e654cfa99a060 {type WAITCHAINNODEINFO_5e7969a10642 as WAITCHAINNODEINFO}
+
+pub using @6b6e654cfa99a060 {type WAITCHAINNODEINFOAnonymousEUnion_fa6f106a1dbf as WAITCHAINNODEINFOAnonymousEUnion}
+
+pub using @6b6e654cfa99a060 {type WAITCHAINNODEINFOAnonymousEUnionLockObjectEStruct_02092eaa78a9 as WAITCHAINNODEINFOAnonymousEUnionLockObjectEStruct}
+
+pub using @6b6e654cfa99a060 {type WAITCHAINNODEINFOAnonymousEUnionThreadObjectEStruct_b51cda736a66 as WAITCHAINNODEINFOAnonymousEUnionThreadObjectEStruct}
+
+pub using @6b6e654cfa99a060 {type WAITCHAINTHREADOPTIONS_47e3b61be864 as WAITCHAINTHREADOPTIONS}
+
+pub using @6b6e654cfa99a060 {type WCTOBJECTSTATUS_5b749b8024dd as WCTOBJECTSTATUS}
+
+pub using @6b6e654cfa99a060 {type WCTOBJECTTYPE_9f91a0942019 as WCTOBJECTTYPE}
+
+pub using @6b6e654cfa99a060 {type WHEAAERBRIDGEDESCRIPTOR_b0e39edc3b21 as WHEAAERBRIDGEDESCRIPTOR}
+
+pub using @6b6e654cfa99a060 {type WHEAAERENDPOINTDESCRIPTOR_bd25b288da54 as WHEAAERENDPOINTDESCRIPTOR}
+
+pub using @6b6e654cfa99a060 {type WHEAAERROOTPORTDESCRIPTOR_1b7c49f92109 as WHEAAERROOTPORTDESCRIPTOR}
+
+pub using @6b6e654cfa99a060 {type WHEADEVICEDRIVERDESCRIPTOR_9ddbd0c29aec as WHEADEVICEDRIVERDESCRIPTOR}
+
+pub using @6b6e654cfa99a060 {type WHEADRIVERBUFFERSET_964a4fdb99f8 as WHEADRIVERBUFFERSET}
+
+pub using @6b6e654cfa99a060 {type WHEAERRORSOURCECONFIGURATIONDD_8891ab05e4b9 as WHEAERRORSOURCECONFIGURATIONDD}
+
+pub using @6b6e654cfa99a060 {type WHEAERRORSOURCECONFIGURATIONDEVICEDRIVER_cd06831647fd as WHEAERRORSOURCECONFIGURATIONDEVICEDRIVER}
+
+pub using @6b6e654cfa99a060 {type WHEAERRORSOURCECONFIGURATIONDEVICEDRIVERV1_617819404d1a as WHEAERRORSOURCECONFIGURATIONDEVICEDRIVERV1}
+
+pub using @6b6e654cfa99a060 {type WHEAERRORSOURCECORRECTDEVICEDRIVER_c5e44d7e687c as WHEAERRORSOURCECORRECTDEVICEDRIVER}
+
+pub using @6b6e654cfa99a060 {type WHEAERRORSOURCEDESCRIPTOR_8166c3988609 as WHEAERRORSOURCEDESCRIPTOR}
+
+pub using @6b6e654cfa99a060 {type WHEAERRORSOURCEDESCRIPTORInfoEUnion_c4aa7ee89589 as WHEAERRORSOURCEDESCRIPTORInfoEUnion}
+
+pub using @6b6e654cfa99a060 {type WHEAERRORSOURCEINITIALIZEDEVICEDRIVER_9a313e71ace1 as WHEAERRORSOURCEINITIALIZEDEVICEDRIVER}
+
+pub using @6b6e654cfa99a060 {type WHEAERRORSOURCESTATE_95a07dc9c7bf as WHEAERRORSOURCESTATE}
+
+pub using @6b6e654cfa99a060 {type WHEAERRORSOURCETYPE_af6b24044548 as WHEAERRORSOURCETYPE}
+
+pub using @6b6e654cfa99a060 {type WHEAERRORSOURCEUNINITIALIZEDEVICEDRIVER_e342bb8943c3 as WHEAERRORSOURCEUNINITIALIZEDEVICEDRIVER}
+
+pub using @6b6e654cfa99a060 {type WHEAGENERICERRORDESCRIPTOR_ac7168ade06a as WHEAGENERICERRORDESCRIPTOR}
+
+pub using @6b6e654cfa99a060 {type WHEAGENERICERRORDESCRIPTORV2_f665f0f9188f as WHEAGENERICERRORDESCRIPTORV2}
+
+pub using @6b6e654cfa99a060 {type WHEAIPFCMCDESCRIPTOR_a77bae6e956b as WHEAIPFCMCDESCRIPTOR}
+
+pub using @6b6e654cfa99a060 {type WHEAIPFCPEDESCRIPTOR_85d22d1d221d as WHEAIPFCPEDESCRIPTOR}
+
+pub using @6b6e654cfa99a060 {type WHEAIPFMCADESCRIPTOR_efecc97e82be as WHEAIPFMCADESCRIPTOR}
+
+pub using @6b6e654cfa99a060 {type WHEANOTIFICATIONDESCRIPTOR_91bdb3201625 as WHEANOTIFICATIONDESCRIPTOR}
+
+pub using @6b6e654cfa99a060 {type WHEANOTIFICATIONDESCRIPTORUEUnion_4b2baa927d6e as WHEANOTIFICATIONDESCRIPTORUEUnion}
+
+pub using @6b6e654cfa99a060 {type WHEANOTIFICATIONDESCRIPTORUEUnionGsivEStruct_b9d242e56aea as WHEANOTIFICATIONDESCRIPTORUEUnionGsivEStruct}
+
+pub using @6b6e654cfa99a060 {type WHEANOTIFICATIONDESCRIPTORUEUnionInterruptEStruct_88ac9fc594be as WHEANOTIFICATIONDESCRIPTORUEUnionInterruptEStruct}
+
+pub using @6b6e654cfa99a060 {type WHEANOTIFICATIONDESCRIPTORUEUnionLocalInterruptEStruct_1947506c1eb9 as WHEANOTIFICATIONDESCRIPTORUEUnionLocalInterruptEStruct}
+
+pub using @6b6e654cfa99a060 {type WHEANOTIFICATIONDESCRIPTORUEUnionNmiEStruct_1efb0fef8f6d as WHEANOTIFICATIONDESCRIPTORUEUnionNmiEStruct}
+
+pub using @6b6e654cfa99a060 {type WHEANOTIFICATIONDESCRIPTORUEUnionPolledEStruct_d5a0513a609a as WHEANOTIFICATIONDESCRIPTORUEUnionPolledEStruct}
+
+pub using @6b6e654cfa99a060 {type WHEANOTIFICATIONDESCRIPTORUEUnionSciEStruct_7fc9931916fa as WHEANOTIFICATIONDESCRIPTORUEUnionSciEStruct}
+
+pub using @6b6e654cfa99a060 {type WHEANOTIFICATIONDESCRIPTORUEUnionSeaEStruct_5a330d8e78d8 as WHEANOTIFICATIONDESCRIPTORUEUnionSeaEStruct}
+
+pub using @6b6e654cfa99a060 {type WHEANOTIFICATIONDESCRIPTORUEUnionSeiEStruct_150920a05194 as WHEANOTIFICATIONDESCRIPTORUEUnionSeiEStruct}
+
+pub using @6b6e654cfa99a060 {type WHEANOTIFICATIONFLAGS_efb1c227ff62 as WHEANOTIFICATIONFLAGS}
+
+pub using @6b6e654cfa99a060 {type WHEANOTIFICATIONFLAGSAnonymousEStruct_8a2c0317c2ff as WHEANOTIFICATIONFLAGSAnonymousEStruct}
+
+pub using @6b6e654cfa99a060 {type WHEAPCISLOTNUMBER_7fdb44cd9bc2 as WHEAPCISLOTNUMBER}
+
+pub using @6b6e654cfa99a060 {type WHEAPCISLOTNUMBERUEUnion_b6bd146e91bd as WHEAPCISLOTNUMBERUEUnion}
+
+pub using @6b6e654cfa99a060 {type WHEAPCISLOTNUMBERUEUnionBitsEStruct_49a247dc977f as WHEAPCISLOTNUMBERUEUnionBitsEStruct}
+
+pub using @6b6e654cfa99a060 {type WHEAXPFCMCDESCRIPTOR_2f8375e382e8 as WHEAXPFCMCDESCRIPTOR}
+
+pub using @6b6e654cfa99a060 {type WHEAXPFMCBANKDESCRIPTOR_80144245c724 as WHEAXPFMCBANKDESCRIPTOR}
+
+pub using @6b6e654cfa99a060 {type WHEAXPFMCEDESCRIPTOR_4d8a23ae564a as WHEAXPFMCEDESCRIPTOR}
+
+pub using @6b6e654cfa99a060 {type WHEAXPFNMIDESCRIPTOR_7dba4aa7a500 as WHEAXPFNMIDESCRIPTOR}
+
+pub using @6b6e654cfa99a060 {type WOW64CONTEXT_67abd7ec7183 as WOW64CONTEXT}
+
+pub using @6b6e654cfa99a060 {type WOW64CONTEXTFLAGS_e9be6a0add37 as WOW64CONTEXTFLAGS}
+
+pub using @6b6e654cfa99a060 {type WOW64DESCRIPTORTABLEENTRY_99c2ccb7833b as WOW64DESCRIPTORTABLEENTRY}
+
+pub using @6b6e654cfa99a060 {type WOW64FLOATINGSAVEAREA_04f781a87367 as WOW64FLOATINGSAVEAREA}
+
+pub using @6b6e654cfa99a060 {type WOW64LDTENTRY_8460b3253baf as WOW64LDTENTRY}
+
+pub using @6b6e654cfa99a060 {type WOW64LDTENTRYHighWordEUnion_79f4e86c6331 as WOW64LDTENTRYHighWordEUnion}
+
+pub using @6b6e654cfa99a060 {type WOW64LDTENTRYHighWordEUnionBitsEStruct_5461ab4ecc9f as WOW64LDTENTRYHighWordEUnionBitsEStruct}
+
+pub using @6b6e654cfa99a060 {type WOW64LDTENTRYHighWordEUnionBytesEStruct_da7fa0b053a2 as WOW64LDTENTRYHighWordEUnionBytesEStruct}
+
+pub using @6b6e654cfa99a060 {type XPFMCBANKFLAGS_a23f5a504b6f as XPFMCBANKFLAGS}
+
+pub using @6b6e654cfa99a060 {type XPFMCBANKFLAGSAnonymousEStruct_b79d3a377013 as XPFMCBANKFLAGSAnonymousEStruct}
+
+pub using @6b6e654cfa99a060 {type XPFMCEFLAGS_19fb2a70b211 as XPFMCEFLAGS}
+
+pub using @6b6e654cfa99a060 {type XPFMCEFLAGSAnonymousEStruct_3318f8d7f3ac as XPFMCEFLAGSAnonymousEStruct}
+
+pub using @6b6e654cfa99a060 {type XSAVEAREA_6266402ea118 as XSAVEAREA}
+
+pub using @6b6e654cfa99a060 {type XSAVEAREAHEADER_cc3023db1649 as XSAVEAREAHEADER}
+
+pub using @6b6e654cfa99a060 {type XSAVEFORMAT_cafe14cf6bbd as XSAVEFORMAT}
+
+pub using @6b6e654cfa99a060 {type XSTATECONFIGFEATUREMSCINFO_840f9df78c16 as XSTATECONFIGFEATUREMSCINFO}
+
+pub using @6b6e654cfa99a060 {type XSTATECONFIGURATION_aa7186155a23 as XSTATECONFIGURATION}
+
+pub using @6b6e654cfa99a060 {type XSTATECONFIGURATIONAnonymousEUnion_c38fe479a9ee as XSTATECONFIGURATIONAnonymousEUnion}
+
+pub using @6b6e654cfa99a060 {type XSTATECONFIGURATIONAnonymousEUnionAnonymousEStruct_96c86c1a516c as XSTATECONFIGURATIONAnonymousEUnionAnonymousEStruct}
+
+pub using @6b6e654cfa99a060 {type XSTATECONTEXT_ed79f910f085 as XSTATECONTEXT}
+
+pub using @6b6e654cfa99a060 {type XSTATEFEATURE_21c2bb28014b as XSTATEFEATURE}
+
+// Traits

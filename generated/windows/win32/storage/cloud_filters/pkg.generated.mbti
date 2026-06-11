@@ -1,0 +1,363 @@
+// Generated using `moon info`, DON'T EDIT IT
+package "moonbit-community/win32api/windows/win32/storage/cloud_filters"
+
+import {
+  "moonbit-community/win32api/runtime/core",
+  "moonbit-community/win32api/runtime/strings",
+  "moonbit-community/win32api/scc/05706b5a114ce276",
+  "moonbit-community/win32api/scc/110c42b5852dc0b3",
+  "moonbit-community/win32api/scc/a1bdc9ce3d2a793b",
+  "moonbit-community/win32api/scc/b785b16e0a6d57ad",
+}
+
+// Values
+pub fn cf_close_handle(@core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn cf_close_handle_raw(@core.RawAddress) -> Unit
+
+pub fn cf_connect_sync_root(@strings.PWStr, @05706b5a114ce276.CFCALLBACKREGISTRATION_ed519fc47ca4, @core.RawAddress, @05706b5a114ce276.CFCONNECTFLAGS_3288580c75d5, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn cf_connect_sync_root_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, Int, @core.RawAddress) -> Int
+
+pub fn cf_convert_to_placeholder(@core.RawAddress, @core.RawAddress, UInt, @05706b5a114ce276.CFCONVERTFLAGS_b9cb3bcade76, @core.RawAddress, @b785b16e0a6d57ad.OVERLAPPED_ed44d4ed4c15?) -> Int raise @core.WindowsError
+
+pub fn cf_convert_to_placeholder_raw(@core.RawAddress, @core.RawAddress, UInt, Int, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn cf_create_placeholders(@strings.PWStr, @05706b5a114ce276.CFPLACEHOLDERCREATEINFO_e3b145b2a031, UInt, @05706b5a114ce276.CFCREATEFLAGS_6a744f1a737d, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn cf_create_placeholders_raw(@core.RawAddress, @core.RawAddress, UInt, Int, @core.RawAddress) -> Int
+
+pub fn cf_dehydrate_placeholder(@core.RawAddress, Int64, Int64, @05706b5a114ce276.CFDEHYDRATEFLAGS_0374caf7b0ed, @b785b16e0a6d57ad.OVERLAPPED_ed44d4ed4c15?) -> Int raise @core.WindowsError
+
+pub fn cf_dehydrate_placeholder_raw(@core.RawAddress, Int64, Int64, Int, @core.RawAddress) -> Int
+
+pub fn cf_disconnect_sync_root(Int64) -> Int raise @core.WindowsError
+
+pub fn cf_disconnect_sync_root_raw(Int64) -> Int
+
+pub fn cf_execute(@05706b5a114ce276.CFOPERATIONINFO_d68c6809dbd1, @05706b5a114ce276.CFOPERATIONPARAMETERS_033265537f24) -> Int raise @core.WindowsError
+
+pub fn cf_execute_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn cf_get_correlation_vector(@core.RawAddress, @a1bdc9ce3d2a793b.CORRELATIONVECTOR_c1d3a17d22ef) -> Int raise @core.WindowsError
+
+pub fn cf_get_correlation_vector_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn cf_get_placeholder_info(@core.RawAddress, @05706b5a114ce276.CFPLACEHOLDERINFOCLASS_12b2a6b134cb, @core.RawAddress, UInt, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn cf_get_placeholder_info_raw(@core.RawAddress, Int, @core.RawAddress, UInt, @core.RawAddress) -> Int
+
+pub fn cf_get_placeholder_range_info(@core.RawAddress, @05706b5a114ce276.CFPLACEHOLDERRANGEINFOCLASS_b0601a9111ab, Int64, Int64, @core.RawAddress, UInt, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn cf_get_placeholder_range_info_for_hydration(Int64, Int64, Int64, @05706b5a114ce276.CFPLACEHOLDERRANGEINFOCLASS_b0601a9111ab, Int64, Int64, @core.RawAddress, UInt, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn cf_get_placeholder_range_info_for_hydration_raw(Int64, Int64, Int64, Int, Int64, Int64, @core.RawAddress, UInt, @core.RawAddress) -> Int
+
+pub fn cf_get_placeholder_range_info_raw(@core.RawAddress, Int, Int64, Int64, @core.RawAddress, UInt, @core.RawAddress) -> Int
+
+pub fn cf_get_placeholder_state_from_attribute_tag(UInt, UInt) -> @05706b5a114ce276.CFPLACEHOLDERSTATE_e4384af1354c raise @core.WindowsError
+
+pub fn cf_get_placeholder_state_from_attribute_tag_raw(UInt, UInt) -> UInt
+
+pub fn cf_get_placeholder_state_from_file_info(@core.RawAddress, @110c42b5852dc0b3.FILEINFOBYHANDLECLASS_87349e856ffa) -> @05706b5a114ce276.CFPLACEHOLDERSTATE_e4384af1354c raise @core.WindowsError
+
+pub fn cf_get_placeholder_state_from_file_info_raw(@core.RawAddress, Int) -> UInt
+
+pub fn cf_get_placeholder_state_from_find_data(@110c42b5852dc0b3.WIN32FINDDATAA_a8682f267845) -> @05706b5a114ce276.CFPLACEHOLDERSTATE_e4384af1354c raise @core.WindowsError
+
+pub fn cf_get_placeholder_state_from_find_data_raw(@core.RawAddress) -> UInt
+
+pub fn cf_get_platform_info(@05706b5a114ce276.CFPLATFORMINFO_e4aaaa388e5f) -> Int raise @core.WindowsError
+
+pub fn cf_get_platform_info_raw(@core.RawAddress) -> Int
+
+pub fn cf_get_sync_root_info_by_handle(@core.RawAddress, @05706b5a114ce276.CFSYNCROOTINFOCLASS_c922d24d481b, @core.RawAddress, UInt, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn cf_get_sync_root_info_by_handle_raw(@core.RawAddress, Int, @core.RawAddress, UInt, @core.RawAddress) -> Int
+
+pub fn cf_get_sync_root_info_by_path(@strings.PWStr, @05706b5a114ce276.CFSYNCROOTINFOCLASS_c922d24d481b, @core.RawAddress, UInt, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn cf_get_sync_root_info_by_path_raw(@core.RawAddress, Int, @core.RawAddress, UInt, @core.RawAddress) -> Int
+
+pub fn cf_get_transfer_key(@core.RawAddress, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn cf_get_transfer_key_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn cf_get_win32_handle_from_protected_handle(@core.RawAddress) -> @core.RawAddress raise @core.WindowsError
+
+pub fn cf_get_win32_handle_from_protected_handle_raw(@core.RawAddress) -> @core.RawAddress
+
+pub fn cf_hydrate_placeholder(@core.RawAddress, Int64, Int64, @05706b5a114ce276.CFHYDRATEFLAGS_ca433a380470, @b785b16e0a6d57ad.OVERLAPPED_ed44d4ed4c15?) -> Int raise @core.WindowsError
+
+pub fn cf_hydrate_placeholder_raw(@core.RawAddress, Int64, Int64, Int, @core.RawAddress) -> Int
+
+pub let cf_max_priority_hint : UInt
+
+pub let cf_max_provider_name_length : UInt
+
+pub let cf_max_provider_version_length : UInt
+
+pub fn cf_open_file_with_oplock(@strings.PWStr, @05706b5a114ce276.CFOPENFILEFLAGS_89a5e4d6ff08, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn cf_open_file_with_oplock_raw(@core.RawAddress, Int, @core.RawAddress) -> Int
+
+pub let cf_placeholder_max_file_identity_length : UInt
+
+pub fn cf_query_sync_provider_status(Int64, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn cf_query_sync_provider_status_raw(Int64, @core.RawAddress) -> Int
+
+pub fn cf_reference_protected_handle(@core.RawAddress) -> Byte raise @core.WindowsError
+
+pub fn cf_reference_protected_handle_raw(@core.RawAddress) -> UInt
+
+pub fn cf_register_sync_root(@strings.PWStr, @05706b5a114ce276.CFSYNCREGISTRATION_1ed9fff694a1, @05706b5a114ce276.CFSYNCPOLICIES_5b468716d3a2, @05706b5a114ce276.CFREGISTERFLAGS_04732f5f69e6) -> Int raise @core.WindowsError
+
+pub fn cf_register_sync_root_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, Int) -> Int
+
+pub fn cf_release_protected_handle(@core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn cf_release_protected_handle_raw(@core.RawAddress) -> Unit
+
+pub fn cf_release_transfer_key(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn cf_release_transfer_key_raw(@core.RawAddress, @core.RawAddress) -> Unit
+
+pub fn cf_report_provider_progress(Int64, Int64, Int64, Int64) -> Int raise @core.WindowsError
+
+pub fn cf_report_provider_progress2(Int64, Int64, Int64, Int64, Int64, UInt) -> Int raise @core.WindowsError
+
+pub fn cf_report_provider_progress2_raw(Int64, Int64, Int64, Int64, Int64, UInt) -> Int
+
+pub fn cf_report_provider_progress_raw(Int64, Int64, Int64, Int64) -> Int
+
+pub fn cf_report_sync_status(@strings.PWStr, @05706b5a114ce276.CFSYNCSTATUS_19859dc3d854?) -> Int raise @core.WindowsError
+
+pub fn cf_report_sync_status_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub let cf_request_key_default : UInt
+
+pub fn cf_revert_placeholder(@core.RawAddress, @05706b5a114ce276.CFREVERTFLAGS_2583310bc81b, @b785b16e0a6d57ad.OVERLAPPED_ed44d4ed4c15?) -> Int raise @core.WindowsError
+
+pub fn cf_revert_placeholder_raw(@core.RawAddress, Int, @core.RawAddress) -> Int
+
+pub fn cf_set_correlation_vector(@core.RawAddress, @a1bdc9ce3d2a793b.CORRELATIONVECTOR_c1d3a17d22ef) -> Int raise @core.WindowsError
+
+pub fn cf_set_correlation_vector_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn cf_set_in_sync_state(@core.RawAddress, @05706b5a114ce276.CFINSYNCSTATE_97ecc8ee5b07, @05706b5a114ce276.CFSETINSYNCFLAGS_e60e79c3be42, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn cf_set_in_sync_state_raw(@core.RawAddress, Int, Int, @core.RawAddress) -> Int
+
+pub fn cf_set_pin_state(@core.RawAddress, @05706b5a114ce276.CFPINSTATE_3cc3d45a59a6, @05706b5a114ce276.CFSETPINFLAGS_a4d0415d1384, @b785b16e0a6d57ad.OVERLAPPED_ed44d4ed4c15?) -> Int raise @core.WindowsError
+
+pub fn cf_set_pin_state_raw(@core.RawAddress, Int, Int, @core.RawAddress) -> Int
+
+pub fn cf_unregister_sync_root(@strings.PWStr) -> Int raise @core.WindowsError
+
+pub fn cf_unregister_sync_root_raw(@core.RawAddress) -> Int
+
+pub fn cf_update_placeholder(@core.RawAddress, @05706b5a114ce276.CFFSMETADATA_c8237ff65800?, @core.RawAddress, UInt, @05706b5a114ce276.CFFILERANGE_09fd03e9a552?, UInt, @05706b5a114ce276.CFUPDATEFLAGS_617a510cd483, @core.RawAddress, @b785b16e0a6d57ad.OVERLAPPED_ed44d4ed4c15?) -> Int raise @core.WindowsError
+
+pub fn cf_update_placeholder_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, UInt, Int, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn cf_update_sync_provider_status(Int64, @05706b5a114ce276.CFSYNCPROVIDERSTATUS_7f2d4717a818) -> Int raise @core.WindowsError
+
+pub fn cf_update_sync_provider_status_raw(Int64, UInt) -> Int
+
+// Errors
+
+// Types and methods
+
+// Type aliases
+pub using @05706b5a114ce276 {type CFCALLBACK_40675b252853 as CFCALLBACK}
+
+pub using @05706b5a114ce276 {type CFCALLBACKCANCELFLAGS_02135ad2fa7e as CFCALLBACKCANCELFLAGS}
+
+pub using @05706b5a114ce276 {type CFCALLBACKCLOSECOMPLETIONFLAGS_67d9ea582deb as CFCALLBACKCLOSECOMPLETIONFLAGS}
+
+pub using @05706b5a114ce276 {type CFCALLBACKDEHYDRATECOMPLETIONFLAGS_7a04436a4b28 as CFCALLBACKDEHYDRATECOMPLETIONFLAGS}
+
+pub using @05706b5a114ce276 {type CFCALLBACKDEHYDRATEFLAGS_0d0210c13abd as CFCALLBACKDEHYDRATEFLAGS}
+
+pub using @05706b5a114ce276 {type CFCALLBACKDEHYDRATIONREASON_bfa2ddb097dd as CFCALLBACKDEHYDRATIONREASON}
+
+pub using @05706b5a114ce276 {type CFCALLBACKDELETECOMPLETIONFLAGS_0c76c5af44c4 as CFCALLBACKDELETECOMPLETIONFLAGS}
+
+pub using @05706b5a114ce276 {type CFCALLBACKDELETEFLAGS_d7f1a7e2cf84 as CFCALLBACKDELETEFLAGS}
+
+pub using @05706b5a114ce276 {type CFCALLBACKFETCHDATAFLAGS_acedec890ca0 as CFCALLBACKFETCHDATAFLAGS}
+
+pub using @05706b5a114ce276 {type CFCALLBACKFETCHPLACEHOLDERSFLAGS_6c295c09bb65 as CFCALLBACKFETCHPLACEHOLDERSFLAGS}
+
+pub using @05706b5a114ce276 {type CFCALLBACKINFO_7de753197076 as CFCALLBACKINFO}
+
+pub using @05706b5a114ce276 {type CFCALLBACKOPENCOMPLETIONFLAGS_b408ab13c85f as CFCALLBACKOPENCOMPLETIONFLAGS}
+
+pub using @05706b5a114ce276 {type CFCALLBACKPARAMETERS_ff8033413816 as CFCALLBACKPARAMETERS}
+
+pub using @05706b5a114ce276 {type CFCALLBACKPARAMETERSAnonymousEUnion_ae60f068ccc1 as CFCALLBACKPARAMETERSAnonymousEUnion}
+
+pub using @05706b5a114ce276 {type CFCALLBACKPARAMETERSAnonymousEUnionCancelEStruct_c3c1cf8027c5 as CFCALLBACKPARAMETERSAnonymousEUnionCancelEStruct}
+
+pub using @05706b5a114ce276 {type CFCALLBACKPARAMETERSAnonymousEUnionCancelEStructAnonymousEUnion_102f6adac411 as CFCALLBACKPARAMETERSAnonymousEUnionCancelEStructAnonymousEUnion}
+
+pub using @05706b5a114ce276 {type CFCALLBACKPARAMETERSAnonymousEUnionCancelEStructAnonymousEUnionFetchDataEStruct_f8dbc0466fa4 as CFCALLBACKPARAMETERSAnonymousEUnionCancelEStructAnonymousEUnionFetchDataEStruct}
+
+pub using @05706b5a114ce276 {type CFCALLBACKPARAMETERSAnonymousEUnionCloseCompletionEStruct_495c32d4b53f as CFCALLBACKPARAMETERSAnonymousEUnionCloseCompletionEStruct}
+
+pub using @05706b5a114ce276 {type CFCALLBACKPARAMETERSAnonymousEUnionDehydrateCompletionEStruct_9447d84f194e as CFCALLBACKPARAMETERSAnonymousEUnionDehydrateCompletionEStruct}
+
+pub using @05706b5a114ce276 {type CFCALLBACKPARAMETERSAnonymousEUnionDehydrateEStruct_1e0cd97cf02d as CFCALLBACKPARAMETERSAnonymousEUnionDehydrateEStruct}
+
+pub using @05706b5a114ce276 {type CFCALLBACKPARAMETERSAnonymousEUnionDeleteCompletionEStruct_4484fec0df3f as CFCALLBACKPARAMETERSAnonymousEUnionDeleteCompletionEStruct}
+
+pub using @05706b5a114ce276 {type CFCALLBACKPARAMETERSAnonymousEUnionDeleteEStruct_3f9a9ca6d2c2 as CFCALLBACKPARAMETERSAnonymousEUnionDeleteEStruct}
+
+pub using @05706b5a114ce276 {type CFCALLBACKPARAMETERSAnonymousEUnionFetchDataEStruct_7e4c835cb78c as CFCALLBACKPARAMETERSAnonymousEUnionFetchDataEStruct}
+
+pub using @05706b5a114ce276 {type CFCALLBACKPARAMETERSAnonymousEUnionFetchPlaceholdersEStruct_59b1d9998fc6 as CFCALLBACKPARAMETERSAnonymousEUnionFetchPlaceholdersEStruct}
+
+pub using @05706b5a114ce276 {type CFCALLBACKPARAMETERSAnonymousEUnionOpenCompletionEStruct_270869a6f3bc as CFCALLBACKPARAMETERSAnonymousEUnionOpenCompletionEStruct}
+
+pub using @05706b5a114ce276 {type CFCALLBACKPARAMETERSAnonymousEUnionRenameCompletionEStruct_3517cd33756e as CFCALLBACKPARAMETERSAnonymousEUnionRenameCompletionEStruct}
+
+pub using @05706b5a114ce276 {type CFCALLBACKPARAMETERSAnonymousEUnionRenameEStruct_9e8b2ad43820 as CFCALLBACKPARAMETERSAnonymousEUnionRenameEStruct}
+
+pub using @05706b5a114ce276 {type CFCALLBACKPARAMETERSAnonymousEUnionValidateDataEStruct_8ab469e9be5e as CFCALLBACKPARAMETERSAnonymousEUnionValidateDataEStruct}
+
+pub using @05706b5a114ce276 {type CFCALLBACKREGISTRATION_ed519fc47ca4 as CFCALLBACKREGISTRATION}
+
+pub using @05706b5a114ce276 {type CFCALLBACKRENAMECOMPLETIONFLAGS_1f692c30bc2a as CFCALLBACKRENAMECOMPLETIONFLAGS}
+
+pub using @05706b5a114ce276 {type CFCALLBACKRENAMEFLAGS_08ae0f7600b4 as CFCALLBACKRENAMEFLAGS}
+
+pub using @05706b5a114ce276 {type CFCALLBACKTYPE_976e3314686b as CFCALLBACKTYPE}
+
+pub using @05706b5a114ce276 {type CFCALLBACKVALIDATEDATAFLAGS_65f38d7d3ebb as CFCALLBACKVALIDATEDATAFLAGS}
+
+pub using @05706b5a114ce276 {type CFCONNECTFLAGS_3288580c75d5 as CFCONNECTFLAGS}
+
+pub using @05706b5a114ce276 {type CFCONNECTIONKEY_6be88ec2b8d6 as CFCONNECTIONKEY}
+
+pub using @05706b5a114ce276 {type CFCONVERTFLAGS_b9cb3bcade76 as CFCONVERTFLAGS}
+
+pub using @05706b5a114ce276 {type CFCREATEFLAGS_6a744f1a737d as CFCREATEFLAGS}
+
+pub using @05706b5a114ce276 {type CFDEHYDRATEFLAGS_0374caf7b0ed as CFDEHYDRATEFLAGS}
+
+pub using @05706b5a114ce276 {type CFFILERANGE_09fd03e9a552 as CFFILERANGE}
+
+pub using @05706b5a114ce276 {type CFFSMETADATA_c8237ff65800 as CFFSMETADATA}
+
+pub using @05706b5a114ce276 {type CFHARDLINKPOLICY_60786c21eec0 as CFHARDLINKPOLICY}
+
+pub using @05706b5a114ce276 {type CFHYDRATEFLAGS_ca433a380470 as CFHYDRATEFLAGS}
+
+pub using @05706b5a114ce276 {type CFHYDRATIONPOLICY_c5134d2557b4 as CFHYDRATIONPOLICY}
+
+pub using @05706b5a114ce276 {type CFHYDRATIONPOLICYMODIFIER_73c0be8188a4 as CFHYDRATIONPOLICYMODIFIER}
+
+pub using @05706b5a114ce276 {type CFHYDRATIONPOLICYPRIMARY_ca393a30a390 as CFHYDRATIONPOLICYPRIMARY}
+
+pub using @05706b5a114ce276 {type CFINSYNCPOLICY_194346ed8f7d as CFINSYNCPOLICY}
+
+pub using @05706b5a114ce276 {type CFINSYNCSTATE_97ecc8ee5b07 as CFINSYNCSTATE}
+
+pub using @05706b5a114ce276 {type CFOPENFILEFLAGS_89a5e4d6ff08 as CFOPENFILEFLAGS}
+
+pub using @05706b5a114ce276 {type CFOPERATIONACKDATAFLAGS_a8f553910014 as CFOPERATIONACKDATAFLAGS}
+
+pub using @05706b5a114ce276 {type CFOPERATIONACKDEHYDRATEFLAGS_87eb10b851be as CFOPERATIONACKDEHYDRATEFLAGS}
+
+pub using @05706b5a114ce276 {type CFOPERATIONACKDELETEFLAGS_df67e4d490ac as CFOPERATIONACKDELETEFLAGS}
+
+pub using @05706b5a114ce276 {type CFOPERATIONACKRENAMEFLAGS_59bd93a32f05 as CFOPERATIONACKRENAMEFLAGS}
+
+pub using @05706b5a114ce276 {type CFOPERATIONINFO_d68c6809dbd1 as CFOPERATIONINFO}
+
+pub using @05706b5a114ce276 {type CFOPERATIONPARAMETERS_033265537f24 as CFOPERATIONPARAMETERS}
+
+pub using @05706b5a114ce276 {type CFOPERATIONPARAMETERSAnonymousEUnion_39ce112c55ba as CFOPERATIONPARAMETERSAnonymousEUnion}
+
+pub using @05706b5a114ce276 {type CFOPERATIONPARAMETERSAnonymousEUnionAckDataEStruct_c61eb3fdc9d9 as CFOPERATIONPARAMETERSAnonymousEUnionAckDataEStruct}
+
+pub using @05706b5a114ce276 {type CFOPERATIONPARAMETERSAnonymousEUnionAckDehydrateEStruct_e5a032f24e9e as CFOPERATIONPARAMETERSAnonymousEUnionAckDehydrateEStruct}
+
+pub using @05706b5a114ce276 {type CFOPERATIONPARAMETERSAnonymousEUnionAckDeleteEStruct_45ed98d9f915 as CFOPERATIONPARAMETERSAnonymousEUnionAckDeleteEStruct}
+
+pub using @05706b5a114ce276 {type CFOPERATIONPARAMETERSAnonymousEUnionAckRenameEStruct_afa582973545 as CFOPERATIONPARAMETERSAnonymousEUnionAckRenameEStruct}
+
+pub using @05706b5a114ce276 {type CFOPERATIONPARAMETERSAnonymousEUnionRestartHydrationEStruct_972824b19ef4 as CFOPERATIONPARAMETERSAnonymousEUnionRestartHydrationEStruct}
+
+pub using @05706b5a114ce276 {type CFOPERATIONPARAMETERSAnonymousEUnionRetrieveDataEStruct_7f95e7f356b3 as CFOPERATIONPARAMETERSAnonymousEUnionRetrieveDataEStruct}
+
+pub using @05706b5a114ce276 {type CFOPERATIONPARAMETERSAnonymousEUnionTransferDataEStruct_b2b8ef61ac57 as CFOPERATIONPARAMETERSAnonymousEUnionTransferDataEStruct}
+
+pub using @05706b5a114ce276 {type CFOPERATIONPARAMETERSAnonymousEUnionTransferPlaceholdersEStruct_9ee2b356393b as CFOPERATIONPARAMETERSAnonymousEUnionTransferPlaceholdersEStruct}
+
+pub using @05706b5a114ce276 {type CFOPERATIONRESTARTHYDRATIONFLAGS_ab1763a6ae6e as CFOPERATIONRESTARTHYDRATIONFLAGS}
+
+pub using @05706b5a114ce276 {type CFOPERATIONRETRIEVEDATAFLAGS_0aa8cb3e8720 as CFOPERATIONRETRIEVEDATAFLAGS}
+
+pub using @05706b5a114ce276 {type CFOPERATIONTRANSFERDATAFLAGS_42052d1de244 as CFOPERATIONTRANSFERDATAFLAGS}
+
+pub using @05706b5a114ce276 {type CFOPERATIONTRANSFERPLACEHOLDERSFLAGS_069a0d393860 as CFOPERATIONTRANSFERPLACEHOLDERSFLAGS}
+
+pub using @05706b5a114ce276 {type CFOPERATIONTYPE_d1541da80db4 as CFOPERATIONTYPE}
+
+pub using @05706b5a114ce276 {type CFPINSTATE_3cc3d45a59a6 as CFPINSTATE}
+
+pub using @05706b5a114ce276 {type CFPLACEHOLDERBASICINFO_57809eefb907 as CFPLACEHOLDERBASICINFO}
+
+pub using @05706b5a114ce276 {type CFPLACEHOLDERCREATEFLAGS_403308b934d9 as CFPLACEHOLDERCREATEFLAGS}
+
+pub using @05706b5a114ce276 {type CFPLACEHOLDERCREATEINFO_e3b145b2a031 as CFPLACEHOLDERCREATEINFO}
+
+pub using @05706b5a114ce276 {type CFPLACEHOLDERINFOCLASS_12b2a6b134cb as CFPLACEHOLDERINFOCLASS}
+
+pub using @05706b5a114ce276 {type CFPLACEHOLDERMANAGEMENTPOLICY_20c30bf50aff as CFPLACEHOLDERMANAGEMENTPOLICY}
+
+pub using @05706b5a114ce276 {type CFPLACEHOLDERRANGEINFOCLASS_b0601a9111ab as CFPLACEHOLDERRANGEINFOCLASS}
+
+pub using @05706b5a114ce276 {type CFPLACEHOLDERSTANDARDINFO_a72788c4d82e as CFPLACEHOLDERSTANDARDINFO}
+
+pub using @05706b5a114ce276 {type CFPLACEHOLDERSTATE_e4384af1354c as CFPLACEHOLDERSTATE}
+
+pub using @05706b5a114ce276 {type CFPLATFORMINFO_e4aaaa388e5f as CFPLATFORMINFO}
+
+pub using @05706b5a114ce276 {type CFPOPULATIONPOLICY_e0b3606610d6 as CFPOPULATIONPOLICY}
+
+pub using @05706b5a114ce276 {type CFPOPULATIONPOLICYMODIFIER_33c10dc2859f as CFPOPULATIONPOLICYMODIFIER}
+
+pub using @05706b5a114ce276 {type CFPOPULATIONPOLICYPRIMARY_f1bec8fc3907 as CFPOPULATIONPOLICYPRIMARY}
+
+pub using @05706b5a114ce276 {type CFPROCESSINFO_848400a2f0f7 as CFPROCESSINFO}
+
+pub using @05706b5a114ce276 {type CFREGISTERFLAGS_04732f5f69e6 as CFREGISTERFLAGS}
+
+pub using @05706b5a114ce276 {type CFREVERTFLAGS_2583310bc81b as CFREVERTFLAGS}
+
+pub using @05706b5a114ce276 {type CFSETINSYNCFLAGS_e60e79c3be42 as CFSETINSYNCFLAGS}
+
+pub using @05706b5a114ce276 {type CFSETPINFLAGS_a4d0415d1384 as CFSETPINFLAGS}
+
+pub using @05706b5a114ce276 {type CFSYNCPOLICIES_5b468716d3a2 as CFSYNCPOLICIES}
+
+pub using @05706b5a114ce276 {type CFSYNCPROVIDERSTATUS_7f2d4717a818 as CFSYNCPROVIDERSTATUS}
+
+pub using @05706b5a114ce276 {type CFSYNCREGISTRATION_1ed9fff694a1 as CFSYNCREGISTRATION}
+
+pub using @05706b5a114ce276 {type CFSYNCROOTBASICINFO_6e1b6cf38f20 as CFSYNCROOTBASICINFO}
+
+pub using @05706b5a114ce276 {type CFSYNCROOTINFOCLASS_c922d24d481b as CFSYNCROOTINFOCLASS}
+
+pub using @05706b5a114ce276 {type CFSYNCROOTPROVIDERINFO_5f1ef419b0ee as CFSYNCROOTPROVIDERINFO}
+
+pub using @05706b5a114ce276 {type CFSYNCROOTSTANDARDINFO_41b15d94569b as CFSYNCROOTSTANDARDINFO}
+
+pub using @05706b5a114ce276 {type CFSYNCSTATUS_19859dc3d854 as CFSYNCSTATUS}
+
+pub using @05706b5a114ce276 {type CFUPDATEFLAGS_617a510cd483 as CFUPDATEFLAGS}
+
+// Traits

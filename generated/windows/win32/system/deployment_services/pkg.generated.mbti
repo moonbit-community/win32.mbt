@@ -1,0 +1,956 @@
+// Generated using `moon info`, DON'T EDIT IT
+package "moonbit-community/win32api/windows/win32/system/deployment_services"
+
+import {
+  "moonbit-community/win32api/runtime/core",
+  "moonbit-community/win32api/runtime/strings",
+  "moonbit-community/win32api/scc/1d9bc22f74c8d12b",
+}
+
+// Values
+pub let evt_wdsmcs_e_cp_callbacks_not_reg : Int
+
+pub let evt_wdsmcs_e_cp_close_instance_failed : Int
+
+pub let evt_wdsmcs_e_cp_dll_load_failed : Int
+
+pub let evt_wdsmcs_e_cp_dll_load_failed_critical : Int
+
+pub let evt_wdsmcs_e_cp_incompatible_server_version : Int
+
+pub let evt_wdsmcs_e_cp_init_func_failed : Int
+
+pub let evt_wdsmcs_e_cp_init_func_missing : Int
+
+pub let evt_wdsmcs_e_cp_memory_leak : Int
+
+pub let evt_wdsmcs_e_cp_open_content_failed : Int
+
+pub let evt_wdsmcs_e_cp_open_instance_failed : Int
+
+pub let evt_wdsmcs_e_cp_shutdown_func_failed : Int
+
+pub let evt_wdsmcs_e_duplicate_multicast_addr : Int
+
+pub let evt_wdsmcs_e_non_wds_duplicate_multicast_addr : Int
+
+pub let evt_wdsmcs_e_nsreg_content_provider_not_reg : Int
+
+pub let evt_wdsmcs_e_nsreg_failure : Int
+
+pub let evt_wdsmcs_e_nsreg_namespace_exists : Int
+
+pub let evt_wdsmcs_e_nsreg_start_time_in_past : Int
+
+pub let evt_wdsmcs_e_parameters_read_failed : Int
+
+pub let evt_wdsmcs_s_parameters_read : Int
+
+pub let evt_wdsmcs_w_cp_dll_load_failed_not_critical : Int
+
+pub let facility_wdsmcclient : UInt
+
+pub let facility_wdsmcserver : UInt
+
+pub let facility_wdstptmgmt : UInt
+
+pub let mc_server_current_version : UInt
+
+pub let pxe_addr_broadcast : UInt
+
+pub let pxe_addr_use_addr : UInt
+
+pub let pxe_addr_use_dhcp_rules : UInt
+
+pub let pxe_addr_use_port : UInt
+
+pub fn pxe_async_recv_done(@core.RawAddress, UInt) -> UInt raise @core.WindowsError
+
+pub fn pxe_async_recv_done_raw(@core.RawAddress, UInt) -> UInt
+
+pub let pxe_ba_custom : UInt
+
+pub let pxe_ba_ignore : UInt
+
+pub let pxe_ba_nbp : UInt
+
+pub let pxe_ba_rejected : UInt
+
+pub let pxe_callback_max : UInt
+
+pub let pxe_callback_recv_request : UInt
+
+pub let pxe_callback_service_control : UInt
+
+pub let pxe_callback_shutdown : UInt
+
+pub fn pxe_dhcp_append_option(@core.RawAddress, UInt, @core.RawAddress, Byte, Byte, @core.RawAddress) -> UInt raise @core.WindowsError
+
+pub fn pxe_dhcp_append_option_raw(@core.RawAddress, UInt, @core.RawAddress, UInt, UInt, @core.RawAddress) -> UInt
+
+pub fn pxe_dhcp_append_option_raw_with_unit_pointer_and_u32_and_u32_pointer_and_u16_and_unit_pointer(@core.RawAddress, UInt, @core.RawAddress, UInt16, @core.RawAddress) -> UInt raise @core.WindowsError
+
+pub fn pxe_dhcp_append_option_raw_with_unit_pointer_and_u32_and_u32_pointer_and_u16_and_unit_pointer_raw(@core.RawAddress, UInt, @core.RawAddress, UInt, @core.RawAddress) -> UInt
+
+pub let pxe_dhcp_client_port : UInt
+
+pub let pxe_dhcp_file_size : UInt
+
+pub fn pxe_dhcp_get_option_value(@core.RawAddress, UInt, UInt, Byte, @core.RawAddress, @core.RawAddress) -> UInt raise @core.WindowsError
+
+pub fn pxe_dhcp_get_option_value_raw(@core.RawAddress, UInt, UInt, UInt, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn pxe_dhcp_get_vendor_option_value(@core.RawAddress, UInt, Byte, UInt, @core.RawAddress, @core.RawAddress) -> UInt raise @core.WindowsError
+
+pub fn pxe_dhcp_get_vendor_option_value_raw(@core.RawAddress, UInt, UInt, UInt, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub let pxe_dhcp_hwaadr_size : UInt
+
+pub fn pxe_dhcp_initialize(@core.RawAddress, UInt, @core.RawAddress, UInt, @core.RawAddress) -> UInt raise @core.WindowsError
+
+pub fn pxe_dhcp_initialize_raw(@core.RawAddress, UInt, @core.RawAddress, UInt, @core.RawAddress) -> UInt
+
+pub fn pxe_dhcp_is_valid(@core.RawAddress, UInt, Int, @core.RawAddress) -> UInt raise @core.WindowsError
+
+pub fn pxe_dhcp_is_valid_raw(@core.RawAddress, UInt, Int, @core.RawAddress) -> UInt
+
+pub let pxe_dhcp_magic_cookie_size : UInt
+
+pub let pxe_dhcp_server_port : UInt
+
+pub let pxe_dhcp_server_size : UInt
+
+pub fn pxe_dhcpv6_append_option(@core.RawAddress, UInt, @core.RawAddress, UInt16, UInt16, @core.RawAddress) -> UInt raise @core.WindowsError
+
+pub fn pxe_dhcpv6_append_option_raw(@core.RawAddress, UInt, @core.RawAddress, UInt, UInt, @core.RawAddress) -> UInt
+
+pub fn pxe_dhcpv6_append_option_raw_with_unit_pointer_and_u32_and_u32_pointer_and_u16_and_unit_pointer(@core.RawAddress, UInt, @core.RawAddress, UInt16, @core.RawAddress) -> UInt raise @core.WindowsError
+
+pub fn pxe_dhcpv6_append_option_raw_with_unit_pointer_and_u32_and_u32_pointer_and_u16_and_unit_pointer_raw(@core.RawAddress, UInt, @core.RawAddress, UInt, @core.RawAddress) -> UInt
+
+pub let pxe_dhcpv6_client_port : UInt
+
+pub fn pxe_dhcpv6_create_relay_repl(@1d9bc22f74c8d12b.PXEDHCPV6NESTEDRELAYMESSAGE_819eacaac655, UInt, @core.RawAddress, UInt, @core.RawAddress, UInt, @core.RawAddress) -> UInt raise @core.WindowsError
+
+pub fn pxe_dhcpv6_create_relay_repl_raw(@core.RawAddress, UInt, @core.RawAddress, UInt, @core.RawAddress, UInt, @core.RawAddress) -> UInt
+
+pub fn pxe_dhcpv6_get_option_value(@core.RawAddress, UInt, UInt, UInt16, @core.RawAddress, @core.RawAddress) -> UInt raise @core.WindowsError
+
+pub fn pxe_dhcpv6_get_option_value_raw(@core.RawAddress, UInt, UInt, UInt, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn pxe_dhcpv6_get_vendor_option_value(@core.RawAddress, UInt, UInt, UInt16, UInt, @core.RawAddress, @core.RawAddress) -> UInt raise @core.WindowsError
+
+pub fn pxe_dhcpv6_get_vendor_option_value_raw(@core.RawAddress, UInt, UInt, UInt, UInt, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn pxe_dhcpv6_initialize(@core.RawAddress, UInt, @core.RawAddress, UInt, @core.RawAddress) -> UInt raise @core.WindowsError
+
+pub fn pxe_dhcpv6_initialize_raw(@core.RawAddress, UInt, @core.RawAddress, UInt, @core.RawAddress) -> UInt
+
+pub fn pxe_dhcpv6_is_valid(@core.RawAddress, UInt, Int, @core.RawAddress) -> UInt raise @core.WindowsError
+
+pub fn pxe_dhcpv6_is_valid_raw(@core.RawAddress, UInt, Int, @core.RawAddress) -> UInt
+
+pub fn pxe_dhcpv6_parse_relay_forw(@core.RawAddress, UInt, @1d9bc22f74c8d12b.PXEDHCPV6NESTEDRELAYMESSAGE_819eacaac655, UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt raise @core.WindowsError
+
+pub fn pxe_dhcpv6_parse_relay_forw_raw(@core.RawAddress, UInt, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub let pxe_dhcpv6_relay_hop_count_limit : UInt
+
+pub let pxe_dhcpv6_server_port : UInt
+
+pub fn pxe_get_server_info(UInt, @core.RawAddress, UInt) -> UInt raise @core.WindowsError
+
+pub fn pxe_get_server_info_ex(UInt, @core.RawAddress, UInt, @core.RawAddress) -> UInt raise @core.WindowsError
+
+pub fn pxe_get_server_info_ex_raw(UInt, @core.RawAddress, UInt, @core.RawAddress) -> UInt
+
+pub fn pxe_get_server_info_raw(UInt, @core.RawAddress, UInt) -> UInt
+
+pub let pxe_gsi_server_duid : UInt
+
+pub let pxe_gsi_trace_enabled : UInt
+
+pub let pxe_max_address : UInt
+
+pub fn pxe_packet_allocate(@core.RawAddress, @core.RawAddress, UInt) -> @core.RawAddress raise @core.WindowsError
+
+pub fn pxe_packet_allocate_raw(@core.RawAddress, @core.RawAddress, UInt) -> @core.RawWin32Call[@core.RawAddress]
+
+pub fn pxe_packet_free(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt raise @core.WindowsError
+
+pub fn pxe_packet_free_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub let pxe_prov_attr_filter : UInt
+
+pub let pxe_prov_attr_filter_ipv6 : UInt
+
+pub let pxe_prov_attr_ipv6_capable : UInt
+
+pub let pxe_prov_filter_all : UInt
+
+pub let pxe_prov_filter_dhcp_only : UInt
+
+pub let pxe_prov_filter_pxe_only : UInt
+
+pub fn pxe_provider_enum_close(@core.RawAddress) -> UInt raise @core.WindowsError
+
+pub fn pxe_provider_enum_close_raw(@core.RawAddress) -> UInt
+
+pub fn pxe_provider_enum_first(@core.RawAddress) -> UInt raise @core.WindowsError
+
+pub fn pxe_provider_enum_first_raw(@core.RawAddress) -> UInt
+
+pub fn pxe_provider_enum_next(@core.RawAddress, @core.RawAddress) -> UInt raise @core.WindowsError
+
+pub fn pxe_provider_enum_next_raw(@core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn pxe_provider_free_info(@1d9bc22f74c8d12b.PXEPROVIDER_61345c90ed5f) -> UInt raise @core.WindowsError
+
+pub fn pxe_provider_free_info_raw(@core.RawAddress) -> UInt
+
+pub fn pxe_provider_query_index(@strings.PWStr, @core.RawAddress) -> UInt raise @core.WindowsError
+
+pub fn pxe_provider_query_index_raw(@core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn pxe_provider_register(@strings.PWStr, @strings.PWStr, UInt, Int, @core.RawAddress) -> UInt raise @core.WindowsError
+
+pub fn pxe_provider_register_raw(@core.RawAddress, @core.RawAddress, UInt, Int, @core.RawAddress) -> UInt
+
+pub fn pxe_provider_set_attribute(@core.RawAddress, UInt, @core.RawAddress, UInt) -> UInt raise @core.WindowsError
+
+pub fn pxe_provider_set_attribute_raw(@core.RawAddress, UInt, @core.RawAddress, UInt) -> UInt
+
+pub fn pxe_provider_un_register(@strings.PWStr) -> UInt raise @core.WindowsError
+
+pub fn pxe_provider_un_register_raw(@core.RawAddress) -> UInt
+
+pub let pxe_reg_index_bottom : UInt
+
+pub let pxe_reg_index_top : UInt
+
+pub fn pxe_register_callback(@core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> UInt raise @core.WindowsError
+
+pub fn pxe_register_callback_raw(@core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn pxe_send_reply(@core.RawAddress, @core.RawAddress, UInt, @1d9bc22f74c8d12b.PXEADDRESS_1ccb88de60c3) -> UInt raise @core.WindowsError
+
+pub fn pxe_send_reply_raw(@core.RawAddress, @core.RawAddress, UInt, @core.RawAddress) -> UInt
+
+pub let pxe_server_port : UInt
+
+pub let pxe_trace_error : UInt
+
+pub let pxe_trace_fatal : UInt
+
+pub let pxe_trace_info : UInt
+
+pub fn pxe_trace_v(@core.RawAddress, UInt, @strings.PWStr, @core.RawAddress) -> UInt raise @core.WindowsError
+
+pub fn pxe_trace_v_raw(@core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub let pxe_trace_verbose : UInt
+
+pub let pxe_trace_warning : UInt
+
+pub let transportprovider_current_version : UInt
+
+pub fn wds_bp_add_option(@core.RawAddress, UInt, UInt, @core.RawAddress) -> UInt raise @core.WindowsError
+
+pub fn wds_bp_add_option_raw(@core.RawAddress, UInt, UInt, @core.RawAddress) -> UInt
+
+pub fn wds_bp_close_handle(@core.RawAddress) -> UInt raise @core.WindowsError
+
+pub fn wds_bp_close_handle_raw(@core.RawAddress) -> UInt
+
+pub fn wds_bp_get_option_buffer(@core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> UInt raise @core.WindowsError
+
+pub fn wds_bp_get_option_buffer_raw(@core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn wds_bp_initialize(Byte, @core.RawAddress) -> UInt raise @core.WindowsError
+
+pub fn wds_bp_initialize_raw(UInt, @core.RawAddress) -> UInt
+
+pub fn wds_bp_parse_initialize(@core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> UInt raise @core.WindowsError
+
+pub fn wds_bp_parse_initialize_raw(@core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn wds_bp_parse_initializev6(@core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> UInt raise @core.WindowsError
+
+pub fn wds_bp_parse_initializev6_raw(@core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn wds_bp_query_option(@core.RawAddress, UInt, UInt, @core.RawAddress, @core.RawAddress) -> UInt raise @core.WindowsError
+
+pub fn wds_bp_query_option_raw(@core.RawAddress, UInt, UInt, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn wds_cli_authorize_session(@core.RawAddress, @1d9bc22f74c8d12b.WDSCLICRED_f7f525cec055?) -> Int raise @core.WindowsError
+
+pub fn wds_cli_authorize_session_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn wds_cli_cancel_transfer(@core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn wds_cli_cancel_transfer_raw(@core.RawAddress) -> Int
+
+pub fn wds_cli_close(@core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn wds_cli_close_raw(@core.RawAddress) -> Int
+
+pub fn wds_cli_create_session(@core.RawAddress, @1d9bc22f74c8d12b.WDSCLICRED_f7f525cec055?, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn wds_cli_create_session_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn wds_cli_find_first_image(@core.RawAddress, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn wds_cli_find_first_image_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn wds_cli_find_next_image(@core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn wds_cli_find_next_image_raw(@core.RawAddress) -> Int
+
+pub let wds_cli_flag_enum_filter_firmware : Int
+
+pub let wds_cli_flag_enum_filter_version : Int
+
+pub fn wds_cli_free_string_array(@strings.PWStrBuffer?) -> Int raise @core.WindowsError
+
+pub fn wds_cli_free_string_array_raw(@core.RawAddress, UInt) -> Int
+
+pub fn wds_cli_get_driver_query_xml(@core.RawAddress, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn wds_cli_get_driver_query_xml_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn wds_cli_get_enumeration_flags(@core.RawAddress, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn wds_cli_get_enumeration_flags_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn wds_cli_get_image_architecture(@core.RawAddress, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn wds_cli_get_image_architecture_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn wds_cli_get_image_description(@core.RawAddress, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn wds_cli_get_image_description_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn wds_cli_get_image_files(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn wds_cli_get_image_files_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn wds_cli_get_image_group(@core.RawAddress, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn wds_cli_get_image_group_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn wds_cli_get_image_hal_name(@core.RawAddress, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn wds_cli_get_image_hal_name_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn wds_cli_get_image_handle_from_find_handle(@core.RawAddress, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn wds_cli_get_image_handle_from_find_handle_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn wds_cli_get_image_handle_from_transfer_handle(@core.RawAddress, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn wds_cli_get_image_handle_from_transfer_handle_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn wds_cli_get_image_index(@core.RawAddress, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn wds_cli_get_image_index_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn wds_cli_get_image_language(@core.RawAddress, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn wds_cli_get_image_language_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn wds_cli_get_image_languages(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn wds_cli_get_image_languages_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn wds_cli_get_image_last_modified_time(@core.RawAddress, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn wds_cli_get_image_last_modified_time_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn wds_cli_get_image_name(@core.RawAddress, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn wds_cli_get_image_name_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn wds_cli_get_image_namespace(@core.RawAddress, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn wds_cli_get_image_namespace_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn wds_cli_get_image_parameter(@core.RawAddress, @1d9bc22f74c8d12b.WDSCLIIMAGEPARAMTYPE_ade153e5fad2, @core.RawAddress, UInt) -> Int raise @core.WindowsError
+
+pub fn wds_cli_get_image_parameter_raw(@core.RawAddress, Int, @core.RawAddress, UInt) -> Int
+
+pub fn wds_cli_get_image_path(@core.RawAddress, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn wds_cli_get_image_path_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn wds_cli_get_image_size(@core.RawAddress, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn wds_cli_get_image_size_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn wds_cli_get_image_type(@core.RawAddress, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn wds_cli_get_image_type_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn wds_cli_get_image_version(@core.RawAddress, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn wds_cli_get_image_version_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn wds_cli_get_transfer_size(@core.RawAddress, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn wds_cli_get_transfer_size_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn wds_cli_initialize_log(@core.RawAddress, @1d9bc22f74c8d12b.CPUARCHITECTURE_4e427940b1a5, @core.RawAddress, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn wds_cli_initialize_log_raw(@core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> Int
+
+pub let wds_cli_no_sparse_file : UInt
+
+pub fn wds_cli_obtain_driver_packages(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn wds_cli_obtain_driver_packages_ex(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn wds_cli_obtain_driver_packages_ex_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn wds_cli_obtain_driver_packages_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn wds_cli_register_trace(@core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn wds_cli_register_trace_raw(@core.RawAddress) -> Int
+
+pub fn wds_cli_set_transfer_buffer_size(UInt) -> Unit raise @core.WindowsError
+
+pub fn wds_cli_set_transfer_buffer_size_raw(UInt) -> Unit
+
+pub let wds_cli_transfer_asynchronous : UInt
+
+pub fn wds_cli_transfer_file(@strings.PWStr, @strings.PWStr, @strings.PWStr, @strings.PWStr, UInt, UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn wds_cli_transfer_file_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, UInt, UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn wds_cli_transfer_image(@core.RawAddress, @core.RawAddress, UInt, UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn wds_cli_transfer_image_raw(@core.RawAddress, @core.RawAddress, UInt, UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn wds_cli_wait_for_transfer(@core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn wds_cli_wait_for_transfer_raw(@core.RawAddress) -> Int
+
+pub let wds_log_level_disabled : Int
+
+pub let wds_log_level_error : Int
+
+pub let wds_log_level_info : Int
+
+pub let wds_log_level_warning : Int
+
+pub let wds_log_type_client_apply_finished : Int
+
+pub let wds_log_type_client_apply_finished_2 : Int
+
+pub let wds_log_type_client_apply_started : Int
+
+pub let wds_log_type_client_apply_started_2 : Int
+
+pub let wds_log_type_client_domainjoinerror : Int
+
+pub let wds_log_type_client_domainjoinerror_2 : Int
+
+pub let wds_log_type_client_driver_package_not_accessible : Int
+
+pub let wds_log_type_client_error : Int
+
+pub let wds_log_type_client_finished : Int
+
+pub let wds_log_type_client_generic_message : Int
+
+pub let wds_log_type_client_image_selected : Int
+
+pub let wds_log_type_client_image_selected2 : Int
+
+pub let wds_log_type_client_image_selected3 : Int
+
+pub let wds_log_type_client_max_code : Int
+
+pub let wds_log_type_client_offline_driver_injection_end : Int
+
+pub let wds_log_type_client_offline_driver_injection_failure : Int
+
+pub let wds_log_type_client_offline_driver_injection_start : Int
+
+pub let wds_log_type_client_post_actions_end : Int
+
+pub let wds_log_type_client_post_actions_start : Int
+
+pub let wds_log_type_client_started : Int
+
+pub let wds_log_type_client_transfer_downgrade : Int
+
+pub let wds_log_type_client_transfer_end : Int
+
+pub let wds_log_type_client_transfer_start : Int
+
+pub let wds_log_type_client_unattend_mode : Int
+
+pub let wds_mc_trace_error : UInt
+
+pub let wds_mc_trace_fatal : UInt
+
+pub let wds_mc_trace_info : UInt
+
+pub let wds_mc_trace_verbose : UInt
+
+pub let wds_mc_trace_warning : UInt
+
+pub fn wds_transport_client_add_ref_buffer(@core.RawAddress) -> UInt raise @core.WindowsError
+
+pub fn wds_transport_client_add_ref_buffer_raw(@core.RawAddress) -> UInt
+
+pub fn wds_transport_client_cancel_session(@core.RawAddress) -> UInt raise @core.WindowsError
+
+pub fn wds_transport_client_cancel_session_ex(@core.RawAddress, UInt) -> UInt raise @core.WindowsError
+
+pub fn wds_transport_client_cancel_session_ex_raw(@core.RawAddress, UInt) -> UInt
+
+pub fn wds_transport_client_cancel_session_raw(@core.RawAddress) -> UInt
+
+pub fn wds_transport_client_close_session(@core.RawAddress) -> UInt raise @core.WindowsError
+
+pub fn wds_transport_client_close_session_raw(@core.RawAddress) -> UInt
+
+pub fn wds_transport_client_complete_receive(@core.RawAddress, UInt, @core.RawAddress) -> UInt raise @core.WindowsError
+
+pub fn wds_transport_client_complete_receive_raw(@core.RawAddress, UInt, @core.RawAddress) -> UInt
+
+pub fn wds_transport_client_initialize() -> UInt raise @core.WindowsError
+
+pub fn wds_transport_client_initialize_raw() -> UInt
+
+pub fn wds_transport_client_initialize_session(@1d9bc22f74c8d12b.WDSTRANSPORTCLIENTREQUEST_97baa1012d4a, @core.RawAddress, @core.RawAddress) -> UInt raise @core.WindowsError
+
+pub fn wds_transport_client_initialize_session_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn wds_transport_client_query_status(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt raise @core.WindowsError
+
+pub fn wds_transport_client_query_status_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn wds_transport_client_register_callback(@core.RawAddress, @1d9bc22f74c8d12b.TRANSPORTCLIENTCALLBACKID_40d824879021, @core.RawAddress) -> UInt raise @core.WindowsError
+
+pub fn wds_transport_client_register_callback_raw(@core.RawAddress, Int, @core.RawAddress) -> UInt
+
+pub fn wds_transport_client_release_buffer(@core.RawAddress) -> UInt raise @core.WindowsError
+
+pub fn wds_transport_client_release_buffer_raw(@core.RawAddress) -> UInt
+
+pub fn wds_transport_client_shutdown() -> UInt raise @core.WindowsError
+
+pub fn wds_transport_client_shutdown_raw() -> UInt
+
+pub fn wds_transport_client_start_session(@core.RawAddress) -> UInt raise @core.WindowsError
+
+pub fn wds_transport_client_start_session_raw(@core.RawAddress) -> UInt
+
+pub fn wds_transport_client_wait_for_completion(@core.RawAddress, UInt) -> UInt raise @core.WindowsError
+
+pub fn wds_transport_client_wait_for_completion_raw(@core.RawAddress, UInt) -> UInt
+
+pub fn wds_transport_server_allocate_buffer(@core.RawAddress, UInt) -> @core.RawAddress raise @core.WindowsError
+
+pub fn wds_transport_server_allocate_buffer_raw(@core.RawAddress, UInt) -> @core.RawAddress
+
+pub fn wds_transport_server_complete_read(@core.RawAddress, UInt, @core.RawAddress, Int) -> Int raise @core.WindowsError
+
+pub fn wds_transport_server_complete_read_raw(@core.RawAddress, UInt, @core.RawAddress, Int) -> Int
+
+pub fn wds_transport_server_free_buffer(@core.RawAddress, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn wds_transport_server_free_buffer_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn wds_transport_server_register_callback(@core.RawAddress, @1d9bc22f74c8d12b.TRANSPORTPROVIDERCALLBACKID_64c41c63c135, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn wds_transport_server_register_callback_raw(@core.RawAddress, Int, @core.RawAddress) -> Int
+
+pub fn wds_transport_server_trace_v(@core.RawAddress, UInt, @strings.PWStr, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn wds_transport_server_trace_v_raw(@core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> Int
+
+pub let wds_transportclient_current_api_version : UInt
+
+pub let wds_transportclient_no_cache : UInt
+
+pub let wds_transportclient_protocol_multicast : UInt
+
+pub let wds_transportclient_status_failure : UInt
+
+pub let wds_transportclient_status_in_progress : UInt
+
+pub let wds_transportclient_status_success : UInt
+
+pub let wdsbp_opt_type_byte : UInt
+
+pub let wdsbp_opt_type_ip4 : UInt
+
+pub let wdsbp_opt_type_ip6 : UInt
+
+pub let wdsbp_opt_type_none : UInt
+
+pub let wdsbp_opt_type_str : UInt
+
+pub let wdsbp_opt_type_ulong : UInt
+
+pub let wdsbp_opt_type_ushort : UInt
+
+pub let wdsbp_opt_type_wstr : UInt
+
+pub let wdsbp_optval_action_abort : UInt
+
+pub let wdsbp_optval_action_approval : UInt
+
+pub let wdsbp_optval_action_referral : UInt
+
+pub let wdsbp_optval_nbp_ver_7 : UInt
+
+pub let wdsbp_optval_nbp_ver_8 : UInt
+
+pub let wdsbp_optval_pxe_prompt_noprompt : UInt
+
+pub let wdsbp_optval_pxe_prompt_optin : UInt
+
+pub let wdsbp_optval_pxe_prompt_optout : UInt
+
+pub let wdsbp_pk_type_bcd : UInt
+
+pub let wdsbp_pk_type_dhcp : UInt
+
+pub let wdsbp_pk_type_dhcpv6 : UInt
+
+pub let wdsbp_pk_type_wdsnbp : UInt
+
+pub let wdsmcclient_category : Int
+
+pub let wdsmcs_e_client_doesnot_support_security_mode : Int
+
+pub let wdsmcs_e_client_not_found : Int
+
+pub let wdsmcs_e_content_not_found : Int
+
+pub let wdsmcs_e_content_provider_not_found : Int
+
+pub let wdsmcs_e_incompatible_version : Int
+
+pub let wdsmcs_e_namespace_already_exists : Int
+
+pub let wdsmcs_e_namespace_already_started : Int
+
+pub let wdsmcs_e_namespace_not_found : Int
+
+pub let wdsmcs_e_namespace_shutdown_in_progress : Int
+
+pub let wdsmcs_e_ns_start_failed_no_clients : Int
+
+pub let wdsmcs_e_packet_has_security : Int
+
+pub let wdsmcs_e_packet_not_checksumed : Int
+
+pub let wdsmcs_e_packet_not_hashed : Int
+
+pub let wdsmcs_e_packet_not_signed : Int
+
+pub let wdsmcs_e_reqcallbacks_not_reg : Int
+
+pub let wdsmcs_e_session_shutdown_in_progress : Int
+
+pub let wdsmcs_e_start_time_in_past : Int
+
+pub let wdsmcserver_category : Int
+
+pub let wdstpc_e_already_completed : Int
+
+pub let wdstpc_e_already_in_lowest_session : Int
+
+pub let wdstpc_e_already_in_progress : Int
+
+pub let wdstpc_e_callbacks_not_reg : Int
+
+pub let wdstpc_e_client_demote_not_supported : Int
+
+pub let wdstpc_e_kicked_fail : Int
+
+pub let wdstpc_e_kicked_fallback : Int
+
+pub let wdstpc_e_kicked_policy_not_met : Int
+
+pub let wdstpc_e_kicked_unknown : Int
+
+pub let wdstpc_e_multistream_not_enabled : Int
+
+pub let wdstpc_e_no_ip4_interface : Int
+
+pub let wdstpc_e_not_initialized : Int
+
+pub let wdstpc_e_unknown_error : Int
+
+pub let wdstptc_e_wim_apply_requires_reference_image : Int
+
+pub let wdstptmgmt_category : Int
+
+pub let wdstptmgmt_e_cannot_refresh_dirty_object : Int
+
+pub let wdstptmgmt_e_cannot_reinitialize_object : Int
+
+pub let wdstptmgmt_e_content_provider_already_registered : Int
+
+pub let wdstptmgmt_e_content_provider_not_registered : Int
+
+pub let wdstptmgmt_e_invalid_auto_disconnect_threshold : Int
+
+pub let wdstptmgmt_e_invalid_class : Int
+
+pub let wdstptmgmt_e_invalid_content_provider_name : Int
+
+pub let wdstptmgmt_e_invalid_diagnostics_components : Int
+
+pub let wdstptmgmt_e_invalid_ip_address : Int
+
+pub let wdstptmgmt_e_invalid_ipv4_multicast_address : Int
+
+pub let wdstptmgmt_e_invalid_ipv6_multicast_address : Int
+
+pub let wdstptmgmt_e_invalid_ipv6_multicast_address_source : Int
+
+pub let wdstptmgmt_e_invalid_multistream_stream_count : Int
+
+pub let wdstptmgmt_e_invalid_namespace_data : Int
+
+pub let wdstptmgmt_e_invalid_namespace_name : Int
+
+pub let wdstptmgmt_e_invalid_namespace_start_parameters : Int
+
+pub let wdstptmgmt_e_invalid_namespace_start_time : Int
+
+pub let wdstptmgmt_e_invalid_operation : Int
+
+pub let wdstptmgmt_e_invalid_property : Int
+
+pub let wdstptmgmt_e_invalid_service_ip_address_range : Int
+
+pub let wdstptmgmt_e_invalid_service_port_range : Int
+
+pub let wdstptmgmt_e_invalid_slow_client_handling_type : Int
+
+pub let wdstptmgmt_e_invalid_tftp_max_blocksize : Int
+
+pub let wdstptmgmt_e_ipv6_not_supported : Int
+
+pub let wdstptmgmt_e_multicast_session_policy_not_supported : Int
+
+pub let wdstptmgmt_e_namespace_already_registered : Int
+
+pub let wdstptmgmt_e_namespace_not_on_server : Int
+
+pub let wdstptmgmt_e_namespace_not_registered : Int
+
+pub let wdstptmgmt_e_namespace_read_only : Int
+
+pub let wdstptmgmt_e_namespace_removed_from_server : Int
+
+pub let wdstptmgmt_e_network_profiles_not_supported : Int
+
+pub let wdstptmgmt_e_tftp_max_blocksize_not_supported : Int
+
+pub let wdstptmgmt_e_tftp_var_window_not_supported : Int
+
+pub let wdstptmgmt_e_transport_server_role_not_configured : Int
+
+pub let wdstptmgmt_e_transport_server_unavailable : Int
+
+pub let wdstptmgmt_e_udp_port_policy_not_supported : Int
+
+pub let wdstransport_resource_utilization_unknown : UInt
+
+// Errors
+
+// Types and methods
+
+// Type aliases
+pub using @1d9bc22f74c8d12b {type CPUARCHITECTURE_4e427940b1a5 as CPUARCHITECTURE}
+
+pub using @1d9bc22f74c8d12b {type IWdsTransportCacheable_ba331ec11074 as IWdsTransportCacheable}
+
+pub using @1d9bc22f74c8d12b {type IWdsTransportClient_60c35bcae0ea as IWdsTransportClient}
+
+pub using @1d9bc22f74c8d12b {type IWdsTransportCollection_1a796236d301 as IWdsTransportCollection}
+
+pub using @1d9bc22f74c8d12b {type IWdsTransportConfigurationManager_8d773beb2c7d as IWdsTransportConfigurationManager}
+
+pub using @1d9bc22f74c8d12b {type IWdsTransportConfigurationManager2_d2360cf6240a as IWdsTransportConfigurationManager2}
+
+pub using @1d9bc22f74c8d12b {type IWdsTransportContent_325f491cc987 as IWdsTransportContent}
+
+pub using @1d9bc22f74c8d12b {type IWdsTransportContentProvider_30ce9c8afccd as IWdsTransportContentProvider}
+
+pub using @1d9bc22f74c8d12b {type IWdsTransportDiagnosticsPolicy_f4f1b2b7dedc as IWdsTransportDiagnosticsPolicy}
+
+pub using @1d9bc22f74c8d12b {type IWdsTransportManager_7e5fc71812a5 as IWdsTransportManager}
+
+pub using @1d9bc22f74c8d12b {type IWdsTransportMulticastSessionPolicy_db7c25444586 as IWdsTransportMulticastSessionPolicy}
+
+pub using @1d9bc22f74c8d12b {type IWdsTransportNamespace_ffb635ec4ec4 as IWdsTransportNamespace}
+
+pub using @1d9bc22f74c8d12b {type IWdsTransportNamespaceAutoCast_0b9b90a85423 as IWdsTransportNamespaceAutoCast}
+
+pub using @1d9bc22f74c8d12b {type IWdsTransportNamespaceManager_91b34888ef99 as IWdsTransportNamespaceManager}
+
+pub using @1d9bc22f74c8d12b {type IWdsTransportNamespaceScheduledCast_bf03c494a7c1 as IWdsTransportNamespaceScheduledCast}
+
+pub using @1d9bc22f74c8d12b {type IWdsTransportNamespaceScheduledCastAutoStart_61200e98b585 as IWdsTransportNamespaceScheduledCastAutoStart}
+
+pub using @1d9bc22f74c8d12b {type IWdsTransportNamespaceScheduledCastManualStart_b3eab1708629 as IWdsTransportNamespaceScheduledCastManualStart}
+
+pub using @1d9bc22f74c8d12b {type IWdsTransportServer_00cfaa7f1598 as IWdsTransportServer}
+
+pub using @1d9bc22f74c8d12b {type IWdsTransportServer2_d9484e5d52e6 as IWdsTransportServer2}
+
+pub using @1d9bc22f74c8d12b {type IWdsTransportServicePolicy_73b75ab53924 as IWdsTransportServicePolicy}
+
+pub using @1d9bc22f74c8d12b {type IWdsTransportServicePolicy2_de53e70f1dc7 as IWdsTransportServicePolicy2}
+
+pub using @1d9bc22f74c8d12b {type IWdsTransportSession_48d47376ffd5 as IWdsTransportSession}
+
+pub using @1d9bc22f74c8d12b {type IWdsTransportSetupManager_c9a157731ff7 as IWdsTransportSetupManager}
+
+pub using @1d9bc22f74c8d12b {type IWdsTransportSetupManager2_b96db0baccad as IWdsTransportSetupManager2}
+
+pub using @1d9bc22f74c8d12b {type IWdsTransportTftpClient_9c1fb7e68b85 as IWdsTransportTftpClient}
+
+pub using @1d9bc22f74c8d12b {type IWdsTransportTftpManager_4c018b3a50c0 as IWdsTransportTftpManager}
+
+pub using @1d9bc22f74c8d12b {type PFNWDSCLICALLBACKMESSAGEID_5b137bb971cd as PFNWDSCLICALLBACKMESSAGEID}
+
+pub using @1d9bc22f74c8d12b {type PFNWdsCliCallback_8ab3c2969835 as PFNWdsCliCallback}
+
+pub using @1d9bc22f74c8d12b {type PFNWdsCliTraceFunction_fedbbe169165 as PFNWdsCliTraceFunction}
+
+pub using @1d9bc22f74c8d12b {type PFNWdsTransportClientReceiveContents_a13c191b08da as PFNWdsTransportClientReceiveContents}
+
+pub using @1d9bc22f74c8d12b {type PFNWdsTransportClientReceiveMetadata_ce0a72357a6b as PFNWdsTransportClientReceiveMetadata}
+
+pub using @1d9bc22f74c8d12b {type PFNWdsTransportClientSessionComplete_cc8c629e3b09 as PFNWdsTransportClientSessionComplete}
+
+pub using @1d9bc22f74c8d12b {type PFNWdsTransportClientSessionNegotiate_8f6646949eb9 as PFNWdsTransportClientSessionNegotiate}
+
+pub using @1d9bc22f74c8d12b {type PFNWdsTransportClientSessionStart_5713159cbcbb as PFNWdsTransportClientSessionStart}
+
+pub using @1d9bc22f74c8d12b {type PFNWdsTransportClientSessionStartEx_ea8a8b85feee as PFNWdsTransportClientSessionStartEx}
+
+pub using @1d9bc22f74c8d12b {type PXEADDRESS_1ccb88de60c3 as PXEADDRESS}
+
+pub using @1d9bc22f74c8d12b {type PXEADDRESSAnonymousEUnion_7fc247c5cefa as PXEADDRESSAnonymousEUnion}
+
+pub using @1d9bc22f74c8d12b {type PXEDHCPMESSAGE_d453fe43f638 as PXEDHCPMESSAGE}
+
+pub using @1d9bc22f74c8d12b {type PXEDHCPMESSAGEAnonymousEUnion_19eb1b93cb1a as PXEDHCPMESSAGEAnonymousEUnion}
+
+pub using @1d9bc22f74c8d12b {type PXEDHCPOPTION_5e3242f42edb as PXEDHCPOPTION}
+
+pub using @1d9bc22f74c8d12b {type PXEDHCPV6MESSAGE_da57fc2ae74d as PXEDHCPV6MESSAGE}
+
+pub using @1d9bc22f74c8d12b {type PXEDHCPV6MESSAGEHEADER_77f7426ecc9b as PXEDHCPV6MESSAGEHEADER}
+
+pub using @1d9bc22f74c8d12b {type PXEDHCPV6NESTEDRELAYMESSAGE_819eacaac655 as PXEDHCPV6NESTEDRELAYMESSAGE}
+
+pub using @1d9bc22f74c8d12b {type PXEDHCPV6OPTION_c7e3cd3a32f1 as PXEDHCPV6OPTION}
+
+pub using @1d9bc22f74c8d12b {type PXEDHCPV6RELAYMESSAGE_b284d7ac9f17 as PXEDHCPV6RELAYMESSAGE}
+
+pub using @1d9bc22f74c8d12b {type PXEPROVIDER_61345c90ed5f as PXEPROVIDER}
+
+pub using @1d9bc22f74c8d12b {type TRANSPORTCLIENTCALLBACKID_40d824879021 as TRANSPORTCLIENTCALLBACKID}
+
+pub using @1d9bc22f74c8d12b {type TRANSPORTCLIENTSESSIONINFO_7750792767b4 as TRANSPORTCLIENTSESSIONINFO}
+
+pub using @1d9bc22f74c8d12b {type TRANSPORTPROVIDERCALLBACKID_64c41c63c135 as TRANSPORTPROVIDERCALLBACKID}
+
+pub using @1d9bc22f74c8d12b {type WDSCLICRED_f7f525cec055 as WDSCLICRED}
+
+pub using @1d9bc22f74c8d12b {type WDSCLIFIRMWARETYPE_b7216a7d7838 as WDSCLIFIRMWARETYPE}
+
+pub using @1d9bc22f74c8d12b {type WDSCLIIMAGEPARAMTYPE_ade153e5fad2 as WDSCLIIMAGEPARAMTYPE}
+
+pub using @1d9bc22f74c8d12b {type WDSCLIIMAGETYPE_cccc8f16a409 as WDSCLIIMAGETYPE}
+
+pub using @1d9bc22f74c8d12b {type WDSTRANSPORTCLIENTCALLBACKS_2ac66359ced6 as WDSTRANSPORTCLIENTCALLBACKS}
+
+pub using @1d9bc22f74c8d12b {type WDSTRANSPORTCLIENTREQUEST_97baa1012d4a as WDSTRANSPORTCLIENTREQUEST}
+
+pub using @1d9bc22f74c8d12b {type WDSTRANSPORTCLIENTREQUESTAUTHLEVEL_6aabc33d863d as WDSTRANSPORTCLIENTREQUESTAUTHLEVEL}
+
+pub using @1d9bc22f74c8d12b {type WDSTRANSPORTDIAGNOSTICSCOMPONENTFLAGS_40f7f8848b4f as WDSTRANSPORTDIAGNOSTICSCOMPONENTFLAGS}
+
+pub using @1d9bc22f74c8d12b {type WDSTRANSPORTDISCONNECTTYPE_754cd4db3459 as WDSTRANSPORTDISCONNECTTYPE}
+
+pub using @1d9bc22f74c8d12b {type WDSTRANSPORTFEATUREFLAGS_e1a7c8189a31 as WDSTRANSPORTFEATUREFLAGS}
+
+pub using @1d9bc22f74c8d12b {type WDSTRANSPORTIPADDRESSSOURCETYPE_ed7a077fae14 as WDSTRANSPORTIPADDRESSSOURCETYPE}
+
+pub using @1d9bc22f74c8d12b {type WDSTRANSPORTIPADDRESSTYPE_9b6085524b91 as WDSTRANSPORTIPADDRESSTYPE}
+
+pub using @1d9bc22f74c8d12b {type WDSTRANSPORTNAMESPACETYPE_e154c0f6b00f as WDSTRANSPORTNAMESPACETYPE}
+
+pub using @1d9bc22f74c8d12b {type WDSTRANSPORTNETWORKPROFILETYPE_c18efcde08b0 as WDSTRANSPORTNETWORKPROFILETYPE}
+
+pub using @1d9bc22f74c8d12b {type WDSTRANSPORTPROTOCOLFLAGS_b457344e63a9 as WDSTRANSPORTPROTOCOLFLAGS}
+
+pub using @1d9bc22f74c8d12b {type WDSTRANSPORTPROVIDERINITPARAMS_633cfc2326bc as WDSTRANSPORTPROVIDERINITPARAMS}
+
+pub using @1d9bc22f74c8d12b {type WDSTRANSPORTPROVIDERSETTINGS_566608f93b94 as WDSTRANSPORTPROVIDERSETTINGS}
+
+pub using @1d9bc22f74c8d12b {type WDSTRANSPORTSERVICENOTIFICATION_73f3f1d25b73 as WDSTRANSPORTSERVICENOTIFICATION}
+
+pub using @1d9bc22f74c8d12b {type WDSTRANSPORTSLOWCLIENTHANDLINGTYPE_c504c882da09 as WDSTRANSPORTSLOWCLIENTHANDLINGTYPE}
+
+pub using @1d9bc22f74c8d12b {type WDSTRANSPORTTFTPCAPABILITY_eb513a563d65 as WDSTRANSPORTTFTPCAPABILITY}
+
+pub using @1d9bc22f74c8d12b {type WDSTRANSPORTUDPPORTPOLICY_4f004ddf4563 as WDSTRANSPORTUDPPORTPOLICY}
+
+pub using @1d9bc22f74c8d12b {type WdsTransportCacheable_c28381ddb4a8 as WdsTransportCacheable}
+
+pub using @1d9bc22f74c8d12b {type WdsTransportClient_c447f1bd6d88 as WdsTransportClient}
+
+pub using @1d9bc22f74c8d12b {type WdsTransportCollection_b45b06ae7d8b as WdsTransportCollection}
+
+pub using @1d9bc22f74c8d12b {type WdsTransportConfigurationManager_deb9098c4a15 as WdsTransportConfigurationManager}
+
+pub using @1d9bc22f74c8d12b {type WdsTransportContent_67e19a752b20 as WdsTransportContent}
+
+pub using @1d9bc22f74c8d12b {type WdsTransportContentProvider_c6aec275bc18 as WdsTransportContentProvider}
+
+pub using @1d9bc22f74c8d12b {type WdsTransportDiagnosticsPolicy_b324a4d0ec86 as WdsTransportDiagnosticsPolicy}
+
+pub using @1d9bc22f74c8d12b {type WdsTransportManager_4e9759ecbfce as WdsTransportManager}
+
+pub using @1d9bc22f74c8d12b {type WdsTransportMulticastSessionPolicy_792eb1b93222 as WdsTransportMulticastSessionPolicy}
+
+pub using @1d9bc22f74c8d12b {type WdsTransportNamespace_b9fa6f5d66b8 as WdsTransportNamespace}
+
+pub using @1d9bc22f74c8d12b {type WdsTransportNamespaceAutoCast_6a9564d54af0 as WdsTransportNamespaceAutoCast}
+
+pub using @1d9bc22f74c8d12b {type WdsTransportNamespaceManager_6579cac632ff as WdsTransportNamespaceManager}
+
+pub using @1d9bc22f74c8d12b {type WdsTransportNamespaceScheduledCast_3c267660e756 as WdsTransportNamespaceScheduledCast}
+
+pub using @1d9bc22f74c8d12b {type WdsTransportNamespaceScheduledCastAutoStart_3e55194f09cf as WdsTransportNamespaceScheduledCastAutoStart}
+
+pub using @1d9bc22f74c8d12b {type WdsTransportNamespaceScheduledCastManualStart_1a626f75d105 as WdsTransportNamespaceScheduledCastManualStart}
+
+pub using @1d9bc22f74c8d12b {type WdsTransportServer_ef224883eccf as WdsTransportServer}
+
+pub using @1d9bc22f74c8d12b {type WdsTransportServicePolicy_77a8a33a80d6 as WdsTransportServicePolicy}
+
+pub using @1d9bc22f74c8d12b {type WdsTransportSession_469664d2ad55 as WdsTransportSession}
+
+pub using @1d9bc22f74c8d12b {type WdsTransportSetupManager_136943cadeb7 as WdsTransportSetupManager}
+
+pub using @1d9bc22f74c8d12b {type WdsTransportTftpClient_419753838d4c as WdsTransportTftpClient}
+
+pub using @1d9bc22f74c8d12b {type WdsTransportTftpManager_d412677e8c50 as WdsTransportTftpManager}
+
+// Traits

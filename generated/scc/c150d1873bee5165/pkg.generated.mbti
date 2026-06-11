@@ -1,0 +1,316 @@
+// Generated using `moon info`, DON'T EDIT IT
+package "moonbit-community/win32api/scc/c150d1873bee5165"
+
+import {
+  "moonbit-community/win32api/runtime/core",
+  "moonbit-community/win32api/scc/7ca9e13be49370eb",
+  "moonbit-community/win32api/scc/b785b16e0a6d57ad",
+  "moonbitlang/core/debug",
+}
+
+// Values
+pub let wnv_api_major_version_1_ad0658a6f3d7 : UInt
+
+pub let wnv_api_minor_version_0_f0ac6067f7f7 : UInt
+
+pub let wnv_customer_address_added_c2ca4382874f : Int
+
+pub let wnv_customer_address_deleted_c7edf3ef7729 : Int
+
+pub let wnv_customer_address_max_87355491e9d4 : Int
+
+pub let wnv_customer_address_moved_e9ec20e00c55 : Int
+
+pub let wnv_customer_address_type_2e0d4d9a3f5d : Int
+
+pub let wnv_notification_type_max_5b3edbf9edc7 : Int
+
+pub let wnv_object_change_type_233641ccc551 : Int
+
+pub let wnv_object_type_max_d4d2319611d7 : Int
+
+pub fn wnv_open_3f021bd90225() -> @core.RawAddress raise @core.WindowsError
+
+pub fn wnv_open_3f021bd90225_raw() -> @core.RawAddress
+
+pub let wnv_policy_mismatch_type_7f3db909996c : Int
+
+pub let wnv_provider_address_type_7fe13d7a281b : Int
+
+pub let wnv_redirect_type_8c1c161a2d6f : Int
+
+pub fn wnv_request_notification_7352be752cae(@core.RawAddress, WNVNOTIFICATIONPARAM_b84de145e271, @b785b16e0a6d57ad.OVERLAPPED_ed44d4ed4c15, @core.RawAddress) -> UInt raise @core.WindowsError
+
+pub fn wnv_request_notification_7352be752cae_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub let wnvcustomeraddresschangeparam_930327185983_alignment : Int
+
+pub let wnvcustomeraddresschangeparam_930327185983_size : Int
+
+pub let wnvipaddress_72e6867c9da2_alignment : Int
+
+pub let wnvipaddress_72e6867c9da2_size : Int
+
+pub let wnvipaddressipe_union_587368fb2022_alignment : Int
+
+pub let wnvipaddressipe_union_587368fb2022_size : Int
+
+pub let wnvnotificationparam_b84de145e271_alignment : Int
+
+pub let wnvnotificationparam_b84de145e271_size : Int
+
+pub let wnvobjectchangeparam_1ae74598454e_alignment : Int
+
+pub let wnvobjectchangeparam_1ae74598454e_size : Int
+
+pub let wnvobjectchangeparam_object_param_e_union_cee20cc95197_alignment : Int
+
+pub let wnvobjectchangeparam_object_param_e_union_cee20cc95197_size : Int
+
+pub let wnvobjectheader_1b42157db88f_alignment : Int
+
+pub let wnvobjectheader_1b42157db88f_size : Int
+
+pub let wnvpolicymismatchparam_76a73420de22_alignment : Int
+
+pub let wnvpolicymismatchparam_76a73420de22_size : Int
+
+pub let wnvprovideraddresschangeparam_30509b3a550d_alignment : Int
+
+pub let wnvprovideraddresschangeparam_30509b3a550d_size : Int
+
+pub let wnvredirectparam_d9e06a285518_alignment : Int
+
+pub let wnvredirectparam_d9e06a285518_size : Int
+
+// Errors
+
+// Types and methods
+pub(all) struct WNVCANOTIFICATIONTYPE_c9a3176952b1(Int) derive(Compare, Eq, @debug.Debug)
+pub fn WNVCANOTIFICATIONTYPE_c9a3176952b1::from_int(Int) -> Self
+pub fn WNVCANOTIFICATIONTYPE_c9a3176952b1::to_int(Self) -> Int
+pub fn WNVCANOTIFICATIONTYPE_c9a3176952b1::wnv_customer_address_added() -> Self
+pub fn WNVCANOTIFICATIONTYPE_c9a3176952b1::wnv_customer_address_deleted() -> Self
+pub fn WNVCANOTIFICATIONTYPE_c9a3176952b1::wnv_customer_address_max() -> Self
+pub fn WNVCANOTIFICATIONTYPE_c9a3176952b1::wnv_customer_address_moved() -> Self
+
+pub(all) struct WNVCUSTOMERADDRESSCHANGEPARAM_930327185983 {
+  raw_buffer : @core.NativeBuffer
+}
+pub fn WNVCUSTOMERADDRESSCHANGEPARAM_930327185983::abi_alignment() -> Int
+pub fn WNVCUSTOMERADDRESSCHANGEPARAM_930327185983::abi_size() -> Int
+pub fn WNVCUSTOMERADDRESSCHANGEPARAM_930327185983::bytes(Self) -> Bytes raise @core.WindowsError
+pub fn WNVCUSTOMERADDRESSCHANGEPARAM_930327185983::ca(Self) -> WNVIPADDRESS_72e6867c9da2 raise @core.WindowsError
+pub fn WNVCUSTOMERADDRESSCHANGEPARAM_930327185983::ca_family(Self) -> @7ca9e13be49370eb.ADDRESSFAMILY_7c193873d185 raise @core.WindowsError
+pub fn WNVCUSTOMERADDRESSCHANGEPARAM_930327185983::from_bytes(Bytes) -> Self raise @core.WindowsError
+pub fn WNVCUSTOMERADDRESSCHANGEPARAM_930327185983::mac_address(Self) -> @7ca9e13be49370eb.DLEUI48_c73fd4317985 raise @core.WindowsError
+pub fn WNVCUSTOMERADDRESSCHANGEPARAM_930327185983::new() -> Self raise @core.WindowsError
+pub fn WNVCUSTOMERADDRESSCHANGEPARAM_930327185983::notification_reason(Self) -> WNVCANOTIFICATIONTYPE_c9a3176952b1 raise @core.WindowsError
+pub fn WNVCUSTOMERADDRESSCHANGEPARAM_930327185983::pa(Self) -> WNVIPADDRESS_72e6867c9da2 raise @core.WindowsError
+pub fn WNVCUSTOMERADDRESSCHANGEPARAM_930327185983::pa_family(Self) -> @7ca9e13be49370eb.ADDRESSFAMILY_7c193873d185 raise @core.WindowsError
+pub fn WNVCUSTOMERADDRESSCHANGEPARAM_930327185983::raw_address(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn WNVCUSTOMERADDRESSCHANGEPARAM_930327185983::set_ca(Self, WNVIPADDRESS_72e6867c9da2) -> Unit raise @core.WindowsError
+pub fn WNVCUSTOMERADDRESSCHANGEPARAM_930327185983::set_ca_family(Self, @7ca9e13be49370eb.ADDRESSFAMILY_7c193873d185) -> Unit raise @core.WindowsError
+pub fn WNVCUSTOMERADDRESSCHANGEPARAM_930327185983::set_mac_address(Self, @7ca9e13be49370eb.DLEUI48_c73fd4317985) -> Unit raise @core.WindowsError
+pub fn WNVCUSTOMERADDRESSCHANGEPARAM_930327185983::set_notification_reason(Self, WNVCANOTIFICATIONTYPE_c9a3176952b1) -> Unit raise @core.WindowsError
+pub fn WNVCUSTOMERADDRESSCHANGEPARAM_930327185983::set_pa(Self, WNVIPADDRESS_72e6867c9da2) -> Unit raise @core.WindowsError
+pub fn WNVCUSTOMERADDRESSCHANGEPARAM_930327185983::set_pa_family(Self, @7ca9e13be49370eb.ADDRESSFAMILY_7c193873d185) -> Unit raise @core.WindowsError
+pub fn WNVCUSTOMERADDRESSCHANGEPARAM_930327185983::set_virtual_subnet_id(Self, UInt) -> Unit raise @core.WindowsError
+pub fn WNVCUSTOMERADDRESSCHANGEPARAM_930327185983::virtual_subnet_id(Self) -> UInt raise @core.WindowsError
+pub fn[T] WNVCUSTOMERADDRESSCHANGEPARAM_930327185983::with_raw_address(Self, (@core.RawAddress) -> T raise?) -> T raise
+pub impl Eq for WNVCUSTOMERADDRESSCHANGEPARAM_930327185983
+pub impl @debug.Debug for WNVCUSTOMERADDRESSCHANGEPARAM_930327185983
+
+pub(all) struct WNVIPADDRESSIPEUnion_587368fb2022 {
+  raw_buffer : @core.NativeBuffer
+}
+pub fn WNVIPADDRESSIPEUnion_587368fb2022::abi_alignment() -> Int
+pub fn WNVIPADDRESSIPEUnion_587368fb2022::abi_size() -> Int
+pub fn WNVIPADDRESSIPEUnion_587368fb2022::bytes(Self) -> Bytes raise @core.WindowsError
+pub fn WNVIPADDRESSIPEUnion_587368fb2022::from_bytes(Bytes) -> Self raise @core.WindowsError
+pub fn WNVIPADDRESSIPEUnion_587368fb2022::new() -> Self raise @core.WindowsError
+pub fn WNVIPADDRESSIPEUnion_587368fb2022::raw_address(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn WNVIPADDRESSIPEUnion_587368fb2022::set_v4(Self, @7ca9e13be49370eb.INADDR_dda43a0404cc) -> Unit raise @core.WindowsError
+pub fn WNVIPADDRESSIPEUnion_587368fb2022::set_v6(Self, @7ca9e13be49370eb.IN6ADDR_7ccd3ff45e6a) -> Unit raise @core.WindowsError
+pub fn WNVIPADDRESSIPEUnion_587368fb2022::v4(Self) -> @7ca9e13be49370eb.INADDR_dda43a0404cc raise @core.WindowsError
+pub fn WNVIPADDRESSIPEUnion_587368fb2022::v6(Self) -> @7ca9e13be49370eb.IN6ADDR_7ccd3ff45e6a raise @core.WindowsError
+pub fn[T] WNVIPADDRESSIPEUnion_587368fb2022::with_raw_address(Self, (@core.RawAddress) -> T raise?) -> T raise
+pub impl Eq for WNVIPADDRESSIPEUnion_587368fb2022
+pub impl @debug.Debug for WNVIPADDRESSIPEUnion_587368fb2022
+
+pub(all) struct WNVIPADDRESS_72e6867c9da2 {
+  raw_buffer : @core.NativeBuffer
+}
+pub fn WNVIPADDRESS_72e6867c9da2::abi_alignment() -> Int
+pub fn WNVIPADDRESS_72e6867c9da2::abi_size() -> Int
+pub fn WNVIPADDRESS_72e6867c9da2::bytes(Self) -> Bytes raise @core.WindowsError
+pub fn WNVIPADDRESS_72e6867c9da2::from_bytes(Bytes) -> Self raise @core.WindowsError
+pub fn WNVIPADDRESS_72e6867c9da2::ip(Self) -> WNVIPADDRESSIPEUnion_587368fb2022 raise @core.WindowsError
+pub fn WNVIPADDRESS_72e6867c9da2::new() -> Self raise @core.WindowsError
+pub fn WNVIPADDRESS_72e6867c9da2::raw_address(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn WNVIPADDRESS_72e6867c9da2::set_ip(Self, WNVIPADDRESSIPEUnion_587368fb2022) -> Unit raise @core.WindowsError
+pub fn[T] WNVIPADDRESS_72e6867c9da2::with_raw_address(Self, (@core.RawAddress) -> T raise?) -> T raise
+pub impl Eq for WNVIPADDRESS_72e6867c9da2
+pub impl @debug.Debug for WNVIPADDRESS_72e6867c9da2
+
+pub(all) struct WNVNOTIFICATIONPARAM_b84de145e271 {
+  raw_buffer : @core.NativeBuffer
+}
+pub fn WNVNOTIFICATIONPARAM_b84de145e271::abi_alignment() -> Int
+pub fn WNVNOTIFICATIONPARAM_b84de145e271::abi_size() -> Int
+pub fn WNVNOTIFICATIONPARAM_b84de145e271::buffer_raw(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn WNVNOTIFICATIONPARAM_b84de145e271::bytes(Self) -> Bytes raise @core.WindowsError
+pub fn WNVNOTIFICATIONPARAM_b84de145e271::from_bytes(Bytes) -> Self raise @core.WindowsError
+pub fn WNVNOTIFICATIONPARAM_b84de145e271::header(Self) -> WNVOBJECTHEADER_1b42157db88f raise @core.WindowsError
+pub fn WNVNOTIFICATIONPARAM_b84de145e271::new() -> Self raise @core.WindowsError
+pub fn WNVNOTIFICATIONPARAM_b84de145e271::notification_type(Self) -> WNVNOTIFICATIONTYPE_a764596ec788 raise @core.WindowsError
+pub fn WNVNOTIFICATIONPARAM_b84de145e271::pending_notifications(Self) -> UInt raise @core.WindowsError
+pub fn WNVNOTIFICATIONPARAM_b84de145e271::raw_address(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn WNVNOTIFICATIONPARAM_b84de145e271::set_buffer_raw(Self, @core.RawAddress) -> Unit raise @core.WindowsError
+pub fn WNVNOTIFICATIONPARAM_b84de145e271::set_header(Self, WNVOBJECTHEADER_1b42157db88f) -> Unit raise @core.WindowsError
+pub fn WNVNOTIFICATIONPARAM_b84de145e271::set_notification_type(Self, WNVNOTIFICATIONTYPE_a764596ec788) -> Unit raise @core.WindowsError
+pub fn WNVNOTIFICATIONPARAM_b84de145e271::set_pending_notifications(Self, UInt) -> Unit raise @core.WindowsError
+pub fn[T] WNVNOTIFICATIONPARAM_b84de145e271::with_raw_address(Self, (@core.RawAddress) -> T raise?) -> T raise
+pub impl Eq for WNVNOTIFICATIONPARAM_b84de145e271
+pub impl @debug.Debug for WNVNOTIFICATIONPARAM_b84de145e271
+
+pub(all) struct WNVNOTIFICATIONTYPE_a764596ec788(Int) derive(Compare, Eq, @debug.Debug)
+pub fn WNVNOTIFICATIONTYPE_a764596ec788::from_int(Int) -> Self
+pub fn WNVNOTIFICATIONTYPE_a764596ec788::max() -> Self
+pub fn WNVNOTIFICATIONTYPE_a764596ec788::to_int(Self) -> Int
+pub fn WNVNOTIFICATIONTYPE_a764596ec788::wnv_object_change_type() -> Self
+pub fn WNVNOTIFICATIONTYPE_a764596ec788::wnv_policy_mismatch_type() -> Self
+pub fn WNVNOTIFICATIONTYPE_a764596ec788::wnv_redirect_type() -> Self
+
+pub(all) struct WNVOBJECTCHANGEPARAMObjectParamEUnion_cee20cc95197 {
+  raw_buffer : @core.NativeBuffer
+}
+pub fn WNVOBJECTCHANGEPARAMObjectParamEUnion_cee20cc95197::abi_alignment() -> Int
+pub fn WNVOBJECTCHANGEPARAMObjectParamEUnion_cee20cc95197::abi_size() -> Int
+pub fn WNVOBJECTCHANGEPARAMObjectParamEUnion_cee20cc95197::bytes(Self) -> Bytes raise @core.WindowsError
+pub fn WNVOBJECTCHANGEPARAMObjectParamEUnion_cee20cc95197::customer_address_change(Self) -> WNVCUSTOMERADDRESSCHANGEPARAM_930327185983 raise @core.WindowsError
+pub fn WNVOBJECTCHANGEPARAMObjectParamEUnion_cee20cc95197::from_bytes(Bytes) -> Self raise @core.WindowsError
+pub fn WNVOBJECTCHANGEPARAMObjectParamEUnion_cee20cc95197::new() -> Self raise @core.WindowsError
+pub fn WNVOBJECTCHANGEPARAMObjectParamEUnion_cee20cc95197::provider_address_change(Self) -> WNVPROVIDERADDRESSCHANGEPARAM_30509b3a550d raise @core.WindowsError
+pub fn WNVOBJECTCHANGEPARAMObjectParamEUnion_cee20cc95197::raw_address(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn WNVOBJECTCHANGEPARAMObjectParamEUnion_cee20cc95197::set_customer_address_change(Self, WNVCUSTOMERADDRESSCHANGEPARAM_930327185983) -> Unit raise @core.WindowsError
+pub fn WNVOBJECTCHANGEPARAMObjectParamEUnion_cee20cc95197::set_provider_address_change(Self, WNVPROVIDERADDRESSCHANGEPARAM_30509b3a550d) -> Unit raise @core.WindowsError
+pub fn[T] WNVOBJECTCHANGEPARAMObjectParamEUnion_cee20cc95197::with_raw_address(Self, (@core.RawAddress) -> T raise?) -> T raise
+pub impl Eq for WNVOBJECTCHANGEPARAMObjectParamEUnion_cee20cc95197
+pub impl @debug.Debug for WNVOBJECTCHANGEPARAMObjectParamEUnion_cee20cc95197
+
+pub(all) struct WNVOBJECTCHANGEPARAM_1ae74598454e {
+  raw_buffer : @core.NativeBuffer
+}
+pub fn WNVOBJECTCHANGEPARAM_1ae74598454e::abi_alignment() -> Int
+pub fn WNVOBJECTCHANGEPARAM_1ae74598454e::abi_size() -> Int
+pub fn WNVOBJECTCHANGEPARAM_1ae74598454e::bytes(Self) -> Bytes raise @core.WindowsError
+pub fn WNVOBJECTCHANGEPARAM_1ae74598454e::from_bytes(Bytes) -> Self raise @core.WindowsError
+pub fn WNVOBJECTCHANGEPARAM_1ae74598454e::new() -> Self raise @core.WindowsError
+pub fn WNVOBJECTCHANGEPARAM_1ae74598454e::object_param(Self) -> WNVOBJECTCHANGEPARAMObjectParamEUnion_cee20cc95197 raise @core.WindowsError
+pub fn WNVOBJECTCHANGEPARAM_1ae74598454e::object_type(Self) -> WNVOBJECTTYPE_c7ae77ea61c7 raise @core.WindowsError
+pub fn WNVOBJECTCHANGEPARAM_1ae74598454e::raw_address(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn WNVOBJECTCHANGEPARAM_1ae74598454e::set_object_param(Self, WNVOBJECTCHANGEPARAMObjectParamEUnion_cee20cc95197) -> Unit raise @core.WindowsError
+pub fn WNVOBJECTCHANGEPARAM_1ae74598454e::set_object_type(Self, WNVOBJECTTYPE_c7ae77ea61c7) -> Unit raise @core.WindowsError
+pub fn[T] WNVOBJECTCHANGEPARAM_1ae74598454e::with_raw_address(Self, (@core.RawAddress) -> T raise?) -> T raise
+pub impl Eq for WNVOBJECTCHANGEPARAM_1ae74598454e
+pub impl @debug.Debug for WNVOBJECTCHANGEPARAM_1ae74598454e
+
+pub(all) struct WNVOBJECTHEADER_1b42157db88f {
+  raw_buffer : @core.NativeBuffer
+}
+pub fn WNVOBJECTHEADER_1b42157db88f::abi_alignment() -> Int
+pub fn WNVOBJECTHEADER_1b42157db88f::abi_size() -> Int
+pub fn WNVOBJECTHEADER_1b42157db88f::bytes(Self) -> Bytes raise @core.WindowsError
+pub fn WNVOBJECTHEADER_1b42157db88f::from_bytes(Bytes) -> Self raise @core.WindowsError
+pub fn WNVOBJECTHEADER_1b42157db88f::major_version(Self) -> Byte raise @core.WindowsError
+pub fn WNVOBJECTHEADER_1b42157db88f::minor_version(Self) -> Byte raise @core.WindowsError
+pub fn WNVOBJECTHEADER_1b42157db88f::new() -> Self raise @core.WindowsError
+pub fn WNVOBJECTHEADER_1b42157db88f::raw_address(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn WNVOBJECTHEADER_1b42157db88f::set_major_version(Self, Byte) -> Unit raise @core.WindowsError
+pub fn WNVOBJECTHEADER_1b42157db88f::set_minor_version(Self, Byte) -> Unit raise @core.WindowsError
+pub fn WNVOBJECTHEADER_1b42157db88f::set_size(Self, UInt) -> Unit raise @core.WindowsError
+pub fn WNVOBJECTHEADER_1b42157db88f::size(Self) -> UInt raise @core.WindowsError
+pub fn[T] WNVOBJECTHEADER_1b42157db88f::with_raw_address(Self, (@core.RawAddress) -> T raise?) -> T raise
+pub impl Eq for WNVOBJECTHEADER_1b42157db88f
+pub impl @debug.Debug for WNVOBJECTHEADER_1b42157db88f
+
+pub(all) struct WNVOBJECTTYPE_c7ae77ea61c7(Int) derive(Compare, Eq, @debug.Debug)
+pub fn WNVOBJECTTYPE_c7ae77ea61c7::from_int(Int) -> Self
+pub fn WNVOBJECTTYPE_c7ae77ea61c7::max() -> Self
+pub fn WNVOBJECTTYPE_c7ae77ea61c7::to_int(Self) -> Int
+pub fn WNVOBJECTTYPE_c7ae77ea61c7::wnv_customer_address_type() -> Self
+pub fn WNVOBJECTTYPE_c7ae77ea61c7::wnv_provider_address_type() -> Self
+
+pub(all) struct WNVPOLICYMISMATCHPARAM_76a73420de22 {
+  raw_buffer : @core.NativeBuffer
+}
+pub fn WNVPOLICYMISMATCHPARAM_76a73420de22::abi_alignment() -> Int
+pub fn WNVPOLICYMISMATCHPARAM_76a73420de22::abi_size() -> Int
+pub fn WNVPOLICYMISMATCHPARAM_76a73420de22::bytes(Self) -> Bytes raise @core.WindowsError
+pub fn WNVPOLICYMISMATCHPARAM_76a73420de22::ca(Self) -> WNVIPADDRESS_72e6867c9da2 raise @core.WindowsError
+pub fn WNVPOLICYMISMATCHPARAM_76a73420de22::ca_family(Self) -> @7ca9e13be49370eb.ADDRESSFAMILY_7c193873d185 raise @core.WindowsError
+pub fn WNVPOLICYMISMATCHPARAM_76a73420de22::from_bytes(Bytes) -> Self raise @core.WindowsError
+pub fn WNVPOLICYMISMATCHPARAM_76a73420de22::new() -> Self raise @core.WindowsError
+pub fn WNVPOLICYMISMATCHPARAM_76a73420de22::pa(Self) -> WNVIPADDRESS_72e6867c9da2 raise @core.WindowsError
+pub fn WNVPOLICYMISMATCHPARAM_76a73420de22::pa_family(Self) -> @7ca9e13be49370eb.ADDRESSFAMILY_7c193873d185 raise @core.WindowsError
+pub fn WNVPOLICYMISMATCHPARAM_76a73420de22::raw_address(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn WNVPOLICYMISMATCHPARAM_76a73420de22::set_ca(Self, WNVIPADDRESS_72e6867c9da2) -> Unit raise @core.WindowsError
+pub fn WNVPOLICYMISMATCHPARAM_76a73420de22::set_ca_family(Self, @7ca9e13be49370eb.ADDRESSFAMILY_7c193873d185) -> Unit raise @core.WindowsError
+pub fn WNVPOLICYMISMATCHPARAM_76a73420de22::set_pa(Self, WNVIPADDRESS_72e6867c9da2) -> Unit raise @core.WindowsError
+pub fn WNVPOLICYMISMATCHPARAM_76a73420de22::set_pa_family(Self, @7ca9e13be49370eb.ADDRESSFAMILY_7c193873d185) -> Unit raise @core.WindowsError
+pub fn WNVPOLICYMISMATCHPARAM_76a73420de22::set_virtual_subnet_id(Self, UInt) -> Unit raise @core.WindowsError
+pub fn WNVPOLICYMISMATCHPARAM_76a73420de22::virtual_subnet_id(Self) -> UInt raise @core.WindowsError
+pub fn[T] WNVPOLICYMISMATCHPARAM_76a73420de22::with_raw_address(Self, (@core.RawAddress) -> T raise?) -> T raise
+pub impl Eq for WNVPOLICYMISMATCHPARAM_76a73420de22
+pub impl @debug.Debug for WNVPOLICYMISMATCHPARAM_76a73420de22
+
+pub(all) struct WNVPROVIDERADDRESSCHANGEPARAM_30509b3a550d {
+  raw_buffer : @core.NativeBuffer
+}
+pub fn WNVPROVIDERADDRESSCHANGEPARAM_30509b3a550d::abi_alignment() -> Int
+pub fn WNVPROVIDERADDRESSCHANGEPARAM_30509b3a550d::abi_size() -> Int
+pub fn WNVPROVIDERADDRESSCHANGEPARAM_30509b3a550d::address_state(Self) -> @7ca9e13be49370eb.NLDADSTATE_535a356017a1 raise @core.WindowsError
+pub fn WNVPROVIDERADDRESSCHANGEPARAM_30509b3a550d::bytes(Self) -> Bytes raise @core.WindowsError
+pub fn WNVPROVIDERADDRESSCHANGEPARAM_30509b3a550d::from_bytes(Bytes) -> Self raise @core.WindowsError
+pub fn WNVPROVIDERADDRESSCHANGEPARAM_30509b3a550d::new() -> Self raise @core.WindowsError
+pub fn WNVPROVIDERADDRESSCHANGEPARAM_30509b3a550d::pa(Self) -> WNVIPADDRESS_72e6867c9da2 raise @core.WindowsError
+pub fn WNVPROVIDERADDRESSCHANGEPARAM_30509b3a550d::pa_family(Self) -> @7ca9e13be49370eb.ADDRESSFAMILY_7c193873d185 raise @core.WindowsError
+pub fn WNVPROVIDERADDRESSCHANGEPARAM_30509b3a550d::raw_address(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn WNVPROVIDERADDRESSCHANGEPARAM_30509b3a550d::set_address_state(Self, @7ca9e13be49370eb.NLDADSTATE_535a356017a1) -> Unit raise @core.WindowsError
+pub fn WNVPROVIDERADDRESSCHANGEPARAM_30509b3a550d::set_pa(Self, WNVIPADDRESS_72e6867c9da2) -> Unit raise @core.WindowsError
+pub fn WNVPROVIDERADDRESSCHANGEPARAM_30509b3a550d::set_pa_family(Self, @7ca9e13be49370eb.ADDRESSFAMILY_7c193873d185) -> Unit raise @core.WindowsError
+pub fn[T] WNVPROVIDERADDRESSCHANGEPARAM_30509b3a550d::with_raw_address(Self, (@core.RawAddress) -> T raise?) -> T raise
+pub impl Eq for WNVPROVIDERADDRESSCHANGEPARAM_30509b3a550d
+pub impl @debug.Debug for WNVPROVIDERADDRESSCHANGEPARAM_30509b3a550d
+
+pub(all) struct WNVREDIRECTPARAM_d9e06a285518 {
+  raw_buffer : @core.NativeBuffer
+}
+pub fn WNVREDIRECTPARAM_d9e06a285518::abi_alignment() -> Int
+pub fn WNVREDIRECTPARAM_d9e06a285518::abi_size() -> Int
+pub fn WNVREDIRECTPARAM_d9e06a285518::bytes(Self) -> Bytes raise @core.WindowsError
+pub fn WNVREDIRECTPARAM_d9e06a285518::ca(Self) -> WNVIPADDRESS_72e6867c9da2 raise @core.WindowsError
+pub fn WNVREDIRECTPARAM_d9e06a285518::ca_family(Self) -> @7ca9e13be49370eb.ADDRESSFAMILY_7c193873d185 raise @core.WindowsError
+pub fn WNVREDIRECTPARAM_d9e06a285518::from_bytes(Bytes) -> Self raise @core.WindowsError
+pub fn WNVREDIRECTPARAM_d9e06a285518::new() -> Self raise @core.WindowsError
+pub fn WNVREDIRECTPARAM_d9e06a285518::new_pa(Self) -> WNVIPADDRESS_72e6867c9da2 raise @core.WindowsError
+pub fn WNVREDIRECTPARAM_d9e06a285518::new_pa_family(Self) -> @7ca9e13be49370eb.ADDRESSFAMILY_7c193873d185 raise @core.WindowsError
+pub fn WNVREDIRECTPARAM_d9e06a285518::pa(Self) -> WNVIPADDRESS_72e6867c9da2 raise @core.WindowsError
+pub fn WNVREDIRECTPARAM_d9e06a285518::pa_family(Self) -> @7ca9e13be49370eb.ADDRESSFAMILY_7c193873d185 raise @core.WindowsError
+pub fn WNVREDIRECTPARAM_d9e06a285518::raw_address(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn WNVREDIRECTPARAM_d9e06a285518::set_ca(Self, WNVIPADDRESS_72e6867c9da2) -> Unit raise @core.WindowsError
+pub fn WNVREDIRECTPARAM_d9e06a285518::set_ca_family(Self, @7ca9e13be49370eb.ADDRESSFAMILY_7c193873d185) -> Unit raise @core.WindowsError
+pub fn WNVREDIRECTPARAM_d9e06a285518::set_new_pa(Self, WNVIPADDRESS_72e6867c9da2) -> Unit raise @core.WindowsError
+pub fn WNVREDIRECTPARAM_d9e06a285518::set_new_pa_family(Self, @7ca9e13be49370eb.ADDRESSFAMILY_7c193873d185) -> Unit raise @core.WindowsError
+pub fn WNVREDIRECTPARAM_d9e06a285518::set_pa(Self, WNVIPADDRESS_72e6867c9da2) -> Unit raise @core.WindowsError
+pub fn WNVREDIRECTPARAM_d9e06a285518::set_pa_family(Self, @7ca9e13be49370eb.ADDRESSFAMILY_7c193873d185) -> Unit raise @core.WindowsError
+pub fn WNVREDIRECTPARAM_d9e06a285518::set_virtual_subnet_id(Self, UInt) -> Unit raise @core.WindowsError
+pub fn WNVREDIRECTPARAM_d9e06a285518::virtual_subnet_id(Self) -> UInt raise @core.WindowsError
+pub fn[T] WNVREDIRECTPARAM_d9e06a285518::with_raw_address(Self, (@core.RawAddress) -> T raise?) -> T raise
+pub impl Eq for WNVREDIRECTPARAM_d9e06a285518
+pub impl @debug.Debug for WNVREDIRECTPARAM_d9e06a285518
+
+// Type aliases
+
+// Traits

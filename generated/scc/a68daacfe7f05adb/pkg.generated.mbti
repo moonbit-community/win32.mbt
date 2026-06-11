@@ -1,0 +1,888 @@
+// Generated using `moon info`, DON'T EDIT IT
+package "moonbit-community/win32api/scc/a68daacfe7f05adb"
+
+import {
+  "moonbit-community/win32api/runtime/core",
+  "moonbit-community/win32api/runtime/strings",
+  "moonbit-community/win32api/scc/cc6631776d7e2373",
+  "moonbit-community/win32api/scc/fb66f520d7e12332",
+  "moonbitlang/core/debug",
+}
+
+// Values
+pub let statusmsg_option_noanimation_e4e393272ba3 : UInt
+
+pub let statusmsg_option_setforeground_2ca5539036d3 : UInt
+
+pub let wlx_consoleswitchcredential_type_v1_0_5bacfe80abd0 : UInt
+
+pub let wlx_create_instance_only_3d9f0602b304 : UInt
+
+pub let wlx_create_user_9a6ad81241f4 : UInt
+
+pub let wlx_credential_type_v1_0_02fbaba57503 : UInt
+
+pub let wlx_credential_type_v2_0_ae939db3f029 : UInt
+
+pub let wlx_current_version_ca0ad4188598 : UInt
+
+pub let wlx_desktop_handle_972775f8632e : UInt
+
+pub let wlx_desktop_name_3d804bf594f5 : UInt
+
+pub let wlx_directory_length_b2dee3518978 : UInt
+
+pub let wlx_dlg_input_timeout_efa3764eb368 : UInt
+
+pub let wlx_dlg_sas_079ff3f205e8 : UInt
+
+pub let wlx_dlg_screen_saver_timeout_57536adc4ee6 : UInt
+
+pub let wlx_dlg_user_logoff_c77ac2ce2307 : UInt
+
+pub let wlx_logon_opt_no_profile_fd11742041fe : UInt
+
+pub let wlx_option_context_pointer_af5e5fe01da9 : UInt
+
+pub let wlx_option_dispatch_table_size_9a33a778234d : UInt
+
+pub let wlx_option_force_logoff_time_5974a0679d59 : UInt
+
+pub let wlx_option_ignore_auto_logon_37d3ea7f3da4 : UInt
+
+pub let wlx_option_no_switch_on_sas_75d4f9b7f69d : UInt
+
+pub let wlx_option_smart_card_info_55ddc60d8ef1 : UInt
+
+pub let wlx_option_smart_card_present_e5f9c606c0b2 : UInt
+
+pub let wlx_option_use_ctrl_alt_del_d6c1578a9297 : UInt
+
+pub let wlx_option_use_smart_card_eed09e815387 : UInt
+
+pub let wlx_profile_type_v1_0_6f210bdbe6ef : UInt
+
+pub let wlx_profile_type_v2_0_d5633c9126a3 : UInt
+
+pub let wlx_sas_action_delayed_force_logoff_9aa4465e6f3e : UInt
+
+pub let wlx_sas_action_force_logoff_73913d06b1fd : UInt
+
+pub let wlx_sas_action_lock_wksta_b4febba225d2 : UInt
+
+pub let wlx_sas_action_logoff_b90b6db73014 : UInt
+
+pub let wlx_sas_action_logon_464bb294245c : UInt
+
+pub let wlx_sas_action_none_a4c44ea990bf : UInt
+
+pub let wlx_sas_action_pwd_changed_8ca9a2907430 : UInt
+
+pub let wlx_sas_action_reconnected_bf3a55567b81 : UInt
+
+pub let wlx_sas_action_shutdown_5476d012d52c : UInt
+
+pub let wlx_sas_action_shutdown_hibernate_3cc4a23ad10d : UInt
+
+pub let wlx_sas_action_shutdown_power_off_8b8d1233c487 : UInt
+
+pub let wlx_sas_action_shutdown_reboot_8e757b3e7ae8 : UInt
+
+pub let wlx_sas_action_shutdown_sleep2_f49955d9bc34 : UInt
+
+pub let wlx_sas_action_shutdown_sleep_02b258d8f17b : UInt
+
+pub let wlx_sas_action_switch_console_0bb523247472 : UInt
+
+pub let wlx_sas_action_tasklist_1ca06f5d70d4 : UInt
+
+pub let wlx_sas_action_unlock_wksta_b4abc2a0f02b : UInt
+
+pub let wlx_sas_type_authenticated_caf8d05d8c43 : UInt
+
+pub let wlx_sas_type_ctrl_alt_del_668ccacf6614 : UInt
+
+pub let wlx_sas_type_max_msft_value_68a4aa3a7fe5 : UInt
+
+pub let wlx_sas_type_sc_first_reader_arrived_3be70ea3562b : UInt
+
+pub let wlx_sas_type_sc_insert_cdc3a482566c : UInt
+
+pub let wlx_sas_type_sc_last_reader_removed_c5b616ab9ebc : UInt
+
+pub let wlx_sas_type_sc_remove_8e60ce4accfe : UInt
+
+pub let wlx_sas_type_scrnsvr_activity_c45d516c083f : UInt
+
+pub let wlx_sas_type_scrnsvr_timeout_bfbb5ccd4314 : UInt
+
+pub let wlx_sas_type_switchuser_560eb84216df : UInt
+
+pub let wlx_sas_type_timeout_5d2b23fc3581 : UInt
+
+pub let wlx_sas_type_user_logoff_3d2996a5c024 : UInt
+
+pub let wlx_version_1_0_8c4ad553f43f : UInt
+
+pub let wlx_version_1_1_2417979761ad : UInt
+
+pub let wlx_version_1_2_6914548e1dec : UInt
+
+pub let wlx_version_1_3_75994c23e2fa : UInt
+
+pub let wlx_version_1_4_daf33071b895 : UInt
+
+pub let wlx_wm_sas_845fd6b11610 : UInt
+
+pub let wlxclientcredentialsinfov10_d59e82f24485_alignment : Int
+
+pub let wlxclientcredentialsinfov10_d59e82f24485_size : Int
+
+pub let wlxclientcredentialsinfov20_67eaa5b4e713_alignment : Int
+
+pub let wlxclientcredentialsinfov20_67eaa5b4e713_size : Int
+
+pub let wlxconsoleswitchcredentialsinfov10_e329ad5f6ddd_alignment : Int
+
+pub let wlxconsoleswitchcredentialsinfov10_e329ad5f6ddd_size : Int
+
+pub let wlxdesktop_7861b6464532_alignment : Int
+
+pub let wlxdesktop_7861b6464532_size : Int
+
+pub let wlxdispatchversion10_bb69507fe9cc_alignment : Int
+
+pub let wlxdispatchversion10_bb69507fe9cc_size : Int
+
+pub let wlxdispatchversion11_7ee263763fe3_alignment : Int
+
+pub let wlxdispatchversion11_7ee263763fe3_size : Int
+
+pub let wlxdispatchversion12_11ec8b185f2d_alignment : Int
+
+pub let wlxdispatchversion12_11ec8b185f2d_size : Int
+
+pub let wlxdispatchversion13_334d69cca3a8_alignment : Int
+
+pub let wlxdispatchversion13_334d69cca3a8_size : Int
+
+pub let wlxdispatchversion14_388731b13348_alignment : Int
+
+pub let wlxdispatchversion14_388731b13348_size : Int
+
+pub let wlxmprnotifyinfo_98587f52f553_alignment : Int
+
+pub let wlxmprnotifyinfo_98587f52f553_size : Int
+
+pub let wlxnotificationinfo_f49e445fd9df_alignment : Int
+
+pub let wlxnotificationinfo_f49e445fd9df_size : Int
+
+pub let wlxprofilev10_0cc754d84118_alignment : Int
+
+pub let wlxprofilev10_0cc754d84118_size : Int
+
+pub let wlxprofilev20_c7c02090c816_alignment : Int
+
+pub let wlxprofilev20_c7c02090c816_size : Int
+
+pub let wlxscnotificationinfo_2764780cffad_alignment : Int
+
+pub let wlxscnotificationinfo_2764780cffad_size : Int
+
+pub let wlxterminalservicesdata_1e5c3b459c6a_alignment : Int
+
+pub let wlxterminalservicesdata_1e5c3b459c6a_size : Int
+
+// Errors
+
+// Types and methods
+pub type PFNMSGECALLBACK_2328cde3db22
+
+pub type PWLXASSIGNSHELLPROTECTION_9f5829940fcd
+
+pub type PWLXCHANGEPASSWORDNOTIFYEX_8a609540f6cd
+
+pub type PWLXCHANGEPASSWORDNOTIFY_403cd3398f7c
+
+pub type PWLXCLOSEUSERDESKTOP_90551354d5cc
+
+pub type PWLXCREATEUSERDESKTOP_d5f4d7402f41
+
+pub type PWLXDIALOGBOXINDIRECTPARAM_9db656b6c334
+
+pub type PWLXDIALOGBOXINDIRECT_d0c78f8dbd57
+
+pub type PWLXDIALOGBOXPARAM_2880d12fd030
+
+pub type PWLXDIALOGBOX_095e9eb0c0ad
+
+pub type PWLXDISCONNECT_6bf222c46eb0
+
+pub type PWLXGETOPTION_8d9ca687fc8c
+
+pub type PWLXGETSOURCEDESKTOP_e19934cca9cf
+
+pub type PWLXMESSAGEBOX_283468bc9d97
+
+pub type PWLXQUERYCLIENTCREDENTIALS_9feb31822aad
+
+pub type PWLXQUERYCONSOLESWITCHCREDENTIALS_b76a6f20adeb
+
+pub type PWLXQUERYICCREDENTIALS_4e815561fad2
+
+pub type PWLXQUERYTERMINALSERVICESDATA_358f0299c466
+
+pub type PWLXQUERYTSLOGONCREDENTIALS_f085851a5d81
+
+pub type PWLXSASNOTIFY_fd268e6945df
+
+pub type PWLXSETCONTEXTPOINTER_3a8085a99c9f
+
+pub type PWLXSETOPTION_e2590dc92ad3
+
+pub type PWLXSETRETURNDESKTOP_d5accf4198c5
+
+pub type PWLXSETTIMEOUT_3e6108334f6a
+
+pub type PWLXSWITCHDESKTOPTOUSER_81a0f89de384
+
+pub type PWLXSWITCHDESKTOPTOWINLOGON_232bee171abb
+
+pub type PWLXUSECTRLALTDEL_b07f60078593
+
+pub type PWLXWIN31MIGRATE_9f8ac166131c
+
+pub(all) struct WLXCLIENTCREDENTIALSINFOV10_d59e82f24485 {
+  raw_buffer : @core.NativeBuffer
+  mut root_psz_user_name : @strings.PWStrBuffer?
+  mut root_psz_domain : @strings.PWStrBuffer?
+  mut root_psz_password : @strings.PWStrBuffer?
+}
+pub fn WLXCLIENTCREDENTIALSINFOV10_d59e82f24485::abi_alignment() -> Int
+pub fn WLXCLIENTCREDENTIALSINFOV10_d59e82f24485::abi_size() -> Int
+pub fn WLXCLIENTCREDENTIALSINFOV10_d59e82f24485::bytes(Self) -> Bytes raise @core.WindowsError
+pub fn WLXCLIENTCREDENTIALSINFOV10_d59e82f24485::clear_psz_domain(Self) -> Unit raise @core.WindowsError
+pub fn WLXCLIENTCREDENTIALSINFOV10_d59e82f24485::clear_psz_password(Self) -> Unit raise @core.WindowsError
+pub fn WLXCLIENTCREDENTIALSINFOV10_d59e82f24485::clear_psz_user_name(Self) -> Unit raise @core.WindowsError
+pub fn WLXCLIENTCREDENTIALSINFOV10_d59e82f24485::dw_type(Self) -> UInt raise @core.WindowsError
+pub fn WLXCLIENTCREDENTIALSINFOV10_d59e82f24485::f_prompt_for_password(Self) -> Int raise @core.WindowsError
+pub fn WLXCLIENTCREDENTIALSINFOV10_d59e82f24485::from_bytes(Bytes) -> Self raise @core.WindowsError
+pub fn WLXCLIENTCREDENTIALSINFOV10_d59e82f24485::new() -> Self raise @core.WindowsError
+pub fn WLXCLIENTCREDENTIALSINFOV10_d59e82f24485::psz_domain_raw(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn WLXCLIENTCREDENTIALSINFOV10_d59e82f24485::psz_password_raw(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn WLXCLIENTCREDENTIALSINFOV10_d59e82f24485::psz_user_name_raw(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn WLXCLIENTCREDENTIALSINFOV10_d59e82f24485::raw_address(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn WLXCLIENTCREDENTIALSINFOV10_d59e82f24485::set_dw_type(Self, UInt) -> Unit raise @core.WindowsError
+pub fn WLXCLIENTCREDENTIALSINFOV10_d59e82f24485::set_f_prompt_for_password(Self, Int) -> Unit raise @core.WindowsError
+pub fn WLXCLIENTCREDENTIALSINFOV10_d59e82f24485::set_psz_domain(Self, @strings.PWStrBuffer) -> Unit raise @core.WindowsError
+pub fn WLXCLIENTCREDENTIALSINFOV10_d59e82f24485::set_psz_domain_raw(Self, @core.RawAddress) -> Unit raise @core.WindowsError
+pub fn WLXCLIENTCREDENTIALSINFOV10_d59e82f24485::set_psz_password(Self, @strings.PWStrBuffer) -> Unit raise @core.WindowsError
+pub fn WLXCLIENTCREDENTIALSINFOV10_d59e82f24485::set_psz_password_raw(Self, @core.RawAddress) -> Unit raise @core.WindowsError
+pub fn WLXCLIENTCREDENTIALSINFOV10_d59e82f24485::set_psz_user_name(Self, @strings.PWStrBuffer) -> Unit raise @core.WindowsError
+pub fn WLXCLIENTCREDENTIALSINFOV10_d59e82f24485::set_psz_user_name_raw(Self, @core.RawAddress) -> Unit raise @core.WindowsError
+pub fn[T] WLXCLIENTCREDENTIALSINFOV10_d59e82f24485::with_raw_address(Self, (@core.RawAddress) -> T raise?) -> T raise
+pub impl Eq for WLXCLIENTCREDENTIALSINFOV10_d59e82f24485
+pub impl @debug.Debug for WLXCLIENTCREDENTIALSINFOV10_d59e82f24485
+
+pub(all) struct WLXCLIENTCREDENTIALSINFOV20_67eaa5b4e713 {
+  raw_buffer : @core.NativeBuffer
+  mut root_psz_user_name : @strings.PWStrBuffer?
+  mut root_psz_domain : @strings.PWStrBuffer?
+  mut root_psz_password : @strings.PWStrBuffer?
+}
+pub fn WLXCLIENTCREDENTIALSINFOV20_67eaa5b4e713::abi_alignment() -> Int
+pub fn WLXCLIENTCREDENTIALSINFOV20_67eaa5b4e713::abi_size() -> Int
+pub fn WLXCLIENTCREDENTIALSINFOV20_67eaa5b4e713::bytes(Self) -> Bytes raise @core.WindowsError
+pub fn WLXCLIENTCREDENTIALSINFOV20_67eaa5b4e713::clear_psz_domain(Self) -> Unit raise @core.WindowsError
+pub fn WLXCLIENTCREDENTIALSINFOV20_67eaa5b4e713::clear_psz_password(Self) -> Unit raise @core.WindowsError
+pub fn WLXCLIENTCREDENTIALSINFOV20_67eaa5b4e713::clear_psz_user_name(Self) -> Unit raise @core.WindowsError
+pub fn WLXCLIENTCREDENTIALSINFOV20_67eaa5b4e713::dw_type(Self) -> UInt raise @core.WindowsError
+pub fn WLXCLIENTCREDENTIALSINFOV20_67eaa5b4e713::f_disconnect_on_logon_failure(Self) -> Int raise @core.WindowsError
+pub fn WLXCLIENTCREDENTIALSINFOV20_67eaa5b4e713::f_prompt_for_password(Self) -> Int raise @core.WindowsError
+pub fn WLXCLIENTCREDENTIALSINFOV20_67eaa5b4e713::from_bytes(Bytes) -> Self raise @core.WindowsError
+pub fn WLXCLIENTCREDENTIALSINFOV20_67eaa5b4e713::new() -> Self raise @core.WindowsError
+pub fn WLXCLIENTCREDENTIALSINFOV20_67eaa5b4e713::psz_domain_raw(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn WLXCLIENTCREDENTIALSINFOV20_67eaa5b4e713::psz_password_raw(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn WLXCLIENTCREDENTIALSINFOV20_67eaa5b4e713::psz_user_name_raw(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn WLXCLIENTCREDENTIALSINFOV20_67eaa5b4e713::raw_address(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn WLXCLIENTCREDENTIALSINFOV20_67eaa5b4e713::set_dw_type(Self, UInt) -> Unit raise @core.WindowsError
+pub fn WLXCLIENTCREDENTIALSINFOV20_67eaa5b4e713::set_f_disconnect_on_logon_failure(Self, Int) -> Unit raise @core.WindowsError
+pub fn WLXCLIENTCREDENTIALSINFOV20_67eaa5b4e713::set_f_prompt_for_password(Self, Int) -> Unit raise @core.WindowsError
+pub fn WLXCLIENTCREDENTIALSINFOV20_67eaa5b4e713::set_psz_domain(Self, @strings.PWStrBuffer) -> Unit raise @core.WindowsError
+pub fn WLXCLIENTCREDENTIALSINFOV20_67eaa5b4e713::set_psz_domain_raw(Self, @core.RawAddress) -> Unit raise @core.WindowsError
+pub fn WLXCLIENTCREDENTIALSINFOV20_67eaa5b4e713::set_psz_password(Self, @strings.PWStrBuffer) -> Unit raise @core.WindowsError
+pub fn WLXCLIENTCREDENTIALSINFOV20_67eaa5b4e713::set_psz_password_raw(Self, @core.RawAddress) -> Unit raise @core.WindowsError
+pub fn WLXCLIENTCREDENTIALSINFOV20_67eaa5b4e713::set_psz_user_name(Self, @strings.PWStrBuffer) -> Unit raise @core.WindowsError
+pub fn WLXCLIENTCREDENTIALSINFOV20_67eaa5b4e713::set_psz_user_name_raw(Self, @core.RawAddress) -> Unit raise @core.WindowsError
+pub fn[T] WLXCLIENTCREDENTIALSINFOV20_67eaa5b4e713::with_raw_address(Self, (@core.RawAddress) -> T raise?) -> T raise
+pub impl Eq for WLXCLIENTCREDENTIALSINFOV20_67eaa5b4e713
+pub impl @debug.Debug for WLXCLIENTCREDENTIALSINFOV20_67eaa5b4e713
+
+pub(all) struct WLXCONSOLESWITCHCREDENTIALSINFOV10_e329ad5f6ddd {
+  raw_buffer : @core.NativeBuffer
+  mut root_user_name : @strings.PWStrBuffer?
+  mut root_domain : @strings.PWStrBuffer?
+  mut root_logon_script : @strings.PWStrBuffer?
+  mut root_home_directory : @strings.PWStrBuffer?
+  mut root_full_name : @strings.PWStrBuffer?
+  mut root_profile_path : @strings.PWStrBuffer?
+  mut root_home_directory_drive : @strings.PWStrBuffer?
+  mut root_logon_server : @strings.PWStrBuffer?
+}
+pub fn WLXCONSOLESWITCHCREDENTIALSINFOV10_e329ad5f6ddd::abi_alignment() -> Int
+pub fn WLXCONSOLESWITCHCREDENTIALSINFOV10_e329ad5f6ddd::abi_size() -> Int
+pub fn WLXCONSOLESWITCHCREDENTIALSINFOV10_e329ad5f6ddd::bad_password_count(Self) -> UInt16 raise @core.WindowsError
+pub fn WLXCONSOLESWITCHCREDENTIALSINFOV10_e329ad5f6ddd::bytes(Self) -> Bytes raise @core.WindowsError
+pub fn WLXCONSOLESWITCHCREDENTIALSINFOV10_e329ad5f6ddd::clear_domain(Self) -> Unit raise @core.WindowsError
+pub fn WLXCONSOLESWITCHCREDENTIALSINFOV10_e329ad5f6ddd::clear_full_name(Self) -> Unit raise @core.WindowsError
+pub fn WLXCONSOLESWITCHCREDENTIALSINFOV10_e329ad5f6ddd::clear_home_directory(Self) -> Unit raise @core.WindowsError
+pub fn WLXCONSOLESWITCHCREDENTIALSINFOV10_e329ad5f6ddd::clear_home_directory_drive(Self) -> Unit raise @core.WindowsError
+pub fn WLXCONSOLESWITCHCREDENTIALSINFOV10_e329ad5f6ddd::clear_logon_script(Self) -> Unit raise @core.WindowsError
+pub fn WLXCONSOLESWITCHCREDENTIALSINFOV10_e329ad5f6ddd::clear_logon_server(Self) -> Unit raise @core.WindowsError
+pub fn WLXCONSOLESWITCHCREDENTIALSINFOV10_e329ad5f6ddd::clear_profile_path(Self) -> Unit raise @core.WindowsError
+pub fn WLXCONSOLESWITCHCREDENTIALSINFOV10_e329ad5f6ddd::clear_user_name(Self) -> Unit raise @core.WindowsError
+pub fn WLXCONSOLESWITCHCREDENTIALSINFOV10_e329ad5f6ddd::domain_raw(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn WLXCONSOLESWITCHCREDENTIALSINFOV10_e329ad5f6ddd::dw_type(Self) -> UInt raise @core.WindowsError
+pub fn WLXCONSOLESWITCHCREDENTIALSINFOV10_e329ad5f6ddd::from_bytes(Bytes) -> Self raise @core.WindowsError
+pub fn WLXCONSOLESWITCHCREDENTIALSINFOV10_e329ad5f6ddd::full_name_raw(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn WLXCONSOLESWITCHCREDENTIALSINFOV10_e329ad5f6ddd::home_directory_drive_raw(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn WLXCONSOLESWITCHCREDENTIALSINFOV10_e329ad5f6ddd::home_directory_raw(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn WLXCONSOLESWITCHCREDENTIALSINFOV10_e329ad5f6ddd::kick_off_time(Self) -> Int64 raise @core.WindowsError
+pub fn WLXCONSOLESWITCHCREDENTIALSINFOV10_e329ad5f6ddd::logoff_time(Self) -> Int64 raise @core.WindowsError
+pub fn WLXCONSOLESWITCHCREDENTIALSINFOV10_e329ad5f6ddd::logon_count(Self) -> UInt16 raise @core.WindowsError
+pub fn WLXCONSOLESWITCHCREDENTIALSINFOV10_e329ad5f6ddd::logon_id(Self) -> @fb66f520d7e12332.LUID_d126dd202e2a raise @core.WindowsError
+pub fn WLXCONSOLESWITCHCREDENTIALSINFOV10_e329ad5f6ddd::logon_script_raw(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn WLXCONSOLESWITCHCREDENTIALSINFOV10_e329ad5f6ddd::logon_server_raw(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn WLXCONSOLESWITCHCREDENTIALSINFOV10_e329ad5f6ddd::logon_time(Self) -> Int64 raise @core.WindowsError
+pub fn WLXCONSOLESWITCHCREDENTIALSINFOV10_e329ad5f6ddd::message_type(Self) -> UInt raise @core.WindowsError
+pub fn WLXCONSOLESWITCHCREDENTIALSINFOV10_e329ad5f6ddd::new() -> Self raise @core.WindowsError
+pub fn WLXCONSOLESWITCHCREDENTIALSINFOV10_e329ad5f6ddd::password_can_change(Self) -> Int64 raise @core.WindowsError
+pub fn WLXCONSOLESWITCHCREDENTIALSINFOV10_e329ad5f6ddd::password_last_set(Self) -> Int64 raise @core.WindowsError
+pub fn WLXCONSOLESWITCHCREDENTIALSINFOV10_e329ad5f6ddd::password_must_change(Self) -> Int64 raise @core.WindowsError
+pub fn WLXCONSOLESWITCHCREDENTIALSINFOV10_e329ad5f6ddd::private_data_len(Self) -> UInt raise @core.WindowsError
+pub fn WLXCONSOLESWITCHCREDENTIALSINFOV10_e329ad5f6ddd::private_data_raw(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn WLXCONSOLESWITCHCREDENTIALSINFOV10_e329ad5f6ddd::profile_length(Self) -> UInt raise @core.WindowsError
+pub fn WLXCONSOLESWITCHCREDENTIALSINFOV10_e329ad5f6ddd::profile_logon_time(Self) -> Int64 raise @core.WindowsError
+pub fn WLXCONSOLESWITCHCREDENTIALSINFOV10_e329ad5f6ddd::profile_path_raw(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn WLXCONSOLESWITCHCREDENTIALSINFOV10_e329ad5f6ddd::quotas(Self) -> @cc6631776d7e2373.QUOTALIMITS_bccd084f1430 raise @core.WindowsError
+pub fn WLXCONSOLESWITCHCREDENTIALSINFOV10_e329ad5f6ddd::raw_address(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn WLXCONSOLESWITCHCREDENTIALSINFOV10_e329ad5f6ddd::set_bad_password_count(Self, UInt16) -> Unit raise @core.WindowsError
+pub fn WLXCONSOLESWITCHCREDENTIALSINFOV10_e329ad5f6ddd::set_domain(Self, @strings.PWStrBuffer) -> Unit raise @core.WindowsError
+pub fn WLXCONSOLESWITCHCREDENTIALSINFOV10_e329ad5f6ddd::set_domain_raw(Self, @core.RawAddress) -> Unit raise @core.WindowsError
+pub fn WLXCONSOLESWITCHCREDENTIALSINFOV10_e329ad5f6ddd::set_dw_type(Self, UInt) -> Unit raise @core.WindowsError
+pub fn WLXCONSOLESWITCHCREDENTIALSINFOV10_e329ad5f6ddd::set_full_name(Self, @strings.PWStrBuffer) -> Unit raise @core.WindowsError
+pub fn WLXCONSOLESWITCHCREDENTIALSINFOV10_e329ad5f6ddd::set_full_name_raw(Self, @core.RawAddress) -> Unit raise @core.WindowsError
+pub fn WLXCONSOLESWITCHCREDENTIALSINFOV10_e329ad5f6ddd::set_home_directory(Self, @strings.PWStrBuffer) -> Unit raise @core.WindowsError
+pub fn WLXCONSOLESWITCHCREDENTIALSINFOV10_e329ad5f6ddd::set_home_directory_drive(Self, @strings.PWStrBuffer) -> Unit raise @core.WindowsError
+pub fn WLXCONSOLESWITCHCREDENTIALSINFOV10_e329ad5f6ddd::set_home_directory_drive_raw(Self, @core.RawAddress) -> Unit raise @core.WindowsError
+pub fn WLXCONSOLESWITCHCREDENTIALSINFOV10_e329ad5f6ddd::set_home_directory_raw(Self, @core.RawAddress) -> Unit raise @core.WindowsError
+pub fn WLXCONSOLESWITCHCREDENTIALSINFOV10_e329ad5f6ddd::set_kick_off_time(Self, Int64) -> Unit raise @core.WindowsError
+pub fn WLXCONSOLESWITCHCREDENTIALSINFOV10_e329ad5f6ddd::set_logoff_time(Self, Int64) -> Unit raise @core.WindowsError
+pub fn WLXCONSOLESWITCHCREDENTIALSINFOV10_e329ad5f6ddd::set_logon_count(Self, UInt16) -> Unit raise @core.WindowsError
+pub fn WLXCONSOLESWITCHCREDENTIALSINFOV10_e329ad5f6ddd::set_logon_id(Self, @fb66f520d7e12332.LUID_d126dd202e2a) -> Unit raise @core.WindowsError
+pub fn WLXCONSOLESWITCHCREDENTIALSINFOV10_e329ad5f6ddd::set_logon_script(Self, @strings.PWStrBuffer) -> Unit raise @core.WindowsError
+pub fn WLXCONSOLESWITCHCREDENTIALSINFOV10_e329ad5f6ddd::set_logon_script_raw(Self, @core.RawAddress) -> Unit raise @core.WindowsError
+pub fn WLXCONSOLESWITCHCREDENTIALSINFOV10_e329ad5f6ddd::set_logon_server(Self, @strings.PWStrBuffer) -> Unit raise @core.WindowsError
+pub fn WLXCONSOLESWITCHCREDENTIALSINFOV10_e329ad5f6ddd::set_logon_server_raw(Self, @core.RawAddress) -> Unit raise @core.WindowsError
+pub fn WLXCONSOLESWITCHCREDENTIALSINFOV10_e329ad5f6ddd::set_logon_time(Self, Int64) -> Unit raise @core.WindowsError
+pub fn WLXCONSOLESWITCHCREDENTIALSINFOV10_e329ad5f6ddd::set_message_type(Self, UInt) -> Unit raise @core.WindowsError
+pub fn WLXCONSOLESWITCHCREDENTIALSINFOV10_e329ad5f6ddd::set_password_can_change(Self, Int64) -> Unit raise @core.WindowsError
+pub fn WLXCONSOLESWITCHCREDENTIALSINFOV10_e329ad5f6ddd::set_password_last_set(Self, Int64) -> Unit raise @core.WindowsError
+pub fn WLXCONSOLESWITCHCREDENTIALSINFOV10_e329ad5f6ddd::set_password_must_change(Self, Int64) -> Unit raise @core.WindowsError
+pub fn WLXCONSOLESWITCHCREDENTIALSINFOV10_e329ad5f6ddd::set_private_data_len(Self, UInt) -> Unit raise @core.WindowsError
+pub fn WLXCONSOLESWITCHCREDENTIALSINFOV10_e329ad5f6ddd::set_private_data_raw(Self, @core.RawAddress) -> Unit raise @core.WindowsError
+pub fn WLXCONSOLESWITCHCREDENTIALSINFOV10_e329ad5f6ddd::set_profile_length(Self, UInt) -> Unit raise @core.WindowsError
+pub fn WLXCONSOLESWITCHCREDENTIALSINFOV10_e329ad5f6ddd::set_profile_logon_time(Self, Int64) -> Unit raise @core.WindowsError
+pub fn WLXCONSOLESWITCHCREDENTIALSINFOV10_e329ad5f6ddd::set_profile_path(Self, @strings.PWStrBuffer) -> Unit raise @core.WindowsError
+pub fn WLXCONSOLESWITCHCREDENTIALSINFOV10_e329ad5f6ddd::set_profile_path_raw(Self, @core.RawAddress) -> Unit raise @core.WindowsError
+pub fn WLXCONSOLESWITCHCREDENTIALSINFOV10_e329ad5f6ddd::set_quotas(Self, @cc6631776d7e2373.QUOTALIMITS_bccd084f1430) -> Unit raise @core.WindowsError
+pub fn WLXCONSOLESWITCHCREDENTIALSINFOV10_e329ad5f6ddd::set_smart_card_logon(Self, Int) -> Unit raise @core.WindowsError
+pub fn WLXCONSOLESWITCHCREDENTIALSINFOV10_e329ad5f6ddd::set_user_flags(Self, UInt) -> Unit raise @core.WindowsError
+pub fn WLXCONSOLESWITCHCREDENTIALSINFOV10_e329ad5f6ddd::set_user_name(Self, @strings.PWStrBuffer) -> Unit raise @core.WindowsError
+pub fn WLXCONSOLESWITCHCREDENTIALSINFOV10_e329ad5f6ddd::set_user_name_raw(Self, @core.RawAddress) -> Unit raise @core.WindowsError
+pub fn WLXCONSOLESWITCHCREDENTIALSINFOV10_e329ad5f6ddd::set_user_token_raw(Self, @core.RawAddress) -> Unit raise @core.WindowsError
+pub fn WLXCONSOLESWITCHCREDENTIALSINFOV10_e329ad5f6ddd::smart_card_logon(Self) -> Int raise @core.WindowsError
+pub fn WLXCONSOLESWITCHCREDENTIALSINFOV10_e329ad5f6ddd::user_flags(Self) -> UInt raise @core.WindowsError
+pub fn WLXCONSOLESWITCHCREDENTIALSINFOV10_e329ad5f6ddd::user_name_raw(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn WLXCONSOLESWITCHCREDENTIALSINFOV10_e329ad5f6ddd::user_token_raw(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn[T] WLXCONSOLESWITCHCREDENTIALSINFOV10_e329ad5f6ddd::with_raw_address(Self, (@core.RawAddress) -> T raise?) -> T raise
+pub impl Eq for WLXCONSOLESWITCHCREDENTIALSINFOV10_e329ad5f6ddd
+pub impl @debug.Debug for WLXCONSOLESWITCHCREDENTIALSINFOV10_e329ad5f6ddd
+
+pub(all) struct WLXDESKTOP_7861b6464532 {
+  raw_buffer : @core.NativeBuffer
+  mut root_psz_desktop_name : @strings.PWStrBuffer?
+}
+pub fn WLXDESKTOP_7861b6464532::abi_alignment() -> Int
+pub fn WLXDESKTOP_7861b6464532::abi_size() -> Int
+pub fn WLXDESKTOP_7861b6464532::bytes(Self) -> Bytes raise @core.WindowsError
+pub fn WLXDESKTOP_7861b6464532::clear_psz_desktop_name(Self) -> Unit raise @core.WindowsError
+pub fn WLXDESKTOP_7861b6464532::flags(Self) -> UInt raise @core.WindowsError
+pub fn WLXDESKTOP_7861b6464532::from_bytes(Bytes) -> Self raise @core.WindowsError
+pub fn WLXDESKTOP_7861b6464532::h_desktop_raw(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn WLXDESKTOP_7861b6464532::new() -> Self raise @core.WindowsError
+pub fn WLXDESKTOP_7861b6464532::psz_desktop_name_raw(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn WLXDESKTOP_7861b6464532::raw_address(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn WLXDESKTOP_7861b6464532::set_flags(Self, UInt) -> Unit raise @core.WindowsError
+pub fn WLXDESKTOP_7861b6464532::set_h_desktop_raw(Self, @core.RawAddress) -> Unit raise @core.WindowsError
+pub fn WLXDESKTOP_7861b6464532::set_psz_desktop_name(Self, @strings.PWStrBuffer) -> Unit raise @core.WindowsError
+pub fn WLXDESKTOP_7861b6464532::set_psz_desktop_name_raw(Self, @core.RawAddress) -> Unit raise @core.WindowsError
+pub fn WLXDESKTOP_7861b6464532::set_size(Self, UInt) -> Unit raise @core.WindowsError
+pub fn WLXDESKTOP_7861b6464532::size(Self) -> UInt raise @core.WindowsError
+pub fn[T] WLXDESKTOP_7861b6464532::with_raw_address(Self, (@core.RawAddress) -> T raise?) -> T raise
+pub impl Eq for WLXDESKTOP_7861b6464532
+pub impl @debug.Debug for WLXDESKTOP_7861b6464532
+
+pub(all) struct WLXDISPATCHVERSION10_bb69507fe9cc {
+  raw_buffer : @core.NativeBuffer
+}
+pub fn WLXDISPATCHVERSION10_bb69507fe9cc::abi_alignment() -> Int
+pub fn WLXDISPATCHVERSION10_bb69507fe9cc::abi_size() -> Int
+pub fn WLXDISPATCHVERSION10_bb69507fe9cc::bytes(Self) -> Bytes raise @core.WindowsError
+pub fn WLXDISPATCHVERSION10_bb69507fe9cc::from_bytes(Bytes) -> Self raise @core.WindowsError
+pub fn WLXDISPATCHVERSION10_bb69507fe9cc::new() -> Self raise @core.WindowsError
+pub fn WLXDISPATCHVERSION10_bb69507fe9cc::raw_address(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn WLXDISPATCHVERSION10_bb69507fe9cc::set_wlx_assign_shell_protection_raw(Self, @core.RawAddress) -> Unit raise @core.WindowsError
+pub fn WLXDISPATCHVERSION10_bb69507fe9cc::set_wlx_change_password_notify_raw(Self, @core.RawAddress) -> Unit raise @core.WindowsError
+pub fn WLXDISPATCHVERSION10_bb69507fe9cc::set_wlx_dialog_box_indirect_param_raw(Self, @core.RawAddress) -> Unit raise @core.WindowsError
+pub fn WLXDISPATCHVERSION10_bb69507fe9cc::set_wlx_dialog_box_indirect_raw(Self, @core.RawAddress) -> Unit raise @core.WindowsError
+pub fn WLXDISPATCHVERSION10_bb69507fe9cc::set_wlx_dialog_box_param_raw(Self, @core.RawAddress) -> Unit raise @core.WindowsError
+pub fn WLXDISPATCHVERSION10_bb69507fe9cc::set_wlx_dialog_box_raw(Self, @core.RawAddress) -> Unit raise @core.WindowsError
+pub fn WLXDISPATCHVERSION10_bb69507fe9cc::set_wlx_message_box_raw(Self, @core.RawAddress) -> Unit raise @core.WindowsError
+pub fn WLXDISPATCHVERSION10_bb69507fe9cc::set_wlx_sas_notify_raw(Self, @core.RawAddress) -> Unit raise @core.WindowsError
+pub fn WLXDISPATCHVERSION10_bb69507fe9cc::set_wlx_set_context_pointer_raw(Self, @core.RawAddress) -> Unit raise @core.WindowsError
+pub fn WLXDISPATCHVERSION10_bb69507fe9cc::set_wlx_set_timeout_raw(Self, @core.RawAddress) -> Unit raise @core.WindowsError
+pub fn WLXDISPATCHVERSION10_bb69507fe9cc::set_wlx_switch_desktop_to_user_raw(Self, @core.RawAddress) -> Unit raise @core.WindowsError
+pub fn WLXDISPATCHVERSION10_bb69507fe9cc::set_wlx_switch_desktop_to_winlogon_raw(Self, @core.RawAddress) -> Unit raise @core.WindowsError
+pub fn WLXDISPATCHVERSION10_bb69507fe9cc::set_wlx_use_ctrl_alt_del_raw(Self, @core.RawAddress) -> Unit raise @core.WindowsError
+pub fn[T] WLXDISPATCHVERSION10_bb69507fe9cc::with_raw_address(Self, (@core.RawAddress) -> T raise?) -> T raise
+pub fn WLXDISPATCHVERSION10_bb69507fe9cc::wlx_assign_shell_protection_raw(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn WLXDISPATCHVERSION10_bb69507fe9cc::wlx_change_password_notify_raw(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn WLXDISPATCHVERSION10_bb69507fe9cc::wlx_dialog_box_indirect_param_raw(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn WLXDISPATCHVERSION10_bb69507fe9cc::wlx_dialog_box_indirect_raw(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn WLXDISPATCHVERSION10_bb69507fe9cc::wlx_dialog_box_param_raw(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn WLXDISPATCHVERSION10_bb69507fe9cc::wlx_dialog_box_raw(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn WLXDISPATCHVERSION10_bb69507fe9cc::wlx_message_box_raw(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn WLXDISPATCHVERSION10_bb69507fe9cc::wlx_sas_notify_raw(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn WLXDISPATCHVERSION10_bb69507fe9cc::wlx_set_context_pointer_raw(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn WLXDISPATCHVERSION10_bb69507fe9cc::wlx_set_timeout_raw(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn WLXDISPATCHVERSION10_bb69507fe9cc::wlx_switch_desktop_to_user_raw(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn WLXDISPATCHVERSION10_bb69507fe9cc::wlx_switch_desktop_to_winlogon_raw(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn WLXDISPATCHVERSION10_bb69507fe9cc::wlx_use_ctrl_alt_del_raw(Self) -> @core.RawAddress raise @core.WindowsError
+pub impl Eq for WLXDISPATCHVERSION10_bb69507fe9cc
+pub impl @debug.Debug for WLXDISPATCHVERSION10_bb69507fe9cc
+
+pub(all) struct WLXDISPATCHVERSION11_7ee263763fe3 {
+  raw_buffer : @core.NativeBuffer
+}
+pub fn WLXDISPATCHVERSION11_7ee263763fe3::abi_alignment() -> Int
+pub fn WLXDISPATCHVERSION11_7ee263763fe3::abi_size() -> Int
+pub fn WLXDISPATCHVERSION11_7ee263763fe3::bytes(Self) -> Bytes raise @core.WindowsError
+pub fn WLXDISPATCHVERSION11_7ee263763fe3::from_bytes(Bytes) -> Self raise @core.WindowsError
+pub fn WLXDISPATCHVERSION11_7ee263763fe3::new() -> Self raise @core.WindowsError
+pub fn WLXDISPATCHVERSION11_7ee263763fe3::raw_address(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn WLXDISPATCHVERSION11_7ee263763fe3::set_wlx_assign_shell_protection_raw(Self, @core.RawAddress) -> Unit raise @core.WindowsError
+pub fn WLXDISPATCHVERSION11_7ee263763fe3::set_wlx_change_password_notify_ex_raw(Self, @core.RawAddress) -> Unit raise @core.WindowsError
+pub fn WLXDISPATCHVERSION11_7ee263763fe3::set_wlx_change_password_notify_raw(Self, @core.RawAddress) -> Unit raise @core.WindowsError
+pub fn WLXDISPATCHVERSION11_7ee263763fe3::set_wlx_create_user_desktop_raw(Self, @core.RawAddress) -> Unit raise @core.WindowsError
+pub fn WLXDISPATCHVERSION11_7ee263763fe3::set_wlx_dialog_box_indirect_param_raw(Self, @core.RawAddress) -> Unit raise @core.WindowsError
+pub fn WLXDISPATCHVERSION11_7ee263763fe3::set_wlx_dialog_box_indirect_raw(Self, @core.RawAddress) -> Unit raise @core.WindowsError
+pub fn WLXDISPATCHVERSION11_7ee263763fe3::set_wlx_dialog_box_param_raw(Self, @core.RawAddress) -> Unit raise @core.WindowsError
+pub fn WLXDISPATCHVERSION11_7ee263763fe3::set_wlx_dialog_box_raw(Self, @core.RawAddress) -> Unit raise @core.WindowsError
+pub fn WLXDISPATCHVERSION11_7ee263763fe3::set_wlx_get_source_desktop_raw(Self, @core.RawAddress) -> Unit raise @core.WindowsError
+pub fn WLXDISPATCHVERSION11_7ee263763fe3::set_wlx_message_box_raw(Self, @core.RawAddress) -> Unit raise @core.WindowsError
+pub fn WLXDISPATCHVERSION11_7ee263763fe3::set_wlx_sas_notify_raw(Self, @core.RawAddress) -> Unit raise @core.WindowsError
+pub fn WLXDISPATCHVERSION11_7ee263763fe3::set_wlx_set_context_pointer_raw(Self, @core.RawAddress) -> Unit raise @core.WindowsError
+pub fn WLXDISPATCHVERSION11_7ee263763fe3::set_wlx_set_return_desktop_raw(Self, @core.RawAddress) -> Unit raise @core.WindowsError
+pub fn WLXDISPATCHVERSION11_7ee263763fe3::set_wlx_set_timeout_raw(Self, @core.RawAddress) -> Unit raise @core.WindowsError
+pub fn WLXDISPATCHVERSION11_7ee263763fe3::set_wlx_switch_desktop_to_user_raw(Self, @core.RawAddress) -> Unit raise @core.WindowsError
+pub fn WLXDISPATCHVERSION11_7ee263763fe3::set_wlx_switch_desktop_to_winlogon_raw(Self, @core.RawAddress) -> Unit raise @core.WindowsError
+pub fn WLXDISPATCHVERSION11_7ee263763fe3::set_wlx_use_ctrl_alt_del_raw(Self, @core.RawAddress) -> Unit raise @core.WindowsError
+pub fn[T] WLXDISPATCHVERSION11_7ee263763fe3::with_raw_address(Self, (@core.RawAddress) -> T raise?) -> T raise
+pub fn WLXDISPATCHVERSION11_7ee263763fe3::wlx_assign_shell_protection_raw(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn WLXDISPATCHVERSION11_7ee263763fe3::wlx_change_password_notify_ex_raw(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn WLXDISPATCHVERSION11_7ee263763fe3::wlx_change_password_notify_raw(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn WLXDISPATCHVERSION11_7ee263763fe3::wlx_create_user_desktop_raw(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn WLXDISPATCHVERSION11_7ee263763fe3::wlx_dialog_box_indirect_param_raw(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn WLXDISPATCHVERSION11_7ee263763fe3::wlx_dialog_box_indirect_raw(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn WLXDISPATCHVERSION11_7ee263763fe3::wlx_dialog_box_param_raw(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn WLXDISPATCHVERSION11_7ee263763fe3::wlx_dialog_box_raw(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn WLXDISPATCHVERSION11_7ee263763fe3::wlx_get_source_desktop_raw(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn WLXDISPATCHVERSION11_7ee263763fe3::wlx_message_box_raw(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn WLXDISPATCHVERSION11_7ee263763fe3::wlx_sas_notify_raw(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn WLXDISPATCHVERSION11_7ee263763fe3::wlx_set_context_pointer_raw(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn WLXDISPATCHVERSION11_7ee263763fe3::wlx_set_return_desktop_raw(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn WLXDISPATCHVERSION11_7ee263763fe3::wlx_set_timeout_raw(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn WLXDISPATCHVERSION11_7ee263763fe3::wlx_switch_desktop_to_user_raw(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn WLXDISPATCHVERSION11_7ee263763fe3::wlx_switch_desktop_to_winlogon_raw(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn WLXDISPATCHVERSION11_7ee263763fe3::wlx_use_ctrl_alt_del_raw(Self) -> @core.RawAddress raise @core.WindowsError
+pub impl Eq for WLXDISPATCHVERSION11_7ee263763fe3
+pub impl @debug.Debug for WLXDISPATCHVERSION11_7ee263763fe3
+
+pub(all) struct WLXDISPATCHVERSION12_11ec8b185f2d {
+  raw_buffer : @core.NativeBuffer
+}
+pub fn WLXDISPATCHVERSION12_11ec8b185f2d::abi_alignment() -> Int
+pub fn WLXDISPATCHVERSION12_11ec8b185f2d::abi_size() -> Int
+pub fn WLXDISPATCHVERSION12_11ec8b185f2d::bytes(Self) -> Bytes raise @core.WindowsError
+pub fn WLXDISPATCHVERSION12_11ec8b185f2d::from_bytes(Bytes) -> Self raise @core.WindowsError
+pub fn WLXDISPATCHVERSION12_11ec8b185f2d::new() -> Self raise @core.WindowsError
+pub fn WLXDISPATCHVERSION12_11ec8b185f2d::raw_address(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn WLXDISPATCHVERSION12_11ec8b185f2d::set_wlx_assign_shell_protection_raw(Self, @core.RawAddress) -> Unit raise @core.WindowsError
+pub fn WLXDISPATCHVERSION12_11ec8b185f2d::set_wlx_change_password_notify_ex_raw(Self, @core.RawAddress) -> Unit raise @core.WindowsError
+pub fn WLXDISPATCHVERSION12_11ec8b185f2d::set_wlx_change_password_notify_raw(Self, @core.RawAddress) -> Unit raise @core.WindowsError
+pub fn WLXDISPATCHVERSION12_11ec8b185f2d::set_wlx_close_user_desktop_raw(Self, @core.RawAddress) -> Unit raise @core.WindowsError
+pub fn WLXDISPATCHVERSION12_11ec8b185f2d::set_wlx_create_user_desktop_raw(Self, @core.RawAddress) -> Unit raise @core.WindowsError
+pub fn WLXDISPATCHVERSION12_11ec8b185f2d::set_wlx_dialog_box_indirect_param_raw(Self, @core.RawAddress) -> Unit raise @core.WindowsError
+pub fn WLXDISPATCHVERSION12_11ec8b185f2d::set_wlx_dialog_box_indirect_raw(Self, @core.RawAddress) -> Unit raise @core.WindowsError
+pub fn WLXDISPATCHVERSION12_11ec8b185f2d::set_wlx_dialog_box_param_raw(Self, @core.RawAddress) -> Unit raise @core.WindowsError
+pub fn WLXDISPATCHVERSION12_11ec8b185f2d::set_wlx_dialog_box_raw(Self, @core.RawAddress) -> Unit raise @core.WindowsError
+pub fn WLXDISPATCHVERSION12_11ec8b185f2d::set_wlx_get_source_desktop_raw(Self, @core.RawAddress) -> Unit raise @core.WindowsError
+pub fn WLXDISPATCHVERSION12_11ec8b185f2d::set_wlx_message_box_raw(Self, @core.RawAddress) -> Unit raise @core.WindowsError
+pub fn WLXDISPATCHVERSION12_11ec8b185f2d::set_wlx_sas_notify_raw(Self, @core.RawAddress) -> Unit raise @core.WindowsError
+pub fn WLXDISPATCHVERSION12_11ec8b185f2d::set_wlx_set_context_pointer_raw(Self, @core.RawAddress) -> Unit raise @core.WindowsError
+pub fn WLXDISPATCHVERSION12_11ec8b185f2d::set_wlx_set_return_desktop_raw(Self, @core.RawAddress) -> Unit raise @core.WindowsError
+pub fn WLXDISPATCHVERSION12_11ec8b185f2d::set_wlx_set_timeout_raw(Self, @core.RawAddress) -> Unit raise @core.WindowsError
+pub fn WLXDISPATCHVERSION12_11ec8b185f2d::set_wlx_switch_desktop_to_user_raw(Self, @core.RawAddress) -> Unit raise @core.WindowsError
+pub fn WLXDISPATCHVERSION12_11ec8b185f2d::set_wlx_switch_desktop_to_winlogon_raw(Self, @core.RawAddress) -> Unit raise @core.WindowsError
+pub fn WLXDISPATCHVERSION12_11ec8b185f2d::set_wlx_use_ctrl_alt_del_raw(Self, @core.RawAddress) -> Unit raise @core.WindowsError
+pub fn[T] WLXDISPATCHVERSION12_11ec8b185f2d::with_raw_address(Self, (@core.RawAddress) -> T raise?) -> T raise
+pub fn WLXDISPATCHVERSION12_11ec8b185f2d::wlx_assign_shell_protection_raw(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn WLXDISPATCHVERSION12_11ec8b185f2d::wlx_change_password_notify_ex_raw(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn WLXDISPATCHVERSION12_11ec8b185f2d::wlx_change_password_notify_raw(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn WLXDISPATCHVERSION12_11ec8b185f2d::wlx_close_user_desktop_raw(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn WLXDISPATCHVERSION12_11ec8b185f2d::wlx_create_user_desktop_raw(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn WLXDISPATCHVERSION12_11ec8b185f2d::wlx_dialog_box_indirect_param_raw(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn WLXDISPATCHVERSION12_11ec8b185f2d::wlx_dialog_box_indirect_raw(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn WLXDISPATCHVERSION12_11ec8b185f2d::wlx_dialog_box_param_raw(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn WLXDISPATCHVERSION12_11ec8b185f2d::wlx_dialog_box_raw(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn WLXDISPATCHVERSION12_11ec8b185f2d::wlx_get_source_desktop_raw(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn WLXDISPATCHVERSION12_11ec8b185f2d::wlx_message_box_raw(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn WLXDISPATCHVERSION12_11ec8b185f2d::wlx_sas_notify_raw(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn WLXDISPATCHVERSION12_11ec8b185f2d::wlx_set_context_pointer_raw(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn WLXDISPATCHVERSION12_11ec8b185f2d::wlx_set_return_desktop_raw(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn WLXDISPATCHVERSION12_11ec8b185f2d::wlx_set_timeout_raw(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn WLXDISPATCHVERSION12_11ec8b185f2d::wlx_switch_desktop_to_user_raw(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn WLXDISPATCHVERSION12_11ec8b185f2d::wlx_switch_desktop_to_winlogon_raw(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn WLXDISPATCHVERSION12_11ec8b185f2d::wlx_use_ctrl_alt_del_raw(Self) -> @core.RawAddress raise @core.WindowsError
+pub impl Eq for WLXDISPATCHVERSION12_11ec8b185f2d
+pub impl @debug.Debug for WLXDISPATCHVERSION12_11ec8b185f2d
+
+pub(all) struct WLXDISPATCHVERSION13_334d69cca3a8 {
+  raw_buffer : @core.NativeBuffer
+}
+pub fn WLXDISPATCHVERSION13_334d69cca3a8::abi_alignment() -> Int
+pub fn WLXDISPATCHVERSION13_334d69cca3a8::abi_size() -> Int
+pub fn WLXDISPATCHVERSION13_334d69cca3a8::bytes(Self) -> Bytes raise @core.WindowsError
+pub fn WLXDISPATCHVERSION13_334d69cca3a8::from_bytes(Bytes) -> Self raise @core.WindowsError
+pub fn WLXDISPATCHVERSION13_334d69cca3a8::new() -> Self raise @core.WindowsError
+pub fn WLXDISPATCHVERSION13_334d69cca3a8::raw_address(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn WLXDISPATCHVERSION13_334d69cca3a8::set_wlx_assign_shell_protection_raw(Self, @core.RawAddress) -> Unit raise @core.WindowsError
+pub fn WLXDISPATCHVERSION13_334d69cca3a8::set_wlx_change_password_notify_ex_raw(Self, @core.RawAddress) -> Unit raise @core.WindowsError
+pub fn WLXDISPATCHVERSION13_334d69cca3a8::set_wlx_change_password_notify_raw(Self, @core.RawAddress) -> Unit raise @core.WindowsError
+pub fn WLXDISPATCHVERSION13_334d69cca3a8::set_wlx_close_user_desktop_raw(Self, @core.RawAddress) -> Unit raise @core.WindowsError
+pub fn WLXDISPATCHVERSION13_334d69cca3a8::set_wlx_create_user_desktop_raw(Self, @core.RawAddress) -> Unit raise @core.WindowsError
+pub fn WLXDISPATCHVERSION13_334d69cca3a8::set_wlx_dialog_box_indirect_param_raw(Self, @core.RawAddress) -> Unit raise @core.WindowsError
+pub fn WLXDISPATCHVERSION13_334d69cca3a8::set_wlx_dialog_box_indirect_raw(Self, @core.RawAddress) -> Unit raise @core.WindowsError
+pub fn WLXDISPATCHVERSION13_334d69cca3a8::set_wlx_dialog_box_param_raw(Self, @core.RawAddress) -> Unit raise @core.WindowsError
+pub fn WLXDISPATCHVERSION13_334d69cca3a8::set_wlx_dialog_box_raw(Self, @core.RawAddress) -> Unit raise @core.WindowsError
+pub fn WLXDISPATCHVERSION13_334d69cca3a8::set_wlx_disconnect_raw(Self, @core.RawAddress) -> Unit raise @core.WindowsError
+pub fn WLXDISPATCHVERSION13_334d69cca3a8::set_wlx_get_option_raw(Self, @core.RawAddress) -> Unit raise @core.WindowsError
+pub fn WLXDISPATCHVERSION13_334d69cca3a8::set_wlx_get_source_desktop_raw(Self, @core.RawAddress) -> Unit raise @core.WindowsError
+pub fn WLXDISPATCHVERSION13_334d69cca3a8::set_wlx_message_box_raw(Self, @core.RawAddress) -> Unit raise @core.WindowsError
+pub fn WLXDISPATCHVERSION13_334d69cca3a8::set_wlx_query_client_credentials_raw(Self, @core.RawAddress) -> Unit raise @core.WindowsError
+pub fn WLXDISPATCHVERSION13_334d69cca3a8::set_wlx_query_inet_connector_credentials_raw(Self, @core.RawAddress) -> Unit raise @core.WindowsError
+pub fn WLXDISPATCHVERSION13_334d69cca3a8::set_wlx_query_terminal_services_data_raw(Self, @core.RawAddress) -> Unit raise @core.WindowsError
+pub fn WLXDISPATCHVERSION13_334d69cca3a8::set_wlx_sas_notify_raw(Self, @core.RawAddress) -> Unit raise @core.WindowsError
+pub fn WLXDISPATCHVERSION13_334d69cca3a8::set_wlx_set_context_pointer_raw(Self, @core.RawAddress) -> Unit raise @core.WindowsError
+pub fn WLXDISPATCHVERSION13_334d69cca3a8::set_wlx_set_option_raw(Self, @core.RawAddress) -> Unit raise @core.WindowsError
+pub fn WLXDISPATCHVERSION13_334d69cca3a8::set_wlx_set_return_desktop_raw(Self, @core.RawAddress) -> Unit raise @core.WindowsError
+pub fn WLXDISPATCHVERSION13_334d69cca3a8::set_wlx_set_timeout_raw(Self, @core.RawAddress) -> Unit raise @core.WindowsError
+pub fn WLXDISPATCHVERSION13_334d69cca3a8::set_wlx_switch_desktop_to_user_raw(Self, @core.RawAddress) -> Unit raise @core.WindowsError
+pub fn WLXDISPATCHVERSION13_334d69cca3a8::set_wlx_switch_desktop_to_winlogon_raw(Self, @core.RawAddress) -> Unit raise @core.WindowsError
+pub fn WLXDISPATCHVERSION13_334d69cca3a8::set_wlx_use_ctrl_alt_del_raw(Self, @core.RawAddress) -> Unit raise @core.WindowsError
+pub fn WLXDISPATCHVERSION13_334d69cca3a8::set_wlx_win31_migrate_raw(Self, @core.RawAddress) -> Unit raise @core.WindowsError
+pub fn[T] WLXDISPATCHVERSION13_334d69cca3a8::with_raw_address(Self, (@core.RawAddress) -> T raise?) -> T raise
+pub fn WLXDISPATCHVERSION13_334d69cca3a8::wlx_assign_shell_protection_raw(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn WLXDISPATCHVERSION13_334d69cca3a8::wlx_change_password_notify_ex_raw(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn WLXDISPATCHVERSION13_334d69cca3a8::wlx_change_password_notify_raw(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn WLXDISPATCHVERSION13_334d69cca3a8::wlx_close_user_desktop_raw(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn WLXDISPATCHVERSION13_334d69cca3a8::wlx_create_user_desktop_raw(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn WLXDISPATCHVERSION13_334d69cca3a8::wlx_dialog_box_indirect_param_raw(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn WLXDISPATCHVERSION13_334d69cca3a8::wlx_dialog_box_indirect_raw(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn WLXDISPATCHVERSION13_334d69cca3a8::wlx_dialog_box_param_raw(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn WLXDISPATCHVERSION13_334d69cca3a8::wlx_dialog_box_raw(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn WLXDISPATCHVERSION13_334d69cca3a8::wlx_disconnect_raw(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn WLXDISPATCHVERSION13_334d69cca3a8::wlx_get_option_raw(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn WLXDISPATCHVERSION13_334d69cca3a8::wlx_get_source_desktop_raw(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn WLXDISPATCHVERSION13_334d69cca3a8::wlx_message_box_raw(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn WLXDISPATCHVERSION13_334d69cca3a8::wlx_query_client_credentials_raw(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn WLXDISPATCHVERSION13_334d69cca3a8::wlx_query_inet_connector_credentials_raw(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn WLXDISPATCHVERSION13_334d69cca3a8::wlx_query_terminal_services_data_raw(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn WLXDISPATCHVERSION13_334d69cca3a8::wlx_sas_notify_raw(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn WLXDISPATCHVERSION13_334d69cca3a8::wlx_set_context_pointer_raw(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn WLXDISPATCHVERSION13_334d69cca3a8::wlx_set_option_raw(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn WLXDISPATCHVERSION13_334d69cca3a8::wlx_set_return_desktop_raw(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn WLXDISPATCHVERSION13_334d69cca3a8::wlx_set_timeout_raw(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn WLXDISPATCHVERSION13_334d69cca3a8::wlx_switch_desktop_to_user_raw(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn WLXDISPATCHVERSION13_334d69cca3a8::wlx_switch_desktop_to_winlogon_raw(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn WLXDISPATCHVERSION13_334d69cca3a8::wlx_use_ctrl_alt_del_raw(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn WLXDISPATCHVERSION13_334d69cca3a8::wlx_win31_migrate_raw(Self) -> @core.RawAddress raise @core.WindowsError
+pub impl Eq for WLXDISPATCHVERSION13_334d69cca3a8
+pub impl @debug.Debug for WLXDISPATCHVERSION13_334d69cca3a8
+
+pub(all) struct WLXDISPATCHVERSION14_388731b13348 {
+  raw_buffer : @core.NativeBuffer
+}
+pub fn WLXDISPATCHVERSION14_388731b13348::abi_alignment() -> Int
+pub fn WLXDISPATCHVERSION14_388731b13348::abi_size() -> Int
+pub fn WLXDISPATCHVERSION14_388731b13348::bytes(Self) -> Bytes raise @core.WindowsError
+pub fn WLXDISPATCHVERSION14_388731b13348::from_bytes(Bytes) -> Self raise @core.WindowsError
+pub fn WLXDISPATCHVERSION14_388731b13348::new() -> Self raise @core.WindowsError
+pub fn WLXDISPATCHVERSION14_388731b13348::raw_address(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn WLXDISPATCHVERSION14_388731b13348::set_wlx_assign_shell_protection_raw(Self, @core.RawAddress) -> Unit raise @core.WindowsError
+pub fn WLXDISPATCHVERSION14_388731b13348::set_wlx_change_password_notify_ex_raw(Self, @core.RawAddress) -> Unit raise @core.WindowsError
+pub fn WLXDISPATCHVERSION14_388731b13348::set_wlx_change_password_notify_raw(Self, @core.RawAddress) -> Unit raise @core.WindowsError
+pub fn WLXDISPATCHVERSION14_388731b13348::set_wlx_close_user_desktop_raw(Self, @core.RawAddress) -> Unit raise @core.WindowsError
+pub fn WLXDISPATCHVERSION14_388731b13348::set_wlx_create_user_desktop_raw(Self, @core.RawAddress) -> Unit raise @core.WindowsError
+pub fn WLXDISPATCHVERSION14_388731b13348::set_wlx_dialog_box_indirect_param_raw(Self, @core.RawAddress) -> Unit raise @core.WindowsError
+pub fn WLXDISPATCHVERSION14_388731b13348::set_wlx_dialog_box_indirect_raw(Self, @core.RawAddress) -> Unit raise @core.WindowsError
+pub fn WLXDISPATCHVERSION14_388731b13348::set_wlx_dialog_box_param_raw(Self, @core.RawAddress) -> Unit raise @core.WindowsError
+pub fn WLXDISPATCHVERSION14_388731b13348::set_wlx_dialog_box_raw(Self, @core.RawAddress) -> Unit raise @core.WindowsError
+pub fn WLXDISPATCHVERSION14_388731b13348::set_wlx_disconnect_raw(Self, @core.RawAddress) -> Unit raise @core.WindowsError
+pub fn WLXDISPATCHVERSION14_388731b13348::set_wlx_get_option_raw(Self, @core.RawAddress) -> Unit raise @core.WindowsError
+pub fn WLXDISPATCHVERSION14_388731b13348::set_wlx_get_source_desktop_raw(Self, @core.RawAddress) -> Unit raise @core.WindowsError
+pub fn WLXDISPATCHVERSION14_388731b13348::set_wlx_message_box_raw(Self, @core.RawAddress) -> Unit raise @core.WindowsError
+pub fn WLXDISPATCHVERSION14_388731b13348::set_wlx_query_client_credentials_raw(Self, @core.RawAddress) -> Unit raise @core.WindowsError
+pub fn WLXDISPATCHVERSION14_388731b13348::set_wlx_query_console_switch_credentials_raw(Self, @core.RawAddress) -> Unit raise @core.WindowsError
+pub fn WLXDISPATCHVERSION14_388731b13348::set_wlx_query_inet_connector_credentials_raw(Self, @core.RawAddress) -> Unit raise @core.WindowsError
+pub fn WLXDISPATCHVERSION14_388731b13348::set_wlx_query_terminal_services_data_raw(Self, @core.RawAddress) -> Unit raise @core.WindowsError
+pub fn WLXDISPATCHVERSION14_388731b13348::set_wlx_query_ts_logon_credentials_raw(Self, @core.RawAddress) -> Unit raise @core.WindowsError
+pub fn WLXDISPATCHVERSION14_388731b13348::set_wlx_sas_notify_raw(Self, @core.RawAddress) -> Unit raise @core.WindowsError
+pub fn WLXDISPATCHVERSION14_388731b13348::set_wlx_set_context_pointer_raw(Self, @core.RawAddress) -> Unit raise @core.WindowsError
+pub fn WLXDISPATCHVERSION14_388731b13348::set_wlx_set_option_raw(Self, @core.RawAddress) -> Unit raise @core.WindowsError
+pub fn WLXDISPATCHVERSION14_388731b13348::set_wlx_set_return_desktop_raw(Self, @core.RawAddress) -> Unit raise @core.WindowsError
+pub fn WLXDISPATCHVERSION14_388731b13348::set_wlx_set_timeout_raw(Self, @core.RawAddress) -> Unit raise @core.WindowsError
+pub fn WLXDISPATCHVERSION14_388731b13348::set_wlx_switch_desktop_to_user_raw(Self, @core.RawAddress) -> Unit raise @core.WindowsError
+pub fn WLXDISPATCHVERSION14_388731b13348::set_wlx_switch_desktop_to_winlogon_raw(Self, @core.RawAddress) -> Unit raise @core.WindowsError
+pub fn WLXDISPATCHVERSION14_388731b13348::set_wlx_use_ctrl_alt_del_raw(Self, @core.RawAddress) -> Unit raise @core.WindowsError
+pub fn WLXDISPATCHVERSION14_388731b13348::set_wlx_win31_migrate_raw(Self, @core.RawAddress) -> Unit raise @core.WindowsError
+pub fn[T] WLXDISPATCHVERSION14_388731b13348::with_raw_address(Self, (@core.RawAddress) -> T raise?) -> T raise
+pub fn WLXDISPATCHVERSION14_388731b13348::wlx_assign_shell_protection_raw(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn WLXDISPATCHVERSION14_388731b13348::wlx_change_password_notify_ex_raw(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn WLXDISPATCHVERSION14_388731b13348::wlx_change_password_notify_raw(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn WLXDISPATCHVERSION14_388731b13348::wlx_close_user_desktop_raw(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn WLXDISPATCHVERSION14_388731b13348::wlx_create_user_desktop_raw(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn WLXDISPATCHVERSION14_388731b13348::wlx_dialog_box_indirect_param_raw(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn WLXDISPATCHVERSION14_388731b13348::wlx_dialog_box_indirect_raw(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn WLXDISPATCHVERSION14_388731b13348::wlx_dialog_box_param_raw(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn WLXDISPATCHVERSION14_388731b13348::wlx_dialog_box_raw(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn WLXDISPATCHVERSION14_388731b13348::wlx_disconnect_raw(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn WLXDISPATCHVERSION14_388731b13348::wlx_get_option_raw(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn WLXDISPATCHVERSION14_388731b13348::wlx_get_source_desktop_raw(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn WLXDISPATCHVERSION14_388731b13348::wlx_message_box_raw(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn WLXDISPATCHVERSION14_388731b13348::wlx_query_client_credentials_raw(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn WLXDISPATCHVERSION14_388731b13348::wlx_query_console_switch_credentials_raw(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn WLXDISPATCHVERSION14_388731b13348::wlx_query_inet_connector_credentials_raw(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn WLXDISPATCHVERSION14_388731b13348::wlx_query_terminal_services_data_raw(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn WLXDISPATCHVERSION14_388731b13348::wlx_query_ts_logon_credentials_raw(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn WLXDISPATCHVERSION14_388731b13348::wlx_sas_notify_raw(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn WLXDISPATCHVERSION14_388731b13348::wlx_set_context_pointer_raw(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn WLXDISPATCHVERSION14_388731b13348::wlx_set_option_raw(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn WLXDISPATCHVERSION14_388731b13348::wlx_set_return_desktop_raw(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn WLXDISPATCHVERSION14_388731b13348::wlx_set_timeout_raw(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn WLXDISPATCHVERSION14_388731b13348::wlx_switch_desktop_to_user_raw(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn WLXDISPATCHVERSION14_388731b13348::wlx_switch_desktop_to_winlogon_raw(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn WLXDISPATCHVERSION14_388731b13348::wlx_use_ctrl_alt_del_raw(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn WLXDISPATCHVERSION14_388731b13348::wlx_win31_migrate_raw(Self) -> @core.RawAddress raise @core.WindowsError
+pub impl Eq for WLXDISPATCHVERSION14_388731b13348
+pub impl @debug.Debug for WLXDISPATCHVERSION14_388731b13348
+
+pub(all) struct WLXMPRNOTIFYINFO_98587f52f553 {
+  raw_buffer : @core.NativeBuffer
+  mut root_psz_user_name : @strings.PWStrBuffer?
+  mut root_psz_domain : @strings.PWStrBuffer?
+  mut root_psz_password : @strings.PWStrBuffer?
+  mut root_psz_old_password : @strings.PWStrBuffer?
+}
+pub fn WLXMPRNOTIFYINFO_98587f52f553::abi_alignment() -> Int
+pub fn WLXMPRNOTIFYINFO_98587f52f553::abi_size() -> Int
+pub fn WLXMPRNOTIFYINFO_98587f52f553::bytes(Self) -> Bytes raise @core.WindowsError
+pub fn WLXMPRNOTIFYINFO_98587f52f553::clear_psz_domain(Self) -> Unit raise @core.WindowsError
+pub fn WLXMPRNOTIFYINFO_98587f52f553::clear_psz_old_password(Self) -> Unit raise @core.WindowsError
+pub fn WLXMPRNOTIFYINFO_98587f52f553::clear_psz_password(Self) -> Unit raise @core.WindowsError
+pub fn WLXMPRNOTIFYINFO_98587f52f553::clear_psz_user_name(Self) -> Unit raise @core.WindowsError
+pub fn WLXMPRNOTIFYINFO_98587f52f553::from_bytes(Bytes) -> Self raise @core.WindowsError
+pub fn WLXMPRNOTIFYINFO_98587f52f553::new() -> Self raise @core.WindowsError
+pub fn WLXMPRNOTIFYINFO_98587f52f553::psz_domain_raw(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn WLXMPRNOTIFYINFO_98587f52f553::psz_old_password_raw(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn WLXMPRNOTIFYINFO_98587f52f553::psz_password_raw(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn WLXMPRNOTIFYINFO_98587f52f553::psz_user_name_raw(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn WLXMPRNOTIFYINFO_98587f52f553::raw_address(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn WLXMPRNOTIFYINFO_98587f52f553::set_psz_domain(Self, @strings.PWStrBuffer) -> Unit raise @core.WindowsError
+pub fn WLXMPRNOTIFYINFO_98587f52f553::set_psz_domain_raw(Self, @core.RawAddress) -> Unit raise @core.WindowsError
+pub fn WLXMPRNOTIFYINFO_98587f52f553::set_psz_old_password(Self, @strings.PWStrBuffer) -> Unit raise @core.WindowsError
+pub fn WLXMPRNOTIFYINFO_98587f52f553::set_psz_old_password_raw(Self, @core.RawAddress) -> Unit raise @core.WindowsError
+pub fn WLXMPRNOTIFYINFO_98587f52f553::set_psz_password(Self, @strings.PWStrBuffer) -> Unit raise @core.WindowsError
+pub fn WLXMPRNOTIFYINFO_98587f52f553::set_psz_password_raw(Self, @core.RawAddress) -> Unit raise @core.WindowsError
+pub fn WLXMPRNOTIFYINFO_98587f52f553::set_psz_user_name(Self, @strings.PWStrBuffer) -> Unit raise @core.WindowsError
+pub fn WLXMPRNOTIFYINFO_98587f52f553::set_psz_user_name_raw(Self, @core.RawAddress) -> Unit raise @core.WindowsError
+pub fn[T] WLXMPRNOTIFYINFO_98587f52f553::with_raw_address(Self, (@core.RawAddress) -> T raise?) -> T raise
+pub impl Eq for WLXMPRNOTIFYINFO_98587f52f553
+pub impl @debug.Debug for WLXMPRNOTIFYINFO_98587f52f553
+
+pub(all) struct WLXNOTIFICATIONINFO_f49e445fd9df {
+  raw_buffer : @core.NativeBuffer
+  mut root_user_name : @strings.PWStrBuffer?
+  mut root_domain : @strings.PWStrBuffer?
+  mut root_window_station : @strings.PWStrBuffer?
+}
+pub fn WLXNOTIFICATIONINFO_f49e445fd9df::abi_alignment() -> Int
+pub fn WLXNOTIFICATIONINFO_f49e445fd9df::abi_size() -> Int
+pub fn WLXNOTIFICATIONINFO_f49e445fd9df::bytes(Self) -> Bytes raise @core.WindowsError
+pub fn WLXNOTIFICATIONINFO_f49e445fd9df::clear_domain(Self) -> Unit raise @core.WindowsError
+pub fn WLXNOTIFICATIONINFO_f49e445fd9df::clear_user_name(Self) -> Unit raise @core.WindowsError
+pub fn WLXNOTIFICATIONINFO_f49e445fd9df::clear_window_station(Self) -> Unit raise @core.WindowsError
+pub fn WLXNOTIFICATIONINFO_f49e445fd9df::domain_raw(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn WLXNOTIFICATIONINFO_f49e445fd9df::flags(Self) -> UInt raise @core.WindowsError
+pub fn WLXNOTIFICATIONINFO_f49e445fd9df::from_bytes(Bytes) -> Self raise @core.WindowsError
+pub fn WLXNOTIFICATIONINFO_f49e445fd9df::h_desktop_raw(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn WLXNOTIFICATIONINFO_f49e445fd9df::h_token_raw(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn WLXNOTIFICATIONINFO_f49e445fd9df::new() -> Self raise @core.WindowsError
+pub fn WLXNOTIFICATIONINFO_f49e445fd9df::p_status_callback_raw(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn WLXNOTIFICATIONINFO_f49e445fd9df::raw_address(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn WLXNOTIFICATIONINFO_f49e445fd9df::set_domain(Self, @strings.PWStrBuffer) -> Unit raise @core.WindowsError
+pub fn WLXNOTIFICATIONINFO_f49e445fd9df::set_domain_raw(Self, @core.RawAddress) -> Unit raise @core.WindowsError
+pub fn WLXNOTIFICATIONINFO_f49e445fd9df::set_flags(Self, UInt) -> Unit raise @core.WindowsError
+pub fn WLXNOTIFICATIONINFO_f49e445fd9df::set_h_desktop_raw(Self, @core.RawAddress) -> Unit raise @core.WindowsError
+pub fn WLXNOTIFICATIONINFO_f49e445fd9df::set_h_token_raw(Self, @core.RawAddress) -> Unit raise @core.WindowsError
+pub fn WLXNOTIFICATIONINFO_f49e445fd9df::set_p_status_callback_raw(Self, @core.RawAddress) -> Unit raise @core.WindowsError
+pub fn WLXNOTIFICATIONINFO_f49e445fd9df::set_size(Self, UInt) -> Unit raise @core.WindowsError
+pub fn WLXNOTIFICATIONINFO_f49e445fd9df::set_user_name(Self, @strings.PWStrBuffer) -> Unit raise @core.WindowsError
+pub fn WLXNOTIFICATIONINFO_f49e445fd9df::set_user_name_raw(Self, @core.RawAddress) -> Unit raise @core.WindowsError
+pub fn WLXNOTIFICATIONINFO_f49e445fd9df::set_window_station(Self, @strings.PWStrBuffer) -> Unit raise @core.WindowsError
+pub fn WLXNOTIFICATIONINFO_f49e445fd9df::set_window_station_raw(Self, @core.RawAddress) -> Unit raise @core.WindowsError
+pub fn WLXNOTIFICATIONINFO_f49e445fd9df::size(Self) -> UInt raise @core.WindowsError
+pub fn WLXNOTIFICATIONINFO_f49e445fd9df::user_name_raw(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn WLXNOTIFICATIONINFO_f49e445fd9df::window_station_raw(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn[T] WLXNOTIFICATIONINFO_f49e445fd9df::with_raw_address(Self, (@core.RawAddress) -> T raise?) -> T raise
+pub impl Eq for WLXNOTIFICATIONINFO_f49e445fd9df
+pub impl @debug.Debug for WLXNOTIFICATIONINFO_f49e445fd9df
+
+pub(all) struct WLXPROFILEV10_0cc754d84118 {
+  raw_buffer : @core.NativeBuffer
+  mut root_psz_profile : @strings.PWStrBuffer?
+}
+pub fn WLXPROFILEV10_0cc754d84118::abi_alignment() -> Int
+pub fn WLXPROFILEV10_0cc754d84118::abi_size() -> Int
+pub fn WLXPROFILEV10_0cc754d84118::bytes(Self) -> Bytes raise @core.WindowsError
+pub fn WLXPROFILEV10_0cc754d84118::clear_psz_profile(Self) -> Unit raise @core.WindowsError
+pub fn WLXPROFILEV10_0cc754d84118::dw_type(Self) -> UInt raise @core.WindowsError
+pub fn WLXPROFILEV10_0cc754d84118::from_bytes(Bytes) -> Self raise @core.WindowsError
+pub fn WLXPROFILEV10_0cc754d84118::new() -> Self raise @core.WindowsError
+pub fn WLXPROFILEV10_0cc754d84118::psz_profile_raw(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn WLXPROFILEV10_0cc754d84118::raw_address(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn WLXPROFILEV10_0cc754d84118::set_dw_type(Self, UInt) -> Unit raise @core.WindowsError
+pub fn WLXPROFILEV10_0cc754d84118::set_psz_profile(Self, @strings.PWStrBuffer) -> Unit raise @core.WindowsError
+pub fn WLXPROFILEV10_0cc754d84118::set_psz_profile_raw(Self, @core.RawAddress) -> Unit raise @core.WindowsError
+pub fn[T] WLXPROFILEV10_0cc754d84118::with_raw_address(Self, (@core.RawAddress) -> T raise?) -> T raise
+pub impl Eq for WLXPROFILEV10_0cc754d84118
+pub impl @debug.Debug for WLXPROFILEV10_0cc754d84118
+
+pub(all) struct WLXPROFILEV20_c7c02090c816 {
+  raw_buffer : @core.NativeBuffer
+  mut root_psz_profile : @strings.PWStrBuffer?
+  mut root_psz_policy : @strings.PWStrBuffer?
+  mut root_psz_network_default_user_profile : @strings.PWStrBuffer?
+  mut root_psz_server_name : @strings.PWStrBuffer?
+  mut root_psz_environment : @strings.PWStrBuffer?
+}
+pub fn WLXPROFILEV20_c7c02090c816::abi_alignment() -> Int
+pub fn WLXPROFILEV20_c7c02090c816::abi_size() -> Int
+pub fn WLXPROFILEV20_c7c02090c816::bytes(Self) -> Bytes raise @core.WindowsError
+pub fn WLXPROFILEV20_c7c02090c816::clear_psz_environment(Self) -> Unit raise @core.WindowsError
+pub fn WLXPROFILEV20_c7c02090c816::clear_psz_network_default_user_profile(Self) -> Unit raise @core.WindowsError
+pub fn WLXPROFILEV20_c7c02090c816::clear_psz_policy(Self) -> Unit raise @core.WindowsError
+pub fn WLXPROFILEV20_c7c02090c816::clear_psz_profile(Self) -> Unit raise @core.WindowsError
+pub fn WLXPROFILEV20_c7c02090c816::clear_psz_server_name(Self) -> Unit raise @core.WindowsError
+pub fn WLXPROFILEV20_c7c02090c816::dw_type(Self) -> UInt raise @core.WindowsError
+pub fn WLXPROFILEV20_c7c02090c816::from_bytes(Bytes) -> Self raise @core.WindowsError
+pub fn WLXPROFILEV20_c7c02090c816::new() -> Self raise @core.WindowsError
+pub fn WLXPROFILEV20_c7c02090c816::psz_environment_raw(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn WLXPROFILEV20_c7c02090c816::psz_network_default_user_profile_raw(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn WLXPROFILEV20_c7c02090c816::psz_policy_raw(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn WLXPROFILEV20_c7c02090c816::psz_profile_raw(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn WLXPROFILEV20_c7c02090c816::psz_server_name_raw(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn WLXPROFILEV20_c7c02090c816::raw_address(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn WLXPROFILEV20_c7c02090c816::set_dw_type(Self, UInt) -> Unit raise @core.WindowsError
+pub fn WLXPROFILEV20_c7c02090c816::set_psz_environment(Self, @strings.PWStrBuffer) -> Unit raise @core.WindowsError
+pub fn WLXPROFILEV20_c7c02090c816::set_psz_environment_raw(Self, @core.RawAddress) -> Unit raise @core.WindowsError
+pub fn WLXPROFILEV20_c7c02090c816::set_psz_network_default_user_profile(Self, @strings.PWStrBuffer) -> Unit raise @core.WindowsError
+pub fn WLXPROFILEV20_c7c02090c816::set_psz_network_default_user_profile_raw(Self, @core.RawAddress) -> Unit raise @core.WindowsError
+pub fn WLXPROFILEV20_c7c02090c816::set_psz_policy(Self, @strings.PWStrBuffer) -> Unit raise @core.WindowsError
+pub fn WLXPROFILEV20_c7c02090c816::set_psz_policy_raw(Self, @core.RawAddress) -> Unit raise @core.WindowsError
+pub fn WLXPROFILEV20_c7c02090c816::set_psz_profile(Self, @strings.PWStrBuffer) -> Unit raise @core.WindowsError
+pub fn WLXPROFILEV20_c7c02090c816::set_psz_profile_raw(Self, @core.RawAddress) -> Unit raise @core.WindowsError
+pub fn WLXPROFILEV20_c7c02090c816::set_psz_server_name(Self, @strings.PWStrBuffer) -> Unit raise @core.WindowsError
+pub fn WLXPROFILEV20_c7c02090c816::set_psz_server_name_raw(Self, @core.RawAddress) -> Unit raise @core.WindowsError
+pub fn[T] WLXPROFILEV20_c7c02090c816::with_raw_address(Self, (@core.RawAddress) -> T raise?) -> T raise
+pub impl Eq for WLXPROFILEV20_c7c02090c816
+pub impl @debug.Debug for WLXPROFILEV20_c7c02090c816
+
+pub(all) struct WLXSCNOTIFICATIONINFO_2764780cffad {
+  raw_buffer : @core.NativeBuffer
+  mut root_psz_card : @strings.PWStrBuffer?
+  mut root_psz_reader : @strings.PWStrBuffer?
+  mut root_psz_container : @strings.PWStrBuffer?
+  mut root_psz_crypto_provider : @strings.PWStrBuffer?
+}
+pub fn WLXSCNOTIFICATIONINFO_2764780cffad::abi_alignment() -> Int
+pub fn WLXSCNOTIFICATIONINFO_2764780cffad::abi_size() -> Int
+pub fn WLXSCNOTIFICATIONINFO_2764780cffad::bytes(Self) -> Bytes raise @core.WindowsError
+pub fn WLXSCNOTIFICATIONINFO_2764780cffad::clear_psz_card(Self) -> Unit raise @core.WindowsError
+pub fn WLXSCNOTIFICATIONINFO_2764780cffad::clear_psz_container(Self) -> Unit raise @core.WindowsError
+pub fn WLXSCNOTIFICATIONINFO_2764780cffad::clear_psz_crypto_provider(Self) -> Unit raise @core.WindowsError
+pub fn WLXSCNOTIFICATIONINFO_2764780cffad::clear_psz_reader(Self) -> Unit raise @core.WindowsError
+pub fn WLXSCNOTIFICATIONINFO_2764780cffad::from_bytes(Bytes) -> Self raise @core.WindowsError
+pub fn WLXSCNOTIFICATIONINFO_2764780cffad::new() -> Self raise @core.WindowsError
+pub fn WLXSCNOTIFICATIONINFO_2764780cffad::psz_card_raw(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn WLXSCNOTIFICATIONINFO_2764780cffad::psz_container_raw(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn WLXSCNOTIFICATIONINFO_2764780cffad::psz_crypto_provider_raw(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn WLXSCNOTIFICATIONINFO_2764780cffad::psz_reader_raw(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn WLXSCNOTIFICATIONINFO_2764780cffad::raw_address(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn WLXSCNOTIFICATIONINFO_2764780cffad::set_psz_card(Self, @strings.PWStrBuffer) -> Unit raise @core.WindowsError
+pub fn WLXSCNOTIFICATIONINFO_2764780cffad::set_psz_card_raw(Self, @core.RawAddress) -> Unit raise @core.WindowsError
+pub fn WLXSCNOTIFICATIONINFO_2764780cffad::set_psz_container(Self, @strings.PWStrBuffer) -> Unit raise @core.WindowsError
+pub fn WLXSCNOTIFICATIONINFO_2764780cffad::set_psz_container_raw(Self, @core.RawAddress) -> Unit raise @core.WindowsError
+pub fn WLXSCNOTIFICATIONINFO_2764780cffad::set_psz_crypto_provider(Self, @strings.PWStrBuffer) -> Unit raise @core.WindowsError
+pub fn WLXSCNOTIFICATIONINFO_2764780cffad::set_psz_crypto_provider_raw(Self, @core.RawAddress) -> Unit raise @core.WindowsError
+pub fn WLXSCNOTIFICATIONINFO_2764780cffad::set_psz_reader(Self, @strings.PWStrBuffer) -> Unit raise @core.WindowsError
+pub fn WLXSCNOTIFICATIONINFO_2764780cffad::set_psz_reader_raw(Self, @core.RawAddress) -> Unit raise @core.WindowsError
+pub fn[T] WLXSCNOTIFICATIONINFO_2764780cffad::with_raw_address(Self, (@core.RawAddress) -> T raise?) -> T raise
+pub impl Eq for WLXSCNOTIFICATIONINFO_2764780cffad
+pub impl @debug.Debug for WLXSCNOTIFICATIONINFO_2764780cffad
+
+pub(all) struct WLXSHUTDOWNTYPE_951f320c2f40(Int) derive(Compare, Eq, @debug.Debug)
+pub fn WLXSHUTDOWNTYPE_951f320c2f40::from_int(Int) -> Self
+pub fn WLXSHUTDOWNTYPE_951f320c2f40::to_int(Self) -> Int
+pub fn WLXSHUTDOWNTYPE_951f320c2f40::wlx_sas_action_shutdown() -> Self
+pub fn WLXSHUTDOWNTYPE_951f320c2f40::wlx_sas_action_shutdown_power_off() -> Self
+pub fn WLXSHUTDOWNTYPE_951f320c2f40::wlx_sas_action_shutdown_reboot() -> Self
+
+pub(all) struct WLXTERMINALSERVICESDATA_1e5c3b459c6a {
+  raw_buffer : @core.NativeBuffer
+}
+pub fn WLXTERMINALSERVICESDATA_1e5c3b459c6a::abi_alignment() -> Int
+pub fn WLXTERMINALSERVICESDATA_1e5c3b459c6a::abi_size() -> Int
+pub fn WLXTERMINALSERVICESDATA_1e5c3b459c6a::bytes(Self) -> Bytes raise @core.WindowsError
+pub fn WLXTERMINALSERVICESDATA_1e5c3b459c6a::from_bytes(Bytes) -> Self raise @core.WindowsError
+pub fn WLXTERMINALSERVICESDATA_1e5c3b459c6a::new() -> Self raise @core.WindowsError
+pub fn WLXTERMINALSERVICESDATA_1e5c3b459c6a::raw_address(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn[T] WLXTERMINALSERVICESDATA_1e5c3b459c6a::with_raw_address(Self, (@core.RawAddress) -> T raise?) -> T raise
+pub impl Eq for WLXTERMINALSERVICESDATA_1e5c3b459c6a
+pub impl @debug.Debug for WLXTERMINALSERVICESDATA_1e5c3b459c6a
+
+// Type aliases
+
+// Traits

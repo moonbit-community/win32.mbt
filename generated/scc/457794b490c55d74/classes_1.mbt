@@ -1,0 +1,204 @@
+///|
+pub fn RTCSESSIONTYPE_05f005f55bd8::rtcst_multiparty_im() -> RTCSESSIONTYPE_05f005f55bd8 {
+  RTCSESSIONTYPE_05f005f55bd8::from_int(4)
+}
+
+///|
+pub fn RTCSESSIONTYPE_05f005f55bd8::rtcst_pc_to_pc() -> RTCSESSIONTYPE_05f005f55bd8 {
+  RTCSESSIONTYPE_05f005f55bd8::from_int(0)
+}
+
+///|
+pub fn RTCSESSIONTYPE_05f005f55bd8::rtcst_pc_to_phone() -> RTCSESSIONTYPE_05f005f55bd8 {
+  RTCSESSIONTYPE_05f005f55bd8::from_int(1)
+}
+
+///|
+pub fn RTCSESSIONTYPE_05f005f55bd8::rtcst_phone_to_phone() -> RTCSESSIONTYPE_05f005f55bd8 {
+  RTCSESSIONTYPE_05f005f55bd8::from_int(2)
+}
+
+///|
+pub fn RTCT120APPLET_1ebb4c05cb69::rtcta_appsharing() -> RTCT120APPLET_1ebb4c05cb69 {
+  RTCT120APPLET_1ebb4c05cb69::from_int(1)
+}
+
+///|
+pub fn RTCT120APPLET_1ebb4c05cb69::rtcta_whiteboard() -> RTCT120APPLET_1ebb4c05cb69 {
+  RTCT120APPLET_1ebb4c05cb69::from_int(0)
+}
+
+///|
+pub fn RTCTERMINATEREASON_94f23ddb0db7::rtctr_busy() -> RTCTERMINATEREASON_94f23ddb0db7 {
+  RTCTERMINATEREASON_94f23ddb0db7::from_int(2)
+}
+
+///|
+pub fn RTCTERMINATEREASON_94f23ddb0db7::rtctr_dnd() -> RTCTERMINATEREASON_94f23ddb0db7 {
+  RTCTERMINATEREASON_94f23ddb0db7::from_int(1)
+}
+
+///|
+pub fn RTCTERMINATEREASON_94f23ddb0db7::rtctr_insufficient_security_level() -> RTCTERMINATEREASON_94f23ddb0db7 {
+  RTCTERMINATEREASON_94f23ddb0db7::from_int(6)
+}
+
+///|
+pub fn RTCTERMINATEREASON_94f23ddb0db7::rtctr_normal() -> RTCTERMINATEREASON_94f23ddb0db7 {
+  RTCTERMINATEREASON_94f23ddb0db7::from_int(0)
+}
+
+///|
+pub fn RTCTERMINATEREASON_94f23ddb0db7::rtctr_not_supported() -> RTCTERMINATEREASON_94f23ddb0db7 {
+  RTCTERMINATEREASON_94f23ddb0db7::from_int(7)
+}
+
+///|
+pub fn RTCTERMINATEREASON_94f23ddb0db7::rtctr_reject() -> RTCTERMINATEREASON_94f23ddb0db7 {
+  RTCTERMINATEREASON_94f23ddb0db7::from_int(3)
+}
+
+///|
+pub fn RTCTERMINATEREASON_94f23ddb0db7::rtctr_shutdown() -> RTCTERMINATEREASON_94f23ddb0db7 {
+  RTCTERMINATEREASON_94f23ddb0db7::from_int(5)
+}
+
+///|
+pub fn RTCTERMINATEREASON_94f23ddb0db7::rtctr_timeout() -> RTCTERMINATEREASON_94f23ddb0db7 {
+  RTCTERMINATEREASON_94f23ddb0db7::from_int(4)
+}
+
+///|
+pub fn RTCUSERSEARCHCOLUMN_7cd529200818::rtcusc_city() -> RTCUSERSEARCHCOLUMN_7cd529200818 {
+  RTCUSERSEARCHCOLUMN_7cd529200818::from_int(6)
+}
+
+///|
+pub fn RTCUSERSEARCHCOLUMN_7cd529200818::rtcusc_company() -> RTCUSERSEARCHCOLUMN_7cd529200818 {
+  RTCUSERSEARCHCOLUMN_7cd529200818::from_int(5)
+}
+
+///|
+pub fn RTCUSERSEARCHCOLUMN_7cd529200818::rtcusc_country() -> RTCUSERSEARCHCOLUMN_7cd529200818 {
+  RTCUSERSEARCHCOLUMN_7cd529200818::from_int(8)
+}
+
+///|
+pub fn RTCUSERSEARCHCOLUMN_7cd529200818::rtcusc_displayname() -> RTCUSERSEARCHCOLUMN_7cd529200818 {
+  RTCUSERSEARCHCOLUMN_7cd529200818::from_int(1)
+}
+
+///|
+pub fn RTCUSERSEARCHCOLUMN_7cd529200818::rtcusc_email() -> RTCUSERSEARCHCOLUMN_7cd529200818 {
+  RTCUSERSEARCHCOLUMN_7cd529200818::from_int(9)
+}
+
+///|
+pub fn RTCUSERSEARCHCOLUMN_7cd529200818::rtcusc_office() -> RTCUSERSEARCHCOLUMN_7cd529200818 {
+  RTCUSERSEARCHCOLUMN_7cd529200818::from_int(3)
+}
+
+///|
+pub fn RTCUSERSEARCHCOLUMN_7cd529200818::rtcusc_phone() -> RTCUSERSEARCHCOLUMN_7cd529200818 {
+  RTCUSERSEARCHCOLUMN_7cd529200818::from_int(4)
+}
+
+///|
+pub fn RTCUSERSEARCHCOLUMN_7cd529200818::rtcusc_state() -> RTCUSERSEARCHCOLUMN_7cd529200818 {
+  RTCUSERSEARCHCOLUMN_7cd529200818::from_int(7)
+}
+
+///|
+pub fn RTCUSERSEARCHCOLUMN_7cd529200818::rtcusc_title() -> RTCUSERSEARCHCOLUMN_7cd529200818 {
+  RTCUSERSEARCHCOLUMN_7cd529200818::from_int(2)
+}
+
+///|
+pub fn RTCUSERSEARCHCOLUMN_7cd529200818::rtcusc_uri() -> RTCUSERSEARCHCOLUMN_7cd529200818 {
+  RTCUSERSEARCHCOLUMN_7cd529200818::from_int(0)
+}
+
+///|
+pub fn RTCUSERSEARCHPREFERENCE_e00994ca2cb2::rtcusp_max_matches() -> RTCUSERSEARCHPREFERENCE_e00994ca2cb2 {
+  RTCUSERSEARCHPREFERENCE_e00994ca2cb2::from_int(0)
+}
+
+///|
+pub fn RTCUSERSEARCHPREFERENCE_e00994ca2cb2::rtcusp_time_limit() -> RTCUSERSEARCHPREFERENCE_e00994ca2cb2 {
+  RTCUSERSEARCHPREFERENCE_e00994ca2cb2::from_int(1)
+}
+
+///|
+pub fn RTCVIDEODEVICE_ba547fb6091f::rtcvd_preview() -> RTCVIDEODEVICE_ba547fb6091f {
+  RTCVIDEODEVICE_ba547fb6091f::from_int(1)
+}
+
+///|
+pub fn RTCVIDEODEVICE_ba547fb6091f::rtcvd_receive() -> RTCVIDEODEVICE_ba547fb6091f {
+  RTCVIDEODEVICE_ba547fb6091f::from_int(0)
+}
+
+///|
+pub fn RTCWATCHEREVENTTYPE_3bc12eab8539::rtcwet_watcher_add() -> RTCWATCHEREVENTTYPE_3bc12eab8539 {
+  RTCWATCHEREVENTTYPE_3bc12eab8539::from_int(0)
+}
+
+///|
+pub fn RTCWATCHEREVENTTYPE_3bc12eab8539::rtcwet_watcher_offering() -> RTCWATCHEREVENTTYPE_3bc12eab8539 {
+  RTCWATCHEREVENTTYPE_3bc12eab8539::from_int(3)
+}
+
+///|
+pub fn RTCWATCHEREVENTTYPE_3bc12eab8539::rtcwet_watcher_remove() -> RTCWATCHEREVENTTYPE_3bc12eab8539 {
+  RTCWATCHEREVENTTYPE_3bc12eab8539::from_int(1)
+}
+
+///|
+pub fn RTCWATCHEREVENTTYPE_3bc12eab8539::rtcwet_watcher_roamed() -> RTCWATCHEREVENTTYPE_3bc12eab8539 {
+  RTCWATCHEREVENTTYPE_3bc12eab8539::from_int(4)
+}
+
+///|
+pub fn RTCWATCHEREVENTTYPE_3bc12eab8539::rtcwet_watcher_update() -> RTCWATCHEREVENTTYPE_3bc12eab8539 {
+  RTCWATCHEREVENTTYPE_3bc12eab8539::from_int(2)
+}
+
+///|
+pub fn RTCWATCHERMATCHMODE_968991fd25cb::rtcwmm_best_ace_match() -> RTCWATCHERMATCHMODE_968991fd25cb {
+  RTCWATCHERMATCHMODE_968991fd25cb::from_int(1)
+}
+
+///|
+pub fn RTCWATCHERMATCHMODE_968991fd25cb::rtcwmm_exact_match() -> RTCWATCHERMATCHMODE_968991fd25cb {
+  RTCWATCHERMATCHMODE_968991fd25cb::from_int(0)
+}
+
+///|
+pub fn RTCWATCHERSTATE_98fcb5208dab::rtcws_allowed() -> RTCWATCHERSTATE_98fcb5208dab {
+  RTCWATCHERSTATE_98fcb5208dab::from_int(2)
+}
+
+///|
+pub fn RTCWATCHERSTATE_98fcb5208dab::rtcws_blocked() -> RTCWATCHERSTATE_98fcb5208dab {
+  RTCWATCHERSTATE_98fcb5208dab::from_int(3)
+}
+
+///|
+pub fn RTCWATCHERSTATE_98fcb5208dab::rtcws_denied() -> RTCWATCHERSTATE_98fcb5208dab {
+  RTCWATCHERSTATE_98fcb5208dab::from_int(4)
+}
+
+///|
+pub fn RTCWATCHERSTATE_98fcb5208dab::rtcws_offering() -> RTCWATCHERSTATE_98fcb5208dab {
+  RTCWATCHERSTATE_98fcb5208dab::from_int(1)
+}
+
+///|
+pub fn RTCWATCHERSTATE_98fcb5208dab::rtcws_prompt() -> RTCWATCHERSTATE_98fcb5208dab {
+  RTCWATCHERSTATE_98fcb5208dab::from_int(5)
+}
+
+///|
+pub fn RTCWATCHERSTATE_98fcb5208dab::rtcws_unknown() -> RTCWATCHERSTATE_98fcb5208dab {
+  RTCWATCHERSTATE_98fcb5208dab::from_int(0)
+}

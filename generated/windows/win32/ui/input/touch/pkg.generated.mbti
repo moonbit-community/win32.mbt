@@ -1,0 +1,87 @@
+// Generated using `moon info`, DON'T EDIT IT
+package "moonbit-community/win32api/windows/win32/ui/input/touch"
+
+import {
+  "moonbit-community/win32api/runtime/core",
+  "moonbit-community/win32api/scc/bf570a75e1939d88",
+}
+
+// Values
+pub fn close_gesture_info_handle(@core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn close_gesture_info_handle_raw(@core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn close_touch_input_handle(@core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn close_touch_input_handle_raw(@core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn get_gesture_config(@core.RawAddress, UInt, UInt, @core.RawAddress, @bf570a75e1939d88.GESTURECONFIG_c204d86219eb, UInt) -> Bool raise @core.WindowsError
+
+pub fn get_gesture_config_raw(@core.RawAddress, UInt, UInt, @core.RawAddress, @core.RawAddress, UInt) -> @core.RawWin32Call[Int]
+
+pub fn get_gesture_extra_args(@core.RawAddress, UInt, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn get_gesture_extra_args_raw(@core.RawAddress, UInt, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn get_gesture_info(@core.RawAddress, @bf570a75e1939d88.GESTUREINFO_7d7256444b22) -> Bool raise @core.WindowsError
+
+pub fn get_gesture_info_raw(@core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn get_touch_input_info(@core.RawAddress, UInt, @bf570a75e1939d88.TOUCHINPUT_a30b150872e9, Int) -> Bool raise @core.WindowsError
+
+pub fn get_touch_input_info_raw(@core.RawAddress, UInt, @core.RawAddress, Int) -> @core.RawWin32Call[Int]
+
+pub fn is_touch_window(@core.RawAddress, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn is_touch_window_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn register_touch_window(@core.RawAddress, @bf570a75e1939d88.REGISTERTOUCHWINDOWFLAGS_850a2792fdbe) -> Bool raise @core.WindowsError
+
+pub fn register_touch_window_raw(@core.RawAddress, UInt) -> @core.RawWin32Call[Int]
+
+pub fn set_gesture_config(@core.RawAddress, UInt, UInt, @bf570a75e1939d88.GESTURECONFIG_c204d86219eb, UInt) -> Bool raise @core.WindowsError
+
+pub fn set_gesture_config_raw(@core.RawAddress, UInt, UInt, @core.RawAddress, UInt) -> @core.RawWin32Call[Int]
+
+pub fn unregister_touch_window(@core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn unregister_touch_window_raw(@core.RawAddress) -> @core.RawWin32Call[Int]
+
+// Errors
+
+// Types and methods
+
+// Type aliases
+pub using @bf570a75e1939d88 {type GESTURECONFIG_c204d86219eb as GESTURECONFIG}
+
+pub using @bf570a75e1939d88 {type GESTURECONFIGID_804e8bcb4640 as GESTURECONFIGID}
+
+pub using @bf570a75e1939d88 {type GESTUREINFO_7d7256444b22 as GESTUREINFO}
+
+pub using @bf570a75e1939d88 {type GESTURENOTIFYSTRUCT_6dc8441d79b8 as GESTURENOTIFYSTRUCT}
+
+pub using @bf570a75e1939d88 {type HGESTUREINFO_fef375d91ff7 as HGESTUREINFO}
+
+pub using @bf570a75e1939d88 {type HTOUCHINPUT_ec2f55076fcd as HTOUCHINPUT}
+
+pub using @bf570a75e1939d88 {type IInertiaProcessor_444fd1fcb02d as IInertiaProcessor}
+
+pub using @bf570a75e1939d88 {type IManipulationEvents_3e04c6d4826c as IManipulationEvents}
+
+pub using @bf570a75e1939d88 {type IManipulationProcessor_2f30112669a6 as IManipulationProcessor}
+
+pub using @bf570a75e1939d88 {type InertiaProcessor_17d1dccc381c as InertiaProcessor}
+
+pub using @bf570a75e1939d88 {type MANIPULATIONPROCESSORMANIPULATIONS_26ac4973920b as MANIPULATIONPROCESSORMANIPULATIONS}
+
+pub using @bf570a75e1939d88 {type ManipulationProcessor_f527e8ffcefb as ManipulationProcessor}
+
+pub using @bf570a75e1939d88 {type REGISTERTOUCHWINDOWFLAGS_850a2792fdbe as REGISTERTOUCHWINDOWFLAGS}
+
+pub using @bf570a75e1939d88 {type TOUCHEVENTFFLAGS_0f7327f74444 as TOUCHEVENTFFLAGS}
+
+pub using @bf570a75e1939d88 {type TOUCHINPUT_a30b150872e9 as TOUCHINPUT}
+
+pub using @bf570a75e1939d88 {type TOUCHINPUTMASKFMASK_dd823f534baf as TOUCHINPUTMASKFMASK}
+
+// Traits

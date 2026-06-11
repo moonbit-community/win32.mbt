@@ -1,0 +1,92 @@
+// Generated using `moon info`, DON'T EDIT IT
+package "moonbit-community/win32api/windows/win32/networking/web_socket"
+
+import {
+  "moonbit-community/win32api/runtime/core",
+  "moonbit-community/win32api/runtime/strings",
+  "moonbit-community/win32api/scc/d10c2c988308f94e",
+}
+
+// Values
+pub fn web_socket_abort_handle(@core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn web_socket_abort_handle_raw(@core.RawAddress) -> Unit
+
+pub fn web_socket_begin_client_handshake(@core.RawAddress, @strings.PStr?, UInt, @strings.PStr?, UInt, @d10c2c988308f94e.WEBSOCKETHTTPHEADER_1b9174017c77?, UInt, @core.RawAddress, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn web_socket_begin_client_handshake_raw(@core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, UInt, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn web_socket_begin_server_handshake(@core.RawAddress, @strings.PStr?, @strings.PStr?, UInt, @d10c2c988308f94e.WEBSOCKETHTTPHEADER_1b9174017c77, UInt, @core.RawAddress, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn web_socket_begin_server_handshake_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn web_socket_complete_action(@core.RawAddress, @core.RawAddress, UInt) -> Unit raise @core.WindowsError
+
+pub fn web_socket_complete_action_raw(@core.RawAddress, @core.RawAddress, UInt) -> Unit
+
+pub fn web_socket_create_client_handle(@d10c2c988308f94e.WEBSOCKETPROPERTY_81cc8cd7adcd, UInt, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn web_socket_create_client_handle_raw(@core.RawAddress, UInt, @core.RawAddress) -> Int
+
+pub fn web_socket_create_server_handle(@d10c2c988308f94e.WEBSOCKETPROPERTY_81cc8cd7adcd, UInt, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn web_socket_create_server_handle_raw(@core.RawAddress, UInt, @core.RawAddress) -> Int
+
+pub fn web_socket_delete_handle(@core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn web_socket_delete_handle_raw(@core.RawAddress) -> Unit
+
+pub fn web_socket_end_client_handshake(@core.RawAddress, @d10c2c988308f94e.WEBSOCKETHTTPHEADER_1b9174017c77, UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn web_socket_end_client_handshake_raw(@core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn web_socket_end_server_handshake(@core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn web_socket_end_server_handshake_raw(@core.RawAddress) -> Int
+
+pub fn web_socket_get_action(@core.RawAddress, @d10c2c988308f94e.WEBSOCKETACTIONQUEUE_2860173ea389, @d10c2c988308f94e.WEBSOCKETBUFFER_5f818bd0aa3c, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn web_socket_get_action_raw(@core.RawAddress, Int, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn web_socket_get_global_property(@d10c2c988308f94e.WEBSOCKETPROPERTYTYPE_8d653822b8a2, @core.RawAddress, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn web_socket_get_global_property_raw(Int, @core.RawAddress, @core.RawAddress) -> Int
+
+pub let web_socket_max_close_reason_length : UInt
+
+pub fn web_socket_receive(@core.RawAddress, @d10c2c988308f94e.WEBSOCKETBUFFER_5f818bd0aa3c?, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn web_socket_receive_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn web_socket_send(@core.RawAddress, @d10c2c988308f94e.WEBSOCKETBUFFERTYPE_e9000dd9f9a3, @d10c2c988308f94e.WEBSOCKETBUFFER_5f818bd0aa3c?, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn web_socket_send_raw(@core.RawAddress, Int, @core.RawAddress, @core.RawAddress) -> Int
+
+// Errors
+
+// Types and methods
+
+// Type aliases
+pub using @d10c2c988308f94e {type WEBSOCKETACTION_db743b4117ee as WEBSOCKETACTION}
+
+pub using @d10c2c988308f94e {type WEBSOCKETACTIONQUEUE_2860173ea389 as WEBSOCKETACTIONQUEUE}
+
+pub using @d10c2c988308f94e {type WEBSOCKETBUFFER_5f818bd0aa3c as WEBSOCKETBUFFER}
+
+pub using @d10c2c988308f94e {type WEBSOCKETBUFFERCloseStatusEStruct_fc663b99d888 as WEBSOCKETBUFFERCloseStatusEStruct}
+
+pub using @d10c2c988308f94e {type WEBSOCKETBUFFERDataEStruct_bbf76486fadc as WEBSOCKETBUFFERDataEStruct}
+
+pub using @d10c2c988308f94e {type WEBSOCKETBUFFERTYPE_e9000dd9f9a3 as WEBSOCKETBUFFERTYPE}
+
+pub using @d10c2c988308f94e {type WEBSOCKETCLOSESTATUS_a3e4f122d2c7 as WEBSOCKETCLOSESTATUS}
+
+pub using @d10c2c988308f94e {type WEBSOCKETHANDLE_7ded2c7acb5a as WEBSOCKETHANDLE}
+
+pub using @d10c2c988308f94e {type WEBSOCKETHTTPHEADER_1b9174017c77 as WEBSOCKETHTTPHEADER}
+
+pub using @d10c2c988308f94e {type WEBSOCKETPROPERTY_81cc8cd7adcd as WEBSOCKETPROPERTY}
+
+pub using @d10c2c988308f94e {type WEBSOCKETPROPERTYTYPE_8d653822b8a2 as WEBSOCKETPROPERTYTYPE}
+
+// Traits

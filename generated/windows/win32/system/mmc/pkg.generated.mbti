@@ -1,0 +1,454 @@
+// Generated using `moon info`, DON'T EDIT IT
+package "moonbit-community/win32api/windows/win32/system/mmc"
+
+import {
+  "moonbit-community/win32api/scc/11c15c42a9191fa0",
+}
+
+// Values
+pub let auto_width : Int
+
+pub let hdi_hidden : UInt
+
+pub let hide_column : Int
+
+pub let ilsif_leave_large_icon : UInt
+
+pub let ilsif_leave_small_icon : UInt
+
+pub let mmc_default_operation_copy : UInt
+
+pub let mmc_imagecallback : Int
+
+pub let mmc_item_overlay_state_mask : UInt
+
+pub let mmc_item_overlay_state_shift : UInt
+
+pub let mmc_item_state_mask : UInt
+
+pub let mmc_multi_select_cookie : Int
+
+pub let mmc_nodeid_slow_retrieval : UInt
+
+pub let mmc_nw_option_customtitle : UInt
+
+pub let mmc_nw_option_noactionpane : UInt
+
+pub let mmc_nw_option_none : UInt
+
+pub let mmc_nw_option_nopersist : UInt
+
+pub let mmc_nw_option_noscopepane : UInt
+
+pub let mmc_nw_option_notoolbars : UInt
+
+pub let mmc_nw_option_shorttitle : UInt
+
+pub let mmc_prop_changeaffectsui : UInt
+
+pub let mmc_prop_modifiable : UInt
+
+pub let mmc_prop_persist : UInt
+
+pub let mmc_prop_removable : UInt
+
+pub let mmc_pso_hashelp : UInt
+
+pub let mmc_pso_newwizardtype : UInt
+
+pub let mmc_pso_no_proptitle : UInt
+
+pub let mmc_pso_noapplynow : UInt
+
+pub let mmc_ver : UInt
+
+pub let mmc_view_options_createnew : UInt
+
+pub let mmc_view_options_exclude_scope_items_from_list : UInt
+
+pub let mmc_view_options_filtered : UInt
+
+pub let mmc_view_options_lexical_sort : UInt
+
+pub let mmc_view_options_multiselect : UInt
+
+pub let mmc_view_options_nolistviews : UInt
+
+pub let mmc_view_options_none : UInt
+
+pub let mmc_view_options_ownerdatalist : UInt
+
+pub let mmc_view_options_usefontlinking : UInt
+
+pub let mmc_window_cookie : Int
+
+pub let mmclv_auto : Int
+
+pub let mmclv_noicon : Int
+
+pub let mmclv_noparam : Int
+
+pub let mmclv_noptr : UInt
+
+pub let mmclv_update_noinvalidateall : UInt
+
+pub let mmclv_update_noscroll : UInt
+
+pub let mmclv_viewstyle_filtered : UInt
+
+pub let mmclv_viewstyle_icon : UInt
+
+pub let mmclv_viewstyle_list : UInt
+
+pub let mmclv_viewstyle_report : UInt
+
+pub let mmclv_viewstyle_smallicon : UInt
+
+pub let rdci_scope_item : UInt
+
+pub let rdi_image : UInt
+
+pub let rdi_indent : UInt
+
+pub let rdi_index : UInt
+
+pub let rdi_param : UInt
+
+pub let rdi_state : UInt
+
+pub let rdi_str : UInt
+
+pub let rfi_partial : UInt
+
+pub let rfi_wrap : UInt
+
+pub let rsi_descending : UInt
+
+pub let rsi_nosorticon : UInt
+
+pub let rvti_html_options_nolistview : UInt
+
+pub let rvti_html_options_none : UInt
+
+pub let rvti_list_options_allowpaste : UInt
+
+pub let rvti_list_options_exclude_scope_items_from_list : UInt
+
+pub let rvti_list_options_filtered : UInt
+
+pub let rvti_list_options_lexical_sort : UInt
+
+pub let rvti_list_options_multiselect : UInt
+
+pub let rvti_list_options_none : UInt
+
+pub let rvti_list_options_ownerdatalist : UInt
+
+pub let rvti_list_options_usefontlinking : UInt
+
+pub let rvti_misc_options_nolistviews : UInt
+
+pub let rvti_ocx_options_cache_ocx : UInt
+
+pub let rvti_ocx_options_nolistview : UInt
+
+pub let rvti_ocx_options_none : UInt
+
+pub let sdi_children : UInt
+
+pub let sdi_first : UInt
+
+pub let sdi_image : UInt
+
+pub let sdi_next : UInt
+
+pub let sdi_openimage : UInt
+
+pub let sdi_param : UInt
+
+pub let sdi_parent : UInt
+
+pub let sdi_previous : UInt
+
+pub let sdi_state : UInt
+
+pub let sdi_str : UInt
+
+pub let special_cookie_max : Int
+
+pub let special_cookie_min : Int
+
+pub let special_dobj_max : UInt
+
+pub let special_dobj_min : Int
+
+// Errors
+
+// Types and methods
+
+// Type aliases
+pub using @11c15c42a9191fa0 {type AppEvents_01ad60298c2b as AppEvents}
+
+pub using @11c15c42a9191fa0 {type AppEventsDHTMLConnector_35bf7c572111 as AppEventsDHTMLConnector}
+
+pub using @11c15c42a9191fa0 {type AppEvents_c381c943f423 as AppEvents_no_args}
+
+pub using @11c15c42a9191fa0 {type Application_309cee93441c as Application}
+
+pub using @11c15c42a9191fa0 {type Application_af5dc1ac84b4 as Application_no_args}
+
+pub using @11c15c42a9191fa0 {type CCMCOMMANDIDMASKCONSTANTS_7174ed60c67c as CCMCOMMANDIDMASKCONSTANTS}
+
+pub using @11c15c42a9191fa0 {type CCMINSERTIONALLOWED_8bea33d3ff40 as CCMINSERTIONALLOWED}
+
+pub using @11c15c42a9191fa0 {type CCMINSERTIONPOINTID_df0e3b61e453 as CCMINSERTIONPOINTID}
+
+pub using @11c15c42a9191fa0 {type CCMSPECIAL_29932ebfceba as CCMSPECIAL}
+
+pub using @11c15c42a9191fa0 {type CONTEXTMENUITEM_e6c528eff4cc as CONTEXTMENUITEM}
+
+pub using @11c15c42a9191fa0 {type CONTEXTMENUITEM2_2b978da3fa3d as CONTEXTMENUITEM2}
+
+pub using @11c15c42a9191fa0 {type Column_3fbe947a2d8d as Column}
+
+pub using @11c15c42a9191fa0 {type ColumnSortOrder_9120f1db14e0 as ColumnSortOrder}
+
+pub using @11c15c42a9191fa0 {type Columns_a43cc1b4a520 as Columns}
+
+pub using @11c15c42a9191fa0 {type ConsolePower_b9e6c521d031 as ConsolePower}
+
+pub using @11c15c42a9191fa0 {type ContextMenu_5e2a00e5943b as ContextMenu}
+
+pub using @11c15c42a9191fa0 {type DATAOBJECTTYPES_26914fc63170 as DATAOBJECTTYPES}
+
+pub using @11c15c42a9191fa0 {type Document_b8712b63f7a3 as Document}
+
+pub using @11c15c42a9191fa0 {type DocumentMode_8770b0d39be1 as DocumentMode}
+
+pub using @11c15c42a9191fa0 {type EventConnector_af14fe74d8ee as EventConnector}
+
+pub using @11c15c42a9191fa0 {type ExportListOptions_188e5690113b as ExportListOptions}
+
+pub using @11c15c42a9191fa0 {type Extension_8594060359a1 as Extension}
+
+pub using @11c15c42a9191fa0 {type Extensions_33bf3e8abf20 as Extensions}
+
+pub using @11c15c42a9191fa0 {type Frame_a338d2c13786 as Frame}
+
+pub using @11c15c42a9191fa0 {type IColumnData_4e1db55bfc55 as IColumnData}
+
+pub using @11c15c42a9191fa0 {type IComponent_87e842c48149 as IComponent}
+
+pub using @11c15c42a9191fa0 {type IComponent2_e43f27dd0f0b as IComponent2}
+
+pub using @11c15c42a9191fa0 {type IComponentData_4202eab4435f as IComponentData}
+
+pub using @11c15c42a9191fa0 {type IComponentData2_9936b5bee02c as IComponentData2}
+
+pub using @11c15c42a9191fa0 {type IConsole_385a4aa70f29 as IConsole}
+
+pub using @11c15c42a9191fa0 {type IConsole2_8876a51adcb9 as IConsole2}
+
+pub using @11c15c42a9191fa0 {type IConsole3_f3d115dc5473 as IConsole3}
+
+pub using @11c15c42a9191fa0 {type IConsoleNameSpace_6eab8af4f7fd as IConsoleNameSpace}
+
+pub using @11c15c42a9191fa0 {type IConsoleNameSpace2_ffb2c74acd0b as IConsoleNameSpace2}
+
+pub using @11c15c42a9191fa0 {type IConsolePower_4d3444741e14 as IConsolePower}
+
+pub using @11c15c42a9191fa0 {type IConsolePowerSink_ecdb0fdaf578 as IConsolePowerSink}
+
+pub using @11c15c42a9191fa0 {type IConsoleVerb_ec4872383b7a as IConsoleVerb}
+
+pub using @11c15c42a9191fa0 {type IContextMenuCallback_5b667bca846c as IContextMenuCallback}
+
+pub using @11c15c42a9191fa0 {type IContextMenuCallback2_6f9b2267741f as IContextMenuCallback2}
+
+pub using @11c15c42a9191fa0 {type IContextMenuProvider_adcf372f3832 as IContextMenuProvider}
+
+pub using @11c15c42a9191fa0 {type IControlbar_3da5a003957b as IControlbar}
+
+pub using @11c15c42a9191fa0 {type IDisplayHelp_1a7ab04b7f89 as IDisplayHelp}
+
+pub using @11c15c42a9191fa0 {type IEnumTASK_25ae82904926 as IEnumTASK}
+
+pub using @11c15c42a9191fa0 {type IExtendContextMenu_860c33c04879 as IExtendContextMenu}
+
+pub using @11c15c42a9191fa0 {type IExtendControlbar_664340eba027 as IExtendControlbar}
+
+pub using @11c15c42a9191fa0 {type IExtendPropertySheet_f1434ea52db9 as IExtendPropertySheet}
+
+pub using @11c15c42a9191fa0 {type IExtendPropertySheet2_2566eab56454 as IExtendPropertySheet2}
+
+pub using @11c15c42a9191fa0 {type IExtendTaskPad_34fd3ff30d9f as IExtendTaskPad}
+
+pub using @11c15c42a9191fa0 {type IExtendView_8ccb525e2ea9 as IExtendView}
+
+pub using @11c15c42a9191fa0 {type IHeaderCtrl_e6ae72a78b17 as IHeaderCtrl}
+
+pub using @11c15c42a9191fa0 {type IHeaderCtrl2_6e397cbf103a as IHeaderCtrl2}
+
+pub using @11c15c42a9191fa0 {type IImageList_ba282010bb2c as IImageList}
+
+pub using @11c15c42a9191fa0 {type IMMCVersionInfo_47d3971184da as IMMCVersionInfo}
+
+pub using @11c15c42a9191fa0 {type IMenuButton_0fe092b5d43d as IMenuButton}
+
+pub using @11c15c42a9191fa0 {type IMessageView_8f02b6f70b22 as IMessageView}
+
+pub using @11c15c42a9191fa0 {type INodeProperties_8db00e388de7 as INodeProperties}
+
+pub using @11c15c42a9191fa0 {type IPropertySheetCallback_d4019eb95105 as IPropertySheetCallback}
+
+pub using @11c15c42a9191fa0 {type IPropertySheetProvider_9ccdd84d6892 as IPropertySheetProvider}
+
+pub using @11c15c42a9191fa0 {type IRequiredExtensions_20014db94de7 as IRequiredExtensions}
+
+pub using @11c15c42a9191fa0 {type IResultData_8a9c5a506cbb as IResultData}
+
+pub using @11c15c42a9191fa0 {type IResultData2_f032d0a2989c as IResultData2}
+
+pub using @11c15c42a9191fa0 {type IResultDataCompare_f02aa047c929 as IResultDataCompare}
+
+pub using @11c15c42a9191fa0 {type IResultDataCompareEx_ac1bbd058f40 as IResultDataCompareEx}
+
+pub using @11c15c42a9191fa0 {type IResultOwnerData_ac9ae23ec888 as IResultOwnerData}
+
+pub using @11c15c42a9191fa0 {type ISnapinAbout_689823daa0bd as ISnapinAbout}
+
+pub using @11c15c42a9191fa0 {type ISnapinHelp_79767fe47308 as ISnapinHelp}
+
+pub using @11c15c42a9191fa0 {type ISnapinHelp2_ca2d78653e36 as ISnapinHelp2}
+
+pub using @11c15c42a9191fa0 {type ISnapinProperties_7ad8fb3c9555 as ISnapinProperties}
+
+pub using @11c15c42a9191fa0 {type ISnapinPropertiesCallback_7586bc61f553 as ISnapinPropertiesCallback}
+
+pub using @11c15c42a9191fa0 {type IStringTable_d66a573ae65a as IStringTable}
+
+pub using @11c15c42a9191fa0 {type IToolbar_a3fd7466213a as IToolbar}
+
+pub using @11c15c42a9191fa0 {type IViewExtensionCallback_87321fa746bc as IViewExtensionCallback}
+
+pub using @11c15c42a9191fa0 {type IconIdentifier_8826ef3ef9e4 as IconIdentifier}
+
+pub using @11c15c42a9191fa0 {type ListViewMode_cb582b0f98c6 as ListViewMode}
+
+pub using @11c15c42a9191fa0 {type MENUBUTTONDATA_3b7edbff591f as MENUBUTTONDATA}
+
+pub using @11c15c42a9191fa0 {type MMCACTIONTYPE_ed09be0e5d34 as MMCACTIONTYPE}
+
+pub using @11c15c42a9191fa0 {type MMCBUTTON_9b0f9dfe6dc3 as MMCBUTTON}
+
+pub using @11c15c42a9191fa0 {type MMCBUTTONSTATE_a073dad54cc4 as MMCBUTTONSTATE}
+
+pub using @11c15c42a9191fa0 {type MMCCOLUMNDATA_d0c2965db8bf as MMCCOLUMNDATA}
+
+pub using @11c15c42a9191fa0 {type MMCCOLUMNSETDATA_7674754d2421 as MMCCOLUMNSETDATA}
+
+pub using @11c15c42a9191fa0 {type MMCCONSOLEVERB_a2d90dde34c3 as MMCCONSOLEVERB}
+
+pub using @11c15c42a9191fa0 {type MMCCONTROLTYPE_7aee78b2fd75 as MMCCONTROLTYPE}
+
+pub using @11c15c42a9191fa0 {type MMCEXPANDSYNCSTRUCT_914c0e4780d9 as MMCEXPANDSYNCSTRUCT}
+
+pub using @11c15c42a9191fa0 {type MMCEXTVIEWDATA_e4b224d44424 as MMCEXTVIEWDATA}
+
+pub using @11c15c42a9191fa0 {type MMCFILTERCHANGECODE_296de32683b3 as MMCFILTERCHANGECODE}
+
+pub using @11c15c42a9191fa0 {type MMCFILTERDATA_b2ca195f06ba as MMCFILTERDATA}
+
+pub using @11c15c42a9191fa0 {type MMCFILTERTYPE_3c85ff3733ae as MMCFILTERTYPE}
+
+pub using @11c15c42a9191fa0 {type MMCLISTPADINFO_f6a83b76dd6a as MMCLISTPADINFO}
+
+pub using @11c15c42a9191fa0 {type MMCMENUCOMMANDIDS_c143284dd3b9 as MMCMENUCOMMANDIDS}
+
+pub using @11c15c42a9191fa0 {type MMCNOTIFYTYPE_e7acefc30c85 as MMCNOTIFYTYPE}
+
+pub using @11c15c42a9191fa0 {type MMCPROPERTYACTION_ad404d52ab09 as MMCPROPERTYACTION}
+
+pub using @11c15c42a9191fa0 {type MMCRESTOREVIEW_125f3c5bbee4 as MMCRESTOREVIEW}
+
+pub using @11c15c42a9191fa0 {type MMCRESULTVIEWSTYLE_e4b12326784a as MMCRESULTVIEWSTYLE}
+
+pub using @11c15c42a9191fa0 {type MMCSCOPEITEMSTATE_ec25fbcc2a64 as MMCSCOPEITEMSTATE}
+
+pub using @11c15c42a9191fa0 {type MMCSNAPINPROPERTY_009c8eba0b61 as MMCSNAPINPROPERTY}
+
+pub using @11c15c42a9191fa0 {type MMCSORTDATA_cff2b33ae564 as MMCSORTDATA}
+
+pub using @11c15c42a9191fa0 {type MMCSORTSETDATA_46d380b716ea as MMCSORTSETDATA}
+
+pub using @11c15c42a9191fa0 {type MMCTASK_2768032a3567 as MMCTASK}
+
+pub using @11c15c42a9191fa0 {type MMCTASKAnonymousEUnion_bcbd401cf78f as MMCTASKAnonymousEUnion}
+
+pub using @11c15c42a9191fa0 {type MMCTASKDISPLAYBITMAP_d1b123d2de0e as MMCTASKDISPLAYBITMAP}
+
+pub using @11c15c42a9191fa0 {type MMCTASKDISPLAYOBJECT_881eaaebd5db as MMCTASKDISPLAYOBJECT}
+
+pub using @11c15c42a9191fa0 {type MMCTASKDISPLAYOBJECTAnonymousEUnion_b14b6969d809 as MMCTASKDISPLAYOBJECTAnonymousEUnion}
+
+pub using @11c15c42a9191fa0 {type MMCTASKDISPLAYSYMBOL_73e38c4b3359 as MMCTASKDISPLAYSYMBOL}
+
+pub using @11c15c42a9191fa0 {type MMCTASKDISPLAYTYPE_df402bae124e as MMCTASKDISPLAYTYPE}
+
+pub using @11c15c42a9191fa0 {type MMCVIEWTYPE_774482513cf7 as MMCVIEWTYPE}
+
+pub using @11c15c42a9191fa0 {type MMCVISIBLECOLUMNS_866f3ed42d61 as MMCVISIBLECOLUMNS}
+
+pub using @11c15c42a9191fa0 {type MMCVersionInfo_3c79ce8dbc15 as MMCVersionInfo}
+
+pub using @11c15c42a9191fa0 {type MenuItem_ee3e9ea8d998 as MenuItem}
+
+pub using @11c15c42a9191fa0 {type Node_a88a368367a6 as Node}
+
+pub using @11c15c42a9191fa0 {type Nodes_defbf7dc2eac as Nodes}
+
+pub using @11c15c42a9191fa0 {type Properties_c95e6b21bd40 as Properties}
+
+pub using @11c15c42a9191fa0 {type Property_f84759f0e6dd as Property}
+
+pub using @11c15c42a9191fa0 {type RDCOMPARE_c5adba11580b as RDCOMPARE}
+
+pub using @11c15c42a9191fa0 {type RDITEMHDR_dde5afd9ee48 as RDITEMHDR}
+
+pub using @11c15c42a9191fa0 {type RESULTDATAITEM_364f00dea315 as RESULTDATAITEM}
+
+pub using @11c15c42a9191fa0 {type RESULTFINDINFO_b2f08f86492f as RESULTFINDINFO}
+
+pub using @11c15c42a9191fa0 {type RESULTVIEWTYPEINFO_ef757fb3210e as RESULTVIEWTYPEINFO}
+
+pub using @11c15c42a9191fa0 {type RESULTVIEWTYPEINFOAnonymousEUnion_fdb29dd921c3 as RESULTVIEWTYPEINFOAnonymousEUnion}
+
+pub using @11c15c42a9191fa0 {type RESULTVIEWTYPEINFOAnonymousEUnionAnonymous1EStruct_d000e1c61d07 as RESULTVIEWTYPEINFOAnonymousEUnionAnonymous1EStruct}
+
+pub using @11c15c42a9191fa0 {type RESULTVIEWTYPEINFOAnonymousEUnionAnonymous2EStruct_d0ec1bfa83a0 as RESULTVIEWTYPEINFOAnonymousEUnionAnonymous2EStruct}
+
+pub using @11c15c42a9191fa0 {type SCOPEDATAITEM_1989642674b0 as SCOPEDATAITEM}
+
+pub using @11c15c42a9191fa0 {type SColumnSetID_2e3ca1390de8 as SColumnSetID}
+
+pub using @11c15c42a9191fa0 {type SMMCDataObjects_63487a08cef5 as SMMCDataObjects}
+
+pub using @11c15c42a9191fa0 {type SMMCObjectTypes_af12c5286a76 as SMMCObjectTypes}
+
+pub using @11c15c42a9191fa0 {type SNodeID_dfaff94950a9 as SNodeID}
+
+pub using @11c15c42a9191fa0 {type SNodeID2_e378461a0baf as SNodeID2}
+
+pub using @11c15c42a9191fa0 {type ScopeNamespace_5adb623f9031 as ScopeNamespace}
+
+pub using @11c15c42a9191fa0 {type SnapIn_175b3076d88a as SnapIn}
+
+pub using @11c15c42a9191fa0 {type SnapIns_232397889e91 as SnapIns}
+
+pub using @11c15c42a9191fa0 {type View_13cbe69731e1 as View}
+
+pub using @11c15c42a9191fa0 {type ViewOptions_b016f20f85f0 as ViewOptions}
+
+pub using @11c15c42a9191fa0 {type Views_10b4231a682a as Views}
+
+// Traits

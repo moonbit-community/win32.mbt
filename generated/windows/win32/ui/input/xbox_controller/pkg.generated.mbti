@@ -1,0 +1,83 @@
+// Generated using `moon info`, DON'T EDIT IT
+package "moonbit-community/win32api/windows/win32/ui/input/xbox_controller"
+
+import {
+  "moonbit-community/win32api/runtime/core",
+  "moonbit-community/win32api/scc/77585c6f7781853b",
+}
+
+// Values
+pub fn x_input_enable(Int) -> Unit raise @core.WindowsError
+
+pub fn x_input_enable_raw(Int) -> Unit
+
+pub fn x_input_get_audio_device_ids_raw(UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn x_input_get_battery_information(UInt, @77585c6f7781853b.BATTERYDEVTYPE_c8fb5fd28b87, @77585c6f7781853b.XINPUTBATTERYINFORMATION_2f2bdbb326e2) -> UInt raise @core.WindowsError
+
+pub fn x_input_get_battery_information_raw(UInt, UInt, @core.RawAddress) -> UInt
+
+pub fn x_input_get_capabilities(UInt, @77585c6f7781853b.XINPUTFLAG_1d2fc1655289, @77585c6f7781853b.XINPUTCAPABILITIES_d15a94443966) -> UInt raise @core.WindowsError
+
+pub fn x_input_get_capabilities_raw(UInt, UInt, @core.RawAddress) -> UInt
+
+pub fn x_input_get_keystroke(UInt, UInt, @77585c6f7781853b.XINPUTKEYSTROKE_c0f3967cefa2) -> UInt raise @core.WindowsError
+
+pub fn x_input_get_keystroke_raw(UInt, UInt, @core.RawAddress) -> UInt
+
+pub fn x_input_get_state(UInt, @77585c6f7781853b.XINPUTSTATE_e6f9c94592b0) -> UInt raise @core.WindowsError
+
+pub fn x_input_get_state_raw(UInt, @core.RawAddress) -> UInt
+
+pub fn x_input_set_state(UInt, @77585c6f7781853b.XINPUTVIBRATION_186115911e31) -> UInt raise @core.WindowsError
+
+pub fn x_input_set_state_raw(UInt, @core.RawAddress) -> UInt
+
+pub let xinput_dll : String
+
+pub let xinput_dll_a : String
+
+pub let xinput_dll_w : String
+
+pub let xuser_index_any : UInt
+
+pub let xuser_max_count : UInt
+
+// Errors
+
+// Types and methods
+
+// Type aliases
+pub using @77585c6f7781853b {type BATTERYDEVTYPE_c8fb5fd28b87 as BATTERYDEVTYPE}
+
+pub using @77585c6f7781853b {type BATTERYLEVEL_d75da5d99c70 as BATTERYLEVEL}
+
+pub using @77585c6f7781853b {type BATTERYTYPE_040b39a9e8df as BATTERYTYPE}
+
+pub using @77585c6f7781853b {type XINPUTBATTERYINFORMATION_2f2bdbb326e2 as XINPUTBATTERYINFORMATION}
+
+pub using @77585c6f7781853b {type XINPUTCAPABILITIES_d15a94443966 as XINPUTCAPABILITIES}
+
+pub using @77585c6f7781853b {type XINPUTCAPABILITIESFLAGS_43f6c9fcc297 as XINPUTCAPABILITIESFLAGS}
+
+pub using @77585c6f7781853b {type XINPUTDEVSUBTYPE_8fe2059ead64 as XINPUTDEVSUBTYPE}
+
+pub using @77585c6f7781853b {type XINPUTDEVTYPE_ccb424a98cac as XINPUTDEVTYPE}
+
+pub using @77585c6f7781853b {type XINPUTFLAG_1d2fc1655289 as XINPUTFLAG}
+
+pub using @77585c6f7781853b {type XINPUTGAMEPAD_2b239dd94e4e as XINPUTGAMEPAD}
+
+pub using @77585c6f7781853b {type XINPUTGAMEPADBUTTONFLAGS_9381141172bb as XINPUTGAMEPADBUTTONFLAGS}
+
+pub using @77585c6f7781853b {type XINPUTKEYSTROKE_c0f3967cefa2 as XINPUTKEYSTROKE}
+
+pub using @77585c6f7781853b {type XINPUTKEYSTROKEFLAGS_78b219b5e87b as XINPUTKEYSTROKEFLAGS}
+
+pub using @77585c6f7781853b {type XINPUTSTATE_e6f9c94592b0 as XINPUTSTATE}
+
+pub using @77585c6f7781853b {type XINPUTVIBRATION_186115911e31 as XINPUTVIBRATION}
+
+pub using @77585c6f7781853b {type XINPUTVIRTUALKEY_a8c8047991d5 as XINPUTVIRTUALKEY}
+
+// Traits

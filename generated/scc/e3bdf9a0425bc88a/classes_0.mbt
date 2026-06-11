@@ -1,0 +1,9 @@
+///|
+pub fn HARDWARECOUNTERTYPE_cd60759e056e::max_hardware_counter_type() -> HARDWARECOUNTERTYPE_cd60759e056e {
+  HARDWARECOUNTERTYPE_cd60759e056e::from_int(1)
+}
+
+///|
+pub fn HARDWARECOUNTERTYPE_cd60759e056e::pmc_counter() -> HARDWARECOUNTERTYPE_cd60759e056e {
+  HARDWARECOUNTERTYPE_cd60759e056e::from_int(0)
+}

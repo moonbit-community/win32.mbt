@@ -1,0 +1,532 @@
+// Generated using `moon info`, DON'T EDIT IT
+package "moonbit-community/win32api/windows/win32/data/html_help"
+
+import {
+  "moonbit-community/win32api/runtime/core",
+  "moonbit-community/win32api/runtime/strings",
+  "moonbit-community/win32api/scc/ca76d0b0c300c2b4",
+}
+
+// Values
+pub let e_all_wild : Int
+
+pub let e_alreadyinit : Int
+
+pub let e_alreadyopen : Int
+
+pub let e_assert : Int
+
+pub let e_badbreaker : Int
+
+pub let e_badfile : Int
+
+pub let e_badfiltersize : Int
+
+pub let e_badformat : Int
+
+pub let e_badindexflags : Int
+
+pub let e_badparam : Int
+
+pub let e_badrangeop : Int
+
+pub let e_badvalue : Int
+
+pub let e_badversion : Int
+
+pub let e_cantfinddll : Int
+
+pub let e_diskfull : Int
+
+pub let e_duplicate : Int
+
+pub let e_expectedterm : Int
+
+pub let e_fileclose : Int
+
+pub let e_filecreate : Int
+
+pub let e_filedelete : Int
+
+pub let e_fileinvalid : Int
+
+pub let e_filenotfound : Int
+
+pub let e_fileread : Int
+
+pub let e_fileseek : Int
+
+pub let e_filewrite : Int
+
+pub let e_getlasterror : Int
+
+pub let e_groupidtoobig : Int
+
+pub let e_interrupt : Int
+
+pub let e_invalidstate : Int
+
+pub let e_missingprop : Int
+
+pub let e_misslparen : Int
+
+pub let e_missquote : Int
+
+pub let e_missrparen : Int
+
+pub let e_nametoolong : Int
+
+pub let e_nohandle : Int
+
+pub let e_nokeyprop : Int
+
+pub let e_nomergeddata : Int
+
+pub let e_nopermission : Int
+
+pub let e_nostemmer : Int
+
+pub let e_notexist : Int
+
+pub let e_notfound : Int
+
+pub let e_notinit : Int
+
+pub let e_notopen : Int
+
+pub let e_notsupported : Int
+
+pub let e_nullquery : Int
+
+pub let e_outofrange : Int
+
+pub let e_proplistempty : Int
+
+pub let e_proplistnotempty : Int
+
+pub let e_resultsetempty : Int
+
+pub let e_stopword : Int
+
+pub let e_toodeep : Int
+
+pub let e_toomanycolumns : Int
+
+pub let e_toomanydups : Int
+
+pub let e_toomanyobjects : Int
+
+pub let e_toomanytitles : Int
+
+pub let e_toomanytopics : Int
+
+pub let e_treetoobig : Int
+
+pub let e_unknown_transport : Int
+
+pub let e_unmatchedtype : Int
+
+pub let e_unsupported_transport : Int
+
+pub let e_wild_in_dtype : Int
+
+pub let e_wordtoolong : Int
+
+pub let hh_tab_author : Int
+
+pub let hh_tab_contents : Int
+
+pub let hh_tab_custom_first : Int
+
+pub let hh_tab_custom_last : Int
+
+pub let hh_tab_favorites : Int
+
+pub let hh_tab_history : Int
+
+pub let hh_tab_index : Int
+
+pub let hh_tab_search : Int
+
+pub let hhact_back : Int
+
+pub let hhact_contract : Int
+
+pub let hhact_customize : Int
+
+pub let hhact_expand : Int
+
+pub let hhact_forward : Int
+
+pub let hhact_highlight : Int
+
+pub let hhact_home : Int
+
+pub let hhact_jump1 : Int
+
+pub let hhact_jump2 : Int
+
+pub let hhact_last_enum : Int
+
+pub let hhact_notes : Int
+
+pub let hhact_options : Int
+
+pub let hhact_print : Int
+
+pub let hhact_refresh : Int
+
+pub let hhact_stop : Int
+
+pub let hhact_sync : Int
+
+pub let hhact_tab_contents : Int
+
+pub let hhact_tab_favorites : Int
+
+pub let hhact_tab_history : Int
+
+pub let hhact_tab_index : Int
+
+pub let hhact_tab_search : Int
+
+pub let hhact_toc_next : Int
+
+pub let hhact_toc_prev : Int
+
+pub let hhact_zoom : Int
+
+pub let hhn_first : UInt
+
+pub let hhn_last : UInt
+
+pub let hhn_navcomplete : UInt
+
+pub let hhn_track : UInt
+
+pub let hhn_window_create : UInt
+
+pub let hhwin_button_back : UInt
+
+pub let hhwin_button_browse_bck : UInt
+
+pub let hhwin_button_browse_fwd : UInt
+
+pub let hhwin_button_contents : UInt
+
+pub let hhwin_button_expand : UInt
+
+pub let hhwin_button_favorites : UInt
+
+pub let hhwin_button_forward : UInt
+
+pub let hhwin_button_history : UInt
+
+pub let hhwin_button_home : UInt
+
+pub let hhwin_button_index : UInt
+
+pub let hhwin_button_jump1 : UInt
+
+pub let hhwin_button_jump2 : UInt
+
+pub let hhwin_button_notes : UInt
+
+pub let hhwin_button_options : UInt
+
+pub let hhwin_button_print : UInt
+
+pub let hhwin_button_refresh : UInt
+
+pub let hhwin_button_search : UInt
+
+pub let hhwin_button_stop : UInt
+
+pub let hhwin_button_sync : UInt
+
+pub let hhwin_button_toc_next : UInt
+
+pub let hhwin_button_toc_prev : UInt
+
+pub let hhwin_button_zoom : UInt
+
+pub let hhwin_navtab_bottom : Int
+
+pub let hhwin_navtab_left : Int
+
+pub let hhwin_navtab_top : Int
+
+pub let hhwin_navtype_author : Int
+
+pub let hhwin_navtype_custom_first : Int
+
+pub let hhwin_navtype_favorites : Int
+
+pub let hhwin_navtype_history : Int
+
+pub let hhwin_navtype_index : Int
+
+pub let hhwin_navtype_search : Int
+
+pub let hhwin_navtype_toc : Int
+
+pub let hhwin_param_cur_tab : UInt
+
+pub let hhwin_param_expansion : UInt
+
+pub let hhwin_param_exstyles : UInt
+
+pub let hhwin_param_history_count : UInt
+
+pub let hhwin_param_infotypes : UInt
+
+pub let hhwin_param_nav_width : UInt
+
+pub let hhwin_param_properties : UInt
+
+pub let hhwin_param_rect : UInt
+
+pub let hhwin_param_showstate : UInt
+
+pub let hhwin_param_styles : UInt
+
+pub let hhwin_param_taborder : UInt
+
+pub let hhwin_param_tabpos : UInt
+
+pub let hhwin_param_tb_flags : UInt
+
+pub let hhwin_prop_auto_sync : UInt
+
+pub let hhwin_prop_change_title : UInt
+
+pub let hhwin_prop_menu : UInt
+
+pub let hhwin_prop_nav_only_win : UInt
+
+pub let hhwin_prop_no_toolbar : UInt
+
+pub let hhwin_prop_nodef_exstyles : UInt
+
+pub let hhwin_prop_nodef_styles : UInt
+
+pub let hhwin_prop_notb_text : UInt
+
+pub let hhwin_prop_notitlebar : UInt
+
+pub let hhwin_prop_ontop : UInt
+
+pub let hhwin_prop_post_quit : UInt
+
+pub let hhwin_prop_tab_advsearch : UInt
+
+pub let hhwin_prop_tab_autohideshow : UInt
+
+pub let hhwin_prop_tab_custom1 : UInt
+
+pub let hhwin_prop_tab_custom2 : UInt
+
+pub let hhwin_prop_tab_custom3 : UInt
+
+pub let hhwin_prop_tab_custom4 : UInt
+
+pub let hhwin_prop_tab_custom5 : UInt
+
+pub let hhwin_prop_tab_custom6 : UInt
+
+pub let hhwin_prop_tab_custom7 : UInt
+
+pub let hhwin_prop_tab_custom8 : UInt
+
+pub let hhwin_prop_tab_custom9 : UInt
+
+pub let hhwin_prop_tab_favorites : UInt
+
+pub let hhwin_prop_tab_history : UInt
+
+pub let hhwin_prop_tab_search : UInt
+
+pub let hhwin_prop_tracking : UInt
+
+pub let hhwin_prop_tri_pane : UInt
+
+pub let hhwin_prop_user_pos : UInt
+
+pub let hhwin_tb_margin : UInt
+
+pub fn html_help_a(@core.RawAddress, @strings.PStr, UInt, UInt64) -> @core.RawAddress raise @core.WindowsError
+
+pub fn html_help_a_raw(@core.RawAddress, @core.RawAddress, UInt, UInt64) -> @core.RawAddress
+
+pub fn html_help_w(@core.RawAddress, @strings.PWStr, UInt, UInt64) -> @core.RawAddress raise @core.WindowsError
+
+pub fn html_help_w_raw(@core.RawAddress, @core.RawAddress, UInt, UInt64) -> @core.RawAddress
+
+pub let idtb_back : UInt
+
+pub let idtb_browse_back : UInt
+
+pub let idtb_browse_fwd : UInt
+
+pub let idtb_contents : UInt
+
+pub let idtb_contract : UInt
+
+pub let idtb_customize : UInt
+
+pub let idtb_expand : UInt
+
+pub let idtb_favorites : UInt
+
+pub let idtb_forward : UInt
+
+pub let idtb_history : UInt
+
+pub let idtb_home : UInt
+
+pub let idtb_index : UInt
+
+pub let idtb_jump1 : UInt
+
+pub let idtb_jump2 : UInt
+
+pub let idtb_notes : UInt
+
+pub let idtb_options : UInt
+
+pub let idtb_print : UInt
+
+pub let idtb_refresh : UInt
+
+pub let idtb_search : UInt
+
+pub let idtb_stop : UInt
+
+pub let idtb_sync : UInt
+
+pub let idtb_toc_next : UInt
+
+pub let idtb_toc_prev : UInt
+
+pub let idtb_zoom : UInt
+
+pub let iitwbc_break_accept_wildcards : UInt
+
+pub let iitwbc_break_and_stem : UInt
+
+pub let it_exclusive : Int
+
+pub let it_hidden : Int
+
+pub let it_inclusive : Int
+
+pub let itww_cbkey_max : UInt
+
+pub let itww_open_noconnect : UInt
+
+pub let max_columns : UInt
+
+pub let prop_add : UInt
+
+pub let prop_delete : UInt
+
+pub let prop_update : UInt
+
+pub let stdprop_displaykey : UInt
+
+pub let stdprop_index_break : UInt
+
+pub let stdprop_index_dtype : UInt
+
+pub let stdprop_index_length : UInt
+
+pub let stdprop_index_term : UInt
+
+pub let stdprop_index_term_raw_length : UInt
+
+pub let stdprop_index_text : UInt
+
+pub let stdprop_index_vfld : UInt
+
+pub let stdprop_key : UInt
+
+pub let stdprop_sortkey : UInt
+
+pub let stdprop_sortordinal : UInt
+
+pub let stdprop_title : UInt
+
+pub let stdprop_uid : UInt
+
+pub let stdprop_userdata : UInt
+
+pub let stdprop_userprop_base : UInt
+
+pub let stdprop_userprop_max : UInt
+
+pub let sz_wwdest_global : String
+
+pub let sz_wwdest_key : String
+
+pub let sz_wwdest_occ : String
+
+pub let type_pointer : UInt
+
+pub let type_string : UInt
+
+pub let type_value : UInt
+
+// Errors
+
+// Types and methods
+
+// Type aliases
+pub using @ca76d0b0c300c2b4 {type COLUMNSTATUS_a56955047dab as COLUMNSTATUS}
+
+pub using @ca76d0b0c300c2b4 {type CProperty_2aec3927af33 as CProperty}
+
+pub using @ca76d0b0c300c2b4 {type CPropertyAnonymousEUnion_0a7799fed7f4 as CPropertyAnonymousEUnion}
+
+pub using @ca76d0b0c300c2b4 {type HHAKLINK_09f7b334621f as HHAKLINK}
+
+pub using @ca76d0b0c300c2b4 {type HHENUMCAT_a90a5b3c8f90 as HHENUMCAT}
+
+pub using @ca76d0b0c300c2b4 {type HHENUMIT_ca50484c32f3 as HHENUMIT}
+
+pub using @ca76d0b0c300c2b4 {type HHFTSQUERY_b6aeefb347e1 as HHFTSQUERY}
+
+pub using @ca76d0b0c300c2b4 {type HHGLOBALPROPERTY_710a40a5d8e5 as HHGLOBALPROPERTY}
+
+pub using @ca76d0b0c300c2b4 {type HHGPROPID_37d9eda0ec2d as HHGPROPID}
+
+pub using @ca76d0b0c300c2b4 {type HHNNOTIFY_e40a99240e09 as HHNNOTIFY}
+
+pub using @ca76d0b0c300c2b4 {type HHNTRACK_fc2e7acb75bb as HHNTRACK}
+
+pub using @ca76d0b0c300c2b4 {type HHPOPUP_75ad40ffc4b2 as HHPOPUP}
+
+pub using @ca76d0b0c300c2b4 {type HHSETINFOTYPE_30338ae89cbd as HHSETINFOTYPE}
+
+pub using @ca76d0b0c300c2b4 {type HHWINTYPE_14d9334cc380 as HHWINTYPE}
+
+pub using @ca76d0b0c300c2b4 {type HTMLHELPCOMMAND_7ea77a01fa23 as HTMLHELPCOMMAND}
+
+pub using @ca76d0b0c300c2b4 {type IITDatabase_2c22811af275 as IITDatabase}
+
+pub using @ca76d0b0c300c2b4 {type IITPropList_58e3acf19335 as IITPropList}
+
+pub using @ca76d0b0c300c2b4 {type IITResultSet_633192d7f40e as IITResultSet}
+
+pub using @ca76d0b0c300c2b4 {type IStemSink_85222a3da4e3 as IStemSink}
+
+pub using @ca76d0b0c300c2b4 {type IStemmerConfig_a1fa01e03806 as IStemmerConfig}
+
+pub using @ca76d0b0c300c2b4 {type IWordBreakerConfig_ef06cbde57f1 as IWordBreakerConfig}
+
+pub using @ca76d0b0c300c2b4 {type PFNCOLHEAPFREE_552e63757ade as PFNCOLHEAPFREE}
+
+pub using @ca76d0b0c300c2b4 {type PRIORITY_76b4a23b9880 as PRIORITY}
+
+pub using @ca76d0b0c300c2b4 {type ROWSTATUS_bfcfdf4be345 as ROWSTATUS}
+
+// Traits

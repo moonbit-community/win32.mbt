@@ -1,0 +1,889 @@
+// Generated using `moon info`, DON'T EDIT IT
+package "moonbit-community/win32api/windows/win32/security"
+
+import {
+  "moonbit-community/win32api/runtime/core",
+  "moonbit-community/win32api/runtime/strings",
+  "moonbit-community/win32api/scc/cc6631776d7e2373",
+  "moonbit-community/win32api/scc/fb66f520d7e12332",
+}
+
+// Values
+pub fn access_check(@core.RawAddress, @core.RawAddress, UInt, @cc6631776d7e2373.GENERICMAPPING_38953e2f3655, @cc6631776d7e2373.PRIVILEGESET_05727cefa11c?, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn access_check_and_audit_alarm_a(@strings.PStr, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, UInt, @cc6631776d7e2373.GENERICMAPPING_38953e2f3655, Int, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn access_check_and_audit_alarm_a_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, Int, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn access_check_and_audit_alarm_w(@strings.PWStr, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, UInt, @cc6631776d7e2373.GENERICMAPPING_38953e2f3655, Int, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn access_check_and_audit_alarm_w_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, Int, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn access_check_by_type(@core.RawAddress, @core.RawAddress, @core.RawAddress, UInt, @cc6631776d7e2373.OBJECTTYPELIST_2aa3d72ccc33?, UInt, @cc6631776d7e2373.GENERICMAPPING_38953e2f3655, @cc6631776d7e2373.PRIVILEGESET_05727cefa11c?, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn access_check_by_type_and_audit_alarm_a(@strings.PStr, @core.RawAddress, @strings.PStr, @strings.PStr?, @core.RawAddress, @core.RawAddress, UInt, @cc6631776d7e2373.AUDITEVENTTYPE_70308a6bd73e, UInt, @cc6631776d7e2373.OBJECTTYPELIST_2aa3d72ccc33?, UInt, @cc6631776d7e2373.GENERICMAPPING_38953e2f3655, Int, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn access_check_by_type_and_audit_alarm_a_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, UInt, Int, UInt, @core.RawAddress, UInt, @core.RawAddress, Int, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn access_check_by_type_and_audit_alarm_w(@strings.PWStr, @core.RawAddress, @strings.PWStr, @strings.PWStr?, @core.RawAddress, @core.RawAddress, UInt, @cc6631776d7e2373.AUDITEVENTTYPE_70308a6bd73e, UInt, @cc6631776d7e2373.OBJECTTYPELIST_2aa3d72ccc33?, UInt, @cc6631776d7e2373.GENERICMAPPING_38953e2f3655, Int, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn access_check_by_type_and_audit_alarm_w_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, UInt, Int, UInt, @core.RawAddress, UInt, @core.RawAddress, Int, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn access_check_by_type_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn access_check_by_type_result_list(@core.RawAddress, @core.RawAddress, @core.RawAddress, UInt, @cc6631776d7e2373.OBJECTTYPELIST_2aa3d72ccc33?, UInt, @cc6631776d7e2373.GENERICMAPPING_38953e2f3655, @cc6631776d7e2373.PRIVILEGESET_05727cefa11c?, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn access_check_by_type_result_list_and_audit_alarm_a(@strings.PStr, @core.RawAddress, @strings.PStr, @strings.PStr?, @core.RawAddress, @core.RawAddress, UInt, @cc6631776d7e2373.AUDITEVENTTYPE_70308a6bd73e, UInt, @cc6631776d7e2373.OBJECTTYPELIST_2aa3d72ccc33?, UInt, @cc6631776d7e2373.GENERICMAPPING_38953e2f3655, Int, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn access_check_by_type_result_list_and_audit_alarm_a_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, UInt, Int, UInt, @core.RawAddress, UInt, @core.RawAddress, Int, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn access_check_by_type_result_list_and_audit_alarm_by_handle_a(@strings.PStr, @core.RawAddress, @core.RawAddress, @strings.PStr, @strings.PStr?, @core.RawAddress, @core.RawAddress, UInt, @cc6631776d7e2373.AUDITEVENTTYPE_70308a6bd73e, UInt, @cc6631776d7e2373.OBJECTTYPELIST_2aa3d72ccc33?, UInt, @cc6631776d7e2373.GENERICMAPPING_38953e2f3655, Int, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn access_check_by_type_result_list_and_audit_alarm_by_handle_a_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, UInt, Int, UInt, @core.RawAddress, UInt, @core.RawAddress, Int, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn access_check_by_type_result_list_and_audit_alarm_by_handle_w(@strings.PWStr, @core.RawAddress, @core.RawAddress, @strings.PWStr, @strings.PWStr?, @core.RawAddress, @core.RawAddress, UInt, @cc6631776d7e2373.AUDITEVENTTYPE_70308a6bd73e, UInt, @cc6631776d7e2373.OBJECTTYPELIST_2aa3d72ccc33?, UInt, @cc6631776d7e2373.GENERICMAPPING_38953e2f3655, Int, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn access_check_by_type_result_list_and_audit_alarm_by_handle_w_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, UInt, Int, UInt, @core.RawAddress, UInt, @core.RawAddress, Int, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn access_check_by_type_result_list_and_audit_alarm_w(@strings.PWStr, @core.RawAddress, @strings.PWStr, @strings.PWStr?, @core.RawAddress, @core.RawAddress, UInt, @cc6631776d7e2373.AUDITEVENTTYPE_70308a6bd73e, UInt, @cc6631776d7e2373.OBJECTTYPELIST_2aa3d72ccc33?, UInt, @cc6631776d7e2373.GENERICMAPPING_38953e2f3655, Int, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn access_check_by_type_result_list_and_audit_alarm_w_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, UInt, Int, UInt, @core.RawAddress, UInt, @core.RawAddress, Int, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn access_check_by_type_result_list_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn access_check_raw(@core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn add_access_allowed_ace(@cc6631776d7e2373.ACL_1bf7caea28b3, @cc6631776d7e2373.ACEREVISION_eb0b0909749f, UInt, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn add_access_allowed_ace_ex(@cc6631776d7e2373.ACL_1bf7caea28b3, @cc6631776d7e2373.ACEREVISION_eb0b0909749f, @cc6631776d7e2373.ACEFLAGS_2d83806c6de9, UInt, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn add_access_allowed_ace_ex_raw(@core.RawAddress, UInt, UInt, UInt, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn add_access_allowed_ace_raw(@core.RawAddress, UInt, UInt, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn add_access_allowed_object_ace(@cc6631776d7e2373.ACL_1bf7caea28b3, @cc6631776d7e2373.ACEREVISION_eb0b0909749f, @cc6631776d7e2373.ACEFLAGS_2d83806c6de9, UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn add_access_allowed_object_ace_raw(@core.RawAddress, UInt, UInt, UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn add_access_denied_ace(@cc6631776d7e2373.ACL_1bf7caea28b3, @cc6631776d7e2373.ACEREVISION_eb0b0909749f, UInt, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn add_access_denied_ace_ex(@cc6631776d7e2373.ACL_1bf7caea28b3, @cc6631776d7e2373.ACEREVISION_eb0b0909749f, @cc6631776d7e2373.ACEFLAGS_2d83806c6de9, UInt, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn add_access_denied_ace_ex_raw(@core.RawAddress, UInt, UInt, UInt, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn add_access_denied_ace_raw(@core.RawAddress, UInt, UInt, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn add_access_denied_object_ace(@cc6631776d7e2373.ACL_1bf7caea28b3, @cc6631776d7e2373.ACEREVISION_eb0b0909749f, @cc6631776d7e2373.ACEFLAGS_2d83806c6de9, UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn add_access_denied_object_ace_raw(@core.RawAddress, UInt, UInt, UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn add_ace(@cc6631776d7e2373.ACL_1bf7caea28b3, @cc6631776d7e2373.ACEREVISION_eb0b0909749f, UInt, @core.RawAddress, UInt) -> Bool raise @core.WindowsError
+
+pub fn add_ace_raw(@core.RawAddress, UInt, UInt, @core.RawAddress, UInt) -> @core.RawWin32Call[Int]
+
+pub fn add_audit_access_ace(@cc6631776d7e2373.ACL_1bf7caea28b3, @cc6631776d7e2373.ACEREVISION_eb0b0909749f, UInt, @core.RawAddress, Int, Int) -> Bool raise @core.WindowsError
+
+pub fn add_audit_access_ace_ex(@cc6631776d7e2373.ACL_1bf7caea28b3, @cc6631776d7e2373.ACEREVISION_eb0b0909749f, @cc6631776d7e2373.ACEFLAGS_2d83806c6de9, UInt, @core.RawAddress, Int, Int) -> Bool raise @core.WindowsError
+
+pub fn add_audit_access_ace_ex_raw(@core.RawAddress, UInt, UInt, UInt, @core.RawAddress, Int, Int) -> @core.RawWin32Call[Int]
+
+pub fn add_audit_access_ace_raw(@core.RawAddress, UInt, UInt, @core.RawAddress, Int, Int) -> @core.RawWin32Call[Int]
+
+pub fn add_audit_access_object_ace(@cc6631776d7e2373.ACL_1bf7caea28b3, @cc6631776d7e2373.ACEREVISION_eb0b0909749f, @cc6631776d7e2373.ACEFLAGS_2d83806c6de9, UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress, Int, Int) -> Bool raise @core.WindowsError
+
+pub fn add_audit_access_object_ace_raw(@core.RawAddress, UInt, UInt, UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress, Int, Int) -> @core.RawWin32Call[Int]
+
+pub fn add_conditional_ace(@cc6631776d7e2373.ACL_1bf7caea28b3, @cc6631776d7e2373.ACEREVISION_eb0b0909749f, @cc6631776d7e2373.ACEFLAGS_2d83806c6de9, Byte, UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn add_conditional_ace_raw(@core.RawAddress, UInt, UInt, UInt, UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn add_mandatory_ace(@cc6631776d7e2373.ACL_1bf7caea28b3, @cc6631776d7e2373.ACEREVISION_eb0b0909749f, @cc6631776d7e2373.ACEFLAGS_2d83806c6de9, UInt, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn add_mandatory_ace_raw(@core.RawAddress, UInt, UInt, UInt, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn add_resource_attribute_ace(@cc6631776d7e2373.ACL_1bf7caea28b3, @cc6631776d7e2373.ACEREVISION_eb0b0909749f, @cc6631776d7e2373.ACEFLAGS_2d83806c6de9, UInt, @core.RawAddress, @cc6631776d7e2373.CLAIMSECURITYATTRIBUTESINFORMATION_3f972a8b8534, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn add_resource_attribute_ace_raw(@core.RawAddress, UInt, UInt, UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn add_scoped_policy_id_ace(@cc6631776d7e2373.ACL_1bf7caea28b3, @cc6631776d7e2373.ACEREVISION_eb0b0909749f, @cc6631776d7e2373.ACEFLAGS_2d83806c6de9, UInt, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn add_scoped_policy_id_ace_raw(@core.RawAddress, UInt, UInt, UInt, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn adjust_token_groups(@core.RawAddress, Int, @cc6631776d7e2373.TOKENGROUPS_8744ea02ed4e?, UInt, @cc6631776d7e2373.TOKENGROUPS_8744ea02ed4e?, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn adjust_token_groups_raw(@core.RawAddress, Int, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn adjust_token_privileges(@core.RawAddress, Int, @cc6631776d7e2373.TOKENPRIVILEGES_303cfd2ed7f7?, UInt, @cc6631776d7e2373.TOKENPRIVILEGES_303cfd2ed7f7?, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn adjust_token_privileges_raw(@core.RawAddress, Int, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn allocate_and_initialize_sid(@core.RawAddress, Byte, UInt, UInt, UInt, UInt, UInt, UInt, UInt, UInt, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn allocate_and_initialize_sid_raw(@core.RawAddress, UInt, UInt, UInt, UInt, UInt, UInt, UInt, UInt, UInt, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn allocate_locally_unique_id(@fb66f520d7e12332.LUID_d126dd202e2a) -> Bool raise @core.WindowsError
+
+pub fn allocate_locally_unique_id_raw(@core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn are_all_accesses_granted(UInt, UInt) -> Bool raise @core.WindowsError
+
+pub fn are_all_accesses_granted_raw(UInt, UInt) -> Int
+
+pub fn are_any_accesses_granted(UInt, UInt) -> Bool raise @core.WindowsError
+
+pub fn are_any_accesses_granted_raw(UInt, UInt) -> Int
+
+pub fn check_token_capability(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn check_token_capability_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn check_token_membership(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn check_token_membership_ex(@core.RawAddress, @core.RawAddress, UInt, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn check_token_membership_ex_raw(@core.RawAddress, @core.RawAddress, UInt, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn check_token_membership_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn convert_to_auto_inherit_private_object_security(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, Byte, @cc6631776d7e2373.GENERICMAPPING_38953e2f3655) -> Bool raise @core.WindowsError
+
+pub fn convert_to_auto_inherit_private_object_security_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, UInt, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn copy_sid(UInt, @core.RawAddress, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn copy_sid_raw(UInt, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn create_private_object_security(@core.RawAddress, @core.RawAddress, @core.RawAddress, Int, @core.RawAddress, @cc6631776d7e2373.GENERICMAPPING_38953e2f3655) -> Bool raise @core.WindowsError
+
+pub fn create_private_object_security_ex(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, Int, @cc6631776d7e2373.SECURITYAUTOINHERITFLAGS_eb950e842722, @core.RawAddress, @cc6631776d7e2373.GENERICMAPPING_38953e2f3655) -> Bool raise @core.WindowsError
+
+pub fn create_private_object_security_ex_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, Int, UInt, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn create_private_object_security_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, Int, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn create_private_object_security_with_multiple_inheritance(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, UInt, Int, @cc6631776d7e2373.SECURITYAUTOINHERITFLAGS_eb950e842722, @core.RawAddress, @cc6631776d7e2373.GENERICMAPPING_38953e2f3655) -> Bool raise @core.WindowsError
+
+pub fn create_private_object_security_with_multiple_inheritance_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, UInt, Int, UInt, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn create_restricted_token(@core.RawAddress, @cc6631776d7e2373.CREATERESTRICTEDTOKENFLAGS_c804b85b1f9e, UInt, @cc6631776d7e2373.SIDANDATTRIBUTES_a5e323de8705?, UInt, @cc6631776d7e2373.LUIDANDATTRIBUTES_fc4645c23abb?, UInt, @cc6631776d7e2373.SIDANDATTRIBUTES_a5e323de8705?, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn create_restricted_token_raw(@core.RawAddress, UInt, UInt, @core.RawAddress, UInt, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn create_well_known_sid(@cc6631776d7e2373.WELLKNOWNSIDTYPE_5aa549bf5d18, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn create_well_known_sid_raw(Int, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub let cvt_seconds : UInt
+
+pub let cwc_filenamesuffixmax : UInt
+
+pub let cwc_hresultstring : UInt
+
+pub fn delete_ace(@cc6631776d7e2373.ACL_1bf7caea28b3, UInt) -> Bool raise @core.WindowsError
+
+pub fn delete_ace_raw(@core.RawAddress, UInt) -> @core.RawWin32Call[Int]
+
+pub fn derive_capability_sids_from_name(@strings.PWStr, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn derive_capability_sids_from_name_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn destroy_private_object_security(@core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn destroy_private_object_security_raw(@core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn duplicate_token(@core.RawAddress, @cc6631776d7e2373.SECURITYIMPERSONATIONLEVEL_26ba4c2fda26, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn duplicate_token_ex(@core.RawAddress, @cc6631776d7e2373.TOKENACCESSMASK_aa0a127edb23, @cc6631776d7e2373.SECURITYATTRIBUTES_bc2e2f0be0e1?, @cc6631776d7e2373.SECURITYIMPERSONATIONLEVEL_26ba4c2fda26, @cc6631776d7e2373.TOKENTYPE_bf07fca3d1e5, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn duplicate_token_ex_raw(@core.RawAddress, UInt, @core.RawAddress, Int, Int, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn duplicate_token_raw(@core.RawAddress, Int, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn equal_domain_sid(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn equal_domain_sid_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn equal_prefix_sid(@core.RawAddress, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn equal_prefix_sid_raw(@core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn equal_sid(@core.RawAddress, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn equal_sid_raw(@core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn find_first_free_ace(@cc6631776d7e2373.ACL_1bf7caea28b3, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn find_first_free_ace_raw(@core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn free_sid(@core.RawAddress) -> @core.RawAddress raise @core.WindowsError
+
+pub fn free_sid_raw(@core.RawAddress) -> @core.RawAddress
+
+pub fn get_ace(@cc6631776d7e2373.ACL_1bf7caea28b3, UInt, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn get_ace_raw(@core.RawAddress, UInt, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn get_acl_information(@cc6631776d7e2373.ACL_1bf7caea28b3, @core.RawAddress, UInt, @cc6631776d7e2373.ACLINFORMATIONCLASS_7c9719543d27) -> Bool raise @core.WindowsError
+
+pub fn get_acl_information_raw(@core.RawAddress, @core.RawAddress, UInt, Int) -> @core.RawWin32Call[Int]
+
+pub fn get_app_container_ace(@cc6631776d7e2373.ACL_1bf7caea28b3, UInt, @core.RawAddress, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn get_app_container_ace_raw(@core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn get_cached_signing_level(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn get_cached_signing_level_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn get_file_security_a(@strings.PStr, UInt, @core.RawAddress, UInt, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn get_file_security_a_raw(@core.RawAddress, UInt, @core.RawAddress, UInt, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn get_file_security_w(@strings.PWStr, UInt, @core.RawAddress, UInt, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn get_file_security_w_raw(@core.RawAddress, UInt, @core.RawAddress, UInt, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn get_kernel_object_security(@core.RawAddress, UInt, @core.RawAddress, UInt, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn get_kernel_object_security_raw(@core.RawAddress, UInt, @core.RawAddress, UInt, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn get_length_sid(@core.RawAddress) -> UInt raise @core.WindowsError
+
+pub fn get_length_sid_raw(@core.RawAddress) -> UInt
+
+pub fn get_private_object_security(@core.RawAddress, @cc6631776d7e2373.OBJECTSECURITYINFORMATION_7732df83bef3, @core.RawAddress, UInt, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn get_private_object_security_raw(@core.RawAddress, UInt, @core.RawAddress, UInt, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn get_security_descriptor_control(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn get_security_descriptor_control_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn get_security_descriptor_dacl(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn get_security_descriptor_dacl_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn get_security_descriptor_group(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn get_security_descriptor_group_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn get_security_descriptor_length(@core.RawAddress) -> UInt raise @core.WindowsError
+
+pub fn get_security_descriptor_length_raw(@core.RawAddress) -> UInt
+
+pub fn get_security_descriptor_owner(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn get_security_descriptor_owner_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn get_security_descriptor_rm_control(@core.RawAddress, @core.RawAddress) -> UInt raise @core.WindowsError
+
+pub fn get_security_descriptor_rm_control_raw(@core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn get_security_descriptor_sacl(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn get_security_descriptor_sacl_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn get_sid_identifier_authority(@core.RawAddress) -> @core.RawAddress raise @core.WindowsError
+
+pub fn get_sid_identifier_authority_raw(@core.RawAddress) -> @core.RawWin32Call[@core.RawAddress]
+
+pub fn get_sid_length_required(Byte) -> UInt raise @core.WindowsError
+
+pub fn get_sid_length_required_raw(UInt) -> UInt
+
+pub fn get_sid_sub_authority(@core.RawAddress, UInt) -> @core.RawAddress raise @core.WindowsError
+
+pub fn get_sid_sub_authority_count(@core.RawAddress) -> @core.RawAddress raise @core.WindowsError
+
+pub fn get_sid_sub_authority_count_raw(@core.RawAddress) -> @core.RawWin32Call[@core.RawAddress]
+
+pub fn get_sid_sub_authority_raw(@core.RawAddress, UInt) -> @core.RawWin32Call[@core.RawAddress]
+
+pub fn get_token_information(@core.RawAddress, @cc6631776d7e2373.TOKENINFORMATIONCLASS_fcf78aa63e2f, @core.RawAddress, UInt, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn get_token_information_raw(@core.RawAddress, Int, @core.RawAddress, UInt, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn get_user_object_security(@core.RawAddress, @core.RawAddress, @core.RawAddress, UInt, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn get_user_object_security_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, UInt, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn get_windows_account_domain_sid(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn get_windows_account_domain_sid_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn impersonate_anonymous_token(@core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn impersonate_anonymous_token_raw(@core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn impersonate_logged_on_user(@core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn impersonate_logged_on_user_raw(@core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn impersonate_self(@cc6631776d7e2373.SECURITYIMPERSONATIONLEVEL_26ba4c2fda26) -> Bool raise @core.WindowsError
+
+pub fn impersonate_self_raw(Int) -> @core.RawWin32Call[Int]
+
+pub fn initialize_acl(@cc6631776d7e2373.ACL_1bf7caea28b3, UInt, @cc6631776d7e2373.ACEREVISION_eb0b0909749f) -> Bool raise @core.WindowsError
+
+pub fn initialize_acl_raw(@core.RawAddress, UInt, UInt) -> @core.RawWin32Call[Int]
+
+pub fn initialize_security_descriptor(@core.RawAddress, UInt) -> Bool raise @core.WindowsError
+
+pub fn initialize_security_descriptor_raw(@core.RawAddress, UInt) -> @core.RawWin32Call[Int]
+
+pub fn initialize_sid(@core.RawAddress, @core.RawAddress, Byte) -> Bool raise @core.WindowsError
+
+pub fn initialize_sid_raw(@core.RawAddress, @core.RawAddress, UInt) -> @core.RawWin32Call[Int]
+
+pub fn is_token_restricted(@core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn is_token_restricted_raw(@core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn is_valid_acl(@cc6631776d7e2373.ACL_1bf7caea28b3) -> Bool raise @core.WindowsError
+
+pub fn is_valid_acl_raw(@core.RawAddress) -> Int
+
+pub fn is_valid_security_descriptor(@core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn is_valid_security_descriptor_raw(@core.RawAddress) -> Int
+
+pub fn is_valid_sid(@core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn is_valid_sid_raw(@core.RawAddress) -> Int
+
+pub fn is_well_known_sid(@core.RawAddress, @cc6631776d7e2373.WELLKNOWNSIDTYPE_5aa549bf5d18) -> Bool raise @core.WindowsError
+
+pub fn is_well_known_sid_raw(@core.RawAddress, Int) -> Int
+
+pub fn logon_user_a(@strings.PStr, @strings.PStr?, @strings.PStr?, @cc6631776d7e2373.LOGON32LOGON_86c0a78361be, @cc6631776d7e2373.LOGON32PROVIDER_6d3be94a3478, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn logon_user_a_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, UInt, UInt, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn logon_user_ex_a(@strings.PStr, @strings.PStr?, @strings.PStr?, @cc6631776d7e2373.LOGON32LOGON_86c0a78361be, @cc6631776d7e2373.LOGON32PROVIDER_6d3be94a3478, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @cc6631776d7e2373.QUOTALIMITS_bccd084f1430?) -> Bool raise @core.WindowsError
+
+pub fn logon_user_ex_a_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, UInt, UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn logon_user_ex_w(@strings.PWStr, @strings.PWStr?, @strings.PWStr?, @cc6631776d7e2373.LOGON32LOGON_86c0a78361be, @cc6631776d7e2373.LOGON32PROVIDER_6d3be94a3478, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @cc6631776d7e2373.QUOTALIMITS_bccd084f1430?) -> Bool raise @core.WindowsError
+
+pub fn logon_user_ex_w_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, UInt, UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn logon_user_w(@strings.PWStr, @strings.PWStr?, @strings.PWStr?, @cc6631776d7e2373.LOGON32LOGON_86c0a78361be, @cc6631776d7e2373.LOGON32PROVIDER_6d3be94a3478, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn logon_user_w_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, UInt, UInt, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn lookup_account_name_a(@strings.PStr?, @strings.PStr, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn lookup_account_name_a_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn lookup_account_name_w_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn lookup_account_sid_a(@strings.PStr?, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn lookup_account_sid_a_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn lookup_account_sid_w_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn lookup_privilege_display_name_a(@strings.PStr?, @strings.PStr, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn lookup_privilege_display_name_a_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn lookup_privilege_display_name_w_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn lookup_privilege_name_a(@strings.PStr?, @fb66f520d7e12332.LUID_d126dd202e2a, @core.RawAddress, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn lookup_privilege_name_a_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn lookup_privilege_name_w_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn lookup_privilege_value_a(@strings.PStr?, @strings.PStr, @fb66f520d7e12332.LUID_d126dd202e2a) -> Bool raise @core.WindowsError
+
+pub fn lookup_privilege_value_a_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn lookup_privilege_value_w(@strings.PWStr?, @strings.PWStr, @fb66f520d7e12332.LUID_d126dd202e2a) -> Bool raise @core.WindowsError
+
+pub fn lookup_privilege_value_w_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn make_absolute_sd(@core.RawAddress, @core.RawAddress, @core.RawAddress, @cc6631776d7e2373.ACL_1bf7caea28b3?, @core.RawAddress, @cc6631776d7e2373.ACL_1bf7caea28b3?, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn make_absolute_sd_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn make_self_relative_sd(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn make_self_relative_sd_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn map_generic_mask(@core.RawAddress, @cc6631776d7e2373.GENERICMAPPING_38953e2f3655) -> Unit raise @core.WindowsError
+
+pub fn map_generic_mask_raw(@core.RawAddress, @core.RawAddress) -> Unit
+
+pub fn object_close_audit_alarm_a(@strings.PStr, @core.RawAddress, Int) -> Bool raise @core.WindowsError
+
+pub fn object_close_audit_alarm_a_raw(@core.RawAddress, @core.RawAddress, Int) -> @core.RawWin32Call[Int]
+
+pub fn object_close_audit_alarm_w(@strings.PWStr, @core.RawAddress, Int) -> Bool raise @core.WindowsError
+
+pub fn object_close_audit_alarm_w_raw(@core.RawAddress, @core.RawAddress, Int) -> Int
+
+pub fn object_delete_audit_alarm_a(@strings.PStr, @core.RawAddress, Int) -> Bool raise @core.WindowsError
+
+pub fn object_delete_audit_alarm_a_raw(@core.RawAddress, @core.RawAddress, Int) -> @core.RawWin32Call[Int]
+
+pub fn object_delete_audit_alarm_w(@strings.PWStr, @core.RawAddress, Int) -> Bool raise @core.WindowsError
+
+pub fn object_delete_audit_alarm_w_raw(@core.RawAddress, @core.RawAddress, Int) -> Int
+
+pub fn object_open_audit_alarm_a(@strings.PStr, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, UInt, UInt, @cc6631776d7e2373.PRIVILEGESET_05727cefa11c?, Int, Int, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn object_open_audit_alarm_a_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, UInt, UInt, @core.RawAddress, Int, Int, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn object_open_audit_alarm_w(@strings.PWStr, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, UInt, UInt, @cc6631776d7e2373.PRIVILEGESET_05727cefa11c?, Int, Int, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn object_open_audit_alarm_w_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, UInt, UInt, @core.RawAddress, Int, Int, @core.RawAddress) -> Int
+
+pub fn object_privilege_audit_alarm_a(@strings.PStr, @core.RawAddress, @core.RawAddress, UInt, @cc6631776d7e2373.PRIVILEGESET_05727cefa11c, Int) -> Bool raise @core.WindowsError
+
+pub fn object_privilege_audit_alarm_a_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, Int) -> @core.RawWin32Call[Int]
+
+pub fn object_privilege_audit_alarm_w(@strings.PWStr, @core.RawAddress, @core.RawAddress, UInt, @cc6631776d7e2373.PRIVILEGESET_05727cefa11c, Int) -> Bool raise @core.WindowsError
+
+pub fn object_privilege_audit_alarm_w_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, Int) -> Int
+
+pub fn privilege_check(@core.RawAddress, @cc6631776d7e2373.PRIVILEGESET_05727cefa11c, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn privilege_check_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn privileged_service_audit_alarm_a(@strings.PStr, @strings.PStr, @core.RawAddress, @cc6631776d7e2373.PRIVILEGESET_05727cefa11c, Int) -> Bool raise @core.WindowsError
+
+pub fn privileged_service_audit_alarm_a_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, Int) -> @core.RawWin32Call[Int]
+
+pub fn privileged_service_audit_alarm_w(@strings.PWStr, @strings.PWStr, @core.RawAddress, @cc6631776d7e2373.PRIVILEGESET_05727cefa11c, Int) -> Bool raise @core.WindowsError
+
+pub fn privileged_service_audit_alarm_w_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, Int) -> Int
+
+pub fn query_security_access_mask(@cc6631776d7e2373.OBJECTSECURITYINFORMATION_7732df83bef3, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn query_security_access_mask_raw(UInt, @core.RawAddress) -> Unit
+
+pub fn revert_to_self() -> Bool raise @core.WindowsError
+
+pub fn revert_to_self_raw() -> @core.RawWin32Call[Int]
+
+pub fn rtl_convert_sid_to_unicode_string(@fb66f520d7e12332.UNICODESTRING_0417e7817c14, @core.RawAddress, Byte) -> Int raise @core.WindowsError
+
+pub fn rtl_convert_sid_to_unicode_string_raw(@core.RawAddress, @core.RawAddress, UInt) -> Int
+
+pub fn rtl_normalize_security_descriptor(@core.RawAddress, UInt, @core.RawAddress, @core.RawAddress, Byte) -> Byte raise @core.WindowsError
+
+pub fn rtl_normalize_security_descriptor_raw(@core.RawAddress, UInt, @core.RawAddress, @core.RawAddress, UInt) -> UInt
+
+pub let se_assignprimarytoken_name : String
+
+pub let se_audit_name : String
+
+pub let se_backup_name : String
+
+pub let se_change_notify_name : String
+
+pub let se_create_global_name : String
+
+pub let se_create_pagefile_name : String
+
+pub let se_create_permanent_name : String
+
+pub let se_create_symbolic_link_name : String
+
+pub let se_create_token_name : String
+
+pub let se_debug_name : String
+
+pub let se_delegate_session_user_impersonate_name : String
+
+pub let se_enable_delegation_name : String
+
+pub let se_impersonate_name : String
+
+pub let se_inc_base_priority_name : String
+
+pub let se_inc_working_set_name : String
+
+pub let se_increase_quota_name : String
+
+pub let se_load_driver_name : String
+
+pub let se_lock_memory_name : String
+
+pub let se_machine_account_name : String
+
+pub let se_manage_volume_name : String
+
+pub let se_prof_single_process_name : String
+
+pub let se_relabel_name : String
+
+pub let se_remote_shutdown_name : String
+
+pub let se_restore_name : String
+
+pub let se_security_name : String
+
+pub let se_shutdown_name : String
+
+pub let se_sync_agent_name : String
+
+pub let se_system_environment_name : String
+
+pub let se_system_profile_name : String
+
+pub let se_systemtime_name : String
+
+pub let se_take_ownership_name : String
+
+pub let se_tcb_name : String
+
+pub let se_time_zone_name : String
+
+pub let se_trusted_credman_access_name : String
+
+pub let se_undock_name : String
+
+pub let se_unsolicited_input_name : String
+
+pub let security_dynamic_tracking : UInt
+
+pub let security_max_sid_size : UInt
+
+pub let security_static_tracking : UInt
+
+pub fn set_acl_information(@cc6631776d7e2373.ACL_1bf7caea28b3, @core.RawAddress, UInt, @cc6631776d7e2373.ACLINFORMATIONCLASS_7c9719543d27) -> Bool raise @core.WindowsError
+
+pub fn set_acl_information_raw(@core.RawAddress, @core.RawAddress, UInt, Int) -> @core.RawWin32Call[Int]
+
+pub fn set_cached_signing_level(@core.RawAddress, UInt, UInt, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn set_cached_signing_level_raw(@core.RawAddress, UInt, UInt, @core.RawAddress) -> Int
+
+pub fn set_file_security_a(@strings.PStr, @cc6631776d7e2373.OBJECTSECURITYINFORMATION_7732df83bef3, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn set_file_security_a_raw(@core.RawAddress, UInt, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn set_file_security_w(@strings.PWStr, @cc6631776d7e2373.OBJECTSECURITYINFORMATION_7732df83bef3, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn set_file_security_w_raw(@core.RawAddress, UInt, @core.RawAddress) -> Int
+
+pub fn set_kernel_object_security(@core.RawAddress, @cc6631776d7e2373.OBJECTSECURITYINFORMATION_7732df83bef3, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn set_kernel_object_security_raw(@core.RawAddress, UInt, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn set_private_object_security(@cc6631776d7e2373.OBJECTSECURITYINFORMATION_7732df83bef3, @core.RawAddress, @core.RawAddress, @cc6631776d7e2373.GENERICMAPPING_38953e2f3655, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn set_private_object_security_ex(@cc6631776d7e2373.OBJECTSECURITYINFORMATION_7732df83bef3, @core.RawAddress, @core.RawAddress, @cc6631776d7e2373.SECURITYAUTOINHERITFLAGS_eb950e842722, @cc6631776d7e2373.GENERICMAPPING_38953e2f3655, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn set_private_object_security_ex_raw(UInt, @core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn set_private_object_security_raw(UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn set_security_access_mask(@cc6631776d7e2373.OBJECTSECURITYINFORMATION_7732df83bef3, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn set_security_access_mask_raw(UInt, @core.RawAddress) -> Unit
+
+pub fn set_security_descriptor_control(@core.RawAddress, @cc6631776d7e2373.SECURITYDESCRIPTORCONTROL_5c256d7a69de, @cc6631776d7e2373.SECURITYDESCRIPTORCONTROL_5c256d7a69de) -> Bool raise @core.WindowsError
+
+pub fn set_security_descriptor_control_raw(@core.RawAddress, UInt, UInt) -> @core.RawWin32Call[Int]
+
+pub fn set_security_descriptor_dacl(@core.RawAddress, Int, @cc6631776d7e2373.ACL_1bf7caea28b3?, Int) -> Bool raise @core.WindowsError
+
+pub fn set_security_descriptor_dacl_raw(@core.RawAddress, Int, @core.RawAddress, Int) -> @core.RawWin32Call[Int]
+
+pub fn set_security_descriptor_group(@core.RawAddress, @core.RawAddress, Int) -> Bool raise @core.WindowsError
+
+pub fn set_security_descriptor_group_raw(@core.RawAddress, @core.RawAddress, Int) -> @core.RawWin32Call[Int]
+
+pub fn set_security_descriptor_owner(@core.RawAddress, @core.RawAddress, Int) -> Bool raise @core.WindowsError
+
+pub fn set_security_descriptor_owner_raw(@core.RawAddress, @core.RawAddress, Int) -> @core.RawWin32Call[Int]
+
+pub fn set_security_descriptor_rm_control(@core.RawAddress, @core.RawAddress) -> UInt raise @core.WindowsError
+
+pub fn set_security_descriptor_rm_control_raw(@core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn set_security_descriptor_sacl(@core.RawAddress, Int, @cc6631776d7e2373.ACL_1bf7caea28b3?, Int) -> Bool raise @core.WindowsError
+
+pub fn set_security_descriptor_sacl_raw(@core.RawAddress, Int, @core.RawAddress, Int) -> @core.RawWin32Call[Int]
+
+pub fn set_token_information(@core.RawAddress, @cc6631776d7e2373.TOKENINFORMATIONCLASS_fcf78aa63e2f, @core.RawAddress, UInt) -> Bool raise @core.WindowsError
+
+pub fn set_token_information_raw(@core.RawAddress, Int, @core.RawAddress, UInt) -> @core.RawWin32Call[Int]
+
+pub fn set_user_object_security(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn set_user_object_security_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub let signing_level_file_cache_flag_not_validated : UInt
+
+pub let signing_level_file_cache_flag_validate_only : UInt
+
+pub let signing_level_microsoft : UInt
+
+pub let sz_lbrace : String
+
+pub let sz_lparen : String
+
+pub let sz_rbrace : String
+
+pub let sz_rparen : String
+
+pub let wsz_certenrollsharepath : String
+
+pub let wsz_fcsaparm_certfilenamesuffix : String
+
+pub let wsz_fcsaparm_configdn : String
+
+pub let wsz_fcsaparm_crldeltafilenamesuffix : String
+
+pub let wsz_fcsaparm_crlfilenamesuffix : String
+
+pub let wsz_fcsaparm_domaindn : String
+
+pub let wsz_fcsaparm_dscacertattribute : String
+
+pub let wsz_fcsaparm_dscrlattribute : String
+
+pub let wsz_fcsaparm_dscrosscertpairattribute : String
+
+pub let wsz_fcsaparm_dskracertattribute : String
+
+pub let wsz_fcsaparm_dsusercertattribute : String
+
+pub let wsz_fcsaparm_sanitizedcaname : String
+
+pub let wsz_fcsaparm_sanitizedcanamehash : String
+
+pub let wsz_fcsaparm_serverdnsname : String
+
+pub let wsz_fcsaparm_servershortname : String
+
+pub let wsz_lbrace : String
+
+pub let wsz_lparen : String
+
+pub let wsz_rbrace : String
+
+pub let wsz_rparen : String
+
+// Errors
+
+// Types and methods
+
+// Type aliases
+pub using @cc6631776d7e2373 {type ACCESSALLOWEDACE_24eff68256ee as ACCESSALLOWEDACE}
+
+pub using @cc6631776d7e2373 {type ACCESSALLOWEDCALLBACKACE_0d09f7e0143e as ACCESSALLOWEDCALLBACKACE}
+
+pub using @cc6631776d7e2373 {type ACCESSALLOWEDCALLBACKOBJECTACE_554f8d635c85 as ACCESSALLOWEDCALLBACKOBJECTACE}
+
+pub using @cc6631776d7e2373 {type ACCESSALLOWEDOBJECTACE_f3b2ea85dba3 as ACCESSALLOWEDOBJECTACE}
+
+pub using @cc6631776d7e2373 {type ACCESSDENIEDACE_839eb2a1b1b1 as ACCESSDENIEDACE}
+
+pub using @cc6631776d7e2373 {type ACCESSDENIEDCALLBACKACE_7fe43b7a6f6e as ACCESSDENIEDCALLBACKACE}
+
+pub using @cc6631776d7e2373 {type ACCESSDENIEDCALLBACKOBJECTACE_d6b054fed9e2 as ACCESSDENIEDCALLBACKOBJECTACE}
+
+pub using @cc6631776d7e2373 {type ACCESSDENIEDOBJECTACE_0a411bd7b224 as ACCESSDENIEDOBJECTACE}
+
+pub using @cc6631776d7e2373 {type ACCESSREASONS_ff3609c66598 as ACCESSREASONS}
+
+pub using @cc6631776d7e2373 {type ACEFLAGS_2d83806c6de9 as ACEFLAGS}
+
+pub using @cc6631776d7e2373 {type ACEHEADER_b01a2c741c28 as ACEHEADER}
+
+pub using @cc6631776d7e2373 {type ACEREVISION_eb0b0909749f as ACEREVISION}
+
+pub using @cc6631776d7e2373 {type ACL_1bf7caea28b3 as ACL}
+
+pub using @cc6631776d7e2373 {type ACLINFORMATIONCLASS_7c9719543d27 as ACLINFORMATIONCLASS}
+
+pub using @cc6631776d7e2373 {type ACLREVISIONINFORMATION_e7c12461fb0b as ACLREVISIONINFORMATION}
+
+pub using @cc6631776d7e2373 {type ACLSIZEINFORMATION_b084abb93089 as ACLSIZEINFORMATION}
+
+pub using @cc6631776d7e2373 {type AUDITEVENTTYPE_70308a6bd73e as AUDITEVENTTYPE}
+
+pub using @cc6631776d7e2373 {type CLAIMSECURITYATTRIBUTEFLAGS_d22a9c2973a8 as CLAIMSECURITYATTRIBUTEFLAGS}
+
+pub using @cc6631776d7e2373 {type CLAIMSECURITYATTRIBUTEFQBNVALUE_d1f4ad9bb9b9 as CLAIMSECURITYATTRIBUTEFQBNVALUE}
+
+pub using @cc6631776d7e2373 {type CLAIMSECURITYATTRIBUTEOCTETSTRINGVALUE_31a2d6631ed6 as CLAIMSECURITYATTRIBUTEOCTETSTRINGVALUE}
+
+pub using @cc6631776d7e2373 {type CLAIMSECURITYATTRIBUTERELATIVEV1_c18fa7c2eb08 as CLAIMSECURITYATTRIBUTERELATIVEV1}
+
+pub using @cc6631776d7e2373 {type CLAIMSECURITYATTRIBUTERELATIVEV1ValuesEUnion_e1f0497e9c00 as CLAIMSECURITYATTRIBUTERELATIVEV1ValuesEUnion}
+
+pub using @cc6631776d7e2373 {type CLAIMSECURITYATTRIBUTESINFORMATION_3f972a8b8534 as CLAIMSECURITYATTRIBUTESINFORMATION}
+
+pub using @cc6631776d7e2373 {type CLAIMSECURITYATTRIBUTESINFORMATIONAttributeEUnion_53e643772319 as CLAIMSECURITYATTRIBUTESINFORMATIONAttributeEUnion}
+
+pub using @cc6631776d7e2373 {type CLAIMSECURITYATTRIBUTEV1_6f899107fded as CLAIMSECURITYATTRIBUTEV1}
+
+pub using @cc6631776d7e2373 {type CLAIMSECURITYATTRIBUTEV1ValuesEUnion_333a9659079a as CLAIMSECURITYATTRIBUTEV1ValuesEUnion}
+
+pub using @cc6631776d7e2373 {type CLAIMSECURITYATTRIBUTEVALUETYPE_2f1fab280957 as CLAIMSECURITYATTRIBUTEVALUETYPE}
+
+pub using @cc6631776d7e2373 {type CREATERESTRICTEDTOKENFLAGS_c804b85b1f9e as CREATERESTRICTEDTOKENFLAGS}
+
+pub using @cc6631776d7e2373 {type ENUMPERIOD_05eac0b3e5cf as ENUMPERIOD}
+
+pub using @cc6631776d7e2373 {type GENERICMAPPING_38953e2f3655 as GENERICMAPPING}
+
+pub using @cc6631776d7e2373 {type LLFILETIME_21a4ea37e946 as LLFILETIME}
+
+pub using @cc6631776d7e2373 {type LLFILETIMEAnonymousEUnion_4dea8f989c76 as LLFILETIMEAnonymousEUnion}
+
+pub using @cc6631776d7e2373 {type LOGON32LOGON_86c0a78361be as LOGON32LOGON}
+
+pub using @cc6631776d7e2373 {type LOGON32PROVIDER_6d3be94a3478 as LOGON32PROVIDER}
+
+pub using @cc6631776d7e2373 {type LUIDANDATTRIBUTES_fc4645c23abb as LUIDANDATTRIBUTES}
+
+pub using @cc6631776d7e2373 {type MANDATORYLEVEL_478e6870eca0 as MANDATORYLEVEL}
+
+pub using @cc6631776d7e2373 {type NCRYPTDESCRIPTORHANDLE_a803f56cf209 as NCRYPTDESCRIPTORHANDLE}
+
+pub using @cc6631776d7e2373 {type NCRYPTSTREAMHANDLE_8a7f43110685 as NCRYPTSTREAMHANDLE}
+
+pub using @cc6631776d7e2373 {type OBJECTSECURITYINFORMATION_7732df83bef3 as OBJECTSECURITYINFORMATION}
+
+pub using @cc6631776d7e2373 {type OBJECTTYPELIST_2aa3d72ccc33 as OBJECTTYPELIST}
+
+pub using @cc6631776d7e2373 {type PLSAAPCALLPACKAGEUNTRUSTED_0c9f9736182e as PLSAAPCALLPACKAGEUNTRUSTED}
+
+pub using @cc6631776d7e2373 {type PRIVILEGESET_05727cefa11c as PRIVILEGESET}
+
+pub using @cc6631776d7e2373 {type PSECURITYDESCRIPTOR_a3413c93e00b as PSECURITYDESCRIPTOR}
+
+pub using @cc6631776d7e2373 {type PSID_d2b930171ac9 as PSID}
+
+pub using @cc6631776d7e2373 {type QUOTALIMITS_bccd084f1430 as QUOTALIMITS}
+
+pub using @cc6631776d7e2373 {type SAFERLEVELHANDLE_d66c89ef8052 as SAFERLEVELHANDLE}
+
+pub using @cc6631776d7e2373 {type SEACCESSREPLY_e4ce5397251b as SEACCESSREPLY}
+
+pub using @cc6631776d7e2373 {type SEACCESSREQUEST_880b60099d2c as SEACCESSREQUEST}
+
+pub using @cc6631776d7e2373 {type SECTHREADSTART_d770bd35f5b2 as SECTHREADSTART}
+
+pub using @cc6631776d7e2373 {type SECURITYATTRIBUTES_bc2e2f0be0e1 as SECURITYATTRIBUTES}
+
+pub using @cc6631776d7e2373 {type SECURITYAUTOINHERITFLAGS_eb950e842722 as SECURITYAUTOINHERITFLAGS}
+
+pub using @cc6631776d7e2373 {type SECURITYCAPABILITIES_286d1edc83a4 as SECURITYCAPABILITIES}
+
+pub using @cc6631776d7e2373 {type SECURITYDESCRIPTOR_b6e40bec385e as SECURITYDESCRIPTOR}
+
+pub using @cc6631776d7e2373 {type SECURITYDESCRIPTORCONTROL_5c256d7a69de as SECURITYDESCRIPTORCONTROL}
+
+pub using @cc6631776d7e2373 {type SECURITYDESCRIPTORRELATIVE_7777407dc492 as SECURITYDESCRIPTORRELATIVE}
+
+pub using @cc6631776d7e2373 {type SECURITYIMPERSONATIONLEVEL_26ba4c2fda26 as SECURITYIMPERSONATIONLEVEL}
+
+pub using @cc6631776d7e2373 {type SECURITYQUALITYOFSERVICE_272def2c0e33 as SECURITYQUALITYOFSERVICE}
+
+pub using @cc6631776d7e2373 {type SEIMPERSONATIONSTATE_edf284efa488 as SEIMPERSONATIONSTATE}
+
+pub using @cc6631776d7e2373 {type SESECURITYDESCRIPTOR_af8f475e9781 as SESECURITYDESCRIPTOR}
+
+pub using @cc6631776d7e2373 {type SESID_abfe53b19243 as SESID}
+
+pub using @cc6631776d7e2373 {type SID_22d37a073d0d as SID}
+
+pub using @cc6631776d7e2373 {type SIDANDATTRIBUTES_a5e323de8705 as SIDANDATTRIBUTES}
+
+pub using @cc6631776d7e2373 {type SIDANDATTRIBUTESHASH_c4c4aadabf6b as SIDANDATTRIBUTESHASH}
+
+pub using @cc6631776d7e2373 {type SIDIDENTIFIERAUTHORITY_ec08d6750bbd as SIDIDENTIFIERAUTHORITY}
+
+pub using @cc6631776d7e2373 {type SIDNAMEUSE_1b42db57826a as SIDNAMEUSE}
+
+pub using @cc6631776d7e2373 {type SYSTEMACCESSFILTERACE_11352df4be28 as SYSTEMACCESSFILTERACE}
+
+pub using @cc6631776d7e2373 {type SYSTEMALARMACE_7c0c2a292295 as SYSTEMALARMACE}
+
+pub using @cc6631776d7e2373 {type SYSTEMALARMCALLBACKACE_29e60599f6d6 as SYSTEMALARMCALLBACKACE}
+
+pub using @cc6631776d7e2373 {type SYSTEMALARMCALLBACKOBJECTACE_bb5d209bd249 as SYSTEMALARMCALLBACKOBJECTACE}
+
+pub using @cc6631776d7e2373 {type SYSTEMALARMOBJECTACE_6f599d41e222 as SYSTEMALARMOBJECTACE}
+
+pub using @cc6631776d7e2373 {type SYSTEMAUDITACE_143213eddf49 as SYSTEMAUDITACE}
+
+pub using @cc6631776d7e2373 {type SYSTEMAUDITCALLBACKACE_7b6d11d75966 as SYSTEMAUDITCALLBACKACE}
+
+pub using @cc6631776d7e2373 {type SYSTEMAUDITCALLBACKOBJECTACE_1aa904ea424f as SYSTEMAUDITCALLBACKOBJECTACE}
+
+pub using @cc6631776d7e2373 {type SYSTEMAUDITOBJECTACE_5d55604c4d49 as SYSTEMAUDITOBJECTACE}
+
+pub using @cc6631776d7e2373 {type SYSTEMAUDITOBJECTACEFLAGS_3d2bdbcb8733 as SYSTEMAUDITOBJECTACEFLAGS}
+
+pub using @cc6631776d7e2373 {type SYSTEMMANDATORYLABELACE_539a08bb6df9 as SYSTEMMANDATORYLABELACE}
+
+pub using @cc6631776d7e2373 {type SYSTEMPROCESSTRUSTLABELACE_0b4d86aaa600 as SYSTEMPROCESSTRUSTLABELACE}
+
+pub using @cc6631776d7e2373 {type SYSTEMRESOURCEATTRIBUTEACE_3cba1a5c95b6 as SYSTEMRESOURCEATTRIBUTEACE}
+
+pub using @cc6631776d7e2373 {type SYSTEMSCOPEDPOLICYIDACE_9cf906d3aa47 as SYSTEMSCOPEDPOLICYIDACE}
+
+pub using @cc6631776d7e2373 {type TOKENACCESSINFORMATION_958f038e2914 as TOKENACCESSINFORMATION}
+
+pub using @cc6631776d7e2373 {type TOKENACCESSMASK_aa0a127edb23 as TOKENACCESSMASK}
+
+pub using @cc6631776d7e2373 {type TOKENAPPCONTAINERINFORMATION_fc28ba446dd9 as TOKENAPPCONTAINERINFORMATION}
+
+pub using @cc6631776d7e2373 {type TOKENAUDITPOLICY_40457f575d1e as TOKENAUDITPOLICY}
+
+pub using @cc6631776d7e2373 {type TOKENCONTROL_b31dd4c2e4e5 as TOKENCONTROL}
+
+pub using @cc6631776d7e2373 {type TOKENDEFAULTDACL_a1615282ceea as TOKENDEFAULTDACL}
+
+pub using @cc6631776d7e2373 {type TOKENDEVICECLAIMS_d9ba9b71ad61 as TOKENDEVICECLAIMS}
+
+pub using @cc6631776d7e2373 {type TOKENELEVATION_77060375de11 as TOKENELEVATION}
+
+pub using @cc6631776d7e2373 {type TOKENELEVATIONTYPE_fa67e0952026 as TOKENELEVATIONTYPE}
+
+pub using @cc6631776d7e2373 {type TOKENGROUPS_8744ea02ed4e as TOKENGROUPS}
+
+pub using @cc6631776d7e2373 {type TOKENGROUPSANDPRIVILEGES_873f5efb0807 as TOKENGROUPSANDPRIVILEGES}
+
+pub using @cc6631776d7e2373 {type TOKENINFORMATIONCLASS_fcf78aa63e2f as TOKENINFORMATIONCLASS}
+
+pub using @cc6631776d7e2373 {type TOKENLINKEDTOKEN_a7b422acaa16 as TOKENLINKEDTOKEN}
+
+pub using @cc6631776d7e2373 {type TOKENMANDATORYLABEL_4708ddb13def as TOKENMANDATORYLABEL}
+
+pub using @cc6631776d7e2373 {type TOKENMANDATORYPOLICY_ac946c6dcd0c as TOKENMANDATORYPOLICY}
+
+pub using @cc6631776d7e2373 {type TOKENMANDATORYPOLICYID_39743ab2c1f5 as TOKENMANDATORYPOLICYID}
+
+pub using @cc6631776d7e2373 {type TOKENORIGIN_ec006ca5b913 as TOKENORIGIN}
+
+pub using @cc6631776d7e2373 {type TOKENOWNER_2e4e70e94ded as TOKENOWNER}
+
+pub using @cc6631776d7e2373 {type TOKENPRIMARYGROUP_11dff4202d9c as TOKENPRIMARYGROUP}
+
+pub using @cc6631776d7e2373 {type TOKENPRIVILEGES_303cfd2ed7f7 as TOKENPRIVILEGES}
+
+pub using @cc6631776d7e2373 {type TOKENPRIVILEGESATTRIBUTES_2aca321fe268 as TOKENPRIVILEGESATTRIBUTES}
+
+pub using @cc6631776d7e2373 {type TOKENSOURCE_e829721f1a85 as TOKENSOURCE}
+
+pub using @cc6631776d7e2373 {type TOKENSTATISTICS_675f10ef22a4 as TOKENSTATISTICS}
+
+pub using @cc6631776d7e2373 {type TOKENTYPE_bf07fca3d1e5 as TOKENTYPE}
+
+pub using @cc6631776d7e2373 {type TOKENUSER_2cf9fb1ae05f as TOKENUSER}
+
+pub using @cc6631776d7e2373 {type TOKENUSERCLAIMS_ff66a3a6a9fc as TOKENUSERCLAIMS}
+
+pub using @cc6631776d7e2373 {type WELLKNOWNSIDTYPE_5aa549bf5d18 as WELLKNOWNSIDTYPE}
+
+// Traits

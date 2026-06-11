@@ -1,0 +1,461 @@
+// Generated using `moon info`, DON'T EDIT IT
+package "moonbit-community/win32api/windows/win32/storage/xps"
+
+import {
+  "moonbit-community/win32api/runtime/core",
+  "moonbit-community/win32api/runtime/strings",
+  "moonbit-community/win32api/scc/0ae5f82d71485476",
+  "moonbit-community/win32api/scc/9ab35bf48b3f5013",
+}
+
+// Values
+pub fn abort_doc(@core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn abort_doc_raw(@core.RawAddress) -> Int
+
+pub fn device_capabilities_a(@strings.PStr, @strings.PStr?, @0ae5f82d71485476.PRINTERDEVICECAPABILITIES_e80199098956, @core.RawAddress, @9ab35bf48b3f5013.DEVMODEA_3b3132d875c8?) -> Int raise @core.WindowsError
+
+pub fn device_capabilities_a_raw(@core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn device_capabilities_w(@strings.PWStr, @strings.PWStr?, @0ae5f82d71485476.PRINTERDEVICECAPABILITIES_e80199098956, @core.RawAddress, @9ab35bf48b3f5013.DEVMODEW_12540d748e26?) -> Int raise @core.WindowsError
+
+pub fn device_capabilities_w_raw(@core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn end_doc(@core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn end_doc_raw(@core.RawAddress) -> Int
+
+pub fn end_page(@core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn end_page_raw(@core.RawAddress) -> Int
+
+pub fn escape(@core.RawAddress, Int, Int, @strings.PStr?, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn escape_raw(@core.RawAddress, Int, Int, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn ext_escape(@core.RawAddress, Int, Int, @strings.PStr?, Int, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn ext_escape_raw(@core.RawAddress, Int, Int, @core.RawAddress, Int, @core.RawAddress) -> Int
+
+pub fn print_window(@core.RawAddress, @core.RawAddress, @0ae5f82d71485476.PRINTWINDOWFLAGS_f86900baa109) -> Bool raise @core.WindowsError
+
+pub fn print_window_raw(@core.RawAddress, @core.RawAddress, UInt) -> Int
+
+pub fn set_abort_proc(@core.RawAddress, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn set_abort_proc_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn start_doc_a(@core.RawAddress, @0ae5f82d71485476.DOCINFOA_e9d2c450260c) -> Int raise @core.WindowsError
+
+pub fn start_doc_a_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn start_doc_w(@core.RawAddress, @0ae5f82d71485476.DOCINFOW_0a1727df73b8) -> Int raise @core.WindowsError
+
+pub fn start_doc_w_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn start_page(@core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn start_page_raw(@core.RawAddress) -> Int
+
+pub let xps_e_absolute_reference : Int
+
+pub let xps_e_already_owned : Int
+
+pub let xps_e_bleed_box_page_dimensions_not_in_sync : Int
+
+pub let xps_e_both_pathfigure_and_abbr_syntax_present : Int
+
+pub let xps_e_both_resource_and_sourceattr_present : Int
+
+pub let xps_e_caret_out_of_order : Int
+
+pub let xps_e_caret_outside_string : Int
+
+pub let xps_e_color_component_out_of_range : Int
+
+pub let xps_e_dictionary_item_named : Int
+
+pub let xps_e_duplicate_names : Int
+
+pub let xps_e_duplicate_resource_keys : Int
+
+pub let xps_e_index_out_of_range : Int
+
+pub let xps_e_invalid_bleed_box : Int
+
+pub let xps_e_invalid_content_box : Int
+
+pub let xps_e_invalid_content_type : Int
+
+pub let xps_e_invalid_float : Int
+
+pub let xps_e_invalid_font_uri : Int
+
+pub let xps_e_invalid_language : Int
+
+pub let xps_e_invalid_lookup_type : Int
+
+pub let xps_e_invalid_markup : Int
+
+pub let xps_e_invalid_name : Int
+
+pub let xps_e_invalid_number_of_color_channels : Int
+
+pub let xps_e_invalid_number_of_points_in_curve_segments : Int
+
+pub let xps_e_invalid_obfuscated_font_uri : Int
+
+pub let xps_e_invalid_page_size : Int
+
+pub let xps_e_invalid_resource_key : Int
+
+pub let xps_e_invalid_signatureblock_markup : Int
+
+pub let xps_e_invalid_thumbnail_image_type : Int
+
+pub let xps_e_invalid_xml_encoding : Int
+
+pub let xps_e_mapping_out_of_order : Int
+
+pub let xps_e_mapping_outside_indices : Int
+
+pub let xps_e_mapping_outside_string : Int
+
+pub let xps_e_markup_compatibility_elements : Int
+
+pub let xps_e_missing_colorprofile : Int
+
+pub let xps_e_missing_discardcontrol : Int
+
+pub let xps_e_missing_document : Int
+
+pub let xps_e_missing_documentsequence_relationship : Int
+
+pub let xps_e_missing_fonturi : Int
+
+pub let xps_e_missing_glyphs : Int
+
+pub let xps_e_missing_image_in_imagebrush : Int
+
+pub let xps_e_missing_lookup : Int
+
+pub let xps_e_missing_name : Int
+
+pub let xps_e_missing_page_in_document : Int
+
+pub let xps_e_missing_page_in_pagereference : Int
+
+pub let xps_e_missing_part_reference : Int
+
+pub let xps_e_missing_part_stream : Int
+
+pub let xps_e_missing_referred_document : Int
+
+pub let xps_e_missing_referred_page : Int
+
+pub let xps_e_missing_relationship_target : Int
+
+pub let xps_e_missing_resource_key : Int
+
+pub let xps_e_missing_resource_relationship : Int
+
+pub let xps_e_missing_restricted_font_relationship : Int
+
+pub let xps_e_missing_segment_data : Int
+
+pub let xps_e_multiple_documentsequence_relationships : Int
+
+pub let xps_e_multiple_printtickets_on_document : Int
+
+pub let xps_e_multiple_printtickets_on_documentsequence : Int
+
+pub let xps_e_multiple_printtickets_on_page : Int
+
+pub let xps_e_multiple_references_to_part : Int
+
+pub let xps_e_multiple_resources : Int
+
+pub let xps_e_multiple_thumbnails_on_package : Int
+
+pub let xps_e_multiple_thumbnails_on_page : Int
+
+pub let xps_e_negative_float : Int
+
+pub let xps_e_nested_remote_dictionary : Int
+
+pub let xps_e_no_custom_objects : Int
+
+pub let xps_e_not_enough_gradient_stops : Int
+
+pub let xps_e_object_detached : Int
+
+pub let xps_e_odd_bidilevel : Int
+
+pub let xps_e_one_to_one_mapping_expected : Int
+
+pub let xps_e_package_already_opened : Int
+
+pub let xps_e_package_not_opened : Int
+
+pub let xps_e_package_writer_not_closed : Int
+
+pub let xps_e_relationship_external : Int
+
+pub let xps_e_resource_not_owned : Int
+
+pub let xps_e_restricted_font_not_obfuscated : Int
+
+pub let xps_e_signatureid_dup : Int
+
+pub let xps_e_sigrequestid_dup : Int
+
+pub let xps_e_string_too_long : Int
+
+pub let xps_e_too_many_indices : Int
+
+pub let xps_e_unavailable_package : Int
+
+pub let xps_e_unexpected_colorprofile : Int
+
+pub let xps_e_unexpected_content_type : Int
+
+pub let xps_e_unexpected_relationship_type : Int
+
+pub let xps_e_unexpected_restricted_font_relationship : Int
+
+pub let xps_e_visual_circular_ref : Int
+
+pub let xps_e_xkey_attr_present_outside_res_dict : Int
+
+// Errors
+
+// Types and methods
+
+// Type aliases
+pub using @0ae5f82d71485476 {type ABORTPROC_009b2b63a52f as ABORTPROC}
+
+pub using @0ae5f82d71485476 {type DOCINFOA_e9d2c450260c as DOCINFOA}
+
+pub using @0ae5f82d71485476 {type DOCINFOW_0a1727df73b8 as DOCINFOW}
+
+pub using @0ae5f82d71485476 {type DRAWPATRECT_442de35c46f5 as DRAWPATRECT}
+
+pub using @0ae5f82d71485476 {type IXpsDocumentPackageTarget_cc12baeee196 as IXpsDocumentPackageTarget}
+
+pub using @0ae5f82d71485476 {type IXpsDocumentPackageTarget3D_c10b5e9a2105 as IXpsDocumentPackageTarget3D}
+
+pub using @0ae5f82d71485476 {type IXpsOMBrush_6cc81999cf73 as IXpsOMBrush}
+
+pub using @0ae5f82d71485476 {type IXpsOMCanvas_05272971690d as IXpsOMCanvas}
+
+pub using @0ae5f82d71485476 {type IXpsOMColorProfileResource_4e295e8334db as IXpsOMColorProfileResource}
+
+pub using @0ae5f82d71485476 {type IXpsOMColorProfileResourceCollection_ff6794854672 as IXpsOMColorProfileResourceCollection}
+
+pub using @0ae5f82d71485476 {type IXpsOMCoreProperties_a6e04e929c22 as IXpsOMCoreProperties}
+
+pub using @0ae5f82d71485476 {type IXpsOMDashCollection_31e4b23df803 as IXpsOMDashCollection}
+
+pub using @0ae5f82d71485476 {type IXpsOMDictionary_559764770543 as IXpsOMDictionary}
+
+pub using @0ae5f82d71485476 {type IXpsOMDocument_61123a1bae04 as IXpsOMDocument}
+
+pub using @0ae5f82d71485476 {type IXpsOMDocumentCollection_bf0ee8ce4b00 as IXpsOMDocumentCollection}
+
+pub using @0ae5f82d71485476 {type IXpsOMDocumentSequence_38ae2e356313 as IXpsOMDocumentSequence}
+
+pub using @0ae5f82d71485476 {type IXpsOMDocumentStructureResource_045d246c62a4 as IXpsOMDocumentStructureResource}
+
+pub using @0ae5f82d71485476 {type IXpsOMFontResource_c76ffc42b44d as IXpsOMFontResource}
+
+pub using @0ae5f82d71485476 {type IXpsOMFontResourceCollection_8ea26e367af1 as IXpsOMFontResourceCollection}
+
+pub using @0ae5f82d71485476 {type IXpsOMGeometry_4f1e4187a4aa as IXpsOMGeometry}
+
+pub using @0ae5f82d71485476 {type IXpsOMGeometryFigure_6bb30ab11055 as IXpsOMGeometryFigure}
+
+pub using @0ae5f82d71485476 {type IXpsOMGeometryFigureCollection_ea23b4bf56fa as IXpsOMGeometryFigureCollection}
+
+pub using @0ae5f82d71485476 {type IXpsOMGlyphs_160215c7df60 as IXpsOMGlyphs}
+
+pub using @0ae5f82d71485476 {type IXpsOMGlyphsEditor_31379e35543d as IXpsOMGlyphsEditor}
+
+pub using @0ae5f82d71485476 {type IXpsOMGradientBrush_2d79a5e6bfbf as IXpsOMGradientBrush}
+
+pub using @0ae5f82d71485476 {type IXpsOMGradientStop_42064fe633dc as IXpsOMGradientStop}
+
+pub using @0ae5f82d71485476 {type IXpsOMGradientStopCollection_c117ecc46021 as IXpsOMGradientStopCollection}
+
+pub using @0ae5f82d71485476 {type IXpsOMImageBrush_80c00d874441 as IXpsOMImageBrush}
+
+pub using @0ae5f82d71485476 {type IXpsOMImageResource_7262e4162686 as IXpsOMImageResource}
+
+pub using @0ae5f82d71485476 {type IXpsOMImageResourceCollection_eaff390e342e as IXpsOMImageResourceCollection}
+
+pub using @0ae5f82d71485476 {type IXpsOMLinearGradientBrush_0af56ce2076b as IXpsOMLinearGradientBrush}
+
+pub using @0ae5f82d71485476 {type IXpsOMMatrixTransform_12464beb891a as IXpsOMMatrixTransform}
+
+pub using @0ae5f82d71485476 {type IXpsOMNameCollection_c1905500e3fa as IXpsOMNameCollection}
+
+pub using @0ae5f82d71485476 {type IXpsOMObjectFactory_799d11d9738f as IXpsOMObjectFactory}
+
+pub using @0ae5f82d71485476 {type IXpsOMObjectFactory1_646ecca864b2 as IXpsOMObjectFactory1}
+
+pub using @0ae5f82d71485476 {type IXpsOMPackage_2d8def0e3485 as IXpsOMPackage}
+
+pub using @0ae5f82d71485476 {type IXpsOMPackage1_aef0a5337a0b as IXpsOMPackage1}
+
+pub using @0ae5f82d71485476 {type IXpsOMPackageTarget_980c63153fbe as IXpsOMPackageTarget}
+
+pub using @0ae5f82d71485476 {type IXpsOMPackageWriter_2a78426eda72 as IXpsOMPackageWriter}
+
+pub using @0ae5f82d71485476 {type IXpsOMPackageWriter3D_41a2f2ee5b3f as IXpsOMPackageWriter3D}
+
+pub using @0ae5f82d71485476 {type IXpsOMPage_1b7f1e877a8b as IXpsOMPage}
+
+pub using @0ae5f82d71485476 {type IXpsOMPage1_71f9bdc0db31 as IXpsOMPage1}
+
+pub using @0ae5f82d71485476 {type IXpsOMPageReference_2830ed16c3d7 as IXpsOMPageReference}
+
+pub using @0ae5f82d71485476 {type IXpsOMPageReferenceCollection_fb140e6abd6d as IXpsOMPageReferenceCollection}
+
+pub using @0ae5f82d71485476 {type IXpsOMPart_e42a01fe5499 as IXpsOMPart}
+
+pub using @0ae5f82d71485476 {type IXpsOMPartResources_b53eb2f27df7 as IXpsOMPartResources}
+
+pub using @0ae5f82d71485476 {type IXpsOMPartUriCollection_91091c4e3882 as IXpsOMPartUriCollection}
+
+pub using @0ae5f82d71485476 {type IXpsOMPath_5079cb593ae6 as IXpsOMPath}
+
+pub using @0ae5f82d71485476 {type IXpsOMPrintTicketResource_ebcfd9864238 as IXpsOMPrintTicketResource}
+
+pub using @0ae5f82d71485476 {type IXpsOMRadialGradientBrush_cf506a971d4b as IXpsOMRadialGradientBrush}
+
+pub using @0ae5f82d71485476 {type IXpsOMRemoteDictionaryResource_b33c46b45b2c as IXpsOMRemoteDictionaryResource}
+
+pub using @0ae5f82d71485476 {type IXpsOMRemoteDictionaryResource1_40498b165fb7 as IXpsOMRemoteDictionaryResource1}
+
+pub using @0ae5f82d71485476 {type IXpsOMRemoteDictionaryResourceCollection_e25ea2f1b643 as IXpsOMRemoteDictionaryResourceCollection}
+
+pub using @0ae5f82d71485476 {type IXpsOMResource_25b9113e4447 as IXpsOMResource}
+
+pub using @0ae5f82d71485476 {type IXpsOMShareable_fc6062f4b83b as IXpsOMShareable}
+
+pub using @0ae5f82d71485476 {type IXpsOMSignatureBlockResource_7be8d146aab2 as IXpsOMSignatureBlockResource}
+
+pub using @0ae5f82d71485476 {type IXpsOMSignatureBlockResourceCollection_2a989e8b3c16 as IXpsOMSignatureBlockResourceCollection}
+
+pub using @0ae5f82d71485476 {type IXpsOMSolidColorBrush_1afe6a739458 as IXpsOMSolidColorBrush}
+
+pub using @0ae5f82d71485476 {type IXpsOMStoryFragmentsResource_589c2768c876 as IXpsOMStoryFragmentsResource}
+
+pub using @0ae5f82d71485476 {type IXpsOMThumbnailGenerator_4ffe0094112f as IXpsOMThumbnailGenerator}
+
+pub using @0ae5f82d71485476 {type IXpsOMTileBrush_bb52a1d8d1aa as IXpsOMTileBrush}
+
+pub using @0ae5f82d71485476 {type IXpsOMVisual_c9af2dfeabae as IXpsOMVisual}
+
+pub using @0ae5f82d71485476 {type IXpsOMVisualBrush_c25711ae50f3 as IXpsOMVisualBrush}
+
+pub using @0ae5f82d71485476 {type IXpsOMVisualCollection_a94b23c9edd6 as IXpsOMVisualCollection}
+
+pub using @0ae5f82d71485476 {type IXpsSignature_0478ff6b0d0d as IXpsSignature}
+
+pub using @0ae5f82d71485476 {type IXpsSignatureBlock_1732884cc08f as IXpsSignatureBlock}
+
+pub using @0ae5f82d71485476 {type IXpsSignatureBlockCollection_2be5dbb450cc as IXpsSignatureBlockCollection}
+
+pub using @0ae5f82d71485476 {type IXpsSignatureCollection_74a218c719c3 as IXpsSignatureCollection}
+
+pub using @0ae5f82d71485476 {type IXpsSignatureManager_b122d64d0358 as IXpsSignatureManager}
+
+pub using @0ae5f82d71485476 {type IXpsSignatureRequest_c5d35e0f5f2a as IXpsSignatureRequest}
+
+pub using @0ae5f82d71485476 {type IXpsSignatureRequestCollection_e192c6f93a18 as IXpsSignatureRequestCollection}
+
+pub using @0ae5f82d71485476 {type IXpsSigningOptions_dad1de18c3fe as IXpsSigningOptions}
+
+pub using @0ae5f82d71485476 {type PRINTERDEVICECAPABILITIES_e80199098956 as PRINTERDEVICECAPABILITIES}
+
+pub using @0ae5f82d71485476 {type PRINTWINDOWFLAGS_f86900baa109 as PRINTWINDOWFLAGS}
+
+pub using @0ae5f82d71485476 {type PSFEATURECUSTPAPER_7774d1bad128 as PSFEATURECUSTPAPER}
+
+pub using @0ae5f82d71485476 {type PSFEATUREOUTPUT_35ce923789f6 as PSFEATUREOUTPUT}
+
+pub using @0ae5f82d71485476 {type PSINJECTDATA_ddba253da1a5 as PSINJECTDATA}
+
+pub using @0ae5f82d71485476 {type PSINJECTPOINT_f2b42763feb9 as PSINJECTPOINT}
+
+pub using @0ae5f82d71485476 {type XPSCOLOR_30f11e0fc9f7 as XPSCOLOR}
+
+pub using @0ae5f82d71485476 {type XPSCOLORINTERPOLATION_9895030b6287 as XPSCOLORINTERPOLATION}
+
+pub using @0ae5f82d71485476 {type XPSCOLORTYPE_2e5eb4c34f68 as XPSCOLORTYPE}
+
+pub using @0ae5f82d71485476 {type XPSCOLORXPSCOLORVALUE_316e5b8a1ad3 as XPSCOLORXPSCOLORVALUE}
+
+pub using @0ae5f82d71485476 {type XPSCOLORXPSCOLORVALUEContextEStruct_d0783ea85bb6 as XPSCOLORXPSCOLORVALUEContextEStruct}
+
+pub using @0ae5f82d71485476 {type XPSCOLORXPSCOLORVALUESRGBEStruct_3bec11cece91 as XPSCOLORXPSCOLORVALUESRGBEStruct}
+
+pub using @0ae5f82d71485476 {type XPSCOLORXPSCOLORVALUEScRGBEStruct_b8a3bb49e0d4 as XPSCOLORXPSCOLORVALUEScRGBEStruct}
+
+pub using @0ae5f82d71485476 {type XPSDASH_6c4d0e4cd83c as XPSDASH}
+
+pub using @0ae5f82d71485476 {type XPSDASHCAP_9ec9d721b0af as XPSDASHCAP}
+
+pub using @0ae5f82d71485476 {type XPSDOCUMENTTYPE_e8cb15bb0798 as XPSDOCUMENTTYPE}
+
+pub using @0ae5f82d71485476 {type XPSFILLRULE_aec258df0d90 as XPSFILLRULE}
+
+pub using @0ae5f82d71485476 {type XPSFONTEMBEDDING_4b4e41a9e29d as XPSFONTEMBEDDING}
+
+pub using @0ae5f82d71485476 {type XPSGLYPHINDEX_4adfe399b1dd as XPSGLYPHINDEX}
+
+pub using @0ae5f82d71485476 {type XPSGLYPHMAPPING_9b08cf54d7b4 as XPSGLYPHMAPPING}
+
+pub using @0ae5f82d71485476 {type XPSIMAGETYPE_85cf9bf7c5f4 as XPSIMAGETYPE}
+
+pub using @0ae5f82d71485476 {type XPSINTERLEAVING_ce966185ab9b as XPSINTERLEAVING}
+
+pub using @0ae5f82d71485476 {type XPSLINECAP_d4a9e505f5f7 as XPSLINECAP}
+
+pub using @0ae5f82d71485476 {type XPSLINEJOIN_a9ae9a730dcb as XPSLINEJOIN}
+
+pub using @0ae5f82d71485476 {type XPSMATRIX_b9e80e7fb700 as XPSMATRIX}
+
+pub using @0ae5f82d71485476 {type XPSOBJECTTYPE_2d49950ddb95 as XPSOBJECTTYPE}
+
+pub using @0ae5f82d71485476 {type XPSPOINT_cb918fd64686 as XPSPOINT}
+
+pub using @0ae5f82d71485476 {type XPSRECT_e4f5569356be as XPSRECT}
+
+pub using @0ae5f82d71485476 {type XPSSEGMENTSTROKEPATTERN_170de2a090ad as XPSSEGMENTSTROKEPATTERN}
+
+pub using @0ae5f82d71485476 {type XPSSEGMENTTYPE_21b8bd91f888 as XPSSEGMENTTYPE}
+
+pub using @0ae5f82d71485476 {type XPSSIGNATURESTATUS_82288c89c43f as XPSSIGNATURESTATUS}
+
+pub using @0ae5f82d71485476 {type XPSSIGNFLAGS_17cceac5d878 as XPSSIGNFLAGS}
+
+pub using @0ae5f82d71485476 {type XPSSIGNPOLICY_486af55c82c5 as XPSSIGNPOLICY}
+
+pub using @0ae5f82d71485476 {type XPSSIZE_31d9c579887a as XPSSIZE}
+
+pub using @0ae5f82d71485476 {type XPSSPREADMETHOD_458fea7e1aa9 as XPSSPREADMETHOD}
+
+pub using @0ae5f82d71485476 {type XPSSTYLESIMULATION_2e07ef026b07 as XPSSTYLESIMULATION}
+
+pub using @0ae5f82d71485476 {type XPSTHUMBNAILSIZE_a85953592787 as XPSTHUMBNAILSIZE}
+
+pub using @0ae5f82d71485476 {type XPSTILEMODE_57a9f8ce0223 as XPSTILEMODE}
+
+pub using @0ae5f82d71485476 {type XpsOMObjectFactory_4b66f32f2765 as XpsOMObjectFactory}
+
+pub using @0ae5f82d71485476 {type XpsOMThumbnailGenerator_5eb11c9384bb as XpsOMThumbnailGenerator}
+
+pub using @0ae5f82d71485476 {type XpsSignatureManager_7093b4a4baf8 as XpsSignatureManager}
+
+// Traits

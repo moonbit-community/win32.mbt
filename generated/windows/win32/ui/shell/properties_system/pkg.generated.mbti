@@ -1,0 +1,437 @@
+// Generated using `moon info`, DON'T EDIT IT
+package "moonbit-community/win32api/windows/win32/ui/shell/properties_system"
+
+import {
+  "moonbit-community/win32api/runtime/core",
+  "moonbit-community/win32api/runtime/strings",
+  "moonbit-community/win32api/scc/37aefc0cb6b28f48",
+  "moonbit-community/win32api/scc/58228b76ec7374fa",
+  "moonbit-community/win32api/scc/682b218cd891c27e",
+  "moonbit-community/win32api/scc/fb66f520d7e12332",
+}
+
+// Values
+pub fn pif_mgr_close_properties(@core.RawAddress, UInt) -> @core.RawAddress raise @core.WindowsError
+
+pub fn pif_mgr_close_properties_raw(@core.RawAddress, UInt) -> @core.RawAddress
+
+pub fn pif_mgr_get_properties(@core.RawAddress, @strings.PStr?, @core.RawAddress, Int, UInt) -> Int raise @core.WindowsError
+
+pub fn pif_mgr_get_properties_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, Int, UInt) -> Int
+
+pub fn pif_mgr_open_properties(@strings.PWStr, @strings.PWStr?, UInt, UInt) -> @core.RawAddress raise @core.WindowsError
+
+pub fn pif_mgr_open_properties_raw(@core.RawAddress, @core.RawAddress, UInt, UInt) -> @core.RawAddress
+
+pub fn pif_mgr_set_properties(@core.RawAddress, @strings.PStr?, @core.RawAddress, Int, UInt) -> Int raise @core.WindowsError
+
+pub fn pif_mgr_set_properties_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, Int, UInt) -> Int
+
+pub let pkey_pidstr_max : UInt
+
+pub fn ps_coerce_to_canonical_value(@fb66f520d7e12332.PROPERTYKEY_97b524be3499, @58228b76ec7374fa.PROPVARIANTAnonymousEUnion_c0143a362bd5) -> Int raise @core.WindowsError
+
+pub fn ps_coerce_to_canonical_value_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn ps_create_adapter_from_property_store(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn ps_create_adapter_from_property_store_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn ps_create_delayed_multiplex_property_store(@682b218cd891c27e.GETPROPERTYSTOREFLAGS_a13c0166a77a, @core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn ps_create_delayed_multiplex_property_store_raw(Int, @core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn ps_create_memory_property_store(@core.RawAddress, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn ps_create_memory_property_store_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn ps_create_multiplex_property_store(@core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn ps_create_multiplex_property_store_raw(@core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn ps_create_property_change_array(@fb66f520d7e12332.PROPERTYKEY_97b524be3499?, @core.RawAddress, @58228b76ec7374fa.PROPVARIANTAnonymousEUnion_c0143a362bd5?, UInt, @core.RawAddress, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn ps_create_property_change_array_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn ps_create_property_store_from_object(@core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn ps_create_property_store_from_object_raw(@core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn ps_create_property_store_from_property_set_storage(@core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn ps_create_property_store_from_property_set_storage_raw(@core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn ps_create_simple_property_change(@682b218cd891c27e.PKAFLAGS_2dd374a3f9ea, @fb66f520d7e12332.PROPERTYKEY_97b524be3499, @58228b76ec7374fa.PROPVARIANTAnonymousEUnion_c0143a362bd5, @core.RawAddress, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn ps_create_simple_property_change_raw(Int, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn ps_enumerate_property_descriptions(@682b218cd891c27e.PROPDESCENUMFILTER_a7f2afac4ef9, @core.RawAddress, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn ps_enumerate_property_descriptions_raw(Int, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn ps_format_for_display(@fb66f520d7e12332.PROPERTYKEY_97b524be3499, @58228b76ec7374fa.PROPVARIANTAnonymousEUnion_c0143a362bd5, @682b218cd891c27e.PROPDESCFORMATFLAGS_4ea36ac2bbf0, @strings.PWStrBuffer) -> Int raise @core.WindowsError
+
+pub fn ps_format_for_display_alloc(@fb66f520d7e12332.PROPERTYKEY_97b524be3499, @58228b76ec7374fa.PROPVARIANTAnonymousEUnion_c0143a362bd5, @682b218cd891c27e.PROPDESCFORMATFLAGS_4ea36ac2bbf0, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn ps_format_for_display_alloc_raw(@core.RawAddress, @core.RawAddress, Int, @core.RawAddress) -> Int
+
+pub fn ps_format_for_display_raw(@core.RawAddress, @core.RawAddress, Int, @core.RawAddress, UInt) -> Int
+
+pub fn ps_format_property_value(@core.RawAddress, @core.RawAddress, @682b218cd891c27e.PROPDESCFORMATFLAGS_4ea36ac2bbf0, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn ps_format_property_value_raw(@core.RawAddress, @core.RawAddress, Int, @core.RawAddress) -> Int
+
+pub fn ps_get_image_reference_for_value(@fb66f520d7e12332.PROPERTYKEY_97b524be3499, @58228b76ec7374fa.PROPVARIANTAnonymousEUnion_c0143a362bd5, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn ps_get_image_reference_for_value_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn ps_get_item_property_handler(@core.RawAddress, Int, @core.RawAddress, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn ps_get_item_property_handler_raw(@core.RawAddress, Int, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn ps_get_item_property_handler_with_create_object(@core.RawAddress, Int, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn ps_get_item_property_handler_with_create_object_raw(@core.RawAddress, Int, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn ps_get_name_from_property_key(@fb66f520d7e12332.PROPERTYKEY_97b524be3499, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn ps_get_name_from_property_key_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn ps_get_named_property_from_property_storage(Int64, UInt, @strings.PWStr, @58228b76ec7374fa.PROPVARIANTAnonymousEUnion_c0143a362bd5) -> Int raise @core.WindowsError
+
+pub fn ps_get_named_property_from_property_storage_raw(Int64, UInt, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn ps_get_property_description(@fb66f520d7e12332.PROPERTYKEY_97b524be3499, @core.RawAddress, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn ps_get_property_description_by_name(@strings.PWStr, @core.RawAddress, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn ps_get_property_description_by_name_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn ps_get_property_description_list_from_string(@strings.PWStr, @core.RawAddress, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn ps_get_property_description_list_from_string_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn ps_get_property_description_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn ps_get_property_from_property_storage(Int64, UInt, @fb66f520d7e12332.PROPERTYKEY_97b524be3499, @58228b76ec7374fa.PROPVARIANTAnonymousEUnion_c0143a362bd5) -> Int raise @core.WindowsError
+
+pub fn ps_get_property_from_property_storage_raw(Int64, UInt, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn ps_get_property_key_from_name(@strings.PWStr, @fb66f520d7e12332.PROPERTYKEY_97b524be3499) -> Int raise @core.WindowsError
+
+pub fn ps_get_property_key_from_name_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn ps_get_property_system(@core.RawAddress, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn ps_get_property_system_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn ps_get_property_value(@core.RawAddress, @core.RawAddress, @58228b76ec7374fa.PROPVARIANTAnonymousEUnion_c0143a362bd5) -> Int raise @core.WindowsError
+
+pub fn ps_get_property_value_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn ps_lookup_property_handler_clsid(@strings.PWStr, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn ps_lookup_property_handler_clsid_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn ps_property_bag_delete(@core.RawAddress, @strings.PWStr) -> Int raise @core.WindowsError
+
+pub fn ps_property_bag_delete_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn ps_property_bag_read_bool(@core.RawAddress, @strings.PWStr, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn ps_property_bag_read_bool_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn ps_property_bag_read_bstr(@core.RawAddress, @strings.PWStr, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn ps_property_bag_read_bstr_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn ps_property_bag_read_dword(@core.RawAddress, @strings.PWStr, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn ps_property_bag_read_dword_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn ps_property_bag_read_guid(@core.RawAddress, @strings.PWStr, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn ps_property_bag_read_guid_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn ps_property_bag_read_int(@core.RawAddress, @strings.PWStr, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn ps_property_bag_read_int_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn ps_property_bag_read_long(@core.RawAddress, @strings.PWStr, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn ps_property_bag_read_long_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn ps_property_bag_read_pointl(@core.RawAddress, @strings.PWStr, @fb66f520d7e12332.POINTL_441e33686183) -> Int raise @core.WindowsError
+
+pub fn ps_property_bag_read_pointl_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn ps_property_bag_read_points(@core.RawAddress, @strings.PWStr, @fb66f520d7e12332.POINTS_fda91da298c3) -> Int raise @core.WindowsError
+
+pub fn ps_property_bag_read_points_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn ps_property_bag_read_property_key(@core.RawAddress, @strings.PWStr, @fb66f520d7e12332.PROPERTYKEY_97b524be3499) -> Int raise @core.WindowsError
+
+pub fn ps_property_bag_read_property_key_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn ps_property_bag_read_rectl(@core.RawAddress, @strings.PWStr, @fb66f520d7e12332.RECTL_6d189eb51220) -> Int raise @core.WindowsError
+
+pub fn ps_property_bag_read_rectl_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn ps_property_bag_read_short(@core.RawAddress, @strings.PWStr, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn ps_property_bag_read_short_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn ps_property_bag_read_str(@core.RawAddress, @strings.PWStr, @strings.PWStrBuffer) -> Int raise @core.WindowsError
+
+pub fn ps_property_bag_read_str_alloc(@core.RawAddress, @strings.PWStr, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn ps_property_bag_read_str_alloc_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn ps_property_bag_read_str_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, Int) -> Int
+
+pub fn ps_property_bag_read_stream(@core.RawAddress, @strings.PWStr, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn ps_property_bag_read_stream_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn ps_property_bag_read_type(@core.RawAddress, @strings.PWStr, @58228b76ec7374fa.VARIANTAnonymousEUnion_440f47c7058e, @58228b76ec7374fa.VARENUM_6513e5e5bac0) -> Int raise @core.WindowsError
+
+pub fn ps_property_bag_read_type_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, UInt) -> Int
+
+pub fn ps_property_bag_read_ulonglong(@core.RawAddress, @strings.PWStr, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn ps_property_bag_read_ulonglong_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn ps_property_bag_read_unknown(@core.RawAddress, @strings.PWStr, @core.RawAddress, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn ps_property_bag_read_unknown_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn ps_property_bag_write_bool(@core.RawAddress, @strings.PWStr, Int) -> Int raise @core.WindowsError
+
+pub fn ps_property_bag_write_bool_raw(@core.RawAddress, @core.RawAddress, Int) -> Int
+
+pub fn ps_property_bag_write_bstr(@core.RawAddress, @strings.PWStr, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn ps_property_bag_write_bstr_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn ps_property_bag_write_dword(@core.RawAddress, @strings.PWStr, UInt) -> Int raise @core.WindowsError
+
+pub fn ps_property_bag_write_dword_raw(@core.RawAddress, @core.RawAddress, UInt) -> Int
+
+pub fn ps_property_bag_write_guid(@core.RawAddress, @strings.PWStr, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn ps_property_bag_write_guid_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn ps_property_bag_write_int(@core.RawAddress, @strings.PWStr, Int) -> Int raise @core.WindowsError
+
+pub fn ps_property_bag_write_int_raw(@core.RawAddress, @core.RawAddress, Int) -> Int
+
+pub fn ps_property_bag_write_long(@core.RawAddress, @strings.PWStr, Int) -> Int raise @core.WindowsError
+
+pub fn ps_property_bag_write_long_raw(@core.RawAddress, @core.RawAddress, Int) -> Int
+
+pub fn ps_property_bag_write_pointl(@core.RawAddress, @strings.PWStr, @fb66f520d7e12332.POINTL_441e33686183) -> Int raise @core.WindowsError
+
+pub fn ps_property_bag_write_pointl_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn ps_property_bag_write_points(@core.RawAddress, @strings.PWStr, @fb66f520d7e12332.POINTS_fda91da298c3) -> Int raise @core.WindowsError
+
+pub fn ps_property_bag_write_points_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn ps_property_bag_write_property_key(@core.RawAddress, @strings.PWStr, @fb66f520d7e12332.PROPERTYKEY_97b524be3499) -> Int raise @core.WindowsError
+
+pub fn ps_property_bag_write_property_key_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn ps_property_bag_write_rectl(@core.RawAddress, @strings.PWStr, @fb66f520d7e12332.RECTL_6d189eb51220) -> Int raise @core.WindowsError
+
+pub fn ps_property_bag_write_rectl_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn ps_property_bag_write_short(@core.RawAddress, @strings.PWStr, Int) -> Int raise @core.WindowsError
+
+pub fn ps_property_bag_write_short_raw(@core.RawAddress, @core.RawAddress, Int) -> Int
+
+pub fn ps_property_bag_write_str(@core.RawAddress, @strings.PWStr, @strings.PWStr) -> Int raise @core.WindowsError
+
+pub fn ps_property_bag_write_str_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn ps_property_bag_write_stream(@core.RawAddress, @strings.PWStr, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn ps_property_bag_write_stream_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn ps_property_bag_write_ulonglong(@core.RawAddress, @strings.PWStr, UInt64) -> Int raise @core.WindowsError
+
+pub fn ps_property_bag_write_ulonglong_raw(@core.RawAddress, @core.RawAddress, UInt64) -> Int
+
+pub fn ps_property_bag_write_unknown(@core.RawAddress, @strings.PWStr, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn ps_property_bag_write_unknown_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn ps_property_key_from_string(@strings.PWStr, @fb66f520d7e12332.PROPERTYKEY_97b524be3499) -> Int raise @core.WindowsError
+
+pub fn ps_property_key_from_string_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn ps_refresh_property_schema() -> Int raise @core.WindowsError
+
+pub fn ps_refresh_property_schema_raw() -> Int
+
+pub fn ps_register_property_schema(@strings.PWStr) -> Int raise @core.WindowsError
+
+pub fn ps_register_property_schema_raw(@core.RawAddress) -> Int
+
+pub fn ps_set_property_value(@core.RawAddress, @core.RawAddress, @58228b76ec7374fa.PROPVARIANTAnonymousEUnion_c0143a362bd5) -> Int raise @core.WindowsError
+
+pub fn ps_set_property_value_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn ps_string_from_property_key(@fb66f520d7e12332.PROPERTYKEY_97b524be3499, @strings.PWStrBuffer) -> Int raise @core.WindowsError
+
+pub fn ps_string_from_property_key_raw(@core.RawAddress, @core.RawAddress, UInt) -> Int
+
+pub fn ps_unregister_property_schema(@strings.PWStr) -> Int raise @core.WindowsError
+
+pub fn ps_unregister_property_schema_raw(@core.RawAddress) -> Int
+
+pub fn sh_add_default_properties_by_ext(@strings.PWStr, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn sh_add_default_properties_by_ext_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn sh_get_property_store_for_window(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn sh_get_property_store_for_window_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn sh_get_property_store_from_id_list(@37aefc0cb6b28f48.SHITEMID_d17e2534f8cc, @682b218cd891c27e.GETPROPERTYSTOREFLAGS_a13c0166a77a, @core.RawAddress, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn sh_get_property_store_from_id_list_raw(@core.RawAddress, Int, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn sh_get_property_store_from_parsing_name(@strings.PWStr, @core.RawAddress, @682b218cd891c27e.GETPROPERTYSTOREFLAGS_a13c0166a77a, @core.RawAddress, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn sh_get_property_store_from_parsing_name_raw(@core.RawAddress, @core.RawAddress, Int, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn sh_prop_stg_create(@core.RawAddress, @core.RawAddress, @core.RawAddress, UInt, UInt, UInt, @core.RawAddress, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn sh_prop_stg_create_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, UInt, UInt, UInt, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn sh_prop_stg_read_multiple(@core.RawAddress, UInt, UInt, @58228b76ec7374fa.PROPSPEC_d11e5d8255bf, @58228b76ec7374fa.PROPVARIANTAnonymousEUnion_c0143a362bd5) -> Int raise @core.WindowsError
+
+pub fn sh_prop_stg_read_multiple_raw(@core.RawAddress, UInt, UInt, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn sh_prop_stg_write_multiple(@core.RawAddress, @core.RawAddress, UInt, @58228b76ec7374fa.PROPSPEC_d11e5d8255bf, @58228b76ec7374fa.PROPVARIANTAnonymousEUnion_c0143a362bd5, UInt) -> Int raise @core.WindowsError
+
+pub fn sh_prop_stg_write_multiple_raw(@core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress, UInt) -> Int
+
+// Errors
+
+// Types and methods
+
+// Type aliases
+pub using @682b218cd891c27e {type GETPROPERTYSTOREFLAGS_a13c0166a77a as GETPROPERTYSTOREFLAGS}
+
+pub using @682b218cd891c27e {type ICreateObject_2221f5db9d03 as ICreateObject}
+
+pub using @682b218cd891c27e {type IDelayedPropertyStoreFactory_d6ae46ebfafa as IDelayedPropertyStoreFactory}
+
+pub using @682b218cd891c27e {type IInitializeWithFile_c18e40894fd3 as IInitializeWithFile}
+
+pub using @682b218cd891c27e {type IInitializeWithStream_b23c23be3462 as IInitializeWithStream}
+
+pub using @682b218cd891c27e {type INamedPropertyStore_d8cabe022e5b as INamedPropertyStore}
+
+pub using @682b218cd891c27e {type IObjectWithPropertyKey_d7569018293d as IObjectWithPropertyKey}
+
+pub using @682b218cd891c27e {type IPersistSerializedPropStorage_c04fca30563d as IPersistSerializedPropStorage}
+
+pub using @682b218cd891c27e {type IPersistSerializedPropStorage2_e2c2202326de as IPersistSerializedPropStorage2}
+
+pub using @682b218cd891c27e {type IPropertyChange_16e12fa5ab2c as IPropertyChange}
+
+pub using @682b218cd891c27e {type IPropertyChangeArray_dc6bedbbf783 as IPropertyChangeArray}
+
+pub using @682b218cd891c27e {type IPropertyDescription_7dd0f793ba67 as IPropertyDescription}
+
+pub using @682b218cd891c27e {type IPropertyDescription2_00500a20a745 as IPropertyDescription2}
+
+pub using @682b218cd891c27e {type IPropertyDescriptionAliasInfo_461216761cdf as IPropertyDescriptionAliasInfo}
+
+pub using @682b218cd891c27e {type IPropertyDescriptionList_f968dd98079d as IPropertyDescriptionList}
+
+pub using @682b218cd891c27e {type IPropertyDescriptionRelatedPropertyInfo_81ae02cf7c6b as IPropertyDescriptionRelatedPropertyInfo}
+
+pub using @682b218cd891c27e {type IPropertyDescriptionSearchInfo_4507147b0b4e as IPropertyDescriptionSearchInfo}
+
+pub using @682b218cd891c27e {type IPropertyEnumType_f5a8b67317aa as IPropertyEnumType}
+
+pub using @682b218cd891c27e {type IPropertyEnumType2_aff628d46750 as IPropertyEnumType2}
+
+pub using @682b218cd891c27e {type IPropertyEnumTypeList_5ebf95c49099 as IPropertyEnumTypeList}
+
+pub using @682b218cd891c27e {type IPropertyStore_97ace4d3df38 as IPropertyStore}
+
+pub using @682b218cd891c27e {type IPropertyStoreCache_e4c07cf7ed26 as IPropertyStoreCache}
+
+pub using @682b218cd891c27e {type IPropertyStoreCapabilities_8b14e02254ba as IPropertyStoreCapabilities}
+
+pub using @682b218cd891c27e {type IPropertyStoreFactory_38904c8f91d0 as IPropertyStoreFactory}
+
+pub using @682b218cd891c27e {type IPropertySystem_11d0207f1d42 as IPropertySystem}
+
+pub using @682b218cd891c27e {type IPropertySystemChangeNotify_4a37ada502ea as IPropertySystemChangeNotify}
+
+pub using @682b218cd891c27e {type IPropertyUI_daf165c9ae9c as IPropertyUI}
+
+pub using @682b218cd891c27e {type InMemoryPropertyStore_5a2f0cd931cf as InMemoryPropertyStore}
+
+pub using @682b218cd891c27e {type InMemoryPropertyStoreMarshalByValue_a0d2ae4cb9bc as InMemoryPropertyStoreMarshalByValue}
+
+pub using @682b218cd891c27e {type PCUSERIALIZEDPROPSTORAGE_7b19b38a7c60 as PCUSERIALIZEDPROPSTORAGE}
+
+pub using @682b218cd891c27e {type PDOPSTATUS_d205f3ee0655 as PDOPSTATUS}
+
+pub using @682b218cd891c27e {type PERSISTSPROPSTOREFLAGS_082d49b970a0 as PERSISTSPROPSTOREFLAGS}
+
+pub using @682b218cd891c27e {type PKAFLAGS_2dd374a3f9ea as PKAFLAGS}
+
+pub using @682b218cd891c27e {type PLACEHOLDERSTATES_d87a8ba74a1a as PLACEHOLDERSTATES}
+
+pub using @682b218cd891c27e {type PROPDESCAGGREGATIONTYPE_5da02eaf6649 as PROPDESCAGGREGATIONTYPE}
+
+pub using @682b218cd891c27e {type PROPDESCCOLUMNINDEXTYPE_957e40027720 as PROPDESCCOLUMNINDEXTYPE}
+
+pub using @682b218cd891c27e {type PROPDESCCONDITIONTYPE_ba696127e075 as PROPDESCCONDITIONTYPE}
+
+pub using @682b218cd891c27e {type PROPDESCDISPLAYTYPE_66121a9ad477 as PROPDESCDISPLAYTYPE}
+
+pub using @682b218cd891c27e {type PROPDESCENUMFILTER_a7f2afac4ef9 as PROPDESCENUMFILTER}
+
+pub using @682b218cd891c27e {type PROPDESCFORMATFLAGS_4ea36ac2bbf0 as PROPDESCFORMATFLAGS}
+
+pub using @682b218cd891c27e {type PROPDESCGROUPINGRANGE_445169912ae9 as PROPDESCGROUPINGRANGE}
+
+pub using @682b218cd891c27e {type PROPDESCRELATIVEDESCRIPTIONTYPE_5f087bcc16e3 as PROPDESCRELATIVEDESCRIPTIONTYPE}
+
+pub using @682b218cd891c27e {type PROPDESCSEARCHINFOFLAGS_b504fdcf55a1 as PROPDESCSEARCHINFOFLAGS}
+
+pub using @682b218cd891c27e {type PROPDESCSORTDESCRIPTION_7fa29c150f1b as PROPDESCSORTDESCRIPTION}
+
+pub using @682b218cd891c27e {type PROPDESCTYPEFLAGS_b43826c43654 as PROPDESCTYPEFLAGS}
+
+pub using @682b218cd891c27e {type PROPDESCVIEWFLAGS_23fb70fef9b3 as PROPDESCVIEWFLAGS}
+
+pub using @682b218cd891c27e {type PROPENUMTYPE_a14604479e34 as PROPENUMTYPE}
+
+pub using @682b218cd891c27e {type PROPERTYUIFLAGS_3ee4840d55c1 as PROPERTYUIFLAGS}
+
+pub using @682b218cd891c27e {type PROPERTYUIFORMATFLAGS_35f745bcd898 as PROPERTYUIFORMATFLAGS}
+
+pub using @682b218cd891c27e {type PROPERTYUINAMEFLAGS_629ad9373742 as PROPERTYUINAMEFLAGS}
+
+pub using @682b218cd891c27e {type PROPPRG_ff6aab9a0865 as PROPPRG}
+
+pub using @682b218cd891c27e {type PSCSTATE_7af2b92be395 as PSCSTATE}
+
+pub using @682b218cd891c27e {type PropertySystem_e245b790f5fc as PropertySystem}
+
+pub using @682b218cd891c27e {type SERIALIZEDPROPSTORAGE_9c390804d997 as SERIALIZEDPROPSTORAGE}
+
+pub using @682b218cd891c27e {type SYNCENGINESTATEFLAGS_338d7809d58b as SYNCENGINESTATEFLAGS}
+
+pub using @682b218cd891c27e {type SYNCTRANSFERSTATUS_40e509c89b16 as SYNCTRANSFERSTATUS}
+
+// Traits

@@ -1,0 +1,81 @@
+// Generated using `moon info`, DON'T EDIT IT
+package "moonbit-community/win32api/windows/win32/system/restore"
+
+import {
+  "moonbit-community/win32api/runtime/core",
+  "moonbit-community/win32api/scc/e4f88ca462dcbac6",
+}
+
+// Values
+pub let accessibility_setting : UInt
+
+pub let application_run : UInt
+
+pub let backup : UInt
+
+pub let backup_recovery : UInt
+
+pub let begin_nested_system_change_norp : UInt
+
+pub let checkpoint : UInt
+
+pub let critical_update : UInt
+
+pub let desktop_setting : UInt
+
+pub let firstrun : UInt
+
+pub let manual_checkpoint : UInt
+
+pub let max_desc : UInt
+
+pub let max_desc_w : UInt
+
+pub let max_event : UInt
+
+pub let max_rpt : UInt
+
+pub let min_event : UInt
+
+pub let min_rpt : UInt
+
+pub let oe_setting : UInt
+
+pub let restore : UInt
+
+pub fn sr_remove_restore_point(UInt) -> UInt raise @core.WindowsError
+
+pub fn sr_remove_restore_point_raw(UInt) -> UInt
+
+pub fn sr_set_restore_point_a(@e4f88ca462dcbac6.RESTOREPOINTINFOA_31fb940cb3e4, @e4f88ca462dcbac6.STATEMGRSTATUS_27cafb665fe6) -> Bool raise @core.WindowsError
+
+pub fn sr_set_restore_point_a_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn sr_set_restore_point_w(@e4f88ca462dcbac6.RESTOREPOINTINFOW_afaca3ddfa5a, @e4f88ca462dcbac6.STATEMGRSTATUS_27cafb665fe6) -> Bool raise @core.WindowsError
+
+pub fn sr_set_restore_point_w_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub let windows_boot : UInt
+
+pub let windows_shutdown : UInt
+
+pub let windows_update : UInt
+
+// Errors
+
+// Types and methods
+
+// Type aliases
+pub using @e4f88ca462dcbac6 {type RESTOREPOINTINFOA_31fb940cb3e4 as RESTOREPOINTINFOA}
+
+pub using @e4f88ca462dcbac6 {type RESTOREPOINTINFOEVENTTYPE_eac5673d8082 as RESTOREPOINTINFOEVENTTYPE}
+
+pub using @e4f88ca462dcbac6 {type RESTOREPOINTINFOEX_9a27fb9ff652 as RESTOREPOINTINFOEX}
+
+pub using @e4f88ca462dcbac6 {type RESTOREPOINTINFOTYPE_fddaa681f125 as RESTOREPOINTINFOTYPE}
+
+pub using @e4f88ca462dcbac6 {type RESTOREPOINTINFOW_afaca3ddfa5a as RESTOREPOINTINFOW}
+
+pub using @e4f88ca462dcbac6 {type STATEMGRSTATUS_27cafb665fe6 as STATEMGRSTATUS}
+
+// Traits

@@ -1,0 +1,160 @@
+// Generated using `moon info`, DON'T EDIT IT
+package "moonbit-community/win32api/windows/win32/security/app_locker"
+
+import {
+  "moonbit-community/win32api/runtime/core",
+  "moonbit-community/win32api/runtime/strings",
+  "moonbit-community/win32api/scc/9b7c3b2c50fcc687",
+}
+
+// Values
+pub fn safer_close_level(@core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn safer_close_level_raw(@core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn safer_compute_token_from_level(@core.RawAddress, @core.RawAddress, @core.RawAddress, @9b7c3b2c50fcc687.SAFERCOMPUTETOKENFROMLEVELFLAGS_8485393f64aa, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn safer_compute_token_from_level_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, UInt, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn safer_create_level(UInt, UInt, UInt, @core.RawAddress, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn safer_create_level_raw(UInt, UInt, UInt, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub let safer_criteria_appx_package : UInt
+
+pub let safer_criteria_authenticode : UInt
+
+pub let safer_criteria_imagehash : UInt
+
+pub let safer_criteria_imagepath : UInt
+
+pub let safer_criteria_imagepath_nt : UInt
+
+pub let safer_criteria_nosignedhash : UInt
+
+pub let safer_criteria_urlzone : UInt
+
+pub fn safer_get_level_information(@core.RawAddress, @9b7c3b2c50fcc687.SAFEROBJECTINFOCLASS_cd8763e95fd5, @core.RawAddress, UInt, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn safer_get_level_information_raw(@core.RawAddress, Int, @core.RawAddress, UInt, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn safer_get_policy_information(UInt, @9b7c3b2c50fcc687.SAFERPOLICYINFOCLASS_62073acc109c, UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn safer_get_policy_information_raw(UInt, Int, UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn safer_identify_level(UInt, @9b7c3b2c50fcc687.SAFERCODEPROPERTIESV2_8dfc97780b6d?, @core.RawAddress, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn safer_identify_level_raw(UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub let safer_level_open : UInt
+
+pub let safer_levelid_constrained : UInt
+
+pub let safer_levelid_disallowed : UInt
+
+pub let safer_levelid_fullytrusted : UInt
+
+pub let safer_levelid_normaluser : UInt
+
+pub let safer_levelid_untrusted : UInt
+
+pub let safer_max_description_size : UInt
+
+pub let safer_max_friendlyname_size : UInt
+
+pub let safer_max_hash_size : UInt
+
+pub let safer_policy_block_client_ui : UInt
+
+pub let safer_policy_hash_duplicate : UInt
+
+pub let safer_policy_jobid_constrained : UInt
+
+pub let safer_policy_jobid_mask : UInt
+
+pub let safer_policy_jobid_untrusted : UInt
+
+pub let safer_policy_only_audit : UInt
+
+pub let safer_policy_only_exes : UInt
+
+pub let safer_policy_sandbox_inert : UInt
+
+pub let safer_policy_uiflags_hidden : UInt
+
+pub let safer_policy_uiflags_information_prompt : UInt
+
+pub let safer_policy_uiflags_mask : UInt
+
+pub let safer_policy_uiflags_option_prompt : UInt
+
+pub fn safer_record_event_log_entry(@core.RawAddress, @strings.PWStr, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn safer_record_event_log_entry_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub let safer_scopeid_machine : UInt
+
+pub let safer_scopeid_user : UInt
+
+pub fn safer_set_level_information(@core.RawAddress, @9b7c3b2c50fcc687.SAFEROBJECTINFOCLASS_cd8763e95fd5, @core.RawAddress, UInt) -> Bool raise @core.WindowsError
+
+pub fn safer_set_level_information_raw(@core.RawAddress, Int, @core.RawAddress, UInt) -> @core.RawWin32Call[Int]
+
+pub fn safer_set_policy_information(UInt, @9b7c3b2c50fcc687.SAFERPOLICYINFOCLASS_62073acc109c, UInt, @core.RawAddress, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn safer_set_policy_information_raw(UInt, Int, UInt, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn saferi_is_executable_file_type(@strings.PWStr, Byte) -> Bool raise @core.WindowsError
+
+pub fn saferi_is_executable_file_type_raw(@core.RawAddress, UInt) -> Int
+
+pub let srp_policy_appx : String
+
+pub let srp_policy_dll : String
+
+pub let srp_policy_exe : String
+
+pub let srp_policy_managedinstaller : String
+
+pub let srp_policy_msi : String
+
+pub let srp_policy_nov2 : String
+
+pub let srp_policy_script : String
+
+pub let srp_policy_shell : String
+
+pub let srp_policy_wldpconfigci : String
+
+pub let srp_policy_wldpmsi : String
+
+pub let srp_policy_wldpscript : String
+
+// Errors
+
+// Types and methods
+
+// Type aliases
+pub using @9b7c3b2c50fcc687 {type SAFERCODEPROPERTIESV1_51362d343d88 as SAFERCODEPROPERTIESV1}
+
+pub using @9b7c3b2c50fcc687 {type SAFERCODEPROPERTIESV2_8dfc97780b6d as SAFERCODEPROPERTIESV2}
+
+pub using @9b7c3b2c50fcc687 {type SAFERCOMPUTETOKENFROMLEVELFLAGS_8485393f64aa as SAFERCOMPUTETOKENFROMLEVELFLAGS}
+
+pub using @9b7c3b2c50fcc687 {type SAFERHASHIDENTIFICATION_e9e365f09ec3 as SAFERHASHIDENTIFICATION}
+
+pub using @9b7c3b2c50fcc687 {type SAFERHASHIDENTIFICATION2_46acf15cbaf2 as SAFERHASHIDENTIFICATION2}
+
+pub using @9b7c3b2c50fcc687 {type SAFERIDENTIFICATIONHEADER_7c650efc78bb as SAFERIDENTIFICATIONHEADER}
+
+pub using @9b7c3b2c50fcc687 {type SAFERIDENTIFICATIONTYPES_71561d3149d8 as SAFERIDENTIFICATIONTYPES}
+
+pub using @9b7c3b2c50fcc687 {type SAFEROBJECTINFOCLASS_cd8763e95fd5 as SAFEROBJECTINFOCLASS}
+
+pub using @9b7c3b2c50fcc687 {type SAFERPATHNAMEIDENTIFICATION_fb9dd35cb01b as SAFERPATHNAMEIDENTIFICATION}
+
+pub using @9b7c3b2c50fcc687 {type SAFERPOLICYINFOCLASS_62073acc109c as SAFERPOLICYINFOCLASS}
+
+pub using @9b7c3b2c50fcc687 {type SAFERURLZONEIDENTIFICATION_bd7d60fc1b47 as SAFERURLZONEIDENTIFICATION}
+
+// Traits

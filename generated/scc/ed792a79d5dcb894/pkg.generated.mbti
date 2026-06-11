@@ -1,0 +1,187 @@
+// Generated using `moon info`, DON'T EDIT IT
+package "moonbit-community/win32api/scc/ed792a79d5dcb894"
+
+import {
+  "moonbit-community/win32api/runtime/core",
+  "moonbitlang/core/debug",
+}
+
+// Values
+pub let allocation_state_busy_62be121f88da : Int
+
+pub let allocation_state_free_a1bc965cc166 : Int
+
+pub let allocation_state_unknown_cbd53567e809 : Int
+
+pub let avrf_enum_resources_flags_dont_resolve_traces_f7f425287fce : UInt
+
+pub let avrf_enum_resources_flags_suspend_012d470727a6 : UInt
+
+pub let avrf_max_traces_adfffd5791a2 : UInt
+
+pub let avrf_resource_handle_trace_98422c938c37 : Int
+
+pub let avrf_resource_heap_allocation_230663790494 : Int
+
+pub let avrf_resource_max_d85b5e1b4637 : Int
+
+pub let avrfbacktraceinformation_d5f66c8687a6_alignment : Int
+
+pub let avrfbacktraceinformation_d5f66c8687a6_size : Int
+
+pub let avrfhandleoperation_26170ade3b18_alignment : Int
+
+pub let avrfhandleoperation_26170ade3b18_size : Int
+
+pub let avrfheapallocation_44522483b216_alignment : Int
+
+pub let avrfheapallocation_44522483b216_size : Int
+
+pub let heap_enumeration_everything_76322256bf33 : Int
+
+pub let heap_enumeration_stop_0c28efec8dd0 : Int
+
+pub let heap_full_page_heap_c650f06306c4 : Int
+
+pub let heap_metadata_3659b8f9ebbb : Int
+
+pub let heap_state_mask_1237219db441 : Int
+
+pub let operation_db_badref_36519706da65 : Int
+
+pub let operation_db_close_5151e99e2860 : Int
+
+pub let operation_db_open_01ee46010717 : Int
+
+pub let operation_db_unused_7214fa7dc55b : Int
+
+pub fn verifier_enumerate_resource_100c8cf6d3d0(@core.RawAddress, VERIFIERENUMRESOURCEFLAGS_7c9b2da44f52, UInt, @core.RawAddress, @core.RawAddress) -> UInt raise @core.WindowsError
+
+pub fn verifier_enumerate_resource_100c8cf6d3d0_raw(@core.RawAddress, UInt, UInt, @core.RawAddress, @core.RawAddress) -> UInt
+
+// Errors
+
+// Types and methods
+pub(all) struct AVRFBACKTRACEINFORMATION_d5f66c8687a6 {
+  raw_buffer : @core.NativeBuffer
+}
+pub fn AVRFBACKTRACEINFORMATION_d5f66c8687a6::abi_alignment() -> Int
+pub fn AVRFBACKTRACEINFORMATION_d5f66c8687a6::abi_size() -> Int
+pub fn AVRFBACKTRACEINFORMATION_d5f66c8687a6::bytes(Self) -> Bytes raise @core.WindowsError
+pub fn AVRFBACKTRACEINFORMATION_d5f66c8687a6::depth(Self) -> UInt raise @core.WindowsError
+pub fn AVRFBACKTRACEINFORMATION_d5f66c8687a6::from_bytes(Bytes) -> Self raise @core.WindowsError
+pub fn AVRFBACKTRACEINFORMATION_d5f66c8687a6::index(Self) -> UInt raise @core.WindowsError
+pub fn AVRFBACKTRACEINFORMATION_d5f66c8687a6::new() -> Self raise @core.WindowsError
+pub fn AVRFBACKTRACEINFORMATION_d5f66c8687a6::raw_address(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn AVRFBACKTRACEINFORMATION_d5f66c8687a6::set_depth(Self, UInt) -> Unit raise @core.WindowsError
+pub fn AVRFBACKTRACEINFORMATION_d5f66c8687a6::set_index(Self, UInt) -> Unit raise @core.WindowsError
+pub fn[T] AVRFBACKTRACEINFORMATION_d5f66c8687a6::with_raw_address(Self, (@core.RawAddress) -> T raise?) -> T raise
+pub impl Eq for AVRFBACKTRACEINFORMATION_d5f66c8687a6
+pub impl @debug.Debug for AVRFBACKTRACEINFORMATION_d5f66c8687a6
+
+pub type AVRFHANDLEOPERATIONENUMERATECALLBACK_b7d84413d6e2
+
+pub(all) struct AVRFHANDLEOPERATION_26170ade3b18 {
+  raw_buffer : @core.NativeBuffer
+}
+pub fn AVRFHANDLEOPERATION_26170ade3b18::abi_alignment() -> Int
+pub fn AVRFHANDLEOPERATION_26170ade3b18::abi_size() -> Int
+pub fn AVRFHANDLEOPERATION_26170ade3b18::back_trace_information(Self) -> AVRFBACKTRACEINFORMATION_d5f66c8687a6 raise @core.WindowsError
+pub fn AVRFHANDLEOPERATION_26170ade3b18::bytes(Self) -> Bytes raise @core.WindowsError
+pub fn AVRFHANDLEOPERATION_26170ade3b18::from_bytes(Bytes) -> Self raise @core.WindowsError
+pub fn AVRFHANDLEOPERATION_26170ade3b18::handle(Self) -> UInt64 raise @core.WindowsError
+pub fn AVRFHANDLEOPERATION_26170ade3b18::new() -> Self raise @core.WindowsError
+pub fn AVRFHANDLEOPERATION_26170ade3b18::operation_type(Self) -> UInt raise @core.WindowsError
+pub fn AVRFHANDLEOPERATION_26170ade3b18::process_id(Self) -> UInt raise @core.WindowsError
+pub fn AVRFHANDLEOPERATION_26170ade3b18::raw_address(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn AVRFHANDLEOPERATION_26170ade3b18::set_back_trace_information(Self, AVRFBACKTRACEINFORMATION_d5f66c8687a6) -> Unit raise @core.WindowsError
+pub fn AVRFHANDLEOPERATION_26170ade3b18::set_handle(Self, UInt64) -> Unit raise @core.WindowsError
+pub fn AVRFHANDLEOPERATION_26170ade3b18::set_operation_type(Self, UInt) -> Unit raise @core.WindowsError
+pub fn AVRFHANDLEOPERATION_26170ade3b18::set_process_id(Self, UInt) -> Unit raise @core.WindowsError
+pub fn AVRFHANDLEOPERATION_26170ade3b18::set_spare0(Self, UInt) -> Unit raise @core.WindowsError
+pub fn AVRFHANDLEOPERATION_26170ade3b18::set_thread_id(Self, UInt) -> Unit raise @core.WindowsError
+pub fn AVRFHANDLEOPERATION_26170ade3b18::spare0(Self) -> UInt raise @core.WindowsError
+pub fn AVRFHANDLEOPERATION_26170ade3b18::thread_id(Self) -> UInt raise @core.WindowsError
+pub fn[T] AVRFHANDLEOPERATION_26170ade3b18::with_raw_address(Self, (@core.RawAddress) -> T raise?) -> T raise
+pub impl Eq for AVRFHANDLEOPERATION_26170ade3b18
+pub impl @debug.Debug for AVRFHANDLEOPERATION_26170ade3b18
+
+pub type AVRFHEAPALLOCATIONENUMERATECALLBACK_8f9a4e69bb0c
+
+pub(all) struct AVRFHEAPALLOCATION_44522483b216 {
+  raw_buffer : @core.NativeBuffer
+}
+pub fn AVRFHEAPALLOCATION_44522483b216::abi_alignment() -> Int
+pub fn AVRFHEAPALLOCATION_44522483b216::abi_size() -> Int
+pub fn AVRFHEAPALLOCATION_44522483b216::allocation(Self) -> UInt64 raise @core.WindowsError
+pub fn AVRFHEAPALLOCATION_44522483b216::allocation_size(Self) -> UInt64 raise @core.WindowsError
+pub fn AVRFHEAPALLOCATION_44522483b216::back_trace_information_raw(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn AVRFHEAPALLOCATION_44522483b216::bytes(Self) -> Bytes raise @core.WindowsError
+pub fn AVRFHEAPALLOCATION_44522483b216::from_bytes(Bytes) -> Self raise @core.WindowsError
+pub fn AVRFHEAPALLOCATION_44522483b216::heap_context(Self) -> UInt64 raise @core.WindowsError
+pub fn AVRFHEAPALLOCATION_44522483b216::heap_handle(Self) -> UInt64 raise @core.WindowsError
+pub fn AVRFHEAPALLOCATION_44522483b216::heap_state(Self) -> UInt raise @core.WindowsError
+pub fn AVRFHEAPALLOCATION_44522483b216::new() -> Self raise @core.WindowsError
+pub fn AVRFHEAPALLOCATION_44522483b216::raw_address(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn AVRFHEAPALLOCATION_44522483b216::set_allocation(Self, UInt64) -> Unit raise @core.WindowsError
+pub fn AVRFHEAPALLOCATION_44522483b216::set_allocation_size(Self, UInt64) -> Unit raise @core.WindowsError
+pub fn AVRFHEAPALLOCATION_44522483b216::set_back_trace_information_raw(Self, @core.RawAddress) -> Unit raise @core.WindowsError
+pub fn AVRFHEAPALLOCATION_44522483b216::set_heap_context(Self, UInt64) -> Unit raise @core.WindowsError
+pub fn AVRFHEAPALLOCATION_44522483b216::set_heap_handle(Self, UInt64) -> Unit raise @core.WindowsError
+pub fn AVRFHEAPALLOCATION_44522483b216::set_heap_state(Self, UInt) -> Unit raise @core.WindowsError
+pub fn AVRFHEAPALLOCATION_44522483b216::set_user_allocation(Self, UInt64) -> Unit raise @core.WindowsError
+pub fn AVRFHEAPALLOCATION_44522483b216::set_user_allocation_size(Self, UInt64) -> Unit raise @core.WindowsError
+pub fn AVRFHEAPALLOCATION_44522483b216::set_user_allocation_state(Self, UInt) -> Unit raise @core.WindowsError
+pub fn AVRFHEAPALLOCATION_44522483b216::user_allocation(Self) -> UInt64 raise @core.WindowsError
+pub fn AVRFHEAPALLOCATION_44522483b216::user_allocation_size(Self) -> UInt64 raise @core.WindowsError
+pub fn AVRFHEAPALLOCATION_44522483b216::user_allocation_state(Self) -> UInt raise @core.WindowsError
+pub fn[T] AVRFHEAPALLOCATION_44522483b216::with_raw_address(Self, (@core.RawAddress) -> T raise?) -> T raise
+pub impl Eq for AVRFHEAPALLOCATION_44522483b216
+pub impl @debug.Debug for AVRFHEAPALLOCATION_44522483b216
+
+pub type AVRFRESOURCEENUMERATECALLBACK_a92f5ca08f7d
+
+pub(all) struct EAvrfResourceTypes_944879ea98eb(Int) derive(Compare, Eq, @debug.Debug)
+pub fn EAvrfResourceTypes_944879ea98eb::avrf_resource_handle_trace() -> Self
+pub fn EAvrfResourceTypes_944879ea98eb::avrf_resource_heap_allocation() -> Self
+pub fn EAvrfResourceTypes_944879ea98eb::avrf_resource_max() -> Self
+pub fn EAvrfResourceTypes_944879ea98eb::from_int(Int) -> Self
+pub fn EAvrfResourceTypes_944879ea98eb::to_int(Self) -> Int
+
+pub(all) struct EHANDLETRACEOPERATIONS_dc92dfb467a5(Int) derive(Compare, Eq, @debug.Debug)
+pub fn EHANDLETRACEOPERATIONS_dc92dfb467a5::from_int(Int) -> Self
+pub fn EHANDLETRACEOPERATIONS_dc92dfb467a5::operation_db_badref() -> Self
+pub fn EHANDLETRACEOPERATIONS_dc92dfb467a5::operation_db_close() -> Self
+pub fn EHANDLETRACEOPERATIONS_dc92dfb467a5::operation_db_open() -> Self
+pub fn EHANDLETRACEOPERATIONS_dc92dfb467a5::operation_db_unused() -> Self
+pub fn EHANDLETRACEOPERATIONS_dc92dfb467a5::to_int(Self) -> Int
+
+pub(all) struct EHeapAllocationState_af18283103f1(Int) derive(Compare, Eq, @debug.Debug)
+pub fn EHeapAllocationState_af18283103f1::from_int(Int) -> Self
+pub fn EHeapAllocationState_af18283103f1::heap_full_page_heap() -> Self
+pub fn EHeapAllocationState_af18283103f1::heap_metadata() -> Self
+pub fn EHeapAllocationState_af18283103f1::heap_state_mask() -> Self
+pub fn EHeapAllocationState_af18283103f1::to_int(Self) -> Int
+
+pub(all) struct EHeapEnumerationLevel_35d66f91d29c(Int) derive(Compare, Eq, @debug.Debug)
+pub fn EHeapEnumerationLevel_35d66f91d29c::from_int(Int) -> Self
+pub fn EHeapEnumerationLevel_35d66f91d29c::heap_enumeration_everything() -> Self
+pub fn EHeapEnumerationLevel_35d66f91d29c::heap_enumeration_stop() -> Self
+pub fn EHeapEnumerationLevel_35d66f91d29c::to_int(Self) -> Int
+
+pub(all) struct EUserAllocationState_5c66e1af6022(Int) derive(Compare, Eq, @debug.Debug)
+pub fn EUserAllocationState_5c66e1af6022::allocation_state_busy() -> Self
+pub fn EUserAllocationState_5c66e1af6022::allocation_state_free() -> Self
+pub fn EUserAllocationState_5c66e1af6022::allocation_state_unknown() -> Self
+pub fn EUserAllocationState_5c66e1af6022::from_int(Int) -> Self
+pub fn EUserAllocationState_5c66e1af6022::to_int(Self) -> Int
+
+pub(all) struct VERIFIERENUMRESOURCEFLAGS_7c9b2da44f52(Int) derive(Compare, Eq, @debug.Debug)
+pub fn VERIFIERENUMRESOURCEFLAGS_7c9b2da44f52::avrf_enum_resources_flags_dont_resolve_traces() -> Self
+pub fn VERIFIERENUMRESOURCEFLAGS_7c9b2da44f52::avrf_enum_resources_flags_suspend() -> Self
+pub fn VERIFIERENUMRESOURCEFLAGS_7c9b2da44f52::from_int(Int) -> Self
+pub fn VERIFIERENUMRESOURCEFLAGS_7c9b2da44f52::to_int(Self) -> Int
+
+// Type aliases
+
+// Traits

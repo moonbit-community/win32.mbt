@@ -1,0 +1,1718 @@
+// Generated using `moon info`, DON'T EDIT IT
+package "moonbit-community/win32api/windows/win32/ui/input/ime"
+
+import {
+  "moonbit-community/win32api/runtime/core",
+  "moonbit-community/win32api/runtime/strings",
+  "moonbit-community/win32api/scc/0efbb1bc76d1535a",
+  "moonbit-community/win32api/scc/9ab35bf48b3f5013",
+  "moonbit-community/win32api/scc/fb66f520d7e12332",
+}
+
+// Values
+pub let attr_converted : UInt
+
+pub let attr_fixedconverted : UInt
+
+pub let attr_input : UInt
+
+pub let attr_input_error : UInt
+
+pub let attr_target_converted : UInt
+
+pub let attr_target_notconverted : UInt
+
+pub let cb_comment_max : UInt
+
+pub let cfs_candidatepos : UInt
+
+pub let cfs_default : UInt
+
+pub let cfs_exclude : UInt
+
+pub let cfs_force_position : UInt
+
+pub let cfs_point : UInt
+
+pub let cfs_rect : UInt
+
+pub let charinfo_appletid_mask : UInt
+
+pub let charinfo_charid_mask : UInt
+
+pub let charinfo_feid_mask : UInt
+
+pub let cs_insertchar : UInt
+
+pub let cs_nomovecaret : UInt
+
+pub let e_largeinput : UInt
+
+pub let e_nocand : UInt
+
+pub let e_notenough_buffer : UInt
+
+pub let e_notenough_wdd : UInt
+
+pub let feid_chinese_hongkong : UInt
+
+pub let feid_chinese_simplified : UInt
+
+pub let feid_chinese_singapore : UInt
+
+pub let feid_chinese_traditional : UInt
+
+pub let feid_japanese : UInt
+
+pub let feid_korean : UInt
+
+pub let feid_korean_johab : UInt
+
+pub let feid_none : UInt
+
+pub let felang_clmn_fixd : UInt
+
+pub let felang_clmn_fixr : UInt
+
+pub let felang_clmn_nopbreak : UInt
+
+pub let felang_clmn_nowbreak : UInt
+
+pub let felang_clmn_pbreak : UInt
+
+pub let felang_clmn_wbreak : UInt
+
+pub let felang_cmode_automatic : UInt
+
+pub let felang_cmode_bestfirst : UInt
+
+pub let felang_cmode_bopomofo : UInt
+
+pub let felang_cmode_conversation : UInt
+
+pub let felang_cmode_fullwidthout : UInt
+
+pub let felang_cmode_halfwidthout : UInt
+
+pub let felang_cmode_hangul : UInt
+
+pub let felang_cmode_hiraganaout : UInt
+
+pub let felang_cmode_katakanaout : UInt
+
+pub let felang_cmode_mergecand : UInt
+
+pub let felang_cmode_monoruby : UInt
+
+pub let felang_cmode_name : UInt
+
+pub let felang_cmode_noinvisiblechar : UInt
+
+pub let felang_cmode_none : UInt
+
+pub let felang_cmode_nopruning : UInt
+
+pub let felang_cmode_phrasepredict : UInt
+
+pub let felang_cmode_pinyin : UInt
+
+pub let felang_cmode_plauralclause : UInt
+
+pub let felang_cmode_preconv : UInt
+
+pub let felang_cmode_radical : UInt
+
+pub let felang_cmode_roman : UInt
+
+pub let felang_cmode_singleconvert : UInt
+
+pub let felang_cmode_unknownreading : UInt
+
+pub let felang_cmode_usenorevwords : UInt
+
+pub let felang_invald_po : UInt
+
+pub let felang_req_conv : UInt
+
+pub let felang_req_reconv : UInt
+
+pub let felang_req_rev : UInt
+
+pub let fid_msime_kms_del_keylist : UInt
+
+pub let fid_msime_kms_funcdesc : UInt
+
+pub let fid_msime_kms_getmap : UInt
+
+pub let fid_msime_kms_getmapfast : UInt
+
+pub let fid_msime_kms_getmapseamless : UInt
+
+pub let fid_msime_kms_init : UInt
+
+pub let fid_msime_kms_invoke : UInt
+
+pub let fid_msime_kms_notify : UInt
+
+pub let fid_msime_kms_setmap : UInt
+
+pub let fid_msime_kms_term : UInt
+
+pub let fid_msime_kms_version : UInt
+
+pub let fid_msime_version : UInt
+
+pub let fid_reconvert_version : UInt
+
+pub let gcsex_cancelreconvert : UInt
+
+pub let gl_id_cannotsave : UInt
+
+pub let gl_id_choosecandidate : UInt
+
+pub let gl_id_inputcode : UInt
+
+pub let gl_id_inputradical : UInt
+
+pub let gl_id_inputreading : UInt
+
+pub let gl_id_inputsymbol : UInt
+
+pub let gl_id_noconvert : UInt
+
+pub let gl_id_nodictionary : UInt
+
+pub let gl_id_nomodule : UInt
+
+pub let gl_id_private_first : UInt
+
+pub let gl_id_private_last : UInt
+
+pub let gl_id_readingconflict : UInt
+
+pub let gl_id_reverseconversion : UInt
+
+pub let gl_id_toomanystroke : UInt
+
+pub let gl_id_typingerror : UInt
+
+pub let gl_id_unknown : UInt
+
+pub let gl_level_error : UInt
+
+pub let gl_level_fatal : UInt
+
+pub let gl_level_information : UInt
+
+pub let gl_level_noguideline : UInt
+
+pub let gl_level_warning : UInt
+
+pub let iace_children : UInt
+
+pub let iace_default : UInt
+
+pub let iace_ignorenocontext : UInt
+
+pub let ifec_s_already_default : Int
+
+pub let ifed_e_invalid_format : Int
+
+pub let ifed_e_no_entry : Int
+
+pub let ifed_e_not_found : Int
+
+pub let ifed_e_not_supported : Int
+
+pub let ifed_e_not_user_dic : Int
+
+pub let ifed_e_open_failed : Int
+
+pub let ifed_e_register_disconnected : Int
+
+pub let ifed_e_register_failed : Int
+
+pub let ifed_e_register_illegal_pos : Int
+
+pub let ifed_e_register_improper_word : Int
+
+pub let ifed_e_user_comment : Int
+
+pub let ifed_e_write_failed : Int
+
+pub let ifed_pos_adjective : UInt
+
+pub let ifed_pos_adjective_verb : UInt
+
+pub let ifed_pos_adnoun : UInt
+
+pub let ifed_pos_adverb : UInt
+
+pub let ifed_pos_affix : UInt
+
+pub let ifed_pos_all : UInt
+
+pub let ifed_pos_auxiliary_verb : UInt
+
+pub let ifed_pos_conjunction : UInt
+
+pub let ifed_pos_dependent : UInt
+
+pub let ifed_pos_idioms : UInt
+
+pub let ifed_pos_independent : UInt
+
+pub let ifed_pos_inflectionalsuffix : UInt
+
+pub let ifed_pos_interjection : UInt
+
+pub let ifed_pos_none : UInt
+
+pub let ifed_pos_noun : UInt
+
+pub let ifed_pos_particle : UInt
+
+pub let ifed_pos_prefix : UInt
+
+pub let ifed_pos_sub_verb : UInt
+
+pub let ifed_pos_suffix : UInt
+
+pub let ifed_pos_symbols : UInt
+
+pub let ifed_pos_tankanji : UInt
+
+pub let ifed_pos_verb : UInt
+
+pub let ifed_reg_all : UInt
+
+pub let ifed_reg_auto : UInt
+
+pub let ifed_reg_grammar : UInt
+
+pub let ifed_reg_none : UInt
+
+pub let ifed_reg_user : UInt
+
+pub let ifed_s_comment_changed : Int
+
+pub let ifed_s_empty_dictionary : Int
+
+pub let ifed_s_more_entries : Int
+
+pub let ifed_s_word_exists : Int
+
+pub let ifed_select_all : UInt
+
+pub let ifed_select_comment : UInt
+
+pub let ifed_select_display : UInt
+
+pub let ifed_select_none : UInt
+
+pub let ifed_select_pos : UInt
+
+pub let ifed_select_reading : UInt
+
+pub let ifed_type_all : UInt
+
+pub let ifed_type_english : UInt
+
+pub let ifed_type_general : UInt
+
+pub let ifed_type_nameplace : UInt
+
+pub let ifed_type_none : UInt
+
+pub let ifed_type_reverse : UInt
+
+pub let ifed_type_speech : UInt
+
+pub let igimif_rightmenu : UInt
+
+pub let igimii_cmode : UInt
+
+pub let igimii_configure : UInt
+
+pub let igimii_help : UInt
+
+pub let igimii_inputtools : UInt
+
+pub let igimii_other : UInt
+
+pub let igimii_smode : UInt
+
+pub let igimii_tools : UInt
+
+pub let imc_closestatuswindow : UInt
+
+pub let imc_getcandidatepos : UInt
+
+pub let imc_getcompositionfont : UInt
+
+pub let imc_getcompositionwindow : UInt
+
+pub let imc_getsoftkbdfont : UInt
+
+pub let imc_getsoftkbdpos : UInt
+
+pub let imc_getsoftkbdsubtype : UInt
+
+pub let imc_getstatuswindowpos : UInt
+
+pub let imc_openstatuswindow : UInt
+
+pub let imc_setcandidatepos : UInt
+
+pub let imc_setcompositionfont : UInt
+
+pub let imc_setcompositionwindow : UInt
+
+pub let imc_setconversionmode : UInt
+
+pub let imc_setopenstatus : UInt
+
+pub let imc_setsentencemode : UInt
+
+pub let imc_setsoftkbddata : UInt
+
+pub let imc_setsoftkbdfont : UInt
+
+pub let imc_setsoftkbdpos : UInt
+
+pub let imc_setsoftkbdsubtype : UInt
+
+pub let imc_setstatuswindowpos : UInt
+
+pub let ime_cand_code : UInt
+
+pub let ime_cand_meaning : UInt
+
+pub let ime_cand_radical : UInt
+
+pub let ime_cand_read : UInt
+
+pub let ime_cand_stroke : UInt
+
+pub let ime_cand_unknown : UInt
+
+pub let ime_config_general : UInt
+
+pub let ime_config_registerword : UInt
+
+pub let ime_config_selectdictionary : UInt
+
+pub let ime_esc_string_buffer_size : UInt
+
+pub let ime_hotkey_dswitch_first : UInt
+
+pub let ime_hotkey_dswitch_last : UInt
+
+pub let ime_hotkey_private_first : UInt
+
+pub let ime_hotkey_private_last : UInt
+
+pub let ime_prop_accept_wide_vkey : UInt
+
+pub let ime_prop_at_caret : UInt
+
+pub let ime_prop_candlist_start_from_1 : UInt
+
+pub let ime_prop_complete_on_unselect : UInt
+
+pub let ime_prop_end_unload : UInt
+
+pub let ime_prop_ignore_upkeys : UInt
+
+pub let ime_prop_kbd_char_first : UInt
+
+pub let ime_prop_need_altkey : UInt
+
+pub let ime_prop_no_keys_on_close : UInt
+
+pub let ime_prop_special_ui : UInt
+
+pub let ime_prop_unicode : UInt
+
+pub let ime_regword_style_eudc : UInt
+
+pub let ime_regword_style_user_first : UInt
+
+pub let ime_regword_style_user_last : UInt
+
+pub let ime_sysinfo_winlogon : UInt
+
+pub let ime_ui_class_name_size : UInt
+
+pub let imefareastinfo_type_comment : UInt
+
+pub let imefareastinfo_type_costtime : UInt
+
+pub let imefareastinfo_type_default : UInt
+
+pub let imefareastinfo_type_reading : UInt
+
+pub let imekeyctrl_down : UInt
+
+pub let imekeyctrl_up : UInt
+
+pub let imekeyctrlmask_alt : UInt
+
+pub let imekeyctrlmask_ctrl : UInt
+
+pub let imekeyctrlmask_shift : UInt
+
+pub let imekms_2_ndlevel : UInt
+
+pub let imekms_candidate : UInt
+
+pub let imekms_composition : UInt
+
+pub let imekms_imeoff : UInt
+
+pub let imekms_inptgl : UInt
+
+pub let imekms_nocomposition : UInt
+
+pub let imekms_selection : UInt
+
+pub let imekms_typecand : UInt
+
+pub let imemenuitem_string_size : UInt
+
+pub let imemouse_ldown : UInt
+
+pub let imemouse_mdown : UInt
+
+pub let imemouse_none : UInt
+
+pub let imemouse_rdown : UInt
+
+pub let imemouse_version : UInt
+
+pub let imemouse_wdown : UInt
+
+pub let imemouse_wup : UInt
+
+pub let imemouseret_nothandled : Int
+
+pub let imepadctrl_caretbackspace : UInt
+
+pub let imepadctrl_caretbottom : UInt
+
+pub let imepadctrl_caretdelete : UInt
+
+pub let imepadctrl_caretleft : UInt
+
+pub let imepadctrl_caretright : UInt
+
+pub let imepadctrl_caretset : UInt
+
+pub let imepadctrl_carettop : UInt
+
+pub let imepadctrl_clearall : UInt
+
+pub let imepadctrl_convertall : UInt
+
+pub let imepadctrl_determinall : UInt
+
+pub let imepadctrl_determinchar : UInt
+
+pub let imepadctrl_insertfullspace : UInt
+
+pub let imepadctrl_inserthalfspace : UInt
+
+pub let imepadctrl_insertspace : UInt
+
+pub let imepadctrl_offime : UInt
+
+pub let imepadctrl_offpreconversion : UInt
+
+pub let imepadctrl_onime : UInt
+
+pub let imepadctrl_onpreconversion : UInt
+
+pub let imepadctrl_phoneticcandidate : UInt
+
+pub let imepadctrl_phrasedelete : UInt
+
+pub let imepadreq_changestringcandidateinfo : UInt
+
+pub let imepadreq_changestringinfo : UInt
+
+pub let imepadreq_first : UInt
+
+pub let imepadreq_getappletdata : UInt
+
+pub let imepadreq_getcompositionstringid : UInt
+
+pub let imepadreq_getcurrentuilangid : UInt
+
+pub let imepadreq_getselectedstring : UInt
+
+pub let imepadreq_insertitemcandidate : UInt
+
+pub let imepadreq_insertstringcandidate : UInt
+
+pub let imepadreq_insertstringcandidateinfo : UInt
+
+pub let imepadreq_insertstringinfo : UInt
+
+pub let imepadreq_sendkeycontrol : UInt
+
+pub let imepadreq_setappletdata : UInt
+
+pub let imepadreq_settitlefont : UInt
+
+pub let imepn_activate : UInt
+
+pub let imepn_applycand : UInt
+
+pub let imepn_applycandex : UInt
+
+pub let imepn_config : UInt
+
+pub let imepn_first : UInt
+
+pub let imepn_help : UInt
+
+pub let imepn_hide : UInt
+
+pub let imepn_inactivate : UInt
+
+pub let imepn_querycand : UInt
+
+pub let imepn_settingchanged : UInt
+
+pub let imepn_show : UInt
+
+pub let imepn_sizechanged : UInt
+
+pub let imepn_sizechanging : UInt
+
+pub let imepn_user : UInt
+
+pub let imever_0310 : UInt
+
+pub let imever_0400 : UInt
+
+pub let imft_radiocheck : UInt
+
+pub let imft_separator : UInt
+
+pub let imft_submenu : UInt
+
+pub fn imm_associate_context(@core.RawAddress, @core.RawAddress) -> @core.RawAddress raise @core.WindowsError
+
+pub fn imm_associate_context_ex(@core.RawAddress, @core.RawAddress, UInt) -> Bool raise @core.WindowsError
+
+pub fn imm_associate_context_ex_raw(@core.RawAddress, @core.RawAddress, UInt) -> Int
+
+pub fn imm_associate_context_raw(@core.RawAddress, @core.RawAddress) -> @core.RawAddress
+
+pub fn imm_configure_imea(@core.RawAddress, @core.RawAddress, UInt, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn imm_configure_imea_raw(@core.RawAddress, @core.RawAddress, UInt, @core.RawAddress) -> Int
+
+pub fn imm_configure_imew(@core.RawAddress, @core.RawAddress, UInt, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn imm_configure_imew_raw(@core.RawAddress, @core.RawAddress, UInt, @core.RawAddress) -> Int
+
+pub fn imm_create_context() -> @core.RawAddress raise @core.WindowsError
+
+pub fn imm_create_context_raw() -> @core.RawAddress
+
+pub fn imm_create_imcc(UInt) -> @core.RawAddress raise @core.WindowsError
+
+pub fn imm_create_imcc_raw(UInt) -> @core.RawAddress
+
+pub fn imm_create_soft_keyboard(UInt, @core.RawAddress, Int, Int) -> @core.RawAddress raise @core.WindowsError
+
+pub fn imm_create_soft_keyboard_raw(UInt, @core.RawAddress, Int, Int) -> @core.RawAddress
+
+pub fn imm_destroy_context(@core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn imm_destroy_context_raw(@core.RawAddress) -> Int
+
+pub fn imm_destroy_imcc(@core.RawAddress) -> @core.RawAddress raise @core.WindowsError
+
+pub fn imm_destroy_imcc_raw(@core.RawAddress) -> @core.RawAddress
+
+pub fn imm_destroy_soft_keyboard(@core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn imm_destroy_soft_keyboard_raw(@core.RawAddress) -> Int
+
+pub fn imm_disable_ime(UInt) -> Bool raise @core.WindowsError
+
+pub fn imm_disable_ime_raw(UInt) -> Int
+
+pub fn imm_disable_legacy_ime() -> Bool raise @core.WindowsError
+
+pub fn imm_disable_legacy_ime_raw() -> Int
+
+pub fn imm_disable_text_frame_service(UInt) -> Bool raise @core.WindowsError
+
+pub fn imm_disable_text_frame_service_raw(UInt) -> Int
+
+pub fn imm_enum_input_context(UInt, @core.RawAddress, Int64) -> Bool raise @core.WindowsError
+
+pub fn imm_enum_input_context_raw(UInt, @core.RawAddress, Int64) -> Int
+
+pub fn imm_enum_register_word_a(@core.RawAddress, @core.RawAddress, @strings.PStr?, UInt, @strings.PStr?, @core.RawAddress) -> UInt raise @core.WindowsError
+
+pub fn imm_enum_register_word_a_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn imm_enum_register_word_w(@core.RawAddress, @core.RawAddress, @strings.PWStr?, UInt, @strings.PWStr?, @core.RawAddress) -> UInt raise @core.WindowsError
+
+pub fn imm_enum_register_word_w_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub let imm_error_general : Int
+
+pub let imm_error_nodata : Int
+
+pub fn imm_escape_a(@core.RawAddress, @core.RawAddress, @0efbb1bc76d1535a.IMEESCAPE_02c2b20cf37b, @core.RawAddress) -> Int64 raise @core.WindowsError
+
+pub fn imm_escape_a_raw(@core.RawAddress, @core.RawAddress, UInt, @core.RawAddress) -> Int64
+
+pub fn imm_escape_w(@core.RawAddress, @core.RawAddress, @0efbb1bc76d1535a.IMEESCAPE_02c2b20cf37b, @core.RawAddress) -> Int64 raise @core.WindowsError
+
+pub fn imm_escape_w_raw(@core.RawAddress, @core.RawAddress, UInt, @core.RawAddress) -> Int64
+
+pub fn imm_generate_message(@core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn imm_generate_message_raw(@core.RawAddress) -> Int
+
+pub fn imm_get_candidate_list_a(@core.RawAddress, UInt, @0efbb1bc76d1535a.CANDIDATELIST_c93c45d1c418?, UInt) -> UInt raise @core.WindowsError
+
+pub fn imm_get_candidate_list_a_raw(@core.RawAddress, UInt, @core.RawAddress, UInt) -> UInt
+
+pub fn imm_get_candidate_list_count_a(@core.RawAddress, @core.RawAddress) -> UInt raise @core.WindowsError
+
+pub fn imm_get_candidate_list_count_a_raw(@core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn imm_get_candidate_list_count_w(@core.RawAddress, @core.RawAddress) -> UInt raise @core.WindowsError
+
+pub fn imm_get_candidate_list_count_w_raw(@core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn imm_get_candidate_list_w(@core.RawAddress, UInt, @0efbb1bc76d1535a.CANDIDATELIST_c93c45d1c418?, UInt) -> UInt raise @core.WindowsError
+
+pub fn imm_get_candidate_list_w_raw(@core.RawAddress, UInt, @core.RawAddress, UInt) -> UInt
+
+pub fn imm_get_candidate_window(@core.RawAddress, UInt, @0efbb1bc76d1535a.CANDIDATEFORM_e1301c088e5f) -> Bool raise @core.WindowsError
+
+pub fn imm_get_candidate_window_raw(@core.RawAddress, UInt, @core.RawAddress) -> Int
+
+pub fn imm_get_composition_font_a(@core.RawAddress, @9ab35bf48b3f5013.LOGFONTA_ac16c2afc10d) -> Bool raise @core.WindowsError
+
+pub fn imm_get_composition_font_a_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn imm_get_composition_font_w(@core.RawAddress, @9ab35bf48b3f5013.LOGFONTW_91e02db450ee) -> Bool raise @core.WindowsError
+
+pub fn imm_get_composition_font_w_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn imm_get_composition_string_a(@core.RawAddress, @0efbb1bc76d1535a.IMECOMPOSITIONSTRING_c05e2232dd9c, @core.RawAddress, UInt) -> Int raise @core.WindowsError
+
+pub fn imm_get_composition_string_a_raw(@core.RawAddress, UInt, @core.RawAddress, UInt) -> Int
+
+pub fn imm_get_composition_string_w(@core.RawAddress, @0efbb1bc76d1535a.IMECOMPOSITIONSTRING_c05e2232dd9c, @core.RawAddress, UInt) -> Int raise @core.WindowsError
+
+pub fn imm_get_composition_string_w_raw(@core.RawAddress, UInt, @core.RawAddress, UInt) -> Int
+
+pub fn imm_get_composition_window(@core.RawAddress, @0efbb1bc76d1535a.COMPOSITIONFORM_93a563ba7626) -> Bool raise @core.WindowsError
+
+pub fn imm_get_composition_window_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn imm_get_context(@core.RawAddress) -> @core.RawAddress raise @core.WindowsError
+
+pub fn imm_get_context_raw(@core.RawAddress) -> @core.RawAddress
+
+pub fn imm_get_conversion_list_a(@core.RawAddress, @core.RawAddress, @strings.PStr, @0efbb1bc76d1535a.CANDIDATELIST_c93c45d1c418, UInt, @0efbb1bc76d1535a.GETCONVERSIONLISTFLAG_d100214059aa) -> UInt raise @core.WindowsError
+
+pub fn imm_get_conversion_list_a_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, UInt, UInt) -> UInt
+
+pub fn imm_get_conversion_list_w(@core.RawAddress, @core.RawAddress, @strings.PWStr, @0efbb1bc76d1535a.CANDIDATELIST_c93c45d1c418, UInt, @0efbb1bc76d1535a.GETCONVERSIONLISTFLAG_d100214059aa) -> UInt raise @core.WindowsError
+
+pub fn imm_get_conversion_list_w_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, UInt, UInt) -> UInt
+
+pub fn imm_get_conversion_status(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn imm_get_conversion_status_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn imm_get_default_ime_wnd(@core.RawAddress) -> @core.RawAddress raise @core.WindowsError
+
+pub fn imm_get_default_ime_wnd_raw(@core.RawAddress) -> @core.RawAddress
+
+pub fn imm_get_description_a(@core.RawAddress, @core.RawAddress, UInt) -> UInt raise @core.WindowsError
+
+pub fn imm_get_description_a_raw(@core.RawAddress, @core.RawAddress, UInt) -> UInt
+
+pub fn imm_get_description_w(@core.RawAddress, @strings.PWStrBuffer?) -> UInt raise @core.WindowsError
+
+pub fn imm_get_description_w_raw(@core.RawAddress, @core.RawAddress, UInt) -> UInt
+
+pub fn imm_get_guide_line_a(@core.RawAddress, @0efbb1bc76d1535a.GETGUIDELINETYPE_b7a65046dee8, @core.RawAddress, UInt) -> UInt raise @core.WindowsError
+
+pub fn imm_get_guide_line_a_raw(@core.RawAddress, UInt, @core.RawAddress, UInt) -> UInt
+
+pub fn imm_get_guide_line_w(@core.RawAddress, @0efbb1bc76d1535a.GETGUIDELINETYPE_b7a65046dee8, @core.RawAddress, UInt) -> UInt raise @core.WindowsError
+
+pub fn imm_get_guide_line_w_raw(@core.RawAddress, UInt, @core.RawAddress, UInt) -> UInt
+
+pub fn imm_get_hot_key(UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn imm_get_hot_key_raw(UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn imm_get_imc_lock_count(@core.RawAddress) -> UInt raise @core.WindowsError
+
+pub fn imm_get_imc_lock_count_raw(@core.RawAddress) -> UInt
+
+pub fn imm_get_imcc_lock_count(@core.RawAddress) -> UInt raise @core.WindowsError
+
+pub fn imm_get_imcc_lock_count_raw(@core.RawAddress) -> UInt
+
+pub fn imm_get_imcc_size(@core.RawAddress) -> UInt raise @core.WindowsError
+
+pub fn imm_get_imcc_size_raw(@core.RawAddress) -> UInt
+
+pub fn imm_get_ime_file_name_a(@core.RawAddress, @core.RawAddress, UInt) -> UInt raise @core.WindowsError
+
+pub fn imm_get_ime_file_name_a_raw(@core.RawAddress, @core.RawAddress, UInt) -> UInt
+
+pub fn imm_get_ime_file_name_w(@core.RawAddress, @strings.PWStrBuffer?) -> UInt raise @core.WindowsError
+
+pub fn imm_get_ime_file_name_w_raw(@core.RawAddress, @core.RawAddress, UInt) -> UInt
+
+pub fn imm_get_ime_menu_items_a(@core.RawAddress, UInt, UInt, @0efbb1bc76d1535a.IMEMENUITEMINFOA_de76c2a2f374?, @0efbb1bc76d1535a.IMEMENUITEMINFOA_de76c2a2f374?, UInt) -> UInt raise @core.WindowsError
+
+pub fn imm_get_ime_menu_items_a_raw(@core.RawAddress, UInt, UInt, @core.RawAddress, @core.RawAddress, UInt) -> UInt
+
+pub fn imm_get_ime_menu_items_w(@core.RawAddress, UInt, UInt, @0efbb1bc76d1535a.IMEMENUITEMINFOW_cb9a0f39a2cc?, @0efbb1bc76d1535a.IMEMENUITEMINFOW_cb9a0f39a2cc?, UInt) -> UInt raise @core.WindowsError
+
+pub fn imm_get_ime_menu_items_w_raw(@core.RawAddress, UInt, UInt, @core.RawAddress, @core.RawAddress, UInt) -> UInt
+
+pub fn imm_get_open_status(@core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn imm_get_open_status_raw(@core.RawAddress) -> Int
+
+pub fn imm_get_property(@core.RawAddress, UInt) -> UInt raise @core.WindowsError
+
+pub fn imm_get_property_raw(@core.RawAddress, UInt) -> UInt
+
+pub fn imm_get_register_word_style_a(@core.RawAddress, UInt, @0efbb1bc76d1535a.STYLEBUFA_b39e96cad033) -> UInt raise @core.WindowsError
+
+pub fn imm_get_register_word_style_a_raw(@core.RawAddress, UInt, @core.RawAddress) -> UInt
+
+pub fn imm_get_register_word_style_w(@core.RawAddress, UInt, @0efbb1bc76d1535a.STYLEBUFW_eb50c80c3a05) -> UInt raise @core.WindowsError
+
+pub fn imm_get_register_word_style_w_raw(@core.RawAddress, UInt, @core.RawAddress) -> UInt
+
+pub fn imm_get_status_window_pos(@core.RawAddress, @fb66f520d7e12332.POINT_48d934d62b68) -> Bool raise @core.WindowsError
+
+pub fn imm_get_status_window_pos_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn imm_get_virtual_key(@core.RawAddress) -> UInt raise @core.WindowsError
+
+pub fn imm_get_virtual_key_raw(@core.RawAddress) -> UInt
+
+pub fn imm_install_imea(@strings.PStr, @strings.PStr) -> @core.RawAddress raise @core.WindowsError
+
+pub fn imm_install_imea_raw(@core.RawAddress, @core.RawAddress) -> @core.RawAddress
+
+pub fn imm_install_imew(@strings.PWStr, @strings.PWStr) -> @core.RawAddress raise @core.WindowsError
+
+pub fn imm_install_imew_raw(@core.RawAddress, @core.RawAddress) -> @core.RawAddress
+
+pub fn imm_is_ime(@core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn imm_is_ime_raw(@core.RawAddress) -> Int
+
+pub fn imm_is_ui_message_a(@core.RawAddress, UInt, UInt64, Int64) -> Bool raise @core.WindowsError
+
+pub fn imm_is_ui_message_a_raw(@core.RawAddress, UInt, UInt64, Int64) -> Int
+
+pub fn imm_is_ui_message_w(@core.RawAddress, UInt, UInt64, Int64) -> Bool raise @core.WindowsError
+
+pub fn imm_is_ui_message_w_raw(@core.RawAddress, UInt, UInt64, Int64) -> Int
+
+pub fn imm_lock_imc(@core.RawAddress) -> @core.RawAddress raise @core.WindowsError
+
+pub fn imm_lock_imc_raw(@core.RawAddress) -> @core.RawAddress
+
+pub fn imm_lock_imcc(@core.RawAddress) -> @core.RawAddress raise @core.WindowsError
+
+pub fn imm_lock_imcc_raw(@core.RawAddress) -> @core.RawAddress
+
+pub fn imm_notify_ime(@core.RawAddress, @0efbb1bc76d1535a.NOTIFYIMEACTION_8ab0a886c921, @0efbb1bc76d1535a.NOTIFYIMEINDEX_52cd78539937, UInt) -> Bool raise @core.WindowsError
+
+pub fn imm_notify_ime_raw(@core.RawAddress, UInt, UInt, UInt) -> Int
+
+pub fn imm_re_size_imcc(@core.RawAddress, UInt) -> @core.RawAddress raise @core.WindowsError
+
+pub fn imm_re_size_imcc_raw(@core.RawAddress, UInt) -> @core.RawAddress
+
+pub fn imm_register_word_a(@core.RawAddress, @strings.PStr, UInt, @strings.PStr) -> Bool raise @core.WindowsError
+
+pub fn imm_register_word_a_raw(@core.RawAddress, @core.RawAddress, UInt, @core.RawAddress) -> Int
+
+pub fn imm_register_word_w(@core.RawAddress, @strings.PWStr, UInt, @strings.PWStr) -> Bool raise @core.WindowsError
+
+pub fn imm_register_word_w_raw(@core.RawAddress, @core.RawAddress, UInt, @core.RawAddress) -> Int
+
+pub fn imm_release_context(@core.RawAddress, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn imm_release_context_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn imm_request_message_a(@core.RawAddress, UInt64, Int64) -> Int64 raise @core.WindowsError
+
+pub fn imm_request_message_a_raw(@core.RawAddress, UInt64, Int64) -> Int64
+
+pub fn imm_request_message_w(@core.RawAddress, UInt64, Int64) -> Int64 raise @core.WindowsError
+
+pub fn imm_request_message_w_raw(@core.RawAddress, UInt64, Int64) -> Int64
+
+pub fn imm_set_candidate_window(@core.RawAddress, @0efbb1bc76d1535a.CANDIDATEFORM_e1301c088e5f) -> Bool raise @core.WindowsError
+
+pub fn imm_set_candidate_window_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn imm_set_composition_font_a(@core.RawAddress, @9ab35bf48b3f5013.LOGFONTA_ac16c2afc10d) -> Bool raise @core.WindowsError
+
+pub fn imm_set_composition_font_a_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn imm_set_composition_font_w(@core.RawAddress, @9ab35bf48b3f5013.LOGFONTW_91e02db450ee) -> Bool raise @core.WindowsError
+
+pub fn imm_set_composition_font_w_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn imm_set_composition_string_a(@core.RawAddress, @0efbb1bc76d1535a.SETCOMPOSITIONSTRINGTYPE_e31ac6e3f2a8, @core.RawAddress, UInt, @core.RawAddress, UInt) -> Bool raise @core.WindowsError
+
+pub fn imm_set_composition_string_a_raw(@core.RawAddress, UInt, @core.RawAddress, UInt, @core.RawAddress, UInt) -> Int
+
+pub fn imm_set_composition_string_w(@core.RawAddress, @0efbb1bc76d1535a.SETCOMPOSITIONSTRINGTYPE_e31ac6e3f2a8, @core.RawAddress, UInt, @core.RawAddress, UInt) -> Bool raise @core.WindowsError
+
+pub fn imm_set_composition_string_w_raw(@core.RawAddress, UInt, @core.RawAddress, UInt, @core.RawAddress, UInt) -> Int
+
+pub fn imm_set_composition_window(@core.RawAddress, @0efbb1bc76d1535a.COMPOSITIONFORM_93a563ba7626) -> Bool raise @core.WindowsError
+
+pub fn imm_set_composition_window_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn imm_set_conversion_status(@core.RawAddress, @0efbb1bc76d1535a.IMECONVERSIONMODE_9d8310d6ad1e, @0efbb1bc76d1535a.IMESENTENCEMODE_59b5fce0c70c) -> Bool raise @core.WindowsError
+
+pub fn imm_set_conversion_status_raw(@core.RawAddress, UInt, UInt) -> Int
+
+pub fn imm_set_hot_key(UInt, UInt, UInt, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn imm_set_hot_key_raw(UInt, UInt, UInt, @core.RawAddress) -> Int
+
+pub fn imm_set_open_status(@core.RawAddress, Int) -> Bool raise @core.WindowsError
+
+pub fn imm_set_open_status_raw(@core.RawAddress, Int) -> Int
+
+pub fn imm_set_status_window_pos(@core.RawAddress, @fb66f520d7e12332.POINT_48d934d62b68) -> Bool raise @core.WindowsError
+
+pub fn imm_set_status_window_pos_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn imm_show_soft_keyboard(@core.RawAddress, Int) -> Bool raise @core.WindowsError
+
+pub fn imm_show_soft_keyboard_raw(@core.RawAddress, Int) -> Int
+
+pub fn imm_simulate_hot_key(@core.RawAddress, @0efbb1bc76d1535a.IMEHOTKEYIDENTIFIER_ca24ccdfc63d) -> Bool raise @core.WindowsError
+
+pub fn imm_simulate_hot_key_raw(@core.RawAddress, UInt) -> Int
+
+pub fn imm_unlock_imc(@core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn imm_unlock_imc_raw(@core.RawAddress) -> Int
+
+pub fn imm_unlock_imcc(@core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn imm_unlock_imcc_raw(@core.RawAddress) -> Int
+
+pub fn imm_unregister_word_a(@core.RawAddress, @strings.PStr, UInt, @strings.PStr) -> Bool raise @core.WindowsError
+
+pub fn imm_unregister_word_a_raw(@core.RawAddress, @core.RawAddress, UInt, @core.RawAddress) -> Int
+
+pub fn imm_unregister_word_w(@core.RawAddress, @strings.PWStr, UInt, @strings.PWStr) -> Bool raise @core.WindowsError
+
+pub fn imm_unregister_word_w_raw(@core.RawAddress, @core.RawAddress, UInt, @core.RawAddress) -> Int
+
+pub let immgwl_imc : UInt
+
+pub let immgwlp_imc : UInt
+
+pub let imn_changecandidate : UInt
+
+pub let imn_closecandidate : UInt
+
+pub let imn_closestatuswindow : UInt
+
+pub let imn_guideline : UInt
+
+pub let imn_opencandidate : UInt
+
+pub let imn_openstatuswindow : UInt
+
+pub let imn_private : UInt
+
+pub let imn_setcandidatepos : UInt
+
+pub let imn_setcompositionfont : UInt
+
+pub let imn_setcompositionwindow : UInt
+
+pub let imn_setconversionmode : UInt
+
+pub let imn_setopenstatus : UInt
+
+pub let imn_setsentencemode : UInt
+
+pub let imn_setstatuswindowpos : UInt
+
+pub let imn_softkbddestroyed : UInt
+
+pub let imr_candidatewindow : UInt
+
+pub let imr_compositionfont : UInt
+
+pub let imr_compositionwindow : UInt
+
+pub let imr_confirmreconvertstring : UInt
+
+pub let imr_documentfeed : UInt
+
+pub let imr_querycharposition : UInt
+
+pub let imr_reconvertstring : UInt
+
+pub let infomask_apply_cand : UInt
+
+pub let infomask_apply_cand_ex : UInt
+
+pub let infomask_block_cand : UInt
+
+pub let infomask_hide_cand : UInt
+
+pub let infomask_none : UInt
+
+pub let infomask_query_cand : UInt
+
+pub let infomask_string_fix : UInt
+
+pub let init_compform : UInt
+
+pub let init_conversion : UInt
+
+pub let init_logfont : UInt
+
+pub let init_sentence : UInt
+
+pub let init_softkbdpos : UInt
+
+pub let init_statuswndpos : UInt
+
+pub let ipacfg_category : Int
+
+pub let ipacfg_help : Int
+
+pub let ipacfg_lang : Int
+
+pub let ipacfg_none : Int
+
+pub let ipacfg_property : Int
+
+pub let ipacfg_title : Int
+
+pub let ipacfg_titlefontface : Int
+
+pub let ipacid_charlist : UInt
+
+pub let ipacid_epwing : UInt
+
+pub let ipacid_handwriting : UInt
+
+pub let ipacid_none : UInt
+
+pub let ipacid_ocr : UInt
+
+pub let ipacid_radicalsearch : UInt
+
+pub let ipacid_softkey : UInt
+
+pub let ipacid_strokesearch : UInt
+
+pub let ipacid_symbolsearch : UInt
+
+pub let ipacid_user : UInt
+
+pub let ipacid_voice : UInt
+
+pub let ipaws_enabled : Int
+
+pub let ipaws_horizontalfixed : Int
+
+pub let ipaws_maxheightfixed : Int
+
+pub let ipaws_maxsizefixed : Int
+
+pub let ipaws_maxwidthfixed : Int
+
+pub let ipaws_minheightfixed : Int
+
+pub let ipaws_minsizefixed : Int
+
+pub let ipaws_minwidthfixed : Int
+
+pub let ipaws_sizefixed : Int
+
+pub let ipaws_sizingnotify : Int
+
+pub let ipaws_verticalfixed : Int
+
+pub let isc_showuiall : UInt
+
+pub let isc_showuiallcandidatewindow : UInt
+
+pub let isc_showuicandidatewindow : UInt
+
+pub let isc_showuicompositionwindow : UInt
+
+pub let isc_showuiguideline : UInt
+
+pub let jpos_1_dan : UInt
+
+pub let jpos_4_dan_ha : UInt
+
+pub let jpos_5_dan_awa : UInt
+
+pub let jpos_5_dan_awauon : UInt
+
+pub let jpos_5_dan_ba : UInt
+
+pub let jpos_5_dan_ga : UInt
+
+pub let jpos_5_dan_ka : UInt
+
+pub let jpos_5_dan_kasokuon : UInt
+
+pub let jpos_5_dan_ma : UInt
+
+pub let jpos_5_dan_na : UInt
+
+pub let jpos_5_dan_ra : UInt
+
+pub let jpos_5_dan_rahen : UInt
+
+pub let jpos_5_dan_sa : UInt
+
+pub let jpos_5_dan_ta : UInt
+
+pub let jpos_buppin : UInt
+
+pub let jpos_chimei : UInt
+
+pub let jpos_chimei_eki : UInt
+
+pub let jpos_chimei_gun : UInt
+
+pub let jpos_chimei_ken : UInt
+
+pub let jpos_chimei_ku : UInt
+
+pub let jpos_chimei_kuni : UInt
+
+pub let jpos_chimei_machi : UInt
+
+pub let jpos_chimei_mura : UInt
+
+pub let jpos_chimei_shi : UInt
+
+pub let jpos_closebrace : UInt
+
+pub let jpos_daimeishi : UInt
+
+pub let jpos_daimeishi_ninshou : UInt
+
+pub let jpos_daimeishi_shiji : UInt
+
+pub let jpos_dokuritsugo : UInt
+
+pub let jpos_eiji : UInt
+
+pub let jpos_fukushi : UInt
+
+pub let jpos_fukushi_da : UInt
+
+pub let jpos_fukushi_nano : UInt
+
+pub let jpos_fukushi_ni : UInt
+
+pub let jpos_fukushi_sahen : UInt
+
+pub let jpos_fukushi_to : UInt
+
+pub let jpos_fukushi_tosuru : UInt
+
+pub let jpos_futeigo : UInt
+
+pub let jpos_hukusimeishi : UInt
+
+pub let jpos_jinmei : UInt
+
+pub let jpos_jinmei_mei : UInt
+
+pub let jpos_jinmei_sei : UInt
+
+pub let jpos_kandoushi : UInt
+
+pub let jpos_kanji : UInt
+
+pub let jpos_kanyouku : UInt
+
+pub let jpos_kazu : UInt
+
+pub let jpos_kazu_suryou : UInt
+
+pub let jpos_kazu_sushi : UInt
+
+pub let jpos_keidou : UInt
+
+pub let jpos_keidou_garu : UInt
+
+pub let jpos_keidou_no : UInt
+
+pub let jpos_keidou_taru : UInt
+
+pub let jpos_keiyou : UInt
+
+pub let jpos_keiyou_garu : UInt
+
+pub let jpos_keiyou_ge : UInt
+
+pub let jpos_keiyou_me : UInt
+
+pub let jpos_keiyou_u : UInt
+
+pub let jpos_keiyou_yuu : UInt
+
+pub let jpos_kenchiku : UInt
+
+pub let jpos_kigou : UInt
+
+pub let jpos_kuru_ki : UInt
+
+pub let jpos_kuru_kita : UInt
+
+pub let jpos_kuru_kitara : UInt
+
+pub let jpos_kuru_kitari : UInt
+
+pub let jpos_kuru_kitarou : UInt
+
+pub let jpos_kuru_kite : UInt
+
+pub let jpos_kuru_ko : UInt
+
+pub let jpos_kuru_koi : UInt
+
+pub let jpos_kuru_koyou : UInt
+
+pub let jpos_kuru_kureba : UInt
+
+pub let jpos_kuten : UInt
+
+pub let jpos_meisa_keidou : UInt
+
+pub let jpos_meishi_futsu : UInt
+
+pub let jpos_meishi_keiyoudoushi : UInt
+
+pub let jpos_meishi_sahen : UInt
+
+pub let jpos_meishi_zahen : UInt
+
+pub let jpos_openbrace : UInt
+
+pub let jpos_rentaishi : UInt
+
+pub let jpos_rentaishi_shiji : UInt
+
+pub let jpos_renyou_setsubi : UInt
+
+pub let jpos_setsubi : UInt
+
+pub let jpos_setsubi_chimei : UInt
+
+pub let jpos_setsubi_chou : UInt
+
+pub let jpos_setsubi_chu : UInt
+
+pub let jpos_setsubi_dono : UInt
+
+pub let jpos_setsubi_eki : UInt
+
+pub let jpos_setsubi_fu : UInt
+
+pub let jpos_setsubi_fukusu : UInt
+
+pub let jpos_setsubi_gun : UInt
+
+pub let jpos_setsubi_jikan : UInt
+
+pub let jpos_setsubi_jikanplus : UInt
+
+pub let jpos_setsubi_jinmei : UInt
+
+pub let jpos_setsubi_josushi : UInt
+
+pub let jpos_setsubi_josushiplus : UInt
+
+pub let jpos_setsubi_ka : UInt
+
+pub let jpos_setsubi_kata : UInt
+
+pub let jpos_setsubi_ken : UInt
+
+pub let jpos_setsubi_kenchiku : UInt
+
+pub let jpos_setsubi_ku : UInt
+
+pub let jpos_setsubi_kun : UInt
+
+pub let jpos_setsubi_kuni : UInt
+
+pub let jpos_setsubi_machi : UInt
+
+pub let jpos_setsubi_meishirendaku : UInt
+
+pub let jpos_setsubi_mura : UInt
+
+pub let jpos_setsubi_ra : UInt
+
+pub let jpos_setsubi_ryu : UInt
+
+pub let jpos_setsubi_sama : UInt
+
+pub let jpos_setsubi_san : UInt
+
+pub let jpos_setsubi_sei : UInt
+
+pub let jpos_setsubi_shamei : UInt
+
+pub let jpos_setsubi_shi : UInt
+
+pub let jpos_setsubi_son : UInt
+
+pub let jpos_setsubi_sonota : UInt
+
+pub let jpos_setsubi_soshiki : UInt
+
+pub let jpos_setsubi_tachi : UInt
+
+pub let jpos_setsubi_teinei : UInt
+
+pub let jpos_setsubi_teki : UInt
+
+pub let jpos_setsubi_you : UInt
+
+pub let jpos_setsuzokushi : UInt
+
+pub let jpos_settou : UInt
+
+pub let jpos_settou_chimei : UInt
+
+pub let jpos_settou_choutan : UInt
+
+pub let jpos_settou_daishou : UInt
+
+pub let jpos_settou_fuku : UInt
+
+pub let jpos_settou_jinmei : UInt
+
+pub let jpos_settou_josushi : UInt
+
+pub let jpos_settou_kaku : UInt
+
+pub let jpos_settou_koutei : UInt
+
+pub let jpos_settou_mi : UInt
+
+pub let jpos_settou_sai : UInt
+
+pub let jpos_settou_shinkyu : UInt
+
+pub let jpos_settou_sonota : UInt
+
+pub let jpos_settou_teinei_go : UInt
+
+pub let jpos_settou_teinei_o : UInt
+
+pub let jpos_settou_teinei_on : UInt
+
+pub let jpos_shamei : UInt
+
+pub let jpos_sonota : UInt
+
+pub let jpos_soshiki : UInt
+
+pub let jpos_suru_sa : UInt
+
+pub let jpos_suru_se : UInt
+
+pub let jpos_suru_seyo : UInt
+
+pub let jpos_suru_si : UInt
+
+pub let jpos_suru_siatri : UInt
+
+pub let jpos_suru_sita : UInt
+
+pub let jpos_suru_sitara : UInt
+
+pub let jpos_suru_sitarou : UInt
+
+pub let jpos_suru_site : UInt
+
+pub let jpos_suru_siyou : UInt
+
+pub let jpos_suru_sureba : UInt
+
+pub let jpos_tankanji : UInt
+
+pub let jpos_tankanji_kao : UInt
+
+pub let jpos_tanshuku : UInt
+
+pub let jpos_tokushu_kahen : UInt
+
+pub let jpos_tokushu_nahen : UInt
+
+pub let jpos_tokushu_sahen : UInt
+
+pub let jpos_tokushu_sahensuru : UInt
+
+pub let jpos_tokushu_zahen : UInt
+
+pub let jpos_touten : UInt
+
+pub let jpos_undefined : UInt
+
+pub let jpos_yokusei : UInt
+
+pub let max_applettitle : UInt
+
+pub let max_fontface : UInt
+
+pub let mod_ignore_all_modifier : UInt
+
+pub let mod_left : UInt
+
+pub let mod_on_keyup : UInt
+
+pub let mod_right : UInt
+
+pub let modebias_getvalue : UInt
+
+pub let modebias_getversion : UInt
+
+pub let modebias_setvalue : UInt
+
+pub let modebiasmode_default : UInt
+
+pub let modebiasmode_digit : UInt
+
+pub let modebiasmode_filename : UInt
+
+pub let modebiasmode_reading : UInt
+
+pub let ni_contextupdated : UInt
+
+pub let ni_finalizeconversionresult : UInt
+
+pub let pos_undefined : UInt
+
+pub let reconvopt_none : UInt
+
+pub let reconvopt_usecancelnotify : UInt
+
+pub let rwm_chgkeymap : String
+
+pub let rwm_documentfeed : String
+
+pub let rwm_keymap : String
+
+pub let rwm_modebias : String
+
+pub let rwm_mouse : String
+
+pub let rwm_ntfykeymap : String
+
+pub let rwm_queryposition : String
+
+pub let rwm_reconvert : String
+
+pub let rwm_reconvertoptions : String
+
+pub let rwm_reconvertrequest : String
+
+pub let rwm_service : String
+
+pub let rwm_showimepad : String
+
+pub let rwm_uiready : String
+
+pub let scs_cap_compstr : UInt
+
+pub let scs_cap_makeread : UInt
+
+pub let scs_cap_setreconvertstring : UInt
+
+pub let select_cap_conversion : UInt
+
+pub let select_cap_sentence : UInt
+
+pub let showimepad_category : UInt
+
+pub let showimepad_default : UInt
+
+pub let showimepad_guid : UInt
+
+pub let softkeyboard_type_c1 : UInt
+
+pub let softkeyboard_type_t1 : UInt
+
+pub let style_description_size : UInt
+
+pub let sz_ime_china : String
+
+pub let sz_ime_japan : String
+
+pub let sz_ime_korea : String
+
+pub let sz_ime_taiwan : String
+
+pub let ui_cap_2700 : UInt
+
+pub let ui_cap_rot90 : UInt
+
+pub let ui_cap_rotany : UInt
+
+pub let ui_cap_softkbd : UInt
+
+pub let version_documentfeed : UInt
+
+pub let version_id_chinese_simplified : UInt
+
+pub let version_id_chinese_traditional : UInt
+
+pub let version_id_japanese : UInt
+
+pub let version_id_korean : UInt
+
+pub let version_modebias : UInt
+
+pub let version_mouse_operation : UInt
+
+pub let version_queryposition : UInt
+
+pub let version_reconversion : UInt
+
+pub let wch_private1 : UInt
+
+// Errors
+
+// Types and methods
+
+// Type aliases
+pub using @0efbb1bc76d1535a {type APPLETIDLIST_f68108dd5623 as APPLETIDLIST}
+
+pub using @0efbb1bc76d1535a {type APPLYCANDEXPARAM_99cffc0eab0e as APPLYCANDEXPARAM}
+
+pub using @0efbb1bc76d1535a {type CANDIDATEFORM_e1301c088e5f as CANDIDATEFORM}
+
+pub using @0efbb1bc76d1535a {type CANDIDATEINFO_02df00b32adb as CANDIDATEINFO}
+
+pub using @0efbb1bc76d1535a {type CANDIDATELIST_c93c45d1c418 as CANDIDATELIST}
+
+pub using @0efbb1bc76d1535a {type CActiveIMM_a933bec8474a as CActiveIMM}
+
+pub using @0efbb1bc76d1535a {type COMPOSITIONFORM_93a563ba7626 as COMPOSITIONFORM}
+
+pub using @0efbb1bc76d1535a {type COMPOSITIONSTRING_3c671c11001e as COMPOSITIONSTRING}
+
+pub using @0efbb1bc76d1535a {type FpCreateIFECommonInstanceType_9f0a9c5fbe1b as FpCreateIFECommonInstanceType}
+
+pub using @0efbb1bc76d1535a {type FpCreateIFEDictionaryInstanceType_6b68d9f0922a as FpCreateIFEDictionaryInstanceType}
+
+pub using @0efbb1bc76d1535a {type FpCreateIFELanguageInstanceType_c16775dad1df as FpCreateIFELanguageInstanceType}
+
+pub using @0efbb1bc76d1535a {type GETCONVERSIONLISTFLAG_d100214059aa as GETCONVERSIONLISTFLAG}
+
+pub using @0efbb1bc76d1535a {type GETGUIDELINETYPE_b7a65046dee8 as GETGUIDELINETYPE}
+
+pub using @0efbb1bc76d1535a {type GUIDELINE_2d8f07b29352 as GUIDELINE}
+
+pub using @0efbb1bc76d1535a {type HIMC_80125cea0460 as HIMC}
+
+pub using @0efbb1bc76d1535a {type HIMCC_f601b5bd0a90 as HIMCC}
+
+pub using @0efbb1bc76d1535a {type IActiveIME_15908e884c49 as IActiveIME}
+
+pub using @0efbb1bc76d1535a {type IActiveIME2_8e8e64d8f922 as IActiveIME2}
+
+pub using @0efbb1bc76d1535a {type IActiveIMMApp_be34bf8a4071 as IActiveIMMApp}
+
+pub using @0efbb1bc76d1535a {type IActiveIMMIME_7521aaf800e3 as IActiveIMMIME}
+
+pub using @0efbb1bc76d1535a {type IActiveIMMMessagePumpOwner_11563a939dfa as IActiveIMMMessagePumpOwner}
+
+pub using @0efbb1bc76d1535a {type IActiveIMMRegistrar_4520843b0fd1 as IActiveIMMRegistrar}
+
+pub using @0efbb1bc76d1535a {type IEnumInputContext_386a1f0d9278 as IEnumInputContext}
+
+pub using @0efbb1bc76d1535a {type IEnumRegisterWordA_b2fc4b646b78 as IEnumRegisterWordA}
+
+pub using @0efbb1bc76d1535a {type IEnumRegisterWordW_6101368e7e1f as IEnumRegisterWordW}
+
+pub using @0efbb1bc76d1535a {type IFEClassFactory_874061fb322f as IFEClassFactory}
+
+pub using @0efbb1bc76d1535a {type IFECommon_b544eda81728 as IFECommon}
+
+pub using @0efbb1bc76d1535a {type IFEDictionary_d77f1ec7efb1 as IFEDictionary}
+
+pub using @0efbb1bc76d1535a {type IFELanguage_5300570ff4e1 as IFELanguage}
+
+pub using @0efbb1bc76d1535a {type IImePad_d3e6c474fd91 as IImePad}
+
+pub using @0efbb1bc76d1535a {type IImePadApplet_ee6005f5d5d9 as IImePadApplet}
+
+pub using @0efbb1bc76d1535a {type IImePlugInDictDictionaryList_c81337442350 as IImePlugInDictDictionaryList}
+
+pub using @0efbb1bc76d1535a {type IImeSpecifyApplets_4dcefba6db57 as IImeSpecifyApplets}
+
+pub using @0efbb1bc76d1535a {type IMCENUMPROC_01c881fc994c as IMCENUMPROC}
+
+pub using @0efbb1bc76d1535a {type IMEAPPLETCFG_87a0de6e0a3e as IMEAPPLETCFG}
+
+pub using @0efbb1bc76d1535a {type IMEAPPLETUI_9e0a67ba3042 as IMEAPPLETUI}
+
+pub using @0efbb1bc76d1535a {type IMECHARINFO_3d7e611ac6f2 as IMECHARINFO}
+
+pub using @0efbb1bc76d1535a {type IMECHARPOSITION_b01dfdfffeaa as IMECHARPOSITION}
+
+pub using @0efbb1bc76d1535a {type IMECOMPOSITIONSTRING_c05e2232dd9c as IMECOMPOSITIONSTRING}
+
+pub using @0efbb1bc76d1535a {type IMECOMPOSITIONSTRINGINFO_d4fb40c63ed5 as IMECOMPOSITIONSTRINGINFO}
+
+pub using @0efbb1bc76d1535a {type IMECONVERSIONMODE_9d8310d6ad1e as IMECONVERSIONMODE}
+
+pub using @0efbb1bc76d1535a {type IMEDLG_0d82ae0bdd04 as IMEDLG}
+
+pub using @0efbb1bc76d1535a {type IMEDP_e31e03ae91ea as IMEDP}
+
+pub using @0efbb1bc76d1535a {type IMEESCAPE_02c2b20cf37b as IMEESCAPE}
+
+pub using @0efbb1bc76d1535a {type IMEFAREASTINFO_5429baadb678 as IMEFAREASTINFO}
+
+pub using @0efbb1bc76d1535a {type IMEFMT_0d7cfbad5b78 as IMEFMT}
+
+pub using @0efbb1bc76d1535a {type IMEHOTKEYIDENTIFIER_ca24ccdfc63d as IMEHOTKEYIDENTIFIER}
+
+pub using @0efbb1bc76d1535a {type IMEINFO_cf46a41ef5a2 as IMEINFO}
+
+pub using @0efbb1bc76d1535a {type IMEITEM_d8a902248fc3 as IMEITEM}
+
+pub using @0efbb1bc76d1535a {type IMEITEMCANDIDATE_e1c07f3cd7a8 as IMEITEMCANDIDATE}
+
+pub using @0efbb1bc76d1535a {type IMEKMS_1e6ae6fd7920 as IMEKMS}
+
+pub using @0efbb1bc76d1535a {type IMEKMSFUNCDESC_d404927365cf as IMEKMSFUNCDESC}
+
+pub using @0efbb1bc76d1535a {type IMEKMSINIT_7e2408110b00 as IMEKMSINIT}
+
+pub using @0efbb1bc76d1535a {type IMEKMSINVK_4850fcf64668 as IMEKMSINVK}
+
+pub using @0efbb1bc76d1535a {type IMEKMSKEY_8cdfebee9bde as IMEKMSKEY}
+
+pub using @0efbb1bc76d1535a {type IMEKMSKEYAnonymous1EUnion_843cdf852b65 as IMEKMSKEYAnonymous1EUnion}
+
+pub using @0efbb1bc76d1535a {type IMEKMSKEYAnonymous2EUnion_3cb3126b276c as IMEKMSKEYAnonymous2EUnion}
+
+pub using @0efbb1bc76d1535a {type IMEKMSKMP_4fcfd5776a0f as IMEKMSKMP}
+
+pub using @0efbb1bc76d1535a {type IMEKMSNTFY_5957faddb7aa as IMEKMSNTFY}
+
+pub using @0efbb1bc76d1535a {type IMEMENUITEMINFOA_de76c2a2f374 as IMEMENUITEMINFOA}
+
+pub using @0efbb1bc76d1535a {type IMEMENUITEMINFOW_cb9a0f39a2cc as IMEMENUITEMINFOW}
+
+pub using @0efbb1bc76d1535a {type IMEPADREQUESTFLAGS_299160164ea5 as IMEPADREQUESTFLAGS}
+
+pub using @0efbb1bc76d1535a {type IMEREG_646963af8510 as IMEREG}
+
+pub using @0efbb1bc76d1535a {type IMEREL_470033945139 as IMEREL}
+
+pub using @0efbb1bc76d1535a {type IMESENTENCEMODE_59b5fce0c70c as IMESENTENCEMODE}
+
+pub using @0efbb1bc76d1535a {type IMESHF_c4ddb3379c78 as IMESHF}
+
+pub using @0efbb1bc76d1535a {type IMESTRINGCANDIDATE_1c49c81a60d1 as IMESTRINGCANDIDATE}
+
+pub using @0efbb1bc76d1535a {type IMESTRINGCANDIDATEINFO_200841c5c0df as IMESTRINGCANDIDATEINFO}
+
+pub using @0efbb1bc76d1535a {type IMESTRINGINFO_1f5f1ba0d02c as IMESTRINGINFO}
+
+pub using @0efbb1bc76d1535a {type IMEUCT_3f2096041bdc as IMEUCT}
+
+pub using @0efbb1bc76d1535a {type IMEWRD_9489fbff7cd6 as IMEWRD}
+
+pub using @0efbb1bc76d1535a {type IMEWRDAnonymousEUnion_c36e5f08d1ab as IMEWRDAnonymousEUnion}
+
+pub using @0efbb1bc76d1535a {type IMEWRDAnonymousEUnionAnonymousEStruct_f8730880e45c as IMEWRDAnonymousEUnionAnonymousEStruct}
+
+pub using @0efbb1bc76d1535a {type INPUTCONTEXT_dab1c415c682 as INPUTCONTEXT}
+
+pub using @0efbb1bc76d1535a {type INPUTCONTEXTLfFontEUnion_1b3325a3cc12 as INPUTCONTEXTLfFontEUnion}
+
+pub using @0efbb1bc76d1535a {type MORRSLT_80276f388ba6 as MORRSLT}
+
+pub using @0efbb1bc76d1535a {type MORRSLTAnonymous1EUnion_9d0374bad0f1 as MORRSLTAnonymous1EUnion}
+
+pub using @0efbb1bc76d1535a {type MORRSLTAnonymous2EUnion_8de340cf99e8 as MORRSLTAnonymous2EUnion}
+
+pub using @0efbb1bc76d1535a {type MORRSLTAnonymous3EUnion_31d87f774792 as MORRSLTAnonymous3EUnion}
+
+pub using @0efbb1bc76d1535a {type NOTIFYIMEACTION_8ab0a886c921 as NOTIFYIMEACTION}
+
+pub using @0efbb1bc76d1535a {type NOTIFYIMEINDEX_52cd78539937 as NOTIFYIMEINDEX}
+
+pub using @0efbb1bc76d1535a {type PFNLOG_69c5518cc56b as PFNLOG}
+
+pub using @0efbb1bc76d1535a {type POSTBL_801db3488295 as POSTBL}
+
+pub using @0efbb1bc76d1535a {type RECONVERTSTRING_b855066a0f53 as RECONVERTSTRING}
+
+pub using @0efbb1bc76d1535a {type REGISTERWORDA_d93da2b903ba as REGISTERWORDA}
+
+pub using @0efbb1bc76d1535a {type REGISTERWORDENUMPROCA_b28fd7de8648 as REGISTERWORDENUMPROCA}
+
+pub using @0efbb1bc76d1535a {type REGISTERWORDENUMPROCW_48a168969875 as REGISTERWORDENUMPROCW}
+
+pub using @0efbb1bc76d1535a {type REGISTERWORDW_394caa01d8dc as REGISTERWORDW}
+
+pub using @0efbb1bc76d1535a {type SETCOMPOSITIONSTRINGTYPE_e31ac6e3f2a8 as SETCOMPOSITIONSTRINGTYPE}
+
+pub using @0efbb1bc76d1535a {type SOFTKBDDATA_19d08024b034 as SOFTKBDDATA}
+
+pub using @0efbb1bc76d1535a {type STYLEBUFA_b39e96cad033 as STYLEBUFA}
+
+pub using @0efbb1bc76d1535a {type STYLEBUFW_eb50c80c3a05 as STYLEBUFW}
+
+pub using @0efbb1bc76d1535a {type TRANSMSG_6ed635f08f9a as TRANSMSG}
+
+pub using @0efbb1bc76d1535a {type TRANSMSGLIST_900ff97148ae as TRANSMSGLIST}
+
+pub using @0efbb1bc76d1535a {type WDD_4c9cd3bd4b62 as WDD}
+
+pub using @0efbb1bc76d1535a {type WDDAnonymous1EUnion_91d291f1183a as WDDAnonymous1EUnion}
+
+pub using @0efbb1bc76d1535a {type WDDAnonymous2EUnion_71c3525f3203 as WDDAnonymous2EUnion}
+
+// Traits

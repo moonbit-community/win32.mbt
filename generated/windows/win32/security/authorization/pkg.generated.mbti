@@ -1,0 +1,1170 @@
+// Generated using `moon info`, DON'T EDIT IT
+package "moonbit-community/win32api/windows/win32/security/authorization"
+
+import {
+  "moonbit-community/win32api/runtime/core",
+  "moonbit-community/win32api/runtime/strings",
+  "moonbit-community/win32api/scc/cc6631776d7e2373",
+  "moonbit-community/win32api/scc/fa0c85a608d6ac95",
+  "moonbit-community/win32api/scc/fb66f520d7e12332",
+}
+
+// Values
+pub let accctrl_default_provider : String
+
+pub let accctrl_default_providera : String
+
+pub let accctrl_default_providerw : String
+
+pub let actrl_access_no_options : UInt
+
+pub let actrl_access_protected : UInt
+
+pub let actrl_access_supports_object_entries : UInt
+
+pub let actrl_change_access : UInt
+
+pub let actrl_change_owner : UInt
+
+pub let actrl_delete : UInt
+
+pub let actrl_dir_create_child : UInt
+
+pub let actrl_dir_create_object : UInt
+
+pub let actrl_dir_delete_child : UInt
+
+pub let actrl_dir_list : UInt
+
+pub let actrl_dir_traverse : UInt
+
+pub let actrl_file_append : UInt
+
+pub let actrl_file_create_pipe : UInt
+
+pub let actrl_file_execute : UInt
+
+pub let actrl_file_read : UInt
+
+pub let actrl_file_read_attrib : UInt
+
+pub let actrl_file_read_prop : UInt
+
+pub let actrl_file_write : UInt
+
+pub let actrl_file_write_attrib : UInt
+
+pub let actrl_file_write_prop : UInt
+
+pub let actrl_kernel_alert : UInt
+
+pub let actrl_kernel_control : UInt
+
+pub let actrl_kernel_dimpersonate : UInt
+
+pub let actrl_kernel_dup_handle : UInt
+
+pub let actrl_kernel_get_context : UInt
+
+pub let actrl_kernel_get_info : UInt
+
+pub let actrl_kernel_impersonate : UInt
+
+pub let actrl_kernel_process : UInt
+
+pub let actrl_kernel_set_context : UInt
+
+pub let actrl_kernel_set_info : UInt
+
+pub let actrl_kernel_terminate : UInt
+
+pub let actrl_kernel_thread : UInt
+
+pub let actrl_kernel_token : UInt
+
+pub let actrl_kernel_vm : UInt
+
+pub let actrl_kernel_vm_read : UInt
+
+pub let actrl_kernel_vm_write : UInt
+
+pub let actrl_perm_1 : UInt
+
+pub let actrl_perm_10 : UInt
+
+pub let actrl_perm_11 : UInt
+
+pub let actrl_perm_12 : UInt
+
+pub let actrl_perm_13 : UInt
+
+pub let actrl_perm_14 : UInt
+
+pub let actrl_perm_15 : UInt
+
+pub let actrl_perm_16 : UInt
+
+pub let actrl_perm_17 : UInt
+
+pub let actrl_perm_18 : UInt
+
+pub let actrl_perm_19 : UInt
+
+pub let actrl_perm_2 : UInt
+
+pub let actrl_perm_20 : UInt
+
+pub let actrl_perm_3 : UInt
+
+pub let actrl_perm_4 : UInt
+
+pub let actrl_perm_5 : UInt
+
+pub let actrl_perm_6 : UInt
+
+pub let actrl_perm_7 : UInt
+
+pub let actrl_perm_8 : UInt
+
+pub let actrl_perm_9 : UInt
+
+pub let actrl_print_jadmin : UInt
+
+pub let actrl_print_padmin : UInt
+
+pub let actrl_print_puse : UInt
+
+pub let actrl_print_sadmin : UInt
+
+pub let actrl_print_slist : UInt
+
+pub let actrl_read_control : UInt
+
+pub let actrl_reg_create_child : UInt
+
+pub let actrl_reg_link : UInt
+
+pub let actrl_reg_list : UInt
+
+pub let actrl_reg_notify : UInt
+
+pub let actrl_reg_query : UInt
+
+pub let actrl_reg_set : UInt
+
+pub let actrl_reserved : UInt
+
+pub let actrl_std_rights_all : UInt
+
+pub let actrl_svc_get_info : UInt
+
+pub let actrl_svc_interrogate : UInt
+
+pub let actrl_svc_list : UInt
+
+pub let actrl_svc_pause : UInt
+
+pub let actrl_svc_set_info : UInt
+
+pub let actrl_svc_start : UInt
+
+pub let actrl_svc_status : UInt
+
+pub let actrl_svc_stop : UInt
+
+pub let actrl_svc_ucontrol : UInt
+
+pub let actrl_synchronize : UInt
+
+pub let actrl_system_access : UInt
+
+pub let actrl_win_clipbrd : UInt
+
+pub let actrl_win_create : UInt
+
+pub let actrl_win_exit : UInt
+
+pub let actrl_win_global_atoms : UInt
+
+pub let actrl_win_list : UInt
+
+pub let actrl_win_list_desk : UInt
+
+pub let actrl_win_read_attribs : UInt
+
+pub let actrl_win_screen : UInt
+
+pub let actrl_win_write_attribs : UInt
+
+pub let ap_param_type_bits : UInt
+
+pub let ap_param_type_mask : Int
+
+pub let apf_audit_failure : UInt
+
+pub let apf_audit_success : UInt
+
+pub let apf_valid_flags : UInt
+
+pub let audit_type_legacy : UInt
+
+pub let audit_type_wmi : UInt
+
+pub fn authz_access_check(@fa0c85a608d6ac95.AUTHZACCESSCHECKFLAGS_967b7e3dc443, @core.RawAddress, @fa0c85a608d6ac95.AUTHZACCESSREQUEST_d9513774c0e5, @core.RawAddress, @core.RawAddress, @core.RawAddress, UInt, @fa0c85a608d6ac95.AUTHZACCESSREPLY_111859a8f7a4, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn authz_access_check_raw(UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn authz_add_sids_to_context(@core.RawAddress, @cc6631776d7e2373.SIDANDATTRIBUTES_a5e323de8705?, UInt, @cc6631776d7e2373.SIDANDATTRIBUTES_a5e323de8705?, UInt, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn authz_add_sids_to_context_raw(@core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, UInt, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub let authz_allow_multiple_source_instances : UInt
+
+pub let authz_audit_instance_information : UInt
+
+pub fn authz_cached_access_check(UInt, @core.RawAddress, @fa0c85a608d6ac95.AUTHZACCESSREQUEST_d9513774c0e5, @core.RawAddress, @fa0c85a608d6ac95.AUTHZACCESSREPLY_111859a8f7a4) -> Bool raise @core.WindowsError
+
+pub fn authz_cached_access_check_raw(UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub let authz_compute_privileges : UInt
+
+pub fn authz_enumerate_security_event_sources(UInt, @fa0c85a608d6ac95.AUTHZSOURCESCHEMAREGISTRATION_91492786a31d, @core.RawAddress, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn authz_enumerate_security_event_sources_raw(UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn authz_evaluate_sacl(@core.RawAddress, @fa0c85a608d6ac95.AUTHZACCESSREQUEST_d9513774c0e5, @cc6631776d7e2373.ACL_1bf7caea28b3, UInt, Int, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn authz_evaluate_sacl_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, UInt, Int, @core.RawAddress) -> Int
+
+pub let authz_flag_allow_multiple_source_instances : UInt
+
+pub fn authz_free_audit_event(@core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn authz_free_audit_event_raw(@core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn authz_free_central_access_policy_cache() -> Bool raise @core.WindowsError
+
+pub fn authz_free_central_access_policy_cache_raw() -> @core.RawWin32Call[Int]
+
+pub fn authz_free_context(@core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn authz_free_context_raw(@core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn authz_free_handle(@core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn authz_free_handle_raw(@core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn authz_free_resource_manager(@core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn authz_free_resource_manager_raw(@core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn authz_get_information_from_context(@core.RawAddress, @fa0c85a608d6ac95.AUTHZCONTEXTINFORMATIONCLASS_bfe5cae9ddb9, UInt, @core.RawAddress, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn authz_get_information_from_context_raw(@core.RawAddress, Int, UInt, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub let authz_init_info_version_v1 : UInt
+
+pub fn authz_initialize_compound_context(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn authz_initialize_compound_context_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn authz_initialize_context_from_authz_context(UInt, @core.RawAddress, @core.RawAddress, @fb66f520d7e12332.LUID_d126dd202e2a, @core.RawAddress, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn authz_initialize_context_from_authz_context_raw(UInt, @core.RawAddress, @core.RawAddress, Bytes, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn authz_initialize_context_from_sid(UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress, @fb66f520d7e12332.LUID_d126dd202e2a, @core.RawAddress, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn authz_initialize_context_from_sid_raw(UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress, Bytes, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn authz_initialize_context_from_token(UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress, @fb66f520d7e12332.LUID_d126dd202e2a, @core.RawAddress, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn authz_initialize_context_from_token_raw(UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress, Bytes, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn authz_initialize_remote_resource_manager(@fa0c85a608d6ac95.AUTHZRPCINITINFOCLIENT_f3696b420863, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn authz_initialize_remote_resource_manager_raw(@core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn authz_initialize_resource_manager(UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress, @strings.PWStr?, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn authz_initialize_resource_manager_ex(@fa0c85a608d6ac95.AUTHZRESOURCEMANAGERFLAGS_7af0a3dc6cf4, @fa0c85a608d6ac95.AUTHZINITINFO_d6839b54c0ef?, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn authz_initialize_resource_manager_ex_raw(UInt, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn authz_initialize_resource_manager_raw(UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn authz_install_security_event_source(UInt, @fa0c85a608d6ac95.AUTHZSOURCESCHEMAREGISTRATION_91492786a31d) -> Bool raise @core.WindowsError
+
+pub fn authz_install_security_event_source_raw(UInt, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub let authz_migrated_legacy_publisher : UInt
+
+pub fn authz_modify_claims(@core.RawAddress, @fa0c85a608d6ac95.AUTHZCONTEXTINFORMATIONCLASS_bfe5cae9ddb9, @core.RawAddress, @fa0c85a608d6ac95.AUTHZSECURITYATTRIBUTESINFORMATION_fd6b8f070c7d?) -> Bool raise @core.WindowsError
+
+pub fn authz_modify_claims_raw(@core.RawAddress, Int, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn authz_modify_security_attributes(@core.RawAddress, @core.RawAddress, @fa0c85a608d6ac95.AUTHZSECURITYATTRIBUTESINFORMATION_fd6b8f070c7d?) -> Bool raise @core.WindowsError
+
+pub fn authz_modify_security_attributes_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn authz_modify_sids(@core.RawAddress, @fa0c85a608d6ac95.AUTHZCONTEXTINFORMATIONCLASS_bfe5cae9ddb9, @core.RawAddress, @cc6631776d7e2373.TOKENGROUPS_8744ea02ed4e?) -> Bool raise @core.WindowsError
+
+pub fn authz_modify_sids_raw(@core.RawAddress, Int, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn authz_open_object_audit(UInt, @core.RawAddress, @fa0c85a608d6ac95.AUTHZACCESSREQUEST_d9513774c0e5, @core.RawAddress, @core.RawAddress, @core.RawAddress, UInt, @fa0c85a608d6ac95.AUTHZACCESSREPLY_111859a8f7a4) -> Bool raise @core.WindowsError
+
+pub fn authz_open_object_audit_raw(UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, UInt, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn authz_register_cap_change_notification(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn authz_register_cap_change_notification_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn authz_register_security_event_source(UInt, @strings.PWStr, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn authz_register_security_event_source_raw(UInt, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn authz_report_security_event_from_params(UInt, @core.RawAddress, UInt, @core.RawAddress, @fa0c85a608d6ac95.AUDITPARAMS_937ba12adc48) -> Bool raise @core.WindowsError
+
+pub fn authz_report_security_event_from_params_raw(UInt, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub let authz_require_s4_u_logon : UInt
+
+pub let authz_rpc_init_info_client_version_v1 : UInt
+
+pub let authz_security_attribute_type_boolean : UInt
+
+pub let authz_security_attribute_type_fqbn : UInt
+
+pub let authz_security_attribute_type_int64 : UInt
+
+pub let authz_security_attribute_type_invalid : UInt
+
+pub let authz_security_attribute_type_octet_string : UInt
+
+pub let authz_security_attribute_type_sid : UInt
+
+pub let authz_security_attribute_type_string : UInt
+
+pub let authz_security_attribute_type_uint64 : UInt
+
+pub let authz_security_attributes_information_version : UInt
+
+pub let authz_security_attributes_information_version_v1 : UInt
+
+pub fn authz_set_app_container_information(@core.RawAddress, @core.RawAddress, UInt, @cc6631776d7e2373.SIDANDATTRIBUTES_a5e323de8705?) -> Bool raise @core.WindowsError
+
+pub fn authz_set_app_container_information_raw(@core.RawAddress, @core.RawAddress, UInt, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub let authz_skip_token_groups : UInt
+
+pub let authz_ss_maxsize : UInt
+
+pub fn authz_uninstall_security_event_source(UInt, @strings.PWStr) -> Bool raise @core.WindowsError
+
+pub fn authz_uninstall_security_event_source_raw(UInt, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn authz_unregister_cap_change_notification(@core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn authz_unregister_cap_change_notification_raw(@core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn authz_unregister_security_event_source(UInt, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn authz_unregister_security_event_source_raw(UInt, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub let authz_wpd_category_flag : UInt
+
+pub let authzp_wpd_event : UInt
+
+pub fn build_explicit_access_with_name_a(@fa0c85a608d6ac95.EXPLICITACCESSA_de015de31cf7, @core.RawAddress, UInt, @fa0c85a608d6ac95.ACCESSMODE_58852bf04167, @cc6631776d7e2373.ACEFLAGS_2d83806c6de9) -> Unit raise @core.WindowsError
+
+pub fn build_explicit_access_with_name_a_raw(@core.RawAddress, @core.RawAddress, UInt, Int, UInt) -> Unit
+
+pub fn build_explicit_access_with_name_w(@fa0c85a608d6ac95.EXPLICITACCESSW_66288573e6d7, @core.RawAddress, UInt, @fa0c85a608d6ac95.ACCESSMODE_58852bf04167, @cc6631776d7e2373.ACEFLAGS_2d83806c6de9) -> Unit raise @core.WindowsError
+
+pub fn build_explicit_access_with_name_w_raw(@core.RawAddress, @core.RawAddress, UInt, Int, UInt) -> Unit
+
+pub fn build_impersonate_explicit_access_with_name_a(@fa0c85a608d6ac95.EXPLICITACCESSA_de015de31cf7, @core.RawAddress, @fa0c85a608d6ac95.TRUSTEEA_35f41139ba47?, UInt, @fa0c85a608d6ac95.ACCESSMODE_58852bf04167, UInt) -> Unit raise @core.WindowsError
+
+pub fn build_impersonate_explicit_access_with_name_a_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, UInt, Int, UInt) -> Unit
+
+pub fn build_impersonate_explicit_access_with_name_w(@fa0c85a608d6ac95.EXPLICITACCESSW_66288573e6d7, @core.RawAddress, @fa0c85a608d6ac95.TRUSTEEW_23fbccc19a79?, UInt, @fa0c85a608d6ac95.ACCESSMODE_58852bf04167, UInt) -> Unit raise @core.WindowsError
+
+pub fn build_impersonate_explicit_access_with_name_w_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, UInt, Int, UInt) -> Unit
+
+pub fn build_impersonate_trustee_a(@fa0c85a608d6ac95.TRUSTEEA_35f41139ba47, @fa0c85a608d6ac95.TRUSTEEA_35f41139ba47?) -> Unit raise @core.WindowsError
+
+pub fn build_impersonate_trustee_a_raw(@core.RawAddress, @core.RawAddress) -> Unit
+
+pub fn build_impersonate_trustee_w(@fa0c85a608d6ac95.TRUSTEEW_23fbccc19a79, @fa0c85a608d6ac95.TRUSTEEW_23fbccc19a79?) -> Unit raise @core.WindowsError
+
+pub fn build_impersonate_trustee_w_raw(@core.RawAddress, @core.RawAddress) -> Unit
+
+pub fn build_security_descriptor_a(@fa0c85a608d6ac95.TRUSTEEA_35f41139ba47?, @fa0c85a608d6ac95.TRUSTEEA_35f41139ba47?, UInt, @fa0c85a608d6ac95.EXPLICITACCESSA_de015de31cf7?, UInt, @fa0c85a608d6ac95.EXPLICITACCESSA_de015de31cf7?, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> @fb66f520d7e12332.WIN32ERROR_de7527e5f234 raise @core.WindowsError
+
+pub fn build_security_descriptor_a_raw(@core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn build_security_descriptor_w(@fa0c85a608d6ac95.TRUSTEEW_23fbccc19a79?, @fa0c85a608d6ac95.TRUSTEEW_23fbccc19a79?, UInt, @fa0c85a608d6ac95.EXPLICITACCESSW_66288573e6d7?, UInt, @fa0c85a608d6ac95.EXPLICITACCESSW_66288573e6d7?, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> @fb66f520d7e12332.WIN32ERROR_de7527e5f234 raise @core.WindowsError
+
+pub fn build_security_descriptor_w_raw(@core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn build_trustee_with_name_a(@fa0c85a608d6ac95.TRUSTEEA_35f41139ba47, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn build_trustee_with_name_a_raw(@core.RawAddress, @core.RawAddress) -> Unit
+
+pub fn build_trustee_with_name_w(@fa0c85a608d6ac95.TRUSTEEW_23fbccc19a79, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn build_trustee_with_name_w_raw(@core.RawAddress, @core.RawAddress) -> Unit
+
+pub fn build_trustee_with_objects_and_name_a(@fa0c85a608d6ac95.TRUSTEEA_35f41139ba47, @fa0c85a608d6ac95.OBJECTSANDNAMEA_b44ad87a3cb6?, @fa0c85a608d6ac95.SEOBJECTTYPE_14c983e07c36, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn build_trustee_with_objects_and_name_a_raw(@core.RawAddress, @core.RawAddress, Int, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Unit
+
+pub fn build_trustee_with_objects_and_name_w(@fa0c85a608d6ac95.TRUSTEEW_23fbccc19a79, @fa0c85a608d6ac95.OBJECTSANDNAMEW_7a145d45d59c?, @fa0c85a608d6ac95.SEOBJECTTYPE_14c983e07c36, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn build_trustee_with_objects_and_name_w_raw(@core.RawAddress, @core.RawAddress, Int, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Unit
+
+pub fn build_trustee_with_objects_and_sid_a(@fa0c85a608d6ac95.TRUSTEEA_35f41139ba47, @fa0c85a608d6ac95.OBJECTSANDSID_f2edb61f4353?, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn build_trustee_with_objects_and_sid_a_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Unit
+
+pub fn build_trustee_with_objects_and_sid_w(@fa0c85a608d6ac95.TRUSTEEW_23fbccc19a79, @fa0c85a608d6ac95.OBJECTSANDSID_f2edb61f4353?, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn build_trustee_with_objects_and_sid_w_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Unit
+
+pub fn build_trustee_with_sid_a(@fa0c85a608d6ac95.TRUSTEEA_35f41139ba47, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn build_trustee_with_sid_a_raw(@core.RawAddress, @core.RawAddress) -> Unit
+
+pub fn build_trustee_with_sid_w(@fa0c85a608d6ac95.TRUSTEEW_23fbccc19a79, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn build_trustee_with_sid_w_raw(@core.RawAddress, @core.RawAddress) -> Unit
+
+pub fn convert_security_descriptor_to_string_security_descriptor_a(@core.RawAddress, UInt, @cc6631776d7e2373.OBJECTSECURITYINFORMATION_7732df83bef3, @core.RawAddress, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn convert_security_descriptor_to_string_security_descriptor_a_raw(@core.RawAddress, UInt, UInt, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn convert_security_descriptor_to_string_security_descriptor_w(@core.RawAddress, UInt, @cc6631776d7e2373.OBJECTSECURITYINFORMATION_7732df83bef3, @core.RawAddress, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn convert_security_descriptor_to_string_security_descriptor_w_raw(@core.RawAddress, UInt, UInt, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn convert_sid_to_string_sid_a(@core.RawAddress, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn convert_sid_to_string_sid_a_raw(@core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn convert_sid_to_string_sid_w(@core.RawAddress, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn convert_sid_to_string_sid_w_raw(@core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn convert_string_security_descriptor_to_security_descriptor_a(@strings.PStr, UInt, @core.RawAddress, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn convert_string_security_descriptor_to_security_descriptor_a_raw(@core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn convert_string_security_descriptor_to_security_descriptor_w(@strings.PWStr, UInt, @core.RawAddress, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn convert_string_security_descriptor_to_security_descriptor_w_raw(@core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn convert_string_sid_to_sid_a(@strings.PStr, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn convert_string_sid_to_sid_a_raw(@core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn convert_string_sid_to_sid_w(@strings.PWStr, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn convert_string_sid_to_sid_w_raw(@core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn free_inherited_from_array(@fa0c85a608d6ac95.INHERITEDFROMW_6e14054b3641, UInt16, @core.RawAddress) -> @fb66f520d7e12332.WIN32ERROR_de7527e5f234 raise @core.WindowsError
+
+pub fn free_inherited_from_array_raw(@core.RawAddress, UInt, @core.RawAddress) -> UInt
+
+pub fn get_audited_permissions_from_acl_a(@cc6631776d7e2373.ACL_1bf7caea28b3, @fa0c85a608d6ac95.TRUSTEEA_35f41139ba47, @core.RawAddress, @core.RawAddress) -> @fb66f520d7e12332.WIN32ERROR_de7527e5f234 raise @core.WindowsError
+
+pub fn get_audited_permissions_from_acl_a_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn get_audited_permissions_from_acl_w(@cc6631776d7e2373.ACL_1bf7caea28b3, @fa0c85a608d6ac95.TRUSTEEW_23fbccc19a79, @core.RawAddress, @core.RawAddress) -> @fb66f520d7e12332.WIN32ERROR_de7527e5f234 raise @core.WindowsError
+
+pub fn get_audited_permissions_from_acl_w_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn get_effective_rights_from_acl_a(@cc6631776d7e2373.ACL_1bf7caea28b3, @fa0c85a608d6ac95.TRUSTEEA_35f41139ba47, @core.RawAddress) -> @fb66f520d7e12332.WIN32ERROR_de7527e5f234 raise @core.WindowsError
+
+pub fn get_effective_rights_from_acl_a_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn get_effective_rights_from_acl_w(@cc6631776d7e2373.ACL_1bf7caea28b3, @fa0c85a608d6ac95.TRUSTEEW_23fbccc19a79, @core.RawAddress) -> @fb66f520d7e12332.WIN32ERROR_de7527e5f234 raise @core.WindowsError
+
+pub fn get_effective_rights_from_acl_w_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn get_explicit_entries_from_acl_a(@cc6631776d7e2373.ACL_1bf7caea28b3, @core.RawAddress, @core.RawAddress) -> @fb66f520d7e12332.WIN32ERROR_de7527e5f234 raise @core.WindowsError
+
+pub fn get_explicit_entries_from_acl_a_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn get_explicit_entries_from_acl_w(@cc6631776d7e2373.ACL_1bf7caea28b3, @core.RawAddress, @core.RawAddress) -> @fb66f520d7e12332.WIN32ERROR_de7527e5f234 raise @core.WindowsError
+
+pub fn get_explicit_entries_from_acl_w_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn get_inheritance_source_a(@core.RawAddress, @fa0c85a608d6ac95.SEOBJECTTYPE_14c983e07c36, @cc6631776d7e2373.OBJECTSECURITYINFORMATION_7732df83bef3, Int, @core.RawAddress, UInt, @cc6631776d7e2373.ACL_1bf7caea28b3, @core.RawAddress, @cc6631776d7e2373.GENERICMAPPING_38953e2f3655, @fa0c85a608d6ac95.INHERITEDFROMA_5da05f0d132b) -> @fb66f520d7e12332.WIN32ERROR_de7527e5f234 raise @core.WindowsError
+
+pub fn get_inheritance_source_a_raw(@core.RawAddress, Int, UInt, Int, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn get_inheritance_source_w(@core.RawAddress, @fa0c85a608d6ac95.SEOBJECTTYPE_14c983e07c36, @cc6631776d7e2373.OBJECTSECURITYINFORMATION_7732df83bef3, Int, @core.RawAddress, UInt, @cc6631776d7e2373.ACL_1bf7caea28b3, @core.RawAddress, @cc6631776d7e2373.GENERICMAPPING_38953e2f3655, @fa0c85a608d6ac95.INHERITEDFROMW_6e14054b3641) -> @fb66f520d7e12332.WIN32ERROR_de7527e5f234 raise @core.WindowsError
+
+pub fn get_inheritance_source_w_raw(@core.RawAddress, Int, UInt, Int, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn get_multiple_trustee_a(@fa0c85a608d6ac95.TRUSTEEA_35f41139ba47?) -> @core.RawAddress raise @core.WindowsError
+
+pub fn get_multiple_trustee_a_raw(@core.RawAddress) -> @core.RawAddress
+
+pub fn get_multiple_trustee_operation_a(@fa0c85a608d6ac95.TRUSTEEA_35f41139ba47?) -> @fa0c85a608d6ac95.MULTIPLETRUSTEEOPERATION_30eeeadabfe1 raise @core.WindowsError
+
+pub fn get_multiple_trustee_operation_a_raw(@core.RawAddress) -> Int
+
+pub fn get_multiple_trustee_operation_w(@fa0c85a608d6ac95.TRUSTEEW_23fbccc19a79?) -> @fa0c85a608d6ac95.MULTIPLETRUSTEEOPERATION_30eeeadabfe1 raise @core.WindowsError
+
+pub fn get_multiple_trustee_operation_w_raw(@core.RawAddress) -> Int
+
+pub fn get_multiple_trustee_w(@fa0c85a608d6ac95.TRUSTEEW_23fbccc19a79?) -> @core.RawAddress raise @core.WindowsError
+
+pub fn get_multiple_trustee_w_raw(@core.RawAddress) -> @core.RawAddress
+
+pub fn get_named_security_info_a(@strings.PStr, @fa0c85a608d6ac95.SEOBJECTTYPE_14c983e07c36, @cc6631776d7e2373.OBJECTSECURITYINFORMATION_7732df83bef3, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> @fb66f520d7e12332.WIN32ERROR_de7527e5f234 raise @core.WindowsError
+
+pub fn get_named_security_info_a_raw(@core.RawAddress, Int, UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn get_named_security_info_w(@strings.PWStr, @fa0c85a608d6ac95.SEOBJECTTYPE_14c983e07c36, @cc6631776d7e2373.OBJECTSECURITYINFORMATION_7732df83bef3, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> @fb66f520d7e12332.WIN32ERROR_de7527e5f234 raise @core.WindowsError
+
+pub fn get_named_security_info_w_raw(@core.RawAddress, Int, UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn get_security_info(@core.RawAddress, @fa0c85a608d6ac95.SEOBJECTTYPE_14c983e07c36, @cc6631776d7e2373.OBJECTSECURITYINFORMATION_7732df83bef3, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> @fb66f520d7e12332.WIN32ERROR_de7527e5f234 raise @core.WindowsError
+
+pub fn get_security_info_raw(@core.RawAddress, Int, UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn get_trustee_form_a(@fa0c85a608d6ac95.TRUSTEEA_35f41139ba47) -> @fa0c85a608d6ac95.TRUSTEEFORM_c8d6c199f83d raise @core.WindowsError
+
+pub fn get_trustee_form_a_raw(@core.RawAddress) -> Int
+
+pub fn get_trustee_form_w(@fa0c85a608d6ac95.TRUSTEEW_23fbccc19a79) -> @fa0c85a608d6ac95.TRUSTEEFORM_c8d6c199f83d raise @core.WindowsError
+
+pub fn get_trustee_form_w_raw(@core.RawAddress) -> Int
+
+pub fn get_trustee_name_a(@fa0c85a608d6ac95.TRUSTEEA_35f41139ba47) -> @core.RawAddress raise @core.WindowsError
+
+pub fn get_trustee_name_a_raw(@core.RawAddress) -> @core.RawAddress
+
+pub fn get_trustee_name_w(@fa0c85a608d6ac95.TRUSTEEW_23fbccc19a79) -> @core.RawAddress raise @core.WindowsError
+
+pub fn get_trustee_name_w_raw(@core.RawAddress) -> @core.RawAddress
+
+pub fn get_trustee_type_a(@fa0c85a608d6ac95.TRUSTEEA_35f41139ba47?) -> @fa0c85a608d6ac95.TRUSTEETYPE_ce72229cd894 raise @core.WindowsError
+
+pub fn get_trustee_type_a_raw(@core.RawAddress) -> Int
+
+pub fn get_trustee_type_w(@fa0c85a608d6ac95.TRUSTEEW_23fbccc19a79?) -> @fa0c85a608d6ac95.TRUSTEETYPE_ce72229cd894 raise @core.WindowsError
+
+pub fn get_trustee_type_w_raw(@core.RawAddress) -> Int
+
+pub let inherited_access_entry : UInt
+
+pub let inherited_grandparent : UInt
+
+pub let inherited_parent : UInt
+
+pub fn lookup_security_descriptor_parts_a(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> @fb66f520d7e12332.WIN32ERROR_de7527e5f234 raise @core.WindowsError
+
+pub fn lookup_security_descriptor_parts_a_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn lookup_security_descriptor_parts_w(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> @fb66f520d7e12332.WIN32ERROR_de7527e5f234 raise @core.WindowsError
+
+pub fn lookup_security_descriptor_parts_w_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub let olescript_e_syntax : Int
+
+pub let sddl_access_allowed : String
+
+pub let sddl_access_control_assistance_ops : String
+
+pub let sddl_access_denied : String
+
+pub let sddl_access_filter : String
+
+pub let sddl_account_operators : String
+
+pub let sddl_ace_begin : String
+
+pub let sddl_ace_cond_attribute_prefix : String
+
+pub let sddl_ace_cond_begin : String
+
+pub let sddl_ace_cond_blob_prefix : String
+
+pub let sddl_ace_cond_device_attribute_prefix : String
+
+pub let sddl_ace_cond_end : String
+
+pub let sddl_ace_cond_resource_attribute_prefix : String
+
+pub let sddl_ace_cond_sid_prefix : String
+
+pub let sddl_ace_cond_token_attribute_prefix : String
+
+pub let sddl_ace_cond_user_attribute_prefix : String
+
+pub let sddl_ace_end : String
+
+pub let sddl_alarm : String
+
+pub let sddl_alias_prew2_kcompacc : String
+
+pub let sddl_alias_size : UInt
+
+pub let sddl_all_app_packages : String
+
+pub let sddl_anonymous : String
+
+pub let sddl_audit : String
+
+pub let sddl_audit_failure : String
+
+pub let sddl_audit_success : String
+
+pub let sddl_authenticated_users : String
+
+pub let sddl_authority_asserted : String
+
+pub let sddl_auto_inherit_req : String
+
+pub let sddl_auto_inherited : String
+
+pub let sddl_backup_operators : String
+
+pub let sddl_blob : String
+
+pub let sddl_boolean : String
+
+pub let sddl_builtin_administrators : String
+
+pub let sddl_builtin_guests : String
+
+pub let sddl_builtin_users : String
+
+pub let sddl_callback_access_allowed : String
+
+pub let sddl_callback_access_denied : String
+
+pub let sddl_callback_audit : String
+
+pub let sddl_callback_object_access_allowed : String
+
+pub let sddl_cert_serv_administrators : String
+
+pub let sddl_certsvc_dcom_access : String
+
+pub let sddl_cloneable_controllers : String
+
+pub let sddl_container_inherit : String
+
+pub let sddl_control_access : String
+
+pub let sddl_create_child : String
+
+pub let sddl_creator_group : String
+
+pub let sddl_creator_owner : String
+
+pub let sddl_critical : String
+
+pub let sddl_crypto_operators : String
+
+pub let sddl_dacl : String
+
+pub let sddl_delete_child : String
+
+pub let sddl_delete_tree : String
+
+pub let sddl_deliminator : String
+
+pub let sddl_domain_administrators : String
+
+pub let sddl_domain_computers : String
+
+pub let sddl_domain_domain_controllers : String
+
+pub let sddl_domain_guests : String
+
+pub let sddl_domain_users : String
+
+pub let sddl_enterprise_admins : String
+
+pub let sddl_enterprise_domain_controllers : String
+
+pub let sddl_enterprise_key_admins : String
+
+pub let sddl_enterprise_ro_d_cs : String
+
+pub let sddl_event_log_readers : String
+
+pub let sddl_everyone : String
+
+pub let sddl_file_all : String
+
+pub let sddl_file_execute : String
+
+pub let sddl_file_read : String
+
+pub let sddl_file_write : String
+
+pub let sddl_generic_all : String
+
+pub let sddl_generic_execute : String
+
+pub let sddl_generic_read : String
+
+pub let sddl_generic_write : String
+
+pub let sddl_group : String
+
+pub let sddl_group_policy_admins : String
+
+pub let sddl_hyper_v_admins : String
+
+pub let sddl_iis_users : String
+
+pub let sddl_inherit_only : String
+
+pub let sddl_inherited : String
+
+pub let sddl_int : String
+
+pub let sddl_interactive : String
+
+pub let sddl_key_admins : String
+
+pub let sddl_key_all : String
+
+pub let sddl_key_execute : String
+
+pub let sddl_key_read : String
+
+pub let sddl_key_write : String
+
+pub let sddl_list_children : String
+
+pub let sddl_list_object : String
+
+pub let sddl_local_admin : String
+
+pub let sddl_local_guest : String
+
+pub let sddl_local_service : String
+
+pub let sddl_local_system : String
+
+pub let sddl_mandatory_label : String
+
+pub let sddl_ml_high : String
+
+pub let sddl_ml_low : String
+
+pub let sddl_ml_medium : String
+
+pub let sddl_ml_medium_plus : String
+
+pub let sddl_ml_system : String
+
+pub let sddl_network : String
+
+pub let sddl_network_configuration_ops : String
+
+pub let sddl_network_service : String
+
+pub let sddl_no_execute_up : String
+
+pub let sddl_no_propagate : String
+
+pub let sddl_no_read_up : String
+
+pub let sddl_no_write_up : String
+
+pub let sddl_null_acl : String
+
+pub let sddl_object_access_allowed : String
+
+pub let sddl_object_access_denied : String
+
+pub let sddl_object_alarm : String
+
+pub let sddl_object_audit : String
+
+pub let sddl_object_inherit : String
+
+pub let sddl_openssh_users : String
+
+pub let sddl_owner : String
+
+pub let sddl_owner_rights : String
+
+pub let sddl_perflog_users : String
+
+pub let sddl_perfmon_users : String
+
+pub let sddl_personal_self : String
+
+pub let sddl_power_users : String
+
+pub let sddl_printer_operators : String
+
+pub let sddl_process_trust_label : String
+
+pub let sddl_protected : String
+
+pub let sddl_protected_users : String
+
+pub let sddl_ras_servers : String
+
+pub let sddl_rds_endpoint_servers : String
+
+pub let sddl_rds_management_servers : String
+
+pub let sddl_rds_remote_access_servers : String
+
+pub let sddl_read_control : String
+
+pub let sddl_read_property : String
+
+pub let sddl_remote_desktop : String
+
+pub let sddl_remote_management_users : String
+
+pub let sddl_replicator : String
+
+pub let sddl_resource_attribute : String
+
+pub let sddl_restricted_code : String
+
+pub let sddl_revision : UInt
+
+pub let sddl_revision_1 : UInt
+
+pub let sddl_sacl : String
+
+pub let sddl_schema_administrators : String
+
+pub let sddl_scoped_policy_id : String
+
+pub let sddl_self_write : String
+
+pub let sddl_seperator : String
+
+pub let sddl_server_operators : String
+
+pub let sddl_service : String
+
+pub let sddl_service_asserted : String
+
+pub let sddl_sid : String
+
+pub let sddl_space : String
+
+pub let sddl_standard_delete : String
+
+pub let sddl_trust_protected_filter : String
+
+pub let sddl_uint : String
+
+pub let sddl_user_mode_drivers : String
+
+pub let sddl_user_mode_hardware_operators : String
+
+pub let sddl_write_dac : String
+
+pub let sddl_write_owner : String
+
+pub let sddl_write_property : String
+
+pub let sddl_write_restricted_code : String
+
+pub let sddl_wstring : String
+
+pub fn set_entries_in_acl_a(UInt, @fa0c85a608d6ac95.EXPLICITACCESSA_de015de31cf7?, @cc6631776d7e2373.ACL_1bf7caea28b3?, @core.RawAddress) -> @fb66f520d7e12332.WIN32ERROR_de7527e5f234 raise @core.WindowsError
+
+pub fn set_entries_in_acl_a_raw(UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn set_entries_in_acl_w(UInt, @fa0c85a608d6ac95.EXPLICITACCESSW_66288573e6d7?, @cc6631776d7e2373.ACL_1bf7caea28b3?, @core.RawAddress) -> @fb66f520d7e12332.WIN32ERROR_de7527e5f234 raise @core.WindowsError
+
+pub fn set_entries_in_acl_w_raw(UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn set_named_security_info_a(@core.RawAddress, @fa0c85a608d6ac95.SEOBJECTTYPE_14c983e07c36, @cc6631776d7e2373.OBJECTSECURITYINFORMATION_7732df83bef3, @core.RawAddress, @core.RawAddress, @cc6631776d7e2373.ACL_1bf7caea28b3?, @cc6631776d7e2373.ACL_1bf7caea28b3?) -> @fb66f520d7e12332.WIN32ERROR_de7527e5f234 raise @core.WindowsError
+
+pub fn set_named_security_info_a_raw(@core.RawAddress, Int, UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn set_named_security_info_w(@core.RawAddress, @fa0c85a608d6ac95.SEOBJECTTYPE_14c983e07c36, @cc6631776d7e2373.OBJECTSECURITYINFORMATION_7732df83bef3, @core.RawAddress, @core.RawAddress, @cc6631776d7e2373.ACL_1bf7caea28b3?, @cc6631776d7e2373.ACL_1bf7caea28b3?) -> @fb66f520d7e12332.WIN32ERROR_de7527e5f234 raise @core.WindowsError
+
+pub fn set_named_security_info_w_raw(@core.RawAddress, Int, UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn set_security_info(@core.RawAddress, @fa0c85a608d6ac95.SEOBJECTTYPE_14c983e07c36, @cc6631776d7e2373.OBJECTSECURITYINFORMATION_7732df83bef3, @core.RawAddress, @core.RawAddress, @cc6631776d7e2373.ACL_1bf7caea28b3?, @cc6631776d7e2373.ACL_1bf7caea28b3?) -> @fb66f520d7e12332.WIN32ERROR_de7527e5f234 raise @core.WindowsError
+
+pub fn set_security_info_raw(@core.RawAddress, Int, UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn tree_reset_named_security_info_a(@core.RawAddress, @fa0c85a608d6ac95.SEOBJECTTYPE_14c983e07c36, @cc6631776d7e2373.OBJECTSECURITYINFORMATION_7732df83bef3, @core.RawAddress, @core.RawAddress, @cc6631776d7e2373.ACL_1bf7caea28b3?, @cc6631776d7e2373.ACL_1bf7caea28b3?, Int, @core.RawAddress, @fa0c85a608d6ac95.PROGINVOKESETTING_33d4bbd745bb, @core.RawAddress) -> @fb66f520d7e12332.WIN32ERROR_de7527e5f234 raise @core.WindowsError
+
+pub fn tree_reset_named_security_info_a_raw(@core.RawAddress, Int, UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, Int, @core.RawAddress, Int, @core.RawAddress) -> UInt
+
+pub fn tree_reset_named_security_info_w(@core.RawAddress, @fa0c85a608d6ac95.SEOBJECTTYPE_14c983e07c36, @cc6631776d7e2373.OBJECTSECURITYINFORMATION_7732df83bef3, @core.RawAddress, @core.RawAddress, @cc6631776d7e2373.ACL_1bf7caea28b3?, @cc6631776d7e2373.ACL_1bf7caea28b3?, Int, @core.RawAddress, @fa0c85a608d6ac95.PROGINVOKESETTING_33d4bbd745bb, @core.RawAddress) -> @fb66f520d7e12332.WIN32ERROR_de7527e5f234 raise @core.WindowsError
+
+pub fn tree_reset_named_security_info_w_raw(@core.RawAddress, Int, UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, Int, @core.RawAddress, Int, @core.RawAddress) -> UInt
+
+pub fn tree_set_named_security_info_a(@core.RawAddress, @fa0c85a608d6ac95.SEOBJECTTYPE_14c983e07c36, @cc6631776d7e2373.OBJECTSECURITYINFORMATION_7732df83bef3, @core.RawAddress, @core.RawAddress, @cc6631776d7e2373.ACL_1bf7caea28b3?, @cc6631776d7e2373.ACL_1bf7caea28b3?, @fa0c85a608d6ac95.TREESECINFO_d6c857374b9c, @core.RawAddress, @fa0c85a608d6ac95.PROGINVOKESETTING_33d4bbd745bb, @core.RawAddress) -> @fb66f520d7e12332.WIN32ERROR_de7527e5f234 raise @core.WindowsError
+
+pub fn tree_set_named_security_info_a_raw(@core.RawAddress, Int, UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, Int, @core.RawAddress) -> UInt
+
+pub fn tree_set_named_security_info_w(@core.RawAddress, @fa0c85a608d6ac95.SEOBJECTTYPE_14c983e07c36, @cc6631776d7e2373.OBJECTSECURITYINFORMATION_7732df83bef3, @core.RawAddress, @core.RawAddress, @cc6631776d7e2373.ACL_1bf7caea28b3?, @cc6631776d7e2373.ACL_1bf7caea28b3?, @fa0c85a608d6ac95.TREESECINFO_d6c857374b9c, @core.RawAddress, @fa0c85a608d6ac95.PROGINVOKESETTING_33d4bbd745bb, @core.RawAddress) -> @fb66f520d7e12332.WIN32ERROR_de7527e5f234 raise @core.WindowsError
+
+pub fn tree_set_named_security_info_w_raw(@core.RawAddress, Int, UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, Int, @core.RawAddress) -> UInt
+
+pub let trustee_access_all : Int
+
+pub let trustee_access_allowed : Int
+
+pub let trustee_access_explicit : Int
+
+pub let trustee_access_read : Int
+
+pub let trustee_access_write : Int
+
+// Errors
+
+// Types and methods
+
+// Type aliases
+pub using @fa0c85a608d6ac95 {type ACCESSMODE_58852bf04167 as ACCESSMODE}
+
+pub using @fa0c85a608d6ac95 {type ACTRLACCESSA_28a5ba10da07 as ACTRLACCESSA}
+
+pub using @fa0c85a608d6ac95 {type ACTRLACCESSENTRYA_f374177ffa2c as ACTRLACCESSENTRYA}
+
+pub using @fa0c85a608d6ac95 {type ACTRLACCESSENTRYACCESSFLAGS_2632c970e167 as ACTRLACCESSENTRYACCESSFLAGS}
+
+pub using @fa0c85a608d6ac95 {type ACTRLACCESSENTRYLISTA_4af67af79e38 as ACTRLACCESSENTRYLISTA}
+
+pub using @fa0c85a608d6ac95 {type ACTRLACCESSENTRYLISTW_c58a1d0c2687 as ACTRLACCESSENTRYLISTW}
+
+pub using @fa0c85a608d6ac95 {type ACTRLACCESSENTRYW_52c375d62927 as ACTRLACCESSENTRYW}
+
+pub using @fa0c85a608d6ac95 {type ACTRLACCESSINFOA_c4e2003cce8f as ACTRLACCESSINFOA}
+
+pub using @fa0c85a608d6ac95 {type ACTRLACCESSINFOW_fb0c9273177b as ACTRLACCESSINFOW}
+
+pub using @fa0c85a608d6ac95 {type ACTRLACCESSW_0e834f79494e as ACTRLACCESSW}
+
+pub using @fa0c85a608d6ac95 {type ACTRLCONTROLINFOA_74f707416087 as ACTRLCONTROLINFOA}
+
+pub using @fa0c85a608d6ac95 {type ACTRLCONTROLINFOW_0e7be2e09563 as ACTRLCONTROLINFOW}
+
+pub using @fa0c85a608d6ac95 {type ACTRLOVERLAPPED_1d12de8632d1 as ACTRLOVERLAPPED}
+
+pub using @fa0c85a608d6ac95 {type ACTRLOVERLAPPEDAnonymousEUnion_181322e8ee67 as ACTRLOVERLAPPEDAnonymousEUnion}
+
+pub using @fa0c85a608d6ac95 {type ACTRLPROPERTYENTRYA_c46304e35c82 as ACTRLPROPERTYENTRYA}
+
+pub using @fa0c85a608d6ac95 {type ACTRLPROPERTYENTRYW_519ebbc34f66 as ACTRLPROPERTYENTRYW}
+
+pub using @fa0c85a608d6ac95 {type AUDITIPADDRESS_88aa942c7624 as AUDITIPADDRESS}
+
+pub using @fa0c85a608d6ac95 {type AUDITOBJECTTYPE_18cafb745a85 as AUDITOBJECTTYPE}
+
+pub using @fa0c85a608d6ac95 {type AUDITOBJECTTYPES_baaaf564740a as AUDITOBJECTTYPES}
+
+pub using @fa0c85a608d6ac95 {type AUDITPARAM_d5a9e879ab24 as AUDITPARAM}
+
+pub using @fa0c85a608d6ac95 {type AUDITPARAMAnonymous1EUnion_3c61427784e0 as AUDITPARAMAnonymous1EUnion}
+
+pub using @fa0c85a608d6ac95 {type AUDITPARAMAnonymous2EUnion_08b93ecc142a as AUDITPARAMAnonymous2EUnion}
+
+pub using @fa0c85a608d6ac95 {type AUDITPARAMS_937ba12adc48 as AUDITPARAMS}
+
+pub using @fa0c85a608d6ac95 {type AUDITPARAMTYPE_bcb857aab53d as AUDITPARAMTYPE}
+
+pub using @fa0c85a608d6ac95 {type AUTHZACCESSCHECKFLAGS_967b7e3dc443 as AUTHZACCESSCHECKFLAGS}
+
+pub using @fa0c85a608d6ac95 {type AUTHZACCESSCHECKRESULTSHANDLE_e539af373bcd as AUTHZACCESSCHECKRESULTSHANDLE}
+
+pub using @fa0c85a608d6ac95 {type AUTHZACCESSREPLY_111859a8f7a4 as AUTHZACCESSREPLY}
+
+pub using @fa0c85a608d6ac95 {type AUTHZACCESSREQUEST_d9513774c0e5 as AUTHZACCESSREQUEST}
+
+pub using @fa0c85a608d6ac95 {type AUTHZAUDITEVENTHANDLE_78bf3a8e5de3 as AUTHZAUDITEVENTHANDLE}
+
+pub using @fa0c85a608d6ac95 {type AUTHZAUDITEVENTINFORMATIONCLASS_89fcf38183c1 as AUTHZAUDITEVENTINFORMATIONCLASS}
+
+pub using @fa0c85a608d6ac95 {type AUTHZAUDITEVENTTYPEHANDLE_eeb0b5496d6c as AUTHZAUDITEVENTTYPEHANDLE}
+
+pub using @fa0c85a608d6ac95 {type AUTHZAUDITEVENTTYPELEGACY_ec98c9a5d082 as AUTHZAUDITEVENTTYPELEGACY}
+
+pub using @fa0c85a608d6ac95 {type AUTHZAUDITEVENTTYPEOLD_c322b6f896e6 as AUTHZAUDITEVENTTYPEOLD}
+
+pub using @fa0c85a608d6ac95 {type AUTHZAUDITEVENTTYPEUNION_ddbced71fa77 as AUTHZAUDITEVENTTYPEUNION}
+
+pub using @fa0c85a608d6ac95 {type AUTHZCAPCHANGESUBSCRIPTIONHANDLE_20e1f5c46d95 as AUTHZCAPCHANGESUBSCRIPTIONHANDLE}
+
+pub using @fa0c85a608d6ac95 {type AUTHZCLIENTCONTEXTHANDLE_3bcba6641d94 as AUTHZCLIENTCONTEXTHANDLE}
+
+pub using @fa0c85a608d6ac95 {type AUTHZCONTEXTINFORMATIONCLASS_bfe5cae9ddb9 as AUTHZCONTEXTINFORMATIONCLASS}
+
+pub using @fa0c85a608d6ac95 {type AUTHZGENERATERESULTS_7840cd7f2e86 as AUTHZGENERATERESULTS}
+
+pub using @fa0c85a608d6ac95 {type AUTHZINITIALIZEOBJECTACCESSAUDITEVENTFLAGS_9f72543464b5 as AUTHZINITIALIZEOBJECTACCESSAUDITEVENTFLAGS}
+
+pub using @fa0c85a608d6ac95 {type AUTHZINITINFO_d6839b54c0ef as AUTHZINITINFO}
+
+pub using @fa0c85a608d6ac95 {type AUTHZREGISTRATIONOBJECTTYPENAMEOFFSET_9894ea5f1e76 as AUTHZREGISTRATIONOBJECTTYPENAMEOFFSET}
+
+pub using @fa0c85a608d6ac95 {type AUTHZRESOURCEMANAGERFLAGS_7af0a3dc6cf4 as AUTHZRESOURCEMANAGERFLAGS}
+
+pub using @fa0c85a608d6ac95 {type AUTHZRESOURCEMANAGERHANDLE_62232e936302 as AUTHZRESOURCEMANAGERHANDLE}
+
+pub using @fa0c85a608d6ac95 {type AUTHZRPCINITINFOCLIENT_f3696b420863 as AUTHZRPCINITINFOCLIENT}
+
+pub using @fa0c85a608d6ac95 {type AUTHZSECURITYATTRIBUTEFLAGS_2c4549e19d03 as AUTHZSECURITYATTRIBUTEFLAGS}
+
+pub using @fa0c85a608d6ac95 {type AUTHZSECURITYATTRIBUTEFQBNVALUE_32be2b9dbbae as AUTHZSECURITYATTRIBUTEFQBNVALUE}
+
+pub using @fa0c85a608d6ac95 {type AUTHZSECURITYATTRIBUTEOCTETSTRINGVALUE_8654f2c9d878 as AUTHZSECURITYATTRIBUTEOCTETSTRINGVALUE}
+
+pub using @fa0c85a608d6ac95 {type AUTHZSECURITYATTRIBUTEOPERATION_d90b35f31d25 as AUTHZSECURITYATTRIBUTEOPERATION}
+
+pub using @fa0c85a608d6ac95 {type AUTHZSECURITYATTRIBUTESINFORMATION_fd6b8f070c7d as AUTHZSECURITYATTRIBUTESINFORMATION}
+
+pub using @fa0c85a608d6ac95 {type AUTHZSECURITYATTRIBUTESINFORMATIONAttributeEUnion_e1142ffe4fca as AUTHZSECURITYATTRIBUTESINFORMATIONAttributeEUnion}
+
+pub using @fa0c85a608d6ac95 {type AUTHZSECURITYATTRIBUTEV1_9067f9993235 as AUTHZSECURITYATTRIBUTEV1}
+
+pub using @fa0c85a608d6ac95 {type AUTHZSECURITYATTRIBUTEV1ValuesEUnion_6e464f875738 as AUTHZSECURITYATTRIBUTEV1ValuesEUnion}
+
+pub using @fa0c85a608d6ac95 {type AUTHZSECURITYEVENTPROVIDERHANDLE_01fd71e69f3d as AUTHZSECURITYEVENTPROVIDERHANDLE}
+
+pub using @fa0c85a608d6ac95 {type AUTHZSIDOPERATION_d9f03d54c709 as AUTHZSIDOPERATION}
+
+pub using @fa0c85a608d6ac95 {type AUTHZSOURCESCHEMAREGISTRATION_91492786a31d as AUTHZSOURCESCHEMAREGISTRATION}
+
+pub using @fa0c85a608d6ac95 {type AUTHZSOURCESCHEMAREGISTRATIONAnonymousEUnion_ea1d2f5b267b as AUTHZSOURCESCHEMAREGISTRATIONAnonymousEUnion}
+
+pub using @fa0c85a608d6ac95 {type AZPROPCONSTANTS_416901850c66 as AZPROPCONSTANTS}
+
+pub using @fa0c85a608d6ac95 {type AzAuthorizationStore_9d49ce4acd3d as AzAuthorizationStore}
+
+pub using @fa0c85a608d6ac95 {type AzBizRuleContext_fba252df0a1f as AzBizRuleContext}
+
+pub using @fa0c85a608d6ac95 {type AzPrincipalLocator_47d61a92a9e6 as AzPrincipalLocator}
+
+pub using @fa0c85a608d6ac95 {type EXPLICITACCESSA_de015de31cf7 as EXPLICITACCESSA}
+
+pub using @fa0c85a608d6ac95 {type EXPLICITACCESSW_66288573e6d7 as EXPLICITACCESSW}
+
+pub using @fa0c85a608d6ac95 {type FNOBJECTMGRFUNCTS_594921dc8407 as FNOBJECTMGRFUNCTS}
+
+pub using @fa0c85a608d6ac95 {type FNPROGRESS_9c3afc1b3626 as FNPROGRESS}
+
+pub using @fa0c85a608d6ac95 {type IAzApplication_510e5bd9e324 as IAzApplication}
+
+pub using @fa0c85a608d6ac95 {type IAzApplication2_514bc8ab1abe as IAzApplication2}
+
+pub using @fa0c85a608d6ac95 {type IAzApplication3_0444e31826ae as IAzApplication3}
+
+pub using @fa0c85a608d6ac95 {type IAzApplicationGroup_4dfdf84353f9 as IAzApplicationGroup}
+
+pub using @fa0c85a608d6ac95 {type IAzApplicationGroup2_53bb3fcdbc60 as IAzApplicationGroup2}
+
+pub using @fa0c85a608d6ac95 {type IAzApplicationGroups_e204dd14f62e as IAzApplicationGroups}
+
+pub using @fa0c85a608d6ac95 {type IAzApplications_2b315ac0a854 as IAzApplications}
+
+pub using @fa0c85a608d6ac95 {type IAzAuthorizationStore_5629774c839c as IAzAuthorizationStore}
+
+pub using @fa0c85a608d6ac95 {type IAzAuthorizationStore2_3237e6c259ac as IAzAuthorizationStore2}
+
+pub using @fa0c85a608d6ac95 {type IAzAuthorizationStore3_3dcf20973a44 as IAzAuthorizationStore3}
+
+pub using @fa0c85a608d6ac95 {type IAzBizRuleContext_9fe21eb0dd3d as IAzBizRuleContext}
+
+pub using @fa0c85a608d6ac95 {type IAzBizRuleInterfaces_51cb773b52de as IAzBizRuleInterfaces}
+
+pub using @fa0c85a608d6ac95 {type IAzBizRuleParameters_ccc0e0044637 as IAzBizRuleParameters}
+
+pub using @fa0c85a608d6ac95 {type IAzClientContext_aacbad73e3b1 as IAzClientContext}
+
+pub using @fa0c85a608d6ac95 {type IAzClientContext2_7e14cbe62a91 as IAzClientContext2}
+
+pub using @fa0c85a608d6ac95 {type IAzClientContext3_845c1369db5c as IAzClientContext3}
+
+pub using @fa0c85a608d6ac95 {type IAzNameResolver_c08c28148581 as IAzNameResolver}
+
+pub using @fa0c85a608d6ac95 {type IAzObjectPicker_f98712474aac as IAzObjectPicker}
+
+pub using @fa0c85a608d6ac95 {type IAzOperation_4bbe9402a6ab as IAzOperation}
+
+pub using @fa0c85a608d6ac95 {type IAzOperation2_c1bc81e8fec7 as IAzOperation2}
+
+pub using @fa0c85a608d6ac95 {type IAzOperations_114d1fd7cf9d as IAzOperations}
+
+pub using @fa0c85a608d6ac95 {type IAzPrincipalLocator_46b75fbe78b8 as IAzPrincipalLocator}
+
+pub using @fa0c85a608d6ac95 {type IAzRole_1fe0f048e0f6 as IAzRole}
+
+pub using @fa0c85a608d6ac95 {type IAzRoleAssignment_54a3f1d63f67 as IAzRoleAssignment}
+
+pub using @fa0c85a608d6ac95 {type IAzRoleAssignments_09315b5ade82 as IAzRoleAssignments}
+
+pub using @fa0c85a608d6ac95 {type IAzRoleDefinition_5e2722692293 as IAzRoleDefinition}
+
+pub using @fa0c85a608d6ac95 {type IAzRoleDefinitions_841cb51e5d2d as IAzRoleDefinitions}
+
+pub using @fa0c85a608d6ac95 {type IAzRoles_63d2083953d8 as IAzRoles}
+
+pub using @fa0c85a608d6ac95 {type IAzScope_f149058eeb77 as IAzScope}
+
+pub using @fa0c85a608d6ac95 {type IAzScope2_f1a5c35283f3 as IAzScope2}
+
+pub using @fa0c85a608d6ac95 {type IAzScopes_078568bc1602 as IAzScopes}
+
+pub using @fa0c85a608d6ac95 {type IAzTask_f9633c17ffae as IAzTask}
+
+pub using @fa0c85a608d6ac95 {type IAzTask2_3ae290facdc2 as IAzTask2}
+
+pub using @fa0c85a608d6ac95 {type IAzTasks_f8c55adad852 as IAzTasks}
+
+pub using @fa0c85a608d6ac95 {type INHERITEDFROMA_5da05f0d132b as INHERITEDFROMA}
+
+pub using @fa0c85a608d6ac95 {type INHERITEDFROMW_6e14054b3641 as INHERITEDFROMW}
+
+pub using @fa0c85a608d6ac95 {type MULTIPLETRUSTEEOPERATION_30eeeadabfe1 as MULTIPLETRUSTEEOPERATION}
+
+pub using @fa0c85a608d6ac95 {type OBJECTSANDNAMEA_b44ad87a3cb6 as OBJECTSANDNAMEA}
+
+pub using @fa0c85a608d6ac95 {type OBJECTSANDNAMEW_7a145d45d59c as OBJECTSANDNAMEW}
+
+pub using @fa0c85a608d6ac95 {type OBJECTSANDSID_f2edb61f4353 as OBJECTSANDSID}
+
+pub using @fa0c85a608d6ac95 {type PFNAUTHZCOMPUTEDYNAMICGROUPS_ac814485d5b7 as PFNAUTHZCOMPUTEDYNAMICGROUPS}
+
+pub using @fa0c85a608d6ac95 {type PFNAUTHZDYNAMICACCESSCHECK_a26a837a3a1a as PFNAUTHZDYNAMICACCESSCHECK}
+
+pub using @fa0c85a608d6ac95 {type PFNAUTHZFREECENTRALACCESSPOLICY_3ad6824fe4e1 as PFNAUTHZFREECENTRALACCESSPOLICY}
+
+pub using @fa0c85a608d6ac95 {type PFNAUTHZFREEDYNAMICGROUPS_39efe087f395 as PFNAUTHZFREEDYNAMICGROUPS}
+
+pub using @fa0c85a608d6ac95 {type PFNAUTHZGETCENTRALACCESSPOLICY_eea5b149f6d0 as PFNAUTHZGETCENTRALACCESSPOLICY}
+
+pub using @fa0c85a608d6ac95 {type PROGINVOKESETTING_33d4bbd745bb as PROGINVOKESETTING}
+
+pub using @fa0c85a608d6ac95 {type SEOBJECTTYPE_14c983e07c36 as SEOBJECTTYPE}
+
+pub using @fa0c85a608d6ac95 {type TREESECINFO_d6c857374b9c as TREESECINFO}
+
+pub using @fa0c85a608d6ac95 {type TRUSTEEA_35f41139ba47 as TRUSTEEA}
+
+pub using @fa0c85a608d6ac95 {type TRUSTEEACCESSA_fc0eb125f33c as TRUSTEEACCESSA}
+
+pub using @fa0c85a608d6ac95 {type TRUSTEEACCESSW_6cd539fc4fe6 as TRUSTEEACCESSW}
+
+pub using @fa0c85a608d6ac95 {type TRUSTEEFORM_c8d6c199f83d as TRUSTEEFORM}
+
+pub using @fa0c85a608d6ac95 {type TRUSTEETYPE_ce72229cd894 as TRUSTEETYPE}
+
+pub using @fa0c85a608d6ac95 {type TRUSTEEW_23fbccc19a79 as TRUSTEEW}
+
+// Traits

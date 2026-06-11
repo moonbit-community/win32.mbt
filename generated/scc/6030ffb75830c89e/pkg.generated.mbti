@@ -1,0 +1,611 @@
+// Generated using `moon info`, DON'T EDIT IT
+package "moonbit-community/win32api/scc/6030ffb75830c89e"
+
+import {
+  "moonbit-community/win32api/runtime/core",
+  "moonbit-community/win32api/runtime/strings",
+  "moonbitlang/core/debug",
+}
+
+// Values
+pub fn call_enclave_1e195d8939e6(Int64, @core.RawAddress, Int, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn call_enclave_1e195d8939e6_raw(Int64, @core.RawAddress, Int, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn create_enclave_77a19e5a5d5c(@core.RawAddress, @core.RawAddress, UInt64, UInt64, UInt, @core.RawAddress, UInt, @core.RawAddress) -> @core.RawAddress raise @core.WindowsError
+
+pub fn create_enclave_77a19e5a5d5c_raw(@core.RawAddress, @core.RawAddress, UInt64, UInt64, UInt, @core.RawAddress, UInt, @core.RawAddress) -> @core.RawWin32Call[@core.RawAddress]
+
+pub fn create_environment_block_044c0395ac2a(@core.RawAddress, @core.RawAddress, Int) -> Bool raise @core.WindowsError
+
+pub fn create_environment_block_044c0395ac2a_raw(@core.RawAddress, @core.RawAddress, Int) -> @core.RawWin32Call[Int]
+
+pub fn delete_enclave_5fb8905fa560(@core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn delete_enclave_5fb8905fa560_raw(@core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn destroy_environment_block_17209ff63b72(@core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn destroy_environment_block_17209ff63b72_raw(@core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn enclave_copy_into_enclave_8e7707fb9b66(@core.RawAddress, @core.RawAddress, UInt64) -> Int raise @core.WindowsError
+
+pub fn enclave_copy_into_enclave_8e7707fb9b66_raw(@core.RawAddress, @core.RawAddress, UInt64) -> Int
+
+pub fn enclave_copy_out_of_enclave_b08077097671(@core.RawAddress, @core.RawAddress, UInt64) -> Int raise @core.WindowsError
+
+pub fn enclave_copy_out_of_enclave_b08077097671_raw(@core.RawAddress, @core.RawAddress, UInt64) -> Int
+
+pub fn enclave_encrypt_data_for_trustlet_7db82d327fc4(@core.RawAddress, UInt, TRUSTLETBINDINGDATA_bc97f6cfef68, @core.RawAddress, UInt, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn enclave_encrypt_data_for_trustlet_7db82d327fc4_raw(@core.RawAddress, UInt, @core.RawAddress, @core.RawAddress, UInt, @core.RawAddress) -> Int
+
+pub let enclave_flag_dynamic_debug_active_8460fcc020b5 : UInt
+
+pub let enclave_flag_dynamic_debug_enabled_7a170e852362 : UInt
+
+pub let enclave_flag_full_debug_enabled_1765db73db3e : UInt
+
+pub fn enclave_get_attestation_report_14209457221f(@core.RawAddress, @core.RawAddress, UInt, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn enclave_get_attestation_report_14209457221f_raw(@core.RawAddress, @core.RawAddress, UInt, @core.RawAddress) -> Int
+
+pub fn enclave_get_enclave_information_d164f02f05ee(UInt, ENCLAVEINFORMATION_90fa59a6d89f) -> Int raise @core.WindowsError
+
+pub fn enclave_get_enclave_information_d164f02f05ee_raw(UInt, @core.RawAddress) -> Int
+
+pub let enclave_identity_policy_seal_exact_code_4440ad160762 : Int
+
+pub let enclave_identity_policy_seal_invalid_023a2a5eb62e : Int
+
+pub let enclave_identity_policy_seal_same_author_a12fecbf4c51 : Int
+
+pub let enclave_identity_policy_seal_same_family_26af5209f6d5 : Int
+
+pub let enclave_identity_policy_seal_same_image_4870e2ac0f84 : Int
+
+pub let enclave_identity_policy_seal_same_primary_code_b9fe4aef07dc : Int
+
+pub let enclave_report_data_length_9cfcef307b9c : UInt
+
+pub fn enclave_restrict_containing_process_access_83fe08d2d50d(Int, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn enclave_restrict_containing_process_access_83fe08d2d50d_raw(Int, @core.RawAddress) -> Int
+
+pub let enclave_runtime_policy_allow_dynamic_debug_cf2a2ebbb58c : UInt
+
+pub let enclave_runtime_policy_allow_full_debug_d8ddaca34e71 : UInt
+
+pub fn enclave_seal_data_7785342a2dc8(@core.RawAddress, UInt, ENCLAVESEALINGIDENTITYPOLICY_a14e50723753, UInt, @core.RawAddress, UInt, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn enclave_seal_data_7785342a2dc8_raw(@core.RawAddress, UInt, Int, UInt, @core.RawAddress, UInt, @core.RawAddress) -> Int
+
+pub fn enclave_unseal_data_bce025de06f8(@core.RawAddress, UInt, @core.RawAddress, UInt, @core.RawAddress, ENCLAVEIDENTITY_23b30ad5815d?, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn enclave_unseal_data_bce025de06f8_raw(@core.RawAddress, UInt, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub let enclave_unseal_flag_stale_key_4c87f1d4de05 : UInt
+
+pub fn enclave_uses_attested_keys_40b0a80a50f6() -> Byte raise @core.WindowsError
+
+pub fn enclave_uses_attested_keys_40b0a80a50f6_raw() -> UInt
+
+pub let enclave_vbs_basic_key_flag_debug_key_9721e0d9bcb7 : UInt
+
+pub let enclave_vbs_basic_key_flag_family_id_3e2679c318fd : UInt
+
+pub let enclave_vbs_basic_key_flag_image_id_7a00e24f3c9e : UInt
+
+pub let enclave_vbs_basic_key_flag_measurement_458779cb918e : UInt
+
+pub fn enclave_verify_attestation_report_2ba6887b7469(UInt, @core.RawAddress, UInt) -> Int raise @core.WindowsError
+
+pub fn enclave_verify_attestation_report_2ba6887b7469_raw(UInt, @core.RawAddress, UInt) -> Int
+
+pub let enclaveidentity_23b30ad5815d_alignment : Int
+
+pub let enclaveidentity_23b30ad5815d_size : Int
+
+pub let enclaveinformation_90fa59a6d89f_alignment : Int
+
+pub let enclaveinformation_90fa59a6d89f_size : Int
+
+pub let enclavevbsbasickeyrequest_0f4805206127_alignment : Int
+
+pub let enclavevbsbasickeyrequest_0f4805206127_size : Int
+
+pub fn expand_environment_strings_a_9fff43d0abec(@strings.PStr, @core.RawAddress, UInt) -> UInt raise @core.WindowsError
+
+pub fn expand_environment_strings_a_9fff43d0abec_raw(@core.RawAddress, @core.RawAddress, UInt) -> @core.RawWin32Call[UInt]
+
+pub fn expand_environment_strings_for_user_a_dfbd1b747e23(@core.RawAddress, @strings.PStr, @core.RawAddress, UInt) -> Bool raise @core.WindowsError
+
+pub fn expand_environment_strings_for_user_a_dfbd1b747e23_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, UInt) -> @core.RawWin32Call[Int]
+
+pub fn expand_environment_strings_for_user_w_a3f546c9e937(@core.RawAddress, @strings.PWStr, @strings.PWStrBuffer) -> Bool raise @core.WindowsError
+
+pub fn expand_environment_strings_for_user_w_a3f546c9e937_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, UInt) -> @core.RawWin32Call[Int]
+
+pub fn expand_environment_strings_w_ef5858c7546a(@strings.PWStr, @strings.PWStrBuffer?) -> UInt raise @core.WindowsError
+
+pub fn expand_environment_strings_w_ef5858c7546a_raw(@core.RawAddress, @core.RawAddress, UInt) -> @core.RawWin32Call[UInt]
+
+pub fn free_environment_strings_a_1160e2350eaa(@core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn free_environment_strings_a_1160e2350eaa_raw(@core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn free_environment_strings_w_3ac948026471(@core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn free_environment_strings_w_3ac948026471_raw(@core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn get_command_line_a_16a67d7286a3() -> @core.RawAddress raise @core.WindowsError
+
+pub fn get_command_line_a_16a67d7286a3_raw() -> @core.RawAddress
+
+pub fn get_command_line_w_8fd9c75b8788() -> @core.RawAddress raise @core.WindowsError
+
+pub fn get_command_line_w_8fd9c75b8788_raw() -> @core.RawAddress
+
+pub fn get_current_directory_a_cb95d37a71a9(UInt, @core.RawAddress) -> UInt raise @core.WindowsError
+
+pub fn get_current_directory_a_cb95d37a71a9_raw(UInt, @core.RawAddress) -> UInt
+
+pub fn get_current_directory_w_7a6673c64b23(@strings.PWStrBuffer?) -> UInt raise @core.WindowsError
+
+pub fn get_current_directory_w_7a6673c64b23_raw(UInt, @core.RawAddress) -> UInt
+
+pub fn get_environment_strings_7d0bf1f4a0ff() -> @core.RawAddress raise @core.WindowsError
+
+pub fn get_environment_strings_7d0bf1f4a0ff_raw() -> @core.RawAddress
+
+pub fn get_environment_strings_w_0bc85f36f0d4() -> @core.RawAddress raise @core.WindowsError
+
+pub fn get_environment_strings_w_0bc85f36f0d4_raw() -> @core.RawAddress
+
+pub fn get_environment_variable_a_193df4b8d552(@strings.PStr?, @core.RawAddress, UInt) -> UInt raise @core.WindowsError
+
+pub fn get_environment_variable_a_193df4b8d552_raw(@core.RawAddress, @core.RawAddress, UInt) -> @core.RawWin32Call[UInt]
+
+pub fn get_environment_variable_w_eff8da03498e(@strings.PWStr?, @strings.PWStrBuffer?) -> UInt raise @core.WindowsError
+
+pub fn get_environment_variable_w_eff8da03498e_raw(@core.RawAddress, @core.RawAddress, UInt) -> @core.RawWin32Call[UInt]
+
+pub fn initialize_enclave_52cfa6c8bbf3(@core.RawAddress, @core.RawAddress, @core.RawAddress, UInt, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn initialize_enclave_52cfa6c8bbf3_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, UInt, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn is_enclave_type_supported_ea25f879c537(UInt) -> Bool raise @core.WindowsError
+
+pub fn is_enclave_type_supported_ea25f879c537_raw(UInt) -> @core.RawWin32Call[Int]
+
+pub fn load_enclave_data_4217532c3d3f(@core.RawAddress, @core.RawAddress, @core.RawAddress, UInt64, UInt, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn load_enclave_data_4217532c3d3f_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, UInt64, UInt, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn load_enclave_image_a_3424548e179a(@core.RawAddress, @strings.PStr) -> Bool raise @core.WindowsError
+
+pub fn load_enclave_image_a_3424548e179a_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn load_enclave_image_w_9dd2849cbab5(@core.RawAddress, @strings.PWStr) -> Bool raise @core.WindowsError
+
+pub fn load_enclave_image_w_9dd2849cbab5_raw(@core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn need_current_directory_for_exe_path_a_08733ff9a181(@strings.PStr) -> Bool raise @core.WindowsError
+
+pub fn need_current_directory_for_exe_path_a_08733ff9a181_raw(@core.RawAddress) -> Int
+
+pub fn need_current_directory_for_exe_path_w_ae9be8d94e88(@strings.PWStr) -> Bool raise @core.WindowsError
+
+pub fn need_current_directory_for_exe_path_w_ae9be8d94e88_raw(@core.RawAddress) -> Int
+
+pub let pstrustlettksessionid_6ff0e076f994_alignment : Int
+
+pub let pstrustlettksessionid_6ff0e076f994_size : Int
+
+pub fn set_current_directory_a_c03472d1b16f(@strings.PStr) -> Bool raise @core.WindowsError
+
+pub fn set_current_directory_a_c03472d1b16f_raw(@core.RawAddress) -> Int
+
+pub fn set_current_directory_w_ff3037110fd8(@strings.PWStr) -> Bool raise @core.WindowsError
+
+pub fn set_current_directory_w_ff3037110fd8_raw(@core.RawAddress) -> Int
+
+pub fn set_environment_strings_w_830a28e8d9ce(@core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn set_environment_strings_w_830a28e8d9ce_raw(@core.RawAddress) -> Int
+
+pub fn set_environment_variable_a_c0aae8472d83(@strings.PStr, @strings.PStr?) -> Bool raise @core.WindowsError
+
+pub fn set_environment_variable_a_c0aae8472d83_raw(@core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn set_environment_variable_w_fd86c7fb5b31(@strings.PWStr, @strings.PWStr?) -> Bool raise @core.WindowsError
+
+pub fn set_environment_variable_w_fd86c7fb5b31_raw(@core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn terminate_enclave_a86882850acc(@core.RawAddress, Int) -> Bool raise @core.WindowsError
+
+pub fn terminate_enclave_a86882850acc_raw(@core.RawAddress, Int) -> @core.RawWin32Call[Int]
+
+pub let trustletbindingdata_bc97f6cfef68_alignment : Int
+
+pub let trustletbindingdata_bc97f6cfef68_size : Int
+
+pub let vbs_enclave_report_pkg_header_version_current_e27ff6f995c8 : UInt
+
+pub let vbs_enclave_report_signature_scheme_sha256_rsa_pss_sha256_154cbe13584a : UInt
+
+pub let vbs_enclave_report_version_current_2d78454801bd : UInt
+
+pub let vbs_enclave_vardata_invalid_6320f131be37 : UInt
+
+pub let vbs_enclave_vardata_module_46c0f19ae10b : UInt
+
+pub let vbsbasicenclaveexceptionamd64_ef350dcf00f9_alignment : Int
+
+pub let vbsbasicenclaveexceptionamd64_ef350dcf00f9_size : Int
+
+pub let vbsbasicenclavesyscallpage_ca7c6108ef99_alignment : Int
+
+pub let vbsbasicenclavesyscallpage_ca7c6108ef99_size : Int
+
+pub let vbsbasicenclavethreaddescriptor32_925d0548cdd2_alignment : Int
+
+pub let vbsbasicenclavethreaddescriptor32_925d0548cdd2_size : Int
+
+pub let vbsbasicenclavethreaddescriptor64_f193a06a5d89_alignment : Int
+
+pub let vbsbasicenclavethreaddescriptor64_f193a06a5d89_size : Int
+
+pub let vbsenclavereport_e5f3cacc6460_alignment : Int
+
+pub let vbsenclavereport_e5f3cacc6460_size : Int
+
+pub let vbsenclavereportmodule_339b7227a7f4_alignment : Int
+
+pub let vbsenclavereportmodule_339b7227a7f4_size : Int
+
+pub let vbsenclavereportpkgheader_e6565cda8961_alignment : Int
+
+pub let vbsenclavereportpkgheader_e6565cda8961_size : Int
+
+pub let vbsenclavereportvardataheader_8e5b340aa54d_alignment : Int
+
+pub let vbsenclavereportvardataheader_8e5b340aa54d_size : Int
+
+// Errors
+
+// Types and methods
+pub(all) struct ENCLAVEIDENTITY_23b30ad5815d {
+  raw_buffer : @core.NativeBuffer
+}
+pub fn ENCLAVEIDENTITY_23b30ad5815d::abi_alignment() -> Int
+pub fn ENCLAVEIDENTITY_23b30ad5815d::abi_size() -> Int
+pub fn ENCLAVEIDENTITY_23b30ad5815d::bytes(Self) -> Bytes raise @core.WindowsError
+pub fn ENCLAVEIDENTITY_23b30ad5815d::enclave_svn(Self) -> UInt raise @core.WindowsError
+pub fn ENCLAVEIDENTITY_23b30ad5815d::enclave_type(Self) -> UInt raise @core.WindowsError
+pub fn ENCLAVEIDENTITY_23b30ad5815d::flags(Self) -> UInt raise @core.WindowsError
+pub fn ENCLAVEIDENTITY_23b30ad5815d::from_bytes(Bytes) -> Self raise @core.WindowsError
+pub fn ENCLAVEIDENTITY_23b30ad5815d::new() -> Self raise @core.WindowsError
+pub fn ENCLAVEIDENTITY_23b30ad5815d::platform_svn(Self) -> UInt raise @core.WindowsError
+pub fn ENCLAVEIDENTITY_23b30ad5815d::raw_address(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn ENCLAVEIDENTITY_23b30ad5815d::secure_kernel_svn(Self) -> UInt raise @core.WindowsError
+pub fn ENCLAVEIDENTITY_23b30ad5815d::set_enclave_svn(Self, UInt) -> Unit raise @core.WindowsError
+pub fn ENCLAVEIDENTITY_23b30ad5815d::set_enclave_type(Self, UInt) -> Unit raise @core.WindowsError
+pub fn ENCLAVEIDENTITY_23b30ad5815d::set_flags(Self, UInt) -> Unit raise @core.WindowsError
+pub fn ENCLAVEIDENTITY_23b30ad5815d::set_platform_svn(Self, UInt) -> Unit raise @core.WindowsError
+pub fn ENCLAVEIDENTITY_23b30ad5815d::set_secure_kernel_svn(Self, UInt) -> Unit raise @core.WindowsError
+pub fn ENCLAVEIDENTITY_23b30ad5815d::set_signing_level(Self, UInt) -> Unit raise @core.WindowsError
+pub fn ENCLAVEIDENTITY_23b30ad5815d::signing_level(Self) -> UInt raise @core.WindowsError
+pub fn[T] ENCLAVEIDENTITY_23b30ad5815d::with_raw_address(Self, (@core.RawAddress) -> T raise?) -> T raise
+pub impl Eq for ENCLAVEIDENTITY_23b30ad5815d
+pub impl @debug.Debug for ENCLAVEIDENTITY_23b30ad5815d
+
+pub(all) struct ENCLAVEINFORMATION_90fa59a6d89f {
+  raw_buffer : @core.NativeBuffer
+}
+pub fn ENCLAVEINFORMATION_90fa59a6d89f::abi_alignment() -> Int
+pub fn ENCLAVEINFORMATION_90fa59a6d89f::abi_size() -> Int
+pub fn ENCLAVEINFORMATION_90fa59a6d89f::base_address_raw(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn ENCLAVEINFORMATION_90fa59a6d89f::bytes(Self) -> Bytes raise @core.WindowsError
+pub fn ENCLAVEINFORMATION_90fa59a6d89f::enclave_type(Self) -> UInt raise @core.WindowsError
+pub fn ENCLAVEINFORMATION_90fa59a6d89f::from_bytes(Bytes) -> Self raise @core.WindowsError
+pub fn ENCLAVEINFORMATION_90fa59a6d89f::identity(Self) -> ENCLAVEIDENTITY_23b30ad5815d raise @core.WindowsError
+pub fn ENCLAVEINFORMATION_90fa59a6d89f::new() -> Self raise @core.WindowsError
+pub fn ENCLAVEINFORMATION_90fa59a6d89f::raw_address(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn ENCLAVEINFORMATION_90fa59a6d89f::reserved(Self) -> UInt raise @core.WindowsError
+pub fn ENCLAVEINFORMATION_90fa59a6d89f::set_base_address_raw(Self, @core.RawAddress) -> Unit raise @core.WindowsError
+pub fn ENCLAVEINFORMATION_90fa59a6d89f::set_enclave_type(Self, UInt) -> Unit raise @core.WindowsError
+pub fn ENCLAVEINFORMATION_90fa59a6d89f::set_identity(Self, ENCLAVEIDENTITY_23b30ad5815d) -> Unit raise @core.WindowsError
+pub fn ENCLAVEINFORMATION_90fa59a6d89f::set_reserved(Self, UInt) -> Unit raise @core.WindowsError
+pub fn ENCLAVEINFORMATION_90fa59a6d89f::set_size(Self, UInt64) -> Unit raise @core.WindowsError
+pub fn ENCLAVEINFORMATION_90fa59a6d89f::size(Self) -> UInt64 raise @core.WindowsError
+pub fn[T] ENCLAVEINFORMATION_90fa59a6d89f::with_raw_address(Self, (@core.RawAddress) -> T raise?) -> T raise
+pub impl Eq for ENCLAVEINFORMATION_90fa59a6d89f
+pub impl @debug.Debug for ENCLAVEINFORMATION_90fa59a6d89f
+
+pub(all) struct ENCLAVESEALINGIDENTITYPOLICY_a14e50723753(Int) derive(Compare, Eq, @debug.Debug)
+pub fn ENCLAVESEALINGIDENTITYPOLICY_a14e50723753::enclave_identity_policy_seal_exact_code() -> Self
+pub fn ENCLAVESEALINGIDENTITYPOLICY_a14e50723753::enclave_identity_policy_seal_invalid() -> Self
+pub fn ENCLAVESEALINGIDENTITYPOLICY_a14e50723753::enclave_identity_policy_seal_same_author() -> Self
+pub fn ENCLAVESEALINGIDENTITYPOLICY_a14e50723753::enclave_identity_policy_seal_same_family() -> Self
+pub fn ENCLAVESEALINGIDENTITYPOLICY_a14e50723753::enclave_identity_policy_seal_same_image() -> Self
+pub fn ENCLAVESEALINGIDENTITYPOLICY_a14e50723753::enclave_identity_policy_seal_same_primary_code() -> Self
+pub fn ENCLAVESEALINGIDENTITYPOLICY_a14e50723753::from_int(Int) -> Self
+pub fn ENCLAVESEALINGIDENTITYPOLICY_a14e50723753::to_int(Self) -> Int
+
+pub(all) struct ENCLAVEVBSBASICKEYREQUEST_0f4805206127 {
+  raw_buffer : @core.NativeBuffer
+}
+pub fn ENCLAVEVBSBASICKEYREQUEST_0f4805206127::abi_alignment() -> Int
+pub fn ENCLAVEVBSBASICKEYREQUEST_0f4805206127::abi_size() -> Int
+pub fn ENCLAVEVBSBASICKEYREQUEST_0f4805206127::bytes(Self) -> Bytes raise @core.WindowsError
+pub fn ENCLAVEVBSBASICKEYREQUEST_0f4805206127::current_system_key_id(Self) -> UInt raise @core.WindowsError
+pub fn ENCLAVEVBSBASICKEYREQUEST_0f4805206127::enclave_svn(Self) -> UInt raise @core.WindowsError
+pub fn ENCLAVEVBSBASICKEYREQUEST_0f4805206127::flags(Self) -> UInt raise @core.WindowsError
+pub fn ENCLAVEVBSBASICKEYREQUEST_0f4805206127::from_bytes(Bytes) -> Self raise @core.WindowsError
+pub fn ENCLAVEVBSBASICKEYREQUEST_0f4805206127::new() -> Self raise @core.WindowsError
+pub fn ENCLAVEVBSBASICKEYREQUEST_0f4805206127::raw_address(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn ENCLAVEVBSBASICKEYREQUEST_0f4805206127::request_size(Self) -> UInt raise @core.WindowsError
+pub fn ENCLAVEVBSBASICKEYREQUEST_0f4805206127::set_current_system_key_id(Self, UInt) -> Unit raise @core.WindowsError
+pub fn ENCLAVEVBSBASICKEYREQUEST_0f4805206127::set_enclave_svn(Self, UInt) -> Unit raise @core.WindowsError
+pub fn ENCLAVEVBSBASICKEYREQUEST_0f4805206127::set_flags(Self, UInt) -> Unit raise @core.WindowsError
+pub fn ENCLAVEVBSBASICKEYREQUEST_0f4805206127::set_request_size(Self, UInt) -> Unit raise @core.WindowsError
+pub fn ENCLAVEVBSBASICKEYREQUEST_0f4805206127::set_system_key_id(Self, UInt) -> Unit raise @core.WindowsError
+pub fn ENCLAVEVBSBASICKEYREQUEST_0f4805206127::system_key_id(Self) -> UInt raise @core.WindowsError
+pub fn[T] ENCLAVEVBSBASICKEYREQUEST_0f4805206127::with_raw_address(Self, (@core.RawAddress) -> T raise?) -> T raise
+pub impl Eq for ENCLAVEVBSBASICKEYREQUEST_0f4805206127
+pub impl @debug.Debug for ENCLAVEVBSBASICKEYREQUEST_0f4805206127
+
+pub(all) struct PSTRUSTLETTKSESSIONID_6ff0e076f994 {
+  raw_buffer : @core.NativeBuffer
+}
+pub fn PSTRUSTLETTKSESSIONID_6ff0e076f994::abi_alignment() -> Int
+pub fn PSTRUSTLETTKSESSIONID_6ff0e076f994::abi_size() -> Int
+pub fn PSTRUSTLETTKSESSIONID_6ff0e076f994::bytes(Self) -> Bytes raise @core.WindowsError
+pub fn PSTRUSTLETTKSESSIONID_6ff0e076f994::from_bytes(Bytes) -> Self raise @core.WindowsError
+pub fn PSTRUSTLETTKSESSIONID_6ff0e076f994::new() -> Self raise @core.WindowsError
+pub fn PSTRUSTLETTKSESSIONID_6ff0e076f994::raw_address(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn[T] PSTRUSTLETTKSESSIONID_6ff0e076f994::with_raw_address(Self, (@core.RawAddress) -> T raise?) -> T raise
+pub impl Eq for PSTRUSTLETTKSESSIONID_6ff0e076f994
+pub impl @debug.Debug for PSTRUSTLETTKSESSIONID_6ff0e076f994
+
+pub(all) struct TRUSTLETBINDINGDATA_bc97f6cfef68 {
+  raw_buffer : @core.NativeBuffer
+}
+pub fn TRUSTLETBINDINGDATA_bc97f6cfef68::abi_alignment() -> Int
+pub fn TRUSTLETBINDINGDATA_bc97f6cfef68::abi_size() -> Int
+pub fn TRUSTLETBINDINGDATA_bc97f6cfef68::bytes(Self) -> Bytes raise @core.WindowsError
+pub fn TRUSTLETBINDINGDATA_bc97f6cfef68::from_bytes(Bytes) -> Self raise @core.WindowsError
+pub fn TRUSTLETBINDINGDATA_bc97f6cfef68::new() -> Self raise @core.WindowsError
+pub fn TRUSTLETBINDINGDATA_bc97f6cfef68::raw_address(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn TRUSTLETBINDINGDATA_bc97f6cfef68::reserved1(Self) -> UInt raise @core.WindowsError
+pub fn TRUSTLETBINDINGDATA_bc97f6cfef68::reserved2(Self) -> UInt64 raise @core.WindowsError
+pub fn TRUSTLETBINDINGDATA_bc97f6cfef68::set_reserved1(Self, UInt) -> Unit raise @core.WindowsError
+pub fn TRUSTLETBINDINGDATA_bc97f6cfef68::set_reserved2(Self, UInt64) -> Unit raise @core.WindowsError
+pub fn TRUSTLETBINDINGDATA_bc97f6cfef68::set_trustlet_identity(Self, UInt64) -> Unit raise @core.WindowsError
+pub fn TRUSTLETBINDINGDATA_bc97f6cfef68::set_trustlet_svn(Self, UInt) -> Unit raise @core.WindowsError
+pub fn TRUSTLETBINDINGDATA_bc97f6cfef68::trustlet_identity(Self) -> UInt64 raise @core.WindowsError
+pub fn TRUSTLETBINDINGDATA_bc97f6cfef68::trustlet_svn(Self) -> UInt raise @core.WindowsError
+pub fn[T] TRUSTLETBINDINGDATA_bc97f6cfef68::with_raw_address(Self, (@core.RawAddress) -> T raise?) -> T raise
+pub impl Eq for TRUSTLETBINDINGDATA_bc97f6cfef68
+pub impl @debug.Debug for TRUSTLETBINDINGDATA_bc97f6cfef68
+
+pub type VBSBASICENCLAVEBASICCALLCOMMITPAGES_2f0f645a7bf2
+
+pub type VBSBASICENCLAVEBASICCALLCREATETHREAD_863eb189f7cc
+
+pub type VBSBASICENCLAVEBASICCALLDECOMMITPAGES_2502fe3f7ef7
+
+pub type VBSBASICENCLAVEBASICCALLGENERATEKEY_13e3cae5d6f9
+
+pub type VBSBASICENCLAVEBASICCALLGENERATERANDOMDATA_0e09cb1e1b46
+
+pub type VBSBASICENCLAVEBASICCALLGENERATEREPORT_a124096a04ed
+
+pub type VBSBASICENCLAVEBASICCALLGETENCLAVEINFORMATION_cd623d2071a9
+
+pub type VBSBASICENCLAVEBASICCALLINTERRUPTTHREAD_7b83f6e2113f
+
+pub type VBSBASICENCLAVEBASICCALLPROTECTPAGES_fdd2ee1458a7
+
+pub type VBSBASICENCLAVEBASICCALLRETURNFROMENCLAVE_6e4082d7f3ca
+
+pub type VBSBASICENCLAVEBASICCALLRETURNFROMEXCEPTION_46bbab2c0e29
+
+pub type VBSBASICENCLAVEBASICCALLTERMINATETHREAD_e886386066cb
+
+pub type VBSBASICENCLAVEBASICCALLVERIFYREPORT_4050f2029381
+
+pub(all) struct VBSBASICENCLAVEEXCEPTIONAMD64_ef350dcf00f9 {
+  raw_buffer : @core.NativeBuffer
+}
+pub fn VBSBASICENCLAVEEXCEPTIONAMD64_ef350dcf00f9::abi_alignment() -> Int
+pub fn VBSBASICENCLAVEEXCEPTIONAMD64_ef350dcf00f9::abi_size() -> Int
+pub fn VBSBASICENCLAVEEXCEPTIONAMD64_ef350dcf00f9::bytes(Self) -> Bytes raise @core.WindowsError
+pub fn VBSBASICENCLAVEEXCEPTIONAMD64_ef350dcf00f9::exception_code(Self) -> UInt raise @core.WindowsError
+pub fn VBSBASICENCLAVEEXCEPTIONAMD64_ef350dcf00f9::exception_rax(Self) -> UInt64 raise @core.WindowsError
+pub fn VBSBASICENCLAVEEXCEPTIONAMD64_ef350dcf00f9::exception_rcx(Self) -> UInt64 raise @core.WindowsError
+pub fn VBSBASICENCLAVEEXCEPTIONAMD64_ef350dcf00f9::exception_rflags(Self) -> UInt64 raise @core.WindowsError
+pub fn VBSBASICENCLAVEEXCEPTIONAMD64_ef350dcf00f9::exception_rip(Self) -> UInt64 raise @core.WindowsError
+pub fn VBSBASICENCLAVEEXCEPTIONAMD64_ef350dcf00f9::exception_rsp(Self) -> UInt64 raise @core.WindowsError
+pub fn VBSBASICENCLAVEEXCEPTIONAMD64_ef350dcf00f9::from_bytes(Bytes) -> Self raise @core.WindowsError
+pub fn VBSBASICENCLAVEEXCEPTIONAMD64_ef350dcf00f9::new() -> Self raise @core.WindowsError
+pub fn VBSBASICENCLAVEEXCEPTIONAMD64_ef350dcf00f9::number_parameters(Self) -> UInt raise @core.WindowsError
+pub fn VBSBASICENCLAVEEXCEPTIONAMD64_ef350dcf00f9::raw_address(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn VBSBASICENCLAVEEXCEPTIONAMD64_ef350dcf00f9::set_exception_code(Self, UInt) -> Unit raise @core.WindowsError
+pub fn VBSBASICENCLAVEEXCEPTIONAMD64_ef350dcf00f9::set_exception_rax(Self, UInt64) -> Unit raise @core.WindowsError
+pub fn VBSBASICENCLAVEEXCEPTIONAMD64_ef350dcf00f9::set_exception_rcx(Self, UInt64) -> Unit raise @core.WindowsError
+pub fn VBSBASICENCLAVEEXCEPTIONAMD64_ef350dcf00f9::set_exception_rflags(Self, UInt64) -> Unit raise @core.WindowsError
+pub fn VBSBASICENCLAVEEXCEPTIONAMD64_ef350dcf00f9::set_exception_rip(Self, UInt64) -> Unit raise @core.WindowsError
+pub fn VBSBASICENCLAVEEXCEPTIONAMD64_ef350dcf00f9::set_exception_rsp(Self, UInt64) -> Unit raise @core.WindowsError
+pub fn VBSBASICENCLAVEEXCEPTIONAMD64_ef350dcf00f9::set_number_parameters(Self, UInt) -> Unit raise @core.WindowsError
+pub fn[T] VBSBASICENCLAVEEXCEPTIONAMD64_ef350dcf00f9::with_raw_address(Self, (@core.RawAddress) -> T raise?) -> T raise
+pub impl Eq for VBSBASICENCLAVEEXCEPTIONAMD64_ef350dcf00f9
+pub impl @debug.Debug for VBSBASICENCLAVEEXCEPTIONAMD64_ef350dcf00f9
+
+pub(all) struct VBSBASICENCLAVESYSCALLPAGE_ca7c6108ef99 {
+  raw_buffer : @core.NativeBuffer
+}
+pub fn VBSBASICENCLAVESYSCALLPAGE_ca7c6108ef99::abi_alignment() -> Int
+pub fn VBSBASICENCLAVESYSCALLPAGE_ca7c6108ef99::abi_size() -> Int
+pub fn VBSBASICENCLAVESYSCALLPAGE_ca7c6108ef99::bytes(Self) -> Bytes raise @core.WindowsError
+pub fn VBSBASICENCLAVESYSCALLPAGE_ca7c6108ef99::commit_pages_raw(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn VBSBASICENCLAVESYSCALLPAGE_ca7c6108ef99::create_thread_raw(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn VBSBASICENCLAVESYSCALLPAGE_ca7c6108ef99::decommit_pages_raw(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn VBSBASICENCLAVESYSCALLPAGE_ca7c6108ef99::from_bytes(Bytes) -> Self raise @core.WindowsError
+pub fn VBSBASICENCLAVESYSCALLPAGE_ca7c6108ef99::generate_key_raw(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn VBSBASICENCLAVESYSCALLPAGE_ca7c6108ef99::generate_random_data_raw(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn VBSBASICENCLAVESYSCALLPAGE_ca7c6108ef99::generate_report_raw(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn VBSBASICENCLAVESYSCALLPAGE_ca7c6108ef99::get_enclave_information_raw(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn VBSBASICENCLAVESYSCALLPAGE_ca7c6108ef99::interrupt_thread_raw(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn VBSBASICENCLAVESYSCALLPAGE_ca7c6108ef99::new() -> Self raise @core.WindowsError
+pub fn VBSBASICENCLAVESYSCALLPAGE_ca7c6108ef99::protect_pages_raw(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn VBSBASICENCLAVESYSCALLPAGE_ca7c6108ef99::raw_address(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn VBSBASICENCLAVESYSCALLPAGE_ca7c6108ef99::return_from_enclave_raw(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn VBSBASICENCLAVESYSCALLPAGE_ca7c6108ef99::return_from_exception_raw(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn VBSBASICENCLAVESYSCALLPAGE_ca7c6108ef99::set_commit_pages_raw(Self, @core.RawAddress) -> Unit raise @core.WindowsError
+pub fn VBSBASICENCLAVESYSCALLPAGE_ca7c6108ef99::set_create_thread_raw(Self, @core.RawAddress) -> Unit raise @core.WindowsError
+pub fn VBSBASICENCLAVESYSCALLPAGE_ca7c6108ef99::set_decommit_pages_raw(Self, @core.RawAddress) -> Unit raise @core.WindowsError
+pub fn VBSBASICENCLAVESYSCALLPAGE_ca7c6108ef99::set_generate_key_raw(Self, @core.RawAddress) -> Unit raise @core.WindowsError
+pub fn VBSBASICENCLAVESYSCALLPAGE_ca7c6108ef99::set_generate_random_data_raw(Self, @core.RawAddress) -> Unit raise @core.WindowsError
+pub fn VBSBASICENCLAVESYSCALLPAGE_ca7c6108ef99::set_generate_report_raw(Self, @core.RawAddress) -> Unit raise @core.WindowsError
+pub fn VBSBASICENCLAVESYSCALLPAGE_ca7c6108ef99::set_get_enclave_information_raw(Self, @core.RawAddress) -> Unit raise @core.WindowsError
+pub fn VBSBASICENCLAVESYSCALLPAGE_ca7c6108ef99::set_interrupt_thread_raw(Self, @core.RawAddress) -> Unit raise @core.WindowsError
+pub fn VBSBASICENCLAVESYSCALLPAGE_ca7c6108ef99::set_protect_pages_raw(Self, @core.RawAddress) -> Unit raise @core.WindowsError
+pub fn VBSBASICENCLAVESYSCALLPAGE_ca7c6108ef99::set_return_from_enclave_raw(Self, @core.RawAddress) -> Unit raise @core.WindowsError
+pub fn VBSBASICENCLAVESYSCALLPAGE_ca7c6108ef99::set_return_from_exception_raw(Self, @core.RawAddress) -> Unit raise @core.WindowsError
+pub fn VBSBASICENCLAVESYSCALLPAGE_ca7c6108ef99::set_terminate_thread_raw(Self, @core.RawAddress) -> Unit raise @core.WindowsError
+pub fn VBSBASICENCLAVESYSCALLPAGE_ca7c6108ef99::set_verify_report_raw(Self, @core.RawAddress) -> Unit raise @core.WindowsError
+pub fn VBSBASICENCLAVESYSCALLPAGE_ca7c6108ef99::terminate_thread_raw(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn VBSBASICENCLAVESYSCALLPAGE_ca7c6108ef99::verify_report_raw(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn[T] VBSBASICENCLAVESYSCALLPAGE_ca7c6108ef99::with_raw_address(Self, (@core.RawAddress) -> T raise?) -> T raise
+pub impl Eq for VBSBASICENCLAVESYSCALLPAGE_ca7c6108ef99
+pub impl @debug.Debug for VBSBASICENCLAVESYSCALLPAGE_ca7c6108ef99
+
+pub(all) struct VBSBASICENCLAVETHREADDESCRIPTOR32_925d0548cdd2 {
+  raw_buffer : @core.NativeBuffer
+}
+pub fn VBSBASICENCLAVETHREADDESCRIPTOR32_925d0548cdd2::abi_alignment() -> Int
+pub fn VBSBASICENCLAVETHREADDESCRIPTOR32_925d0548cdd2::abi_size() -> Int
+pub fn VBSBASICENCLAVETHREADDESCRIPTOR32_925d0548cdd2::bytes(Self) -> Bytes raise @core.WindowsError
+pub fn VBSBASICENCLAVETHREADDESCRIPTOR32_925d0548cdd2::entry_point(Self) -> UInt raise @core.WindowsError
+pub fn VBSBASICENCLAVETHREADDESCRIPTOR32_925d0548cdd2::exception_active(Self) -> UInt raise @core.WindowsError
+pub fn VBSBASICENCLAVETHREADDESCRIPTOR32_925d0548cdd2::exception_entry_point(Self) -> UInt raise @core.WindowsError
+pub fn VBSBASICENCLAVETHREADDESCRIPTOR32_925d0548cdd2::exception_stack(Self) -> UInt raise @core.WindowsError
+pub fn VBSBASICENCLAVETHREADDESCRIPTOR32_925d0548cdd2::from_bytes(Bytes) -> Self raise @core.WindowsError
+pub fn VBSBASICENCLAVETHREADDESCRIPTOR32_925d0548cdd2::new() -> Self raise @core.WindowsError
+pub fn VBSBASICENCLAVETHREADDESCRIPTOR32_925d0548cdd2::raw_address(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn VBSBASICENCLAVETHREADDESCRIPTOR32_925d0548cdd2::set_entry_point(Self, UInt) -> Unit raise @core.WindowsError
+pub fn VBSBASICENCLAVETHREADDESCRIPTOR32_925d0548cdd2::set_exception_active(Self, UInt) -> Unit raise @core.WindowsError
+pub fn VBSBASICENCLAVETHREADDESCRIPTOR32_925d0548cdd2::set_exception_entry_point(Self, UInt) -> Unit raise @core.WindowsError
+pub fn VBSBASICENCLAVETHREADDESCRIPTOR32_925d0548cdd2::set_exception_stack(Self, UInt) -> Unit raise @core.WindowsError
+pub fn VBSBASICENCLAVETHREADDESCRIPTOR32_925d0548cdd2::set_stack_pointer(Self, UInt) -> Unit raise @core.WindowsError
+pub fn VBSBASICENCLAVETHREADDESCRIPTOR32_925d0548cdd2::stack_pointer(Self) -> UInt raise @core.WindowsError
+pub fn[T] VBSBASICENCLAVETHREADDESCRIPTOR32_925d0548cdd2::with_raw_address(Self, (@core.RawAddress) -> T raise?) -> T raise
+pub impl Eq for VBSBASICENCLAVETHREADDESCRIPTOR32_925d0548cdd2
+pub impl @debug.Debug for VBSBASICENCLAVETHREADDESCRIPTOR32_925d0548cdd2
+
+pub(all) struct VBSBASICENCLAVETHREADDESCRIPTOR64_f193a06a5d89 {
+  raw_buffer : @core.NativeBuffer
+}
+pub fn VBSBASICENCLAVETHREADDESCRIPTOR64_f193a06a5d89::abi_alignment() -> Int
+pub fn VBSBASICENCLAVETHREADDESCRIPTOR64_f193a06a5d89::abi_size() -> Int
+pub fn VBSBASICENCLAVETHREADDESCRIPTOR64_f193a06a5d89::bytes(Self) -> Bytes raise @core.WindowsError
+pub fn VBSBASICENCLAVETHREADDESCRIPTOR64_f193a06a5d89::entry_point(Self) -> UInt64 raise @core.WindowsError
+pub fn VBSBASICENCLAVETHREADDESCRIPTOR64_f193a06a5d89::exception_active(Self) -> UInt raise @core.WindowsError
+pub fn VBSBASICENCLAVETHREADDESCRIPTOR64_f193a06a5d89::exception_entry_point(Self) -> UInt64 raise @core.WindowsError
+pub fn VBSBASICENCLAVETHREADDESCRIPTOR64_f193a06a5d89::exception_stack(Self) -> UInt64 raise @core.WindowsError
+pub fn VBSBASICENCLAVETHREADDESCRIPTOR64_f193a06a5d89::from_bytes(Bytes) -> Self raise @core.WindowsError
+pub fn VBSBASICENCLAVETHREADDESCRIPTOR64_f193a06a5d89::new() -> Self raise @core.WindowsError
+pub fn VBSBASICENCLAVETHREADDESCRIPTOR64_f193a06a5d89::raw_address(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn VBSBASICENCLAVETHREADDESCRIPTOR64_f193a06a5d89::set_entry_point(Self, UInt64) -> Unit raise @core.WindowsError
+pub fn VBSBASICENCLAVETHREADDESCRIPTOR64_f193a06a5d89::set_exception_active(Self, UInt) -> Unit raise @core.WindowsError
+pub fn VBSBASICENCLAVETHREADDESCRIPTOR64_f193a06a5d89::set_exception_entry_point(Self, UInt64) -> Unit raise @core.WindowsError
+pub fn VBSBASICENCLAVETHREADDESCRIPTOR64_f193a06a5d89::set_exception_stack(Self, UInt64) -> Unit raise @core.WindowsError
+pub fn VBSBASICENCLAVETHREADDESCRIPTOR64_f193a06a5d89::set_stack_pointer(Self, UInt64) -> Unit raise @core.WindowsError
+pub fn VBSBASICENCLAVETHREADDESCRIPTOR64_f193a06a5d89::stack_pointer(Self) -> UInt64 raise @core.WindowsError
+pub fn[T] VBSBASICENCLAVETHREADDESCRIPTOR64_f193a06a5d89::with_raw_address(Self, (@core.RawAddress) -> T raise?) -> T raise
+pub impl Eq for VBSBASICENCLAVETHREADDESCRIPTOR64_f193a06a5d89
+pub impl @debug.Debug for VBSBASICENCLAVETHREADDESCRIPTOR64_f193a06a5d89
+
+pub(all) struct VBSENCLAVEREPORTMODULE_339b7227a7f4 {
+  raw_buffer : @core.NativeBuffer
+}
+pub fn VBSENCLAVEREPORTMODULE_339b7227a7f4::abi_alignment() -> Int
+pub fn VBSENCLAVEREPORTMODULE_339b7227a7f4::abi_size() -> Int
+pub fn VBSENCLAVEREPORTMODULE_339b7227a7f4::bytes(Self) -> Bytes raise @core.WindowsError
+pub fn VBSENCLAVEREPORTMODULE_339b7227a7f4::from_bytes(Bytes) -> Self raise @core.WindowsError
+pub fn VBSENCLAVEREPORTMODULE_339b7227a7f4::header(Self) -> VBSENCLAVEREPORTVARDATAHEADER_8e5b340aa54d raise @core.WindowsError
+pub fn VBSENCLAVEREPORTMODULE_339b7227a7f4::new() -> Self raise @core.WindowsError
+pub fn VBSENCLAVEREPORTMODULE_339b7227a7f4::raw_address(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn VBSENCLAVEREPORTMODULE_339b7227a7f4::set_header(Self, VBSENCLAVEREPORTVARDATAHEADER_8e5b340aa54d) -> Unit raise @core.WindowsError
+pub fn VBSENCLAVEREPORTMODULE_339b7227a7f4::set_svn(Self, UInt) -> Unit raise @core.WindowsError
+pub fn VBSENCLAVEREPORTMODULE_339b7227a7f4::svn(Self) -> UInt raise @core.WindowsError
+pub fn[T] VBSENCLAVEREPORTMODULE_339b7227a7f4::with_raw_address(Self, (@core.RawAddress) -> T raise?) -> T raise
+pub impl Eq for VBSENCLAVEREPORTMODULE_339b7227a7f4
+pub impl @debug.Debug for VBSENCLAVEREPORTMODULE_339b7227a7f4
+
+pub(all) struct VBSENCLAVEREPORTPKGHEADER_e6565cda8961 {
+  raw_buffer : @core.NativeBuffer
+}
+pub fn VBSENCLAVEREPORTPKGHEADER_e6565cda8961::abi_alignment() -> Int
+pub fn VBSENCLAVEREPORTPKGHEADER_e6565cda8961::abi_size() -> Int
+pub fn VBSENCLAVEREPORTPKGHEADER_e6565cda8961::bytes(Self) -> Bytes raise @core.WindowsError
+pub fn VBSENCLAVEREPORTPKGHEADER_e6565cda8961::from_bytes(Bytes) -> Self raise @core.WindowsError
+pub fn VBSENCLAVEREPORTPKGHEADER_e6565cda8961::new() -> Self raise @core.WindowsError
+pub fn VBSENCLAVEREPORTPKGHEADER_e6565cda8961::package_size(Self) -> UInt raise @core.WindowsError
+pub fn VBSENCLAVEREPORTPKGHEADER_e6565cda8961::raw_address(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn VBSENCLAVEREPORTPKGHEADER_e6565cda8961::reserved(Self) -> UInt raise @core.WindowsError
+pub fn VBSENCLAVEREPORTPKGHEADER_e6565cda8961::set_package_size(Self, UInt) -> Unit raise @core.WindowsError
+pub fn VBSENCLAVEREPORTPKGHEADER_e6565cda8961::set_reserved(Self, UInt) -> Unit raise @core.WindowsError
+pub fn VBSENCLAVEREPORTPKGHEADER_e6565cda8961::set_signature_scheme(Self, UInt) -> Unit raise @core.WindowsError
+pub fn VBSENCLAVEREPORTPKGHEADER_e6565cda8961::set_signature_size(Self, UInt) -> Unit raise @core.WindowsError
+pub fn VBSENCLAVEREPORTPKGHEADER_e6565cda8961::set_signed_statement_size(Self, UInt) -> Unit raise @core.WindowsError
+pub fn VBSENCLAVEREPORTPKGHEADER_e6565cda8961::set_version(Self, UInt) -> Unit raise @core.WindowsError
+pub fn VBSENCLAVEREPORTPKGHEADER_e6565cda8961::signature_scheme(Self) -> UInt raise @core.WindowsError
+pub fn VBSENCLAVEREPORTPKGHEADER_e6565cda8961::signature_size(Self) -> UInt raise @core.WindowsError
+pub fn VBSENCLAVEREPORTPKGHEADER_e6565cda8961::signed_statement_size(Self) -> UInt raise @core.WindowsError
+pub fn VBSENCLAVEREPORTPKGHEADER_e6565cda8961::version(Self) -> UInt raise @core.WindowsError
+pub fn[T] VBSENCLAVEREPORTPKGHEADER_e6565cda8961::with_raw_address(Self, (@core.RawAddress) -> T raise?) -> T raise
+pub impl Eq for VBSENCLAVEREPORTPKGHEADER_e6565cda8961
+pub impl @debug.Debug for VBSENCLAVEREPORTPKGHEADER_e6565cda8961
+
+pub(all) struct VBSENCLAVEREPORTVARDATAHEADER_8e5b340aa54d {
+  raw_buffer : @core.NativeBuffer
+}
+pub fn VBSENCLAVEREPORTVARDATAHEADER_8e5b340aa54d::abi_alignment() -> Int
+pub fn VBSENCLAVEREPORTVARDATAHEADER_8e5b340aa54d::abi_size() -> Int
+pub fn VBSENCLAVEREPORTVARDATAHEADER_8e5b340aa54d::bytes(Self) -> Bytes raise @core.WindowsError
+pub fn VBSENCLAVEREPORTVARDATAHEADER_8e5b340aa54d::data_type(Self) -> UInt raise @core.WindowsError
+pub fn VBSENCLAVEREPORTVARDATAHEADER_8e5b340aa54d::from_bytes(Bytes) -> Self raise @core.WindowsError
+pub fn VBSENCLAVEREPORTVARDATAHEADER_8e5b340aa54d::new() -> Self raise @core.WindowsError
+pub fn VBSENCLAVEREPORTVARDATAHEADER_8e5b340aa54d::raw_address(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn VBSENCLAVEREPORTVARDATAHEADER_8e5b340aa54d::set_data_type(Self, UInt) -> Unit raise @core.WindowsError
+pub fn VBSENCLAVEREPORTVARDATAHEADER_8e5b340aa54d::set_size(Self, UInt) -> Unit raise @core.WindowsError
+pub fn VBSENCLAVEREPORTVARDATAHEADER_8e5b340aa54d::size(Self) -> UInt raise @core.WindowsError
+pub fn[T] VBSENCLAVEREPORTVARDATAHEADER_8e5b340aa54d::with_raw_address(Self, (@core.RawAddress) -> T raise?) -> T raise
+pub impl Eq for VBSENCLAVEREPORTVARDATAHEADER_8e5b340aa54d
+pub impl @debug.Debug for VBSENCLAVEREPORTVARDATAHEADER_8e5b340aa54d
+
+pub(all) struct VBSENCLAVEREPORT_e5f3cacc6460 {
+  raw_buffer : @core.NativeBuffer
+}
+pub fn VBSENCLAVEREPORT_e5f3cacc6460::abi_alignment() -> Int
+pub fn VBSENCLAVEREPORT_e5f3cacc6460::abi_size() -> Int
+pub fn VBSENCLAVEREPORT_e5f3cacc6460::bytes(Self) -> Bytes raise @core.WindowsError
+pub fn VBSENCLAVEREPORT_e5f3cacc6460::enclave_identity(Self) -> ENCLAVEIDENTITY_23b30ad5815d raise @core.WindowsError
+pub fn VBSENCLAVEREPORT_e5f3cacc6460::from_bytes(Bytes) -> Self raise @core.WindowsError
+pub fn VBSENCLAVEREPORT_e5f3cacc6460::new() -> Self raise @core.WindowsError
+pub fn VBSENCLAVEREPORT_e5f3cacc6460::raw_address(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn VBSENCLAVEREPORT_e5f3cacc6460::report_size(Self) -> UInt raise @core.WindowsError
+pub fn VBSENCLAVEREPORT_e5f3cacc6460::report_version(Self) -> UInt raise @core.WindowsError
+pub fn VBSENCLAVEREPORT_e5f3cacc6460::set_enclave_identity(Self, ENCLAVEIDENTITY_23b30ad5815d) -> Unit raise @core.WindowsError
+pub fn VBSENCLAVEREPORT_e5f3cacc6460::set_report_size(Self, UInt) -> Unit raise @core.WindowsError
+pub fn VBSENCLAVEREPORT_e5f3cacc6460::set_report_version(Self, UInt) -> Unit raise @core.WindowsError
+pub fn[T] VBSENCLAVEREPORT_e5f3cacc6460::with_raw_address(Self, (@core.RawAddress) -> T raise?) -> T raise
+pub impl Eq for VBSENCLAVEREPORT_e5f3cacc6460
+pub impl @debug.Debug for VBSENCLAVEREPORT_e5f3cacc6460
+
+// Type aliases
+
+// Traits

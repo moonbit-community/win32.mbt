@@ -1,0 +1,3785 @@
+// Generated using `moon info`, DON'T EDIT IT
+package "moonbit-community/win32api/windows/win32/graphics/gdi"
+
+import {
+  "moonbit-community/win32api/runtime/core",
+  "moonbit-community/win32api/runtime/strings",
+  "moonbit-community/win32api/scc/9ab35bf48b3f5013",
+  "moonbit-community/win32api/scc/fb66f520d7e12332",
+}
+
+// Values
+pub fn abort_path(@core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn abort_path_raw(@core.RawAddress) -> Int
+
+pub let abortdoc : UInt
+
+pub let absolute : UInt
+
+pub let ac_src_alpha : UInt
+
+pub let ac_src_over : UInt
+
+pub fn add_font_mem_resource_ex(@core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> @core.RawAddress raise @core.WindowsError
+
+pub fn add_font_mem_resource_ex_raw(@core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> @core.RawAddress
+
+pub fn add_font_resource_a(@strings.PStr) -> Int raise @core.WindowsError
+
+pub fn add_font_resource_a_raw(@core.RawAddress) -> Int
+
+pub fn add_font_resource_ex_a(@strings.PStr, @9ab35bf48b3f5013.FONTRESOURCECHARACTERISTICS_02c173ad0348, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn add_font_resource_ex_a_raw(@core.RawAddress, UInt, @core.RawAddress) -> Int
+
+pub fn add_font_resource_ex_w(@strings.PWStr, @9ab35bf48b3f5013.FONTRESOURCECHARACTERISTICS_02c173ad0348, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn add_font_resource_ex_w_raw(@core.RawAddress, UInt, @core.RawAddress) -> Int
+
+pub fn add_font_resource_w(@strings.PWStr) -> Int raise @core.WindowsError
+
+pub fn add_font_resource_w_raw(@core.RawAddress) -> Int
+
+pub fn alpha_blend(@core.RawAddress, Int, Int, Int, Int, @core.RawAddress, Int, Int, Int, Int, @9ab35bf48b3f5013.BLENDFUNCTION_b6a4186789c1) -> Bool raise @core.WindowsError
+
+pub fn alpha_blend_raw(@core.RawAddress, Int, Int, Int, Int, @core.RawAddress, Int, Int, Int, Int, Bytes) -> Int
+
+pub fn angle_arc(@core.RawAddress, Int, Int, UInt, Float, Float) -> Bool raise @core.WindowsError
+
+pub fn angle_arc_raw(@core.RawAddress, Int, Int, UInt, Float, Float) -> Int
+
+pub fn animate_palette(@core.RawAddress, UInt, UInt, @9ab35bf48b3f5013.PALETTEENTRY_5450403ccf8e) -> Bool raise @core.WindowsError
+
+pub fn animate_palette_raw(@core.RawAddress, UInt, UInt, @core.RawAddress) -> Int
+
+pub fn arc(@core.RawAddress, Int, Int, Int, Int, Int, Int, Int, Int) -> Bool raise @core.WindowsError
+
+pub fn arc_raw(@core.RawAddress, Int, Int, Int, Int, Int, Int, Int, Int) -> Int
+
+pub fn arc_to(@core.RawAddress, Int, Int, Int, Int, Int, Int, Int, Int) -> Bool raise @core.WindowsError
+
+pub fn arc_to_raw(@core.RawAddress, Int, Int, Int, Int, Int, Int, Int, Int) -> Int
+
+pub let aspect_filtering : UInt
+
+pub let bandinfo : UInt
+
+pub fn begin_paint(@core.RawAddress, @9ab35bf48b3f5013.PAINTSTRUCT_a7b313c4746f) -> @core.RawAddress raise @core.WindowsError
+
+pub fn begin_paint_raw(@core.RawAddress, @core.RawAddress) -> @core.RawAddress
+
+pub let begin_path : UInt
+
+pub fn begin_path_with_unit_pointer(@core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn begin_path_with_unit_pointer_raw(@core.RawAddress) -> Int
+
+pub fn bit_blt(@core.RawAddress, Int, Int, Int, Int, @core.RawAddress, Int, Int, @9ab35bf48b3f5013.ROPCODE_761e20eef7e8) -> Bool raise @core.WindowsError
+
+pub fn bit_blt_raw(@core.RawAddress, Int, Int, Int, Int, @core.RawAddress, Int, Int, UInt) -> @core.RawWin32Call[Int]
+
+pub let bkmode_last : UInt
+
+pub let ca_log_filter : UInt
+
+pub let ca_negative : UInt
+
+pub fn cancel_dc(@core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn cancel_dc_raw(@core.RawAddress) -> Int
+
+pub let cbm_init : Int
+
+pub let cc_chord : UInt
+
+pub let cc_circles : UInt
+
+pub let cc_ellipses : UInt
+
+pub let cc_interiors : UInt
+
+pub let cc_none : UInt
+
+pub let cc_pie : UInt
+
+pub let cc_roundrect : UInt
+
+pub let cc_styled : UInt
+
+pub let cc_wide : UInt
+
+pub let cc_widestyled : UInt
+
+pub let cchformname : UInt
+
+pub fn change_display_settings_a(@9ab35bf48b3f5013.DEVMODEA_3b3132d875c8?, @9ab35bf48b3f5013.CDSTYPE_5b596c30a6a8) -> @9ab35bf48b3f5013.DISPCHANGE_37a696f7069e raise @core.WindowsError
+
+pub fn change_display_settings_a_raw(@core.RawAddress, UInt) -> Int
+
+pub fn change_display_settings_ex_a(@strings.PStr?, @9ab35bf48b3f5013.DEVMODEA_3b3132d875c8?, @core.RawAddress, @9ab35bf48b3f5013.CDSTYPE_5b596c30a6a8, @core.RawAddress) -> @9ab35bf48b3f5013.DISPCHANGE_37a696f7069e raise @core.WindowsError
+
+pub fn change_display_settings_ex_a_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, UInt, @core.RawAddress) -> Int
+
+pub fn change_display_settings_ex_w(@strings.PWStr?, @9ab35bf48b3f5013.DEVMODEW_12540d748e26?, @core.RawAddress, @9ab35bf48b3f5013.CDSTYPE_5b596c30a6a8, @core.RawAddress) -> @9ab35bf48b3f5013.DISPCHANGE_37a696f7069e raise @core.WindowsError
+
+pub fn change_display_settings_ex_w_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, UInt, @core.RawAddress) -> Int
+
+pub fn change_display_settings_w(@9ab35bf48b3f5013.DEVMODEW_12540d748e26?, @9ab35bf48b3f5013.CDSTYPE_5b596c30a6a8) -> @9ab35bf48b3f5013.DISPCHANGE_37a696f7069e raise @core.WindowsError
+
+pub fn change_display_settings_w_raw(@core.RawAddress, UInt) -> Int
+
+pub let charset_default : UInt
+
+pub let charset_glyphidx : UInt
+
+pub let checkjpegformat : UInt
+
+pub let checkpngformat : UInt
+
+pub fn chord(@core.RawAddress, Int, Int, Int, Int, Int, Int, Int, Int) -> Bool raise @core.WindowsError
+
+pub fn chord_raw(@core.RawAddress, Int, Int, Int, Int, Int, Int, Int, Int) -> Int
+
+pub let cleartype_natural_quality : UInt
+
+pub fn client_to_screen(@core.RawAddress, @fb66f520d7e12332.POINT_48d934d62b68) -> Bool raise @core.WindowsError
+
+pub fn client_to_screen_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub let clip_to_path : UInt
+
+pub fn close_enh_meta_file(@core.RawAddress) -> @core.RawAddress raise @core.WindowsError
+
+pub fn close_enh_meta_file_raw(@core.RawAddress) -> @core.RawAddress
+
+pub fn close_figure(@core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn close_figure_raw(@core.RawAddress) -> Int
+
+pub fn close_meta_file(@core.RawAddress) -> @core.RawAddress raise @core.WindowsError
+
+pub fn close_meta_file_raw(@core.RawAddress) -> @core.RawAddress
+
+pub let closechannel : UInt
+
+pub let clr_invalid : UInt
+
+pub let cm_cmyk_color : UInt
+
+pub let cm_device_icm : UInt
+
+pub let cm_gamma_ramp : UInt
+
+pub let cm_in_gamut : UInt
+
+pub let cm_none : UInt
+
+pub let cm_out_of_gamut : UInt
+
+pub let colormatchtotarget_embeded : UInt
+
+pub fn combine_rgn(@core.RawAddress, @core.RawAddress, @core.RawAddress, @9ab35bf48b3f5013.RGNCOMBINEMODE_bc3734442525) -> @9ab35bf48b3f5013.GDIREGIONTYPE_7d5d6fc66eee raise @core.WindowsError
+
+pub fn combine_rgn_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, Int) -> Int
+
+pub fn combine_transform(@9ab35bf48b3f5013.XFORM_86562134bd5e, @9ab35bf48b3f5013.XFORM_86562134bd5e, @9ab35bf48b3f5013.XFORM_86562134bd5e) -> Bool raise @core.WindowsError
+
+pub fn combine_transform_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn copy_enh_meta_file_a(@core.RawAddress, @strings.PStr?) -> @core.RawAddress raise @core.WindowsError
+
+pub fn copy_enh_meta_file_a_raw(@core.RawAddress, @core.RawAddress) -> @core.RawAddress
+
+pub fn copy_enh_meta_file_w(@core.RawAddress, @strings.PWStr?) -> @core.RawAddress raise @core.WindowsError
+
+pub fn copy_enh_meta_file_w_raw(@core.RawAddress, @core.RawAddress) -> @core.RawAddress
+
+pub fn copy_meta_file_a(@core.RawAddress, @strings.PStr?) -> @core.RawAddress raise @core.WindowsError
+
+pub fn copy_meta_file_a_raw(@core.RawAddress, @core.RawAddress) -> @core.RawAddress
+
+pub fn copy_meta_file_w(@core.RawAddress, @strings.PWStr?) -> @core.RawAddress raise @core.WindowsError
+
+pub fn copy_meta_file_w_raw(@core.RawAddress, @core.RawAddress) -> @core.RawAddress
+
+pub fn copy_rect(@fb66f520d7e12332.RECT_dc5b788d9702, @fb66f520d7e12332.RECT_dc5b788d9702) -> Bool raise @core.WindowsError
+
+pub fn copy_rect_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub let cp_none : UInt
+
+pub let cp_rectangle : UInt
+
+pub let cp_region : UInt
+
+pub fn create_bitmap(Int, Int, UInt, UInt, @core.RawAddress) -> @core.RawAddress raise @core.WindowsError
+
+pub fn create_bitmap_indirect(@9ab35bf48b3f5013.BITMAP_9068af294cf7) -> @core.RawAddress raise @core.WindowsError
+
+pub fn create_bitmap_indirect_raw(@core.RawAddress) -> @core.RawAddress
+
+pub fn create_bitmap_raw(Int, Int, UInt, UInt, @core.RawAddress) -> @core.RawAddress
+
+pub fn create_brush_indirect(@9ab35bf48b3f5013.LOGBRUSH_adc275c2cafa) -> @core.RawAddress raise @core.WindowsError
+
+pub fn create_brush_indirect_raw(@core.RawAddress) -> @core.RawAddress
+
+pub fn create_compatible_bitmap(@core.RawAddress, Int, Int) -> @core.RawAddress raise @core.WindowsError
+
+pub fn create_compatible_bitmap_raw(@core.RawAddress, Int, Int) -> @core.RawAddress
+
+pub fn create_compatible_dc(@core.RawAddress) -> @core.RawAddress raise @core.WindowsError
+
+pub fn create_compatible_dc_raw(@core.RawAddress) -> @core.RawAddress
+
+pub fn create_dca(@strings.PStr?, @strings.PStr?, @strings.PStr?, @9ab35bf48b3f5013.DEVMODEA_3b3132d875c8?) -> @core.RawAddress raise @core.WindowsError
+
+pub fn create_dca_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> @core.RawAddress
+
+pub fn create_dcw(@strings.PWStr?, @strings.PWStr?, @strings.PWStr?, @9ab35bf48b3f5013.DEVMODEW_12540d748e26?) -> @core.RawAddress raise @core.WindowsError
+
+pub fn create_dcw_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> @core.RawAddress
+
+pub fn create_di_bitmap(@core.RawAddress, @9ab35bf48b3f5013.BITMAPINFOHEADER_2cc303164845?, UInt, @core.RawAddress, @9ab35bf48b3f5013.BITMAPINFO_07d884578fc1?, @9ab35bf48b3f5013.DIBUSAGE_4bf208a4cd1e) -> @core.RawAddress raise @core.WindowsError
+
+pub fn create_di_bitmap_raw(@core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress, UInt) -> @core.RawAddress
+
+pub fn create_dib_pattern_brush(@core.RawAddress, @9ab35bf48b3f5013.DIBUSAGE_4bf208a4cd1e) -> @core.RawAddress raise @core.WindowsError
+
+pub fn create_dib_pattern_brush_pt(@core.RawAddress, @9ab35bf48b3f5013.DIBUSAGE_4bf208a4cd1e) -> @core.RawAddress raise @core.WindowsError
+
+pub fn create_dib_pattern_brush_pt_raw(@core.RawAddress, UInt) -> @core.RawAddress
+
+pub fn create_dib_pattern_brush_raw(@core.RawAddress, UInt) -> @core.RawAddress
+
+pub fn create_dib_section(@core.RawAddress, @9ab35bf48b3f5013.BITMAPINFO_07d884578fc1, @9ab35bf48b3f5013.DIBUSAGE_4bf208a4cd1e, @core.RawAddress, @core.RawAddress, UInt) -> @core.RawAddress raise @core.WindowsError
+
+pub fn create_dib_section_raw(@core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress, UInt) -> @core.RawWin32Call[@core.RawAddress]
+
+pub fn create_discardable_bitmap(@core.RawAddress, Int, Int) -> @core.RawAddress raise @core.WindowsError
+
+pub fn create_discardable_bitmap_raw(@core.RawAddress, Int, Int) -> @core.RawAddress
+
+pub fn create_elliptic_rgn(Int, Int, Int, Int) -> @core.RawAddress raise @core.WindowsError
+
+pub fn create_elliptic_rgn_indirect(@fb66f520d7e12332.RECT_dc5b788d9702) -> @core.RawAddress raise @core.WindowsError
+
+pub fn create_elliptic_rgn_indirect_raw(@core.RawAddress) -> @core.RawAddress
+
+pub fn create_elliptic_rgn_raw(Int, Int, Int, Int) -> @core.RawAddress
+
+pub fn create_enh_meta_file_a(@core.RawAddress, @strings.PStr?, @fb66f520d7e12332.RECT_dc5b788d9702?, @strings.PStr?) -> @core.RawAddress raise @core.WindowsError
+
+pub fn create_enh_meta_file_a_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> @core.RawAddress
+
+pub fn create_enh_meta_file_w(@core.RawAddress, @strings.PWStr?, @fb66f520d7e12332.RECT_dc5b788d9702?, @strings.PWStr?) -> @core.RawAddress raise @core.WindowsError
+
+pub fn create_enh_meta_file_w_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> @core.RawAddress
+
+pub fn create_font_a(Int, Int, Int, Int, Int, UInt, UInt, UInt, UInt, UInt, UInt, UInt, UInt, @strings.PStr?) -> @core.RawAddress raise @core.WindowsError
+
+pub fn create_font_a_raw(Int, Int, Int, Int, Int, UInt, UInt, UInt, UInt, UInt, UInt, UInt, UInt, @core.RawAddress) -> @core.RawAddress
+
+pub fn create_font_indirect_a(@9ab35bf48b3f5013.LOGFONTA_ac16c2afc10d) -> @core.RawAddress raise @core.WindowsError
+
+pub fn create_font_indirect_a_raw(@core.RawAddress) -> @core.RawAddress
+
+pub fn create_font_indirect_ex_a(@9ab35bf48b3f5013.ENUMLOGFONTEXDVA_6ac9980ba99a) -> @core.RawAddress raise @core.WindowsError
+
+pub fn create_font_indirect_ex_a_raw(@core.RawAddress) -> @core.RawAddress
+
+pub fn create_font_indirect_ex_w(@9ab35bf48b3f5013.ENUMLOGFONTEXDVW_a1ff83ff628f) -> @core.RawAddress raise @core.WindowsError
+
+pub fn create_font_indirect_ex_w_raw(@core.RawAddress) -> @core.RawAddress
+
+pub fn create_font_indirect_w(@9ab35bf48b3f5013.LOGFONTW_91e02db450ee) -> @core.RawAddress raise @core.WindowsError
+
+pub fn create_font_indirect_w_raw(@core.RawAddress) -> @core.RawAddress
+
+pub fn create_font_package(@core.RawAddress, UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress, UInt16, UInt16, UInt16, UInt16, @9ab35bf48b3f5013.CREATEFONTPACKAGESUBSETPLATFORM_08de370c9320, @9ab35bf48b3f5013.CREATEFONTPACKAGESUBSETENCODING_18edbeafc8d2, @core.RawAddress, UInt16, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt raise @core.WindowsError
+
+pub fn create_font_package_raw(@core.RawAddress, UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress, UInt, UInt, UInt, UInt, Int, Int, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn create_font_w(Int, Int, Int, Int, Int, UInt, UInt, UInt, UInt, UInt, UInt, UInt, UInt, @strings.PWStr?) -> @core.RawAddress raise @core.WindowsError
+
+pub fn create_font_w_raw(Int, Int, Int, Int, Int, UInt, UInt, UInt, UInt, UInt, UInt, UInt, UInt, @core.RawAddress) -> @core.RawAddress
+
+pub fn create_halftone_palette(@core.RawAddress) -> @core.RawAddress raise @core.WindowsError
+
+pub fn create_halftone_palette_raw(@core.RawAddress) -> @core.RawAddress
+
+pub fn create_hatch_brush(@9ab35bf48b3f5013.HATCHBRUSHSTYLE_35a290469f8f, UInt) -> @core.RawAddress raise @core.WindowsError
+
+pub fn create_hatch_brush_raw(Int, UInt) -> @core.RawAddress
+
+pub fn create_ica(@strings.PStr?, @strings.PStr?, @strings.PStr?, @9ab35bf48b3f5013.DEVMODEA_3b3132d875c8?) -> @core.RawAddress raise @core.WindowsError
+
+pub fn create_ica_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> @core.RawAddress
+
+pub fn create_icw(@strings.PWStr?, @strings.PWStr?, @strings.PWStr?, @9ab35bf48b3f5013.DEVMODEW_12540d748e26?) -> @core.RawAddress raise @core.WindowsError
+
+pub fn create_icw_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> @core.RawAddress
+
+pub fn create_meta_file_a(@strings.PStr?) -> @core.RawAddress raise @core.WindowsError
+
+pub fn create_meta_file_a_raw(@core.RawAddress) -> @core.RawAddress
+
+pub fn create_meta_file_w(@strings.PWStr?) -> @core.RawAddress raise @core.WindowsError
+
+pub fn create_meta_file_w_raw(@core.RawAddress) -> @core.RawAddress
+
+pub fn create_palette(@9ab35bf48b3f5013.LOGPALETTE_8d9f29085d7a) -> @core.RawAddress raise @core.WindowsError
+
+pub fn create_palette_raw(@core.RawAddress) -> @core.RawAddress
+
+pub fn create_pattern_brush(@core.RawAddress) -> @core.RawAddress raise @core.WindowsError
+
+pub fn create_pattern_brush_raw(@core.RawAddress) -> @core.RawAddress
+
+pub fn create_pen(@9ab35bf48b3f5013.PENSTYLE_3b5c8374e0e5, Int, UInt) -> @core.RawAddress raise @core.WindowsError
+
+pub fn create_pen_indirect(@9ab35bf48b3f5013.LOGPEN_d23306dfa5f5) -> @core.RawAddress raise @core.WindowsError
+
+pub fn create_pen_indirect_raw(@core.RawAddress) -> @core.RawAddress
+
+pub fn create_pen_raw(Int, Int, UInt) -> @core.RawAddress
+
+pub fn create_poly_polygon_rgn(@fb66f520d7e12332.POINT_48d934d62b68, @core.RawAddress, Int, @9ab35bf48b3f5013.CREATEPOLYGONRGNMODE_25fc6c601314) -> @core.RawAddress raise @core.WindowsError
+
+pub fn create_poly_polygon_rgn_raw(@core.RawAddress, @core.RawAddress, Int, Int) -> @core.RawAddress
+
+pub fn create_polygon_rgn(@fb66f520d7e12332.POINT_48d934d62b68, Int, @9ab35bf48b3f5013.CREATEPOLYGONRGNMODE_25fc6c601314) -> @core.RawAddress raise @core.WindowsError
+
+pub fn create_polygon_rgn_raw(@core.RawAddress, Int, Int) -> @core.RawAddress
+
+pub fn create_rect_rgn(Int, Int, Int, Int) -> @core.RawAddress raise @core.WindowsError
+
+pub fn create_rect_rgn_indirect(@fb66f520d7e12332.RECT_dc5b788d9702) -> @core.RawAddress raise @core.WindowsError
+
+pub fn create_rect_rgn_indirect_raw(@core.RawAddress) -> @core.RawAddress
+
+pub fn create_rect_rgn_raw(Int, Int, Int, Int) -> @core.RawAddress
+
+pub fn create_round_rect_rgn(Int, Int, Int, Int, Int, Int) -> @core.RawAddress raise @core.WindowsError
+
+pub fn create_round_rect_rgn_raw(Int, Int, Int, Int, Int, Int) -> @core.RawAddress
+
+pub fn create_scalable_font_resource_a(UInt, @strings.PStr, @strings.PStr, @strings.PStr?) -> Bool raise @core.WindowsError
+
+pub fn create_scalable_font_resource_a_raw(UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn create_scalable_font_resource_w(UInt, @strings.PWStr, @strings.PWStr, @strings.PWStr?) -> Bool raise @core.WindowsError
+
+pub fn create_scalable_font_resource_w_raw(UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn create_solid_brush(UInt) -> @core.RawAddress raise @core.WindowsError
+
+pub fn create_solid_brush_raw(UInt) -> @core.RawAddress
+
+pub let createcolorspace_embeded : UInt
+
+pub fn d_pto_lp(@core.RawAddress, @fb66f520d7e12332.POINT_48d934d62b68, Int) -> Bool raise @core.WindowsError
+
+pub fn d_pto_lp_raw(@core.RawAddress, @core.RawAddress, Int) -> Int
+
+pub let dc_binadjust : UInt
+
+pub let dc_datatype_produced : UInt
+
+pub let dc_emf_compliant : UInt
+
+pub let dc_manufacturer : UInt
+
+pub let dc_model : UInt
+
+pub let dcba_facedowncenter : UInt
+
+pub let dcba_facedownleft : UInt
+
+pub let dcba_facedownnone : UInt
+
+pub let dcba_facedownright : UInt
+
+pub let dcba_faceupcenter : UInt
+
+pub let dcba_faceupleft : UInt
+
+pub let dcba_faceupnone : UInt
+
+pub let dcba_faceupright : UInt
+
+pub let dctt_bitmap : Int
+
+pub let dctt_download : Int
+
+pub let dctt_download_outline : Int
+
+pub let dctt_subdev : Int
+
+pub fn delete_dc(@core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn delete_dc_raw(@core.RawAddress) -> Int
+
+pub fn delete_enh_meta_file(@core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn delete_enh_meta_file_raw(@core.RawAddress) -> Int
+
+pub fn delete_meta_file(@core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn delete_meta_file_raw(@core.RawAddress) -> Int
+
+pub fn delete_object(@core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn delete_object_raw(@core.RawAddress) -> Int
+
+pub let device_fonttype : UInt
+
+pub let devicedata : UInt
+
+pub let di_appbanding : UInt
+
+pub let di_rops_read_destination : UInt
+
+pub let displayconfig_maxpath : UInt
+
+pub let displayconfig_path_active : UInt
+
+pub let displayconfig_path_boost_refresh_rate : UInt
+
+pub let displayconfig_path_clone_group_invalid : UInt
+
+pub let displayconfig_path_desktop_image_idx_invalid : UInt
+
+pub let displayconfig_path_mode_idx_invalid : UInt
+
+pub let displayconfig_path_preferred_unscaled : UInt
+
+pub let displayconfig_path_source_mode_idx_invalid : UInt
+
+pub let displayconfig_path_support_virtual_mode : UInt
+
+pub let displayconfig_path_target_mode_idx_invalid : UInt
+
+pub let displayconfig_path_valid_flags : UInt
+
+pub let displayconfig_source_in_use : UInt
+
+pub let displayconfig_target_forced_availability_boot : UInt
+
+pub let displayconfig_target_forced_availability_path : UInt
+
+pub let displayconfig_target_forced_availability_system : UInt
+
+pub let displayconfig_target_forcible : UInt
+
+pub let displayconfig_target_in_use : UInt
+
+pub let displayconfig_target_is_hmd : UInt
+
+pub let dmbin_auto : UInt
+
+pub let dmbin_cassette : UInt
+
+pub let dmbin_envelope : UInt
+
+pub let dmbin_envmanual : UInt
+
+pub let dmbin_formsource : UInt
+
+pub let dmbin_largecapacity : UInt
+
+pub let dmbin_largefmt : UInt
+
+pub let dmbin_last : UInt
+
+pub let dmbin_lower : UInt
+
+pub let dmbin_manual : UInt
+
+pub let dmbin_middle : UInt
+
+pub let dmbin_onlyone : UInt
+
+pub let dmbin_smallfmt : UInt
+
+pub let dmbin_tractor : UInt
+
+pub let dmbin_upper : UInt
+
+pub let dmbin_user : UInt
+
+pub let dmdisplayflags_textmode : UInt
+
+pub let dmdither_coarse : UInt
+
+pub let dmdither_errordiffusion : UInt
+
+pub let dmdither_fine : UInt
+
+pub let dmdither_grayscale : UInt
+
+pub let dmdither_lineart : UInt
+
+pub let dmdither_none : UInt
+
+pub let dmdither_reserved6 : UInt
+
+pub let dmdither_reserved7 : UInt
+
+pub let dmdither_reserved8 : UInt
+
+pub let dmdither_reserved9 : UInt
+
+pub let dmdither_user : UInt
+
+pub let dmicm_abs_colorimetric : UInt
+
+pub let dmicm_colorimetric : UInt
+
+pub let dmicm_contrast : UInt
+
+pub let dmicm_saturate : UInt
+
+pub let dmicm_user : UInt
+
+pub let dmicmmethod_device : UInt
+
+pub let dmicmmethod_driver : UInt
+
+pub let dmicmmethod_none : UInt
+
+pub let dmicmmethod_system : UInt
+
+pub let dmicmmethod_user : UInt
+
+pub let dmmedia_glossy : UInt
+
+pub let dmmedia_standard : UInt
+
+pub let dmmedia_transparency : UInt
+
+pub let dmmedia_user : UInt
+
+pub let dmnup_oneup : UInt
+
+pub let dmnup_system : UInt
+
+pub let dmorient_landscape : UInt
+
+pub let dmorient_portrait : UInt
+
+pub let dmpaper_10_x11 : UInt
+
+pub let dmpaper_10_x14 : UInt
+
+pub let dmpaper_11_x17 : UInt
+
+pub let dmpaper_12_x11 : UInt
+
+pub let dmpaper_15_x11 : UInt
+
+pub let dmpaper_9_x11 : UInt
+
+pub let dmpaper_a2 : UInt
+
+pub let dmpaper_a3 : UInt
+
+pub let dmpaper_a3_extra : UInt
+
+pub let dmpaper_a3_extra_transverse : UInt
+
+pub let dmpaper_a3_rotated : UInt
+
+pub let dmpaper_a3_transverse : UInt
+
+pub let dmpaper_a4 : UInt
+
+pub let dmpaper_a4_extra : UInt
+
+pub let dmpaper_a4_plus : UInt
+
+pub let dmpaper_a4_rotated : UInt
+
+pub let dmpaper_a4_small : UInt
+
+pub let dmpaper_a4_transverse : UInt
+
+pub let dmpaper_a5 : UInt
+
+pub let dmpaper_a5_extra : UInt
+
+pub let dmpaper_a5_rotated : UInt
+
+pub let dmpaper_a5_transverse : UInt
+
+pub let dmpaper_a6 : UInt
+
+pub let dmpaper_a6_rotated : UInt
+
+pub let dmpaper_a_plus : UInt
+
+pub let dmpaper_b4 : UInt
+
+pub let dmpaper_b4_jis_rotated : UInt
+
+pub let dmpaper_b5 : UInt
+
+pub let dmpaper_b5_extra : UInt
+
+pub let dmpaper_b5_jis_rotated : UInt
+
+pub let dmpaper_b5_transverse : UInt
+
+pub let dmpaper_b6_jis : UInt
+
+pub let dmpaper_b6_jis_rotated : UInt
+
+pub let dmpaper_b_plus : UInt
+
+pub let dmpaper_csheet : UInt
+
+pub let dmpaper_dbl_japanese_postcard : UInt
+
+pub let dmpaper_dbl_japanese_postcard_rotated : UInt
+
+pub let dmpaper_dsheet : UInt
+
+pub let dmpaper_env_10 : UInt
+
+pub let dmpaper_env_11 : UInt
+
+pub let dmpaper_env_12 : UInt
+
+pub let dmpaper_env_14 : UInt
+
+pub let dmpaper_env_9 : UInt
+
+pub let dmpaper_env_b4 : UInt
+
+pub let dmpaper_env_b5 : UInt
+
+pub let dmpaper_env_b6 : UInt
+
+pub let dmpaper_env_c3 : UInt
+
+pub let dmpaper_env_c4 : UInt
+
+pub let dmpaper_env_c5 : UInt
+
+pub let dmpaper_env_c6 : UInt
+
+pub let dmpaper_env_c65 : UInt
+
+pub let dmpaper_env_dl : UInt
+
+pub let dmpaper_env_invite : UInt
+
+pub let dmpaper_env_italy : UInt
+
+pub let dmpaper_env_monarch : UInt
+
+pub let dmpaper_env_personal : UInt
+
+pub let dmpaper_esheet : UInt
+
+pub let dmpaper_executive : UInt
+
+pub let dmpaper_fanfold_lgl_german : UInt
+
+pub let dmpaper_fanfold_std_german : UInt
+
+pub let dmpaper_fanfold_us : UInt
+
+pub let dmpaper_folio : UInt
+
+pub let dmpaper_iso_b4 : UInt
+
+pub let dmpaper_japanese_postcard : UInt
+
+pub let dmpaper_japanese_postcard_rotated : UInt
+
+pub let dmpaper_jenv_chou3 : UInt
+
+pub let dmpaper_jenv_chou3_rotated : UInt
+
+pub let dmpaper_jenv_chou4 : UInt
+
+pub let dmpaper_jenv_chou4_rotated : UInt
+
+pub let dmpaper_jenv_kaku2 : UInt
+
+pub let dmpaper_jenv_kaku2_rotated : UInt
+
+pub let dmpaper_jenv_kaku3 : UInt
+
+pub let dmpaper_jenv_kaku3_rotated : UInt
+
+pub let dmpaper_jenv_you4 : UInt
+
+pub let dmpaper_jenv_you4_rotated : UInt
+
+pub let dmpaper_last : UInt
+
+pub let dmpaper_ledger : UInt
+
+pub let dmpaper_legal : UInt
+
+pub let dmpaper_legal_extra : UInt
+
+pub let dmpaper_letter : UInt
+
+pub let dmpaper_letter_extra : UInt
+
+pub let dmpaper_letter_extra_transverse : UInt
+
+pub let dmpaper_letter_plus : UInt
+
+pub let dmpaper_letter_rotated : UInt
+
+pub let dmpaper_letter_transverse : UInt
+
+pub let dmpaper_lettersmall : UInt
+
+pub let dmpaper_note : UInt
+
+pub let dmpaper_p16_k : UInt
+
+pub let dmpaper_p16_k_rotated : UInt
+
+pub let dmpaper_p32_k : UInt
+
+pub let dmpaper_p32_k_rotated : UInt
+
+pub let dmpaper_p32_kbig : UInt
+
+pub let dmpaper_p32_kbig_rotated : UInt
+
+pub let dmpaper_penv_1 : UInt
+
+pub let dmpaper_penv_10 : UInt
+
+pub let dmpaper_penv_10_rotated : UInt
+
+pub let dmpaper_penv_1_rotated : UInt
+
+pub let dmpaper_penv_2 : UInt
+
+pub let dmpaper_penv_2_rotated : UInt
+
+pub let dmpaper_penv_3 : UInt
+
+pub let dmpaper_penv_3_rotated : UInt
+
+pub let dmpaper_penv_4 : UInt
+
+pub let dmpaper_penv_4_rotated : UInt
+
+pub let dmpaper_penv_5 : UInt
+
+pub let dmpaper_penv_5_rotated : UInt
+
+pub let dmpaper_penv_6 : UInt
+
+pub let dmpaper_penv_6_rotated : UInt
+
+pub let dmpaper_penv_7 : UInt
+
+pub let dmpaper_penv_7_rotated : UInt
+
+pub let dmpaper_penv_8 : UInt
+
+pub let dmpaper_penv_8_rotated : UInt
+
+pub let dmpaper_penv_9 : UInt
+
+pub let dmpaper_penv_9_rotated : UInt
+
+pub let dmpaper_quarto : UInt
+
+pub let dmpaper_reserved_48 : UInt
+
+pub let dmpaper_reserved_49 : UInt
+
+pub let dmpaper_statement : UInt
+
+pub let dmpaper_tabloid : UInt
+
+pub let dmpaper_tabloid_extra : UInt
+
+pub let dmpaper_user : UInt
+
+pub let dmres_draft : Int
+
+pub let dmres_high : Int
+
+pub let dmres_low : Int
+
+pub let dmres_medium : Int
+
+pub let downloadface : UInt
+
+pub let downloadheader : UInt
+
+pub let draftmode : UInt
+
+pub fn draw_animated_rects(@core.RawAddress, Int, @fb66f520d7e12332.RECT_dc5b788d9702, @fb66f520d7e12332.RECT_dc5b788d9702) -> Bool raise @core.WindowsError
+
+pub fn draw_animated_rects_raw(@core.RawAddress, Int, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn draw_caption(@core.RawAddress, @core.RawAddress, @fb66f520d7e12332.RECT_dc5b788d9702, @9ab35bf48b3f5013.DRAWCAPTIONFLAGS_e7c18c7311a8) -> Bool raise @core.WindowsError
+
+pub fn draw_caption_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, UInt) -> Int
+
+pub fn draw_edge(@core.RawAddress, @fb66f520d7e12332.RECT_dc5b788d9702, @9ab35bf48b3f5013.DRAWEDGEFLAGS_e8f8689cdc66, @9ab35bf48b3f5013.DRAWEDGEFLAGS_ededb423e64a) -> Bool raise @core.WindowsError
+
+pub fn draw_edge_raw(@core.RawAddress, @core.RawAddress, UInt, UInt) -> Int
+
+pub fn draw_escape(@core.RawAddress, Int, Int, @strings.PStr?) -> Int raise @core.WindowsError
+
+pub fn draw_escape_raw(@core.RawAddress, Int, Int, @core.RawAddress) -> Int
+
+pub fn draw_focus_rect(@core.RawAddress, @fb66f520d7e12332.RECT_dc5b788d9702) -> Bool raise @core.WindowsError
+
+pub fn draw_focus_rect_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn draw_frame_control(@core.RawAddress, @fb66f520d7e12332.RECT_dc5b788d9702, UInt, UInt) -> Bool raise @core.WindowsError
+
+pub fn draw_frame_control_raw(@core.RawAddress, @core.RawAddress, UInt, UInt) -> Int
+
+pub fn draw_state_a(@core.RawAddress, @core.RawAddress, @core.RawAddress, Int64, UInt64, Int, Int, Int, Int, @9ab35bf48b3f5013.DRAWSTATEFLAGS_d864a07908ad) -> Bool raise @core.WindowsError
+
+pub fn draw_state_a_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, Int64, UInt64, Int, Int, Int, Int, UInt) -> Int
+
+pub fn draw_state_w(@core.RawAddress, @core.RawAddress, @core.RawAddress, Int64, UInt64, Int, Int, Int, Int, @9ab35bf48b3f5013.DRAWSTATEFLAGS_d864a07908ad) -> Bool raise @core.WindowsError
+
+pub fn draw_state_w_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, Int64, UInt64, Int, Int, Int, Int, UInt) -> Int
+
+pub fn draw_text_a(@core.RawAddress, @core.RawAddress, Int, @fb66f520d7e12332.RECT_dc5b788d9702, @9ab35bf48b3f5013.DRAWTEXTFORMAT_1a4d8b2b45fd) -> Int raise @core.WindowsError
+
+pub fn draw_text_a_raw(@core.RawAddress, @core.RawAddress, Int, @core.RawAddress, UInt) -> Int
+
+pub fn draw_text_ex_a(@core.RawAddress, @core.RawAddress, Int, @fb66f520d7e12332.RECT_dc5b788d9702, @9ab35bf48b3f5013.DRAWTEXTFORMAT_1a4d8b2b45fd, @9ab35bf48b3f5013.DRAWTEXTPARAMS_a393e215e5ba?) -> Int raise @core.WindowsError
+
+pub fn draw_text_ex_a_raw(@core.RawAddress, @core.RawAddress, Int, @core.RawAddress, UInt, @core.RawAddress) -> Int
+
+pub fn draw_text_ex_w(@core.RawAddress, @strings.PWStrBuffer, @fb66f520d7e12332.RECT_dc5b788d9702, @9ab35bf48b3f5013.DRAWTEXTFORMAT_1a4d8b2b45fd, @9ab35bf48b3f5013.DRAWTEXTPARAMS_a393e215e5ba?) -> Int raise @core.WindowsError
+
+pub fn draw_text_ex_w_raw(@core.RawAddress, @core.RawAddress, Int, @core.RawAddress, UInt, @core.RawAddress) -> Int
+
+pub fn draw_text_w(@core.RawAddress, @strings.PWStrBuffer, @fb66f520d7e12332.RECT_dc5b788d9702, @9ab35bf48b3f5013.DRAWTEXTFORMAT_1a4d8b2b45fd) -> Int raise @core.WindowsError
+
+pub fn draw_text_w_raw(@core.RawAddress, @core.RawAddress, Int, @core.RawAddress, UInt) -> Int
+
+pub let drawpatternrect : UInt
+
+pub let dt_charstream : UInt
+
+pub let dt_dispfile : UInt
+
+pub let dt_metafile : UInt
+
+pub let dt_plotter : UInt
+
+pub let dt_rascamera : UInt
+
+pub let dt_rasdisplay : UInt
+
+pub let dt_rasprinter : UInt
+
+pub let e_addfontfailed : Int
+
+pub let e_api_notimpl : Int
+
+pub let e_charcodecountinvalid : Int
+
+pub let e_charcodesetinvalid : Int
+
+pub let e_charsetinvalid : Int
+
+pub let e_couldntcreatetempfile : Int
+
+pub let e_devicetruetypefont : Int
+
+pub let e_erroraccessingexcludelist : Int
+
+pub let e_erroraccessingfacename : Int
+
+pub let e_erroraccessingfontdata : Int
+
+pub let e_errorcompressingfontdata : Int
+
+pub let e_errorconvertingchars : Int
+
+pub let e_errorcreatingfontfile : Int
+
+pub let e_errordecompressingfontdata : Int
+
+pub let e_errorexpandingfontdata : Int
+
+pub let e_errorgettingdc : Int
+
+pub let e_errorreadingfontdata : Int
+
+pub let e_errorunicodeconversion : Int
+
+pub let e_exception : Int
+
+pub let e_exceptionincompression : Int
+
+pub let e_exceptionindecompression : Int
+
+pub let e_facenameinvalid : Int
+
+pub let e_file_not_found : Int
+
+pub let e_flagsinvalid : Int
+
+pub let e_fontalreadyexists : Int
+
+pub let e_fontdatainvalid : Int
+
+pub let e_fontfamilynamenotinfull : Int
+
+pub let e_fontfilecreatefailed : Int
+
+pub let e_fontfilenotfound : Int
+
+pub let e_fontinstallfailed : Int
+
+pub let e_fontnamealreadyexists : Int
+
+pub let e_fontnotembeddable : Int
+
+pub let e_fontreferenceinvalid : Int
+
+pub let e_fontvariationsimulated : Int
+
+pub let e_hdcinvalid : Int
+
+pub let e_inputparaminvalid : Int
+
+pub let e_namechangefailed : Int
+
+pub let e_nofreememory : Int
+
+pub let e_none : Int
+
+pub let e_noos2 : Int
+
+pub let e_notatruetypefont : Int
+
+pub let e_pbenabledinvalid : Int
+
+pub let e_permissionsinvalid : Int
+
+pub let e_privsinvalid : Int
+
+pub let e_privstatusinvalid : Int
+
+pub let e_readfromstreamfailed : Int
+
+pub let e_reservedparamnotnull : Int
+
+pub let e_resourcefilecreatefailed : Int
+
+pub let e_savetostreamfailed : Int
+
+pub let e_statusinvalid : Int
+
+pub let e_streaminvalid : Int
+
+pub let e_subsettingexception : Int
+
+pub let e_subsettingfailed : Int
+
+pub let e_substring_test_fail : Int
+
+pub let e_t2_nofreememory : Int
+
+pub let e_ttc_index_out_of_range : Int
+
+pub let e_windowsapi : Int
+
+pub let elf_culture_latin : UInt
+
+pub let elf_vendor_size : UInt
+
+pub let elf_version : UInt
+
+pub fn ellipse(@core.RawAddress, Int, Int, Int, Int) -> Bool raise @core.WindowsError
+
+pub fn ellipse_raw(@core.RawAddress, Int, Int, Int, Int) -> Int
+
+pub let enableduplex : UInt
+
+pub let enablepairkerning : UInt
+
+pub let enablerelativewidths : UInt
+
+pub let encapsulated_postscript : UInt
+
+pub fn end_paint(@core.RawAddress, @9ab35bf48b3f5013.PAINTSTRUCT_a7b313c4746f) -> Bool raise @core.WindowsError
+
+pub fn end_paint_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub let end_path : UInt
+
+pub fn end_path_with_unit_pointer(@core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn end_path_with_unit_pointer_raw(@core.RawAddress) -> Int
+
+pub let enddoc : UInt
+
+pub let enhmeta_signature : UInt
+
+pub let enhmeta_stock_object : UInt
+
+pub fn enum_display_devices_a(@strings.PStr?, UInt, @9ab35bf48b3f5013.DISPLAYDEVICEA_bab95718817c, UInt) -> Bool raise @core.WindowsError
+
+pub fn enum_display_devices_a_raw(@core.RawAddress, UInt, @core.RawAddress, UInt) -> Int
+
+pub fn enum_display_devices_w(@strings.PWStr?, UInt, @9ab35bf48b3f5013.DISPLAYDEVICEW_37407f46a36a, UInt) -> Bool raise @core.WindowsError
+
+pub fn enum_display_devices_w_raw(@core.RawAddress, UInt, @core.RawAddress, UInt) -> Int
+
+pub fn enum_display_monitors(@core.RawAddress, @fb66f520d7e12332.RECT_dc5b788d9702?, @core.RawAddress, Int64) -> Bool raise @core.WindowsError
+
+pub fn enum_display_monitors_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, Int64) -> Int
+
+pub fn enum_display_settings_a(@strings.PStr?, @9ab35bf48b3f5013.ENUMDISPLAYSETTINGSMODE_f3921ad091fc, @9ab35bf48b3f5013.DEVMODEA_3b3132d875c8) -> Bool raise @core.WindowsError
+
+pub fn enum_display_settings_a_raw(@core.RawAddress, UInt, @core.RawAddress) -> Int
+
+pub fn enum_display_settings_ex_a(@strings.PStr?, @9ab35bf48b3f5013.ENUMDISPLAYSETTINGSMODE_f3921ad091fc, @9ab35bf48b3f5013.DEVMODEA_3b3132d875c8, @9ab35bf48b3f5013.ENUMDISPLAYSETTINGSFLAGS_a8f6b67a6ddd) -> Bool raise @core.WindowsError
+
+pub fn enum_display_settings_ex_a_raw(@core.RawAddress, UInt, @core.RawAddress, UInt) -> Int
+
+pub fn enum_display_settings_ex_w(@strings.PWStr?, @9ab35bf48b3f5013.ENUMDISPLAYSETTINGSMODE_f3921ad091fc, @9ab35bf48b3f5013.DEVMODEW_12540d748e26, @9ab35bf48b3f5013.ENUMDISPLAYSETTINGSFLAGS_a8f6b67a6ddd) -> Bool raise @core.WindowsError
+
+pub fn enum_display_settings_ex_w_raw(@core.RawAddress, UInt, @core.RawAddress, UInt) -> Int
+
+pub fn enum_display_settings_w(@strings.PWStr?, @9ab35bf48b3f5013.ENUMDISPLAYSETTINGSMODE_f3921ad091fc, @9ab35bf48b3f5013.DEVMODEW_12540d748e26) -> Bool raise @core.WindowsError
+
+pub fn enum_display_settings_w_raw(@core.RawAddress, UInt, @core.RawAddress) -> Int
+
+pub fn enum_enh_meta_file(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @fb66f520d7e12332.RECT_dc5b788d9702?) -> Bool raise @core.WindowsError
+
+pub fn enum_enh_meta_file_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn enum_font_families_a(@core.RawAddress, @strings.PStr?, @core.RawAddress, Int64) -> Int raise @core.WindowsError
+
+pub fn enum_font_families_a_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, Int64) -> Int
+
+pub fn enum_font_families_ex_a(@core.RawAddress, @9ab35bf48b3f5013.LOGFONTA_ac16c2afc10d, @core.RawAddress, Int64, UInt) -> Int raise @core.WindowsError
+
+pub fn enum_font_families_ex_a_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, Int64, UInt) -> Int
+
+pub fn enum_font_families_ex_w(@core.RawAddress, @9ab35bf48b3f5013.LOGFONTW_91e02db450ee, @core.RawAddress, Int64, UInt) -> Int raise @core.WindowsError
+
+pub fn enum_font_families_ex_w_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, Int64, UInt) -> Int
+
+pub fn enum_font_families_w(@core.RawAddress, @strings.PWStr?, @core.RawAddress, Int64) -> Int raise @core.WindowsError
+
+pub fn enum_font_families_w_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, Int64) -> Int
+
+pub fn enum_fonts_a(@core.RawAddress, @strings.PStr?, @core.RawAddress, Int64) -> Int raise @core.WindowsError
+
+pub fn enum_fonts_a_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, Int64) -> Int
+
+pub fn enum_fonts_w(@core.RawAddress, @strings.PWStr?, @core.RawAddress, Int64) -> Int raise @core.WindowsError
+
+pub fn enum_fonts_w_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, Int64) -> Int
+
+pub fn enum_meta_file(@core.RawAddress, @core.RawAddress, @core.RawAddress, Int64) -> Bool raise @core.WindowsError
+
+pub fn enum_meta_file_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, Int64) -> Int
+
+pub fn enum_objects(@core.RawAddress, @9ab35bf48b3f5013.OBJTYPE_bccdf1558eb3, @core.RawAddress, Int64) -> Int raise @core.WindowsError
+
+pub fn enum_objects_raw(@core.RawAddress, Int, @core.RawAddress, Int64) -> Int
+
+pub let enumpaperbins : UInt
+
+pub let enumpapermetrics : UInt
+
+pub let eps_signature : UInt
+
+pub let epsprinting : UInt
+
+pub fn equal_rect(@fb66f520d7e12332.RECT_dc5b788d9702, @fb66f520d7e12332.RECT_dc5b788d9702) -> Bool raise @core.WindowsError
+
+pub fn equal_rect_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn equal_rgn(@core.RawAddress, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn equal_rgn_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub let err_format : UInt
+
+pub let err_generic : UInt
+
+pub let err_invalid_base : UInt
+
+pub let err_invalid_cmap : UInt
+
+pub let err_invalid_delta_format : UInt
+
+pub let err_invalid_eblc : UInt
+
+pub let err_invalid_gdef : UInt
+
+pub let err_invalid_glyf : UInt
+
+pub let err_invalid_gpos : UInt
+
+pub let err_invalid_gsub : UInt
+
+pub let err_invalid_hdmx : UInt
+
+pub let err_invalid_head : UInt
+
+pub let err_invalid_hhea : UInt
+
+pub let err_invalid_hhea_or_vhea : UInt
+
+pub let err_invalid_hmtx : UInt
+
+pub let err_invalid_hmtx_or_vmtx : UInt
+
+pub let err_invalid_jstf : UInt
+
+pub let err_invalid_loca : UInt
+
+pub let err_invalid_ltsh : UInt
+
+pub let err_invalid_maxp : UInt
+
+pub let err_invalid_merge_checksums : UInt
+
+pub let err_invalid_merge_formats : UInt
+
+pub let err_invalid_merge_numglyphs : UInt
+
+pub let err_invalid_name : UInt
+
+pub let err_invalid_os2 : UInt
+
+pub let err_invalid_post : UInt
+
+pub let err_invalid_ttc_index : UInt
+
+pub let err_invalid_tto : UInt
+
+pub let err_invalid_vdmx : UInt
+
+pub let err_invalid_vhea : UInt
+
+pub let err_invalid_vmtx : UInt
+
+pub let err_mem : UInt
+
+pub let err_missing_cmap : UInt
+
+pub let err_missing_ebdt : UInt
+
+pub let err_missing_glyf : UInt
+
+pub let err_missing_head : UInt
+
+pub let err_missing_hhea : UInt
+
+pub let err_missing_hhea_or_vhea : UInt
+
+pub let err_missing_hmtx : UInt
+
+pub let err_missing_hmtx_or_vmtx : UInt
+
+pub let err_missing_loca : UInt
+
+pub let err_missing_maxp : UInt
+
+pub let err_missing_name : UInt
+
+pub let err_missing_os2 : UInt
+
+pub let err_missing_post : UInt
+
+pub let err_missing_vhea : UInt
+
+pub let err_missing_vmtx : UInt
+
+pub let err_no_glyphs : UInt
+
+pub let err_not_ttc : UInt
+
+pub let err_parameter0 : UInt
+
+pub let err_parameter1 : UInt
+
+pub let err_parameter10 : UInt
+
+pub let err_parameter11 : UInt
+
+pub let err_parameter12 : UInt
+
+pub let err_parameter13 : UInt
+
+pub let err_parameter14 : UInt
+
+pub let err_parameter15 : UInt
+
+pub let err_parameter16 : UInt
+
+pub let err_parameter2 : UInt
+
+pub let err_parameter3 : UInt
+
+pub let err_parameter4 : UInt
+
+pub let err_parameter5 : UInt
+
+pub let err_parameter6 : UInt
+
+pub let err_parameter7 : UInt
+
+pub let err_parameter8 : UInt
+
+pub let err_parameter9 : UInt
+
+pub let err_readcontrol : UInt
+
+pub let err_readoutofbounds : UInt
+
+pub let err_version : UInt
+
+pub let err_would_grow : UInt
+
+pub let err_writecontrol : UInt
+
+pub let err_writeoutofbounds : UInt
+
+pub let error : Int
+
+pub fn exclude_clip_rect(@core.RawAddress, Int, Int, Int, Int) -> @9ab35bf48b3f5013.GDIREGIONTYPE_7d5d6fc66eee raise @core.WindowsError
+
+pub fn exclude_clip_rect_raw(@core.RawAddress, Int, Int, Int, Int) -> Int
+
+pub fn exclude_update_rgn(@core.RawAddress, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn exclude_update_rgn_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn ext_create_pen(UInt, UInt, @9ab35bf48b3f5013.LOGBRUSH_adc275c2cafa, UInt, @core.RawAddress) -> @core.RawAddress raise @core.WindowsError
+
+pub fn ext_create_pen_raw(UInt, UInt, @core.RawAddress, UInt, @core.RawAddress) -> @core.RawAddress
+
+pub fn ext_create_region(@9ab35bf48b3f5013.XFORM_86562134bd5e?, UInt, @9ab35bf48b3f5013.RGNDATA_0563e9676406) -> @core.RawAddress raise @core.WindowsError
+
+pub fn ext_create_region_raw(@core.RawAddress, UInt, @core.RawAddress) -> @core.RawAddress
+
+pub let ext_device_caps : UInt
+
+pub fn ext_flood_fill(@core.RawAddress, Int, Int, UInt, @9ab35bf48b3f5013.EXTFLOODFILLTYPE_5513b0a2564f) -> Bool raise @core.WindowsError
+
+pub fn ext_flood_fill_raw(@core.RawAddress, Int, Int, UInt, UInt) -> Int
+
+pub fn ext_select_clip_rgn(@core.RawAddress, @core.RawAddress, @9ab35bf48b3f5013.RGNCOMBINEMODE_bc3734442525) -> @9ab35bf48b3f5013.GDIREGIONTYPE_7d5d6fc66eee raise @core.WindowsError
+
+pub fn ext_select_clip_rgn_raw(@core.RawAddress, @core.RawAddress, Int) -> Int
+
+pub fn ext_text_out_a(@core.RawAddress, Int, Int, @9ab35bf48b3f5013.ETOOPTIONS_cf3f10aa82d6, @fb66f520d7e12332.RECT_dc5b788d9702?, @strings.PStr?, UInt, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn ext_text_out_a_raw(@core.RawAddress, Int, Int, UInt, @core.RawAddress, @core.RawAddress, UInt, @core.RawAddress) -> Int
+
+pub fn ext_text_out_w(@core.RawAddress, Int, Int, @9ab35bf48b3f5013.ETOOPTIONS_cf3f10aa82d6, @fb66f520d7e12332.RECT_dc5b788d9702?, @strings.PWStr?, UInt, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn ext_text_out_w_raw(@core.RawAddress, Int, Int, UInt, @core.RawAddress, @core.RawAddress, UInt, @core.RawAddress) -> Int
+
+pub let exttextout : UInt
+
+pub let featuresetting_custpaper : UInt
+
+pub let featuresetting_mirror : UInt
+
+pub let featuresetting_negative : UInt
+
+pub let featuresetting_nup : UInt
+
+pub let featuresetting_output : UInt
+
+pub let featuresetting_private_begin : UInt
+
+pub let featuresetting_private_end : UInt
+
+pub let featuresetting_protocol : UInt
+
+pub let featuresetting_pslevel : UInt
+
+pub fn fill_path(@core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn fill_path_raw(@core.RawAddress) -> Int
+
+pub fn fill_rect(@core.RawAddress, @fb66f520d7e12332.RECT_dc5b788d9702, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn fill_rect_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn fill_rgn(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn fill_rgn_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn fix_brush_org_ex(@core.RawAddress, Int, Int, @fb66f520d7e12332.POINT_48d934d62b68?) -> Bool raise @core.WindowsError
+
+pub fn fix_brush_org_ex_raw(@core.RawAddress, Int, Int, @core.RawAddress) -> Int
+
+pub fn flatten_path(@core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn flatten_path_raw(@core.RawAddress) -> Int
+
+pub let fli_glyphs : Int
+
+pub let fli_mask : UInt
+
+pub fn flood_fill(@core.RawAddress, Int, Int, UInt) -> Bool raise @core.WindowsError
+
+pub fn flood_fill_raw(@core.RawAddress, Int, Int, UInt) -> Int
+
+pub let flushoutput : UInt
+
+pub let fontmapper_max : UInt
+
+pub fn frame_rect(@core.RawAddress, @fb66f520d7e12332.RECT_dc5b788d9702, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn frame_rect_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn frame_rgn(@core.RawAddress, @core.RawAddress, @core.RawAddress, Int, Int) -> Bool raise @core.WindowsError
+
+pub fn frame_rgn_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, Int, Int) -> Int
+
+pub let fs_arabic : Int
+
+pub let fs_baltic : Int
+
+pub let fs_chinesesimp : Int
+
+pub let fs_chinesetrad : Int
+
+pub let fs_cyrillic : Int
+
+pub let fs_greek : Int
+
+pub let fs_hebrew : Int
+
+pub let fs_jisjapan : Int
+
+pub let fs_johab : Int
+
+pub let fs_latin1 : Int
+
+pub let fs_latin2 : Int
+
+pub let fs_symbol : Int
+
+pub let fs_thai : Int
+
+pub let fs_turkish : Int
+
+pub let fs_vietnamese : Int
+
+pub let fs_wansung : Int
+
+pub let gcp_dbcs : UInt
+
+pub let gcp_error : UInt
+
+pub let gcp_justifyin : Int
+
+pub let gcpclass_arabic : UInt
+
+pub let gcpclass_hebrew : UInt
+
+pub let gcpclass_latin : UInt
+
+pub let gcpclass_latinnumber : UInt
+
+pub let gcpclass_latinnumericseparator : UInt
+
+pub let gcpclass_latinnumericterminator : UInt
+
+pub let gcpclass_localnumber : UInt
+
+pub let gcpclass_neutral : UInt
+
+pub let gcpclass_numericseparator : UInt
+
+pub let gcpclass_postboundltr : UInt
+
+pub let gcpclass_postboundrtl : UInt
+
+pub let gcpclass_preboundltr : UInt
+
+pub let gcpclass_preboundrtl : UInt
+
+pub let gcpglyph_linkafter : UInt
+
+pub let gcpglyph_linkbefore : UInt
+
+pub fn gdi_alpha_blend(@core.RawAddress, Int, Int, Int, Int, @core.RawAddress, Int, Int, Int, Int, @9ab35bf48b3f5013.BLENDFUNCTION_b6a4186789c1) -> Bool raise @core.WindowsError
+
+pub fn gdi_alpha_blend_raw(@core.RawAddress, Int, Int, Int, Int, @core.RawAddress, Int, Int, Int, Int, Bytes) -> Int
+
+pub fn gdi_comment(@core.RawAddress, UInt, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn gdi_comment_raw(@core.RawAddress, UInt, @core.RawAddress) -> Int
+
+pub let gdi_error : Int
+
+pub fn gdi_flush() -> Bool raise @core.WindowsError
+
+pub fn gdi_flush_raw() -> Int
+
+pub fn gdi_get_batch_limit() -> UInt raise @core.WindowsError
+
+pub fn gdi_get_batch_limit_raw() -> UInt
+
+pub fn gdi_gradient_fill(@core.RawAddress, @9ab35bf48b3f5013.TRIVERTEX_17306fe7465d, UInt, @core.RawAddress, UInt, @9ab35bf48b3f5013.GRADIENTFILL_ac48e85ef1ec) -> Bool raise @core.WindowsError
+
+pub fn gdi_gradient_fill_raw(@core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, UInt, UInt) -> Int
+
+pub fn gdi_set_batch_limit(UInt) -> UInt raise @core.WindowsError
+
+pub fn gdi_set_batch_limit_raw(UInt) -> UInt
+
+pub fn gdi_transparent_blt(@core.RawAddress, Int, Int, Int, Int, @core.RawAddress, Int, Int, Int, Int, UInt) -> Bool raise @core.WindowsError
+
+pub fn gdi_transparent_blt_raw(@core.RawAddress, Int, Int, Int, Int, @core.RawAddress, Int, Int, Int, Int, UInt) -> Int
+
+pub let gdicomment_begingroup : UInt
+
+pub let gdicomment_endgroup : UInt
+
+pub let gdicomment_identifier : UInt
+
+pub let gdicomment_multiformats : UInt
+
+pub let gdicomment_unicode_end : UInt
+
+pub let gdicomment_unicode_string : UInt
+
+pub let gdicomment_windows_metafile : UInt
+
+pub let gdiplus_ts_queryver : UInt
+
+pub let gdiplus_ts_record : UInt
+
+pub let gdiregisterddrawpacketversion : UInt
+
+pub fn get_arc_direction(@core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn get_arc_direction_raw(@core.RawAddress) -> Int
+
+pub fn get_aspect_ratio_filter_ex(@core.RawAddress, @fb66f520d7e12332.SIZE_11175f7b4ee1) -> Bool raise @core.WindowsError
+
+pub fn get_aspect_ratio_filter_ex_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn get_bitmap_bits(@core.RawAddress, Int, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn get_bitmap_bits_raw(@core.RawAddress, Int, @core.RawAddress) -> Int
+
+pub fn get_bitmap_dimension_ex(@core.RawAddress, @fb66f520d7e12332.SIZE_11175f7b4ee1) -> Bool raise @core.WindowsError
+
+pub fn get_bitmap_dimension_ex_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn get_bk_color(@core.RawAddress) -> UInt raise @core.WindowsError
+
+pub fn get_bk_color_raw(@core.RawAddress) -> UInt
+
+pub fn get_bk_mode(@core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn get_bk_mode_raw(@core.RawAddress) -> Int
+
+pub fn get_bounds_rect(@core.RawAddress, @fb66f520d7e12332.RECT_dc5b788d9702, UInt) -> UInt raise @core.WindowsError
+
+pub fn get_bounds_rect_raw(@core.RawAddress, @core.RawAddress, UInt) -> UInt
+
+pub fn get_brush_org_ex(@core.RawAddress, @fb66f520d7e12332.POINT_48d934d62b68) -> Bool raise @core.WindowsError
+
+pub fn get_brush_org_ex_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn get_char_abc_widths_a(@core.RawAddress, UInt, UInt, @9ab35bf48b3f5013.ABC_e9641a1097d9) -> Bool raise @core.WindowsError
+
+pub fn get_char_abc_widths_a_raw(@core.RawAddress, UInt, UInt, @core.RawAddress) -> Int
+
+pub fn get_char_abc_widths_float_a(@core.RawAddress, UInt, UInt, @9ab35bf48b3f5013.ABCFLOAT_3c06a3c4faed) -> Bool raise @core.WindowsError
+
+pub fn get_char_abc_widths_float_a_raw(@core.RawAddress, UInt, UInt, @core.RawAddress) -> Int
+
+pub fn get_char_abc_widths_float_w(@core.RawAddress, UInt, UInt, @9ab35bf48b3f5013.ABCFLOAT_3c06a3c4faed) -> Bool raise @core.WindowsError
+
+pub fn get_char_abc_widths_float_w_raw(@core.RawAddress, UInt, UInt, @core.RawAddress) -> Int
+
+pub fn get_char_abc_widths_i(@core.RawAddress, UInt, UInt, @core.RawAddress, @9ab35bf48b3f5013.ABC_e9641a1097d9) -> Bool raise @core.WindowsError
+
+pub fn get_char_abc_widths_i_raw(@core.RawAddress, UInt, UInt, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn get_char_abc_widths_w(@core.RawAddress, UInt, UInt, @9ab35bf48b3f5013.ABC_e9641a1097d9) -> Bool raise @core.WindowsError
+
+pub fn get_char_abc_widths_w_raw(@core.RawAddress, UInt, UInt, @core.RawAddress) -> Int
+
+pub fn get_char_width32_a(@core.RawAddress, UInt, UInt, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn get_char_width32_a_raw(@core.RawAddress, UInt, UInt, @core.RawAddress) -> Int
+
+pub fn get_char_width32_w(@core.RawAddress, UInt, UInt, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn get_char_width32_w_raw(@core.RawAddress, UInt, UInt, @core.RawAddress) -> Int
+
+pub fn get_char_width_a(@core.RawAddress, UInt, UInt, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn get_char_width_a_raw(@core.RawAddress, UInt, UInt, @core.RawAddress) -> Int
+
+pub fn get_char_width_float_a(@core.RawAddress, UInt, UInt, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn get_char_width_float_a_raw(@core.RawAddress, UInt, UInt, @core.RawAddress) -> Int
+
+pub fn get_char_width_float_w(@core.RawAddress, UInt, UInt, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn get_char_width_float_w_raw(@core.RawAddress, UInt, UInt, @core.RawAddress) -> Int
+
+pub fn get_char_width_i(@core.RawAddress, UInt, UInt, @core.RawAddress, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn get_char_width_i_raw(@core.RawAddress, UInt, UInt, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn get_char_width_w(@core.RawAddress, UInt, UInt, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn get_char_width_w_raw(@core.RawAddress, UInt, UInt, @core.RawAddress) -> Int
+
+pub fn get_character_placement_a(@core.RawAddress, @strings.PStr, Int, Int, @9ab35bf48b3f5013.GCPRESULTSA_f724004dd15d, @9ab35bf48b3f5013.GETCHARACTERPLACEMENTFLAGS_8fff810b471f) -> UInt raise @core.WindowsError
+
+pub fn get_character_placement_a_raw(@core.RawAddress, @core.RawAddress, Int, Int, @core.RawAddress, UInt) -> UInt
+
+pub fn get_character_placement_w(@core.RawAddress, @strings.PWStr, Int, Int, @9ab35bf48b3f5013.GCPRESULTSW_78384454d96b, @9ab35bf48b3f5013.GETCHARACTERPLACEMENTFLAGS_8fff810b471f) -> UInt raise @core.WindowsError
+
+pub fn get_character_placement_w_raw(@core.RawAddress, @core.RawAddress, Int, Int, @core.RawAddress, UInt) -> UInt
+
+pub fn get_clip_box(@core.RawAddress, @fb66f520d7e12332.RECT_dc5b788d9702) -> @9ab35bf48b3f5013.GDIREGIONTYPE_7d5d6fc66eee raise @core.WindowsError
+
+pub fn get_clip_box_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn get_clip_rgn(@core.RawAddress, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn get_clip_rgn_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn get_color_adjustment(@core.RawAddress, @9ab35bf48b3f5013.COLORADJUSTMENT_97287d41ad11) -> Bool raise @core.WindowsError
+
+pub fn get_color_adjustment_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn get_current_object(@core.RawAddress, UInt) -> @core.RawAddress raise @core.WindowsError
+
+pub fn get_current_object_raw(@core.RawAddress, UInt) -> @core.RawAddress
+
+pub fn get_current_position_ex(@core.RawAddress, @fb66f520d7e12332.POINT_48d934d62b68) -> Bool raise @core.WindowsError
+
+pub fn get_current_position_ex_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn get_dc(@core.RawAddress) -> @core.RawAddress raise @core.WindowsError
+
+pub fn get_dc_brush_color(@core.RawAddress) -> UInt raise @core.WindowsError
+
+pub fn get_dc_brush_color_raw(@core.RawAddress) -> UInt
+
+pub fn get_dc_ex(@core.RawAddress, @core.RawAddress, @9ab35bf48b3f5013.GETDCXFLAGS_2ae92f160c29) -> @core.RawAddress raise @core.WindowsError
+
+pub fn get_dc_ex_raw(@core.RawAddress, @core.RawAddress, UInt) -> @core.RawAddress
+
+pub fn get_dc_org_ex(@core.RawAddress, @fb66f520d7e12332.POINT_48d934d62b68) -> Bool raise @core.WindowsError
+
+pub fn get_dc_org_ex_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn get_dc_pen_color(@core.RawAddress) -> UInt raise @core.WindowsError
+
+pub fn get_dc_pen_color_raw(@core.RawAddress) -> UInt
+
+pub fn get_dc_raw(@core.RawAddress) -> @core.RawAddress
+
+pub fn get_device_caps(@core.RawAddress, Int) -> Int raise @core.WindowsError
+
+pub fn get_device_caps_raw(@core.RawAddress, Int) -> Int
+
+pub fn get_di_bits(@core.RawAddress, @core.RawAddress, UInt, UInt, @core.RawAddress, @9ab35bf48b3f5013.BITMAPINFO_07d884578fc1, @9ab35bf48b3f5013.DIBUSAGE_4bf208a4cd1e) -> Int raise @core.WindowsError
+
+pub fn get_di_bits_raw(@core.RawAddress, @core.RawAddress, UInt, UInt, @core.RawAddress, @core.RawAddress, UInt) -> Int
+
+pub fn get_dib_color_table(@core.RawAddress, UInt, UInt, @9ab35bf48b3f5013.RGBQUAD_97ec12d91090) -> UInt raise @core.WindowsError
+
+pub fn get_dib_color_table_raw(@core.RawAddress, UInt, UInt, @core.RawAddress) -> UInt
+
+pub fn get_enh_meta_file_a(@strings.PStr) -> @core.RawAddress raise @core.WindowsError
+
+pub fn get_enh_meta_file_a_raw(@core.RawAddress) -> @core.RawAddress
+
+pub fn get_enh_meta_file_bits(@core.RawAddress, UInt, @core.RawAddress) -> UInt raise @core.WindowsError
+
+pub fn get_enh_meta_file_bits_raw(@core.RawAddress, UInt, @core.RawAddress) -> UInt
+
+pub fn get_enh_meta_file_description_a(@core.RawAddress, UInt, @core.RawAddress) -> UInt raise @core.WindowsError
+
+pub fn get_enh_meta_file_description_a_raw(@core.RawAddress, UInt, @core.RawAddress) -> UInt
+
+pub fn get_enh_meta_file_description_w(@core.RawAddress, @strings.PWStrBuffer?) -> UInt raise @core.WindowsError
+
+pub fn get_enh_meta_file_description_w_raw(@core.RawAddress, UInt, @core.RawAddress) -> UInt
+
+pub fn get_enh_meta_file_header(@core.RawAddress, UInt, @9ab35bf48b3f5013.ENHMETAHEADER_7de4a8af42b1?) -> UInt raise @core.WindowsError
+
+pub fn get_enh_meta_file_header_raw(@core.RawAddress, UInt, @core.RawAddress) -> UInt
+
+pub fn get_enh_meta_file_palette_entries(@core.RawAddress, UInt, @9ab35bf48b3f5013.PALETTEENTRY_5450403ccf8e?) -> UInt raise @core.WindowsError
+
+pub fn get_enh_meta_file_palette_entries_raw(@core.RawAddress, UInt, @core.RawAddress) -> UInt
+
+pub fn get_enh_meta_file_w(@strings.PWStr) -> @core.RawAddress raise @core.WindowsError
+
+pub fn get_enh_meta_file_w_raw(@core.RawAddress) -> @core.RawAddress
+
+pub fn get_font_data(@core.RawAddress, UInt, UInt, @core.RawAddress, UInt) -> UInt raise @core.WindowsError
+
+pub fn get_font_data_raw(@core.RawAddress, UInt, UInt, @core.RawAddress, UInt) -> UInt
+
+pub fn get_font_language_info(@core.RawAddress) -> UInt raise @core.WindowsError
+
+pub fn get_font_language_info_raw(@core.RawAddress) -> UInt
+
+pub fn get_font_unicode_ranges(@core.RawAddress, @9ab35bf48b3f5013.GLYPHSET_fbe75b4a8e65?) -> UInt raise @core.WindowsError
+
+pub fn get_font_unicode_ranges_raw(@core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn get_glyph_indices_a(@core.RawAddress, @strings.PStr, Int, @core.RawAddress, UInt) -> UInt raise @core.WindowsError
+
+pub fn get_glyph_indices_a_raw(@core.RawAddress, @core.RawAddress, Int, @core.RawAddress, UInt) -> UInt
+
+pub fn get_glyph_indices_w(@core.RawAddress, @strings.PWStr, Int, @core.RawAddress, UInt) -> UInt raise @core.WindowsError
+
+pub fn get_glyph_indices_w_raw(@core.RawAddress, @core.RawAddress, Int, @core.RawAddress, UInt) -> UInt
+
+pub fn get_glyph_outline_a(@core.RawAddress, UInt, @9ab35bf48b3f5013.GETGLYPHOUTLINEFORMAT_3257e66f32f4, @9ab35bf48b3f5013.GLYPHMETRICS_3d88f7e2b2b1, UInt, @core.RawAddress, @9ab35bf48b3f5013.MAT2_432e5e24dc40) -> UInt raise @core.WindowsError
+
+pub fn get_glyph_outline_a_raw(@core.RawAddress, UInt, UInt, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn get_glyph_outline_w(@core.RawAddress, UInt, @9ab35bf48b3f5013.GETGLYPHOUTLINEFORMAT_3257e66f32f4, @9ab35bf48b3f5013.GLYPHMETRICS_3d88f7e2b2b1, UInt, @core.RawAddress, @9ab35bf48b3f5013.MAT2_432e5e24dc40) -> UInt raise @core.WindowsError
+
+pub fn get_glyph_outline_w_raw(@core.RawAddress, UInt, UInt, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn get_graphics_mode(@core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn get_graphics_mode_raw(@core.RawAddress) -> Int
+
+pub fn get_kerning_pairs_a(@core.RawAddress, UInt, @9ab35bf48b3f5013.KERNINGPAIR_42dc36701a6e?) -> UInt raise @core.WindowsError
+
+pub fn get_kerning_pairs_a_raw(@core.RawAddress, UInt, @core.RawAddress) -> UInt
+
+pub fn get_kerning_pairs_w(@core.RawAddress, UInt, @9ab35bf48b3f5013.KERNINGPAIR_42dc36701a6e?) -> UInt raise @core.WindowsError
+
+pub fn get_kerning_pairs_w_raw(@core.RawAddress, UInt, @core.RawAddress) -> UInt
+
+pub fn get_layout(@core.RawAddress) -> UInt raise @core.WindowsError
+
+pub fn get_layout_raw(@core.RawAddress) -> @core.RawWin32Call[UInt]
+
+pub fn get_map_mode(@core.RawAddress) -> @9ab35bf48b3f5013.HDCMAPMODE_6e9ca3142aa8 raise @core.WindowsError
+
+pub fn get_map_mode_raw(@core.RawAddress) -> Int
+
+pub fn get_meta_file_a(@strings.PStr) -> @core.RawAddress raise @core.WindowsError
+
+pub fn get_meta_file_a_raw(@core.RawAddress) -> @core.RawAddress
+
+pub fn get_meta_file_bits_ex(@core.RawAddress, UInt, @core.RawAddress) -> UInt raise @core.WindowsError
+
+pub fn get_meta_file_bits_ex_raw(@core.RawAddress, UInt, @core.RawAddress) -> UInt
+
+pub fn get_meta_file_w(@strings.PWStr) -> @core.RawAddress raise @core.WindowsError
+
+pub fn get_meta_file_w_raw(@core.RawAddress) -> @core.RawAddress
+
+pub fn get_meta_rgn(@core.RawAddress, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn get_meta_rgn_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn get_miter_limit(@core.RawAddress, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn get_miter_limit_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn get_monitor_info_a(@core.RawAddress, @9ab35bf48b3f5013.MONITORINFO_e1d08b361c91) -> Bool raise @core.WindowsError
+
+pub fn get_monitor_info_a_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn get_monitor_info_w(@core.RawAddress, @9ab35bf48b3f5013.MONITORINFO_e1d08b361c91) -> Bool raise @core.WindowsError
+
+pub fn get_monitor_info_w_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn get_nearest_color(@core.RawAddress, UInt) -> UInt raise @core.WindowsError
+
+pub fn get_nearest_color_raw(@core.RawAddress, UInt) -> UInt
+
+pub fn get_nearest_palette_index(@core.RawAddress, UInt) -> UInt raise @core.WindowsError
+
+pub fn get_nearest_palette_index_raw(@core.RawAddress, UInt) -> UInt
+
+pub fn get_object_a(@core.RawAddress, Int, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn get_object_a_raw(@core.RawAddress, Int, @core.RawAddress) -> Int
+
+pub fn get_object_type(@core.RawAddress) -> UInt raise @core.WindowsError
+
+pub fn get_object_type_raw(@core.RawAddress) -> UInt
+
+pub fn get_object_w(@core.RawAddress, Int, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn get_object_w_raw(@core.RawAddress, Int, @core.RawAddress) -> Int
+
+pub fn get_outline_text_metrics_a(@core.RawAddress, UInt, @9ab35bf48b3f5013.OUTLINETEXTMETRICA_ba2673eef1c5?) -> UInt raise @core.WindowsError
+
+pub fn get_outline_text_metrics_a_raw(@core.RawAddress, UInt, @core.RawAddress) -> UInt
+
+pub fn get_outline_text_metrics_w(@core.RawAddress, UInt, @9ab35bf48b3f5013.OUTLINETEXTMETRICW_b788bf30db0e?) -> UInt raise @core.WindowsError
+
+pub fn get_outline_text_metrics_w_raw(@core.RawAddress, UInt, @core.RawAddress) -> UInt
+
+pub fn get_palette_entries(@core.RawAddress, UInt, UInt, @9ab35bf48b3f5013.PALETTEENTRY_5450403ccf8e?) -> UInt raise @core.WindowsError
+
+pub fn get_palette_entries_raw(@core.RawAddress, UInt, UInt, @core.RawAddress) -> UInt
+
+pub fn get_path(@core.RawAddress, @fb66f520d7e12332.POINT_48d934d62b68?, @core.RawAddress, Int) -> Int raise @core.WindowsError
+
+pub fn get_path_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, Int) -> Int
+
+pub fn get_pixel(@core.RawAddress, Int, Int) -> UInt raise @core.WindowsError
+
+pub fn get_pixel_raw(@core.RawAddress, Int, Int) -> UInt
+
+pub fn get_poly_fill_mode(@core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn get_poly_fill_mode_raw(@core.RawAddress) -> Int
+
+pub let get_ps_featuresetting : UInt
+
+pub fn get_random_rgn(@core.RawAddress, @core.RawAddress, Int) -> Int raise @core.WindowsError
+
+pub fn get_random_rgn_raw(@core.RawAddress, @core.RawAddress, Int) -> Int
+
+pub fn get_rasterizer_caps(@9ab35bf48b3f5013.RASTERIZERSTATUS_76a845547032, UInt) -> Bool raise @core.WindowsError
+
+pub fn get_rasterizer_caps_raw(@core.RawAddress, UInt) -> Int
+
+pub fn get_region_data(@core.RawAddress, UInt, @9ab35bf48b3f5013.RGNDATA_0563e9676406?) -> UInt raise @core.WindowsError
+
+pub fn get_region_data_raw(@core.RawAddress, UInt, @core.RawAddress) -> UInt
+
+pub fn get_rgn_box(@core.RawAddress, @fb66f520d7e12332.RECT_dc5b788d9702) -> @9ab35bf48b3f5013.GDIREGIONTYPE_7d5d6fc66eee raise @core.WindowsError
+
+pub fn get_rgn_box_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn get_rop2(@core.RawAddress) -> @9ab35bf48b3f5013.R2MODE_bb2bdb09f3c7 raise @core.WindowsError
+
+pub fn get_rop2_raw(@core.RawAddress) -> Int
+
+pub fn get_stock_object(@9ab35bf48b3f5013.GETSTOCKOBJECTFLAGS_1b8e3aabd100) -> @core.RawAddress raise @core.WindowsError
+
+pub fn get_stock_object_raw(Int) -> @core.RawAddress
+
+pub fn get_stretch_blt_mode(@core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn get_stretch_blt_mode_raw(@core.RawAddress) -> Int
+
+pub fn get_sys_color(@9ab35bf48b3f5013.SYSCOLORINDEX_fc107aa11c32) -> UInt raise @core.WindowsError
+
+pub fn get_sys_color_brush(@9ab35bf48b3f5013.SYSCOLORINDEX_fc107aa11c32) -> @core.RawAddress raise @core.WindowsError
+
+pub fn get_sys_color_brush_raw(Int) -> @core.RawAddress
+
+pub fn get_sys_color_raw(Int) -> UInt
+
+pub fn get_system_palette_entries(@core.RawAddress, UInt, UInt, @9ab35bf48b3f5013.PALETTEENTRY_5450403ccf8e?) -> UInt raise @core.WindowsError
+
+pub fn get_system_palette_entries_raw(@core.RawAddress, UInt, UInt, @core.RawAddress) -> UInt
+
+pub fn get_system_palette_use(@core.RawAddress) -> UInt raise @core.WindowsError
+
+pub fn get_system_palette_use_raw(@core.RawAddress) -> UInt
+
+pub fn get_tabbed_text_extent_a(@core.RawAddress, @strings.PStr, Int, Int, @core.RawAddress) -> UInt raise @core.WindowsError
+
+pub fn get_tabbed_text_extent_a_raw(@core.RawAddress, @core.RawAddress, Int, Int, @core.RawAddress) -> UInt
+
+pub fn get_tabbed_text_extent_w(@core.RawAddress, @strings.PWStr, Int, Int, @core.RawAddress) -> UInt raise @core.WindowsError
+
+pub fn get_tabbed_text_extent_w_raw(@core.RawAddress, @core.RawAddress, Int, Int, @core.RawAddress) -> UInt
+
+pub fn get_text_align(@core.RawAddress) -> @9ab35bf48b3f5013.TEXTALIGNOPTIONS_dcc3eb211152 raise @core.WindowsError
+
+pub fn get_text_align_raw(@core.RawAddress) -> UInt
+
+pub fn get_text_character_extra(@core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn get_text_character_extra_raw(@core.RawAddress) -> Int
+
+pub fn get_text_color(@core.RawAddress) -> UInt raise @core.WindowsError
+
+pub fn get_text_color_raw(@core.RawAddress) -> UInt
+
+pub fn get_text_extent_ex_point_a(@core.RawAddress, @strings.PStr, Int, Int, @core.RawAddress, @core.RawAddress, @fb66f520d7e12332.SIZE_11175f7b4ee1) -> Bool raise @core.WindowsError
+
+pub fn get_text_extent_ex_point_a_raw(@core.RawAddress, @core.RawAddress, Int, Int, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn get_text_extent_ex_point_i(@core.RawAddress, @core.RawAddress, Int, Int, @core.RawAddress, @core.RawAddress, @fb66f520d7e12332.SIZE_11175f7b4ee1) -> Bool raise @core.WindowsError
+
+pub fn get_text_extent_ex_point_i_raw(@core.RawAddress, @core.RawAddress, Int, Int, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn get_text_extent_ex_point_w(@core.RawAddress, @strings.PWStr, Int, Int, @core.RawAddress, @core.RawAddress, @fb66f520d7e12332.SIZE_11175f7b4ee1) -> Bool raise @core.WindowsError
+
+pub fn get_text_extent_ex_point_w_raw(@core.RawAddress, @core.RawAddress, Int, Int, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn get_text_extent_point32_a(@core.RawAddress, @strings.PStr, Int, @fb66f520d7e12332.SIZE_11175f7b4ee1) -> Bool raise @core.WindowsError
+
+pub fn get_text_extent_point32_a_raw(@core.RawAddress, @core.RawAddress, Int, @core.RawAddress) -> Int
+
+pub fn get_text_extent_point32_w(@core.RawAddress, @strings.PWStr, Int, @fb66f520d7e12332.SIZE_11175f7b4ee1) -> Bool raise @core.WindowsError
+
+pub fn get_text_extent_point32_w_raw(@core.RawAddress, @core.RawAddress, Int, @core.RawAddress) -> Int
+
+pub fn get_text_extent_point_a(@core.RawAddress, @strings.PStr, Int, @fb66f520d7e12332.SIZE_11175f7b4ee1) -> Bool raise @core.WindowsError
+
+pub fn get_text_extent_point_a_raw(@core.RawAddress, @core.RawAddress, Int, @core.RawAddress) -> Int
+
+pub fn get_text_extent_point_i(@core.RawAddress, @core.RawAddress, Int, @fb66f520d7e12332.SIZE_11175f7b4ee1) -> Bool raise @core.WindowsError
+
+pub fn get_text_extent_point_i_raw(@core.RawAddress, @core.RawAddress, Int, @core.RawAddress) -> Int
+
+pub fn get_text_extent_point_w(@core.RawAddress, @strings.PWStr, Int, @fb66f520d7e12332.SIZE_11175f7b4ee1) -> Bool raise @core.WindowsError
+
+pub fn get_text_extent_point_w_raw(@core.RawAddress, @core.RawAddress, Int, @core.RawAddress) -> Int
+
+pub fn get_text_face_a(@core.RawAddress, Int, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn get_text_face_a_raw(@core.RawAddress, Int, @core.RawAddress) -> Int
+
+pub fn get_text_face_w(@core.RawAddress, @strings.PWStrBuffer?) -> Int raise @core.WindowsError
+
+pub fn get_text_face_w_raw(@core.RawAddress, Int, @core.RawAddress) -> Int
+
+pub fn get_text_metrics_a(@core.RawAddress, @9ab35bf48b3f5013.TEXTMETRICA_3f3a05a4ed80) -> Bool raise @core.WindowsError
+
+pub fn get_text_metrics_a_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn get_text_metrics_w(@core.RawAddress, @9ab35bf48b3f5013.TEXTMETRICW_e91124706cac) -> Bool raise @core.WindowsError
+
+pub fn get_text_metrics_w_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn get_update_rect(@core.RawAddress, @fb66f520d7e12332.RECT_dc5b788d9702?, Int) -> Bool raise @core.WindowsError
+
+pub fn get_update_rect_raw(@core.RawAddress, @core.RawAddress, Int) -> Int
+
+pub fn get_update_rgn(@core.RawAddress, @core.RawAddress, Int) -> @9ab35bf48b3f5013.GDIREGIONTYPE_7d5d6fc66eee raise @core.WindowsError
+
+pub fn get_update_rgn_raw(@core.RawAddress, @core.RawAddress, Int) -> Int
+
+pub fn get_viewport_ext_ex(@core.RawAddress, @fb66f520d7e12332.SIZE_11175f7b4ee1) -> Bool raise @core.WindowsError
+
+pub fn get_viewport_ext_ex_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn get_viewport_org_ex(@core.RawAddress, @fb66f520d7e12332.POINT_48d934d62b68) -> Bool raise @core.WindowsError
+
+pub fn get_viewport_org_ex_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn get_win_meta_file_bits(@core.RawAddress, UInt, @core.RawAddress, Int, @core.RawAddress) -> UInt raise @core.WindowsError
+
+pub fn get_win_meta_file_bits_raw(@core.RawAddress, UInt, @core.RawAddress, Int, @core.RawAddress) -> UInt
+
+pub fn get_window_dc(@core.RawAddress) -> @core.RawAddress raise @core.WindowsError
+
+pub fn get_window_dc_raw(@core.RawAddress) -> @core.RawAddress
+
+pub fn get_window_ext_ex(@core.RawAddress, @fb66f520d7e12332.SIZE_11175f7b4ee1) -> Bool raise @core.WindowsError
+
+pub fn get_window_ext_ex_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn get_window_org_ex(@core.RawAddress, @fb66f520d7e12332.POINT_48d934d62b68) -> Bool raise @core.WindowsError
+
+pub fn get_window_org_ex_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn get_window_rgn(@core.RawAddress, @core.RawAddress) -> @9ab35bf48b3f5013.GDIREGIONTYPE_7d5d6fc66eee raise @core.WindowsError
+
+pub fn get_window_rgn_box(@core.RawAddress, @fb66f520d7e12332.RECT_dc5b788d9702) -> @9ab35bf48b3f5013.GDIREGIONTYPE_7d5d6fc66eee raise @core.WindowsError
+
+pub fn get_window_rgn_box_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn get_window_rgn_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn get_world_transform(@core.RawAddress, @9ab35bf48b3f5013.XFORM_86562134bd5e) -> Bool raise @core.WindowsError
+
+pub fn get_world_transform_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub let getcolortable : UInt
+
+pub let getdeviceunits : UInt
+
+pub let getextendedtextmetrics : UInt
+
+pub let getextenttable : UInt
+
+pub let getfacename : UInt
+
+pub let getpairkerntable : UInt
+
+pub let getpenwidth : UInt
+
+pub let getphyspagesize : UInt
+
+pub let getprintingoffset : UInt
+
+pub let getscalingfactor : UInt
+
+pub let getsetpaperbins : UInt
+
+pub let getsetpapermetrics : UInt
+
+pub let getsetprintorient : UInt
+
+pub let getsetscreenparams : UInt
+
+pub let gettechnolgy : UInt
+
+pub let gettechnology : UInt
+
+pub let gettrackkerntable : UInt
+
+pub let getvectorbrushsize : UInt
+
+pub let getvectorpensize : UInt
+
+pub let ggi_mark_nonexisting_glyphs : UInt
+
+pub let gm_last : UInt
+
+pub fn gradient_fill(@core.RawAddress, @9ab35bf48b3f5013.TRIVERTEX_17306fe7465d, UInt, @core.RawAddress, UInt, @9ab35bf48b3f5013.GRADIENTFILL_ac48e85ef1ec) -> Bool raise @core.WindowsError
+
+pub let gradient_fill_op_flag : UInt
+
+pub fn gradient_fill_raw(@core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, UInt, UInt) -> Int
+
+pub fn gray_string_a(@core.RawAddress, @core.RawAddress, @core.RawAddress, Int64, Int, Int, Int, Int, Int) -> Bool raise @core.WindowsError
+
+pub fn gray_string_a_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, Int64, Int, Int, Int, Int, Int) -> Int
+
+pub fn gray_string_w(@core.RawAddress, @core.RawAddress, @core.RawAddress, Int64, Int, Int, Int, Int, Int) -> Bool raise @core.WindowsError
+
+pub fn gray_string_w_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, Int64, Int, Int, Int, Int, Int) -> Int
+
+pub let gs_8_bit_indices : UInt
+
+pub let hs_api_max : UInt
+
+pub let illuminant_a : UInt
+
+pub let illuminant_b : UInt
+
+pub let illuminant_c : UInt
+
+pub let illuminant_d50 : UInt
+
+pub let illuminant_d55 : UInt
+
+pub let illuminant_d65 : UInt
+
+pub let illuminant_d75 : UInt
+
+pub let illuminant_daylight : UInt
+
+pub let illuminant_device_default : UInt
+
+pub let illuminant_f2 : UInt
+
+pub let illuminant_fluorescent : UInt
+
+pub let illuminant_max_index : UInt
+
+pub let illuminant_ntsc : UInt
+
+pub let illuminant_tungsten : UInt
+
+pub fn inflate_rect(@fb66f520d7e12332.RECT_dc5b788d9702, Int, Int) -> Bool raise @core.WindowsError
+
+pub fn inflate_rect_raw(@core.RawAddress, Int, Int) -> Int
+
+pub fn intersect_clip_rect(@core.RawAddress, Int, Int, Int, Int) -> @9ab35bf48b3f5013.GDIREGIONTYPE_7d5d6fc66eee raise @core.WindowsError
+
+pub fn intersect_clip_rect_raw(@core.RawAddress, Int, Int, Int, Int) -> Int
+
+pub fn intersect_rect(@fb66f520d7e12332.RECT_dc5b788d9702, @fb66f520d7e12332.RECT_dc5b788d9702, @fb66f520d7e12332.RECT_dc5b788d9702) -> Bool raise @core.WindowsError
+
+pub fn intersect_rect_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn invalidate_rect(@core.RawAddress, @fb66f520d7e12332.RECT_dc5b788d9702?, Int) -> Bool raise @core.WindowsError
+
+pub fn invalidate_rect_raw(@core.RawAddress, @core.RawAddress, Int) -> Int
+
+pub fn invalidate_rgn(@core.RawAddress, @core.RawAddress, Int) -> Bool raise @core.WindowsError
+
+pub fn invalidate_rgn_raw(@core.RawAddress, @core.RawAddress, Int) -> Int
+
+pub fn invert_rect(@core.RawAddress, @fb66f520d7e12332.RECT_dc5b788d9702) -> Bool raise @core.WindowsError
+
+pub fn invert_rect_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn invert_rgn(@core.RawAddress, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn invert_rgn_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn is_rect_empty(@fb66f520d7e12332.RECT_dc5b788d9702) -> Bool raise @core.WindowsError
+
+pub fn is_rect_empty_raw(@core.RawAddress) -> Int
+
+pub fn l_pto_dp(@core.RawAddress, @fb66f520d7e12332.POINT_48d934d62b68, Int) -> Bool raise @core.WindowsError
+
+pub fn l_pto_dp_raw(@core.RawAddress, @core.RawAddress, Int) -> Int
+
+pub let layout_btt : UInt
+
+pub let layout_vbh : UInt
+
+pub let lc_interiors : UInt
+
+pub let lc_marker : UInt
+
+pub let lc_none : UInt
+
+pub let lc_polyline : UInt
+
+pub let lc_polymarker : UInt
+
+pub let lc_styled : UInt
+
+pub let lc_wide : UInt
+
+pub let lc_widestyled : UInt
+
+pub let lcs_gm_abs_colorimetric : Int
+
+pub let lcs_gm_business : Int
+
+pub let lcs_gm_graphics : Int
+
+pub let lcs_gm_images : Int
+
+pub let lf_facesize : UInt
+
+pub let lf_fullfacesize : UInt
+
+pub fn line_dda(Int, Int, Int, Int, @core.RawAddress, Int64) -> Bool raise @core.WindowsError
+
+pub fn line_dda_raw(Int, Int, Int, Int, @core.RawAddress, Int64) -> Int
+
+pub fn line_to(@core.RawAddress, Int, Int) -> Bool raise @core.WindowsError
+
+pub fn line_to_raw(@core.RawAddress, Int, Int) -> Int
+
+pub fn load_bitmap_a(@core.RawAddress, @strings.PStr) -> @core.RawAddress raise @core.WindowsError
+
+pub fn load_bitmap_a_raw(@core.RawAddress, @core.RawAddress) -> @core.RawAddress
+
+pub fn load_bitmap_w(@core.RawAddress, @strings.PWStr) -> @core.RawAddress raise @core.WindowsError
+
+pub fn load_bitmap_w_raw(@core.RawAddress, @core.RawAddress) -> @core.RawAddress
+
+pub fn lock_window_update(@core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn lock_window_update_raw(@core.RawAddress) -> Int
+
+pub let lpd_doublebuffer : UInt
+
+pub let lpd_share_accum : UInt
+
+pub let lpd_share_depth : UInt
+
+pub let lpd_share_stencil : UInt
+
+pub let lpd_stereo : UInt
+
+pub let lpd_support_gdi : UInt
+
+pub let lpd_support_opengl : UInt
+
+pub let lpd_swap_copy : UInt
+
+pub let lpd_swap_exchange : UInt
+
+pub let lpd_transparent : UInt
+
+pub let lpd_type_colorindex : UInt
+
+pub let lpd_type_rgba : UInt
+
+pub fn map_window_points(@core.RawAddress, @core.RawAddress, @fb66f520d7e12332.POINT_48d934d62b68, UInt) -> Int raise @core.WindowsError
+
+pub fn map_window_points_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, UInt) -> Int
+
+pub fn mask_blt(@core.RawAddress, Int, Int, Int, Int, @core.RawAddress, Int, Int, @core.RawAddress, Int, Int, UInt) -> Bool raise @core.WindowsError
+
+pub fn mask_blt_raw(@core.RawAddress, Int, Int, Int, Int, @core.RawAddress, Int, Int, @core.RawAddress, Int, Int, UInt) -> Int
+
+pub let maxstretchbltmode : UInt
+
+pub fn merge_font_package(@core.RawAddress, UInt, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress, UInt16, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt raise @core.WindowsError
+
+pub fn merge_font_package_raw(@core.RawAddress, UInt, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub let meta_animatepalette : UInt
+
+pub let meta_arc : UInt
+
+pub let meta_bitblt : UInt
+
+pub let meta_chord : UInt
+
+pub let meta_createbrushindirect : UInt
+
+pub let meta_createfontindirect : UInt
+
+pub let meta_createpalette : UInt
+
+pub let meta_createpatternbrush : UInt
+
+pub let meta_createpenindirect : UInt
+
+pub let meta_createregion : UInt
+
+pub let meta_deleteobject : UInt
+
+pub let meta_dibbitblt : UInt
+
+pub let meta_dibcreatepatternbrush : UInt
+
+pub let meta_dibstretchblt : UInt
+
+pub let meta_ellipse : UInt
+
+pub let meta_escape : UInt
+
+pub let meta_excludecliprect : UInt
+
+pub let meta_extfloodfill : UInt
+
+pub let meta_exttextout : UInt
+
+pub let meta_fillregion : UInt
+
+pub let meta_floodfill : UInt
+
+pub let meta_frameregion : UInt
+
+pub let meta_intersectcliprect : UInt
+
+pub let meta_invertregion : UInt
+
+pub let meta_lineto : UInt
+
+pub let meta_moveto : UInt
+
+pub let meta_offsetcliprgn : UInt
+
+pub let meta_offsetviewportorg : UInt
+
+pub let meta_offsetwindoworg : UInt
+
+pub let meta_paintregion : UInt
+
+pub let meta_patblt : UInt
+
+pub let meta_pie : UInt
+
+pub let meta_polygon : UInt
+
+pub let meta_polyline : UInt
+
+pub let meta_polypolygon : UInt
+
+pub let meta_realizepalette : UInt
+
+pub let meta_rectangle : UInt
+
+pub let meta_resizepalette : UInt
+
+pub let meta_restoredc : UInt
+
+pub let meta_roundrect : UInt
+
+pub let meta_savedc : UInt
+
+pub let meta_scaleviewportext : UInt
+
+pub let meta_scalewindowext : UInt
+
+pub let meta_selectclipregion : UInt
+
+pub let meta_selectobject : UInt
+
+pub let meta_selectpalette : UInt
+
+pub let meta_setbkcolor : UInt
+
+pub let meta_setbkmode : UInt
+
+pub let meta_setdibtodev : UInt
+
+pub let meta_setlayout : UInt
+
+pub let meta_setmapmode : UInt
+
+pub let meta_setmapperflags : UInt
+
+pub let meta_setpalentries : UInt
+
+pub let meta_setpixel : UInt
+
+pub let meta_setpolyfillmode : UInt
+
+pub let meta_setrelabs : UInt
+
+pub let meta_setrop2 : UInt
+
+pub let meta_setstretchbltmode : UInt
+
+pub let meta_settextalign : UInt
+
+pub let meta_settextcharextra : UInt
+
+pub let meta_settextcolor : UInt
+
+pub let meta_settextjustification : UInt
+
+pub let meta_setviewportext : UInt
+
+pub let meta_setviewportorg : UInt
+
+pub let meta_setwindowext : UInt
+
+pub let meta_setwindoworg : UInt
+
+pub let meta_stretchblt : UInt
+
+pub let meta_stretchdib : UInt
+
+pub let meta_textout : UInt
+
+pub let metafile_driver : UInt
+
+pub let mfcomment : UInt
+
+pub let milcore_ts_queryver_result_false : UInt
+
+pub let milcore_ts_queryver_result_true : UInt
+
+pub let mm_max_axes_namelen : UInt
+
+pub let mm_max_numaxes : UInt
+
+pub fn modify_world_transform(@core.RawAddress, @9ab35bf48b3f5013.XFORM_86562134bd5e?, @9ab35bf48b3f5013.MODIFYWORLDTRANSFORMMODE_647676a3601e) -> Bool raise @core.WindowsError
+
+pub fn modify_world_transform_raw(@core.RawAddress, @core.RawAddress, UInt) -> Int
+
+pub fn monitor_from_point(@fb66f520d7e12332.POINT_48d934d62b68, @9ab35bf48b3f5013.MONITORFROMFLAGS_1898d135cb84) -> @core.RawAddress raise @core.WindowsError
+
+pub fn monitor_from_point_raw(Bytes, UInt) -> @core.RawAddress
+
+pub fn monitor_from_rect(@fb66f520d7e12332.RECT_dc5b788d9702, @9ab35bf48b3f5013.MONITORFROMFLAGS_1898d135cb84) -> @core.RawAddress raise @core.WindowsError
+
+pub fn monitor_from_rect_raw(@core.RawAddress, UInt) -> @core.RawAddress
+
+pub fn monitor_from_window(@core.RawAddress, @9ab35bf48b3f5013.MONITORFROMFLAGS_1898d135cb84) -> @core.RawAddress raise @core.WindowsError
+
+pub fn monitor_from_window_raw(@core.RawAddress, UInt) -> @core.RawAddress
+
+pub let mono_font : UInt
+
+pub let mousetrails : UInt
+
+pub fn move_to_ex(@core.RawAddress, Int, Int, @fb66f520d7e12332.POINT_48d934d62b68?) -> Bool raise @core.WindowsError
+
+pub fn move_to_ex_raw(@core.RawAddress, Int, Int, @core.RawAddress) -> Int
+
+pub let newframe : UInt
+
+pub let newtransparent : UInt
+
+pub let nextband : UInt
+
+pub let ntm_bold : Int
+
+pub let ntm_dsig : UInt
+
+pub let ntm_italic : Int
+
+pub let ntm_multiplemaster : UInt
+
+pub let ntm_nonnegative_ac : UInt
+
+pub let ntm_ps_opentype : UInt
+
+pub let ntm_regular : Int
+
+pub let ntm_tt_opentype : UInt
+
+pub let ntm_type1 : UInt
+
+pub fn offset_clip_rgn(@core.RawAddress, Int, Int) -> @9ab35bf48b3f5013.GDIREGIONTYPE_7d5d6fc66eee raise @core.WindowsError
+
+pub fn offset_clip_rgn_raw(@core.RawAddress, Int, Int) -> Int
+
+pub fn offset_rect(@fb66f520d7e12332.RECT_dc5b788d9702, Int, Int) -> Bool raise @core.WindowsError
+
+pub fn offset_rect_raw(@core.RawAddress, Int, Int) -> Int
+
+pub fn offset_rgn(@core.RawAddress, Int, Int) -> @9ab35bf48b3f5013.GDIREGIONTYPE_7d5d6fc66eee raise @core.WindowsError
+
+pub fn offset_rgn_raw(@core.RawAddress, Int, Int) -> Int
+
+pub fn offset_viewport_org_ex(@core.RawAddress, Int, Int, @fb66f520d7e12332.POINT_48d934d62b68?) -> Bool raise @core.WindowsError
+
+pub fn offset_viewport_org_ex_raw(@core.RawAddress, Int, Int, @core.RawAddress) -> Int
+
+pub fn offset_window_org_ex(@core.RawAddress, Int, Int, @fb66f520d7e12332.POINT_48d934d62b68?) -> Bool raise @core.WindowsError
+
+pub fn offset_window_org_ex_raw(@core.RawAddress, Int, Int, @core.RawAddress) -> Int
+
+pub let openchannel : UInt
+
+pub fn paint_desktop(@core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn paint_desktop_raw(@core.RawAddress) -> Int
+
+pub fn paint_rgn(@core.RawAddress, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn paint_rgn_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub let pan_any : UInt
+
+pub let pan_armstyle_index : UInt
+
+pub let pan_culture_latin : UInt
+
+pub let pan_familytype_index : UInt
+
+pub let pan_letterform_index : UInt
+
+pub let pan_no_fit : UInt
+
+pub let pan_proportion_index : UInt
+
+pub let pan_serifstyle_index : UInt
+
+pub let pan_strokevariation_index : UInt
+
+pub let panose_count : UInt
+
+pub let passthrough : UInt
+
+pub fn pat_blt(@core.RawAddress, Int, Int, Int, Int, @9ab35bf48b3f5013.ROPCODE_761e20eef7e8) -> Bool raise @core.WindowsError
+
+pub fn pat_blt_raw(@core.RawAddress, Int, Int, Int, Int, UInt) -> Int
+
+pub fn path_to_region(@core.RawAddress) -> @core.RawAddress raise @core.WindowsError
+
+pub fn path_to_region_raw(@core.RawAddress) -> @core.RawAddress
+
+pub let pc_explicit : UInt
+
+pub let pc_interiors : UInt
+
+pub let pc_nocollapse : UInt
+
+pub let pc_none : UInt
+
+pub let pc_paths : UInt
+
+pub let pc_polygon : UInt
+
+pub let pc_polypolygon : UInt
+
+pub let pc_rectangle : UInt
+
+pub let pc_reserved : UInt
+
+pub let pc_scanline : UInt
+
+pub let pc_styled : UInt
+
+pub let pc_trapezoid : UInt
+
+pub let pc_wide : UInt
+
+pub let pc_widestyled : UInt
+
+pub let pc_windpolygon : UInt
+
+pub fn pie(@core.RawAddress, Int, Int, Int, Int, Int, Int, Int, Int) -> Bool raise @core.WindowsError
+
+pub fn pie_raw(@core.RawAddress, Int, Int, Int, Int, Int, Int, Int, Int) -> Int
+
+pub fn play_enh_meta_file(@core.RawAddress, @core.RawAddress, @fb66f520d7e12332.RECT_dc5b788d9702) -> Bool raise @core.WindowsError
+
+pub fn play_enh_meta_file_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn play_enh_meta_file_record(@core.RawAddress, @core.RawAddress, @9ab35bf48b3f5013.ENHMETARECORD_8587adeaff8d, UInt) -> Bool raise @core.WindowsError
+
+pub fn play_enh_meta_file_record_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, UInt) -> Int
+
+pub fn play_meta_file(@core.RawAddress, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn play_meta_file_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn play_meta_file_record(@core.RawAddress, @core.RawAddress, @9ab35bf48b3f5013.METARECORD_ffbcc48fef95, UInt) -> Bool raise @core.WindowsError
+
+pub fn play_meta_file_record_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, UInt) -> Int
+
+pub fn plg_blt(@core.RawAddress, @fb66f520d7e12332.POINT_48d934d62b68, @core.RawAddress, Int, Int, Int, Int, @core.RawAddress, Int, Int) -> Bool raise @core.WindowsError
+
+pub fn plg_blt_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, Int, Int, Int, Int, @core.RawAddress, Int, Int) -> Int
+
+pub fn poly_bezier(@core.RawAddress, @fb66f520d7e12332.POINT_48d934d62b68, UInt) -> Bool raise @core.WindowsError
+
+pub fn poly_bezier_raw(@core.RawAddress, @core.RawAddress, UInt) -> Int
+
+pub fn poly_bezier_to(@core.RawAddress, @fb66f520d7e12332.POINT_48d934d62b68, UInt) -> Bool raise @core.WindowsError
+
+pub fn poly_bezier_to_raw(@core.RawAddress, @core.RawAddress, UInt) -> Int
+
+pub fn poly_draw(@core.RawAddress, @fb66f520d7e12332.POINT_48d934d62b68, @core.RawAddress, Int) -> Bool raise @core.WindowsError
+
+pub fn poly_draw_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, Int) -> Int
+
+pub fn poly_polygon(@core.RawAddress, @fb66f520d7e12332.POINT_48d934d62b68, @core.RawAddress, Int) -> Bool raise @core.WindowsError
+
+pub fn poly_polygon_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, Int) -> Int
+
+pub fn poly_polyline(@core.RawAddress, @fb66f520d7e12332.POINT_48d934d62b68, @core.RawAddress, UInt) -> Bool raise @core.WindowsError
+
+pub fn poly_polyline_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, UInt) -> Int
+
+pub fn poly_text_out_a(@core.RawAddress, @9ab35bf48b3f5013.POLYTEXTA_b3270dc21943, Int) -> Bool raise @core.WindowsError
+
+pub fn poly_text_out_a_raw(@core.RawAddress, @core.RawAddress, Int) -> Int
+
+pub fn poly_text_out_w(@core.RawAddress, @9ab35bf48b3f5013.POLYTEXTW_776e70e67ca5, Int) -> Bool raise @core.WindowsError
+
+pub fn poly_text_out_w_raw(@core.RawAddress, @core.RawAddress, Int) -> Int
+
+pub let polyfill_last : UInt
+
+pub fn polygon(@core.RawAddress, @fb66f520d7e12332.POINT_48d934d62b68, Int) -> Bool raise @core.WindowsError
+
+pub fn polygon_raw(@core.RawAddress, @core.RawAddress, Int) -> Int
+
+pub fn polyline(@core.RawAddress, @fb66f520d7e12332.POINT_48d934d62b68, Int) -> Bool raise @core.WindowsError
+
+pub fn polyline_raw(@core.RawAddress, @core.RawAddress, Int) -> Int
+
+pub fn polyline_to(@core.RawAddress, @fb66f520d7e12332.POINT_48d934d62b68, UInt) -> Bool raise @core.WindowsError
+
+pub fn polyline_to_raw(@core.RawAddress, @core.RawAddress, UInt) -> Int
+
+pub let postscript_data : UInt
+
+pub let postscript_identify : UInt
+
+pub let postscript_ignore : UInt
+
+pub let postscript_injection : UInt
+
+pub let postscript_passthrough : UInt
+
+pub let pr_jobstatus : UInt
+
+pub let printrateunit_cps : UInt
+
+pub let printrateunit_ipm : UInt
+
+pub let printrateunit_lpm : UInt
+
+pub let printrateunit_ppm : UInt
+
+pub let psident_gdicentric : UInt
+
+pub let psident_pscentric : UInt
+
+pub let psinject_dlfont : UInt
+
+pub let psprotocol_ascii : UInt
+
+pub let psprotocol_bcp : UInt
+
+pub let psprotocol_binary : UInt
+
+pub let psprotocol_tbcp : UInt
+
+pub let pt_bezierto : UInt
+
+pub let pt_closefigure : UInt
+
+pub fn pt_in_rect(@fb66f520d7e12332.RECT_dc5b788d9702, @fb66f520d7e12332.POINT_48d934d62b68) -> Bool raise @core.WindowsError
+
+pub fn pt_in_rect_raw(@core.RawAddress, Bytes) -> Int
+
+pub fn pt_in_region(@core.RawAddress, Int, Int) -> Bool raise @core.WindowsError
+
+pub fn pt_in_region_raw(@core.RawAddress, Int, Int) -> Int
+
+pub let pt_lineto : UInt
+
+pub let pt_moveto : UInt
+
+pub fn pt_visible(@core.RawAddress, Int, Int) -> Bool raise @core.WindowsError
+
+pub fn pt_visible_raw(@core.RawAddress, Int, Int) -> Int
+
+pub let qdi_dibtoscreen : UInt
+
+pub let qdi_getdibits : UInt
+
+pub let qdi_setdibits : UInt
+
+pub let qdi_stretchdib : UInt
+
+pub let querydibsupport : UInt
+
+pub let queryescsupport : UInt
+
+pub let queryropsupport : UInt
+
+pub let raster_fonttype : UInt
+
+pub let rc_banding : UInt
+
+pub let rc_bigfont : UInt
+
+pub let rc_bitblt : UInt
+
+pub let rc_bitmap64 : UInt
+
+pub let rc_devbits : UInt
+
+pub let rc_di_bitmap : UInt
+
+pub let rc_dibtodev : UInt
+
+pub let rc_floodfill : UInt
+
+pub let rc_gdi20_output : UInt
+
+pub let rc_gdi20_state : UInt
+
+pub let rc_op_dx_output : UInt
+
+pub let rc_palette : UInt
+
+pub let rc_savebitmap : UInt
+
+pub let rc_scaling : UInt
+
+pub let rc_stretchblt : UInt
+
+pub let rc_stretchdib : UInt
+
+pub let rdh_rectangles : UInt
+
+pub fn realize_palette(@core.RawAddress) -> UInt raise @core.WindowsError
+
+pub fn realize_palette_raw(@core.RawAddress) -> UInt
+
+pub fn rect_in_region(@core.RawAddress, @fb66f520d7e12332.RECT_dc5b788d9702) -> Bool raise @core.WindowsError
+
+pub fn rect_in_region_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn rect_visible(@core.RawAddress, @fb66f520d7e12332.RECT_dc5b788d9702) -> Bool raise @core.WindowsError
+
+pub fn rect_visible_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn rectangle(@core.RawAddress, Int, Int, Int, Int) -> Bool raise @core.WindowsError
+
+pub fn rectangle_raw(@core.RawAddress, Int, Int, Int, Int) -> Int
+
+pub fn redraw_window(@core.RawAddress, @fb66f520d7e12332.RECT_dc5b788d9702?, @core.RawAddress, @9ab35bf48b3f5013.REDRAWWINDOWFLAGS_ea96dd4eec76) -> Bool raise @core.WindowsError
+
+pub fn redraw_window_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, UInt) -> Int
+
+pub let relative : UInt
+
+pub fn release_dc(@core.RawAddress, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn release_dc_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn remove_font_mem_resource_ex(@core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn remove_font_mem_resource_ex_raw(@core.RawAddress) -> Int
+
+pub fn remove_font_resource_a(@strings.PStr) -> Bool raise @core.WindowsError
+
+pub fn remove_font_resource_a_raw(@core.RawAddress) -> Int
+
+pub fn remove_font_resource_ex_a(@strings.PStr, UInt, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn remove_font_resource_ex_a_raw(@core.RawAddress, UInt, @core.RawAddress) -> Int
+
+pub fn remove_font_resource_ex_w(@strings.PWStr, UInt, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn remove_font_resource_ex_w_raw(@core.RawAddress, UInt, @core.RawAddress) -> Int
+
+pub fn remove_font_resource_w(@strings.PWStr) -> Bool raise @core.WindowsError
+
+pub fn remove_font_resource_w_raw(@core.RawAddress) -> Int
+
+pub fn reset_dca(@core.RawAddress, @9ab35bf48b3f5013.DEVMODEA_3b3132d875c8) -> @core.RawAddress raise @core.WindowsError
+
+pub fn reset_dca_raw(@core.RawAddress, @core.RawAddress) -> @core.RawAddress
+
+pub fn reset_dcw(@core.RawAddress, @9ab35bf48b3f5013.DEVMODEW_12540d748e26) -> @core.RawAddress raise @core.WindowsError
+
+pub fn reset_dcw_raw(@core.RawAddress, @core.RawAddress) -> @core.RawAddress
+
+pub fn resize_palette(@core.RawAddress, UInt) -> Bool raise @core.WindowsError
+
+pub fn resize_palette_raw(@core.RawAddress, UInt) -> Int
+
+pub let restore_ctm : UInt
+
+pub fn restore_dc(@core.RawAddress, Int) -> Bool raise @core.WindowsError
+
+pub fn restore_dc_raw(@core.RawAddress, Int) -> Int
+
+pub fn round_rect(@core.RawAddress, Int, Int, Int, Int, Int, Int) -> Bool raise @core.WindowsError
+
+pub fn round_rect_raw(@core.RawAddress, Int, Int, Int, Int, Int, Int) -> Int
+
+pub let save_ctm : UInt
+
+pub fn save_dc(@core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn save_dc_raw(@core.RawAddress) -> Int
+
+pub let sb_const_alpha : UInt
+
+pub let sb_grad_rect : UInt
+
+pub let sb_grad_tri : UInt
+
+pub let sb_none : UInt
+
+pub let sb_pixel_alpha : UInt
+
+pub let sb_premult_alpha : UInt
+
+pub let sc_screensave : UInt
+
+pub fn scale_viewport_ext_ex(@core.RawAddress, Int, Int, Int, Int, @fb66f520d7e12332.SIZE_11175f7b4ee1?) -> Bool raise @core.WindowsError
+
+pub fn scale_viewport_ext_ex_raw(@core.RawAddress, Int, Int, Int, Int, @core.RawAddress) -> Int
+
+pub fn scale_window_ext_ex(@core.RawAddress, Int, Int, Int, Int, @fb66f520d7e12332.SIZE_11175f7b4ee1?) -> Bool raise @core.WindowsError
+
+pub fn scale_window_ext_ex_raw(@core.RawAddress, Int, Int, Int, Int, @core.RawAddress) -> Int
+
+pub fn screen_to_client(@core.RawAddress, @fb66f520d7e12332.POINT_48d934d62b68) -> Bool raise @core.WindowsError
+
+pub fn screen_to_client_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn select_clip_path(@core.RawAddress, @9ab35bf48b3f5013.RGNCOMBINEMODE_bc3734442525) -> Bool raise @core.WindowsError
+
+pub fn select_clip_path_raw(@core.RawAddress, Int) -> Int
+
+pub fn select_clip_rgn(@core.RawAddress, @core.RawAddress) -> @9ab35bf48b3f5013.GDIREGIONTYPE_7d5d6fc66eee raise @core.WindowsError
+
+pub fn select_clip_rgn_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn select_object(@core.RawAddress, @core.RawAddress) -> @core.RawAddress raise @core.WindowsError
+
+pub fn select_object_raw(@core.RawAddress, @core.RawAddress) -> @core.RawAddress
+
+pub fn select_palette(@core.RawAddress, @core.RawAddress, Int) -> @core.RawAddress raise @core.WindowsError
+
+pub fn select_palette_raw(@core.RawAddress, @core.RawAddress, Int) -> @core.RawAddress
+
+pub let selectdib : UInt
+
+pub let selectpapersource : UInt
+
+pub let set_arc_direction : UInt
+
+pub fn set_arc_direction_with_unit_pointer_and_i32(@core.RawAddress, @9ab35bf48b3f5013.ARCDIRECTION_853ce667cf6c) -> Int raise @core.WindowsError
+
+pub fn set_arc_direction_with_unit_pointer_and_i32_raw(@core.RawAddress, Int) -> Int
+
+pub let set_background_color : UInt
+
+pub fn set_bitmap_bits(@core.RawAddress, UInt, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn set_bitmap_bits_raw(@core.RawAddress, UInt, @core.RawAddress) -> Int
+
+pub fn set_bitmap_dimension_ex(@core.RawAddress, Int, Int, @fb66f520d7e12332.SIZE_11175f7b4ee1?) -> Bool raise @core.WindowsError
+
+pub fn set_bitmap_dimension_ex_raw(@core.RawAddress, Int, Int, @core.RawAddress) -> Int
+
+pub fn set_bk_color(@core.RawAddress, UInt) -> UInt raise @core.WindowsError
+
+pub fn set_bk_color_raw(@core.RawAddress, UInt) -> UInt
+
+pub fn set_bk_mode(@core.RawAddress, Int) -> Int raise @core.WindowsError
+
+pub fn set_bk_mode_raw(@core.RawAddress, Int) -> Int
+
+pub let set_bounds : UInt
+
+pub fn set_bounds_rect(@core.RawAddress, @fb66f520d7e12332.RECT_dc5b788d9702?, @9ab35bf48b3f5013.SETBOUNDSRECTFLAGS_d5cd387aee60) -> UInt raise @core.WindowsError
+
+pub fn set_bounds_rect_raw(@core.RawAddress, @core.RawAddress, UInt) -> UInt
+
+pub fn set_brush_org_ex(@core.RawAddress, Int, Int, @fb66f520d7e12332.POINT_48d934d62b68?) -> Bool raise @core.WindowsError
+
+pub fn set_brush_org_ex_raw(@core.RawAddress, Int, Int, @core.RawAddress) -> Int
+
+pub let set_clip_box : UInt
+
+pub fn set_color_adjustment(@core.RawAddress, @9ab35bf48b3f5013.COLORADJUSTMENT_97287d41ad11) -> Bool raise @core.WindowsError
+
+pub fn set_color_adjustment_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn set_dc_brush_color(@core.RawAddress, UInt) -> UInt raise @core.WindowsError
+
+pub fn set_dc_brush_color_raw(@core.RawAddress, UInt) -> UInt
+
+pub fn set_dc_pen_color(@core.RawAddress, UInt) -> UInt raise @core.WindowsError
+
+pub fn set_dc_pen_color_raw(@core.RawAddress, UInt) -> UInt
+
+pub fn set_di_bits(@core.RawAddress, @core.RawAddress, UInt, UInt, @core.RawAddress, @9ab35bf48b3f5013.BITMAPINFO_07d884578fc1, @9ab35bf48b3f5013.DIBUSAGE_4bf208a4cd1e) -> Int raise @core.WindowsError
+
+pub fn set_di_bits_raw(@core.RawAddress, @core.RawAddress, UInt, UInt, @core.RawAddress, @core.RawAddress, UInt) -> Int
+
+pub fn set_di_bits_to_device(@core.RawAddress, Int, Int, UInt, UInt, Int, Int, UInt, UInt, @core.RawAddress, @9ab35bf48b3f5013.BITMAPINFO_07d884578fc1, @9ab35bf48b3f5013.DIBUSAGE_4bf208a4cd1e) -> Int raise @core.WindowsError
+
+pub fn set_di_bits_to_device_raw(@core.RawAddress, Int, Int, UInt, UInt, Int, Int, UInt, UInt, @core.RawAddress, @core.RawAddress, UInt) -> Int
+
+pub fn set_dib_color_table(@core.RawAddress, UInt, UInt, @9ab35bf48b3f5013.RGBQUAD_97ec12d91090) -> UInt raise @core.WindowsError
+
+pub fn set_dib_color_table_raw(@core.RawAddress, UInt, UInt, @core.RawAddress) -> UInt
+
+pub fn set_enh_meta_file_bits(UInt, @core.RawAddress) -> @core.RawAddress raise @core.WindowsError
+
+pub fn set_enh_meta_file_bits_raw(UInt, @core.RawAddress) -> @core.RawAddress
+
+pub fn set_graphics_mode(@core.RawAddress, @9ab35bf48b3f5013.GRAPHICSMODE_4173eb662d77) -> Int raise @core.WindowsError
+
+pub fn set_graphics_mode_raw(@core.RawAddress, Int) -> Int
+
+pub fn set_layout(@core.RawAddress, @9ab35bf48b3f5013.DCLAYOUT_db132c659d8d) -> UInt raise @core.WindowsError
+
+pub fn set_layout_raw(@core.RawAddress, UInt) -> UInt
+
+pub fn set_map_mode(@core.RawAddress, @9ab35bf48b3f5013.HDCMAPMODE_6e9ca3142aa8) -> Int raise @core.WindowsError
+
+pub fn set_map_mode_raw(@core.RawAddress, Int) -> Int
+
+pub fn set_mapper_flags(@core.RawAddress, UInt) -> UInt raise @core.WindowsError
+
+pub fn set_mapper_flags_raw(@core.RawAddress, UInt) -> UInt
+
+pub fn set_meta_file_bits_ex(UInt, @core.RawAddress) -> @core.RawAddress raise @core.WindowsError
+
+pub fn set_meta_file_bits_ex_raw(UInt, @core.RawAddress) -> @core.RawAddress
+
+pub fn set_meta_rgn(@core.RawAddress) -> @9ab35bf48b3f5013.GDIREGIONTYPE_7d5d6fc66eee raise @core.WindowsError
+
+pub fn set_meta_rgn_raw(@core.RawAddress) -> Int
+
+pub let set_mirror_mode : UInt
+
+pub fn set_miter_limit(@core.RawAddress, Float, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn set_miter_limit_raw(@core.RawAddress, Float, @core.RawAddress) -> Int
+
+pub fn set_palette_entries(@core.RawAddress, UInt, UInt, @9ab35bf48b3f5013.PALETTEENTRY_5450403ccf8e) -> UInt raise @core.WindowsError
+
+pub fn set_palette_entries_raw(@core.RawAddress, UInt, UInt, @core.RawAddress) -> UInt
+
+pub fn set_pixel(@core.RawAddress, Int, Int, UInt) -> UInt raise @core.WindowsError
+
+pub fn set_pixel_raw(@core.RawAddress, Int, Int, UInt) -> UInt
+
+pub fn set_pixel_v(@core.RawAddress, Int, Int, UInt) -> Bool raise @core.WindowsError
+
+pub fn set_pixel_v_raw(@core.RawAddress, Int, Int, UInt) -> Int
+
+pub fn set_poly_fill_mode(@core.RawAddress, @9ab35bf48b3f5013.CREATEPOLYGONRGNMODE_25fc6c601314) -> Int raise @core.WindowsError
+
+pub fn set_poly_fill_mode_raw(@core.RawAddress, Int) -> Int
+
+pub let set_poly_mode : UInt
+
+pub fn set_rect(@fb66f520d7e12332.RECT_dc5b788d9702, Int, Int, Int, Int) -> Bool raise @core.WindowsError
+
+pub fn set_rect_empty(@fb66f520d7e12332.RECT_dc5b788d9702) -> Bool raise @core.WindowsError
+
+pub fn set_rect_empty_raw(@core.RawAddress) -> Int
+
+pub fn set_rect_raw(@core.RawAddress, Int, Int, Int, Int) -> Int
+
+pub fn set_rect_rgn(@core.RawAddress, Int, Int, Int, Int) -> Bool raise @core.WindowsError
+
+pub fn set_rect_rgn_raw(@core.RawAddress, Int, Int, Int, Int) -> Int
+
+pub fn set_rop2(@core.RawAddress, @9ab35bf48b3f5013.R2MODE_bb2bdb09f3c7) -> Int raise @core.WindowsError
+
+pub fn set_rop2_raw(@core.RawAddress, Int) -> Int
+
+pub let set_screen_angle : UInt
+
+pub let set_spread : UInt
+
+pub fn set_stretch_blt_mode(@core.RawAddress, @9ab35bf48b3f5013.STRETCHBLTMODE_4385fcc66ec1) -> Int raise @core.WindowsError
+
+pub fn set_stretch_blt_mode_raw(@core.RawAddress, Int) -> Int
+
+pub fn set_sys_colors(Int, @core.RawAddress, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn set_sys_colors_raw(Int, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn set_system_palette_use(@core.RawAddress, @9ab35bf48b3f5013.SYSTEMPALETTEUSE_007f441c85d3) -> UInt raise @core.WindowsError
+
+pub fn set_system_palette_use_raw(@core.RawAddress, UInt) -> UInt
+
+pub fn set_text_align(@core.RawAddress, @9ab35bf48b3f5013.TEXTALIGNOPTIONS_dcc3eb211152) -> UInt raise @core.WindowsError
+
+pub fn set_text_align_raw(@core.RawAddress, UInt) -> UInt
+
+pub fn set_text_character_extra(@core.RawAddress, Int) -> Int raise @core.WindowsError
+
+pub fn set_text_character_extra_raw(@core.RawAddress, Int) -> Int
+
+pub fn set_text_color(@core.RawAddress, UInt) -> UInt raise @core.WindowsError
+
+pub fn set_text_color_raw(@core.RawAddress, UInt) -> UInt
+
+pub fn set_text_justification(@core.RawAddress, Int, Int) -> Bool raise @core.WindowsError
+
+pub fn set_text_justification_raw(@core.RawAddress, Int, Int) -> Int
+
+pub fn set_viewport_ext_ex(@core.RawAddress, Int, Int, @fb66f520d7e12332.SIZE_11175f7b4ee1?) -> Bool raise @core.WindowsError
+
+pub fn set_viewport_ext_ex_raw(@core.RawAddress, Int, Int, @core.RawAddress) -> Int
+
+pub fn set_viewport_org_ex(@core.RawAddress, Int, Int, @fb66f520d7e12332.POINT_48d934d62b68?) -> Bool raise @core.WindowsError
+
+pub fn set_viewport_org_ex_raw(@core.RawAddress, Int, Int, @core.RawAddress) -> Int
+
+pub fn set_window_ext_ex(@core.RawAddress, Int, Int, @fb66f520d7e12332.SIZE_11175f7b4ee1?) -> Bool raise @core.WindowsError
+
+pub fn set_window_ext_ex_raw(@core.RawAddress, Int, Int, @core.RawAddress) -> Int
+
+pub fn set_window_org_ex(@core.RawAddress, Int, Int, @fb66f520d7e12332.POINT_48d934d62b68?) -> Bool raise @core.WindowsError
+
+pub fn set_window_org_ex_raw(@core.RawAddress, Int, Int, @core.RawAddress) -> Int
+
+pub fn set_window_rgn(@core.RawAddress, @core.RawAddress, Int) -> Int raise @core.WindowsError
+
+pub fn set_window_rgn_raw(@core.RawAddress, @core.RawAddress, Int) -> Int
+
+pub fn set_world_transform(@core.RawAddress, @9ab35bf48b3f5013.XFORM_86562134bd5e) -> Bool raise @core.WindowsError
+
+pub fn set_world_transform_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub let setabortproc : UInt
+
+pub let setalljustvalues : UInt
+
+pub let setcharset : UInt
+
+pub let setcolortable : UInt
+
+pub let setcopycount : UInt
+
+pub let setdibscaling : UInt
+
+pub let seticmprofile_embeded : UInt
+
+pub let setkerntrack : UInt
+
+pub let setlinecap : UInt
+
+pub let setlinejoin : UInt
+
+pub let setmiterlimit : UInt
+
+pub let sp_appabort : Int
+
+pub let sp_error : Int
+
+pub let sp_notreported : UInt
+
+pub let sp_outofdisk : Int
+
+pub let sp_outofmemory : Int
+
+pub let sp_userabort : Int
+
+pub let spclpassthrough2 : UInt
+
+pub let startdoc : UInt
+
+pub let stock_last : UInt
+
+pub fn stretch_blt(@core.RawAddress, Int, Int, Int, Int, @core.RawAddress, Int, Int, Int, Int, @9ab35bf48b3f5013.ROPCODE_761e20eef7e8) -> Bool raise @core.WindowsError
+
+pub fn stretch_blt_raw(@core.RawAddress, Int, Int, Int, Int, @core.RawAddress, Int, Int, Int, Int, UInt) -> Int
+
+pub fn stretch_di_bits(@core.RawAddress, Int, Int, Int, Int, Int, Int, Int, Int, @core.RawAddress, @9ab35bf48b3f5013.BITMAPINFO_07d884578fc1, @9ab35bf48b3f5013.DIBUSAGE_4bf208a4cd1e, @9ab35bf48b3f5013.ROPCODE_761e20eef7e8) -> Int raise @core.WindowsError
+
+pub fn stretch_di_bits_raw(@core.RawAddress, Int, Int, Int, Int, Int, Int, Int, Int, @core.RawAddress, @core.RawAddress, UInt, UInt) -> Int
+
+pub let stretchblt : UInt
+
+pub fn stroke_and_fill_path(@core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn stroke_and_fill_path_raw(@core.RawAddress) -> Int
+
+pub fn stroke_path(@core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn stroke_path_raw(@core.RawAddress) -> Int
+
+pub fn subtract_rect(@fb66f520d7e12332.RECT_dc5b788d9702, @fb66f520d7e12332.RECT_dc5b788d9702, @fb66f520d7e12332.RECT_dc5b788d9702) -> Bool raise @core.WindowsError
+
+pub fn subtract_rect_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub let syspal_error : UInt
+
+pub let sysrgn : UInt
+
+pub fn tabbed_text_out_a(@core.RawAddress, Int, Int, @strings.PStr, Int, Int, @core.RawAddress, Int) -> Int raise @core.WindowsError
+
+pub fn tabbed_text_out_a_raw(@core.RawAddress, Int, Int, @core.RawAddress, Int, Int, @core.RawAddress, Int) -> Int
+
+pub fn tabbed_text_out_w(@core.RawAddress, Int, Int, @strings.PWStr, Int, Int, @core.RawAddress, Int) -> Int raise @core.WindowsError
+
+pub fn tabbed_text_out_w_raw(@core.RawAddress, Int, Int, @core.RawAddress, Int, Int, @core.RawAddress, Int) -> Int
+
+pub let tc_cp_stroke : UInt
+
+pub let tc_cr_90 : UInt
+
+pub let tc_cr_any : UInt
+
+pub let tc_ea_double : UInt
+
+pub let tc_ia_able : UInt
+
+pub let tc_op_character : UInt
+
+pub let tc_op_stroke : UInt
+
+pub let tc_ra_able : UInt
+
+pub let tc_reserved : UInt
+
+pub let tc_sa_contin : UInt
+
+pub let tc_sa_double : UInt
+
+pub let tc_sa_integer : UInt
+
+pub let tc_scrollblt : UInt
+
+pub let tc_sf_x_yindep : UInt
+
+pub let tc_so_able : UInt
+
+pub let tc_ua_able : UInt
+
+pub let tc_va_able : UInt
+
+pub fn text_out_a(@core.RawAddress, Int, Int, @strings.PStr, Int) -> Bool raise @core.WindowsError
+
+pub fn text_out_a_raw(@core.RawAddress, Int, Int, @core.RawAddress, Int) -> Int
+
+pub fn text_out_w(@core.RawAddress, Int, Int, @strings.PWStr, Int) -> Bool raise @core.WindowsError
+
+pub fn text_out_w_raw(@core.RawAddress, Int, Int, @core.RawAddress, Int) -> Int
+
+pub let transform_ctm : UInt
+
+pub fn transparent_blt(@core.RawAddress, Int, Int, Int, Int, @core.RawAddress, Int, Int, Int, Int, UInt) -> Bool raise @core.WindowsError
+
+pub fn transparent_blt_raw(@core.RawAddress, Int, Int, Int, Int, @core.RawAddress, Int, Int, Int, Int, UInt) -> Int
+
+pub let truetype_fonttype : UInt
+
+pub let tt_available : UInt
+
+pub fn tt_char_to_unicode(@core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, UInt, UInt) -> Int raise @core.WindowsError
+
+pub fn tt_char_to_unicode_raw(@core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, UInt, UInt) -> Int
+
+pub fn tt_delete_embedded_font(@core.RawAddress, UInt, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn tt_delete_embedded_font_raw(@core.RawAddress, UInt, @core.RawAddress) -> Int
+
+pub fn tt_embed_font(@core.RawAddress, @9ab35bf48b3f5013.TTEMBEDFLAGS_06efb438b419, @9ab35bf48b3f5013.EMBEDFONTCHARSET_84cbde3e0511, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, UInt16, UInt16, @9ab35bf48b3f5013.TTEMBEDINFO_e7e1976aaf23?) -> Int raise @core.WindowsError
+
+pub fn tt_embed_font_ex(@core.RawAddress, @9ab35bf48b3f5013.TTEMBEDFLAGS_06efb438b419, @9ab35bf48b3f5013.EMBEDFONTCHARSET_84cbde3e0511, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, UInt16, UInt16, @9ab35bf48b3f5013.TTEMBEDINFO_e7e1976aaf23?) -> Int raise @core.WindowsError
+
+pub fn tt_embed_font_ex_raw(@core.RawAddress, UInt, UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, UInt, UInt, @core.RawAddress) -> Int
+
+pub fn tt_embed_font_from_file_a(@core.RawAddress, @strings.PStr, UInt16, @9ab35bf48b3f5013.TTEMBEDFLAGS_06efb438b419, @9ab35bf48b3f5013.EMBEDFONTCHARSET_84cbde3e0511, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, UInt16, UInt16, @9ab35bf48b3f5013.TTEMBEDINFO_e7e1976aaf23?) -> Int raise @core.WindowsError
+
+pub fn tt_embed_font_from_file_a_raw(@core.RawAddress, @core.RawAddress, UInt, UInt, UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, UInt, UInt, @core.RawAddress) -> Int
+
+pub fn tt_embed_font_raw(@core.RawAddress, UInt, UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, UInt, UInt, @core.RawAddress) -> Int
+
+pub fn tt_enable_embedding_for_facename(@strings.PStr, Int) -> Int raise @core.WindowsError
+
+pub fn tt_enable_embedding_for_facename_raw(@core.RawAddress, Int) -> Int
+
+pub let tt_enabled : UInt
+
+pub fn tt_get_embedded_font_info(@9ab35bf48b3f5013.TTEMBEDFLAGS_06efb438b419, @core.RawAddress, @9ab35bf48b3f5013.FONTLICENSEPRIVS_631e05a050e7, @core.RawAddress, @core.RawAddress, @core.RawAddress, @9ab35bf48b3f5013.TTLOADINFO_a571b69ecbb1?) -> Int raise @core.WindowsError
+
+pub fn tt_get_embedded_font_info_raw(UInt, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn tt_get_embedding_type(@core.RawAddress, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn tt_get_embedding_type_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn tt_get_new_font_name(@core.RawAddress, @strings.PWStrBuffer, @core.RawAddress, Int) -> Int raise @core.WindowsError
+
+pub fn tt_get_new_font_name_raw(@core.RawAddress, @core.RawAddress, Int, @core.RawAddress, Int) -> Int
+
+pub fn tt_is_embedding_enabled(@core.RawAddress, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn tt_is_embedding_enabled_for_facename(@strings.PStr, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn tt_is_embedding_enabled_for_facename_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn tt_is_embedding_enabled_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn tt_load_embedded_font(@core.RawAddress, UInt, @core.RawAddress, @9ab35bf48b3f5013.FONTLICENSEPRIVS_631e05a050e7, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @9ab35bf48b3f5013.TTLOADINFO_a571b69ecbb1?) -> Int raise @core.WindowsError
+
+pub fn tt_load_embedded_font_raw(@core.RawAddress, UInt, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub let tt_polygon_type : UInt
+
+pub let tt_prim_cspline : UInt
+
+pub let tt_prim_line : UInt
+
+pub let tt_prim_qspline : UInt
+
+pub fn tt_run_validation_tests(@core.RawAddress, @9ab35bf48b3f5013.TTVALIDATIONTESTSPARAMS_dfdf461181d9) -> Int raise @core.WindowsError
+
+pub fn tt_run_validation_tests_ex(@core.RawAddress, @9ab35bf48b3f5013.TTVALIDATIONTESTSPARAMSEX_b1f1fba2a9a4) -> Int raise @core.WindowsError
+
+pub fn tt_run_validation_tests_ex_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn tt_run_validation_tests_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub let ttdelete_dontremovefont : UInt
+
+pub let ttembed_eudcembedded : UInt
+
+pub let ttembed_failifvariationsimulated : UInt
+
+pub let ttembed_subsetcancel : UInt
+
+pub let ttembed_variationsimulated : UInt
+
+pub let ttembed_webobject : UInt
+
+pub let ttembed_xorencryptdata : UInt
+
+pub let ttfcfp_apple_platformid : UInt
+
+pub let ttfcfp_delta : UInt
+
+pub let ttfcfp_dont_care : UInt
+
+pub let ttfcfp_flags_compress : UInt
+
+pub let ttfcfp_flags_glyphlist : UInt
+
+pub let ttfcfp_flags_subset : UInt
+
+pub let ttfcfp_flags_ttc : UInt
+
+pub let ttfcfp_lang_keep_all : UInt
+
+pub let ttfcfp_ms_platformid : UInt
+
+pub let ttfcfp_subset : UInt
+
+pub let ttfcfp_subset1 : UInt
+
+pub let ttfmfp_delta : UInt
+
+pub let ttfmfp_subset : UInt
+
+pub let ttfmfp_subset1 : UInt
+
+pub let ttload_eudc_overwrite : UInt
+
+pub let ttload_eudc_set : UInt
+
+pub let ttload_private : UInt
+
+pub fn union_rect(@fb66f520d7e12332.RECT_dc5b788d9702, @fb66f520d7e12332.RECT_dc5b788d9702, @fb66f520d7e12332.RECT_dc5b788d9702) -> Bool raise @core.WindowsError
+
+pub fn union_rect_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn unrealize_object(@core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn unrealize_object_raw(@core.RawAddress) -> Int
+
+pub fn update_colors(@core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn update_colors_raw(@core.RawAddress) -> Int
+
+pub fn update_window(@core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn update_window_raw(@core.RawAddress) -> Int
+
+pub fn validate_rect(@core.RawAddress, @fb66f520d7e12332.RECT_dc5b788d9702?) -> Bool raise @core.WindowsError
+
+pub fn validate_rect_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn validate_rgn(@core.RawAddress, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn validate_rgn_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub let wgl_font_lines : UInt
+
+pub let wgl_font_polygons : UInt
+
+pub let wgl_swap_main_plane : UInt
+
+pub fn wgl_swap_multiple_buffers(UInt, @9ab35bf48b3f5013.WGLSWAP_f3e9a789cdd7) -> UInt raise @core.WindowsError
+
+pub fn wgl_swap_multiple_buffers_raw(UInt, @core.RawAddress) -> UInt
+
+pub let wgl_swap_overlay1 : UInt
+
+pub let wgl_swap_overlay10 : UInt
+
+pub let wgl_swap_overlay11 : UInt
+
+pub let wgl_swap_overlay12 : UInt
+
+pub let wgl_swap_overlay13 : UInt
+
+pub let wgl_swap_overlay14 : UInt
+
+pub let wgl_swap_overlay15 : UInt
+
+pub let wgl_swap_overlay2 : UInt
+
+pub let wgl_swap_overlay3 : UInt
+
+pub let wgl_swap_overlay4 : UInt
+
+pub let wgl_swap_overlay5 : UInt
+
+pub let wgl_swap_overlay6 : UInt
+
+pub let wgl_swap_overlay7 : UInt
+
+pub let wgl_swap_overlay8 : UInt
+
+pub let wgl_swap_overlay9 : UInt
+
+pub let wgl_swap_underlay1 : UInt
+
+pub let wgl_swap_underlay10 : UInt
+
+pub let wgl_swap_underlay11 : UInt
+
+pub let wgl_swap_underlay12 : UInt
+
+pub let wgl_swap_underlay13 : UInt
+
+pub let wgl_swap_underlay14 : UInt
+
+pub let wgl_swap_underlay15 : UInt
+
+pub let wgl_swap_underlay2 : UInt
+
+pub let wgl_swap_underlay3 : UInt
+
+pub let wgl_swap_underlay4 : UInt
+
+pub let wgl_swap_underlay5 : UInt
+
+pub let wgl_swap_underlay6 : UInt
+
+pub let wgl_swap_underlay7 : UInt
+
+pub let wgl_swap_underlay8 : UInt
+
+pub let wgl_swap_underlay9 : UInt
+
+pub let wgl_swapmultiple_max : UInt
+
+pub fn widen_path(@core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn widen_path_raw(@core.RawAddress) -> Int
+
+pub fn window_from_dc(@core.RawAddress) -> @core.RawAddress raise @core.WindowsError
+
+pub fn window_from_dc_raw(@core.RawAddress) -> @core.RawAddress
+
+// Errors
+
+// Types and methods
+
+// Type aliases
+pub using @9ab35bf48b3f5013 {type ABC_e9641a1097d9 as ABC}
+
+pub using @9ab35bf48b3f5013 {type ABCFLOAT_3c06a3c4faed as ABCFLOAT}
+
+pub using @9ab35bf48b3f5013 {type ABORTPATH_6fc024a5dc39 as ABORTPATH}
+
+pub using @9ab35bf48b3f5013 {type ARCDIRECTION_853ce667cf6c as ARCDIRECTION}
+
+pub using @9ab35bf48b3f5013 {type AXESLISTA_909a07c95864 as AXESLISTA}
+
+pub using @9ab35bf48b3f5013 {type AXESLISTW_b73658f5d2c7 as AXESLISTW}
+
+pub using @9ab35bf48b3f5013 {type AXISINFOA_0388a1428a94 as AXISINFOA}
+
+pub using @9ab35bf48b3f5013 {type AXISINFOW_053ecb4844ec as AXISINFOW}
+
+pub using @9ab35bf48b3f5013 {type BACKGROUNDMODE_bd072ea3a9f0 as BACKGROUNDMODE}
+
+pub using @9ab35bf48b3f5013 {type BICOMPRESSION_ce5df2b8671b as BICOMPRESSION}
+
+pub using @9ab35bf48b3f5013 {type BITMAP_9068af294cf7 as BITMAP}
+
+pub using @9ab35bf48b3f5013 {type BITMAPCOREHEADER_526eff54c7cc as BITMAPCOREHEADER}
+
+pub using @9ab35bf48b3f5013 {type BITMAPCOREINFO_6380618332c4 as BITMAPCOREINFO}
+
+pub using @9ab35bf48b3f5013 {type BITMAPFILEHEADER_f274e8a58725 as BITMAPFILEHEADER}
+
+pub using @9ab35bf48b3f5013 {type BITMAPINFO_07d884578fc1 as BITMAPINFO}
+
+pub using @9ab35bf48b3f5013 {type BITMAPINFOHEADER_2cc303164845 as BITMAPINFOHEADER}
+
+pub using @9ab35bf48b3f5013 {type BITMAPV4HEADER_19e6cd8477ca as BITMAPV4HEADER}
+
+pub using @9ab35bf48b3f5013 {type BITMAPV5HEADER_dd5e71a4191a as BITMAPV5HEADER}
+
+pub using @9ab35bf48b3f5013 {type BLENDFUNCTION_b6a4186789c1 as BLENDFUNCTION}
+
+pub using @9ab35bf48b3f5013 {type BRUSHSTYLE_b5a122d21a86 as BRUSHSTYLE}
+
+pub using @9ab35bf48b3f5013 {type CDSTYPE_5b596c30a6a8 as CDSTYPE}
+
+pub using @9ab35bf48b3f5013 {type CFPALLOCPROC_f5ab7a4ef574 as CFPALLOCPROC}
+
+pub using @9ab35bf48b3f5013 {type CFPFREEPROC_4c1952000d23 as CFPFREEPROC}
+
+pub using @9ab35bf48b3f5013 {type CFPREALLOCPROC_5176ee3c805b as CFPREALLOCPROC}
+
+pub using @9ab35bf48b3f5013 {type CIEXYZ_e91527aa692b as CIEXYZ}
+
+pub using @9ab35bf48b3f5013 {type CIEXYZTRIPLE_9ed857294196 as CIEXYZTRIPLE}
+
+pub using @9ab35bf48b3f5013 {type COLORADJUSTMENT_97287d41ad11 as COLORADJUSTMENT}
+
+pub using @9ab35bf48b3f5013 {type CREATEFONTPACKAGESUBSETENCODING_18edbeafc8d2 as CREATEFONTPACKAGESUBSETENCODING}
+
+pub using @9ab35bf48b3f5013 {type CREATEFONTPACKAGESUBSETPLATFORM_08de370c9320 as CREATEFONTPACKAGESUBSETPLATFORM}
+
+pub using @9ab35bf48b3f5013 {type CREATEPOLYGONRGNMODE_25fc6c601314 as CREATEPOLYGONRGNMODE}
+
+pub using @9ab35bf48b3f5013 {type DCLAYOUT_db132c659d8d as DCLAYOUT}
+
+pub using @9ab35bf48b3f5013 {type DESIGNVECTOR_2943f5bd496f as DESIGNVECTOR}
+
+pub using @9ab35bf48b3f5013 {type DEVMODEA_3b3132d875c8 as DEVMODEA}
+
+pub using @9ab35bf48b3f5013 {type DEVMODEAAnonymous1EUnion_468579a1073d as DEVMODEAAnonymous1EUnion}
+
+pub using @9ab35bf48b3f5013 {type DEVMODEAAnonymous1EUnionAnonymous1EStruct_4e335d6acf18 as DEVMODEAAnonymous1EUnionAnonymous1EStruct}
+
+pub using @9ab35bf48b3f5013 {type DEVMODEAAnonymous1EUnionAnonymous2EStruct_d103151cb4b0 as DEVMODEAAnonymous1EUnionAnonymous2EStruct}
+
+pub using @9ab35bf48b3f5013 {type DEVMODEAAnonymous2EUnion_464331185c82 as DEVMODEAAnonymous2EUnion}
+
+pub using @9ab35bf48b3f5013 {type DEVMODECOLLATE_b00f1e810a5b as DEVMODECOLLATE}
+
+pub using @9ab35bf48b3f5013 {type DEVMODECOLOR_b07ccd46bd32 as DEVMODECOLOR}
+
+pub using @9ab35bf48b3f5013 {type DEVMODEDISPLAYFIXEDOUTPUT_9fd9aab68dd3 as DEVMODEDISPLAYFIXEDOUTPUT}
+
+pub using @9ab35bf48b3f5013 {type DEVMODEDISPLAYORIENTATION_d473ed8f593f as DEVMODEDISPLAYORIENTATION}
+
+pub using @9ab35bf48b3f5013 {type DEVMODEDUPLEX_f749fe81755d as DEVMODEDUPLEX}
+
+pub using @9ab35bf48b3f5013 {type DEVMODEFIELDFLAGS_a819f4d87b9d as DEVMODEFIELDFLAGS}
+
+pub using @9ab35bf48b3f5013 {type DEVMODETRUETYPEOPTION_8332732d2f0d as DEVMODETRUETYPEOPTION}
+
+pub using @9ab35bf48b3f5013 {type DEVMODEW_12540d748e26 as DEVMODEW}
+
+pub using @9ab35bf48b3f5013 {type DEVMODEWAnonymous1EUnion_46a5b8a210fa as DEVMODEWAnonymous1EUnion}
+
+pub using @9ab35bf48b3f5013 {type DEVMODEWAnonymous1EUnionAnonymous1EStruct_598bec744efd as DEVMODEWAnonymous1EUnionAnonymous1EStruct}
+
+pub using @9ab35bf48b3f5013 {type DEVMODEWAnonymous1EUnionAnonymous2EStruct_b8e048323954 as DEVMODEWAnonymous1EUnionAnonymous2EStruct}
+
+pub using @9ab35bf48b3f5013 {type DEVMODEWAnonymous2EUnion_e12c0996ee8d as DEVMODEWAnonymous2EUnion}
+
+pub using @9ab35bf48b3f5013 {type DFCSSTATE_22f1865777fd as DFCSSTATE}
+
+pub using @9ab35bf48b3f5013 {type DFCTYPE_69726954fa28 as DFCTYPE}
+
+pub using @9ab35bf48b3f5013 {type DIBSECTION_1431bd50beb0 as DIBSECTION}
+
+pub using @9ab35bf48b3f5013 {type DIBUSAGE_4bf208a4cd1e as DIBUSAGE}
+
+pub using @9ab35bf48b3f5013 {type DISPCHANGE_37a696f7069e as DISPCHANGE}
+
+pub using @9ab35bf48b3f5013 {type DISPLAYCONFIGADVANCEDCOLORMODE_7685ff849527 as DISPLAYCONFIGADVANCEDCOLORMODE}
+
+pub using @9ab35bf48b3f5013 {type DISPLAYCONFIGCOLORENCODING_cab489eae4aa as DISPLAYCONFIGCOLORENCODING}
+
+pub using @9ab35bf48b3f5013 {type DISPLAYDEVICEA_bab95718817c as DISPLAYDEVICEA}
+
+pub using @9ab35bf48b3f5013 {type DISPLAYDEVICESTATEFLAGS_dfd4385e5e9e as DISPLAYDEVICESTATEFLAGS}
+
+pub using @9ab35bf48b3f5013 {type DISPLAYDEVICEW_37407f46a36a as DISPLAYDEVICEW}
+
+pub using @9ab35bf48b3f5013 {type DRAWCAPTIONFLAGS_e7c18c7311a8 as DRAWCAPTIONFLAGS}
+
+pub using @9ab35bf48b3f5013 {type DRAWEDGEFLAGS_e8f8689cdc66 as DRAWEDGEFLAGS}
+
+pub using @9ab35bf48b3f5013 {type DRAWEDGEFLAGS_ededb423e64a as DRAWEDGEFLAGS_no_args}
+
+pub using @9ab35bf48b3f5013 {type DRAWSTATEFLAGS_d864a07908ad as DRAWSTATEFLAGS}
+
+pub using @9ab35bf48b3f5013 {type DRAWSTATEPROC_0c7e34a200ab as DRAWSTATEPROC}
+
+pub using @9ab35bf48b3f5013 {type DRAWTEXTFORMAT_1a4d8b2b45fd as DRAWTEXTFORMAT}
+
+pub using @9ab35bf48b3f5013 {type DRAWTEXTPARAMS_a393e215e5ba as DRAWTEXTPARAMS}
+
+pub using @9ab35bf48b3f5013 {type EMBEDDEDFONTPRIVSTATUS_f9a3884fb820 as EMBEDDEDFONTPRIVSTATUS}
+
+pub using @9ab35bf48b3f5013 {type EMBEDFONTCHARSET_84cbde3e0511 as EMBEDFONTCHARSET}
+
+pub using @9ab35bf48b3f5013 {type EMR_9f7450e0aa39 as EMR}
+
+pub using @9ab35bf48b3f5013 {type EMRALPHABLEND_95b1aff81be4 as EMRALPHABLEND}
+
+pub using @9ab35bf48b3f5013 {type EMRANGLEARC_9641d7c842bf as EMRANGLEARC}
+
+pub using @9ab35bf48b3f5013 {type EMRARC_ee1e709c2f4b as EMRARC}
+
+pub using @9ab35bf48b3f5013 {type EMRBITBLT_4cd72d08d359 as EMRBITBLT}
+
+pub using @9ab35bf48b3f5013 {type EMRCOLORCORRECTPALETTE_9093cbc79c56 as EMRCOLORCORRECTPALETTE}
+
+pub using @9ab35bf48b3f5013 {type EMRCOLORMATCHTOTARGET_5931038a2514 as EMRCOLORMATCHTOTARGET}
+
+pub using @9ab35bf48b3f5013 {type EMRCREATEBRUSHINDIRECT_c2c48ddea8f3 as EMRCREATEBRUSHINDIRECT}
+
+pub using @9ab35bf48b3f5013 {type EMRCREATEDIBPATTERNBRUSHPT_b7db611cf18a as EMRCREATEDIBPATTERNBRUSHPT}
+
+pub using @9ab35bf48b3f5013 {type EMRCREATEMONOBRUSH_e91fcd970c96 as EMRCREATEMONOBRUSH}
+
+pub using @9ab35bf48b3f5013 {type EMRCREATEPALETTE_3f44d3e50f83 as EMRCREATEPALETTE}
+
+pub using @9ab35bf48b3f5013 {type EMRCREATEPEN_1843af929363 as EMRCREATEPEN}
+
+pub using @9ab35bf48b3f5013 {type EMRELLIPSE_ee4f86713812 as EMRELLIPSE}
+
+pub using @9ab35bf48b3f5013 {type EMREOF_723c804488cb as EMREOF}
+
+pub using @9ab35bf48b3f5013 {type EMREXCLUDECLIPRECT_6a7b8d9e4467 as EMREXCLUDECLIPRECT}
+
+pub using @9ab35bf48b3f5013 {type EMREXTCREATEFONTINDIRECTW_b05ba4f0f592 as EMREXTCREATEFONTINDIRECTW}
+
+pub using @9ab35bf48b3f5013 {type EMREXTCREATEPEN_0525be91404b as EMREXTCREATEPEN}
+
+pub using @9ab35bf48b3f5013 {type EMREXTESCAPE_0f8dc509e2d2 as EMREXTESCAPE}
+
+pub using @9ab35bf48b3f5013 {type EMREXTFLOODFILL_0b156297c40b as EMREXTFLOODFILL}
+
+pub using @9ab35bf48b3f5013 {type EMREXTSELECTCLIPRGN_f6d124398ffd as EMREXTSELECTCLIPRGN}
+
+pub using @9ab35bf48b3f5013 {type EMREXTTEXTOUTA_9dda0eb8ce5b as EMREXTTEXTOUTA}
+
+pub using @9ab35bf48b3f5013 {type EMRFILLPATH_8ea10688e923 as EMRFILLPATH}
+
+pub using @9ab35bf48b3f5013 {type EMRFILLRGN_8684094b3bdb as EMRFILLRGN}
+
+pub using @9ab35bf48b3f5013 {type EMRFORMAT_b140872933f7 as EMRFORMAT}
+
+pub using @9ab35bf48b3f5013 {type EMRFRAMERGN_dc3c1cc0e8dd as EMRFRAMERGN}
+
+pub using @9ab35bf48b3f5013 {type EMRGDICOMMENT_dcfbcc2d4c2b as EMRGDICOMMENT}
+
+pub using @9ab35bf48b3f5013 {type EMRGLSBOUNDEDRECORD_efdea51198d7 as EMRGLSBOUNDEDRECORD}
+
+pub using @9ab35bf48b3f5013 {type EMRGLSRECORD_a93359b9bd00 as EMRGLSRECORD}
+
+pub using @9ab35bf48b3f5013 {type EMRGRADIENTFILL_e28d372578b6 as EMRGRADIENTFILL}
+
+pub using @9ab35bf48b3f5013 {type EMRINVERTRGN_e0f8f8086528 as EMRINVERTRGN}
+
+pub using @9ab35bf48b3f5013 {type EMRLINETO_c235e0296d05 as EMRLINETO}
+
+pub using @9ab35bf48b3f5013 {type EMRMASKBLT_44f0acb3fa0f as EMRMASKBLT}
+
+pub using @9ab35bf48b3f5013 {type EMRMODIFYWORLDTRANSFORM_51a53455e245 as EMRMODIFYWORLDTRANSFORM}
+
+pub using @9ab35bf48b3f5013 {type EMRNAMEDESCAPE_a25d7711bcd3 as EMRNAMEDESCAPE}
+
+pub using @9ab35bf48b3f5013 {type EMROFFSETCLIPRGN_b2e7887d153d as EMROFFSETCLIPRGN}
+
+pub using @9ab35bf48b3f5013 {type EMRPLGBLT_a6e774df170e as EMRPLGBLT}
+
+pub using @9ab35bf48b3f5013 {type EMRPOLYDRAW_b442df75bf4f as EMRPOLYDRAW}
+
+pub using @9ab35bf48b3f5013 {type EMRPOLYDRAW16_25c38bc166f2 as EMRPOLYDRAW16}
+
+pub using @9ab35bf48b3f5013 {type EMRPOLYLINE_d59b62b5a665 as EMRPOLYLINE}
+
+pub using @9ab35bf48b3f5013 {type EMRPOLYLINE16_22b007d55625 as EMRPOLYLINE16}
+
+pub using @9ab35bf48b3f5013 {type EMRPOLYPOLYLINE_0ad86e1b0a36 as EMRPOLYPOLYLINE}
+
+pub using @9ab35bf48b3f5013 {type EMRPOLYPOLYLINE16_a5bdf8d8cd0f as EMRPOLYPOLYLINE16}
+
+pub using @9ab35bf48b3f5013 {type EMRPOLYTEXTOUTA_0585b432fbd6 as EMRPOLYTEXTOUTA}
+
+pub using @9ab35bf48b3f5013 {type EMRRESIZEPALETTE_5add325ae8da as EMRRESIZEPALETTE}
+
+pub using @9ab35bf48b3f5013 {type EMRRESTOREDC_89919cd0a000 as EMRRESTOREDC}
+
+pub using @9ab35bf48b3f5013 {type EMRROUNDRECT_9f4a0284d155 as EMRROUNDRECT}
+
+pub using @9ab35bf48b3f5013 {type EMRSCALEVIEWPORTEXTEX_c3f0f57ff2fd as EMRSCALEVIEWPORTEXTEX}
+
+pub using @9ab35bf48b3f5013 {type EMRSELECTCLIPPATH_b7cd07b82eae as EMRSELECTCLIPPATH}
+
+pub using @9ab35bf48b3f5013 {type EMRSELECTOBJECT_8710223e42d5 as EMRSELECTOBJECT}
+
+pub using @9ab35bf48b3f5013 {type EMRSELECTPALETTE_671ed041b1da as EMRSELECTPALETTE}
+
+pub using @9ab35bf48b3f5013 {type EMRSETARCDIRECTION_ff8dd5acecf0 as EMRSETARCDIRECTION}
+
+pub using @9ab35bf48b3f5013 {type EMRSETCOLORADJUSTMENT_ce0de056c93c as EMRSETCOLORADJUSTMENT}
+
+pub using @9ab35bf48b3f5013 {type EMRSETCOLORSPACE_11ab0c5aba6e as EMRSETCOLORSPACE}
+
+pub using @9ab35bf48b3f5013 {type EMRSETDIBITSTODEVICE_b539f5b12a73 as EMRSETDIBITSTODEVICE}
+
+pub using @9ab35bf48b3f5013 {type EMRSETICMPROFILE_0d71cdfce3e2 as EMRSETICMPROFILE}
+
+pub using @9ab35bf48b3f5013 {type EMRSETMAPPERFLAGS_d899d3a81278 as EMRSETMAPPERFLAGS}
+
+pub using @9ab35bf48b3f5013 {type EMRSETMITERLIMIT_110733f9c864 as EMRSETMITERLIMIT}
+
+pub using @9ab35bf48b3f5013 {type EMRSETPALETTEENTRIES_b801dd8ed935 as EMRSETPALETTEENTRIES}
+
+pub using @9ab35bf48b3f5013 {type EMRSETPIXELV_0ca5c57d5842 as EMRSETPIXELV}
+
+pub using @9ab35bf48b3f5013 {type EMRSETTEXTCOLOR_dedadcc4985e as EMRSETTEXTCOLOR}
+
+pub using @9ab35bf48b3f5013 {type EMRSETVIEWPORTEXTEX_835e60131c25 as EMRSETVIEWPORTEXTEX}
+
+pub using @9ab35bf48b3f5013 {type EMRSETVIEWPORTORGEX_07bad4d7b65a as EMRSETVIEWPORTORGEX}
+
+pub using @9ab35bf48b3f5013 {type EMRSETWORLDTRANSFORM_dc0274bdfac5 as EMRSETWORLDTRANSFORM}
+
+pub using @9ab35bf48b3f5013 {type EMRSTRETCHBLT_8c2fe2837d1f as EMRSTRETCHBLT}
+
+pub using @9ab35bf48b3f5013 {type EMRSTRETCHDIBITS_ae26d431ed6b as EMRSTRETCHDIBITS}
+
+pub using @9ab35bf48b3f5013 {type EMRTEXT_88db220ece7c as EMRTEXT}
+
+pub using @9ab35bf48b3f5013 {type EMRTRANSPARENTBLT_6a69b77106e3 as EMRTRANSPARENTBLT}
+
+pub using @9ab35bf48b3f5013 {type ENHANCEDMETAFILERECORDTYPE_7d8efaa33329 as ENHANCEDMETAFILERECORDTYPE}
+
+pub using @9ab35bf48b3f5013 {type ENHMETAHEADER_7de4a8af42b1 as ENHMETAHEADER}
+
+pub using @9ab35bf48b3f5013 {type ENHMETARECORD_8587adeaff8d as ENHMETARECORD}
+
+pub using @9ab35bf48b3f5013 {type ENHMFENUMPROC_27966a25ca55 as ENHMFENUMPROC}
+
+pub using @9ab35bf48b3f5013 {type ENUMDISPLAYSETTINGSFLAGS_a8f6b67a6ddd as ENUMDISPLAYSETTINGSFLAGS}
+
+pub using @9ab35bf48b3f5013 {type ENUMDISPLAYSETTINGSMODE_f3921ad091fc as ENUMDISPLAYSETTINGSMODE}
+
+pub using @9ab35bf48b3f5013 {type ENUMLOGFONTA_781941738a42 as ENUMLOGFONTA}
+
+pub using @9ab35bf48b3f5013 {type ENUMLOGFONTEXA_6c944bfd966b as ENUMLOGFONTEXA}
+
+pub using @9ab35bf48b3f5013 {type ENUMLOGFONTEXDVA_6ac9980ba99a as ENUMLOGFONTEXDVA}
+
+pub using @9ab35bf48b3f5013 {type ENUMLOGFONTEXDVW_a1ff83ff628f as ENUMLOGFONTEXDVW}
+
+pub using @9ab35bf48b3f5013 {type ENUMLOGFONTEXW_def3b68f304b as ENUMLOGFONTEXW}
+
+pub using @9ab35bf48b3f5013 {type ENUMLOGFONTW_2eed83ca8b6c as ENUMLOGFONTW}
+
+pub using @9ab35bf48b3f5013 {type ETOOPTIONS_cf3f10aa82d6 as ETOOPTIONS}
+
+pub using @9ab35bf48b3f5013 {type EXTFLOODFILLTYPE_5513b0a2564f as EXTFLOODFILLTYPE}
+
+pub using @9ab35bf48b3f5013 {type EXTLOGFONTA_e17e4e4cfab4 as EXTLOGFONTA}
+
+pub using @9ab35bf48b3f5013 {type EXTLOGFONTW_c6ef8d2abed5 as EXTLOGFONTW}
+
+pub using @9ab35bf48b3f5013 {type EXTLOGPEN_cb9364c34e73 as EXTLOGPEN}
+
+pub using @9ab35bf48b3f5013 {type EXTLOGPEN32_4aed2088876f as EXTLOGPEN32}
+
+pub using @9ab35bf48b3f5013 {type FIXED_014a9d55149a as FIXED}
+
+pub using @9ab35bf48b3f5013 {type FONTCHARSET_28543758b2ca as FONTCHARSET}
+
+pub using @9ab35bf48b3f5013 {type FONTCLIPPRECISION_20a42f134c07 as FONTCLIPPRECISION}
+
+pub using @9ab35bf48b3f5013 {type FONTENUMPROCA_36c8110c7e81 as FONTENUMPROCA}
+
+pub using @9ab35bf48b3f5013 {type FONTENUMPROCW_f808b0df5a59 as FONTENUMPROCW}
+
+pub using @9ab35bf48b3f5013 {type FONTFAMILY_e2596b25c2c8 as FONTFAMILY}
+
+pub using @9ab35bf48b3f5013 {type FONTLICENSEPRIVS_631e05a050e7 as FONTLICENSEPRIVS}
+
+pub using @9ab35bf48b3f5013 {type FONTOUTPUTPRECISION_dfba0cc36ac6 as FONTOUTPUTPRECISION}
+
+pub using @9ab35bf48b3f5013 {type FONTPITCH_6d2f7aacee5f as FONTPITCH}
+
+pub using @9ab35bf48b3f5013 {type FONTQUALITY_9ad1ecc49f98 as FONTQUALITY}
+
+pub using @9ab35bf48b3f5013 {type FONTRESOURCECHARACTERISTICS_02c173ad0348 as FONTRESOURCECHARACTERISTICS}
+
+pub using @9ab35bf48b3f5013 {type FONTWEIGHT_1ab1927453d2 as FONTWEIGHT}
+
+pub using @9ab35bf48b3f5013 {type GCPRESULTSA_f724004dd15d as GCPRESULTSA}
+
+pub using @9ab35bf48b3f5013 {type GCPRESULTSW_78384454d96b as GCPRESULTSW}
+
+pub using @9ab35bf48b3f5013 {type GDIREGIONTYPE_7d5d6fc66eee as GDIREGIONTYPE}
+
+pub using @9ab35bf48b3f5013 {type GETCHARACTERPLACEMENTFLAGS_8fff810b471f as GETCHARACTERPLACEMENTFLAGS}
+
+pub using @9ab35bf48b3f5013 {type GETDCXFLAGS_2ae92f160c29 as GETDCXFLAGS}
+
+pub using @9ab35bf48b3f5013 {type GETDEVICECAPSINDEX_2391a67d0ac7 as GETDEVICECAPSINDEX}
+
+pub using @9ab35bf48b3f5013 {type GETGLYPHOUTLINEFORMAT_3257e66f32f4 as GETGLYPHOUTLINEFORMAT}
+
+pub using @9ab35bf48b3f5013 {type GETSTOCKOBJECTFLAGS_1b8e3aabd100 as GETSTOCKOBJECTFLAGS}
+
+pub using @9ab35bf48b3f5013 {type GLYPHMETRICS_3d88f7e2b2b1 as GLYPHMETRICS}
+
+pub using @9ab35bf48b3f5013 {type GLYPHSET_fbe75b4a8e65 as GLYPHSET}
+
+pub using @9ab35bf48b3f5013 {type GOBJENUMPROC_5fb7a9073e23 as GOBJENUMPROC}
+
+pub using @9ab35bf48b3f5013 {type GRADIENTFILL_ac48e85ef1ec as GRADIENTFILL}
+
+pub using @9ab35bf48b3f5013 {type GRADIENTRECT_2e5bb28c342a as GRADIENTRECT}
+
+pub using @9ab35bf48b3f5013 {type GRADIENTTRIANGLE_d962469df3a8 as GRADIENTTRIANGLE}
+
+pub using @9ab35bf48b3f5013 {type GRAPHICSMODE_4173eb662d77 as GRAPHICSMODE}
+
+pub using @9ab35bf48b3f5013 {type GRAYSTRINGPROC_9db6cde2226a as GRAYSTRINGPROC}
+
+pub using @9ab35bf48b3f5013 {type HANDLETABLE_f9d4569a6974 as HANDLETABLE}
+
+pub using @9ab35bf48b3f5013 {type HATCHBRUSHSTYLE_35a290469f8f as HATCHBRUSHSTYLE}
+
+pub using @9ab35bf48b3f5013 {type HBITMAP_52c5b0a55740 as HBITMAP}
+
+pub using @9ab35bf48b3f5013 {type HBRUSH_0079e8662dd5 as HBRUSH}
+
+pub using @9ab35bf48b3f5013 {type HDC_52d140cc48c6 as HDC}
+
+pub using @9ab35bf48b3f5013 {type HDCMAPMODE_6e9ca3142aa8 as HDCMAPMODE}
+
+pub using @9ab35bf48b3f5013 {type HENHMETAFILE_79272ac199db as HENHMETAFILE}
+
+pub using @9ab35bf48b3f5013 {type HFONT_46fe8f7e7c59 as HFONT}
+
+pub using @9ab35bf48b3f5013 {type HGDIOBJ_ad664b0b9f01 as HGDIOBJ}
+
+pub using @9ab35bf48b3f5013 {type HMETAFILE_9a66c82f3bc9 as HMETAFILE}
+
+pub using @9ab35bf48b3f5013 {type HMONITOR_41c2369fa0a3 as HMONITOR}
+
+pub using @9ab35bf48b3f5013 {type HPALETTE_aca885edee3c as HPALETTE}
+
+pub using @9ab35bf48b3f5013 {type HPEN_c5c7f1dacb2c as HPEN}
+
+pub using @9ab35bf48b3f5013 {type HRGN_701628c3a570 as HRGN}
+
+pub using @9ab35bf48b3f5013 {type KERNINGPAIR_42dc36701a6e as KERNINGPAIR}
+
+pub using @9ab35bf48b3f5013 {type LINEDDAPROC_0d22cf95ff11 as LINEDDAPROC}
+
+pub using @9ab35bf48b3f5013 {type LOGBRUSH_adc275c2cafa as LOGBRUSH}
+
+pub using @9ab35bf48b3f5013 {type LOGBRUSH32_b0b2fcf0eb6b as LOGBRUSH32}
+
+pub using @9ab35bf48b3f5013 {type LOGFONTA_ac16c2afc10d as LOGFONTA}
+
+pub using @9ab35bf48b3f5013 {type LOGFONTW_91e02db450ee as LOGFONTW}
+
+pub using @9ab35bf48b3f5013 {type LOGPALETTE_8d9f29085d7a as LOGPALETTE}
+
+pub using @9ab35bf48b3f5013 {type LOGPEN_d23306dfa5f5 as LOGPEN}
+
+pub using @9ab35bf48b3f5013 {type LPFNDEVCAPS_c5005ee7fd0f as LPFNDEVCAPS}
+
+pub using @9ab35bf48b3f5013 {type LPFNDEVMODE_55e2d5f2da15 as LPFNDEVMODE}
+
+pub using @9ab35bf48b3f5013 {type MAT2_432e5e24dc40 as MAT2}
+
+pub using @9ab35bf48b3f5013 {type METAHEADER_3291b130af26 as METAHEADER}
+
+pub using @9ab35bf48b3f5013 {type METARECORD_ffbcc48fef95 as METARECORD}
+
+pub using @9ab35bf48b3f5013 {type MFENUMPROC_95c70c06f259 as MFENUMPROC}
+
+pub using @9ab35bf48b3f5013 {type MODIFYWORLDTRANSFORMMODE_647676a3601e as MODIFYWORLDTRANSFORMMODE}
+
+pub using @9ab35bf48b3f5013 {type MONITORENUMPROC_f7b9aa6adaa5 as MONITORENUMPROC}
+
+pub using @9ab35bf48b3f5013 {type MONITORFROMFLAGS_1898d135cb84 as MONITORFROMFLAGS}
+
+pub using @9ab35bf48b3f5013 {type MONITORINFO_e1d08b361c91 as MONITORINFO}
+
+pub using @9ab35bf48b3f5013 {type MONITORINFOEXA_991a111180ab as MONITORINFOEXA}
+
+pub using @9ab35bf48b3f5013 {type MONITORINFOEXW_dbbef08dcaad as MONITORINFOEXW}
+
+pub using @9ab35bf48b3f5013 {type NEWTEXTMETRICA_3fcad607380e as NEWTEXTMETRICA}
+
+pub using @9ab35bf48b3f5013 {type NEWTEXTMETRICW_e77c4505671e as NEWTEXTMETRICW}
+
+pub using @9ab35bf48b3f5013 {type OBJTYPE_bccdf1558eb3 as OBJTYPE}
+
+pub using @9ab35bf48b3f5013 {type OUTLINETEXTMETRICA_ba2673eef1c5 as OUTLINETEXTMETRICA}
+
+pub using @9ab35bf48b3f5013 {type OUTLINETEXTMETRICW_b788bf30db0e as OUTLINETEXTMETRICW}
+
+pub using @9ab35bf48b3f5013 {type PAINTSTRUCT_a7b313c4746f as PAINTSTRUCT}
+
+pub using @9ab35bf48b3f5013 {type PALETTEENTRY_5450403ccf8e as PALETTEENTRY}
+
+pub using @9ab35bf48b3f5013 {type PANARMSTYLE_0385835adc0b as PANARMSTYLE}
+
+pub using @9ab35bf48b3f5013 {type PANCONTRAST_c9112485a51f as PANCONTRAST}
+
+pub using @9ab35bf48b3f5013 {type PANFAMILYTYPE_f60eccfd0d7d as PANFAMILYTYPE}
+
+pub using @9ab35bf48b3f5013 {type PANLETTFORM_30d2e124f49a as PANLETTFORM}
+
+pub using @9ab35bf48b3f5013 {type PANMIDLINE_cf9406d16002 as PANMIDLINE}
+
+pub using @9ab35bf48b3f5013 {type PANOSE_475c446e01f2 as PANOSE}
+
+pub using @9ab35bf48b3f5013 {type PANPROPORTION_e5983e481d6a as PANPROPORTION}
+
+pub using @9ab35bf48b3f5013 {type PANSERIFSTYLE_90783c480eb1 as PANSERIFSTYLE}
+
+pub using @9ab35bf48b3f5013 {type PANSTROKEVARIATION_032c64b09694 as PANSTROKEVARIATION}
+
+pub using @9ab35bf48b3f5013 {type PANWEIGHT_79165ea9cc16 as PANWEIGHT}
+
+pub using @9ab35bf48b3f5013 {type PANXHEIGHT_a643238074c4 as PANXHEIGHT}
+
+pub using @9ab35bf48b3f5013 {type PELARRAY_546787e8715b as PELARRAY}
+
+pub using @9ab35bf48b3f5013 {type PENSTYLE_3b5c8374e0e5 as PENSTYLE}
+
+pub using @9ab35bf48b3f5013 {type POINTFX_258cdfc60a8b as POINTFX}
+
+pub using @9ab35bf48b3f5013 {type POLYTEXTA_b3270dc21943 as POLYTEXTA}
+
+pub using @9ab35bf48b3f5013 {type POLYTEXTW_776e70e67ca5 as POLYTEXTW}
+
+pub using @9ab35bf48b3f5013 {type R2MODE_bb2bdb09f3c7 as R2MODE}
+
+pub using @9ab35bf48b3f5013 {type RASTERIZERSTATUS_76a845547032 as RASTERIZERSTATUS}
+
+pub using @9ab35bf48b3f5013 {type READEMBEDPROC_73bdc562de49 as READEMBEDPROC}
+
+pub using @9ab35bf48b3f5013 {type REDRAWWINDOWFLAGS_ea96dd4eec76 as REDRAWWINDOWFLAGS}
+
+pub using @9ab35bf48b3f5013 {type RGBQUAD_97ec12d91090 as RGBQUAD}
+
+pub using @9ab35bf48b3f5013 {type RGBTRIPLE_f1ed1131c62b as RGBTRIPLE}
+
+pub using @9ab35bf48b3f5013 {type RGNCOMBINEMODE_bc3734442525 as RGNCOMBINEMODE}
+
+pub using @9ab35bf48b3f5013 {type RGNDATA_0563e9676406 as RGNDATA}
+
+pub using @9ab35bf48b3f5013 {type RGNDATAHEADER_3a0058d71871 as RGNDATAHEADER}
+
+pub using @9ab35bf48b3f5013 {type ROPCODE_761e20eef7e8 as ROPCODE}
+
+pub using @9ab35bf48b3f5013 {type SETBOUNDSRECTFLAGS_d5cd387aee60 as SETBOUNDSRECTFLAGS}
+
+pub using @9ab35bf48b3f5013 {type STRETCHBLTMODE_4385fcc66ec1 as STRETCHBLTMODE}
+
+pub using @9ab35bf48b3f5013 {type SYSCOLORINDEX_fc107aa11c32 as SYSCOLORINDEX}
+
+pub using @9ab35bf48b3f5013 {type SYSTEMPALETTEUSE_007f441c85d3 as SYSTEMPALETTEUSE}
+
+pub using @9ab35bf48b3f5013 {type TEXTALIGNOPTIONS_dcc3eb211152 as TEXTALIGNOPTIONS}
+
+pub using @9ab35bf48b3f5013 {type TEXTMETRICA_3f3a05a4ed80 as TEXTMETRICA}
+
+pub using @9ab35bf48b3f5013 {type TEXTMETRICW_e91124706cac as TEXTMETRICW}
+
+pub using @9ab35bf48b3f5013 {type TMPFFLAGS_56d9422a5d77 as TMPFFLAGS}
+
+pub using @9ab35bf48b3f5013 {type TRIVERTEX_17306fe7465d as TRIVERTEX}
+
+pub using @9ab35bf48b3f5013 {type TTEMBEDFLAGS_06efb438b419 as TTEMBEDFLAGS}
+
+pub using @9ab35bf48b3f5013 {type TTEMBEDINFO_e7e1976aaf23 as TTEMBEDINFO}
+
+pub using @9ab35bf48b3f5013 {type TTLOADEMBEDDEDFONTSTATUS_e14edf8700e8 as TTLOADEMBEDDEDFONTSTATUS}
+
+pub using @9ab35bf48b3f5013 {type TTLOADINFO_a571b69ecbb1 as TTLOADINFO}
+
+pub using @9ab35bf48b3f5013 {type TTPOLYCURVE_6ac37a7b7c62 as TTPOLYCURVE}
+
+pub using @9ab35bf48b3f5013 {type TTPOLYGONHEADER_97d2b7222c23 as TTPOLYGONHEADER}
+
+pub using @9ab35bf48b3f5013 {type TTVALIDATIONTESTSPARAMS_dfdf461181d9 as TTVALIDATIONTESTSPARAMS}
+
+pub using @9ab35bf48b3f5013 {type TTVALIDATIONTESTSPARAMSEX_b1f1fba2a9a4 as TTVALIDATIONTESTSPARAMSEX}
+
+pub using @9ab35bf48b3f5013 {type WCRANGE_0530d0919a60 as WCRANGE}
+
+pub using @9ab35bf48b3f5013 {type WGLSWAP_f3e9a789cdd7 as WGLSWAP}
+
+pub using @9ab35bf48b3f5013 {type WRITEEMBEDPROC_67655af87fad as WRITEEMBEDPROC}
+
+pub using @9ab35bf48b3f5013 {type XFORM_86562134bd5e as XFORM}
+
+// Traits

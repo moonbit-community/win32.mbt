@@ -1,0 +1,196 @@
+// Generated using `moon info`, DON'T EDIT IT
+package "moonbit-community/win32api/windows/win32/network_management/network_diagnostics_framework"
+
+import {
+  "moonbit-community/win32api/runtime/core",
+  "moonbit-community/win32api/runtime/strings",
+  "moonbit-community/win32api/scc/7ca9e13be49370eb",
+  "moonbit-community/win32api/scc/b4ba08720bf1d743",
+  "moonbit-community/win32api/scc/cc6631776d7e2373",
+}
+
+// Values
+pub let df_impersonation : UInt
+
+pub let df_traceless : UInt
+
+pub let ndf_add_capture_trace : UInt
+
+pub let ndf_apply_inclusion_list_filter : UInt
+
+pub fn ndf_cancel_incident(@core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn ndf_cancel_incident_raw(@core.RawAddress) -> Int
+
+pub fn ndf_close_incident(@core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn ndf_close_incident_raw(@core.RawAddress) -> Int
+
+pub fn ndf_create_connectivity_incident(@core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn ndf_create_connectivity_incident_raw(@core.RawAddress) -> Int
+
+pub fn ndf_create_dns_incident(@strings.PWStr, UInt16, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn ndf_create_dns_incident_raw(@core.RawAddress, UInt, @core.RawAddress) -> Int
+
+pub fn ndf_create_grouping_incident(@strings.PWStr?, @strings.PWStr?, @strings.PWStr?, @strings.PWStr?, @7ca9e13be49370eb.SOCKETADDRESSLIST_33c65c063740?, @strings.PWStr?, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn ndf_create_grouping_incident_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn ndf_create_incident(@strings.PWStr, UInt, @b4ba08720bf1d743.HELPERATTRIBUTE_7644f9a15383, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn ndf_create_incident_raw(@core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn ndf_create_net_connection_incident(@core.RawAddress, Bytes) -> Int raise @core.WindowsError
+
+pub fn ndf_create_net_connection_incident_raw(@core.RawAddress, Bytes) -> Int
+
+pub fn ndf_create_pnrp_incident(@strings.PWStr, @strings.PWStr?, Int, @strings.PWStr?, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn ndf_create_pnrp_incident_raw(@core.RawAddress, @core.RawAddress, Int, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn ndf_create_sharing_incident(@strings.PWStr, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn ndf_create_sharing_incident_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn ndf_create_web_incident(@strings.PWStr, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn ndf_create_web_incident_ex(@strings.PWStr, Int, @core.RawAddress, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn ndf_create_web_incident_ex_raw(@core.RawAddress, Int, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn ndf_create_web_incident_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn ndf_create_win_sock_incident(UInt64, @strings.PWStr?, UInt16, @strings.PWStr?, @cc6631776d7e2373.SID_22d37a073d0d?, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn ndf_create_win_sock_incident_raw(UInt64, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn ndf_diagnose_incident(@core.RawAddress, @core.RawAddress, @core.RawAddress, UInt, UInt) -> Int raise @core.WindowsError
+
+pub fn ndf_diagnose_incident_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, UInt, UInt) -> Int
+
+pub let ndf_e_bad_param : Int
+
+pub let ndf_e_cancelled : Int
+
+pub let ndf_e_disabled : Int
+
+pub let ndf_e_length_exceeded : Int
+
+pub let ndf_e_nohelperclass : Int
+
+pub let ndf_e_problem_present : Int
+
+pub let ndf_e_unknown : Int
+
+pub let ndf_e_validation : Int
+
+pub let ndf_error_start : UInt
+
+pub fn ndf_execute_diagnosis(@core.RawAddress, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn ndf_execute_diagnosis_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn ndf_get_trace_file(@core.RawAddress, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn ndf_get_trace_file_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub let ndf_inbound_flag_edgetraversal : UInt
+
+pub let ndf_inbound_flag_healthcheck : UInt
+
+pub fn ndf_repair_incident(@core.RawAddress, @b4ba08720bf1d743.RepairInfoEx_b1586726f0b5, UInt) -> Int raise @core.WindowsError
+
+pub fn ndf_repair_incident_raw(@core.RawAddress, @core.RawAddress, UInt) -> Int
+
+pub let rcf_isconfirmed : UInt
+
+pub let rcf_isleaf : UInt
+
+pub let rcf_isthirdparty : UInt
+
+pub let rf_contact_admin : UInt
+
+pub let rf_information_only : UInt
+
+pub let rf_repro : UInt
+
+pub let rf_reserved : UInt
+
+pub let rf_reserved_ca : UInt
+
+pub let rf_reserved_lni : UInt
+
+pub let rf_show_events : UInt
+
+pub let rf_ui_only : UInt
+
+pub let rf_user_action : UInt
+
+pub let rf_user_confirmation : UInt
+
+pub let rf_validate_helptopic : UInt
+
+pub let rf_workaround : UInt
+
+// Errors
+
+// Types and methods
+
+// Type aliases
+pub using @b4ba08720bf1d743 {type ATTRIBUTETYPE_74ccc6996f06 as ATTRIBUTETYPE}
+
+pub using @b4ba08720bf1d743 {type DIAGNOSISSTATUS_6562c5e52f62 as DIAGNOSISSTATUS}
+
+pub using @b4ba08720bf1d743 {type DIAGSOCKADDR_a3dc9c7689db as DIAGSOCKADDR}
+
+pub using @b4ba08720bf1d743 {type DiagnosticsInfo_def25adbf1de as DiagnosticsInfo}
+
+pub using @b4ba08720bf1d743 {type HELPERATTRIBUTE_7644f9a15383 as HELPERATTRIBUTE}
+
+pub using @b4ba08720bf1d743 {type HELPERATTRIBUTEAnonymousEUnion_814922d326a8 as HELPERATTRIBUTEAnonymousEUnion}
+
+pub using @b4ba08720bf1d743 {type HYPOTHESIS_6657b17f973c as HYPOTHESIS}
+
+pub using @b4ba08720bf1d743 {type HelperAttributeInfo_227e69457bbe as HelperAttributeInfo}
+
+pub using @b4ba08720bf1d743 {type HypothesisResult_82db1f4f5fc7 as HypothesisResult}
+
+pub using @b4ba08720bf1d743 {type INetDiagExtensibleHelper_5b2c2fc8b1c8 as INetDiagExtensibleHelper}
+
+pub using @b4ba08720bf1d743 {type INetDiagHelper_e3541bc72999 as INetDiagHelper}
+
+pub using @b4ba08720bf1d743 {type INetDiagHelperEx_ebd568d202ce as INetDiagHelperEx}
+
+pub using @b4ba08720bf1d743 {type INetDiagHelperInfo_581617cbad2e as INetDiagHelperInfo}
+
+pub using @b4ba08720bf1d743 {type INetDiagHelperUtilFactory_9ada5fe6ef1c as INetDiagHelperUtilFactory}
+
+pub using @b4ba08720bf1d743 {type LIFETIME_c3061c330ce6 as LIFETIME}
+
+pub using @b4ba08720bf1d743 {type OCTETSTRING_4bfd54e8527b as OCTETSTRING}
+
+pub using @b4ba08720bf1d743 {type PROBLEMTYPE_3af3c3e82ad2 as PROBLEMTYPE}
+
+pub using @b4ba08720bf1d743 {type REPAIRRISK_977817e0c1dd as REPAIRRISK}
+
+pub using @b4ba08720bf1d743 {type REPAIRSCOPE_6cf172ef6b4f as REPAIRSCOPE}
+
+pub using @b4ba08720bf1d743 {type REPAIRSTATUS_b78847a666fd as REPAIRSTATUS}
+
+pub using @b4ba08720bf1d743 {type RepairInfo_99a0ff325439 as RepairInfo}
+
+pub using @b4ba08720bf1d743 {type RepairInfoEx_b1586726f0b5 as RepairInfoEx}
+
+pub using @b4ba08720bf1d743 {type RootCauseInfo_9bebb9bb9bf2 as RootCauseInfo}
+
+pub using @b4ba08720bf1d743 {type ShellCommandInfo_5869bd8d77e7 as ShellCommandInfo}
+
+pub using @b4ba08720bf1d743 {type UIINFOTYPE_c4819a019cd3 as UIINFOTYPE}
+
+pub using @b4ba08720bf1d743 {type UiInfo_a565f051bebf as UiInfo}
+
+pub using @b4ba08720bf1d743 {type UiInfoAnonymousEUnion_8c0b133d7a72 as UiInfoAnonymousEUnion}
+
+// Traits

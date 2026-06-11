@@ -1,0 +1,168 @@
+// Generated using `moon info`, DON'T EDIT IT
+package "moonbit-community/win32api/windows/win32/system/stations_and_desktops"
+
+import {
+  "moonbit-community/win32api/runtime/core",
+  "moonbit-community/win32api/runtime/strings",
+  "moonbit-community/win32api/scc/6de9f039f19c8763",
+  "moonbit-community/win32api/scc/9ab35bf48b3f5013",
+  "moonbit-community/win32api/scc/cc6631776d7e2373",
+}
+
+// Values
+pub fn broadcast_system_message_a(UInt, @core.RawAddress, UInt, UInt64, Int64) -> Int raise @core.WindowsError
+
+pub fn broadcast_system_message_a_raw(UInt, @core.RawAddress, UInt, UInt64, Int64) -> Int
+
+pub fn broadcast_system_message_ex_a(@6de9f039f19c8763.BROADCASTSYSTEMMESSAGEFLAGS_ff4f95049498, @core.RawAddress, UInt, UInt64, Int64, @6de9f039f19c8763.BSMINFO_b85559f64688?) -> Int raise @core.WindowsError
+
+pub fn broadcast_system_message_ex_a_raw(UInt, @core.RawAddress, UInt, UInt64, Int64, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn broadcast_system_message_ex_w(@6de9f039f19c8763.BROADCASTSYSTEMMESSAGEFLAGS_ff4f95049498, @core.RawAddress, UInt, UInt64, Int64, @6de9f039f19c8763.BSMINFO_b85559f64688?) -> Int raise @core.WindowsError
+
+pub fn broadcast_system_message_ex_w_raw(UInt, @core.RawAddress, UInt, UInt64, Int64, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn broadcast_system_message_w(@6de9f039f19c8763.BROADCASTSYSTEMMESSAGEFLAGS_ff4f95049498, @core.RawAddress, UInt, UInt64, Int64) -> Int raise @core.WindowsError
+
+pub fn broadcast_system_message_w_raw(UInt, @core.RawAddress, UInt, UInt64, Int64) -> @core.RawWin32Call[Int]
+
+pub fn close_desktop(@core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn close_desktop_raw(@core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn close_window_station(@core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn close_window_station_raw(@core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn create_desktop_a(@strings.PStr, @strings.PStr?, @9ab35bf48b3f5013.DEVMODEA_3b3132d875c8?, @6de9f039f19c8763.DESKTOPCONTROLFLAGS_3dbb3818fbd9, UInt, @cc6631776d7e2373.SECURITYATTRIBUTES_bc2e2f0be0e1?) -> @core.RawAddress raise @core.WindowsError
+
+pub fn create_desktop_a_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, UInt, UInt, @core.RawAddress) -> @core.RawWin32Call[@core.RawAddress]
+
+pub fn create_desktop_ex_a(@strings.PStr, @strings.PStr?, @9ab35bf48b3f5013.DEVMODEA_3b3132d875c8?, @6de9f039f19c8763.DESKTOPCONTROLFLAGS_3dbb3818fbd9, UInt, @cc6631776d7e2373.SECURITYATTRIBUTES_bc2e2f0be0e1?, UInt, @core.RawAddress) -> @core.RawAddress raise @core.WindowsError
+
+pub fn create_desktop_ex_a_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, UInt, UInt, @core.RawAddress, UInt, @core.RawAddress) -> @core.RawWin32Call[@core.RawAddress]
+
+pub fn create_desktop_ex_w(@strings.PWStr, @strings.PWStr?, @9ab35bf48b3f5013.DEVMODEW_12540d748e26?, @6de9f039f19c8763.DESKTOPCONTROLFLAGS_3dbb3818fbd9, UInt, @cc6631776d7e2373.SECURITYATTRIBUTES_bc2e2f0be0e1?, UInt, @core.RawAddress) -> @core.RawAddress raise @core.WindowsError
+
+pub fn create_desktop_ex_w_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, UInt, UInt, @core.RawAddress, UInt, @core.RawAddress) -> @core.RawWin32Call[@core.RawAddress]
+
+pub fn create_desktop_w(@strings.PWStr, @strings.PWStr?, @9ab35bf48b3f5013.DEVMODEW_12540d748e26?, @6de9f039f19c8763.DESKTOPCONTROLFLAGS_3dbb3818fbd9, UInt, @cc6631776d7e2373.SECURITYATTRIBUTES_bc2e2f0be0e1?) -> @core.RawAddress raise @core.WindowsError
+
+pub fn create_desktop_w_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, UInt, UInt, @core.RawAddress) -> @core.RawWin32Call[@core.RawAddress]
+
+pub fn create_window_station_a(@strings.PStr?, UInt, UInt, @cc6631776d7e2373.SECURITYATTRIBUTES_bc2e2f0be0e1?) -> @core.RawAddress raise @core.WindowsError
+
+pub fn create_window_station_a_raw(@core.RawAddress, UInt, UInt, @core.RawAddress) -> @core.RawWin32Call[@core.RawAddress]
+
+pub fn create_window_station_w(@strings.PWStr?, UInt, UInt, @cc6631776d7e2373.SECURITYATTRIBUTES_bc2e2f0be0e1?) -> @core.RawAddress raise @core.WindowsError
+
+pub fn create_window_station_w_raw(@core.RawAddress, UInt, UInt, @core.RawAddress) -> @core.RawWin32Call[@core.RawAddress]
+
+pub fn enum_desktop_windows(@core.RawAddress, @core.RawAddress, Int64) -> Bool raise @core.WindowsError
+
+pub fn enum_desktop_windows_raw(@core.RawAddress, @core.RawAddress, Int64) -> @core.RawWin32Call[Int]
+
+pub fn enum_desktops_a(@core.RawAddress, @core.RawAddress, Int64) -> Bool raise @core.WindowsError
+
+pub fn enum_desktops_a_raw(@core.RawAddress, @core.RawAddress, Int64) -> @core.RawWin32Call[Int]
+
+pub fn enum_desktops_w(@core.RawAddress, @core.RawAddress, Int64) -> Bool raise @core.WindowsError
+
+pub fn enum_desktops_w_raw(@core.RawAddress, @core.RawAddress, Int64) -> @core.RawWin32Call[Int]
+
+pub fn enum_window_stations_a(@core.RawAddress, Int64) -> Bool raise @core.WindowsError
+
+pub fn enum_window_stations_a_raw(@core.RawAddress, Int64) -> @core.RawWin32Call[Int]
+
+pub fn enum_window_stations_w(@core.RawAddress, Int64) -> Bool raise @core.WindowsError
+
+pub fn enum_window_stations_w_raw(@core.RawAddress, Int64) -> @core.RawWin32Call[Int]
+
+pub fn get_process_window_station() -> @core.RawAddress raise @core.WindowsError
+
+pub fn get_process_window_station_raw() -> @core.RawWin32Call[@core.RawAddress]
+
+pub fn get_thread_desktop(UInt) -> @core.RawAddress raise @core.WindowsError
+
+pub fn get_thread_desktop_raw(UInt) -> @core.RawWin32Call[@core.RawAddress]
+
+pub fn get_user_object_information_a(@core.RawAddress, @6de9f039f19c8763.USEROBJECTINFORMATIONINDEX_9fed24ccb3e5, @core.RawAddress, UInt, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn get_user_object_information_a_raw(@core.RawAddress, Int, @core.RawAddress, UInt, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn get_user_object_information_w(@core.RawAddress, @6de9f039f19c8763.USEROBJECTINFORMATIONINDEX_9fed24ccb3e5, @core.RawAddress, UInt, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn get_user_object_information_w_raw(@core.RawAddress, Int, @core.RawAddress, UInt, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn open_desktop_a(@strings.PStr, @6de9f039f19c8763.DESKTOPCONTROLFLAGS_3dbb3818fbd9, Int, UInt) -> @core.RawAddress raise @core.WindowsError
+
+pub fn open_desktop_a_raw(@core.RawAddress, UInt, Int, UInt) -> @core.RawWin32Call[@core.RawAddress]
+
+pub fn open_desktop_w(@strings.PWStr, @6de9f039f19c8763.DESKTOPCONTROLFLAGS_3dbb3818fbd9, Int, UInt) -> @core.RawAddress raise @core.WindowsError
+
+pub fn open_desktop_w_raw(@core.RawAddress, UInt, Int, UInt) -> @core.RawWin32Call[@core.RawAddress]
+
+pub fn open_input_desktop(@6de9f039f19c8763.DESKTOPCONTROLFLAGS_3dbb3818fbd9, Int, @6de9f039f19c8763.DESKTOPACCESSFLAGS_d724193547e6) -> @core.RawAddress raise @core.WindowsError
+
+pub fn open_input_desktop_raw(UInt, Int, UInt) -> @core.RawWin32Call[@core.RawAddress]
+
+pub fn open_window_station_a(@strings.PStr, Int, UInt) -> @core.RawAddress raise @core.WindowsError
+
+pub fn open_window_station_a_raw(@core.RawAddress, Int, UInt) -> @core.RawWin32Call[@core.RawAddress]
+
+pub fn open_window_station_w(@strings.PWStr, Int, UInt) -> @core.RawAddress raise @core.WindowsError
+
+pub fn open_window_station_w_raw(@core.RawAddress, Int, UInt) -> @core.RawWin32Call[@core.RawAddress]
+
+pub fn set_process_window_station(@core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn set_process_window_station_raw(@core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn set_thread_desktop(@core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn set_thread_desktop_raw(@core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn set_user_object_information_a(@core.RawAddress, Int, @core.RawAddress, UInt) -> Bool raise @core.WindowsError
+
+pub fn set_user_object_information_a_raw(@core.RawAddress, Int, @core.RawAddress, UInt) -> @core.RawWin32Call[Int]
+
+pub fn set_user_object_information_w(@core.RawAddress, Int, @core.RawAddress, UInt) -> Bool raise @core.WindowsError
+
+pub fn set_user_object_information_w_raw(@core.RawAddress, Int, @core.RawAddress, UInt) -> @core.RawWin32Call[Int]
+
+pub fn switch_desktop(@core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn switch_desktop_raw(@core.RawAddress) -> @core.RawWin32Call[Int]
+
+// Errors
+
+// Types and methods
+
+// Type aliases
+pub using @6de9f039f19c8763 {type BROADCASTSYSTEMMESSAGEFLAGS_ff4f95049498 as BROADCASTSYSTEMMESSAGEFLAGS}
+
+pub using @6de9f039f19c8763 {type BROADCASTSYSTEMMESSAGEINFO_be2d8a8f95d7 as BROADCASTSYSTEMMESSAGEINFO}
+
+pub using @6de9f039f19c8763 {type BSMINFO_b85559f64688 as BSMINFO}
+
+pub using @6de9f039f19c8763 {type DESKTOPACCESSFLAGS_d724193547e6 as DESKTOPACCESSFLAGS}
+
+pub using @6de9f039f19c8763 {type DESKTOPCONTROLFLAGS_3dbb3818fbd9 as DESKTOPCONTROLFLAGS}
+
+pub using @6de9f039f19c8763 {type DESKTOPENUMPROCA_31d2efe39e96 as DESKTOPENUMPROCA}
+
+pub using @6de9f039f19c8763 {type DESKTOPENUMPROCW_d9bbebef38e1 as DESKTOPENUMPROCW}
+
+pub using @6de9f039f19c8763 {type HDESK_287357fbf7fd as HDESK}
+
+pub using @6de9f039f19c8763 {type HWINSTA_cd078b6dd9d3 as HWINSTA}
+
+pub using @6de9f039f19c8763 {type USEROBJECTFLAGS_55c85712e3d2 as USEROBJECTFLAGS}
+
+pub using @6de9f039f19c8763 {type USEROBJECTINFORMATIONINDEX_9fed24ccb3e5 as USEROBJECTINFORMATIONINDEX}
+
+pub using @6de9f039f19c8763 {type WINSTAENUMPROCA_0452269a4ed2 as WINSTAENUMPROCA}
+
+pub using @6de9f039f19c8763 {type WINSTAENUMPROCW_517265042ee3 as WINSTAENUMPROCW}
+
+// Traits

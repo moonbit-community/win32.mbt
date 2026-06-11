@@ -1,0 +1,950 @@
+// Generated using `moon info`, DON'T EDIT IT
+package "moonbit-community/win32api/windows/win32/media/windows_media_format"
+
+import {
+  "moonbit-community/win32api/runtime/core",
+  "moonbit-community/win32api/runtime/strings",
+  "moonbit-community/win32api/scc/ffc26272e2cb80db",
+}
+
+// Values
+pub let drm_opl_types : UInt
+
+pub let g_dw_wm_content_attributes : UInt
+
+pub let g_dw_wm_special_attributes : UInt
+
+pub let g_dw_wmnsc_attributes : UInt
+
+pub let g_wsz_allow_interlaced_output : String
+
+pub let g_wsz_asf_leaky_bucket_pairs : String
+
+pub let g_wsz_average_level : String
+
+pub let g_wsz_buffer_average : String
+
+pub let g_wsz_complexity : String
+
+pub let g_wsz_complexity_live : String
+
+pub let g_wsz_complexity_max : String
+
+pub let g_wsz_complexity_offline : String
+
+pub let g_wsz_decoder_complexity_requested : String
+
+pub let g_wsz_dedicated_delivery_thread : String
+
+pub let g_wsz_deinterlace_mode : String
+
+pub let g_wsz_deliver_on_receive : String
+
+pub let g_wsz_device_conformance_template : String
+
+pub let g_wsz_dynamic_range_control : String
+
+pub let g_wsz_early_data_delivery : String
+
+pub let g_wsz_edl : String
+
+pub let g_wsz_enable_discrete_output : String
+
+pub let g_wsz_enable_frame_interpolation : String
+
+pub let g_wsz_enable_wma_pro_spdif_output : String
+
+pub let g_wsz_fail_seek_on_error : String
+
+pub let g_wsz_fixed_frame_rate : String
+
+pub let g_wsz_fold6_to2_channels3 : String
+
+pub let g_wsz_fold_to_channels_template : String
+
+pub let g_wsz_initial_pattern_for_inverse_telecine : String
+
+pub let g_wsz_interlaced_coding : String
+
+pub let g_wsz_is_vbr_supported : String
+
+pub let g_wsz_jpeg_compression_quality : String
+
+pub let g_wsz_just_in_time_decode : String
+
+pub let g_wsz_mixed_class_mode : String
+
+pub let g_wsz_music_class_mode : String
+
+pub let g_wsz_music_speech_class_mode : String
+
+pub let g_wsz_needs_previous_sample : String
+
+pub let g_wsz_num_passes : String
+
+pub let g_wsz_original_source_format_tag : String
+
+pub let g_wsz_original_wave_format : String
+
+pub let g_wsz_peak_value : String
+
+pub let g_wsz_permit_seeks_beyond_end_of_stream : String
+
+pub let g_wsz_reload_index_on_seek : String
+
+pub let g_wsz_scrambled_audio : String
+
+pub let g_wsz_single_output_buffer : String
+
+pub let g_wsz_software_scaling : String
+
+pub let g_wsz_source_buffer_time : String
+
+pub let g_wsz_source_max_bytes_at_once : String
+
+pub let g_wsz_speaker_config : String
+
+pub let g_wsz_speech_caps : String
+
+pub let g_wsz_speech_class_mode : String
+
+pub let g_wsz_stream_language : String
+
+pub let g_wsz_stream_num_index_objects : String
+
+pub let g_wsz_use_packet_at_seek_point : String
+
+pub let g_wsz_vbr_bitrate_max : String
+
+pub let g_wsz_vbr_buffer_window_max : String
+
+pub let g_wsz_vbr_enabled : String
+
+pub let g_wsz_vbr_peak : String
+
+pub let g_wsz_vbr_quality : String
+
+pub let g_wsz_video_sample_durations : String
+
+pub let g_wsz_watermark_clsid : String
+
+pub let g_wsz_watermark_config : String
+
+pub let g_wsz_wm_album_artist : String
+
+pub let g_wsz_wm_album_artist_sort : String
+
+pub let g_wsz_wm_album_cover_url : String
+
+pub let g_wsz_wm_album_title : String
+
+pub let g_wsz_wm_album_title_sort : String
+
+pub let g_wsz_wm_aspect_ratio_x : String
+
+pub let g_wsz_wm_aspect_ratio_y : String
+
+pub let g_wsz_wm_audio_file_url : String
+
+pub let g_wsz_wm_audio_source_url : String
+
+pub let g_wsz_wm_author : String
+
+pub let g_wsz_wm_author_sort : String
+
+pub let g_wsz_wm_author_url : String
+
+pub let g_wsz_wm_banner_image_data : String
+
+pub let g_wsz_wm_banner_image_type : String
+
+pub let g_wsz_wm_banner_image_url : String
+
+pub let g_wsz_wm_beats_per_minute : String
+
+pub let g_wsz_wm_bitrate : String
+
+pub let g_wsz_wm_broadcast : String
+
+pub let g_wsz_wm_category : String
+
+pub let g_wsz_wm_codec : String
+
+pub let g_wsz_wm_composer : String
+
+pub let g_wsz_wm_composer_sort : String
+
+pub let g_wsz_wm_conductor : String
+
+pub let g_wsz_wm_container_format : String
+
+pub let g_wsz_wm_content_distributor : String
+
+pub let g_wsz_wm_content_group_description : String
+
+pub let g_wsz_wm_copyright : String
+
+pub let g_wsz_wm_copyright_url : String
+
+pub let g_wsz_wm_current_bitrate : String
+
+pub let g_wsz_wm_description : String
+
+pub let g_wsz_wm_director : String
+
+pub let g_wsz_wm_duration : String
+
+pub let g_wsz_wm_encoded_by : String
+
+pub let g_wsz_wm_encoding_settings : String
+
+pub let g_wsz_wm_encoding_time : String
+
+pub let g_wsz_wm_episode_number : String
+
+pub let g_wsz_wm_file_size : String
+
+pub let g_wsz_wm_genre : String
+
+pub let g_wsz_wm_genre_id : String
+
+pub let g_wsz_wm_has_arbitrary_data_stream : String
+
+pub let g_wsz_wm_has_attached_images : String
+
+pub let g_wsz_wm_has_audio : String
+
+pub let g_wsz_wm_has_file_transfer_stream : String
+
+pub let g_wsz_wm_has_image : String
+
+pub let g_wsz_wm_has_script : String
+
+pub let g_wsz_wm_has_video : String
+
+pub let g_wsz_wm_initial_key : String
+
+pub let g_wsz_wm_is_compilation : String
+
+pub let g_wsz_wm_is_vbr : String
+
+pub let g_wsz_wm_language : String
+
+pub let g_wsz_wm_lyrics : String
+
+pub let g_wsz_wm_lyrics_synchronised : String
+
+pub let g_wsz_wm_media_class_primary_id : String
+
+pub let g_wsz_wm_media_class_secondary_id : String
+
+pub let g_wsz_wm_media_credits : String
+
+pub let g_wsz_wm_media_is_delay : String
+
+pub let g_wsz_wm_media_is_finale : String
+
+pub let g_wsz_wm_media_is_live : String
+
+pub let g_wsz_wm_media_is_premiere : String
+
+pub let g_wsz_wm_media_is_repeat : String
+
+pub let g_wsz_wm_media_is_sap : String
+
+pub let g_wsz_wm_media_is_stereo : String
+
+pub let g_wsz_wm_media_is_subtitled : String
+
+pub let g_wsz_wm_media_is_tape : String
+
+pub let g_wsz_wm_media_network_affiliation : String
+
+pub let g_wsz_wm_media_original_broadcast_date_time : String
+
+pub let g_wsz_wm_media_original_channel : String
+
+pub let g_wsz_wm_media_station_call_sign : String
+
+pub let g_wsz_wm_media_station_name : String
+
+pub let g_wsz_wm_modified_by : String
+
+pub let g_wsz_wm_mood : String
+
+pub let g_wsz_wm_number_of_frames : String
+
+pub let g_wsz_wm_optimal_bitrate : String
+
+pub let g_wsz_wm_original_album_title : String
+
+pub let g_wsz_wm_original_artist : String
+
+pub let g_wsz_wm_original_filename : String
+
+pub let g_wsz_wm_original_lyricist : String
+
+pub let g_wsz_wm_original_release_time : String
+
+pub let g_wsz_wm_original_release_year : String
+
+pub let g_wsz_wm_parental_rating : String
+
+pub let g_wsz_wm_parental_rating_reason : String
+
+pub let g_wsz_wm_part_of_set : String
+
+pub let g_wsz_wm_peak_bitrate : String
+
+pub let g_wsz_wm_period : String
+
+pub let g_wsz_wm_picture : String
+
+pub let g_wsz_wm_playlist_delay : String
+
+pub let g_wsz_wm_producer : String
+
+pub let g_wsz_wm_promotion_url : String
+
+pub let g_wsz_wm_protected : String
+
+pub let g_wsz_wm_protection_type : String
+
+pub let g_wsz_wm_provider : String
+
+pub let g_wsz_wm_provider_copyright : String
+
+pub let g_wsz_wm_provider_rating : String
+
+pub let g_wsz_wm_provider_style : String
+
+pub let g_wsz_wm_publisher : String
+
+pub let g_wsz_wm_radio_station_name : String
+
+pub let g_wsz_wm_radio_station_owner : String
+
+pub let g_wsz_wm_rating : String
+
+pub let g_wsz_wm_season_number : String
+
+pub let g_wsz_wm_seekable : String
+
+pub let g_wsz_wm_shared_user_rating : String
+
+pub let g_wsz_wm_signature_name : String
+
+pub let g_wsz_wm_skip_backward : String
+
+pub let g_wsz_wm_skip_forward : String
+
+pub let g_wsz_wm_stream_type_info : String
+
+pub let g_wsz_wm_stridable : String
+
+pub let g_wsz_wm_sub_title : String
+
+pub let g_wsz_wm_sub_title_description : String
+
+pub let g_wsz_wm_subscription_content_id : String
+
+pub let g_wsz_wm_text : String
+
+pub let g_wsz_wm_title : String
+
+pub let g_wsz_wm_title_sort : String
+
+pub let g_wsz_wm_tool_name : String
+
+pub let g_wsz_wm_tool_version : String
+
+pub let g_wsz_wm_track : String
+
+pub let g_wsz_wm_track_number : String
+
+pub let g_wsz_wm_trusted : String
+
+pub let g_wsz_wm_unique_file_identifier : String
+
+pub let g_wsz_wm_use_advanced_drm : String
+
+pub let g_wsz_wm_use_drm : String
+
+pub let g_wsz_wm_user_web_url : String
+
+pub let g_wsz_wm_video_closed_captioning : String
+
+pub let g_wsz_wm_video_frame_rate : String
+
+pub let g_wsz_wm_video_height : String
+
+pub let g_wsz_wm_video_width : String
+
+pub let g_wsz_wm_writer : String
+
+pub let g_wsz_wm_year : String
+
+pub let g_wsz_wmadid : String
+
+pub let g_wsz_wmasf_packet_count : String
+
+pub let g_wsz_wmasf_security_objects_size : String
+
+pub let g_wsz_wmdrm : String
+
+pub let g_wsz_wmdrm_content_id : String
+
+pub let g_wsz_wmdrm_flags : String
+
+pub let g_wsz_wmdrm_header_sign_priv_key : String
+
+pub let g_wsz_wmdrm_individualized_version : String
+
+pub let g_wsz_wmdrm_key_id : String
+
+pub let g_wsz_wmdrm_key_seed : String
+
+pub let g_wsz_wmdrm_la_signature_cert : String
+
+pub let g_wsz_wmdrm_la_signature_lic_srv_cert : String
+
+pub let g_wsz_wmdrm_la_signature_priv_key : String
+
+pub let g_wsz_wmdrm_la_signature_root_cert : String
+
+pub let g_wsz_wmdrm_level : String
+
+pub let g_wsz_wmdrm_license_acq_url : String
+
+pub let g_wsz_wmdrm_source_id : String
+
+pub let g_wsz_wmdrm_v1_license_acq_url : String
+
+pub let g_wsz_wmdvdid : String
+
+pub let g_wsz_wmisan : String
+
+pub let g_wsz_wmisrc : String
+
+pub let g_wsz_wmmcdi : String
+
+pub let g_wsz_wmnsc_address : String
+
+pub let g_wsz_wmnsc_description : String
+
+pub let g_wsz_wmnsc_email : String
+
+pub let g_wsz_wmnsc_name : String
+
+pub let g_wsz_wmnsc_phone : String
+
+pub let g_wsz_wmwm_collection_group_id : String
+
+pub let g_wsz_wmwm_collection_id : String
+
+pub let g_wsz_wmwm_content_id : String
+
+pub let g_wsz_wmwm_shadow_file_source_drm_type : String
+
+pub let g_wsz_wmwm_shadow_file_source_file_type : String
+
+pub let g_wsz_wmwmadrc_average_reference : String
+
+pub let g_wsz_wmwmadrc_average_target : String
+
+pub let g_wsz_wmwmadrc_peak_reference : String
+
+pub let g_wsz_wmwmadrc_peak_target : String
+
+pub let g_wsz_wmwmcp_distributor : String
+
+pub let g_wsz_wmwmcp_distributor_id : String
+
+pub let wm_cl_interlaced420 : UInt
+
+pub let wm_cl_progressive420 : UInt
+
+pub fn wm_create_backup_restorer(@core.RawAddress, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn wm_create_backup_restorer_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn wm_create_editor(@core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn wm_create_editor_raw(@core.RawAddress) -> Int
+
+pub fn wm_create_indexer(@core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn wm_create_indexer_raw(@core.RawAddress) -> Int
+
+pub fn wm_create_profile_manager(@core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn wm_create_profile_manager_raw(@core.RawAddress) -> Int
+
+pub fn wm_create_reader(@core.RawAddress, UInt, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn wm_create_reader_raw(@core.RawAddress, UInt, @core.RawAddress) -> Int
+
+pub fn wm_create_sync_reader(@core.RawAddress, UInt, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn wm_create_sync_reader_raw(@core.RawAddress, UInt, @core.RawAddress) -> Int
+
+pub fn wm_create_writer(@core.RawAddress, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn wm_create_writer_file_sink(@core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn wm_create_writer_file_sink_raw(@core.RawAddress) -> Int
+
+pub fn wm_create_writer_network_sink(@core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn wm_create_writer_network_sink_raw(@core.RawAddress) -> Int
+
+pub fn wm_create_writer_push_sink(@core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn wm_create_writer_push_sink_raw(@core.RawAddress) -> Int
+
+pub fn wm_create_writer_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub let wm_ct_bottom_field_first : UInt
+
+pub let wm_ct_interlaced : UInt
+
+pub let wm_ct_repeat_first_field : UInt
+
+pub let wm_ct_top_field_first : UInt
+
+pub fn wm_is_content_protected(@strings.PWStr, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn wm_is_content_protected_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub let wm_max_streams : UInt
+
+pub let wm_max_video_streams : UInt
+
+pub let wm_sample_extension_chroma_location_size : UInt
+
+pub let wm_sample_extension_color_space_info_size : UInt
+
+pub let wm_sample_extension_content_type_size : UInt
+
+pub let wm_sample_extension_pixel_aspect_ratio_size : UInt
+
+pub let wm_sample_extension_sample_duration_size : UInt
+
+pub let wm_sample_extension_timecode_size : UInt
+
+pub let wmdrm_import_init_struct_defined : UInt
+
+pub let wmt_videoimage_integer_denominator : Int
+
+pub let wmt_videoimage_magic_number : UInt
+
+pub let wmt_videoimage_magic_number_2 : UInt
+
+pub let wmt_videoimage_sample_adv_blending : UInt
+
+pub let wmt_videoimage_sample_blending : UInt
+
+pub let wmt_videoimage_sample_input_frame : UInt
+
+pub let wmt_videoimage_sample_motion : UInt
+
+pub let wmt_videoimage_sample_output_frame : UInt
+
+pub let wmt_videoimage_sample_rotation : UInt
+
+pub let wmt_videoimage_sample_uses_current_input_frame : UInt
+
+pub let wmt_videoimage_sample_uses_previous_input_frame : UInt
+
+pub let wmt_videoimage_transition_bow_tie : UInt
+
+pub let wmt_videoimage_transition_circle : UInt
+
+pub let wmt_videoimage_transition_cross_fade : UInt
+
+pub let wmt_videoimage_transition_diagonal : UInt
+
+pub let wmt_videoimage_transition_diamond : UInt
+
+pub let wmt_videoimage_transition_fade_to_color : UInt
+
+pub let wmt_videoimage_transition_filled_v : UInt
+
+pub let wmt_videoimage_transition_flip : UInt
+
+pub let wmt_videoimage_transition_inset : UInt
+
+pub let wmt_videoimage_transition_iris : UInt
+
+pub let wmt_videoimage_transition_page_roll : UInt
+
+pub let wmt_videoimage_transition_rectangle : UInt
+
+pub let wmt_videoimage_transition_reveal : UInt
+
+pub let wmt_videoimage_transition_slide : UInt
+
+pub let wmt_videoimage_transition_split : UInt
+
+pub let wmt_videoimage_transition_star : UInt
+
+pub let wmt_videoimage_transition_wheel : UInt
+
+// Errors
+
+// Types and methods
+
+// Type aliases
+pub using @ffc26272e2cb80db {type AMASFWRITERCONFIGPARAM_9f997a994fc3 as AMASFWRITERCONFIGPARAM}
+
+pub using @ffc26272e2cb80db {type AMWMTEVENTDATA_725cd7c6cc98 as AMWMTEVENTDATA}
+
+pub using @ffc26272e2cb80db {type DRMCOPYOPL_d3152468c3d5 as DRMCOPYOPL}
+
+pub using @ffc26272e2cb80db {type DRMMINIMUMOUTPUTPROTECTIONLEVELS_bbdfdbdc8aa6 as DRMMINIMUMOUTPUTPROTECTIONLEVELS}
+
+pub using @ffc26272e2cb80db {type DRMOPLOUTPUTIDS_f04d419126c6 as DRMOPLOUTPUTIDS}
+
+pub using @ffc26272e2cb80db {type DRMOUTPUTPROTECTION_a8fffa9098aa as DRMOUTPUTPROTECTION}
+
+pub using @ffc26272e2cb80db {type DRMPLAYOPL_3261683c1711 as DRMPLAYOPL}
+
+pub using @ffc26272e2cb80db {type DRMVAL16_46d8bafca89e as DRMVAL16}
+
+pub using @ffc26272e2cb80db {type DRMVIDEOOUTPUTPROTECTIONIDS_8c507f876f13 as DRMVIDEOOUTPUTPROTECTIONIDS}
+
+pub using @ffc26272e2cb80db {type INSNetSourceCreator_ceed858cee98 as INSNetSourceCreator}
+
+pub using @ffc26272e2cb80db {type INSSBuffer_60328addfce0 as INSSBuffer}
+
+pub using @ffc26272e2cb80db {type INSSBuffer2_f1dbe4ddc423 as INSSBuffer2}
+
+pub using @ffc26272e2cb80db {type INSSBuffer3_c9adf83e8c09 as INSSBuffer3}
+
+pub using @ffc26272e2cb80db {type INSSBuffer4_fcaa10d543eb as INSSBuffer4}
+
+pub using @ffc26272e2cb80db {type IWMAddressAccess_2e10b1db9a97 as IWMAddressAccess}
+
+pub using @ffc26272e2cb80db {type IWMAddressAccess2_57fd9da10465 as IWMAddressAccess2}
+
+pub using @ffc26272e2cb80db {type IWMAuthorizer_aa76260b7f3e as IWMAuthorizer}
+
+pub using @ffc26272e2cb80db {type IWMBackupRestoreProps_38569fec0707 as IWMBackupRestoreProps}
+
+pub using @ffc26272e2cb80db {type IWMBandwidthSharing_01ce9cf3ce9f as IWMBandwidthSharing}
+
+pub using @ffc26272e2cb80db {type IWMClientConnections_762a31a5bc42 as IWMClientConnections}
+
+pub using @ffc26272e2cb80db {type IWMClientConnections2_77966d12bc5d as IWMClientConnections2}
+
+pub using @ffc26272e2cb80db {type IWMCodecInfo_c69c661c65b7 as IWMCodecInfo}
+
+pub using @ffc26272e2cb80db {type IWMCodecInfo2_0ce1445ac614 as IWMCodecInfo2}
+
+pub using @ffc26272e2cb80db {type IWMCodecInfo3_d9f61df9b3db as IWMCodecInfo3}
+
+pub using @ffc26272e2cb80db {type IWMCredentialCallback_baea31232e4b as IWMCredentialCallback}
+
+pub using @ffc26272e2cb80db {type IWMDRMEditor_4f83497d9908 as IWMDRMEditor}
+
+pub using @ffc26272e2cb80db {type IWMDRMMessageParser_0d1c11176e1d as IWMDRMMessageParser}
+
+pub using @ffc26272e2cb80db {type IWMDRMReader_2b474846921c as IWMDRMReader}
+
+pub using @ffc26272e2cb80db {type IWMDRMReader2_443f4a031761 as IWMDRMReader2}
+
+pub using @ffc26272e2cb80db {type IWMDRMReader3_5f8f33c2f956 as IWMDRMReader3}
+
+pub using @ffc26272e2cb80db {type IWMDRMTranscryptionManager_42630815adf6 as IWMDRMTranscryptionManager}
+
+pub using @ffc26272e2cb80db {type IWMDRMTranscryptor_76f1f2e3e3d7 as IWMDRMTranscryptor}
+
+pub using @ffc26272e2cb80db {type IWMDRMTranscryptor2_3c483ffa8c2c as IWMDRMTranscryptor2}
+
+pub using @ffc26272e2cb80db {type IWMDRMWriter_3d6d42513fac as IWMDRMWriter}
+
+pub using @ffc26272e2cb80db {type IWMDRMWriter2_1b373a1778f7 as IWMDRMWriter2}
+
+pub using @ffc26272e2cb80db {type IWMDRMWriter3_f2135ad743e0 as IWMDRMWriter3}
+
+pub using @ffc26272e2cb80db {type IWMDeviceRegistration_005fd75e495a as IWMDeviceRegistration}
+
+pub using @ffc26272e2cb80db {type IWMGetSecureChannel_031b08a0717b as IWMGetSecureChannel}
+
+pub using @ffc26272e2cb80db {type IWMHeaderInfo_439210a75bcc as IWMHeaderInfo}
+
+pub using @ffc26272e2cb80db {type IWMHeaderInfo2_454efdd90a13 as IWMHeaderInfo2}
+
+pub using @ffc26272e2cb80db {type IWMHeaderInfo3_b3c9f286e03e as IWMHeaderInfo3}
+
+pub using @ffc26272e2cb80db {type IWMIStreamProps_e44b6d0f5738 as IWMIStreamProps}
+
+pub using @ffc26272e2cb80db {type IWMImageInfo_ca95e2b67883 as IWMImageInfo}
+
+pub using @ffc26272e2cb80db {type IWMIndexer_c8b1efe3f2c4 as IWMIndexer}
+
+pub using @ffc26272e2cb80db {type IWMIndexer2_b87d5901dc66 as IWMIndexer2}
+
+pub using @ffc26272e2cb80db {type IWMInputMediaProps_7230ad02a6ca as IWMInputMediaProps}
+
+pub using @ffc26272e2cb80db {type IWMLanguageList_df30d7a00e33 as IWMLanguageList}
+
+pub using @ffc26272e2cb80db {type IWMLicenseBackup_7a7cfa820ded as IWMLicenseBackup}
+
+pub using @ffc26272e2cb80db {type IWMLicenseRestore_dd92710bb0b6 as IWMLicenseRestore}
+
+pub using @ffc26272e2cb80db {type IWMLicenseRevocationAgent_7ae2e9656e65 as IWMLicenseRevocationAgent}
+
+pub using @ffc26272e2cb80db {type IWMMediaProps_36d0142dcf9a as IWMMediaProps}
+
+pub using @ffc26272e2cb80db {type IWMMetadataEditor_aac1566c8a57 as IWMMetadataEditor}
+
+pub using @ffc26272e2cb80db {type IWMMetadataEditor2_c77b5aae0358 as IWMMetadataEditor2}
+
+pub using @ffc26272e2cb80db {type IWMMutualExclusion_87f0856bac6f as IWMMutualExclusion}
+
+pub using @ffc26272e2cb80db {type IWMMutualExclusion2_90c80dba6b9d as IWMMutualExclusion2}
+
+pub using @ffc26272e2cb80db {type IWMOutputMediaProps_402fd3f8fbb9 as IWMOutputMediaProps}
+
+pub using @ffc26272e2cb80db {type IWMPacketSize_d03417bc20bc as IWMPacketSize}
+
+pub using @ffc26272e2cb80db {type IWMPacketSize2_1c74575c5673 as IWMPacketSize2}
+
+pub using @ffc26272e2cb80db {type IWMPlayerHook_129a6b3183e0 as IWMPlayerHook}
+
+pub using @ffc26272e2cb80db {type IWMPlayerTimestampHook_2a59333182e2 as IWMPlayerTimestampHook}
+
+pub using @ffc26272e2cb80db {type IWMProfile_222fed76aa83 as IWMProfile}
+
+pub using @ffc26272e2cb80db {type IWMProfile2_8563b3feab3a as IWMProfile2}
+
+pub using @ffc26272e2cb80db {type IWMProfile3_1fddc1f4eccc as IWMProfile3}
+
+pub using @ffc26272e2cb80db {type IWMProfileManager_ef9560b5b6af as IWMProfileManager}
+
+pub using @ffc26272e2cb80db {type IWMProfileManager2_cafe6956f935 as IWMProfileManager2}
+
+pub using @ffc26272e2cb80db {type IWMProfileManagerLanguage_b567a730e53c as IWMProfileManagerLanguage}
+
+pub using @ffc26272e2cb80db {type IWMPropertyVault_e761ed232f0e as IWMPropertyVault}
+
+pub using @ffc26272e2cb80db {type IWMProximityDetection_95afa07ebfb7 as IWMProximityDetection}
+
+pub using @ffc26272e2cb80db {type IWMReader_208cfeedc965 as IWMReader}
+
+pub using @ffc26272e2cb80db {type IWMReaderAccelerator_3e6d544e29e1 as IWMReaderAccelerator}
+
+pub using @ffc26272e2cb80db {type IWMReaderAdvanced_c7794d85a375 as IWMReaderAdvanced}
+
+pub using @ffc26272e2cb80db {type IWMReaderAdvanced2_bd119ce8d1d4 as IWMReaderAdvanced2}
+
+pub using @ffc26272e2cb80db {type IWMReaderAdvanced3_465b82d05c1a as IWMReaderAdvanced3}
+
+pub using @ffc26272e2cb80db {type IWMReaderAdvanced4_56e1327c3dbf as IWMReaderAdvanced4}
+
+pub using @ffc26272e2cb80db {type IWMReaderAdvanced5_95702caa2a39 as IWMReaderAdvanced5}
+
+pub using @ffc26272e2cb80db {type IWMReaderAdvanced6_98bc2dc4ee61 as IWMReaderAdvanced6}
+
+pub using @ffc26272e2cb80db {type IWMReaderAllocatorEx_6a951a314961 as IWMReaderAllocatorEx}
+
+pub using @ffc26272e2cb80db {type IWMReaderCallback_0cfd74978733 as IWMReaderCallback}
+
+pub using @ffc26272e2cb80db {type IWMReaderCallbackAdvanced_722e4d5f0f46 as IWMReaderCallbackAdvanced}
+
+pub using @ffc26272e2cb80db {type IWMReaderNetworkConfig_8035db42ff9d as IWMReaderNetworkConfig}
+
+pub using @ffc26272e2cb80db {type IWMReaderNetworkConfig2_92e32210842d as IWMReaderNetworkConfig2}
+
+pub using @ffc26272e2cb80db {type IWMReaderPlaylistBurn_999a1eb84210 as IWMReaderPlaylistBurn}
+
+pub using @ffc26272e2cb80db {type IWMReaderStreamClock_c2ea3fdc8088 as IWMReaderStreamClock}
+
+pub using @ffc26272e2cb80db {type IWMReaderTimecode_7aebe8c60e86 as IWMReaderTimecode}
+
+pub using @ffc26272e2cb80db {type IWMReaderTypeNegotiation_83d31e6f5de1 as IWMReaderTypeNegotiation}
+
+pub using @ffc26272e2cb80db {type IWMRegisterCallback_7be72d62974d as IWMRegisterCallback}
+
+pub using @ffc26272e2cb80db {type IWMRegisteredDevice_c9a55ccbfa13 as IWMRegisteredDevice}
+
+pub using @ffc26272e2cb80db {type IWMSBufferAllocator_94f68feab6fb as IWMSBufferAllocator}
+
+pub using @ffc26272e2cb80db {type IWMSInternalAdminNetSource_7ef025cdd1b3 as IWMSInternalAdminNetSource}
+
+pub using @ffc26272e2cb80db {type IWMSInternalAdminNetSource2_6b666329b2e1 as IWMSInternalAdminNetSource2}
+
+pub using @ffc26272e2cb80db {type IWMSInternalAdminNetSource3_b4e595961161 as IWMSInternalAdminNetSource3}
+
+pub using @ffc26272e2cb80db {type IWMSecureChannel_ca60b98fc710 as IWMSecureChannel}
+
+pub using @ffc26272e2cb80db {type IWMStatusCallback_9c86b7200636 as IWMStatusCallback}
+
+pub using @ffc26272e2cb80db {type IWMStreamConfig_8114b269cf87 as IWMStreamConfig}
+
+pub using @ffc26272e2cb80db {type IWMStreamConfig2_b90f462f0176 as IWMStreamConfig2}
+
+pub using @ffc26272e2cb80db {type IWMStreamConfig3_aeeb96d23303 as IWMStreamConfig3}
+
+pub using @ffc26272e2cb80db {type IWMStreamList_ec3744d6ffa0 as IWMStreamList}
+
+pub using @ffc26272e2cb80db {type IWMStreamPrioritization_8f795ad79dda as IWMStreamPrioritization}
+
+pub using @ffc26272e2cb80db {type IWMSyncReader_33882af6d8b6 as IWMSyncReader}
+
+pub using @ffc26272e2cb80db {type IWMSyncReader2_3cf47d56231c as IWMSyncReader2}
+
+pub using @ffc26272e2cb80db {type IWMVideoMediaProps_a8146133aef0 as IWMVideoMediaProps}
+
+pub using @ffc26272e2cb80db {type IWMWatermarkInfo_5356ac713315 as IWMWatermarkInfo}
+
+pub using @ffc26272e2cb80db {type IWMWriter_c1fad42b7fa6 as IWMWriter}
+
+pub using @ffc26272e2cb80db {type IWMWriterAdvanced_c38d0b67c43d as IWMWriterAdvanced}
+
+pub using @ffc26272e2cb80db {type IWMWriterAdvanced2_c81d1d3d14cd as IWMWriterAdvanced2}
+
+pub using @ffc26272e2cb80db {type IWMWriterAdvanced3_0b125bc9905e as IWMWriterAdvanced3}
+
+pub using @ffc26272e2cb80db {type IWMWriterFileSink_09ecb37a5625 as IWMWriterFileSink}
+
+pub using @ffc26272e2cb80db {type IWMWriterFileSink2_f6d88e84eeb1 as IWMWriterFileSink2}
+
+pub using @ffc26272e2cb80db {type IWMWriterFileSink3_89e6d1a4782b as IWMWriterFileSink3}
+
+pub using @ffc26272e2cb80db {type IWMWriterNetworkSink_9205a7747a36 as IWMWriterNetworkSink}
+
+pub using @ffc26272e2cb80db {type IWMWriterPostView_7eb4403f89d6 as IWMWriterPostView}
+
+pub using @ffc26272e2cb80db {type IWMWriterPostViewCallback_284f99048e34 as IWMWriterPostViewCallback}
+
+pub using @ffc26272e2cb80db {type IWMWriterPreprocess_f65f77427e0c as IWMWriterPreprocess}
+
+pub using @ffc26272e2cb80db {type IWMWriterPushSink_13773af1d583 as IWMWriterPushSink}
+
+pub using @ffc26272e2cb80db {type IWMWriterSink_f4c5aaca6a5c as IWMWriterSink}
+
+pub using @ffc26272e2cb80db {type NETSOURCEURLCREDPOLICYSETTINGS_b98238ee97a6 as NETSOURCEURLCREDPOLICYSETTINGS}
+
+pub using @ffc26272e2cb80db {type WEBSTREAMSAMPLETYPE_eadaa9e2cf61 as WEBSTREAMSAMPLETYPE}
+
+pub using @ffc26272e2cb80db {type WMADDRESSACCESSENTRY_1730d3fd2d3c as WMADDRESSACCESSENTRY}
+
+pub using @ffc26272e2cb80db {type WMAETYPE_9b0b5796d04a as WMAETYPE}
+
+pub using @ffc26272e2cb80db {type WMCLIENTPROPERTIES_3d0c409b6241 as WMCLIENTPROPERTIES}
+
+pub using @ffc26272e2cb80db {type WMCLIENTPROPERTIESEX_25efda1d1cbb as WMCLIENTPROPERTIESEX}
+
+pub using @ffc26272e2cb80db {type WMDMINTERLACEDTYPE_73409957ec9a as WMDMINTERLACEDTYPE}
+
+pub using @ffc26272e2cb80db {type WMDMITFIRSTFRAMECOHERENCY_9871c8c4b6da as WMDMITFIRSTFRAMECOHERENCY}
+
+pub using @ffc26272e2cb80db {type WMDRMIMPORTINITSTRUCT_a93f11b6d166 as WMDRMIMPORTINITSTRUCT}
+
+pub using @ffc26272e2cb80db {type WMLEAKYBUCKETPAIR_548d07547a4c as WMLEAKYBUCKETPAIR}
+
+pub using @ffc26272e2cb80db {type WMMEDIATYPE_67a487f12e82 as WMMEDIATYPE}
+
+pub using @ffc26272e2cb80db {type WMMPEG2VIDEOINFO_e66c92738b2c as WMMPEG2VIDEOINFO}
+
+pub using @ffc26272e2cb80db {type WMPICTURE_a0e7ea8753e0 as WMPICTURE}
+
+pub using @ffc26272e2cb80db {type WMPLAYBACKDRCLEVEL_30d6d374b5f2 as WMPLAYBACKDRCLEVEL}
+
+pub using @ffc26272e2cb80db {type WMPORTNUMBERRANGE_04aecaa101fb as WMPORTNUMBERRANGE}
+
+pub using @ffc26272e2cb80db {type WMREADERCLIENTINFO_56746b28ad86 as WMREADERCLIENTINFO}
+
+pub using @ffc26272e2cb80db {type WMREADERSTATISTICS_5288ab308ace as WMREADERSTATISTICS}
+
+pub using @ffc26272e2cb80db {type WMSCRIPTFORMAT_0dc1c958c243 as WMSCRIPTFORMAT}
+
+pub using @ffc26272e2cb80db {type WMSFEXTYPE_7f889189f0ad as WMSFEXTYPE}
+
+pub using @ffc26272e2cb80db {type WMSFTYPE_6823c074771d as WMSFTYPE}
+
+pub using @ffc26272e2cb80db {type WMSTREAMPRIORITYRECORD_1ae3051c0eaa as WMSTREAMPRIORITYRECORD}
+
+pub using @ffc26272e2cb80db {type WMSTREAMTYPEINFO_f16c168f489e as WMSTREAMTYPEINFO}
+
+pub using @ffc26272e2cb80db {type WMSYNCHRONISEDLYRICS_96b0b5850317 as WMSYNCHRONISEDLYRICS}
+
+pub using @ffc26272e2cb80db {type WMTATTRDATATYPE_159ace6de302 as WMTATTRDATATYPE}
+
+pub using @ffc26272e2cb80db {type WMTATTRIMAGETYPE_dd91d5f4f363 as WMTATTRIMAGETYPE}
+
+pub using @ffc26272e2cb80db {type WMTBUFFERSEGMENT_d33b2e45d283 as WMTBUFFERSEGMENT}
+
+pub using @ffc26272e2cb80db {type WMTCODECINFOTYPE_37ba306985ef as WMTCODECINFOTYPE}
+
+pub using @ffc26272e2cb80db {type WMTCOLORSPACEINFOEXTENSIONDATA_c4c72dcd388f as WMTCOLORSPACEINFOEXTENSIONDATA}
+
+pub using @ffc26272e2cb80db {type WMTCREDENTIALFLAGS_2ff308c4deee as WMTCREDENTIALFLAGS}
+
+pub using @ffc26272e2cb80db {type WMTDRMLATRUST_42adf46dbac8 as WMTDRMLATRUST}
+
+pub using @ffc26272e2cb80db {type WMTFILESINKDATAUNIT_d1c0f9c6b825 as WMTFILESINKDATAUNIT}
+
+pub using @ffc26272e2cb80db {type WMTFILESINKMODE_999f5d8168cd as WMTFILESINKMODE}
+
+pub using @ffc26272e2cb80db {type WMTIMAGETYPE_e94c21a504f0 as WMTIMAGETYPE}
+
+pub using @ffc26272e2cb80db {type WMTINDEXERTYPE_5dab34b81e8f as WMTINDEXERTYPE}
+
+pub using @ffc26272e2cb80db {type WMTINDEXTYPE_cf5604bad387 as WMTINDEXTYPE}
+
+pub using @ffc26272e2cb80db {type WMTMUSICSPEECHCLASSMODE_92e38c30d33b as WMTMUSICSPEECHCLASSMODE}
+
+pub using @ffc26272e2cb80db {type WMTNETPROTOCOL_a383c81262af as WMTNETPROTOCOL}
+
+pub using @ffc26272e2cb80db {type WMTOFFSETFORMAT_fca156bf9ad8 as WMTOFFSETFORMAT}
+
+pub using @ffc26272e2cb80db {type WMTPAYLOADFRAGMENT_5c9120567da0 as WMTPAYLOADFRAGMENT}
+
+pub using @ffc26272e2cb80db {type WMTPLAYMODE_8159f9668d5e as WMTPLAYMODE}
+
+pub using @ffc26272e2cb80db {type WMTPROXYSETTINGS_e2ff4b48433c as WMTPROXYSETTINGS}
+
+pub using @ffc26272e2cb80db {type WMTRIGHTS_435af23fbf04 as WMTRIGHTS}
+
+pub using @ffc26272e2cb80db {type WMTSTATUS_2d46c2b755ba as WMTSTATUS}
+
+pub using @ffc26272e2cb80db {type WMTSTORAGEFORMAT_1637472d9398 as WMTSTORAGEFORMAT}
+
+pub using @ffc26272e2cb80db {type WMTSTREAMSELECTION_8c11e9ef66b9 as WMTSTREAMSELECTION}
+
+pub using @ffc26272e2cb80db {type WMTTIMECODEEXTENSIONDATA_e78d67e48756 as WMTTIMECODEEXTENSIONDATA}
+
+pub using @ffc26272e2cb80db {type WMTTIMECODEFRAMERATE_1e18d9607ab1 as WMTTIMECODEFRAMERATE}
+
+pub using @ffc26272e2cb80db {type WMTTRANSPORTTYPE_d0c37d42cff5 as WMTTRANSPORTTYPE}
+
+pub using @ffc26272e2cb80db {type WMTVERSION_2607a8609676 as WMTVERSION}
+
+pub using @ffc26272e2cb80db {type WMTVIDEOIMAGESAMPLE_917a2b288b53 as WMTVIDEOIMAGESAMPLE}
+
+pub using @ffc26272e2cb80db {type WMTVIDEOIMAGESAMPLE2_7d1f709e00a1 as WMTVIDEOIMAGESAMPLE2}
+
+pub using @ffc26272e2cb80db {type WMTWATERMARKENTRY_57caac24e551 as WMTWATERMARKENTRY}
+
+pub using @ffc26272e2cb80db {type WMTWATERMARKENTRYTYPE_de4ce9a52e85 as WMTWATERMARKENTRYTYPE}
+
+pub using @ffc26272e2cb80db {type WMTWEBSTREAMFORMAT_7505d2a4e9a2 as WMTWEBSTREAMFORMAT}
+
+pub using @ffc26272e2cb80db {type WMTWEBSTREAMSAMPLEHEADER_724ee1133566 as WMTWEBSTREAMSAMPLEHEADER}
+
+pub using @ffc26272e2cb80db {type WMUSERTEXT_0c6031b7ddc9 as WMUSERTEXT}
+
+pub using @ffc26272e2cb80db {type WMUSERWEBURL_a506d0f7852e as WMUSERWEBURL}
+
+pub using @ffc26272e2cb80db {type WMVIDEOINFOHEADER_263cbc1555f6 as WMVIDEOINFOHEADER}
+
+pub using @ffc26272e2cb80db {type WMVIDEOINFOHEADER2_1e30d21c0ab7 as WMVIDEOINFOHEADER2}
+
+pub using @ffc26272e2cb80db {type WMWRITERSTATISTICS_a13431b924b6 as WMWRITERSTATISTICS}
+
+pub using @ffc26272e2cb80db {type WMWRITERSTATISTICSEX_44ef28d175f7 as WMWRITERSTATISTICSEX}
+
+// Traits

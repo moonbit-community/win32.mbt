@@ -1,0 +1,75 @@
+// Generated using `moon info`, DON'T EDIT IT
+package "moonbit-community/win32api/windows/win32/system/io"
+
+import {
+  "moonbit-community/win32api/runtime/core",
+  "moonbit-community/win32api/scc/b785b16e0a6d57ad",
+}
+
+// Values
+pub fn bind_io_completion_callback(@core.RawAddress, @core.RawAddress, UInt) -> Bool raise @core.WindowsError
+
+pub fn bind_io_completion_callback_raw(@core.RawAddress, @core.RawAddress, UInt) -> @core.RawWin32Call[Int]
+
+pub fn cancel_io(@core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn cancel_io_ex(@core.RawAddress, @b785b16e0a6d57ad.OVERLAPPED_ed44d4ed4c15?) -> Bool raise @core.WindowsError
+
+pub fn cancel_io_ex_raw(@core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn cancel_io_raw(@core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn cancel_synchronous_io(@core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn cancel_synchronous_io_raw(@core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn create_io_completion_port(@core.RawAddress, @core.RawAddress, UInt64, UInt) -> @core.RawAddress raise @core.WindowsError
+
+pub fn create_io_completion_port_raw(@core.RawAddress, @core.RawAddress, UInt64, UInt) -> @core.RawWin32Call[@core.RawAddress]
+
+pub fn device_io_control(@core.RawAddress, UInt, @core.RawAddress, UInt, @core.RawAddress, UInt, @core.RawAddress, @b785b16e0a6d57ad.OVERLAPPED_ed44d4ed4c15?) -> Bool raise @core.WindowsError
+
+pub fn device_io_control_raw(@core.RawAddress, UInt, @core.RawAddress, UInt, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn get_overlapped_result(@core.RawAddress, @b785b16e0a6d57ad.OVERLAPPED_ed44d4ed4c15, @core.RawAddress, Int) -> Bool raise @core.WindowsError
+
+pub fn get_overlapped_result_ex(@core.RawAddress, @b785b16e0a6d57ad.OVERLAPPED_ed44d4ed4c15, @core.RawAddress, UInt, Int) -> Bool raise @core.WindowsError
+
+pub fn get_overlapped_result_ex_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, UInt, Int) -> @core.RawWin32Call[Int]
+
+pub fn get_overlapped_result_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, Int) -> @core.RawWin32Call[Int]
+
+pub fn get_queued_completion_status(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, UInt) -> Bool raise @core.WindowsError
+
+pub fn get_queued_completion_status_ex(@core.RawAddress, @b785b16e0a6d57ad.OVERLAPPEDENTRY_2d8d717972cd, UInt, @core.RawAddress, UInt, Int) -> Bool raise @core.WindowsError
+
+pub fn get_queued_completion_status_ex_raw(@core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, UInt, Int) -> @core.RawWin32Call[Int]
+
+pub fn get_queued_completion_status_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, UInt) -> @core.RawWin32Call[Int]
+
+pub fn post_queued_completion_status(@core.RawAddress, UInt, UInt64, @b785b16e0a6d57ad.OVERLAPPED_ed44d4ed4c15?) -> Bool raise @core.WindowsError
+
+pub fn post_queued_completion_status_raw(@core.RawAddress, UInt, UInt64, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+// Errors
+
+// Types and methods
+
+// Type aliases
+pub using @b785b16e0a6d57ad {type IOSTATUSBLOCK_d81c8aca9b9d as IOSTATUSBLOCK}
+
+pub using @b785b16e0a6d57ad {type IOSTATUSBLOCKAnonymousEUnion_af04aa63212e as IOSTATUSBLOCKAnonymousEUnion}
+
+pub using @b785b16e0a6d57ad {type LPOVERLAPPEDCOMPLETIONROUTINE_931c8c03f79c as LPOVERLAPPEDCOMPLETIONROUTINE}
+
+pub using @b785b16e0a6d57ad {type OVERLAPPED_ed44d4ed4c15 as OVERLAPPED}
+
+pub using @b785b16e0a6d57ad {type OVERLAPPEDAnonymousEUnion_d55575d55e43 as OVERLAPPEDAnonymousEUnion}
+
+pub using @b785b16e0a6d57ad {type OVERLAPPEDAnonymousEUnionAnonymousEStruct_f81971552c4e as OVERLAPPEDAnonymousEUnionAnonymousEStruct}
+
+pub using @b785b16e0a6d57ad {type OVERLAPPEDENTRY_2d8d717972cd as OVERLAPPEDENTRY}
+
+pub using @b785b16e0a6d57ad {type PIOAPCROUTINE_d3c866e130c0 as PIOAPCROUTINE}
+
+// Traits

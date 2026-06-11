@@ -1,0 +1,244 @@
+// Generated using `moon info`, DON'T EDIT IT
+package "moonbit-community/win32api/scc/0deddb72bec9de3a"
+
+import {
+  "moonbit-community/win32api/runtime/core",
+  "moonbitlang/core/debug",
+}
+
+// Values
+pub let guid_devinterface_pwm_controller_wsz_27a6d28fd8ff : String
+
+pub let ioctl_pwm_controller_get_actual_period_a59cce313979 : UInt
+
+pub let ioctl_pwm_controller_get_info_c27f6b9fe58c : UInt
+
+pub let ioctl_pwm_controller_set_desired_period_68f4133bb0ec : UInt
+
+pub let ioctl_pwm_pin_get_active_duty_cycle_percentage_7896413779b6 : UInt
+
+pub let ioctl_pwm_pin_get_polarity_5eabb60e60c2 : UInt
+
+pub let ioctl_pwm_pin_is_started_1ae64863699e : UInt
+
+pub let ioctl_pwm_pin_set_active_duty_cycle_percentage_c9a85f5e801c : UInt
+
+pub let ioctl_pwm_pin_set_polarity_e6cb99573351 : UInt
+
+pub let ioctl_pwm_pin_start_4f57fc365483 : UInt
+
+pub let ioctl_pwm_pin_stop_d0f09f174f57 : UInt
+
+pub let pwm_active_high_74c6bcf23c38 : Int
+
+pub let pwm_active_low_0d2a4cd1ff86 : Int
+
+pub let pwm_ioctl_id_controller_get_actual_period_c2b15df65c28 : Int
+
+pub let pwm_ioctl_id_controller_get_info_5adc8cd1432e : Int
+
+pub let pwm_ioctl_id_controller_set_desired_period_4f9d5026242d : Int
+
+pub let pwm_ioctl_id_pin_get_active_duty_cycle_percentage_f2c876418c7c : Int
+
+pub let pwm_ioctl_id_pin_get_polarity_097d08f877cf : Int
+
+pub let pwm_ioctl_id_pin_is_started_5e52df37fb9a : Int
+
+pub let pwm_ioctl_id_pin_set_active_duty_cycle_percentage_80b3b728913b : Int
+
+pub let pwm_ioctl_id_pin_set_polarity_67c7d7444146 : Int
+
+pub let pwm_ioctl_id_pin_start_f6bbdb076f12 : Int
+
+pub let pwm_ioctl_id_pin_stop_bb268793d625 : Int
+
+pub let pwmcontrollergetactualperiodoutput_ce9e43d31355_alignment : Int
+
+pub let pwmcontrollergetactualperiodoutput_ce9e43d31355_size : Int
+
+pub let pwmcontrollerinfo_06547def0051_alignment : Int
+
+pub let pwmcontrollerinfo_06547def0051_size : Int
+
+pub let pwmcontrollersetdesiredperiodinput_1255421a8944_alignment : Int
+
+pub let pwmcontrollersetdesiredperiodinput_1255421a8944_size : Int
+
+pub let pwmcontrollersetdesiredperiodoutput_e63350de95fc_alignment : Int
+
+pub let pwmcontrollersetdesiredperiodoutput_e63350de95fc_size : Int
+
+pub let pwmpingetactivedutycyclepercentageoutput_b9a129816889_alignment : Int
+
+pub let pwmpingetactivedutycyclepercentageoutput_b9a129816889_size : Int
+
+pub let pwmpingetpolarityoutput_6271f73e24d1_alignment : Int
+
+pub let pwmpingetpolarityoutput_6271f73e24d1_size : Int
+
+pub let pwmpinisstartedoutput_ea29daedca50_alignment : Int
+
+pub let pwmpinisstartedoutput_ea29daedca50_size : Int
+
+pub let pwmpinsetactivedutycyclepercentageinput_d0117f1ddf87_alignment : Int
+
+pub let pwmpinsetactivedutycyclepercentageinput_d0117f1ddf87_size : Int
+
+pub let pwmpinsetpolarityinput_b5a8d9cd8f69_alignment : Int
+
+pub let pwmpinsetpolarityinput_b5a8d9cd8f69_size : Int
+
+// Errors
+
+// Types and methods
+pub(all) struct PWMCONTROLLERGETACTUALPERIODOUTPUT_ce9e43d31355 {
+  raw_buffer : @core.NativeBuffer
+}
+pub fn PWMCONTROLLERGETACTUALPERIODOUTPUT_ce9e43d31355::abi_alignment() -> Int
+pub fn PWMCONTROLLERGETACTUALPERIODOUTPUT_ce9e43d31355::abi_size() -> Int
+pub fn PWMCONTROLLERGETACTUALPERIODOUTPUT_ce9e43d31355::actual_period(Self) -> UInt64 raise @core.WindowsError
+pub fn PWMCONTROLLERGETACTUALPERIODOUTPUT_ce9e43d31355::bytes(Self) -> Bytes raise @core.WindowsError
+pub fn PWMCONTROLLERGETACTUALPERIODOUTPUT_ce9e43d31355::from_bytes(Bytes) -> Self raise @core.WindowsError
+pub fn PWMCONTROLLERGETACTUALPERIODOUTPUT_ce9e43d31355::new() -> Self raise @core.WindowsError
+pub fn PWMCONTROLLERGETACTUALPERIODOUTPUT_ce9e43d31355::raw_address(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn PWMCONTROLLERGETACTUALPERIODOUTPUT_ce9e43d31355::set_actual_period(Self, UInt64) -> Unit raise @core.WindowsError
+pub fn[T] PWMCONTROLLERGETACTUALPERIODOUTPUT_ce9e43d31355::with_raw_address(Self, (@core.RawAddress) -> T raise?) -> T raise
+pub impl Eq for PWMCONTROLLERGETACTUALPERIODOUTPUT_ce9e43d31355
+pub impl @debug.Debug for PWMCONTROLLERGETACTUALPERIODOUTPUT_ce9e43d31355
+
+pub(all) struct PWMCONTROLLERINFO_06547def0051 {
+  raw_buffer : @core.NativeBuffer
+}
+pub fn PWMCONTROLLERINFO_06547def0051::abi_alignment() -> Int
+pub fn PWMCONTROLLERINFO_06547def0051::abi_size() -> Int
+pub fn PWMCONTROLLERINFO_06547def0051::bytes(Self) -> Bytes raise @core.WindowsError
+pub fn PWMCONTROLLERINFO_06547def0051::from_bytes(Bytes) -> Self raise @core.WindowsError
+pub fn PWMCONTROLLERINFO_06547def0051::maximum_period(Self) -> UInt64 raise @core.WindowsError
+pub fn PWMCONTROLLERINFO_06547def0051::minimum_period(Self) -> UInt64 raise @core.WindowsError
+pub fn PWMCONTROLLERINFO_06547def0051::new() -> Self raise @core.WindowsError
+pub fn PWMCONTROLLERINFO_06547def0051::pin_count(Self) -> UInt raise @core.WindowsError
+pub fn PWMCONTROLLERINFO_06547def0051::raw_address(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn PWMCONTROLLERINFO_06547def0051::set_maximum_period(Self, UInt64) -> Unit raise @core.WindowsError
+pub fn PWMCONTROLLERINFO_06547def0051::set_minimum_period(Self, UInt64) -> Unit raise @core.WindowsError
+pub fn PWMCONTROLLERINFO_06547def0051::set_pin_count(Self, UInt) -> Unit raise @core.WindowsError
+pub fn PWMCONTROLLERINFO_06547def0051::set_size(Self, UInt64) -> Unit raise @core.WindowsError
+pub fn PWMCONTROLLERINFO_06547def0051::size(Self) -> UInt64 raise @core.WindowsError
+pub fn[T] PWMCONTROLLERINFO_06547def0051::with_raw_address(Self, (@core.RawAddress) -> T raise?) -> T raise
+pub impl Eq for PWMCONTROLLERINFO_06547def0051
+pub impl @debug.Debug for PWMCONTROLLERINFO_06547def0051
+
+pub(all) struct PWMCONTROLLERSETDESIREDPERIODINPUT_1255421a8944 {
+  raw_buffer : @core.NativeBuffer
+}
+pub fn PWMCONTROLLERSETDESIREDPERIODINPUT_1255421a8944::abi_alignment() -> Int
+pub fn PWMCONTROLLERSETDESIREDPERIODINPUT_1255421a8944::abi_size() -> Int
+pub fn PWMCONTROLLERSETDESIREDPERIODINPUT_1255421a8944::bytes(Self) -> Bytes raise @core.WindowsError
+pub fn PWMCONTROLLERSETDESIREDPERIODINPUT_1255421a8944::desired_period(Self) -> UInt64 raise @core.WindowsError
+pub fn PWMCONTROLLERSETDESIREDPERIODINPUT_1255421a8944::from_bytes(Bytes) -> Self raise @core.WindowsError
+pub fn PWMCONTROLLERSETDESIREDPERIODINPUT_1255421a8944::new() -> Self raise @core.WindowsError
+pub fn PWMCONTROLLERSETDESIREDPERIODINPUT_1255421a8944::raw_address(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn PWMCONTROLLERSETDESIREDPERIODINPUT_1255421a8944::set_desired_period(Self, UInt64) -> Unit raise @core.WindowsError
+pub fn[T] PWMCONTROLLERSETDESIREDPERIODINPUT_1255421a8944::with_raw_address(Self, (@core.RawAddress) -> T raise?) -> T raise
+pub impl Eq for PWMCONTROLLERSETDESIREDPERIODINPUT_1255421a8944
+pub impl @debug.Debug for PWMCONTROLLERSETDESIREDPERIODINPUT_1255421a8944
+
+pub(all) struct PWMCONTROLLERSETDESIREDPERIODOUTPUT_e63350de95fc {
+  raw_buffer : @core.NativeBuffer
+}
+pub fn PWMCONTROLLERSETDESIREDPERIODOUTPUT_e63350de95fc::abi_alignment() -> Int
+pub fn PWMCONTROLLERSETDESIREDPERIODOUTPUT_e63350de95fc::abi_size() -> Int
+pub fn PWMCONTROLLERSETDESIREDPERIODOUTPUT_e63350de95fc::actual_period(Self) -> UInt64 raise @core.WindowsError
+pub fn PWMCONTROLLERSETDESIREDPERIODOUTPUT_e63350de95fc::bytes(Self) -> Bytes raise @core.WindowsError
+pub fn PWMCONTROLLERSETDESIREDPERIODOUTPUT_e63350de95fc::from_bytes(Bytes) -> Self raise @core.WindowsError
+pub fn PWMCONTROLLERSETDESIREDPERIODOUTPUT_e63350de95fc::new() -> Self raise @core.WindowsError
+pub fn PWMCONTROLLERSETDESIREDPERIODOUTPUT_e63350de95fc::raw_address(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn PWMCONTROLLERSETDESIREDPERIODOUTPUT_e63350de95fc::set_actual_period(Self, UInt64) -> Unit raise @core.WindowsError
+pub fn[T] PWMCONTROLLERSETDESIREDPERIODOUTPUT_e63350de95fc::with_raw_address(Self, (@core.RawAddress) -> T raise?) -> T raise
+pub impl Eq for PWMCONTROLLERSETDESIREDPERIODOUTPUT_e63350de95fc
+pub impl @debug.Debug for PWMCONTROLLERSETDESIREDPERIODOUTPUT_e63350de95fc
+
+pub(all) struct PWMPINGETACTIVEDUTYCYCLEPERCENTAGEOUTPUT_b9a129816889 {
+  raw_buffer : @core.NativeBuffer
+}
+pub fn PWMPINGETACTIVEDUTYCYCLEPERCENTAGEOUTPUT_b9a129816889::abi_alignment() -> Int
+pub fn PWMPINGETACTIVEDUTYCYCLEPERCENTAGEOUTPUT_b9a129816889::abi_size() -> Int
+pub fn PWMPINGETACTIVEDUTYCYCLEPERCENTAGEOUTPUT_b9a129816889::bytes(Self) -> Bytes raise @core.WindowsError
+pub fn PWMPINGETACTIVEDUTYCYCLEPERCENTAGEOUTPUT_b9a129816889::from_bytes(Bytes) -> Self raise @core.WindowsError
+pub fn PWMPINGETACTIVEDUTYCYCLEPERCENTAGEOUTPUT_b9a129816889::new() -> Self raise @core.WindowsError
+pub fn PWMPINGETACTIVEDUTYCYCLEPERCENTAGEOUTPUT_b9a129816889::percentage(Self) -> UInt64 raise @core.WindowsError
+pub fn PWMPINGETACTIVEDUTYCYCLEPERCENTAGEOUTPUT_b9a129816889::raw_address(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn PWMPINGETACTIVEDUTYCYCLEPERCENTAGEOUTPUT_b9a129816889::set_percentage(Self, UInt64) -> Unit raise @core.WindowsError
+pub fn[T] PWMPINGETACTIVEDUTYCYCLEPERCENTAGEOUTPUT_b9a129816889::with_raw_address(Self, (@core.RawAddress) -> T raise?) -> T raise
+pub impl Eq for PWMPINGETACTIVEDUTYCYCLEPERCENTAGEOUTPUT_b9a129816889
+pub impl @debug.Debug for PWMPINGETACTIVEDUTYCYCLEPERCENTAGEOUTPUT_b9a129816889
+
+pub(all) struct PWMPINGETPOLARITYOUTPUT_6271f73e24d1 {
+  raw_buffer : @core.NativeBuffer
+}
+pub fn PWMPINGETPOLARITYOUTPUT_6271f73e24d1::abi_alignment() -> Int
+pub fn PWMPINGETPOLARITYOUTPUT_6271f73e24d1::abi_size() -> Int
+pub fn PWMPINGETPOLARITYOUTPUT_6271f73e24d1::bytes(Self) -> Bytes raise @core.WindowsError
+pub fn PWMPINGETPOLARITYOUTPUT_6271f73e24d1::from_bytes(Bytes) -> Self raise @core.WindowsError
+pub fn PWMPINGETPOLARITYOUTPUT_6271f73e24d1::new() -> Self raise @core.WindowsError
+pub fn PWMPINGETPOLARITYOUTPUT_6271f73e24d1::polarity(Self) -> PWMPOLARITY_f518b81eb20a raise @core.WindowsError
+pub fn PWMPINGETPOLARITYOUTPUT_6271f73e24d1::raw_address(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn PWMPINGETPOLARITYOUTPUT_6271f73e24d1::set_polarity(Self, PWMPOLARITY_f518b81eb20a) -> Unit raise @core.WindowsError
+pub fn[T] PWMPINGETPOLARITYOUTPUT_6271f73e24d1::with_raw_address(Self, (@core.RawAddress) -> T raise?) -> T raise
+pub impl Eq for PWMPINGETPOLARITYOUTPUT_6271f73e24d1
+pub impl @debug.Debug for PWMPINGETPOLARITYOUTPUT_6271f73e24d1
+
+pub(all) struct PWMPINISSTARTEDOUTPUT_ea29daedca50 {
+  raw_buffer : @core.NativeBuffer
+}
+pub fn PWMPINISSTARTEDOUTPUT_ea29daedca50::abi_alignment() -> Int
+pub fn PWMPINISSTARTEDOUTPUT_ea29daedca50::abi_size() -> Int
+pub fn PWMPINISSTARTEDOUTPUT_ea29daedca50::bytes(Self) -> Bytes raise @core.WindowsError
+pub fn PWMPINISSTARTEDOUTPUT_ea29daedca50::from_bytes(Bytes) -> Self raise @core.WindowsError
+pub fn PWMPINISSTARTEDOUTPUT_ea29daedca50::is_started(Self) -> Byte raise @core.WindowsError
+pub fn PWMPINISSTARTEDOUTPUT_ea29daedca50::new() -> Self raise @core.WindowsError
+pub fn PWMPINISSTARTEDOUTPUT_ea29daedca50::raw_address(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn PWMPINISSTARTEDOUTPUT_ea29daedca50::set_is_started(Self, Byte) -> Unit raise @core.WindowsError
+pub fn[T] PWMPINISSTARTEDOUTPUT_ea29daedca50::with_raw_address(Self, (@core.RawAddress) -> T raise?) -> T raise
+pub impl Eq for PWMPINISSTARTEDOUTPUT_ea29daedca50
+pub impl @debug.Debug for PWMPINISSTARTEDOUTPUT_ea29daedca50
+
+pub(all) struct PWMPINSETACTIVEDUTYCYCLEPERCENTAGEINPUT_d0117f1ddf87 {
+  raw_buffer : @core.NativeBuffer
+}
+pub fn PWMPINSETACTIVEDUTYCYCLEPERCENTAGEINPUT_d0117f1ddf87::abi_alignment() -> Int
+pub fn PWMPINSETACTIVEDUTYCYCLEPERCENTAGEINPUT_d0117f1ddf87::abi_size() -> Int
+pub fn PWMPINSETACTIVEDUTYCYCLEPERCENTAGEINPUT_d0117f1ddf87::bytes(Self) -> Bytes raise @core.WindowsError
+pub fn PWMPINSETACTIVEDUTYCYCLEPERCENTAGEINPUT_d0117f1ddf87::from_bytes(Bytes) -> Self raise @core.WindowsError
+pub fn PWMPINSETACTIVEDUTYCYCLEPERCENTAGEINPUT_d0117f1ddf87::new() -> Self raise @core.WindowsError
+pub fn PWMPINSETACTIVEDUTYCYCLEPERCENTAGEINPUT_d0117f1ddf87::percentage(Self) -> UInt64 raise @core.WindowsError
+pub fn PWMPINSETACTIVEDUTYCYCLEPERCENTAGEINPUT_d0117f1ddf87::raw_address(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn PWMPINSETACTIVEDUTYCYCLEPERCENTAGEINPUT_d0117f1ddf87::set_percentage(Self, UInt64) -> Unit raise @core.WindowsError
+pub fn[T] PWMPINSETACTIVEDUTYCYCLEPERCENTAGEINPUT_d0117f1ddf87::with_raw_address(Self, (@core.RawAddress) -> T raise?) -> T raise
+pub impl Eq for PWMPINSETACTIVEDUTYCYCLEPERCENTAGEINPUT_d0117f1ddf87
+pub impl @debug.Debug for PWMPINSETACTIVEDUTYCYCLEPERCENTAGEINPUT_d0117f1ddf87
+
+pub(all) struct PWMPINSETPOLARITYINPUT_b5a8d9cd8f69 {
+  raw_buffer : @core.NativeBuffer
+}
+pub fn PWMPINSETPOLARITYINPUT_b5a8d9cd8f69::abi_alignment() -> Int
+pub fn PWMPINSETPOLARITYINPUT_b5a8d9cd8f69::abi_size() -> Int
+pub fn PWMPINSETPOLARITYINPUT_b5a8d9cd8f69::bytes(Self) -> Bytes raise @core.WindowsError
+pub fn PWMPINSETPOLARITYINPUT_b5a8d9cd8f69::from_bytes(Bytes) -> Self raise @core.WindowsError
+pub fn PWMPINSETPOLARITYINPUT_b5a8d9cd8f69::new() -> Self raise @core.WindowsError
+pub fn PWMPINSETPOLARITYINPUT_b5a8d9cd8f69::polarity(Self) -> PWMPOLARITY_f518b81eb20a raise @core.WindowsError
+pub fn PWMPINSETPOLARITYINPUT_b5a8d9cd8f69::raw_address(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn PWMPINSETPOLARITYINPUT_b5a8d9cd8f69::set_polarity(Self, PWMPOLARITY_f518b81eb20a) -> Unit raise @core.WindowsError
+pub fn[T] PWMPINSETPOLARITYINPUT_b5a8d9cd8f69::with_raw_address(Self, (@core.RawAddress) -> T raise?) -> T raise
+pub impl Eq for PWMPINSETPOLARITYINPUT_b5a8d9cd8f69
+pub impl @debug.Debug for PWMPINSETPOLARITYINPUT_b5a8d9cd8f69
+
+pub(all) struct PWMPOLARITY_f518b81eb20a(Int) derive(Compare, Eq, @debug.Debug)
+pub fn PWMPOLARITY_f518b81eb20a::from_int(Int) -> Self
+pub fn PWMPOLARITY_f518b81eb20a::pwm_active_high() -> Self
+pub fn PWMPOLARITY_f518b81eb20a::pwm_active_low() -> Self
+pub fn PWMPOLARITY_f518b81eb20a::to_int(Self) -> Int
+
+// Type aliases
+
+// Traits

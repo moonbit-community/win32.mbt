@@ -1,0 +1,385 @@
+// Generated using `moon info`, DON'T EDIT IT
+package "moonbit-community/win32api/windows/win32/system/distributed_transaction_coordinator"
+
+import {
+  "moonbit-community/win32api/runtime/core",
+  "moonbit-community/win32api/scc/be8d7d320109bdb1",
+}
+
+// Values
+pub fn dtc_get_transaction_manager(@core.RawAddress, @core.RawAddress, @core.RawAddress, UInt, UInt16, @core.RawAddress, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn dtc_get_transaction_manager_c(@core.RawAddress, @core.RawAddress, @core.RawAddress, UInt, UInt16, @core.RawAddress, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn dtc_get_transaction_manager_c_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, UInt, UInt, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn dtc_get_transaction_manager_ex_a(@core.RawAddress, @core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn dtc_get_transaction_manager_ex_a_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn dtc_get_transaction_manager_ex_w(@core.RawAddress, @core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn dtc_get_transaction_manager_ex_w_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn dtc_get_transaction_manager_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, UInt, UInt, @core.RawAddress, @core.RawAddress) -> Int
+
+pub let dtc_install_overwrite_client : UInt
+
+pub let dtc_install_overwrite_server : UInt
+
+pub let dtcinstall_e_client_already_installed : Int
+
+pub let dtcinstall_e_server_already_installed : Int
+
+pub let maxbqualsize : UInt
+
+pub let maxgtridsize : UInt
+
+pub let maxinfosize : UInt
+
+pub let ole_tm_config_version_1 : UInt
+
+pub let ole_tm_config_version_2 : UInt
+
+pub let ole_tm_flag_internal_to_tm : UInt
+
+pub let ole_tm_flag_noagilerecovery : UInt
+
+pub let ole_tm_flag_nodemandstart : UInt
+
+pub let ole_tm_flag_none : UInt
+
+pub let ole_tm_flag_query_service_lockstatus : UInt
+
+pub let rmnamesz : UInt
+
+pub let tm_join : UInt
+
+pub let tm_ok : UInt
+
+pub let tm_resume : UInt
+
+pub let tmasync : Int
+
+pub let tmendrscan : Int
+
+pub let tmer_inval : Int
+
+pub let tmer_proto : Int
+
+pub let tmer_tmerr : Int
+
+pub let tmfail : Int
+
+pub let tmjoin : Int
+
+pub let tmmigrate : Int
+
+pub let tmmultiple : Int
+
+pub let tmnoflags : Int
+
+pub let tmnomigrate : Int
+
+pub let tmnowait : Int
+
+pub let tmonephase : Int
+
+pub let tmregister : Int
+
+pub let tmresume : Int
+
+pub let tmstartrscan : Int
+
+pub let tmsuccess : Int
+
+pub let tmsuspend : Int
+
+pub let tmuseasync : Int
+
+pub let xa_fmtid_dtc : UInt
+
+pub let xa_fmtid_dtc_ver1 : UInt
+
+pub let xa_heurcom : UInt
+
+pub let xa_heurhaz : UInt
+
+pub let xa_heurmix : UInt
+
+pub let xa_heurrb : UInt
+
+pub let xa_nomigrate : UInt
+
+pub let xa_ok : UInt
+
+pub let xa_rbbase : UInt
+
+pub let xa_rbcommfail : UInt
+
+pub let xa_rbdeadlock : UInt
+
+pub let xa_rbend : UInt
+
+pub let xa_rbintegrity : UInt
+
+pub let xa_rbother : UInt
+
+pub let xa_rbproto : UInt
+
+pub let xa_rbrollback : UInt
+
+pub let xa_rbtimeout : UInt
+
+pub let xa_rbtransient : UInt
+
+pub let xa_rdonly : UInt
+
+pub let xa_retry : UInt
+
+pub let xa_switch_f_dtc : UInt
+
+pub let xaer_async : Int
+
+pub let xaer_dupid : Int
+
+pub let xaer_inval : Int
+
+pub let xaer_nota : Int
+
+pub let xaer_outside : Int
+
+pub let xaer_proto : Int
+
+pub let xaer_rmerr : Int
+
+pub let xaer_rmfail : Int
+
+pub let xiddatasize : UInt
+
+// Errors
+
+// Types and methods
+
+// Type aliases
+pub using @be8d7d320109bdb1 {type APPLICATIONTYPE_2568c14dd0f9 as APPLICATIONTYPE}
+
+pub using @be8d7d320109bdb1 {type AUTHENTICATIONLEVEL_b804d25a6262 as AUTHENTICATIONLEVEL}
+
+pub using @be8d7d320109bdb1 {type BOID_d66cfc690866 as BOID}
+
+pub using @be8d7d320109bdb1 {type DTCGETTRANSACTIONMANAGER_e5048877280b as DTCGETTRANSACTIONMANAGER}
+
+pub using @be8d7d320109bdb1 {type DTCGETTRANSACTIONMANAGEREXA_10a001eebe06 as DTCGETTRANSACTIONMANAGEREXA}
+
+pub using @be8d7d320109bdb1 {type DTCGETTRANSACTIONMANAGEREXW_3166395c71d0 as DTCGETTRANSACTIONMANAGEREXW}
+
+pub using @be8d7d320109bdb1 {type DTCINITIATEDRECOVERYWORK_72b53c318712 as DTCINITIATEDRECOVERYWORK}
+
+pub using @be8d7d320109bdb1 {type DTCINSTALLCLIENT_5fe35c3fc98a as DTCINSTALLCLIENT}
+
+pub using @be8d7d320109bdb1 {type DTCLUCOMPARESTATE_4ec9e197c393 as DTCLUCOMPARESTATE}
+
+pub using @be8d7d320109bdb1 {type DTCLUCOMPARESTATESCONFIRMATION_14eede5fa076 as DTCLUCOMPARESTATESCONFIRMATION}
+
+pub using @be8d7d320109bdb1 {type DTCLUCOMPARESTATESERROR_eab8c6ff61ec as DTCLUCOMPARESTATESERROR}
+
+pub using @be8d7d320109bdb1 {type DTCLUCOMPARESTATESRESPONSE_46df731fc051 as DTCLUCOMPARESTATESRESPONSE}
+
+pub using @be8d7d320109bdb1 {type DTCLUXLN_164e6666627b as DTCLUXLN}
+
+pub using @be8d7d320109bdb1 {type DTCLUXLNCONFIRMATION_e9edf1e0148a as DTCLUXLNCONFIRMATION}
+
+pub using @be8d7d320109bdb1 {type DTCLUXLNERROR_9d005f2aaf53 as DTCLUXLNERROR}
+
+pub using @be8d7d320109bdb1 {type DTCLUXLNRESPONSE_f476f4858fee as DTCLUXLNRESPONSE}
+
+pub using @be8d7d320109bdb1 {type DTCSTATUS_7ee91dd3de78 as DTCSTATUS}
+
+pub using @be8d7d320109bdb1 {type IDtcLuConfigure_532b5305b73c as IDtcLuConfigure}
+
+pub using @be8d7d320109bdb1 {type IDtcLuRecovery_9229a09e3385 as IDtcLuRecovery}
+
+pub using @be8d7d320109bdb1 {type IDtcLuRecoveryFactory_220ccc215bf6 as IDtcLuRecoveryFactory}
+
+pub using @be8d7d320109bdb1 {type IDtcLuRecoveryInitiatedByDtc_cdd8f4045813 as IDtcLuRecoveryInitiatedByDtc}
+
+pub using @be8d7d320109bdb1 {type IDtcLuRecoveryInitiatedByDtcStatusWork_4fef5b9be5da as IDtcLuRecoveryInitiatedByDtcStatusWork}
+
+pub using @be8d7d320109bdb1 {type IDtcLuRecoveryInitiatedByDtcTransWork_0afbecc9883f as IDtcLuRecoveryInitiatedByDtcTransWork}
+
+pub using @be8d7d320109bdb1 {type IDtcLuRecoveryInitiatedByLu_274e8efc6a79 as IDtcLuRecoveryInitiatedByLu}
+
+pub using @be8d7d320109bdb1 {type IDtcLuRecoveryInitiatedByLuWork_8833739b1cf4 as IDtcLuRecoveryInitiatedByLuWork}
+
+pub using @be8d7d320109bdb1 {type IDtcLuRmEnlistment_f0b9070d4a36 as IDtcLuRmEnlistment}
+
+pub using @be8d7d320109bdb1 {type IDtcLuRmEnlistmentFactory_422ce0e06c14 as IDtcLuRmEnlistmentFactory}
+
+pub using @be8d7d320109bdb1 {type IDtcLuRmEnlistmentSink_5a03e159fae1 as IDtcLuRmEnlistmentSink}
+
+pub using @be8d7d320109bdb1 {type IDtcLuSubordinateDtc_dd811dd204eb as IDtcLuSubordinateDtc}
+
+pub using @be8d7d320109bdb1 {type IDtcLuSubordinateDtcFactory_7b1ef5333832 as IDtcLuSubordinateDtcFactory}
+
+pub using @be8d7d320109bdb1 {type IDtcLuSubordinateDtcSink_3822fc029ad9 as IDtcLuSubordinateDtcSink}
+
+pub using @be8d7d320109bdb1 {type IDtcNetworkAccessConfig_901f6a8e08d6 as IDtcNetworkAccessConfig}
+
+pub using @be8d7d320109bdb1 {type IDtcNetworkAccessConfig2_d48c557e907c as IDtcNetworkAccessConfig2}
+
+pub using @be8d7d320109bdb1 {type IDtcNetworkAccessConfig3_26fccedb98ed as IDtcNetworkAccessConfig3}
+
+pub using @be8d7d320109bdb1 {type IDtcToXaHelper_231cae5476bf as IDtcToXaHelper}
+
+pub using @be8d7d320109bdb1 {type IDtcToXaHelperFactory_d975678904ed as IDtcToXaHelperFactory}
+
+pub using @be8d7d320109bdb1 {type IDtcToXaHelperSinglePipe_f9d8cd86d849 as IDtcToXaHelperSinglePipe}
+
+pub using @be8d7d320109bdb1 {type IDtcToXaMapper_3cdc8ed979d4 as IDtcToXaMapper}
+
+pub using @be8d7d320109bdb1 {type IGetDispenser_54046271d5cf as IGetDispenser}
+
+pub using @be8d7d320109bdb1 {type IKernelTransaction_9b4a472b4061 as IKernelTransaction}
+
+pub using @be8d7d320109bdb1 {type ILastResourceManager_55c0ddd5dd87 as ILastResourceManager}
+
+pub using @be8d7d320109bdb1 {type IPrepareInfo_c060eeed10f1 as IPrepareInfo}
+
+pub using @be8d7d320109bdb1 {type IPrepareInfo2_f1e710250f3d as IPrepareInfo2}
+
+pub using @be8d7d320109bdb1 {type IRMHelper_d9631dc22cf0 as IRMHelper}
+
+pub using @be8d7d320109bdb1 {type IResourceManager_2f778a6887d0 as IResourceManager}
+
+pub using @be8d7d320109bdb1 {type IResourceManager2_5ae0a6b65f84 as IResourceManager2}
+
+pub using @be8d7d320109bdb1 {type IResourceManagerFactory_427135979223 as IResourceManagerFactory}
+
+pub using @be8d7d320109bdb1 {type IResourceManagerFactory2_6c106ba5dce4 as IResourceManagerFactory2}
+
+pub using @be8d7d320109bdb1 {type IResourceManagerRejoinable_bc75fddeb8e3 as IResourceManagerRejoinable}
+
+pub using @be8d7d320109bdb1 {type IResourceManagerSink_c2ab95dc49c9 as IResourceManagerSink}
+
+pub using @be8d7d320109bdb1 {type ISOFLAG_23b1ca3bea78 as ISOFLAG}
+
+pub using @be8d7d320109bdb1 {type ISOLATIONLEVEL_4729fef2d150 as ISOLATIONLEVEL}
+
+pub using @be8d7d320109bdb1 {type ITipHelper_7a470a70614e as ITipHelper}
+
+pub using @be8d7d320109bdb1 {type ITipPullSink_4caa8ec7a462 as ITipPullSink}
+
+pub using @be8d7d320109bdb1 {type ITipTransaction_9e3f628d2419 as ITipTransaction}
+
+pub using @be8d7d320109bdb1 {type ITmNodeName_127822ca73fc as ITmNodeName}
+
+pub using @be8d7d320109bdb1 {type ITransaction_8c0f5eca98a3 as ITransaction}
+
+pub using @be8d7d320109bdb1 {type ITransaction2_679e3fc1de4b as ITransaction2}
+
+pub using @be8d7d320109bdb1 {type ITransactionCloner_a7580488978e as ITransactionCloner}
+
+pub using @be8d7d320109bdb1 {type ITransactionDispenser_5d3e103d4307 as ITransactionDispenser}
+
+pub using @be8d7d320109bdb1 {type ITransactionEnlistmentAsync_435ac772c625 as ITransactionEnlistmentAsync}
+
+pub using @be8d7d320109bdb1 {type ITransactionExport_2dfc960cb66c as ITransactionExport}
+
+pub using @be8d7d320109bdb1 {type ITransactionExportFactory_6371043de116 as ITransactionExportFactory}
+
+pub using @be8d7d320109bdb1 {type ITransactionImport_7970abbe6d9a as ITransactionImport}
+
+pub using @be8d7d320109bdb1 {type ITransactionImportWhereabouts_5fb62ec91278 as ITransactionImportWhereabouts}
+
+pub using @be8d7d320109bdb1 {type ITransactionLastEnlistmentAsync_0283d3f2f4f2 as ITransactionLastEnlistmentAsync}
+
+pub using @be8d7d320109bdb1 {type ITransactionLastResourceAsync_9d153dd7d6ab as ITransactionLastResourceAsync}
+
+pub using @be8d7d320109bdb1 {type ITransactionOptions_4dcc6408c8e6 as ITransactionOptions}
+
+pub using @be8d7d320109bdb1 {type ITransactionOutcomeEvents_b9ce97c36c27 as ITransactionOutcomeEvents}
+
+pub using @be8d7d320109bdb1 {type ITransactionPhase0EnlistmentAsync_fb682eaa1425 as ITransactionPhase0EnlistmentAsync}
+
+pub using @be8d7d320109bdb1 {type ITransactionPhase0Factory_c575663eecbe as ITransactionPhase0Factory}
+
+pub using @be8d7d320109bdb1 {type ITransactionPhase0NotifyAsync_d9bfc333c481 as ITransactionPhase0NotifyAsync}
+
+pub using @be8d7d320109bdb1 {type ITransactionReceiver_8aec36ff2534 as ITransactionReceiver}
+
+pub using @be8d7d320109bdb1 {type ITransactionReceiverFactory_11ecfa61cb3f as ITransactionReceiverFactory}
+
+pub using @be8d7d320109bdb1 {type ITransactionResource_809ecb02525c as ITransactionResource}
+
+pub using @be8d7d320109bdb1 {type ITransactionResourceAsync_41526f703555 as ITransactionResourceAsync}
+
+pub using @be8d7d320109bdb1 {type ITransactionTransmitter_0b14387d4fd0 as ITransactionTransmitter}
+
+pub using @be8d7d320109bdb1 {type ITransactionTransmitterFactory_1d24d7684bd4 as ITransactionTransmitterFactory}
+
+pub using @be8d7d320109bdb1 {type ITransactionVoterBallotAsync2_cf6646b318af as ITransactionVoterBallotAsync2}
+
+pub using @be8d7d320109bdb1 {type ITransactionVoterFactory2_45e4c43279a6 as ITransactionVoterFactory2}
+
+pub using @be8d7d320109bdb1 {type ITransactionVoterNotifyAsync2_814616db22a9 as ITransactionVoterNotifyAsync2}
+
+pub using @be8d7d320109bdb1 {type IXAConfig_4c6131f3830a as IXAConfig}
+
+pub using @be8d7d320109bdb1 {type IXAObtainRMInfo_3025ea88ba61 as IXAObtainRMInfo}
+
+pub using @be8d7d320109bdb1 {type IXATransLookup_a847d64868d5 as IXATransLookup}
+
+pub using @be8d7d320109bdb1 {type IXATransLookup2_75aa68305740 as IXATransLookup2}
+
+pub using @be8d7d320109bdb1 {type OLETMCONFIGPARAMSV1_1f2a73819d09 as OLETMCONFIGPARAMSV1}
+
+pub using @be8d7d320109bdb1 {type OLETMCONFIGPARAMSV2_98982d3338c9 as OLETMCONFIGPARAMSV2}
+
+pub using @be8d7d320109bdb1 {type PROXYCONFIGPARAMS_743c5d44032f as PROXYCONFIGPARAMS}
+
+pub using @be8d7d320109bdb1 {type TXMISCCONSTANTS_b1071ae027b2 as TXMISCCONSTANTS}
+
+pub using @be8d7d320109bdb1 {type XACLOSEEPT_a9606a8701e3 as XACLOSEEPT}
+
+pub using @be8d7d320109bdb1 {type XACOMMITEPT_181ace71e03a as XACOMMITEPT}
+
+pub using @be8d7d320109bdb1 {type XACOMPLETEEPT_e3947e5fed89 as XACOMPLETEEPT}
+
+pub using @be8d7d320109bdb1 {type XACTCONST_cb3eab2936ca as XACTCONST}
+
+pub using @be8d7d320109bdb1 {type XACTDTCCONSTANTS_7e7106ae4e3e as XACTDTCCONSTANTS}
+
+pub using @be8d7d320109bdb1 {type XACTHEURISTIC_8dd82eaf557f as XACTHEURISTIC}
+
+pub using @be8d7d320109bdb1 {type XACTOPT_1f9a0206ed5f as XACTOPT}
+
+pub using @be8d7d320109bdb1 {type XACTRM_92a97ac48a0f as XACTRM}
+
+pub using @be8d7d320109bdb1 {type XACTSTAT_634018282d9e as XACTSTAT}
+
+pub using @be8d7d320109bdb1 {type XACTSTATS_6782522c21f7 as XACTSTATS}
+
+pub using @be8d7d320109bdb1 {type XACTTC_a90b925768f0 as XACTTC}
+
+pub using @be8d7d320109bdb1 {type XACTTRANSINFO_78839f5596cb as XACTTRANSINFO}
+
+pub using @be8d7d320109bdb1 {type XAENDEPT_e3f7aff1a946 as XAENDEPT}
+
+pub using @be8d7d320109bdb1 {type XAFORGETEPT_d96dbe102ead as XAFORGETEPT}
+
+pub using @be8d7d320109bdb1 {type XAOPENEPT_1ed2d5925a91 as XAOPENEPT}
+
+pub using @be8d7d320109bdb1 {type XAPREPAREEPT_c3a8131229f5 as XAPREPAREEPT}
+
+pub using @be8d7d320109bdb1 {type XARECOVEREPT_889992822742 as XARECOVEREPT}
+
+pub using @be8d7d320109bdb1 {type XAROLLBACKEPT_a64698dea036 as XAROLLBACKEPT}
+
+pub using @be8d7d320109bdb1 {type XASTARTEPT_fcae40d50e84 as XASTARTEPT}
+
+pub using @be8d7d320109bdb1 {type XID_276d1e205c3a as XID}
+
+pub using @be8d7d320109bdb1 {type XaSwitchT_4316387fab2b as XaSwitchT}
+
+// Traits

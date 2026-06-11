@@ -1,0 +1,2048 @@
+// Generated using `moon info`, DON'T EDIT IT
+package "moonbit-community/win32api/windows/win32/media/audio"
+
+import {
+  "moonbit-community/win32api/runtime/core",
+  "moonbit-community/win32api/runtime/strings",
+  "moonbit-community/win32api/scc/58228b76ec7374fa",
+  "moonbit-community/win32api/scc/a1b26abae35d5a76",
+  "moonbit-community/win32api/scc/fb5a6360fee450db",
+}
+
+// Values
+pub fn acm_driver_add_a(@core.RawAddress, @core.RawAddress, Int64, UInt, UInt) -> UInt raise @core.WindowsError
+
+pub fn acm_driver_add_a_raw(@core.RawAddress, @core.RawAddress, Int64, UInt, UInt) -> UInt
+
+pub fn acm_driver_add_w(@core.RawAddress, @core.RawAddress, Int64, UInt, UInt) -> UInt raise @core.WindowsError
+
+pub fn acm_driver_add_w_raw(@core.RawAddress, @core.RawAddress, Int64, UInt, UInt) -> UInt
+
+pub fn acm_driver_close(@core.RawAddress, UInt) -> UInt raise @core.WindowsError
+
+pub fn acm_driver_close_raw(@core.RawAddress, UInt) -> UInt
+
+pub fn acm_driver_details_a(@core.RawAddress, @a1b26abae35d5a76.ACMDRIVERDETAILSA_098123fd1ed8, UInt) -> UInt raise @core.WindowsError
+
+pub fn acm_driver_details_a_raw(@core.RawAddress, @core.RawAddress, UInt) -> UInt
+
+pub fn acm_driver_details_w(@core.RawAddress, @a1b26abae35d5a76.ACMDRIVERDETAILSW_4a91cb09132f, UInt) -> UInt raise @core.WindowsError
+
+pub fn acm_driver_details_w_raw(@core.RawAddress, @core.RawAddress, UInt) -> UInt
+
+pub fn acm_driver_enum(@core.RawAddress, UInt64, UInt) -> UInt raise @core.WindowsError
+
+pub fn acm_driver_enum_raw(@core.RawAddress, UInt64, UInt) -> UInt
+
+pub fn acm_driver_id(@core.RawAddress, @core.RawAddress, UInt) -> UInt raise @core.WindowsError
+
+pub fn acm_driver_id_raw(@core.RawAddress, @core.RawAddress, UInt) -> UInt
+
+pub fn acm_driver_message(@core.RawAddress, UInt, Int64, Int64) -> Int64 raise @core.WindowsError
+
+pub fn acm_driver_message_raw(@core.RawAddress, UInt, Int64, Int64) -> Int64
+
+pub fn acm_driver_open(@core.RawAddress, @core.RawAddress, UInt) -> UInt raise @core.WindowsError
+
+pub fn acm_driver_open_raw(@core.RawAddress, @core.RawAddress, UInt) -> UInt
+
+pub fn acm_driver_priority(@core.RawAddress, UInt, UInt) -> UInt raise @core.WindowsError
+
+pub fn acm_driver_priority_raw(@core.RawAddress, UInt, UInt) -> UInt
+
+pub fn acm_driver_remove(@core.RawAddress, UInt) -> UInt raise @core.WindowsError
+
+pub fn acm_driver_remove_raw(@core.RawAddress, UInt) -> UInt
+
+pub let acm_driveraddf_function : Int
+
+pub let acm_driveraddf_global : Int
+
+pub let acm_driveraddf_local : Int
+
+pub let acm_driveraddf_name : Int
+
+pub let acm_driveraddf_notifyhwnd : Int
+
+pub let acm_driveraddf_typemask : Int
+
+pub let acm_driverenumf_disabled : Int
+
+pub let acm_driverenumf_nolocal : Int
+
+pub let acm_driverpriorityf_ablemask : Int
+
+pub let acm_driverpriorityf_begin : Int
+
+pub let acm_driverpriorityf_defermask : Int
+
+pub let acm_driverpriorityf_disable : Int
+
+pub let acm_driverpriorityf_enable : Int
+
+pub let acm_driverpriorityf_end : Int
+
+pub fn acm_filter_choose_a(@a1b26abae35d5a76.ACMFILTERCHOOSEA_465702b013be) -> UInt raise @core.WindowsError
+
+pub fn acm_filter_choose_a_raw(@core.RawAddress) -> UInt
+
+pub fn acm_filter_choose_w(@a1b26abae35d5a76.ACMFILTERCHOOSEW_c5c2b1e6a240) -> UInt raise @core.WindowsError
+
+pub fn acm_filter_choose_w_raw(@core.RawAddress) -> UInt
+
+pub fn acm_filter_details_a(@core.RawAddress, @a1b26abae35d5a76.ACMFILTERDETAILSA_3ef59393cea3, UInt) -> UInt raise @core.WindowsError
+
+pub fn acm_filter_details_a_raw(@core.RawAddress, @core.RawAddress, UInt) -> UInt
+
+pub fn acm_filter_details_w(@core.RawAddress, @a1b26abae35d5a76.ACMFILTERDETAILSW_88bb239ce731, UInt) -> UInt raise @core.WindowsError
+
+pub fn acm_filter_details_w_raw(@core.RawAddress, @core.RawAddress, UInt) -> UInt
+
+pub fn acm_filter_enum_a(@core.RawAddress, @a1b26abae35d5a76.ACMFILTERDETAILSA_3ef59393cea3, @core.RawAddress, UInt64, UInt) -> UInt raise @core.WindowsError
+
+pub fn acm_filter_enum_a_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, UInt64, UInt) -> UInt
+
+pub fn acm_filter_enum_w(@core.RawAddress, @a1b26abae35d5a76.ACMFILTERDETAILSW_88bb239ce731, @core.RawAddress, UInt64, UInt) -> UInt raise @core.WindowsError
+
+pub fn acm_filter_enum_w_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, UInt64, UInt) -> UInt
+
+pub fn acm_filter_tag_details_a(@core.RawAddress, @a1b26abae35d5a76.ACMFILTERTAGDETAILSA_2b9f777b2b76, UInt) -> UInt raise @core.WindowsError
+
+pub fn acm_filter_tag_details_a_raw(@core.RawAddress, @core.RawAddress, UInt) -> UInt
+
+pub fn acm_filter_tag_details_w(@core.RawAddress, @a1b26abae35d5a76.ACMFILTERTAGDETAILSW_cce0a4610a26, UInt) -> UInt raise @core.WindowsError
+
+pub fn acm_filter_tag_details_w_raw(@core.RawAddress, @core.RawAddress, UInt) -> UInt
+
+pub fn acm_filter_tag_enum_a(@core.RawAddress, @a1b26abae35d5a76.ACMFILTERTAGDETAILSA_2b9f777b2b76, @core.RawAddress, UInt64, UInt) -> UInt raise @core.WindowsError
+
+pub fn acm_filter_tag_enum_a_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, UInt64, UInt) -> UInt
+
+pub fn acm_filter_tag_enum_w(@core.RawAddress, @a1b26abae35d5a76.ACMFILTERTAGDETAILSW_cce0a4610a26, @core.RawAddress, UInt64, UInt) -> UInt raise @core.WindowsError
+
+pub fn acm_filter_tag_enum_w_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, UInt64, UInt) -> UInt
+
+pub let acm_filterdetailsf_filter : Int
+
+pub let acm_filterdetailsf_index : Int
+
+pub let acm_filterdetailsf_querymask : Int
+
+pub let acm_filterenumf_dwfiltertag : Int
+
+pub let acm_filtertagdetailsf_filtertag : Int
+
+pub let acm_filtertagdetailsf_index : Int
+
+pub let acm_filtertagdetailsf_largestsize : Int
+
+pub let acm_filtertagdetailsf_querymask : Int
+
+pub fn acm_format_choose_a(@a1b26abae35d5a76.ACMFORMATCHOOSEA_bccdd97f7a9e) -> UInt raise @core.WindowsError
+
+pub fn acm_format_choose_a_raw(@core.RawAddress) -> UInt
+
+pub fn acm_format_choose_w(@a1b26abae35d5a76.ACMFORMATCHOOSEW_638ac5d7e816) -> UInt raise @core.WindowsError
+
+pub fn acm_format_choose_w_raw(@core.RawAddress) -> UInt
+
+pub fn acm_format_details_a(@core.RawAddress, @a1b26abae35d5a76.ACMFORMATDETAILSA_3b46030940d4, UInt) -> UInt raise @core.WindowsError
+
+pub fn acm_format_details_a_raw(@core.RawAddress, @core.RawAddress, UInt) -> UInt
+
+pub fn acm_format_details_w(@core.RawAddress, @a1b26abae35d5a76.TACMFORMATDETAILSW_933f3f37443e, UInt) -> UInt raise @core.WindowsError
+
+pub fn acm_format_details_w_raw(@core.RawAddress, @core.RawAddress, UInt) -> UInt
+
+pub fn acm_format_enum_a(@core.RawAddress, @a1b26abae35d5a76.ACMFORMATDETAILSA_3b46030940d4, @core.RawAddress, UInt64, UInt) -> UInt raise @core.WindowsError
+
+pub fn acm_format_enum_a_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, UInt64, UInt) -> UInt
+
+pub fn acm_format_enum_w(@core.RawAddress, @a1b26abae35d5a76.TACMFORMATDETAILSW_933f3f37443e, @core.RawAddress, UInt64, UInt) -> UInt raise @core.WindowsError
+
+pub fn acm_format_enum_w_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, UInt64, UInt) -> UInt
+
+pub fn acm_format_suggest(@core.RawAddress, @a1b26abae35d5a76.WAVEFORMATEX_4bac4c6c0495, @a1b26abae35d5a76.WAVEFORMATEX_4bac4c6c0495, UInt, UInt) -> UInt raise @core.WindowsError
+
+pub fn acm_format_suggest_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, UInt, UInt) -> UInt
+
+pub fn acm_format_tag_details_a(@core.RawAddress, @a1b26abae35d5a76.ACMFORMATTAGDETAILSA_6ee51a7a9707, UInt) -> UInt raise @core.WindowsError
+
+pub fn acm_format_tag_details_a_raw(@core.RawAddress, @core.RawAddress, UInt) -> UInt
+
+pub fn acm_format_tag_details_w(@core.RawAddress, @a1b26abae35d5a76.ACMFORMATTAGDETAILSW_93a847f40f47, UInt) -> UInt raise @core.WindowsError
+
+pub fn acm_format_tag_details_w_raw(@core.RawAddress, @core.RawAddress, UInt) -> UInt
+
+pub fn acm_format_tag_enum_a(@core.RawAddress, @a1b26abae35d5a76.ACMFORMATTAGDETAILSA_6ee51a7a9707, @core.RawAddress, UInt64, UInt) -> UInt raise @core.WindowsError
+
+pub fn acm_format_tag_enum_a_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, UInt64, UInt) -> UInt
+
+pub fn acm_format_tag_enum_w(@core.RawAddress, @a1b26abae35d5a76.ACMFORMATTAGDETAILSW_93a847f40f47, @core.RawAddress, UInt64, UInt) -> UInt raise @core.WindowsError
+
+pub fn acm_format_tag_enum_w_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, UInt64, UInt) -> UInt
+
+pub let acm_formatdetailsf_format : Int
+
+pub let acm_formatdetailsf_index : Int
+
+pub let acm_formatdetailsf_querymask : Int
+
+pub let acm_formatenumf_convert : Int
+
+pub let acm_formatenumf_hardware : Int
+
+pub let acm_formatenumf_input : Int
+
+pub let acm_formatenumf_nchannels : Int
+
+pub let acm_formatenumf_nsamplespersec : Int
+
+pub let acm_formatenumf_output : Int
+
+pub let acm_formatenumf_suggest : Int
+
+pub let acm_formatenumf_wbitspersample : Int
+
+pub let acm_formatenumf_wformattag : Int
+
+pub let acm_formatsuggestf_nchannels : Int
+
+pub let acm_formatsuggestf_nsamplespersec : Int
+
+pub let acm_formatsuggestf_typemask : Int
+
+pub let acm_formatsuggestf_wbitspersample : Int
+
+pub let acm_formatsuggestf_wformattag : Int
+
+pub let acm_formattagdetailsf_formattag : Int
+
+pub let acm_formattagdetailsf_index : Int
+
+pub let acm_formattagdetailsf_largestsize : Int
+
+pub let acm_formattagdetailsf_querymask : Int
+
+pub fn acm_get_version() -> UInt raise @core.WindowsError
+
+pub fn acm_get_version_raw() -> UInt
+
+pub let acm_metric_count_codecs : UInt
+
+pub let acm_metric_count_converters : UInt
+
+pub let acm_metric_count_disabled : UInt
+
+pub let acm_metric_count_drivers : UInt
+
+pub let acm_metric_count_filters : UInt
+
+pub let acm_metric_count_hardware : UInt
+
+pub let acm_metric_count_local_codecs : UInt
+
+pub let acm_metric_count_local_converters : UInt
+
+pub let acm_metric_count_local_disabled : UInt
+
+pub let acm_metric_count_local_drivers : UInt
+
+pub let acm_metric_count_local_filters : UInt
+
+pub let acm_metric_driver_priority : UInt
+
+pub let acm_metric_driver_support : UInt
+
+pub let acm_metric_hardware_wave_input : UInt
+
+pub let acm_metric_hardware_wave_output : UInt
+
+pub let acm_metric_max_size_filter : UInt
+
+pub let acm_metric_max_size_format : UInt
+
+pub fn acm_metrics(@core.RawAddress, UInt, @core.RawAddress) -> UInt raise @core.WindowsError
+
+pub fn acm_metrics_raw(@core.RawAddress, UInt, @core.RawAddress) -> UInt
+
+pub fn acm_stream_close(@core.RawAddress, UInt) -> UInt raise @core.WindowsError
+
+pub fn acm_stream_close_raw(@core.RawAddress, UInt) -> UInt
+
+pub fn acm_stream_convert(@core.RawAddress, @a1b26abae35d5a76.ACMSTREAMHEADER_9e42568c1127, UInt) -> UInt raise @core.WindowsError
+
+pub fn acm_stream_convert_raw(@core.RawAddress, @core.RawAddress, UInt) -> UInt
+
+pub fn acm_stream_message(@core.RawAddress, UInt, Int64, Int64) -> UInt raise @core.WindowsError
+
+pub fn acm_stream_message_raw(@core.RawAddress, UInt, Int64, Int64) -> UInt
+
+pub fn acm_stream_open(@core.RawAddress, @core.RawAddress, @a1b26abae35d5a76.WAVEFORMATEX_4bac4c6c0495, @a1b26abae35d5a76.WAVEFORMATEX_4bac4c6c0495, @a1b26abae35d5a76.WAVEFILTER_738873aba227, UInt64, UInt64, UInt) -> UInt raise @core.WindowsError
+
+pub fn acm_stream_open_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, UInt64, UInt64, UInt) -> UInt
+
+pub fn acm_stream_prepare_header(@core.RawAddress, @a1b26abae35d5a76.ACMSTREAMHEADER_9e42568c1127, UInt) -> UInt raise @core.WindowsError
+
+pub fn acm_stream_prepare_header_raw(@core.RawAddress, @core.RawAddress, UInt) -> UInt
+
+pub fn acm_stream_reset(@core.RawAddress, UInt) -> UInt raise @core.WindowsError
+
+pub fn acm_stream_reset_raw(@core.RawAddress, UInt) -> UInt
+
+pub fn acm_stream_size(@core.RawAddress, UInt, @core.RawAddress, UInt) -> UInt raise @core.WindowsError
+
+pub fn acm_stream_size_raw(@core.RawAddress, UInt, @core.RawAddress, UInt) -> UInt
+
+pub fn acm_stream_unprepare_header(@core.RawAddress, @a1b26abae35d5a76.ACMSTREAMHEADER_9e42568c1127, UInt) -> UInt raise @core.WindowsError
+
+pub fn acm_stream_unprepare_header_raw(@core.RawAddress, @core.RawAddress, UInt) -> UInt
+
+pub let acm_streamconvertf_blockalign : UInt
+
+pub let acm_streamconvertf_end : UInt
+
+pub let acm_streamconvertf_start : UInt
+
+pub let acm_streamopenf_async : UInt
+
+pub let acm_streamopenf_nonrealtime : UInt
+
+pub let acm_streamopenf_query : UInt
+
+pub let acm_streamsizef_destination : Int
+
+pub let acm_streamsizef_querymask : Int
+
+pub let acm_streamsizef_source : Int
+
+pub let acmdm_driver_about : UInt
+
+pub let acmdm_driver_details : UInt
+
+pub let acmdm_driver_notify : UInt
+
+pub let acmdm_filter_details : UInt
+
+pub let acmdm_filtertag_details : UInt
+
+pub let acmdm_format_details : UInt
+
+pub let acmdm_format_suggest : UInt
+
+pub let acmdm_formattag_details : UInt
+
+pub let acmdm_hardware_wave_caps_input : UInt
+
+pub let acmdm_hardware_wave_caps_output : UInt
+
+pub let acmdm_reserved_high : UInt
+
+pub let acmdm_reserved_low : UInt
+
+pub let acmdm_stream_close : UInt
+
+pub let acmdm_stream_convert : UInt
+
+pub let acmdm_stream_open : UInt
+
+pub let acmdm_stream_prepare : UInt
+
+pub let acmdm_stream_reset : UInt
+
+pub let acmdm_stream_size : UInt
+
+pub let acmdm_stream_unprepare : UInt
+
+pub let acmdm_stream_update : UInt
+
+pub let acmdm_user : UInt
+
+pub let acmdriverdetails_copyright_chars : UInt
+
+pub let acmdriverdetails_features_chars : UInt
+
+pub let acmdriverdetails_licensing_chars : UInt
+
+pub let acmdriverdetails_longname_chars : UInt
+
+pub let acmdriverdetails_shortname_chars : UInt
+
+pub let acmdriverdetails_supportf_async : Int
+
+pub let acmdriverdetails_supportf_codec : Int
+
+pub let acmdriverdetails_supportf_converter : Int
+
+pub let acmdriverdetails_supportf_disabled : Int
+
+pub let acmdriverdetails_supportf_filter : Int
+
+pub let acmdriverdetails_supportf_hardware : Int
+
+pub let acmdriverdetails_supportf_local : Int
+
+pub let acmerr_base : UInt
+
+pub let acmerr_busy : UInt
+
+pub let acmerr_canceled : UInt
+
+pub let acmerr_notpossible : UInt
+
+pub let acmerr_unprepared : UInt
+
+pub let acmfilterchoose_stylef_contexthelp : Int
+
+pub let acmfilterchoose_stylef_enablehook : Int
+
+pub let acmfilterchoose_stylef_enabletemplate : Int
+
+pub let acmfilterchoose_stylef_enabletemplatehandle : Int
+
+pub let acmfilterchoose_stylef_inittofilterstruct : Int
+
+pub let acmfilterchoose_stylef_showhelp : Int
+
+pub let acmfilterdetails_filter_chars : UInt
+
+pub let acmfiltertagdetails_filtertag_chars : UInt
+
+pub let acmformatchoose_stylef_contexthelp : Int
+
+pub let acmformatchoose_stylef_enablehook : Int
+
+pub let acmformatchoose_stylef_enabletemplate : Int
+
+pub let acmformatchoose_stylef_enabletemplatehandle : Int
+
+pub let acmformatchoose_stylef_inittowfxstruct : Int
+
+pub let acmformatchoose_stylef_showhelp : Int
+
+pub let acmformatdetails_format_chars : UInt
+
+pub let acmformattagdetails_formattag_chars : UInt
+
+pub let acmhelpmsgcontexthelp : String
+
+pub let acmhelpmsgcontexthelpa : String
+
+pub let acmhelpmsgcontexthelpw : String
+
+pub let acmhelpmsgcontextmenu : String
+
+pub let acmhelpmsgcontextmenua : String
+
+pub let acmhelpmsgcontextmenuw : String
+
+pub let acmhelpmsgstring : String
+
+pub let acmhelpmsgstringa : String
+
+pub let acmhelpmsgstringw : String
+
+pub let acmstreamheader_statusf_done : Int
+
+pub let acmstreamheader_statusf_inqueue : Int
+
+pub let acmstreamheader_statusf_prepared : Int
+
+pub fn activate_audio_interface_async(@strings.PWStr, @core.RawAddress, @58228b76ec7374fa.PROPVARIANTAnonymousEUnion_c0143a362bd5?, @core.RawAddress, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn activate_audio_interface_async_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub let ambisonics_param_version_1 : UInt
+
+pub let audclnt_e_already_initialized : Int
+
+pub let audclnt_e_bufduration_period_not_equal : Int
+
+pub let audclnt_e_buffer_error : Int
+
+pub let audclnt_e_buffer_operation_pending : Int
+
+pub let audclnt_e_buffer_size_error : Int
+
+pub let audclnt_e_buffer_size_not_aligned : Int
+
+pub let audclnt_e_buffer_too_large : Int
+
+pub let audclnt_e_cpuusage_exceeded : Int
+
+pub let audclnt_e_device_in_use : Int
+
+pub let audclnt_e_device_invalidated : Int
+
+pub let audclnt_e_effect_not_available : Int
+
+pub let audclnt_e_effect_state_read_only : Int
+
+pub let audclnt_e_endpoint_create_failed : Int
+
+pub let audclnt_e_endpoint_offload_not_capable : Int
+
+pub let audclnt_e_engine_format_locked : Int
+
+pub let audclnt_e_engine_periodicity_locked : Int
+
+pub let audclnt_e_eventhandle_not_expected : Int
+
+pub let audclnt_e_eventhandle_not_set : Int
+
+pub let audclnt_e_exclusive_mode_not_allowed : Int
+
+pub let audclnt_e_exclusive_mode_only : Int
+
+pub let audclnt_e_headtracking_enabled : Int
+
+pub let audclnt_e_headtracking_unsupported : Int
+
+pub let audclnt_e_incorrect_buffer_size : Int
+
+pub let audclnt_e_invalid_device_period : Int
+
+pub let audclnt_e_invalid_size : Int
+
+pub let audclnt_e_invalid_stream_flag : Int
+
+pub let audclnt_e_nonoffload_mode_only : Int
+
+pub let audclnt_e_not_initialized : Int
+
+pub let audclnt_e_not_stopped : Int
+
+pub let audclnt_e_offload_mode_only : Int
+
+pub let audclnt_e_out_of_offload_resources : Int
+
+pub let audclnt_e_out_of_order : Int
+
+pub let audclnt_e_post_volume_loopback_unsupported : Int
+
+pub let audclnt_e_raw_mode_unsupported : Int
+
+pub let audclnt_e_resources_invalidated : Int
+
+pub let audclnt_e_service_not_running : Int
+
+pub let audclnt_e_thread_not_registered : Int
+
+pub let audclnt_e_unsupported_format : Int
+
+pub let audclnt_e_wrong_endpoint_type : Int
+
+pub let audclnt_s_buffer_empty : Int
+
+pub let audclnt_s_position_stalled : Int
+
+pub let audclnt_s_thread_already_registered : Int
+
+pub let audclnt_sessionflags_display_hide : UInt
+
+pub let audclnt_sessionflags_display_hidewhenexpired : UInt
+
+pub let audclnt_sessionflags_expirewhenunowned : UInt
+
+pub let audclnt_streamflags_autoconvertpcm : UInt
+
+pub let audclnt_streamflags_crossprocess : UInt
+
+pub let audclnt_streamflags_eventcallback : UInt
+
+pub let audclnt_streamflags_loopback : UInt
+
+pub let audclnt_streamflags_nopersist : UInt
+
+pub let audclnt_streamflags_rateadjust : UInt
+
+pub let audclnt_streamflags_src_default_quality : UInt
+
+pub let audioclock_characteristic_fixed_freq : UInt
+
+pub fn aux_get_dev_caps_a(UInt64, @a1b26abae35d5a76.AUXCAPSA_626518041d91, UInt) -> UInt raise @core.WindowsError
+
+pub fn aux_get_dev_caps_a_raw(UInt64, @core.RawAddress, UInt) -> UInt
+
+pub fn aux_get_dev_caps_w(UInt64, @a1b26abae35d5a76.AUXCAPSW_862f0f3fda6f, UInt) -> UInt raise @core.WindowsError
+
+pub fn aux_get_dev_caps_w_raw(UInt64, @core.RawAddress, UInt) -> UInt
+
+pub fn aux_get_num_devs() -> UInt raise @core.WindowsError
+
+pub fn aux_get_num_devs_raw() -> UInt
+
+pub fn aux_get_volume(UInt, @core.RawAddress) -> UInt raise @core.WindowsError
+
+pub fn aux_get_volume_raw(UInt, @core.RawAddress) -> UInt
+
+pub fn aux_out_message(UInt, UInt, UInt64, UInt64) -> UInt raise @core.WindowsError
+
+pub fn aux_out_message_raw(UInt, UInt, UInt64, UInt64) -> UInt
+
+pub fn aux_set_volume(UInt, UInt) -> UInt raise @core.WindowsError
+
+pub fn aux_set_volume_raw(UInt, UInt) -> UInt
+
+pub let auxcaps_auxin : UInt
+
+pub let auxcaps_cdaudio : UInt
+
+pub let auxcaps_lrvolume : UInt
+
+pub let auxcaps_volume : UInt
+
+pub fn co_register_message_filter(@core.RawAddress, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn co_register_message_filter_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn create_capture_audio_state_monitor(@core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn create_capture_audio_state_monitor_for_category(@a1b26abae35d5a76.AUDIOSTREAMCATEGORY_d50037ef7270, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn create_capture_audio_state_monitor_for_category_and_device_id(@a1b26abae35d5a76.AUDIOSTREAMCATEGORY_d50037ef7270, @strings.PWStr, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn create_capture_audio_state_monitor_for_category_and_device_id_raw(Int, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn create_capture_audio_state_monitor_for_category_and_device_role(@a1b26abae35d5a76.AUDIOSTREAMCATEGORY_d50037ef7270, @a1b26abae35d5a76.ERole_4bf482b94ab2, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn create_capture_audio_state_monitor_for_category_and_device_role_raw(Int, Int, @core.RawAddress) -> Int
+
+pub fn create_capture_audio_state_monitor_for_category_raw(Int, @core.RawAddress) -> Int
+
+pub fn create_capture_audio_state_monitor_raw(@core.RawAddress) -> Int
+
+pub fn create_render_audio_state_monitor(@core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn create_render_audio_state_monitor_for_category(@a1b26abae35d5a76.AUDIOSTREAMCATEGORY_d50037ef7270, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn create_render_audio_state_monitor_for_category_and_device_id(@a1b26abae35d5a76.AUDIOSTREAMCATEGORY_d50037ef7270, @strings.PWStr, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn create_render_audio_state_monitor_for_category_and_device_id_raw(Int, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn create_render_audio_state_monitor_for_category_and_device_role(@a1b26abae35d5a76.AUDIOSTREAMCATEGORY_d50037ef7270, @a1b26abae35d5a76.ERole_4bf482b94ab2, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn create_render_audio_state_monitor_for_category_and_device_role_raw(Int, Int, @core.RawAddress) -> Int
+
+pub fn create_render_audio_state_monitor_for_category_raw(Int, @core.RawAddress) -> Int
+
+pub fn create_render_audio_state_monitor_raw(@core.RawAddress) -> Int
+
+pub let device_statemask_all : UInt
+
+pub let drv_mapper_preferred_input_get : UInt
+
+pub let drv_mapper_preferred_output_get : UInt
+
+pub let drvm_mapper : UInt
+
+pub let drvm_mapper_status : UInt
+
+pub let endpoint_format_reset_mix_only : UInt
+
+pub let endpoint_hardware_support_meter : UInt
+
+pub let endpoint_hardware_support_mute : UInt
+
+pub let endpoint_hardware_support_volume : UInt
+
+pub let endpoint_sysfx_disabled : UInt
+
+pub let endpoint_sysfx_enabled : UInt
+
+pub let filterchoose_custom_verify : UInt
+
+pub let filterchoose_filter_verify : UInt
+
+pub let filterchoose_filtertag_verify : UInt
+
+pub let filterchoose_message : UInt
+
+pub let formatchoose_custom_verify : UInt
+
+pub let formatchoose_format_verify : UInt
+
+pub let formatchoose_formattag_verify : UInt
+
+pub let formatchoose_message : UInt
+
+pub let mevt_comment : UInt
+
+pub let mevt_f_callback : Int
+
+pub let mevt_f_long : Int
+
+pub let mevt_f_short : Int
+
+pub let mevt_longmsg : UInt
+
+pub let mevt_nop : UInt
+
+pub let mevt_shortmsg : UInt
+
+pub let mevt_tempo : UInt
+
+pub let mevt_version : UInt
+
+pub let mhdr_done : UInt
+
+pub let mhdr_inqueue : UInt
+
+pub let mhdr_isstrm : UInt
+
+pub let mhdr_prepared : UInt
+
+pub let midi_cache_all : UInt
+
+pub let midi_cache_bestfit : UInt
+
+pub let midi_cache_query : UInt
+
+pub fn midi_connect(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt raise @core.WindowsError
+
+pub fn midi_connect_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn midi_disconnect(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt raise @core.WindowsError
+
+pub fn midi_disconnect_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn midi_in_add_buffer(@core.RawAddress, @a1b26abae35d5a76.MIDIHDR_7b37fa4092d2, UInt) -> UInt raise @core.WindowsError
+
+pub fn midi_in_add_buffer_raw(@core.RawAddress, @core.RawAddress, UInt) -> UInt
+
+pub fn midi_in_close(@core.RawAddress) -> UInt raise @core.WindowsError
+
+pub fn midi_in_close_raw(@core.RawAddress) -> UInt
+
+pub fn midi_in_get_dev_caps_a(UInt64, @a1b26abae35d5a76.MIDIINCAPSA_7b670fcbee53, UInt) -> UInt raise @core.WindowsError
+
+pub fn midi_in_get_dev_caps_a_raw(UInt64, @core.RawAddress, UInt) -> UInt
+
+pub fn midi_in_get_dev_caps_w(UInt64, @a1b26abae35d5a76.MIDIINCAPSW_0ba8208c9624, UInt) -> UInt raise @core.WindowsError
+
+pub fn midi_in_get_dev_caps_w_raw(UInt64, @core.RawAddress, UInt) -> UInt
+
+pub fn midi_in_get_error_text_a(UInt, @core.RawAddress, UInt) -> UInt raise @core.WindowsError
+
+pub fn midi_in_get_error_text_a_raw(UInt, @core.RawAddress, UInt) -> UInt
+
+pub fn midi_in_get_error_text_w(UInt, @strings.PWStrBuffer) -> UInt raise @core.WindowsError
+
+pub fn midi_in_get_error_text_w_raw(UInt, @core.RawAddress, UInt) -> UInt
+
+pub fn midi_in_get_id(@core.RawAddress, @core.RawAddress) -> UInt raise @core.WindowsError
+
+pub fn midi_in_get_id_raw(@core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn midi_in_get_num_devs() -> UInt raise @core.WindowsError
+
+pub fn midi_in_get_num_devs_raw() -> UInt
+
+pub fn midi_in_message(@core.RawAddress, UInt, UInt64, UInt64) -> UInt raise @core.WindowsError
+
+pub fn midi_in_message_raw(@core.RawAddress, UInt, UInt64, UInt64) -> UInt
+
+pub fn midi_in_open(@core.RawAddress, UInt, UInt64, UInt64, @a1b26abae35d5a76.MIDIWAVEOPENTYPE_d2609f5e1b4a) -> UInt raise @core.WindowsError
+
+pub fn midi_in_open_raw(@core.RawAddress, UInt, UInt64, UInt64, UInt) -> UInt
+
+pub fn midi_in_prepare_header(@core.RawAddress, @a1b26abae35d5a76.MIDIHDR_7b37fa4092d2, UInt) -> UInt raise @core.WindowsError
+
+pub fn midi_in_prepare_header_raw(@core.RawAddress, @core.RawAddress, UInt) -> UInt
+
+pub fn midi_in_reset(@core.RawAddress) -> UInt raise @core.WindowsError
+
+pub fn midi_in_reset_raw(@core.RawAddress) -> UInt
+
+pub fn midi_in_start(@core.RawAddress) -> UInt raise @core.WindowsError
+
+pub fn midi_in_start_raw(@core.RawAddress) -> UInt
+
+pub fn midi_in_stop(@core.RawAddress) -> UInt raise @core.WindowsError
+
+pub fn midi_in_stop_raw(@core.RawAddress) -> UInt
+
+pub fn midi_in_unprepare_header(@core.RawAddress, @a1b26abae35d5a76.MIDIHDR_7b37fa4092d2, UInt) -> UInt raise @core.WindowsError
+
+pub fn midi_in_unprepare_header_raw(@core.RawAddress, @core.RawAddress, UInt) -> UInt
+
+pub fn midi_out_cache_drum_patches(@core.RawAddress, UInt, @core.RawAddress, UInt) -> UInt raise @core.WindowsError
+
+pub fn midi_out_cache_drum_patches_raw(@core.RawAddress, UInt, @core.RawAddress, UInt) -> UInt
+
+pub fn midi_out_cache_patches(@core.RawAddress, UInt, @core.RawAddress, UInt) -> UInt raise @core.WindowsError
+
+pub fn midi_out_cache_patches_raw(@core.RawAddress, UInt, @core.RawAddress, UInt) -> UInt
+
+pub fn midi_out_close(@core.RawAddress) -> UInt raise @core.WindowsError
+
+pub fn midi_out_close_raw(@core.RawAddress) -> UInt
+
+pub fn midi_out_get_dev_caps_a(UInt64, @a1b26abae35d5a76.MIDIOUTCAPSA_d17a27157ec9, UInt) -> UInt raise @core.WindowsError
+
+pub fn midi_out_get_dev_caps_a_raw(UInt64, @core.RawAddress, UInt) -> UInt
+
+pub fn midi_out_get_dev_caps_w(UInt64, @a1b26abae35d5a76.MIDIOUTCAPSW_4541db6bb745, UInt) -> UInt raise @core.WindowsError
+
+pub fn midi_out_get_dev_caps_w_raw(UInt64, @core.RawAddress, UInt) -> UInt
+
+pub fn midi_out_get_error_text_a(UInt, @core.RawAddress, UInt) -> UInt raise @core.WindowsError
+
+pub fn midi_out_get_error_text_a_raw(UInt, @core.RawAddress, UInt) -> UInt
+
+pub fn midi_out_get_error_text_w(UInt, @strings.PWStrBuffer) -> UInt raise @core.WindowsError
+
+pub fn midi_out_get_error_text_w_raw(UInt, @core.RawAddress, UInt) -> UInt
+
+pub fn midi_out_get_id(@core.RawAddress, @core.RawAddress) -> UInt raise @core.WindowsError
+
+pub fn midi_out_get_id_raw(@core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn midi_out_get_num_devs() -> UInt raise @core.WindowsError
+
+pub fn midi_out_get_num_devs_raw() -> UInt
+
+pub fn midi_out_get_volume(@core.RawAddress, @core.RawAddress) -> UInt raise @core.WindowsError
+
+pub fn midi_out_get_volume_raw(@core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn midi_out_long_msg(@core.RawAddress, @a1b26abae35d5a76.MIDIHDR_7b37fa4092d2, UInt) -> UInt raise @core.WindowsError
+
+pub fn midi_out_long_msg_raw(@core.RawAddress, @core.RawAddress, UInt) -> UInt
+
+pub fn midi_out_message(@core.RawAddress, UInt, UInt64, UInt64) -> UInt raise @core.WindowsError
+
+pub fn midi_out_message_raw(@core.RawAddress, UInt, UInt64, UInt64) -> UInt
+
+pub fn midi_out_open(@core.RawAddress, UInt, UInt64, UInt64, @a1b26abae35d5a76.MIDIWAVEOPENTYPE_d2609f5e1b4a) -> UInt raise @core.WindowsError
+
+pub fn midi_out_open_raw(@core.RawAddress, UInt, UInt64, UInt64, UInt) -> UInt
+
+pub fn midi_out_prepare_header(@core.RawAddress, @a1b26abae35d5a76.MIDIHDR_7b37fa4092d2, UInt) -> UInt raise @core.WindowsError
+
+pub fn midi_out_prepare_header_raw(@core.RawAddress, @core.RawAddress, UInt) -> UInt
+
+pub fn midi_out_reset(@core.RawAddress) -> UInt raise @core.WindowsError
+
+pub fn midi_out_reset_raw(@core.RawAddress) -> UInt
+
+pub fn midi_out_set_volume(@core.RawAddress, UInt) -> UInt raise @core.WindowsError
+
+pub fn midi_out_set_volume_raw(@core.RawAddress, UInt) -> UInt
+
+pub fn midi_out_short_msg(@core.RawAddress, UInt) -> UInt raise @core.WindowsError
+
+pub fn midi_out_short_msg_raw(@core.RawAddress, UInt) -> UInt
+
+pub fn midi_out_unprepare_header(@core.RawAddress, @a1b26abae35d5a76.MIDIHDR_7b37fa4092d2, UInt) -> UInt raise @core.WindowsError
+
+pub fn midi_out_unprepare_header_raw(@core.RawAddress, @core.RawAddress, UInt) -> UInt
+
+pub fn midi_stream_close(@core.RawAddress) -> UInt raise @core.WindowsError
+
+pub fn midi_stream_close_raw(@core.RawAddress) -> UInt
+
+pub fn midi_stream_open(@core.RawAddress, @core.RawAddress, UInt, UInt64, UInt64, UInt) -> UInt raise @core.WindowsError
+
+pub fn midi_stream_open_raw(@core.RawAddress, @core.RawAddress, UInt, UInt64, UInt64, UInt) -> UInt
+
+pub fn midi_stream_out(@core.RawAddress, @a1b26abae35d5a76.MIDIHDR_7b37fa4092d2, UInt) -> UInt raise @core.WindowsError
+
+pub fn midi_stream_out_raw(@core.RawAddress, @core.RawAddress, UInt) -> UInt
+
+pub fn midi_stream_pause(@core.RawAddress) -> UInt raise @core.WindowsError
+
+pub fn midi_stream_pause_raw(@core.RawAddress) -> UInt
+
+pub fn midi_stream_position(@core.RawAddress, @fb5a6360fee450db.MMTIME_0f58abc421a9, UInt) -> UInt raise @core.WindowsError
+
+pub fn midi_stream_position_raw(@core.RawAddress, @core.RawAddress, UInt) -> UInt
+
+pub fn midi_stream_property(@core.RawAddress, @core.RawAddress, UInt) -> UInt raise @core.WindowsError
+
+pub fn midi_stream_property_raw(@core.RawAddress, @core.RawAddress, UInt) -> UInt
+
+pub fn midi_stream_restart(@core.RawAddress) -> UInt raise @core.WindowsError
+
+pub fn midi_stream_restart_raw(@core.RawAddress) -> UInt
+
+pub fn midi_stream_stop(@core.RawAddress) -> UInt raise @core.WindowsError
+
+pub fn midi_stream_stop_raw(@core.RawAddress) -> UInt
+
+pub let midi_uncache : UInt
+
+pub let midicaps_cache : UInt
+
+pub let midicaps_lrvolume : UInt
+
+pub let midicaps_stream : UInt
+
+pub let midicaps_volume : UInt
+
+pub let midierr_badopenmode : UInt
+
+pub let midierr_dont_continue : UInt
+
+pub let midierr_invalidsetup : UInt
+
+pub let midierr_lasterror : UInt
+
+pub let midierr_nodevice : UInt
+
+pub let midierr_nomap : UInt
+
+pub let midierr_notready : UInt
+
+pub let midierr_stillplaying : UInt
+
+pub let midierr_unprepared : UInt
+
+pub let midipatchsize : UInt
+
+pub let midiprop_get : Int
+
+pub let midiprop_set : Int
+
+pub let midiprop_tempo : Int
+
+pub let midiprop_timediv : Int
+
+pub let midistrm_error : Int
+
+pub fn mixer_close(@core.RawAddress) -> UInt raise @core.WindowsError
+
+pub fn mixer_close_raw(@core.RawAddress) -> UInt
+
+pub fn mixer_get_control_details_a(@core.RawAddress, @a1b26abae35d5a76.MIXERCONTROLDETAILS_01b7f7cadc8f, UInt) -> UInt raise @core.WindowsError
+
+pub fn mixer_get_control_details_a_raw(@core.RawAddress, @core.RawAddress, UInt) -> UInt
+
+pub fn mixer_get_control_details_w(@core.RawAddress, @a1b26abae35d5a76.MIXERCONTROLDETAILS_01b7f7cadc8f, UInt) -> UInt raise @core.WindowsError
+
+pub fn mixer_get_control_details_w_raw(@core.RawAddress, @core.RawAddress, UInt) -> UInt
+
+pub fn mixer_get_dev_caps_a(UInt64, @a1b26abae35d5a76.MIXERCAPSA_485bef6c39b9, UInt) -> UInt raise @core.WindowsError
+
+pub fn mixer_get_dev_caps_a_raw(UInt64, @core.RawAddress, UInt) -> UInt
+
+pub fn mixer_get_dev_caps_w(UInt64, @a1b26abae35d5a76.MIXERCAPSW_92feccec7b06, UInt) -> UInt raise @core.WindowsError
+
+pub fn mixer_get_dev_caps_w_raw(UInt64, @core.RawAddress, UInt) -> UInt
+
+pub fn mixer_get_id(@core.RawAddress, @core.RawAddress, UInt) -> UInt raise @core.WindowsError
+
+pub fn mixer_get_id_raw(@core.RawAddress, @core.RawAddress, UInt) -> UInt
+
+pub fn mixer_get_line_controls_a(@core.RawAddress, @a1b26abae35d5a76.MIXERLINECONTROLSA_c02fe6ce4ebf, UInt) -> UInt raise @core.WindowsError
+
+pub fn mixer_get_line_controls_a_raw(@core.RawAddress, @core.RawAddress, UInt) -> UInt
+
+pub fn mixer_get_line_controls_w(@core.RawAddress, @a1b26abae35d5a76.MIXERLINECONTROLSW_89a968b776bd, UInt) -> UInt raise @core.WindowsError
+
+pub fn mixer_get_line_controls_w_raw(@core.RawAddress, @core.RawAddress, UInt) -> UInt
+
+pub fn mixer_get_line_info_a(@core.RawAddress, @a1b26abae35d5a76.MIXERLINEA_a4d27867f681, UInt) -> UInt raise @core.WindowsError
+
+pub fn mixer_get_line_info_a_raw(@core.RawAddress, @core.RawAddress, UInt) -> UInt
+
+pub fn mixer_get_line_info_w(@core.RawAddress, @a1b26abae35d5a76.MIXERLINEW_f7cc5aa837db, UInt) -> UInt raise @core.WindowsError
+
+pub fn mixer_get_line_info_w_raw(@core.RawAddress, @core.RawAddress, UInt) -> UInt
+
+pub fn mixer_get_num_devs() -> UInt raise @core.WindowsError
+
+pub fn mixer_get_num_devs_raw() -> UInt
+
+pub let mixer_getcontroldetailsf_listtext : Int
+
+pub let mixer_getcontroldetailsf_querymask : Int
+
+pub let mixer_getcontroldetailsf_value : Int
+
+pub let mixer_getlinecontrolsf_all : Int
+
+pub let mixer_getlinecontrolsf_onebyid : Int
+
+pub let mixer_getlinecontrolsf_onebytype : Int
+
+pub let mixer_getlinecontrolsf_querymask : Int
+
+pub let mixer_getlineinfof_componenttype : Int
+
+pub let mixer_getlineinfof_destination : Int
+
+pub let mixer_getlineinfof_lineid : Int
+
+pub let mixer_getlineinfof_querymask : Int
+
+pub let mixer_getlineinfof_source : Int
+
+pub let mixer_getlineinfof_targettype : Int
+
+pub let mixer_long_name_chars : UInt
+
+pub fn mixer_message(@core.RawAddress, UInt, UInt64, UInt64) -> UInt raise @core.WindowsError
+
+pub fn mixer_message_raw(@core.RawAddress, UInt, UInt64, UInt64) -> UInt
+
+pub let mixer_objectf_aux : Int
+
+pub let mixer_objectf_handle : Int
+
+pub let mixer_objectf_midiin : Int
+
+pub let mixer_objectf_midiout : Int
+
+pub let mixer_objectf_mixer : Int
+
+pub let mixer_objectf_wavein : Int
+
+pub let mixer_objectf_waveout : Int
+
+pub fn mixer_open(@core.RawAddress, UInt, UInt64, UInt64, UInt) -> UInt raise @core.WindowsError
+
+pub fn mixer_open_raw(@core.RawAddress, UInt, UInt64, UInt64, UInt) -> UInt
+
+pub fn mixer_set_control_details(@core.RawAddress, @a1b26abae35d5a76.MIXERCONTROLDETAILS_01b7f7cadc8f, UInt) -> UInt raise @core.WindowsError
+
+pub fn mixer_set_control_details_raw(@core.RawAddress, @core.RawAddress, UInt) -> UInt
+
+pub let mixer_setcontroldetailsf_custom : Int
+
+pub let mixer_setcontroldetailsf_querymask : Int
+
+pub let mixer_setcontroldetailsf_value : Int
+
+pub let mixer_short_name_chars : UInt
+
+pub let mixercontrol_controlf_disabled : Int
+
+pub let mixercontrol_controlf_multiple : Int
+
+pub let mixercontrol_controlf_uniform : Int
+
+pub let mixercontrol_controltype_bass : UInt
+
+pub let mixercontrol_controltype_bass_boost : UInt
+
+pub let mixercontrol_controltype_boolean : UInt
+
+pub let mixercontrol_controltype_booleanmeter : UInt
+
+pub let mixercontrol_controltype_button : UInt
+
+pub let mixercontrol_controltype_custom : UInt
+
+pub let mixercontrol_controltype_decibels : UInt
+
+pub let mixercontrol_controltype_equalizer : UInt
+
+pub let mixercontrol_controltype_fader : UInt
+
+pub let mixercontrol_controltype_loudness : UInt
+
+pub let mixercontrol_controltype_microtime : UInt
+
+pub let mixercontrol_controltype_millitime : UInt
+
+pub let mixercontrol_controltype_mixer : UInt
+
+pub let mixercontrol_controltype_mono : UInt
+
+pub let mixercontrol_controltype_multipleselect : UInt
+
+pub let mixercontrol_controltype_mute : UInt
+
+pub let mixercontrol_controltype_mux : UInt
+
+pub let mixercontrol_controltype_onoff : UInt
+
+pub let mixercontrol_controltype_pan : UInt
+
+pub let mixercontrol_controltype_peakmeter : UInt
+
+pub let mixercontrol_controltype_percent : UInt
+
+pub let mixercontrol_controltype_qsoundpan : UInt
+
+pub let mixercontrol_controltype_signed : UInt
+
+pub let mixercontrol_controltype_signedmeter : UInt
+
+pub let mixercontrol_controltype_singleselect : UInt
+
+pub let mixercontrol_controltype_slider : UInt
+
+pub let mixercontrol_controltype_stereoenh : UInt
+
+pub let mixercontrol_controltype_treble : UInt
+
+pub let mixercontrol_controltype_unsigned : UInt
+
+pub let mixercontrol_controltype_unsignedmeter : UInt
+
+pub let mixercontrol_controltype_volume : UInt
+
+pub let mixercontrol_ct_class_custom : Int
+
+pub let mixercontrol_ct_class_fader : Int
+
+pub let mixercontrol_ct_class_list : Int
+
+pub let mixercontrol_ct_class_mask : Int
+
+pub let mixercontrol_ct_class_meter : Int
+
+pub let mixercontrol_ct_class_number : Int
+
+pub let mixercontrol_ct_class_slider : Int
+
+pub let mixercontrol_ct_class_switch : Int
+
+pub let mixercontrol_ct_class_time : Int
+
+pub let mixercontrol_ct_sc_list_multiple : Int
+
+pub let mixercontrol_ct_sc_list_single : Int
+
+pub let mixercontrol_ct_sc_meter_polled : Int
+
+pub let mixercontrol_ct_sc_switch_boolean : Int
+
+pub let mixercontrol_ct_sc_switch_button : Int
+
+pub let mixercontrol_ct_sc_time_microsecs : Int
+
+pub let mixercontrol_ct_sc_time_millisecs : Int
+
+pub let mixercontrol_ct_subclass_mask : Int
+
+pub let mixercontrol_ct_units_boolean : Int
+
+pub let mixercontrol_ct_units_custom : Int
+
+pub let mixercontrol_ct_units_decibels : Int
+
+pub let mixercontrol_ct_units_mask : Int
+
+pub let mixercontrol_ct_units_percent : Int
+
+pub let mixercontrol_ct_units_signed : Int
+
+pub let mixercontrol_ct_units_unsigned : Int
+
+pub let mixerline_componenttype_dst_first : Int
+
+pub let mixerline_componenttype_dst_last : UInt
+
+pub let mixerline_componenttype_src_first : Int
+
+pub let mixerline_componenttype_src_last : UInt
+
+pub let mixerline_linef_active : Int
+
+pub let mixerline_linef_disconnected : Int
+
+pub let mixerline_linef_source : Int
+
+pub let mixerline_targettype_aux : UInt
+
+pub let mixerline_targettype_midiin : UInt
+
+pub let mixerline_targettype_midiout : UInt
+
+pub let mixerline_targettype_undefined : UInt
+
+pub let mixerline_targettype_wavein : UInt
+
+pub let mixerline_targettype_waveout : UInt
+
+pub let mixerr_invalcontrol : UInt
+
+pub let mixerr_invalline : UInt
+
+pub let mixerr_invalvalue : UInt
+
+pub let mixerr_lasterror : UInt
+
+pub let mm_acm_filterchoose : UInt
+
+pub let mm_acm_formatchoose : UInt
+
+pub let mod_fmsynth : UInt
+
+pub let mod_mapper : UInt
+
+pub let mod_midiport : UInt
+
+pub let mod_sqsynth : UInt
+
+pub let mod_swsynth : UInt
+
+pub let mod_synth : UInt
+
+pub let mod_wavetable : UInt
+
+pub fn play_sound_a(@strings.PStr?, @core.RawAddress, @a1b26abae35d5a76.SNDFLAGS_4639488a274e) -> Bool raise @core.WindowsError
+
+pub fn play_sound_a_raw(@core.RawAddress, @core.RawAddress, UInt) -> Int
+
+pub fn play_sound_w(@strings.PWStr?, @core.RawAddress, @a1b26abae35d5a76.SNDFLAGS_4639488a274e) -> Bool raise @core.WindowsError
+
+pub fn play_sound_w_raw(@core.RawAddress, @core.RawAddress, UInt) -> Int
+
+pub let snd_alias_start : UInt
+
+pub fn snd_play_sound_a(@strings.PStr?, UInt) -> Bool raise @core.WindowsError
+
+pub fn snd_play_sound_a_raw(@core.RawAddress, UInt) -> Int
+
+pub fn snd_play_sound_w(@strings.PWStr?, UInt) -> Bool raise @core.WindowsError
+
+pub fn snd_play_sound_w_raw(@core.RawAddress, UInt) -> Int
+
+pub let snd_ring : Int
+
+pub let spatial_audio_position : UInt
+
+pub let spatial_audio_standard_commands_start : UInt
+
+pub let sptlaud_md_clnt_e_attach_failed_internal_buffer : Int
+
+pub let sptlaud_md_clnt_e_buffer_already_attached : Int
+
+pub let sptlaud_md_clnt_e_buffer_not_attached : Int
+
+pub let sptlaud_md_clnt_e_buffer_still_attached : Int
+
+pub let sptlaud_md_clnt_e_command_already_written : Int
+
+pub let sptlaud_md_clnt_e_command_not_found : Int
+
+pub let sptlaud_md_clnt_e_detach_failed_internal_buffer : Int
+
+pub let sptlaud_md_clnt_e_format_mismatch : Int
+
+pub let sptlaud_md_clnt_e_framecount_out_of_range : Int
+
+pub let sptlaud_md_clnt_e_frameoffset_out_of_range : Int
+
+pub let sptlaud_md_clnt_e_invalid_args : Int
+
+pub let sptlaud_md_clnt_e_item_copy_overflow : Int
+
+pub let sptlaud_md_clnt_e_item_must_have_commands : Int
+
+pub let sptlaud_md_clnt_e_items_already_open : Int
+
+pub let sptlaud_md_clnt_e_items_locked_for_writing : Int
+
+pub let sptlaud_md_clnt_e_memory_bounds : Int
+
+pub let sptlaud_md_clnt_e_metadata_format_not_found : Int
+
+pub let sptlaud_md_clnt_e_no_buffer_attached : Int
+
+pub let sptlaud_md_clnt_e_no_itemoffset_written : Int
+
+pub let sptlaud_md_clnt_e_no_items_found : Int
+
+pub let sptlaud_md_clnt_e_no_items_open : Int
+
+pub let sptlaud_md_clnt_e_no_items_written : Int
+
+pub let sptlaud_md_clnt_e_no_more_commands : Int
+
+pub let sptlaud_md_clnt_e_no_more_items : Int
+
+pub let sptlaud_md_clnt_e_object_not_initialized : Int
+
+pub let sptlaud_md_clnt_e_value_buffer_incorrect_size : Int
+
+pub let sptlaudclnt_e_destroyed : Int
+
+pub let sptlaudclnt_e_errors_in_object_calls : Int
+
+pub let sptlaudclnt_e_internal : Int
+
+pub let sptlaudclnt_e_invalid_license : Int
+
+pub let sptlaudclnt_e_metadata_format_not_supported : Int
+
+pub let sptlaudclnt_e_no_more_objects : Int
+
+pub let sptlaudclnt_e_object_already_active : Int
+
+pub let sptlaudclnt_e_out_of_order : Int
+
+pub let sptlaudclnt_e_property_not_supported : Int
+
+pub let sptlaudclnt_e_resources_invalidated : Int
+
+pub let sptlaudclnt_e_static_object_not_available : Int
+
+pub let sptlaudclnt_e_stream_not_available : Int
+
+pub let sptlaudclnt_e_stream_not_stopped : Int
+
+pub let virtual_audio_device_process_loopback : String
+
+pub let wave_format_1_m08 : UInt
+
+pub let wave_format_1_m16 : UInt
+
+pub let wave_format_1_s08 : UInt
+
+pub let wave_format_1_s16 : UInt
+
+pub let wave_format_2_m08 : UInt
+
+pub let wave_format_2_m16 : UInt
+
+pub let wave_format_2_s08 : UInt
+
+pub let wave_format_2_s16 : UInt
+
+pub let wave_format_44_m08 : UInt
+
+pub let wave_format_44_m16 : UInt
+
+pub let wave_format_44_s08 : UInt
+
+pub let wave_format_44_s16 : UInt
+
+pub let wave_format_48_m08 : UInt
+
+pub let wave_format_48_m16 : UInt
+
+pub let wave_format_48_s08 : UInt
+
+pub let wave_format_48_s16 : UInt
+
+pub let wave_format_4_m08 : UInt
+
+pub let wave_format_4_m16 : UInt
+
+pub let wave_format_4_s08 : UInt
+
+pub let wave_format_4_s16 : UInt
+
+pub let wave_format_96_m08 : UInt
+
+pub let wave_format_96_m16 : UInt
+
+pub let wave_format_96_s08 : UInt
+
+pub let wave_format_96_s16 : UInt
+
+pub let wave_format_pcm : UInt
+
+pub fn wave_in_add_buffer(@core.RawAddress, @a1b26abae35d5a76.WAVEHDR_a7e9b5d56944, UInt) -> UInt raise @core.WindowsError
+
+pub fn wave_in_add_buffer_raw(@core.RawAddress, @core.RawAddress, UInt) -> UInt
+
+pub fn wave_in_close(@core.RawAddress) -> UInt raise @core.WindowsError
+
+pub fn wave_in_close_raw(@core.RawAddress) -> UInt
+
+pub fn wave_in_get_dev_caps_a(UInt64, @a1b26abae35d5a76.WAVEINCAPSA_fb134f08c794, UInt) -> UInt raise @core.WindowsError
+
+pub fn wave_in_get_dev_caps_a_raw(UInt64, @core.RawAddress, UInt) -> UInt
+
+pub fn wave_in_get_dev_caps_w(UInt64, @a1b26abae35d5a76.WAVEINCAPSW_ff4731e2b00d, UInt) -> UInt raise @core.WindowsError
+
+pub fn wave_in_get_dev_caps_w_raw(UInt64, @core.RawAddress, UInt) -> UInt
+
+pub fn wave_in_get_error_text_a(UInt, @core.RawAddress, UInt) -> UInt raise @core.WindowsError
+
+pub fn wave_in_get_error_text_a_raw(UInt, @core.RawAddress, UInt) -> UInt
+
+pub fn wave_in_get_error_text_w(UInt, @strings.PWStrBuffer) -> UInt raise @core.WindowsError
+
+pub fn wave_in_get_error_text_w_raw(UInt, @core.RawAddress, UInt) -> UInt
+
+pub fn wave_in_get_id(@core.RawAddress, @core.RawAddress) -> UInt raise @core.WindowsError
+
+pub fn wave_in_get_id_raw(@core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn wave_in_get_num_devs() -> UInt raise @core.WindowsError
+
+pub fn wave_in_get_num_devs_raw() -> UInt
+
+pub fn wave_in_get_position(@core.RawAddress, @fb5a6360fee450db.MMTIME_0f58abc421a9, UInt) -> UInt raise @core.WindowsError
+
+pub fn wave_in_get_position_raw(@core.RawAddress, @core.RawAddress, UInt) -> UInt
+
+pub fn wave_in_message(@core.RawAddress, UInt, UInt64, UInt64) -> UInt raise @core.WindowsError
+
+pub fn wave_in_message_raw(@core.RawAddress, UInt, UInt64, UInt64) -> UInt
+
+pub fn wave_in_open(@core.RawAddress, UInt, @a1b26abae35d5a76.WAVEFORMATEX_4bac4c6c0495, UInt64, UInt64, @a1b26abae35d5a76.MIDIWAVEOPENTYPE_d2609f5e1b4a) -> UInt raise @core.WindowsError
+
+pub fn wave_in_open_raw(@core.RawAddress, UInt, @core.RawAddress, UInt64, UInt64, UInt) -> UInt
+
+pub fn wave_in_prepare_header(@core.RawAddress, @a1b26abae35d5a76.WAVEHDR_a7e9b5d56944, UInt) -> UInt raise @core.WindowsError
+
+pub fn wave_in_prepare_header_raw(@core.RawAddress, @core.RawAddress, UInt) -> UInt
+
+pub fn wave_in_reset(@core.RawAddress) -> UInt raise @core.WindowsError
+
+pub fn wave_in_reset_raw(@core.RawAddress) -> UInt
+
+pub fn wave_in_start(@core.RawAddress) -> UInt raise @core.WindowsError
+
+pub fn wave_in_start_raw(@core.RawAddress) -> UInt
+
+pub fn wave_in_stop(@core.RawAddress) -> UInt raise @core.WindowsError
+
+pub fn wave_in_stop_raw(@core.RawAddress) -> UInt
+
+pub fn wave_in_unprepare_header(@core.RawAddress, @a1b26abae35d5a76.WAVEHDR_a7e9b5d56944, UInt) -> UInt raise @core.WindowsError
+
+pub fn wave_in_unprepare_header_raw(@core.RawAddress, @core.RawAddress, UInt) -> UInt
+
+pub let wave_invalidformat : UInt
+
+pub let wave_mapper : UInt
+
+pub fn wave_out_break_loop(@core.RawAddress) -> UInt raise @core.WindowsError
+
+pub fn wave_out_break_loop_raw(@core.RawAddress) -> UInt
+
+pub fn wave_out_close(@core.RawAddress) -> UInt raise @core.WindowsError
+
+pub fn wave_out_close_raw(@core.RawAddress) -> UInt
+
+pub fn wave_out_get_dev_caps_a(UInt64, @a1b26abae35d5a76.WAVEOUTCAPSA_178ff0d52ec5, UInt) -> UInt raise @core.WindowsError
+
+pub fn wave_out_get_dev_caps_a_raw(UInt64, @core.RawAddress, UInt) -> UInt
+
+pub fn wave_out_get_dev_caps_w(UInt64, @a1b26abae35d5a76.WAVEOUTCAPSW_858879219ddb, UInt) -> UInt raise @core.WindowsError
+
+pub fn wave_out_get_dev_caps_w_raw(UInt64, @core.RawAddress, UInt) -> UInt
+
+pub fn wave_out_get_error_text_a(UInt, @core.RawAddress, UInt) -> UInt raise @core.WindowsError
+
+pub fn wave_out_get_error_text_a_raw(UInt, @core.RawAddress, UInt) -> UInt
+
+pub fn wave_out_get_error_text_w(UInt, @strings.PWStrBuffer) -> UInt raise @core.WindowsError
+
+pub fn wave_out_get_error_text_w_raw(UInt, @core.RawAddress, UInt) -> UInt
+
+pub fn wave_out_get_id(@core.RawAddress, @core.RawAddress) -> UInt raise @core.WindowsError
+
+pub fn wave_out_get_id_raw(@core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn wave_out_get_num_devs() -> UInt raise @core.WindowsError
+
+pub fn wave_out_get_num_devs_raw() -> UInt
+
+pub fn wave_out_get_pitch(@core.RawAddress, @core.RawAddress) -> UInt raise @core.WindowsError
+
+pub fn wave_out_get_pitch_raw(@core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn wave_out_get_playback_rate(@core.RawAddress, @core.RawAddress) -> UInt raise @core.WindowsError
+
+pub fn wave_out_get_playback_rate_raw(@core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn wave_out_get_position(@core.RawAddress, @fb5a6360fee450db.MMTIME_0f58abc421a9, UInt) -> UInt raise @core.WindowsError
+
+pub fn wave_out_get_position_raw(@core.RawAddress, @core.RawAddress, UInt) -> UInt
+
+pub fn wave_out_get_volume(@core.RawAddress, @core.RawAddress) -> UInt raise @core.WindowsError
+
+pub fn wave_out_get_volume_raw(@core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn wave_out_message(@core.RawAddress, UInt, UInt64, UInt64) -> UInt raise @core.WindowsError
+
+pub fn wave_out_message_raw(@core.RawAddress, UInt, UInt64, UInt64) -> UInt
+
+pub fn wave_out_open(@core.RawAddress, UInt, @a1b26abae35d5a76.WAVEFORMATEX_4bac4c6c0495, UInt64, UInt64, @a1b26abae35d5a76.MIDIWAVEOPENTYPE_d2609f5e1b4a) -> UInt raise @core.WindowsError
+
+pub fn wave_out_open_raw(@core.RawAddress, UInt, @core.RawAddress, UInt64, UInt64, UInt) -> UInt
+
+pub fn wave_out_pause(@core.RawAddress) -> UInt raise @core.WindowsError
+
+pub fn wave_out_pause_raw(@core.RawAddress) -> UInt
+
+pub fn wave_out_prepare_header(@core.RawAddress, @a1b26abae35d5a76.WAVEHDR_a7e9b5d56944, UInt) -> UInt raise @core.WindowsError
+
+pub fn wave_out_prepare_header_raw(@core.RawAddress, @core.RawAddress, UInt) -> UInt
+
+pub fn wave_out_reset(@core.RawAddress) -> UInt raise @core.WindowsError
+
+pub fn wave_out_reset_raw(@core.RawAddress) -> UInt
+
+pub fn wave_out_restart(@core.RawAddress) -> UInt raise @core.WindowsError
+
+pub fn wave_out_restart_raw(@core.RawAddress) -> UInt
+
+pub fn wave_out_set_pitch(@core.RawAddress, UInt) -> UInt raise @core.WindowsError
+
+pub fn wave_out_set_pitch_raw(@core.RawAddress, UInt) -> UInt
+
+pub fn wave_out_set_playback_rate(@core.RawAddress, UInt) -> UInt raise @core.WindowsError
+
+pub fn wave_out_set_playback_rate_raw(@core.RawAddress, UInt) -> UInt
+
+pub fn wave_out_set_volume(@core.RawAddress, UInt) -> UInt raise @core.WindowsError
+
+pub fn wave_out_set_volume_raw(@core.RawAddress, UInt) -> UInt
+
+pub fn wave_out_unprepare_header(@core.RawAddress, @a1b26abae35d5a76.WAVEHDR_a7e9b5d56944, UInt) -> UInt raise @core.WindowsError
+
+pub fn wave_out_unprepare_header_raw(@core.RawAddress, @core.RawAddress, UInt) -> UInt
+
+pub fn wave_out_write(@core.RawAddress, @a1b26abae35d5a76.WAVEHDR_a7e9b5d56944, UInt) -> UInt raise @core.WindowsError
+
+pub fn wave_out_write_raw(@core.RawAddress, @core.RawAddress, UInt) -> UInt
+
+pub let wavecaps_lrvolume : UInt
+
+pub let wavecaps_pitch : UInt
+
+pub let wavecaps_playbackrate : UInt
+
+pub let wavecaps_sampleaccurate : UInt
+
+pub let wavecaps_sync : UInt
+
+pub let wavecaps_volume : UInt
+
+pub let wavein_mapper_status_device : UInt
+
+pub let wavein_mapper_status_format : UInt
+
+pub let wavein_mapper_status_mapped : UInt
+
+pub let waveout_mapper_status_device : UInt
+
+pub let waveout_mapper_status_format : UInt
+
+pub let waveout_mapper_status_mapped : UInt
+
+pub let waverr_badformat : UInt
+
+pub let waverr_lasterror : UInt
+
+pub let waverr_stillplaying : UInt
+
+pub let waverr_sync : UInt
+
+pub let waverr_unprepared : UInt
+
+pub let whdr_beginloop : UInt
+
+pub let whdr_done : UInt
+
+pub let whdr_endloop : UInt
+
+pub let whdr_inqueue : UInt
+
+pub let whdr_prepared : UInt
+
+pub let widm_mapper_status : UInt
+
+pub let wodm_mapper_status : UInt
+
+// Errors
+
+// Types and methods
+
+// Type aliases
+pub using @a1b26abae35d5a76 {type ACMDRIVERDETAILSA_098123fd1ed8 as ACMDRIVERDETAILSA}
+
+pub using @a1b26abae35d5a76 {type ACMDRIVERDETAILSW_4a91cb09132f as ACMDRIVERDETAILSW}
+
+pub using @a1b26abae35d5a76 {type ACMDRIVERENUMCB_438c6940b5f4 as ACMDRIVERENUMCB}
+
+pub using @a1b26abae35d5a76 {type ACMDRVFORMATSUGGEST_680a39793271 as ACMDRVFORMATSUGGEST}
+
+pub using @a1b26abae35d5a76 {type ACMDRVOPENDESCA_333ecf716fc6 as ACMDRVOPENDESCA}
+
+pub using @a1b26abae35d5a76 {type ACMDRVOPENDESCW_e86e98feec10 as ACMDRVOPENDESCW}
+
+pub using @a1b26abae35d5a76 {type ACMDRVSTREAMHEADER_50e00fc49235 as ACMDRVSTREAMHEADER}
+
+pub using @a1b26abae35d5a76 {type ACMDRVSTREAMINSTANCE_2d992a6fbced as ACMDRVSTREAMINSTANCE}
+
+pub using @a1b26abae35d5a76 {type ACMDRVSTREAMSIZE_5ff0ac811de2 as ACMDRVSTREAMSIZE}
+
+pub using @a1b26abae35d5a76 {type ACMFILTERCHOOSEA_465702b013be as ACMFILTERCHOOSEA}
+
+pub using @a1b26abae35d5a76 {type ACMFILTERCHOOSEHOOKPROCA_1aaf0a1fd920 as ACMFILTERCHOOSEHOOKPROCA}
+
+pub using @a1b26abae35d5a76 {type ACMFILTERCHOOSEHOOKPROCW_d31dbcf78f72 as ACMFILTERCHOOSEHOOKPROCW}
+
+pub using @a1b26abae35d5a76 {type ACMFILTERCHOOSEW_c5c2b1e6a240 as ACMFILTERCHOOSEW}
+
+pub using @a1b26abae35d5a76 {type ACMFILTERDETAILSA_3ef59393cea3 as ACMFILTERDETAILSA}
+
+pub using @a1b26abae35d5a76 {type ACMFILTERDETAILSW_88bb239ce731 as ACMFILTERDETAILSW}
+
+pub using @a1b26abae35d5a76 {type ACMFILTERENUMCBA_18c317b8c02b as ACMFILTERENUMCBA}
+
+pub using @a1b26abae35d5a76 {type ACMFILTERENUMCBW_3a9e338fb6d9 as ACMFILTERENUMCBW}
+
+pub using @a1b26abae35d5a76 {type ACMFILTERTAGDETAILSA_2b9f777b2b76 as ACMFILTERTAGDETAILSA}
+
+pub using @a1b26abae35d5a76 {type ACMFILTERTAGDETAILSW_cce0a4610a26 as ACMFILTERTAGDETAILSW}
+
+pub using @a1b26abae35d5a76 {type ACMFILTERTAGENUMCBA_db1c0ade77b8 as ACMFILTERTAGENUMCBA}
+
+pub using @a1b26abae35d5a76 {type ACMFILTERTAGENUMCBW_cb26dd7de378 as ACMFILTERTAGENUMCBW}
+
+pub using @a1b26abae35d5a76 {type ACMFORMATCHOOSEA_bccdd97f7a9e as ACMFORMATCHOOSEA}
+
+pub using @a1b26abae35d5a76 {type ACMFORMATCHOOSEHOOKPROCA_f504c5e0a0e3 as ACMFORMATCHOOSEHOOKPROCA}
+
+pub using @a1b26abae35d5a76 {type ACMFORMATCHOOSEHOOKPROCW_37bad867a72b as ACMFORMATCHOOSEHOOKPROCW}
+
+pub using @a1b26abae35d5a76 {type ACMFORMATCHOOSEW_638ac5d7e816 as ACMFORMATCHOOSEW}
+
+pub using @a1b26abae35d5a76 {type ACMFORMATDETAILSA_3b46030940d4 as ACMFORMATDETAILSA}
+
+pub using @a1b26abae35d5a76 {type ACMFORMATENUMCBA_49a863b17d27 as ACMFORMATENUMCBA}
+
+pub using @a1b26abae35d5a76 {type ACMFORMATENUMCBW_744577550c99 as ACMFORMATENUMCBW}
+
+pub using @a1b26abae35d5a76 {type ACMFORMATTAGDETAILSA_6ee51a7a9707 as ACMFORMATTAGDETAILSA}
+
+pub using @a1b26abae35d5a76 {type ACMFORMATTAGDETAILSW_93a847f40f47 as ACMFORMATTAGDETAILSW}
+
+pub using @a1b26abae35d5a76 {type ACMFORMATTAGENUMCBA_796a6c6bbb9f as ACMFORMATTAGENUMCBA}
+
+pub using @a1b26abae35d5a76 {type ACMFORMATTAGENUMCBW_13ef9ba1675e as ACMFORMATTAGENUMCBW}
+
+pub using @a1b26abae35d5a76 {type ACMSTREAMHEADER_9e42568c1127 as ACMSTREAMHEADER}
+
+pub using @a1b26abae35d5a76 {type AMBISONICSCHANNELORDERING_2a51ab0aa548 as AMBISONICSCHANNELORDERING}
+
+pub using @a1b26abae35d5a76 {type AMBISONICSNORMALIZATION_1f5eca39e924 as AMBISONICSNORMALIZATION}
+
+pub using @a1b26abae35d5a76 {type AMBISONICSPARAMS_8f1ab54b269d as AMBISONICSPARAMS}
+
+pub using @a1b26abae35d5a76 {type AMBISONICSTYPE_b21a8c3c4eee as AMBISONICSTYPE}
+
+pub using @a1b26abae35d5a76 {type AUDCLNTBUFFERFLAGS_589aee451883 as AUDCLNTBUFFERFLAGS}
+
+pub using @a1b26abae35d5a76 {type AUDCLNTSHAREMODE_06dfc3f268ba as AUDCLNTSHAREMODE}
+
+pub using @a1b26abae35d5a76 {type AUDCLNTSTREAMOPTIONS_def766fd92b0 as AUDCLNTSTREAMOPTIONS}
+
+pub using @a1b26abae35d5a76 {type AUDIOCLIENTACTIVATIONPARAMS_a70c2354a43c as AUDIOCLIENTACTIVATIONPARAMS}
+
+pub using @a1b26abae35d5a76 {type AUDIOCLIENTACTIVATIONPARAMSAnonymousEUnion_43498676db06 as AUDIOCLIENTACTIVATIONPARAMSAnonymousEUnion}
+
+pub using @a1b26abae35d5a76 {type AUDIOCLIENTACTIVATIONTYPE_c7b970faa1ac as AUDIOCLIENTACTIVATIONTYPE}
+
+pub using @a1b26abae35d5a76 {type AUDIOCLIENTPROCESSLOOPBACKPARAMS_40a201dc3f5c as AUDIOCLIENTPROCESSLOOPBACKPARAMS}
+
+pub using @a1b26abae35d5a76 {type AUDIODUCKINGOPTIONS_1f607e3edd20 as AUDIODUCKINGOPTIONS}
+
+pub using @a1b26abae35d5a76 {type AUDIOEFFECT_b49008592b01 as AUDIOEFFECT}
+
+pub using @a1b26abae35d5a76 {type AUDIOEFFECTSTATE_fd77efce11ef as AUDIOEFFECTSTATE}
+
+pub using @a1b26abae35d5a76 {type AUDIOSTREAMCATEGORY_d50037ef7270 as AUDIOSTREAMCATEGORY}
+
+pub using @a1b26abae35d5a76 {type AUDIOSYSTEMEFFECTSPROPERTYSTORETYPE_2f5f7d9fd532 as AUDIOSYSTEMEFFECTSPROPERTYSTORETYPE}
+
+pub using @a1b26abae35d5a76 {type AUDIOVOLUMENOTIFICATIONDATA_81336a3d34e3 as AUDIOVOLUMENOTIFICATIONDATA}
+
+pub using @a1b26abae35d5a76 {type AUXCAPS2A_3a5d8a27dd0a as AUXCAPS2A}
+
+pub using @a1b26abae35d5a76 {type AUXCAPS2W_75aa50c1c201 as AUXCAPS2W}
+
+pub using @a1b26abae35d5a76 {type AUXCAPSA_626518041d91 as AUXCAPSA}
+
+pub using @a1b26abae35d5a76 {type AUXCAPSW_862f0f3fda6f as AUXCAPSW}
+
+pub using @a1b26abae35d5a76 {type AudioClient3ActivationParams_c8bd877e99c0 as AudioClient3ActivationParams}
+
+pub using @a1b26abae35d5a76 {type AudioClientProperties_4e2e2df160da as AudioClientProperties}
+
+pub using @a1b26abae35d5a76 {type AudioExtensionParams_b3b05f4b3331 as AudioExtensionParams}
+
+pub using @a1b26abae35d5a76 {type AudioObjectType_bc22c096221e as AudioObjectType}
+
+pub using @a1b26abae35d5a76 {type AudioSessionDisconnectReason_af7faeb3cdbe as AudioSessionDisconnectReason}
+
+pub using @a1b26abae35d5a76 {type AudioSessionState_4516efe7fdc2 as AudioSessionState}
+
+pub using @a1b26abae35d5a76 {type AudioStateMonitorSoundLevel_2c43d5227215 as AudioStateMonitorSoundLevel}
+
+pub using @a1b26abae35d5a76 {type ConnectorType_f923b2883768 as ConnectorType}
+
+pub using @a1b26abae35d5a76 {type DEVICESTATE_bb3fd4c580e9 as DEVICESTATE}
+
+pub using @a1b26abae35d5a76 {type DIRECTXAUDIOACTIVATIONPARAMS_432de75736cb as DIRECTXAUDIOACTIVATIONPARAMS}
+
+pub using @a1b26abae35d5a76 {type DataFlow_60eff6533ddc as DataFlow}
+
+pub using @a1b26abae35d5a76 {type DeviceTopology_762782ec9ce9 as DeviceTopology}
+
+pub using @a1b26abae35d5a76 {type ECHOWAVEFILTER_53145f4b9fce as ECHOWAVEFILTER}
+
+pub using @a1b26abae35d5a76 {type EDataFlow_b3edf128291f as EDataFlow}
+
+pub using @a1b26abae35d5a76 {type ERole_4bf482b94ab2 as ERole}
+
+pub using @a1b26abae35d5a76 {type EndpointFormFactor_2a2795e917e2 as EndpointFormFactor}
+
+pub using @a1b26abae35d5a76 {type HACMDRIVER_560c73371be5 as HACMDRIVER}
+
+pub using @a1b26abae35d5a76 {type HACMDRIVERID_c8a4b5fed4aa as HACMDRIVERID}
+
+pub using @a1b26abae35d5a76 {type HACMOBJ_1c7171af67b4 as HACMOBJ}
+
+pub using @a1b26abae35d5a76 {type HACMSTREAM_7eb4b3b3451b as HACMSTREAM}
+
+pub using @a1b26abae35d5a76 {type HMIDI_f196d29dfc31 as HMIDI}
+
+pub using @a1b26abae35d5a76 {type HMIDIIN_d7d88e45aa3e as HMIDIIN}
+
+pub using @a1b26abae35d5a76 {type HMIDIOUT_c508f0213d24 as HMIDIOUT}
+
+pub using @a1b26abae35d5a76 {type HMIDISTRM_9821ceb15658 as HMIDISTRM}
+
+pub using @a1b26abae35d5a76 {type HMIXER_0131fc939a68 as HMIXER}
+
+pub using @a1b26abae35d5a76 {type HMIXEROBJ_49f864a17242 as HMIXEROBJ}
+
+pub using @a1b26abae35d5a76 {type HWAVE_1f33b573a3bb as HWAVE}
+
+pub using @a1b26abae35d5a76 {type HWAVEIN_336f2944ad2d as HWAVEIN}
+
+pub using @a1b26abae35d5a76 {type HWAVEOUT_5e73a66a48b9 as HWAVEOUT}
+
+pub using @a1b26abae35d5a76 {type IAcousticEchoCancellationControl_f1c65d7baa64 as IAcousticEchoCancellationControl}
+
+pub using @a1b26abae35d5a76 {type IActivateAudioInterfaceAsyncOperation_6e46ea3b3893 as IActivateAudioInterfaceAsyncOperation}
+
+pub using @a1b26abae35d5a76 {type IActivateAudioInterfaceCompletionHandler_c680b9257345 as IActivateAudioInterfaceCompletionHandler}
+
+pub using @a1b26abae35d5a76 {type IAudioAmbisonicsControl_67d8ed9be5ba as IAudioAmbisonicsControl}
+
+pub using @a1b26abae35d5a76 {type IAudioAutoGainControl_62fbcc57d49f as IAudioAutoGainControl}
+
+pub using @a1b26abae35d5a76 {type IAudioBass_c3ef54f73278 as IAudioBass}
+
+pub using @a1b26abae35d5a76 {type IAudioCaptureClient_80bfc2ec9a25 as IAudioCaptureClient}
+
+pub using @a1b26abae35d5a76 {type IAudioChannelConfig_0afa554031f9 as IAudioChannelConfig}
+
+pub using @a1b26abae35d5a76 {type IAudioClient_191186abaaa6 as IAudioClient}
+
+pub using @a1b26abae35d5a76 {type IAudioClient2_7269149f5a8f as IAudioClient2}
+
+pub using @a1b26abae35d5a76 {type IAudioClient3_8167ba0d0658 as IAudioClient3}
+
+pub using @a1b26abae35d5a76 {type IAudioClientDuckingControl_168fabd7fa13 as IAudioClientDuckingControl}
+
+pub using @a1b26abae35d5a76 {type IAudioClock_564252d8fbfe as IAudioClock}
+
+pub using @a1b26abae35d5a76 {type IAudioClock2_51da11a8bba2 as IAudioClock2}
+
+pub using @a1b26abae35d5a76 {type IAudioClockAdjustment_5be6d354355a as IAudioClockAdjustment}
+
+pub using @a1b26abae35d5a76 {type IAudioEffectsChangedNotificationClient_804e8e3ed82c as IAudioEffectsChangedNotificationClient}
+
+pub using @a1b26abae35d5a76 {type IAudioEffectsManager_91b4c9cfcaab as IAudioEffectsManager}
+
+pub using @a1b26abae35d5a76 {type IAudioFormatEnumerator_949ee440ef33 as IAudioFormatEnumerator}
+
+pub using @a1b26abae35d5a76 {type IAudioInputSelector_a6835793365c as IAudioInputSelector}
+
+pub using @a1b26abae35d5a76 {type IAudioLoudness_9bc4113eea6e as IAudioLoudness}
+
+pub using @a1b26abae35d5a76 {type IAudioMidrange_d616424fd764 as IAudioMidrange}
+
+pub using @a1b26abae35d5a76 {type IAudioMute_192b2a416210 as IAudioMute}
+
+pub using @a1b26abae35d5a76 {type IAudioOutputSelector_874f172401af as IAudioOutputSelector}
+
+pub using @a1b26abae35d5a76 {type IAudioPeakMeter_914471a317d2 as IAudioPeakMeter}
+
+pub using @a1b26abae35d5a76 {type IAudioRenderClient_45a8c83cd4ee as IAudioRenderClient}
+
+pub using @a1b26abae35d5a76 {type IAudioSessionControl_916ea5f70fc5 as IAudioSessionControl}
+
+pub using @a1b26abae35d5a76 {type IAudioSessionControl2_7ed4bc97baf7 as IAudioSessionControl2}
+
+pub using @a1b26abae35d5a76 {type IAudioSessionEnumerator_7e670c0d29be as IAudioSessionEnumerator}
+
+pub using @a1b26abae35d5a76 {type IAudioSessionEvents_5e043d73955a as IAudioSessionEvents}
+
+pub using @a1b26abae35d5a76 {type IAudioSessionManager_83112be3c1c4 as IAudioSessionManager}
+
+pub using @a1b26abae35d5a76 {type IAudioSessionManager2_abb9c80bb399 as IAudioSessionManager2}
+
+pub using @a1b26abae35d5a76 {type IAudioSessionNotification_9668219f176b as IAudioSessionNotification}
+
+pub using @a1b26abae35d5a76 {type IAudioStateMonitor_198b45de4f32 as IAudioStateMonitor}
+
+pub using @a1b26abae35d5a76 {type IAudioStreamVolume_cb4d9e567932 as IAudioStreamVolume}
+
+pub using @a1b26abae35d5a76 {type IAudioSystemEffectsPropertyChangeNotificationClient_f8a30666953d as IAudioSystemEffectsPropertyChangeNotificationClient}
+
+pub using @a1b26abae35d5a76 {type IAudioSystemEffectsPropertyStore_e28aa39ff988 as IAudioSystemEffectsPropertyStore}
+
+pub using @a1b26abae35d5a76 {type IAudioTreble_109edf2aadfc as IAudioTreble}
+
+pub using @a1b26abae35d5a76 {type IAudioViewManagerService_982d36121504 as IAudioViewManagerService}
+
+pub using @a1b26abae35d5a76 {type IAudioVolumeDuckNotification_7aff1f8509da as IAudioVolumeDuckNotification}
+
+pub using @a1b26abae35d5a76 {type IAudioVolumeLevel_6ace83b0cb38 as IAudioVolumeLevel}
+
+pub using @a1b26abae35d5a76 {type IChannelAudioVolume_d4dd58ead4a1 as IChannelAudioVolume}
+
+pub using @a1b26abae35d5a76 {type IConnector_0f29d32575f6 as IConnector}
+
+pub using @a1b26abae35d5a76 {type IControlChangeNotify_a183258a5e1e as IControlChangeNotify}
+
+pub using @a1b26abae35d5a76 {type IControlInterface_36a6cbd1e9db as IControlInterface}
+
+pub using @a1b26abae35d5a76 {type IDeviceSpecificProperty_dc0d1b902efe as IDeviceSpecificProperty}
+
+pub using @a1b26abae35d5a76 {type IDeviceTopology_b3c39b5c5bee as IDeviceTopology}
+
+pub using @a1b26abae35d5a76 {type IMMDevice_f1a6c59db8fa as IMMDevice}
+
+pub using @a1b26abae35d5a76 {type IMMDeviceActivator_baf1be7e1779 as IMMDeviceActivator}
+
+pub using @a1b26abae35d5a76 {type IMMDeviceCollection_6b116d41eefe as IMMDeviceCollection}
+
+pub using @a1b26abae35d5a76 {type IMMDeviceEnumerator_90afd93ef3fa as IMMDeviceEnumerator}
+
+pub using @a1b26abae35d5a76 {type IMMEndpoint_dec2ba94e98d as IMMEndpoint}
+
+pub using @a1b26abae35d5a76 {type IMMNotificationClient_1ef8a2223280 as IMMNotificationClient}
+
+pub using @a1b26abae35d5a76 {type IMessageFilter_0580e995c5ec as IMessageFilter}
+
+pub using @a1b26abae35d5a76 {type IPart_9bb73772652a as IPart}
+
+pub using @a1b26abae35d5a76 {type IPartsList_378166879d5b as IPartsList}
+
+pub using @a1b26abae35d5a76 {type IPerChannelDbLevel_e0391cb5d5fe as IPerChannelDbLevel}
+
+pub using @a1b26abae35d5a76 {type ISimpleAudioVolume_9a3c8e500321 as ISimpleAudioVolume}
+
+pub using @a1b26abae35d5a76 {type ISpatialAudioClient_ef5887d345eb as ISpatialAudioClient}
+
+pub using @a1b26abae35d5a76 {type ISpatialAudioClient2_8b71691a690f as ISpatialAudioClient2}
+
+pub using @a1b26abae35d5a76 {type ISpatialAudioMetadataClient_4d629c4d9533 as ISpatialAudioMetadataClient}
+
+pub using @a1b26abae35d5a76 {type ISpatialAudioMetadataCopier_e3531482743f as ISpatialAudioMetadataCopier}
+
+pub using @a1b26abae35d5a76 {type ISpatialAudioMetadataItems_129db567a15c as ISpatialAudioMetadataItems}
+
+pub using @a1b26abae35d5a76 {type ISpatialAudioMetadataItemsBuffer_4f6da04439ae as ISpatialAudioMetadataItemsBuffer}
+
+pub using @a1b26abae35d5a76 {type ISpatialAudioMetadataReader_a8042bca1ac3 as ISpatialAudioMetadataReader}
+
+pub using @a1b26abae35d5a76 {type ISpatialAudioMetadataWriter_44230a3e3cab as ISpatialAudioMetadataWriter}
+
+pub using @a1b26abae35d5a76 {type ISpatialAudioObject_8fedfc12f2f9 as ISpatialAudioObject}
+
+pub using @a1b26abae35d5a76 {type ISpatialAudioObjectBase_b295501ce21f as ISpatialAudioObjectBase}
+
+pub using @a1b26abae35d5a76 {type ISpatialAudioObjectForHrtf_b91644d4bd6f as ISpatialAudioObjectForHrtf}
+
+pub using @a1b26abae35d5a76 {type ISpatialAudioObjectForMetadataCommands_92f22e4ec69c as ISpatialAudioObjectForMetadataCommands}
+
+pub using @a1b26abae35d5a76 {type ISpatialAudioObjectForMetadataItems_08e1e784c8fc as ISpatialAudioObjectForMetadataItems}
+
+pub using @a1b26abae35d5a76 {type ISpatialAudioObjectRenderStream_fc5d14198168 as ISpatialAudioObjectRenderStream}
+
+pub using @a1b26abae35d5a76 {type ISpatialAudioObjectRenderStreamBase_1daf6c61888c as ISpatialAudioObjectRenderStreamBase}
+
+pub using @a1b26abae35d5a76 {type ISpatialAudioObjectRenderStreamForHrtf_f668455d0843 as ISpatialAudioObjectRenderStreamForHrtf}
+
+pub using @a1b26abae35d5a76 {type ISpatialAudioObjectRenderStreamForMetadata_41dec6ea6438 as ISpatialAudioObjectRenderStreamForMetadata}
+
+pub using @a1b26abae35d5a76 {type ISpatialAudioObjectRenderStreamNotify_568141e10fe8 as ISpatialAudioObjectRenderStreamNotify}
+
+pub using @a1b26abae35d5a76 {type ISubunit_31cce578cc35 as ISubunit}
+
+pub using @a1b26abae35d5a76 {type LPACMDRIVERPROC_75fa71a2022d as LPACMDRIVERPROC}
+
+pub using @a1b26abae35d5a76 {type LPMIDICALLBACK_09a658d7c81c as LPMIDICALLBACK}
+
+pub using @a1b26abae35d5a76 {type LPWAVECALLBACK_0649515f324f as LPWAVECALLBACK}
+
+pub using @a1b26abae35d5a76 {type MIDIEVENT_92ea14e14f70 as MIDIEVENT}
+
+pub using @a1b26abae35d5a76 {type MIDIHDR_7b37fa4092d2 as MIDIHDR}
+
+pub using @a1b26abae35d5a76 {type MIDIINCAPS2A_cc2315ef54c9 as MIDIINCAPS2A}
+
+pub using @a1b26abae35d5a76 {type MIDIINCAPS2W_7e2da23d8a8a as MIDIINCAPS2W}
+
+pub using @a1b26abae35d5a76 {type MIDIINCAPSA_7b670fcbee53 as MIDIINCAPSA}
+
+pub using @a1b26abae35d5a76 {type MIDIINCAPSW_0ba8208c9624 as MIDIINCAPSW}
+
+pub using @a1b26abae35d5a76 {type MIDIOUTCAPS2A_430102ec75ce as MIDIOUTCAPS2A}
+
+pub using @a1b26abae35d5a76 {type MIDIOUTCAPS2W_23cfccb34918 as MIDIOUTCAPS2W}
+
+pub using @a1b26abae35d5a76 {type MIDIOUTCAPSA_d17a27157ec9 as MIDIOUTCAPSA}
+
+pub using @a1b26abae35d5a76 {type MIDIOUTCAPSW_4541db6bb745 as MIDIOUTCAPSW}
+
+pub using @a1b26abae35d5a76 {type MIDIPROPTEMPO_f4035e113534 as MIDIPROPTEMPO}
+
+pub using @a1b26abae35d5a76 {type MIDIPROPTIMEDIV_a386a236f154 as MIDIPROPTIMEDIV}
+
+pub using @a1b26abae35d5a76 {type MIDISTRMBUFFVER_46bf2254c8f0 as MIDISTRMBUFFVER}
+
+pub using @a1b26abae35d5a76 {type MIDIWAVEOPENTYPE_d2609f5e1b4a as MIDIWAVEOPENTYPE}
+
+pub using @a1b26abae35d5a76 {type MIXERCAPS2A_50385f7be8fc as MIXERCAPS2A}
+
+pub using @a1b26abae35d5a76 {type MIXERCAPS2W_66d34bea8db3 as MIXERCAPS2W}
+
+pub using @a1b26abae35d5a76 {type MIXERCAPSA_485bef6c39b9 as MIXERCAPSA}
+
+pub using @a1b26abae35d5a76 {type MIXERCAPSW_92feccec7b06 as MIXERCAPSW}
+
+pub using @a1b26abae35d5a76 {type MIXERCONTROLA_9c3e71454503 as MIXERCONTROLA}
+
+pub using @a1b26abae35d5a76 {type MIXERCONTROLABoundsEUnion_e069fafd12d9 as MIXERCONTROLABoundsEUnion}
+
+pub using @a1b26abae35d5a76 {type MIXERCONTROLABoundsEUnionAnonymous1EStruct_9dfc1d2bc001 as MIXERCONTROLABoundsEUnionAnonymous1EStruct}
+
+pub using @a1b26abae35d5a76 {type MIXERCONTROLABoundsEUnionAnonymous2EStruct_fb57485eaedc as MIXERCONTROLABoundsEUnionAnonymous2EStruct}
+
+pub using @a1b26abae35d5a76 {type MIXERCONTROLAMetricsEUnion_d859b141e444 as MIXERCONTROLAMetricsEUnion}
+
+pub using @a1b26abae35d5a76 {type MIXERCONTROLDETAILS_01b7f7cadc8f as MIXERCONTROLDETAILS}
+
+pub using @a1b26abae35d5a76 {type MIXERCONTROLDETAILSAnonymousEUnion_78e658612eec as MIXERCONTROLDETAILSAnonymousEUnion}
+
+pub using @a1b26abae35d5a76 {type MIXERCONTROLDETAILSBOOLEAN_ac71eb88790a as MIXERCONTROLDETAILSBOOLEAN}
+
+pub using @a1b26abae35d5a76 {type MIXERCONTROLDETAILSLISTTEXTA_c56f29fc6f2c as MIXERCONTROLDETAILSLISTTEXTA}
+
+pub using @a1b26abae35d5a76 {type MIXERCONTROLDETAILSLISTTEXTW_358d8fb58ec6 as MIXERCONTROLDETAILSLISTTEXTW}
+
+pub using @a1b26abae35d5a76 {type MIXERCONTROLDETAILSSIGNED_ee6282ef98c1 as MIXERCONTROLDETAILSSIGNED}
+
+pub using @a1b26abae35d5a76 {type MIXERCONTROLDETAILSUNSIGNED_32bc9937dcde as MIXERCONTROLDETAILSUNSIGNED}
+
+pub using @a1b26abae35d5a76 {type MIXERCONTROLW_b19d1c37e301 as MIXERCONTROLW}
+
+pub using @a1b26abae35d5a76 {type MIXERCONTROLWBoundsEUnion_723d980e0937 as MIXERCONTROLWBoundsEUnion}
+
+pub using @a1b26abae35d5a76 {type MIXERCONTROLWBoundsEUnionAnonymous1EStruct_2ab53684ee3a as MIXERCONTROLWBoundsEUnionAnonymous1EStruct}
+
+pub using @a1b26abae35d5a76 {type MIXERCONTROLWBoundsEUnionAnonymous2EStruct_1375eff58668 as MIXERCONTROLWBoundsEUnionAnonymous2EStruct}
+
+pub using @a1b26abae35d5a76 {type MIXERCONTROLWMetricsEUnion_3d85267da2be as MIXERCONTROLWMetricsEUnion}
+
+pub using @a1b26abae35d5a76 {type MIXERLINEA_a4d27867f681 as MIXERLINEA}
+
+pub using @a1b26abae35d5a76 {type MIXERLINEATargetEStruct_22e66039f25b as MIXERLINEATargetEStruct}
+
+pub using @a1b26abae35d5a76 {type MIXERLINECOMPONENTTYPE_0630d1184a01 as MIXERLINECOMPONENTTYPE}
+
+pub using @a1b26abae35d5a76 {type MIXERLINECONTROLSA_c02fe6ce4ebf as MIXERLINECONTROLSA}
+
+pub using @a1b26abae35d5a76 {type MIXERLINECONTROLSAAnonymousEUnion_2ce856fef30d as MIXERLINECONTROLSAAnonymousEUnion}
+
+pub using @a1b26abae35d5a76 {type MIXERLINECONTROLSW_89a968b776bd as MIXERLINECONTROLSW}
+
+pub using @a1b26abae35d5a76 {type MIXERLINECONTROLSWAnonymousEUnion_1ab830d4936c as MIXERLINECONTROLSWAnonymousEUnion}
+
+pub using @a1b26abae35d5a76 {type MIXERLINEW_f7cc5aa837db as MIXERLINEW}
+
+pub using @a1b26abae35d5a76 {type MIXERLINEWTargetEStruct_10bcd58e7180 as MIXERLINEWTargetEStruct}
+
+pub using @a1b26abae35d5a76 {type MMDeviceEnumerator_e813c18fed6c as MMDeviceEnumerator}
+
+pub using @a1b26abae35d5a76 {type PAudioStateMonitorCallback_7459c5506882 as PAudioStateMonitorCallback}
+
+pub using @a1b26abae35d5a76 {type PCMWAVEFORMAT_d85724d1c4b4 as PCMWAVEFORMAT}
+
+pub using @a1b26abae35d5a76 {type PROCESSLOOPBACKMODE_2c0bd4c02e16 as PROCESSLOOPBACKMODE}
+
+pub using @a1b26abae35d5a76 {type PartType_0b569faf9ccc as PartType}
+
+pub using @a1b26abae35d5a76 {type SNDFLAGS_4639488a274e as SNDFLAGS}
+
+pub using @a1b26abae35d5a76 {type SPATIALAUDIOSTREAMOPTIONS_497f3afc4895 as SPATIALAUDIOSTREAMOPTIONS}
+
+pub using @a1b26abae35d5a76 {type SpatialAudioClientActivationParams_bbc6af996e38 as SpatialAudioClientActivationParams}
+
+pub using @a1b26abae35d5a76 {type SpatialAudioHrtfActivationParams_c070d88ca5af as SpatialAudioHrtfActivationParams}
+
+pub using @a1b26abae35d5a76 {type SpatialAudioHrtfActivationParams2_ceee8cd8a4cd as SpatialAudioHrtfActivationParams2}
+
+pub using @a1b26abae35d5a76 {type SpatialAudioHrtfDirectivity_be80bba52f71 as SpatialAudioHrtfDirectivity}
+
+pub using @a1b26abae35d5a76 {type SpatialAudioHrtfDirectivityCardioid_5a603d532329 as SpatialAudioHrtfDirectivityCardioid}
+
+pub using @a1b26abae35d5a76 {type SpatialAudioHrtfDirectivityCone_b2c1f6c687c7 as SpatialAudioHrtfDirectivityCone}
+
+pub using @a1b26abae35d5a76 {type SpatialAudioHrtfDirectivityType_55dd4dad26bf as SpatialAudioHrtfDirectivityType}
+
+pub using @a1b26abae35d5a76 {type SpatialAudioHrtfDirectivityUnion_4751aa7bfece as SpatialAudioHrtfDirectivityUnion}
+
+pub using @a1b26abae35d5a76 {type SpatialAudioHrtfDistanceDecay_ecc79708fb86 as SpatialAudioHrtfDistanceDecay}
+
+pub using @a1b26abae35d5a76 {type SpatialAudioHrtfDistanceDecayType_41026fee9a7a as SpatialAudioHrtfDistanceDecayType}
+
+pub using @a1b26abae35d5a76 {type SpatialAudioHrtfEnvironmentType_6a0036ae901f as SpatialAudioHrtfEnvironmentType}
+
+pub using @a1b26abae35d5a76 {type SpatialAudioMetadataCopyMode_3d5031d11cdc as SpatialAudioMetadataCopyMode}
+
+pub using @a1b26abae35d5a76 {type SpatialAudioMetadataItemsInfo_1b75a100cef6 as SpatialAudioMetadataItemsInfo}
+
+pub using @a1b26abae35d5a76 {type SpatialAudioMetadataWriterOverflowMode_c0e2757be779 as SpatialAudioMetadataWriterOverflowMode}
+
+pub using @a1b26abae35d5a76 {type SpatialAudioObjectRenderStreamActivationParams_c3803d80a2df as SpatialAudioObjectRenderStreamActivationParams}
+
+pub using @a1b26abae35d5a76 {type SpatialAudioObjectRenderStreamActivationParams2_1e4c56ccf8f0 as SpatialAudioObjectRenderStreamActivationParams2}
+
+pub using @a1b26abae35d5a76 {type SpatialAudioObjectRenderStreamForMetadataActivationParams_07072f7451a6 as SpatialAudioObjectRenderStreamForMetadataActivationParams}
+
+pub using @a1b26abae35d5a76 {type SpatialAudioObjectRenderStreamForMetadataActivationParams2_db4aca77d66a as SpatialAudioObjectRenderStreamForMetadataActivationParams2}
+
+pub using @a1b26abae35d5a76 {type TACMFORMATDETAILSW_933f3f37443e as TACMFORMATDETAILSW}
+
+pub using @a1b26abae35d5a76 {type VOLUMEWAVEFILTER_50e2fd20fa00 as VOLUMEWAVEFILTER}
+
+pub using @a1b26abae35d5a76 {type WAVEFILTER_738873aba227 as WAVEFILTER}
+
+pub using @a1b26abae35d5a76 {type WAVEFORMAT_fd5722ebf1c7 as WAVEFORMAT}
+
+pub using @a1b26abae35d5a76 {type WAVEFORMATEX_4bac4c6c0495 as WAVEFORMATEX}
+
+pub using @a1b26abae35d5a76 {type WAVEFORMATEXTENSIBLE_941ad2cc28d7 as WAVEFORMATEXTENSIBLE}
+
+pub using @a1b26abae35d5a76 {type WAVEFORMATEXTENSIBLESamplesEUnion_44505e3da4cd as WAVEFORMATEXTENSIBLESamplesEUnion}
+
+pub using @a1b26abae35d5a76 {type WAVEHDR_a7e9b5d56944 as WAVEHDR}
+
+pub using @a1b26abae35d5a76 {type WAVEINCAPS2A_26d4900063f5 as WAVEINCAPS2A}
+
+pub using @a1b26abae35d5a76 {type WAVEINCAPS2W_154c269fefdd as WAVEINCAPS2W}
+
+pub using @a1b26abae35d5a76 {type WAVEINCAPSA_fb134f08c794 as WAVEINCAPSA}
+
+pub using @a1b26abae35d5a76 {type WAVEINCAPSW_ff4731e2b00d as WAVEINCAPSW}
+
+pub using @a1b26abae35d5a76 {type WAVEOUTCAPS2A_c63c1bdf933c as WAVEOUTCAPS2A}
+
+pub using @a1b26abae35d5a76 {type WAVEOUTCAPS2W_5ce062592547 as WAVEOUTCAPS2W}
+
+pub using @a1b26abae35d5a76 {type WAVEOUTCAPSA_178ff0d52ec5 as WAVEOUTCAPSA}
+
+pub using @a1b26abae35d5a76 {type WAVEOUTCAPSW_858879219ddb as WAVEOUTCAPSW}
+
+// Traits

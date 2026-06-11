@@ -1,0 +1,550 @@
+// Generated using `moon info`, DON'T EDIT IT
+package "moonbit-community/win32api/windows/win32/storage/file_server_resource_manager"
+
+import {
+  "moonbit-community/win32api/scc/2334f8ba73265cbc",
+}
+
+// Values
+pub let fsrm_days_not_specified : Int
+
+pub let fsrm_dispid_feature_classification : UInt
+
+pub let fsrm_dispid_feature_filescreen : UInt
+
+pub let fsrm_dispid_feature_general : UInt
+
+pub let fsrm_dispid_feature_mask : UInt
+
+pub let fsrm_dispid_feature_pipeline : UInt
+
+pub let fsrm_dispid_feature_quota : UInt
+
+pub let fsrm_dispid_feature_reports : UInt
+
+pub let fsrm_dispid_interface_a_mask : UInt
+
+pub let fsrm_dispid_interface_b_mask : UInt
+
+pub let fsrm_dispid_interface_c_mask : UInt
+
+pub let fsrm_dispid_interface_d_mask : UInt
+
+pub let fsrm_dispid_is_property : UInt
+
+pub let fsrm_dispid_method_num_mask : UInt
+
+pub let fsrm_e_adr_max_emails_sent : Int
+
+pub let fsrm_e_adr_not_domain_joined : Int
+
+pub let fsrm_e_adr_path_is_local : Int
+
+pub let fsrm_e_adr_srv_not_supported : Int
+
+pub let fsrm_e_already_exists : Int
+
+pub let fsrm_e_auto_quota : Int
+
+pub let fsrm_e_cache_invalid : Int
+
+pub let fsrm_e_cache_module_already_exists : Int
+
+pub let fsrm_e_cannot_aggregate : Int
+
+pub let fsrm_e_cannot_allow_reparse_point_tag : Int
+
+pub let fsrm_e_cannot_change_property_type : Int
+
+pub let fsrm_e_cannot_create_temp_copy : Int
+
+pub let fsrm_e_cannot_delete_system_property : Int
+
+pub let fsrm_e_cannot_remove_readonly : Int
+
+pub let fsrm_e_cannot_rename_property : Int
+
+pub let fsrm_e_cannot_store_properties : Int
+
+pub let fsrm_e_cannot_use_deleted_property : Int
+
+pub let fsrm_e_cannot_use_deprecated_property : Int
+
+pub let fsrm_e_classification_already_running : Int
+
+pub let fsrm_e_classification_canceled : Int
+
+pub let fsrm_e_classification_not_running : Int
+
+pub let fsrm_e_classification_partial_batch : Int
+
+pub let fsrm_e_classification_scan_fail : Int
+
+pub let fsrm_e_classification_timeout : Int
+
+pub let fsrm_e_cluster_not_running : Int
+
+pub let fsrm_e_csc_path_not_supported : Int
+
+pub let fsrm_e_different_cluster_group : Int
+
+pub let fsrm_e_driver_not_ready : Int
+
+pub let fsrm_e_duplicate_name : Int
+
+pub let fsrm_e_email_not_sent : Int
+
+pub let fsrm_e_enum_properties_failed : Int
+
+pub let fsrm_e_error_not_enabled : Int
+
+pub let fsrm_e_expiration_path_not_writeable : Int
+
+pub let fsrm_e_expiration_path_too_long : Int
+
+pub let fsrm_e_expiration_volume_not_ntfs : Int
+
+pub let fsrm_e_fail_batch : Int
+
+pub let fsrm_e_file_encrypted : Int
+
+pub let fsrm_e_file_in_use : Int
+
+pub let fsrm_e_file_management_action_get_exitcode_failed : Int
+
+pub let fsrm_e_file_management_action_timeout : Int
+
+pub let fsrm_e_file_management_expiration_dir_in_scope : Int
+
+pub let fsrm_e_file_management_job_already_exists : Int
+
+pub let fsrm_e_file_management_job_already_running : Int
+
+pub let fsrm_e_file_management_job_custom : Int
+
+pub let fsrm_e_file_management_job_deprecated : Int
+
+pub let fsrm_e_file_management_job_expiration : Int
+
+pub let fsrm_e_file_management_job_invalid_continuous_config : Int
+
+pub let fsrm_e_file_management_job_max_file_conditions : Int
+
+pub let fsrm_e_file_management_job_not_legacy_accessible : Int
+
+pub let fsrm_e_file_management_job_notification : Int
+
+pub let fsrm_e_file_management_job_rms : Int
+
+pub let fsrm_e_file_open_error : Int
+
+pub let fsrm_e_file_system_corrupt : Int
+
+pub let fsrm_e_incompatible_format : Int
+
+pub let fsrm_e_inproc_module_blocked : Int
+
+pub let fsrm_e_insecure_path : Int
+
+pub let fsrm_e_insufficient_disk : Int
+
+pub let fsrm_e_invalid_ad_claim : Int
+
+pub let fsrm_e_invalid_combination : Int
+
+pub let fsrm_e_invalid_datascreen_definition : Int
+
+pub let fsrm_e_invalid_email_address : Int
+
+pub let fsrm_e_invalid_filegroup_definition : Int
+
+pub let fsrm_e_invalid_filename : Int
+
+pub let fsrm_e_invalid_folder_property_store : Int
+
+pub let fsrm_e_invalid_import_version : Int
+
+pub let fsrm_e_invalid_limit : Int
+
+pub let fsrm_e_invalid_name : Int
+
+pub let fsrm_e_invalid_path : Int
+
+pub let fsrm_e_invalid_report_desc : Int
+
+pub let fsrm_e_invalid_report_format : Int
+
+pub let fsrm_e_invalid_scheduler_argument : Int
+
+pub let fsrm_e_invalid_smtp_server : Int
+
+pub let fsrm_e_invalid_text : Int
+
+pub let fsrm_e_invalid_user : Int
+
+pub let fsrm_e_last_access_update_disabled : Int
+
+pub let fsrm_e_legacy_schedule : Int
+
+pub let fsrm_e_loading_disabled_module : Int
+
+pub let fsrm_e_long_cmdline : Int
+
+pub let fsrm_e_max_property_definitions : Int
+
+pub let fsrm_e_message_limit_exceeded : Int
+
+pub let fsrm_e_module_initialization : Int
+
+pub let fsrm_e_module_invalid_param : Int
+
+pub let fsrm_e_module_session_initialization : Int
+
+pub let fsrm_e_module_timeout : Int
+
+pub let fsrm_e_no_email_address : Int
+
+pub let fsrm_e_no_property_value : Int
+
+pub let fsrm_e_not_cluster_volume : Int
+
+pub let fsrm_e_not_found : Int
+
+pub let fsrm_e_not_supported : Int
+
+pub let fsrm_e_object_in_use : Int
+
+pub let fsrm_e_out_of_range : Int
+
+pub let fsrm_e_partial_classification_property_not_found : Int
+
+pub let fsrm_e_path_not_found : Int
+
+pub let fsrm_e_path_not_in_namespace : Int
+
+pub let fsrm_e_persist_properties_failed : Int
+
+pub let fsrm_e_persist_properties_failed_encrypted : Int
+
+pub let fsrm_e_property_deleted : Int
+
+pub let fsrm_e_property_must_apply_to_files : Int
+
+pub let fsrm_e_property_must_apply_to_folders : Int
+
+pub let fsrm_e_property_must_be_global : Int
+
+pub let fsrm_e_property_must_be_secure : Int
+
+pub let fsrm_e_rebuilding_fodler_type_index : Int
+
+pub let fsrm_e_report_generation_err : Int
+
+pub let fsrm_e_report_job_already_running : Int
+
+pub let fsrm_e_report_task_trigger : Int
+
+pub let fsrm_e_report_type_already_exists : Int
+
+pub let fsrm_e_reqd_param_missing : Int
+
+pub let fsrm_e_rms_no_protector_installed_for_file : Int
+
+pub let fsrm_e_rms_no_protectors_installed : Int
+
+pub let fsrm_e_rms_template_not_found : Int
+
+pub let fsrm_e_secure_properties_not_supported : Int
+
+pub let fsrm_e_set_property_failed : Int
+
+pub let fsrm_e_shadow_copy : Int
+
+pub let fsrm_e_store_not_installed : Int
+
+pub let fsrm_e_sync_task_had_errors : Int
+
+pub let fsrm_e_sync_task_timeout : Int
+
+pub let fsrm_e_textreader_filename_too_long : Int
+
+pub let fsrm_e_textreader_ifilter_clsid_malformed : Int
+
+pub let fsrm_e_textreader_ifilter_not_found : Int
+
+pub let fsrm_e_textreader_not_initialized : Int
+
+pub let fsrm_e_textreader_stream_error : Int
+
+pub let fsrm_e_unexpected : Int
+
+pub let fsrm_e_unsecure_link_to_hosted_module : Int
+
+pub let fsrm_e_volume_offline : Int
+
+pub let fsrm_e_volume_unsupported : Int
+
+pub let fsrm_e_wmi_failure : Int
+
+pub let fsrm_e_xml_corrupted : Int
+
+pub let fsrm_max_exclude_folders : UInt
+
+pub let fsrm_max_number_property_definitions : UInt
+
+pub let fsrm_max_number_thresholds : UInt
+
+pub let fsrm_max_threshold_value : UInt
+
+pub let fsrm_min_quota_limit : UInt
+
+pub let fsrm_min_threshold_value : UInt
+
+pub let fsrm_s_classification_scan_failures : Int
+
+pub let fsrm_s_partial_batch : Int
+
+pub let fsrm_s_partial_classification : Int
+
+pub let message_size_limit : UInt
+
+// Errors
+
+// Types and methods
+
+// Type aliases
+pub using @2334f8ba73265cbc {type AdSyncTask_768aea2f76b3 as AdSyncTask}
+
+pub using @2334f8ba73265cbc {type AdrClientDisplayFlags_334aa74b902a as AdrClientDisplayFlags}
+
+pub using @2334f8ba73265cbc {type AdrClientErrorType_e36cad9d207d as AdrClientErrorType}
+
+pub using @2334f8ba73265cbc {type AdrClientFlags_b132aeb77de4 as AdrClientFlags}
+
+pub using @2334f8ba73265cbc {type AdrEmailFlags_7e9207e1f423 as AdrEmailFlags}
+
+pub using @2334f8ba73265cbc {type DIFsrmClassificationEvents_deb98288ac04 as DIFsrmClassificationEvents}
+
+pub using @2334f8ba73265cbc {type FsrmAccessDeniedRemediationClient_9d28ed4339d9 as FsrmAccessDeniedRemediationClient}
+
+pub using @2334f8ba73265cbc {type FsrmAccountType_44c8a64b73e0 as FsrmAccountType}
+
+pub using @2334f8ba73265cbc {type FsrmActionType_8f60b9510798 as FsrmActionType}
+
+pub using @2334f8ba73265cbc {type FsrmClassificationLoggingFlags_fcf6ab6913bb as FsrmClassificationLoggingFlags}
+
+pub using @2334f8ba73265cbc {type FsrmClassificationManager_eaa7dea14826 as FsrmClassificationManager}
+
+pub using @2334f8ba73265cbc {type FsrmCollectionState_9e70e36a6a80 as FsrmCollectionState}
+
+pub using @2334f8ba73265cbc {type FsrmCommitOptions_2017766a84e5 as FsrmCommitOptions}
+
+pub using @2334f8ba73265cbc {type FsrmEnumOptions_ed2373f32c69 as FsrmEnumOptions}
+
+pub using @2334f8ba73265cbc {type FsrmEventType_818fd35b631e as FsrmEventType}
+
+pub using @2334f8ba73265cbc {type FsrmExecutionOption_156e19119724 as FsrmExecutionOption}
+
+pub using @2334f8ba73265cbc {type FsrmExportImport_80f9f74a6dfa as FsrmExportImport}
+
+pub using @2334f8ba73265cbc {type FsrmFileConditionType_caea64df99a2 as FsrmFileConditionType}
+
+pub using @2334f8ba73265cbc {type FsrmFileGroupManager_1df54747bf20 as FsrmFileGroupManager}
+
+pub using @2334f8ba73265cbc {type FsrmFileManagementJobManager_b282a22b7d10 as FsrmFileManagementJobManager}
+
+pub using @2334f8ba73265cbc {type FsrmFileManagementLoggingFlags_b9c8cacdb5d5 as FsrmFileManagementLoggingFlags}
+
+pub using @2334f8ba73265cbc {type FsrmFileManagementType_d18b42ff12ed as FsrmFileManagementType}
+
+pub using @2334f8ba73265cbc {type FsrmFileScreenFlags_278d4e8951da as FsrmFileScreenFlags}
+
+pub using @2334f8ba73265cbc {type FsrmFileScreenManager_f708da3f9e7c as FsrmFileScreenManager}
+
+pub using @2334f8ba73265cbc {type FsrmFileScreenTemplateManager_9a866b511125 as FsrmFileScreenTemplateManager}
+
+pub using @2334f8ba73265cbc {type FsrmFileStreamingInterfaceType_2d538c4a116c as FsrmFileStreamingInterfaceType}
+
+pub using @2334f8ba73265cbc {type FsrmFileStreamingMode_5a170cb279f9 as FsrmFileStreamingMode}
+
+pub using @2334f8ba73265cbc {type FsrmFileSystemPropertyId_f567273a6428 as FsrmFileSystemPropertyId}
+
+pub using @2334f8ba73265cbc {type FsrmGetFilePropertyOptions_4eb6455f4292 as FsrmGetFilePropertyOptions}
+
+pub using @2334f8ba73265cbc {type FsrmPathMapper_3edd637f5df3 as FsrmPathMapper}
+
+pub using @2334f8ba73265cbc {type FsrmPipelineModuleConnector_18a5a2fc7250 as FsrmPipelineModuleConnector}
+
+pub using @2334f8ba73265cbc {type FsrmPipelineModuleType_912b7f2fd00a as FsrmPipelineModuleType}
+
+pub using @2334f8ba73265cbc {type FsrmPropertyBagField_712a348d6584 as FsrmPropertyBagField}
+
+pub using @2334f8ba73265cbc {type FsrmPropertyBagFlags_ced1820b8308 as FsrmPropertyBagFlags}
+
+pub using @2334f8ba73265cbc {type FsrmPropertyConditionType_add9cababa6e as FsrmPropertyConditionType}
+
+pub using @2334f8ba73265cbc {type FsrmPropertyDefinitionAppliesTo_120162f9c63c as FsrmPropertyDefinitionAppliesTo}
+
+pub using @2334f8ba73265cbc {type FsrmPropertyDefinitionFlags_78ebfa1ea4f4 as FsrmPropertyDefinitionFlags}
+
+pub using @2334f8ba73265cbc {type FsrmPropertyDefinitionType_0c0f852acb14 as FsrmPropertyDefinitionType}
+
+pub using @2334f8ba73265cbc {type FsrmPropertyFlags_637cb4b67797 as FsrmPropertyFlags}
+
+pub using @2334f8ba73265cbc {type FsrmPropertyValueType_47361d0e8c3c as FsrmPropertyValueType}
+
+pub using @2334f8ba73265cbc {type FsrmQuotaFlags_b028f255f211 as FsrmQuotaFlags}
+
+pub using @2334f8ba73265cbc {type FsrmQuotaManager_61da1579ec19 as FsrmQuotaManager}
+
+pub using @2334f8ba73265cbc {type FsrmQuotaTemplateManager_765d27e41091 as FsrmQuotaTemplateManager}
+
+pub using @2334f8ba73265cbc {type FsrmReportFilter_49c7e9dc9986 as FsrmReportFilter}
+
+pub using @2334f8ba73265cbc {type FsrmReportFormat_b64eb6d015b6 as FsrmReportFormat}
+
+pub using @2334f8ba73265cbc {type FsrmReportGenerationContext_16c612a3610e as FsrmReportGenerationContext}
+
+pub using @2334f8ba73265cbc {type FsrmReportLimit_15ff1dbc8c69 as FsrmReportLimit}
+
+pub using @2334f8ba73265cbc {type FsrmReportManager_075d00e8a29e as FsrmReportManager}
+
+pub using @2334f8ba73265cbc {type FsrmReportRunningStatus_27c354f251b6 as FsrmReportRunningStatus}
+
+pub using @2334f8ba73265cbc {type FsrmReportScheduler_551cc5d20724 as FsrmReportScheduler}
+
+pub using @2334f8ba73265cbc {type FsrmReportType_5e7a0d3e1e69 as FsrmReportType}
+
+pub using @2334f8ba73265cbc {type FsrmRuleFlags_1af978016d12 as FsrmRuleFlags}
+
+pub using @2334f8ba73265cbc {type FsrmRuleType_a0005270a6cd as FsrmRuleType}
+
+pub using @2334f8ba73265cbc {type FsrmSetting_21579aa8c569 as FsrmSetting}
+
+pub using @2334f8ba73265cbc {type FsrmStorageModuleCaps_5434ec0594ce as FsrmStorageModuleCaps}
+
+pub using @2334f8ba73265cbc {type FsrmStorageModuleType_c58a570de1a4 as FsrmStorageModuleType}
+
+pub using @2334f8ba73265cbc {type FsrmTemplateApplyOptions_ab45f35d799a as FsrmTemplateApplyOptions}
+
+pub using @2334f8ba73265cbc {type IFsrmAccessDeniedRemediationClient_499ef6642fef as IFsrmAccessDeniedRemediationClient}
+
+pub using @2334f8ba73265cbc {type IFsrmAction_468c83560bc0 as IFsrmAction}
+
+pub using @2334f8ba73265cbc {type IFsrmActionCommand_aaf40bc4a26c as IFsrmActionCommand}
+
+pub using @2334f8ba73265cbc {type IFsrmActionEmail_1187e2005dec as IFsrmActionEmail}
+
+pub using @2334f8ba73265cbc {type IFsrmActionEmail2_ab1d67b28eac as IFsrmActionEmail2}
+
+pub using @2334f8ba73265cbc {type IFsrmActionEventLog_25f23989935e as IFsrmActionEventLog}
+
+pub using @2334f8ba73265cbc {type IFsrmActionReport_25b450da43d4 as IFsrmActionReport}
+
+pub using @2334f8ba73265cbc {type IFsrmAutoApplyQuota_ed02df8166ca as IFsrmAutoApplyQuota}
+
+pub using @2334f8ba73265cbc {type IFsrmClassificationManager_6341e777c3b2 as IFsrmClassificationManager}
+
+pub using @2334f8ba73265cbc {type IFsrmClassificationManager2_50c0f3b358a4 as IFsrmClassificationManager2}
+
+pub using @2334f8ba73265cbc {type IFsrmClassificationRule_314797e30d4b as IFsrmClassificationRule}
+
+pub using @2334f8ba73265cbc {type IFsrmClassifierModuleDefinition_3753ccf72a9c as IFsrmClassifierModuleDefinition}
+
+pub using @2334f8ba73265cbc {type IFsrmClassifierModuleImplementation_31a6ccaa5167 as IFsrmClassifierModuleImplementation}
+
+pub using @2334f8ba73265cbc {type IFsrmCollection_8c575c64bc7f as IFsrmCollection}
+
+pub using @2334f8ba73265cbc {type IFsrmCommittableCollection_86261f4a3ad3 as IFsrmCommittableCollection}
+
+pub using @2334f8ba73265cbc {type IFsrmDerivedObjectsResult_679c8b9b842b as IFsrmDerivedObjectsResult}
+
+pub using @2334f8ba73265cbc {type IFsrmExportImport_998468ac4361 as IFsrmExportImport}
+
+pub using @2334f8ba73265cbc {type IFsrmFileCondition_7a8480764e31 as IFsrmFileCondition}
+
+pub using @2334f8ba73265cbc {type IFsrmFileConditionProperty_02d9fe4bfe1f as IFsrmFileConditionProperty}
+
+pub using @2334f8ba73265cbc {type IFsrmFileGroup_539324ff45af as IFsrmFileGroup}
+
+pub using @2334f8ba73265cbc {type IFsrmFileGroupImported_5c315b4f894e as IFsrmFileGroupImported}
+
+pub using @2334f8ba73265cbc {type IFsrmFileGroupManager_7c976434a6c8 as IFsrmFileGroupManager}
+
+pub using @2334f8ba73265cbc {type IFsrmFileManagementJob_f7c6d14d70e5 as IFsrmFileManagementJob}
+
+pub using @2334f8ba73265cbc {type IFsrmFileManagementJobManager_16c92c2bb8c5 as IFsrmFileManagementJobManager}
+
+pub using @2334f8ba73265cbc {type IFsrmFileScreen_ef8bdf8d944f as IFsrmFileScreen}
+
+pub using @2334f8ba73265cbc {type IFsrmFileScreenBase_cdad2a480d1d as IFsrmFileScreenBase}
+
+pub using @2334f8ba73265cbc {type IFsrmFileScreenException_f8bddea0341b as IFsrmFileScreenException}
+
+pub using @2334f8ba73265cbc {type IFsrmFileScreenManager_748287a5278f as IFsrmFileScreenManager}
+
+pub using @2334f8ba73265cbc {type IFsrmFileScreenTemplate_4627dfab8cdf as IFsrmFileScreenTemplate}
+
+pub using @2334f8ba73265cbc {type IFsrmFileScreenTemplateImported_d001c514a80f as IFsrmFileScreenTemplateImported}
+
+pub using @2334f8ba73265cbc {type IFsrmFileScreenTemplateManager_f1d90781473c as IFsrmFileScreenTemplateManager}
+
+pub using @2334f8ba73265cbc {type IFsrmMutableCollection_485b3ecc8695 as IFsrmMutableCollection}
+
+pub using @2334f8ba73265cbc {type IFsrmObject_e0f466ff9075 as IFsrmObject}
+
+pub using @2334f8ba73265cbc {type IFsrmPathMapper_8c7bbb914297 as IFsrmPathMapper}
+
+pub using @2334f8ba73265cbc {type IFsrmPipelineModuleConnector_b29c57d1a694 as IFsrmPipelineModuleConnector}
+
+pub using @2334f8ba73265cbc {type IFsrmPipelineModuleDefinition_e5cf6c8f5fe5 as IFsrmPipelineModuleDefinition}
+
+pub using @2334f8ba73265cbc {type IFsrmPipelineModuleImplementation_9baf423e7fdd as IFsrmPipelineModuleImplementation}
+
+pub using @2334f8ba73265cbc {type IFsrmProperty_63f381267e1f as IFsrmProperty}
+
+pub using @2334f8ba73265cbc {type IFsrmPropertyBag_82cef8e3cdf6 as IFsrmPropertyBag}
+
+pub using @2334f8ba73265cbc {type IFsrmPropertyBag2_93fedbdf0f56 as IFsrmPropertyBag2}
+
+pub using @2334f8ba73265cbc {type IFsrmPropertyCondition_df912163a6c7 as IFsrmPropertyCondition}
+
+pub using @2334f8ba73265cbc {type IFsrmPropertyDefinition_f03377443dad as IFsrmPropertyDefinition}
+
+pub using @2334f8ba73265cbc {type IFsrmPropertyDefinition2_8690db437648 as IFsrmPropertyDefinition2}
+
+pub using @2334f8ba73265cbc {type IFsrmPropertyDefinitionValue_b01ac3099a57 as IFsrmPropertyDefinitionValue}
+
+pub using @2334f8ba73265cbc {type IFsrmQuota_8830b996468c as IFsrmQuota}
+
+pub using @2334f8ba73265cbc {type IFsrmQuotaBase_be805084b99a as IFsrmQuotaBase}
+
+pub using @2334f8ba73265cbc {type IFsrmQuotaManager_52fc2f0ab574 as IFsrmQuotaManager}
+
+pub using @2334f8ba73265cbc {type IFsrmQuotaManagerEx_de0dd130ce05 as IFsrmQuotaManagerEx}
+
+pub using @2334f8ba73265cbc {type IFsrmQuotaObject_0b055fe4d23c as IFsrmQuotaObject}
+
+pub using @2334f8ba73265cbc {type IFsrmQuotaTemplate_922ef03b9b1f as IFsrmQuotaTemplate}
+
+pub using @2334f8ba73265cbc {type IFsrmQuotaTemplateImported_0722cac83663 as IFsrmQuotaTemplateImported}
+
+pub using @2334f8ba73265cbc {type IFsrmQuotaTemplateManager_49648500f581 as IFsrmQuotaTemplateManager}
+
+pub using @2334f8ba73265cbc {type IFsrmReport_4494459749eb as IFsrmReport}
+
+pub using @2334f8ba73265cbc {type IFsrmReportJob_8a1136dd932d as IFsrmReportJob}
+
+pub using @2334f8ba73265cbc {type IFsrmReportManager_07636bd31df8 as IFsrmReportManager}
+
+pub using @2334f8ba73265cbc {type IFsrmReportScheduler_7fa925217750 as IFsrmReportScheduler}
+
+pub using @2334f8ba73265cbc {type IFsrmRule_fbd8ea9c68ff as IFsrmRule}
+
+pub using @2334f8ba73265cbc {type IFsrmSetting_de2cd1c9f235 as IFsrmSetting}
+
+pub using @2334f8ba73265cbc {type IFsrmStorageModuleDefinition_256c330e3350 as IFsrmStorageModuleDefinition}
+
+pub using @2334f8ba73265cbc {type IFsrmStorageModuleImplementation_ebc31c13611b as IFsrmStorageModuleImplementation}
+
+// Traits

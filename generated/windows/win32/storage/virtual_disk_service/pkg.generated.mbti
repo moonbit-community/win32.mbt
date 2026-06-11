@@ -1,0 +1,1438 @@
+// Generated using `moon info`, DON'T EDIT IT
+package "moonbit-community/win32api/windows/win32/storage/virtual_disk_service"
+
+import {
+  "moonbit-community/win32api/scc/130da6dca438993c",
+}
+
+// Values
+pub let gpt_partition_name_length : UInt
+
+pub let max_fs_allowed_cluster_sizes_size : UInt
+
+pub let max_fs_format_support_name_size : UInt
+
+pub let max_fs_name_size : UInt
+
+pub let vds_attach_virtual_disk_flag_use_file_acl : UInt
+
+pub let vds_e_access_denied : Int
+
+pub let vds_e_active_partition : Int
+
+pub let vds_e_addresses_incompletely_set : Int
+
+pub let vds_e_align_beyond_first_cylinder : Int
+
+pub let vds_e_align_is_zero : Int
+
+pub let vds_e_align_not_a_power_of_two : Int
+
+pub let vds_e_align_not_sector_size_multiple : Int
+
+pub let vds_e_align_not_zero : Int
+
+pub let vds_e_already_registered : Int
+
+pub let vds_e_another_call_in_progress : Int
+
+pub let vds_e_associated_luns_exist : Int
+
+pub let vds_e_associated_portals_exist : Int
+
+pub let vds_e_async_object_failure : Int
+
+pub let vds_e_bad_boot_disk : Int
+
+pub let vds_e_bad_cookie : Int
+
+pub let vds_e_bad_label : Int
+
+pub let vds_e_bad_pnp_message : Int
+
+pub let vds_e_bad_provider_data : Int
+
+pub let vds_e_bad_revision_number : Int
+
+pub let vds_e_block_clustered : Int
+
+pub let vds_e_boot_disk : Int
+
+pub let vds_e_boot_pagefile_drive_letter : Int
+
+pub let vds_e_boot_partition_number_change : Int
+
+pub let vds_e_cache_corrupt : Int
+
+pub let vds_e_cancel_too_late : Int
+
+pub let vds_e_cannot_clear_volume_flag : Int
+
+pub let vds_e_cannot_extend : Int
+
+pub let vds_e_cannot_shrink : Int
+
+pub let vds_e_cant_invalidate_fve : Int
+
+pub let vds_e_cant_quick_format : Int
+
+pub let vds_e_clean_with_bootbacking : Int
+
+pub let vds_e_clean_with_critical : Int
+
+pub let vds_e_clean_with_data : Int
+
+pub let vds_e_clean_with_oem : Int
+
+pub let vds_e_cluster_count_beyond_32_bits : Int
+
+pub let vds_e_cluster_size_too_big : Int
+
+pub let vds_e_cluster_size_too_small : Int
+
+pub let vds_e_compression_not_supported : Int
+
+pub let vds_e_config_limit : Int
+
+pub let vds_e_corrupt_extent_info : Int
+
+pub let vds_e_corrupt_notification_info : Int
+
+pub let vds_e_corrupt_partition_info : Int
+
+pub let vds_e_corrupt_volume_info : Int
+
+pub let vds_e_crashdump_disk : Int
+
+pub let vds_e_critical_plex : Int
+
+pub let vds_e_delete_with_bootbacking : Int
+
+pub let vds_e_delete_with_critical : Int
+
+pub let vds_e_device_in_use : Int
+
+pub let vds_e_disk_being_cleaned : Int
+
+pub let vds_e_disk_configuration_corrupted : Int
+
+pub let vds_e_disk_configuration_not_in_sync : Int
+
+pub let vds_e_disk_configuration_update_failed : Int
+
+pub let vds_e_disk_dynamic : Int
+
+pub let vds_e_disk_has_bands : Int
+
+pub let vds_e_disk_in_use_by_volume : Int
+
+pub let vds_e_disk_io_failing : Int
+
+pub let vds_e_disk_is_offline : Int
+
+pub let vds_e_disk_is_read_only : Int
+
+pub let vds_e_disk_layout_partitions_too_small : Int
+
+pub let vds_e_disk_not_convertible : Int
+
+pub let vds_e_disk_not_convertible_size : Int
+
+pub let vds_e_disk_not_empty : Int
+
+pub let vds_e_disk_not_found_in_pack : Int
+
+pub let vds_e_disk_not_imported : Int
+
+pub let vds_e_disk_not_initialized : Int
+
+pub let vds_e_disk_not_loaded_to_cache : Int
+
+pub let vds_e_disk_not_missing : Int
+
+pub let vds_e_disk_not_offline : Int
+
+pub let vds_e_disk_not_online : Int
+
+pub let vds_e_disk_pnp_reg_corrupt : Int
+
+pub let vds_e_disk_removeable : Int
+
+pub let vds_e_disk_removeable_not_empty : Int
+
+pub let vds_e_distinct_volume : Int
+
+pub let vds_e_dmadmin_corrupt_notification : Int
+
+pub let vds_e_dmadmin_method_call_failed : Int
+
+pub let vds_e_dmadmin_service_connection_failed : Int
+
+pub let vds_e_drive_letter_not_free : Int
+
+pub let vds_e_driver_internal_error : Int
+
+pub let vds_e_driver_invalid_param : Int
+
+pub let vds_e_driver_no_pack_name : Int
+
+pub let vds_e_driver_object_not_found : Int
+
+pub let vds_e_dup_empty_pack_guid : Int
+
+pub let vds_e_duplicate_disk : Int
+
+pub let vds_e_dynamic_disks_not_supported : Int
+
+pub let vds_e_extend_file_system_failed : Int
+
+pub let vds_e_extend_multiple_disks_not_supported : Int
+
+pub let vds_e_extend_too_many_clusters : Int
+
+pub let vds_e_extend_unknown_filesystem : Int
+
+pub let vds_e_extent_exceeds_disk_free_space : Int
+
+pub let vds_e_extent_size_less_than_min : Int
+
+pub let vds_e_failed_to_offline_disk : Int
+
+pub let vds_e_failed_to_online_disk : Int
+
+pub let vds_e_fat32_format_not_supported : Int
+
+pub let vds_e_fat_format_not_supported : Int
+
+pub let vds_e_fault_tolerant_disks_not_supported : Int
+
+pub let vds_e_flag_already_set : Int
+
+pub let vds_e_format_critical : Int
+
+pub let vds_e_format_not_supported : Int
+
+pub let vds_e_format_with_bootbacking : Int
+
+pub let vds_e_fs_not_determined : Int
+
+pub let vds_e_get_san_policy : Int
+
+pub let vds_e_gpt_attributes_invalid : Int
+
+pub let vds_e_hibernation_file_disk : Int
+
+pub let vds_e_ia64_boot_mirrored_to_mbr : Int
+
+pub let vds_e_import_set_incomplete : Int
+
+pub let vds_e_incompatible_file_system : Int
+
+pub let vds_e_incompatible_media : Int
+
+pub let vds_e_incorrect_boot_volume_extent_info : Int
+
+pub let vds_e_incorrect_system_volume_extent_info : Int
+
+pub let vds_e_initialize_not_called : Int
+
+pub let vds_e_initialized_failed : Int
+
+pub let vds_e_initiator_adapter_not_found : Int
+
+pub let vds_e_initiator_specific_not_supported : Int
+
+pub let vds_e_internal_error : Int
+
+pub let vds_e_invalid_block_size : Int
+
+pub let vds_e_invalid_disk : Int
+
+pub let vds_e_invalid_disk_count : Int
+
+pub let vds_e_invalid_drive_letter : Int
+
+pub let vds_e_invalid_drive_letter_count : Int
+
+pub let vds_e_invalid_enumerator : Int
+
+pub let vds_e_invalid_extent_count : Int
+
+pub let vds_e_invalid_fs_flag : Int
+
+pub let vds_e_invalid_fs_type : Int
+
+pub let vds_e_invalid_ip_address : Int
+
+pub let vds_e_invalid_iscsi_path : Int
+
+pub let vds_e_invalid_iscsi_target_name : Int
+
+pub let vds_e_invalid_member_count : Int
+
+pub let vds_e_invalid_member_order : Int
+
+pub let vds_e_invalid_object_type : Int
+
+pub let vds_e_invalid_operation : Int
+
+pub let vds_e_invalid_pack : Int
+
+pub let vds_e_invalid_partition_layout : Int
+
+pub let vds_e_invalid_partition_style : Int
+
+pub let vds_e_invalid_partition_type : Int
+
+pub let vds_e_invalid_path : Int
+
+pub let vds_e_invalid_plex_block_size : Int
+
+pub let vds_e_invalid_plex_count : Int
+
+pub let vds_e_invalid_plex_guid : Int
+
+pub let vds_e_invalid_plex_order : Int
+
+pub let vds_e_invalid_plex_type : Int
+
+pub let vds_e_invalid_port_path : Int
+
+pub let vds_e_invalid_provider_clsid : Int
+
+pub let vds_e_invalid_provider_id : Int
+
+pub let vds_e_invalid_provider_name : Int
+
+pub let vds_e_invalid_provider_type : Int
+
+pub let vds_e_invalid_provider_version_guid : Int
+
+pub let vds_e_invalid_provider_version_string : Int
+
+pub let vds_e_invalid_query_provider_flag : Int
+
+pub let vds_e_invalid_sector_size : Int
+
+pub let vds_e_invalid_service_flag : Int
+
+pub let vds_e_invalid_shrink_size : Int
+
+pub let vds_e_invalid_space : Int
+
+pub let vds_e_invalid_state : Int
+
+pub let vds_e_invalid_stripe_size : Int
+
+pub let vds_e_invalid_volume_flag : Int
+
+pub let vds_e_invalid_volume_length : Int
+
+pub let vds_e_invalid_volume_type : Int
+
+pub let vds_e_io_error : Int
+
+pub let vds_e_iscsi_chap_secret : Int
+
+pub let vds_e_iscsi_get_ike_info : Int
+
+pub let vds_e_iscsi_group_preshare_key : Int
+
+pub let vds_e_iscsi_initiator_node_name : Int
+
+pub let vds_e_iscsi_login_failed : Int
+
+pub let vds_e_iscsi_logout_failed : Int
+
+pub let vds_e_iscsi_logout_incomplete : Int
+
+pub let vds_e_iscsi_session_not_found : Int
+
+pub let vds_e_iscsi_set_ike_info : Int
+
+pub let vds_e_last_valid_disk : Int
+
+pub let vds_e_lbn_remap_enabled_flag : Int
+
+pub let vds_e_ldm_timeout : Int
+
+pub let vds_e_legacy_volume_format : Int
+
+pub let vds_e_log_update : Int
+
+pub let vds_e_lun_disk_failed : Int
+
+pub let vds_e_lun_disk_missing : Int
+
+pub let vds_e_lun_disk_no_media : Int
+
+pub let vds_e_lun_disk_not_ready : Int
+
+pub let vds_e_lun_disk_read_only : Int
+
+pub let vds_e_lun_dynamic : Int
+
+pub let vds_e_lun_dynamic_offline : Int
+
+pub let vds_e_lun_failed : Int
+
+pub let vds_e_lun_not_ready : Int
+
+pub let vds_e_lun_offline : Int
+
+pub let vds_e_lun_shrink_gpt_header : Int
+
+pub let vds_e_lun_update_disk : Int
+
+pub let vds_e_max_usable_mbr : Int
+
+pub let vds_e_media_write_protected : Int
+
+pub let vds_e_member_is_healthy : Int
+
+pub let vds_e_member_missing : Int
+
+pub let vds_e_member_regenerating : Int
+
+pub let vds_e_member_size_invalid : Int
+
+pub let vds_e_migrate_open_volume : Int
+
+pub let vds_e_mirror_not_supported : Int
+
+pub let vds_e_missing_disk : Int
+
+pub let vds_e_multiple_discovery_domains : Int
+
+pub let vds_e_multiple_packs : Int
+
+pub let vds_e_name_not_unique : Int
+
+pub let vds_e_no_discovery_domain : Int
+
+pub let vds_e_no_disk_pathname : Int
+
+pub let vds_e_no_disks_found : Int
+
+pub let vds_e_no_driveletter_flag : Int
+
+pub let vds_e_no_extents_for_plex : Int
+
+pub let vds_e_no_extents_for_volume : Int
+
+pub let vds_e_no_free_space : Int
+
+pub let vds_e_no_healthy_disks : Int
+
+pub let vds_e_no_import_target : Int
+
+pub let vds_e_no_maintenance_mode : Int
+
+pub let vds_e_no_media : Int
+
+pub let vds_e_no_pnp_disk_arrive : Int
+
+pub let vds_e_no_pnp_disk_remove : Int
+
+pub let vds_e_no_pnp_volume_arrive : Int
+
+pub let vds_e_no_pnp_volume_remove : Int
+
+pub let vds_e_no_pool : Int
+
+pub let vds_e_no_pool_created : Int
+
+pub let vds_e_no_software_providers_loaded : Int
+
+pub let vds_e_no_valid_log_copies : Int
+
+pub let vds_e_no_volume_layout : Int
+
+pub let vds_e_no_volume_pathname : Int
+
+pub let vds_e_non_contiguous_data_partitions : Int
+
+pub let vds_e_not_an_unallocated_disk : Int
+
+pub let vds_e_not_enough_drive : Int
+
+pub let vds_e_not_enough_space : Int
+
+pub let vds_e_not_supported : Int
+
+pub let vds_e_ntfs_format_not_supported : Int
+
+pub let vds_e_object_deleted : Int
+
+pub let vds_e_object_exists : Int
+
+pub let vds_e_object_not_found : Int
+
+pub let vds_e_object_out_of_sync : Int
+
+pub let vds_e_object_status_failed : Int
+
+pub let vds_e_offline_not_supported : Int
+
+pub let vds_e_one_extent_per_disk : Int
+
+pub let vds_e_online_pack_exists : Int
+
+pub let vds_e_operation_canceled : Int
+
+pub let vds_e_operation_denied : Int
+
+pub let vds_e_operation_pending : Int
+
+pub let vds_e_pack_name_invalid : Int
+
+pub let vds_e_pack_not_found : Int
+
+pub let vds_e_pack_offline : Int
+
+pub let vds_e_pack_online : Int
+
+pub let vds_e_pagefile_disk : Int
+
+pub let vds_e_partition_ldm : Int
+
+pub let vds_e_partition_limit_reached : Int
+
+pub let vds_e_partition_msr : Int
+
+pub let vds_e_partition_non_data : Int
+
+pub let vds_e_partition_not_cylinder_aligned : Int
+
+pub let vds_e_partition_not_empty : Int
+
+pub let vds_e_partition_not_oem : Int
+
+pub let vds_e_partition_of_unknown_type : Int
+
+pub let vds_e_partition_protected : Int
+
+pub let vds_e_partition_style_mismatch : Int
+
+pub let vds_e_path_not_found : Int
+
+pub let vds_e_plex_is_healthy : Int
+
+pub let vds_e_plex_last_active : Int
+
+pub let vds_e_plex_missing : Int
+
+pub let vds_e_plex_not_loaded_to_cache : Int
+
+pub let vds_e_plex_regenerating : Int
+
+pub let vds_e_plex_size_invalid : Int
+
+pub let vds_e_provider_cache_corrupt : Int
+
+pub let vds_e_provider_cache_outofsync : Int
+
+pub let vds_e_provider_exiting : Int
+
+pub let vds_e_provider_failure : Int
+
+pub let vds_e_provider_initialization_failed : Int
+
+pub let vds_e_provider_internal_error : Int
+
+pub let vds_e_provider_type_not_supported : Int
+
+pub let vds_e_provider_vol_device_name_not_found : Int
+
+pub let vds_e_provider_vol_open : Int
+
+pub let vds_e_raid5_not_supported : Int
+
+pub let vds_e_readonly : Int
+
+pub let vds_e_reboot_required : Int
+
+pub let vds_e_refs_format_not_supported : Int
+
+pub let vds_e_repair_volumestate : Int
+
+pub let vds_e_requires_contiguous_disk_space : Int
+
+pub let vds_e_retry : Int
+
+pub let vds_e_revert_on_close : Int
+
+pub let vds_e_revert_on_close_mismatch : Int
+
+pub let vds_e_revert_on_close_set : Int
+
+pub let vds_e_sector_size_error : Int
+
+pub let vds_e_security_incompletely_set : Int
+
+pub let vds_e_set_san_policy : Int
+
+pub let vds_e_set_tunnel_mode_outer_address : Int
+
+pub let vds_e_shrink_dirty_volume : Int
+
+pub let vds_e_shrink_extend_unaligned : Int
+
+pub let vds_e_shrink_in_progress : Int
+
+pub let vds_e_shrink_lun_not_unmasked : Int
+
+pub let vds_e_shrink_over_data : Int
+
+pub let vds_e_shrink_size_less_than_min : Int
+
+pub let vds_e_shrink_size_too_big : Int
+
+pub let vds_e_shrink_unknown_filesystem : Int
+
+pub let vds_e_shrink_user_cancelled : Int
+
+pub let vds_e_source_is_target_pack : Int
+
+pub let vds_e_subsystem_id_is_null : Int
+
+pub let vds_e_system_disk : Int
+
+pub let vds_e_target_pack_not_empty : Int
+
+pub let vds_e_target_portal_not_found : Int
+
+pub let vds_e_target_specific_not_supported : Int
+
+pub let vds_e_timeout : Int
+
+pub let vds_e_unable_to_find_boot_disk : Int
+
+pub let vds_e_unable_to_find_system_disk : Int
+
+pub let vds_e_unexpected_disk_layout_change : Int
+
+pub let vds_e_unrecoverable_error : Int
+
+pub let vds_e_unrecoverable_provider_error : Int
+
+pub let vds_e_vd_already_attached : Int
+
+pub let vds_e_vd_already_compacting : Int
+
+pub let vds_e_vd_already_detached : Int
+
+pub let vds_e_vd_already_merging : Int
+
+pub let vds_e_vd_disk_already_expanding : Int
+
+pub let vds_e_vd_disk_already_open : Int
+
+pub let vds_e_vd_disk_is_compacting : Int
+
+pub let vds_e_vd_disk_is_expanding : Int
+
+pub let vds_e_vd_disk_is_merging : Int
+
+pub let vds_e_vd_disk_not_open : Int
+
+pub let vds_e_vd_is_attached : Int
+
+pub let vds_e_vd_is_being_attached : Int
+
+pub let vds_e_vd_is_being_detached : Int
+
+pub let vds_e_vd_not_attached_readonly : Int
+
+pub let vds_e_vdisk_invalid_op_state : Int
+
+pub let vds_e_vdisk_not_open : Int
+
+pub let vds_e_vdisk_pathname_invalid : Int
+
+pub let vds_e_volume_disk_count_max_exceeded : Int
+
+pub let vds_e_volume_extend_fve : Int
+
+pub let vds_e_volume_extend_fve_corrupt : Int
+
+pub let vds_e_volume_extend_fve_locked : Int
+
+pub let vds_e_volume_extend_fve_recovery : Int
+
+pub let vds_e_volume_guid_pathname_not_allowed : Int
+
+pub let vds_e_volume_has_path : Int
+
+pub let vds_e_volume_hidden : Int
+
+pub let vds_e_volume_incomplete : Int
+
+pub let vds_e_volume_invalid_name : Int
+
+pub let vds_e_volume_length_not_sector_size_multiple : Int
+
+pub let vds_e_volume_mirrored : Int
+
+pub let vds_e_volume_not_a_mirror : Int
+
+pub let vds_e_volume_not_found_in_pack : Int
+
+pub let vds_e_volume_not_healthy : Int
+
+pub let vds_e_volume_not_mounted : Int
+
+pub let vds_e_volume_not_online : Int
+
+pub let vds_e_volume_not_retained : Int
+
+pub let vds_e_volume_on_disk : Int
+
+pub let vds_e_volume_permanently_dismounted : Int
+
+pub let vds_e_volume_regenerating : Int
+
+pub let vds_e_volume_retained : Int
+
+pub let vds_e_volume_shrink_fve : Int
+
+pub let vds_e_volume_shrink_fve_corrupt : Int
+
+pub let vds_e_volume_shrink_fve_locked : Int
+
+pub let vds_e_volume_shrink_fve_recovery : Int
+
+pub let vds_e_volume_simple_spanned : Int
+
+pub let vds_e_volume_spans_disks : Int
+
+pub let vds_e_volume_synchronizing : Int
+
+pub let vds_e_volume_temporarily_dismounted : Int
+
+pub let vds_e_volume_too_big : Int
+
+pub let vds_e_volume_too_small : Int
+
+pub let vds_hint_allocatehotspare : Int
+
+pub let vds_hint_bustype : Int
+
+pub let vds_hint_consistencycheckenabled : Int
+
+pub let vds_hint_fastcrashrecoveryrequired : Int
+
+pub let vds_hint_hardwarechecksumenabled : Int
+
+pub let vds_hint_isyankable : Int
+
+pub let vds_hint_mediascanenabled : Int
+
+pub let vds_hint_mostlyreads : Int
+
+pub let vds_hint_optimizeforsequentialreads : Int
+
+pub let vds_hint_optimizeforsequentialwrites : Int
+
+pub let vds_hint_readbackverifyenabled : Int
+
+pub let vds_hint_readcachingenabled : Int
+
+pub let vds_hint_remapenabled : Int
+
+pub let vds_hint_usemirroredcache : Int
+
+pub let vds_hint_writecachingenabled : Int
+
+pub let vds_hint_writethroughcachingenabled : Int
+
+pub let vds_nf_drive_letter_assign : UInt
+
+pub let vds_nf_drive_letter_free : UInt
+
+pub let vds_nf_file_system_shrinking_progress : UInt
+
+pub let vds_nf_mount_points_change : UInt
+
+pub let vds_nf_partition_arrive : UInt
+
+pub let vds_nf_partition_depart : UInt
+
+pub let vds_nf_partition_modify : UInt
+
+pub let vds_nf_portal_arrive : UInt
+
+pub let vds_nf_portal_depart : UInt
+
+pub let vds_nf_portal_group_arrive : UInt
+
+pub let vds_nf_portal_group_depart : UInt
+
+pub let vds_nf_portal_group_modify : UInt
+
+pub let vds_nf_portal_modify : UInt
+
+pub let vds_nf_service_out_of_sync : UInt
+
+pub let vds_nf_sub_system_arrive : UInt
+
+pub let vds_nf_sub_system_depart : UInt
+
+pub let vds_nf_sub_system_modify : UInt
+
+pub let vds_nf_target_arrive : UInt
+
+pub let vds_nf_target_depart : UInt
+
+pub let vds_nf_target_modify : UInt
+
+pub let vds_nf_volume_arrive : UInt
+
+pub let vds_nf_volume_depart : UInt
+
+pub let vds_nf_volume_modify : UInt
+
+pub let vds_nf_volume_rebuilding_progress : UInt
+
+pub let vds_pool_attrib_accs_bdw_wt_hint : Int
+
+pub let vds_pool_attrib_accs_dir_hint : Int
+
+pub let vds_pool_attrib_accs_ltncy_hint : Int
+
+pub let vds_pool_attrib_accs_rndm_hint : Int
+
+pub let vds_pool_attrib_accs_size_hint : Int
+
+pub let vds_pool_attrib_allow_spindown : Int
+
+pub let vds_pool_attrib_bustype : Int
+
+pub let vds_pool_attrib_custom_attrib : Int
+
+pub let vds_pool_attrib_data_avl_hint : Int
+
+pub let vds_pool_attrib_data_rdncy_def : Int
+
+pub let vds_pool_attrib_data_rdncy_max : Int
+
+pub let vds_pool_attrib_data_rdncy_min : Int
+
+pub let vds_pool_attrib_no_single_pof : Int
+
+pub let vds_pool_attrib_num_clmns : Int
+
+pub let vds_pool_attrib_num_clmns_def : Int
+
+pub let vds_pool_attrib_num_clmns_max : Int
+
+pub let vds_pool_attrib_num_clmns_min : Int
+
+pub let vds_pool_attrib_pkg_rdncy_def : Int
+
+pub let vds_pool_attrib_pkg_rdncy_max : Int
+
+pub let vds_pool_attrib_pkg_rdncy_min : Int
+
+pub let vds_pool_attrib_raidtype : Int
+
+pub let vds_pool_attrib_stor_cost_hint : Int
+
+pub let vds_pool_attrib_stor_effcy_hint : Int
+
+pub let vds_pool_attrib_stripe_size : Int
+
+pub let vds_pool_attrib_stripe_size_def : Int
+
+pub let vds_pool_attrib_stripe_size_max : Int
+
+pub let vds_pool_attrib_stripe_size_min : Int
+
+pub let vds_pool_attrib_thin_provision : Int
+
+pub let vds_rebuild_priority_max : UInt
+
+pub let vds_rebuild_priority_min : UInt
+
+pub let vds_s_access_path_not_deleted : Int
+
+pub let vds_s_already_exists : Int
+
+pub let vds_s_boot_partition_number_change : Int
+
+pub let vds_s_default_plex_member_ids : Int
+
+pub let vds_s_disk_dismount_failed : Int
+
+pub let vds_s_disk_is_missing : Int
+
+pub let vds_s_disk_mount_failed : Int
+
+pub let vds_s_disk_partially_cleaned : Int
+
+pub let vds_s_dismount_failed : Int
+
+pub let vds_s_extend_file_system_failed : Int
+
+pub let vds_s_fs_lock : Int
+
+pub let vds_s_gpt_boot_mirrored_to_mbr : Int
+
+pub let vds_s_ia64_boot_mirrored_to_mbr : Int
+
+pub let vds_s_in_progress : Int
+
+pub let vds_s_iscsi_login_alread_exists : Int
+
+pub let vds_s_iscsi_persistent_login_may_not_be_removed : Int
+
+pub let vds_s_iscsi_session_not_found_persistent_login_removed : Int
+
+pub let vds_s_mbr_boot_mirrored_to_gpt : Int
+
+pub let vds_s_name_truncated : Int
+
+pub let vds_s_no_notification : Int
+
+pub let vds_s_nonconformant_partition_info : Int
+
+pub let vds_s_plex_not_loaded_to_cache : Int
+
+pub let vds_s_properties_incomplete : Int
+
+pub let vds_s_provider_error_loading_cache : Int
+
+pub let vds_s_remount_failed : Int
+
+pub let vds_s_resync_notification_task_failed : Int
+
+pub let vds_s_statuses_incompletely_set : Int
+
+pub let vds_s_system_partition : Int
+
+pub let vds_s_unable_to_get_gpt_attributes : Int
+
+pub let vds_s_update_bootfile_failed : Int
+
+pub let vds_s_volume_compress_failed : Int
+
+pub let vds_s_vss_flush_and_hold_writes : Int
+
+pub let vds_s_vss_release_writes : Int
+
+pub let vds_s_winpe_bootentry : Int
+
+pub let ver_vds_lun_information : UInt
+
+// Errors
+
+// Types and methods
+
+// Type aliases
+pub using @130da6dca438993c {type CHANGEATTRIBUTESPARAMETERS_ebb740350abc as CHANGEATTRIBUTESPARAMETERS}
+
+pub using @130da6dca438993c {type CHANGEATTRIBUTESPARAMETERSAnonymousEUnion_efe2a2e245dc as CHANGEATTRIBUTESPARAMETERSAnonymousEUnion}
+
+pub using @130da6dca438993c {type CHANGEATTRIBUTESPARAMETERSAnonymousEUnionGptPartInfoEStruct_3e556dfd9c87 as CHANGEATTRIBUTESPARAMETERSAnonymousEUnionGptPartInfoEStruct}
+
+pub using @130da6dca438993c {type CHANGEATTRIBUTESPARAMETERSAnonymousEUnionMbrPartInfoEStruct_9167a1f45fac as CHANGEATTRIBUTESPARAMETERSAnonymousEUnionMbrPartInfoEStruct}
+
+pub using @130da6dca438993c {type CHANGEPARTITIONTYPEPARAMETERS_c9a0ef3d9208 as CHANGEPARTITIONTYPEPARAMETERS}
+
+pub using @130da6dca438993c {type CHANGEPARTITIONTYPEPARAMETERSAnonymousEUnion_03e91a7cce5a as CHANGEPARTITIONTYPEPARAMETERSAnonymousEUnion}
+
+pub using @130da6dca438993c {type CHANGEPARTITIONTYPEPARAMETERSAnonymousEUnionGptPartInfoEStruct_05aaef125fcf as CHANGEPARTITIONTYPEPARAMETERSAnonymousEUnionGptPartInfoEStruct}
+
+pub using @130da6dca438993c {type CHANGEPARTITIONTYPEPARAMETERSAnonymousEUnionMbrPartInfoEStruct_e93dd6cdeb93 as CHANGEPARTITIONTYPEPARAMETERSAnonymousEUnionMbrPartInfoEStruct}
+
+pub using @130da6dca438993c {type CREATEPARTITIONPARAMETERS_2d3fd7efeff3 as CREATEPARTITIONPARAMETERS}
+
+pub using @130da6dca438993c {type CREATEPARTITIONPARAMETERSAnonymousEUnion_5e20d41bcd34 as CREATEPARTITIONPARAMETERSAnonymousEUnion}
+
+pub using @130da6dca438993c {type CREATEPARTITIONPARAMETERSAnonymousEUnionGptPartInfoEStruct_d078556aab92 as CREATEPARTITIONPARAMETERSAnonymousEUnionGptPartInfoEStruct}
+
+pub using @130da6dca438993c {type CREATEPARTITIONPARAMETERSAnonymousEUnionMbrPartInfoEStruct_0d2419b0f5bc as CREATEPARTITIONPARAMETERSAnonymousEUnionMbrPartInfoEStruct}
+
+pub using @130da6dca438993c {type IEnumVdsObject_56bc8ce555f8 as IEnumVdsObject}
+
+pub using @130da6dca438993c {type IVdsAdmin_9e7fc4b7fc34 as IVdsAdmin}
+
+pub using @130da6dca438993c {type IVdsAdvancedDisk_f811bb4702f6 as IVdsAdvancedDisk}
+
+pub using @130da6dca438993c {type IVdsAdvancedDisk2_b85f25002f73 as IVdsAdvancedDisk2}
+
+pub using @130da6dca438993c {type IVdsAdvancedDisk3_c4bc9ff0183c as IVdsAdvancedDisk3}
+
+pub using @130da6dca438993c {type IVdsAdviseSink_bb9003e7b842 as IVdsAdviseSink}
+
+pub using @130da6dca438993c {type IVdsAsync_b959d286de1f as IVdsAsync}
+
+pub using @130da6dca438993c {type IVdsController_13b043c4a610 as IVdsController}
+
+pub using @130da6dca438993c {type IVdsControllerControllerPort_c74de77e282e as IVdsControllerControllerPort}
+
+pub using @130da6dca438993c {type IVdsControllerPort_7d4d1fe18ebe as IVdsControllerPort}
+
+pub using @130da6dca438993c {type IVdsCreatePartitionEx_e71c998f94f0 as IVdsCreatePartitionEx}
+
+pub using @130da6dca438993c {type IVdsDisk_82441e8c6574 as IVdsDisk}
+
+pub using @130da6dca438993c {type IVdsDisk2_b2dc986be795 as IVdsDisk2}
+
+pub using @130da6dca438993c {type IVdsDisk3_bac5a7b37fa1 as IVdsDisk3}
+
+pub using @130da6dca438993c {type IVdsDiskOnline_4f6ec79960a6 as IVdsDiskOnline}
+
+pub using @130da6dca438993c {type IVdsDiskPartitionMF_3c10fc6c9c1b as IVdsDiskPartitionMF}
+
+pub using @130da6dca438993c {type IVdsDiskPartitionMF2_2770ee46cd91 as IVdsDiskPartitionMF2}
+
+pub using @130da6dca438993c {type IVdsDrive_6e63c66e5dbc as IVdsDrive}
+
+pub using @130da6dca438993c {type IVdsDrive2_9ed802454c2c as IVdsDrive2}
+
+pub using @130da6dca438993c {type IVdsHbaPort_3a900ea7d728 as IVdsHbaPort}
+
+pub using @130da6dca438993c {type IVdsHwProvider_08ada1eea04f as IVdsHwProvider}
+
+pub using @130da6dca438993c {type IVdsHwProviderPrivate_2c241280abe6 as IVdsHwProviderPrivate}
+
+pub using @130da6dca438993c {type IVdsHwProviderPrivateMpio_5cb091ce5bae as IVdsHwProviderPrivateMpio}
+
+pub using @130da6dca438993c {type IVdsHwProviderStoragePools_c6a866563780 as IVdsHwProviderStoragePools}
+
+pub using @130da6dca438993c {type IVdsHwProviderType_37ca071bc9a7 as IVdsHwProviderType}
+
+pub using @130da6dca438993c {type IVdsHwProviderType2_2d44d58a7d64 as IVdsHwProviderType2}
+
+pub using @130da6dca438993c {type IVdsIscsiInitiatorAdapter_9aafde9db8c4 as IVdsIscsiInitiatorAdapter}
+
+pub using @130da6dca438993c {type IVdsIscsiInitiatorPortal_1dea3bfba209 as IVdsIscsiInitiatorPortal}
+
+pub using @130da6dca438993c {type IVdsIscsiPortal_80ff7c2f747e as IVdsIscsiPortal}
+
+pub using @130da6dca438993c {type IVdsIscsiPortalGroup_dcb435d01951 as IVdsIscsiPortalGroup}
+
+pub using @130da6dca438993c {type IVdsIscsiPortalLocal_f43a09b47cc5 as IVdsIscsiPortalLocal}
+
+pub using @130da6dca438993c {type IVdsIscsiTarget_ebff3da78390 as IVdsIscsiTarget}
+
+pub using @130da6dca438993c {type IVdsLun_07dc56cbd002 as IVdsLun}
+
+pub using @130da6dca438993c {type IVdsLun2_8107bd87d281 as IVdsLun2}
+
+pub using @130da6dca438993c {type IVdsLunControllerPorts_ead1dfba5475 as IVdsLunControllerPorts}
+
+pub using @130da6dca438993c {type IVdsLunIscsi_af79871079fa as IVdsLunIscsi}
+
+pub using @130da6dca438993c {type IVdsLunMpio_39093ac890c5 as IVdsLunMpio}
+
+pub using @130da6dca438993c {type IVdsLunNaming_3f1f51337a97 as IVdsLunNaming}
+
+pub using @130da6dca438993c {type IVdsLunNumber_3c42314b5ea7 as IVdsLunNumber}
+
+pub using @130da6dca438993c {type IVdsLunPlex_988c13e5626c as IVdsLunPlex}
+
+pub using @130da6dca438993c {type IVdsMaintenance_5ae3b068fc86 as IVdsMaintenance}
+
+pub using @130da6dca438993c {type IVdsOpenVDisk_b00fe436bf9e as IVdsOpenVDisk}
+
+pub using @130da6dca438993c {type IVdsPack_fb7163c46899 as IVdsPack}
+
+pub using @130da6dca438993c {type IVdsPack2_8789933128a1 as IVdsPack2}
+
+pub using @130da6dca438993c {type IVdsProvider_4cd888d146c6 as IVdsProvider}
+
+pub using @130da6dca438993c {type IVdsProviderPrivate_d6d017b3417c as IVdsProviderPrivate}
+
+pub using @130da6dca438993c {type IVdsProviderSupport_21ff6685e8fa as IVdsProviderSupport}
+
+pub using @130da6dca438993c {type IVdsRemovable_cc4b08ec8217 as IVdsRemovable}
+
+pub using @130da6dca438993c {type IVdsService_4a9c17c58932 as IVdsService}
+
+pub using @130da6dca438993c {type IVdsServiceHba_2cb467d96c7a as IVdsServiceHba}
+
+pub using @130da6dca438993c {type IVdsServiceInitialization_1f2da4a120bd as IVdsServiceInitialization}
+
+pub using @130da6dca438993c {type IVdsServiceIscsi_94aee5ab75d0 as IVdsServiceIscsi}
+
+pub using @130da6dca438993c {type IVdsServiceLoader_65821bd387b2 as IVdsServiceLoader}
+
+pub using @130da6dca438993c {type IVdsServiceSAN_2b01c3c04d3f as IVdsServiceSAN}
+
+pub using @130da6dca438993c {type IVdsServiceSw_03278db25274 as IVdsServiceSw}
+
+pub using @130da6dca438993c {type IVdsServiceUninstallDisk_70dc656f551b as IVdsServiceUninstallDisk}
+
+pub using @130da6dca438993c {type IVdsStoragePool_a974ee3d65c0 as IVdsStoragePool}
+
+pub using @130da6dca438993c {type IVdsSubSystem_224837f4dba4 as IVdsSubSystem}
+
+pub using @130da6dca438993c {type IVdsSubSystem2_be5161f35fb3 as IVdsSubSystem2}
+
+pub using @130da6dca438993c {type IVdsSubSystemImportTarget_856a972a5373 as IVdsSubSystemImportTarget}
+
+pub using @130da6dca438993c {type IVdsSubSystemInterconnect_f384aa84c68b as IVdsSubSystemInterconnect}
+
+pub using @130da6dca438993c {type IVdsSubSystemIscsi_261bd187d1da as IVdsSubSystemIscsi}
+
+pub using @130da6dca438993c {type IVdsSubSystemNaming_fbf125ae80ec as IVdsSubSystemNaming}
+
+pub using @130da6dca438993c {type IVdsSwProvider_b74c60b46d88 as IVdsSwProvider}
+
+pub using @130da6dca438993c {type IVdsVDisk_4000e4a234d6 as IVdsVDisk}
+
+pub using @130da6dca438993c {type IVdsVdProvider_908f2bf63ac8 as IVdsVdProvider}
+
+pub using @130da6dca438993c {type IVdsVolume_a0a57bcd3270 as IVdsVolume}
+
+pub using @130da6dca438993c {type IVdsVolume2_f53dd77304ab as IVdsVolume2}
+
+pub using @130da6dca438993c {type IVdsVolumeMF_6af3293bd235 as IVdsVolumeMF}
+
+pub using @130da6dca438993c {type IVdsVolumeMF2_9769ac1c479f as IVdsVolumeMF2}
+
+pub using @130da6dca438993c {type IVdsVolumeMF3_2644074ebcc6 as IVdsVolumeMF3}
+
+pub using @130da6dca438993c {type IVdsVolumeOnline_6671a4c03497 as IVdsVolumeOnline}
+
+pub using @130da6dca438993c {type IVdsVolumePlex_31564d375c52 as IVdsVolumePlex}
+
+pub using @130da6dca438993c {type IVdsVolumeShrink_43cbd91d8dde as IVdsVolumeShrink}
+
+pub using @130da6dca438993c {type VDSADVANCEDDISKPROP_6997a0f12576 as VDSADVANCEDDISKPROP}
+
+pub using @130da6dca438993c {type VDSADVANCEDDISKPROPAnonymousEUnion_9f3c761b9f65 as VDSADVANCEDDISKPROPAnonymousEUnion}
+
+pub using @130da6dca438993c {type VDSASYNCOUTPUT_80f11560a14f as VDSASYNCOUTPUT}
+
+pub using @130da6dca438993c {type VDSASYNCOUTPUTAnonymousEUnion_83139c1b8c8d as VDSASYNCOUTPUTAnonymousEUnion}
+
+pub using @130da6dca438993c {type VDSASYNCOUTPUTAnonymousEUnionBvp_682f5e11bfbe as VDSASYNCOUTPUTAnonymousEUnionBvp}
+
+pub using @130da6dca438993c {type VDSASYNCOUTPUTAnonymousEUnionCl_5029b9083fba as VDSASYNCOUTPUTAnonymousEUnionCl}
+
+pub using @130da6dca438993c {type VDSASYNCOUTPUTAnonymousEUnionCp_112ec156a8d2 as VDSASYNCOUTPUTAnonymousEUnionCp}
+
+pub using @130da6dca438993c {type VDSASYNCOUTPUTAnonymousEUnionCpg_96f5f39cc2fe as VDSASYNCOUTPUTAnonymousEUnionCpg}
+
+pub using @130da6dca438993c {type VDSASYNCOUTPUTAnonymousEUnionCt_ca083a62643c as VDSASYNCOUTPUTAnonymousEUnionCt}
+
+pub using @130da6dca438993c {type VDSASYNCOUTPUTAnonymousEUnionCv_5fde2bbe71ee as VDSASYNCOUTPUTAnonymousEUnionCv}
+
+pub using @130da6dca438993c {type VDSASYNCOUTPUTAnonymousEUnionCvd_0de37a17eb3f as VDSASYNCOUTPUTAnonymousEUnionCvd}
+
+pub using @130da6dca438993c {type VDSASYNCOUTPUTAnonymousEUnionSv_9fef87ac27ec as VDSASYNCOUTPUTAnonymousEUnionSv}
+
+pub using @130da6dca438993c {type VDSASYNCOUTPUTTYPE_29cfe5aca518 as VDSASYNCOUTPUTTYPE}
+
+pub using @130da6dca438993c {type VDSCONTROLLERNOTIFICATION_048b0ac5b6ce as VDSCONTROLLERNOTIFICATION}
+
+pub using @130da6dca438993c {type VDSCONTROLLERPROP_350b5f24c26d as VDSCONTROLLERPROP}
+
+pub using @130da6dca438993c {type VDSCONTROLLERSTATUS_6ffe663545fb as VDSCONTROLLERSTATUS}
+
+pub using @130da6dca438993c {type VDSCREATEVDISKPARAMETERS_10c8a4e4a3dd as VDSCREATEVDISKPARAMETERS}
+
+pub using @130da6dca438993c {type VDSDISKEXTENT_a131591a13cb as VDSDISKEXTENT}
+
+pub using @130da6dca438993c {type VDSDISKEXTENTTYPE_37238fd71926 as VDSDISKEXTENTTYPE}
+
+pub using @130da6dca438993c {type VDSDISKFLAG_fba03971ddc7 as VDSDISKFLAG}
+
+pub using @130da6dca438993c {type VDSDISKFREEEXTENT_5501137a85ef as VDSDISKFREEEXTENT}
+
+pub using @130da6dca438993c {type VDSDISKNOTIFICATION_a3b23a50ba12 as VDSDISKNOTIFICATION}
+
+pub using @130da6dca438993c {type VDSDISKOFFLINEREASON_bd326613257a as VDSDISKOFFLINEREASON}
+
+pub using @130da6dca438993c {type VDSDISKPROP_8a7c9cd24867 as VDSDISKPROP}
+
+pub using @130da6dca438993c {type VDSDISKPROP2_986815616b5b as VDSDISKPROP2}
+
+pub using @130da6dca438993c {type VDSDISKPROP2AnonymousEUnion_200059d38ec6 as VDSDISKPROP2AnonymousEUnion}
+
+pub using @130da6dca438993c {type VDSDISKPROPAnonymousEUnion_dcee2839c1f4 as VDSDISKPROPAnonymousEUnion}
+
+pub using @130da6dca438993c {type VDSDISKSTATUS_6eb70ccdbf66 as VDSDISKSTATUS}
+
+pub using @130da6dca438993c {type VDSDRIVEEXTENT_4622eed2629d as VDSDRIVEEXTENT}
+
+pub using @130da6dca438993c {type VDSDRIVEFLAG_85e5ca6c811f as VDSDRIVEFLAG}
+
+pub using @130da6dca438993c {type VDSDRIVELETTERFLAG_e3e6c322b0be as VDSDRIVELETTERFLAG}
+
+pub using @130da6dca438993c {type VDSDRIVELETTERNOTIFICATION_a0ed7cc177bf as VDSDRIVELETTERNOTIFICATION}
+
+pub using @130da6dca438993c {type VDSDRIVELETTERPROP_6b0715c080c4 as VDSDRIVELETTERPROP}
+
+pub using @130da6dca438993c {type VDSDRIVENOTIFICATION_d45442421e32 as VDSDRIVENOTIFICATION}
+
+pub using @130da6dca438993c {type VDSDRIVEPROP_6b5f67127064 as VDSDRIVEPROP}
+
+pub using @130da6dca438993c {type VDSDRIVEPROP2_3cfd14d94675 as VDSDRIVEPROP2}
+
+pub using @130da6dca438993c {type VDSDRIVESTATUS_57ff7c53c2bc as VDSDRIVESTATUS}
+
+pub using @130da6dca438993c {type VDSFILESYSTEMFLAG_9a7fb6766fb2 as VDSFILESYSTEMFLAG}
+
+pub using @130da6dca438993c {type VDSFILESYSTEMFORMATSUPPORTFLAG_b9a3048cb712 as VDSFILESYSTEMFORMATSUPPORTFLAG}
+
+pub using @130da6dca438993c {type VDSFILESYSTEMFORMATSUPPORTPROP_131f172c95be as VDSFILESYSTEMFORMATSUPPORTPROP}
+
+pub using @130da6dca438993c {type VDSFILESYSTEMNOTIFICATION_d147e03ac55a as VDSFILESYSTEMNOTIFICATION}
+
+pub using @130da6dca438993c {type VDSFILESYSTEMPROP_be5e6eb6551b as VDSFILESYSTEMPROP}
+
+pub using @130da6dca438993c {type VDSFILESYSTEMPROPFLAG_ee535ded2b3a as VDSFILESYSTEMPROPFLAG}
+
+pub using @130da6dca438993c {type VDSFILESYSTEMTYPE_471c6eaf8bb9 as VDSFILESYSTEMTYPE}
+
+pub using @130da6dca438993c {type VDSFILESYSTEMTYPEPROP_cc9dfbf794ae as VDSFILESYSTEMTYPEPROP}
+
+pub using @130da6dca438993c {type VDSFORMATOPTIONFLAGS_3c2c4f9b8608 as VDSFORMATOPTIONFLAGS}
+
+pub using @130da6dca438993c {type VDSHBAPORTPROP_a4c68e22d808 as VDSHBAPORTPROP}
+
+pub using @130da6dca438993c {type VDSHBAPORTSPEEDFLAG_2464cf336d21 as VDSHBAPORTSPEEDFLAG}
+
+pub using @130da6dca438993c {type VDSHBAPORTSTATUS_75efbb03b44b as VDSHBAPORTSTATUS}
+
+pub using @130da6dca438993c {type VDSHBAPORTTYPE_2dfde9ba77a0 as VDSHBAPORTTYPE}
+
+pub using @130da6dca438993c {type VDSHEALTH_52d268642d67 as VDSHEALTH}
+
+pub using @130da6dca438993c {type VDSHINTS_f12d384e6532 as VDSHINTS}
+
+pub using @130da6dca438993c {type VDSHINTS2_709a522bc7a2 as VDSHINTS2}
+
+pub using @130da6dca438993c {type VDSHWPROVIDERTYPE_1b1aac6098b1 as VDSHWPROVIDERTYPE}
+
+pub using @130da6dca438993c {type VDSINPUTDISK_50c91b546493 as VDSINPUTDISK}
+
+pub using @130da6dca438993c {type VDSINTERCONNECT_5f70b20e38e6 as VDSINTERCONNECT}
+
+pub using @130da6dca438993c {type VDSINTERCONNECTADDRESSTYPE_cb445c51680e as VDSINTERCONNECTADDRESSTYPE}
+
+pub using @130da6dca438993c {type VDSINTERCONNECTFLAG_718766fd3651 as VDSINTERCONNECTFLAG}
+
+pub using @130da6dca438993c {type VDSIPADDRESS_629aa816a041 as VDSIPADDRESS}
+
+pub using @130da6dca438993c {type VDSIPADDRESSTYPE_4323849e80f6 as VDSIPADDRESSTYPE}
+
+pub using @130da6dca438993c {type VDSISCSIAUTHTYPE_7f5fc0a57c1c as VDSISCSIAUTHTYPE}
+
+pub using @130da6dca438993c {type VDSISCSIINITIATORADAPTERPROP_650e6734dc7d as VDSISCSIINITIATORADAPTERPROP}
+
+pub using @130da6dca438993c {type VDSISCSIINITIATORPORTALPROP_c5da44a92bcf as VDSISCSIINITIATORPORTALPROP}
+
+pub using @130da6dca438993c {type VDSISCSIIPSECFLAG_6c288caa21bc as VDSISCSIIPSECFLAG}
+
+pub using @130da6dca438993c {type VDSISCSIIPSECKEY_bbf427c8659a as VDSISCSIIPSECKEY}
+
+pub using @130da6dca438993c {type VDSISCSILOGINFLAG_ccebf5cc1ad5 as VDSISCSILOGINFLAG}
+
+pub using @130da6dca438993c {type VDSISCSILOGINTYPE_d0f7e075a161 as VDSISCSILOGINTYPE}
+
+pub using @130da6dca438993c {type VDSISCSIPORTALGROUPPROP_c765dbe6ea7f as VDSISCSIPORTALGROUPPROP}
+
+pub using @130da6dca438993c {type VDSISCSIPORTALPROP_a1c19fd13344 as VDSISCSIPORTALPROP}
+
+pub using @130da6dca438993c {type VDSISCSIPORTALSTATUS_1741b2b97741 as VDSISCSIPORTALSTATUS}
+
+pub using @130da6dca438993c {type VDSISCSISHAREDSECRET_f76d5497ab43 as VDSISCSISHAREDSECRET}
+
+pub using @130da6dca438993c {type VDSISCSITARGETPROP_080b5d21c799 as VDSISCSITARGETPROP}
+
+pub using @130da6dca438993c {type VDSLOADBALANCEPOLICYENUM_409a85e441ba as VDSLOADBALANCEPOLICYENUM}
+
+pub using @130da6dca438993c {type VDSLUNFLAG_68d6a849c1c5 as VDSLUNFLAG}
+
+pub using @130da6dca438993c {type VDSLUNINFORMATION_d1370c582ec9 as VDSLUNINFORMATION}
+
+pub using @130da6dca438993c {type VDSLUNNOTIFICATION_0293dd4bc754 as VDSLUNNOTIFICATION}
+
+pub using @130da6dca438993c {type VDSLUNPLEXFLAG_f660014ab1a8 as VDSLUNPLEXFLAG}
+
+pub using @130da6dca438993c {type VDSLUNPLEXPROP_6df2e19d20b8 as VDSLUNPLEXPROP}
+
+pub using @130da6dca438993c {type VDSLUNPLEXSTATUS_b33e7193398e as VDSLUNPLEXSTATUS}
+
+pub using @130da6dca438993c {type VDSLUNPLEXTYPE_13c41a2198c3 as VDSLUNPLEXTYPE}
+
+pub using @130da6dca438993c {type VDSLUNPROP_8d6e2a0b54f1 as VDSLUNPROP}
+
+pub using @130da6dca438993c {type VDSLUNRESERVEMODE_3a09a1e1fbc2 as VDSLUNRESERVEMODE}
+
+pub using @130da6dca438993c {type VDSLUNSTATUS_ac19a9d9a186 as VDSLUNSTATUS}
+
+pub using @130da6dca438993c {type VDSLUNTYPE_3416935331b1 as VDSLUNTYPE}
+
+pub using @130da6dca438993c {type VDSMAINTENANCEOPERATION_5905b367eaf3 as VDSMAINTENANCEOPERATION}
+
+pub using @130da6dca438993c {type VDSMOUNTPOINTNOTIFICATION_9d9c16a422fb as VDSMOUNTPOINTNOTIFICATION}
+
+pub using @130da6dca438993c {type VDSNFCONTROLLER_f991983454a5 as VDSNFCONTROLLER}
+
+pub using @130da6dca438993c {type VDSNFDISK_daf6382824b6 as VDSNFDISK}
+
+pub using @130da6dca438993c {type VDSNFDRIVE_932dde95c6c4 as VDSNFDRIVE}
+
+pub using @130da6dca438993c {type VDSNFFILESYSTEM_9f22af98b2c5 as VDSNFFILESYSTEM}
+
+pub using @130da6dca438993c {type VDSNFLUN_83bd2342e76e as VDSNFLUN}
+
+pub using @130da6dca438993c {type VDSNFPACK_c84d9032749f as VDSNFPACK}
+
+pub using @130da6dca438993c {type VDSNFPORT_3605a89106b1 as VDSNFPORT}
+
+pub using @130da6dca438993c {type VDSNOTIFICATION_d334a1181ce6 as VDSNOTIFICATION}
+
+pub using @130da6dca438993c {type VDSNOTIFICATIONAnonymousEUnion_b1a8446dba7f as VDSNOTIFICATIONAnonymousEUnion}
+
+pub using @130da6dca438993c {type VDSNOTIFICATIONTARGETTYPE_da8dbf76312c as VDSNOTIFICATIONTARGETTYPE}
+
+pub using @130da6dca438993c {type VDSOBJECTTYPE_ebc012916ff3 as VDSOBJECTTYPE}
+
+pub using @130da6dca438993c {type VDSPACKFLAG_4b049b9de7d7 as VDSPACKFLAG}
+
+pub using @130da6dca438993c {type VDSPACKNOTIFICATION_84352d572201 as VDSPACKNOTIFICATION}
+
+pub using @130da6dca438993c {type VDSPACKPROP_7e283db5aae1 as VDSPACKPROP}
+
+pub using @130da6dca438993c {type VDSPACKSTATUS_627ef31929fa as VDSPACKSTATUS}
+
+pub using @130da6dca438993c {type VDSPARTITIONFLAG_e84b81e36699 as VDSPARTITIONFLAG}
+
+pub using @130da6dca438993c {type VDSPARTITIONINFOGPT_74ac3c5d29f3 as VDSPARTITIONINFOGPT}
+
+pub using @130da6dca438993c {type VDSPARTITIONINFOMBR_74b66d2a3fe2 as VDSPARTITIONINFOMBR}
+
+pub using @130da6dca438993c {type VDSPARTITIONINFORMATIONEX_f4c06e805190 as VDSPARTITIONINFORMATIONEX}
+
+pub using @130da6dca438993c {type VDSPARTITIONINFORMATIONEXAnonymousEUnion_1a03e2ab5975 as VDSPARTITIONINFORMATIONEXAnonymousEUnion}
+
+pub using @130da6dca438993c {type VDSPARTITIONNOTIFICATION_fa5f64af1612 as VDSPARTITIONNOTIFICATION}
+
+pub using @130da6dca438993c {type VDSPARTITIONPROP_4f94565ee9cf as VDSPARTITIONPROP}
+
+pub using @130da6dca438993c {type VDSPARTITIONPROPAnonymousEUnion_52accfa0d643 as VDSPARTITIONPROPAnonymousEUnion}
+
+pub using @130da6dca438993c {type VDSPARTITIONSTYLE_32f540e6687e as VDSPARTITIONSTYLE}
+
+pub using @130da6dca438993c {type VDSPARTITIONSTYLE_72fc0aecf4e0 as VDSPARTITIONSTYLE_no_args}
+
+pub using @130da6dca438993c {type VDSPATHID_ac9741954c57 as VDSPATHID}
+
+pub using @130da6dca438993c {type VDSPATHINFO_342ede62cd3f as VDSPATHINFO}
+
+pub using @130da6dca438993c {type VDSPATHINFOAnonymous1EUnion_3b43f745d227 as VDSPATHINFOAnonymous1EUnion}
+
+pub using @130da6dca438993c {type VDSPATHINFOAnonymous2EUnion_a06f099af954 as VDSPATHINFOAnonymous2EUnion}
+
+pub using @130da6dca438993c {type VDSPATHINFOAnonymous3EUnion_c6207cfa1623 as VDSPATHINFOAnonymous3EUnion}
+
+pub using @130da6dca438993c {type VDSPATHPOLICY_6698aff940ab as VDSPATHPOLICY}
+
+pub using @130da6dca438993c {type VDSPATHSTATUS_b14c16358b64 as VDSPATHSTATUS}
+
+pub using @130da6dca438993c {type VDSPOOLATTRIBUTES_ec65f97a7892 as VDSPOOLATTRIBUTES}
+
+pub using @130da6dca438993c {type VDSPOOLCUSTOMATTRIBUTES_56e8fd898198 as VDSPOOLCUSTOMATTRIBUTES}
+
+pub using @130da6dca438993c {type VDSPORTALGROUPNOTIFICATION_dd85d17ee606 as VDSPORTALGROUPNOTIFICATION}
+
+pub using @130da6dca438993c {type VDSPORTALNOTIFICATION_010b2cde1237 as VDSPORTALNOTIFICATION}
+
+pub using @130da6dca438993c {type VDSPORTNOTIFICATION_2618be1a40f0 as VDSPORTNOTIFICATION}
+
+pub using @130da6dca438993c {type VDSPORTPROP_5625a818bbc0 as VDSPORTPROP}
+
+pub using @130da6dca438993c {type VDSPORTSTATUS_33cdf287ebf7 as VDSPORTSTATUS}
+
+pub using @130da6dca438993c {type VDSPROVIDERFLAG_af6338fddb5a as VDSPROVIDERFLAG}
+
+pub using @130da6dca438993c {type VDSPROVIDERLBSUPPORTFLAG_136cca8694a5 as VDSPROVIDERLBSUPPORTFLAG}
+
+pub using @130da6dca438993c {type VDSPROVIDERPROP_18094b531fdf as VDSPROVIDERPROP}
+
+pub using @130da6dca438993c {type VDSPROVIDERTYPE_bcb2ee19543b as VDSPROVIDERTYPE}
+
+pub using @130da6dca438993c {type VDSQUERYPROVIDERFLAG_dcf505cd5487 as VDSQUERYPROVIDERFLAG}
+
+pub using @130da6dca438993c {type VDSRAIDTYPE_511bbd2d04b6 as VDSRAIDTYPE}
+
+pub using @130da6dca438993c {type VDSRECOVERACTION_3b9194a3277b as VDSRECOVERACTION}
+
+pub using @130da6dca438993c {type VDSREPARSEPOINTPROP_11cd4dc72ee7 as VDSREPARSEPOINTPROP}
+
+pub using @130da6dca438993c {type VDSSANPOLICY_b2e6a7756b78 as VDSSANPOLICY}
+
+pub using @130da6dca438993c {type VDSSERVICEFLAG_016ab022016b as VDSSERVICEFLAG}
+
+pub using @130da6dca438993c {type VDSSERVICENOTIFICATION_440c50546a0a as VDSSERVICENOTIFICATION}
+
+pub using @130da6dca438993c {type VDSSERVICEPROP_8ea998332892 as VDSSERVICEPROP}
+
+pub using @130da6dca438993c {type VDSSTORAGEBUSTYPE_bf69b93240db as VDSSTORAGEBUSTYPE}
+
+pub using @130da6dca438993c {type VDSSTORAGEDEVICEIDDESCRIPTOR_c44f3440dc15 as VDSSTORAGEDEVICEIDDESCRIPTOR}
+
+pub using @130da6dca438993c {type VDSSTORAGEIDENTIFIER_dd4636eaf4fd as VDSSTORAGEIDENTIFIER}
+
+pub using @130da6dca438993c {type VDSSTORAGEIDENTIFIERCODESET_96d4b8bc52ed as VDSSTORAGEIDENTIFIERCODESET}
+
+pub using @130da6dca438993c {type VDSSTORAGEIDENTIFIERTYPE_f13d9b7103b4 as VDSSTORAGEIDENTIFIERTYPE}
+
+pub using @130da6dca438993c {type VDSSTORAGEPOOLDRIVEEXTENT_a256dea186fa as VDSSTORAGEPOOLDRIVEEXTENT}
+
+pub using @130da6dca438993c {type VDSSTORAGEPOOLPROP_85c022de15ec as VDSSTORAGEPOOLPROP}
+
+pub using @130da6dca438993c {type VDSSTORAGEPOOLSTATUS_de4d87bfa1cb as VDSSTORAGEPOOLSTATUS}
+
+pub using @130da6dca438993c {type VDSSTORAGEPOOLTYPE_64ff4574cb35 as VDSSTORAGEPOOLTYPE}
+
+pub using @130da6dca438993c {type VDSSUBSYSTEMFLAG_32f119d0a536 as VDSSUBSYSTEMFLAG}
+
+pub using @130da6dca438993c {type VDSSUBSYSTEMNOTIFICATION_b1f408c3ee5f as VDSSUBSYSTEMNOTIFICATION}
+
+pub using @130da6dca438993c {type VDSSUBSYSTEMPROP_676cf9cb3624 as VDSSUBSYSTEMPROP}
+
+pub using @130da6dca438993c {type VDSSUBSYSTEMPROP2_e5e9c3723fd9 as VDSSUBSYSTEMPROP2}
+
+pub using @130da6dca438993c {type VDSSUBSYSTEMSTATUS_0756791b494b as VDSSUBSYSTEMSTATUS}
+
+pub using @130da6dca438993c {type VDSSUBSYSTEMSUPPORTEDRAIDTYPEFLAG_e2516ee2629b as VDSSUBSYSTEMSUPPORTEDRAIDTYPEFLAG}
+
+pub using @130da6dca438993c {type VDSTARGETNOTIFICATION_809069f4fafb as VDSTARGETNOTIFICATION}
+
+pub using @130da6dca438993c {type VDSTRANSITIONSTATE_b2603e79abb8 as VDSTRANSITIONSTATE}
+
+pub using @130da6dca438993c {type VDSVDISKPROPERTIES_9ebed7bd0029 as VDSVDISKPROPERTIES}
+
+pub using @130da6dca438993c {type VDSVDISKSTATE_efba2f53b64d as VDSVDISKSTATE}
+
+pub using @130da6dca438993c {type VDSVERSIONSUPPORTFLAG_10bb8397304d as VDSVERSIONSUPPORTFLAG}
+
+pub using @130da6dca438993c {type VDSVOLUMEFLAG_09ea4fa0c318 as VDSVOLUMEFLAG}
+
+pub using @130da6dca438993c {type VDSVOLUMENOTIFICATION_a1adfbeec976 as VDSVOLUMENOTIFICATION}
+
+pub using @130da6dca438993c {type VDSVOLUMEPLEXPROP_617b38a4367d as VDSVOLUMEPLEXPROP}
+
+pub using @130da6dca438993c {type VDSVOLUMEPLEXSTATUS_15a1b7c8d27a as VDSVOLUMEPLEXSTATUS}
+
+pub using @130da6dca438993c {type VDSVOLUMEPLEXTYPE_046b649974ce as VDSVOLUMEPLEXTYPE}
+
+pub using @130da6dca438993c {type VDSVOLUMEPROP_2ae711b108f0 as VDSVOLUMEPROP}
+
+pub using @130da6dca438993c {type VDSVOLUMEPROP2_6977b0f16ab1 as VDSVOLUMEPROP2}
+
+pub using @130da6dca438993c {type VDSVOLUMESTATUS_ea01498124ce as VDSVOLUMESTATUS}
+
+pub using @130da6dca438993c {type VDSVOLUMETYPE_cceb7fcefc0c as VDSVOLUMETYPE}
+
+pub using @130da6dca438993c {type VDSWWN_6f011616e708 as VDSWWN}
+
+// Traits

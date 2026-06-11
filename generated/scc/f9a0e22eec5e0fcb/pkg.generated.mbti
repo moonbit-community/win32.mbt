@@ -1,0 +1,90 @@
+// Generated using `moon info`, DON'T EDIT IT
+package "moonbit-community/win32api/scc/f9a0e22eec5e0fcb"
+
+import {
+  "moonbit-community/win32api/runtime/core",
+  "moonbit-community/win32api/runtime/strings",
+  "moonbitlang/core/debug",
+  "moonbitlang/core/ref",
+}
+
+// Values
+pub let calendar_service_815e6b8ada0f : Int
+
+pub let contacts_service_d15c1a026b25 : Int
+
+pub let device_status_service_ada08f2dc7be : Int
+
+pub fn from_id_33ffa8076ac4_raw(@core.RawAddress, @core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn from_id_c6425c471380_raw(@core.RawAddress, @core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_device_selector_793e85ef5198_raw(@core.RawAddress, Int, @ref.Ref[UInt64]) -> Int
+
+pub fn get_device_selector_83c3d32804bd_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_device_selector_a9901f9c71a0_raw(@core.RawAddress, Int, @ref.Ref[UInt64]) -> Int
+
+pub fn get_device_selector_f694b646f65d_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_device_selector_from_service_id_008c075dd31f_raw(@core.RawAddress, Bytes, @ref.Ref[UInt64]) -> Int
+
+pub fn get_device_selector_from_service_id_d352ad7e34a5_raw(@core.RawAddress, Bytes, @ref.Ref[UInt64]) -> Int
+
+pub let notes_service_97a942dff2f6 : Int
+
+pub let portable_device_contract_de39a51e8640_alignment : Int
+
+pub let portable_device_contract_de39a51e8640_size : Int
+
+pub let ringtones_service_97b3b2ea9f37 : Int
+
+pub let sms_service_c45556a99964 : Int
+
+pub let tasks_service_ef86c6788b62 : Int
+
+// Errors
+
+// Types and methods
+pub type IServiceDeviceStatics_1ebafa0de1c9
+
+pub type IStorageDeviceStatics_44a4dca6b8e9
+
+pub(all) struct PortableDeviceContract_de39a51e8640 {
+  raw_buffer : @core.NativeBuffer
+}
+pub fn PortableDeviceContract_de39a51e8640::abi_alignment() -> Int
+pub fn PortableDeviceContract_de39a51e8640::abi_size() -> Int
+pub fn PortableDeviceContract_de39a51e8640::bytes(Self) -> Bytes raise @core.WindowsError
+pub fn PortableDeviceContract_de39a51e8640::from_bytes(Bytes) -> Self raise @core.WindowsError
+pub fn PortableDeviceContract_de39a51e8640::new() -> Self raise @core.WindowsError
+pub fn PortableDeviceContract_de39a51e8640::raw_address(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn[T] PortableDeviceContract_de39a51e8640::with_raw_address(Self, (@core.RawAddress) -> T raise?) -> T raise
+pub impl Eq for PortableDeviceContract_de39a51e8640
+pub impl @debug.Debug for PortableDeviceContract_de39a51e8640
+
+pub(all) struct ServiceDeviceType_a4ad001841aa(Int) derive(Compare, Eq, @debug.Debug)
+pub fn ServiceDeviceType_a4ad001841aa::calendar_service() -> Self
+pub fn ServiceDeviceType_a4ad001841aa::contacts_service() -> Self
+pub fn ServiceDeviceType_a4ad001841aa::device_status_service() -> Self
+pub fn ServiceDeviceType_a4ad001841aa::from_int(Int) -> Self
+pub fn ServiceDeviceType_a4ad001841aa::notes_service() -> Self
+pub fn ServiceDeviceType_a4ad001841aa::ringtones_service() -> Self
+pub fn ServiceDeviceType_a4ad001841aa::sms_service() -> Self
+pub fn ServiceDeviceType_a4ad001841aa::tasks_service() -> Self
+pub fn ServiceDeviceType_a4ad001841aa::to_int(Self) -> Int
+
+pub type ServiceDevice_f90761fe39ac
+pub fn ServiceDevice_f90761fe39ac::get_device_selector(ServiceDeviceType_a4ad001841aa) -> @strings.HString raise @core.WindowsError
+pub fn ServiceDevice_f90761fe39ac::get_device_selector_from_service_id(@core.Guid) -> @strings.HString raise @core.WindowsError
+pub fn ServiceDevice_f90761fe39ac::get_device_selector_from_service_id_raw(@core.RawAddress, Bytes, @ref.Ref[UInt64]) -> Int
+pub fn ServiceDevice_f90761fe39ac::get_device_selector_raw(@core.RawAddress, Int, @ref.Ref[UInt64]) -> Int
+
+pub type StorageDevice_df38113d1acf
+pub fn StorageDevice_df38113d1acf::from_id_raw(@core.RawAddress, @core.RawAddress, @ref.Ref[UInt64]) -> Int
+pub fn StorageDevice_df38113d1acf::get_device_selector() -> @strings.HString raise @core.WindowsError
+pub fn StorageDevice_df38113d1acf::get_device_selector_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+// Type aliases
+
+// Traits

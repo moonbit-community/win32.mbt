@@ -1,0 +1,336 @@
+// Generated using `moon info`, DON'T EDIT IT
+package "moonbit-community/win32api/windows/win32/devices/geolocation"
+
+import {
+  "moonbit-community/win32api/scc/cf7d519c4cfaf573",
+}
+
+// Values
+pub let breadcrumbing_unsupported : UInt
+
+pub let breadcrumbing_version_1 : UInt
+
+pub let gnss_agnssformat_lto : UInt
+
+pub let gnss_agnssformat_xtra1 : UInt
+
+pub let gnss_agnssformat_xtra2 : UInt
+
+pub let gnss_agnssformat_xtra3 : UInt
+
+pub let gnss_agnssformat_xtra3_1 : UInt
+
+pub let gnss_agnssformat_xtra3_2 : UInt
+
+pub let gnss_agnssformat_xtra_int : UInt
+
+pub let gnss_driver_version_1 : UInt
+
+pub let gnss_driver_version_2 : UInt
+
+pub let gnss_driver_version_3 : UInt
+
+pub let gnss_driver_version_4 : UInt
+
+pub let gnss_driver_version_5 : UInt
+
+pub let gnss_driver_version_6 : UInt
+
+pub let gnss_fixdetail_accuracy : UInt
+
+pub let gnss_fixdetail_basic : UInt
+
+pub let gnss_fixdetail_satellite : UInt
+
+pub let gnss_geofencesupport_circle : UInt
+
+pub let gnss_geofencesupport_supported : UInt
+
+pub let gnss_maxsatellite : UInt
+
+pub let gnss_nmealogging_all : UInt
+
+pub let gnss_nmealogging_none : UInt
+
+pub let gnss_opermode_aflt : UInt
+
+pub let gnss_opermode_any : UInt
+
+pub let gnss_opermode_cellid : UInt
+
+pub let gnss_opermode_msa : UInt
+
+pub let gnss_opermode_msb : UInt
+
+pub let gnss_opermode_mss : UInt
+
+pub let gnss_opermode_otdoa : UInt
+
+pub let gnss_satellite_any : UInt
+
+pub let gnss_satellite_beidou : UInt
+
+pub let gnss_satellite_galileo : UInt
+
+pub let gnss_satellite_glonass : UInt
+
+pub let gnss_satellite_gps : UInt
+
+pub let ioctl_gnss_config_supl_cert : UInt
+
+pub let ioctl_gnss_create_geofence : UInt
+
+pub let ioctl_gnss_delete_geofence : UInt
+
+pub let ioctl_gnss_execute_cwtest : UInt
+
+pub let ioctl_gnss_execute_selftest : UInt
+
+pub let ioctl_gnss_get_chipsetinfo : UInt
+
+pub let ioctl_gnss_get_device_capability : UInt
+
+pub let ioctl_gnss_get_fixdata : UInt
+
+pub let ioctl_gnss_inject_agnss : UInt
+
+pub let ioctl_gnss_listen_agnss : UInt
+
+pub let ioctl_gnss_listen_breadcrumbing_alert : UInt
+
+pub let ioctl_gnss_listen_driver_request : UInt
+
+pub let ioctl_gnss_listen_error : UInt
+
+pub let ioctl_gnss_listen_geofence_alert : UInt
+
+pub let ioctl_gnss_listen_geofences_trackingstatus : UInt
+
+pub let ioctl_gnss_listen_ni : UInt
+
+pub let ioctl_gnss_listen_nmea : UInt
+
+pub let ioctl_gnss_modify_fixsession : UInt
+
+pub let ioctl_gnss_pop_breadcrumbs : UInt
+
+pub let ioctl_gnss_respond_ni : UInt
+
+pub let ioctl_gnss_send_drivercommand : UInt
+
+pub let ioctl_gnss_send_platform_capability : UInt
+
+pub let ioctl_gnss_set_supl_hslp : UInt
+
+pub let ioctl_gnss_set_v2_upl_config : UInt
+
+pub let ioctl_gnss_start_breadcrumbing : UInt
+
+pub let ioctl_gnss_start_fixsession : UInt
+
+pub let ioctl_gnss_stop_breadcrumbing : UInt
+
+pub let ioctl_gnss_stop_fixsession : UInt
+
+pub let location_api_version : UInt
+
+pub let max_server_url_name : UInt
+
+pub let min_breadcrumbs_supported : UInt
+
+pub let min_geofences_required : UInt
+
+// Errors
+
+// Types and methods
+
+// Type aliases
+pub using @cf7d519c4cfaf573 {type CivicAddressReport_a3f5a5809dcd as CivicAddressReport}
+
+pub using @cf7d519c4cfaf573 {type CivicAddressReportFactory_ab4e0ffbb0e3 as CivicAddressReportFactory}
+
+pub using @cf7d519c4cfaf573 {type DefaultLocation_1b3906c3b04c as DefaultLocation}
+
+pub using @cf7d519c4cfaf573 {type DispCivicAddressReport_15eec4ece019 as DispCivicAddressReport}
+
+pub using @cf7d519c4cfaf573 {type DispLatLongReport_cbb1dc6df68b as DispLatLongReport}
+
+pub using @cf7d519c4cfaf573 {type GNSSAGNSSINJECT_7915babe2a9c as GNSSAGNSSINJECT}
+
+pub using @cf7d519c4cfaf573 {type GNSSAGNSSINJECTAnonymousEUnion_cf3e4c05597e as GNSSAGNSSINJECTAnonymousEUnion}
+
+pub using @cf7d519c4cfaf573 {type GNSSAGNSSINJECTBLOB_522b8509b354 as GNSSAGNSSINJECTBLOB}
+
+pub using @cf7d519c4cfaf573 {type GNSSAGNSSINJECTPOSITION_362889c79097 as GNSSAGNSSINJECTPOSITION}
+
+pub using @cf7d519c4cfaf573 {type GNSSAGNSSINJECTTIME_b997891a16e5 as GNSSAGNSSINJECTTIME}
+
+pub using @cf7d519c4cfaf573 {type GNSSAGNSSREQUESTPARAM_719151c72c34 as GNSSAGNSSREQUESTPARAM}
+
+pub using @cf7d519c4cfaf573 {type GNSSAGNSSREQUESTTYPE_9ca8668c2fb8 as GNSSAGNSSREQUESTTYPE}
+
+pub using @cf7d519c4cfaf573 {type GNSSBREADCRUMBINGALERTDATA_d70c6ab1851e as GNSSBREADCRUMBINGALERTDATA}
+
+pub using @cf7d519c4cfaf573 {type GNSSBREADCRUMBINGPARAM_42f34c7fafc2 as GNSSBREADCRUMBINGPARAM}
+
+pub using @cf7d519c4cfaf573 {type GNSSBREADCRUMBLIST_29011518f26f as GNSSBREADCRUMBLIST}
+
+pub using @cf7d519c4cfaf573 {type GNSSBREADCRUMBLISTAnonymousEUnion_355e88340738 as GNSSBREADCRUMBLISTAnonymousEUnion}
+
+pub using @cf7d519c4cfaf573 {type GNSSBREADCRUMBV1_ce822b0e3502 as GNSSBREADCRUMBV1}
+
+pub using @cf7d519c4cfaf573 {type GNSSCHIPSETINFO_46c11f6a0aad as GNSSCHIPSETINFO}
+
+pub using @cf7d519c4cfaf573 {type GNSSCONTINUOUSTRACKINGPARAM_84e288ae378c as GNSSCONTINUOUSTRACKINGPARAM}
+
+pub using @cf7d519c4cfaf573 {type GNSSCPNIINFO_0666c8e78c98 as GNSSCPNIINFO}
+
+pub using @cf7d519c4cfaf573 {type GNSSCWTESTDATA_63ce03d0b297 as GNSSCWTESTDATA}
+
+pub using @cf7d519c4cfaf573 {type GNSSDEVICECAPABILITY_99457d214fe4 as GNSSDEVICECAPABILITY}
+
+pub using @cf7d519c4cfaf573 {type GNSSDISTANCETRACKINGPARAM_253c637579cb as GNSSDISTANCETRACKINGPARAM}
+
+pub using @cf7d519c4cfaf573 {type GNSSDRIVERCOMMANDPARAM_652c434904ca as GNSSDRIVERCOMMANDPARAM}
+
+pub using @cf7d519c4cfaf573 {type GNSSDRIVERCOMMANDTYPE_55ce7b3d5d2a as GNSSDRIVERCOMMANDTYPE}
+
+pub using @cf7d519c4cfaf573 {type GNSSDRIVERREQUEST_8ce1f39756e7 as GNSSDRIVERREQUEST}
+
+pub using @cf7d519c4cfaf573 {type GNSSDRIVERREQUESTDATA_3e83e7a3837d as GNSSDRIVERREQUESTDATA}
+
+pub using @cf7d519c4cfaf573 {type GNSSERRORINFO_0a407238d570 as GNSSERRORINFO}
+
+pub using @cf7d519c4cfaf573 {type GNSSEVENT_309bdef6184f as GNSSEVENT}
+
+pub using @cf7d519c4cfaf573 {type GNSSEVENT2_7c6973830685 as GNSSEVENT2}
+
+pub using @cf7d519c4cfaf573 {type GNSSEVENT2AnonymousEUnion_c3b1c0d7bbf3 as GNSSEVENT2AnonymousEUnion}
+
+pub using @cf7d519c4cfaf573 {type GNSSEVENTAnonymousEUnion_476b93e73792 as GNSSEVENTAnonymousEUnion}
+
+pub using @cf7d519c4cfaf573 {type GNSSEVENTTYPE_5b5d49453226 as GNSSEVENTTYPE}
+
+pub using @cf7d519c4cfaf573 {type GNSSFIXDATA_8f46e9da4fa5 as GNSSFIXDATA}
+
+pub using @cf7d519c4cfaf573 {type GNSSFIXDATA2_a44479adac5b as GNSSFIXDATA2}
+
+pub using @cf7d519c4cfaf573 {type GNSSFIXDATAACCURACY_d11bfe75f1cb as GNSSFIXDATAACCURACY}
+
+pub using @cf7d519c4cfaf573 {type GNSSFIXDATAACCURACY2_3c1b6c7b46eb as GNSSFIXDATAACCURACY2}
+
+pub using @cf7d519c4cfaf573 {type GNSSFIXDATABASIC_299330cc97ec as GNSSFIXDATABASIC}
+
+pub using @cf7d519c4cfaf573 {type GNSSFIXDATABASIC2_4c372d1779e6 as GNSSFIXDATABASIC2}
+
+pub using @cf7d519c4cfaf573 {type GNSSFIXDATASATELLITE_410ffa9c0db9 as GNSSFIXDATASATELLITE}
+
+pub using @cf7d519c4cfaf573 {type GNSSFIXSESSIONPARAM_7385c3a2725b as GNSSFIXSESSIONPARAM}
+
+pub using @cf7d519c4cfaf573 {type GNSSFIXSESSIONPARAMAnonymousEUnion_2521c8f21afc as GNSSFIXSESSIONPARAMAnonymousEUnion}
+
+pub using @cf7d519c4cfaf573 {type GNSSFIXSESSIONTYPE_e5befdc63a7f as GNSSFIXSESSIONTYPE}
+
+pub using @cf7d519c4cfaf573 {type GNSSGEOFENCEALERTDATA_e1db325abeef as GNSSGEOFENCEALERTDATA}
+
+pub using @cf7d519c4cfaf573 {type GNSSGEOFENCECREATEPARAM_d5cafe4c5a75 as GNSSGEOFENCECREATEPARAM}
+
+pub using @cf7d519c4cfaf573 {type GNSSGEOFENCECREATERESPONSE_aeb379097f82 as GNSSGEOFENCECREATERESPONSE}
+
+pub using @cf7d519c4cfaf573 {type GNSSGEOFENCEDELETEPARAM_bc5fd89ea8e1 as GNSSGEOFENCEDELETEPARAM}
+
+pub using @cf7d519c4cfaf573 {type GNSSGEOFENCESTATE_45d22219073d as GNSSGEOFENCESTATE}
+
+pub using @cf7d519c4cfaf573 {type GNSSGEOFENCESTRACKINGSTATUSDATA_47f2806de3e1 as GNSSGEOFENCESTRACKINGSTATUSDATA}
+
+pub using @cf7d519c4cfaf573 {type GNSSGEOREGION_0c07d1b85380 as GNSSGEOREGION}
+
+pub using @cf7d519c4cfaf573 {type GNSSGEOREGIONAnonymousEUnion_89fa4a440620 as GNSSGEOREGIONAnonymousEUnion}
+
+pub using @cf7d519c4cfaf573 {type GNSSGEOREGIONCIRCLE_21135db37de0 as GNSSGEOREGIONCIRCLE}
+
+pub using @cf7d519c4cfaf573 {type GNSSGEOREGIONTYPE_d12972cf5a30 as GNSSGEOREGIONTYPE}
+
+pub using @cf7d519c4cfaf573 {type GNSSLKGFIXPARAM_2d486d24b917 as GNSSLKGFIXPARAM}
+
+pub using @cf7d519c4cfaf573 {type GNSSNINOTIFICATIONTYPE_5eb8daffa978 as GNSSNINOTIFICATIONTYPE}
+
+pub using @cf7d519c4cfaf573 {type GNSSNIPLANETYPE_aaa110cf9f4e as GNSSNIPLANETYPE}
+
+pub using @cf7d519c4cfaf573 {type GNSSNIREQUESTPARAM_ab3d72cc1faa as GNSSNIREQUESTPARAM}
+
+pub using @cf7d519c4cfaf573 {type GNSSNIREQUESTPARAMAnonymousEUnion_9c1d8111b680 as GNSSNIREQUESTPARAMAnonymousEUnion}
+
+pub using @cf7d519c4cfaf573 {type GNSSNIREQUESTTYPE_7022a65bea54 as GNSSNIREQUESTTYPE}
+
+pub using @cf7d519c4cfaf573 {type GNSSNIRESPONSE_0ea2f3f06062 as GNSSNIRESPONSE}
+
+pub using @cf7d519c4cfaf573 {type GNSSNIUSERRESPONSE_75966003b5b9 as GNSSNIUSERRESPONSE}
+
+pub using @cf7d519c4cfaf573 {type GNSSNMEADATA_a50491198c43 as GNSSNMEADATA}
+
+pub using @cf7d519c4cfaf573 {type GNSSPLATFORMCAPABILITY_f987b0a4430b as GNSSPLATFORMCAPABILITY}
+
+pub using @cf7d519c4cfaf573 {type GNSSSATELLITEINFO_43690d25cb12 as GNSSSATELLITEINFO}
+
+pub using @cf7d519c4cfaf573 {type GNSSSELFTESTCONFIG_8ad86e87ff33 as GNSSSELFTESTCONFIG}
+
+pub using @cf7d519c4cfaf573 {type GNSSSELFTESTRESULT_b43f4606ba7e as GNSSSELFTESTRESULT}
+
+pub using @cf7d519c4cfaf573 {type GNSSSINGLESHOTPARAM_347baa97443e as GNSSSINGLESHOTPARAM}
+
+pub using @cf7d519c4cfaf573 {type GNSSSTOPFIXSESSIONPARAM_71752adf0c73 as GNSSSTOPFIXSESSIONPARAM}
+
+pub using @cf7d519c4cfaf573 {type GNSSSUPLCERTACTION_6ed043ff0d7e as GNSSSUPLCERTACTION}
+
+pub using @cf7d519c4cfaf573 {type GNSSSUPLCERTCONFIG_a299d05ee00d as GNSSSUPLCERTCONFIG}
+
+pub using @cf7d519c4cfaf573 {type GNSSSUPLHSLPCONFIG_b48e5bd09a7c as GNSSSUPLHSLPCONFIG}
+
+pub using @cf7d519c4cfaf573 {type GNSSSUPLNIINFO_a55e024e01d8 as GNSSSUPLNIINFO}
+
+pub using @cf7d519c4cfaf573 {type GNSSSUPLVERSION_a24cf248cc8d as GNSSSUPLVERSION}
+
+pub using @cf7d519c4cfaf573 {type GNSSSUPLVERSION2_33ae886776c7 as GNSSSUPLVERSION2}
+
+pub using @cf7d519c4cfaf573 {type GNSSV2UPLCONFIG_ef54aeb125dc as GNSSV2UPLCONFIG}
+
+pub using @cf7d519c4cfaf573 {type GNSSV2UPLNIINFO_156b8437905f as GNSSV2UPLNIINFO}
+
+pub using @cf7d519c4cfaf573 {type ICivicAddressReport_607080f0468b as ICivicAddressReport}
+
+pub using @cf7d519c4cfaf573 {type ICivicAddressReportFactory_080a3294ad78 as ICivicAddressReportFactory}
+
+pub using @cf7d519c4cfaf573 {type ICivicAddressReportFactoryEvents_9db5f69333eb as ICivicAddressReportFactoryEvents}
+
+pub using @cf7d519c4cfaf573 {type IDefaultLocation_92bd77750bba as IDefaultLocation}
+
+pub using @cf7d519c4cfaf573 {type IDispCivicAddressReport_d71dec3267aa as IDispCivicAddressReport}
+
+pub using @cf7d519c4cfaf573 {type IDispLatLongReport_b036bc18a45d as IDispLatLongReport}
+
+pub using @cf7d519c4cfaf573 {type ILatLongReport_832c9626216f as ILatLongReport}
+
+pub using @cf7d519c4cfaf573 {type ILatLongReportFactory_8e5f0b59c0eb as ILatLongReportFactory}
+
+pub using @cf7d519c4cfaf573 {type ILatLongReportFactoryEvents_07e8f596290a as ILatLongReportFactoryEvents}
+
+pub using @cf7d519c4cfaf573 {type ILocation_226afbe9f2e7 as ILocation}
+
+pub using @cf7d519c4cfaf573 {type ILocationEvents_18079a57c02c as ILocationEvents}
+
+pub using @cf7d519c4cfaf573 {type ILocationPower_a03e3993fac6 as ILocationPower}
+
+pub using @cf7d519c4cfaf573 {type ILocationReport_ae9ca801e041 as ILocationReport}
+
+pub using @cf7d519c4cfaf573 {type ILocationReportFactory_7d3d2c7bdbc6 as ILocationReportFactory}
+
+pub using @cf7d519c4cfaf573 {type LOCATIONREPORTSTATUS_274e72ae7161 as LOCATIONREPORTSTATUS}
+
+pub using @cf7d519c4cfaf573 {type LatLongReport_95367dcd97e4 as LatLongReport}
+
+pub using @cf7d519c4cfaf573 {type LatLongReportFactory_6bb0ae409241 as LatLongReportFactory}
+
+pub using @cf7d519c4cfaf573 {type Location_abf7edca33eb as Location}
+
+// Traits

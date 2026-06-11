@@ -1,0 +1,523 @@
+// Generated using `moon info`, DON'T EDIT IT
+package "moonbit-community/win32api/windows/win32/network_management/w_net"
+
+import {
+  "moonbit-community/win32api/runtime/core",
+  "moonbit-community/win32api/runtime/strings",
+  "moonbit-community/win32api/scc/6698581bc4abfa5c",
+  "moonbit-community/win32api/scc/fb66f520d7e12332",
+}
+
+// Values
+pub fn multinet_get_connection_performance_a(@6698581bc4abfa5c.NETRESOURCEA_fe4d5a29bcf8, @6698581bc4abfa5c.NETCONNECTINFOSTRUCT_8c64a0927618) -> UInt raise @core.WindowsError
+
+pub fn multinet_get_connection_performance_a_raw(@core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn multinet_get_connection_performance_w(@6698581bc4abfa5c.NETRESOURCEW_6404ab10879c, @6698581bc4abfa5c.NETCONNECTINFOSTRUCT_8c64a0927618) -> UInt raise @core.WindowsError
+
+pub fn multinet_get_connection_performance_w_raw(@core.RawAddress, @core.RawAddress) -> UInt
+
+pub let netproperty_persistent : UInt
+
+pub let notify_post : UInt
+
+pub let notify_pre : UInt
+
+pub fn np_add_connection(@6698581bc4abfa5c.NETRESOURCEW_6404ab10879c, @core.RawAddress, @core.RawAddress) -> UInt raise @core.WindowsError
+
+pub fn np_add_connection3(@core.RawAddress, @6698581bc4abfa5c.NETRESOURCEW_6404ab10879c, @core.RawAddress, @core.RawAddress, @6698581bc4abfa5c.NETCONNECTFLAGS_594e617e4d3b) -> UInt raise @core.WindowsError
+
+pub fn np_add_connection3_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, UInt) -> UInt
+
+pub fn np_add_connection4(@core.RawAddress, @6698581bc4abfa5c.NETRESOURCEW_6404ab10879c, @core.RawAddress, UInt, UInt, @core.RawAddress, UInt) -> UInt raise @core.WindowsError
+
+pub fn np_add_connection4_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, UInt, UInt, @core.RawAddress, UInt) -> UInt
+
+pub fn np_add_connection_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn np_cancel_connection(@core.RawAddress, Int) -> UInt raise @core.WindowsError
+
+pub fn np_cancel_connection2(@core.RawAddress, Int, UInt) -> UInt raise @core.WindowsError
+
+pub fn np_cancel_connection2_raw(@core.RawAddress, Int, UInt) -> UInt
+
+pub fn np_cancel_connection_raw(@core.RawAddress, Int) -> UInt
+
+pub fn np_close_enum(@core.RawAddress) -> UInt raise @core.WindowsError
+
+pub fn np_close_enum_raw(@core.RawAddress) -> UInt
+
+pub fn np_enum_resource(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt raise @core.WindowsError
+
+pub fn np_enum_resource_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn np_format_network_name_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, UInt, UInt) -> UInt
+
+pub fn np_get_caps(UInt) -> UInt raise @core.WindowsError
+
+pub fn np_get_caps_raw(UInt) -> UInt
+
+pub fn np_get_connection3(@strings.PWStr, UInt, @core.RawAddress, @core.RawAddress) -> UInt raise @core.WindowsError
+
+pub fn np_get_connection3_raw(@core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn np_get_connection_performance(@strings.PWStr, @6698581bc4abfa5c.NETCONNECTINFOSTRUCT_8c64a0927618) -> UInt raise @core.WindowsError
+
+pub fn np_get_connection_performance_raw(@core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn np_get_connection_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn np_get_persistent_use_options_for_connection(@core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> UInt raise @core.WindowsError
+
+pub fn np_get_persistent_use_options_for_connection_raw(@core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn np_get_resource_information(@6698581bc4abfa5c.NETRESOURCEW_6404ab10879c, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt raise @core.WindowsError
+
+pub fn np_get_resource_information_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn np_get_resource_parent(@6698581bc4abfa5c.NETRESOURCEW_6404ab10879c, @core.RawAddress, @core.RawAddress) -> UInt raise @core.WindowsError
+
+pub fn np_get_resource_parent_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn np_get_universal_name(@strings.PWStr, @6698581bc4abfa5c.UNCINFOLEVEL_3cb3fc59f405, @core.RawAddress, @core.RawAddress) -> UInt raise @core.WindowsError
+
+pub fn np_get_universal_name_raw(@core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn np_get_user_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn np_open_enum(UInt, UInt, UInt, @6698581bc4abfa5c.NETRESOURCEW_6404ab10879c?, @core.RawAddress) -> UInt raise @core.WindowsError
+
+pub fn np_open_enum_raw(UInt, UInt, UInt, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub let resource_recent : UInt
+
+pub let resourcedisplaytype_directory : UInt
+
+pub let resourcedisplaytype_ndscontainer : UInt
+
+pub let resourcedisplaytype_network : UInt
+
+pub let resourcedisplaytype_root : UInt
+
+pub let resourcedisplaytype_shareadmin : UInt
+
+pub let resourcetype_reserved : UInt
+
+pub let resourcetype_unknown : UInt
+
+pub let resourceusage_nolocaldevice : UInt
+
+pub let resourceusage_reserved : UInt
+
+pub let resourceusage_sibling : UInt
+
+pub fn w_net_add_connection2_a(@6698581bc4abfa5c.NETRESOURCEA_fe4d5a29bcf8, @strings.PStr?, @strings.PStr?, @6698581bc4abfa5c.NETCONNECTFLAGS_594e617e4d3b) -> @fb66f520d7e12332.WIN32ERROR_de7527e5f234 raise @core.WindowsError
+
+pub fn w_net_add_connection2_a_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, UInt) -> UInt
+
+pub fn w_net_add_connection2_w(@6698581bc4abfa5c.NETRESOURCEW_6404ab10879c, @strings.PWStr?, @strings.PWStr?, @6698581bc4abfa5c.NETCONNECTFLAGS_594e617e4d3b) -> @fb66f520d7e12332.WIN32ERROR_de7527e5f234 raise @core.WindowsError
+
+pub fn w_net_add_connection2_w_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, UInt) -> UInt
+
+pub fn w_net_add_connection3_a(@core.RawAddress, @6698581bc4abfa5c.NETRESOURCEA_fe4d5a29bcf8, @strings.PStr?, @strings.PStr?, @6698581bc4abfa5c.NETCONNECTFLAGS_594e617e4d3b) -> @fb66f520d7e12332.WIN32ERROR_de7527e5f234 raise @core.WindowsError
+
+pub fn w_net_add_connection3_a_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, UInt) -> UInt
+
+pub fn w_net_add_connection3_w(@core.RawAddress, @6698581bc4abfa5c.NETRESOURCEW_6404ab10879c, @strings.PWStr?, @strings.PWStr?, @6698581bc4abfa5c.NETCONNECTFLAGS_594e617e4d3b) -> @fb66f520d7e12332.WIN32ERROR_de7527e5f234 raise @core.WindowsError
+
+pub fn w_net_add_connection3_w_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, UInt) -> UInt
+
+pub fn w_net_add_connection4_a(@core.RawAddress, @6698581bc4abfa5c.NETRESOURCEA_fe4d5a29bcf8, @core.RawAddress, UInt, @6698581bc4abfa5c.NETCONNECTFLAGS_594e617e4d3b, @core.RawAddress, UInt) -> @fb66f520d7e12332.WIN32ERROR_de7527e5f234 raise @core.WindowsError
+
+pub fn w_net_add_connection4_a_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, UInt, UInt, @core.RawAddress, UInt) -> UInt
+
+pub fn w_net_add_connection4_w(@core.RawAddress, @6698581bc4abfa5c.NETRESOURCEW_6404ab10879c, @core.RawAddress, UInt, @6698581bc4abfa5c.NETCONNECTFLAGS_594e617e4d3b, @core.RawAddress, UInt) -> @fb66f520d7e12332.WIN32ERROR_de7527e5f234 raise @core.WindowsError
+
+pub fn w_net_add_connection4_w_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, UInt, UInt, @core.RawAddress, UInt) -> UInt
+
+pub fn w_net_add_connection_a(@strings.PStr, @strings.PStr?, @strings.PStr?) -> @fb66f520d7e12332.WIN32ERROR_de7527e5f234 raise @core.WindowsError
+
+pub fn w_net_add_connection_a_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn w_net_add_connection_w(@strings.PWStr, @strings.PWStr?, @strings.PWStr?) -> @fb66f520d7e12332.WIN32ERROR_de7527e5f234 raise @core.WindowsError
+
+pub fn w_net_add_connection_w_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn w_net_cancel_connection2_a(@strings.PStr, @6698581bc4abfa5c.NETCONNECTFLAGS_594e617e4d3b, Int) -> @fb66f520d7e12332.WIN32ERROR_de7527e5f234 raise @core.WindowsError
+
+pub fn w_net_cancel_connection2_a_raw(@core.RawAddress, UInt, Int) -> UInt
+
+pub fn w_net_cancel_connection2_w(@strings.PWStr, @6698581bc4abfa5c.NETCONNECTFLAGS_594e617e4d3b, Int) -> @fb66f520d7e12332.WIN32ERROR_de7527e5f234 raise @core.WindowsError
+
+pub fn w_net_cancel_connection2_w_raw(@core.RawAddress, UInt, Int) -> UInt
+
+pub fn w_net_cancel_connection_a(@strings.PStr, Int) -> @fb66f520d7e12332.WIN32ERROR_de7527e5f234 raise @core.WindowsError
+
+pub fn w_net_cancel_connection_a_raw(@core.RawAddress, Int) -> UInt
+
+pub fn w_net_cancel_connection_w(@strings.PWStr, Int) -> @fb66f520d7e12332.WIN32ERROR_de7527e5f234 raise @core.WindowsError
+
+pub fn w_net_cancel_connection_w_raw(@core.RawAddress, Int) -> UInt
+
+pub fn w_net_close_enum(@core.RawAddress) -> @fb66f520d7e12332.WIN32ERROR_de7527e5f234 raise @core.WindowsError
+
+pub fn w_net_close_enum_raw(@core.RawAddress) -> UInt
+
+pub fn w_net_connection_dialog(@core.RawAddress, UInt) -> @fb66f520d7e12332.WIN32ERROR_de7527e5f234 raise @core.WindowsError
+
+pub fn w_net_connection_dialog1_a(@6698581bc4abfa5c.CONNECTDLGSTRUCTA_79537e153b6a) -> @fb66f520d7e12332.WIN32ERROR_de7527e5f234 raise @core.WindowsError
+
+pub fn w_net_connection_dialog1_a_raw(@core.RawAddress) -> UInt
+
+pub fn w_net_connection_dialog1_w(@6698581bc4abfa5c.CONNECTDLGSTRUCTW_5671543904f3) -> @fb66f520d7e12332.WIN32ERROR_de7527e5f234 raise @core.WindowsError
+
+pub fn w_net_connection_dialog1_w_raw(@core.RawAddress) -> UInt
+
+pub fn w_net_connection_dialog_raw(@core.RawAddress, UInt) -> UInt
+
+pub fn w_net_disconnect_dialog(@core.RawAddress, UInt) -> @fb66f520d7e12332.WIN32ERROR_de7527e5f234 raise @core.WindowsError
+
+pub fn w_net_disconnect_dialog1_a(@6698581bc4abfa5c.DISCDLGSTRUCTA_e4fb35e909aa) -> @fb66f520d7e12332.WIN32ERROR_de7527e5f234 raise @core.WindowsError
+
+pub fn w_net_disconnect_dialog1_a_raw(@core.RawAddress) -> UInt
+
+pub fn w_net_disconnect_dialog1_w(@6698581bc4abfa5c.DISCDLGSTRUCTW_c5dc995e6aa0) -> @fb66f520d7e12332.WIN32ERROR_de7527e5f234 raise @core.WindowsError
+
+pub fn w_net_disconnect_dialog1_w_raw(@core.RawAddress) -> UInt
+
+pub fn w_net_disconnect_dialog_raw(@core.RawAddress, UInt) -> UInt
+
+pub fn w_net_enum_resource_a(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> @fb66f520d7e12332.WIN32ERROR_de7527e5f234 raise @core.WindowsError
+
+pub fn w_net_enum_resource_a_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn w_net_enum_resource_w(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> @fb66f520d7e12332.WIN32ERROR_de7527e5f234 raise @core.WindowsError
+
+pub fn w_net_enum_resource_w_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn w_net_get_connection_a(@strings.PStr, @core.RawAddress, @core.RawAddress) -> @fb66f520d7e12332.WIN32ERROR_de7527e5f234 raise @core.WindowsError
+
+pub fn w_net_get_connection_a_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn w_net_get_connection_w_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn w_net_get_last_error_a(@core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, UInt) -> @fb66f520d7e12332.WIN32ERROR_de7527e5f234 raise @core.WindowsError
+
+pub fn w_net_get_last_error_a_raw(@core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, UInt) -> @core.RawWin32Call[UInt]
+
+pub fn w_net_get_last_error_w(@core.RawAddress, @strings.PWStrBuffer, @strings.PWStrBuffer) -> @fb66f520d7e12332.WIN32ERROR_de7527e5f234 raise @core.WindowsError
+
+pub fn w_net_get_last_error_w_raw(@core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, UInt) -> @core.RawWin32Call[UInt]
+
+pub fn w_net_get_network_information_a(@strings.PStr, @6698581bc4abfa5c.NETINFOSTRUCT_dc9d469bacab) -> @fb66f520d7e12332.WIN32ERROR_de7527e5f234 raise @core.WindowsError
+
+pub fn w_net_get_network_information_a_raw(@core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn w_net_get_network_information_w(@strings.PWStr, @6698581bc4abfa5c.NETINFOSTRUCT_dc9d469bacab) -> @fb66f520d7e12332.WIN32ERROR_de7527e5f234 raise @core.WindowsError
+
+pub fn w_net_get_network_information_w_raw(@core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn w_net_get_provider_name_a(UInt, @core.RawAddress, @core.RawAddress) -> @fb66f520d7e12332.WIN32ERROR_de7527e5f234 raise @core.WindowsError
+
+pub fn w_net_get_provider_name_a_raw(UInt, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn w_net_get_provider_name_w_raw(UInt, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn w_net_get_resource_information_a(@6698581bc4abfa5c.NETRESOURCEA_fe4d5a29bcf8, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> @fb66f520d7e12332.WIN32ERROR_de7527e5f234 raise @core.WindowsError
+
+pub fn w_net_get_resource_information_a_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn w_net_get_resource_information_w(@6698581bc4abfa5c.NETRESOURCEW_6404ab10879c, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> @fb66f520d7e12332.WIN32ERROR_de7527e5f234 raise @core.WindowsError
+
+pub fn w_net_get_resource_information_w_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn w_net_get_resource_parent_a(@6698581bc4abfa5c.NETRESOURCEA_fe4d5a29bcf8, @core.RawAddress, @core.RawAddress) -> @fb66f520d7e12332.WIN32ERROR_de7527e5f234 raise @core.WindowsError
+
+pub fn w_net_get_resource_parent_a_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn w_net_get_resource_parent_w(@6698581bc4abfa5c.NETRESOURCEW_6404ab10879c, @core.RawAddress, @core.RawAddress) -> @fb66f520d7e12332.WIN32ERROR_de7527e5f234 raise @core.WindowsError
+
+pub fn w_net_get_resource_parent_w_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn w_net_get_universal_name_a(@strings.PStr, @6698581bc4abfa5c.UNCINFOLEVEL_3cb3fc59f405, @core.RawAddress, @core.RawAddress) -> @fb66f520d7e12332.WIN32ERROR_de7527e5f234 raise @core.WindowsError
+
+pub fn w_net_get_universal_name_a_raw(@core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn w_net_get_universal_name_w(@strings.PWStr, @6698581bc4abfa5c.UNCINFOLEVEL_3cb3fc59f405, @core.RawAddress, @core.RawAddress) -> @fb66f520d7e12332.WIN32ERROR_de7527e5f234 raise @core.WindowsError
+
+pub fn w_net_get_universal_name_w_raw(@core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn w_net_get_user_a(@strings.PStr?, @core.RawAddress, @core.RawAddress) -> @fb66f520d7e12332.WIN32ERROR_de7527e5f234 raise @core.WindowsError
+
+pub fn w_net_get_user_a_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn w_net_get_user_w_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn w_net_open_enum_a(@6698581bc4abfa5c.NETRESOURCESCOPE_b5fecb14fb7c, @6698581bc4abfa5c.NETRESOURCETYPE_1e913623342d, @6698581bc4abfa5c.WNETOPENENUMUSAGE_8ddbc030a174, @6698581bc4abfa5c.NETRESOURCEA_fe4d5a29bcf8?, @core.RawAddress) -> @fb66f520d7e12332.WIN32ERROR_de7527e5f234 raise @core.WindowsError
+
+pub fn w_net_open_enum_a_raw(UInt, UInt, UInt, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn w_net_open_enum_w(@6698581bc4abfa5c.NETRESOURCESCOPE_b5fecb14fb7c, @6698581bc4abfa5c.NETRESOURCETYPE_1e913623342d, @6698581bc4abfa5c.WNETOPENENUMUSAGE_8ddbc030a174, @6698581bc4abfa5c.NETRESOURCEW_6404ab10879c?, @core.RawAddress) -> @fb66f520d7e12332.WIN32ERROR_de7527e5f234 raise @core.WindowsError
+
+pub fn w_net_open_enum_w_raw(UInt, UInt, UInt, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn w_net_set_last_error_a(UInt, @core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn w_net_set_last_error_a_raw(UInt, @core.RawAddress, @core.RawAddress) -> Unit
+
+pub fn w_net_set_last_error_w(UInt, @core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn w_net_set_last_error_w_raw(UInt, @core.RawAddress, @core.RawAddress) -> Unit
+
+pub fn w_net_use_connection4_a(@core.RawAddress, @6698581bc4abfa5c.NETRESOURCEA_fe4d5a29bcf8, @core.RawAddress, UInt, UInt, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> @fb66f520d7e12332.WIN32ERROR_de7527e5f234 raise @core.WindowsError
+
+pub fn w_net_use_connection4_a_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, UInt, UInt, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn w_net_use_connection4_w_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, UInt, UInt, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn w_net_use_connection_a(@core.RawAddress, @6698581bc4abfa5c.NETRESOURCEA_fe4d5a29bcf8, @strings.PStr?, @strings.PStr?, @6698581bc4abfa5c.NETCONNECTFLAGS_594e617e4d3b, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> @fb66f520d7e12332.WIN32ERROR_de7527e5f234 raise @core.WindowsError
+
+pub fn w_net_use_connection_a_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn w_net_use_connection_w_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub let wn_credential_class : UInt
+
+pub let wn_network_class : UInt
+
+pub let wn_nt_password_changed : UInt
+
+pub let wn_primary_authent_class : UInt
+
+pub let wn_service_class : UInt
+
+pub let wn_valid_logon_account : UInt
+
+pub let wncon_dynamic : UInt
+
+pub let wncon_fornetcard : UInt
+
+pub let wncon_notrouted : UInt
+
+pub let wncon_slowlink : UInt
+
+pub let wndt_network : UInt
+
+pub let wndt_normal : UInt
+
+pub let wnfmt_connection : UInt
+
+pub let wnfmt_inenum : UInt
+
+pub let wngetcon_connected : UInt
+
+pub let wngetcon_disconnected : UInt
+
+pub let wnnc_adm_directorynotify : UInt
+
+pub let wnnc_adm_getdirectorytype : UInt
+
+pub let wnnc_admin : UInt
+
+pub let wnnc_con_addconnection : UInt
+
+pub let wnnc_con_addconnection3 : UInt
+
+pub let wnnc_con_addconnection4 : UInt
+
+pub let wnnc_con_cancelconnection : UInt
+
+pub let wnnc_con_cancelconnection2 : UInt
+
+pub let wnnc_con_defer : UInt
+
+pub let wnnc_con_getconnections : UInt
+
+pub let wnnc_con_getperformance : UInt
+
+pub let wnnc_connection : UInt
+
+pub let wnnc_connection_flags : UInt
+
+pub let wnnc_dialog : UInt
+
+pub let wnnc_dlg_devicemode : UInt
+
+pub let wnnc_dlg_formatnetworkname : UInt
+
+pub let wnnc_dlg_getresourceinformation : UInt
+
+pub let wnnc_dlg_getresourceparent : UInt
+
+pub let wnnc_dlg_permissioneditor : UInt
+
+pub let wnnc_dlg_propertydialog : UInt
+
+pub let wnnc_dlg_searchdialog : UInt
+
+pub let wnnc_driver_version : UInt
+
+pub let wnnc_enum_context : UInt
+
+pub let wnnc_enum_global : UInt
+
+pub let wnnc_enum_local : UInt
+
+pub let wnnc_enum_shareable : UInt
+
+pub let wnnc_enumeration : UInt
+
+pub let wnnc_net_none : UInt
+
+pub let wnnc_net_type : UInt
+
+pub let wnnc_spec_version : UInt
+
+pub let wnnc_spec_version51 : UInt
+
+pub let wnnc_start : UInt
+
+pub let wnnc_user : UInt
+
+pub let wnnc_usr_getuser : UInt
+
+pub let wnnc_wait_for_start : UInt
+
+pub let wnpermc_audit : UInt
+
+pub let wnpermc_owner : UInt
+
+pub let wnpermc_perm : UInt
+
+pub let wnsrch_refresh_first_level : UInt
+
+pub let wntype_comm : UInt
+
+pub let wntype_drive : UInt
+
+pub let wntype_file : UInt
+
+pub let wntype_printer : UInt
+
+// Errors
+
+// Types and methods
+
+// Type aliases
+pub using @6698581bc4abfa5c {type CONNECTDLGSTRUCTA_79537e153b6a as CONNECTDLGSTRUCTA}
+
+pub using @6698581bc4abfa5c {type CONNECTDLGSTRUCTFLAGS_b12fd999ce02 as CONNECTDLGSTRUCTFLAGS}
+
+pub using @6698581bc4abfa5c {type CONNECTDLGSTRUCTW_5671543904f3 as CONNECTDLGSTRUCTW}
+
+pub using @6698581bc4abfa5c {type DISCDLGSTRUCTA_e4fb35e909aa as DISCDLGSTRUCTA}
+
+pub using @6698581bc4abfa5c {type DISCDLGSTRUCTFLAGS_5b92daedb06a as DISCDLGSTRUCTFLAGS}
+
+pub using @6698581bc4abfa5c {type DISCDLGSTRUCTW_c5dc995e6aa0 as DISCDLGSTRUCTW}
+
+pub using @6698581bc4abfa5c {type NETCONNECTFLAGS_594e617e4d3b as NETCONNECTFLAGS}
+
+pub using @6698581bc4abfa5c {type NETCONNECTINFOSTRUCT_8c64a0927618 as NETCONNECTINFOSTRUCT}
+
+pub using @6698581bc4abfa5c {type NETINFOSTRUCT_dc9d469bacab as NETINFOSTRUCT}
+
+pub using @6698581bc4abfa5c {type NETINFOSTRUCTCHARACTERISTICS_2d096cba2d45 as NETINFOSTRUCTCHARACTERISTICS}
+
+pub using @6698581bc4abfa5c {type NETRESOURCEA_fe4d5a29bcf8 as NETRESOURCEA}
+
+pub using @6698581bc4abfa5c {type NETRESOURCESCOPE_b5fecb14fb7c as NETRESOURCESCOPE}
+
+pub using @6698581bc4abfa5c {type NETRESOURCETYPE_1e913623342d as NETRESOURCETYPE}
+
+pub using @6698581bc4abfa5c {type NETRESOURCEW_6404ab10879c as NETRESOURCEW}
+
+pub using @6698581bc4abfa5c {type NETWORKNAMEFORMATFLAGS_195b117e90e6 as NETWORKNAMEFORMATFLAGS}
+
+pub using @6698581bc4abfa5c {type NOTIFYADD_81256adeaad2 as NOTIFYADD}
+
+pub using @6698581bc4abfa5c {type NOTIFYCANCEL_078abb6bab3b as NOTIFYCANCEL}
+
+pub using @6698581bc4abfa5c {type NOTIFYINFO_ade43f064c37 as NOTIFYINFO}
+
+pub using @6698581bc4abfa5c {type NPDIRECTORYNOTIFYOPERATION_02da32612815 as NPDIRECTORYNOTIFYOPERATION}
+
+pub using @6698581bc4abfa5c {type NPPROPERTYDIALOGSELECTION_b066486f1850 as NPPROPERTYDIALOGSELECTION}
+
+pub using @6698581bc4abfa5c {type PFAddConnectNotify_38f3bf2e015d as PFAddConnectNotify}
+
+pub using @6698581bc4abfa5c {type PFCancelConnectNotify_c8b7f8d0655e as PFCancelConnectNotify}
+
+pub using @6698581bc4abfa5c {type PFNPAddConnection_3c785f7d3b19 as PFNPAddConnection}
+
+pub using @6698581bc4abfa5c {type PFNPAddConnection3_d5e5021cca45 as PFNPAddConnection3}
+
+pub using @6698581bc4abfa5c {type PFNPAddConnection4_af77624bfd5c as PFNPAddConnection4}
+
+pub using @6698581bc4abfa5c {type PFNPCancelConnection_c67a85114c74 as PFNPCancelConnection}
+
+pub using @6698581bc4abfa5c {type PFNPCancelConnection2_2d4c047e1693 as PFNPCancelConnection2}
+
+pub using @6698581bc4abfa5c {type PFNPCloseEnum_b5606cc91ad3 as PFNPCloseEnum}
+
+pub using @6698581bc4abfa5c {type PFNPDeviceMode_761deb99a68b as PFNPDeviceMode}
+
+pub using @6698581bc4abfa5c {type PFNPDirectoryNotify_6f46529904e1 as PFNPDirectoryNotify}
+
+pub using @6698581bc4abfa5c {type PFNPEnumResource_1f840897c040 as PFNPEnumResource}
+
+pub using @6698581bc4abfa5c {type PFNPFMXEditPerm_532bdedd5669 as PFNPFMXEditPerm}
+
+pub using @6698581bc4abfa5c {type PFNPFMXGetPermCaps_e93f553ab44b as PFNPFMXGetPermCaps}
+
+pub using @6698581bc4abfa5c {type PFNPFMXGetPermHelp_14c741f5aa07 as PFNPFMXGetPermHelp}
+
+pub using @6698581bc4abfa5c {type PFNPFormatNetworkName_ae7f2b04986f as PFNPFormatNetworkName}
+
+pub using @6698581bc4abfa5c {type PFNPGetCaps_62a8538b1e47 as PFNPGetCaps}
+
+pub using @6698581bc4abfa5c {type PFNPGetConnection_750d7898dac1 as PFNPGetConnection}
+
+pub using @6698581bc4abfa5c {type PFNPGetConnection3_83f12a436455 as PFNPGetConnection3}
+
+pub using @6698581bc4abfa5c {type PFNPGetConnectionPerformance_46efd99375b5 as PFNPGetConnectionPerformance}
+
+pub using @6698581bc4abfa5c {type PFNPGetDirectoryType_692b6f88539f as PFNPGetDirectoryType}
+
+pub using @6698581bc4abfa5c {type PFNPGetPersistentUseOptionsForConnection_2db4f4ad8eb8 as PFNPGetPersistentUseOptionsForConnection}
+
+pub using @6698581bc4abfa5c {type PFNPGetPropertyText_3e5ecc37d720 as PFNPGetPropertyText}
+
+pub using @6698581bc4abfa5c {type PFNPGetResourceInformation_ab389d10ea06 as PFNPGetResourceInformation}
+
+pub using @6698581bc4abfa5c {type PFNPGetResourceParent_3c18c8c88a27 as PFNPGetResourceParent}
+
+pub using @6698581bc4abfa5c {type PFNPGetUniversalName_336d51a5995f as PFNPGetUniversalName}
+
+pub using @6698581bc4abfa5c {type PFNPGetUser_b3584c462e0f as PFNPGetUser}
+
+pub using @6698581bc4abfa5c {type PFNPLogonNotify_8c841cd0fde4 as PFNPLogonNotify}
+
+pub using @6698581bc4abfa5c {type PFNPOpenEnum_05261987150d as PFNPOpenEnum}
+
+pub using @6698581bc4abfa5c {type PFNPPasswordChangeNotify_143a28537132 as PFNPPasswordChangeNotify}
+
+pub using @6698581bc4abfa5c {type PFNPPropertyDialog_cb5eae20433b as PFNPPropertyDialog}
+
+pub using @6698581bc4abfa5c {type PFNPSearchDialog_9511cfba36b3 as PFNPSearchDialog}
+
+pub using @6698581bc4abfa5c {type REMOTENAMEINFOA_cd5f54e30ed2 as REMOTENAMEINFOA}
+
+pub using @6698581bc4abfa5c {type REMOTENAMEINFOW_6aeeb405547a as REMOTENAMEINFOW}
+
+pub using @6698581bc4abfa5c {type UNCINFOLEVEL_3cb3fc59f405 as UNCINFOLEVEL}
+
+pub using @6698581bc4abfa5c {type UNIVERSALNAMEINFOA_80b3437a70d5 as UNIVERSALNAMEINFOA}
+
+pub using @6698581bc4abfa5c {type UNIVERSALNAMEINFOW_3362703cd4e1 as UNIVERSALNAMEINFOW}
+
+pub using @6698581bc4abfa5c {type WNETOPENENUMUSAGE_8ddbc030a174 as WNETOPENENUMUSAGE}
+
+pub using @6698581bc4abfa5c {type WNPERMDLG_38daf420814f as WNPERMDLG}
+
+// Traits

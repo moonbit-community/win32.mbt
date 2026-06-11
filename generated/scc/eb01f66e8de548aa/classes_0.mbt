@@ -1,0 +1,1404 @@
+///|
+pub fn NDIS80211AUTHENTICATIONMODE_851dd7ab516c::ndis802_11_auth_mode_auto_switch() -> NDIS80211AUTHENTICATIONMODE_851dd7ab516c {
+  NDIS80211AUTHENTICATIONMODE_851dd7ab516c::from_int(2)
+}
+
+///|
+pub fn NDIS80211AUTHENTICATIONMODE_851dd7ab516c::ndis802_11_auth_mode_max() -> NDIS80211AUTHENTICATIONMODE_851dd7ab516c {
+  NDIS80211AUTHENTICATIONMODE_851dd7ab516c::from_int(11)
+}
+
+///|
+pub fn NDIS80211AUTHENTICATIONMODE_851dd7ab516c::ndis802_11_auth_mode_open() -> NDIS80211AUTHENTICATIONMODE_851dd7ab516c {
+  NDIS80211AUTHENTICATIONMODE_851dd7ab516c::from_int(0)
+}
+
+///|
+pub fn NDIS80211AUTHENTICATIONMODE_851dd7ab516c::ndis802_11_auth_mode_shared() -> NDIS80211AUTHENTICATIONMODE_851dd7ab516c {
+  NDIS80211AUTHENTICATIONMODE_851dd7ab516c::from_int(1)
+}
+
+///|
+pub fn NDIS80211AUTHENTICATIONMODE_851dd7ab516c::ndis802_11_auth_mode_wpa() -> NDIS80211AUTHENTICATIONMODE_851dd7ab516c {
+  NDIS80211AUTHENTICATIONMODE_851dd7ab516c::from_int(3)
+}
+
+///|
+pub fn NDIS80211AUTHENTICATIONMODE_851dd7ab516c::ndis802_11_auth_mode_wpa2() -> NDIS80211AUTHENTICATIONMODE_851dd7ab516c {
+  NDIS80211AUTHENTICATIONMODE_851dd7ab516c::from_int(6)
+}
+
+///|
+pub fn NDIS80211AUTHENTICATIONMODE_851dd7ab516c::ndis802_11_auth_mode_wpa2_psk() -> NDIS80211AUTHENTICATIONMODE_851dd7ab516c {
+  NDIS80211AUTHENTICATIONMODE_851dd7ab516c::from_int(7)
+}
+
+///|
+pub fn NDIS80211AUTHENTICATIONMODE_851dd7ab516c::ndis802_11_auth_mode_wpa3() -> NDIS80211AUTHENTICATIONMODE_851dd7ab516c {
+  NDIS80211AUTHENTICATIONMODE_851dd7ab516c::from_int(8)
+}
+
+///|
+pub fn NDIS80211AUTHENTICATIONMODE_851dd7ab516c::ndis802_11_auth_mode_wpa3_ent() -> NDIS80211AUTHENTICATIONMODE_851dd7ab516c {
+  NDIS80211AUTHENTICATIONMODE_851dd7ab516c::from_int(10)
+}
+
+///|
+pub fn NDIS80211AUTHENTICATIONMODE_851dd7ab516c::ndis802_11_auth_mode_wpa3_ent192() -> NDIS80211AUTHENTICATIONMODE_851dd7ab516c {
+  NDIS80211AUTHENTICATIONMODE_851dd7ab516c::from_int(8)
+}
+
+///|
+pub fn NDIS80211AUTHENTICATIONMODE_851dd7ab516c::ndis802_11_auth_mode_wpa3_sae() -> NDIS80211AUTHENTICATIONMODE_851dd7ab516c {
+  NDIS80211AUTHENTICATIONMODE_851dd7ab516c::from_int(9)
+}
+
+///|
+pub fn NDIS80211AUTHENTICATIONMODE_851dd7ab516c::ndis802_11_auth_mode_wpa_none() -> NDIS80211AUTHENTICATIONMODE_851dd7ab516c {
+  NDIS80211AUTHENTICATIONMODE_851dd7ab516c::from_int(5)
+}
+
+///|
+pub fn NDIS80211AUTHENTICATIONMODE_851dd7ab516c::ndis802_11_auth_mode_wpapsk() -> NDIS80211AUTHENTICATIONMODE_851dd7ab516c {
+  NDIS80211AUTHENTICATIONMODE_851dd7ab516c::from_int(4)
+}
+
+///|
+pub fn NDIS80211MEDIASTREAMMODE_b40310441ca5::ndis802_11_media_stream_off() -> NDIS80211MEDIASTREAMMODE_b40310441ca5 {
+  NDIS80211MEDIASTREAMMODE_b40310441ca5::from_int(0)
+}
+
+///|
+pub fn NDIS80211MEDIASTREAMMODE_b40310441ca5::ndis802_11_media_stream_on() -> NDIS80211MEDIASTREAMMODE_b40310441ca5 {
+  NDIS80211MEDIASTREAMMODE_b40310441ca5::from_int(1)
+}
+
+///|
+pub fn NDIS80211NETWORKINFRASTRUCTURE_0b59df5935d6::ndis802_11_auto_unknown() -> NDIS80211NETWORKINFRASTRUCTURE_0b59df5935d6 {
+  NDIS80211NETWORKINFRASTRUCTURE_0b59df5935d6::from_int(2)
+}
+
+///|
+pub fn NDIS80211NETWORKINFRASTRUCTURE_0b59df5935d6::ndis802_11_ibss() -> NDIS80211NETWORKINFRASTRUCTURE_0b59df5935d6 {
+  NDIS80211NETWORKINFRASTRUCTURE_0b59df5935d6::from_int(0)
+}
+
+///|
+pub fn NDIS80211NETWORKINFRASTRUCTURE_0b59df5935d6::ndis802_11_infrastructure() -> NDIS80211NETWORKINFRASTRUCTURE_0b59df5935d6 {
+  NDIS80211NETWORKINFRASTRUCTURE_0b59df5935d6::from_int(1)
+}
+
+///|
+pub fn NDIS80211NETWORKINFRASTRUCTURE_0b59df5935d6::ndis802_11_infrastructure_max() -> NDIS80211NETWORKINFRASTRUCTURE_0b59df5935d6 {
+  NDIS80211NETWORKINFRASTRUCTURE_0b59df5935d6::from_int(3)
+}
+
+///|
+pub fn NDIS80211NETWORKTYPE_022a36cb378a::ndis802_11_automode() -> NDIS80211NETWORKTYPE_022a36cb378a {
+  NDIS80211NETWORKTYPE_022a36cb378a::from_int(4)
+}
+
+///|
+pub fn NDIS80211NETWORKTYPE_022a36cb378a::ndis802_11_ds() -> NDIS80211NETWORKTYPE_022a36cb378a {
+  NDIS80211NETWORKTYPE_022a36cb378a::from_int(1)
+}
+
+///|
+pub fn NDIS80211NETWORKTYPE_022a36cb378a::ndis802_11_fh() -> NDIS80211NETWORKTYPE_022a36cb378a {
+  NDIS80211NETWORKTYPE_022a36cb378a::from_int(0)
+}
+
+///|
+pub fn NDIS80211NETWORKTYPE_022a36cb378a::ndis802_11_network_type_max() -> NDIS80211NETWORKTYPE_022a36cb378a {
+  NDIS80211NETWORKTYPE_022a36cb378a::from_int(5)
+}
+
+///|
+pub fn NDIS80211NETWORKTYPE_022a36cb378a::ndis802_11_ofdm24() -> NDIS80211NETWORKTYPE_022a36cb378a {
+  NDIS80211NETWORKTYPE_022a36cb378a::from_int(3)
+}
+
+///|
+pub fn NDIS80211NETWORKTYPE_022a36cb378a::ndis802_11_ofdm5() -> NDIS80211NETWORKTYPE_022a36cb378a {
+  NDIS80211NETWORKTYPE_022a36cb378a::from_int(2)
+}
+
+///|
+pub fn NDIS80211POWERMODE_27be943782d5::ndis802_11_power_mode_cam() -> NDIS80211POWERMODE_27be943782d5 {
+  NDIS80211POWERMODE_27be943782d5::from_int(0)
+}
+
+///|
+pub fn NDIS80211POWERMODE_27be943782d5::ndis802_11_power_mode_fast_psp() -> NDIS80211POWERMODE_27be943782d5 {
+  NDIS80211POWERMODE_27be943782d5::from_int(2)
+}
+
+///|
+pub fn NDIS80211POWERMODE_27be943782d5::ndis802_11_power_mode_max_psp() -> NDIS80211POWERMODE_27be943782d5 {
+  NDIS80211POWERMODE_27be943782d5::from_int(1)
+}
+
+///|
+pub fn NDIS80211POWERMODE_27be943782d5::ndis802_11_power_mode_max() -> NDIS80211POWERMODE_27be943782d5 {
+  NDIS80211POWERMODE_27be943782d5::from_int(3)
+}
+
+///|
+pub fn NDIS80211PRIVACYFILTER_4bfb9b59da9b::ndis802_11_priv_filter8021x_wep() -> NDIS80211PRIVACYFILTER_4bfb9b59da9b {
+  NDIS80211PRIVACYFILTER_4bfb9b59da9b::from_int(1)
+}
+
+///|
+pub fn NDIS80211PRIVACYFILTER_4bfb9b59da9b::ndis802_11_priv_filter_accept_all() -> NDIS80211PRIVACYFILTER_4bfb9b59da9b {
+  NDIS80211PRIVACYFILTER_4bfb9b59da9b::from_int(0)
+}
+
+///|
+pub fn NDIS80211RADIOSTATUS_3c51ecb48ff3::ndis802_11_radio_status_hardware_off() -> NDIS80211RADIOSTATUS_3c51ecb48ff3 {
+  NDIS80211RADIOSTATUS_3c51ecb48ff3::from_int(1)
+}
+
+///|
+pub fn NDIS80211RADIOSTATUS_3c51ecb48ff3::ndis802_11_radio_status_hardware_software_off() -> NDIS80211RADIOSTATUS_3c51ecb48ff3 {
+  NDIS80211RADIOSTATUS_3c51ecb48ff3::from_int(3)
+}
+
+///|
+pub fn NDIS80211RADIOSTATUS_3c51ecb48ff3::ndis802_11_radio_status_max() -> NDIS80211RADIOSTATUS_3c51ecb48ff3 {
+  NDIS80211RADIOSTATUS_3c51ecb48ff3::from_int(4)
+}
+
+///|
+pub fn NDIS80211RADIOSTATUS_3c51ecb48ff3::ndis802_11_radio_status_on() -> NDIS80211RADIOSTATUS_3c51ecb48ff3 {
+  NDIS80211RADIOSTATUS_3c51ecb48ff3::from_int(0)
+}
+
+///|
+pub fn NDIS80211RADIOSTATUS_3c51ecb48ff3::ndis802_11_radio_status_software_off() -> NDIS80211RADIOSTATUS_3c51ecb48ff3 {
+  NDIS80211RADIOSTATUS_3c51ecb48ff3::from_int(2)
+}
+
+///|
+pub fn NDIS80211RELOADDEFAULTS_44fbb577ed56::ndis802_11_reload_wep_keys() -> NDIS80211RELOADDEFAULTS_44fbb577ed56 {
+  NDIS80211RELOADDEFAULTS_44fbb577ed56::from_int(0)
+}
+
+///|
+pub fn NDIS80211STATUSTYPE_c41b1083faac::ndis802_11_status_type_max() -> NDIS80211STATUSTYPE_c41b1083faac {
+  NDIS80211STATUSTYPE_c41b1083faac::from_int(3)
+}
+
+///|
+pub fn NDIS80211STATUSTYPE_c41b1083faac::ndis802_11_status_type_authentication() -> NDIS80211STATUSTYPE_c41b1083faac {
+  NDIS80211STATUSTYPE_c41b1083faac::from_int(0)
+}
+
+///|
+pub fn NDIS80211STATUSTYPE_c41b1083faac::ndis802_11_status_type_media_stream_mode() -> NDIS80211STATUSTYPE_c41b1083faac {
+  NDIS80211STATUSTYPE_c41b1083faac::from_int(1)
+}
+
+///|
+pub fn NDIS80211STATUSTYPE_c41b1083faac::ndis802_11_status_type_pmkid_candidate_list() -> NDIS80211STATUSTYPE_c41b1083faac {
+  NDIS80211STATUSTYPE_c41b1083faac::from_int(2)
+}
+
+///|
+pub fn NDIS80211WEPSTATUS_5dda4709e85a::ndis802_11_encryption1_enabled() -> NDIS80211WEPSTATUS_5dda4709e85a {
+  NDIS80211WEPSTATUS_5dda4709e85a::from_int(0)
+}
+
+///|
+pub fn NDIS80211WEPSTATUS_5dda4709e85a::ndis802_11_encryption1_key_absent() -> NDIS80211WEPSTATUS_5dda4709e85a {
+  NDIS80211WEPSTATUS_5dda4709e85a::from_int(2)
+}
+
+///|
+pub fn NDIS80211WEPSTATUS_5dda4709e85a::ndis802_11_encryption2_enabled() -> NDIS80211WEPSTATUS_5dda4709e85a {
+  NDIS80211WEPSTATUS_5dda4709e85a::from_int(4)
+}
+
+///|
+pub fn NDIS80211WEPSTATUS_5dda4709e85a::ndis802_11_encryption2_key_absent() -> NDIS80211WEPSTATUS_5dda4709e85a {
+  NDIS80211WEPSTATUS_5dda4709e85a::from_int(5)
+}
+
+///|
+pub fn NDIS80211WEPSTATUS_5dda4709e85a::ndis802_11_encryption3_enabled() -> NDIS80211WEPSTATUS_5dda4709e85a {
+  NDIS80211WEPSTATUS_5dda4709e85a::from_int(6)
+}
+
+///|
+pub fn NDIS80211WEPSTATUS_5dda4709e85a::ndis802_11_encryption3_key_absent() -> NDIS80211WEPSTATUS_5dda4709e85a {
+  NDIS80211WEPSTATUS_5dda4709e85a::from_int(7)
+}
+
+///|
+pub fn NDIS80211WEPSTATUS_5dda4709e85a::ndis802_11_encryption_disabled() -> NDIS80211WEPSTATUS_5dda4709e85a {
+  NDIS80211WEPSTATUS_5dda4709e85a::from_int(1)
+}
+
+///|
+pub fn NDIS80211WEPSTATUS_5dda4709e85a::ndis802_11_encryption_not_supported() -> NDIS80211WEPSTATUS_5dda4709e85a {
+  NDIS80211WEPSTATUS_5dda4709e85a::from_int(3)
+}
+
+///|
+pub fn NDIS80211WEPSTATUS_5dda4709e85a::ndis802_11_wep_disabled() -> NDIS80211WEPSTATUS_5dda4709e85a {
+  NDIS80211WEPSTATUS_5dda4709e85a::from_int(1)
+}
+
+///|
+pub fn NDIS80211WEPSTATUS_5dda4709e85a::ndis802_11_wep_enabled() -> NDIS80211WEPSTATUS_5dda4709e85a {
+  NDIS80211WEPSTATUS_5dda4709e85a::from_int(0)
+}
+
+///|
+pub fn NDIS80211WEPSTATUS_5dda4709e85a::ndis802_11_wep_key_absent() -> NDIS80211WEPSTATUS_5dda4709e85a {
+  NDIS80211WEPSTATUS_5dda4709e85a::from_int(2)
+}
+
+///|
+pub fn NDIS80211WEPSTATUS_5dda4709e85a::ndis802_11_wep_not_supported() -> NDIS80211WEPSTATUS_5dda4709e85a {
+  NDIS80211WEPSTATUS_5dda4709e85a::from_int(3)
+}
+
+///|
+pub fn NDIS8025RINGSTATE_7d5b1779111f::ndis_ring_state_closed() -> NDIS8025RINGSTATE_7d5b1779111f {
+  NDIS8025RINGSTATE_7d5b1779111f::from_int(2)
+}
+
+///|
+pub fn NDIS8025RINGSTATE_7d5b1779111f::ndis_ring_state_closing() -> NDIS8025RINGSTATE_7d5b1779111f {
+  NDIS8025RINGSTATE_7d5b1779111f::from_int(4)
+}
+
+///|
+pub fn NDIS8025RINGSTATE_7d5b1779111f::ndis_ring_state_open_failure() -> NDIS8025RINGSTATE_7d5b1779111f {
+  NDIS8025RINGSTATE_7d5b1779111f::from_int(5)
+}
+
+///|
+pub fn NDIS8025RINGSTATE_7d5b1779111f::ndis_ring_state_opened() -> NDIS8025RINGSTATE_7d5b1779111f {
+  NDIS8025RINGSTATE_7d5b1779111f::from_int(1)
+}
+
+///|
+pub fn NDIS8025RINGSTATE_7d5b1779111f::ndis_ring_state_opening() -> NDIS8025RINGSTATE_7d5b1779111f {
+  NDIS8025RINGSTATE_7d5b1779111f::from_int(3)
+}
+
+///|
+pub fn NDIS8025RINGSTATE_7d5b1779111f::ndis_ring_state_ring_failure() -> NDIS8025RINGSTATE_7d5b1779111f {
+  NDIS8025RINGSTATE_7d5b1779111f::from_int(6)
+}
+
+///|
+pub fn NDISCLASSID_5b682ac990da::ndis_class802_3_priority() -> NDISCLASSID_5b682ac990da {
+  NDISCLASSID_5b682ac990da::from_int(0)
+}
+
+///|
+pub fn NDISCLASSID_5b682ac990da::ndis_class_atm_aal_info() -> NDISCLASSID_5b682ac990da {
+  NDISCLASSID_5b682ac990da::from_int(3)
+}
+
+///|
+pub fn NDISCLASSID_5b682ac990da::ndis_class_irda_packet_info() -> NDISCLASSID_5b682ac990da {
+  NDISCLASSID_5b682ac990da::from_int(2)
+}
+
+///|
+pub fn NDISCLASSID_5b682ac990da::ndis_class_wireless_wan_mbx_mailbox() -> NDISCLASSID_5b682ac990da {
+  NDISCLASSID_5b682ac990da::from_int(1)
+}
+
+///|
+pub fn NDISDEVICEPNPEVENT_b5b7c641dbf7::ndis_device_pn_p_event_maximum() -> NDISDEVICEPNPEVENT_b5b7c641dbf7 {
+  NDISDEVICEPNPEVENT_b5b7c641dbf7::from_int(6)
+}
+
+///|
+pub fn NDISDEVICEPNPEVENT_b5b7c641dbf7::ndis_device_pn_p_event_power_profile_changed() -> NDISDEVICEPNPEVENT_b5b7c641dbf7 {
+  NDISDEVICEPNPEVENT_b5b7c641dbf7::from_int(5)
+}
+
+///|
+pub fn NDISDEVICEPNPEVENT_b5b7c641dbf7::ndis_device_pn_p_event_query_removed() -> NDISDEVICEPNPEVENT_b5b7c641dbf7 {
+  NDISDEVICEPNPEVENT_b5b7c641dbf7::from_int(0)
+}
+
+///|
+pub fn NDISDEVICEPNPEVENT_b5b7c641dbf7::ndis_device_pn_p_event_query_stopped() -> NDISDEVICEPNPEVENT_b5b7c641dbf7 {
+  NDISDEVICEPNPEVENT_b5b7c641dbf7::from_int(3)
+}
+
+///|
+pub fn NDISDEVICEPNPEVENT_b5b7c641dbf7::ndis_device_pn_p_event_removed() -> NDISDEVICEPNPEVENT_b5b7c641dbf7 {
+  NDISDEVICEPNPEVENT_b5b7c641dbf7::from_int(1)
+}
+
+///|
+pub fn NDISDEVICEPNPEVENT_b5b7c641dbf7::ndis_device_pn_p_event_stopped() -> NDISDEVICEPNPEVENT_b5b7c641dbf7 {
+  NDISDEVICEPNPEVENT_b5b7c641dbf7::from_int(4)
+}
+
+///|
+pub fn NDISDEVICEPNPEVENT_b5b7c641dbf7::ndis_device_pn_p_event_surprise_removed() -> NDISDEVICEPNPEVENT_b5b7c641dbf7 {
+  NDISDEVICEPNPEVENT_b5b7c641dbf7::from_int(2)
+}
+
+///|
+pub fn NDISDEVICEPOWERSTATE_a1d4cd2f874d::ndis_device_state_d0() -> NDISDEVICEPOWERSTATE_a1d4cd2f874d {
+  NDISDEVICEPOWERSTATE_a1d4cd2f874d::from_int(1)
+}
+
+///|
+pub fn NDISDEVICEPOWERSTATE_a1d4cd2f874d::ndis_device_state_d1() -> NDISDEVICEPOWERSTATE_a1d4cd2f874d {
+  NDISDEVICEPOWERSTATE_a1d4cd2f874d::from_int(2)
+}
+
+///|
+pub fn NDISDEVICEPOWERSTATE_a1d4cd2f874d::ndis_device_state_d2() -> NDISDEVICEPOWERSTATE_a1d4cd2f874d {
+  NDISDEVICEPOWERSTATE_a1d4cd2f874d::from_int(3)
+}
+
+///|
+pub fn NDISDEVICEPOWERSTATE_a1d4cd2f874d::ndis_device_state_d3() -> NDISDEVICEPOWERSTATE_a1d4cd2f874d {
+  NDISDEVICEPOWERSTATE_a1d4cd2f874d::from_int(4)
+}
+
+///|
+pub fn NDISDEVICEPOWERSTATE_a1d4cd2f874d::ndis_device_state_maximum() -> NDISDEVICEPOWERSTATE_a1d4cd2f874d {
+  NDISDEVICEPOWERSTATE_a1d4cd2f874d::from_int(5)
+}
+
+///|
+pub fn NDISDEVICEPOWERSTATE_a1d4cd2f874d::ndis_device_state_unspecified() -> NDISDEVICEPOWERSTATE_a1d4cd2f874d {
+  NDISDEVICEPOWERSTATE_a1d4cd2f874d::from_int(0)
+}
+
+///|
+pub fn NDISENVIRONMENTTYPE_b744f43c5d5f::ndis_environment_windows() -> NDISENVIRONMENTTYPE_b744f43c5d5f {
+  NDISENVIRONMENTTYPE_b744f43c5d5f::from_int(0)
+}
+
+///|
+pub fn NDISENVIRONMENTTYPE_b744f43c5d5f::ndis_environment_windows_nt() -> NDISENVIRONMENTTYPE_b744f43c5d5f {
+  NDISENVIRONMENTTYPE_b744f43c5d5f::from_int(1)
+}
+
+///|
+pub fn NDISFDDIATTACHMENTTYPE_a472e489c4b3::ndis_fddi_type_c_wrap_a() -> NDISFDDIATTACHMENTTYPE_a472e489c4b3 {
+  NDISFDDIATTACHMENTTYPE_a472e489c4b3::from_int(10)
+}
+
+///|
+pub fn NDISFDDIATTACHMENTTYPE_a472e489c4b3::ndis_fddi_type_c_wrap_b() -> NDISFDDIATTACHMENTTYPE_a472e489c4b3 {
+  NDISFDDIATTACHMENTTYPE_a472e489c4b3::from_int(11)
+}
+
+///|
+pub fn NDISFDDIATTACHMENTTYPE_a472e489c4b3::ndis_fddi_type_c_wrap_s() -> NDISFDDIATTACHMENTTYPE_a472e489c4b3 {
+  NDISFDDIATTACHMENTTYPE_a472e489c4b3::from_int(12)
+}
+
+///|
+pub fn NDISFDDIATTACHMENTTYPE_a472e489c4b3::ndis_fddi_type_isolated() -> NDISFDDIATTACHMENTTYPE_a472e489c4b3 {
+  NDISFDDIATTACHMENTTYPE_a472e489c4b3::from_int(1)
+}
+
+///|
+pub fn NDISFDDIATTACHMENTTYPE_a472e489c4b3::ndis_fddi_type_local_a() -> NDISFDDIATTACHMENTTYPE_a472e489c4b3 {
+  NDISFDDIATTACHMENTTYPE_a472e489c4b3::from_int(2)
+}
+
+///|
+pub fn NDISFDDIATTACHMENTTYPE_a472e489c4b3::ndis_fddi_type_local_ab() -> NDISFDDIATTACHMENTTYPE_a472e489c4b3 {
+  NDISFDDIATTACHMENTTYPE_a472e489c4b3::from_int(4)
+}
+
+///|
+pub fn NDISFDDIATTACHMENTTYPE_a472e489c4b3::ndis_fddi_type_local_b() -> NDISFDDIATTACHMENTTYPE_a472e489c4b3 {
+  NDISFDDIATTACHMENTTYPE_a472e489c4b3::from_int(3)
+}
+
+///|
+pub fn NDISFDDIATTACHMENTTYPE_a472e489c4b3::ndis_fddi_type_local_s() -> NDISFDDIATTACHMENTTYPE_a472e489c4b3 {
+  NDISFDDIATTACHMENTTYPE_a472e489c4b3::from_int(5)
+}
+
+///|
+pub fn NDISFDDIATTACHMENTTYPE_a472e489c4b3::ndis_fddi_type_through() -> NDISFDDIATTACHMENTTYPE_a472e489c4b3 {
+  NDISFDDIATTACHMENTTYPE_a472e489c4b3::from_int(13)
+}
+
+///|
+pub fn NDISFDDIATTACHMENTTYPE_a472e489c4b3::ndis_fddi_type_wrap_a() -> NDISFDDIATTACHMENTTYPE_a472e489c4b3 {
+  NDISFDDIATTACHMENTTYPE_a472e489c4b3::from_int(6)
+}
+
+///|
+pub fn NDISFDDIATTACHMENTTYPE_a472e489c4b3::ndis_fddi_type_wrap_ab() -> NDISFDDIATTACHMENTTYPE_a472e489c4b3 {
+  NDISFDDIATTACHMENTTYPE_a472e489c4b3::from_int(8)
+}
+
+///|
+pub fn NDISFDDIATTACHMENTTYPE_a472e489c4b3::ndis_fddi_type_wrap_b() -> NDISFDDIATTACHMENTTYPE_a472e489c4b3 {
+  NDISFDDIATTACHMENTTYPE_a472e489c4b3::from_int(7)
+}
+
+///|
+pub fn NDISFDDIATTACHMENTTYPE_a472e489c4b3::ndis_fddi_type_wrap_s() -> NDISFDDIATTACHMENTTYPE_a472e489c4b3 {
+  NDISFDDIATTACHMENTTYPE_a472e489c4b3::from_int(9)
+}
+
+///|
+pub fn NDISFDDILCONNECTIONSTATE_240a60d81605::ndis_fddi_state_active() -> NDISFDDILCONNECTIONSTATE_240a60d81605 {
+  NDISFDDILCONNECTIONSTATE_240a60d81605::from_int(9)
+}
+
+///|
+pub fn NDISFDDILCONNECTIONSTATE_240a60d81605::ndis_fddi_state_break() -> NDISFDDILCONNECTIONSTATE_240a60d81605 {
+  NDISFDDILCONNECTIONSTATE_240a60d81605::from_int(2)
+}
+
+///|
+pub fn NDISFDDILCONNECTIONSTATE_240a60d81605::ndis_fddi_state_connect() -> NDISFDDILCONNECTIONSTATE_240a60d81605 {
+  NDISFDDILCONNECTIONSTATE_240a60d81605::from_int(4)
+}
+
+///|
+pub fn NDISFDDILCONNECTIONSTATE_240a60d81605::ndis_fddi_state_join() -> NDISFDDILCONNECTIONSTATE_240a60d81605 {
+  NDISFDDILCONNECTIONSTATE_240a60d81605::from_int(7)
+}
+
+///|
+pub fn NDISFDDILCONNECTIONSTATE_240a60d81605::ndis_fddi_state_maintenance() -> NDISFDDILCONNECTIONSTATE_240a60d81605 {
+  NDISFDDILCONNECTIONSTATE_240a60d81605::from_int(10)
+}
+
+///|
+pub fn NDISFDDILCONNECTIONSTATE_240a60d81605::ndis_fddi_state_next() -> NDISFDDILCONNECTIONSTATE_240a60d81605 {
+  NDISFDDILCONNECTIONSTATE_240a60d81605::from_int(5)
+}
+
+///|
+pub fn NDISFDDILCONNECTIONSTATE_240a60d81605::ndis_fddi_state_off() -> NDISFDDILCONNECTIONSTATE_240a60d81605 {
+  NDISFDDILCONNECTIONSTATE_240a60d81605::from_int(1)
+}
+
+///|
+pub fn NDISFDDILCONNECTIONSTATE_240a60d81605::ndis_fddi_state_signal() -> NDISFDDILCONNECTIONSTATE_240a60d81605 {
+  NDISFDDILCONNECTIONSTATE_240a60d81605::from_int(6)
+}
+
+///|
+pub fn NDISFDDILCONNECTIONSTATE_240a60d81605::ndis_fddi_state_trace() -> NDISFDDILCONNECTIONSTATE_240a60d81605 {
+  NDISFDDILCONNECTIONSTATE_240a60d81605::from_int(3)
+}
+
+///|
+pub fn NDISFDDILCONNECTIONSTATE_240a60d81605::ndis_fddi_state_verify() -> NDISFDDILCONNECTIONSTATE_240a60d81605 {
+  NDISFDDILCONNECTIONSTATE_240a60d81605::from_int(8)
+}
+
+///|
+pub fn NDISFDDIRINGMGTSTATE_520b1a92ebb3::ndis_fddi_ring_detect() -> NDISFDDIRINGMGTSTATE_520b1a92ebb3 {
+  NDISFDDIRINGMGTSTATE_520b1a92ebb3::from_int(4)
+}
+
+///|
+pub fn NDISFDDIRINGMGTSTATE_520b1a92ebb3::ndis_fddi_ring_directed() -> NDISFDDIRINGMGTSTATE_520b1a92ebb3 {
+  NDISFDDIRINGMGTSTATE_520b1a92ebb3::from_int(7)
+}
+
+///|
+pub fn NDISFDDIRINGMGTSTATE_520b1a92ebb3::ndis_fddi_ring_isolated() -> NDISFDDIRINGMGTSTATE_520b1a92ebb3 {
+  NDISFDDIRINGMGTSTATE_520b1a92ebb3::from_int(1)
+}
+
+///|
+pub fn NDISFDDIRINGMGTSTATE_520b1a92ebb3::ndis_fddi_ring_non_operational() -> NDISFDDIRINGMGTSTATE_520b1a92ebb3 {
+  NDISFDDIRINGMGTSTATE_520b1a92ebb3::from_int(2)
+}
+
+///|
+pub fn NDISFDDIRINGMGTSTATE_520b1a92ebb3::ndis_fddi_ring_non_operational_dup() -> NDISFDDIRINGMGTSTATE_520b1a92ebb3 {
+  NDISFDDIRINGMGTSTATE_520b1a92ebb3::from_int(5)
+}
+
+///|
+pub fn NDISFDDIRINGMGTSTATE_520b1a92ebb3::ndis_fddi_ring_operational() -> NDISFDDIRINGMGTSTATE_520b1a92ebb3 {
+  NDISFDDIRINGMGTSTATE_520b1a92ebb3::from_int(3)
+}
+
+///|
+pub fn NDISFDDIRINGMGTSTATE_520b1a92ebb3::ndis_fddi_ring_operational_dup() -> NDISFDDIRINGMGTSTATE_520b1a92ebb3 {
+  NDISFDDIRINGMGTSTATE_520b1a92ebb3::from_int(6)
+}
+
+///|
+pub fn NDISFDDIRINGMGTSTATE_520b1a92ebb3::ndis_fddi_ring_trace() -> NDISFDDIRINGMGTSTATE_520b1a92ebb3 {
+  NDISFDDIRINGMGTSTATE_520b1a92ebb3::from_int(8)
+}
+
+///|
+pub fn NDISHARDWARESTATUS_aca3360a9393::closing() -> NDISHARDWARESTATUS_aca3360a9393 {
+  NDISHARDWARESTATUS_aca3360a9393::from_int(3)
+}
+
+///|
+pub fn NDISHARDWARESTATUS_aca3360a9393::initializing() -> NDISHARDWARESTATUS_aca3360a9393 {
+  NDISHARDWARESTATUS_aca3360a9393::from_int(1)
+}
+
+///|
+pub fn NDISHARDWARESTATUS_aca3360a9393::not_ready() -> NDISHARDWARESTATUS_aca3360a9393 {
+  NDISHARDWARESTATUS_aca3360a9393::from_int(4)
+}
+
+///|
+pub fn NDISHARDWARESTATUS_aca3360a9393::ready() -> NDISHARDWARESTATUS_aca3360a9393 {
+  NDISHARDWARESTATUS_aca3360a9393::from_int(0)
+}
+
+///|
+pub fn NDISHARDWARESTATUS_aca3360a9393::reset() -> NDISHARDWARESTATUS_aca3360a9393 {
+  NDISHARDWARESTATUS_aca3360a9393::from_int(2)
+}
+
+///|
+pub fn NDISINTERFACETYPE_12008f9e3e5c::ndis_interface1394() -> NDISINTERFACETYPE_12008f9e3e5c {
+  NDISINTERFACETYPE_12008f9e3e5c::from_int(18)
+}
+
+///|
+pub fn NDISINTERFACETYPE_12008f9e3e5c::ndis_interface_c_bus() -> NDISINTERFACETYPE_12008f9e3e5c {
+  NDISINTERFACETYPE_12008f9e3e5c::from_int(9)
+}
+
+///|
+pub fn NDISINTERFACETYPE_12008f9e3e5c::ndis_interface_eisa() -> NDISINTERFACETYPE_12008f9e3e5c {
+  NDISINTERFACETYPE_12008f9e3e5c::from_int(2)
+}
+
+///|
+pub fn NDISINTERFACETYPE_12008f9e3e5c::ndis_interface_internal() -> NDISINTERFACETYPE_12008f9e3e5c {
+  NDISINTERFACETYPE_12008f9e3e5c::from_int(0)
+}
+
+///|
+pub fn NDISINTERFACETYPE_12008f9e3e5c::ndis_interface_internal_power_bus() -> NDISINTERFACETYPE_12008f9e3e5c {
+  NDISINTERFACETYPE_12008f9e3e5c::from_int(13)
+}
+
+///|
+pub fn NDISINTERFACETYPE_12008f9e3e5c::ndis_interface_irda() -> NDISINTERFACETYPE_12008f9e3e5c {
+  NDISINTERFACETYPE_12008f9e3e5c::from_int(17)
+}
+
+///|
+pub fn NDISINTERFACETYPE_12008f9e3e5c::ndis_interface_isa() -> NDISINTERFACETYPE_12008f9e3e5c {
+  NDISINTERFACETYPE_12008f9e3e5c::from_int(1)
+}
+
+///|
+pub fn NDISINTERFACETYPE_12008f9e3e5c::ndis_interface_mpi_bus() -> NDISINTERFACETYPE_12008f9e3e5c {
+  NDISINTERFACETYPE_12008f9e3e5c::from_int(10)
+}
+
+///|
+pub fn NDISINTERFACETYPE_12008f9e3e5c::ndis_interface_mpsa_bus() -> NDISINTERFACETYPE_12008f9e3e5c {
+  NDISINTERFACETYPE_12008f9e3e5c::from_int(11)
+}
+
+///|
+pub fn NDISINTERFACETYPE_12008f9e3e5c::ndis_interface_mca() -> NDISINTERFACETYPE_12008f9e3e5c {
+  NDISINTERFACETYPE_12008f9e3e5c::from_int(3)
+}
+
+///|
+pub fn NDISINTERFACETYPE_12008f9e3e5c::ndis_interface_pnp_bus() -> NDISINTERFACETYPE_12008f9e3e5c {
+  NDISINTERFACETYPE_12008f9e3e5c::from_int(15)
+}
+
+///|
+pub fn NDISINTERFACETYPE_12008f9e3e5c::ndis_interface_pnpisa_bus() -> NDISINTERFACETYPE_12008f9e3e5c {
+  NDISINTERFACETYPE_12008f9e3e5c::from_int(14)
+}
+
+///|
+pub fn NDISINTERFACETYPE_12008f9e3e5c::ndis_interface_pc_mcia() -> NDISINTERFACETYPE_12008f9e3e5c {
+  NDISINTERFACETYPE_12008f9e3e5c::from_int(8)
+}
+
+///|
+pub fn NDISINTERFACETYPE_12008f9e3e5c::ndis_interface_pci() -> NDISINTERFACETYPE_12008f9e3e5c {
+  NDISINTERFACETYPE_12008f9e3e5c::from_int(5)
+}
+
+///|
+pub fn NDISINTERFACETYPE_12008f9e3e5c::ndis_interface_processor_internal() -> NDISINTERFACETYPE_12008f9e3e5c {
+  NDISINTERFACETYPE_12008f9e3e5c::from_int(12)
+}
+
+///|
+pub fn NDISINTERFACETYPE_12008f9e3e5c::ndis_interface_turbo_channel() -> NDISINTERFACETYPE_12008f9e3e5c {
+  NDISINTERFACETYPE_12008f9e3e5c::from_int(4)
+}
+
+///|
+pub fn NDISINTERFACETYPE_12008f9e3e5c::ndis_interface_usb() -> NDISINTERFACETYPE_12008f9e3e5c {
+  NDISINTERFACETYPE_12008f9e3e5c::from_int(16)
+}
+
+///|
+pub fn NDISINTERFACETYPE_12008f9e3e5c::ndis_maximum_interface_type() -> NDISINTERFACETYPE_12008f9e3e5c {
+  NDISINTERFACETYPE_12008f9e3e5c::from_int(19)
+}
+
+///|
+pub fn NDISINTERRUPTMODERATION_d1bf1011f443::disabled() -> NDISINTERRUPTMODERATION_d1bf1011f443 {
+  NDISINTERRUPTMODERATION_d1bf1011f443::from_int(3)
+}
+
+///|
+pub fn NDISINTERRUPTMODERATION_d1bf1011f443::enabled() -> NDISINTERRUPTMODERATION_d1bf1011f443 {
+  NDISINTERRUPTMODERATION_d1bf1011f443::from_int(2)
+}
+
+///|
+pub fn NDISINTERRUPTMODERATION_d1bf1011f443::not_supported() -> NDISINTERRUPTMODERATION_d1bf1011f443 {
+  NDISINTERRUPTMODERATION_d1bf1011f443::from_int(1)
+}
+
+///|
+pub fn NDISINTERRUPTMODERATION_d1bf1011f443::unknown() -> NDISINTERRUPTMODERATION_d1bf1011f443 {
+  NDISINTERRUPTMODERATION_d1bf1011f443::from_int(0)
+}
+
+///|
+pub fn NDISMEDIASTATE_bfef87a0ee10::connected() -> NDISMEDIASTATE_bfef87a0ee10 {
+  NDISMEDIASTATE_bfef87a0ee10::from_int(0)
+}
+
+///|
+pub fn NDISMEDIASTATE_bfef87a0ee10::disconnected() -> NDISMEDIASTATE_bfef87a0ee10 {
+  NDISMEDIASTATE_bfef87a0ee10::from_int(1)
+}
+
+///|
+pub fn NDISMEDIUM_1d3272aa3dfd::ndis_medium1394() -> NDISMEDIUM_1d3272aa3dfd {
+  NDISMEDIUM_1d3272aa3dfd::from_int(13)
+}
+
+///|
+pub fn NDISMEDIUM_1d3272aa3dfd::ndis_medium802_3() -> NDISMEDIUM_1d3272aa3dfd {
+  NDISMEDIUM_1d3272aa3dfd::from_int(0)
+}
+
+///|
+pub fn NDISMEDIUM_1d3272aa3dfd::ndis_medium802_5() -> NDISMEDIUM_1d3272aa3dfd {
+  NDISMEDIUM_1d3272aa3dfd::from_int(1)
+}
+
+///|
+pub fn NDISMEDIUM_1d3272aa3dfd::arcnet878_2() -> NDISMEDIUM_1d3272aa3dfd {
+  NDISMEDIUM_1d3272aa3dfd::from_int(7)
+}
+
+///|
+pub fn NDISMEDIUM_1d3272aa3dfd::arcnet_raw() -> NDISMEDIUM_1d3272aa3dfd {
+  NDISMEDIUM_1d3272aa3dfd::from_int(6)
+}
+
+///|
+pub fn NDISMEDIUM_1d3272aa3dfd::atm() -> NDISMEDIUM_1d3272aa3dfd {
+  NDISMEDIUM_1d3272aa3dfd::from_int(8)
+}
+
+///|
+pub fn NDISMEDIUM_1d3272aa3dfd::bpc() -> NDISMEDIUM_1d3272aa3dfd {
+  NDISMEDIUM_1d3272aa3dfd::from_int(11)
+}
+
+///|
+pub fn NDISMEDIUM_1d3272aa3dfd::co_wan() -> NDISMEDIUM_1d3272aa3dfd {
+  NDISMEDIUM_1d3272aa3dfd::from_int(12)
+}
+
+///|
+pub fn NDISMEDIUM_1d3272aa3dfd::dix() -> NDISMEDIUM_1d3272aa3dfd {
+  NDISMEDIUM_1d3272aa3dfd::from_int(5)
+}
+
+///|
+pub fn NDISMEDIUM_1d3272aa3dfd::fddi() -> NDISMEDIUM_1d3272aa3dfd {
+  NDISMEDIUM_1d3272aa3dfd::from_int(2)
+}
+
+///|
+pub fn NDISMEDIUM_1d3272aa3dfd::ip() -> NDISMEDIUM_1d3272aa3dfd {
+  NDISMEDIUM_1d3272aa3dfd::from_int(19)
+}
+
+///|
+pub fn NDISMEDIUM_1d3272aa3dfd::infini_band() -> NDISMEDIUM_1d3272aa3dfd {
+  NDISMEDIUM_1d3272aa3dfd::from_int(14)
+}
+
+///|
+pub fn NDISMEDIUM_1d3272aa3dfd::irda() -> NDISMEDIUM_1d3272aa3dfd {
+  NDISMEDIUM_1d3272aa3dfd::from_int(10)
+}
+
+///|
+pub fn NDISMEDIUM_1d3272aa3dfd::local_talk() -> NDISMEDIUM_1d3272aa3dfd {
+  NDISMEDIUM_1d3272aa3dfd::from_int(4)
+}
+
+///|
+pub fn NDISMEDIUM_1d3272aa3dfd::loopback() -> NDISMEDIUM_1d3272aa3dfd {
+  NDISMEDIUM_1d3272aa3dfd::from_int(17)
+}
+
+///|
+pub fn NDISMEDIUM_1d3272aa3dfd::max() -> NDISMEDIUM_1d3272aa3dfd {
+  NDISMEDIUM_1d3272aa3dfd::from_int(20)
+}
+
+///|
+pub fn NDISMEDIUM_1d3272aa3dfd::native802_11() -> NDISMEDIUM_1d3272aa3dfd {
+  NDISMEDIUM_1d3272aa3dfd::from_int(16)
+}
+
+///|
+pub fn NDISMEDIUM_1d3272aa3dfd::tunnel() -> NDISMEDIUM_1d3272aa3dfd {
+  NDISMEDIUM_1d3272aa3dfd::from_int(15)
+}
+
+///|
+pub fn NDISMEDIUM_1d3272aa3dfd::wan() -> NDISMEDIUM_1d3272aa3dfd {
+  NDISMEDIUM_1d3272aa3dfd::from_int(3)
+}
+
+///|
+pub fn NDISMEDIUM_1d3272aa3dfd::wi_max() -> NDISMEDIUM_1d3272aa3dfd {
+  NDISMEDIUM_1d3272aa3dfd::from_int(18)
+}
+
+///|
+pub fn NDISMEDIUM_1d3272aa3dfd::wireless_wan() -> NDISMEDIUM_1d3272aa3dfd {
+  NDISMEDIUM_1d3272aa3dfd::from_int(9)
+}
+
+///|
+pub fn NDISNETWORKCHANGETYPE_96bbb491b3fa::ndis_definitely_network_change() -> NDISNETWORKCHANGETYPE_96bbb491b3fa {
+  NDISNETWORKCHANGETYPE_96bbb491b3fa::from_int(2)
+}
+
+///|
+pub fn NDISNETWORKCHANGETYPE_96bbb491b3fa::ndis_network_change_from_media_connect() -> NDISNETWORKCHANGETYPE_96bbb491b3fa {
+  NDISNETWORKCHANGETYPE_96bbb491b3fa::from_int(3)
+}
+
+///|
+pub fn NDISNETWORKCHANGETYPE_96bbb491b3fa::ndis_network_change_max() -> NDISNETWORKCHANGETYPE_96bbb491b3fa {
+  NDISNETWORKCHANGETYPE_96bbb491b3fa::from_int(4)
+}
+
+///|
+pub fn NDISNETWORKCHANGETYPE_96bbb491b3fa::ndis_possible_network_change() -> NDISNETWORKCHANGETYPE_96bbb491b3fa {
+  NDISNETWORKCHANGETYPE_96bbb491b3fa::from_int(1)
+}
+
+///|
+pub fn NDISPARAMETERTYPE_6552f5477297::ndis_parameter_binary() -> NDISPARAMETERTYPE_6552f5477297 {
+  NDISPARAMETERTYPE_6552f5477297::from_int(4)
+}
+
+///|
+pub fn NDISPARAMETERTYPE_6552f5477297::ndis_parameter_hex_integer() -> NDISPARAMETERTYPE_6552f5477297 {
+  NDISPARAMETERTYPE_6552f5477297::from_int(1)
+}
+
+///|
+pub fn NDISPARAMETERTYPE_6552f5477297::ndis_parameter_integer() -> NDISPARAMETERTYPE_6552f5477297 {
+  NDISPARAMETERTYPE_6552f5477297::from_int(0)
+}
+
+///|
+pub fn NDISPARAMETERTYPE_6552f5477297::ndis_parameter_multi_string() -> NDISPARAMETERTYPE_6552f5477297 {
+  NDISPARAMETERTYPE_6552f5477297::from_int(3)
+}
+
+///|
+pub fn NDISPARAMETERTYPE_6552f5477297::ndis_parameter_string() -> NDISPARAMETERTYPE_6552f5477297 {
+  NDISPARAMETERTYPE_6552f5477297::from_int(2)
+}
+
+///|
+pub fn NDISPERPACKETINFO_b300be76056a::cached_net_buffer_list() -> NDISPERPACKETINFO_b300be76056a {
+  NDISPERPACKETINFO_b300be76056a::from_int(10)
+}
+
+///|
+pub fn NDISPERPACKETINFO_b300be76056a::classification_handle_packet_info() -> NDISPERPACKETINFO_b300be76056a {
+  NDISPERPACKETINFO_b300be76056a::from_int(3)
+}
+
+///|
+pub fn NDISPERPACKETINFO_b300be76056a::ieee8021_q_info() -> NDISPERPACKETINFO_b300be76056a {
+  NDISPERPACKETINFO_b300be76056a::from_int(6)
+}
+
+///|
+pub fn NDISPERPACKETINFO_b300be76056a::ip_sec_packet_info() -> NDISPERPACKETINFO_b300be76056a {
+  NDISPERPACKETINFO_b300be76056a::from_int(1)
+}
+
+///|
+pub fn NDISPERPACKETINFO_b300be76056a::max_per_packet_info() -> NDISPERPACKETINFO_b300be76056a {
+  NDISPERPACKETINFO_b300be76056a::from_int(12)
+}
+
+///|
+pub fn NDISPERPACKETINFO_b300be76056a::ndis_reserved() -> NDISPERPACKETINFO_b300be76056a {
+  NDISPERPACKETINFO_b300be76056a::from_int(4)
+}
+
+///|
+pub fn NDISPERPACKETINFO_b300be76056a::original_net_buffer_list() -> NDISPERPACKETINFO_b300be76056a {
+  NDISPERPACKETINFO_b300be76056a::from_int(9)
+}
+
+///|
+pub fn NDISPERPACKETINFO_b300be76056a::original_packet_info() -> NDISPERPACKETINFO_b300be76056a {
+  NDISPERPACKETINFO_b300be76056a::from_int(7)
+}
+
+///|
+pub fn NDISPERPACKETINFO_b300be76056a::packet_cancel_id() -> NDISPERPACKETINFO_b300be76056a {
+  NDISPERPACKETINFO_b300be76056a::from_int(8)
+}
+
+///|
+pub fn NDISPERPACKETINFO_b300be76056a::scatter_gather_list_packet_info() -> NDISPERPACKETINFO_b300be76056a {
+  NDISPERPACKETINFO_b300be76056a::from_int(5)
+}
+
+///|
+pub fn NDISPERPACKETINFO_b300be76056a::short_packet_padding_info() -> NDISPERPACKETINFO_b300be76056a {
+  NDISPERPACKETINFO_b300be76056a::from_int(11)
+}
+
+///|
+pub fn NDISPERPACKETINFO_b300be76056a::tcp_ip_checksum_packet_info() -> NDISPERPACKETINFO_b300be76056a {
+  NDISPERPACKETINFO_b300be76056a::from_int(0)
+}
+
+///|
+pub fn NDISPERPACKETINFO_b300be76056a::tcp_large_send_packet_info() -> NDISPERPACKETINFO_b300be76056a {
+  NDISPERPACKETINFO_b300be76056a::from_int(2)
+}
+
+///|
+pub fn NDISPHYSICALMEDIUM_f42a1ba79664::ndis_physical_medium1394() -> NDISPHYSICALMEDIUM_f42a1ba79664 {
+  NDISPHYSICALMEDIUM_f42a1ba79664::from_int(7)
+}
+
+///|
+pub fn NDISPHYSICALMEDIUM_f42a1ba79664::ndis_physical_medium802_3() -> NDISPHYSICALMEDIUM_f42a1ba79664 {
+  NDISPHYSICALMEDIUM_f42a1ba79664::from_int(14)
+}
+
+///|
+pub fn NDISPHYSICALMEDIUM_f42a1ba79664::ndis_physical_medium802_5() -> NDISPHYSICALMEDIUM_f42a1ba79664 {
+  NDISPHYSICALMEDIUM_f42a1ba79664::from_int(15)
+}
+
+///|
+pub fn NDISPHYSICALMEDIUM_f42a1ba79664::bluetooth() -> NDISPHYSICALMEDIUM_f42a1ba79664 {
+  NDISPHYSICALMEDIUM_f42a1ba79664::from_int(10)
+}
+
+///|
+pub fn NDISPHYSICALMEDIUM_f42a1ba79664::cable_modem() -> NDISPHYSICALMEDIUM_f42a1ba79664 {
+  NDISPHYSICALMEDIUM_f42a1ba79664::from_int(2)
+}
+
+///|
+pub fn NDISPHYSICALMEDIUM_f42a1ba79664::dsl() -> NDISPHYSICALMEDIUM_f42a1ba79664 {
+  NDISPHYSICALMEDIUM_f42a1ba79664::from_int(5)
+}
+
+///|
+pub fn NDISPHYSICALMEDIUM_f42a1ba79664::fibre_channel() -> NDISPHYSICALMEDIUM_f42a1ba79664 {
+  NDISPHYSICALMEDIUM_f42a1ba79664::from_int(6)
+}
+
+///|
+pub fn NDISPHYSICALMEDIUM_f42a1ba79664::infiniband() -> NDISPHYSICALMEDIUM_f42a1ba79664 {
+  NDISPHYSICALMEDIUM_f42a1ba79664::from_int(11)
+}
+
+///|
+pub fn NDISPHYSICALMEDIUM_f42a1ba79664::irda() -> NDISPHYSICALMEDIUM_f42a1ba79664 {
+  NDISPHYSICALMEDIUM_f42a1ba79664::from_int(16)
+}
+
+///|
+pub fn NDISPHYSICALMEDIUM_f42a1ba79664::max() -> NDISPHYSICALMEDIUM_f42a1ba79664 {
+  NDISPHYSICALMEDIUM_f42a1ba79664::from_int(21)
+}
+
+///|
+pub fn NDISPHYSICALMEDIUM_f42a1ba79664::native802_11() -> NDISPHYSICALMEDIUM_f42a1ba79664 {
+  NDISPHYSICALMEDIUM_f42a1ba79664::from_int(9)
+}
+
+///|
+pub fn NDISPHYSICALMEDIUM_f42a1ba79664::native802_15_4() -> NDISPHYSICALMEDIUM_f42a1ba79664 {
+  NDISPHYSICALMEDIUM_f42a1ba79664::from_int(20)
+}
+
+///|
+pub fn NDISPHYSICALMEDIUM_f42a1ba79664::other() -> NDISPHYSICALMEDIUM_f42a1ba79664 {
+  NDISPHYSICALMEDIUM_f42a1ba79664::from_int(19)
+}
+
+///|
+pub fn NDISPHYSICALMEDIUM_f42a1ba79664::phone_line() -> NDISPHYSICALMEDIUM_f42a1ba79664 {
+  NDISPHYSICALMEDIUM_f42a1ba79664::from_int(3)
+}
+
+///|
+pub fn NDISPHYSICALMEDIUM_f42a1ba79664::power_line() -> NDISPHYSICALMEDIUM_f42a1ba79664 {
+  NDISPHYSICALMEDIUM_f42a1ba79664::from_int(4)
+}
+
+///|
+pub fn NDISPHYSICALMEDIUM_f42a1ba79664::uwb() -> NDISPHYSICALMEDIUM_f42a1ba79664 {
+  NDISPHYSICALMEDIUM_f42a1ba79664::from_int(13)
+}
+
+///|
+pub fn NDISPHYSICALMEDIUM_f42a1ba79664::unspecified() -> NDISPHYSICALMEDIUM_f42a1ba79664 {
+  NDISPHYSICALMEDIUM_f42a1ba79664::from_int(0)
+}
+
+///|
+pub fn NDISPHYSICALMEDIUM_f42a1ba79664::wi_max() -> NDISPHYSICALMEDIUM_f42a1ba79664 {
+  NDISPHYSICALMEDIUM_f42a1ba79664::from_int(12)
+}
+
+///|
+pub fn NDISPHYSICALMEDIUM_f42a1ba79664::wired_co_wan() -> NDISPHYSICALMEDIUM_f42a1ba79664 {
+  NDISPHYSICALMEDIUM_f42a1ba79664::from_int(18)
+}
+
+///|
+pub fn NDISPHYSICALMEDIUM_f42a1ba79664::wired_wan() -> NDISPHYSICALMEDIUM_f42a1ba79664 {
+  NDISPHYSICALMEDIUM_f42a1ba79664::from_int(17)
+}
+
+///|
+pub fn NDISPHYSICALMEDIUM_f42a1ba79664::wireless_lan() -> NDISPHYSICALMEDIUM_f42a1ba79664 {
+  NDISPHYSICALMEDIUM_f42a1ba79664::from_int(1)
+}
+
+///|
+pub fn NDISPHYSICALMEDIUM_f42a1ba79664::wireless_wan() -> NDISPHYSICALMEDIUM_f42a1ba79664 {
+  NDISPHYSICALMEDIUM_f42a1ba79664::from_int(8)
+}
+
+///|
+pub fn NDISPORTAUTHORIZATIONSTATE_4282a4577913::ndis_port_authorization_unknown() -> NDISPORTAUTHORIZATIONSTATE_4282a4577913 {
+  NDISPORTAUTHORIZATIONSTATE_4282a4577913::from_int(0)
+}
+
+///|
+pub fn NDISPORTAUTHORIZATIONSTATE_4282a4577913::ndis_port_authorized() -> NDISPORTAUTHORIZATIONSTATE_4282a4577913 {
+  NDISPORTAUTHORIZATIONSTATE_4282a4577913::from_int(1)
+}
+
+///|
+pub fn NDISPORTAUTHORIZATIONSTATE_4282a4577913::ndis_port_reauthorizing() -> NDISPORTAUTHORIZATIONSTATE_4282a4577913 {
+  NDISPORTAUTHORIZATIONSTATE_4282a4577913::from_int(3)
+}
+
+///|
+pub fn NDISPORTAUTHORIZATIONSTATE_4282a4577913::ndis_port_unauthorized() -> NDISPORTAUTHORIZATIONSTATE_4282a4577913 {
+  NDISPORTAUTHORIZATIONSTATE_4282a4577913::from_int(2)
+}
+
+///|
+pub fn NDISPORTCONTROLSTATE_d82cc32d94a8::controlled() -> NDISPORTCONTROLSTATE_d82cc32d94a8 {
+  NDISPORTCONTROLSTATE_d82cc32d94a8::from_int(1)
+}
+
+///|
+pub fn NDISPORTCONTROLSTATE_d82cc32d94a8::uncontrolled() -> NDISPORTCONTROLSTATE_d82cc32d94a8 {
+  NDISPORTCONTROLSTATE_d82cc32d94a8::from_int(2)
+}
+
+///|
+pub fn NDISPORTCONTROLSTATE_d82cc32d94a8::unknown() -> NDISPORTCONTROLSTATE_d82cc32d94a8 {
+  NDISPORTCONTROLSTATE_d82cc32d94a8::from_int(0)
+}
+
+///|
+pub fn NDISPORTTYPE_1d9aedd4cfa8::ndis_port_type8021x_supplicant() -> NDISPORTTYPE_1d9aedd4cfa8 {
+  NDISPORTTYPE_1d9aedd4cfa8::from_int(3)
+}
+
+///|
+pub fn NDISPORTTYPE_1d9aedd4cfa8::bridge() -> NDISPORTTYPE_1d9aedd4cfa8 {
+  NDISPORTTYPE_1d9aedd4cfa8::from_int(1)
+}
+
+///|
+pub fn NDISPORTTYPE_1d9aedd4cfa8::max() -> NDISPORTTYPE_1d9aedd4cfa8 {
+  NDISPORTTYPE_1d9aedd4cfa8::from_int(4)
+}
+
+///|
+pub fn NDISPORTTYPE_1d9aedd4cfa8::ras_connection() -> NDISPORTTYPE_1d9aedd4cfa8 {
+  NDISPORTTYPE_1d9aedd4cfa8::from_int(2)
+}
+
+///|
+pub fn NDISPORTTYPE_1d9aedd4cfa8::undefined() -> NDISPORTTYPE_1d9aedd4cfa8 {
+  NDISPORTTYPE_1d9aedd4cfa8::from_int(0)
+}
+
+///|
+pub fn NDISPOWERPROFILE_fcfa05763500::ac_on_line() -> NDISPOWERPROFILE_fcfa05763500 {
+  NDISPOWERPROFILE_fcfa05763500::from_int(1)
+}
+
+///|
+pub fn NDISPOWERPROFILE_fcfa05763500::battery() -> NDISPOWERPROFILE_fcfa05763500 {
+  NDISPOWERPROFILE_fcfa05763500::from_int(0)
+}
+
+///|
+pub fn NDISPROCESSORTYPE_b6079f7262f5::ndis_processor_alpha() -> NDISPROCESSORTYPE_b6079f7262f5 {
+  NDISPROCESSORTYPE_b6079f7262f5::from_int(2)
+}
+
+///|
+pub fn NDISPROCESSORTYPE_b6079f7262f5::ndis_processor_amd64() -> NDISPROCESSORTYPE_b6079f7262f5 {
+  NDISPROCESSORTYPE_b6079f7262f5::from_int(4)
+}
+
+///|
+pub fn NDISPROCESSORTYPE_b6079f7262f5::ndis_processor_arm() -> NDISPROCESSORTYPE_b6079f7262f5 {
+  NDISPROCESSORTYPE_b6079f7262f5::from_int(6)
+}
+
+///|
+pub fn NDISPROCESSORTYPE_b6079f7262f5::ndis_processor_arm64() -> NDISPROCESSORTYPE_b6079f7262f5 {
+  NDISPROCESSORTYPE_b6079f7262f5::from_int(7)
+}
+
+///|
+pub fn NDISPROCESSORTYPE_b6079f7262f5::ndis_processor_ia64() -> NDISPROCESSORTYPE_b6079f7262f5 {
+  NDISPROCESSORTYPE_b6079f7262f5::from_int(5)
+}
+
+///|
+pub fn NDISPROCESSORTYPE_b6079f7262f5::ndis_processor_mips() -> NDISPROCESSORTYPE_b6079f7262f5 {
+  NDISPROCESSORTYPE_b6079f7262f5::from_int(1)
+}
+
+///|
+pub fn NDISPROCESSORTYPE_b6079f7262f5::ndis_processor_ppc() -> NDISPROCESSORTYPE_b6079f7262f5 {
+  NDISPROCESSORTYPE_b6079f7262f5::from_int(3)
+}
+
+///|
+pub fn NDISPROCESSORTYPE_b6079f7262f5::ndis_processor_x86() -> NDISPROCESSORTYPE_b6079f7262f5 {
+  NDISPROCESSORTYPE_b6079f7262f5::from_int(0)
+}
+
+///|
+pub fn NDISPROCESSORVENDOR_b942238e9d5b::authentic_amd() -> NDISPROCESSORVENDOR_b942238e9d5b {
+  NDISPROCESSORVENDOR_b942238e9d5b::from_int(2)
+}
+
+///|
+pub fn NDISPROCESSORVENDOR_b942238e9d5b::genuin_intel() -> NDISPROCESSORVENDOR_b942238e9d5b {
+  NDISPROCESSORVENDOR_b942238e9d5b::from_int(1)
+}
+
+///|
+pub fn NDISPROCESSORVENDOR_b942238e9d5b::genuine_intel() -> NDISPROCESSORVENDOR_b942238e9d5b {
+  NDISPROCESSORVENDOR_b942238e9d5b::from_int(1)
+}
+
+///|
+pub fn NDISPROCESSORVENDOR_b942238e9d5b::unknown() -> NDISPROCESSORVENDOR_b942238e9d5b {
+  NDISPROCESSORVENDOR_b942238e9d5b::from_int(0)
+}
+
+///|
+pub fn NDISREQUESTTYPE_4eefa310827b::ndis_request_close() -> NDISREQUESTTYPE_4eefa310827b {
+  NDISREQUESTTYPE_4eefa310827b::from_int(4)
+}
+
+///|
+pub fn NDISREQUESTTYPE_4eefa310827b::ndis_request_generic1() -> NDISREQUESTTYPE_4eefa310827b {
+  NDISREQUESTTYPE_4eefa310827b::from_int(8)
+}
+
+///|
+pub fn NDISREQUESTTYPE_4eefa310827b::ndis_request_generic2() -> NDISREQUESTTYPE_4eefa310827b {
+  NDISREQUESTTYPE_4eefa310827b::from_int(9)
+}
+
+///|
+pub fn NDISREQUESTTYPE_4eefa310827b::ndis_request_generic3() -> NDISREQUESTTYPE_4eefa310827b {
+  NDISREQUESTTYPE_4eefa310827b::from_int(10)
+}
+
+///|
+pub fn NDISREQUESTTYPE_4eefa310827b::ndis_request_generic4() -> NDISREQUESTTYPE_4eefa310827b {
+  NDISREQUESTTYPE_4eefa310827b::from_int(11)
+}
+
+///|
+pub fn NDISREQUESTTYPE_4eefa310827b::ndis_request_open() -> NDISREQUESTTYPE_4eefa310827b {
+  NDISREQUESTTYPE_4eefa310827b::from_int(3)
+}
+
+///|
+pub fn NDISREQUESTTYPE_4eefa310827b::ndis_request_query_information() -> NDISREQUESTTYPE_4eefa310827b {
+  NDISREQUESTTYPE_4eefa310827b::from_int(0)
+}
+
+///|
+pub fn NDISREQUESTTYPE_4eefa310827b::ndis_request_query_statistics() -> NDISREQUESTTYPE_4eefa310827b {
+  NDISREQUESTTYPE_4eefa310827b::from_int(2)
+}
+
+///|
+pub fn NDISREQUESTTYPE_4eefa310827b::ndis_request_reset() -> NDISREQUESTTYPE_4eefa310827b {
+  NDISREQUESTTYPE_4eefa310827b::from_int(7)
+}
+
+///|
+pub fn NDISREQUESTTYPE_4eefa310827b::ndis_request_send() -> NDISREQUESTTYPE_4eefa310827b {
+  NDISREQUESTTYPE_4eefa310827b::from_int(5)
+}
+
+///|
+pub fn NDISREQUESTTYPE_4eefa310827b::ndis_request_set_information() -> NDISREQUESTTYPE_4eefa310827b {
+  NDISREQUESTTYPE_4eefa310827b::from_int(1)
+}
+
+///|
+pub fn NDISREQUESTTYPE_4eefa310827b::ndis_request_transfer_data() -> NDISREQUESTTYPE_4eefa310827b {
+  NDISREQUESTTYPE_4eefa310827b::from_int(6)
+}
+
+///|
+pub fn NDISSUPPORTEDPAUSEFUNCTIONS_e507b2ce2000::ndis_pause_functions_receive_only() -> NDISSUPPORTEDPAUSEFUNCTIONS_e507b2ce2000 {
+  NDISSUPPORTEDPAUSEFUNCTIONS_e507b2ce2000::from_int(2)
+}
+
+///|
+pub fn NDISSUPPORTEDPAUSEFUNCTIONS_e507b2ce2000::ndis_pause_functions_send_and_receive() -> NDISSUPPORTEDPAUSEFUNCTIONS_e507b2ce2000 {
+  NDISSUPPORTEDPAUSEFUNCTIONS_e507b2ce2000::from_int(3)
+}
+
+///|
+pub fn NDISSUPPORTEDPAUSEFUNCTIONS_e507b2ce2000::ndis_pause_functions_send_only() -> NDISSUPPORTEDPAUSEFUNCTIONS_e507b2ce2000 {
+  NDISSUPPORTEDPAUSEFUNCTIONS_e507b2ce2000::from_int(1)
+}
+
+///|
+pub fn NDISSUPPORTEDPAUSEFUNCTIONS_e507b2ce2000::ndis_pause_functions_unknown() -> NDISSUPPORTEDPAUSEFUNCTIONS_e507b2ce2000 {
+  NDISSUPPORTEDPAUSEFUNCTIONS_e507b2ce2000::from_int(4)
+}
+
+///|
+pub fn NDISSUPPORTEDPAUSEFUNCTIONS_e507b2ce2000::ndis_pause_functions_unsupported() -> NDISSUPPORTEDPAUSEFUNCTIONS_e507b2ce2000 {
+  NDISSUPPORTEDPAUSEFUNCTIONS_e507b2ce2000::from_int(0)
+}
+
+///|
+pub fn NDISWANHEADERFORMAT_050cf2c3efd0::ndis_wan_header_ethernet() -> NDISWANHEADERFORMAT_050cf2c3efd0 {
+  NDISWANHEADERFORMAT_050cf2c3efd0::from_int(1)
+}
+
+///|
+pub fn NDISWANHEADERFORMAT_050cf2c3efd0::ndis_wan_header_native() -> NDISWANHEADERFORMAT_050cf2c3efd0 {
+  NDISWANHEADERFORMAT_050cf2c3efd0::from_int(0)
+}
+
+///|
+pub fn NDISWANMEDIUMSUBTYPE_0fe1dc8fb2dd::ndis_wan_medium_agile_vpn() -> NDISWANMEDIUMSUBTYPE_0fe1dc8fb2dd {
+  NDISWANMEDIUMSUBTYPE_0fe1dc8fb2dd::from_int(14)
+}
+
+///|
+pub fn NDISWANMEDIUMSUBTYPE_0fe1dc8fb2dd::ndis_wan_medium_atm() -> NDISWANMEDIUMSUBTYPE_0fe1dc8fb2dd {
+  NDISWANMEDIUMSUBTYPE_0fe1dc8fb2dd::from_int(5)
+}
+
+///|
+pub fn NDISWANMEDIUMSUBTYPE_0fe1dc8fb2dd::ndis_wan_medium_frame_relay() -> NDISWANMEDIUMSUBTYPE_0fe1dc8fb2dd {
+  NDISWANMEDIUMSUBTYPE_0fe1dc8fb2dd::from_int(4)
+}
+
+///|
+pub fn NDISWANMEDIUMSUBTYPE_0fe1dc8fb2dd::ndis_wan_medium_gre() -> NDISWANMEDIUMSUBTYPE_0fe1dc8fb2dd {
+  NDISWANMEDIUMSUBTYPE_0fe1dc8fb2dd::from_int(15)
+}
+
+///|
+pub fn NDISWANMEDIUMSUBTYPE_0fe1dc8fb2dd::ndis_wan_medium_hub() -> NDISWANMEDIUMSUBTYPE_0fe1dc8fb2dd {
+  NDISWANMEDIUMSUBTYPE_0fe1dc8fb2dd::from_int(0)
+}
+
+///|
+pub fn NDISWANMEDIUMSUBTYPE_0fe1dc8fb2dd::ndis_wan_medium_irda() -> NDISWANMEDIUMSUBTYPE_0fe1dc8fb2dd {
+  NDISWANMEDIUMSUBTYPE_0fe1dc8fb2dd::from_int(10)
+}
+
+///|
+pub fn NDISWANMEDIUMSUBTYPE_0fe1dc8fb2dd::ndis_wan_medium_isdn() -> NDISWANMEDIUMSUBTYPE_0fe1dc8fb2dd {
+  NDISWANMEDIUMSUBTYPE_0fe1dc8fb2dd::from_int(2)
+}
+
+///|
+pub fn NDISWANMEDIUMSUBTYPE_0fe1dc8fb2dd::ndis_wan_medium_l2_tp() -> NDISWANMEDIUMSUBTYPE_0fe1dc8fb2dd {
+  NDISWANMEDIUMSUBTYPE_0fe1dc8fb2dd::from_int(9)
+}
+
+///|
+pub fn NDISWANMEDIUMSUBTYPE_0fe1dc8fb2dd::ndis_wan_medium_pptp() -> NDISWANMEDIUMSUBTYPE_0fe1dc8fb2dd {
+  NDISWANMEDIUMSUBTYPE_0fe1dc8fb2dd::from_int(8)
+}
+
+///|
+pub fn NDISWANMEDIUMSUBTYPE_0fe1dc8fb2dd::ndis_wan_medium_parallel() -> NDISWANMEDIUMSUBTYPE_0fe1dc8fb2dd {
+  NDISWANMEDIUMSUBTYPE_0fe1dc8fb2dd::from_int(11)
+}
+
+///|
+pub fn NDISWANMEDIUMSUBTYPE_0fe1dc8fb2dd::ndis_wan_medium_pppoe() -> NDISWANMEDIUMSUBTYPE_0fe1dc8fb2dd {
+  NDISWANMEDIUMSUBTYPE_0fe1dc8fb2dd::from_int(12)
+}
+
+///|
+pub fn NDISWANMEDIUMSUBTYPE_0fe1dc8fb2dd::ndis_wan_medium_sstp() -> NDISWANMEDIUMSUBTYPE_0fe1dc8fb2dd {
+  NDISWANMEDIUMSUBTYPE_0fe1dc8fb2dd::from_int(13)
+}
+
+///|
+pub fn NDISWANMEDIUMSUBTYPE_0fe1dc8fb2dd::ndis_wan_medium_sw56_k() -> NDISWANMEDIUMSUBTYPE_0fe1dc8fb2dd {
+  NDISWANMEDIUMSUBTYPE_0fe1dc8fb2dd::from_int(7)
+}
+
+///|
+pub fn NDISWANMEDIUMSUBTYPE_0fe1dc8fb2dd::ndis_wan_medium_serial() -> NDISWANMEDIUMSUBTYPE_0fe1dc8fb2dd {
+  NDISWANMEDIUMSUBTYPE_0fe1dc8fb2dd::from_int(3)
+}
+
+///|
+pub fn NDISWANMEDIUMSUBTYPE_0fe1dc8fb2dd::ndis_wan_medium_sonet() -> NDISWANMEDIUMSUBTYPE_0fe1dc8fb2dd {
+  NDISWANMEDIUMSUBTYPE_0fe1dc8fb2dd::from_int(6)
+}
+
+///|
+pub fn NDISWANMEDIUMSUBTYPE_0fe1dc8fb2dd::ndis_wan_medium_sub_type_max() -> NDISWANMEDIUMSUBTYPE_0fe1dc8fb2dd {
+  NDISWANMEDIUMSUBTYPE_0fe1dc8fb2dd::from_int(16)
+}
+
+///|
+pub fn NDISWANMEDIUMSUBTYPE_0fe1dc8fb2dd::ndis_wan_medium_x_25() -> NDISWANMEDIUMSUBTYPE_0fe1dc8fb2dd {
+  NDISWANMEDIUMSUBTYPE_0fe1dc8fb2dd::from_int(1)
+}
+
+///|
+pub fn NDISWANQUALITY_0b9d35b5b737::ndis_wan_error_control() -> NDISWANQUALITY_0b9d35b5b737 {
+  NDISWANQUALITY_0b9d35b5b737::from_int(1)
+}
+
+///|
+pub fn NDISWANQUALITY_0b9d35b5b737::ndis_wan_raw() -> NDISWANQUALITY_0b9d35b5b737 {
+  NDISWANQUALITY_0b9d35b5b737::from_int(0)
+}
+
+///|
+pub fn NDISWANQUALITY_0b9d35b5b737::ndis_wan_reliable() -> NDISWANQUALITY_0b9d35b5b737 {
+  NDISWANQUALITY_0b9d35b5b737::from_int(2)
+}
+
+///|
+pub fn OFFLOADCONFALGO_28039fabbbaf::offload_ipsec_conf_3_des() -> OFFLOADCONFALGO_28039fabbbaf {
+  OFFLOADCONFALGO_28039fabbbaf::from_int(3)
+}
+
+///|
+pub fn OFFLOADCONFALGO_28039fabbbaf::offload_ipsec_conf_des() -> OFFLOADCONFALGO_28039fabbbaf {
+  OFFLOADCONFALGO_28039fabbbaf::from_int(1)
+}
+
+///|
+pub fn OFFLOADCONFALGO_28039fabbbaf::offload_ipsec_conf_max() -> OFFLOADCONFALGO_28039fabbbaf {
+  OFFLOADCONFALGO_28039fabbbaf::from_int(4)
+}
+
+///|
+pub fn OFFLOADCONFALGO_28039fabbbaf::offload_ipsec_conf_none() -> OFFLOADCONFALGO_28039fabbbaf {
+  OFFLOADCONFALGO_28039fabbbaf::from_int(0)
+}
+
+///|
+pub fn OFFLOADCONFALGO_28039fabbbaf::offload_ipsec_conf_reserved() -> OFFLOADCONFALGO_28039fabbbaf {
+  OFFLOADCONFALGO_28039fabbbaf::from_int(2)
+}
+
+///|
+pub fn OFFLOADINTEGRITYALGO_fff1f0e5af3a::offload_ipsec_integrity_max() -> OFFLOADINTEGRITYALGO_fff1f0e5af3a {
+  OFFLOADINTEGRITYALGO_fff1f0e5af3a::from_int(3)
+}
+
+///|
+pub fn OFFLOADINTEGRITYALGO_fff1f0e5af3a::offload_ipsec_integrity_md5() -> OFFLOADINTEGRITYALGO_fff1f0e5af3a {
+  OFFLOADINTEGRITYALGO_fff1f0e5af3a::from_int(1)
+}
+
+///|
+pub fn OFFLOADINTEGRITYALGO_fff1f0e5af3a::offload_ipsec_integrity_none() -> OFFLOADINTEGRITYALGO_fff1f0e5af3a {
+  OFFLOADINTEGRITYALGO_fff1f0e5af3a::from_int(0)
+}
+
+///|
+pub fn OFFLOADINTEGRITYALGO_fff1f0e5af3a::offload_ipsec_integrity_sha() -> OFFLOADINTEGRITYALGO_fff1f0e5af3a {
+  OFFLOADINTEGRITYALGO_fff1f0e5af3a::from_int(2)
+}
+
+///|
+pub fn OFFLOADOPERATIONE_de35bd8b607f::authenticate() -> OFFLOADOPERATIONE_de35bd8b607f {
+  OFFLOADOPERATIONE_de35bd8b607f::from_int(1)
+}
+
+///|
+pub fn OFFLOADOPERATIONE_de35bd8b607f::encrypt() -> OFFLOADOPERATIONE_de35bd8b607f {
+  OFFLOADOPERATIONE_de35bd8b607f::from_int(2)
+}
+
+///|
+pub fn UDPENCAPTYPE_719141e33be6::offload_ipsec_udpesp_encaptype_ike() -> UDPENCAPTYPE_719141e33be6 {
+  UDPENCAPTYPE_719141e33be6::from_int(0)
+}
+
+///|
+pub fn UDPENCAPTYPE_719141e33be6::offload_ipsec_udpesp_encaptype_other() -> UDPENCAPTYPE_719141e33be6 {
+  UDPENCAPTYPE_719141e33be6::from_int(1)
+}

@@ -1,0 +1,4864 @@
+// Generated using `moon info`, DON'T EDIT IT
+package "moonbit-community/win32api/windows/win32/ui/windows_and_messaging"
+
+import {
+  "moonbit-community/win32api/runtime/core",
+  "moonbit-community/win32api/runtime/strings",
+  "moonbit-community/win32api/scc/9ab35bf48b3f5013",
+  "moonbit-community/win32api/scc/a96faf5bf034fb54",
+  "moonbit-community/win32api/scc/fb66f520d7e12332",
+}
+
+// Values
+pub fn adjust_window_rect(@fb66f520d7e12332.RECT_dc5b788d9702, @a96faf5bf034fb54.WINDOWSTYLE_b4089741576d, Int) -> Bool raise @core.WindowsError
+
+pub fn adjust_window_rect_ex(@fb66f520d7e12332.RECT_dc5b788d9702, @a96faf5bf034fb54.WINDOWSTYLE_b4089741576d, Int, @a96faf5bf034fb54.WINDOWEXSTYLE_99f3964afaf1) -> Bool raise @core.WindowsError
+
+pub fn adjust_window_rect_ex_raw(@core.RawAddress, UInt, Int, UInt) -> @core.RawWin32Call[Int]
+
+pub fn adjust_window_rect_raw(@core.RawAddress, UInt, Int) -> @core.RawWin32Call[Int]
+
+pub fn allow_set_foreground_window(UInt) -> Bool raise @core.WindowsError
+
+pub fn allow_set_foreground_window_raw(UInt) -> @core.RawWin32Call[Int]
+
+pub fn animate_window(@core.RawAddress, UInt, @a96faf5bf034fb54.ANIMATEWINDOWFLAGS_277b83007f1a) -> Bool raise @core.WindowsError
+
+pub fn animate_window_raw(@core.RawAddress, UInt, UInt) -> @core.RawWin32Call[Int]
+
+pub fn any_popup() -> Bool raise @core.WindowsError
+
+pub fn any_popup_raw() -> Int
+
+pub fn append_menu_a(@core.RawAddress, @a96faf5bf034fb54.MENUITEMFLAGS_e453b7847ee3, UInt64, @strings.PStr?) -> Bool raise @core.WindowsError
+
+pub fn append_menu_a_raw(@core.RawAddress, UInt, UInt64, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn append_menu_w(@core.RawAddress, @a96faf5bf034fb54.MENUITEMFLAGS_e453b7847ee3, UInt64, @strings.PWStr?) -> Bool raise @core.WindowsError
+
+pub fn append_menu_w_raw(@core.RawAddress, UInt, UInt64, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn apply_window_action(@core.RawAddress, @a96faf5bf034fb54.WINDOWACTION_b4df90e15356) -> Bool raise @core.WindowsError
+
+pub fn apply_window_action_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn arrange_iconic_windows(@core.RawAddress) -> UInt raise @core.WindowsError
+
+pub fn arrange_iconic_windows_raw(@core.RawAddress) -> @core.RawWin32Call[UInt]
+
+pub let arw_down : Int
+
+pub let arw_hide : Int
+
+pub let arw_left : Int
+
+pub let arw_right : Int
+
+pub let arw_startmask : Int
+
+pub let arw_startright : Int
+
+pub let arw_starttop : Int
+
+pub let arw_up : Int
+
+pub let asfw_any : UInt
+
+pub fn begin_defer_window_pos(Int) -> @core.RawAddress raise @core.WindowsError
+
+pub fn begin_defer_window_pos_raw(Int) -> @core.RawWin32Call[@core.RawAddress]
+
+pub let bm_click : UInt
+
+pub let bm_getcheck : UInt
+
+pub let bm_getimage : UInt
+
+pub let bm_getstate : UInt
+
+pub let bm_setcheck : UInt
+
+pub let bm_setdontclick : UInt
+
+pub let bm_setimage : UInt
+
+pub let bm_setstate : UInt
+
+pub let bm_setstyle : UInt
+
+pub let bn_clicked : UInt
+
+pub let bn_dblclk : UInt
+
+pub let bn_disable : UInt
+
+pub let bn_doubleclicked : UInt
+
+pub let bn_hilite : UInt
+
+pub let bn_killfocus : UInt
+
+pub let bn_paint : UInt
+
+pub let bn_pushed : UInt
+
+pub let bn_setfocus : UInt
+
+pub let bn_unhilite : UInt
+
+pub let bn_unpushed : UInt
+
+pub fn bring_window_to_top(@core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn bring_window_to_top_raw(@core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub let broadcast_query_deny : UInt
+
+pub let bs_3_state : Int
+
+pub let bs_auto3_state : Int
+
+pub let bs_autocheckbox : Int
+
+pub let bs_autoradiobutton : Int
+
+pub let bs_bitmap : Int
+
+pub let bs_bottom : Int
+
+pub let bs_center : Int
+
+pub let bs_checkbox : Int
+
+pub let bs_defpushbutton : Int
+
+pub let bs_flat : Int
+
+pub let bs_groupbox : Int
+
+pub let bs_icon : Int
+
+pub let bs_left : Int
+
+pub let bs_lefttext : Int
+
+pub let bs_multiline : Int
+
+pub let bs_notify : Int
+
+pub let bs_ownerdraw : Int
+
+pub let bs_pushbox : Int
+
+pub let bs_pushbutton : Int
+
+pub let bs_pushlike : Int
+
+pub let bs_radiobutton : Int
+
+pub let bs_right : Int
+
+pub let bs_rightbutton : Int
+
+pub let bs_text : Int
+
+pub let bs_top : Int
+
+pub let bs_typemask : Int
+
+pub let bs_userbutton : Int
+
+pub let bs_vcenter : Int
+
+pub let bsf_msgsrv32_isok : UInt
+
+pub let bsf_msgsrv32_isok_bit : UInt
+
+pub let bsm_installabledrivers : UInt
+
+pub let bsm_netdriver : UInt
+
+pub let bsm_vxds : UInt
+
+pub let bst_focus : UInt
+
+pub let bst_pushed : UInt
+
+pub fn calculate_popup_window_position(@fb66f520d7e12332.POINT_48d934d62b68, @fb66f520d7e12332.SIZE_11175f7b4ee1, UInt, @fb66f520d7e12332.RECT_dc5b788d9702?, @fb66f520d7e12332.RECT_dc5b788d9702) -> Bool raise @core.WindowsError
+
+pub fn calculate_popup_window_position_raw(@core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub let calert_system : UInt
+
+pub fn call_msg_filter_a(@a96faf5bf034fb54.MSG_cce494869f79, Int) -> Bool raise @core.WindowsError
+
+pub fn call_msg_filter_a_raw(@core.RawAddress, Int) -> Int
+
+pub fn call_msg_filter_w(@a96faf5bf034fb54.MSG_cce494869f79, Int) -> Bool raise @core.WindowsError
+
+pub fn call_msg_filter_w_raw(@core.RawAddress, Int) -> Int
+
+pub fn call_next_hook_ex(@core.RawAddress, Int, UInt64, Int64) -> Int64 raise @core.WindowsError
+
+pub fn call_next_hook_ex_raw(@core.RawAddress, Int, UInt64, Int64) -> Int64
+
+pub fn call_window_proc_a(FuncRef[(@core.RawAddress, UInt, UInt64, Int64) -> Int64], @core.RawAddress, UInt, UInt64, Int64) -> Int64 raise @core.WindowsError
+
+pub fn call_window_proc_a_raw(@core.RawAddress, @core.RawAddress, UInt, UInt64, Int64) -> Int64
+
+pub fn call_window_proc_w(FuncRef[(@core.RawAddress, UInt, UInt64, Int64) -> Int64], @core.RawAddress, UInt, UInt64, Int64) -> Int64 raise @core.WindowsError
+
+pub fn call_window_proc_w_raw(@core.RawAddress, @core.RawAddress, UInt, UInt64, Int64) -> Int64
+
+pub fn cancel_shutdown() -> Bool raise @core.WindowsError
+
+pub fn cancel_shutdown_raw() -> Int
+
+pub fn cascade_windows(@core.RawAddress, @a96faf5bf034fb54.CASCADEWINDOWSHOW_254c54e23413, @fb66f520d7e12332.RECT_dc5b788d9702?, UInt, @core.RawAddress) -> UInt16 raise @core.WindowsError
+
+pub fn cascade_windows_raw(@core.RawAddress, UInt, @core.RawAddress, UInt, @core.RawAddress) -> @core.RawWin32Call[UInt]
+
+pub let cb_addstring : UInt
+
+pub let cb_deletestring : UInt
+
+pub let cb_dir : UInt
+
+pub let cb_err : Int
+
+pub let cb_errspace : Int
+
+pub let cb_findstring : UInt
+
+pub let cb_findstringexact : UInt
+
+pub let cb_getcomboboxinfo : UInt
+
+pub let cb_getcount : UInt
+
+pub let cb_getcursel : UInt
+
+pub let cb_getdroppedcontrolrect : UInt
+
+pub let cb_getdroppedstate : UInt
+
+pub let cb_getdroppedwidth : UInt
+
+pub let cb_geteditsel : UInt
+
+pub let cb_getextendedui : UInt
+
+pub let cb_gethorizontalextent : UInt
+
+pub let cb_getitemdata : UInt
+
+pub let cb_getitemheight : UInt
+
+pub let cb_getlbtext : UInt
+
+pub let cb_getlbtextlen : UInt
+
+pub let cb_getlocale : UInt
+
+pub let cb_gettopindex : UInt
+
+pub let cb_initstorage : UInt
+
+pub let cb_insertstring : UInt
+
+pub let cb_limittext : UInt
+
+pub let cb_msgmax : UInt
+
+pub let cb_multipleaddstring : UInt
+
+pub let cb_okay : UInt
+
+pub let cb_resetcontent : UInt
+
+pub let cb_selectstring : UInt
+
+pub let cb_setcursel : UInt
+
+pub let cb_setdroppedwidth : UInt
+
+pub let cb_seteditsel : UInt
+
+pub let cb_setextendedui : UInt
+
+pub let cb_sethorizontalextent : UInt
+
+pub let cb_setitemdata : UInt
+
+pub let cb_setitemheight : UInt
+
+pub let cb_setlocale : UInt
+
+pub let cb_settopindex : UInt
+
+pub let cb_showdropdown : UInt
+
+pub let cbn_closeup : UInt
+
+pub let cbn_dblclk : UInt
+
+pub let cbn_dropdown : UInt
+
+pub let cbn_editchange : UInt
+
+pub let cbn_editupdate : UInt
+
+pub let cbn_errspace : Int
+
+pub let cbn_killfocus : UInt
+
+pub let cbn_selchange : UInt
+
+pub let cbn_selendcancel : UInt
+
+pub let cbn_selendok : UInt
+
+pub let cbn_setfocus : UInt
+
+pub let cbs_autohscroll : Int
+
+pub let cbs_disablenoscroll : Int
+
+pub let cbs_dropdown : Int
+
+pub let cbs_dropdownlist : Int
+
+pub let cbs_hasstrings : Int
+
+pub let cbs_lowercase : Int
+
+pub let cbs_nointegralheight : Int
+
+pub let cbs_oemconvert : Int
+
+pub let cbs_ownerdrawfixed : Int
+
+pub let cbs_ownerdrawvariable : Int
+
+pub let cbs_simple : Int
+
+pub let cbs_sort : Int
+
+pub let cbs_uppercase : Int
+
+pub let cchildren_scrollbar : UInt
+
+pub let cchildren_titlebar : UInt
+
+pub fn change_menu_a(@core.RawAddress, UInt, @strings.PStr?, UInt, UInt) -> Bool raise @core.WindowsError
+
+pub fn change_menu_a_raw(@core.RawAddress, UInt, @core.RawAddress, UInt, UInt) -> Int
+
+pub fn change_menu_w(@core.RawAddress, UInt, @strings.PWStr?, UInt, UInt) -> Bool raise @core.WindowsError
+
+pub fn change_menu_w_raw(@core.RawAddress, UInt, @core.RawAddress, UInt, UInt) -> Int
+
+pub fn change_window_message_filter(UInt, @a96faf5bf034fb54.CHANGEWINDOWMESSAGEFILTERFLAGS_365b346b5c49) -> Bool raise @core.WindowsError
+
+pub fn change_window_message_filter_ex(@core.RawAddress, UInt, @a96faf5bf034fb54.WINDOWMESSAGEFILTERACTION_d22416b2680c, @a96faf5bf034fb54.CHANGEFILTERSTRUCT_c6ad7fa02fd6?) -> Bool raise @core.WindowsError
+
+pub fn change_window_message_filter_ex_raw(@core.RawAddress, UInt, UInt, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn change_window_message_filter_raw(UInt, UInt) -> @core.RawWin32Call[Int]
+
+pub fn char_lower_a(@core.RawAddress) -> @core.RawAddress raise @core.WindowsError
+
+pub fn char_lower_a_raw(@core.RawAddress) -> @core.RawWin32Call[@core.RawAddress]
+
+pub fn char_lower_buff_a(@core.RawAddress, UInt) -> UInt raise @core.WindowsError
+
+pub fn char_lower_buff_a_raw(@core.RawAddress, UInt) -> UInt
+
+pub fn char_lower_buff_w(@strings.PWStrBuffer) -> UInt raise @core.WindowsError
+
+pub fn char_lower_buff_w_raw(@core.RawAddress, UInt) -> UInt
+
+pub fn char_lower_w(@core.RawAddress) -> @core.RawAddress raise @core.WindowsError
+
+pub fn char_lower_w_raw(@core.RawAddress) -> @core.RawWin32Call[@core.RawAddress]
+
+pub fn char_next_a(@strings.PStr) -> @core.RawAddress raise @core.WindowsError
+
+pub fn char_next_a_raw(@core.RawAddress) -> @core.RawAddress
+
+pub fn char_next_ex_a(UInt16, @strings.PStr, UInt) -> @core.RawAddress raise @core.WindowsError
+
+pub fn char_next_ex_a_raw(UInt, @core.RawAddress, UInt) -> @core.RawAddress
+
+pub fn char_next_w(@strings.PWStr) -> @core.RawAddress raise @core.WindowsError
+
+pub fn char_next_w_raw(@core.RawAddress) -> @core.RawAddress
+
+pub fn char_prev_a(@strings.PStr, @strings.PStr) -> @core.RawAddress raise @core.WindowsError
+
+pub fn char_prev_a_raw(@core.RawAddress, @core.RawAddress) -> @core.RawAddress
+
+pub fn char_prev_ex_a(UInt16, @strings.PStr, @strings.PStr, UInt) -> @core.RawAddress raise @core.WindowsError
+
+pub fn char_prev_ex_a_raw(UInt, @core.RawAddress, @core.RawAddress, UInt) -> @core.RawAddress
+
+pub fn char_prev_w(@strings.PWStr, @strings.PWStr) -> @core.RawAddress raise @core.WindowsError
+
+pub fn char_prev_w_raw(@core.RawAddress, @core.RawAddress) -> @core.RawAddress
+
+pub fn char_to_oem_a(@strings.PStr, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn char_to_oem_a_raw(@core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn char_to_oem_buff_a(@strings.PStr, @core.RawAddress, UInt) -> Bool raise @core.WindowsError
+
+pub fn char_to_oem_buff_a_raw(@core.RawAddress, @core.RawAddress, UInt) -> @core.RawWin32Call[Int]
+
+pub fn char_to_oem_buff_w(@strings.PWStr, @core.RawAddress, UInt) -> Bool raise @core.WindowsError
+
+pub fn char_to_oem_buff_w_raw(@core.RawAddress, @core.RawAddress, UInt) -> @core.RawWin32Call[Int]
+
+pub fn char_to_oem_w(@strings.PWStr, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn char_to_oem_w_raw(@core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn char_upper_a(@core.RawAddress) -> @core.RawAddress raise @core.WindowsError
+
+pub fn char_upper_a_raw(@core.RawAddress) -> @core.RawWin32Call[@core.RawAddress]
+
+pub fn char_upper_buff_a(@core.RawAddress, UInt) -> UInt raise @core.WindowsError
+
+pub fn char_upper_buff_a_raw(@core.RawAddress, UInt) -> UInt
+
+pub fn char_upper_buff_w(@strings.PWStrBuffer) -> UInt raise @core.WindowsError
+
+pub fn char_upper_buff_w_raw(@core.RawAddress, UInt) -> UInt
+
+pub fn char_upper_w(@core.RawAddress) -> @core.RawAddress raise @core.WindowsError
+
+pub fn char_upper_w_raw(@core.RawAddress) -> @core.RawWin32Call[@core.RawAddress]
+
+pub fn check_menu_item(@core.RawAddress, UInt, UInt) -> UInt raise @core.WindowsError
+
+pub fn check_menu_item_raw(@core.RawAddress, UInt, UInt) -> UInt
+
+pub fn check_menu_radio_item(@core.RawAddress, UInt, UInt, UInt, UInt) -> Bool raise @core.WindowsError
+
+pub fn check_menu_radio_item_raw(@core.RawAddress, UInt, UInt, UInt, UInt) -> @core.RawWin32Call[Int]
+
+pub fn child_window_from_point(@core.RawAddress, @fb66f520d7e12332.POINT_48d934d62b68) -> @core.RawAddress raise @core.WindowsError
+
+pub fn child_window_from_point_ex(@core.RawAddress, @fb66f520d7e12332.POINT_48d934d62b68, @a96faf5bf034fb54.CWPFLAGS_bd483da102be) -> @core.RawAddress raise @core.WindowsError
+
+pub fn child_window_from_point_ex_raw(@core.RawAddress, Bytes, UInt) -> @core.RawAddress
+
+pub fn child_window_from_point_raw(@core.RawAddress, Bytes) -> @core.RawAddress
+
+pub let childid_self : UInt
+
+pub fn clip_cursor(@fb66f520d7e12332.RECT_dc5b788d9702?) -> Bool raise @core.WindowsError
+
+pub fn clip_cursor_raw(@core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn close_window(@core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn close_window_raw(@core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub let console_application_16_bit : UInt
+
+pub let console_caret_selection : UInt
+
+pub let console_caret_visible : UInt
+
+pub let contactvisualization_off : UInt
+
+pub let contactvisualization_on : UInt
+
+pub let contactvisualization_presentationmode : UInt
+
+pub fn convert_primary_pointer_to_mouse_drag() -> Bool raise @core.WindowsError
+
+pub fn convert_primary_pointer_to_mouse_drag_raw() -> Int
+
+pub fn convert_to_intercept_window(@core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn convert_to_intercept_window_raw(@core.RawAddress) -> Int
+
+pub fn copy_accelerator_table_a(@core.RawAddress, @a96faf5bf034fb54.ACCEL_b911ac570428?, Int) -> Int raise @core.WindowsError
+
+pub fn copy_accelerator_table_a_raw(@core.RawAddress, @core.RawAddress, Int) -> Int
+
+pub fn copy_accelerator_table_w(@core.RawAddress, @a96faf5bf034fb54.ACCEL_b911ac570428?, Int) -> Int raise @core.WindowsError
+
+pub fn copy_accelerator_table_w_raw(@core.RawAddress, @core.RawAddress, Int) -> Int
+
+pub fn copy_icon(@core.RawAddress) -> @core.RawAddress raise @core.WindowsError
+
+pub fn copy_icon_raw(@core.RawAddress) -> @core.RawWin32Call[@core.RawAddress]
+
+pub fn copy_image(@core.RawAddress, @a96faf5bf034fb54.GDIIMAGETYPE_70666f69c0fd, Int, Int, @a96faf5bf034fb54.IMAGEFLAGS_1c696490ca76) -> @core.RawAddress raise @core.WindowsError
+
+pub fn copy_image_raw(@core.RawAddress, UInt, Int, Int, UInt) -> @core.RawWin32Call[@core.RawAddress]
+
+pub fn create_accelerator_table_a(@a96faf5bf034fb54.ACCEL_b911ac570428, Int) -> @core.RawAddress raise @core.WindowsError
+
+pub fn create_accelerator_table_a_raw(@core.RawAddress, Int) -> @core.RawWin32Call[@core.RawAddress]
+
+pub fn create_accelerator_table_w(@a96faf5bf034fb54.ACCEL_b911ac570428, Int) -> @core.RawAddress raise @core.WindowsError
+
+pub fn create_accelerator_table_w_raw(@core.RawAddress, Int) -> @core.RawWin32Call[@core.RawAddress]
+
+pub fn create_caret(@core.RawAddress, @core.RawAddress, Int, Int) -> Bool raise @core.WindowsError
+
+pub fn create_caret_raw(@core.RawAddress, @core.RawAddress, Int, Int) -> @core.RawWin32Call[Int]
+
+pub fn create_cursor(@core.RawAddress, Int, Int, Int, Int, @core.RawAddress, @core.RawAddress) -> @core.RawAddress raise @core.WindowsError
+
+pub fn create_cursor_raw(@core.RawAddress, Int, Int, Int, Int, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[@core.RawAddress]
+
+pub fn create_dialog_indirect_param_a(@core.RawAddress, @a96faf5bf034fb54.DLGTEMPLATE_c7aa2ac9ec7a, @core.RawAddress, @core.RawAddress, Int64) -> @core.RawAddress raise @core.WindowsError
+
+pub fn create_dialog_indirect_param_a_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, Int64) -> @core.RawWin32Call[@core.RawAddress]
+
+pub fn create_dialog_indirect_param_w(@core.RawAddress, @a96faf5bf034fb54.DLGTEMPLATE_c7aa2ac9ec7a, @core.RawAddress, @core.RawAddress, Int64) -> @core.RawAddress raise @core.WindowsError
+
+pub fn create_dialog_indirect_param_w_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, Int64) -> @core.RawWin32Call[@core.RawAddress]
+
+pub fn create_dialog_param_a(@core.RawAddress, @strings.PStr, @core.RawAddress, @core.RawAddress, Int64) -> @core.RawAddress raise @core.WindowsError
+
+pub fn create_dialog_param_a_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, Int64) -> @core.RawWin32Call[@core.RawAddress]
+
+pub fn create_dialog_param_w(@core.RawAddress, @strings.PWStr, @core.RawAddress, @core.RawAddress, Int64) -> @core.RawAddress raise @core.WindowsError
+
+pub fn create_dialog_param_w_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, Int64) -> @core.RawWin32Call[@core.RawAddress]
+
+pub fn create_icon(@core.RawAddress, Int, Int, Byte, Byte, @core.RawAddress, @core.RawAddress) -> @core.RawAddress raise @core.WindowsError
+
+pub fn create_icon_from_resource(@core.RawAddress, UInt, Int, UInt) -> @core.RawAddress raise @core.WindowsError
+
+pub fn create_icon_from_resource_ex(@core.RawAddress, UInt, Int, UInt, Int, Int, @a96faf5bf034fb54.IMAGEFLAGS_1c696490ca76) -> @core.RawAddress raise @core.WindowsError
+
+pub fn create_icon_from_resource_ex_raw(@core.RawAddress, UInt, Int, UInt, Int, Int, UInt) -> @core.RawWin32Call[@core.RawAddress]
+
+pub fn create_icon_from_resource_raw(@core.RawAddress, UInt, Int, UInt) -> @core.RawWin32Call[@core.RawAddress]
+
+pub fn create_icon_indirect(@a96faf5bf034fb54.ICONINFO_c79c7828c600) -> @core.RawAddress raise @core.WindowsError
+
+pub fn create_icon_indirect_raw(@core.RawAddress) -> @core.RawWin32Call[@core.RawAddress]
+
+pub fn create_icon_raw(@core.RawAddress, Int, Int, UInt, UInt, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[@core.RawAddress]
+
+pub fn create_mdi_window_a(@strings.PStr, @strings.PStr, @a96faf5bf034fb54.WINDOWSTYLE_b4089741576d, Int, Int, Int, Int, @core.RawAddress, @core.RawAddress, Int64) -> @core.RawAddress raise @core.WindowsError
+
+pub fn create_mdi_window_a_raw(@core.RawAddress, @core.RawAddress, UInt, Int, Int, Int, Int, @core.RawAddress, @core.RawAddress, Int64) -> @core.RawWin32Call[@core.RawAddress]
+
+pub fn create_mdi_window_w(@strings.PWStr, @strings.PWStr, @a96faf5bf034fb54.WINDOWSTYLE_b4089741576d, Int, Int, Int, Int, @core.RawAddress, @core.RawAddress, Int64) -> @core.RawAddress raise @core.WindowsError
+
+pub fn create_mdi_window_w_raw(@core.RawAddress, @core.RawAddress, UInt, Int, Int, Int, Int, @core.RawAddress, @core.RawAddress, Int64) -> @core.RawWin32Call[@core.RawAddress]
+
+pub fn create_menu() -> @core.RawAddress raise @core.WindowsError
+
+pub fn create_menu_raw() -> @core.RawWin32Call[@core.RawAddress]
+
+pub fn create_popup_menu() -> @core.RawAddress raise @core.WindowsError
+
+pub fn create_popup_menu_raw() -> @core.RawWin32Call[@core.RawAddress]
+
+pub fn create_resource_indexer(@strings.PWStr, @strings.PWStr?, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn create_resource_indexer_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn create_window_ex_a(@a96faf5bf034fb54.WINDOWEXSTYLE_99f3964afaf1, @strings.PStr?, @strings.PStr?, @a96faf5bf034fb54.WINDOWSTYLE_b4089741576d, Int, Int, Int, Int, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> @core.RawAddress raise @core.WindowsError
+
+pub fn create_window_ex_a_raw(UInt, @core.RawAddress, @core.RawAddress, UInt, Int, Int, Int, Int, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[@core.RawAddress]
+
+pub fn create_window_ex_w(@a96faf5bf034fb54.WINDOWEXSTYLE_99f3964afaf1, @strings.PWStr?, @strings.PWStr?, @a96faf5bf034fb54.WINDOWSTYLE_b4089741576d, Int, Int, Int, Int, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> @core.RawAddress raise @core.WindowsError
+
+pub fn create_window_ex_w_raw(UInt, @core.RawAddress, @core.RawAddress, UInt, Int, Int, Int, Int, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[@core.RawAddress]
+
+pub let createprocess_manifest_resource_id : UInt
+
+pub let csound_system : UInt
+
+pub let ctlcolor_btn : UInt
+
+pub let ctlcolor_dlg : UInt
+
+pub let ctlcolor_edit : UInt
+
+pub let ctlcolor_listbox : UInt
+
+pub let ctlcolor_max : UInt
+
+pub let ctlcolor_msgbox : UInt
+
+pub let ctlcolor_scrollbar : UInt
+
+pub let ctlcolor_static : UInt
+
+pub let cursor_creation_scaling_default : UInt
+
+pub let cursor_creation_scaling_none : UInt
+
+pub let cursor_invisible : UInt
+
+pub let cw_usedefault : Int
+
+pub let cwf_create_only : UInt
+
+pub let dbt_appybegin : UInt
+
+pub let dbt_appyend : UInt
+
+pub let dbt_configchangecanceled : UInt
+
+pub let dbt_configchanged : UInt
+
+pub let dbt_configmgapi32 : UInt
+
+pub let dbt_configmgprivate : UInt
+
+pub let dbt_customevent : UInt
+
+pub let dbt_devicearrival : UInt
+
+pub let dbt_devicequeryremove : UInt
+
+pub let dbt_devicequeryremovefailed : UInt
+
+pub let dbt_deviceremovecomplete : UInt
+
+pub let dbt_deviceremovepending : UInt
+
+pub let dbt_devicetypespecific : UInt
+
+pub let dbt_devnodes_changed : UInt
+
+pub let dbt_devtyp_devnode : UInt
+
+pub let dbt_devtyp_net : UInt
+
+pub let dbt_low_disk_space : UInt
+
+pub let dbt_monitorchange : UInt
+
+pub let dbt_no_disk_space : UInt
+
+pub let dbt_querychangeconfig : UInt
+
+pub let dbt_shellloggedon : UInt
+
+pub let dbt_userdefined : UInt
+
+pub let dbt_vollocklockfailed : UInt
+
+pub let dbt_vollocklockreleased : UInt
+
+pub let dbt_vollocklocktaken : UInt
+
+pub let dbt_vollockquerylock : UInt
+
+pub let dbt_vollockqueryunlock : UInt
+
+pub let dbt_vollockunlockfailed : UInt
+
+pub let dbt_vpowerdapi : UInt
+
+pub let dbt_vxdinitcomplete : UInt
+
+pub let dbtf_resource : UInt
+
+pub let dbtf_slownet : UInt
+
+pub let dbtf_xport : UInt
+
+pub let dc_hasdefid : UInt
+
+pub let dcx_excludeupdate : Int
+
+pub fn def_dlg_proc_a(@core.RawAddress, UInt, UInt64, Int64) -> Int64 raise @core.WindowsError
+
+pub fn def_dlg_proc_a_raw(@core.RawAddress, UInt, UInt64, Int64) -> Int64
+
+pub fn def_dlg_proc_w(@core.RawAddress, UInt, UInt64, Int64) -> Int64 raise @core.WindowsError
+
+pub fn def_dlg_proc_w_raw(@core.RawAddress, UInt, UInt64, Int64) -> Int64
+
+pub fn def_frame_proc_a(@core.RawAddress, @core.RawAddress, UInt, UInt64, Int64) -> Int64 raise @core.WindowsError
+
+pub fn def_frame_proc_a_raw(@core.RawAddress, @core.RawAddress, UInt, UInt64, Int64) -> Int64
+
+pub fn def_frame_proc_w(@core.RawAddress, @core.RawAddress, UInt, UInt64, Int64) -> Int64 raise @core.WindowsError
+
+pub fn def_frame_proc_w_raw(@core.RawAddress, @core.RawAddress, UInt, UInt64, Int64) -> Int64
+
+pub fn def_mdi_child_proc_a(@core.RawAddress, UInt, UInt64, Int64) -> Int64 raise @core.WindowsError
+
+pub fn def_mdi_child_proc_a_raw(@core.RawAddress, UInt, UInt64, Int64) -> Int64
+
+pub fn def_mdi_child_proc_w(@core.RawAddress, UInt, UInt64, Int64) -> Int64 raise @core.WindowsError
+
+pub fn def_mdi_child_proc_w_raw(@core.RawAddress, UInt, UInt64, Int64) -> Int64
+
+pub fn def_window_proc_a(@core.RawAddress, UInt, UInt64, Int64) -> Int64 raise @core.WindowsError
+
+pub fn def_window_proc_a_raw(@core.RawAddress, UInt, UInt64, Int64) -> Int64
+
+pub fn def_window_proc_w(@core.RawAddress, UInt, UInt64, Int64) -> Int64 raise @core.WindowsError
+
+pub fn def_window_proc_w_raw(@core.RawAddress, UInt, UInt64, Int64) -> Int64
+
+pub fn defer_window_pos(@core.RawAddress, @core.RawAddress, @core.RawAddress, Int, Int, Int, Int, @a96faf5bf034fb54.SETWINDOWPOSFLAGS_edbda8b74c72) -> @core.RawAddress raise @core.WindowsError
+
+pub fn defer_window_pos_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, Int, Int, Int, Int, UInt) -> @core.RawWin32Call[@core.RawAddress]
+
+pub fn delete_menu(@core.RawAddress, UInt, @a96faf5bf034fb54.MENUITEMFLAGS_e453b7847ee3) -> Bool raise @core.WindowsError
+
+pub fn delete_menu_raw(@core.RawAddress, UInt, UInt) -> @core.RawWin32Call[Int]
+
+pub fn deregister_shell_hook_window(@core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn deregister_shell_hook_window_raw(@core.RawAddress) -> Int
+
+pub fn destroy_accelerator_table(@core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn destroy_accelerator_table_raw(@core.RawAddress) -> Int
+
+pub fn destroy_caret() -> Bool raise @core.WindowsError
+
+pub fn destroy_caret_raw() -> @core.RawWin32Call[Int]
+
+pub fn destroy_cursor(@core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn destroy_cursor_raw(@core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn destroy_icon(@core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn destroy_icon_raw(@core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn destroy_indexed_results(@core.RawAddress, UInt, @a96faf5bf034fb54.IndexedResourceQualifier_5aee72cde3b0?) -> Unit raise @core.WindowsError
+
+pub fn destroy_indexed_results_raw(@core.RawAddress, UInt, @core.RawAddress) -> Unit
+
+pub fn destroy_menu(@core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn destroy_menu_raw(@core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn destroy_resource_indexer(@core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn destroy_resource_indexer_raw(@core.RawAddress) -> Unit
+
+pub fn destroy_window(@core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn destroy_window_raw(@core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn dialog_box_indirect_param_a(@core.RawAddress, @a96faf5bf034fb54.DLGTEMPLATE_c7aa2ac9ec7a, @core.RawAddress, @core.RawAddress, Int64) -> Int64 raise @core.WindowsError
+
+pub fn dialog_box_indirect_param_a_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, Int64) -> @core.RawWin32Call[Int64]
+
+pub fn dialog_box_indirect_param_w(@core.RawAddress, @a96faf5bf034fb54.DLGTEMPLATE_c7aa2ac9ec7a, @core.RawAddress, @core.RawAddress, Int64) -> Int64 raise @core.WindowsError
+
+pub fn dialog_box_indirect_param_w_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, Int64) -> @core.RawWin32Call[Int64]
+
+pub fn dialog_box_param_a(@core.RawAddress, @strings.PStr, @core.RawAddress, @core.RawAddress, Int64) -> Int64 raise @core.WindowsError
+
+pub fn dialog_box_param_a_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, Int64) -> @core.RawWin32Call[Int64]
+
+pub fn dialog_box_param_w(@core.RawAddress, @strings.PWStr, @core.RawAddress, @core.RawAddress, Int64) -> Int64 raise @core.WindowsError
+
+pub fn dialog_box_param_w_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, Int64) -> @core.RawWin32Call[Int64]
+
+pub let difference : UInt
+
+pub fn disable_process_windows_ghosting() -> Unit raise @core.WindowsError
+
+pub fn disable_process_windows_ghosting_raw() -> Unit
+
+pub fn dispatch_message_a(@a96faf5bf034fb54.MSG_cce494869f79) -> Int64 raise @core.WindowsError
+
+pub fn dispatch_message_a_raw(@core.RawAddress) -> Int64
+
+pub fn dispatch_message_w(@a96faf5bf034fb54.MSG_cce494869f79) -> Int64 raise @core.WindowsError
+
+pub fn dispatch_message_w_raw(@core.RawAddress) -> Int64
+
+pub let dlgc_button : UInt
+
+pub let dlgc_defpushbutton : UInt
+
+pub let dlgc_hassetsel : UInt
+
+pub let dlgc_radiobutton : UInt
+
+pub let dlgc_static : UInt
+
+pub let dlgc_undefpushbutton : UInt
+
+pub let dlgc_wantallkeys : UInt
+
+pub let dlgc_wantarrows : UInt
+
+pub let dlgc_wantchars : UInt
+
+pub let dlgc_wantmessage : UInt
+
+pub let dlgc_wanttab : UInt
+
+pub let dlgwindowextra : UInt
+
+pub let dm_getdefid : UInt
+
+pub let dm_pointerhittest : UInt
+
+pub let dm_reposition : UInt
+
+pub let dm_setdefid : UInt
+
+pub let do_dropfile : Int
+
+pub let do_printfile : Int
+
+pub let dof_directory : UInt
+
+pub let dof_document : UInt
+
+pub let dof_executable : UInt
+
+pub let dof_multiple : UInt
+
+pub let dof_progman : UInt
+
+pub let dof_shelldata : UInt
+
+pub fn drag_object(@core.RawAddress, @core.RawAddress, UInt, UInt64, @core.RawAddress) -> UInt raise @core.WindowsError
+
+pub fn drag_object_raw(@core.RawAddress, @core.RawAddress, UInt, UInt64, @core.RawAddress) -> UInt
+
+pub fn draw_icon(@core.RawAddress, Int, Int, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn draw_icon_ex(@core.RawAddress, Int, Int, @core.RawAddress, Int, Int, UInt, @core.RawAddress, @a96faf5bf034fb54.DIFLAGS_45ef150bc862) -> Bool raise @core.WindowsError
+
+pub fn draw_icon_ex_raw(@core.RawAddress, Int, Int, @core.RawAddress, Int, Int, UInt, @core.RawAddress, UInt) -> @core.RawWin32Call[Int]
+
+pub fn draw_icon_raw(@core.RawAddress, Int, Int, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn draw_menu_bar(@core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn draw_menu_bar_raw(@core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub let ds_3_dlook : Int
+
+pub let ds_absalign : Int
+
+pub let ds_center : Int
+
+pub let ds_centermouse : Int
+
+pub let ds_contexthelp : Int
+
+pub let ds_control : Int
+
+pub let ds_fixedsys : Int
+
+pub let ds_localedit : Int
+
+pub let ds_modalframe : Int
+
+pub let ds_nofailcreate : Int
+
+pub let ds_noidlemsg : Int
+
+pub let ds_setfont : Int
+
+pub let ds_setforeground : Int
+
+pub let ds_sysmodal : Int
+
+pub let ds_usepixels : Int
+
+pub let dwl_dlgproc : UInt
+
+pub let dwl_msgresult : UInt
+
+pub let dwl_user : UInt
+
+pub let dwlp_msgresult : UInt
+
+pub let ec_leftmargin : UInt
+
+pub let ec_rightmargin : UInt
+
+pub let ec_usefontinfo : UInt
+
+pub let edd_get_device_interface_name : UInt
+
+pub let eimes_cancelcompstrinfocus : UInt
+
+pub let eimes_completecompstrkillfocus : UInt
+
+pub let eimes_getcompstratonce : UInt
+
+pub let emsis_compositionstring : UInt
+
+pub let en_after_paste : UInt
+
+pub let en_align_ltr_ec : UInt
+
+pub let en_align_rtl_ec : UInt
+
+pub let en_before_paste : UInt
+
+pub let en_change : UInt
+
+pub let en_errspace : UInt
+
+pub let en_hscroll : UInt
+
+pub let en_killfocus : UInt
+
+pub let en_maxtext : UInt
+
+pub let en_setfocus : UInt
+
+pub let en_update : UInt
+
+pub let en_vscroll : UInt
+
+pub fn enable_menu_item(@core.RawAddress, UInt, @a96faf5bf034fb54.MENUITEMFLAGS_e453b7847ee3) -> Bool raise @core.WindowsError
+
+pub fn enable_menu_item_raw(@core.RawAddress, UInt, UInt) -> Int
+
+pub fn end_defer_window_pos(@core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn end_defer_window_pos_raw(@core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn end_dialog(@core.RawAddress, Int64) -> Bool raise @core.WindowsError
+
+pub fn end_dialog_raw(@core.RawAddress, Int64) -> @core.RawWin32Call[Int]
+
+pub fn end_menu() -> Bool raise @core.WindowsError
+
+pub fn end_menu_raw() -> @core.RawWin32Call[Int]
+
+pub let endsession_closeapp : UInt
+
+pub let endsession_critical : UInt
+
+pub let endsession_logoff : UInt
+
+pub fn enter_move_size_loop(@core.RawAddress, @fb66f520d7e12332.POINT_48d934d62b68, @a96faf5bf034fb54.MOVESIZEOPERATION_c94cadcf8c13) -> Bool raise @core.WindowsError
+
+pub fn enter_move_size_loop_raw(@core.RawAddress, Bytes, Int) -> Int
+
+pub fn enum_child_windows(@core.RawAddress, @core.RawAddress, Int64) -> Bool raise @core.WindowsError
+
+pub fn enum_child_windows_raw(@core.RawAddress, @core.RawAddress, Int64) -> Int
+
+pub fn enum_props_a(@core.RawAddress, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn enum_props_a_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn enum_props_ex_a(@core.RawAddress, @core.RawAddress, Int64) -> Int raise @core.WindowsError
+
+pub fn enum_props_ex_a_raw(@core.RawAddress, @core.RawAddress, Int64) -> Int
+
+pub fn enum_props_ex_w(@core.RawAddress, @core.RawAddress, Int64) -> Int raise @core.WindowsError
+
+pub fn enum_props_ex_w_raw(@core.RawAddress, @core.RawAddress, Int64) -> Int
+
+pub fn enum_props_w(@core.RawAddress, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn enum_props_w_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn enum_thread_windows(UInt, @core.RawAddress, Int64) -> Bool raise @core.WindowsError
+
+pub fn enum_thread_windows_raw(UInt, @core.RawAddress, Int64) -> Int
+
+pub fn enum_windows(@core.RawAddress, Int64) -> Bool raise @core.WindowsError
+
+pub fn enum_windows_raw(@core.RawAddress, Int64) -> @core.RawWin32Call[Int]
+
+pub let es_autohscroll : Int
+
+pub let es_autovscroll : Int
+
+pub let es_center : Int
+
+pub let es_left : Int
+
+pub let es_lowercase : Int
+
+pub let es_multiline : Int
+
+pub let es_nohidesel : Int
+
+pub let es_number : Int
+
+pub let es_oemconvert : Int
+
+pub let es_password : Int
+
+pub let es_readonly : Int
+
+pub let es_right : Int
+
+pub let es_uppercase : Int
+
+pub let es_wantreturn : Int
+
+pub let event_aia_end : UInt
+
+pub let event_aia_start : UInt
+
+pub let event_console_caret : UInt
+
+pub let event_console_end : UInt
+
+pub let event_console_end_application : UInt
+
+pub let event_console_layout : UInt
+
+pub let event_console_start_application : UInt
+
+pub let event_console_update_region : UInt
+
+pub let event_console_update_scroll : UInt
+
+pub let event_console_update_simple : UInt
+
+pub let event_max : UInt
+
+pub let event_min : UInt
+
+pub let event_object_acceleratorchange : UInt
+
+pub let event_object_cloaked : UInt
+
+pub let event_object_contentscrolled : UInt
+
+pub let event_object_create : UInt
+
+pub let event_object_defactionchange : UInt
+
+pub let event_object_descriptionchange : UInt
+
+pub let event_object_destroy : UInt
+
+pub let event_object_dragcancel : UInt
+
+pub let event_object_dragcomplete : UInt
+
+pub let event_object_dragdropped : UInt
+
+pub let event_object_dragenter : UInt
+
+pub let event_object_dragleave : UInt
+
+pub let event_object_dragstart : UInt
+
+pub let event_object_end : UInt
+
+pub let event_object_focus : UInt
+
+pub let event_object_helpchange : UInt
+
+pub let event_object_hide : UInt
+
+pub let event_object_hostedobjectsinvalidated : UInt
+
+pub let event_object_ime_change : UInt
+
+pub let event_object_ime_hide : UInt
+
+pub let event_object_ime_show : UInt
+
+pub let event_object_invoked : UInt
+
+pub let event_object_liveregionchanged : UInt
+
+pub let event_object_locationchange : UInt
+
+pub let event_object_namechange : UInt
+
+pub let event_object_parentchange : UInt
+
+pub let event_object_reorder : UInt
+
+pub let event_object_selection : UInt
+
+pub let event_object_selectionadd : UInt
+
+pub let event_object_selectionremove : UInt
+
+pub let event_object_selectionwithin : UInt
+
+pub let event_object_show : UInt
+
+pub let event_object_statechange : UInt
+
+pub let event_object_textedit_conversiontargetchanged : UInt
+
+pub let event_object_textselectionchanged : UInt
+
+pub let event_object_uncloaked : UInt
+
+pub let event_object_valuechange : UInt
+
+pub let event_oem_defined_end : UInt
+
+pub let event_oem_defined_start : UInt
+
+pub let event_system_alert : UInt
+
+pub let event_system_arrangmentpreview : UInt
+
+pub let event_system_captureend : UInt
+
+pub let event_system_capturestart : UInt
+
+pub let event_system_contexthelpend : UInt
+
+pub let event_system_contexthelpstart : UInt
+
+pub let event_system_desktopswitch : UInt
+
+pub let event_system_dialogend : UInt
+
+pub let event_system_dialogstart : UInt
+
+pub let event_system_dragdropend : UInt
+
+pub let event_system_dragdropstart : UInt
+
+pub let event_system_end : UInt
+
+pub let event_system_foreground : UInt
+
+pub let event_system_ime_key_notification : UInt
+
+pub let event_system_menuend : UInt
+
+pub let event_system_menupopupend : UInt
+
+pub let event_system_menupopupstart : UInt
+
+pub let event_system_menustart : UInt
+
+pub let event_system_minimizeend : UInt
+
+pub let event_system_minimizestart : UInt
+
+pub let event_system_movesizeend : UInt
+
+pub let event_system_movesizestart : UInt
+
+pub let event_system_scrollingend : UInt
+
+pub let event_system_scrollingstart : UInt
+
+pub let event_system_sound : UInt
+
+pub let event_system_switchend : UInt
+
+pub let event_system_switcher_appdropped : UInt
+
+pub let event_system_switcher_appgrabbed : UInt
+
+pub let event_system_switcher_appovertarget : UInt
+
+pub let event_system_switcher_cancelled : UInt
+
+pub let event_system_switchstart : UInt
+
+pub let event_uia_eventid_end : UInt
+
+pub let event_uia_eventid_start : UInt
+
+pub let event_uia_propid_end : UInt
+
+pub let event_uia_propid_start : UInt
+
+pub let fappcommand_key : UInt
+
+pub let fappcommand_mask : UInt
+
+pub let fappcommand_mouse : UInt
+
+pub let fappcommand_oem : UInt
+
+pub let fe_fontsmoothingcleartype : UInt
+
+pub let fe_fontsmoothingorientationbgr : UInt
+
+pub let fe_fontsmoothingorientationrgb : UInt
+
+pub let fe_fontsmoothingstandard : UInt
+
+pub fn find_window_a(@strings.PStr?, @strings.PStr?) -> @core.RawAddress raise @core.WindowsError
+
+pub fn find_window_a_raw(@core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[@core.RawAddress]
+
+pub fn find_window_ex_a(@core.RawAddress, @core.RawAddress, @strings.PStr?, @strings.PStr?) -> @core.RawAddress raise @core.WindowsError
+
+pub fn find_window_ex_a_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[@core.RawAddress]
+
+pub fn find_window_ex_w(@core.RawAddress, @core.RawAddress, @strings.PWStr?, @strings.PWStr?) -> @core.RawAddress raise @core.WindowsError
+
+pub fn find_window_ex_w_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[@core.RawAddress]
+
+pub fn find_window_w(@strings.PWStr?, @strings.PWStr?) -> @core.RawAddress raise @core.WindowsError
+
+pub fn find_window_w_raw(@core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[@core.RawAddress]
+
+pub let fkf_available : UInt
+
+pub let fkf_clickon : UInt
+
+pub let fkf_confirmhotkey : UInt
+
+pub let fkf_filterkeyson : UInt
+
+pub let fkf_hotkeyactive : UInt
+
+pub let fkf_hotkeysound : UInt
+
+pub let fkf_indicator : UInt
+
+pub fn flash_window(@core.RawAddress, Int) -> Bool raise @core.WindowsError
+
+pub fn flash_window_ex(@a96faf5bf034fb54.FLASHWINFO_57afe8cd64f0) -> Bool raise @core.WindowsError
+
+pub fn flash_window_ex_raw(@core.RawAddress) -> Int
+
+pub fn flash_window_raw(@core.RawAddress, Int) -> Int
+
+pub let gcf_include_ancestors : UInt
+
+pub let gestureconfigmaxcount : UInt
+
+pub let gesturevisualization_doubletap : UInt
+
+pub let gesturevisualization_off : UInt
+
+pub let gesturevisualization_on : UInt
+
+pub let gesturevisualization_pressandhold : UInt
+
+pub let gesturevisualization_pressandtap : UInt
+
+pub let gesturevisualization_righttap : UInt
+
+pub let gesturevisualization_tap : UInt
+
+pub fn get_alt_tab_info_a(@core.RawAddress, Int, @a96faf5bf034fb54.ALTTABINFO_91cdc6f23c4a, @core.RawAddress, UInt) -> Bool raise @core.WindowsError
+
+pub fn get_alt_tab_info_a_raw(@core.RawAddress, Int, @core.RawAddress, @core.RawAddress, UInt) -> @core.RawWin32Call[Int]
+
+pub fn get_alt_tab_info_w(@core.RawAddress, Int, @a96faf5bf034fb54.ALTTABINFO_91cdc6f23c4a, @strings.PWStrBuffer?) -> Bool raise @core.WindowsError
+
+pub fn get_alt_tab_info_w_raw(@core.RawAddress, Int, @core.RawAddress, @core.RawAddress, UInt) -> @core.RawWin32Call[Int]
+
+pub fn get_ancestor(@core.RawAddress, @a96faf5bf034fb54.GETANCESTORFLAGS_ee6b9f5b7695) -> @core.RawAddress raise @core.WindowsError
+
+pub fn get_ancestor_raw(@core.RawAddress, UInt) -> @core.RawAddress
+
+pub fn get_caret_blink_time() -> UInt raise @core.WindowsError
+
+pub fn get_caret_blink_time_raw() -> @core.RawWin32Call[UInt]
+
+pub fn get_caret_pos(@fb66f520d7e12332.POINT_48d934d62b68) -> Bool raise @core.WindowsError
+
+pub fn get_caret_pos_raw(@core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn get_class_info_a(@core.RawAddress, @strings.PStr, @a96faf5bf034fb54.WNDCLASSA_49f883ab47c8) -> Bool raise @core.WindowsError
+
+pub fn get_class_info_a_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn get_class_info_ex_a(@core.RawAddress, @strings.PStr, @a96faf5bf034fb54.WNDCLASSEXA_6f391918ed52) -> Bool raise @core.WindowsError
+
+pub fn get_class_info_ex_a_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn get_class_info_ex_w(@core.RawAddress, @strings.PWStr, @a96faf5bf034fb54.WNDCLASSEXW_8493016dd6b2) -> Bool raise @core.WindowsError
+
+pub fn get_class_info_ex_w_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn get_class_info_w(@core.RawAddress, @strings.PWStr, @a96faf5bf034fb54.WNDCLASSW_5c974a795d73) -> Bool raise @core.WindowsError
+
+pub fn get_class_info_w_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn get_class_long_a(@core.RawAddress, @a96faf5bf034fb54.GETCLASSLONGINDEX_0468922445b6) -> UInt raise @core.WindowsError
+
+pub fn get_class_long_a_raw(@core.RawAddress, Int) -> @core.RawWin32Call[UInt]
+
+pub fn get_class_long_ptr_a(@core.RawAddress, @a96faf5bf034fb54.GETCLASSLONGINDEX_0468922445b6) -> UInt64 raise @core.WindowsError
+
+pub fn get_class_long_ptr_a_raw(@core.RawAddress, Int) -> @core.RawWin32Call[UInt64]
+
+pub fn get_class_long_ptr_w(@core.RawAddress, @a96faf5bf034fb54.GETCLASSLONGINDEX_0468922445b6) -> UInt64 raise @core.WindowsError
+
+pub fn get_class_long_ptr_w_raw(@core.RawAddress, Int) -> @core.RawWin32Call[UInt64]
+
+pub fn get_class_long_w(@core.RawAddress, @a96faf5bf034fb54.GETCLASSLONGINDEX_0468922445b6) -> UInt raise @core.WindowsError
+
+pub fn get_class_long_w_raw(@core.RawAddress, Int) -> @core.RawWin32Call[UInt]
+
+pub fn get_class_name_a(@core.RawAddress, @core.RawAddress, Int) -> Int raise @core.WindowsError
+
+pub fn get_class_name_a_raw(@core.RawAddress, @core.RawAddress, Int) -> @core.RawWin32Call[Int]
+
+pub fn get_class_name_w(@core.RawAddress, @strings.PWStrBuffer) -> Int raise @core.WindowsError
+
+pub fn get_class_name_w_raw(@core.RawAddress, @core.RawAddress, Int) -> @core.RawWin32Call[Int]
+
+pub fn get_class_word(@core.RawAddress, Int) -> UInt16 raise @core.WindowsError
+
+pub fn get_class_word_raw(@core.RawAddress, Int) -> @core.RawWin32Call[UInt]
+
+pub fn get_client_rect(@core.RawAddress, @fb66f520d7e12332.RECT_dc5b788d9702) -> Bool raise @core.WindowsError
+
+pub fn get_client_rect_raw(@core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn get_clip_cursor(@fb66f520d7e12332.RECT_dc5b788d9702) -> Bool raise @core.WindowsError
+
+pub fn get_clip_cursor_raw(@core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn get_current_monitor_topology_id() -> UInt raise @core.WindowsError
+
+pub fn get_current_monitor_topology_id_raw() -> UInt
+
+pub fn get_cursor() -> @core.RawAddress raise @core.WindowsError
+
+pub fn get_cursor_info(@a96faf5bf034fb54.CURSORINFO_b292ba675924) -> Bool raise @core.WindowsError
+
+pub fn get_cursor_info_raw(@core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn get_cursor_pos(@fb66f520d7e12332.POINT_48d934d62b68) -> Bool raise @core.WindowsError
+
+pub fn get_cursor_pos_raw(@core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn get_cursor_raw() -> @core.RawAddress
+
+pub fn get_desktop_window() -> @core.RawAddress raise @core.WindowsError
+
+pub fn get_desktop_window_raw() -> @core.RawAddress
+
+pub fn get_dialog_base_units() -> Int raise @core.WindowsError
+
+pub fn get_dialog_base_units_raw() -> Int
+
+pub fn get_dlg_ctrl_id(@core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn get_dlg_ctrl_id_raw(@core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn get_dlg_item(@core.RawAddress, Int) -> @core.RawAddress raise @core.WindowsError
+
+pub fn get_dlg_item_int(@core.RawAddress, Int, @core.RawAddress, Int) -> UInt raise @core.WindowsError
+
+pub fn get_dlg_item_int_raw(@core.RawAddress, Int, @core.RawAddress, Int) -> @core.RawWin32Call[UInt]
+
+pub fn get_dlg_item_raw(@core.RawAddress, Int) -> @core.RawWin32Call[@core.RawAddress]
+
+pub fn get_dlg_item_text_a(@core.RawAddress, Int, @core.RawAddress, Int) -> UInt raise @core.WindowsError
+
+pub fn get_dlg_item_text_a_raw(@core.RawAddress, Int, @core.RawAddress, Int) -> @core.RawWin32Call[UInt]
+
+pub fn get_dlg_item_text_w(@core.RawAddress, Int, @strings.PWStrBuffer) -> UInt raise @core.WindowsError
+
+pub fn get_dlg_item_text_w_raw(@core.RawAddress, Int, @core.RawAddress, Int) -> @core.RawWin32Call[UInt]
+
+pub fn get_foreground_window() -> @core.RawAddress raise @core.WindowsError
+
+pub fn get_foreground_window_raw() -> @core.RawAddress
+
+pub fn get_gui_thread_info(UInt, @a96faf5bf034fb54.GUITHREADINFO_1307c6f65de8) -> Bool raise @core.WindowsError
+
+pub fn get_gui_thread_info_raw(UInt, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn get_icon_info(@core.RawAddress, @a96faf5bf034fb54.ICONINFO_c79c7828c600) -> Bool raise @core.WindowsError
+
+pub fn get_icon_info_ex_a(@core.RawAddress, @a96faf5bf034fb54.ICONINFOEXA_59ec90d1a1d1) -> Bool raise @core.WindowsError
+
+pub fn get_icon_info_ex_a_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn get_icon_info_ex_w(@core.RawAddress, @a96faf5bf034fb54.ICONINFOEXW_a67adf2d3394) -> Bool raise @core.WindowsError
+
+pub fn get_icon_info_ex_w_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn get_icon_info_raw(@core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn get_input_state() -> Bool raise @core.WindowsError
+
+pub fn get_input_state_raw() -> Int
+
+pub fn get_last_active_popup(@core.RawAddress) -> @core.RawAddress raise @core.WindowsError
+
+pub fn get_last_active_popup_raw(@core.RawAddress) -> @core.RawAddress
+
+pub fn get_layered_window_attributes(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn get_layered_window_attributes_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn get_menu(@core.RawAddress) -> @core.RawAddress raise @core.WindowsError
+
+pub fn get_menu_bar_info(@core.RawAddress, @a96faf5bf034fb54.OBJECTIDENTIFIER_4e0725eb05fb, Int, @a96faf5bf034fb54.MENUBARINFO_856c8c9ff2ba) -> Bool raise @core.WindowsError
+
+pub fn get_menu_bar_info_raw(@core.RawAddress, Int, Int, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn get_menu_check_mark_dimensions() -> Int raise @core.WindowsError
+
+pub fn get_menu_check_mark_dimensions_raw() -> Int
+
+pub fn get_menu_default_item(@core.RawAddress, UInt, @a96faf5bf034fb54.GETMENUDEFAULTITEMFLAGS_5de680553024) -> UInt raise @core.WindowsError
+
+pub fn get_menu_default_item_raw(@core.RawAddress, UInt, UInt) -> @core.RawWin32Call[UInt]
+
+pub fn get_menu_info(@core.RawAddress, @a96faf5bf034fb54.MENUINFO_36809b6dbcad) -> Bool raise @core.WindowsError
+
+pub fn get_menu_info_raw(@core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn get_menu_item_count(@core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn get_menu_item_count_raw(@core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn get_menu_item_id(@core.RawAddress, Int) -> UInt raise @core.WindowsError
+
+pub fn get_menu_item_id_raw(@core.RawAddress, Int) -> UInt
+
+pub fn get_menu_item_info_a(@core.RawAddress, UInt, Int, @a96faf5bf034fb54.MENUITEMINFOA_8b8f9a1c5427) -> Bool raise @core.WindowsError
+
+pub fn get_menu_item_info_a_raw(@core.RawAddress, UInt, Int, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn get_menu_item_info_w(@core.RawAddress, UInt, Int, @a96faf5bf034fb54.MENUITEMINFOW_1584dff9bd81) -> Bool raise @core.WindowsError
+
+pub fn get_menu_item_info_w_raw(@core.RawAddress, UInt, Int, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn get_menu_item_rect(@core.RawAddress, @core.RawAddress, UInt, @fb66f520d7e12332.RECT_dc5b788d9702) -> Bool raise @core.WindowsError
+
+pub fn get_menu_item_rect_raw(@core.RawAddress, @core.RawAddress, UInt, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn get_menu_raw(@core.RawAddress) -> @core.RawAddress
+
+pub fn get_menu_state(@core.RawAddress, UInt, @a96faf5bf034fb54.MENUITEMFLAGS_e453b7847ee3) -> UInt raise @core.WindowsError
+
+pub fn get_menu_state_raw(@core.RawAddress, UInt, UInt) -> UInt
+
+pub fn get_menu_string_a(@core.RawAddress, UInt, @core.RawAddress, Int, @a96faf5bf034fb54.MENUITEMFLAGS_e453b7847ee3) -> Int raise @core.WindowsError
+
+pub fn get_menu_string_a_raw(@core.RawAddress, UInt, @core.RawAddress, Int, UInt) -> Int
+
+pub fn get_menu_string_w(@core.RawAddress, UInt, @strings.PWStrBuffer?, @a96faf5bf034fb54.MENUITEMFLAGS_e453b7847ee3) -> Int raise @core.WindowsError
+
+pub fn get_menu_string_w_raw(@core.RawAddress, UInt, @core.RawAddress, Int, UInt) -> Int
+
+pub fn get_message_a(@a96faf5bf034fb54.MSG_cce494869f79, @core.RawAddress, UInt, UInt) -> Bool raise @core.WindowsError
+
+pub fn get_message_a_raw(@core.RawAddress, @core.RawAddress, UInt, UInt) -> @core.RawWin32Call[Int]
+
+pub fn get_message_extra_info() -> Int64 raise @core.WindowsError
+
+pub fn get_message_extra_info_raw() -> Int64
+
+pub fn get_message_pos() -> UInt raise @core.WindowsError
+
+pub fn get_message_pos_raw() -> UInt
+
+pub fn get_message_time() -> Int raise @core.WindowsError
+
+pub fn get_message_time_raw() -> Int
+
+pub fn get_message_w(@a96faf5bf034fb54.MSG_cce494869f79, @core.RawAddress, UInt, UInt) -> Bool raise @core.WindowsError
+
+pub fn get_message_w_raw(@core.RawAddress, @core.RawAddress, UInt, UInt) -> @core.RawWin32Call[Int]
+
+pub fn get_next_dlg_group_item(@core.RawAddress, @core.RawAddress, Int) -> @core.RawAddress raise @core.WindowsError
+
+pub fn get_next_dlg_group_item_raw(@core.RawAddress, @core.RawAddress, Int) -> @core.RawWin32Call[@core.RawAddress]
+
+pub fn get_next_dlg_tab_item(@core.RawAddress, @core.RawAddress, Int) -> @core.RawAddress raise @core.WindowsError
+
+pub fn get_next_dlg_tab_item_raw(@core.RawAddress, @core.RawAddress, Int) -> @core.RawWin32Call[@core.RawAddress]
+
+pub fn get_parent(@core.RawAddress) -> @core.RawAddress raise @core.WindowsError
+
+pub fn get_parent_raw(@core.RawAddress) -> @core.RawWin32Call[@core.RawAddress]
+
+pub fn get_physical_cursor_pos(@fb66f520d7e12332.POINT_48d934d62b68) -> Bool raise @core.WindowsError
+
+pub fn get_physical_cursor_pos_raw(@core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn get_process_default_layout(@core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn get_process_default_layout_raw(@core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn get_prop_a(@core.RawAddress, @strings.PStr) -> @core.RawAddress raise @core.WindowsError
+
+pub fn get_prop_a_raw(@core.RawAddress, @core.RawAddress) -> @core.RawAddress
+
+pub fn get_prop_w(@core.RawAddress, @strings.PWStr) -> @core.RawAddress raise @core.WindowsError
+
+pub fn get_prop_w_raw(@core.RawAddress, @core.RawAddress) -> @core.RawAddress
+
+pub fn get_queue_status(@a96faf5bf034fb54.QUEUESTATUSFLAGS_aa4338daa183) -> UInt raise @core.WindowsError
+
+pub fn get_queue_status_raw(UInt) -> UInt
+
+pub fn get_scroll_bar_info(@core.RawAddress, @a96faf5bf034fb54.OBJECTIDENTIFIER_4e0725eb05fb, @a96faf5bf034fb54.SCROLLBARINFO_e6294d294b55) -> Bool raise @core.WindowsError
+
+pub fn get_scroll_bar_info_raw(@core.RawAddress, Int, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn get_scroll_info(@core.RawAddress, @a96faf5bf034fb54.SCROLLBARCONSTANTS_969c5228d7ad, @a96faf5bf034fb54.SCROLLINFO_a92d515575a2) -> Bool raise @core.WindowsError
+
+pub fn get_scroll_info_raw(@core.RawAddress, Int, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn get_scroll_pos(@core.RawAddress, @a96faf5bf034fb54.SCROLLBARCONSTANTS_969c5228d7ad) -> Int raise @core.WindowsError
+
+pub fn get_scroll_pos_raw(@core.RawAddress, Int) -> @core.RawWin32Call[Int]
+
+pub fn get_scroll_range(@core.RawAddress, @a96faf5bf034fb54.SCROLLBARCONSTANTS_969c5228d7ad, @core.RawAddress, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn get_scroll_range_raw(@core.RawAddress, Int, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn get_shell_window() -> @core.RawAddress raise @core.WindowsError
+
+pub fn get_shell_window_raw() -> @core.RawAddress
+
+pub fn get_sub_menu(@core.RawAddress, Int) -> @core.RawAddress raise @core.WindowsError
+
+pub fn get_sub_menu_raw(@core.RawAddress, Int) -> @core.RawAddress
+
+pub fn get_system_menu(@core.RawAddress, Int) -> @core.RawAddress raise @core.WindowsError
+
+pub fn get_system_menu_raw(@core.RawAddress, Int) -> @core.RawAddress
+
+pub fn get_system_metrics(@a96faf5bf034fb54.SYSTEMMETRICSINDEX_8ae611014972) -> Int raise @core.WindowsError
+
+pub fn get_system_metrics_raw(Int) -> Int
+
+pub fn get_title_bar_info(@core.RawAddress, @a96faf5bf034fb54.TITLEBARINFO_7a9bb729d080) -> Bool raise @core.WindowsError
+
+pub fn get_title_bar_info_raw(@core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn get_top_window(@core.RawAddress) -> @core.RawAddress raise @core.WindowsError
+
+pub fn get_top_window_raw(@core.RawAddress) -> @core.RawWin32Call[@core.RawAddress]
+
+pub fn get_window(@core.RawAddress, @a96faf5bf034fb54.GETWINDOWCMD_5591fb136e68) -> @core.RawAddress raise @core.WindowsError
+
+pub fn get_window_display_affinity(@core.RawAddress, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn get_window_display_affinity_raw(@core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn get_window_info(@core.RawAddress, @a96faf5bf034fb54.WINDOWINFO_0aac65ae54fc) -> Bool raise @core.WindowsError
+
+pub fn get_window_info_raw(@core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn get_window_long_a(@core.RawAddress, @a96faf5bf034fb54.WINDOWLONGPTRINDEX_49ad6129aaa5) -> Int raise @core.WindowsError
+
+pub fn get_window_long_a_raw(@core.RawAddress, Int) -> @core.RawWin32Call[Int]
+
+pub fn get_window_long_ptr_a(@core.RawAddress, @a96faf5bf034fb54.WINDOWLONGPTRINDEX_49ad6129aaa5) -> Int64 raise @core.WindowsError
+
+pub fn get_window_long_ptr_a_raw(@core.RawAddress, Int) -> @core.RawWin32Call[Int64]
+
+pub fn get_window_long_ptr_w(@core.RawAddress, @a96faf5bf034fb54.WINDOWLONGPTRINDEX_49ad6129aaa5) -> Int64 raise @core.WindowsError
+
+pub fn get_window_long_ptr_w_raw(@core.RawAddress, Int) -> @core.RawWin32Call[Int64]
+
+pub fn get_window_long_w(@core.RawAddress, @a96faf5bf034fb54.WINDOWLONGPTRINDEX_49ad6129aaa5) -> Int raise @core.WindowsError
+
+pub fn get_window_long_w_raw(@core.RawAddress, Int) -> @core.RawWin32Call[Int]
+
+pub fn get_window_module_file_name_a(@core.RawAddress, @core.RawAddress, UInt) -> UInt raise @core.WindowsError
+
+pub fn get_window_module_file_name_a_raw(@core.RawAddress, @core.RawAddress, UInt) -> UInt
+
+pub fn get_window_module_file_name_w(@core.RawAddress, @strings.PWStrBuffer) -> UInt raise @core.WindowsError
+
+pub fn get_window_module_file_name_w_raw(@core.RawAddress, @core.RawAddress, UInt) -> UInt
+
+pub fn get_window_placement(@core.RawAddress, @a96faf5bf034fb54.WINDOWPLACEMENT_120ea5366841) -> Bool raise @core.WindowsError
+
+pub fn get_window_placement_raw(@core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn get_window_raw(@core.RawAddress, UInt) -> @core.RawWin32Call[@core.RawAddress]
+
+pub fn get_window_rect(@core.RawAddress, @fb66f520d7e12332.RECT_dc5b788d9702) -> Bool raise @core.WindowsError
+
+pub fn get_window_rect_raw(@core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn get_window_text_a(@core.RawAddress, @core.RawAddress, Int) -> Int raise @core.WindowsError
+
+pub fn get_window_text_a_raw(@core.RawAddress, @core.RawAddress, Int) -> @core.RawWin32Call[Int]
+
+pub fn get_window_text_length_a(@core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn get_window_text_length_a_raw(@core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn get_window_text_length_w(@core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn get_window_text_length_w_raw(@core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn get_window_text_w(@core.RawAddress, @strings.PWStrBuffer) -> Int raise @core.WindowsError
+
+pub fn get_window_text_w_raw(@core.RawAddress, @core.RawAddress, Int) -> @core.RawWin32Call[Int]
+
+pub fn get_window_thread_process_id(@core.RawAddress, @core.RawAddress) -> UInt raise @core.WindowsError
+
+pub fn get_window_thread_process_id_raw(@core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn get_window_word(@core.RawAddress, Int) -> UInt16 raise @core.WindowsError
+
+pub fn get_window_word_raw(@core.RawAddress, Int) -> UInt
+
+pub let gf_begin : UInt
+
+pub let gf_end : UInt
+
+pub let gf_inertia : UInt
+
+pub let gidc_arrival : UInt
+
+pub let gidc_removal : UInt
+
+pub let gui_16_bittask : UInt
+
+pub let gw_max : UInt
+
+pub let gwfs_include_ancestors : UInt
+
+pub let hbmmenu_callback : Int
+
+pub let hbmmenu_mbar_close : Int
+
+pub let hbmmenu_mbar_close_d : Int
+
+pub let hbmmenu_mbar_minimize : Int
+
+pub let hbmmenu_mbar_minimize_d : Int
+
+pub let hbmmenu_mbar_restore : Int
+
+pub let hbmmenu_popup_close : Int
+
+pub let hbmmenu_popup_maximize : Int
+
+pub let hbmmenu_popup_minimize : Int
+
+pub let hbmmenu_popup_restore : Int
+
+pub let hbmmenu_system : Int
+
+pub let hc_action : UInt
+
+pub let hc_getnext : UInt
+
+pub let hc_norem : UInt
+
+pub let hc_noremove : UInt
+
+pub let hc_skip : UInt
+
+pub let hc_sysmodaloff : UInt
+
+pub let hc_sysmodalon : UInt
+
+pub let hcbt_activate : UInt
+
+pub let hcbt_clickskipped : UInt
+
+pub let hcbt_createwnd : UInt
+
+pub let hcbt_destroywnd : UInt
+
+pub let hcbt_keyskipped : UInt
+
+pub let hcbt_minmax : UInt
+
+pub let hcbt_movesize : UInt
+
+pub let hcbt_qs : UInt
+
+pub let hcbt_setfocus : UInt
+
+pub let hcbt_syscommand : UInt
+
+pub let hcf_defaultdesktop : UInt
+
+pub let hcf_logondesktop : UInt
+
+pub let help_command : Int
+
+pub let help_contents : Int
+
+pub let help_context : Int
+
+pub let help_contextmenu : UInt
+
+pub let help_contextpopup : Int
+
+pub let help_finder : UInt
+
+pub let help_forcefile : Int
+
+pub let help_helponhelp : Int
+
+pub let help_index : Int
+
+pub let help_key : Int
+
+pub let help_multikey : Int
+
+pub let help_partialkey : Int
+
+pub let help_quit : Int
+
+pub let help_setcontents : Int
+
+pub let help_setindex : Int
+
+pub let help_setpopup_pos : UInt
+
+pub let help_setwinpos : Int
+
+pub let help_tcard : UInt
+
+pub let help_tcard_data : UInt
+
+pub let help_tcard_other_caller : UInt
+
+pub let help_wm_help : UInt
+
+pub fn hide_caret(@core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn hide_caret_raw(@core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub let hide_window : UInt
+
+pub fn hilite_menu_item(@core.RawAddress, @core.RawAddress, UInt, UInt) -> Bool raise @core.WindowsError
+
+pub fn hilite_menu_item_raw(@core.RawAddress, @core.RawAddress, UInt, UInt) -> Int
+
+pub let hkl_next : UInt
+
+pub let hkl_prev : UInt
+
+pub let hshell_accessibilitystate : UInt
+
+pub let hshell_activateshellwindow : UInt
+
+pub let hshell_appcommand : UInt
+
+pub let hshell_endtask : UInt
+
+pub let hshell_getminrect : UInt
+
+pub let hshell_highbit : UInt
+
+pub let hshell_language : UInt
+
+pub let hshell_monitorchanged : UInt
+
+pub let hshell_redraw : UInt
+
+pub let hshell_sysmenu : UInt
+
+pub let hshell_taskman : UInt
+
+pub let hshell_windowactivated : UInt
+
+pub let hshell_windowcreated : UInt
+
+pub let hshell_windowdestroyed : UInt
+
+pub let hshell_windowreplaced : UInt
+
+pub let hshell_windowreplacing : UInt
+
+pub let htborder : UInt
+
+pub let htbottom : UInt
+
+pub let htbottomleft : UInt
+
+pub let htbottomright : UInt
+
+pub let htcaption : UInt
+
+pub let htclient : UInt
+
+pub let htclose : UInt
+
+pub let hterror : Int
+
+pub let htgrowbox : UInt
+
+pub let hthelp : UInt
+
+pub let hthscroll : UInt
+
+pub let htleft : UInt
+
+pub let htmaxbutton : UInt
+
+pub let htmenu : UInt
+
+pub let htminbutton : UInt
+
+pub let htnowhere : UInt
+
+pub let htobject : UInt
+
+pub let htreduce : UInt
+
+pub let htright : UInt
+
+pub let htsize : UInt
+
+pub let htsizefirst : UInt
+
+pub let htsizelast : UInt
+
+pub let htsysmenu : UInt
+
+pub let httop : UInt
+
+pub let httopleft : UInt
+
+pub let httopright : UInt
+
+pub let httransparent : Int
+
+pub let htvscroll : UInt
+
+pub let htzoom : UInt
+
+pub let hwnd_bottom : Int
+
+pub let hwnd_broadcast : Int
+
+pub let hwnd_desktop : Int
+
+pub let hwnd_message : Int
+
+pub let hwnd_notopmost : Int
+
+pub let hwnd_top : Int
+
+pub let hwnd_topmost : Int
+
+pub let icon_big : UInt
+
+pub let icon_small : UInt
+
+pub let icon_small2 : UInt
+
+pub let idani_caption : UInt
+
+pub let idani_open : UInt
+
+pub let idc_appstarting : UInt
+
+pub let idc_arrow : UInt
+
+pub let idc_cross : UInt
+
+pub let idc_hand : UInt
+
+pub let idc_help : UInt
+
+pub let idc_ibeam : UInt
+
+pub let idc_icon : UInt
+
+pub let idc_no : UInt
+
+pub let idc_person : UInt
+
+pub let idc_pin : UInt
+
+pub let idc_size : UInt
+
+pub let idc_sizeall : UInt
+
+pub let idc_sizenesw : UInt
+
+pub let idc_sizens : UInt
+
+pub let idc_sizenwse : UInt
+
+pub let idc_sizewe : UInt
+
+pub let idc_static : Int
+
+pub let idc_uparrow : UInt
+
+pub let idc_wait : UInt
+
+pub let idh_cancel : UInt
+
+pub let idh_generic_help_button : UInt
+
+pub let idh_help : UInt
+
+pub let idh_missing_context : UInt
+
+pub let idh_no_help : UInt
+
+pub let idh_ok : UInt
+
+pub let idhot_snapdesktop : Int
+
+pub let idhot_snapwindow : Int
+
+pub let idi_application : UInt
+
+pub let idi_asterisk : UInt
+
+pub let idi_error : UInt
+
+pub let idi_exclamation : UInt
+
+pub let idi_hand : UInt
+
+pub let idi_information : UInt
+
+pub let idi_question : UInt
+
+pub let idi_shield : UInt
+
+pub let idi_warning : UInt
+
+pub let idi_winlogo : UInt
+
+pub let image_enhmetafile : UInt
+
+pub fn in_send_message() -> Bool raise @core.WindowsError
+
+pub fn in_send_message_ex(@core.RawAddress) -> UInt raise @core.WindowsError
+
+pub fn in_send_message_ex_raw(@core.RawAddress) -> UInt
+
+pub fn in_send_message_raw() -> Int
+
+pub fn index_file_path(@core.RawAddress, @strings.PWStr, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn index_file_path_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub let indexid_container : UInt
+
+pub let indexid_object : UInt
+
+pub fn inherit_window_monitor(@core.RawAddress, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn inherit_window_monitor_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub let inputlangchange_backward : UInt
+
+pub let inputlangchange_forward : UInt
+
+pub let inputlangchange_syscharset : UInt
+
+pub fn insert_menu_a(@core.RawAddress, UInt, @a96faf5bf034fb54.MENUITEMFLAGS_e453b7847ee3, UInt64, @strings.PStr?) -> Bool raise @core.WindowsError
+
+pub fn insert_menu_a_raw(@core.RawAddress, UInt, UInt, UInt64, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn insert_menu_item_a(@core.RawAddress, UInt, Int, @a96faf5bf034fb54.MENUITEMINFOA_8b8f9a1c5427) -> Bool raise @core.WindowsError
+
+pub fn insert_menu_item_a_raw(@core.RawAddress, UInt, Int, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn insert_menu_item_w(@core.RawAddress, UInt, Int, @a96faf5bf034fb54.MENUITEMINFOW_1584dff9bd81) -> Bool raise @core.WindowsError
+
+pub fn insert_menu_item_w_raw(@core.RawAddress, UInt, Int, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn insert_menu_w(@core.RawAddress, UInt, @a96faf5bf034fb54.MENUITEMFLAGS_e453b7847ee3, UInt64, @strings.PWStr?) -> Bool raise @core.WindowsError
+
+pub fn insert_menu_w_raw(@core.RawAddress, UInt, UInt, UInt64, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn internal_get_window_text(@core.RawAddress, @strings.PWStrBuffer) -> Int raise @core.WindowsError
+
+pub fn internal_get_window_text_raw(@core.RawAddress, @core.RawAddress, Int) -> @core.RawWin32Call[Int]
+
+pub let invalid_monitor_topology_id : UInt
+
+pub fn is_char_alpha_a(Int) -> Bool raise @core.WindowsError
+
+pub fn is_char_alpha_a_raw(Int) -> @core.RawWin32Call[Int]
+
+pub fn is_char_alpha_numeric_a(Int) -> Bool raise @core.WindowsError
+
+pub fn is_char_alpha_numeric_a_raw(Int) -> @core.RawWin32Call[Int]
+
+pub fn is_char_alpha_numeric_w(UInt16) -> Bool raise @core.WindowsError
+
+pub fn is_char_alpha_numeric_w_raw(UInt) -> @core.RawWin32Call[Int]
+
+pub fn is_char_alpha_w(UInt16) -> Bool raise @core.WindowsError
+
+pub fn is_char_alpha_w_raw(UInt) -> @core.RawWin32Call[Int]
+
+pub fn is_char_lower_a(Int) -> Bool raise @core.WindowsError
+
+pub fn is_char_lower_a_raw(Int) -> @core.RawWin32Call[Int]
+
+pub fn is_char_lower_w(UInt16) -> Bool raise @core.WindowsError
+
+pub fn is_char_lower_w_raw(UInt) -> @core.RawWin32Call[Int]
+
+pub fn is_char_upper_a(Int) -> Bool raise @core.WindowsError
+
+pub fn is_char_upper_a_raw(Int) -> @core.RawWin32Call[Int]
+
+pub fn is_char_upper_w(UInt16) -> Bool raise @core.WindowsError
+
+pub fn is_char_upper_w_raw(UInt) -> @core.RawWin32Call[Int]
+
+pub fn is_child(@core.RawAddress, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn is_child_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn is_dialog_message_a(@core.RawAddress, @a96faf5bf034fb54.MSG_cce494869f79) -> Bool raise @core.WindowsError
+
+pub fn is_dialog_message_a_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn is_dialog_message_w(@core.RawAddress, @a96faf5bf034fb54.MSG_cce494869f79) -> Bool raise @core.WindowsError
+
+pub fn is_dialog_message_w_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn is_gui_thread(Int) -> Bool raise @core.WindowsError
+
+pub fn is_gui_thread_raw(Int) -> Int
+
+pub fn is_hung_app_window(@core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn is_hung_app_window_raw(@core.RawAddress) -> Int
+
+pub fn is_iconic(@core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn is_iconic_raw(@core.RawAddress) -> Int
+
+pub fn is_intercept_window(@core.RawAddress, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn is_intercept_window_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn is_menu(@core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn is_menu_raw(@core.RawAddress) -> Int
+
+pub fn is_process_dpi_aware() -> Bool raise @core.WindowsError
+
+pub fn is_process_dpi_aware_raw() -> Int
+
+pub fn is_window(@core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn is_window_arranged(@core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn is_window_arranged_raw(@core.RawAddress) -> Int
+
+pub fn is_window_raw(@core.RawAddress) -> Int
+
+pub fn is_window_unicode(@core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn is_window_unicode_raw(@core.RawAddress) -> Int
+
+pub fn is_window_visible(@core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn is_window_visible_raw(@core.RawAddress) -> Int
+
+pub fn is_wow64_message() -> Bool raise @core.WindowsError
+
+pub fn is_wow64_message_raw() -> Int
+
+pub fn is_zoomed(@core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn is_zoomed_raw(@core.RawAddress) -> Int
+
+pub let ismex_callback : UInt
+
+pub let ismex_nosend : UInt
+
+pub let ismex_notify : UInt
+
+pub let ismex_replied : UInt
+
+pub let ismex_send : UInt
+
+pub let isolationaware_manifest_resource_id : UInt
+
+pub let isolationaware_nostaticimport_manifest_resource_id : UInt
+
+pub let isolationpolicy_browser_manifest_resource_id : UInt
+
+pub let isolationpolicy_manifest_resource_id : UInt
+
+pub let kf_altdown : UInt
+
+pub let kf_dlgmode : UInt
+
+pub let kf_extended : UInt
+
+pub let kf_menumode : UInt
+
+pub let kf_repeat : UInt
+
+pub let kf_up : UInt
+
+pub fn kill_timer(@core.RawAddress, UInt64) -> Bool raise @core.WindowsError
+
+pub fn kill_timer_raw(@core.RawAddress, UInt64) -> @core.RawWin32Call[Int]
+
+pub let kl_namelength : UInt
+
+pub let lb_addfile : UInt
+
+pub let lb_addstring : UInt
+
+pub let lb_ctlcode : Int
+
+pub let lb_deletestring : UInt
+
+pub let lb_dir : UInt
+
+pub let lb_err : Int
+
+pub let lb_errspace : Int
+
+pub let lb_findstring : UInt
+
+pub let lb_findstringexact : UInt
+
+pub let lb_getanchorindex : UInt
+
+pub let lb_getcaretindex : UInt
+
+pub let lb_getcount : UInt
+
+pub let lb_getcursel : UInt
+
+pub let lb_gethorizontalextent : UInt
+
+pub let lb_getitemdata : UInt
+
+pub let lb_getitemheight : UInt
+
+pub let lb_getitemrect : UInt
+
+pub let lb_getlistboxinfo : UInt
+
+pub let lb_getlocale : UInt
+
+pub let lb_getsel : UInt
+
+pub let lb_getselcount : UInt
+
+pub let lb_getselitems : UInt
+
+pub let lb_gettext : UInt
+
+pub let lb_gettextlen : UInt
+
+pub let lb_gettopindex : UInt
+
+pub let lb_initstorage : UInt
+
+pub let lb_insertstring : UInt
+
+pub let lb_itemfrompoint : UInt
+
+pub let lb_msgmax : UInt
+
+pub let lb_multipleaddstring : UInt
+
+pub let lb_okay : UInt
+
+pub let lb_resetcontent : UInt
+
+pub let lb_selectstring : UInt
+
+pub let lb_selitemrange : UInt
+
+pub let lb_selitemrangeex : UInt
+
+pub let lb_setanchorindex : UInt
+
+pub let lb_setcaretindex : UInt
+
+pub let lb_setcolumnwidth : UInt
+
+pub let lb_setcount : UInt
+
+pub let lb_setcursel : UInt
+
+pub let lb_sethorizontalextent : UInt
+
+pub let lb_setitemdata : UInt
+
+pub let lb_setitemheight : UInt
+
+pub let lb_setlocale : UInt
+
+pub let lb_setsel : UInt
+
+pub let lb_settabstops : UInt
+
+pub let lb_settopindex : UInt
+
+pub let lbn_dblclk : UInt
+
+pub let lbn_errspace : Int
+
+pub let lbn_killfocus : UInt
+
+pub let lbn_selcancel : UInt
+
+pub let lbn_selchange : UInt
+
+pub let lbn_setfocus : UInt
+
+pub let lbs_combobox : Int
+
+pub let lbs_disablenoscroll : Int
+
+pub let lbs_extendedsel : Int
+
+pub let lbs_hasstrings : Int
+
+pub let lbs_multicolumn : Int
+
+pub let lbs_multiplesel : Int
+
+pub let lbs_nodata : Int
+
+pub let lbs_nointegralheight : Int
+
+pub let lbs_noredraw : Int
+
+pub let lbs_nosel : Int
+
+pub let lbs_notify : Int
+
+pub let lbs_ownerdrawfixed : Int
+
+pub let lbs_ownerdrawvariable : Int
+
+pub let lbs_sort : Int
+
+pub let lbs_standard : Int
+
+pub let lbs_usetabstops : Int
+
+pub let lbs_wantkeyboardinput : Int
+
+pub let llmhf_injected : UInt
+
+pub let llmhf_lower_il_injected : UInt
+
+pub fn load_accelerators_a(@core.RawAddress, @strings.PStr) -> @core.RawAddress raise @core.WindowsError
+
+pub fn load_accelerators_a_raw(@core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[@core.RawAddress]
+
+pub fn load_accelerators_w(@core.RawAddress, @strings.PWStr) -> @core.RawAddress raise @core.WindowsError
+
+pub fn load_accelerators_w_raw(@core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[@core.RawAddress]
+
+pub fn load_cursor_a(@core.RawAddress, @strings.PStr) -> @core.RawAddress raise @core.WindowsError
+
+pub fn load_cursor_a_raw(@core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[@core.RawAddress]
+
+pub fn load_cursor_from_file_a(@strings.PStr) -> @core.RawAddress raise @core.WindowsError
+
+pub fn load_cursor_from_file_a_raw(@core.RawAddress) -> @core.RawWin32Call[@core.RawAddress]
+
+pub fn load_cursor_from_file_w(@strings.PWStr) -> @core.RawAddress raise @core.WindowsError
+
+pub fn load_cursor_from_file_w_raw(@core.RawAddress) -> @core.RawWin32Call[@core.RawAddress]
+
+pub fn load_cursor_w(@core.RawAddress, @strings.PWStr) -> @core.RawAddress raise @core.WindowsError
+
+pub fn load_cursor_w_raw(@core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[@core.RawAddress]
+
+pub fn load_icon_a(@core.RawAddress, @strings.PStr) -> @core.RawAddress raise @core.WindowsError
+
+pub fn load_icon_a_raw(@core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[@core.RawAddress]
+
+pub fn load_icon_w(@core.RawAddress, @strings.PWStr) -> @core.RawAddress raise @core.WindowsError
+
+pub fn load_icon_w_raw(@core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[@core.RawAddress]
+
+pub fn load_image_a(@core.RawAddress, @strings.PStr, @a96faf5bf034fb54.GDIIMAGETYPE_70666f69c0fd, Int, Int, @a96faf5bf034fb54.IMAGEFLAGS_1c696490ca76) -> @core.RawAddress raise @core.WindowsError
+
+pub fn load_image_a_raw(@core.RawAddress, @core.RawAddress, UInt, Int, Int, UInt) -> @core.RawWin32Call[@core.RawAddress]
+
+pub fn load_image_w(@core.RawAddress, @strings.PWStr, @a96faf5bf034fb54.GDIIMAGETYPE_70666f69c0fd, Int, Int, @a96faf5bf034fb54.IMAGEFLAGS_1c696490ca76) -> @core.RawAddress raise @core.WindowsError
+
+pub fn load_image_w_raw(@core.RawAddress, @core.RawAddress, UInt, Int, Int, UInt) -> @core.RawWin32Call[@core.RawAddress]
+
+pub fn load_menu_a(@core.RawAddress, @strings.PStr) -> @core.RawAddress raise @core.WindowsError
+
+pub fn load_menu_a_raw(@core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[@core.RawAddress]
+
+pub fn load_menu_indirect_a(@core.RawAddress) -> @core.RawAddress raise @core.WindowsError
+
+pub fn load_menu_indirect_a_raw(@core.RawAddress) -> @core.RawWin32Call[@core.RawAddress]
+
+pub fn load_menu_indirect_w(@core.RawAddress) -> @core.RawAddress raise @core.WindowsError
+
+pub fn load_menu_indirect_w_raw(@core.RawAddress) -> @core.RawWin32Call[@core.RawAddress]
+
+pub fn load_menu_w(@core.RawAddress, @strings.PWStr) -> @core.RawAddress raise @core.WindowsError
+
+pub fn load_menu_w_raw(@core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[@core.RawAddress]
+
+pub fn load_string_a(@core.RawAddress, UInt, @core.RawAddress, Int) -> Int raise @core.WindowsError
+
+pub fn load_string_a_raw(@core.RawAddress, UInt, @core.RawAddress, Int) -> @core.RawWin32Call[Int]
+
+pub fn load_string_w(@core.RawAddress, UInt, @core.RawAddress, Int) -> Int raise @core.WindowsError
+
+pub fn load_string_w_raw(@core.RawAddress, UInt, @core.RawAddress, Int) -> @core.RawWin32Call[Int]
+
+pub fn lock_set_foreground_window(@a96faf5bf034fb54.FOREGROUNDWINDOWLOCKCODE_b6aa702712d3) -> Bool raise @core.WindowsError
+
+pub fn lock_set_foreground_window_raw(UInt) -> @core.RawWin32Call[Int]
+
+pub let lockf_logical_lock : UInt
+
+pub let lockf_physical_lock : UInt
+
+pub let lockp_allow_mem_mapping : UInt
+
+pub let lockp_allow_writes : UInt
+
+pub let lockp_fail_mem_mapping : UInt
+
+pub let lockp_fail_writes : UInt
+
+pub let lockp_lock_for_format : UInt
+
+pub let lockp_user_mask : UInt
+
+pub fn logical_to_physical_point(@core.RawAddress, @fb66f520d7e12332.POINT_48d934d62b68) -> Bool raise @core.WindowsError
+
+pub fn logical_to_physical_point_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn lookup_icon_id_from_directory(@core.RawAddress, Int) -> Int raise @core.WindowsError
+
+pub fn lookup_icon_id_from_directory_ex(@core.RawAddress, Int, Int, Int, @a96faf5bf034fb54.IMAGEFLAGS_1c696490ca76) -> Int raise @core.WindowsError
+
+pub fn lookup_icon_id_from_directory_ex_raw(@core.RawAddress, Int, Int, Int, UInt) -> @core.RawWin32Call[Int]
+
+pub fn lookup_icon_id_from_directory_raw(@core.RawAddress, Int) -> @core.RawWin32Call[Int]
+
+pub let lr_color : UInt
+
+pub let ma_activate : UInt
+
+pub let ma_activateandeat : UInt
+
+pub let ma_noactivate : UInt
+
+pub let ma_noactivateandeat : UInt
+
+pub fn map_dialog_rect(@core.RawAddress, @fb66f520d7e12332.RECT_dc5b788d9702) -> Bool raise @core.WindowsError
+
+pub fn map_dialog_rect_raw(@core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub let max_logicaldpioverride : UInt
+
+pub let max_str_blockreason : UInt
+
+pub let max_touch_count : UInt
+
+pub let max_touch_prediction_filter_taps : UInt
+
+pub let maximum_reserved_manifest_resource_id : UInt
+
+pub let mdis_allchildstyles : UInt
+
+pub let menu_check_item : UInt
+
+pub let menu_delete_menu : UInt
+
+pub let menu_enable_item : UInt
+
+pub let menu_get_item_data : UInt
+
+pub let menu_get_item_info : UInt
+
+pub let menu_get_submenu : UInt
+
+pub let menu_insert_item : UInt
+
+pub let menu_insert_menu : UInt
+
+pub fn menu_item_from_point(@core.RawAddress, @core.RawAddress, @fb66f520d7e12332.POINT_48d934d62b68) -> Int raise @core.WindowsError
+
+pub fn menu_item_from_point_raw(@core.RawAddress, @core.RawAddress, Bytes) -> Int
+
+pub let menu_set_default_item : UInt
+
+pub let menu_set_item_data : UInt
+
+pub let menu_set_item_info : UInt
+
+pub let menu_set_submenu : UInt
+
+pub fn message_box_a(@core.RawAddress, @strings.PStr?, @strings.PStr?, @a96faf5bf034fb54.MESSAGEBOXSTYLE_365231501e9a) -> @a96faf5bf034fb54.MESSAGEBOXRESULT_9a00b6096a85 raise @core.WindowsError
+
+pub fn message_box_a_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, UInt) -> @core.RawWin32Call[Int]
+
+pub fn message_box_ex_a(@core.RawAddress, @strings.PStr?, @strings.PStr?, @a96faf5bf034fb54.MESSAGEBOXSTYLE_365231501e9a, UInt16) -> @a96faf5bf034fb54.MESSAGEBOXRESULT_9a00b6096a85 raise @core.WindowsError
+
+pub fn message_box_ex_a_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, UInt, UInt) -> @core.RawWin32Call[Int]
+
+pub fn message_box_ex_w(@core.RawAddress, @strings.PWStr?, @strings.PWStr?, @a96faf5bf034fb54.MESSAGEBOXSTYLE_365231501e9a, UInt16) -> @a96faf5bf034fb54.MESSAGEBOXRESULT_9a00b6096a85 raise @core.WindowsError
+
+pub fn message_box_ex_w_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, UInt, UInt) -> @core.RawWin32Call[Int]
+
+pub fn message_box_indirect_a(@a96faf5bf034fb54.MSGBOXPARAMSA_b45d43f282b7) -> @a96faf5bf034fb54.MESSAGEBOXRESULT_9a00b6096a85 raise @core.WindowsError
+
+pub fn message_box_indirect_a_raw(@core.RawAddress) -> Int
+
+pub fn message_box_indirect_w(@a96faf5bf034fb54.MSGBOXPARAMSW_600db44f46e3) -> @a96faf5bf034fb54.MESSAGEBOXRESULT_9a00b6096a85 raise @core.WindowsError
+
+pub fn message_box_indirect_w_raw(@core.RawAddress) -> Int
+
+pub fn message_box_w(@core.RawAddress, @strings.PWStr?, @strings.PWStr?, @a96faf5bf034fb54.MESSAGEBOXSTYLE_365231501e9a) -> @a96faf5bf034fb54.MESSAGEBOXRESULT_9a00b6096a85 raise @core.WindowsError
+
+pub fn message_box_w_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, UInt) -> @core.RawWin32Call[Int]
+
+pub let metrics_usedefault : Int
+
+pub let min_logicaldpioverride : Int
+
+pub let minimum_reserved_manifest_resource_id : UInt
+
+pub let mkf_available : UInt
+
+pub let mkf_confirmhotkey : UInt
+
+pub let mkf_hotkeyactive : UInt
+
+pub let mkf_hotkeysound : UInt
+
+pub let mkf_indicator : UInt
+
+pub let mkf_leftbuttondown : UInt
+
+pub let mkf_leftbuttonsel : UInt
+
+pub let mkf_modifiers : UInt
+
+pub let mkf_mousekeyson : UInt
+
+pub let mkf_mousemode : UInt
+
+pub let mkf_replacenumbers : UInt
+
+pub let mkf_rightbuttondown : UInt
+
+pub let mkf_rightbuttonsel : UInt
+
+pub let mn_gethmenu : UInt
+
+pub let mnc_close : UInt
+
+pub let mnc_execute : UInt
+
+pub let mnc_ignore : UInt
+
+pub let mnc_select : UInt
+
+pub let mnd_continue : UInt
+
+pub let mnd_endmenu : UInt
+
+pub let mngo_noerror : UInt
+
+pub let mngo_nointerface : UInt
+
+pub fn modify_menu_a(@core.RawAddress, UInt, @a96faf5bf034fb54.MENUITEMFLAGS_e453b7847ee3, UInt64, @strings.PStr?) -> Bool raise @core.WindowsError
+
+pub fn modify_menu_a_raw(@core.RawAddress, UInt, UInt, UInt64, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn modify_menu_w(@core.RawAddress, UInt, @a96faf5bf034fb54.MENUITEMFLAGS_e453b7847ee3, UInt64, @strings.PWStr?) -> Bool raise @core.WindowsError
+
+pub fn modify_menu_w_raw(@core.RawAddress, UInt, UInt, UInt64, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub let monitorinfof_primary : UInt
+
+pub let mousewheel_routing_focus : UInt
+
+pub let mousewheel_routing_hybrid : UInt
+
+pub let mousewheel_routing_mouse_pos : UInt
+
+pub fn move_window(@core.RawAddress, Int, Int, Int, Int, Int) -> Bool raise @core.WindowsError
+
+pub fn move_window_raw(@core.RawAddress, Int, Int, Int, Int, Int) -> @core.RawWin32Call[Int]
+
+pub fn mrm_create_config(@a96faf5bf034fb54.MrmPlatformVersion_807dbc590779, @strings.PWStr?, @strings.PWStr) -> Int raise @core.WindowsError
+
+pub fn mrm_create_config_in_memory(@a96faf5bf034fb54.MrmPlatformVersion_807dbc590779, @strings.PWStr?, @core.RawAddress, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn mrm_create_config_in_memory_raw(Int, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn mrm_create_config_raw(Int, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn mrm_create_resource_file(@core.RawAddress, @a96faf5bf034fb54.MrmPackagingMode_07cd15cabb87, @a96faf5bf034fb54.MrmPackagingOptions_bf90fbef2092, @strings.PWStr) -> Int raise @core.WindowsError
+
+pub fn mrm_create_resource_file_in_memory(@core.RawAddress, @a96faf5bf034fb54.MrmPackagingMode_07cd15cabb87, @a96faf5bf034fb54.MrmPackagingOptions_bf90fbef2092, @core.RawAddress, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn mrm_create_resource_file_in_memory_raw(@core.RawAddress, Int, Int, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn mrm_create_resource_file_raw(@core.RawAddress, Int, Int, @core.RawAddress) -> Int
+
+pub fn mrm_create_resource_file_with_checksum(@core.RawAddress, @a96faf5bf034fb54.MrmPackagingMode_07cd15cabb87, @a96faf5bf034fb54.MrmPackagingOptions_bf90fbef2092, UInt, @strings.PWStr) -> Int raise @core.WindowsError
+
+pub fn mrm_create_resource_file_with_checksum_raw(@core.RawAddress, Int, Int, UInt, @core.RawAddress) -> Int
+
+pub fn mrm_create_resource_indexer(@strings.PWStr?, @strings.PWStr, @a96faf5bf034fb54.MrmPlatformVersion_807dbc590779, @strings.PWStr?, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn mrm_create_resource_indexer_from_previous_pri_data(@strings.PWStr, @a96faf5bf034fb54.MrmPlatformVersion_807dbc590779, @strings.PWStr?, @core.RawAddress, UInt, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn mrm_create_resource_indexer_from_previous_pri_data_raw(@core.RawAddress, Int, @core.RawAddress, @core.RawAddress, UInt, @core.RawAddress) -> Int
+
+pub fn mrm_create_resource_indexer_from_previous_pri_file(@strings.PWStr, @a96faf5bf034fb54.MrmPlatformVersion_807dbc590779, @strings.PWStr?, @strings.PWStr, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn mrm_create_resource_indexer_from_previous_pri_file_raw(@core.RawAddress, Int, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn mrm_create_resource_indexer_from_previous_schema_data(@strings.PWStr, @a96faf5bf034fb54.MrmPlatformVersion_807dbc590779, @strings.PWStr?, @core.RawAddress, UInt, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn mrm_create_resource_indexer_from_previous_schema_data_raw(@core.RawAddress, Int, @core.RawAddress, @core.RawAddress, UInt, @core.RawAddress) -> Int
+
+pub fn mrm_create_resource_indexer_from_previous_schema_file(@strings.PWStr, @a96faf5bf034fb54.MrmPlatformVersion_807dbc590779, @strings.PWStr?, @strings.PWStr, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn mrm_create_resource_indexer_from_previous_schema_file_raw(@core.RawAddress, Int, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn mrm_create_resource_indexer_raw(@core.RawAddress, @core.RawAddress, Int, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn mrm_create_resource_indexer_with_flags(@strings.PWStr?, @strings.PWStr, @a96faf5bf034fb54.MrmPlatformVersion_807dbc590779, @strings.PWStr?, @a96faf5bf034fb54.MrmIndexerFlags_c969ffe9ffa8, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn mrm_create_resource_indexer_with_flags_raw(@core.RawAddress, @core.RawAddress, Int, @core.RawAddress, Int, @core.RawAddress) -> Int
+
+pub fn mrm_destroy_indexer_and_messages(@core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn mrm_destroy_indexer_and_messages_raw(@core.RawAddress) -> Int
+
+pub fn mrm_dump_pri_data_in_memory(@core.RawAddress, UInt, @core.RawAddress, UInt, @a96faf5bf034fb54.MrmDumpType_6893c16c19fc, @core.RawAddress, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn mrm_dump_pri_data_in_memory_raw(@core.RawAddress, UInt, @core.RawAddress, UInt, Int, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn mrm_dump_pri_file(@strings.PWStr, @strings.PWStr?, @a96faf5bf034fb54.MrmDumpType_6893c16c19fc, @strings.PWStr) -> Int raise @core.WindowsError
+
+pub fn mrm_dump_pri_file_in_memory(@strings.PWStr, @strings.PWStr?, @a96faf5bf034fb54.MrmDumpType_6893c16c19fc, @core.RawAddress, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn mrm_dump_pri_file_in_memory_raw(@core.RawAddress, @core.RawAddress, Int, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn mrm_dump_pri_file_raw(@core.RawAddress, @core.RawAddress, Int, @core.RawAddress) -> Int
+
+pub fn mrm_free_memory(@core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn mrm_free_memory_raw(@core.RawAddress) -> Int
+
+pub fn mrm_get_pri_file_content_checksum(@strings.PWStr, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn mrm_get_pri_file_content_checksum_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn mrm_index_embedded_data(@core.RawAddress, @strings.PWStr, @core.RawAddress, UInt, @strings.PWStr?) -> Int raise @core.WindowsError
+
+pub fn mrm_index_embedded_data_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, UInt, @core.RawAddress) -> Int
+
+pub fn mrm_index_file(@core.RawAddress, @strings.PWStr, @strings.PWStr, @strings.PWStr?) -> Int raise @core.WindowsError
+
+pub fn mrm_index_file_auto_qualifiers(@core.RawAddress, @strings.PWStr?) -> Int raise @core.WindowsError
+
+pub fn mrm_index_file_auto_qualifiers_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn mrm_index_file_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn mrm_index_resource_container_auto_qualifiers(@core.RawAddress, @strings.PWStr) -> Int raise @core.WindowsError
+
+pub fn mrm_index_resource_container_auto_qualifiers_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn mrm_index_string(@core.RawAddress, @strings.PWStr, @strings.PWStr, @strings.PWStr?) -> Int raise @core.WindowsError
+
+pub fn mrm_index_string_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn mrm_peek_resource_indexer_messages(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn mrm_peek_resource_indexer_messages_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn msg_wait_for_multiple_objects(UInt, @core.RawAddress, Int, UInt, @a96faf5bf034fb54.QUEUESTATUSFLAGS_aa4338daa183) -> @fb66f520d7e12332.WAITEVENT_9181782125e2 raise @core.WindowsError
+
+pub fn msg_wait_for_multiple_objects_ex(UInt, @core.RawAddress, UInt, @a96faf5bf034fb54.QUEUESTATUSFLAGS_aa4338daa183, @a96faf5bf034fb54.MSGWAITFORMULTIPLEOBJECTSEXFLAGS_10209d7238f1) -> @fb66f520d7e12332.WAITEVENT_9181782125e2 raise @core.WindowsError
+
+pub fn msg_wait_for_multiple_objects_ex_raw(UInt, @core.RawAddress, UInt, UInt, UInt) -> @core.RawWin32Call[UInt]
+
+pub fn msg_wait_for_multiple_objects_raw(UInt, @core.RawAddress, Int, UInt, UInt) -> @core.RawWin32Call[UInt]
+
+pub let msgf_dialogbox : UInt
+
+pub let msgf_max : UInt
+
+pub let msgf_menu : UInt
+
+pub let msgf_messagebox : UInt
+
+pub let msgf_nextwindow : UInt
+
+pub let msgf_scrollbar : UInt
+
+pub let msgf_user : UInt
+
+pub let nf_query : UInt
+
+pub let nf_requery : UInt
+
+pub let nfr_ansi : UInt
+
+pub let nfr_unicode : UInt
+
+pub let nid_external_pen : UInt
+
+pub let nid_external_touch : UInt
+
+pub let nid_integrated_pen : UInt
+
+pub let nid_integrated_touch : UInt
+
+pub let nid_multi_input : UInt
+
+pub let nid_ready : UInt
+
+pub let obm_btncorners : UInt
+
+pub let obm_btsize : UInt
+
+pub let obm_check : UInt
+
+pub let obm_checkboxes : UInt
+
+pub let obm_close : UInt
+
+pub let obm_combo : UInt
+
+pub let obm_dnarrow : UInt
+
+pub let obm_dnarrowd : UInt
+
+pub let obm_dnarrowi : UInt
+
+pub let obm_lfarrow : UInt
+
+pub let obm_lfarrowd : UInt
+
+pub let obm_lfarrowi : UInt
+
+pub let obm_mnarrow : UInt
+
+pub let obm_old_close : UInt
+
+pub let obm_old_dnarrow : UInt
+
+pub let obm_old_lfarrow : UInt
+
+pub let obm_old_reduce : UInt
+
+pub let obm_old_restore : UInt
+
+pub let obm_old_rgarrow : UInt
+
+pub let obm_old_uparrow : UInt
+
+pub let obm_old_zoom : UInt
+
+pub let obm_reduce : UInt
+
+pub let obm_reduced : UInt
+
+pub let obm_restore : UInt
+
+pub let obm_restored : UInt
+
+pub let obm_rgarrow : UInt
+
+pub let obm_rgarrowd : UInt
+
+pub let obm_rgarrowi : UInt
+
+pub let obm_size : UInt
+
+pub let obm_uparrow : UInt
+
+pub let obm_uparrowd : UInt
+
+pub let obm_uparrowi : UInt
+
+pub let obm_zoom : UInt
+
+pub let obm_zoomd : UInt
+
+pub let ocr_icocur : UInt
+
+pub let ocr_icon : UInt
+
+pub let ocr_size : UInt
+
+pub fn oem_to_char_a(@strings.PStr, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn oem_to_char_a_raw(@core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn oem_to_char_buff_a(@strings.PStr, @core.RawAddress, UInt) -> Bool raise @core.WindowsError
+
+pub fn oem_to_char_buff_a_raw(@core.RawAddress, @core.RawAddress, UInt) -> @core.RawWin32Call[Int]
+
+pub fn oem_to_char_buff_w(@strings.PStr, @strings.PWStrBuffer) -> Bool raise @core.WindowsError
+
+pub fn oem_to_char_buff_w_raw(@core.RawAddress, @core.RawAddress, UInt) -> @core.RawWin32Call[Int]
+
+pub fn oem_to_char_w(@strings.PStr, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn oem_to_char_w_raw(@core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub let oic_bang : UInt
+
+pub let oic_error : UInt
+
+pub let oic_hand : UInt
+
+pub let oic_information : UInt
+
+pub let oic_note : UInt
+
+pub let oic_ques : UInt
+
+pub let oic_sample : UInt
+
+pub let oic_shield : UInt
+
+pub let oic_warning : UInt
+
+pub let oic_winlogo : UInt
+
+pub fn open_icon(@core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn open_icon_raw(@core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub let ord_langdriver : UInt
+
+pub let pa_activate : UInt
+
+pub let pa_noactivate : UInt
+
+pub let pbt_apmbatterylow : UInt
+
+pub let pbt_apmoemevent : UInt
+
+pub let pbt_apmpowerstatuschange : UInt
+
+pub let pbt_apmquerystandby : UInt
+
+pub let pbt_apmquerystandbyfailed : UInt
+
+pub let pbt_apmquerysuspend : UInt
+
+pub let pbt_apmquerysuspendfailed : UInt
+
+pub let pbt_apmresumeautomatic : UInt
+
+pub let pbt_apmresumecritical : UInt
+
+pub let pbt_apmresumestandby : UInt
+
+pub let pbt_apmresumesuspend : UInt
+
+pub let pbt_apmstandby : UInt
+
+pub let pbt_apmsuspend : UInt
+
+pub let pbt_powersettingchange : UInt
+
+pub let pbtf_apmresumefromfailure : UInt
+
+pub let pdc_arrival : UInt
+
+pub let pdc_mapping_change : UInt
+
+pub let pdc_mode_aspectratiopreserved : UInt
+
+pub let pdc_mode_centered : UInt
+
+pub let pdc_mode_default : UInt
+
+pub let pdc_orientation_0 : UInt
+
+pub let pdc_orientation_180 : UInt
+
+pub let pdc_orientation_270 : UInt
+
+pub let pdc_orientation_90 : UInt
+
+pub let pdc_origin : UInt
+
+pub let pdc_removal : UInt
+
+pub let pdc_resolution : UInt
+
+pub fn peek_message_a(@a96faf5bf034fb54.MSG_cce494869f79, @core.RawAddress, UInt, UInt, @a96faf5bf034fb54.PEEKMESSAGEREMOVETYPE_70f5ee56bcd5) -> Bool raise @core.WindowsError
+
+pub fn peek_message_a_raw(@core.RawAddress, @core.RawAddress, UInt, UInt, UInt) -> Int
+
+pub fn peek_message_w(@a96faf5bf034fb54.MSG_cce494869f79, @core.RawAddress, UInt, UInt, @a96faf5bf034fb54.PEEKMESSAGEREMOVETYPE_70f5ee56bcd5) -> Bool raise @core.WindowsError
+
+pub fn peek_message_w_raw(@core.RawAddress, @core.RawAddress, UInt, UInt, UInt) -> Int
+
+pub let pen_flag_barrel : UInt
+
+pub let pen_flag_eraser : UInt
+
+pub let pen_flag_inverted : UInt
+
+pub let pen_flag_none : UInt
+
+pub let pen_mask_none : UInt
+
+pub let pen_mask_pressure : UInt
+
+pub let pen_mask_rotation : UInt
+
+pub let pen_mask_tilt_x : UInt
+
+pub let pen_mask_tilt_y : UInt
+
+pub let penarbitrationtype_fis : UInt
+
+pub let penarbitrationtype_max : UInt
+
+pub let penarbitrationtype_none : UInt
+
+pub let penarbitrationtype_spt : UInt
+
+pub let penarbitrationtype_win8 : UInt
+
+pub let penvisualization_cursor : UInt
+
+pub let penvisualization_doubletap : UInt
+
+pub let penvisualization_off : UInt
+
+pub let penvisualization_on : UInt
+
+pub let penvisualization_tap : UInt
+
+pub fn physical_to_logical_point(@core.RawAddress, @fb66f520d7e12332.POINT_48d934d62b68) -> Bool raise @core.WindowsError
+
+pub fn physical_to_logical_point_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub let pmb_active : UInt
+
+pub let pointer_device_product_string_max : UInt
+
+pub let pointer_message_flag_canceled : UInt
+
+pub let pointer_message_flag_confidence : UInt
+
+pub let pointer_message_flag_fifthbutton : UInt
+
+pub let pointer_message_flag_firstbutton : UInt
+
+pub let pointer_message_flag_fourthbutton : UInt
+
+pub let pointer_message_flag_incontact : UInt
+
+pub let pointer_message_flag_inrange : UInt
+
+pub let pointer_message_flag_new : UInt
+
+pub let pointer_message_flag_primary : UInt
+
+pub let pointer_message_flag_secondbutton : UInt
+
+pub let pointer_message_flag_thirdbutton : UInt
+
+pub let pointer_mod_ctrl : UInt
+
+pub let pointer_mod_shift : UInt
+
+pub fn post_message_a(@core.RawAddress, UInt, UInt64, Int64) -> Bool raise @core.WindowsError
+
+pub fn post_message_a_raw(@core.RawAddress, UInt, UInt64, Int64) -> @core.RawWin32Call[Int]
+
+pub fn post_message_w(@core.RawAddress, UInt, UInt64, Int64) -> Bool raise @core.WindowsError
+
+pub fn post_message_w_raw(@core.RawAddress, UInt, UInt64, Int64) -> @core.RawWin32Call[Int]
+
+pub fn post_quit_message(Int) -> Unit raise @core.WindowsError
+
+pub fn post_quit_message_raw(Int) -> Unit
+
+pub fn post_thread_message_a(UInt, UInt, UInt64, Int64) -> Bool raise @core.WindowsError
+
+pub fn post_thread_message_a_raw(UInt, UInt, UInt64, Int64) -> @core.RawWin32Call[Int]
+
+pub fn post_thread_message_w(UInt, UInt, UInt64, Int64) -> Bool raise @core.WindowsError
+
+pub fn post_thread_message_w_raw(UInt, UInt, UInt64, Int64) -> @core.RawWin32Call[Int]
+
+pub let prf_checkvisible : Int
+
+pub let prf_children : Int
+
+pub let prf_client : Int
+
+pub let prf_erasebkgnd : Int
+
+pub let prf_nonclient : Int
+
+pub let prf_owned : Int
+
+pub fn private_extract_icons_a(@strings.PStr, Int, Int, Int, @core.RawAddress, @core.RawAddress, UInt, UInt) -> UInt raise @core.WindowsError
+
+pub fn private_extract_icons_a_raw(@core.RawAddress, Int, Int, Int, @core.RawAddress, @core.RawAddress, UInt, UInt) -> UInt
+
+pub fn private_extract_icons_w(@strings.PWStr, Int, Int, Int, @core.RawAddress, @core.RawAddress, UInt, UInt) -> UInt raise @core.WindowsError
+
+pub fn private_extract_icons_w_raw(@core.RawAddress, Int, Int, Int, @core.RawAddress, @core.RawAddress, UInt, UInt) -> UInt
+
+pub let pw_renderfullcontent : UInt
+
+pub let pwr_criticalresume : UInt
+
+pub let pwr_fail : Int
+
+pub let pwr_ok : UInt
+
+pub let pwr_suspendrequest : UInt
+
+pub let pwr_suspendresume : UInt
+
+pub let qs_pointer : UInt
+
+pub let qs_touch : UInt
+
+pub fn real_child_window_from_point(@core.RawAddress, @fb66f520d7e12332.POINT_48d934d62b68) -> @core.RawAddress raise @core.WindowsError
+
+pub fn real_child_window_from_point_raw(@core.RawAddress, Bytes) -> @core.RawAddress
+
+pub fn real_get_window_class_a(@core.RawAddress, @core.RawAddress, UInt) -> UInt raise @core.WindowsError
+
+pub fn real_get_window_class_a_raw(@core.RawAddress, @core.RawAddress, UInt) -> UInt
+
+pub fn real_get_window_class_w(@core.RawAddress, @strings.PWStrBuffer) -> UInt raise @core.WindowsError
+
+pub fn real_get_window_class_w_raw(@core.RawAddress, @core.RawAddress, UInt) -> @core.RawWin32Call[UInt]
+
+pub fn register_class_a(@a96faf5bf034fb54.WNDCLASSA_49f883ab47c8) -> UInt16 raise @core.WindowsError
+
+pub fn register_class_a_raw(@core.RawAddress) -> @core.RawWin32Call[UInt]
+
+pub fn register_class_ex_a(@a96faf5bf034fb54.WNDCLASSEXA_6f391918ed52) -> UInt16 raise @core.WindowsError
+
+pub fn register_class_ex_a_raw(@core.RawAddress) -> @core.RawWin32Call[UInt]
+
+pub fn register_class_ex_w(@a96faf5bf034fb54.WNDCLASSEXW_8493016dd6b2) -> UInt16 raise @core.WindowsError
+
+pub fn register_class_ex_w_raw(@core.RawAddress) -> @core.RawWin32Call[UInt]
+
+pub fn register_class_w(@a96faf5bf034fb54.WNDCLASSW_5c974a795d73) -> UInt16 raise @core.WindowsError
+
+pub fn register_class_w_raw(@core.RawAddress) -> @core.RawWin32Call[UInt]
+
+pub fn register_cloaked_notification(@core.RawAddress, Int) -> Bool raise @core.WindowsError
+
+pub fn register_cloaked_notification_raw(@core.RawAddress, Int) -> Int
+
+pub fn register_device_notification_a(@core.RawAddress, @core.RawAddress, @a96faf5bf034fb54.REGISTERNOTIFICATIONFLAGS_5d7c559158bf) -> @core.RawAddress raise @core.WindowsError
+
+pub fn register_device_notification_a_raw(@core.RawAddress, @core.RawAddress, UInt) -> @core.RawWin32Call[@core.RawAddress]
+
+pub fn register_device_notification_w(@core.RawAddress, @core.RawAddress, @a96faf5bf034fb54.REGISTERNOTIFICATIONFLAGS_5d7c559158bf) -> @core.RawAddress raise @core.WindowsError
+
+pub fn register_device_notification_w_raw(@core.RawAddress, @core.RawAddress, UInt) -> @core.RawWin32Call[@core.RawAddress]
+
+pub fn register_for_tooltip_dismiss_notification(@core.RawAddress, @a96faf5bf034fb54.TOOLTIPDISMISSFLAGS_3573768db12e) -> Bool raise @core.WindowsError
+
+pub fn register_for_tooltip_dismiss_notification_raw(@core.RawAddress, Int) -> Int
+
+pub fn register_shell_hook_window(@core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn register_shell_hook_window_raw(@core.RawAddress) -> Int
+
+pub fn register_window_message_a(@strings.PStr) -> UInt raise @core.WindowsError
+
+pub fn register_window_message_a_raw(@core.RawAddress) -> @core.RawWin32Call[UInt]
+
+pub fn register_window_message_w(@strings.PWStr) -> UInt raise @core.WindowsError
+
+pub fn register_window_message_w_raw(@core.RawAddress) -> @core.RawWin32Call[UInt]
+
+pub fn remove_menu(@core.RawAddress, UInt, @a96faf5bf034fb54.MENUITEMFLAGS_e453b7847ee3) -> Bool raise @core.WindowsError
+
+pub fn remove_menu_raw(@core.RawAddress, UInt, UInt) -> @core.RawWin32Call[Int]
+
+pub fn remove_prop_a(@core.RawAddress, @strings.PStr) -> @core.RawAddress raise @core.WindowsError
+
+pub fn remove_prop_a_raw(@core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[@core.RawAddress]
+
+pub fn remove_prop_w(@core.RawAddress, @strings.PWStr) -> @core.RawAddress raise @core.WindowsError
+
+pub fn remove_prop_w_raw(@core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[@core.RawAddress]
+
+pub fn reply_message(Int64) -> Bool raise @core.WindowsError
+
+pub fn reply_message_raw(Int64) -> Int
+
+pub let res_cursor : UInt
+
+pub let res_icon : UInt
+
+pub let ri_key_break : UInt
+
+pub let ri_key_e0 : UInt
+
+pub let ri_key_e1 : UInt
+
+pub let ri_key_make : UInt
+
+pub let ri_key_termsrv_set_led : UInt
+
+pub let ri_key_termsrv_shadow : UInt
+
+pub let ri_mouse_button_1_down : UInt
+
+pub let ri_mouse_button_1_up : UInt
+
+pub let ri_mouse_button_2_down : UInt
+
+pub let ri_mouse_button_2_up : UInt
+
+pub let ri_mouse_button_3_down : UInt
+
+pub let ri_mouse_button_3_up : UInt
+
+pub let ri_mouse_button_4_down : UInt
+
+pub let ri_mouse_button_4_up : UInt
+
+pub let ri_mouse_button_5_down : UInt
+
+pub let ri_mouse_button_5_up : UInt
+
+pub let ri_mouse_hwheel : UInt
+
+pub let ri_mouse_left_button_down : UInt
+
+pub let ri_mouse_left_button_up : UInt
+
+pub let ri_mouse_middle_button_down : UInt
+
+pub let ri_mouse_middle_button_up : UInt
+
+pub let ri_mouse_right_button_down : UInt
+
+pub let ri_mouse_right_button_up : UInt
+
+pub let ri_mouse_wheel : UInt
+
+pub let ridev_exmodemask : UInt
+
+pub let rim_input : UInt
+
+pub let rim_inputsink : UInt
+
+pub let rim_typemax : UInt
+
+pub let rt_accelerator : UInt
+
+pub let rt_anicursor : UInt
+
+pub let rt_aniicon : UInt
+
+pub let rt_bitmap : UInt
+
+pub let rt_cursor : UInt
+
+pub let rt_dialog : UInt
+
+pub let rt_dlginclude : UInt
+
+pub let rt_font : UInt
+
+pub let rt_fontdir : UInt
+
+pub let rt_group_cursor : UInt
+
+pub let rt_group_icon : UInt
+
+pub let rt_html : UInt
+
+pub let rt_icon : UInt
+
+pub let rt_manifest : UInt
+
+pub let rt_menu : UInt
+
+pub let rt_messagetable : UInt
+
+pub let rt_plugplay : UInt
+
+pub let rt_version : UInt
+
+pub let rt_vxd : UInt
+
+pub let sb_min : UInt
+
+pub let sbm_enable_arrows : UInt
+
+pub let sbm_getpos : UInt
+
+pub let sbm_getrange : UInt
+
+pub let sbm_getscrollbarinfo : UInt
+
+pub let sbm_getscrollinfo : UInt
+
+pub let sbm_setpos : UInt
+
+pub let sbm_setrange : UInt
+
+pub let sbm_setrangeredraw : UInt
+
+pub let sbm_setscrollinfo : UInt
+
+pub let sbs_bottomalign : Int
+
+pub let sbs_horz : Int
+
+pub let sbs_leftalign : Int
+
+pub let sbs_rightalign : Int
+
+pub let sbs_sizebox : Int
+
+pub let sbs_sizeboxbottomrightalign : Int
+
+pub let sbs_sizeboxtopleftalign : Int
+
+pub let sbs_sizegrip : Int
+
+pub let sbs_topalign : Int
+
+pub let sbs_vert : Int
+
+pub let sc_arrange : UInt
+
+pub let sc_close : UInt
+
+pub let sc_contexthelp : UInt
+
+pub let sc_default : UInt
+
+pub let sc_hotkey : UInt
+
+pub let sc_hscroll : UInt
+
+pub let sc_icon : UInt
+
+pub let sc_keymenu : UInt
+
+pub let sc_maximize : UInt
+
+pub let sc_minimize : UInt
+
+pub let sc_monitorpower : UInt
+
+pub let sc_mousemenu : UInt
+
+pub let sc_move : UInt
+
+pub let sc_nextwindow : UInt
+
+pub let sc_prevwindow : UInt
+
+pub let sc_restore : UInt
+
+pub let sc_separator : UInt
+
+pub let sc_size : UInt
+
+pub let sc_tasklist : UInt
+
+pub let sc_vscroll : UInt
+
+pub let sc_zoom : UInt
+
+pub let scf_issecure : UInt
+
+pub fn scroll_dc(@core.RawAddress, Int, Int, @fb66f520d7e12332.RECT_dc5b788d9702?, @fb66f520d7e12332.RECT_dc5b788d9702?, @core.RawAddress, @fb66f520d7e12332.RECT_dc5b788d9702?) -> Bool raise @core.WindowsError
+
+pub fn scroll_dc_raw(@core.RawAddress, Int, Int, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn scroll_window(@core.RawAddress, Int, Int, @fb66f520d7e12332.RECT_dc5b788d9702?, @fb66f520d7e12332.RECT_dc5b788d9702?) -> Bool raise @core.WindowsError
+
+pub fn scroll_window_ex(@core.RawAddress, Int, Int, @fb66f520d7e12332.RECT_dc5b788d9702?, @fb66f520d7e12332.RECT_dc5b788d9702?, @core.RawAddress, @fb66f520d7e12332.RECT_dc5b788d9702?, @a96faf5bf034fb54.SCROLLWINDOWFLAGS_478cdc9e1231) -> Int raise @core.WindowsError
+
+pub fn scroll_window_ex_raw(@core.RawAddress, Int, Int, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, UInt) -> @core.RawWin32Call[Int]
+
+pub fn scroll_window_raw(@core.RawAddress, Int, Int, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn send_dlg_item_message_a(@core.RawAddress, Int, UInt, UInt64, Int64) -> Int64 raise @core.WindowsError
+
+pub fn send_dlg_item_message_a_raw(@core.RawAddress, Int, UInt, UInt64, Int64) -> Int64
+
+pub fn send_dlg_item_message_w(@core.RawAddress, Int, UInt, UInt64, Int64) -> Int64 raise @core.WindowsError
+
+pub fn send_dlg_item_message_w_raw(@core.RawAddress, Int, UInt, UInt64, Int64) -> Int64
+
+pub fn send_message_a(@core.RawAddress, UInt, UInt64, Int64) -> Int64 raise @core.WindowsError
+
+pub fn send_message_a_raw(@core.RawAddress, UInt, UInt64, Int64) -> @core.RawWin32Call[Int64]
+
+pub fn send_message_callback_a(@core.RawAddress, UInt, UInt64, Int64, @core.RawAddress, UInt64) -> Bool raise @core.WindowsError
+
+pub fn send_message_callback_a_raw(@core.RawAddress, UInt, UInt64, Int64, @core.RawAddress, UInt64) -> @core.RawWin32Call[Int]
+
+pub fn send_message_callback_w(@core.RawAddress, UInt, UInt64, Int64, @core.RawAddress, UInt64) -> Bool raise @core.WindowsError
+
+pub fn send_message_callback_w_raw(@core.RawAddress, UInt, UInt64, Int64, @core.RawAddress, UInt64) -> @core.RawWin32Call[Int]
+
+pub fn send_message_timeout_a(@core.RawAddress, UInt, UInt64, Int64, @a96faf5bf034fb54.SENDMESSAGETIMEOUTFLAGS_c742a71b8611, UInt, @core.RawAddress) -> Int64 raise @core.WindowsError
+
+pub fn send_message_timeout_a_raw(@core.RawAddress, UInt, UInt64, Int64, UInt, UInt, @core.RawAddress) -> @core.RawWin32Call[Int64]
+
+pub fn send_message_timeout_w(@core.RawAddress, UInt, UInt64, Int64, @a96faf5bf034fb54.SENDMESSAGETIMEOUTFLAGS_c742a71b8611, UInt, @core.RawAddress) -> Int64 raise @core.WindowsError
+
+pub fn send_message_timeout_w_raw(@core.RawAddress, UInt, UInt64, Int64, UInt, UInt, @core.RawAddress) -> @core.RawWin32Call[Int64]
+
+pub fn send_message_w(@core.RawAddress, UInt, UInt64, Int64) -> Int64 raise @core.WindowsError
+
+pub fn send_message_w_raw(@core.RawAddress, UInt, UInt64, Int64) -> @core.RawWin32Call[Int64]
+
+pub fn send_notify_message_a(@core.RawAddress, UInt, UInt64, Int64) -> Bool raise @core.WindowsError
+
+pub fn send_notify_message_a_raw(@core.RawAddress, UInt, UInt64, Int64) -> @core.RawWin32Call[Int]
+
+pub fn send_notify_message_w(@core.RawAddress, UInt, UInt64, Int64) -> Bool raise @core.WindowsError
+
+pub fn send_notify_message_w_raw(@core.RawAddress, UInt, UInt64, Int64) -> @core.RawWin32Call[Int]
+
+pub fn set_additional_foreground_boost_processes(@core.RawAddress, UInt, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn set_additional_foreground_boost_processes_raw(@core.RawAddress, UInt, @core.RawAddress) -> Int
+
+pub fn set_caret_blink_time(UInt) -> Bool raise @core.WindowsError
+
+pub fn set_caret_blink_time_raw(UInt) -> @core.RawWin32Call[Int]
+
+pub fn set_caret_pos(Int, Int) -> Bool raise @core.WindowsError
+
+pub fn set_caret_pos_raw(Int, Int) -> @core.RawWin32Call[Int]
+
+pub fn set_class_long_a(@core.RawAddress, @a96faf5bf034fb54.GETCLASSLONGINDEX_0468922445b6, Int) -> UInt raise @core.WindowsError
+
+pub fn set_class_long_a_raw(@core.RawAddress, Int, Int) -> @core.RawWin32Call[UInt]
+
+pub fn set_class_long_ptr_a(@core.RawAddress, @a96faf5bf034fb54.GETCLASSLONGINDEX_0468922445b6, Int64) -> UInt64 raise @core.WindowsError
+
+pub fn set_class_long_ptr_a_raw(@core.RawAddress, Int, Int64) -> @core.RawWin32Call[UInt64]
+
+pub fn set_class_long_ptr_w(@core.RawAddress, @a96faf5bf034fb54.GETCLASSLONGINDEX_0468922445b6, Int64) -> UInt64 raise @core.WindowsError
+
+pub fn set_class_long_ptr_w_raw(@core.RawAddress, Int, Int64) -> @core.RawWin32Call[UInt64]
+
+pub fn set_class_long_w(@core.RawAddress, @a96faf5bf034fb54.GETCLASSLONGINDEX_0468922445b6, Int) -> UInt raise @core.WindowsError
+
+pub fn set_class_long_w_raw(@core.RawAddress, Int, Int) -> @core.RawWin32Call[UInt]
+
+pub fn set_class_word(@core.RawAddress, Int, UInt16) -> UInt16 raise @core.WindowsError
+
+pub fn set_class_word_raw(@core.RawAddress, Int, UInt) -> @core.RawWin32Call[UInt]
+
+pub fn set_coalescable_timer(@core.RawAddress, UInt64, UInt, @core.RawAddress, UInt) -> UInt64 raise @core.WindowsError
+
+pub fn set_coalescable_timer_raw(@core.RawAddress, UInt64, UInt, @core.RawAddress, UInt) -> @core.RawWin32Call[UInt64]
+
+pub fn set_cursor(@core.RawAddress) -> @core.RawAddress raise @core.WindowsError
+
+pub fn set_cursor_pos(Int, Int) -> Bool raise @core.WindowsError
+
+pub fn set_cursor_pos_raw(Int, Int) -> @core.RawWin32Call[Int]
+
+pub fn set_cursor_raw(@core.RawAddress) -> @core.RawAddress
+
+pub fn set_debug_error_level(UInt) -> Unit raise @core.WindowsError
+
+pub fn set_debug_error_level_raw(UInt) -> Unit
+
+pub fn set_dlg_item_int(@core.RawAddress, Int, UInt, Int) -> Bool raise @core.WindowsError
+
+pub fn set_dlg_item_int_raw(@core.RawAddress, Int, UInt, Int) -> @core.RawWin32Call[Int]
+
+pub fn set_dlg_item_text_a(@core.RawAddress, Int, @strings.PStr) -> Bool raise @core.WindowsError
+
+pub fn set_dlg_item_text_a_raw(@core.RawAddress, Int, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn set_dlg_item_text_w(@core.RawAddress, Int, @strings.PWStr) -> Bool raise @core.WindowsError
+
+pub fn set_dlg_item_text_w_raw(@core.RawAddress, Int, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn set_foreground_window(@core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn set_foreground_window_raw(@core.RawAddress) -> Int
+
+pub fn set_layered_window_attributes(@core.RawAddress, UInt, Byte, @a96faf5bf034fb54.LAYEREDWINDOWATTRIBUTESFLAGS_7bcfd9d968d2) -> Bool raise @core.WindowsError
+
+pub fn set_layered_window_attributes_raw(@core.RawAddress, UInt, UInt, UInt) -> @core.RawWin32Call[Int]
+
+pub fn set_menu(@core.RawAddress, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn set_menu_default_item(@core.RawAddress, UInt, UInt) -> Bool raise @core.WindowsError
+
+pub fn set_menu_default_item_raw(@core.RawAddress, UInt, UInt) -> @core.RawWin32Call[Int]
+
+pub fn set_menu_info(@core.RawAddress, @a96faf5bf034fb54.MENUINFO_36809b6dbcad) -> Bool raise @core.WindowsError
+
+pub fn set_menu_info_raw(@core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn set_menu_item_bitmaps(@core.RawAddress, UInt, @a96faf5bf034fb54.MENUITEMFLAGS_e453b7847ee3, @core.RawAddress, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn set_menu_item_bitmaps_raw(@core.RawAddress, UInt, UInt, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn set_menu_item_info_a(@core.RawAddress, UInt, Int, @a96faf5bf034fb54.MENUITEMINFOA_8b8f9a1c5427) -> Bool raise @core.WindowsError
+
+pub fn set_menu_item_info_a_raw(@core.RawAddress, UInt, Int, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn set_menu_item_info_w(@core.RawAddress, UInt, Int, @a96faf5bf034fb54.MENUITEMINFOW_1584dff9bd81) -> Bool raise @core.WindowsError
+
+pub fn set_menu_item_info_w_raw(@core.RawAddress, UInt, Int, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn set_menu_raw(@core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn set_message_extra_info(Int64) -> Int64 raise @core.WindowsError
+
+pub fn set_message_extra_info_raw(Int64) -> Int64
+
+pub fn set_message_queue(Int) -> Bool raise @core.WindowsError
+
+pub fn set_message_queue_raw(Int) -> Int
+
+pub fn set_parent(@core.RawAddress, @core.RawAddress) -> @core.RawAddress raise @core.WindowsError
+
+pub fn set_parent_raw(@core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[@core.RawAddress]
+
+pub fn set_physical_cursor_pos(Int, Int) -> Bool raise @core.WindowsError
+
+pub fn set_physical_cursor_pos_raw(Int, Int) -> @core.RawWin32Call[Int]
+
+pub fn set_process_default_layout(UInt) -> Bool raise @core.WindowsError
+
+pub fn set_process_default_layout_raw(UInt) -> @core.RawWin32Call[Int]
+
+pub fn set_process_dpi_aware() -> Bool raise @core.WindowsError
+
+pub fn set_process_dpi_aware_raw() -> Int
+
+pub fn set_prop_a(@core.RawAddress, @strings.PStr, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn set_prop_a_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn set_prop_w(@core.RawAddress, @strings.PWStr, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn set_prop_w_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn set_system_cursor(@core.RawAddress, @a96faf5bf034fb54.SYSTEMCURSORID_387085a9bab2) -> Bool raise @core.WindowsError
+
+pub fn set_system_cursor_raw(@core.RawAddress, UInt) -> @core.RawWin32Call[Int]
+
+pub fn set_timer(@core.RawAddress, UInt64, UInt, @core.RawAddress) -> UInt64 raise @core.WindowsError
+
+pub fn set_timer_raw(@core.RawAddress, UInt64, UInt, @core.RawAddress) -> @core.RawWin32Call[UInt64]
+
+pub fn set_window_display_affinity(@core.RawAddress, @a96faf5bf034fb54.WINDOWDISPLAYAFFINITY_a4225d755776) -> Bool raise @core.WindowsError
+
+pub fn set_window_display_affinity_raw(@core.RawAddress, UInt) -> @core.RawWin32Call[Int]
+
+pub fn set_window_long_a(@core.RawAddress, @a96faf5bf034fb54.WINDOWLONGPTRINDEX_49ad6129aaa5, Int) -> Int raise @core.WindowsError
+
+pub fn set_window_long_a_raw(@core.RawAddress, Int, Int) -> @core.RawWin32Call[Int]
+
+pub fn set_window_long_ptr_a(@core.RawAddress, @a96faf5bf034fb54.WINDOWLONGPTRINDEX_49ad6129aaa5, Int64) -> Int64 raise @core.WindowsError
+
+pub fn set_window_long_ptr_a_raw(@core.RawAddress, Int, Int64) -> @core.RawWin32Call[Int64]
+
+pub fn set_window_long_ptr_w(@core.RawAddress, @a96faf5bf034fb54.WINDOWLONGPTRINDEX_49ad6129aaa5, Int64) -> Int64 raise @core.WindowsError
+
+pub fn set_window_long_ptr_w_raw(@core.RawAddress, Int, Int64) -> @core.RawWin32Call[Int64]
+
+pub fn set_window_long_w(@core.RawAddress, @a96faf5bf034fb54.WINDOWLONGPTRINDEX_49ad6129aaa5, Int) -> Int raise @core.WindowsError
+
+pub fn set_window_long_w_raw(@core.RawAddress, Int, Int) -> @core.RawWin32Call[Int]
+
+pub fn set_window_placement(@core.RawAddress, @a96faf5bf034fb54.WINDOWPLACEMENT_120ea5366841) -> Bool raise @core.WindowsError
+
+pub fn set_window_placement_raw(@core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn set_window_pos(@core.RawAddress, @core.RawAddress, Int, Int, Int, Int, @a96faf5bf034fb54.SETWINDOWPOSFLAGS_edbda8b74c72) -> Bool raise @core.WindowsError
+
+pub fn set_window_pos_raw(@core.RawAddress, @core.RawAddress, Int, Int, Int, Int, UInt) -> @core.RawWin32Call[Int]
+
+pub fn set_window_text_a(@core.RawAddress, @strings.PStr?) -> Bool raise @core.WindowsError
+
+pub fn set_window_text_a_raw(@core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn set_window_text_w(@core.RawAddress, @strings.PWStr?) -> Bool raise @core.WindowsError
+
+pub fn set_window_text_w_raw(@core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn set_window_word(@core.RawAddress, Int, UInt16) -> UInt16 raise @core.WindowsError
+
+pub fn set_window_word_raw(@core.RawAddress, Int, UInt) -> UInt
+
+pub fn set_windows_hook_a(Int, @core.RawAddress) -> @core.RawAddress raise @core.WindowsError
+
+pub fn set_windows_hook_a_raw(Int, @core.RawAddress) -> @core.RawAddress
+
+pub fn set_windows_hook_ex_a(@a96faf5bf034fb54.WINDOWSHOOKID_dce046aaea55, @core.RawAddress, @core.RawAddress, UInt) -> @core.RawAddress raise @core.WindowsError
+
+pub fn set_windows_hook_ex_a_raw(Int, @core.RawAddress, @core.RawAddress, UInt) -> @core.RawWin32Call[@core.RawAddress]
+
+pub fn set_windows_hook_ex_w(@a96faf5bf034fb54.WINDOWSHOOKID_dce046aaea55, @core.RawAddress, @core.RawAddress, UInt) -> @core.RawAddress raise @core.WindowsError
+
+pub fn set_windows_hook_ex_w_raw(Int, @core.RawAddress, @core.RawAddress, UInt) -> @core.RawWin32Call[@core.RawAddress]
+
+pub fn set_windows_hook_w(Int, @core.RawAddress) -> @core.RawAddress raise @core.WindowsError
+
+pub fn set_windows_hook_w_raw(Int, @core.RawAddress) -> @core.RawAddress
+
+pub fn show_caret(@core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn show_caret_raw(@core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn show_cursor(Int) -> Int raise @core.WindowsError
+
+pub fn show_cursor_raw(Int) -> Int
+
+pub let show_fullscreen : UInt
+
+pub let show_iconwindow : UInt
+
+pub let show_opennoactivate : UInt
+
+pub let show_openwindow : UInt
+
+pub fn show_owned_popups(@core.RawAddress, Int) -> Bool raise @core.WindowsError
+
+pub fn show_owned_popups_raw(@core.RawAddress, Int) -> @core.RawWin32Call[Int]
+
+pub fn show_window(@core.RawAddress, @a96faf5bf034fb54.SHOWWINDOWCMD_6aafd81e6954) -> Bool raise @core.WindowsError
+
+pub fn show_window_async(@core.RawAddress, @a96faf5bf034fb54.SHOWWINDOWCMD_6aafd81e6954) -> Bool raise @core.WindowsError
+
+pub fn show_window_async_raw(@core.RawAddress, Int) -> Int
+
+pub fn show_window_raw(@core.RawAddress, Int) -> Int
+
+pub let size_maxhide : UInt
+
+pub let size_maximized : UInt
+
+pub let size_maxshow : UInt
+
+pub let size_minimized : UInt
+
+pub let size_restored : UInt
+
+pub let sizefullscreen : UInt
+
+pub let sizeiconic : UInt
+
+pub let sizenormal : UInt
+
+pub let sizezoomhide : UInt
+
+pub let sizezoomshow : UInt
+
+pub let sm_caretblinkingenabled : UInt
+
+pub let sm_cmetrics : UInt
+
+pub let sm_reserved1 : UInt
+
+pub let sm_reserved2 : UInt
+
+pub let sm_reserved3 : UInt
+
+pub let sm_reserved4 : UInt
+
+pub fn sound_sentry() -> Bool raise @core.WindowsError
+
+pub fn sound_sentry_raw() -> Int
+
+pub let sound_system_append : UInt
+
+pub let sound_system_appstart : UInt
+
+pub let sound_system_beep : UInt
+
+pub let sound_system_error : UInt
+
+pub let sound_system_fault : UInt
+
+pub let sound_system_information : UInt
+
+pub let sound_system_maximize : UInt
+
+pub let sound_system_menucommand : UInt
+
+pub let sound_system_menupopup : UInt
+
+pub let sound_system_minimize : UInt
+
+pub let sound_system_question : UInt
+
+pub let sound_system_restoredown : UInt
+
+pub let sound_system_restoreup : UInt
+
+pub let sound_system_shutdown : UInt
+
+pub let sound_system_startup : UInt
+
+pub let sound_system_warning : UInt
+
+pub let state_system_alert_high : UInt
+
+pub let state_system_alert_low : UInt
+
+pub let state_system_alert_medium : UInt
+
+pub let state_system_animated : UInt
+
+pub let state_system_busy : UInt
+
+pub let state_system_checked : UInt
+
+pub let state_system_collapsed : UInt
+
+pub let state_system_default : UInt
+
+pub let state_system_expanded : UInt
+
+pub let state_system_extselectable : UInt
+
+pub let state_system_floating : UInt
+
+pub let state_system_focused : UInt
+
+pub let state_system_hottracked : UInt
+
+pub let state_system_indeterminate : UInt
+
+pub let state_system_linked : UInt
+
+pub let state_system_marqueed : UInt
+
+pub let state_system_mixed : UInt
+
+pub let state_system_moveable : UInt
+
+pub let state_system_multiselectable : UInt
+
+pub let state_system_protected : UInt
+
+pub let state_system_readonly : UInt
+
+pub let state_system_selectable : UInt
+
+pub let state_system_selected : UInt
+
+pub let state_system_selfvoicing : UInt
+
+pub let state_system_sizeable : UInt
+
+pub let state_system_traversed : UInt
+
+pub let state_system_valid : UInt
+
+pub let stm_geticon : UInt
+
+pub let stm_getimage : UInt
+
+pub let stm_msgmax : UInt
+
+pub let stm_seticon : UInt
+
+pub let stm_setimage : UInt
+
+pub let stn_clicked : UInt
+
+pub let stn_dblclk : UInt
+
+pub let stn_disable : UInt
+
+pub let stn_enable : UInt
+
+pub let strsafe_e_end_of_file : Int
+
+pub let strsafe_e_insufficient_buffer : Int
+
+pub let strsafe_e_invalid_parameter : Int
+
+pub let strsafe_fill_behind_null : UInt
+
+pub let strsafe_fill_on_failure : UInt
+
+pub let strsafe_ignore_nulls : UInt
+
+pub let strsafe_max_cch : UInt
+
+pub let strsafe_max_length : UInt
+
+pub let strsafe_no_truncation : UInt
+
+pub let strsafe_null_on_failure : UInt
+
+pub let strsafe_use_secure_crt : UInt
+
+pub fn switch_to_this_window(@core.RawAddress, Int) -> Unit raise @core.WindowsError
+
+pub fn switch_to_this_window_raw(@core.RawAddress, Int) -> Unit
+
+pub let swp_none : UInt
+
+pub fn system_parameters_info_a(@a96faf5bf034fb54.SYSTEMPARAMETERSINFOACTION_06844723f9cc, UInt, @core.RawAddress, @a96faf5bf034fb54.SYSTEMPARAMETERSINFOUPDATEFLAGS_2c995b293e3b) -> Bool raise @core.WindowsError
+
+pub fn system_parameters_info_a_raw(UInt, UInt, @core.RawAddress, UInt) -> @core.RawWin32Call[Int]
+
+pub fn system_parameters_info_w(@a96faf5bf034fb54.SYSTEMPARAMETERSINFOACTION_06844723f9cc, UInt, @core.RawAddress, @a96faf5bf034fb54.SYSTEMPARAMETERSINFOUPDATEFLAGS_2c995b293e3b) -> Bool raise @core.WindowsError
+
+pub fn system_parameters_info_w_raw(UInt, UInt, @core.RawAddress, UInt) -> @core.RawWin32Call[Int]
+
+pub fn tile_windows(@core.RawAddress, @a96faf5bf034fb54.TILEWINDOWSHOW_6eb942afc686, @fb66f520d7e12332.RECT_dc5b788d9702?, UInt, @core.RawAddress) -> UInt16 raise @core.WindowsError
+
+pub fn tile_windows_raw(@core.RawAddress, UInt, @core.RawAddress, UInt, @core.RawAddress) -> @core.RawWin32Call[UInt]
+
+pub let timerv_coalescing_max : UInt
+
+pub let timerv_coalescing_min : UInt
+
+pub let timerv_default_coalescing : UInt
+
+pub let timerv_no_coalescing : UInt
+
+pub let tkf_available : UInt
+
+pub let tkf_confirmhotkey : UInt
+
+pub let tkf_hotkeyactive : UInt
+
+pub let tkf_hotkeysound : UInt
+
+pub let tkf_indicator : UInt
+
+pub let tkf_togglekeyson : UInt
+
+pub let touch_flag_none : UInt
+
+pub let touch_hit_testing_client : UInt
+
+pub let touch_hit_testing_default : UInt
+
+pub let touch_hit_testing_none : UInt
+
+pub let touch_hit_testing_proximity_closest : UInt
+
+pub let touch_hit_testing_proximity_farthest : UInt
+
+pub let touch_mask_contactarea : UInt
+
+pub let touch_mask_none : UInt
+
+pub let touch_mask_orientation : UInt
+
+pub let touch_mask_pressure : UInt
+
+pub let touchpad_parameters_version_1 : UInt
+
+pub let touchpad_parameters_version_2 : UInt
+
+pub let touchpredictionparameters_default_latency : UInt
+
+pub let touchpredictionparameters_default_rls_delta : UInt
+
+pub let touchpredictionparameters_default_rls_expo_smooth_alpha : UInt
+
+pub let touchpredictionparameters_default_rls_lambda_learning_rate : UInt
+
+pub let touchpredictionparameters_default_rls_lambda_max : UInt
+
+pub let touchpredictionparameters_default_rls_lambda_min : UInt
+
+pub let touchpredictionparameters_default_sampletime : UInt
+
+pub let touchpredictionparameters_default_use_hw_timestamp : UInt
+
+pub fn track_popup_menu(@core.RawAddress, @a96faf5bf034fb54.TRACKPOPUPMENUFLAGS_16480bb883bc, Int, Int, Int, @core.RawAddress, @fb66f520d7e12332.RECT_dc5b788d9702?) -> Bool raise @core.WindowsError
+
+pub fn track_popup_menu_ex(@core.RawAddress, UInt, Int, Int, @core.RawAddress, @a96faf5bf034fb54.TPMPARAMS_90b6ea1fa403?) -> Bool raise @core.WindowsError
+
+pub fn track_popup_menu_ex_raw(@core.RawAddress, UInt, Int, Int, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn track_popup_menu_raw(@core.RawAddress, UInt, Int, Int, Int, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn translate_accelerator_a(@core.RawAddress, @core.RawAddress, @a96faf5bf034fb54.MSG_cce494869f79) -> Int raise @core.WindowsError
+
+pub fn translate_accelerator_a_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn translate_accelerator_w(@core.RawAddress, @core.RawAddress, @a96faf5bf034fb54.MSG_cce494869f79) -> Int raise @core.WindowsError
+
+pub fn translate_accelerator_w_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn translate_mdi_sys_accel(@core.RawAddress, @a96faf5bf034fb54.MSG_cce494869f79) -> Bool raise @core.WindowsError
+
+pub fn translate_mdi_sys_accel_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn translate_message(@a96faf5bf034fb54.MSG_cce494869f79) -> Bool raise @core.WindowsError
+
+pub fn translate_message_raw(@core.RawAddress) -> Int
+
+pub let uis_clear : UInt
+
+pub let uis_initialize : UInt
+
+pub let uis_set : UInt
+
+pub let uisf_active : UInt
+
+pub let uisf_hideaccel : UInt
+
+pub let uisf_hidefocus : UInt
+
+pub fn unhook_windows_hook(Int, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn unhook_windows_hook_ex(@core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn unhook_windows_hook_ex_raw(@core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn unhook_windows_hook_raw(Int, @core.RawAddress) -> Int
+
+pub let unicode_nochar : UInt
+
+pub fn unregister_class_a(@strings.PStr, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn unregister_class_a_raw(@core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn unregister_class_w(@strings.PWStr, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn unregister_class_w_raw(@core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn unregister_device_notification(@core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn unregister_device_notification_raw(@core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub let uoi_timerproc_exception_suppression : UInt
+
+pub fn update_layered_window(@core.RawAddress, @core.RawAddress, @fb66f520d7e12332.POINT_48d934d62b68?, @fb66f520d7e12332.SIZE_11175f7b4ee1?, @core.RawAddress, @fb66f520d7e12332.POINT_48d934d62b68?, UInt, @9ab35bf48b3f5013.BLENDFUNCTION_b6a4186789c1?, @a96faf5bf034fb54.UPDATELAYEREDWINDOWFLAGS_c659d0713f81) -> Bool raise @core.WindowsError
+
+pub fn update_layered_window_indirect(@core.RawAddress, @a96faf5bf034fb54.UPDATELAYEREDWINDOWINFO_ee3314150b47) -> Bool raise @core.WindowsError
+
+pub fn update_layered_window_indirect_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn update_layered_window_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, UInt) -> @core.RawWin32Call[Int]
+
+pub let user_default_screen_dpi : UInt
+
+pub let user_timer_maximum : UInt
+
+pub let user_timer_minimum : UInt
+
+pub let wa_active : UInt
+
+pub let wa_clickactive : UInt
+
+pub let wa_inactive : UInt
+
+pub fn wait_message() -> Bool raise @core.WindowsError
+
+pub fn wait_message_raw() -> @core.RawWin32Call[Int]
+
+pub let warning_banned_api_usage : UInt
+
+pub let warning_cyclomatic_complexity : UInt
+
+pub let warning_deref_null_ptr : UInt
+
+pub let warning_high_priority_overflow_postcondition : UInt
+
+pub let warning_incorrect_annotation : UInt
+
+pub let warning_invalid_param_value_1 : UInt
+
+pub let warning_invalid_param_value_3 : UInt
+
+pub let warning_missing_zero_termination2 : UInt
+
+pub let warning_post_expected : UInt
+
+pub let warning_postcondition_nulltermination_violation : UInt
+
+pub let warning_potential_buffer_overflow_high_priority : UInt
+
+pub let warning_potential_range_postcondition_violation : UInt
+
+pub let warning_precondition_nulltermination_violation : UInt
+
+pub let warning_range_postcondition_violation : UInt
+
+pub let warning_return_uninit_var : UInt
+
+pub let warning_returning_bad_result : UInt
+
+pub let warning_unsafe_string_function : UInt
+
+pub let warning_using_uninit_var : UInt
+
+pub let wh_hardware : UInt
+
+pub let wh_max : UInt
+
+pub let wh_maxhook : UInt
+
+pub let wh_min : Int
+
+pub let wh_minhook : Int
+
+pub let wheel_delta : UInt
+
+pub fn window_from_physical_point(@fb66f520d7e12332.POINT_48d934d62b68) -> @core.RawAddress raise @core.WindowsError
+
+pub fn window_from_physical_point_raw(Bytes) -> @core.RawAddress
+
+pub fn window_from_point(@fb66f520d7e12332.POINT_48d934d62b68) -> @core.RawAddress raise @core.WindowsError
+
+pub fn window_from_point_raw(Bytes) -> @core.RawAddress
+
+pub let winevent_incontext : UInt
+
+pub let winevent_outofcontext : UInt
+
+pub let winevent_skipownprocess : UInt
+
+pub let winevent_skipownthread : UInt
+
+pub let winsta_accessclipboard : Int
+
+pub let winsta_accessglobalatoms : Int
+
+pub let winsta_all_access : Int
+
+pub let winsta_createdesktop : Int
+
+pub let winsta_enumdesktops : Int
+
+pub let winsta_enumerate : Int
+
+pub let winsta_exitwindows : Int
+
+pub let winsta_readattributes : Int
+
+pub let winsta_readscreen : Int
+
+pub let winsta_writeattributes : Int
+
+pub let wm_activate : UInt
+
+pub let wm_activateapp : UInt
+
+pub let wm_afxfirst : UInt
+
+pub let wm_afxlast : UInt
+
+pub let wm_app : UInt
+
+pub let wm_appcommand : UInt
+
+pub let wm_askcbformatname : UInt
+
+pub let wm_canceljournal : UInt
+
+pub let wm_cancelmode : UInt
+
+pub let wm_capturechanged : UInt
+
+pub let wm_changecbchain : UInt
+
+pub let wm_changeuistate : UInt
+
+pub let wm_char : UInt
+
+pub let wm_chartoitem : UInt
+
+pub let wm_childactivate : UInt
+
+pub let wm_clear : UInt
+
+pub let wm_clipboardupdate : UInt
+
+pub let wm_cloaked_state_changed : UInt
+
+pub let wm_close : UInt
+
+pub let wm_command : UInt
+
+pub let wm_commnotify : UInt
+
+pub let wm_compacting : UInt
+
+pub let wm_compareitem : UInt
+
+pub let wm_contextmenu : UInt
+
+pub let wm_copy : UInt
+
+pub let wm_copydata : UInt
+
+pub let wm_create : UInt
+
+pub let wm_ctlcolorbtn : UInt
+
+pub let wm_ctlcolordlg : UInt
+
+pub let wm_ctlcoloredit : UInt
+
+pub let wm_ctlcolorlistbox : UInt
+
+pub let wm_ctlcolormsgbox : UInt
+
+pub let wm_ctlcolorscrollbar : UInt
+
+pub let wm_ctlcolorstatic : UInt
+
+pub let wm_cut : UInt
+
+pub let wm_deadchar : UInt
+
+pub let wm_deleteitem : UInt
+
+pub let wm_destroy : UInt
+
+pub let wm_destroyclipboard : UInt
+
+pub let wm_devicechange : UInt
+
+pub let wm_devmodechange : UInt
+
+pub let wm_displaychange : UInt
+
+pub let wm_dpichanged : UInt
+
+pub let wm_dpichanged_afterparent : UInt
+
+pub let wm_dpichanged_beforeparent : UInt
+
+pub let wm_drawclipboard : UInt
+
+pub let wm_drawitem : UInt
+
+pub let wm_dropfiles : UInt
+
+pub let wm_dwmcolorizationcolorchanged : UInt
+
+pub let wm_dwmcompositionchanged : UInt
+
+pub let wm_dwmncrenderingchanged : UInt
+
+pub let wm_dwmsendiconiclivepreviewbitmap : UInt
+
+pub let wm_dwmsendiconicthumbnail : UInt
+
+pub let wm_dwmwindowmaximizedchange : UInt
+
+pub let wm_enable : UInt
+
+pub let wm_endsession : UInt
+
+pub let wm_enteridle : UInt
+
+pub let wm_entermenuloop : UInt
+
+pub let wm_entersizemove : UInt
+
+pub let wm_erasebkgnd : UInt
+
+pub let wm_exitmenuloop : UInt
+
+pub let wm_exitsizemove : UInt
+
+pub let wm_fontchange : UInt
+
+pub let wm_gesture : UInt
+
+pub let wm_gesturenotify : UInt
+
+pub let wm_getdlgcode : UInt
+
+pub let wm_getdpiscaledsize : UInt
+
+pub let wm_getfont : UInt
+
+pub let wm_gethotkey : UInt
+
+pub let wm_geticon : UInt
+
+pub let wm_getminmaxinfo : UInt
+
+pub let wm_getobject : UInt
+
+pub let wm_gettext : UInt
+
+pub let wm_gettextlength : UInt
+
+pub let wm_gettitlebarinfoex : UInt
+
+pub let wm_handheldfirst : UInt
+
+pub let wm_handheldlast : UInt
+
+pub let wm_help : UInt
+
+pub let wm_hotkey : UInt
+
+pub let wm_hscroll : UInt
+
+pub let wm_hscrollclipboard : UInt
+
+pub let wm_iconerasebkgnd : UInt
+
+pub let wm_ime_char : UInt
+
+pub let wm_ime_composition : UInt
+
+pub let wm_ime_compositionfull : UInt
+
+pub let wm_ime_control : UInt
+
+pub let wm_ime_endcomposition : UInt
+
+pub let wm_ime_keydown : UInt
+
+pub let wm_ime_keylast : UInt
+
+pub let wm_ime_keyup : UInt
+
+pub let wm_ime_notify : UInt
+
+pub let wm_ime_request : UInt
+
+pub let wm_ime_select : UInt
+
+pub let wm_ime_setcontext : UInt
+
+pub let wm_ime_startcomposition : UInt
+
+pub let wm_initdialog : UInt
+
+pub let wm_initmenu : UInt
+
+pub let wm_initmenupopup : UInt
+
+pub let wm_input : UInt
+
+pub let wm_input_device_change : UInt
+
+pub let wm_inputlangchange : UInt
+
+pub let wm_inputlangchangerequest : UInt
+
+pub let wm_intercepted_window_action : UInt
+
+pub let wm_keydown : UInt
+
+pub let wm_keyfirst : UInt
+
+pub let wm_keylast : UInt
+
+pub let wm_keyup : UInt
+
+pub let wm_killfocus : UInt
+
+pub let wm_lbuttondblclk : UInt
+
+pub let wm_lbuttondown : UInt
+
+pub let wm_lbuttonup : UInt
+
+pub let wm_mbuttondblclk : UInt
+
+pub let wm_mbuttondown : UInt
+
+pub let wm_mbuttonup : UInt
+
+pub let wm_mdiactivate : UInt
+
+pub let wm_mdicascade : UInt
+
+pub let wm_mdicreate : UInt
+
+pub let wm_mdidestroy : UInt
+
+pub let wm_mdigetactive : UInt
+
+pub let wm_mdiiconarrange : UInt
+
+pub let wm_mdimaximize : UInt
+
+pub let wm_mdinext : UInt
+
+pub let wm_mdirefreshmenu : UInt
+
+pub let wm_mdirestore : UInt
+
+pub let wm_mdisetmenu : UInt
+
+pub let wm_mditile : UInt
+
+pub let wm_measureitem : UInt
+
+pub let wm_menuchar : UInt
+
+pub let wm_menucommand : UInt
+
+pub let wm_menudrag : UInt
+
+pub let wm_menugetobject : UInt
+
+pub let wm_menurbuttonup : UInt
+
+pub let wm_menuselect : UInt
+
+pub let wm_mouseactivate : UInt
+
+pub let wm_mousefirst : UInt
+
+pub let wm_mousehwheel : UInt
+
+pub let wm_mouselast : UInt
+
+pub let wm_mousemove : UInt
+
+pub let wm_mousewheel : UInt
+
+pub let wm_move : UInt
+
+pub let wm_moving : UInt
+
+pub let wm_ncactivate : UInt
+
+pub let wm_nccalcsize : UInt
+
+pub let wm_nccreate : UInt
+
+pub let wm_ncdestroy : UInt
+
+pub let wm_nchittest : UInt
+
+pub let wm_nclbuttondblclk : UInt
+
+pub let wm_nclbuttondown : UInt
+
+pub let wm_nclbuttonup : UInt
+
+pub let wm_ncmbuttondblclk : UInt
+
+pub let wm_ncmbuttondown : UInt
+
+pub let wm_ncmbuttonup : UInt
+
+pub let wm_ncmousehover : UInt
+
+pub let wm_ncmouseleave : UInt
+
+pub let wm_ncmousemove : UInt
+
+pub let wm_ncpaint : UInt
+
+pub let wm_ncpointerdown : UInt
+
+pub let wm_ncpointerup : UInt
+
+pub let wm_ncpointerupdate : UInt
+
+pub let wm_ncrbuttondblclk : UInt
+
+pub let wm_ncrbuttondown : UInt
+
+pub let wm_ncrbuttonup : UInt
+
+pub let wm_ncxbuttondblclk : UInt
+
+pub let wm_ncxbuttondown : UInt
+
+pub let wm_ncxbuttonup : UInt
+
+pub let wm_nextdlgctl : UInt
+
+pub let wm_nextmenu : UInt
+
+pub let wm_notify : UInt
+
+pub let wm_notifyformat : UInt
+
+pub let wm_null : UInt
+
+pub let wm_paint : UInt
+
+pub let wm_paintclipboard : UInt
+
+pub let wm_painticon : UInt
+
+pub let wm_palettechanged : UInt
+
+pub let wm_paletteischanging : UInt
+
+pub let wm_parentnotify : UInt
+
+pub let wm_paste : UInt
+
+pub let wm_penwinfirst : UInt
+
+pub let wm_penwinlast : UInt
+
+pub let wm_pointeractivate : UInt
+
+pub let wm_pointercapturechanged : UInt
+
+pub let wm_pointerdevicechange : UInt
+
+pub let wm_pointerdeviceinrange : UInt
+
+pub let wm_pointerdeviceoutofrange : UInt
+
+pub let wm_pointerdown : UInt
+
+pub let wm_pointerenter : UInt
+
+pub let wm_pointerhwheel : UInt
+
+pub let wm_pointerleave : UInt
+
+pub let wm_pointerroutedaway : UInt
+
+pub let wm_pointerroutedreleased : UInt
+
+pub let wm_pointerroutedto : UInt
+
+pub let wm_pointerup : UInt
+
+pub let wm_pointerupdate : UInt
+
+pub let wm_pointerwheel : UInt
+
+pub let wm_power : UInt
+
+pub let wm_powerbroadcast : UInt
+
+pub let wm_print : UInt
+
+pub let wm_printclient : UInt
+
+pub let wm_querydragicon : UInt
+
+pub let wm_queryendsession : UInt
+
+pub let wm_querynewpalette : UInt
+
+pub let wm_queryopen : UInt
+
+pub let wm_queryuistate : UInt
+
+pub let wm_queuesync : UInt
+
+pub let wm_quit : UInt
+
+pub let wm_rbuttondblclk : UInt
+
+pub let wm_rbuttondown : UInt
+
+pub let wm_rbuttonup : UInt
+
+pub let wm_renderallformats : UInt
+
+pub let wm_renderformat : UInt
+
+pub let wm_setcursor : UInt
+
+pub let wm_setfocus : UInt
+
+pub let wm_setfont : UInt
+
+pub let wm_sethotkey : UInt
+
+pub let wm_seticon : UInt
+
+pub let wm_setredraw : UInt
+
+pub let wm_settext : UInt
+
+pub let wm_settingchange : UInt
+
+pub let wm_showwindow : UInt
+
+pub let wm_size : UInt
+
+pub let wm_sizeclipboard : UInt
+
+pub let wm_sizing : UInt
+
+pub let wm_spoolerstatus : UInt
+
+pub let wm_stylechanged : UInt
+
+pub let wm_stylechanging : UInt
+
+pub let wm_syncpaint : UInt
+
+pub let wm_syschar : UInt
+
+pub let wm_syscolorchange : UInt
+
+pub let wm_syscommand : UInt
+
+pub let wm_sysdeadchar : UInt
+
+pub let wm_syskeydown : UInt
+
+pub let wm_syskeyup : UInt
+
+pub let wm_tablet_first : UInt
+
+pub let wm_tablet_last : UInt
+
+pub let wm_tcard : UInt
+
+pub let wm_themechanged : UInt
+
+pub let wm_timechange : UInt
+
+pub let wm_timer : UInt
+
+pub let wm_tooltipdismiss : UInt
+
+pub let wm_touch : UInt
+
+pub let wm_touchhittesting : UInt
+
+pub let wm_undo : UInt
+
+pub let wm_unichar : UInt
+
+pub let wm_uninitmenupopup : UInt
+
+pub let wm_updateuistate : UInt
+
+pub let wm_user : UInt
+
+pub let wm_userchanged : UInt
+
+pub let wm_vkeytoitem : UInt
+
+pub let wm_vscroll : UInt
+
+pub let wm_vscrollclipboard : UInt
+
+pub let wm_windowposchanged : UInt
+
+pub let wm_windowposchanging : UInt
+
+pub let wm_wininichange : UInt
+
+pub let wm_wtssession_change : UInt
+
+pub let wm_xbuttondblclk : UInt
+
+pub let wm_xbuttondown : UInt
+
+pub let wm_xbuttonup : UInt
+
+pub let wmsz_bottom : UInt
+
+pub let wmsz_bottomleft : UInt
+
+pub let wmsz_bottomright : UInt
+
+pub let wmsz_left : UInt
+
+pub let wmsz_right : UInt
+
+pub let wmsz_top : UInt
+
+pub let wmsz_topleft : UInt
+
+pub let wmsz_topright : UInt
+
+pub let wsf_visible : Int
+
+pub let wts_console_connect : UInt
+
+pub let wts_console_disconnect : UInt
+
+pub let wts_remote_connect : UInt
+
+pub let wts_remote_disconnect : UInt
+
+pub let wts_session_create : UInt
+
+pub let wts_session_desktop_ready : UInt
+
+pub let wts_session_lock : UInt
+
+pub let wts_session_logoff : UInt
+
+pub let wts_session_logon : UInt
+
+pub let wts_session_remote_control : UInt
+
+pub let wts_session_terminate : UInt
+
+pub let wts_session_unlock : UInt
+
+pub let wvr_alignbottom : UInt
+
+pub let wvr_alignleft : UInt
+
+pub let wvr_alignright : UInt
+
+pub let wvr_aligntop : UInt
+
+pub let wvr_hredraw : UInt
+
+pub let wvr_redraw : UInt
+
+pub let wvr_validrects : UInt
+
+pub let wvr_vredraw : UInt
+
+pub fn wvsprintf_a(@core.RawAddress, @strings.PStr, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn wvsprintf_a_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn wvsprintf_w(@core.RawAddress, @strings.PWStr, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn wvsprintf_w_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub let xbutton1 : UInt
+
+pub let xbutton2 : UInt
+
+// Errors
+
+// Types and methods
+
+// Type aliases
+pub using @a96faf5bf034fb54 {type ACCEL_b911ac570428 as ACCEL}
+
+pub using @a96faf5bf034fb54 {type ACCELVIRTFLAGS_33b5e65c8c0c as ACCELVIRTFLAGS}
+
+pub using @a96faf5bf034fb54 {type ALTTABINFO_91cdc6f23c4a as ALTTABINFO}
+
+pub using @a96faf5bf034fb54 {type ANIMATEWINDOWFLAGS_277b83007f1a as ANIMATEWINDOWFLAGS}
+
+pub using @a96faf5bf034fb54 {type ANIMATIONINFO_c497af94d3ec as ANIMATIONINFO}
+
+pub using @a96faf5bf034fb54 {type AUDIODESCRIPTION_4c9305c8f208 as AUDIODESCRIPTION}
+
+pub using @a96faf5bf034fb54 {type CASCADEWINDOWSHOW_254c54e23413 as CASCADEWINDOWSHOW}
+
+pub using @a96faf5bf034fb54 {type CBTACTIVATESTRUCT_dee76b9ef71a as CBTACTIVATESTRUCT}
+
+pub using @a96faf5bf034fb54 {type CBTCREATEWNDA_b96ba829a97b as CBTCREATEWNDA}
+
+pub using @a96faf5bf034fb54 {type CBTCREATEWNDW_46c2a240e95f as CBTCREATEWNDW}
+
+pub using @a96faf5bf034fb54 {type CHANGEFILTERSTRUCT_c6ad7fa02fd6 as CHANGEFILTERSTRUCT}
+
+pub using @a96faf5bf034fb54 {type CHANGEWINDOWMESSAGEFILTERFLAGS_365b346b5c49 as CHANGEWINDOWMESSAGEFILTERFLAGS}
+
+pub using @a96faf5bf034fb54 {type CLIENTCREATESTRUCT_08585a939724 as CLIENTCREATESTRUCT}
+
+pub using @a96faf5bf034fb54 {type CREATESTRUCTA_14cd1e8e6fe0 as CREATESTRUCTA}
+
+pub using @a96faf5bf034fb54 {type CREATESTRUCTW_8eb5cda0b060 as CREATESTRUCTW}
+
+pub using @a96faf5bf034fb54 {type CURSORINFO_b292ba675924 as CURSORINFO}
+
+pub using @a96faf5bf034fb54 {type CURSORINFOFLAGS_46e65cc57807 as CURSORINFOFLAGS}
+
+pub using @a96faf5bf034fb54 {type CURSORSHAPE_ec8dfdee8a4a as CURSORSHAPE}
+
+pub using @a96faf5bf034fb54 {type CWPFLAGS_bd483da102be as CWPFLAGS}
+
+pub using @a96faf5bf034fb54 {type CWPRETSTRUCT_2cf91c260a9d as CWPRETSTRUCT}
+
+pub using @a96faf5bf034fb54 {type CWPSTRUCT_258b84b88c93 as CWPSTRUCT}
+
+pub using @a96faf5bf034fb54 {type DEBUGHOOKINFO_f917235ca6f7 as DEBUGHOOKINFO}
+
+pub using @a96faf5bf034fb54 {type DEVBROADCASTDEVICEINTERFACEA_9947b16f95e6 as DEVBROADCASTDEVICEINTERFACEA}
+
+pub using @a96faf5bf034fb54 {type DEVBROADCASTDEVICEINTERFACEW_09e5a3b20ee1 as DEVBROADCASTDEVICEINTERFACEW}
+
+pub using @a96faf5bf034fb54 {type DEVBROADCASTDEVNODE_507a0eef98b0 as DEVBROADCASTDEVNODE}
+
+pub using @a96faf5bf034fb54 {type DEVBROADCASTHANDLE_5f7462d3a424 as DEVBROADCASTHANDLE}
+
+pub using @a96faf5bf034fb54 {type DEVBROADCASTHANDLE32_ff7fe39bdbd9 as DEVBROADCASTHANDLE32}
+
+pub using @a96faf5bf034fb54 {type DEVBROADCASTHANDLE64_e021eb4a88a7 as DEVBROADCASTHANDLE64}
+
+pub using @a96faf5bf034fb54 {type DEVBROADCASTHDR_875722e2f0e0 as DEVBROADCASTHDR}
+
+pub using @a96faf5bf034fb54 {type DEVBROADCASTHDRDEVICETYPE_bab56599f5c1 as DEVBROADCASTHDRDEVICETYPE}
+
+pub using @a96faf5bf034fb54 {type DEVBROADCASTHEADER_be20eba6d6bd as DEVBROADCASTHEADER}
+
+pub using @a96faf5bf034fb54 {type DEVBROADCASTNET_570ae084717c as DEVBROADCASTNET}
+
+pub using @a96faf5bf034fb54 {type DEVBROADCASTOEM_7afb379b0187 as DEVBROADCASTOEM}
+
+pub using @a96faf5bf034fb54 {type DEVBROADCASTPORTA_2276202559b0 as DEVBROADCASTPORTA}
+
+pub using @a96faf5bf034fb54 {type DEVBROADCASTPORTW_a1f2fb43067b as DEVBROADCASTPORTW}
+
+pub using @a96faf5bf034fb54 {type DEVBROADCASTUSERDEFINED_532bb840e274 as DEVBROADCASTUSERDEFINED}
+
+pub using @a96faf5bf034fb54 {type DEVBROADCASTVOLUME_98b97d2a51ce as DEVBROADCASTVOLUME}
+
+pub using @a96faf5bf034fb54 {type DEVBROADCASTVOLUMEFLAGS_496a7b8a38e6 as DEVBROADCASTVOLUMEFLAGS}
+
+pub using @a96faf5bf034fb54 {type DEVICEEVENTBECOMINGREADY_a98cbad45f92 as DEVICEEVENTBECOMINGREADY}
+
+pub using @a96faf5bf034fb54 {type DEVICEEVENTEXTERNALREQUEST_5dbd545efe35 as DEVICEEVENTEXTERNALREQUEST}
+
+pub using @a96faf5bf034fb54 {type DEVICEEVENTGENERICDATA_41f910a514be as DEVICEEVENTGENERICDATA}
+
+pub using @a96faf5bf034fb54 {type DEVICEEVENTMOUNT_7fe7191cebbf as DEVICEEVENTMOUNT}
+
+pub using @a96faf5bf034fb54 {type DEVICEEVENTRBCDATA_ed2f26a77a16 as DEVICEEVENTRBCDATA}
+
+pub using @a96faf5bf034fb54 {type DIFLAGS_45ef150bc862 as DIFLAGS}
+
+pub using @a96faf5bf034fb54 {type DISKHEALTHNOTIFICATIONDATA_96f022e64058 as DISKHEALTHNOTIFICATIONDATA}
+
+pub using @a96faf5bf034fb54 {type DLGITEMTEMPLATE_e55f9c386a65 as DLGITEMTEMPLATE}
+
+pub using @a96faf5bf034fb54 {type DLGPROC_02f9b4cfd2d9 as DLGPROC}
+
+pub using @a96faf5bf034fb54 {type DLGTEMPLATE_c7aa2ac9ec7a as DLGTEMPLATE}
+
+pub using @a96faf5bf034fb54 {type DROPSTRUCT_a125fc79dfa0 as DROPSTRUCT}
+
+pub using @a96faf5bf034fb54 {type EDITCONTROLFEATURE_c4190523c3d2 as EDITCONTROLFEATURE}
+
+pub using @a96faf5bf034fb54 {type EVENTMSG_9b7326baa887 as EVENTMSG}
+
+pub using @a96faf5bf034fb54 {type FLASHWINFO_57afe8cd64f0 as FLASHWINFO}
+
+pub using @a96faf5bf034fb54 {type FLASHWINFOFLAGS_bc8ca2690cbf as FLASHWINFOFLAGS}
+
+pub using @a96faf5bf034fb54 {type FOREGROUNDWINDOWLOCKCODE_b6aa702712d3 as FOREGROUNDWINDOWLOCKCODE}
+
+pub using @a96faf5bf034fb54 {type FRAMEMARGIN_3a655259aefe as FRAMEMARGIN}
+
+pub using @a96faf5bf034fb54 {type GDIIMAGETYPE_70666f69c0fd as GDIIMAGETYPE}
+
+pub using @a96faf5bf034fb54 {type GETANCESTORFLAGS_ee6b9f5b7695 as GETANCESTORFLAGS}
+
+pub using @a96faf5bf034fb54 {type GETCLASSLONGINDEX_0468922445b6 as GETCLASSLONGINDEX}
+
+pub using @a96faf5bf034fb54 {type GETCLIPBMETADATA_d1641459b3c5 as GETCLIPBMETADATA}
+
+pub using @a96faf5bf034fb54 {type GETMENUDEFAULTITEMFLAGS_5de680553024 as GETMENUDEFAULTITEMFLAGS}
+
+pub using @a96faf5bf034fb54 {type GETWINDOWCMD_5591fb136e68 as GETWINDOWCMD}
+
+pub using @a96faf5bf034fb54 {type GUIDIODISKCLONEARRIVALINFORMATION_9b8bdeef9906 as GUIDIODISKCLONEARRIVALINFORMATION}
+
+pub using @a96faf5bf034fb54 {type GUITHREADINFO_1307c6f65de8 as GUITHREADINFO}
+
+pub using @a96faf5bf034fb54 {type GUITHREADINFOFLAGS_f9a961fe7c3a as GUITHREADINFOFLAGS}
+
+pub using @a96faf5bf034fb54 {type HACCEL_01074ac407ec as HACCEL}
+
+pub using @a96faf5bf034fb54 {type HANDEDNESS_5f7777752639 as HANDEDNESS}
+
+pub using @a96faf5bf034fb54 {type HARDWAREHOOKSTRUCT_2cd8cdab59b6 as HARDWAREHOOKSTRUCT}
+
+pub using @a96faf5bf034fb54 {type HCURSOR_c1a777d85030 as HCURSOR}
+
+pub using @a96faf5bf034fb54 {type HDEVNOTIFY_89d65add6a03 as HDEVNOTIFY}
+
+pub using @a96faf5bf034fb54 {type HDWP_1d609fcc5436 as HDWP}
+
+pub using @a96faf5bf034fb54 {type HHOOK_c319b97d52f3 as HHOOK}
+
+pub using @a96faf5bf034fb54 {type HICON_fe352ae9e22d as HICON}
+
+pub using @a96faf5bf034fb54 {type HMENU_c10d9fcccb1d as HMENU}
+
+pub using @a96faf5bf034fb54 {type HOOKPROC_5a840ba74c6f as HOOKPROC}
+
+pub using @a96faf5bf034fb54 {type ICONINFO_c79c7828c600 as ICONINFO}
+
+pub using @a96faf5bf034fb54 {type ICONINFOEXA_59ec90d1a1d1 as ICONINFOEXA}
+
+pub using @a96faf5bf034fb54 {type ICONINFOEXW_a67adf2d3394 as ICONINFOEXW}
+
+pub using @a96faf5bf034fb54 {type ICONMETRICSA_d2c134073ce9 as ICONMETRICSA}
+
+pub using @a96faf5bf034fb54 {type ICONMETRICSW_dd64381be5b8 as ICONMETRICSW}
+
+pub using @a96faf5bf034fb54 {type IMAGEFLAGS_1c696490ca76 as IMAGEFLAGS}
+
+pub using @a96faf5bf034fb54 {type IndexedResourceQualifier_5aee72cde3b0 as IndexedResourceQualifier}
+
+pub using @a96faf5bf034fb54 {type KBDLLHOOKSTRUCT_a36053956522 as KBDLLHOOKSTRUCT}
+
+pub using @a96faf5bf034fb54 {type KBDLLHOOKSTRUCTFLAGS_b0769cf31cdc as KBDLLHOOKSTRUCTFLAGS}
+
+pub using @a96faf5bf034fb54 {type LAYEREDWINDOWATTRIBUTESFLAGS_7bcfd9d968d2 as LAYEREDWINDOWATTRIBUTESFLAGS}
+
+pub using @a96faf5bf034fb54 {type LEGACYTOUCHPADFEATURES_9d6cdcff0285 as LEGACYTOUCHPADFEATURES}
+
+pub using @a96faf5bf034fb54 {type MDICREATESTRUCTA_c01d494d1558 as MDICREATESTRUCTA}
+
+pub using @a96faf5bf034fb54 {type MDICREATESTRUCTW_034a30325318 as MDICREATESTRUCTW}
+
+pub using @a96faf5bf034fb54 {type MDINEXTMENU_03ce0f70aa32 as MDINEXTMENU}
+
+pub using @a96faf5bf034fb54 {type MENUBARINFO_856c8c9ff2ba as MENUBARINFO}
+
+pub using @a96faf5bf034fb54 {type MENUEXTEMPLATEHEADER_19f4e37f1368 as MENUEXTEMPLATEHEADER}
+
+pub using @a96faf5bf034fb54 {type MENUEXTEMPLATEITEM_51423555bebd as MENUEXTEMPLATEITEM}
+
+pub using @a96faf5bf034fb54 {type MENUGETOBJECTINFO_77b326f45778 as MENUGETOBJECTINFO}
+
+pub using @a96faf5bf034fb54 {type MENUGETOBJECTINFOFLAGS_e43fbe454cac as MENUGETOBJECTINFOFLAGS}
+
+pub using @a96faf5bf034fb54 {type MENUINFO_36809b6dbcad as MENUINFO}
+
+pub using @a96faf5bf034fb54 {type MENUINFOMASK_256be7dc950f as MENUINFOMASK}
+
+pub using @a96faf5bf034fb54 {type MENUINFOSTYLE_9f4f54686294 as MENUINFOSTYLE}
+
+pub using @a96faf5bf034fb54 {type MENUITEMFLAGS_e453b7847ee3 as MENUITEMFLAGS}
+
+pub using @a96faf5bf034fb54 {type MENUITEMINFOA_8b8f9a1c5427 as MENUITEMINFOA}
+
+pub using @a96faf5bf034fb54 {type MENUITEMINFOW_1584dff9bd81 as MENUITEMINFOW}
+
+pub using @a96faf5bf034fb54 {type MENUITEMMASK_81f88db590fc as MENUITEMMASK}
+
+pub using @a96faf5bf034fb54 {type MENUITEMSTATE_b08c1f95765b as MENUITEMSTATE}
+
+pub using @a96faf5bf034fb54 {type MENUITEMTEMPLATE_a138aef84f26 as MENUITEMTEMPLATE}
+
+pub using @a96faf5bf034fb54 {type MENUITEMTEMPLATEHEADER_ad3e6bf3e0fc as MENUITEMTEMPLATEHEADER}
+
+pub using @a96faf5bf034fb54 {type MENUITEMTYPE_8f153e45195e as MENUITEMTYPE}
+
+pub using @a96faf5bf034fb54 {type MENUTEMPLATEEX_e3c85f0d570c as MENUTEMPLATEEX}
+
+pub using @a96faf5bf034fb54 {type MENUTEMPLATEEXAnonymousEUnion_1ab019759dd7 as MENUTEMPLATEEXAnonymousEUnion}
+
+pub using @a96faf5bf034fb54 {type MENUTEMPLATEEXAnonymousEUnionMenuEStruct_22db0cdd1139 as MENUTEMPLATEEXAnonymousEUnionMenuEStruct}
+
+pub using @a96faf5bf034fb54 {type MENUTEMPLATEEXAnonymousEUnionMenuExEStruct_e5605913cd8d as MENUTEMPLATEEXAnonymousEUnionMenuExEStruct}
+
+pub using @a96faf5bf034fb54 {type MESSAGEBOXRESULT_9a00b6096a85 as MESSAGEBOXRESULT}
+
+pub using @a96faf5bf034fb54 {type MESSAGEBOXSTYLE_365231501e9a as MESSAGEBOXSTYLE}
+
+pub using @a96faf5bf034fb54 {type MESSAGERESOURCEBLOCK_333ee8743357 as MESSAGERESOURCEBLOCK}
+
+pub using @a96faf5bf034fb54 {type MESSAGERESOURCEDATA_4d41c67d2744 as MESSAGERESOURCEDATA}
+
+pub using @a96faf5bf034fb54 {type MESSAGERESOURCEENTRY_da8982fe0d40 as MESSAGERESOURCEENTRY}
+
+pub using @a96faf5bf034fb54 {type MINIMIZEDMETRICS_1e04400d04ac as MINIMIZEDMETRICS}
+
+pub using @a96faf5bf034fb54 {type MINIMIZEDMETRICSARRANGE_8519a4e4b288 as MINIMIZEDMETRICSARRANGE}
+
+pub using @a96faf5bf034fb54 {type MINMAXINFO_4baf8eab430f as MINMAXINFO}
+
+pub using @a96faf5bf034fb54 {type MOUSEHOOKSTRUCT_feb3bc8131aa as MOUSEHOOKSTRUCT}
+
+pub using @a96faf5bf034fb54 {type MOUSEHOOKSTRUCTEX_4cb7b1c89d45 as MOUSEHOOKSTRUCTEX}
+
+pub using @a96faf5bf034fb54 {type MOVESIZEOPERATION_c94cadcf8c13 as MOVESIZEOPERATION}
+
+pub using @a96faf5bf034fb54 {type MSG_cce494869f79 as MSG}
+
+pub using @a96faf5bf034fb54 {type MSGBOXCALLBACK_9cb6aba23bff as MSGBOXCALLBACK}
+
+pub using @a96faf5bf034fb54 {type MSGBOXPARAMSA_b45d43f282b7 as MSGBOXPARAMSA}
+
+pub using @a96faf5bf034fb54 {type MSGBOXPARAMSW_600db44f46e3 as MSGBOXPARAMSW}
+
+pub using @a96faf5bf034fb54 {type MSGFLTINFOSTATUS_66c7e9488158 as MSGFLTINFOSTATUS}
+
+pub using @a96faf5bf034fb54 {type MSGWAITFORMULTIPLEOBJECTSEXFLAGS_10209d7238f1 as MSGWAITFORMULTIPLEOBJECTSEXFLAGS}
+
+pub using @a96faf5bf034fb54 {type MSLLHOOKSTRUCT_d4497fb665ef as MSLLHOOKSTRUCT}
+
+pub using @a96faf5bf034fb54 {type MrmDumpType_6893c16c19fc as MrmDumpType}
+
+pub using @a96faf5bf034fb54 {type MrmIndexerFlags_c969ffe9ffa8 as MrmIndexerFlags}
+
+pub using @a96faf5bf034fb54 {type MrmPackagingMode_07cd15cabb87 as MrmPackagingMode}
+
+pub using @a96faf5bf034fb54 {type MrmPackagingOptions_bf90fbef2092 as MrmPackagingOptions}
+
+pub using @a96faf5bf034fb54 {type MrmPlatformVersion_807dbc590779 as MrmPlatformVersion}
+
+pub using @a96faf5bf034fb54 {type MrmResourceIndexerHandle_a5c7d49b63ed as MrmResourceIndexerHandle}
+
+pub using @a96faf5bf034fb54 {type MrmResourceIndexerMessage_f3a1bf7ffc5b as MrmResourceIndexerMessage}
+
+pub using @a96faf5bf034fb54 {type MrmResourceIndexerMessageSeverity_00c815290f4d as MrmResourceIndexerMessageSeverity}
+
+pub using @a96faf5bf034fb54 {type NAMEENUMPROCA_21a8447f639b as NAMEENUMPROCA}
+
+pub using @a96faf5bf034fb54 {type NAMEENUMPROCW_2e8fb5375555 as NAMEENUMPROCW}
+
+pub using @a96faf5bf034fb54 {type NCCALCSIZEPARAMS_5f7cc445de08 as NCCALCSIZEPARAMS}
+
+pub using @a96faf5bf034fb54 {type NONCLIENTMETRICSA_9b9b7e44fbba as NONCLIENTMETRICSA}
+
+pub using @a96faf5bf034fb54 {type NONCLIENTMETRICSW_8f95051f8f10 as NONCLIENTMETRICSW}
+
+pub using @a96faf5bf034fb54 {type OBJECTIDENTIFIER_4e0725eb05fb as OBJECTIDENTIFIER}
+
+pub using @a96faf5bf034fb54 {type PEEKMESSAGEREMOVETYPE_70f5ee56bcd5 as PEEKMESSAGEREMOVETYPE}
+
+pub using @a96faf5bf034fb54 {type POINTERINPUTTYPE_b4d19b71aa99 as POINTERINPUTTYPE}
+
+pub using @a96faf5bf034fb54 {type PREGISTERCLASSNAMEW_7952c4bcc767 as PREGISTERCLASSNAMEW}
+
+pub using @a96faf5bf034fb54 {type PROPENUMPROCA_4339b4761bf7 as PROPENUMPROCA}
+
+pub using @a96faf5bf034fb54 {type PROPENUMPROCEXA_15e036662492 as PROPENUMPROCEXA}
+
+pub using @a96faf5bf034fb54 {type PROPENUMPROCEXW_3ca13208befa as PROPENUMPROCEXW}
+
+pub using @a96faf5bf034fb54 {type PROPENUMPROCW_ad34bcc8606e as PROPENUMPROCW}
+
+pub using @a96faf5bf034fb54 {type QUEUESTATUSFLAGS_aa4338daa183 as QUEUESTATUSFLAGS}
+
+pub using @a96faf5bf034fb54 {type REGISTERNOTIFICATIONFLAGS_5d7c559158bf as REGISTERNOTIFICATIONFLAGS}
+
+pub using @a96faf5bf034fb54 {type SCROLLBARCOMMAND_c8fda20478ea as SCROLLBARCOMMAND}
+
+pub using @a96faf5bf034fb54 {type SCROLLBARCONSTANTS_969c5228d7ad as SCROLLBARCONSTANTS}
+
+pub using @a96faf5bf034fb54 {type SCROLLBARINFO_e6294d294b55 as SCROLLBARINFO}
+
+pub using @a96faf5bf034fb54 {type SCROLLINFO_a92d515575a2 as SCROLLINFO}
+
+pub using @a96faf5bf034fb54 {type SCROLLINFOMASK_198d4fd8985e as SCROLLINFOMASK}
+
+pub using @a96faf5bf034fb54 {type SCROLLWINDOWFLAGS_478cdc9e1231 as SCROLLWINDOWFLAGS}
+
+pub using @a96faf5bf034fb54 {type SENDASYNCPROC_b3f77730be73 as SENDASYNCPROC}
+
+pub using @a96faf5bf034fb54 {type SENDMESSAGETIMEOUTFLAGS_c742a71b8611 as SENDMESSAGETIMEOUTFLAGS}
+
+pub using @a96faf5bf034fb54 {type SETWINDOWPOSFLAGS_edbda8b74c72 as SETWINDOWPOSFLAGS}
+
+pub using @a96faf5bf034fb54 {type SHELLHOOKINFO_8bf51432e833 as SHELLHOOKINFO}
+
+pub using @a96faf5bf034fb54 {type SHOWWINDOWCMD_6aafd81e6954 as SHOWWINDOWCMD}
+
+pub using @a96faf5bf034fb54 {type SHOWWINDOWSTATUS_0f40fbf09f29 as SHOWWINDOWSTATUS}
+
+pub using @a96faf5bf034fb54 {type STYLESTRUCT_b7e390eb4317 as STYLESTRUCT}
+
+pub using @a96faf5bf034fb54 {type SYSTEMCURSORID_387085a9bab2 as SYSTEMCURSORID}
+
+pub using @a96faf5bf034fb54 {type SYSTEMMETRICSINDEX_8ae611014972 as SYSTEMMETRICSINDEX}
+
+pub using @a96faf5bf034fb54 {type SYSTEMPARAMETERSINFOACTION_06844723f9cc as SYSTEMPARAMETERSINFOACTION}
+
+pub using @a96faf5bf034fb54 {type SYSTEMPARAMETERSINFOUPDATEFLAGS_2c995b293e3b as SYSTEMPARAMETERSINFOUPDATEFLAGS}
+
+pub using @a96faf5bf034fb54 {type TILEWINDOWSHOW_6eb942afc686 as TILEWINDOWSHOW}
+
+pub using @a96faf5bf034fb54 {type TIMERPROC_b32a54e2fa73 as TIMERPROC}
+
+pub using @a96faf5bf034fb54 {type TITLEBARINFO_7a9bb729d080 as TITLEBARINFO}
+
+pub using @a96faf5bf034fb54 {type TITLEBARINFOEX_009449d11e5b as TITLEBARINFOEX}
+
+pub using @a96faf5bf034fb54 {type TOOLTIPDISMISSFLAGS_3573768db12e as TOOLTIPDISMISSFLAGS}
+
+pub using @a96faf5bf034fb54 {type TOUCHPADPARAMETERSV1_32a198bfe671 as TOUCHPADPARAMETERSV1}
+
+pub using @a96faf5bf034fb54 {type TOUCHPADPARAMETERSV2_3ee2cee56c3d as TOUCHPADPARAMETERSV2}
+
+pub using @a96faf5bf034fb54 {type TOUCHPADSENSITIVITYLEVEL_38ceb9cdb49f as TOUCHPADSENSITIVITYLEVEL}
+
+pub using @a96faf5bf034fb54 {type TOUCHPREDICTIONPARAMETERS_9567e3aba8de as TOUCHPREDICTIONPARAMETERS}
+
+pub using @a96faf5bf034fb54 {type TPMPARAMS_90b6ea1fa403 as TPMPARAMS}
+
+pub using @a96faf5bf034fb54 {type TRACKPOPUPMENUFLAGS_16480bb883bc as TRACKPOPUPMENUFLAGS}
+
+pub using @a96faf5bf034fb54 {type UPDATELAYEREDWINDOWFLAGS_c659d0713f81 as UPDATELAYEREDWINDOWFLAGS}
+
+pub using @a96faf5bf034fb54 {type UPDATELAYEREDWINDOWINFO_ee3314150b47 as UPDATELAYEREDWINDOWINFO}
+
+pub using @a96faf5bf034fb54 {type VolLockBroadcast_5438cba98de0 as VolLockBroadcast}
+
+pub using @a96faf5bf034fb54 {type WINDOWACTION_b4df90e15356 as WINDOWACTION}
+
+pub using @a96faf5bf034fb54 {type WINDOWACTIONKINDS_333d4bbe7761 as WINDOWACTIONKINDS}
+
+pub using @a96faf5bf034fb54 {type WINDOWACTIONMODIFIERS_abeca63beff1 as WINDOWACTIONMODIFIERS}
+
+pub using @a96faf5bf034fb54 {type WINDOWDISPLAYAFFINITY_a4225d755776 as WINDOWDISPLAYAFFINITY}
+
+pub using @a96faf5bf034fb54 {type WINDOWEXSTYLE_99f3964afaf1 as WINDOWEXSTYLE}
+
+pub using @a96faf5bf034fb54 {type WINDOWINFO_0aac65ae54fc as WINDOWINFO}
+
+pub using @a96faf5bf034fb54 {type WINDOWLONGPTRINDEX_49ad6129aaa5 as WINDOWLONGPTRINDEX}
+
+pub using @a96faf5bf034fb54 {type WINDOWMESSAGEFILTERACTION_d22416b2680c as WINDOWMESSAGEFILTERACTION}
+
+pub using @a96faf5bf034fb54 {type WINDOWPLACEMENT_120ea5366841 as WINDOWPLACEMENT}
+
+pub using @a96faf5bf034fb54 {type WINDOWPLACEMENTFLAGS_5c6732574903 as WINDOWPLACEMENTFLAGS}
+
+pub using @a96faf5bf034fb54 {type WINDOWPLACEMENTSTATE_fe53d653cabd as WINDOWPLACEMENTSTATE}
+
+pub using @a96faf5bf034fb54 {type WINDOWPOS_600f0a95119c as WINDOWPOS}
+
+pub using @a96faf5bf034fb54 {type WINDOWSHOOKID_dce046aaea55 as WINDOWSHOOKID}
+
+pub using @a96faf5bf034fb54 {type WINDOWSTYLE_b4089741576d as WINDOWSTYLE}
+
+pub using @a96faf5bf034fb54 {type WNDCLASSA_49f883ab47c8 as WNDCLASSA}
+
+pub using @a96faf5bf034fb54 {type WNDCLASSEXA_6f391918ed52 as WNDCLASSEXA}
+
+pub using @a96faf5bf034fb54 {type WNDCLASSEXW_8493016dd6b2 as WNDCLASSEXW}
+
+pub using @a96faf5bf034fb54 {type WNDCLASSSTYLES_f54e7e5ce026 as WNDCLASSSTYLES}
+
+pub using @a96faf5bf034fb54 {type WNDCLASSW_5c974a795d73 as WNDCLASSW}
+
+pub using @a96faf5bf034fb54 {type WNDENUMPROC_b0e863d288ec as WNDENUMPROC}
+
+pub type WNDPROC = FuncRef[(@core.RawAddress, UInt, UInt64, Int64) -> Int64]
+
+// Traits

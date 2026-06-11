@@ -1,0 +1,46 @@
+// Generated using `moon info`, DON'T EDIT IT
+package "moonbit-community/win32api/scc/07a666dfc4263ab5"
+
+import {
+  "moonbit-community/win32api/runtime/core",
+  "moonbitlang/core/debug",
+}
+
+// Values
+pub let beep_frequency_maximum_8440d5d18dc2 : UInt
+
+pub let beep_frequency_minimum_85ad83247d44 : UInt
+
+pub let beepsetparameters_857c472d534c_alignment : Int
+
+pub let beepsetparameters_857c472d534c_size : Int
+
+pub let dd_beep_device_name_bff51ddd80e3 : String
+
+pub let dd_beep_device_name_u_35cf4dd2c67d : String
+
+pub let ioctl_beep_set_a15ce63dd9e5 : UInt
+
+// Errors
+
+// Types and methods
+pub(all) struct BEEPSETPARAMETERS_857c472d534c {
+  raw_buffer : @core.NativeBuffer
+}
+pub fn BEEPSETPARAMETERS_857c472d534c::abi_alignment() -> Int
+pub fn BEEPSETPARAMETERS_857c472d534c::abi_size() -> Int
+pub fn BEEPSETPARAMETERS_857c472d534c::bytes(Self) -> Bytes raise @core.WindowsError
+pub fn BEEPSETPARAMETERS_857c472d534c::duration(Self) -> UInt raise @core.WindowsError
+pub fn BEEPSETPARAMETERS_857c472d534c::frequency(Self) -> UInt raise @core.WindowsError
+pub fn BEEPSETPARAMETERS_857c472d534c::from_bytes(Bytes) -> Self raise @core.WindowsError
+pub fn BEEPSETPARAMETERS_857c472d534c::new() -> Self raise @core.WindowsError
+pub fn BEEPSETPARAMETERS_857c472d534c::raw_address(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn BEEPSETPARAMETERS_857c472d534c::set_duration(Self, UInt) -> Unit raise @core.WindowsError
+pub fn BEEPSETPARAMETERS_857c472d534c::set_frequency(Self, UInt) -> Unit raise @core.WindowsError
+pub fn[T] BEEPSETPARAMETERS_857c472d534c::with_raw_address(Self, (@core.RawAddress) -> T raise?) -> T raise
+pub impl Eq for BEEPSETPARAMETERS_857c472d534c
+pub impl @debug.Debug for BEEPSETPARAMETERS_857c472d534c
+
+// Type aliases
+
+// Traits

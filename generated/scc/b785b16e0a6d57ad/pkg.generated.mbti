@@ -1,0 +1,197 @@
+// Generated using `moon info`, DON'T EDIT IT
+package "moonbit-community/win32api/scc/b785b16e0a6d57ad"
+
+import {
+  "moonbit-community/win32api/runtime/core",
+  "moonbitlang/core/debug",
+}
+
+// Values
+pub fn bind_io_completion_callback_956cce265a06(@core.RawAddress, @core.RawAddress, UInt) -> Bool raise @core.WindowsError
+
+pub fn bind_io_completion_callback_956cce265a06_raw(@core.RawAddress, @core.RawAddress, UInt) -> @core.RawWin32Call[Int]
+
+pub fn cancel_io_0353dbc11829(@core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn cancel_io_0353dbc11829_raw(@core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn cancel_io_ex_7fe4920b06f1(@core.RawAddress, OVERLAPPED_ed44d4ed4c15?) -> Bool raise @core.WindowsError
+
+pub fn cancel_io_ex_7fe4920b06f1_raw(@core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn cancel_synchronous_io_6a94deeecd79(@core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn cancel_synchronous_io_6a94deeecd79_raw(@core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn create_io_completion_port_093abcb1ddab(@core.RawAddress, @core.RawAddress, UInt64, UInt) -> @core.RawAddress raise @core.WindowsError
+
+pub fn create_io_completion_port_093abcb1ddab_raw(@core.RawAddress, @core.RawAddress, UInt64, UInt) -> @core.RawWin32Call[@core.RawAddress]
+
+pub fn device_io_control_978937ba425c(@core.RawAddress, UInt, @core.RawAddress, UInt, @core.RawAddress, UInt, @core.RawAddress, OVERLAPPED_ed44d4ed4c15?) -> Bool raise @core.WindowsError
+
+pub fn device_io_control_978937ba425c_raw(@core.RawAddress, UInt, @core.RawAddress, UInt, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn get_overlapped_result_1858dc947e69(@core.RawAddress, OVERLAPPED_ed44d4ed4c15, @core.RawAddress, Int) -> Bool raise @core.WindowsError
+
+pub fn get_overlapped_result_1858dc947e69_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, Int) -> @core.RawWin32Call[Int]
+
+pub fn get_overlapped_result_ex_d9340d7e63f0(@core.RawAddress, OVERLAPPED_ed44d4ed4c15, @core.RawAddress, UInt, Int) -> Bool raise @core.WindowsError
+
+pub fn get_overlapped_result_ex_d9340d7e63f0_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, UInt, Int) -> @core.RawWin32Call[Int]
+
+pub fn get_queued_completion_status_eda35bce1d50(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, UInt) -> Bool raise @core.WindowsError
+
+pub fn get_queued_completion_status_eda35bce1d50_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, UInt) -> @core.RawWin32Call[Int]
+
+pub fn get_queued_completion_status_ex_ac87a63e3c20(@core.RawAddress, OVERLAPPEDENTRY_2d8d717972cd, UInt, @core.RawAddress, UInt, Int) -> Bool raise @core.WindowsError
+
+pub fn get_queued_completion_status_ex_ac87a63e3c20_raw(@core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, UInt, Int) -> @core.RawWin32Call[Int]
+
+pub let iostatusblock_anonymous_e_union_af04aa63212e_alignment : Int
+
+pub let iostatusblock_anonymous_e_union_af04aa63212e_size : Int
+
+pub let iostatusblock_d81c8aca9b9d_alignment : Int
+
+pub let iostatusblock_d81c8aca9b9d_size : Int
+
+pub let overlapped_anonymous_e_union_anonymous_e_struct_f81971552c4e_alignment : Int
+
+pub let overlapped_anonymous_e_union_anonymous_e_struct_f81971552c4e_size : Int
+
+pub let overlapped_anonymous_e_union_d55575d55e43_alignment : Int
+
+pub let overlapped_anonymous_e_union_d55575d55e43_size : Int
+
+pub let overlapped_ed44d4ed4c15_alignment : Int
+
+pub let overlapped_ed44d4ed4c15_size : Int
+
+pub let overlappedentry_2d8d717972cd_alignment : Int
+
+pub let overlappedentry_2d8d717972cd_size : Int
+
+pub fn post_queued_completion_status_b29fe3e451e5(@core.RawAddress, UInt, UInt64, OVERLAPPED_ed44d4ed4c15?) -> Bool raise @core.WindowsError
+
+pub fn post_queued_completion_status_b29fe3e451e5_raw(@core.RawAddress, UInt, UInt64, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+// Errors
+
+// Types and methods
+pub(all) struct IOSTATUSBLOCKAnonymousEUnion_af04aa63212e {
+  raw_buffer : @core.NativeBuffer
+}
+pub fn IOSTATUSBLOCKAnonymousEUnion_af04aa63212e::abi_alignment() -> Int
+pub fn IOSTATUSBLOCKAnonymousEUnion_af04aa63212e::abi_size() -> Int
+pub fn IOSTATUSBLOCKAnonymousEUnion_af04aa63212e::bytes(Self) -> Bytes raise @core.WindowsError
+pub fn IOSTATUSBLOCKAnonymousEUnion_af04aa63212e::from_bytes(Bytes) -> Self raise @core.WindowsError
+pub fn IOSTATUSBLOCKAnonymousEUnion_af04aa63212e::new() -> Self raise @core.WindowsError
+pub fn IOSTATUSBLOCKAnonymousEUnion_af04aa63212e::pointer_raw(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn IOSTATUSBLOCKAnonymousEUnion_af04aa63212e::raw_address(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn IOSTATUSBLOCKAnonymousEUnion_af04aa63212e::set_pointer_raw(Self, @core.RawAddress) -> Unit raise @core.WindowsError
+pub fn IOSTATUSBLOCKAnonymousEUnion_af04aa63212e::set_status(Self, Int) -> Unit raise @core.WindowsError
+pub fn IOSTATUSBLOCKAnonymousEUnion_af04aa63212e::status(Self) -> Int raise @core.WindowsError
+pub fn[T] IOSTATUSBLOCKAnonymousEUnion_af04aa63212e::with_raw_address(Self, (@core.RawAddress) -> T raise?) -> T raise
+pub impl Eq for IOSTATUSBLOCKAnonymousEUnion_af04aa63212e
+pub impl @debug.Debug for IOSTATUSBLOCKAnonymousEUnion_af04aa63212e
+
+pub(all) struct IOSTATUSBLOCK_d81c8aca9b9d {
+  raw_buffer : @core.NativeBuffer
+}
+pub fn IOSTATUSBLOCK_d81c8aca9b9d::abi_alignment() -> Int
+pub fn IOSTATUSBLOCK_d81c8aca9b9d::abi_size() -> Int
+pub fn IOSTATUSBLOCK_d81c8aca9b9d::anonymous(Self) -> IOSTATUSBLOCKAnonymousEUnion_af04aa63212e raise @core.WindowsError
+pub fn IOSTATUSBLOCK_d81c8aca9b9d::bytes(Self) -> Bytes raise @core.WindowsError
+pub fn IOSTATUSBLOCK_d81c8aca9b9d::from_bytes(Bytes) -> Self raise @core.WindowsError
+pub fn IOSTATUSBLOCK_d81c8aca9b9d::information(Self) -> UInt64 raise @core.WindowsError
+pub fn IOSTATUSBLOCK_d81c8aca9b9d::new() -> Self raise @core.WindowsError
+pub fn IOSTATUSBLOCK_d81c8aca9b9d::raw_address(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn IOSTATUSBLOCK_d81c8aca9b9d::set_anonymous(Self, IOSTATUSBLOCKAnonymousEUnion_af04aa63212e) -> Unit raise @core.WindowsError
+pub fn IOSTATUSBLOCK_d81c8aca9b9d::set_information(Self, UInt64) -> Unit raise @core.WindowsError
+pub fn[T] IOSTATUSBLOCK_d81c8aca9b9d::with_raw_address(Self, (@core.RawAddress) -> T raise?) -> T raise
+pub impl Eq for IOSTATUSBLOCK_d81c8aca9b9d
+pub impl @debug.Debug for IOSTATUSBLOCK_d81c8aca9b9d
+
+pub type LPOVERLAPPEDCOMPLETIONROUTINE_931c8c03f79c
+
+pub(all) struct OVERLAPPEDAnonymousEUnionAnonymousEStruct_f81971552c4e {
+  raw_buffer : @core.NativeBuffer
+}
+pub fn OVERLAPPEDAnonymousEUnionAnonymousEStruct_f81971552c4e::abi_alignment() -> Int
+pub fn OVERLAPPEDAnonymousEUnionAnonymousEStruct_f81971552c4e::abi_size() -> Int
+pub fn OVERLAPPEDAnonymousEUnionAnonymousEStruct_f81971552c4e::bytes(Self) -> Bytes raise @core.WindowsError
+pub fn OVERLAPPEDAnonymousEUnionAnonymousEStruct_f81971552c4e::from_bytes(Bytes) -> Self raise @core.WindowsError
+pub fn OVERLAPPEDAnonymousEUnionAnonymousEStruct_f81971552c4e::new() -> Self raise @core.WindowsError
+pub fn OVERLAPPEDAnonymousEUnionAnonymousEStruct_f81971552c4e::offset(Self) -> UInt raise @core.WindowsError
+pub fn OVERLAPPEDAnonymousEUnionAnonymousEStruct_f81971552c4e::offset_high(Self) -> UInt raise @core.WindowsError
+pub fn OVERLAPPEDAnonymousEUnionAnonymousEStruct_f81971552c4e::raw_address(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn OVERLAPPEDAnonymousEUnionAnonymousEStruct_f81971552c4e::set_offset(Self, UInt) -> Unit raise @core.WindowsError
+pub fn OVERLAPPEDAnonymousEUnionAnonymousEStruct_f81971552c4e::set_offset_high(Self, UInt) -> Unit raise @core.WindowsError
+pub fn[T] OVERLAPPEDAnonymousEUnionAnonymousEStruct_f81971552c4e::with_raw_address(Self, (@core.RawAddress) -> T raise?) -> T raise
+pub impl Eq for OVERLAPPEDAnonymousEUnionAnonymousEStruct_f81971552c4e
+pub impl @debug.Debug for OVERLAPPEDAnonymousEUnionAnonymousEStruct_f81971552c4e
+
+pub(all) struct OVERLAPPEDAnonymousEUnion_d55575d55e43 {
+  raw_buffer : @core.NativeBuffer
+}
+pub fn OVERLAPPEDAnonymousEUnion_d55575d55e43::abi_alignment() -> Int
+pub fn OVERLAPPEDAnonymousEUnion_d55575d55e43::abi_size() -> Int
+pub fn OVERLAPPEDAnonymousEUnion_d55575d55e43::anonymous(Self) -> OVERLAPPEDAnonymousEUnionAnonymousEStruct_f81971552c4e raise @core.WindowsError
+pub fn OVERLAPPEDAnonymousEUnion_d55575d55e43::bytes(Self) -> Bytes raise @core.WindowsError
+pub fn OVERLAPPEDAnonymousEUnion_d55575d55e43::from_bytes(Bytes) -> Self raise @core.WindowsError
+pub fn OVERLAPPEDAnonymousEUnion_d55575d55e43::new() -> Self raise @core.WindowsError
+pub fn OVERLAPPEDAnonymousEUnion_d55575d55e43::pointer_raw(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn OVERLAPPEDAnonymousEUnion_d55575d55e43::raw_address(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn OVERLAPPEDAnonymousEUnion_d55575d55e43::set_anonymous(Self, OVERLAPPEDAnonymousEUnionAnonymousEStruct_f81971552c4e) -> Unit raise @core.WindowsError
+pub fn OVERLAPPEDAnonymousEUnion_d55575d55e43::set_pointer_raw(Self, @core.RawAddress) -> Unit raise @core.WindowsError
+pub fn[T] OVERLAPPEDAnonymousEUnion_d55575d55e43::with_raw_address(Self, (@core.RawAddress) -> T raise?) -> T raise
+pub impl Eq for OVERLAPPEDAnonymousEUnion_d55575d55e43
+pub impl @debug.Debug for OVERLAPPEDAnonymousEUnion_d55575d55e43
+
+pub(all) struct OVERLAPPEDENTRY_2d8d717972cd {
+  raw_buffer : @core.NativeBuffer
+}
+pub fn OVERLAPPEDENTRY_2d8d717972cd::abi_alignment() -> Int
+pub fn OVERLAPPEDENTRY_2d8d717972cd::abi_size() -> Int
+pub fn OVERLAPPEDENTRY_2d8d717972cd::bytes(Self) -> Bytes raise @core.WindowsError
+pub fn OVERLAPPEDENTRY_2d8d717972cd::dw_number_of_bytes_transferred(Self) -> UInt raise @core.WindowsError
+pub fn OVERLAPPEDENTRY_2d8d717972cd::from_bytes(Bytes) -> Self raise @core.WindowsError
+pub fn OVERLAPPEDENTRY_2d8d717972cd::internal(Self) -> UInt64 raise @core.WindowsError
+pub fn OVERLAPPEDENTRY_2d8d717972cd::lp_completion_key(Self) -> UInt64 raise @core.WindowsError
+pub fn OVERLAPPEDENTRY_2d8d717972cd::lp_overlapped_raw(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn OVERLAPPEDENTRY_2d8d717972cd::new() -> Self raise @core.WindowsError
+pub fn OVERLAPPEDENTRY_2d8d717972cd::raw_address(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn OVERLAPPEDENTRY_2d8d717972cd::set_dw_number_of_bytes_transferred(Self, UInt) -> Unit raise @core.WindowsError
+pub fn OVERLAPPEDENTRY_2d8d717972cd::set_internal(Self, UInt64) -> Unit raise @core.WindowsError
+pub fn OVERLAPPEDENTRY_2d8d717972cd::set_lp_completion_key(Self, UInt64) -> Unit raise @core.WindowsError
+pub fn OVERLAPPEDENTRY_2d8d717972cd::set_lp_overlapped_raw(Self, @core.RawAddress) -> Unit raise @core.WindowsError
+pub fn[T] OVERLAPPEDENTRY_2d8d717972cd::with_raw_address(Self, (@core.RawAddress) -> T raise?) -> T raise
+pub impl Eq for OVERLAPPEDENTRY_2d8d717972cd
+pub impl @debug.Debug for OVERLAPPEDENTRY_2d8d717972cd
+
+pub(all) struct OVERLAPPED_ed44d4ed4c15 {
+  raw_buffer : @core.NativeBuffer
+}
+pub fn OVERLAPPED_ed44d4ed4c15::abi_alignment() -> Int
+pub fn OVERLAPPED_ed44d4ed4c15::abi_size() -> Int
+pub fn OVERLAPPED_ed44d4ed4c15::anonymous(Self) -> OVERLAPPEDAnonymousEUnion_d55575d55e43 raise @core.WindowsError
+pub fn OVERLAPPED_ed44d4ed4c15::bytes(Self) -> Bytes raise @core.WindowsError
+pub fn OVERLAPPED_ed44d4ed4c15::from_bytes(Bytes) -> Self raise @core.WindowsError
+pub fn OVERLAPPED_ed44d4ed4c15::h_event_raw(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn OVERLAPPED_ed44d4ed4c15::internal(Self) -> UInt64 raise @core.WindowsError
+pub fn OVERLAPPED_ed44d4ed4c15::internal_high(Self) -> UInt64 raise @core.WindowsError
+pub fn OVERLAPPED_ed44d4ed4c15::new() -> Self raise @core.WindowsError
+pub fn OVERLAPPED_ed44d4ed4c15::raw_address(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn OVERLAPPED_ed44d4ed4c15::set_anonymous(Self, OVERLAPPEDAnonymousEUnion_d55575d55e43) -> Unit raise @core.WindowsError
+pub fn OVERLAPPED_ed44d4ed4c15::set_h_event_raw(Self, @core.RawAddress) -> Unit raise @core.WindowsError
+pub fn OVERLAPPED_ed44d4ed4c15::set_internal(Self, UInt64) -> Unit raise @core.WindowsError
+pub fn OVERLAPPED_ed44d4ed4c15::set_internal_high(Self, UInt64) -> Unit raise @core.WindowsError
+pub fn[T] OVERLAPPED_ed44d4ed4c15::with_raw_address(Self, (@core.RawAddress) -> T raise?) -> T raise
+pub impl Eq for OVERLAPPED_ed44d4ed4c15
+pub impl @debug.Debug for OVERLAPPED_ed44d4ed4c15
+
+pub type PIOAPCROUTINE_d3c866e130c0
+
+// Type aliases
+
+// Traits

@@ -1,0 +1,314 @@
+///|
+pub fn AUTHENTICATIONREQUIREMENTS_c5bc674173d2::mitm_protection_not_defined() -> AUTHENTICATIONREQUIREMENTS_c5bc674173d2 {
+  AUTHENTICATIONREQUIREMENTS_c5bc674173d2::from_int(255)
+}
+
+///|
+pub fn AUTHENTICATIONREQUIREMENTS_c5bc674173d2::mitm_protection_not_required() -> AUTHENTICATIONREQUIREMENTS_c5bc674173d2 {
+  AUTHENTICATIONREQUIREMENTS_c5bc674173d2::from_int(0)
+}
+
+///|
+pub fn AUTHENTICATIONREQUIREMENTS_c5bc674173d2::mitm_protection_not_required_bonding() -> AUTHENTICATIONREQUIREMENTS_c5bc674173d2 {
+  AUTHENTICATIONREQUIREMENTS_c5bc674173d2::from_int(2)
+}
+
+///|
+pub fn AUTHENTICATIONREQUIREMENTS_c5bc674173d2::mitm_protection_not_required_general_bonding() -> AUTHENTICATIONREQUIREMENTS_c5bc674173d2 {
+  AUTHENTICATIONREQUIREMENTS_c5bc674173d2::from_int(4)
+}
+
+///|
+pub fn AUTHENTICATIONREQUIREMENTS_c5bc674173d2::mitm_protection_required() -> AUTHENTICATIONREQUIREMENTS_c5bc674173d2 {
+  AUTHENTICATIONREQUIREMENTS_c5bc674173d2::from_int(1)
+}
+
+///|
+pub fn AUTHENTICATIONREQUIREMENTS_c5bc674173d2::mitm_protection_required_bonding() -> AUTHENTICATIONREQUIREMENTS_c5bc674173d2 {
+  AUTHENTICATIONREQUIREMENTS_c5bc674173d2::from_int(3)
+}
+
+///|
+pub fn AUTHENTICATIONREQUIREMENTS_c5bc674173d2::mitm_protection_required_general_bonding() -> AUTHENTICATIONREQUIREMENTS_c5bc674173d2 {
+  AUTHENTICATIONREQUIREMENTS_c5bc674173d2::from_int(5)
+}
+
+///|
+pub fn BLUETOOTHAUTHENTICATIONMETHOD_e291b250f7b2::legacy() -> BLUETOOTHAUTHENTICATIONMETHOD_e291b250f7b2 {
+  BLUETOOTHAUTHENTICATIONMETHOD_e291b250f7b2::from_int(1)
+}
+
+///|
+pub fn BLUETOOTHAUTHENTICATIONMETHOD_e291b250f7b2::numeric_comparison() -> BLUETOOTHAUTHENTICATIONMETHOD_e291b250f7b2 {
+  BLUETOOTHAUTHENTICATIONMETHOD_e291b250f7b2::from_int(3)
+}
+
+///|
+pub fn BLUETOOTHAUTHENTICATIONMETHOD_e291b250f7b2::oob() -> BLUETOOTHAUTHENTICATIONMETHOD_e291b250f7b2 {
+  BLUETOOTHAUTHENTICATIONMETHOD_e291b250f7b2::from_int(2)
+}
+
+///|
+pub fn BLUETOOTHAUTHENTICATIONMETHOD_e291b250f7b2::passkey() -> BLUETOOTHAUTHENTICATIONMETHOD_e291b250f7b2 {
+  BLUETOOTHAUTHENTICATIONMETHOD_e291b250f7b2::from_int(5)
+}
+
+///|
+pub fn BLUETOOTHAUTHENTICATIONMETHOD_e291b250f7b2::passkey_notification() -> BLUETOOTHAUTHENTICATIONMETHOD_e291b250f7b2 {
+  BLUETOOTHAUTHENTICATIONMETHOD_e291b250f7b2::from_int(4)
+}
+
+///|
+pub fn BLUETOOTHAUTHENTICATIONREQUIREMENTS_7ba4b7c62472::bluetooth_mitm_protection_not_defined() -> BLUETOOTHAUTHENTICATIONREQUIREMENTS_7ba4b7c62472 {
+  BLUETOOTHAUTHENTICATIONREQUIREMENTS_7ba4b7c62472::from_int(255)
+}
+
+///|
+pub fn BLUETOOTHAUTHENTICATIONREQUIREMENTS_7ba4b7c62472::bluetooth_mitm_protection_not_required() -> BLUETOOTHAUTHENTICATIONREQUIREMENTS_7ba4b7c62472 {
+  BLUETOOTHAUTHENTICATIONREQUIREMENTS_7ba4b7c62472::from_int(0)
+}
+
+///|
+pub fn BLUETOOTHAUTHENTICATIONREQUIREMENTS_7ba4b7c62472::bluetooth_mitm_protection_not_required_bonding() -> BLUETOOTHAUTHENTICATIONREQUIREMENTS_7ba4b7c62472 {
+  BLUETOOTHAUTHENTICATIONREQUIREMENTS_7ba4b7c62472::from_int(2)
+}
+
+///|
+pub fn BLUETOOTHAUTHENTICATIONREQUIREMENTS_7ba4b7c62472::bluetooth_mitm_protection_not_required_general_bonding() -> BLUETOOTHAUTHENTICATIONREQUIREMENTS_7ba4b7c62472 {
+  BLUETOOTHAUTHENTICATIONREQUIREMENTS_7ba4b7c62472::from_int(4)
+}
+
+///|
+pub fn BLUETOOTHAUTHENTICATIONREQUIREMENTS_7ba4b7c62472::bluetooth_mitm_protection_required() -> BLUETOOTHAUTHENTICATIONREQUIREMENTS_7ba4b7c62472 {
+  BLUETOOTHAUTHENTICATIONREQUIREMENTS_7ba4b7c62472::from_int(1)
+}
+
+///|
+pub fn BLUETOOTHAUTHENTICATIONREQUIREMENTS_7ba4b7c62472::bluetooth_mitm_protection_required_bonding() -> BLUETOOTHAUTHENTICATIONREQUIREMENTS_7ba4b7c62472 {
+  BLUETOOTHAUTHENTICATIONREQUIREMENTS_7ba4b7c62472::from_int(3)
+}
+
+///|
+pub fn BLUETOOTHAUTHENTICATIONREQUIREMENTS_7ba4b7c62472::bluetooth_mitm_protection_required_general_bonding() -> BLUETOOTHAUTHENTICATIONREQUIREMENTS_7ba4b7c62472 {
+  BLUETOOTHAUTHENTICATIONREQUIREMENTS_7ba4b7c62472::from_int(5)
+}
+
+///|
+pub fn BLUETOOTHIOCAPABILITY_78f198ba7df3::displayonly() -> BLUETOOTHIOCAPABILITY_78f198ba7df3 {
+  BLUETOOTHIOCAPABILITY_78f198ba7df3::from_int(0)
+}
+
+///|
+pub fn BLUETOOTHIOCAPABILITY_78f198ba7df3::displayyesno() -> BLUETOOTHIOCAPABILITY_78f198ba7df3 {
+  BLUETOOTHIOCAPABILITY_78f198ba7df3::from_int(1)
+}
+
+///|
+pub fn BLUETOOTHIOCAPABILITY_78f198ba7df3::keyboardonly() -> BLUETOOTHIOCAPABILITY_78f198ba7df3 {
+  BLUETOOTHIOCAPABILITY_78f198ba7df3::from_int(2)
+}
+
+///|
+pub fn BLUETOOTHIOCAPABILITY_78f198ba7df3::noinputnooutput() -> BLUETOOTHIOCAPABILITY_78f198ba7df3 {
+  BLUETOOTHIOCAPABILITY_78f198ba7df3::from_int(3)
+}
+
+///|
+pub fn BLUETOOTHIOCAPABILITY_78f198ba7df3::undefined() -> BLUETOOTHIOCAPABILITY_78f198ba7df3 {
+  BLUETOOTHIOCAPABILITY_78f198ba7df3::from_int(255)
+}
+
+///|
+pub fn BTHLEGATTDESCRIPTORTYPE_c038aeb93c6b::characteristic_aggregate_format() -> BTHLEGATTDESCRIPTORTYPE_c038aeb93c6b {
+  BTHLEGATTDESCRIPTORTYPE_c038aeb93c6b::from_int(5)
+}
+
+///|
+pub fn BTHLEGATTDESCRIPTORTYPE_c038aeb93c6b::characteristic_extended_properties() -> BTHLEGATTDESCRIPTORTYPE_c038aeb93c6b {
+  BTHLEGATTDESCRIPTORTYPE_c038aeb93c6b::from_int(0)
+}
+
+///|
+pub fn BTHLEGATTDESCRIPTORTYPE_c038aeb93c6b::characteristic_format() -> BTHLEGATTDESCRIPTORTYPE_c038aeb93c6b {
+  BTHLEGATTDESCRIPTORTYPE_c038aeb93c6b::from_int(4)
+}
+
+///|
+pub fn BTHLEGATTDESCRIPTORTYPE_c038aeb93c6b::characteristic_user_description() -> BTHLEGATTDESCRIPTORTYPE_c038aeb93c6b {
+  BTHLEGATTDESCRIPTORTYPE_c038aeb93c6b::from_int(1)
+}
+
+///|
+pub fn BTHLEGATTDESCRIPTORTYPE_c038aeb93c6b::client_characteristic_configuration() -> BTHLEGATTDESCRIPTORTYPE_c038aeb93c6b {
+  BTHLEGATTDESCRIPTORTYPE_c038aeb93c6b::from_int(2)
+}
+
+///|
+pub fn BTHLEGATTDESCRIPTORTYPE_c038aeb93c6b::custom_descriptor() -> BTHLEGATTDESCRIPTORTYPE_c038aeb93c6b {
+  BTHLEGATTDESCRIPTORTYPE_c038aeb93c6b::from_int(6)
+}
+
+///|
+pub fn BTHLEGATTDESCRIPTORTYPE_c038aeb93c6b::server_characteristic_configuration() -> BTHLEGATTDESCRIPTORTYPE_c038aeb93c6b {
+  BTHLEGATTDESCRIPTORTYPE_c038aeb93c6b::from_int(3)
+}
+
+///|
+pub fn BTHLEGATTEVENTTYPE_708b4fa27b96::characteristic_value_changed_event() -> BTHLEGATTEVENTTYPE_708b4fa27b96 {
+  BTHLEGATTEVENTTYPE_708b4fa27b96::from_int(0)
+}
+
+///|
+pub fn IOCAPABILITY_01369e69b65a::io_caps_display_only() -> IOCAPABILITY_01369e69b65a {
+  IOCAPABILITY_01369e69b65a::from_int(0)
+}
+
+///|
+pub fn IOCAPABILITY_01369e69b65a::io_caps_display_yes_no() -> IOCAPABILITY_01369e69b65a {
+  IOCAPABILITY_01369e69b65a::from_int(1)
+}
+
+///|
+pub fn IOCAPABILITY_01369e69b65a::io_caps_keyboard_only() -> IOCAPABILITY_01369e69b65a {
+  IOCAPABILITY_01369e69b65a::from_int(2)
+}
+
+///|
+pub fn IOCAPABILITY_01369e69b65a::io_caps_no_input_no_output() -> IOCAPABILITY_01369e69b65a {
+  IOCAPABILITY_01369e69b65a::from_int(3)
+}
+
+///|
+pub fn IOCAPABILITY_01369e69b65a::io_caps_undefined() -> IOCAPABILITY_01369e69b65a {
+  IOCAPABILITY_01369e69b65a::from_int(255)
+}
+
+///|
+pub fn NodeContainerType_02a5d9fff3af::alternative() -> NodeContainerType_02a5d9fff3af {
+  NodeContainerType_02a5d9fff3af::from_int(1)
+}
+
+///|
+pub fn NodeContainerType_02a5d9fff3af::sequence() -> NodeContainerType_02a5d9fff3af {
+  NodeContainerType_02a5d9fff3af::from_int(0)
+}
+
+///|
+pub fn SDPSPECIFICTYPE_64494be4d34a::sdp_st_int128() -> SDPSPECIFICTYPE_64494be4d34a {
+  SDPSPECIFICTYPE_64494be4d34a::from_int(1056)
+}
+
+///|
+pub fn SDPSPECIFICTYPE_64494be4d34a::sdp_st_int16() -> SDPSPECIFICTYPE_64494be4d34a {
+  SDPSPECIFICTYPE_64494be4d34a::from_int(288)
+}
+
+///|
+pub fn SDPSPECIFICTYPE_64494be4d34a::sdp_st_int32() -> SDPSPECIFICTYPE_64494be4d34a {
+  SDPSPECIFICTYPE_64494be4d34a::from_int(544)
+}
+
+///|
+pub fn SDPSPECIFICTYPE_64494be4d34a::sdp_st_int64() -> SDPSPECIFICTYPE_64494be4d34a {
+  SDPSPECIFICTYPE_64494be4d34a::from_int(800)
+}
+
+///|
+pub fn SDPSPECIFICTYPE_64494be4d34a::sdp_st_int8() -> SDPSPECIFICTYPE_64494be4d34a {
+  SDPSPECIFICTYPE_64494be4d34a::from_int(32)
+}
+
+///|
+pub fn SDPSPECIFICTYPE_64494be4d34a::sdp_st_none() -> SDPSPECIFICTYPE_64494be4d34a {
+  SDPSPECIFICTYPE_64494be4d34a::from_int(0)
+}
+
+///|
+pub fn SDPSPECIFICTYPE_64494be4d34a::sdp_st_uint128() -> SDPSPECIFICTYPE_64494be4d34a {
+  SDPSPECIFICTYPE_64494be4d34a::from_int(1040)
+}
+
+///|
+pub fn SDPSPECIFICTYPE_64494be4d34a::sdp_st_uint16() -> SDPSPECIFICTYPE_64494be4d34a {
+  SDPSPECIFICTYPE_64494be4d34a::from_int(272)
+}
+
+///|
+pub fn SDPSPECIFICTYPE_64494be4d34a::sdp_st_uint32() -> SDPSPECIFICTYPE_64494be4d34a {
+  SDPSPECIFICTYPE_64494be4d34a::from_int(528)
+}
+
+///|
+pub fn SDPSPECIFICTYPE_64494be4d34a::sdp_st_uint64() -> SDPSPECIFICTYPE_64494be4d34a {
+  SDPSPECIFICTYPE_64494be4d34a::from_int(784)
+}
+
+///|
+pub fn SDPSPECIFICTYPE_64494be4d34a::sdp_st_uint8() -> SDPSPECIFICTYPE_64494be4d34a {
+  SDPSPECIFICTYPE_64494be4d34a::from_int(16)
+}
+
+///|
+pub fn SDPSPECIFICTYPE_64494be4d34a::sdp_st_uuid128() -> SDPSPECIFICTYPE_64494be4d34a {
+  SDPSPECIFICTYPE_64494be4d34a::from_int(1072)
+}
+
+///|
+pub fn SDPSPECIFICTYPE_64494be4d34a::sdp_st_uuid16() -> SDPSPECIFICTYPE_64494be4d34a {
+  SDPSPECIFICTYPE_64494be4d34a::from_int(304)
+}
+
+///|
+pub fn SDPSPECIFICTYPE_64494be4d34a::sdp_st_uuid32() -> SDPSPECIFICTYPE_64494be4d34a {
+  SDPSPECIFICTYPE_64494be4d34a::from_int(544)
+}
+
+///|
+pub fn SDPTYPE_446d6d1b8cce::alternative() -> SDPTYPE_446d6d1b8cce {
+  SDPTYPE_446d6d1b8cce::from_int(7)
+}
+
+///|
+pub fn SDPTYPE_446d6d1b8cce::boolean() -> SDPTYPE_446d6d1b8cce {
+  SDPTYPE_446d6d1b8cce::from_int(5)
+}
+
+///|
+pub fn SDPTYPE_446d6d1b8cce::container() -> SDPTYPE_446d6d1b8cce {
+  SDPTYPE_446d6d1b8cce::from_int(32)
+}
+
+///|
+pub fn SDPTYPE_446d6d1b8cce::int_() -> SDPTYPE_446d6d1b8cce {
+  SDPTYPE_446d6d1b8cce::from_int(2)
+}
+
+///|
+pub fn SDPTYPE_446d6d1b8cce::nil() -> SDPTYPE_446d6d1b8cce {
+  SDPTYPE_446d6d1b8cce::from_int(0)
+}
+
+///|
+pub fn SDPTYPE_446d6d1b8cce::sequence() -> SDPTYPE_446d6d1b8cce {
+  SDPTYPE_446d6d1b8cce::from_int(6)
+}
+
+///|
+pub fn SDPTYPE_446d6d1b8cce::string() -> SDPTYPE_446d6d1b8cce {
+  SDPTYPE_446d6d1b8cce::from_int(4)
+}
+
+///|
+pub fn SDPTYPE_446d6d1b8cce::uint() -> SDPTYPE_446d6d1b8cce {
+  SDPTYPE_446d6d1b8cce::from_int(1)
+}
+
+///|
+pub fn SDPTYPE_446d6d1b8cce::url() -> SDPTYPE_446d6d1b8cce {
+  SDPTYPE_446d6d1b8cce::from_int(8)
+}
+
+///|
+pub fn SDPTYPE_446d6d1b8cce::uuid() -> SDPTYPE_446d6d1b8cce {
+  SDPTYPE_446d6d1b8cce::from_int(3)
+}

@@ -1,0 +1,59 @@
+///|
+pub fn FLTPOSTOPCALLBACKSTATUS_79d77e62f8e1::flt_postop_disallow_fsfilter_io() -> FLTPOSTOPCALLBACKSTATUS_79d77e62f8e1 {
+  FLTPOSTOPCALLBACKSTATUS_79d77e62f8e1::from_int(2)
+}
+
+///|
+pub fn FLTPOSTOPCALLBACKSTATUS_79d77e62f8e1::flt_postop_finished_processing() -> FLTPOSTOPCALLBACKSTATUS_79d77e62f8e1 {
+  FLTPOSTOPCALLBACKSTATUS_79d77e62f8e1::from_int(0)
+}
+
+///|
+pub fn FLTPOSTOPCALLBACKSTATUS_79d77e62f8e1::flt_postop_more_processing_required() -> FLTPOSTOPCALLBACKSTATUS_79d77e62f8e1 {
+  FLTPOSTOPCALLBACKSTATUS_79d77e62f8e1::from_int(1)
+}
+
+///|
+pub fn FLTPREOPCALLBACKSTATUS_0dd0c6d5c390::flt_preop_complete() -> FLTPREOPCALLBACKSTATUS_0dd0c6d5c390 {
+  FLTPREOPCALLBACKSTATUS_0dd0c6d5c390::from_int(4)
+}
+
+///|
+pub fn FLTPREOPCALLBACKSTATUS_0dd0c6d5c390::flt_preop_disallow_fastio() -> FLTPREOPCALLBACKSTATUS_0dd0c6d5c390 {
+  FLTPREOPCALLBACKSTATUS_0dd0c6d5c390::from_int(3)
+}
+
+///|
+pub fn FLTPREOPCALLBACKSTATUS_0dd0c6d5c390::flt_preop_disallow_fsfilter_io() -> FLTPREOPCALLBACKSTATUS_0dd0c6d5c390 {
+  FLTPREOPCALLBACKSTATUS_0dd0c6d5c390::from_int(6)
+}
+
+///|
+pub fn FLTPREOPCALLBACKSTATUS_0dd0c6d5c390::flt_preop_pending() -> FLTPREOPCALLBACKSTATUS_0dd0c6d5c390 {
+  FLTPREOPCALLBACKSTATUS_0dd0c6d5c390::from_int(2)
+}
+
+///|
+pub fn FLTPREOPCALLBACKSTATUS_0dd0c6d5c390::flt_preop_success_no_callback() -> FLTPREOPCALLBACKSTATUS_0dd0c6d5c390 {
+  FLTPREOPCALLBACKSTATUS_0dd0c6d5c390::from_int(1)
+}
+
+///|
+pub fn FLTPREOPCALLBACKSTATUS_0dd0c6d5c390::flt_preop_success_with_callback() -> FLTPREOPCALLBACKSTATUS_0dd0c6d5c390 {
+  FLTPREOPCALLBACKSTATUS_0dd0c6d5c390::from_int(0)
+}
+
+///|
+pub fn FLTPREOPCALLBACKSTATUS_0dd0c6d5c390::flt_preop_synchronize() -> FLTPREOPCALLBACKSTATUS_0dd0c6d5c390 {
+  FLTPREOPCALLBACKSTATUS_0dd0c6d5c390::from_int(5)
+}
+
+///|
+pub fn FLTSETCONTEXTOPERATION_c0b1f29d6a68::flt_set_context_keep_if_exists() -> FLTSETCONTEXTOPERATION_c0b1f29d6a68 {
+  FLTSETCONTEXTOPERATION_c0b1f29d6a68::from_int(1)
+}
+
+///|
+pub fn FLTSETCONTEXTOPERATION_c0b1f29d6a68::flt_set_context_replace_if_exists() -> FLTSETCONTEXTOPERATION_c0b1f29d6a68 {
+  FLTSETCONTEXTOPERATION_c0b1f29d6a68::from_int(0)
+}

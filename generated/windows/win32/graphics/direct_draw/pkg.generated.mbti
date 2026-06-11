@@ -1,0 +1,2829 @@
+// Generated using `moon info`, DON'T EDIT IT
+package "moonbit-community/win32api/windows/win32/graphics/direct_draw"
+
+import {
+  "moonbit-community/win32api/runtime/core",
+  "moonbit-community/win32api/scc/378ad7ed7d194da8",
+}
+
+// Values
+pub let accessrect_broken : Int
+
+pub let accessrect_notholdingwin16_lock : Int
+
+pub let accessrect_vramstyle : Int
+
+pub let cchdevicename : UInt
+
+pub let d3_dfmt_internal_d15_s1 : UInt
+
+pub let d3_dfmt_internal_d24_s8 : UInt
+
+pub let d3_dfmt_internal_d24_x8 : UInt
+
+pub let d3_dfmt_internal_d32 : UInt
+
+pub let d3_dfmt_internal_s1_d15 : UInt
+
+pub let d3_dfmt_internal_s8_d24 : UInt
+
+pub let d3_dfmt_internal_x8_d24 : UInt
+
+pub let d3_dformat_memberofgroup_argb : Int
+
+pub let d3_dformat_op_3_dacceleration : Int
+
+pub let d3_dformat_op_autogenmipmap : Int
+
+pub let d3_dformat_op_bumpmap : Int
+
+pub let d3_dformat_op_convert_to_argb : Int
+
+pub let d3_dformat_op_cubetexture : Int
+
+pub let d3_dformat_op_displaymode : Int
+
+pub let d3_dformat_op_dmap : Int
+
+pub let d3_dformat_op_noalphablend : Int
+
+pub let d3_dformat_op_nofilter : Int
+
+pub let d3_dformat_op_notexcoordwrapnormip : Int
+
+pub let d3_dformat_op_offscreen_rendertarget : Int
+
+pub let d3_dformat_op_offscreenplain : Int
+
+pub let d3_dformat_op_pixelsize : Int
+
+pub let d3_dformat_op_same_format_rendertarget : Int
+
+pub let d3_dformat_op_same_format_up_to_alpha_rendertarget : Int
+
+pub let d3_dformat_op_srgbread : Int
+
+pub let d3_dformat_op_srgbwrite : Int
+
+pub let d3_dformat_op_texture : Int
+
+pub let d3_dformat_op_vertextexture : Int
+
+pub let d3_dformat_op_volumetexture : Int
+
+pub let d3_dformat_op_zstencil : Int
+
+pub let d3_dformat_op_zstencil_with_arbitrary_color_depth : Int
+
+pub let dcicommand : UInt
+
+pub let dd_hal_version : UInt
+
+pub let dd_runtime_version : Int
+
+pub let dd_version : Int
+
+pub let ddablt_srcoverdest : Int
+
+pub let ddal_implicit : Int
+
+pub let ddbd_1 : Int
+
+pub let ddbd_16 : Int
+
+pub let ddbd_2 : Int
+
+pub let ddbd_24 : Int
+
+pub let ddbd_32 : Int
+
+pub let ddbd_4 : Int
+
+pub let ddbd_8 : Int
+
+pub let ddblt_aflags : Int
+
+pub let ddblt_alphadest : Int
+
+pub let ddblt_alphadestconstoverride : Int
+
+pub let ddblt_alphadestneg : Int
+
+pub let ddblt_alphadestsurfaceoverride : Int
+
+pub let ddblt_alphaedgeblend : Int
+
+pub let ddblt_alphasrc : Int
+
+pub let ddblt_alphasrcconstoverride : Int
+
+pub let ddblt_alphasrcneg : Int
+
+pub let ddblt_alphasrcsurfaceoverride : Int
+
+pub let ddblt_async : Int
+
+pub let ddblt_colorfill : Int
+
+pub let ddblt_ddfx : Int
+
+pub let ddblt_ddrops : Int
+
+pub let ddblt_depthfill : Int
+
+pub let ddblt_donotwait : Int
+
+pub let ddblt_extended_flags : Int
+
+pub let ddblt_extended_linear_content : Int
+
+pub let ddblt_keydest : Int
+
+pub let ddblt_keydestoverride : Int
+
+pub let ddblt_keysrc : Int
+
+pub let ddblt_keysrcoverride : Int
+
+pub let ddblt_last_presentation : Int
+
+pub let ddblt_presentation : Int
+
+pub let ddblt_rop : Int
+
+pub let ddblt_rotationangle : Int
+
+pub let ddblt_wait : Int
+
+pub let ddblt_zbuffer : Int
+
+pub let ddblt_zbufferdestconstoverride : Int
+
+pub let ddblt_zbufferdestoverride : Int
+
+pub let ddblt_zbuffersrcconstoverride : Int
+
+pub let ddblt_zbuffersrcoverride : Int
+
+pub let ddbltfast_destcolorkey : UInt
+
+pub let ddbltfast_donotwait : UInt
+
+pub let ddbltfast_nocolorkey : UInt
+
+pub let ddbltfast_srccolorkey : UInt
+
+pub let ddbltfast_wait : UInt
+
+pub let ddbltfx_arithstretchy : Int
+
+pub let ddbltfx_mirrorleftright : Int
+
+pub let ddbltfx_mirrorupdown : Int
+
+pub let ddbltfx_notearing : Int
+
+pub let ddbltfx_rotate180 : Int
+
+pub let ddbltfx_rotate270 : Int
+
+pub let ddbltfx_rotate90 : Int
+
+pub let ddbltfx_zbufferbasedest : Int
+
+pub let ddbltfx_zbufferrange : Int
+
+pub let ddcaps2_autoflipoverlay : Int
+
+pub let ddcaps2_canautogenmipmap : Int
+
+pub let ddcaps2_canbobhardware : Int
+
+pub let ddcaps2_canbobinterleaved : Int
+
+pub let ddcaps2_canbobnoninterleaved : Int
+
+pub let ddcaps2_cancalibrategamma : Int
+
+pub let ddcaps2_candropz16_bit : Int
+
+pub let ddcaps2_canflipoddeven : Int
+
+pub let ddcaps2_canmanageresource : Int
+
+pub let ddcaps2_canmanagetexture : Int
+
+pub let ddcaps2_canrenderwindowed : Int
+
+pub let ddcaps2_canshareresource : Int
+
+pub let ddcaps2_certified : Int
+
+pub let ddcaps2_colorcontroloverlay : Int
+
+pub let ddcaps2_colorcontrolprimary : Int
+
+pub let ddcaps2_copyfourcc : Int
+
+pub let ddcaps2_dynamictextures : Int
+
+pub let ddcaps2_flipinterval : Int
+
+pub let ddcaps2_flipnovsync : Int
+
+pub let ddcaps2_no2_dduring3_dscene : Int
+
+pub let ddcaps2_nonlocalvidmem : Int
+
+pub let ddcaps2_nonlocalvidmemcaps : Int
+
+pub let ddcaps2_nopagelockrequired : Int
+
+pub let ddcaps2_primarygamma : Int
+
+pub let ddcaps2_reserved1 : Int
+
+pub let ddcaps2_stereo : Int
+
+pub let ddcaps2_systononlocal_as_systolocal : Int
+
+pub let ddcaps2_texmaninnonlocalvidmem : Int
+
+pub let ddcaps2_videoport : Int
+
+pub let ddcaps2_widesurfaces : Int
+
+pub let ddcaps_3_d : Int
+
+pub let ddcaps_alignboundarydest : Int
+
+pub let ddcaps_alignboundarysrc : Int
+
+pub let ddcaps_alignsizedest : Int
+
+pub let ddcaps_alignsizesrc : Int
+
+pub let ddcaps_alignstride : Int
+
+pub let ddcaps_alpha : Int
+
+pub let ddcaps_bankswitched : Int
+
+pub let ddcaps_blt : Int
+
+pub let ddcaps_bltcolorfill : Int
+
+pub let ddcaps_bltdepthfill : Int
+
+pub let ddcaps_bltfourcc : Int
+
+pub let ddcaps_bltqueue : Int
+
+pub let ddcaps_bltstretch : Int
+
+pub let ddcaps_canbltsysmem : Int
+
+pub let ddcaps_canclip : Int
+
+pub let ddcaps_canclipstretched : Int
+
+pub let ddcaps_colorkey : Int
+
+pub let ddcaps_colorkeyhwassist : Int
+
+pub let ddcaps_gdi : Int
+
+pub let ddcaps_nohardware : Int
+
+pub let ddcaps_overlay : Int
+
+pub let ddcaps_overlaycantclip : Int
+
+pub let ddcaps_overlayfourcc : Int
+
+pub let ddcaps_overlaystretch : Int
+
+pub let ddcaps_palette : Int
+
+pub let ddcaps_palettevsync : Int
+
+pub let ddcaps_readscanline : Int
+
+pub let ddcaps_reserved1 : Int
+
+pub let ddcaps_vbi : Int
+
+pub let ddcaps_zblts : Int
+
+pub let ddcaps_zoverlays : Int
+
+pub let ddckey_colorspace : Int
+
+pub let ddckey_destblt : Int
+
+pub let ddckey_destoverlay : Int
+
+pub let ddckey_srcblt : Int
+
+pub let ddckey_srcoverlay : Int
+
+pub let ddckeycaps_destblt : Int
+
+pub let ddckeycaps_destbltclrspace : Int
+
+pub let ddckeycaps_destbltclrspaceyuv : Int
+
+pub let ddckeycaps_destbltyuv : Int
+
+pub let ddckeycaps_destoverlay : Int
+
+pub let ddckeycaps_destoverlayclrspace : Int
+
+pub let ddckeycaps_destoverlayclrspaceyuv : Int
+
+pub let ddckeycaps_destoverlayoneactive : Int
+
+pub let ddckeycaps_destoverlayyuv : Int
+
+pub let ddckeycaps_nocostoverlay : Int
+
+pub let ddckeycaps_srcblt : Int
+
+pub let ddckeycaps_srcbltclrspace : Int
+
+pub let ddckeycaps_srcbltclrspaceyuv : Int
+
+pub let ddckeycaps_srcbltyuv : Int
+
+pub let ddckeycaps_srcoverlay : Int
+
+pub let ddckeycaps_srcoverlayclrspace : Int
+
+pub let ddckeycaps_srcoverlayclrspaceyuv : Int
+
+pub let ddckeycaps_srcoverlayoneactive : Int
+
+pub let ddckeycaps_srcoverlayyuv : Int
+
+pub let ddcolor_brightness : Int
+
+pub let ddcolor_colorenable : Int
+
+pub let ddcolor_contrast : Int
+
+pub let ddcolor_gamma : Int
+
+pub let ddcolor_hue : Int
+
+pub let ddcolor_saturation : Int
+
+pub let ddcolor_sharpness : Int
+
+pub let ddcreate_emulationonly : Int
+
+pub let ddcreate_hardwareonly : Int
+
+pub let ddcreatedriverobject : UInt
+
+pub let ddedm_refreshrates : Int
+
+pub let ddedm_standardvgamodes : Int
+
+pub let ddem_modefailed : Int
+
+pub let ddem_modepassed : Int
+
+pub let ddenum_attachedsecondarydevices : Int
+
+pub let ddenum_detachedsecondarydevices : Int
+
+pub let ddenum_nondisplaydevices : Int
+
+pub let ddenumoverlayz_backtofront : Int
+
+pub let ddenumoverlayz_fronttoback : Int
+
+pub let ddenumret_cancel : UInt
+
+pub let ddenumret_ok : UInt
+
+pub let ddenumsurfaces_all : Int
+
+pub let ddenumsurfaces_canbecreated : Int
+
+pub let ddenumsurfaces_doesexist : Int
+
+pub let ddenumsurfaces_match : Int
+
+pub let ddenumsurfaces_nomatch : Int
+
+pub let dderr_notinitialized : Int
+
+pub let ddflip_donotwait : Int
+
+pub let ddflip_even : Int
+
+pub let ddflip_interval2 : Int
+
+pub let ddflip_interval3 : Int
+
+pub let ddflip_interval4 : Int
+
+pub let ddflip_novsync : Int
+
+pub let ddflip_odd : Int
+
+pub let ddflip_stereo : Int
+
+pub let ddflip_wait : Int
+
+pub let ddfxalphacaps_bltalphaedgeblend : Int
+
+pub let ddfxalphacaps_bltalphapixels : Int
+
+pub let ddfxalphacaps_bltalphapixelsneg : Int
+
+pub let ddfxalphacaps_bltalphasurfaces : Int
+
+pub let ddfxalphacaps_bltalphasurfacesneg : Int
+
+pub let ddfxalphacaps_overlayalphaedgeblend : Int
+
+pub let ddfxalphacaps_overlayalphapixels : Int
+
+pub let ddfxalphacaps_overlayalphapixelsneg : Int
+
+pub let ddfxalphacaps_overlayalphasurfaces : Int
+
+pub let ddfxalphacaps_overlayalphasurfacesneg : Int
+
+pub let ddfxcaps_bltalpha : Int
+
+pub let ddfxcaps_bltarithstretchy : Int
+
+pub let ddfxcaps_bltarithstretchyn : Int
+
+pub let ddfxcaps_bltfilter : Int
+
+pub let ddfxcaps_bltmirrorleftright : Int
+
+pub let ddfxcaps_bltmirrorupdown : Int
+
+pub let ddfxcaps_bltrotation : Int
+
+pub let ddfxcaps_bltrotation90 : Int
+
+pub let ddfxcaps_bltshrinkx : Int
+
+pub let ddfxcaps_bltshrinkxn : Int
+
+pub let ddfxcaps_bltshrinky : Int
+
+pub let ddfxcaps_bltshrinkyn : Int
+
+pub let ddfxcaps_bltstretchx : Int
+
+pub let ddfxcaps_bltstretchxn : Int
+
+pub let ddfxcaps_bltstretchy : Int
+
+pub let ddfxcaps_bltstretchyn : Int
+
+pub let ddfxcaps_overlayalpha : Int
+
+pub let ddfxcaps_overlayarithstretchy : Int
+
+pub let ddfxcaps_overlayarithstretchyn : Int
+
+pub let ddfxcaps_overlaydeinterlace : Int
+
+pub let ddfxcaps_overlayfilter : Int
+
+pub let ddfxcaps_overlaymirrorleftright : Int
+
+pub let ddfxcaps_overlaymirrorupdown : Int
+
+pub let ddfxcaps_overlayshrinkx : Int
+
+pub let ddfxcaps_overlayshrinkxn : Int
+
+pub let ddfxcaps_overlayshrinky : Int
+
+pub let ddfxcaps_overlayshrinkyn : Int
+
+pub let ddfxcaps_overlaystretchx : Int
+
+pub let ddfxcaps_overlaystretchxn : Int
+
+pub let ddfxcaps_overlaystretchy : Int
+
+pub let ddfxcaps_overlaystretchyn : Int
+
+pub let ddgbs_canblt : Int
+
+pub let ddgbs_isbltdone : Int
+
+pub let ddgdi_gethostidentifier : Int
+
+pub let ddget32_bitdrivername : UInt
+
+pub let ddgfs_canflip : Int
+
+pub let ddgfs_isflipdone : Int
+
+pub let ddhal_app_dllname : String
+
+pub let ddhal_cb32_cancreatesurface : Int
+
+pub let ddhal_cb32_createpalette : Int
+
+pub let ddhal_cb32_createsurface : Int
+
+pub let ddhal_cb32_destroydriver : Int
+
+pub let ddhal_cb32_fliptogdisurface : Int
+
+pub let ddhal_cb32_getscanline : Int
+
+pub let ddhal_cb32_mapmemory : Int
+
+pub let ddhal_cb32_setcolorkey : Int
+
+pub let ddhal_cb32_setexclusivemode : Int
+
+pub let ddhal_cb32_setmode : Int
+
+pub let ddhal_cb32_waitforverticalblank : Int
+
+pub let ddhal_color_colorcontrol : Int
+
+pub let ddhal_createsurfaceex_swaphandles : Int
+
+pub let ddhal_d3_dbufcb32_cancreated3_dbuf : Int
+
+pub let ddhal_d3_dbufcb32_created3_dbuf : Int
+
+pub let ddhal_d3_dbufcb32_destroyd3_dbuf : Int
+
+pub let ddhal_d3_dbufcb32_lockd3_dbuf : Int
+
+pub let ddhal_d3_dbufcb32_unlockd3_dbuf : Int
+
+pub let ddhal_driver_dllname : String
+
+pub let ddhal_driver_handled : Int
+
+pub let ddhal_driver_nockeyhw : Int
+
+pub let ddhal_driver_nothandled : Int
+
+pub let ddhal_exebufcb32_cancreateexebuf : Int
+
+pub let ddhal_exebufcb32_createexebuf : Int
+
+pub let ddhal_exebufcb32_destroyexebuf : Int
+
+pub let ddhal_exebufcb32_lockexebuf : Int
+
+pub let ddhal_exebufcb32_unlockexebuf : Int
+
+pub let ddhal_kernel_syncsurfacedata : Int
+
+pub let ddhal_kernel_syncvideoportdata : Int
+
+pub let ddhal_misc2_cb32_alphablt : Int
+
+pub let ddhal_misc2_cb32_createsurfaceex : Int
+
+pub let ddhal_misc2_cb32_destroyddlocal : Int
+
+pub let ddhal_misc2_cb32_getdriverstate : Int
+
+pub let ddhal_misccb32_getavaildrivermemory : Int
+
+pub let ddhal_misccb32_getheapalignment : Int
+
+pub let ddhal_misccb32_getsysmembltstatus : Int
+
+pub let ddhal_misccb32_updatenonlocalheap : Int
+
+pub let ddhal_mocomp32_beginframe : UInt
+
+pub let ddhal_mocomp32_create : UInt
+
+pub let ddhal_mocomp32_destroy : UInt
+
+pub let ddhal_mocomp32_endframe : UInt
+
+pub let ddhal_mocomp32_getcompbuffinfo : UInt
+
+pub let ddhal_mocomp32_getformats : UInt
+
+pub let ddhal_mocomp32_getguids : UInt
+
+pub let ddhal_mocomp32_getinternalinfo : UInt
+
+pub let ddhal_mocomp32_querystatus : UInt
+
+pub let ddhal_mocomp32_render : UInt
+
+pub let ddhal_ntcb32_fliptogdisurface : Int
+
+pub let ddhal_ntcb32_freedrivermemory : Int
+
+pub let ddhal_ntcb32_setexclusivemode : Int
+
+pub let ddhal_palcb32_destroypalette : Int
+
+pub let ddhal_palcb32_setentries : Int
+
+pub let ddhal_pleasealloc_blocksize : Int
+
+pub let ddhal_pleasealloc_linearsize : Int
+
+pub let ddhal_pleasealloc_usermem : Int
+
+pub let ddhal_privatecap_atomicsurfacecreation : Int
+
+pub let ddhal_privatecap_notifyprimarycreation : Int
+
+pub let ddhal_privatecap_reserved1 : Int
+
+pub let ddhal_surfcb32_addattachedsurface : Int
+
+pub let ddhal_surfcb32_blt : Int
+
+pub let ddhal_surfcb32_destroysurface : Int
+
+pub let ddhal_surfcb32_flip : Int
+
+pub let ddhal_surfcb32_getbltstatus : Int
+
+pub let ddhal_surfcb32_getflipstatus : Int
+
+pub let ddhal_surfcb32_lock : Int
+
+pub let ddhal_surfcb32_reserved4 : Int
+
+pub let ddhal_surfcb32_setcliplist : Int
+
+pub let ddhal_surfcb32_setcolorkey : Int
+
+pub let ddhal_surfcb32_setoverlayposition : Int
+
+pub let ddhal_surfcb32_setpalette : Int
+
+pub let ddhal_surfcb32_unlock : Int
+
+pub let ddhal_surfcb32_updateoverlay : Int
+
+pub let ddhal_vport32_cancreatevideoport : Int
+
+pub let ddhal_vport32_colorcontrol : Int
+
+pub let ddhal_vport32_createvideoport : Int
+
+pub let ddhal_vport32_destroy : Int
+
+pub let ddhal_vport32_flip : Int
+
+pub let ddhal_vport32_getautoflipsurf : Int
+
+pub let ddhal_vport32_getbandwidth : Int
+
+pub let ddhal_vport32_getconnect : Int
+
+pub let ddhal_vport32_getfield : Int
+
+pub let ddhal_vport32_getflipstatus : Int
+
+pub let ddhal_vport32_getinputformats : Int
+
+pub let ddhal_vport32_getline : Int
+
+pub let ddhal_vport32_getoutputformats : Int
+
+pub let ddhal_vport32_getsignalstatus : Int
+
+pub let ddhal_vport32_update : Int
+
+pub let ddhal_vport32_waitforsync : Int
+
+pub let ddhalinfo_getdriverinfo2 : Int
+
+pub let ddhalinfo_getdriverinfoset : Int
+
+pub let ddhalinfo_isprimarydisplay : Int
+
+pub let ddhalinfo_modexillegal : Int
+
+pub let ddirq_busmaster : Int
+
+pub let ddirq_display_vsync : Int
+
+pub let ddirq_reserved1 : Int
+
+pub let ddirq_vport0_line : Int
+
+pub let ddirq_vport0_vsync : Int
+
+pub let ddirq_vport1_line : Int
+
+pub let ddirq_vport1_vsync : Int
+
+pub let ddirq_vport2_line : Int
+
+pub let ddirq_vport2_vsync : Int
+
+pub let ddirq_vport3_line : Int
+
+pub let ddirq_vport3_vsync : Int
+
+pub let ddirq_vport4_line : Int
+
+pub let ddirq_vport4_vsync : Int
+
+pub let ddirq_vport5_line : Int
+
+pub let ddirq_vport5_vsync : Int
+
+pub let ddirq_vport6_line : Int
+
+pub let ddirq_vport6_vsync : Int
+
+pub let ddirq_vport7_line : Int
+
+pub let ddirq_vport7_vsync : Int
+
+pub let ddirq_vport8_line : Int
+
+pub let ddirq_vport8_vsync : Int
+
+pub let ddirq_vport9_line : Int
+
+pub let ddirq_vport9_vsync : Int
+
+pub let ddkernelcaps_autoflip : Int
+
+pub let ddkernelcaps_capture_inverted : Int
+
+pub let ddkernelcaps_capture_nonlocalvidmem : Int
+
+pub let ddkernelcaps_capture_sysmem : Int
+
+pub let ddkernelcaps_fieldpolarity : Int
+
+pub let ddkernelcaps_flipoverlay : Int
+
+pub let ddkernelcaps_flipvideoport : Int
+
+pub let ddkernelcaps_lock : Int
+
+pub let ddkernelcaps_setstate : Int
+
+pub let ddkernelcaps_skipfields : Int
+
+pub let ddlock_discardcontents : Int
+
+pub let ddlock_donotwait : Int
+
+pub let ddlock_event : Int
+
+pub let ddlock_hasvolumetextureboxrect : Int
+
+pub let ddlock_nodirtyupdate : Int
+
+pub let ddlock_nooverwrite : Int
+
+pub let ddlock_nosyslock : Int
+
+pub let ddlock_oktoswap : Int
+
+pub let ddlock_readonly : Int
+
+pub let ddlock_surfacememoryptr : Int
+
+pub let ddlock_wait : Int
+
+pub let ddlock_writeonly : Int
+
+pub let ddmcquery_read : UInt
+
+pub let ddmodeinfo_maxrefresh : UInt
+
+pub let ddmodeinfo_modex : UInt
+
+pub let ddmodeinfo_palettized : UInt
+
+pub let ddmodeinfo_standardvga : UInt
+
+pub let ddmodeinfo_stereo : UInt
+
+pub let ddmodeinfo_unsupported : UInt
+
+pub let ddnewcallbackfns : UInt
+
+pub let ddosd_all : Int
+
+pub let ddosd_compression_ratio : Int
+
+pub let ddosd_guid : Int
+
+pub let ddosd_oscaps : Int
+
+pub let ddosd_scaps : Int
+
+pub let ddosdcaps_monolithicmipmap : Int
+
+pub let ddosdcaps_optcompressed : Int
+
+pub let ddosdcaps_optreordered : Int
+
+pub let ddosdcaps_validoscaps : Int
+
+pub let ddosdcaps_validscaps : Int
+
+pub let ddover_adddirtyrect : Int
+
+pub let ddover_alphadest : Int
+
+pub let ddover_alphadestconstoverride : Int
+
+pub let ddover_alphadestneg : Int
+
+pub let ddover_alphadestsurfaceoverride : Int
+
+pub let ddover_alphaedgeblend : Int
+
+pub let ddover_alphasrc : Int
+
+pub let ddover_alphasrcconstoverride : Int
+
+pub let ddover_alphasrcneg : Int
+
+pub let ddover_alphasrcsurfaceoverride : Int
+
+pub let ddover_argbscalefactors : Int
+
+pub let ddover_autoflip : Int
+
+pub let ddover_bob : Int
+
+pub let ddover_bobhardware : Int
+
+pub let ddover_ddfx : Int
+
+pub let ddover_degradeargbscaling : Int
+
+pub let ddover_hide : Int
+
+pub let ddover_interleaved : Int
+
+pub let ddover_keydest : Int
+
+pub let ddover_keydestoverride : Int
+
+pub let ddover_keysrc : Int
+
+pub let ddover_keysrcoverride : Int
+
+pub let ddover_overridebobweave : Int
+
+pub let ddover_refreshall : Int
+
+pub let ddover_refreshdirtyrects : Int
+
+pub let ddover_show : Int
+
+pub let ddoverfx_arithstretchy : Int
+
+pub let ddoverfx_deinterlace : Int
+
+pub let ddoverfx_mirrorleftright : Int
+
+pub let ddoverfx_mirrorupdown : Int
+
+pub let ddoverz_insertinbackof : Int
+
+pub let ddoverz_insertinfrontof : Int
+
+pub let ddoverz_movebackward : Int
+
+pub let ddoverz_moveforward : Int
+
+pub let ddoverz_sendtoback : Int
+
+pub let ddoverz_sendtofront : Int
+
+pub let ddpcaps_1_bit : Int
+
+pub let ddpcaps_2_bit : Int
+
+pub let ddpcaps_4_bit : Int
+
+pub let ddpcaps_8_bit : Int
+
+pub let ddpcaps_8_bitentries : Int
+
+pub let ddpcaps_allow256 : Int
+
+pub let ddpcaps_alpha : Int
+
+pub let ddpcaps_initialize : Int
+
+pub let ddpcaps_primarysurface : Int
+
+pub let ddpcaps_primarysurfaceleft : Int
+
+pub let ddpcaps_vsync : Int
+
+pub let ddpf_alpha : Int
+
+pub let ddpf_alphapixels : Int
+
+pub let ddpf_alphapremult : Int
+
+pub let ddpf_bumpdudv : Int
+
+pub let ddpf_bumpluminance : Int
+
+pub let ddpf_compressed : Int
+
+pub let ddpf_d3_dformat : Int
+
+pub let ddpf_fourcc : Int
+
+pub let ddpf_luminance : Int
+
+pub let ddpf_novel_texture_format : Int
+
+pub let ddpf_paletteindexed1 : Int
+
+pub let ddpf_paletteindexed2 : Int
+
+pub let ddpf_paletteindexed4 : Int
+
+pub let ddpf_paletteindexed8 : Int
+
+pub let ddpf_paletteindexedto8 : Int
+
+pub let ddpf_rgb : Int
+
+pub let ddpf_rgbtoyuv : Int
+
+pub let ddpf_stencilbuffer : Int
+
+pub let ddpf_yuv : Int
+
+pub let ddpf_zbuffer : Int
+
+pub let ddpf_zpixels : Int
+
+pub let ddrawi_attachedtodesktop : Int
+
+pub let ddrawi_badpdev : Int
+
+pub let ddrawi_changingmode : Int
+
+pub let ddrawi_ddrawdatanotfetched : Int
+
+pub let ddrawi_displaydrv : Int
+
+pub let ddrawi_driverinfo2 : Int
+
+pub let ddrawi_emulationinitialized : Int
+
+pub let ddrawi_extendedalignment : Int
+
+pub let ddrawi_flippedtogdi : Int
+
+pub let ddrawi_fullscreen : Int
+
+pub let ddrawi_gdidrv : Int
+
+pub let ddrawi_getcolor : UInt
+
+pub let ddrawi_hasckeydestoverlay : Int
+
+pub let ddrawi_hasckeysrcoverlay : Int
+
+pub let ddrawi_hasgdipalette : Int
+
+pub let ddrawi_hasgdipalette_exclusive : Int
+
+pub let ddrawi_modechanged : Int
+
+pub let ddrawi_modex : Int
+
+pub let ddrawi_modexillegal : Int
+
+pub let ddrawi_needswin16_forvramlock : Int
+
+pub let ddrawi_noemulation : Int
+
+pub let ddrawi_nohardware : Int
+
+pub let ddrawi_paletteinit : Int
+
+pub let ddrawi_pdevicevrambitcleared : Int
+
+pub let ddrawi_secondarydriverloaded : Int
+
+pub let ddrawi_setcolor : UInt
+
+pub let ddrawi_standardvga : Int
+
+pub let ddrawi_testingmodes : Int
+
+pub let ddrawi_umodeloaded : Int
+
+pub let ddrawi_virtualdesktop : Int
+
+pub let ddrawi_vportgetcolor : UInt
+
+pub let ddrawi_vportsetcolor : UInt
+
+pub let ddrawi_vportstart : UInt
+
+pub let ddrawi_vportstop : UInt
+
+pub let ddrawi_vportupdate : UInt
+
+pub let ddrawi_xxxxxxxxx1 : Int
+
+pub let ddrawi_xxxxxxxxx2 : Int
+
+pub let ddrawiclip_inmasterspritelist : Int
+
+pub let ddrawiclip_isinitialized : Int
+
+pub let ddrawiclip_watchwindow : Int
+
+pub let ddrawilcl_activeno : Int
+
+pub let ddrawilcl_activeyes : Int
+
+pub let ddrawilcl_allowmodex : Int
+
+pub let ddrawilcl_attemptedd3_dcontext : Int
+
+pub let ddrawilcl_createdwindow : Int
+
+pub let ddrawilcl_cursorclipped : Int
+
+pub let ddrawilcl_directdraw7 : Int
+
+pub let ddrawilcl_directdraw8 : Int
+
+pub let ddrawilcl_dirtydc : Int
+
+pub let ddrawilcl_disableinactivate : Int
+
+pub let ddrawilcl_dx8_driver : Int
+
+pub let ddrawilcl_explicitmonitor : Int
+
+pub let ddrawilcl_fpupreserve : Int
+
+pub let ddrawilcl_fpusetup : Int
+
+pub let ddrawilcl_hasexclusivemode : Int
+
+pub let ddrawilcl_hookedhwnd : Int
+
+pub let ddrawilcl_isfullscreen : Int
+
+pub let ddrawilcl_modehasbeenchanged : Int
+
+pub let ddrawilcl_multithreaded : Int
+
+pub let ddrawilcl_powereddown : Int
+
+pub let ddrawilcl_setcoopcalled : Int
+
+pub let ddrawilcl_v1_sclbehaviour : Int
+
+pub let ddrawipal_16 : Int
+
+pub let ddrawipal_2 : Int
+
+pub let ddrawipal_256 : Int
+
+pub let ddrawipal_4 : Int
+
+pub let ddrawipal_allow256 : Int
+
+pub let ddrawipal_alpha : Int
+
+pub let ddrawipal_dirty : Int
+
+pub let ddrawipal_exclusive : Int
+
+pub let ddrawipal_gdi : Int
+
+pub let ddrawipal_inhel : Int
+
+pub let ddrawipal_stored_16 : Int
+
+pub let ddrawipal_stored_24 : Int
+
+pub let ddrawipal_stored_8 : Int
+
+pub let ddrawipal_stored_8_index : Int
+
+pub let ddrawisurf_attached : Int
+
+pub let ddrawisurf_attached_from : Int
+
+pub let ddrawisurf_backbuffer : Int
+
+pub let ddrawisurf_dataisaliased : Int
+
+pub let ddrawisurf_dcibusy : Int
+
+pub let ddrawisurf_dcilock : Int
+
+pub let ddrawisurf_drivermanaged : Int
+
+pub let ddrawisurf_frontbuffer : Int
+
+pub let ddrawisurf_getdcnull : Int
+
+pub let ddrawisurf_hasckeydestblt : Int
+
+pub let ddrawisurf_hasckeydestoverlay : Int
+
+pub let ddrawisurf_hasckeysrcblt : Int
+
+pub let ddrawisurf_hasckeysrcoverlay : Int
+
+pub let ddrawisurf_hasdc : Int
+
+pub let ddrawisurf_hasoverlaydata : Int
+
+pub let ddrawisurf_haspixelformat : Int
+
+pub let ddrawisurf_helcb : Int
+
+pub let ddrawisurf_hw_ckeydestblt : Int
+
+pub let ddrawisurf_hw_ckeydestoverlay : Int
+
+pub let ddrawisurf_hw_ckeysrcblt : Int
+
+pub let ddrawisurf_hw_ckeysrcoverlay : Int
+
+pub let ddrawisurf_implicitcreate : Int
+
+pub let ddrawisurf_implicitroot : Int
+
+pub let ddrawisurf_inmasterspritelist : Int
+
+pub let ddrawisurf_invalid : Int
+
+pub let ddrawisurf_isfree : Int
+
+pub let ddrawisurf_lockexcludedcursor : Int
+
+pub let ddrawisurf_partofprimarychain : Int
+
+pub let ddrawisurf_setgamma : Int
+
+pub let ddrawisurf_stereosurfaceleft : Int
+
+pub let ddrawisurf_sw_ckeydestblt : Int
+
+pub let ddrawisurf_sw_ckeydestoverlay : Int
+
+pub let ddrawisurf_sw_ckeysrcblt : Int
+
+pub let ddrawisurf_sw_ckeysrcoverlay : Int
+
+pub let ddrawisurfgbl_ddheldontfree : Int
+
+pub let ddrawisurfgbl_dx8_surface : Int
+
+pub let ddrawisurfgbl_fastlockheld : Int
+
+pub let ddrawisurfgbl_hardwareopdest : Int
+
+pub let ddrawisurfgbl_hardwareopsource : Int
+
+pub let ddrawisurfgbl_implicithandle : Int
+
+pub let ddrawisurfgbl_isclientmem : Int
+
+pub let ddrawisurfgbl_isgdisurface : Int
+
+pub let ddrawisurfgbl_lateallocatelinear : Int
+
+pub let ddrawisurfgbl_lockbroken : Int
+
+pub let ddrawisurfgbl_locknotholdingwin16_lock : Int
+
+pub let ddrawisurfgbl_lockvramstyle : Int
+
+pub let ddrawisurfgbl_memfree : Int
+
+pub let ddrawisurfgbl_notifywhenunlocked : Int
+
+pub let ddrawisurfgbl_readonlylockheld : Int
+
+pub let ddrawisurfgbl_reserved0 : Int
+
+pub let ddrawisurfgbl_softwareautoflip : Int
+
+pub let ddrawisurfgbl_sysmemexecutebuffer : Int
+
+pub let ddrawisurfgbl_sysmemrequested : Int
+
+pub let ddrawisurfgbl_vportdata : Int
+
+pub let ddrawisurfgbl_vportinterleaved : Int
+
+pub let ddrawivport_colorkeyandinterp : UInt
+
+pub let ddrawivport_nokernelhandles : UInt
+
+pub let ddrawivport_on : UInt
+
+pub let ddrawivport_software_autoflip : UInt
+
+pub let ddrawivport_software_bob : UInt
+
+pub let ddrawivport_vbion : UInt
+
+pub let ddrawivport_videoon : UInt
+
+pub let ddscaps2_additionalprimary : Int
+
+pub let ddscaps2_commandbuffer : Int
+
+pub let ddscaps2_cubemap : Int
+
+pub let ddscaps2_cubemap_negativex : Int
+
+pub let ddscaps2_cubemap_negativey : Int
+
+pub let ddscaps2_cubemap_negativez : Int
+
+pub let ddscaps2_cubemap_positivex : Int
+
+pub let ddscaps2_cubemap_positivey : Int
+
+pub let ddscaps2_cubemap_positivez : Int
+
+pub let ddscaps2_d3_dtexturemanage : Int
+
+pub let ddscaps2_discardbackbuffer : Int
+
+pub let ddscaps2_donotpersist : Int
+
+pub let ddscaps2_enablealphachannel : Int
+
+pub let ddscaps2_extendedformatprimary : Int
+
+pub let ddscaps2_hardwaredeinterlace : Int
+
+pub let ddscaps2_hintantialiasing : Int
+
+pub let ddscaps2_hintdynamic : Int
+
+pub let ddscaps2_hintstatic : Int
+
+pub let ddscaps2_indexbuffer : Int
+
+pub let ddscaps2_mipmapsublevel : Int
+
+pub let ddscaps2_notuserlockable : Int
+
+pub let ddscaps2_npatches : Int
+
+pub let ddscaps2_opaque : Int
+
+pub let ddscaps2_points : Int
+
+pub let ddscaps2_reserved1 : Int
+
+pub let ddscaps2_reserved2 : Int
+
+pub let ddscaps2_reserved3 : Int
+
+pub let ddscaps2_reserved4 : Int
+
+pub let ddscaps2_rtpatches : Int
+
+pub let ddscaps2_stereosurfaceleft : Int
+
+pub let ddscaps2_texturemanage : Int
+
+pub let ddscaps2_vertexbuffer : Int
+
+pub let ddscaps2_volume : Int
+
+pub let ddscaps3_autogenmipmap : Int
+
+pub let ddscaps3_createsharedresource : Int
+
+pub let ddscaps3_dmap : Int
+
+pub let ddscaps3_lightweightmipmap : Int
+
+pub let ddscaps3_multisample_mask : Int
+
+pub let ddscaps3_multisample_quality_mask : Int
+
+pub let ddscaps3_multisample_quality_shift : UInt
+
+pub let ddscaps3_opensharedresource : Int
+
+pub let ddscaps3_readonlyresource : Int
+
+pub let ddscaps3_reserved1 : Int
+
+pub let ddscaps3_reserved2 : Int
+
+pub let ddscaps3_video : Int
+
+pub let ddscaps_3_ddevice : Int
+
+pub let ddscaps_alloconload : Int
+
+pub let ddscaps_alpha : Int
+
+pub let ddscaps_backbuffer : Int
+
+pub let ddscaps_commandbuffer : Int
+
+pub let ddscaps_complex : Int
+
+pub let ddscaps_executebuffer : Int
+
+pub let ddscaps_flip : Int
+
+pub let ddscaps_frontbuffer : Int
+
+pub let ddscaps_hwcodec : Int
+
+pub let ddscaps_livevideo : Int
+
+pub let ddscaps_localvidmem : Int
+
+pub let ddscaps_mipmap : Int
+
+pub let ddscaps_modex : Int
+
+pub let ddscaps_nonlocalvidmem : Int
+
+pub let ddscaps_offscreenplain : Int
+
+pub let ddscaps_optimized : Int
+
+pub let ddscaps_overlay : Int
+
+pub let ddscaps_owndc : Int
+
+pub let ddscaps_palette : Int
+
+pub let ddscaps_primarysurface : Int
+
+pub let ddscaps_primarysurfaceleft : Int
+
+pub let ddscaps_reserved1 : Int
+
+pub let ddscaps_reserved2 : Int
+
+pub let ddscaps_reserved3 : Int
+
+pub let ddscaps_standardvgamode : Int
+
+pub let ddscaps_systemmemory : Int
+
+pub let ddscaps_texture : Int
+
+pub let ddscaps_videomemory : Int
+
+pub let ddscaps_videoport : Int
+
+pub let ddscaps_visible : Int
+
+pub let ddscaps_writeonly : Int
+
+pub let ddscaps_zbuffer : Int
+
+pub let ddscl_allowmodex : Int
+
+pub let ddscl_allowreboot : Int
+
+pub let ddscl_createdevicewindow : Int
+
+pub let ddscl_exclusive : Int
+
+pub let ddscl_fpupreserve : Int
+
+pub let ddscl_fpusetup : Int
+
+pub let ddscl_fullscreen : Int
+
+pub let ddscl_multithreaded : Int
+
+pub let ddscl_normal : Int
+
+pub let ddscl_nowindowchanges : Int
+
+pub let ddscl_setdevicewindow : Int
+
+pub let ddscl_setfocuswindow : Int
+
+pub let ddsd_all : Int
+
+pub let ddsd_alphabitdepth : Int
+
+pub let ddsd_backbuffercount : Int
+
+pub let ddsd_caps : Int
+
+pub let ddsd_ckdestblt : Int
+
+pub let ddsd_ckdestoverlay : Int
+
+pub let ddsd_cksrcblt : Int
+
+pub let ddsd_cksrcoverlay : Int
+
+pub let ddsd_depth : Int
+
+pub let ddsd_fvf : Int
+
+pub let ddsd_height : Int
+
+pub let ddsd_linearsize : Int
+
+pub let ddsd_lpsurface : Int
+
+pub let ddsd_mipmapcount : Int
+
+pub let ddsd_pitch : Int
+
+pub let ddsd_pixelformat : Int
+
+pub let ddsd_refreshrate : Int
+
+pub let ddsd_srcvbhandle : Int
+
+pub let ddsd_texturestage : Int
+
+pub let ddsd_width : Int
+
+pub let ddsd_zbufferbitdepth : Int
+
+pub let ddsdm_standardvgamode : Int
+
+pub let ddsetsurfacedesc_preservedc : Int
+
+pub let ddsetsurfacedesc_recreatedc : Int
+
+pub let ddsgr_calibrate : Int
+
+pub let ddskip_enablenext : UInt
+
+pub let ddskip_skipnext : UInt
+
+pub let ddsmt_istestrequired : Int
+
+pub let ddspd_iunknownpointer : Int
+
+pub let ddspd_volatile : Int
+
+pub let ddsvcaps_reserved1 : Int
+
+pub let ddsvcaps_reserved2 : Int
+
+pub let ddsvcaps_reserved3 : Int
+
+pub let ddsvcaps_reserved4 : Int
+
+pub let ddsvcaps_stereosequential : Int
+
+pub let ddtransfer_cancel : UInt
+
+pub let ddtransfer_halflines : UInt
+
+pub let ddtransfer_invert : UInt
+
+pub let ddtransfer_nonlocalvidmem : UInt
+
+pub let ddtransfer_systemmemory : UInt
+
+pub let ddunsupportedmode : UInt
+
+pub let ddversioninfo : UInt
+
+pub let ddvp_autoflip : Int
+
+pub let ddvp_convert : Int
+
+pub let ddvp_crop : Int
+
+pub let ddvp_hardwaredeinterlace : Int
+
+pub let ddvp_ignorevbixcrop : Int
+
+pub let ddvp_interleave : Int
+
+pub let ddvp_mirrorleftright : Int
+
+pub let ddvp_mirrorupdown : Int
+
+pub let ddvp_overridebobweave : Int
+
+pub let ddvp_prescale : Int
+
+pub let ddvp_skipevenfields : Int
+
+pub let ddvp_skipoddfields : Int
+
+pub let ddvp_syncmaster : Int
+
+pub let ddvp_vbiconvert : Int
+
+pub let ddvp_vbinointerleave : Int
+
+pub let ddvp_vbinoscale : Int
+
+pub let ddvpb_overlay : Int
+
+pub let ddvpb_type : Int
+
+pub let ddvpb_videoport : Int
+
+pub let ddvpbcaps_destination : Int
+
+pub let ddvpbcaps_source : Int
+
+pub let ddvpcaps_autoflip : Int
+
+pub let ddvpcaps_colorcontrol : Int
+
+pub let ddvpcaps_hardwaredeinterlace : Int
+
+pub let ddvpcaps_interlaced : Int
+
+pub let ddvpcaps_noninterlaced : Int
+
+pub let ddvpcaps_oversampledvbi : Int
+
+pub let ddvpcaps_readbackfield : Int
+
+pub let ddvpcaps_readbackline : Int
+
+pub let ddvpcaps_shareable : Int
+
+pub let ddvpcaps_skipevenfields : Int
+
+pub let ddvpcaps_skipoddfields : Int
+
+pub let ddvpcaps_syncmaster : Int
+
+pub let ddvpcaps_systemmemory : Int
+
+pub let ddvpcaps_vbiandvideoindependent : Int
+
+pub let ddvpcaps_vbisurface : Int
+
+pub let ddvpconnect_discardsvrefdata : Int
+
+pub let ddvpconnect_doubleclock : Int
+
+pub let ddvpconnect_halfline : Int
+
+pub let ddvpconnect_interlaced : Int
+
+pub let ddvpconnect_invertpolarity : Int
+
+pub let ddvpconnect_shareeven : Int
+
+pub let ddvpconnect_shareodd : Int
+
+pub let ddvpconnect_vact : Int
+
+pub let ddvpcreate_vbionly : Int
+
+pub let ddvpcreate_videoonly : Int
+
+pub let ddvpd_align : Int
+
+pub let ddvpd_autoflip : Int
+
+pub let ddvpd_caps : Int
+
+pub let ddvpd_filterquality : Int
+
+pub let ddvpd_fx : Int
+
+pub let ddvpd_height : Int
+
+pub let ddvpd_id : Int
+
+pub let ddvpd_preferredautoflip : Int
+
+pub let ddvpd_width : Int
+
+pub let ddvpflip_vbi : Int
+
+pub let ddvpflip_video : Int
+
+pub let ddvpformat_vbi : Int
+
+pub let ddvpformat_video : Int
+
+pub let ddvpfx_croptopdata : Int
+
+pub let ddvpfx_cropx : Int
+
+pub let ddvpfx_cropy : Int
+
+pub let ddvpfx_ignorevbixcrop : Int
+
+pub let ddvpfx_interleave : Int
+
+pub let ddvpfx_mirrorleftright : Int
+
+pub let ddvpfx_mirrorupdown : Int
+
+pub let ddvpfx_preshrinkx : Int
+
+pub let ddvpfx_preshrinkxb : Int
+
+pub let ddvpfx_preshrinkxs : Int
+
+pub let ddvpfx_preshrinky : Int
+
+pub let ddvpfx_preshrinkyb : Int
+
+pub let ddvpfx_preshrinkys : Int
+
+pub let ddvpfx_prestretchx : Int
+
+pub let ddvpfx_prestretchxn : Int
+
+pub let ddvpfx_prestretchy : Int
+
+pub let ddvpfx_prestretchyn : Int
+
+pub let ddvpfx_vbiconvert : Int
+
+pub let ddvpfx_vbinointerleave : Int
+
+pub let ddvpfx_vbinoscale : Int
+
+pub let ddvpsq_nosignal : Int
+
+pub let ddvpsq_signalok : Int
+
+pub let ddvpstatus_vbionly : Int
+
+pub let ddvpstatus_videoonly : Int
+
+pub let ddvptarget_vbi : Int
+
+pub let ddvptarget_video : Int
+
+pub let ddvpwait_begin : Int
+
+pub let ddvpwait_end : Int
+
+pub let ddvpwait_line : Int
+
+pub let ddwaitvb_blockbegin : Int
+
+pub let ddwaitvb_blockbeginevent : Int
+
+pub let ddwaitvb_blockend : Int
+
+pub let ddwaitvb_i_testvb : Int
+
+pub let deleted_lastone : UInt
+
+pub let deleted_notfound : UInt
+
+pub let deleted_ok : UInt
+
+pub fn direct_draw_create(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn direct_draw_create_clipper(UInt, @core.RawAddress, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn direct_draw_create_clipper_raw(UInt, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn direct_draw_create_ex(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn direct_draw_create_ex_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn direct_draw_create_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn direct_draw_enumerate_a(@core.RawAddress, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn direct_draw_enumerate_a_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn direct_draw_enumerate_ex_a(@core.RawAddress, @core.RawAddress, UInt) -> Int raise @core.WindowsError
+
+pub fn direct_draw_enumerate_ex_a_raw(@core.RawAddress, @core.RawAddress, UInt) -> Int
+
+pub fn direct_draw_enumerate_ex_w(@core.RawAddress, @core.RawAddress, UInt) -> Int raise @core.WindowsError
+
+pub fn direct_draw_enumerate_ex_w_raw(@core.RawAddress, @core.RawAddress, UInt) -> Int
+
+pub fn direct_draw_enumerate_w(@core.RawAddress, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn direct_draw_enumerate_w_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub let directdraw_version : UInt
+
+pub let dx_ok : UInt
+
+pub let dxapi_halversion : UInt
+
+pub let dxerr_generic : UInt
+
+pub let dxerr_outofcaps : UInt
+
+pub let dxerr_unsupported : UInt
+
+pub let facdd : UInt
+
+pub let heapaliasinfo_mappeddummy : Int
+
+pub let heapaliasinfo_mappedreal : Int
+
+pub let irqinfo_handled : UInt
+
+pub let irqinfo_nothandled : UInt
+
+pub let max_autoflip_buffers : UInt
+
+pub let max_dddeviceid_string : UInt
+
+pub let max_driver_name : UInt
+
+pub let max_palette_size : UInt
+
+pub let mdl_64_bit_va : UInt
+
+pub let mdl_allocated_fixed_size : UInt
+
+pub let mdl_allocated_must_succeed : UInt
+
+pub let mdl_io_page_read : UInt
+
+pub let mdl_io_space : UInt
+
+pub let mdl_lock_held : UInt
+
+pub let mdl_mapped_to_system_va : UInt
+
+pub let mdl_mapping_can_fail : UInt
+
+pub let mdl_network_header : UInt
+
+pub let mdl_pages_locked : UInt
+
+pub let mdl_parent_mapped_system_va : UInt
+
+pub let mdl_partial : UInt
+
+pub let mdl_partial_has_been_mapped : UInt
+
+pub let mdl_scatter_gather_va : UInt
+
+pub let mdl_source_is_nonpaged_pool : UInt
+
+pub let mdl_write_operation : UInt
+
+pub let object_isroot : Int
+
+pub let pfindex_uninitialized : UInt
+
+pub let regstr_key_ddhw_description : String
+
+pub let regstr_key_ddhw_drivername : String
+
+pub let regstr_path_ddhw : String
+
+pub let rop_has_pattern : Int
+
+pub let rop_has_source : Int
+
+pub let surfacealign_discardable : Int
+
+pub let vidmem_heapdisabled : Int
+
+pub let vidmem_isheap : Int
+
+pub let vidmem_islinear : Int
+
+pub let vidmem_isnonlocal : Int
+
+pub let vidmem_isrectangular : Int
+
+pub let vidmem_iswc : Int
+
+pub let vmemheap_alignment : Int
+
+pub let vmemheap_linear : Int
+
+pub let vmemheap_rectangular : Int
+
+// Errors
+
+// Types and methods
+
+// Type aliases
+pub using @378ad7ed7d194da8 {type ACCESSRECTLIST_8380d6fffd3f as ACCESSRECTLIST}
+
+pub using @378ad7ed7d194da8 {type ATTACHLIST_b2e3d3230636 as ATTACHLIST}
+
+pub using @378ad7ed7d194da8 {type DBLNODE_11070c184d49 as DBLNODE}
+
+pub using @378ad7ed7d194da8 {type DD32BITDRIVERDATA_45f7fd4f8697 as DD32BITDRIVERDATA}
+
+pub using @378ad7ed7d194da8 {type DDADDATTACHEDSURFACEDATA_a6ff2bf51630 as DDADDATTACHEDSURFACEDATA}
+
+pub using @378ad7ed7d194da8 {type DDARGB_c4f6efe1f955 as DDARGB}
+
+pub using @378ad7ed7d194da8 {type DDATTACHLIST_3454d589f805 as DDATTACHLIST}
+
+pub using @378ad7ed7d194da8 {type DDBEGINMOCOMPFRAMEDATA_dc99da1db3ab as DDBEGINMOCOMPFRAMEDATA}
+
+pub using @378ad7ed7d194da8 {type DDBLTBATCH_d89eb13c7c83 as DDBLTBATCH}
+
+pub using @378ad7ed7d194da8 {type DDBLTDATA_5abc903d8ad3 as DDBLTDATA}
+
+pub using @378ad7ed7d194da8 {type DDBLTFX_4263474e294a as DDBLTFX}
+
+pub using @378ad7ed7d194da8 {type DDBLTFXAnonymous1EUnion_0425ddcb628b as DDBLTFXAnonymous1EUnion}
+
+pub using @378ad7ed7d194da8 {type DDBLTFXAnonymous2EUnion_797fe69ebfef as DDBLTFXAnonymous2EUnion}
+
+pub using @378ad7ed7d194da8 {type DDBLTFXAnonymous3EUnion_d12976435199 as DDBLTFXAnonymous3EUnion}
+
+pub using @378ad7ed7d194da8 {type DDBLTFXAnonymous4EUnion_5f690e303a18 as DDBLTFXAnonymous4EUnion}
+
+pub using @378ad7ed7d194da8 {type DDBLTFXAnonymous5EUnion_b64db8f775b2 as DDBLTFXAnonymous5EUnion}
+
+pub using @378ad7ed7d194da8 {type DDBOBNEXTFIELDINFO_709f65c70916 as DDBOBNEXTFIELDINFO}
+
+pub using @378ad7ed7d194da8 {type DDCALLBACKS_d810af02733c as DDCALLBACKS}
+
+pub using @378ad7ed7d194da8 {type DDCANCREATESURFACEDATA_0a43bc8376a0 as DDCANCREATESURFACEDATA}
+
+pub using @378ad7ed7d194da8 {type DDCANCREATEVPORTDATA_1443d83c9b10 as DDCANCREATEVPORTDATA}
+
+pub using @378ad7ed7d194da8 {type DDCAPSDX1_0f6a0d8878be as DDCAPSDX1}
+
+pub using @378ad7ed7d194da8 {type DDCAPSDX3_cabc37aacaad as DDCAPSDX3}
+
+pub using @378ad7ed7d194da8 {type DDCAPSDX5_a6a3773507b8 as DDCAPSDX5}
+
+pub using @378ad7ed7d194da8 {type DDCAPSDX6_0d8adfc88476 as DDCAPSDX6}
+
+pub using @378ad7ed7d194da8 {type DDCAPSDX7_9ccfd051b3f6 as DDCAPSDX7}
+
+pub using @378ad7ed7d194da8 {type DDCLIPPERGLOBAL_e3b56e639286 as DDCLIPPERGLOBAL}
+
+pub using @378ad7ed7d194da8 {type DDCLIPPERLOCAL_2b7fa45b3c63 as DDCLIPPERLOCAL}
+
+pub using @378ad7ed7d194da8 {type DDCOLORCONTROL_910ec7c07efc as DDCOLORCONTROL}
+
+pub using @378ad7ed7d194da8 {type DDCOLORCONTROLCALLBACKS_cc260176bbfb as DDCOLORCONTROLCALLBACKS}
+
+pub using @378ad7ed7d194da8 {type DDCOLORCONTROLDATA_fb82ee07f7f5 as DDCOLORCONTROLDATA}
+
+pub using @378ad7ed7d194da8 {type DDCOLORKEY_ff5b0a9fe15e as DDCOLORKEY}
+
+pub using @378ad7ed7d194da8 {type DDCOMPBUFFERINFO_2d505f3b1c34 as DDCOMPBUFFERINFO}
+
+pub using @378ad7ed7d194da8 {type DDCORECAPS_e8347d544734 as DDCORECAPS}
+
+pub using @378ad7ed7d194da8 {type DDCREATEMOCOMPDATA_da2af9acde95 as DDCREATEMOCOMPDATA}
+
+pub using @378ad7ed7d194da8 {type DDCREATEPALETTEDATA_a2f68583a79d as DDCREATEPALETTEDATA}
+
+pub using @378ad7ed7d194da8 {type DDCREATESURFACEDATA_bcaa8edd6921 as DDCREATESURFACEDATA}
+
+pub using @378ad7ed7d194da8 {type DDCREATESURFACEEXDATA_254c68beb113 as DDCREATESURFACEEXDATA}
+
+pub using @378ad7ed7d194da8 {type DDCREATEVPORTDATA_85f816bec627 as DDCREATEVPORTDATA}
+
+pub using @378ad7ed7d194da8 {type DDD3DBUFCALLBACKS_8695bcbcb6c2 as DDD3DBUFCALLBACKS}
+
+pub using @378ad7ed7d194da8 {type DDDESTROYDDLOCALDATA_2d0e22c31000 as DDDESTROYDDLOCALDATA}
+
+pub using @378ad7ed7d194da8 {type DDDESTROYMOCOMPDATA_dde8a022146d as DDDESTROYMOCOMPDATA}
+
+pub using @378ad7ed7d194da8 {type DDDESTROYPALETTEDATA_a6ebb0fdde67 as DDDESTROYPALETTEDATA}
+
+pub using @378ad7ed7d194da8 {type DDDESTROYSURFACEDATA_d3534bc1c68a as DDDESTROYSURFACEDATA}
+
+pub using @378ad7ed7d194da8 {type DDDESTROYVPORTDATA_26f1372390b9 as DDDESTROYVPORTDATA}
+
+pub using @378ad7ed7d194da8 {type DDDEVICEIDENTIFIER_996eaa36c522 as DDDEVICEIDENTIFIER}
+
+pub using @378ad7ed7d194da8 {type DDDEVICEIDENTIFIER2_59e935e86dc9 as DDDEVICEIDENTIFIER2}
+
+pub using @378ad7ed7d194da8 {type DDDIRECTDRAWGLOBAL_6a9a2f57b993 as DDDIRECTDRAWGLOBAL}
+
+pub using @378ad7ed7d194da8 {type DDDIRECTDRAWLOCAL_ff31773588be as DDDIRECTDRAWLOCAL}
+
+pub using @378ad7ed7d194da8 {type DDDRVSETCOLORKEYDATA_9d27989ac4fe as DDDRVSETCOLORKEYDATA}
+
+pub using @378ad7ed7d194da8 {type DDENABLEIRQINFO_35a749758d9c as DDENABLEIRQINFO}
+
+pub using @378ad7ed7d194da8 {type DDENDMOCOMPFRAMEDATA_3919ea5ac7b9 as DDENDMOCOMPFRAMEDATA}
+
+pub using @378ad7ed7d194da8 {type DDFLIPDATA_cd1b74d65c93 as DDFLIPDATA}
+
+pub using @378ad7ed7d194da8 {type DDFLIPOVERLAYINFO_7f85cc069dc6 as DDFLIPOVERLAYINFO}
+
+pub using @378ad7ed7d194da8 {type DDFLIPTOGDISURFACEDATA_610efb7475f5 as DDFLIPTOGDISURFACEDATA}
+
+pub using @378ad7ed7d194da8 {type DDFLIPVIDEOPORTINFO_8e8ee8f0788d as DDFLIPVIDEOPORTINFO}
+
+pub using @378ad7ed7d194da8 {type DDFLIPVPORTDATA_29f12e7e0367 as DDFLIPVPORTDATA}
+
+pub using @378ad7ed7d194da8 {type DDFREEDRIVERMEMORYDATA_b8a153498897 as DDFREEDRIVERMEMORYDATA}
+
+pub using @378ad7ed7d194da8 {type DDGAMMARAMP_be5223f1f950 as DDGAMMARAMP}
+
+pub using @378ad7ed7d194da8 {type DDGETAVAILDRIVERMEMORYDATA_3dde9c43e519 as DDGETAVAILDRIVERMEMORYDATA}
+
+pub using @378ad7ed7d194da8 {type DDGETBLTSTATUSDATA_bd99749b3ed9 as DDGETBLTSTATUSDATA}
+
+pub using @378ad7ed7d194da8 {type DDGETCURRENTAUTOFLIPININFO_de31503bf910 as DDGETCURRENTAUTOFLIPININFO}
+
+pub using @378ad7ed7d194da8 {type DDGETCURRENTAUTOFLIPOUTINFO_e45d8c052439 as DDGETCURRENTAUTOFLIPOUTINFO}
+
+pub using @378ad7ed7d194da8 {type DDGETDRIVERINFODATA_f1fba0ad6fea as DDGETDRIVERINFODATA}
+
+pub using @378ad7ed7d194da8 {type DDGETDRIVERSTATEDATA_695907fad64d as DDGETDRIVERSTATEDATA}
+
+pub using @378ad7ed7d194da8 {type DDGETDRIVERSTATEDATAAnonymousEUnion_16e431b127cf as DDGETDRIVERSTATEDATAAnonymousEUnion}
+
+pub using @378ad7ed7d194da8 {type DDGETFLIPSTATUSDATA_6925acc484b6 as DDGETFLIPSTATUSDATA}
+
+pub using @378ad7ed7d194da8 {type DDGETHEAPALIGNMENTDATA_056b8e580581 as DDGETHEAPALIGNMENTDATA}
+
+pub using @378ad7ed7d194da8 {type DDGETINTERNALMOCOMPDATA_f5a1fa325aca as DDGETINTERNALMOCOMPDATA}
+
+pub using @378ad7ed7d194da8 {type DDGETIRQINFO_4a7ff278bc47 as DDGETIRQINFO}
+
+pub using @378ad7ed7d194da8 {type DDGETMOCOMPCOMPBUFFDATA_545c5f98ddf7 as DDGETMOCOMPCOMPBUFFDATA}
+
+pub using @378ad7ed7d194da8 {type DDGETMOCOMPFORMATSDATA_7484b8131e0b as DDGETMOCOMPFORMATSDATA}
+
+pub using @378ad7ed7d194da8 {type DDGETMOCOMPGUIDSDATA_401f9f00f668 as DDGETMOCOMPGUIDSDATA}
+
+pub using @378ad7ed7d194da8 {type DDGETPOLARITYININFO_60a825c44713 as DDGETPOLARITYININFO}
+
+pub using @378ad7ed7d194da8 {type DDGETPOLARITYOUTINFO_00b618a8750e as DDGETPOLARITYOUTINFO}
+
+pub using @378ad7ed7d194da8 {type DDGETPREVIOUSAUTOFLIPININFO_7ec2e6d4aa1f as DDGETPREVIOUSAUTOFLIPININFO}
+
+pub using @378ad7ed7d194da8 {type DDGETPREVIOUSAUTOFLIPOUTINFO_a082ca7e2dad as DDGETPREVIOUSAUTOFLIPOUTINFO}
+
+pub using @378ad7ed7d194da8 {type DDGETSCANLINEDATA_90c1bc46178e as DDGETSCANLINEDATA}
+
+pub using @378ad7ed7d194da8 {type DDGETTRANSFERSTATUSOUTINFO_d73ef1a4ba54 as DDGETTRANSFERSTATUSOUTINFO}
+
+pub using @378ad7ed7d194da8 {type DDGETVPORTBANDWIDTHDATA_46789fd3253d as DDGETVPORTBANDWIDTHDATA}
+
+pub using @378ad7ed7d194da8 {type DDGETVPORTCONNECTDATA_92e1634a6dbd as DDGETVPORTCONNECTDATA}
+
+pub using @378ad7ed7d194da8 {type DDGETVPORTFIELDDATA_902f23c283df as DDGETVPORTFIELDDATA}
+
+pub using @378ad7ed7d194da8 {type DDGETVPORTFLIPSTATUSDATA_5c1f3867635e as DDGETVPORTFLIPSTATUSDATA}
+
+pub using @378ad7ed7d194da8 {type DDGETVPORTINPUTFORMATDATA_1fc9bf88bc6a as DDGETVPORTINPUTFORMATDATA}
+
+pub using @378ad7ed7d194da8 {type DDGETVPORTLINEDATA_bec4e9b3fde8 as DDGETVPORTLINEDATA}
+
+pub using @378ad7ed7d194da8 {type DDGETVPORTOUTPUTFORMATDATA_46765160df33 as DDGETVPORTOUTPUTFORMATDATA}
+
+pub using @378ad7ed7d194da8 {type DDGETVPORTSIGNALDATA_b696188dc918 as DDGETVPORTSIGNALDATA}
+
+pub using @378ad7ed7d194da8 {type DDHALADDATTACHEDSURFACEDATA_71aeb3f7dde3 as DDHALADDATTACHEDSURFACEDATA}
+
+pub using @378ad7ed7d194da8 {type DDHALBEGINMOCOMPFRAMEDATA_ebc48be98791 as DDHALBEGINMOCOMPFRAMEDATA}
+
+pub using @378ad7ed7d194da8 {type DDHALBLTDATA_d2cb2415df35 as DDHALBLTDATA}
+
+pub using @378ad7ed7d194da8 {type DDHALCALLBACKS_8e09e030bb91 as DDHALCALLBACKS}
+
+pub using @378ad7ed7d194da8 {type DDHALCANCREATESURFACEDATA_f74bd0284e8d as DDHALCANCREATESURFACEDATA}
+
+pub using @378ad7ed7d194da8 {type DDHALCANCREATEVPORTDATA_7352e3394144 as DDHALCANCREATEVPORTDATA}
+
+pub using @378ad7ed7d194da8 {type DDHALCOLORCONTROLDATA_8c10fb6acc77 as DDHALCOLORCONTROLDATA}
+
+pub using @378ad7ed7d194da8 {type DDHALCREATEMOCOMPDATA_2d0778197ab1 as DDHALCREATEMOCOMPDATA}
+
+pub using @378ad7ed7d194da8 {type DDHALCREATEPALETTEDATA_c8d000437d64 as DDHALCREATEPALETTEDATA}
+
+pub using @378ad7ed7d194da8 {type DDHALCREATESURFACEDATA_17d35bcbe76a as DDHALCREATESURFACEDATA}
+
+pub using @378ad7ed7d194da8 {type DDHALCREATESURFACEEXDATA_5dd0723afa8c as DDHALCREATESURFACEEXDATA}
+
+pub using @378ad7ed7d194da8 {type DDHALCREATEVPORTDATA_47a52b8449ad as DDHALCREATEVPORTDATA}
+
+pub using @378ad7ed7d194da8 {type DDHALDDCALLBACKS_96033a7c5f61 as DDHALDDCALLBACKS}
+
+pub using @378ad7ed7d194da8 {type DDHALDDCOLORCONTROLCALLBACKS_72553b4ad6b2 as DDHALDDCOLORCONTROLCALLBACKS}
+
+pub using @378ad7ed7d194da8 {type DDHALDDEXEBUFCALLBACKS_5058869268d6 as DDHALDDEXEBUFCALLBACKS}
+
+pub using @378ad7ed7d194da8 {type DDHALDDKERNELCALLBACKS_78c44d7be9eb as DDHALDDKERNELCALLBACKS}
+
+pub using @378ad7ed7d194da8 {type DDHALDDMISCELLANEOUS2CALLBACKS_94bfca1adfc8 as DDHALDDMISCELLANEOUS2CALLBACKS}
+
+pub using @378ad7ed7d194da8 {type DDHALDDMISCELLANEOUSCALLBACKS_289b76e8604c as DDHALDDMISCELLANEOUSCALLBACKS}
+
+pub using @378ad7ed7d194da8 {type DDHALDDMOTIONCOMPCALLBACKS_cfbbc701f923 as DDHALDDMOTIONCOMPCALLBACKS}
+
+pub using @378ad7ed7d194da8 {type DDHALDDPALETTECALLBACKS_ded93b03d123 as DDHALDDPALETTECALLBACKS}
+
+pub using @378ad7ed7d194da8 {type DDHALDDRAWFNS_c86e95aa223d as DDHALDDRAWFNS}
+
+pub using @378ad7ed7d194da8 {type DDHALDDSURFACECALLBACKS_90068aa092d2 as DDHALDDSURFACECALLBACKS}
+
+pub using @378ad7ed7d194da8 {type DDHALDDVIDEOPORTCALLBACKS_dc78f37539fa as DDHALDDVIDEOPORTCALLBACKS}
+
+pub using @378ad7ed7d194da8 {type DDHALDESTROYDDLOCALDATA_418a26d4bdcd as DDHALDESTROYDDLOCALDATA}
+
+pub using @378ad7ed7d194da8 {type DDHALDESTROYDRIVERDATA_c6675caf6fe4 as DDHALDESTROYDRIVERDATA}
+
+pub using @378ad7ed7d194da8 {type DDHALDESTROYMOCOMPDATA_e87e42776801 as DDHALDESTROYMOCOMPDATA}
+
+pub using @378ad7ed7d194da8 {type DDHALDESTROYPALETTEDATA_8bf4a2ffb331 as DDHALDESTROYPALETTEDATA}
+
+pub using @378ad7ed7d194da8 {type DDHALDESTROYSURFACEDATA_1aea996be062 as DDHALDESTROYSURFACEDATA}
+
+pub using @378ad7ed7d194da8 {type DDHALDESTROYVPORTDATA_5e07da421fc8 as DDHALDESTROYVPORTDATA}
+
+pub using @378ad7ed7d194da8 {type DDHALDRVSETCOLORKEYDATA_c9c86c3cfd05 as DDHALDRVSETCOLORKEYDATA}
+
+pub using @378ad7ed7d194da8 {type DDHALENDMOCOMPFRAMEDATA_c847a415dfd3 as DDHALENDMOCOMPFRAMEDATA}
+
+pub using @378ad7ed7d194da8 {type DDHALFLIPDATA_021be42db66c as DDHALFLIPDATA}
+
+pub using @378ad7ed7d194da8 {type DDHALFLIPTOGDISURFACEDATA_f812fb067439 as DDHALFLIPTOGDISURFACEDATA}
+
+pub using @378ad7ed7d194da8 {type DDHALFLIPVPORTDATA_161d01ec6a48 as DDHALFLIPVPORTDATA}
+
+pub using @378ad7ed7d194da8 {type DDHALGETAVAILDRIVERMEMORYDATA_e95507a3a0ce as DDHALGETAVAILDRIVERMEMORYDATA}
+
+pub using @378ad7ed7d194da8 {type DDHALGETBLTSTATUSDATA_fb95d728e450 as DDHALGETBLTSTATUSDATA}
+
+pub using @378ad7ed7d194da8 {type DDHALGETDRIVERINFODATA_ee9a25b72224 as DDHALGETDRIVERINFODATA}
+
+pub using @378ad7ed7d194da8 {type DDHALGETDRIVERSTATEDATA_c29252fce2e3 as DDHALGETDRIVERSTATEDATA}
+
+pub using @378ad7ed7d194da8 {type DDHALGETDRIVERSTATEDATAAnonymousEUnion_39b8f8ff1d33 as DDHALGETDRIVERSTATEDATAAnonymousEUnion}
+
+pub using @378ad7ed7d194da8 {type DDHALGETFLIPSTATUSDATA_8673110a69e8 as DDHALGETFLIPSTATUSDATA}
+
+pub using @378ad7ed7d194da8 {type DDHALGETHEAPALIGNMENTDATA_6311480c2a7c as DDHALGETHEAPALIGNMENTDATA}
+
+pub using @378ad7ed7d194da8 {type DDHALGETINTERNALMOCOMPDATA_1cfedb2a8929 as DDHALGETINTERNALMOCOMPDATA}
+
+pub using @378ad7ed7d194da8 {type DDHALGETMOCOMPCOMPBUFFDATA_afc3c7b4b6f4 as DDHALGETMOCOMPCOMPBUFFDATA}
+
+pub using @378ad7ed7d194da8 {type DDHALGETMOCOMPFORMATSDATA_7eb0edfdce27 as DDHALGETMOCOMPFORMATSDATA}
+
+pub using @378ad7ed7d194da8 {type DDHALGETMOCOMPGUIDSDATA_9c9b51b5f75b as DDHALGETMOCOMPGUIDSDATA}
+
+pub using @378ad7ed7d194da8 {type DDHALGETSCANLINEDATA_4fee935667a9 as DDHALGETSCANLINEDATA}
+
+pub using @378ad7ed7d194da8 {type DDHALGETVPORTBANDWIDTHDATA_58a03442ebcc as DDHALGETVPORTBANDWIDTHDATA}
+
+pub using @378ad7ed7d194da8 {type DDHALGETVPORTCONNECTDATA_34806412c4a3 as DDHALGETVPORTCONNECTDATA}
+
+pub using @378ad7ed7d194da8 {type DDHALGETVPORTFIELDDATA_f6fd35a70168 as DDHALGETVPORTFIELDDATA}
+
+pub using @378ad7ed7d194da8 {type DDHALGETVPORTFLIPSTATUSDATA_4f20a2e50a49 as DDHALGETVPORTFLIPSTATUSDATA}
+
+pub using @378ad7ed7d194da8 {type DDHALGETVPORTINPUTFORMATDATA_7b8d57c4e6c1 as DDHALGETVPORTINPUTFORMATDATA}
+
+pub using @378ad7ed7d194da8 {type DDHALGETVPORTLINEDATA_eab696405962 as DDHALGETVPORTLINEDATA}
+
+pub using @378ad7ed7d194da8 {type DDHALGETVPORTOUTPUTFORMATDATA_34c80198b9c2 as DDHALGETVPORTOUTPUTFORMATDATA}
+
+pub using @378ad7ed7d194da8 {type DDHALGETVPORTSIGNALDATA_9a0fae8890d8 as DDHALGETVPORTSIGNALDATA}
+
+pub using @378ad7ed7d194da8 {type DDHALINFO_a3de0d64f506 as DDHALINFO}
+
+pub using @378ad7ed7d194da8 {type DDHALINFOV4_a1699e65b70c as DDHALINFOV4}
+
+pub using @378ad7ed7d194da8 {type DDHALINFO_3832db116f4b as DDHALINFO_no_args}
+
+pub using @378ad7ed7d194da8 {type DDHALLOCKDATA_338d23c1302d as DDHALLOCKDATA}
+
+pub using @378ad7ed7d194da8 {type DDHALMODEINFO_9c9db4080474 as DDHALMODEINFO}
+
+pub using @378ad7ed7d194da8 {type DDHALQUERYMOCOMPSTATUSDATA_85d0c221e323 as DDHALQUERYMOCOMPSTATUSDATA}
+
+pub using @378ad7ed7d194da8 {type DDHALRENDERMOCOMPDATA_c3cdb61ed755 as DDHALRENDERMOCOMPDATA}
+
+pub using @378ad7ed7d194da8 {type DDHALSETCLIPLISTDATA_03dc61d3092b as DDHALSETCLIPLISTDATA}
+
+pub using @378ad7ed7d194da8 {type DDHALSETCOLORKEYDATA_39bf5b7b83e0 as DDHALSETCOLORKEYDATA}
+
+pub using @378ad7ed7d194da8 {type DDHALSETENTRIESDATA_e4d1c0a306b2 as DDHALSETENTRIESDATA}
+
+pub using @378ad7ed7d194da8 {type DDHALSETEXCLUSIVEMODEDATA_6aa3ce827cf4 as DDHALSETEXCLUSIVEMODEDATA}
+
+pub using @378ad7ed7d194da8 {type DDHALSETMODEDATA_01ea2171d296 as DDHALSETMODEDATA}
+
+pub using @378ad7ed7d194da8 {type DDHALSETOVERLAYPOSITIONDATA_629ac82517e8 as DDHALSETOVERLAYPOSITIONDATA}
+
+pub using @378ad7ed7d194da8 {type DDHALSETPALETTEDATA_e7619db5a990 as DDHALSETPALETTEDATA}
+
+pub using @378ad7ed7d194da8 {type DDHALSYNCSURFACEDATA_2956e5b351ed as DDHALSYNCSURFACEDATA}
+
+pub using @378ad7ed7d194da8 {type DDHALSYNCVIDEOPORTDATA_a66699854760 as DDHALSYNCVIDEOPORTDATA}
+
+pub using @378ad7ed7d194da8 {type DDHALUNLOCKDATA_1378a9920c83 as DDHALUNLOCKDATA}
+
+pub using @378ad7ed7d194da8 {type DDHALUPDATENONLOCALHEAPDATA_8960e76766a5 as DDHALUPDATENONLOCALHEAPDATA}
+
+pub using @378ad7ed7d194da8 {type DDHALUPDATEOVERLAYDATA_e7ee4c3f68d9 as DDHALUPDATEOVERLAYDATA}
+
+pub using @378ad7ed7d194da8 {type DDHALUPDATEVPORTDATA_344a02c0ece0 as DDHALUPDATEVPORTDATA}
+
+pub using @378ad7ed7d194da8 {type DDHALVPORTCOLORDATA_3545aaf3ce2b as DDHALVPORTCOLORDATA}
+
+pub using @378ad7ed7d194da8 {type DDHALWAITFORVERTICALBLANKDATA_7ead4af12ac7 as DDHALWAITFORVERTICALBLANKDATA}
+
+pub using @378ad7ed7d194da8 {type DDHALWAITFORVPORTSYNCDATA_80bf6e87ee74 as DDHALWAITFORVPORTSYNCDATA}
+
+pub using @378ad7ed7d194da8 {type DDKERNELCALLBACKS_b0b3da0d72d1 as DDKERNELCALLBACKS}
+
+pub using @378ad7ed7d194da8 {type DDKERNELCAPS_0968924a5b04 as DDKERNELCAPS}
+
+pub using @378ad7ed7d194da8 {type DDLOCKDATA_96ea73378d55 as DDLOCKDATA}
+
+pub using @378ad7ed7d194da8 {type DDLOCKININFO_df3d59573cce as DDLOCKININFO}
+
+pub using @378ad7ed7d194da8 {type DDLOCKOUTINFO_3e83ec3bdb86 as DDLOCKOUTINFO}
+
+pub using @378ad7ed7d194da8 {type DDMAPMEMORYDATA_80ab8165d9cd as DDMAPMEMORYDATA}
+
+pub using @378ad7ed7d194da8 {type DDMCBUFFERINFO_8b0dd2a1aa9b as DDMCBUFFERINFO}
+
+pub using @378ad7ed7d194da8 {type DDMCCOMPBUFFERINFO_a142402aa4d0 as DDMCCOMPBUFFERINFO}
+
+pub using @378ad7ed7d194da8 {type DDMDL_921b57aaae89 as DDMDL}
+
+pub using @378ad7ed7d194da8 {type DDMISCELLANEOUS2CALLBACKS_0c7a56f3596a as DDMISCELLANEOUS2CALLBACKS}
+
+pub using @378ad7ed7d194da8 {type DDMISCELLANEOUSCALLBACKS_135f3a48dd6d as DDMISCELLANEOUSCALLBACKS}
+
+pub using @378ad7ed7d194da8 {type DDMOCOMPBUFFERINFO_569adae7e775 as DDMOCOMPBUFFERINFO}
+
+pub using @378ad7ed7d194da8 {type DDMONITORINFO_e50593a79057 as DDMONITORINFO}
+
+pub using @378ad7ed7d194da8 {type DDMORECAPS_45942b77be77 as DDMORECAPS}
+
+pub using @378ad7ed7d194da8 {type DDMORESURFACECAPS_60ba9d4a756c as DDMORESURFACECAPS}
+
+pub using @378ad7ed7d194da8 {type DDMORESURFACECAPSExtendedHeapRestrictions_329bca80d679 as DDMORESURFACECAPSExtendedHeapRestrictions}
+
+pub using @378ad7ed7d194da8 {type DDMORESURFACECAPSNTExtendedHeapRestrictions_5b33f56456c3 as DDMORESURFACECAPSNTExtendedHeapRestrictions}
+
+pub using @378ad7ed7d194da8 {type DDMORESURFACECAPS_0e2bfb0be253 as DDMORESURFACECAPS_no_args}
+
+pub using @378ad7ed7d194da8 {type DDMOTIONCOMPCALLBACKS_1100e9716851 as DDMOTIONCOMPCALLBACKS}
+
+pub using @378ad7ed7d194da8 {type DDMOTIONCOMPLOCAL_0a3b7f1216f6 as DDMOTIONCOMPLOCAL}
+
+pub using @378ad7ed7d194da8 {type DDNONLOCALVIDMEMCAPS_68710d07ab18 as DDNONLOCALVIDMEMCAPS}
+
+pub using @378ad7ed7d194da8 {type DDNONLOCALVIDMEMCAPS_baa539129828 as DDNONLOCALVIDMEMCAPS_no_args}
+
+pub using @378ad7ed7d194da8 {type DDNTCALLBACKS_72fee28122ec as DDNTCALLBACKS}
+
+pub using @378ad7ed7d194da8 {type DDNTCORECAPS_45fd927e39a5 as DDNTCORECAPS}
+
+pub using @378ad7ed7d194da8 {type DDNTPRIVATEDRIVERCAPS_7121fabec6df as DDNTPRIVATEDRIVERCAPS}
+
+pub using @378ad7ed7d194da8 {type DDOPTSURFACEDESC_f9ed657fe370 as DDOPTSURFACEDESC}
+
+pub using @378ad7ed7d194da8 {type DDOSCAPS_4508f875cbd3 as DDOSCAPS}
+
+pub using @378ad7ed7d194da8 {type DDOVERLAYFX_865f1a9fcb4b as DDOVERLAYFX}
+
+pub using @378ad7ed7d194da8 {type DDOVERLAYFXAnonymous1EUnion_6aae69bbf7c1 as DDOVERLAYFXAnonymous1EUnion}
+
+pub using @378ad7ed7d194da8 {type DDOVERLAYFXAnonymous2EUnion_7228f955aaa1 as DDOVERLAYFXAnonymous2EUnion}
+
+pub using @378ad7ed7d194da8 {type DDPALETTECALLBACKS_279a8702fdc7 as DDPALETTECALLBACKS}
+
+pub using @378ad7ed7d194da8 {type DDPALETTEGLOBAL_43961208bc79 as DDPALETTEGLOBAL}
+
+pub using @378ad7ed7d194da8 {type DDPALETTELOCAL_d6ecc1bc8a13 as DDPALETTELOCAL}
+
+pub using @378ad7ed7d194da8 {type DDPIXELFORMAT_6b25d80c0e0e as DDPIXELFORMAT}
+
+pub using @378ad7ed7d194da8 {type DDPIXELFORMATAnonymous1EUnion_64dab25feada as DDPIXELFORMATAnonymous1EUnion}
+
+pub using @378ad7ed7d194da8 {type DDPIXELFORMATAnonymous2EUnion_8c951d3746dc as DDPIXELFORMATAnonymous2EUnion}
+
+pub using @378ad7ed7d194da8 {type DDPIXELFORMATAnonymous3EUnion_45d54b15310f as DDPIXELFORMATAnonymous3EUnion}
+
+pub using @378ad7ed7d194da8 {type DDPIXELFORMATAnonymous3EUnionMultiSampleCapsEStruct_cd370cf8c876 as DDPIXELFORMATAnonymous3EUnionMultiSampleCapsEStruct}
+
+pub using @378ad7ed7d194da8 {type DDPIXELFORMATAnonymous4EUnion_c9e4142e785c as DDPIXELFORMATAnonymous4EUnion}
+
+pub using @378ad7ed7d194da8 {type DDPIXELFORMATAnonymous5EUnion_660934033d83 as DDPIXELFORMATAnonymous5EUnion}
+
+pub using @378ad7ed7d194da8 {type DDQUERYMOCOMPSTATUSDATA_70c34d91a1c7 as DDQUERYMOCOMPSTATUSDATA}
+
+pub using @378ad7ed7d194da8 {type DDRAWIDDMOTIONCOMPINT_c964a5e80d53 as DDRAWIDDMOTIONCOMPINT}
+
+pub using @378ad7ed7d194da8 {type DDRAWIDDMOTIONCOMPLCL_4d8d731c1c00 as DDRAWIDDMOTIONCOMPLCL}
+
+pub using @378ad7ed7d194da8 {type DDRAWIDDRAWCLIPPERGBL_932d47f50c79 as DDRAWIDDRAWCLIPPERGBL}
+
+pub using @378ad7ed7d194da8 {type DDRAWIDDRAWCLIPPERINT_172ce8d54fe3 as DDRAWIDDRAWCLIPPERINT}
+
+pub using @378ad7ed7d194da8 {type DDRAWIDDRAWCLIPPERLCL_a974fc95060d as DDRAWIDDRAWCLIPPERLCL}
+
+pub using @378ad7ed7d194da8 {type DDRAWIDDRAWPALETTEGBL_3bca32f3b1f7 as DDRAWIDDRAWPALETTEGBL}
+
+pub using @378ad7ed7d194da8 {type DDRAWIDDRAWPALETTEGBLAnonymousEUnion_65678b9f4797 as DDRAWIDDRAWPALETTEGBLAnonymousEUnion}
+
+pub using @378ad7ed7d194da8 {type DDRAWIDDRAWPALETTEINT_5ff4319bc7fd as DDRAWIDDRAWPALETTEINT}
+
+pub using @378ad7ed7d194da8 {type DDRAWIDDRAWPALETTELCL_5f5acc3193d8 as DDRAWIDDRAWPALETTELCL}
+
+pub using @378ad7ed7d194da8 {type DDRAWIDDRAWSURFACEGBL_0bb4ce1abb6e as DDRAWIDDRAWSURFACEGBL}
+
+pub using @378ad7ed7d194da8 {type DDRAWIDDRAWSURFACEGBLAnonymous1EUnion_05cd9466223c as DDRAWIDDRAWSURFACEGBLAnonymous1EUnion}
+
+pub using @378ad7ed7d194da8 {type DDRAWIDDRAWSURFACEGBLAnonymous2EUnion_e059b4ee19b6 as DDRAWIDDRAWSURFACEGBLAnonymous2EUnion}
+
+pub using @378ad7ed7d194da8 {type DDRAWIDDRAWSURFACEGBLAnonymous3EUnion_ddb93e04e11e as DDRAWIDDRAWSURFACEGBLAnonymous3EUnion}
+
+pub using @378ad7ed7d194da8 {type DDRAWIDDRAWSURFACEGBLAnonymous4EUnion_3281868db331 as DDRAWIDDRAWSURFACEGBLAnonymous4EUnion}
+
+pub using @378ad7ed7d194da8 {type DDRAWIDDRAWSURFACEGBLMORE_436388deec86 as DDRAWIDDRAWSURFACEGBLMORE}
+
+pub using @378ad7ed7d194da8 {type DDRAWIDDRAWSURFACEGBLMOREAnonymousEUnion_f8f7f99c374f as DDRAWIDDRAWSURFACEGBLMOREAnonymousEUnion}
+
+pub using @378ad7ed7d194da8 {type DDRAWIDDRAWSURFACEINT_02e6ebb63191 as DDRAWIDDRAWSURFACEINT}
+
+pub using @378ad7ed7d194da8 {type DDRAWIDDRAWSURFACELCL_4e0f3d590277 as DDRAWIDDRAWSURFACELCL}
+
+pub using @378ad7ed7d194da8 {type DDRAWIDDRAWSURFACELCLAnonymous1EUnion_b0addb971454 as DDRAWIDDRAWSURFACELCLAnonymous1EUnion}
+
+pub using @378ad7ed7d194da8 {type DDRAWIDDRAWSURFACELCLAnonymous2EUnion_69d37a69cfc4 as DDRAWIDDRAWSURFACELCLAnonymous2EUnion}
+
+pub using @378ad7ed7d194da8 {type DDRAWIDDRAWSURFACEMORE_394da7d24ba4 as DDRAWIDDRAWSURFACEMORE}
+
+pub using @378ad7ed7d194da8 {type DDRAWIDDVIDEOPORTINT_0b4368e58390 as DDRAWIDDVIDEOPORTINT}
+
+pub using @378ad7ed7d194da8 {type DDRAWIDDVIDEOPORTLCL_1addc7a1cd05 as DDRAWIDDVIDEOPORTLCL}
+
+pub using @378ad7ed7d194da8 {type DDRAWIDIRECTDRAWGBL_9b601b19dcda as DDRAWIDIRECTDRAWGBL}
+
+pub using @378ad7ed7d194da8 {type DDRAWIDIRECTDRAWINT_c62310bd71ed as DDRAWIDIRECTDRAWINT}
+
+pub using @378ad7ed7d194da8 {type DDRAWIDIRECTDRAWLCL_671336903d82 as DDRAWIDIRECTDRAWLCL}
+
+pub using @378ad7ed7d194da8 {type DDRENDERMOCOMPDATA_8901d0dbddbb as DDRENDERMOCOMPDATA}
+
+pub using @378ad7ed7d194da8 {type DDRGBA_a3e456e1b555 as DDRGBA}
+
+pub using @378ad7ed7d194da8 {type DDSCAPS_e8151402681b as DDSCAPS}
+
+pub using @378ad7ed7d194da8 {type DDSCAPS2_e41252e3676a as DDSCAPS2}
+
+pub using @378ad7ed7d194da8 {type DDSCAPS2AnonymousEUnion_2458813510bb as DDSCAPS2AnonymousEUnion}
+
+pub using @378ad7ed7d194da8 {type DDSCAPSEX_96563c8abb3c as DDSCAPSEX}
+
+pub using @378ad7ed7d194da8 {type DDSCAPSEXAnonymousEUnion_eefee783de98 as DDSCAPSEXAnonymousEUnion}
+
+pub using @378ad7ed7d194da8 {type DDSETCLIPLISTDATA_0a030b46ee2f as DDSETCLIPLISTDATA}
+
+pub using @378ad7ed7d194da8 {type DDSETCOLORKEYDATA_83c02fe9125f as DDSETCOLORKEYDATA}
+
+pub using @378ad7ed7d194da8 {type DDSETENTRIESDATA_edab2884979e as DDSETENTRIESDATA}
+
+pub using @378ad7ed7d194da8 {type DDSETEXCLUSIVEMODEDATA_7e539bb7486a as DDSETEXCLUSIVEMODEDATA}
+
+pub using @378ad7ed7d194da8 {type DDSETOVERLAYPOSITIONDATA_2b7962960ef4 as DDSETOVERLAYPOSITIONDATA}
+
+pub using @378ad7ed7d194da8 {type DDSETPALETTEDATA_bea104f1e2d3 as DDSETPALETTEDATA}
+
+pub using @378ad7ed7d194da8 {type DDSETSTATEININFO_26a332ebdf69 as DDSETSTATEININFO}
+
+pub using @378ad7ed7d194da8 {type DDSETSTATEOUTINFO_6bb941766bfb as DDSETSTATEOUTINFO}
+
+pub using @378ad7ed7d194da8 {type DDSKIPNEXTFIELDINFO_7081eabf46d9 as DDSKIPNEXTFIELDINFO}
+
+pub using @378ad7ed7d194da8 {type DDSTEREOMODE_017cb16b2339 as DDSTEREOMODE}
+
+pub using @378ad7ed7d194da8 {type DDSTEREOMODE_f3bc27a333c5 as DDSTEREOMODE_no_args}
+
+pub using @378ad7ed7d194da8 {type DDSURFACECALLBACKS_8fc7881222ec as DDSURFACECALLBACKS}
+
+pub using @378ad7ed7d194da8 {type DDSURFACEDATA_6f445badb4e8 as DDSURFACEDATA}
+
+pub using @378ad7ed7d194da8 {type DDSURFACEDESC_b2021e4d807a as DDSURFACEDESC}
+
+pub using @378ad7ed7d194da8 {type DDSURFACEDESC2_bfab2a348ba0 as DDSURFACEDESC2}
+
+pub using @378ad7ed7d194da8 {type DDSURFACEDESC2Anonymous1EUnion_06d05a2bd473 as DDSURFACEDESC2Anonymous1EUnion}
+
+pub using @378ad7ed7d194da8 {type DDSURFACEDESC2Anonymous2EUnion_368a37be57d8 as DDSURFACEDESC2Anonymous2EUnion}
+
+pub using @378ad7ed7d194da8 {type DDSURFACEDESC2Anonymous3EUnion_dc3e8515361c as DDSURFACEDESC2Anonymous3EUnion}
+
+pub using @378ad7ed7d194da8 {type DDSURFACEDESC2Anonymous4EUnion_542b07e7b0dc as DDSURFACEDESC2Anonymous4EUnion}
+
+pub using @378ad7ed7d194da8 {type DDSURFACEDESC2Anonymous5EUnion_033a547b3ee3 as DDSURFACEDESC2Anonymous5EUnion}
+
+pub using @378ad7ed7d194da8 {type DDSURFACEDESCAnonymous1EUnion_3fddfc641eb4 as DDSURFACEDESCAnonymous1EUnion}
+
+pub using @378ad7ed7d194da8 {type DDSURFACEDESCAnonymous2EUnion_5b41ff529dad as DDSURFACEDESCAnonymous2EUnion}
+
+pub using @378ad7ed7d194da8 {type DDSURFACEGLOBAL_8861d4b3b6f7 as DDSURFACEGLOBAL}
+
+pub using @378ad7ed7d194da8 {type DDSURFACEGLOBALAnonymous1EUnion_9a2d5453140b as DDSURFACEGLOBALAnonymous1EUnion}
+
+pub using @378ad7ed7d194da8 {type DDSURFACEGLOBALAnonymous2EUnion_96bd4e815474 as DDSURFACEGLOBALAnonymous2EUnion}
+
+pub using @378ad7ed7d194da8 {type DDSURFACEGLOBALAnonymous3EUnion_954c567e62fc as DDSURFACEGLOBALAnonymous3EUnion}
+
+pub using @378ad7ed7d194da8 {type DDSURFACEINT_010ad9e81b06 as DDSURFACEINT}
+
+pub using @378ad7ed7d194da8 {type DDSURFACELOCAL_dccc1c972e04 as DDSURFACELOCAL}
+
+pub using @378ad7ed7d194da8 {type DDSURFACELOCALAnonymous1EUnion_a23b85617d99 as DDSURFACELOCALAnonymous1EUnion}
+
+pub using @378ad7ed7d194da8 {type DDSURFACELOCALAnonymous2EUnion_0843f646526f as DDSURFACELOCALAnonymous2EUnion}
+
+pub using @378ad7ed7d194da8 {type DDSURFACEMORE_94ab0ce5c07e as DDSURFACEMORE}
+
+pub using @378ad7ed7d194da8 {type DDSYNCSURFACEDATA_f7dfeb5a5785 as DDSYNCSURFACEDATA}
+
+pub using @378ad7ed7d194da8 {type DDSYNCVIDEOPORTDATA_15a00b3cbf5f as DDSYNCVIDEOPORTDATA}
+
+pub using @378ad7ed7d194da8 {type DDTRANSFERININFO_b70c66f9626d as DDTRANSFERININFO}
+
+pub using @378ad7ed7d194da8 {type DDTRANSFEROUTINFO_7d6469fdc1b5 as DDTRANSFEROUTINFO}
+
+pub using @378ad7ed7d194da8 {type DDUNLOCKDATA_61dc682dbe2a as DDUNLOCKDATA}
+
+pub using @378ad7ed7d194da8 {type DDUPDATENONLOCALHEAPDATA_9194ff81c704 as DDUPDATENONLOCALHEAPDATA}
+
+pub using @378ad7ed7d194da8 {type DDUPDATEOVERLAYDATA_5a9db65fb113 as DDUPDATEOVERLAYDATA}
+
+pub using @378ad7ed7d194da8 {type DDUPDATEVPORTDATA_5bf0f1711136 as DDUPDATEVPORTDATA}
+
+pub using @378ad7ed7d194da8 {type DDVERSIONDATA_bfc1a1deb964 as DDVERSIONDATA}
+
+pub using @378ad7ed7d194da8 {type DDVIDEOPORTBANDWIDTH_10d6650773ec as DDVIDEOPORTBANDWIDTH}
+
+pub using @378ad7ed7d194da8 {type DDVIDEOPORTCALLBACKS_a8c2c16c7702 as DDVIDEOPORTCALLBACKS}
+
+pub using @378ad7ed7d194da8 {type DDVIDEOPORTCAPS_5846baf4f1b1 as DDVIDEOPORTCAPS}
+
+pub using @378ad7ed7d194da8 {type DDVIDEOPORTCONNECT_b680fe3ccb65 as DDVIDEOPORTCONNECT}
+
+pub using @378ad7ed7d194da8 {type DDVIDEOPORTDATA_bbb559d7b96e as DDVIDEOPORTDATA}
+
+pub using @378ad7ed7d194da8 {type DDVIDEOPORTDESC_9dc0e179c24a as DDVIDEOPORTDESC}
+
+pub using @378ad7ed7d194da8 {type DDVIDEOPORTINFO_1772a1e2c80b as DDVIDEOPORTINFO}
+
+pub using @378ad7ed7d194da8 {type DDVIDEOPORTLOCAL_340f595c33ce as DDVIDEOPORTLOCAL}
+
+pub using @378ad7ed7d194da8 {type DDVIDEOPORTNOTIFY_2c3a9b8aff74 as DDVIDEOPORTNOTIFY}
+
+pub using @378ad7ed7d194da8 {type DDVIDEOPORTSTATUS_9b73bde361c3 as DDVIDEOPORTSTATUS}
+
+pub using @378ad7ed7d194da8 {type DDVPORTCOLORDATA_04a7b15850e5 as DDVPORTCOLORDATA}
+
+pub using @378ad7ed7d194da8 {type DDWAITFORVERTICALBLANKDATA_9ed5fb2aad80 as DDWAITFORVERTICALBLANKDATA}
+
+pub using @378ad7ed7d194da8 {type DDWAITFORVPORTSYNCDATA_7a6a22e5d661 as DDWAITFORVPORTSYNCDATA}
+
+pub using @378ad7ed7d194da8 {type DXAPIINTERFACE_90f2b33eaa8b as DXAPIINTERFACE}
+
+pub using @378ad7ed7d194da8 {type DXIRQDATA_cc6a9d2154e5 as DXIRQDATA}
+
+pub using @378ad7ed7d194da8 {type HEAPALIAS_7f46c0039a47 as HEAPALIAS}
+
+pub using @378ad7ed7d194da8 {type HEAPALIASINFO_3e19b40bb8ab as HEAPALIASINFO}
+
+pub using @378ad7ed7d194da8 {type HEAPALIGNMENT_dd9934af87ab as HEAPALIGNMENT}
+
+pub using @378ad7ed7d194da8 {type IDDVideoPortContainer_4fb2351e94e1 as IDDVideoPortContainer}
+
+pub using @378ad7ed7d194da8 {type IDirectDraw_d676640664e0 as IDirectDraw}
+
+pub using @378ad7ed7d194da8 {type IDirectDraw2_9ff66755682f as IDirectDraw2}
+
+pub using @378ad7ed7d194da8 {type IDirectDraw4_8cd604865d16 as IDirectDraw4}
+
+pub using @378ad7ed7d194da8 {type IDirectDraw7_cc35fae2a354 as IDirectDraw7}
+
+pub using @378ad7ed7d194da8 {type IDirectDrawClipper_53b277af2d86 as IDirectDrawClipper}
+
+pub using @378ad7ed7d194da8 {type IDirectDrawColorControl_a0aaa16dfcfb as IDirectDrawColorControl}
+
+pub using @378ad7ed7d194da8 {type IDirectDrawGammaControl_1fcf624c696b as IDirectDrawGammaControl}
+
+pub using @378ad7ed7d194da8 {type IDirectDrawKernel_9923479d5a61 as IDirectDrawKernel}
+
+pub using @378ad7ed7d194da8 {type IDirectDrawPalette_dd6b9b4f4e58 as IDirectDrawPalette}
+
+pub using @378ad7ed7d194da8 {type IDirectDrawSurface_f46410ca95f8 as IDirectDrawSurface}
+
+pub using @378ad7ed7d194da8 {type IDirectDrawSurface2_333ea0f24fa6 as IDirectDrawSurface2}
+
+pub using @378ad7ed7d194da8 {type IDirectDrawSurface3_b2e391a460de as IDirectDrawSurface3}
+
+pub using @378ad7ed7d194da8 {type IDirectDrawSurface4_5d580277a070 as IDirectDrawSurface4}
+
+pub using @378ad7ed7d194da8 {type IDirectDrawSurface7_f439051416dc as IDirectDrawSurface7}
+
+pub using @378ad7ed7d194da8 {type IDirectDrawSurfaceKernel_64b4fb34c16e as IDirectDrawSurfaceKernel}
+
+pub using @378ad7ed7d194da8 {type IDirectDrawVideoPort_74f0ecc633f7 as IDirectDrawVideoPort}
+
+pub using @378ad7ed7d194da8 {type IDirectDrawVideoPortNotify_aa1cd4214b50 as IDirectDrawVideoPortNotify}
+
+pub using @378ad7ed7d194da8 {type IUNKNOWNLIST_dabcb6311216 as IUNKNOWNLIST}
+
+pub using @378ad7ed7d194da8 {type LPCLIPPERCALLBACK_db4d4e927e07 as LPCLIPPERCALLBACK}
+
+pub using @378ad7ed7d194da8 {type LPDD32BITDRIVERINIT_8e35f0ec00a0 as LPDD32BITDRIVERINIT}
+
+pub using @378ad7ed7d194da8 {type LPDDENUMCALLBACKA_72c2ff960a55 as LPDDENUMCALLBACKA}
+
+pub using @378ad7ed7d194da8 {type LPDDENUMCALLBACKEXA_9eb4e02d6a88 as LPDDENUMCALLBACKEXA}
+
+pub using @378ad7ed7d194da8 {type LPDDENUMCALLBACKEXW_093702103d97 as LPDDENUMCALLBACKEXW}
+
+pub using @378ad7ed7d194da8 {type LPDDENUMCALLBACKW_60d0d409918e as LPDDENUMCALLBACKW}
+
+pub using @378ad7ed7d194da8 {type LPDDENUMMODESCALLBACK_cdeabede8bc1 as LPDDENUMMODESCALLBACK}
+
+pub using @378ad7ed7d194da8 {type LPDDENUMMODESCALLBACK2_c7ac0b9fb163 as LPDDENUMMODESCALLBACK2}
+
+pub using @378ad7ed7d194da8 {type LPDDENUMSURFACESCALLBACK_33f0f58fb996 as LPDDENUMSURFACESCALLBACK}
+
+pub using @378ad7ed7d194da8 {type LPDDENUMSURFACESCALLBACK2_5aaa7a2b3824 as LPDDENUMSURFACESCALLBACK2}
+
+pub using @378ad7ed7d194da8 {type LPDDENUMSURFACESCALLBACK7_1ded3a9ca845 as LPDDENUMSURFACESCALLBACK7}
+
+pub using @378ad7ed7d194da8 {type LPDDENUMVIDEOCALLBACK_a5e9fed1b721 as LPDDENUMVIDEOCALLBACK}
+
+pub using @378ad7ed7d194da8 {type LPDDFXROP_efba82ab328c as LPDDFXROP}
+
+pub using @378ad7ed7d194da8 {type LPDDGAMMACALIBRATORPROC_a1dc7decc1ff as LPDDGAMMACALIBRATORPROC}
+
+pub using @378ad7ed7d194da8 {type LPDDHALCANCREATESURFACE_58dfc109e789 as LPDDHALCANCREATESURFACE}
+
+pub using @378ad7ed7d194da8 {type LPDDHALCOLORCBCOLORCONTROL_ac8b2bfbe857 as LPDDHALCOLORCBCOLORCONTROL}
+
+pub using @378ad7ed7d194da8 {type LPDDHALCREATEPALETTE_bf702bc9d31c as LPDDHALCREATEPALETTE}
+
+pub using @378ad7ed7d194da8 {type LPDDHALCREATESURFACE_7fb0be5af23d as LPDDHALCREATESURFACE}
+
+pub using @378ad7ed7d194da8 {type LPDDHALCREATESURFACEEX_625d3738a97c as LPDDHALCREATESURFACEEX}
+
+pub using @378ad7ed7d194da8 {type LPDDHALDESTROYDDLOCAL_50b5cbf51771 as LPDDHALDESTROYDDLOCAL}
+
+pub using @378ad7ed7d194da8 {type LPDDHALDESTROYDRIVER_7f592468134e as LPDDHALDESTROYDRIVER}
+
+pub using @378ad7ed7d194da8 {type LPDDHALEXEBUFCBCANCREATEEXEBUF_210174549e2b as LPDDHALEXEBUFCBCANCREATEEXEBUF}
+
+pub using @378ad7ed7d194da8 {type LPDDHALEXEBUFCBCREATEEXEBUF_e520ec11d3f7 as LPDDHALEXEBUFCBCREATEEXEBUF}
+
+pub using @378ad7ed7d194da8 {type LPDDHALEXEBUFCBDESTROYEXEBUF_f476c4225b12 as LPDDHALEXEBUFCBDESTROYEXEBUF}
+
+pub using @378ad7ed7d194da8 {type LPDDHALEXEBUFCBLOCKEXEBUF_194c281fb173 as LPDDHALEXEBUFCBLOCKEXEBUF}
+
+pub using @378ad7ed7d194da8 {type LPDDHALEXEBUFCBUNLOCKEXEBUF_bddf0a967226 as LPDDHALEXEBUFCBUNLOCKEXEBUF}
+
+pub using @378ad7ed7d194da8 {type LPDDHALFLIPTOGDISURFACE_5cc61454bb6c as LPDDHALFLIPTOGDISURFACE}
+
+pub using @378ad7ed7d194da8 {type LPDDHALGETAVAILDRIVERMEMORY_2a6c585db4a4 as LPDDHALGETAVAILDRIVERMEMORY}
+
+pub using @378ad7ed7d194da8 {type LPDDHALGETDRIVERINFO_036a9b87eebf as LPDDHALGETDRIVERINFO}
+
+pub using @378ad7ed7d194da8 {type LPDDHALGETDRIVERSTATE_d1ab5309414d as LPDDHALGETDRIVERSTATE}
+
+pub using @378ad7ed7d194da8 {type LPDDHALGETHEAPALIGNMENT_3d92628080f6 as LPDDHALGETHEAPALIGNMENT}
+
+pub using @378ad7ed7d194da8 {type LPDDHALGETSCANLINE_24196a92dce0 as LPDDHALGETSCANLINE}
+
+pub using @378ad7ed7d194da8 {type LPDDHALKERNELCBSYNCSURFACE_469918b67439 as LPDDHALKERNELCBSYNCSURFACE}
+
+pub using @378ad7ed7d194da8 {type LPDDHALKERNELCBSYNCVIDEOPORT_80148c5aff31 as LPDDHALKERNELCBSYNCVIDEOPORT}
+
+pub using @378ad7ed7d194da8 {type LPDDHALMOCOMPCBBEGINFRAME_c76d3718129f as LPDDHALMOCOMPCBBEGINFRAME}
+
+pub using @378ad7ed7d194da8 {type LPDDHALMOCOMPCBCREATE_97527504243c as LPDDHALMOCOMPCBCREATE}
+
+pub using @378ad7ed7d194da8 {type LPDDHALMOCOMPCBDESTROY_c5d4f52935d3 as LPDDHALMOCOMPCBDESTROY}
+
+pub using @378ad7ed7d194da8 {type LPDDHALMOCOMPCBENDFRAME_87376d65ad81 as LPDDHALMOCOMPCBENDFRAME}
+
+pub using @378ad7ed7d194da8 {type LPDDHALMOCOMPCBGETCOMPBUFFINFO_ce701604e7c6 as LPDDHALMOCOMPCBGETCOMPBUFFINFO}
+
+pub using @378ad7ed7d194da8 {type LPDDHALMOCOMPCBGETFORMATS_09b590cd5669 as LPDDHALMOCOMPCBGETFORMATS}
+
+pub using @378ad7ed7d194da8 {type LPDDHALMOCOMPCBGETGUIDS_5aef582111f4 as LPDDHALMOCOMPCBGETGUIDS}
+
+pub using @378ad7ed7d194da8 {type LPDDHALMOCOMPCBGETINTERNALINFO_f88f7e25e4cf as LPDDHALMOCOMPCBGETINTERNALINFO}
+
+pub using @378ad7ed7d194da8 {type LPDDHALMOCOMPCBQUERYSTATUS_cea416ea953e as LPDDHALMOCOMPCBQUERYSTATUS}
+
+pub using @378ad7ed7d194da8 {type LPDDHALMOCOMPCBRENDER_796a9e1f7c8b as LPDDHALMOCOMPCBRENDER}
+
+pub using @378ad7ed7d194da8 {type LPDDHALPALCBDESTROYPALETTE_7b52a6fbf514 as LPDDHALPALCBDESTROYPALETTE}
+
+pub using @378ad7ed7d194da8 {type LPDDHALPALCBSETENTRIES_372b95a63386 as LPDDHALPALCBSETENTRIES}
+
+pub using @378ad7ed7d194da8 {type LPDDHALSETCOLORKEY_f80f6d01a798 as LPDDHALSETCOLORKEY}
+
+pub using @378ad7ed7d194da8 {type LPDDHALSETEXCLUSIVEMODE_35ea40cb8925 as LPDDHALSETEXCLUSIVEMODE}
+
+pub using @378ad7ed7d194da8 {type LPDDHALSETINFO_c3afb86adfa9 as LPDDHALSETINFO}
+
+pub using @378ad7ed7d194da8 {type LPDDHALSETMODE_76a05fdd00f3 as LPDDHALSETMODE}
+
+pub using @378ad7ed7d194da8 {type LPDDHALSURFCBADDATTACHEDSURFACE_4e232efcc9fa as LPDDHALSURFCBADDATTACHEDSURFACE}
+
+pub using @378ad7ed7d194da8 {type LPDDHALSURFCBBLT_a03be75cc7ca as LPDDHALSURFCBBLT}
+
+pub using @378ad7ed7d194da8 {type LPDDHALSURFCBDESTROYSURFACE_785b462cb790 as LPDDHALSURFCBDESTROYSURFACE}
+
+pub using @378ad7ed7d194da8 {type LPDDHALSURFCBFLIP_5d29d2604722 as LPDDHALSURFCBFLIP}
+
+pub using @378ad7ed7d194da8 {type LPDDHALSURFCBGETBLTSTATUS_b678e06be4e2 as LPDDHALSURFCBGETBLTSTATUS}
+
+pub using @378ad7ed7d194da8 {type LPDDHALSURFCBGETFLIPSTATUS_02caecd12c3e as LPDDHALSURFCBGETFLIPSTATUS}
+
+pub using @378ad7ed7d194da8 {type LPDDHALSURFCBLOCK_a599ae781712 as LPDDHALSURFCBLOCK}
+
+pub using @378ad7ed7d194da8 {type LPDDHALSURFCBSETCLIPLIST_6b2376f34f53 as LPDDHALSURFCBSETCLIPLIST}
+
+pub using @378ad7ed7d194da8 {type LPDDHALSURFCBSETCOLORKEY_6c73ca6fcec0 as LPDDHALSURFCBSETCOLORKEY}
+
+pub using @378ad7ed7d194da8 {type LPDDHALSURFCBSETOVERLAYPOSITION_df5b518d17ec as LPDDHALSURFCBSETOVERLAYPOSITION}
+
+pub using @378ad7ed7d194da8 {type LPDDHALSURFCBSETPALETTE_93147a898a7a as LPDDHALSURFCBSETPALETTE}
+
+pub using @378ad7ed7d194da8 {type LPDDHALSURFCBUNLOCK_655344c9e650 as LPDDHALSURFCBUNLOCK}
+
+pub using @378ad7ed7d194da8 {type LPDDHALSURFCBUPDATEOVERLAY_b15e2e0f7f78 as LPDDHALSURFCBUPDATEOVERLAY}
+
+pub using @378ad7ed7d194da8 {type LPDDHALUPDATENONLOCALHEAP_fab06527a39c as LPDDHALUPDATENONLOCALHEAP}
+
+pub using @378ad7ed7d194da8 {type LPDDHALVIDMEMALLOC_3ee322348376 as LPDDHALVIDMEMALLOC}
+
+pub using @378ad7ed7d194da8 {type LPDDHALVIDMEMFREE_849593213878 as LPDDHALVIDMEMFREE}
+
+pub using @378ad7ed7d194da8 {type LPDDHALVPORTCBCANCREATEVIDEOPORT_a92fcd5a0c34 as LPDDHALVPORTCBCANCREATEVIDEOPORT}
+
+pub using @378ad7ed7d194da8 {type LPDDHALVPORTCBCOLORCONTROL_5366fe447569 as LPDDHALVPORTCBCOLORCONTROL}
+
+pub using @378ad7ed7d194da8 {type LPDDHALVPORTCBCREATEVIDEOPORT_d6e700a8e329 as LPDDHALVPORTCBCREATEVIDEOPORT}
+
+pub using @378ad7ed7d194da8 {type LPDDHALVPORTCBDESTROYVPORT_e3d744971c13 as LPDDHALVPORTCBDESTROYVPORT}
+
+pub using @378ad7ed7d194da8 {type LPDDHALVPORTCBFLIP_2590a1fd8ec7 as LPDDHALVPORTCBFLIP}
+
+pub using @378ad7ed7d194da8 {type LPDDHALVPORTCBGETBANDWIDTH_cfb6e854e7f3 as LPDDHALVPORTCBGETBANDWIDTH}
+
+pub using @378ad7ed7d194da8 {type LPDDHALVPORTCBGETFIELD_90cd7db02cc6 as LPDDHALVPORTCBGETFIELD}
+
+pub using @378ad7ed7d194da8 {type LPDDHALVPORTCBGETFLIPSTATUS_fdcc03b16eb5 as LPDDHALVPORTCBGETFLIPSTATUS}
+
+pub using @378ad7ed7d194da8 {type LPDDHALVPORTCBGETINPUTFORMATS_6025cc9c8953 as LPDDHALVPORTCBGETINPUTFORMATS}
+
+pub using @378ad7ed7d194da8 {type LPDDHALVPORTCBGETLINE_6c7e37224b69 as LPDDHALVPORTCBGETLINE}
+
+pub using @378ad7ed7d194da8 {type LPDDHALVPORTCBGETOUTPUTFORMATS_98717cb2c12f as LPDDHALVPORTCBGETOUTPUTFORMATS}
+
+pub using @378ad7ed7d194da8 {type LPDDHALVPORTCBGETSIGNALSTATUS_77e6a13e4c58 as LPDDHALVPORTCBGETSIGNALSTATUS}
+
+pub using @378ad7ed7d194da8 {type LPDDHALVPORTCBGETVPORTCONNECT_00f104c2ff38 as LPDDHALVPORTCBGETVPORTCONNECT}
+
+pub using @378ad7ed7d194da8 {type LPDDHALVPORTCBUPDATE_34e55f826bd6 as LPDDHALVPORTCBUPDATE}
+
+pub using @378ad7ed7d194da8 {type LPDDHALVPORTCBWAITFORSYNC_46f06e1c2122 as LPDDHALVPORTCBWAITFORSYNC}
+
+pub using @378ad7ed7d194da8 {type LPDDHALWAITFORVERTICALBLANK_75803bf30139 as LPDDHALWAITFORVERTICALBLANK}
+
+pub using @378ad7ed7d194da8 {type LPDDHELINIT_1cbd8f22a4f5 as LPDDHELINIT}
+
+pub using @378ad7ed7d194da8 {type LPDIRECTDRAWENUMERATEEXA_59b6779793dd as LPDIRECTDRAWENUMERATEEXA}
+
+pub using @378ad7ed7d194da8 {type LPDIRECTDRAWENUMERATEEXW_5639ace19776 as LPDIRECTDRAWENUMERATEEXW}
+
+pub using @378ad7ed7d194da8 {type PDDALPHABLT_9e82b851e82a as PDDALPHABLT}
+
+pub using @378ad7ed7d194da8 {type PDDCANCREATESURFACE_682d0edca4b2 as PDDCANCREATESURFACE}
+
+pub using @378ad7ed7d194da8 {type PDDCOLORCBCOLORCONTROL_4ba343d7d794 as PDDCOLORCBCOLORCONTROL}
+
+pub using @378ad7ed7d194da8 {type PDDCREATEPALETTE_f9b25d26b902 as PDDCREATEPALETTE}
+
+pub using @378ad7ed7d194da8 {type PDDCREATESURFACE_c7ac5fa14d53 as PDDCREATESURFACE}
+
+pub using @378ad7ed7d194da8 {type PDDCREATESURFACEEX_e77b3c648615 as PDDCREATESURFACEEX}
+
+pub using @378ad7ed7d194da8 {type PDDDESTROYDDLOCAL_0af6d00cf0ad as PDDDESTROYDDLOCAL}
+
+pub using @378ad7ed7d194da8 {type PDDDESTROYDRIVER_d3508f6c67d9 as PDDDESTROYDRIVER}
+
+pub using @378ad7ed7d194da8 {type PDDDESTROYDRIVERDATA_22f03c2f0be2 as PDDDESTROYDRIVERDATA}
+
+pub using @378ad7ed7d194da8 {type PDDFLIPTOGDISURFACE_eda921463ee7 as PDDFLIPTOGDISURFACE}
+
+pub using @378ad7ed7d194da8 {type PDDFREEDRIVERMEMORY_9145ea9c945d as PDDFREEDRIVERMEMORY}
+
+pub using @378ad7ed7d194da8 {type PDDGETAVAILDRIVERMEMORY_aecddbf5b271 as PDDGETAVAILDRIVERMEMORY}
+
+pub using @378ad7ed7d194da8 {type PDDGETDRIVERINFO_12ce172e9eda as PDDGETDRIVERINFO}
+
+pub using @378ad7ed7d194da8 {type PDDGETDRIVERSTATE_d0cbe1c70c09 as PDDGETDRIVERSTATE}
+
+pub using @378ad7ed7d194da8 {type PDDGETSCANLINE_051fa2ed3ef2 as PDDGETSCANLINE}
+
+pub using @378ad7ed7d194da8 {type PDDGETVPORTAUTOFLIPSURFACEDATA_695587136af7 as PDDGETVPORTAUTOFLIPSURFACEDATA}
+
+pub using @378ad7ed7d194da8 {type PDDKERNELCBSYNCSURFACE_a0b730254d81 as PDDKERNELCBSYNCSURFACE}
+
+pub using @378ad7ed7d194da8 {type PDDKERNELCBSYNCVIDEOPORT_a7afe74d1cf5 as PDDKERNELCBSYNCVIDEOPORT}
+
+pub using @378ad7ed7d194da8 {type PDDMAPMEMORY_28fe21c2e353 as PDDMAPMEMORY}
+
+pub using @378ad7ed7d194da8 {type PDDMOCOMPCBBEGINFRAME_b65e402f57bc as PDDMOCOMPCBBEGINFRAME}
+
+pub using @378ad7ed7d194da8 {type PDDMOCOMPCBCREATE_9f681be9b2ca as PDDMOCOMPCBCREATE}
+
+pub using @378ad7ed7d194da8 {type PDDMOCOMPCBDESTROY_3cb07c612012 as PDDMOCOMPCBDESTROY}
+
+pub using @378ad7ed7d194da8 {type PDDMOCOMPCBENDFRAME_226b7fc471c8 as PDDMOCOMPCBENDFRAME}
+
+pub using @378ad7ed7d194da8 {type PDDMOCOMPCBGETCOMPBUFFINFO_fdaa3a82993b as PDDMOCOMPCBGETCOMPBUFFINFO}
+
+pub using @378ad7ed7d194da8 {type PDDMOCOMPCBGETFORMATS_2cea228674e4 as PDDMOCOMPCBGETFORMATS}
+
+pub using @378ad7ed7d194da8 {type PDDMOCOMPCBGETGUIDS_9305419836ec as PDDMOCOMPCBGETGUIDS}
+
+pub using @378ad7ed7d194da8 {type PDDMOCOMPCBGETINTERNALINFO_0a554868e082 as PDDMOCOMPCBGETINTERNALINFO}
+
+pub using @378ad7ed7d194da8 {type PDDMOCOMPCBQUERYSTATUS_e5bbe97a2396 as PDDMOCOMPCBQUERYSTATUS}
+
+pub using @378ad7ed7d194da8 {type PDDMOCOMPCBRENDER_d3c6349a369d as PDDMOCOMPCBRENDER}
+
+pub using @378ad7ed7d194da8 {type PDDPALCBDESTROYPALETTE_0a48e010a6fa as PDDPALCBDESTROYPALETTE}
+
+pub using @378ad7ed7d194da8 {type PDDPALCBSETENTRIES_208643735bd2 as PDDPALCBSETENTRIES}
+
+pub using @378ad7ed7d194da8 {type PDDSETCOLORKEY_b86c30a25367 as PDDSETCOLORKEY}
+
+pub using @378ad7ed7d194da8 {type PDDSETEXCLUSIVEMODE_6a8f51c6e71d as PDDSETEXCLUSIVEMODE}
+
+pub using @378ad7ed7d194da8 {type PDDSETMODE_e561bd020a0c as PDDSETMODE}
+
+pub using @378ad7ed7d194da8 {type PDDSETMODEDATA_1e10cf35f735 as PDDSETMODEDATA}
+
+pub using @378ad7ed7d194da8 {type PDDSURFCBADDATTACHEDSURFACE_1c2c42aef42b as PDDSURFCBADDATTACHEDSURFACE}
+
+pub using @378ad7ed7d194da8 {type PDDSURFCBBLT_c155da0b11a0 as PDDSURFCBBLT}
+
+pub using @378ad7ed7d194da8 {type PDDSURFCBDESTROYSURFACE_7c1518cf4f7e as PDDSURFCBDESTROYSURFACE}
+
+pub using @378ad7ed7d194da8 {type PDDSURFCBFLIP_6192b385dd2a as PDDSURFCBFLIP}
+
+pub using @378ad7ed7d194da8 {type PDDSURFCBGETBLTSTATUS_dfa0a25d163b as PDDSURFCBGETBLTSTATUS}
+
+pub using @378ad7ed7d194da8 {type PDDSURFCBGETFLIPSTATUS_9b8859091ac4 as PDDSURFCBGETFLIPSTATUS}
+
+pub using @378ad7ed7d194da8 {type PDDSURFCBLOCK_6a18b27f1de2 as PDDSURFCBLOCK}
+
+pub using @378ad7ed7d194da8 {type PDDSURFCBSETCLIPLIST_5642a21f9fe1 as PDDSURFCBSETCLIPLIST}
+
+pub using @378ad7ed7d194da8 {type PDDSURFCBSETCOLORKEY_1e1898b54b2b as PDDSURFCBSETCOLORKEY}
+
+pub using @378ad7ed7d194da8 {type PDDSURFCBSETOVERLAYPOSITION_a7b42341db41 as PDDSURFCBSETOVERLAYPOSITION}
+
+pub using @378ad7ed7d194da8 {type PDDSURFCBSETPALETTE_036e27d823f6 as PDDSURFCBSETPALETTE}
+
+pub using @378ad7ed7d194da8 {type PDDSURFCBUNLOCK_f544ecba44f7 as PDDSURFCBUNLOCK}
+
+pub using @378ad7ed7d194da8 {type PDDSURFCBUPDATEOVERLAY_ddf2c5520b5a as PDDSURFCBUPDATEOVERLAY}
+
+pub using @378ad7ed7d194da8 {type PDDVPORTCBCANCREATEVIDEOPORT_037aa1720d86 as PDDVPORTCBCANCREATEVIDEOPORT}
+
+pub using @378ad7ed7d194da8 {type PDDVPORTCBCOLORCONTROL_b6e37d764228 as PDDVPORTCBCOLORCONTROL}
+
+pub using @378ad7ed7d194da8 {type PDDVPORTCBCREATEVIDEOPORT_13173096639a as PDDVPORTCBCREATEVIDEOPORT}
+
+pub using @378ad7ed7d194da8 {type PDDVPORTCBDESTROYVPORT_cfecddcec26b as PDDVPORTCBDESTROYVPORT}
+
+pub using @378ad7ed7d194da8 {type PDDVPORTCBFLIP_b62b86aecf31 as PDDVPORTCBFLIP}
+
+pub using @378ad7ed7d194da8 {type PDDVPORTCBGETAUTOFLIPSURF_e1fe4cb90366 as PDDVPORTCBGETAUTOFLIPSURF}
+
+pub using @378ad7ed7d194da8 {type PDDVPORTCBGETBANDWIDTH_2a888b55c8aa as PDDVPORTCBGETBANDWIDTH}
+
+pub using @378ad7ed7d194da8 {type PDDVPORTCBGETFIELD_c62e51027a6e as PDDVPORTCBGETFIELD}
+
+pub using @378ad7ed7d194da8 {type PDDVPORTCBGETFLIPSTATUS_ecddfbf02d73 as PDDVPORTCBGETFLIPSTATUS}
+
+pub using @378ad7ed7d194da8 {type PDDVPORTCBGETINPUTFORMATS_55a84b861272 as PDDVPORTCBGETINPUTFORMATS}
+
+pub using @378ad7ed7d194da8 {type PDDVPORTCBGETLINE_5c3c5ad1fcd8 as PDDVPORTCBGETLINE}
+
+pub using @378ad7ed7d194da8 {type PDDVPORTCBGETOUTPUTFORMATS_4ea695dd208a as PDDVPORTCBGETOUTPUTFORMATS}
+
+pub using @378ad7ed7d194da8 {type PDDVPORTCBGETSIGNALSTATUS_980ef6eb29f0 as PDDVPORTCBGETSIGNALSTATUS}
+
+pub using @378ad7ed7d194da8 {type PDDVPORTCBGETVPORTCONNECT_a4cceb707ef7 as PDDVPORTCBGETVPORTCONNECT}
+
+pub using @378ad7ed7d194da8 {type PDDVPORTCBUPDATE_7c4935a93f68 as PDDVPORTCBUPDATE}
+
+pub using @378ad7ed7d194da8 {type PDDVPORTCBWAITFORSYNC_db81c0f486dd as PDDVPORTCBWAITFORSYNC}
+
+pub using @378ad7ed7d194da8 {type PDDWAITFORVERTICALBLANK_af080d727e6d as PDDWAITFORVERTICALBLANK}
+
+pub using @378ad7ed7d194da8 {type PDXBOBNEXTFIELD_225daf2c27de as PDXBOBNEXTFIELD}
+
+pub using @378ad7ed7d194da8 {type PDXENABLEIRQ_7c853d11b905 as PDXENABLEIRQ}
+
+pub using @378ad7ed7d194da8 {type PDXFLIPOVERLAY_a28a7042dba4 as PDXFLIPOVERLAY}
+
+pub using @378ad7ed7d194da8 {type PDXFLIPVIDEOPORT_ddd2ec8e10dd as PDXFLIPVIDEOPORT}
+
+pub using @378ad7ed7d194da8 {type PDXGETCURRENTAUTOFLIP_220f11212a2e as PDXGETCURRENTAUTOFLIP}
+
+pub using @378ad7ed7d194da8 {type PDXGETIRQINFO_33c33432f0e1 as PDXGETIRQINFO}
+
+pub using @378ad7ed7d194da8 {type PDXGETPOLARITY_8a52997fe976 as PDXGETPOLARITY}
+
+pub using @378ad7ed7d194da8 {type PDXGETPREVIOUSAUTOFLIP_5cd0435b19ba as PDXGETPREVIOUSAUTOFLIP}
+
+pub using @378ad7ed7d194da8 {type PDXGETTRANSFERSTATUS_94cfd084c63e as PDXGETTRANSFERSTATUS}
+
+pub using @378ad7ed7d194da8 {type PDXIRQCALLBACK_90f7cd87d2cc as PDXIRQCALLBACK}
+
+pub using @378ad7ed7d194da8 {type PDXLOCK_4bd1eb4dd9b1 as PDXLOCK}
+
+pub using @378ad7ed7d194da8 {type PDXSETSTATE_a08ad1924f12 as PDXSETSTATE}
+
+pub using @378ad7ed7d194da8 {type PDXSKIPNEXTFIELD_5de294419718 as PDXSKIPNEXTFIELD}
+
+pub using @378ad7ed7d194da8 {type PDXTRANSFER_11b4f8976a7d as PDXTRANSFER}
+
+pub using @378ad7ed7d194da8 {type PROCESSLIST_8f10cff2268a as PROCESSLIST}
+
+pub using @378ad7ed7d194da8 {type SURFACEALIGNMENT_ac9886893418 as SURFACEALIGNMENT}
+
+pub using @378ad7ed7d194da8 {type SURFACEALIGNMENTAnonymousEUnion_9a1c32c20992 as SURFACEALIGNMENTAnonymousEUnion}
+
+pub using @378ad7ed7d194da8 {type SURFACEALIGNMENTAnonymousEUnionLinearEStruct_0b19b09c17bc as SURFACEALIGNMENTAnonymousEUnionLinearEStruct}
+
+pub using @378ad7ed7d194da8 {type SURFACEALIGNMENTAnonymousEUnionRectangularEStruct_7c50707d2572 as SURFACEALIGNMENTAnonymousEUnionRectangularEStruct}
+
+pub using @378ad7ed7d194da8 {type VIDEOMEMORY_5847c6ae2012 as VIDEOMEMORY}
+
+pub using @378ad7ed7d194da8 {type VIDEOMEMORYAnonymous1EUnion_43c0e593a0c8 as VIDEOMEMORYAnonymous1EUnion}
+
+pub using @378ad7ed7d194da8 {type VIDEOMEMORYAnonymous2EUnion_687925214681 as VIDEOMEMORYAnonymous2EUnion}
+
+pub using @378ad7ed7d194da8 {type VIDEOMEMORYINFO_89e4afa6e29a as VIDEOMEMORYINFO}
+
+pub using @378ad7ed7d194da8 {type VIDMEM_ba5bf1ea7c36 as VIDMEM}
+
+pub using @378ad7ed7d194da8 {type VIDMEMAnonymous1EUnion_3ef95000bc35 as VIDMEMAnonymous1EUnion}
+
+pub using @378ad7ed7d194da8 {type VIDMEMAnonymous2EUnion_1403870b866f as VIDMEMAnonymous2EUnion}
+
+pub using @378ad7ed7d194da8 {type VIDMEMINFO_749167948e46 as VIDMEMINFO}
+
+pub using @378ad7ed7d194da8 {type VMEMHEAP_2b9d5db14b54 as VMEMHEAP}
+
+pub using @378ad7ed7d194da8 {type VMEML_5c8a14ed6c31 as VMEML}
+
+pub using @378ad7ed7d194da8 {type VMEMR_8fcc2939475d as VMEMR}
+
+// Traits

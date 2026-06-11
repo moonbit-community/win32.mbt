@@ -1,0 +1,94 @@
+// Generated using `moon info`, DON'T EDIT IT
+package "moonbit-community/win32api/scc/2bfba2f42a4c8fb3"
+
+import {
+  "moonbit-community/win32api/runtime/core",
+  "moonbitlang/core/debug",
+  "moonbitlang/core/ref",
+}
+
+// Values
+pub let allowed_a3a621bee4af : Int
+
+pub let disallowed_572bb705fe6e : Int
+
+pub fn get_is_microsoft_account_optional_92416b83f1b5_raw(@core.RawAddress, Bytes) -> Int
+
+pub fn get_is_microsoft_account_optional_a01aeaa531ac_raw(@core.RawAddress, Bytes) -> Int
+
+pub fn get_messaging_sync_policy_0f8d19f0c313(@core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn get_messaging_sync_policy_0f8d19f0c313_raw(@core.RawAddress, @ref.Ref[Int]) -> Int
+
+pub fn get_messaging_sync_policy_724834be0d48_raw(@core.RawAddress, @ref.Ref[Int]) -> Int
+
+pub fn is_browser_allowed_a9260a02fc1a_raw(@core.RawAddress, Bytes) -> Int
+
+pub fn is_browser_allowed_c9251643581b_raw(@core.RawAddress, Bytes) -> Int
+
+pub fn is_camera_allowed_237c8ddaf748_raw(@core.RawAddress, Bytes) -> Int
+
+pub fn is_camera_allowed_baf5e33bc502_raw(@core.RawAddress, Bytes) -> Int
+
+pub fn is_microsoft_account_allowed_9dfe6b1473a7_raw(@core.RawAddress, Bytes) -> Int
+
+pub fn is_microsoft_account_allowed_bc71ee6f06a6_raw(@core.RawAddress, Bytes) -> Int
+
+pub fn is_store_allowed_099bf3643b91_raw(@core.RawAddress, Bytes) -> Int
+
+pub fn is_store_allowed_8d4407eee070_raw(@core.RawAddress, Bytes) -> Int
+
+pub let required_dbb69b6980eb : Int
+
+pub let workplace_settings_contract_d6bcf26493a5_alignment : Int
+
+pub let workplace_settings_contract_d6bcf26493a5_size : Int
+
+// Errors
+
+// Types and methods
+pub type IMdmAllowPolicyStatics_9b2263676fcb
+
+pub type IMdmPolicyStatics2_f4d0aceac745
+
+pub type IWorkplaceSettingsStatics_fd2c748ea1a7
+
+pub type MdmPolicy_ec384b061dd7
+pub fn MdmPolicy_ec384b061dd7::get_messaging_sync_policy() -> MessagingSyncPolicy_d84f9be41e41 raise @core.WindowsError
+pub fn MdmPolicy_ec384b061dd7::get_messaging_sync_policy_raw(@core.RawAddress, @ref.Ref[Int]) -> Int
+pub fn MdmPolicy_ec384b061dd7::is_browser_allowed() -> Bool raise @core.WindowsError
+pub fn MdmPolicy_ec384b061dd7::is_browser_allowed_raw(@core.RawAddress, Bytes) -> Int
+pub fn MdmPolicy_ec384b061dd7::is_camera_allowed() -> Bool raise @core.WindowsError
+pub fn MdmPolicy_ec384b061dd7::is_camera_allowed_raw(@core.RawAddress, Bytes) -> Int
+pub fn MdmPolicy_ec384b061dd7::is_microsoft_account_allowed() -> Bool raise @core.WindowsError
+pub fn MdmPolicy_ec384b061dd7::is_microsoft_account_allowed_raw(@core.RawAddress, Bytes) -> Int
+pub fn MdmPolicy_ec384b061dd7::is_store_allowed() -> Bool raise @core.WindowsError
+pub fn MdmPolicy_ec384b061dd7::is_store_allowed_raw(@core.RawAddress, Bytes) -> Int
+
+pub(all) struct MessagingSyncPolicy_d84f9be41e41(Int) derive(Compare, Eq, @debug.Debug)
+pub fn MessagingSyncPolicy_d84f9be41e41::allowed() -> Self
+pub fn MessagingSyncPolicy_d84f9be41e41::disallowed() -> Self
+pub fn MessagingSyncPolicy_d84f9be41e41::from_int(Int) -> Self
+pub fn MessagingSyncPolicy_d84f9be41e41::required() -> Self
+pub fn MessagingSyncPolicy_d84f9be41e41::to_int(Self) -> Int
+
+pub(all) struct WorkplaceSettingsContract_d6bcf26493a5 {
+  raw_buffer : @core.NativeBuffer
+}
+pub fn WorkplaceSettingsContract_d6bcf26493a5::abi_alignment() -> Int
+pub fn WorkplaceSettingsContract_d6bcf26493a5::abi_size() -> Int
+pub fn WorkplaceSettingsContract_d6bcf26493a5::bytes(Self) -> Bytes raise @core.WindowsError
+pub fn WorkplaceSettingsContract_d6bcf26493a5::from_bytes(Bytes) -> Self raise @core.WindowsError
+pub fn WorkplaceSettingsContract_d6bcf26493a5::new() -> Self raise @core.WindowsError
+pub fn WorkplaceSettingsContract_d6bcf26493a5::raw_address(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn[T] WorkplaceSettingsContract_d6bcf26493a5::with_raw_address(Self, (@core.RawAddress) -> T raise?) -> T raise
+pub impl Eq for WorkplaceSettingsContract_d6bcf26493a5
+pub impl @debug.Debug for WorkplaceSettingsContract_d6bcf26493a5
+
+pub type WorkplaceSettings_8f375d378833
+pub fn WorkplaceSettings_8f375d378833::get_is_microsoft_account_optional() -> Bool raise @core.WindowsError
+pub fn WorkplaceSettings_8f375d378833::get_is_microsoft_account_optional_raw(@core.RawAddress, Bytes) -> Int
+
+// Type aliases
+
+// Traits

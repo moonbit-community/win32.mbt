@@ -1,0 +1,130 @@
+// Generated using `moon info`, DON'T EDIT IT
+package "moonbit-community/win32api/scc/6d2662875eeef555"
+
+import {
+  "moonbit-community/win32api/runtime/com",
+  "moonbit-community/win32api/runtime/core",
+  "moonbit-community/win32api/runtime/strings",
+  "moonbitlang/core/debug",
+  "moonbitlang/core/ref",
+}
+
+// Values
+pub fn add_access_changed_11e3d830d957(@core.RawAddress, @core.RawAddress) -> Int64 raise @core.WindowsError
+
+pub fn add_access_changed_11e3d830d957_raw(@core.RawAddress, @core.RawAddress, @ref.Ref[Int64]) -> Int
+
+pub fn add_access_changed_d04b82d455ac(@core.RawAddress, @core.RawAddress) -> Int64 raise @core.WindowsError
+
+pub fn add_access_changed_d04b82d455ac_raw(@core.RawAddress, @core.RawAddress, @ref.Ref[Int64]) -> Int
+
+pub let allowed_daffe3d45254 : Int
+
+pub fn check_access_5d9e7706aed6(@core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn check_access_5d9e7706aed6_raw(@core.RawAddress, @ref.Ref[Int]) -> Int
+
+pub fn check_access_7b3a0e709328(@core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn check_access_7b3a0e709328_raw(@core.RawAddress, @ref.Ref[Int]) -> Int
+
+pub fn create_7bd611b1dd81_raw(@core.RawAddress, @core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn create_976708976b9a_raw(@core.RawAddress, @core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn create_with_process_id_for_user_2626025288c4_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, UInt, @ref.Ref[UInt64]) -> Int
+
+pub fn create_with_process_id_for_user_4a17d96adf47_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, UInt, @ref.Ref[UInt64]) -> Int
+
+pub let denied_by_system_422ca4acc03e : Int
+
+pub let denied_by_user_e88a71731ec6 : Int
+
+pub fn get_capability_name_247617df871b_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_capability_name_324b81a9c311_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_display_message_bde5f940a1f4_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_display_message_c04fc574b5fc_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_user_03d3b56ef478_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_user_8c28e19b9e00_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub let not_declared_by_app_b656e2787ea5 : Int
+
+pub fn put_display_message_b8483b3fbd05(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn put_display_message_b8483b3fbd05_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn put_display_message_f3d3e52165bb(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn put_display_message_f3d3e52165bb_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn remove_access_changed_55bd5d6f08d4(@core.RawAddress, Int64) -> Unit raise @core.WindowsError
+
+pub fn remove_access_changed_55bd5d6f08d4_raw(@core.RawAddress, Int64) -> Int
+
+pub fn remove_access_changed_7cd0a08b174c(@core.RawAddress, Int64) -> Unit raise @core.WindowsError
+
+pub fn remove_access_changed_7cd0a08b174c_raw(@core.RawAddress, Int64) -> Int
+
+pub fn request_access_async_14acbe07b251_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn request_access_async_18f504624db8_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn request_access_for_capabilities_async_2069a9580184_raw(@core.RawAddress, @core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn request_access_for_capabilities_async_e50311f457f9_raw(@core.RawAddress, @core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn request_access_for_capabilities_for_user_async_a4960f2dd2bf_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn request_access_for_capabilities_for_user_async_bf5dfbb2c01f_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub let user_prompt_required_f17acf16c1f7 : Int
+
+// Errors
+
+// Types and methods
+pub type AppCapabilityAccessChangedEventArgs_b1c9fade5490
+
+pub(all) struct AppCapabilityAccessStatus_d9c0935647c9(Int) derive(Compare, Eq, @debug.Debug)
+pub fn AppCapabilityAccessStatus_d9c0935647c9::allowed() -> Self
+pub fn AppCapabilityAccessStatus_d9c0935647c9::denied_by_system() -> Self
+pub fn AppCapabilityAccessStatus_d9c0935647c9::denied_by_user() -> Self
+pub fn AppCapabilityAccessStatus_d9c0935647c9::from_int(Int) -> Self
+pub fn AppCapabilityAccessStatus_d9c0935647c9::not_declared_by_app() -> Self
+pub fn AppCapabilityAccessStatus_d9c0935647c9::to_int(Self) -> Int
+pub fn AppCapabilityAccessStatus_d9c0935647c9::user_prompt_required() -> Self
+
+pub type AppCapability_064328c52a94
+pub fn AppCapability_064328c52a94::add_access_changed(@core.RawAddress, @core.RawAddress) -> Int64 raise @core.WindowsError
+pub fn AppCapability_064328c52a94::add_access_changed_raw(@core.RawAddress, @core.RawAddress, @ref.Ref[Int64]) -> Int
+pub fn AppCapability_064328c52a94::check_access(@core.RawAddress) -> Int raise @core.WindowsError
+pub fn AppCapability_064328c52a94::check_access_raw(@core.RawAddress, @ref.Ref[Int]) -> Int
+pub fn AppCapability_064328c52a94::create(@strings.HString) -> @com.ComPtr[Self] raise @core.WindowsError
+pub fn AppCapability_064328c52a94::create_raw(@core.RawAddress, @core.RawAddress, @ref.Ref[UInt64]) -> Int
+pub fn AppCapability_064328c52a94::create_with_process_id_for_user_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, UInt, @ref.Ref[UInt64]) -> Int
+pub fn AppCapability_064328c52a94::get_capability_name_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+pub fn AppCapability_064328c52a94::get_display_message_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+pub fn AppCapability_064328c52a94::get_user_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+pub fn AppCapability_064328c52a94::put_display_message(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+pub fn AppCapability_064328c52a94::put_display_message_raw(@core.RawAddress, @core.RawAddress) -> Int
+pub fn AppCapability_064328c52a94::remove_access_changed(@core.RawAddress, Int64) -> Unit raise @core.WindowsError
+pub fn AppCapability_064328c52a94::remove_access_changed_raw(@core.RawAddress, Int64) -> Int
+pub fn AppCapability_064328c52a94::request_access_async_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+pub fn AppCapability_064328c52a94::request_access_for_capabilities_async_raw(@core.RawAddress, @core.RawAddress, @ref.Ref[UInt64]) -> Int
+pub fn AppCapability_064328c52a94::request_access_for_capabilities_for_user_async_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub type IAppCapability2_3a866b85a3ad
+
+pub type IAppCapabilityAccessChangedEventArgs_364631eec43a
+
+pub type IAppCapabilityStatics_9770d2bc06dd
+
+pub type IAppCapability_b757d23eb8f9
+
+// Type aliases
+
+// Traits

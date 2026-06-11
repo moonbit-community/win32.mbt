@@ -1,0 +1,83 @@
+// Generated using `moon info`, DON'T EDIT IT
+package "moonbit-community/win32api/scc/7a9ab8515e059e8f"
+
+import {
+  "moonbit-community/win32api/runtime/core",
+  "moonbitlang/core/debug",
+}
+
+// Values
+pub fn operation_end_1607d87811d5(OPERATIONENDPARAMETERS_1beb0012b6b1) -> Bool raise @core.WindowsError
+
+pub fn operation_end_1607d87811d5_raw(@core.RawAddress) -> Int
+
+pub let operation_end_discard_73ae24d19974 : UInt
+
+pub fn operation_start_3e71861f1107(OPERATIONSTARTPARAMETERS_648635f45a00) -> Bool raise @core.WindowsError
+
+pub fn operation_start_3e71861f1107_raw(@core.RawAddress) -> Int
+
+pub let operation_start_trace_current_thread_8951be64c921 : UInt
+
+pub let operationendparameters_1beb0012b6b1_alignment : Int
+
+pub let operationendparameters_1beb0012b6b1_size : Int
+
+pub let operationstartparameters_648635f45a00_alignment : Int
+
+pub let operationstartparameters_648635f45a00_size : Int
+
+// Errors
+
+// Types and methods
+pub(all) struct OPERATIONENDPARAMETERSFLAGS_fd4e3a26489a(Int) derive(Compare, Eq, @debug.Debug)
+pub fn OPERATIONENDPARAMETERSFLAGS_fd4e3a26489a::from_int(Int) -> Self
+pub fn OPERATIONENDPARAMETERSFLAGS_fd4e3a26489a::operation_end_discard() -> Self
+pub fn OPERATIONENDPARAMETERSFLAGS_fd4e3a26489a::to_int(Self) -> Int
+
+pub(all) struct OPERATIONENDPARAMETERS_1beb0012b6b1 {
+  raw_buffer : @core.NativeBuffer
+}
+pub fn OPERATIONENDPARAMETERS_1beb0012b6b1::abi_alignment() -> Int
+pub fn OPERATIONENDPARAMETERS_1beb0012b6b1::abi_size() -> Int
+pub fn OPERATIONENDPARAMETERS_1beb0012b6b1::bytes(Self) -> Bytes raise @core.WindowsError
+pub fn OPERATIONENDPARAMETERS_1beb0012b6b1::flags(Self) -> OPERATIONENDPARAMETERSFLAGS_fd4e3a26489a raise @core.WindowsError
+pub fn OPERATIONENDPARAMETERS_1beb0012b6b1::from_bytes(Bytes) -> Self raise @core.WindowsError
+pub fn OPERATIONENDPARAMETERS_1beb0012b6b1::new() -> Self raise @core.WindowsError
+pub fn OPERATIONENDPARAMETERS_1beb0012b6b1::operation_id(Self) -> UInt raise @core.WindowsError
+pub fn OPERATIONENDPARAMETERS_1beb0012b6b1::raw_address(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn OPERATIONENDPARAMETERS_1beb0012b6b1::set_flags(Self, OPERATIONENDPARAMETERSFLAGS_fd4e3a26489a) -> Unit raise @core.WindowsError
+pub fn OPERATIONENDPARAMETERS_1beb0012b6b1::set_operation_id(Self, UInt) -> Unit raise @core.WindowsError
+pub fn OPERATIONENDPARAMETERS_1beb0012b6b1::set_version(Self, UInt) -> Unit raise @core.WindowsError
+pub fn OPERATIONENDPARAMETERS_1beb0012b6b1::version(Self) -> UInt raise @core.WindowsError
+pub fn[T] OPERATIONENDPARAMETERS_1beb0012b6b1::with_raw_address(Self, (@core.RawAddress) -> T raise?) -> T raise
+pub impl Eq for OPERATIONENDPARAMETERS_1beb0012b6b1
+pub impl @debug.Debug for OPERATIONENDPARAMETERS_1beb0012b6b1
+
+pub(all) struct OPERATIONSTARTFLAGS_f70c93f2ebc2(Int) derive(Compare, Eq, @debug.Debug)
+pub fn OPERATIONSTARTFLAGS_f70c93f2ebc2::from_int(Int) -> Self
+pub fn OPERATIONSTARTFLAGS_f70c93f2ebc2::operation_start_trace_current_thread() -> Self
+pub fn OPERATIONSTARTFLAGS_f70c93f2ebc2::to_int(Self) -> Int
+
+pub(all) struct OPERATIONSTARTPARAMETERS_648635f45a00 {
+  raw_buffer : @core.NativeBuffer
+}
+pub fn OPERATIONSTARTPARAMETERS_648635f45a00::abi_alignment() -> Int
+pub fn OPERATIONSTARTPARAMETERS_648635f45a00::abi_size() -> Int
+pub fn OPERATIONSTARTPARAMETERS_648635f45a00::bytes(Self) -> Bytes raise @core.WindowsError
+pub fn OPERATIONSTARTPARAMETERS_648635f45a00::flags(Self) -> OPERATIONSTARTFLAGS_f70c93f2ebc2 raise @core.WindowsError
+pub fn OPERATIONSTARTPARAMETERS_648635f45a00::from_bytes(Bytes) -> Self raise @core.WindowsError
+pub fn OPERATIONSTARTPARAMETERS_648635f45a00::new() -> Self raise @core.WindowsError
+pub fn OPERATIONSTARTPARAMETERS_648635f45a00::operation_id(Self) -> UInt raise @core.WindowsError
+pub fn OPERATIONSTARTPARAMETERS_648635f45a00::raw_address(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn OPERATIONSTARTPARAMETERS_648635f45a00::set_flags(Self, OPERATIONSTARTFLAGS_f70c93f2ebc2) -> Unit raise @core.WindowsError
+pub fn OPERATIONSTARTPARAMETERS_648635f45a00::set_operation_id(Self, UInt) -> Unit raise @core.WindowsError
+pub fn OPERATIONSTARTPARAMETERS_648635f45a00::set_version(Self, UInt) -> Unit raise @core.WindowsError
+pub fn OPERATIONSTARTPARAMETERS_648635f45a00::version(Self) -> UInt raise @core.WindowsError
+pub fn[T] OPERATIONSTARTPARAMETERS_648635f45a00::with_raw_address(Self, (@core.RawAddress) -> T raise?) -> T raise
+pub impl Eq for OPERATIONSTARTPARAMETERS_648635f45a00
+pub impl @debug.Debug for OPERATIONSTARTPARAMETERS_648635f45a00
+
+// Type aliases
+
+// Traits

@@ -1,0 +1,3886 @@
+// Generated using `moon info`, DON'T EDIT IT
+package "moonbit-community/win32api/windows/win32/devices/tapi"
+
+import {
+  "moonbit-community/win32api/runtime/core",
+  "moonbit-community/win32api/runtime/strings",
+  "moonbit-community/win32api/scc/1914f2ecd15c0dc9",
+}
+
+// Values
+pub let atyp_file : Int
+
+pub let atyp_max : Int
+
+pub let atyp_null : Int
+
+pub let atyp_ole : Int
+
+pub let atyp_picture : Int
+
+pub let cb_display_name : UInt
+
+pub let cb_email_name : UInt
+
+pub let cb_max_id_data : UInt
+
+pub let cb_sever_name : UInt
+
+pub let cb_type : UInt
+
+pub let dispidmask : UInt
+
+pub fn get_tnef_stream_codepage(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn get_tnef_stream_codepage_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub let gettnefstreamcodepage : String
+
+pub let idispaddress : UInt
+
+pub let idispaddresscapabilities : UInt
+
+pub let idispaddresstranslation : UInt
+
+pub let idispaggregatedmspaddressobj : UInt
+
+pub let idispaggregatedmspcallobj : UInt
+
+pub let idispapc : UInt
+
+pub let idispbasiccallcontrol : UInt
+
+pub let idispcallinfo : UInt
+
+pub let idispdirectory : UInt
+
+pub let idispdirobjconference : UInt
+
+pub let idispdirobject : UInt
+
+pub let idispdirobjuser : UInt
+
+pub let idispfiletrack : UInt
+
+pub let idispilsconfig : UInt
+
+pub let idisplegacyaddressmediacontrol : UInt
+
+pub let idisplegacycallmediacontrol : UInt
+
+pub let idispmediacontrol : UInt
+
+pub let idispmediaplayback : UInt
+
+pub let idispmediarecord : UInt
+
+pub let idispmediasupport : UInt
+
+pub let idispmultitrack : UInt
+
+pub let idispphone : UInt
+
+pub let idisptapi : UInt
+
+pub let idisptapicallcenter : UInt
+
+pub let initialize_negotiation : UInt
+
+pub let interfacemask : UInt
+
+pub let last_linemediamode : UInt
+
+pub let last_linerequestmode : UInt
+
+pub fn line_accept(UInt, @strings.PStr, UInt) -> Int raise @core.WindowsError
+
+pub fn line_accept_raw(UInt, @core.RawAddress, UInt) -> Int
+
+pub fn line_add_provider(@strings.PStr, @core.RawAddress, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn line_add_provider_a(@strings.PStr, @core.RawAddress, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn line_add_provider_a_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn line_add_provider_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn line_add_provider_w(@strings.PWStr, @core.RawAddress, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn line_add_provider_w_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn line_add_to_conference(UInt, UInt) -> Int raise @core.WindowsError
+
+pub fn line_add_to_conference_raw(UInt, UInt) -> Int
+
+pub let line_addressstate : Int
+
+pub fn line_agent_specific(UInt, UInt, UInt, @core.RawAddress, UInt) -> Int raise @core.WindowsError
+
+pub fn line_agent_specific_raw(UInt, UInt, UInt, @core.RawAddress, UInt) -> Int
+
+pub let line_agentsessionstatus : Int
+
+pub let line_agentspecific : Int
+
+pub let line_agentstatus : Int
+
+pub let line_agentstatusex : Int
+
+pub fn line_answer(UInt, @strings.PStr, UInt) -> Int raise @core.WindowsError
+
+pub fn line_answer_raw(UInt, @core.RawAddress, UInt) -> Int
+
+pub let line_appnewcall : Int
+
+pub let line_appnewcallhub : Int
+
+pub fn line_blind_transfer(UInt, @strings.PStr, UInt) -> Int raise @core.WindowsError
+
+pub fn line_blind_transfer_a(UInt, @strings.PStr, UInt) -> Int raise @core.WindowsError
+
+pub fn line_blind_transfer_a_raw(UInt, @core.RawAddress, UInt) -> Int
+
+pub fn line_blind_transfer_raw(UInt, @core.RawAddress, UInt) -> Int
+
+pub fn line_blind_transfer_w(UInt, @strings.PWStr, UInt) -> Int raise @core.WindowsError
+
+pub fn line_blind_transfer_w_raw(UInt, @core.RawAddress, UInt) -> Int
+
+pub let line_callhubclose : Int
+
+pub let line_callinfo : Int
+
+pub let line_callstate : Int
+
+pub let line_close : Int
+
+pub fn line_close_with_u32(UInt) -> Int raise @core.WindowsError
+
+pub fn line_close_with_u32_raw(UInt) -> Int
+
+pub fn line_complete_call(UInt, @core.RawAddress, UInt, UInt) -> Int raise @core.WindowsError
+
+pub fn line_complete_call_raw(UInt, @core.RawAddress, UInt, UInt) -> Int
+
+pub fn line_complete_transfer(UInt, UInt, @core.RawAddress, UInt) -> Int raise @core.WindowsError
+
+pub fn line_complete_transfer_raw(UInt, UInt, @core.RawAddress, UInt) -> Int
+
+pub fn line_config_dialog(UInt, @core.RawAddress, @strings.PStr) -> Int raise @core.WindowsError
+
+pub fn line_config_dialog_a(UInt, @core.RawAddress, @strings.PStr) -> Int raise @core.WindowsError
+
+pub fn line_config_dialog_a_raw(UInt, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn line_config_dialog_edit(UInt, @core.RawAddress, @strings.PStr, @core.RawAddress, UInt, @1914f2ecd15c0dc9.VARSTRING_41025a104d6a) -> Int raise @core.WindowsError
+
+pub fn line_config_dialog_edit_a(UInt, @core.RawAddress, @strings.PStr, @core.RawAddress, UInt, @1914f2ecd15c0dc9.VARSTRING_41025a104d6a) -> Int raise @core.WindowsError
+
+pub fn line_config_dialog_edit_a_raw(UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress, UInt, @core.RawAddress) -> Int
+
+pub fn line_config_dialog_edit_raw(UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress, UInt, @core.RawAddress) -> Int
+
+pub fn line_config_dialog_edit_w(UInt, @core.RawAddress, @strings.PWStr, @core.RawAddress, UInt, @1914f2ecd15c0dc9.VARSTRING_41025a104d6a) -> Int raise @core.WindowsError
+
+pub fn line_config_dialog_edit_w_raw(UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress, UInt, @core.RawAddress) -> Int
+
+pub fn line_config_dialog_raw(UInt, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn line_config_dialog_w(UInt, @core.RawAddress, @strings.PWStr) -> Int raise @core.WindowsError
+
+pub fn line_config_dialog_w_raw(UInt, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn line_config_provider(@core.RawAddress, UInt) -> Int raise @core.WindowsError
+
+pub fn line_config_provider_raw(@core.RawAddress, UInt) -> Int
+
+pub let line_create : Int
+
+pub fn line_create_agent_a(UInt, @strings.PStr?, @strings.PStr?, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn line_create_agent_a_raw(UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn line_create_agent_session_a(UInt, UInt, @strings.PStr?, UInt, @core.RawAddress, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn line_create_agent_session_a_raw(UInt, UInt, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn line_create_agent_session_w(UInt, UInt, @strings.PWStr?, UInt, @core.RawAddress, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn line_create_agent_session_w_raw(UInt, UInt, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn line_create_agent_w(UInt, @strings.PWStr?, @strings.PWStr?, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn line_create_agent_w_raw(UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn line_deallocate_call(UInt) -> Int raise @core.WindowsError
+
+pub fn line_deallocate_call_raw(UInt) -> Int
+
+pub fn line_dev_specific(UInt, UInt, UInt, @core.RawAddress, UInt) -> Int raise @core.WindowsError
+
+pub fn line_dev_specific_feature(UInt, UInt, @core.RawAddress, UInt) -> Int raise @core.WindowsError
+
+pub fn line_dev_specific_feature_raw(UInt, UInt, @core.RawAddress, UInt) -> Int
+
+pub fn line_dev_specific_raw(UInt, UInt, UInt, @core.RawAddress, UInt) -> Int
+
+pub let line_devspecific : Int
+
+pub let line_devspecificex : Int
+
+pub let line_devspecificfeature : Int
+
+pub fn line_dial(UInt, @strings.PStr, UInt) -> Int raise @core.WindowsError
+
+pub fn line_dial_a(UInt, @strings.PStr, UInt) -> Int raise @core.WindowsError
+
+pub fn line_dial_a_raw(UInt, @core.RawAddress, UInt) -> Int
+
+pub fn line_dial_raw(UInt, @core.RawAddress, UInt) -> Int
+
+pub fn line_dial_w(UInt, @strings.PWStr, UInt) -> Int raise @core.WindowsError
+
+pub fn line_dial_w_raw(UInt, @core.RawAddress, UInt) -> Int
+
+pub fn line_drop(UInt, @strings.PStr, UInt) -> Int raise @core.WindowsError
+
+pub fn line_drop_raw(UInt, @core.RawAddress, UInt) -> Int
+
+pub fn line_forward(UInt, UInt, UInt, @1914f2ecd15c0dc9.LINEFORWARDLIST_f5f69aa75ba1, UInt, @core.RawAddress, @1914f2ecd15c0dc9.LINECALLPARAMS_d52ccaf82fb4) -> Int raise @core.WindowsError
+
+pub fn line_forward_a(UInt, UInt, UInt, @1914f2ecd15c0dc9.LINEFORWARDLIST_f5f69aa75ba1, UInt, @core.RawAddress, @1914f2ecd15c0dc9.LINECALLPARAMS_d52ccaf82fb4) -> Int raise @core.WindowsError
+
+pub fn line_forward_a_raw(UInt, UInt, UInt, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn line_forward_raw(UInt, UInt, UInt, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn line_forward_w(UInt, UInt, UInt, @1914f2ecd15c0dc9.LINEFORWARDLIST_f5f69aa75ba1, UInt, @core.RawAddress, @1914f2ecd15c0dc9.LINECALLPARAMS_d52ccaf82fb4) -> Int raise @core.WindowsError
+
+pub fn line_forward_w_raw(UInt, UInt, UInt, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn line_gather_digits(UInt, UInt, @core.RawAddress, UInt, @strings.PStr, UInt, UInt) -> Int raise @core.WindowsError
+
+pub fn line_gather_digits_a(UInt, UInt, @core.RawAddress, UInt, @strings.PStr, UInt, UInt) -> Int raise @core.WindowsError
+
+pub fn line_gather_digits_a_raw(UInt, UInt, @core.RawAddress, UInt, @core.RawAddress, UInt, UInt) -> Int
+
+pub fn line_gather_digits_raw(UInt, UInt, @core.RawAddress, UInt, @core.RawAddress, UInt, UInt) -> Int
+
+pub fn line_gather_digits_w(UInt, UInt, @strings.PWStrBuffer?, @strings.PWStr, UInt, UInt) -> Int raise @core.WindowsError
+
+pub fn line_gather_digits_w_raw(UInt, UInt, @core.RawAddress, UInt, @core.RawAddress, UInt, UInt) -> Int
+
+pub let line_gatherdigits : Int
+
+pub let line_generate : Int
+
+pub fn line_generate_digits(UInt, UInt, @strings.PStr, UInt) -> Int raise @core.WindowsError
+
+pub fn line_generate_digits_a(UInt, UInt, @strings.PStr, UInt) -> Int raise @core.WindowsError
+
+pub fn line_generate_digits_a_raw(UInt, UInt, @core.RawAddress, UInt) -> Int
+
+pub fn line_generate_digits_raw(UInt, UInt, @core.RawAddress, UInt) -> Int
+
+pub fn line_generate_digits_w(UInt, UInt, @strings.PWStr, UInt) -> Int raise @core.WindowsError
+
+pub fn line_generate_digits_w_raw(UInt, UInt, @core.RawAddress, UInt) -> Int
+
+pub fn line_generate_tone(UInt, UInt, UInt, UInt, @1914f2ecd15c0dc9.LINEGENERATETONE_abcf76b2fe67) -> Int raise @core.WindowsError
+
+pub fn line_generate_tone_raw(UInt, UInt, UInt, UInt, @core.RawAddress) -> Int
+
+pub fn line_get_address_caps(UInt, UInt, UInt, UInt, UInt, @1914f2ecd15c0dc9.LINEADDRESSCAPS_83c033e2299a) -> Int raise @core.WindowsError
+
+pub fn line_get_address_caps_a(UInt, UInt, UInt, UInt, UInt, @1914f2ecd15c0dc9.LINEADDRESSCAPS_83c033e2299a) -> Int raise @core.WindowsError
+
+pub fn line_get_address_caps_a_raw(UInt, UInt, UInt, UInt, UInt, @core.RawAddress) -> Int
+
+pub fn line_get_address_caps_raw(UInt, UInt, UInt, UInt, UInt, @core.RawAddress) -> Int
+
+pub fn line_get_address_caps_w(UInt, UInt, UInt, UInt, UInt, @1914f2ecd15c0dc9.LINEADDRESSCAPS_83c033e2299a) -> Int raise @core.WindowsError
+
+pub fn line_get_address_caps_w_raw(UInt, UInt, UInt, UInt, UInt, @core.RawAddress) -> Int
+
+pub fn line_get_address_id(UInt, @core.RawAddress, UInt, @strings.PStr, UInt) -> Int raise @core.WindowsError
+
+pub fn line_get_address_id_raw(UInt, @core.RawAddress, UInt, @core.RawAddress, UInt) -> Int
+
+pub fn line_get_address_ida(UInt, @core.RawAddress, UInt, @strings.PStr, UInt) -> Int raise @core.WindowsError
+
+pub fn line_get_address_ida_raw(UInt, @core.RawAddress, UInt, @core.RawAddress, UInt) -> Int
+
+pub fn line_get_address_idw(UInt, @core.RawAddress, UInt, @strings.PWStr, UInt) -> Int raise @core.WindowsError
+
+pub fn line_get_address_idw_raw(UInt, @core.RawAddress, UInt, @core.RawAddress, UInt) -> Int
+
+pub fn line_get_address_status(UInt, UInt, @1914f2ecd15c0dc9.LINEADDRESSSTATUS_10b0266dd7ec) -> Int raise @core.WindowsError
+
+pub fn line_get_address_status_a(UInt, UInt, @1914f2ecd15c0dc9.LINEADDRESSSTATUS_10b0266dd7ec) -> Int raise @core.WindowsError
+
+pub fn line_get_address_status_a_raw(UInt, UInt, @core.RawAddress) -> Int
+
+pub fn line_get_address_status_raw(UInt, UInt, @core.RawAddress) -> Int
+
+pub fn line_get_address_status_w(UInt, UInt, @1914f2ecd15c0dc9.LINEADDRESSSTATUS_10b0266dd7ec) -> Int raise @core.WindowsError
+
+pub fn line_get_address_status_w_raw(UInt, UInt, @core.RawAddress) -> Int
+
+pub fn line_get_agent_activity_list_a(UInt, UInt, @1914f2ecd15c0dc9.LINEAGENTACTIVITYLIST_3d3bc3afe8d4) -> Int raise @core.WindowsError
+
+pub fn line_get_agent_activity_list_a_raw(UInt, UInt, @core.RawAddress) -> Int
+
+pub fn line_get_agent_activity_list_w(UInt, UInt, @1914f2ecd15c0dc9.LINEAGENTACTIVITYLIST_3d3bc3afe8d4) -> Int raise @core.WindowsError
+
+pub fn line_get_agent_activity_list_w_raw(UInt, UInt, @core.RawAddress) -> Int
+
+pub fn line_get_agent_caps_a(UInt, UInt, UInt, UInt, @1914f2ecd15c0dc9.LINEAGENTCAPS_1190a80c61e2) -> Int raise @core.WindowsError
+
+pub fn line_get_agent_caps_a_raw(UInt, UInt, UInt, UInt, @core.RawAddress) -> Int
+
+pub fn line_get_agent_caps_w(UInt, UInt, UInt, UInt, @1914f2ecd15c0dc9.LINEAGENTCAPS_1190a80c61e2) -> Int raise @core.WindowsError
+
+pub fn line_get_agent_caps_w_raw(UInt, UInt, UInt, UInt, @core.RawAddress) -> Int
+
+pub fn line_get_agent_group_list_a(UInt, UInt, @1914f2ecd15c0dc9.LINEAGENTGROUPLIST_b882d95b45e0) -> Int raise @core.WindowsError
+
+pub fn line_get_agent_group_list_a_raw(UInt, UInt, @core.RawAddress) -> Int
+
+pub fn line_get_agent_group_list_w(UInt, UInt, @1914f2ecd15c0dc9.LINEAGENTGROUPLIST_b882d95b45e0) -> Int raise @core.WindowsError
+
+pub fn line_get_agent_group_list_w_raw(UInt, UInt, @core.RawAddress) -> Int
+
+pub fn line_get_agent_info(UInt, UInt, @1914f2ecd15c0dc9.LINEAGENTINFO_eaf1f9ecf0b2) -> Int raise @core.WindowsError
+
+pub fn line_get_agent_info_raw(UInt, UInt, @core.RawAddress) -> Int
+
+pub fn line_get_agent_session_info(UInt, UInt, @1914f2ecd15c0dc9.LINEAGENTSESSIONINFO_71f8c80310fb) -> Int raise @core.WindowsError
+
+pub fn line_get_agent_session_info_raw(UInt, UInt, @core.RawAddress) -> Int
+
+pub fn line_get_agent_session_list(UInt, UInt, @1914f2ecd15c0dc9.LINEAGENTSESSIONLIST_4da9bb18fe11) -> Int raise @core.WindowsError
+
+pub fn line_get_agent_session_list_raw(UInt, UInt, @core.RawAddress) -> Int
+
+pub fn line_get_agent_status_a(UInt, UInt, @1914f2ecd15c0dc9.LINEAGENTSTATUS_bd3de31dbfb4) -> Int raise @core.WindowsError
+
+pub fn line_get_agent_status_a_raw(UInt, UInt, @core.RawAddress) -> Int
+
+pub fn line_get_agent_status_w(UInt, UInt, @1914f2ecd15c0dc9.LINEAGENTSTATUS_bd3de31dbfb4) -> Int raise @core.WindowsError
+
+pub fn line_get_agent_status_w_raw(UInt, UInt, @core.RawAddress) -> Int
+
+pub fn line_get_app_priority(@strings.PStr, UInt, @1914f2ecd15c0dc9.LINEEXTENSIONID_6eb1cb228591, UInt, @1914f2ecd15c0dc9.VARSTRING_41025a104d6a, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn line_get_app_priority_a(@strings.PStr, UInt, @1914f2ecd15c0dc9.LINEEXTENSIONID_6eb1cb228591, UInt, @1914f2ecd15c0dc9.VARSTRING_41025a104d6a, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn line_get_app_priority_a_raw(@core.RawAddress, UInt, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn line_get_app_priority_raw(@core.RawAddress, UInt, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn line_get_app_priority_w(@strings.PWStr, UInt, @1914f2ecd15c0dc9.LINEEXTENSIONID_6eb1cb228591, UInt, @1914f2ecd15c0dc9.VARSTRING_41025a104d6a, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn line_get_app_priority_w_raw(@core.RawAddress, UInt, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn line_get_call_info(UInt, @1914f2ecd15c0dc9.LINECALLINFO_6e5e86f8f0c3) -> Int raise @core.WindowsError
+
+pub fn line_get_call_info_a(UInt, @1914f2ecd15c0dc9.LINECALLINFO_6e5e86f8f0c3) -> Int raise @core.WindowsError
+
+pub fn line_get_call_info_a_raw(UInt, @core.RawAddress) -> Int
+
+pub fn line_get_call_info_raw(UInt, @core.RawAddress) -> Int
+
+pub fn line_get_call_info_w(UInt, @1914f2ecd15c0dc9.LINECALLINFO_6e5e86f8f0c3) -> Int raise @core.WindowsError
+
+pub fn line_get_call_info_w_raw(UInt, @core.RawAddress) -> Int
+
+pub fn line_get_call_status(UInt, @1914f2ecd15c0dc9.LINECALLSTATUS_a92424aabf16) -> Int raise @core.WindowsError
+
+pub fn line_get_call_status_raw(UInt, @core.RawAddress) -> Int
+
+pub fn line_get_conf_related_calls(UInt, @1914f2ecd15c0dc9.LINECALLLIST_915205d93f23) -> Int raise @core.WindowsError
+
+pub fn line_get_conf_related_calls_raw(UInt, @core.RawAddress) -> Int
+
+pub fn line_get_country(UInt, UInt, @1914f2ecd15c0dc9.LINECOUNTRYLIST_f83a538707f9) -> Int raise @core.WindowsError
+
+pub fn line_get_country_a(UInt, UInt, @1914f2ecd15c0dc9.LINECOUNTRYLIST_f83a538707f9) -> Int raise @core.WindowsError
+
+pub fn line_get_country_a_raw(UInt, UInt, @core.RawAddress) -> Int
+
+pub fn line_get_country_raw(UInt, UInt, @core.RawAddress) -> Int
+
+pub fn line_get_country_w(UInt, UInt, @1914f2ecd15c0dc9.LINECOUNTRYLIST_f83a538707f9) -> Int raise @core.WindowsError
+
+pub fn line_get_country_w_raw(UInt, UInt, @core.RawAddress) -> Int
+
+pub fn line_get_dev_caps(UInt, UInt, UInt, UInt, @1914f2ecd15c0dc9.LINEDEVCAPS_da521f8f0052) -> Int raise @core.WindowsError
+
+pub fn line_get_dev_caps_a(UInt, UInt, UInt, UInt, @1914f2ecd15c0dc9.LINEDEVCAPS_da521f8f0052) -> Int raise @core.WindowsError
+
+pub fn line_get_dev_caps_a_raw(UInt, UInt, UInt, UInt, @core.RawAddress) -> Int
+
+pub fn line_get_dev_caps_raw(UInt, UInt, UInt, UInt, @core.RawAddress) -> Int
+
+pub fn line_get_dev_caps_w(UInt, UInt, UInt, UInt, @1914f2ecd15c0dc9.LINEDEVCAPS_da521f8f0052) -> Int raise @core.WindowsError
+
+pub fn line_get_dev_caps_w_raw(UInt, UInt, UInt, UInt, @core.RawAddress) -> Int
+
+pub fn line_get_dev_config(UInt, @1914f2ecd15c0dc9.VARSTRING_41025a104d6a, @strings.PStr) -> Int raise @core.WindowsError
+
+pub fn line_get_dev_config_a(UInt, @1914f2ecd15c0dc9.VARSTRING_41025a104d6a, @strings.PStr) -> Int raise @core.WindowsError
+
+pub fn line_get_dev_config_a_raw(UInt, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn line_get_dev_config_raw(UInt, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn line_get_dev_config_w(UInt, @1914f2ecd15c0dc9.VARSTRING_41025a104d6a, @strings.PWStr) -> Int raise @core.WindowsError
+
+pub fn line_get_dev_config_w_raw(UInt, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn line_get_group_list_a(UInt, @1914f2ecd15c0dc9.LINEAGENTGROUPLIST_b882d95b45e0) -> Int raise @core.WindowsError
+
+pub fn line_get_group_list_a_raw(UInt, @core.RawAddress) -> Int
+
+pub fn line_get_group_list_w(UInt, @1914f2ecd15c0dc9.LINEAGENTGROUPLIST_b882d95b45e0) -> Int raise @core.WindowsError
+
+pub fn line_get_group_list_w_raw(UInt, @core.RawAddress) -> Int
+
+pub fn line_get_icon(UInt, @strings.PStr, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn line_get_icon_a(UInt, @strings.PStr, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn line_get_icon_a_raw(UInt, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn line_get_icon_raw(UInt, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn line_get_icon_w(UInt, @strings.PWStr, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn line_get_icon_w_raw(UInt, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn line_get_id(UInt, UInt, UInt, UInt, @1914f2ecd15c0dc9.VARSTRING_41025a104d6a, @strings.PStr) -> Int raise @core.WindowsError
+
+pub fn line_get_id_raw(UInt, UInt, UInt, UInt, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn line_get_ida(UInt, UInt, UInt, UInt, @1914f2ecd15c0dc9.VARSTRING_41025a104d6a, @strings.PStr) -> Int raise @core.WindowsError
+
+pub fn line_get_ida_raw(UInt, UInt, UInt, UInt, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn line_get_idw(UInt, UInt, UInt, UInt, @1914f2ecd15c0dc9.VARSTRING_41025a104d6a, @strings.PWStr) -> Int raise @core.WindowsError
+
+pub fn line_get_idw_raw(UInt, UInt, UInt, UInt, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn line_get_line_dev_status(UInt, @1914f2ecd15c0dc9.LINEDEVSTATUS_5ae7c7892568) -> Int raise @core.WindowsError
+
+pub fn line_get_line_dev_status_a(UInt, @1914f2ecd15c0dc9.LINEDEVSTATUS_5ae7c7892568) -> Int raise @core.WindowsError
+
+pub fn line_get_line_dev_status_a_raw(UInt, @core.RawAddress) -> Int
+
+pub fn line_get_line_dev_status_raw(UInt, @core.RawAddress) -> Int
+
+pub fn line_get_line_dev_status_w(UInt, @1914f2ecd15c0dc9.LINEDEVSTATUS_5ae7c7892568) -> Int raise @core.WindowsError
+
+pub fn line_get_line_dev_status_w_raw(UInt, @core.RawAddress) -> Int
+
+pub fn line_get_message(UInt, @1914f2ecd15c0dc9.LINEMESSAGE_68377bcce0b1, UInt) -> Int raise @core.WindowsError
+
+pub fn line_get_message_raw(UInt, @core.RawAddress, UInt) -> Int
+
+pub fn line_get_new_calls(UInt, UInt, UInt, @1914f2ecd15c0dc9.LINECALLLIST_915205d93f23) -> Int raise @core.WindowsError
+
+pub fn line_get_new_calls_raw(UInt, UInt, UInt, @core.RawAddress) -> Int
+
+pub fn line_get_num_rings(UInt, UInt, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn line_get_num_rings_raw(UInt, UInt, @core.RawAddress) -> Int
+
+pub fn line_get_provider_list(UInt, @1914f2ecd15c0dc9.LINEPROVIDERLIST_83da8da85237) -> Int raise @core.WindowsError
+
+pub fn line_get_provider_list_a(UInt, @1914f2ecd15c0dc9.LINEPROVIDERLIST_83da8da85237) -> Int raise @core.WindowsError
+
+pub fn line_get_provider_list_a_raw(UInt, @core.RawAddress) -> Int
+
+pub fn line_get_provider_list_raw(UInt, @core.RawAddress) -> Int
+
+pub fn line_get_provider_list_w(UInt, @1914f2ecd15c0dc9.LINEPROVIDERLIST_83da8da85237) -> Int raise @core.WindowsError
+
+pub fn line_get_provider_list_w_raw(UInt, @core.RawAddress) -> Int
+
+pub fn line_get_proxy_status(UInt, UInt, UInt, @1914f2ecd15c0dc9.LINEPROXYREQUESTLIST_b975003a415a) -> Int raise @core.WindowsError
+
+pub fn line_get_proxy_status_raw(UInt, UInt, UInt, @core.RawAddress) -> Int
+
+pub fn line_get_queue_info(UInt, UInt, @1914f2ecd15c0dc9.LINEQUEUEINFO_299a7c101583) -> Int raise @core.WindowsError
+
+pub fn line_get_queue_info_raw(UInt, UInt, @core.RawAddress) -> Int
+
+pub fn line_get_queue_list_a(UInt, @core.RawAddress, @1914f2ecd15c0dc9.LINEQUEUELIST_1da52bda6410) -> Int raise @core.WindowsError
+
+pub fn line_get_queue_list_a_raw(UInt, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn line_get_queue_list_w(UInt, @core.RawAddress, @1914f2ecd15c0dc9.LINEQUEUELIST_1da52bda6410) -> Int raise @core.WindowsError
+
+pub fn line_get_queue_list_w_raw(UInt, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn line_get_request(UInt, UInt, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn line_get_request_a(UInt, UInt, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn line_get_request_a_raw(UInt, UInt, @core.RawAddress) -> Int
+
+pub fn line_get_request_raw(UInt, UInt, @core.RawAddress) -> Int
+
+pub fn line_get_request_w(UInt, UInt, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn line_get_request_w_raw(UInt, UInt, @core.RawAddress) -> Int
+
+pub fn line_get_status_messages(UInt, @core.RawAddress, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn line_get_status_messages_raw(UInt, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn line_get_translate_caps(UInt, UInt, @1914f2ecd15c0dc9.LINETRANSLATECAPS_bd76703f98bb) -> Int raise @core.WindowsError
+
+pub fn line_get_translate_caps_a(UInt, UInt, @1914f2ecd15c0dc9.LINETRANSLATECAPS_bd76703f98bb) -> Int raise @core.WindowsError
+
+pub fn line_get_translate_caps_a_raw(UInt, UInt, @core.RawAddress) -> Int
+
+pub fn line_get_translate_caps_raw(UInt, UInt, @core.RawAddress) -> Int
+
+pub fn line_get_translate_caps_w(UInt, UInt, @1914f2ecd15c0dc9.LINETRANSLATECAPS_bd76703f98bb) -> Int raise @core.WindowsError
+
+pub fn line_get_translate_caps_w_raw(UInt, UInt, @core.RawAddress) -> Int
+
+pub let line_groupstatus : Int
+
+pub fn line_handoff(UInt, @strings.PStr, UInt) -> Int raise @core.WindowsError
+
+pub fn line_handoff_a(UInt, @strings.PStr, UInt) -> Int raise @core.WindowsError
+
+pub fn line_handoff_a_raw(UInt, @core.RawAddress, UInt) -> Int
+
+pub fn line_handoff_raw(UInt, @core.RawAddress, UInt) -> Int
+
+pub fn line_handoff_w(UInt, @strings.PWStr, UInt) -> Int raise @core.WindowsError
+
+pub fn line_handoff_w_raw(UInt, @core.RawAddress, UInt) -> Int
+
+pub fn line_hold(UInt) -> Int raise @core.WindowsError
+
+pub fn line_hold_raw(UInt) -> Int
+
+pub fn line_initialize(@core.RawAddress, @core.RawAddress, @core.RawAddress, @strings.PStr, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn line_initialize_ex_a(@core.RawAddress, @core.RawAddress, @core.RawAddress, @strings.PStr, @core.RawAddress, @core.RawAddress, @1914f2ecd15c0dc9.LINEINITIALIZEEXPARAMS_b123dbd73b4a) -> Int raise @core.WindowsError
+
+pub fn line_initialize_ex_a_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn line_initialize_ex_w(@core.RawAddress, @core.RawAddress, @core.RawAddress, @strings.PWStr, @core.RawAddress, @core.RawAddress, @1914f2ecd15c0dc9.LINEINITIALIZEEXPARAMS_b123dbd73b4a) -> Int raise @core.WindowsError
+
+pub fn line_initialize_ex_w_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn line_initialize_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub let line_linedevstate : Int
+
+pub fn line_make_call(UInt, @core.RawAddress, @strings.PStr, UInt, @1914f2ecd15c0dc9.LINECALLPARAMS_d52ccaf82fb4) -> Int raise @core.WindowsError
+
+pub fn line_make_call_a(UInt, @core.RawAddress, @strings.PStr, UInt, @1914f2ecd15c0dc9.LINECALLPARAMS_d52ccaf82fb4) -> Int raise @core.WindowsError
+
+pub fn line_make_call_a_raw(UInt, @core.RawAddress, @core.RawAddress, UInt, @core.RawAddress) -> Int
+
+pub fn line_make_call_raw(UInt, @core.RawAddress, @core.RawAddress, UInt, @core.RawAddress) -> Int
+
+pub fn line_make_call_w(UInt, @core.RawAddress, @strings.PWStr, UInt, @1914f2ecd15c0dc9.LINECALLPARAMS_d52ccaf82fb4) -> Int raise @core.WindowsError
+
+pub fn line_make_call_w_raw(UInt, @core.RawAddress, @core.RawAddress, UInt, @core.RawAddress) -> Int
+
+pub fn line_monitor_digits(UInt, UInt) -> Int raise @core.WindowsError
+
+pub fn line_monitor_digits_raw(UInt, UInt) -> Int
+
+pub fn line_monitor_media(UInt, UInt) -> Int raise @core.WindowsError
+
+pub fn line_monitor_media_raw(UInt, UInt) -> Int
+
+pub fn line_monitor_tones(UInt, @1914f2ecd15c0dc9.LINEMONITORTONE_f2d89d257896, UInt) -> Int raise @core.WindowsError
+
+pub fn line_monitor_tones_raw(UInt, @core.RawAddress, UInt) -> Int
+
+pub let line_monitordigits : Int
+
+pub let line_monitormedia : Int
+
+pub let line_monitortone : Int
+
+pub fn line_negotiate_api_version(UInt, UInt, UInt, UInt, @core.RawAddress, @1914f2ecd15c0dc9.LINEEXTENSIONID_6eb1cb228591) -> Int raise @core.WindowsError
+
+pub fn line_negotiate_api_version_raw(UInt, UInt, UInt, UInt, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn line_negotiate_ext_version(UInt, UInt, UInt, UInt, UInt, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn line_negotiate_ext_version_raw(UInt, UInt, UInt, UInt, UInt, @core.RawAddress) -> Int
+
+pub fn line_open(UInt, UInt, @core.RawAddress, UInt, UInt, UInt64, UInt, UInt, @1914f2ecd15c0dc9.LINECALLPARAMS_d52ccaf82fb4) -> Int raise @core.WindowsError
+
+pub fn line_open_a(UInt, UInt, @core.RawAddress, UInt, UInt, UInt64, UInt, UInt, @1914f2ecd15c0dc9.LINECALLPARAMS_d52ccaf82fb4) -> Int raise @core.WindowsError
+
+pub fn line_open_a_raw(UInt, UInt, @core.RawAddress, UInt, UInt, UInt64, UInt, UInt, @core.RawAddress) -> Int
+
+pub fn line_open_raw(UInt, UInt, @core.RawAddress, UInt, UInt, UInt64, UInt, UInt, @core.RawAddress) -> Int
+
+pub fn line_open_w(UInt, UInt, @core.RawAddress, UInt, UInt, UInt64, UInt, UInt, @1914f2ecd15c0dc9.LINECALLPARAMS_d52ccaf82fb4) -> Int raise @core.WindowsError
+
+pub fn line_open_w_raw(UInt, UInt, @core.RawAddress, UInt, UInt, UInt64, UInt, UInt, @core.RawAddress) -> Int
+
+pub fn line_park(UInt, UInt, @strings.PStr, @1914f2ecd15c0dc9.VARSTRING_41025a104d6a) -> Int raise @core.WindowsError
+
+pub fn line_park_a(UInt, UInt, @strings.PStr, @1914f2ecd15c0dc9.VARSTRING_41025a104d6a) -> Int raise @core.WindowsError
+
+pub fn line_park_a_raw(UInt, UInt, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn line_park_raw(UInt, UInt, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn line_park_w(UInt, UInt, @strings.PWStr, @1914f2ecd15c0dc9.VARSTRING_41025a104d6a) -> Int raise @core.WindowsError
+
+pub fn line_park_w_raw(UInt, UInt, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn line_pickup(UInt, UInt, @core.RawAddress, @strings.PStr, @strings.PStr) -> Int raise @core.WindowsError
+
+pub fn line_pickup_a(UInt, UInt, @core.RawAddress, @strings.PStr, @strings.PStr) -> Int raise @core.WindowsError
+
+pub fn line_pickup_a_raw(UInt, UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn line_pickup_raw(UInt, UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn line_pickup_w(UInt, UInt, @core.RawAddress, @strings.PWStr, @strings.PWStr) -> Int raise @core.WindowsError
+
+pub fn line_pickup_w_raw(UInt, UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn line_prepare_add_to_conference(UInt, @core.RawAddress, @1914f2ecd15c0dc9.LINECALLPARAMS_d52ccaf82fb4) -> Int raise @core.WindowsError
+
+pub fn line_prepare_add_to_conference_a(UInt, @core.RawAddress, @1914f2ecd15c0dc9.LINECALLPARAMS_d52ccaf82fb4) -> Int raise @core.WindowsError
+
+pub fn line_prepare_add_to_conference_a_raw(UInt, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn line_prepare_add_to_conference_raw(UInt, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn line_prepare_add_to_conference_w(UInt, @core.RawAddress, @1914f2ecd15c0dc9.LINECALLPARAMS_d52ccaf82fb4) -> Int raise @core.WindowsError
+
+pub fn line_prepare_add_to_conference_w_raw(UInt, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn line_proxy_message(UInt, UInt, UInt, UInt, UInt, UInt) -> Int raise @core.WindowsError
+
+pub fn line_proxy_message_raw(UInt, UInt, UInt, UInt, UInt, UInt) -> Int
+
+pub fn line_proxy_response(UInt, @1914f2ecd15c0dc9.LINEPROXYREQUEST_5684eee1e48a, UInt) -> Int raise @core.WindowsError
+
+pub fn line_proxy_response_raw(UInt, @core.RawAddress, UInt) -> Int
+
+pub let line_proxyrequest : Int
+
+pub let line_proxystatus : Int
+
+pub let line_queuestatus : Int
+
+pub fn line_redirect(UInt, @strings.PStr, UInt) -> Int raise @core.WindowsError
+
+pub fn line_redirect_a(UInt, @strings.PStr, UInt) -> Int raise @core.WindowsError
+
+pub fn line_redirect_a_raw(UInt, @core.RawAddress, UInt) -> Int
+
+pub fn line_redirect_raw(UInt, @core.RawAddress, UInt) -> Int
+
+pub fn line_redirect_w(UInt, @strings.PWStr, UInt) -> Int raise @core.WindowsError
+
+pub fn line_redirect_w_raw(UInt, @core.RawAddress, UInt) -> Int
+
+pub fn line_register_request_recipient(UInt, UInt, UInt, UInt) -> Int raise @core.WindowsError
+
+pub fn line_register_request_recipient_raw(UInt, UInt, UInt, UInt) -> Int
+
+pub fn line_release_user_user_info(UInt) -> Int raise @core.WindowsError
+
+pub fn line_release_user_user_info_raw(UInt) -> Int
+
+pub let line_remove : Int
+
+pub fn line_remove_from_conference(UInt) -> Int raise @core.WindowsError
+
+pub fn line_remove_from_conference_raw(UInt) -> Int
+
+pub fn line_remove_provider(UInt, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn line_remove_provider_raw(UInt, @core.RawAddress) -> Int
+
+pub let line_reply : Int
+
+pub let line_request : Int
+
+pub fn line_secure_call(UInt) -> Int raise @core.WindowsError
+
+pub fn line_secure_call_raw(UInt) -> Int
+
+pub fn line_send_user_user_info(UInt, @strings.PStr, UInt) -> Int raise @core.WindowsError
+
+pub fn line_send_user_user_info_raw(UInt, @core.RawAddress, UInt) -> Int
+
+pub fn line_set_agent_activity(UInt, UInt, UInt) -> Int raise @core.WindowsError
+
+pub fn line_set_agent_activity_raw(UInt, UInt, UInt) -> Int
+
+pub fn line_set_agent_group(UInt, UInt, @1914f2ecd15c0dc9.LINEAGENTGROUPLIST_b882d95b45e0) -> Int raise @core.WindowsError
+
+pub fn line_set_agent_group_raw(UInt, UInt, @core.RawAddress) -> Int
+
+pub fn line_set_agent_measurement_period(UInt, UInt, UInt) -> Int raise @core.WindowsError
+
+pub fn line_set_agent_measurement_period_raw(UInt, UInt, UInt) -> Int
+
+pub fn line_set_agent_session_state(UInt, UInt, UInt, UInt) -> Int raise @core.WindowsError
+
+pub fn line_set_agent_session_state_raw(UInt, UInt, UInt, UInt) -> Int
+
+pub fn line_set_agent_state(UInt, UInt, UInt, UInt) -> Int raise @core.WindowsError
+
+pub fn line_set_agent_state_ex(UInt, UInt, UInt, UInt) -> Int raise @core.WindowsError
+
+pub fn line_set_agent_state_ex_raw(UInt, UInt, UInt, UInt) -> Int
+
+pub fn line_set_agent_state_raw(UInt, UInt, UInt, UInt) -> Int
+
+pub fn line_set_app_priority(@strings.PStr, UInt, @1914f2ecd15c0dc9.LINEEXTENSIONID_6eb1cb228591, UInt, @strings.PStr, UInt) -> Int raise @core.WindowsError
+
+pub fn line_set_app_priority_a(@strings.PStr, UInt, @1914f2ecd15c0dc9.LINEEXTENSIONID_6eb1cb228591, UInt, @strings.PStr, UInt) -> Int raise @core.WindowsError
+
+pub fn line_set_app_priority_a_raw(@core.RawAddress, UInt, @core.RawAddress, UInt, @core.RawAddress, UInt) -> Int
+
+pub fn line_set_app_priority_raw(@core.RawAddress, UInt, @core.RawAddress, UInt, @core.RawAddress, UInt) -> Int
+
+pub fn line_set_app_priority_w(@strings.PWStr, UInt, @1914f2ecd15c0dc9.LINEEXTENSIONID_6eb1cb228591, UInt, @strings.PWStr, UInt) -> Int raise @core.WindowsError
+
+pub fn line_set_app_priority_w_raw(@core.RawAddress, UInt, @core.RawAddress, UInt, @core.RawAddress, UInt) -> Int
+
+pub fn line_set_app_specific(UInt, UInt) -> Int raise @core.WindowsError
+
+pub fn line_set_app_specific_raw(UInt, UInt) -> Int
+
+pub fn line_set_call_data(UInt, @core.RawAddress, UInt) -> Int raise @core.WindowsError
+
+pub fn line_set_call_data_raw(UInt, @core.RawAddress, UInt) -> Int
+
+pub fn line_set_call_params(UInt, UInt, UInt, UInt, @1914f2ecd15c0dc9.LINEDIALPARAMS_3b7dfe0191d1) -> Int raise @core.WindowsError
+
+pub fn line_set_call_params_raw(UInt, UInt, UInt, UInt, @core.RawAddress) -> Int
+
+pub fn line_set_call_privilege(UInt, UInt) -> Int raise @core.WindowsError
+
+pub fn line_set_call_privilege_raw(UInt, UInt) -> Int
+
+pub fn line_set_call_quality_of_service(UInt, @core.RawAddress, UInt, @core.RawAddress, UInt) -> Int raise @core.WindowsError
+
+pub fn line_set_call_quality_of_service_raw(UInt, @core.RawAddress, UInt, @core.RawAddress, UInt) -> Int
+
+pub fn line_set_call_treatment(UInt, UInt) -> Int raise @core.WindowsError
+
+pub fn line_set_call_treatment_raw(UInt, UInt) -> Int
+
+pub fn line_set_current_location(UInt, UInt) -> Int raise @core.WindowsError
+
+pub fn line_set_current_location_raw(UInt, UInt) -> Int
+
+pub fn line_set_dev_config(UInt, @core.RawAddress, UInt, @strings.PStr) -> Int raise @core.WindowsError
+
+pub fn line_set_dev_config_a(UInt, @core.RawAddress, UInt, @strings.PStr) -> Int raise @core.WindowsError
+
+pub fn line_set_dev_config_a_raw(UInt, @core.RawAddress, UInt, @core.RawAddress) -> Int
+
+pub fn line_set_dev_config_raw(UInt, @core.RawAddress, UInt, @core.RawAddress) -> Int
+
+pub fn line_set_dev_config_w(UInt, @core.RawAddress, UInt, @strings.PWStr) -> Int raise @core.WindowsError
+
+pub fn line_set_dev_config_w_raw(UInt, @core.RawAddress, UInt, @core.RawAddress) -> Int
+
+pub fn line_set_line_dev_status(UInt, UInt, UInt) -> Int raise @core.WindowsError
+
+pub fn line_set_line_dev_status_raw(UInt, UInt, UInt) -> Int
+
+pub fn line_set_media_control(UInt, UInt, UInt, UInt, @1914f2ecd15c0dc9.LINEMEDIACONTROLDIGIT_243f06749fbb, UInt, @1914f2ecd15c0dc9.LINEMEDIACONTROLMEDIA_460987f8cc1f, UInt, @1914f2ecd15c0dc9.LINEMEDIACONTROLTONE_374a05b897eb, UInt, @1914f2ecd15c0dc9.LINEMEDIACONTROLCALLSTATE_1de59e03f207, UInt) -> Int raise @core.WindowsError
+
+pub fn line_set_media_control_raw(UInt, UInt, UInt, UInt, @core.RawAddress, UInt, @core.RawAddress, UInt, @core.RawAddress, UInt, @core.RawAddress, UInt) -> Int
+
+pub fn line_set_media_mode(UInt, UInt) -> Int raise @core.WindowsError
+
+pub fn line_set_media_mode_raw(UInt, UInt) -> Int
+
+pub fn line_set_num_rings(UInt, UInt, UInt) -> Int raise @core.WindowsError
+
+pub fn line_set_num_rings_raw(UInt, UInt, UInt) -> Int
+
+pub fn line_set_queue_measurement_period(UInt, UInt, UInt) -> Int raise @core.WindowsError
+
+pub fn line_set_queue_measurement_period_raw(UInt, UInt, UInt) -> Int
+
+pub fn line_set_status_messages(UInt, UInt, UInt) -> Int raise @core.WindowsError
+
+pub fn line_set_status_messages_raw(UInt, UInt, UInt) -> Int
+
+pub fn line_set_terminal(UInt, UInt, UInt, UInt, UInt, UInt, UInt) -> Int raise @core.WindowsError
+
+pub fn line_set_terminal_raw(UInt, UInt, UInt, UInt, UInt, UInt, UInt) -> Int
+
+pub fn line_set_toll_list(UInt, UInt, @strings.PStr, UInt) -> Int raise @core.WindowsError
+
+pub fn line_set_toll_list_a(UInt, UInt, @strings.PStr, UInt) -> Int raise @core.WindowsError
+
+pub fn line_set_toll_list_a_raw(UInt, UInt, @core.RawAddress, UInt) -> Int
+
+pub fn line_set_toll_list_raw(UInt, UInt, @core.RawAddress, UInt) -> Int
+
+pub fn line_set_toll_list_w(UInt, UInt, @strings.PWStr, UInt) -> Int raise @core.WindowsError
+
+pub fn line_set_toll_list_w_raw(UInt, UInt, @core.RawAddress, UInt) -> Int
+
+pub fn line_setup_conference(UInt, UInt, @core.RawAddress, @core.RawAddress, UInt, @1914f2ecd15c0dc9.LINECALLPARAMS_d52ccaf82fb4) -> Int raise @core.WindowsError
+
+pub fn line_setup_conference_a(UInt, UInt, @core.RawAddress, @core.RawAddress, UInt, @1914f2ecd15c0dc9.LINECALLPARAMS_d52ccaf82fb4) -> Int raise @core.WindowsError
+
+pub fn line_setup_conference_a_raw(UInt, UInt, @core.RawAddress, @core.RawAddress, UInt, @core.RawAddress) -> Int
+
+pub fn line_setup_conference_raw(UInt, UInt, @core.RawAddress, @core.RawAddress, UInt, @core.RawAddress) -> Int
+
+pub fn line_setup_conference_w(UInt, UInt, @core.RawAddress, @core.RawAddress, UInt, @1914f2ecd15c0dc9.LINECALLPARAMS_d52ccaf82fb4) -> Int raise @core.WindowsError
+
+pub fn line_setup_conference_w_raw(UInt, UInt, @core.RawAddress, @core.RawAddress, UInt, @core.RawAddress) -> Int
+
+pub fn line_setup_transfer(UInt, @core.RawAddress, @1914f2ecd15c0dc9.LINECALLPARAMS_d52ccaf82fb4) -> Int raise @core.WindowsError
+
+pub fn line_setup_transfer_a(UInt, @core.RawAddress, @1914f2ecd15c0dc9.LINECALLPARAMS_d52ccaf82fb4) -> Int raise @core.WindowsError
+
+pub fn line_setup_transfer_a_raw(UInt, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn line_setup_transfer_raw(UInt, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn line_setup_transfer_w(UInt, @core.RawAddress, @1914f2ecd15c0dc9.LINECALLPARAMS_d52ccaf82fb4) -> Int raise @core.WindowsError
+
+pub fn line_setup_transfer_w_raw(UInt, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn line_shutdown(UInt) -> Int raise @core.WindowsError
+
+pub fn line_shutdown_raw(UInt) -> Int
+
+pub fn line_swap_hold(UInt, UInt) -> Int raise @core.WindowsError
+
+pub fn line_swap_hold_raw(UInt, UInt) -> Int
+
+pub fn line_translate_address(UInt, UInt, UInt, @strings.PStr, UInt, UInt, @1914f2ecd15c0dc9.LINETRANSLATEOUTPUT_e16fc75b063b) -> Int raise @core.WindowsError
+
+pub fn line_translate_address_a(UInt, UInt, UInt, @strings.PStr, UInt, UInt, @1914f2ecd15c0dc9.LINETRANSLATEOUTPUT_e16fc75b063b) -> Int raise @core.WindowsError
+
+pub fn line_translate_address_a_raw(UInt, UInt, UInt, @core.RawAddress, UInt, UInt, @core.RawAddress) -> Int
+
+pub fn line_translate_address_raw(UInt, UInt, UInt, @core.RawAddress, UInt, UInt, @core.RawAddress) -> Int
+
+pub fn line_translate_address_w(UInt, UInt, UInt, @strings.PWStr, UInt, UInt, @1914f2ecd15c0dc9.LINETRANSLATEOUTPUT_e16fc75b063b) -> Int raise @core.WindowsError
+
+pub fn line_translate_address_w_raw(UInt, UInt, UInt, @core.RawAddress, UInt, UInt, @core.RawAddress) -> Int
+
+pub fn line_translate_dialog(UInt, UInt, UInt, @core.RawAddress, @strings.PStr) -> Int raise @core.WindowsError
+
+pub fn line_translate_dialog_a(UInt, UInt, UInt, @core.RawAddress, @strings.PStr) -> Int raise @core.WindowsError
+
+pub fn line_translate_dialog_a_raw(UInt, UInt, UInt, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn line_translate_dialog_raw(UInt, UInt, UInt, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn line_translate_dialog_w(UInt, UInt, UInt, @core.RawAddress, @strings.PWStr) -> Int raise @core.WindowsError
+
+pub fn line_translate_dialog_w_raw(UInt, UInt, UInt, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn line_uncomplete_call(UInt, UInt) -> Int raise @core.WindowsError
+
+pub fn line_uncomplete_call_raw(UInt, UInt) -> Int
+
+pub fn line_unhold(UInt) -> Int raise @core.WindowsError
+
+pub fn line_unhold_raw(UInt) -> Int
+
+pub fn line_unpark(UInt, UInt, @core.RawAddress, @strings.PStr) -> Int raise @core.WindowsError
+
+pub fn line_unpark_a(UInt, UInt, @core.RawAddress, @strings.PStr) -> Int raise @core.WindowsError
+
+pub fn line_unpark_a_raw(UInt, UInt, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn line_unpark_raw(UInt, UInt, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn line_unpark_w(UInt, UInt, @core.RawAddress, @strings.PWStr) -> Int raise @core.WindowsError
+
+pub fn line_unpark_w_raw(UInt, UInt, @core.RawAddress, @core.RawAddress) -> Int
+
+pub let lineaddrcapflags_accepttoalert : UInt
+
+pub let lineaddrcapflags_acdgroup : UInt
+
+pub let lineaddrcapflags_autoreconnect : UInt
+
+pub let lineaddrcapflags_blockiddefault : UInt
+
+pub let lineaddrcapflags_blockidoverride : UInt
+
+pub let lineaddrcapflags_completionid : UInt
+
+pub let lineaddrcapflags_confdrop : UInt
+
+pub let lineaddrcapflags_conferenceheld : UInt
+
+pub let lineaddrcapflags_conferencemake : UInt
+
+pub let lineaddrcapflags_destoffhook : UInt
+
+pub let lineaddrcapflags_dialed : UInt
+
+pub let lineaddrcapflags_fwdbusynaaddr : UInt
+
+pub let lineaddrcapflags_fwdconsult : UInt
+
+pub let lineaddrcapflags_fwdintextaddr : UInt
+
+pub let lineaddrcapflags_fwdnumrings : UInt
+
+pub let lineaddrcapflags_fwdstatusvalid : UInt
+
+pub let lineaddrcapflags_holdmakesnew : UInt
+
+pub let lineaddrcapflags_noexternalcalls : UInt
+
+pub let lineaddrcapflags_nointernalcalls : UInt
+
+pub let lineaddrcapflags_nopstnaddresstranslation : UInt
+
+pub let lineaddrcapflags_origoffhook : UInt
+
+pub let lineaddrcapflags_partialdial : UInt
+
+pub let lineaddrcapflags_pickupcallwait : UInt
+
+pub let lineaddrcapflags_pickupgroupid : UInt
+
+pub let lineaddrcapflags_predictivedialer : UInt
+
+pub let lineaddrcapflags_queue : UInt
+
+pub let lineaddrcapflags_routepoint : UInt
+
+pub let lineaddrcapflags_secure : UInt
+
+pub let lineaddrcapflags_setcallingid : UInt
+
+pub let lineaddrcapflags_setupconfnull : UInt
+
+pub let lineaddrcapflags_transferheld : UInt
+
+pub let lineaddrcapflags_transfermake : UInt
+
+pub let lineaddressmode_addressid : UInt
+
+pub let lineaddressmode_dialableaddr : UInt
+
+pub let lineaddresssharing_bridgedexcl : UInt
+
+pub let lineaddresssharing_bridgednew : UInt
+
+pub let lineaddresssharing_bridgedshared : UInt
+
+pub let lineaddresssharing_monitored : UInt
+
+pub let lineaddresssharing_private : UInt
+
+pub let lineaddressstate_capschange : UInt
+
+pub let lineaddressstate_devspecific : UInt
+
+pub let lineaddressstate_forward : UInt
+
+pub let lineaddressstate_inusemany : UInt
+
+pub let lineaddressstate_inuseone : UInt
+
+pub let lineaddressstate_inusezero : UInt
+
+pub let lineaddressstate_numcalls : UInt
+
+pub let lineaddressstate_other : UInt
+
+pub let lineaddressstate_terminals : UInt
+
+pub let lineaddresstype_domainname : UInt
+
+pub let lineaddresstype_emailname : UInt
+
+pub let lineaddresstype_ipaddress : UInt
+
+pub let lineaddresstype_phonenumber : UInt
+
+pub let lineaddresstype_sdp : UInt
+
+pub let lineaddrfeature_forward : UInt
+
+pub let lineaddrfeature_forwarddnd : UInt
+
+pub let lineaddrfeature_forwardfwd : UInt
+
+pub let lineaddrfeature_makecall : UInt
+
+pub let lineaddrfeature_pickup : UInt
+
+pub let lineaddrfeature_pickupdirect : UInt
+
+pub let lineaddrfeature_pickupgroup : UInt
+
+pub let lineaddrfeature_pickupheld : UInt
+
+pub let lineaddrfeature_pickupwaiting : UInt
+
+pub let lineaddrfeature_setmediacontrol : UInt
+
+pub let lineaddrfeature_setterminal : UInt
+
+pub let lineaddrfeature_setupconf : UInt
+
+pub let lineaddrfeature_uncompletecall : UInt
+
+pub let lineaddrfeature_unpark : UInt
+
+pub let lineagentfeature_agentspecific : UInt
+
+pub let lineagentfeature_getagentactivitylist : UInt
+
+pub let lineagentfeature_getagentgroup : UInt
+
+pub let lineagentfeature_setagentactivity : UInt
+
+pub let lineagentfeature_setagentgroup : UInt
+
+pub let lineagentfeature_setagentstate : UInt
+
+pub let lineagentsessionstate_busyoncall : UInt
+
+pub let lineagentsessionstate_busywrapup : UInt
+
+pub let lineagentsessionstate_ended : UInt
+
+pub let lineagentsessionstate_notready : UInt
+
+pub let lineagentsessionstate_ready : UInt
+
+pub let lineagentsessionstate_released : UInt
+
+pub let lineagentsessionstatus_newsession : UInt
+
+pub let lineagentsessionstatus_state : UInt
+
+pub let lineagentsessionstatus_updateinfo : UInt
+
+pub let lineagentstate_busyacd : UInt
+
+pub let lineagentstate_busyincoming : UInt
+
+pub let lineagentstate_busyother : UInt
+
+pub let lineagentstate_busyoutbound : UInt
+
+pub let lineagentstate_loggedoff : UInt
+
+pub let lineagentstate_notready : UInt
+
+pub let lineagentstate_ready : UInt
+
+pub let lineagentstate_unavail : UInt
+
+pub let lineagentstate_unknown : UInt
+
+pub let lineagentstate_workingaftercall : UInt
+
+pub let lineagentstateex_busyacd : UInt
+
+pub let lineagentstateex_busyincoming : UInt
+
+pub let lineagentstateex_busyoutgoing : UInt
+
+pub let lineagentstateex_notready : UInt
+
+pub let lineagentstateex_ready : UInt
+
+pub let lineagentstateex_released : UInt
+
+pub let lineagentstateex_unknown : UInt
+
+pub let lineagentstatus_activity : UInt
+
+pub let lineagentstatus_activitylist : UInt
+
+pub let lineagentstatus_capschange : UInt
+
+pub let lineagentstatus_group : UInt
+
+pub let lineagentstatus_grouplist : UInt
+
+pub let lineagentstatus_nextstate : UInt
+
+pub let lineagentstatus_state : UInt
+
+pub let lineagentstatus_validnextstates : UInt
+
+pub let lineagentstatus_validstates : UInt
+
+pub let lineagentstatusex_newagent : UInt
+
+pub let lineagentstatusex_state : UInt
+
+pub let lineagentstatusex_updateinfo : UInt
+
+pub let lineanswermode_drop : UInt
+
+pub let lineanswermode_hold : UInt
+
+pub let lineanswermode_none : UInt
+
+pub let linebearermode_altspeechdata : UInt
+
+pub let linebearermode_data : UInt
+
+pub let linebearermode_multiuse : UInt
+
+pub let linebearermode_noncallsignaling : UInt
+
+pub let linebearermode_passthrough : UInt
+
+pub let linebearermode_restricteddata : UInt
+
+pub let linebearermode_speech : UInt
+
+pub let linebearermode_voice : UInt
+
+pub let linebusymode_station : UInt
+
+pub let linebusymode_trunk : UInt
+
+pub let linebusymode_unavail : UInt
+
+pub let linebusymode_unknown : UInt
+
+pub let linecallcomplcond_busy : UInt
+
+pub let linecallcomplcond_noanswer : UInt
+
+pub let linecallcomplmode_callback : UInt
+
+pub let linecallcomplmode_campon : UInt
+
+pub let linecallcomplmode_intrude : UInt
+
+pub let linecallcomplmode_message : UInt
+
+pub let linecallfeature2_complcallback : UInt
+
+pub let linecallfeature2_complcampon : UInt
+
+pub let linecallfeature2_complintrude : UInt
+
+pub let linecallfeature2_complmessage : UInt
+
+pub let linecallfeature2_noholdconference : UInt
+
+pub let linecallfeature2_onesteptransfer : UInt
+
+pub let linecallfeature2_parkdirect : UInt
+
+pub let linecallfeature2_parknondirect : UInt
+
+pub let linecallfeature2_transferconf : UInt
+
+pub let linecallfeature2_transfernorm : UInt
+
+pub let linecallfeature_accept : UInt
+
+pub let linecallfeature_addtoconf : UInt
+
+pub let linecallfeature_answer : UInt
+
+pub let linecallfeature_blindtransfer : UInt
+
+pub let linecallfeature_completecall : UInt
+
+pub let linecallfeature_completetransf : UInt
+
+pub let linecallfeature_dial : UInt
+
+pub let linecallfeature_drop : UInt
+
+pub let linecallfeature_gatherdigits : UInt
+
+pub let linecallfeature_generatedigits : UInt
+
+pub let linecallfeature_generatetone : UInt
+
+pub let linecallfeature_hold : UInt
+
+pub let linecallfeature_monitordigits : UInt
+
+pub let linecallfeature_monitormedia : UInt
+
+pub let linecallfeature_monitortones : UInt
+
+pub let linecallfeature_park : UInt
+
+pub let linecallfeature_prepareaddconf : UInt
+
+pub let linecallfeature_redirect : UInt
+
+pub let linecallfeature_releaseuseruserinfo : UInt
+
+pub let linecallfeature_removefromconf : UInt
+
+pub let linecallfeature_securecall : UInt
+
+pub let linecallfeature_senduseruser : UInt
+
+pub let linecallfeature_setcalldata : UInt
+
+pub let linecallfeature_setcallparams : UInt
+
+pub let linecallfeature_setmediacontrol : UInt
+
+pub let linecallfeature_setqos : UInt
+
+pub let linecallfeature_setterminal : UInt
+
+pub let linecallfeature_settreatment : UInt
+
+pub let linecallfeature_setupconf : UInt
+
+pub let linecallfeature_setuptransfer : UInt
+
+pub let linecallfeature_swaphold : UInt
+
+pub let linecallfeature_unhold : UInt
+
+pub let linecallhubtracking_allcalls : UInt
+
+pub let linecallhubtracking_none : UInt
+
+pub let linecallhubtracking_providerlevel : UInt
+
+pub let linecallinfostate_appspecific : UInt
+
+pub let linecallinfostate_bearermode : UInt
+
+pub let linecallinfostate_calldata : UInt
+
+pub let linecallinfostate_calledid : UInt
+
+pub let linecallinfostate_callerid : UInt
+
+pub let linecallinfostate_callid : UInt
+
+pub let linecallinfostate_charginginfo : UInt
+
+pub let linecallinfostate_completionid : UInt
+
+pub let linecallinfostate_connectedid : UInt
+
+pub let linecallinfostate_devspecific : UInt
+
+pub let linecallinfostate_dialparams : UInt
+
+pub let linecallinfostate_display : UInt
+
+pub let linecallinfostate_highlevelcomp : UInt
+
+pub let linecallinfostate_lowlevelcomp : UInt
+
+pub let linecallinfostate_mediamode : UInt
+
+pub let linecallinfostate_monitormodes : UInt
+
+pub let linecallinfostate_nummonitors : UInt
+
+pub let linecallinfostate_numownerdecr : UInt
+
+pub let linecallinfostate_numownerincr : UInt
+
+pub let linecallinfostate_origin : UInt
+
+pub let linecallinfostate_other : UInt
+
+pub let linecallinfostate_qos : UInt
+
+pub let linecallinfostate_rate : UInt
+
+pub let linecallinfostate_reason : UInt
+
+pub let linecallinfostate_redirectingid : UInt
+
+pub let linecallinfostate_redirectionid : UInt
+
+pub let linecallinfostate_relatedcallid : UInt
+
+pub let linecallinfostate_terminal : UInt
+
+pub let linecallinfostate_treatment : UInt
+
+pub let linecallinfostate_trunk : UInt
+
+pub let linecallinfostate_useruserinfo : UInt
+
+pub let linecallorigin_conference : UInt
+
+pub let linecallorigin_external : UInt
+
+pub let linecallorigin_inbound : UInt
+
+pub let linecallorigin_internal : UInt
+
+pub let linecallorigin_outbound : UInt
+
+pub let linecallorigin_unavail : UInt
+
+pub let linecallorigin_unknown : UInt
+
+pub let linecallparamflags_blockid : UInt
+
+pub let linecallparamflags_destoffhook : UInt
+
+pub let linecallparamflags_idle : UInt
+
+pub let linecallparamflags_noholdconference : UInt
+
+pub let linecallparamflags_onesteptransfer : UInt
+
+pub let linecallparamflags_origoffhook : UInt
+
+pub let linecallparamflags_predictivedial : UInt
+
+pub let linecallparamflags_secure : UInt
+
+pub let linecallpartyid_address : UInt
+
+pub let linecallpartyid_blocked : UInt
+
+pub let linecallpartyid_name : UInt
+
+pub let linecallpartyid_outofarea : UInt
+
+pub let linecallpartyid_partial : UInt
+
+pub let linecallpartyid_unavail : UInt
+
+pub let linecallpartyid_unknown : UInt
+
+pub let linecallprivilege_monitor : UInt
+
+pub let linecallprivilege_none : UInt
+
+pub let linecallprivilege_owner : UInt
+
+pub let linecallreason_callcompletion : UInt
+
+pub let linecallreason_campedon : UInt
+
+pub let linecallreason_direct : UInt
+
+pub let linecallreason_fwdbusy : UInt
+
+pub let linecallreason_fwdnoanswer : UInt
+
+pub let linecallreason_fwduncond : UInt
+
+pub let linecallreason_intrude : UInt
+
+pub let linecallreason_parked : UInt
+
+pub let linecallreason_pickup : UInt
+
+pub let linecallreason_redirect : UInt
+
+pub let linecallreason_reminder : UInt
+
+pub let linecallreason_routerequest : UInt
+
+pub let linecallreason_transfer : UInt
+
+pub let linecallreason_unavail : UInt
+
+pub let linecallreason_unknown : UInt
+
+pub let linecallreason_unpark : UInt
+
+pub let linecallselect_address : UInt
+
+pub let linecallselect_call : UInt
+
+pub let linecallselect_callid : UInt
+
+pub let linecallselect_deviceid : UInt
+
+pub let linecallselect_line : UInt
+
+pub let linecallstate_accepted : UInt
+
+pub let linecallstate_busy : UInt
+
+pub let linecallstate_conferenced : UInt
+
+pub let linecallstate_connected : UInt
+
+pub let linecallstate_dialing : UInt
+
+pub let linecallstate_dialtone : UInt
+
+pub let linecallstate_disconnected : UInt
+
+pub let linecallstate_idle : UInt
+
+pub let linecallstate_offering : UInt
+
+pub let linecallstate_onhold : UInt
+
+pub let linecallstate_onholdpendconf : UInt
+
+pub let linecallstate_onholdpendtransfer : UInt
+
+pub let linecallstate_proceeding : UInt
+
+pub let linecallstate_ringback : UInt
+
+pub let linecallstate_specialinfo : UInt
+
+pub let linecallstate_unknown : UInt
+
+pub let linecalltreatment_busy : UInt
+
+pub let linecalltreatment_music : UInt
+
+pub let linecalltreatment_ringback : UInt
+
+pub let linecalltreatment_silence : UInt
+
+pub let linecardoption_hidden : UInt
+
+pub let linecardoption_predefined : UInt
+
+pub let lineconnectedmode_active : UInt
+
+pub let lineconnectedmode_activeheld : UInt
+
+pub let lineconnectedmode_confirmed : UInt
+
+pub let lineconnectedmode_inactive : UInt
+
+pub let lineconnectedmode_inactiveheld : UInt
+
+pub let linedevcapflags_callhub : UInt
+
+pub let linedevcapflags_callhubtracking : UInt
+
+pub let linedevcapflags_closedrop : UInt
+
+pub let linedevcapflags_crossaddrconf : UInt
+
+pub let linedevcapflags_dialbilling : UInt
+
+pub let linedevcapflags_dialdialtone : UInt
+
+pub let linedevcapflags_dialquiet : UInt
+
+pub let linedevcapflags_highlevcomp : UInt
+
+pub let linedevcapflags_local : UInt
+
+pub let linedevcapflags_lowlevcomp : UInt
+
+pub let linedevcapflags_mediacontrol : UInt
+
+pub let linedevcapflags_msp : UInt
+
+pub let linedevcapflags_multipleaddr : UInt
+
+pub let linedevcapflags_privateobjects : UInt
+
+pub let linedevstate_battery : UInt
+
+pub let linedevstate_capschange : UInt
+
+pub let linedevstate_close : UInt
+
+pub let linedevstate_complcancel : UInt
+
+pub let linedevstate_configchange : UInt
+
+pub let linedevstate_connected : UInt
+
+pub let linedevstate_devspecific : UInt
+
+pub let linedevstate_disconnected : UInt
+
+pub let linedevstate_inservice : UInt
+
+pub let linedevstate_lock : UInt
+
+pub let linedevstate_maintenance : UInt
+
+pub let linedevstate_msgwaitoff : UInt
+
+pub let linedevstate_msgwaiton : UInt
+
+pub let linedevstate_numcalls : UInt
+
+pub let linedevstate_numcompletions : UInt
+
+pub let linedevstate_open : UInt
+
+pub let linedevstate_other : UInt
+
+pub let linedevstate_outofservice : UInt
+
+pub let linedevstate_reinit : UInt
+
+pub let linedevstate_removed : UInt
+
+pub let linedevstate_ringing : UInt
+
+pub let linedevstate_roammode : UInt
+
+pub let linedevstate_signal : UInt
+
+pub let linedevstate_terminals : UInt
+
+pub let linedevstate_translatechange : UInt
+
+pub let linedevstatusflags_connected : UInt
+
+pub let linedevstatusflags_inservice : UInt
+
+pub let linedevstatusflags_locked : UInt
+
+pub let linedevstatusflags_msgwait : UInt
+
+pub let linedialtonemode_external : UInt
+
+pub let linedialtonemode_internal : UInt
+
+pub let linedialtonemode_normal : UInt
+
+pub let linedialtonemode_special : UInt
+
+pub let linedialtonemode_unavail : UInt
+
+pub let linedialtonemode_unknown : UInt
+
+pub let linedigitmode_dtmf : UInt
+
+pub let linedigitmode_dtmfend : UInt
+
+pub let linedigitmode_pulse : UInt
+
+pub let linedisconnectmode_badaddress : UInt
+
+pub let linedisconnectmode_blocked : UInt
+
+pub let linedisconnectmode_busy : UInt
+
+pub let linedisconnectmode_cancelled : UInt
+
+pub let linedisconnectmode_congestion : UInt
+
+pub let linedisconnectmode_destinationbarred : UInt
+
+pub let linedisconnectmode_donotdisturb : UInt
+
+pub let linedisconnectmode_fdnrestrict : UInt
+
+pub let linedisconnectmode_forwarded : UInt
+
+pub let linedisconnectmode_incompatible : UInt
+
+pub let linedisconnectmode_noanswer : UInt
+
+pub let linedisconnectmode_nodialtone : UInt
+
+pub let linedisconnectmode_normal : UInt
+
+pub let linedisconnectmode_numberchanged : UInt
+
+pub let linedisconnectmode_outoforder : UInt
+
+pub let linedisconnectmode_pickup : UInt
+
+pub let linedisconnectmode_qosunavail : UInt
+
+pub let linedisconnectmode_reject : UInt
+
+pub let linedisconnectmode_tempfailure : UInt
+
+pub let linedisconnectmode_unavail : UInt
+
+pub let linedisconnectmode_unknown : UInt
+
+pub let linedisconnectmode_unreachable : UInt
+
+pub let lineeqosinfo_admissionfailure : UInt
+
+pub let lineeqosinfo_genericerror : UInt
+
+pub let lineeqosinfo_noqos : UInt
+
+pub let lineeqosinfo_policyfailure : UInt
+
+pub let lineerr_addressblocked : UInt
+
+pub let lineerr_allocated : UInt
+
+pub let lineerr_baddeviceid : UInt
+
+pub let lineerr_bearermodeunavail : UInt
+
+pub let lineerr_billingrejected : UInt
+
+pub let lineerr_callunavail : UInt
+
+pub let lineerr_completionoverrun : UInt
+
+pub let lineerr_conferencefull : UInt
+
+pub let lineerr_dialbilling : UInt
+
+pub let lineerr_dialdialtone : UInt
+
+pub let lineerr_dialprompt : UInt
+
+pub let lineerr_dialquiet : UInt
+
+pub let lineerr_dialvoicedetect : UInt
+
+pub let lineerr_disconnected : UInt
+
+pub let lineerr_incompatibleapiversion : UInt
+
+pub let lineerr_incompatibleextversion : UInt
+
+pub let lineerr_inifilecorrupt : UInt
+
+pub let lineerr_inuse : UInt
+
+pub let lineerr_invaladdress : UInt
+
+pub let lineerr_invaladdressid : UInt
+
+pub let lineerr_invaladdressmode : UInt
+
+pub let lineerr_invaladdressstate : UInt
+
+pub let lineerr_invaladdresstype : UInt
+
+pub let lineerr_invalagentactivity : UInt
+
+pub let lineerr_invalagentgroup : UInt
+
+pub let lineerr_invalagentid : UInt
+
+pub let lineerr_invalagentsessionstate : UInt
+
+pub let lineerr_invalagentstate : UInt
+
+pub let lineerr_invalapphandle : UInt
+
+pub let lineerr_invalappname : UInt
+
+pub let lineerr_invalbearermode : UInt
+
+pub let lineerr_invalcallcomplmode : UInt
+
+pub let lineerr_invalcallhandle : UInt
+
+pub let lineerr_invalcallparams : UInt
+
+pub let lineerr_invalcallprivilege : UInt
+
+pub let lineerr_invalcallselect : UInt
+
+pub let lineerr_invalcallstate : UInt
+
+pub let lineerr_invalcallstatelist : UInt
+
+pub let lineerr_invalcard : UInt
+
+pub let lineerr_invalcompletionid : UInt
+
+pub let lineerr_invalconfcallhandle : UInt
+
+pub let lineerr_invalconsultcallhandle : UInt
+
+pub let lineerr_invalcountrycode : UInt
+
+pub let lineerr_invaldeviceclass : UInt
+
+pub let lineerr_invaldevicehandle : UInt
+
+pub let lineerr_invaldialparams : UInt
+
+pub let lineerr_invaldigitlist : UInt
+
+pub let lineerr_invaldigitmode : UInt
+
+pub let lineerr_invaldigits : UInt
+
+pub let lineerr_invalextversion : UInt
+
+pub let lineerr_invalfeature : UInt
+
+pub let lineerr_invalgroupid : UInt
+
+pub let lineerr_invallinehandle : UInt
+
+pub let lineerr_invallinestate : UInt
+
+pub let lineerr_invallocation : UInt
+
+pub let lineerr_invalmedialist : UInt
+
+pub let lineerr_invalmediamode : UInt
+
+pub let lineerr_invalmessageid : UInt
+
+pub let lineerr_invalparam : UInt
+
+pub let lineerr_invalparkid : UInt
+
+pub let lineerr_invalparkmode : UInt
+
+pub let lineerr_invalpassword : UInt
+
+pub let lineerr_invalpointer : UInt
+
+pub let lineerr_invalprivselect : UInt
+
+pub let lineerr_invalrate : UInt
+
+pub let lineerr_invalrequestmode : UInt
+
+pub let lineerr_invalterminalid : UInt
+
+pub let lineerr_invalterminalmode : UInt
+
+pub let lineerr_invaltimeout : UInt
+
+pub let lineerr_invaltone : UInt
+
+pub let lineerr_invaltonelist : UInt
+
+pub let lineerr_invaltonemode : UInt
+
+pub let lineerr_invaltransfermode : UInt
+
+pub let lineerr_linemapperfailed : UInt
+
+pub let lineerr_noconference : UInt
+
+pub let lineerr_nodevice : UInt
+
+pub let lineerr_nodriver : UInt
+
+pub let lineerr_nomem : UInt
+
+pub let lineerr_nomultipleinstance : UInt
+
+pub let lineerr_norequest : UInt
+
+pub let lineerr_notowner : UInt
+
+pub let lineerr_notregistered : UInt
+
+pub let lineerr_operationfailed : UInt
+
+pub let lineerr_operationunavail : UInt
+
+pub let lineerr_rateunavail : UInt
+
+pub let lineerr_reinit : UInt
+
+pub let lineerr_requestoverrun : UInt
+
+pub let lineerr_resourceunavail : UInt
+
+pub let lineerr_service_not_running : UInt
+
+pub let lineerr_structuretoosmall : UInt
+
+pub let lineerr_targetnotfound : UInt
+
+pub let lineerr_targetself : UInt
+
+pub let lineerr_uninitialized : UInt
+
+pub let lineerr_usercancelled : UInt
+
+pub let lineerr_useruserinfotoobig : UInt
+
+pub let linefeature_devspecific : UInt
+
+pub let linefeature_devspecificfeat : UInt
+
+pub let linefeature_forward : UInt
+
+pub let linefeature_forwarddnd : UInt
+
+pub let linefeature_forwardfwd : UInt
+
+pub let linefeature_makecall : UInt
+
+pub let linefeature_setdevstatus : UInt
+
+pub let linefeature_setmediacontrol : UInt
+
+pub let linefeature_setterminal : UInt
+
+pub let lineforwardmode_busy : UInt
+
+pub let lineforwardmode_busyexternal : UInt
+
+pub let lineforwardmode_busyinternal : UInt
+
+pub let lineforwardmode_busyna : UInt
+
+pub let lineforwardmode_busynaexternal : UInt
+
+pub let lineforwardmode_busynainternal : UInt
+
+pub let lineforwardmode_busynaspecific : UInt
+
+pub let lineforwardmode_busyspecific : UInt
+
+pub let lineforwardmode_noansw : UInt
+
+pub let lineforwardmode_noanswexternal : UInt
+
+pub let lineforwardmode_noanswinternal : UInt
+
+pub let lineforwardmode_noanswspecific : UInt
+
+pub let lineforwardmode_unavail : UInt
+
+pub let lineforwardmode_uncond : UInt
+
+pub let lineforwardmode_uncondexternal : UInt
+
+pub let lineforwardmode_uncondinternal : UInt
+
+pub let lineforwardmode_uncondspecific : UInt
+
+pub let lineforwardmode_unknown : UInt
+
+pub let linegatherterm_bufferfull : UInt
+
+pub let linegatherterm_cancel : UInt
+
+pub let linegatherterm_firsttimeout : UInt
+
+pub let linegatherterm_intertimeout : UInt
+
+pub let linegatherterm_termdigit : UInt
+
+pub let linegenerateterm_cancel : UInt
+
+pub let linegenerateterm_done : UInt
+
+pub let linegroupstatus_groupremoved : UInt
+
+pub let linegroupstatus_newgroup : UInt
+
+pub let lineinitializeexoption_callhubtracking : UInt
+
+pub let lineinitializeexoption_usecompletionport : UInt
+
+pub let lineinitializeexoption_useevent : UInt
+
+pub let lineinitializeexoption_usehiddenwindow : UInt
+
+pub let linelocationoption_pulsedial : UInt
+
+pub let linemapper : UInt
+
+pub let linemediacontrol_none : UInt
+
+pub let linemediacontrol_pause : UInt
+
+pub let linemediacontrol_ratedown : UInt
+
+pub let linemediacontrol_ratenormal : UInt
+
+pub let linemediacontrol_rateup : UInt
+
+pub let linemediacontrol_reset : UInt
+
+pub let linemediacontrol_resume : UInt
+
+pub let linemediacontrol_start : UInt
+
+pub let linemediacontrol_volumedown : UInt
+
+pub let linemediacontrol_volumenormal : UInt
+
+pub let linemediacontrol_volumeup : UInt
+
+pub let linemediamode_adsi : UInt
+
+pub let linemediamode_automatedvoice : UInt
+
+pub let linemediamode_datamodem : UInt
+
+pub let linemediamode_digitaldata : UInt
+
+pub let linemediamode_g3_fax : UInt
+
+pub let linemediamode_g4_fax : UInt
+
+pub let linemediamode_interactivevoice : UInt
+
+pub let linemediamode_mixed : UInt
+
+pub let linemediamode_tdd : UInt
+
+pub let linemediamode_teletex : UInt
+
+pub let linemediamode_telex : UInt
+
+pub let linemediamode_unknown : UInt
+
+pub let linemediamode_video : UInt
+
+pub let linemediamode_videotex : UInt
+
+pub let linemediamode_voiceview : UInt
+
+pub let lineofferingmode_active : UInt
+
+pub let lineofferingmode_inactive : UInt
+
+pub let lineopenoption_proxy : UInt
+
+pub let lineopenoption_singleaddress : UInt
+
+pub let lineparkmode_directed : UInt
+
+pub let lineparkmode_nondirected : UInt
+
+pub let lineproxyrequest_agentspecific : UInt
+
+pub let lineproxyrequest_createagent : UInt
+
+pub let lineproxyrequest_createagentsession : UInt
+
+pub let lineproxyrequest_getagentactivitylist : UInt
+
+pub let lineproxyrequest_getagentcaps : UInt
+
+pub let lineproxyrequest_getagentgrouplist : UInt
+
+pub let lineproxyrequest_getagentinfo : UInt
+
+pub let lineproxyrequest_getagentsessioninfo : UInt
+
+pub let lineproxyrequest_getagentsessionlist : UInt
+
+pub let lineproxyrequest_getagentstatus : UInt
+
+pub let lineproxyrequest_getgrouplist : UInt
+
+pub let lineproxyrequest_getqueueinfo : UInt
+
+pub let lineproxyrequest_getqueuelist : UInt
+
+pub let lineproxyrequest_setagentactivity : UInt
+
+pub let lineproxyrequest_setagentgroup : UInt
+
+pub let lineproxyrequest_setagentmeasurementperiod : UInt
+
+pub let lineproxyrequest_setagentsessionstate : UInt
+
+pub let lineproxyrequest_setagentstate : UInt
+
+pub let lineproxyrequest_setagentstateex : UInt
+
+pub let lineproxyrequest_setqueuemeasurementperiod : UInt
+
+pub let lineproxystatus_allopenforacd : UInt
+
+pub let lineproxystatus_close : UInt
+
+pub let lineproxystatus_open : UInt
+
+pub let lineqosrequesttype_servicelevel : UInt
+
+pub let lineqosservicelevel_besteffort : UInt
+
+pub let lineqosservicelevel_ifavailable : UInt
+
+pub let lineqosservicelevel_needed : UInt
+
+pub let linequeuestatus_newqueue : UInt
+
+pub let linequeuestatus_queueremoved : UInt
+
+pub let linequeuestatus_updateinfo : UInt
+
+pub let lineremovefromconf_any : UInt
+
+pub let lineremovefromconf_last : UInt
+
+pub let lineremovefromconf_none : UInt
+
+pub let linerequestmode_drop : UInt
+
+pub let linerequestmode_makecall : UInt
+
+pub let linerequestmode_mediacall : UInt
+
+pub let lineroammode_home : UInt
+
+pub let lineroammode_roama : UInt
+
+pub let lineroammode_roamb : UInt
+
+pub let lineroammode_unavail : UInt
+
+pub let lineroammode_unknown : UInt
+
+pub let linespecialinfo_custirreg : UInt
+
+pub let linespecialinfo_nocircuit : UInt
+
+pub let linespecialinfo_reorder : UInt
+
+pub let linespecialinfo_unavail : UInt
+
+pub let linespecialinfo_unknown : UInt
+
+pub let linetermdev_headset : UInt
+
+pub let linetermdev_phone : UInt
+
+pub let linetermdev_speaker : UInt
+
+pub let linetermmode_buttons : UInt
+
+pub let linetermmode_display : UInt
+
+pub let linetermmode_hookswitch : UInt
+
+pub let linetermmode_lamps : UInt
+
+pub let linetermmode_mediabidirect : UInt
+
+pub let linetermmode_mediafromline : UInt
+
+pub let linetermmode_mediatoline : UInt
+
+pub let linetermmode_ringer : UInt
+
+pub let linetermsharing_private : UInt
+
+pub let linetermsharing_sharedconf : UInt
+
+pub let linetermsharing_sharedexcl : UInt
+
+pub let linetolllistoption_add : UInt
+
+pub let linetolllistoption_remove : UInt
+
+pub let linetonemode_beep : UInt
+
+pub let linetonemode_billing : UInt
+
+pub let linetonemode_busy : UInt
+
+pub let linetonemode_custom : UInt
+
+pub let linetonemode_ringback : UInt
+
+pub let linetransfermode_conference : UInt
+
+pub let linetransfermode_transfer : UInt
+
+pub let linetranslateoption_cancelcallwaiting : UInt
+
+pub let linetranslateoption_cardoverride : UInt
+
+pub let linetranslateoption_forceld : UInt
+
+pub let linetranslateoption_forcelocal : UInt
+
+pub let linetranslateresult_canonical : UInt
+
+pub let linetranslateresult_dialbilling : UInt
+
+pub let linetranslateresult_dialdialtone : UInt
+
+pub let linetranslateresult_dialprompt : UInt
+
+pub let linetranslateresult_dialquiet : UInt
+
+pub let linetranslateresult_international : UInt
+
+pub let linetranslateresult_intolllist : UInt
+
+pub let linetranslateresult_local : UInt
+
+pub let linetranslateresult_longdistance : UInt
+
+pub let linetranslateresult_notintolllist : UInt
+
+pub let linetranslateresult_notranslation : UInt
+
+pub let linetranslateresult_voicedetect : UInt
+
+pub let linetspioption_nonreentrant : UInt
+
+pub fn open_tnef_stream(@core.RawAddress, @core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, UInt16, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn open_tnef_stream_ex(@core.RawAddress, @core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, UInt16, @core.RawAddress, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn open_tnef_stream_ex_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn open_tnef_stream_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, UInt, @core.RawAddress) -> Int
+
+pub let opentnefstream : String
+
+pub let opentnefstreamex : String
+
+pub let phone_button : Int
+
+pub let phone_close : Int
+
+pub fn phone_close_with_u32(UInt) -> Int raise @core.WindowsError
+
+pub fn phone_close_with_u32_raw(UInt) -> Int
+
+pub fn phone_config_dialog(UInt, @core.RawAddress, @strings.PStr) -> Int raise @core.WindowsError
+
+pub fn phone_config_dialog_a(UInt, @core.RawAddress, @strings.PStr) -> Int raise @core.WindowsError
+
+pub fn phone_config_dialog_a_raw(UInt, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn phone_config_dialog_raw(UInt, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn phone_config_dialog_w(UInt, @core.RawAddress, @strings.PWStr) -> Int raise @core.WindowsError
+
+pub fn phone_config_dialog_w_raw(UInt, @core.RawAddress, @core.RawAddress) -> Int
+
+pub let phone_create : Int
+
+pub fn phone_dev_specific(UInt, @core.RawAddress, UInt) -> Int raise @core.WindowsError
+
+pub fn phone_dev_specific_raw(UInt, @core.RawAddress, UInt) -> Int
+
+pub let phone_devspecific : Int
+
+pub fn phone_get_button_info(UInt, UInt, @1914f2ecd15c0dc9.PHONEBUTTONINFO_ff975476a93c) -> Int raise @core.WindowsError
+
+pub fn phone_get_button_info_a(UInt, UInt, @1914f2ecd15c0dc9.PHONEBUTTONINFO_ff975476a93c) -> Int raise @core.WindowsError
+
+pub fn phone_get_button_info_a_raw(UInt, UInt, @core.RawAddress) -> Int
+
+pub fn phone_get_button_info_raw(UInt, UInt, @core.RawAddress) -> Int
+
+pub fn phone_get_button_info_w(UInt, UInt, @1914f2ecd15c0dc9.PHONEBUTTONINFO_ff975476a93c) -> Int raise @core.WindowsError
+
+pub fn phone_get_button_info_w_raw(UInt, UInt, @core.RawAddress) -> Int
+
+pub fn phone_get_data(UInt, UInt, @core.RawAddress, UInt) -> Int raise @core.WindowsError
+
+pub fn phone_get_data_raw(UInt, UInt, @core.RawAddress, UInt) -> Int
+
+pub fn phone_get_dev_caps(UInt, UInt, UInt, UInt, @1914f2ecd15c0dc9.PHONECAPS_44584f9289be) -> Int raise @core.WindowsError
+
+pub fn phone_get_dev_caps_a(UInt, UInt, UInt, UInt, @1914f2ecd15c0dc9.PHONECAPS_44584f9289be) -> Int raise @core.WindowsError
+
+pub fn phone_get_dev_caps_a_raw(UInt, UInt, UInt, UInt, @core.RawAddress) -> Int
+
+pub fn phone_get_dev_caps_raw(UInt, UInt, UInt, UInt, @core.RawAddress) -> Int
+
+pub fn phone_get_dev_caps_w(UInt, UInt, UInt, UInt, @1914f2ecd15c0dc9.PHONECAPS_44584f9289be) -> Int raise @core.WindowsError
+
+pub fn phone_get_dev_caps_w_raw(UInt, UInt, UInt, UInt, @core.RawAddress) -> Int
+
+pub fn phone_get_display(UInt, @1914f2ecd15c0dc9.VARSTRING_41025a104d6a) -> Int raise @core.WindowsError
+
+pub fn phone_get_display_raw(UInt, @core.RawAddress) -> Int
+
+pub fn phone_get_gain(UInt, UInt, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn phone_get_gain_raw(UInt, UInt, @core.RawAddress) -> Int
+
+pub fn phone_get_hook_switch(UInt, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn phone_get_hook_switch_raw(UInt, @core.RawAddress) -> Int
+
+pub fn phone_get_icon(UInt, @strings.PStr, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn phone_get_icon_a(UInt, @strings.PStr, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn phone_get_icon_a_raw(UInt, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn phone_get_icon_raw(UInt, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn phone_get_icon_w(UInt, @strings.PWStr, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn phone_get_icon_w_raw(UInt, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn phone_get_id(UInt, @1914f2ecd15c0dc9.VARSTRING_41025a104d6a, @strings.PStr) -> Int raise @core.WindowsError
+
+pub fn phone_get_id_raw(UInt, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn phone_get_ida(UInt, @1914f2ecd15c0dc9.VARSTRING_41025a104d6a, @strings.PStr) -> Int raise @core.WindowsError
+
+pub fn phone_get_ida_raw(UInt, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn phone_get_idw(UInt, @1914f2ecd15c0dc9.VARSTRING_41025a104d6a, @strings.PWStr) -> Int raise @core.WindowsError
+
+pub fn phone_get_idw_raw(UInt, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn phone_get_lamp(UInt, UInt, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn phone_get_lamp_raw(UInt, UInt, @core.RawAddress) -> Int
+
+pub fn phone_get_message(UInt, @1914f2ecd15c0dc9.PHONEMESSAGE_0449b9b66127, UInt) -> Int raise @core.WindowsError
+
+pub fn phone_get_message_raw(UInt, @core.RawAddress, UInt) -> Int
+
+pub fn phone_get_ring(UInt, @core.RawAddress, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn phone_get_ring_raw(UInt, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn phone_get_status(UInt, @1914f2ecd15c0dc9.PHONESTATUS_6bc14315142a) -> Int raise @core.WindowsError
+
+pub fn phone_get_status_a(UInt, @1914f2ecd15c0dc9.PHONESTATUS_6bc14315142a) -> Int raise @core.WindowsError
+
+pub fn phone_get_status_a_raw(UInt, @core.RawAddress) -> Int
+
+pub fn phone_get_status_messages(UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn phone_get_status_messages_raw(UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn phone_get_status_raw(UInt, @core.RawAddress) -> Int
+
+pub fn phone_get_status_w(UInt, @1914f2ecd15c0dc9.PHONESTATUS_6bc14315142a) -> Int raise @core.WindowsError
+
+pub fn phone_get_status_w_raw(UInt, @core.RawAddress) -> Int
+
+pub fn phone_get_volume(UInt, UInt, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn phone_get_volume_raw(UInt, UInt, @core.RawAddress) -> Int
+
+pub fn phone_initialize(@core.RawAddress, @core.RawAddress, @core.RawAddress, @strings.PStr, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn phone_initialize_ex_a(@core.RawAddress, @core.RawAddress, @core.RawAddress, @strings.PStr, @core.RawAddress, @core.RawAddress, @1914f2ecd15c0dc9.PHONEINITIALIZEEXPARAMS_315e8c557875) -> Int raise @core.WindowsError
+
+pub fn phone_initialize_ex_a_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn phone_initialize_ex_w(@core.RawAddress, @core.RawAddress, @core.RawAddress, @strings.PWStr, @core.RawAddress, @core.RawAddress, @1914f2ecd15c0dc9.PHONEINITIALIZEEXPARAMS_315e8c557875) -> Int raise @core.WindowsError
+
+pub fn phone_initialize_ex_w_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn phone_initialize_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn phone_negotiate_api_version(UInt, UInt, UInt, UInt, @core.RawAddress, @1914f2ecd15c0dc9.PHONEEXTENSIONID_c27a4c3e00f9) -> Int raise @core.WindowsError
+
+pub fn phone_negotiate_api_version_raw(UInt, UInt, UInt, UInt, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn phone_negotiate_ext_version(UInt, UInt, UInt, UInt, UInt, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn phone_negotiate_ext_version_raw(UInt, UInt, UInt, UInt, UInt, @core.RawAddress) -> Int
+
+pub fn phone_open(UInt, UInt, @core.RawAddress, UInt, UInt, UInt64, UInt) -> Int raise @core.WindowsError
+
+pub fn phone_open_raw(UInt, UInt, @core.RawAddress, UInt, UInt, UInt64, UInt) -> Int
+
+pub let phone_remove : Int
+
+pub let phone_reply : Int
+
+pub fn phone_set_button_info(UInt, UInt, @1914f2ecd15c0dc9.PHONEBUTTONINFO_ff975476a93c) -> Int raise @core.WindowsError
+
+pub fn phone_set_button_info_a(UInt, UInt, @1914f2ecd15c0dc9.PHONEBUTTONINFO_ff975476a93c) -> Int raise @core.WindowsError
+
+pub fn phone_set_button_info_a_raw(UInt, UInt, @core.RawAddress) -> Int
+
+pub fn phone_set_button_info_raw(UInt, UInt, @core.RawAddress) -> Int
+
+pub fn phone_set_button_info_w(UInt, UInt, @1914f2ecd15c0dc9.PHONEBUTTONINFO_ff975476a93c) -> Int raise @core.WindowsError
+
+pub fn phone_set_button_info_w_raw(UInt, UInt, @core.RawAddress) -> Int
+
+pub fn phone_set_data(UInt, UInt, @core.RawAddress, UInt) -> Int raise @core.WindowsError
+
+pub fn phone_set_data_raw(UInt, UInt, @core.RawAddress, UInt) -> Int
+
+pub fn phone_set_display(UInt, UInt, UInt, @strings.PStr, UInt) -> Int raise @core.WindowsError
+
+pub fn phone_set_display_raw(UInt, UInt, UInt, @core.RawAddress, UInt) -> Int
+
+pub fn phone_set_gain(UInt, UInt, UInt) -> Int raise @core.WindowsError
+
+pub fn phone_set_gain_raw(UInt, UInt, UInt) -> Int
+
+pub fn phone_set_hook_switch(UInt, UInt, UInt) -> Int raise @core.WindowsError
+
+pub fn phone_set_hook_switch_raw(UInt, UInt, UInt) -> Int
+
+pub fn phone_set_lamp(UInt, UInt, UInt) -> Int raise @core.WindowsError
+
+pub fn phone_set_lamp_raw(UInt, UInt, UInt) -> Int
+
+pub fn phone_set_ring(UInt, UInt, UInt) -> Int raise @core.WindowsError
+
+pub fn phone_set_ring_raw(UInt, UInt, UInt) -> Int
+
+pub fn phone_set_status_messages(UInt, UInt, UInt, UInt) -> Int raise @core.WindowsError
+
+pub fn phone_set_status_messages_raw(UInt, UInt, UInt, UInt) -> Int
+
+pub fn phone_set_volume(UInt, UInt, UInt) -> Int raise @core.WindowsError
+
+pub fn phone_set_volume_raw(UInt, UInt, UInt) -> Int
+
+pub fn phone_shutdown(UInt) -> Int raise @core.WindowsError
+
+pub fn phone_shutdown_raw(UInt) -> Int
+
+pub let phone_state : Int
+
+pub let phonebuttonfunction_abbrevdial : UInt
+
+pub let phonebuttonfunction_bridgedapp : UInt
+
+pub let phonebuttonfunction_busy : UInt
+
+pub let phonebuttonfunction_callapp : UInt
+
+pub let phonebuttonfunction_callid : UInt
+
+pub let phonebuttonfunction_campon : UInt
+
+pub let phonebuttonfunction_conference : UInt
+
+pub let phonebuttonfunction_connect : UInt
+
+pub let phonebuttonfunction_cover : UInt
+
+pub let phonebuttonfunction_dataoff : UInt
+
+pub let phonebuttonfunction_dataon : UInt
+
+pub let phonebuttonfunction_datetime : UInt
+
+pub let phonebuttonfunction_directory : UInt
+
+pub let phonebuttonfunction_disconnect : UInt
+
+pub let phonebuttonfunction_donotdisturb : UInt
+
+pub let phonebuttonfunction_drop : UInt
+
+pub let phonebuttonfunction_flash : UInt
+
+pub let phonebuttonfunction_forward : UInt
+
+pub let phonebuttonfunction_hold : UInt
+
+pub let phonebuttonfunction_intercom : UInt
+
+pub let phonebuttonfunction_lastnum : UInt
+
+pub let phonebuttonfunction_msgindicator : UInt
+
+pub let phonebuttonfunction_msgwaitoff : UInt
+
+pub let phonebuttonfunction_msgwaiton : UInt
+
+pub let phonebuttonfunction_mute : UInt
+
+pub let phonebuttonfunction_nightsrv : UInt
+
+pub let phonebuttonfunction_none : UInt
+
+pub let phonebuttonfunction_park : UInt
+
+pub let phonebuttonfunction_pickup : UInt
+
+pub let phonebuttonfunction_queuecall : UInt
+
+pub let phonebuttonfunction_recall : UInt
+
+pub let phonebuttonfunction_redirect : UInt
+
+pub let phonebuttonfunction_reject : UInt
+
+pub let phonebuttonfunction_repdial : UInt
+
+pub let phonebuttonfunction_ringagain : UInt
+
+pub let phonebuttonfunction_saverepeat : UInt
+
+pub let phonebuttonfunction_selectring : UInt
+
+pub let phonebuttonfunction_send : UInt
+
+pub let phonebuttonfunction_sendcalls : UInt
+
+pub let phonebuttonfunction_setrepdial : UInt
+
+pub let phonebuttonfunction_speakeroff : UInt
+
+pub let phonebuttonfunction_speakeron : UInt
+
+pub let phonebuttonfunction_stationspeed : UInt
+
+pub let phonebuttonfunction_systemspeed : UInt
+
+pub let phonebuttonfunction_transfer : UInt
+
+pub let phonebuttonfunction_unknown : UInt
+
+pub let phonebuttonfunction_volumedown : UInt
+
+pub let phonebuttonfunction_volumeup : UInt
+
+pub let phonebuttonmode_call : UInt
+
+pub let phonebuttonmode_display : UInt
+
+pub let phonebuttonmode_dummy : UInt
+
+pub let phonebuttonmode_feature : UInt
+
+pub let phonebuttonmode_keypad : UInt
+
+pub let phonebuttonmode_local : UInt
+
+pub let phonebuttonstate_down : UInt
+
+pub let phonebuttonstate_unavail : UInt
+
+pub let phonebuttonstate_unknown : UInt
+
+pub let phonebuttonstate_up : UInt
+
+pub let phoneerr_allocated : UInt
+
+pub let phoneerr_baddeviceid : UInt
+
+pub let phoneerr_disconnected : UInt
+
+pub let phoneerr_incompatibleapiversion : UInt
+
+pub let phoneerr_incompatibleextversion : UInt
+
+pub let phoneerr_inifilecorrupt : UInt
+
+pub let phoneerr_inuse : UInt
+
+pub let phoneerr_invalapphandle : UInt
+
+pub let phoneerr_invalappname : UInt
+
+pub let phoneerr_invalbuttonlampid : UInt
+
+pub let phoneerr_invalbuttonmode : UInt
+
+pub let phoneerr_invalbuttonstate : UInt
+
+pub let phoneerr_invaldataid : UInt
+
+pub let phoneerr_invaldeviceclass : UInt
+
+pub let phoneerr_invalextversion : UInt
+
+pub let phoneerr_invalhookswitchdev : UInt
+
+pub let phoneerr_invalhookswitchmode : UInt
+
+pub let phoneerr_invallampmode : UInt
+
+pub let phoneerr_invalparam : UInt
+
+pub let phoneerr_invalphonehandle : UInt
+
+pub let phoneerr_invalphonestate : UInt
+
+pub let phoneerr_invalpointer : UInt
+
+pub let phoneerr_invalprivilege : UInt
+
+pub let phoneerr_invalringmode : UInt
+
+pub let phoneerr_nodevice : UInt
+
+pub let phoneerr_nodriver : UInt
+
+pub let phoneerr_nomem : UInt
+
+pub let phoneerr_notowner : UInt
+
+pub let phoneerr_operationfailed : UInt
+
+pub let phoneerr_operationunavail : UInt
+
+pub let phoneerr_reinit : UInt
+
+pub let phoneerr_requestoverrun : UInt
+
+pub let phoneerr_resourceunavail : UInt
+
+pub let phoneerr_service_not_running : UInt
+
+pub let phoneerr_structuretoosmall : UInt
+
+pub let phoneerr_uninitialized : UInt
+
+pub let phonefeature_genericphone : UInt
+
+pub let phonefeature_getbuttoninfo : UInt
+
+pub let phonefeature_getdata : UInt
+
+pub let phonefeature_getdisplay : UInt
+
+pub let phonefeature_getgainhandset : UInt
+
+pub let phonefeature_getgainheadset : UInt
+
+pub let phonefeature_getgainspeaker : UInt
+
+pub let phonefeature_gethookswitchhandset : UInt
+
+pub let phonefeature_gethookswitchheadset : UInt
+
+pub let phonefeature_gethookswitchspeaker : UInt
+
+pub let phonefeature_getlamp : UInt
+
+pub let phonefeature_getring : UInt
+
+pub let phonefeature_getvolumehandset : UInt
+
+pub let phonefeature_getvolumeheadset : UInt
+
+pub let phonefeature_getvolumespeaker : UInt
+
+pub let phonefeature_setbuttoninfo : UInt
+
+pub let phonefeature_setdata : UInt
+
+pub let phonefeature_setdisplay : UInt
+
+pub let phonefeature_setgainhandset : UInt
+
+pub let phonefeature_setgainheadset : UInt
+
+pub let phonefeature_setgainspeaker : UInt
+
+pub let phonefeature_sethookswitchhandset : UInt
+
+pub let phonefeature_sethookswitchheadset : UInt
+
+pub let phonefeature_sethookswitchspeaker : UInt
+
+pub let phonefeature_setlamp : UInt
+
+pub let phonefeature_setring : UInt
+
+pub let phonefeature_setvolumehandset : UInt
+
+pub let phonefeature_setvolumeheadset : UInt
+
+pub let phonefeature_setvolumespeaker : UInt
+
+pub let phonehookswitchdev_handset : UInt
+
+pub let phonehookswitchdev_headset : UInt
+
+pub let phonehookswitchdev_speaker : UInt
+
+pub let phonehookswitchmode_mic : UInt
+
+pub let phonehookswitchmode_micspeaker : UInt
+
+pub let phonehookswitchmode_onhook : UInt
+
+pub let phonehookswitchmode_speaker : UInt
+
+pub let phonehookswitchmode_unknown : UInt
+
+pub let phoneinitializeexoption_usecompletionport : UInt
+
+pub let phoneinitializeexoption_useevent : UInt
+
+pub let phoneinitializeexoption_usehiddenwindow : UInt
+
+pub let phonelampmode_brokenflutter : UInt
+
+pub let phonelampmode_dummy : UInt
+
+pub let phonelampmode_flash : UInt
+
+pub let phonelampmode_flutter : UInt
+
+pub let phonelampmode_off : UInt
+
+pub let phonelampmode_steady : UInt
+
+pub let phonelampmode_unknown : UInt
+
+pub let phonelampmode_wink : UInt
+
+pub let phoneprivilege_monitor : UInt
+
+pub let phoneprivilege_owner : UInt
+
+pub let phonestate_capschange : UInt
+
+pub let phonestate_connected : UInt
+
+pub let phonestate_devspecific : UInt
+
+pub let phonestate_disconnected : UInt
+
+pub let phonestate_display : UInt
+
+pub let phonestate_handsetgain : UInt
+
+pub let phonestate_handsethookswitch : UInt
+
+pub let phonestate_handsetvolume : UInt
+
+pub let phonestate_headsetgain : UInt
+
+pub let phonestate_headsethookswitch : UInt
+
+pub let phonestate_headsetvolume : UInt
+
+pub let phonestate_lamp : UInt
+
+pub let phonestate_monitors : UInt
+
+pub let phonestate_other : UInt
+
+pub let phonestate_owner : UInt
+
+pub let phonestate_reinit : UInt
+
+pub let phonestate_removed : UInt
+
+pub let phonestate_resume : UInt
+
+pub let phonestate_ringmode : UInt
+
+pub let phonestate_ringvolume : UInt
+
+pub let phonestate_speakergain : UInt
+
+pub let phonestate_speakerhookswitch : UInt
+
+pub let phonestate_speakervolume : UInt
+
+pub let phonestate_suspend : UInt
+
+pub let phonestatusflags_connected : UInt
+
+pub let phonestatusflags_suspended : UInt
+
+pub let prio_high : UInt
+
+pub let prio_low : UInt
+
+pub let prio_norm : UInt
+
+pub let privateobject_address : UInt
+
+pub let privateobject_call : UInt
+
+pub let privateobject_callid : UInt
+
+pub let privateobject_line : UInt
+
+pub let privateobject_none : UInt
+
+pub let privateobject_phone : UInt
+
+pub let rendbind_authenticate : UInt
+
+pub let rendbind_defaultcredentials : UInt
+
+pub let rendbind_defaultdomainname : UInt
+
+pub let rendbind_defaultpassword : UInt
+
+pub let rendbind_defaultusername : UInt
+
+pub let stringformat_ascii : UInt
+
+pub let stringformat_binary : UInt
+
+pub let stringformat_dbcs : UInt
+
+pub let stringformat_unicode : UInt
+
+pub let strm_configured : UInt
+
+pub let strm_initial : UInt
+
+pub let strm_paused : UInt
+
+pub let strm_running : UInt
+
+pub let strm_stopped : UInt
+
+pub let strm_terminalselected : UInt
+
+pub let tapi_current_version : UInt
+
+pub let tapi_e_addressblocked : Int
+
+pub let tapi_e_allocated : Int
+
+pub let tapi_e_billingrejected : Int
+
+pub let tapi_e_callcenter_group_removed : Int
+
+pub let tapi_e_callcenter_invalagentactivity : Int
+
+pub let tapi_e_callcenter_invalagentgroup : Int
+
+pub let tapi_e_callcenter_invalagentid : Int
+
+pub let tapi_e_callcenter_invalagentstate : Int
+
+pub let tapi_e_callcenter_invalpassword : Int
+
+pub let tapi_e_callcenter_no_agent_id : Int
+
+pub let tapi_e_callcenter_queue_removed : Int
+
+pub let tapi_e_callnotselected : Int
+
+pub let tapi_e_callunavail : Int
+
+pub let tapi_e_completionoverrun : Int
+
+pub let tapi_e_conferencefull : Int
+
+pub let tapi_e_destbusy : Int
+
+pub let tapi_e_destnoanswer : Int
+
+pub let tapi_e_destunavail : Int
+
+pub let tapi_e_dialmodifiernotsupported : Int
+
+pub let tapi_e_dropped : Int
+
+pub let tapi_e_inuse : Int
+
+pub let tapi_e_invaladdress : Int
+
+pub let tapi_e_invaladdressstate : Int
+
+pub let tapi_e_invaladdresstype : Int
+
+pub let tapi_e_invalbuttonlampid : Int
+
+pub let tapi_e_invalbuttonstate : Int
+
+pub let tapi_e_invalcallparams : Int
+
+pub let tapi_e_invalcallprivilege : Int
+
+pub let tapi_e_invalcallstate : Int
+
+pub let tapi_e_invalcard : Int
+
+pub let tapi_e_invalcompletionid : Int
+
+pub let tapi_e_invalcountrycode : Int
+
+pub let tapi_e_invaldataid : Int
+
+pub let tapi_e_invaldeviceclass : Int
+
+pub let tapi_e_invaldialparams : Int
+
+pub let tapi_e_invaldigits : Int
+
+pub let tapi_e_invalfeature : Int
+
+pub let tapi_e_invalgroupid : Int
+
+pub let tapi_e_invalhookswitchdev : Int
+
+pub let tapi_e_invaliddirection : Int
+
+pub let tapi_e_invalidmediatype : Int
+
+pub let tapi_e_invalidstream : Int
+
+pub let tapi_e_invalidstreamstate : Int
+
+pub let tapi_e_invalidterminal : Int
+
+pub let tapi_e_invalidterminalclass : Int
+
+pub let tapi_e_invallist : Int
+
+pub let tapi_e_invallocation : Int
+
+pub let tapi_e_invalmessageid : Int
+
+pub let tapi_e_invalmode : Int
+
+pub let tapi_e_invalparkid : Int
+
+pub let tapi_e_invalprivilege : Int
+
+pub let tapi_e_invalrate : Int
+
+pub let tapi_e_invaltimeout : Int
+
+pub let tapi_e_invaltone : Int
+
+pub let tapi_e_maxstreams : Int
+
+pub let tapi_e_maxterminals : Int
+
+pub let tapi_e_noconference : Int
+
+pub let tapi_e_nodevice : Int
+
+pub let tapi_e_nodriver : Int
+
+pub let tapi_e_noevent : Int
+
+pub let tapi_e_noformat : Int
+
+pub let tapi_e_noitems : Int
+
+pub let tapi_e_norequest : Int
+
+pub let tapi_e_norequestrecipient : Int
+
+pub let tapi_e_not_initialized : Int
+
+pub let tapi_e_notenoughmemory : Int
+
+pub let tapi_e_noterminalselected : Int
+
+pub let tapi_e_notowner : Int
+
+pub let tapi_e_notregistered : Int
+
+pub let tapi_e_notstopped : Int
+
+pub let tapi_e_notsupported : Int
+
+pub let tapi_e_operationfailed : Int
+
+pub let tapi_e_peer_not_set : Int
+
+pub let tapi_e_phonenotopen : Int
+
+pub let tapi_e_registry_setting_corrupt : Int
+
+pub let tapi_e_reinit : Int
+
+pub let tapi_e_requestcancelled : Int
+
+pub let tapi_e_requestfailed : Int
+
+pub let tapi_e_requestoverrun : Int
+
+pub let tapi_e_requestqueuefull : Int
+
+pub let tapi_e_resourceunavail : Int
+
+pub let tapi_e_service_not_running : Int
+
+pub let tapi_e_targetnotfound : Int
+
+pub let tapi_e_targetself : Int
+
+pub let tapi_e_terminal_peer : Int
+
+pub let tapi_e_terminalinuse : Int
+
+pub let tapi_e_timeout : Int
+
+pub let tapi_e_useruserinfotoobig : Int
+
+pub let tapi_e_wrong_state : Int
+
+pub let tapi_e_wrongevent : Int
+
+pub fn tapi_get_location_info(@core.RawAddress, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn tapi_get_location_info_a(@core.RawAddress, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn tapi_get_location_info_a_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn tapi_get_location_info_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn tapi_get_location_info_w(@core.RawAddress, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn tapi_get_location_info_w_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub let tapi_reply : UInt
+
+pub fn tapi_request_drop(@core.RawAddress, UInt64) -> Int raise @core.WindowsError
+
+pub fn tapi_request_drop_raw(@core.RawAddress, UInt64) -> Int
+
+pub fn tapi_request_make_call(@strings.PStr, @strings.PStr, @strings.PStr, @strings.PStr) -> Int raise @core.WindowsError
+
+pub fn tapi_request_make_call_a(@strings.PStr, @strings.PStr, @strings.PStr, @strings.PStr) -> Int raise @core.WindowsError
+
+pub fn tapi_request_make_call_a_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn tapi_request_make_call_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn tapi_request_make_call_w(@strings.PWStr, @strings.PWStr, @strings.PWStr, @strings.PWStr) -> Int raise @core.WindowsError
+
+pub fn tapi_request_make_call_w_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn tapi_request_media_call(@core.RawAddress, UInt64, @strings.PStr, @strings.PStr, UInt, UInt, @strings.PStr, @strings.PStr, @strings.PStr, @strings.PStr) -> Int raise @core.WindowsError
+
+pub fn tapi_request_media_call_a(@core.RawAddress, UInt64, @strings.PStr, @strings.PStr, UInt, UInt, @strings.PStr, @strings.PStr, @strings.PStr, @strings.PStr) -> Int raise @core.WindowsError
+
+pub fn tapi_request_media_call_a_raw(@core.RawAddress, UInt64, @core.RawAddress, @core.RawAddress, UInt, UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn tapi_request_media_call_raw(@core.RawAddress, UInt64, @core.RawAddress, @core.RawAddress, UInt, UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn tapi_request_media_call_w(@core.RawAddress, UInt64, @strings.PWStr, @strings.PWStr, UInt, UInt, @strings.PWStr, @strings.PWStr, @strings.PWStr, @strings.PWStr) -> Int raise @core.WindowsError
+
+pub fn tapi_request_media_call_w_raw(@core.RawAddress, UInt64, @core.RawAddress, @core.RawAddress, UInt, UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub let tapierr_connected : Int
+
+pub let tapierr_destbusy : Int
+
+pub let tapierr_destnoanswer : Int
+
+pub let tapierr_destunavail : Int
+
+pub let tapierr_deviceclassunavail : Int
+
+pub let tapierr_deviceidunavail : Int
+
+pub let tapierr_deviceinuse : Int
+
+pub let tapierr_dropped : Int
+
+pub let tapierr_invaldestaddress : Int
+
+pub let tapierr_invaldeviceclass : Int
+
+pub let tapierr_invaldeviceid : Int
+
+pub let tapierr_invalpointer : Int
+
+pub let tapierr_invalwindowhandle : Int
+
+pub let tapierr_mmcwritelocked : Int
+
+pub let tapierr_norequestrecipient : Int
+
+pub let tapierr_notadmin : Int
+
+pub let tapierr_provideralreadyinstalled : Int
+
+pub let tapierr_requestcancelled : Int
+
+pub let tapierr_requestfailed : Int
+
+pub let tapierr_requestqueuefull : Int
+
+pub let tapierr_scp_already_exists : Int
+
+pub let tapierr_scp_does_not_exist : Int
+
+pub let tapierr_unknownrequestid : Int
+
+pub let tapierr_unknownwinhandle : Int
+
+pub let tapimaxappnamesize : Int
+
+pub let tapimaxcalledpartysize : Int
+
+pub let tapimaxcommentsize : Int
+
+pub let tapimaxdestaddresssize : Int
+
+pub let tapimaxdeviceclasssize : Int
+
+pub let tapimaxdeviceidsize : Int
+
+pub let tapimediatype_audio : UInt
+
+pub let tapimediatype_datamodem : UInt
+
+pub let tapimediatype_g3_fax : UInt
+
+pub let tapimediatype_multitrack : UInt
+
+pub let tapimediatype_video : UInt
+
+pub let tspi_lineaccept : UInt
+
+pub let tspi_lineaddtoconference : UInt
+
+pub let tspi_lineanswer : UInt
+
+pub let tspi_lineblindtransfer : UInt
+
+pub let tspi_lineclose : UInt
+
+pub let tspi_lineclosecall : UInt
+
+pub let tspi_lineclosemspinstance : UInt
+
+pub let tspi_linecompletecall : UInt
+
+pub let tspi_linecompletetransfer : UInt
+
+pub let tspi_lineconditionalmediadetection : UInt
+
+pub let tspi_lineconfigdialog : UInt
+
+pub let tspi_lineconfigdialogedit : UInt
+
+pub let tspi_linecreatemspinstance : UInt
+
+pub let tspi_linedevspecific : UInt
+
+pub let tspi_linedevspecificfeature : UInt
+
+pub let tspi_linedial : UInt
+
+pub let tspi_linedrop : UInt
+
+pub let tspi_linedropnoowner : UInt
+
+pub let tspi_linedroponclose : UInt
+
+pub let tspi_lineforward : UInt
+
+pub let tspi_linegatherdigits : UInt
+
+pub let tspi_linegeneratedigits : UInt
+
+pub let tspi_linegeneratetone : UInt
+
+pub let tspi_linegetaddresscaps : UInt
+
+pub let tspi_linegetaddressid : UInt
+
+pub let tspi_linegetaddressstatus : UInt
+
+pub let tspi_linegetcalladdressid : UInt
+
+pub let tspi_linegetcallhubtracking : UInt
+
+pub let tspi_linegetcallid : UInt
+
+pub let tspi_linegetcallinfo : UInt
+
+pub let tspi_linegetcallstatus : UInt
+
+pub let tspi_linegetdevcaps : UInt
+
+pub let tspi_linegetdevconfig : UInt
+
+pub let tspi_linegetextensionid : UInt
+
+pub let tspi_linegeticon : UInt
+
+pub let tspi_linegetid : UInt
+
+pub let tspi_linegetlinedevstatus : UInt
+
+pub let tspi_linegetnumaddressids : UInt
+
+pub let tspi_linehold : UInt
+
+pub let tspi_linemakecall : UInt
+
+pub let tspi_linemonitordigits : UInt
+
+pub let tspi_linemonitormedia : UInt
+
+pub let tspi_linemonitortones : UInt
+
+pub let tspi_linemspidentify : UInt
+
+pub let tspi_linenegotiateextversion : UInt
+
+pub let tspi_linenegotiatetspiversion : UInt
+
+pub let tspi_lineopen : UInt
+
+pub let tspi_linepark : UInt
+
+pub let tspi_linepickup : UInt
+
+pub let tspi_lineprepareaddtoconference : UInt
+
+pub let tspi_linereceivemspdata : UInt
+
+pub let tspi_lineredirect : UInt
+
+pub let tspi_linereleaseuseruserinfo : UInt
+
+pub let tspi_lineremovefromconference : UInt
+
+pub let tspi_linesecurecall : UInt
+
+pub let tspi_lineselectextversion : UInt
+
+pub let tspi_linesenduseruserinfo : UInt
+
+pub let tspi_linesetappspecific : UInt
+
+pub let tspi_linesetcallhubtracking : UInt
+
+pub let tspi_linesetcallparams : UInt
+
+pub let tspi_linesetcurrentlocation : UInt
+
+pub let tspi_linesetdefaultmediadetection : UInt
+
+pub let tspi_linesetdevconfig : UInt
+
+pub let tspi_linesetmediacontrol : UInt
+
+pub let tspi_linesetmediamode : UInt
+
+pub let tspi_linesetstatusmessages : UInt
+
+pub let tspi_linesetterminal : UInt
+
+pub let tspi_linesetupconference : UInt
+
+pub let tspi_linesetuptransfer : UInt
+
+pub let tspi_lineswaphold : UInt
+
+pub let tspi_lineuncompletecall : UInt
+
+pub let tspi_lineunhold : UInt
+
+pub let tspi_lineunpark : UInt
+
+pub let tspi_message_base : UInt
+
+pub let tspi_phoneclose : UInt
+
+pub let tspi_phoneconfigdialog : UInt
+
+pub let tspi_phonedevspecific : UInt
+
+pub let tspi_phonegetbuttoninfo : UInt
+
+pub let tspi_phonegetdata : UInt
+
+pub let tspi_phonegetdevcaps : UInt
+
+pub let tspi_phonegetdisplay : UInt
+
+pub let tspi_phonegetextensionid : UInt
+
+pub let tspi_phonegetgain : UInt
+
+pub let tspi_phonegethookswitch : UInt
+
+pub let tspi_phonegeticon : UInt
+
+pub let tspi_phonegetid : UInt
+
+pub let tspi_phonegetlamp : UInt
+
+pub let tspi_phonegetring : UInt
+
+pub let tspi_phonegetstatus : UInt
+
+pub let tspi_phonegetvolume : UInt
+
+pub let tspi_phonenegotiateextversion : UInt
+
+pub let tspi_phonenegotiatetspiversion : UInt
+
+pub let tspi_phoneopen : UInt
+
+pub let tspi_phoneselectextversion : UInt
+
+pub let tspi_phonesetbuttoninfo : UInt
+
+pub let tspi_phonesetdata : UInt
+
+pub let tspi_phonesetdisplay : UInt
+
+pub let tspi_phonesetgain : UInt
+
+pub let tspi_phonesethookswitch : UInt
+
+pub let tspi_phonesetlamp : UInt
+
+pub let tspi_phonesetring : UInt
+
+pub let tspi_phonesetstatusmessages : UInt
+
+pub let tspi_phonesetvolume : UInt
+
+pub let tspi_proc_base : UInt
+
+pub let tspi_providerconfig : UInt
+
+pub let tspi_providercreatelinedevice : UInt
+
+pub let tspi_providercreatephonedevice : UInt
+
+pub let tspi_providerenumdevices : UInt
+
+pub let tspi_providerinit : UInt
+
+pub let tspi_providerinstall : UInt
+
+pub let tspi_providerremove : UInt
+
+pub let tspi_providershutdown : UInt
+
+pub let tuispidll_object_dialoginstance : Int
+
+pub let tuispidll_object_lineid : Int
+
+pub let tuispidll_object_phoneid : Int
+
+pub let tuispidll_object_providerid : Int
+
+// Errors
+
+// Types and methods
+
+// Type aliases
+pub using @1914f2ecd15c0dc9 {type ACDGROUPEVENT_07bf4de50525 as ACDGROUPEVENT}
+
+pub using @1914f2ecd15c0dc9 {type ACDQUEUEEVENT_63ce6b17c33f as ACDQUEUEEVENT}
+
+pub using @1914f2ecd15c0dc9 {type ADDRALIAS_d1de7921357e as ADDRALIAS}
+
+pub using @1914f2ecd15c0dc9 {type ADDRESSCAPABILITY_2e005cfb40dc as ADDRESSCAPABILITY}
+
+pub using @1914f2ecd15c0dc9 {type ADDRESSCAPABILITYSTRING_526f1ca8f66d as ADDRESSCAPABILITYSTRING}
+
+pub using @1914f2ecd15c0dc9 {type ADDRESSEVENT_6872c19235dd as ADDRESSEVENT}
+
+pub using @1914f2ecd15c0dc9 {type ADDRESSSTATE_5e2dcb5ebb6e as ADDRESSSTATE}
+
+pub using @1914f2ecd15c0dc9 {type AGENTEVENT_1c07ef7e9596 as AGENTEVENT}
+
+pub using @1914f2ecd15c0dc9 {type AGENTHANDLEREVENT_935e06e2f9d8 as AGENTHANDLEREVENT}
+
+pub using @1914f2ecd15c0dc9 {type AGENTSESSIONEVENT_1666fca76faa as AGENTSESSIONEVENT}
+
+pub using @1914f2ecd15c0dc9 {type AGENTSESSIONSTATE_32e4c39992a5 as AGENTSESSIONSTATE}
+
+pub using @1914f2ecd15c0dc9 {type AGENTSTATE_6206ccf1ac0b as AGENTSTATE}
+
+pub using @1914f2ecd15c0dc9 {type ASYNCCOMPLETION_a569300dd280 as ASYNCCOMPLETION}
+
+pub using @1914f2ecd15c0dc9 {type CALLHUBEVENT_62bddaabc2fa as CALLHUBEVENT}
+
+pub using @1914f2ecd15c0dc9 {type CALLHUBSTATE_c996f69d7b70 as CALLHUBSTATE}
+
+pub using @1914f2ecd15c0dc9 {type CALLINFOBUFFER_9a93a91f6245 as CALLINFOBUFFER}
+
+pub using @1914f2ecd15c0dc9 {type CALLINFOCHANGECAUSE_81fbf624ed8c as CALLINFOCHANGECAUSE}
+
+pub using @1914f2ecd15c0dc9 {type CALLINFOLONG_6e6cdceb2d65 as CALLINFOLONG}
+
+pub using @1914f2ecd15c0dc9 {type CALLINFOSTRING_74bc734bf30c as CALLINFOSTRING}
+
+pub using @1914f2ecd15c0dc9 {type CALLMEDIAEVENT_f1fb7f3aa2e6 as CALLMEDIAEVENT}
+
+pub using @1914f2ecd15c0dc9 {type CALLMEDIAEVENTCAUSE_b7c51f7ef097 as CALLMEDIAEVENTCAUSE}
+
+pub using @1914f2ecd15c0dc9 {type CALLNOTIFICATIONEVENT_93b458f582a5 as CALLNOTIFICATIONEVENT}
+
+pub using @1914f2ecd15c0dc9 {type CALLPRIVILEGE_41e933814dcf as CALLPRIVILEGE}
+
+pub using @1914f2ecd15c0dc9 {type CALLSTATE_443f52a39dec as CALLSTATE}
+
+pub using @1914f2ecd15c0dc9 {type CALLSTATEEVENTCAUSE_2f7c396fb530 as CALLSTATEEVENTCAUSE}
+
+pub using @1914f2ecd15c0dc9 {type DIRECTORYOBJECTTYPE_b3c75f6715fa as DIRECTORYOBJECTTYPE}
+
+pub using @1914f2ecd15c0dc9 {type DIRECTORYTYPE_8baa43cbcd24 as DIRECTORYTYPE}
+
+pub using @1914f2ecd15c0dc9 {type DISCONNECTCODE_2d7791706bc0 as DISCONNECTCODE}
+
+pub using @1914f2ecd15c0dc9 {type DTR_cebaba884fc4 as DTR}
+
+pub using @1914f2ecd15c0dc9 {type DispatchMapper_830d052797c5 as DispatchMapper}
+
+pub using @1914f2ecd15c0dc9 {type FINISHMODE_5b2afe230920 as FINISHMODE}
+
+pub using @1914f2ecd15c0dc9 {type FTSTATEEVENTCAUSE_47630e858870 as FTSTATEEVENTCAUSE}
+
+pub using @1914f2ecd15c0dc9 {type FULLDUPLEXSUPPORT_4bbd4a824be9 as FULLDUPLEXSUPPORT}
+
+pub using @1914f2ecd15c0dc9 {type HDRVCALL_c7238df5685d as HDRVCALL}
+
+pub using @1914f2ecd15c0dc9 {type HDRVDIALOGINSTANCE_bb11354105af as HDRVDIALOGINSTANCE}
+
+pub using @1914f2ecd15c0dc9 {type HDRVLINE_6dc88bf22d14 as HDRVLINE}
+
+pub using @1914f2ecd15c0dc9 {type HDRVMSPLINE_69906520f71e as HDRVMSPLINE}
+
+pub using @1914f2ecd15c0dc9 {type HDRVPHONE_f56d2a913666 as HDRVPHONE}
+
+pub using @1914f2ecd15c0dc9 {type HPROVIDER_30c563d85009 as HPROVIDER}
+
+pub using @1914f2ecd15c0dc9 {type HTAPICALL_3cca18007171 as HTAPICALL}
+
+pub using @1914f2ecd15c0dc9 {type HTAPILINE_f15a1705ce21 as HTAPILINE}
+
+pub using @1914f2ecd15c0dc9 {type HTAPIPHONE_15b18bd3b470 as HTAPIPHONE}
+
+pub using @1914f2ecd15c0dc9 {type IEnumACDGroup_d0cb56a46c68 as IEnumACDGroup}
+
+pub using @1914f2ecd15c0dc9 {type IEnumAddress_75d3d101a72b as IEnumAddress}
+
+pub using @1914f2ecd15c0dc9 {type IEnumAgent_e55fc715994f as IEnumAgent}
+
+pub using @1914f2ecd15c0dc9 {type IEnumAgentHandler_d97332224c00 as IEnumAgentHandler}
+
+pub using @1914f2ecd15c0dc9 {type IEnumAgentSession_080451a56750 as IEnumAgentSession}
+
+pub using @1914f2ecd15c0dc9 {type IEnumBstr_32c22be35d88 as IEnumBstr}
+
+pub using @1914f2ecd15c0dc9 {type IEnumCall_66cdd74fc2db as IEnumCall}
+
+pub using @1914f2ecd15c0dc9 {type IEnumCallHub_e2ab374ea0fc as IEnumCallHub}
+
+pub using @1914f2ecd15c0dc9 {type IEnumCallingCard_60125e945aa0 as IEnumCallingCard}
+
+pub using @1914f2ecd15c0dc9 {type IEnumDialableAddrs_dfaac1b0f769 as IEnumDialableAddrs}
+
+pub using @1914f2ecd15c0dc9 {type IEnumDirectory_936a4de9dc14 as IEnumDirectory}
+
+pub using @1914f2ecd15c0dc9 {type IEnumDirectoryObject_da0049cd760b as IEnumDirectoryObject}
+
+pub using @1914f2ecd15c0dc9 {type IEnumLocation_9728218ba24c as IEnumLocation}
+
+pub using @1914f2ecd15c0dc9 {type IEnumMcastScope_fdd5ca00143e as IEnumMcastScope}
+
+pub using @1914f2ecd15c0dc9 {type IEnumPhone_9522f815e784 as IEnumPhone}
+
+pub using @1914f2ecd15c0dc9 {type IEnumPluggableSuperclassInfo_ea2ba95ab6cb as IEnumPluggableSuperclassInfo}
+
+pub using @1914f2ecd15c0dc9 {type IEnumPluggableTerminalClassInfo_99c3e9cf9363 as IEnumPluggableTerminalClassInfo}
+
+pub using @1914f2ecd15c0dc9 {type IEnumQueue_82815b0c81c8 as IEnumQueue}
+
+pub using @1914f2ecd15c0dc9 {type IEnumStream_99c1ecdd009e as IEnumStream}
+
+pub using @1914f2ecd15c0dc9 {type IEnumSubStream_e6ec81d0987e as IEnumSubStream}
+
+pub using @1914f2ecd15c0dc9 {type IEnumTerminal_b7cf777b4e70 as IEnumTerminal}
+
+pub using @1914f2ecd15c0dc9 {type IEnumTerminalClass_87a42b61808b as IEnumTerminalClass}
+
+pub using @1914f2ecd15c0dc9 {type IMcastAddressAllocation_3649b4dbe345 as IMcastAddressAllocation}
+
+pub using @1914f2ecd15c0dc9 {type IMcastLeaseInfo_24488021b7a6 as IMcastLeaseInfo}
+
+pub using @1914f2ecd15c0dc9 {type IMcastScope_909fcde3424b as IMcastScope}
+
+pub using @1914f2ecd15c0dc9 {type ITACDGroup_94a403b9c2e5 as ITACDGroup}
+
+pub using @1914f2ecd15c0dc9 {type ITACDGroupEvent_b92775dd121f as ITACDGroupEvent}
+
+pub using @1914f2ecd15c0dc9 {type ITAMMediaFormat_ade517a189d1 as ITAMMediaFormat}
+
+pub using @1914f2ecd15c0dc9 {type ITASRTerminalEvent_2fed737e049c as ITASRTerminalEvent}
+
+pub using @1914f2ecd15c0dc9 {type ITAddress_0f037bd00e6c as ITAddress}
+
+pub using @1914f2ecd15c0dc9 {type ITAddress2_7ddf9fba3e99 as ITAddress2}
+
+pub using @1914f2ecd15c0dc9 {type ITAddressCapabilities_0bdfb4147ae0 as ITAddressCapabilities}
+
+pub using @1914f2ecd15c0dc9 {type ITAddressDeviceSpecificEvent_8c1769123e54 as ITAddressDeviceSpecificEvent}
+
+pub using @1914f2ecd15c0dc9 {type ITAddressEvent_435e625aa51f as ITAddressEvent}
+
+pub using @1914f2ecd15c0dc9 {type ITAddressTranslation_e896a57fd3fb as ITAddressTranslation}
+
+pub using @1914f2ecd15c0dc9 {type ITAddressTranslationInfo_ea6c0805ff4f as ITAddressTranslationInfo}
+
+pub using @1914f2ecd15c0dc9 {type ITAgent_e2e300d54550 as ITAgent}
+
+pub using @1914f2ecd15c0dc9 {type ITAgentEvent_32b2cc89878f as ITAgentEvent}
+
+pub using @1914f2ecd15c0dc9 {type ITAgentHandler_84b14e2ac571 as ITAgentHandler}
+
+pub using @1914f2ecd15c0dc9 {type ITAgentHandlerEvent_90a2cf81f508 as ITAgentHandlerEvent}
+
+pub using @1914f2ecd15c0dc9 {type ITAgentSession_d780ee84804a as ITAgentSession}
+
+pub using @1914f2ecd15c0dc9 {type ITAgentSessionEvent_0754571ecc47 as ITAgentSessionEvent}
+
+pub using @1914f2ecd15c0dc9 {type ITAllocatorProperties_8970c599ec06 as ITAllocatorProperties}
+
+pub using @1914f2ecd15c0dc9 {type ITAutomatedPhoneControl_732c247839e4 as ITAutomatedPhoneControl}
+
+pub using @1914f2ecd15c0dc9 {type ITBasicAudioTerminal_0e4cb0783d3a as ITBasicAudioTerminal}
+
+pub using @1914f2ecd15c0dc9 {type ITBasicCallControl_f0cd1917062f as ITBasicCallControl}
+
+pub using @1914f2ecd15c0dc9 {type ITBasicCallControl2_15c48c3c9c0b as ITBasicCallControl2}
+
+pub using @1914f2ecd15c0dc9 {type ITCallHub_8d2236250860 as ITCallHub}
+
+pub using @1914f2ecd15c0dc9 {type ITCallHubEvent_ed831f47771d as ITCallHubEvent}
+
+pub using @1914f2ecd15c0dc9 {type ITCallInfo_fb1d8da8e16f as ITCallInfo}
+
+pub using @1914f2ecd15c0dc9 {type ITCallInfo2_368cd2ec658f as ITCallInfo2}
+
+pub using @1914f2ecd15c0dc9 {type ITCallInfoChangeEvent_f8b6bc00233f as ITCallInfoChangeEvent}
+
+pub using @1914f2ecd15c0dc9 {type ITCallMediaEvent_2862ce70385b as ITCallMediaEvent}
+
+pub using @1914f2ecd15c0dc9 {type ITCallNotificationEvent_3e01ad876a77 as ITCallNotificationEvent}
+
+pub using @1914f2ecd15c0dc9 {type ITCallStateEvent_6ed4555956fe as ITCallStateEvent}
+
+pub using @1914f2ecd15c0dc9 {type ITCallingCard_24afcdd39d7a as ITCallingCard}
+
+pub using @1914f2ecd15c0dc9 {type ITCollection_9eeea9719497 as ITCollection}
+
+pub using @1914f2ecd15c0dc9 {type ITCollection2_bbe3d68dd1d3 as ITCollection2}
+
+pub using @1914f2ecd15c0dc9 {type ITCustomTone_025b44f16a42 as ITCustomTone}
+
+pub using @1914f2ecd15c0dc9 {type ITDetectTone_53b2991cf67e as ITDetectTone}
+
+pub using @1914f2ecd15c0dc9 {type ITDigitDetectionEvent_4c0631882b71 as ITDigitDetectionEvent}
+
+pub using @1914f2ecd15c0dc9 {type ITDigitGenerationEvent_ec82b9c1125d as ITDigitGenerationEvent}
+
+pub using @1914f2ecd15c0dc9 {type ITDigitsGatheredEvent_fb8e2bdb7c00 as ITDigitsGatheredEvent}
+
+pub using @1914f2ecd15c0dc9 {type ITDirectory_9a7f1bf1ce3a as ITDirectory}
+
+pub using @1914f2ecd15c0dc9 {type ITDirectoryObject_505f1c55a019 as ITDirectoryObject}
+
+pub using @1914f2ecd15c0dc9 {type ITDirectoryObjectConference_7ea0c86bf40a as ITDirectoryObjectConference}
+
+pub using @1914f2ecd15c0dc9 {type ITDirectoryObjectUser_7b7189b20b1c as ITDirectoryObjectUser}
+
+pub using @1914f2ecd15c0dc9 {type ITDispatchMapper_4baf4804fdef as ITDispatchMapper}
+
+pub using @1914f2ecd15c0dc9 {type ITFileTerminalEvent_92058a95c2dd as ITFileTerminalEvent}
+
+pub using @1914f2ecd15c0dc9 {type ITFileTrack_8dbd4eea2998 as ITFileTrack}
+
+pub using @1914f2ecd15c0dc9 {type ITForwardInformation_c87f266e6119 as ITForwardInformation}
+
+pub using @1914f2ecd15c0dc9 {type ITForwardInformation2_d2a72a5013c6 as ITForwardInformation2}
+
+pub using @1914f2ecd15c0dc9 {type ITILSConfig_f9408ac1ed60 as ITILSConfig}
+
+pub using @1914f2ecd15c0dc9 {type ITLegacyAddressMediaControl_2e290f528c4d as ITLegacyAddressMediaControl}
+
+pub using @1914f2ecd15c0dc9 {type ITLegacyAddressMediaControl2_98d4862a2399 as ITLegacyAddressMediaControl2}
+
+pub using @1914f2ecd15c0dc9 {type ITLegacyCallMediaControl_b0c92f5149d6 as ITLegacyCallMediaControl}
+
+pub using @1914f2ecd15c0dc9 {type ITLegacyCallMediaControl2_d59328a0167e as ITLegacyCallMediaControl2}
+
+pub using @1914f2ecd15c0dc9 {type ITLegacyWaveSupport_f8af8fa77c9b as ITLegacyWaveSupport}
+
+pub using @1914f2ecd15c0dc9 {type ITLocationInfo_0fa8e2837e1a as ITLocationInfo}
+
+pub using @1914f2ecd15c0dc9 {type ITMSPAddress_651b1567a03e as ITMSPAddress}
+
+pub using @1914f2ecd15c0dc9 {type ITMediaControl_17abea54549a as ITMediaControl}
+
+pub using @1914f2ecd15c0dc9 {type ITMediaPlayback_cf9d60539b0d as ITMediaPlayback}
+
+pub using @1914f2ecd15c0dc9 {type ITMediaRecord_2bb48f46592f as ITMediaRecord}
+
+pub using @1914f2ecd15c0dc9 {type ITMediaSupport_fee5769fb17c as ITMediaSupport}
+
+pub using @1914f2ecd15c0dc9 {type ITMultiTrackTerminal_9caa9e950b92 as ITMultiTrackTerminal}
+
+pub using @1914f2ecd15c0dc9 {type ITPhone_c3e02a090bb0 as ITPhone}
+
+pub using @1914f2ecd15c0dc9 {type ITPhoneDeviceSpecificEvent_29ff6ddecc9d as ITPhoneDeviceSpecificEvent}
+
+pub using @1914f2ecd15c0dc9 {type ITPhoneEvent_923cb00944c8 as ITPhoneEvent}
+
+pub using @1914f2ecd15c0dc9 {type ITPluggableTerminalClassInfo_6c6ea6e8350c as ITPluggableTerminalClassInfo}
+
+pub using @1914f2ecd15c0dc9 {type ITPluggableTerminalEventSink_aebcf1a4d62c as ITPluggableTerminalEventSink}
+
+pub using @1914f2ecd15c0dc9 {type ITPluggableTerminalEventSinkRegistration_21137b87063a as ITPluggableTerminalEventSinkRegistration}
+
+pub using @1914f2ecd15c0dc9 {type ITPluggableTerminalSuperclassInfo_70885cdcd4d3 as ITPluggableTerminalSuperclassInfo}
+
+pub using @1914f2ecd15c0dc9 {type ITPrivateEvent_79e4f656a41e as ITPrivateEvent}
+
+pub using @1914f2ecd15c0dc9 {type ITQOSEvent_e60f0a2a9d02 as ITQOSEvent}
+
+pub using @1914f2ecd15c0dc9 {type ITQueue_03cc74ff6da8 as ITQueue}
+
+pub using @1914f2ecd15c0dc9 {type ITQueueEvent_e058731873f3 as ITQueueEvent}
+
+pub using @1914f2ecd15c0dc9 {type ITRendezvous_0a02e90236c4 as ITRendezvous}
+
+pub using @1914f2ecd15c0dc9 {type ITRequest_77d616f80044 as ITRequest}
+
+pub using @1914f2ecd15c0dc9 {type ITRequestEvent_be9a87255151 as ITRequestEvent}
+
+pub using @1914f2ecd15c0dc9 {type ITScriptableAudioFormat_73c8e9b9d90b as ITScriptableAudioFormat}
+
+pub using @1914f2ecd15c0dc9 {type ITStaticAudioTerminal_9f90f15067b1 as ITStaticAudioTerminal}
+
+pub using @1914f2ecd15c0dc9 {type ITStream_6de47ea47f5e as ITStream}
+
+pub using @1914f2ecd15c0dc9 {type ITStreamControl_4c617ae294a7 as ITStreamControl}
+
+pub using @1914f2ecd15c0dc9 {type ITSubStream_26aa769d31f1 as ITSubStream}
+
+pub using @1914f2ecd15c0dc9 {type ITSubStreamControl_3392267732f5 as ITSubStreamControl}
+
+pub using @1914f2ecd15c0dc9 {type ITTAPI_a17f060ff67a as ITTAPI}
+
+pub using @1914f2ecd15c0dc9 {type ITTAPI2_cfc4cceb9ff2 as ITTAPI2}
+
+pub using @1914f2ecd15c0dc9 {type ITTAPICallCenter_dc5882491ae7 as ITTAPICallCenter}
+
+pub using @1914f2ecd15c0dc9 {type ITTAPIDispatchEventNotification_1b00164d1915 as ITTAPIDispatchEventNotification}
+
+pub using @1914f2ecd15c0dc9 {type ITTAPIEventNotification_eb74f78275e4 as ITTAPIEventNotification}
+
+pub using @1914f2ecd15c0dc9 {type ITTAPIObjectEvent_b40603ed49fa as ITTAPIObjectEvent}
+
+pub using @1914f2ecd15c0dc9 {type ITTAPIObjectEvent2_cf4f5e0cd72c as ITTAPIObjectEvent2}
+
+pub using @1914f2ecd15c0dc9 {type ITTTSTerminalEvent_0d8b98687d64 as ITTTSTerminalEvent}
+
+pub using @1914f2ecd15c0dc9 {type ITTerminal_01c6fafd1738 as ITTerminal}
+
+pub using @1914f2ecd15c0dc9 {type ITTerminalSupport_6ff1d48f6196 as ITTerminalSupport}
+
+pub using @1914f2ecd15c0dc9 {type ITTerminalSupport2_8ab1c28fcc54 as ITTerminalSupport2}
+
+pub using @1914f2ecd15c0dc9 {type ITToneDetectionEvent_38ad6011f766 as ITToneDetectionEvent}
+
+pub using @1914f2ecd15c0dc9 {type ITToneTerminalEvent_79215641122c as ITToneTerminalEvent}
+
+pub using @1914f2ecd15c0dc9 {type ITnef_df7e62562a09 as ITnef}
+
+pub using @1914f2ecd15c0dc9 {type LINEADDRESSCAPS_83c033e2299a as LINEADDRESSCAPS}
+
+pub using @1914f2ecd15c0dc9 {type LINEADDRESSSTATUS_10b0266dd7ec as LINEADDRESSSTATUS}
+
+pub using @1914f2ecd15c0dc9 {type LINEAGENTACTIVITYENTRY_703d04065fe0 as LINEAGENTACTIVITYENTRY}
+
+pub using @1914f2ecd15c0dc9 {type LINEAGENTACTIVITYLIST_3d3bc3afe8d4 as LINEAGENTACTIVITYLIST}
+
+pub using @1914f2ecd15c0dc9 {type LINEAGENTCAPS_1190a80c61e2 as LINEAGENTCAPS}
+
+pub using @1914f2ecd15c0dc9 {type LINEAGENTENTRY_7e8c80df791f as LINEAGENTENTRY}
+
+pub using @1914f2ecd15c0dc9 {type LINEAGENTGROUPENTRY_c585b2c9cffc as LINEAGENTGROUPENTRY}
+
+pub using @1914f2ecd15c0dc9 {type LINEAGENTGROUPENTRYGroupIDEStruct_d0c8cda32e3b as LINEAGENTGROUPENTRYGroupIDEStruct}
+
+pub using @1914f2ecd15c0dc9 {type LINEAGENTGROUPLIST_b882d95b45e0 as LINEAGENTGROUPLIST}
+
+pub using @1914f2ecd15c0dc9 {type LINEAGENTINFO_eaf1f9ecf0b2 as LINEAGENTINFO}
+
+pub using @1914f2ecd15c0dc9 {type LINEAGENTLIST_0b9316a9a337 as LINEAGENTLIST}
+
+pub using @1914f2ecd15c0dc9 {type LINEAGENTSESSIONENTRY_8d0eb57584b6 as LINEAGENTSESSIONENTRY}
+
+pub using @1914f2ecd15c0dc9 {type LINEAGENTSESSIONINFO_71f8c80310fb as LINEAGENTSESSIONINFO}
+
+pub using @1914f2ecd15c0dc9 {type LINEAGENTSESSIONLIST_4da9bb18fe11 as LINEAGENTSESSIONLIST}
+
+pub using @1914f2ecd15c0dc9 {type LINEAGENTSTATUS_bd3de31dbfb4 as LINEAGENTSTATUS}
+
+pub using @1914f2ecd15c0dc9 {type LINEAPPINFO_6db3117bd409 as LINEAPPINFO}
+
+pub using @1914f2ecd15c0dc9 {type LINECALLBACK_e2d3d765df2c as LINECALLBACK}
+
+pub using @1914f2ecd15c0dc9 {type LINECALLINFO_6e5e86f8f0c3 as LINECALLINFO}
+
+pub using @1914f2ecd15c0dc9 {type LINECALLLIST_915205d93f23 as LINECALLLIST}
+
+pub using @1914f2ecd15c0dc9 {type LINECALLPARAMS_d52ccaf82fb4 as LINECALLPARAMS}
+
+pub using @1914f2ecd15c0dc9 {type LINECALLSTATUS_a92424aabf16 as LINECALLSTATUS}
+
+pub using @1914f2ecd15c0dc9 {type LINECALLTREATMENTENTRY_7da7936a3969 as LINECALLTREATMENTENTRY}
+
+pub using @1914f2ecd15c0dc9 {type LINECARDENTRY_abb7688d1ee1 as LINECARDENTRY}
+
+pub using @1914f2ecd15c0dc9 {type LINECOUNTRYENTRY_dd438dc412fa as LINECOUNTRYENTRY}
+
+pub using @1914f2ecd15c0dc9 {type LINECOUNTRYLIST_f83a538707f9 as LINECOUNTRYLIST}
+
+pub using @1914f2ecd15c0dc9 {type LINEDEVCAPS_da521f8f0052 as LINEDEVCAPS}
+
+pub using @1914f2ecd15c0dc9 {type LINEDEVSTATUS_5ae7c7892568 as LINEDEVSTATUS}
+
+pub using @1914f2ecd15c0dc9 {type LINEDIALPARAMS_3b7dfe0191d1 as LINEDIALPARAMS}
+
+pub using @1914f2ecd15c0dc9 {type LINEEVENT_96dba0c7f068 as LINEEVENT}
+
+pub using @1914f2ecd15c0dc9 {type LINEEXTENSIONID_6eb1cb228591 as LINEEXTENSIONID}
+
+pub using @1914f2ecd15c0dc9 {type LINEFORWARD_41ab877871e9 as LINEFORWARD}
+
+pub using @1914f2ecd15c0dc9 {type LINEFORWARDLIST_f5f69aa75ba1 as LINEFORWARDLIST}
+
+pub using @1914f2ecd15c0dc9 {type LINEGENERATETONE_abcf76b2fe67 as LINEGENERATETONE}
+
+pub using @1914f2ecd15c0dc9 {type LINEINITIALIZEEXPARAMS_b123dbd73b4a as LINEINITIALIZEEXPARAMS}
+
+pub using @1914f2ecd15c0dc9 {type LINEINITIALIZEEXPARAMSHandlesEUnion_af802de89d87 as LINEINITIALIZEEXPARAMSHandlesEUnion}
+
+pub using @1914f2ecd15c0dc9 {type LINELOCATIONENTRY_c86a7a6e9cc2 as LINELOCATIONENTRY}
+
+pub using @1914f2ecd15c0dc9 {type LINEMEDIACONTROLCALLSTATE_1de59e03f207 as LINEMEDIACONTROLCALLSTATE}
+
+pub using @1914f2ecd15c0dc9 {type LINEMEDIACONTROLDIGIT_243f06749fbb as LINEMEDIACONTROLDIGIT}
+
+pub using @1914f2ecd15c0dc9 {type LINEMEDIACONTROLMEDIA_460987f8cc1f as LINEMEDIACONTROLMEDIA}
+
+pub using @1914f2ecd15c0dc9 {type LINEMEDIACONTROLTONE_374a05b897eb as LINEMEDIACONTROLTONE}
+
+pub using @1914f2ecd15c0dc9 {type LINEMESSAGE_68377bcce0b1 as LINEMESSAGE}
+
+pub using @1914f2ecd15c0dc9 {type LINEMONITORTONE_f2d89d257896 as LINEMONITORTONE}
+
+pub using @1914f2ecd15c0dc9 {type LINEPROVIDERENTRY_6f4c0bded725 as LINEPROVIDERENTRY}
+
+pub using @1914f2ecd15c0dc9 {type LINEPROVIDERLIST_83da8da85237 as LINEPROVIDERLIST}
+
+pub using @1914f2ecd15c0dc9 {type LINEPROXYREQUEST_5684eee1e48a as LINEPROXYREQUEST}
+
+pub using @1914f2ecd15c0dc9 {type LINEPROXYREQUESTAnonymousEUnion_8acdad0661f1 as LINEPROXYREQUESTAnonymousEUnion}
+
+pub using @1914f2ecd15c0dc9 {type LINEPROXYREQUESTAnonymousEUnionAgentSpecificEStruct_1a69d4c622ce as LINEPROXYREQUESTAnonymousEUnionAgentSpecificEStruct}
+
+pub using @1914f2ecd15c0dc9 {type LINEPROXYREQUESTAnonymousEUnionCreateAgentEStruct_f95d3329785b as LINEPROXYREQUESTAnonymousEUnionCreateAgentEStruct}
+
+pub using @1914f2ecd15c0dc9 {type LINEPROXYREQUESTAnonymousEUnionCreateAgentSessionEStruct_39df27821ce9 as LINEPROXYREQUESTAnonymousEUnionCreateAgentSessionEStruct}
+
+pub using @1914f2ecd15c0dc9 {type LINEPROXYREQUESTAnonymousEUnionGetAgentActivityListEStruct_58a474bc72da as LINEPROXYREQUESTAnonymousEUnionGetAgentActivityListEStruct}
+
+pub using @1914f2ecd15c0dc9 {type LINEPROXYREQUESTAnonymousEUnionGetAgentCapsEStruct_c4348a01ed19 as LINEPROXYREQUESTAnonymousEUnionGetAgentCapsEStruct}
+
+pub using @1914f2ecd15c0dc9 {type LINEPROXYREQUESTAnonymousEUnionGetAgentGroupListEStruct_90d8ee853c6d as LINEPROXYREQUESTAnonymousEUnionGetAgentGroupListEStruct}
+
+pub using @1914f2ecd15c0dc9 {type LINEPROXYREQUESTAnonymousEUnionGetAgentInfoEStruct_8a1abd490915 as LINEPROXYREQUESTAnonymousEUnionGetAgentInfoEStruct}
+
+pub using @1914f2ecd15c0dc9 {type LINEPROXYREQUESTAnonymousEUnionGetAgentSessionInfoEStruct_bc02abb3e1d8 as LINEPROXYREQUESTAnonymousEUnionGetAgentSessionInfoEStruct}
+
+pub using @1914f2ecd15c0dc9 {type LINEPROXYREQUESTAnonymousEUnionGetAgentSessionListEStruct_56c93bf45b5f as LINEPROXYREQUESTAnonymousEUnionGetAgentSessionListEStruct}
+
+pub using @1914f2ecd15c0dc9 {type LINEPROXYREQUESTAnonymousEUnionGetAgentStatusEStruct_a9ef04a8a9c7 as LINEPROXYREQUESTAnonymousEUnionGetAgentStatusEStruct}
+
+pub using @1914f2ecd15c0dc9 {type LINEPROXYREQUESTAnonymousEUnionGetGroupListEStruct_fbfd62402ce8 as LINEPROXYREQUESTAnonymousEUnionGetGroupListEStruct}
+
+pub using @1914f2ecd15c0dc9 {type LINEPROXYREQUESTAnonymousEUnionGetQueueInfoEStruct_f5d2bca378e7 as LINEPROXYREQUESTAnonymousEUnionGetQueueInfoEStruct}
+
+pub using @1914f2ecd15c0dc9 {type LINEPROXYREQUESTAnonymousEUnionGetQueueListEStruct_e4502ebf51f6 as LINEPROXYREQUESTAnonymousEUnionGetQueueListEStruct}
+
+pub using @1914f2ecd15c0dc9 {type LINEPROXYREQUESTAnonymousEUnionSetAgentActivityEStruct_0d7ba17f96dd as LINEPROXYREQUESTAnonymousEUnionSetAgentActivityEStruct}
+
+pub using @1914f2ecd15c0dc9 {type LINEPROXYREQUESTAnonymousEUnionSetAgentGroupEStruct_496a497f5d13 as LINEPROXYREQUESTAnonymousEUnionSetAgentGroupEStruct}
+
+pub using @1914f2ecd15c0dc9 {type LINEPROXYREQUESTAnonymousEUnionSetAgentMeasurementPeriodEStruct_443941a5fa53 as LINEPROXYREQUESTAnonymousEUnionSetAgentMeasurementPeriodEStruct}
+
+pub using @1914f2ecd15c0dc9 {type LINEPROXYREQUESTAnonymousEUnionSetAgentSessionStateEStruct_d13459d2b666 as LINEPROXYREQUESTAnonymousEUnionSetAgentSessionStateEStruct}
+
+pub using @1914f2ecd15c0dc9 {type LINEPROXYREQUESTAnonymousEUnionSetAgentStateEStruct_5c7487419186 as LINEPROXYREQUESTAnonymousEUnionSetAgentStateEStruct}
+
+pub using @1914f2ecd15c0dc9 {type LINEPROXYREQUESTAnonymousEUnionSetAgentStateExEStruct_fa73498253a3 as LINEPROXYREQUESTAnonymousEUnionSetAgentStateExEStruct}
+
+pub using @1914f2ecd15c0dc9 {type LINEPROXYREQUESTAnonymousEUnionSetQueueMeasurementPeriodEStruct_16d28c8a8ce4 as LINEPROXYREQUESTAnonymousEUnionSetQueueMeasurementPeriodEStruct}
+
+pub using @1914f2ecd15c0dc9 {type LINEPROXYREQUESTLIST_b975003a415a as LINEPROXYREQUESTLIST}
+
+pub using @1914f2ecd15c0dc9 {type LINEQUEUEENTRY_aa089d713666 as LINEQUEUEENTRY}
+
+pub using @1914f2ecd15c0dc9 {type LINEQUEUEINFO_299a7c101583 as LINEQUEUEINFO}
+
+pub using @1914f2ecd15c0dc9 {type LINEQUEUELIST_1da52bda6410 as LINEQUEUELIST}
+
+pub using @1914f2ecd15c0dc9 {type LINEREQMAKECALL_f751312b9ffc as LINEREQMAKECALL}
+
+pub using @1914f2ecd15c0dc9 {type LINEREQMAKECALLW_07482e3a1bdf as LINEREQMAKECALLW}
+
+pub using @1914f2ecd15c0dc9 {type LINEREQMEDIACALL_592d54bedef8 as LINEREQMEDIACALL}
+
+pub using @1914f2ecd15c0dc9 {type LINEREQMEDIACALLW_7c8b9518f749 as LINEREQMEDIACALLW}
+
+pub using @1914f2ecd15c0dc9 {type LINETERMCAPS_57872f966f46 as LINETERMCAPS}
+
+pub using @1914f2ecd15c0dc9 {type LINETRANSLATECAPS_bd76703f98bb as LINETRANSLATECAPS}
+
+pub using @1914f2ecd15c0dc9 {type LINETRANSLATEOUTPUT_e16fc75b063b as LINETRANSLATEOUTPUT}
+
+pub using @1914f2ecd15c0dc9 {type LPGETTNEFSTREAMCODEPAGE_85fda30d919d as LPGETTNEFSTREAMCODEPAGE}
+
+pub using @1914f2ecd15c0dc9 {type LPOPENTNEFSTREAM_e61688585fa3 as LPOPENTNEFSTREAM}
+
+pub using @1914f2ecd15c0dc9 {type LPOPENTNEFSTREAMEX_6ec2dd0b41ea as LPOPENTNEFSTREAMEX}
+
+pub using @1914f2ecd15c0dc9 {type MSPADDRESSEVENT_540f26d34dad as MSPADDRESSEVENT}
+
+pub using @1914f2ecd15c0dc9 {type MSPCALLEVENT_24f148800b51 as MSPCALLEVENT}
+
+pub using @1914f2ecd15c0dc9 {type MSPCALLEVENTCAUSE_bb4365e8ec2f as MSPCALLEVENTCAUSE}
+
+pub using @1914f2ecd15c0dc9 {type MSPEVENT_585e633d8239 as MSPEVENT}
+
+pub using @1914f2ecd15c0dc9 {type MSPEVENTINFO_e49677590fe0 as MSPEVENTINFO}
+
+pub using @1914f2ecd15c0dc9 {type MSPEVENTINFOAnonymousEUnion_9689bad2e5cb as MSPEVENTINFOAnonymousEUnion}
+
+pub using @1914f2ecd15c0dc9 {type MSPEVENTINFOAnonymousEUnionMSPADDRESSEVENTINFOEStruct_435a29201ec1 as MSPEVENTINFOAnonymousEUnionMSPADDRESSEVENTINFOEStruct}
+
+pub using @1914f2ecd15c0dc9 {type MSPEVENTINFOAnonymousEUnionMSPASRTERMINALEVENTINFOEStruct_f60d64e179b2 as MSPEVENTINFOAnonymousEUnionMSPASRTERMINALEVENTINFOEStruct}
+
+pub using @1914f2ecd15c0dc9 {type MSPEVENTINFOAnonymousEUnionMSPCALLEVENTINFOEStruct_725d391b85f8 as MSPEVENTINFOAnonymousEUnionMSPCALLEVENTINFOEStruct}
+
+pub using @1914f2ecd15c0dc9 {type MSPEVENTINFOAnonymousEUnionMSPFILETERMINALEVENTINFOEStruct_aa43eb77622d as MSPEVENTINFOAnonymousEUnionMSPFILETERMINALEVENTINFOEStruct}
+
+pub using @1914f2ecd15c0dc9 {type MSPEVENTINFOAnonymousEUnionMSPPRIVATEEVENTINFOEStruct_d50ad259635c as MSPEVENTINFOAnonymousEUnionMSPPRIVATEEVENTINFOEStruct}
+
+pub using @1914f2ecd15c0dc9 {type MSPEVENTINFOAnonymousEUnionMSPTONETERMINALEVENTINFOEStruct_e8057956d764 as MSPEVENTINFOAnonymousEUnionMSPTONETERMINALEVENTINFOEStruct}
+
+pub using @1914f2ecd15c0dc9 {type MSPEVENTINFOAnonymousEUnionMSPTSPDATAEStruct_94020911e2da as MSPEVENTINFOAnonymousEUnionMSPTSPDATAEStruct}
+
+pub using @1914f2ecd15c0dc9 {type MSPEVENTINFOAnonymousEUnionMSPTTSTERMINALEVENTINFOEStruct_d2ff17788bf7 as MSPEVENTINFOAnonymousEUnionMSPTTSTERMINALEVENTINFOEStruct}
+
+pub using @1914f2ecd15c0dc9 {type McastAddressAllocation_4ce66d5354af as McastAddressAllocation}
+
+pub using @1914f2ecd15c0dc9 {type NSID_630a673149de as NSID}
+
+pub using @1914f2ecd15c0dc9 {type NSIDAddressEUnion_847c4ebd4619 as NSIDAddressEUnion}
+
+pub using @1914f2ecd15c0dc9 {type PHONEBUTTONFUNCTION_df0d1555285c as PHONEBUTTONFUNCTION}
+
+pub using @1914f2ecd15c0dc9 {type PHONEBUTTONINFO_ff975476a93c as PHONEBUTTONINFO}
+
+pub using @1914f2ecd15c0dc9 {type PHONEBUTTONMODE_0cf76119fa42 as PHONEBUTTONMODE}
+
+pub using @1914f2ecd15c0dc9 {type PHONEBUTTONSTATE_99c63d93abec as PHONEBUTTONSTATE}
+
+pub using @1914f2ecd15c0dc9 {type PHONECALLBACK_23dbc5e4c04a as PHONECALLBACK}
+
+pub using @1914f2ecd15c0dc9 {type PHONECAPS_44584f9289be as PHONECAPS}
+
+pub using @1914f2ecd15c0dc9 {type PHONECAPSBUFFER_6d09bd835adc as PHONECAPSBUFFER}
+
+pub using @1914f2ecd15c0dc9 {type PHONECAPSLONG_e4134ac559b1 as PHONECAPSLONG}
+
+pub using @1914f2ecd15c0dc9 {type PHONECAPSSTRING_e0c84c3796f6 as PHONECAPSSTRING}
+
+pub using @1914f2ecd15c0dc9 {type PHONEEVENT_b77e765e8a7a as PHONEEVENT}
+
+pub using @1914f2ecd15c0dc9 {type PHONEEVENT_95b91aafa21c as PHONEEVENT_no_args}
+
+pub using @1914f2ecd15c0dc9 {type PHONEEXTENSIONID_c27a4c3e00f9 as PHONEEXTENSIONID}
+
+pub using @1914f2ecd15c0dc9 {type PHONEHOOKSWITCHDEVICE_a88fb3b0dcb1 as PHONEHOOKSWITCHDEVICE}
+
+pub using @1914f2ecd15c0dc9 {type PHONEHOOKSWITCHSTATE_a95eda268e65 as PHONEHOOKSWITCHSTATE}
+
+pub using @1914f2ecd15c0dc9 {type PHONEINITIALIZEEXPARAMS_315e8c557875 as PHONEINITIALIZEEXPARAMS}
+
+pub using @1914f2ecd15c0dc9 {type PHONEINITIALIZEEXPARAMSHandlesEUnion_7b2a8d7a77ba as PHONEINITIALIZEEXPARAMSHandlesEUnion}
+
+pub using @1914f2ecd15c0dc9 {type PHONELAMPMODE_4237d2a275b3 as PHONELAMPMODE}
+
+pub using @1914f2ecd15c0dc9 {type PHONEMESSAGE_0449b9b66127 as PHONEMESSAGE}
+
+pub using @1914f2ecd15c0dc9 {type PHONEPRIVILEGE_1cae774012a9 as PHONEPRIVILEGE}
+
+pub using @1914f2ecd15c0dc9 {type PHONESTATUS_6bc14315142a as PHONESTATUS}
+
+pub using @1914f2ecd15c0dc9 {type PHONETONE_55b30c59f810 as PHONETONE}
+
+pub using @1914f2ecd15c0dc9 {type QOSEVENT_2f8d273a00d6 as QOSEVENT}
+
+pub using @1914f2ecd15c0dc9 {type QOSSERVICELEVEL_d750314ae8d5 as QOSSERVICELEVEL}
+
+pub using @1914f2ecd15c0dc9 {type RENDDATA_71e0577de08b as RENDDATA}
+
+pub using @1914f2ecd15c0dc9 {type RNDADVERTISINGSCOPE_0904d44d4702 as RNDADVERTISINGSCOPE}
+
+pub using @1914f2ecd15c0dc9 {type Rendezvous_a4c5dcd87c78 as Rendezvous}
+
+pub using @1914f2ecd15c0dc9 {type RequestMakeCall_28d0343ca935 as RequestMakeCall}
+
+pub using @1914f2ecd15c0dc9 {type STnefProblem_12b6b091fb46 as STnefProblem}
+
+pub using @1914f2ecd15c0dc9 {type STnefProblemArray_687c5f3c939d as STnefProblemArray}
+
+pub using @1914f2ecd15c0dc9 {type TAPI_50db0750f3da as TAPI}
+
+pub using @1914f2ecd15c0dc9 {type TAPICUSTOMTONE_f6c86405c846 as TAPICUSTOMTONE}
+
+pub using @1914f2ecd15c0dc9 {type TAPIDETECTTONE_9135e4374f06 as TAPIDETECTTONE}
+
+pub using @1914f2ecd15c0dc9 {type TAPIEVENT_502ab1e66f40 as TAPIEVENT}
+
+pub using @1914f2ecd15c0dc9 {type TAPIGATHERTERM_37757f411ba7 as TAPIGATHERTERM}
+
+pub using @1914f2ecd15c0dc9 {type TAPIOBJECTEVENT_68474ac67083 as TAPIOBJECTEVENT}
+
+pub using @1914f2ecd15c0dc9 {type TAPIOBJECTTYPE_b5349b348ccd as TAPIOBJECTTYPE}
+
+pub using @1914f2ecd15c0dc9 {type TAPITONEMODE_baf3a70f8d96 as TAPITONEMODE}
+
+pub using @1914f2ecd15c0dc9 {type TERMINALDIRECTION_aa57dc68df9b as TERMINALDIRECTION}
+
+pub using @1914f2ecd15c0dc9 {type TERMINALMEDIASTATE_6ac30dad910d as TERMINALMEDIASTATE}
+
+pub using @1914f2ecd15c0dc9 {type TERMINALSTATE_5ac2c6e88532 as TERMINALSTATE}
+
+pub using @1914f2ecd15c0dc9 {type TERMINALTYPE_eeb92c79fb53 as TERMINALTYPE}
+
+pub using @1914f2ecd15c0dc9 {type TRP_84ef4c724ce4 as TRP}
+
+pub using @1914f2ecd15c0dc9 {type TUISPICREATEDIALOGINSTANCEPARAMS_7eb5c0d641e7 as TUISPICREATEDIALOGINSTANCEPARAMS}
+
+pub using @1914f2ecd15c0dc9 {type TUISPIDLLCALLBACK_689b75a2730b as TUISPIDLLCALLBACK}
+
+pub using @1914f2ecd15c0dc9 {type VARSTRING_41025a104d6a as VARSTRING}
+
+// Traits

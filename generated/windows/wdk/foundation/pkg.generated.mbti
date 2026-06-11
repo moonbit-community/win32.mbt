@@ -1,0 +1,495 @@
+// Generated using `moon info`, DON'T EDIT IT
+package "moonbit-community/win32api/windows/wdk/foundation"
+
+import {
+  "moonbit-community/win32api/runtime/core",
+  "moonbit-community/win32api/scc/ed1600d960f8e7eb",
+}
+
+// Values
+pub fn nt_close(@core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn nt_close_raw(@core.RawAddress) -> Int
+
+pub fn nt_query_object(@core.RawAddress, @ed1600d960f8e7eb.OBJECTINFORMATIONCLASS_e3104a2145b2, @core.RawAddress, UInt, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn nt_query_object_raw(@core.RawAddress, Int, @core.RawAddress, UInt, @core.RawAddress) -> Int
+
+pub let ntstrsafe_max_cch : UInt
+
+pub let ntstrsafe_max_length : UInt
+
+pub let ntstrsafe_unicode_string_max_cch : UInt
+
+pub let ntstrsafe_use_secure_crt : UInt
+
+pub let strsafe_fill_behind : UInt
+
+pub let strsafe_fill_behind_null : UInt
+
+pub let strsafe_fill_on_failure : UInt
+
+pub let strsafe_ignore_nulls : UInt
+
+pub let strsafe_no_truncation : UInt
+
+pub let strsafe_null_on_failure : UInt
+
+pub let strsafe_zero_length_on_failure : UInt
+
+pub let warning_banned_api_usage : UInt
+
+pub let warning_cyclomatic_complexity : UInt
+
+pub let warning_deref_null_ptr : UInt
+
+pub let warning_high_priority_overflow_postcondition : UInt
+
+pub let warning_incorrect_annotation : UInt
+
+pub let warning_invalid_param_value_1 : UInt
+
+pub let warning_invalid_param_value_3 : UInt
+
+pub let warning_missing_zero_termination2 : UInt
+
+pub let warning_post_expected : UInt
+
+pub let warning_postcondition_nulltermination_violation : UInt
+
+pub let warning_potential_buffer_overflow_high_priority : UInt
+
+pub let warning_potential_range_postcondition_violation : UInt
+
+pub let warning_precondition_nulltermination_violation : UInt
+
+pub let warning_range_postcondition_violation : UInt
+
+pub let warning_return_uninit_var : UInt
+
+pub let warning_returning_bad_result : UInt
+
+pub let warning_using_uninit_var : UInt
+
+// Errors
+
+// Types and methods
+
+// Type aliases
+pub using @ed1600d960f8e7eb {type ACCESSSTATE_3c6804ee340a as ACCESSSTATE}
+
+pub using @ed1600d960f8e7eb {type ACCESSSTATEPrivilegesEUnion_41c297244292 as ACCESSSTATEPrivilegesEUnion}
+
+pub using @ed1600d960f8e7eb {type DEVICEOBJECT_5bc4fabf2746 as DEVICEOBJECT}
+
+pub using @ed1600d960f8e7eb {type DEVICEOBJECTPOWEREXTENSION_8ed9ea919d35 as DEVICEOBJECTPOWEREXTENSION}
+
+pub using @ed1600d960f8e7eb {type DEVICEOBJECTQueueEUnion_11e8567c0b8f as DEVICEOBJECTQueueEUnion}
+
+pub using @ed1600d960f8e7eb {type DEVOBJEXTENSION_adae363ed4de as DEVOBJEXTENSION}
+
+pub using @ed1600d960f8e7eb {type DISPATCHERHEADER_614e1a836415 as DISPATCHERHEADER}
+
+pub using @ed1600d960f8e7eb {type DISPATCHERHEADERAnonymousEUnion_8c8fac9a4602 as DISPATCHERHEADERAnonymousEUnion}
+
+pub using @ed1600d960f8e7eb {type DISPATCHERHEADERAnonymousEUnionAnonymous1EUnion_8ec511fa8e43 as DISPATCHERHEADERAnonymousEUnionAnonymous1EUnion}
+
+pub using @ed1600d960f8e7eb {type DISPATCHERHEADERAnonymousEUnionAnonymous2EStruct_0e621a01c058 as DISPATCHERHEADERAnonymousEUnionAnonymous2EStruct}
+
+pub using @ed1600d960f8e7eb {type DISPATCHERHEADERAnonymousEUnionAnonymous3EStruct_ad8808a06e2d as DISPATCHERHEADERAnonymousEUnionAnonymous3EStruct}
+
+pub using @ed1600d960f8e7eb {type DISPATCHERHEADERAnonymousEUnionAnonymous3EStructAnonymous1EUnion_e93d82288300 as DISPATCHERHEADERAnonymousEUnionAnonymous3EStructAnonymous1EUnion}
+
+pub using @ed1600d960f8e7eb {type DISPATCHERHEADERAnonymousEUnionAnonymous3EStructAnonymous1EUnionAnonymousEStruct_6a400269e311 as DISPATCHERHEADERAnonymousEUnionAnonymous3EStructAnonymous1EUnionAnonymousEStruct}
+
+pub using @ed1600d960f8e7eb {type DISPATCHERHEADERAnonymousEUnionAnonymous3EStructAnonymous2EUnion_2f87061c5e70 as DISPATCHERHEADERAnonymousEUnionAnonymous3EStructAnonymous2EUnion}
+
+pub using @ed1600d960f8e7eb {type DISPATCHERHEADERAnonymousEUnionAnonymous3EStructAnonymous2EUnionAnonymousEStruct_4a4bf434058e as DISPATCHERHEADERAnonymousEUnionAnonymous3EStructAnonymous2EUnionAnonymousEStruct}
+
+pub using @ed1600d960f8e7eb {type DISPATCHERHEADERAnonymousEUnionAnonymous4EStruct_c1675224b959 as DISPATCHERHEADERAnonymousEUnionAnonymous4EStruct}
+
+pub using @ed1600d960f8e7eb {type DISPATCHERHEADERAnonymousEUnionAnonymous4EStructAnonymousEUnion_36441f8d2b50 as DISPATCHERHEADERAnonymousEUnionAnonymous4EStructAnonymousEUnion}
+
+pub using @ed1600d960f8e7eb {type DISPATCHERHEADERAnonymousEUnionAnonymous4EStructAnonymousEUnionAnonymousEStruct_c0603da9a568 as DISPATCHERHEADERAnonymousEUnionAnonymous4EStructAnonymousEUnionAnonymousEStruct}
+
+pub using @ed1600d960f8e7eb {type DISPATCHERHEADERAnonymousEUnionAnonymous5EStruct_3195b58531bc as DISPATCHERHEADERAnonymousEUnionAnonymous5EStruct}
+
+pub using @ed1600d960f8e7eb {type DISPATCHERHEADERAnonymousEUnionAnonymous5EStructAnonymousEUnion_b45fd4c491d3 as DISPATCHERHEADERAnonymousEUnionAnonymous5EStructAnonymousEUnion}
+
+pub using @ed1600d960f8e7eb {type DISPATCHERHEADERAnonymousEUnionAnonymous5EStructAnonymousEUnionAnonymousEStruct_a59d65d5a886 as DISPATCHERHEADERAnonymousEUnionAnonymous5EStructAnonymousEUnionAnonymousEStruct}
+
+pub using @ed1600d960f8e7eb {type DISPATCHERHEADERAnonymousEUnionAnonymous6EStruct_331f1b97c775 as DISPATCHERHEADERAnonymousEUnionAnonymous6EStruct}
+
+pub using @ed1600d960f8e7eb {type DISPATCHERHEADERAnonymousEUnionAnonymous6EStructAnonymous1EUnion_ef40d4a45df3 as DISPATCHERHEADERAnonymousEUnionAnonymous6EStructAnonymous1EUnion}
+
+pub using @ed1600d960f8e7eb {type DISPATCHERHEADERAnonymousEUnionAnonymous6EStructAnonymous1EUnionAnonymousEStruct_543114e376ad as DISPATCHERHEADERAnonymousEUnionAnonymous6EStructAnonymous1EUnionAnonymousEStruct}
+
+pub using @ed1600d960f8e7eb {type DISPATCHERHEADERAnonymousEUnionAnonymous6EStructAnonymous2EUnion_6632a6215281 as DISPATCHERHEADERAnonymousEUnionAnonymous6EStructAnonymous2EUnion}
+
+pub using @ed1600d960f8e7eb {type DISPATCHERHEADERAnonymousEUnionAnonymous7EStruct_fc030f8c79b8 as DISPATCHERHEADERAnonymousEUnionAnonymous7EStruct}
+
+pub using @ed1600d960f8e7eb {type DMACOMMONBUFFERVECTOR_93d4acbb28f9 as DMACOMMONBUFFERVECTOR}
+
+pub using @ed1600d960f8e7eb {type DRIVERADDDEVICE_3cbd1f0622a6 as DRIVERADDDEVICE}
+
+pub using @ed1600d960f8e7eb {type DRIVERCANCEL_c691848659be as DRIVERCANCEL}
+
+pub using @ed1600d960f8e7eb {type DRIVERCONTROL_00498a99932e as DRIVERCONTROL}
+
+pub using @ed1600d960f8e7eb {type DRIVERDISPATCH_59bd550a8a06 as DRIVERDISPATCH}
+
+pub using @ed1600d960f8e7eb {type DRIVERDISPATCHPAGED_8744b80148e3 as DRIVERDISPATCHPAGED}
+
+pub using @ed1600d960f8e7eb {type DRIVEREXTENSION_a29f1e562559 as DRIVEREXTENSION}
+
+pub using @ed1600d960f8e7eb {type DRIVERFSNOTIFICATION_02c43a684545 as DRIVERFSNOTIFICATION}
+
+pub using @ed1600d960f8e7eb {type DRIVERINITIALIZE_5971fc8e8bec as DRIVERINITIALIZE}
+
+pub using @ed1600d960f8e7eb {type DRIVERNOTIFICATIONCALLBACKROUTINE_762cb654f95a as DRIVERNOTIFICATIONCALLBACKROUTINE}
+
+pub using @ed1600d960f8e7eb {type DRIVEROBJECT_8ea62cbd7d3f as DRIVEROBJECT}
+
+pub using @ed1600d960f8e7eb {type DRIVERREINITIALIZE_ef3a6b3d0af0 as DRIVERREINITIALIZE}
+
+pub using @ed1600d960f8e7eb {type DRIVERSTARTIO_55be8bbda137 as DRIVERSTARTIO}
+
+pub using @ed1600d960f8e7eb {type DRIVERUNLOAD_ac881790c6aa as DRIVERUNLOAD}
+
+pub using @ed1600d960f8e7eb {type ECPHEADER_0e5a4d52c1da as ECPHEADER}
+
+pub using @ed1600d960f8e7eb {type ECPLIST_473ef08995b0 as ECPLIST}
+
+pub using @ed1600d960f8e7eb {type ERESOURCE_e80be6e8127b as ERESOURCE}
+
+pub using @ed1600d960f8e7eb {type ERESOURCEAnonymous1EUnion_9870a221b4db as ERESOURCEAnonymous1EUnion}
+
+pub using @ed1600d960f8e7eb {type ERESOURCEAnonymous1EUnionAnonymousEStruct_9ea0445667b2 as ERESOURCEAnonymous1EUnionAnonymousEStruct}
+
+pub using @ed1600d960f8e7eb {type ERESOURCEAnonymous2EUnion_08d1609a081d as ERESOURCEAnonymous2EUnion}
+
+pub using @ed1600d960f8e7eb {type FASTIOACQUIREFILE_6bcafb444f99 as FASTIOACQUIREFILE}
+
+pub using @ed1600d960f8e7eb {type FASTIOACQUIREFORCCFLUSH_6c38600a6b14 as FASTIOACQUIREFORCCFLUSH}
+
+pub using @ed1600d960f8e7eb {type FASTIOACQUIREFORMODWRITE_02f1bfe00980 as FASTIOACQUIREFORMODWRITE}
+
+pub using @ed1600d960f8e7eb {type FASTIOCHECKIFPOSSIBLE_c3498c449904 as FASTIOCHECKIFPOSSIBLE}
+
+pub using @ed1600d960f8e7eb {type FASTIODETACHDEVICE_4477b2a7837a as FASTIODETACHDEVICE}
+
+pub using @ed1600d960f8e7eb {type FASTIODEVICECONTROL_9065797184ed as FASTIODEVICECONTROL}
+
+pub using @ed1600d960f8e7eb {type FASTIODISPATCH_2ed0aaabe7ce as FASTIODISPATCH}
+
+pub using @ed1600d960f8e7eb {type FASTIOLOCK_d5bea6428d68 as FASTIOLOCK}
+
+pub using @ed1600d960f8e7eb {type FASTIOMDLREAD_cf32cb8958bb as FASTIOMDLREAD}
+
+pub using @ed1600d960f8e7eb {type FASTIOMDLREADCOMPLETE_05b280cd3cf3 as FASTIOMDLREADCOMPLETE}
+
+pub using @ed1600d960f8e7eb {type FASTIOMDLREADCOMPLETECOMPRESSED_36a0f1257c54 as FASTIOMDLREADCOMPLETECOMPRESSED}
+
+pub using @ed1600d960f8e7eb {type FASTIOMDLWRITECOMPLETE_7c4a2fb5b15d as FASTIOMDLWRITECOMPLETE}
+
+pub using @ed1600d960f8e7eb {type FASTIOMDLWRITECOMPLETECOMPRESSED_bbd8b145e5a6 as FASTIOMDLWRITECOMPLETECOMPRESSED}
+
+pub using @ed1600d960f8e7eb {type FASTIOPREPAREMDLWRITE_ef3960603f86 as FASTIOPREPAREMDLWRITE}
+
+pub using @ed1600d960f8e7eb {type FASTIOQUERYBASICINFO_9fd5dd545f9f as FASTIOQUERYBASICINFO}
+
+pub using @ed1600d960f8e7eb {type FASTIOQUERYNETWORKOPENINFO_975360ac871c as FASTIOQUERYNETWORKOPENINFO}
+
+pub using @ed1600d960f8e7eb {type FASTIOQUERYOPEN_aa2af037fce4 as FASTIOQUERYOPEN}
+
+pub using @ed1600d960f8e7eb {type FASTIOQUERYSTANDARDINFO_f28b85fc1e42 as FASTIOQUERYSTANDARDINFO}
+
+pub using @ed1600d960f8e7eb {type FASTIOREAD_a27db835670b as FASTIOREAD}
+
+pub using @ed1600d960f8e7eb {type FASTIOREADCOMPRESSED_9e5b502f6153 as FASTIOREADCOMPRESSED}
+
+pub using @ed1600d960f8e7eb {type FASTIORELEASEFILE_b1923d68083c as FASTIORELEASEFILE}
+
+pub using @ed1600d960f8e7eb {type FASTIORELEASEFORCCFLUSH_b86cb2d872a7 as FASTIORELEASEFORCCFLUSH}
+
+pub using @ed1600d960f8e7eb {type FASTIORELEASEFORMODWRITE_c81abb3c57ca as FASTIORELEASEFORMODWRITE}
+
+pub using @ed1600d960f8e7eb {type FASTIOUNLOCKALL_0912e582b2d7 as FASTIOUNLOCKALL}
+
+pub using @ed1600d960f8e7eb {type FASTIOUNLOCKALLBYKEY_58d22f786338 as FASTIOUNLOCKALLBYKEY}
+
+pub using @ed1600d960f8e7eb {type FASTIOUNLOCKSINGLE_93c6e0c2f506 as FASTIOUNLOCKSINGLE}
+
+pub using @ed1600d960f8e7eb {type FASTIOWRITE_77e42b7be5b8 as FASTIOWRITE}
+
+pub using @ed1600d960f8e7eb {type FASTIOWRITECOMPRESSED_171c38c99e33 as FASTIOWRITECOMPRESSED}
+
+pub using @ed1600d960f8e7eb {type FASTMUTEX_6cf9cf6064cf as FASTMUTEX}
+
+pub using @ed1600d960f8e7eb {type FILEOBJECT_10fdc94b6101 as FILEOBJECT}
+
+pub using @ed1600d960f8e7eb {type IOCOMPLETIONCONTEXT_9964f969323e as IOCOMPLETIONCONTEXT}
+
+pub using @ed1600d960f8e7eb {type IOMMUDMADEVICE_8e6b3065ebcb as IOMMUDMADEVICE}
+
+pub using @ed1600d960f8e7eb {type IOMMUDMADOMAIN_cffb78e46b38 as IOMMUDMADOMAIN}
+
+pub using @ed1600d960f8e7eb {type IOPRIORITYHINT_95951fadf6de as IOPRIORITYHINT}
+
+pub using @ed1600d960f8e7eb {type IORINGOBJECT_ef8fb5c311c2 as IORINGOBJECT}
+
+pub using @ed1600d960f8e7eb {type IOSECURITYCONTEXT_deffb8e5c2c2 as IOSECURITYCONTEXT}
+
+pub using @ed1600d960f8e7eb {type IOSTACKLOCATION_6ae23e7dbdc4 as IOSTACKLOCATION}
+
+pub using @ed1600d960f8e7eb {type IOSTACKLOCATIONParametersEUnion_0bb5b4a85156 as IOSTACKLOCATIONParametersEUnion}
+
+pub using @ed1600d960f8e7eb {type IOSTACKLOCATIONParametersEUnionCreateEStruct_3e1971d85a1d as IOSTACKLOCATIONParametersEUnionCreateEStruct}
+
+pub using @ed1600d960f8e7eb {type IOSTACKLOCATIONParametersEUnionCreateMailslotEStruct_95175b37f65a as IOSTACKLOCATIONParametersEUnionCreateMailslotEStruct}
+
+pub using @ed1600d960f8e7eb {type IOSTACKLOCATIONParametersEUnionCreatePipeEStruct_1048e3231115 as IOSTACKLOCATIONParametersEUnionCreatePipeEStruct}
+
+pub using @ed1600d960f8e7eb {type IOSTACKLOCATIONParametersEUnionDeviceCapabilitiesEStruct_926009597be2 as IOSTACKLOCATIONParametersEUnionDeviceCapabilitiesEStruct}
+
+pub using @ed1600d960f8e7eb {type IOSTACKLOCATIONParametersEUnionDeviceIoControlEStruct_0dac891d3f71 as IOSTACKLOCATIONParametersEUnionDeviceIoControlEStruct}
+
+pub using @ed1600d960f8e7eb {type IOSTACKLOCATIONParametersEUnionFileSystemControlEStruct_08aac7b5af6c as IOSTACKLOCATIONParametersEUnionFileSystemControlEStruct}
+
+pub using @ed1600d960f8e7eb {type IOSTACKLOCATIONParametersEUnionFilterResourceRequirementsEStruct_d45d47d8e6c8 as IOSTACKLOCATIONParametersEUnionFilterResourceRequirementsEStruct}
+
+pub using @ed1600d960f8e7eb {type IOSTACKLOCATIONParametersEUnionLockControlEStruct_335e43feed17 as IOSTACKLOCATIONParametersEUnionLockControlEStruct}
+
+pub using @ed1600d960f8e7eb {type IOSTACKLOCATIONParametersEUnionMountVolumeEStruct_ed5f8f4d0826 as IOSTACKLOCATIONParametersEUnionMountVolumeEStruct}
+
+pub using @ed1600d960f8e7eb {type IOSTACKLOCATIONParametersEUnionNotifyDirectoryEStruct_768fcfbd91a1 as IOSTACKLOCATIONParametersEUnionNotifyDirectoryEStruct}
+
+pub using @ed1600d960f8e7eb {type IOSTACKLOCATIONParametersEUnionNotifyDirectoryExEStruct_998b4a09484a as IOSTACKLOCATIONParametersEUnionNotifyDirectoryExEStruct}
+
+pub using @ed1600d960f8e7eb {type IOSTACKLOCATIONParametersEUnionOthersEStruct_f262f797c005 as IOSTACKLOCATIONParametersEUnionOthersEStruct}
+
+pub using @ed1600d960f8e7eb {type IOSTACKLOCATIONParametersEUnionPowerEStruct_08b61d03e9e9 as IOSTACKLOCATIONParametersEUnionPowerEStruct}
+
+pub using @ed1600d960f8e7eb {type IOSTACKLOCATIONParametersEUnionPowerEStructAnonymousEUnion_955179c95f7b as IOSTACKLOCATIONParametersEUnionPowerEStructAnonymousEUnion}
+
+pub using @ed1600d960f8e7eb {type IOSTACKLOCATIONParametersEUnionPowerSequenceEStruct_4db423a0f0e4 as IOSTACKLOCATIONParametersEUnionPowerSequenceEStruct}
+
+pub using @ed1600d960f8e7eb {type IOSTACKLOCATIONParametersEUnionQueryDeviceRelationsEStruct_9d07c765de08 as IOSTACKLOCATIONParametersEUnionQueryDeviceRelationsEStruct}
+
+pub using @ed1600d960f8e7eb {type IOSTACKLOCATIONParametersEUnionQueryDeviceTextEStruct_9c462930c67f as IOSTACKLOCATIONParametersEUnionQueryDeviceTextEStruct}
+
+pub using @ed1600d960f8e7eb {type IOSTACKLOCATIONParametersEUnionQueryDirectoryEStruct_9b26b191b2e7 as IOSTACKLOCATIONParametersEUnionQueryDirectoryEStruct}
+
+pub using @ed1600d960f8e7eb {type IOSTACKLOCATIONParametersEUnionQueryEaEStruct_693b575d5901 as IOSTACKLOCATIONParametersEUnionQueryEaEStruct}
+
+pub using @ed1600d960f8e7eb {type IOSTACKLOCATIONParametersEUnionQueryFileEStruct_c5368659370b as IOSTACKLOCATIONParametersEUnionQueryFileEStruct}
+
+pub using @ed1600d960f8e7eb {type IOSTACKLOCATIONParametersEUnionQueryIdEStruct_47e9abbc9afa as IOSTACKLOCATIONParametersEUnionQueryIdEStruct}
+
+pub using @ed1600d960f8e7eb {type IOSTACKLOCATIONParametersEUnionQueryInterfaceEStruct_42e71aa0e13a as IOSTACKLOCATIONParametersEUnionQueryInterfaceEStruct}
+
+pub using @ed1600d960f8e7eb {type IOSTACKLOCATIONParametersEUnionQueryQuotaEStruct_ef93bd8a85e0 as IOSTACKLOCATIONParametersEUnionQueryQuotaEStruct}
+
+pub using @ed1600d960f8e7eb {type IOSTACKLOCATIONParametersEUnionQuerySecurityEStruct_78becc7f190e as IOSTACKLOCATIONParametersEUnionQuerySecurityEStruct}
+
+pub using @ed1600d960f8e7eb {type IOSTACKLOCATIONParametersEUnionQueryVolumeEStruct_e05de15d0c09 as IOSTACKLOCATIONParametersEUnionQueryVolumeEStruct}
+
+pub using @ed1600d960f8e7eb {type IOSTACKLOCATIONParametersEUnionReadEStruct_621e39c959fa as IOSTACKLOCATIONParametersEUnionReadEStruct}
+
+pub using @ed1600d960f8e7eb {type IOSTACKLOCATIONParametersEUnionReadWriteConfigEStruct_5752827c969e as IOSTACKLOCATIONParametersEUnionReadWriteConfigEStruct}
+
+pub using @ed1600d960f8e7eb {type IOSTACKLOCATIONParametersEUnionScsiEStruct_1993195199d5 as IOSTACKLOCATIONParametersEUnionScsiEStruct}
+
+pub using @ed1600d960f8e7eb {type IOSTACKLOCATIONParametersEUnionSetEaEStruct_b34dc2f42904 as IOSTACKLOCATIONParametersEUnionSetEaEStruct}
+
+pub using @ed1600d960f8e7eb {type IOSTACKLOCATIONParametersEUnionSetFileEStruct_264227f1bc78 as IOSTACKLOCATIONParametersEUnionSetFileEStruct}
+
+pub using @ed1600d960f8e7eb {type IOSTACKLOCATIONParametersEUnionSetFileEStructAnonymousEUnion_01233e1282b5 as IOSTACKLOCATIONParametersEUnionSetFileEStructAnonymousEUnion}
+
+pub using @ed1600d960f8e7eb {type IOSTACKLOCATIONParametersEUnionSetFileEStructAnonymousEUnionAnonymousEStruct_398bc5cb0396 as IOSTACKLOCATIONParametersEUnionSetFileEStructAnonymousEUnionAnonymousEStruct}
+
+pub using @ed1600d960f8e7eb {type IOSTACKLOCATIONParametersEUnionSetLockEStruct_6a34e021377a as IOSTACKLOCATIONParametersEUnionSetLockEStruct}
+
+pub using @ed1600d960f8e7eb {type IOSTACKLOCATIONParametersEUnionSetQuotaEStruct_4f6e892a5047 as IOSTACKLOCATIONParametersEUnionSetQuotaEStruct}
+
+pub using @ed1600d960f8e7eb {type IOSTACKLOCATIONParametersEUnionSetSecurityEStruct_96b6646f4539 as IOSTACKLOCATIONParametersEUnionSetSecurityEStruct}
+
+pub using @ed1600d960f8e7eb {type IOSTACKLOCATIONParametersEUnionSetVolumeEStruct_39afc6b71fe0 as IOSTACKLOCATIONParametersEUnionSetVolumeEStruct}
+
+pub using @ed1600d960f8e7eb {type IOSTACKLOCATIONParametersEUnionStartDeviceEStruct_c316c51cbbeb as IOSTACKLOCATIONParametersEUnionStartDeviceEStruct}
+
+pub using @ed1600d960f8e7eb {type IOSTACKLOCATIONParametersEUnionUsageNotificationEStruct_db41213b3b61 as IOSTACKLOCATIONParametersEUnionUsageNotificationEStruct}
+
+pub using @ed1600d960f8e7eb {type IOSTACKLOCATIONParametersEUnionVerifyVolumeEStruct_26c89cd76181 as IOSTACKLOCATIONParametersEUnionVerifyVolumeEStruct}
+
+pub using @ed1600d960f8e7eb {type IOSTACKLOCATIONParametersEUnionWMIEStruct_34dfdd3b68f1 as IOSTACKLOCATIONParametersEUnionWMIEStruct}
+
+pub using @ed1600d960f8e7eb {type IOSTACKLOCATIONParametersEUnionWaitWakeEStruct_21073ea0f997 as IOSTACKLOCATIONParametersEUnionWaitWakeEStruct}
+
+pub using @ed1600d960f8e7eb {type IOSTACKLOCATIONParametersEUnionWriteEStruct_94eb7fd13684 as IOSTACKLOCATIONParametersEUnionWriteEStruct}
+
+pub using @ed1600d960f8e7eb {type IRP_91cf3ae87b14 as IRP}
+
+pub using @ed1600d960f8e7eb {type IRPAnonymousEUnion_77c31f1ef024 as IRPAnonymousEUnion}
+
+pub using @ed1600d960f8e7eb {type IRPAssociatedIrpEUnion_41b27b24f356 as IRPAssociatedIrpEUnion}
+
+pub using @ed1600d960f8e7eb {type IRPOverlayEUnion_f4f722616513 as IRPOverlayEUnion}
+
+pub using @ed1600d960f8e7eb {type IRPOverlayEUnionAsynchronousParametersEStruct_6c195f4a1bfe as IRPOverlayEUnionAsynchronousParametersEStruct}
+
+pub using @ed1600d960f8e7eb {type IRPOverlayEUnionAsynchronousParametersEStructAnonymous1EUnion_9569abbd2938 as IRPOverlayEUnionAsynchronousParametersEStructAnonymous1EUnion}
+
+pub using @ed1600d960f8e7eb {type IRPOverlayEUnionAsynchronousParametersEStructAnonymous2EUnion_c5e0db20cc62 as IRPOverlayEUnionAsynchronousParametersEStructAnonymous2EUnion}
+
+pub using @ed1600d960f8e7eb {type IRPTailEUnion_8d554a5abfb9 as IRPTailEUnion}
+
+pub using @ed1600d960f8e7eb {type IRPTailEUnionOverlayEStruct_e528c747c859 as IRPTailEUnionOverlayEStruct}
+
+pub using @ed1600d960f8e7eb {type IRPTailEUnionOverlayEStructAnonymous1EUnion_47410fcaa9fb as IRPTailEUnionOverlayEStructAnonymous1EUnion}
+
+pub using @ed1600d960f8e7eb {type IRPTailEUnionOverlayEStructAnonymous1EUnionAnonymousEStruct_00d420c1a362 as IRPTailEUnionOverlayEStructAnonymous1EUnionAnonymousEStruct}
+
+pub using @ed1600d960f8e7eb {type IRPTailEUnionOverlayEStructAnonymous2EStruct_c354d1091f4e as IRPTailEUnionOverlayEStructAnonymous2EStruct}
+
+pub using @ed1600d960f8e7eb {type IRPTailEUnionOverlayEStructAnonymous2EStructAnonymousEUnion_4406b70b2bc8 as IRPTailEUnionOverlayEStructAnonymous2EStructAnonymousEUnion}
+
+pub using @ed1600d960f8e7eb {type KDEVICEQUEUE_afec879a3f9c as KDEVICEQUEUE}
+
+pub using @ed1600d960f8e7eb {type KDPC_46fd2991e0a0 as KDPC}
+
+pub using @ed1600d960f8e7eb {type KDPCAnonymousEUnion_d7ac96b4b60c as KDPCAnonymousEUnion}
+
+pub using @ed1600d960f8e7eb {type KDPCAnonymousEUnionAnonymousEStruct_555d3a14a76f as KDPCAnonymousEUnionAnonymousEStruct}
+
+pub using @ed1600d960f8e7eb {type KENLISTMENT_c8243c9baf8f as KENLISTMENT}
+
+pub using @ed1600d960f8e7eb {type KEVENT_3c6f137e40f7 as KEVENT}
+
+pub using @ed1600d960f8e7eb {type KGDT_fe1ef3d6da62 as KGDT}
+
+pub using @ed1600d960f8e7eb {type KIDT_43f1883abbda as KIDT}
+
+pub using @ed1600d960f8e7eb {type KMUTANT_2b08326af0ec as KMUTANT}
+
+pub using @ed1600d960f8e7eb {type KMUTANTAnonymousEUnion_98056f0d31cf as KMUTANTAnonymousEUnion}
+
+pub using @ed1600d960f8e7eb {type KMUTANTAnonymousEUnionAnonymousEStruct_a3390ffe9b69 as KMUTANTAnonymousEUnionAnonymousEStruct}
+
+pub using @ed1600d960f8e7eb {type KPCR_dcf24609db96 as KPCR}
+
+pub using @ed1600d960f8e7eb {type KPRCB_d9deb8e407b7 as KPRCB}
+
+pub using @ed1600d960f8e7eb {type KQUEUE_8ba0de3c2690 as KQUEUE}
+
+pub using @ed1600d960f8e7eb {type KRESOURCEMANAGER_8bcb3142d464 as KRESOURCEMANAGER}
+
+pub using @ed1600d960f8e7eb {type KSPINLOCKQUEUENUMBER_1c002dd072b4 as KSPINLOCKQUEUENUMBER}
+
+pub using @ed1600d960f8e7eb {type KTM_6135e3e6a3a1 as KTM}
+
+pub using @ed1600d960f8e7eb {type KTRANSACTION_8da939ea4ac1 as KTRANSACTION}
+
+pub using @ed1600d960f8e7eb {type KTSS_d28b73a259e5 as KTSS}
+
+pub using @ed1600d960f8e7eb {type KWAITBLOCK_1c2f53d8fafb as KWAITBLOCK}
+
+pub using @ed1600d960f8e7eb {type KWAITBLOCKAnonymousEUnion_5e4a836c7af2 as KWAITBLOCKAnonymousEUnion}
+
+pub using @ed1600d960f8e7eb {type LOADERPARAMETERBLOCK_13a1d52d96c2 as LOADERPARAMETERBLOCK}
+
+pub using @ed1600d960f8e7eb {type MDL_7d9d63ab3948 as MDL}
+
+pub using @ed1600d960f8e7eb {type OBJECTATTRIBUTES_a84fd84bd592 as OBJECTATTRIBUTES}
+
+pub using @ed1600d960f8e7eb {type OBJECTATTRIBUTES32_5a09a2b07b37 as OBJECTATTRIBUTES32}
+
+pub using @ed1600d960f8e7eb {type OBJECTATTRIBUTES64_663d46738a85 as OBJECTATTRIBUTES64}
+
+pub using @ed1600d960f8e7eb {type OBJECTINFORMATIONCLASS_e3104a2145b2 as OBJECTINFORMATIONCLASS}
+
+pub using @ed1600d960f8e7eb {type OBJECTNAMEINFORMATION_b893f2e8f796 as OBJECTNAMEINFORMATION}
+
+pub using @ed1600d960f8e7eb {type OWNERENTRY_1ce1b472778e as OWNERENTRY}
+
+pub using @ed1600d960f8e7eb {type OWNERENTRYAnonymousEUnion_2e156e739dad as OWNERENTRYAnonymousEUnion}
+
+pub using @ed1600d960f8e7eb {type OWNERENTRYAnonymousEUnionAnonymousEStruct_ad313f106686 as OWNERENTRYAnonymousEUnionAnonymousEStruct}
+
+pub using @ed1600d960f8e7eb {type PAFFINITYTOKEN_c61f83b9c91d as PAFFINITYTOKEN}
+
+pub using @ed1600d960f8e7eb {type PBUSHANDLER_32c2bd8eb469 as PBUSHANDLER}
+
+pub using @ed1600d960f8e7eb {type PCALLBACKOBJECT_a200660fa434 as PCALLBACKOBJECT}
+
+pub using @ed1600d960f8e7eb {type PDEVICEHANDLEROBJECT_648e2a9e80e2 as PDEVICEHANDLEROBJECT}
+
+pub using @ed1600d960f8e7eb {type PEJOB_fca05e7c5008 as PEJOB}
+
+pub using @ed1600d960f8e7eb {type PEPROCESS_0a7ca3f8e188 as PEPROCESS}
+
+pub using @ed1600d960f8e7eb {type PESILO_8b59e0b0bf3d as PESILO}
+
+pub using @ed1600d960f8e7eb {type PETHREAD_c853b09d3afa as PETHREAD}
+
+pub using @ed1600d960f8e7eb {type PEXRUNDOWNREFCACHEAWARE_cb8a46804898 as PEXRUNDOWNREFCACHEAWARE}
+
+pub using @ed1600d960f8e7eb {type PEXTIMER_910e067047cb as PEXTIMER}
+
+pub using @ed1600d960f8e7eb {type PFREEFUNCTION_993080bff3a9 as PFREEFUNCTION}
+
+pub using @ed1600d960f8e7eb {type PIOCOMPLETIONROUTINE_ca6533d12750 as PIOCOMPLETIONROUTINE}
+
+pub using @ed1600d960f8e7eb {type PIOREMOVELOCKTRACKINGBLOCK_92a833848b96 as PIOREMOVELOCKTRACKINGBLOCK}
+
+pub using @ed1600d960f8e7eb {type PIOTIMER_67d3b8ce8b23 as PIOTIMER}
+
+pub using @ed1600d960f8e7eb {type PIOWORKITEM_045a4c2c4547 as PIOWORKITEM}
+
+pub using @ed1600d960f8e7eb {type PKDEFERREDROUTINE_fe95db0b6ec1 as PKDEFERREDROUTINE}
+
+pub using @ed1600d960f8e7eb {type PKINTERRUPT_38b46e10f400 as PKINTERRUPT}
+
+pub using @ed1600d960f8e7eb {type PKPROCESS_06f29503127f as PKPROCESS}
+
+pub using @ed1600d960f8e7eb {type PKTHREAD_91cf034def97 as PKTHREAD}
+
+pub using @ed1600d960f8e7eb {type PNOTIFYSYNC_4f71bdb5b060 as PNOTIFYSYNC}
+
+pub using @ed1600d960f8e7eb {type POBJECTTYPE_b90db23c43fe as POBJECTTYPE}
+
+pub using @ed1600d960f8e7eb {type POHANDLE_4332c5dc715e as POHANDLE}
+
+pub using @ed1600d960f8e7eb {type POOLTYPE_44586418b197 as POOLTYPE}
+
+pub using @ed1600d960f8e7eb {type PPCWBUFFER_7bd762520846 as PPCWBUFFER}
+
+pub using @ed1600d960f8e7eb {type PPCWINSTANCE_446ad8b4d011 as PPCWINSTANCE}
+
+pub using @ed1600d960f8e7eb {type PPCWREGISTRATION_1524a570652b as PPCWREGISTRATION}
+
+pub using @ed1600d960f8e7eb {type PRKPROCESS_df87dd48ccd7 as PRKPROCESS}
+
+pub using @ed1600d960f8e7eb {type PRKTHREAD_46bfaa18d50a as PRKTHREAD}
+
+pub using @ed1600d960f8e7eb {type PSILOMONITOR_2246324a4d91 as PSILOMONITOR}
+
+pub using @ed1600d960f8e7eb {type PWORKERTHREADROUTINE_90fb1a58df7a as PWORKERTHREADROUTINE}
+
+pub using @ed1600d960f8e7eb {type RTLSPLAYLINKS_36727ed0ea68 as RTLSPLAYLINKS}
+
+pub using @ed1600d960f8e7eb {type SCSIREQUESTBLOCK_d84cb83771bc as SCSIREQUESTBLOCK}
+
+pub using @ed1600d960f8e7eb {type SECTIONOBJECTPOINTERS_cdc574dc3bec as SECTIONOBJECTPOINTERS}
+
+pub using @ed1600d960f8e7eb {type SECURITYSUBJECTCONTEXT_34cff2619b55 as SECURITYSUBJECTCONTEXT}
+
+pub using @ed1600d960f8e7eb {type SspiAsyncContext_c9c696cf38a6 as SspiAsyncContext}
+
+pub using @ed1600d960f8e7eb {type TARGETDEVICECUSTOMNOTIFICATION_d39e66f92a60 as TARGETDEVICECUSTOMNOTIFICATION}
+
+pub using @ed1600d960f8e7eb {type VPB_0a3d9d500700 as VPB}
+
+pub using @ed1600d960f8e7eb {type WORKQUEUEITEM_d05bbeb96c94 as WORKQUEUEITEM}
+
+// Traits

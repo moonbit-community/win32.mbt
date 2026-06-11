@@ -1,0 +1,98 @@
+// Generated using `moon info`, DON'T EDIT IT
+package "moonbit-community/win32api/windows/win32/network_management/windows_connection_manager"
+
+import {
+  "moonbit-community/win32api/runtime/core",
+  "moonbit-community/win32api/runtime/strings",
+  "moonbit-community/win32api/scc/8e238ff85f36f710",
+}
+
+// Values
+pub fn free_interface_context_table(@8e238ff85f36f710.NETINTERFACECONTEXTTABLE_903fbeef8811) -> Unit raise @core.WindowsError
+
+pub fn free_interface_context_table_raw(@core.RawAddress) -> Unit
+
+pub fn get_interface_context_table_for_host_name(@strings.PWStr?, @strings.PWStr?, UInt, @core.RawAddress, UInt, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn get_interface_context_table_for_host_name_raw(@core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, UInt, @core.RawAddress) -> Int
+
+pub let net_interface_flag_connect_if_needed : UInt
+
+pub let net_interface_flag_none : UInt
+
+pub fn on_demand_get_routing_hint(@strings.PWStr, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn on_demand_get_routing_hint_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn on_demand_register_notification(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn on_demand_register_notification_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn on_demand_un_register_notification(@core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn on_demand_un_register_notification_raw(@core.RawAddress) -> Int
+
+pub let wcm_api_version : UInt
+
+pub let wcm_api_version_1_0 : UInt
+
+pub fn wcm_free_memory(@core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn wcm_free_memory_raw(@core.RawAddress) -> Unit
+
+pub fn wcm_get_profile_list(@core.RawAddress, @core.RawAddress) -> UInt raise @core.WindowsError
+
+pub fn wcm_get_profile_list_raw(@core.RawAddress, @core.RawAddress) -> UInt
+
+pub let wcm_max_profile_name : UInt
+
+pub fn wcm_query_property(@core.RawAddress, @strings.PWStr?, @8e238ff85f36f710.WCMPROPERTY_4e408c941795, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt raise @core.WindowsError
+
+pub fn wcm_query_property_raw(@core.RawAddress, @core.RawAddress, Int, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn wcm_set_profile_list(@8e238ff85f36f710.WCMPROFILEINFOLIST_f34521da7217, UInt, Int, @core.RawAddress) -> UInt raise @core.WindowsError
+
+pub fn wcm_set_profile_list_raw(@core.RawAddress, UInt, Int, @core.RawAddress) -> UInt
+
+pub fn wcm_set_property(@core.RawAddress, @strings.PWStr?, @8e238ff85f36f710.WCMPROPERTY_4e408c941795, @core.RawAddress, UInt, @core.RawAddress) -> UInt raise @core.WindowsError
+
+pub fn wcm_set_property_raw(@core.RawAddress, @core.RawAddress, Int, @core.RawAddress, UInt, @core.RawAddress) -> UInt
+
+pub let wcm_unknown_dataplan_status : UInt
+
+// Errors
+
+// Types and methods
+
+// Type aliases
+pub using @8e238ff85f36f710 {type NETINTERFACECONTEXT_fd84d950b852 as NETINTERFACECONTEXT}
+
+pub using @8e238ff85f36f710 {type NETINTERFACECONTEXTTABLE_903fbeef8811 as NETINTERFACECONTEXTTABLE}
+
+pub using @8e238ff85f36f710 {type ONDEMANDNOTIFICATIONCALLBACK_a7017c6b895c as ONDEMANDNOTIFICATIONCALLBACK}
+
+pub using @8e238ff85f36f710 {type WCMBILLINGCYCLEINFO_52576ce57292 as WCMBILLINGCYCLEINFO}
+
+pub using @8e238ff85f36f710 {type WCMCONNECTIONCOST_32bfdb24a04f as WCMCONNECTIONCOST}
+
+pub using @8e238ff85f36f710 {type WCMCONNECTIONCOSTDATA_2689074296ed as WCMCONNECTIONCOSTDATA}
+
+pub using @8e238ff85f36f710 {type WCMCONNECTIONCOSTSOURCE_2a42369e7164 as WCMCONNECTIONCOSTSOURCE}
+
+pub using @8e238ff85f36f710 {type WCMDATAPLANSTATUS_2e8ab67a2f55 as WCMDATAPLANSTATUS}
+
+pub using @8e238ff85f36f710 {type WCMMEDIATYPE_b23154dca971 as WCMMEDIATYPE}
+
+pub using @8e238ff85f36f710 {type WCMPOLICYVALUE_6a848fc97f11 as WCMPOLICYVALUE}
+
+pub using @8e238ff85f36f710 {type WCMPROFILEINFO_cb09ef4d6b05 as WCMPROFILEINFO}
+
+pub using @8e238ff85f36f710 {type WCMPROFILEINFOLIST_f34521da7217 as WCMPROFILEINFOLIST}
+
+pub using @8e238ff85f36f710 {type WCMPROPERTY_4e408c941795 as WCMPROPERTY}
+
+pub using @8e238ff85f36f710 {type WCMTIMEINTERVAL_5f682d36ad91 as WCMTIMEINTERVAL}
+
+pub using @8e238ff85f36f710 {type WCMUSAGEDATA_4399a81e6736 as WCMUSAGEDATA}
+
+// Traits

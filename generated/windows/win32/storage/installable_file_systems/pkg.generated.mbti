@@ -1,0 +1,354 @@
+// Generated using `moon info`, DON'T EDIT IT
+package "moonbit-community/win32api/windows/win32/storage/installable_file_systems"
+
+import {
+  "moonbit-community/win32api/runtime/core",
+  "moonbit-community/win32api/runtime/strings",
+  "moonbit-community/win32api/scc/6272410ff14c63e7",
+  "moonbit-community/win32api/scc/b785b16e0a6d57ad",
+  "moonbit-community/win32api/scc/cc6631776d7e2373",
+}
+
+// Values
+pub fn filter_attach(@strings.PWStr, @strings.PWStr, @strings.PWStr?, UInt, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn filter_attach_at_altitude(@strings.PWStr, @strings.PWStr, @strings.PWStr, @strings.PWStr?, UInt, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn filter_attach_at_altitude_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, UInt, @core.RawAddress) -> Int
+
+pub fn filter_attach_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, UInt, @core.RawAddress) -> Int
+
+pub fn filter_close(Int64) -> Int raise @core.WindowsError
+
+pub fn filter_close_raw(Int64) -> Int
+
+pub fn filter_connect_communication_port(@strings.PWStr, UInt, @core.RawAddress, UInt16, @cc6631776d7e2373.SECURITYATTRIBUTES_bc2e2f0be0e1?, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn filter_connect_communication_port_raw(@core.RawAddress, UInt, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn filter_create(@strings.PWStr, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn filter_create_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn filter_detach(@strings.PWStr, @strings.PWStr, @strings.PWStr?) -> Int raise @core.WindowsError
+
+pub fn filter_detach_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn filter_find_close(@core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn filter_find_close_raw(@core.RawAddress) -> Int
+
+pub fn filter_find_first(@6272410ff14c63e7.FILTERINFORMATIONCLASS_fe68871ccad3, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn filter_find_first_raw(Int, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn filter_find_next(@core.RawAddress, @6272410ff14c63e7.FILTERINFORMATIONCLASS_fe68871ccad3, @core.RawAddress, UInt, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn filter_find_next_raw(@core.RawAddress, Int, @core.RawAddress, UInt, @core.RawAddress) -> Int
+
+pub fn filter_get_dos_name(@strings.PWStr, @strings.PWStrBuffer) -> Int raise @core.WindowsError
+
+pub fn filter_get_dos_name_raw(@core.RawAddress, @core.RawAddress, UInt) -> Int
+
+pub fn filter_get_information(Int64, @6272410ff14c63e7.FILTERINFORMATIONCLASS_fe68871ccad3, @core.RawAddress, UInt, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn filter_get_information_raw(Int64, Int, @core.RawAddress, UInt, @core.RawAddress) -> Int
+
+pub fn filter_get_message(@core.RawAddress, @6272410ff14c63e7.FILTERMESSAGEHEADER_4701b779fdb1, UInt, @b785b16e0a6d57ad.OVERLAPPED_ed44d4ed4c15?) -> Int raise @core.WindowsError
+
+pub fn filter_get_message_raw(@core.RawAddress, @core.RawAddress, UInt, @core.RawAddress) -> Int
+
+pub fn filter_instance_close(Int64) -> Int raise @core.WindowsError
+
+pub fn filter_instance_close_raw(Int64) -> Int
+
+pub fn filter_instance_create(@strings.PWStr, @strings.PWStr, @strings.PWStr?, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn filter_instance_create_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn filter_instance_find_close(@core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn filter_instance_find_close_raw(@core.RawAddress) -> Int
+
+pub fn filter_instance_find_first(@strings.PWStr, @6272410ff14c63e7.INSTANCEINFORMATIONCLASS_ee5798a21809, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn filter_instance_find_first_raw(@core.RawAddress, Int, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn filter_instance_find_next(@core.RawAddress, @6272410ff14c63e7.INSTANCEINFORMATIONCLASS_ee5798a21809, @core.RawAddress, UInt, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn filter_instance_find_next_raw(@core.RawAddress, Int, @core.RawAddress, UInt, @core.RawAddress) -> Int
+
+pub fn filter_instance_get_information(Int64, @6272410ff14c63e7.INSTANCEINFORMATIONCLASS_ee5798a21809, @core.RawAddress, UInt, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn filter_instance_get_information_raw(Int64, Int, @core.RawAddress, UInt, @core.RawAddress) -> Int
+
+pub fn filter_load(@strings.PWStr) -> Int raise @core.WindowsError
+
+pub fn filter_load_raw(@core.RawAddress) -> Int
+
+pub let filter_name_max_chars : UInt
+
+pub fn filter_reply_message(@core.RawAddress, @6272410ff14c63e7.FILTERREPLYHEADER_08bb273746a8, UInt) -> Int raise @core.WindowsError
+
+pub fn filter_reply_message_raw(@core.RawAddress, @core.RawAddress, UInt) -> Int
+
+pub fn filter_send_message(@core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, UInt, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn filter_send_message_raw(@core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, UInt, @core.RawAddress) -> Int
+
+pub fn filter_unload(@strings.PWStr) -> Int raise @core.WindowsError
+
+pub fn filter_unload_raw(@core.RawAddress) -> Int
+
+pub fn filter_volume_find_close(@core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn filter_volume_find_close_raw(@core.RawAddress) -> Int
+
+pub fn filter_volume_find_first(@6272410ff14c63e7.FILTERVOLUMEINFORMATIONCLASS_2a7b9819e8b0, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn filter_volume_find_first_raw(Int, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn filter_volume_find_next(@core.RawAddress, @6272410ff14c63e7.FILTERVOLUMEINFORMATIONCLASS_2a7b9819e8b0, @core.RawAddress, UInt, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn filter_volume_find_next_raw(@core.RawAddress, Int, @core.RawAddress, UInt, @core.RawAddress) -> Int
+
+pub fn filter_volume_instance_find_close(@core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn filter_volume_instance_find_close_raw(@core.RawAddress) -> Int
+
+pub fn filter_volume_instance_find_first(@strings.PWStr, @6272410ff14c63e7.INSTANCEINFORMATIONCLASS_ee5798a21809, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn filter_volume_instance_find_first_raw(@core.RawAddress, Int, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn filter_volume_instance_find_next(@core.RawAddress, @6272410ff14c63e7.INSTANCEINFORMATIONCLASS_ee5798a21809, @core.RawAddress, UInt, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn filter_volume_instance_find_next_raw(@core.RawAddress, Int, @core.RawAddress, UInt, @core.RawAddress) -> Int
+
+pub let flt_port_flag_sync_handle : UInt
+
+pub let fltfl_aggregate_info_is_legacyfilter : UInt
+
+pub let fltfl_aggregate_info_is_minifilter : UInt
+
+pub let fltfl_asi_is_legacyfilter : UInt
+
+pub let fltfl_asi_is_minifilter : UInt
+
+pub let fltfl_iasi_is_legacyfilter : UInt
+
+pub let fltfl_iasi_is_minifilter : UInt
+
+pub let fltfl_iasil_detached_volume : UInt
+
+pub let fltfl_iasim_detached_volume : UInt
+
+pub let fltfl_vsi_detached_volume : UInt
+
+pub let instance_name_max_chars : UInt
+
+pub let volume_name_max_chars : UInt
+
+pub let wnnc_cred_manager : UInt
+
+pub let wnnc_net_10_net : UInt
+
+pub let wnnc_net_3_in1 : UInt
+
+pub let wnnc_net_9_p : UInt
+
+pub let wnnc_net_9_tiles : UInt
+
+pub let wnnc_net_appletalk : UInt
+
+pub let wnnc_net_as400 : UInt
+
+pub let wnnc_net_auristor_fs : UInt
+
+pub let wnnc_net_avid : UInt
+
+pub let wnnc_net_avid1 : UInt
+
+pub let wnnc_net_bmc : UInt
+
+pub let wnnc_net_bwnfs : UInt
+
+pub let wnnc_net_clearcase : UInt
+
+pub let wnnc_net_cogent : UInt
+
+pub let wnnc_net_csc : UInt
+
+pub let wnnc_net_dav : UInt
+
+pub let wnnc_net_dce : UInt
+
+pub let wnnc_net_decorb : UInt
+
+pub let wnnc_net_dfs : UInt
+
+pub let wnnc_net_distinct : UInt
+
+pub let wnnc_net_docushare : UInt
+
+pub let wnnc_net_docuspace : UInt
+
+pub let wnnc_net_driveonweb : UInt
+
+pub let wnnc_net_exifs : UInt
+
+pub let wnnc_net_extendnet : UInt
+
+pub let wnnc_net_farallon : UInt
+
+pub let wnnc_net_fj_redir : UInt
+
+pub let wnnc_net_foxbat : UInt
+
+pub let wnnc_net_frontier : UInt
+
+pub let wnnc_net_ftp_nfs : UInt
+
+pub let wnnc_net_google : UInt
+
+pub let wnnc_net_hob_nfs : UInt
+
+pub let wnnc_net_ibmal : UInt
+
+pub let wnnc_net_intergraph : UInt
+
+pub let wnnc_net_knoware : UInt
+
+pub let wnnc_net_kwnp : UInt
+
+pub let wnnc_net_lanman : UInt
+
+pub let wnnc_net_lanstep : UInt
+
+pub let wnnc_net_lantastic : UInt
+
+pub let wnnc_net_lifenet : UInt
+
+pub let wnnc_net_lock : UInt
+
+pub let wnnc_net_locus : UInt
+
+pub let wnnc_net_mangosoft : UInt
+
+pub let wnnc_net_masfax : UInt
+
+pub let wnnc_net_mfiles : UInt
+
+pub let wnnc_net_ms_nfs : UInt
+
+pub let wnnc_net_msnet : UInt
+
+pub let wnnc_net_ndfs : UInt
+
+pub let wnnc_net_netware : UInt
+
+pub let wnnc_net_object_dire : UInt
+
+pub let wnnc_net_openafs : UInt
+
+pub let wnnc_net_pathworks : UInt
+
+pub let wnnc_net_powerlan : UInt
+
+pub let wnnc_net_protstor : UInt
+
+pub let wnnc_net_quincy : UInt
+
+pub let wnnc_net_rdr2_sample : UInt
+
+pub let wnnc_net_riverfront1 : UInt
+
+pub let wnnc_net_riverfront2 : UInt
+
+pub let wnnc_net_rsfx : UInt
+
+pub let wnnc_net_secureagent : UInt
+
+pub let wnnc_net_sernet : UInt
+
+pub let wnnc_net_shiva : UInt
+
+pub let wnnc_net_smb : UInt
+
+pub let wnnc_net_srt : UInt
+
+pub let wnnc_net_stac : UInt
+
+pub let wnnc_net_sun_pc_nfs : UInt
+
+pub let wnnc_net_symfonet : UInt
+
+pub let wnnc_net_termsrv : UInt
+
+pub let wnnc_net_twins : UInt
+
+pub let wnnc_net_vines : UInt
+
+pub let wnnc_net_vmware : UInt
+
+pub let wnnc_net_yahoo : UInt
+
+pub let wnnc_net_zenworks : UInt
+
+// Errors
+
+// Types and methods
+
+// Type aliases
+pub using @6272410ff14c63e7 {type FILTERAGGREGATEBASICINFORMATION_1b6074230e24 as FILTERAGGREGATEBASICINFORMATION}
+
+pub using @6272410ff14c63e7 {type FILTERAGGREGATEBASICINFORMATIONTypeEUnion_6a3626c01453 as FILTERAGGREGATEBASICINFORMATIONTypeEUnion}
+
+pub using @6272410ff14c63e7 {type FILTERAGGREGATEBASICINFORMATIONTypeEUnionLegacyFilterEStruct_643e3e274b0f as FILTERAGGREGATEBASICINFORMATIONTypeEUnionLegacyFilterEStruct}
+
+pub using @6272410ff14c63e7 {type FILTERAGGREGATEBASICINFORMATIONTypeEUnionMiniFilterEStruct_2797ce826198 as FILTERAGGREGATEBASICINFORMATIONTypeEUnionMiniFilterEStruct}
+
+pub using @6272410ff14c63e7 {type FILTERAGGREGATESTANDARDINFORMATION_a36a40b5fe14 as FILTERAGGREGATESTANDARDINFORMATION}
+
+pub using @6272410ff14c63e7 {type FILTERAGGREGATESTANDARDINFORMATIONTypeEUnion_d0bb1e82fd8e as FILTERAGGREGATESTANDARDINFORMATIONTypeEUnion}
+
+pub using @6272410ff14c63e7 {type FILTERAGGREGATESTANDARDINFORMATIONTypeEUnionLegacyFilterEStruct_8ca8c30c9551 as FILTERAGGREGATESTANDARDINFORMATIONTypeEUnionLegacyFilterEStruct}
+
+pub using @6272410ff14c63e7 {type FILTERAGGREGATESTANDARDINFORMATIONTypeEUnionMiniFilterEStruct_665ac0b27d97 as FILTERAGGREGATESTANDARDINFORMATIONTypeEUnionMiniFilterEStruct}
+
+pub using @6272410ff14c63e7 {type FILTERFULLINFORMATION_b5af15f7ca3a as FILTERFULLINFORMATION}
+
+pub using @6272410ff14c63e7 {type FILTERINFORMATIONCLASS_fe68871ccad3 as FILTERINFORMATIONCLASS}
+
+pub using @6272410ff14c63e7 {type FILTERMESSAGEHEADER_4701b779fdb1 as FILTERMESSAGEHEADER}
+
+pub using @6272410ff14c63e7 {type FILTERREPLYHEADER_08bb273746a8 as FILTERREPLYHEADER}
+
+pub using @6272410ff14c63e7 {type FILTERVOLUMEBASICINFORMATION_bdd607532108 as FILTERVOLUMEBASICINFORMATION}
+
+pub using @6272410ff14c63e7 {type FILTERVOLUMEINFORMATIONCLASS_2a7b9819e8b0 as FILTERVOLUMEINFORMATIONCLASS}
+
+pub using @6272410ff14c63e7 {type FILTERVOLUMESTANDARDINFORMATION_9d6ce28e758d as FILTERVOLUMESTANDARDINFORMATION}
+
+pub using @6272410ff14c63e7 {type FLTFILESYSTEMTYPE_43bcacec0f86 as FLTFILESYSTEMTYPE}
+
+pub using @6272410ff14c63e7 {type HFILTER_51d9c18b3d20 as HFILTER}
+
+pub using @6272410ff14c63e7 {type HFILTERINSTANCE_010803bfe494 as HFILTERINSTANCE}
+
+pub using @6272410ff14c63e7 {type INSTANCEAGGREGATESTANDARDINFORMATION_c02f916e5ce9 as INSTANCEAGGREGATESTANDARDINFORMATION}
+
+pub using @6272410ff14c63e7 {type INSTANCEAGGREGATESTANDARDINFORMATIONTypeEUnion_97ce6008571a as INSTANCEAGGREGATESTANDARDINFORMATIONTypeEUnion}
+
+pub using @6272410ff14c63e7 {type INSTANCEAGGREGATESTANDARDINFORMATIONTypeEUnionLegacyFilterEStruct_e9f47646feaa as INSTANCEAGGREGATESTANDARDINFORMATIONTypeEUnionLegacyFilterEStruct}
+
+pub using @6272410ff14c63e7 {type INSTANCEAGGREGATESTANDARDINFORMATIONTypeEUnionMiniFilterEStruct_7a03a231933e as INSTANCEAGGREGATESTANDARDINFORMATIONTypeEUnionMiniFilterEStruct}
+
+pub using @6272410ff14c63e7 {type INSTANCEBASICINFORMATION_b84e3f48840e as INSTANCEBASICINFORMATION}
+
+pub using @6272410ff14c63e7 {type INSTANCEFULLINFORMATION_47bc4d835242 as INSTANCEFULLINFORMATION}
+
+pub using @6272410ff14c63e7 {type INSTANCEINFORMATIONCLASS_ee5798a21809 as INSTANCEINFORMATIONCLASS}
+
+pub using @6272410ff14c63e7 {type INSTANCEPARTIALINFORMATION_007f3436d724 as INSTANCEPARTIALINFORMATION}
+
+// Traits

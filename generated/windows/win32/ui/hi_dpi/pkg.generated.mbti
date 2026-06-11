@@ -1,0 +1,158 @@
+// Generated using `moon info`, DON'T EDIT IT
+package "moonbit-community/win32api/windows/win32/ui/hi_dpi"
+
+import {
+  "moonbit-community/win32api/runtime/core",
+  "moonbit-community/win32api/runtime/strings",
+  "moonbit-community/win32api/scc/a96faf5bf034fb54",
+  "moonbit-community/win32api/scc/c45fe7f64005ddd9",
+  "moonbit-community/win32api/scc/fb66f520d7e12332",
+}
+
+// Values
+pub fn adjust_window_rect_ex_for_dpi(@fb66f520d7e12332.RECT_dc5b788d9702, @a96faf5bf034fb54.WINDOWSTYLE_b4089741576d, Int, @a96faf5bf034fb54.WINDOWEXSTYLE_99f3964afaf1, UInt) -> Bool raise @core.WindowsError
+
+pub fn adjust_window_rect_ex_for_dpi_raw(@core.RawAddress, UInt, Int, UInt, UInt) -> @core.RawWin32Call[Int]
+
+pub fn are_dpi_awareness_contexts_equal(@core.RawAddress, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn are_dpi_awareness_contexts_equal_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub let dpi_awareness_context_per_monitor_aware : Int
+
+pub let dpi_awareness_context_per_monitor_aware_v2 : Int
+
+pub let dpi_awareness_context_system_aware : Int
+
+pub let dpi_awareness_context_unaware : Int
+
+pub let dpi_awareness_context_unaware_gdiscaled : Int
+
+pub fn enable_non_client_dpi_scaling(@core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn enable_non_client_dpi_scaling_raw(@core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn get_awareness_from_dpi_awareness_context(@core.RawAddress) -> @c45fe7f64005ddd9.DPIAWARENESS_8e16a61cbf83 raise @core.WindowsError
+
+pub fn get_awareness_from_dpi_awareness_context_raw(@core.RawAddress) -> Int
+
+pub fn get_dialog_control_dpi_change_behavior(@core.RawAddress) -> @c45fe7f64005ddd9.DIALOGCONTROLDPICHANGEBEHAVIORS_24a9fb4d1716 raise @core.WindowsError
+
+pub fn get_dialog_control_dpi_change_behavior_raw(@core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn get_dialog_dpi_change_behavior(@core.RawAddress) -> @c45fe7f64005ddd9.DIALOGDPICHANGEBEHAVIORS_fa79b62daf40 raise @core.WindowsError
+
+pub fn get_dialog_dpi_change_behavior_raw(@core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn get_dpi_awareness_context_for_process(@core.RawAddress) -> @core.RawAddress raise @core.WindowsError
+
+pub fn get_dpi_awareness_context_for_process_raw(@core.RawAddress) -> @core.RawAddress
+
+pub fn get_dpi_for_monitor(@core.RawAddress, @c45fe7f64005ddd9.MONITORDPITYPE_ef7b1f1ef004, @core.RawAddress, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn get_dpi_for_monitor_raw(@core.RawAddress, Int, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn get_dpi_for_system() -> UInt raise @core.WindowsError
+
+pub fn get_dpi_for_system_raw() -> UInt
+
+pub fn get_dpi_for_window(@core.RawAddress) -> UInt raise @core.WindowsError
+
+pub fn get_dpi_for_window_raw(@core.RawAddress) -> UInt
+
+pub fn get_dpi_from_dpi_awareness_context(@core.RawAddress) -> UInt raise @core.WindowsError
+
+pub fn get_dpi_from_dpi_awareness_context_raw(@core.RawAddress) -> UInt
+
+pub fn get_process_dpi_awareness(@core.RawAddress, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn get_process_dpi_awareness_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn get_system_dpi_for_process(@core.RawAddress) -> UInt raise @core.WindowsError
+
+pub fn get_system_dpi_for_process_raw(@core.RawAddress) -> UInt
+
+pub fn get_system_metrics_for_dpi(@a96faf5bf034fb54.SYSTEMMETRICSINDEX_8ae611014972, UInt) -> Int raise @core.WindowsError
+
+pub fn get_system_metrics_for_dpi_raw(Int, UInt) -> @core.RawWin32Call[Int]
+
+pub fn get_thread_dpi_awareness_context() -> @core.RawAddress raise @core.WindowsError
+
+pub fn get_thread_dpi_awareness_context_raw() -> @core.RawAddress
+
+pub fn get_thread_dpi_hosting_behavior() -> @c45fe7f64005ddd9.DPIHOSTINGBEHAVIOR_f8561987519a raise @core.WindowsError
+
+pub fn get_thread_dpi_hosting_behavior_raw() -> Int
+
+pub fn get_window_dpi_awareness_context(@core.RawAddress) -> @core.RawAddress raise @core.WindowsError
+
+pub fn get_window_dpi_awareness_context_raw(@core.RawAddress) -> @core.RawAddress
+
+pub fn get_window_dpi_hosting_behavior(@core.RawAddress) -> @c45fe7f64005ddd9.DPIHOSTINGBEHAVIOR_f8561987519a raise @core.WindowsError
+
+pub fn get_window_dpi_hosting_behavior_raw(@core.RawAddress) -> Int
+
+pub fn is_valid_dpi_awareness_context(@core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn is_valid_dpi_awareness_context_raw(@core.RawAddress) -> Int
+
+pub fn logical_to_physical_point_for_per_monitor_dpi(@core.RawAddress, @fb66f520d7e12332.POINT_48d934d62b68) -> Bool raise @core.WindowsError
+
+pub fn logical_to_physical_point_for_per_monitor_dpi_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn open_theme_data_for_dpi(@core.RawAddress, @strings.PWStr, UInt) -> Int64 raise @core.WindowsError
+
+pub fn open_theme_data_for_dpi_raw(@core.RawAddress, @core.RawAddress, UInt) -> Int64
+
+pub fn physical_to_logical_point_for_per_monitor_dpi(@core.RawAddress, @fb66f520d7e12332.POINT_48d934d62b68) -> Bool raise @core.WindowsError
+
+pub fn physical_to_logical_point_for_per_monitor_dpi_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn set_dialog_control_dpi_change_behavior(@core.RawAddress, @c45fe7f64005ddd9.DIALOGCONTROLDPICHANGEBEHAVIORS_24a9fb4d1716, @c45fe7f64005ddd9.DIALOGCONTROLDPICHANGEBEHAVIORS_24a9fb4d1716) -> Bool raise @core.WindowsError
+
+pub fn set_dialog_control_dpi_change_behavior_raw(@core.RawAddress, Int, Int) -> @core.RawWin32Call[Int]
+
+pub fn set_dialog_dpi_change_behavior(@core.RawAddress, @c45fe7f64005ddd9.DIALOGDPICHANGEBEHAVIORS_fa79b62daf40, @c45fe7f64005ddd9.DIALOGDPICHANGEBEHAVIORS_fa79b62daf40) -> Bool raise @core.WindowsError
+
+pub fn set_dialog_dpi_change_behavior_raw(@core.RawAddress, Int, Int) -> @core.RawWin32Call[Int]
+
+pub fn set_process_dpi_awareness(@c45fe7f64005ddd9.PROCESSDPIAWARENESS_537fef535b44) -> Int raise @core.WindowsError
+
+pub fn set_process_dpi_awareness_context(@core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn set_process_dpi_awareness_context_raw(@core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn set_process_dpi_awareness_raw(Int) -> Int
+
+pub fn set_thread_dpi_awareness_context(@core.RawAddress) -> @core.RawAddress raise @core.WindowsError
+
+pub fn set_thread_dpi_awareness_context_raw(@core.RawAddress) -> @core.RawAddress
+
+pub fn set_thread_dpi_hosting_behavior(@c45fe7f64005ddd9.DPIHOSTINGBEHAVIOR_f8561987519a) -> @c45fe7f64005ddd9.DPIHOSTINGBEHAVIOR_f8561987519a raise @core.WindowsError
+
+pub fn set_thread_dpi_hosting_behavior_raw(Int) -> Int
+
+pub fn system_parameters_info_for_dpi(UInt, UInt, @core.RawAddress, UInt, UInt) -> Bool raise @core.WindowsError
+
+pub fn system_parameters_info_for_dpi_raw(UInt, UInt, @core.RawAddress, UInt, UInt) -> @core.RawWin32Call[Int]
+
+// Errors
+
+// Types and methods
+
+// Type aliases
+pub using @c45fe7f64005ddd9 {type DIALOGCONTROLDPICHANGEBEHAVIORS_24a9fb4d1716 as DIALOGCONTROLDPICHANGEBEHAVIORS}
+
+pub using @c45fe7f64005ddd9 {type DIALOGDPICHANGEBEHAVIORS_fa79b62daf40 as DIALOGDPICHANGEBEHAVIORS}
+
+pub using @c45fe7f64005ddd9 {type DPIAWARENESS_8e16a61cbf83 as DPIAWARENESS}
+
+pub using @c45fe7f64005ddd9 {type DPIAWARENESSCONTEXT_080828ec01f3 as DPIAWARENESSCONTEXT}
+
+pub using @c45fe7f64005ddd9 {type DPIHOSTINGBEHAVIOR_f8561987519a as DPIHOSTINGBEHAVIOR}
+
+pub using @c45fe7f64005ddd9 {type MONITORDPITYPE_ef7b1f1ef004 as MONITORDPITYPE}
+
+pub using @c45fe7f64005ddd9 {type PROCESSDPIAWARENESS_537fef535b44 as PROCESSDPIAWARENESS}
+
+// Traits

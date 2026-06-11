@@ -1,0 +1,2581 @@
+///|
+pub fn IOPRIORITYHINT_95951fadf6de::io_priority_critical() -> IOPRIORITYHINT_95951fadf6de {
+  IOPRIORITYHINT_95951fadf6de::from_int(4)
+}
+
+///|
+pub fn IOPRIORITYHINT_95951fadf6de::io_priority_high() -> IOPRIORITYHINT_95951fadf6de {
+  IOPRIORITYHINT_95951fadf6de::from_int(3)
+}
+
+///|
+pub fn IOPRIORITYHINT_95951fadf6de::io_priority_low() -> IOPRIORITYHINT_95951fadf6de {
+  IOPRIORITYHINT_95951fadf6de::from_int(1)
+}
+
+///|
+pub fn IOPRIORITYHINT_95951fadf6de::io_priority_normal() -> IOPRIORITYHINT_95951fadf6de {
+  IOPRIORITYHINT_95951fadf6de::from_int(2)
+}
+
+///|
+pub fn IOPRIORITYHINT_95951fadf6de::io_priority_very_low() -> IOPRIORITYHINT_95951fadf6de {
+  IOPRIORITYHINT_95951fadf6de::from_int(0)
+}
+
+///|
+pub fn IOPRIORITYHINT_95951fadf6de::max_io_priority_types() -> IOPRIORITYHINT_95951fadf6de {
+  IOPRIORITYHINT_95951fadf6de::from_int(5)
+}
+
+///|
+pub fn KSPINLOCKQUEUENUMBER_1c002dd072b4::lock_queue_afd_work_queue_lock() -> KSPINLOCKQUEUENUMBER_1c002dd072b4 {
+  KSPINLOCKQUEUENUMBER_1c002dd072b4::from_int(13)
+}
+
+///|
+pub fn KSPINLOCKQUEUENUMBER_1c002dd072b4::lock_queue_bcb_lock() -> KSPINLOCKQUEUENUMBER_1c002dd072b4 {
+  KSPINLOCKQUEUENUMBER_1c002dd072b4::from_int(14)
+}
+
+///|
+pub fn KSPINLOCKQUEUENUMBER_1c002dd072b4::lock_queue_io_cancel_lock() -> KSPINLOCKQUEUENUMBER_1c002dd072b4 {
+  KSPINLOCKQUEUENUMBER_1c002dd072b4::from_int(7)
+}
+
+///|
+pub fn KSPINLOCKQUEUENUMBER_1c002dd072b4::lock_queue_io_completion_lock() -> KSPINLOCKQUEUENUMBER_1c002dd072b4 {
+  KSPINLOCKQUEUENUMBER_1c002dd072b4::from_int(11)
+}
+
+///|
+pub fn KSPINLOCKQUEUENUMBER_1c002dd072b4::lock_queue_io_database_lock() -> KSPINLOCKQUEUENUMBER_1c002dd072b4 {
+  KSPINLOCKQUEUENUMBER_1c002dd072b4::from_int(10)
+}
+
+///|
+pub fn KSPINLOCKQUEUENUMBER_1c002dd072b4::lock_queue_io_vpb_lock() -> KSPINLOCKQUEUENUMBER_1c002dd072b4 {
+  KSPINLOCKQUEUENUMBER_1c002dd072b4::from_int(9)
+}
+
+///|
+pub fn KSPINLOCKQUEUENUMBER_1c002dd072b4::lock_queue_master_lock() -> KSPINLOCKQUEUENUMBER_1c002dd072b4 {
+  KSPINLOCKQUEUENUMBER_1c002dd072b4::from_int(5)
+}
+
+///|
+pub fn KSPINLOCKQUEUENUMBER_1c002dd072b4::lock_queue_maximum_lock() -> KSPINLOCKQUEUENUMBER_1c002dd072b4 {
+  KSPINLOCKQUEUENUMBER_1c002dd072b4::from_int(17)
+}
+
+///|
+pub fn KSPINLOCKQUEUENUMBER_1c002dd072b4::lock_queue_non_paged_pool_lock() -> KSPINLOCKQUEUENUMBER_1c002dd072b4 {
+  KSPINLOCKQUEUENUMBER_1c002dd072b4::from_int(6)
+}
+
+///|
+pub fn KSPINLOCKQUEUENUMBER_1c002dd072b4::lock_queue_ntfs_struct_lock() -> KSPINLOCKQUEUENUMBER_1c002dd072b4 {
+  KSPINLOCKQUEUENUMBER_1c002dd072b4::from_int(12)
+}
+
+///|
+pub fn KSPINLOCKQUEUENUMBER_1c002dd072b4::lock_queue_unused_spare0() -> KSPINLOCKQUEUENUMBER_1c002dd072b4 {
+  KSPINLOCKQUEUENUMBER_1c002dd072b4::from_int(0)
+}
+
+///|
+pub fn KSPINLOCKQUEUENUMBER_1c002dd072b4::lock_queue_unused_spare1() -> KSPINLOCKQUEUENUMBER_1c002dd072b4 {
+  KSPINLOCKQUEUENUMBER_1c002dd072b4::from_int(1)
+}
+
+///|
+pub fn KSPINLOCKQUEUENUMBER_1c002dd072b4::lock_queue_unused_spare15() -> KSPINLOCKQUEUENUMBER_1c002dd072b4 {
+  KSPINLOCKQUEUENUMBER_1c002dd072b4::from_int(15)
+}
+
+///|
+pub fn KSPINLOCKQUEUENUMBER_1c002dd072b4::lock_queue_unused_spare16() -> KSPINLOCKQUEUENUMBER_1c002dd072b4 {
+  KSPINLOCKQUEUENUMBER_1c002dd072b4::from_int(16)
+}
+
+///|
+pub fn KSPINLOCKQUEUENUMBER_1c002dd072b4::lock_queue_unused_spare2() -> KSPINLOCKQUEUENUMBER_1c002dd072b4 {
+  KSPINLOCKQUEUENUMBER_1c002dd072b4::from_int(2)
+}
+
+///|
+pub fn KSPINLOCKQUEUENUMBER_1c002dd072b4::lock_queue_unused_spare3() -> KSPINLOCKQUEUENUMBER_1c002dd072b4 {
+  KSPINLOCKQUEUENUMBER_1c002dd072b4::from_int(3)
+}
+
+///|
+pub fn KSPINLOCKQUEUENUMBER_1c002dd072b4::lock_queue_unused_spare8() -> KSPINLOCKQUEUENUMBER_1c002dd072b4 {
+  KSPINLOCKQUEUENUMBER_1c002dd072b4::from_int(8)
+}
+
+///|
+pub fn KSPINLOCKQUEUENUMBER_1c002dd072b4::lock_queue_vacb_lock() -> KSPINLOCKQUEUENUMBER_1c002dd072b4 {
+  KSPINLOCKQUEUENUMBER_1c002dd072b4::from_int(4)
+}
+
+///|
+pub fn OBJECTINFORMATIONCLASS_e3104a2145b2::object_basic_information() -> OBJECTINFORMATIONCLASS_e3104a2145b2 {
+  OBJECTINFORMATIONCLASS_e3104a2145b2::from_int(0)
+}
+
+///|
+pub fn OBJECTINFORMATIONCLASS_e3104a2145b2::object_type_information() -> OBJECTINFORMATIONCLASS_e3104a2145b2 {
+  OBJECTINFORMATIONCLASS_e3104a2145b2::from_int(2)
+}
+
+///|
+pub fn POOLTYPE_44586418b197::dont_use_this_type() -> POOLTYPE_44586418b197 {
+  POOLTYPE_44586418b197::from_int(3)
+}
+
+///|
+pub fn POOLTYPE_44586418b197::dont_use_this_type_session() -> POOLTYPE_44586418b197 {
+  POOLTYPE_44586418b197::from_int(35)
+}
+
+///|
+pub fn POOLTYPE_44586418b197::max_pool_type() -> POOLTYPE_44586418b197 {
+  POOLTYPE_44586418b197::from_int(7)
+}
+
+///|
+pub fn POOLTYPE_44586418b197::non_paged_pool() -> POOLTYPE_44586418b197 {
+  POOLTYPE_44586418b197::from_int(0)
+}
+
+///|
+pub fn POOLTYPE_44586418b197::non_paged_pool_base() -> POOLTYPE_44586418b197 {
+  POOLTYPE_44586418b197::from_int(0)
+}
+
+///|
+pub fn POOLTYPE_44586418b197::non_paged_pool_base_cache_aligned() -> POOLTYPE_44586418b197 {
+  POOLTYPE_44586418b197::from_int(4)
+}
+
+///|
+pub fn POOLTYPE_44586418b197::non_paged_pool_base_cache_aligned_must_s() -> POOLTYPE_44586418b197 {
+  POOLTYPE_44586418b197::from_int(6)
+}
+
+///|
+pub fn POOLTYPE_44586418b197::non_paged_pool_base_must_succeed() -> POOLTYPE_44586418b197 {
+  POOLTYPE_44586418b197::from_int(2)
+}
+
+///|
+pub fn POOLTYPE_44586418b197::non_paged_pool_cache_aligned() -> POOLTYPE_44586418b197 {
+  POOLTYPE_44586418b197::from_int(4)
+}
+
+///|
+pub fn POOLTYPE_44586418b197::non_paged_pool_cache_aligned_must_s() -> POOLTYPE_44586418b197 {
+  POOLTYPE_44586418b197::from_int(6)
+}
+
+///|
+pub fn POOLTYPE_44586418b197::non_paged_pool_cache_aligned_must_s_session() -> POOLTYPE_44586418b197 {
+  POOLTYPE_44586418b197::from_int(38)
+}
+
+///|
+pub fn POOLTYPE_44586418b197::non_paged_pool_cache_aligned_session() -> POOLTYPE_44586418b197 {
+  POOLTYPE_44586418b197::from_int(36)
+}
+
+///|
+pub fn POOLTYPE_44586418b197::non_paged_pool_execute() -> POOLTYPE_44586418b197 {
+  POOLTYPE_44586418b197::from_int(0)
+}
+
+///|
+pub fn POOLTYPE_44586418b197::non_paged_pool_must_succeed() -> POOLTYPE_44586418b197 {
+  POOLTYPE_44586418b197::from_int(2)
+}
+
+///|
+pub fn POOLTYPE_44586418b197::non_paged_pool_must_succeed_session() -> POOLTYPE_44586418b197 {
+  POOLTYPE_44586418b197::from_int(34)
+}
+
+///|
+pub fn POOLTYPE_44586418b197::non_paged_pool_nx() -> POOLTYPE_44586418b197 {
+  POOLTYPE_44586418b197::from_int(512)
+}
+
+///|
+pub fn POOLTYPE_44586418b197::non_paged_pool_nx_cache_aligned() -> POOLTYPE_44586418b197 {
+  POOLTYPE_44586418b197::from_int(516)
+}
+
+///|
+pub fn POOLTYPE_44586418b197::non_paged_pool_session() -> POOLTYPE_44586418b197 {
+  POOLTYPE_44586418b197::from_int(32)
+}
+
+///|
+pub fn POOLTYPE_44586418b197::non_paged_pool_session_nx() -> POOLTYPE_44586418b197 {
+  POOLTYPE_44586418b197::from_int(544)
+}
+
+///|
+pub fn POOLTYPE_44586418b197::paged_pool() -> POOLTYPE_44586418b197 {
+  POOLTYPE_44586418b197::from_int(1)
+}
+
+///|
+pub fn POOLTYPE_44586418b197::paged_pool_cache_aligned() -> POOLTYPE_44586418b197 {
+  POOLTYPE_44586418b197::from_int(5)
+}
+
+///|
+pub fn POOLTYPE_44586418b197::paged_pool_cache_aligned_session() -> POOLTYPE_44586418b197 {
+  POOLTYPE_44586418b197::from_int(37)
+}
+
+///|
+pub fn POOLTYPE_44586418b197::paged_pool_session() -> POOLTYPE_44586418b197 {
+  POOLTYPE_44586418b197::from_int(33)
+}
+
+///|
+pub fn CSVDOWNLEVELFILETYPE_c022d93219f2::csv_csv_fs_internal_file_object() -> CSVDOWNLEVELFILETYPE_c022d93219f2 {
+  CSVDOWNLEVELFILETYPE_c022d93219f2::from_int(1)
+}
+
+///|
+pub fn CSVDOWNLEVELFILETYPE_c022d93219f2::csv_down_level_file_object() -> CSVDOWNLEVELFILETYPE_c022d93219f2 {
+  CSVDOWNLEVELFILETYPE_c022d93219f2::from_int(0)
+}
+
+///|
+pub fn FASTIOPOSSIBLE_651eb723dba0::fast_io_is_not_possible() -> FASTIOPOSSIBLE_651eb723dba0 {
+  FASTIOPOSSIBLE_651eb723dba0::from_int(0)
+}
+
+///|
+pub fn FASTIOPOSSIBLE_651eb723dba0::fast_io_is_possible() -> FASTIOPOSSIBLE_651eb723dba0 {
+  FASTIOPOSSIBLE_651eb723dba0::from_int(1)
+}
+
+///|
+pub fn FASTIOPOSSIBLE_651eb723dba0::fast_io_is_questionable() -> FASTIOPOSSIBLE_651eb723dba0 {
+  FASTIOPOSSIBLE_651eb723dba0::from_int(2)
+}
+
+///|
+pub fn FILEDISPOSITIONINFORMATIONEXFLAGS_cb566d6ca855::file_disposition_delete() -> FILEDISPOSITIONINFORMATIONEXFLAGS_cb566d6ca855 {
+  FILEDISPOSITIONINFORMATIONEXFLAGS_cb566d6ca855::from_int(
+    1U.reinterpret_as_int(),
+  )
+}
+
+///|
+pub fn FILEDISPOSITIONINFORMATIONEXFLAGS_cb566d6ca855::file_disposition_do_not_delete() -> FILEDISPOSITIONINFORMATIONEXFLAGS_cb566d6ca855 {
+  FILEDISPOSITIONINFORMATIONEXFLAGS_cb566d6ca855::from_int(
+    0U.reinterpret_as_int(),
+  )
+}
+
+///|
+pub fn FILEDISPOSITIONINFORMATIONEXFLAGS_cb566d6ca855::file_disposition_force_image_section_check() -> FILEDISPOSITIONINFORMATIONEXFLAGS_cb566d6ca855 {
+  FILEDISPOSITIONINFORMATIONEXFLAGS_cb566d6ca855::from_int(
+    4U.reinterpret_as_int(),
+  )
+}
+
+///|
+pub fn FILEDISPOSITIONINFORMATIONEXFLAGS_cb566d6ca855::file_disposition_ignore_readonly_attribute() -> FILEDISPOSITIONINFORMATIONEXFLAGS_cb566d6ca855 {
+  FILEDISPOSITIONINFORMATIONEXFLAGS_cb566d6ca855::from_int(
+    16U.reinterpret_as_int(),
+  )
+}
+
+///|
+pub fn FILEDISPOSITIONINFORMATIONEXFLAGS_cb566d6ca855::file_disposition_on_close() -> FILEDISPOSITIONINFORMATIONEXFLAGS_cb566d6ca855 {
+  FILEDISPOSITIONINFORMATIONEXFLAGS_cb566d6ca855::from_int(
+    8U.reinterpret_as_int(),
+  )
+}
+
+///|
+pub fn FILEDISPOSITIONINFORMATIONEXFLAGS_cb566d6ca855::file_disposition_posix_semantics() -> FILEDISPOSITIONINFORMATIONEXFLAGS_cb566d6ca855 {
+  FILEDISPOSITIONINFORMATIONEXFLAGS_cb566d6ca855::from_int(
+    2U.reinterpret_as_int(),
+  )
+}
+
+///|
+pub fn FILEINFORMATIONCLASS_a900d6a7f800::file_access_information() -> FILEINFORMATIONCLASS_a900d6a7f800 {
+  FILEINFORMATIONCLASS_a900d6a7f800::from_int(8)
+}
+
+///|
+pub fn FILEINFORMATIONCLASS_a900d6a7f800::file_alignment_information() -> FILEINFORMATIONCLASS_a900d6a7f800 {
+  FILEINFORMATIONCLASS_a900d6a7f800::from_int(17)
+}
+
+///|
+pub fn FILEINFORMATIONCLASS_a900d6a7f800::file_all_information() -> FILEINFORMATIONCLASS_a900d6a7f800 {
+  FILEINFORMATIONCLASS_a900d6a7f800::from_int(18)
+}
+
+///|
+pub fn FILEINFORMATIONCLASS_a900d6a7f800::file_allocation_information() -> FILEINFORMATIONCLASS_a900d6a7f800 {
+  FILEINFORMATIONCLASS_a900d6a7f800::from_int(19)
+}
+
+///|
+pub fn FILEINFORMATIONCLASS_a900d6a7f800::file_alternate_name_information() -> FILEINFORMATIONCLASS_a900d6a7f800 {
+  FILEINFORMATIONCLASS_a900d6a7f800::from_int(21)
+}
+
+///|
+pub fn FILEINFORMATIONCLASS_a900d6a7f800::file_attribute_tag_information() -> FILEINFORMATIONCLASS_a900d6a7f800 {
+  FILEINFORMATIONCLASS_a900d6a7f800::from_int(35)
+}
+
+///|
+pub fn FILEINFORMATIONCLASS_a900d6a7f800::file_basic_information() -> FILEINFORMATIONCLASS_a900d6a7f800 {
+  FILEINFORMATIONCLASS_a900d6a7f800::from_int(4)
+}
+
+///|
+pub fn FILEINFORMATIONCLASS_a900d6a7f800::file_both_directory_information() -> FILEINFORMATIONCLASS_a900d6a7f800 {
+  FILEINFORMATIONCLASS_a900d6a7f800::from_int(3)
+}
+
+///|
+pub fn FILEINFORMATIONCLASS_a900d6a7f800::file_case_sensitive_information() -> FILEINFORMATIONCLASS_a900d6a7f800 {
+  FILEINFORMATIONCLASS_a900d6a7f800::from_int(71)
+}
+
+///|
+pub fn FILEINFORMATIONCLASS_a900d6a7f800::file_case_sensitive_information_force_access_check() -> FILEINFORMATIONCLASS_a900d6a7f800 {
+  FILEINFORMATIONCLASS_a900d6a7f800::from_int(75)
+}
+
+///|
+pub fn FILEINFORMATIONCLASS_a900d6a7f800::file_completion_information() -> FILEINFORMATIONCLASS_a900d6a7f800 {
+  FILEINFORMATIONCLASS_a900d6a7f800::from_int(30)
+}
+
+///|
+pub fn FILEINFORMATIONCLASS_a900d6a7f800::file_compression_information() -> FILEINFORMATIONCLASS_a900d6a7f800 {
+  FILEINFORMATIONCLASS_a900d6a7f800::from_int(28)
+}
+
+///|
+pub fn FILEINFORMATIONCLASS_a900d6a7f800::file_desired_storage_class_information() -> FILEINFORMATIONCLASS_a900d6a7f800 {
+  FILEINFORMATIONCLASS_a900d6a7f800::from_int(67)
+}
+
+///|
+pub fn FILEINFORMATIONCLASS_a900d6a7f800::file_directory_information() -> FILEINFORMATIONCLASS_a900d6a7f800 {
+  FILEINFORMATIONCLASS_a900d6a7f800::from_int(1)
+}
+
+///|
+pub fn FILEINFORMATIONCLASS_a900d6a7f800::file_disposition_information() -> FILEINFORMATIONCLASS_a900d6a7f800 {
+  FILEINFORMATIONCLASS_a900d6a7f800::from_int(13)
+}
+
+///|
+pub fn FILEINFORMATIONCLASS_a900d6a7f800::file_disposition_information_ex() -> FILEINFORMATIONCLASS_a900d6a7f800 {
+  FILEINFORMATIONCLASS_a900d6a7f800::from_int(64)
+}
+
+///|
+pub fn FILEINFORMATIONCLASS_a900d6a7f800::file_ea_information() -> FILEINFORMATIONCLASS_a900d6a7f800 {
+  FILEINFORMATIONCLASS_a900d6a7f800::from_int(7)
+}
+
+///|
+pub fn FILEINFORMATIONCLASS_a900d6a7f800::file_end_of_file_information() -> FILEINFORMATIONCLASS_a900d6a7f800 {
+  FILEINFORMATIONCLASS_a900d6a7f800::from_int(20)
+}
+
+///|
+pub fn FILEINFORMATIONCLASS_a900d6a7f800::file_full_directory_information() -> FILEINFORMATIONCLASS_a900d6a7f800 {
+  FILEINFORMATIONCLASS_a900d6a7f800::from_int(2)
+}
+
+///|
+pub fn FILEINFORMATIONCLASS_a900d6a7f800::file_full_ea_information() -> FILEINFORMATIONCLASS_a900d6a7f800 {
+  FILEINFORMATIONCLASS_a900d6a7f800::from_int(15)
+}
+
+///|
+pub fn FILEINFORMATIONCLASS_a900d6a7f800::file_hard_link_full_id_information() -> FILEINFORMATIONCLASS_a900d6a7f800 {
+  FILEINFORMATIONCLASS_a900d6a7f800::from_int(62)
+}
+
+///|
+pub fn FILEINFORMATIONCLASS_a900d6a7f800::file_hard_link_information() -> FILEINFORMATIONCLASS_a900d6a7f800 {
+  FILEINFORMATIONCLASS_a900d6a7f800::from_int(46)
+}
+
+///|
+pub fn FILEINFORMATIONCLASS_a900d6a7f800::file_id_both_directory_information() -> FILEINFORMATIONCLASS_a900d6a7f800 {
+  FILEINFORMATIONCLASS_a900d6a7f800::from_int(37)
+}
+
+///|
+pub fn FILEINFORMATIONCLASS_a900d6a7f800::file_id_extd_both_directory_information() -> FILEINFORMATIONCLASS_a900d6a7f800 {
+  FILEINFORMATIONCLASS_a900d6a7f800::from_int(63)
+}
+
+///|
+pub fn FILEINFORMATIONCLASS_a900d6a7f800::file_id_extd_directory_information() -> FILEINFORMATIONCLASS_a900d6a7f800 {
+  FILEINFORMATIONCLASS_a900d6a7f800::from_int(60)
+}
+
+///|
+pub fn FILEINFORMATIONCLASS_a900d6a7f800::file_id_full_directory_information() -> FILEINFORMATIONCLASS_a900d6a7f800 {
+  FILEINFORMATIONCLASS_a900d6a7f800::from_int(38)
+}
+
+///|
+pub fn FILEINFORMATIONCLASS_a900d6a7f800::file_id_global_tx_directory_information() -> FILEINFORMATIONCLASS_a900d6a7f800 {
+  FILEINFORMATIONCLASS_a900d6a7f800::from_int(50)
+}
+
+///|
+pub fn FILEINFORMATIONCLASS_a900d6a7f800::file_id_information() -> FILEINFORMATIONCLASS_a900d6a7f800 {
+  FILEINFORMATIONCLASS_a900d6a7f800::from_int(59)
+}
+
+///|
+pub fn FILEINFORMATIONCLASS_a900d6a7f800::file_internal_information() -> FILEINFORMATIONCLASS_a900d6a7f800 {
+  FILEINFORMATIONCLASS_a900d6a7f800::from_int(6)
+}
+
+///|
+pub fn FILEINFORMATIONCLASS_a900d6a7f800::file_io_completion_notification_information() -> FILEINFORMATIONCLASS_a900d6a7f800 {
+  FILEINFORMATIONCLASS_a900d6a7f800::from_int(41)
+}
+
+///|
+pub fn FILEINFORMATIONCLASS_a900d6a7f800::file_io_priority_hint_information() -> FILEINFORMATIONCLASS_a900d6a7f800 {
+  FILEINFORMATIONCLASS_a900d6a7f800::from_int(43)
+}
+
+///|
+pub fn FILEINFORMATIONCLASS_a900d6a7f800::file_io_status_block_range_information() -> FILEINFORMATIONCLASS_a900d6a7f800 {
+  FILEINFORMATIONCLASS_a900d6a7f800::from_int(42)
+}
+
+///|
+pub fn FILEINFORMATIONCLASS_a900d6a7f800::file_is_remote_device_information() -> FILEINFORMATIONCLASS_a900d6a7f800 {
+  FILEINFORMATIONCLASS_a900d6a7f800::from_int(51)
+}
+
+///|
+pub fn FILEINFORMATIONCLASS_a900d6a7f800::file_known_folder_information() -> FILEINFORMATIONCLASS_a900d6a7f800 {
+  FILEINFORMATIONCLASS_a900d6a7f800::from_int(76)
+}
+
+///|
+pub fn FILEINFORMATIONCLASS_a900d6a7f800::file_link_information() -> FILEINFORMATIONCLASS_a900d6a7f800 {
+  FILEINFORMATIONCLASS_a900d6a7f800::from_int(11)
+}
+
+///|
+pub fn FILEINFORMATIONCLASS_a900d6a7f800::file_link_information_bypass_access_check() -> FILEINFORMATIONCLASS_a900d6a7f800 {
+  FILEINFORMATIONCLASS_a900d6a7f800::from_int(57)
+}
+
+///|
+pub fn FILEINFORMATIONCLASS_a900d6a7f800::file_link_information_ex() -> FILEINFORMATIONCLASS_a900d6a7f800 {
+  FILEINFORMATIONCLASS_a900d6a7f800::from_int(72)
+}
+
+///|
+pub fn FILEINFORMATIONCLASS_a900d6a7f800::file_link_information_ex_bypass_access_check() -> FILEINFORMATIONCLASS_a900d6a7f800 {
+  FILEINFORMATIONCLASS_a900d6a7f800::from_int(73)
+}
+
+///|
+pub fn FILEINFORMATIONCLASS_a900d6a7f800::file_mailslot_query_information() -> FILEINFORMATIONCLASS_a900d6a7f800 {
+  FILEINFORMATIONCLASS_a900d6a7f800::from_int(26)
+}
+
+///|
+pub fn FILEINFORMATIONCLASS_a900d6a7f800::file_mailslot_set_information() -> FILEINFORMATIONCLASS_a900d6a7f800 {
+  FILEINFORMATIONCLASS_a900d6a7f800::from_int(27)
+}
+
+///|
+pub fn FILEINFORMATIONCLASS_a900d6a7f800::file_maximum_information() -> FILEINFORMATIONCLASS_a900d6a7f800 {
+  FILEINFORMATIONCLASS_a900d6a7f800::from_int(77)
+}
+
+///|
+pub fn FILEINFORMATIONCLASS_a900d6a7f800::file_memory_partition_information() -> FILEINFORMATIONCLASS_a900d6a7f800 {
+  FILEINFORMATIONCLASS_a900d6a7f800::from_int(69)
+}
+
+///|
+pub fn FILEINFORMATIONCLASS_a900d6a7f800::file_mode_information() -> FILEINFORMATIONCLASS_a900d6a7f800 {
+  FILEINFORMATIONCLASS_a900d6a7f800::from_int(16)
+}
+
+///|
+pub fn FILEINFORMATIONCLASS_a900d6a7f800::file_move_cluster_information() -> FILEINFORMATIONCLASS_a900d6a7f800 {
+  FILEINFORMATIONCLASS_a900d6a7f800::from_int(31)
+}
+
+///|
+pub fn FILEINFORMATIONCLASS_a900d6a7f800::file_name_information() -> FILEINFORMATIONCLASS_a900d6a7f800 {
+  FILEINFORMATIONCLASS_a900d6a7f800::from_int(9)
+}
+
+///|
+pub fn FILEINFORMATIONCLASS_a900d6a7f800::file_names_information() -> FILEINFORMATIONCLASS_a900d6a7f800 {
+  FILEINFORMATIONCLASS_a900d6a7f800::from_int(12)
+}
+
+///|
+pub fn FILEINFORMATIONCLASS_a900d6a7f800::file_network_open_information() -> FILEINFORMATIONCLASS_a900d6a7f800 {
+  FILEINFORMATIONCLASS_a900d6a7f800::from_int(34)
+}
+
+///|
+pub fn FILEINFORMATIONCLASS_a900d6a7f800::file_network_physical_name_information() -> FILEINFORMATIONCLASS_a900d6a7f800 {
+  FILEINFORMATIONCLASS_a900d6a7f800::from_int(49)
+}
+
+///|
+pub fn FILEINFORMATIONCLASS_a900d6a7f800::file_normalized_name_information() -> FILEINFORMATIONCLASS_a900d6a7f800 {
+  FILEINFORMATIONCLASS_a900d6a7f800::from_int(48)
+}
+
+///|
+pub fn FILEINFORMATIONCLASS_a900d6a7f800::file_numa_node_information() -> FILEINFORMATIONCLASS_a900d6a7f800 {
+  FILEINFORMATIONCLASS_a900d6a7f800::from_int(53)
+}
+
+///|
+pub fn FILEINFORMATIONCLASS_a900d6a7f800::file_object_id_information() -> FILEINFORMATIONCLASS_a900d6a7f800 {
+  FILEINFORMATIONCLASS_a900d6a7f800::from_int(29)
+}
+
+///|
+pub fn FILEINFORMATIONCLASS_a900d6a7f800::file_pipe_information() -> FILEINFORMATIONCLASS_a900d6a7f800 {
+  FILEINFORMATIONCLASS_a900d6a7f800::from_int(23)
+}
+
+///|
+pub fn FILEINFORMATIONCLASS_a900d6a7f800::file_pipe_local_information() -> FILEINFORMATIONCLASS_a900d6a7f800 {
+  FILEINFORMATIONCLASS_a900d6a7f800::from_int(24)
+}
+
+///|
+pub fn FILEINFORMATIONCLASS_a900d6a7f800::file_pipe_remote_information() -> FILEINFORMATIONCLASS_a900d6a7f800 {
+  FILEINFORMATIONCLASS_a900d6a7f800::from_int(25)
+}
+
+///|
+pub fn FILEINFORMATIONCLASS_a900d6a7f800::file_position_information() -> FILEINFORMATIONCLASS_a900d6a7f800 {
+  FILEINFORMATIONCLASS_a900d6a7f800::from_int(14)
+}
+
+///|
+pub fn FILEINFORMATIONCLASS_a900d6a7f800::file_process_ids_using_file_information() -> FILEINFORMATIONCLASS_a900d6a7f800 {
+  FILEINFORMATIONCLASS_a900d6a7f800::from_int(47)
+}
+
+///|
+pub fn FILEINFORMATIONCLASS_a900d6a7f800::file_quota_information() -> FILEINFORMATIONCLASS_a900d6a7f800 {
+  FILEINFORMATIONCLASS_a900d6a7f800::from_int(32)
+}
+
+///|
+pub fn FILEINFORMATIONCLASS_a900d6a7f800::file_remote_protocol_information() -> FILEINFORMATIONCLASS_a900d6a7f800 {
+  FILEINFORMATIONCLASS_a900d6a7f800::from_int(55)
+}
+
+///|
+pub fn FILEINFORMATIONCLASS_a900d6a7f800::file_rename_information() -> FILEINFORMATIONCLASS_a900d6a7f800 {
+  FILEINFORMATIONCLASS_a900d6a7f800::from_int(10)
+}
+
+///|
+pub fn FILEINFORMATIONCLASS_a900d6a7f800::file_rename_information_bypass_access_check() -> FILEINFORMATIONCLASS_a900d6a7f800 {
+  FILEINFORMATIONCLASS_a900d6a7f800::from_int(56)
+}
+
+///|
+pub fn FILEINFORMATIONCLASS_a900d6a7f800::file_rename_information_ex() -> FILEINFORMATIONCLASS_a900d6a7f800 {
+  FILEINFORMATIONCLASS_a900d6a7f800::from_int(65)
+}
+
+///|
+pub fn FILEINFORMATIONCLASS_a900d6a7f800::file_rename_information_ex_bypass_access_check() -> FILEINFORMATIONCLASS_a900d6a7f800 {
+  FILEINFORMATIONCLASS_a900d6a7f800::from_int(66)
+}
+
+///|
+pub fn FILEINFORMATIONCLASS_a900d6a7f800::file_reparse_point_information() -> FILEINFORMATIONCLASS_a900d6a7f800 {
+  FILEINFORMATIONCLASS_a900d6a7f800::from_int(33)
+}
+
+///|
+pub fn FILEINFORMATIONCLASS_a900d6a7f800::file_replace_completion_information() -> FILEINFORMATIONCLASS_a900d6a7f800 {
+  FILEINFORMATIONCLASS_a900d6a7f800::from_int(61)
+}
+
+///|
+pub fn FILEINFORMATIONCLASS_a900d6a7f800::file_sfio_reserve_information() -> FILEINFORMATIONCLASS_a900d6a7f800 {
+  FILEINFORMATIONCLASS_a900d6a7f800::from_int(44)
+}
+
+///|
+pub fn FILEINFORMATIONCLASS_a900d6a7f800::file_sfio_volume_information() -> FILEINFORMATIONCLASS_a900d6a7f800 {
+  FILEINFORMATIONCLASS_a900d6a7f800::from_int(45)
+}
+
+///|
+pub fn FILEINFORMATIONCLASS_a900d6a7f800::file_short_name_information() -> FILEINFORMATIONCLASS_a900d6a7f800 {
+  FILEINFORMATIONCLASS_a900d6a7f800::from_int(40)
+}
+
+///|
+pub fn FILEINFORMATIONCLASS_a900d6a7f800::file_standard_information() -> FILEINFORMATIONCLASS_a900d6a7f800 {
+  FILEINFORMATIONCLASS_a900d6a7f800::from_int(5)
+}
+
+///|
+pub fn FILEINFORMATIONCLASS_a900d6a7f800::file_standard_link_information() -> FILEINFORMATIONCLASS_a900d6a7f800 {
+  FILEINFORMATIONCLASS_a900d6a7f800::from_int(54)
+}
+
+///|
+pub fn FILEINFORMATIONCLASS_a900d6a7f800::file_stat_information() -> FILEINFORMATIONCLASS_a900d6a7f800 {
+  FILEINFORMATIONCLASS_a900d6a7f800::from_int(68)
+}
+
+///|
+pub fn FILEINFORMATIONCLASS_a900d6a7f800::file_stat_lx_information() -> FILEINFORMATIONCLASS_a900d6a7f800 {
+  FILEINFORMATIONCLASS_a900d6a7f800::from_int(70)
+}
+
+///|
+pub fn FILEINFORMATIONCLASS_a900d6a7f800::file_storage_reserve_id_information() -> FILEINFORMATIONCLASS_a900d6a7f800 {
+  FILEINFORMATIONCLASS_a900d6a7f800::from_int(74)
+}
+
+///|
+pub fn FILEINFORMATIONCLASS_a900d6a7f800::file_stream_information() -> FILEINFORMATIONCLASS_a900d6a7f800 {
+  FILEINFORMATIONCLASS_a900d6a7f800::from_int(22)
+}
+
+///|
+pub fn FILEINFORMATIONCLASS_a900d6a7f800::file_tracking_information() -> FILEINFORMATIONCLASS_a900d6a7f800 {
+  FILEINFORMATIONCLASS_a900d6a7f800::from_int(36)
+}
+
+///|
+pub fn FILEINFORMATIONCLASS_a900d6a7f800::file_unused_information() -> FILEINFORMATIONCLASS_a900d6a7f800 {
+  FILEINFORMATIONCLASS_a900d6a7f800::from_int(52)
+}
+
+///|
+pub fn FILEINFORMATIONCLASS_a900d6a7f800::file_valid_data_length_information() -> FILEINFORMATIONCLASS_a900d6a7f800 {
+  FILEINFORMATIONCLASS_a900d6a7f800::from_int(39)
+}
+
+///|
+pub fn FILEINFORMATIONCLASS_a900d6a7f800::file_volume_name_information() -> FILEINFORMATIONCLASS_a900d6a7f800 {
+  FILEINFORMATIONCLASS_a900d6a7f800::from_int(58)
+}
+
+///|
+pub fn FILEKNOWNFOLDERTYPE_dcc590586f30::known_folder_desktop() -> FILEKNOWNFOLDERTYPE_dcc590586f30 {
+  FILEKNOWNFOLDERTYPE_dcc590586f30::from_int(1)
+}
+
+///|
+pub fn FILEKNOWNFOLDERTYPE_dcc590586f30::known_folder_documents() -> FILEKNOWNFOLDERTYPE_dcc590586f30 {
+  FILEKNOWNFOLDERTYPE_dcc590586f30::from_int(2)
+}
+
+///|
+pub fn FILEKNOWNFOLDERTYPE_dcc590586f30::known_folder_downloads() -> FILEKNOWNFOLDERTYPE_dcc590586f30 {
+  FILEKNOWNFOLDERTYPE_dcc590586f30::from_int(3)
+}
+
+///|
+pub fn FILEKNOWNFOLDERTYPE_dcc590586f30::known_folder_max() -> FILEKNOWNFOLDERTYPE_dcc590586f30 {
+  FILEKNOWNFOLDERTYPE_dcc590586f30::from_int(7)
+}
+
+///|
+pub fn FILEKNOWNFOLDERTYPE_dcc590586f30::known_folder_music() -> FILEKNOWNFOLDERTYPE_dcc590586f30 {
+  FILEKNOWNFOLDERTYPE_dcc590586f30::from_int(4)
+}
+
+///|
+pub fn FILEKNOWNFOLDERTYPE_dcc590586f30::known_folder_none() -> FILEKNOWNFOLDERTYPE_dcc590586f30 {
+  FILEKNOWNFOLDERTYPE_dcc590586f30::from_int(0)
+}
+
+///|
+pub fn FILEKNOWNFOLDERTYPE_dcc590586f30::known_folder_other() -> FILEKNOWNFOLDERTYPE_dcc590586f30 {
+  FILEKNOWNFOLDERTYPE_dcc590586f30::from_int(7)
+}
+
+///|
+pub fn FILEKNOWNFOLDERTYPE_dcc590586f30::known_folder_pictures() -> FILEKNOWNFOLDERTYPE_dcc590586f30 {
+  FILEKNOWNFOLDERTYPE_dcc590586f30::from_int(5)
+}
+
+///|
+pub fn FILEKNOWNFOLDERTYPE_dcc590586f30::known_folder_videos() -> FILEKNOWNFOLDERTYPE_dcc590586f30 {
+  FILEKNOWNFOLDERTYPE_dcc590586f30::from_int(6)
+}
+
+///|
+pub fn FSRTLCHANGEBACKINGTYPE_5d226d74a2dc::change_data_control_area() -> FSRTLCHANGEBACKINGTYPE_5d226d74a2dc {
+  FSRTLCHANGEBACKINGTYPE_5d226d74a2dc::from_int(0)
+}
+
+///|
+pub fn FSRTLCHANGEBACKINGTYPE_5d226d74a2dc::change_image_control_area() -> FSRTLCHANGEBACKINGTYPE_5d226d74a2dc {
+  FSRTLCHANGEBACKINGTYPE_5d226d74a2dc::from_int(1)
+}
+
+///|
+pub fn FSRTLCHANGEBACKINGTYPE_5d226d74a2dc::change_shared_cache_map() -> FSRTLCHANGEBACKINGTYPE_5d226d74a2dc {
+  FSRTLCHANGEBACKINGTYPE_5d226d74a2dc::from_int(2)
+}
+
+///|
+pub fn FSRTLCOMPARISONRESULT_ad2f88df278a::equal_to() -> FSRTLCOMPARISONRESULT_ad2f88df278a {
+  FSRTLCOMPARISONRESULT_ad2f88df278a::from_int(0)
+}
+
+///|
+pub fn FSRTLCOMPARISONRESULT_ad2f88df278a::greater_than() -> FSRTLCOMPARISONRESULT_ad2f88df278a {
+  FSRTLCOMPARISONRESULT_ad2f88df278a::from_int(1)
+}
+
+///|
+pub fn FSRTLCOMPARISONRESULT_ad2f88df278a::less_than() -> FSRTLCOMPARISONRESULT_ad2f88df278a {
+  FSRTLCOMPARISONRESULT_ad2f88df278a::from_int(-1)
+}
+
+///|
+pub fn FSFILTERSECTIONSYNCTYPE_488d764fbb0b::sync_type_create_section() -> FSFILTERSECTIONSYNCTYPE_488d764fbb0b {
+  FSFILTERSECTIONSYNCTYPE_488d764fbb0b::from_int(1)
+}
+
+///|
+pub fn FSFILTERSECTIONSYNCTYPE_488d764fbb0b::sync_type_other() -> FSFILTERSECTIONSYNCTYPE_488d764fbb0b {
+  FSFILTERSECTIONSYNCTYPE_488d764fbb0b::from_int(0)
+}
+
+///|
+pub fn FSFILTERSTREAMFONOTIFICATIONTYPE_cd2a06e969db::notify_type_create() -> FSFILTERSTREAMFONOTIFICATIONTYPE_cd2a06e969db {
+  FSFILTERSTREAMFONOTIFICATIONTYPE_cd2a06e969db::from_int(0)
+}
+
+///|
+pub fn FSFILTERSTREAMFONOTIFICATIONTYPE_cd2a06e969db::notify_type_retired() -> FSFILTERSTREAMFONOTIFICATIONTYPE_cd2a06e969db {
+  FSFILTERSTREAMFONOTIFICATIONTYPE_cd2a06e969db::from_int(1)
+}
+
+///|
+pub fn FSINFORMATIONCLASS_275b3e3d3d05::file_fs_attribute_information() -> FSINFORMATIONCLASS_275b3e3d3d05 {
+  FSINFORMATIONCLASS_275b3e3d3d05::from_int(5)
+}
+
+///|
+pub fn FSINFORMATIONCLASS_275b3e3d3d05::file_fs_control_information() -> FSINFORMATIONCLASS_275b3e3d3d05 {
+  FSINFORMATIONCLASS_275b3e3d3d05::from_int(6)
+}
+
+///|
+pub fn FSINFORMATIONCLASS_275b3e3d3d05::file_fs_data_copy_information() -> FSINFORMATIONCLASS_275b3e3d3d05 {
+  FSINFORMATIONCLASS_275b3e3d3d05::from_int(12)
+}
+
+///|
+pub fn FSINFORMATIONCLASS_275b3e3d3d05::file_fs_device_information() -> FSINFORMATIONCLASS_275b3e3d3d05 {
+  FSINFORMATIONCLASS_275b3e3d3d05::from_int(4)
+}
+
+///|
+pub fn FSINFORMATIONCLASS_275b3e3d3d05::file_fs_driver_path_information() -> FSINFORMATIONCLASS_275b3e3d3d05 {
+  FSINFORMATIONCLASS_275b3e3d3d05::from_int(9)
+}
+
+///|
+pub fn FSINFORMATIONCLASS_275b3e3d3d05::file_fs_full_size_information() -> FSINFORMATIONCLASS_275b3e3d3d05 {
+  FSINFORMATIONCLASS_275b3e3d3d05::from_int(7)
+}
+
+///|
+pub fn FSINFORMATIONCLASS_275b3e3d3d05::file_fs_full_size_information_ex() -> FSINFORMATIONCLASS_275b3e3d3d05 {
+  FSINFORMATIONCLASS_275b3e3d3d05::from_int(14)
+}
+
+///|
+pub fn FSINFORMATIONCLASS_275b3e3d3d05::file_fs_label_information() -> FSINFORMATIONCLASS_275b3e3d3d05 {
+  FSINFORMATIONCLASS_275b3e3d3d05::from_int(2)
+}
+
+///|
+pub fn FSINFORMATIONCLASS_275b3e3d3d05::file_fs_maximum_information() -> FSINFORMATIONCLASS_275b3e3d3d05 {
+  FSINFORMATIONCLASS_275b3e3d3d05::from_int(15)
+}
+
+///|
+pub fn FSINFORMATIONCLASS_275b3e3d3d05::file_fs_metadata_size_information() -> FSINFORMATIONCLASS_275b3e3d3d05 {
+  FSINFORMATIONCLASS_275b3e3d3d05::from_int(13)
+}
+
+///|
+pub fn FSINFORMATIONCLASS_275b3e3d3d05::file_fs_object_id_information() -> FSINFORMATIONCLASS_275b3e3d3d05 {
+  FSINFORMATIONCLASS_275b3e3d3d05::from_int(8)
+}
+
+///|
+pub fn FSINFORMATIONCLASS_275b3e3d3d05::file_fs_sector_size_information() -> FSINFORMATIONCLASS_275b3e3d3d05 {
+  FSINFORMATIONCLASS_275b3e3d3d05::from_int(11)
+}
+
+///|
+pub fn FSINFORMATIONCLASS_275b3e3d3d05::file_fs_size_information() -> FSINFORMATIONCLASS_275b3e3d3d05 {
+  FSINFORMATIONCLASS_275b3e3d3d05::from_int(3)
+}
+
+///|
+pub fn FSINFORMATIONCLASS_275b3e3d3d05::file_fs_volume_flags_information() -> FSINFORMATIONCLASS_275b3e3d3d05 {
+  FSINFORMATIONCLASS_275b3e3d3d05::from_int(10)
+}
+
+///|
+pub fn FSINFORMATIONCLASS_275b3e3d3d05::file_fs_volume_information() -> FSINFORMATIONCLASS_275b3e3d3d05 {
+  FSINFORMATIONCLASS_275b3e3d3d05::from_int(1)
+}
+
+///|
+pub fn HEAPMEMORYINFOCLASS_2932eca097d2::heap_memory_basic_information() -> HEAPMEMORYINFOCLASS_2932eca097d2 {
+  HEAPMEMORYINFOCLASS_2932eca097d2::from_int(0)
+}
+
+///|
+pub fn LINKTRACKINGINFORMATIONTYPE_45721b7296d7::dfs_link_tracking_information() -> LINKTRACKINGINFORMATIONTYPE_45721b7296d7 {
+  LINKTRACKINGINFORMATIONTYPE_45721b7296d7::from_int(1)
+}
+
+///|
+pub fn LINKTRACKINGINFORMATIONTYPE_45721b7296d7::ntfs_link_tracking_information() -> LINKTRACKINGINFORMATIONTYPE_45721b7296d7 {
+  LINKTRACKINGINFORMATIONTYPE_45721b7296d7::from_int(0)
+}
+
+///|
+pub fn MEMORYINFORMATIONCLASS_8415c9fff201::memory_basic_information() -> MEMORYINFORMATIONCLASS_8415c9fff201 {
+  MEMORYINFORMATIONCLASS_8415c9fff201::from_int(0)
+}
+
+///|
+pub fn MMFLUSHTYPE_e2dd3afa81fe::mm_flush_for_delete() -> MMFLUSHTYPE_e2dd3afa81fe {
+  MMFLUSHTYPE_e2dd3afa81fe::from_int(0)
+}
+
+///|
+pub fn MMFLUSHTYPE_e2dd3afa81fe::mm_flush_for_write() -> MMFLUSHTYPE_e2dd3afa81fe {
+  MMFLUSHTYPE_e2dd3afa81fe::from_int(1)
+}
+
+///|
+pub fn MSV10AVID_8a606c3e64ac::msv_av_channel_bindings() -> MSV10AVID_8a606c3e64ac {
+  MSV10AVID_8a606c3e64ac::from_int(10)
+}
+
+///|
+pub fn MSV10AVID_8a606c3e64ac::msv_av_dns_computer_name() -> MSV10AVID_8a606c3e64ac {
+  MSV10AVID_8a606c3e64ac::from_int(3)
+}
+
+///|
+pub fn MSV10AVID_8a606c3e64ac::msv_av_dns_domain_name() -> MSV10AVID_8a606c3e64ac {
+  MSV10AVID_8a606c3e64ac::from_int(4)
+}
+
+///|
+pub fn MSV10AVID_8a606c3e64ac::msv_av_dns_tree_name() -> MSV10AVID_8a606c3e64ac {
+  MSV10AVID_8a606c3e64ac::from_int(5)
+}
+
+///|
+pub fn MSV10AVID_8a606c3e64ac::msv_av_eol() -> MSV10AVID_8a606c3e64ac {
+  MSV10AVID_8a606c3e64ac::from_int(0)
+}
+
+///|
+pub fn MSV10AVID_8a606c3e64ac::msv_av_flags() -> MSV10AVID_8a606c3e64ac {
+  MSV10AVID_8a606c3e64ac::from_int(6)
+}
+
+///|
+pub fn MSV10AVID_8a606c3e64ac::msv_av_nb_computer_name() -> MSV10AVID_8a606c3e64ac {
+  MSV10AVID_8a606c3e64ac::from_int(1)
+}
+
+///|
+pub fn MSV10AVID_8a606c3e64ac::msv_av_nb_domain_name() -> MSV10AVID_8a606c3e64ac {
+  MSV10AVID_8a606c3e64ac::from_int(2)
+}
+
+///|
+pub fn MSV10AVID_8a606c3e64ac::msv_av_restrictions() -> MSV10AVID_8a606c3e64ac {
+  MSV10AVID_8a606c3e64ac::from_int(8)
+}
+
+///|
+pub fn MSV10AVID_8a606c3e64ac::msv_av_target_name() -> MSV10AVID_8a606c3e64ac {
+  MSV10AVID_8a606c3e64ac::from_int(9)
+}
+
+///|
+pub fn MSV10AVID_8a606c3e64ac::msv_av_timestamp() -> MSV10AVID_8a606c3e64ac {
+  MSV10AVID_8a606c3e64ac::from_int(7)
+}
+
+///|
+pub fn NETWORKOPENINTEGRITYQUALIFIER_fef11d4ea892::network_open_integrity_any() -> NETWORKOPENINTEGRITYQUALIFIER_fef11d4ea892 {
+  NETWORKOPENINTEGRITYQUALIFIER_fef11d4ea892::from_int(0)
+}
+
+///|
+pub fn NETWORKOPENINTEGRITYQUALIFIER_fef11d4ea892::network_open_integrity_encrypted() -> NETWORKOPENINTEGRITYQUALIFIER_fef11d4ea892 {
+  NETWORKOPENINTEGRITYQUALIFIER_fef11d4ea892::from_int(3)
+}
+
+///|
+pub fn NETWORKOPENINTEGRITYQUALIFIER_fef11d4ea892::network_open_integrity_maximum() -> NETWORKOPENINTEGRITYQUALIFIER_fef11d4ea892 {
+  NETWORKOPENINTEGRITYQUALIFIER_fef11d4ea892::from_int(4)
+}
+
+///|
+pub fn NETWORKOPENINTEGRITYQUALIFIER_fef11d4ea892::network_open_integrity_none() -> NETWORKOPENINTEGRITYQUALIFIER_fef11d4ea892 {
+  NETWORKOPENINTEGRITYQUALIFIER_fef11d4ea892::from_int(1)
+}
+
+///|
+pub fn NETWORKOPENINTEGRITYQUALIFIER_fef11d4ea892::network_open_integrity_signed() -> NETWORKOPENINTEGRITYQUALIFIER_fef11d4ea892 {
+  NETWORKOPENINTEGRITYQUALIFIER_fef11d4ea892::from_int(2)
+}
+
+///|
+pub fn NETWORKOPENLOCATIONQUALIFIER_ce2a7f1f87dc::network_open_location_any() -> NETWORKOPENLOCATIONQUALIFIER_ce2a7f1f87dc {
+  NETWORKOPENLOCATIONQUALIFIER_ce2a7f1f87dc::from_int(0)
+}
+
+///|
+pub fn NETWORKOPENLOCATIONQUALIFIER_ce2a7f1f87dc::network_open_location_loopback() -> NETWORKOPENLOCATIONQUALIFIER_ce2a7f1f87dc {
+  NETWORKOPENLOCATIONQUALIFIER_ce2a7f1f87dc::from_int(2)
+}
+
+///|
+pub fn NETWORKOPENLOCATIONQUALIFIER_ce2a7f1f87dc::network_open_location_remote() -> NETWORKOPENLOCATIONQUALIFIER_ce2a7f1f87dc {
+  NETWORKOPENLOCATIONQUALIFIER_ce2a7f1f87dc::from_int(1)
+}
+
+///|
+pub fn NTCREATEFILECREATEDISPOSITION_a2609c222512::file_create() -> NTCREATEFILECREATEDISPOSITION_a2609c222512 {
+  NTCREATEFILECREATEDISPOSITION_a2609c222512::from_int(2U.reinterpret_as_int())
+}
+
+///|
+pub fn NTCREATEFILECREATEDISPOSITION_a2609c222512::file_open() -> NTCREATEFILECREATEDISPOSITION_a2609c222512 {
+  NTCREATEFILECREATEDISPOSITION_a2609c222512::from_int(1U.reinterpret_as_int())
+}
+
+///|
+pub fn NTCREATEFILECREATEDISPOSITION_a2609c222512::file_open_if() -> NTCREATEFILECREATEDISPOSITION_a2609c222512 {
+  NTCREATEFILECREATEDISPOSITION_a2609c222512::from_int(3U.reinterpret_as_int())
+}
+
+///|
+pub fn NTCREATEFILECREATEDISPOSITION_a2609c222512::file_overwrite() -> NTCREATEFILECREATEDISPOSITION_a2609c222512 {
+  NTCREATEFILECREATEDISPOSITION_a2609c222512::from_int(4U.reinterpret_as_int())
+}
+
+///|
+pub fn NTCREATEFILECREATEDISPOSITION_a2609c222512::file_overwrite_if() -> NTCREATEFILECREATEDISPOSITION_a2609c222512 {
+  NTCREATEFILECREATEDISPOSITION_a2609c222512::from_int(5U.reinterpret_as_int())
+}
+
+///|
+pub fn NTCREATEFILECREATEDISPOSITION_a2609c222512::file_supersede() -> NTCREATEFILECREATEDISPOSITION_a2609c222512 {
+  NTCREATEFILECREATEDISPOSITION_a2609c222512::from_int(0U.reinterpret_as_int())
+}
+
+///|
+pub fn NTCREATEFILECREATEOPTIONS_0bd483576917::file_complete_if_oplocked() -> NTCREATEFILECREATEOPTIONS_0bd483576917 {
+  NTCREATEFILECREATEOPTIONS_0bd483576917::from_int(256U.reinterpret_as_int())
+}
+
+///|
+pub fn NTCREATEFILECREATEOPTIONS_0bd483576917::file_contains_extended_create_information() -> NTCREATEFILECREATEOPTIONS_0bd483576917 {
+  NTCREATEFILECREATEOPTIONS_0bd483576917::from_int(
+    268435456U.reinterpret_as_int(),
+  )
+}
+
+///|
+pub fn NTCREATEFILECREATEOPTIONS_0bd483576917::file_create_tree_connection() -> NTCREATEFILECREATEOPTIONS_0bd483576917 {
+  NTCREATEFILECREATEOPTIONS_0bd483576917::from_int(128U.reinterpret_as_int())
+}
+
+///|
+pub fn NTCREATEFILECREATEOPTIONS_0bd483576917::file_delete_on_close() -> NTCREATEFILECREATEOPTIONS_0bd483576917 {
+  NTCREATEFILECREATEOPTIONS_0bd483576917::from_int(4096U.reinterpret_as_int())
+}
+
+///|
+pub fn NTCREATEFILECREATEOPTIONS_0bd483576917::file_directory_file() -> NTCREATEFILECREATEOPTIONS_0bd483576917 {
+  NTCREATEFILECREATEOPTIONS_0bd483576917::from_int(1U.reinterpret_as_int())
+}
+
+///|
+pub fn NTCREATEFILECREATEOPTIONS_0bd483576917::file_disallow_exclusive() -> NTCREATEFILECREATEOPTIONS_0bd483576917 {
+  NTCREATEFILECREATEOPTIONS_0bd483576917::from_int(131072U.reinterpret_as_int())
+}
+
+///|
+pub fn NTCREATEFILECREATEOPTIONS_0bd483576917::file_non_directory_file() -> NTCREATEFILECREATEOPTIONS_0bd483576917 {
+  NTCREATEFILECREATEOPTIONS_0bd483576917::from_int(64U.reinterpret_as_int())
+}
+
+///|
+pub fn NTCREATEFILECREATEOPTIONS_0bd483576917::file_no_compression() -> NTCREATEFILECREATEOPTIONS_0bd483576917 {
+  NTCREATEFILECREATEOPTIONS_0bd483576917::from_int(32768U.reinterpret_as_int())
+}
+
+///|
+pub fn NTCREATEFILECREATEOPTIONS_0bd483576917::file_no_ea_knowledge() -> NTCREATEFILECREATEOPTIONS_0bd483576917 {
+  NTCREATEFILECREATEOPTIONS_0bd483576917::from_int(512U.reinterpret_as_int())
+}
+
+///|
+pub fn NTCREATEFILECREATEOPTIONS_0bd483576917::file_no_intermediate_buffering() -> NTCREATEFILECREATEOPTIONS_0bd483576917 {
+  NTCREATEFILECREATEOPTIONS_0bd483576917::from_int(8U.reinterpret_as_int())
+}
+
+///|
+pub fn NTCREATEFILECREATEOPTIONS_0bd483576917::file_open_by_file_id() -> NTCREATEFILECREATEOPTIONS_0bd483576917 {
+  NTCREATEFILECREATEOPTIONS_0bd483576917::from_int(8192U.reinterpret_as_int())
+}
+
+///|
+pub fn NTCREATEFILECREATEOPTIONS_0bd483576917::file_open_for_backup_intent() -> NTCREATEFILECREATEOPTIONS_0bd483576917 {
+  NTCREATEFILECREATEOPTIONS_0bd483576917::from_int(16384U.reinterpret_as_int())
+}
+
+///|
+pub fn NTCREATEFILECREATEOPTIONS_0bd483576917::file_open_for_free_space_query() -> NTCREATEFILECREATEOPTIONS_0bd483576917 {
+  NTCREATEFILECREATEOPTIONS_0bd483576917::from_int(
+    8388608U.reinterpret_as_int(),
+  )
+}
+
+///|
+pub fn NTCREATEFILECREATEOPTIONS_0bd483576917::file_open_no_recall() -> NTCREATEFILECREATEOPTIONS_0bd483576917 {
+  NTCREATEFILECREATEOPTIONS_0bd483576917::from_int(
+    4194304U.reinterpret_as_int(),
+  )
+}
+
+///|
+pub fn NTCREATEFILECREATEOPTIONS_0bd483576917::file_open_reparse_point() -> NTCREATEFILECREATEOPTIONS_0bd483576917 {
+  NTCREATEFILECREATEOPTIONS_0bd483576917::from_int(
+    2097152U.reinterpret_as_int(),
+  )
+}
+
+///|
+pub fn NTCREATEFILECREATEOPTIONS_0bd483576917::file_open_requiring_oplock() -> NTCREATEFILECREATEOPTIONS_0bd483576917 {
+  NTCREATEFILECREATEOPTIONS_0bd483576917::from_int(65536U.reinterpret_as_int())
+}
+
+///|
+pub fn NTCREATEFILECREATEOPTIONS_0bd483576917::file_random_access() -> NTCREATEFILECREATEOPTIONS_0bd483576917 {
+  NTCREATEFILECREATEOPTIONS_0bd483576917::from_int(2048U.reinterpret_as_int())
+}
+
+///|
+pub fn NTCREATEFILECREATEOPTIONS_0bd483576917::file_reserve_opfilter() -> NTCREATEFILECREATEOPTIONS_0bd483576917 {
+  NTCREATEFILECREATEOPTIONS_0bd483576917::from_int(
+    1048576U.reinterpret_as_int(),
+  )
+}
+
+///|
+pub fn NTCREATEFILECREATEOPTIONS_0bd483576917::file_sequential_only() -> NTCREATEFILECREATEOPTIONS_0bd483576917 {
+  NTCREATEFILECREATEOPTIONS_0bd483576917::from_int(4U.reinterpret_as_int())
+}
+
+///|
+pub fn NTCREATEFILECREATEOPTIONS_0bd483576917::file_session_aware() -> NTCREATEFILECREATEOPTIONS_0bd483576917 {
+  NTCREATEFILECREATEOPTIONS_0bd483576917::from_int(262144U.reinterpret_as_int())
+}
+
+///|
+pub fn NTCREATEFILECREATEOPTIONS_0bd483576917::file_synchronous_io_alert() -> NTCREATEFILECREATEOPTIONS_0bd483576917 {
+  NTCREATEFILECREATEOPTIONS_0bd483576917::from_int(16U.reinterpret_as_int())
+}
+
+///|
+pub fn NTCREATEFILECREATEOPTIONS_0bd483576917::file_synchronous_io_nonalert() -> NTCREATEFILECREATEOPTIONS_0bd483576917 {
+  NTCREATEFILECREATEOPTIONS_0bd483576917::from_int(32U.reinterpret_as_int())
+}
+
+///|
+pub fn NTCREATEFILECREATEOPTIONS_0bd483576917::file_write_through() -> NTCREATEFILECREATEOPTIONS_0bd483576917 {
+  NTCREATEFILECREATEOPTIONS_0bd483576917::from_int(2U.reinterpret_as_int())
+}
+
+///|
+pub fn OPLOCKNOTIFYREASON_90a4a2ecfbd7::oplock_notify_break_wait_interim_timeout() -> OPLOCKNOTIFYREASON_90a4a2ecfbd7 {
+  OPLOCKNOTIFYREASON_90a4a2ecfbd7::from_int(0)
+}
+
+///|
+pub fn OPLOCKNOTIFYREASON_90a4a2ecfbd7::oplock_notify_break_wait_terminated() -> OPLOCKNOTIFYREASON_90a4a2ecfbd7 {
+  OPLOCKNOTIFYREASON_90a4a2ecfbd7::from_int(1)
+}
+
+///|
+pub fn REFSCOMPRESSIONFORMATS_f1efe9f47213::refs_compression_format_lz4() -> REFSCOMPRESSIONFORMATS_f1efe9f47213 {
+  REFSCOMPRESSIONFORMATS_f1efe9f47213::from_int(1)
+}
+
+///|
+pub fn REFSCOMPRESSIONFORMATS_f1efe9f47213::refs_compression_format_max() -> REFSCOMPRESSIONFORMATS_f1efe9f47213 {
+  REFSCOMPRESSIONFORMATS_f1efe9f47213::from_int(3)
+}
+
+///|
+pub fn REFSCOMPRESSIONFORMATS_f1efe9f47213::refs_compression_format_uncompressed() -> REFSCOMPRESSIONFORMATS_f1efe9f47213 {
+  REFSCOMPRESSIONFORMATS_f1efe9f47213::from_int(0)
+}
+
+///|
+pub fn REFSCOMPRESSIONFORMATS_f1efe9f47213::refs_compression_format_zstd() -> REFSCOMPRESSIONFORMATS_f1efe9f47213 {
+  REFSCOMPRESSIONFORMATS_f1efe9f47213::from_int(2)
+}
+
+///|
+pub fn REFSDEALLOCATERANGESALLOCATOR_88522cafa931::caa() -> REFSDEALLOCATERANGESALLOCATOR_88522cafa931 {
+  REFSDEALLOCATERANGESALLOCATOR_88522cafa931::from_int(2)
+}
+
+///|
+pub fn REFSDEALLOCATERANGESALLOCATOR_88522cafa931::maa() -> REFSDEALLOCATERANGESALLOCATOR_88522cafa931 {
+  REFSDEALLOCATERANGESALLOCATOR_88522cafa931::from_int(3)
+}
+
+///|
+pub fn REFSDEALLOCATERANGESALLOCATOR_88522cafa931::none() -> REFSDEALLOCATERANGESALLOCATOR_88522cafa931 {
+  REFSDEALLOCATERANGESALLOCATOR_88522cafa931::from_int(0)
+}
+
+///|
+pub fn REFSDEALLOCATERANGESALLOCATOR_88522cafa931::saa() -> REFSDEALLOCATERANGESALLOCATOR_88522cafa931 {
+  REFSDEALLOCATERANGESALLOCATOR_88522cafa931::from_int(1)
+}
+
+///|
+pub fn REFSSETVOLUMECOMPRESSIONINFOFLAGS_c89cf636c8c3::refs_set_volume_compression_info_flag_compress_sync() -> REFSSETVOLUMECOMPRESSIONINFOFLAGS_c89cf636c8c3 {
+  REFSSETVOLUMECOMPRESSIONINFOFLAGS_c89cf636c8c3::from_int(1)
+}
+
+///|
+pub fn REFSSETVOLUMECOMPRESSIONINFOFLAGS_c89cf636c8c3::refs_set_volume_compression_info_flag_max() -> REFSSETVOLUMECOMPRESSIONINFOFLAGS_c89cf636c8c3 {
+  REFSSETVOLUMECOMPRESSIONINFOFLAGS_c89cf636c8c3::from_int(1)
+}
+
+///|
+pub fn REFSSTREAMSNAPSHOTOPERATION_9db60b497954::clear_shadow_btree() -> REFSSTREAMSNAPSHOTOPERATION_9db60b497954 {
+  REFSSTREAMSNAPSHOTOPERATION_9db60b497954::from_int(6)
+}
+
+///|
+pub fn REFSSTREAMSNAPSHOTOPERATION_9db60b497954::create() -> REFSSTREAMSNAPSHOTOPERATION_9db60b497954 {
+  REFSSTREAMSNAPSHOTOPERATION_9db60b497954::from_int(1)
+}
+
+///|
+pub fn REFSSTREAMSNAPSHOTOPERATION_9db60b497954::invalid() -> REFSSTREAMSNAPSHOTOPERATION_9db60b497954 {
+  REFSSTREAMSNAPSHOTOPERATION_9db60b497954::from_int(0)
+}
+
+///|
+pub fn REFSSTREAMSNAPSHOTOPERATION_9db60b497954::list() -> REFSSTREAMSNAPSHOTOPERATION_9db60b497954 {
+  REFSSTREAMSNAPSHOTOPERATION_9db60b497954::from_int(2)
+}
+
+///|
+pub fn REFSSTREAMSNAPSHOTOPERATION_9db60b497954::max() -> REFSSTREAMSNAPSHOTOPERATION_9db60b497954 {
+  REFSSTREAMSNAPSHOTOPERATION_9db60b497954::from_int(6)
+}
+
+///|
+pub fn REFSSTREAMSNAPSHOTOPERATION_9db60b497954::query_deltas() -> REFSSTREAMSNAPSHOTOPERATION_9db60b497954 {
+  REFSSTREAMSNAPSHOTOPERATION_9db60b497954::from_int(3)
+}
+
+///|
+pub fn REFSSTREAMSNAPSHOTOPERATION_9db60b497954::revert() -> REFSSTREAMSNAPSHOTOPERATION_9db60b497954 {
+  REFSSTREAMSNAPSHOTOPERATION_9db60b497954::from_int(4)
+}
+
+///|
+pub fn REFSSTREAMSNAPSHOTOPERATION_9db60b497954::set_shadow_btree() -> REFSSTREAMSNAPSHOTOPERATION_9db60b497954 {
+  REFSSTREAMSNAPSHOTOPERATION_9db60b497954::from_int(5)
+}
+
+///|
+pub fn RTLMEMORYTYPE_eca40e0a1ae8::memory_type64_k_page() -> RTLMEMORYTYPE_eca40e0a1ae8 {
+  RTLMEMORYTYPE_eca40e0a1ae8::from_int(2)
+}
+
+///|
+pub fn RTLMEMORYTYPE_eca40e0a1ae8::memory_type_custom() -> RTLMEMORYTYPE_eca40e0a1ae8 {
+  RTLMEMORYTYPE_eca40e0a1ae8::from_int(5)
+}
+
+///|
+pub fn RTLMEMORYTYPE_eca40e0a1ae8::memory_type_huge_page() -> RTLMEMORYTYPE_eca40e0a1ae8 {
+  RTLMEMORYTYPE_eca40e0a1ae8::from_int(4)
+}
+
+///|
+pub fn RTLMEMORYTYPE_eca40e0a1ae8::memory_type_large_page() -> RTLMEMORYTYPE_eca40e0a1ae8 {
+  RTLMEMORYTYPE_eca40e0a1ae8::from_int(3)
+}
+
+///|
+pub fn RTLMEMORYTYPE_eca40e0a1ae8::memory_type_max() -> RTLMEMORYTYPE_eca40e0a1ae8 {
+  RTLMEMORYTYPE_eca40e0a1ae8::from_int(6)
+}
+
+///|
+pub fn RTLMEMORYTYPE_eca40e0a1ae8::memory_type_non_paged() -> RTLMEMORYTYPE_eca40e0a1ae8 {
+  RTLMEMORYTYPE_eca40e0a1ae8::from_int(1)
+}
+
+///|
+pub fn RTLMEMORYTYPE_eca40e0a1ae8::memory_type_paged() -> RTLMEMORYTYPE_eca40e0a1ae8 {
+  RTLMEMORYTYPE_eca40e0a1ae8::from_int(0)
+}
+
+///|
+pub fn SEAUDITOPERATION_278cf56213d5::audit_access_check() -> SEAUDITOPERATION_278cf56213d5 {
+  SEAUDITOPERATION_278cf56213d5::from_int(2)
+}
+
+///|
+pub fn SEAUDITOPERATION_278cf56213d5::audit_close_non_object() -> SEAUDITOPERATION_278cf56213d5 {
+  SEAUDITOPERATION_278cf56213d5::from_int(9)
+}
+
+///|
+pub fn SEAUDITOPERATION_278cf56213d5::audit_close_object() -> SEAUDITOPERATION_278cf56213d5 {
+  SEAUDITOPERATION_278cf56213d5::from_int(5)
+}
+
+///|
+pub fn SEAUDITOPERATION_278cf56213d5::audit_delete_object() -> SEAUDITOPERATION_278cf56213d5 {
+  SEAUDITOPERATION_278cf56213d5::from_int(6)
+}
+
+///|
+pub fn SEAUDITOPERATION_278cf56213d5::audit_handle_creation() -> SEAUDITOPERATION_278cf56213d5 {
+  SEAUDITOPERATION_278cf56213d5::from_int(12)
+}
+
+///|
+pub fn SEAUDITOPERATION_278cf56213d5::audit_object_reference() -> SEAUDITOPERATION_278cf56213d5 {
+  SEAUDITOPERATION_278cf56213d5::from_int(11)
+}
+
+///|
+pub fn SEAUDITOPERATION_278cf56213d5::audit_open_non_object() -> SEAUDITOPERATION_278cf56213d5 {
+  SEAUDITOPERATION_278cf56213d5::from_int(10)
+}
+
+///|
+pub fn SEAUDITOPERATION_278cf56213d5::audit_open_object() -> SEAUDITOPERATION_278cf56213d5 {
+  SEAUDITOPERATION_278cf56213d5::from_int(3)
+}
+
+///|
+pub fn SEAUDITOPERATION_278cf56213d5::audit_open_object_for_delete() -> SEAUDITOPERATION_278cf56213d5 {
+  SEAUDITOPERATION_278cf56213d5::from_int(7)
+}
+
+///|
+pub fn SEAUDITOPERATION_278cf56213d5::audit_open_object_for_delete_with_transaction() -> SEAUDITOPERATION_278cf56213d5 {
+  SEAUDITOPERATION_278cf56213d5::from_int(8)
+}
+
+///|
+pub fn SEAUDITOPERATION_278cf56213d5::audit_open_object_with_transaction() -> SEAUDITOPERATION_278cf56213d5 {
+  SEAUDITOPERATION_278cf56213d5::from_int(4)
+}
+
+///|
+pub fn SEAUDITOPERATION_278cf56213d5::audit_privilege_object() -> SEAUDITOPERATION_278cf56213d5 {
+  SEAUDITOPERATION_278cf56213d5::from_int(0)
+}
+
+///|
+pub fn SEAUDITOPERATION_278cf56213d5::audit_privilege_service() -> SEAUDITOPERATION_278cf56213d5 {
+  SEAUDITOPERATION_278cf56213d5::from_int(1)
+}
+
+///|
+pub fn SRVINSTANCETYPE_e7cf51f3df22::csv() -> SRVINSTANCETYPE_e7cf51f3df22 {
+  SRVINSTANCETYPE_e7cf51f3df22::from_int(2)
+}
+
+///|
+pub fn SRVINSTANCETYPE_e7cf51f3df22::primary() -> SRVINSTANCETYPE_e7cf51f3df22 {
+  SRVINSTANCETYPE_e7cf51f3df22::from_int(1)
+}
+
+///|
+pub fn SRVINSTANCETYPE_e7cf51f3df22::sbl() -> SRVINSTANCETYPE_e7cf51f3df22 {
+  SRVINSTANCETYPE_e7cf51f3df22::from_int(3)
+}
+
+///|
+pub fn SRVINSTANCETYPE_e7cf51f3df22::sr() -> SRVINSTANCETYPE_e7cf51f3df22 {
+  SRVINSTANCETYPE_e7cf51f3df22::from_int(4)
+}
+
+///|
+pub fn SRVINSTANCETYPE_e7cf51f3df22::undefined() -> SRVINSTANCETYPE_e7cf51f3df22 {
+  SRVINSTANCETYPE_e7cf51f3df22::from_int(0)
+}
+
+///|
+pub fn SRVINSTANCETYPE_e7cf51f3df22::vsmb() -> SRVINSTANCETYPE_e7cf51f3df22 {
+  SRVINSTANCETYPE_e7cf51f3df22::from_int(5)
+}
+
+///|
+pub fn SharedVirtualDiskHandleState_bd09e5a31e80::file_shared() -> SharedVirtualDiskHandleState_bd09e5a31e80 {
+  SharedVirtualDiskHandleState_bd09e5a31e80::from_int(1)
+}
+
+///|
+pub fn SharedVirtualDiskHandleState_bd09e5a31e80::handle_shared() -> SharedVirtualDiskHandleState_bd09e5a31e80 {
+  SharedVirtualDiskHandleState_bd09e5a31e80::from_int(3)
+}
+
+///|
+pub fn SharedVirtualDiskHandleState_bd09e5a31e80::none() -> SharedVirtualDiskHandleState_bd09e5a31e80 {
+  SharedVirtualDiskHandleState_bd09e5a31e80::from_int(0)
+}
+
+///|
+pub fn SharedVirtualDiskSupportType_14cf1f10881b::shared_virtual_disk_cdp_snapshots_supported() -> SharedVirtualDiskSupportType_14cf1f10881b {
+  SharedVirtualDiskSupportType_14cf1f10881b::from_int(7)
+}
+
+///|
+pub fn SharedVirtualDiskSupportType_14cf1f10881b::shared_virtual_disk_snapshots_supported() -> SharedVirtualDiskSupportType_14cf1f10881b {
+  SharedVirtualDiskSupportType_14cf1f10881b::from_int(3)
+}
+
+///|
+pub fn SharedVirtualDiskSupportType_14cf1f10881b::shared_virtual_disks_supported() -> SharedVirtualDiskSupportType_14cf1f10881b {
+  SharedVirtualDiskSupportType_14cf1f10881b::from_int(1)
+}
+
+///|
+pub fn SharedVirtualDiskSupportType_14cf1f10881b::shared_virtual_disks_unsupported() -> SharedVirtualDiskSupportType_14cf1f10881b {
+  SharedVirtualDiskSupportType_14cf1f10881b::from_int(0)
+}
+
+///|
+pub fn VIRTUALMEMORYINFORMATIONCLASS_db7cb8f7f2a2::vm_prefetch_information() -> VIRTUALMEMORYINFORMATIONCLASS_db7cb8f7f2a2 {
+  VIRTUALMEMORYINFORMATIONCLASS_db7cb8f7f2a2::from_int(0)
+}
+
+///|
+pub fn LCNWEAKREFERENCESTATE_2f8ed76070f9::lcn_checksum_valid() -> LCNWEAKREFERENCESTATE_2f8ed76070f9 {
+  LCNWEAKREFERENCESTATE_2f8ed76070f9::from_int(2)
+}
+
+///|
+pub fn LCNWEAKREFERENCESTATE_2f8ed76070f9::lcn_weak_reference_valid() -> LCNWEAKREFERENCESTATE_2f8ed76070f9 {
+  LCNWEAKREFERENCESTATE_2f8ed76070f9::from_int(1)
+}
+
+///|
+pub fn REFSSTREAMEXTENTPROPERTIES_13a1e2a9e8bb::refs_stream_extent_property_crc32() -> REFSSTREAMEXTENTPROPERTIES_13a1e2a9e8bb {
+  REFSSTREAMEXTENTPROPERTIES_13a1e2a9e8bb::from_int(128)
+}
+
+///|
+pub fn REFSSTREAMEXTENTPROPERTIES_13a1e2a9e8bb::refs_stream_extent_property_crc64() -> REFSSTREAMEXTENTPROPERTIES_13a1e2a9e8bb {
+  REFSSTREAMEXTENTPROPERTIES_13a1e2a9e8bb::from_int(256)
+}
+
+///|
+pub fn REFSSTREAMEXTENTPROPERTIES_13a1e2a9e8bb::refs_stream_extent_property_ghosted() -> REFSSTREAMEXTENTPROPERTIES_13a1e2a9e8bb {
+  REFSSTREAMEXTENTPROPERTIES_13a1e2a9e8bb::from_int(512)
+}
+
+///|
+pub fn REFSSTREAMEXTENTPROPERTIES_13a1e2a9e8bb::refs_stream_extent_property_readonly() -> REFSSTREAMEXTENTPROPERTIES_13a1e2a9e8bb {
+  REFSSTREAMEXTENTPROPERTIES_13a1e2a9e8bb::from_int(1024)
+}
+
+///|
+pub fn REFSSTREAMEXTENTPROPERTIES_13a1e2a9e8bb::refs_stream_extent_property_sparse() -> REFSSTREAMEXTENTPROPERTIES_13a1e2a9e8bb {
+  REFSSTREAMEXTENTPROPERTIES_13a1e2a9e8bb::from_int(8)
+}
+
+///|
+pub fn REFSSTREAMEXTENTPROPERTIES_13a1e2a9e8bb::refs_stream_extent_property_stream_reserved() -> REFSSTREAMEXTENTPROPERTIES_13a1e2a9e8bb {
+  REFSSTREAMEXTENTPROPERTIES_13a1e2a9e8bb::from_int(32)
+}
+
+///|
+pub fn REFSSTREAMEXTENTPROPERTIES_13a1e2a9e8bb::refs_stream_extent_property_valid() -> REFSSTREAMEXTENTPROPERTIES_13a1e2a9e8bb {
+  REFSSTREAMEXTENTPROPERTIES_13a1e2a9e8bb::from_int(16)
+}
+
+///|
+pub fn ALTERNATIVEARCHITECTURETYPE_fc4bf2f26fd6::end_alternatives() -> ALTERNATIVEARCHITECTURETYPE_fc4bf2f26fd6 {
+  ALTERNATIVEARCHITECTURETYPE_fc4bf2f26fd6::from_int(2)
+}
+
+///|
+pub fn ALTERNATIVEARCHITECTURETYPE_fc4bf2f26fd6::nec98x86() -> ALTERNATIVEARCHITECTURETYPE_fc4bf2f26fd6 {
+  ALTERNATIVEARCHITECTURETYPE_fc4bf2f26fd6::from_int(1)
+}
+
+///|
+pub fn ALTERNATIVEARCHITECTURETYPE_fc4bf2f26fd6::standard_design() -> ALTERNATIVEARCHITECTURETYPE_fc4bf2f26fd6 {
+  ALTERNATIVEARCHITECTURETYPE_fc4bf2f26fd6::from_int(0)
+}
+
+///|
+pub fn ARBITERACTION_898132f89f3f::add_reserved() -> ARBITERACTION_898132f89f3f {
+  ARBITERACTION_898132f89f3f::from_int(8)
+}
+
+///|
+pub fn ARBITERACTION_898132f89f3f::boot_allocation() -> ARBITERACTION_898132f89f3f {
+  ARBITERACTION_898132f89f3f::from_int(9)
+}
+
+///|
+pub fn ARBITERACTION_898132f89f3f::commit_allocation() -> ARBITERACTION_898132f89f3f {
+  ARBITERACTION_898132f89f3f::from_int(2)
+}
+
+///|
+pub fn ARBITERACTION_898132f89f3f::query_allocated_resources() -> ARBITERACTION_898132f89f3f {
+  ARBITERACTION_898132f89f3f::from_int(4)
+}
+
+///|
+pub fn ARBITERACTION_898132f89f3f::query_arbitrate() -> ARBITERACTION_898132f89f3f {
+  ARBITERACTION_898132f89f3f::from_int(7)
+}
+
+///|
+pub fn ARBITERACTION_898132f89f3f::query_conflict() -> ARBITERACTION_898132f89f3f {
+  ARBITERACTION_898132f89f3f::from_int(6)
+}
+
+///|
+pub fn ARBITERACTION_898132f89f3f::retest_allocation() -> ARBITERACTION_898132f89f3f {
+  ARBITERACTION_898132f89f3f::from_int(1)
+}
+
+///|
+pub fn ARBITERACTION_898132f89f3f::rollback_allocation() -> ARBITERACTION_898132f89f3f {
+  ARBITERACTION_898132f89f3f::from_int(3)
+}
+
+///|
+pub fn ARBITERACTION_898132f89f3f::test_allocation() -> ARBITERACTION_898132f89f3f {
+  ARBITERACTION_898132f89f3f::from_int(0)
+}
+
+///|
+pub fn ARBITERACTION_898132f89f3f::write_reserved_resources() -> ARBITERACTION_898132f89f3f {
+  ARBITERACTION_898132f89f3f::from_int(5)
+}
+
+///|
+pub fn ARBITERREQUESTSOURCE_289b7077cc0e::arbiter_request_hal_reported() -> ARBITERREQUESTSOURCE_289b7077cc0e {
+  ARBITERREQUESTSOURCE_289b7077cc0e::from_int(1)
+}
+
+///|
+pub fn ARBITERREQUESTSOURCE_289b7077cc0e::arbiter_request_legacy_assigned() -> ARBITERREQUESTSOURCE_289b7077cc0e {
+  ARBITERREQUESTSOURCE_289b7077cc0e::from_int(2)
+}
+
+///|
+pub fn ARBITERREQUESTSOURCE_289b7077cc0e::arbiter_request_legacy_reported() -> ARBITERREQUESTSOURCE_289b7077cc0e {
+  ARBITERREQUESTSOURCE_289b7077cc0e::from_int(0)
+}
+
+///|
+pub fn ARBITERREQUESTSOURCE_289b7077cc0e::arbiter_request_pnp_detected() -> ARBITERREQUESTSOURCE_289b7077cc0e {
+  ARBITERREQUESTSOURCE_289b7077cc0e::from_int(3)
+}
+
+///|
+pub fn ARBITERREQUESTSOURCE_289b7077cc0e::arbiter_request_pnp_enumerated() -> ARBITERREQUESTSOURCE_289b7077cc0e {
+  ARBITERREQUESTSOURCE_289b7077cc0e::from_int(4)
+}
+
+///|
+pub fn ARBITERREQUESTSOURCE_289b7077cc0e::arbiter_request_undefined() -> ARBITERREQUESTSOURCE_289b7077cc0e {
+  ARBITERREQUESTSOURCE_289b7077cc0e::from_int(-1)
+}
+
+///|
+pub fn ARBITERRESULT_64a38e051e6b::external_conflict() -> ARBITERRESULT_64a38e051e6b {
+  ARBITERRESULT_64a38e051e6b::from_int(1)
+}
+
+///|
+pub fn ARBITERRESULT_64a38e051e6b::null_request() -> ARBITERRESULT_64a38e051e6b {
+  ARBITERRESULT_64a38e051e6b::from_int(2)
+}
+
+///|
+pub fn ARBITERRESULT_64a38e051e6b::success() -> ARBITERRESULT_64a38e051e6b {
+  ARBITERRESULT_64a38e051e6b::from_int(0)
+}
+
+///|
+pub fn ARBITERRESULT_64a38e051e6b::undefined() -> ARBITERRESULT_64a38e051e6b {
+  ARBITERRESULT_64a38e051e6b::from_int(-1)
+}
+
+///|
+pub fn BDCBCALLBACKTYPE_a645de102900::bd_cb_initialize_image() -> BDCBCALLBACKTYPE_a645de102900 {
+  BDCBCALLBACKTYPE_a645de102900::from_int(1)
+}
+
+///|
+pub fn BDCBCALLBACKTYPE_a645de102900::bd_cb_status_update() -> BDCBCALLBACKTYPE_a645de102900 {
+  BDCBCALLBACKTYPE_a645de102900::from_int(0)
+}
+
+///|
+pub fn BDCBCLASSIFICATION_e05bd2fbca97::bd_cb_classification_end() -> BDCBCLASSIFICATION_e05bd2fbca97 {
+  BDCBCLASSIFICATION_e05bd2fbca97::from_int(4)
+}
+
+///|
+pub fn BDCBCLASSIFICATION_e05bd2fbca97::bd_cb_classification_known_bad_image() -> BDCBCLASSIFICATION_e05bd2fbca97 {
+  BDCBCLASSIFICATION_e05bd2fbca97::from_int(2)
+}
+
+///|
+pub fn BDCBCLASSIFICATION_e05bd2fbca97::bd_cb_classification_known_bad_image_boot_critical() -> BDCBCLASSIFICATION_e05bd2fbca97 {
+  BDCBCLASSIFICATION_e05bd2fbca97::from_int(3)
+}
+
+///|
+pub fn BDCBCLASSIFICATION_e05bd2fbca97::bd_cb_classification_known_good_image() -> BDCBCLASSIFICATION_e05bd2fbca97 {
+  BDCBCLASSIFICATION_e05bd2fbca97::from_int(1)
+}
+
+///|
+pub fn BDCBCLASSIFICATION_e05bd2fbca97::bd_cb_classification_unknown_image() -> BDCBCLASSIFICATION_e05bd2fbca97 {
+  BDCBCLASSIFICATION_e05bd2fbca97::from_int(0)
+}
+
+///|
+pub fn BDCBSTATUSUPDATETYPE_e02db1627d5b::bd_cb_status_prepare_for_dependency_load() -> BDCBSTATUSUPDATETYPE_e02db1627d5b {
+  BDCBSTATUSUPDATETYPE_e02db1627d5b::from_int(0)
+}
+
+///|
+pub fn BDCBSTATUSUPDATETYPE_e02db1627d5b::bd_cb_status_prepare_for_driver_load() -> BDCBSTATUSUPDATETYPE_e02db1627d5b {
+  BDCBSTATUSUPDATETYPE_e02db1627d5b::from_int(1)
+}
+
+///|
+pub fn BDCBSTATUSUPDATETYPE_e02db1627d5b::bd_cb_status_prepare_for_unload() -> BDCBSTATUSUPDATETYPE_e02db1627d5b {
+  BDCBSTATUSUPDATETYPE_e02db1627d5b::from_int(2)
+}
+
+///|
+pub fn BOUNDCALLBACKSTATUS_4731da091dcd::bound_exception_continue_search() -> BOUNDCALLBACKSTATUS_4731da091dcd {
+  BOUNDCALLBACKSTATUS_4731da091dcd::from_int(0)
+}
+
+///|
+pub fn BOUNDCALLBACKSTATUS_4731da091dcd::bound_exception_error() -> BOUNDCALLBACKSTATUS_4731da091dcd {
+  BOUNDCALLBACKSTATUS_4731da091dcd::from_int(2)
+}
+
+///|
+pub fn BOUNDCALLBACKSTATUS_4731da091dcd::bound_exception_handled() -> BOUNDCALLBACKSTATUS_4731da091dcd {
+  BOUNDCALLBACKSTATUS_4731da091dcd::from_int(1)
+}
+
+///|
+pub fn BOUNDCALLBACKSTATUS_4731da091dcd::bound_exception_maximum() -> BOUNDCALLBACKSTATUS_4731da091dcd {
+  BOUNDCALLBACKSTATUS_4731da091dcd::from_int(3)
+}
+
+///|
+pub fn BUSDATATYPE_8e1e0eb4e0bc::cbus_configuration() -> BUSDATATYPE_8e1e0eb4e0bc {
+  BUSDATATYPE_8e1e0eb4e0bc::from_int(3)
+}
+
+///|
+pub fn BUSDATATYPE_8e1e0eb4e0bc::cmos() -> BUSDATATYPE_8e1e0eb4e0bc {
+  BUSDATATYPE_8e1e0eb4e0bc::from_int(0)
+}
+
+///|
+pub fn BUSDATATYPE_8e1e0eb4e0bc::configuration_space_undefined() -> BUSDATATYPE_8e1e0eb4e0bc {
+  BUSDATATYPE_8e1e0eb4e0bc::from_int(-1)
+}
+
+///|
+pub fn BUSDATATYPE_8e1e0eb4e0bc::eisa_configuration() -> BUSDATATYPE_8e1e0eb4e0bc {
+  BUSDATATYPE_8e1e0eb4e0bc::from_int(1)
+}
+
+///|
+pub fn BUSDATATYPE_8e1e0eb4e0bc::mpi_configuration() -> BUSDATATYPE_8e1e0eb4e0bc {
+  BUSDATATYPE_8e1e0eb4e0bc::from_int(8)
+}
+
+///|
+pub fn BUSDATATYPE_8e1e0eb4e0bc::mpsa_configuration() -> BUSDATATYPE_8e1e0eb4e0bc {
+  BUSDATATYPE_8e1e0eb4e0bc::from_int(9)
+}
+
+///|
+pub fn BUSDATATYPE_8e1e0eb4e0bc::maximum_bus_data_type() -> BUSDATATYPE_8e1e0eb4e0bc {
+  BUSDATATYPE_8e1e0eb4e0bc::from_int(12)
+}
+
+///|
+pub fn BUSDATATYPE_8e1e0eb4e0bc::nu_bus_configuration() -> BUSDATATYPE_8e1e0eb4e0bc {
+  BUSDATATYPE_8e1e0eb4e0bc::from_int(6)
+}
+
+///|
+pub fn BUSDATATYPE_8e1e0eb4e0bc::pci_configuration() -> BUSDATATYPE_8e1e0eb4e0bc {
+  BUSDATATYPE_8e1e0eb4e0bc::from_int(4)
+}
+
+///|
+pub fn BUSDATATYPE_8e1e0eb4e0bc::pcmcia_configuration() -> BUSDATATYPE_8e1e0eb4e0bc {
+  BUSDATATYPE_8e1e0eb4e0bc::from_int(7)
+}
+
+///|
+pub fn BUSDATATYPE_8e1e0eb4e0bc::pnpisa_configuration() -> BUSDATATYPE_8e1e0eb4e0bc {
+  BUSDATATYPE_8e1e0eb4e0bc::from_int(10)
+}
+
+///|
+pub fn BUSDATATYPE_8e1e0eb4e0bc::pos() -> BUSDATATYPE_8e1e0eb4e0bc {
+  BUSDATATYPE_8e1e0eb4e0bc::from_int(2)
+}
+
+///|
+pub fn BUSDATATYPE_8e1e0eb4e0bc::sgi_internal_configuration() -> BUSDATATYPE_8e1e0eb4e0bc {
+  BUSDATATYPE_8e1e0eb4e0bc::from_int(11)
+}
+
+///|
+pub fn BUSDATATYPE_8e1e0eb4e0bc::vme_configuration() -> BUSDATATYPE_8e1e0eb4e0bc {
+  BUSDATATYPE_8e1e0eb4e0bc::from_int(5)
+}
+
+///|
+pub fn BUSQUERYIDTYPE_85b12502eb1b::bus_query_compatible_i_ds() -> BUSQUERYIDTYPE_85b12502eb1b {
+  BUSQUERYIDTYPE_85b12502eb1b::from_int(2)
+}
+
+///|
+pub fn BUSQUERYIDTYPE_85b12502eb1b::bus_query_container_id() -> BUSQUERYIDTYPE_85b12502eb1b {
+  BUSQUERYIDTYPE_85b12502eb1b::from_int(5)
+}
+
+///|
+pub fn BUSQUERYIDTYPE_85b12502eb1b::bus_query_device_id() -> BUSQUERYIDTYPE_85b12502eb1b {
+  BUSQUERYIDTYPE_85b12502eb1b::from_int(0)
+}
+
+///|
+pub fn BUSQUERYIDTYPE_85b12502eb1b::bus_query_device_serial_number() -> BUSQUERYIDTYPE_85b12502eb1b {
+  BUSQUERYIDTYPE_85b12502eb1b::from_int(4)
+}
+
+///|
+pub fn BUSQUERYIDTYPE_85b12502eb1b::bus_query_hardware_i_ds() -> BUSQUERYIDTYPE_85b12502eb1b {
+  BUSQUERYIDTYPE_85b12502eb1b::from_int(1)
+}
+
+///|
+pub fn BUSQUERYIDTYPE_85b12502eb1b::bus_query_instance_id() -> BUSQUERYIDTYPE_85b12502eb1b {
+  BUSQUERYIDTYPE_85b12502eb1b::from_int(3)
+}
+
+///|
+pub fn CMSHAREDISPOSITION_53e67d7d9214::cm_resource_share_device_exclusive() -> CMSHAREDISPOSITION_53e67d7d9214 {
+  CMSHAREDISPOSITION_53e67d7d9214::from_int(1)
+}
+
+///|
+pub fn CMSHAREDISPOSITION_53e67d7d9214::cm_resource_share_driver_exclusive() -> CMSHAREDISPOSITION_53e67d7d9214 {
+  CMSHAREDISPOSITION_53e67d7d9214::from_int(2)
+}
+
+///|
+pub fn CMSHAREDISPOSITION_53e67d7d9214::cm_resource_share_shared() -> CMSHAREDISPOSITION_53e67d7d9214 {
+  CMSHAREDISPOSITION_53e67d7d9214::from_int(3)
+}
+
+///|
+pub fn CMSHAREDISPOSITION_53e67d7d9214::cm_resource_share_undetermined() -> CMSHAREDISPOSITION_53e67d7d9214 {
+  CMSHAREDISPOSITION_53e67d7d9214::from_int(0)
+}
+
+///|
+pub fn CONFIGURATIONTYPE_33d69bbdc97a::arc_system() -> CONFIGURATIONTYPE_33d69bbdc97a {
+  CONFIGURATIONTYPE_33d69bbdc97a::from_int(0)
+}
+
+///|
+pub fn CONFIGURATIONTYPE_33d69bbdc97a::audio_controller() -> CONFIGURATIONTYPE_33d69bbdc97a {
+  CONFIGURATIONTYPE_33d69bbdc97a::from_int(23)
+}
+
+///|
+pub fn CONFIGURATIONTYPE_33d69bbdc97a::cdrom_controller() -> CONFIGURATIONTYPE_33d69bbdc97a {
+  CONFIGURATIONTYPE_33d69bbdc97a::from_int(15)
+}
+
+///|
+pub fn CONFIGURATIONTYPE_33d69bbdc97a::central_processor() -> CONFIGURATIONTYPE_33d69bbdc97a {
+  CONFIGURATIONTYPE_33d69bbdc97a::from_int(1)
+}
+
+///|
+pub fn CONFIGURATIONTYPE_33d69bbdc97a::disk_controller() -> CONFIGURATIONTYPE_33d69bbdc97a {
+  CONFIGURATIONTYPE_33d69bbdc97a::from_int(13)
+}
+
+///|
+pub fn CONFIGURATIONTYPE_33d69bbdc97a::disk_peripheral() -> CONFIGURATIONTYPE_33d69bbdc97a {
+  CONFIGURATIONTYPE_33d69bbdc97a::from_int(25)
+}
+
+///|
+pub fn CONFIGURATIONTYPE_33d69bbdc97a::display_controller() -> CONFIGURATIONTYPE_33d69bbdc97a {
+  CONFIGURATIONTYPE_33d69bbdc97a::from_int(19)
+}
+
+///|
+pub fn CONFIGURATIONTYPE_33d69bbdc97a::docking_information() -> CONFIGURATIONTYPE_33d69bbdc97a {
+  CONFIGURATIONTYPE_33d69bbdc97a::from_int(38)
+}
+
+///|
+pub fn CONFIGURATIONTYPE_33d69bbdc97a::dti_adapter() -> CONFIGURATIONTYPE_33d69bbdc97a {
+  CONFIGURATIONTYPE_33d69bbdc97a::from_int(11)
+}
+
+///|
+pub fn CONFIGURATIONTYPE_33d69bbdc97a::eisa_adapter() -> CONFIGURATIONTYPE_33d69bbdc97a {
+  CONFIGURATIONTYPE_33d69bbdc97a::from_int(8)
+}
+
+///|
+pub fn CONFIGURATIONTYPE_33d69bbdc97a::floating_point_processor() -> CONFIGURATIONTYPE_33d69bbdc97a {
+  CONFIGURATIONTYPE_33d69bbdc97a::from_int(2)
+}
+
+///|
+pub fn CONFIGURATIONTYPE_33d69bbdc97a::floppy_disk_peripheral() -> CONFIGURATIONTYPE_33d69bbdc97a {
+  CONFIGURATIONTYPE_33d69bbdc97a::from_int(26)
+}
+
+///|
+pub fn CONFIGURATIONTYPE_33d69bbdc97a::keyboard_controller() -> CONFIGURATIONTYPE_33d69bbdc97a {
+  CONFIGURATIONTYPE_33d69bbdc97a::from_int(22)
+}
+
+///|
+pub fn CONFIGURATIONTYPE_33d69bbdc97a::keyboard_peripheral() -> CONFIGURATIONTYPE_33d69bbdc97a {
+  CONFIGURATIONTYPE_33d69bbdc97a::from_int(32)
+}
+
+///|
+pub fn CONFIGURATIONTYPE_33d69bbdc97a::line_peripheral() -> CONFIGURATIONTYPE_33d69bbdc97a {
+  CONFIGURATIONTYPE_33d69bbdc97a::from_int(35)
+}
+
+///|
+pub fn CONFIGURATIONTYPE_33d69bbdc97a::maximum_type() -> CONFIGURATIONTYPE_33d69bbdc97a {
+  CONFIGURATIONTYPE_33d69bbdc97a::from_int(41)
+}
+
+///|
+pub fn CONFIGURATIONTYPE_33d69bbdc97a::modem_peripheral() -> CONFIGURATIONTYPE_33d69bbdc97a {
+  CONFIGURATIONTYPE_33d69bbdc97a::from_int(28)
+}
+
+///|
+pub fn CONFIGURATIONTYPE_33d69bbdc97a::monitor_peripheral() -> CONFIGURATIONTYPE_33d69bbdc97a {
+  CONFIGURATIONTYPE_33d69bbdc97a::from_int(29)
+}
+
+///|
+pub fn CONFIGURATIONTYPE_33d69bbdc97a::multi_function_adapter() -> CONFIGURATIONTYPE_33d69bbdc97a {
+  CONFIGURATIONTYPE_33d69bbdc97a::from_int(12)
+}
+
+///|
+pub fn CONFIGURATIONTYPE_33d69bbdc97a::network_controller() -> CONFIGURATIONTYPE_33d69bbdc97a {
+  CONFIGURATIONTYPE_33d69bbdc97a::from_int(18)
+}
+
+///|
+pub fn CONFIGURATIONTYPE_33d69bbdc97a::network_peripheral() -> CONFIGURATIONTYPE_33d69bbdc97a {
+  CONFIGURATIONTYPE_33d69bbdc97a::from_int(36)
+}
+
+///|
+pub fn CONFIGURATIONTYPE_33d69bbdc97a::other_controller() -> CONFIGURATIONTYPE_33d69bbdc97a {
+  CONFIGURATIONTYPE_33d69bbdc97a::from_int(24)
+}
+
+///|
+pub fn CONFIGURATIONTYPE_33d69bbdc97a::other_peripheral() -> CONFIGURATIONTYPE_33d69bbdc97a {
+  CONFIGURATIONTYPE_33d69bbdc97a::from_int(34)
+}
+
+///|
+pub fn CONFIGURATIONTYPE_33d69bbdc97a::parallel_controller() -> CONFIGURATIONTYPE_33d69bbdc97a {
+  CONFIGURATIONTYPE_33d69bbdc97a::from_int(20)
+}
+
+///|
+pub fn CONFIGURATIONTYPE_33d69bbdc97a::pointer_controller() -> CONFIGURATIONTYPE_33d69bbdc97a {
+  CONFIGURATIONTYPE_33d69bbdc97a::from_int(21)
+}
+
+///|
+pub fn CONFIGURATIONTYPE_33d69bbdc97a::pointer_peripheral() -> CONFIGURATIONTYPE_33d69bbdc97a {
+  CONFIGURATIONTYPE_33d69bbdc97a::from_int(31)
+}
+
+///|
+pub fn CONFIGURATIONTYPE_33d69bbdc97a::primary_dcache() -> CONFIGURATIONTYPE_33d69bbdc97a {
+  CONFIGURATIONTYPE_33d69bbdc97a::from_int(4)
+}
+
+///|
+pub fn CONFIGURATIONTYPE_33d69bbdc97a::primary_icache() -> CONFIGURATIONTYPE_33d69bbdc97a {
+  CONFIGURATIONTYPE_33d69bbdc97a::from_int(3)
+}
+
+///|
+pub fn CONFIGURATIONTYPE_33d69bbdc97a::printer_peripheral() -> CONFIGURATIONTYPE_33d69bbdc97a {
+  CONFIGURATIONTYPE_33d69bbdc97a::from_int(30)
+}
+
+///|
+pub fn CONFIGURATIONTYPE_33d69bbdc97a::real_mode_irq_routing_table() -> CONFIGURATIONTYPE_33d69bbdc97a {
+  CONFIGURATIONTYPE_33d69bbdc97a::from_int(39)
+}
+
+///|
+pub fn CONFIGURATIONTYPE_33d69bbdc97a::real_mode_pci_enumeration() -> CONFIGURATIONTYPE_33d69bbdc97a {
+  CONFIGURATIONTYPE_33d69bbdc97a::from_int(40)
+}
+
+///|
+pub fn CONFIGURATIONTYPE_33d69bbdc97a::scsi_adapter() -> CONFIGURATIONTYPE_33d69bbdc97a {
+  CONFIGURATIONTYPE_33d69bbdc97a::from_int(10)
+}
+
+///|
+pub fn CONFIGURATIONTYPE_33d69bbdc97a::secondary_cache() -> CONFIGURATIONTYPE_33d69bbdc97a {
+  CONFIGURATIONTYPE_33d69bbdc97a::from_int(7)
+}
+
+///|
+pub fn CONFIGURATIONTYPE_33d69bbdc97a::secondary_dcache() -> CONFIGURATIONTYPE_33d69bbdc97a {
+  CONFIGURATIONTYPE_33d69bbdc97a::from_int(6)
+}
+
+///|
+pub fn CONFIGURATIONTYPE_33d69bbdc97a::secondary_icache() -> CONFIGURATIONTYPE_33d69bbdc97a {
+  CONFIGURATIONTYPE_33d69bbdc97a::from_int(5)
+}
+
+///|
+pub fn CONFIGURATIONTYPE_33d69bbdc97a::serial_controller() -> CONFIGURATIONTYPE_33d69bbdc97a {
+  CONFIGURATIONTYPE_33d69bbdc97a::from_int(17)
+}
+
+///|
+pub fn CONFIGURATIONTYPE_33d69bbdc97a::system_memory() -> CONFIGURATIONTYPE_33d69bbdc97a {
+  CONFIGURATIONTYPE_33d69bbdc97a::from_int(37)
+}
+
+///|
+pub fn CONFIGURATIONTYPE_33d69bbdc97a::tape_controller() -> CONFIGURATIONTYPE_33d69bbdc97a {
+  CONFIGURATIONTYPE_33d69bbdc97a::from_int(14)
+}
+
+///|
+pub fn CONFIGURATIONTYPE_33d69bbdc97a::tape_peripheral() -> CONFIGURATIONTYPE_33d69bbdc97a {
+  CONFIGURATIONTYPE_33d69bbdc97a::from_int(27)
+}
+
+///|
+pub fn CONFIGURATIONTYPE_33d69bbdc97a::tc_adapter() -> CONFIGURATIONTYPE_33d69bbdc97a {
+  CONFIGURATIONTYPE_33d69bbdc97a::from_int(9)
+}
+
+///|
+pub fn CONFIGURATIONTYPE_33d69bbdc97a::terminal_peripheral() -> CONFIGURATIONTYPE_33d69bbdc97a {
+  CONFIGURATIONTYPE_33d69bbdc97a::from_int(33)
+}
+
+///|
+pub fn CONFIGURATIONTYPE_33d69bbdc97a::worm_controller() -> CONFIGURATIONTYPE_33d69bbdc97a {
+  CONFIGURATIONTYPE_33d69bbdc97a::from_int(16)
+}
+
+///|
+pub fn CREATEFILETYPE_256ee299ae19::mailslot() -> CREATEFILETYPE_256ee299ae19 {
+  CREATEFILETYPE_256ee299ae19::from_int(2)
+}
+
+///|
+pub fn CREATEFILETYPE_256ee299ae19::named_pipe() -> CREATEFILETYPE_256ee299ae19 {
+  CREATEFILETYPE_256ee299ae19::from_int(1)
+}
+
+///|
+pub fn CREATEFILETYPE_256ee299ae19::none() -> CREATEFILETYPE_256ee299ae19 {
+  CREATEFILETYPE_256ee299ae19::from_int(0)
+}
+
+///|
+pub fn D3COLDLASTTRANSITIONSTATUS_632abbd25f88::last_d_state_transition_d3cold() -> D3COLDLASTTRANSITIONSTATUS_632abbd25f88 {
+  D3COLDLASTTRANSITIONSTATUS_632abbd25f88::from_int(2)
+}
+
+///|
+pub fn D3COLDLASTTRANSITIONSTATUS_632abbd25f88::last_d_state_transition_d3hot() -> D3COLDLASTTRANSITIONSTATUS_632abbd25f88 {
+  D3COLDLASTTRANSITIONSTATUS_632abbd25f88::from_int(1)
+}
+
+///|
+pub fn D3COLDLASTTRANSITIONSTATUS_632abbd25f88::last_d_state_transition_status_unknown() -> D3COLDLASTTRANSITIONSTATUS_632abbd25f88 {
+  D3COLDLASTTRANSITIONSTATUS_632abbd25f88::from_int(0)
+}
+
+///|
+pub fn DEVICEDIRECTORYTYPE_984fc766e631::device_directory_data() -> DEVICEDIRECTORYTYPE_984fc766e631 {
+  DEVICEDIRECTORYTYPE_984fc766e631::from_int(0)
+}
+
+///|
+pub fn DEVICEINSTALLSTATE_3ea634530e5d::install_state_failed_install() -> DEVICEINSTALLSTATE_3ea634530e5d {
+  DEVICEINSTALLSTATE_3ea634530e5d::from_int(2)
+}
+
+///|
+pub fn DEVICEINSTALLSTATE_3ea634530e5d::install_state_finish_install() -> DEVICEINSTALLSTATE_3ea634530e5d {
+  DEVICEINSTALLSTATE_3ea634530e5d::from_int(3)
+}
+
+///|
+pub fn DEVICEINSTALLSTATE_3ea634530e5d::install_state_installed() -> DEVICEINSTALLSTATE_3ea634530e5d {
+  DEVICEINSTALLSTATE_3ea634530e5d::from_int(0)
+}
+
+///|
+pub fn DEVICEINSTALLSTATE_3ea634530e5d::install_state_needs_reinstall() -> DEVICEINSTALLSTATE_3ea634530e5d {
+  DEVICEINSTALLSTATE_3ea634530e5d::from_int(1)
+}
+
+///|
+pub fn DEVICEREGISTRYPROPERTY_f2017c26e63f::device_property_address() -> DEVICEREGISTRYPROPERTY_f2017c26e63f {
+  DEVICEREGISTRYPROPERTY_f2017c26e63f::from_int(16)
+}
+
+///|
+pub fn DEVICEREGISTRYPROPERTY_f2017c26e63f::device_property_allocated_resources() -> DEVICEREGISTRYPROPERTY_f2017c26e63f {
+  DEVICEREGISTRYPROPERTY_f2017c26e63f::from_int(21)
+}
+
+///|
+pub fn DEVICEREGISTRYPROPERTY_f2017c26e63f::device_property_boot_configuration() -> DEVICEREGISTRYPROPERTY_f2017c26e63f {
+  DEVICEREGISTRYPROPERTY_f2017c26e63f::from_int(3)
+}
+
+///|
+pub fn DEVICEREGISTRYPROPERTY_f2017c26e63f::device_property_boot_configuration_translated() -> DEVICEREGISTRYPROPERTY_f2017c26e63f {
+  DEVICEREGISTRYPROPERTY_f2017c26e63f::from_int(4)
+}
+
+///|
+pub fn DEVICEREGISTRYPROPERTY_f2017c26e63f::device_property_bus_number() -> DEVICEREGISTRYPROPERTY_f2017c26e63f {
+  DEVICEREGISTRYPROPERTY_f2017c26e63f::from_int(14)
+}
+
+///|
+pub fn DEVICEREGISTRYPROPERTY_f2017c26e63f::device_property_bus_type_guid() -> DEVICEREGISTRYPROPERTY_f2017c26e63f {
+  DEVICEREGISTRYPROPERTY_f2017c26e63f::from_int(8204)
+}
+
+///|
+pub fn DEVICEREGISTRYPROPERTY_f2017c26e63f::device_property_class_guid() -> DEVICEREGISTRYPROPERTY_f2017c26e63f {
+  DEVICEREGISTRYPROPERTY_f2017c26e63f::from_int(4102)
+}
+
+///|
+pub fn DEVICEREGISTRYPROPERTY_f2017c26e63f::device_property_class_name() -> DEVICEREGISTRYPROPERTY_f2017c26e63f {
+  DEVICEREGISTRYPROPERTY_f2017c26e63f::from_int(4101)
+}
+
+///|
+pub fn DEVICEREGISTRYPROPERTY_f2017c26e63f::device_property_compatible_i_ds() -> DEVICEREGISTRYPROPERTY_f2017c26e63f {
+  DEVICEREGISTRYPROPERTY_f2017c26e63f::from_int(16386)
+}
+
+///|
+pub fn DEVICEREGISTRYPROPERTY_f2017c26e63f::device_property_container_id() -> DEVICEREGISTRYPROPERTY_f2017c26e63f {
+  DEVICEREGISTRYPROPERTY_f2017c26e63f::from_int(4118)
+}
+
+///|
+pub fn DEVICEREGISTRYPROPERTY_f2017c26e63f::device_property_device_description() -> DEVICEREGISTRYPROPERTY_f2017c26e63f {
+  DEVICEREGISTRYPROPERTY_f2017c26e63f::from_int(4096)
+}
+
+///|
+pub fn DEVICEREGISTRYPROPERTY_f2017c26e63f::device_property_driver_key_name() -> DEVICEREGISTRYPROPERTY_f2017c26e63f {
+  DEVICEREGISTRYPROPERTY_f2017c26e63f::from_int(4103)
+}
+
+///|
+pub fn DEVICEREGISTRYPROPERTY_f2017c26e63f::device_property_enumerator_name() -> DEVICEREGISTRYPROPERTY_f2017c26e63f {
+  DEVICEREGISTRYPROPERTY_f2017c26e63f::from_int(4111)
+}
+
+///|
+pub fn DEVICEREGISTRYPROPERTY_f2017c26e63f::device_property_friendly_name() -> DEVICEREGISTRYPROPERTY_f2017c26e63f {
+  DEVICEREGISTRYPROPERTY_f2017c26e63f::from_int(4105)
+}
+
+///|
+pub fn DEVICEREGISTRYPROPERTY_f2017c26e63f::device_property_hardware_id() -> DEVICEREGISTRYPROPERTY_f2017c26e63f {
+  DEVICEREGISTRYPROPERTY_f2017c26e63f::from_int(16385)
+}
+
+///|
+pub fn DEVICEREGISTRYPROPERTY_f2017c26e63f::device_property_install_state() -> DEVICEREGISTRYPROPERTY_f2017c26e63f {
+  DEVICEREGISTRYPROPERTY_f2017c26e63f::from_int(18)
+}
+
+///|
+pub fn DEVICEREGISTRYPROPERTY_f2017c26e63f::device_property_legacy_bus_type() -> DEVICEREGISTRYPROPERTY_f2017c26e63f {
+  DEVICEREGISTRYPROPERTY_f2017c26e63f::from_int(13)
+}
+
+///|
+pub fn DEVICEREGISTRYPROPERTY_f2017c26e63f::device_property_location_information() -> DEVICEREGISTRYPROPERTY_f2017c26e63f {
+  DEVICEREGISTRYPROPERTY_f2017c26e63f::from_int(4106)
+}
+
+///|
+pub fn DEVICEREGISTRYPROPERTY_f2017c26e63f::device_property_manufacturer() -> DEVICEREGISTRYPROPERTY_f2017c26e63f {
+  DEVICEREGISTRYPROPERTY_f2017c26e63f::from_int(4104)
+}
+
+///|
+pub fn DEVICEREGISTRYPROPERTY_f2017c26e63f::device_property_physical_device_object_name() -> DEVICEREGISTRYPROPERTY_f2017c26e63f {
+  DEVICEREGISTRYPROPERTY_f2017c26e63f::from_int(4107)
+}
+
+///|
+pub fn DEVICEREGISTRYPROPERTY_f2017c26e63f::device_property_removal_policy() -> DEVICEREGISTRYPROPERTY_f2017c26e63f {
+  DEVICEREGISTRYPROPERTY_f2017c26e63f::from_int(19)
+}
+
+///|
+pub fn DEVICEREGISTRYPROPERTY_f2017c26e63f::device_property_resource_requirements() -> DEVICEREGISTRYPROPERTY_f2017c26e63f {
+  DEVICEREGISTRYPROPERTY_f2017c26e63f::from_int(20)
+}
+
+///|
+pub fn DEVICEREGISTRYPROPERTY_f2017c26e63f::device_property_ui_number() -> DEVICEREGISTRYPROPERTY_f2017c26e63f {
+  DEVICEREGISTRYPROPERTY_f2017c26e63f::from_int(17)
+}
+
+///|
+pub fn DEVICERELATIONTYPE_0b709d2751f8::bus_relations() -> DEVICERELATIONTYPE_0b709d2751f8 {
+  DEVICERELATIONTYPE_0b709d2751f8::from_int(0)
+}
+
+///|
+pub fn DEVICERELATIONTYPE_0b709d2751f8::ejection_relations() -> DEVICERELATIONTYPE_0b709d2751f8 {
+  DEVICERELATIONTYPE_0b709d2751f8::from_int(1)
+}
+
+///|
+pub fn DEVICERELATIONTYPE_0b709d2751f8::power_relations() -> DEVICERELATIONTYPE_0b709d2751f8 {
+  DEVICERELATIONTYPE_0b709d2751f8::from_int(2)
+}
+
+///|
+pub fn DEVICERELATIONTYPE_0b709d2751f8::removal_relations() -> DEVICERELATIONTYPE_0b709d2751f8 {
+  DEVICERELATIONTYPE_0b709d2751f8::from_int(3)
+}
+
+///|
+pub fn DEVICERELATIONTYPE_0b709d2751f8::single_bus_relations() -> DEVICERELATIONTYPE_0b709d2751f8 {
+  DEVICERELATIONTYPE_0b709d2751f8::from_int(5)
+}
+
+///|
+pub fn DEVICERELATIONTYPE_0b709d2751f8::target_device_relation() -> DEVICERELATIONTYPE_0b709d2751f8 {
+  DEVICERELATIONTYPE_0b709d2751f8::from_int(4)
+}
+
+///|
+pub fn DEVICERELATIONTYPE_0b709d2751f8::transport_relations() -> DEVICERELATIONTYPE_0b709d2751f8 {
+  DEVICERELATIONTYPE_0b709d2751f8::from_int(6)
+}
+
+///|
+pub fn DEVICEREMOVALPOLICY_b11c23e6fb32::removal_policy_expect_no_removal() -> DEVICEREMOVALPOLICY_b11c23e6fb32 {
+  DEVICEREMOVALPOLICY_b11c23e6fb32::from_int(1)
+}
+
+///|
+pub fn DEVICEREMOVALPOLICY_b11c23e6fb32::removal_policy_expect_orderly_removal() -> DEVICEREMOVALPOLICY_b11c23e6fb32 {
+  DEVICEREMOVALPOLICY_b11c23e6fb32::from_int(2)
+}
+
+///|
+pub fn DEVICEREMOVALPOLICY_b11c23e6fb32::removal_policy_expect_surprise_removal() -> DEVICEREMOVALPOLICY_b11c23e6fb32 {
+  DEVICEREMOVALPOLICY_b11c23e6fb32::from_int(3)
+}
+
+///|
+pub fn DEVICERESETTYPE_9fd6a057e9a9::function_level_device_reset() -> DEVICERESETTYPE_9fd6a057e9a9 {
+  DEVICERESETTYPE_9fd6a057e9a9::from_int(0)
+}
+
+///|
+pub fn DEVICERESETTYPE_9fd6a057e9a9::platform_level_device_reset() -> DEVICERESETTYPE_9fd6a057e9a9 {
+  DEVICERESETTYPE_9fd6a057e9a9::from_int(1)
+}
+
+///|
+pub fn DEVICETEXTTYPE_1790615744f9::device_text_description() -> DEVICETEXTTYPE_1790615744f9 {
+  DEVICETEXTTYPE_1790615744f9::from_int(0)
+}
+
+///|
+pub fn DEVICETEXTTYPE_1790615744f9::device_text_location_information() -> DEVICETEXTTYPE_1790615744f9 {
+  DEVICETEXTTYPE_1790615744f9::from_int(1)
+}
+
+///|
+pub fn DEVICEUSAGENOTIFICATIONTYPE_45996451779b::device_usage_type_boot() -> DEVICEUSAGENOTIFICATIONTYPE_45996451779b {
+  DEVICEUSAGENOTIFICATIONTYPE_45996451779b::from_int(4)
+}
+
+///|
+pub fn DEVICEUSAGENOTIFICATIONTYPE_45996451779b::device_usage_type_dump_file() -> DEVICEUSAGENOTIFICATIONTYPE_45996451779b {
+  DEVICEUSAGENOTIFICATIONTYPE_45996451779b::from_int(3)
+}
+
+///|
+pub fn DEVICEUSAGENOTIFICATIONTYPE_45996451779b::device_usage_type_guest_assigned() -> DEVICEUSAGENOTIFICATIONTYPE_45996451779b {
+  DEVICEUSAGENOTIFICATIONTYPE_45996451779b::from_int(6)
+}
+
+///|
+pub fn DEVICEUSAGENOTIFICATIONTYPE_45996451779b::device_usage_type_hibernation() -> DEVICEUSAGENOTIFICATIONTYPE_45996451779b {
+  DEVICEUSAGENOTIFICATIONTYPE_45996451779b::from_int(2)
+}
+
+///|
+pub fn DEVICEUSAGENOTIFICATIONTYPE_45996451779b::device_usage_type_paging() -> DEVICEUSAGENOTIFICATIONTYPE_45996451779b {
+  DEVICEUSAGENOTIFICATIONTYPE_45996451779b::from_int(1)
+}
+
+///|
+pub fn DEVICEUSAGENOTIFICATIONTYPE_45996451779b::device_usage_type_post_display() -> DEVICEUSAGENOTIFICATIONTYPE_45996451779b {
+  DEVICEUSAGENOTIFICATIONTYPE_45996451779b::from_int(5)
+}
+
+///|
+pub fn DEVICEUSAGENOTIFICATIONTYPE_45996451779b::device_usage_type_undefined() -> DEVICEUSAGENOTIFICATIONTYPE_45996451779b {
+  DEVICEUSAGENOTIFICATIONTYPE_45996451779b::from_int(0)
+}
+
+///|
+pub fn DEVICEWAKEDEPTH_b39e4485f6ec::d0() -> DEVICEWAKEDEPTH_b39e4485f6ec {
+  DEVICEWAKEDEPTH_b39e4485f6ec::from_int(1)
+}
+
+///|
+pub fn DEVICEWAKEDEPTH_b39e4485f6ec::d1() -> DEVICEWAKEDEPTH_b39e4485f6ec {
+  DEVICEWAKEDEPTH_b39e4485f6ec::from_int(2)
+}
+
+///|
+pub fn DEVICEWAKEDEPTH_b39e4485f6ec::d2() -> DEVICEWAKEDEPTH_b39e4485f6ec {
+  DEVICEWAKEDEPTH_b39e4485f6ec::from_int(3)
+}
+
+///|
+pub fn DEVICEWAKEDEPTH_b39e4485f6ec::d3cold() -> DEVICEWAKEDEPTH_b39e4485f6ec {
+  DEVICEWAKEDEPTH_b39e4485f6ec::from_int(5)
+}
+
+///|
+pub fn DEVICEWAKEDEPTH_b39e4485f6ec::d3hot() -> DEVICEWAKEDEPTH_b39e4485f6ec {
+  DEVICEWAKEDEPTH_b39e4485f6ec::from_int(4)
+}
+
+///|
+pub fn DEVICEWAKEDEPTH_b39e4485f6ec::maximum() -> DEVICEWAKEDEPTH_b39e4485f6ec {
+  DEVICEWAKEDEPTH_b39e4485f6ec::from_int(6)
+}
+
+///|
+pub fn DEVICEWAKEDEPTH_b39e4485f6ec::not_wakeable() -> DEVICEWAKEDEPTH_b39e4485f6ec {
+  DEVICEWAKEDEPTH_b39e4485f6ec::from_int(0)
+}
+
+///|
+pub fn DIRECTORYNOTIFYINFORMATIONCLASS_d9485d05153f::directory_notify_extended_information() -> DIRECTORYNOTIFYINFORMATIONCLASS_d9485d05153f {
+  DIRECTORYNOTIFYINFORMATIONCLASS_d9485d05153f::from_int(2)
+}
+
+///|
+pub fn DIRECTORYNOTIFYINFORMATIONCLASS_d9485d05153f::directory_notify_full_information() -> DIRECTORYNOTIFYINFORMATIONCLASS_d9485d05153f {
+  DIRECTORYNOTIFYINFORMATIONCLASS_d9485d05153f::from_int(3)
+}
+
+///|
+pub fn DIRECTORYNOTIFYINFORMATIONCLASS_d9485d05153f::directory_notify_information() -> DIRECTORYNOTIFYINFORMATIONCLASS_d9485d05153f {
+  DIRECTORYNOTIFYINFORMATIONCLASS_d9485d05153f::from_int(1)
+}
+
+///|
+pub fn DIRECTORYNOTIFYINFORMATIONCLASS_d9485d05153f::directory_notify_maximum_information() -> DIRECTORYNOTIFYINFORMATIONCLASS_d9485d05153f {
+  DIRECTORYNOTIFYINFORMATIONCLASS_d9485d05153f::from_int(4)
+}
+
+///|
+pub fn DMACOMMONBUFFEREXTENDEDCONFIGURATIONACCESSTYPE_c323d09d3eff::common_buffer_hardware_access_max() -> DMACOMMONBUFFEREXTENDEDCONFIGURATIONACCESSTYPE_c323d09d3eff {
+  DMACOMMONBUFFEREXTENDEDCONFIGURATIONACCESSTYPE_c323d09d3eff::from_int(3)
+}
+
+///|
+pub fn DMACOMMONBUFFEREXTENDEDCONFIGURATIONACCESSTYPE_c323d09d3eff::common_buffer_hardware_access_read_only() -> DMACOMMONBUFFEREXTENDEDCONFIGURATIONACCESSTYPE_c323d09d3eff {
+  DMACOMMONBUFFEREXTENDEDCONFIGURATIONACCESSTYPE_c323d09d3eff::from_int(0)
+}
+
+///|
+pub fn DMACOMMONBUFFEREXTENDEDCONFIGURATIONACCESSTYPE_c323d09d3eff::common_buffer_hardware_access_read_write() -> DMACOMMONBUFFEREXTENDEDCONFIGURATIONACCESSTYPE_c323d09d3eff {
+  DMACOMMONBUFFEREXTENDEDCONFIGURATIONACCESSTYPE_c323d09d3eff::from_int(2)
+}
+
+///|
+pub fn DMACOMMONBUFFEREXTENDEDCONFIGURATIONACCESSTYPE_c323d09d3eff::common_buffer_hardware_access_write_only() -> DMACOMMONBUFFEREXTENDEDCONFIGURATIONACCESSTYPE_c323d09d3eff {
+  DMACOMMONBUFFEREXTENDEDCONFIGURATIONACCESSTYPE_c323d09d3eff::from_int(1)
+}
+
+///|
+pub fn DMACOMMONBUFFEREXTENDEDCONFIGURATIONTYPE_9688b7632966::common_buffer_config_type_hardware_access_permissions() -> DMACOMMONBUFFEREXTENDEDCONFIGURATIONTYPE_9688b7632966 {
+  DMACOMMONBUFFEREXTENDEDCONFIGURATIONTYPE_9688b7632966::from_int(2)
+}
+
+///|
+pub fn DMACOMMONBUFFEREXTENDEDCONFIGURATIONTYPE_9688b7632966::common_buffer_config_type_logical_address_limits() -> DMACOMMONBUFFEREXTENDEDCONFIGURATIONTYPE_9688b7632966 {
+  DMACOMMONBUFFEREXTENDEDCONFIGURATIONTYPE_9688b7632966::from_int(0)
+}
+
+///|
+pub fn DMACOMMONBUFFEREXTENDEDCONFIGURATIONTYPE_9688b7632966::common_buffer_config_type_max() -> DMACOMMONBUFFEREXTENDEDCONFIGURATIONTYPE_9688b7632966 {
+  DMACOMMONBUFFEREXTENDEDCONFIGURATIONTYPE_9688b7632966::from_int(3)
+}
+
+///|
+pub fn DMACOMMONBUFFEREXTENDEDCONFIGURATIONTYPE_9688b7632966::common_buffer_config_type_sub_section() -> DMACOMMONBUFFEREXTENDEDCONFIGURATIONTYPE_9688b7632966 {
+  DMACOMMONBUFFEREXTENDEDCONFIGURATIONTYPE_9688b7632966::from_int(1)
+}
+
+///|
+pub fn DMACOMPLETIONSTATUS_d464903df123::dma_aborted() -> DMACOMPLETIONSTATUS_d464903df123 {
+  DMACOMPLETIONSTATUS_d464903df123::from_int(1)
+}
+
+///|
+pub fn DMACOMPLETIONSTATUS_d464903df123::dma_cancelled() -> DMACOMPLETIONSTATUS_d464903df123 {
+  DMACOMPLETIONSTATUS_d464903df123::from_int(3)
+}
+
+///|
+pub fn DMACOMPLETIONSTATUS_d464903df123::dma_complete() -> DMACOMPLETIONSTATUS_d464903df123 {
+  DMACOMPLETIONSTATUS_d464903df123::from_int(0)
+}
+
+///|
+pub fn DMACOMPLETIONSTATUS_d464903df123::dma_error() -> DMACOMPLETIONSTATUS_d464903df123 {
+  DMACOMPLETIONSTATUS_d464903df123::from_int(2)
+}
+
+///|
+pub fn DMASPEED_2c49244d38f5::compatible() -> DMASPEED_2c49244d38f5 {
+  DMASPEED_2c49244d38f5::from_int(0)
+}
+
+///|
+pub fn DMASPEED_2c49244d38f5::maximum_dma_speed() -> DMASPEED_2c49244d38f5 {
+  DMASPEED_2c49244d38f5::from_int(5)
+}
+
+///|
+pub fn DMASPEED_2c49244d38f5::type_a() -> DMASPEED_2c49244d38f5 {
+  DMASPEED_2c49244d38f5::from_int(1)
+}
+
+///|
+pub fn DMASPEED_2c49244d38f5::type_b() -> DMASPEED_2c49244d38f5 {
+  DMASPEED_2c49244d38f5::from_int(2)
+}
+
+///|
+pub fn DMASPEED_2c49244d38f5::type_c() -> DMASPEED_2c49244d38f5 {
+  DMASPEED_2c49244d38f5::from_int(3)
+}
+
+///|
+pub fn DMASPEED_2c49244d38f5::type_f() -> DMASPEED_2c49244d38f5 {
+  DMASPEED_2c49244d38f5::from_int(4)
+}
+
+///|
+pub fn DMAWIDTH_3b11bc32ab4d::maximum_dma_width() -> DMAWIDTH_3b11bc32ab4d {
+  DMAWIDTH_3b11bc32ab4d::from_int(5)
+}
+
+///|
+pub fn DMAWIDTH_3b11bc32ab4d::width16_bits() -> DMAWIDTH_3b11bc32ab4d {
+  DMAWIDTH_3b11bc32ab4d::from_int(1)
+}
+
+///|
+pub fn DMAWIDTH_3b11bc32ab4d::width32_bits() -> DMAWIDTH_3b11bc32ab4d {
+  DMAWIDTH_3b11bc32ab4d::from_int(2)
+}
+
+///|
+pub fn DMAWIDTH_3b11bc32ab4d::width64_bits() -> DMAWIDTH_3b11bc32ab4d {
+  DMAWIDTH_3b11bc32ab4d::from_int(3)
+}
+
+///|
+pub fn DMAWIDTH_3b11bc32ab4d::width8_bits() -> DMAWIDTH_3b11bc32ab4d {
+  DMAWIDTH_3b11bc32ab4d::from_int(0)
+}
+
+///|
+pub fn DMAWIDTH_3b11bc32ab4d::width_no_wrap() -> DMAWIDTH_3b11bc32ab4d {
+  DMAWIDTH_3b11bc32ab4d::from_int(4)
+}
+
+///|
+pub fn DOMAINCONFIGURATIONARCH_15338571c87d::domain_configuration_arm64() -> DOMAINCONFIGURATIONARCH_15338571c87d {
+  DOMAINCONFIGURATIONARCH_15338571c87d::from_int(0)
+}
+
+///|
+pub fn DOMAINCONFIGURATIONARCH_15338571c87d::domain_configuration_invalid() -> DOMAINCONFIGURATIONARCH_15338571c87d {
+  DOMAINCONFIGURATIONARCH_15338571c87d::from_int(2)
+}
+
+///|
+pub fn DOMAINCONFIGURATIONARCH_15338571c87d::domain_configuration_x64() -> DOMAINCONFIGURATIONARCH_15338571c87d {
+  DOMAINCONFIGURATIONARCH_15338571c87d::from_int(1)
+}
+
+///|
+pub fn DRIVERDIRECTORYTYPE_3898ed59c1f6::driver_directory_data() -> DRIVERDIRECTORYTYPE_3898ed59c1f6 {
+  DRIVERDIRECTORYTYPE_3898ed59c1f6::from_int(1)
+}
+
+///|
+pub fn DRIVERDIRECTORYTYPE_3898ed59c1f6::driver_directory_image() -> DRIVERDIRECTORYTYPE_3898ed59c1f6 {
+  DRIVERDIRECTORYTYPE_3898ed59c1f6::from_int(0)
+}
+
+///|
+pub fn DRIVERDIRECTORYTYPE_3898ed59c1f6::driver_directory_shared_data() -> DRIVERDIRECTORYTYPE_3898ed59c1f6 {
+  DRIVERDIRECTORYTYPE_3898ed59c1f6::from_int(2)
+}
+
+///|
+pub fn DRIVERREGKEYTYPE_173dc002538e::driver_reg_key_parameters() -> DRIVERREGKEYTYPE_173dc002538e {
+  DRIVERREGKEYTYPE_173dc002538e::from_int(0)
+}
+
+///|
+pub fn DRIVERREGKEYTYPE_173dc002538e::driver_reg_key_persistent_state() -> DRIVERREGKEYTYPE_173dc002538e {
+  DRIVERREGKEYTYPE_173dc002538e::from_int(1)
+}
+
+///|
+pub fn DRIVERREGKEYTYPE_173dc002538e::driver_reg_key_shared_persistent_state() -> DRIVERREGKEYTYPE_173dc002538e {
+  DRIVERREGKEYTYPE_173dc002538e::from_int(2)
+}
+
+///|
+pub fn DRIVERRUNTIMEINITFLAGS_cf9eefafd7ae::drv_rt_pool_nx_opt_in() -> DRIVERRUNTIMEINITFLAGS_cf9eefafd7ae {
+  DRIVERRUNTIMEINITFLAGS_cf9eefafd7ae::from_int(1)
+}
+
+///|
+pub fn DRIVERRUNTIMEINITFLAGS_cf9eefafd7ae::last_drv_rt_flag() -> DRIVERRUNTIMEINITFLAGS_cf9eefafd7ae {
+  DRIVERRUNTIMEINITFLAGS_cf9eefafd7ae::from_int(2)
+}
+
+///|
+pub fn EXTENDEDAGPREGISTER_08b080811c99::agp_control() -> EXTENDEDAGPREGISTER_08b080811c99 {
+  EXTENDEDAGPREGISTER_08b080811c99::from_int(1)
+}
+
+///|
+pub fn EXTENDEDAGPREGISTER_08b080811c99::aperture_page_size() -> EXTENDEDAGPREGISTER_08b080811c99 {
+  EXTENDEDAGPREGISTER_08b080811c99::from_int(3)
+}
+
+///|
+pub fn EXTENDEDAGPREGISTER_08b080811c99::aperture_size() -> EXTENDEDAGPREGISTER_08b080811c99 {
+  EXTENDEDAGPREGISTER_08b080811c99::from_int(2)
+}
+
+///|
+pub fn EXTENDEDAGPREGISTER_08b080811c99::gart_high() -> EXTENDEDAGPREGISTER_08b080811c99 {
+  EXTENDEDAGPREGISTER_08b080811c99::from_int(5)
+}
+
+///|
+pub fn EXTENDEDAGPREGISTER_08b080811c99::gart_low() -> EXTENDEDAGPREGISTER_08b080811c99 {
+  EXTENDEDAGPREGISTER_08b080811c99::from_int(4)
+}
+
+///|
+pub fn EXTENDEDAGPREGISTER_08b080811c99::isoch_command() -> EXTENDEDAGPREGISTER_08b080811c99 {
+  EXTENDEDAGPREGISTER_08b080811c99::from_int(6)
+}
+
+///|
+pub fn EXTENDEDAGPREGISTER_08b080811c99::isoch_status() -> EXTENDEDAGPREGISTER_08b080811c99 {
+  EXTENDEDAGPREGISTER_08b080811c99::from_int(0)
+}
+
+///|
+pub fn EXPOOLPRIORITY_ebc4d0a437ad::high_pool_priority() -> EXPOOLPRIORITY_ebc4d0a437ad {
+  EXPOOLPRIORITY_ebc4d0a437ad::from_int(32)
+}
+
+///|
+pub fn EXPOOLPRIORITY_ebc4d0a437ad::high_pool_priority_special_pool_overrun() -> EXPOOLPRIORITY_ebc4d0a437ad {
+  EXPOOLPRIORITY_ebc4d0a437ad::from_int(40)
+}
+
+///|
+pub fn EXPOOLPRIORITY_ebc4d0a437ad::high_pool_priority_special_pool_underrun() -> EXPOOLPRIORITY_ebc4d0a437ad {
+  EXPOOLPRIORITY_ebc4d0a437ad::from_int(41)
+}
+
+///|
+pub fn EXPOOLPRIORITY_ebc4d0a437ad::low_pool_priority() -> EXPOOLPRIORITY_ebc4d0a437ad {
+  EXPOOLPRIORITY_ebc4d0a437ad::from_int(0)
+}
+
+///|
+pub fn EXPOOLPRIORITY_ebc4d0a437ad::low_pool_priority_special_pool_overrun() -> EXPOOLPRIORITY_ebc4d0a437ad {
+  EXPOOLPRIORITY_ebc4d0a437ad::from_int(8)
+}
+
+///|
+pub fn EXPOOLPRIORITY_ebc4d0a437ad::low_pool_priority_special_pool_underrun() -> EXPOOLPRIORITY_ebc4d0a437ad {
+  EXPOOLPRIORITY_ebc4d0a437ad::from_int(9)
+}
+
+///|
+pub fn EXPOOLPRIORITY_ebc4d0a437ad::normal_pool_priority() -> EXPOOLPRIORITY_ebc4d0a437ad {
+  EXPOOLPRIORITY_ebc4d0a437ad::from_int(16)
+}
+
+///|
+pub fn EXPOOLPRIORITY_ebc4d0a437ad::normal_pool_priority_special_pool_overrun() -> EXPOOLPRIORITY_ebc4d0a437ad {
+  EXPOOLPRIORITY_ebc4d0a437ad::from_int(24)
+}
+
+///|
+pub fn EXPOOLPRIORITY_ebc4d0a437ad::normal_pool_priority_special_pool_underrun() -> EXPOOLPRIORITY_ebc4d0a437ad {
+  EXPOOLPRIORITY_ebc4d0a437ad::from_int(25)
+}
+
+///|
+pub fn FAULTINFORMATIONARCH_a247340881e4::fault_information_arm64() -> FAULTINFORMATIONARCH_a247340881e4 {
+  FAULTINFORMATIONARCH_a247340881e4::from_int(1)
+}
+
+///|
+pub fn FAULTINFORMATIONARCH_a247340881e4::fault_information_invalid() -> FAULTINFORMATIONARCH_a247340881e4 {
+  FAULTINFORMATIONARCH_a247340881e4::from_int(0)
+}
+
+///|
+pub fn FAULTINFORMATIONARCH_a247340881e4::fault_information_x64() -> FAULTINFORMATIONARCH_a247340881e4 {
+  FAULTINFORMATIONARCH_a247340881e4::from_int(2)
+}
+
+///|
+pub fn FAULTINFORMATIONARM64TYPE_fef4285bcc20::access_flag_fault() -> FAULTINFORMATIONARM64TYPE_fef4285bcc20 {
+  FAULTINFORMATIONARM64TYPE_fef4285bcc20::from_int(5)
+}

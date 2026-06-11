@@ -1,0 +1,19 @@
+///|
+pub fn ENUMPROCESSMODULESEXFLAGS_527da8faa106::list_modules_32_bit() -> ENUMPROCESSMODULESEXFLAGS_527da8faa106 {
+  ENUMPROCESSMODULESEXFLAGS_527da8faa106::from_int(1U.reinterpret_as_int())
+}
+
+///|
+pub fn ENUMPROCESSMODULESEXFLAGS_527da8faa106::list_modules_64_bit() -> ENUMPROCESSMODULESEXFLAGS_527da8faa106 {
+  ENUMPROCESSMODULESEXFLAGS_527da8faa106::from_int(2U.reinterpret_as_int())
+}
+
+///|
+pub fn ENUMPROCESSMODULESEXFLAGS_527da8faa106::list_modules_all() -> ENUMPROCESSMODULESEXFLAGS_527da8faa106 {
+  ENUMPROCESSMODULESEXFLAGS_527da8faa106::from_int(3U.reinterpret_as_int())
+}
+
+///|
+pub fn ENUMPROCESSMODULESEXFLAGS_527da8faa106::list_modules_default() -> ENUMPROCESSMODULESEXFLAGS_527da8faa106 {
+  ENUMPROCESSMODULESEXFLAGS_527da8faa106::from_int(0U.reinterpret_as_int())
+}

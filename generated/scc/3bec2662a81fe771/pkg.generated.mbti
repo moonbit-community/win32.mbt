@@ -1,0 +1,535 @@
+// Generated using `moon info`, DON'T EDIT IT
+package "moonbit-community/win32api/scc/3bec2662a81fe771"
+
+import {
+  "moonbit-community/win32api/runtime/core",
+  "moonbit-community/win32api/runtime/strings",
+  "moonbitlang/core/debug",
+}
+
+// Values
+pub let amsi_attribute_all_address_5d81a04eea0e : Int
+
+pub let amsi_attribute_all_size_371eda20905e : Int
+
+pub let amsi_attribute_app_name_2cbc7e769ded : Int
+
+pub let amsi_attribute_content_address_60a1a18ce5de : Int
+
+pub let amsi_attribute_content_name_7bca28eb4e5a : Int
+
+pub let amsi_attribute_content_size_fc82d1c06ed6 : Int
+
+pub let amsi_attribute_quiet_e75714ad3cb6 : Int
+
+pub let amsi_attribute_redirect_chain_address_21b63de15eb1 : Int
+
+pub let amsi_attribute_redirect_chain_size_3b981ae5c62f : Int
+
+pub let amsi_attribute_session_1c0f6506b78c : Int
+
+pub fn amsi_close_session_50ef84134cf6(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn amsi_close_session_50ef84134cf6_raw(@core.RawAddress, @core.RawAddress) -> Unit
+
+pub fn amsi_initialize_caeb23437668(@strings.PWStr, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn amsi_initialize_caeb23437668_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn amsi_notify_operation_c92311978d06(@core.RawAddress, @core.RawAddress, UInt, @strings.PWStr?, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn amsi_notify_operation_c92311978d06_raw(@core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn amsi_open_session_60be9f320cd4(@core.RawAddress, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn amsi_open_session_60be9f320cd4_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub let amsi_result_blocked_by_admin_end_0ce8ab4159ea : Int
+
+pub let amsi_result_blocked_by_admin_start_926674cb3fbc : Int
+
+pub let amsi_result_clean_a426e543e8fb : Int
+
+pub let amsi_result_detected_d417fca43baa : Int
+
+pub let amsi_result_not_detected_48f564e0b6d5 : Int
+
+pub fn amsi_scan_buffer_93eafe35fef2(@core.RawAddress, @core.RawAddress, UInt, @strings.PWStr?, @core.RawAddress, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn amsi_scan_buffer_93eafe35fef2_raw(@core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn amsi_scan_string_f18d2802ee5b(@core.RawAddress, @strings.PWStr, @strings.PWStr?, @core.RawAddress, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn amsi_scan_string_f18d2802ee5b_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub let amsi_uac_msi_action_install_344a67511e2b : Int
+
+pub let amsi_uac_msi_action_maintenance_5269fa1907ea : Int
+
+pub let amsi_uac_msi_action_max_8c00e572290d : Int
+
+pub let amsi_uac_msi_action_uninstall_bc7db8d58841 : Int
+
+pub let amsi_uac_msi_action_update_c5e7e069d75b : Int
+
+pub let amsi_uac_request_type_ax_e66ab2e6ae56 : Int
+
+pub let amsi_uac_request_type_com_e4e141575425 : Int
+
+pub let amsi_uac_request_type_exe_864b6f6e1c36 : Int
+
+pub let amsi_uac_request_type_max_903622799657 : Int
+
+pub let amsi_uac_request_type_msi_d6b5ed8ba14b : Int
+
+pub let amsi_uac_request_type_packaged_app_a5d542014e44 : Int
+
+pub let amsi_uac_trust_state_blocked_8105bf55ee02 : Int
+
+pub let amsi_uac_trust_state_max_c188ff500af9 : Int
+
+pub let amsi_uac_trust_state_trusted_d733a6744567 : Int
+
+pub let amsi_uac_trust_state_untrusted_d6977813005b : Int
+
+pub fn amsi_uninitialize_651f17c69022(@core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn amsi_uninitialize_651f17c69022_raw(@core.RawAddress) -> Unit
+
+pub let amsiuacrequestaxinfo_b7e6669d51e5_alignment : Int
+
+pub let amsiuacrequestaxinfo_b7e6669d51e5_size : Int
+
+pub let amsiuacrequestcominfo_b7e7c16bb9cf_alignment : Int
+
+pub let amsiuacrequestcominfo_b7e7c16bb9cf_size : Int
+
+pub let amsiuacrequestcontext_4a8570014a05_alignment : Int
+
+pub let amsiuacrequestcontext_4a8570014a05_size : Int
+
+pub let amsiuacrequestcontext_request_type_e_union_6bb9cf00103e_alignment : Int
+
+pub let amsiuacrequestcontext_request_type_e_union_6bb9cf00103e_size : Int
+
+pub let amsiuacrequestexeinfo_e93179a3331f_alignment : Int
+
+pub let amsiuacrequestexeinfo_e93179a3331f_size : Int
+
+pub let amsiuacrequestmsiinfo_02b71e7abbcc_alignment : Int
+
+pub let amsiuacrequestmsiinfo_02b71e7abbcc_size : Int
+
+pub let amsiuacrequestpackagedappinfo_cb1dc734668f_alignment : Int
+
+pub let amsiuacrequestpackagedappinfo_cb1dc734668f_size : Int
+
+pub let c_antimalware_5a5aede4bbf0_alignment : Int
+
+pub let c_antimalware_5a5aede4bbf0_size : Int
+
+pub fn close_session_adccbf6f791f_raw(@core.RawAddress, UInt64) -> Unit
+
+pub fn close_session_e4211246a105_raw(@core.RawAddress, UInt64) -> Unit
+
+pub fn display_name_861d198fc48a(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn display_name_861d198fc48a_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn display_name_dad71177e99a(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn display_name_dad71177e99a_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn get_attribute_77dede1c0ef4(@core.RawAddress, Int, UInt, @core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn get_attribute_77dede1c0ef4_raw(@core.RawAddress, Int, UInt, @core.RawAddress, @core.RawAddress) -> Int
+
+pub let hamsicontext_e4a02f0208bb_alignment : Int
+
+pub let hamsicontext_e4a02f0208bb_size : Int
+
+pub let hamsisession_aaaf61111274_alignment : Int
+
+pub let hamsisession_aaaf61111274_size : Int
+
+pub fn install_elam_certificate_info_e40d0a7e8481(@core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn install_elam_certificate_info_e40d0a7e8481_raw(@core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn notify_1b7acc7f2ec4(@core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn notify_1b7acc7f2ec4_raw(@core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn notify_49fbfd5f5f37(@core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn notify_49fbfd5f5f37_raw(@core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn read_be0b4f201566(@core.RawAddress, UInt64, UInt, @core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn read_be0b4f201566_raw(@core.RawAddress, UInt64, UInt, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn scan_16a002b66f7d(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn scan_16a002b66f7d_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn scan_ca07218fa724(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn scan_ca07218fa724_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn uac_scan_11458659a70f(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn uac_scan_11458659a70f_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+// Errors
+
+// Types and methods
+pub(all) struct AMSIATTRIBUTE_e12a1395c3cb(Int) derive(Compare, Eq, @debug.Debug)
+pub fn AMSIATTRIBUTE_e12a1395c3cb::all_address() -> Self
+pub fn AMSIATTRIBUTE_e12a1395c3cb::all_size() -> Self
+pub fn AMSIATTRIBUTE_e12a1395c3cb::app_name() -> Self
+pub fn AMSIATTRIBUTE_e12a1395c3cb::content_address() -> Self
+pub fn AMSIATTRIBUTE_e12a1395c3cb::content_name() -> Self
+pub fn AMSIATTRIBUTE_e12a1395c3cb::content_size() -> Self
+pub fn AMSIATTRIBUTE_e12a1395c3cb::from_int(Int) -> Self
+pub fn AMSIATTRIBUTE_e12a1395c3cb::quiet() -> Self
+pub fn AMSIATTRIBUTE_e12a1395c3cb::redirect_chain_address() -> Self
+pub fn AMSIATTRIBUTE_e12a1395c3cb::redirect_chain_size() -> Self
+pub fn AMSIATTRIBUTE_e12a1395c3cb::session() -> Self
+pub fn AMSIATTRIBUTE_e12a1395c3cb::to_int(Self) -> Int
+
+pub(all) struct AMSIRESULT_971ac46549b7(Int) derive(Compare, Eq, @debug.Debug)
+pub fn AMSIRESULT_971ac46549b7::blocked_by_admin_end() -> Self
+pub fn AMSIRESULT_971ac46549b7::blocked_by_admin_start() -> Self
+pub fn AMSIRESULT_971ac46549b7::clean() -> Self
+pub fn AMSIRESULT_971ac46549b7::detected() -> Self
+pub fn AMSIRESULT_971ac46549b7::from_int(Int) -> Self
+pub fn AMSIRESULT_971ac46549b7::not_detected() -> Self
+pub fn AMSIRESULT_971ac46549b7::to_int(Self) -> Int
+
+pub(all) struct AMSIUACMSIACTION_0e8fd6981169(Int) derive(Compare, Eq, @debug.Debug)
+pub fn AMSIUACMSIACTION_0e8fd6981169::from_int(Int) -> Self
+pub fn AMSIUACMSIACTION_0e8fd6981169::install() -> Self
+pub fn AMSIUACMSIACTION_0e8fd6981169::maintenance() -> Self
+pub fn AMSIUACMSIACTION_0e8fd6981169::max() -> Self
+pub fn AMSIUACMSIACTION_0e8fd6981169::to_int(Self) -> Int
+pub fn AMSIUACMSIACTION_0e8fd6981169::uninstall() -> Self
+pub fn AMSIUACMSIACTION_0e8fd6981169::update() -> Self
+
+pub(all) struct AMSIUACREQUESTAXINFO_b7e6669d51e5 {
+  raw_buffer : @core.NativeBuffer
+  mut root_lpwsz_local_install_path : @strings.PWStrBuffer?
+  mut root_lpwsz_source_url : @strings.PWStrBuffer?
+}
+pub fn AMSIUACREQUESTAXINFO_b7e6669d51e5::abi_alignment() -> Int
+pub fn AMSIUACREQUESTAXINFO_b7e6669d51e5::abi_size() -> Int
+pub fn AMSIUACREQUESTAXINFO_b7e6669d51e5::bytes(Self) -> Bytes raise @core.WindowsError
+pub fn AMSIUACREQUESTAXINFO_b7e6669d51e5::clear_lpwsz_local_install_path(Self) -> Unit raise @core.WindowsError
+pub fn AMSIUACREQUESTAXINFO_b7e6669d51e5::clear_lpwsz_source_url(Self) -> Unit raise @core.WindowsError
+pub fn AMSIUACREQUESTAXINFO_b7e6669d51e5::from_bytes(Bytes) -> Self raise @core.WindowsError
+pub fn AMSIUACREQUESTAXINFO_b7e6669d51e5::lpwsz_local_install_path_raw(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn AMSIUACREQUESTAXINFO_b7e6669d51e5::lpwsz_source_url_raw(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn AMSIUACREQUESTAXINFO_b7e6669d51e5::new() -> Self raise @core.WindowsError
+pub fn AMSIUACREQUESTAXINFO_b7e6669d51e5::raw_address(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn AMSIUACREQUESTAXINFO_b7e6669d51e5::set_lpwsz_local_install_path(Self, @strings.PWStrBuffer) -> Unit raise @core.WindowsError
+pub fn AMSIUACREQUESTAXINFO_b7e6669d51e5::set_lpwsz_local_install_path_raw(Self, @core.RawAddress) -> Unit raise @core.WindowsError
+pub fn AMSIUACREQUESTAXINFO_b7e6669d51e5::set_lpwsz_source_url(Self, @strings.PWStrBuffer) -> Unit raise @core.WindowsError
+pub fn AMSIUACREQUESTAXINFO_b7e6669d51e5::set_lpwsz_source_url_raw(Self, @core.RawAddress) -> Unit raise @core.WindowsError
+pub fn AMSIUACREQUESTAXINFO_b7e6669d51e5::set_ul_length(Self, UInt) -> Unit raise @core.WindowsError
+pub fn AMSIUACREQUESTAXINFO_b7e6669d51e5::ul_length(Self) -> UInt raise @core.WindowsError
+pub fn[T] AMSIUACREQUESTAXINFO_b7e6669d51e5::with_raw_address(Self, (@core.RawAddress) -> T raise?) -> T raise
+pub impl Eq for AMSIUACREQUESTAXINFO_b7e6669d51e5
+pub impl @debug.Debug for AMSIUACREQUESTAXINFO_b7e6669d51e5
+
+pub(all) struct AMSIUACREQUESTCOMINFO_b7e7c16bb9cf {
+  raw_buffer : @core.NativeBuffer
+  mut root_lpwsz_server_binary : @strings.PWStrBuffer?
+  mut root_lpwsz_requestor : @strings.PWStrBuffer?
+}
+pub fn AMSIUACREQUESTCOMINFO_b7e7c16bb9cf::abi_alignment() -> Int
+pub fn AMSIUACREQUESTCOMINFO_b7e7c16bb9cf::abi_size() -> Int
+pub fn AMSIUACREQUESTCOMINFO_b7e7c16bb9cf::bytes(Self) -> Bytes raise @core.WindowsError
+pub fn AMSIUACREQUESTCOMINFO_b7e7c16bb9cf::clear_lpwsz_requestor(Self) -> Unit raise @core.WindowsError
+pub fn AMSIUACREQUESTCOMINFO_b7e7c16bb9cf::clear_lpwsz_server_binary(Self) -> Unit raise @core.WindowsError
+pub fn AMSIUACREQUESTCOMINFO_b7e7c16bb9cf::from_bytes(Bytes) -> Self raise @core.WindowsError
+pub fn AMSIUACREQUESTCOMINFO_b7e7c16bb9cf::lpwsz_requestor_raw(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn AMSIUACREQUESTCOMINFO_b7e7c16bb9cf::lpwsz_server_binary_raw(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn AMSIUACREQUESTCOMINFO_b7e7c16bb9cf::new() -> Self raise @core.WindowsError
+pub fn AMSIUACREQUESTCOMINFO_b7e7c16bb9cf::raw_address(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn AMSIUACREQUESTCOMINFO_b7e7c16bb9cf::set_lpwsz_requestor(Self, @strings.PWStrBuffer) -> Unit raise @core.WindowsError
+pub fn AMSIUACREQUESTCOMINFO_b7e7c16bb9cf::set_lpwsz_requestor_raw(Self, @core.RawAddress) -> Unit raise @core.WindowsError
+pub fn AMSIUACREQUESTCOMINFO_b7e7c16bb9cf::set_lpwsz_server_binary(Self, @strings.PWStrBuffer) -> Unit raise @core.WindowsError
+pub fn AMSIUACREQUESTCOMINFO_b7e7c16bb9cf::set_lpwsz_server_binary_raw(Self, @core.RawAddress) -> Unit raise @core.WindowsError
+pub fn AMSIUACREQUESTCOMINFO_b7e7c16bb9cf::set_ul_length(Self, UInt) -> Unit raise @core.WindowsError
+pub fn AMSIUACREQUESTCOMINFO_b7e7c16bb9cf::ul_length(Self) -> UInt raise @core.WindowsError
+pub fn[T] AMSIUACREQUESTCOMINFO_b7e7c16bb9cf::with_raw_address(Self, (@core.RawAddress) -> T raise?) -> T raise
+pub impl Eq for AMSIUACREQUESTCOMINFO_b7e7c16bb9cf
+pub impl @debug.Debug for AMSIUACREQUESTCOMINFO_b7e7c16bb9cf
+
+pub(all) struct AMSIUACREQUESTCONTEXTRequestTypeEUnion_6bb9cf00103e {
+  raw_buffer : @core.NativeBuffer
+}
+pub fn AMSIUACREQUESTCONTEXTRequestTypeEUnion_6bb9cf00103e::abi_alignment() -> Int
+pub fn AMSIUACREQUESTCONTEXTRequestTypeEUnion_6bb9cf00103e::abi_size() -> Int
+pub fn AMSIUACREQUESTCONTEXTRequestTypeEUnion_6bb9cf00103e::active_x_info(Self) -> AMSIUACREQUESTAXINFO_b7e6669d51e5 raise @core.WindowsError
+pub fn AMSIUACREQUESTCONTEXTRequestTypeEUnion_6bb9cf00103e::bytes(Self) -> Bytes raise @core.WindowsError
+pub fn AMSIUACREQUESTCONTEXTRequestTypeEUnion_6bb9cf00103e::com_info(Self) -> AMSIUACREQUESTCOMINFO_b7e7c16bb9cf raise @core.WindowsError
+pub fn AMSIUACREQUESTCONTEXTRequestTypeEUnion_6bb9cf00103e::exe_info(Self) -> AMSIUACREQUESTEXEINFO_e93179a3331f raise @core.WindowsError
+pub fn AMSIUACREQUESTCONTEXTRequestTypeEUnion_6bb9cf00103e::from_bytes(Bytes) -> Self raise @core.WindowsError
+pub fn AMSIUACREQUESTCONTEXTRequestTypeEUnion_6bb9cf00103e::msi_info(Self) -> AMSIUACREQUESTMSIINFO_02b71e7abbcc raise @core.WindowsError
+pub fn AMSIUACREQUESTCONTEXTRequestTypeEUnion_6bb9cf00103e::new() -> Self raise @core.WindowsError
+pub fn AMSIUACREQUESTCONTEXTRequestTypeEUnion_6bb9cf00103e::packaged_app_info(Self) -> AMSIUACREQUESTPACKAGEDAPPINFO_cb1dc734668f raise @core.WindowsError
+pub fn AMSIUACREQUESTCONTEXTRequestTypeEUnion_6bb9cf00103e::raw_address(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn AMSIUACREQUESTCONTEXTRequestTypeEUnion_6bb9cf00103e::set_active_x_info(Self, AMSIUACREQUESTAXINFO_b7e6669d51e5) -> Unit raise @core.WindowsError
+pub fn AMSIUACREQUESTCONTEXTRequestTypeEUnion_6bb9cf00103e::set_com_info(Self, AMSIUACREQUESTCOMINFO_b7e7c16bb9cf) -> Unit raise @core.WindowsError
+pub fn AMSIUACREQUESTCONTEXTRequestTypeEUnion_6bb9cf00103e::set_exe_info(Self, AMSIUACREQUESTEXEINFO_e93179a3331f) -> Unit raise @core.WindowsError
+pub fn AMSIUACREQUESTCONTEXTRequestTypeEUnion_6bb9cf00103e::set_msi_info(Self, AMSIUACREQUESTMSIINFO_02b71e7abbcc) -> Unit raise @core.WindowsError
+pub fn AMSIUACREQUESTCONTEXTRequestTypeEUnion_6bb9cf00103e::set_packaged_app_info(Self, AMSIUACREQUESTPACKAGEDAPPINFO_cb1dc734668f) -> Unit raise @core.WindowsError
+pub fn[T] AMSIUACREQUESTCONTEXTRequestTypeEUnion_6bb9cf00103e::with_raw_address(Self, (@core.RawAddress) -> T raise?) -> T raise
+pub impl Eq for AMSIUACREQUESTCONTEXTRequestTypeEUnion_6bb9cf00103e
+pub impl @debug.Debug for AMSIUACREQUESTCONTEXTRequestTypeEUnion_6bb9cf00103e
+
+pub(all) struct AMSIUACREQUESTCONTEXT_4a8570014a05 {
+  raw_buffer : @core.NativeBuffer
+}
+pub fn AMSIUACREQUESTCONTEXT_4a8570014a05::abi_alignment() -> Int
+pub fn AMSIUACREQUESTCONTEXT_4a8570014a05::abi_size() -> Int
+pub fn AMSIUACREQUESTCONTEXT_4a8570014a05::b_auto_elevate_request(Self) -> Int raise @core.WindowsError
+pub fn AMSIUACREQUESTCONTEXT_4a8570014a05::bytes(Self) -> Bytes raise @core.WindowsError
+pub fn AMSIUACREQUESTCONTEXT_4a8570014a05::from_bytes(Bytes) -> Self raise @core.WindowsError
+pub fn AMSIUACREQUESTCONTEXT_4a8570014a05::new() -> Self raise @core.WindowsError
+pub fn AMSIUACREQUESTCONTEXT_4a8570014a05::raw_address(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn AMSIUACREQUESTCONTEXT_4a8570014a05::request_type(Self) -> AMSIUACREQUESTCONTEXTRequestTypeEUnion_6bb9cf00103e raise @core.WindowsError
+pub fn AMSIUACREQUESTCONTEXT_4a8570014a05::set_b_auto_elevate_request(Self, Int) -> Unit raise @core.WindowsError
+pub fn AMSIUACREQUESTCONTEXT_4a8570014a05::set_request_type(Self, AMSIUACREQUESTCONTEXTRequestTypeEUnion_6bb9cf00103e) -> Unit raise @core.WindowsError
+pub fn AMSIUACREQUESTCONTEXT_4a8570014a05::set_type_(Self, AMSIUACREQUESTTYPE_bda702a2e2c7) -> Unit raise @core.WindowsError
+pub fn AMSIUACREQUESTCONTEXT_4a8570014a05::set_uac_trust_state(Self, AMSIUACTRUSTSTATE_482f280722b4) -> Unit raise @core.WindowsError
+pub fn AMSIUACREQUESTCONTEXT_4a8570014a05::set_ul_length(Self, UInt) -> Unit raise @core.WindowsError
+pub fn AMSIUACREQUESTCONTEXT_4a8570014a05::set_ul_requestor_process_id(Self, UInt) -> Unit raise @core.WindowsError
+pub fn AMSIUACREQUESTCONTEXT_4a8570014a05::type_(Self) -> AMSIUACREQUESTTYPE_bda702a2e2c7 raise @core.WindowsError
+pub fn AMSIUACREQUESTCONTEXT_4a8570014a05::uac_trust_state(Self) -> AMSIUACTRUSTSTATE_482f280722b4 raise @core.WindowsError
+pub fn AMSIUACREQUESTCONTEXT_4a8570014a05::ul_length(Self) -> UInt raise @core.WindowsError
+pub fn AMSIUACREQUESTCONTEXT_4a8570014a05::ul_requestor_process_id(Self) -> UInt raise @core.WindowsError
+pub fn[T] AMSIUACREQUESTCONTEXT_4a8570014a05::with_raw_address(Self, (@core.RawAddress) -> T raise?) -> T raise
+pub impl Eq for AMSIUACREQUESTCONTEXT_4a8570014a05
+pub impl @debug.Debug for AMSIUACREQUESTCONTEXT_4a8570014a05
+
+pub(all) struct AMSIUACREQUESTEXEINFO_e93179a3331f {
+  raw_buffer : @core.NativeBuffer
+  mut root_lpwsz_application_name : @strings.PWStrBuffer?
+  mut root_lpwsz_command_line : @strings.PWStrBuffer?
+  mut root_lpwsz_dll_parameter : @strings.PWStrBuffer?
+}
+pub fn AMSIUACREQUESTEXEINFO_e93179a3331f::abi_alignment() -> Int
+pub fn AMSIUACREQUESTEXEINFO_e93179a3331f::abi_size() -> Int
+pub fn AMSIUACREQUESTEXEINFO_e93179a3331f::bytes(Self) -> Bytes raise @core.WindowsError
+pub fn AMSIUACREQUESTEXEINFO_e93179a3331f::clear_lpwsz_application_name(Self) -> Unit raise @core.WindowsError
+pub fn AMSIUACREQUESTEXEINFO_e93179a3331f::clear_lpwsz_command_line(Self) -> Unit raise @core.WindowsError
+pub fn AMSIUACREQUESTEXEINFO_e93179a3331f::clear_lpwsz_dll_parameter(Self) -> Unit raise @core.WindowsError
+pub fn AMSIUACREQUESTEXEINFO_e93179a3331f::from_bytes(Bytes) -> Self raise @core.WindowsError
+pub fn AMSIUACREQUESTEXEINFO_e93179a3331f::lpwsz_application_name_raw(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn AMSIUACREQUESTEXEINFO_e93179a3331f::lpwsz_command_line_raw(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn AMSIUACREQUESTEXEINFO_e93179a3331f::lpwsz_dll_parameter_raw(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn AMSIUACREQUESTEXEINFO_e93179a3331f::new() -> Self raise @core.WindowsError
+pub fn AMSIUACREQUESTEXEINFO_e93179a3331f::raw_address(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn AMSIUACREQUESTEXEINFO_e93179a3331f::set_lpwsz_application_name(Self, @strings.PWStrBuffer) -> Unit raise @core.WindowsError
+pub fn AMSIUACREQUESTEXEINFO_e93179a3331f::set_lpwsz_application_name_raw(Self, @core.RawAddress) -> Unit raise @core.WindowsError
+pub fn AMSIUACREQUESTEXEINFO_e93179a3331f::set_lpwsz_command_line(Self, @strings.PWStrBuffer) -> Unit raise @core.WindowsError
+pub fn AMSIUACREQUESTEXEINFO_e93179a3331f::set_lpwsz_command_line_raw(Self, @core.RawAddress) -> Unit raise @core.WindowsError
+pub fn AMSIUACREQUESTEXEINFO_e93179a3331f::set_lpwsz_dll_parameter(Self, @strings.PWStrBuffer) -> Unit raise @core.WindowsError
+pub fn AMSIUACREQUESTEXEINFO_e93179a3331f::set_lpwsz_dll_parameter_raw(Self, @core.RawAddress) -> Unit raise @core.WindowsError
+pub fn AMSIUACREQUESTEXEINFO_e93179a3331f::set_ul_length(Self, UInt) -> Unit raise @core.WindowsError
+pub fn AMSIUACREQUESTEXEINFO_e93179a3331f::ul_length(Self) -> UInt raise @core.WindowsError
+pub fn[T] AMSIUACREQUESTEXEINFO_e93179a3331f::with_raw_address(Self, (@core.RawAddress) -> T raise?) -> T raise
+pub impl Eq for AMSIUACREQUESTEXEINFO_e93179a3331f
+pub impl @debug.Debug for AMSIUACREQUESTEXEINFO_e93179a3331f
+
+pub(all) struct AMSIUACREQUESTMSIINFO_02b71e7abbcc {
+  raw_buffer : @core.NativeBuffer
+  mut root_lpwsz_product_name : @strings.PWStrBuffer?
+  mut root_lpwsz_version : @strings.PWStrBuffer?
+  mut root_lpwsz_language : @strings.PWStrBuffer?
+  mut root_lpwsz_manufacturer : @strings.PWStrBuffer?
+  mut root_lpwsz_package_path : @strings.PWStrBuffer?
+  mut root_lpwsz_package_source : @strings.PWStrBuffer?
+  mut root_ppwsz_updates : @strings.PWStrBuffer?
+  mut root_ppwsz_update_sources : @strings.PWStrBuffer?
+}
+pub fn AMSIUACREQUESTMSIINFO_02b71e7abbcc::abi_alignment() -> Int
+pub fn AMSIUACREQUESTMSIINFO_02b71e7abbcc::abi_size() -> Int
+pub fn AMSIUACREQUESTMSIINFO_02b71e7abbcc::bytes(Self) -> Bytes raise @core.WindowsError
+pub fn AMSIUACREQUESTMSIINFO_02b71e7abbcc::clear_lpwsz_language(Self) -> Unit raise @core.WindowsError
+pub fn AMSIUACREQUESTMSIINFO_02b71e7abbcc::clear_lpwsz_manufacturer(Self) -> Unit raise @core.WindowsError
+pub fn AMSIUACREQUESTMSIINFO_02b71e7abbcc::clear_lpwsz_package_path(Self) -> Unit raise @core.WindowsError
+pub fn AMSIUACREQUESTMSIINFO_02b71e7abbcc::clear_lpwsz_package_source(Self) -> Unit raise @core.WindowsError
+pub fn AMSIUACREQUESTMSIINFO_02b71e7abbcc::clear_lpwsz_product_name(Self) -> Unit raise @core.WindowsError
+pub fn AMSIUACREQUESTMSIINFO_02b71e7abbcc::clear_lpwsz_version(Self) -> Unit raise @core.WindowsError
+pub fn AMSIUACREQUESTMSIINFO_02b71e7abbcc::clear_ppwsz_update_sources(Self) -> Unit raise @core.WindowsError
+pub fn AMSIUACREQUESTMSIINFO_02b71e7abbcc::clear_ppwsz_updates(Self) -> Unit raise @core.WindowsError
+pub fn AMSIUACREQUESTMSIINFO_02b71e7abbcc::from_bytes(Bytes) -> Self raise @core.WindowsError
+pub fn AMSIUACREQUESTMSIINFO_02b71e7abbcc::lpwsz_language_raw(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn AMSIUACREQUESTMSIINFO_02b71e7abbcc::lpwsz_manufacturer_raw(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn AMSIUACREQUESTMSIINFO_02b71e7abbcc::lpwsz_package_path_raw(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn AMSIUACREQUESTMSIINFO_02b71e7abbcc::lpwsz_package_source_raw(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn AMSIUACREQUESTMSIINFO_02b71e7abbcc::lpwsz_product_name_raw(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn AMSIUACREQUESTMSIINFO_02b71e7abbcc::lpwsz_version_raw(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn AMSIUACREQUESTMSIINFO_02b71e7abbcc::msi_action(Self) -> AMSIUACMSIACTION_0e8fd6981169 raise @core.WindowsError
+pub fn AMSIUACREQUESTMSIINFO_02b71e7abbcc::new() -> Self raise @core.WindowsError
+pub fn AMSIUACREQUESTMSIINFO_02b71e7abbcc::ppwsz_update_sources_raw(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn AMSIUACREQUESTMSIINFO_02b71e7abbcc::ppwsz_updates_raw(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn AMSIUACREQUESTMSIINFO_02b71e7abbcc::raw_address(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn AMSIUACREQUESTMSIINFO_02b71e7abbcc::set_lpwsz_language(Self, @strings.PWStrBuffer) -> Unit raise @core.WindowsError
+pub fn AMSIUACREQUESTMSIINFO_02b71e7abbcc::set_lpwsz_language_raw(Self, @core.RawAddress) -> Unit raise @core.WindowsError
+pub fn AMSIUACREQUESTMSIINFO_02b71e7abbcc::set_lpwsz_manufacturer(Self, @strings.PWStrBuffer) -> Unit raise @core.WindowsError
+pub fn AMSIUACREQUESTMSIINFO_02b71e7abbcc::set_lpwsz_manufacturer_raw(Self, @core.RawAddress) -> Unit raise @core.WindowsError
+pub fn AMSIUACREQUESTMSIINFO_02b71e7abbcc::set_lpwsz_package_path(Self, @strings.PWStrBuffer) -> Unit raise @core.WindowsError
+pub fn AMSIUACREQUESTMSIINFO_02b71e7abbcc::set_lpwsz_package_path_raw(Self, @core.RawAddress) -> Unit raise @core.WindowsError
+pub fn AMSIUACREQUESTMSIINFO_02b71e7abbcc::set_lpwsz_package_source(Self, @strings.PWStrBuffer) -> Unit raise @core.WindowsError
+pub fn AMSIUACREQUESTMSIINFO_02b71e7abbcc::set_lpwsz_package_source_raw(Self, @core.RawAddress) -> Unit raise @core.WindowsError
+pub fn AMSIUACREQUESTMSIINFO_02b71e7abbcc::set_lpwsz_product_name(Self, @strings.PWStrBuffer) -> Unit raise @core.WindowsError
+pub fn AMSIUACREQUESTMSIINFO_02b71e7abbcc::set_lpwsz_product_name_raw(Self, @core.RawAddress) -> Unit raise @core.WindowsError
+pub fn AMSIUACREQUESTMSIINFO_02b71e7abbcc::set_lpwsz_version(Self, @strings.PWStrBuffer) -> Unit raise @core.WindowsError
+pub fn AMSIUACREQUESTMSIINFO_02b71e7abbcc::set_lpwsz_version_raw(Self, @core.RawAddress) -> Unit raise @core.WindowsError
+pub fn AMSIUACREQUESTMSIINFO_02b71e7abbcc::set_msi_action(Self, AMSIUACMSIACTION_0e8fd6981169) -> Unit raise @core.WindowsError
+pub fn AMSIUACREQUESTMSIINFO_02b71e7abbcc::set_ppwsz_update_sources(Self, @strings.PWStrBuffer) -> Unit raise @core.WindowsError
+pub fn AMSIUACREQUESTMSIINFO_02b71e7abbcc::set_ppwsz_update_sources_raw(Self, @core.RawAddress) -> Unit raise @core.WindowsError
+pub fn AMSIUACREQUESTMSIINFO_02b71e7abbcc::set_ppwsz_updates(Self, @strings.PWStrBuffer) -> Unit raise @core.WindowsError
+pub fn AMSIUACREQUESTMSIINFO_02b71e7abbcc::set_ppwsz_updates_raw(Self, @core.RawAddress) -> Unit raise @core.WindowsError
+pub fn AMSIUACREQUESTMSIINFO_02b71e7abbcc::set_ul_length(Self, UInt) -> Unit raise @core.WindowsError
+pub fn AMSIUACREQUESTMSIINFO_02b71e7abbcc::set_ul_updates(Self, UInt) -> Unit raise @core.WindowsError
+pub fn AMSIUACREQUESTMSIINFO_02b71e7abbcc::ul_length(Self) -> UInt raise @core.WindowsError
+pub fn AMSIUACREQUESTMSIINFO_02b71e7abbcc::ul_updates(Self) -> UInt raise @core.WindowsError
+pub fn[T] AMSIUACREQUESTMSIINFO_02b71e7abbcc::with_raw_address(Self, (@core.RawAddress) -> T raise?) -> T raise
+pub impl Eq for AMSIUACREQUESTMSIINFO_02b71e7abbcc
+pub impl @debug.Debug for AMSIUACREQUESTMSIINFO_02b71e7abbcc
+
+pub(all) struct AMSIUACREQUESTPACKAGEDAPPINFO_cb1dc734668f {
+  raw_buffer : @core.NativeBuffer
+  mut root_lpwsz_application_name : @strings.PWStrBuffer?
+  mut root_lpwsz_command_line : @strings.PWStrBuffer?
+  mut root_lp_package_family_name : @strings.PWStrBuffer?
+  mut root_lp_application_id : @strings.PWStrBuffer?
+}
+pub fn AMSIUACREQUESTPACKAGEDAPPINFO_cb1dc734668f::abi_alignment() -> Int
+pub fn AMSIUACREQUESTPACKAGEDAPPINFO_cb1dc734668f::abi_size() -> Int
+pub fn AMSIUACREQUESTPACKAGEDAPPINFO_cb1dc734668f::bytes(Self) -> Bytes raise @core.WindowsError
+pub fn AMSIUACREQUESTPACKAGEDAPPINFO_cb1dc734668f::clear_lp_application_id(Self) -> Unit raise @core.WindowsError
+pub fn AMSIUACREQUESTPACKAGEDAPPINFO_cb1dc734668f::clear_lp_package_family_name(Self) -> Unit raise @core.WindowsError
+pub fn AMSIUACREQUESTPACKAGEDAPPINFO_cb1dc734668f::clear_lpwsz_application_name(Self) -> Unit raise @core.WindowsError
+pub fn AMSIUACREQUESTPACKAGEDAPPINFO_cb1dc734668f::clear_lpwsz_command_line(Self) -> Unit raise @core.WindowsError
+pub fn AMSIUACREQUESTPACKAGEDAPPINFO_cb1dc734668f::from_bytes(Bytes) -> Self raise @core.WindowsError
+pub fn AMSIUACREQUESTPACKAGEDAPPINFO_cb1dc734668f::lp_application_id_raw(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn AMSIUACREQUESTPACKAGEDAPPINFO_cb1dc734668f::lp_package_family_name_raw(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn AMSIUACREQUESTPACKAGEDAPPINFO_cb1dc734668f::lpwsz_application_name_raw(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn AMSIUACREQUESTPACKAGEDAPPINFO_cb1dc734668f::lpwsz_command_line_raw(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn AMSIUACREQUESTPACKAGEDAPPINFO_cb1dc734668f::new() -> Self raise @core.WindowsError
+pub fn AMSIUACREQUESTPACKAGEDAPPINFO_cb1dc734668f::raw_address(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn AMSIUACREQUESTPACKAGEDAPPINFO_cb1dc734668f::set_lp_application_id(Self, @strings.PWStrBuffer) -> Unit raise @core.WindowsError
+pub fn AMSIUACREQUESTPACKAGEDAPPINFO_cb1dc734668f::set_lp_application_id_raw(Self, @core.RawAddress) -> Unit raise @core.WindowsError
+pub fn AMSIUACREQUESTPACKAGEDAPPINFO_cb1dc734668f::set_lp_package_family_name(Self, @strings.PWStrBuffer) -> Unit raise @core.WindowsError
+pub fn AMSIUACREQUESTPACKAGEDAPPINFO_cb1dc734668f::set_lp_package_family_name_raw(Self, @core.RawAddress) -> Unit raise @core.WindowsError
+pub fn AMSIUACREQUESTPACKAGEDAPPINFO_cb1dc734668f::set_lpwsz_application_name(Self, @strings.PWStrBuffer) -> Unit raise @core.WindowsError
+pub fn AMSIUACREQUESTPACKAGEDAPPINFO_cb1dc734668f::set_lpwsz_application_name_raw(Self, @core.RawAddress) -> Unit raise @core.WindowsError
+pub fn AMSIUACREQUESTPACKAGEDAPPINFO_cb1dc734668f::set_lpwsz_command_line(Self, @strings.PWStrBuffer) -> Unit raise @core.WindowsError
+pub fn AMSIUACREQUESTPACKAGEDAPPINFO_cb1dc734668f::set_lpwsz_command_line_raw(Self, @core.RawAddress) -> Unit raise @core.WindowsError
+pub fn AMSIUACREQUESTPACKAGEDAPPINFO_cb1dc734668f::set_ul_length(Self, UInt) -> Unit raise @core.WindowsError
+pub fn AMSIUACREQUESTPACKAGEDAPPINFO_cb1dc734668f::ul_length(Self) -> UInt raise @core.WindowsError
+pub fn[T] AMSIUACREQUESTPACKAGEDAPPINFO_cb1dc734668f::with_raw_address(Self, (@core.RawAddress) -> T raise?) -> T raise
+pub impl Eq for AMSIUACREQUESTPACKAGEDAPPINFO_cb1dc734668f
+pub impl @debug.Debug for AMSIUACREQUESTPACKAGEDAPPINFO_cb1dc734668f
+
+pub(all) struct AMSIUACREQUESTTYPE_bda702a2e2c7(Int) derive(Compare, Eq, @debug.Debug)
+pub fn AMSIUACREQUESTTYPE_bda702a2e2c7::ax() -> Self
+pub fn AMSIUACREQUESTTYPE_bda702a2e2c7::com() -> Self
+pub fn AMSIUACREQUESTTYPE_bda702a2e2c7::exe() -> Self
+pub fn AMSIUACREQUESTTYPE_bda702a2e2c7::from_int(Int) -> Self
+pub fn AMSIUACREQUESTTYPE_bda702a2e2c7::max() -> Self
+pub fn AMSIUACREQUESTTYPE_bda702a2e2c7::msi() -> Self
+pub fn AMSIUACREQUESTTYPE_bda702a2e2c7::packaged_app() -> Self
+pub fn AMSIUACREQUESTTYPE_bda702a2e2c7::to_int(Self) -> Int
+
+pub(all) struct AMSIUACTRUSTSTATE_482f280722b4(Int) derive(Compare, Eq, @debug.Debug)
+pub fn AMSIUACTRUSTSTATE_482f280722b4::blocked() -> Self
+pub fn AMSIUACTRUSTSTATE_482f280722b4::from_int(Int) -> Self
+pub fn AMSIUACTRUSTSTATE_482f280722b4::max() -> Self
+pub fn AMSIUACTRUSTSTATE_482f280722b4::to_int(Self) -> Int
+pub fn AMSIUACTRUSTSTATE_482f280722b4::trusted() -> Self
+pub fn AMSIUACTRUSTSTATE_482f280722b4::untrusted() -> Self
+
+pub(all) struct CAntimalware_5a5aede4bbf0 {
+  raw_buffer : @core.NativeBuffer
+}
+pub fn CAntimalware_5a5aede4bbf0::abi_alignment() -> Int
+pub fn CAntimalware_5a5aede4bbf0::abi_size() -> Int
+pub fn CAntimalware_5a5aede4bbf0::bytes(Self) -> Bytes raise @core.WindowsError
+pub fn CAntimalware_5a5aede4bbf0::from_bytes(Bytes) -> Self raise @core.WindowsError
+pub fn CAntimalware_5a5aede4bbf0::new() -> Self raise @core.WindowsError
+pub fn CAntimalware_5a5aede4bbf0::raw_address(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn[T] CAntimalware_5a5aede4bbf0::with_raw_address(Self, (@core.RawAddress) -> T raise?) -> T raise
+pub impl Eq for CAntimalware_5a5aede4bbf0
+pub impl @debug.Debug for CAntimalware_5a5aede4bbf0
+
+pub(all) struct HAMSICONTEXT_e4a02f0208bb {
+  raw_buffer : @core.NativeBuffer
+}
+pub fn HAMSICONTEXT_e4a02f0208bb::abi_alignment() -> Int
+pub fn HAMSICONTEXT_e4a02f0208bb::abi_size() -> Int
+pub fn HAMSICONTEXT_e4a02f0208bb::bytes(Self) -> Bytes raise @core.WindowsError
+pub fn HAMSICONTEXT_e4a02f0208bb::from_bytes(Bytes) -> Self raise @core.WindowsError
+pub fn HAMSICONTEXT_e4a02f0208bb::new() -> Self raise @core.WindowsError
+pub fn HAMSICONTEXT_e4a02f0208bb::raw_address(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn HAMSICONTEXT_e4a02f0208bb::set_value_raw(Self, @core.RawAddress) -> Unit raise @core.WindowsError
+pub fn HAMSICONTEXT_e4a02f0208bb::value_raw(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn[T] HAMSICONTEXT_e4a02f0208bb::with_raw_address(Self, (@core.RawAddress) -> T raise?) -> T raise
+pub impl Eq for HAMSICONTEXT_e4a02f0208bb
+pub impl @debug.Debug for HAMSICONTEXT_e4a02f0208bb
+
+pub(all) struct HAMSISESSION_aaaf61111274 {
+  raw_buffer : @core.NativeBuffer
+}
+pub fn HAMSISESSION_aaaf61111274::abi_alignment() -> Int
+pub fn HAMSISESSION_aaaf61111274::abi_size() -> Int
+pub fn HAMSISESSION_aaaf61111274::bytes(Self) -> Bytes raise @core.WindowsError
+pub fn HAMSISESSION_aaaf61111274::from_bytes(Bytes) -> Self raise @core.WindowsError
+pub fn HAMSISESSION_aaaf61111274::new() -> Self raise @core.WindowsError
+pub fn HAMSISESSION_aaaf61111274::raw_address(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn HAMSISESSION_aaaf61111274::set_value_raw(Self, @core.RawAddress) -> Unit raise @core.WindowsError
+pub fn HAMSISESSION_aaaf61111274::value_raw(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn[T] HAMSISESSION_aaaf61111274::with_raw_address(Self, (@core.RawAddress) -> T raise?) -> T raise
+pub impl Eq for HAMSISESSION_aaaf61111274
+pub impl @debug.Debug for HAMSISESSION_aaaf61111274
+
+pub type IAmsiStream_6b8a084a588b
+pub fn IAmsiStream_6b8a084a588b::get_attribute(@core.RawAddress, Int, UInt, @core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+pub fn IAmsiStream_6b8a084a588b::get_attribute_raw(@core.RawAddress, Int, UInt, @core.RawAddress, @core.RawAddress) -> Int
+pub fn IAmsiStream_6b8a084a588b::read(@core.RawAddress, UInt64, UInt, @core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+pub fn IAmsiStream_6b8a084a588b::read_raw(@core.RawAddress, UInt64, UInt, @core.RawAddress, @core.RawAddress) -> Int
+
+pub type IAntimalware2_6b0c63afaaf1
+pub fn IAntimalware2_6b0c63afaaf1::notify(@core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+pub fn IAntimalware2_6b0c63afaaf1::notify_raw(@core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub type IAntimalwareProvider2_d472ac918802
+pub fn IAntimalwareProvider2_d472ac918802::notify(@core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+pub fn IAntimalwareProvider2_d472ac918802::notify_raw(@core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub type IAntimalwareProvider_0379dd8de885
+pub fn IAntimalwareProvider_0379dd8de885::close_session_raw(@core.RawAddress, UInt64) -> Unit
+pub fn IAntimalwareProvider_0379dd8de885::display_name(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+pub fn IAntimalwareProvider_0379dd8de885::display_name_raw(@core.RawAddress, @core.RawAddress) -> Int
+pub fn IAntimalwareProvider_0379dd8de885::scan(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+pub fn IAntimalwareProvider_0379dd8de885::scan_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub type IAntimalwareUacProvider_f0482444f335
+pub fn IAntimalwareUacProvider_f0482444f335::display_name(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+pub fn IAntimalwareUacProvider_f0482444f335::display_name_raw(@core.RawAddress, @core.RawAddress) -> Int
+pub fn IAntimalwareUacProvider_f0482444f335::uac_scan(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+pub fn IAntimalwareUacProvider_f0482444f335::uac_scan_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub type IAntimalware_12bcf3e00049
+pub fn IAntimalware_12bcf3e00049::close_session_raw(@core.RawAddress, UInt64) -> Unit
+pub fn IAntimalware_12bcf3e00049::scan(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+pub fn IAntimalware_12bcf3e00049::scan_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+// Type aliases
+
+// Traits

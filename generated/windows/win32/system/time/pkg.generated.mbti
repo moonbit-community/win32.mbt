@@ -1,0 +1,102 @@
+// Generated using `moon info`, DON'T EDIT IT
+package "moonbit-community/win32api/windows/win32/system/time"
+
+import {
+  "moonbit-community/win32api/runtime/core",
+  "moonbit-community/win32api/scc/fb1966a29e24791a",
+  "moonbit-community/win32api/scc/fb66f520d7e12332",
+}
+
+// Values
+pub fn enum_dynamic_time_zone_information(UInt, @fb1966a29e24791a.DYNAMICTIMEZONEINFORMATION_aed85b2b5d28) -> UInt raise @core.WindowsError
+
+pub fn enum_dynamic_time_zone_information_raw(UInt, @core.RawAddress) -> UInt
+
+pub fn file_time_to_system_time(@fb66f520d7e12332.FILETIME_255c209c37ca, @fb66f520d7e12332.SYSTEMTIME_312dc00e2237) -> Bool raise @core.WindowsError
+
+pub fn file_time_to_system_time_raw(@core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn get_dynamic_time_zone_information(@fb1966a29e24791a.DYNAMICTIMEZONEINFORMATION_aed85b2b5d28) -> UInt raise @core.WindowsError
+
+pub fn get_dynamic_time_zone_information_effective_years(@fb1966a29e24791a.DYNAMICTIMEZONEINFORMATION_aed85b2b5d28, @core.RawAddress, @core.RawAddress) -> UInt raise @core.WindowsError
+
+pub fn get_dynamic_time_zone_information_effective_years_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn get_dynamic_time_zone_information_raw(@core.RawAddress) -> @core.RawWin32Call[UInt]
+
+pub fn get_time_zone_information(@fb1966a29e24791a.TIMEZONEINFORMATION_c4e0d5e5a59e) -> UInt raise @core.WindowsError
+
+pub fn get_time_zone_information_for_year(UInt16, @fb1966a29e24791a.DYNAMICTIMEZONEINFORMATION_aed85b2b5d28?, @fb1966a29e24791a.TIMEZONEINFORMATION_c4e0d5e5a59e) -> Bool raise @core.WindowsError
+
+pub fn get_time_zone_information_for_year_raw(UInt, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn get_time_zone_information_raw(@core.RawAddress) -> @core.RawWin32Call[UInt]
+
+pub fn local_file_time_to_local_system_time(@fb1966a29e24791a.TIMEZONEINFORMATION_c4e0d5e5a59e?, @fb66f520d7e12332.FILETIME_255c209c37ca, @fb66f520d7e12332.SYSTEMTIME_312dc00e2237) -> Bool raise @core.WindowsError
+
+pub fn local_file_time_to_local_system_time_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn local_system_time_to_local_file_time(@fb1966a29e24791a.TIMEZONEINFORMATION_c4e0d5e5a59e?, @fb66f520d7e12332.SYSTEMTIME_312dc00e2237, @fb66f520d7e12332.FILETIME_255c209c37ca) -> Bool raise @core.WindowsError
+
+pub fn local_system_time_to_local_file_time_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn set_dynamic_time_zone_information(@fb1966a29e24791a.DYNAMICTIMEZONEINFORMATION_aed85b2b5d28) -> Bool raise @core.WindowsError
+
+pub fn set_dynamic_time_zone_information_raw(@core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn set_time_zone_information(@fb1966a29e24791a.TIMEZONEINFORMATION_c4e0d5e5a59e) -> Bool raise @core.WindowsError
+
+pub fn set_time_zone_information_raw(@core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn system_time_to_file_time(@fb66f520d7e12332.SYSTEMTIME_312dc00e2237, @fb66f520d7e12332.FILETIME_255c209c37ca) -> Bool raise @core.WindowsError
+
+pub fn system_time_to_file_time_raw(@core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn system_time_to_tz_specific_local_time(@fb1966a29e24791a.TIMEZONEINFORMATION_c4e0d5e5a59e?, @fb66f520d7e12332.SYSTEMTIME_312dc00e2237, @fb66f520d7e12332.SYSTEMTIME_312dc00e2237) -> Bool raise @core.WindowsError
+
+pub fn system_time_to_tz_specific_local_time_ex(@fb1966a29e24791a.DYNAMICTIMEZONEINFORMATION_aed85b2b5d28?, @fb66f520d7e12332.SYSTEMTIME_312dc00e2237, @fb66f520d7e12332.SYSTEMTIME_312dc00e2237) -> Bool raise @core.WindowsError
+
+pub fn system_time_to_tz_specific_local_time_ex_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn system_time_to_tz_specific_local_time_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub let time_zone_id_invalid : UInt
+
+pub let tsf_authenticated : UInt
+
+pub let tsf_hardware : UInt
+
+pub let tsf_i_pv6 : UInt
+
+pub let tsf_signature_authenticated : UInt
+
+pub fn tz_specific_local_time_to_system_time(@fb1966a29e24791a.TIMEZONEINFORMATION_c4e0d5e5a59e?, @fb66f520d7e12332.SYSTEMTIME_312dc00e2237, @fb66f520d7e12332.SYSTEMTIME_312dc00e2237) -> Bool raise @core.WindowsError
+
+pub fn tz_specific_local_time_to_system_time_ex(@fb1966a29e24791a.DYNAMICTIMEZONEINFORMATION_aed85b2b5d28?, @fb66f520d7e12332.SYSTEMTIME_312dc00e2237, @fb66f520d7e12332.SYSTEMTIME_312dc00e2237) -> Bool raise @core.WindowsError
+
+pub fn tz_specific_local_time_to_system_time_ex_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn tz_specific_local_time_to_system_time_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub let wsz_w32_time_reg_key_policy_time_providers : String
+
+pub let wsz_w32_time_reg_key_time_providers : String
+
+pub let wsz_w32_time_reg_value_dll_name : String
+
+pub let wsz_w32_time_reg_value_enabled : String
+
+pub let wsz_w32_time_reg_value_input_provider : String
+
+pub let wsz_w32_time_reg_value_meta_data_provider : String
+
+// Errors
+
+// Types and methods
+
+// Type aliases
+pub using @fb1966a29e24791a {type DYNAMICTIMEZONEINFORMATION_aed85b2b5d28 as DYNAMICTIMEZONEINFORMATION}
+
+pub using @fb1966a29e24791a {type TIMEZONEINFORMATION_c4e0d5e5a59e as TIMEZONEINFORMATION}
+
+// Traits

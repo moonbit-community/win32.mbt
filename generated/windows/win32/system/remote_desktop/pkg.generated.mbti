@@ -1,0 +1,1314 @@
+// Generated using `moon info`, DON'T EDIT IT
+package "moonbit-community/win32api/windows/win32/system/remote_desktop"
+
+import {
+  "moonbit-community/win32api/runtime/core",
+  "moonbit-community/win32api/runtime/strings",
+  "moonbit-community/win32api/scc/13201bd2f11134f2",
+  "moonbit-community/win32api/scc/a96faf5bf034fb54",
+  "moonbit-community/win32api/scc/cc6631776d7e2373",
+}
+
+// Values
+pub let acquire_target_lock_timeout : UInt
+
+pub let channel_buffer_size : UInt
+
+pub let channel_chunk_length : UInt
+
+pub let channel_event_connected : UInt
+
+pub let channel_event_data_received : UInt
+
+pub let channel_event_disconnected : UInt
+
+pub let channel_event_initialized : UInt
+
+pub let channel_event_terminated : UInt
+
+pub let channel_event_v1_connected : UInt
+
+pub let channel_event_write_cancelled : UInt
+
+pub let channel_event_write_complete : UInt
+
+pub let channel_flag_fail : UInt
+
+pub let channel_flag_first : UInt
+
+pub let channel_flag_last : UInt
+
+pub let channel_flag_middle : UInt
+
+pub let channel_max_count : UInt
+
+pub let channel_name_len : UInt
+
+pub let channel_option_compress : UInt
+
+pub let channel_option_compress_rdp : UInt
+
+pub let channel_option_encrypt_cs : UInt
+
+pub let channel_option_encrypt_rdp : UInt
+
+pub let channel_option_encrypt_sc : UInt
+
+pub let channel_option_initialized : UInt
+
+pub let channel_option_pri_high : UInt
+
+pub let channel_option_pri_low : UInt
+
+pub let channel_option_pri_med : UInt
+
+pub let channel_option_remote_control_persistent : UInt
+
+pub let channel_option_show_protocol : UInt
+
+pub let channel_rc_already_connected : UInt
+
+pub let channel_rc_already_initialized : UInt
+
+pub let channel_rc_already_open : UInt
+
+pub let channel_rc_bad_channel : UInt
+
+pub let channel_rc_bad_channel_handle : UInt
+
+pub let channel_rc_bad_init_handle : UInt
+
+pub let channel_rc_bad_proc : UInt
+
+pub let channel_rc_initialization_error : UInt
+
+pub let channel_rc_invalid_instance : UInt
+
+pub let channel_rc_no_buffer : UInt
+
+pub let channel_rc_no_memory : UInt
+
+pub let channel_rc_not_connected : UInt
+
+pub let channel_rc_not_in_virtualchannelentry : UInt
+
+pub let channel_rc_not_initialized : UInt
+
+pub let channel_rc_not_open : UInt
+
+pub let channel_rc_null_data : UInt
+
+pub let channel_rc_ok : UInt
+
+pub let channel_rc_too_many_channels : UInt
+
+pub let channel_rc_unknown_channel_name : UInt
+
+pub let channel_rc_unsupported_version : UInt
+
+pub let channel_rc_zero_length : UInt
+
+pub let clientaddress_length : UInt
+
+pub let clientname_length : UInt
+
+pub let dispid_ax_adminmessagereceived : UInt
+
+pub let dispid_ax_autoreconnected : UInt
+
+pub let dispid_ax_autoreconnecting : UInt
+
+pub let dispid_ax_connected : UInt
+
+pub let dispid_ax_connecting : UInt
+
+pub let dispid_ax_dialogdismissed : UInt
+
+pub let dispid_ax_dialogdisplaying : UInt
+
+pub let dispid_ax_disconnected : UInt
+
+pub let dispid_ax_keycombinationpressed : UInt
+
+pub let dispid_ax_logincompleted : UInt
+
+pub let dispid_ax_networkstatuschanged : UInt
+
+pub let dispid_ax_remotedesktopsizechanged : UInt
+
+pub let dispid_ax_statuschanged : UInt
+
+pub let dispid_ax_touchpointercursormoved : UInt
+
+pub let dispid_method_remotedesktopclient_apply_settings : UInt
+
+pub let dispid_method_remotedesktopclient_attach_event : UInt
+
+pub let dispid_method_remotedesktopclient_connect : UInt
+
+pub let dispid_method_remotedesktopclient_delete_saved_credentials : UInt
+
+pub let dispid_method_remotedesktopclient_detach_event : UInt
+
+pub let dispid_method_remotedesktopclient_disconnect : UInt
+
+pub let dispid_method_remotedesktopclient_execute_remote_action : UInt
+
+pub let dispid_method_remotedesktopclient_get_rdpproperty : UInt
+
+pub let dispid_method_remotedesktopclient_get_snapshot : UInt
+
+pub let dispid_method_remotedesktopclient_reconnect : UInt
+
+pub let dispid_method_remotedesktopclient_resume_screen_updates : UInt
+
+pub let dispid_method_remotedesktopclient_retrieve_settings : UInt
+
+pub let dispid_method_remotedesktopclient_set_rdpproperty : UInt
+
+pub let dispid_method_remotedesktopclient_suspend_screen_updates : UInt
+
+pub let dispid_method_remotedesktopclient_update_session_displaysettings : UInt
+
+pub let dispid_prop_remotedesktopclient_actions : UInt
+
+pub let dispid_prop_remotedesktopclient_settings : UInt
+
+pub let dispid_prop_remotedesktopclient_touch_pointer : UInt
+
+pub let dispid_prop_remotedesktopclient_touchpointer_enabled : UInt
+
+pub let dispid_prop_remotedesktopclient_touchpointer_eventsenabled : UInt
+
+pub let dispid_prop_remotedesktopclient_touchpointer_pointerspeed : UInt
+
+pub let domain_length : UInt
+
+pub let force_rejoin : UInt
+
+pub let force_rejoin_in_clustermode : UInt
+
+pub let keep_existing_sessions : UInt
+
+pub let max_app_name_len : UInt
+
+pub let max_date_time_length : UInt
+
+pub let max_domain_name_len : UInt
+
+pub let max_elapsed_time_length : UInt
+
+pub let max_farm_len : UInt
+
+pub let max_fqdn_len : UInt
+
+pub let max_net_bios_name_len : UInt
+
+pub let max_num_of_exposed_i_ps : UInt
+
+pub let max_policy_attributes : UInt
+
+pub let max_user_name_len : UInt
+
+pub let notify_for_all_sessions : UInt
+
+pub let notify_for_this_session : UInt
+
+pub let plugin_capability_external_redirection : UInt
+
+pub fn process_id_to_session_id(UInt, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn process_id_to_session_id_raw(UInt, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub let productinfo_companyname_length : UInt
+
+pub let productinfo_productid_length : UInt
+
+pub let remotecontrol_kbdalt_hotkey : UInt
+
+pub let remotecontrol_kbdctrl_hotkey : UInt
+
+pub let remotecontrol_kbdshift_hotkey : UInt
+
+pub let render_hint_clear : UInt
+
+pub let render_hint_mappedwindow : UInt
+
+pub let render_hint_video : UInt
+
+pub let reserved_for_legacy : UInt
+
+pub let rfx_client_id_length : UInt
+
+pub let rfx_gfx_max_supported_monitors : UInt
+
+pub let rfx_gfx_msg_prefix : UInt
+
+pub let rfx_gfx_msg_prefix_mask : UInt
+
+pub let rfx_rdp_msg_prefix : UInt
+
+pub let sb_synch_conflict_max_write_attempts : UInt
+
+pub let single_session : UInt
+
+pub let ts_vc_listener_static_channel : UInt
+
+pub let username_length : UInt
+
+pub let validationinformation_hardwareid_length : UInt
+
+pub let validationinformation_license_length : UInt
+
+pub let virtual_channel_version_win2000 : UInt
+
+pub let w_rds_graphics_channels_lossy_channel_max_message_size : UInt
+
+pub let winstationname_length : UInt
+
+pub let wks_flag_clear_creds_on_last_resource : UInt
+
+pub let wks_flag_creds_authenticated : UInt
+
+pub let wks_flag_password_encrypted : UInt
+
+pub let wrds_client_product_id_length : UInt
+
+pub let wrds_clientaddress_length : UInt
+
+pub let wrds_clientname_length : UInt
+
+pub let wrds_device_name_length : UInt
+
+pub let wrds_directory_length : UInt
+
+pub let wrds_domain_length : UInt
+
+pub let wrds_driver_name_length : UInt
+
+pub let wrds_imefilename_length : UInt
+
+pub let wrds_initialprogram_length : UInt
+
+pub let wrds_key_exchange_alg_dh : UInt
+
+pub let wrds_key_exchange_alg_rsa : UInt
+
+pub let wrds_license_preamble_version : UInt
+
+pub let wrds_license_protocol_version : UInt
+
+pub let wrds_max_cache_reserved : UInt
+
+pub let wrds_max_counters : UInt
+
+pub let wrds_max_display_ioctl_data : UInt
+
+pub let wrds_max_protocol_cache : UInt
+
+pub let wrds_max_reserved : UInt
+
+pub let wrds_password_length : UInt
+
+pub let wrds_perf_disable_cursor_shadow : UInt
+
+pub let wrds_perf_disable_cursorsettings : UInt
+
+pub let wrds_perf_disable_fullwindowdrag : UInt
+
+pub let wrds_perf_disable_menuanimations : UInt
+
+pub let wrds_perf_disable_nothing : UInt
+
+pub let wrds_perf_disable_theming : UInt
+
+pub let wrds_perf_disable_wallpaper : UInt
+
+pub let wrds_perf_enable_desktop_composition : UInt
+
+pub let wrds_perf_enable_enhanced_graphics : UInt
+
+pub let wrds_perf_enable_font_smoothing : UInt
+
+pub let wrds_protocol_name_length : UInt
+
+pub let wrds_username_length : UInt
+
+pub let wrds_value_type_binary : UInt
+
+pub let wrds_value_type_guid : UInt
+
+pub let wrds_value_type_string : UInt
+
+pub let wrds_value_type_ulong : UInt
+
+pub fn wts_active_session_exists(@core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn wts_active_session_exists_raw(@core.RawAddress) -> Int
+
+pub let wts_channel_option_dynamic : UInt
+
+pub let wts_channel_option_dynamic_no_compress : UInt
+
+pub let wts_channel_option_dynamic_pri_high : UInt
+
+pub let wts_channel_option_dynamic_pri_low : UInt
+
+pub let wts_channel_option_dynamic_pri_med : UInt
+
+pub let wts_channel_option_dynamic_pri_real : UInt
+
+pub let wts_client_product_id_length : UInt
+
+pub let wts_clientaddress_length : UInt
+
+pub let wts_clientname_length : UInt
+
+pub fn wts_close_server(@core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn wts_close_server_raw(@core.RawAddress) -> Unit
+
+pub fn wts_cloud_auth_close(@core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn wts_cloud_auth_close_raw(@core.RawAddress) -> Unit
+
+pub fn wts_cloud_auth_convert_assertion_to_serialized_user_credential(@core.RawAddress, @strings.PStr, UInt, @strings.PWStr, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn wts_cloud_auth_convert_assertion_to_serialized_user_credential_raw(@core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn wts_cloud_auth_duplicate_serialized_user_credential(@13201bd2f11134f2.WTSSERIALIZEDUSERCREDENTIAL_7e9f70767bde, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn wts_cloud_auth_duplicate_serialized_user_credential_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn wts_cloud_auth_get_server_nonce(@core.RawAddress, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn wts_cloud_auth_get_server_nonce_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn wts_cloud_auth_network_logon_with_serialized_credential(@core.RawAddress, @13201bd2f11134f2.WTSSERIALIZEDUSERCREDENTIAL_7e9f70767bde, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn wts_cloud_auth_network_logon_with_serialized_credential_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn wts_cloud_auth_open(@core.RawAddress) -> @core.RawAddress raise @core.WindowsError
+
+pub fn wts_cloud_auth_open_raw(@core.RawAddress) -> @core.RawAddress
+
+pub let wts_comment_length : UInt
+
+pub fn wts_connect_session_a(UInt, UInt, @core.RawAddress, Int) -> Bool raise @core.WindowsError
+
+pub fn wts_connect_session_a_raw(UInt, UInt, @core.RawAddress, Int) -> @core.RawWin32Call[Int]
+
+pub fn wts_connect_session_w(UInt, UInt, @core.RawAddress, Int) -> Bool raise @core.WindowsError
+
+pub fn wts_connect_session_w_raw(UInt, UInt, @core.RawAddress, Int) -> @core.RawWin32Call[Int]
+
+pub fn wts_create_listener_a(@core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, @13201bd2f11134f2.WTSLISTENERCONFIGA_90efe6be3a27, UInt) -> Bool raise @core.WindowsError
+
+pub fn wts_create_listener_a_raw(@core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress, UInt) -> @core.RawWin32Call[Int]
+
+pub fn wts_create_listener_w(@core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, @13201bd2f11134f2.WTSLISTENERCONFIGW_3bcc0b3772b8, UInt) -> Bool raise @core.WindowsError
+
+pub fn wts_create_listener_w_raw(@core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress, UInt) -> @core.RawWin32Call[Int]
+
+pub let wts_current_server : Int
+
+pub let wts_current_server_handle : Int
+
+pub let wts_current_server_name : String
+
+pub let wts_current_session : UInt
+
+pub let wts_device_name_length : UInt
+
+pub let wts_directory_length : UInt
+
+pub fn wts_disconnect_session(@core.RawAddress, UInt, Int) -> Bool raise @core.WindowsError
+
+pub fn wts_disconnect_session_raw(@core.RawAddress, UInt, Int) -> @core.RawWin32Call[Int]
+
+pub let wts_domain_length : UInt
+
+pub let wts_drive_length : UInt
+
+pub let wts_driver_name_length : UInt
+
+pub fn wts_enable_child_sessions(Int) -> Bool raise @core.WindowsError
+
+pub fn wts_enable_child_sessions_raw(Int) -> Int
+
+pub fn wts_enumerate_listeners_a(@core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn wts_enumerate_listeners_a_raw(@core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn wts_enumerate_listeners_w(@core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn wts_enumerate_listeners_w_raw(@core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn wts_enumerate_processes_a(@core.RawAddress, UInt, UInt, @core.RawAddress, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn wts_enumerate_processes_a_raw(@core.RawAddress, UInt, UInt, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn wts_enumerate_processes_ex_a(@core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn wts_enumerate_processes_ex_a_raw(@core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn wts_enumerate_processes_ex_w(@core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn wts_enumerate_processes_ex_w_raw(@core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn wts_enumerate_processes_w(@core.RawAddress, UInt, UInt, @core.RawAddress, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn wts_enumerate_processes_w_raw(@core.RawAddress, UInt, UInt, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn wts_enumerate_servers_a(@core.RawAddress, UInt, UInt, @core.RawAddress, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn wts_enumerate_servers_a_raw(@core.RawAddress, UInt, UInt, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn wts_enumerate_servers_w(@core.RawAddress, UInt, UInt, @core.RawAddress, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn wts_enumerate_servers_w_raw(@core.RawAddress, UInt, UInt, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn wts_enumerate_sessions_a(@core.RawAddress, UInt, UInt, @core.RawAddress, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn wts_enumerate_sessions_a_raw(@core.RawAddress, UInt, UInt, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn wts_enumerate_sessions_ex_a(@core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn wts_enumerate_sessions_ex_a_raw(@core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn wts_enumerate_sessions_ex_w(@core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn wts_enumerate_sessions_ex_w_raw(@core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn wts_enumerate_sessions_w(@core.RawAddress, UInt, UInt, @core.RawAddress, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn wts_enumerate_sessions_w_raw(@core.RawAddress, UInt, UInt, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub let wts_event_all : UInt
+
+pub let wts_event_connect : UInt
+
+pub let wts_event_create : UInt
+
+pub let wts_event_delete : UInt
+
+pub let wts_event_disconnect : UInt
+
+pub let wts_event_flush : UInt
+
+pub let wts_event_license : UInt
+
+pub let wts_event_logoff : UInt
+
+pub let wts_event_logon : UInt
+
+pub let wts_event_none : UInt
+
+pub let wts_event_rename : UInt
+
+pub let wts_event_statechange : UInt
+
+pub fn wts_free_memory(@core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn wts_free_memory_ex_a(@13201bd2f11134f2.WTSTYPECLASS_35d2eb734088, @core.RawAddress, UInt) -> Bool raise @core.WindowsError
+
+pub fn wts_free_memory_ex_a_raw(Int, @core.RawAddress, UInt) -> @core.RawWin32Call[Int]
+
+pub fn wts_free_memory_ex_w(@13201bd2f11134f2.WTSTYPECLASS_35d2eb734088, @core.RawAddress, UInt) -> Bool raise @core.WindowsError
+
+pub fn wts_free_memory_ex_w_raw(Int, @core.RawAddress, UInt) -> @core.RawWin32Call[Int]
+
+pub fn wts_free_memory_raw(@core.RawAddress) -> Unit
+
+pub fn wts_get_active_console_session_id() -> UInt raise @core.WindowsError
+
+pub fn wts_get_active_console_session_id_raw() -> UInt
+
+pub fn wts_get_child_session_id(@core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn wts_get_child_session_id_raw(@core.RawAddress) -> Int
+
+pub fn wts_get_listener_security_a(@core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, @cc6631776d7e2373.OBJECTSECURITYINFORMATION_7732df83bef3, @core.RawAddress, UInt, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn wts_get_listener_security_a_raw(@core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, UInt, @core.RawAddress, UInt, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn wts_get_listener_security_w(@core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, @cc6631776d7e2373.OBJECTSECURITYINFORMATION_7732df83bef3, @core.RawAddress, UInt, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn wts_get_listener_security_w_raw(@core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, UInt, @core.RawAddress, UInt, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub let wts_imefilename_length : UInt
+
+pub let wts_initialprogram_length : UInt
+
+pub fn wts_is_child_sessions_enabled(@core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn wts_is_child_sessions_enabled_raw(@core.RawAddress) -> Int
+
+pub let wts_key_exchange_alg_dh : UInt
+
+pub let wts_key_exchange_alg_rsa : UInt
+
+pub let wts_license_preamble_version : UInt
+
+pub let wts_license_protocol_version : UInt
+
+pub let wts_listener_create : UInt
+
+pub let wts_listener_name_length : UInt
+
+pub let wts_listener_update : UInt
+
+pub fn wts_logoff_session(@core.RawAddress, UInt, Int) -> Bool raise @core.WindowsError
+
+pub fn wts_logoff_session_raw(@core.RawAddress, UInt, Int) -> @core.RawWin32Call[Int]
+
+pub let wts_max_cache_reserved : UInt
+
+pub let wts_max_counters : UInt
+
+pub let wts_max_display_ioctl_data : UInt
+
+pub let wts_max_protocol_cache : UInt
+
+pub let wts_max_reserved : UInt
+
+pub fn wts_open_server_a(@core.RawAddress) -> @core.RawAddress raise @core.WindowsError
+
+pub fn wts_open_server_a_raw(@core.RawAddress) -> @core.RawAddress
+
+pub fn wts_open_server_ex_a(@core.RawAddress) -> @core.RawAddress raise @core.WindowsError
+
+pub fn wts_open_server_ex_a_raw(@core.RawAddress) -> @core.RawAddress
+
+pub fn wts_open_server_ex_w(@core.RawAddress) -> @core.RawAddress raise @core.WindowsError
+
+pub fn wts_open_server_ex_w_raw(@core.RawAddress) -> @core.RawAddress
+
+pub fn wts_open_server_w(@core.RawAddress) -> @core.RawAddress raise @core.WindowsError
+
+pub fn wts_open_server_w_raw(@core.RawAddress) -> @core.RawAddress
+
+pub let wts_password_length : UInt
+
+pub let wts_perf_disable_cursor_shadow : UInt
+
+pub let wts_perf_disable_cursorsettings : UInt
+
+pub let wts_perf_disable_fullwindowdrag : UInt
+
+pub let wts_perf_disable_menuanimations : UInt
+
+pub let wts_perf_disable_nothing : UInt
+
+pub let wts_perf_disable_theming : UInt
+
+pub let wts_perf_disable_wallpaper : UInt
+
+pub let wts_perf_enable_desktop_composition : UInt
+
+pub let wts_perf_enable_enhanced_graphics : UInt
+
+pub let wts_perf_enable_font_smoothing : UInt
+
+pub let wts_process_info_level_0 : UInt
+
+pub let wts_process_info_level_1 : UInt
+
+pub let wts_property_default_config : String
+
+pub let wts_protocol_name_length : UInt
+
+pub let wts_protocol_type_console : UInt
+
+pub let wts_protocol_type_ica : UInt
+
+pub let wts_protocol_type_rdp : UInt
+
+pub fn wts_query_listener_config_a(@core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, @13201bd2f11134f2.WTSLISTENERCONFIGA_90efe6be3a27) -> Bool raise @core.WindowsError
+
+pub fn wts_query_listener_config_a_raw(@core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn wts_query_listener_config_w(@core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, @13201bd2f11134f2.WTSLISTENERCONFIGW_3bcc0b3772b8) -> Bool raise @core.WindowsError
+
+pub fn wts_query_listener_config_w_raw(@core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn wts_query_session_information_a(@core.RawAddress, UInt, @13201bd2f11134f2.WTSINFOCLASS_9cb8937755b6, @core.RawAddress, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn wts_query_session_information_a_raw(@core.RawAddress, UInt, Int, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn wts_query_session_information_w(@core.RawAddress, UInt, @13201bd2f11134f2.WTSINFOCLASS_9cb8937755b6, @core.RawAddress, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn wts_query_session_information_w_raw(@core.RawAddress, UInt, Int, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn wts_query_user_config_a(@core.RawAddress, @core.RawAddress, @13201bd2f11134f2.WTSCONFIGCLASS_66c034c0fff3, @core.RawAddress, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn wts_query_user_config_a_raw(@core.RawAddress, @core.RawAddress, Int, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn wts_query_user_config_w(@core.RawAddress, @core.RawAddress, @13201bd2f11134f2.WTSCONFIGCLASS_66c034c0fff3, @core.RawAddress, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn wts_query_user_config_w_raw(@core.RawAddress, @core.RawAddress, Int, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn wts_query_user_token(UInt, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn wts_query_user_token_raw(UInt, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn wts_register_session_notification(@core.RawAddress, UInt) -> Bool raise @core.WindowsError
+
+pub fn wts_register_session_notification_ex(@core.RawAddress, @core.RawAddress, UInt) -> Bool raise @core.WindowsError
+
+pub fn wts_register_session_notification_ex_raw(@core.RawAddress, @core.RawAddress, UInt) -> @core.RawWin32Call[Int]
+
+pub fn wts_register_session_notification_raw(@core.RawAddress, UInt) -> @core.RawWin32Call[Int]
+
+pub fn wts_send_message_a(@core.RawAddress, UInt, @core.RawAddress, UInt, @core.RawAddress, UInt, @a96faf5bf034fb54.MESSAGEBOXSTYLE_365231501e9a, UInt, @core.RawAddress, Int) -> Bool raise @core.WindowsError
+
+pub fn wts_send_message_a_raw(@core.RawAddress, UInt, @core.RawAddress, UInt, @core.RawAddress, UInt, UInt, UInt, @core.RawAddress, Int) -> @core.RawWin32Call[Int]
+
+pub fn wts_send_message_w(@core.RawAddress, UInt, @core.RawAddress, UInt, @core.RawAddress, UInt, @a96faf5bf034fb54.MESSAGEBOXSTYLE_365231501e9a, UInt, @core.RawAddress, Int) -> Bool raise @core.WindowsError
+
+pub fn wts_send_message_w_raw(@core.RawAddress, UInt, @core.RawAddress, UInt, @core.RawAddress, UInt, UInt, UInt, @core.RawAddress, Int) -> @core.RawWin32Call[Int]
+
+pub let wts_sessionstate_lock : UInt
+
+pub let wts_sessionstate_unknown : UInt
+
+pub let wts_sessionstate_unlock : UInt
+
+pub fn wts_set_listener_security_a(@core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, @cc6631776d7e2373.OBJECTSECURITYINFORMATION_7732df83bef3, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn wts_set_listener_security_a_raw(@core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, UInt, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn wts_set_listener_security_w(@core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, @cc6631776d7e2373.OBJECTSECURITYINFORMATION_7732df83bef3, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn wts_set_listener_security_w_raw(@core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, UInt, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn wts_set_render_hint(@core.RawAddress, @core.RawAddress, UInt, UInt, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn wts_set_render_hint_raw(@core.RawAddress, @core.RawAddress, UInt, UInt, @core.RawAddress) -> Int
+
+pub fn wts_set_user_config_a(@core.RawAddress, @core.RawAddress, @13201bd2f11134f2.WTSCONFIGCLASS_66c034c0fff3, @core.RawAddress, UInt) -> Bool raise @core.WindowsError
+
+pub fn wts_set_user_config_a_raw(@core.RawAddress, @core.RawAddress, Int, @core.RawAddress, UInt) -> @core.RawWin32Call[Int]
+
+pub fn wts_set_user_config_w(@core.RawAddress, @core.RawAddress, @13201bd2f11134f2.WTSCONFIGCLASS_66c034c0fff3, @core.RawAddress, UInt) -> Bool raise @core.WindowsError
+
+pub fn wts_set_user_config_w_raw(@core.RawAddress, @core.RawAddress, Int, @core.RawAddress, UInt) -> @core.RawWin32Call[Int]
+
+pub fn wts_shutdown_system(@core.RawAddress, UInt) -> Bool raise @core.WindowsError
+
+pub fn wts_shutdown_system_raw(@core.RawAddress, UInt) -> @core.RawWin32Call[Int]
+
+pub fn wts_start_remote_control_session_a(@core.RawAddress, UInt, Byte, UInt16) -> Bool raise @core.WindowsError
+
+pub fn wts_start_remote_control_session_a_raw(@core.RawAddress, UInt, UInt, UInt) -> @core.RawWin32Call[Int]
+
+pub fn wts_start_remote_control_session_w(@core.RawAddress, UInt, Byte, UInt16) -> Bool raise @core.WindowsError
+
+pub fn wts_start_remote_control_session_w_raw(@core.RawAddress, UInt, UInt, UInt) -> @core.RawWin32Call[Int]
+
+pub fn wts_stop_remote_control_session(UInt) -> Bool raise @core.WindowsError
+
+pub fn wts_stop_remote_control_session_raw(UInt) -> @core.RawWin32Call[Int]
+
+pub fn wts_terminate_process(@core.RawAddress, UInt, UInt) -> Bool raise @core.WindowsError
+
+pub fn wts_terminate_process_raw(@core.RawAddress, UInt, UInt) -> @core.RawWin32Call[Int]
+
+pub fn wts_un_register_session_notification(@core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn wts_un_register_session_notification_ex(@core.RawAddress, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn wts_un_register_session_notification_ex_raw(@core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn wts_un_register_session_notification_raw(@core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub let wts_username_length : UInt
+
+pub let wts_value_type_binary : UInt
+
+pub let wts_value_type_guid : UInt
+
+pub let wts_value_type_string : UInt
+
+pub let wts_value_type_ulong : UInt
+
+pub fn wts_virtual_channel_close(@core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn wts_virtual_channel_close_raw(@core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn wts_virtual_channel_open(@core.RawAddress, UInt, @core.RawAddress) -> @core.RawAddress raise @core.WindowsError
+
+pub fn wts_virtual_channel_open_ex(UInt, @core.RawAddress, UInt) -> @core.RawAddress raise @core.WindowsError
+
+pub fn wts_virtual_channel_open_ex_raw(UInt, @core.RawAddress, UInt) -> @core.RawWin32Call[@core.RawAddress]
+
+pub fn wts_virtual_channel_open_raw(@core.RawAddress, UInt, @core.RawAddress) -> @core.RawWin32Call[@core.RawAddress]
+
+pub fn wts_virtual_channel_purge_input(@core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn wts_virtual_channel_purge_input_raw(@core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn wts_virtual_channel_purge_output(@core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn wts_virtual_channel_purge_output_raw(@core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn wts_virtual_channel_query(@core.RawAddress, @13201bd2f11134f2.WTSVIRTUALCLASS_196339d7f57a, @core.RawAddress, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn wts_virtual_channel_query_raw(@core.RawAddress, Int, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn wts_virtual_channel_read(@core.RawAddress, UInt, @core.RawAddress, UInt, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn wts_virtual_channel_read_raw(@core.RawAddress, UInt, @core.RawAddress, UInt, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn wts_virtual_channel_write(@core.RawAddress, @core.RawAddress, UInt, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn wts_virtual_channel_write_raw(@core.RawAddress, @core.RawAddress, UInt, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn wts_wait_system_event(@core.RawAddress, UInt, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn wts_wait_system_event_raw(@core.RawAddress, UInt, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub let wts_wsd_fastreboot : UInt
+
+pub let wts_wsd_logoff : UInt
+
+pub let wts_wsd_poweroff : UInt
+
+pub let wts_wsd_reboot : UInt
+
+pub let wts_wsd_shutdown : UInt
+
+// Errors
+
+// Types and methods
+
+// Type aliases
+pub using @13201bd2f11134f2 {type AAAccountingData_b3c7f7fc5cc6 as AAAccountingData}
+
+pub using @13201bd2f11134f2 {type AAAccountingDataType_b52d59b34463 as AAAccountingDataType}
+
+pub using @13201bd2f11134f2 {type AAAuthSchemes_e1b91426841b as AAAuthSchemes}
+
+pub using @13201bd2f11134f2 {type AATrustClassID_ad52c7ae265b as AATrustClassID}
+
+pub using @13201bd2f11134f2 {type ADsTSUserEx_4c58508d0b0b as ADsTSUserEx}
+
+pub using @13201bd2f11134f2 {type AECURRENTPOSITION_8dbaf3b6d9db as AECURRENTPOSITION}
+
+pub using @13201bd2f11134f2 {type AEPOSITIONFLAGS_a41a11ee0b20 as AEPOSITIONFLAGS}
+
+pub using @13201bd2f11134f2 {type BITMAPRENDERERSTATISTICS_6b090979e410 as BITMAPRENDERERSTATISTICS}
+
+pub using @13201bd2f11134f2 {type CHANNELDEF_c9ef1ac352b0 as CHANNELDEF}
+
+pub using @13201bd2f11134f2 {type CHANNELENTRYPOINTS_fd2d1389b6fa as CHANNELENTRYPOINTS}
+
+pub using @13201bd2f11134f2 {type CHANNELPDUHEADER_8c46fb9fd9de as CHANNELPDUHEADER}
+
+pub using @13201bd2f11134f2 {type CLIENTDISPLAY_93fbfecc0f2e as CLIENTDISPLAY}
+
+pub using @13201bd2f11134f2 {type CLIENTMESSAGETYPE_9957d5cf2200 as CLIENTMESSAGETYPE}
+
+pub using @13201bd2f11134f2 {type CONNECTIONCHANGENOTIFICATION_1fe0920eff24 as CONNECTIONCHANGENOTIFICATION}
+
+pub using @13201bd2f11134f2 {type IADsTSUserEx_401361c6eec1 as IADsTSUserEx}
+
+pub using @13201bd2f11134f2 {type IAudioDeviceEndpoint_65d201e42dfe as IAudioDeviceEndpoint}
+
+pub using @13201bd2f11134f2 {type IAudioEndpoint_a365705c1955 as IAudioEndpoint}
+
+pub using @13201bd2f11134f2 {type IAudioEndpointControl_18a2453974a6 as IAudioEndpointControl}
+
+pub using @13201bd2f11134f2 {type IAudioEndpointRT_a7f4d36dfa2a as IAudioEndpointRT}
+
+pub using @13201bd2f11134f2 {type IAudioInputEndpointRT_d4ec360cfdcc as IAudioInputEndpointRT}
+
+pub using @13201bd2f11134f2 {type IAudioOutputEndpointRT_fee106b447ac as IAudioOutputEndpointRT}
+
+pub using @13201bd2f11134f2 {type IRemoteDesktopClient_37eb677d536c as IRemoteDesktopClient}
+
+pub using @13201bd2f11134f2 {type IRemoteDesktopClientActions_b9dd015069eb as IRemoteDesktopClientActions}
+
+pub using @13201bd2f11134f2 {type IRemoteDesktopClientSettings_4b197cf54611 as IRemoteDesktopClientSettings}
+
+pub using @13201bd2f11134f2 {type IRemoteDesktopClientTouchPointer_722593cf4e41 as IRemoteDesktopClientTouchPointer}
+
+pub using @13201bd2f11134f2 {type IRemoteSystemAdditionalInfoProvider_0e94499bc9e0 as IRemoteSystemAdditionalInfoProvider}
+
+pub using @13201bd2f11134f2 {type ITSGAccountingEngine_100711960b5c as ITSGAccountingEngine}
+
+pub using @13201bd2f11134f2 {type ITSGAuthenticateUserSink_2cba5f67a63d as ITSGAuthenticateUserSink}
+
+pub using @13201bd2f11134f2 {type ITSGAuthenticationEngine_f4e4708d0e57 as ITSGAuthenticationEngine}
+
+pub using @13201bd2f11134f2 {type ITSGAuthorizeConnectionSink_934e6fd30bb4 as ITSGAuthorizeConnectionSink}
+
+pub using @13201bd2f11134f2 {type ITSGAuthorizeResourceSink_07e7af99eba9 as ITSGAuthorizeResourceSink}
+
+pub using @13201bd2f11134f2 {type ITSGPolicyEngine_aa11d25e7961 as ITSGPolicyEngine}
+
+pub using @13201bd2f11134f2 {type ITSWkspEvents_47219dba68a5 as ITSWkspEvents}
+
+pub using @13201bd2f11134f2 {type ITsSbBaseNotifySink_e02441a13b54 as ITsSbBaseNotifySink}
+
+pub using @13201bd2f11134f2 {type ITsSbClientConnection_59397adee8b3 as ITsSbClientConnection}
+
+pub using @13201bd2f11134f2 {type ITsSbClientConnectionPropertySet_8c2757f62ddc as ITsSbClientConnectionPropertySet}
+
+pub using @13201bd2f11134f2 {type ITsSbEnvironment_b6ca80b66fb4 as ITsSbEnvironment}
+
+pub using @13201bd2f11134f2 {type ITsSbEnvironmentPropertySet_7cc6a2d11d95 as ITsSbEnvironmentPropertySet}
+
+pub using @13201bd2f11134f2 {type ITsSbFilterPluginStore_601946f6c111 as ITsSbFilterPluginStore}
+
+pub using @13201bd2f11134f2 {type ITsSbGenericNotifySink_8c5f508becd3 as ITsSbGenericNotifySink}
+
+pub using @13201bd2f11134f2 {type ITsSbGlobalStore_58058240f8c6 as ITsSbGlobalStore}
+
+pub using @13201bd2f11134f2 {type ITsSbLoadBalanceResult_190d719b96ce as ITsSbLoadBalanceResult}
+
+pub using @13201bd2f11134f2 {type ITsSbLoadBalancing_85f48791c2ba as ITsSbLoadBalancing}
+
+pub using @13201bd2f11134f2 {type ITsSbLoadBalancingNotifySink_3f60a7cfba9a as ITsSbLoadBalancingNotifySink}
+
+pub using @13201bd2f11134f2 {type ITsSbOrchestration_223a0b413562 as ITsSbOrchestration}
+
+pub using @13201bd2f11134f2 {type ITsSbOrchestrationNotifySink_f812780af1c9 as ITsSbOrchestrationNotifySink}
+
+pub using @13201bd2f11134f2 {type ITsSbPlacement_01151e5a6b92 as ITsSbPlacement}
+
+pub using @13201bd2f11134f2 {type ITsSbPlacementNotifySink_ab5dfe7af7ab as ITsSbPlacementNotifySink}
+
+pub using @13201bd2f11134f2 {type ITsSbPlugin_1d4f2e6ff682 as ITsSbPlugin}
+
+pub using @13201bd2f11134f2 {type ITsSbPluginNotifySink_1536c54f3f0d as ITsSbPluginNotifySink}
+
+pub using @13201bd2f11134f2 {type ITsSbPluginPropertySet_d6cbb96b8367 as ITsSbPluginPropertySet}
+
+pub using @13201bd2f11134f2 {type ITsSbPropertySet_f7d313dfbafd as ITsSbPropertySet}
+
+pub using @13201bd2f11134f2 {type ITsSbProvider_bf5109852f9d as ITsSbProvider}
+
+pub using @13201bd2f11134f2 {type ITsSbProvisioning_7c2ccfb1e1cd as ITsSbProvisioning}
+
+pub using @13201bd2f11134f2 {type ITsSbProvisioningPluginNotifySink_443384b1acfd as ITsSbProvisioningPluginNotifySink}
+
+pub using @13201bd2f11134f2 {type ITsSbResourceNotification_10004813758e as ITsSbResourceNotification}
+
+pub using @13201bd2f11134f2 {type ITsSbResourceNotificationEx_4e819f56ce7d as ITsSbResourceNotificationEx}
+
+pub using @13201bd2f11134f2 {type ITsSbResourcePlugin_aef38f475f04 as ITsSbResourcePlugin}
+
+pub using @13201bd2f11134f2 {type ITsSbResourcePluginStore_48383d35d6e6 as ITsSbResourcePluginStore}
+
+pub using @13201bd2f11134f2 {type ITsSbServiceNotification_8cb8d99bd7cf as ITsSbServiceNotification}
+
+pub using @13201bd2f11134f2 {type ITsSbSession_47d8c7bcf99e as ITsSbSession}
+
+pub using @13201bd2f11134f2 {type ITsSbTarget_30714fe05d25 as ITsSbTarget}
+
+pub using @13201bd2f11134f2 {type ITsSbTargetPropertySet_06514ac2a99f as ITsSbTargetPropertySet}
+
+pub using @13201bd2f11134f2 {type ITsSbTaskInfo_0ce8aaf1549d as ITsSbTaskInfo}
+
+pub using @13201bd2f11134f2 {type ITsSbTaskPlugin_e611a78dc6a4 as ITsSbTaskPlugin}
+
+pub using @13201bd2f11134f2 {type ITsSbTaskPluginNotifySink_b365c593a3b5 as ITsSbTaskPluginNotifySink}
+
+pub using @13201bd2f11134f2 {type IWRdsEnhancedFastReconnectArbitrator_92e5fa8c50ae as IWRdsEnhancedFastReconnectArbitrator}
+
+pub using @13201bd2f11134f2 {type IWRdsGraphicsChannel_a9ad4a04da99 as IWRdsGraphicsChannel}
+
+pub using @13201bd2f11134f2 {type IWRdsGraphicsChannelEvents_9d72dbdc2dfb as IWRdsGraphicsChannelEvents}
+
+pub using @13201bd2f11134f2 {type IWRdsGraphicsChannelManager_e9ba563df4f0 as IWRdsGraphicsChannelManager}
+
+pub using @13201bd2f11134f2 {type IWRdsProtocolConnection_466e8ae77e05 as IWRdsProtocolConnection}
+
+pub using @13201bd2f11134f2 {type IWRdsProtocolConnection2_49458e22ffec as IWRdsProtocolConnection2}
+
+pub using @13201bd2f11134f2 {type IWRdsProtocolConnectionCallback_3e52fca17688 as IWRdsProtocolConnectionCallback}
+
+pub using @13201bd2f11134f2 {type IWRdsProtocolConnectionSettings_0279c71d5299 as IWRdsProtocolConnectionSettings}
+
+pub using @13201bd2f11134f2 {type IWRdsProtocolLicenseConnection_b1d1856426a7 as IWRdsProtocolLicenseConnection}
+
+pub using @13201bd2f11134f2 {type IWRdsProtocolListener_0bfb4d80cd27 as IWRdsProtocolListener}
+
+pub using @13201bd2f11134f2 {type IWRdsProtocolListenerCallback_f533ffb1d874 as IWRdsProtocolListenerCallback}
+
+pub using @13201bd2f11134f2 {type IWRdsProtocolLogonErrorRedirector_a8df771556bd as IWRdsProtocolLogonErrorRedirector}
+
+pub using @13201bd2f11134f2 {type IWRdsProtocolManager_ad6f7add9d8d as IWRdsProtocolManager}
+
+pub using @13201bd2f11134f2 {type IWRdsProtocolSettings_440a4926fa51 as IWRdsProtocolSettings}
+
+pub using @13201bd2f11134f2 {type IWRdsProtocolShadowCallback_c38375641711 as IWRdsProtocolShadowCallback}
+
+pub using @13201bd2f11134f2 {type IWRdsProtocolShadowConnection_05373ef76af9 as IWRdsProtocolShadowConnection}
+
+pub using @13201bd2f11134f2 {type IWRdsWddmIddProps_da72aad82bee as IWRdsWddmIddProps}
+
+pub using @13201bd2f11134f2 {type IWRdsWddmIddProps1_1c051e577710 as IWRdsWddmIddProps1}
+
+pub using @13201bd2f11134f2 {type IWTSBitmapRenderService_f7df5dee19c9 as IWTSBitmapRenderService}
+
+pub using @13201bd2f11134f2 {type IWTSBitmapRenderer_53ea1c7d15aa as IWTSBitmapRenderer}
+
+pub using @13201bd2f11134f2 {type IWTSBitmapRendererCallback_4931b0f0cf4c as IWTSBitmapRendererCallback}
+
+pub using @13201bd2f11134f2 {type IWTSListener_57096ddaa537 as IWTSListener}
+
+pub using @13201bd2f11134f2 {type IWTSListenerCallback_cf1d8de09dbd as IWTSListenerCallback}
+
+pub using @13201bd2f11134f2 {type IWTSPlugin_8bb00d0ad578 as IWTSPlugin}
+
+pub using @13201bd2f11134f2 {type IWTSPluginServiceProvider_d28da7bc512d as IWTSPluginServiceProvider}
+
+pub using @13201bd2f11134f2 {type IWTSProtocolConnection_3ad6c3b332a9 as IWTSProtocolConnection}
+
+pub using @13201bd2f11134f2 {type IWTSProtocolConnectionCallback_71e55c451a9b as IWTSProtocolConnectionCallback}
+
+pub using @13201bd2f11134f2 {type IWTSProtocolLicenseConnection_32fde44698be as IWTSProtocolLicenseConnection}
+
+pub using @13201bd2f11134f2 {type IWTSProtocolListener_419a113b9693 as IWTSProtocolListener}
+
+pub using @13201bd2f11134f2 {type IWTSProtocolListenerCallback_981e38b29d4d as IWTSProtocolListenerCallback}
+
+pub using @13201bd2f11134f2 {type IWTSProtocolLogonErrorRedirector_cd1dc14b130f as IWTSProtocolLogonErrorRedirector}
+
+pub using @13201bd2f11134f2 {type IWTSProtocolManager_0e0556a6cda7 as IWTSProtocolManager}
+
+pub using @13201bd2f11134f2 {type IWTSProtocolShadowCallback_03ecbe32fe4a as IWTSProtocolShadowCallback}
+
+pub using @13201bd2f11134f2 {type IWTSProtocolShadowConnection_5f698f325894 as IWTSProtocolShadowConnection}
+
+pub using @13201bd2f11134f2 {type IWTSSBPlugin_55abe94cbc1b as IWTSSBPlugin}
+
+pub using @13201bd2f11134f2 {type IWTSVirtualChannel_d65e0f74ade3 as IWTSVirtualChannel}
+
+pub using @13201bd2f11134f2 {type IWTSVirtualChannelCallback_a2504de52a25 as IWTSVirtualChannelCallback}
+
+pub using @13201bd2f11134f2 {type IWTSVirtualChannelManager_41a307a84278 as IWTSVirtualChannelManager}
+
+pub using @13201bd2f11134f2 {type IWorkspace_5c351aa58c6f as IWorkspace}
+
+pub using @13201bd2f11134f2 {type IWorkspace2_d3be716dc74e as IWorkspace2}
+
+pub using @13201bd2f11134f2 {type IWorkspace3_bb83260e8e9a as IWorkspace3}
+
+pub using @13201bd2f11134f2 {type IWorkspaceClientExt_be1877c4dff2 as IWorkspaceClientExt}
+
+pub using @13201bd2f11134f2 {type IWorkspaceRegistration_a3027f05e149 as IWorkspaceRegistration}
+
+pub using @13201bd2f11134f2 {type IWorkspaceRegistration2_a5d5e9734077 as IWorkspaceRegistration2}
+
+pub using @13201bd2f11134f2 {type IWorkspaceReportMessage_abb486ca4ac7 as IWorkspaceReportMessage}
+
+pub using @13201bd2f11134f2 {type IWorkspaceResTypeRegistry_33df17a8b5c7 as IWorkspaceResTypeRegistry}
+
+pub using @13201bd2f11134f2 {type IWorkspaceScriptable_6248838dea8e as IWorkspaceScriptable}
+
+pub using @13201bd2f11134f2 {type IWorkspaceScriptable2_c36c5f9aa273 as IWorkspaceScriptable2}
+
+pub using @13201bd2f11134f2 {type IWorkspaceScriptable3_89b8e459e680 as IWorkspaceScriptable3}
+
+pub using @13201bd2f11134f2 {type ItsPubPlugin_8f9d457b69cd as ItsPubPlugin}
+
+pub using @13201bd2f11134f2 {type ItsPubPlugin2_df6a9aa87f33 as ItsPubPlugin2}
+
+pub using @13201bd2f11134f2 {type KeyCombinationType_03251ef81e12 as KeyCombinationType}
+
+pub using @13201bd2f11134f2 {type PCHANNELINITEVENTFN_fcb4f594baa5 as PCHANNELINITEVENTFN}
+
+pub using @13201bd2f11134f2 {type PCHANNELOPENEVENTFN_bec8106e182f as PCHANNELOPENEVENTFN}
+
+pub using @13201bd2f11134f2 {type PLUGINTYPE_77e192884246 as PLUGINTYPE}
+
+pub using @13201bd2f11134f2 {type PRODUCTINFOA_476a765a5d15 as PRODUCTINFOA}
+
+pub using @13201bd2f11134f2 {type PRODUCTINFOW_6585d171d2b2 as PRODUCTINFOW}
+
+pub using @13201bd2f11134f2 {type PVIRTUALCHANNELCLOSE_21edba95c7dc as PVIRTUALCHANNELCLOSE}
+
+pub using @13201bd2f11134f2 {type PVIRTUALCHANNELENTRY_43a0d4639ad0 as PVIRTUALCHANNELENTRY}
+
+pub using @13201bd2f11134f2 {type PVIRTUALCHANNELINIT_94a40b15bd62 as PVIRTUALCHANNELINIT}
+
+pub using @13201bd2f11134f2 {type PVIRTUALCHANNELOPEN_02bf766305ce as PVIRTUALCHANNELOPEN}
+
+pub using @13201bd2f11134f2 {type PVIRTUALCHANNELWRITE_f1e6ca3f599c as PVIRTUALCHANNELWRITE}
+
+pub using @13201bd2f11134f2 {type PasswordEncodingType_94f4095ed1c0 as PasswordEncodingType}
+
+pub using @13201bd2f11134f2 {type PluginResource_43ca3c6880a4 as PluginResource}
+
+pub using @13201bd2f11134f2 {type PluginResource2_7658706fcc1e as PluginResource2}
+
+pub using @13201bd2f11134f2 {type PluginResource2FileAssociation_7f63ca22e9c4 as PluginResource2FileAssociation}
+
+pub using @13201bd2f11134f2 {type PolicyAttributeType_df52ca3e69d2 as PolicyAttributeType}
+
+pub using @13201bd2f11134f2 {type RDFARMTYPE_542bdfc98777 as RDFARMTYPE}
+
+pub using @13201bd2f11134f2 {type RDVTASKSTATUS_d59b31d65879 as RDVTASKSTATUS}
+
+pub using @13201bd2f11134f2 {type RFXGFXMONITORINFO_b50029c256da as RFXGFXMONITORINFO}
+
+pub using @13201bd2f11134f2 {type RFXGFXMSGCLIENTDESKTOPINFOREQUEST_1ab27cbface5 as RFXGFXMSGCLIENTDESKTOPINFOREQUEST}
+
+pub using @13201bd2f11134f2 {type RFXGFXMSGCLIENTDESKTOPINFORESPONSE_7849d85bea3a as RFXGFXMSGCLIENTDESKTOPINFORESPONSE}
+
+pub using @13201bd2f11134f2 {type RFXGFXMSGDESKTOPCONFIGCHANGECONFIRM_499c936a9bf6 as RFXGFXMSGDESKTOPCONFIGCHANGECONFIRM}
+
+pub using @13201bd2f11134f2 {type RFXGFXMSGDESKTOPCONFIGCHANGENOTIFY_67a350a5fb96 as RFXGFXMSGDESKTOPCONFIGCHANGENOTIFY}
+
+pub using @13201bd2f11134f2 {type RFXGFXMSGDESKTOPINPUTRESET_63ed22891329 as RFXGFXMSGDESKTOPINPUTRESET}
+
+pub using @13201bd2f11134f2 {type RFXGFXMSGDESKTOPRESENDREQUEST_53fe00c69c65 as RFXGFXMSGDESKTOPRESENDREQUEST}
+
+pub using @13201bd2f11134f2 {type RFXGFXMSGDISCONNECTNOTIFY_d4e7382a78dc as RFXGFXMSGDISCONNECTNOTIFY}
+
+pub using @13201bd2f11134f2 {type RFXGFXMSGHEADER_10b1e1396161 as RFXGFXMSGHEADER}
+
+pub using @13201bd2f11134f2 {type RFXGFXMSGRDPDATA_093c6bbe710a as RFXGFXMSGRDPDATA}
+
+pub using @13201bd2f11134f2 {type RFXGFXRECT_8c107b50bec2 as RFXGFXRECT}
+
+pub using @13201bd2f11134f2 {type RemoteActionType_62c2803226ae as RemoteActionType}
+
+pub using @13201bd2f11134f2 {type SESSIONTIMEOUTACTIONTYPE_4cc34c9cc062 as SESSIONTIMEOUTACTIONTYPE}
+
+pub using @13201bd2f11134f2 {type SnapshotEncodingType_7fe09f022778 as SnapshotEncodingType}
+
+pub using @13201bd2f11134f2 {type SnapshotFormatType_b1fa064140c1 as SnapshotFormatType}
+
+pub using @13201bd2f11134f2 {type TARGETCHANGETYPE_8c1395ec61ef as TARGETCHANGETYPE}
+
+pub using @13201bd2f11134f2 {type TARGETOWNER_1ce8877970bf as TARGETOWNER}
+
+pub using @13201bd2f11134f2 {type TARGETPATCHSTATE_27c1bf7005b4 as TARGETPATCHSTATE}
+
+pub using @13201bd2f11134f2 {type TARGETSTATE_3fc11d717905 as TARGETSTATE}
+
+pub using @13201bd2f11134f2 {type TARGETTYPE_c9f9ee796876 as TARGETTYPE}
+
+pub using @13201bd2f11134f2 {type TSPUBPLUGINPDASSIGNMENTTYPE_eb774a9b8892 as TSPUBPLUGINPDASSIGNMENTTYPE}
+
+pub using @13201bd2f11134f2 {type TSPUBPLUGINPDRESOLUTIONTYPE_de21b64f8f67 as TSPUBPLUGINPDRESOLUTIONTYPE}
+
+pub using @13201bd2f11134f2 {type TSSBNOTIFICATIONTYPE_7f460fd1bf4a as TSSBNOTIFICATIONTYPE}
+
+pub using @13201bd2f11134f2 {type TSSBSORTBY_2cdf94f0f8de as TSSBSORTBY}
+
+pub using @13201bd2f11134f2 {type TSSDAddrV46Type_582070ee33c1 as TSSDAddrV46Type}
+
+pub using @13201bd2f11134f2 {type TSSDConnectionPoint_02af8d4bc403 as TSSDConnectionPoint}
+
+pub using @13201bd2f11134f2 {type TSSESSIONSTATE_a1c7cc8e8a01 as TSSESSIONSTATE}
+
+pub using @13201bd2f11134f2 {type TSUserExInterfaces_d431330e5c59 as TSUserExInterfaces}
+
+pub using @13201bd2f11134f2 {type VMHOSTNOTIFYSTATUS_028520da2024 as VMHOSTNOTIFYSTATUS}
+
+pub using @13201bd2f11134f2 {type VMNOTIFYENTRY_2fb255e484eb as VMNOTIFYENTRY}
+
+pub using @13201bd2f11134f2 {type VMNOTIFYINFO_61b291fbfd05 as VMNOTIFYINFO}
+
+pub using @13201bd2f11134f2 {type VMNOTIFYSTATUS_a75fa8e45809 as VMNOTIFYSTATUS}
+
+pub using @13201bd2f11134f2 {type VMPATCHINFO_e40ed51d163f as VMPATCHINFO}
+
+pub using @13201bd2f11134f2 {type WRDSCONNECTIONSETTING_de8cea1d7873 as WRDSCONNECTIONSETTING}
+
+pub using @13201bd2f11134f2 {type WRDSCONNECTIONSETTINGLEVEL_f5b10f58de28 as WRDSCONNECTIONSETTINGLEVEL}
+
+pub using @13201bd2f11134f2 {type WRDSCONNECTIONSETTINGS_08c18a80cb88 as WRDSCONNECTIONSETTINGS}
+
+pub using @13201bd2f11134f2 {type WRDSCONNECTIONSETTINGS1_4b33ef429a5e as WRDSCONNECTIONSETTINGS1}
+
+pub using @13201bd2f11134f2 {type WRDSDYNAMICTIMEZONEINFORMATION_ed3519449a5d as WRDSDYNAMICTIMEZONEINFORMATION}
+
+pub using @13201bd2f11134f2 {type WRDSLISTENERSETTING_44ff985e46a3 as WRDSLISTENERSETTING}
+
+pub using @13201bd2f11134f2 {type WRDSLISTENERSETTINGLEVEL_0386a4789d1b as WRDSLISTENERSETTINGLEVEL}
+
+pub using @13201bd2f11134f2 {type WRDSLISTENERSETTINGS_a49504eef60a as WRDSLISTENERSETTINGS}
+
+pub using @13201bd2f11134f2 {type WRDSLISTENERSETTINGS1_1511fc3f2109 as WRDSLISTENERSETTINGS1}
+
+pub using @13201bd2f11134f2 {type WRDSSETTING_25929a1f2928 as WRDSSETTING}
+
+pub using @13201bd2f11134f2 {type WRDSSETTINGLEVEL_f071f1142670 as WRDSSETTINGLEVEL}
+
+pub using @13201bd2f11134f2 {type WRDSSETTINGS_7d3cbd98f72b as WRDSSETTINGS}
+
+pub using @13201bd2f11134f2 {type WRDSSETTINGS1_4e7423167b66 as WRDSSETTINGS1}
+
+pub using @13201bd2f11134f2 {type WRDSSETTINGSTATUS_6e9008259c2f as WRDSSETTINGSTATUS}
+
+pub using @13201bd2f11134f2 {type WRDSSETTINGTYPE_2bc97d358c0f as WRDSSETTINGTYPE}
+
+pub using @13201bd2f11134f2 {type WRdsGraphicsChannelType_8231979bb78e as WRdsGraphicsChannelType}
+
+pub using @13201bd2f11134f2 {type WTSCACHESTATS_89c81a02c38e as WTSCACHESTATS}
+
+pub using @13201bd2f11134f2 {type WTSCACHESTATSUN_914ac892f77b as WTSCACHESTATSUN}
+
+pub using @13201bd2f11134f2 {type WTSCERTTYPE_1070f8d76bee as WTSCERTTYPE}
+
+pub using @13201bd2f11134f2 {type WTSCLIENTA_ce962c6d518a as WTSCLIENTA}
+
+pub using @13201bd2f11134f2 {type WTSCLIENTADDRESS_ee2dd66ade00 as WTSCLIENTADDRESS}
+
+pub using @13201bd2f11134f2 {type WTSCLIENTDATA_4fc949babba0 as WTSCLIENTDATA}
+
+pub using @13201bd2f11134f2 {type WTSCLIENTDISPLAY_ae22a3136621 as WTSCLIENTDISPLAY}
+
+pub using @13201bd2f11134f2 {type WTSCLIENTW_21d44bb653e0 as WTSCLIENTW}
+
+pub using @13201bd2f11134f2 {type WTSCLOUDAUTHHANDLE_5894569cc0ab as WTSCLOUDAUTHHANDLE}
+
+pub using @13201bd2f11134f2 {type WTSCONFIGCLASS_66c034c0fff3 as WTSCONFIGCLASS}
+
+pub using @13201bd2f11134f2 {type WTSCONFIGINFOA_f13be19be4d1 as WTSCONFIGINFOA}
+
+pub using @13201bd2f11134f2 {type WTSCONFIGINFOW_f2de5a1b3988 as WTSCONFIGINFOW}
+
+pub using @13201bd2f11134f2 {type WTSCONFIGSOURCE_a9a5bb0bb8c9 as WTSCONFIGSOURCE}
+
+pub using @13201bd2f11134f2 {type WTSCONNECTSTATECLASS_91e00bc33170 as WTSCONNECTSTATECLASS}
+
+pub using @13201bd2f11134f2 {type WTSDISPLAYIOCTL_f410b0c4e5da as WTSDISPLAYIOCTL}
+
+pub using @13201bd2f11134f2 {type WTSINFOA_6f15fa5e46f7 as WTSINFOA}
+
+pub using @13201bd2f11134f2 {type WTSINFOCLASS_9cb8937755b6 as WTSINFOCLASS}
+
+pub using @13201bd2f11134f2 {type WTSINFOEXA_84420f8e3add as WTSINFOEXA}
+
+pub using @13201bd2f11134f2 {type WTSINFOEXLEVEL1A_85918ed54f3f as WTSINFOEXLEVEL1A}
+
+pub using @13201bd2f11134f2 {type WTSINFOEXLEVEL1W_06f7dd21fdaa as WTSINFOEXLEVEL1W}
+
+pub using @13201bd2f11134f2 {type WTSINFOEXLEVELA_41ac1145318a as WTSINFOEXLEVELA}
+
+pub using @13201bd2f11134f2 {type WTSINFOEXLEVELW_2a3ee2100645 as WTSINFOEXLEVELW}
+
+pub using @13201bd2f11134f2 {type WTSINFOEXW_47129d0c0c86 as WTSINFOEXW}
+
+pub using @13201bd2f11134f2 {type WTSINFOW_92be83060fe9 as WTSINFOW}
+
+pub using @13201bd2f11134f2 {type WTSLICENSECAPABILITIES_9688407ce8df as WTSLICENSECAPABILITIES}
+
+pub using @13201bd2f11134f2 {type WTSLISTENERCONFIGA_90efe6be3a27 as WTSLISTENERCONFIGA}
+
+pub using @13201bd2f11134f2 {type WTSLISTENERCONFIGW_3bcc0b3772b8 as WTSLISTENERCONFIGW}
+
+pub using @13201bd2f11134f2 {type WTSLOGONERRORREDIRECTORRESPONSE_6c9f928808e5 as WTSLOGONERRORREDIRECTORRESPONSE}
+
+pub using @13201bd2f11134f2 {type WTSPOLICYDATA_f6334abb4157 as WTSPOLICYDATA}
+
+pub using @13201bd2f11134f2 {type WTSPROCESSINFOA_f48a5de3f8a9 as WTSPROCESSINFOA}
+
+pub using @13201bd2f11134f2 {type WTSPROCESSINFOEXA_34e8025191e3 as WTSPROCESSINFOEXA}
+
+pub using @13201bd2f11134f2 {type WTSPROCESSINFOEXW_8ddae32b71e4 as WTSPROCESSINFOEXW}
+
+pub using @13201bd2f11134f2 {type WTSPROCESSINFOW_b5cab0241cdd as WTSPROCESSINFOW}
+
+pub using @13201bd2f11134f2 {type WTSPROPERTYVALUE_ea68aab93bb5 as WTSPROPERTYVALUE}
+
+pub using @13201bd2f11134f2 {type WTSPROPERTYVALUEUEUnion_a9756d9ce593 as WTSPROPERTYVALUEUEUnion}
+
+pub using @13201bd2f11134f2 {type WTSPROPERTYVALUEUEUnionBValEStruct_8475baf18c3c as WTSPROPERTYVALUEUEUnionBValEStruct}
+
+pub using @13201bd2f11134f2 {type WTSPROPERTYVALUEUEUnionStrValEStruct_15045c09e880 as WTSPROPERTYVALUEUEUnionStrValEStruct}
+
+pub using @13201bd2f11134f2 {type WTSPROTOCOLCACHE_34d35b11d85b as WTSPROTOCOLCACHE}
+
+pub using @13201bd2f11134f2 {type WTSPROTOCOLCOUNTERS_9ee239d9b3e6 as WTSPROTOCOLCOUNTERS}
+
+pub using @13201bd2f11134f2 {type WTSPROTOCOLSTATUS_43967482db2e as WTSPROTOCOLSTATUS}
+
+pub using @13201bd2f11134f2 {type WTSRCMDRAINSTATE_6b8f64a89f2c as WTSRCMDRAINSTATE}
+
+pub using @13201bd2f11134f2 {type WTSRCMSERVICESTATE_86283e59601a as WTSRCMSERVICESTATE}
+
+pub using @13201bd2f11134f2 {type WTSSBXADDRESSFAMILY_0f44580fac90 as WTSSBXADDRESSFAMILY}
+
+pub using @13201bd2f11134f2 {type WTSSBXIPADDRESS_67bce69b171b as WTSSBXIPADDRESS}
+
+pub using @13201bd2f11134f2 {type WTSSBXMACHINECONNECTINFO_aa7be8e15a3e as WTSSBXMACHINECONNECTINFO}
+
+pub using @13201bd2f11134f2 {type WTSSBXMACHINEDRAIN_13d50b4ebe6d as WTSSBXMACHINEDRAIN}
+
+pub using @13201bd2f11134f2 {type WTSSBXMACHINEINFO_9113fd3fd294 as WTSSBXMACHINEINFO}
+
+pub using @13201bd2f11134f2 {type WTSSBXMACHINESESSIONMODE_cee992f58416 as WTSSBXMACHINESESSIONMODE}
+
+pub using @13201bd2f11134f2 {type WTSSBXMACHINESTATE_d94636dcf619 as WTSSBXMACHINESTATE}
+
+pub using @13201bd2f11134f2 {type WTSSBXNOTIFICATIONTYPE_8c84d5c2d43c as WTSSBXNOTIFICATIONTYPE}
+
+pub using @13201bd2f11134f2 {type WTSSBXSESSIONINFO_2041d790886e as WTSSBXSESSIONINFO}
+
+pub using @13201bd2f11134f2 {type WTSSBXSESSIONSTATE_1707012853dd as WTSSBXSESSIONSTATE}
+
+pub using @13201bd2f11134f2 {type WTSSECURITYFLAGS_9b763a91e2cf as WTSSECURITYFLAGS}
+
+pub using @13201bd2f11134f2 {type WTSSERIALIZEDUSERCREDENTIAL_7e9f70767bde as WTSSERIALIZEDUSERCREDENTIAL}
+
+pub using @13201bd2f11134f2 {type WTSSERVERINFOA_48ff6cf4f473 as WTSSERVERINFOA}
+
+pub using @13201bd2f11134f2 {type WTSSERVERINFOW_b6deae17e70f as WTSSERVERINFOW}
+
+pub using @13201bd2f11134f2 {type WTSSERVICESTATE_96a5e835da23 as WTSSERVICESTATE}
+
+pub using @13201bd2f11134f2 {type WTSSESSIONADDRESS_dd6d115d38cd as WTSSESSIONADDRESS}
+
+pub using @13201bd2f11134f2 {type WTSSESSIONID_e24f14e837e3 as WTSSESSIONID}
+
+pub using @13201bd2f11134f2 {type WTSSESSIONINFO1A_de9b1f66e46b as WTSSESSIONINFO1A}
+
+pub using @13201bd2f11134f2 {type WTSSESSIONINFO1W_d122b338eecc as WTSSESSIONINFO1W}
+
+pub using @13201bd2f11134f2 {type WTSSESSIONINFOA_412793ac1473 as WTSSESSIONINFOA}
+
+pub using @13201bd2f11134f2 {type WTSSESSIONINFOW_d2214a53c79c as WTSSESSIONINFOW}
+
+pub using @13201bd2f11134f2 {type WTSSESSIONNOTIFICATION_bf823c1928f5 as WTSSESSIONNOTIFICATION}
+
+pub using @13201bd2f11134f2 {type WTSSMALLRECT_dcaca090efe0 as WTSSMALLRECT}
+
+pub using @13201bd2f11134f2 {type WTSSOCKADDR_b749c1143420 as WTSSOCKADDR}
+
+pub using @13201bd2f11134f2 {type WTSSOCKADDRUEUnion_baea7158f4ef as WTSSOCKADDRUEUnion}
+
+pub using @13201bd2f11134f2 {type WTSSOCKADDRUEUnionIpv4EStruct_12c2cfd1467b as WTSSOCKADDRUEUnionIpv4EStruct}
+
+pub using @13201bd2f11134f2 {type WTSSOCKADDRUEUnionIpv6EStruct_abfa875466b6 as WTSSOCKADDRUEUnionIpv6EStruct}
+
+pub using @13201bd2f11134f2 {type WTSSYSTEMTIME_1c45a2c2046b as WTSSYSTEMTIME}
+
+pub using @13201bd2f11134f2 {type WTSTIMEZONEINFORMATION_3322a9c323ff as WTSTIMEZONEINFORMATION}
+
+pub using @13201bd2f11134f2 {type WTSTYPECLASS_35d2eb734088 as WTSTYPECLASS}
+
+pub using @13201bd2f11134f2 {type WTSUSERCONFIGA_28d2c6fa6d9c as WTSUSERCONFIGA}
+
+pub using @13201bd2f11134f2 {type WTSUSERCONFIGW_f5d1703c11bc as WTSUSERCONFIGW}
+
+pub using @13201bd2f11134f2 {type WTSUSERCREDENTIAL_5342a051f2f9 as WTSUSERCREDENTIAL}
+
+pub using @13201bd2f11134f2 {type WTSUSERDATA_218d7d66e625 as WTSUSERDATA}
+
+pub using @13201bd2f11134f2 {type WTSVALIDATIONINFORMATIONA_5225656a9bfc as WTSVALIDATIONINFORMATIONA}
+
+pub using @13201bd2f11134f2 {type WTSVALIDATIONINFORMATIONW_01c9a65a1734 as WTSVALIDATIONINFORMATIONW}
+
+pub using @13201bd2f11134f2 {type WTSVIRTUALCLASS_196339d7f57a as WTSVIRTUALCLASS}
+
+pub using @13201bd2f11134f2 {type Workspace_09216959a5ae as Workspace}
+
+// Traits

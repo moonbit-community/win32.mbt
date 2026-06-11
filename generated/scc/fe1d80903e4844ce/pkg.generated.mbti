@@ -1,0 +1,107 @@
+// Generated using `moon info`, DON'T EDIT IT
+package "moonbit-community/win32api/scc/fe1d80903e4844ce"
+
+import {
+  "moonbit-community/win32api/runtime/com",
+  "moonbit-community/win32api/runtime/core",
+  "moonbitlang/core/debug",
+  "moonbitlang/core/ref",
+}
+
+// Values
+pub fn add_notification_changed_48045d3168b4(@core.RawAddress, @core.RawAddress) -> Int64 raise @core.WindowsError
+
+pub fn add_notification_changed_48045d3168b4_raw(@core.RawAddress, @core.RawAddress, @ref.Ref[Int64]) -> Int
+
+pub fn add_notification_changed_f940c9670cae(@core.RawAddress, @core.RawAddress) -> Int64 raise @core.WindowsError
+
+pub fn add_notification_changed_f940c9670cae_raw(@core.RawAddress, @core.RawAddress, @ref.Ref[Int64]) -> Int
+
+pub let allowed_35579769b694 : Int
+
+pub fn clear_notifications_63849deffddd(@core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn clear_notifications_63849deffddd_raw(@core.RawAddress) -> Int
+
+pub fn clear_notifications_bac99869cefa(@core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn clear_notifications_bac99869cefa_raw(@core.RawAddress) -> Int
+
+pub let denied_5976c9bc624f : Int
+
+pub fn get_access_status_8a76d35c35de(@core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn get_access_status_8a76d35c35de_raw(@core.RawAddress, @ref.Ref[Int]) -> Int
+
+pub fn get_access_status_d05b0ee1be2e(@core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn get_access_status_d05b0ee1be2e_raw(@core.RawAddress, @ref.Ref[Int]) -> Int
+
+pub fn get_current_538765ca5618_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_current_c7e09a90de2a_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_notification_ed3a04e1fb82_raw(@core.RawAddress, UInt, @ref.Ref[UInt64]) -> Int
+
+pub fn get_notification_f2bf16e45733_raw(@core.RawAddress, UInt, @ref.Ref[UInt64]) -> Int
+
+pub fn get_notifications_async_0fc04432d698_raw(@core.RawAddress, UInt, @ref.Ref[UInt64]) -> Int
+
+pub fn get_notifications_async_b1f02240c4d1_raw(@core.RawAddress, UInt, @ref.Ref[UInt64]) -> Int
+
+pub fn remove_notification_2906c4f20af6(@core.RawAddress, UInt) -> Unit raise @core.WindowsError
+
+pub fn remove_notification_2906c4f20af6_raw(@core.RawAddress, UInt) -> Int
+
+pub fn remove_notification_4b4f5845ab39(@core.RawAddress, UInt) -> Unit raise @core.WindowsError
+
+pub fn remove_notification_4b4f5845ab39_raw(@core.RawAddress, UInt) -> Int
+
+pub fn remove_notification_changed_49bc980763eb(@core.RawAddress, Int64) -> Unit raise @core.WindowsError
+
+pub fn remove_notification_changed_49bc980763eb_raw(@core.RawAddress, Int64) -> Int
+
+pub fn remove_notification_changed_fd807a310251(@core.RawAddress, Int64) -> Unit raise @core.WindowsError
+
+pub fn remove_notification_changed_fd807a310251_raw(@core.RawAddress, Int64) -> Int
+
+pub fn request_access_async_51e3c6f0e2b4_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn request_access_async_e1f35156c797_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub let unspecified_f0b68335e49e : Int
+
+// Errors
+
+// Types and methods
+pub type IUserNotificationListenerStatics_c03eb1eb7750
+
+pub type IUserNotificationListener_e45f1d09dd7d
+
+pub(all) struct UserNotificationListenerAccessStatus_9723e3569bd9(Int) derive(Compare, Eq, @debug.Debug)
+pub fn UserNotificationListenerAccessStatus_9723e3569bd9::allowed() -> Self
+pub fn UserNotificationListenerAccessStatus_9723e3569bd9::denied() -> Self
+pub fn UserNotificationListenerAccessStatus_9723e3569bd9::from_int(Int) -> Self
+pub fn UserNotificationListenerAccessStatus_9723e3569bd9::to_int(Self) -> Int
+pub fn UserNotificationListenerAccessStatus_9723e3569bd9::unspecified() -> Self
+
+pub type UserNotificationListener_fc4f35d1464b
+pub fn UserNotificationListener_fc4f35d1464b::add_notification_changed(@core.RawAddress, @core.RawAddress) -> Int64 raise @core.WindowsError
+pub fn UserNotificationListener_fc4f35d1464b::add_notification_changed_raw(@core.RawAddress, @core.RawAddress, @ref.Ref[Int64]) -> Int
+pub fn UserNotificationListener_fc4f35d1464b::clear_notifications(@core.RawAddress) -> Unit raise @core.WindowsError
+pub fn UserNotificationListener_fc4f35d1464b::clear_notifications_raw(@core.RawAddress) -> Int
+pub fn UserNotificationListener_fc4f35d1464b::get_access_status(@core.RawAddress) -> Int raise @core.WindowsError
+pub fn UserNotificationListener_fc4f35d1464b::get_access_status_raw(@core.RawAddress, @ref.Ref[Int]) -> Int
+pub fn UserNotificationListener_fc4f35d1464b::get_current() -> @com.ComPtr[Self] raise @core.WindowsError
+pub fn UserNotificationListener_fc4f35d1464b::get_current_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+pub fn UserNotificationListener_fc4f35d1464b::get_notification_raw(@core.RawAddress, UInt, @ref.Ref[UInt64]) -> Int
+pub fn UserNotificationListener_fc4f35d1464b::get_notifications_async_raw(@core.RawAddress, UInt, @ref.Ref[UInt64]) -> Int
+pub fn UserNotificationListener_fc4f35d1464b::remove_notification(@core.RawAddress, UInt) -> Unit raise @core.WindowsError
+pub fn UserNotificationListener_fc4f35d1464b::remove_notification_changed(@core.RawAddress, Int64) -> Unit raise @core.WindowsError
+pub fn UserNotificationListener_fc4f35d1464b::remove_notification_changed_raw(@core.RawAddress, Int64) -> Int
+pub fn UserNotificationListener_fc4f35d1464b::remove_notification_raw(@core.RawAddress, UInt) -> Int
+pub fn UserNotificationListener_fc4f35d1464b::request_access_async_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+// Type aliases
+
+// Traits

@@ -1,0 +1,1067 @@
+// Generated using `moon info`, DON'T EDIT IT
+package "moonbit-community/win32api/windows/win32/system/com"
+
+import {
+  "moonbit-community/win32api/runtime/core",
+  "moonbit-community/win32api/runtime/strings",
+  "moonbit-community/win32api/scc/58228b76ec7374fa",
+  "moonbit-community/win32api/scc/fb66f520d7e12332",
+}
+
+// Values
+pub let appidregflags_aaa_no_implicit_activate_as_iu : UInt
+
+pub let appidregflags_activate_iuserver_indesktop : UInt
+
+pub let appidregflags_issue_activation_rpc_at_identify : UInt
+
+pub let appidregflags_iuserver_activate_in_client_session_only : UInt
+
+pub let appidregflags_iuserver_self_sid_in_launch_permission : UInt
+
+pub let appidregflags_iuserver_unmodified_logon_token : UInt
+
+pub let appidregflags_reserved1 : UInt
+
+pub let appidregflags_reserved10 : UInt
+
+pub let appidregflags_reserved2 : UInt
+
+pub let appidregflags_reserved3 : UInt
+
+pub let appidregflags_reserved4 : UInt
+
+pub let appidregflags_reserved5 : UInt
+
+pub let appidregflags_reserved7 : UInt
+
+pub let appidregflags_reserved8 : UInt
+
+pub let appidregflags_reserved9 : UInt
+
+pub let appidregflags_secure_server_process_sd_and_bind : UInt
+
+pub let async_mode_compatibility : Int
+
+pub let async_mode_default : Int
+
+pub fn bind_moniker(@core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn bind_moniker_raw(@core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn clsid_from_prog_id(@strings.PWStr, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn clsid_from_prog_id_ex(@strings.PWStr, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn clsid_from_prog_id_ex_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn clsid_from_prog_id_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn clsid_from_string(@strings.PWStr, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn clsid_from_string_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn co_add_ref_server_process() -> UInt raise @core.WindowsError
+
+pub fn co_add_ref_server_process_raw() -> UInt
+
+pub fn co_allow_set_foreground_window(@core.RawAddress, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn co_allow_set_foreground_window_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn co_allow_unmarshaler_clsid(@core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn co_allow_unmarshaler_clsid_raw(@core.RawAddress) -> Int
+
+pub fn co_build_version() -> UInt raise @core.WindowsError
+
+pub fn co_build_version_raw() -> UInt
+
+pub fn co_cancel_call(UInt, UInt) -> Int raise @core.WindowsError
+
+pub fn co_cancel_call_raw(UInt, UInt) -> Int
+
+pub fn co_copy_proxy(@core.RawAddress, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn co_copy_proxy_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn co_create_free_threaded_marshaler(@core.RawAddress, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn co_create_free_threaded_marshaler_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn co_create_guid(@core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn co_create_guid_raw(@core.RawAddress) -> Int
+
+pub fn co_create_instance(@core.RawAddress, @core.RawAddress, @58228b76ec7374fa.CLSCTX_3e78f26b05c7, @core.RawAddress, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn co_create_instance_ex(@core.RawAddress, @core.RawAddress, @58228b76ec7374fa.CLSCTX_3e78f26b05c7, @58228b76ec7374fa.COSERVERINFO_7a1414e153a1?, UInt, @58228b76ec7374fa.MULTIQI_17fff45b66e1) -> Int raise @core.WindowsError
+
+pub fn co_create_instance_ex_raw(@core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, UInt, @core.RawAddress) -> Int
+
+pub fn co_create_instance_from_app(@core.RawAddress, @core.RawAddress, @58228b76ec7374fa.CLSCTX_3e78f26b05c7, @core.RawAddress, UInt, @58228b76ec7374fa.MULTIQI_17fff45b66e1) -> Int raise @core.WindowsError
+
+pub fn co_create_instance_from_app_raw(@core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, UInt, @core.RawAddress) -> Int
+
+pub fn co_create_instance_raw(@core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn co_decrement_mta_usage(@core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn co_decrement_mta_usage_raw(@core.RawAddress) -> Int
+
+pub fn co_disable_call_cancellation(@core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn co_disable_call_cancellation_raw(@core.RawAddress) -> Int
+
+pub fn co_disconnect_context(UInt) -> Int raise @core.WindowsError
+
+pub fn co_disconnect_context_raw(UInt) -> Int
+
+pub fn co_disconnect_object(@core.RawAddress, UInt) -> Int raise @core.WindowsError
+
+pub fn co_disconnect_object_raw(@core.RawAddress, UInt) -> Int
+
+pub fn co_dos_date_time_to_file_time(UInt16, UInt16, @fb66f520d7e12332.FILETIME_255c209c37ca) -> Bool raise @core.WindowsError
+
+pub fn co_dos_date_time_to_file_time_raw(UInt, UInt, @core.RawAddress) -> Int
+
+pub fn co_enable_call_cancellation(@core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn co_enable_call_cancellation_raw(@core.RawAddress) -> Int
+
+pub fn co_file_time_now(@fb66f520d7e12332.FILETIME_255c209c37ca) -> Int raise @core.WindowsError
+
+pub fn co_file_time_now_raw(@core.RawAddress) -> Int
+
+pub fn co_file_time_to_dos_date_time(@fb66f520d7e12332.FILETIME_255c209c37ca, @core.RawAddress, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn co_file_time_to_dos_date_time_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn co_free_all_libraries() -> Unit raise @core.WindowsError
+
+pub fn co_free_all_libraries_raw() -> Unit
+
+pub fn co_free_library(@core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn co_free_library_raw(@core.RawAddress) -> Unit
+
+pub fn co_free_unused_libraries() -> Unit raise @core.WindowsError
+
+pub fn co_free_unused_libraries_ex(UInt, UInt) -> Unit raise @core.WindowsError
+
+pub fn co_free_unused_libraries_ex_raw(UInt, UInt) -> Unit
+
+pub fn co_free_unused_libraries_raw() -> Unit
+
+pub fn co_get_apartment_type(@core.RawAddress, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn co_get_apartment_type_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn co_get_call_context(@core.RawAddress, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn co_get_call_context_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn co_get_caller_tid(@core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn co_get_caller_tid_raw(@core.RawAddress) -> Int
+
+pub fn co_get_cancel_object(UInt, @core.RawAddress, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn co_get_cancel_object_raw(UInt, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn co_get_class_object(@core.RawAddress, UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn co_get_class_object_raw(@core.RawAddress, UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn co_get_context_token(@core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn co_get_context_token_raw(@core.RawAddress) -> Int
+
+pub fn co_get_current_logical_thread_id(@core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn co_get_current_logical_thread_id_raw(@core.RawAddress) -> Int
+
+pub fn co_get_current_process() -> UInt raise @core.WindowsError
+
+pub fn co_get_current_process_raw() -> UInt
+
+pub fn co_get_malloc(UInt, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn co_get_malloc_raw(UInt, @core.RawAddress) -> Int
+
+pub fn co_get_object(@strings.PWStr, @58228b76ec7374fa.BINDOPTS_15f99a6e9c87?, @core.RawAddress, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn co_get_object_context(@core.RawAddress, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn co_get_object_context_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn co_get_object_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn co_get_ps_clsid(@core.RawAddress, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn co_get_ps_clsid_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn co_get_system_security_permissions(@58228b76ec7374fa.COMSD_b9720e810f87, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn co_get_system_security_permissions_raw(Int, @core.RawAddress) -> Int
+
+pub fn co_get_treat_as_class(@core.RawAddress, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn co_get_treat_as_class_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn co_impersonate_client() -> Int raise @core.WindowsError
+
+pub fn co_impersonate_client_raw() -> Int
+
+pub fn co_increment_mta_usage(@core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn co_increment_mta_usage_raw(@core.RawAddress) -> Int
+
+pub fn co_initialize(@core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn co_initialize_ex(@core.RawAddress, UInt) -> Int raise @core.WindowsError
+
+pub fn co_initialize_ex_raw(@core.RawAddress, UInt) -> Int
+
+pub fn co_initialize_raw(@core.RawAddress) -> Int
+
+pub fn co_initialize_security(@core.RawAddress, Int, @58228b76ec7374fa.SOLEAUTHENTICATIONSERVICE_cbe77a196ef5?, @core.RawAddress, @58228b76ec7374fa.RPCCAUTHNLEVEL_d8b56634e48c, @58228b76ec7374fa.RPCCIMPLEVEL_5cbc902e8f1c, @core.RawAddress, UInt, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn co_initialize_security_raw(@core.RawAddress, Int, @core.RawAddress, @core.RawAddress, UInt, UInt, @core.RawAddress, UInt, @core.RawAddress) -> Int
+
+pub fn co_install(@core.RawAddress, UInt, @58228b76ec7374fa.UCLSSPEC_edb477e8b7a9, @58228b76ec7374fa.QUERYCONTEXT_53694893dfe3, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn co_install_raw(@core.RawAddress, UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn co_invalidate_remote_machine_bindings(@core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn co_invalidate_remote_machine_bindings_raw(@core.RawAddress) -> Int
+
+pub fn co_is_handler_connected(@core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn co_is_handler_connected_raw(@core.RawAddress) -> Int
+
+pub fn co_is_ole1_class(@core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn co_is_ole1_class_raw(@core.RawAddress) -> Int
+
+pub fn co_load_library(@core.RawAddress, Int) -> @core.RawAddress raise @core.WindowsError
+
+pub fn co_load_library_raw(@core.RawAddress, Int) -> @core.RawAddress
+
+pub fn co_lock_object_external(@core.RawAddress, Int, Int) -> Int raise @core.WindowsError
+
+pub fn co_lock_object_external_raw(@core.RawAddress, Int, Int) -> Int
+
+pub fn co_query_authentication_services(@core.RawAddress, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn co_query_authentication_services_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn co_query_client_blanket(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn co_query_client_blanket_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn co_query_proxy_blanket(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn co_query_proxy_blanket_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn co_register_activation_filter(@core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn co_register_activation_filter_raw(@core.RawAddress) -> Int
+
+pub fn co_register_channel_hook(@core.RawAddress, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn co_register_channel_hook_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn co_register_class_object(@core.RawAddress, @core.RawAddress, @58228b76ec7374fa.CLSCTX_3e78f26b05c7, UInt, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn co_register_class_object_raw(@core.RawAddress, @core.RawAddress, UInt, UInt, @core.RawAddress) -> Int
+
+pub fn co_register_device_catalog(@strings.PWStr, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn co_register_device_catalog_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn co_register_initialize_spy(@core.RawAddress, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn co_register_initialize_spy_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn co_register_malloc_spy(@core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn co_register_malloc_spy_raw(@core.RawAddress) -> Int
+
+pub fn co_register_ps_clsid(@core.RawAddress, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn co_register_ps_clsid_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn co_register_surrogate(@core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn co_register_surrogate_raw(@core.RawAddress) -> Int
+
+pub fn co_release_server_process() -> UInt raise @core.WindowsError
+
+pub fn co_release_server_process_raw() -> UInt
+
+pub fn co_resume_class_objects() -> Int raise @core.WindowsError
+
+pub fn co_resume_class_objects_raw() -> Int
+
+pub fn co_revert_to_self() -> Int raise @core.WindowsError
+
+pub fn co_revert_to_self_raw() -> Int
+
+pub fn co_revoke_class_object(UInt) -> Int raise @core.WindowsError
+
+pub fn co_revoke_class_object_raw(UInt) -> Int
+
+pub fn co_revoke_device_catalog(@core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn co_revoke_device_catalog_raw(@core.RawAddress) -> Int
+
+pub fn co_revoke_initialize_spy(UInt64) -> Int raise @core.WindowsError
+
+pub fn co_revoke_initialize_spy_raw(UInt64) -> Int
+
+pub fn co_revoke_malloc_spy() -> Int raise @core.WindowsError
+
+pub fn co_revoke_malloc_spy_raw() -> Int
+
+pub fn co_set_cancel_object(@core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn co_set_cancel_object_raw(@core.RawAddress) -> Int
+
+pub fn co_set_proxy_blanket(@core.RawAddress, UInt, UInt, @core.RawAddress, @58228b76ec7374fa.RPCCAUTHNLEVEL_d8b56634e48c, @58228b76ec7374fa.RPCCIMPLEVEL_5cbc902e8f1c, @core.RawAddress, UInt) -> Int raise @core.WindowsError
+
+pub fn co_set_proxy_blanket_raw(@core.RawAddress, UInt, UInt, @core.RawAddress, UInt, UInt, @core.RawAddress, UInt) -> Int
+
+pub fn co_suspend_class_objects() -> Int raise @core.WindowsError
+
+pub fn co_suspend_class_objects_raw() -> Int
+
+pub fn co_switch_call_context(@core.RawAddress, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn co_switch_call_context_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn co_task_mem_alloc(UInt64) -> @core.RawAddress raise @core.WindowsError
+
+pub fn co_task_mem_alloc_raw(UInt64) -> @core.RawAddress
+
+pub fn co_task_mem_free(@core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn co_task_mem_free_raw(@core.RawAddress) -> Unit
+
+pub fn co_task_mem_realloc(@core.RawAddress, UInt64) -> @core.RawAddress raise @core.WindowsError
+
+pub fn co_task_mem_realloc_raw(@core.RawAddress, UInt64) -> @core.RawAddress
+
+pub fn co_test_cancel() -> Int raise @core.WindowsError
+
+pub fn co_test_cancel_raw() -> Int
+
+pub fn co_treat_as_class(@core.RawAddress, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn co_treat_as_class_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn co_uninitialize() -> Unit raise @core.WindowsError
+
+pub fn co_uninitialize_raw() -> Unit
+
+pub fn co_wait_for_multiple_handles(UInt, UInt, UInt, @core.RawAddress, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn co_wait_for_multiple_handles_raw(UInt, UInt, UInt, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn co_wait_for_multiple_objects(UInt, UInt, UInt, @core.RawAddress, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn co_wait_for_multiple_objects_raw(UInt, UInt, UInt, @core.RawAddress, @core.RawAddress) -> Int
+
+pub let cole_default_authinfo : Int
+
+pub let cole_default_principal : Int
+
+pub let com_rights_activate_local : UInt
+
+pub let com_rights_activate_remote : UInt
+
+pub let com_rights_execute : UInt
+
+pub let com_rights_execute_local : UInt
+
+pub let com_rights_execute_remote : UInt
+
+pub let com_rights_reserved1 : UInt
+
+pub let com_rights_reserved2 : UInt
+
+pub fn create_anti_moniker(@core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn create_anti_moniker_raw(@core.RawAddress) -> Int
+
+pub fn create_bind_ctx(UInt, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn create_bind_ctx_raw(UInt, @core.RawAddress) -> Int
+
+pub fn create_class_moniker(@core.RawAddress, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn create_class_moniker_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn create_data_advise_holder(@core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn create_data_advise_holder_raw(@core.RawAddress) -> Int
+
+pub fn create_data_cache(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn create_data_cache_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn create_file_moniker(@strings.PWStr, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn create_file_moniker_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn create_generic_composite(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn create_generic_composite_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn create_i_uri_builder(@core.RawAddress, UInt, UInt64, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn create_i_uri_builder_raw(@core.RawAddress, UInt, UInt64, @core.RawAddress) -> Int
+
+pub fn create_item_moniker(@strings.PWStr, @strings.PWStr, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn create_item_moniker_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn create_objref_moniker(@core.RawAddress, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn create_objref_moniker_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn create_pointer_moniker(@core.RawAddress, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn create_pointer_moniker_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn create_std_progress_indicator(@core.RawAddress, @strings.PWStr, @core.RawAddress, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn create_std_progress_indicator_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn create_uri(@strings.PWStr, @58228b76ec7374fa.URICREATEFLAGS_963e16950372, UInt64, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn create_uri_from_multi_byte_string(@strings.PStr, UInt, UInt, UInt, UInt64, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn create_uri_from_multi_byte_string_raw(@core.RawAddress, UInt, UInt, UInt, UInt64, @core.RawAddress) -> Int
+
+pub fn create_uri_raw(@core.RawAddress, UInt, UInt64, @core.RawAddress) -> Int
+
+pub fn create_uri_with_fragment(@strings.PWStr, @strings.PWStr?, UInt, UInt64, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn create_uri_with_fragment_raw(@core.RawAddress, @core.RawAddress, UInt, UInt64, @core.RawAddress) -> Int
+
+pub let cwmo_max_handles : UInt
+
+pub fn dcom_channel_set_h_result(@core.RawAddress, @core.RawAddress, Int) -> Int raise @core.WindowsError
+
+pub fn dcom_channel_set_h_result_raw(@core.RawAddress, @core.RawAddress, Int) -> Int
+
+pub let dcomscm_activation_disallow_unsecure_call : UInt
+
+pub let dcomscm_activation_use_all_authnservices : UInt
+
+pub let dcomscm_ping_disallow_unsecure_call : UInt
+
+pub let dcomscm_ping_use_mid_authnservice : UInt
+
+pub let dcomscm_resolve_disallow_unsecure_call : UInt
+
+pub let dcomscm_resolve_use_all_authnservices : UInt
+
+pub let dmus_errbase : UInt
+
+pub fn get_class_file(@strings.PWStr, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn get_class_file_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn get_error_info(UInt, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn get_error_info_raw(UInt, @core.RawAddress) -> Int
+
+pub fn get_running_object_table(UInt, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn get_running_object_table_raw(UInt, @core.RawAddress) -> Int
+
+pub fn iid_from_string(@strings.PWStr, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn iid_from_string_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub let marshalinterface_min : UInt
+
+pub let maxlsn : UInt64
+
+pub fn mk_parse_display_name(@core.RawAddress, @strings.PWStr, @core.RawAddress, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn mk_parse_display_name_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn moniker_common_prefix_with(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn moniker_common_prefix_with_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn moniker_relative_path_to(@core.RawAddress, @core.RawAddress, @core.RawAddress, Int) -> Int raise @core.WindowsError
+
+pub fn moniker_relative_path_to_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, Int) -> Int
+
+pub fn prog_id_from_clsid(@core.RawAddress, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn prog_id_from_clsid_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub let rotregflags_allowanyclient : UInt
+
+pub fn set_error_info(UInt, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn set_error_info_raw(UInt, @core.RawAddress) -> Int
+
+pub let stg_layout_interleaved : Int
+
+pub let stg_layout_sequential : Int
+
+pub let stg_toend : Int
+
+pub let stgty_repeat : Int
+
+pub fn string_from_clsid(@core.RawAddress, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn string_from_clsid_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn string_from_guid2(@core.RawAddress, @strings.PWStrBuffer) -> Int raise @core.WindowsError
+
+pub fn string_from_guid2_raw(@core.RawAddress, @core.RawAddress, Int) -> Int
+
+pub fn string_from_iid(@core.RawAddress, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn string_from_iid_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+// Errors
+
+// Types and methods
+
+// Type aliases
+pub using @58228b76ec7374fa {type ADVANCEDFEATUREFLAGS_6a6b08149c59 as ADVANCEDFEATUREFLAGS}
+
+pub using @58228b76ec7374fa {type ADVF_a0dcf50e3ade as ADVF}
+
+pub using @58228b76ec7374fa {type APTTYPE_4288508687b6 as APTTYPE}
+
+pub using @58228b76ec7374fa {type APTTYPEQUALIFIER_362115898129 as APTTYPEQUALIFIER}
+
+pub using @58228b76ec7374fa {type AUTHENTICATEINFO_883bf7ade99c as AUTHENTICATEINFO}
+
+pub using @58228b76ec7374fa {type ApplicationType_86ec194a4ed1 as ApplicationType}
+
+pub using @58228b76ec7374fa {type AsyncIAdviseSink_1c5dbc23cb03 as AsyncIAdviseSink}
+
+pub using @58228b76ec7374fa {type AsyncIAdviseSink2_3733d7235c64 as AsyncIAdviseSink2}
+
+pub using @58228b76ec7374fa {type AsyncIMultiQI_88581f3b94d3 as AsyncIMultiQI}
+
+pub using @58228b76ec7374fa {type AsyncIPipeByte_38d82768e54e as AsyncIPipeByte}
+
+pub using @58228b76ec7374fa {type AsyncIPipeDouble_6b392aae53ad as AsyncIPipeDouble}
+
+pub using @58228b76ec7374fa {type AsyncIPipeLong_862a27e00ea8 as AsyncIPipeLong}
+
+pub using @58228b76ec7374fa {type AsyncIUnknown_a27463a02f50 as AsyncIUnknown}
+
+pub using @58228b76ec7374fa {type BINDFLAGS_405a09525cb3 as BINDFLAGS}
+
+pub using @58228b76ec7374fa {type BINDINFO_02d00add4ac0 as BINDINFO}
+
+pub using @58228b76ec7374fa {type BINDINFOF_6290b03a05a1 as BINDINFOF}
+
+pub using @58228b76ec7374fa {type BINDOPTS_15f99a6e9c87 as BINDOPTS}
+
+pub using @58228b76ec7374fa {type BINDOPTS2_b86d66af6555 as BINDOPTS2}
+
+pub using @58228b76ec7374fa {type BINDOPTS3_7154e9139402 as BINDOPTS3}
+
+pub using @58228b76ec7374fa {type BINDPTR_37ae97e6f54f as BINDPTR}
+
+pub using @58228b76ec7374fa {type BLOB_7c2870177000 as BLOB}
+
+pub using @58228b76ec7374fa {type BYTEBLOB_ab116e4cd03c as BYTEBLOB}
+
+pub using @58228b76ec7374fa {type BYTESIZEDARR_40f6f377c4b7 as BYTESIZEDARR}
+
+pub using @58228b76ec7374fa {type CALLCONV_e26115ad58ca as CALLCONV}
+
+pub using @58228b76ec7374fa {type CALLTYPE_7202dc9315e6 as CALLTYPE}
+
+pub using @58228b76ec7374fa {type CATEGORYINFO_8e26194a1748 as CATEGORYINFO}
+
+pub using @58228b76ec7374fa {type CLSCTX_3e78f26b05c7 as CLSCTX}
+
+pub using @58228b76ec7374fa {type COAUTHIDENTITY_23f855e0ff69 as COAUTHIDENTITY}
+
+pub using @58228b76ec7374fa {type COAUTHINFO_ee7a962bc092 as COAUTHINFO}
+
+pub using @58228b76ec7374fa {type CODEVICECATALOGCOOKIE_774651ded556 as CODEVICECATALOGCOOKIE}
+
+pub using @58228b76ec7374fa {type COINIT_dcd7303b3126 as COINIT}
+
+pub using @58228b76ec7374fa {type COINITBASE_3a8b62f89368 as COINITBASE}
+
+pub using @58228b76ec7374fa {type COMARSHALINGCONTEXTATTRIBUTES_a36f7ae6cecc as COMARSHALINGCONTEXTATTRIBUTES}
+
+pub using @58228b76ec7374fa {type COMSD_b9720e810f87 as COMSD}
+
+pub using @58228b76ec7374fa {type COMTAUSAGECOOKIE_52753ee5014c as COMTAUSAGECOOKIE}
+
+pub using @58228b76ec7374fa {type CONNECTDATA_9622579d7454 as CONNECTDATA}
+
+pub using @58228b76ec7374fa {type COSERVERINFO_7a1414e153a1 as COSERVERINFO}
+
+pub using @58228b76ec7374fa {type COWAITFLAGS_367cec558769 as COWAITFLAGS}
+
+pub using @58228b76ec7374fa {type CSPLATFORM_5c106085d206 as CSPLATFORM}
+
+pub using @58228b76ec7374fa {type CUSTDATA_2371285d79ca as CUSTDATA}
+
+pub using @58228b76ec7374fa {type CUSTDATAITEM_a623afe14e4b as CUSTDATAITEM}
+
+pub using @58228b76ec7374fa {type CWMOFLAGS_d26ccdb5a7c4 as CWMOFLAGS}
+
+pub using @58228b76ec7374fa {type CY_1411a53af60e as CY}
+
+pub using @58228b76ec7374fa {type CYAnonymousEStruct_323bdf202f74 as CYAnonymousEStruct}
+
+pub using @58228b76ec7374fa {type ComCallData_f082c57bf1ff as ComCallData}
+
+pub using @58228b76ec7374fa {type ContextProperty_fb061a579d2d as ContextProperty}
+
+pub using @58228b76ec7374fa {type DATADIR_4ed5d475d807 as DATADIR}
+
+pub using @58228b76ec7374fa {type DCOMCALLSTATE_23964067e90d as DCOMCALLSTATE}
+
+pub using @58228b76ec7374fa {type DESCKIND_de7ee5b3e272 as DESCKIND}
+
+pub using @58228b76ec7374fa {type DISPATCHFLAGS_35780142862e as DISPATCHFLAGS}
+
+pub using @58228b76ec7374fa {type DISPPARAMS_dddd6cf1b5ab as DISPPARAMS}
+
+pub using @58228b76ec7374fa {type DVASPECT_3c1865b16768 as DVASPECT}
+
+pub using @58228b76ec7374fa {type DVTARGETDEVICE_0b72ed34c963 as DVTARGETDEVICE}
+
+pub using @58228b76ec7374fa {type DWORDBLOB_7fec268d8323 as DWORDBLOB}
+
+pub using @58228b76ec7374fa {type DWORDSIZEDARR_08e72f38b9b0 as DWORDSIZEDARR}
+
+pub using @58228b76ec7374fa {type ELEMDESC_96dba15c5e98 as ELEMDESC}
+
+pub using @58228b76ec7374fa {type ELEMDESCAnonymousEUnion_8bfbebec96d1 as ELEMDESCAnonymousEUnion}
+
+pub using @58228b76ec7374fa {type EOLEAUTHENTICATIONCAPABILITIES_964bd065dadd as EOLEAUTHENTICATIONCAPABILITIES}
+
+pub using @58228b76ec7374fa {type EXCEPINFO_27b90de99efa as EXCEPINFO}
+
+pub using @58228b76ec7374fa {type EXTCONN_b9614a1a0bc6 as EXTCONN}
+
+pub using @58228b76ec7374fa {type FLAGGEDBYTEBLOB_0ea81ffa7f83 as FLAGGEDBYTEBLOB}
+
+pub using @58228b76ec7374fa {type FLAGGEDWORDBLOB_94a44064c861 as FLAGGEDWORDBLOB}
+
+pub using @58228b76ec7374fa {type FLAGSTGMEDIUM_c8b05bf76fc6 as FLAGSTGMEDIUM}
+
+pub using @58228b76ec7374fa {type FORMATETC_6f75c530b07c as FORMATETC}
+
+pub using @58228b76ec7374fa {type FUNCDESC_7b588dc05086 as FUNCDESC}
+
+pub using @58228b76ec7374fa {type FUNCFLAGS_4fdca531b084 as FUNCFLAGS}
+
+pub using @58228b76ec7374fa {type FUNCKIND_e0a3b4cfdc92 as FUNCKIND}
+
+pub using @58228b76ec7374fa {type GDIOBJECT_7046cf0bae54 as GDIOBJECT}
+
+pub using @58228b76ec7374fa {type GDIOBJECTUEStruct_43d20feaebfe as GDIOBJECTUEStruct}
+
+pub using @58228b76ec7374fa {type GLOBALOPTEHVALUES_ece5ff05ec8c as GLOBALOPTEHVALUES}
+
+pub using @58228b76ec7374fa {type GLOBALOPTPROPERTIES_ebbdc28081da as GLOBALOPTPROPERTIES}
+
+pub using @58228b76ec7374fa {type GLOBALOPTROFLAGS_fe8fcd9f769d as GLOBALOPTROFLAGS}
+
+pub using @58228b76ec7374fa {type GLOBALOPTRPCTPVALUES_8beb3bba8d5f as GLOBALOPTRPCTPVALUES}
+
+pub using @58228b76ec7374fa {type GLOBALOPTUNMARSHALINGPOLICYVALUES_a2f3bfe0dc82 as GLOBALOPTUNMARSHALINGPOLICYVALUES}
+
+pub using @58228b76ec7374fa {type HYPERSIZEDARR_2c15dcad23fc as HYPERSIZEDARR}
+
+pub using @58228b76ec7374fa {type IActivationFilter_9dba4baf87b3 as IActivationFilter}
+
+pub using @58228b76ec7374fa {type IAddrExclusionControl_ae7a4ab1ea1e as IAddrExclusionControl}
+
+pub using @58228b76ec7374fa {type IAddrTrackingControl_c964d3b7aff9 as IAddrTrackingControl}
+
+pub using @58228b76ec7374fa {type IAdviseSink_a1d6a2965a9c as IAdviseSink}
+
+pub using @58228b76ec7374fa {type IAdviseSink2_3cd6406b20eb as IAdviseSink2}
+
+pub using @58228b76ec7374fa {type IAgileObject_42feefa58518 as IAgileObject}
+
+pub using @58228b76ec7374fa {type IAsyncManager_06e5d6b26b6e as IAsyncManager}
+
+pub using @58228b76ec7374fa {type IAsyncRpcChannelBuffer_2044400153bc as IAsyncRpcChannelBuffer}
+
+pub using @58228b76ec7374fa {type IAuthenticate_28cc509bc397 as IAuthenticate}
+
+pub using @58228b76ec7374fa {type IAuthenticateEx_4e765163f2c6 as IAuthenticateEx}
+
+pub using @58228b76ec7374fa {type IBindCtx_938e2bb98b92 as IBindCtx}
+
+pub using @58228b76ec7374fa {type IBindHost_145284dbec51 as IBindHost}
+
+pub using @58228b76ec7374fa {type IBindStatusCallback_e11f2ffd5baf as IBindStatusCallback}
+
+pub using @58228b76ec7374fa {type IBindStatusCallbackEx_7b10612b16e6 as IBindStatusCallbackEx}
+
+pub using @58228b76ec7374fa {type IBinding_23dfb39477f3 as IBinding}
+
+pub using @58228b76ec7374fa {type IBlockingLock_35b7409b2e88 as IBlockingLock}
+
+pub using @58228b76ec7374fa {type ICallFactory_165839b16a4b as ICallFactory}
+
+pub using @58228b76ec7374fa {type ICancelMethodCalls_c306eb13e688 as ICancelMethodCalls}
+
+pub using @58228b76ec7374fa {type ICatInformation_28cc208ed11c as ICatInformation}
+
+pub using @58228b76ec7374fa {type ICatRegister_964eca9a5696 as ICatRegister}
+
+pub using @58228b76ec7374fa {type IChannelHook_13e30e27f129 as IChannelHook}
+
+pub using @58228b76ec7374fa {type IClassActivator_0f1249f5e504 as IClassActivator}
+
+pub using @58228b76ec7374fa {type IClassFactory_657223d835da as IClassFactory}
+
+pub using @58228b76ec7374fa {type IClientSecurity_700118c076e2 as IClientSecurity}
+
+pub using @58228b76ec7374fa {type IComThreadingInfo_4c57bb725117 as IComThreadingInfo}
+
+pub using @58228b76ec7374fa {type IConnectionPoint_5c5569eaad1d as IConnectionPoint}
+
+pub using @58228b76ec7374fa {type IConnectionPointContainer_b717a8166180 as IConnectionPointContainer}
+
+pub using @58228b76ec7374fa {type IContext_dc1b7b49106e as IContext}
+
+pub using @58228b76ec7374fa {type IContextCallback_36fdf48bdfe2 as IContextCallback}
+
+pub using @58228b76ec7374fa {type IDLDESC_def92a2b4f5d as IDLDESC}
+
+pub using @58228b76ec7374fa {type IDLFLAGS_cc5b93037726 as IDLFLAGS}
+
+pub using @58228b76ec7374fa {type IDataAdviseHolder_fda4f29e711b as IDataAdviseHolder}
+
+pub using @58228b76ec7374fa {type IDataObject_99b93d5791da as IDataObject}
+
+pub using @58228b76ec7374fa {type IDispatch_d6ebcdc8265c as IDispatch}
+
+pub using @58228b76ec7374fa {type IEnumCATEGORYINFO_bd6d1f138fae as IEnumCATEGORYINFO}
+
+pub using @58228b76ec7374fa {type IEnumConnectionPoints_a8a84c32dfe2 as IEnumConnectionPoints}
+
+pub using @58228b76ec7374fa {type IEnumConnections_a9a74f7a8374 as IEnumConnections}
+
+pub using @58228b76ec7374fa {type IEnumContextProps_d32587eb7182 as IEnumContextProps}
+
+pub using @58228b76ec7374fa {type IEnumFORMATETC_6481736dd165 as IEnumFORMATETC}
+
+pub using @58228b76ec7374fa {type IEnumGUID_f437b8f71dc1 as IEnumGUID}
+
+pub using @58228b76ec7374fa {type IEnumMoniker_868b8483b7c5 as IEnumMoniker}
+
+pub using @58228b76ec7374fa {type IEnumSTATDATA_0acb6f6adde1 as IEnumSTATDATA}
+
+pub using @58228b76ec7374fa {type IEnumString_23bd1e8a788f as IEnumString}
+
+pub using @58228b76ec7374fa {type IEnumUnknown_08a34fff9e18 as IEnumUnknown}
+
+pub using @58228b76ec7374fa {type IErrorInfo_e65728cc40d5 as IErrorInfo}
+
+pub using @58228b76ec7374fa {type IErrorLog_3f4d1ccc4218 as IErrorLog}
+
+pub using @58228b76ec7374fa {type IExternalConnection_afdefc661bf7 as IExternalConnection}
+
+pub using @58228b76ec7374fa {type IFastRundown_09b358c0b3d4 as IFastRundown}
+
+pub using @58228b76ec7374fa {type IForegroundTransfer_b280cc195e6e as IForegroundTransfer}
+
+pub using @58228b76ec7374fa {type IGlobalInterfaceTable_c6c775cca00a as IGlobalInterfaceTable}
+
+pub using @58228b76ec7374fa {type IGlobalOptions_a7eb1b38473b as IGlobalOptions}
+
+pub using @58228b76ec7374fa {type IInitializeSpy_e30a05be9f51 as IInitializeSpy}
+
+pub using @58228b76ec7374fa {type IInternalUnknown_2590b69ab537 as IInternalUnknown}
+
+pub using @58228b76ec7374fa {type IMPLTYPEFLAGS_0cd8d23267df as IMPLTYPEFLAGS}
+
+pub using @58228b76ec7374fa {type IMachineGlobalObjectTable_0edb7837bdf4 as IMachineGlobalObjectTable}
+
+pub using @58228b76ec7374fa {type IMalloc_d7e7c2572294 as IMalloc}
+
+pub using @58228b76ec7374fa {type IMallocSpy_80f27182c3e4 as IMallocSpy}
+
+pub using @58228b76ec7374fa {type IMoniker_3fd56681de5b as IMoniker}
+
+pub using @58228b76ec7374fa {type IMultiQI_738462831a4f as IMultiQI}
+
+pub using @58228b76ec7374fa {type INTERFACEINFO_905fc68b277d as INTERFACEINFO}
+
+pub using @58228b76ec7374fa {type INVOKEKIND_e9d0b2d048a0 as INVOKEKIND}
+
+pub using @58228b76ec7374fa {type INoMarshal_91fb651a21ac as INoMarshal}
+
+pub using @58228b76ec7374fa {type IOplockStorage_a2a841068789 as IOplockStorage}
+
+pub using @58228b76ec7374fa {type IPSFactoryBuffer_d7bf38cb9229 as IPSFactoryBuffer}
+
+pub using @58228b76ec7374fa {type IPackagedComSyntaxSupport_5c79251e2f1c as IPackagedComSyntaxSupport}
+
+pub using @58228b76ec7374fa {type IPersist_a4082962c5d2 as IPersist}
+
+pub using @58228b76ec7374fa {type IPersistFile_d08e86ecb216 as IPersistFile}
+
+pub using @58228b76ec7374fa {type IPersistMemory_6f192212f3c7 as IPersistMemory}
+
+pub using @58228b76ec7374fa {type IPersistStream_a67be3d174b7 as IPersistStream}
+
+pub using @58228b76ec7374fa {type IPersistStreamInit_fbd536256b9b as IPersistStreamInit}
+
+pub using @58228b76ec7374fa {type IPipeByte_fb592021fc8e as IPipeByte}
+
+pub using @58228b76ec7374fa {type IPipeDouble_4da8a014c9c8 as IPipeDouble}
+
+pub using @58228b76ec7374fa {type IPipeLong_4c8217384357 as IPipeLong}
+
+pub using @58228b76ec7374fa {type IProcessInitControl_deaf8dbf8d2f as IProcessInitControl}
+
+pub using @58228b76ec7374fa {type IProcessLock_47d2d7bd4424 as IProcessLock}
+
+pub using @58228b76ec7374fa {type IProgressNotify_ccfc68ffd660 as IProgressNotify}
+
+pub using @58228b76ec7374fa {type IROTData_01ec020cbbf1 as IROTData}
+
+pub using @58228b76ec7374fa {type IReleaseMarshalBuffers_22f9edaf1835 as IReleaseMarshalBuffers}
+
+pub using @58228b76ec7374fa {type IRpcChannelBuffer_cfd4ddea0c1b as IRpcChannelBuffer}
+
+pub using @58228b76ec7374fa {type IRpcChannelBuffer2_88d8efa207dd as IRpcChannelBuffer2}
+
+pub using @58228b76ec7374fa {type IRpcChannelBuffer3_f469e8db242a as IRpcChannelBuffer3}
+
+pub using @58228b76ec7374fa {type IRpcHelper_75b528448908 as IRpcHelper}
+
+pub using @58228b76ec7374fa {type IRpcOptions_e8c0bb405fd8 as IRpcOptions}
+
+pub using @58228b76ec7374fa {type IRpcProxyBuffer_b2994d16d009 as IRpcProxyBuffer}
+
+pub using @58228b76ec7374fa {type IRpcStubBuffer_6c45626e3266 as IRpcStubBuffer}
+
+pub using @58228b76ec7374fa {type IRpcSyntaxNegotiate_9dfc853c8052 as IRpcSyntaxNegotiate}
+
+pub using @58228b76ec7374fa {type IRunnableObject_0d7a2e3eebeb as IRunnableObject}
+
+pub using @58228b76ec7374fa {type IRunningObjectTable_9da8db27df75 as IRunningObjectTable}
+
+pub using @58228b76ec7374fa {type ISequentialStream_629ca72d7f88 as ISequentialStream}
+
+pub using @58228b76ec7374fa {type IServerSecurity_fb3cb77db594 as IServerSecurity}
+
+pub using @58228b76ec7374fa {type IServiceProvider_630372cb2e11 as IServiceProvider}
+
+pub using @58228b76ec7374fa {type IStdMarshalInfo_9518f5a9e344 as IStdMarshalInfo}
+
+pub using @58228b76ec7374fa {type IStream_3efef4ae654e as IStream}
+
+pub using @58228b76ec7374fa {type ISupportActivateAsActivatorPackaged_df11235144a0 as ISupportActivateAsActivatorPackaged}
+
+pub using @58228b76ec7374fa {type ISupportActivationFromPackage_be3d82c72e92 as ISupportActivationFromPackage}
+
+pub using @58228b76ec7374fa {type ISupportAllowLowerTrustActivation_2243be560364 as ISupportAllowLowerTrustActivation}
+
+pub using @58228b76ec7374fa {type ISupportCoAddComDependencyOnPackage_3f134eb1eb8b as ISupportCoAddComDependencyOnPackage}
+
+pub using @58228b76ec7374fa {type ISupportDoNotElevateServerActivation_b9bb011c870e as ISupportDoNotElevateServerActivation}
+
+pub using @58228b76ec7374fa {type ISupportErrorInfo_257036eff5c1 as ISupportErrorInfo}
+
+pub using @58228b76ec7374fa {type ISupportPackagedComElevationEnabledClasses_199f58858e08 as ISupportPackagedComElevationEnabledClasses}
+
+pub using @58228b76ec7374fa {type ISupportPackagedComRegistrationVisibility_40c11c096294 as ISupportPackagedComRegistrationVisibility}
+
+pub using @58228b76ec7374fa {type ISupportServerMustBeEqualOrGreaterPrivilegeActivation_1d655003e0f4 as ISupportServerMustBeEqualOrGreaterPrivilegeActivation}
+
+pub using @58228b76ec7374fa {type ISurrogate_d8a376492e34 as ISurrogate}
+
+pub using @58228b76ec7374fa {type ISurrogateService_ef61926c5f1e as ISurrogateService}
+
+pub using @58228b76ec7374fa {type ISynchronize_e029f9566f15 as ISynchronize}
+
+pub using @58228b76ec7374fa {type ISynchronizeContainer_ed6a120c537b as ISynchronizeContainer}
+
+pub using @58228b76ec7374fa {type ISynchronizeEvent_f96dee104063 as ISynchronizeEvent}
+
+pub using @58228b76ec7374fa {type ISynchronizeHandle_5789bc8b6c7b as ISynchronizeHandle}
+
+pub using @58228b76ec7374fa {type ISynchronizeMutex_52d0ff9a08a4 as ISynchronizeMutex}
+
+pub using @58228b76ec7374fa {type ITimeAndNoticeControl_0edb58f83810 as ITimeAndNoticeControl}
+
+pub using @58228b76ec7374fa {type ITypeComp_f73b03fbe32f as ITypeComp}
+
+pub using @58228b76ec7374fa {type ITypeInfo_8d32498e5257 as ITypeInfo}
+
+pub using @58228b76ec7374fa {type ITypeInfo2_18e8bc15bbc4 as ITypeInfo2}
+
+pub using @58228b76ec7374fa {type ITypeLib_f74a8feac0b8 as ITypeLib}
+
+pub using @58228b76ec7374fa {type ITypeLib2_45312fc153fe as ITypeLib2}
+
+pub using @58228b76ec7374fa {type ITypeLibRegistration_671f8aff3fc5 as ITypeLibRegistration}
+
+pub using @58228b76ec7374fa {type ITypeLibRegistrationReader_18677fe602d7 as ITypeLibRegistrationReader}
+
+pub using @58228b76ec7374fa {type IUnknown_74f50bd1099b as IUnknown}
+
+pub using @58228b76ec7374fa {type IUri_e6243e3c1b29 as IUri}
+
+pub using @58228b76ec7374fa {type IUriBuilder_7d850564db85 as IUriBuilder}
+
+pub using @58228b76ec7374fa {type IUrlMon_51cdeb71c25b as IUrlMon}
+
+pub using @58228b76ec7374fa {type IWaitMultiple_cdb89d0433b1 as IWaitMultiple}
+
+pub using @58228b76ec7374fa {type LOCKTYPE_d382a808ff79 as LOCKTYPE}
+
+pub using @58228b76ec7374fa {type LPEXCEPFINODEFERREDFILLIN_476c387e8a40 as LPEXCEPFINODEFERREDFILLIN}
+
+pub using @58228b76ec7374fa {type LPFNCANUNLOADNOW_e66f4a679ba2 as LPFNCANUNLOADNOW}
+
+pub using @58228b76ec7374fa {type LPFNGETCLASSOBJECT_828a5b21ee78 as LPFNGETCLASSOBJECT}
+
+pub using @58228b76ec7374fa {type MEMCTX_bc0c7140c00c as MEMCTX}
+
+pub using @58228b76ec7374fa {type MKRREDUCE_3fa43133811b as MKRREDUCE}
+
+pub using @58228b76ec7374fa {type MKSYS_c09b96e1226a as MKSYS}
+
+pub using @58228b76ec7374fa {type MSHCTX_5ace62b70fce as MSHCTX}
+
+pub using @58228b76ec7374fa {type MSHLFLAGS_316344d07a2e as MSHLFLAGS}
+
+pub using @58228b76ec7374fa {type MULTIQI_17fff45b66e1 as MULTIQI}
+
+pub using @58228b76ec7374fa {type MachineGlobalObjectTableRegistrationToken_bc9b6445e545 as MachineGlobalObjectTableRegistrationToken}
+
+pub using @58228b76ec7374fa {type PENDINGMSG_8da6a0ed0c31 as PENDINGMSG}
+
+pub using @58228b76ec7374fa {type PENDINGTYPE_243e9ba6954b as PENDINGTYPE}
+
+pub using @58228b76ec7374fa {type PFNCONTEXTCALL_bf3dcd160498 as PFNCONTEXTCALL}
+
+pub using @58228b76ec7374fa {type QUERYCONTEXT_53694893dfe3 as QUERYCONTEXT}
+
+pub using @58228b76ec7374fa {type REGCLS_4acff7d3b108 as REGCLS}
+
+pub using @58228b76ec7374fa {type ROTFLAGS_f1985e5fbaf1 as ROTFLAGS}
+
+pub using @58228b76ec7374fa {type RPCCAUTHNLEVEL_d8b56634e48c as RPCCAUTHNLEVEL}
+
+pub using @58228b76ec7374fa {type RPCCIMPLEVEL_5cbc902e8f1c as RPCCIMPLEVEL}
+
+pub using @58228b76ec7374fa {type RPCOLEMESSAGE_c8870bb20dd1 as RPCOLEMESSAGE}
+
+pub using @58228b76ec7374fa {type RPCOPTPROPERTIES_e0c91aad2574 as RPCOPTPROPERTIES}
+
+pub using @58228b76ec7374fa {type RPCOPTSERVERLOCALITYVALUES_a0c5960c4042 as RPCOPTSERVERLOCALITYVALUES}
+
+pub using @58228b76ec7374fa {type RemSTGMEDIUM_8d96d48b9773 as RemSTGMEDIUM}
+
+pub using @58228b76ec7374fa {type SAFEARRAY_d4ad98dadc30 as SAFEARRAY}
+
+pub using @58228b76ec7374fa {type SAFEARRAYBOUND_4134140dc6a3 as SAFEARRAYBOUND}
+
+pub using @58228b76ec7374fa {type SChannelHookCallInfo_321c26467373 as SChannelHookCallInfo}
+
+pub using @58228b76ec7374fa {type SERVERCALL_ee8f4f19f4c9 as SERVERCALL}
+
+pub using @58228b76ec7374fa {type SOLEAUTHENTICATIONINFO_9e16445a8cbe as SOLEAUTHENTICATIONINFO}
+
+pub using @58228b76ec7374fa {type SOLEAUTHENTICATIONLIST_b084849bf7b4 as SOLEAUTHENTICATIONLIST}
+
+pub using @58228b76ec7374fa {type SOLEAUTHENTICATIONSERVICE_cbe77a196ef5 as SOLEAUTHENTICATIONSERVICE}
+
+pub using @58228b76ec7374fa {type STATDATA_129493303197 as STATDATA}
+
+pub using @58228b76ec7374fa {type STATFLAG_1434bd02502e as STATFLAG}
+
+pub using @58228b76ec7374fa {type STATSTG_2330db0111a6 as STATSTG}
+
+pub using @58228b76ec7374fa {type STGC_a6dc5383b785 as STGC}
+
+pub using @58228b76ec7374fa {type STGM_2a4d4038b34d as STGM}
+
+pub using @58228b76ec7374fa {type STGMEDIUM_95f8d911c4c8 as STGMEDIUM}
+
+pub using @58228b76ec7374fa {type STGMEDIUMUEUnion_0f0815641834 as STGMEDIUMUEUnion}
+
+pub using @58228b76ec7374fa {type STGTY_6d20dc3dc6aa as STGTY}
+
+pub using @58228b76ec7374fa {type STREAMSEEK_0231f264fd9a as STREAMSEEK}
+
+pub using @58228b76ec7374fa {type SYSKIND_7efba620e2e3 as SYSKIND}
+
+pub using @58228b76ec7374fa {type ShutdownType_62446499c2be as ShutdownType}
+
+pub using @58228b76ec7374fa {type StorageLayout_d0c3cb00a0a6 as StorageLayout}
+
+pub using @58228b76ec7374fa {type THDTYPE_eac09f523326 as THDTYPE}
+
+pub using @58228b76ec7374fa {type TLIBATTR_4d201a6507e5 as TLIBATTR}
+
+pub using @58228b76ec7374fa {type TYMED_32d81b172397 as TYMED}
+
+pub using @58228b76ec7374fa {type TYPEATTR_9b614afe7652 as TYPEATTR}
+
+pub using @58228b76ec7374fa {type TYPEDESC_4080237c2c58 as TYPEDESC}
+
+pub using @58228b76ec7374fa {type TYPEDESCAnonymousEUnion_fddb8382f4f9 as TYPEDESCAnonymousEUnion}
+
+pub using @58228b76ec7374fa {type TYPEKIND_3965e5de0c7c as TYPEKIND}
+
+pub using @58228b76ec7374fa {type TYSPEC_bb4d250d3b4e as TYSPEC}
+
+pub using @58228b76ec7374fa {type UCLSSPEC_edb477e8b7a9 as UCLSSPEC}
+
+pub using @58228b76ec7374fa {type UCLSSPECTaggedUnionEStruct_92240f5e5217 as UCLSSPECTaggedUnionEStruct}
+
+pub using @58228b76ec7374fa {type UCLSSPECTaggedUnionEStructByNameEStruct_e5ae0df2e160 as UCLSSPECTaggedUnionEStructByNameEStruct}
+
+pub using @58228b76ec7374fa {type UCLSSPECTaggedUnionEStructByObjectIdEStruct_2d74c7adbedb as UCLSSPECTaggedUnionEStructByObjectIdEStruct}
+
+pub using @58228b76ec7374fa {type URICREATEFLAGS_963e16950372 as URICREATEFLAGS}
+
+pub using @58228b76ec7374fa {type UriPROPERTY_6e5a0701be10 as UriPROPERTY}
+
+pub using @58228b76ec7374fa {type UserFLAGSTGMEDIUM_8058cebdd692 as UserFLAGSTGMEDIUM}
+
+pub using @58228b76ec7374fa {type UserSTGMEDIUM_5933ab0323c6 as UserSTGMEDIUM}
+
+pub using @58228b76ec7374fa {type UserSTGMEDIUMSTGMEDIUMUNION_8ed2b32672ea as UserSTGMEDIUMSTGMEDIUMUNION}
+
+pub using @58228b76ec7374fa {type UserSTGMEDIUMSTGMEDIUMUNIONUEStruct_af41e1460a58 as UserSTGMEDIUMSTGMEDIUMUNIONUEStruct}
+
+pub using @58228b76ec7374fa {type VARDESC_300dfa31fdee as VARDESC}
+
+pub using @58228b76ec7374fa {type VARDESCAnonymousEUnion_bf14e700b4c5 as VARDESCAnonymousEUnion}
+
+pub using @58228b76ec7374fa {type VARFLAGS_fd2f1cbc51a4 as VARFLAGS}
+
+pub using @58228b76ec7374fa {type VARKIND_a778fcd40613 as VARKIND}
+
+pub using @58228b76ec7374fa {type WORDBLOB_6208b09fa1ad as WORDBLOB}
+
+pub using @58228b76ec7374fa {type WORDSIZEDARR_57f4137e7f8e as WORDSIZEDARR}
+
+// Traits

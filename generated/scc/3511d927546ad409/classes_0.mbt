@@ -1,0 +1,259 @@
+///|
+pub fn NFCDEVICETYPE_515fe04a7c5d::nfc_ip1_initiator() -> NFCDEVICETYPE_515fe04a7c5d {
+  NFCDEVICETYPE_515fe04a7c5d::from_int(5)
+}
+
+///|
+pub fn NFCDEVICETYPE_515fe04a7c5d::nfc_ip1_target() -> NFCDEVICETYPE_515fe04a7c5d {
+  NFCDEVICETYPE_515fe04a7c5d::from_int(4)
+}
+
+///|
+pub fn NFCDEVICETYPE_515fe04a7c5d::nfc_reader() -> NFCDEVICETYPE_515fe04a7c5d {
+  NFCDEVICETYPE_515fe04a7c5d::from_int(6)
+}
+
+///|
+pub fn NFCDEVICETYPE_515fe04a7c5d::nfc_type1_tag() -> NFCDEVICETYPE_515fe04a7c5d {
+  NFCDEVICETYPE_515fe04a7c5d::from_int(0)
+}
+
+///|
+pub fn NFCDEVICETYPE_515fe04a7c5d::nfc_type2_tag() -> NFCDEVICETYPE_515fe04a7c5d {
+  NFCDEVICETYPE_515fe04a7c5d::from_int(1)
+}
+
+///|
+pub fn NFCDEVICETYPE_515fe04a7c5d::nfc_type3_tag() -> NFCDEVICETYPE_515fe04a7c5d {
+  NFCDEVICETYPE_515fe04a7c5d::from_int(2)
+}
+
+///|
+pub fn NFCDEVICETYPE_515fe04a7c5d::nfc_type4_tag() -> NFCDEVICETYPE_515fe04a7c5d {
+  NFCDEVICETYPE_515fe04a7c5d::from_int(3)
+}
+
+///|
+pub fn NFCLLCPLINKSTATUS_54f5dfda459c::link_activated() -> NFCLLCPLINKSTATUS_54f5dfda459c {
+  NFCLLCPLINKSTATUS_54f5dfda459c::from_int(0)
+}
+
+///|
+pub fn NFCLLCPLINKSTATUS_54f5dfda459c::link_deactivated() -> NFCLLCPLINKSTATUS_54f5dfda459c {
+  NFCLLCPLINKSTATUS_54f5dfda459c::from_int(1)
+}
+
+///|
+pub fn NFCLLCPSOCKETCONNECTTYPE_f199cde243db::nfc_connect_by_sap() -> NFCLLCPSOCKETCONNECTTYPE_f199cde243db {
+  NFCLLCPSOCKETCONNECTTYPE_f199cde243db::from_int(0)
+}
+
+///|
+pub fn NFCLLCPSOCKETCONNECTTYPE_f199cde243db::nfc_connect_by_uri() -> NFCLLCPSOCKETCONNECTTYPE_f199cde243db {
+  NFCLLCPSOCKETCONNECTTYPE_f199cde243db::from_int(1)
+}
+
+///|
+pub fn NFCLLCPSOCKETERROR_cd376c5f082d::nfc_llcp_error_busy_condition() -> NFCLLCPSOCKETERROR_cd376c5f082d {
+  NFCLLCPSOCKETERROR_cd376c5f082d::from_int(2)
+}
+
+///|
+pub fn NFCLLCPSOCKETERROR_cd376c5f082d::nfc_llcp_error_disconnected() -> NFCLLCPSOCKETERROR_cd376c5f082d {
+  NFCLLCPSOCKETERROR_cd376c5f082d::from_int(0)
+}
+
+///|
+pub fn NFCLLCPSOCKETERROR_cd376c5f082d::nfc_llcp_error_frame_rejected() -> NFCLLCPSOCKETERROR_cd376c5f082d {
+  NFCLLCPSOCKETERROR_cd376c5f082d::from_int(1)
+}
+
+///|
+pub fn NFCLLCPSOCKETERROR_cd376c5f082d::nfc_llcp_error_not_busy_condition() -> NFCLLCPSOCKETERROR_cd376c5f082d {
+  NFCLLCPSOCKETERROR_cd376c5f082d::from_int(3)
+}
+
+///|
+pub fn NFCLLCPSOCKETTYPE_9ec56240d140::connection_oriented() -> NFCLLCPSOCKETTYPE_9ec56240d140 {
+  NFCLLCPSOCKETTYPE_9ec56240d140::from_int(0)
+}
+
+///|
+pub fn NFCLLCPSOCKETTYPE_9ec56240d140::connectionless() -> NFCLLCPSOCKETTYPE_9ec56240d140 {
+  NFCLLCPSOCKETTYPE_9ec56240d140::from_int(1)
+}
+
+///|
+pub fn NFCP2PMODE_d12a7876a89f::nfc_dep_default() -> NFCP2PMODE_d12a7876a89f {
+  NFCP2PMODE_d12a7876a89f::from_int(0)
+}
+
+///|
+pub fn NFCP2PMODE_d12a7876a89f::nfc_dep_listen() -> NFCP2PMODE_d12a7876a89f {
+  NFCP2PMODE_d12a7876a89f::from_int(2)
+}
+
+///|
+pub fn NFCP2PMODE_d12a7876a89f::nfc_dep_poll() -> NFCP2PMODE_d12a7876a89f {
+  NFCP2PMODE_d12a7876a89f::from_int(1)
+}
+
+///|
+pub fn NFCRELEASETYPE_198240826668::discovery() -> NFCRELEASETYPE_198240826668 {
+  NFCRELEASETYPE_198240826668::from_int(2)
+}
+
+///|
+pub fn NFCRELEASETYPE_198240826668::idle_mode() -> NFCRELEASETYPE_198240826668 {
+  NFCRELEASETYPE_198240826668::from_int(0)
+}
+
+///|
+pub fn NFCRELEASETYPE_198240826668::sleep_mode() -> NFCRELEASETYPE_198240826668 {
+  NFCRELEASETYPE_198240826668::from_int(1)
+}
+
+///|
+pub fn NFCRFDISCOVERYMODE_7f4aba99fdd8::rf_discovery_resume() -> NFCRFDISCOVERYMODE_7f4aba99fdd8 {
+  NFCRFDISCOVERYMODE_7f4aba99fdd8::from_int(2)
+}
+
+///|
+pub fn NFCRFDISCOVERYMODE_7f4aba99fdd8::rf_discovery_config() -> NFCRFDISCOVERYMODE_7f4aba99fdd8 {
+  NFCRFDISCOVERYMODE_7f4aba99fdd8::from_int(0)
+}
+
+///|
+pub fn NFCRFDISCOVERYMODE_7f4aba99fdd8::rf_discovery_start() -> NFCRFDISCOVERYMODE_7f4aba99fdd8 {
+  NFCRFDISCOVERYMODE_7f4aba99fdd8::from_int(1)
+}
+
+///|
+pub fn NFCSEEMULATIONMODE_cc3329cc3c0f::emulation_disabled() -> NFCSEEMULATIONMODE_cc3329cc3c0f {
+  NFCSEEMULATIONMODE_cc3329cc3c0f::from_int(0)
+}
+
+///|
+pub fn NFCSEEMULATIONMODE_cc3329cc3c0f::emulation_enabled() -> NFCSEEMULATIONMODE_cc3329cc3c0f {
+  NFCSEEMULATIONMODE_cc3329cc3c0f::from_int(1)
+}
+
+///|
+pub fn NFCSNEPREQUESTTYPE_4b57c019cc24::snep_request_get() -> NFCSNEPREQUESTTYPE_4b57c019cc24 {
+  NFCSNEPREQUESTTYPE_4b57c019cc24::from_int(0)
+}
+
+///|
+pub fn NFCSNEPREQUESTTYPE_4b57c019cc24::snep_request_put() -> NFCSNEPREQUESTTYPE_4b57c019cc24 {
+  NFCSNEPREQUESTTYPE_4b57c019cc24::from_int(1)
+}
+
+///|
+pub fn NFCSNEPSERVERTYPE_02a50aab1148::default_snep_server() -> NFCSNEPSERVERTYPE_02a50aab1148 {
+  NFCSNEPSERVERTYPE_02a50aab1148::from_int(0)
+}
+
+///|
+pub fn NFCSNEPSERVERTYPE_02a50aab1148::extended_snep_server() -> NFCSNEPSERVERTYPE_02a50aab1148 {
+  NFCSNEPSERVERTYPE_02a50aab1148::from_int(1)
+}
+
+///|
+pub fn SECUREELEMENTCARDEMULATIONMODE_6ccd2d746d4b::emulation_off() -> SECUREELEMENTCARDEMULATIONMODE_6ccd2d746d4b {
+  SECUREELEMENTCARDEMULATIONMODE_6ccd2d746d4b::from_int(0)
+}
+
+///|
+pub fn SECUREELEMENTCARDEMULATIONMODE_6ccd2d746d4b::emulation_on_power_dependent() -> SECUREELEMENTCARDEMULATIONMODE_6ccd2d746d4b {
+  SECUREELEMENTCARDEMULATIONMODE_6ccd2d746d4b::from_int(2)
+}
+
+///|
+pub fn SECUREELEMENTCARDEMULATIONMODE_6ccd2d746d4b::emulation_on_power_independent() -> SECUREELEMENTCARDEMULATIONMODE_6ccd2d746d4b {
+  SECUREELEMENTCARDEMULATIONMODE_6ccd2d746d4b::from_int(1)
+}
+
+///|
+pub fn SECUREELEMENTCARDEMULATIONMODE_6ccd2d746d4b::emulation_stealth_listen() -> SECUREELEMENTCARDEMULATIONMODE_6ccd2d746d4b {
+  SECUREELEMENTCARDEMULATIONMODE_6ccd2d746d4b::from_int(3)
+}
+
+///|
+pub fn SECUREELEMENTEVENTTYPE_85d3f53ff658::application_selected() -> SECUREELEMENTEVENTTYPE_85d3f53ff658 {
+  SECUREELEMENTEVENTTYPE_85d3f53ff658::from_int(2)
+}
+
+///|
+pub fn SECUREELEMENTEVENTTYPE_85d3f53ff658::external_field_enter() -> SECUREELEMENTEVENTTYPE_85d3f53ff658 {
+  SECUREELEMENTEVENTTYPE_85d3f53ff658::from_int(6)
+}
+
+///|
+pub fn SECUREELEMENTEVENTTYPE_85d3f53ff658::external_field_exit() -> SECUREELEMENTEVENTTYPE_85d3f53ff658 {
+  SECUREELEMENTEVENTTYPE_85d3f53ff658::from_int(7)
+}
+
+///|
+pub fn SECUREELEMENTEVENTTYPE_85d3f53ff658::external_reader_arrival() -> SECUREELEMENTEVENTTYPE_85d3f53ff658 {
+  SECUREELEMENTEVENTTYPE_85d3f53ff658::from_int(0)
+}
+
+///|
+pub fn SECUREELEMENTEVENTTYPE_85d3f53ff658::external_reader_departure() -> SECUREELEMENTEVENTTYPE_85d3f53ff658 {
+  SECUREELEMENTEVENTTYPE_85d3f53ff658::from_int(1)
+}
+
+///|
+pub fn SECUREELEMENTEVENTTYPE_85d3f53ff658::hce_activated() -> SECUREELEMENTEVENTTYPE_85d3f53ff658 {
+  SECUREELEMENTEVENTTYPE_85d3f53ff658::from_int(4)
+}
+
+///|
+pub fn SECUREELEMENTEVENTTYPE_85d3f53ff658::hce_deactivated() -> SECUREELEMENTEVENTTYPE_85d3f53ff658 {
+  SECUREELEMENTEVENTTYPE_85d3f53ff658::from_int(5)
+}
+
+///|
+pub fn SECUREELEMENTEVENTTYPE_85d3f53ff658::transaction() -> SECUREELEMENTEVENTTYPE_85d3f53ff658 {
+  SECUREELEMENTEVENTTYPE_85d3f53ff658::from_int(3)
+}
+
+///|
+pub fn SECUREELEMENTPOWERMODE_6c3d1a0678d7::se_power_mode_allow_off() -> SECUREELEMENTPOWERMODE_6c3d1a0678d7 {
+  SECUREELEMENTPOWERMODE_6c3d1a0678d7::from_int(1)
+}
+
+///|
+pub fn SECUREELEMENTPOWERMODE_6c3d1a0678d7::se_power_mode_force_on() -> SECUREELEMENTPOWERMODE_6c3d1a0678d7 {
+  SECUREELEMENTPOWERMODE_6c3d1a0678d7::from_int(0)
+}
+
+///|
+pub fn SECUREELEMENTROUTINGTYPE_930c0c9034ac::routing_type_aid() -> SECUREELEMENTROUTINGTYPE_930c0c9034ac {
+  SECUREELEMENTROUTINGTYPE_930c0c9034ac::from_int(2)
+}
+
+///|
+pub fn SECUREELEMENTROUTINGTYPE_930c0c9034ac::routing_type_protocol() -> SECUREELEMENTROUTINGTYPE_930c0c9034ac {
+  SECUREELEMENTROUTINGTYPE_930c0c9034ac::from_int(1)
+}
+
+///|
+pub fn SECUREELEMENTROUTINGTYPE_930c0c9034ac::routing_type_tech() -> SECUREELEMENTROUTINGTYPE_930c0c9034ac {
+  SECUREELEMENTROUTINGTYPE_930c0c9034ac::from_int(0)
+}
+
+///|
+pub fn SECUREELEMENTTYPE_ce51cd0a0dad::device_host() -> SECUREELEMENTTYPE_ce51cd0a0dad {
+  SECUREELEMENTTYPE_ce51cd0a0dad::from_int(2)
+}
+
+///|
+pub fn SECUREELEMENTTYPE_ce51cd0a0dad::external() -> SECUREELEMENTTYPE_ce51cd0a0dad {
+  SECUREELEMENTTYPE_ce51cd0a0dad::from_int(1)
+}
+
+///|
+pub fn SECUREELEMENTTYPE_ce51cd0a0dad::integrated() -> SECUREELEMENTTYPE_ce51cd0a0dad {
+  SECUREELEMENTTYPE_ce51cd0a0dad::from_int(0)
+}

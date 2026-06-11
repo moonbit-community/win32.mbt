@@ -1,0 +1,893 @@
+// Generated using `moon info`, DON'T EDIT IT
+package "moonbit-community/win32api/windows/win32/system/wmi"
+
+import {
+  "moonbit-community/win32api/runtime/core",
+  "moonbit-community/win32api/scc/666db71a43231e46",
+}
+
+// Values
+pub fn mi_application_initialize_v1(UInt, @core.RawAddress, @core.RawAddress, @666db71a43231e46.MIApplication_30955a1b94b2) -> @666db71a43231e46.MIResult_e291ab5afa80 raise @core.WindowsError
+
+pub fn mi_application_initialize_v1_raw(UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub let mi_call_version : UInt
+
+pub let mi_char_type : UInt
+
+pub let mi_flag_abstract : UInt
+
+pub let mi_flag_adopt : UInt
+
+pub let mi_flag_any : UInt
+
+pub let mi_flag_association : UInt
+
+pub let mi_flag_borrow : UInt
+
+pub let mi_flag_class : UInt
+
+pub let mi_flag_disableoverride : UInt
+
+pub let mi_flag_enableoverride : UInt
+
+pub let mi_flag_expensive : UInt
+
+pub let mi_flag_extended : UInt
+
+pub let mi_flag_in : UInt
+
+pub let mi_flag_indication : UInt
+
+pub let mi_flag_key : UInt
+
+pub let mi_flag_method : UInt
+
+pub let mi_flag_not_modified : UInt
+
+pub let mi_flag_null : UInt
+
+pub let mi_flag_out : UInt
+
+pub let mi_flag_parameter : UInt
+
+pub let mi_flag_property : UInt
+
+pub let mi_flag_readonly : UInt
+
+pub let mi_flag_reference : UInt
+
+pub let mi_flag_required : UInt
+
+pub let mi_flag_restricted : UInt
+
+pub let mi_flag_static : UInt
+
+pub let mi_flag_stream : UInt
+
+pub let mi_flag_terminal : UInt
+
+pub let mi_flag_tosubclass : UInt
+
+pub let mi_flag_translatable : UInt
+
+pub let mi_flag_version : UInt
+
+pub let mi_max_locale_size : UInt
+
+pub let mi_module_flag_booleans : UInt
+
+pub let mi_module_flag_cplusplus : UInt
+
+pub let mi_module_flag_descriptions : UInt
+
+pub let mi_module_flag_filter_support : UInt
+
+pub let mi_module_flag_localized : UInt
+
+pub let mi_module_flag_mapping_strings : UInt
+
+pub let mi_module_flag_standard_qualifiers : UInt
+
+pub let mi_module_flag_values : UInt
+
+pub let mi_operationflags_basic_rtti : UInt
+
+pub let mi_operationflags_default_rtti : UInt
+
+pub let mi_operationflags_expensive_properties : UInt
+
+pub let mi_operationflags_full_rtti : UInt
+
+pub let mi_operationflags_localized_qualifiers : UInt
+
+pub let mi_operationflags_manual_ack_results : UInt
+
+pub let mi_operationflags_no_rtti : UInt
+
+pub let mi_operationflags_polymorphism_deep_base_props_only : UInt
+
+pub let mi_operationflags_polymorphism_shallow : UInt
+
+pub let mi_operationflags_report_operation_started : UInt
+
+pub let mi_operationflags_standard_rtti : UInt
+
+pub let mi_serializer_flags_class_deep : UInt
+
+pub let mi_serializer_flags_instance_with_class : UInt
+
+pub let mi_subscribe_bookmark_newest : String
+
+pub let mi_subscribe_bookmark_oldest : String
+
+pub let mi_writemessage_channel_debug : UInt
+
+pub let mi_writemessage_channel_verbose : UInt
+
+pub let mi_writemessage_channel_warning : UInt
+
+pub let wbem_infinite : Int
+
+pub let wbem_no_wait : Int
+
+pub let wbems_dispid_completed : UInt
+
+pub let wbems_dispid_connection_ready : UInt
+
+pub let wbems_dispid_derivation : UInt
+
+pub let wbems_dispid_object_put : UInt
+
+pub let wbems_dispid_object_ready : UInt
+
+pub let wbems_dispid_progress : UInt
+
+// Errors
+
+// Types and methods
+
+// Type aliases
+pub using @666db71a43231e46 {type CIMTYPEENUMERATION_5f8c0d036afb as CIMTYPEENUMERATION}
+
+pub using @666db71a43231e46 {type IEnumWbemClassObject_67ac1e689a93 as IEnumWbemClassObject}
+
+pub using @666db71a43231e46 {type IMofCompiler_ae89bf8d1886 as IMofCompiler}
+
+pub using @666db71a43231e46 {type ISWbemDateTime_c52a61e3340a as ISWbemDateTime}
+
+pub using @666db71a43231e46 {type ISWbemEventSource_176e5f28ab7d as ISWbemEventSource}
+
+pub using @666db71a43231e46 {type ISWbemLastError_3f116333e662 as ISWbemLastError}
+
+pub using @666db71a43231e46 {type ISWbemLocator_3012a72573f6 as ISWbemLocator}
+
+pub using @666db71a43231e46 {type ISWbemMethod_93687117b458 as ISWbemMethod}
+
+pub using @666db71a43231e46 {type ISWbemMethodSet_cbd9783f3cb9 as ISWbemMethodSet}
+
+pub using @666db71a43231e46 {type ISWbemNamedValue_a657a79d6890 as ISWbemNamedValue}
+
+pub using @666db71a43231e46 {type ISWbemNamedValueSet_523d3be299fd as ISWbemNamedValueSet}
+
+pub using @666db71a43231e46 {type ISWbemObject_5c6beb34a6c2 as ISWbemObject}
+
+pub using @666db71a43231e46 {type ISWbemObjectEx_bc1fed4dc443 as ISWbemObjectEx}
+
+pub using @666db71a43231e46 {type ISWbemObjectPath_7e391e115b45 as ISWbemObjectPath}
+
+pub using @666db71a43231e46 {type ISWbemObjectSet_cb20b6730848 as ISWbemObjectSet}
+
+pub using @666db71a43231e46 {type ISWbemPrivilege_30f570b9495f as ISWbemPrivilege}
+
+pub using @666db71a43231e46 {type ISWbemPrivilegeSet_b7bc74563cac as ISWbemPrivilegeSet}
+
+pub using @666db71a43231e46 {type ISWbemProperty_e1101bfa3612 as ISWbemProperty}
+
+pub using @666db71a43231e46 {type ISWbemPropertySet_112d0b3f429b as ISWbemPropertySet}
+
+pub using @666db71a43231e46 {type ISWbemQualifier_49d11f071b89 as ISWbemQualifier}
+
+pub using @666db71a43231e46 {type ISWbemQualifierSet_914012382448 as ISWbemQualifierSet}
+
+pub using @666db71a43231e46 {type ISWbemRefreshableItem_a2b4506ad59e as ISWbemRefreshableItem}
+
+pub using @666db71a43231e46 {type ISWbemRefresher_7811a7a3ef96 as ISWbemRefresher}
+
+pub using @666db71a43231e46 {type ISWbemSecurity_55b122c01909 as ISWbemSecurity}
+
+pub using @666db71a43231e46 {type ISWbemServices_5868595bc131 as ISWbemServices}
+
+pub using @666db71a43231e46 {type ISWbemServicesEx_da8a07710f44 as ISWbemServicesEx}
+
+pub using @666db71a43231e46 {type ISWbemSink_bbcb7ffaf2fa as ISWbemSink}
+
+pub using @666db71a43231e46 {type ISWbemSinkEvents_7b96043999fd as ISWbemSinkEvents}
+
+pub using @666db71a43231e46 {type IUnsecuredApartment_9b28c4a374a5 as IUnsecuredApartment}
+
+pub using @666db71a43231e46 {type IWMIExtension_86efc0d827c2 as IWMIExtension}
+
+pub using @666db71a43231e46 {type IWbemAddressResolution_04e15c038b3a as IWbemAddressResolution}
+
+pub using @666db71a43231e46 {type IWbemBackupRestore_ccad0d4b46bf as IWbemBackupRestore}
+
+pub using @666db71a43231e46 {type IWbemBackupRestoreEx_68d60b3c3a93 as IWbemBackupRestoreEx}
+
+pub using @666db71a43231e46 {type IWbemCallResult_85c42932e839 as IWbemCallResult}
+
+pub using @666db71a43231e46 {type IWbemClassObject_e2d10f3e425c as IWbemClassObject}
+
+pub using @666db71a43231e46 {type IWbemClientConnectionTransport_7616f0a268df as IWbemClientConnectionTransport}
+
+pub using @666db71a43231e46 {type IWbemClientTransport_a92d3057ed00 as IWbemClientTransport}
+
+pub using @666db71a43231e46 {type IWbemConfigureRefresher_8b4a871db392 as IWbemConfigureRefresher}
+
+pub using @666db71a43231e46 {type IWbemConnectorLogin_a302dc7bb44b as IWbemConnectorLogin}
+
+pub using @666db71a43231e46 {type IWbemConstructClassObject_20b60aed15d5 as IWbemConstructClassObject}
+
+pub using @666db71a43231e46 {type IWbemContext_5e976d262e10 as IWbemContext}
+
+pub using @666db71a43231e46 {type IWbemDecoupledBasicEventProvider_02b03e7affd8 as IWbemDecoupledBasicEventProvider}
+
+pub using @666db71a43231e46 {type IWbemDecoupledRegistrar_bb26646e9ce9 as IWbemDecoupledRegistrar}
+
+pub using @666db71a43231e46 {type IWbemEventConsumerProvider_7290f1f9a776 as IWbemEventConsumerProvider}
+
+pub using @666db71a43231e46 {type IWbemEventProvider_bb169f425f52 as IWbemEventProvider}
+
+pub using @666db71a43231e46 {type IWbemEventProviderQuerySink_4c6ddc1cede1 as IWbemEventProviderQuerySink}
+
+pub using @666db71a43231e46 {type IWbemEventProviderSecurity_4c7381b0f1eb as IWbemEventProviderSecurity}
+
+pub using @666db71a43231e46 {type IWbemEventSink_30579f962ce8 as IWbemEventSink}
+
+pub using @666db71a43231e46 {type IWbemHiPerfEnum_f6c491e94351 as IWbemHiPerfEnum}
+
+pub using @666db71a43231e46 {type IWbemHiPerfProvider_ec26e99b1b23 as IWbemHiPerfProvider}
+
+pub using @666db71a43231e46 {type IWbemLevel1Login_e51047ba5022 as IWbemLevel1Login}
+
+pub using @666db71a43231e46 {type IWbemLocator_c9123de7a0f0 as IWbemLocator}
+
+pub using @666db71a43231e46 {type IWbemObjectAccess_2e7b2211b67a as IWbemObjectAccess}
+
+pub using @666db71a43231e46 {type IWbemObjectSink_e1f838ea4aa5 as IWbemObjectSink}
+
+pub using @666db71a43231e46 {type IWbemObjectSinkEx_a3c8d2fd3019 as IWbemObjectSinkEx}
+
+pub using @666db71a43231e46 {type IWbemObjectTextSrc_eeeca1be45e3 as IWbemObjectTextSrc}
+
+pub using @666db71a43231e46 {type IWbemPath_af5905adf00d as IWbemPath}
+
+pub using @666db71a43231e46 {type IWbemPathKeyList_e07078f8f565 as IWbemPathKeyList}
+
+pub using @666db71a43231e46 {type IWbemPropertyProvider_c91920d88859 as IWbemPropertyProvider}
+
+pub using @666db71a43231e46 {type IWbemProviderIdentity_d9216da52862 as IWbemProviderIdentity}
+
+pub using @666db71a43231e46 {type IWbemProviderInit_937538153435 as IWbemProviderInit}
+
+pub using @666db71a43231e46 {type IWbemProviderInitSink_b66303d295da as IWbemProviderInitSink}
+
+pub using @666db71a43231e46 {type IWbemQualifierSet_6328d062fb9a as IWbemQualifierSet}
+
+pub using @666db71a43231e46 {type IWbemQuery_93f079c704ad as IWbemQuery}
+
+pub using @666db71a43231e46 {type IWbemRefresher_4d3ef07769ec as IWbemRefresher}
+
+pub using @666db71a43231e46 {type IWbemServices_7e0cfc6ac1cd as IWbemServices}
+
+pub using @666db71a43231e46 {type IWbemShutdown_4ca1d5257752 as IWbemShutdown}
+
+pub using @666db71a43231e46 {type IWbemStatusCodeText_56d3e2605651 as IWbemStatusCodeText}
+
+pub using @666db71a43231e46 {type IWbemTransport_4a0b015684a1 as IWbemTransport}
+
+pub using @666db71a43231e46 {type IWbemUnboundObjectSink_10961aaf101a as IWbemUnboundObjectSink}
+
+pub using @666db71a43231e46 {type IWbemUnsecuredApartment_d64be68a1462 as IWbemUnsecuredApartment}
+
+pub using @666db71a43231e46 {type MIApplication_30955a1b94b2 as MIApplication}
+
+pub using @666db71a43231e46 {type MIApplicationFT_54dda8d5bbe5 as MIApplicationFT}
+
+pub using @666db71a43231e46 {type MIArray_47508518d9cf as MIArray}
+
+pub using @666db71a43231e46 {type MIArrayField_8751c54fe49b as MIArrayField}
+
+pub using @666db71a43231e46 {type MIBooleanA_b5c6b6535858 as MIBooleanA}
+
+pub using @666db71a43231e46 {type MIBooleanAField_cab7831b2bfb as MIBooleanAField}
+
+pub using @666db71a43231e46 {type MIBooleanField_8df00961c088 as MIBooleanField}
+
+pub using @666db71a43231e46 {type MICallbackMode_58b6b1b2b1e0 as MICallbackMode}
+
+pub using @666db71a43231e46 {type MICancelCallback_59ab29794e48 as MICancelCallback}
+
+pub using @666db71a43231e46 {type MICancellationReason_9eea00301613 as MICancellationReason}
+
+pub using @666db71a43231e46 {type MIChar16A_e5d7e7e9743f as MIChar16A}
+
+pub using @666db71a43231e46 {type MIChar16AField_c2f6a4ed4652 as MIChar16AField}
+
+pub using @666db71a43231e46 {type MIChar16Field_47af0d28d2d8 as MIChar16Field}
+
+pub using @666db71a43231e46 {type MIClass_6a78743fd646 as MIClass}
+
+pub using @666db71a43231e46 {type MIClassDecl_21b7cba8b56c as MIClassDecl}
+
+pub using @666db71a43231e46 {type MIClassFT_70ca5ff8c651 as MIClassFT}
+
+pub using @666db71a43231e46 {type MIClientFTV1_173aa451fa0d as MIClientFTV1}
+
+pub using @666db71a43231e46 {type MIConstBooleanA_c67e31719e28 as MIConstBooleanA}
+
+pub using @666db71a43231e46 {type MIConstBooleanAField_b19342c44d24 as MIConstBooleanAField}
+
+pub using @666db71a43231e46 {type MIConstBooleanField_5e00e62f76d1 as MIConstBooleanField}
+
+pub using @666db71a43231e46 {type MIConstChar16A_71165f934f78 as MIConstChar16A}
+
+pub using @666db71a43231e46 {type MIConstChar16AField_0b0bc15a3fed as MIConstChar16AField}
+
+pub using @666db71a43231e46 {type MIConstChar16Field_345ad9eca5f8 as MIConstChar16Field}
+
+pub using @666db71a43231e46 {type MIConstDatetimeA_7ac3983121a0 as MIConstDatetimeA}
+
+pub using @666db71a43231e46 {type MIConstDatetimeAField_c00cb9b5014c as MIConstDatetimeAField}
+
+pub using @666db71a43231e46 {type MIConstDatetimeField_248c8c85b9a5 as MIConstDatetimeField}
+
+pub using @666db71a43231e46 {type MIConstInstanceA_e4754d73c596 as MIConstInstanceA}
+
+pub using @666db71a43231e46 {type MIConstInstanceAField_9f504309d650 as MIConstInstanceAField}
+
+pub using @666db71a43231e46 {type MIConstInstanceField_c86a961768ad as MIConstInstanceField}
+
+pub using @666db71a43231e46 {type MIConstReal32A_254f38856bcd as MIConstReal32A}
+
+pub using @666db71a43231e46 {type MIConstReal32AField_b0920c99955c as MIConstReal32AField}
+
+pub using @666db71a43231e46 {type MIConstReal32Field_686efce55eec as MIConstReal32Field}
+
+pub using @666db71a43231e46 {type MIConstReal64A_fe09cdcde7ee as MIConstReal64A}
+
+pub using @666db71a43231e46 {type MIConstReal64AField_8f0fcefaa627 as MIConstReal64AField}
+
+pub using @666db71a43231e46 {type MIConstReal64Field_76196228eabd as MIConstReal64Field}
+
+pub using @666db71a43231e46 {type MIConstReferenceA_6931591edb49 as MIConstReferenceA}
+
+pub using @666db71a43231e46 {type MIConstReferenceAField_18d13adc884a as MIConstReferenceAField}
+
+pub using @666db71a43231e46 {type MIConstReferenceField_cb8c7d2aee59 as MIConstReferenceField}
+
+pub using @666db71a43231e46 {type MIConstSint16A_9001a5dbbb37 as MIConstSint16A}
+
+pub using @666db71a43231e46 {type MIConstSint16AField_b86c0f1c8c20 as MIConstSint16AField}
+
+pub using @666db71a43231e46 {type MIConstSint16Field_fdc90abff8ea as MIConstSint16Field}
+
+pub using @666db71a43231e46 {type MIConstSint32A_198fad1c1c40 as MIConstSint32A}
+
+pub using @666db71a43231e46 {type MIConstSint32AField_53b4274e3da5 as MIConstSint32AField}
+
+pub using @666db71a43231e46 {type MIConstSint32Field_a7b6776c0a32 as MIConstSint32Field}
+
+pub using @666db71a43231e46 {type MIConstSint64A_bed7b994a416 as MIConstSint64A}
+
+pub using @666db71a43231e46 {type MIConstSint64AField_d6b6ac63344a as MIConstSint64AField}
+
+pub using @666db71a43231e46 {type MIConstSint64Field_c53caaa566d3 as MIConstSint64Field}
+
+pub using @666db71a43231e46 {type MIConstSint8A_e08099cd5b45 as MIConstSint8A}
+
+pub using @666db71a43231e46 {type MIConstSint8AField_b7f93d4798f9 as MIConstSint8AField}
+
+pub using @666db71a43231e46 {type MIConstSint8Field_691376cbb72c as MIConstSint8Field}
+
+pub using @666db71a43231e46 {type MIConstStringA_378c5eb8d541 as MIConstStringA}
+
+pub using @666db71a43231e46 {type MIConstStringAField_9b862ae9c9d0 as MIConstStringAField}
+
+pub using @666db71a43231e46 {type MIConstStringField_4c33eab2f0d7 as MIConstStringField}
+
+pub using @666db71a43231e46 {type MIConstUint16A_e7af9aa57f1f as MIConstUint16A}
+
+pub using @666db71a43231e46 {type MIConstUint16AField_0a5108c284b2 as MIConstUint16AField}
+
+pub using @666db71a43231e46 {type MIConstUint16Field_aa20b88fe77f as MIConstUint16Field}
+
+pub using @666db71a43231e46 {type MIConstUint32A_a904587868c3 as MIConstUint32A}
+
+pub using @666db71a43231e46 {type MIConstUint32AField_25ff39b5dc00 as MIConstUint32AField}
+
+pub using @666db71a43231e46 {type MIConstUint32Field_4ad5dd4c6ab9 as MIConstUint32Field}
+
+pub using @666db71a43231e46 {type MIConstUint64A_fd39c0b27467 as MIConstUint64A}
+
+pub using @666db71a43231e46 {type MIConstUint64AField_92f05be9110d as MIConstUint64AField}
+
+pub using @666db71a43231e46 {type MIConstUint64Field_df7281871363 as MIConstUint64Field}
+
+pub using @666db71a43231e46 {type MIConstUint8A_2aed020e804c as MIConstUint8A}
+
+pub using @666db71a43231e46 {type MIConstUint8AField_1a7dc15a6dc7 as MIConstUint8AField}
+
+pub using @666db71a43231e46 {type MIConstUint8Field_7a09e958d314 as MIConstUint8Field}
+
+pub using @666db71a43231e46 {type MIContext_07aa6a9ef5cd as MIContext}
+
+pub using @666db71a43231e46 {type MIContextFT_f3ea3e4c84f6 as MIContextFT}
+
+pub using @666db71a43231e46 {type MIDatetime_428052e05c9b as MIDatetime}
+
+pub using @666db71a43231e46 {type MIDatetimeA_4431d604d29a as MIDatetimeA}
+
+pub using @666db71a43231e46 {type MIDatetimeAField_d68d5be5ff95 as MIDatetimeAField}
+
+pub using @666db71a43231e46 {type MIDatetimeField_0f2f66c09bf5 as MIDatetimeField}
+
+pub using @666db71a43231e46 {type MIDatetimeUEUnion_16dd790942c4 as MIDatetimeUEUnion}
+
+pub using @666db71a43231e46 {type MIDeserializer_6cfdb91727e6 as MIDeserializer}
+
+pub using @666db71a43231e46 {type MIDeserializerClassObjectNeeded_f0f0ccef3b0c as MIDeserializerClassObjectNeeded}
+
+pub using @666db71a43231e46 {type MIDeserializerFT_9e4f59eb0ae6 as MIDeserializerFT}
+
+pub using @666db71a43231e46 {type MIDestinationOptions_a3369b7c4140 as MIDestinationOptions}
+
+pub using @666db71a43231e46 {type MIDestinationOptionsFT_eace60f8ae56 as MIDestinationOptionsFT}
+
+pub using @666db71a43231e46 {type MIDestinationOptionsImpersonationType_17c4543b8689 as MIDestinationOptionsImpersonationType}
+
+pub using @666db71a43231e46 {type MIErrorCategory_c5fec22e74ce as MIErrorCategory}
+
+pub using @666db71a43231e46 {type MIFeatureDecl_138d827df834 as MIFeatureDecl}
+
+pub using @666db71a43231e46 {type MIFilter_e54ad0b6105a as MIFilter}
+
+pub using @666db71a43231e46 {type MIFilterFT_ab7b7ab319dd as MIFilterFT}
+
+pub using @666db71a43231e46 {type MIHostedProvider_a85c5446b5d1 as MIHostedProvider}
+
+pub using @666db71a43231e46 {type MIHostedProviderFT_a3591284b5a6 as MIHostedProviderFT}
+
+pub using @666db71a43231e46 {type MIInstance_771dbe97a703 as MIInstance}
+
+pub using @666db71a43231e46 {type MIInstanceA_3484786a06ff as MIInstanceA}
+
+pub using @666db71a43231e46 {type MIInstanceAField_af90daf837da as MIInstanceAField}
+
+pub using @666db71a43231e46 {type MIInstanceExFT_f28fc16ffd24 as MIInstanceExFT}
+
+pub using @666db71a43231e46 {type MIInstanceFT_f1f514b7ba05 as MIInstanceFT}
+
+pub using @666db71a43231e46 {type MIInstanceField_fc2546b70f5b as MIInstanceField}
+
+pub using @666db71a43231e46 {type MIInterval_86e93402cecd as MIInterval}
+
+pub using @666db71a43231e46 {type MILocaleType_93c40fcf83b5 as MILocaleType}
+
+pub using @666db71a43231e46 {type MIMainFunction_d2228ce51956 as MIMainFunction}
+
+pub using @666db71a43231e46 {type MIMethodDecl_cb58846e4355 as MIMethodDecl}
+
+pub using @666db71a43231e46 {type MIMethodDeclInvoke_cbb200d7c719 as MIMethodDeclInvoke}
+
+pub using @666db71a43231e46 {type MIModule_ffac12112237 as MIModule}
+
+pub using @666db71a43231e46 {type MIModuleLoad_b53aa9e06b98 as MIModuleLoad}
+
+pub using @666db71a43231e46 {type MIModuleSelf_a3e04ceabd96 as MIModuleSelf}
+
+pub using @666db71a43231e46 {type MIModuleUnload_7ea60a9a2ed3 as MIModuleUnload}
+
+pub using @666db71a43231e46 {type MIObjectDecl_ea94a696d2d9 as MIObjectDecl}
+
+pub using @666db71a43231e46 {type MIOperation_4a2525afc78a as MIOperation}
+
+pub using @666db71a43231e46 {type MIOperationCallbackClass_6902fdf993dd as MIOperationCallbackClass}
+
+pub using @666db71a43231e46 {type MIOperationCallbackIndication_532f67b60c8e as MIOperationCallbackIndication}
+
+pub using @666db71a43231e46 {type MIOperationCallbackInstance_2b1ad4c89b33 as MIOperationCallbackInstance}
+
+pub using @666db71a43231e46 {type MIOperationCallbackPromptUser_20cd6ebbe36b as MIOperationCallbackPromptUser}
+
+pub using @666db71a43231e46 {type MIOperationCallbackResponseType_a3a5827d9c8f as MIOperationCallbackResponseType}
+
+pub using @666db71a43231e46 {type MIOperationCallbackStreamedParameter_458c1b7135c7 as MIOperationCallbackStreamedParameter}
+
+pub using @666db71a43231e46 {type MIOperationCallbackWriteError_d05fd35f63e1 as MIOperationCallbackWriteError}
+
+pub using @666db71a43231e46 {type MIOperationCallbackWriteMessage_43747bdc8c16 as MIOperationCallbackWriteMessage}
+
+pub using @666db71a43231e46 {type MIOperationCallbackWriteProgress_0fc726c2fef1 as MIOperationCallbackWriteProgress}
+
+pub using @666db71a43231e46 {type MIOperationCallbacks_3dd54bbeb52c as MIOperationCallbacks}
+
+pub using @666db71a43231e46 {type MIOperationFT_4e342fe15a4b as MIOperationFT}
+
+pub using @666db71a43231e46 {type MIOperationOptions_fef16cca6219 as MIOperationOptions}
+
+pub using @666db71a43231e46 {type MIOperationOptionsFT_03b195f3dcf1 as MIOperationOptionsFT}
+
+pub using @666db71a43231e46 {type MIParameterDecl_009f0046816b as MIParameterDecl}
+
+pub using @666db71a43231e46 {type MIParameterSet_665c184426d9 as MIParameterSet}
+
+pub using @666db71a43231e46 {type MIParameterSetFT_6a360e86ccff as MIParameterSetFT}
+
+pub using @666db71a43231e46 {type MIPromptType_4f18c9c73244 as MIPromptType}
+
+pub using @666db71a43231e46 {type MIPropertyDecl_9364ca6b56be as MIPropertyDecl}
+
+pub using @666db71a43231e46 {type MIPropertySet_55d9b4c8a58d as MIPropertySet}
+
+pub using @666db71a43231e46 {type MIPropertySetFT_68b12f51afe2 as MIPropertySetFT}
+
+pub using @666db71a43231e46 {type MIProviderArchitecture_27af3e09b1ee as MIProviderArchitecture}
+
+pub using @666db71a43231e46 {type MIProviderFT_728b9d0e16de as MIProviderFT}
+
+pub using @666db71a43231e46 {type MIProviderFTAssociatorInstances_06980de9fab9 as MIProviderFTAssociatorInstances}
+
+pub using @666db71a43231e46 {type MIProviderFTCreateInstance_4186b019c925 as MIProviderFTCreateInstance}
+
+pub using @666db71a43231e46 {type MIProviderFTDeleteInstance_6ab03f9f962e as MIProviderFTDeleteInstance}
+
+pub using @666db71a43231e46 {type MIProviderFTDisableIndications_87d829763d19 as MIProviderFTDisableIndications}
+
+pub using @666db71a43231e46 {type MIProviderFTEnableIndications_26d7282bd98e as MIProviderFTEnableIndications}
+
+pub using @666db71a43231e46 {type MIProviderFTEnumerateInstances_e23bd30c4860 as MIProviderFTEnumerateInstances}
+
+pub using @666db71a43231e46 {type MIProviderFTGetInstance_4eb2d040ac0b as MIProviderFTGetInstance}
+
+pub using @666db71a43231e46 {type MIProviderFTInvoke_1f604b4ba864 as MIProviderFTInvoke}
+
+pub using @666db71a43231e46 {type MIProviderFTLoad_3f9fabe3b5f1 as MIProviderFTLoad}
+
+pub using @666db71a43231e46 {type MIProviderFTModifyInstance_eee8d9825eec as MIProviderFTModifyInstance}
+
+pub using @666db71a43231e46 {type MIProviderFTReferenceInstances_4bf29e3267c2 as MIProviderFTReferenceInstances}
+
+pub using @666db71a43231e46 {type MIProviderFTSubscribe_ba59db52f357 as MIProviderFTSubscribe}
+
+pub using @666db71a43231e46 {type MIProviderFTUnload_55bfa723fea8 as MIProviderFTUnload}
+
+pub using @666db71a43231e46 {type MIProviderFTUnsubscribe_489346fae994 as MIProviderFTUnsubscribe}
+
+pub using @666db71a43231e46 {type MIQualifier_2dc59a7aa17b as MIQualifier}
+
+pub using @666db71a43231e46 {type MIQualifierDecl_b5d502dfff91 as MIQualifierDecl}
+
+pub using @666db71a43231e46 {type MIQualifierSet_a33a917d5b8e as MIQualifierSet}
+
+pub using @666db71a43231e46 {type MIQualifierSetFT_a24cbe7a8600 as MIQualifierSetFT}
+
+pub using @666db71a43231e46 {type MIReal32A_4c1176659a60 as MIReal32A}
+
+pub using @666db71a43231e46 {type MIReal32AField_4a595d2f1ecb as MIReal32AField}
+
+pub using @666db71a43231e46 {type MIReal32Field_a971a1a2ef9a as MIReal32Field}
+
+pub using @666db71a43231e46 {type MIReal64A_18d9af9796c0 as MIReal64A}
+
+pub using @666db71a43231e46 {type MIReal64AField_691b6976dd49 as MIReal64AField}
+
+pub using @666db71a43231e46 {type MIReal64Field_689c3372cb83 as MIReal64Field}
+
+pub using @666db71a43231e46 {type MIReferenceA_9a77c118f8d2 as MIReferenceA}
+
+pub using @666db71a43231e46 {type MIReferenceAField_694860263a43 as MIReferenceAField}
+
+pub using @666db71a43231e46 {type MIReferenceField_b693dd893c96 as MIReferenceField}
+
+pub using @666db71a43231e46 {type MIResult_e291ab5afa80 as MIResult}
+
+pub using @666db71a43231e46 {type MISchemaDecl_ec72d463e467 as MISchemaDecl}
+
+pub using @666db71a43231e46 {type MISerializer_c82a4a179024 as MISerializer}
+
+pub using @666db71a43231e46 {type MISerializerFT_eee340049261 as MISerializerFT}
+
+pub using @666db71a43231e46 {type MIServer_26627c68876f as MIServer}
+
+pub using @666db71a43231e46 {type MIServerFT_eb64c62aaf98 as MIServerFT}
+
+pub using @666db71a43231e46 {type MISession_aff28acf4452 as MISession}
+
+pub using @666db71a43231e46 {type MISessionCallbacks_45367fab965d as MISessionCallbacks}
+
+pub using @666db71a43231e46 {type MISessionFT_c690bf834ba0 as MISessionFT}
+
+pub using @666db71a43231e46 {type MISint16A_dc11b85b02e7 as MISint16A}
+
+pub using @666db71a43231e46 {type MISint16AField_cbbb3f9250b6 as MISint16AField}
+
+pub using @666db71a43231e46 {type MISint16Field_1465f1b5def8 as MISint16Field}
+
+pub using @666db71a43231e46 {type MISint32A_60f824628461 as MISint32A}
+
+pub using @666db71a43231e46 {type MISint32AField_6d861ff4defc as MISint32AField}
+
+pub using @666db71a43231e46 {type MISint32Field_121a2d28af9c as MISint32Field}
+
+pub using @666db71a43231e46 {type MISint64A_19a1a8b7f617 as MISint64A}
+
+pub using @666db71a43231e46 {type MISint64AField_50087d5dc8d4 as MISint64AField}
+
+pub using @666db71a43231e46 {type MISint64Field_06d5373216c3 as MISint64Field}
+
+pub using @666db71a43231e46 {type MISint8A_d150b3d3d9f0 as MISint8A}
+
+pub using @666db71a43231e46 {type MISint8AField_e53fca59c9a9 as MISint8AField}
+
+pub using @666db71a43231e46 {type MISint8Field_03c63456caa6 as MISint8Field}
+
+pub using @666db71a43231e46 {type MIStringA_0693461f46b8 as MIStringA}
+
+pub using @666db71a43231e46 {type MIStringAField_b2c349afbaa4 as MIStringAField}
+
+pub using @666db71a43231e46 {type MIStringField_bf7e5d585f5c as MIStringField}
+
+pub using @666db71a43231e46 {type MISubscriptionDeliveryOptions_75911c051188 as MISubscriptionDeliveryOptions}
+
+pub using @666db71a43231e46 {type MISubscriptionDeliveryOptionsFT_b4a74281ed92 as MISubscriptionDeliveryOptionsFT}
+
+pub using @666db71a43231e46 {type MISubscriptionDeliveryType_851d95e48af0 as MISubscriptionDeliveryType}
+
+pub using @666db71a43231e46 {type MITimestamp_a2e473ab9208 as MITimestamp}
+
+pub using @666db71a43231e46 {type MIType_6483e375379a as MIType}
+
+pub using @666db71a43231e46 {type MIUint16A_90437f9b784d as MIUint16A}
+
+pub using @666db71a43231e46 {type MIUint16AField_3ba29fc81383 as MIUint16AField}
+
+pub using @666db71a43231e46 {type MIUint16Field_7ad5ba004225 as MIUint16Field}
+
+pub using @666db71a43231e46 {type MIUint32A_6c5718820d08 as MIUint32A}
+
+pub using @666db71a43231e46 {type MIUint32AField_85916cce716a as MIUint32AField}
+
+pub using @666db71a43231e46 {type MIUint32Field_14330dce45db as MIUint32Field}
+
+pub using @666db71a43231e46 {type MIUint64A_5cfea2b6b8f1 as MIUint64A}
+
+pub using @666db71a43231e46 {type MIUint64AField_a198134f7cbd as MIUint64AField}
+
+pub using @666db71a43231e46 {type MIUint64Field_1bc39b1b070d as MIUint64Field}
+
+pub using @666db71a43231e46 {type MIUint8A_e928ee0596ed as MIUint8A}
+
+pub using @666db71a43231e46 {type MIUint8AField_69944593fea5 as MIUint8AField}
+
+pub using @666db71a43231e46 {type MIUint8Field_1455a7a1adac as MIUint8Field}
+
+pub using @666db71a43231e46 {type MIUserCredentials_4f42944c98d4 as MIUserCredentials}
+
+pub using @666db71a43231e46 {type MIUserCredentialsCredentialsEUnion_11fb82dbd5cd as MIUserCredentialsCredentialsEUnion}
+
+pub using @666db71a43231e46 {type MIUsernamePasswordCreds_779dfe3bf5ae as MIUsernamePasswordCreds}
+
+pub using @666db71a43231e46 {type MIUtilitiesFT_c13e2b42fa38 as MIUtilitiesFT}
+
+pub using @666db71a43231e46 {type MIValue_f5fb7f085647 as MIValue}
+
+pub using @666db71a43231e46 {type MofCompiler_c5d29ace145a as MofCompiler}
+
+pub using @666db71a43231e46 {type SWbemAnalysisMatrix_d419a0ca4f12 as SWbemAnalysisMatrix}
+
+pub using @666db71a43231e46 {type SWbemAnalysisMatrixList_e95eaa897dd6 as SWbemAnalysisMatrixList}
+
+pub using @666db71a43231e46 {type SWbemAssocQueryInf_2aebe603027a as SWbemAssocQueryInf}
+
+pub using @666db71a43231e46 {type SWbemDateTime_827054beefdc as SWbemDateTime}
+
+pub using @666db71a43231e46 {type SWbemEventSource_30466c239787 as SWbemEventSource}
+
+pub using @666db71a43231e46 {type SWbemLastError_4e6121c00c43 as SWbemLastError}
+
+pub using @666db71a43231e46 {type SWbemLocator_3e6b380e37a7 as SWbemLocator}
+
+pub using @666db71a43231e46 {type SWbemMethod_3ec9a9698350 as SWbemMethod}
+
+pub using @666db71a43231e46 {type SWbemMethodSet_5f036a1dc91c as SWbemMethodSet}
+
+pub using @666db71a43231e46 {type SWbemNamedValue_7bc04f33ef22 as SWbemNamedValue}
+
+pub using @666db71a43231e46 {type SWbemNamedValueSet_fe97cd9500ff as SWbemNamedValueSet}
+
+pub using @666db71a43231e46 {type SWbemObject_f6ec1fb1a79b as SWbemObject}
+
+pub using @666db71a43231e46 {type SWbemObjectEx_20a3393e7c2f as SWbemObjectEx}
+
+pub using @666db71a43231e46 {type SWbemObjectPath_c12430717a9a as SWbemObjectPath}
+
+pub using @666db71a43231e46 {type SWbemObjectSet_3704a78f05af as SWbemObjectSet}
+
+pub using @666db71a43231e46 {type SWbemPrivilege_110b2a005866 as SWbemPrivilege}
+
+pub using @666db71a43231e46 {type SWbemPrivilegeSet_8dff82694717 as SWbemPrivilegeSet}
+
+pub using @666db71a43231e46 {type SWbemProperty_88a48693d6a2 as SWbemProperty}
+
+pub using @666db71a43231e46 {type SWbemPropertySet_d02f93d428dd as SWbemPropertySet}
+
+pub using @666db71a43231e46 {type SWbemQualifier_3b73762799be as SWbemQualifier}
+
+pub using @666db71a43231e46 {type SWbemQualifierSet_f6ae0b8231e6 as SWbemQualifierSet}
+
+pub using @666db71a43231e46 {type SWbemQueryQualifiedName_61f9b1ffd6c1 as SWbemQueryQualifiedName}
+
+pub using @666db71a43231e46 {type SWbemRefreshableItem_e53c0ae0fcea as SWbemRefreshableItem}
+
+pub using @666db71a43231e46 {type SWbemRefresher_a431aaa6edaa as SWbemRefresher}
+
+pub using @666db71a43231e46 {type SWbemRpnConst_2d9f04e3427c as SWbemRpnConst}
+
+pub using @666db71a43231e46 {type SWbemRpnEncodedQuery_e46bbe8bc658 as SWbemRpnEncodedQuery}
+
+pub using @666db71a43231e46 {type SWbemRpnQueryToken_5e1c845046c9 as SWbemRpnQueryToken}
+
+pub using @666db71a43231e46 {type SWbemRpnTokenList_201508472981 as SWbemRpnTokenList}
+
+pub using @666db71a43231e46 {type SWbemSecurity_f4620ae63b94 as SWbemSecurity}
+
+pub using @666db71a43231e46 {type SWbemServices_62237f31e2c9 as SWbemServices}
+
+pub using @666db71a43231e46 {type SWbemServicesEx_23b7aa5ad502 as SWbemServicesEx}
+
+pub using @666db71a43231e46 {type SWbemSink_d40bd80e545e as SWbemSink}
+
+pub using @666db71a43231e46 {type UnsecuredApartment_582825ee9021 as UnsecuredApartment}
+
+pub using @666db71a43231e46 {type WBEMBACKUPRESTOREFLAGS_3efd05453106 as WBEMBACKUPRESTOREFLAGS}
+
+pub using @666db71a43231e46 {type WBEMBATCHTYPE_787761d5e06a as WBEMBATCHTYPE}
+
+pub using @666db71a43231e46 {type WBEMCHANGEFLAGTYPE_a7e7ecab87d7 as WBEMCHANGEFLAGTYPE}
+
+pub using @666db71a43231e46 {type WBEMCOMPARISONFLAG_2e6ec427df70 as WBEMCOMPARISONFLAG}
+
+pub using @666db71a43231e46 {type WBEMCOMPILEROPTIONS_ad38747d4dad as WBEMCOMPILEROPTIONS}
+
+pub using @666db71a43231e46 {type WBEMCOMPILESTATUSINFO_5e976d4b3753 as WBEMCOMPILESTATUSINFO}
+
+pub using @666db71a43231e46 {type WBEMCONDITIONFLAGTYPE_557a4102346a as WBEMCONDITIONFLAGTYPE}
+
+pub using @666db71a43231e46 {type WBEMCONNECTOPTIONS_203b4e4919ee as WBEMCONNECTOPTIONS}
+
+pub using @666db71a43231e46 {type WBEMEXTRARETURNCODES_eab7cd990bb9 as WBEMEXTRARETURNCODES}
+
+pub using @666db71a43231e46 {type WBEMFLAVORTYPE_87b08f3e3390 as WBEMFLAVORTYPE}
+
+pub using @666db71a43231e46 {type WBEMGENERICFLAGTYPE_74930cd25441 as WBEMGENERICFLAGTYPE}
+
+pub using @666db71a43231e46 {type WBEMGENUSTYPE_21c6f18095ff as WBEMGENUSTYPE}
+
+pub using @666db71a43231e46 {type WBEMGETKEYFLAGS_fd5b76b90a9c as WBEMGETKEYFLAGS}
+
+pub using @666db71a43231e46 {type WBEMGETTEXTFLAGS_2bbb928dbb7c as WBEMGETTEXTFLAGS}
+
+pub using @666db71a43231e46 {type WBEMINFORMATIONFLAGTYPE_99e1c0089e86 as WBEMINFORMATIONFLAGTYPE}
+
+pub using @666db71a43231e46 {type WBEMLIMITATIONFLAGTYPE_d466cb64a179 as WBEMLIMITATIONFLAGTYPE}
+
+pub using @666db71a43231e46 {type WBEMLIMITS_1fb4c359250e as WBEMLIMITS}
+
+pub using @666db71a43231e46 {type WBEMLOCKINGFLAGTYPE_0785b8c01464 as WBEMLOCKINGFLAGTYPE}
+
+pub using @666db71a43231e46 {type WBEMLOGINTYPE_9635a1530641 as WBEMLOGINTYPE}
+
+pub using @666db71a43231e46 {type WBEMPATHCREATEFLAG_a7784d9aeed0 as WBEMPATHCREATEFLAG}
+
+pub using @666db71a43231e46 {type WBEMPATHSTATUSFLAG_d6946a17dfd7 as WBEMPATHSTATUSFLAG}
+
+pub using @666db71a43231e46 {type WBEMPROVIDERFLAGS_6a0b316d4962 as WBEMPROVIDERFLAGS}
+
+pub using @666db71a43231e46 {type WBEMPROVIDERREQUIREMENTSTYPE_9758b3d93996 as WBEMPROVIDERREQUIREMENTSTYPE}
+
+pub using @666db71a43231e46 {type WBEMQUERYFLAGTYPE_04b3b6eda743 as WBEMQUERYFLAGTYPE}
+
+pub using @666db71a43231e46 {type WBEMREFRESHERFLAGS_33648038de03 as WBEMREFRESHERFLAGS}
+
+pub using @666db71a43231e46 {type WBEMSECURITYFLAGS_dd7c9c759c62 as WBEMSECURITYFLAGS}
+
+pub using @666db71a43231e46 {type WBEMSHUTDOWNFLAGS_e73a6cb53c56 as WBEMSHUTDOWNFLAGS}
+
+pub using @666db71a43231e46 {type WBEMSTATUS_cd90afb1440a as WBEMSTATUS}
+
+pub using @666db71a43231e46 {type WBEMSTATUSFORMAT_a7fe5b1c0a2b as WBEMSTATUSFORMAT}
+
+pub using @666db71a43231e46 {type WBEMSTATUSTYPE_abec6db40c12 as WBEMSTATUSTYPE}
+
+pub using @666db71a43231e46 {type WBEMTEXTFLAGTYPE_557cccdc6623 as WBEMTEXTFLAGTYPE}
+
+pub using @666db71a43231e46 {type WBEMUNSECAPPFLAGTYPE_91cc7262d87b as WBEMUNSECAPPFLAGTYPE}
+
+pub using @666db71a43231e46 {type WMIExtension_133bffc89fad as WMIExtension}
+
+pub using @666db71a43231e46 {type WMIOBJTEXT_a8f15ab40ff4 as WMIOBJTEXT}
+
+pub using @666db71a43231e46 {type WMIQANALYSISTYPE_efdd973b9d8e as WMIQANALYSISTYPE}
+
+pub using @666db71a43231e46 {type WMIQASSOCQFLAGS_0b095efacd85 as WMIQASSOCQFLAGS}
+
+pub using @666db71a43231e46 {type WMIQLANGUAGEFEATURES_1d14bbc247e4 as WMIQLANGUAGEFEATURES}
+
+pub using @666db71a43231e46 {type WMIQRPNFFEATURE_613794553fb8 as WMIQRPNFFEATURE}
+
+pub using @666db71a43231e46 {type WMIQRPNTOKENFLAGS_157470641861 as WMIQRPNTOKENFLAGS}
+
+pub using @666db71a43231e46 {type WbemAdministrativeLocator_23202e7744e5 as WbemAdministrativeLocator}
+
+pub using @666db71a43231e46 {type WbemAuthenticatedLocator_cbaa3a574daa as WbemAuthenticatedLocator}
+
+pub using @666db71a43231e46 {type WbemAuthenticationLevelEnum_9ad07ea01f25 as WbemAuthenticationLevelEnum}
+
+pub using @666db71a43231e46 {type WbemBackupRestore_8aa98b912f4d as WbemBackupRestore}
+
+pub using @666db71a43231e46 {type WbemChangeFlagEnum_a4a91f7fb7db as WbemChangeFlagEnum}
+
+pub using @666db71a43231e46 {type WbemCimtypeEnum_2206f1747f1b as WbemCimtypeEnum}
+
+pub using @666db71a43231e46 {type WbemClassObject_559f61e8220e as WbemClassObject}
+
+pub using @666db71a43231e46 {type WbemComparisonFlagEnum_a66e82ffcf44 as WbemComparisonFlagEnum}
+
+pub using @666db71a43231e46 {type WbemConnectOptionsEnum_57f74e246d45 as WbemConnectOptionsEnum}
+
+pub using @666db71a43231e46 {type WbemContext_4d7de5221294 as WbemContext}
+
+pub using @666db71a43231e46 {type WbemDCOMTransport_0474402a7b05 as WbemDCOMTransport}
+
+pub using @666db71a43231e46 {type WbemDecoupledBasicEventProvider_832ddf4e5602 as WbemDecoupledBasicEventProvider}
+
+pub using @666db71a43231e46 {type WbemDecoupledRegistrar_3b6d97a894ad as WbemDecoupledRegistrar}
+
+pub using @666db71a43231e46 {type WbemDefPath_2cd37c9bf011 as WbemDefPath}
+
+pub using @666db71a43231e46 {type WbemErrorEnum_81995a6a2c23 as WbemErrorEnum}
+
+pub using @666db71a43231e46 {type WbemFlagEnum_303392ce9505 as WbemFlagEnum}
+
+pub using @666db71a43231e46 {type WbemImpersonationLevelEnum_79f1a0ac4011 as WbemImpersonationLevelEnum}
+
+pub using @666db71a43231e46 {type WbemLevel1Login_a2e4bf461cc5 as WbemLevel1Login}
+
+pub using @666db71a43231e46 {type WbemLocalAddrRes_78dfb00645d4 as WbemLocalAddrRes}
+
+pub using @666db71a43231e46 {type WbemLocator_0c5c46c0ac47 as WbemLocator}
+
+pub using @666db71a43231e46 {type WbemObjectTextFormatEnum_e9d6a828766d as WbemObjectTextFormatEnum}
+
+pub using @666db71a43231e46 {type WbemObjectTextSrc_f260b1e6bd24 as WbemObjectTextSrc}
+
+pub using @666db71a43231e46 {type WbemPrivilegeEnum_6df3a8f95911 as WbemPrivilegeEnum}
+
+pub using @666db71a43231e46 {type WbemQuery_2b8761348afa as WbemQuery}
+
+pub using @666db71a43231e46 {type WbemQueryFlagEnum_d7356a6c6cf2 as WbemQueryFlagEnum}
+
+pub using @666db71a43231e46 {type WbemRefresher_5fa863f5d99d as WbemRefresher}
+
+pub using @666db71a43231e46 {type WbemStatusCodeText_e194cfb41b26 as WbemStatusCodeText}
+
+pub using @666db71a43231e46 {type WbemTextFlagEnum_b8b363e3fe3d as WbemTextFlagEnum}
+
+pub using @666db71a43231e46 {type WbemTimeout_16fe5220373f as WbemTimeout}
+
+pub using @666db71a43231e46 {type WbemUnauthenticatedLocator_c553ac65b080 as WbemUnauthenticatedLocator}
+
+pub using @666db71a43231e46 {type WbemUninitializedClassObject_272ee9481e86 as WbemUninitializedClassObject}
+
+// Traits

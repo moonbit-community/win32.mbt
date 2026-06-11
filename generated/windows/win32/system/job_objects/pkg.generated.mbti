@@ -1,0 +1,157 @@
+// Generated using `moon info`, DON'T EDIT IT
+package "moonbit-community/win32api/windows/win32/system/job_objects"
+
+import {
+  "moonbit-community/win32api/runtime/core",
+  "moonbit-community/win32api/runtime/strings",
+  "moonbit-community/win32api/scc/b1823e92c6f9f6df",
+  "moonbit-community/win32api/scc/cc6631776d7e2373",
+}
+
+// Values
+pub fn assign_process_to_job_object(@core.RawAddress, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn assign_process_to_job_object_raw(@core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn create_job_object_a(@cc6631776d7e2373.SECURITYATTRIBUTES_bc2e2f0be0e1?, @strings.PStr?) -> @core.RawAddress raise @core.WindowsError
+
+pub fn create_job_object_a_raw(@core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[@core.RawAddress]
+
+pub fn create_job_object_w(@cc6631776d7e2373.SECURITYATTRIBUTES_bc2e2f0be0e1?, @strings.PWStr?) -> @core.RawAddress raise @core.WindowsError
+
+pub fn create_job_object_w_raw(@core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[@core.RawAddress]
+
+pub fn create_job_set(UInt, @b1823e92c6f9f6df.JOBSETARRAY_8dc2a6a9d013, UInt) -> Bool raise @core.WindowsError
+
+pub fn create_job_set_raw(UInt, @core.RawAddress, UInt) -> Int
+
+pub fn free_memory_job_object(@core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn free_memory_job_object_raw(@core.RawAddress) -> Unit
+
+pub fn is_process_in_job(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn is_process_in_job_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn open_job_object_a(UInt, Int, @strings.PStr) -> @core.RawAddress raise @core.WindowsError
+
+pub fn open_job_object_a_raw(UInt, Int, @core.RawAddress) -> @core.RawWin32Call[@core.RawAddress]
+
+pub fn open_job_object_w(UInt, Int, @strings.PWStr) -> @core.RawAddress raise @core.WindowsError
+
+pub fn open_job_object_w_raw(UInt, Int, @core.RawAddress) -> @core.RawWin32Call[@core.RawAddress]
+
+pub fn query_information_job_object(@core.RawAddress, @b1823e92c6f9f6df.JOBOBJECTINFOCLASS_51d0708a064a, @core.RawAddress, UInt, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn query_information_job_object_raw(@core.RawAddress, Int, @core.RawAddress, UInt, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn query_io_rate_control_information_job_object(@core.RawAddress, @strings.PWStr?, @core.RawAddress, @core.RawAddress) -> UInt raise @core.WindowsError
+
+pub fn query_io_rate_control_information_job_object_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[UInt]
+
+pub fn set_information_job_object(@core.RawAddress, @b1823e92c6f9f6df.JOBOBJECTINFOCLASS_51d0708a064a, @core.RawAddress, UInt) -> Bool raise @core.WindowsError
+
+pub fn set_information_job_object_raw(@core.RawAddress, Int, @core.RawAddress, UInt) -> @core.RawWin32Call[Int]
+
+pub fn set_io_rate_control_information_job_object(@core.RawAddress, @b1823e92c6f9f6df.JOBOBJECTIORATECONTROLINFORMATION_d887bed277f0) -> UInt raise @core.WindowsError
+
+pub fn set_io_rate_control_information_job_object_raw(@core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[UInt]
+
+pub fn terminate_job_object(@core.RawAddress, UInt) -> Bool raise @core.WindowsError
+
+pub fn terminate_job_object_raw(@core.RawAddress, UInt) -> @core.RawWin32Call[Int]
+
+pub fn user_handle_grant_access(@core.RawAddress, @core.RawAddress, Int) -> Bool raise @core.WindowsError
+
+pub fn user_handle_grant_access_raw(@core.RawAddress, @core.RawAddress, Int) -> @core.RawWin32Call[Int]
+
+// Errors
+
+// Types and methods
+
+// Type aliases
+pub using @b1823e92c6f9f6df {type JOBOBJECTASSOCIATECOMPLETIONPORT_1fa93df76905 as JOBOBJECTASSOCIATECOMPLETIONPORT}
+
+pub using @b1823e92c6f9f6df {type JOBOBJECTBASICACCOUNTINGINFORMATION_eaeb551d8887 as JOBOBJECTBASICACCOUNTINGINFORMATION}
+
+pub using @b1823e92c6f9f6df {type JOBOBJECTBASICANDIOACCOUNTINGINFORMATION_d55f2a302627 as JOBOBJECTBASICANDIOACCOUNTINGINFORMATION}
+
+pub using @b1823e92c6f9f6df {type JOBOBJECTBASICLIMITINFORMATION_dc5a3c5da1fe as JOBOBJECTBASICLIMITINFORMATION}
+
+pub using @b1823e92c6f9f6df {type JOBOBJECTBASICPROCESSIDLIST_16f81715476c as JOBOBJECTBASICPROCESSIDLIST}
+
+pub using @b1823e92c6f9f6df {type JOBOBJECTBASICUIRESTRICTIONS_1383d03be1de as JOBOBJECTBASICUIRESTRICTIONS}
+
+pub using @b1823e92c6f9f6df {type JOBOBJECTCPURATECONTROL_9008720f8720 as JOBOBJECTCPURATECONTROL}
+
+pub using @b1823e92c6f9f6df {type JOBOBJECTCPURATECONTROLINFORMATION_25553138e36f as JOBOBJECTCPURATECONTROLINFORMATION}
+
+pub using @b1823e92c6f9f6df {type JOBOBJECTCPURATECONTROLINFORMATIONAnonymousEUnion_dfbe0e8b288f as JOBOBJECTCPURATECONTROLINFORMATIONAnonymousEUnion}
+
+pub using @b1823e92c6f9f6df {type JOBOBJECTCPURATECONTROLINFORMATIONAnonymousEUnionAnonymousEStruct_f4531f8b65a9 as JOBOBJECTCPURATECONTROLINFORMATIONAnonymousEUnionAnonymousEStruct}
+
+pub using @b1823e92c6f9f6df {type JOBOBJECTENDOFJOBTIMEINFORMATION_2c0666f64cd0 as JOBOBJECTENDOFJOBTIMEINFORMATION}
+
+pub using @b1823e92c6f9f6df {type JOBOBJECTEXTENDEDLIMITINFORMATION_3400fd6222a2 as JOBOBJECTEXTENDEDLIMITINFORMATION}
+
+pub using @b1823e92c6f9f6df {type JOBOBJECTINFOCLASS_51d0708a064a as JOBOBJECTINFOCLASS}
+
+pub using @b1823e92c6f9f6df {type JOBOBJECTIOATTRIBUTIONCONTROLFLAGS_331198cba4f4 as JOBOBJECTIOATTRIBUTIONCONTROLFLAGS}
+
+pub using @b1823e92c6f9f6df {type JOBOBJECTIOATTRIBUTIONINFORMATION_ac8489cf25c8 as JOBOBJECTIOATTRIBUTIONINFORMATION}
+
+pub using @b1823e92c6f9f6df {type JOBOBJECTIOATTRIBUTIONSTATS_fe45d00cb667 as JOBOBJECTIOATTRIBUTIONSTATS}
+
+pub using @b1823e92c6f9f6df {type JOBOBJECTIORATECONTROLFLAGS_1e03b68154b2 as JOBOBJECTIORATECONTROLFLAGS}
+
+pub using @b1823e92c6f9f6df {type JOBOBJECTIORATECONTROLINFORMATION_d887bed277f0 as JOBOBJECTIORATECONTROLINFORMATION}
+
+pub using @b1823e92c6f9f6df {type JOBOBJECTIORATECONTROLINFORMATIONNATIVEV1_0d7b058bf47f as JOBOBJECTIORATECONTROLINFORMATIONNATIVEV1}
+
+pub using @b1823e92c6f9f6df {type JOBOBJECTIORATECONTROLINFORMATIONNATIVEV2_284ce9e48f31 as JOBOBJECTIORATECONTROLINFORMATIONNATIVEV2}
+
+pub using @b1823e92c6f9f6df {type JOBOBJECTIORATECONTROLINFORMATIONNATIVEV3_16f15872b9fb as JOBOBJECTIORATECONTROLINFORMATIONNATIVEV3}
+
+pub using @b1823e92c6f9f6df {type JOBOBJECTJOBSETINFORMATION_2306d92d745b as JOBOBJECTJOBSETINFORMATION}
+
+pub using @b1823e92c6f9f6df {type JOBOBJECTLIMIT_0afb05001175 as JOBOBJECTLIMIT}
+
+pub using @b1823e92c6f9f6df {type JOBOBJECTLIMITVIOLATIONINFORMATION_eae5c333d48f as JOBOBJECTLIMITVIOLATIONINFORMATION}
+
+pub using @b1823e92c6f9f6df {type JOBOBJECTLIMITVIOLATIONINFORMATION2_3daefa1e92e7 as JOBOBJECTLIMITVIOLATIONINFORMATION2}
+
+pub using @b1823e92c6f9f6df {type JOBOBJECTLIMITVIOLATIONINFORMATION2Anonymous1EUnion_1ad130d3de41 as JOBOBJECTLIMITVIOLATIONINFORMATION2Anonymous1EUnion}
+
+pub using @b1823e92c6f9f6df {type JOBOBJECTLIMITVIOLATIONINFORMATION2Anonymous2EUnion_b06abb185385 as JOBOBJECTLIMITVIOLATIONINFORMATION2Anonymous2EUnion}
+
+pub using @b1823e92c6f9f6df {type JOBOBJECTLIMITVIOLATIONINFORMATION2Anonymous3EUnion_4f51bca963f5 as JOBOBJECTLIMITVIOLATIONINFORMATION2Anonymous3EUnion}
+
+pub using @b1823e92c6f9f6df {type JOBOBJECTNETRATECONTROLFLAGS_a4366e50f3d1 as JOBOBJECTNETRATECONTROLFLAGS}
+
+pub using @b1823e92c6f9f6df {type JOBOBJECTNETRATECONTROLINFORMATION_aef6bd7482f6 as JOBOBJECTNETRATECONTROLINFORMATION}
+
+pub using @b1823e92c6f9f6df {type JOBOBJECTNOTIFICATIONLIMITINFORMATION_c1d28117499a as JOBOBJECTNOTIFICATIONLIMITINFORMATION}
+
+pub using @b1823e92c6f9f6df {type JOBOBJECTNOTIFICATIONLIMITINFORMATION2_8f7771914a43 as JOBOBJECTNOTIFICATIONLIMITINFORMATION2}
+
+pub using @b1823e92c6f9f6df {type JOBOBJECTNOTIFICATIONLIMITINFORMATION2Anonymous1EUnion_c36dbc853a0a as JOBOBJECTNOTIFICATIONLIMITINFORMATION2Anonymous1EUnion}
+
+pub using @b1823e92c6f9f6df {type JOBOBJECTNOTIFICATIONLIMITINFORMATION2Anonymous2EUnion_95e5b9efd20a as JOBOBJECTNOTIFICATIONLIMITINFORMATION2Anonymous2EUnion}
+
+pub using @b1823e92c6f9f6df {type JOBOBJECTNOTIFICATIONLIMITINFORMATION2Anonymous3EUnion_b0edcfe15a26 as JOBOBJECTNOTIFICATIONLIMITINFORMATION2Anonymous3EUnion}
+
+pub using @b1823e92c6f9f6df {type JOBOBJECTRATECONTROLTOLERANCE_2e806e9c3a35 as JOBOBJECTRATECONTROLTOLERANCE}
+
+pub using @b1823e92c6f9f6df {type JOBOBJECTRATECONTROLTOLERANCEINTERVAL_0c65f5b6ae03 as JOBOBJECTRATECONTROLTOLERANCEINTERVAL}
+
+pub using @b1823e92c6f9f6df {type JOBOBJECTSECURITY_e5f11403be94 as JOBOBJECTSECURITY}
+
+pub using @b1823e92c6f9f6df {type JOBOBJECTSECURITYLIMITINFORMATION_a46c945c59ed as JOBOBJECTSECURITYLIMITINFORMATION}
+
+pub using @b1823e92c6f9f6df {type JOBOBJECTTERMINATEATENDACTION_cf83ee1f51bf as JOBOBJECTTERMINATEATENDACTION}
+
+pub using @b1823e92c6f9f6df {type JOBOBJECTUILIMIT_941907e13e3d as JOBOBJECTUILIMIT}
+
+pub using @b1823e92c6f9f6df {type JOBSETARRAY_8dc2a6a9d013 as JOBSETARRAY}
+
+// Traits

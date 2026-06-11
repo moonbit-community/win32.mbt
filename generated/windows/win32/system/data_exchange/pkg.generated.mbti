@@ -1,0 +1,533 @@
+// Generated using `moon info`, DON'T EDIT IT
+package "moonbit-community/win32api/windows/win32/system/data_exchange"
+
+import {
+  "moonbit-community/win32api/runtime/core",
+  "moonbit-community/win32api/runtime/strings",
+  "moonbit-community/win32api/scc/cc6631776d7e2373",
+  "moonbit-community/win32api/scc/d0fe08ef9023163b",
+}
+
+// Values
+pub fn add_atom_a(@strings.PStr?) -> UInt16 raise @core.WindowsError
+
+pub fn add_atom_a_raw(@core.RawAddress) -> @core.RawWin32Call[UInt]
+
+pub fn add_atom_w(@strings.PWStr?) -> UInt16 raise @core.WindowsError
+
+pub fn add_atom_w_raw(@core.RawAddress) -> @core.RawWin32Call[UInt]
+
+pub fn add_clipboard_format_listener(@core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn add_clipboard_format_listener_raw(@core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub let appclass_mask : Int
+
+pub let appcmd_mask : Int
+
+pub let cadv_lateack : UInt
+
+pub fn change_clipboard_chain(@core.RawAddress, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn change_clipboard_chain_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn close_clipboard() -> Bool raise @core.WindowsError
+
+pub fn close_clipboard_raw() -> @core.RawWin32Call[Int]
+
+pub fn count_clipboard_formats() -> Int raise @core.WindowsError
+
+pub fn count_clipboard_formats_raw() -> @core.RawWin32Call[Int]
+
+pub let cp_winansi : Int
+
+pub let cp_winneutral : Int
+
+pub let cp_winunicode : Int
+
+pub fn dde_abandon_transaction(UInt, @core.RawAddress, UInt) -> Bool raise @core.WindowsError
+
+pub fn dde_abandon_transaction_raw(UInt, @core.RawAddress, UInt) -> Int
+
+pub fn dde_access_data(@core.RawAddress, @core.RawAddress) -> @core.RawAddress raise @core.WindowsError
+
+pub fn dde_access_data_raw(@core.RawAddress, @core.RawAddress) -> @core.RawAddress
+
+pub fn dde_add_data(@core.RawAddress, @core.RawAddress, UInt, UInt) -> @core.RawAddress raise @core.WindowsError
+
+pub fn dde_add_data_raw(@core.RawAddress, @core.RawAddress, UInt, UInt) -> @core.RawAddress
+
+pub fn dde_client_transaction(@core.RawAddress, UInt, @core.RawAddress, @core.RawAddress, UInt, @d0fe08ef9023163b.DDECLIENTTRANSACTIONTYPE_d284e2a72c5b, UInt, @core.RawAddress) -> @core.RawAddress raise @core.WindowsError
+
+pub fn dde_client_transaction_raw(@core.RawAddress, UInt, @core.RawAddress, @core.RawAddress, UInt, UInt, UInt, @core.RawAddress) -> @core.RawAddress
+
+pub fn dde_cmp_string_handles(@core.RawAddress, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn dde_cmp_string_handles_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn dde_connect(UInt, @core.RawAddress, @core.RawAddress, @d0fe08ef9023163b.CONVCONTEXT_da893e342b4b?) -> @core.RawAddress raise @core.WindowsError
+
+pub fn dde_connect_list(UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress, @d0fe08ef9023163b.CONVCONTEXT_da893e342b4b?) -> @core.RawAddress raise @core.WindowsError
+
+pub fn dde_connect_list_raw(UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> @core.RawAddress
+
+pub fn dde_connect_raw(UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> @core.RawAddress
+
+pub fn dde_create_data_handle(UInt, @core.RawAddress, UInt, UInt, @core.RawAddress, UInt, UInt) -> @core.RawAddress raise @core.WindowsError
+
+pub fn dde_create_data_handle_raw(UInt, @core.RawAddress, UInt, UInt, @core.RawAddress, UInt, UInt) -> @core.RawAddress
+
+pub fn dde_create_string_handle_a(UInt, @strings.PStr, Int) -> @core.RawAddress raise @core.WindowsError
+
+pub fn dde_create_string_handle_a_raw(UInt, @core.RawAddress, Int) -> @core.RawAddress
+
+pub fn dde_create_string_handle_w(UInt, @strings.PWStr, Int) -> @core.RawAddress raise @core.WindowsError
+
+pub fn dde_create_string_handle_w_raw(UInt, @core.RawAddress, Int) -> @core.RawAddress
+
+pub fn dde_disconnect(@core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn dde_disconnect_list(@core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn dde_disconnect_list_raw(@core.RawAddress) -> Int
+
+pub fn dde_disconnect_raw(@core.RawAddress) -> Int
+
+pub fn dde_enable_callback(UInt, @core.RawAddress, @d0fe08ef9023163b.DDEENABLECALLBACKCMD_dab695ff3e91) -> Bool raise @core.WindowsError
+
+pub fn dde_enable_callback_raw(UInt, @core.RawAddress, UInt) -> Int
+
+pub let dde_fack : UInt
+
+pub let dde_fackreq : UInt
+
+pub let dde_fappstatus : UInt
+
+pub let dde_fbusy : UInt
+
+pub let dde_fdeferupd : UInt
+
+pub let dde_fnotprocessed : UInt
+
+pub fn dde_free_data_handle(@core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn dde_free_data_handle_raw(@core.RawAddress) -> Int
+
+pub fn dde_free_string_handle(UInt, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn dde_free_string_handle_raw(UInt, @core.RawAddress) -> Int
+
+pub let dde_frelease : UInt
+
+pub let dde_frequested : UInt
+
+pub fn dde_get_data(@core.RawAddress, @core.RawAddress, UInt, UInt) -> UInt raise @core.WindowsError
+
+pub fn dde_get_data_raw(@core.RawAddress, @core.RawAddress, UInt, UInt) -> UInt
+
+pub fn dde_get_last_error(UInt) -> UInt raise @core.WindowsError
+
+pub fn dde_get_last_error_raw(UInt) -> UInt
+
+pub fn dde_impersonate_client(@core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn dde_impersonate_client_raw(@core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn dde_initialize_a(@core.RawAddress, @core.RawAddress, @d0fe08ef9023163b.DDEINITIALIZECOMMAND_315116156aa2, UInt) -> UInt raise @core.WindowsError
+
+pub fn dde_initialize_a_raw(@core.RawAddress, @core.RawAddress, UInt, UInt) -> UInt
+
+pub fn dde_initialize_w(@core.RawAddress, @core.RawAddress, @d0fe08ef9023163b.DDEINITIALIZECOMMAND_315116156aa2, UInt) -> UInt raise @core.WindowsError
+
+pub fn dde_initialize_w_raw(@core.RawAddress, @core.RawAddress, UInt, UInt) -> UInt
+
+pub fn dde_keep_string_handle(UInt, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn dde_keep_string_handle_raw(UInt, @core.RawAddress) -> Int
+
+pub fn dde_name_service(UInt, @core.RawAddress, @core.RawAddress, @d0fe08ef9023163b.DDENAMESERVICECMD_86d41472b221) -> @core.RawAddress raise @core.WindowsError
+
+pub fn dde_name_service_raw(UInt, @core.RawAddress, @core.RawAddress, UInt) -> @core.RawAddress
+
+pub fn dde_post_advise(UInt, @core.RawAddress, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn dde_post_advise_raw(UInt, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn dde_query_conv_info(@core.RawAddress, UInt, @d0fe08ef9023163b.CONVINFO_011a4d4e5f50) -> UInt raise @core.WindowsError
+
+pub fn dde_query_conv_info_raw(@core.RawAddress, UInt, @core.RawAddress) -> UInt
+
+pub fn dde_query_next_server(@core.RawAddress, @core.RawAddress) -> @core.RawAddress raise @core.WindowsError
+
+pub fn dde_query_next_server_raw(@core.RawAddress, @core.RawAddress) -> @core.RawAddress
+
+pub fn dde_query_string_a(UInt, @core.RawAddress, @core.RawAddress, UInt, Int) -> UInt raise @core.WindowsError
+
+pub fn dde_query_string_a_raw(UInt, @core.RawAddress, @core.RawAddress, UInt, Int) -> UInt
+
+pub fn dde_query_string_w(UInt, @core.RawAddress, @strings.PWStrBuffer?, Int) -> UInt raise @core.WindowsError
+
+pub fn dde_query_string_w_raw(UInt, @core.RawAddress, @core.RawAddress, UInt, Int) -> UInt
+
+pub fn dde_reconnect(@core.RawAddress) -> @core.RawAddress raise @core.WindowsError
+
+pub fn dde_reconnect_raw(@core.RawAddress) -> @core.RawAddress
+
+pub fn dde_set_quality_of_service(@core.RawAddress, @cc6631776d7e2373.SECURITYQUALITYOFSERVICE_272def2c0e33, @cc6631776d7e2373.SECURITYQUALITYOFSERVICE_272def2c0e33) -> Bool raise @core.WindowsError
+
+pub fn dde_set_quality_of_service_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn dde_set_user_handle(@core.RawAddress, UInt, UInt64) -> Bool raise @core.WindowsError
+
+pub fn dde_set_user_handle_raw(@core.RawAddress, UInt, UInt64) -> Int
+
+pub fn dde_unaccess_data(@core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn dde_unaccess_data_raw(@core.RawAddress) -> Int
+
+pub fn dde_uninitialize(UInt) -> Bool raise @core.WindowsError
+
+pub fn dde_uninitialize_raw(UInt) -> Int
+
+pub fn delete_atom(UInt16) -> UInt16 raise @core.WindowsError
+
+pub fn delete_atom_raw(UInt) -> @core.RawWin32Call[UInt]
+
+pub let dmlerr_advacktimeout : UInt
+
+pub let dmlerr_busy : UInt
+
+pub let dmlerr_dataacktimeout : UInt
+
+pub let dmlerr_dll_not_initialized : UInt
+
+pub let dmlerr_dll_usage : UInt
+
+pub let dmlerr_execacktimeout : UInt
+
+pub let dmlerr_first : UInt
+
+pub let dmlerr_invalidparameter : UInt
+
+pub let dmlerr_last : UInt
+
+pub let dmlerr_low_memory : UInt
+
+pub let dmlerr_memory_error : UInt
+
+pub let dmlerr_no_conv_established : UInt
+
+pub let dmlerr_no_error : UInt
+
+pub let dmlerr_notprocessed : UInt
+
+pub let dmlerr_pokeacktimeout : UInt
+
+pub let dmlerr_postmsg_failed : UInt
+
+pub let dmlerr_reentrancy : UInt
+
+pub let dmlerr_server_died : UInt
+
+pub let dmlerr_sys_error : UInt
+
+pub let dmlerr_unadvacktimeout : UInt
+
+pub let dmlerr_unfound_queue_id : UInt
+
+pub fn empty_clipboard() -> Bool raise @core.WindowsError
+
+pub fn empty_clipboard_raw() -> @core.RawWin32Call[Int]
+
+pub fn enum_clipboard_formats(UInt) -> UInt raise @core.WindowsError
+
+pub fn enum_clipboard_formats_raw(UInt) -> @core.RawWin32Call[UInt]
+
+pub fn find_atom_a(@strings.PStr?) -> UInt16 raise @core.WindowsError
+
+pub fn find_atom_a_raw(@core.RawAddress) -> @core.RawWin32Call[UInt]
+
+pub fn find_atom_w(@strings.PWStr?) -> UInt16 raise @core.WindowsError
+
+pub fn find_atom_w_raw(@core.RawAddress) -> @core.RawWin32Call[UInt]
+
+pub fn free_dd_el_param(UInt, Int64) -> Bool raise @core.WindowsError
+
+pub fn free_dd_el_param_raw(UInt, Int64) -> Int
+
+pub fn get_atom_name_a(UInt16, @core.RawAddress, Int) -> UInt raise @core.WindowsError
+
+pub fn get_atom_name_a_raw(UInt, @core.RawAddress, Int) -> @core.RawWin32Call[UInt]
+
+pub fn get_atom_name_w(UInt16, @strings.PWStrBuffer) -> UInt raise @core.WindowsError
+
+pub fn get_atom_name_w_raw(UInt, @core.RawAddress, Int) -> @core.RawWin32Call[UInt]
+
+pub fn get_clipboard_data(UInt) -> @core.RawAddress raise @core.WindowsError
+
+pub fn get_clipboard_data_raw(UInt) -> @core.RawWin32Call[@core.RawAddress]
+
+pub fn get_clipboard_format_name_a(UInt, @core.RawAddress, Int) -> Int raise @core.WindowsError
+
+pub fn get_clipboard_format_name_a_raw(UInt, @core.RawAddress, Int) -> @core.RawWin32Call[Int]
+
+pub fn get_clipboard_format_name_w(UInt, @strings.PWStrBuffer) -> Int raise @core.WindowsError
+
+pub fn get_clipboard_format_name_w_raw(UInt, @core.RawAddress, Int) -> @core.RawWin32Call[Int]
+
+pub fn get_clipboard_owner() -> @core.RawAddress raise @core.WindowsError
+
+pub fn get_clipboard_owner_raw() -> @core.RawWin32Call[@core.RawAddress]
+
+pub fn get_clipboard_sequence_number() -> UInt raise @core.WindowsError
+
+pub fn get_clipboard_sequence_number_raw() -> UInt
+
+pub fn get_clipboard_viewer() -> @core.RawAddress raise @core.WindowsError
+
+pub fn get_clipboard_viewer_raw() -> @core.RawWin32Call[@core.RawAddress]
+
+pub fn get_open_clipboard_window() -> @core.RawAddress raise @core.WindowsError
+
+pub fn get_open_clipboard_window_raw() -> @core.RawWin32Call[@core.RawAddress]
+
+pub fn get_priority_clipboard_format(@core.RawAddress, Int) -> Int raise @core.WindowsError
+
+pub fn get_priority_clipboard_format_raw(@core.RawAddress, Int) -> @core.RawWin32Call[Int]
+
+pub fn get_updated_clipboard_formats(@core.RawAddress, UInt, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn get_updated_clipboard_formats_raw(@core.RawAddress, UInt, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn global_add_atom_a(@strings.PStr?) -> UInt16 raise @core.WindowsError
+
+pub fn global_add_atom_a_raw(@core.RawAddress) -> @core.RawWin32Call[UInt]
+
+pub fn global_add_atom_ex_a(@strings.PStr?, UInt) -> UInt16 raise @core.WindowsError
+
+pub fn global_add_atom_ex_a_raw(@core.RawAddress, UInt) -> @core.RawWin32Call[UInt]
+
+pub fn global_add_atom_ex_w(@strings.PWStr?, UInt) -> UInt16 raise @core.WindowsError
+
+pub fn global_add_atom_ex_w_raw(@core.RawAddress, UInt) -> @core.RawWin32Call[UInt]
+
+pub fn global_add_atom_w(@strings.PWStr?) -> UInt16 raise @core.WindowsError
+
+pub fn global_add_atom_w_raw(@core.RawAddress) -> @core.RawWin32Call[UInt]
+
+pub fn global_delete_atom(UInt16) -> UInt16 raise @core.WindowsError
+
+pub fn global_delete_atom_raw(UInt) -> @core.RawWin32Call[UInt]
+
+pub fn global_find_atom_a(@strings.PStr?) -> UInt16 raise @core.WindowsError
+
+pub fn global_find_atom_a_raw(@core.RawAddress) -> @core.RawWin32Call[UInt]
+
+pub fn global_find_atom_w(@strings.PWStr?) -> UInt16 raise @core.WindowsError
+
+pub fn global_find_atom_w_raw(@core.RawAddress) -> @core.RawWin32Call[UInt]
+
+pub fn global_get_atom_name_a(UInt16, @core.RawAddress, Int) -> UInt raise @core.WindowsError
+
+pub fn global_get_atom_name_a_raw(UInt, @core.RawAddress, Int) -> @core.RawWin32Call[UInt]
+
+pub fn global_get_atom_name_w(UInt16, @strings.PWStrBuffer) -> UInt raise @core.WindowsError
+
+pub fn global_get_atom_name_w_raw(UInt, @core.RawAddress, Int) -> @core.RawWin32Call[UInt]
+
+pub let hdata_appowned : UInt
+
+pub fn impersonate_dde_client_window(@core.RawAddress, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn impersonate_dde_client_window_raw(@core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn init_atom_table(UInt) -> Bool raise @core.WindowsError
+
+pub fn init_atom_table_raw(UInt) -> Int
+
+pub fn is_clipboard_format_available(UInt) -> Bool raise @core.WindowsError
+
+pub fn is_clipboard_format_available_raw(UInt) -> @core.RawWin32Call[Int]
+
+pub let max_monitors : UInt
+
+pub let mf_mask : UInt
+
+pub let mh_cleanup : UInt
+
+pub let mh_create : UInt
+
+pub let mh_delete : UInt
+
+pub let mh_keep : UInt
+
+pub let msgf_ddemgr : UInt
+
+pub fn open_clipboard(@core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn open_clipboard_raw(@core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn pack_dd_el_param(UInt, UInt64, UInt64) -> Int64 raise @core.WindowsError
+
+pub fn pack_dd_el_param_raw(UInt, UInt64, UInt64) -> Int64
+
+pub let qid_sync : UInt
+
+pub fn register_clipboard_format_a(@strings.PStr) -> UInt raise @core.WindowsError
+
+pub fn register_clipboard_format_a_raw(@core.RawAddress) -> @core.RawWin32Call[UInt]
+
+pub fn register_clipboard_format_w(@strings.PWStr) -> UInt raise @core.WindowsError
+
+pub fn register_clipboard_format_w_raw(@core.RawAddress) -> @core.RawWin32Call[UInt]
+
+pub fn remove_clipboard_format_listener(@core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn remove_clipboard_format_listener_raw(@core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn reuse_dd_el_param(Int64, UInt, UInt, UInt64, UInt64) -> Int64 raise @core.WindowsError
+
+pub fn reuse_dd_el_param_raw(Int64, UInt, UInt, UInt64, UInt64) -> Int64
+
+pub fn set_clipboard_data(UInt, @core.RawAddress) -> @core.RawAddress raise @core.WindowsError
+
+pub fn set_clipboard_data_raw(UInt, @core.RawAddress) -> @core.RawWin32Call[@core.RawAddress]
+
+pub fn set_clipboard_viewer(@core.RawAddress) -> @core.RawAddress raise @core.WindowsError
+
+pub fn set_clipboard_viewer_raw(@core.RawAddress) -> @core.RawWin32Call[@core.RawAddress]
+
+pub fn set_win_meta_file_bits(UInt, @core.RawAddress, @core.RawAddress, @d0fe08ef9023163b.METAFILEPICT_dbce6b1798d7?) -> @core.RawAddress raise @core.WindowsError
+
+pub fn set_win_meta_file_bits_raw(UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> @core.RawAddress
+
+pub let szdde_item_itemlist : String
+
+pub let szddesys_item_formats : String
+
+pub let szddesys_item_help : String
+
+pub let szddesys_item_rtnmsg : String
+
+pub let szddesys_item_status : String
+
+pub let szddesys_item_sysitems : String
+
+pub let szddesys_item_topics : String
+
+pub let szddesys_topic : String
+
+pub let timeout_async : UInt
+
+pub fn unpack_dd_el_param(UInt, Int64, @core.RawAddress, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn unpack_dd_el_param_raw(UInt, Int64, @core.RawAddress, @core.RawAddress) -> Int
+
+pub let wm_dde_ack : UInt
+
+pub let wm_dde_advise : UInt
+
+pub let wm_dde_data : UInt
+
+pub let wm_dde_execute : UInt
+
+pub let wm_dde_first : UInt
+
+pub let wm_dde_initiate : UInt
+
+pub let wm_dde_last : UInt
+
+pub let wm_dde_poke : UInt
+
+pub let wm_dde_request : UInt
+
+pub let wm_dde_terminate : UInt
+
+pub let wm_dde_unadvise : UInt
+
+pub let xclass_bool : UInt
+
+pub let xclass_data : UInt
+
+pub let xclass_flags : UInt
+
+pub let xclass_mask : UInt
+
+pub let xclass_notification : UInt
+
+pub let xtyp_mask : UInt
+
+pub let xtyp_shift : UInt
+
+pub let xtypf_ackreq : UInt
+
+pub let xtypf_noblock : UInt
+
+pub let xtypf_nodata : UInt
+
+// Errors
+
+// Types and methods
+
+// Type aliases
+pub using @d0fe08ef9023163b {type CONVCONTEXT_da893e342b4b as CONVCONTEXT}
+
+pub using @d0fe08ef9023163b {type CONVINFO_011a4d4e5f50 as CONVINFO}
+
+pub using @d0fe08ef9023163b {type CONVINFOCONVERSATIONSTATE_2e3081b6911c as CONVINFOCONVERSATIONSTATE}
+
+pub using @d0fe08ef9023163b {type CONVINFOSTATUS_53ebea93ad14 as CONVINFOSTATUS}
+
+pub using @d0fe08ef9023163b {type COPYDATASTRUCT_078192b97c43 as COPYDATASTRUCT}
+
+pub using @d0fe08ef9023163b {type DDEACK_03a984d4e3ee as DDEACK}
+
+pub using @d0fe08ef9023163b {type DDEADVISE_00854414d488 as DDEADVISE}
+
+pub using @d0fe08ef9023163b {type DDECLIENTTRANSACTIONTYPE_d284e2a72c5b as DDECLIENTTRANSACTIONTYPE}
+
+pub using @d0fe08ef9023163b {type DDEDATA_d927951914b7 as DDEDATA}
+
+pub using @d0fe08ef9023163b {type DDEENABLECALLBACKCMD_dab695ff3e91 as DDEENABLECALLBACKCMD}
+
+pub using @d0fe08ef9023163b {type DDEINITIALIZECOMMAND_315116156aa2 as DDEINITIALIZECOMMAND}
+
+pub using @d0fe08ef9023163b {type DDELN_a8f17801ac96 as DDELN}
+
+pub using @d0fe08ef9023163b {type DDEMLMSGHOOKDATA_e475db9f11d3 as DDEMLMSGHOOKDATA}
+
+pub using @d0fe08ef9023163b {type DDENAMESERVICECMD_86d41472b221 as DDENAMESERVICECMD}
+
+pub using @d0fe08ef9023163b {type DDEPOKE_e96f27cc4a13 as DDEPOKE}
+
+pub using @d0fe08ef9023163b {type DDEUP_26f90ff5fafa as DDEUP}
+
+pub using @d0fe08ef9023163b {type HCONV_75856ffd8b5e as HCONV}
+
+pub using @d0fe08ef9023163b {type HCONVLIST_ceed8a3e0410 as HCONVLIST}
+
+pub using @d0fe08ef9023163b {type HDDEDATA_5143ebc81f2b as HDDEDATA}
+
+pub using @d0fe08ef9023163b {type HSZ_027705c4c28d as HSZ}
+
+pub using @d0fe08ef9023163b {type HSZPAIR_b23cff9a49df as HSZPAIR}
+
+pub using @d0fe08ef9023163b {type METAFILEPICT_dbce6b1798d7 as METAFILEPICT}
+
+pub using @d0fe08ef9023163b {type MONCBSTRUCT_e4047c013bb8 as MONCBSTRUCT}
+
+pub using @d0fe08ef9023163b {type MONCONVSTRUCT_539b2e6c8ed2 as MONCONVSTRUCT}
+
+pub using @d0fe08ef9023163b {type MONERRSTRUCT_35f77111819d as MONERRSTRUCT}
+
+pub using @d0fe08ef9023163b {type MONHSZSTRUCTA_89c74a82f30e as MONHSZSTRUCTA}
+
+pub using @d0fe08ef9023163b {type MONHSZSTRUCTW_88997d113b60 as MONHSZSTRUCTW}
+
+pub using @d0fe08ef9023163b {type MONLINKSTRUCT_223d9e7b2b4b as MONLINKSTRUCT}
+
+pub using @d0fe08ef9023163b {type MONMSGSTRUCT_969e97937cde as MONMSGSTRUCT}
+
+pub using @d0fe08ef9023163b {type PFNCALLBACK_1021f1e524f8 as PFNCALLBACK}
+
+// Traits

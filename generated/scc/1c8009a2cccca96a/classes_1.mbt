@@ -1,0 +1,4766 @@
+///|
+pub fn DEBUGFLRPARAMTYPE_d6cb59864219::debug_flr_process_object() -> DEBUGFLRPARAMTYPE_d6cb59864219 {
+  DEBUGFLRPARAMTYPE_d6cb59864219::from_int(8)
+}
+
+///|
+pub fn DEBUGFLRPARAMTYPE_d6cb59864219::debug_flr_process_productname() -> DEBUGFLRPARAMTYPE_d6cb59864219 {
+  DEBUGFLRPARAMTYPE_d6cb59864219::from_int(65575)
+}
+
+///|
+pub fn DEBUGFLRPARAMTYPE_d6cb59864219::debug_flr_raised_irql_user_fault() -> DEBUGFLRPARAMTYPE_d6cb59864219 {
+  DEBUGFLRPARAMTYPE_d6cb59864219::from_int(8220)
+}
+
+///|
+pub fn DEBUGFLRPARAMTYPE_d6cb59864219::debug_flr_read_address() -> DEBUGFLRPARAMTYPE_d6cb59864219 {
+  DEBUGFLRPARAMTYPE_d6cb59864219::from_int(14)
+}
+
+///|
+pub fn DEBUGFLRPARAMTYPE_d6cb59864219::debug_flr_recurring_stack() -> DEBUGFLRPARAMTYPE_d6cb59864219 {
+  DEBUGFLRPARAMTYPE_d6cb59864219::from_int(12296)
+}
+
+///|
+pub fn DEBUGFLRPARAMTYPE_d6cb59864219::debug_flr_registrytxt_source() -> DEBUGFLRPARAMTYPE_d6cb59864219 {
+  DEBUGFLRPARAMTYPE_d6cb59864219::from_int(65584)
+}
+
+///|
+pub fn DEBUGFLRPARAMTYPE_d6cb59864219::debug_flr_registrytxt_stress_id() -> DEBUGFLRPARAMTYPE_d6cb59864219 {
+  DEBUGFLRPARAMTYPE_d6cb59864219::from_int(12307)
+}
+
+///|
+pub fn DEBUGFLRPARAMTYPE_d6cb59864219::debug_flr_registry_data() -> DEBUGFLRPARAMTYPE_d6cb59864219 {
+  DEBUGFLRPARAMTYPE_d6cb59864219::from_int(3145728)
+}
+
+///|
+pub fn DEBUGFLRPARAMTYPE_d6cb59864219::debug_flr_report_info_creation_time() -> DEBUGFLRPARAMTYPE_d6cb59864219 {
+  DEBUGFLRPARAMTYPE_d6cb59864219::from_int(1879048229)
+}
+
+///|
+pub fn DEBUGFLRPARAMTYPE_d6cb59864219::debug_flr_report_info_guid() -> DEBUGFLRPARAMTYPE_d6cb59864219 {
+  DEBUGFLRPARAMTYPE_d6cb59864219::from_int(1879048227)
+}
+
+///|
+pub fn DEBUGFLRPARAMTYPE_d6cb59864219::debug_flr_report_info_source() -> DEBUGFLRPARAMTYPE_d6cb59864219 {
+  DEBUGFLRPARAMTYPE_d6cb59864219::from_int(1879048228)
+}
+
+///|
+pub fn DEBUGFLRPARAMTYPE_d6cb59864219::debug_flr_requested_irql() -> DEBUGFLRPARAMTYPE_d6cb59864219 {
+  DEBUGFLRPARAMTYPE_d6cb59864219::from_int(514)
+}
+
+///|
+pub fn DEBUGFLRPARAMTYPE_d6cb59864219::debug_flr_reserved() -> DEBUGFLRPARAMTYPE_d6cb59864219 {
+  DEBUGFLRPARAMTYPE_d6cb59864219::from_int(1)
+}
+
+///|
+pub fn DEBUGFLRPARAMTYPE_d6cb59864219::debug_flr_resource_call_type() -> DEBUGFLRPARAMTYPE_d6cb59864219 {
+  DEBUGFLRPARAMTYPE_d6cb59864219::from_int(4352)
+}
+
+///|
+pub fn DEBUGFLRPARAMTYPE_d6cb59864219::debug_flr_resource_call_type_str() -> DEBUGFLRPARAMTYPE_d6cb59864219 {
+  DEBUGFLRPARAMTYPE_d6cb59864219::from_int(4353)
+}
+
+///|
+pub fn DEBUGFLRPARAMTYPE_d6cb59864219::debug_flr_scm() -> DEBUGFLRPARAMTYPE_d6cb59864219 {
+  DEBUGFLRPARAMTYPE_d6cb59864219::from_int(20992)
+}
+
+///|
+pub fn DEBUGFLRPARAMTYPE_d6cb59864219::debug_flr_scm_blackbox() -> DEBUGFLRPARAMTYPE_d6cb59864219 {
+  DEBUGFLRPARAMTYPE_d6cb59864219::from_int(21232)
+}
+
+///|
+pub fn DEBUGFLRPARAMTYPE_d6cb59864219::debug_flr_scm_blackbox_entry() -> DEBUGFLRPARAMTYPE_d6cb59864219 {
+  DEBUGFLRPARAMTYPE_d6cb59864219::from_int(21233)
+}
+
+///|
+pub fn DEBUGFLRPARAMTYPE_d6cb59864219::debug_flr_scm_blackbox_entry_controlcode() -> DEBUGFLRPARAMTYPE_d6cb59864219 {
+  DEBUGFLRPARAMTYPE_d6cb59864219::from_int(21234)
+}
+
+///|
+pub fn DEBUGFLRPARAMTYPE_d6cb59864219::debug_flr_scm_blackbox_entry_servicename() -> DEBUGFLRPARAMTYPE_d6cb59864219 {
+  DEBUGFLRPARAMTYPE_d6cb59864219::from_int(21236)
+}
+
+///|
+pub fn DEBUGFLRPARAMTYPE_d6cb59864219::debug_flr_scm_blackbox_entry_starttime() -> DEBUGFLRPARAMTYPE_d6cb59864219 {
+  DEBUGFLRPARAMTYPE_d6cb59864219::from_int(21235)
+}
+
+///|
+pub fn DEBUGFLRPARAMTYPE_d6cb59864219::debug_flr_search_hang() -> DEBUGFLRPARAMTYPE_d6cb59864219 {
+  DEBUGFLRPARAMTYPE_d6cb59864219::from_int(1048614)
+}
+
+///|
+pub fn DEBUGFLRPARAMTYPE_d6cb59864219::debug_flr_security_cookies() -> DEBUGFLRPARAMTYPE_d6cb59864219 {
+  DEBUGFLRPARAMTYPE_d6cb59864219::from_int(4105)
+}
+
+///|
+pub fn DEBUGFLRPARAMTYPE_d6cb59864219::debug_flr_service() -> DEBUGFLRPARAMTYPE_d6cb59864219 {
+  DEBUGFLRPARAMTYPE_d6cb59864219::from_int(20480)
+}
+
+///|
+pub fn DEBUGFLRPARAMTYPE_d6cb59864219::debug_flr_servicetable_modified() -> DEBUGFLRPARAMTYPE_d6cb59864219 {
+  DEBUGFLRPARAMTYPE_d6cb59864219::from_int(12371)
+}
+
+///|
+pub fn DEBUGFLRPARAMTYPE_d6cb59864219::debug_flr_service_analysis() -> DEBUGFLRPARAMTYPE_d6cb59864219 {
+  DEBUGFLRPARAMTYPE_d6cb59864219::from_int(1146880)
+}
+
+///|
+pub fn DEBUGFLRPARAMTYPE_d6cb59864219::debug_flr_service_dependongroup() -> DEBUGFLRPARAMTYPE_d6cb59864219 {
+  DEBUGFLRPARAMTYPE_d6cb59864219::from_int(20486)
+}
+
+///|
+pub fn DEBUGFLRPARAMTYPE_d6cb59864219::debug_flr_service_dependonservice() -> DEBUGFLRPARAMTYPE_d6cb59864219 {
+  DEBUGFLRPARAMTYPE_d6cb59864219::from_int(20485)
+}
+
+///|
+pub fn DEBUGFLRPARAMTYPE_d6cb59864219::debug_flr_service_description() -> DEBUGFLRPARAMTYPE_d6cb59864219 {
+  DEBUGFLRPARAMTYPE_d6cb59864219::from_int(20484)
+}
+
+///|
+pub fn DEBUGFLRPARAMTYPE_d6cb59864219::debug_flr_service_displayname() -> DEBUGFLRPARAMTYPE_d6cb59864219 {
+  DEBUGFLRPARAMTYPE_d6cb59864219::from_int(20483)
+}
+
+///|
+pub fn DEBUGFLRPARAMTYPE_d6cb59864219::debug_flr_service_group() -> DEBUGFLRPARAMTYPE_d6cb59864219 {
+  DEBUGFLRPARAMTYPE_d6cb59864219::from_int(20482)
+}
+
+///|
+pub fn DEBUGFLRPARAMTYPE_d6cb59864219::debug_flr_service_name() -> DEBUGFLRPARAMTYPE_d6cb59864219 {
+  DEBUGFLRPARAMTYPE_d6cb59864219::from_int(20481)
+}
+
+///|
+pub fn DEBUGFLRPARAMTYPE_d6cb59864219::debug_flr_show_errorlog() -> DEBUGFLRPARAMTYPE_d6cb59864219 {
+  DEBUGFLRPARAMTYPE_d6cb59864219::from_int(8207)
+}
+
+///|
+pub fn DEBUGFLRPARAMTYPE_d6cb59864219::debug_flr_show_lcie_iso_data() -> DEBUGFLRPARAMTYPE_d6cb59864219 {
+  DEBUGFLRPARAMTYPE_d6cb59864219::from_int(1048619)
+}
+
+///|
+pub fn DEBUGFLRPARAMTYPE_d6cb59864219::debug_flr_simultaneous_telsvc_instances() -> DEBUGFLRPARAMTYPE_d6cb59864219 {
+  DEBUGFLRPARAMTYPE_d6cb59864219::from_int(1879048223)
+}
+
+///|
+pub fn DEBUGFLRPARAMTYPE_d6cb59864219::debug_flr_simultaneous_telwp_instances() -> DEBUGFLRPARAMTYPE_d6cb59864219 {
+  DEBUGFLRPARAMTYPE_d6cb59864219::from_int(1879048224)
+}
+
+///|
+pub fn DEBUGFLRPARAMTYPE_d6cb59864219::debug_flr_single_bit_error() -> DEBUGFLRPARAMTYPE_d6cb59864219 {
+  DEBUGFLRPARAMTYPE_d6cb59864219::from_int(8203)
+}
+
+///|
+pub fn DEBUGFLRPARAMTYPE_d6cb59864219::debug_flr_single_bit_pfn_page_error() -> DEBUGFLRPARAMTYPE_d6cb59864219 {
+  DEBUGFLRPARAMTYPE_d6cb59864219::from_int(8213)
+}
+
+///|
+pub fn DEBUGFLRPARAMTYPE_d6cb59864219::debug_flr_skip_corrupt_module_detection() -> DEBUGFLRPARAMTYPE_d6cb59864219 {
+  DEBUGFLRPARAMTYPE_d6cb59864219::from_int(8235)
+}
+
+///|
+pub fn DEBUGFLRPARAMTYPE_d6cb59864219::debug_flr_skip_module_specific_bucket_info() -> DEBUGFLRPARAMTYPE_d6cb59864219 {
+  DEBUGFLRPARAMTYPE_d6cb59864219::from_int(65588)
+}
+
+///|
+pub fn DEBUGFLRPARAMTYPE_d6cb59864219::debug_flr_skip_stack_analysis() -> DEBUGFLRPARAMTYPE_d6cb59864219 {
+  DEBUGFLRPARAMTYPE_d6cb59864219::from_int(8217)
+}
+
+///|
+pub fn DEBUGFLRPARAMTYPE_d6cb59864219::debug_flr_sm_buffer_hash() -> DEBUGFLRPARAMTYPE_d6cb59864219 {
+  DEBUGFLRPARAMTYPE_d6cb59864219::from_int(1342177286)
+}
+
+///|
+pub fn DEBUGFLRPARAMTYPE_d6cb59864219::debug_flr_sm_compression_format() -> DEBUGFLRPARAMTYPE_d6cb59864219 {
+  DEBUGFLRPARAMTYPE_d6cb59864219::from_int(1342177280)
+}
+
+///|
+pub fn DEBUGFLRPARAMTYPE_d6cb59864219::debug_flr_sm_onebit_solution_count() -> DEBUGFLRPARAMTYPE_d6cb59864219 {
+  DEBUGFLRPARAMTYPE_d6cb59864219::from_int(1342177287)
+}
+
+///|
+pub fn DEBUGFLRPARAMTYPE_d6cb59864219::debug_flr_sm_source_offset() -> DEBUGFLRPARAMTYPE_d6cb59864219 {
+  DEBUGFLRPARAMTYPE_d6cb59864219::from_int(1342177283)
+}
+
+///|
+pub fn DEBUGFLRPARAMTYPE_d6cb59864219::debug_flr_sm_source_pfn1() -> DEBUGFLRPARAMTYPE_d6cb59864219 {
+  DEBUGFLRPARAMTYPE_d6cb59864219::from_int(1342177281)
+}
+
+///|
+pub fn DEBUGFLRPARAMTYPE_d6cb59864219::debug_flr_sm_source_pfn2() -> DEBUGFLRPARAMTYPE_d6cb59864219 {
+  DEBUGFLRPARAMTYPE_d6cb59864219::from_int(1342177282)
+}
+
+///|
+pub fn DEBUGFLRPARAMTYPE_d6cb59864219::debug_flr_sm_source_size() -> DEBUGFLRPARAMTYPE_d6cb59864219 {
+  DEBUGFLRPARAMTYPE_d6cb59864219::from_int(1342177284)
+}
+
+///|
+pub fn DEBUGFLRPARAMTYPE_d6cb59864219::debug_flr_sm_target_pfn() -> DEBUGFLRPARAMTYPE_d6cb59864219 {
+  DEBUGFLRPARAMTYPE_d6cb59864219::from_int(1342177285)
+}
+
+///|
+pub fn DEBUGFLRPARAMTYPE_d6cb59864219::debug_flr_solution_id() -> DEBUGFLRPARAMTYPE_d6cb59864219 {
+  DEBUGFLRPARAMTYPE_d6cb59864219::from_int(12293)
+}
+
+///|
+pub fn DEBUGFLRPARAMTYPE_d6cb59864219::debug_flr_solution_type() -> DEBUGFLRPARAMTYPE_d6cb59864219 {
+  DEBUGFLRPARAMTYPE_d6cb59864219::from_int(12295)
+}
+
+///|
+pub fn DEBUGFLRPARAMTYPE_d6cb59864219::debug_flr_special_pool_corruption_type() -> DEBUGFLRPARAMTYPE_d6cb59864219 {
+  DEBUGFLRPARAMTYPE_d6cb59864219::from_int(1025)
+}
+
+///|
+pub fn DEBUGFLRPARAMTYPE_d6cb59864219::debug_flr_stack() -> DEBUGFLRPARAMTYPE_d6cb59864219 {
+  DEBUGFLRPARAMTYPE_d6cb59864219::from_int(2097152)
+}
+
+///|
+pub fn DEBUGFLRPARAMTYPE_d6cb59864219::debug_flr_stackhash_analysis() -> DEBUGFLRPARAMTYPE_d6cb59864219 {
+  DEBUGFLRPARAMTYPE_d6cb59864219::from_int(1138688)
+}
+
+///|
+pub fn DEBUGFLRPARAMTYPE_d6cb59864219::debug_flr_stackusage_function() -> DEBUGFLRPARAMTYPE_d6cb59864219 {
+  DEBUGFLRPARAMTYPE_d6cb59864219::from_int(12363)
+}
+
+///|
+pub fn DEBUGFLRPARAMTYPE_d6cb59864219::debug_flr_stackusage_function_size() -> DEBUGFLRPARAMTYPE_d6cb59864219 {
+  DEBUGFLRPARAMTYPE_d6cb59864219::from_int(12364)
+}
+
+///|
+pub fn DEBUGFLRPARAMTYPE_d6cb59864219::debug_flr_stackusage_image() -> DEBUGFLRPARAMTYPE_d6cb59864219 {
+  DEBUGFLRPARAMTYPE_d6cb59864219::from_int(12361)
+}
+
+///|
+pub fn DEBUGFLRPARAMTYPE_d6cb59864219::debug_flr_stackusage_image_size() -> DEBUGFLRPARAMTYPE_d6cb59864219 {
+  DEBUGFLRPARAMTYPE_d6cb59864219::from_int(12362)
+}
+
+///|
+pub fn DEBUGFLRPARAMTYPE_d6cb59864219::debug_flr_stackusage_recursion_count() -> DEBUGFLRPARAMTYPE_d6cb59864219 {
+  DEBUGFLRPARAMTYPE_d6cb59864219::from_int(12365)
+}
+
+///|
+pub fn DEBUGFLRPARAMTYPE_d6cb59864219::debug_flr_stack_command() -> DEBUGFLRPARAMTYPE_d6cb59864219 {
+  DEBUGFLRPARAMTYPE_d6cb59864219::from_int(65540)
+}
+
+///|
+pub fn DEBUGFLRPARAMTYPE_d6cb59864219::debug_flr_stack_frame() -> DEBUGFLRPARAMTYPE_d6cb59864219 {
+  DEBUGFLRPARAMTYPE_d6cb59864219::from_int(2097155)
+}
+
+///|
+pub fn DEBUGFLRPARAMTYPE_d6cb59864219::debug_flr_stack_frames() -> DEBUGFLRPARAMTYPE_d6cb59864219 {
+  DEBUGFLRPARAMTYPE_d6cb59864219::from_int(2097212)
+}
+
+///|
+pub fn DEBUGFLRPARAMTYPE_d6cb59864219::debug_flr_stack_frame_flags() -> DEBUGFLRPARAMTYPE_d6cb59864219 {
+  DEBUGFLRPARAMTYPE_d6cb59864219::from_int(2097163)
+}
+
+///|
+pub fn DEBUGFLRPARAMTYPE_d6cb59864219::debug_flr_stack_frame_function() -> DEBUGFLRPARAMTYPE_d6cb59864219 {
+  DEBUGFLRPARAMTYPE_d6cb59864219::from_int(2097162)
+}
+
+///|
+pub fn DEBUGFLRPARAMTYPE_d6cb59864219::debug_flr_stack_frame_image() -> DEBUGFLRPARAMTYPE_d6cb59864219 {
+  DEBUGFLRPARAMTYPE_d6cb59864219::from_int(2097161)
+}
+
+///|
+pub fn DEBUGFLRPARAMTYPE_d6cb59864219::debug_flr_stack_frame_instruction() -> DEBUGFLRPARAMTYPE_d6cb59864219 {
+  DEBUGFLRPARAMTYPE_d6cb59864219::from_int(2097157)
+}
+
+///|
+pub fn DEBUGFLRPARAMTYPE_d6cb59864219::debug_flr_stack_frame_module() -> DEBUGFLRPARAMTYPE_d6cb59864219 {
+  DEBUGFLRPARAMTYPE_d6cb59864219::from_int(2097160)
+}
+
+///|
+pub fn DEBUGFLRPARAMTYPE_d6cb59864219::debug_flr_stack_frame_module_base() -> DEBUGFLRPARAMTYPE_d6cb59864219 {
+  DEBUGFLRPARAMTYPE_d6cb59864219::from_int(2097224)
+}
+
+///|
+pub fn DEBUGFLRPARAMTYPE_d6cb59864219::debug_flr_stack_frame_number() -> DEBUGFLRPARAMTYPE_d6cb59864219 {
+  DEBUGFLRPARAMTYPE_d6cb59864219::from_int(2097156)
+}
+
+///|
+pub fn DEBUGFLRPARAMTYPE_d6cb59864219::debug_flr_stack_frame_src() -> DEBUGFLRPARAMTYPE_d6cb59864219 {
+  DEBUGFLRPARAMTYPE_d6cb59864219::from_int(2097225)
+}
+
+///|
+pub fn DEBUGFLRPARAMTYPE_d6cb59864219::debug_flr_stack_frame_symbol() -> DEBUGFLRPARAMTYPE_d6cb59864219 {
+  DEBUGFLRPARAMTYPE_d6cb59864219::from_int(2097158)
+}
+
+///|
+pub fn DEBUGFLRPARAMTYPE_d6cb59864219::debug_flr_stack_frame_symbol_offset() -> DEBUGFLRPARAMTYPE_d6cb59864219 {
+  DEBUGFLRPARAMTYPE_d6cb59864219::from_int(2097159)
+}
+
+///|
+pub fn DEBUGFLRPARAMTYPE_d6cb59864219::debug_flr_stack_overflow() -> DEBUGFLRPARAMTYPE_d6cb59864219 {
+  DEBUGFLRPARAMTYPE_d6cb59864219::from_int(12301)
+}
+
+///|
+pub fn DEBUGFLRPARAMTYPE_d6cb59864219::debug_flr_stack_pointer_error() -> DEBUGFLRPARAMTYPE_d6cb59864219 {
+  DEBUGFLRPARAMTYPE_d6cb59864219::from_int(12302)
+}
+
+///|
+pub fn DEBUGFLRPARAMTYPE_d6cb59864219::debug_flr_stack_pointer_misaligned() -> DEBUGFLRPARAMTYPE_d6cb59864219 {
+  DEBUGFLRPARAMTYPE_d6cb59864219::from_int(12304)
+}
+
+///|
+pub fn DEBUGFLRPARAMTYPE_d6cb59864219::debug_flr_stack_pointer_onebit_error() -> DEBUGFLRPARAMTYPE_d6cb59864219 {
+  DEBUGFLRPARAMTYPE_d6cb59864219::from_int(12303)
+}
+
+///|
+pub fn DEBUGFLRPARAMTYPE_d6cb59864219::debug_flr_stack_sha1_hash_m() -> DEBUGFLRPARAMTYPE_d6cb59864219 {
+  DEBUGFLRPARAMTYPE_d6cb59864219::from_int(2097221)
+}
+
+///|
+pub fn DEBUGFLRPARAMTYPE_d6cb59864219::debug_flr_stack_sha1_hash_mf() -> DEBUGFLRPARAMTYPE_d6cb59864219 {
+  DEBUGFLRPARAMTYPE_d6cb59864219::from_int(2097219)
+}
+
+///|
+pub fn DEBUGFLRPARAMTYPE_d6cb59864219::debug_flr_stack_sha1_hash_mfo() -> DEBUGFLRPARAMTYPE_d6cb59864219 {
+  DEBUGFLRPARAMTYPE_d6cb59864219::from_int(2097220)
+}
+
+///|
+pub fn DEBUGFLRPARAMTYPE_d6cb59864219::debug_flr_stack_text() -> DEBUGFLRPARAMTYPE_d6cb59864219 {
+  DEBUGFLRPARAMTYPE_d6cb59864219::from_int(65541)
+}
+
+///|
+pub fn DEBUGFLRPARAMTYPE_d6cb59864219::debug_flr_status_code() -> DEBUGFLRPARAMTYPE_d6cb59864219 {
+  DEBUGFLRPARAMTYPE_d6cb59864219::from_int(4102)
+}
+
+///|
+pub fn DEBUGFLRPARAMTYPE_d6cb59864219::debug_flr_storage() -> DEBUGFLRPARAMTYPE_d6cb59864219 {
+  DEBUGFLRPARAMTYPE_d6cb59864219::from_int(29696)
+}
+
+///|
+pub fn DEBUGFLRPARAMTYPE_d6cb59864219::debug_flr_storage_blackbox() -> DEBUGFLRPARAMTYPE_d6cb59864219 {
+  DEBUGFLRPARAMTYPE_d6cb59864219::from_int(29936)
+}
+
+///|
+pub fn DEBUGFLRPARAMTYPE_d6cb59864219::debug_flr_storage_issuedescstring() -> DEBUGFLRPARAMTYPE_d6cb59864219 {
+  DEBUGFLRPARAMTYPE_d6cb59864219::from_int(29700)
+}
+
+///|
+pub fn DEBUGFLRPARAMTYPE_d6cb59864219::debug_flr_storage_mfgid() -> DEBUGFLRPARAMTYPE_d6cb59864219 {
+  DEBUGFLRPARAMTYPE_d6cb59864219::from_int(29699)
+}
+
+///|
+pub fn DEBUGFLRPARAMTYPE_d6cb59864219::debug_flr_storage_model() -> DEBUGFLRPARAMTYPE_d6cb59864219 {
+  DEBUGFLRPARAMTYPE_d6cb59864219::from_int(29698)
+}
+
+///|
+pub fn DEBUGFLRPARAMTYPE_d6cb59864219::debug_flr_storage_orgid() -> DEBUGFLRPARAMTYPE_d6cb59864219 {
+  DEBUGFLRPARAMTYPE_d6cb59864219::from_int(29697)
+}
+
+///|
+pub fn DEBUGFLRPARAMTYPE_d6cb59864219::debug_flr_storage_private_datasize() -> DEBUGFLRPARAMTYPE_d6cb59864219 {
+  DEBUGFLRPARAMTYPE_d6cb59864219::from_int(29706)
+}
+
+///|
+pub fn DEBUGFLRPARAMTYPE_d6cb59864219::debug_flr_storage_private_offset() -> DEBUGFLRPARAMTYPE_d6cb59864219 {
+  DEBUGFLRPARAMTYPE_d6cb59864219::from_int(29705)
+}
+
+///|
+pub fn DEBUGFLRPARAMTYPE_d6cb59864219::debug_flr_storage_private_totsize() -> DEBUGFLRPARAMTYPE_d6cb59864219 {
+  DEBUGFLRPARAMTYPE_d6cb59864219::from_int(29704)
+}
+
+///|
+pub fn DEBUGFLRPARAMTYPE_d6cb59864219::debug_flr_storage_public_datasize() -> DEBUGFLRPARAMTYPE_d6cb59864219 {
+  DEBUGFLRPARAMTYPE_d6cb59864219::from_int(29703)
+}
+
+///|
+pub fn DEBUGFLRPARAMTYPE_d6cb59864219::debug_flr_storage_public_offset() -> DEBUGFLRPARAMTYPE_d6cb59864219 {
+  DEBUGFLRPARAMTYPE_d6cb59864219::from_int(29702)
+}
+
+///|
+pub fn DEBUGFLRPARAMTYPE_d6cb59864219::debug_flr_storage_public_totsize() -> DEBUGFLRPARAMTYPE_d6cb59864219 {
+  DEBUGFLRPARAMTYPE_d6cb59864219::from_int(29701)
+}
+
+///|
+pub fn DEBUGFLRPARAMTYPE_d6cb59864219::debug_flr_storage_reason() -> DEBUGFLRPARAMTYPE_d6cb59864219 {
+  DEBUGFLRPARAMTYPE_d6cb59864219::from_int(29708)
+}
+
+///|
+pub fn DEBUGFLRPARAMTYPE_d6cb59864219::debug_flr_storage_totalsize() -> DEBUGFLRPARAMTYPE_d6cb59864219 {
+  DEBUGFLRPARAMTYPE_d6cb59864219::from_int(29707)
+}
+
+///|
+pub fn DEBUGFLRPARAMTYPE_d6cb59864219::debug_flr_store_developer_name() -> DEBUGFLRPARAMTYPE_d6cb59864219 {
+  DEBUGFLRPARAMTYPE_d6cb59864219::from_int(1610612743)
+}
+
+///|
+pub fn DEBUGFLRPARAMTYPE_d6cb59864219::debug_flr_store_is_microsoft_product() -> DEBUGFLRPARAMTYPE_d6cb59864219 {
+  DEBUGFLRPARAMTYPE_d6cb59864219::from_int(1610612754)
+}
+
+///|
+pub fn DEBUGFLRPARAMTYPE_d6cb59864219::debug_flr_store_legacy_parent_product_id() -> DEBUGFLRPARAMTYPE_d6cb59864219 {
+  DEBUGFLRPARAMTYPE_d6cb59864219::from_int(1610612747)
+}
+
+///|
+pub fn DEBUGFLRPARAMTYPE_d6cb59864219::debug_flr_store_legacy_windows_phone_product_id() -> DEBUGFLRPARAMTYPE_d6cb59864219 {
+  DEBUGFLRPARAMTYPE_d6cb59864219::from_int(1610612749)
+}
+
+///|
+pub fn DEBUGFLRPARAMTYPE_d6cb59864219::debug_flr_store_legacy_windows_store_product_id() -> DEBUGFLRPARAMTYPE_d6cb59864219 {
+  DEBUGFLRPARAMTYPE_d6cb59864219::from_int(1610612748)
+}
+
+///|
+pub fn DEBUGFLRPARAMTYPE_d6cb59864219::debug_flr_store_legacy_xbox_360_product_id() -> DEBUGFLRPARAMTYPE_d6cb59864219 {
+  DEBUGFLRPARAMTYPE_d6cb59864219::from_int(1610612751)
+}
+
+///|
+pub fn DEBUGFLRPARAMTYPE_d6cb59864219::debug_flr_store_legacy_xbox_one_product_id() -> DEBUGFLRPARAMTYPE_d6cb59864219 {
+  DEBUGFLRPARAMTYPE_d6cb59864219::from_int(1610612750)
+}
+
+///|
+pub fn DEBUGFLRPARAMTYPE_d6cb59864219::debug_flr_store_package_family_name() -> DEBUGFLRPARAMTYPE_d6cb59864219 {
+  DEBUGFLRPARAMTYPE_d6cb59864219::from_int(1610612744)
+}
+
+///|
+pub fn DEBUGFLRPARAMTYPE_d6cb59864219::debug_flr_store_package_identity_name() -> DEBUGFLRPARAMTYPE_d6cb59864219 {
+  DEBUGFLRPARAMTYPE_d6cb59864219::from_int(1610612745)
+}
+
+///|
+pub fn DEBUGFLRPARAMTYPE_d6cb59864219::debug_flr_store_preferred_sku_id() -> DEBUGFLRPARAMTYPE_d6cb59864219 {
+  DEBUGFLRPARAMTYPE_d6cb59864219::from_int(1610612753)
+}
+
+///|
+pub fn DEBUGFLRPARAMTYPE_d6cb59864219::debug_flr_store_primary_parent_product_id() -> DEBUGFLRPARAMTYPE_d6cb59864219 {
+  DEBUGFLRPARAMTYPE_d6cb59864219::from_int(1610612746)
+}
+
+///|
+pub fn DEBUGFLRPARAMTYPE_d6cb59864219::debug_flr_store_product_description() -> DEBUGFLRPARAMTYPE_d6cb59864219 {
+  DEBUGFLRPARAMTYPE_d6cb59864219::from_int(1610612738)
+}
+
+///|
+pub fn DEBUGFLRPARAMTYPE_d6cb59864219::debug_flr_store_product_display_name() -> DEBUGFLRPARAMTYPE_d6cb59864219 {
+  DEBUGFLRPARAMTYPE_d6cb59864219::from_int(1610612737)
+}
+
+///|
+pub fn DEBUGFLRPARAMTYPE_d6cb59864219::debug_flr_store_product_extended_name() -> DEBUGFLRPARAMTYPE_d6cb59864219 {
+  DEBUGFLRPARAMTYPE_d6cb59864219::from_int(1610612739)
+}
+
+///|
+pub fn DEBUGFLRPARAMTYPE_d6cb59864219::debug_flr_store_product_id() -> DEBUGFLRPARAMTYPE_d6cb59864219 {
+  DEBUGFLRPARAMTYPE_d6cb59864219::from_int(1610612736)
+}
+
+///|
+pub fn DEBUGFLRPARAMTYPE_d6cb59864219::debug_flr_store_publisher_certificate_name() -> DEBUGFLRPARAMTYPE_d6cb59864219 {
+  DEBUGFLRPARAMTYPE_d6cb59864219::from_int(1610612742)
+}
+
+///|
+pub fn DEBUGFLRPARAMTYPE_d6cb59864219::debug_flr_store_publisher_id() -> DEBUGFLRPARAMTYPE_d6cb59864219 {
+  DEBUGFLRPARAMTYPE_d6cb59864219::from_int(1610612740)
+}
+
+///|
+pub fn DEBUGFLRPARAMTYPE_d6cb59864219::debug_flr_store_publisher_name() -> DEBUGFLRPARAMTYPE_d6cb59864219 {
+  DEBUGFLRPARAMTYPE_d6cb59864219::from_int(1610612741)
+}
+
+///|
+pub fn DEBUGFLRPARAMTYPE_d6cb59864219::debug_flr_store_url_app() -> DEBUGFLRPARAMTYPE_d6cb59864219 {
+  DEBUGFLRPARAMTYPE_d6cb59864219::from_int(1610612755)
+}
+
+///|
+pub fn DEBUGFLRPARAMTYPE_d6cb59864219::debug_flr_store_url_apphealth() -> DEBUGFLRPARAMTYPE_d6cb59864219 {
+  DEBUGFLRPARAMTYPE_d6cb59864219::from_int(1610612756)
+}
+
+///|
+pub fn DEBUGFLRPARAMTYPE_d6cb59864219::debug_flr_store_xbox_title_id() -> DEBUGFLRPARAMTYPE_d6cb59864219 {
+  DEBUGFLRPARAMTYPE_d6cb59864219::from_int(1610612752)
+}
+
+///|
+pub fn DEBUGFLRPARAMTYPE_d6cb59864219::debug_flr_stream_analysis() -> DEBUGFLRPARAMTYPE_d6cb59864219 {
+  DEBUGFLRPARAMTYPE_d6cb59864219::from_int(1130496)
+}
+
+///|
+pub fn DEBUGFLRPARAMTYPE_d6cb59864219::debug_flr_suspect_code_path_hash() -> DEBUGFLRPARAMTYPE_d6cb59864219 {
+  DEBUGFLRPARAMTYPE_d6cb59864219::from_int(1048586)
+}
+
+///|
+pub fn DEBUGFLRPARAMTYPE_d6cb59864219::debug_flr_svchost() -> DEBUGFLRPARAMTYPE_d6cb59864219 {
+  DEBUGFLRPARAMTYPE_d6cb59864219::from_int(20736)
+}
+
+///|
+pub fn DEBUGFLRPARAMTYPE_d6cb59864219::debug_flr_svchost_group() -> DEBUGFLRPARAMTYPE_d6cb59864219 {
+  DEBUGFLRPARAMTYPE_d6cb59864219::from_int(20737)
+}
+
+///|
+pub fn DEBUGFLRPARAMTYPE_d6cb59864219::debug_flr_svchost_imagepath() -> DEBUGFLRPARAMTYPE_d6cb59864219 {
+  DEBUGFLRPARAMTYPE_d6cb59864219::from_int(20738)
+}
+
+///|
+pub fn DEBUGFLRPARAMTYPE_d6cb59864219::debug_flr_svchost_servicedll() -> DEBUGFLRPARAMTYPE_d6cb59864219 {
+  DEBUGFLRPARAMTYPE_d6cb59864219::from_int(20739)
+}
+
+///|
+pub fn DEBUGFLRPARAMTYPE_d6cb59864219::debug_flr_switch_process_context() -> DEBUGFLRPARAMTYPE_d6cb59864219 {
+  DEBUGFLRPARAMTYPE_d6cb59864219::from_int(8223)
+}
+
+///|
+pub fn DEBUGFLRPARAMTYPE_d6cb59864219::debug_flr_symbol_from_raw_stack_address() -> DEBUGFLRPARAMTYPE_d6cb59864219 {
+  DEBUGFLRPARAMTYPE_d6cb59864219::from_int(-2147483643)
+}
+
+///|
+pub fn DEBUGFLRPARAMTYPE_d6cb59864219::debug_flr_symbol_name() -> DEBUGFLRPARAMTYPE_d6cb59864219 {
+  DEBUGFLRPARAMTYPE_d6cb59864219::from_int(65538)
+}
+
+///|
+pub fn DEBUGFLRPARAMTYPE_d6cb59864219::debug_flr_symbol_on_raw_stack() -> DEBUGFLRPARAMTYPE_d6cb59864219 {
+  DEBUGFLRPARAMTYPE_d6cb59864219::from_int(4104)
+}
+
+///|
+pub fn DEBUGFLRPARAMTYPE_d6cb59864219::debug_flr_symbol_routine_name() -> DEBUGFLRPARAMTYPE_d6cb59864219 {
+  DEBUGFLRPARAMTYPE_d6cb59864219::from_int(65580)
+}
+
+///|
+pub fn DEBUGFLRPARAMTYPE_d6cb59864219::debug_flr_symbol_stack_index() -> DEBUGFLRPARAMTYPE_d6cb59864219 {
+  DEBUGFLRPARAMTYPE_d6cb59864219::from_int(4103)
+}
+
+///|
+pub fn DEBUGFLRPARAMTYPE_d6cb59864219::debug_flr_sysinfo_baseboard_manufacturer() -> DEBUGFLRPARAMTYPE_d6cb59864219 {
+  DEBUGFLRPARAMTYPE_d6cb59864219::from_int(17156)
+}
+
+///|
+pub fn DEBUGFLRPARAMTYPE_d6cb59864219::debug_flr_sysinfo_baseboard_product() -> DEBUGFLRPARAMTYPE_d6cb59864219 {
+  DEBUGFLRPARAMTYPE_d6cb59864219::from_int(17157)
+}
+
+///|
+pub fn DEBUGFLRPARAMTYPE_d6cb59864219::debug_flr_sysinfo_baseboard_version() -> DEBUGFLRPARAMTYPE_d6cb59864219 {
+  DEBUGFLRPARAMTYPE_d6cb59864219::from_int(17158)
+}
+
+///|
+pub fn DEBUGFLRPARAMTYPE_d6cb59864219::debug_flr_sysinfo_bios_date() -> DEBUGFLRPARAMTYPE_d6cb59864219 {
+  DEBUGFLRPARAMTYPE_d6cb59864219::from_int(17161)
+}
+
+///|
+pub fn DEBUGFLRPARAMTYPE_d6cb59864219::debug_flr_sysinfo_bios_vendor() -> DEBUGFLRPARAMTYPE_d6cb59864219 {
+  DEBUGFLRPARAMTYPE_d6cb59864219::from_int(17159)
+}
+
+///|
+pub fn DEBUGFLRPARAMTYPE_d6cb59864219::debug_flr_sysinfo_bios_version() -> DEBUGFLRPARAMTYPE_d6cb59864219 {
+  DEBUGFLRPARAMTYPE_d6cb59864219::from_int(17160)
+}
+
+///|
+pub fn DEBUGFLRPARAMTYPE_d6cb59864219::debug_flr_sysinfo_system_manufacturer() -> DEBUGFLRPARAMTYPE_d6cb59864219 {
+  DEBUGFLRPARAMTYPE_d6cb59864219::from_int(17152)
+}
+
+///|
+pub fn DEBUGFLRPARAMTYPE_d6cb59864219::debug_flr_sysinfo_system_product() -> DEBUGFLRPARAMTYPE_d6cb59864219 {
+  DEBUGFLRPARAMTYPE_d6cb59864219::from_int(17153)
+}
+
+///|
+pub fn DEBUGFLRPARAMTYPE_d6cb59864219::debug_flr_sysinfo_system_sku() -> DEBUGFLRPARAMTYPE_d6cb59864219 {
+  DEBUGFLRPARAMTYPE_d6cb59864219::from_int(17154)
+}
+
+///|
+pub fn DEBUGFLRPARAMTYPE_d6cb59864219::debug_flr_sysinfo_system_version() -> DEBUGFLRPARAMTYPE_d6cb59864219 {
+  DEBUGFLRPARAMTYPE_d6cb59864219::from_int(17155)
+}
+
+///|
+pub fn DEBUGFLRPARAMTYPE_d6cb59864219::debug_flr_system_locale_deprecated() -> DEBUGFLRPARAMTYPE_d6cb59864219 {
+  DEBUGFLRPARAMTYPE_d6cb59864219::from_int(12298)
+}
+
+///|
+pub fn DEBUGFLRPARAMTYPE_d6cb59864219::debug_flr_sysxml_checksum() -> DEBUGFLRPARAMTYPE_d6cb59864219 {
+  DEBUGFLRPARAMTYPE_d6cb59864219::from_int(16897)
+}
+
+///|
+pub fn DEBUGFLRPARAMTYPE_d6cb59864219::debug_flr_sysxml_localeid() -> DEBUGFLRPARAMTYPE_d6cb59864219 {
+  DEBUGFLRPARAMTYPE_d6cb59864219::from_int(16896)
+}
+
+///|
+pub fn DEBUGFLRPARAMTYPE_d6cb59864219::debug_flr_target_mode() -> DEBUGFLRPARAMTYPE_d6cb59864219 {
+  DEBUGFLRPARAMTYPE_d6cb59864219::from_int(4107)
+}
+
+///|
+pub fn DEBUGFLRPARAMTYPE_d6cb59864219::debug_flr_target_time() -> DEBUGFLRPARAMTYPE_d6cb59864219 {
+  DEBUGFLRPARAMTYPE_d6cb59864219::from_int(8250)
+}
+
+///|
+pub fn DEBUGFLRPARAMTYPE_d6cb59864219::debug_flr_testresultguid() -> DEBUGFLRPARAMTYPE_d6cb59864219 {
+  DEBUGFLRPARAMTYPE_d6cb59864219::from_int(-268435455)
+}
+
+///|
+pub fn DEBUGFLRPARAMTYPE_d6cb59864219::debug_flr_testresultserver() -> DEBUGFLRPARAMTYPE_d6cb59864219 {
+  DEBUGFLRPARAMTYPE_d6cb59864219::from_int(-268435456)
+}
+
+///|
+pub fn DEBUGFLRPARAMTYPE_d6cb59864219::debug_flr_threadpool_waiter() -> DEBUGFLRPARAMTYPE_d6cb59864219 {
+  DEBUGFLRPARAMTYPE_d6cb59864219::from_int(4106)
+}
+
+///|
+pub fn DEBUGFLRPARAMTYPE_d6cb59864219::debug_flr_thread_attributes() -> DEBUGFLRPARAMTYPE_d6cb59864219 {
+  DEBUGFLRPARAMTYPE_d6cb59864219::from_int(1048577)
+}
+
+///|
+pub fn DEBUGFLRPARAMTYPE_d6cb59864219::debug_flr_timeline_analysis() -> DEBUGFLRPARAMTYPE_d6cb59864219 {
+  DEBUGFLRPARAMTYPE_d6cb59864219::from_int(1126400)
+}
+
+///|
+pub fn DEBUGFLRPARAMTYPE_d6cb59864219::debug_flr_timeline_times() -> DEBUGFLRPARAMTYPE_d6cb59864219 {
+  DEBUGFLRPARAMTYPE_d6cb59864219::from_int(1126401)
+}
+
+///|
+pub fn DEBUGFLRPARAMTYPE_d6cb59864219::debug_flr_trap_frame() -> DEBUGFLRPARAMTYPE_d6cb59864219 {
+  DEBUGFLRPARAMTYPE_d6cb59864219::from_int(-1073741822)
+}
+
+///|
+pub fn DEBUGFLRPARAMTYPE_d6cb59864219::debug_flr_trap_frame_recursion() -> DEBUGFLRPARAMTYPE_d6cb59864219 {
+  DEBUGFLRPARAMTYPE_d6cb59864219::from_int(12300)
+}
+
+///|
+pub fn DEBUGFLRPARAMTYPE_d6cb59864219::debug_flr_triager_os_build_name() -> DEBUGFLRPARAMTYPE_d6cb59864219 {
+  DEBUGFLRPARAMTYPE_d6cb59864219::from_int(12328)
+}
+
+///|
+pub fn DEBUGFLRPARAMTYPE_d6cb59864219::debug_flr_tss() -> DEBUGFLRPARAMTYPE_d6cb59864219 {
+  DEBUGFLRPARAMTYPE_d6cb59864219::from_int(-1073741821)
+}
+
+///|
+pub fn DEBUGFLRPARAMTYPE_d6cb59864219::debug_flr_two_bit_error() -> DEBUGFLRPARAMTYPE_d6cb59864219 {
+  DEBUGFLRPARAMTYPE_d6cb59864219::from_int(8204)
+}
+
+///|
+pub fn DEBUGFLRPARAMTYPE_d6cb59864219::debug_flr_uls_script_exception() -> DEBUGFLRPARAMTYPE_d6cb59864219 {
+  DEBUGFLRPARAMTYPE_d6cb59864219::from_int(1048617)
+}
+
+///|
+pub fn DEBUGFLRPARAMTYPE_d6cb59864219::debug_flr_unaligned_stack_pointer() -> DEBUGFLRPARAMTYPE_d6cb59864219 {
+  DEBUGFLRPARAMTYPE_d6cb59864219::from_int(12290)
+}
+
+///|
+pub fn DEBUGFLRPARAMTYPE_d6cb59864219::debug_flr_unknown_module() -> DEBUGFLRPARAMTYPE_d6cb59864219 {
+  DEBUGFLRPARAMTYPE_d6cb59864219::from_int(8201)
+}
+
+///|
+pub fn DEBUGFLRPARAMTYPE_d6cb59864219::debug_flr_unresponsive_ui_followup_name() -> DEBUGFLRPARAMTYPE_d6cb59864219 {
+  DEBUGFLRPARAMTYPE_d6cb59864219::from_int(65573)
+}
+
+///|
+pub fn DEBUGFLRPARAMTYPE_d6cb59864219::debug_flr_unresponsive_ui_problem_class() -> DEBUGFLRPARAMTYPE_d6cb59864219 {
+  DEBUGFLRPARAMTYPE_d6cb59864219::from_int(1048581)
+}
+
+///|
+pub fn DEBUGFLRPARAMTYPE_d6cb59864219::debug_flr_unresponsive_ui_problem_class_data() -> DEBUGFLRPARAMTYPE_d6cb59864219 {
+  DEBUGFLRPARAMTYPE_d6cb59864219::from_int(1048582)
+}
+
+///|
+pub fn DEBUGFLRPARAMTYPE_d6cb59864219::debug_flr_unresponsive_ui_stack() -> DEBUGFLRPARAMTYPE_d6cb59864219 {
+  DEBUGFLRPARAMTYPE_d6cb59864219::from_int(65574)
+}
+
+///|
+pub fn DEBUGFLRPARAMTYPE_d6cb59864219::debug_flr_unresponsive_ui_symbol_name() -> DEBUGFLRPARAMTYPE_d6cb59864219 {
+  DEBUGFLRPARAMTYPE_d6cb59864219::from_int(65572)
+}
+
+///|
+pub fn DEBUGFLRPARAMTYPE_d6cb59864219::debug_flr_unresponsive_ui_thread() -> DEBUGFLRPARAMTYPE_d6cb59864219 {
+  DEBUGFLRPARAMTYPE_d6cb59864219::from_int(-1073741819)
+}
+
+///|
+pub fn DEBUGFLRPARAMTYPE_d6cb59864219::debug_flr_unused001() -> DEBUGFLRPARAMTYPE_d6cb59864219 {
+  DEBUGFLRPARAMTYPE_d6cb59864219::from_int(8197)
+}
+
+///|
+pub fn DEBUGFLRPARAMTYPE_d6cb59864219::debug_flr_urls() -> DEBUGFLRPARAMTYPE_d6cb59864219 {
+  DEBUGFLRPARAMTYPE_d6cb59864219::from_int(1048610)
+}
+
+///|
+pub fn DEBUGFLRPARAMTYPE_d6cb59864219::debug_flr_urls_discovered() -> DEBUGFLRPARAMTYPE_d6cb59864219 {
+  DEBUGFLRPARAMTYPE_d6cb59864219::from_int(1048609)
+}
+
+///|
+pub fn DEBUGFLRPARAMTYPE_d6cb59864219::debug_flr_url_entry() -> DEBUGFLRPARAMTYPE_d6cb59864219 {
+  DEBUGFLRPARAMTYPE_d6cb59864219::from_int(1048611)
+}
+
+///|
+pub fn DEBUGFLRPARAMTYPE_d6cb59864219::debug_flr_url_lcie_entry() -> DEBUGFLRPARAMTYPE_d6cb59864219 {
+  DEBUGFLRPARAMTYPE_d6cb59864219::from_int(1048620)
+}
+
+///|
+pub fn DEBUGFLRPARAMTYPE_d6cb59864219::debug_flr_url_urlmon_entry() -> DEBUGFLRPARAMTYPE_d6cb59864219 {
+  DEBUGFLRPARAMTYPE_d6cb59864219::from_int(1048621)
+}
+
+///|
+pub fn DEBUGFLRPARAMTYPE_d6cb59864219::debug_flr_url_xmlhttpreq_sync_entry() -> DEBUGFLRPARAMTYPE_d6cb59864219 {
+  DEBUGFLRPARAMTYPE_d6cb59864219::from_int(1048622)
+}
+
+///|
+pub fn DEBUGFLRPARAMTYPE_d6cb59864219::debug_flr_usbport_ocadata() -> DEBUGFLRPARAMTYPE_d6cb59864219 {
+  DEBUGFLRPARAMTYPE_d6cb59864219::from_int(20)
+}
+
+///|
+pub fn DEBUGFLRPARAMTYPE_d6cb59864219::debug_flr_userbreak_peb_pagedout() -> DEBUGFLRPARAMTYPE_d6cb59864219 {
+  DEBUGFLRPARAMTYPE_d6cb59864219::from_int(8225)
+}
+
+///|
+pub fn DEBUGFLRPARAMTYPE_d6cb59864219::debug_flr_usermode_data() -> DEBUGFLRPARAMTYPE_d6cb59864219 {
+  DEBUGFLRPARAMTYPE_d6cb59864219::from_int(1048576)
+}
+
+///|
+pub fn DEBUGFLRPARAMTYPE_d6cb59864219::debug_flr_user_global_attributes() -> DEBUGFLRPARAMTYPE_d6cb59864219 {
+  DEBUGFLRPARAMTYPE_d6cb59864219::from_int(3153920)
+}
+
+///|
+pub fn DEBUGFLRPARAMTYPE_d6cb59864219::debug_flr_user_lcid() -> DEBUGFLRPARAMTYPE_d6cb59864219 {
+  DEBUGFLRPARAMTYPE_d6cb59864219::from_int(1052690)
+}
+
+///|
+pub fn DEBUGFLRPARAMTYPE_d6cb59864219::debug_flr_user_lcid_str() -> DEBUGFLRPARAMTYPE_d6cb59864219 {
+  DEBUGFLRPARAMTYPE_d6cb59864219::from_int(1052698)
+}
+
+///|
+pub fn DEBUGFLRPARAMTYPE_d6cb59864219::debug_flr_user_mode_bucket() -> DEBUGFLRPARAMTYPE_d6cb59864219 {
+  DEBUGFLRPARAMTYPE_d6cb59864219::from_int(65614)
+}
+
+///|
+pub fn DEBUGFLRPARAMTYPE_d6cb59864219::debug_flr_user_mode_bucket_eventtype() -> DEBUGFLRPARAMTYPE_d6cb59864219 {
+  DEBUGFLRPARAMTYPE_d6cb59864219::from_int(65616)
+}
+
+///|
+pub fn DEBUGFLRPARAMTYPE_d6cb59864219::debug_flr_user_mode_bucket_index() -> DEBUGFLRPARAMTYPE_d6cb59864219 {
+  DEBUGFLRPARAMTYPE_d6cb59864219::from_int(65615)
+}
+
+///|
+pub fn DEBUGFLRPARAMTYPE_d6cb59864219::debug_flr_user_mode_bucket_p0() -> DEBUGFLRPARAMTYPE_d6cb59864219 {
+  DEBUGFLRPARAMTYPE_d6cb59864219::from_int(65619)
+}
+
+///|
+pub fn DEBUGFLRPARAMTYPE_d6cb59864219::debug_flr_user_mode_bucket_p1() -> DEBUGFLRPARAMTYPE_d6cb59864219 {
+  DEBUGFLRPARAMTYPE_d6cb59864219::from_int(65620)
+}
+
+///|
+pub fn DEBUGFLRPARAMTYPE_d6cb59864219::debug_flr_user_mode_bucket_p2() -> DEBUGFLRPARAMTYPE_d6cb59864219 {
+  DEBUGFLRPARAMTYPE_d6cb59864219::from_int(65621)
+}
+
+///|
+pub fn DEBUGFLRPARAMTYPE_d6cb59864219::debug_flr_user_mode_bucket_p3() -> DEBUGFLRPARAMTYPE_d6cb59864219 {
+  DEBUGFLRPARAMTYPE_d6cb59864219::from_int(65622)
+}
+
+///|
+pub fn DEBUGFLRPARAMTYPE_d6cb59864219::debug_flr_user_mode_bucket_p4() -> DEBUGFLRPARAMTYPE_d6cb59864219 {
+  DEBUGFLRPARAMTYPE_d6cb59864219::from_int(65623)
+}
+
+///|
+pub fn DEBUGFLRPARAMTYPE_d6cb59864219::debug_flr_user_mode_bucket_p5() -> DEBUGFLRPARAMTYPE_d6cb59864219 {
+  DEBUGFLRPARAMTYPE_d6cb59864219::from_int(65624)
+}
+
+///|
+pub fn DEBUGFLRPARAMTYPE_d6cb59864219::debug_flr_user_mode_bucket_p6() -> DEBUGFLRPARAMTYPE_d6cb59864219 {
+  DEBUGFLRPARAMTYPE_d6cb59864219::from_int(65625)
+}
+
+///|
+pub fn DEBUGFLRPARAMTYPE_d6cb59864219::debug_flr_user_mode_bucket_p7() -> DEBUGFLRPARAMTYPE_d6cb59864219 {
+  DEBUGFLRPARAMTYPE_d6cb59864219::from_int(65626)
+}
+
+///|
+pub fn DEBUGFLRPARAMTYPE_d6cb59864219::debug_flr_user_mode_bucket_reportcreationtime() -> DEBUGFLRPARAMTYPE_d6cb59864219 {
+  DEBUGFLRPARAMTYPE_d6cb59864219::from_int(65618)
+}
+
+///|
+pub fn DEBUGFLRPARAMTYPE_d6cb59864219::debug_flr_user_mode_bucket_reportguid() -> DEBUGFLRPARAMTYPE_d6cb59864219 {
+  DEBUGFLRPARAMTYPE_d6cb59864219::from_int(65617)
+}
+
+///|
+pub fn DEBUGFLRPARAMTYPE_d6cb59864219::debug_flr_user_mode_bucket_string() -> DEBUGFLRPARAMTYPE_d6cb59864219 {
+  DEBUGFLRPARAMTYPE_d6cb59864219::from_int(65627)
+}
+
+///|
+pub fn DEBUGFLRPARAMTYPE_d6cb59864219::debug_flr_user_name() -> DEBUGFLRPARAMTYPE_d6cb59864219 {
+  DEBUGFLRPARAMTYPE_d6cb59864219::from_int(65548)
+}
+
+///|
+pub fn DEBUGFLRPARAMTYPE_d6cb59864219::debug_flr_user_problem_classes() -> DEBUGFLRPARAMTYPE_d6cb59864219 {
+  DEBUGFLRPARAMTYPE_d6cb59864219::from_int(3162112)
+}
+
+///|
+pub fn DEBUGFLRPARAMTYPE_d6cb59864219::debug_flr_user_thread_attributes() -> DEBUGFLRPARAMTYPE_d6cb59864219 {
+  DEBUGFLRPARAMTYPE_d6cb59864219::from_int(3158016)
+}
+
+///|
+pub fn DEBUGFLRPARAMTYPE_d6cb59864219::debug_flr_use_default_context() -> DEBUGFLRPARAMTYPE_d6cb59864219 {
+  DEBUGFLRPARAMTYPE_d6cb59864219::from_int(8221)
+}
+
+///|
+pub fn DEBUGFLRPARAMTYPE_d6cb59864219::debug_flr_verifier_driver_entry() -> DEBUGFLRPARAMTYPE_d6cb59864219 {
+  DEBUGFLRPARAMTYPE_d6cb59864219::from_int(263)
+}
+
+///|
+pub fn DEBUGFLRPARAMTYPE_d6cb59864219::debug_flr_verifier_found_deadlock() -> DEBUGFLRPARAMTYPE_d6cb59864219 {
+  DEBUGFLRPARAMTYPE_d6cb59864219::from_int(26)
+}
+
+///|
+pub fn DEBUGFLRPARAMTYPE_d6cb59864219::debug_flr_verifier_stop() -> DEBUGFLRPARAMTYPE_d6cb59864219 {
+  DEBUGFLRPARAMTYPE_d6cb59864219::from_int(8224)
+}
+
+///|
+pub fn DEBUGFLRPARAMTYPE_d6cb59864219::debug_flr_video_tdr_context() -> DEBUGFLRPARAMTYPE_d6cb59864219 {
+  DEBUGFLRPARAMTYPE_d6cb59864219::from_int(262)
+}
+
+///|
+pub fn DEBUGFLRPARAMTYPE_d6cb59864219::debug_flr_virtual_machine() -> DEBUGFLRPARAMTYPE_d6cb59864219 {
+  DEBUGFLRPARAMTYPE_d6cb59864219::from_int(17162)
+}
+
+///|
+pub fn DEBUGFLRPARAMTYPE_d6cb59864219::debug_flr_wait_chain_command() -> DEBUGFLRPARAMTYPE_d6cb59864219 {
+  DEBUGFLRPARAMTYPE_d6cb59864219::from_int(1048598)
+}
+
+///|
+pub fn DEBUGFLRPARAMTYPE_d6cb59864219::debug_flr_watson_generic_bucketing_00() -> DEBUGFLRPARAMTYPE_d6cb59864219 {
+  DEBUGFLRPARAMTYPE_d6cb59864219::from_int(16648)
+}
+
+///|
+pub fn DEBUGFLRPARAMTYPE_d6cb59864219::debug_flr_watson_generic_bucketing_01() -> DEBUGFLRPARAMTYPE_d6cb59864219 {
+  DEBUGFLRPARAMTYPE_d6cb59864219::from_int(16649)
+}
+
+///|
+pub fn DEBUGFLRPARAMTYPE_d6cb59864219::debug_flr_watson_generic_bucketing_02() -> DEBUGFLRPARAMTYPE_d6cb59864219 {
+  DEBUGFLRPARAMTYPE_d6cb59864219::from_int(16650)
+}
+
+///|
+pub fn DEBUGFLRPARAMTYPE_d6cb59864219::debug_flr_watson_generic_bucketing_03() -> DEBUGFLRPARAMTYPE_d6cb59864219 {
+  DEBUGFLRPARAMTYPE_d6cb59864219::from_int(16651)
+}
+
+///|
+pub fn DEBUGFLRPARAMTYPE_d6cb59864219::debug_flr_watson_generic_bucketing_04() -> DEBUGFLRPARAMTYPE_d6cb59864219 {
+  DEBUGFLRPARAMTYPE_d6cb59864219::from_int(16652)
+}
+
+///|
+pub fn DEBUGFLRPARAMTYPE_d6cb59864219::debug_flr_watson_generic_bucketing_05() -> DEBUGFLRPARAMTYPE_d6cb59864219 {
+  DEBUGFLRPARAMTYPE_d6cb59864219::from_int(16653)
+}
+
+///|
+pub fn DEBUGFLRPARAMTYPE_d6cb59864219::debug_flr_watson_generic_bucketing_06() -> DEBUGFLRPARAMTYPE_d6cb59864219 {
+  DEBUGFLRPARAMTYPE_d6cb59864219::from_int(16654)
+}
+
+///|
+pub fn DEBUGFLRPARAMTYPE_d6cb59864219::debug_flr_watson_generic_bucketing_07() -> DEBUGFLRPARAMTYPE_d6cb59864219 {
+  DEBUGFLRPARAMTYPE_d6cb59864219::from_int(16655)
+}
+
+///|
+pub fn DEBUGFLRPARAMTYPE_d6cb59864219::debug_flr_watson_generic_bucketing_08() -> DEBUGFLRPARAMTYPE_d6cb59864219 {
+  DEBUGFLRPARAMTYPE_d6cb59864219::from_int(16656)
+}
+
+///|
+pub fn DEBUGFLRPARAMTYPE_d6cb59864219::debug_flr_watson_generic_bucketing_09() -> DEBUGFLRPARAMTYPE_d6cb59864219 {
+  DEBUGFLRPARAMTYPE_d6cb59864219::from_int(16657)
+}
+
+///|
+pub fn DEBUGFLRPARAMTYPE_d6cb59864219::debug_flr_watson_generic_event_name() -> DEBUGFLRPARAMTYPE_d6cb59864219 {
+  DEBUGFLRPARAMTYPE_d6cb59864219::from_int(16647)
+}
+
+///|
+pub fn DEBUGFLRPARAMTYPE_d6cb59864219::debug_flr_watson_ibucket() -> DEBUGFLRPARAMTYPE_d6cb59864219 {
+  DEBUGFLRPARAMTYPE_d6cb59864219::from_int(16644)
+}
+
+///|
+pub fn DEBUGFLRPARAMTYPE_d6cb59864219::debug_flr_watson_ibuckettable_s1_resp() -> DEBUGFLRPARAMTYPE_d6cb59864219 {
+  DEBUGFLRPARAMTYPE_d6cb59864219::from_int(1048613)
+}
+
+///|
+pub fn DEBUGFLRPARAMTYPE_d6cb59864219::debug_flr_watson_ibucket_s1_resp() -> DEBUGFLRPARAMTYPE_d6cb59864219 {
+  DEBUGFLRPARAMTYPE_d6cb59864219::from_int(1048612)
+}
+
+///|
+pub fn DEBUGFLRPARAMTYPE_d6cb59864219::debug_flr_watson_module() -> DEBUGFLRPARAMTYPE_d6cb59864219 {
+  DEBUGFLRPARAMTYPE_d6cb59864219::from_int(16640)
+}
+
+///|
+pub fn DEBUGFLRPARAMTYPE_d6cb59864219::debug_flr_watson_module_offset() -> DEBUGFLRPARAMTYPE_d6cb59864219 {
+  DEBUGFLRPARAMTYPE_d6cb59864219::from_int(16642)
+}
+
+///|
+pub fn DEBUGFLRPARAMTYPE_d6cb59864219::debug_flr_watson_module_timestamp() -> DEBUGFLRPARAMTYPE_d6cb59864219 {
+  DEBUGFLRPARAMTYPE_d6cb59864219::from_int(16645)
+}
+
+///|
+pub fn DEBUGFLRPARAMTYPE_d6cb59864219::debug_flr_watson_module_version() -> DEBUGFLRPARAMTYPE_d6cb59864219 {
+  DEBUGFLRPARAMTYPE_d6cb59864219::from_int(16641)
+}
+
+///|
+pub fn DEBUGFLRPARAMTYPE_d6cb59864219::debug_flr_watson_process_timestamp() -> DEBUGFLRPARAMTYPE_d6cb59864219 {
+  DEBUGFLRPARAMTYPE_d6cb59864219::from_int(16646)
+}
+
+///|
+pub fn DEBUGFLRPARAMTYPE_d6cb59864219::debug_flr_watson_process_version() -> DEBUGFLRPARAMTYPE_d6cb59864219 {
+  DEBUGFLRPARAMTYPE_d6cb59864219::from_int(16643)
+}
+
+///|
+pub fn DEBUGFLRPARAMTYPE_d6cb59864219::debug_flr_wct_xml_available() -> DEBUGFLRPARAMTYPE_d6cb59864219 {
+  DEBUGFLRPARAMTYPE_d6cb59864219::from_int(1048591)
+}
+
+///|
+pub fn DEBUGFLRPARAMTYPE_d6cb59864219::debug_flr_wercollection_defaultcollection_failure() -> DEBUGFLRPARAMTYPE_d6cb59864219 {
+  DEBUGFLRPARAMTYPE_d6cb59864219::from_int(-268435438)
+}
+
+///|
+pub fn DEBUGFLRPARAMTYPE_d6cb59864219::debug_flr_wercollection_minidump_write_failure() -> DEBUGFLRPARAMTYPE_d6cb59864219 {
+  DEBUGFLRPARAMTYPE_d6cb59864219::from_int(-268435439)
+}
+
+///|
+pub fn DEBUGFLRPARAMTYPE_d6cb59864219::debug_flr_wercollection_processheapdump_request_failure() -> DEBUGFLRPARAMTYPE_d6cb59864219 {
+  DEBUGFLRPARAMTYPE_d6cb59864219::from_int(-268435440)
+}
+
+///|
+pub fn DEBUGFLRPARAMTYPE_d6cb59864219::debug_flr_wercollection_processterminated() -> DEBUGFLRPARAMTYPE_d6cb59864219 {
+  DEBUGFLRPARAMTYPE_d6cb59864219::from_int(-268435441)
+}
+
+///|
+pub fn DEBUGFLRPARAMTYPE_d6cb59864219::debug_flr_wer_data_collection_info() -> DEBUGFLRPARAMTYPE_d6cb59864219 {
+  DEBUGFLRPARAMTYPE_d6cb59864219::from_int(1048615)
+}
+
+///|
+pub fn DEBUGFLRPARAMTYPE_d6cb59864219::debug_flr_wer_machine_id() -> DEBUGFLRPARAMTYPE_d6cb59864219 {
+  DEBUGFLRPARAMTYPE_d6cb59864219::from_int(1048616)
+}
+
+///|
+pub fn DEBUGFLRPARAMTYPE_d6cb59864219::debug_flr_whea_error_record() -> DEBUGFLRPARAMTYPE_d6cb59864219 {
+  DEBUGFLRPARAMTYPE_d6cb59864219::from_int(25)
+}
+
+///|
+pub fn DEBUGFLRPARAMTYPE_d6cb59864219::debug_flr_winlogon_blackbox() -> DEBUGFLRPARAMTYPE_d6cb59864219 {
+  DEBUGFLRPARAMTYPE_d6cb59864219::from_int(-268435432)
+}
+
+///|
+pub fn DEBUGFLRPARAMTYPE_d6cb59864219::debug_flr_wmi_query_data() -> DEBUGFLRPARAMTYPE_d6cb59864219 {
+  DEBUGFLRPARAMTYPE_d6cb59864219::from_int(3149824)
+}
+
+///|
+pub fn DEBUGFLRPARAMTYPE_d6cb59864219::debug_flr_worker_routine() -> DEBUGFLRPARAMTYPE_d6cb59864219 {
+  DEBUGFLRPARAMTYPE_d6cb59864219::from_int(5)
+}
+
+///|
+pub fn DEBUGFLRPARAMTYPE_d6cb59864219::debug_flr_work_item() -> DEBUGFLRPARAMTYPE_d6cb59864219 {
+  DEBUGFLRPARAMTYPE_d6cb59864219::from_int(6)
+}
+
+///|
+pub fn DEBUGFLRPARAMTYPE_d6cb59864219::debug_flr_work_queue_item() -> DEBUGFLRPARAMTYPE_d6cb59864219 {
+  DEBUGFLRPARAMTYPE_d6cb59864219::from_int(21)
+}
+
+///|
+pub fn DEBUGFLRPARAMTYPE_d6cb59864219::debug_flr_wql_eventlog_info() -> DEBUGFLRPARAMTYPE_d6cb59864219 {
+  DEBUGFLRPARAMTYPE_d6cb59864219::from_int(16899)
+}
+
+///|
+pub fn DEBUGFLRPARAMTYPE_d6cb59864219::debug_flr_wql_event_count() -> DEBUGFLRPARAMTYPE_d6cb59864219 {
+  DEBUGFLRPARAMTYPE_d6cb59864219::from_int(16898)
+}
+
+///|
+pub fn DEBUGFLRPARAMTYPE_d6cb59864219::debug_flr_write_address() -> DEBUGFLRPARAMTYPE_d6cb59864219 {
+  DEBUGFLRPARAMTYPE_d6cb59864219::from_int(15)
+}
+
+///|
+pub fn DEBUGFLRPARAMTYPE_d6cb59864219::debug_flr_wrong_symbols() -> DEBUGFLRPARAMTYPE_d6cb59864219 {
+  DEBUGFLRPARAMTYPE_d6cb59864219::from_int(8195)
+}
+
+///|
+pub fn DEBUGFLRPARAMTYPE_d6cb59864219::debug_flr_wrong_symbols_size() -> DEBUGFLRPARAMTYPE_d6cb59864219 {
+  DEBUGFLRPARAMTYPE_d6cb59864219::from_int(8247)
+}
+
+///|
+pub fn DEBUGFLRPARAMTYPE_d6cb59864219::debug_flr_wrong_symbols_timestamp() -> DEBUGFLRPARAMTYPE_d6cb59864219 {
+  DEBUGFLRPARAMTYPE_d6cb59864219::from_int(8246)
+}
+
+///|
+pub fn DEBUGFLRPARAMTYPE_d6cb59864219::debug_flr_xbox_live_environment() -> DEBUGFLRPARAMTYPE_d6cb59864219 {
+  DEBUGFLRPARAMTYPE_d6cb59864219::from_int(12368)
+}
+
+///|
+pub fn DEBUGFLRPARAMTYPE_d6cb59864219::debug_flr_xbox_system_crashtime() -> DEBUGFLRPARAMTYPE_d6cb59864219 {
+  DEBUGFLRPARAMTYPE_d6cb59864219::from_int(12367)
+}
+
+///|
+pub fn DEBUGFLRPARAMTYPE_d6cb59864219::debug_flr_xbox_system_uptime() -> DEBUGFLRPARAMTYPE_d6cb59864219 {
+  DEBUGFLRPARAMTYPE_d6cb59864219::from_int(12366)
+}
+
+///|
+pub fn DEBUGFLRPARAMTYPE_d6cb59864219::debug_flr_xcs_path() -> DEBUGFLRPARAMTYPE_d6cb59864219 {
+  DEBUGFLRPARAMTYPE_d6cb59864219::from_int(1048603)
+}
+
+///|
+pub fn DEBUGFLRPARAMTYPE_d6cb59864219::debug_flr_xdv_help_link() -> DEBUGFLRPARAMTYPE_d6cb59864219 {
+  DEBUGFLRPARAMTYPE_d6cb59864219::from_int(-1073741811)
+}
+
+///|
+pub fn DEBUGFLRPARAMTYPE_d6cb59864219::debug_flr_xdv_rule_info() -> DEBUGFLRPARAMTYPE_d6cb59864219 {
+  DEBUGFLRPARAMTYPE_d6cb59864219::from_int(-1073741810)
+}
+
+///|
+pub fn DEBUGFLRPARAMTYPE_d6cb59864219::debug_flr_xdv_state_variable() -> DEBUGFLRPARAMTYPE_d6cb59864219 {
+  DEBUGFLRPARAMTYPE_d6cb59864219::from_int(-1073741812)
+}
+
+///|
+pub fn DEBUGFLRPARAMTYPE_d6cb59864219::debug_flr_xdv_violated_condition() -> DEBUGFLRPARAMTYPE_d6cb59864219 {
+  DEBUGFLRPARAMTYPE_d6cb59864219::from_int(-1073741813)
+}
+
+///|
+pub fn DEBUGFLRPARAMTYPE_d6cb59864219::debug_flr_xhci_firmware_version() -> DEBUGFLRPARAMTYPE_d6cb59864219 {
+  DEBUGFLRPARAMTYPE_d6cb59864219::from_int(65590)
+}
+
+///|
+pub fn DEBUGFLRPARAMTYPE_d6cb59864219::debug_flr_xml_application_name() -> DEBUGFLRPARAMTYPE_d6cb59864219 {
+  DEBUGFLRPARAMTYPE_d6cb59864219::from_int(2097231)
+}
+
+///|
+pub fn DEBUGFLRPARAMTYPE_d6cb59864219::debug_flr_xml_attribute() -> DEBUGFLRPARAMTYPE_d6cb59864219 {
+  DEBUGFLRPARAMTYPE_d6cb59864219::from_int(2097194)
+}
+
+///|
+pub fn DEBUGFLRPARAMTYPE_d6cb59864219::debug_flr_xml_attribute_d1_value() -> DEBUGFLRPARAMTYPE_d6cb59864219 {
+  DEBUGFLRPARAMTYPE_d6cb59864219::from_int(2097197)
+}
+
+///|
+pub fn DEBUGFLRPARAMTYPE_d6cb59864219::debug_flr_xml_attribute_d2_value() -> DEBUGFLRPARAMTYPE_d6cb59864219 {
+  DEBUGFLRPARAMTYPE_d6cb59864219::from_int(2097198)
+}
+
+///|
+pub fn DEBUGFLRPARAMTYPE_d6cb59864219::debug_flr_xml_attribute_dovalue() -> DEBUGFLRPARAMTYPE_d6cb59864219 {
+  DEBUGFLRPARAMTYPE_d6cb59864219::from_int(2097199)
+}
+
+///|
+pub fn DEBUGFLRPARAMTYPE_d6cb59864219::debug_flr_xml_attribute_frame_number() -> DEBUGFLRPARAMTYPE_d6cb59864219 {
+  DEBUGFLRPARAMTYPE_d6cb59864219::from_int(2097201)
+}
+
+///|
+pub fn DEBUGFLRPARAMTYPE_d6cb59864219::debug_flr_xml_attribute_list() -> DEBUGFLRPARAMTYPE_d6cb59864219 {
+  DEBUGFLRPARAMTYPE_d6cb59864219::from_int(2097193)
+}
+
+///|
+pub fn DEBUGFLRPARAMTYPE_d6cb59864219::debug_flr_xml_attribute_name() -> DEBUGFLRPARAMTYPE_d6cb59864219 {
+  DEBUGFLRPARAMTYPE_d6cb59864219::from_int(2097195)
+}
+
+///|
+pub fn DEBUGFLRPARAMTYPE_d6cb59864219::debug_flr_xml_attribute_thread_index() -> DEBUGFLRPARAMTYPE_d6cb59864219 {
+  DEBUGFLRPARAMTYPE_d6cb59864219::from_int(2097202)
+}
+
+///|
+pub fn DEBUGFLRPARAMTYPE_d6cb59864219::debug_flr_xml_attribute_value() -> DEBUGFLRPARAMTYPE_d6cb59864219 {
+  DEBUGFLRPARAMTYPE_d6cb59864219::from_int(2097196)
+}
+
+///|
+pub fn DEBUGFLRPARAMTYPE_d6cb59864219::debug_flr_xml_attribute_value_type() -> DEBUGFLRPARAMTYPE_d6cb59864219 {
+  DEBUGFLRPARAMTYPE_d6cb59864219::from_int(2097200)
+}
+
+///|
+pub fn DEBUGFLRPARAMTYPE_d6cb59864219::debug_flr_xml_encoded_offsets() -> DEBUGFLRPARAMTYPE_d6cb59864219 {
+  DEBUGFLRPARAMTYPE_d6cb59864219::from_int(2097213)
+}
+
+///|
+pub fn DEBUGFLRPARAMTYPE_d6cb59864219::debug_flr_xml_eventtype() -> DEBUGFLRPARAMTYPE_d6cb59864219 {
+  DEBUGFLRPARAMTYPE_d6cb59864219::from_int(2097235)
+}
+
+///|
+pub fn DEBUGFLRPARAMTYPE_d6cb59864219::debug_flr_xml_globalattribute_list() -> DEBUGFLRPARAMTYPE_d6cb59864219 {
+  DEBUGFLRPARAMTYPE_d6cb59864219::from_int(2097192)
+}
+
+///|
+pub fn DEBUGFLRPARAMTYPE_d6cb59864219::debug_flr_xml_modern_async_request_outstanding() -> DEBUGFLRPARAMTYPE_d6cb59864219 {
+  DEBUGFLRPARAMTYPE_d6cb59864219::from_int(2097234)
+}
+
+///|
+pub fn DEBUGFLRPARAMTYPE_d6cb59864219::debug_flr_xml_module_info() -> DEBUGFLRPARAMTYPE_d6cb59864219 {
+  DEBUGFLRPARAMTYPE_d6cb59864219::from_int(2097169)
+}
+
+///|
+pub fn DEBUGFLRPARAMTYPE_d6cb59864219::debug_flr_xml_module_info_base() -> DEBUGFLRPARAMTYPE_d6cb59864219 {
+  DEBUGFLRPARAMTYPE_d6cb59864219::from_int(2097186)
+}
+
+///|
+pub fn DEBUGFLRPARAMTYPE_d6cb59864219::debug_flr_xml_module_info_checksum() -> DEBUGFLRPARAMTYPE_d6cb59864219 {
+  DEBUGFLRPARAMTYPE_d6cb59864219::from_int(2097174)
+}
+
+///|
+pub fn DEBUGFLRPARAMTYPE_d6cb59864219::debug_flr_xml_module_info_company_name() -> DEBUGFLRPARAMTYPE_d6cb59864219 {
+  DEBUGFLRPARAMTYPE_d6cb59864219::from_int(2097182)
+}
+
+///|
+pub fn DEBUGFLRPARAMTYPE_d6cb59864219::debug_flr_xml_module_info_driver_group() -> DEBUGFLRPARAMTYPE_d6cb59864219 {
+  DEBUGFLRPARAMTYPE_d6cb59864219::from_int(2097251)
+}
+
+///|
+pub fn DEBUGFLRPARAMTYPE_d6cb59864219::debug_flr_xml_module_info_file_description() -> DEBUGFLRPARAMTYPE_d6cb59864219 {
+  DEBUGFLRPARAMTYPE_d6cb59864219::from_int(2097183)
+}
+
+///|
+pub fn DEBUGFLRPARAMTYPE_d6cb59864219::debug_flr_xml_module_info_file_flags() -> DEBUGFLRPARAMTYPE_d6cb59864219 {
+  DEBUGFLRPARAMTYPE_d6cb59864219::from_int(2097223)
+}
+
+///|
+pub fn DEBUGFLRPARAMTYPE_d6cb59864219::debug_flr_xml_module_info_fixed_file_ver() -> DEBUGFLRPARAMTYPE_d6cb59864219 {
+  DEBUGFLRPARAMTYPE_d6cb59864219::from_int(2097178)
+}
+
+///|
+pub fn DEBUGFLRPARAMTYPE_d6cb59864219::debug_flr_xml_module_info_fixed_prod_ver() -> DEBUGFLRPARAMTYPE_d6cb59864219 {
+  DEBUGFLRPARAMTYPE_d6cb59864219::from_int(2097179)
+}
+
+///|
+pub fn DEBUGFLRPARAMTYPE_d6cb59864219::debug_flr_xml_module_info_image_name() -> DEBUGFLRPARAMTYPE_d6cb59864219 {
+  DEBUGFLRPARAMTYPE_d6cb59864219::from_int(2097172)
+}
+
+///|
+pub fn DEBUGFLRPARAMTYPE_d6cb59864219::debug_flr_xml_module_info_image_path() -> DEBUGFLRPARAMTYPE_d6cb59864219 {
+  DEBUGFLRPARAMTYPE_d6cb59864219::from_int(2097173)
+}
+
+///|
+pub fn DEBUGFLRPARAMTYPE_d6cb59864219::debug_flr_xml_module_info_index() -> DEBUGFLRPARAMTYPE_d6cb59864219 {
+  DEBUGFLRPARAMTYPE_d6cb59864219::from_int(2097170)
+}
+
+///|
+pub fn DEBUGFLRPARAMTYPE_d6cb59864219::debug_flr_xml_module_info_internal_name() -> DEBUGFLRPARAMTYPE_d6cb59864219 {
+  DEBUGFLRPARAMTYPE_d6cb59864219::from_int(2097184)
+}
+
+///|
+pub fn DEBUGFLRPARAMTYPE_d6cb59864219::debug_flr_xml_module_info_name() -> DEBUGFLRPARAMTYPE_d6cb59864219 {
+  DEBUGFLRPARAMTYPE_d6cb59864219::from_int(2097171)
+}
+
+///|
+pub fn DEBUGFLRPARAMTYPE_d6cb59864219::debug_flr_xml_module_info_on_stack() -> DEBUGFLRPARAMTYPE_d6cb59864219 {
+  DEBUGFLRPARAMTYPE_d6cb59864219::from_int(2097177)
+}
+
+///|
+pub fn DEBUGFLRPARAMTYPE_d6cb59864219::debug_flr_xml_module_info_orig_file_name() -> DEBUGFLRPARAMTYPE_d6cb59864219 {
+  DEBUGFLRPARAMTYPE_d6cb59864219::from_int(2097185)
+}
+
+///|
+pub fn DEBUGFLRPARAMTYPE_d6cb59864219::debug_flr_xml_module_info_product_name() -> DEBUGFLRPARAMTYPE_d6cb59864219 {
+  DEBUGFLRPARAMTYPE_d6cb59864219::from_int(2097188)
+}
+
+///|
+pub fn DEBUGFLRPARAMTYPE_d6cb59864219::debug_flr_xml_module_info_size() -> DEBUGFLRPARAMTYPE_d6cb59864219 {
+  DEBUGFLRPARAMTYPE_d6cb59864219::from_int(2097187)
+}
+
+///|
+pub fn DEBUGFLRPARAMTYPE_d6cb59864219::debug_flr_xml_module_info_string_file_ver() -> DEBUGFLRPARAMTYPE_d6cb59864219 {
+  DEBUGFLRPARAMTYPE_d6cb59864219::from_int(2097180)
+}
+
+///|
+pub fn DEBUGFLRPARAMTYPE_d6cb59864219::debug_flr_xml_module_info_string_prod_ver() -> DEBUGFLRPARAMTYPE_d6cb59864219 {
+  DEBUGFLRPARAMTYPE_d6cb59864219::from_int(2097181)
+}
+
+///|
+pub fn DEBUGFLRPARAMTYPE_d6cb59864219::debug_flr_xml_module_info_symbol_type() -> DEBUGFLRPARAMTYPE_d6cb59864219 {
+  DEBUGFLRPARAMTYPE_d6cb59864219::from_int(2097222)
+}
+
+///|
+pub fn DEBUGFLRPARAMTYPE_d6cb59864219::debug_flr_xml_module_info_symsrv_image_detail() -> DEBUGFLRPARAMTYPE_d6cb59864219 {
+  DEBUGFLRPARAMTYPE_d6cb59864219::from_int(2097245)
+}
+
+///|
+pub fn DEBUGFLRPARAMTYPE_d6cb59864219::debug_flr_xml_module_info_symsrv_image_error() -> DEBUGFLRPARAMTYPE_d6cb59864219 {
+  DEBUGFLRPARAMTYPE_d6cb59864219::from_int(2097244)
+}
+
+///|
+pub fn DEBUGFLRPARAMTYPE_d6cb59864219::debug_flr_xml_module_info_symsrv_image_sec() -> DEBUGFLRPARAMTYPE_d6cb59864219 {
+  DEBUGFLRPARAMTYPE_d6cb59864219::from_int(2097246)
+}
+
+///|
+pub fn DEBUGFLRPARAMTYPE_d6cb59864219::debug_flr_xml_module_info_symsrv_image_status() -> DEBUGFLRPARAMTYPE_d6cb59864219 {
+  DEBUGFLRPARAMTYPE_d6cb59864219::from_int(2097243)
+}
+
+///|
+pub fn DEBUGFLRPARAMTYPE_d6cb59864219::debug_flr_xml_module_info_symsrv_pdb_detail() -> DEBUGFLRPARAMTYPE_d6cb59864219 {
+  DEBUGFLRPARAMTYPE_d6cb59864219::from_int(2097249)
+}
+
+///|
+pub fn DEBUGFLRPARAMTYPE_d6cb59864219::debug_flr_xml_module_info_symsrv_pdb_error() -> DEBUGFLRPARAMTYPE_d6cb59864219 {
+  DEBUGFLRPARAMTYPE_d6cb59864219::from_int(2097248)
+}
+
+///|
+pub fn DEBUGFLRPARAMTYPE_d6cb59864219::debug_flr_xml_module_info_symsrv_pdb_sec() -> DEBUGFLRPARAMTYPE_d6cb59864219 {
+  DEBUGFLRPARAMTYPE_d6cb59864219::from_int(2097250)
+}
+
+///|
+pub fn DEBUGFLRPARAMTYPE_d6cb59864219::debug_flr_xml_module_info_symsrv_pdb_status() -> DEBUGFLRPARAMTYPE_d6cb59864219 {
+  DEBUGFLRPARAMTYPE_d6cb59864219::from_int(2097247)
+}
+
+///|
+pub fn DEBUGFLRPARAMTYPE_d6cb59864219::debug_flr_xml_module_info_timestamp() -> DEBUGFLRPARAMTYPE_d6cb59864219 {
+  DEBUGFLRPARAMTYPE_d6cb59864219::from_int(2097175)
+}
+
+///|
+pub fn DEBUGFLRPARAMTYPE_d6cb59864219::debug_flr_xml_module_info_unloaded() -> DEBUGFLRPARAMTYPE_d6cb59864219 {
+  DEBUGFLRPARAMTYPE_d6cb59864219::from_int(2097176)
+}
+
+///|
+pub fn DEBUGFLRPARAMTYPE_d6cb59864219::debug_flr_xml_module_list() -> DEBUGFLRPARAMTYPE_d6cb59864219 {
+  DEBUGFLRPARAMTYPE_d6cb59864219::from_int(2097154)
+}
+
+///|
+pub fn DEBUGFLRPARAMTYPE_d6cb59864219::debug_flr_xml_package_moniker() -> DEBUGFLRPARAMTYPE_d6cb59864219 {
+  DEBUGFLRPARAMTYPE_d6cb59864219::from_int(2097232)
+}
+
+///|
+pub fn DEBUGFLRPARAMTYPE_d6cb59864219::debug_flr_xml_package_name() -> DEBUGFLRPARAMTYPE_d6cb59864219 {
+  DEBUGFLRPARAMTYPE_d6cb59864219::from_int(2097236)
+}
+
+///|
+pub fn DEBUGFLRPARAMTYPE_d6cb59864219::debug_flr_xml_package_relative_application_id() -> DEBUGFLRPARAMTYPE_d6cb59864219 {
+  DEBUGFLRPARAMTYPE_d6cb59864219::from_int(2097233)
+}
+
+///|
+pub fn DEBUGFLRPARAMTYPE_d6cb59864219::debug_flr_xml_package_version() -> DEBUGFLRPARAMTYPE_d6cb59864219 {
+  DEBUGFLRPARAMTYPE_d6cb59864219::from_int(2097237)
+}
+
+///|
+pub fn DEBUGFLRPARAMTYPE_d6cb59864219::debug_flr_xml_problemclass() -> DEBUGFLRPARAMTYPE_d6cb59864219 {
+  DEBUGFLRPARAMTYPE_d6cb59864219::from_int(2097204)
+}
+
+///|
+pub fn DEBUGFLRPARAMTYPE_d6cb59864219::debug_flr_xml_problemclass_frame_number() -> DEBUGFLRPARAMTYPE_d6cb59864219 {
+  DEBUGFLRPARAMTYPE_d6cb59864219::from_int(2097208)
+}
+
+///|
+pub fn DEBUGFLRPARAMTYPE_d6cb59864219::debug_flr_xml_problemclass_list() -> DEBUGFLRPARAMTYPE_d6cb59864219 {
+  DEBUGFLRPARAMTYPE_d6cb59864219::from_int(2097203)
+}
+
+///|
+pub fn DEBUGFLRPARAMTYPE_d6cb59864219::debug_flr_xml_problemclass_name() -> DEBUGFLRPARAMTYPE_d6cb59864219 {
+  DEBUGFLRPARAMTYPE_d6cb59864219::from_int(2097205)
+}
+
+///|
+pub fn DEBUGFLRPARAMTYPE_d6cb59864219::debug_flr_xml_problemclass_thread_index() -> DEBUGFLRPARAMTYPE_d6cb59864219 {
+  DEBUGFLRPARAMTYPE_d6cb59864219::from_int(2097209)
+}
+
+///|
+pub fn DEBUGFLRPARAMTYPE_d6cb59864219::debug_flr_xml_problemclass_value() -> DEBUGFLRPARAMTYPE_d6cb59864219 {
+  DEBUGFLRPARAMTYPE_d6cb59864219::from_int(2097206)
+}
+
+///|
+pub fn DEBUGFLRPARAMTYPE_d6cb59864219::debug_flr_xml_problemclass_value_type() -> DEBUGFLRPARAMTYPE_d6cb59864219 {
+  DEBUGFLRPARAMTYPE_d6cb59864219::from_int(2097207)
+}
+
+///|
+pub fn DEBUGFLRPARAMTYPE_d6cb59864219::debug_flr_xml_stack_frame_triage_status() -> DEBUGFLRPARAMTYPE_d6cb59864219 {
+  DEBUGFLRPARAMTYPE_d6cb59864219::from_int(2097210)
+}
+
+///|
+pub fn DEBUGFLRPARAMTYPE_d6cb59864219::debug_flr_xml_systeminfo() -> DEBUGFLRPARAMTYPE_d6cb59864219 {
+  DEBUGFLRPARAMTYPE_d6cb59864219::from_int(2097226)
+}
+
+///|
+pub fn DEBUGFLRPARAMTYPE_d6cb59864219::debug_flr_xml_systeminfo_systemmanufacturer() -> DEBUGFLRPARAMTYPE_d6cb59864219 {
+  DEBUGFLRPARAMTYPE_d6cb59864219::from_int(2097227)
+}
+
+///|
+pub fn DEBUGFLRPARAMTYPE_d6cb59864219::debug_flr_xml_systeminfo_systemmarker() -> DEBUGFLRPARAMTYPE_d6cb59864219 {
+  DEBUGFLRPARAMTYPE_d6cb59864219::from_int(2097229)
+}
+
+///|
+pub fn DEBUGFLRPARAMTYPE_d6cb59864219::debug_flr_xml_systeminfo_systemmodel() -> DEBUGFLRPARAMTYPE_d6cb59864219 {
+  DEBUGFLRPARAMTYPE_d6cb59864219::from_int(2097228)
+}
+
+///|
+pub fn DEBUGFLRPARAMTYPE_d6cb59864219::debug_flr_xproc_dump_available() -> DEBUGFLRPARAMTYPE_d6cb59864219 {
+  DEBUGFLRPARAMTYPE_d6cb59864219::from_int(1048592)
+}
+
+///|
+pub fn DEBUGFLRPARAMTYPE_d6cb59864219::debug_flr_xproc_hang() -> DEBUGFLRPARAMTYPE_d6cb59864219 {
+  DEBUGFLRPARAMTYPE_d6cb59864219::from_int(1048588)
+}
+
+///|
+pub fn DEBUGFLRPARAMTYPE_d6cb59864219::debug_flr_zeroed_stack() -> DEBUGFLRPARAMTYPE_d6cb59864219 {
+  DEBUGFLRPARAMTYPE_d6cb59864219::from_int(8194)
+}
+
+///|
+pub fn DEBUGPOOLREGION_5c3e3f5d6c78::dbg_pool_region_max() -> DEBUGPOOLREGION_5c3e3f5d6c78 {
+  DEBUGPOOLREGION_5c3e3f5d6c78::from_int(6)
+}
+
+///|
+pub fn DEBUGPOOLREGION_5c3e3f5d6c78::dbg_pool_region_non_paged() -> DEBUGPOOLREGION_5c3e3f5d6c78 {
+  DEBUGPOOLREGION_5c3e3f5d6c78::from_int(3)
+}
+
+///|
+pub fn DEBUGPOOLREGION_5c3e3f5d6c78::dbg_pool_region_non_paged_expansion() -> DEBUGPOOLREGION_5c3e3f5d6c78 {
+  DEBUGPOOLREGION_5c3e3f5d6c78::from_int(4)
+}
+
+///|
+pub fn DEBUGPOOLREGION_5c3e3f5d6c78::dbg_pool_region_paged() -> DEBUGPOOLREGION_5c3e3f5d6c78 {
+  DEBUGPOOLREGION_5c3e3f5d6c78::from_int(2)
+}
+
+///|
+pub fn DEBUGPOOLREGION_5c3e3f5d6c78::dbg_pool_region_session_paged() -> DEBUGPOOLREGION_5c3e3f5d6c78 {
+  DEBUGPOOLREGION_5c3e3f5d6c78::from_int(5)
+}
+
+///|
+pub fn DEBUGPOOLREGION_5c3e3f5d6c78::dbg_pool_region_special() -> DEBUGPOOLREGION_5c3e3f5d6c78 {
+  DEBUGPOOLREGION_5c3e3f5d6c78::from_int(1)
+}
+
+///|
+pub fn DEBUGPOOLREGION_5c3e3f5d6c78::dbg_pool_region_unknown() -> DEBUGPOOLREGION_5c3e3f5d6c78 {
+  DEBUGPOOLREGION_5c3e3f5d6c78::from_int(0)
+}
+
+///|
+pub fn EXTTDOP_24cbabb56058::copy() -> EXTTDOP_24cbabb56058 {
+  EXTTDOP_24cbabb56058::from_int(0)
+}
+
+///|
+pub fn EXTTDOP_24cbabb56058::count() -> EXTTDOP_24cbabb56058 {
+  EXTTDOP_24cbabb56058::from_int(19)
+}
+
+///|
+pub fn EXTTDOP_24cbabb56058::evaluate() -> EXTTDOP_24cbabb56058 {
+  EXTTDOP_24cbabb56058::from_int(5)
+}
+
+///|
+pub fn EXTTDOP_24cbabb56058::get_array_element() -> EXTTDOP_24cbabb56058 {
+  EXTTDOP_24cbabb56058::from_int(12)
+}
+
+///|
+pub fn EXTTDOP_24cbabb56058::get_dereference() -> EXTTDOP_24cbabb56058 {
+  EXTTDOP_24cbabb56058::from_int(13)
+}
+
+///|
+pub fn EXTTDOP_24cbabb56058::get_field() -> EXTTDOP_24cbabb56058 {
+  EXTTDOP_24cbabb56058::from_int(4)
+}
+
+///|
+pub fn EXTTDOP_24cbabb56058::get_field_offset() -> EXTTDOP_24cbabb56058 {
+  EXTTDOP_24cbabb56058::from_int(11)
+}
+
+///|
+pub fn EXTTDOP_24cbabb56058::get_pointer_to() -> EXTTDOP_24cbabb56058 {
+  EXTTDOP_24cbabb56058::from_int(16)
+}
+
+///|
+pub fn EXTTDOP_24cbabb56058::get_type_name() -> EXTTDOP_24cbabb56058 {
+  EXTTDOP_24cbabb56058::from_int(6)
+}
+
+///|
+pub fn EXTTDOP_24cbabb56058::get_type_size() -> EXTTDOP_24cbabb56058 {
+  EXTTDOP_24cbabb56058::from_int(14)
+}
+
+///|
+pub fn EXTTDOP_24cbabb56058::has_field() -> EXTTDOP_24cbabb56058 {
+  EXTTDOP_24cbabb56058::from_int(10)
+}
+
+///|
+pub fn EXTTDOP_24cbabb56058::output_full_value() -> EXTTDOP_24cbabb56058 {
+  EXTTDOP_24cbabb56058::from_int(9)
+}
+
+///|
+pub fn EXTTDOP_24cbabb56058::output_simple_value() -> EXTTDOP_24cbabb56058 {
+  EXTTDOP_24cbabb56058::from_int(8)
+}
+
+///|
+pub fn EXTTDOP_24cbabb56058::output_type_definition() -> EXTTDOP_24cbabb56058 {
+  EXTTDOP_24cbabb56058::from_int(15)
+}
+
+///|
+pub fn EXTTDOP_24cbabb56058::output_type_name() -> EXTTDOP_24cbabb56058 {
+  EXTTDOP_24cbabb56058::from_int(7)
+}
+
+///|
+pub fn EXTTDOP_24cbabb56058::release() -> EXTTDOP_24cbabb56058 {
+  EXTTDOP_24cbabb56058::from_int(1)
+}
+
+///|
+pub fn EXTTDOP_24cbabb56058::set_from_expr() -> EXTTDOP_24cbabb56058 {
+  EXTTDOP_24cbabb56058::from_int(2)
+}
+
+///|
+pub fn EXTTDOP_24cbabb56058::set_from_type_id_and_u64() -> EXTTDOP_24cbabb56058 {
+  EXTTDOP_24cbabb56058::from_int(17)
+}
+
+///|
+pub fn EXTTDOP_24cbabb56058::set_from_u64_expr() -> EXTTDOP_24cbabb56058 {
+  EXTTDOP_24cbabb56058::from_int(3)
+}
+
+///|
+pub fn EXTTDOP_24cbabb56058::set_ptr_from_type_id_and_u64() -> EXTTDOP_24cbabb56058 {
+  EXTTDOP_24cbabb56058::from_int(18)
+}
+
+///|
+pub fn ErrorClass_efe5cf1d2f09::error() -> ErrorClass_efe5cf1d2f09 {
+  ErrorClass_efe5cf1d2f09::from_int(1)
+}
+
+///|
+pub fn ErrorClass_efe5cf1d2f09::warning() -> ErrorClass_efe5cf1d2f09 {
+  ErrorClass_efe5cf1d2f09::from_int(0)
+}
+
+///|
+pub fn ExtendedArrayDimensionFlags_e1fe648f7a17::extended_array_length_is_offset() -> ExtendedArrayDimensionFlags_e1fe648f7a17 {
+  ExtendedArrayDimensionFlags_e1fe648f7a17::from_int(3)
+}
+
+///|
+pub fn ExtendedArrayDimensionFlags_e1fe648f7a17::extended_array_length_is_offset32() -> ExtendedArrayDimensionFlags_e1fe648f7a17 {
+  ExtendedArrayDimensionFlags_e1fe648f7a17::from_int(1)
+}
+
+///|
+pub fn ExtendedArrayDimensionFlags_e1fe648f7a17::extended_array_length_is_offset64() -> ExtendedArrayDimensionFlags_e1fe648f7a17 {
+  ExtendedArrayDimensionFlags_e1fe648f7a17::from_int(2)
+}
+
+///|
+pub fn ExtendedArrayDimensionFlags_e1fe648f7a17::extended_array_lower_bound_is_offset() -> ExtendedArrayDimensionFlags_e1fe648f7a17 {
+  ExtendedArrayDimensionFlags_e1fe648f7a17::from_int(12)
+}
+
+///|
+pub fn ExtendedArrayDimensionFlags_e1fe648f7a17::extended_array_lower_bound_is_offset32() -> ExtendedArrayDimensionFlags_e1fe648f7a17 {
+  ExtendedArrayDimensionFlags_e1fe648f7a17::from_int(4)
+}
+
+///|
+pub fn ExtendedArrayDimensionFlags_e1fe648f7a17::extended_array_lower_bound_is_offset64() -> ExtendedArrayDimensionFlags_e1fe648f7a17 {
+  ExtendedArrayDimensionFlags_e1fe648f7a17::from_int(8)
+}
+
+///|
+pub fn ExtendedArrayDimensionFlags_e1fe648f7a17::extended_array_stride_is_computed() -> ExtendedArrayDimensionFlags_e1fe648f7a17 {
+  ExtendedArrayDimensionFlags_e1fe648f7a17::from_int(192)
+}
+
+///|
+pub fn ExtendedArrayDimensionFlags_e1fe648f7a17::extended_array_stride_is_computed_by_next_rank() -> ExtendedArrayDimensionFlags_e1fe648f7a17 {
+  ExtendedArrayDimensionFlags_e1fe648f7a17::from_int(64)
+}
+
+///|
+pub fn ExtendedArrayDimensionFlags_e1fe648f7a17::extended_array_stride_is_computed_by_previous_rank() -> ExtendedArrayDimensionFlags_e1fe648f7a17 {
+  ExtendedArrayDimensionFlags_e1fe648f7a17::from_int(128)
+}
+
+///|
+pub fn ExtendedArrayDimensionFlags_e1fe648f7a17::extended_array_stride_is_offset() -> ExtendedArrayDimensionFlags_e1fe648f7a17 {
+  ExtendedArrayDimensionFlags_e1fe648f7a17::from_int(48)
+}
+
+///|
+pub fn ExtendedArrayDimensionFlags_e1fe648f7a17::extended_array_stride_is_offset32() -> ExtendedArrayDimensionFlags_e1fe648f7a17 {
+  ExtendedArrayDimensionFlags_e1fe648f7a17::from_int(16)
+}
+
+///|
+pub fn ExtendedArrayDimensionFlags_e1fe648f7a17::extended_array_stride_is_offset64() -> ExtendedArrayDimensionFlags_e1fe648f7a17 {
+  ExtendedArrayDimensionFlags_e1fe648f7a17::from_int(32)
+}
+
+///|
+pub fn FAENTRYTYPE_cdee2239e95b::debug_fa_entry_ansi_string() -> FAENTRYTYPE_cdee2239e95b {
+  FAENTRYTYPE_cdee2239e95b::from_int(5)
+}
+
+///|
+pub fn FAENTRYTYPE_cdee2239e95b::debug_fa_entry_ansi_strin_gs() -> FAENTRYTYPE_cdee2239e95b {
+  FAENTRYTYPE_cdee2239e95b::from_int(6)
+}
+
+///|
+pub fn FAENTRYTYPE_cdee2239e95b::debug_fa_entry_array() -> FAENTRYTYPE_cdee2239e95b {
+  FAENTRYTYPE_cdee2239e95b::from_int(32768)
+}
+
+///|
+pub fn FAENTRYTYPE_cdee2239e95b::debug_fa_entry_extension_cmd() -> FAENTRYTYPE_cdee2239e95b {
+  FAENTRYTYPE_cdee2239e95b::from_int(7)
+}
+
+///|
+pub fn FAENTRYTYPE_cdee2239e95b::debug_fa_entry_instruction_offset() -> FAENTRYTYPE_cdee2239e95b {
+  FAENTRYTYPE_cdee2239e95b::from_int(3)
+}
+
+///|
+pub fn FAENTRYTYPE_cdee2239e95b::debug_fa_entry_no_type() -> FAENTRYTYPE_cdee2239e95b {
+  FAENTRYTYPE_cdee2239e95b::from_int(0)
+}
+
+///|
+pub fn FAENTRYTYPE_cdee2239e95b::debug_fa_entry_pointer() -> FAENTRYTYPE_cdee2239e95b {
+  FAENTRYTYPE_cdee2239e95b::from_int(4)
+}
+
+///|
+pub fn FAENTRYTYPE_cdee2239e95b::debug_fa_entry_structured_data() -> FAENTRYTYPE_cdee2239e95b {
+  FAENTRYTYPE_cdee2239e95b::from_int(8)
+}
+
+///|
+pub fn FAENTRYTYPE_cdee2239e95b::debug_fa_entry_ulong() -> FAENTRYTYPE_cdee2239e95b {
+  FAENTRYTYPE_cdee2239e95b::from_int(1)
+}
+
+///|
+pub fn FAENTRYTYPE_cdee2239e95b::debug_fa_entry_ulong64() -> FAENTRYTYPE_cdee2239e95b {
+  FAENTRYTYPE_cdee2239e95b::from_int(2)
+}
+
+///|
+pub fn FAENTRYTYPE_cdee2239e95b::debug_fa_entry_unicode_string() -> FAENTRYTYPE_cdee2239e95b {
+  FAENTRYTYPE_cdee2239e95b::from_int(9)
+}
+
+///|
+pub fn FAEXTENSIONPLUGINPHASE_73e08a805345::fa_plugin_initialization() -> FAEXTENSIONPLUGINPHASE_73e08a805345 {
+  FAEXTENSIONPLUGINPHASE_73e08a805345::from_int(1)
+}
+
+///|
+pub fn FAEXTENSIONPLUGINPHASE_73e08a805345::fa_plugin_post_bucketing() -> FAEXTENSIONPLUGINPHASE_73e08a805345 {
+  FAEXTENSIONPLUGINPHASE_73e08a805345::from_int(8)
+}
+
+///|
+pub fn FAEXTENSIONPLUGINPHASE_73e08a805345::fa_plugin_pre_bucketing() -> FAEXTENSIONPLUGINPHASE_73e08a805345 {
+  FAEXTENSIONPLUGINPHASE_73e08a805345::from_int(4)
+}
+
+///|
+pub fn FAEXTENSIONPLUGINPHASE_73e08a805345::fa_plugin_stack_analysis() -> FAEXTENSIONPLUGINPHASE_73e08a805345 {
+  FAEXTENSIONPLUGINPHASE_73e08a805345::from_int(2)
+}
+
+///|
+pub fn IActionEnumerator_f92047a60bc0::get_next_raw(
+  this_ : @win32_core.RawAddress,
+  key_name : @win32_core.RawAddress,
+  action_name : @win32_core.RawAddress,
+  action_description : @win32_core.RawAddress,
+  action_is_default : @win32_core.RawAddress,
+  action_method : @win32_core.RawAddress,
+  metadta : @win32_core.RawAddress,
+) -> Int {
+  get_next_bbfce1c08bbb_raw(
+    this_, key_name, action_name, action_description, action_is_default, action_method,
+    metadta,
+  )
+}
+
+///|
+pub fn IActionEnumerator_f92047a60bc0::get_next(
+  this_ : @win32_core.RawAddress,
+  key_name : @win32_core.RawAddress,
+  action_name : @win32_core.RawAddress,
+  action_description : @win32_core.RawAddress,
+  action_is_default : @win32_core.RawAddress,
+  action_method : @win32_core.RawAddress,
+  metadta : @win32_core.RawAddress,
+) -> Unit raise @win32_core.WindowsError {
+  get_next_bbfce1c08bbb(
+    this_, key_name, action_name, action_description, action_is_default, action_method,
+    metadta,
+  )
+}
+
+///|
+pub fn IActionEnumerator_f92047a60bc0::reset_raw(
+  this_ : @win32_core.RawAddress,
+) -> Int {
+  reset_f289161e0531_raw(this_)
+}
+
+///|
+pub fn IActionEnumerator_f92047a60bc0::reset(
+  this_ : @win32_core.RawAddress,
+) -> Unit raise @win32_core.WindowsError {
+  reset_f289161e0531(this_)
+}
+
+///|
+pub fn IActionQueryConcept_c312b9b1a824::enumerate_actions_raw(
+  this_ : @win32_core.RawAddress,
+  context_object : @win32_core.RawAddress,
+  action_enumerator : @win32_core.RawAddress,
+) -> Int {
+  enumerate_actions_5e402572328b_raw(this_, context_object, action_enumerator)
+}
+
+///|
+pub fn IActionQueryConcept_c312b9b1a824::enumerate_actions(
+  this_ : @win32_core.RawAddress,
+  context_object : @win32_core.RawAddress,
+  action_enumerator : @win32_core.RawAddress,
+) -> Unit raise @win32_core.WindowsError {
+  enumerate_actions_5e402572328b(this_, context_object, action_enumerator)
+}
+
+///|
+pub fn IActionableConcept_19d0ee12f426::enumerate_actions_raw(
+  this_ : @win32_core.RawAddress,
+  context_object : @win32_core.RawAddress,
+  action_enumerator : @win32_core.RawAddress,
+) -> Int {
+  enumerate_actions_4034c4ce435f_raw(this_, context_object, action_enumerator)
+}
+
+///|
+pub fn IActionableConcept_19d0ee12f426::enumerate_actions(
+  this_ : @win32_core.RawAddress,
+  context_object : @win32_core.RawAddress,
+  action_enumerator : @win32_core.RawAddress,
+) -> Unit raise @win32_core.WindowsError {
+  enumerate_actions_4034c4ce435f(this_, context_object, action_enumerator)
+}
+
+///|
+pub fn ICodeAddressConcept_46338803964c::get_containing_symbol_raw(
+  this_ : @win32_core.RawAddress,
+  p_context_object : @win32_core.RawAddress,
+  pp_symbol : @win32_core.RawAddress,
+) -> Int {
+  get_containing_symbol_49727cc902dc_raw(this_, p_context_object, pp_symbol)
+}
+
+///|
+pub fn ICodeAddressConcept_46338803964c::get_containing_symbol(
+  this_ : @win32_core.RawAddress,
+  p_context_object : @win32_core.RawAddress,
+  pp_symbol : @win32_core.RawAddress,
+) -> Unit raise @win32_core.WindowsError {
+  get_containing_symbol_49727cc902dc(this_, p_context_object, pp_symbol)
+}
+
+///|
+pub fn IComparableConcept_62ace437cea0::compare_objects_raw(
+  this_ : @win32_core.RawAddress,
+  context_object : @win32_core.RawAddress,
+  other_object : @win32_core.RawAddress,
+  comparison_result : @win32_core.RawAddress,
+) -> Int {
+  compare_objects_aac5f17823c3_raw(
+    this_, context_object, other_object, comparison_result,
+  )
+}
+
+///|
+pub fn IComparableConcept_62ace437cea0::compare_objects(
+  this_ : @win32_core.RawAddress,
+  context_object : @win32_core.RawAddress,
+  other_object : @win32_core.RawAddress,
+  comparison_result : @win32_core.RawAddress,
+) -> Unit raise @win32_core.WindowsError {
+  compare_objects_aac5f17823c3(
+    this_, context_object, other_object, comparison_result,
+  )
+}
+
+///|
+pub fn IConstructableConcept_b46e457a4a6d::create_instance_raw(
+  this_ : @win32_core.RawAddress,
+  arg_count : UInt64,
+  pp_arguments : @win32_core.RawAddress,
+  pp_instance : @win32_core.RawAddress,
+) -> Int {
+  create_instance_c5a0d599444c_raw(this_, arg_count, pp_arguments, pp_instance)
+}
+
+///|
+pub fn IConstructableConcept_b46e457a4a6d::create_instance(
+  this_ : @win32_core.RawAddress,
+  arg_count : UInt64,
+  pp_arguments : @win32_core.RawAddress,
+  pp_instance : @win32_core.RawAddress,
+) -> Unit raise @win32_core.WindowsError {
+  create_instance_c5a0d599444c(this_, arg_count, pp_arguments, pp_instance)
+}
+
+///|
+pub fn IDataModelConcept_d51d28c02217::get_name_raw(
+  this_ : @win32_core.RawAddress,
+  model_name : @win32_core.RawAddress,
+) -> Int {
+  get_name_d10077ac179f_raw(this_, model_name)
+}
+
+///|
+pub fn IDataModelConcept_d51d28c02217::get_name(
+  this_ : @win32_core.RawAddress,
+  model_name : @win32_core.RawAddress,
+) -> Unit raise @win32_core.WindowsError {
+  get_name_d10077ac179f(this_, model_name)
+}
+
+///|
+pub fn IDataModelConcept_d51d28c02217::initialize_object_raw(
+  this_ : @win32_core.RawAddress,
+  model_object : @win32_core.RawAddress,
+  matching_type_signature : @win32_core.RawAddress,
+  wildcard_matches : @win32_core.RawAddress,
+) -> Int {
+  initialize_object_20ee46727dcc_raw(
+    this_, model_object, matching_type_signature, wildcard_matches,
+  )
+}
+
+///|
+pub fn IDataModelConcept_d51d28c02217::initialize_object(
+  this_ : @win32_core.RawAddress,
+  model_object : @win32_core.RawAddress,
+  matching_type_signature : @win32_core.RawAddress,
+  wildcard_matches : @win32_core.RawAddress,
+) -> Unit raise @win32_core.WindowsError {
+  initialize_object_20ee46727dcc(
+    this_, model_object, matching_type_signature, wildcard_matches,
+  )
+}
+
+///|
+pub fn IDataModelManager_ba77323e97e2::acquire_named_model_raw(
+  this_ : @win32_core.RawAddress,
+  model_name : @win32_core.RawAddress,
+  model_object : @win32_core.RawAddress,
+) -> Int {
+  acquire_named_model_83559d1b8834_raw(this_, model_name, model_object)
+}
+
+///|
+pub fn IDataModelManager_ba77323e97e2::acquire_named_model(
+  this_ : @win32_core.RawAddress,
+  model_name : @win32_core.RawAddress,
+  model_object : @win32_core.RawAddress,
+) -> Unit raise @win32_core.WindowsError {
+  acquire_named_model_83559d1b8834(this_, model_name, model_object)
+}
+
+///|
+pub fn IDataModelManager_ba77323e97e2::close_raw(
+  this_ : @win32_core.RawAddress,
+) -> Int {
+  close_5d5e69ab442f_raw(this_)
+}
+
+///|
+pub fn IDataModelManager_ba77323e97e2::close(
+  this_ : @win32_core.RawAddress,
+) -> Unit raise @win32_core.WindowsError {
+  close_5d5e69ab442f(this_)
+}
+
+///|
+pub fn IDataModelManager_ba77323e97e2::create_data_model_object_raw(
+  this_ : @win32_core.RawAddress,
+  data_model : @win32_core.RawAddress,
+  object : @win32_core.RawAddress,
+) -> Int {
+  create_data_model_object_d370fd318f71_raw(this_, data_model, object)
+}
+
+///|
+pub fn IDataModelManager_ba77323e97e2::create_data_model_object(
+  this_ : @win32_core.RawAddress,
+  data_model : @win32_core.RawAddress,
+  object : @win32_core.RawAddress,
+) -> Unit raise @win32_core.WindowsError {
+  create_data_model_object_d370fd318f71(this_, data_model, object)
+}
+
+///|
+pub fn IDataModelManager_ba77323e97e2::create_error_object_raw(
+  this_ : @win32_core.RawAddress,
+  hr_error : Int,
+  pwsz_message : @win32_core.RawAddress,
+  object : @win32_core.RawAddress,
+) -> Int {
+  create_error_object_3bbcbab11cb6_raw(this_, hr_error, pwsz_message, object)
+}
+
+///|
+pub fn IDataModelManager_ba77323e97e2::create_error_object(
+  this_ : @win32_core.RawAddress,
+  hr_error : Int,
+  pwsz_message : @win32_core.RawAddress,
+  object : @win32_core.RawAddress,
+) -> Unit raise @win32_core.WindowsError {
+  create_error_object_3bbcbab11cb6(this_, hr_error, pwsz_message, object)
+}
+
+///|
+pub fn IDataModelManager_ba77323e97e2::create_intrinsic_object_raw(
+  this_ : @win32_core.RawAddress,
+  object_kind : Int,
+  intrinsic_data : @win32_core.RawAddress,
+  object : @win32_core.RawAddress,
+) -> Int {
+  create_intrinsic_object_4e82701edb04_raw(
+    this_, object_kind, intrinsic_data, object,
+  )
+}
+
+///|
+pub fn IDataModelManager_ba77323e97e2::create_intrinsic_object(
+  this_ : @win32_core.RawAddress,
+  object_kind : Int,
+  intrinsic_data : @win32_core.RawAddress,
+  object : @win32_core.RawAddress,
+) -> Unit raise @win32_core.WindowsError {
+  create_intrinsic_object_4e82701edb04(
+    this_, object_kind, intrinsic_data, object,
+  )
+}
+
+///|
+pub fn IDataModelManager_ba77323e97e2::create_metadata_store_raw(
+  this_ : @win32_core.RawAddress,
+  parent_store : @win32_core.RawAddress,
+  metadata_store : @win32_core.RawAddress,
+) -> Int {
+  create_metadata_store_0d12489987a1_raw(this_, parent_store, metadata_store)
+}
+
+///|
+pub fn IDataModelManager_ba77323e97e2::create_metadata_store(
+  this_ : @win32_core.RawAddress,
+  parent_store : @win32_core.RawAddress,
+  metadata_store : @win32_core.RawAddress,
+) -> Unit raise @win32_core.WindowsError {
+  create_metadata_store_0d12489987a1(this_, parent_store, metadata_store)
+}
+
+///|
+pub fn IDataModelManager_ba77323e97e2::create_no_value_raw(
+  this_ : @win32_core.RawAddress,
+  object : @win32_core.RawAddress,
+) -> Int {
+  create_no_value_b31f931cf01d_raw(this_, object)
+}
+
+///|
+pub fn IDataModelManager_ba77323e97e2::create_no_value(
+  this_ : @win32_core.RawAddress,
+  object : @win32_core.RawAddress,
+) -> Unit raise @win32_core.WindowsError {
+  create_no_value_b31f931cf01d(this_, object)
+}
+
+///|
+pub fn IDataModelManager_ba77323e97e2::create_synthetic_object_raw(
+  this_ : @win32_core.RawAddress,
+  context : @win32_core.RawAddress,
+  object : @win32_core.RawAddress,
+) -> Int {
+  create_synthetic_object_19b0d838bb47_raw(this_, context, object)
+}
+
+///|
+pub fn IDataModelManager_ba77323e97e2::create_synthetic_object(
+  this_ : @win32_core.RawAddress,
+  context : @win32_core.RawAddress,
+  object : @win32_core.RawAddress,
+) -> Unit raise @win32_core.WindowsError {
+  create_synthetic_object_19b0d838bb47(this_, context, object)
+}
+
+///|
+pub fn IDataModelManager_ba77323e97e2::create_typed_intrinsic_object_raw(
+  this_ : @win32_core.RawAddress,
+  intrinsic_data : @win32_core.RawAddress,
+  type_ : @win32_core.RawAddress,
+  object : @win32_core.RawAddress,
+) -> Int {
+  create_typed_intrinsic_object_4e6bb1b770f7_raw(
+    this_, intrinsic_data, type_, object,
+  )
+}
+
+///|
+pub fn IDataModelManager_ba77323e97e2::create_typed_intrinsic_object(
+  this_ : @win32_core.RawAddress,
+  intrinsic_data : @win32_core.RawAddress,
+  type_ : @win32_core.RawAddress,
+  object : @win32_core.RawAddress,
+) -> Unit raise @win32_core.WindowsError {
+  create_typed_intrinsic_object_4e6bb1b770f7(
+    this_, intrinsic_data, type_, object,
+  )
+}
+
+///|
+pub fn IDataModelManager_ba77323e97e2::create_typed_object_raw(
+  this_ : @win32_core.RawAddress,
+  context : @win32_core.RawAddress,
+  object_location : Bytes,
+  object_type : @win32_core.RawAddress,
+  object : @win32_core.RawAddress,
+) -> Int {
+  create_typed_object_408d02388735_raw(
+    this_, context, object_location, object_type, object,
+  )
+}
+
+///|
+pub fn IDataModelManager_ba77323e97e2::create_typed_object(
+  this_ : @win32_core.RawAddress,
+  context : @win32_core.RawAddress,
+  object_location : Bytes,
+  object_type : @win32_core.RawAddress,
+  object : @win32_core.RawAddress,
+) -> Unit raise @win32_core.WindowsError {
+  create_typed_object_408d02388735(
+    this_, context, object_location, object_type, object,
+  )
+}
+
+///|
+pub fn IDataModelManager_ba77323e97e2::create_typed_object_reference_raw(
+  this_ : @win32_core.RawAddress,
+  context : @win32_core.RawAddress,
+  object_location : Bytes,
+  object_type : @win32_core.RawAddress,
+  object : @win32_core.RawAddress,
+) -> Int {
+  create_typed_object_reference_4071db5bb80d_raw(
+    this_, context, object_location, object_type, object,
+  )
+}
+
+///|
+pub fn IDataModelManager_ba77323e97e2::create_typed_object_reference(
+  this_ : @win32_core.RawAddress,
+  context : @win32_core.RawAddress,
+  object_location : Bytes,
+  object_type : @win32_core.RawAddress,
+  object : @win32_core.RawAddress,
+) -> Unit raise @win32_core.WindowsError {
+  create_typed_object_reference_4071db5bb80d(
+    this_, context, object_location, object_type, object,
+  )
+}
+
+///|
+pub fn IDataModelManager_ba77323e97e2::get_model_for_type_raw(
+  this_ : @win32_core.RawAddress,
+  type_ : @win32_core.RawAddress,
+  data_model : @win32_core.RawAddress,
+  type_signature : @win32_core.RawAddress,
+  wildcard_matches : @win32_core.RawAddress,
+) -> Int {
+  get_model_for_type_3204c352c7fc_raw(
+    this_, type_, data_model, type_signature, wildcard_matches,
+  )
+}
+
+///|
+pub fn IDataModelManager_ba77323e97e2::get_model_for_type(
+  this_ : @win32_core.RawAddress,
+  type_ : @win32_core.RawAddress,
+  data_model : @win32_core.RawAddress,
+  type_signature : @win32_core.RawAddress,
+  wildcard_matches : @win32_core.RawAddress,
+) -> Unit raise @win32_core.WindowsError {
+  get_model_for_type_3204c352c7fc(
+    this_, type_, data_model, type_signature, wildcard_matches,
+  )
+}
+
+///|
+pub fn IDataModelManager_ba77323e97e2::get_model_for_type_signature_raw(
+  this_ : @win32_core.RawAddress,
+  type_signature : @win32_core.RawAddress,
+  data_model : @win32_core.RawAddress,
+) -> Int {
+  get_model_for_type_signature_dde583fad801_raw(
+    this_, type_signature, data_model,
+  )
+}
+
+///|
+pub fn IDataModelManager_ba77323e97e2::get_model_for_type_signature(
+  this_ : @win32_core.RawAddress,
+  type_signature : @win32_core.RawAddress,
+  data_model : @win32_core.RawAddress,
+) -> Unit raise @win32_core.WindowsError {
+  get_model_for_type_signature_dde583fad801(this_, type_signature, data_model)
+}
+
+///|
+pub fn IDataModelManager_ba77323e97e2::get_root_namespace_raw(
+  this_ : @win32_core.RawAddress,
+  root_namespace : @win32_core.RawAddress,
+) -> Int {
+  get_root_namespace_1cb553693d5b_raw(this_, root_namespace)
+}
+
+///|
+pub fn IDataModelManager_ba77323e97e2::get_root_namespace(
+  this_ : @win32_core.RawAddress,
+  root_namespace : @win32_core.RawAddress,
+) -> Unit raise @win32_core.WindowsError {
+  get_root_namespace_1cb553693d5b(this_, root_namespace)
+}
+
+///|
+pub fn IDataModelManager_ba77323e97e2::register_extension_for_type_signature_raw(
+  this_ : @win32_core.RawAddress,
+  type_signature : @win32_core.RawAddress,
+  data_model : @win32_core.RawAddress,
+) -> Int {
+  register_extension_for_type_signature_32f46678f65b_raw(
+    this_, type_signature, data_model,
+  )
+}
+
+///|
+pub fn IDataModelManager_ba77323e97e2::register_extension_for_type_signature(
+  this_ : @win32_core.RawAddress,
+  type_signature : @win32_core.RawAddress,
+  data_model : @win32_core.RawAddress,
+) -> Unit raise @win32_core.WindowsError {
+  register_extension_for_type_signature_32f46678f65b(
+    this_, type_signature, data_model,
+  )
+}
+
+///|
+pub fn IDataModelManager_ba77323e97e2::register_model_for_type_signature_raw(
+  this_ : @win32_core.RawAddress,
+  type_signature : @win32_core.RawAddress,
+  data_model : @win32_core.RawAddress,
+) -> Int {
+  register_model_for_type_signature_e996ec14b254_raw(
+    this_, type_signature, data_model,
+  )
+}
+
+///|
+pub fn IDataModelManager_ba77323e97e2::register_model_for_type_signature(
+  this_ : @win32_core.RawAddress,
+  type_signature : @win32_core.RawAddress,
+  data_model : @win32_core.RawAddress,
+) -> Unit raise @win32_core.WindowsError {
+  register_model_for_type_signature_e996ec14b254(
+    this_, type_signature, data_model,
+  )
+}
+
+///|
+pub fn IDataModelManager_ba77323e97e2::register_named_model_raw(
+  this_ : @win32_core.RawAddress,
+  model_name : @win32_core.RawAddress,
+  mode_object : @win32_core.RawAddress,
+) -> Int {
+  register_named_model_1637b415b45d_raw(this_, model_name, mode_object)
+}
+
+///|
+pub fn IDataModelManager_ba77323e97e2::register_named_model(
+  this_ : @win32_core.RawAddress,
+  model_name : @win32_core.RawAddress,
+  mode_object : @win32_core.RawAddress,
+) -> Unit raise @win32_core.WindowsError {
+  register_named_model_1637b415b45d(this_, model_name, mode_object)
+}
+
+///|
+pub fn IDataModelManager_ba77323e97e2::unregister_extension_for_type_signature_raw(
+  this_ : @win32_core.RawAddress,
+  data_model : @win32_core.RawAddress,
+  type_signature : @win32_core.RawAddress,
+) -> Int {
+  unregister_extension_for_type_signature_e2cd6cf7cbf8_raw(
+    this_, data_model, type_signature,
+  )
+}
+
+///|
+pub fn IDataModelManager_ba77323e97e2::unregister_extension_for_type_signature(
+  this_ : @win32_core.RawAddress,
+  data_model : @win32_core.RawAddress,
+  type_signature : @win32_core.RawAddress,
+) -> Unit raise @win32_core.WindowsError {
+  unregister_extension_for_type_signature_e2cd6cf7cbf8(
+    this_, data_model, type_signature,
+  )
+}
+
+///|
+pub fn IDataModelManager_ba77323e97e2::unregister_model_for_type_signature_raw(
+  this_ : @win32_core.RawAddress,
+  data_model : @win32_core.RawAddress,
+  type_signature : @win32_core.RawAddress,
+) -> Int {
+  unregister_model_for_type_signature_d0b901ff8c1a_raw(
+    this_, data_model, type_signature,
+  )
+}
+
+///|
+pub fn IDataModelManager_ba77323e97e2::unregister_model_for_type_signature(
+  this_ : @win32_core.RawAddress,
+  data_model : @win32_core.RawAddress,
+  type_signature : @win32_core.RawAddress,
+) -> Unit raise @win32_core.WindowsError {
+  unregister_model_for_type_signature_d0b901ff8c1a(
+    this_, data_model, type_signature,
+  )
+}
+
+///|
+pub fn IDataModelManager_ba77323e97e2::unregister_named_model_raw(
+  this_ : @win32_core.RawAddress,
+  model_name : @win32_core.RawAddress,
+) -> Int {
+  unregister_named_model_a6a270b9b21f_raw(this_, model_name)
+}
+
+///|
+pub fn IDataModelManager_ba77323e97e2::unregister_named_model(
+  this_ : @win32_core.RawAddress,
+  model_name : @win32_core.RawAddress,
+) -> Unit raise @win32_core.WindowsError {
+  unregister_named_model_a6a270b9b21f(this_, model_name)
+}
+
+///|
+pub fn IDataModelManager2_7f882eb44c14::acquire_sub_namespace_raw(
+  this_ : @win32_core.RawAddress,
+  model_name : @win32_core.RawAddress,
+  sub_namespace_model_name : @win32_core.RawAddress,
+  access_name : @win32_core.RawAddress,
+  metadata : @win32_core.RawAddress,
+  namespace_model_object : @win32_core.RawAddress,
+) -> Int {
+  acquire_sub_namespace_8aa695ce8dd0_raw(
+    this_, model_name, sub_namespace_model_name, access_name, metadata, namespace_model_object,
+  )
+}
+
+///|
+pub fn IDataModelManager2_7f882eb44c14::acquire_sub_namespace(
+  this_ : @win32_core.RawAddress,
+  model_name : @win32_core.RawAddress,
+  sub_namespace_model_name : @win32_core.RawAddress,
+  access_name : @win32_core.RawAddress,
+  metadata : @win32_core.RawAddress,
+  namespace_model_object : @win32_core.RawAddress,
+) -> Unit raise @win32_core.WindowsError {
+  acquire_sub_namespace_8aa695ce8dd0(
+    this_, model_name, sub_namespace_model_name, access_name, metadata, namespace_model_object,
+  )
+}
+
+///|
+pub fn IDataModelManager2_7f882eb44c14::create_typed_intrinsic_object_ex_raw(
+  this_ : @win32_core.RawAddress,
+  context : @win32_core.RawAddress,
+  intrinsic_data : @win32_core.RawAddress,
+  type_ : @win32_core.RawAddress,
+  object : @win32_core.RawAddress,
+) -> Int {
+  create_typed_intrinsic_object_ex_5053d7574b2a_raw(
+    this_, context, intrinsic_data, type_, object,
+  )
+}
+
+///|
+pub fn IDataModelManager2_7f882eb44c14::create_typed_intrinsic_object_ex(
+  this_ : @win32_core.RawAddress,
+  context : @win32_core.RawAddress,
+  intrinsic_data : @win32_core.RawAddress,
+  type_ : @win32_core.RawAddress,
+  object : @win32_core.RawAddress,
+) -> Unit raise @win32_core.WindowsError {
+  create_typed_intrinsic_object_ex_5053d7574b2a(
+    this_, context, intrinsic_data, type_, object,
+  )
+}
+
+///|
+pub fn IDataModelManager3_ce76d1fdc2b0::acquire_filtered_sub_namespace_raw(
+  this_ : @win32_core.RawAddress,
+  model_name : @win32_core.RawAddress,
+  sub_namespace_model_name : @win32_core.RawAddress,
+  access_name : @win32_core.RawAddress,
+  metadata : @win32_core.RawAddress,
+  filter : @win32_core.RawAddress,
+  namespace_model_object : @win32_core.RawAddress,
+  token : @win32_core.RawAddress,
+) -> Int {
+  acquire_filtered_sub_namespace_598acba9f785_raw(
+    this_, model_name, sub_namespace_model_name, access_name, metadata, filter, namespace_model_object,
+    token,
+  )
+}
+
+///|
+pub fn IDataModelManager3_ce76d1fdc2b0::acquire_filtered_sub_namespace(
+  this_ : @win32_core.RawAddress,
+  model_name : @win32_core.RawAddress,
+  sub_namespace_model_name : @win32_core.RawAddress,
+  access_name : @win32_core.RawAddress,
+  metadata : @win32_core.RawAddress,
+  filter : @win32_core.RawAddress,
+  namespace_model_object : @win32_core.RawAddress,
+  token : @win32_core.RawAddress,
+) -> Unit raise @win32_core.WindowsError {
+  acquire_filtered_sub_namespace_598acba9f785(
+    this_, model_name, sub_namespace_model_name, access_name, metadata, filter, namespace_model_object,
+    token,
+  )
+}
+
+///|
+pub fn IDataModelManager3_ce76d1fdc2b0::enumerate_named_models_raw(
+  this_ : @win32_core.RawAddress,
+  pp_enumerator : @win32_core.RawAddress,
+) -> Int {
+  enumerate_named_models_8160d0fc15bc_raw(this_, pp_enumerator)
+}
+
+///|
+pub fn IDataModelManager3_ce76d1fdc2b0::enumerate_named_models(
+  this_ : @win32_core.RawAddress,
+  pp_enumerator : @win32_core.RawAddress,
+) -> Unit raise @win32_core.WindowsError {
+  enumerate_named_models_8160d0fc15bc(this_, pp_enumerator)
+}
+
+///|
+pub fn IDataModelManager4_773587fca3ca::create_synthetic_object_from_key_store_raw(
+  this_ : @win32_core.RawAddress,
+  context : @win32_core.RawAddress,
+  parent_store : @win32_core.RawAddress,
+  object : @win32_core.RawAddress,
+) -> Int {
+  create_synthetic_object_from_key_store_ac0a7ee6171c_raw(
+    this_, context, parent_store, object,
+  )
+}
+
+///|
+pub fn IDataModelManager4_773587fca3ca::create_synthetic_object_from_key_store(
+  this_ : @win32_core.RawAddress,
+  context : @win32_core.RawAddress,
+  parent_store : @win32_core.RawAddress,
+  object : @win32_core.RawAddress,
+) -> Unit raise @win32_core.WindowsError {
+  create_synthetic_object_from_key_store_ac0a7ee6171c(
+    this_, context, parent_store, object,
+  )
+}
+
+///|
+pub fn IDataModelNameBinder_5ebc425298db::bind_reference_raw(
+  this_ : @win32_core.RawAddress,
+  context_object : @win32_core.RawAddress,
+  name : @win32_core.RawAddress,
+  reference : @win32_core.RawAddress,
+  metadata : @win32_core.RawAddress,
+) -> Int {
+  bind_reference_fdb3ac37ba16_raw(
+    this_, context_object, name, reference, metadata,
+  )
+}
+
+///|
+pub fn IDataModelNameBinder_5ebc425298db::bind_reference(
+  this_ : @win32_core.RawAddress,
+  context_object : @win32_core.RawAddress,
+  name : @win32_core.RawAddress,
+  reference : @win32_core.RawAddress,
+  metadata : @win32_core.RawAddress,
+) -> Unit raise @win32_core.WindowsError {
+  bind_reference_fdb3ac37ba16(this_, context_object, name, reference, metadata)
+}
+
+///|
+pub fn IDataModelNameBinder_5ebc425298db::bind_value_raw(
+  this_ : @win32_core.RawAddress,
+  context_object : @win32_core.RawAddress,
+  name : @win32_core.RawAddress,
+  value : @win32_core.RawAddress,
+  metadata : @win32_core.RawAddress,
+) -> Int {
+  bind_value_59429e300ae9_raw(this_, context_object, name, value, metadata)
+}
+
+///|
+pub fn IDataModelNameBinder_5ebc425298db::bind_value(
+  this_ : @win32_core.RawAddress,
+  context_object : @win32_core.RawAddress,
+  name : @win32_core.RawAddress,
+  value : @win32_core.RawAddress,
+  metadata : @win32_core.RawAddress,
+) -> Unit raise @win32_core.WindowsError {
+  bind_value_59429e300ae9(this_, context_object, name, value, metadata)
+}
+
+///|
+pub fn IDataModelNameBinder_5ebc425298db::enumerate_references_raw(
+  this_ : @win32_core.RawAddress,
+  context_object : @win32_core.RawAddress,
+  enumerator : @win32_core.RawAddress,
+) -> Int {
+  enumerate_references_79728b856050_raw(this_, context_object, enumerator)
+}
+
+///|
+pub fn IDataModelNameBinder_5ebc425298db::enumerate_references(
+  this_ : @win32_core.RawAddress,
+  context_object : @win32_core.RawAddress,
+  enumerator : @win32_core.RawAddress,
+) -> Unit raise @win32_core.WindowsError {
+  enumerate_references_79728b856050(this_, context_object, enumerator)
+}
+
+///|
+pub fn IDataModelNameBinder_5ebc425298db::enumerate_values_raw(
+  this_ : @win32_core.RawAddress,
+  context_object : @win32_core.RawAddress,
+  enumerator : @win32_core.RawAddress,
+) -> Int {
+  enumerate_values_f140c0e0dc44_raw(this_, context_object, enumerator)
+}
+
+///|
+pub fn IDataModelNameBinder_5ebc425298db::enumerate_values(
+  this_ : @win32_core.RawAddress,
+  context_object : @win32_core.RawAddress,
+  enumerator : @win32_core.RawAddress,
+) -> Unit raise @win32_core.WindowsError {
+  enumerate_values_f140c0e0dc44(this_, context_object, enumerator)
+}
+
+///|
+pub fn IDataModelScript_399629305076::execute_raw(
+  this_ : @win32_core.RawAddress,
+  client : @win32_core.RawAddress,
+) -> Int {
+  execute_084cadc1a519_raw(this_, client)
+}
+
+///|
+pub fn IDataModelScript_399629305076::execute(
+  this_ : @win32_core.RawAddress,
+  client : @win32_core.RawAddress,
+) -> Unit raise @win32_core.WindowsError {
+  execute_084cadc1a519(this_, client)
+}
+
+///|
+pub fn IDataModelScript_399629305076::get_name_raw(
+  this_ : @win32_core.RawAddress,
+  script_name : @win32_core.RawAddress,
+) -> Int {
+  get_name_7231e73698ff_raw(this_, script_name)
+}
+
+///|
+pub fn IDataModelScript_399629305076::get_name(
+  this_ : @win32_core.RawAddress,
+  script_name : @win32_core.RawAddress,
+) -> Unit raise @win32_core.WindowsError {
+  get_name_7231e73698ff(this_, script_name)
+}
+
+///|
+pub fn IDataModelScript_399629305076::invoke_main_raw(
+  this_ : @win32_core.RawAddress,
+  client : @win32_core.RawAddress,
+) -> Int {
+  invoke_main_ae0bb73a8dcc_raw(this_, client)
+}
+
+///|
+pub fn IDataModelScript_399629305076::invoke_main(
+  this_ : @win32_core.RawAddress,
+  client : @win32_core.RawAddress,
+) -> Unit raise @win32_core.WindowsError {
+  invoke_main_ae0bb73a8dcc(this_, client)
+}
+
+///|
+pub fn IDataModelScript_399629305076::is_invocable_raw(
+  this_ : @win32_core.RawAddress,
+  is_invocable : @win32_core.RawAddress,
+) -> Int {
+  is_invocable_f093fa2b3483_raw(this_, is_invocable)
+}
+
+///|
+pub fn IDataModelScript_399629305076::is_invocable(
+  this_ : @win32_core.RawAddress,
+  is_invocable : @win32_core.RawAddress,
+) -> Unit raise @win32_core.WindowsError {
+  is_invocable_f093fa2b3483(this_, is_invocable)
+}
+
+///|
+pub fn IDataModelScript_399629305076::populate_raw(
+  this_ : @win32_core.RawAddress,
+  content_stream : @win32_core.RawAddress,
+) -> Int {
+  populate_f230d3e0bc60_raw(this_, content_stream)
+}
+
+///|
+pub fn IDataModelScript_399629305076::populate(
+  this_ : @win32_core.RawAddress,
+  content_stream : @win32_core.RawAddress,
+) -> Unit raise @win32_core.WindowsError {
+  populate_f230d3e0bc60(this_, content_stream)
+}
+
+///|
+pub fn IDataModelScript_399629305076::rename_raw(
+  this_ : @win32_core.RawAddress,
+  script_name : @win32_core.RawAddress,
+) -> Int {
+  rename_ce0e56bc368d_raw(this_, script_name)
+}
+
+///|
+pub fn IDataModelScript_399629305076::rename(
+  this_ : @win32_core.RawAddress,
+  script_name : @win32_core.RawAddress,
+) -> Unit raise @win32_core.WindowsError {
+  rename_ce0e56bc368d(this_, script_name)
+}
+
+///|
+pub fn IDataModelScript_399629305076::unlink_raw(
+  this_ : @win32_core.RawAddress,
+) -> Int {
+  unlink_181399d63de5_raw(this_)
+}
+
+///|
+pub fn IDataModelScript_399629305076::unlink(
+  this_ : @win32_core.RawAddress,
+) -> Unit raise @win32_core.WindowsError {
+  unlink_181399d63de5(this_)
+}
+
+///|
+pub fn IDataModelScript2_ab6881af84d0::get_script_full_file_path_name_raw(
+  this_ : @win32_core.RawAddress,
+  script_full_path_name : @win32_core.RawAddress,
+) -> Int {
+  get_script_full_file_path_name_17dc15cacaf7_raw(this_, script_full_path_name)
+}
+
+///|
+pub fn IDataModelScript2_ab6881af84d0::get_script_full_file_path_name(
+  this_ : @win32_core.RawAddress,
+  script_full_path_name : @win32_core.RawAddress,
+) -> Unit raise @win32_core.WindowsError {
+  get_script_full_file_path_name_17dc15cacaf7(this_, script_full_path_name)
+}
+
+///|
+pub fn IDataModelScript2_ab6881af84d0::set_script_full_file_path_name_raw(
+  this_ : @win32_core.RawAddress,
+  script_full_path_name : @win32_core.RawAddress,
+) -> Int {
+  set_script_full_file_path_name_79e009b13e2f_raw(this_, script_full_path_name)
+}
+
+///|
+pub fn IDataModelScript2_ab6881af84d0::set_script_full_file_path_name(
+  this_ : @win32_core.RawAddress,
+  script_full_path_name : @win32_core.RawAddress,
+) -> Unit raise @win32_core.WindowsError {
+  set_script_full_file_path_name_79e009b13e2f(this_, script_full_path_name)
+}
+
+///|
+pub fn IDataModelScriptClient_538c79f1dc9d::report_error_raw(
+  this_ : @win32_core.RawAddress,
+  err_class : Int,
+  hr_fail : Int,
+  message : @win32_core.RawAddress,
+  line : UInt,
+  position : UInt,
+) -> Int {
+  report_error_da12b7ea47ae_raw(
+    this_, err_class, hr_fail, message, line, position,
+  )
+}
+
+///|
+pub fn IDataModelScriptClient_538c79f1dc9d::report_error(
+  this_ : @win32_core.RawAddress,
+  err_class : Int,
+  hr_fail : Int,
+  message : @win32_core.RawAddress,
+  line : UInt,
+  position : UInt,
+) -> Unit raise @win32_core.WindowsError {
+  report_error_da12b7ea47ae(this_, err_class, hr_fail, message, line, position)
+}
+
+///|
+pub fn IDataModelScriptDebug_c82f57fad626::enumerate_breakpoints_raw(
+  this_ : @win32_core.RawAddress,
+  breakpoint_enum : @win32_core.RawAddress,
+) -> Int {
+  enumerate_breakpoints_3b46b7c42c16_raw(this_, breakpoint_enum)
+}
+
+///|
+pub fn IDataModelScriptDebug_c82f57fad626::enumerate_breakpoints(
+  this_ : @win32_core.RawAddress,
+  breakpoint_enum : @win32_core.RawAddress,
+) -> Unit raise @win32_core.WindowsError {
+  enumerate_breakpoints_3b46b7c42c16(this_, breakpoint_enum)
+}
+
+///|
+pub fn IDataModelScriptDebug_c82f57fad626::find_breakpoint_by_id_raw(
+  this_ : @win32_core.RawAddress,
+  breakpoint_id : UInt64,
+  breakpoint : @win32_core.RawAddress,
+) -> Int {
+  find_breakpoint_by_id_13ed09f11e7a_raw(this_, breakpoint_id, breakpoint)
+}
+
+///|
+pub fn IDataModelScriptDebug_c82f57fad626::find_breakpoint_by_id(
+  this_ : @win32_core.RawAddress,
+  breakpoint_id : UInt64,
+  breakpoint : @win32_core.RawAddress,
+) -> Unit raise @win32_core.WindowsError {
+  find_breakpoint_by_id_13ed09f11e7a(this_, breakpoint_id, breakpoint)
+}
+
+///|
+pub fn IDataModelScriptDebug_c82f57fad626::get_current_position_raw(
+  this_ : @win32_core.RawAddress,
+  current_position : @win32_core.RawAddress,
+  position_span_end : @win32_core.RawAddress,
+  line_text : @win32_core.RawAddress,
+) -> Int {
+  get_current_position_3a578fd2fe37_raw(
+    this_, current_position, position_span_end, line_text,
+  )
+}
+
+///|
+pub fn IDataModelScriptDebug_c82f57fad626::get_current_position(
+  this_ : @win32_core.RawAddress,
+  current_position : @win32_core.RawAddress,
+  position_span_end : @win32_core.RawAddress,
+  line_text : @win32_core.RawAddress,
+) -> Unit raise @win32_core.WindowsError {
+  get_current_position_3a578fd2fe37(
+    this_, current_position, position_span_end, line_text,
+  )
+}
+
+///|
+pub fn IDataModelScriptDebug_c82f57fad626::get_debug_state_raw(
+  this_ : @win32_core.RawAddress,
+) -> Int {
+  get_debug_state_22f85c17af47_raw(this_)
+}
+
+///|
+pub fn IDataModelScriptDebug_c82f57fad626::get_event_filter_raw(
+  this_ : @win32_core.RawAddress,
+  event_filter : Int,
+  is_break_enabled : @win32_core.RawAddress,
+) -> Int {
+  get_event_filter_f8028367218d_raw(this_, event_filter, is_break_enabled)
+}
+
+///|
+pub fn IDataModelScriptDebug_c82f57fad626::get_event_filter(
+  this_ : @win32_core.RawAddress,
+  event_filter : Int,
+  is_break_enabled : @win32_core.RawAddress,
+) -> Unit raise @win32_core.WindowsError {
+  get_event_filter_f8028367218d(this_, event_filter, is_break_enabled)
+}
+
+///|
+pub fn IDataModelScriptDebug_c82f57fad626::get_stack_raw(
+  this_ : @win32_core.RawAddress,
+  stack : @win32_core.RawAddress,
+) -> Int {
+  get_stack_a330fb953549_raw(this_, stack)
+}
+
+///|
+pub fn IDataModelScriptDebug_c82f57fad626::get_stack(
+  this_ : @win32_core.RawAddress,
+  stack : @win32_core.RawAddress,
+) -> Unit raise @win32_core.WindowsError {
+  get_stack_a330fb953549(this_, stack)
+}
+
+///|
+pub fn IDataModelScriptDebug_c82f57fad626::set_breakpoint_raw(
+  this_ : @win32_core.RawAddress,
+  line_position : UInt,
+  column_position : UInt,
+  breakpoint : @win32_core.RawAddress,
+) -> Int {
+  set_breakpoint_7ae2b86e8471_raw(
+    this_, line_position, column_position, breakpoint,
+  )
+}
+
+///|
+pub fn IDataModelScriptDebug_c82f57fad626::set_breakpoint(
+  this_ : @win32_core.RawAddress,
+  line_position : UInt,
+  column_position : UInt,
+  breakpoint : @win32_core.RawAddress,
+) -> Unit raise @win32_core.WindowsError {
+  set_breakpoint_7ae2b86e8471(this_, line_position, column_position, breakpoint)
+}
+
+///|
+pub fn IDataModelScriptDebug_c82f57fad626::set_event_filter_raw(
+  this_ : @win32_core.RawAddress,
+  event_filter : Int,
+  is_break_enabled : UInt,
+) -> Int {
+  set_event_filter_24f25a8854fa_raw(this_, event_filter, is_break_enabled)
+}
+
+///|
+pub fn IDataModelScriptDebug_c82f57fad626::set_event_filter(
+  this_ : @win32_core.RawAddress,
+  event_filter : Int,
+  is_break_enabled : UInt,
+) -> Unit raise @win32_core.WindowsError {
+  set_event_filter_24f25a8854fa(this_, event_filter, is_break_enabled)
+}
+
+///|
+pub fn IDataModelScriptDebug_c82f57fad626::start_debugging_raw(
+  this_ : @win32_core.RawAddress,
+  debug_client : @win32_core.RawAddress,
+) -> Int {
+  start_debugging_3d51d6468252_raw(this_, debug_client)
+}
+
+///|
+pub fn IDataModelScriptDebug_c82f57fad626::start_debugging(
+  this_ : @win32_core.RawAddress,
+  debug_client : @win32_core.RawAddress,
+) -> Unit raise @win32_core.WindowsError {
+  start_debugging_3d51d6468252(this_, debug_client)
+}
+
+///|
+pub fn IDataModelScriptDebug_c82f57fad626::stop_debugging_raw(
+  this_ : @win32_core.RawAddress,
+  debug_client : @win32_core.RawAddress,
+) -> Int {
+  stop_debugging_33d52c6d5300_raw(this_, debug_client)
+}
+
+///|
+pub fn IDataModelScriptDebug_c82f57fad626::stop_debugging(
+  this_ : @win32_core.RawAddress,
+  debug_client : @win32_core.RawAddress,
+) -> Unit raise @win32_core.WindowsError {
+  stop_debugging_33d52c6d5300(this_, debug_client)
+}
+
+///|
+pub fn IDataModelScriptDebug2_135dd6ab8701::set_breakpoint_at_function_raw(
+  this_ : @win32_core.RawAddress,
+  function_name : @win32_core.RawAddress,
+  breakpoint : @win32_core.RawAddress,
+) -> Int {
+  set_breakpoint_at_function_75af5f5659d0_raw(this_, function_name, breakpoint)
+}
+
+///|
+pub fn IDataModelScriptDebug2_135dd6ab8701::set_breakpoint_at_function(
+  this_ : @win32_core.RawAddress,
+  function_name : @win32_core.RawAddress,
+  breakpoint : @win32_core.RawAddress,
+) -> Unit raise @win32_core.WindowsError {
+  set_breakpoint_at_function_75af5f5659d0(this_, function_name, breakpoint)
+}
+
+///|
+pub fn IDataModelScriptDebugBreakpoint_e099df423969::disable_raw(
+  this_ : @win32_core.RawAddress,
+) -> Unit {
+  disable_9618bbb17ce8_raw(this_)
+}
+
+///|
+pub fn IDataModelScriptDebugBreakpoint_e099df423969::enable_raw(
+  this_ : @win32_core.RawAddress,
+) -> Unit {
+  enable_79add02c64b5_raw(this_)
+}
+
+///|
+pub fn IDataModelScriptDebugBreakpoint_e099df423969::get_id_raw(
+  this_ : @win32_core.RawAddress,
+) -> UInt64 {
+  get_id_cc0a90ba4a57_raw(this_)
+}
+
+///|
+pub fn IDataModelScriptDebugBreakpoint_e099df423969::get_position_raw(
+  this_ : @win32_core.RawAddress,
+  position : @win32_core.RawAddress,
+  position_span_end : @win32_core.RawAddress,
+  line_text : @win32_core.RawAddress,
+) -> Int {
+  get_position_ba07119a1d6b_raw(this_, position, position_span_end, line_text)
+}
+
+///|
+pub fn IDataModelScriptDebugBreakpoint_e099df423969::get_position(
+  this_ : @win32_core.RawAddress,
+  position : @win32_core.RawAddress,
+  position_span_end : @win32_core.RawAddress,
+  line_text : @win32_core.RawAddress,
+) -> Unit raise @win32_core.WindowsError {
+  get_position_ba07119a1d6b(this_, position, position_span_end, line_text)
+}
+
+///|
+pub fn IDataModelScriptDebugBreakpoint_e099df423969::is_enabled_raw(
+  this_ : @win32_core.RawAddress,
+) -> Int {
+  is_enabled_2e7d433c26ee_raw(this_)
+}
+
+///|
+pub fn IDataModelScriptDebugBreakpoint_e099df423969::remove_raw(
+  this_ : @win32_core.RawAddress,
+) -> Unit {
+  remove_8ba115515990_raw(this_)
+}
+
+///|
+pub fn IDataModelScriptDebugBreakpointEnumerator_24f6e9f3897a::get_next_raw(
+  this_ : @win32_core.RawAddress,
+  breakpoint : @win32_core.RawAddress,
+) -> Int {
+  get_next_ed494b9175e8_raw(this_, breakpoint)
+}
+
+///|
+pub fn IDataModelScriptDebugBreakpointEnumerator_24f6e9f3897a::get_next(
+  this_ : @win32_core.RawAddress,
+  breakpoint : @win32_core.RawAddress,
+) -> Unit raise @win32_core.WindowsError {
+  get_next_ed494b9175e8(this_, breakpoint)
+}
+
+///|
+pub fn IDataModelScriptDebugBreakpointEnumerator_24f6e9f3897a::reset_raw(
+  this_ : @win32_core.RawAddress,
+) -> Int {
+  reset_f4900b2a03a0_raw(this_)
+}
+
+///|
+pub fn IDataModelScriptDebugBreakpointEnumerator_24f6e9f3897a::reset(
+  this_ : @win32_core.RawAddress,
+) -> Unit raise @win32_core.WindowsError {
+  reset_f4900b2a03a0(this_)
+}
+
+///|
+pub fn IDataModelScriptDebugClient_f3ffceb2ceb0::notify_debug_event_raw(
+  this_ : @win32_core.RawAddress,
+  p_event_info : @win32_core.RawAddress,
+  p_script : @win32_core.RawAddress,
+  p_event_data_object : @win32_core.RawAddress,
+  resume_event_kind : @win32_core.RawAddress,
+) -> Int {
+  notify_debug_event_7d4fc038dd66_raw(
+    this_, p_event_info, p_script, p_event_data_object, resume_event_kind,
+  )
+}
+
+///|
+pub fn IDataModelScriptDebugClient_f3ffceb2ceb0::notify_debug_event(
+  this_ : @win32_core.RawAddress,
+  p_event_info : @win32_core.RawAddress,
+  p_script : @win32_core.RawAddress,
+  p_event_data_object : @win32_core.RawAddress,
+  resume_event_kind : @win32_core.RawAddress,
+) -> Unit raise @win32_core.WindowsError {
+  notify_debug_event_7d4fc038dd66(
+    this_, p_event_info, p_script, p_event_data_object, resume_event_kind,
+  )
+}
+
+///|
+pub fn IDataModelScriptDebugStack_3102538848aa::get_frame_count_raw(
+  this_ : @win32_core.RawAddress,
+) -> UInt64 {
+  get_frame_count_88fe6751e371_raw(this_)
+}
+
+///|
+pub fn IDataModelScriptDebugStack_3102538848aa::get_stack_frame_raw(
+  this_ : @win32_core.RawAddress,
+  frame_number : UInt64,
+  stack_frame : @win32_core.RawAddress,
+) -> Int {
+  get_stack_frame_b291891c9803_raw(this_, frame_number, stack_frame)
+}
+
+///|
+pub fn IDataModelScriptDebugStack_3102538848aa::get_stack_frame(
+  this_ : @win32_core.RawAddress,
+  frame_number : UInt64,
+  stack_frame : @win32_core.RawAddress,
+) -> Unit raise @win32_core.WindowsError {
+  get_stack_frame_b291891c9803(this_, frame_number, stack_frame)
+}
+
+///|
+pub fn IDataModelScriptDebugStackFrame_a63faab60941::enumerate_arguments_raw(
+  this_ : @win32_core.RawAddress,
+  variables_enum : @win32_core.RawAddress,
+) -> Int {
+  enumerate_arguments_101af892fb57_raw(this_, variables_enum)
+}
+
+///|
+pub fn IDataModelScriptDebugStackFrame_a63faab60941::enumerate_arguments(
+  this_ : @win32_core.RawAddress,
+  variables_enum : @win32_core.RawAddress,
+) -> Unit raise @win32_core.WindowsError {
+  enumerate_arguments_101af892fb57(this_, variables_enum)
+}
+
+///|
+pub fn IDataModelScriptDebugStackFrame_a63faab60941::enumerate_locals_raw(
+  this_ : @win32_core.RawAddress,
+  variables_enum : @win32_core.RawAddress,
+) -> Int {
+  enumerate_locals_a6551d84158b_raw(this_, variables_enum)
+}
+
+///|
+pub fn IDataModelScriptDebugStackFrame_a63faab60941::enumerate_locals(
+  this_ : @win32_core.RawAddress,
+  variables_enum : @win32_core.RawAddress,
+) -> Unit raise @win32_core.WindowsError {
+  enumerate_locals_a6551d84158b(this_, variables_enum)
+}
+
+///|
+pub fn IDataModelScriptDebugStackFrame_a63faab60941::evaluate_raw(
+  this_ : @win32_core.RawAddress,
+  pwsz_expression : @win32_core.RawAddress,
+  pp_result : @win32_core.RawAddress,
+) -> Int {
+  evaluate_f6b3298e5665_raw(this_, pwsz_expression, pp_result)
+}
+
+///|
+pub fn IDataModelScriptDebugStackFrame_a63faab60941::evaluate(
+  this_ : @win32_core.RawAddress,
+  pwsz_expression : @win32_core.RawAddress,
+  pp_result : @win32_core.RawAddress,
+) -> Unit raise @win32_core.WindowsError {
+  evaluate_f6b3298e5665(this_, pwsz_expression, pp_result)
+}
+
+///|
+pub fn IDataModelScriptDebugStackFrame_a63faab60941::get_name_raw(
+  this_ : @win32_core.RawAddress,
+  name : @win32_core.RawAddress,
+) -> Int {
+  get_name_c1b2c50e46a9_raw(this_, name)
+}
+
+///|
+pub fn IDataModelScriptDebugStackFrame_a63faab60941::get_name(
+  this_ : @win32_core.RawAddress,
+  name : @win32_core.RawAddress,
+) -> Unit raise @win32_core.WindowsError {
+  get_name_c1b2c50e46a9(this_, name)
+}
+
+///|
+pub fn IDataModelScriptDebugStackFrame_a63faab60941::get_position_raw(
+  this_ : @win32_core.RawAddress,
+  position : @win32_core.RawAddress,
+  position_span_end : @win32_core.RawAddress,
+  line_text : @win32_core.RawAddress,
+) -> Int {
+  get_position_fccb188b416b_raw(this_, position, position_span_end, line_text)
+}
+
+///|
+pub fn IDataModelScriptDebugStackFrame_a63faab60941::get_position(
+  this_ : @win32_core.RawAddress,
+  position : @win32_core.RawAddress,
+  position_span_end : @win32_core.RawAddress,
+  line_text : @win32_core.RawAddress,
+) -> Unit raise @win32_core.WindowsError {
+  get_position_fccb188b416b(this_, position, position_span_end, line_text)
+}
+
+///|
+pub fn IDataModelScriptDebugStackFrame_a63faab60941::get_transition_raw(
+  this_ : @win32_core.RawAddress,
+  transition_script : @win32_core.RawAddress,
+  is_transition_contiguous : @win32_core.RawAddress,
+) -> Int {
+  get_transition_e3b64dd05522_raw(
+    this_, transition_script, is_transition_contiguous,
+  )
+}
+
+///|
+pub fn IDataModelScriptDebugStackFrame_a63faab60941::get_transition(
+  this_ : @win32_core.RawAddress,
+  transition_script : @win32_core.RawAddress,
+  is_transition_contiguous : @win32_core.RawAddress,
+) -> Unit raise @win32_core.WindowsError {
+  get_transition_e3b64dd05522(
+    this_, transition_script, is_transition_contiguous,
+  )
+}
+
+///|
+pub fn IDataModelScriptDebugStackFrame_a63faab60941::is_transition_point_raw(
+  this_ : @win32_core.RawAddress,
+  is_transition_point : @win32_core.RawAddress,
+) -> Int {
+  is_transition_point_b99652341a6b_raw(this_, is_transition_point)
+}
+
+///|
+pub fn IDataModelScriptDebugStackFrame_a63faab60941::is_transition_point(
+  this_ : @win32_core.RawAddress,
+  is_transition_point : @win32_core.RawAddress,
+) -> Unit raise @win32_core.WindowsError {
+  is_transition_point_b99652341a6b(this_, is_transition_point)
+}
+
+///|
+pub fn IDataModelScriptDebugVariableSetEnumerator_16dfea28a28f::get_next_raw(
+  this_ : @win32_core.RawAddress,
+  variable_name : @win32_core.RawAddress,
+  variable_value : @win32_core.RawAddress,
+  variable_metadata : @win32_core.RawAddress,
+) -> Int {
+  get_next_daa6cc39f633_raw(
+    this_, variable_name, variable_value, variable_metadata,
+  )
+}
+
+///|
+pub fn IDataModelScriptDebugVariableSetEnumerator_16dfea28a28f::get_next(
+  this_ : @win32_core.RawAddress,
+  variable_name : @win32_core.RawAddress,
+  variable_value : @win32_core.RawAddress,
+  variable_metadata : @win32_core.RawAddress,
+) -> Unit raise @win32_core.WindowsError {
+  get_next_daa6cc39f633(this_, variable_name, variable_value, variable_metadata)
+}
+
+///|
+pub fn IDataModelScriptDebugVariableSetEnumerator_16dfea28a28f::reset_raw(
+  this_ : @win32_core.RawAddress,
+) -> Int {
+  reset_7498a11f06d2_raw(this_)
+}
+
+///|
+pub fn IDataModelScriptDebugVariableSetEnumerator_16dfea28a28f::reset(
+  this_ : @win32_core.RawAddress,
+) -> Unit raise @win32_core.WindowsError {
+  reset_7498a11f06d2(this_)
+}
+
+///|
+pub fn IDataModelScriptHostContext_bfa33875f3ef::get_namespace_object_raw(
+  this_ : @win32_core.RawAddress,
+  namespace_object : @win32_core.RawAddress,
+) -> Int {
+  get_namespace_object_c49787512c3f_raw(this_, namespace_object)
+}
+
+///|
+pub fn IDataModelScriptHostContext_bfa33875f3ef::get_namespace_object(
+  this_ : @win32_core.RawAddress,
+  namespace_object : @win32_core.RawAddress,
+) -> Unit raise @win32_core.WindowsError {
+  get_namespace_object_c49787512c3f(this_, namespace_object)
+}
+
+///|
+pub fn IDataModelScriptHostContext_bfa33875f3ef::notify_script_change_raw(
+  this_ : @win32_core.RawAddress,
+  script : @win32_core.RawAddress,
+  change_kind : Int,
+) -> Int {
+  notify_script_change_ea7514fc4a24_raw(this_, script, change_kind)
+}
+
+///|
+pub fn IDataModelScriptHostContext_bfa33875f3ef::notify_script_change(
+  this_ : @win32_core.RawAddress,
+  script : @win32_core.RawAddress,
+  change_kind : Int,
+) -> Unit raise @win32_core.WindowsError {
+  notify_script_change_ea7514fc4a24(this_, script, change_kind)
+}
+
+///|
+pub fn IDataModelScriptManager_7554b0ab3db5::enumerate_script_providers_raw(
+  this_ : @win32_core.RawAddress,
+  enumerator : @win32_core.RawAddress,
+) -> Int {
+  enumerate_script_providers_e3b8cd1e998d_raw(this_, enumerator)
+}
+
+///|
+pub fn IDataModelScriptManager_7554b0ab3db5::enumerate_script_providers(
+  this_ : @win32_core.RawAddress,
+  enumerator : @win32_core.RawAddress,
+) -> Unit raise @win32_core.WindowsError {
+  enumerate_script_providers_e3b8cd1e998d(this_, enumerator)
+}
+
+///|
+pub fn IDataModelScriptManager_7554b0ab3db5::find_provider_for_script_extension_raw(
+  this_ : @win32_core.RawAddress,
+  script_extension : @win32_core.RawAddress,
+  provider : @win32_core.RawAddress,
+) -> Int {
+  find_provider_for_script_extension_3445ddfc2976_raw(
+    this_, script_extension, provider,
+  )
+}
+
+///|
+pub fn IDataModelScriptManager_7554b0ab3db5::find_provider_for_script_extension(
+  this_ : @win32_core.RawAddress,
+  script_extension : @win32_core.RawAddress,
+  provider : @win32_core.RawAddress,
+) -> Unit raise @win32_core.WindowsError {
+  find_provider_for_script_extension_3445ddfc2976(
+    this_, script_extension, provider,
+  )
+}
+
+///|
+pub fn IDataModelScriptManager_7554b0ab3db5::find_provider_for_script_type_raw(
+  this_ : @win32_core.RawAddress,
+  script_type : @win32_core.RawAddress,
+  provider : @win32_core.RawAddress,
+) -> Int {
+  find_provider_for_script_type_89273e56187e_raw(this_, script_type, provider)
+}
+
+///|
+pub fn IDataModelScriptManager_7554b0ab3db5::find_provider_for_script_type(
+  this_ : @win32_core.RawAddress,
+  script_type : @win32_core.RawAddress,
+  provider : @win32_core.RawAddress,
+) -> Unit raise @win32_core.WindowsError {
+  find_provider_for_script_type_89273e56187e(this_, script_type, provider)
+}
+
+///|
+pub fn IDataModelScriptManager_7554b0ab3db5::get_default_name_binder_raw(
+  this_ : @win32_core.RawAddress,
+  pp_name_binder : @win32_core.RawAddress,
+) -> Int {
+  get_default_name_binder_4d77eafe6125_raw(this_, pp_name_binder)
+}
+
+///|
+pub fn IDataModelScriptManager_7554b0ab3db5::get_default_name_binder(
+  this_ : @win32_core.RawAddress,
+  pp_name_binder : @win32_core.RawAddress,
+) -> Unit raise @win32_core.WindowsError {
+  get_default_name_binder_4d77eafe6125(this_, pp_name_binder)
+}
+
+///|
+pub fn IDataModelScriptManager_7554b0ab3db5::register_script_provider_raw(
+  this_ : @win32_core.RawAddress,
+  provider : @win32_core.RawAddress,
+) -> Int {
+  register_script_provider_6294e938edf2_raw(this_, provider)
+}
+
+///|
+pub fn IDataModelScriptManager_7554b0ab3db5::register_script_provider(
+  this_ : @win32_core.RawAddress,
+  provider : @win32_core.RawAddress,
+) -> Unit raise @win32_core.WindowsError {
+  register_script_provider_6294e938edf2(this_, provider)
+}
+
+///|
+pub fn IDataModelScriptManager_7554b0ab3db5::unregister_script_provider_raw(
+  this_ : @win32_core.RawAddress,
+  provider : @win32_core.RawAddress,
+) -> Int {
+  unregister_script_provider_731707b29cc1_raw(this_, provider)
+}
+
+///|
+pub fn IDataModelScriptManager_7554b0ab3db5::unregister_script_provider(
+  this_ : @win32_core.RawAddress,
+  provider : @win32_core.RawAddress,
+) -> Unit raise @win32_core.WindowsError {
+  unregister_script_provider_731707b29cc1(this_, provider)
+}
+
+///|
+pub fn IDataModelScriptProvider_18955e897242::create_script_raw(
+  this_ : @win32_core.RawAddress,
+  script : @win32_core.RawAddress,
+) -> Int {
+  create_script_d2bc5fec3194_raw(this_, script)
+}
+
+///|
+pub fn IDataModelScriptProvider_18955e897242::create_script(
+  this_ : @win32_core.RawAddress,
+  script : @win32_core.RawAddress,
+) -> Unit raise @win32_core.WindowsError {
+  create_script_d2bc5fec3194(this_, script)
+}
+
+///|
+pub fn IDataModelScriptProvider_18955e897242::enumerate_templates_raw(
+  this_ : @win32_core.RawAddress,
+  enumerator : @win32_core.RawAddress,
+) -> Int {
+  enumerate_templates_803e91d311ce_raw(this_, enumerator)
+}
+
+///|
+pub fn IDataModelScriptProvider_18955e897242::enumerate_templates(
+  this_ : @win32_core.RawAddress,
+  enumerator : @win32_core.RawAddress,
+) -> Unit raise @win32_core.WindowsError {
+  enumerate_templates_803e91d311ce(this_, enumerator)
+}
+
+///|
+pub fn IDataModelScriptProvider_18955e897242::get_default_template_content_raw(
+  this_ : @win32_core.RawAddress,
+  template_content : @win32_core.RawAddress,
+) -> Int {
+  get_default_template_content_a44e55dc33bc_raw(this_, template_content)
+}
+
+///|
+pub fn IDataModelScriptProvider_18955e897242::get_default_template_content(
+  this_ : @win32_core.RawAddress,
+  template_content : @win32_core.RawAddress,
+) -> Unit raise @win32_core.WindowsError {
+  get_default_template_content_a44e55dc33bc(this_, template_content)
+}
+
+///|
+pub fn IDataModelScriptProvider_18955e897242::get_extension_raw(
+  this_ : @win32_core.RawAddress,
+  extension : @win32_core.RawAddress,
+) -> Int {
+  get_extension_5cf336343eba_raw(this_, extension)
+}
+
+///|
+pub fn IDataModelScriptProvider_18955e897242::get_extension(
+  this_ : @win32_core.RawAddress,
+  extension : @win32_core.RawAddress,
+) -> Unit raise @win32_core.WindowsError {
+  get_extension_5cf336343eba(this_, extension)
+}
+
+///|
+pub fn IDataModelScriptProvider_18955e897242::get_name_raw(
+  this_ : @win32_core.RawAddress,
+  name : @win32_core.RawAddress,
+) -> Int {
+  get_name_730b04384af0_raw(this_, name)
+}
+
+///|
+pub fn IDataModelScriptProvider_18955e897242::get_name(
+  this_ : @win32_core.RawAddress,
+  name : @win32_core.RawAddress,
+) -> Unit raise @win32_core.WindowsError {
+  get_name_730b04384af0(this_, name)
+}
+
+///|
+pub fn IDataModelScriptProviderEnumerator_6a20364e6df6::get_next_raw(
+  this_ : @win32_core.RawAddress,
+  provider : @win32_core.RawAddress,
+) -> Int {
+  get_next_70701470ffcf_raw(this_, provider)
+}
+
+///|
+pub fn IDataModelScriptProviderEnumerator_6a20364e6df6::get_next(
+  this_ : @win32_core.RawAddress,
+  provider : @win32_core.RawAddress,
+) -> Unit raise @win32_core.WindowsError {
+  get_next_70701470ffcf(this_, provider)
+}
+
+///|
+pub fn IDataModelScriptProviderEnumerator_6a20364e6df6::reset_raw(
+  this_ : @win32_core.RawAddress,
+) -> Int {
+  reset_e1cfded7af69_raw(this_)
+}
+
+///|
+pub fn IDataModelScriptProviderEnumerator_6a20364e6df6::reset(
+  this_ : @win32_core.RawAddress,
+) -> Unit raise @win32_core.WindowsError {
+  reset_e1cfded7af69(this_)
+}
+
+///|
+pub fn IDataModelScriptTemplate_5b90128ee66c::get_content_raw(
+  this_ : @win32_core.RawAddress,
+  content_stream : @win32_core.RawAddress,
+) -> Int {
+  get_content_b6a15bf1a6e1_raw(this_, content_stream)
+}
+
+///|
+pub fn IDataModelScriptTemplate_5b90128ee66c::get_content(
+  this_ : @win32_core.RawAddress,
+  content_stream : @win32_core.RawAddress,
+) -> Unit raise @win32_core.WindowsError {
+  get_content_b6a15bf1a6e1(this_, content_stream)
+}
+
+///|
+pub fn IDataModelScriptTemplate_5b90128ee66c::get_description_raw(
+  this_ : @win32_core.RawAddress,
+  template_description : @win32_core.RawAddress,
+) -> Int {
+  get_description_5d169aaa9e9e_raw(this_, template_description)
+}
+
+///|
+pub fn IDataModelScriptTemplate_5b90128ee66c::get_description(
+  this_ : @win32_core.RawAddress,
+  template_description : @win32_core.RawAddress,
+) -> Unit raise @win32_core.WindowsError {
+  get_description_5d169aaa9e9e(this_, template_description)
+}
+
+///|
+pub fn IDataModelScriptTemplate_5b90128ee66c::get_name_raw(
+  this_ : @win32_core.RawAddress,
+  template_name : @win32_core.RawAddress,
+) -> Int {
+  get_name_c4da0e716dfe_raw(this_, template_name)
+}
+
+///|
+pub fn IDataModelScriptTemplate_5b90128ee66c::get_name(
+  this_ : @win32_core.RawAddress,
+  template_name : @win32_core.RawAddress,
+) -> Unit raise @win32_core.WindowsError {
+  get_name_c4da0e716dfe(this_, template_name)
+}
+
+///|
+pub fn IDataModelScriptTemplateEnumerator_228dec7035c8::get_next_raw(
+  this_ : @win32_core.RawAddress,
+  template_content : @win32_core.RawAddress,
+) -> Int {
+  get_next_3de0a5e1a7de_raw(this_, template_content)
+}
+
+///|
+pub fn IDataModelScriptTemplateEnumerator_228dec7035c8::get_next(
+  this_ : @win32_core.RawAddress,
+  template_content : @win32_core.RawAddress,
+) -> Unit raise @win32_core.WindowsError {
+  get_next_3de0a5e1a7de(this_, template_content)
+}
+
+///|
+pub fn IDataModelScriptTemplateEnumerator_228dec7035c8::reset_raw(
+  this_ : @win32_core.RawAddress,
+) -> Int {
+  reset_94d58cd7cdc2_raw(this_)
+}
+
+///|
+pub fn IDataModelScriptTemplateEnumerator_228dec7035c8::reset(
+  this_ : @win32_core.RawAddress,
+) -> Unit raise @win32_core.WindowsError {
+  reset_94d58cd7cdc2(this_)
+}
+
+///|
+pub fn IDebugAdvanced_609b301eaef9::get_thread_context_raw(
+  this_ : @win32_core.RawAddress,
+  context : @win32_core.RawAddress,
+  context_size : UInt,
+) -> Int {
+  get_thread_context_44559392f551_raw(this_, context, context_size)
+}
+
+///|
+pub fn IDebugAdvanced_609b301eaef9::get_thread_context(
+  this_ : @win32_core.RawAddress,
+  context : @win32_core.RawAddress,
+  context_size : UInt,
+) -> Unit raise @win32_core.WindowsError {
+  get_thread_context_44559392f551(this_, context, context_size)
+}
+
+///|
+pub fn IDebugAdvanced_609b301eaef9::set_thread_context_raw(
+  this_ : @win32_core.RawAddress,
+  context : @win32_core.RawAddress,
+  context_size : UInt,
+) -> Int {
+  set_thread_context_fc93bc602225_raw(this_, context, context_size)
+}
+
+///|
+pub fn IDebugAdvanced_609b301eaef9::set_thread_context(
+  this_ : @win32_core.RawAddress,
+  context : @win32_core.RawAddress,
+  context_size : UInt,
+) -> Unit raise @win32_core.WindowsError {
+  set_thread_context_fc93bc602225(this_, context, context_size)
+}
+
+///|
+pub fn IDebugAdvanced2_4b8641e6ff6f::find_source_file_and_token_raw(
+  this_ : @win32_core.RawAddress,
+  start_element : UInt,
+  mod_addr : UInt64,
+  file : @win32_core.RawAddress,
+  flags : UInt,
+  file_token : @win32_core.RawAddress,
+  file_token_size : UInt,
+  found_element : @win32_core.RawAddress,
+  buffer : @win32_core.RawAddress,
+  buffer_size : UInt,
+  found_size : @win32_core.RawAddress,
+) -> Int {
+  find_source_file_and_token_6441cdcdeca2_raw(
+    this_, start_element, mod_addr, file, flags, file_token, file_token_size, found_element,
+    buffer, buffer_size, found_size,
+  )
+}
+
+///|
+pub fn IDebugAdvanced2_4b8641e6ff6f::find_source_file_and_token(
+  this_ : @win32_core.RawAddress,
+  start_element : UInt,
+  mod_addr : UInt64,
+  file : @win32_core.RawAddress,
+  flags : UInt,
+  file_token : @win32_core.RawAddress,
+  file_token_size : UInt,
+  found_element : @win32_core.RawAddress,
+  buffer : @win32_core.RawAddress,
+  buffer_size : UInt,
+  found_size : @win32_core.RawAddress,
+) -> Unit raise @win32_core.WindowsError {
+  find_source_file_and_token_6441cdcdeca2(
+    this_, start_element, mod_addr, file, flags, file_token, file_token_size, found_element,
+    buffer, buffer_size, found_size,
+  )
+}
+
+///|
+pub fn IDebugAdvanced2_4b8641e6ff6f::get_source_file_information_raw(
+  this_ : @win32_core.RawAddress,
+  which : UInt,
+  source_file : @win32_core.RawAddress,
+  arg64 : UInt64,
+  arg32 : UInt,
+  buffer : @win32_core.RawAddress,
+  buffer_size : UInt,
+  info_size : @win32_core.RawAddress,
+) -> Int {
+  get_source_file_information_a4dbab6277d9_raw(
+    this_, which, source_file, arg64, arg32, buffer, buffer_size, info_size,
+  )
+}
+
+///|
+pub fn IDebugAdvanced2_4b8641e6ff6f::get_source_file_information(
+  this_ : @win32_core.RawAddress,
+  which : UInt,
+  source_file : @win32_core.RawAddress,
+  arg64 : UInt64,
+  arg32 : UInt,
+  buffer : @win32_core.RawAddress,
+  buffer_size : UInt,
+  info_size : @win32_core.RawAddress,
+) -> Unit raise @win32_core.WindowsError {
+  get_source_file_information_a4dbab6277d9(
+    this_, which, source_file, arg64, arg32, buffer, buffer_size, info_size,
+  )
+}
+
+///|
+pub fn IDebugAdvanced2_4b8641e6ff6f::get_symbol_information_raw(
+  this_ : @win32_core.RawAddress,
+  which : UInt,
+  arg64 : UInt64,
+  arg32 : UInt,
+  buffer : @win32_core.RawAddress,
+  buffer_size : UInt,
+  info_size : @win32_core.RawAddress,
+  string_buffer : @win32_core.RawAddress,
+  string_buffer_size : UInt,
+  string_size : @win32_core.RawAddress,
+) -> Int {
+  get_symbol_information_0e835683bee7_raw(
+    this_, which, arg64, arg32, buffer, buffer_size, info_size, string_buffer, string_buffer_size,
+    string_size,
+  )
+}
+
+///|
+pub fn IDebugAdvanced2_4b8641e6ff6f::get_symbol_information(
+  this_ : @win32_core.RawAddress,
+  which : UInt,
+  arg64 : UInt64,
+  arg32 : UInt,
+  buffer : @win32_core.RawAddress,
+  buffer_size : UInt,
+  info_size : @win32_core.RawAddress,
+  string_buffer : @win32_core.RawAddress,
+  string_buffer_size : UInt,
+  string_size : @win32_core.RawAddress,
+) -> Unit raise @win32_core.WindowsError {
+  get_symbol_information_0e835683bee7(
+    this_, which, arg64, arg32, buffer, buffer_size, info_size, string_buffer, string_buffer_size,
+    string_size,
+  )
+}
+
+///|
+pub fn IDebugAdvanced2_4b8641e6ff6f::get_system_object_information_raw(
+  this_ : @win32_core.RawAddress,
+  which : UInt,
+  arg64 : UInt64,
+  arg32 : UInt,
+  buffer : @win32_core.RawAddress,
+  buffer_size : UInt,
+  info_size : @win32_core.RawAddress,
+) -> Int {
+  get_system_object_information_47879ed6249a_raw(
+    this_, which, arg64, arg32, buffer, buffer_size, info_size,
+  )
+}
+
+///|
+pub fn IDebugAdvanced2_4b8641e6ff6f::get_system_object_information(
+  this_ : @win32_core.RawAddress,
+  which : UInt,
+  arg64 : UInt64,
+  arg32 : UInt,
+  buffer : @win32_core.RawAddress,
+  buffer_size : UInt,
+  info_size : @win32_core.RawAddress,
+) -> Unit raise @win32_core.WindowsError {
+  get_system_object_information_47879ed6249a(
+    this_, which, arg64, arg32, buffer, buffer_size, info_size,
+  )
+}
+
+///|
+pub fn IDebugAdvanced2_4b8641e6ff6f::get_thread_context_raw(
+  this_ : @win32_core.RawAddress,
+  context : @win32_core.RawAddress,
+  context_size : UInt,
+) -> Int {
+  get_thread_context_a9332077186d_raw(this_, context, context_size)
+}
+
+///|
+pub fn IDebugAdvanced2_4b8641e6ff6f::get_thread_context(
+  this_ : @win32_core.RawAddress,
+  context : @win32_core.RawAddress,
+  context_size : UInt,
+) -> Unit raise @win32_core.WindowsError {
+  get_thread_context_a9332077186d(this_, context, context_size)
+}
+
+///|
+pub fn IDebugAdvanced2_4b8641e6ff6f::request_raw(
+  this_ : @win32_core.RawAddress,
+  request : UInt,
+  in_buffer : @win32_core.RawAddress,
+  in_buffer_size : UInt,
+  out_buffer : @win32_core.RawAddress,
+  out_buffer_size : UInt,
+  out_size : @win32_core.RawAddress,
+) -> Int {
+  request_066d3cd65cf6_raw(
+    this_, request, in_buffer, in_buffer_size, out_buffer, out_buffer_size, out_size,
+  )
+}
+
+///|
+pub fn IDebugAdvanced2_4b8641e6ff6f::request(
+  this_ : @win32_core.RawAddress,
+  request : UInt,
+  in_buffer : @win32_core.RawAddress,
+  in_buffer_size : UInt,
+  out_buffer : @win32_core.RawAddress,
+  out_buffer_size : UInt,
+  out_size : @win32_core.RawAddress,
+) -> Unit raise @win32_core.WindowsError {
+  request_066d3cd65cf6(
+    this_, request, in_buffer, in_buffer_size, out_buffer, out_buffer_size, out_size,
+  )
+}
+
+///|
+pub fn IDebugAdvanced2_4b8641e6ff6f::set_thread_context_raw(
+  this_ : @win32_core.RawAddress,
+  context : @win32_core.RawAddress,
+  context_size : UInt,
+) -> Int {
+  set_thread_context_ca965d274d42_raw(this_, context, context_size)
+}
+
+///|
+pub fn IDebugAdvanced2_4b8641e6ff6f::set_thread_context(
+  this_ : @win32_core.RawAddress,
+  context : @win32_core.RawAddress,
+  context_size : UInt,
+) -> Unit raise @win32_core.WindowsError {
+  set_thread_context_ca965d274d42(this_, context, context_size)
+}
+
+///|
+pub fn IDebugAdvanced3_e6b9aaa579ff::find_source_file_and_token_raw(
+  this_ : @win32_core.RawAddress,
+  start_element : UInt,
+  mod_addr : UInt64,
+  file : @win32_core.RawAddress,
+  flags : UInt,
+  file_token : @win32_core.RawAddress,
+  file_token_size : UInt,
+  found_element : @win32_core.RawAddress,
+  buffer : @win32_core.RawAddress,
+  buffer_size : UInt,
+  found_size : @win32_core.RawAddress,
+) -> Int {
+  find_source_file_and_token_8f34927e4d5b_raw(
+    this_, start_element, mod_addr, file, flags, file_token, file_token_size, found_element,
+    buffer, buffer_size, found_size,
+  )
+}
+
+///|
+pub fn IDebugAdvanced3_e6b9aaa579ff::find_source_file_and_token(
+  this_ : @win32_core.RawAddress,
+  start_element : UInt,
+  mod_addr : UInt64,
+  file : @win32_core.RawAddress,
+  flags : UInt,
+  file_token : @win32_core.RawAddress,
+  file_token_size : UInt,
+  found_element : @win32_core.RawAddress,
+  buffer : @win32_core.RawAddress,
+  buffer_size : UInt,
+  found_size : @win32_core.RawAddress,
+) -> Unit raise @win32_core.WindowsError {
+  find_source_file_and_token_8f34927e4d5b(
+    this_, start_element, mod_addr, file, flags, file_token, file_token_size, found_element,
+    buffer, buffer_size, found_size,
+  )
+}
+
+///|
+pub fn IDebugAdvanced3_e6b9aaa579ff::find_source_file_and_token_wide_raw(
+  this_ : @win32_core.RawAddress,
+  start_element : UInt,
+  mod_addr : UInt64,
+  file : @win32_core.RawAddress,
+  flags : UInt,
+  file_token : @win32_core.RawAddress,
+  file_token_size : UInt,
+  found_element : @win32_core.RawAddress,
+  buffer : @win32_core.RawAddress,
+  buffer_size : UInt,
+  found_size : @win32_core.RawAddress,
+) -> Int {
+  find_source_file_and_token_wide_46073177fbe8_raw(
+    this_, start_element, mod_addr, file, flags, file_token, file_token_size, found_element,
+    buffer, buffer_size, found_size,
+  )
+}
+
+///|
+pub fn IDebugAdvanced3_e6b9aaa579ff::find_source_file_and_token_wide(
+  this_ : @win32_core.RawAddress,
+  start_element : UInt,
+  mod_addr : UInt64,
+  file : @win32_core.RawAddress,
+  flags : UInt,
+  file_token : @win32_core.RawAddress,
+  file_token_size : UInt,
+  found_element : @win32_core.RawAddress,
+  buffer : @win32_core.RawAddress,
+  buffer_size : UInt,
+  found_size : @win32_core.RawAddress,
+) -> Unit raise @win32_core.WindowsError {
+  find_source_file_and_token_wide_46073177fbe8(
+    this_, start_element, mod_addr, file, flags, file_token, file_token_size, found_element,
+    buffer, buffer_size, found_size,
+  )
+}
+
+///|
+pub fn IDebugAdvanced3_e6b9aaa579ff::get_source_file_information_raw(
+  this_ : @win32_core.RawAddress,
+  which : UInt,
+  source_file : @win32_core.RawAddress,
+  arg64 : UInt64,
+  arg32 : UInt,
+  buffer : @win32_core.RawAddress,
+  buffer_size : UInt,
+  info_size : @win32_core.RawAddress,
+) -> Int {
+  get_source_file_information_8297ceec8e55_raw(
+    this_, which, source_file, arg64, arg32, buffer, buffer_size, info_size,
+  )
+}
+
+///|
+pub fn IDebugAdvanced3_e6b9aaa579ff::get_source_file_information(
+  this_ : @win32_core.RawAddress,
+  which : UInt,
+  source_file : @win32_core.RawAddress,
+  arg64 : UInt64,
+  arg32 : UInt,
+  buffer : @win32_core.RawAddress,
+  buffer_size : UInt,
+  info_size : @win32_core.RawAddress,
+) -> Unit raise @win32_core.WindowsError {
+  get_source_file_information_8297ceec8e55(
+    this_, which, source_file, arg64, arg32, buffer, buffer_size, info_size,
+  )
+}
+
+///|
+pub fn IDebugAdvanced3_e6b9aaa579ff::get_source_file_information_wide_raw(
+  this_ : @win32_core.RawAddress,
+  which : UInt,
+  source_file : @win32_core.RawAddress,
+  arg64 : UInt64,
+  arg32 : UInt,
+  buffer : @win32_core.RawAddress,
+  buffer_size : UInt,
+  info_size : @win32_core.RawAddress,
+) -> Int {
+  get_source_file_information_wide_5f147008d56d_raw(
+    this_, which, source_file, arg64, arg32, buffer, buffer_size, info_size,
+  )
+}
+
+///|
+pub fn IDebugAdvanced3_e6b9aaa579ff::get_source_file_information_wide(
+  this_ : @win32_core.RawAddress,
+  which : UInt,
+  source_file : @win32_core.RawAddress,
+  arg64 : UInt64,
+  arg32 : UInt,
+  buffer : @win32_core.RawAddress,
+  buffer_size : UInt,
+  info_size : @win32_core.RawAddress,
+) -> Unit raise @win32_core.WindowsError {
+  get_source_file_information_wide_5f147008d56d(
+    this_, which, source_file, arg64, arg32, buffer, buffer_size, info_size,
+  )
+}
+
+///|
+pub fn IDebugAdvanced3_e6b9aaa579ff::get_symbol_information_raw(
+  this_ : @win32_core.RawAddress,
+  which : UInt,
+  arg64 : UInt64,
+  arg32 : UInt,
+  buffer : @win32_core.RawAddress,
+  buffer_size : UInt,
+  info_size : @win32_core.RawAddress,
+  string_buffer : @win32_core.RawAddress,
+  string_buffer_size : UInt,
+  string_size : @win32_core.RawAddress,
+) -> Int {
+  get_symbol_information_bbb7ec30a8e1_raw(
+    this_, which, arg64, arg32, buffer, buffer_size, info_size, string_buffer, string_buffer_size,
+    string_size,
+  )
+}
+
+///|
+pub fn IDebugAdvanced3_e6b9aaa579ff::get_symbol_information(
+  this_ : @win32_core.RawAddress,
+  which : UInt,
+  arg64 : UInt64,
+  arg32 : UInt,
+  buffer : @win32_core.RawAddress,
+  buffer_size : UInt,
+  info_size : @win32_core.RawAddress,
+  string_buffer : @win32_core.RawAddress,
+  string_buffer_size : UInt,
+  string_size : @win32_core.RawAddress,
+) -> Unit raise @win32_core.WindowsError {
+  get_symbol_information_bbb7ec30a8e1(
+    this_, which, arg64, arg32, buffer, buffer_size, info_size, string_buffer, string_buffer_size,
+    string_size,
+  )
+}
+
+///|
+pub fn IDebugAdvanced3_e6b9aaa579ff::get_symbol_information_wide_raw(
+  this_ : @win32_core.RawAddress,
+  which : UInt,
+  arg64 : UInt64,
+  arg32 : UInt,
+  buffer : @win32_core.RawAddress,
+  buffer_size : UInt,
+  info_size : @win32_core.RawAddress,
+  string_buffer : @win32_core.RawAddress,
+  string_buffer_size : UInt,
+  string_size : @win32_core.RawAddress,
+) -> Int {
+  get_symbol_information_wide_304a9f30f1a7_raw(
+    this_, which, arg64, arg32, buffer, buffer_size, info_size, string_buffer, string_buffer_size,
+    string_size,
+  )
+}
+
+///|
+pub fn IDebugAdvanced3_e6b9aaa579ff::get_symbol_information_wide(
+  this_ : @win32_core.RawAddress,
+  which : UInt,
+  arg64 : UInt64,
+  arg32 : UInt,
+  buffer : @win32_core.RawAddress,
+  buffer_size : UInt,
+  info_size : @win32_core.RawAddress,
+  string_buffer : @win32_core.RawAddress,
+  string_buffer_size : UInt,
+  string_size : @win32_core.RawAddress,
+) -> Unit raise @win32_core.WindowsError {
+  get_symbol_information_wide_304a9f30f1a7(
+    this_, which, arg64, arg32, buffer, buffer_size, info_size, string_buffer, string_buffer_size,
+    string_size,
+  )
+}
+
+///|
+pub fn IDebugAdvanced3_e6b9aaa579ff::get_system_object_information_raw(
+  this_ : @win32_core.RawAddress,
+  which : UInt,
+  arg64 : UInt64,
+  arg32 : UInt,
+  buffer : @win32_core.RawAddress,
+  buffer_size : UInt,
+  info_size : @win32_core.RawAddress,
+) -> Int {
+  get_system_object_information_5383e4e7b57a_raw(
+    this_, which, arg64, arg32, buffer, buffer_size, info_size,
+  )
+}
+
+///|
+pub fn IDebugAdvanced3_e6b9aaa579ff::get_system_object_information(
+  this_ : @win32_core.RawAddress,
+  which : UInt,
+  arg64 : UInt64,
+  arg32 : UInt,
+  buffer : @win32_core.RawAddress,
+  buffer_size : UInt,
+  info_size : @win32_core.RawAddress,
+) -> Unit raise @win32_core.WindowsError {
+  get_system_object_information_5383e4e7b57a(
+    this_, which, arg64, arg32, buffer, buffer_size, info_size,
+  )
+}
+
+///|
+pub fn IDebugAdvanced3_e6b9aaa579ff::get_thread_context_raw(
+  this_ : @win32_core.RawAddress,
+  context : @win32_core.RawAddress,
+  context_size : UInt,
+) -> Int {
+  get_thread_context_a04f77e5b5f3_raw(this_, context, context_size)
+}
+
+///|
+pub fn IDebugAdvanced3_e6b9aaa579ff::get_thread_context(
+  this_ : @win32_core.RawAddress,
+  context : @win32_core.RawAddress,
+  context_size : UInt,
+) -> Unit raise @win32_core.WindowsError {
+  get_thread_context_a04f77e5b5f3(this_, context, context_size)
+}
+
+///|
+pub fn IDebugAdvanced3_e6b9aaa579ff::request_raw(
+  this_ : @win32_core.RawAddress,
+  request : UInt,
+  in_buffer : @win32_core.RawAddress,
+  in_buffer_size : UInt,
+  out_buffer : @win32_core.RawAddress,
+  out_buffer_size : UInt,
+  out_size : @win32_core.RawAddress,
+) -> Int {
+  request_46f91ee40100_raw(
+    this_, request, in_buffer, in_buffer_size, out_buffer, out_buffer_size, out_size,
+  )
+}
+
+///|
+pub fn IDebugAdvanced3_e6b9aaa579ff::request(
+  this_ : @win32_core.RawAddress,
+  request : UInt,
+  in_buffer : @win32_core.RawAddress,
+  in_buffer_size : UInt,
+  out_buffer : @win32_core.RawAddress,
+  out_buffer_size : UInt,
+  out_size : @win32_core.RawAddress,
+) -> Unit raise @win32_core.WindowsError {
+  request_46f91ee40100(
+    this_, request, in_buffer, in_buffer_size, out_buffer, out_buffer_size, out_size,
+  )
+}
+
+///|
+pub fn IDebugAdvanced3_e6b9aaa579ff::set_thread_context_raw(
+  this_ : @win32_core.RawAddress,
+  context : @win32_core.RawAddress,
+  context_size : UInt,
+) -> Int {
+  set_thread_context_6a3c100224a0_raw(this_, context, context_size)
+}
+
+///|
+pub fn IDebugAdvanced3_e6b9aaa579ff::set_thread_context(
+  this_ : @win32_core.RawAddress,
+  context : @win32_core.RawAddress,
+  context_size : UInt,
+) -> Unit raise @win32_core.WindowsError {
+  set_thread_context_6a3c100224a0(this_, context, context_size)
+}
+
+///|
+pub fn IDebugAdvanced4_922143629a3b::find_source_file_and_token_raw(
+  this_ : @win32_core.RawAddress,
+  start_element : UInt,
+  mod_addr : UInt64,
+  file : @win32_core.RawAddress,
+  flags : UInt,
+  file_token : @win32_core.RawAddress,
+  file_token_size : UInt,
+  found_element : @win32_core.RawAddress,
+  buffer : @win32_core.RawAddress,
+  buffer_size : UInt,
+  found_size : @win32_core.RawAddress,
+) -> Int {
+  find_source_file_and_token_bafd420a830b_raw(
+    this_, start_element, mod_addr, file, flags, file_token, file_token_size, found_element,
+    buffer, buffer_size, found_size,
+  )
+}
+
+///|
+pub fn IDebugAdvanced4_922143629a3b::find_source_file_and_token(
+  this_ : @win32_core.RawAddress,
+  start_element : UInt,
+  mod_addr : UInt64,
+  file : @win32_core.RawAddress,
+  flags : UInt,
+  file_token : @win32_core.RawAddress,
+  file_token_size : UInt,
+  found_element : @win32_core.RawAddress,
+  buffer : @win32_core.RawAddress,
+  buffer_size : UInt,
+  found_size : @win32_core.RawAddress,
+) -> Unit raise @win32_core.WindowsError {
+  find_source_file_and_token_bafd420a830b(
+    this_, start_element, mod_addr, file, flags, file_token, file_token_size, found_element,
+    buffer, buffer_size, found_size,
+  )
+}
+
+///|
+pub fn IDebugAdvanced4_922143629a3b::find_source_file_and_token_wide_raw(
+  this_ : @win32_core.RawAddress,
+  start_element : UInt,
+  mod_addr : UInt64,
+  file : @win32_core.RawAddress,
+  flags : UInt,
+  file_token : @win32_core.RawAddress,
+  file_token_size : UInt,
+  found_element : @win32_core.RawAddress,
+  buffer : @win32_core.RawAddress,
+  buffer_size : UInt,
+  found_size : @win32_core.RawAddress,
+) -> Int {
+  find_source_file_and_token_wide_24d964a707ca_raw(
+    this_, start_element, mod_addr, file, flags, file_token, file_token_size, found_element,
+    buffer, buffer_size, found_size,
+  )
+}
+
+///|
+pub fn IDebugAdvanced4_922143629a3b::find_source_file_and_token_wide(
+  this_ : @win32_core.RawAddress,
+  start_element : UInt,
+  mod_addr : UInt64,
+  file : @win32_core.RawAddress,
+  flags : UInt,
+  file_token : @win32_core.RawAddress,
+  file_token_size : UInt,
+  found_element : @win32_core.RawAddress,
+  buffer : @win32_core.RawAddress,
+  buffer_size : UInt,
+  found_size : @win32_core.RawAddress,
+) -> Unit raise @win32_core.WindowsError {
+  find_source_file_and_token_wide_24d964a707ca(
+    this_, start_element, mod_addr, file, flags, file_token, file_token_size, found_element,
+    buffer, buffer_size, found_size,
+  )
+}
+
+///|
+pub fn IDebugAdvanced4_922143629a3b::get_source_file_information_raw(
+  this_ : @win32_core.RawAddress,
+  which : UInt,
+  source_file : @win32_core.RawAddress,
+  arg64 : UInt64,
+  arg32 : UInt,
+  buffer : @win32_core.RawAddress,
+  buffer_size : UInt,
+  info_size : @win32_core.RawAddress,
+) -> Int {
+  get_source_file_information_dbf9400010dc_raw(
+    this_, which, source_file, arg64, arg32, buffer, buffer_size, info_size,
+  )
+}
+
+///|
+pub fn IDebugAdvanced4_922143629a3b::get_source_file_information(
+  this_ : @win32_core.RawAddress,
+  which : UInt,
+  source_file : @win32_core.RawAddress,
+  arg64 : UInt64,
+  arg32 : UInt,
+  buffer : @win32_core.RawAddress,
+  buffer_size : UInt,
+  info_size : @win32_core.RawAddress,
+) -> Unit raise @win32_core.WindowsError {
+  get_source_file_information_dbf9400010dc(
+    this_, which, source_file, arg64, arg32, buffer, buffer_size, info_size,
+  )
+}
+
+///|
+pub fn IDebugAdvanced4_922143629a3b::get_source_file_information_wide_raw(
+  this_ : @win32_core.RawAddress,
+  which : UInt,
+  source_file : @win32_core.RawAddress,
+  arg64 : UInt64,
+  arg32 : UInt,
+  buffer : @win32_core.RawAddress,
+  buffer_size : UInt,
+  info_size : @win32_core.RawAddress,
+) -> Int {
+  get_source_file_information_wide_0720d497c7d7_raw(
+    this_, which, source_file, arg64, arg32, buffer, buffer_size, info_size,
+  )
+}
+
+///|
+pub fn IDebugAdvanced4_922143629a3b::get_source_file_information_wide(
+  this_ : @win32_core.RawAddress,
+  which : UInt,
+  source_file : @win32_core.RawAddress,
+  arg64 : UInt64,
+  arg32 : UInt,
+  buffer : @win32_core.RawAddress,
+  buffer_size : UInt,
+  info_size : @win32_core.RawAddress,
+) -> Unit raise @win32_core.WindowsError {
+  get_source_file_information_wide_0720d497c7d7(
+    this_, which, source_file, arg64, arg32, buffer, buffer_size, info_size,
+  )
+}
+
+///|
+pub fn IDebugAdvanced4_922143629a3b::get_symbol_information_raw(
+  this_ : @win32_core.RawAddress,
+  which : UInt,
+  arg64 : UInt64,
+  arg32 : UInt,
+  buffer : @win32_core.RawAddress,
+  buffer_size : UInt,
+  info_size : @win32_core.RawAddress,
+  string_buffer : @win32_core.RawAddress,
+  string_buffer_size : UInt,
+  string_size : @win32_core.RawAddress,
+) -> Int {
+  get_symbol_information_5755c9834af4_raw(
+    this_, which, arg64, arg32, buffer, buffer_size, info_size, string_buffer, string_buffer_size,
+    string_size,
+  )
+}
+
+///|
+pub fn IDebugAdvanced4_922143629a3b::get_symbol_information(
+  this_ : @win32_core.RawAddress,
+  which : UInt,
+  arg64 : UInt64,
+  arg32 : UInt,
+  buffer : @win32_core.RawAddress,
+  buffer_size : UInt,
+  info_size : @win32_core.RawAddress,
+  string_buffer : @win32_core.RawAddress,
+  string_buffer_size : UInt,
+  string_size : @win32_core.RawAddress,
+) -> Unit raise @win32_core.WindowsError {
+  get_symbol_information_5755c9834af4(
+    this_, which, arg64, arg32, buffer, buffer_size, info_size, string_buffer, string_buffer_size,
+    string_size,
+  )
+}
+
+///|
+pub fn IDebugAdvanced4_922143629a3b::get_symbol_information_wide_raw(
+  this_ : @win32_core.RawAddress,
+  which : UInt,
+  arg64 : UInt64,
+  arg32 : UInt,
+  buffer : @win32_core.RawAddress,
+  buffer_size : UInt,
+  info_size : @win32_core.RawAddress,
+  string_buffer : @win32_core.RawAddress,
+  string_buffer_size : UInt,
+  string_size : @win32_core.RawAddress,
+) -> Int {
+  get_symbol_information_wide_3020f0e5a627_raw(
+    this_, which, arg64, arg32, buffer, buffer_size, info_size, string_buffer, string_buffer_size,
+    string_size,
+  )
+}
+
+///|
+pub fn IDebugAdvanced4_922143629a3b::get_symbol_information_wide(
+  this_ : @win32_core.RawAddress,
+  which : UInt,
+  arg64 : UInt64,
+  arg32 : UInt,
+  buffer : @win32_core.RawAddress,
+  buffer_size : UInt,
+  info_size : @win32_core.RawAddress,
+  string_buffer : @win32_core.RawAddress,
+  string_buffer_size : UInt,
+  string_size : @win32_core.RawAddress,
+) -> Unit raise @win32_core.WindowsError {
+  get_symbol_information_wide_3020f0e5a627(
+    this_, which, arg64, arg32, buffer, buffer_size, info_size, string_buffer, string_buffer_size,
+    string_size,
+  )
+}
+
+///|
+pub fn IDebugAdvanced4_922143629a3b::get_symbol_information_wide_ex_raw(
+  this_ : @win32_core.RawAddress,
+  which : UInt,
+  arg64 : UInt64,
+  arg32 : UInt,
+  buffer : @win32_core.RawAddress,
+  buffer_size : UInt,
+  info_size : @win32_core.RawAddress,
+  string_buffer : @win32_core.RawAddress,
+  string_buffer_size : UInt,
+  string_size : @win32_core.RawAddress,
+  p_info_ex : @win32_core.RawAddress,
+) -> Int {
+  get_symbol_information_wide_ex_9ed07a186a9f_raw(
+    this_, which, arg64, arg32, buffer, buffer_size, info_size, string_buffer, string_buffer_size,
+    string_size, p_info_ex,
+  )
+}
+
+///|
+pub fn IDebugAdvanced4_922143629a3b::get_symbol_information_wide_ex(
+  this_ : @win32_core.RawAddress,
+  which : UInt,
+  arg64 : UInt64,
+  arg32 : UInt,
+  buffer : @win32_core.RawAddress,
+  buffer_size : UInt,
+  info_size : @win32_core.RawAddress,
+  string_buffer : @win32_core.RawAddress,
+  string_buffer_size : UInt,
+  string_size : @win32_core.RawAddress,
+  p_info_ex : @win32_core.RawAddress,
+) -> Unit raise @win32_core.WindowsError {
+  get_symbol_information_wide_ex_9ed07a186a9f(
+    this_, which, arg64, arg32, buffer, buffer_size, info_size, string_buffer, string_buffer_size,
+    string_size, p_info_ex,
+  )
+}
+
+///|
+pub fn IDebugAdvanced4_922143629a3b::get_system_object_information_raw(
+  this_ : @win32_core.RawAddress,
+  which : UInt,
+  arg64 : UInt64,
+  arg32 : UInt,
+  buffer : @win32_core.RawAddress,
+  buffer_size : UInt,
+  info_size : @win32_core.RawAddress,
+) -> Int {
+  get_system_object_information_e01f0dab31b9_raw(
+    this_, which, arg64, arg32, buffer, buffer_size, info_size,
+  )
+}
+
+///|
+pub fn IDebugAdvanced4_922143629a3b::get_system_object_information(
+  this_ : @win32_core.RawAddress,
+  which : UInt,
+  arg64 : UInt64,
+  arg32 : UInt,
+  buffer : @win32_core.RawAddress,
+  buffer_size : UInt,
+  info_size : @win32_core.RawAddress,
+) -> Unit raise @win32_core.WindowsError {
+  get_system_object_information_e01f0dab31b9(
+    this_, which, arg64, arg32, buffer, buffer_size, info_size,
+  )
+}
+
+///|
+pub fn IDebugAdvanced4_922143629a3b::get_thread_context_raw(
+  this_ : @win32_core.RawAddress,
+  context : @win32_core.RawAddress,
+  context_size : UInt,
+) -> Int {
+  get_thread_context_13ab53ee3473_raw(this_, context, context_size)
+}
+
+///|
+pub fn IDebugAdvanced4_922143629a3b::get_thread_context(
+  this_ : @win32_core.RawAddress,
+  context : @win32_core.RawAddress,
+  context_size : UInt,
+) -> Unit raise @win32_core.WindowsError {
+  get_thread_context_13ab53ee3473(this_, context, context_size)
+}
+
+///|
+pub fn IDebugAdvanced4_922143629a3b::request_raw(
+  this_ : @win32_core.RawAddress,
+  request : UInt,
+  in_buffer : @win32_core.RawAddress,
+  in_buffer_size : UInt,
+  out_buffer : @win32_core.RawAddress,
+  out_buffer_size : UInt,
+  out_size : @win32_core.RawAddress,
+) -> Int {
+  request_8a9b2b52c393_raw(
+    this_, request, in_buffer, in_buffer_size, out_buffer, out_buffer_size, out_size,
+  )
+}
+
+///|
+pub fn IDebugAdvanced4_922143629a3b::request(
+  this_ : @win32_core.RawAddress,
+  request : UInt,
+  in_buffer : @win32_core.RawAddress,
+  in_buffer_size : UInt,
+  out_buffer : @win32_core.RawAddress,
+  out_buffer_size : UInt,
+  out_size : @win32_core.RawAddress,
+) -> Unit raise @win32_core.WindowsError {
+  request_8a9b2b52c393(
+    this_, request, in_buffer, in_buffer_size, out_buffer, out_buffer_size, out_size,
+  )
+}
+
+///|
+pub fn IDebugAdvanced4_922143629a3b::set_thread_context_raw(
+  this_ : @win32_core.RawAddress,
+  context : @win32_core.RawAddress,
+  context_size : UInt,
+) -> Int {
+  set_thread_context_d1a908030908_raw(this_, context, context_size)
+}
+
+///|
+pub fn IDebugAdvanced4_922143629a3b::set_thread_context(
+  this_ : @win32_core.RawAddress,
+  context : @win32_core.RawAddress,
+  context_size : UInt,
+) -> Unit raise @win32_core.WindowsError {
+  set_thread_context_d1a908030908(this_, context, context_size)
+}
+
+///|
+pub fn IDebugBreakpoint_1570d00fd29f::add_flags_raw(
+  this_ : @win32_core.RawAddress,
+  flags : UInt,
+) -> Int {
+  add_flags_fc80d0431169_raw(this_, flags)
+}
+
+///|
+pub fn IDebugBreakpoint_1570d00fd29f::add_flags(
+  this_ : @win32_core.RawAddress,
+  flags : UInt,
+) -> Unit raise @win32_core.WindowsError {
+  add_flags_fc80d0431169(this_, flags)
+}
+
+///|
+pub fn IDebugBreakpoint_1570d00fd29f::get_adder_raw(
+  this_ : @win32_core.RawAddress,
+  adder : @win32_core.RawAddress,
+) -> Int {
+  get_adder_3c5af4ee03f4_raw(this_, adder)
+}
+
+///|
+pub fn IDebugBreakpoint_1570d00fd29f::get_adder(
+  this_ : @win32_core.RawAddress,
+  adder : @win32_core.RawAddress,
+) -> Unit raise @win32_core.WindowsError {
+  get_adder_3c5af4ee03f4(this_, adder)
+}
+
+///|
+pub fn IDebugBreakpoint_1570d00fd29f::get_command_raw(
+  this_ : @win32_core.RawAddress,
+  buffer : @win32_core.RawAddress,
+  buffer_size : UInt,
+  command_size : @win32_core.RawAddress,
+) -> Int {
+  get_command_fdc37dc3184f_raw(this_, buffer, buffer_size, command_size)
+}
+
+///|
+pub fn IDebugBreakpoint_1570d00fd29f::get_command(
+  this_ : @win32_core.RawAddress,
+  buffer : @win32_core.RawAddress,
+  buffer_size : UInt,
+  command_size : @win32_core.RawAddress,
+) -> Unit raise @win32_core.WindowsError {
+  get_command_fdc37dc3184f(this_, buffer, buffer_size, command_size)
+}
+
+///|
+pub fn IDebugBreakpoint_1570d00fd29f::get_current_pass_count_raw(
+  this_ : @win32_core.RawAddress,
+  count : @win32_core.RawAddress,
+) -> Int {
+  get_current_pass_count_87aacbed5b74_raw(this_, count)
+}
+
+///|
+pub fn IDebugBreakpoint_1570d00fd29f::get_current_pass_count(
+  this_ : @win32_core.RawAddress,
+  count : @win32_core.RawAddress,
+) -> Unit raise @win32_core.WindowsError {
+  get_current_pass_count_87aacbed5b74(this_, count)
+}
+
+///|
+pub fn IDebugBreakpoint_1570d00fd29f::get_data_parameters_raw(
+  this_ : @win32_core.RawAddress,
+  size : @win32_core.RawAddress,
+  access_type : @win32_core.RawAddress,
+) -> Int {
+  get_data_parameters_967612829cdc_raw(this_, size, access_type)
+}
+
+///|
+pub fn IDebugBreakpoint_1570d00fd29f::get_data_parameters(
+  this_ : @win32_core.RawAddress,
+  size : @win32_core.RawAddress,
+  access_type : @win32_core.RawAddress,
+) -> Unit raise @win32_core.WindowsError {
+  get_data_parameters_967612829cdc(this_, size, access_type)
+}
+
+///|
+pub fn IDebugBreakpoint_1570d00fd29f::get_flags_raw(
+  this_ : @win32_core.RawAddress,
+  flags : @win32_core.RawAddress,
+) -> Int {
+  get_flags_2c2428f180ec_raw(this_, flags)
+}
+
+///|
+pub fn IDebugBreakpoint_1570d00fd29f::get_flags(
+  this_ : @win32_core.RawAddress,
+  flags : @win32_core.RawAddress,
+) -> Unit raise @win32_core.WindowsError {
+  get_flags_2c2428f180ec(this_, flags)
+}
+
+///|
+pub fn IDebugBreakpoint_1570d00fd29f::get_id_raw(
+  this_ : @win32_core.RawAddress,
+  id : @win32_core.RawAddress,
+) -> Int {
+  get_id_19084848250a_raw(this_, id)
+}
+
+///|
+pub fn IDebugBreakpoint_1570d00fd29f::get_id(
+  this_ : @win32_core.RawAddress,
+  id : @win32_core.RawAddress,
+) -> Unit raise @win32_core.WindowsError {
+  get_id_19084848250a(this_, id)
+}
+
+///|
+pub fn IDebugBreakpoint_1570d00fd29f::get_match_thread_id_raw(
+  this_ : @win32_core.RawAddress,
+  id : @win32_core.RawAddress,
+) -> Int {
+  get_match_thread_id_1ab73188e5a1_raw(this_, id)
+}
+
+///|
+pub fn IDebugBreakpoint_1570d00fd29f::get_match_thread_id(
+  this_ : @win32_core.RawAddress,
+  id : @win32_core.RawAddress,
+) -> Unit raise @win32_core.WindowsError {
+  get_match_thread_id_1ab73188e5a1(this_, id)
+}
+
+///|
+pub fn IDebugBreakpoint_1570d00fd29f::get_offset_raw(
+  this_ : @win32_core.RawAddress,
+  offset : @win32_core.RawAddress,
+) -> Int {
+  get_offset_0d31c6cc0527_raw(this_, offset)
+}
+
+///|
+pub fn IDebugBreakpoint_1570d00fd29f::get_offset(
+  this_ : @win32_core.RawAddress,
+  offset : @win32_core.RawAddress,
+) -> Unit raise @win32_core.WindowsError {
+  get_offset_0d31c6cc0527(this_, offset)
+}
+
+///|
+pub fn IDebugBreakpoint_1570d00fd29f::get_offset_expression_raw(
+  this_ : @win32_core.RawAddress,
+  buffer : @win32_core.RawAddress,
+  buffer_size : UInt,
+  expression_size : @win32_core.RawAddress,
+) -> Int {
+  get_offset_expression_24af2af20da6_raw(
+    this_, buffer, buffer_size, expression_size,
+  )
+}
+
+///|
+pub fn IDebugBreakpoint_1570d00fd29f::get_offset_expression(
+  this_ : @win32_core.RawAddress,
+  buffer : @win32_core.RawAddress,
+  buffer_size : UInt,
+  expression_size : @win32_core.RawAddress,
+) -> Unit raise @win32_core.WindowsError {
+  get_offset_expression_24af2af20da6(
+    this_, buffer, buffer_size, expression_size,
+  )
+}
+
+///|
+pub fn IDebugBreakpoint_1570d00fd29f::get_parameters_raw(
+  this_ : @win32_core.RawAddress,
+  params : @win32_core.RawAddress,
+) -> Int {
+  get_parameters_dffe5c7ff71e_raw(this_, params)
+}
+
+///|
+pub fn IDebugBreakpoint_1570d00fd29f::get_parameters(
+  this_ : @win32_core.RawAddress,
+  params : @win32_core.RawAddress,
+) -> Unit raise @win32_core.WindowsError {
+  get_parameters_dffe5c7ff71e(this_, params)
+}
+
+///|
+pub fn IDebugBreakpoint_1570d00fd29f::get_pass_count_raw(
+  this_ : @win32_core.RawAddress,
+  count : @win32_core.RawAddress,
+) -> Int {
+  get_pass_count_d88b2ac8feaa_raw(this_, count)
+}
+
+///|
+pub fn IDebugBreakpoint_1570d00fd29f::get_pass_count(
+  this_ : @win32_core.RawAddress,
+  count : @win32_core.RawAddress,
+) -> Unit raise @win32_core.WindowsError {
+  get_pass_count_d88b2ac8feaa(this_, count)
+}
+
+///|
+pub fn IDebugBreakpoint_1570d00fd29f::get_type_raw(
+  this_ : @win32_core.RawAddress,
+  break_type : @win32_core.RawAddress,
+  proc_type : @win32_core.RawAddress,
+) -> Int {
+  get_type_1f87e70185a4_raw(this_, break_type, proc_type)
+}
+
+///|
+pub fn IDebugBreakpoint_1570d00fd29f::get_type(
+  this_ : @win32_core.RawAddress,
+  break_type : @win32_core.RawAddress,
+  proc_type : @win32_core.RawAddress,
+) -> Unit raise @win32_core.WindowsError {
+  get_type_1f87e70185a4(this_, break_type, proc_type)
+}

@@ -1,0 +1,1198 @@
+// Generated using `moon info`, DON'T EDIT IT
+package "moonbit-community/win32api/windows/win32/system/update_agent"
+
+import {
+  "moonbit-community/win32api/scc/4a15bc3608f1b0f1",
+}
+
+// Values
+pub let c_sz_update_property_name_contains_update_bootstrapper : String
+
+pub let c_sz_update_property_name_does_update_require_reboot : String
+
+pub let update_lockdown_website_access : UInt
+
+pub let wu_e_access_denied_caller_identity : Int
+
+pub let wu_e_all_updates_failed : Int
+
+pub let wu_e_au_call_cancelled : Int
+
+pub let wu_e_au_detect_svcid_mismatch : Int
+
+pub let wu_e_au_legacyclientdisabled : Int
+
+pub let wu_e_au_no_registered_service : Int
+
+pub let wu_e_au_nonlegacyserver : Int
+
+pub let wu_e_au_noservice : Int
+
+pub let wu_e_au_oobe_in_progress : Int
+
+pub let wu_e_au_paused : Int
+
+pub let wu_e_au_unexpected : Int
+
+pub let wu_e_auclient_unexpected : Int
+
+pub let wu_e_bad_file_url : Int
+
+pub let wu_e_bad_xml_hardwarecapability : Int
+
+pub let wu_e_bin_source_absent : Int
+
+pub let wu_e_call_cancelled : Int
+
+pub let wu_e_call_cancelled_by_hide : Int
+
+pub let wu_e_call_cancelled_by_interactive_search : Int
+
+pub let wu_e_call_cancelled_by_invalid : Int
+
+pub let wu_e_call_cancelled_by_policy : Int
+
+pub let wu_e_callback_cookie_not_found : Int
+
+pub let wu_e_could_not_evaluate_property : Int
+
+pub let wu_e_couldnotcancel : Int
+
+pub let wu_e_cycle_detected : Int
+
+pub let wu_e_dm_bg_error_token_required : Int
+
+pub let wu_e_dm_bitstransfererror : Int
+
+pub let wu_e_dm_contentchanged : Int
+
+pub let wu_e_dm_dosvc_required : Int
+
+pub let wu_e_dm_download_volume_conflict : Int
+
+pub let wu_e_dm_downloadfilemissing : Int
+
+pub let wu_e_dm_downloadfilepathunknown : Int
+
+pub let wu_e_dm_downloadlimitedbyupdatesize : Int
+
+pub let wu_e_dm_downloadlocationchanged : Int
+
+pub let wu_e_dm_downloadsandboxnotfound : Int
+
+pub let wu_e_dm_downloadtype_conflict : Int
+
+pub let wu_e_dm_failtoconnecttobits : Int
+
+pub let wu_e_dm_fallingbacktobits : Int
+
+pub let wu_e_dm_hardreserveid_conflict : Int
+
+pub let wu_e_dm_incorrectfilehash : Int
+
+pub let wu_e_dm_needdownloadrequest : Int
+
+pub let wu_e_dm_nonetwork : Int
+
+pub let wu_e_dm_notdownloaded : Int
+
+pub let wu_e_dm_readrangefailed : Int
+
+pub let wu_e_dm_sandbox_hash_mismatch : Int
+
+pub let wu_e_dm_unauthorized : Int
+
+pub let wu_e_dm_unauthorized_domain_user : Int
+
+pub let wu_e_dm_unauthorized_local_user : Int
+
+pub let wu_e_dm_unauthorized_msa_user : Int
+
+pub let wu_e_dm_unauthorized_no_user : Int
+
+pub let wu_e_dm_unexpected : Int
+
+pub let wu_e_dm_unknownalgorithm : Int
+
+pub let wu_e_dm_updateremoved : Int
+
+pub let wu_e_dm_urlnotavailable : Int
+
+pub let wu_e_dm_wrongbitsversion : Int
+
+pub let wu_e_download_failed : Int
+
+pub let wu_e_drv_device_problem : Int
+
+pub let wu_e_drv_missing_attribute : Int
+
+pub let wu_e_drv_no_metadata : Int
+
+pub let wu_e_drv_no_printer_content : Int
+
+pub let wu_e_drv_noprop_or_legacy : Int
+
+pub let wu_e_drv_pruned : Int
+
+pub let wu_e_drv_reg_mismatch : Int
+
+pub let wu_e_drv_sync_failed : Int
+
+pub let wu_e_drv_unexpected : Int
+
+pub let wu_e_ds_badversion : Int
+
+pub let wu_e_ds_cannotregister : Int
+
+pub let wu_e_ds_cantdelete : Int
+
+pub let wu_e_ds_datanotavailable : Int
+
+pub let wu_e_ds_datanotloaded : Int
+
+pub let wu_e_ds_declinenotallowed : Int
+
+pub let wu_e_ds_duplicateupdateid : Int
+
+pub let wu_e_ds_impersonated : Int
+
+pub let wu_e_ds_inuse : Int
+
+pub let wu_e_ds_invalid : Int
+
+pub let wu_e_ds_invalidoperation : Int
+
+pub let wu_e_ds_invalidtablename : Int
+
+pub let wu_e_ds_locktimeoutexpired : Int
+
+pub let wu_e_ds_missingdata : Int
+
+pub let wu_e_ds_missingref : Int
+
+pub let wu_e_ds_needwindowsservice : Int
+
+pub let wu_e_ds_nocategories : Int
+
+pub let wu_e_ds_nodata : Int
+
+pub let wu_e_ds_nodata_ccr : Int
+
+pub let wu_e_ds_nodata_cookie : Int
+
+pub let wu_e_ds_nodata_downloadjob : Int
+
+pub let wu_e_ds_nodata_eula : Int
+
+pub let wu_e_ds_nodata_file : Int
+
+pub let wu_e_ds_nodata_nosuchrevision : Int
+
+pub let wu_e_ds_nodata_nosuchupdate : Int
+
+pub let wu_e_ds_nodata_service : Int
+
+pub let wu_e_ds_nodata_timer : Int
+
+pub let wu_e_ds_nodata_tmi : Int
+
+pub let wu_e_ds_resetrequired : Int
+
+pub let wu_e_ds_rowexists : Int
+
+pub let wu_e_ds_schemamismatch : Int
+
+pub let wu_e_ds_serviceexpired : Int
+
+pub let wu_e_ds_sessionlockmismatch : Int
+
+pub let wu_e_ds_shutdown : Int
+
+pub let wu_e_ds_storefilelocked : Int
+
+pub let wu_e_ds_tableincorrect : Int
+
+pub let wu_e_ds_tablemissing : Int
+
+pub let wu_e_ds_tablesessionmismatch : Int
+
+pub let wu_e_ds_unabletostart : Int
+
+pub let wu_e_ds_unexpected : Int
+
+pub let wu_e_ds_unknownhandler : Int
+
+pub let wu_e_ds_unknownservice : Int
+
+pub let wu_e_duplicate_item : Int
+
+pub let wu_e_ee_cluster_error : Int
+
+pub let wu_e_ee_invalid_attributedata : Int
+
+pub let wu_e_ee_invalid_expression : Int
+
+pub let wu_e_ee_invalid_version : Int
+
+pub let wu_e_ee_missing_metadata : Int
+
+pub let wu_e_ee_not_initialized : Int
+
+pub let wu_e_ee_unexpected : Int
+
+pub let wu_e_ee_unknown_expression : Int
+
+pub let wu_e_eula_unavailable : Int
+
+pub let wu_e_eulas_declined : Int
+
+pub let wu_e_exclusive_install_conflict : Int
+
+pub let wu_e_extendederror_failed : Int
+
+pub let wu_e_extendederror_notset : Int
+
+pub let wu_e_filetrust_dualsignature_ecc : Int
+
+pub let wu_e_filetrust_dualsignature_rsa : Int
+
+pub let wu_e_filetrust_sha2_signature_missing : Int
+
+pub let wu_e_idleshutdown_opcount_discovery : Int
+
+pub let wu_e_idleshutdown_opcount_download : Int
+
+pub let wu_e_idleshutdown_opcount_install : Int
+
+pub let wu_e_idleshutdown_opcount_other : Int
+
+pub let wu_e_idleshutdown_opcount_search : Int
+
+pub let wu_e_idleshutdown_opcount_serviceregistration : Int
+
+pub let wu_e_infrastructurefile_invalid_format : Int
+
+pub let wu_e_infrastructurefile_requires_ssl : Int
+
+pub let wu_e_install_job_not_suspended : Int
+
+pub let wu_e_install_job_resume_not_allowed : Int
+
+pub let wu_e_install_not_allowed : Int
+
+pub let wu_e_install_usercontext_accessdenied : Int
+
+pub let wu_e_installation_results_invalid_data : Int
+
+pub let wu_e_installation_results_not_found : Int
+
+pub let wu_e_installation_results_unknown_version : Int
+
+pub let wu_e_interactive_call_cancelled : Int
+
+pub let wu_e_invalid_criteria : Int
+
+pub let wu_e_invalid_event : Int
+
+pub let wu_e_invalid_event_payload : Int
+
+pub let wu_e_invalid_event_payloadsize : Int
+
+pub let wu_e_invalid_file : Int
+
+pub let wu_e_invalid_install_requested : Int
+
+pub let wu_e_invalid_notification_info : Int
+
+pub let wu_e_invalid_operation : Int
+
+pub let wu_e_invalid_product_license : Int
+
+pub let wu_e_invalid_proxy_server : Int
+
+pub let wu_e_invalid_relationship : Int
+
+pub let wu_e_invalid_serialization_version : Int
+
+pub let wu_e_invalid_update : Int
+
+pub let wu_e_invalid_update_type : Int
+
+pub let wu_e_invalid_volumeid : Int
+
+pub let wu_e_invalidindex : Int
+
+pub let wu_e_inventory_get_inventory_type_failed : Int
+
+pub let wu_e_inventory_parsefailed : Int
+
+pub let wu_e_inventory_result_upload_failed : Int
+
+pub let wu_e_inventory_unexpected : Int
+
+pub let wu_e_inventory_wmi_error : Int
+
+pub let wu_e_itemnotfound : Int
+
+pub let wu_e_legacyserver : Int
+
+pub let wu_e_low_battery : Int
+
+pub let wu_e_max_capacity_reached : Int
+
+pub let wu_e_metadata_bad_fragmentsigning_config : Int
+
+pub let wu_e_metadata_bad_signature : Int
+
+pub let wu_e_metadata_cert_missing : Int
+
+pub let wu_e_metadata_cert_untrusted : Int
+
+pub let wu_e_metadata_config_invalid_binary_encoding : Int
+
+pub let wu_e_metadata_failure_processing_fragmentsigning_config : Int
+
+pub let wu_e_metadata_fetch_config : Int
+
+pub let wu_e_metadata_intcert_bad_transport_encoding : Int
+
+pub let wu_e_metadata_invalid_parameter : Int
+
+pub let wu_e_metadata_leafcert_bad_transport_encoding : Int
+
+pub let wu_e_metadata_no_verification_data : Int
+
+pub let wu_e_metadata_noop : Int
+
+pub let wu_e_metadata_signature_verify_failed : Int
+
+pub let wu_e_metadata_timestamp_token_all_bad : Int
+
+pub let wu_e_metadata_timestamp_token_cachelookup : Int
+
+pub let wu_e_metadata_timestamp_token_certchain : Int
+
+pub let wu_e_metadata_timestamp_token_missing : Int
+
+pub let wu_e_metadata_timestamp_token_nodata : Int
+
+pub let wu_e_metadata_timestamp_token_refreshonline : Int
+
+pub let wu_e_metadata_timestamp_token_signature : Int
+
+pub let wu_e_metadata_timestamp_token_unexpected : Int
+
+pub let wu_e_metadata_timestamp_token_untrusted : Int
+
+pub let wu_e_metadata_timestamp_token_validity_window : Int
+
+pub let wu_e_metadata_timestamp_token_validitywindow_unexpected : Int
+
+pub let wu_e_metadata_timestamp_token_verification_failed : Int
+
+pub let wu_e_metadata_unexpected : Int
+
+pub let wu_e_metadata_unsupported_hash_alg : Int
+
+pub let wu_e_metadata_xml_base64_cerdata_missing : Int
+
+pub let wu_e_metadata_xml_fragmentsigning_missing : Int
+
+pub let wu_e_metadata_xml_intermediatecert_missing : Int
+
+pub let wu_e_metadata_xml_leafcert_id_missing : Int
+
+pub let wu_e_metadata_xml_leafcert_missing : Int
+
+pub let wu_e_metadata_xml_missing : Int
+
+pub let wu_e_metadata_xml_mode_invalid : Int
+
+pub let wu_e_metadata_xml_mode_missing : Int
+
+pub let wu_e_metadata_xml_validity_invalid : Int
+
+pub let wu_e_metadatatrust_certificatechain_verification : Int
+
+pub let wu_e_metadatatrust_untrusted_certificatechain : Int
+
+pub let wu_e_missing_handler : Int
+
+pub let wu_e_msi_not_configured : Int
+
+pub let wu_e_msi_not_present : Int
+
+pub let wu_e_msi_wrong_app_context : Int
+
+pub let wu_e_msi_wrong_version : Int
+
+pub let wu_e_msp_disabled : Int
+
+pub let wu_e_msp_unexpected : Int
+
+pub let wu_e_network_cost_exceeds_policy : Int
+
+pub let wu_e_no_connection : Int
+
+pub let wu_e_no_interactive_user : Int
+
+pub let wu_e_no_server_core_support : Int
+
+pub let wu_e_no_service : Int
+
+pub let wu_e_no_such_handler_plugin : Int
+
+pub let wu_e_no_ui_support : Int
+
+pub let wu_e_no_update : Int
+
+pub let wu_e_no_usertoken : Int
+
+pub let wu_e_non_ui_mode : Int
+
+pub let wu_e_noop : Int
+
+pub let wu_e_not_applicable : Int
+
+pub let wu_e_not_initialized : Int
+
+pub let wu_e_not_supported : Int
+
+pub let wu_e_ol_invalid_scanfile : Int
+
+pub let wu_e_ol_newclient_required : Int
+
+pub let wu_e_ol_unexpected : Int
+
+pub let wu_e_operationinprogress : Int
+
+pub let wu_e_orphaned_download_job : Int
+
+pub let wu_e_outofrange : Int
+
+pub let wu_e_per_machine_update_access_denied : Int
+
+pub let wu_e_policy_not_set : Int
+
+pub let wu_e_pt_address_in_use : Int
+
+pub let wu_e_pt_address_not_available : Int
+
+pub let wu_e_pt_catalog_sync_required : Int
+
+pub let wu_e_pt_client_enforced_load_shedding : Int
+
+pub let wu_e_pt_config_prop_missing : Int
+
+pub let wu_e_pt_data_boundary_restricted : Int
+
+pub let wu_e_pt_double_initialization : Int
+
+pub let wu_e_pt_ecp_failure_to_decompress_cab_file : Int
+
+pub let wu_e_pt_ecp_failure_to_extract_digest : Int
+
+pub let wu_e_pt_ecp_file_location_error : Int
+
+pub let wu_e_pt_ecp_init_failed : Int
+
+pub let wu_e_pt_ecp_invalid_file_format : Int
+
+pub let wu_e_pt_ecp_invalid_metadata : Int
+
+pub let wu_e_pt_ecp_succeeded_with_errors : Int
+
+pub let wu_e_pt_endpoint_disconnected : Int
+
+pub let wu_e_pt_endpoint_refresh_required : Int
+
+pub let wu_e_pt_endpoint_unreachable : Int
+
+pub let wu_e_pt_endpointurl_notavail : Int
+
+pub let wu_e_pt_exceeded_max_server_trips : Int
+
+pub let wu_e_pt_file_locations_changed : Int
+
+pub let wu_e_pt_general_aad_client_error : Int
+
+pub let wu_e_pt_http_status_bad_gateway : Int
+
+pub let wu_e_pt_http_status_bad_method : Int
+
+pub let wu_e_pt_http_status_bad_request : Int
+
+pub let wu_e_pt_http_status_conflict : Int
+
+pub let wu_e_pt_http_status_denied : Int
+
+pub let wu_e_pt_http_status_forbidden : Int
+
+pub let wu_e_pt_http_status_gateway_timeout : Int
+
+pub let wu_e_pt_http_status_gone : Int
+
+pub let wu_e_pt_http_status_not_found : Int
+
+pub let wu_e_pt_http_status_not_mapped : Int
+
+pub let wu_e_pt_http_status_not_supported : Int
+
+pub let wu_e_pt_http_status_proxy_auth_req : Int
+
+pub let wu_e_pt_http_status_request_timeout : Int
+
+pub let wu_e_pt_http_status_server_error : Int
+
+pub let wu_e_pt_http_status_service_unavail : Int
+
+pub let wu_e_pt_http_status_version_not_sup : Int
+
+pub let wu_e_pt_invalid_computer_name : Int
+
+pub let wu_e_pt_invalid_config_prop : Int
+
+pub let wu_e_pt_invalid_format : Int
+
+pub let wu_e_pt_invalid_operation : Int
+
+pub let wu_e_pt_invalid_url : Int
+
+pub let wu_e_pt_load_shedding : Int
+
+pub let wu_e_pt_no_auth_cookies_created : Int
+
+pub let wu_e_pt_no_auth_plugins_requested : Int
+
+pub let wu_e_pt_no_managed_recover : Int
+
+pub let wu_e_pt_no_translation_available : Int
+
+pub let wu_e_pt_numeric_overflow : Int
+
+pub let wu_e_pt_nws_not_loaded : Int
+
+pub let wu_e_pt_object_faulted : Int
+
+pub let wu_e_pt_operation_abandoned : Int
+
+pub let wu_e_pt_operation_aborted : Int
+
+pub let wu_e_pt_other : Int
+
+pub let wu_e_pt_proxy_auth_scheme_not_supported : Int
+
+pub let wu_e_pt_quota_exceeded : Int
+
+pub let wu_e_pt_refresh_cache_required : Int
+
+pub let wu_e_pt_registration_not_supported : Int
+
+pub let wu_e_pt_same_redir_id : Int
+
+pub let wu_e_pt_security_system_failure : Int
+
+pub let wu_e_pt_security_verification_failure : Int
+
+pub let wu_e_pt_soap_client : Int
+
+pub let wu_e_pt_soap_must_understand : Int
+
+pub let wu_e_pt_soap_server : Int
+
+pub let wu_e_pt_soap_version : Int
+
+pub let wu_e_pt_soapclient_base : Int
+
+pub let wu_e_pt_soapclient_connect : Int
+
+pub let wu_e_pt_soapclient_generate : Int
+
+pub let wu_e_pt_soapclient_initialize : Int
+
+pub let wu_e_pt_soapclient_outofmemory : Int
+
+pub let wu_e_pt_soapclient_parse : Int
+
+pub let wu_e_pt_soapclient_parsefault : Int
+
+pub let wu_e_pt_soapclient_read : Int
+
+pub let wu_e_pt_soapclient_send : Int
+
+pub let wu_e_pt_soapclient_server : Int
+
+pub let wu_e_pt_soapclient_soapfault : Int
+
+pub let wu_e_pt_sus_server_not_set : Int
+
+pub let wu_e_pt_unexpected : Int
+
+pub let wu_e_pt_winhttp_name_not_resolved : Int
+
+pub let wu_e_pt_wmi_error : Int
+
+pub let wu_e_rangeoverlap : Int
+
+pub let wu_e_reboot_in_progress : Int
+
+pub let wu_e_redirector_attrprovider_exceeded_max_namevalue : Int
+
+pub let wu_e_redirector_attrprovider_invalid_name : Int
+
+pub let wu_e_redirector_attrprovider_invalid_value : Int
+
+pub let wu_e_redirector_connect_policy : Int
+
+pub let wu_e_redirector_id_smaller : Int
+
+pub let wu_e_redirector_invalid_response : Int
+
+pub let wu_e_redirector_load_xml : Int
+
+pub let wu_e_redirector_online_disallowed : Int
+
+pub let wu_e_redirector_s_false : Int
+
+pub let wu_e_redirector_sls_generic_error : Int
+
+pub let wu_e_redirector_unexpected : Int
+
+pub let wu_e_redirector_unknown_service : Int
+
+pub let wu_e_redirector_unsupported_contenttype : Int
+
+pub let wu_e_reg_value_invalid : Int
+
+pub let wu_e_reporter_eventcachecorrupt : Int
+
+pub let wu_e_reporter_eventnamespaceparsefailed : Int
+
+pub let wu_e_reporter_unexpected : Int
+
+pub let wu_e_revert_not_allowed : Int
+
+pub let wu_e_selfupdate_in_progress : Int
+
+pub let wu_e_selfupdate_required : Int
+
+pub let wu_e_selfupdate_required_admin : Int
+
+pub let wu_e_selfupdate_skip_on_failure : Int
+
+pub let wu_e_server_busy : Int
+
+pub let wu_e_service_not_registered : Int
+
+pub let wu_e_service_reenable_access_denied : Int
+
+pub let wu_e_service_stop : Int
+
+pub let wu_e_service_unexpected_exit : Int
+
+pub let wu_e_serviceprop_notavail : Int
+
+pub let wu_e_setup_already_initialized : Int
+
+pub let wu_e_setup_alreadyrunning : Int
+
+pub let wu_e_setup_blocked_configuration : Int
+
+pub let wu_e_setup_deferrable_reboot_pending : Int
+
+pub let wu_e_setup_fail : Int
+
+pub let wu_e_setup_handler_exec_failure : Int
+
+pub let wu_e_setup_in_progress : Int
+
+pub let wu_e_setup_invalid_identdata : Int
+
+pub let wu_e_setup_invalid_infdata : Int
+
+pub let wu_e_setup_invalid_registry_data : Int
+
+pub let wu_e_setup_non_deferrable_reboot_pending : Int
+
+pub let wu_e_setup_not_initialized : Int
+
+pub let wu_e_setup_reboot_to_fix : Int
+
+pub let wu_e_setup_rebootrequired : Int
+
+pub let wu_e_setup_registration_failed : Int
+
+pub let wu_e_setup_skip_update : Int
+
+pub let wu_e_setup_source_version_mismatch : Int
+
+pub let wu_e_setup_target_version_greater : Int
+
+pub let wu_e_setup_unexpected : Int
+
+pub let wu_e_setup_unsupported_configuration : Int
+
+pub let wu_e_setup_wrong_server_version : Int
+
+pub let wu_e_sih_action_not_found : Int
+
+pub let wu_e_sih_another_instance_running : Int
+
+pub let wu_e_sih_blocked_for_platform : Int
+
+pub let wu_e_sih_dnsresiliency_off : Int
+
+pub let wu_e_sih_engine_exception : Int
+
+pub let wu_e_sih_invalidhash : Int
+
+pub let wu_e_sih_no_engine : Int
+
+pub let wu_e_sih_nonstdexception : Int
+
+pub let wu_e_sih_parse : Int
+
+pub let wu_e_sih_policy : Int
+
+pub let wu_e_sih_post_reboot_install_failed : Int
+
+pub let wu_e_sih_post_reboot_no_cached_sls_response : Int
+
+pub let wu_e_sih_ppl : Int
+
+pub let wu_e_sih_security : Int
+
+pub let wu_e_sih_sls_parse : Int
+
+pub let wu_e_sih_stdexception : Int
+
+pub let wu_e_sih_unexpected : Int
+
+pub let wu_e_sih_verify_download_engine : Int
+
+pub let wu_e_sih_verify_download_payload : Int
+
+pub let wu_e_sih_verify_stage_engine : Int
+
+pub let wu_e_sih_verify_stage_payload : Int
+
+pub let wu_e_skipped_update_installation : Int
+
+pub let wu_e_sls_invalid_revision : Int
+
+pub let wu_e_source_absent : Int
+
+pub let wu_e_standby_activity_not_allowed : Int
+
+pub let wu_e_sysprep_in_progress : Int
+
+pub let wu_e_system_unsupported : Int
+
+pub let wu_e_time_out : Int
+
+pub let wu_e_too_deep_relation : Int
+
+pub let wu_e_too_many_resync : Int
+
+pub let wu_e_toomanyranges : Int
+
+pub let wu_e_trayicon_failure : Int
+
+pub let wu_e_trust_provider_unknown : Int
+
+pub let wu_e_trust_subject_not_trusted : Int
+
+pub let wu_e_uh_appx_default_package_volume_unavailable : Int
+
+pub let wu_e_uh_appx_installed_package_volume_unavailable : Int
+
+pub let wu_e_uh_appx_invalid_package_volume : Int
+
+pub let wu_e_uh_appx_not_present : Int
+
+pub let wu_e_uh_appx_package_family_not_found : Int
+
+pub let wu_e_uh_appx_system_volume_not_found : Int
+
+pub let wu_e_uh_badcbspackageid : Int
+
+pub let wu_e_uh_badhandlerxml : Int
+
+pub let wu_e_uh_called_back_failure : Int
+
+pub let wu_e_uh_canrequireinput : Int
+
+pub let wu_e_uh_custominstaller_invalid_signature : Int
+
+pub let wu_e_uh_decryptfailure : Int
+
+pub let wu_e_uh_doesnotsupportaction : Int
+
+pub let wu_e_uh_fallbackerror : Int
+
+pub let wu_e_uh_fallbacktoselfcontained : Int
+
+pub let wu_e_uh_handler_disableduntilreboot : Int
+
+pub let wu_e_uh_inconsistent_file_names : Int
+
+pub let wu_e_uh_installerfailure : Int
+
+pub let wu_e_uh_installerhung : Int
+
+pub let wu_e_uh_invalid_targetsession : Int
+
+pub let wu_e_uh_invalidmetadata : Int
+
+pub let wu_e_uh_localonly : Int
+
+pub let wu_e_uh_needanotherdownload : Int
+
+pub let wu_e_uh_new_servicing_stack_required : Int
+
+pub let wu_e_uh_notifyfailure : Int
+
+pub let wu_e_uh_notreadytocommit : Int
+
+pub let wu_e_uh_operationcancelled : Int
+
+pub let wu_e_uh_postrebootresultunknown : Int
+
+pub let wu_e_uh_postrebootstillpending : Int
+
+pub let wu_e_uh_postrebootunexpectedstate : Int
+
+pub let wu_e_uh_remotealreadyactive : Int
+
+pub let wu_e_uh_remoteunavailable : Int
+
+pub let wu_e_uh_reservicing_required_baseline : Int
+
+pub let wu_e_uh_toomanydownloadrequests : Int
+
+pub let wu_e_uh_ua_session_info_version_not_supported : Int
+
+pub let wu_e_uh_unexpected : Int
+
+pub let wu_e_uh_unexpectedcbsresponse : Int
+
+pub let wu_e_uh_unknownhandler : Int
+
+pub let wu_e_uh_unsupported_installcontext : Int
+
+pub let wu_e_uh_wronghandler : Int
+
+pub let wu_e_unexpected : Int
+
+pub let wu_e_uninstall_not_allowed : Int
+
+pub let wu_e_unknown_hardwarecapability : Int
+
+pub let wu_e_unknown_id : Int
+
+pub let wu_e_unknown_service : Int
+
+pub let wu_e_unrecognized_volumeid : Int
+
+pub let wu_e_unsupported_searchscope : Int
+
+pub let wu_e_update_merge_not_allowed : Int
+
+pub let wu_e_update_not_approved : Int
+
+pub let wu_e_update_not_processed : Int
+
+pub let wu_e_url_too_long : Int
+
+pub let wu_e_user_access_disabled : Int
+
+pub let wu_e_winhttp_invalid_file : Int
+
+pub let wu_e_wmi_not_supported : Int
+
+pub let wu_e_wu_disabled : Int
+
+pub let wu_e_wucltui_unsupported_version : Int
+
+pub let wu_e_wutask_cancelinstall_disallowed : Int
+
+pub let wu_e_wutask_inprogress : Int
+
+pub let wu_e_wutask_not_started : Int
+
+pub let wu_e_wutask_retry : Int
+
+pub let wu_e_wutask_status_disabled : Int
+
+pub let wu_e_xml_invalid : Int
+
+pub let wu_e_xml_missingdata : Int
+
+pub let wu_s_aad_device_ticket_not_needed : Int
+
+pub let wu_s_already_downloaded : Int
+
+pub let wu_s_already_installed : Int
+
+pub let wu_s_already_reverted : Int
+
+pub let wu_s_already_uninstalled : Int
+
+pub let wu_s_dm_alreadydownloading : Int
+
+pub let wu_s_marked_for_disconnect : Int
+
+pub let wu_s_metadata_ignored_signature_verification : Int
+
+pub let wu_s_metadata_skipped_by_enforcementmode : Int
+
+pub let wu_s_reboot_required : Int
+
+pub let wu_s_search_criteria_not_supported : Int
+
+pub let wu_s_search_load_shedding : Int
+
+pub let wu_s_selfupdate : Int
+
+pub let wu_s_service_stop : Int
+
+pub let wu_s_sih_noop : Int
+
+pub let wu_s_some_updates_skipped_on_battery : Int
+
+pub let wu_s_uh_download_size_calculated : Int
+
+pub let wu_s_uh_installstillpending : Int
+
+pub let wu_s_update_error : Int
+
+// Errors
+
+// Types and methods
+
+// Type aliases
+pub using @4a15bc3608f1b0f1 {type AddServiceFlag_684d11052256 as AddServiceFlag}
+
+pub using @4a15bc3608f1b0f1 {type AutoDownloadMode_407ce9df6e89 as AutoDownloadMode}
+
+pub using @4a15bc3608f1b0f1 {type AutoSelectionMode_c0583a18b031 as AutoSelectionMode}
+
+pub using @4a15bc3608f1b0f1 {type AutomaticUpdates_f6f701b9f57d as AutomaticUpdates}
+
+pub using @4a15bc3608f1b0f1 {type AutomaticUpdatesNotificationLevel_b7fdc78c8d75 as AutomaticUpdatesNotificationLevel}
+
+pub using @4a15bc3608f1b0f1 {type AutomaticUpdatesPermissionType_5eeaa64460a4 as AutomaticUpdatesPermissionType}
+
+pub using @4a15bc3608f1b0f1 {type AutomaticUpdatesScheduledInstallationDay_2f9b14141420 as AutomaticUpdatesScheduledInstallationDay}
+
+pub using @4a15bc3608f1b0f1 {type AutomaticUpdatesUserType_ddbf1d5d6c3b as AutomaticUpdatesUserType}
+
+pub using @4a15bc3608f1b0f1 {type DeploymentAction_3e3a036b1c5b as DeploymentAction}
+
+pub using @4a15bc3608f1b0f1 {type DownloadPhase_5f5c3a60d895 as DownloadPhase}
+
+pub using @4a15bc3608f1b0f1 {type DownloadPriority_a3183844697e as DownloadPriority}
+
+pub using @4a15bc3608f1b0f1 {type DownloadType_0ec94ed18bed as DownloadType}
+
+pub using @4a15bc3608f1b0f1 {type IAutomaticUpdates_d5a6056fd807 as IAutomaticUpdates}
+
+pub using @4a15bc3608f1b0f1 {type IAutomaticUpdates2_16e4011a4224 as IAutomaticUpdates2}
+
+pub using @4a15bc3608f1b0f1 {type IAutomaticUpdatesResults_2035f339d99f as IAutomaticUpdatesResults}
+
+pub using @4a15bc3608f1b0f1 {type IAutomaticUpdatesSettings_f819eabc0d5f as IAutomaticUpdatesSettings}
+
+pub using @4a15bc3608f1b0f1 {type IAutomaticUpdatesSettings2_ddd723e2a7c9 as IAutomaticUpdatesSettings2}
+
+pub using @4a15bc3608f1b0f1 {type IAutomaticUpdatesSettings3_32b9ee84b54f as IAutomaticUpdatesSettings3}
+
+pub using @4a15bc3608f1b0f1 {type ICategory_43f9ab5b4bb9 as ICategory}
+
+pub using @4a15bc3608f1b0f1 {type ICategoryCollection_b4d8d9d09943 as ICategoryCollection}
+
+pub using @4a15bc3608f1b0f1 {type IDownloadCompletedCallback_009a4a523fc8 as IDownloadCompletedCallback}
+
+pub using @4a15bc3608f1b0f1 {type IDownloadCompletedCallbackArgs_463356d809c6 as IDownloadCompletedCallbackArgs}
+
+pub using @4a15bc3608f1b0f1 {type IDownloadJob_1668bd86d076 as IDownloadJob}
+
+pub using @4a15bc3608f1b0f1 {type IDownloadProgress_9d1961c7a1e0 as IDownloadProgress}
+
+pub using @4a15bc3608f1b0f1 {type IDownloadProgressChangedCallback_4cee095a89bc as IDownloadProgressChangedCallback}
+
+pub using @4a15bc3608f1b0f1 {type IDownloadProgressChangedCallbackArgs_8e62c0dd9f57 as IDownloadProgressChangedCallbackArgs}
+
+pub using @4a15bc3608f1b0f1 {type IDownloadResult_29f67346be16 as IDownloadResult}
+
+pub using @4a15bc3608f1b0f1 {type IImageInformation_e5777545b220 as IImageInformation}
+
+pub using @4a15bc3608f1b0f1 {type IInstallationAgent_566515844ea7 as IInstallationAgent}
+
+pub using @4a15bc3608f1b0f1 {type IInstallationBehavior_2693ad66eee7 as IInstallationBehavior}
+
+pub using @4a15bc3608f1b0f1 {type IInstallationCompletedCallback_603c9979d1e4 as IInstallationCompletedCallback}
+
+pub using @4a15bc3608f1b0f1 {type IInstallationCompletedCallbackArgs_510abf3bb926 as IInstallationCompletedCallbackArgs}
+
+pub using @4a15bc3608f1b0f1 {type IInstallationJob_fecf8b979e5f as IInstallationJob}
+
+pub using @4a15bc3608f1b0f1 {type IInstallationProgress_4bfa06f72e60 as IInstallationProgress}
+
+pub using @4a15bc3608f1b0f1 {type IInstallationProgressChangedCallback_c6ff2dfbbdd1 as IInstallationProgressChangedCallback}
+
+pub using @4a15bc3608f1b0f1 {type IInstallationProgressChangedCallbackArgs_1a0e0b003661 as IInstallationProgressChangedCallbackArgs}
+
+pub using @4a15bc3608f1b0f1 {type IInstallationResult_9e5ea42ff81f as IInstallationResult}
+
+pub using @4a15bc3608f1b0f1 {type IInvalidProductLicenseException_31e43717d327 as IInvalidProductLicenseException}
+
+pub using @4a15bc3608f1b0f1 {type ISearchCompletedCallback_f5c51b1d69f8 as ISearchCompletedCallback}
+
+pub using @4a15bc3608f1b0f1 {type ISearchCompletedCallbackArgs_1d75ce3ea01b as ISearchCompletedCallbackArgs}
+
+pub using @4a15bc3608f1b0f1 {type ISearchJob_4699fe5af127 as ISearchJob}
+
+pub using @4a15bc3608f1b0f1 {type ISearchResult_25180c6d77d2 as ISearchResult}
+
+pub using @4a15bc3608f1b0f1 {type IStringCollection_981738fa6916 as IStringCollection}
+
+pub using @4a15bc3608f1b0f1 {type ISystemInformation_4d5599bad207 as ISystemInformation}
+
+pub using @4a15bc3608f1b0f1 {type IUpdate_b3bc33d2e109 as IUpdate}
+
+pub using @4a15bc3608f1b0f1 {type IUpdate2_bfcf53a461ff as IUpdate2}
+
+pub using @4a15bc3608f1b0f1 {type IUpdate3_38d275d48bff as IUpdate3}
+
+pub using @4a15bc3608f1b0f1 {type IUpdate4_39a8aafd93d1 as IUpdate4}
+
+pub using @4a15bc3608f1b0f1 {type IUpdate5_310760d65156 as IUpdate5}
+
+pub using @4a15bc3608f1b0f1 {type IUpdateCollection_90bfb8bb7ace as IUpdateCollection}
+
+pub using @4a15bc3608f1b0f1 {type IUpdateDownloadContent_23a135650f27 as IUpdateDownloadContent}
+
+pub using @4a15bc3608f1b0f1 {type IUpdateDownloadContent2_3dc06476152e as IUpdateDownloadContent2}
+
+pub using @4a15bc3608f1b0f1 {type IUpdateDownloadContentCollection_e5aeeed90b28 as IUpdateDownloadContentCollection}
+
+pub using @4a15bc3608f1b0f1 {type IUpdateDownloadResult_b6452d1df2ed as IUpdateDownloadResult}
+
+pub using @4a15bc3608f1b0f1 {type IUpdateDownloader_05fd9fee5c26 as IUpdateDownloader}
+
+pub using @4a15bc3608f1b0f1 {type IUpdateDownloaderEx_aa2ebbf5fb51 as IUpdateDownloaderEx}
+
+pub using @4a15bc3608f1b0f1 {type IUpdateEx_2343002825b8 as IUpdateEx}
+
+pub using @4a15bc3608f1b0f1 {type IUpdateException_de377c7997b2 as IUpdateException}
+
+pub using @4a15bc3608f1b0f1 {type IUpdateExceptionCollection_f489c271f12e as IUpdateExceptionCollection}
+
+pub using @4a15bc3608f1b0f1 {type IUpdateHistoryEntry_677d0b3ec0eb as IUpdateHistoryEntry}
+
+pub using @4a15bc3608f1b0f1 {type IUpdateHistoryEntry2_a52330f85879 as IUpdateHistoryEntry2}
+
+pub using @4a15bc3608f1b0f1 {type IUpdateHistoryEntryCollection_ddf6d596cf3f as IUpdateHistoryEntryCollection}
+
+pub using @4a15bc3608f1b0f1 {type IUpdateIdentity_306a5ad0f385 as IUpdateIdentity}
+
+pub using @4a15bc3608f1b0f1 {type IUpdateInstallationResult_e74056f693f9 as IUpdateInstallationResult}
+
+pub using @4a15bc3608f1b0f1 {type IUpdateInstaller_d0561b5a3bc7 as IUpdateInstaller}
+
+pub using @4a15bc3608f1b0f1 {type IUpdateInstaller2_ab7159985deb as IUpdateInstaller2}
+
+pub using @4a15bc3608f1b0f1 {type IUpdateInstaller3_a7a1c98f816d as IUpdateInstaller3}
+
+pub using @4a15bc3608f1b0f1 {type IUpdateInstaller4_242aab6a1ab3 as IUpdateInstaller4}
+
+pub using @4a15bc3608f1b0f1 {type IUpdateLockdown_0b7acd32ee2b as IUpdateLockdown}
+
+pub using @4a15bc3608f1b0f1 {type IUpdateSearcher_6ee137e672ab as IUpdateSearcher}
+
+pub using @4a15bc3608f1b0f1 {type IUpdateSearcher2_c80cf3456f92 as IUpdateSearcher2}
+
+pub using @4a15bc3608f1b0f1 {type IUpdateSearcher3_2f614cff8d8a as IUpdateSearcher3}
+
+pub using @4a15bc3608f1b0f1 {type IUpdateService_54509c0450d7 as IUpdateService}
+
+pub using @4a15bc3608f1b0f1 {type IUpdateService2_8184d98dbbdc as IUpdateService2}
+
+pub using @4a15bc3608f1b0f1 {type IUpdateServiceCollection_2536fd9d52ee as IUpdateServiceCollection}
+
+pub using @4a15bc3608f1b0f1 {type IUpdateServiceManager_728093ace9c6 as IUpdateServiceManager}
+
+pub using @4a15bc3608f1b0f1 {type IUpdateServiceManager2_5aa526c29b17 as IUpdateServiceManager2}
+
+pub using @4a15bc3608f1b0f1 {type IUpdateServiceRegistration_156ab9b03cee as IUpdateServiceRegistration}
+
+pub using @4a15bc3608f1b0f1 {type IUpdateSession_8fd3863afa33 as IUpdateSession}
+
+pub using @4a15bc3608f1b0f1 {type IUpdateSession2_8f4795e81413 as IUpdateSession2}
+
+pub using @4a15bc3608f1b0f1 {type IUpdateSession3_2a9c771bc16a as IUpdateSession3}
+
+pub using @4a15bc3608f1b0f1 {type IWebProxy_25fbe6fbbf1f as IWebProxy}
+
+pub using @4a15bc3608f1b0f1 {type IWindowsDriverUpdate_e1a3f2740d5a as IWindowsDriverUpdate}
+
+pub using @4a15bc3608f1b0f1 {type IWindowsDriverUpdate2_988f964a7719 as IWindowsDriverUpdate2}
+
+pub using @4a15bc3608f1b0f1 {type IWindowsDriverUpdate3_baf130098634 as IWindowsDriverUpdate3}
+
+pub using @4a15bc3608f1b0f1 {type IWindowsDriverUpdate4_bfd3935345a9 as IWindowsDriverUpdate4}
+
+pub using @4a15bc3608f1b0f1 {type IWindowsDriverUpdate5_7fd68c30f281 as IWindowsDriverUpdate5}
+
+pub using @4a15bc3608f1b0f1 {type IWindowsDriverUpdateEntry_d338bb4dd375 as IWindowsDriverUpdateEntry}
+
+pub using @4a15bc3608f1b0f1 {type IWindowsDriverUpdateEntryCollection_aa7d03ee641f as IWindowsDriverUpdateEntryCollection}
+
+pub using @4a15bc3608f1b0f1 {type IWindowsUpdateAgentInfo_64b9dd98ecf6 as IWindowsUpdateAgentInfo}
+
+pub using @4a15bc3608f1b0f1 {type InstallationAgent_c85a27d10406 as InstallationAgent}
+
+pub using @4a15bc3608f1b0f1 {type InstallationImpact_943912067516 as InstallationImpact}
+
+pub using @4a15bc3608f1b0f1 {type InstallationRebootBehavior_f145789e4932 as InstallationRebootBehavior}
+
+pub using @4a15bc3608f1b0f1 {type OperationResultCode_fe284432add1 as OperationResultCode}
+
+pub using @4a15bc3608f1b0f1 {type SearchScope_68ee7c689112 as SearchScope}
+
+pub using @4a15bc3608f1b0f1 {type ServerSelection_a53ee3984ac7 as ServerSelection}
+
+pub using @4a15bc3608f1b0f1 {type StringCollection_2656e8678161 as StringCollection}
+
+pub using @4a15bc3608f1b0f1 {type SystemInformation_765944acfb0e as SystemInformation}
+
+pub using @4a15bc3608f1b0f1 {type UpdateCollection_14bf66fa8d51 as UpdateCollection}
+
+pub using @4a15bc3608f1b0f1 {type UpdateDownloader_d89aedad5ef7 as UpdateDownloader}
+
+pub using @4a15bc3608f1b0f1 {type UpdateExceptionContext_db1a03a47301 as UpdateExceptionContext}
+
+pub using @4a15bc3608f1b0f1 {type UpdateInstaller_ec0efd574682 as UpdateInstaller}
+
+pub using @4a15bc3608f1b0f1 {type UpdateLockdownOption_60c2e2a2ee77 as UpdateLockdownOption}
+
+pub using @4a15bc3608f1b0f1 {type UpdateOperation_bafdce2edea3 as UpdateOperation}
+
+pub using @4a15bc3608f1b0f1 {type UpdateSearcher_0c3310289424 as UpdateSearcher}
+
+pub using @4a15bc3608f1b0f1 {type UpdateServiceManager_20ee4c9222d2 as UpdateServiceManager}
+
+pub using @4a15bc3608f1b0f1 {type UpdateServiceOption_173f1bbad0c2 as UpdateServiceOption}
+
+pub using @4a15bc3608f1b0f1 {type UpdateServiceRegistrationState_2554a10b33a4 as UpdateServiceRegistrationState}
+
+pub using @4a15bc3608f1b0f1 {type UpdateSession_d3ca61e28c9d as UpdateSession}
+
+pub using @4a15bc3608f1b0f1 {type UpdateType_f4a7d0459814 as UpdateType}
+
+pub using @4a15bc3608f1b0f1 {type WebProxy_d0a87c2c78f0 as WebProxy}
+
+pub using @4a15bc3608f1b0f1 {type WindowsUpdateAgentInfo_d7cadd9c004b as WindowsUpdateAgentInfo}
+
+// Traits

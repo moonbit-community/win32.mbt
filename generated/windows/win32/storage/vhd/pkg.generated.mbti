@@ -1,0 +1,364 @@
+// Generated using `moon info`, DON'T EDIT IT
+package "moonbit-community/win32api/windows/win32/storage/vhd"
+
+import {
+  "moonbit-community/win32api/runtime/core",
+  "moonbit-community/win32api/runtime/strings",
+  "moonbit-community/win32api/scc/6ad20937915c4dc3",
+  "moonbit-community/win32api/scc/b785b16e0a6d57ad",
+  "moonbit-community/win32api/scc/fb66f520d7e12332",
+}
+
+// Values
+pub fn add_virtual_disk_parent(@core.RawAddress, @strings.PWStr) -> @fb66f520d7e12332.WIN32ERROR_de7527e5f234 raise @core.WindowsError
+
+pub fn add_virtual_disk_parent_raw(@core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn apply_snapshot_vhd_set(@core.RawAddress, @6ad20937915c4dc3.APPLYSNAPSHOTVHDSETPARAMETERS_fda2443ad6d3, @6ad20937915c4dc3.APPLYSNAPSHOTVHDSETFLAG_5f42275585c8) -> @fb66f520d7e12332.WIN32ERROR_de7527e5f234 raise @core.WindowsError
+
+pub fn apply_snapshot_vhd_set_raw(@core.RawAddress, @core.RawAddress, Int) -> UInt
+
+pub fn attach_virtual_disk(@core.RawAddress, @core.RawAddress, @6ad20937915c4dc3.ATTACHVIRTUALDISKFLAG_59cd9a966ea4, UInt, @6ad20937915c4dc3.ATTACHVIRTUALDISKPARAMETERS_9dd7d6db8119?, @b785b16e0a6d57ad.OVERLAPPED_ed44d4ed4c15?) -> @fb66f520d7e12332.WIN32ERROR_de7527e5f234 raise @core.WindowsError
+
+pub fn attach_virtual_disk_raw(@core.RawAddress, @core.RawAddress, Int, UInt, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn break_mirror_virtual_disk(@core.RawAddress) -> @fb66f520d7e12332.WIN32ERROR_de7527e5f234 raise @core.WindowsError
+
+pub fn break_mirror_virtual_disk_raw(@core.RawAddress) -> UInt
+
+pub fn compact_virtual_disk(@core.RawAddress, @6ad20937915c4dc3.COMPACTVIRTUALDISKFLAG_11273e400afd, @6ad20937915c4dc3.COMPACTVIRTUALDISKPARAMETERS_6c4251afe0e0?, @b785b16e0a6d57ad.OVERLAPPED_ed44d4ed4c15?) -> @fb66f520d7e12332.WIN32ERROR_de7527e5f234 raise @core.WindowsError
+
+pub fn compact_virtual_disk_raw(@core.RawAddress, Int, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn complete_fork_virtual_disk(@core.RawAddress) -> @fb66f520d7e12332.WIN32ERROR_de7527e5f234 raise @core.WindowsError
+
+pub fn complete_fork_virtual_disk_raw(@core.RawAddress) -> UInt
+
+pub fn create_virtual_disk(@6ad20937915c4dc3.VIRTUALSTORAGETYPE_c1813e023697, @strings.PWStr, @6ad20937915c4dc3.VIRTUALDISKACCESSMASK_0427341c7a88, @core.RawAddress, @6ad20937915c4dc3.CREATEVIRTUALDISKFLAG_bf8fdef9d87f, UInt, @6ad20937915c4dc3.CREATEVIRTUALDISKPARAMETERS_ce011fe5ccc3, @b785b16e0a6d57ad.OVERLAPPED_ed44d4ed4c15?, @core.RawAddress) -> @fb66f520d7e12332.WIN32ERROR_de7527e5f234 raise @core.WindowsError
+
+pub let create_virtual_disk_parameters_default_block_size : UInt
+
+pub let create_virtual_disk_parameters_default_sector_size : UInt
+
+pub fn create_virtual_disk_raw(@core.RawAddress, @core.RawAddress, Int, @core.RawAddress, Int, UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn delete_snapshot_vhd_set(@core.RawAddress, @6ad20937915c4dc3.DELETESNAPSHOTVHDSETPARAMETERS_f95f0acda978, @6ad20937915c4dc3.DELETESNAPSHOTVHDSETFLAG_fecb0bebb487) -> @fb66f520d7e12332.WIN32ERROR_de7527e5f234 raise @core.WindowsError
+
+pub fn delete_snapshot_vhd_set_raw(@core.RawAddress, @core.RawAddress, Int) -> UInt
+
+pub fn delete_virtual_disk_metadata(@core.RawAddress, @core.RawAddress) -> @fb66f520d7e12332.WIN32ERROR_de7527e5f234 raise @core.WindowsError
+
+pub fn delete_virtual_disk_metadata_raw(@core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn detach_virtual_disk(@core.RawAddress, @6ad20937915c4dc3.DETACHVIRTUALDISKFLAG_507e3813ce6c, UInt) -> @fb66f520d7e12332.WIN32ERROR_de7527e5f234 raise @core.WindowsError
+
+pub fn detach_virtual_disk_raw(@core.RawAddress, Int, UInt) -> UInt
+
+pub fn enumerate_virtual_disk_metadata(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> @fb66f520d7e12332.WIN32ERROR_de7527e5f234 raise @core.WindowsError
+
+pub fn enumerate_virtual_disk_metadata_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn expand_virtual_disk(@core.RawAddress, @6ad20937915c4dc3.EXPANDVIRTUALDISKFLAG_1fd0250bc501, @6ad20937915c4dc3.EXPANDVIRTUALDISKPARAMETERS_82415bfdff24, @b785b16e0a6d57ad.OVERLAPPED_ed44d4ed4c15?) -> @fb66f520d7e12332.WIN32ERROR_de7527e5f234 raise @core.WindowsError
+
+pub fn expand_virtual_disk_raw(@core.RawAddress, Int, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn fork_virtual_disk(@core.RawAddress, @6ad20937915c4dc3.FORKVIRTUALDISKFLAG_c1cdbd6d25ab, @6ad20937915c4dc3.FORKVIRTUALDISKPARAMETERS_d66474ad24e8, @b785b16e0a6d57ad.OVERLAPPED_ed44d4ed4c15) -> @fb66f520d7e12332.WIN32ERROR_de7527e5f234 raise @core.WindowsError
+
+pub fn fork_virtual_disk_raw(@core.RawAddress, Int, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn get_all_attached_virtual_disk_physical_paths(@core.RawAddress, @core.RawAddress) -> @fb66f520d7e12332.WIN32ERROR_de7527e5f234 raise @core.WindowsError
+
+pub fn get_all_attached_virtual_disk_physical_paths_raw(@core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn get_storage_dependency_information(@core.RawAddress, @6ad20937915c4dc3.GETSTORAGEDEPENDENCYFLAG_7c796d19b26c, UInt, @6ad20937915c4dc3.STORAGEDEPENDENCYINFO_b8a79c6e6e04, @core.RawAddress) -> @fb66f520d7e12332.WIN32ERROR_de7527e5f234 raise @core.WindowsError
+
+pub fn get_storage_dependency_information_raw(@core.RawAddress, Int, UInt, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn get_virtual_disk_information(@core.RawAddress, @core.RawAddress, @6ad20937915c4dc3.GETVIRTUALDISKINFO_652e490bf89a, @core.RawAddress) -> @fb66f520d7e12332.WIN32ERROR_de7527e5f234 raise @core.WindowsError
+
+pub fn get_virtual_disk_information_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn get_virtual_disk_metadata(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> @fb66f520d7e12332.WIN32ERROR_de7527e5f234 raise @core.WindowsError
+
+pub fn get_virtual_disk_metadata_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn get_virtual_disk_operation_progress(@core.RawAddress, @b785b16e0a6d57ad.OVERLAPPED_ed44d4ed4c15, @6ad20937915c4dc3.VIRTUALDISKPROGRESS_8675b33f6a20) -> @fb66f520d7e12332.WIN32ERROR_de7527e5f234 raise @core.WindowsError
+
+pub fn get_virtual_disk_operation_progress_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn get_virtual_disk_physical_path(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> @fb66f520d7e12332.WIN32ERROR_de7527e5f234 raise @core.WindowsError
+
+pub fn get_virtual_disk_physical_path_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn merge_virtual_disk(@core.RawAddress, @6ad20937915c4dc3.MERGEVIRTUALDISKFLAG_8083c2c44501, @6ad20937915c4dc3.MERGEVIRTUALDISKPARAMETERS_c26e207f326e, @b785b16e0a6d57ad.OVERLAPPED_ed44d4ed4c15?) -> @fb66f520d7e12332.WIN32ERROR_de7527e5f234 raise @core.WindowsError
+
+pub let merge_virtual_disk_default_merge_depth : UInt
+
+pub fn merge_virtual_disk_raw(@core.RawAddress, Int, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn mirror_virtual_disk(@core.RawAddress, @6ad20937915c4dc3.MIRRORVIRTUALDISKFLAG_e991743e2a8d, @6ad20937915c4dc3.MIRRORVIRTUALDISKPARAMETERS_d88fa6255e97, @b785b16e0a6d57ad.OVERLAPPED_ed44d4ed4c15) -> @fb66f520d7e12332.WIN32ERROR_de7527e5f234 raise @core.WindowsError
+
+pub fn mirror_virtual_disk_raw(@core.RawAddress, Int, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn modify_vhd_set(@core.RawAddress, @6ad20937915c4dc3.MODIFYVHDSETPARAMETERS_636a15462bfa, @6ad20937915c4dc3.MODIFYVHDSETFLAG_44942c150b13) -> @fb66f520d7e12332.WIN32ERROR_de7527e5f234 raise @core.WindowsError
+
+pub fn modify_vhd_set_raw(@core.RawAddress, @core.RawAddress, Int) -> UInt
+
+pub fn open_virtual_disk(@6ad20937915c4dc3.VIRTUALSTORAGETYPE_c1813e023697, @strings.PWStr, @6ad20937915c4dc3.VIRTUALDISKACCESSMASK_0427341c7a88, @6ad20937915c4dc3.OPENVIRTUALDISKFLAG_d70031778565, @6ad20937915c4dc3.OPENVIRTUALDISKPARAMETERS_4618122fba6b?, @core.RawAddress) -> @fb66f520d7e12332.WIN32ERROR_de7527e5f234 raise @core.WindowsError
+
+pub fn open_virtual_disk_raw(@core.RawAddress, @core.RawAddress, Int, Int, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub let open_virtual_disk_rw_depth_default : UInt
+
+pub fn query_changes_virtual_disk(@core.RawAddress, @strings.PWStr, UInt64, UInt64, @6ad20937915c4dc3.QUERYCHANGESVIRTUALDISKFLAG_0611ce99328a, @6ad20937915c4dc3.QUERYCHANGESVIRTUALDISKRANGE_04d5d85e7dca, @core.RawAddress, @core.RawAddress) -> @fb66f520d7e12332.WIN32ERROR_de7527e5f234 raise @core.WindowsError
+
+pub fn query_changes_virtual_disk_raw(@core.RawAddress, @core.RawAddress, UInt64, UInt64, Int, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn raw_scsi_virtual_disk(@core.RawAddress, @6ad20937915c4dc3.RAWSCSIVIRTUALDISKPARAMETERS_f9152510aba1, @6ad20937915c4dc3.RAWSCSIVIRTUALDISKFLAG_b0a87d1cd612, @6ad20937915c4dc3.RAWSCSIVIRTUALDISKRESPONSE_9283385193ec) -> @fb66f520d7e12332.WIN32ERROR_de7527e5f234 raise @core.WindowsError
+
+pub fn raw_scsi_virtual_disk_raw(@core.RawAddress, @core.RawAddress, Int, @core.RawAddress) -> UInt
+
+pub fn resize_virtual_disk(@core.RawAddress, @6ad20937915c4dc3.RESIZEVIRTUALDISKFLAG_f1fa2173eb58, @6ad20937915c4dc3.RESIZEVIRTUALDISKPARAMETERS_62b124210eab, @b785b16e0a6d57ad.OVERLAPPED_ed44d4ed4c15?) -> @fb66f520d7e12332.WIN32ERROR_de7527e5f234 raise @core.WindowsError
+
+pub fn resize_virtual_disk_raw(@core.RawAddress, Int, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn set_virtual_disk_information(@core.RawAddress, @6ad20937915c4dc3.SETVIRTUALDISKINFO_9a9bfc8c50c1) -> @fb66f520d7e12332.WIN32ERROR_de7527e5f234 raise @core.WindowsError
+
+pub fn set_virtual_disk_information_raw(@core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn set_virtual_disk_metadata(@core.RawAddress, @core.RawAddress, UInt, @core.RawAddress) -> @fb66f520d7e12332.WIN32ERROR_de7527e5f234 raise @core.WindowsError
+
+pub fn set_virtual_disk_metadata_raw(@core.RawAddress, @core.RawAddress, UInt, @core.RawAddress) -> UInt
+
+pub fn take_snapshot_vhd_set(@core.RawAddress, @6ad20937915c4dc3.TAKESNAPSHOTVHDSETPARAMETERS_f3158feee695, @6ad20937915c4dc3.TAKESNAPSHOTVHDSETFLAG_ec375e549264) -> @fb66f520d7e12332.WIN32ERROR_de7527e5f234 raise @core.WindowsError
+
+pub fn take_snapshot_vhd_set_raw(@core.RawAddress, @core.RawAddress, Int) -> UInt
+
+pub let virtual_disk_maximum_change_tracking_id_length : UInt
+
+pub let virtual_storage_type_device_iso : UInt
+
+pub let virtual_storage_type_device_unknown : UInt
+
+pub let virtual_storage_type_device_vhd : UInt
+
+pub let virtual_storage_type_device_vhdset : UInt
+
+pub let virtual_storage_type_device_vhdx : UInt
+
+// Errors
+
+// Types and methods
+
+// Type aliases
+pub using @6ad20937915c4dc3 {type APPLYSNAPSHOTVHDSETFLAG_5f42275585c8 as APPLYSNAPSHOTVHDSETFLAG}
+
+pub using @6ad20937915c4dc3 {type APPLYSNAPSHOTVHDSETPARAMETERS_fda2443ad6d3 as APPLYSNAPSHOTVHDSETPARAMETERS}
+
+pub using @6ad20937915c4dc3 {type APPLYSNAPSHOTVHDSETPARAMETERSAnonymousEUnion_197432b1dbbd as APPLYSNAPSHOTVHDSETPARAMETERSAnonymousEUnion}
+
+pub using @6ad20937915c4dc3 {type APPLYSNAPSHOTVHDSETPARAMETERSAnonymousEUnionVersion1EStruct_675fda18e58e as APPLYSNAPSHOTVHDSETPARAMETERSAnonymousEUnionVersion1EStruct}
+
+pub using @6ad20937915c4dc3 {type APPLYSNAPSHOTVHDSETVERSION_7249428151d2 as APPLYSNAPSHOTVHDSETVERSION}
+
+pub using @6ad20937915c4dc3 {type ATTACHVIRTUALDISKFLAG_59cd9a966ea4 as ATTACHVIRTUALDISKFLAG}
+
+pub using @6ad20937915c4dc3 {type ATTACHVIRTUALDISKPARAMETERS_9dd7d6db8119 as ATTACHVIRTUALDISKPARAMETERS}
+
+pub using @6ad20937915c4dc3 {type ATTACHVIRTUALDISKPARAMETERSAnonymousEUnion_4bf035fe26fa as ATTACHVIRTUALDISKPARAMETERSAnonymousEUnion}
+
+pub using @6ad20937915c4dc3 {type ATTACHVIRTUALDISKPARAMETERSAnonymousEUnionVersion1EStruct_6ff10418f6c2 as ATTACHVIRTUALDISKPARAMETERSAnonymousEUnionVersion1EStruct}
+
+pub using @6ad20937915c4dc3 {type ATTACHVIRTUALDISKPARAMETERSAnonymousEUnionVersion2EStruct_e87934004307 as ATTACHVIRTUALDISKPARAMETERSAnonymousEUnionVersion2EStruct}
+
+pub using @6ad20937915c4dc3 {type ATTACHVIRTUALDISKVERSION_e188e38736d2 as ATTACHVIRTUALDISKVERSION}
+
+pub using @6ad20937915c4dc3 {type COMPACTVIRTUALDISKFLAG_11273e400afd as COMPACTVIRTUALDISKFLAG}
+
+pub using @6ad20937915c4dc3 {type COMPACTVIRTUALDISKPARAMETERS_6c4251afe0e0 as COMPACTVIRTUALDISKPARAMETERS}
+
+pub using @6ad20937915c4dc3 {type COMPACTVIRTUALDISKPARAMETERSAnonymousEUnion_71c7d8141678 as COMPACTVIRTUALDISKPARAMETERSAnonymousEUnion}
+
+pub using @6ad20937915c4dc3 {type COMPACTVIRTUALDISKPARAMETERSAnonymousEUnionVersion1EStruct_7c420fdc5217 as COMPACTVIRTUALDISKPARAMETERSAnonymousEUnionVersion1EStruct}
+
+pub using @6ad20937915c4dc3 {type COMPACTVIRTUALDISKVERSION_5f5502a4e995 as COMPACTVIRTUALDISKVERSION}
+
+pub using @6ad20937915c4dc3 {type CREATEVIRTUALDISKFLAG_bf8fdef9d87f as CREATEVIRTUALDISKFLAG}
+
+pub using @6ad20937915c4dc3 {type CREATEVIRTUALDISKPARAMETERS_ce011fe5ccc3 as CREATEVIRTUALDISKPARAMETERS}
+
+pub using @6ad20937915c4dc3 {type CREATEVIRTUALDISKPARAMETERSAnonymousEUnion_00f80680d273 as CREATEVIRTUALDISKPARAMETERSAnonymousEUnion}
+
+pub using @6ad20937915c4dc3 {type CREATEVIRTUALDISKPARAMETERSAnonymousEUnionVersion1EStruct_efc2dd51f677 as CREATEVIRTUALDISKPARAMETERSAnonymousEUnionVersion1EStruct}
+
+pub using @6ad20937915c4dc3 {type CREATEVIRTUALDISKPARAMETERSAnonymousEUnionVersion2EStruct_82c3422bf8f0 as CREATEVIRTUALDISKPARAMETERSAnonymousEUnionVersion2EStruct}
+
+pub using @6ad20937915c4dc3 {type CREATEVIRTUALDISKPARAMETERSAnonymousEUnionVersion3EStruct_7350ddac1837 as CREATEVIRTUALDISKPARAMETERSAnonymousEUnionVersion3EStruct}
+
+pub using @6ad20937915c4dc3 {type CREATEVIRTUALDISKPARAMETERSAnonymousEUnionVersion4EStruct_973c1bfa375e as CREATEVIRTUALDISKPARAMETERSAnonymousEUnionVersion4EStruct}
+
+pub using @6ad20937915c4dc3 {type CREATEVIRTUALDISKVERSION_18e68cb3ce07 as CREATEVIRTUALDISKVERSION}
+
+pub using @6ad20937915c4dc3 {type DELETESNAPSHOTVHDSETFLAG_fecb0bebb487 as DELETESNAPSHOTVHDSETFLAG}
+
+pub using @6ad20937915c4dc3 {type DELETESNAPSHOTVHDSETPARAMETERS_f95f0acda978 as DELETESNAPSHOTVHDSETPARAMETERS}
+
+pub using @6ad20937915c4dc3 {type DELETESNAPSHOTVHDSETPARAMETERSAnonymousEUnion_110d00aba4b4 as DELETESNAPSHOTVHDSETPARAMETERSAnonymousEUnion}
+
+pub using @6ad20937915c4dc3 {type DELETESNAPSHOTVHDSETPARAMETERSAnonymousEUnionVersion1EStruct_43f4799e334d as DELETESNAPSHOTVHDSETPARAMETERSAnonymousEUnionVersion1EStruct}
+
+pub using @6ad20937915c4dc3 {type DELETESNAPSHOTVHDSETVERSION_a9d0292ba712 as DELETESNAPSHOTVHDSETVERSION}
+
+pub using @6ad20937915c4dc3 {type DEPENDENTDISKFLAG_bcf8f09fe611 as DEPENDENTDISKFLAG}
+
+pub using @6ad20937915c4dc3 {type DETACHVIRTUALDISKFLAG_507e3813ce6c as DETACHVIRTUALDISKFLAG}
+
+pub using @6ad20937915c4dc3 {type EXPANDVIRTUALDISKFLAG_1fd0250bc501 as EXPANDVIRTUALDISKFLAG}
+
+pub using @6ad20937915c4dc3 {type EXPANDVIRTUALDISKPARAMETERS_82415bfdff24 as EXPANDVIRTUALDISKPARAMETERS}
+
+pub using @6ad20937915c4dc3 {type EXPANDVIRTUALDISKPARAMETERSAnonymousEUnion_6b2c637e9647 as EXPANDVIRTUALDISKPARAMETERSAnonymousEUnion}
+
+pub using @6ad20937915c4dc3 {type EXPANDVIRTUALDISKPARAMETERSAnonymousEUnionVersion1EStruct_0407c521e568 as EXPANDVIRTUALDISKPARAMETERSAnonymousEUnionVersion1EStruct}
+
+pub using @6ad20937915c4dc3 {type EXPANDVIRTUALDISKVERSION_a46fa5b73371 as EXPANDVIRTUALDISKVERSION}
+
+pub using @6ad20937915c4dc3 {type FORKVIRTUALDISKFLAG_c1cdbd6d25ab as FORKVIRTUALDISKFLAG}
+
+pub using @6ad20937915c4dc3 {type FORKVIRTUALDISKPARAMETERS_d66474ad24e8 as FORKVIRTUALDISKPARAMETERS}
+
+pub using @6ad20937915c4dc3 {type FORKVIRTUALDISKPARAMETERSAnonymousEUnion_0ad2a1bed537 as FORKVIRTUALDISKPARAMETERSAnonymousEUnion}
+
+pub using @6ad20937915c4dc3 {type FORKVIRTUALDISKPARAMETERSAnonymousEUnionVersion1EStruct_b37ba3c2578b as FORKVIRTUALDISKPARAMETERSAnonymousEUnionVersion1EStruct}
+
+pub using @6ad20937915c4dc3 {type FORKVIRTUALDISKVERSION_5ad928b51afc as FORKVIRTUALDISKVERSION}
+
+pub using @6ad20937915c4dc3 {type GETSTORAGEDEPENDENCYFLAG_7c796d19b26c as GETSTORAGEDEPENDENCYFLAG}
+
+pub using @6ad20937915c4dc3 {type GETVIRTUALDISKINFO_652e490bf89a as GETVIRTUALDISKINFO}
+
+pub using @6ad20937915c4dc3 {type GETVIRTUALDISKINFOAnonymousEUnion_4c1024e00ad7 as GETVIRTUALDISKINFOAnonymousEUnion}
+
+pub using @6ad20937915c4dc3 {type GETVIRTUALDISKINFOAnonymousEUnionChangeTrackingStateEStruct_da245643bc43 as GETVIRTUALDISKINFOAnonymousEUnionChangeTrackingStateEStruct}
+
+pub using @6ad20937915c4dc3 {type GETVIRTUALDISKINFOAnonymousEUnionParentLocationEStruct_ec4cbc30c529 as GETVIRTUALDISKINFOAnonymousEUnionParentLocationEStruct}
+
+pub using @6ad20937915c4dc3 {type GETVIRTUALDISKINFOAnonymousEUnionPhysicalDiskEStruct_f02917317ccd as GETVIRTUALDISKINFOAnonymousEUnionPhysicalDiskEStruct}
+
+pub using @6ad20937915c4dc3 {type GETVIRTUALDISKINFOAnonymousEUnionSizeEStruct_0ed6be0b559c as GETVIRTUALDISKINFOAnonymousEUnionSizeEStruct}
+
+pub using @6ad20937915c4dc3 {type GETVIRTUALDISKINFOVERSION_a8c2c9b36bd1 as GETVIRTUALDISKINFOVERSION}
+
+pub using @6ad20937915c4dc3 {type MERGEVIRTUALDISKFLAG_8083c2c44501 as MERGEVIRTUALDISKFLAG}
+
+pub using @6ad20937915c4dc3 {type MERGEVIRTUALDISKPARAMETERS_c26e207f326e as MERGEVIRTUALDISKPARAMETERS}
+
+pub using @6ad20937915c4dc3 {type MERGEVIRTUALDISKPARAMETERSAnonymousEUnion_736792ae0eaa as MERGEVIRTUALDISKPARAMETERSAnonymousEUnion}
+
+pub using @6ad20937915c4dc3 {type MERGEVIRTUALDISKPARAMETERSAnonymousEUnionVersion1EStruct_592b6a0b6233 as MERGEVIRTUALDISKPARAMETERSAnonymousEUnionVersion1EStruct}
+
+pub using @6ad20937915c4dc3 {type MERGEVIRTUALDISKPARAMETERSAnonymousEUnionVersion2EStruct_36287e901756 as MERGEVIRTUALDISKPARAMETERSAnonymousEUnionVersion2EStruct}
+
+pub using @6ad20937915c4dc3 {type MERGEVIRTUALDISKVERSION_c531451b8181 as MERGEVIRTUALDISKVERSION}
+
+pub using @6ad20937915c4dc3 {type MIRRORVIRTUALDISKFLAG_e991743e2a8d as MIRRORVIRTUALDISKFLAG}
+
+pub using @6ad20937915c4dc3 {type MIRRORVIRTUALDISKPARAMETERS_d88fa6255e97 as MIRRORVIRTUALDISKPARAMETERS}
+
+pub using @6ad20937915c4dc3 {type MIRRORVIRTUALDISKPARAMETERSAnonymousEUnion_53b822084d30 as MIRRORVIRTUALDISKPARAMETERSAnonymousEUnion}
+
+pub using @6ad20937915c4dc3 {type MIRRORVIRTUALDISKPARAMETERSAnonymousEUnionVersion1EStruct_4992278e0ab9 as MIRRORVIRTUALDISKPARAMETERSAnonymousEUnionVersion1EStruct}
+
+pub using @6ad20937915c4dc3 {type MIRRORVIRTUALDISKVERSION_c9615fd2490e as MIRRORVIRTUALDISKVERSION}
+
+pub using @6ad20937915c4dc3 {type MODIFYVHDSETFLAG_44942c150b13 as MODIFYVHDSETFLAG}
+
+pub using @6ad20937915c4dc3 {type MODIFYVHDSETPARAMETERS_636a15462bfa as MODIFYVHDSETPARAMETERS}
+
+pub using @6ad20937915c4dc3 {type MODIFYVHDSETPARAMETERSAnonymousEUnion_191bdf40130b as MODIFYVHDSETPARAMETERSAnonymousEUnion}
+
+pub using @6ad20937915c4dc3 {type MODIFYVHDSETPARAMETERSAnonymousEUnionSnapshotPathEStruct_18f9912e2c64 as MODIFYVHDSETPARAMETERSAnonymousEUnionSnapshotPathEStruct}
+
+pub using @6ad20937915c4dc3 {type MODIFYVHDSETVERSION_a89b725ee29c as MODIFYVHDSETVERSION}
+
+pub using @6ad20937915c4dc3 {type OPENVIRTUALDISKFLAG_d70031778565 as OPENVIRTUALDISKFLAG}
+
+pub using @6ad20937915c4dc3 {type OPENVIRTUALDISKPARAMETERS_4618122fba6b as OPENVIRTUALDISKPARAMETERS}
+
+pub using @6ad20937915c4dc3 {type OPENVIRTUALDISKPARAMETERSAnonymousEUnion_5437bb4c1dd8 as OPENVIRTUALDISKPARAMETERSAnonymousEUnion}
+
+pub using @6ad20937915c4dc3 {type OPENVIRTUALDISKPARAMETERSAnonymousEUnionVersion1EStruct_196aa6ccc0c8 as OPENVIRTUALDISKPARAMETERSAnonymousEUnionVersion1EStruct}
+
+pub using @6ad20937915c4dc3 {type OPENVIRTUALDISKPARAMETERSAnonymousEUnionVersion2EStruct_fb643e161bda as OPENVIRTUALDISKPARAMETERSAnonymousEUnionVersion2EStruct}
+
+pub using @6ad20937915c4dc3 {type OPENVIRTUALDISKPARAMETERSAnonymousEUnionVersion3EStruct_18ddd705d015 as OPENVIRTUALDISKPARAMETERSAnonymousEUnionVersion3EStruct}
+
+pub using @6ad20937915c4dc3 {type OPENVIRTUALDISKVERSION_fe874cfefc5b as OPENVIRTUALDISKVERSION}
+
+pub using @6ad20937915c4dc3 {type QUERYCHANGESVIRTUALDISKFLAG_0611ce99328a as QUERYCHANGESVIRTUALDISKFLAG}
+
+pub using @6ad20937915c4dc3 {type QUERYCHANGESVIRTUALDISKRANGE_04d5d85e7dca as QUERYCHANGESVIRTUALDISKRANGE}
+
+pub using @6ad20937915c4dc3 {type RAWSCSIVIRTUALDISKFLAG_b0a87d1cd612 as RAWSCSIVIRTUALDISKFLAG}
+
+pub using @6ad20937915c4dc3 {type RAWSCSIVIRTUALDISKPARAMETERS_f9152510aba1 as RAWSCSIVIRTUALDISKPARAMETERS}
+
+pub using @6ad20937915c4dc3 {type RAWSCSIVIRTUALDISKPARAMETERSAnonymousEUnion_702550d7426f as RAWSCSIVIRTUALDISKPARAMETERSAnonymousEUnion}
+
+pub using @6ad20937915c4dc3 {type RAWSCSIVIRTUALDISKPARAMETERSAnonymousEUnionVersion1EStruct_3f6d074c3d6a as RAWSCSIVIRTUALDISKPARAMETERSAnonymousEUnionVersion1EStruct}
+
+pub using @6ad20937915c4dc3 {type RAWSCSIVIRTUALDISKRESPONSE_9283385193ec as RAWSCSIVIRTUALDISKRESPONSE}
+
+pub using @6ad20937915c4dc3 {type RAWSCSIVIRTUALDISKRESPONSEAnonymousEUnion_2f4b2e39c881 as RAWSCSIVIRTUALDISKRESPONSEAnonymousEUnion}
+
+pub using @6ad20937915c4dc3 {type RAWSCSIVIRTUALDISKRESPONSEAnonymousEUnionVersion1EStruct_d7ad67735751 as RAWSCSIVIRTUALDISKRESPONSEAnonymousEUnionVersion1EStruct}
+
+pub using @6ad20937915c4dc3 {type RAWSCSIVIRTUALDISKVERSION_74d6899ae83a as RAWSCSIVIRTUALDISKVERSION}
+
+pub using @6ad20937915c4dc3 {type RESIZEVIRTUALDISKFLAG_f1fa2173eb58 as RESIZEVIRTUALDISKFLAG}
+
+pub using @6ad20937915c4dc3 {type RESIZEVIRTUALDISKPARAMETERS_62b124210eab as RESIZEVIRTUALDISKPARAMETERS}
+
+pub using @6ad20937915c4dc3 {type RESIZEVIRTUALDISKPARAMETERSAnonymousEUnion_ff076336872a as RESIZEVIRTUALDISKPARAMETERSAnonymousEUnion}
+
+pub using @6ad20937915c4dc3 {type RESIZEVIRTUALDISKPARAMETERSAnonymousEUnionVersion1EStruct_ef71af32bae4 as RESIZEVIRTUALDISKPARAMETERSAnonymousEUnionVersion1EStruct}
+
+pub using @6ad20937915c4dc3 {type RESIZEVIRTUALDISKVERSION_89bda59f06f6 as RESIZEVIRTUALDISKVERSION}
+
+pub using @6ad20937915c4dc3 {type SETVIRTUALDISKINFO_9a9bfc8c50c1 as SETVIRTUALDISKINFO}
+
+pub using @6ad20937915c4dc3 {type SETVIRTUALDISKINFOAnonymousEUnion_530798c6623d as SETVIRTUALDISKINFOAnonymousEUnion}
+
+pub using @6ad20937915c4dc3 {type SETVIRTUALDISKINFOAnonymousEUnionParentLocatorEStruct_60d4f86f881e as SETVIRTUALDISKINFOAnonymousEUnionParentLocatorEStruct}
+
+pub using @6ad20937915c4dc3 {type SETVIRTUALDISKINFOAnonymousEUnionParentPathWithDepthInfoEStruct_e45c70c8ae65 as SETVIRTUALDISKINFOAnonymousEUnionParentPathWithDepthInfoEStruct}
+
+pub using @6ad20937915c4dc3 {type SETVIRTUALDISKINFOVERSION_dec84eeb5e37 as SETVIRTUALDISKINFOVERSION}
+
+pub using @6ad20937915c4dc3 {type STORAGEDEPENDENCYINFO_b8a79c6e6e04 as STORAGEDEPENDENCYINFO}
+
+pub using @6ad20937915c4dc3 {type STORAGEDEPENDENCYINFOAnonymousEUnion_a5237f835d85 as STORAGEDEPENDENCYINFOAnonymousEUnion}
+
+pub using @6ad20937915c4dc3 {type STORAGEDEPENDENCYINFOTYPE1_11f033173875 as STORAGEDEPENDENCYINFOTYPE1}
+
+pub using @6ad20937915c4dc3 {type STORAGEDEPENDENCYINFOTYPE2_ac2b5dc145a4 as STORAGEDEPENDENCYINFOTYPE2}
+
+pub using @6ad20937915c4dc3 {type STORAGEDEPENDENCYINFOVERSION_57ab7e0bd2e7 as STORAGEDEPENDENCYINFOVERSION}
+
+pub using @6ad20937915c4dc3 {type TAKESNAPSHOTVHDSETFLAG_ec375e549264 as TAKESNAPSHOTVHDSETFLAG}
+
+pub using @6ad20937915c4dc3 {type TAKESNAPSHOTVHDSETPARAMETERS_f3158feee695 as TAKESNAPSHOTVHDSETPARAMETERS}
+
+pub using @6ad20937915c4dc3 {type TAKESNAPSHOTVHDSETPARAMETERSAnonymousEUnion_639189db5b0e as TAKESNAPSHOTVHDSETPARAMETERSAnonymousEUnion}
+
+pub using @6ad20937915c4dc3 {type TAKESNAPSHOTVHDSETPARAMETERSAnonymousEUnionVersion1EStruct_20ad1f8dc3cf as TAKESNAPSHOTVHDSETPARAMETERSAnonymousEUnionVersion1EStruct}
+
+pub using @6ad20937915c4dc3 {type TAKESNAPSHOTVHDSETVERSION_a6f0cc211bdc as TAKESNAPSHOTVHDSETVERSION}
+
+pub using @6ad20937915c4dc3 {type VIRTUALDISKACCESSMASK_0427341c7a88 as VIRTUALDISKACCESSMASK}
+
+pub using @6ad20937915c4dc3 {type VIRTUALDISKPROGRESS_8675b33f6a20 as VIRTUALDISKPROGRESS}
+
+pub using @6ad20937915c4dc3 {type VIRTUALSTORAGETYPE_c1813e023697 as VIRTUALSTORAGETYPE}
+
+// Traits

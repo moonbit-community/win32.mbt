@@ -1,0 +1,1102 @@
+// Generated using `moon info`, DON'T EDIT IT
+package "moonbit-community/win32api/windows/win32/graphics/direct3_d10"
+
+import {
+  "moonbit-community/win32api/runtime/core",
+  "moonbit-community/win32api/runtime/strings",
+  "moonbit-community/win32api/scc/a61119bd3b9b0482",
+  "moonbit-community/win32api/scc/ae8afddb4df778ce",
+  "moonbit-community/win32api/scc/df334de14ae58043",
+}
+
+// Values
+pub let d3_d10_16_bit_index_strip_cut_value : UInt
+
+pub let d3_d10_1_default_sample_mask : UInt
+
+pub let d3_d10_1_float16_fused_tolerance_in_ulp : UInt64
+
+pub let d3_d10_1_float32_to_integer_tolerance_in_ulp : UInt
+
+pub let d3_d10_1_gs_input_register_count : UInt
+
+pub let d3_d10_1_ia_vertex_input_resource_slot_count : UInt
+
+pub let d3_d10_1_ia_vertex_input_structure_element_count : UInt
+
+pub let d3_d10_1_ia_vertex_input_structure_elements_components : UInt
+
+pub let d3_d10_1_ps_output_mask_register_component_bit_count : UInt
+
+pub let d3_d10_1_ps_output_mask_register_components : UInt
+
+pub let d3_d10_1_ps_output_mask_register_count : UInt
+
+pub let d3_d10_1_shader_major_version : UInt
+
+pub let d3_d10_1_shader_minor_version : UInt
+
+pub let d3_d10_1_so_buffer_max_stride_in_bytes : UInt
+
+pub let d3_d10_1_so_buffer_max_write_window_in_bytes : UInt
+
+pub let d3_d10_1_so_buffer_slot_count : UInt
+
+pub let d3_d10_1_so_multiple_buffer_elements_per_buffer : UInt
+
+pub let d3_d10_1_so_single_buffer_component_limit : UInt
+
+pub let d3_d10_1_standard_vertex_element_count : UInt
+
+pub let d3_d10_1_subpixel_fractional_bit_count : UInt
+
+pub let d3_d10_1_vs_input_register_count : UInt
+
+pub let d3_d10_1_vs_output_register_count : UInt
+
+pub let d3_d10_32_bit_index_strip_cut_value : UInt
+
+pub let d3_d10_8_bit_index_strip_cut_value : UInt
+
+pub let d3_d10_all_resources_bound : UInt
+
+pub let d3_d10_anisotropic_filtering_bit : UInt
+
+pub let d3_d10_append_aligned_element : UInt
+
+pub let d3_d10_appname_string : String
+
+pub let d3_d10_appsize_string : String
+
+pub let d3_d10_array_axis_address_range_bit_count : UInt
+
+pub let d3_d10_breakon_category : String
+
+pub let d3_d10_breakon_id_decimal : String
+
+pub let d3_d10_breakon_id_string : String
+
+pub let d3_d10_breakon_severity : String
+
+pub let d3_d10_clip_or_cull_distance_count : UInt
+
+pub let d3_d10_clip_or_cull_distance_element_count : UInt
+
+pub let d3_d10_commonshader_constant_buffer_api_slot_count : UInt
+
+pub let d3_d10_commonshader_constant_buffer_component_bit_count : UInt
+
+pub let d3_d10_commonshader_constant_buffer_components : UInt
+
+pub let d3_d10_commonshader_constant_buffer_hw_slot_count : UInt
+
+pub let d3_d10_commonshader_constant_buffer_register_components : UInt
+
+pub let d3_d10_commonshader_constant_buffer_register_count : UInt
+
+pub let d3_d10_commonshader_constant_buffer_register_read_ports : UInt
+
+pub let d3_d10_commonshader_constant_buffer_register_reads_per_inst : UInt
+
+pub let d3_d10_commonshader_flowcontrol_nesting_limit : UInt
+
+pub let d3_d10_commonshader_immediate_constant_buffer_register_components : UInt
+
+pub let d3_d10_commonshader_immediate_constant_buffer_register_count : UInt
+
+pub let d3_d10_commonshader_immediate_constant_buffer_register_read_ports : UInt
+
+pub let d3_d10_commonshader_immediate_constant_buffer_register_reads_per_inst : UInt
+
+pub let d3_d10_commonshader_immediate_value_component_bit_count : UInt
+
+pub let d3_d10_commonshader_input_resource_register_components : UInt
+
+pub let d3_d10_commonshader_input_resource_register_count : UInt
+
+pub let d3_d10_commonshader_input_resource_register_read_ports : UInt
+
+pub let d3_d10_commonshader_input_resource_register_reads_per_inst : UInt
+
+pub let d3_d10_commonshader_input_resource_slot_count : UInt
+
+pub let d3_d10_commonshader_sampler_register_components : UInt
+
+pub let d3_d10_commonshader_sampler_register_count : UInt
+
+pub let d3_d10_commonshader_sampler_register_read_ports : UInt
+
+pub let d3_d10_commonshader_sampler_register_reads_per_inst : UInt
+
+pub let d3_d10_commonshader_sampler_slot_count : UInt
+
+pub let d3_d10_commonshader_subroutine_nesting_limit : UInt
+
+pub let d3_d10_commonshader_temp_register_component_bit_count : UInt
+
+pub let d3_d10_commonshader_temp_register_components : UInt
+
+pub let d3_d10_commonshader_temp_register_count : UInt
+
+pub let d3_d10_commonshader_temp_register_read_ports : UInt
+
+pub let d3_d10_commonshader_temp_register_reads_per_inst : UInt
+
+pub let d3_d10_commonshader_texcoord_range_reduction_max : UInt
+
+pub let d3_d10_commonshader_texcoord_range_reduction_min : Int
+
+pub let d3_d10_commonshader_texel_offset_max_negative : Int
+
+pub let d3_d10_commonshader_texel_offset_max_positive : UInt
+
+pub let d3_d10_comparison_filtering_bit : UInt
+
+pub fn d3_d10_compile_effect_from_memory(@core.RawAddress, UInt64, @strings.PStr, @a61119bd3b9b0482.D3DSHADERMACRO_6be0725a2434?, @core.RawAddress, UInt, UInt, @core.RawAddress, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn d3_d10_compile_effect_from_memory_raw(@core.RawAddress, UInt64, @core.RawAddress, @core.RawAddress, @core.RawAddress, UInt, UInt, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn d3_d10_compile_shader(@strings.PStr, UInt64, @strings.PStr?, @a61119bd3b9b0482.D3DSHADERMACRO_6be0725a2434?, @core.RawAddress, @strings.PStr, @strings.PStr, UInt, @core.RawAddress, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn d3_d10_compile_shader_raw(@core.RawAddress, UInt64, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn d3_d10_create_blob(UInt64, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn d3_d10_create_blob_raw(UInt64, @core.RawAddress) -> Int
+
+pub fn d3_d10_create_device(@core.RawAddress, @df334de14ae58043.D3D10DRIVERTYPE_b56897233286, @core.RawAddress, UInt, UInt, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn d3_d10_create_device1(@core.RawAddress, @df334de14ae58043.D3D10DRIVERTYPE_b56897233286, @core.RawAddress, UInt, @df334de14ae58043.D3D10FEATURELEVEL1_759ff390f3c0, UInt, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn d3_d10_create_device1_raw(@core.RawAddress, Int, @core.RawAddress, UInt, Int, UInt, @core.RawAddress) -> Int
+
+pub fn d3_d10_create_device_and_swap_chain(@core.RawAddress, @df334de14ae58043.D3D10DRIVERTYPE_b56897233286, @core.RawAddress, UInt, UInt, @ae8afddb4df778ce.DXGISWAPCHAINDESC_fc3b0b14cb35?, @core.RawAddress, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn d3_d10_create_device_and_swap_chain1(@core.RawAddress, @df334de14ae58043.D3D10DRIVERTYPE_b56897233286, @core.RawAddress, UInt, @df334de14ae58043.D3D10FEATURELEVEL1_759ff390f3c0, UInt, @ae8afddb4df778ce.DXGISWAPCHAINDESC_fc3b0b14cb35?, @core.RawAddress, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn d3_d10_create_device_and_swap_chain1_raw(@core.RawAddress, Int, @core.RawAddress, UInt, Int, UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn d3_d10_create_device_and_swap_chain_raw(@core.RawAddress, Int, @core.RawAddress, UInt, UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn d3_d10_create_device_raw(@core.RawAddress, Int, @core.RawAddress, UInt, UInt, @core.RawAddress) -> Int
+
+pub fn d3_d10_create_effect_from_memory(@core.RawAddress, UInt64, UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn d3_d10_create_effect_from_memory_raw(@core.RawAddress, UInt64, UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn d3_d10_create_effect_pool_from_memory(@core.RawAddress, UInt64, UInt, @core.RawAddress, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn d3_d10_create_effect_pool_from_memory_raw(@core.RawAddress, UInt64, UInt, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn d3_d10_create_state_block(@core.RawAddress, @df334de14ae58043.D3D10STATEBLOCKMASK_902d707177cf, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn d3_d10_create_state_block_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub let d3_d10_debug_feature_finish_per_render_op : UInt
+
+pub let d3_d10_debug_feature_flush_per_render_op : UInt
+
+pub let d3_d10_debug_feature_present_per_render_op : UInt
+
+pub let d3_d10_default_blend_factor_alpha : UInt
+
+pub let d3_d10_default_blend_factor_blue : UInt
+
+pub let d3_d10_default_blend_factor_green : UInt
+
+pub let d3_d10_default_blend_factor_red : UInt
+
+pub let d3_d10_default_border_color_component : UInt
+
+pub let d3_d10_default_depth_bias : UInt
+
+pub let d3_d10_default_depth_bias_clamp : UInt
+
+pub let d3_d10_default_max_anisotropy : UInt
+
+pub let d3_d10_default_mip_lod_bias : UInt
+
+pub let d3_d10_default_render_target_array_index : UInt
+
+pub let d3_d10_default_sample_mask : UInt
+
+pub let d3_d10_default_scissor_endx : UInt
+
+pub let d3_d10_default_scissor_endy : UInt
+
+pub let d3_d10_default_scissor_startx : UInt
+
+pub let d3_d10_default_scissor_starty : UInt
+
+pub let d3_d10_default_slope_scaled_depth_bias : UInt
+
+pub let d3_d10_default_stencil_read_mask : UInt
+
+pub let d3_d10_default_stencil_reference : UInt
+
+pub let d3_d10_default_stencil_write_mask : UInt
+
+pub let d3_d10_default_viewport_and_scissorrect_index : UInt
+
+pub let d3_d10_default_viewport_height : UInt
+
+pub let d3_d10_default_viewport_max_depth : UInt
+
+pub let d3_d10_default_viewport_min_depth : UInt
+
+pub let d3_d10_default_viewport_topleftx : UInt
+
+pub let d3_d10_default_viewport_toplefty : UInt
+
+pub let d3_d10_default_viewport_width : UInt
+
+pub fn d3_d10_disassemble_effect(@core.RawAddress, Int, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn d3_d10_disassemble_effect_raw(@core.RawAddress, Int, @core.RawAddress) -> Int
+
+pub fn d3_d10_disassemble_shader(@core.RawAddress, UInt64, Int, @strings.PStr?, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn d3_d10_disassemble_shader_raw(@core.RawAddress, UInt64, Int, @core.RawAddress, @core.RawAddress) -> Int
+
+pub let d3_d10_effect_compile_allow_slow_ops : UInt
+
+pub let d3_d10_effect_compile_child_effect : UInt
+
+pub let d3_d10_effect_single_threaded : UInt
+
+pub let d3_d10_effect_variable_annotation : UInt
+
+pub let d3_d10_effect_variable_explicit_bind_point : UInt
+
+pub let d3_d10_effect_variable_pooled : UInt
+
+pub let d3_d10_enable_break_on_message : String
+
+pub let d3_d10_enable_unbounded_descriptor_tables : UInt
+
+pub let d3_d10_filter_type_mask : UInt
+
+pub let d3_d10_float16_fused_tolerance_in_ulp : UInt64
+
+pub let d3_d10_float32_max : UInt
+
+pub let d3_d10_float32_to_integer_tolerance_in_ulp : UInt
+
+pub let d3_d10_float_to_srgb_exponent_denominator : UInt
+
+pub let d3_d10_float_to_srgb_exponent_numerator : UInt
+
+pub let d3_d10_float_to_srgb_offset : UInt
+
+pub let d3_d10_float_to_srgb_scale_1 : UInt
+
+pub let d3_d10_float_to_srgb_scale_2 : UInt
+
+pub let d3_d10_float_to_srgb_threshold : UInt
+
+pub let d3_d10_ftoi_instruction_max_input : UInt
+
+pub let d3_d10_ftoi_instruction_min_input : UInt
+
+pub let d3_d10_ftou_instruction_max_input : UInt
+
+pub let d3_d10_ftou_instruction_min_input : UInt
+
+pub fn d3_d10_get_geometry_shader_profile(@core.RawAddress) -> @core.RawAddress raise @core.WindowsError
+
+pub fn d3_d10_get_geometry_shader_profile_raw(@core.RawAddress) -> @core.RawAddress
+
+pub fn d3_d10_get_input_and_output_signature_blob(@core.RawAddress, UInt64, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn d3_d10_get_input_and_output_signature_blob_raw(@core.RawAddress, UInt64, @core.RawAddress) -> Int
+
+pub fn d3_d10_get_input_signature_blob(@core.RawAddress, UInt64, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn d3_d10_get_input_signature_blob_raw(@core.RawAddress, UInt64, @core.RawAddress) -> Int
+
+pub fn d3_d10_get_output_signature_blob(@core.RawAddress, UInt64, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn d3_d10_get_output_signature_blob_raw(@core.RawAddress, UInt64, @core.RawAddress) -> Int
+
+pub fn d3_d10_get_pixel_shader_profile(@core.RawAddress) -> @core.RawAddress raise @core.WindowsError
+
+pub fn d3_d10_get_pixel_shader_profile_raw(@core.RawAddress) -> @core.RawAddress
+
+pub fn d3_d10_get_shader_debug_info(@core.RawAddress, UInt64, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn d3_d10_get_shader_debug_info_raw(@core.RawAddress, UInt64, @core.RawAddress) -> Int
+
+pub fn d3_d10_get_vertex_shader_profile(@core.RawAddress) -> @core.RawAddress raise @core.WindowsError
+
+pub fn d3_d10_get_vertex_shader_profile_raw(@core.RawAddress) -> @core.RawAddress
+
+pub let d3_d10_gs_input_prim_const_register_component_bit_count : UInt
+
+pub let d3_d10_gs_input_prim_const_register_components : UInt
+
+pub let d3_d10_gs_input_prim_const_register_count : UInt
+
+pub let d3_d10_gs_input_prim_const_register_read_ports : UInt
+
+pub let d3_d10_gs_input_prim_const_register_reads_per_inst : UInt
+
+pub let d3_d10_gs_input_register_component_bit_count : UInt
+
+pub let d3_d10_gs_input_register_components : UInt
+
+pub let d3_d10_gs_input_register_count : UInt
+
+pub let d3_d10_gs_input_register_read_ports : UInt
+
+pub let d3_d10_gs_input_register_reads_per_inst : UInt
+
+pub let d3_d10_gs_input_register_vertices : UInt
+
+pub let d3_d10_gs_output_elements : UInt
+
+pub let d3_d10_gs_output_register_component_bit_count : UInt
+
+pub let d3_d10_gs_output_register_components : UInt
+
+pub let d3_d10_gs_output_register_count : UInt
+
+pub let d3_d10_ia_default_index_buffer_offset_in_bytes : UInt
+
+pub let d3_d10_ia_default_primitive_topology : UInt
+
+pub let d3_d10_ia_default_vertex_buffer_offset_in_bytes : UInt
+
+pub let d3_d10_ia_index_input_resource_slot_count : UInt
+
+pub let d3_d10_ia_instance_id_bit_count : UInt
+
+pub let d3_d10_ia_integer_arithmetic_bit_count : UInt
+
+pub let d3_d10_ia_primitive_id_bit_count : UInt
+
+pub let d3_d10_ia_vertex_id_bit_count : UInt
+
+pub let d3_d10_ia_vertex_input_resource_slot_count : UInt
+
+pub let d3_d10_ia_vertex_input_structure_element_count : UInt
+
+pub let d3_d10_ia_vertex_input_structure_elements_components : UInt
+
+pub let d3_d10_info_queue_default_message_count_limit : UInt
+
+pub let d3_d10_infoqueue_storage_filter_override : String
+
+pub let d3_d10_integer_divide_by_zero_quotient : UInt
+
+pub let d3_d10_integer_divide_by_zero_remainder : UInt
+
+pub let d3_d10_linear_gamma : UInt
+
+pub let d3_d10_mag_filter_shift : UInt
+
+pub let d3_d10_max_border_color_component : UInt
+
+pub let d3_d10_max_depth : UInt
+
+pub let d3_d10_max_maxanisotropy : UInt
+
+pub let d3_d10_max_multisample_sample_count : UInt
+
+pub let d3_d10_max_position_value : UInt
+
+pub let d3_d10_max_texture_dimension_2_to_exp : UInt
+
+pub let d3_d10_min_border_color_component : UInt
+
+pub let d3_d10_min_depth : UInt
+
+pub let d3_d10_min_filter_shift : UInt
+
+pub let d3_d10_min_maxanisotropy : UInt
+
+pub let d3_d10_mip_filter_shift : UInt
+
+pub let d3_d10_mip_lod_bias_max : UInt
+
+pub let d3_d10_mip_lod_bias_min : UInt
+
+pub let d3_d10_mip_lod_fractional_bit_count : UInt
+
+pub let d3_d10_mip_lod_range_bit_count : UInt
+
+pub let d3_d10_multisample_antialias_line_width : UInt
+
+pub let d3_d10_mute_category : String
+
+pub let d3_d10_mute_debug_output : String
+
+pub let d3_d10_mute_id_decimal : String
+
+pub let d3_d10_mute_id_string : String
+
+pub let d3_d10_mute_severity : String
+
+pub let d3_d10_nonsample_fetch_out_of_range_access_result : UInt
+
+pub let d3_d10_pixel_address_range_bit_count : UInt
+
+pub let d3_d10_pre_scissor_pixel_address_range_bit_count : UInt
+
+pub fn d3_d10_preprocess_shader(@strings.PStr, UInt64, @strings.PStr?, @a61119bd3b9b0482.D3DSHADERMACRO_6be0725a2434?, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn d3_d10_preprocess_shader_raw(@core.RawAddress, UInt64, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub let d3_d10_ps_frontfacing_default_value : UInt
+
+pub let d3_d10_ps_frontfacing_false_value : UInt
+
+pub let d3_d10_ps_frontfacing_true_value : UInt
+
+pub let d3_d10_ps_input_register_component_bit_count : UInt
+
+pub let d3_d10_ps_input_register_components : UInt
+
+pub let d3_d10_ps_input_register_count : UInt
+
+pub let d3_d10_ps_input_register_read_ports : UInt
+
+pub let d3_d10_ps_input_register_reads_per_inst : UInt
+
+pub let d3_d10_ps_legacy_pixel_center_fractional_component : UInt
+
+pub let d3_d10_ps_output_depth_register_component_bit_count : UInt
+
+pub let d3_d10_ps_output_depth_register_components : UInt
+
+pub let d3_d10_ps_output_depth_register_count : UInt
+
+pub let d3_d10_ps_output_register_component_bit_count : UInt
+
+pub let d3_d10_ps_output_register_components : UInt
+
+pub let d3_d10_ps_output_register_count : UInt
+
+pub let d3_d10_ps_pixel_center_fractional_component : UInt
+
+pub fn d3_d10_reflect_shader(@core.RawAddress, UInt64, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn d3_d10_reflect_shader_raw(@core.RawAddress, UInt64, @core.RawAddress) -> Int
+
+pub let d3_d10_regkey_path : String
+
+pub let d3_d10_req_blend_object_count_per_context : UInt
+
+pub let d3_d10_req_buffer_resource_texel_count_2_to_exp : UInt
+
+pub let d3_d10_req_constant_buffer_element_count : UInt
+
+pub let d3_d10_req_depth_stencil_object_count_per_context : UInt
+
+pub let d3_d10_req_draw_vertex_count_2_to_exp : UInt
+
+pub let d3_d10_req_drawindexed_index_count_2_to_exp : UInt
+
+pub let d3_d10_req_filtering_hw_addressable_resource_dimension : UInt
+
+pub let d3_d10_req_gs_invocation_32_bit_output_component_limit : UInt
+
+pub let d3_d10_req_immediate_constant_buffer_element_count : UInt
+
+pub let d3_d10_req_maxanisotropy : UInt
+
+pub let d3_d10_req_mip_levels : UInt
+
+pub let d3_d10_req_multi_element_structure_size_in_bytes : UInt
+
+pub let d3_d10_req_rasterizer_object_count_per_context : UInt
+
+pub let d3_d10_req_render_to_buffer_window_width : UInt
+
+pub let d3_d10_req_resource_size_in_megabytes : UInt
+
+pub let d3_d10_req_resource_view_count_per_context_2_to_exp : UInt
+
+pub let d3_d10_req_sampler_object_count_per_context : UInt
+
+pub let d3_d10_req_texture1_d_array_axis_dimension : UInt
+
+pub let d3_d10_req_texture1_d_u_dimension : UInt
+
+pub let d3_d10_req_texture2_d_array_axis_dimension : UInt
+
+pub let d3_d10_req_texture2_d_u_or_v_dimension : UInt
+
+pub let d3_d10_req_texture3_d_u_v_or_w_dimension : UInt
+
+pub let d3_d10_req_texturecube_dimension : UInt
+
+pub let d3_d10_resinfo_instruction_missing_component_retval : UInt
+
+pub let d3_d10_sdk_layers_version : UInt
+
+pub let d3_d10_sdk_version : UInt
+
+pub let d3_d10_shader_avoid_flow_control : UInt
+
+pub let d3_d10_shader_debug : UInt
+
+pub let d3_d10_shader_debug_name_for_binary : UInt
+
+pub let d3_d10_shader_debug_name_for_source : UInt
+
+pub let d3_d10_shader_enable_backwards_compatibility : UInt
+
+pub let d3_d10_shader_enable_strictness : UInt
+
+pub let d3_d10_shader_flags2_force_root_signature_1_0 : UInt
+
+pub let d3_d10_shader_flags2_force_root_signature_1_1 : UInt
+
+pub let d3_d10_shader_flags2_force_root_signature_latest : UInt
+
+pub let d3_d10_shader_force_ps_software_no_opt : UInt
+
+pub let d3_d10_shader_force_vs_software_no_opt : UInt
+
+pub let d3_d10_shader_ieee_strictness : UInt
+
+pub let d3_d10_shader_major_version : UInt
+
+pub let d3_d10_shader_minor_version : UInt
+
+pub let d3_d10_shader_no_preshader : UInt
+
+pub let d3_d10_shader_optimization_level0 : UInt
+
+pub let d3_d10_shader_optimization_level1 : UInt
+
+pub let d3_d10_shader_optimization_level3 : UInt
+
+pub let d3_d10_shader_pack_matrix_column_major : UInt
+
+pub let d3_d10_shader_pack_matrix_row_major : UInt
+
+pub let d3_d10_shader_partial_precision : UInt
+
+pub let d3_d10_shader_prefer_flow_control : UInt
+
+pub let d3_d10_shader_resources_may_alias : UInt
+
+pub let d3_d10_shader_skip_optimization : UInt
+
+pub let d3_d10_shader_skip_validation : UInt
+
+pub let d3_d10_shader_warnings_are_errors : UInt
+
+pub let d3_d10_shift_instruction_pad_value : UInt
+
+pub let d3_d10_shift_instruction_shift_value_bit_count : UInt
+
+pub let d3_d10_simultaneous_render_target_count : UInt
+
+pub let d3_d10_so_buffer_max_stride_in_bytes : UInt
+
+pub let d3_d10_so_buffer_max_write_window_in_bytes : UInt
+
+pub let d3_d10_so_buffer_slot_count : UInt
+
+pub let d3_d10_so_ddi_register_index_denoting_gap : UInt
+
+pub let d3_d10_so_multiple_buffer_elements_per_buffer : UInt
+
+pub let d3_d10_so_single_buffer_component_limit : UInt
+
+pub let d3_d10_srgb_gamma : UInt
+
+pub let d3_d10_srgb_to_float_denominator_1 : UInt
+
+pub let d3_d10_srgb_to_float_denominator_2 : UInt
+
+pub let d3_d10_srgb_to_float_exponent : UInt
+
+pub let d3_d10_srgb_to_float_offset : UInt
+
+pub let d3_d10_srgb_to_float_threshold : UInt
+
+pub let d3_d10_srgb_to_float_tolerance_in_ulp : UInt
+
+pub let d3_d10_standard_component_bit_count : UInt
+
+pub let d3_d10_standard_component_bit_count_doubled : UInt
+
+pub let d3_d10_standard_maximum_element_alignment_byte_multiple : UInt
+
+pub let d3_d10_standard_pixel_component_count : UInt
+
+pub let d3_d10_standard_pixel_element_count : UInt
+
+pub let d3_d10_standard_vector_size : UInt
+
+pub let d3_d10_standard_vertex_element_count : UInt
+
+pub let d3_d10_standard_vertex_total_component_count : UInt
+
+pub fn d3_d10_state_block_mask_difference(@df334de14ae58043.D3D10STATEBLOCKMASK_902d707177cf, @df334de14ae58043.D3D10STATEBLOCKMASK_902d707177cf, @df334de14ae58043.D3D10STATEBLOCKMASK_902d707177cf) -> Int raise @core.WindowsError
+
+pub fn d3_d10_state_block_mask_difference_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn d3_d10_state_block_mask_disable_all(@df334de14ae58043.D3D10STATEBLOCKMASK_902d707177cf) -> Int raise @core.WindowsError
+
+pub fn d3_d10_state_block_mask_disable_all_raw(@core.RawAddress) -> Int
+
+pub fn d3_d10_state_block_mask_disable_capture(@df334de14ae58043.D3D10STATEBLOCKMASK_902d707177cf, @df334de14ae58043.D3D10DEVICESTATETYPES_de82fefff749, UInt, UInt) -> Int raise @core.WindowsError
+
+pub fn d3_d10_state_block_mask_disable_capture_raw(@core.RawAddress, Int, UInt, UInt) -> Int
+
+pub fn d3_d10_state_block_mask_enable_all(@df334de14ae58043.D3D10STATEBLOCKMASK_902d707177cf) -> Int raise @core.WindowsError
+
+pub fn d3_d10_state_block_mask_enable_all_raw(@core.RawAddress) -> Int
+
+pub fn d3_d10_state_block_mask_enable_capture(@df334de14ae58043.D3D10STATEBLOCKMASK_902d707177cf, @df334de14ae58043.D3D10DEVICESTATETYPES_de82fefff749, UInt, UInt) -> Int raise @core.WindowsError
+
+pub fn d3_d10_state_block_mask_enable_capture_raw(@core.RawAddress, Int, UInt, UInt) -> Int
+
+pub fn d3_d10_state_block_mask_get_setting(@df334de14ae58043.D3D10STATEBLOCKMASK_902d707177cf, @df334de14ae58043.D3D10DEVICESTATETYPES_de82fefff749, UInt) -> Bool raise @core.WindowsError
+
+pub fn d3_d10_state_block_mask_get_setting_raw(@core.RawAddress, Int, UInt) -> Int
+
+pub fn d3_d10_state_block_mask_intersect(@df334de14ae58043.D3D10STATEBLOCKMASK_902d707177cf, @df334de14ae58043.D3D10STATEBLOCKMASK_902d707177cf, @df334de14ae58043.D3D10STATEBLOCKMASK_902d707177cf) -> Int raise @core.WindowsError
+
+pub fn d3_d10_state_block_mask_intersect_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn d3_d10_state_block_mask_union(@df334de14ae58043.D3D10STATEBLOCKMASK_902d707177cf, @df334de14ae58043.D3D10STATEBLOCKMASK_902d707177cf, @df334de14ae58043.D3D10STATEBLOCKMASK_902d707177cf) -> Int raise @core.WindowsError
+
+pub fn d3_d10_state_block_mask_union_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub let d3_d10_subpixel_fractional_bit_count : UInt
+
+pub let d3_d10_subtexel_fractional_bit_count : UInt
+
+pub let d3_d10_texel_address_range_bit_count : UInt
+
+pub let d3_d10_text_1_bit_bit : UInt
+
+pub let d3_d10_unbound_memory_access_result : UInt
+
+pub let d3_d10_unmute_severity_info : String
+
+pub let d3_d10_viewport_and_scissorrect_max_index : UInt
+
+pub let d3_d10_viewport_and_scissorrect_object_count_per_pipeline : UInt
+
+pub let d3_d10_viewport_bounds_max : UInt
+
+pub let d3_d10_viewport_bounds_min : Int
+
+pub let d3_d10_vs_input_register_component_bit_count : UInt
+
+pub let d3_d10_vs_input_register_components : UInt
+
+pub let d3_d10_vs_input_register_count : UInt
+
+pub let d3_d10_vs_input_register_read_ports : UInt
+
+pub let d3_d10_vs_input_register_reads_per_inst : UInt
+
+pub let d3_d10_vs_output_register_component_bit_count : UInt
+
+pub let d3_d10_vs_output_register_components : UInt
+
+pub let d3_d10_vs_output_register_count : UInt
+
+pub let d3_d10_whql_context_count_for_resource_limit : UInt
+
+pub let d3_d10_whql_draw_vertex_count_2_to_exp : UInt
+
+pub let d3_d10_whql_drawindexed_index_count_2_to_exp : UInt
+
+pub let d3_d_major_version : UInt
+
+pub let d3_d_minor_version : UInt
+
+pub let d3_d_spec_date_day : UInt
+
+pub let d3_d_spec_date_month : UInt
+
+pub let d3_d_spec_date_year : UInt
+
+pub let d3_d_spec_version : UInt64
+
+pub let facd3_d10 : UInt
+
+// Errors
+
+// Types and methods
+
+// Type aliases
+pub using @df334de14ae58043 {type D3D10ASYNCGETDATAFLAG_ad5652ec3011 as D3D10ASYNCGETDATAFLAG}
+
+pub using @df334de14ae58043 {type D3D10BINDFLAG_4b7eccc9c132 as D3D10BINDFLAG}
+
+pub using @df334de14ae58043 {type D3D10BLEND_512f32bec69e as D3D10BLEND}
+
+pub using @df334de14ae58043 {type D3D10BLENDDESC_06c958cbf90d as D3D10BLENDDESC}
+
+pub using @df334de14ae58043 {type D3D10BLENDDESC1_6efb3051014e as D3D10BLENDDESC1}
+
+pub using @df334de14ae58043 {type D3D10BLENDOP_05a09f23a99a as D3D10BLENDOP}
+
+pub using @df334de14ae58043 {type D3D10BOX_dfaf0de46c6f as D3D10BOX}
+
+pub using @df334de14ae58043 {type D3D10BUFFERDESC_afcdb8afc63f as D3D10BUFFERDESC}
+
+pub using @df334de14ae58043 {type D3D10BUFFERRTV_c9ca2ddb7fc0 as D3D10BUFFERRTV}
+
+pub using @df334de14ae58043 {type D3D10BUFFERRTVAnonymous1EUnion_5b5859d0db63 as D3D10BUFFERRTVAnonymous1EUnion}
+
+pub using @df334de14ae58043 {type D3D10BUFFERRTVAnonymous2EUnion_3727da0d70de as D3D10BUFFERRTVAnonymous2EUnion}
+
+pub using @df334de14ae58043 {type D3D10BUFFERSRV_b6eabe0912ab as D3D10BUFFERSRV}
+
+pub using @df334de14ae58043 {type D3D10BUFFERSRVAnonymous1EUnion_a806a98817c1 as D3D10BUFFERSRVAnonymous1EUnion}
+
+pub using @df334de14ae58043 {type D3D10BUFFERSRVAnonymous2EUnion_0e945042ec4a as D3D10BUFFERSRVAnonymous2EUnion}
+
+pub using @df334de14ae58043 {type D3D10CLEARFLAG_498ac0fc0ce5 as D3D10CLEARFLAG}
+
+pub using @df334de14ae58043 {type D3D10COLORWRITEENABLE_dab7172eecad as D3D10COLORWRITEENABLE}
+
+pub using @df334de14ae58043 {type D3D10COMPARISONFUNC_dae47632b1b7 as D3D10COMPARISONFUNC}
+
+pub using @df334de14ae58043 {type D3D10COUNTER_e2fbbd1b0bf2 as D3D10COUNTER}
+
+pub using @df334de14ae58043 {type D3D10COUNTERDESC_9e4a3f84502c as D3D10COUNTERDESC}
+
+pub using @df334de14ae58043 {type D3D10COUNTERINFO_7f82345ac260 as D3D10COUNTERINFO}
+
+pub using @df334de14ae58043 {type D3D10COUNTERTYPE_3f2a32837395 as D3D10COUNTERTYPE}
+
+pub using @df334de14ae58043 {type D3D10CPUACCESSFLAG_6b44d38214e4 as D3D10CPUACCESSFLAG}
+
+pub using @df334de14ae58043 {type D3D10CREATEDEVICEFLAG_201f40a2d1ea as D3D10CREATEDEVICEFLAG}
+
+pub using @df334de14ae58043 {type D3D10CULLMODE_9fa733e2e748 as D3D10CULLMODE}
+
+pub using @df334de14ae58043 {type D3D10DEPTHSTENCILDESC_c797e33dcbea as D3D10DEPTHSTENCILDESC}
+
+pub using @df334de14ae58043 {type D3D10DEPTHSTENCILOPDESC_ff39c6863503 as D3D10DEPTHSTENCILOPDESC}
+
+pub using @df334de14ae58043 {type D3D10DEPTHSTENCILVIEWDESC_bb7070605650 as D3D10DEPTHSTENCILVIEWDESC}
+
+pub using @df334de14ae58043 {type D3D10DEPTHSTENCILVIEWDESCAnonymousEUnion_fa112c47909c as D3D10DEPTHSTENCILVIEWDESCAnonymousEUnion}
+
+pub using @df334de14ae58043 {type D3D10DEPTHWRITEMASK_040bf3fb940c as D3D10DEPTHWRITEMASK}
+
+pub using @df334de14ae58043 {type D3D10DEVICESTATETYPES_de82fefff749 as D3D10DEVICESTATETYPES}
+
+pub using @df334de14ae58043 {type D3D10DRIVERTYPE_b56897233286 as D3D10DRIVERTYPE}
+
+pub using @df334de14ae58043 {type D3D10DSVDIMENSION_9609a682a490 as D3D10DSVDIMENSION}
+
+pub using @df334de14ae58043 {type D3D10EFFECTDESC_25d00e546f23 as D3D10EFFECTDESC}
+
+pub using @df334de14ae58043 {type D3D10EFFECTSHADERDESC_35ae0ef48f82 as D3D10EFFECTSHADERDESC}
+
+pub using @df334de14ae58043 {type D3D10EFFECTTYPEDESC_c257d8e7bece as D3D10EFFECTTYPEDESC}
+
+pub using @df334de14ae58043 {type D3D10EFFECTVARIABLEDESC_4b9199dbd33a as D3D10EFFECTVARIABLEDESC}
+
+pub using @df334de14ae58043 {type D3D10FEATURELEVEL1_759ff390f3c0 as D3D10FEATURELEVEL1}
+
+pub using @df334de14ae58043 {type D3D10FILLMODE_07d498591f62 as D3D10FILLMODE}
+
+pub using @df334de14ae58043 {type D3D10FILTER_1312f6ea45f8 as D3D10FILTER}
+
+pub using @df334de14ae58043 {type D3D10FILTERTYPE_6719e8ffc900 as D3D10FILTERTYPE}
+
+pub using @df334de14ae58043 {type D3D10FORMATSUPPORT_8741dbe83dee as D3D10FORMATSUPPORT}
+
+pub using @df334de14ae58043 {type D3D10INFOQUEUEFILTER_e999750ae926 as D3D10INFOQUEUEFILTER}
+
+pub using @df334de14ae58043 {type D3D10INFOQUEUEFILTERDESC_6e14207d8fa3 as D3D10INFOQUEUEFILTERDESC}
+
+pub using @df334de14ae58043 {type D3D10INPUTCLASSIFICATION_b99da1e5ab64 as D3D10INPUTCLASSIFICATION}
+
+pub using @df334de14ae58043 {type D3D10INPUTELEMENTDESC_e92e572cea02 as D3D10INPUTELEMENTDESC}
+
+pub using @df334de14ae58043 {type D3D10MAP_7a20756b19b9 as D3D10MAP}
+
+pub using @df334de14ae58043 {type D3D10MAPFLAG_13582140d2de as D3D10MAPFLAG}
+
+pub using @df334de14ae58043 {type D3D10MAPPEDTEXTURE2D_63cf0cb7a705 as D3D10MAPPEDTEXTURE2D}
+
+pub using @df334de14ae58043 {type D3D10MAPPEDTEXTURE3D_9c229d3d2d4e as D3D10MAPPEDTEXTURE3D}
+
+pub using @df334de14ae58043 {type D3D10MESSAGE_08be6344b022 as D3D10MESSAGE}
+
+pub using @df334de14ae58043 {type D3D10MESSAGECATEGORY_ee98704b4f5d as D3D10MESSAGECATEGORY}
+
+pub using @df334de14ae58043 {type D3D10MESSAGEID_50347a51aa23 as D3D10MESSAGEID}
+
+pub using @df334de14ae58043 {type D3D10MESSAGESEVERITY_5cc9f974008f as D3D10MESSAGESEVERITY}
+
+pub using @df334de14ae58043 {type D3D10PASSDESC_b28b2a521dbe as D3D10PASSDESC}
+
+pub using @df334de14ae58043 {type D3D10PASSSHADERDESC_607fb1d1d9e8 as D3D10PASSSHADERDESC}
+
+pub using @df334de14ae58043 {type D3D10QUERY_b022526f6eea as D3D10QUERY}
+
+pub using @df334de14ae58043 {type D3D10QUERYDATAPIPELINESTATISTICS_c4aa4bb84fd1 as D3D10QUERYDATAPIPELINESTATISTICS}
+
+pub using @df334de14ae58043 {type D3D10QUERYDATASOSTATISTICS_75ffaa1f5180 as D3D10QUERYDATASOSTATISTICS}
+
+pub using @df334de14ae58043 {type D3D10QUERYDATATIMESTAMPDISJOINT_54813894912a as D3D10QUERYDATATIMESTAMPDISJOINT}
+
+pub using @df334de14ae58043 {type D3D10QUERYDESC_0491a616cb5c as D3D10QUERYDESC}
+
+pub using @df334de14ae58043 {type D3D10QUERYMISCFLAG_18ccaa941597 as D3D10QUERYMISCFLAG}
+
+pub using @df334de14ae58043 {type D3D10RAISEFLAG_2f48e4686ca0 as D3D10RAISEFLAG}
+
+pub using @df334de14ae58043 {type D3D10RASTERIZERDESC_54be675bb82b as D3D10RASTERIZERDESC}
+
+pub using @df334de14ae58043 {type D3D10RENDERTARGETBLENDDESC1_80fca159f544 as D3D10RENDERTARGETBLENDDESC1}
+
+pub using @df334de14ae58043 {type D3D10RENDERTARGETVIEWDESC_e373ac956cf3 as D3D10RENDERTARGETVIEWDESC}
+
+pub using @df334de14ae58043 {type D3D10RENDERTARGETVIEWDESCAnonymousEUnion_bb722ba302e2 as D3D10RENDERTARGETVIEWDESCAnonymousEUnion}
+
+pub using @df334de14ae58043 {type D3D10RESOURCEDIMENSION_cc29c67d8db2 as D3D10RESOURCEDIMENSION}
+
+pub using @df334de14ae58043 {type D3D10RESOURCEMISCFLAG_7ae277f823f2 as D3D10RESOURCEMISCFLAG}
+
+pub using @df334de14ae58043 {type D3D10RTVDIMENSION_97a17f53b9f4 as D3D10RTVDIMENSION}
+
+pub using @df334de14ae58043 {type D3D10SAMPLERDESC_edff1fe8e735 as D3D10SAMPLERDESC}
+
+pub using @df334de14ae58043 {type D3D10SHADERBUFFERDESC_e1c8f310822f as D3D10SHADERBUFFERDESC}
+
+pub using @df334de14ae58043 {type D3D10SHADERDEBUGFILEINFO_2c7a73b4e858 as D3D10SHADERDEBUGFILEINFO}
+
+pub using @df334de14ae58043 {type D3D10SHADERDEBUGINFO_ddb924fde468 as D3D10SHADERDEBUGINFO}
+
+pub using @df334de14ae58043 {type D3D10SHADERDEBUGINPUTINFO_eb8d14bc396b as D3D10SHADERDEBUGINPUTINFO}
+
+pub using @df334de14ae58043 {type D3D10SHADERDEBUGINSTINFO_309150c6bf78 as D3D10SHADERDEBUGINSTINFO}
+
+pub using @df334de14ae58043 {type D3D10SHADERDEBUGOUTPUTREGINFO_dd8dd4302406 as D3D10SHADERDEBUGOUTPUTREGINFO}
+
+pub using @df334de14ae58043 {type D3D10SHADERDEBUGOUTPUTVAR_44a3e22ee46a as D3D10SHADERDEBUGOUTPUTVAR}
+
+pub using @df334de14ae58043 {type D3D10SHADERDEBUGREGTYPE_60ac17f664f6 as D3D10SHADERDEBUGREGTYPE}
+
+pub using @df334de14ae58043 {type D3D10SHADERDEBUGSCOPEINFO_c45ee6ced8de as D3D10SHADERDEBUGSCOPEINFO}
+
+pub using @df334de14ae58043 {type D3D10SHADERDEBUGSCOPETYPE_5e2a8403c52a as D3D10SHADERDEBUGSCOPETYPE}
+
+pub using @df334de14ae58043 {type D3D10SHADERDEBUGSCOPEVARINFO_d689a4f66b3c as D3D10SHADERDEBUGSCOPEVARINFO}
+
+pub using @df334de14ae58043 {type D3D10SHADERDEBUGTOKENINFO_775a5cb60944 as D3D10SHADERDEBUGTOKENINFO}
+
+pub using @df334de14ae58043 {type D3D10SHADERDEBUGVARINFO_cef93b163e0b as D3D10SHADERDEBUGVARINFO}
+
+pub using @df334de14ae58043 {type D3D10SHADERDEBUGVARTYPE_45b4a36d8387 as D3D10SHADERDEBUGVARTYPE}
+
+pub using @df334de14ae58043 {type D3D10SHADERDESC_34e59fd1c960 as D3D10SHADERDESC}
+
+pub using @df334de14ae58043 {type D3D10SHADERINPUTBINDDESC_48d961fa6384 as D3D10SHADERINPUTBINDDESC}
+
+pub using @df334de14ae58043 {type D3D10SHADERRESOURCEVIEWDESC_9687d3243431 as D3D10SHADERRESOURCEVIEWDESC}
+
+pub using @df334de14ae58043 {type D3D10SHADERRESOURCEVIEWDESC1_56d20216cff0 as D3D10SHADERRESOURCEVIEWDESC1}
+
+pub using @df334de14ae58043 {type D3D10SHADERRESOURCEVIEWDESC1AnonymousEUnion_33e51c200a2e as D3D10SHADERRESOURCEVIEWDESC1AnonymousEUnion}
+
+pub using @df334de14ae58043 {type D3D10SHADERRESOURCEVIEWDESCAnonymousEUnion_4d7aacf66b2f as D3D10SHADERRESOURCEVIEWDESCAnonymousEUnion}
+
+pub using @df334de14ae58043 {type D3D10SHADERTYPEDESC_21a89f38a0d3 as D3D10SHADERTYPEDESC}
+
+pub using @df334de14ae58043 {type D3D10SHADERVARIABLEDESC_6e2f9156dec4 as D3D10SHADERVARIABLEDESC}
+
+pub using @df334de14ae58043 {type D3D10SIGNATUREPARAMETERDESC_d1ab43e7c0a6 as D3D10SIGNATUREPARAMETERDESC}
+
+pub using @df334de14ae58043 {type D3D10SODECLARATIONENTRY_76209250a208 as D3D10SODECLARATIONENTRY}
+
+pub using @df334de14ae58043 {type D3D10STANDARDMULTISAMPLEQUALITYLEVELS_bfd9f0170220 as D3D10STANDARDMULTISAMPLEQUALITYLEVELS}
+
+pub using @df334de14ae58043 {type D3D10STATEBLOCKMASK_902d707177cf as D3D10STATEBLOCKMASK}
+
+pub using @df334de14ae58043 {type D3D10STENCILOP_5c842118f5c6 as D3D10STENCILOP}
+
+pub using @df334de14ae58043 {type D3D10SUBRESOURCEDATA_0684dd3aea7a as D3D10SUBRESOURCEDATA}
+
+pub using @df334de14ae58043 {type D3D10TECHNIQUEDESC_11390e3ba9bb as D3D10TECHNIQUEDESC}
+
+pub using @df334de14ae58043 {type D3D10TEX1DARRAYDSV_31950f332b17 as D3D10TEX1DARRAYDSV}
+
+pub using @df334de14ae58043 {type D3D10TEX1DARRAYRTV_c4d5576c0661 as D3D10TEX1DARRAYRTV}
+
+pub using @df334de14ae58043 {type D3D10TEX1DARRAYSRV_57db81ac1009 as D3D10TEX1DARRAYSRV}
+
+pub using @df334de14ae58043 {type D3D10TEX1DDSV_abf4bf9ec9a5 as D3D10TEX1DDSV}
+
+pub using @df334de14ae58043 {type D3D10TEX1DRTV_e667e32c96a4 as D3D10TEX1DRTV}
+
+pub using @df334de14ae58043 {type D3D10TEX1DSRV_2de9c07ddea0 as D3D10TEX1DSRV}
+
+pub using @df334de14ae58043 {type D3D10TEX2DARRAYDSV_37473e901efa as D3D10TEX2DARRAYDSV}
+
+pub using @df334de14ae58043 {type D3D10TEX2DARRAYRTV_f4926665741e as D3D10TEX2DARRAYRTV}
+
+pub using @df334de14ae58043 {type D3D10TEX2DARRAYSRV_06df6bbe9d05 as D3D10TEX2DARRAYSRV}
+
+pub using @df334de14ae58043 {type D3D10TEX2DDSV_a484c5e05982 as D3D10TEX2DDSV}
+
+pub using @df334de14ae58043 {type D3D10TEX2DMSARRAYDSV_473f341be0f1 as D3D10TEX2DMSARRAYDSV}
+
+pub using @df334de14ae58043 {type D3D10TEX2DMSARRAYRTV_4f3c6a970c98 as D3D10TEX2DMSARRAYRTV}
+
+pub using @df334de14ae58043 {type D3D10TEX2DMSARRAYSRV_fa19c981dc21 as D3D10TEX2DMSARRAYSRV}
+
+pub using @df334de14ae58043 {type D3D10TEX2DMSDSV_98075e4760b4 as D3D10TEX2DMSDSV}
+
+pub using @df334de14ae58043 {type D3D10TEX2DMSRTV_93d5f48ba3f7 as D3D10TEX2DMSRTV}
+
+pub using @df334de14ae58043 {type D3D10TEX2DMSSRV_f646ef3c1746 as D3D10TEX2DMSSRV}
+
+pub using @df334de14ae58043 {type D3D10TEX2DRTV_e50f49a6f1eb as D3D10TEX2DRTV}
+
+pub using @df334de14ae58043 {type D3D10TEX2DSRV_6f5fc4f0a162 as D3D10TEX2DSRV}
+
+pub using @df334de14ae58043 {type D3D10TEX3DRTV_d7875449e0cd as D3D10TEX3DRTV}
+
+pub using @df334de14ae58043 {type D3D10TEX3DSRV_01ddee83c475 as D3D10TEX3DSRV}
+
+pub using @df334de14ae58043 {type D3D10TEXCUBEARRAYSRV1_fd8f251a087b as D3D10TEXCUBEARRAYSRV1}
+
+pub using @df334de14ae58043 {type D3D10TEXCUBESRV_a85eb0eafbb4 as D3D10TEXCUBESRV}
+
+pub using @df334de14ae58043 {type D3D10TEXTURE1DDESC_8ca712a533a2 as D3D10TEXTURE1DDESC}
+
+pub using @df334de14ae58043 {type D3D10TEXTURE2DDESC_ae823a8dce7c as D3D10TEXTURE2DDESC}
+
+pub using @df334de14ae58043 {type D3D10TEXTURE3DDESC_9c4639d65959 as D3D10TEXTURE3DDESC}
+
+pub using @df334de14ae58043 {type D3D10TEXTUREADDRESSMODE_77d2fa0f24e6 as D3D10TEXTUREADDRESSMODE}
+
+pub using @df334de14ae58043 {type D3D10TEXTURECUBEFACE_3f0974138fac as D3D10TEXTURECUBEFACE}
+
+pub using @df334de14ae58043 {type D3D10USAGE_5ad66881f7b6 as D3D10USAGE}
+
+pub using @df334de14ae58043 {type D3D10VIEWPORT_ec30c7e91c67 as D3D10VIEWPORT}
+
+pub using @df334de14ae58043 {type ID3D10Asynchronous_7237d443a46c as ID3D10Asynchronous}
+
+pub using @df334de14ae58043 {type ID3D10BlendState_e5d3fc90b042 as ID3D10BlendState}
+
+pub using @df334de14ae58043 {type ID3D10BlendState1_21c036edd0f3 as ID3D10BlendState1}
+
+pub using @df334de14ae58043 {type ID3D10Buffer_0606585c95a9 as ID3D10Buffer}
+
+pub using @df334de14ae58043 {type ID3D10Counter_04880cea3309 as ID3D10Counter}
+
+pub using @df334de14ae58043 {type ID3D10Debug_c044feae158e as ID3D10Debug}
+
+pub using @df334de14ae58043 {type ID3D10DepthStencilState_a07a0a8f796e as ID3D10DepthStencilState}
+
+pub using @df334de14ae58043 {type ID3D10DepthStencilView_b6e7b67868ca as ID3D10DepthStencilView}
+
+pub using @df334de14ae58043 {type ID3D10Device_c872b5d91530 as ID3D10Device}
+
+pub using @df334de14ae58043 {type ID3D10Device1_57bf97e82b72 as ID3D10Device1}
+
+pub using @df334de14ae58043 {type ID3D10DeviceChild_ce0260100885 as ID3D10DeviceChild}
+
+pub using @df334de14ae58043 {type ID3D10Effect_3b5080397135 as ID3D10Effect}
+
+pub using @df334de14ae58043 {type ID3D10EffectBlendVariable_38df2a75f28a as ID3D10EffectBlendVariable}
+
+pub using @df334de14ae58043 {type ID3D10EffectConstantBuffer_900a11f6371d as ID3D10EffectConstantBuffer}
+
+pub using @df334de14ae58043 {type ID3D10EffectDepthStencilVariable_927ed4b485fa as ID3D10EffectDepthStencilVariable}
+
+pub using @df334de14ae58043 {type ID3D10EffectDepthStencilViewVariable_d8d2a4c96c89 as ID3D10EffectDepthStencilViewVariable}
+
+pub using @df334de14ae58043 {type ID3D10EffectMatrixVariable_73ed67a0ca02 as ID3D10EffectMatrixVariable}
+
+pub using @df334de14ae58043 {type ID3D10EffectPass_2f49129169d8 as ID3D10EffectPass}
+
+pub using @df334de14ae58043 {type ID3D10EffectPool_80b131c7ac09 as ID3D10EffectPool}
+
+pub using @df334de14ae58043 {type ID3D10EffectRasterizerVariable_c20ab12cb32c as ID3D10EffectRasterizerVariable}
+
+pub using @df334de14ae58043 {type ID3D10EffectRenderTargetViewVariable_fa996e4fd8da as ID3D10EffectRenderTargetViewVariable}
+
+pub using @df334de14ae58043 {type ID3D10EffectSamplerVariable_af2f101b7e77 as ID3D10EffectSamplerVariable}
+
+pub using @df334de14ae58043 {type ID3D10EffectScalarVariable_1c39720a3647 as ID3D10EffectScalarVariable}
+
+pub using @df334de14ae58043 {type ID3D10EffectShaderResourceVariable_26945d8db5c2 as ID3D10EffectShaderResourceVariable}
+
+pub using @df334de14ae58043 {type ID3D10EffectShaderVariable_b89d54f08d57 as ID3D10EffectShaderVariable}
+
+pub using @df334de14ae58043 {type ID3D10EffectStringVariable_1df878f3c05a as ID3D10EffectStringVariable}
+
+pub using @df334de14ae58043 {type ID3D10EffectTechnique_838f46345516 as ID3D10EffectTechnique}
+
+pub using @df334de14ae58043 {type ID3D10EffectType_184c19468adc as ID3D10EffectType}
+
+pub using @df334de14ae58043 {type ID3D10EffectVariable_9430b3f43b07 as ID3D10EffectVariable}
+
+pub using @df334de14ae58043 {type ID3D10EffectVectorVariable_82d05e2afaff as ID3D10EffectVectorVariable}
+
+pub using @df334de14ae58043 {type ID3D10GeometryShader_acbf2e89bc31 as ID3D10GeometryShader}
+
+pub using @df334de14ae58043 {type ID3D10InfoQueue_6c152b7f6e01 as ID3D10InfoQueue}
+
+pub using @df334de14ae58043 {type ID3D10InputLayout_8c53616fdfa5 as ID3D10InputLayout}
+
+pub using @df334de14ae58043 {type ID3D10Multithread_aead14c33c37 as ID3D10Multithread}
+
+pub using @df334de14ae58043 {type ID3D10PixelShader_dcc14e70892c as ID3D10PixelShader}
+
+pub using @df334de14ae58043 {type ID3D10Predicate_88d12edc2a2c as ID3D10Predicate}
+
+pub using @df334de14ae58043 {type ID3D10Query_33faa2f3115f as ID3D10Query}
+
+pub using @df334de14ae58043 {type ID3D10RasterizerState_1bd9f7a19fd6 as ID3D10RasterizerState}
+
+pub using @df334de14ae58043 {type ID3D10RenderTargetView_abe142df185a as ID3D10RenderTargetView}
+
+pub using @df334de14ae58043 {type ID3D10Resource_bf8a6142d951 as ID3D10Resource}
+
+pub using @df334de14ae58043 {type ID3D10SamplerState_e28dec93efe1 as ID3D10SamplerState}
+
+pub using @df334de14ae58043 {type ID3D10ShaderReflection_c6ebcd5417f3 as ID3D10ShaderReflection}
+
+pub using @df334de14ae58043 {type ID3D10ShaderReflection1_7edfcde9543b as ID3D10ShaderReflection1}
+
+pub using @df334de14ae58043 {type ID3D10ShaderReflectionConstantBuffer_aada1c4e30e0 as ID3D10ShaderReflectionConstantBuffer}
+
+pub using @df334de14ae58043 {type ID3D10ShaderReflectionType_34200227b785 as ID3D10ShaderReflectionType}
+
+pub using @df334de14ae58043 {type ID3D10ShaderReflectionVariable_a2ac361f3954 as ID3D10ShaderReflectionVariable}
+
+pub using @df334de14ae58043 {type ID3D10ShaderResourceView_c3fe21aabf6f as ID3D10ShaderResourceView}
+
+pub using @df334de14ae58043 {type ID3D10ShaderResourceView1_fa9ae4a29b16 as ID3D10ShaderResourceView1}
+
+pub using @df334de14ae58043 {type ID3D10StateBlock_a6035a921312 as ID3D10StateBlock}
+
+pub using @df334de14ae58043 {type ID3D10SwitchToRef_7a58d2c8d883 as ID3D10SwitchToRef}
+
+pub using @df334de14ae58043 {type ID3D10Texture1D_a9401383c0a9 as ID3D10Texture1D}
+
+pub using @df334de14ae58043 {type ID3D10Texture2D_25e71bbb0057 as ID3D10Texture2D}
+
+pub using @df334de14ae58043 {type ID3D10Texture3D_90ea68fcd982 as ID3D10Texture3D}
+
+pub using @df334de14ae58043 {type ID3D10VertexShader_01dfc1e5e911 as ID3D10VertexShader}
+
+pub using @df334de14ae58043 {type ID3D10View_b88606c4388c as ID3D10View}
+
+pub using @df334de14ae58043 {type PFND3D10CREATEDEVICE1_aaf2965268f7 as PFND3D10CREATEDEVICE1}
+
+pub using @df334de14ae58043 {type PFND3D10CREATEDEVICEANDSWAPCHAIN1_6fabc555cf53 as PFND3D10CREATEDEVICEANDSWAPCHAIN1}
+
+// Traits

@@ -1,0 +1,777 @@
+// Generated using `moon info`, DON'T EDIT IT
+package "moonbit-community/win32api/windows/win32/system/message_queuing"
+
+import {
+  "moonbit-community/win32api/runtime/core",
+  "moonbit-community/win32api/runtime/strings",
+  "moonbit-community/win32api/scc/14a21f62934f9491",
+  "moonbit-community/win32api/scc/58228b76ec7374fa",
+  "moonbit-community/win32api/scc/b785b16e0a6d57ad",
+  "moonbit-community/win32api/scc/cc6631776d7e2373",
+}
+
+// Values
+pub let long_lived : UInt
+
+pub let machine_action_connect : String
+
+pub let machine_action_disconnect : String
+
+pub let machine_action_tidy : String
+
+pub let mgmt_queue_correct_type : String
+
+pub let mgmt_queue_foreign_type : String
+
+pub let mgmt_queue_incorrect_type : String
+
+pub let mgmt_queue_local_location : String
+
+pub let mgmt_queue_not_foreign_type : String
+
+pub let mgmt_queue_not_transactional_type : String
+
+pub let mgmt_queue_remote_location : String
+
+pub let mgmt_queue_state_connected : String
+
+pub let mgmt_queue_state_disconnected : String
+
+pub let mgmt_queue_state_disconnecting : String
+
+pub let mgmt_queue_state_local : String
+
+pub let mgmt_queue_state_locked : String
+
+pub let mgmt_queue_state_need_validate : String
+
+pub let mgmt_queue_state_nonactive : String
+
+pub let mgmt_queue_state_onhold : String
+
+pub let mgmt_queue_state_waiting : String
+
+pub let mgmt_queue_transactional_type : String
+
+pub let mgmt_queue_type_connector : String
+
+pub let mgmt_queue_type_machine : String
+
+pub let mgmt_queue_type_multicast : String
+
+pub let mgmt_queue_type_private : String
+
+pub let mgmt_queue_type_public : String
+
+pub let mgmt_queue_unknown_type : String
+
+pub let mo_machine_token : String
+
+pub let mo_queue_token : String
+
+pub let mq_action_peek_current : UInt
+
+pub let mq_action_peek_next : UInt
+
+pub let mq_action_receive : UInt
+
+pub fn mq_begin_transaction(@core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn mq_begin_transaction_raw(@core.RawAddress) -> Int
+
+pub fn mq_close_cursor(@core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn mq_close_cursor_raw(@core.RawAddress) -> Int
+
+pub fn mq_close_queue(Int64) -> Int raise @core.WindowsError
+
+pub fn mq_close_queue_raw(Int64) -> Int
+
+pub fn mq_create_cursor(Int64, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn mq_create_cursor_raw(Int64, @core.RawAddress) -> Int
+
+pub fn mq_create_queue(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn mq_create_queue_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn mq_delete_queue(@strings.PWStr) -> Int raise @core.WindowsError
+
+pub fn mq_delete_queue_raw(@core.RawAddress) -> Int
+
+pub let mq_error_message_locked_under_transaction : Int
+
+pub let mq_error_message_not_authenticated : Int
+
+pub let mq_error_resolve_address : Int
+
+pub let mq_error_too_many_properties : Int
+
+pub fn mq_free_memory(@core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn mq_free_memory_raw(@core.RawAddress) -> Unit
+
+pub fn mq_free_security_context(@core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn mq_free_security_context_raw(@core.RawAddress) -> Unit
+
+pub fn mq_get_machine_properties(@strings.PWStr?, @core.RawAddress, @14a21f62934f9491.MQQMPROPS_1ace9b17bdda) -> Int raise @core.WindowsError
+
+pub fn mq_get_machine_properties_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn mq_get_overlapped_result(@b785b16e0a6d57ad.OVERLAPPED_ed44d4ed4c15) -> Int raise @core.WindowsError
+
+pub fn mq_get_overlapped_result_raw(@core.RawAddress) -> Int
+
+pub fn mq_get_private_computer_information(@strings.PWStr?, @14a21f62934f9491.MQPRIVATEPROPS_a6cb3aa6764c) -> Int raise @core.WindowsError
+
+pub fn mq_get_private_computer_information_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn mq_get_queue_properties(@strings.PWStr, @14a21f62934f9491.MQQUEUEPROPS_130511e5fd2f) -> Int raise @core.WindowsError
+
+pub fn mq_get_queue_properties_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn mq_get_queue_security(@strings.PWStr, UInt, @core.RawAddress, UInt, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn mq_get_queue_security_raw(@core.RawAddress, UInt, @core.RawAddress, UInt, @core.RawAddress) -> Int
+
+pub fn mq_get_security_context(@core.RawAddress, UInt, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn mq_get_security_context_ex(@core.RawAddress, UInt, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn mq_get_security_context_ex_raw(@core.RawAddress, UInt, @core.RawAddress) -> Int
+
+pub fn mq_get_security_context_raw(@core.RawAddress, UInt, @core.RawAddress) -> Int
+
+pub fn mq_handle_to_format_name(Int64, @core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn mq_handle_to_format_name_raw(Int64, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn mq_instance_to_format_name(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn mq_instance_to_format_name_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn mq_locate_begin(@strings.PWStr?, @14a21f62934f9491.MQRESTRICTION_3b8b80d32c83?, @14a21f62934f9491.MQCOLUMNSET_382542d374de, @14a21f62934f9491.MQSORTSET_43a3c887bf1a, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn mq_locate_begin_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn mq_locate_end(@core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn mq_locate_end_raw(@core.RawAddress) -> Int
+
+pub fn mq_locate_next(@core.RawAddress, @core.RawAddress, @58228b76ec7374fa.PROPVARIANTAnonymousEUnion_c0143a362bd5) -> Int raise @core.WindowsError
+
+pub fn mq_locate_next_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub let mq_lookup_peek_current : UInt
+
+pub let mq_lookup_peek_first : UInt
+
+pub let mq_lookup_peek_last : UInt
+
+pub let mq_lookup_peek_next : UInt
+
+pub let mq_lookup_peek_prev : UInt
+
+pub let mq_lookup_receive_allow_peek : UInt
+
+pub let mq_lookup_receive_current : UInt
+
+pub let mq_lookup_receive_first : UInt
+
+pub let mq_lookup_receive_last : UInt
+
+pub let mq_lookup_receive_next : UInt
+
+pub let mq_lookup_receive_prev : UInt
+
+pub fn mq_mark_message_rejected(@core.RawAddress, UInt64) -> Int raise @core.WindowsError
+
+pub fn mq_mark_message_rejected_raw(@core.RawAddress, UInt64) -> Int
+
+pub fn mq_mgmt_action(@strings.PWStr?, @strings.PWStr, @strings.PWStr) -> Int raise @core.WindowsError
+
+pub fn mq_mgmt_action_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn mq_mgmt_get_info(@strings.PWStr?, @strings.PWStr, @14a21f62934f9491.MQMGMTPROPS_4821d8c27f84) -> Int raise @core.WindowsError
+
+pub fn mq_mgmt_get_info_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub let mq_move_access : UInt
+
+pub fn mq_move_message(Int64, Int64, UInt64, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn mq_move_message_raw(Int64, Int64, UInt64, @core.RawAddress) -> Int
+
+pub let mq_ok : Int
+
+pub fn mq_open_queue(@strings.PWStr, UInt, UInt, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn mq_open_queue_raw(@core.RawAddress, UInt, UInt, @core.RawAddress) -> Int
+
+pub fn mq_path_name_to_format_name(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn mq_path_name_to_format_name_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn mq_purge_queue(Int64) -> Int raise @core.WindowsError
+
+pub fn mq_purge_queue_raw(Int64) -> Int
+
+pub fn mq_receive_message(Int64, UInt, UInt, @14a21f62934f9491.MQMSGPROPS_af516cf8b55b?, @b785b16e0a6d57ad.OVERLAPPED_ed44d4ed4c15?, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn mq_receive_message_by_lookup_id(Int64, UInt64, UInt, @14a21f62934f9491.MQMSGPROPS_af516cf8b55b?, @b785b16e0a6d57ad.OVERLAPPED_ed44d4ed4c15?, @core.RawAddress, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn mq_receive_message_by_lookup_id_raw(Int64, UInt64, UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn mq_receive_message_raw(Int64, UInt, UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn mq_register_certificate(UInt, @core.RawAddress, UInt) -> Int raise @core.WindowsError
+
+pub fn mq_register_certificate_raw(UInt, @core.RawAddress, UInt) -> Int
+
+pub fn mq_send_message(Int64, @14a21f62934f9491.MQMSGPROPS_af516cf8b55b, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn mq_send_message_raw(Int64, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn mq_set_queue_properties(@strings.PWStr, @14a21f62934f9491.MQQUEUEPROPS_130511e5fd2f) -> Int raise @core.WindowsError
+
+pub fn mq_set_queue_properties_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn mq_set_queue_security(@strings.PWStr, @cc6631776d7e2373.OBJECTSECURITYINFORMATION_7732df83bef3, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn mq_set_queue_security_raw(@core.RawAddress, UInt, @core.RawAddress) -> Int
+
+pub fn mqa_ds_path_to_format_name(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn mqa_ds_path_to_format_name_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub let mqmsg_authenticated_qm_message : UInt
+
+pub let mqmsg_first_in_xact : UInt
+
+pub let mqmsg_last_in_xact : UInt
+
+pub let mqmsg_not_first_in_xact : UInt
+
+pub let mqmsg_not_last_in_xact : UInt
+
+pub let mqmsg_priv_level_body_aes : UInt
+
+pub let msmq_connected : String
+
+pub let msmq_disconnected : String
+
+pub let preq : UInt
+
+pub let prge : UInt
+
+pub let prgt : UInt
+
+pub let prle : UInt
+
+pub let prlt : UInt
+
+pub let prne : UInt
+
+pub let propid_m_abort_count : UInt
+
+pub let propid_m_acknowledge : UInt
+
+pub let propid_m_admin_queue : UInt
+
+pub let propid_m_admin_queue_len : UInt
+
+pub let propid_m_appspecific : UInt
+
+pub let propid_m_arrivedtime : UInt
+
+pub let propid_m_auth_level : UInt
+
+pub let propid_m_authenticated : UInt
+
+pub let propid_m_authenticated_ex : UInt
+
+pub let propid_m_base : UInt
+
+pub let propid_m_body : UInt
+
+pub let propid_m_body_size : UInt
+
+pub let propid_m_body_type : UInt
+
+pub let propid_m_class : UInt
+
+pub let propid_m_compound_message : UInt
+
+pub let propid_m_compound_message_size : UInt
+
+pub let propid_m_connector_type : UInt
+
+pub let propid_m_correlationid : UInt
+
+pub let propid_m_correlationid_size : UInt
+
+pub let propid_m_deadletter_queue : UInt
+
+pub let propid_m_deadletter_queue_len : UInt
+
+pub let propid_m_delivery : UInt
+
+pub let propid_m_dest_format_name : UInt
+
+pub let propid_m_dest_format_name_len : UInt
+
+pub let propid_m_dest_queue : UInt
+
+pub let propid_m_dest_queue_len : UInt
+
+pub let propid_m_dest_symm_key : UInt
+
+pub let propid_m_dest_symm_key_len : UInt
+
+pub let propid_m_encryption_alg : UInt
+
+pub let propid_m_extension : UInt
+
+pub let propid_m_extension_len : UInt
+
+pub let propid_m_first_in_xact : UInt
+
+pub let propid_m_hash_alg : UInt
+
+pub let propid_m_journal : UInt
+
+pub let propid_m_label : UInt
+
+pub let propid_m_label_len : UInt
+
+pub let propid_m_last_in_xact : UInt
+
+pub let propid_m_last_move_time : UInt
+
+pub let propid_m_lookupid : UInt
+
+pub let propid_m_move_count : UInt
+
+pub let propid_m_msgid : UInt
+
+pub let propid_m_msgid_size : UInt
+
+pub let propid_m_priority : UInt
+
+pub let propid_m_priv_level : UInt
+
+pub let propid_m_prov_name : UInt
+
+pub let propid_m_prov_name_len : UInt
+
+pub let propid_m_prov_type : UInt
+
+pub let propid_m_resp_format_name : UInt
+
+pub let propid_m_resp_format_name_len : UInt
+
+pub let propid_m_resp_queue : UInt
+
+pub let propid_m_resp_queue_len : UInt
+
+pub let propid_m_security_context : UInt
+
+pub let propid_m_sender_cert : UInt
+
+pub let propid_m_sender_cert_len : UInt
+
+pub let propid_m_senderid : UInt
+
+pub let propid_m_senderid_len : UInt
+
+pub let propid_m_senderid_type : UInt
+
+pub let propid_m_senttime : UInt
+
+pub let propid_m_signature : UInt
+
+pub let propid_m_signature_len : UInt
+
+pub let propid_m_soap_body : UInt
+
+pub let propid_m_soap_envelope : UInt
+
+pub let propid_m_soap_envelope_len : UInt
+
+pub let propid_m_soap_header : UInt
+
+pub let propid_m_src_machine_id : UInt
+
+pub let propid_m_time_to_be_received : UInt
+
+pub let propid_m_time_to_reach_queue : UInt
+
+pub let propid_m_trace : UInt
+
+pub let propid_m_version : UInt
+
+pub let propid_m_xact_status_queue : UInt
+
+pub let propid_m_xact_status_queue_len : UInt
+
+pub let propid_m_xactid : UInt
+
+pub let propid_m_xactid_size : UInt
+
+pub let propid_mgmt_msmq_activequeues : UInt
+
+pub let propid_mgmt_msmq_base : UInt
+
+pub let propid_mgmt_msmq_bytes_in_all_queues : UInt
+
+pub let propid_mgmt_msmq_connected : UInt
+
+pub let propid_mgmt_msmq_dsserver : UInt
+
+pub let propid_mgmt_msmq_privateq : UInt
+
+pub let propid_mgmt_msmq_type : UInt
+
+pub let propid_mgmt_queue_base : UInt
+
+pub let propid_mgmt_queue_bytes_in_journal : UInt
+
+pub let propid_mgmt_queue_bytes_in_queue : UInt
+
+pub let propid_mgmt_queue_connection_history : UInt
+
+pub let propid_mgmt_queue_eod_first_non_ack : UInt
+
+pub let propid_mgmt_queue_eod_last_ack : UInt
+
+pub let propid_mgmt_queue_eod_last_ack_count : UInt
+
+pub let propid_mgmt_queue_eod_last_ack_time : UInt
+
+pub let propid_mgmt_queue_eod_last_non_ack : UInt
+
+pub let propid_mgmt_queue_eod_next_seq : UInt
+
+pub let propid_mgmt_queue_eod_no_ack_count : UInt
+
+pub let propid_mgmt_queue_eod_no_read_count : UInt
+
+pub let propid_mgmt_queue_eod_resend_count : UInt
+
+pub let propid_mgmt_queue_eod_resend_interval : UInt
+
+pub let propid_mgmt_queue_eod_resend_time : UInt
+
+pub let propid_mgmt_queue_eod_source_info : UInt
+
+pub let propid_mgmt_queue_foreign : UInt
+
+pub let propid_mgmt_queue_formatname : UInt
+
+pub let propid_mgmt_queue_journal_message_count : UInt
+
+pub let propid_mgmt_queue_journal_used_quota : UInt
+
+pub let propid_mgmt_queue_location : UInt
+
+pub let propid_mgmt_queue_message_count : UInt
+
+pub let propid_mgmt_queue_nexthops : UInt
+
+pub let propid_mgmt_queue_pathname : UInt
+
+pub let propid_mgmt_queue_state : UInt
+
+pub let propid_mgmt_queue_subqueue_count : UInt
+
+pub let propid_mgmt_queue_subqueue_names : UInt
+
+pub let propid_mgmt_queue_type : UInt
+
+pub let propid_mgmt_queue_used_quota : UInt
+
+pub let propid_mgmt_queue_xact : UInt
+
+pub let propid_pc_base : UInt
+
+pub let propid_pc_ds_enabled : UInt
+
+pub let propid_pc_version : UInt
+
+pub let propid_q_ads_path : UInt
+
+pub let propid_q_authenticate : UInt
+
+pub let propid_q_base : UInt
+
+pub let propid_q_basepriority : UInt
+
+pub let propid_q_create_time : UInt
+
+pub let propid_q_instance : UInt
+
+pub let propid_q_journal : UInt
+
+pub let propid_q_journal_quota : UInt
+
+pub let propid_q_label : UInt
+
+pub let propid_q_modify_time : UInt
+
+pub let propid_q_multicast_address : UInt
+
+pub let propid_q_pathname : UInt
+
+pub let propid_q_pathname_dns : UInt
+
+pub let propid_q_priv_level : UInt
+
+pub let propid_q_quota : UInt
+
+pub let propid_q_transaction : UInt
+
+pub let propid_q_type : UInt
+
+pub let propid_qm_base : UInt
+
+pub let propid_qm_connection : UInt
+
+pub let propid_qm_encryption_pk : UInt
+
+pub let propid_qm_encryption_pk_aes : UInt
+
+pub let propid_qm_encryption_pk_base : UInt
+
+pub let propid_qm_encryption_pk_enhanced : UInt
+
+pub let propid_qm_machine_id : UInt
+
+pub let propid_qm_pathname : UInt
+
+pub let propid_qm_pathname_dns : UInt
+
+pub let propid_qm_site_id : UInt
+
+pub let query_sortascend : UInt
+
+pub let query_sortdescend : UInt
+
+pub let queue_action_eod_resend : String
+
+pub let queue_action_pause : String
+
+pub let queue_action_resume : String
+
+// Errors
+
+// Types and methods
+
+// Type aliases
+pub using @14a21f62934f9491 {type DMSMQEventEvents_6c35f83891cc as DMSMQEventEvents}
+
+pub using @14a21f62934f9491 {type FOREIGNSTATUS_ebc82863791b as FOREIGNSTATUS}
+
+pub using @14a21f62934f9491 {type IMSMQApplication_07b6d9508bcf as IMSMQApplication}
+
+pub using @14a21f62934f9491 {type IMSMQApplication2_4889a58dd5a4 as IMSMQApplication2}
+
+pub using @14a21f62934f9491 {type IMSMQApplication3_c803f1a91f1a as IMSMQApplication3}
+
+pub using @14a21f62934f9491 {type IMSMQCollection_9be54e83c21c as IMSMQCollection}
+
+pub using @14a21f62934f9491 {type IMSMQCoordinatedTransactionDispenser_092cf988b294 as IMSMQCoordinatedTransactionDispenser}
+
+pub using @14a21f62934f9491 {type IMSMQCoordinatedTransactionDispenser2_aea7d5519eb4 as IMSMQCoordinatedTransactionDispenser2}
+
+pub using @14a21f62934f9491 {type IMSMQCoordinatedTransactionDispenser3_c5289c63e736 as IMSMQCoordinatedTransactionDispenser3}
+
+pub using @14a21f62934f9491 {type IMSMQDestination_3b1aea8b8fe7 as IMSMQDestination}
+
+pub using @14a21f62934f9491 {type IMSMQEvent_f15a2c4c0881 as IMSMQEvent}
+
+pub using @14a21f62934f9491 {type IMSMQEvent2_671f390e308e as IMSMQEvent2}
+
+pub using @14a21f62934f9491 {type IMSMQEvent3_f06b3c3947e8 as IMSMQEvent3}
+
+pub using @14a21f62934f9491 {type IMSMQManagement_f3c8b00c1716 as IMSMQManagement}
+
+pub using @14a21f62934f9491 {type IMSMQMessage_8b7fa69f5f79 as IMSMQMessage}
+
+pub using @14a21f62934f9491 {type IMSMQMessage2_5bbd5a2f1cef as IMSMQMessage2}
+
+pub using @14a21f62934f9491 {type IMSMQMessage3_fcc9738d8c0e as IMSMQMessage3}
+
+pub using @14a21f62934f9491 {type IMSMQMessage4_ac33a348eaa6 as IMSMQMessage4}
+
+pub using @14a21f62934f9491 {type IMSMQOutgoingQueueManagement_e91562a44542 as IMSMQOutgoingQueueManagement}
+
+pub using @14a21f62934f9491 {type IMSMQPrivateDestination_e0d7212de8ed as IMSMQPrivateDestination}
+
+pub using @14a21f62934f9491 {type IMSMQPrivateEvent_6109f1303413 as IMSMQPrivateEvent}
+
+pub using @14a21f62934f9491 {type IMSMQQuery_fd3d3d7d38af as IMSMQQuery}
+
+pub using @14a21f62934f9491 {type IMSMQQuery2_95f4bb646140 as IMSMQQuery2}
+
+pub using @14a21f62934f9491 {type IMSMQQuery3_42be92a833a1 as IMSMQQuery3}
+
+pub using @14a21f62934f9491 {type IMSMQQuery4_6052f9e025f5 as IMSMQQuery4}
+
+pub using @14a21f62934f9491 {type IMSMQQueue_37e3c94238a8 as IMSMQQueue}
+
+pub using @14a21f62934f9491 {type IMSMQQueue2_8faaa1f74df8 as IMSMQQueue2}
+
+pub using @14a21f62934f9491 {type IMSMQQueue3_1ca351f44331 as IMSMQQueue3}
+
+pub using @14a21f62934f9491 {type IMSMQQueue4_f05255200351 as IMSMQQueue4}
+
+pub using @14a21f62934f9491 {type IMSMQQueueInfo_08a571d5e214 as IMSMQQueueInfo}
+
+pub using @14a21f62934f9491 {type IMSMQQueueInfo2_ed4ee051a5b8 as IMSMQQueueInfo2}
+
+pub using @14a21f62934f9491 {type IMSMQQueueInfo3_91b5d8b2e583 as IMSMQQueueInfo3}
+
+pub using @14a21f62934f9491 {type IMSMQQueueInfo4_88415a6f6974 as IMSMQQueueInfo4}
+
+pub using @14a21f62934f9491 {type IMSMQQueueInfos_e6444b4f826a as IMSMQQueueInfos}
+
+pub using @14a21f62934f9491 {type IMSMQQueueInfos2_a9342cc48a33 as IMSMQQueueInfos2}
+
+pub using @14a21f62934f9491 {type IMSMQQueueInfos3_2c0ffcb138cb as IMSMQQueueInfos3}
+
+pub using @14a21f62934f9491 {type IMSMQQueueInfos4_17a0960e8e93 as IMSMQQueueInfos4}
+
+pub using @14a21f62934f9491 {type IMSMQQueueManagement_ffb636130b7d as IMSMQQueueManagement}
+
+pub using @14a21f62934f9491 {type IMSMQTransaction_287dd0332628 as IMSMQTransaction}
+
+pub using @14a21f62934f9491 {type IMSMQTransaction2_0f5d50c3dadf as IMSMQTransaction2}
+
+pub using @14a21f62934f9491 {type IMSMQTransaction3_f15b2a791348 as IMSMQTransaction3}
+
+pub using @14a21f62934f9491 {type IMSMQTransactionDispenser_3a12cc21e2e1 as IMSMQTransactionDispenser}
+
+pub using @14a21f62934f9491 {type IMSMQTransactionDispenser2_24cd71cd7dca as IMSMQTransactionDispenser2}
+
+pub using @14a21f62934f9491 {type IMSMQTransactionDispenser3_8419a50b5321 as IMSMQTransactionDispenser3}
+
+pub using @14a21f62934f9491 {type MQACCESS_9a2abccdd8ce as MQACCESS}
+
+pub using @14a21f62934f9491 {type MQAUTHENTICATE_64cb6ce5ab5b as MQAUTHENTICATE}
+
+pub using @14a21f62934f9491 {type MQCALG_4a07b3c9feb0 as MQCALG}
+
+pub using @14a21f62934f9491 {type MQCERTREGISTER_5be87061be09 as MQCERTREGISTER}
+
+pub using @14a21f62934f9491 {type MQCOLUMNSET_382542d374de as MQCOLUMNSET}
+
+pub using @14a21f62934f9491 {type MQConnectionState_535235d7a12a as MQConnectionState}
+
+pub using @14a21f62934f9491 {type MQDEFAULT_04dde66748f7 as MQDEFAULT}
+
+pub using @14a21f62934f9491 {type MQERROR_9660c096aaf4 as MQERROR}
+
+pub using @14a21f62934f9491 {type MQJOURNAL_fc5b3aa9c5d8 as MQJOURNAL}
+
+pub using @14a21f62934f9491 {type MQMAX_70ed7f0fe9bf as MQMAX}
+
+pub using @14a21f62934f9491 {type MQMGMTPROPS_4821d8c27f84 as MQMGMTPROPS}
+
+pub using @14a21f62934f9491 {type MQMSGACKNOWLEDGEMENT_b71aa13070f2 as MQMSGACKNOWLEDGEMENT}
+
+pub using @14a21f62934f9491 {type MQMSGAUTHENTICATION_caff771aff33 as MQMSGAUTHENTICATION}
+
+pub using @14a21f62934f9491 {type MQMSGAUTHLEVEL_7436a82d31f0 as MQMSGAUTHLEVEL}
+
+pub using @14a21f62934f9491 {type MQMSGCLASS_d81fe2097e10 as MQMSGCLASS}
+
+pub using @14a21f62934f9491 {type MQMSGCURSOR_b1035f7becf7 as MQMSGCURSOR}
+
+pub using @14a21f62934f9491 {type MQMSGDELIVERY_9ad2b07bafee as MQMSGDELIVERY}
+
+pub using @14a21f62934f9491 {type MQMSGIDSIZE_9d50dce70a08 as MQMSGIDSIZE}
+
+pub using @14a21f62934f9491 {type MQMSGJOURNAL_aab0cc79e056 as MQMSGJOURNAL}
+
+pub using @14a21f62934f9491 {type MQMSGMAX_55ae319a79a9 as MQMSGMAX}
+
+pub using @14a21f62934f9491 {type MQMSGPRIVLEVEL_7d03b8143c56 as MQMSGPRIVLEVEL}
+
+pub using @14a21f62934f9491 {type MQMSGPROPS_af516cf8b55b as MQMSGPROPS}
+
+pub using @14a21f62934f9491 {type MQMSGSENDERIDTYPE_50cacb8d3f19 as MQMSGSENDERIDTYPE}
+
+pub using @14a21f62934f9491 {type MQMSGTRACE_360540a0367c as MQMSGTRACE}
+
+pub using @14a21f62934f9491 {type MQPRIORITY_c6a074cde380 as MQPRIORITY}
+
+pub using @14a21f62934f9491 {type MQPRIVATEPROPS_a6cb3aa6764c as MQPRIVATEPROPS}
+
+pub using @14a21f62934f9491 {type MQPRIVLEVEL_fe4371c31248 as MQPRIVLEVEL}
+
+pub using @14a21f62934f9491 {type MQPROPERTYRESTRICTION_7ef55fa616b1 as MQPROPERTYRESTRICTION}
+
+pub using @14a21f62934f9491 {type MQQMPROPS_1ace9b17bdda as MQQMPROPS}
+
+pub using @14a21f62934f9491 {type MQQUEUEACCESSMASK_8ef2c7a4383f as MQQUEUEACCESSMASK}
+
+pub using @14a21f62934f9491 {type MQQUEUEPROPS_130511e5fd2f as MQQUEUEPROPS}
+
+pub using @14a21f62934f9491 {type MQRESTRICTION_3b8b80d32c83 as MQRESTRICTION}
+
+pub using @14a21f62934f9491 {type MQSHARE_f5d679509b7b as MQSHARE}
+
+pub using @14a21f62934f9491 {type MQSORTKEY_d921a2b4bb33 as MQSORTKEY}
+
+pub using @14a21f62934f9491 {type MQSORTSET_43a3c887bf1a as MQSORTSET}
+
+pub using @14a21f62934f9491 {type MQTRANSACTION_c472455eb365 as MQTRANSACTION}
+
+pub using @14a21f62934f9491 {type MQTRANSACTIONAL_be6922eb222f as MQTRANSACTIONAL}
+
+pub using @14a21f62934f9491 {type MQWARNING_7c6ceff28ebc as MQWARNING}
+
+pub using @14a21f62934f9491 {type MSMQApplication_3d14689166f5 as MSMQApplication}
+
+pub using @14a21f62934f9491 {type MSMQCollection_13c76ae74bcb as MSMQCollection}
+
+pub using @14a21f62934f9491 {type MSMQCoordinatedTransactionDispenser_11cf8a6c362c as MSMQCoordinatedTransactionDispenser}
+
+pub using @14a21f62934f9491 {type MSMQDestination_c53511bbd83c as MSMQDestination}
+
+pub using @14a21f62934f9491 {type MSMQEvent_ffe3b4b1c404 as MSMQEvent}
+
+pub using @14a21f62934f9491 {type MSMQManagement_788d827849a8 as MSMQManagement}
+
+pub using @14a21f62934f9491 {type MSMQMessage_e3447a104115 as MSMQMessage}
+
+pub using @14a21f62934f9491 {type MSMQOutgoingQueueManagement_65ac57e63458 as MSMQOutgoingQueueManagement}
+
+pub using @14a21f62934f9491 {type MSMQQuery_b0235654b8fb as MSMQQuery}
+
+pub using @14a21f62934f9491 {type MSMQQueue_1d112fc3830e as MSMQQueue}
+
+pub using @14a21f62934f9491 {type MSMQQueueInfo_631f7a78fe1b as MSMQQueueInfo}
+
+pub using @14a21f62934f9491 {type MSMQQueueInfos_3bff8e9a1fb9 as MSMQQueueInfos}
+
+pub using @14a21f62934f9491 {type MSMQQueueManagement_f39420cb244f as MSMQQueueManagement}
+
+pub using @14a21f62934f9491 {type MSMQTransaction_22f57c61b12c as MSMQTransaction}
+
+pub using @14a21f62934f9491 {type MSMQTransactionDispenser_6bf885d3d23d as MSMQTransactionDispenser}
+
+pub using @14a21f62934f9491 {type PMQRECEIVECALLBACK_876eb74563de as PMQRECEIVECALLBACK}
+
+pub using @14a21f62934f9491 {type QUEUESTATE_328de13774cf as QUEUESTATE}
+
+pub using @14a21f62934f9491 {type QUEUETYPE_e80324f23189 as QUEUETYPE}
+
+pub using @14a21f62934f9491 {type RELOPS_3bac4cbd90ec as RELOPS}
+
+pub using @14a21f62934f9491 {type SEQUENCEINFO_93b276d4b05d as SEQUENCEINFO}
+
+pub using @14a21f62934f9491 {type XACTSTATUS_e6e0d14d3d43 as XACTSTATUS}
+
+// Traits

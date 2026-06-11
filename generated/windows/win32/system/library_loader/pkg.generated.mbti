@@ -1,0 +1,264 @@
+// Generated using `moon info`, DON'T EDIT IT
+package "moonbit-community/win32api/windows/win32/system/library_loader"
+
+import {
+  "moonbit-community/win32api/runtime/core",
+  "moonbit-community/win32api/runtime/strings",
+  "moonbit-community/win32api/scc/e45e735ad45ca0ce",
+}
+
+// Values
+pub fn add_dll_directory(@strings.PWStr) -> @core.RawAddress raise @core.WindowsError
+
+pub fn add_dll_directory_raw(@core.RawAddress) -> @core.RawWin32Call[@core.RawAddress]
+
+pub fn begin_update_resource_a(@strings.PStr, Int) -> @core.RawAddress raise @core.WindowsError
+
+pub fn begin_update_resource_a_raw(@core.RawAddress, Int) -> @core.RawWin32Call[@core.RawAddress]
+
+pub fn begin_update_resource_w(@strings.PWStr, Int) -> @core.RawAddress raise @core.WindowsError
+
+pub fn begin_update_resource_w_raw(@core.RawAddress, Int) -> @core.RawWin32Call[@core.RawAddress]
+
+pub let current_import_redirection_version : UInt
+
+pub fn disable_thread_library_calls(@core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn disable_thread_library_calls_raw(@core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn end_update_resource_a(@core.RawAddress, Int) -> Bool raise @core.WindowsError
+
+pub fn end_update_resource_a_raw(@core.RawAddress, Int) -> @core.RawWin32Call[Int]
+
+pub fn end_update_resource_w(@core.RawAddress, Int) -> Bool raise @core.WindowsError
+
+pub fn end_update_resource_w_raw(@core.RawAddress, Int) -> @core.RawWin32Call[Int]
+
+pub fn enum_resource_languages_a(@core.RawAddress, @strings.PStr, @strings.PStr, @core.RawAddress, Int64) -> Bool raise @core.WindowsError
+
+pub fn enum_resource_languages_a_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, Int64) -> @core.RawWin32Call[Int]
+
+pub fn enum_resource_languages_ex_a(@core.RawAddress, @strings.PStr, @strings.PStr, @core.RawAddress, Int64, UInt, UInt16) -> Bool raise @core.WindowsError
+
+pub fn enum_resource_languages_ex_a_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, Int64, UInt, UInt) -> @core.RawWin32Call[Int]
+
+pub fn enum_resource_languages_ex_w(@core.RawAddress, @strings.PWStr, @strings.PWStr, @core.RawAddress, Int64, UInt, UInt16) -> Bool raise @core.WindowsError
+
+pub fn enum_resource_languages_ex_w_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, Int64, UInt, UInt) -> @core.RawWin32Call[Int]
+
+pub fn enum_resource_languages_w(@core.RawAddress, @strings.PWStr, @strings.PWStr, @core.RawAddress, Int64) -> Bool raise @core.WindowsError
+
+pub fn enum_resource_languages_w_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, Int64) -> @core.RawWin32Call[Int]
+
+pub fn enum_resource_names_a(@core.RawAddress, @strings.PStr, @core.RawAddress, Int64) -> Bool raise @core.WindowsError
+
+pub fn enum_resource_names_a_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, Int64) -> @core.RawWin32Call[Int]
+
+pub fn enum_resource_names_ex_a(@core.RawAddress, @strings.PStr, @core.RawAddress, Int64, UInt, UInt16) -> Bool raise @core.WindowsError
+
+pub fn enum_resource_names_ex_a_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, Int64, UInt, UInt) -> @core.RawWin32Call[Int]
+
+pub fn enum_resource_names_ex_w(@core.RawAddress, @strings.PWStr, @core.RawAddress, Int64, UInt, UInt16) -> Bool raise @core.WindowsError
+
+pub fn enum_resource_names_ex_w_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, Int64, UInt, UInt) -> @core.RawWin32Call[Int]
+
+pub fn enum_resource_names_w(@core.RawAddress, @strings.PWStr, @core.RawAddress, Int64) -> Bool raise @core.WindowsError
+
+pub fn enum_resource_names_w_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, Int64) -> Int
+
+pub fn enum_resource_types_a(@core.RawAddress, @core.RawAddress, Int64) -> Bool raise @core.WindowsError
+
+pub fn enum_resource_types_a_raw(@core.RawAddress, @core.RawAddress, Int64) -> @core.RawWin32Call[Int]
+
+pub fn enum_resource_types_ex_a(@core.RawAddress, @core.RawAddress, Int64, UInt, UInt16) -> Bool raise @core.WindowsError
+
+pub fn enum_resource_types_ex_a_raw(@core.RawAddress, @core.RawAddress, Int64, UInt, UInt) -> @core.RawWin32Call[Int]
+
+pub fn enum_resource_types_ex_w(@core.RawAddress, @core.RawAddress, Int64, UInt, UInt16) -> Bool raise @core.WindowsError
+
+pub fn enum_resource_types_ex_w_raw(@core.RawAddress, @core.RawAddress, Int64, UInt, UInt) -> @core.RawWin32Call[Int]
+
+pub fn enum_resource_types_w(@core.RawAddress, @core.RawAddress, Int64) -> Bool raise @core.WindowsError
+
+pub fn enum_resource_types_w_raw(@core.RawAddress, @core.RawAddress, Int64) -> @core.RawWin32Call[Int]
+
+pub fn find_resource_a(@core.RawAddress, @strings.PStr, @strings.PStr) -> @core.RawAddress raise @core.WindowsError
+
+pub fn find_resource_a_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[@core.RawAddress]
+
+pub let find_resource_directory_languages : UInt
+
+pub let find_resource_directory_names : UInt
+
+pub let find_resource_directory_types : UInt
+
+pub fn find_resource_ex_a(@core.RawAddress, @strings.PStr, @strings.PStr, UInt16) -> @core.RawAddress raise @core.WindowsError
+
+pub fn find_resource_ex_a_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, UInt) -> @core.RawWin32Call[@core.RawAddress]
+
+pub fn find_resource_ex_w(@core.RawAddress, @strings.PWStr, @strings.PWStr, UInt16) -> @core.RawAddress raise @core.WindowsError
+
+pub fn find_resource_ex_w_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, UInt) -> @core.RawAddress
+
+pub fn find_resource_w(@core.RawAddress, @strings.PWStr, @strings.PWStr) -> @core.RawAddress raise @core.WindowsError
+
+pub fn find_resource_w_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> @core.RawAddress
+
+pub fn free_library_and_exit_thread(@core.RawAddress, UInt) -> Unit raise @core.WindowsError
+
+pub fn free_library_and_exit_thread_raw(@core.RawAddress, UInt) -> Unit
+
+pub fn free_resource(@core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn free_resource_raw(@core.RawAddress) -> Int
+
+pub fn get_dll_directory_a(UInt, @core.RawAddress) -> UInt raise @core.WindowsError
+
+pub fn get_dll_directory_a_raw(UInt, @core.RawAddress) -> @core.RawWin32Call[UInt]
+
+pub fn get_dll_directory_w(@strings.PWStrBuffer?) -> UInt raise @core.WindowsError
+
+pub fn get_dll_directory_w_raw(UInt, @core.RawAddress) -> @core.RawWin32Call[UInt]
+
+pub fn get_module_file_name_a(@core.RawAddress, @core.RawAddress, UInt) -> UInt raise @core.WindowsError
+
+pub fn get_module_file_name_a_raw(@core.RawAddress, @core.RawAddress, UInt) -> @core.RawWin32Call[UInt]
+
+pub fn get_module_file_name_w(@core.RawAddress, @strings.PWStrBuffer) -> UInt raise @core.WindowsError
+
+pub fn get_module_file_name_w_raw(@core.RawAddress, @core.RawAddress, UInt) -> @core.RawWin32Call[UInt]
+
+pub fn get_module_handle_a(@strings.PStr?) -> @core.RawAddress raise @core.WindowsError
+
+pub fn get_module_handle_a_raw(@core.RawAddress) -> @core.RawWin32Call[@core.RawAddress]
+
+pub fn get_module_handle_ex_a(UInt, @strings.PStr?, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn get_module_handle_ex_a_raw(UInt, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub let get_module_handle_ex_flag_from_address : UInt
+
+pub let get_module_handle_ex_flag_pin : UInt
+
+pub let get_module_handle_ex_flag_unchanged_refcount : UInt
+
+pub fn get_module_handle_ex_w(UInt, @strings.PWStr?, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn get_module_handle_ex_w_raw(UInt, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn get_module_handle_w(@strings.PWStr?) -> @core.RawAddress raise @core.WindowsError
+
+pub fn get_module_handle_w_raw(@core.RawAddress) -> @core.RawWin32Call[@core.RawAddress]
+
+pub fn get_proc_address(@core.RawAddress, @strings.PStr) -> @core.RawAddress raise @core.WindowsError
+
+pub fn get_proc_address_raw(@core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[@core.RawAddress]
+
+pub fn load_library_a(@strings.PStr) -> @core.RawAddress raise @core.WindowsError
+
+pub fn load_library_a_raw(@core.RawAddress) -> @core.RawWin32Call[@core.RawAddress]
+
+pub fn load_library_ex_a(@strings.PStr, @core.RawAddress, @e45e735ad45ca0ce.LOADLIBRARYFLAGS_f0ffc72db60b) -> @core.RawAddress raise @core.WindowsError
+
+pub fn load_library_ex_a_raw(@core.RawAddress, @core.RawAddress, UInt) -> @core.RawWin32Call[@core.RawAddress]
+
+pub fn load_library_ex_w(@strings.PWStr, @core.RawAddress, @e45e735ad45ca0ce.LOADLIBRARYFLAGS_f0ffc72db60b) -> @core.RawAddress raise @core.WindowsError
+
+pub fn load_library_ex_w_raw(@core.RawAddress, @core.RawAddress, UInt) -> @core.RawWin32Call[@core.RawAddress]
+
+pub let load_library_os_integrity_continuity : UInt
+
+pub fn load_library_w(@strings.PWStr) -> @core.RawAddress raise @core.WindowsError
+
+pub fn load_library_w_raw(@core.RawAddress) -> @core.RawWin32Call[@core.RawAddress]
+
+pub fn load_module(@strings.PStr, @core.RawAddress) -> UInt raise @core.WindowsError
+
+pub fn load_module_raw(@core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn load_packaged_library(@strings.PWStr, UInt) -> @core.RawAddress raise @core.WindowsError
+
+pub fn load_packaged_library_raw(@core.RawAddress, UInt) -> @core.RawWin32Call[@core.RawAddress]
+
+pub fn load_resource(@core.RawAddress, @core.RawAddress) -> @core.RawAddress raise @core.WindowsError
+
+pub fn load_resource_raw(@core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[@core.RawAddress]
+
+pub fn lock_resource(@core.RawAddress) -> @core.RawAddress raise @core.WindowsError
+
+pub fn lock_resource_raw(@core.RawAddress) -> @core.RawAddress
+
+pub fn query_optional_delay_loaded_api(@core.RawAddress, @strings.PStr, @strings.PStr, UInt) -> Bool raise @core.WindowsError
+
+pub fn query_optional_delay_loaded_api_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, UInt) -> @core.RawWin32Call[Int]
+
+pub fn remove_dll_directory(@core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn remove_dll_directory_raw(@core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub let resource_enum_ln : UInt
+
+pub let resource_enum_module_exact : UInt
+
+pub let resource_enum_mui : UInt
+
+pub let resource_enum_mui_system : UInt
+
+pub let resource_enum_validate : UInt
+
+pub fn set_default_dll_directories(@e45e735ad45ca0ce.LOADLIBRARYFLAGS_f0ffc72db60b) -> Bool raise @core.WindowsError
+
+pub fn set_default_dll_directories_raw(UInt) -> @core.RawWin32Call[Int]
+
+pub fn set_dll_directory_a(@strings.PStr?) -> Bool raise @core.WindowsError
+
+pub fn set_dll_directory_a_raw(@core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn set_dll_directory_w(@strings.PWStr?) -> Bool raise @core.WindowsError
+
+pub fn set_dll_directory_w_raw(@core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn sizeof_resource(@core.RawAddress, @core.RawAddress) -> UInt raise @core.WindowsError
+
+pub fn sizeof_resource_raw(@core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[UInt]
+
+pub let support_lang_number : UInt
+
+pub fn update_resource_a(@core.RawAddress, @strings.PStr, @strings.PStr, UInt16, @core.RawAddress, UInt) -> Bool raise @core.WindowsError
+
+pub fn update_resource_a_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, UInt) -> @core.RawWin32Call[Int]
+
+pub fn update_resource_w(@core.RawAddress, @strings.PWStr, @strings.PWStr, UInt16, @core.RawAddress, UInt) -> Bool raise @core.WindowsError
+
+pub fn update_resource_w_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, UInt) -> @core.RawWin32Call[Int]
+
+// Errors
+
+// Types and methods
+
+// Type aliases
+pub using @e45e735ad45ca0ce {type ENUMRESLANGPROCA_146444d2920f as ENUMRESLANGPROCA}
+
+pub using @e45e735ad45ca0ce {type ENUMRESLANGPROCW_d4716e73b6d9 as ENUMRESLANGPROCW}
+
+pub using @e45e735ad45ca0ce {type ENUMRESNAMEPROCA_c7a0eca6f044 as ENUMRESNAMEPROCA}
+
+pub using @e45e735ad45ca0ce {type ENUMRESNAMEPROCW_2a87e9416f1c as ENUMRESNAMEPROCW}
+
+pub using @e45e735ad45ca0ce {type ENUMRESTYPEPROCA_9586d26b202b as ENUMRESTYPEPROCA}
+
+pub using @e45e735ad45ca0ce {type ENUMRESTYPEPROCW_4df5178b4fa3 as ENUMRESTYPEPROCW}
+
+pub using @e45e735ad45ca0ce {type ENUMUILANG_797ad1b01b59 as ENUMUILANG}
+
+pub using @e45e735ad45ca0ce {type LOADLIBRARYFLAGS_f0ffc72db60b as LOADLIBRARYFLAGS}
+
+pub using @e45e735ad45ca0ce {type PGETMODULEHANDLEEXA_b8df695c5aac as PGETMODULEHANDLEEXA}
+
+pub using @e45e735ad45ca0ce {type PGETMODULEHANDLEEXW_4d2419d34299 as PGETMODULEHANDLEEXW}
+
+pub using @e45e735ad45ca0ce {type REDIRECTIONDESCRIPTOR_ab85cb5a0fd6 as REDIRECTIONDESCRIPTOR}
+
+pub using @e45e735ad45ca0ce {type REDIRECTIONFUNCTIONDESCRIPTOR_62da8657cfbc as REDIRECTIONFUNCTIONDESCRIPTOR}
+
+// Traits

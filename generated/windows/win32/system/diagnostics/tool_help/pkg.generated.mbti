@@ -1,0 +1,103 @@
+// Generated using `moon info`, DON'T EDIT IT
+package "moonbit-community/win32api/windows/win32/system/diagnostics/tool_help"
+
+import {
+  "moonbit-community/win32api/runtime/core",
+  "moonbit-community/win32api/scc/c81ae77a87178746",
+}
+
+// Values
+pub fn create_toolhelp32_snapshot(@c81ae77a87178746.CREATETOOLHELPSNAPSHOTFLAGS_0bdfc67cf020, UInt) -> @core.RawAddress raise @core.WindowsError
+
+pub fn create_toolhelp32_snapshot_raw(UInt, UInt) -> @core.RawWin32Call[@core.RawAddress]
+
+pub fn heap32_first(@c81ae77a87178746.HEAPENTRY32_68951307f825, UInt, UInt64) -> Bool raise @core.WindowsError
+
+pub fn heap32_first_raw(@core.RawAddress, UInt, UInt64) -> @core.RawWin32Call[Int]
+
+pub fn heap32_list_first(@core.RawAddress, @c81ae77a87178746.HEAPLIST32_9d55bde4ae7c) -> Bool raise @core.WindowsError
+
+pub fn heap32_list_first_raw(@core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn heap32_list_next(@core.RawAddress, @c81ae77a87178746.HEAPLIST32_9d55bde4ae7c) -> Bool raise @core.WindowsError
+
+pub fn heap32_list_next_raw(@core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn heap32_next(@c81ae77a87178746.HEAPENTRY32_68951307f825) -> Bool raise @core.WindowsError
+
+pub fn heap32_next_raw(@core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub let hf32_default : UInt
+
+pub let hf32_shared : UInt
+
+pub let max_module_name32 : UInt
+
+pub fn module32_first(@core.RawAddress, @c81ae77a87178746.MODULEENTRY32_2d22ddbb0f93) -> Bool raise @core.WindowsError
+
+pub fn module32_first_raw(@core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn module32_first_w(@core.RawAddress, @c81ae77a87178746.MODULEENTRY32W_86f2c8c0374f) -> Bool raise @core.WindowsError
+
+pub fn module32_first_w_raw(@core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn module32_next(@core.RawAddress, @c81ae77a87178746.MODULEENTRY32_2d22ddbb0f93) -> Bool raise @core.WindowsError
+
+pub fn module32_next_raw(@core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn module32_next_w(@core.RawAddress, @c81ae77a87178746.MODULEENTRY32W_86f2c8c0374f) -> Bool raise @core.WindowsError
+
+pub fn module32_next_w_raw(@core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn process32_first(@core.RawAddress, @c81ae77a87178746.PROCESSENTRY32_d54e69bf3b81) -> Bool raise @core.WindowsError
+
+pub fn process32_first_raw(@core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn process32_first_w(@core.RawAddress, @c81ae77a87178746.PROCESSENTRY32W_b24a72ccca2e) -> Bool raise @core.WindowsError
+
+pub fn process32_first_w_raw(@core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn process32_next(@core.RawAddress, @c81ae77a87178746.PROCESSENTRY32_d54e69bf3b81) -> Bool raise @core.WindowsError
+
+pub fn process32_next_raw(@core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn process32_next_w(@core.RawAddress, @c81ae77a87178746.PROCESSENTRY32W_b24a72ccca2e) -> Bool raise @core.WindowsError
+
+pub fn process32_next_w_raw(@core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn thread32_first(@core.RawAddress, @c81ae77a87178746.THREADENTRY32_6f26e5b243be) -> Bool raise @core.WindowsError
+
+pub fn thread32_first_raw(@core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn thread32_next(@core.RawAddress, @c81ae77a87178746.THREADENTRY32_6f26e5b243be) -> Bool raise @core.WindowsError
+
+pub fn thread32_next_raw(@core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn toolhelp32_read_process_memory(UInt, @core.RawAddress, @core.RawAddress, UInt64, @core.RawAddress) -> Bool raise @core.WindowsError
+
+pub fn toolhelp32_read_process_memory_raw(UInt, @core.RawAddress, @core.RawAddress, UInt64, @core.RawAddress) -> Int
+
+// Errors
+
+// Types and methods
+
+// Type aliases
+pub using @c81ae77a87178746 {type CREATETOOLHELPSNAPSHOTFLAGS_0bdfc67cf020 as CREATETOOLHELPSNAPSHOTFLAGS}
+
+pub using @c81ae77a87178746 {type HEAPENTRY32_68951307f825 as HEAPENTRY32}
+
+pub using @c81ae77a87178746 {type HEAPENTRY32FLAGS_dab1ebdd1bb9 as HEAPENTRY32FLAGS}
+
+pub using @c81ae77a87178746 {type HEAPLIST32_9d55bde4ae7c as HEAPLIST32}
+
+pub using @c81ae77a87178746 {type MODULEENTRY32_2d22ddbb0f93 as MODULEENTRY32}
+
+pub using @c81ae77a87178746 {type MODULEENTRY32W_86f2c8c0374f as MODULEENTRY32W}
+
+pub using @c81ae77a87178746 {type PROCESSENTRY32_d54e69bf3b81 as PROCESSENTRY32}
+
+pub using @c81ae77a87178746 {type PROCESSENTRY32W_b24a72ccca2e as PROCESSENTRY32W}
+
+pub using @c81ae77a87178746 {type THREADENTRY32_6f26e5b243be as THREADENTRY32}
+
+// Traits

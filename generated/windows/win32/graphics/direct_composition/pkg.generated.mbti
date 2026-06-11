@@ -1,0 +1,192 @@
+// Generated using `moon info`, DON'T EDIT IT
+package "moonbit-community/win32api/windows/win32/graphics/direct_composition"
+
+import {
+  "moonbit-community/win32api/runtime/core",
+  "moonbit-community/win32api/scc/719a2b301b8f84c4",
+  "moonbit-community/win32api/scc/cc6631776d7e2373",
+}
+
+// Values
+pub let composition_stats_max_targets : UInt
+
+pub let compositionobject_read : Int
+
+pub let compositionobject_write : Int
+
+pub fn d_composition_attach_mouse_drag_to_hwnd(@core.RawAddress, @core.RawAddress, Int) -> Int raise @core.WindowsError
+
+pub fn d_composition_attach_mouse_drag_to_hwnd_raw(@core.RawAddress, @core.RawAddress, Int) -> Int
+
+pub fn d_composition_attach_mouse_wheel_to_hwnd(@core.RawAddress, @core.RawAddress, Int) -> Int raise @core.WindowsError
+
+pub fn d_composition_attach_mouse_wheel_to_hwnd_raw(@core.RawAddress, @core.RawAddress, Int) -> Int
+
+pub fn d_composition_boost_compositor_clock(Int) -> Int raise @core.WindowsError
+
+pub fn d_composition_boost_compositor_clock_raw(Int) -> Int
+
+pub fn d_composition_create_device(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn d_composition_create_device2(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn d_composition_create_device2_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn d_composition_create_device3(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn d_composition_create_device3_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn d_composition_create_device_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn d_composition_create_surface_handle(UInt, @cc6631776d7e2373.SECURITYATTRIBUTES_bc2e2f0be0e1?, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn d_composition_create_surface_handle_raw(UInt, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn d_composition_get_frame_id(@719a2b301b8f84c4.COMPOSITIONFRAMEIDTYPE_f7276973ee00, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn d_composition_get_frame_id_raw(Int, @core.RawAddress) -> Int
+
+pub fn d_composition_get_statistics(UInt64, @719a2b301b8f84c4.COMPOSITIONFRAMESTATS_4a93d83b2971, UInt, @719a2b301b8f84c4.COMPOSITIONTARGETID_89a7f9a836de?, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn d_composition_get_statistics_raw(UInt64, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn d_composition_get_target_statistics(UInt64, @719a2b301b8f84c4.COMPOSITIONTARGETID_89a7f9a836de, @719a2b301b8f84c4.COMPOSITIONTARGETSTATS_2ff9be0774f1) -> Int raise @core.WindowsError
+
+pub fn d_composition_get_target_statistics_raw(UInt64, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn d_composition_wait_for_compositor_clock(UInt, @core.RawAddress, UInt) -> UInt raise @core.WindowsError
+
+pub fn d_composition_wait_for_compositor_clock_raw(UInt, @core.RawAddress, UInt) -> UInt
+
+pub let dcomposition_max_waitforcompositorclock_objects : UInt
+
+// Errors
+
+// Types and methods
+
+// Type aliases
+pub using @719a2b301b8f84c4 {type COMPOSITIONFRAMEIDTYPE_f7276973ee00 as COMPOSITIONFRAMEIDTYPE}
+
+pub using @719a2b301b8f84c4 {type COMPOSITIONFRAMESTATS_4a93d83b2971 as COMPOSITIONFRAMESTATS}
+
+pub using @719a2b301b8f84c4 {type COMPOSITIONSTATS_5f2549c31aed as COMPOSITIONSTATS}
+
+pub using @719a2b301b8f84c4 {type COMPOSITIONTARGETID_89a7f9a836de as COMPOSITIONTARGETID}
+
+pub using @719a2b301b8f84c4 {type COMPOSITIONTARGETSTATS_2ff9be0774f1 as COMPOSITIONTARGETSTATS}
+
+pub using @719a2b301b8f84c4 {type DCOMPOSITIONBACKFACEVISIBILITY_1a8b80bff322 as DCOMPOSITIONBACKFACEVISIBILITY}
+
+pub using @719a2b301b8f84c4 {type DCOMPOSITIONBITMAPINTERPOLATIONMODE_ffabcdcb8c34 as DCOMPOSITIONBITMAPINTERPOLATIONMODE}
+
+pub using @719a2b301b8f84c4 {type DCOMPOSITIONBORDERMODE_e687546d162c as DCOMPOSITIONBORDERMODE}
+
+pub using @719a2b301b8f84c4 {type DCOMPOSITIONCOMPOSITEMODE_8c3e9754e878 as DCOMPOSITIONCOMPOSITEMODE}
+
+pub using @719a2b301b8f84c4 {type DCOMPOSITIONDEPTHMODE_206022649c44 as DCOMPOSITIONDEPTHMODE}
+
+pub using @719a2b301b8f84c4 {type DCOMPOSITIONFRAMESTATISTICS_06ad4d058e7d as DCOMPOSITIONFRAMESTATISTICS}
+
+pub using @719a2b301b8f84c4 {type DCOMPOSITIONOPACITYMODE_523c030cbfab as DCOMPOSITIONOPACITYMODE}
+
+pub using @719a2b301b8f84c4 {type DCompositionInkTrailPoint_060750c3c5e5 as DCompositionInkTrailPoint}
+
+pub using @719a2b301b8f84c4 {type IDCompositionAffineTransform2DEffect_c31680c7e775 as IDCompositionAffineTransform2DEffect}
+
+pub using @719a2b301b8f84c4 {type IDCompositionAnimation_ae052006025a as IDCompositionAnimation}
+
+pub using @719a2b301b8f84c4 {type IDCompositionArithmeticCompositeEffect_d0dfa042d006 as IDCompositionArithmeticCompositeEffect}
+
+pub using @719a2b301b8f84c4 {type IDCompositionBlendEffect_8db93581efbb as IDCompositionBlendEffect}
+
+pub using @719a2b301b8f84c4 {type IDCompositionBrightnessEffect_52de6261af00 as IDCompositionBrightnessEffect}
+
+pub using @719a2b301b8f84c4 {type IDCompositionClip_5517f7248ba1 as IDCompositionClip}
+
+pub using @719a2b301b8f84c4 {type IDCompositionColorMatrixEffect_6387cc8e94cf as IDCompositionColorMatrixEffect}
+
+pub using @719a2b301b8f84c4 {type IDCompositionCompositeEffect_845efde6cf5d as IDCompositionCompositeEffect}
+
+pub using @719a2b301b8f84c4 {type IDCompositionDelegatedInkTrail_44f1cfcad66a as IDCompositionDelegatedInkTrail}
+
+pub using @719a2b301b8f84c4 {type IDCompositionDesktopDevice_461980359520 as IDCompositionDesktopDevice}
+
+pub using @719a2b301b8f84c4 {type IDCompositionDevice_d68cfad1172c as IDCompositionDevice}
+
+pub using @719a2b301b8f84c4 {type IDCompositionDevice2_ad6794eb7ff1 as IDCompositionDevice2}
+
+pub using @719a2b301b8f84c4 {type IDCompositionDevice3_7f4cd2546c51 as IDCompositionDevice3}
+
+pub using @719a2b301b8f84c4 {type IDCompositionDevice4_95957cdec538 as IDCompositionDevice4}
+
+pub using @719a2b301b8f84c4 {type IDCompositionDevice5_d9c96136490d as IDCompositionDevice5}
+
+pub using @719a2b301b8f84c4 {type IDCompositionDeviceDebug_40cdf52b5f6a as IDCompositionDeviceDebug}
+
+pub using @719a2b301b8f84c4 {type IDCompositionDynamicTexture_28bb52fc14a1 as IDCompositionDynamicTexture}
+
+pub using @719a2b301b8f84c4 {type IDCompositionEffect_b7b2ca4bd981 as IDCompositionEffect}
+
+pub using @719a2b301b8f84c4 {type IDCompositionEffectGroup_d6e6cb16fe61 as IDCompositionEffectGroup}
+
+pub using @719a2b301b8f84c4 {type IDCompositionFilterEffect_9eda6afc8f39 as IDCompositionFilterEffect}
+
+pub using @719a2b301b8f84c4 {type IDCompositionGaussianBlurEffect_d2fbc15af61a as IDCompositionGaussianBlurEffect}
+
+pub using @719a2b301b8f84c4 {type IDCompositionHueRotationEffect_e4d644974a21 as IDCompositionHueRotationEffect}
+
+pub using @719a2b301b8f84c4 {type IDCompositionInkTrailDevice_58f15103b0ac as IDCompositionInkTrailDevice}
+
+pub using @719a2b301b8f84c4 {type IDCompositionLinearTransferEffect_63e7175a2772 as IDCompositionLinearTransferEffect}
+
+pub using @719a2b301b8f84c4 {type IDCompositionMatrixTransform_30bd7d5c9b2b as IDCompositionMatrixTransform}
+
+pub using @719a2b301b8f84c4 {type IDCompositionMatrixTransform3D_2f00b21370ac as IDCompositionMatrixTransform3D}
+
+pub using @719a2b301b8f84c4 {type IDCompositionRectangleClip_06dd5ca24f44 as IDCompositionRectangleClip}
+
+pub using @719a2b301b8f84c4 {type IDCompositionRotateTransform_86d75e6df874 as IDCompositionRotateTransform}
+
+pub using @719a2b301b8f84c4 {type IDCompositionRotateTransform3D_55664e9c34be as IDCompositionRotateTransform3D}
+
+pub using @719a2b301b8f84c4 {type IDCompositionSaturationEffect_ce6979d791e5 as IDCompositionSaturationEffect}
+
+pub using @719a2b301b8f84c4 {type IDCompositionScaleTransform_6ec23ced65ad as IDCompositionScaleTransform}
+
+pub using @719a2b301b8f84c4 {type IDCompositionScaleTransform3D_f538fdd6180d as IDCompositionScaleTransform3D}
+
+pub using @719a2b301b8f84c4 {type IDCompositionShadowEffect_8173b1646bb2 as IDCompositionShadowEffect}
+
+pub using @719a2b301b8f84c4 {type IDCompositionSkewTransform_f468bc049dd1 as IDCompositionSkewTransform}
+
+pub using @719a2b301b8f84c4 {type IDCompositionSurface_714f2e9f45be as IDCompositionSurface}
+
+pub using @719a2b301b8f84c4 {type IDCompositionSurfaceFactory_4d6c069ed0bf as IDCompositionSurfaceFactory}
+
+pub using @719a2b301b8f84c4 {type IDCompositionTableTransferEffect_8f6b4f461e9a as IDCompositionTableTransferEffect}
+
+pub using @719a2b301b8f84c4 {type IDCompositionTarget_928c41f6c2be as IDCompositionTarget}
+
+pub using @719a2b301b8f84c4 {type IDCompositionTexture_38d1ed34e810 as IDCompositionTexture}
+
+pub using @719a2b301b8f84c4 {type IDCompositionTransform_b5d7b0f60620 as IDCompositionTransform}
+
+pub using @719a2b301b8f84c4 {type IDCompositionTransform3D_4211bbc88e7a as IDCompositionTransform3D}
+
+pub using @719a2b301b8f84c4 {type IDCompositionTranslateTransform_ffdefc7b4c8d as IDCompositionTranslateTransform}
+
+pub using @719a2b301b8f84c4 {type IDCompositionTranslateTransform3D_9d94a8856eff as IDCompositionTranslateTransform3D}
+
+pub using @719a2b301b8f84c4 {type IDCompositionTurbulenceEffect_6efd4ad3c5ad as IDCompositionTurbulenceEffect}
+
+pub using @719a2b301b8f84c4 {type IDCompositionVirtualSurface_1f726b72fc1e as IDCompositionVirtualSurface}
+
+pub using @719a2b301b8f84c4 {type IDCompositionVisual_a1533ccf384c as IDCompositionVisual}
+
+pub using @719a2b301b8f84c4 {type IDCompositionVisual2_b5e7607dbeee as IDCompositionVisual2}
+
+pub using @719a2b301b8f84c4 {type IDCompositionVisual3_5be016b5889f as IDCompositionVisual3}
+
+pub using @719a2b301b8f84c4 {type IDCompositionVisualDebug_81a94ae3e8aa as IDCompositionVisualDebug}
+
+// Traits

@@ -1,0 +1,191 @@
+// Generated using `moon info`, DON'T EDIT IT
+package "moonbit-community/win32api/scc/f8a775801a06c4f2"
+
+import {
+  "moonbit-community/win32api/runtime/core",
+  "moonbit-community/win32api/runtime/strings",
+  "moonbit-community/win32api/scc/fb66f520d7e12332",
+  "moonbitlang/core/debug",
+}
+
+// Values
+pub let cloud_campaign_assessment_df1328134039_alignment : Int
+
+pub let cloud_campaign_assessment_df1328134039_size : Int
+
+pub fn get_os_update_assessment_d7a71bc0fe1b(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn get_os_update_assessment_d7a71bc0fe1b_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub let os_update_assessment_9e2fbf268a4e_alignment : Int
+
+pub let os_update_assessment_9e2fbf268a4e_size : Int
+
+pub let update_assessment_a9ee7a472e84_alignment : Int
+
+pub let update_assessment_a9ee7a472e84_size : Int
+
+pub let update_assessment_status_latest_1fb3e06c5297 : Int
+
+pub let update_assessment_status_not_latest_deferred_feature_ac681f29edfd : Int
+
+pub let update_assessment_status_not_latest_deferred_quality_225579bd38b0 : Int
+
+pub let update_assessment_status_not_latest_end_of_support_fcb287fc3624 : Int
+
+pub let update_assessment_status_not_latest_hard_restriction_a94f275facf7 : Int
+
+pub let update_assessment_status_not_latest_managed_bfb457468802 : Int
+
+pub let update_assessment_status_not_latest_paused_feature_9369cc264552 : Int
+
+pub let update_assessment_status_not_latest_paused_quality_36846a1682f0 : Int
+
+pub let update_assessment_status_not_latest_servicing_train_dcf7bb67f6c7 : Int
+
+pub let update_assessment_status_not_latest_soft_restriction_b0c84351d87d : Int
+
+pub let update_assessment_status_not_latest_targeted_version_2265cca27559 : Int
+
+pub let update_assessment_status_not_latest_unknown_78763b6e1832 : Int
+
+pub let update_impact_level_high_1c1f2c4c4835 : Int
+
+pub let update_impact_level_low_2965639af361 : Int
+
+pub let update_impact_level_medium_fdbd2f6056fb : Int
+
+pub let update_impact_level_none_0382a5bfd212 : Int
+
+pub let waa_s_assessor_4ad69f420b73_alignment : Int
+
+pub let waa_s_assessor_4ad69f420b73_size : Int
+
+// Errors
+
+// Types and methods
+pub(all) struct CloudCampaignAssessment_df1328134039 {
+  raw_buffer : @core.NativeBuffer
+  mut root_name : @strings.PWStrBuffer?
+  mut root_tool : @strings.PWStrBuffer?
+}
+pub fn CloudCampaignAssessment_df1328134039::abi_alignment() -> Int
+pub fn CloudCampaignAssessment_df1328134039::abi_size() -> Int
+pub fn CloudCampaignAssessment_df1328134039::bytes(Self) -> Bytes raise @core.WindowsError
+pub fn CloudCampaignAssessment_df1328134039::clear_name(Self) -> Unit raise @core.WindowsError
+pub fn CloudCampaignAssessment_df1328134039::clear_tool(Self) -> Unit raise @core.WindowsError
+pub fn CloudCampaignAssessment_df1328134039::from_bytes(Bytes) -> Self raise @core.WindowsError
+pub fn CloudCampaignAssessment_df1328134039::name_raw(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn CloudCampaignAssessment_df1328134039::new() -> Self raise @core.WindowsError
+pub fn CloudCampaignAssessment_df1328134039::raw_address(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn CloudCampaignAssessment_df1328134039::set_name(Self, @strings.PWStrBuffer) -> Unit raise @core.WindowsError
+pub fn CloudCampaignAssessment_df1328134039::set_name_raw(Self, @core.RawAddress) -> Unit raise @core.WindowsError
+pub fn CloudCampaignAssessment_df1328134039::set_tool(Self, @strings.PWStrBuffer) -> Unit raise @core.WindowsError
+pub fn CloudCampaignAssessment_df1328134039::set_tool_raw(Self, @core.RawAddress) -> Unit raise @core.WindowsError
+pub fn CloudCampaignAssessment_df1328134039::tool_raw(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn[T] CloudCampaignAssessment_df1328134039::with_raw_address(Self, (@core.RawAddress) -> T raise?) -> T raise
+pub impl Eq for CloudCampaignAssessment_df1328134039
+pub impl @debug.Debug for CloudCampaignAssessment_df1328134039
+
+pub type IWaaSAssessor_f91fa0eb59d0
+pub fn IWaaSAssessor_f91fa0eb59d0::get_os_update_assessment(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+pub fn IWaaSAssessor_f91fa0eb59d0::get_os_update_assessment_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub(all) struct OSUpdateAssessment_9e2fbf268a4e {
+  raw_buffer : @core.NativeBuffer
+  mut root_current_os_build : @strings.PWStrBuffer?
+  mut root_up_to_date_os_build : @strings.PWStrBuffer?
+}
+pub fn OSUpdateAssessment_9e2fbf268a4e::abi_alignment() -> Int
+pub fn OSUpdateAssessment_9e2fbf268a4e::abi_size() -> Int
+pub fn OSUpdateAssessment_9e2fbf268a4e::assessment_for_current(Self) -> UpdateAssessment_a9ee7a472e84 raise @core.WindowsError
+pub fn OSUpdateAssessment_9e2fbf268a4e::assessment_for_up_to_date(Self) -> UpdateAssessment_a9ee7a472e84 raise @core.WindowsError
+pub fn OSUpdateAssessment_9e2fbf268a4e::assessment_time(Self) -> @fb66f520d7e12332.FILETIME_255c209c37ca raise @core.WindowsError
+pub fn OSUpdateAssessment_9e2fbf268a4e::bytes(Self) -> Bytes raise @core.WindowsError
+pub fn OSUpdateAssessment_9e2fbf268a4e::clear_current_os_build(Self) -> Unit raise @core.WindowsError
+pub fn OSUpdateAssessment_9e2fbf268a4e::clear_up_to_date_os_build(Self) -> Unit raise @core.WindowsError
+pub fn OSUpdateAssessment_9e2fbf268a4e::current_os_build_raw(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn OSUpdateAssessment_9e2fbf268a4e::current_os_release_time(Self) -> @fb66f520d7e12332.FILETIME_255c209c37ca raise @core.WindowsError
+pub fn OSUpdateAssessment_9e2fbf268a4e::from_bytes(Bytes) -> Self raise @core.WindowsError
+pub fn OSUpdateAssessment_9e2fbf268a4e::is_end_of_support(Self) -> Int raise @core.WindowsError
+pub fn OSUpdateAssessment_9e2fbf268a4e::new() -> Self raise @core.WindowsError
+pub fn OSUpdateAssessment_9e2fbf268a4e::raw_address(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn OSUpdateAssessment_9e2fbf268a4e::release_info_time(Self) -> @fb66f520d7e12332.FILETIME_255c209c37ca raise @core.WindowsError
+pub fn OSUpdateAssessment_9e2fbf268a4e::security_status(Self) -> UpdateAssessmentStatus_b77e53de2bea raise @core.WindowsError
+pub fn OSUpdateAssessment_9e2fbf268a4e::set_assessment_for_current(Self, UpdateAssessment_a9ee7a472e84) -> Unit raise @core.WindowsError
+pub fn OSUpdateAssessment_9e2fbf268a4e::set_assessment_for_up_to_date(Self, UpdateAssessment_a9ee7a472e84) -> Unit raise @core.WindowsError
+pub fn OSUpdateAssessment_9e2fbf268a4e::set_assessment_time(Self, @fb66f520d7e12332.FILETIME_255c209c37ca) -> Unit raise @core.WindowsError
+pub fn OSUpdateAssessment_9e2fbf268a4e::set_current_os_build(Self, @strings.PWStrBuffer) -> Unit raise @core.WindowsError
+pub fn OSUpdateAssessment_9e2fbf268a4e::set_current_os_build_raw(Self, @core.RawAddress) -> Unit raise @core.WindowsError
+pub fn OSUpdateAssessment_9e2fbf268a4e::set_current_os_release_time(Self, @fb66f520d7e12332.FILETIME_255c209c37ca) -> Unit raise @core.WindowsError
+pub fn OSUpdateAssessment_9e2fbf268a4e::set_is_end_of_support(Self, Int) -> Unit raise @core.WindowsError
+pub fn OSUpdateAssessment_9e2fbf268a4e::set_release_info_time(Self, @fb66f520d7e12332.FILETIME_255c209c37ca) -> Unit raise @core.WindowsError
+pub fn OSUpdateAssessment_9e2fbf268a4e::set_security_status(Self, UpdateAssessmentStatus_b77e53de2bea) -> Unit raise @core.WindowsError
+pub fn OSUpdateAssessment_9e2fbf268a4e::set_up_to_date_os_build(Self, @strings.PWStrBuffer) -> Unit raise @core.WindowsError
+pub fn OSUpdateAssessment_9e2fbf268a4e::set_up_to_date_os_build_raw(Self, @core.RawAddress) -> Unit raise @core.WindowsError
+pub fn OSUpdateAssessment_9e2fbf268a4e::set_up_to_date_os_release_time(Self, @fb66f520d7e12332.FILETIME_255c209c37ca) -> Unit raise @core.WindowsError
+pub fn OSUpdateAssessment_9e2fbf268a4e::up_to_date_os_build_raw(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn OSUpdateAssessment_9e2fbf268a4e::up_to_date_os_release_time(Self) -> @fb66f520d7e12332.FILETIME_255c209c37ca raise @core.WindowsError
+pub fn[T] OSUpdateAssessment_9e2fbf268a4e::with_raw_address(Self, (@core.RawAddress) -> T raise?) -> T raise
+pub impl Eq for OSUpdateAssessment_9e2fbf268a4e
+pub impl @debug.Debug for OSUpdateAssessment_9e2fbf268a4e
+
+pub(all) struct UpdateAssessmentStatus_b77e53de2bea(Int) derive(Compare, Eq, @debug.Debug)
+pub fn UpdateAssessmentStatus_b77e53de2bea::from_int(Int) -> Self
+pub fn UpdateAssessmentStatus_b77e53de2bea::latest() -> Self
+pub fn UpdateAssessmentStatus_b77e53de2bea::not_latest_deferred_feature() -> Self
+pub fn UpdateAssessmentStatus_b77e53de2bea::not_latest_deferred_quality() -> Self
+pub fn UpdateAssessmentStatus_b77e53de2bea::not_latest_end_of_support() -> Self
+pub fn UpdateAssessmentStatus_b77e53de2bea::not_latest_hard_restriction() -> Self
+pub fn UpdateAssessmentStatus_b77e53de2bea::not_latest_managed() -> Self
+pub fn UpdateAssessmentStatus_b77e53de2bea::not_latest_paused_feature() -> Self
+pub fn UpdateAssessmentStatus_b77e53de2bea::not_latest_paused_quality() -> Self
+pub fn UpdateAssessmentStatus_b77e53de2bea::not_latest_servicing_train() -> Self
+pub fn UpdateAssessmentStatus_b77e53de2bea::not_latest_soft_restriction() -> Self
+pub fn UpdateAssessmentStatus_b77e53de2bea::not_latest_targeted_version() -> Self
+pub fn UpdateAssessmentStatus_b77e53de2bea::not_latest_unknown() -> Self
+pub fn UpdateAssessmentStatus_b77e53de2bea::to_int(Self) -> Int
+
+pub(all) struct UpdateAssessment_a9ee7a472e84 {
+  raw_buffer : @core.NativeBuffer
+}
+pub fn UpdateAssessment_a9ee7a472e84::abi_alignment() -> Int
+pub fn UpdateAssessment_a9ee7a472e84::abi_size() -> Int
+pub fn UpdateAssessment_a9ee7a472e84::bytes(Self) -> Bytes raise @core.WindowsError
+pub fn UpdateAssessment_a9ee7a472e84::days_out_of_date(Self) -> UInt raise @core.WindowsError
+pub fn UpdateAssessment_a9ee7a472e84::from_bytes(Bytes) -> Self raise @core.WindowsError
+pub fn UpdateAssessment_a9ee7a472e84::impact(Self) -> UpdateImpactLevel_c7dc3bbb050b raise @core.WindowsError
+pub fn UpdateAssessment_a9ee7a472e84::new() -> Self raise @core.WindowsError
+pub fn UpdateAssessment_a9ee7a472e84::raw_address(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn UpdateAssessment_a9ee7a472e84::set_days_out_of_date(Self, UInt) -> Unit raise @core.WindowsError
+pub fn UpdateAssessment_a9ee7a472e84::set_impact(Self, UpdateImpactLevel_c7dc3bbb050b) -> Unit raise @core.WindowsError
+pub fn UpdateAssessment_a9ee7a472e84::set_status(Self, UpdateAssessmentStatus_b77e53de2bea) -> Unit raise @core.WindowsError
+pub fn UpdateAssessment_a9ee7a472e84::status(Self) -> UpdateAssessmentStatus_b77e53de2bea raise @core.WindowsError
+pub fn[T] UpdateAssessment_a9ee7a472e84::with_raw_address(Self, (@core.RawAddress) -> T raise?) -> T raise
+pub impl Eq for UpdateAssessment_a9ee7a472e84
+pub impl @debug.Debug for UpdateAssessment_a9ee7a472e84
+
+pub(all) struct UpdateImpactLevel_c7dc3bbb050b(Int) derive(Compare, Eq, @debug.Debug)
+pub fn UpdateImpactLevel_c7dc3bbb050b::from_int(Int) -> Self
+pub fn UpdateImpactLevel_c7dc3bbb050b::high() -> Self
+pub fn UpdateImpactLevel_c7dc3bbb050b::low() -> Self
+pub fn UpdateImpactLevel_c7dc3bbb050b::medium() -> Self
+pub fn UpdateImpactLevel_c7dc3bbb050b::none() -> Self
+pub fn UpdateImpactLevel_c7dc3bbb050b::to_int(Self) -> Int
+
+pub(all) struct WaaSAssessor_4ad69f420b73 {
+  raw_buffer : @core.NativeBuffer
+}
+pub fn WaaSAssessor_4ad69f420b73::abi_alignment() -> Int
+pub fn WaaSAssessor_4ad69f420b73::abi_size() -> Int
+pub fn WaaSAssessor_4ad69f420b73::bytes(Self) -> Bytes raise @core.WindowsError
+pub fn WaaSAssessor_4ad69f420b73::from_bytes(Bytes) -> Self raise @core.WindowsError
+pub fn WaaSAssessor_4ad69f420b73::new() -> Self raise @core.WindowsError
+pub fn WaaSAssessor_4ad69f420b73::raw_address(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn[T] WaaSAssessor_4ad69f420b73::with_raw_address(Self, (@core.RawAddress) -> T raise?) -> T raise
+pub impl Eq for WaaSAssessor_4ad69f420b73
+pub impl @debug.Debug for WaaSAssessor_4ad69f420b73
+
+// Type aliases
+
+// Traits

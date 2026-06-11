@@ -1,0 +1,126 @@
+// Generated using `moon info`, DON'T EDIT IT
+package "moonbit-community/win32api/scc/19e0bc213fa1ba63"
+
+import {
+  "moonbit-community/win32api/runtime/core",
+  "moonbit-community/win32api/runtime/strings",
+  "moonbitlang/core/debug",
+}
+
+// Values
+pub let hidxferpacket_6c3d2e969de8_alignment : Int
+
+pub let hidxferpacket_6c3d2e969de8_size : Int
+
+pub fn vhf_async_operation_complete_9640160c1d67(@core.RawAddress, Int) -> Int raise @core.WindowsError
+
+pub fn vhf_async_operation_complete_9640160c1d67_raw(@core.RawAddress, Int) -> Int
+
+pub fn vhf_create_e6719a5d6c0e(VHFCONFIG_e891241884cc, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn vhf_create_e6719a5d6c0e_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn vhf_delete_b3b122e4bdc4(@core.RawAddress, Byte) -> Unit raise @core.WindowsError
+
+pub fn vhf_delete_b3b122e4bdc4_raw(@core.RawAddress, UInt) -> Unit
+
+pub fn vhf_read_report_submit_0f5cfe9704b0(@core.RawAddress, HIDXFERPACKET_6c3d2e969de8) -> Int raise @core.WindowsError
+
+pub fn vhf_read_report_submit_0f5cfe9704b0_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn vhf_start_1b2b38ea9e71(@core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn vhf_start_1b2b38ea9e71_raw(@core.RawAddress) -> Int
+
+pub let vhfconfig_e891241884cc_alignment : Int
+
+pub let vhfconfig_e891241884cc_size : Int
+
+// Errors
+
+// Types and methods
+pub type EVTVHFASYNCOPERATION_2f91aa32ec7e
+
+pub type EVTVHFCLEANUP_9d7f9e4b25ba
+
+pub type EVTVHFREADYFORNEXTREADREPORT_bc9cdbddb9ee
+
+pub(all) struct HIDXFERPACKET_6c3d2e969de8 {
+  raw_buffer : @core.NativeBuffer
+}
+pub fn HIDXFERPACKET_6c3d2e969de8::abi_alignment() -> Int
+pub fn HIDXFERPACKET_6c3d2e969de8::abi_size() -> Int
+pub fn HIDXFERPACKET_6c3d2e969de8::bytes(Self) -> Bytes raise @core.WindowsError
+pub fn HIDXFERPACKET_6c3d2e969de8::from_bytes(Bytes) -> Self raise @core.WindowsError
+pub fn HIDXFERPACKET_6c3d2e969de8::new() -> Self raise @core.WindowsError
+pub fn HIDXFERPACKET_6c3d2e969de8::raw_address(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn HIDXFERPACKET_6c3d2e969de8::report_buffer_len(Self) -> UInt raise @core.WindowsError
+pub fn HIDXFERPACKET_6c3d2e969de8::report_buffer_raw(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn HIDXFERPACKET_6c3d2e969de8::report_id(Self) -> Byte raise @core.WindowsError
+pub fn HIDXFERPACKET_6c3d2e969de8::set_report_buffer_len(Self, UInt) -> Unit raise @core.WindowsError
+pub fn HIDXFERPACKET_6c3d2e969de8::set_report_buffer_raw(Self, @core.RawAddress) -> Unit raise @core.WindowsError
+pub fn HIDXFERPACKET_6c3d2e969de8::set_report_id(Self, Byte) -> Unit raise @core.WindowsError
+pub fn[T] HIDXFERPACKET_6c3d2e969de8::with_raw_address(Self, (@core.RawAddress) -> T raise?) -> T raise
+pub impl Eq for HIDXFERPACKET_6c3d2e969de8
+pub impl @debug.Debug for HIDXFERPACKET_6c3d2e969de8
+
+pub(all) struct VHFCONFIG_e891241884cc {
+  raw_buffer : @core.NativeBuffer
+  mut root_instance_id : @strings.PWStrBuffer?
+  mut root_hardware_i_ds : @strings.PWStrBuffer?
+}
+pub fn VHFCONFIG_e891241884cc::abi_alignment() -> Int
+pub fn VHFCONFIG_e891241884cc::abi_size() -> Int
+pub fn VHFCONFIG_e891241884cc::bytes(Self) -> Bytes raise @core.WindowsError
+pub fn VHFCONFIG_e891241884cc::clear_hardware_i_ds(Self) -> Unit raise @core.WindowsError
+pub fn VHFCONFIG_e891241884cc::clear_instance_id(Self) -> Unit raise @core.WindowsError
+pub fn VHFCONFIG_e891241884cc::evt_vhf_async_operation_get_feature_raw(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn VHFCONFIG_e891241884cc::evt_vhf_async_operation_get_input_report_raw(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn VHFCONFIG_e891241884cc::evt_vhf_async_operation_set_feature_raw(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn VHFCONFIG_e891241884cc::evt_vhf_async_operation_write_report_raw(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn VHFCONFIG_e891241884cc::evt_vhf_cleanup_raw(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn VHFCONFIG_e891241884cc::evt_vhf_ready_for_next_read_report_raw(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn VHFCONFIG_e891241884cc::file_handle_raw(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn VHFCONFIG_e891241884cc::from_bytes(Bytes) -> Self raise @core.WindowsError
+pub fn VHFCONFIG_e891241884cc::hardware_i_ds_length(Self) -> UInt16 raise @core.WindowsError
+pub fn VHFCONFIG_e891241884cc::hardware_i_ds_raw(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn VHFCONFIG_e891241884cc::instance_id_length(Self) -> UInt16 raise @core.WindowsError
+pub fn VHFCONFIG_e891241884cc::instance_id_raw(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn VHFCONFIG_e891241884cc::new() -> Self raise @core.WindowsError
+pub fn VHFCONFIG_e891241884cc::operation_context_size(Self) -> UInt raise @core.WindowsError
+pub fn VHFCONFIG_e891241884cc::product_id(Self) -> UInt16 raise @core.WindowsError
+pub fn VHFCONFIG_e891241884cc::raw_address(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn VHFCONFIG_e891241884cc::report_descriptor_length(Self) -> UInt16 raise @core.WindowsError
+pub fn VHFCONFIG_e891241884cc::report_descriptor_raw(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn VHFCONFIG_e891241884cc::set_evt_vhf_async_operation_get_feature_raw(Self, @core.RawAddress) -> Unit raise @core.WindowsError
+pub fn VHFCONFIG_e891241884cc::set_evt_vhf_async_operation_get_input_report_raw(Self, @core.RawAddress) -> Unit raise @core.WindowsError
+pub fn VHFCONFIG_e891241884cc::set_evt_vhf_async_operation_set_feature_raw(Self, @core.RawAddress) -> Unit raise @core.WindowsError
+pub fn VHFCONFIG_e891241884cc::set_evt_vhf_async_operation_write_report_raw(Self, @core.RawAddress) -> Unit raise @core.WindowsError
+pub fn VHFCONFIG_e891241884cc::set_evt_vhf_cleanup_raw(Self, @core.RawAddress) -> Unit raise @core.WindowsError
+pub fn VHFCONFIG_e891241884cc::set_evt_vhf_ready_for_next_read_report_raw(Self, @core.RawAddress) -> Unit raise @core.WindowsError
+pub fn VHFCONFIG_e891241884cc::set_file_handle_raw(Self, @core.RawAddress) -> Unit raise @core.WindowsError
+pub fn VHFCONFIG_e891241884cc::set_hardware_i_ds(Self, @strings.PWStrBuffer) -> Unit raise @core.WindowsError
+pub fn VHFCONFIG_e891241884cc::set_hardware_i_ds_length(Self, UInt16) -> Unit raise @core.WindowsError
+pub fn VHFCONFIG_e891241884cc::set_hardware_i_ds_raw(Self, @core.RawAddress) -> Unit raise @core.WindowsError
+pub fn VHFCONFIG_e891241884cc::set_instance_id(Self, @strings.PWStrBuffer) -> Unit raise @core.WindowsError
+pub fn VHFCONFIG_e891241884cc::set_instance_id_length(Self, UInt16) -> Unit raise @core.WindowsError
+pub fn VHFCONFIG_e891241884cc::set_instance_id_raw(Self, @core.RawAddress) -> Unit raise @core.WindowsError
+pub fn VHFCONFIG_e891241884cc::set_operation_context_size(Self, UInt) -> Unit raise @core.WindowsError
+pub fn VHFCONFIG_e891241884cc::set_product_id(Self, UInt16) -> Unit raise @core.WindowsError
+pub fn VHFCONFIG_e891241884cc::set_report_descriptor_length(Self, UInt16) -> Unit raise @core.WindowsError
+pub fn VHFCONFIG_e891241884cc::set_report_descriptor_raw(Self, @core.RawAddress) -> Unit raise @core.WindowsError
+pub fn VHFCONFIG_e891241884cc::set_size(Self, UInt) -> Unit raise @core.WindowsError
+pub fn VHFCONFIG_e891241884cc::set_vendor_id(Self, UInt16) -> Unit raise @core.WindowsError
+pub fn VHFCONFIG_e891241884cc::set_version_number(Self, UInt16) -> Unit raise @core.WindowsError
+pub fn VHFCONFIG_e891241884cc::set_vhf_client_context_raw(Self, @core.RawAddress) -> Unit raise @core.WindowsError
+pub fn VHFCONFIG_e891241884cc::size(Self) -> UInt raise @core.WindowsError
+pub fn VHFCONFIG_e891241884cc::vendor_id(Self) -> UInt16 raise @core.WindowsError
+pub fn VHFCONFIG_e891241884cc::version_number(Self) -> UInt16 raise @core.WindowsError
+pub fn VHFCONFIG_e891241884cc::vhf_client_context_raw(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn[T] VHFCONFIG_e891241884cc::with_raw_address(Self, (@core.RawAddress) -> T raise?) -> T raise
+pub impl Eq for VHFCONFIG_e891241884cc
+pub impl @debug.Debug for VHFCONFIG_e891241884cc
+
+// Type aliases
+
+// Traits

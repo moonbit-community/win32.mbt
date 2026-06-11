@@ -1,0 +1,119 @@
+// Generated using `moon info`, DON'T EDIT IT
+package "moonbit-community/win32api/windows/win32/system/diagnostics/process_snapshotting"
+
+import {
+  "moonbit-community/win32api/runtime/core",
+  "moonbit-community/win32api/scc/53df2ba059f91b00",
+}
+
+// Values
+pub fn pss_capture_snapshot(@core.RawAddress, @53df2ba059f91b00.PSSCAPTUREFLAGS_25f8c48e7a07, UInt, @core.RawAddress) -> UInt raise @core.WindowsError
+
+pub fn pss_capture_snapshot_raw(@core.RawAddress, UInt, UInt, @core.RawAddress) -> UInt
+
+pub fn pss_duplicate_snapshot(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @53df2ba059f91b00.PSSDUPLICATEFLAGS_20b4c84ac19a) -> UInt raise @core.WindowsError
+
+pub fn pss_duplicate_snapshot_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, Int) -> UInt
+
+pub fn pss_free_snapshot(@core.RawAddress, @core.RawAddress) -> UInt raise @core.WindowsError
+
+pub fn pss_free_snapshot_raw(@core.RawAddress, @core.RawAddress) -> UInt
+
+pub let pss_perf_resolution : UInt
+
+pub fn pss_query_snapshot(@core.RawAddress, @53df2ba059f91b00.PSSQUERYINFORMATIONCLASS_3fd1e97c3670, @core.RawAddress, UInt) -> UInt raise @core.WindowsError
+
+pub fn pss_query_snapshot_raw(@core.RawAddress, Int, @core.RawAddress, UInt) -> UInt
+
+pub fn pss_walk_marker_create(@53df2ba059f91b00.PSSALLOCATOR_bd5a85ed562b?, @core.RawAddress) -> UInt raise @core.WindowsError
+
+pub fn pss_walk_marker_create_raw(@core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn pss_walk_marker_free(@core.RawAddress) -> UInt raise @core.WindowsError
+
+pub fn pss_walk_marker_free_raw(@core.RawAddress) -> UInt
+
+pub fn pss_walk_marker_get_position(@core.RawAddress, @core.RawAddress) -> UInt raise @core.WindowsError
+
+pub fn pss_walk_marker_get_position_raw(@core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn pss_walk_marker_seek_to_beginning(@core.RawAddress) -> UInt raise @core.WindowsError
+
+pub fn pss_walk_marker_seek_to_beginning_raw(@core.RawAddress) -> UInt
+
+pub fn pss_walk_marker_set_position(@core.RawAddress, UInt64) -> UInt raise @core.WindowsError
+
+pub fn pss_walk_marker_set_position_raw(@core.RawAddress, UInt64) -> UInt
+
+pub fn pss_walk_snapshot(@core.RawAddress, @53df2ba059f91b00.PSSWALKINFORMATIONCLASS_4d04e3a0f480, @core.RawAddress, @core.RawAddress, UInt) -> UInt raise @core.WindowsError
+
+pub fn pss_walk_snapshot_raw(@core.RawAddress, Int, @core.RawAddress, @core.RawAddress, UInt) -> UInt
+
+// Errors
+
+// Types and methods
+
+// Type aliases
+pub using @53df2ba059f91b00 {type HPSS_2c8c3aaadbda as HPSS}
+
+pub using @53df2ba059f91b00 {type HPSSWALK_76a29a0ab4aa as HPSSWALK}
+
+pub using @53df2ba059f91b00 {type PSSALLOCATOR_bd5a85ed562b as PSSALLOCATOR}
+
+pub using @53df2ba059f91b00 {type PSSAUXILIARYPAGEENTRY_d496baaba253 as PSSAUXILIARYPAGEENTRY}
+
+pub using @53df2ba059f91b00 {type PSSAUXILIARYPAGESINFORMATION_e91595a005f7 as PSSAUXILIARYPAGESINFORMATION}
+
+pub using @53df2ba059f91b00 {type PSSCAPTUREFLAGS_25f8c48e7a07 as PSSCAPTUREFLAGS}
+
+pub using @53df2ba059f91b00 {type PSSDUPLICATEFLAGS_20b4c84ac19a as PSSDUPLICATEFLAGS}
+
+pub using @53df2ba059f91b00 {type PSSHANDLEENTRY_f92f0930d60c as PSSHANDLEENTRY}
+
+pub using @53df2ba059f91b00 {type PSSHANDLEENTRYTypeSpecificInformationEUnion_08e7f29b0e7b as PSSHANDLEENTRYTypeSpecificInformationEUnion}
+
+pub using @53df2ba059f91b00 {type PSSHANDLEENTRYTypeSpecificInformationEUnionEventEStruct_ff9788c9eeb8 as PSSHANDLEENTRYTypeSpecificInformationEUnionEventEStruct}
+
+pub using @53df2ba059f91b00 {type PSSHANDLEENTRYTypeSpecificInformationEUnionMutantEStruct_2bec1fa2d28c as PSSHANDLEENTRYTypeSpecificInformationEUnionMutantEStruct}
+
+pub using @53df2ba059f91b00 {type PSSHANDLEENTRYTypeSpecificInformationEUnionProcessEStruct_0db16caaad5a as PSSHANDLEENTRYTypeSpecificInformationEUnionProcessEStruct}
+
+pub using @53df2ba059f91b00 {type PSSHANDLEENTRYTypeSpecificInformationEUnionSectionEStruct_4637acc59e21 as PSSHANDLEENTRYTypeSpecificInformationEUnionSectionEStruct}
+
+pub using @53df2ba059f91b00 {type PSSHANDLEENTRYTypeSpecificInformationEUnionSemaphoreEStruct_18ea13a96bd6 as PSSHANDLEENTRYTypeSpecificInformationEUnionSemaphoreEStruct}
+
+pub using @53df2ba059f91b00 {type PSSHANDLEENTRYTypeSpecificInformationEUnionThreadEStruct_b0dac9b5d3aa as PSSHANDLEENTRYTypeSpecificInformationEUnionThreadEStruct}
+
+pub using @53df2ba059f91b00 {type PSSHANDLEFLAGS_746a9cf27296 as PSSHANDLEFLAGS}
+
+pub using @53df2ba059f91b00 {type PSSHANDLEINFORMATION_0c103f49b035 as PSSHANDLEINFORMATION}
+
+pub using @53df2ba059f91b00 {type PSSHANDLETRACEINFORMATION_d1c8debf0220 as PSSHANDLETRACEINFORMATION}
+
+pub using @53df2ba059f91b00 {type PSSOBJECTTYPE_4bd26bf1a8c8 as PSSOBJECTTYPE}
+
+pub using @53df2ba059f91b00 {type PSSPERFORMANCECOUNTERS_b75eabe01ff9 as PSSPERFORMANCECOUNTERS}
+
+pub using @53df2ba059f91b00 {type PSSPROCESSFLAGS_33aeec363e0a as PSSPROCESSFLAGS}
+
+pub using @53df2ba059f91b00 {type PSSPROCESSINFORMATION_86d6e01742e4 as PSSPROCESSINFORMATION}
+
+pub using @53df2ba059f91b00 {type PSSQUERYINFORMATIONCLASS_3fd1e97c3670 as PSSQUERYINFORMATIONCLASS}
+
+pub using @53df2ba059f91b00 {type PSSTHREADENTRY_5ea4b90437eb as PSSTHREADENTRY}
+
+pub using @53df2ba059f91b00 {type PSSTHREADFLAGS_73e830a77ac4 as PSSTHREADFLAGS}
+
+pub using @53df2ba059f91b00 {type PSSTHREADINFORMATION_35a6b70cc8a0 as PSSTHREADINFORMATION}
+
+pub using @53df2ba059f91b00 {type PSSTHREADNAME_7e95d058a6f8 as PSSTHREADNAME}
+
+pub using @53df2ba059f91b00 {type PSSVACLONEINFORMATION_460170851d38 as PSSVACLONEINFORMATION}
+
+pub using @53df2ba059f91b00 {type PSSVASPACEENTRY_f704780ef85b as PSSVASPACEENTRY}
+
+pub using @53df2ba059f91b00 {type PSSVASPACEINFORMATION_9d3506e31f22 as PSSVASPACEINFORMATION}
+
+pub using @53df2ba059f91b00 {type PSSWALKINFORMATIONCLASS_4d04e3a0f480 as PSSWALKINFORMATIONCLASS}
+
+// Traits

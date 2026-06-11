@@ -1,0 +1,452 @@
+// Generated using `moon info`, DON'T EDIT IT
+package "moonbit-community/win32api/windows/wdk/storage/file_system/minifilters"
+
+import {
+  "moonbit-community/win32api/scc/df18ce97167074c2",
+}
+
+// Values
+pub let flt_allocate_callback_data_preallocate_all_memory : UInt
+
+pub let flt_context_end : UInt
+
+pub let flt_file_context : UInt
+
+pub let flt_file_name_allow_query_on_reparse : UInt
+
+pub let flt_file_name_do_not_cache : UInt
+
+pub let flt_file_name_normalized : UInt
+
+pub let flt_file_name_opened : UInt
+
+pub let flt_file_name_query_always_allow_cache_lookup : UInt
+
+pub let flt_file_name_query_cache_only : UInt
+
+pub let flt_file_name_query_default : UInt
+
+pub let flt_file_name_query_filesystem_only : UInt
+
+pub let flt_file_name_request_from_current_provider : UInt
+
+pub let flt_file_name_short : UInt
+
+pub let flt_flush_type_data_sync_only : UInt
+
+pub let flt_flush_type_file_data_only : UInt
+
+pub let flt_flush_type_flush_and_purge : UInt
+
+pub let flt_flush_type_no_sync : UInt
+
+pub let flt_instance_context : UInt
+
+pub let flt_internal_operation_count : UInt
+
+pub let flt_max_device_reparse_attempts : UInt
+
+pub let flt_port_connect : UInt
+
+pub let flt_push_lock_disable_auto_boost : UInt
+
+pub let flt_push_lock_enable_auto_boost : UInt
+
+pub let flt_push_lock_valid_flags : UInt
+
+pub let flt_registration_version : UInt
+
+pub let flt_registration_version_0200 : UInt
+
+pub let flt_registration_version_0201 : UInt
+
+pub let flt_registration_version_0202 : UInt
+
+pub let flt_registration_version_0203 : UInt
+
+pub let flt_section_context : UInt
+
+pub let flt_stream_context : UInt
+
+pub let flt_streamhandle_context : UInt
+
+pub let flt_transaction_context : UInt
+
+pub let flt_valid_file_name_flags : UInt
+
+pub let flt_valid_file_name_formats : UInt
+
+pub let flt_valid_file_name_query_methods : UInt
+
+pub let flt_volume_context : UInt
+
+pub let fltfl_callback_data_dirty : UInt
+
+pub let fltfl_callback_data_draining_io : UInt
+
+pub let fltfl_callback_data_fast_io_operation : UInt
+
+pub let fltfl_callback_data_fs_filter_operation : UInt
+
+pub let fltfl_callback_data_generated_io : UInt
+
+pub let fltfl_callback_data_irp_operation : UInt
+
+pub let fltfl_callback_data_new_system_buffer : UInt
+
+pub let fltfl_callback_data_post_operation : UInt
+
+pub let fltfl_callback_data_reissue_mask : UInt
+
+pub let fltfl_callback_data_reissued_io : UInt
+
+pub let fltfl_callback_data_system_buffer : UInt
+
+pub let fltfl_context_registration_no_exact_size_match : UInt
+
+pub let fltfl_file_name_parsed_extension : UInt
+
+pub let fltfl_file_name_parsed_final_component : UInt
+
+pub let fltfl_file_name_parsed_parent_dir : UInt
+
+pub let fltfl_file_name_parsed_stream : UInt
+
+pub let fltfl_filter_unload_mandatory : UInt
+
+pub let fltfl_instance_setup_automatic_attachment : UInt
+
+pub let fltfl_instance_setup_detached_volume : UInt
+
+pub let fltfl_instance_setup_manual_attachment : UInt
+
+pub let fltfl_instance_setup_newly_mounted_volume : UInt
+
+pub let fltfl_instance_teardown_filter_unload : UInt
+
+pub let fltfl_instance_teardown_internal_error : UInt
+
+pub let fltfl_instance_teardown_mandatory_filter_unload : UInt
+
+pub let fltfl_instance_teardown_manual : UInt
+
+pub let fltfl_instance_teardown_volume_dismount : UInt
+
+pub let fltfl_io_operation_do_not_update_byte_offset : UInt
+
+pub let fltfl_io_operation_non_cached : UInt
+
+pub let fltfl_io_operation_paging : UInt
+
+pub let fltfl_io_operation_synchronous_paging : UInt
+
+pub let fltfl_normalize_name_case_sensitive : UInt
+
+pub let fltfl_normalize_name_destination_file_name : UInt
+
+pub let fltfl_operation_registration_skip_cached_io : UInt
+
+pub let fltfl_operation_registration_skip_non_cached_non_paging_io : UInt
+
+pub let fltfl_operation_registration_skip_non_dasd_io : UInt
+
+pub let fltfl_operation_registration_skip_paging_io : UInt
+
+pub let fltfl_post_operation_draining : UInt
+
+pub let fltfl_registration_do_not_support_service_stop : UInt
+
+pub let fltfl_registration_support_dax_volume : UInt
+
+pub let fltfl_registration_support_npfs_msfs : UInt
+
+pub let fltfl_registration_support_wcos : UInt
+
+pub let flttcfl_auto_reparse : UInt
+
+pub let irp_mj_acquire_for_cc_flush : UInt
+
+pub let irp_mj_acquire_for_mod_write : UInt
+
+pub let irp_mj_acquire_for_section_synchronization : UInt
+
+pub let irp_mj_fast_io_check_if_possible : UInt
+
+pub let irp_mj_mdl_read : UInt
+
+pub let irp_mj_mdl_read_complete : UInt
+
+pub let irp_mj_mdl_write_complete : UInt
+
+pub let irp_mj_network_query_open : UInt
+
+pub let irp_mj_operation_end : UInt
+
+pub let irp_mj_prepare_mdl_write : UInt
+
+pub let irp_mj_query_open : UInt
+
+pub let irp_mj_release_for_cc_flush : UInt
+
+pub let irp_mj_release_for_mod_write : UInt
+
+pub let irp_mj_release_for_section_synchronization : UInt
+
+pub let irp_mj_volume_dismount : UInt
+
+pub let irp_mj_volume_mount : UInt
+
+pub let vol_prop_fl_dax_volume : UInt
+
+// Errors
+
+// Types and methods
+
+// Type aliases
+pub using @df18ce97167074c2 {type FLTCALLBACKDATA_0be9e33d144d as FLTCALLBACKDATA}
+
+pub using @df18ce97167074c2 {type FLTCALLBACKDATAAnonymousEUnion_ad9fbe03889f as FLTCALLBACKDATAAnonymousEUnion}
+
+pub using @df18ce97167074c2 {type FLTCALLBACKDATAAnonymousEUnionAnonymousEStruct_e8977808712e as FLTCALLBACKDATAAnonymousEUnionAnonymousEStruct}
+
+pub using @df18ce97167074c2 {type FLTCALLBACKDATAQUEUE_65e092239ae0 as FLTCALLBACKDATAQUEUE}
+
+pub using @df18ce97167074c2 {type FLTCALLBACKDATAQUEUEFLAGS_20c3d75f2e34 as FLTCALLBACKDATAQUEUEFLAGS}
+
+pub using @df18ce97167074c2 {type FLTCONTEXTREGISTRATION_6bcf1c443812 as FLTCONTEXTREGISTRATION}
+
+pub using @df18ce97167074c2 {type FLTCREATEFILETARGETECPCONTEXT_bbb795f74c98 as FLTCREATEFILETARGETECPCONTEXT}
+
+pub using @df18ce97167074c2 {type FLTFILENAMEINFORMATION_8bcd39ac397a as FLTFILENAMEINFORMATION}
+
+pub using @df18ce97167074c2 {type FLTIOPARAMETERBLOCK_ddcbec730d53 as FLTIOPARAMETERBLOCK}
+
+pub using @df18ce97167074c2 {type FLTNAMECONTROL_d7ef3b2b1dba as FLTNAMECONTROL}
+
+pub using @df18ce97167074c2 {type FLTOPERATIONREGISTRATION_6e3a163caa26 as FLTOPERATIONREGISTRATION}
+
+pub using @df18ce97167074c2 {type FLTPARAMETERS_e4e3d2743bde as FLTPARAMETERS}
+
+pub using @df18ce97167074c2 {type FLTPARAMETERSAcquireForModifiedPageWriterEStruct_5211a3e134b5 as FLTPARAMETERSAcquireForModifiedPageWriterEStruct}
+
+pub using @df18ce97167074c2 {type FLTPARAMETERSAcquireForSectionSynchronizationEStruct_1cd9357f9d82 as FLTPARAMETERSAcquireForSectionSynchronizationEStruct}
+
+pub using @df18ce97167074c2 {type FLTPARAMETERSCreateEStruct_88eda5ad265b as FLTPARAMETERSCreateEStruct}
+
+pub using @df18ce97167074c2 {type FLTPARAMETERSCreateMailslotEStruct_321c0c561641 as FLTPARAMETERSCreateMailslotEStruct}
+
+pub using @df18ce97167074c2 {type FLTPARAMETERSCreatePipeEStruct_0f16323c39ad as FLTPARAMETERSCreatePipeEStruct}
+
+pub using @df18ce97167074c2 {type FLTPARAMETERSDeviceIoControlEUnion_a83c7036ad10 as FLTPARAMETERSDeviceIoControlEUnion}
+
+pub using @df18ce97167074c2 {type FLTPARAMETERSDeviceIoControlEUnionBufferedEStruct_c0975b995667 as FLTPARAMETERSDeviceIoControlEUnionBufferedEStruct}
+
+pub using @df18ce97167074c2 {type FLTPARAMETERSDeviceIoControlEUnionCommonEStruct_8f4cd20627d6 as FLTPARAMETERSDeviceIoControlEUnionCommonEStruct}
+
+pub using @df18ce97167074c2 {type FLTPARAMETERSDeviceIoControlEUnionDirectEStruct_79ad4efa1bb5 as FLTPARAMETERSDeviceIoControlEUnionDirectEStruct}
+
+pub using @df18ce97167074c2 {type FLTPARAMETERSDeviceIoControlEUnionFastIoEStruct_7883e5987393 as FLTPARAMETERSDeviceIoControlEUnionFastIoEStruct}
+
+pub using @df18ce97167074c2 {type FLTPARAMETERSDeviceIoControlEUnionNeitherEStruct_ec74ef2f3bdd as FLTPARAMETERSDeviceIoControlEUnionNeitherEStruct}
+
+pub using @df18ce97167074c2 {type FLTPARAMETERSDirectoryControlEUnion_66568dc99cb3 as FLTPARAMETERSDirectoryControlEUnion}
+
+pub using @df18ce97167074c2 {type FLTPARAMETERSDirectoryControlEUnionNotifyDirectoryEStruct_7648b7a7a965 as FLTPARAMETERSDirectoryControlEUnionNotifyDirectoryEStruct}
+
+pub using @df18ce97167074c2 {type FLTPARAMETERSDirectoryControlEUnionNotifyDirectoryExEStruct_aaae0c4379c6 as FLTPARAMETERSDirectoryControlEUnionNotifyDirectoryExEStruct}
+
+pub using @df18ce97167074c2 {type FLTPARAMETERSDirectoryControlEUnionQueryDirectoryEStruct_76ff67ae5174 as FLTPARAMETERSDirectoryControlEUnionQueryDirectoryEStruct}
+
+pub using @df18ce97167074c2 {type FLTPARAMETERSFastIoCheckIfPossibleEStruct_931bba1d328d as FLTPARAMETERSFastIoCheckIfPossibleEStruct}
+
+pub using @df18ce97167074c2 {type FLTPARAMETERSFileSystemControlEUnion_daaea30fbea3 as FLTPARAMETERSFileSystemControlEUnion}
+
+pub using @df18ce97167074c2 {type FLTPARAMETERSFileSystemControlEUnionBufferedEStruct_60d08ae0da58 as FLTPARAMETERSFileSystemControlEUnionBufferedEStruct}
+
+pub using @df18ce97167074c2 {type FLTPARAMETERSFileSystemControlEUnionCommonEStruct_e376b4572891 as FLTPARAMETERSFileSystemControlEUnionCommonEStruct}
+
+pub using @df18ce97167074c2 {type FLTPARAMETERSFileSystemControlEUnionDirectEStruct_9433a99c272e as FLTPARAMETERSFileSystemControlEUnionDirectEStruct}
+
+pub using @df18ce97167074c2 {type FLTPARAMETERSFileSystemControlEUnionNeitherEStruct_23ab6aa4a08e as FLTPARAMETERSFileSystemControlEUnionNeitherEStruct}
+
+pub using @df18ce97167074c2 {type FLTPARAMETERSFileSystemControlEUnionVerifyVolumeEStruct_3461d2b6697a as FLTPARAMETERSFileSystemControlEUnionVerifyVolumeEStruct}
+
+pub using @df18ce97167074c2 {type FLTPARAMETERSLockControlEStruct_c1c760e5492b as FLTPARAMETERSLockControlEStruct}
+
+pub using @df18ce97167074c2 {type FLTPARAMETERSMdlReadCompleteEStruct_dcfb299ad94f as FLTPARAMETERSMdlReadCompleteEStruct}
+
+pub using @df18ce97167074c2 {type FLTPARAMETERSMdlReadEStruct_c9ef9524e10a as FLTPARAMETERSMdlReadEStruct}
+
+pub using @df18ce97167074c2 {type FLTPARAMETERSMdlWriteCompleteEStruct_996e6fecd1e0 as FLTPARAMETERSMdlWriteCompleteEStruct}
+
+pub using @df18ce97167074c2 {type FLTPARAMETERSMountVolumeEStruct_3bb3c09cb27c as FLTPARAMETERSMountVolumeEStruct}
+
+pub using @df18ce97167074c2 {type FLTPARAMETERSNetworkQueryOpenEStruct_717d171aae0a as FLTPARAMETERSNetworkQueryOpenEStruct}
+
+pub using @df18ce97167074c2 {type FLTPARAMETERSOthersEStruct_3ff95a198fb0 as FLTPARAMETERSOthersEStruct}
+
+pub using @df18ce97167074c2 {type FLTPARAMETERSPnpEUnion_b1c4bf7e7be2 as FLTPARAMETERSPnpEUnion}
+
+pub using @df18ce97167074c2 {type FLTPARAMETERSPnpEUnionDeviceCapabilitiesEStruct_fb8f4757b6f6 as FLTPARAMETERSPnpEUnionDeviceCapabilitiesEStruct}
+
+pub using @df18ce97167074c2 {type FLTPARAMETERSPnpEUnionFilterResourceRequirementsEStruct_d4efbe5cb1f2 as FLTPARAMETERSPnpEUnionFilterResourceRequirementsEStruct}
+
+pub using @df18ce97167074c2 {type FLTPARAMETERSPnpEUnionQueryDeviceRelationsEStruct_e17050426391 as FLTPARAMETERSPnpEUnionQueryDeviceRelationsEStruct}
+
+pub using @df18ce97167074c2 {type FLTPARAMETERSPnpEUnionQueryDeviceTextEStruct_1fd2f6dc44c4 as FLTPARAMETERSPnpEUnionQueryDeviceTextEStruct}
+
+pub using @df18ce97167074c2 {type FLTPARAMETERSPnpEUnionQueryIdEStruct_00316b8eef3c as FLTPARAMETERSPnpEUnionQueryIdEStruct}
+
+pub using @df18ce97167074c2 {type FLTPARAMETERSPnpEUnionQueryInterfaceEStruct_5751e4880090 as FLTPARAMETERSPnpEUnionQueryInterfaceEStruct}
+
+pub using @df18ce97167074c2 {type FLTPARAMETERSPnpEUnionReadWriteConfigEStruct_12b4e163a5e2 as FLTPARAMETERSPnpEUnionReadWriteConfigEStruct}
+
+pub using @df18ce97167074c2 {type FLTPARAMETERSPnpEUnionSetLockEStruct_186e4626eba5 as FLTPARAMETERSPnpEUnionSetLockEStruct}
+
+pub using @df18ce97167074c2 {type FLTPARAMETERSPnpEUnionStartDeviceEStruct_b825fec000c7 as FLTPARAMETERSPnpEUnionStartDeviceEStruct}
+
+pub using @df18ce97167074c2 {type FLTPARAMETERSPnpEUnionUsageNotificationEStruct_6fbc05d931eb as FLTPARAMETERSPnpEUnionUsageNotificationEStruct}
+
+pub using @df18ce97167074c2 {type FLTPARAMETERSPrepareMdlWriteEStruct_e3314e1e61d6 as FLTPARAMETERSPrepareMdlWriteEStruct}
+
+pub using @df18ce97167074c2 {type FLTPARAMETERSQueryEaEStruct_69f68918e6e4 as FLTPARAMETERSQueryEaEStruct}
+
+pub using @df18ce97167074c2 {type FLTPARAMETERSQueryFileInformationEStruct_ec185fce73b7 as FLTPARAMETERSQueryFileInformationEStruct}
+
+pub using @df18ce97167074c2 {type FLTPARAMETERSQueryOpenEStruct_b164e1cc525f as FLTPARAMETERSQueryOpenEStruct}
+
+pub using @df18ce97167074c2 {type FLTPARAMETERSQueryQuotaEStruct_3387965fe782 as FLTPARAMETERSQueryQuotaEStruct}
+
+pub using @df18ce97167074c2 {type FLTPARAMETERSQuerySecurityEStruct_49a8fda1b4ed as FLTPARAMETERSQuerySecurityEStruct}
+
+pub using @df18ce97167074c2 {type FLTPARAMETERSQueryVolumeInformationEStruct_a4e09c26a22b as FLTPARAMETERSQueryVolumeInformationEStruct}
+
+pub using @df18ce97167074c2 {type FLTPARAMETERSReadEStruct_831d05799156 as FLTPARAMETERSReadEStruct}
+
+pub using @df18ce97167074c2 {type FLTPARAMETERSReleaseForModifiedPageWriterEStruct_14282afaa910 as FLTPARAMETERSReleaseForModifiedPageWriterEStruct}
+
+pub using @df18ce97167074c2 {type FLTPARAMETERSSetEaEStruct_948d531a5a59 as FLTPARAMETERSSetEaEStruct}
+
+pub using @df18ce97167074c2 {type FLTPARAMETERSSetFileInformationEStruct_bc9114325b32 as FLTPARAMETERSSetFileInformationEStruct}
+
+pub using @df18ce97167074c2 {type FLTPARAMETERSSetFileInformationEStructAnonymousEUnion_059246098d66 as FLTPARAMETERSSetFileInformationEStructAnonymousEUnion}
+
+pub using @df18ce97167074c2 {type FLTPARAMETERSSetFileInformationEStructAnonymousEUnionAnonymousEStruct_43043cd82a19 as FLTPARAMETERSSetFileInformationEStructAnonymousEUnionAnonymousEStruct}
+
+pub using @df18ce97167074c2 {type FLTPARAMETERSSetQuotaEStruct_6a8e73c727c6 as FLTPARAMETERSSetQuotaEStruct}
+
+pub using @df18ce97167074c2 {type FLTPARAMETERSSetSecurityEStruct_310bc010484c as FLTPARAMETERSSetSecurityEStruct}
+
+pub using @df18ce97167074c2 {type FLTPARAMETERSSetVolumeInformationEStruct_8f5bf77cdcd8 as FLTPARAMETERSSetVolumeInformationEStruct}
+
+pub using @df18ce97167074c2 {type FLTPARAMETERSWMIEStruct_465999f95e00 as FLTPARAMETERSWMIEStruct}
+
+pub using @df18ce97167074c2 {type FLTPARAMETERSWriteEStruct_24aac9f0cdba as FLTPARAMETERSWriteEStruct}
+
+pub using @df18ce97167074c2 {type FLTPOSTOPCALLBACKSTATUS_79d77e62f8e1 as FLTPOSTOPCALLBACKSTATUS}
+
+pub using @df18ce97167074c2 {type FLTPREOPCALLBACKSTATUS_0dd0c6d5c390 as FLTPREOPCALLBACKSTATUS}
+
+pub using @df18ce97167074c2 {type FLTREGISTRATION_a824a47c22cc as FLTREGISTRATION}
+
+pub using @df18ce97167074c2 {type FLTRELATEDCONTEXTS_2695e6ac1bbd as FLTRELATEDCONTEXTS}
+
+pub using @df18ce97167074c2 {type FLTRELATEDCONTEXTSEX_434efdd390b3 as FLTRELATEDCONTEXTSEX}
+
+pub using @df18ce97167074c2 {type FLTRELATEDOBJECTS_7784d3871ba5 as FLTRELATEDOBJECTS}
+
+pub using @df18ce97167074c2 {type FLTSETCONTEXTOPERATION_c0b1f29d6a68 as FLTSETCONTEXTOPERATION}
+
+pub using @df18ce97167074c2 {type FLTTAGDATABUFFER_2d4442ab6301 as FLTTAGDATABUFFER}
+
+pub using @df18ce97167074c2 {type FLTTAGDATABUFFERAnonymousEUnion_646c811c61cb as FLTTAGDATABUFFERAnonymousEUnion}
+
+pub using @df18ce97167074c2 {type FLTTAGDATABUFFERAnonymousEUnionGenericGUIDReparseBufferEStruct_7372258f8d9d as FLTTAGDATABUFFERAnonymousEUnionGenericGUIDReparseBufferEStruct}
+
+pub using @df18ce97167074c2 {type FLTTAGDATABUFFERAnonymousEUnionGenericReparseBufferEStruct_a63b8fd1e6e3 as FLTTAGDATABUFFERAnonymousEUnionGenericReparseBufferEStruct}
+
+pub using @df18ce97167074c2 {type FLTTAGDATABUFFERAnonymousEUnionMountPointReparseBufferEStruct_6554154b4374 as FLTTAGDATABUFFERAnonymousEUnionMountPointReparseBufferEStruct}
+
+pub using @df18ce97167074c2 {type FLTTAGDATABUFFERAnonymousEUnionSymbolicLinkReparseBufferEStruct_2d7e9fc4469e as FLTTAGDATABUFFERAnonymousEUnionSymbolicLinkReparseBufferEStruct}
+
+pub using @df18ce97167074c2 {type FLTVOLUMEPROPERTIES_b760272aa699 as FLTVOLUMEPROPERTIES}
+
+pub using @df18ce97167074c2 {type PFLTCALLBACKDATAQUEUEACQUIRE_00cb56fab393 as PFLTCALLBACKDATAQUEUEACQUIRE}
+
+pub using @df18ce97167074c2 {type PFLTCALLBACKDATAQUEUECOMPLETECANCELEDIO_84ecf5340aed as PFLTCALLBACKDATAQUEUECOMPLETECANCELEDIO}
+
+pub using @df18ce97167074c2 {type PFLTCALLBACKDATAQUEUEINSERTIO_26430c75890b as PFLTCALLBACKDATAQUEUEINSERTIO}
+
+pub using @df18ce97167074c2 {type PFLTCALLBACKDATAQUEUEPEEKNEXTIO_f9025df33bf0 as PFLTCALLBACKDATAQUEUEPEEKNEXTIO}
+
+pub using @df18ce97167074c2 {type PFLTCALLBACKDATAQUEUERELEASE_2d2bb405eea3 as PFLTCALLBACKDATAQUEUERELEASE}
+
+pub using @df18ce97167074c2 {type PFLTCALLBACKDATAQUEUEREMOVEIO_cdcc7ea3da87 as PFLTCALLBACKDATAQUEUEREMOVEIO}
+
+pub using @df18ce97167074c2 {type PFLTCOMPLETECANCELEDCALLBACK_d3dd05991e1a as PFLTCOMPLETECANCELEDCALLBACK}
+
+pub using @df18ce97167074c2 {type PFLTCOMPLETEDASYNCIOCALLBACK_bad998aa7c3d as PFLTCOMPLETEDASYNCIOCALLBACK}
+
+pub using @df18ce97167074c2 {type PFLTCOMPLETELOCKCALLBACKDATAROUTINE_bda3859b0372 as PFLTCOMPLETELOCKCALLBACKDATAROUTINE}
+
+pub using @df18ce97167074c2 {type PFLTCONNECTNOTIFY_bd4ed82c2022 as PFLTCONNECTNOTIFY}
+
+pub using @df18ce97167074c2 {type PFLTCONTEXT_437cd1af08f3 as PFLTCONTEXT}
+
+pub using @df18ce97167074c2 {type PFLTCONTEXTALLOCATECALLBACK_a5159572eaa3 as PFLTCONTEXTALLOCATECALLBACK}
+
+pub using @df18ce97167074c2 {type PFLTCONTEXTCLEANUPCALLBACK_903725b50e2f as PFLTCONTEXTCLEANUPCALLBACK}
+
+pub using @df18ce97167074c2 {type PFLTCONTEXTFREECALLBACK_d10771f1c643 as PFLTCONTEXTFREECALLBACK}
+
+pub using @df18ce97167074c2 {type PFLTDEFERREDIOWORKITEM_70e90739705c as PFLTDEFERREDIOWORKITEM}
+
+pub using @df18ce97167074c2 {type PFLTDEFERREDIOWORKITEMROUTINE_ddbe66792b70 as PFLTDEFERREDIOWORKITEMROUTINE}
+
+pub using @df18ce97167074c2 {type PFLTDISCONNECTNOTIFY_ca156ca0fc79 as PFLTDISCONNECTNOTIFY}
+
+pub using @df18ce97167074c2 {type PFLTFILTER_0550b3088e4f as PFLTFILTER}
+
+pub using @df18ce97167074c2 {type PFLTFILTERUNLOADCALLBACK_8a69fc759582 as PFLTFILTERUNLOADCALLBACK}
+
+pub using @df18ce97167074c2 {type PFLTGENERATEFILENAME_494d1631c505 as PFLTGENERATEFILENAME}
+
+pub using @df18ce97167074c2 {type PFLTGENERICWORKITEM_9c4665b8ffa8 as PFLTGENERICWORKITEM}
+
+pub using @df18ce97167074c2 {type PFLTGENERICWORKITEMROUTINE_bbe25c94d45b as PFLTGENERICWORKITEMROUTINE}
+
+pub using @df18ce97167074c2 {type PFLTGETOPERATIONSTATUSCALLBACK_9bff9a8d7a80 as PFLTGETOPERATIONSTATUSCALLBACK}
+
+pub using @df18ce97167074c2 {type PFLTINSTANCE_c9842dab7c15 as PFLTINSTANCE}
+
+pub using @df18ce97167074c2 {type PFLTINSTANCEQUERYTEARDOWNCALLBACK_fb896710010c as PFLTINSTANCEQUERYTEARDOWNCALLBACK}
+
+pub using @df18ce97167074c2 {type PFLTINSTANCESETUPCALLBACK_087f04cf310c as PFLTINSTANCESETUPCALLBACK}
+
+pub using @df18ce97167074c2 {type PFLTINSTANCETEARDOWNCALLBACK_6bca373cafc2 as PFLTINSTANCETEARDOWNCALLBACK}
+
+pub using @df18ce97167074c2 {type PFLTMESSAGENOTIFY_7c783fe07586 as PFLTMESSAGENOTIFY}
+
+pub using @df18ce97167074c2 {type PFLTNORMALIZECONTEXTCLEANUP_66fb307734c4 as PFLTNORMALIZECONTEXTCLEANUP}
+
+pub using @df18ce97167074c2 {type PFLTNORMALIZENAMECOMPONENT_1a53955a147d as PFLTNORMALIZENAMECOMPONENT}
+
+pub using @df18ce97167074c2 {type PFLTNORMALIZENAMECOMPONENTEX_9fd20746ed52 as PFLTNORMALIZENAMECOMPONENTEX}
+
+pub using @df18ce97167074c2 {type PFLTOPLOCKPREPOSTCALLBACKDATAROUTINE_dfa10b372c50 as PFLTOPLOCKPREPOSTCALLBACKDATAROUTINE}
+
+pub using @df18ce97167074c2 {type PFLTOPLOCKWAITCOMPLETEROUTINE_f1c48b4206cc as PFLTOPLOCKWAITCOMPLETEROUTINE}
+
+pub using @df18ce97167074c2 {type PFLTPORT_68abca06242a as PFLTPORT}
+
+pub using @df18ce97167074c2 {type PFLTPOSTOPERATIONCALLBACK_b0bcb91b1d9c as PFLTPOSTOPERATIONCALLBACK}
+
+pub using @df18ce97167074c2 {type PFLTPREOPERATIONCALLBACK_9db13bb472ef as PFLTPREOPERATIONCALLBACK}
+
+pub using @df18ce97167074c2 {type PFLTSECTIONCONFLICTNOTIFICATIONCALLBACK_8cda8eb96aec as PFLTSECTIONCONFLICTNOTIFICATIONCALLBACK}
+
+pub using @df18ce97167074c2 {type PFLTTRANSACTIONNOTIFICATIONCALLBACK_b5a661f0f93a as PFLTTRANSACTIONNOTIFICATIONCALLBACK}
+
+pub using @df18ce97167074c2 {type PFLTVOLUME_9c32b3b6c570 as PFLTVOLUME}
+
+// Traits

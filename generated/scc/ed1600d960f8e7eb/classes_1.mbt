@@ -1,0 +1,2559 @@
+///|
+pub fn FAULTINFORMATIONARM64TYPE_fef4285bcc20::address_size_fault() -> FAULTINFORMATIONARM64TYPE_fef4285bcc20 {
+  FAULTINFORMATIONARM64TYPE_fef4285bcc20::from_int(1)
+}
+
+///|
+pub fn FAULTINFORMATIONARM64TYPE_fef4285bcc20::external_fault() -> FAULTINFORMATIONARM64TYPE_fef4285bcc20 {
+  FAULTINFORMATIONARM64TYPE_fef4285bcc20::from_int(3)
+}
+
+///|
+pub fn FAULTINFORMATIONARM64TYPE_fef4285bcc20::max_fault_type() -> FAULTINFORMATIONARM64TYPE_fef4285bcc20 {
+  FAULTINFORMATIONARM64TYPE_fef4285bcc20::from_int(7)
+}
+
+///|
+pub fn FAULTINFORMATIONARM64TYPE_fef4285bcc20::permission_fault() -> FAULTINFORMATIONARM64TYPE_fef4285bcc20 {
+  FAULTINFORMATIONARM64TYPE_fef4285bcc20::from_int(4)
+}
+
+///|
+pub fn FAULTINFORMATIONARM64TYPE_fef4285bcc20::tlb_match_conflict() -> FAULTINFORMATIONARM64TYPE_fef4285bcc20 {
+  FAULTINFORMATIONARM64TYPE_fef4285bcc20::from_int(2)
+}
+
+///|
+pub fn FAULTINFORMATIONARM64TYPE_fef4285bcc20::translation_fault() -> FAULTINFORMATIONARM64TYPE_fef4285bcc20 {
+  FAULTINFORMATIONARM64TYPE_fef4285bcc20::from_int(6)
+}
+
+///|
+pub fn FAULTINFORMATIONARM64TYPE_fef4285bcc20::unsupported_upstream_transaction() -> FAULTINFORMATIONARM64TYPE_fef4285bcc20 {
+  FAULTINFORMATIONARM64TYPE_fef4285bcc20::from_int(0)
+}
+
+///|
+pub fn HALAPICDESTINATIONMODE_e027b086e0fc::apic_destination_mode_logical_clustered() -> HALAPICDESTINATIONMODE_e027b086e0fc {
+  HALAPICDESTINATIONMODE_e027b086e0fc::from_int(3)
+}
+
+///|
+pub fn HALAPICDESTINATIONMODE_e027b086e0fc::apic_destination_mode_logical_flat() -> HALAPICDESTINATIONMODE_e027b086e0fc {
+  HALAPICDESTINATIONMODE_e027b086e0fc::from_int(2)
+}
+
+///|
+pub fn HALAPICDESTINATIONMODE_e027b086e0fc::apic_destination_mode_physical() -> HALAPICDESTINATIONMODE_e027b086e0fc {
+  HALAPICDESTINATIONMODE_e027b086e0fc::from_int(1)
+}
+
+///|
+pub fn HALAPICDESTINATIONMODE_e027b086e0fc::apic_destination_mode_unknown() -> HALAPICDESTINATIONMODE_e027b086e0fc {
+  HALAPICDESTINATIONMODE_e027b086e0fc::from_int(4)
+}
+
+///|
+pub fn HALDISPLAYBIOSINFORMATION_39547d911d78::hal_display_emulated_bios() -> HALDISPLAYBIOSINFORMATION_39547d911d78 {
+  HALDISPLAYBIOSINFORMATION_39547d911d78::from_int(1)
+}
+
+///|
+pub fn HALDISPLAYBIOSINFORMATION_39547d911d78::hal_display_int10_bios() -> HALDISPLAYBIOSINFORMATION_39547d911d78 {
+  HALDISPLAYBIOSINFORMATION_39547d911d78::from_int(0)
+}
+
+///|
+pub fn HALDISPLAYBIOSINFORMATION_39547d911d78::hal_display_no_bios() -> HALDISPLAYBIOSINFORMATION_39547d911d78 {
+  HALDISPLAYBIOSINFORMATION_39547d911d78::from_int(2)
+}
+
+///|
+pub fn HALDMACRASHDUMPREGISTERTYPE_c16cb1f9f4f9::hal_dma_crash_dump_register_set1() -> HALDMACRASHDUMPREGISTERTYPE_c16cb1f9f4f9 {
+  HALDMACRASHDUMPREGISTERTYPE_c16cb1f9f4f9::from_int(0)
+}
+
+///|
+pub fn HALDMACRASHDUMPREGISTERTYPE_c16cb1f9f4f9::hal_dma_crash_dump_register_set2() -> HALDMACRASHDUMPREGISTERTYPE_c16cb1f9f4f9 {
+  HALDMACRASHDUMPREGISTERTYPE_c16cb1f9f4f9::from_int(1)
+}
+
+///|
+pub fn HALDMACRASHDUMPREGISTERTYPE_c16cb1f9f4f9::hal_dma_crash_dump_register_set_max() -> HALDMACRASHDUMPREGISTERTYPE_c16cb1f9f4f9 {
+  HALDMACRASHDUMPREGISTERTYPE_c16cb1f9f4f9::from_int(2)
+}
+
+///|
+pub fn HALQUERYINFORMATIONCLASS_b3fc55e2fcd8::hal_acpi_audit_information() -> HALQUERYINFORMATIONCLASS_b3fc55e2fcd8 {
+  HALQUERYINFORMATIONCLASS_b3fc55e2fcd8::from_int(26)
+}
+
+///|
+pub fn HALQUERYINFORMATIONCLASS_b3fc55e2fcd8::hal_callback_information() -> HALQUERYINFORMATIONCLASS_b3fc55e2fcd8 {
+  HALQUERYINFORMATIONCLASS_b3fc55e2fcd8::from_int(5)
+}
+
+///|
+pub fn HALQUERYINFORMATIONCLASS_b3fc55e2fcd8::hal_channel_topology_information() -> HALQUERYINFORMATIONCLASS_b3fc55e2fcd8 {
+  HALQUERYINFORMATIONCLASS_b3fc55e2fcd8::from_int(31)
+}
+
+///|
+pub fn HALQUERYINFORMATIONCLASS_b3fc55e2fcd8::hal_cmc_log_information() -> HALQUERYINFORMATIONCLASS_b3fc55e2fcd8 {
+  HALQUERYINFORMATIONCLASS_b3fc55e2fcd8::from_int(13)
+}
+
+///|
+pub fn HALQUERYINFORMATIONCLASS_b3fc55e2fcd8::hal_cpe_log_information() -> HALQUERYINFORMATIONCLASS_b3fc55e2fcd8 {
+  HALQUERYINFORMATIONCLASS_b3fc55e2fcd8::from_int(14)
+}
+
+///|
+pub fn HALQUERYINFORMATIONCLASS_b3fc55e2fcd8::hal_display_bios_information() -> HALQUERYINFORMATIONCLASS_b3fc55e2fcd8 {
+  HALQUERYINFORMATIONCLASS_b3fc55e2fcd8::from_int(9)
+}
+
+///|
+pub fn HALQUERYINFORMATIONCLASS_b3fc55e2fcd8::hal_dma_remapping_information() -> HALQUERYINFORMATIONCLASS_b3fc55e2fcd8 {
+  HALQUERYINFORMATIONCLASS_b3fc55e2fcd8::from_int(47)
+}
+
+///|
+pub fn HALQUERYINFORMATIONCLASS_b3fc55e2fcd8::hal_error_information() -> HALQUERYINFORMATIONCLASS_b3fc55e2fcd8 {
+  HALQUERYINFORMATIONCLASS_b3fc55e2fcd8::from_int(12)
+}
+
+///|
+pub fn HALQUERYINFORMATIONCLASS_b3fc55e2fcd8::hal_external_cache_information() -> HALQUERYINFORMATIONCLASS_b3fc55e2fcd8 {
+  HALQUERYINFORMATIONCLASS_b3fc55e2fcd8::from_int(32)
+}
+
+///|
+pub fn HALQUERYINFORMATIONCLASS_b3fc55e2fcd8::hal_frame_buffer_caching_information() -> HALQUERYINFORMATIONCLASS_b3fc55e2fcd8 {
+  HALQUERYINFORMATIONCLASS_b3fc55e2fcd8::from_int(8)
+}
+
+///|
+pub fn HALQUERYINFORMATIONCLASS_b3fc55e2fcd8::hal_frequency_information() -> HALQUERYINFORMATIONCLASS_b3fc55e2fcd8 {
+  HALQUERYINFORMATIONCLASS_b3fc55e2fcd8::from_int(22)
+}
+
+///|
+pub fn HALQUERYINFORMATIONCLASS_b3fc55e2fcd8::hal_fw_boot_performance_information() -> HALQUERYINFORMATIONCLASS_b3fc55e2fcd8 {
+  HALQUERYINFORMATIONCLASS_b3fc55e2fcd8::from_int(34)
+}
+
+///|
+pub fn HALQUERYINFORMATIONCLASS_b3fc55e2fcd8::hal_fw_s3_performance_information() -> HALQUERYINFORMATIONCLASS_b3fc55e2fcd8 {
+  HALQUERYINFORMATIONCLASS_b3fc55e2fcd8::from_int(35)
+}
+
+///|
+pub fn HALQUERYINFORMATIONCLASS_b3fc55e2fcd8::hal_get_channel_power_information() -> HALQUERYINFORMATIONCLASS_b3fc55e2fcd8 {
+  HALQUERYINFORMATIONCLASS_b3fc55e2fcd8::from_int(36)
+}
+
+///|
+pub fn HALQUERYINFORMATIONCLASS_b3fc55e2fcd8::hal_hardware_watchdog_information() -> HALQUERYINFORMATIONCLASS_b3fc55e2fcd8 {
+  HALQUERYINFORMATIONCLASS_b3fc55e2fcd8::from_int(46)
+}
+
+///|
+pub fn HALQUERYINFORMATIONCLASS_b3fc55e2fcd8::hal_heterogeneous_memory_attributes_interface() -> HALQUERYINFORMATIONCLASS_b3fc55e2fcd8 {
+  HALQUERYINFORMATIONCLASS_b3fc55e2fcd8::from_int(49)
+}
+
+///|
+pub fn HALQUERYINFORMATIONCLASS_b3fc55e2fcd8::hal_hypervisor_information() -> HALQUERYINFORMATIONCLASS_b3fc55e2fcd8 {
+  HALQUERYINFORMATIONCLASS_b3fc55e2fcd8::from_int(24)
+}
+
+///|
+pub fn HALQUERYINFORMATIONCLASS_b3fc55e2fcd8::hal_information_class_unused1() -> HALQUERYINFORMATIONCLASS_b3fc55e2fcd8 {
+  HALQUERYINFORMATIONCLASS_b3fc55e2fcd8::from_int(2)
+}
+
+///|
+pub fn HALQUERYINFORMATIONCLASS_b3fc55e2fcd8::hal_init_log_information() -> HALQUERYINFORMATIONCLASS_b3fc55e2fcd8 {
+  HALQUERYINFORMATIONCLASS_b3fc55e2fcd8::from_int(21)
+}
+
+///|
+pub fn HALQUERYINFORMATIONCLASS_b3fc55e2fcd8::hal_installed_bus_information() -> HALQUERYINFORMATIONCLASS_b3fc55e2fcd8 {
+  HALQUERYINFORMATIONCLASS_b3fc55e2fcd8::from_int(0)
+}
+
+///|
+pub fn HALQUERYINFORMATIONCLASS_b3fc55e2fcd8::hal_interrupt_controller_information() -> HALQUERYINFORMATIONCLASS_b3fc55e2fcd8 {
+  HALQUERYINFORMATIONCLASS_b3fc55e2fcd8::from_int(39)
+}
+
+///|
+pub fn HALQUERYINFORMATIONCLASS_b3fc55e2fcd8::hal_irt_information() -> HALQUERYINFORMATIONCLASS_b3fc55e2fcd8 {
+  HALQUERYINFORMATIONCLASS_b3fc55e2fcd8::from_int(27)
+}
+
+///|
+pub fn HALQUERYINFORMATIONCLASS_b3fc55e2fcd8::hal_map_register_information() -> HALQUERYINFORMATIONCLASS_b3fc55e2fcd8 {
+  HALQUERYINFORMATIONCLASS_b3fc55e2fcd8::from_int(6)
+}
+
+///|
+pub fn HALQUERYINFORMATIONCLASS_b3fc55e2fcd8::hal_mca_log_information() -> HALQUERYINFORMATIONCLASS_b3fc55e2fcd8 {
+  HALQUERYINFORMATIONCLASS_b3fc55e2fcd8::from_int(7)
+}
+
+///|
+pub fn HALQUERYINFORMATIONCLASS_b3fc55e2fcd8::hal_numa_range_table_information() -> HALQUERYINFORMATIONCLASS_b3fc55e2fcd8 {
+  HALQUERYINFORMATIONCLASS_b3fc55e2fcd8::from_int(30)
+}
+
+///|
+pub fn HALQUERYINFORMATIONCLASS_b3fc55e2fcd8::hal_numa_topology_interface() -> HALQUERYINFORMATIONCLASS_b3fc55e2fcd8 {
+  HALQUERYINFORMATIONCLASS_b3fc55e2fcd8::from_int(11)
+}
+
+///|
+pub fn HALQUERYINFORMATIONCLASS_b3fc55e2fcd8::hal_parking_page_information() -> HALQUERYINFORMATIONCLASS_b3fc55e2fcd8 {
+  HALQUERYINFORMATIONCLASS_b3fc55e2fcd8::from_int(29)
+}
+
+///|
+pub fn HALQUERYINFORMATIONCLASS_b3fc55e2fcd8::hal_partition_ipi_interface() -> HALQUERYINFORMATIONCLASS_b3fc55e2fcd8 {
+  HALQUERYINFORMATIONCLASS_b3fc55e2fcd8::from_int(18)
+}
+
+///|
+pub fn HALQUERYINFORMATIONCLASS_b3fc55e2fcd8::hal_platform_information() -> HALQUERYINFORMATIONCLASS_b3fc55e2fcd8 {
+  HALQUERYINFORMATIONCLASS_b3fc55e2fcd8::from_int(19)
+}
+
+///|
+pub fn HALQUERYINFORMATIONCLASS_b3fc55e2fcd8::hal_platform_timer_information() -> HALQUERYINFORMATIONCLASS_b3fc55e2fcd8 {
+  HALQUERYINFORMATIONCLASS_b3fc55e2fcd8::from_int(25)
+}
+
+///|
+pub fn HALQUERYINFORMATIONCLASS_b3fc55e2fcd8::hal_power_information() -> HALQUERYINFORMATIONCLASS_b3fc55e2fcd8 {
+  HALQUERYINFORMATIONCLASS_b3fc55e2fcd8::from_int(3)
+}
+
+///|
+pub fn HALQUERYINFORMATIONCLASS_b3fc55e2fcd8::hal_processor_brand_string() -> HALQUERYINFORMATIONCLASS_b3fc55e2fcd8 {
+  HALQUERYINFORMATIONCLASS_b3fc55e2fcd8::from_int(23)
+}
+
+///|
+pub fn HALQUERYINFORMATIONCLASS_b3fc55e2fcd8::hal_processor_feature_information() -> HALQUERYINFORMATIONCLASS_b3fc55e2fcd8 {
+  HALQUERYINFORMATIONCLASS_b3fc55e2fcd8::from_int(10)
+}
+
+///|
+pub fn HALQUERYINFORMATIONCLASS_b3fc55e2fcd8::hal_processor_speed_information() -> HALQUERYINFORMATIONCLASS_b3fc55e2fcd8 {
+  HALQUERYINFORMATIONCLASS_b3fc55e2fcd8::from_int(4)
+}
+
+///|
+pub fn HALQUERYINFORMATIONCLASS_b3fc55e2fcd8::hal_profile_source_information() -> HALQUERYINFORMATIONCLASS_b3fc55e2fcd8 {
+  HALQUERYINFORMATIONCLASS_b3fc55e2fcd8::from_int(1)
+}
+
+///|
+pub fn HALQUERYINFORMATIONCLASS_b3fc55e2fcd8::hal_psci_information() -> HALQUERYINFORMATIONCLASS_b3fc55e2fcd8 {
+  HALQUERYINFORMATIONCLASS_b3fc55e2fcd8::from_int(38)
+}
+
+///|
+pub fn HALQUERYINFORMATIONCLASS_b3fc55e2fcd8::hal_query_amli_illegal_io_port_addresses() -> HALQUERYINFORMATIONCLASS_b3fc55e2fcd8 {
+  HALQUERYINFORMATIONCLASS_b3fc55e2fcd8::from_int(16)
+}
+
+///|
+pub fn HALQUERYINFORMATIONCLASS_b3fc55e2fcd8::hal_query_acpi_wake_alarm_system_power_state_information() -> HALQUERYINFORMATIONCLASS_b3fc55e2fcd8 {
+  HALQUERYINFORMATIONCLASS_b3fc55e2fcd8::from_int(43)
+}
+
+///|
+pub fn HALQUERYINFORMATIONCLASS_b3fc55e2fcd8::hal_query_arm_errata_information() -> HALQUERYINFORMATIONCLASS_b3fc55e2fcd8 {
+  HALQUERYINFORMATIONCLASS_b3fc55e2fcd8::from_int(41)
+}
+
+///|
+pub fn HALQUERYINFORMATIONCLASS_b3fc55e2fcd8::hal_query_debugger_information() -> HALQUERYINFORMATIONCLASS_b3fc55e2fcd8 {
+  HALQUERYINFORMATIONCLASS_b3fc55e2fcd8::from_int(33)
+}
+
+///|
+pub fn HALQUERYINFORMATIONCLASS_b3fc55e2fcd8::hal_query_hyperlaunch_entrypoint() -> HALQUERYINFORMATIONCLASS_b3fc55e2fcd8 {
+  HALQUERYINFORMATIONCLASS_b3fc55e2fcd8::from_int(45)
+}
+
+///|
+pub fn HALQUERYINFORMATIONCLASS_b3fc55e2fcd8::hal_query_iommu_reserved_region_information() -> HALQUERYINFORMATIONCLASS_b3fc55e2fcd8 {
+  HALQUERYINFORMATIONCLASS_b3fc55e2fcd8::from_int(40)
+}
+
+///|
+pub fn HALQUERYINFORMATIONCLASS_b3fc55e2fcd8::hal_query_max_hot_plug_memory_address() -> HALQUERYINFORMATIONCLASS_b3fc55e2fcd8 {
+  HALQUERYINFORMATIONCLASS_b3fc55e2fcd8::from_int(17)
+}
+
+///|
+pub fn HALQUERYINFORMATIONCLASS_b3fc55e2fcd8::hal_query_mca_interface() -> HALQUERYINFORMATIONCLASS_b3fc55e2fcd8 {
+  HALQUERYINFORMATIONCLASS_b3fc55e2fcd8::from_int(15)
+}
+
+///|
+pub fn HALQUERYINFORMATIONCLASS_b3fc55e2fcd8::hal_query_per_device_msi_limit_information() -> HALQUERYINFORMATIONCLASS_b3fc55e2fcd8 {
+  HALQUERYINFORMATIONCLASS_b3fc55e2fcd8::from_int(50)
+}
+
+///|
+pub fn HALQUERYINFORMATIONCLASS_b3fc55e2fcd8::hal_query_processor_efficiency_information() -> HALQUERYINFORMATIONCLASS_b3fc55e2fcd8 {
+  HALQUERYINFORMATIONCLASS_b3fc55e2fcd8::from_int(42)
+}
+
+///|
+pub fn HALQUERYINFORMATIONCLASS_b3fc55e2fcd8::hal_query_profile_corruption_status() -> HALQUERYINFORMATIONCLASS_b3fc55e2fcd8 {
+  HALQUERYINFORMATIONCLASS_b3fc55e2fcd8::from_int(51)
+}
+
+///|
+pub fn HALQUERYINFORMATIONCLASS_b3fc55e2fcd8::hal_query_profile_counter_ownership() -> HALQUERYINFORMATIONCLASS_b3fc55e2fcd8 {
+  HALQUERYINFORMATIONCLASS_b3fc55e2fcd8::from_int(52)
+}
+
+///|
+pub fn HALQUERYINFORMATIONCLASS_b3fc55e2fcd8::hal_query_profile_number_of_counters() -> HALQUERYINFORMATIONCLASS_b3fc55e2fcd8 {
+  HALQUERYINFORMATIONCLASS_b3fc55e2fcd8::from_int(44)
+}
+
+///|
+pub fn HALQUERYINFORMATIONCLASS_b3fc55e2fcd8::hal_query_profile_source_list() -> HALQUERYINFORMATIONCLASS_b3fc55e2fcd8 {
+  HALQUERYINFORMATIONCLASS_b3fc55e2fcd8::from_int(20)
+}
+
+///|
+pub fn HALQUERYINFORMATIONCLASS_b3fc55e2fcd8::hal_query_state_element_information() -> HALQUERYINFORMATIONCLASS_b3fc55e2fcd8 {
+  HALQUERYINFORMATIONCLASS_b3fc55e2fcd8::from_int(37)
+}
+
+///|
+pub fn HALQUERYINFORMATIONCLASS_b3fc55e2fcd8::hal_query_unused0001() -> HALQUERYINFORMATIONCLASS_b3fc55e2fcd8 {
+  HALQUERYINFORMATIONCLASS_b3fc55e2fcd8::from_int(48)
+}
+
+///|
+pub fn HALQUERYINFORMATIONCLASS_b3fc55e2fcd8::hal_secondary_interrupt_information() -> HALQUERYINFORMATIONCLASS_b3fc55e2fcd8 {
+  HALQUERYINFORMATIONCLASS_b3fc55e2fcd8::from_int(28)
+}
+
+///|
+pub fn HALSETINFORMATIONCLASS_89a959084b2f::hal_cmc_log() -> HALSETINFORMATIONCLASS_89a959084b2f {
+  HALSETINFORMATIONCLASS_89a959084b2f::from_int(7)
+}
+
+///|
+pub fn HALSETINFORMATIONCLASS_89a959084b2f::hal_cmc_register_driver() -> HALSETINFORMATIONCLASS_89a959084b2f {
+  HALSETINFORMATIONCLASS_89a959084b2f::from_int(4)
+}
+
+///|
+pub fn HALSETINFORMATIONCLASS_89a959084b2f::hal_cpe_log() -> HALSETINFORMATIONCLASS_89a959084b2f {
+  HALSETINFORMATIONCLASS_89a959084b2f::from_int(8)
+}
+
+///|
+pub fn HALSETINFORMATIONCLASS_89a959084b2f::hal_cpe_register_driver() -> HALSETINFORMATIONCLASS_89a959084b2f {
+  HALSETINFORMATIONCLASS_89a959084b2f::from_int(5)
+}
+
+///|
+pub fn HALSETINFORMATIONCLASS_89a959084b2f::hal_enlightenment() -> HALSETINFORMATIONCLASS_89a959084b2f {
+  HALSETINFORMATIONCLASS_89a959084b2f::from_int(11)
+}
+
+///|
+pub fn HALSETINFORMATIONCLASS_89a959084b2f::hal_generate_cmc_interrupt() -> HALSETINFORMATIONCLASS_89a959084b2f {
+  HALSETINFORMATIONCLASS_89a959084b2f::from_int(9)
+}
+
+///|
+pub fn HALSETINFORMATIONCLASS_89a959084b2f::hal_i386_exception_chain_terminator_information() -> HALSETINFORMATIONCLASS_89a959084b2f {
+  HALSETINFORMATIONCLASS_89a959084b2f::from_int(15)
+}
+
+///|
+pub fn HALSETINFORMATIONCLASS_89a959084b2f::hal_kernel_error_handler() -> HALSETINFORMATIONCLASS_89a959084b2f {
+  HALSETINFORMATIONCLASS_89a959084b2f::from_int(3)
+}
+
+///|
+pub fn HALSETINFORMATIONCLASS_89a959084b2f::hal_mca_log() -> HALSETINFORMATIONCLASS_89a959084b2f {
+  HALSETINFORMATIONCLASS_89a959084b2f::from_int(6)
+}
+
+///|
+pub fn HALSETINFORMATIONCLASS_89a959084b2f::hal_mca_register_driver() -> HALSETINFORMATIONCLASS_89a959084b2f {
+  HALSETINFORMATIONCLASS_89a959084b2f::from_int(2)
+}
+
+///|
+pub fn HALSETINFORMATIONCLASS_89a959084b2f::hal_profile_dpgo_source_interrupt_handler() -> HALSETINFORMATIONCLASS_89a959084b2f {
+  HALSETINFORMATIONCLASS_89a959084b2f::from_int(12)
+}
+
+///|
+pub fn HALSETINFORMATIONCLASS_89a959084b2f::hal_profile_source_add() -> HALSETINFORMATIONCLASS_89a959084b2f {
+  HALSETINFORMATIONCLASS_89a959084b2f::from_int(20)
+}
+
+///|
+pub fn HALSETINFORMATIONCLASS_89a959084b2f::hal_profile_source_interrupt_handler() -> HALSETINFORMATIONCLASS_89a959084b2f {
+  HALSETINFORMATIONCLASS_89a959084b2f::from_int(1)
+}
+
+///|
+pub fn HALSETINFORMATIONCLASS_89a959084b2f::hal_profile_source_interval() -> HALSETINFORMATIONCLASS_89a959084b2f {
+  HALSETINFORMATIONCLASS_89a959084b2f::from_int(0)
+}
+
+///|
+pub fn HALSETINFORMATIONCLASS_89a959084b2f::hal_profile_source_remove() -> HALSETINFORMATIONCLASS_89a959084b2f {
+  HALSETINFORMATIONCLASS_89a959084b2f::from_int(21)
+}
+
+///|
+pub fn HALSETINFORMATIONCLASS_89a959084b2f::hal_profile_source_timer_handler() -> HALSETINFORMATIONCLASS_89a959084b2f {
+  HALSETINFORMATIONCLASS_89a959084b2f::from_int(10)
+}
+
+///|
+pub fn HALSETINFORMATIONCLASS_89a959084b2f::hal_register_secondary_interrupt_interface() -> HALSETINFORMATIONCLASS_89a959084b2f {
+  HALSETINFORMATIONCLASS_89a959084b2f::from_int(13)
+}
+
+///|
+pub fn HALSETINFORMATIONCLASS_89a959084b2f::hal_set_channel_power_information() -> HALSETINFORMATIONCLASS_89a959084b2f {
+  HALSETINFORMATIONCLASS_89a959084b2f::from_int(14)
+}
+
+///|
+pub fn HALSETINFORMATIONCLASS_89a959084b2f::hal_set_clock_timer_minimum_interval() -> HALSETINFORMATIONCLASS_89a959084b2f {
+  HALSETINFORMATIONCLASS_89a959084b2f::from_int(23)
+}
+
+///|
+pub fn HALSETINFORMATIONCLASS_89a959084b2f::hal_set_hvci_enabled() -> HALSETINFORMATIONCLASS_89a959084b2f {
+  HALSETINFORMATIONCLASS_89a959084b2f::from_int(18)
+}
+
+///|
+pub fn HALSETINFORMATIONCLASS_89a959084b2f::hal_set_processor_trace_interrupt_handler() -> HALSETINFORMATIONCLASS_89a959084b2f {
+  HALSETINFORMATIONCLASS_89a959084b2f::from_int(19)
+}
+
+///|
+pub fn HALSETINFORMATIONCLASS_89a959084b2f::hal_set_psci_suspend_mode() -> HALSETINFORMATIONCLASS_89a959084b2f {
+  HALSETINFORMATIONCLASS_89a959084b2f::from_int(17)
+}
+
+///|
+pub fn HALSETINFORMATIONCLASS_89a959084b2f::hal_set_reset_park_disposition() -> HALSETINFORMATIONCLASS_89a959084b2f {
+  HALSETINFORMATIONCLASS_89a959084b2f::from_int(16)
+}
+
+///|
+pub fn HALSETINFORMATIONCLASS_89a959084b2f::hal_set_sw_interrupt_handler() -> HALSETINFORMATIONCLASS_89a959084b2f {
+  HALSETINFORMATIONCLASS_89a959084b2f::from_int(22)
+}
+
+///|
+pub fn HARDWARECOUNTERTYPE_606168a93d31::max_hardware_counter_type() -> HARDWARECOUNTERTYPE_606168a93d31 {
+  HARDWARECOUNTERTYPE_606168a93d31::from_int(1)
+}
+
+///|
+pub fn HARDWARECOUNTERTYPE_606168a93d31::pmc_counter() -> HARDWARECOUNTERTYPE_606168a93d31 {
+  HARDWARECOUNTERTYPE_606168a93d31::from_int(0)
+}
+
+///|
+pub fn INTELCACHETYPE_6b77f8e14828::intel_cache_data() -> INTELCACHETYPE_6b77f8e14828 {
+  INTELCACHETYPE_6b77f8e14828::from_int(1)
+}
+
+///|
+pub fn INTELCACHETYPE_6b77f8e14828::intel_cache_instruction() -> INTELCACHETYPE_6b77f8e14828 {
+  INTELCACHETYPE_6b77f8e14828::from_int(2)
+}
+
+///|
+pub fn INTELCACHETYPE_6b77f8e14828::intel_cache_null() -> INTELCACHETYPE_6b77f8e14828 {
+  INTELCACHETYPE_6b77f8e14828::from_int(0)
+}
+
+///|
+pub fn INTELCACHETYPE_6b77f8e14828::intel_cache_ram() -> INTELCACHETYPE_6b77f8e14828 {
+  INTELCACHETYPE_6b77f8e14828::from_int(4)
+}
+
+///|
+pub fn INTELCACHETYPE_6b77f8e14828::intel_cache_trace() -> INTELCACHETYPE_6b77f8e14828 {
+  INTELCACHETYPE_6b77f8e14828::from_int(5)
+}
+
+///|
+pub fn INTELCACHETYPE_6b77f8e14828::intel_cache_unified() -> INTELCACHETYPE_6b77f8e14828 {
+  INTELCACHETYPE_6b77f8e14828::from_int(3)
+}
+
+///|
+pub fn INTERFACETYPE_8386f73a57bf::acpi_bus() -> INTERFACETYPE_8386f73a57bf {
+  INTERFACETYPE_8386f73a57bf::from_int(17)
+}
+
+///|
+pub fn INTERFACETYPE_8386f73a57bf::c_bus() -> INTERFACETYPE_8386f73a57bf {
+  INTERFACETYPE_8386f73a57bf::from_int(9)
+}
+
+///|
+pub fn INTERFACETYPE_8386f73a57bf::eisa() -> INTERFACETYPE_8386f73a57bf {
+  INTERFACETYPE_8386f73a57bf::from_int(2)
+}
+
+///|
+pub fn INTERFACETYPE_8386f73a57bf::undefined() -> INTERFACETYPE_8386f73a57bf {
+  INTERFACETYPE_8386f73a57bf::from_int(-1)
+}
+
+///|
+pub fn INTERFACETYPE_8386f73a57bf::internal() -> INTERFACETYPE_8386f73a57bf {
+  INTERFACETYPE_8386f73a57bf::from_int(0)
+}
+
+///|
+pub fn INTERFACETYPE_8386f73a57bf::internal_power_bus() -> INTERFACETYPE_8386f73a57bf {
+  INTERFACETYPE_8386f73a57bf::from_int(13)
+}
+
+///|
+pub fn INTERFACETYPE_8386f73a57bf::isa() -> INTERFACETYPE_8386f73a57bf {
+  INTERFACETYPE_8386f73a57bf::from_int(1)
+}
+
+///|
+pub fn INTERFACETYPE_8386f73a57bf::mpi_bus() -> INTERFACETYPE_8386f73a57bf {
+  INTERFACETYPE_8386f73a57bf::from_int(10)
+}
+
+///|
+pub fn INTERFACETYPE_8386f73a57bf::mpsa_bus() -> INTERFACETYPE_8386f73a57bf {
+  INTERFACETYPE_8386f73a57bf::from_int(11)
+}
+
+///|
+pub fn INTERFACETYPE_8386f73a57bf::maximum_interface_type() -> INTERFACETYPE_8386f73a57bf {
+  INTERFACETYPE_8386f73a57bf::from_int(18)
+}
+
+///|
+pub fn INTERFACETYPE_8386f73a57bf::micro_channel() -> INTERFACETYPE_8386f73a57bf {
+  INTERFACETYPE_8386f73a57bf::from_int(3)
+}
+
+///|
+pub fn INTERFACETYPE_8386f73a57bf::nu_bus() -> INTERFACETYPE_8386f73a57bf {
+  INTERFACETYPE_8386f73a57bf::from_int(7)
+}
+
+///|
+pub fn INTERFACETYPE_8386f73a57bf::pci_bus() -> INTERFACETYPE_8386f73a57bf {
+  INTERFACETYPE_8386f73a57bf::from_int(5)
+}
+
+///|
+pub fn INTERFACETYPE_8386f73a57bf::pcmcia_bus() -> INTERFACETYPE_8386f73a57bf {
+  INTERFACETYPE_8386f73a57bf::from_int(8)
+}
+
+///|
+pub fn INTERFACETYPE_8386f73a57bf::pnp_bus() -> INTERFACETYPE_8386f73a57bf {
+  INTERFACETYPE_8386f73a57bf::from_int(15)
+}
+
+///|
+pub fn INTERFACETYPE_8386f73a57bf::pnpisa_bus() -> INTERFACETYPE_8386f73a57bf {
+  INTERFACETYPE_8386f73a57bf::from_int(14)
+}
+
+///|
+pub fn INTERFACETYPE_8386f73a57bf::processor_internal() -> INTERFACETYPE_8386f73a57bf {
+  INTERFACETYPE_8386f73a57bf::from_int(12)
+}
+
+///|
+pub fn INTERFACETYPE_8386f73a57bf::turbo_channel() -> INTERFACETYPE_8386f73a57bf {
+  INTERFACETYPE_8386f73a57bf::from_int(4)
+}
+
+///|
+pub fn INTERFACETYPE_8386f73a57bf::vme_bus() -> INTERFACETYPE_8386f73a57bf {
+  INTERFACETYPE_8386f73a57bf::from_int(6)
+}
+
+///|
+pub fn INTERFACETYPE_8386f73a57bf::vmcs() -> INTERFACETYPE_8386f73a57bf {
+  INTERFACETYPE_8386f73a57bf::from_int(16)
+}
+
+///|
+pub fn INTERLOCKEDRESULT_3992902a23d3::result_negative() -> INTERLOCKEDRESULT_3992902a23d3 {
+  INTERLOCKEDRESULT_3992902a23d3::from_int(32768)
+}
+
+///|
+pub fn INTERLOCKEDRESULT_3992902a23d3::result_positive() -> INTERLOCKEDRESULT_3992902a23d3 {
+  INTERLOCKEDRESULT_3992902a23d3::from_int(0)
+}
+
+///|
+pub fn INTERLOCKEDRESULT_3992902a23d3::result_zero() -> INTERLOCKEDRESULT_3992902a23d3 {
+  INTERLOCKEDRESULT_3992902a23d3::from_int(16384)
+}
+
+///|
+pub fn IOMMUDEVICECREATIONCONFIGURATIONTYPE_4cd825ee788a::iommu_device_creation_config_type_acpi() -> IOMMUDEVICECREATIONCONFIGURATIONTYPE_4cd825ee788a {
+  IOMMUDEVICECREATIONCONFIGURATIONTYPE_4cd825ee788a::from_int(1)
+}
+
+///|
+pub fn IOMMUDEVICECREATIONCONFIGURATIONTYPE_4cd825ee788a::iommu_device_creation_config_type_device_id() -> IOMMUDEVICECREATIONCONFIGURATIONTYPE_4cd825ee788a {
+  IOMMUDEVICECREATIONCONFIGURATIONTYPE_4cd825ee788a::from_int(2)
+}
+
+///|
+pub fn IOMMUDEVICECREATIONCONFIGURATIONTYPE_4cd825ee788a::iommu_device_creation_config_type_max() -> IOMMUDEVICECREATIONCONFIGURATIONTYPE_4cd825ee788a {
+  IOMMUDEVICECREATIONCONFIGURATIONTYPE_4cd825ee788a::from_int(3)
+}
+
+///|
+pub fn IOMMUDEVICECREATIONCONFIGURATIONTYPE_4cd825ee788a::iommu_device_creation_config_type_none() -> IOMMUDEVICECREATIONCONFIGURATIONTYPE_4cd825ee788a {
+  IOMMUDEVICECREATIONCONFIGURATIONTYPE_4cd825ee788a::from_int(0)
+}
+
+///|
+pub fn IOMMUDMADOMAINTYPE_80fcd99a3694::domain_type_max() -> IOMMUDMADOMAINTYPE_80fcd99a3694 {
+  IOMMUDMADOMAINTYPE_80fcd99a3694::from_int(3)
+}
+
+///|
+pub fn IOMMUDMADOMAINTYPE_80fcd99a3694::domain_type_pass_through() -> IOMMUDMADOMAINTYPE_80fcd99a3694 {
+  IOMMUDMADOMAINTYPE_80fcd99a3694::from_int(1)
+}
+
+///|
+pub fn IOMMUDMADOMAINTYPE_80fcd99a3694::domain_type_translate() -> IOMMUDMADOMAINTYPE_80fcd99a3694 {
+  IOMMUDMADOMAINTYPE_80fcd99a3694::from_int(0)
+}
+
+///|
+pub fn IOMMUDMADOMAINTYPE_80fcd99a3694::domain_type_unmanaged() -> IOMMUDMADOMAINTYPE_80fcd99a3694 {
+  IOMMUDMADOMAINTYPE_80fcd99a3694::from_int(2)
+}
+
+///|
+pub fn IOMMUDMALOGICALALLOCATORTYPE_637ff715a611::iommu_dma_logical_allocator_buddy() -> IOMMUDMALOGICALALLOCATORTYPE_637ff715a611 {
+  IOMMUDMALOGICALALLOCATORTYPE_637ff715a611::from_int(1)
+}
+
+///|
+pub fn IOMMUDMALOGICALALLOCATORTYPE_637ff715a611::iommu_dma_logical_allocator_max() -> IOMMUDMALOGICALALLOCATORTYPE_637ff715a611 {
+  IOMMUDMALOGICALALLOCATORTYPE_637ff715a611::from_int(2)
+}
+
+///|
+pub fn IOMMUDMALOGICALALLOCATORTYPE_637ff715a611::iommu_dma_logical_allocator_none() -> IOMMUDMALOGICALALLOCATORTYPE_637ff715a611 {
+  IOMMUDMALOGICALALLOCATORTYPE_637ff715a611::from_int(0)
+}
+
+///|
+pub fn IOMMUMAPPHYSICALADDRESSTYPE_2ff963bac4da::map_physical_address_type_contiguous_range() -> IOMMUMAPPHYSICALADDRESSTYPE_2ff963bac4da {
+  IOMMUMAPPHYSICALADDRESSTYPE_2ff963bac4da::from_int(1)
+}
+
+///|
+pub fn IOMMUMAPPHYSICALADDRESSTYPE_2ff963bac4da::map_physical_address_type_max() -> IOMMUMAPPHYSICALADDRESSTYPE_2ff963bac4da {
+  IOMMUMAPPHYSICALADDRESSTYPE_2ff963bac4da::from_int(3)
+}
+
+///|
+pub fn IOMMUMAPPHYSICALADDRESSTYPE_2ff963bac4da::map_physical_address_type_mdl() -> IOMMUMAPPHYSICALADDRESSTYPE_2ff963bac4da {
+  IOMMUMAPPHYSICALADDRESSTYPE_2ff963bac4da::from_int(0)
+}
+
+///|
+pub fn IOMMUMAPPHYSICALADDRESSTYPE_2ff963bac4da::map_physical_address_type_pfn() -> IOMMUMAPPHYSICALADDRESSTYPE_2ff963bac4da {
+  IOMMUMAPPHYSICALADDRESSTYPE_2ff963bac4da::from_int(2)
+}
+
+///|
+pub fn IOACCESSMODE_f7c1da34eadb::random_access() -> IOACCESSMODE_f7c1da34eadb {
+  IOACCESSMODE_f7c1da34eadb::from_int(1)
+}
+
+///|
+pub fn IOACCESSMODE_f7c1da34eadb::sequential_access() -> IOACCESSMODE_f7c1da34eadb {
+  IOACCESSMODE_f7c1da34eadb::from_int(0)
+}
+
+///|
+pub fn IOACCESSTYPE_d985ab95d1b8::modify_access() -> IOACCESSTYPE_d985ab95d1b8 {
+  IOACCESSTYPE_d985ab95d1b8::from_int(2)
+}
+
+///|
+pub fn IOACCESSTYPE_d985ab95d1b8::read_access() -> IOACCESSTYPE_d985ab95d1b8 {
+  IOACCESSTYPE_d985ab95d1b8::from_int(0)
+}
+
+///|
+pub fn IOACCESSTYPE_d985ab95d1b8::write_access() -> IOACCESSTYPE_d985ab95d1b8 {
+  IOACCESSTYPE_d985ab95d1b8::from_int(1)
+}
+
+///|
+pub fn IOALLOCATIONACTION_de4ff148e7fb::deallocate_object() -> IOALLOCATIONACTION_de4ff148e7fb {
+  IOALLOCATIONACTION_de4ff148e7fb::from_int(2)
+}
+
+///|
+pub fn IOALLOCATIONACTION_de4ff148e7fb::deallocate_object_keep_registers() -> IOALLOCATIONACTION_de4ff148e7fb {
+  IOALLOCATIONACTION_de4ff148e7fb::from_int(3)
+}
+
+///|
+pub fn IOALLOCATIONACTION_de4ff148e7fb::keep_object() -> IOALLOCATIONACTION_de4ff148e7fb {
+  IOALLOCATIONACTION_de4ff148e7fb::from_int(1)
+}
+
+///|
+pub fn IOCOMPLETIONROUTINERESULT_ec209a353292::continue_completion() -> IOCOMPLETIONROUTINERESULT_ec209a353292 {
+  IOCOMPLETIONROUTINERESULT_ec209a353292::from_int(0)
+}
+
+///|
+pub fn IOCOMPLETIONROUTINERESULT_ec209a353292::stop_completion() -> IOCOMPLETIONROUTINERESULT_ec209a353292 {
+  IOCOMPLETIONROUTINERESULT_ec209a353292::from_int(-1073741802)
+}
+
+///|
+pub fn IOCONTAINERINFORMATIONCLASS_47abeae20d94::io_max_container_information_class() -> IOCONTAINERINFORMATIONCLASS_47abeae20d94 {
+  IOCONTAINERINFORMATIONCLASS_47abeae20d94::from_int(1)
+}
+
+///|
+pub fn IOCONTAINERINFORMATIONCLASS_47abeae20d94::io_session_state_information() -> IOCONTAINERINFORMATIONCLASS_47abeae20d94 {
+  IOCONTAINERINFORMATIONCLASS_47abeae20d94::from_int(0)
+}
+
+///|
+pub fn IOCONTAINERNOTIFICATIONCLASS_ea4e486a37d3::io_max_container_notification_class() -> IOCONTAINERNOTIFICATIONCLASS_ea4e486a37d3 {
+  IOCONTAINERNOTIFICATIONCLASS_ea4e486a37d3::from_int(1)
+}
+
+///|
+pub fn IOCONTAINERNOTIFICATIONCLASS_ea4e486a37d3::io_session_state_notification() -> IOCONTAINERNOTIFICATIONCLASS_ea4e486a37d3 {
+  IOCONTAINERNOTIFICATIONCLASS_ea4e486a37d3::from_int(0)
+}
+
+///|
+pub fn IONOTIFICATIONEVENTCATEGORY_48c7ad72f63b::event_category_device_interface_change() -> IONOTIFICATIONEVENTCATEGORY_48c7ad72f63b {
+  IONOTIFICATIONEVENTCATEGORY_48c7ad72f63b::from_int(2)
+}
+
+///|
+pub fn IONOTIFICATIONEVENTCATEGORY_48c7ad72f63b::event_category_hardware_profile_change() -> IONOTIFICATIONEVENTCATEGORY_48c7ad72f63b {
+  IONOTIFICATIONEVENTCATEGORY_48c7ad72f63b::from_int(1)
+}
+
+///|
+pub fn IONOTIFICATIONEVENTCATEGORY_48c7ad72f63b::event_category_kernel_soft_restart() -> IONOTIFICATIONEVENTCATEGORY_48c7ad72f63b {
+  IONOTIFICATIONEVENTCATEGORY_48c7ad72f63b::from_int(4)
+}
+
+///|
+pub fn IONOTIFICATIONEVENTCATEGORY_48c7ad72f63b::event_category_reserved() -> IONOTIFICATIONEVENTCATEGORY_48c7ad72f63b {
+  IONOTIFICATIONEVENTCATEGORY_48c7ad72f63b::from_int(0)
+}
+
+///|
+pub fn IONOTIFICATIONEVENTCATEGORY_48c7ad72f63b::event_category_target_device_change() -> IONOTIFICATIONEVENTCATEGORY_48c7ad72f63b {
+  IONOTIFICATIONEVENTCATEGORY_48c7ad72f63b::from_int(3)
+}
+
+///|
+pub fn IOPAGINGPRIORITY_01c972bb0593::high() -> IOPAGINGPRIORITY_01c972bb0593 {
+  IOPAGINGPRIORITY_01c972bb0593::from_int(2)
+}
+
+///|
+pub fn IOPAGINGPRIORITY_01c972bb0593::invalid() -> IOPAGINGPRIORITY_01c972bb0593 {
+  IOPAGINGPRIORITY_01c972bb0593::from_int(0)
+}
+
+///|
+pub fn IOPAGINGPRIORITY_01c972bb0593::normal() -> IOPAGINGPRIORITY_01c972bb0593 {
+  IOPAGINGPRIORITY_01c972bb0593::from_int(1)
+}
+
+///|
+pub fn IOPAGINGPRIORITY_01c972bb0593::reserved1() -> IOPAGINGPRIORITY_01c972bb0593 {
+  IOPAGINGPRIORITY_01c972bb0593::from_int(3)
+}
+
+///|
+pub fn IOPAGINGPRIORITY_01c972bb0593::reserved2() -> IOPAGINGPRIORITY_01c972bb0593 {
+  IOPAGINGPRIORITY_01c972bb0593::from_int(4)
+}
+
+///|
+pub fn IOQUERYDEVICEDATAFORMAT_2f16d1e12b58::io_query_device_component_information() -> IOQUERYDEVICEDATAFORMAT_2f16d1e12b58 {
+  IOQUERYDEVICEDATAFORMAT_2f16d1e12b58::from_int(2)
+}
+
+///|
+pub fn IOQUERYDEVICEDATAFORMAT_2f16d1e12b58::io_query_device_configuration_data() -> IOQUERYDEVICEDATAFORMAT_2f16d1e12b58 {
+  IOQUERYDEVICEDATAFORMAT_2f16d1e12b58::from_int(1)
+}
+
+///|
+pub fn IOQUERYDEVICEDATAFORMAT_2f16d1e12b58::io_query_device_identifier() -> IOQUERYDEVICEDATAFORMAT_2f16d1e12b58 {
+  IOQUERYDEVICEDATAFORMAT_2f16d1e12b58::from_int(0)
+}
+
+///|
+pub fn IOQUERYDEVICEDATAFORMAT_2f16d1e12b58::io_query_device_max_data() -> IOQUERYDEVICEDATAFORMAT_2f16d1e12b58 {
+  IOQUERYDEVICEDATAFORMAT_2f16d1e12b58::from_int(3)
+}
+
+///|
+pub fn IOSESSIONEVENT_3c77a41c577c::connected() -> IOSESSIONEVENT_3c77a41c577c {
+  IOSESSIONEVENT_3c77a41c577c::from_int(3)
+}
+
+///|
+pub fn IOSESSIONEVENT_3c77a41c577c::created() -> IOSESSIONEVENT_3c77a41c577c {
+  IOSESSIONEVENT_3c77a41c577c::from_int(1)
+}
+
+///|
+pub fn IOSESSIONEVENT_3c77a41c577c::disconnected() -> IOSESSIONEVENT_3c77a41c577c {
+  IOSESSIONEVENT_3c77a41c577c::from_int(4)
+}
+
+///|
+pub fn IOSESSIONEVENT_3c77a41c577c::ignore_() -> IOSESSIONEVENT_3c77a41c577c {
+  IOSESSIONEVENT_3c77a41c577c::from_int(0)
+}
+
+///|
+pub fn IOSESSIONEVENT_3c77a41c577c::logoff() -> IOSESSIONEVENT_3c77a41c577c {
+  IOSESSIONEVENT_3c77a41c577c::from_int(6)
+}
+
+///|
+pub fn IOSESSIONEVENT_3c77a41c577c::logon() -> IOSESSIONEVENT_3c77a41c577c {
+  IOSESSIONEVENT_3c77a41c577c::from_int(5)
+}
+
+///|
+pub fn IOSESSIONEVENT_3c77a41c577c::max() -> IOSESSIONEVENT_3c77a41c577c {
+  IOSESSIONEVENT_3c77a41c577c::from_int(7)
+}
+
+///|
+pub fn IOSESSIONEVENT_3c77a41c577c::terminated() -> IOSESSIONEVENT_3c77a41c577c {
+  IOSESSIONEVENT_3c77a41c577c::from_int(2)
+}
+
+///|
+pub fn IOSESSIONSTATE_9f8cc8871852::connected() -> IOSESSIONSTATE_9f8cc8871852 {
+  IOSESSIONSTATE_9f8cc8871852::from_int(3)
+}
+
+///|
+pub fn IOSESSIONSTATE_9f8cc8871852::created() -> IOSESSIONSTATE_9f8cc8871852 {
+  IOSESSIONSTATE_9f8cc8871852::from_int(1)
+}
+
+///|
+pub fn IOSESSIONSTATE_9f8cc8871852::disconnected() -> IOSESSIONSTATE_9f8cc8871852 {
+  IOSESSIONSTATE_9f8cc8871852::from_int(4)
+}
+
+///|
+pub fn IOSESSIONSTATE_9f8cc8871852::disconnected_logged_on() -> IOSESSIONSTATE_9f8cc8871852 {
+  IOSESSIONSTATE_9f8cc8871852::from_int(5)
+}
+
+///|
+pub fn IOSESSIONSTATE_9f8cc8871852::initialized() -> IOSESSIONSTATE_9f8cc8871852 {
+  IOSESSIONSTATE_9f8cc8871852::from_int(2)
+}
+
+///|
+pub fn IOSESSIONSTATE_9f8cc8871852::logged_off() -> IOSESSIONSTATE_9f8cc8871852 {
+  IOSESSIONSTATE_9f8cc8871852::from_int(7)
+}
+
+///|
+pub fn IOSESSIONSTATE_9f8cc8871852::logged_on() -> IOSESSIONSTATE_9f8cc8871852 {
+  IOSESSIONSTATE_9f8cc8871852::from_int(6)
+}
+
+///|
+pub fn IOSESSIONSTATE_9f8cc8871852::max() -> IOSESSIONSTATE_9f8cc8871852 {
+  IOSESSIONSTATE_9f8cc8871852::from_int(9)
+}
+
+///|
+pub fn IOSESSIONSTATE_9f8cc8871852::terminated() -> IOSESSIONSTATE_9f8cc8871852 {
+  IOSESSIONSTATE_9f8cc8871852::from_int(8)
+}
+
+///|
+pub fn IRQDEVICEPOLICY_12eaf73ce5ed::irq_policy_all_close_processors() -> IRQDEVICEPOLICY_12eaf73ce5ed {
+  IRQDEVICEPOLICY_12eaf73ce5ed::from_int(1)
+}
+
+///|
+pub fn IRQDEVICEPOLICY_12eaf73ce5ed::irq_policy_all_processors_in_machine() -> IRQDEVICEPOLICY_12eaf73ce5ed {
+  IRQDEVICEPOLICY_12eaf73ce5ed::from_int(3)
+}
+
+///|
+pub fn IRQDEVICEPOLICY_12eaf73ce5ed::irq_policy_all_processors_in_machine_when_steered() -> IRQDEVICEPOLICY_12eaf73ce5ed {
+  IRQDEVICEPOLICY_12eaf73ce5ed::from_int(6)
+}
+
+///|
+pub fn IRQDEVICEPOLICY_12eaf73ce5ed::irq_policy_machine_default() -> IRQDEVICEPOLICY_12eaf73ce5ed {
+  IRQDEVICEPOLICY_12eaf73ce5ed::from_int(0)
+}
+
+///|
+pub fn IRQDEVICEPOLICY_12eaf73ce5ed::irq_policy_one_close_processor() -> IRQDEVICEPOLICY_12eaf73ce5ed {
+  IRQDEVICEPOLICY_12eaf73ce5ed::from_int(2)
+}
+
+///|
+pub fn IRQDEVICEPOLICY_12eaf73ce5ed::irq_policy_specified_processors() -> IRQDEVICEPOLICY_12eaf73ce5ed {
+  IRQDEVICEPOLICY_12eaf73ce5ed::from_int(4)
+}
+
+///|
+pub fn IRQDEVICEPOLICY_12eaf73ce5ed::irq_policy_spread_messages_across_all_processors() -> IRQDEVICEPOLICY_12eaf73ce5ed {
+  IRQDEVICEPOLICY_12eaf73ce5ed::from_int(5)
+}
+
+///|
+pub fn IRQGROUPPOLICY_cf41dc6cc3af::group_affinity_all_group_zero() -> IRQGROUPPOLICY_cf41dc6cc3af {
+  IRQGROUPPOLICY_cf41dc6cc3af::from_int(0)
+}
+
+///|
+pub fn IRQGROUPPOLICY_cf41dc6cc3af::group_affinity_dont_care() -> IRQGROUPPOLICY_cf41dc6cc3af {
+  IRQGROUPPOLICY_cf41dc6cc3af::from_int(1)
+}
+
+///|
+pub fn IRQPRIORITY_2b34d44c2011::high() -> IRQPRIORITY_2b34d44c2011 {
+  IRQPRIORITY_2b34d44c2011::from_int(3)
+}
+
+///|
+pub fn IRQPRIORITY_2b34d44c2011::low() -> IRQPRIORITY_2b34d44c2011 {
+  IRQPRIORITY_2b34d44c2011::from_int(1)
+}
+
+///|
+pub fn IRQPRIORITY_2b34d44c2011::normal() -> IRQPRIORITY_2b34d44c2011 {
+  IRQPRIORITY_2b34d44c2011::from_int(2)
+}
+
+///|
+pub fn IRQPRIORITY_2b34d44c2011::undefined() -> IRQPRIORITY_2b34d44c2011 {
+  IRQPRIORITY_2b34d44c2011::from_int(0)
+}
+
+///|
+pub fn KBUGCHECKBUFFERDUMPSTATE_391bb472ccfe::buffer_empty() -> KBUGCHECKBUFFERDUMPSTATE_391bb472ccfe {
+  KBUGCHECKBUFFERDUMPSTATE_391bb472ccfe::from_int(0)
+}
+
+///|
+pub fn KBUGCHECKBUFFERDUMPSTATE_391bb472ccfe::buffer_finished() -> KBUGCHECKBUFFERDUMPSTATE_391bb472ccfe {
+  KBUGCHECKBUFFERDUMPSTATE_391bb472ccfe::from_int(3)
+}
+
+///|
+pub fn KBUGCHECKBUFFERDUMPSTATE_391bb472ccfe::buffer_incomplete() -> KBUGCHECKBUFFERDUMPSTATE_391bb472ccfe {
+  KBUGCHECKBUFFERDUMPSTATE_391bb472ccfe::from_int(4)
+}
+
+///|
+pub fn KBUGCHECKBUFFERDUMPSTATE_391bb472ccfe::buffer_inserted() -> KBUGCHECKBUFFERDUMPSTATE_391bb472ccfe {
+  KBUGCHECKBUFFERDUMPSTATE_391bb472ccfe::from_int(1)
+}
+
+///|
+pub fn KBUGCHECKBUFFERDUMPSTATE_391bb472ccfe::buffer_started() -> KBUGCHECKBUFFERDUMPSTATE_391bb472ccfe {
+  KBUGCHECKBUFFERDUMPSTATE_391bb472ccfe::from_int(2)
+}
+
+///|
+pub fn KBUGCHECKCALLBACKREASON_dc96bcd51b27::kb_callback_add_pages() -> KBUGCHECKCALLBACKREASON_dc96bcd51b27 {
+  KBUGCHECKCALLBACKREASON_dc96bcd51b27::from_int(4)
+}
+
+///|
+pub fn KBUGCHECKCALLBACKREASON_dc96bcd51b27::kb_callback_dump_io() -> KBUGCHECKCALLBACKREASON_dc96bcd51b27 {
+  KBUGCHECKCALLBACKREASON_dc96bcd51b27::from_int(3)
+}
+
+///|
+pub fn KBUGCHECKCALLBACKREASON_dc96bcd51b27::kb_callback_invalid() -> KBUGCHECKCALLBACKREASON_dc96bcd51b27 {
+  KBUGCHECKCALLBACKREASON_dc96bcd51b27::from_int(0)
+}
+
+///|
+pub fn KBUGCHECKCALLBACKREASON_dc96bcd51b27::kb_callback_remove_pages() -> KBUGCHECKCALLBACKREASON_dc96bcd51b27 {
+  KBUGCHECKCALLBACKREASON_dc96bcd51b27::from_int(6)
+}
+
+///|
+pub fn KBUGCHECKCALLBACKREASON_dc96bcd51b27::kb_callback_reserved1() -> KBUGCHECKCALLBACKREASON_dc96bcd51b27 {
+  KBUGCHECKCALLBACKREASON_dc96bcd51b27::from_int(1)
+}
+
+///|
+pub fn KBUGCHECKCALLBACKREASON_dc96bcd51b27::kb_callback_reserved2() -> KBUGCHECKCALLBACKREASON_dc96bcd51b27 {
+  KBUGCHECKCALLBACKREASON_dc96bcd51b27::from_int(8)
+}
+
+///|
+pub fn KBUGCHECKCALLBACKREASON_dc96bcd51b27::kb_callback_secondary_dump_data() -> KBUGCHECKCALLBACKREASON_dc96bcd51b27 {
+  KBUGCHECKCALLBACKREASON_dc96bcd51b27::from_int(2)
+}
+
+///|
+pub fn KBUGCHECKCALLBACKREASON_dc96bcd51b27::kb_callback_secondary_multi_part_dump_data() -> KBUGCHECKCALLBACKREASON_dc96bcd51b27 {
+  KBUGCHECKCALLBACKREASON_dc96bcd51b27::from_int(5)
+}
+
+///|
+pub fn KBUGCHECKCALLBACKREASON_dc96bcd51b27::kb_callback_triage_dump_data() -> KBUGCHECKCALLBACKREASON_dc96bcd51b27 {
+  KBUGCHECKCALLBACKREASON_dc96bcd51b27::from_int(7)
+}
+
+///|
+pub fn KBUGCHECKDUMPIOTYPE_4e47292a4a75::kb_dump_io_body() -> KBUGCHECKDUMPIOTYPE_4e47292a4a75 {
+  KBUGCHECKDUMPIOTYPE_4e47292a4a75::from_int(2)
+}
+
+///|
+pub fn KBUGCHECKDUMPIOTYPE_4e47292a4a75::kb_dump_io_complete() -> KBUGCHECKDUMPIOTYPE_4e47292a4a75 {
+  KBUGCHECKDUMPIOTYPE_4e47292a4a75::from_int(4)
+}
+
+///|
+pub fn KBUGCHECKDUMPIOTYPE_4e47292a4a75::kb_dump_io_header() -> KBUGCHECKDUMPIOTYPE_4e47292a4a75 {
+  KBUGCHECKDUMPIOTYPE_4e47292a4a75::from_int(1)
+}
+
+///|
+pub fn KBUGCHECKDUMPIOTYPE_4e47292a4a75::kb_dump_io_invalid() -> KBUGCHECKDUMPIOTYPE_4e47292a4a75 {
+  KBUGCHECKDUMPIOTYPE_4e47292a4a75::from_int(0)
+}
+
+///|
+pub fn KBUGCHECKDUMPIOTYPE_4e47292a4a75::kb_dump_io_secondary_data() -> KBUGCHECKDUMPIOTYPE_4e47292a4a75 {
+  KBUGCHECKDUMPIOTYPE_4e47292a4a75::from_int(3)
+}
+
+///|
+pub fn KDPCIMPORTANCE_4c0538a86caf::high_importance() -> KDPCIMPORTANCE_4c0538a86caf {
+  KDPCIMPORTANCE_4c0538a86caf::from_int(2)
+}
+
+///|
+pub fn KDPCIMPORTANCE_4c0538a86caf::low_importance() -> KDPCIMPORTANCE_4c0538a86caf {
+  KDPCIMPORTANCE_4c0538a86caf::from_int(0)
+}
+
+///|
+pub fn KDPCIMPORTANCE_4c0538a86caf::medium_high_importance() -> KDPCIMPORTANCE_4c0538a86caf {
+  KDPCIMPORTANCE_4c0538a86caf::from_int(3)
+}
+
+///|
+pub fn KDPCIMPORTANCE_4c0538a86caf::medium_importance() -> KDPCIMPORTANCE_4c0538a86caf {
+  KDPCIMPORTANCE_4c0538a86caf::from_int(1)
+}
+
+///|
+pub fn KDCALLBACKACTION_a404bb968005::kd_configure_device_and_continue() -> KDCALLBACKACTION_a404bb968005 {
+  KDCALLBACKACTION_a404bb968005::from_int(0)
+}
+
+///|
+pub fn KDCALLBACKACTION_a404bb968005::kd_configure_device_and_stop() -> KDCALLBACKACTION_a404bb968005 {
+  KDCALLBACKACTION_a404bb968005::from_int(2)
+}
+
+///|
+pub fn KDCALLBACKACTION_a404bb968005::kd_skip_device_and_continue() -> KDCALLBACKACTION_a404bb968005 {
+  KDCALLBACKACTION_a404bb968005::from_int(1)
+}
+
+///|
+pub fn KDCALLBACKACTION_a404bb968005::kd_skip_device_and_stop() -> KDCALLBACKACTION_a404bb968005 {
+  KDCALLBACKACTION_a404bb968005::from_int(3)
+}
+
+///|
+pub fn KDNAMESPACEENUM_d44fc4650693::kd_name_space_acpi() -> KDNAMESPACEENUM_d44fc4650693 {
+  KDNAMESPACEENUM_d44fc4650693::from_int(1)
+}
+
+///|
+pub fn KDNAMESPACEENUM_d44fc4650693::kd_name_space_any() -> KDNAMESPACEENUM_d44fc4650693 {
+  KDNAMESPACEENUM_d44fc4650693::from_int(2)
+}
+
+///|
+pub fn KDNAMESPACEENUM_d44fc4650693::kd_name_space_max() -> KDNAMESPACEENUM_d44fc4650693 {
+  KDNAMESPACEENUM_d44fc4650693::from_int(4)
+}
+
+///|
+pub fn KDNAMESPACEENUM_d44fc4650693::kd_name_space_none() -> KDNAMESPACEENUM_d44fc4650693 {
+  KDNAMESPACEENUM_d44fc4650693::from_int(3)
+}
+
+///|
+pub fn KDNAMESPACEENUM_d44fc4650693::kd_name_space_pci() -> KDNAMESPACEENUM_d44fc4650693 {
+  KDNAMESPACEENUM_d44fc4650693::from_int(0)
+}
+
+///|
+pub fn KDOPTION_64a36fcd75d1::set_block_enable() -> KDOPTION_64a36fcd75d1 {
+  KDOPTION_64a36fcd75d1::from_int(0)
+}
+
+///|
+pub fn KEPROCESSORCHANGENOTIFYSTATE_1450cf944cab::ke_processor_add_complete_notify() -> KEPROCESSORCHANGENOTIFYSTATE_1450cf944cab {
+  KEPROCESSORCHANGENOTIFYSTATE_1450cf944cab::from_int(1)
+}
+
+///|
+pub fn KEPROCESSORCHANGENOTIFYSTATE_1450cf944cab::ke_processor_add_failure_notify() -> KEPROCESSORCHANGENOTIFYSTATE_1450cf944cab {
+  KEPROCESSORCHANGENOTIFYSTATE_1450cf944cab::from_int(2)
+}
+
+///|
+pub fn KEPROCESSORCHANGENOTIFYSTATE_1450cf944cab::ke_processor_add_start_notify() -> KEPROCESSORCHANGENOTIFYSTATE_1450cf944cab {
+  KEPROCESSORCHANGENOTIFYSTATE_1450cf944cab::from_int(0)
+}
+
+///|
+pub fn KINTERRUPTMODE_f33cfd939a6a::latched() -> KINTERRUPTMODE_f33cfd939a6a {
+  KINTERRUPTMODE_f33cfd939a6a::from_int(1)
+}
+
+///|
+pub fn KINTERRUPTMODE_f33cfd939a6a::level_sensitive() -> KINTERRUPTMODE_f33cfd939a6a {
+  KINTERRUPTMODE_f33cfd939a6a::from_int(0)
+}
+
+///|
+pub fn KINTERRUPTPOLARITY_3a1e031fdda1::interrupt_active_both() -> KINTERRUPTPOLARITY_3a1e031fdda1 {
+  KINTERRUPTPOLARITY_3a1e031fdda1::from_int(3)
+}
+
+///|
+pub fn KINTERRUPTPOLARITY_3a1e031fdda1::interrupt_active_both_trigger_high() -> KINTERRUPTPOLARITY_3a1e031fdda1 {
+  KINTERRUPTPOLARITY_3a1e031fdda1::from_int(4)
+}
+
+///|
+pub fn KINTERRUPTPOLARITY_3a1e031fdda1::interrupt_active_both_trigger_low() -> KINTERRUPTPOLARITY_3a1e031fdda1 {
+  KINTERRUPTPOLARITY_3a1e031fdda1::from_int(3)
+}
+
+///|
+pub fn KINTERRUPTPOLARITY_3a1e031fdda1::interrupt_active_high() -> KINTERRUPTPOLARITY_3a1e031fdda1 {
+  KINTERRUPTPOLARITY_3a1e031fdda1::from_int(1)
+}
+
+///|
+pub fn KINTERRUPTPOLARITY_3a1e031fdda1::interrupt_active_low() -> KINTERRUPTPOLARITY_3a1e031fdda1 {
+  KINTERRUPTPOLARITY_3a1e031fdda1::from_int(2)
+}
+
+///|
+pub fn KINTERRUPTPOLARITY_3a1e031fdda1::interrupt_falling_edge() -> KINTERRUPTPOLARITY_3a1e031fdda1 {
+  KINTERRUPTPOLARITY_3a1e031fdda1::from_int(2)
+}
+
+///|
+pub fn KINTERRUPTPOLARITY_3a1e031fdda1::interrupt_polarity_unknown() -> KINTERRUPTPOLARITY_3a1e031fdda1 {
+  KINTERRUPTPOLARITY_3a1e031fdda1::from_int(0)
+}
+
+///|
+pub fn KINTERRUPTPOLARITY_3a1e031fdda1::interrupt_rising_edge() -> KINTERRUPTPOLARITY_3a1e031fdda1 {
+  KINTERRUPTPOLARITY_3a1e031fdda1::from_int(1)
+}
+
+///|
+pub fn KPROFILESOURCE_c570063c08b4::profile2_issue() -> KPROFILESOURCE_c570063c08b4 {
+  KPROFILESOURCE_c570063c08b4::from_int(15)
+}
+
+///|
+pub fn KPROFILESOURCE_c570063c08b4::profile3_issue() -> KPROFILESOURCE_c570063c08b4 {
+  KPROFILESOURCE_c570063c08b4::from_int(16)
+}
+
+///|
+pub fn KPROFILESOURCE_c570063c08b4::profile4_issue() -> KPROFILESOURCE_c570063c08b4 {
+  KPROFILESOURCE_c570063c08b4::from_int(17)
+}
+
+///|
+pub fn KPROFILESOURCE_c570063c08b4::profile_alignment_fixup() -> KPROFILESOURCE_c570063c08b4 {
+  KPROFILESOURCE_c570063c08b4::from_int(1)
+}
+
+///|
+pub fn KPROFILESOURCE_c570063c08b4::profile_branch_instructions() -> KPROFILESOURCE_c570063c08b4 {
+  KPROFILESOURCE_c570063c08b4::from_int(6)
+}
+
+///|
+pub fn KPROFILESOURCE_c570063c08b4::profile_branch_mispredictions() -> KPROFILESOURCE_c570063c08b4 {
+  KPROFILESOURCE_c570063c08b4::from_int(11)
+}
+
+///|
+pub fn KPROFILESOURCE_c570063c08b4::profile_cache_misses() -> KPROFILESOURCE_c570063c08b4 {
+  KPROFILESOURCE_c570063c08b4::from_int(10)
+}
+
+///|
+pub fn KPROFILESOURCE_c570063c08b4::profile_dcache_accesses() -> KPROFILESOURCE_c570063c08b4 {
+  KPROFILESOURCE_c570063c08b4::from_int(21)
+}
+
+///|
+pub fn KPROFILESOURCE_c570063c08b4::profile_dcache_misses() -> KPROFILESOURCE_c570063c08b4 {
+  KPROFILESOURCE_c570063c08b4::from_int(8)
+}
+
+///|
+pub fn KPROFILESOURCE_c570063c08b4::profile_fp_instructions() -> KPROFILESOURCE_c570063c08b4 {
+  KPROFILESOURCE_c570063c08b4::from_int(13)
+}
+
+///|
+pub fn KPROFILESOURCE_c570063c08b4::profile_icache_issues() -> KPROFILESOURCE_c570063c08b4 {
+  KPROFILESOURCE_c570063c08b4::from_int(20)
+}
+
+///|
+pub fn KPROFILESOURCE_c570063c08b4::profile_icache_misses() -> KPROFILESOURCE_c570063c08b4 {
+  KPROFILESOURCE_c570063c08b4::from_int(9)
+}
+
+///|
+pub fn KPROFILESOURCE_c570063c08b4::profile_integer_instructions() -> KPROFILESOURCE_c570063c08b4 {
+  KPROFILESOURCE_c570063c08b4::from_int(14)
+}
+
+///|
+pub fn KPROFILESOURCE_c570063c08b4::profile_load_instructions() -> KPROFILESOURCE_c570063c08b4 {
+  KPROFILESOURCE_c570063c08b4::from_int(4)
+}
+
+///|
+pub fn KPROFILESOURCE_c570063c08b4::profile_load_linked_issues() -> KPROFILESOURCE_c570063c08b4 {
+  KPROFILESOURCE_c570063c08b4::from_int(23)
+}
+
+///|
+pub fn KPROFILESOURCE_c570063c08b4::profile_maximum() -> KPROFILESOURCE_c570063c08b4 {
+  KPROFILESOURCE_c570063c08b4::from_int(24)
+}
+
+///|
+pub fn KPROFILESOURCE_c570063c08b4::profile_memory_barrier_cycles() -> KPROFILESOURCE_c570063c08b4 {
+  KPROFILESOURCE_c570063c08b4::from_int(22)
+}
+
+///|
+pub fn KPROFILESOURCE_c570063c08b4::profile_pipeline_dry() -> KPROFILESOURCE_c570063c08b4 {
+  KPROFILESOURCE_c570063c08b4::from_int(3)
+}
+
+///|
+pub fn KPROFILESOURCE_c570063c08b4::profile_pipeline_frozen() -> KPROFILESOURCE_c570063c08b4 {
+  KPROFILESOURCE_c570063c08b4::from_int(5)
+}
+
+///|
+pub fn KPROFILESOURCE_c570063c08b4::profile_special_instructions() -> KPROFILESOURCE_c570063c08b4 {
+  KPROFILESOURCE_c570063c08b4::from_int(18)
+}
+
+///|
+pub fn KPROFILESOURCE_c570063c08b4::profile_store_instructions() -> KPROFILESOURCE_c570063c08b4 {
+  KPROFILESOURCE_c570063c08b4::from_int(12)
+}
+
+///|
+pub fn KPROFILESOURCE_c570063c08b4::profile_time() -> KPROFILESOURCE_c570063c08b4 {
+  KPROFILESOURCE_c570063c08b4::from_int(0)
+}
+
+///|
+pub fn KPROFILESOURCE_c570063c08b4::profile_total_cycles() -> KPROFILESOURCE_c570063c08b4 {
+  KPROFILESOURCE_c570063c08b4::from_int(19)
+}
+
+///|
+pub fn KPROFILESOURCE_c570063c08b4::profile_total_issues() -> KPROFILESOURCE_c570063c08b4 {
+  KPROFILESOURCE_c570063c08b4::from_int(2)
+}
+
+///|
+pub fn KPROFILESOURCE_c570063c08b4::profile_total_nonissues() -> KPROFILESOURCE_c570063c08b4 {
+  KPROFILESOURCE_c570063c08b4::from_int(7)
+}
+
+///|
+pub fn KWAITREASON_f86ad0a41e43::delay_execution() -> KWAITREASON_f86ad0a41e43 {
+  KWAITREASON_f86ad0a41e43::from_int(4)
+}
+
+///|
+pub fn KWAITREASON_f86ad0a41e43::executive() -> KWAITREASON_f86ad0a41e43 {
+  KWAITREASON_f86ad0a41e43::from_int(0)
+}
+
+///|
+pub fn KWAITREASON_f86ad0a41e43::free_page() -> KWAITREASON_f86ad0a41e43 {
+  KWAITREASON_f86ad0a41e43::from_int(1)
+}
+
+///|
+pub fn KWAITREASON_f86ad0a41e43::maximum_wait_reason() -> KWAITREASON_f86ad0a41e43 {
+  KWAITREASON_f86ad0a41e43::from_int(42)
+}
+
+///|
+pub fn KWAITREASON_f86ad0a41e43::page_in() -> KWAITREASON_f86ad0a41e43 {
+  KWAITREASON_f86ad0a41e43::from_int(2)
+}
+
+///|
+pub fn KWAITREASON_f86ad0a41e43::pool_allocation() -> KWAITREASON_f86ad0a41e43 {
+  KWAITREASON_f86ad0a41e43::from_int(3)
+}
+
+///|
+pub fn KWAITREASON_f86ad0a41e43::suspended() -> KWAITREASON_f86ad0a41e43 {
+  KWAITREASON_f86ad0a41e43::from_int(5)
+}
+
+///|
+pub fn KWAITREASON_f86ad0a41e43::user_request() -> KWAITREASON_f86ad0a41e43 {
+  KWAITREASON_f86ad0a41e43::from_int(6)
+}
+
+///|
+pub fn KWAITREASON_f86ad0a41e43::wr_alert_by_thread_id() -> KWAITREASON_f86ad0a41e43 {
+  KWAITREASON_f86ad0a41e43::from_int(37)
+}
+
+///|
+pub fn KWAITREASON_f86ad0a41e43::wr_callout_stack() -> KWAITREASON_f86ad0a41e43 {
+  KWAITREASON_f86ad0a41e43::from_int(25)
+}
+
+///|
+pub fn KWAITREASON_f86ad0a41e43::wr_cpu_rate_control() -> KWAITREASON_f86ad0a41e43 {
+  KWAITREASON_f86ad0a41e43::from_int(24)
+}
+
+///|
+pub fn KWAITREASON_f86ad0a41e43::wr_deferred_preempt() -> KWAITREASON_f86ad0a41e43 {
+  KWAITREASON_f86ad0a41e43::from_int(38)
+}
+
+///|
+pub fn KWAITREASON_f86ad0a41e43::wr_delay_execution() -> KWAITREASON_f86ad0a41e43 {
+  KWAITREASON_f86ad0a41e43::from_int(11)
+}
+
+///|
+pub fn KWAITREASON_f86ad0a41e43::wr_dispatch_int() -> KWAITREASON_f86ad0a41e43 {
+  KWAITREASON_f86ad0a41e43::from_int(31)
+}
+
+///|
+pub fn KWAITREASON_f86ad0a41e43::wr_executive() -> KWAITREASON_f86ad0a41e43 {
+  KWAITREASON_f86ad0a41e43::from_int(7)
+}
+
+///|
+pub fn KWAITREASON_f86ad0a41e43::wr_fast_mutex() -> KWAITREASON_f86ad0a41e43 {
+  KWAITREASON_f86ad0a41e43::from_int(34)
+}
+
+///|
+pub fn KWAITREASON_f86ad0a41e43::wr_free_page() -> KWAITREASON_f86ad0a41e43 {
+  KWAITREASON_f86ad0a41e43::from_int(8)
+}
+
+///|
+pub fn KWAITREASON_f86ad0a41e43::wr_guarded_mutex() -> KWAITREASON_f86ad0a41e43 {
+  KWAITREASON_f86ad0a41e43::from_int(35)
+}
+
+///|
+pub fn KWAITREASON_f86ad0a41e43::wr_io_ring() -> KWAITREASON_f86ad0a41e43 {
+  KWAITREASON_f86ad0a41e43::from_int(40)
+}
+
+///|
+pub fn KWAITREASON_f86ad0a41e43::wr_kernel() -> KWAITREASON_f86ad0a41e43 {
+  KWAITREASON_f86ad0a41e43::from_int(26)
+}
+
+///|
+pub fn KWAITREASON_f86ad0a41e43::wr_keyed_event() -> KWAITREASON_f86ad0a41e43 {
+  KWAITREASON_f86ad0a41e43::from_int(21)
+}
+
+///|
+pub fn KWAITREASON_f86ad0a41e43::wr_lpc_receive() -> KWAITREASON_f86ad0a41e43 {
+  KWAITREASON_f86ad0a41e43::from_int(16)
+}
+
+///|
+pub fn KWAITREASON_f86ad0a41e43::wr_lpc_reply() -> KWAITREASON_f86ad0a41e43 {
+  KWAITREASON_f86ad0a41e43::from_int(17)
+}
+
+///|
+pub fn KWAITREASON_f86ad0a41e43::wr_mdl_cache() -> KWAITREASON_f86ad0a41e43 {
+  KWAITREASON_f86ad0a41e43::from_int(41)
+}
+
+///|
+pub fn KWAITREASON_f86ad0a41e43::wr_mutex() -> KWAITREASON_f86ad0a41e43 {
+  KWAITREASON_f86ad0a41e43::from_int(29)
+}
+
+///|
+pub fn KWAITREASON_f86ad0a41e43::wr_page_in() -> KWAITREASON_f86ad0a41e43 {
+  KWAITREASON_f86ad0a41e43::from_int(9)
+}
+
+///|
+pub fn KWAITREASON_f86ad0a41e43::wr_page_out() -> KWAITREASON_f86ad0a41e43 {
+  KWAITREASON_f86ad0a41e43::from_int(19)
+}
+
+///|
+pub fn KWAITREASON_f86ad0a41e43::wr_physical_fault() -> KWAITREASON_f86ad0a41e43 {
+  KWAITREASON_f86ad0a41e43::from_int(39)
+}
+
+///|
+pub fn KWAITREASON_f86ad0a41e43::wr_pool_allocation() -> KWAITREASON_f86ad0a41e43 {
+  KWAITREASON_f86ad0a41e43::from_int(10)
+}
+
+///|
+pub fn KWAITREASON_f86ad0a41e43::wr_preempted() -> KWAITREASON_f86ad0a41e43 {
+  KWAITREASON_f86ad0a41e43::from_int(32)
+}
+
+///|
+pub fn KWAITREASON_f86ad0a41e43::wr_process_in_swap() -> KWAITREASON_f86ad0a41e43 {
+  KWAITREASON_f86ad0a41e43::from_int(23)
+}
+
+///|
+pub fn KWAITREASON_f86ad0a41e43::wr_push_lock() -> KWAITREASON_f86ad0a41e43 {
+  KWAITREASON_f86ad0a41e43::from_int(28)
+}
+
+///|
+pub fn KWAITREASON_f86ad0a41e43::wr_quantum_end() -> KWAITREASON_f86ad0a41e43 {
+  KWAITREASON_f86ad0a41e43::from_int(30)
+}
+
+///|
+pub fn KWAITREASON_f86ad0a41e43::wr_queue() -> KWAITREASON_f86ad0a41e43 {
+  KWAITREASON_f86ad0a41e43::from_int(15)
+}
+
+///|
+pub fn KWAITREASON_f86ad0a41e43::wr_rendezvous() -> KWAITREASON_f86ad0a41e43 {
+  KWAITREASON_f86ad0a41e43::from_int(20)
+}
+
+///|
+pub fn KWAITREASON_f86ad0a41e43::wr_resource() -> KWAITREASON_f86ad0a41e43 {
+  KWAITREASON_f86ad0a41e43::from_int(27)
+}
+
+///|
+pub fn KWAITREASON_f86ad0a41e43::wr_rundown() -> KWAITREASON_f86ad0a41e43 {
+  KWAITREASON_f86ad0a41e43::from_int(36)
+}
+
+///|
+pub fn KWAITREASON_f86ad0a41e43::wr_spare0() -> KWAITREASON_f86ad0a41e43 {
+  KWAITREASON_f86ad0a41e43::from_int(14)
+}
+
+///|
+pub fn KWAITREASON_f86ad0a41e43::wr_suspended() -> KWAITREASON_f86ad0a41e43 {
+  KWAITREASON_f86ad0a41e43::from_int(12)
+}
+
+///|
+pub fn KWAITREASON_f86ad0a41e43::wr_terminated() -> KWAITREASON_f86ad0a41e43 {
+  KWAITREASON_f86ad0a41e43::from_int(22)
+}
+
+///|
+pub fn KWAITREASON_f86ad0a41e43::wr_user_request() -> KWAITREASON_f86ad0a41e43 {
+  KWAITREASON_f86ad0a41e43::from_int(13)
+}
+
+///|
+pub fn KWAITREASON_f86ad0a41e43::wr_virtual_memory() -> KWAITREASON_f86ad0a41e43 {
+  KWAITREASON_f86ad0a41e43::from_int(18)
+}
+
+///|
+pub fn KWAITREASON_f86ad0a41e43::wr_yield_execution() -> KWAITREASON_f86ad0a41e43 {
+  KWAITREASON_f86ad0a41e43::from_int(33)
+}
+
+///|
+pub fn LOCKOPERATION_00cde3127769::io_modify_access() -> LOCKOPERATION_00cde3127769 {
+  LOCKOPERATION_00cde3127769::from_int(2)
+}
+
+///|
+pub fn LOCKOPERATION_00cde3127769::io_read_access() -> LOCKOPERATION_00cde3127769 {
+  LOCKOPERATION_00cde3127769::from_int(0)
+}
+
+///|
+pub fn LOCKOPERATION_00cde3127769::io_write_access() -> LOCKOPERATION_00cde3127769 {
+  LOCKOPERATION_00cde3127769::from_int(1)
+}
+
+///|
+pub fn MCAEXCEPTIONTYPE_6124d17ef5ef::hal_mca_record() -> MCAEXCEPTIONTYPE_6124d17ef5ef {
+  MCAEXCEPTIONTYPE_6124d17ef5ef::from_int(1)
+}
+
+///|
+pub fn MCAEXCEPTIONTYPE_6124d17ef5ef::hal_mce_record() -> MCAEXCEPTIONTYPE_6124d17ef5ef {
+  MCAEXCEPTIONTYPE_6124d17ef5ef::from_int(0)
+}
+
+///|
+pub fn MEMORYCACHINGTYPE_eb29b3ba660f::mm_cached() -> MEMORYCACHINGTYPE_eb29b3ba660f {
+  MEMORYCACHINGTYPE_eb29b3ba660f::from_int(1)
+}
+
+///|
+pub fn MEMORYCACHINGTYPE_eb29b3ba660f::mm_hardware_coherent_cached() -> MEMORYCACHINGTYPE_eb29b3ba660f {
+  MEMORYCACHINGTYPE_eb29b3ba660f::from_int(3)
+}
+
+///|
+pub fn MEMORYCACHINGTYPE_eb29b3ba660f::mm_maximum_cache_type() -> MEMORYCACHINGTYPE_eb29b3ba660f {
+  MEMORYCACHINGTYPE_eb29b3ba660f::from_int(6)
+}
+
+///|
+pub fn MEMORYCACHINGTYPE_eb29b3ba660f::mm_non_cached() -> MEMORYCACHINGTYPE_eb29b3ba660f {
+  MEMORYCACHINGTYPE_eb29b3ba660f::from_int(0)
+}
+
+///|
+pub fn MEMORYCACHINGTYPE_eb29b3ba660f::mm_non_cached_unordered() -> MEMORYCACHINGTYPE_eb29b3ba660f {
+  MEMORYCACHINGTYPE_eb29b3ba660f::from_int(4)
+}
+
+///|
+pub fn MEMORYCACHINGTYPE_eb29b3ba660f::mm_not_mapped() -> MEMORYCACHINGTYPE_eb29b3ba660f {
+  MEMORYCACHINGTYPE_eb29b3ba660f::from_int(-1)
+}
+
+///|
+pub fn MEMORYCACHINGTYPE_eb29b3ba660f::mm_uswc_cached() -> MEMORYCACHINGTYPE_eb29b3ba660f {
+  MEMORYCACHINGTYPE_eb29b3ba660f::from_int(5)
+}
+
+///|
+pub fn MEMORYCACHINGTYPE_eb29b3ba660f::mm_write_combined() -> MEMORYCACHINGTYPE_eb29b3ba660f {
+  MEMORYCACHINGTYPE_eb29b3ba660f::from_int(2)
+}
+
+///|
+pub fn MEMORYCACHINGTYPEORIG_1d55560ad61a::mm_frame_buffer_cached() -> MEMORYCACHINGTYPEORIG_1d55560ad61a {
+  MEMORYCACHINGTYPEORIG_1d55560ad61a::from_int(2)
+}
+
+///|
+pub fn MEMDEDICATEDATTRIBUTETYPE_8f668441844f::mem_dedicated_attribute_max() -> MEMDEDICATEDATTRIBUTETYPE_8f668441844f {
+  MEMDEDICATEDATTRIBUTETYPE_8f668441844f::from_int(4)
+}
+
+///|
+pub fn MEMDEDICATEDATTRIBUTETYPE_8f668441844f::mem_dedicated_attribute_read_bandwidth() -> MEMDEDICATEDATTRIBUTETYPE_8f668441844f {
+  MEMDEDICATEDATTRIBUTETYPE_8f668441844f::from_int(0)
+}
+
+///|
+pub fn MEMDEDICATEDATTRIBUTETYPE_8f668441844f::mem_dedicated_attribute_read_latency() -> MEMDEDICATEDATTRIBUTETYPE_8f668441844f {
+  MEMDEDICATEDATTRIBUTETYPE_8f668441844f::from_int(1)
+}
+
+///|
+pub fn MEMDEDICATEDATTRIBUTETYPE_8f668441844f::mem_dedicated_attribute_write_bandwidth() -> MEMDEDICATEDATTRIBUTETYPE_8f668441844f {
+  MEMDEDICATEDATTRIBUTETYPE_8f668441844f::from_int(2)
+}
+
+///|
+pub fn MEMDEDICATEDATTRIBUTETYPE_8f668441844f::mem_dedicated_attribute_write_latency() -> MEMDEDICATEDATTRIBUTETYPE_8f668441844f {
+  MEMDEDICATEDATTRIBUTETYPE_8f668441844f::from_int(3)
+}
+
+///|
+pub fn MEMSECTIONEXTENDEDPARAMETERTYPE_949730d68375::mem_section_extended_parameter_invalid_type() -> MEMSECTIONEXTENDEDPARAMETERTYPE_949730d68375 {
+  MEMSECTIONEXTENDEDPARAMETERTYPE_949730d68375::from_int(0)
+}
+
+///|
+pub fn MEMSECTIONEXTENDEDPARAMETERTYPE_949730d68375::mem_section_extended_parameter_max() -> MEMSECTIONEXTENDEDPARAMETERTYPE_949730d68375 {
+  MEMSECTIONEXTENDEDPARAMETERTYPE_949730d68375::from_int(4)
+}
+
+///|
+pub fn MEMSECTIONEXTENDEDPARAMETERTYPE_949730d68375::mem_section_extended_parameter_numa_node() -> MEMSECTIONEXTENDEDPARAMETERTYPE_949730d68375 {
+  MEMSECTIONEXTENDEDPARAMETERTYPE_949730d68375::from_int(2)
+}
+
+///|
+pub fn MEMSECTIONEXTENDEDPARAMETERTYPE_949730d68375::mem_section_extended_parameter_signing_level() -> MEMSECTIONEXTENDEDPARAMETERTYPE_949730d68375 {
+  MEMSECTIONEXTENDEDPARAMETERTYPE_949730d68375::from_int(3)
+}
+
+///|
+pub fn MEMSECTIONEXTENDEDPARAMETERTYPE_949730d68375::mem_section_extended_parameter_user_physical_flags() -> MEMSECTIONEXTENDEDPARAMETERTYPE_949730d68375 {
+  MEMSECTIONEXTENDEDPARAMETERTYPE_949730d68375::from_int(1)
+}
+
+///|
+pub fn MMMDLPAGECONTENTSSTATE_5c435123a167::mm_mdl_page_contents_dynamic() -> MMMDLPAGECONTENTSSTATE_5c435123a167 {
+  MMMDLPAGECONTENTSSTATE_5c435123a167::from_int(0)
+}
+
+///|
+pub fn MMMDLPAGECONTENTSSTATE_5c435123a167::mm_mdl_page_contents_invariant() -> MMMDLPAGECONTENTSSTATE_5c435123a167 {
+  MMMDLPAGECONTENTSSTATE_5c435123a167::from_int(1)
+}
+
+///|
+pub fn MMMDLPAGECONTENTSSTATE_5c435123a167::mm_mdl_page_contents_query() -> MMMDLPAGECONTENTSSTATE_5c435123a167 {
+  MMMDLPAGECONTENTSSTATE_5c435123a167::from_int(2)
+}
+
+///|
+pub fn MMPAGEPRIORITY_6ba7393ab92e::high_page_priority() -> MMPAGEPRIORITY_6ba7393ab92e {
+  MMPAGEPRIORITY_6ba7393ab92e::from_int(32)
+}
+
+///|
+pub fn MMPAGEPRIORITY_6ba7393ab92e::low_page_priority() -> MMPAGEPRIORITY_6ba7393ab92e {
+  MMPAGEPRIORITY_6ba7393ab92e::from_int(0)
+}
+
+///|
+pub fn MMPAGEPRIORITY_6ba7393ab92e::normal_page_priority() -> MMPAGEPRIORITY_6ba7393ab92e {
+  MMPAGEPRIORITY_6ba7393ab92e::from_int(16)
+}
+
+///|
+pub fn MMROTATEDIRECTION_6e9cc9809db6::mm_maximum_rotate_direction() -> MMROTATEDIRECTION_6e9cc9809db6 {
+  MMROTATEDIRECTION_6e9cc9809db6::from_int(4)
+}
+
+///|
+pub fn MMROTATEDIRECTION_6e9cc9809db6::mm_to_frame_buffer() -> MMROTATEDIRECTION_6e9cc9809db6 {
+  MMROTATEDIRECTION_6e9cc9809db6::from_int(0)
+}
+
+///|
+pub fn MMROTATEDIRECTION_6e9cc9809db6::mm_to_frame_buffer_no_copy() -> MMROTATEDIRECTION_6e9cc9809db6 {
+  MMROTATEDIRECTION_6e9cc9809db6::from_int(1)
+}
+
+///|
+pub fn MMROTATEDIRECTION_6e9cc9809db6::mm_to_regular_memory() -> MMROTATEDIRECTION_6e9cc9809db6 {
+  MMROTATEDIRECTION_6e9cc9809db6::from_int(2)
+}
+
+///|
+pub fn MMROTATEDIRECTION_6e9cc9809db6::mm_to_regular_memory_no_copy() -> MMROTATEDIRECTION_6e9cc9809db6 {
+  MMROTATEDIRECTION_6e9cc9809db6::from_int(3)
+}
+
+///|
+pub fn MMSYSTEMSIZE_984552391ccd::mm_large_system() -> MMSYSTEMSIZE_984552391ccd {
+  MMSYSTEMSIZE_984552391ccd::from_int(2)
+}
+
+///|
+pub fn MMSYSTEMSIZE_984552391ccd::mm_medium_system() -> MMSYSTEMSIZE_984552391ccd {
+  MMSYSTEMSIZE_984552391ccd::from_int(1)
+}
+
+///|
+pub fn MMSYSTEMSIZE_984552391ccd::mm_small_system() -> MMSYSTEMSIZE_984552391ccd {
+  MMSYSTEMSIZE_984552391ccd::from_int(0)
+}
+
+///|
+pub fn MODE_f80aad587729::kernel_mode() -> MODE_f80aad587729 {
+  MODE_f80aad587729::from_int(0)
+}
+
+///|
+pub fn MODE_f80aad587729::maximum_mode() -> MODE_f80aad587729 {
+  MODE_f80aad587729::from_int(2)
+}
+
+///|
+pub fn MODE_f80aad587729::user_mode() -> MODE_f80aad587729 {
+  MODE_f80aad587729::from_int(1)
+}
+
+///|
+pub fn NPEMCONTROLSTANDARDCONTROLBIT_8b3cafc56e5d::disabled_control() -> NPEMCONTROLSTANDARDCONTROLBIT_8b3cafc56e5d {
+  NPEMCONTROLSTANDARDCONTROLBIT_8b3cafc56e5d::from_int(11)
+}
+
+///|
+pub fn NPEMCONTROLSTANDARDCONTROLBIT_8b3cafc56e5d::fail_control() -> NPEMCONTROLSTANDARDCONTROLBIT_8b3cafc56e5d {
+  NPEMCONTROLSTANDARDCONTROLBIT_8b3cafc56e5d::from_int(4)
+}
+
+///|
+pub fn NPEMCONTROLSTANDARDCONTROLBIT_8b3cafc56e5d::hot_spare_control() -> NPEMCONTROLSTANDARDCONTROLBIT_8b3cafc56e5d {
+  NPEMCONTROLSTANDARDCONTROLBIT_8b3cafc56e5d::from_int(7)
+}
+
+///|
+pub fn NPEMCONTROLSTANDARDCONTROLBIT_8b3cafc56e5d::in_a_critical_array_control() -> NPEMCONTROLSTANDARDCONTROLBIT_8b3cafc56e5d {
+  NPEMCONTROLSTANDARDCONTROLBIT_8b3cafc56e5d::from_int(8)
+}
+
+///|
+pub fn NPEMCONTROLSTANDARDCONTROLBIT_8b3cafc56e5d::in_a_failed_array_control() -> NPEMCONTROLSTANDARDCONTROLBIT_8b3cafc56e5d {
+  NPEMCONTROLSTANDARDCONTROLBIT_8b3cafc56e5d::from_int(9)
+}
+
+///|
+pub fn NPEMCONTROLSTANDARDCONTROLBIT_8b3cafc56e5d::initiate_reset() -> NPEMCONTROLSTANDARDCONTROLBIT_8b3cafc56e5d {
+  NPEMCONTROLSTANDARDCONTROLBIT_8b3cafc56e5d::from_int(1)
+}
+
+///|
+pub fn NPEMCONTROLSTANDARDCONTROLBIT_8b3cafc56e5d::invalid_device_type_control() -> NPEMCONTROLSTANDARDCONTROLBIT_8b3cafc56e5d {
+  NPEMCONTROLSTANDARDCONTROLBIT_8b3cafc56e5d::from_int(10)
+}
+
+///|
+pub fn NPEMCONTROLSTANDARDCONTROLBIT_8b3cafc56e5d::locate_control() -> NPEMCONTROLSTANDARDCONTROLBIT_8b3cafc56e5d {
+  NPEMCONTROLSTANDARDCONTROLBIT_8b3cafc56e5d::from_int(3)
+}
+
+///|
+pub fn NPEMCONTROLSTANDARDCONTROLBIT_8b3cafc56e5d::ok_control() -> NPEMCONTROLSTANDARDCONTROLBIT_8b3cafc56e5d {
+  NPEMCONTROLSTANDARDCONTROLBIT_8b3cafc56e5d::from_int(2)
+}
+
+///|
+pub fn NPEMCONTROLSTANDARDCONTROLBIT_8b3cafc56e5d::pfa_control() -> NPEMCONTROLSTANDARDCONTROLBIT_8b3cafc56e5d {
+  NPEMCONTROLSTANDARDCONTROLBIT_8b3cafc56e5d::from_int(6)
+}
+
+///|
+pub fn NPEMCONTROLSTANDARDCONTROLBIT_8b3cafc56e5d::rebuild_control() -> NPEMCONTROLSTANDARDCONTROLBIT_8b3cafc56e5d {
+  NPEMCONTROLSTANDARDCONTROLBIT_8b3cafc56e5d::from_int(5)
+}
+
+///|
+pub fn OBPREOPCALLBACKSTATUS_13b265124834::ob_preop_success() -> OBPREOPCALLBACKSTATUS_13b265124834 {
+  OBPREOPCALLBACKSTATUS_13b265124834::from_int(0)
+}
+
+///|
+pub fn PARTITIONINFORMATIONCLASS_063f415a6174::system_memory_partition_dedicated_memory_information() -> PARTITIONINFORMATIONCLASS_063f415a6174 {
+  PARTITIONINFORMATIONCLASS_063f415a6174::from_int(9)
+}
+
+///|
+pub fn PARTITIONINFORMATIONCLASS_063f415a6174::system_memory_partition_information() -> PARTITIONINFORMATIONCLASS_063f415a6174 {
+  PARTITIONINFORMATIONCLASS_063f415a6174::from_int(0)
+}
+
+///|
+pub fn PARTITIONINFORMATIONCLASS_063f415a6174::system_memory_partition_open_dedicated_memory() -> PARTITIONINFORMATIONCLASS_063f415a6174 {
+  PARTITIONINFORMATIONCLASS_063f415a6174::from_int(10)
+}
+
+///|
+pub fn PCIACSBIT_3f447eee4d26::disable() -> PCIACSBIT_3f447eee4d26 {
+  PCIACSBIT_3f447eee4d26::from_int(2)
+}
+
+///|
+pub fn PCIACSBIT_3f447eee4d26::dont_care() -> PCIACSBIT_3f447eee4d26 {
+  PCIACSBIT_3f447eee4d26::from_int(3)
+}
+
+///|
+pub fn PCIACSBIT_3f447eee4d26::enable() -> PCIACSBIT_3f447eee4d26 {
+  PCIACSBIT_3f447eee4d26::from_int(1)
+}
+
+///|
+pub fn PCIACSBIT_3f447eee4d26::pci_acs_reserved() -> PCIACSBIT_3f447eee4d26 {
+  PCIACSBIT_3f447eee4d26::from_int(0)
+}
+
+///|
+pub fn PCIBUSWIDTH_0411713e040d::bus_width32_bits() -> PCIBUSWIDTH_0411713e040d {
+  PCIBUSWIDTH_0411713e040d::from_int(0)
+}
+
+///|
+pub fn PCIBUSWIDTH_0411713e040d::bus_width64_bits() -> PCIBUSWIDTH_0411713e040d {
+  PCIBUSWIDTH_0411713e040d::from_int(1)
+}
+
+///|
+pub fn PCIDEVICED3COLDSTATEREASON_5929c2ca7801::pci_device_d3_cold_reason_default_state_bit_index() -> PCIDEVICED3COLDSTATEREASON_5929c2ca7801 {
+  PCIDEVICED3COLDSTATEREASON_5929c2ca7801::from_int(8)
+}
+
+///|
+pub fn PCIDEVICED3COLDSTATEREASON_5929c2ca7801::pci_device_d3_cold_reason_inf_bit_index() -> PCIDEVICED3COLDSTATEREASON_5929c2ca7801 {
+  PCIDEVICED3COLDSTATEREASON_5929c2ca7801::from_int(9)
+}
+
+///|
+pub fn PCIDEVICED3COLDSTATEREASON_5929c2ca7801::pci_device_d3_cold_reason_interface_api_bit_index() -> PCIDEVICED3COLDSTATEREASON_5929c2ca7801 {
+  PCIDEVICED3COLDSTATEREASON_5929c2ca7801::from_int(10)
+}
+
+///|
+pub fn PCIDEVICED3COLDSTATEREASON_5929c2ca7801::pci_device_d3_cold_state_disabled_bit_index() -> PCIDEVICED3COLDSTATEREASON_5929c2ca7801 {
+  PCIDEVICED3COLDSTATEREASON_5929c2ca7801::from_int(1)
+}
+
+///|
+pub fn PCIDEVICED3COLDSTATEREASON_5929c2ca7801::pci_device_d3_cold_state_disabled_bridge_hack_flags_bit_index() -> PCIDEVICED3COLDSTATEREASON_5929c2ca7801 {
+  PCIDEVICED3COLDSTATEREASON_5929c2ca7801::from_int(4)
+}
+
+///|
+pub fn PCIDEVICED3COLDSTATEREASON_5929c2ca7801::pci_device_d3_cold_state_enabled_bit_index() -> PCIDEVICED3COLDSTATEREASON_5929c2ca7801 {
+  PCIDEVICED3COLDSTATEREASON_5929c2ca7801::from_int(2)
+}
+
+///|
+pub fn PCIDEVICED3COLDSTATEREASON_5929c2ca7801::pci_device_d3_cold_state_parent_root_port_s0_wake_supported_bit_index() -> PCIDEVICED3COLDSTATEREASON_5929c2ca7801 {
+  PCIDEVICED3COLDSTATEREASON_5929c2ca7801::from_int(3)
+}
+
+///|
+pub fn PCIEXPRESSASPMCONTROL_306fe99f50eb::l0s_and_l1_entry_disabled() -> PCIEXPRESSASPMCONTROL_306fe99f50eb {
+  PCIEXPRESSASPMCONTROL_306fe99f50eb::from_int(0)
+}
+
+///|
+pub fn PCIEXPRESSASPMCONTROL_306fe99f50eb::l0s_and_l1_entry_enabled() -> PCIEXPRESSASPMCONTROL_306fe99f50eb {
+  PCIEXPRESSASPMCONTROL_306fe99f50eb::from_int(3)
+}
+
+///|
+pub fn PCIEXPRESSASPMCONTROL_306fe99f50eb::l0s_entry_enabled() -> PCIEXPRESSASPMCONTROL_306fe99f50eb {
+  PCIEXPRESSASPMCONTROL_306fe99f50eb::from_int(1)
+}
+
+///|
+pub fn PCIEXPRESSASPMCONTROL_306fe99f50eb::l1_entry_enabled() -> PCIEXPRESSASPMCONTROL_306fe99f50eb {
+  PCIEXPRESSASPMCONTROL_306fe99f50eb::from_int(2)
+}
+
+///|
+pub fn PCIEXPRESSASPMSUPPORT_3395d73f4512::l0s_and_l1_entry_support() -> PCIEXPRESSASPMSUPPORT_3395d73f4512 {
+  PCIEXPRESSASPMSUPPORT_3395d73f4512::from_int(3)
+}
+
+///|
+pub fn PCIEXPRESSASPMSUPPORT_3395d73f4512::l0s_entry_support() -> PCIEXPRESSASPMSUPPORT_3395d73f4512 {
+  PCIEXPRESSASPMSUPPORT_3395d73f4512::from_int(1)
+}
+
+///|
+pub fn PCIEXPRESSASPMSUPPORT_3395d73f4512::l1_entry_support() -> PCIEXPRESSASPMSUPPORT_3395d73f4512 {
+  PCIEXPRESSASPMSUPPORT_3395d73f4512::from_int(2)
+}
+
+///|
+pub fn PCIEXPRESSASPMSUPPORT_3395d73f4512::no_aspm_support() -> PCIEXPRESSASPMSUPPORT_3395d73f4512 {
+  PCIEXPRESSASPMSUPPORT_3395d73f4512::from_int(0)
+}
+
+///|
+pub fn PCIEXPRESSCARDPRESENCE_d7ea794692e3::card_present() -> PCIEXPRESSCARDPRESENCE_d7ea794692e3 {
+  PCIEXPRESSCARDPRESENCE_d7ea794692e3::from_int(1)
+}
+
+///|
+pub fn PCIEXPRESSCARDPRESENCE_d7ea794692e3::slot_empty() -> PCIEXPRESSCARDPRESENCE_d7ea794692e3 {
+  PCIEXPRESSCARDPRESENCE_d7ea794692e3::from_int(0)
+}
+
+///|
+pub fn PCIEXPRESSDEVICETYPE_543f5a43d654::pci_express_downstream_switch_port() -> PCIEXPRESSDEVICETYPE_543f5a43d654 {
+  PCIEXPRESSDEVICETYPE_543f5a43d654::from_int(6)
+}
+
+///|
+pub fn PCIEXPRESSDEVICETYPE_543f5a43d654::pci_express_endpoint() -> PCIEXPRESSDEVICETYPE_543f5a43d654 {
+  PCIEXPRESSDEVICETYPE_543f5a43d654::from_int(0)
+}
+
+///|
+pub fn PCIEXPRESSDEVICETYPE_543f5a43d654::pci_express_legacy_endpoint() -> PCIEXPRESSDEVICETYPE_543f5a43d654 {
+  PCIEXPRESSDEVICETYPE_543f5a43d654::from_int(1)
+}
+
+///|
+pub fn PCIEXPRESSDEVICETYPE_543f5a43d654::pci_express_root_complex_event_collector() -> PCIEXPRESSDEVICETYPE_543f5a43d654 {
+  PCIEXPRESSDEVICETYPE_543f5a43d654::from_int(10)
+}
+
+///|
+pub fn PCIEXPRESSDEVICETYPE_543f5a43d654::pci_express_root_complex_integrated_endpoint() -> PCIEXPRESSDEVICETYPE_543f5a43d654 {
+  PCIEXPRESSDEVICETYPE_543f5a43d654::from_int(9)
+}
+
+///|
+pub fn PCIEXPRESSDEVICETYPE_543f5a43d654::pci_express_root_port() -> PCIEXPRESSDEVICETYPE_543f5a43d654 {
+  PCIEXPRESSDEVICETYPE_543f5a43d654::from_int(4)
+}
+
+///|
+pub fn PCIEXPRESSDEVICETYPE_543f5a43d654::pci_express_to_pci_x_bridge() -> PCIEXPRESSDEVICETYPE_543f5a43d654 {
+  PCIEXPRESSDEVICETYPE_543f5a43d654::from_int(7)
+}
+
+///|
+pub fn PCIEXPRESSDEVICETYPE_543f5a43d654::pci_express_upstream_switch_port() -> PCIEXPRESSDEVICETYPE_543f5a43d654 {
+  PCIEXPRESSDEVICETYPE_543f5a43d654::from_int(5)
+}
+
+///|
+pub fn PCIEXPRESSDEVICETYPE_543f5a43d654::pci_x_to_express_bridge() -> PCIEXPRESSDEVICETYPE_543f5a43d654 {
+  PCIEXPRESSDEVICETYPE_543f5a43d654::from_int(8)
+}
+
+///|
+pub fn PCIEXPRESSINDICATORSTATE_824357741904::indicator_blink() -> PCIEXPRESSINDICATORSTATE_824357741904 {
+  PCIEXPRESSINDICATORSTATE_824357741904::from_int(2)
+}
+
+///|
+pub fn PCIEXPRESSINDICATORSTATE_824357741904::indicator_off() -> PCIEXPRESSINDICATORSTATE_824357741904 {
+  PCIEXPRESSINDICATORSTATE_824357741904::from_int(3)
+}
+
+///|
+pub fn PCIEXPRESSINDICATORSTATE_824357741904::indicator_on() -> PCIEXPRESSINDICATORSTATE_824357741904 {
+  PCIEXPRESSINDICATORSTATE_824357741904::from_int(1)
+}
+
+///|
+pub fn PCIEXPRESSL0sEXITLATENCY_f034da475325::l0s_128ns_256ns() -> PCIEXPRESSL0sEXITLATENCY_f034da475325 {
+  PCIEXPRESSL0sEXITLATENCY_f034da475325::from_int(2)
+}
+
+///|
+pub fn PCIEXPRESSL0sEXITLATENCY_f034da475325::l0s_1us_2us() -> PCIEXPRESSL0sEXITLATENCY_f034da475325 {
+  PCIEXPRESSL0sEXITLATENCY_f034da475325::from_int(5)
+}
+
+///|
+pub fn PCIEXPRESSL0sEXITLATENCY_f034da475325::l0s_256ns_512ns() -> PCIEXPRESSL0sEXITLATENCY_f034da475325 {
+  PCIEXPRESSL0sEXITLATENCY_f034da475325::from_int(3)
+}
+
+///|
+pub fn PCIEXPRESSL0sEXITLATENCY_f034da475325::l0s_2us_4us() -> PCIEXPRESSL0sEXITLATENCY_f034da475325 {
+  PCIEXPRESSL0sEXITLATENCY_f034da475325::from_int(6)
+}
+
+///|
+pub fn PCIEXPRESSL0sEXITLATENCY_f034da475325::l0s_512ns_1us() -> PCIEXPRESSL0sEXITLATENCY_f034da475325 {
+  PCIEXPRESSL0sEXITLATENCY_f034da475325::from_int(4)
+}
+
+///|
+pub fn PCIEXPRESSL0sEXITLATENCY_f034da475325::l0s_64ns_128ns() -> PCIEXPRESSL0sEXITLATENCY_f034da475325 {
+  PCIEXPRESSL0sEXITLATENCY_f034da475325::from_int(1)
+}
+
+///|
+pub fn PCIEXPRESSL0sEXITLATENCY_f034da475325::l0s_above4us() -> PCIEXPRESSL0sEXITLATENCY_f034da475325 {
+  PCIEXPRESSL0sEXITLATENCY_f034da475325::from_int(7)
+}
+
+///|
+pub fn PCIEXPRESSL0sEXITLATENCY_f034da475325::l0s_below64ns() -> PCIEXPRESSL0sEXITLATENCY_f034da475325 {
+  PCIEXPRESSL0sEXITLATENCY_f034da475325::from_int(0)
+}
+
+///|
+pub fn PCIEXPRESSL1EXITLATENCY_1931105543d3::l1_16us_32us() -> PCIEXPRESSL1EXITLATENCY_1931105543d3 {
+  PCIEXPRESSL1EXITLATENCY_1931105543d3::from_int(5)
+}
+
+///|
+pub fn PCIEXPRESSL1EXITLATENCY_1931105543d3::l1_1us_2us() -> PCIEXPRESSL1EXITLATENCY_1931105543d3 {
+  PCIEXPRESSL1EXITLATENCY_1931105543d3::from_int(1)
+}
+
+///|
+pub fn PCIEXPRESSL1EXITLATENCY_1931105543d3::l1_2us_4us() -> PCIEXPRESSL1EXITLATENCY_1931105543d3 {
+  PCIEXPRESSL1EXITLATENCY_1931105543d3::from_int(2)
+}
+
+///|
+pub fn PCIEXPRESSL1EXITLATENCY_1931105543d3::l1_32us_64us() -> PCIEXPRESSL1EXITLATENCY_1931105543d3 {
+  PCIEXPRESSL1EXITLATENCY_1931105543d3::from_int(6)
+}
+
+///|
+pub fn PCIEXPRESSL1EXITLATENCY_1931105543d3::l1_4us_8us() -> PCIEXPRESSL1EXITLATENCY_1931105543d3 {
+  PCIEXPRESSL1EXITLATENCY_1931105543d3::from_int(3)
+}
+
+///|
+pub fn PCIEXPRESSL1EXITLATENCY_1931105543d3::l1_8us_16us() -> PCIEXPRESSL1EXITLATENCY_1931105543d3 {
+  PCIEXPRESSL1EXITLATENCY_1931105543d3::from_int(4)
+}
+
+///|
+pub fn PCIEXPRESSL1EXITLATENCY_1931105543d3::l1_above64us() -> PCIEXPRESSL1EXITLATENCY_1931105543d3 {
+  PCIEXPRESSL1EXITLATENCY_1931105543d3::from_int(7)
+}
+
+///|
+pub fn PCIEXPRESSL1EXITLATENCY_1931105543d3::l1_below1us() -> PCIEXPRESSL1EXITLATENCY_1931105543d3 {
+  PCIEXPRESSL1EXITLATENCY_1931105543d3::from_int(0)
+}
+
+///|
+pub fn PCIEXPRESSLINKSUBSTATE_1221cf299a3d::pci_express_aspm_link_sub_state_l11_bit_index() -> PCIEXPRESSLINKSUBSTATE_1221cf299a3d {
+  PCIEXPRESSLINKSUBSTATE_1221cf299a3d::from_int(2)
+}
+
+///|
+pub fn PCIEXPRESSLINKSUBSTATE_1221cf299a3d::pci_express_aspm_link_sub_state_l12_bit_index() -> PCIEXPRESSLINKSUBSTATE_1221cf299a3d {
+  PCIEXPRESSLINKSUBSTATE_1221cf299a3d::from_int(3)
+}
+
+///|
+pub fn PCIEXPRESSLINKSUBSTATE_1221cf299a3d::pci_express_pci_pm_link_sub_state_l11_bit_index() -> PCIEXPRESSLINKSUBSTATE_1221cf299a3d {
+  PCIEXPRESSLINKSUBSTATE_1221cf299a3d::from_int(0)
+}
+
+///|
+pub fn PCIEXPRESSLINKSUBSTATE_1221cf299a3d::pci_express_pci_pm_link_sub_state_l12_bit_index() -> PCIEXPRESSLINKSUBSTATE_1221cf299a3d {
+  PCIEXPRESSLINKSUBSTATE_1221cf299a3d::from_int(1)
+}
+
+///|
+pub fn PCIEXPRESSMAXPAYLOADSIZE_773004d0f6e8::max_payload1024_bytes() -> PCIEXPRESSMAXPAYLOADSIZE_773004d0f6e8 {
+  PCIEXPRESSMAXPAYLOADSIZE_773004d0f6e8::from_int(3)
+}
+
+///|
+pub fn PCIEXPRESSMAXPAYLOADSIZE_773004d0f6e8::max_payload128_bytes() -> PCIEXPRESSMAXPAYLOADSIZE_773004d0f6e8 {
+  PCIEXPRESSMAXPAYLOADSIZE_773004d0f6e8::from_int(0)
+}
+
+///|
+pub fn PCIEXPRESSMAXPAYLOADSIZE_773004d0f6e8::max_payload2048_bytes() -> PCIEXPRESSMAXPAYLOADSIZE_773004d0f6e8 {
+  PCIEXPRESSMAXPAYLOADSIZE_773004d0f6e8::from_int(4)
+}
+
+///|
+pub fn PCIEXPRESSMAXPAYLOADSIZE_773004d0f6e8::max_payload256_bytes() -> PCIEXPRESSMAXPAYLOADSIZE_773004d0f6e8 {
+  PCIEXPRESSMAXPAYLOADSIZE_773004d0f6e8::from_int(1)
+}
+
+///|
+pub fn PCIEXPRESSMAXPAYLOADSIZE_773004d0f6e8::max_payload4096_bytes() -> PCIEXPRESSMAXPAYLOADSIZE_773004d0f6e8 {
+  PCIEXPRESSMAXPAYLOADSIZE_773004d0f6e8::from_int(5)
+}
+
+///|
+pub fn PCIEXPRESSMAXPAYLOADSIZE_773004d0f6e8::max_payload512_bytes() -> PCIEXPRESSMAXPAYLOADSIZE_773004d0f6e8 {
+  PCIEXPRESSMAXPAYLOADSIZE_773004d0f6e8::from_int(2)
+}
+
+///|
+pub fn PCIEXPRESSMRLSTATE_4f07415181b9::mrl_closed() -> PCIEXPRESSMRLSTATE_4f07415181b9 {
+  PCIEXPRESSMRLSTATE_4f07415181b9::from_int(0)
+}
+
+///|
+pub fn PCIEXPRESSMRLSTATE_4f07415181b9::mrl_open() -> PCIEXPRESSMRLSTATE_4f07415181b9 {
+  PCIEXPRESSMRLSTATE_4f07415181b9::from_int(1)
+}
+
+///|
+pub fn PCIEXPRESSPOWERSTATE_1a1bb30f8491::power_off() -> PCIEXPRESSPOWERSTATE_1a1bb30f8491 {
+  PCIEXPRESSPOWERSTATE_1a1bb30f8491::from_int(1)
+}
+
+///|
+pub fn PCIEXPRESSPOWERSTATE_1a1bb30f8491::power_on() -> PCIEXPRESSPOWERSTATE_1a1bb30f8491 {
+  PCIEXPRESSPOWERSTATE_1a1bb30f8491::from_int(0)
+}
+
+///|
+pub fn PCIEXPRESSRCB_037d865bc51d::rcb128_bytes() -> PCIEXPRESSRCB_037d865bc51d {
+  PCIEXPRESSRCB_037d865bc51d::from_int(1)
+}
+
+///|
+pub fn PCIEXPRESSRCB_037d865bc51d::rcb64_bytes() -> PCIEXPRESSRCB_037d865bc51d {
+  PCIEXPRESSRCB_037d865bc51d::from_int(0)
+}
+
+///|
+pub fn PCIHARDWAREINTERFACE_00e257a5f577::pci_conventional() -> PCIHARDWAREINTERFACE_00e257a5f577 {
+  PCIHARDWAREINTERFACE_00e257a5f577::from_int(0)
+}
+
+///|
+pub fn PCIHARDWAREINTERFACE_00e257a5f577::pci_express() -> PCIHARDWAREINTERFACE_00e257a5f577 {
+  PCIHARDWAREINTERFACE_00e257a5f577::from_int(3)
+}
+
+///|
+pub fn PCIHARDWAREINTERFACE_00e257a5f577::pci_x_mode1() -> PCIHARDWAREINTERFACE_00e257a5f577 {
+  PCIHARDWAREINTERFACE_00e257a5f577::from_int(1)
+}
+
+///|
+pub fn PCIHARDWAREINTERFACE_00e257a5f577::pci_x_mode2() -> PCIHARDWAREINTERFACE_00e257a5f577 {
+  PCIHARDWAREINTERFACE_00e257a5f577::from_int(2)
+}
+
+///|
+pub fn PCWCALLBACKTYPE_ae93ed6b9ac2::pcw_callback_add_counter() -> PCWCALLBACKTYPE_ae93ed6b9ac2 {
+  PCWCALLBACKTYPE_ae93ed6b9ac2::from_int(0)
+}
+
+///|
+pub fn PCWCALLBACKTYPE_ae93ed6b9ac2::pcw_callback_collect_data() -> PCWCALLBACKTYPE_ae93ed6b9ac2 {
+  PCWCALLBACKTYPE_ae93ed6b9ac2::from_int(3)
+}
+
+///|
+pub fn PCWCALLBACKTYPE_ae93ed6b9ac2::pcw_callback_enumerate_instances() -> PCWCALLBACKTYPE_ae93ed6b9ac2 {
+  PCWCALLBACKTYPE_ae93ed6b9ac2::from_int(2)
+}
+
+///|
+pub fn PCWCALLBACKTYPE_ae93ed6b9ac2::pcw_callback_remove_counter() -> PCWCALLBACKTYPE_ae93ed6b9ac2 {
+  PCWCALLBACKTYPE_ae93ed6b9ac2::from_int(1)
+}
+
+///|
+pub fn PCWREGISTRATIONFLAGS_19c64bcfd420::pcw_registration_none() -> PCWREGISTRATIONFLAGS_19c64bcfd420 {
+  PCWREGISTRATIONFLAGS_19c64bcfd420::from_int(0)
+}
+
+///|
+pub fn PCWREGISTRATIONFLAGS_19c64bcfd420::pcw_registration_silo_neutral() -> PCWREGISTRATIONFLAGS_19c64bcfd420 {
+  PCWREGISTRATIONFLAGS_19c64bcfd420::from_int(1)
+}
+
+///|
+pub fn PHYSICALCOUNTERRESOURCEDESCRIPTORTYPE_b8c2d5a85118::resource_type_event_buffer() -> PHYSICALCOUNTERRESOURCEDESCRIPTORTYPE_b8c2d5a85118 {
+  PHYSICALCOUNTERRESOURCEDESCRIPTORTYPE_b8c2d5a85118::from_int(4)
+}
+
+///|
+pub fn PHYSICALCOUNTERRESOURCEDESCRIPTORTYPE_b8c2d5a85118::resource_type_extended_counter_configuration() -> PHYSICALCOUNTERRESOURCEDESCRIPTORTYPE_b8c2d5a85118 {
+  PHYSICALCOUNTERRESOURCEDESCRIPTORTYPE_b8c2d5a85118::from_int(2)
+}
+
+///|
+pub fn PHYSICALCOUNTERRESOURCEDESCRIPTORTYPE_b8c2d5a85118::resource_type_idenitification_tag() -> PHYSICALCOUNTERRESOURCEDESCRIPTORTYPE_b8c2d5a85118 {
+  PHYSICALCOUNTERRESOURCEDESCRIPTORTYPE_b8c2d5a85118::from_int(5)
+}
+
+///|
+pub fn PHYSICALCOUNTERRESOURCEDESCRIPTORTYPE_b8c2d5a85118::resource_type_max() -> PHYSICALCOUNTERRESOURCEDESCRIPTORTYPE_b8c2d5a85118 {
+  PHYSICALCOUNTERRESOURCEDESCRIPTORTYPE_b8c2d5a85118::from_int(6)
+}
+
+///|
+pub fn PHYSICALCOUNTERRESOURCEDESCRIPTORTYPE_b8c2d5a85118::resource_type_overflow() -> PHYSICALCOUNTERRESOURCEDESCRIPTORTYPE_b8c2d5a85118 {
+  PHYSICALCOUNTERRESOURCEDESCRIPTORTYPE_b8c2d5a85118::from_int(3)
+}
+
+///|
+pub fn PHYSICALCOUNTERRESOURCEDESCRIPTORTYPE_b8c2d5a85118::resource_type_range() -> PHYSICALCOUNTERRESOURCEDESCRIPTORTYPE_b8c2d5a85118 {
+  PHYSICALCOUNTERRESOURCEDESCRIPTORTYPE_b8c2d5a85118::from_int(1)
+}
+
+///|
+pub fn PHYSICALCOUNTERRESOURCEDESCRIPTORTYPE_b8c2d5a85118::resource_type_single() -> PHYSICALCOUNTERRESOURCEDESCRIPTORTYPE_b8c2d5a85118 {
+  PHYSICALCOUNTERRESOURCEDESCRIPTORTYPE_b8c2d5a85118::from_int(0)
+}
+
+///|
+pub fn POOLEXTENDEDPARAMETERTYPE_e2795f246a6b::pool_extended_parameter_invalid_type() -> POOLEXTENDEDPARAMETERTYPE_e2795f246a6b {
+  POOLEXTENDEDPARAMETERTYPE_e2795f246a6b::from_int(0)
+}
+
+///|
+pub fn POOLEXTENDEDPARAMETERTYPE_e2795f246a6b::pool_extended_parameter_max() -> POOLEXTENDEDPARAMETERTYPE_e2795f246a6b {
+  POOLEXTENDEDPARAMETERTYPE_e2795f246a6b::from_int(4)
+}
+
+///|
+pub fn POOLEXTENDEDPARAMETERTYPE_e2795f246a6b::pool_extended_parameter_numa_node() -> POOLEXTENDEDPARAMETERTYPE_e2795f246a6b {
+  POOLEXTENDEDPARAMETERTYPE_e2795f246a6b::from_int(3)
+}
+
+///|
+pub fn POOLEXTENDEDPARAMETERTYPE_e2795f246a6b::pool_extended_parameter_priority() -> POOLEXTENDEDPARAMETERTYPE_e2795f246a6b {
+  POOLEXTENDEDPARAMETERTYPE_e2795f246a6b::from_int(1)
+}
+
+///|
+pub fn POOLEXTENDEDPARAMETERTYPE_e2795f246a6b::pool_extended_parameter_secure_pool() -> POOLEXTENDEDPARAMETERTYPE_e2795f246a6b {
+  POOLEXTENDEDPARAMETERTYPE_e2795f246a6b::from_int(2)
+}
+
+///|
+pub fn POWERMONITORREQUESTREASON_d2d400e76377::monitor_request_reason_ac_dc_display_burst() -> POWERMONITORREQUESTREASON_d2d400e76377 {
+  POWERMONITORREQUESTREASON_d2d400e76377::from_int(5)
+}
+
+///|
+pub fn POWERMONITORREQUESTREASON_d2d400e76377::monitor_request_reason_ac_dc_display_burst_suppressed() -> POWERMONITORREQUESTREASON_d2d400e76377 {
+  POWERMONITORREQUESTREASON_d2d400e76377::from_int(28)
+}
+
+///|
+pub fn POWERMONITORREQUESTREASON_d2d400e76377::monitor_request_reason_battery_count_change() -> POWERMONITORREQUESTREASON_d2d400e76377 {
+  POWERMONITORREQUESTREASON_d2d400e76377::from_int(16)
+}
+
+///|
+pub fn POWERMONITORREQUESTREASON_d2d400e76377::monitor_request_reason_battery_count_change_suppressed() -> POWERMONITORREQUESTREASON_d2d400e76377 {
+  POWERMONITORREQUESTREASON_d2d400e76377::from_int(49)
+}
+
+///|
+pub fn POWERMONITORREQUESTREASON_d2d400e76377::monitor_request_reason_battery_pre_critical() -> POWERMONITORREQUESTREASON_d2d400e76377 {
+  POWERMONITORREQUESTREASON_d2d400e76377::from_int(53)
+}
+
+///|
+pub fn POWERMONITORREQUESTREASON_d2d400e76377::monitor_request_reason_builtin_panel() -> POWERMONITORREQUESTREASON_d2d400e76377 {
+  POWERMONITORREQUESTREASON_d2d400e76377::from_int(47)
+}
+
+///|
+pub fn POWERMONITORREQUESTREASON_d2d400e76377::monitor_request_reason_dp() -> POWERMONITORREQUESTREASON_d2d400e76377 {
+  POWERMONITORREQUESTREASON_d2d400e76377::from_int(19)
+}
+
+///|
+pub fn POWERMONITORREQUESTREASON_d2d400e76377::monitor_request_reason_dim() -> POWERMONITORREQUESTREASON_d2d400e76377 {
+  POWERMONITORREQUESTREASON_d2d400e76377::from_int(46)
+}
+
+///|
+pub fn POWERMONITORREQUESTREASON_d2d400e76377::monitor_request_reason_directed_drips() -> POWERMONITORREQUESTREASON_d2d400e76377 {
+  POWERMONITORREQUESTREASON_d2d400e76377::from_int(45)
+}
+
+///|
+pub fn POWERMONITORREQUESTREASON_d2d400e76377::monitor_request_reason_display_required_un_dim() -> POWERMONITORREQUESTREASON_d2d400e76377 {
+  POWERMONITORREQUESTREASON_d2d400e76377::from_int(48)
+}
+
+///|
+pub fn POWERMONITORREQUESTREASON_d2d400e76377::monitor_request_reason_full_wake() -> POWERMONITORREQUESTREASON_d2d400e76377 {
+  POWERMONITORREQUESTREASON_d2d400e76377::from_int(9)
+}
+
+///|
+pub fn POWERMONITORREQUESTREASON_d2d400e76377::monitor_request_reason_grace_period() -> POWERMONITORREQUESTREASON_d2d400e76377 {
+  POWERMONITORREQUESTREASON_d2d400e76377::from_int(17)
+}
+
+///|
+pub fn POWERMONITORREQUESTREASON_d2d400e76377::monitor_request_reason_idle_timeout() -> POWERMONITORREQUESTREASON_d2d400e76377 {
+  POWERMONITORREQUESTREASON_d2d400e76377::from_int(12)
+}
+
+///|
+pub fn POWERMONITORREQUESTREASON_d2d400e76377::monitor_request_reason_lid() -> POWERMONITORREQUESTREASON_d2d400e76377 {
+  POWERMONITORREQUESTREASON_d2d400e76377::from_int(15)
+}
+
+///|
+pub fn POWERMONITORREQUESTREASON_d2d400e76377::monitor_request_reason_max() -> POWERMONITORREQUESTREASON_d2d400e76377 {
+  POWERMONITORREQUESTREASON_d2d400e76377::from_int(55)
+}
+
+///|
+pub fn POWERMONITORREQUESTREASON_d2d400e76377::monitor_request_reason_near_proximity() -> POWERMONITORREQUESTREASON_d2d400e76377 {
+  POWERMONITORREQUESTREASON_d2d400e76377::from_int(22)
+}
+
+///|
+pub fn POWERMONITORREQUESTREASON_d2d400e76377::monitor_request_reason_pdc_signal() -> POWERMONITORREQUESTREASON_d2d400e76377 {
+  POWERMONITORREQUESTREASON_d2d400e76377::from_int(27)
+}
+
+///|
+pub fn POWERMONITORREQUESTREASON_d2d400e76377::monitor_request_reason_pdc_signal_fingerprint() -> POWERMONITORREQUESTREASON_d2d400e76377 {
+  POWERMONITORREQUESTREASON_d2d400e76377::from_int(44)
+}
+
+///|
+pub fn POWERMONITORREQUESTREASON_d2d400e76377::monitor_request_reason_pdc_signal_hey_cortana() -> POWERMONITORREQUESTREASON_d2d400e76377 {
+  POWERMONITORREQUESTREASON_d2d400e76377::from_int(42)
+}
+
+///|
+pub fn POWERMONITORREQUESTREASON_d2d400e76377::monitor_request_reason_pdc_signal_holographic_shell() -> POWERMONITORREQUESTREASON_d2d400e76377 {
+  POWERMONITORREQUESTREASON_d2d400e76377::from_int(43)
+}
+
+///|
+pub fn POWERMONITORREQUESTREASON_d2d400e76377::monitor_request_reason_pdc_signal_sensors_human_presence() -> POWERMONITORREQUESTREASON_d2d400e76377 {
+  POWERMONITORREQUESTREASON_d2d400e76377::from_int(52)
+}
+
+///|
+pub fn POWERMONITORREQUESTREASON_d2d400e76377::monitor_request_reason_pdc_signal_windows_mobile_pwr_notif() -> POWERMONITORREQUESTREASON_d2d400e76377 {
+  POWERMONITORREQUESTREASON_d2d400e76377::from_int(40)
+}
+
+///|
+pub fn POWERMONITORREQUESTREASON_d2d400e76377::monitor_request_reason_pdc_signal_windows_mobile_shell() -> POWERMONITORREQUESTREASON_d2d400e76377 {
+  POWERMONITORREQUESTREASON_d2d400e76377::from_int(41)
+}
+
+///|
+pub fn POWERMONITORREQUESTREASON_d2d400e76377::monitor_request_reason_pn_p() -> POWERMONITORREQUESTREASON_d2d400e76377 {
+  POWERMONITORREQUESTREASON_d2d400e76377::from_int(18)
+}
+
+///|
+pub fn POWERMONITORREQUESTREASON_d2d400e76377::monitor_request_reason_po_set_system_state() -> POWERMONITORREQUESTREASON_d2d400e76377 {
+  POWERMONITORREQUESTREASON_d2d400e76377::from_int(7)
+}
+
+///|
+pub fn POWERMONITORREQUESTREASON_d2d400e76377::monitor_request_reason_policy_change() -> POWERMONITORREQUESTREASON_d2d400e76377 {
+  POWERMONITORREQUESTREASON_d2d400e76377::from_int(13)
+}
+
+///|
+pub fn POWERMONITORREQUESTREASON_d2d400e76377::monitor_request_reason_power_button() -> POWERMONITORREQUESTREASON_d2d400e76377 {
+  POWERMONITORREQUESTREASON_d2d400e76377::from_int(1)
+}
+
+///|
+pub fn POWERMONITORREQUESTREASON_d2d400e76377::monitor_request_reason_remote_connection() -> POWERMONITORREQUESTREASON_d2d400e76377 {
+  POWERMONITORREQUESTREASON_d2d400e76377::from_int(2)
+}
+
+///|
+pub fn POWERMONITORREQUESTREASON_d2d400e76377::monitor_request_reason_resume_modern_standby() -> POWERMONITORREQUESTREASON_d2d400e76377 {
+  POWERMONITORREQUESTREASON_d2d400e76377::from_int(50)
+}
+
+///|
+pub fn POWERMONITORREQUESTREASON_d2d400e76377::monitor_request_reason_resume_pdc() -> POWERMONITORREQUESTREASON_d2d400e76377 {
+  POWERMONITORREQUESTREASON_d2d400e76377::from_int(24)
+}
+
+///|
+pub fn POWERMONITORREQUESTREASON_d2d400e76377::monitor_request_reason_resume_s4() -> POWERMONITORREQUESTREASON_d2d400e76377 {
+  POWERMONITORREQUESTREASON_d2d400e76377::from_int(25)
+}
+
+///|
+pub fn POWERMONITORREQUESTREASON_d2d400e76377::monitor_request_reason_sc_monitorpower() -> POWERMONITORREQUESTREASON_d2d400e76377 {
+  POWERMONITORREQUESTREASON_d2d400e76377::from_int(3)
+}
+
+///|
+pub fn POWERMONITORREQUESTREASON_d2d400e76377::monitor_request_reason_screen_off_request() -> POWERMONITORREQUESTREASON_d2d400e76377 {
+  POWERMONITORREQUESTREASON_d2d400e76377::from_int(11)
+}
+
+///|
+pub fn POWERMONITORREQUESTREASON_d2d400e76377::monitor_request_reason_session_unlock() -> POWERMONITORREQUESTREASON_d2d400e76377 {
+  POWERMONITORREQUESTREASON_d2d400e76377::from_int(10)
+}
+
+///|
+pub fn POWERMONITORREQUESTREASON_d2d400e76377::monitor_request_reason_set_thread_execution_state() -> POWERMONITORREQUESTREASON_d2d400e76377 {
+  POWERMONITORREQUESTREASON_d2d400e76377::from_int(8)
+}
+
+///|
+pub fn POWERMONITORREQUESTREASON_d2d400e76377::monitor_request_reason_sleep_button() -> POWERMONITORREQUESTREASON_d2d400e76377 {
+  POWERMONITORREQUESTREASON_d2d400e76377::from_int(14)
+}
+
+///|
+pub fn POWERMONITORREQUESTREASON_d2d400e76377::monitor_request_reason_sx_transition() -> POWERMONITORREQUESTREASON_d2d400e76377 {
+  POWERMONITORREQUESTREASON_d2d400e76377::from_int(20)
+}
+
+///|
+pub fn POWERMONITORREQUESTREASON_d2d400e76377::monitor_request_reason_system_idle() -> POWERMONITORREQUESTREASON_d2d400e76377 {
+  POWERMONITORREQUESTREASON_d2d400e76377::from_int(21)
+}
+
+///|
+pub fn POWERMONITORREQUESTREASON_d2d400e76377::monitor_request_reason_system_state_entered() -> POWERMONITORREQUESTREASON_d2d400e76377 {
+  POWERMONITORREQUESTREASON_d2d400e76377::from_int(29)
+}
+
+///|
+pub fn POWERMONITORREQUESTREASON_d2d400e76377::monitor_request_reason_terminal() -> POWERMONITORREQUESTREASON_d2d400e76377 {
+  POWERMONITORREQUESTREASON_d2d400e76377::from_int(26)
+}
+
+///|
+pub fn POWERMONITORREQUESTREASON_d2d400e76377::monitor_request_reason_terminal_init() -> POWERMONITORREQUESTREASON_d2d400e76377 {
+  POWERMONITORREQUESTREASON_d2d400e76377::from_int(51)
+}
+
+///|
+pub fn POWERMONITORREQUESTREASON_d2d400e76377::monitor_request_reason_thermal_standby() -> POWERMONITORREQUESTREASON_d2d400e76377 {
+  POWERMONITORREQUESTREASON_d2d400e76377::from_int(23)
+}
+
+///|
+pub fn POWERMONITORREQUESTREASON_d2d400e76377::monitor_request_reason_unknown() -> POWERMONITORREQUESTREASON_d2d400e76377 {
+  POWERMONITORREQUESTREASON_d2d400e76377::from_int(0)
+}
+
+///|
+pub fn POWERMONITORREQUESTREASON_d2d400e76377::monitor_request_reason_user_display_burst() -> POWERMONITORREQUESTREASON_d2d400e76377 {
+  POWERMONITORREQUESTREASON_d2d400e76377::from_int(6)
+}
+
+///|
+pub fn POWERMONITORREQUESTREASON_d2d400e76377::monitor_request_reason_user_input() -> POWERMONITORREQUESTREASON_d2d400e76377 {
+  POWERMONITORREQUESTREASON_d2d400e76377::from_int(4)
+}
+
+///|
+pub fn POWERMONITORREQUESTREASON_d2d400e76377::monitor_request_reason_user_input_accelerometer() -> POWERMONITORREQUESTREASON_d2d400e76377 {
+  POWERMONITORREQUESTREASON_d2d400e76377::from_int(35)
+}
+
+///|
+pub fn POWERMONITORREQUESTREASON_d2d400e76377::monitor_request_reason_user_input_hid() -> POWERMONITORREQUESTREASON_d2d400e76377 {
+  POWERMONITORREQUESTREASON_d2d400e76377::from_int(36)
+}
+
+///|
+pub fn POWERMONITORREQUESTREASON_d2d400e76377::monitor_request_reason_user_input_initialization() -> POWERMONITORREQUESTREASON_d2d400e76377 {
+  POWERMONITORREQUESTREASON_d2d400e76377::from_int(39)
+}
+
+///|
+pub fn POWERMONITORREQUESTREASON_d2d400e76377::monitor_request_reason_user_input_keyboard() -> POWERMONITORREQUESTREASON_d2d400e76377 {
+  POWERMONITORREQUESTREASON_d2d400e76377::from_int(31)
+}
+
+///|
+pub fn POWERMONITORREQUESTREASON_d2d400e76377::monitor_request_reason_user_input_mouse() -> POWERMONITORREQUESTREASON_d2d400e76377 {
+  POWERMONITORREQUESTREASON_d2d400e76377::from_int(32)
+}
+
+///|
+pub fn POWERMONITORREQUESTREASON_d2d400e76377::monitor_request_reason_user_input_pen() -> POWERMONITORREQUESTREASON_d2d400e76377 {
+  POWERMONITORREQUESTREASON_d2d400e76377::from_int(34)
+}
+
+///|
+pub fn POWERMONITORREQUESTREASON_d2d400e76377::monitor_request_reason_user_input_po_user_present() -> POWERMONITORREQUESTREASON_d2d400e76377 {
+  POWERMONITORREQUESTREASON_d2d400e76377::from_int(37)
+}
+
+///|
+pub fn POWERMONITORREQUESTREASON_d2d400e76377::monitor_request_reason_user_input_session_switch() -> POWERMONITORREQUESTREASON_d2d400e76377 {
+  POWERMONITORREQUESTREASON_d2d400e76377::from_int(38)
+}
+
+///|
+pub fn POWERMONITORREQUESTREASON_d2d400e76377::monitor_request_reason_user_input_touch() -> POWERMONITORREQUESTREASON_d2d400e76377 {
+  POWERMONITORREQUESTREASON_d2d400e76377::from_int(54)
+}
+
+///|
+pub fn POWERMONITORREQUESTREASON_d2d400e76377::monitor_request_reason_user_input_touchpad() -> POWERMONITORREQUESTREASON_d2d400e76377 {
+  POWERMONITORREQUESTREASON_d2d400e76377::from_int(33)
+}

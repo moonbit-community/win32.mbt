@@ -1,0 +1,537 @@
+// Generated using `moon info`, DON'T EDIT IT
+package "moonbit-community/win32api/scc/a951f2fcd798e9b6"
+
+import {
+  "moonbit-community/win32api/runtime/core",
+  "moonbit-community/win32api/scc/b785b16e0a6d57ad",
+  "moonbit-community/win32api/scc/ed1600d960f8e7eb",
+  "moonbit-community/win32api/scc/fb66f520d7e12332",
+  "moonbitlang/core/debug",
+}
+
+// Values
+pub let key_basic_information_249556f94837 : Int
+
+pub let key_cached_information_2e9224235d15 : Int
+
+pub let key_control_flags_information_e57fcae8161b : Int
+
+pub let key_flags_information_0afcddccc080 : Int
+
+pub let key_full_information_12919de931d0 : Int
+
+pub let key_handle_tags_information_85643f664fda : Int
+
+pub let key_layer_information_a4af2d7474f6 : Int
+
+pub let key_name_information_43608f4ccd28 : Int
+
+pub let key_node_information_2f601fe629e2 : Int
+
+pub let key_set_debug_information_960f159ad0ea : Int
+
+pub let key_set_handle_tags_information_3de14d246360 : Int
+
+pub let key_set_layer_information_b7a7f43a8fcb : Int
+
+pub let key_set_virtualization_information_1c5274c9b757 : Int
+
+pub let key_trust_information_d94a0f8c5fae : Int
+
+pub let key_value_basic_information_329d9b7ac6e6 : Int
+
+pub let key_value_full_information_150eda51ebc0 : Int
+
+pub let key_value_full_information_align64_1458523d28b1 : Int
+
+pub let key_value_layer_information_42278909dd26 : Int
+
+pub let key_value_partial_information_8128b623afeb : Int
+
+pub let key_value_partial_information_align64_7a1c9d98015a : Int
+
+pub let key_virtualization_information_c8e439999e28 : Int
+
+pub let key_wow64_flags_information_d6e88e2a00da : Int
+
+pub let key_write_time_information_e8ea958f7550 : Int
+
+pub let keyvalueentry_325799650978_alignment : Int
+
+pub let keyvalueentry_325799650978_size : Int
+
+pub let max_key_info_class_75165e0e9922 : Int
+
+pub let max_key_set_info_class_38423a3ac57f : Int
+
+pub let max_key_value_info_class_90588fbd381f : Int
+
+pub fn nt_commit_registry_transaction_0a7dff6aaa98(@core.RawAddress, UInt) -> Int raise @core.WindowsError
+
+pub fn nt_commit_registry_transaction_0a7dff6aaa98_raw(@core.RawAddress, UInt) -> Int
+
+pub fn nt_create_key_5f91dbcce5d7(@core.RawAddress, UInt, @ed1600d960f8e7eb.OBJECTATTRIBUTES_a84fd84bd592, UInt, @fb66f520d7e12332.UNICODESTRING_0417e7817c14?, UInt, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn nt_create_key_5f91dbcce5d7_raw(@core.RawAddress, UInt, @core.RawAddress, UInt, @core.RawAddress, UInt, @core.RawAddress) -> Int
+
+pub fn nt_create_key_transacted_b3feccae2b0f(@core.RawAddress, UInt, @ed1600d960f8e7eb.OBJECTATTRIBUTES_a84fd84bd592, UInt, @fb66f520d7e12332.UNICODESTRING_0417e7817c14?, UInt, @core.RawAddress, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn nt_create_key_transacted_b3feccae2b0f_raw(@core.RawAddress, UInt, @core.RawAddress, UInt, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn nt_create_registry_transaction_09926affe2e7(@core.RawAddress, UInt, @ed1600d960f8e7eb.OBJECTATTRIBUTES_a84fd84bd592?, UInt) -> Int raise @core.WindowsError
+
+pub fn nt_create_registry_transaction_09926affe2e7_raw(@core.RawAddress, UInt, @core.RawAddress, UInt) -> Int
+
+pub fn nt_delete_key_9543de36353d(@core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn nt_delete_key_9543de36353d_raw(@core.RawAddress) -> Int
+
+pub fn nt_delete_value_key_14a50709613c(@core.RawAddress, @fb66f520d7e12332.UNICODESTRING_0417e7817c14) -> Int raise @core.WindowsError
+
+pub fn nt_delete_value_key_14a50709613c_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn nt_enumerate_key_adc3b5437a61(@core.RawAddress, UInt, KEYINFORMATIONCLASS_6c4fcaa67bef, @core.RawAddress, UInt, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn nt_enumerate_key_adc3b5437a61_raw(@core.RawAddress, UInt, Int, @core.RawAddress, UInt, @core.RawAddress) -> Int
+
+pub fn nt_enumerate_value_key_d4a8e6cf5356(@core.RawAddress, UInt, KEYVALUEINFORMATIONCLASS_ca581491f265, @core.RawAddress, UInt, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn nt_enumerate_value_key_d4a8e6cf5356_raw(@core.RawAddress, UInt, Int, @core.RawAddress, UInt, @core.RawAddress) -> Int
+
+pub fn nt_flush_key_614b78d7ce74(@core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn nt_flush_key_614b78d7ce74_raw(@core.RawAddress) -> Int
+
+pub fn nt_notify_change_multiple_keys_7414a1dac471(@core.RawAddress, UInt, @ed1600d960f8e7eb.OBJECTATTRIBUTES_a84fd84bd592?, @core.RawAddress, @core.RawAddress, @core.RawAddress, @b785b16e0a6d57ad.IOSTATUSBLOCK_d81c8aca9b9d, UInt, Byte, @core.RawAddress, UInt, Byte) -> Int raise @core.WindowsError
+
+pub fn nt_notify_change_multiple_keys_7414a1dac471_raw(@core.RawAddress, UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, UInt, UInt, @core.RawAddress, UInt, UInt) -> Int
+
+pub fn nt_open_key_0bd9c383dcd1(@core.RawAddress, UInt, @ed1600d960f8e7eb.OBJECTATTRIBUTES_a84fd84bd592) -> Int raise @core.WindowsError
+
+pub fn nt_open_key_0bd9c383dcd1_raw(@core.RawAddress, UInt, @core.RawAddress) -> Int
+
+pub fn nt_open_key_ex_3f5f858a000a(@core.RawAddress, UInt, @ed1600d960f8e7eb.OBJECTATTRIBUTES_a84fd84bd592, UInt) -> Int raise @core.WindowsError
+
+pub fn nt_open_key_ex_3f5f858a000a_raw(@core.RawAddress, UInt, @core.RawAddress, UInt) -> Int
+
+pub fn nt_open_key_transacted_a16e55b64e69(@core.RawAddress, UInt, @ed1600d960f8e7eb.OBJECTATTRIBUTES_a84fd84bd592, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn nt_open_key_transacted_a16e55b64e69_raw(@core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn nt_open_key_transacted_ex_940302d11cdc(@core.RawAddress, UInt, @ed1600d960f8e7eb.OBJECTATTRIBUTES_a84fd84bd592, UInt, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn nt_open_key_transacted_ex_940302d11cdc_raw(@core.RawAddress, UInt, @core.RawAddress, UInt, @core.RawAddress) -> Int
+
+pub fn nt_open_registry_transaction_fda29f9f634f(@core.RawAddress, UInt, @ed1600d960f8e7eb.OBJECTATTRIBUTES_a84fd84bd592) -> Int raise @core.WindowsError
+
+pub fn nt_open_registry_transaction_fda29f9f634f_raw(@core.RawAddress, UInt, @core.RawAddress) -> Int
+
+pub fn nt_query_key_b504df4aef0c(@core.RawAddress, KEYINFORMATIONCLASS_6c4fcaa67bef, @core.RawAddress, UInt, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn nt_query_key_b504df4aef0c_raw(@core.RawAddress, Int, @core.RawAddress, UInt, @core.RawAddress) -> Int
+
+pub fn nt_query_multiple_value_key_44134f6370b1(@core.RawAddress, KEYVALUEENTRY_325799650978, UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn nt_query_multiple_value_key_44134f6370b1_raw(@core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn nt_query_value_key_f8597b311ed3(@core.RawAddress, @fb66f520d7e12332.UNICODESTRING_0417e7817c14, KEYVALUEINFORMATIONCLASS_ca581491f265, @core.RawAddress, UInt, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn nt_query_value_key_f8597b311ed3_raw(@core.RawAddress, @core.RawAddress, Int, @core.RawAddress, UInt, @core.RawAddress) -> Int
+
+pub fn nt_rename_key_74d2c7d96fd5(@core.RawAddress, @fb66f520d7e12332.UNICODESTRING_0417e7817c14) -> Int raise @core.WindowsError
+
+pub fn nt_rename_key_74d2c7d96fd5_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn nt_restore_key_ceb0e524f1af(@core.RawAddress, @core.RawAddress, UInt) -> Int raise @core.WindowsError
+
+pub fn nt_restore_key_ceb0e524f1af_raw(@core.RawAddress, @core.RawAddress, UInt) -> Int
+
+pub fn nt_rollback_registry_transaction_d512f9a046ef(@core.RawAddress, UInt) -> Int raise @core.WindowsError
+
+pub fn nt_rollback_registry_transaction_d512f9a046ef_raw(@core.RawAddress, UInt) -> Int
+
+pub fn nt_save_key_c99ba3752b90(@core.RawAddress, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn nt_save_key_c99ba3752b90_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn nt_save_key_ex_963403384d2f(@core.RawAddress, @core.RawAddress, UInt) -> Int raise @core.WindowsError
+
+pub fn nt_save_key_ex_963403384d2f_raw(@core.RawAddress, @core.RawAddress, UInt) -> Int
+
+pub fn nt_set_information_key_c3041779402a(@core.RawAddress, KEYSETINFORMATIONCLASS_b9014f6a52b4, @core.RawAddress, UInt) -> Int raise @core.WindowsError
+
+pub fn nt_set_information_key_c3041779402a_raw(@core.RawAddress, Int, @core.RawAddress, UInt) -> Int
+
+pub fn nt_set_value_key_579b6b443354(@core.RawAddress, @fb66f520d7e12332.UNICODESTRING_0417e7817c14, UInt, UInt, @core.RawAddress, UInt) -> Int raise @core.WindowsError
+
+pub fn nt_set_value_key_579b6b443354_raw(@core.RawAddress, @core.RawAddress, UInt, UInt, @core.RawAddress, UInt) -> Int
+
+pub let regenumeratekeyinformation_697996cfc2b1_alignment : Int
+
+pub let regenumeratekeyinformation_697996cfc2b1_size : Int
+
+pub let regenumeratevaluekeyinformation_4b2bd68e09db_alignment : Int
+
+pub let regenumeratevaluekeyinformation_4b2bd68e09db_size : Int
+
+pub let regquerykeyinformation_753a18c58336_alignment : Int
+
+pub let regquerykeyinformation_753a18c58336_size : Int
+
+pub let regquerymultiplevaluekeyinformation_881a74524f56_alignment : Int
+
+pub let regquerymultiplevaluekeyinformation_881a74524f56_size : Int
+
+pub let regqueryvaluekeyinformation_b15475750716_alignment : Int
+
+pub let regqueryvaluekeyinformation_b15475750716_size : Int
+
+pub let regsetinformationkeyinformation_c2347837a1a4_alignment : Int
+
+pub let regsetinformationkeyinformation_c2347837a1a4_size : Int
+
+pub fn zw_commit_registry_transaction_888ac6eb7b87(@core.RawAddress, UInt) -> Int raise @core.WindowsError
+
+pub fn zw_commit_registry_transaction_888ac6eb7b87_raw(@core.RawAddress, UInt) -> Int
+
+pub fn zw_create_key_e2296fb9e13b(@core.RawAddress, UInt, @ed1600d960f8e7eb.OBJECTATTRIBUTES_a84fd84bd592, UInt, @fb66f520d7e12332.UNICODESTRING_0417e7817c14?, UInt, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn zw_create_key_e2296fb9e13b_raw(@core.RawAddress, UInt, @core.RawAddress, UInt, @core.RawAddress, UInt, @core.RawAddress) -> Int
+
+pub fn zw_create_key_transacted_9c544e3d6e29(@core.RawAddress, UInt, @ed1600d960f8e7eb.OBJECTATTRIBUTES_a84fd84bd592, UInt, @fb66f520d7e12332.UNICODESTRING_0417e7817c14?, UInt, @core.RawAddress, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn zw_create_key_transacted_9c544e3d6e29_raw(@core.RawAddress, UInt, @core.RawAddress, UInt, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn zw_create_registry_transaction_a0320b677fd0(@core.RawAddress, UInt, @ed1600d960f8e7eb.OBJECTATTRIBUTES_a84fd84bd592?, UInt) -> Int raise @core.WindowsError
+
+pub fn zw_create_registry_transaction_a0320b677fd0_raw(@core.RawAddress, UInt, @core.RawAddress, UInt) -> Int
+
+pub fn zw_delete_key_6dde8969bb41(@core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn zw_delete_key_6dde8969bb41_raw(@core.RawAddress) -> Int
+
+pub fn zw_delete_value_key_e28e4fdb927c(@core.RawAddress, @fb66f520d7e12332.UNICODESTRING_0417e7817c14) -> Int raise @core.WindowsError
+
+pub fn zw_delete_value_key_e28e4fdb927c_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn zw_enumerate_key_8852b8c2a8ef(@core.RawAddress, UInt, KEYINFORMATIONCLASS_6c4fcaa67bef, @core.RawAddress, UInt, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn zw_enumerate_key_8852b8c2a8ef_raw(@core.RawAddress, UInt, Int, @core.RawAddress, UInt, @core.RawAddress) -> Int
+
+pub fn zw_enumerate_value_key_e2b689d65957(@core.RawAddress, UInt, KEYVALUEINFORMATIONCLASS_ca581491f265, @core.RawAddress, UInt, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn zw_enumerate_value_key_e2b689d65957_raw(@core.RawAddress, UInt, Int, @core.RawAddress, UInt, @core.RawAddress) -> Int
+
+pub fn zw_flush_key_1c1fcd64e616(@core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn zw_flush_key_1c1fcd64e616_raw(@core.RawAddress) -> Int
+
+pub fn zw_notify_change_multiple_keys_e737b6a003d7(@core.RawAddress, UInt, @ed1600d960f8e7eb.OBJECTATTRIBUTES_a84fd84bd592?, @core.RawAddress, @core.RawAddress, @core.RawAddress, @b785b16e0a6d57ad.IOSTATUSBLOCK_d81c8aca9b9d, UInt, Byte, @core.RawAddress, UInt, Byte) -> Int raise @core.WindowsError
+
+pub fn zw_notify_change_multiple_keys_e737b6a003d7_raw(@core.RawAddress, UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, UInt, UInt, @core.RawAddress, UInt, UInt) -> Int
+
+pub fn zw_open_key_423fbd48a42d(@core.RawAddress, UInt, @ed1600d960f8e7eb.OBJECTATTRIBUTES_a84fd84bd592) -> Int raise @core.WindowsError
+
+pub fn zw_open_key_423fbd48a42d_raw(@core.RawAddress, UInt, @core.RawAddress) -> Int
+
+pub fn zw_open_key_ex_f5626daadb9c(@core.RawAddress, UInt, @ed1600d960f8e7eb.OBJECTATTRIBUTES_a84fd84bd592, UInt) -> Int raise @core.WindowsError
+
+pub fn zw_open_key_ex_f5626daadb9c_raw(@core.RawAddress, UInt, @core.RawAddress, UInt) -> Int
+
+pub fn zw_open_key_transacted_ex_ea0ce9c38e36(@core.RawAddress, UInt, @ed1600d960f8e7eb.OBJECTATTRIBUTES_a84fd84bd592, UInt, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn zw_open_key_transacted_ex_ea0ce9c38e36_raw(@core.RawAddress, UInt, @core.RawAddress, UInt, @core.RawAddress) -> Int
+
+pub fn zw_open_key_transacted_f27e6760ad5b(@core.RawAddress, UInt, @ed1600d960f8e7eb.OBJECTATTRIBUTES_a84fd84bd592, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn zw_open_key_transacted_f27e6760ad5b_raw(@core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn zw_open_registry_transaction_0a3097b353ce(@core.RawAddress, UInt, @ed1600d960f8e7eb.OBJECTATTRIBUTES_a84fd84bd592) -> Int raise @core.WindowsError
+
+pub fn zw_open_registry_transaction_0a3097b353ce_raw(@core.RawAddress, UInt, @core.RawAddress) -> Int
+
+pub fn zw_query_key_f39757f30535(@core.RawAddress, KEYINFORMATIONCLASS_6c4fcaa67bef, @core.RawAddress, UInt, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn zw_query_key_f39757f30535_raw(@core.RawAddress, Int, @core.RawAddress, UInt, @core.RawAddress) -> Int
+
+pub fn zw_query_multiple_value_key_189e76cf9022(@core.RawAddress, KEYVALUEENTRY_325799650978, UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn zw_query_multiple_value_key_189e76cf9022_raw(@core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn zw_query_value_key_e40eea0cfc4b(@core.RawAddress, @fb66f520d7e12332.UNICODESTRING_0417e7817c14, KEYVALUEINFORMATIONCLASS_ca581491f265, @core.RawAddress, UInt, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn zw_query_value_key_e40eea0cfc4b_raw(@core.RawAddress, @core.RawAddress, Int, @core.RawAddress, UInt, @core.RawAddress) -> Int
+
+pub fn zw_rename_key_2332a695130c(@core.RawAddress, @fb66f520d7e12332.UNICODESTRING_0417e7817c14) -> Int raise @core.WindowsError
+
+pub fn zw_rename_key_2332a695130c_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn zw_restore_key_1469406083e9(@core.RawAddress, @core.RawAddress, UInt) -> Int raise @core.WindowsError
+
+pub fn zw_restore_key_1469406083e9_raw(@core.RawAddress, @core.RawAddress, UInt) -> Int
+
+pub fn zw_rollback_registry_transaction_b27d01cd3947(@core.RawAddress, UInt) -> Int raise @core.WindowsError
+
+pub fn zw_rollback_registry_transaction_b27d01cd3947_raw(@core.RawAddress, UInt) -> Int
+
+pub fn zw_save_key_7d038b555ced(@core.RawAddress, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn zw_save_key_7d038b555ced_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn zw_save_key_ex_09cd2c04ef8d(@core.RawAddress, @core.RawAddress, UInt) -> Int raise @core.WindowsError
+
+pub fn zw_save_key_ex_09cd2c04ef8d_raw(@core.RawAddress, @core.RawAddress, UInt) -> Int
+
+pub fn zw_set_information_key_65c359cf9206(@core.RawAddress, KEYSETINFORMATIONCLASS_b9014f6a52b4, @core.RawAddress, UInt) -> Int raise @core.WindowsError
+
+pub fn zw_set_information_key_65c359cf9206_raw(@core.RawAddress, Int, @core.RawAddress, UInt) -> Int
+
+pub fn zw_set_value_key_8f0a12a3153a(@core.RawAddress, @fb66f520d7e12332.UNICODESTRING_0417e7817c14, UInt, UInt, @core.RawAddress, UInt) -> Int raise @core.WindowsError
+
+pub fn zw_set_value_key_8f0a12a3153a_raw(@core.RawAddress, @core.RawAddress, UInt, UInt, @core.RawAddress, UInt) -> Int
+
+// Errors
+
+// Types and methods
+pub(all) struct KEYINFORMATIONCLASS_6c4fcaa67bef(Int) derive(Compare, Eq, @debug.Debug)
+pub fn KEYINFORMATIONCLASS_6c4fcaa67bef::from_int(Int) -> Self
+pub fn KEYINFORMATIONCLASS_6c4fcaa67bef::key_basic_information() -> Self
+pub fn KEYINFORMATIONCLASS_6c4fcaa67bef::key_cached_information() -> Self
+pub fn KEYINFORMATIONCLASS_6c4fcaa67bef::key_flags_information() -> Self
+pub fn KEYINFORMATIONCLASS_6c4fcaa67bef::key_full_information() -> Self
+pub fn KEYINFORMATIONCLASS_6c4fcaa67bef::key_handle_tags_information() -> Self
+pub fn KEYINFORMATIONCLASS_6c4fcaa67bef::key_layer_information() -> Self
+pub fn KEYINFORMATIONCLASS_6c4fcaa67bef::key_name_information() -> Self
+pub fn KEYINFORMATIONCLASS_6c4fcaa67bef::key_node_information() -> Self
+pub fn KEYINFORMATIONCLASS_6c4fcaa67bef::key_trust_information() -> Self
+pub fn KEYINFORMATIONCLASS_6c4fcaa67bef::key_virtualization_information() -> Self
+pub fn KEYINFORMATIONCLASS_6c4fcaa67bef::max_key_info_class() -> Self
+pub fn KEYINFORMATIONCLASS_6c4fcaa67bef::to_int(Self) -> Int
+
+pub(all) struct KEYSETINFORMATIONCLASS_b9014f6a52b4(Int) derive(Compare, Eq, @debug.Debug)
+pub fn KEYSETINFORMATIONCLASS_b9014f6a52b4::from_int(Int) -> Self
+pub fn KEYSETINFORMATIONCLASS_b9014f6a52b4::key_control_flags_information() -> Self
+pub fn KEYSETINFORMATIONCLASS_b9014f6a52b4::key_set_debug_information() -> Self
+pub fn KEYSETINFORMATIONCLASS_b9014f6a52b4::key_set_handle_tags_information() -> Self
+pub fn KEYSETINFORMATIONCLASS_b9014f6a52b4::key_set_layer_information() -> Self
+pub fn KEYSETINFORMATIONCLASS_b9014f6a52b4::key_set_virtualization_information() -> Self
+pub fn KEYSETINFORMATIONCLASS_b9014f6a52b4::key_wow64_flags_information() -> Self
+pub fn KEYSETINFORMATIONCLASS_b9014f6a52b4::key_write_time_information() -> Self
+pub fn KEYSETINFORMATIONCLASS_b9014f6a52b4::max_key_set_info_class() -> Self
+pub fn KEYSETINFORMATIONCLASS_b9014f6a52b4::to_int(Self) -> Int
+
+pub(all) struct KEYVALUEENTRY_325799650978 {
+  raw_buffer : @core.NativeBuffer
+}
+pub fn KEYVALUEENTRY_325799650978::abi_alignment() -> Int
+pub fn KEYVALUEENTRY_325799650978::abi_size() -> Int
+pub fn KEYVALUEENTRY_325799650978::bytes(Self) -> Bytes raise @core.WindowsError
+pub fn KEYVALUEENTRY_325799650978::data_length(Self) -> UInt raise @core.WindowsError
+pub fn KEYVALUEENTRY_325799650978::data_offset(Self) -> UInt raise @core.WindowsError
+pub fn KEYVALUEENTRY_325799650978::from_bytes(Bytes) -> Self raise @core.WindowsError
+pub fn KEYVALUEENTRY_325799650978::new() -> Self raise @core.WindowsError
+pub fn KEYVALUEENTRY_325799650978::raw_address(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn KEYVALUEENTRY_325799650978::set_data_length(Self, UInt) -> Unit raise @core.WindowsError
+pub fn KEYVALUEENTRY_325799650978::set_data_offset(Self, UInt) -> Unit raise @core.WindowsError
+pub fn KEYVALUEENTRY_325799650978::set_type_(Self, UInt) -> Unit raise @core.WindowsError
+pub fn KEYVALUEENTRY_325799650978::set_value_name_raw(Self, @core.RawAddress) -> Unit raise @core.WindowsError
+pub fn KEYVALUEENTRY_325799650978::type_(Self) -> UInt raise @core.WindowsError
+pub fn KEYVALUEENTRY_325799650978::value_name_raw(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn[T] KEYVALUEENTRY_325799650978::with_raw_address(Self, (@core.RawAddress) -> T raise?) -> T raise
+pub impl Eq for KEYVALUEENTRY_325799650978
+pub impl @debug.Debug for KEYVALUEENTRY_325799650978
+
+pub(all) struct KEYVALUEINFORMATIONCLASS_ca581491f265(Int) derive(Compare, Eq, @debug.Debug)
+pub fn KEYVALUEINFORMATIONCLASS_ca581491f265::from_int(Int) -> Self
+pub fn KEYVALUEINFORMATIONCLASS_ca581491f265::key_value_basic_information() -> Self
+pub fn KEYVALUEINFORMATIONCLASS_ca581491f265::key_value_full_information() -> Self
+pub fn KEYVALUEINFORMATIONCLASS_ca581491f265::key_value_full_information_align64() -> Self
+pub fn KEYVALUEINFORMATIONCLASS_ca581491f265::key_value_layer_information() -> Self
+pub fn KEYVALUEINFORMATIONCLASS_ca581491f265::key_value_partial_information() -> Self
+pub fn KEYVALUEINFORMATIONCLASS_ca581491f265::key_value_partial_information_align64() -> Self
+pub fn KEYVALUEINFORMATIONCLASS_ca581491f265::max_key_value_info_class() -> Self
+pub fn KEYVALUEINFORMATIONCLASS_ca581491f265::to_int(Self) -> Int
+
+pub(all) struct REGENUMERATEKEYINFORMATION_697996cfc2b1 {
+  raw_buffer : @core.NativeBuffer
+}
+pub fn REGENUMERATEKEYINFORMATION_697996cfc2b1::abi_alignment() -> Int
+pub fn REGENUMERATEKEYINFORMATION_697996cfc2b1::abi_size() -> Int
+pub fn REGENUMERATEKEYINFORMATION_697996cfc2b1::bytes(Self) -> Bytes raise @core.WindowsError
+pub fn REGENUMERATEKEYINFORMATION_697996cfc2b1::call_context_raw(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn REGENUMERATEKEYINFORMATION_697996cfc2b1::from_bytes(Bytes) -> Self raise @core.WindowsError
+pub fn REGENUMERATEKEYINFORMATION_697996cfc2b1::index(Self) -> UInt raise @core.WindowsError
+pub fn REGENUMERATEKEYINFORMATION_697996cfc2b1::key_information_class(Self) -> KEYINFORMATIONCLASS_6c4fcaa67bef raise @core.WindowsError
+pub fn REGENUMERATEKEYINFORMATION_697996cfc2b1::key_information_raw(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn REGENUMERATEKEYINFORMATION_697996cfc2b1::length(Self) -> UInt raise @core.WindowsError
+pub fn REGENUMERATEKEYINFORMATION_697996cfc2b1::new() -> Self raise @core.WindowsError
+pub fn REGENUMERATEKEYINFORMATION_697996cfc2b1::object_context_raw(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn REGENUMERATEKEYINFORMATION_697996cfc2b1::object_raw(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn REGENUMERATEKEYINFORMATION_697996cfc2b1::raw_address(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn REGENUMERATEKEYINFORMATION_697996cfc2b1::reserved_raw(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn REGENUMERATEKEYINFORMATION_697996cfc2b1::result_length_raw(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn REGENUMERATEKEYINFORMATION_697996cfc2b1::set_call_context_raw(Self, @core.RawAddress) -> Unit raise @core.WindowsError
+pub fn REGENUMERATEKEYINFORMATION_697996cfc2b1::set_index(Self, UInt) -> Unit raise @core.WindowsError
+pub fn REGENUMERATEKEYINFORMATION_697996cfc2b1::set_key_information_class(Self, KEYINFORMATIONCLASS_6c4fcaa67bef) -> Unit raise @core.WindowsError
+pub fn REGENUMERATEKEYINFORMATION_697996cfc2b1::set_key_information_raw(Self, @core.RawAddress) -> Unit raise @core.WindowsError
+pub fn REGENUMERATEKEYINFORMATION_697996cfc2b1::set_length(Self, UInt) -> Unit raise @core.WindowsError
+pub fn REGENUMERATEKEYINFORMATION_697996cfc2b1::set_object_context_raw(Self, @core.RawAddress) -> Unit raise @core.WindowsError
+pub fn REGENUMERATEKEYINFORMATION_697996cfc2b1::set_object_raw(Self, @core.RawAddress) -> Unit raise @core.WindowsError
+pub fn REGENUMERATEKEYINFORMATION_697996cfc2b1::set_reserved_raw(Self, @core.RawAddress) -> Unit raise @core.WindowsError
+pub fn REGENUMERATEKEYINFORMATION_697996cfc2b1::set_result_length_raw(Self, @core.RawAddress) -> Unit raise @core.WindowsError
+pub fn[T] REGENUMERATEKEYINFORMATION_697996cfc2b1::with_raw_address(Self, (@core.RawAddress) -> T raise?) -> T raise
+pub impl Eq for REGENUMERATEKEYINFORMATION_697996cfc2b1
+pub impl @debug.Debug for REGENUMERATEKEYINFORMATION_697996cfc2b1
+
+pub(all) struct REGENUMERATEVALUEKEYINFORMATION_4b2bd68e09db {
+  raw_buffer : @core.NativeBuffer
+}
+pub fn REGENUMERATEVALUEKEYINFORMATION_4b2bd68e09db::abi_alignment() -> Int
+pub fn REGENUMERATEVALUEKEYINFORMATION_4b2bd68e09db::abi_size() -> Int
+pub fn REGENUMERATEVALUEKEYINFORMATION_4b2bd68e09db::bytes(Self) -> Bytes raise @core.WindowsError
+pub fn REGENUMERATEVALUEKEYINFORMATION_4b2bd68e09db::call_context_raw(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn REGENUMERATEVALUEKEYINFORMATION_4b2bd68e09db::from_bytes(Bytes) -> Self raise @core.WindowsError
+pub fn REGENUMERATEVALUEKEYINFORMATION_4b2bd68e09db::index(Self) -> UInt raise @core.WindowsError
+pub fn REGENUMERATEVALUEKEYINFORMATION_4b2bd68e09db::key_value_information_class(Self) -> KEYVALUEINFORMATIONCLASS_ca581491f265 raise @core.WindowsError
+pub fn REGENUMERATEVALUEKEYINFORMATION_4b2bd68e09db::key_value_information_raw(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn REGENUMERATEVALUEKEYINFORMATION_4b2bd68e09db::length(Self) -> UInt raise @core.WindowsError
+pub fn REGENUMERATEVALUEKEYINFORMATION_4b2bd68e09db::new() -> Self raise @core.WindowsError
+pub fn REGENUMERATEVALUEKEYINFORMATION_4b2bd68e09db::object_context_raw(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn REGENUMERATEVALUEKEYINFORMATION_4b2bd68e09db::object_raw(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn REGENUMERATEVALUEKEYINFORMATION_4b2bd68e09db::raw_address(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn REGENUMERATEVALUEKEYINFORMATION_4b2bd68e09db::reserved_raw(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn REGENUMERATEVALUEKEYINFORMATION_4b2bd68e09db::result_length_raw(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn REGENUMERATEVALUEKEYINFORMATION_4b2bd68e09db::set_call_context_raw(Self, @core.RawAddress) -> Unit raise @core.WindowsError
+pub fn REGENUMERATEVALUEKEYINFORMATION_4b2bd68e09db::set_index(Self, UInt) -> Unit raise @core.WindowsError
+pub fn REGENUMERATEVALUEKEYINFORMATION_4b2bd68e09db::set_key_value_information_class(Self, KEYVALUEINFORMATIONCLASS_ca581491f265) -> Unit raise @core.WindowsError
+pub fn REGENUMERATEVALUEKEYINFORMATION_4b2bd68e09db::set_key_value_information_raw(Self, @core.RawAddress) -> Unit raise @core.WindowsError
+pub fn REGENUMERATEVALUEKEYINFORMATION_4b2bd68e09db::set_length(Self, UInt) -> Unit raise @core.WindowsError
+pub fn REGENUMERATEVALUEKEYINFORMATION_4b2bd68e09db::set_object_context_raw(Self, @core.RawAddress) -> Unit raise @core.WindowsError
+pub fn REGENUMERATEVALUEKEYINFORMATION_4b2bd68e09db::set_object_raw(Self, @core.RawAddress) -> Unit raise @core.WindowsError
+pub fn REGENUMERATEVALUEKEYINFORMATION_4b2bd68e09db::set_reserved_raw(Self, @core.RawAddress) -> Unit raise @core.WindowsError
+pub fn REGENUMERATEVALUEKEYINFORMATION_4b2bd68e09db::set_result_length_raw(Self, @core.RawAddress) -> Unit raise @core.WindowsError
+pub fn[T] REGENUMERATEVALUEKEYINFORMATION_4b2bd68e09db::with_raw_address(Self, (@core.RawAddress) -> T raise?) -> T raise
+pub impl Eq for REGENUMERATEVALUEKEYINFORMATION_4b2bd68e09db
+pub impl @debug.Debug for REGENUMERATEVALUEKEYINFORMATION_4b2bd68e09db
+
+pub(all) struct REGQUERYKEYINFORMATION_753a18c58336 {
+  raw_buffer : @core.NativeBuffer
+}
+pub fn REGQUERYKEYINFORMATION_753a18c58336::abi_alignment() -> Int
+pub fn REGQUERYKEYINFORMATION_753a18c58336::abi_size() -> Int
+pub fn REGQUERYKEYINFORMATION_753a18c58336::bytes(Self) -> Bytes raise @core.WindowsError
+pub fn REGQUERYKEYINFORMATION_753a18c58336::call_context_raw(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn REGQUERYKEYINFORMATION_753a18c58336::from_bytes(Bytes) -> Self raise @core.WindowsError
+pub fn REGQUERYKEYINFORMATION_753a18c58336::key_information_class(Self) -> KEYINFORMATIONCLASS_6c4fcaa67bef raise @core.WindowsError
+pub fn REGQUERYKEYINFORMATION_753a18c58336::key_information_raw(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn REGQUERYKEYINFORMATION_753a18c58336::length(Self) -> UInt raise @core.WindowsError
+pub fn REGQUERYKEYINFORMATION_753a18c58336::new() -> Self raise @core.WindowsError
+pub fn REGQUERYKEYINFORMATION_753a18c58336::object_context_raw(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn REGQUERYKEYINFORMATION_753a18c58336::object_raw(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn REGQUERYKEYINFORMATION_753a18c58336::raw_address(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn REGQUERYKEYINFORMATION_753a18c58336::reserved_raw(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn REGQUERYKEYINFORMATION_753a18c58336::result_length_raw(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn REGQUERYKEYINFORMATION_753a18c58336::set_call_context_raw(Self, @core.RawAddress) -> Unit raise @core.WindowsError
+pub fn REGQUERYKEYINFORMATION_753a18c58336::set_key_information_class(Self, KEYINFORMATIONCLASS_6c4fcaa67bef) -> Unit raise @core.WindowsError
+pub fn REGQUERYKEYINFORMATION_753a18c58336::set_key_information_raw(Self, @core.RawAddress) -> Unit raise @core.WindowsError
+pub fn REGQUERYKEYINFORMATION_753a18c58336::set_length(Self, UInt) -> Unit raise @core.WindowsError
+pub fn REGQUERYKEYINFORMATION_753a18c58336::set_object_context_raw(Self, @core.RawAddress) -> Unit raise @core.WindowsError
+pub fn REGQUERYKEYINFORMATION_753a18c58336::set_object_raw(Self, @core.RawAddress) -> Unit raise @core.WindowsError
+pub fn REGQUERYKEYINFORMATION_753a18c58336::set_reserved_raw(Self, @core.RawAddress) -> Unit raise @core.WindowsError
+pub fn REGQUERYKEYINFORMATION_753a18c58336::set_result_length_raw(Self, @core.RawAddress) -> Unit raise @core.WindowsError
+pub fn[T] REGQUERYKEYINFORMATION_753a18c58336::with_raw_address(Self, (@core.RawAddress) -> T raise?) -> T raise
+pub impl Eq for REGQUERYKEYINFORMATION_753a18c58336
+pub impl @debug.Debug for REGQUERYKEYINFORMATION_753a18c58336
+
+pub(all) struct REGQUERYMULTIPLEVALUEKEYINFORMATION_881a74524f56 {
+  raw_buffer : @core.NativeBuffer
+}
+pub fn REGQUERYMULTIPLEVALUEKEYINFORMATION_881a74524f56::abi_alignment() -> Int
+pub fn REGQUERYMULTIPLEVALUEKEYINFORMATION_881a74524f56::abi_size() -> Int
+pub fn REGQUERYMULTIPLEVALUEKEYINFORMATION_881a74524f56::buffer_length_raw(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn REGQUERYMULTIPLEVALUEKEYINFORMATION_881a74524f56::bytes(Self) -> Bytes raise @core.WindowsError
+pub fn REGQUERYMULTIPLEVALUEKEYINFORMATION_881a74524f56::call_context_raw(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn REGQUERYMULTIPLEVALUEKEYINFORMATION_881a74524f56::entry_count(Self) -> UInt raise @core.WindowsError
+pub fn REGQUERYMULTIPLEVALUEKEYINFORMATION_881a74524f56::from_bytes(Bytes) -> Self raise @core.WindowsError
+pub fn REGQUERYMULTIPLEVALUEKEYINFORMATION_881a74524f56::new() -> Self raise @core.WindowsError
+pub fn REGQUERYMULTIPLEVALUEKEYINFORMATION_881a74524f56::object_context_raw(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn REGQUERYMULTIPLEVALUEKEYINFORMATION_881a74524f56::object_raw(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn REGQUERYMULTIPLEVALUEKEYINFORMATION_881a74524f56::raw_address(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn REGQUERYMULTIPLEVALUEKEYINFORMATION_881a74524f56::required_buffer_length_raw(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn REGQUERYMULTIPLEVALUEKEYINFORMATION_881a74524f56::reserved_raw(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn REGQUERYMULTIPLEVALUEKEYINFORMATION_881a74524f56::set_buffer_length_raw(Self, @core.RawAddress) -> Unit raise @core.WindowsError
+pub fn REGQUERYMULTIPLEVALUEKEYINFORMATION_881a74524f56::set_call_context_raw(Self, @core.RawAddress) -> Unit raise @core.WindowsError
+pub fn REGQUERYMULTIPLEVALUEKEYINFORMATION_881a74524f56::set_entry_count(Self, UInt) -> Unit raise @core.WindowsError
+pub fn REGQUERYMULTIPLEVALUEKEYINFORMATION_881a74524f56::set_object_context_raw(Self, @core.RawAddress) -> Unit raise @core.WindowsError
+pub fn REGQUERYMULTIPLEVALUEKEYINFORMATION_881a74524f56::set_object_raw(Self, @core.RawAddress) -> Unit raise @core.WindowsError
+pub fn REGQUERYMULTIPLEVALUEKEYINFORMATION_881a74524f56::set_required_buffer_length_raw(Self, @core.RawAddress) -> Unit raise @core.WindowsError
+pub fn REGQUERYMULTIPLEVALUEKEYINFORMATION_881a74524f56::set_reserved_raw(Self, @core.RawAddress) -> Unit raise @core.WindowsError
+pub fn REGQUERYMULTIPLEVALUEKEYINFORMATION_881a74524f56::set_value_buffer_raw(Self, @core.RawAddress) -> Unit raise @core.WindowsError
+pub fn REGQUERYMULTIPLEVALUEKEYINFORMATION_881a74524f56::set_value_entries_raw(Self, @core.RawAddress) -> Unit raise @core.WindowsError
+pub fn REGQUERYMULTIPLEVALUEKEYINFORMATION_881a74524f56::value_buffer_raw(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn REGQUERYMULTIPLEVALUEKEYINFORMATION_881a74524f56::value_entries_raw(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn[T] REGQUERYMULTIPLEVALUEKEYINFORMATION_881a74524f56::with_raw_address(Self, (@core.RawAddress) -> T raise?) -> T raise
+pub impl Eq for REGQUERYMULTIPLEVALUEKEYINFORMATION_881a74524f56
+pub impl @debug.Debug for REGQUERYMULTIPLEVALUEKEYINFORMATION_881a74524f56
+
+pub(all) struct REGQUERYVALUEKEYINFORMATION_b15475750716 {
+  raw_buffer : @core.NativeBuffer
+}
+pub fn REGQUERYVALUEKEYINFORMATION_b15475750716::abi_alignment() -> Int
+pub fn REGQUERYVALUEKEYINFORMATION_b15475750716::abi_size() -> Int
+pub fn REGQUERYVALUEKEYINFORMATION_b15475750716::bytes(Self) -> Bytes raise @core.WindowsError
+pub fn REGQUERYVALUEKEYINFORMATION_b15475750716::call_context_raw(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn REGQUERYVALUEKEYINFORMATION_b15475750716::from_bytes(Bytes) -> Self raise @core.WindowsError
+pub fn REGQUERYVALUEKEYINFORMATION_b15475750716::key_value_information_class(Self) -> KEYVALUEINFORMATIONCLASS_ca581491f265 raise @core.WindowsError
+pub fn REGQUERYVALUEKEYINFORMATION_b15475750716::key_value_information_raw(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn REGQUERYVALUEKEYINFORMATION_b15475750716::length(Self) -> UInt raise @core.WindowsError
+pub fn REGQUERYVALUEKEYINFORMATION_b15475750716::new() -> Self raise @core.WindowsError
+pub fn REGQUERYVALUEKEYINFORMATION_b15475750716::object_context_raw(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn REGQUERYVALUEKEYINFORMATION_b15475750716::object_raw(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn REGQUERYVALUEKEYINFORMATION_b15475750716::raw_address(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn REGQUERYVALUEKEYINFORMATION_b15475750716::reserved_raw(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn REGQUERYVALUEKEYINFORMATION_b15475750716::result_length_raw(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn REGQUERYVALUEKEYINFORMATION_b15475750716::set_call_context_raw(Self, @core.RawAddress) -> Unit raise @core.WindowsError
+pub fn REGQUERYVALUEKEYINFORMATION_b15475750716::set_key_value_information_class(Self, KEYVALUEINFORMATIONCLASS_ca581491f265) -> Unit raise @core.WindowsError
+pub fn REGQUERYVALUEKEYINFORMATION_b15475750716::set_key_value_information_raw(Self, @core.RawAddress) -> Unit raise @core.WindowsError
+pub fn REGQUERYVALUEKEYINFORMATION_b15475750716::set_length(Self, UInt) -> Unit raise @core.WindowsError
+pub fn REGQUERYVALUEKEYINFORMATION_b15475750716::set_object_context_raw(Self, @core.RawAddress) -> Unit raise @core.WindowsError
+pub fn REGQUERYVALUEKEYINFORMATION_b15475750716::set_object_raw(Self, @core.RawAddress) -> Unit raise @core.WindowsError
+pub fn REGQUERYVALUEKEYINFORMATION_b15475750716::set_reserved_raw(Self, @core.RawAddress) -> Unit raise @core.WindowsError
+pub fn REGQUERYVALUEKEYINFORMATION_b15475750716::set_result_length_raw(Self, @core.RawAddress) -> Unit raise @core.WindowsError
+pub fn REGQUERYVALUEKEYINFORMATION_b15475750716::set_value_name_raw(Self, @core.RawAddress) -> Unit raise @core.WindowsError
+pub fn REGQUERYVALUEKEYINFORMATION_b15475750716::value_name_raw(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn[T] REGQUERYVALUEKEYINFORMATION_b15475750716::with_raw_address(Self, (@core.RawAddress) -> T raise?) -> T raise
+pub impl Eq for REGQUERYVALUEKEYINFORMATION_b15475750716
+pub impl @debug.Debug for REGQUERYVALUEKEYINFORMATION_b15475750716
+
+pub(all) struct REGSETINFORMATIONKEYINFORMATION_c2347837a1a4 {
+  raw_buffer : @core.NativeBuffer
+}
+pub fn REGSETINFORMATIONKEYINFORMATION_c2347837a1a4::abi_alignment() -> Int
+pub fn REGSETINFORMATIONKEYINFORMATION_c2347837a1a4::abi_size() -> Int
+pub fn REGSETINFORMATIONKEYINFORMATION_c2347837a1a4::bytes(Self) -> Bytes raise @core.WindowsError
+pub fn REGSETINFORMATIONKEYINFORMATION_c2347837a1a4::call_context_raw(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn REGSETINFORMATIONKEYINFORMATION_c2347837a1a4::from_bytes(Bytes) -> Self raise @core.WindowsError
+pub fn REGSETINFORMATIONKEYINFORMATION_c2347837a1a4::key_set_information_class(Self) -> KEYSETINFORMATIONCLASS_b9014f6a52b4 raise @core.WindowsError
+pub fn REGSETINFORMATIONKEYINFORMATION_c2347837a1a4::key_set_information_length(Self) -> UInt raise @core.WindowsError
+pub fn REGSETINFORMATIONKEYINFORMATION_c2347837a1a4::key_set_information_raw(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn REGSETINFORMATIONKEYINFORMATION_c2347837a1a4::new() -> Self raise @core.WindowsError
+pub fn REGSETINFORMATIONKEYINFORMATION_c2347837a1a4::object_context_raw(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn REGSETINFORMATIONKEYINFORMATION_c2347837a1a4::object_raw(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn REGSETINFORMATIONKEYINFORMATION_c2347837a1a4::raw_address(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn REGSETINFORMATIONKEYINFORMATION_c2347837a1a4::reserved_raw(Self) -> @core.RawAddress raise @core.WindowsError
+pub fn REGSETINFORMATIONKEYINFORMATION_c2347837a1a4::set_call_context_raw(Self, @core.RawAddress) -> Unit raise @core.WindowsError
+pub fn REGSETINFORMATIONKEYINFORMATION_c2347837a1a4::set_key_set_information_class(Self, KEYSETINFORMATIONCLASS_b9014f6a52b4) -> Unit raise @core.WindowsError
+pub fn REGSETINFORMATIONKEYINFORMATION_c2347837a1a4::set_key_set_information_length(Self, UInt) -> Unit raise @core.WindowsError
+pub fn REGSETINFORMATIONKEYINFORMATION_c2347837a1a4::set_key_set_information_raw(Self, @core.RawAddress) -> Unit raise @core.WindowsError
+pub fn REGSETINFORMATIONKEYINFORMATION_c2347837a1a4::set_object_context_raw(Self, @core.RawAddress) -> Unit raise @core.WindowsError
+pub fn REGSETINFORMATIONKEYINFORMATION_c2347837a1a4::set_object_raw(Self, @core.RawAddress) -> Unit raise @core.WindowsError
+pub fn REGSETINFORMATIONKEYINFORMATION_c2347837a1a4::set_reserved_raw(Self, @core.RawAddress) -> Unit raise @core.WindowsError
+pub fn[T] REGSETINFORMATIONKEYINFORMATION_c2347837a1a4::with_raw_address(Self, (@core.RawAddress) -> T raise?) -> T raise
+pub impl Eq for REGSETINFORMATIONKEYINFORMATION_c2347837a1a4
+pub impl @debug.Debug for REGSETINFORMATIONKEYINFORMATION_c2347837a1a4
+
+// Type aliases
+
+// Traits

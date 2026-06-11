@@ -1,0 +1,116 @@
+// Generated using `moon info`, DON'T EDIT IT
+package "moonbit-community/win32api/windows/storage/access_cache"
+
+import {
+  "moonbit-community/win32api/runtime/core",
+  "moonbit-community/win32api/scc/50af2cbd12f6d35f",
+  "moonbitlang/core/ref",
+}
+
+// Values
+pub fn add_item_removed(@core.RawAddress, @core.RawAddress) -> Int64 raise @core.WindowsError
+
+pub fn add_item_removed_raw(@core.RawAddress, @core.RawAddress, @ref.Ref[Int64]) -> Int
+
+pub fn add_or_replace(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn add_or_replace_overload_default_metadata(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn add_or_replace_overload_default_metadata_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn add_or_replace_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn add_or_replace_with_metadata_and_visibility(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, Int) -> Unit raise @core.WindowsError
+
+pub fn add_or_replace_with_metadata_and_visibility_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, Int) -> Int
+
+pub fn add_overload_default_metadata_raw(@core.RawAddress, @core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn add_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn add_with_metadata_and_visibility_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, Int, @ref.Ref[UInt64]) -> Int
+
+pub let app_and_system : Int
+
+pub let app_only : Int
+
+pub fn check_access_raw(@core.RawAddress, @core.RawAddress, Bytes) -> Int
+
+pub fn clear(@core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn clear_raw(@core.RawAddress) -> Int
+
+pub fn contains_item_raw(@core.RawAddress, @core.RawAddress, Bytes) -> Int
+
+pub let disallow_user_input : UInt
+
+pub let fast_locations_only : UInt
+
+pub fn get_entries_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_file_async_raw(@core.RawAddress, @core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_file_with_options_async_raw(@core.RawAddress, @core.RawAddress, UInt, @ref.Ref[UInt64]) -> Int
+
+pub fn get_folder_async_raw(@core.RawAddress, @core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_folder_with_options_async_raw(@core.RawAddress, @core.RawAddress, UInt, @ref.Ref[UInt64]) -> Int
+
+pub fn get_future_access_list_for_user_raw(@core.RawAddress, @core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_future_access_list_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_item_async_raw(@core.RawAddress, @core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_item_with_options_async_raw(@core.RawAddress, @core.RawAddress, UInt, @ref.Ref[UInt64]) -> Int
+
+pub fn get_maximum_items_allowed(@core.RawAddress) -> UInt raise @core.WindowsError
+
+pub fn get_maximum_items_allowed_raw(@core.RawAddress, @ref.Ref[UInt]) -> Int
+
+pub fn get_most_recently_used_list_for_user_raw(@core.RawAddress, @core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_most_recently_used_list_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_removed_entry(@core.RawAddress) -> Bytes raise @core.WindowsError
+
+pub fn get_removed_entry_raw(@core.RawAddress, Bytes) -> Int
+
+pub let none : UInt
+
+pub fn remove(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn remove_item_removed(@core.RawAddress, Int64) -> Unit raise @core.WindowsError
+
+pub fn remove_item_removed_raw(@core.RawAddress, Int64) -> Int
+
+pub fn remove_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub let suppress_access_time_update : UInt
+
+pub let use_read_only_cached_copy : UInt
+
+// Errors
+
+// Types and methods
+
+// Type aliases
+pub using @50af2cbd12f6d35f {type AccessCacheOptions_ef84c2ded202 as AccessCacheOptions}
+
+pub using @50af2cbd12f6d35f {type AccessListEntry_19d6a2c19c1f as AccessListEntry}
+
+pub using @50af2cbd12f6d35f {type AccessListEntryView_e93d3390b70b as AccessListEntryView}
+
+pub using @50af2cbd12f6d35f {type IStorageItemAccessList_5794724d663e as IStorageItemAccessList}
+
+pub using @50af2cbd12f6d35f {type ItemRemovedEventArgs_2d0e09d356c8 as ItemRemovedEventArgs}
+
+pub using @50af2cbd12f6d35f {type RecentStorageItemVisibility_bdb1fa56c7d9 as RecentStorageItemVisibility}
+
+pub using @50af2cbd12f6d35f {type StorageApplicationPermissions_dab96be90b8c as StorageApplicationPermissions}
+
+pub using @50af2cbd12f6d35f {type StorageItemAccessList_9f731365a21f as StorageItemAccessList}
+
+pub using @50af2cbd12f6d35f {type StorageItemMostRecentlyUsedList_a60de856691d as StorageItemMostRecentlyUsedList}
+
+// Traits

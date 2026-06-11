@@ -1,0 +1,116 @@
+// Generated using `moon info`, DON'T EDIT IT
+package "moonbit-community/win32api/windows/devices/i2c"
+
+import {
+  "moonbit-community/win32api/runtime/core",
+  "moonbit-community/win32api/scc/7929d5f7d794e1e1",
+  "moonbitlang/core/ref",
+}
+
+// Values
+pub let clock_stretch_timeout : Int
+
+pub fn create_raw(@core.RawAddress, Int, @ref.Ref[UInt64]) -> Int
+
+pub let exclusive : Int
+
+pub let fast_mode : Int
+
+pub fn from_id_async_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub let full_transfer : Int
+
+pub fn get_bus_speed(@core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn get_bus_speed_raw(@core.RawAddress, @ref.Ref[Int]) -> Int
+
+pub fn get_connection_settings_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_controllers_async_raw(@core.RawAddress, @core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_default_async_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_device_id_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_device_raw(@core.RawAddress, @core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_device_selector_from_friendly_name_raw(@core.RawAddress, @core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_device_selector_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_sharing_mode(@core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn get_sharing_mode_raw(@core.RawAddress, @ref.Ref[Int]) -> Int
+
+pub fn get_slave_address(@core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn get_slave_address_raw(@core.RawAddress, @ref.Ref[Int]) -> Int
+
+pub let partial_transfer : Int
+
+pub fn put_bus_speed(@core.RawAddress, Int) -> Unit raise @core.WindowsError
+
+pub fn put_bus_speed_raw(@core.RawAddress, Int) -> Int
+
+pub fn put_sharing_mode(@core.RawAddress, Int) -> Unit raise @core.WindowsError
+
+pub fn put_sharing_mode_raw(@core.RawAddress, Int) -> Int
+
+pub fn put_slave_address(@core.RawAddress, Int) -> Unit raise @core.WindowsError
+
+pub fn put_slave_address_raw(@core.RawAddress, Int) -> Int
+
+pub fn read(@core.RawAddress, UInt, Bytes) -> Unit raise @core.WindowsError
+
+pub fn read_partial(@core.RawAddress, UInt, Bytes) -> Bytes raise @core.WindowsError
+
+pub fn read_partial_raw(@core.RawAddress, UInt, Bytes, Bytes) -> Int
+
+pub fn read_raw(@core.RawAddress, UInt, Bytes) -> Int
+
+pub let shared : Int
+
+pub let slave_address_not_acknowledged : Int
+
+pub let standard_mode : Int
+
+pub let unknown_error : Int
+
+pub fn write(@core.RawAddress, UInt, Bytes) -> Unit raise @core.WindowsError
+
+pub fn write_partial(@core.RawAddress, UInt, Bytes) -> Bytes raise @core.WindowsError
+
+pub fn write_partial_raw(@core.RawAddress, UInt, Bytes, Bytes) -> Int
+
+pub fn write_raw(@core.RawAddress, UInt, Bytes) -> Int
+
+pub fn write_read(@core.RawAddress, UInt, Bytes, UInt, Bytes) -> Unit raise @core.WindowsError
+
+pub fn write_read_partial(@core.RawAddress, UInt, Bytes, UInt, Bytes) -> Bytes raise @core.WindowsError
+
+pub fn write_read_partial_raw(@core.RawAddress, UInt, Bytes, UInt, Bytes, Bytes) -> Int
+
+pub fn write_read_raw(@core.RawAddress, UInt, Bytes, UInt, Bytes) -> Int
+
+// Errors
+
+// Types and methods
+
+// Type aliases
+pub using @7929d5f7d794e1e1 {type I2cBusSpeed_0f0a1270c9b2 as I2cBusSpeed}
+
+pub using @7929d5f7d794e1e1 {type I2cConnectionSettings_de951e83adf7 as I2cConnectionSettings}
+
+pub using @7929d5f7d794e1e1 {type I2cController_a6e44a217e1d as I2cController}
+
+pub using @7929d5f7d794e1e1 {type I2cDevice_613b5c157366 as I2cDevice}
+
+pub using @7929d5f7d794e1e1 {type I2cSharingMode_5c686a7667dd as I2cSharingMode}
+
+pub using @7929d5f7d794e1e1 {type I2cTransferResult_f531ee033623 as I2cTransferResult}
+
+pub using @7929d5f7d794e1e1 {type I2cTransferStatus_312274bf4e5d as I2cTransferStatus}
+
+pub using @7929d5f7d794e1e1 {type II2cDeviceStatics_a36b490d66c8 as II2cDeviceStatics}
+
+// Traits

@@ -1,0 +1,2047 @@
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.ConstantBufferViewEStruct.
+pub type ConstantBufferViewEStruct = @owner.ConstantBufferViewEStruct_05fb935ef6d5
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.ConstantEStruct.
+pub type ConstantEStruct = @owner.ConstantEStruct_7b1e637895fc
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.IncrementingConstantEStruct.
+pub type IncrementingConstantEStruct = @owner.IncrementingConstantEStruct_dcf438ede15b
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.ShaderResourceViewEStruct.
+pub type ShaderResourceViewEStruct = @owner.ShaderResourceViewEStruct_85b512304174
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.UnorderedAccessViewEStruct.
+pub type UnorderedAccessViewEStruct = @owner.UnorderedAccessViewEStruct_1de7535dab59
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.VertexBufferEStruct.
+pub type VertexBufferEStruct = @owner.VertexBufferEStruct_b39255e1dc95
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.AnonymousEUnion.
+pub type AnonymousEUnion_50008b4240 = @owner.AnonymousEUnion_50008b4240a5
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.AnonymousEUnion.
+pub type AnonymousEUnion_714f9ecad7 = @owner.AnonymousEUnion_714f9ecad70c
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.AnonymousEUnion.
+pub type AnonymousEUnion_d2de935450 = @owner.AnonymousEUnion_d2de935450a2
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.AnonymousEUnion.
+pub type AnonymousEUnion_0f8ea3f57d = @owner.AnonymousEUnion_0f8ea3f57d35
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.AnonymousEUnion.
+pub type AnonymousEUnion_15a56b618c = @owner.AnonymousEUnion_15a56b618c89
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.AnonymousEUnion.
+pub type AnonymousEUnion_3459a0d738 = @owner.AnonymousEUnion_3459a0d73894
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.AnonymousEUnion.
+pub type AnonymousEUnion_6cf48e818b = @owner.AnonymousEUnion_6cf48e818be9
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.AnonymousEUnion.
+pub type AnonymousEUnion_15f40d5a53 = @owner.AnonymousEUnion_15f40d5a537c
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.AnonymousEUnion.
+pub type AnonymousEUnion_6d65e4ad90 = @owner.AnonymousEUnion_6d65e4ad90c3
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.AnonymousEUnion.
+pub type AnonymousEUnion_87a719936b = @owner.AnonymousEUnion_87a719936b20
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.AnonymousEUnion.
+pub type AnonymousEUnion_69a6ee891b = @owner.AnonymousEUnion_69a6ee891b3b
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.AnonymousEUnion.
+pub type AnonymousEUnion_0c551a8363 = @owner.AnonymousEUnion_0c551a83632f
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.AnonymousEUnion.
+pub type AnonymousEUnion_a8a55adc53 = @owner.AnonymousEUnion_a8a55adc537e
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.AnonymousEUnion.
+pub type AnonymousEUnion_d2bca3980c = @owner.AnonymousEUnion_d2bca3980c8f
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.AnonymousEUnion.
+pub type AnonymousEUnion_779cb13394 = @owner.AnonymousEUnion_779cb13394b8
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.AnonymousEUnion.
+pub type AnonymousEUnion_90905c76e6 = @owner.AnonymousEUnion_90905c76e6e3
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.AnonymousEUnion.
+pub type AnonymousEUnion_48ff5894c5 = @owner.AnonymousEUnion_48ff5894c541
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.AnonymousEUnion.
+pub type AnonymousEUnion_a1a7b0b739 = @owner.AnonymousEUnion_a1a7b0b7394c
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.AnonymousEUnion.
+pub type AnonymousEUnion_4781bfb1a9 = @owner.AnonymousEUnion_4781bfb1a998
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.AnonymousEUnion.
+pub type AnonymousEUnion_ce553cc889 = @owner.AnonymousEUnion_ce553cc88950
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.AnonymousEUnion.
+pub type AnonymousEUnion_dd3bf1d40f = @owner.AnonymousEUnion_dd3bf1d40f17
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.AnonymousEUnion.
+pub type AnonymousEUnion_92821e5f0b = @owner.AnonymousEUnion_92821e5f0bc7
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.AnonymousEUnion.
+pub type AnonymousEUnion_2a3065c6c3 = @owner.AnonymousEUnion_2a3065c6c30f
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.AnonymousEUnion.
+pub type AnonymousEUnion_ec758504f4 = @owner.AnonymousEUnion_ec758504f4ab
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12ApplicationDescFunc.
+pub type D3D12ApplicationDescFunc = @owner.D3D12ApplicationDescFunc_17c066464c7b
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12CompilerCacheSessionAllocationFunc.
+pub type D3D12CompilerCacheSessionAllocationFunc = @owner.D3D12CompilerCacheSessionAllocationFunc_4985692a969e
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12CompilerCacheSessionGroupValueKeysFunc.
+pub type D3D12CompilerCacheSessionGroupValueKeysFunc = @owner.D3D12CompilerCacheSessionGroupValueKeysFunc_063196fc3e6d
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12CompilerCacheSessionGroupValuesFunc.
+pub type D3D12CompilerCacheSessionGroupValuesFunc = @owner.D3D12CompilerCacheSessionGroupValuesFunc_8d95aa4f0c18
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12MessageFunc.
+pub type D3D12MessageFunc = @owner.D3D12MessageFunc_06d6687fc18e
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12PipelineStateFunc.
+pub type D3D12PipelineStateFunc = @owner.D3D12PipelineStateFunc_ad87df56e4df
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12StateObjectFunc.
+pub type D3D12StateObjectFunc = @owner.D3D12StateObjectFunc_080c0850b203
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12ADAPTERFAMILY.
+pub type D3D12ADAPTERFAMILY = @owner.D3D12ADAPTERFAMILY_3199bbf58039
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12APPLICATIONDESC.
+pub type D3D12APPLICATIONDESC = @owner.D3D12APPLICATIONDESC_3dd9575fbdc7
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12APPLICATIONSPECIFICDRIVERBLOBSTATUS.
+pub type D3D12APPLICATIONSPECIFICDRIVERBLOBSTATUS = @owner.D3D12APPLICATIONSPECIFICDRIVERBLOBSTATUS_c660bd93c621
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12AUTOBREADCRUMBNODE.
+pub type D3D12AUTOBREADCRUMBNODE = @owner.D3D12AUTOBREADCRUMBNODE_9abac995c84d
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12AUTOBREADCRUMBNODE1.
+pub type D3D12AUTOBREADCRUMBNODE1 = @owner.D3D12AUTOBREADCRUMBNODE1_57637d642bb3
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12AUTOBREADCRUMBOP.
+pub type D3D12AUTOBREADCRUMBOP = @owner.D3D12AUTOBREADCRUMBOP_e4f885a9124a
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12AXISSHADINGRATE.
+pub type D3D12AXISSHADINGRATE = @owner.D3D12AXISSHADINGRATE_d8889f501eac
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12BACKGROUNDPROCESSINGMODE.
+pub type D3D12BACKGROUNDPROCESSINGMODE = @owner.D3D12BACKGROUNDPROCESSINGMODE_e17eb2f50098
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12BARRIERACCESS.
+pub type D3D12BARRIERACCESS = @owner.D3D12BARRIERACCESS_347e40eceb48
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12BARRIERGROUP.
+pub type D3D12BARRIERGROUP = @owner.D3D12BARRIERGROUP_d5b9eb968359
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12BARRIERLAYOUT.
+pub type D3D12BARRIERLAYOUT = @owner.D3D12BARRIERLAYOUT_fff78b542e69
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12BARRIERSUBRESOURCERANGE.
+pub type D3D12BARRIERSUBRESOURCERANGE = @owner.D3D12BARRIERSUBRESOURCERANGE_5ed5c906cba9
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12BARRIERSYNC.
+pub type D3D12BARRIERSYNC = @owner.D3D12BARRIERSYNC_8e47e41bccf9
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12BARRIERTYPE.
+pub type D3D12BARRIERTYPE = @owner.D3D12BARRIERTYPE_493d5330d5e1
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12BLEND.
+pub type D3D12BLEND = @owner.D3D12BLEND_e3d3a6296a3a
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12BLENDDESC.
+pub type D3D12BLENDDESC = @owner.D3D12BLENDDESC_021af1164df9
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12BLENDOP.
+pub type D3D12BLENDOP = @owner.D3D12BLENDOP_c3e1c46053c4
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12BOX.
+pub type D3D12BOX = @owner.D3D12BOX_6eebd68e8aca
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12BROADCASTINGLAUNCHOVERRIDES.
+pub type D3D12BROADCASTINGLAUNCHOVERRIDES = @owner.D3D12BROADCASTINGLAUNCHOVERRIDES_30350184bdc2
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12BUFFERBARRIER.
+pub type D3D12BUFFERBARRIER = @owner.D3D12BUFFERBARRIER_4823110f429f
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12BUFFERRTV.
+pub type D3D12BUFFERRTV = @owner.D3D12BUFFERRTV_48a40be7e493
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12BUFFERSRV.
+pub type D3D12BUFFERSRV = @owner.D3D12BUFFERSRV_5ef58ce5154f
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12BUFFERSRVFLAGS.
+pub type D3D12BUFFERSRVFLAGS = @owner.D3D12BUFFERSRVFLAGS_7c0268f127bc
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12BUFFERUAV.
+pub type D3D12BUFFERUAV = @owner.D3D12BUFFERUAV_1e535a6588c4
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12BUFFERUAVFLAGS.
+pub type D3D12BUFFERUAVFLAGS = @owner.D3D12BUFFERUAVFLAGS_33f10293e5e3
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12BUILDRAYTRACINGACCELERATIONSTRUCTUREDESC.
+pub type D3D12BUILDRAYTRACINGACCELERATIONSTRUCTUREDESC = @owner.D3D12BUILDRAYTRACINGACCELERATIONSTRUCTUREDESC_566815bc8643
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12BUILDRAYTRACINGACCELERATIONSTRUCTUREINPUTS.
+pub type D3D12BUILDRAYTRACINGACCELERATIONSTRUCTUREINPUTS = @owner.D3D12BUILDRAYTRACINGACCELERATIONSTRUCTUREINPUTS_ef82454af848
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12BUILDRAYTRACINGACCELERATIONSTRUCTURETOOLSVISUALIZATIONHEADER.
+pub type D3D12BUILDRAYTRACINGACCELERATIONSTRUCTURETOOLSVISUALIZATIONHEADER = @owner.D3D12BUILDRAYTRACINGACCELERATIONSTRUCTURETOOLSVISUALIZATIONHEADER_6ed37f57b1c2
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12CACHEDPIPELINESTATE.
+pub type D3D12CACHEDPIPELINESTATE = @owner.D3D12CACHEDPIPELINESTATE_93ba1c94614e
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12CLEARFLAGS.
+pub type D3D12CLEARFLAGS = @owner.D3D12CLEARFLAGS_a43752cc6ef9
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12CLEARVALUE.
+pub type D3D12CLEARVALUE = @owner.D3D12CLEARVALUE_5f58fd15f8dd
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12COALESCINGLAUNCHOVERRIDES.
+pub type D3D12COALESCINGLAUNCHOVERRIDES = @owner.D3D12COALESCINGLAUNCHOVERRIDES_efc9c450ae7f
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12COLORWRITEENABLE.
+pub type D3D12COLORWRITEENABLE = @owner.D3D12COLORWRITEENABLE_7b7d33110a5e
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12COMMANDLISTFLAGS.
+pub type D3D12COMMANDLISTFLAGS = @owner.D3D12COMMANDLISTFLAGS_8a38708fa8f6
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12COMMANDLISTSUPPORTFLAGS.
+pub type D3D12COMMANDLISTSUPPORTFLAGS = @owner.D3D12COMMANDLISTSUPPORTFLAGS_c3eebca102fb
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12COMMANDLISTTYPE.
+pub type D3D12COMMANDLISTTYPE = @owner.D3D12COMMANDLISTTYPE_92de885a385c
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12COMMANDPOOLFLAGS.
+pub type D3D12COMMANDPOOLFLAGS = @owner.D3D12COMMANDPOOLFLAGS_cfd748afcf7e
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12COMMANDQUEUEDESC.
+pub type D3D12COMMANDQUEUEDESC = @owner.D3D12COMMANDQUEUEDESC_8df9b92af430
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12COMMANDQUEUEFLAGS.
+pub type D3D12COMMANDQUEUEFLAGS = @owner.D3D12COMMANDQUEUEFLAGS_329b510193c8
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12COMMANDQUEUEGLOBALPRIORITY.
+pub type D3D12COMMANDQUEUEGLOBALPRIORITY = @owner.D3D12COMMANDQUEUEGLOBALPRIORITY_8a0766a19abe
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12COMMANDQUEUEPRIORITY.
+pub type D3D12COMMANDQUEUEPRIORITY = @owner.D3D12COMMANDQUEUEPRIORITY_8f991c5b087a
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12COMMANDQUEUEPROCESSPRIORITY.
+pub type D3D12COMMANDQUEUEPROCESSPRIORITY = @owner.D3D12COMMANDQUEUEPROCESSPRIORITY_09492f4c1a74
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12COMMANDRECORDERFLAGS.
+pub type D3D12COMMANDRECORDERFLAGS = @owner.D3D12COMMANDRECORDERFLAGS_c5b08330ccc2
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12COMMANDSIGNATUREDESC.
+pub type D3D12COMMANDSIGNATUREDESC = @owner.D3D12COMMANDSIGNATUREDESC_509316f6955d
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12COMMONCOMPUTENODEOVERRIDES.
+pub type D3D12COMMONCOMPUTENODEOVERRIDES = @owner.D3D12COMMONCOMPUTENODEOVERRIDES_53c132f265d3
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12COMPARISONFUNC.
+pub type D3D12COMPARISONFUNC = @owner.D3D12COMPARISONFUNC_2abc145f15cb
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12COMPILERCACHECONSTVALUE.
+pub type D3D12COMPILERCACHECONSTVALUE = @owner.D3D12COMPILERCACHECONSTVALUE_c4086abbf88c
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12COMPILERCACHEGROUPKEY.
+pub type D3D12COMPILERCACHEGROUPKEY = @owner.D3D12COMPILERCACHEGROUPKEY_4da5be0e2255
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12COMPILERCACHETYPEDCONSTVALUE.
+pub type D3D12COMPILERCACHETYPEDCONSTVALUE = @owner.D3D12COMPILERCACHETYPEDCONSTVALUE_293f628ccf32
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12COMPILERCACHETYPEDVALUE.
+pub type D3D12COMPILERCACHETYPEDVALUE = @owner.D3D12COMPILERCACHETYPEDVALUE_d5133dd590df
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12COMPILERCACHEVALUE.
+pub type D3D12COMPILERCACHEVALUE = @owner.D3D12COMPILERCACHEVALUE_dfa143a38c99
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12COMPILERCACHEVALUEKEY.
+pub type D3D12COMPILERCACHEVALUEKEY = @owner.D3D12COMPILERCACHEVALUEKEY_9356862d414e
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12COMPILERDATABASEPATH.
+pub type D3D12COMPILERDATABASEPATH = @owner.D3D12COMPILERDATABASEPATH_f372c8e3714f
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12COMPILEREXISTINGCOLLECTIONDESC.
+pub type D3D12COMPILEREXISTINGCOLLECTIONDESC = @owner.D3D12COMPILEREXISTINGCOLLECTIONDESC_e2b9887ca05e
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12COMPILERTARGET.
+pub type D3D12COMPILERTARGET = @owner.D3D12COMPILERTARGET_4fa22bc39713
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12COMPILERVALUETYPE.
+pub type D3D12COMPILERVALUETYPE = @owner.D3D12COMPILERVALUETYPE_6d57787e8c38
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12COMPILERVALUETYPEFLAGS.
+pub type D3D12COMPILERVALUETYPEFLAGS = @owner.D3D12COMPILERVALUETYPEFLAGS_0bf2903278a8
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12COMPUTEPIPELINESTATEDESC.
+pub type D3D12COMPUTEPIPELINESTATEDESC = @owner.D3D12COMPUTEPIPELINESTATEDESC_1ba594135e06
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12CONSERVATIVERASTERIZATIONMODE.
+pub type D3D12CONSERVATIVERASTERIZATIONMODE = @owner.D3D12CONSERVATIVERASTERIZATIONMODE_c94fc51c367f
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12CONSERVATIVERASTERIZATIONTIER.
+pub type D3D12CONSERVATIVERASTERIZATIONTIER = @owner.D3D12CONSERVATIVERASTERIZATIONTIER_b8c14fdefcb7
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12CONSTANTBUFFERVIEWDESC.
+pub type D3D12CONSTANTBUFFERVIEWDESC = @owner.D3D12CONSTANTBUFFERVIEWDESC_caa3ceede7b1
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12CPUDESCRIPTORHANDLE.
+pub type D3D12CPUDESCRIPTORHANDLE = @owner.D3D12CPUDESCRIPTORHANDLE_3630202dbd7c
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12CPUPAGEPROPERTY.
+pub type D3D12CPUPAGEPROPERTY = @owner.D3D12CPUPAGEPROPERTY_d64e83172ca8
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12CROSSNODESHARINGTIER.
+pub type D3D12CROSSNODESHARINGTIER = @owner.D3D12CROSSNODESHARINGTIER_7f25c65b6f8a
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12CULLMODE.
+pub type D3D12CULLMODE = @owner.D3D12CULLMODE_d85a68f3d999
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12DEBUGCOMMANDLISTGPUBASEDVALIDATIONSETTINGS.
+pub type D3D12DEBUGCOMMANDLISTGPUBASEDVALIDATIONSETTINGS = @owner.D3D12DEBUGCOMMANDLISTGPUBASEDVALIDATIONSETTINGS_78fe7ee1351c
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12DEBUGCOMMANDLISTPARAMETERTYPE.
+pub type D3D12DEBUGCOMMANDLISTPARAMETERTYPE = @owner.D3D12DEBUGCOMMANDLISTPARAMETERTYPE_da4e33f2e927
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12DEBUGDEVICEBYTECODEVALIDATIONMODE.
+pub type D3D12DEBUGDEVICEBYTECODEVALIDATIONMODE = @owner.D3D12DEBUGDEVICEBYTECODEVALIDATIONMODE_ad2441e0de5a
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12DEBUGDEVICEGPUBASEDVALIDATIONSETTINGS.
+pub type D3D12DEBUGDEVICEGPUBASEDVALIDATIONSETTINGS = @owner.D3D12DEBUGDEVICEGPUBASEDVALIDATIONSETTINGS_c6dae9754b67
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12DEBUGDEVICEGPUSLOWDOWNPERFORMANCEFACTOR.
+pub type D3D12DEBUGDEVICEGPUSLOWDOWNPERFORMANCEFACTOR = @owner.D3D12DEBUGDEVICEGPUSLOWDOWNPERFORMANCEFACTOR_293f08348d0b
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12DEBUGDEVICEPARAMETERTYPE.
+pub type D3D12DEBUGDEVICEPARAMETERTYPE = @owner.D3D12DEBUGDEVICEPARAMETERTYPE_ce1987aa3930
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12DEBUGFEATURE.
+pub type D3D12DEBUGFEATURE = @owner.D3D12DEBUGFEATURE_1d178ce1ab5e
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12DEPTHSTENCILOPDESC.
+pub type D3D12DEPTHSTENCILOPDESC = @owner.D3D12DEPTHSTENCILOPDESC_78961c9227b6
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12DEPTHSTENCILOPDESC1.
+pub type D3D12DEPTHSTENCILOPDESC1 = @owner.D3D12DEPTHSTENCILOPDESC1_69ebb72fd071
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12DEPTHSTENCILDESC.
+pub type D3D12DEPTHSTENCILDESC = @owner.D3D12DEPTHSTENCILDESC_42ba59fa0ebb
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12DEPTHSTENCILDESC1.
+pub type D3D12DEPTHSTENCILDESC1 = @owner.D3D12DEPTHSTENCILDESC1_390dbcd6223d
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12DEPTHSTENCILDESC2.
+pub type D3D12DEPTHSTENCILDESC2 = @owner.D3D12DEPTHSTENCILDESC2_99238f7e9cf2
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12DEPTHSTENCILFORMAT.
+pub type D3D12DEPTHSTENCILFORMAT = @owner.D3D12DEPTHSTENCILFORMAT_2a1b54345546
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12DEPTHSTENCILVALUE.
+pub type D3D12DEPTHSTENCILVALUE = @owner.D3D12DEPTHSTENCILVALUE_f79d33cb3bbd
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12DEPTHSTENCILVIEWDESC.
+pub type D3D12DEPTHSTENCILVIEWDESC = @owner.D3D12DEPTHSTENCILVIEWDESC_830933b0c9df
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12DEPTHWRITEMASK.
+pub type D3D12DEPTHWRITEMASK = @owner.D3D12DEPTHWRITEMASK_c9d40efdd181
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12DESCRIPTORHEAPDESC.
+pub type D3D12DESCRIPTORHEAPDESC = @owner.D3D12DESCRIPTORHEAPDESC_b2379ede5018
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12DESCRIPTORHEAPFLAGS.
+pub type D3D12DESCRIPTORHEAPFLAGS = @owner.D3D12DESCRIPTORHEAPFLAGS_865515c9e3e1
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12DESCRIPTORHEAPTYPE.
+pub type D3D12DESCRIPTORHEAPTYPE = @owner.D3D12DESCRIPTORHEAPTYPE_d7a2fc52f201
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12DESCRIPTORRANGE.
+pub type D3D12DESCRIPTORRANGE = @owner.D3D12DESCRIPTORRANGE_b9ab95e2a983
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12DESCRIPTORRANGE1.
+pub type D3D12DESCRIPTORRANGE1 = @owner.D3D12DESCRIPTORRANGE1_dfa70cbbd107
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12DESCRIPTORRANGEFLAGS.
+pub type D3D12DESCRIPTORRANGEFLAGS = @owner.D3D12DESCRIPTORRANGEFLAGS_7ca78a9f6eaa
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12DESCRIPTORRANGETYPE.
+pub type D3D12DESCRIPTORRANGETYPE = @owner.D3D12DESCRIPTORRANGETYPE_5887da6f08f0
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12DEVICECONFIGURATIONDESC.
+pub type D3D12DEVICECONFIGURATIONDESC = @owner.D3D12DEVICECONFIGURATIONDESC_86b3940c9729
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12DEVICEFACTORYFLAGS.
+pub type D3D12DEVICEFACTORYFLAGS = @owner.D3D12DEVICEFACTORYFLAGS_ab229c5e2d8a
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12DEVICEFLAGS.
+pub type D3D12DEVICEFLAGS = @owner.D3D12DEVICEFLAGS_1bc93c047506
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12DEVICEREMOVEDEXTENDEDDATA.
+pub type D3D12DEVICEREMOVEDEXTENDEDDATA = @owner.D3D12DEVICEREMOVEDEXTENDEDDATA_497531a7a04a
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12DEVICEREMOVEDEXTENDEDDATA1.
+pub type D3D12DEVICEREMOVEDEXTENDEDDATA1 = @owner.D3D12DEVICEREMOVEDEXTENDEDDATA1_ff7907eb012e
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12DEVICEREMOVEDEXTENDEDDATA2.
+pub type D3D12DEVICEREMOVEDEXTENDEDDATA2 = @owner.D3D12DEVICEREMOVEDEXTENDEDDATA2_afc62f2e4ed2
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12DEVICEREMOVEDEXTENDEDDATA3.
+pub type D3D12DEVICEREMOVEDEXTENDEDDATA3 = @owner.D3D12DEVICEREMOVEDEXTENDEDDATA3_e9dc334b7fab
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12DISCARDREGION.
+pub type D3D12DISCARDREGION = @owner.D3D12DISCARDREGION_380eacc581db
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12DISPATCHARGUMENTS.
+pub type D3D12DISPATCHARGUMENTS = @owner.D3D12DISPATCHARGUMENTS_8b54fda2c24c
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12DISPATCHGRAPHDESC.
+pub type D3D12DISPATCHGRAPHDESC = @owner.D3D12DISPATCHGRAPHDESC_3bd5c0491d4f
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12DISPATCHMESHARGUMENTS.
+pub type D3D12DISPATCHMESHARGUMENTS = @owner.D3D12DISPATCHMESHARGUMENTS_a246d84026c1
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12DISPATCHMODE.
+pub type D3D12DISPATCHMODE = @owner.D3D12DISPATCHMODE_d6acb5d1b3f4
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12DISPATCHRAYSDESC.
+pub type D3D12DISPATCHRAYSDESC = @owner.D3D12DISPATCHRAYSDESC_66382e9958c1
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12DRAWARGUMENTS.
+pub type D3D12DRAWARGUMENTS = @owner.D3D12DRAWARGUMENTS_dbb8ad5c9a5c
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12DRAWINDEXEDARGUMENTS.
+pub type D3D12DRAWINDEXEDARGUMENTS = @owner.D3D12DRAWINDEXEDARGUMENTS_c3ba7ba1fa77
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12DREDALLOCATIONNODE.
+pub type D3D12DREDALLOCATIONNODE = @owner.D3D12DREDALLOCATIONNODE_d17df1f09808
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12DREDALLOCATIONNODE1.
+pub type D3D12DREDALLOCATIONNODE1 = @owner.D3D12DREDALLOCATIONNODE1_36c0ea56508e
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12DREDALLOCATIONTYPE.
+pub type D3D12DREDALLOCATIONTYPE = @owner.D3D12DREDALLOCATIONTYPE_8cc85f8b26e5
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12DREDAUTOBREADCRUMBSOUTPUT.
+pub type D3D12DREDAUTOBREADCRUMBSOUTPUT = @owner.D3D12DREDAUTOBREADCRUMBSOUTPUT_288c4def5879
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12DREDAUTOBREADCRUMBSOUTPUT1.
+pub type D3D12DREDAUTOBREADCRUMBSOUTPUT1 = @owner.D3D12DREDAUTOBREADCRUMBSOUTPUT1_49caed80d3a2
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12DREDBREADCRUMBCONTEXT.
+pub type D3D12DREDBREADCRUMBCONTEXT = @owner.D3D12DREDBREADCRUMBCONTEXT_91a7421300f5
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12DREDDEVICESTATE.
+pub type D3D12DREDDEVICESTATE = @owner.D3D12DREDDEVICESTATE_4c0d3ed95cd5
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12DREDENABLEMENT.
+pub type D3D12DREDENABLEMENT = @owner.D3D12DREDENABLEMENT_d1c4001a4db6
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12DREDFLAGS.
+pub type D3D12DREDFLAGS = @owner.D3D12DREDFLAGS_ddfc2434af40
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12DREDPAGEFAULTFLAGS.
+pub type D3D12DREDPAGEFAULTFLAGS = @owner.D3D12DREDPAGEFAULTFLAGS_cf15ff2cb3ee
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12DREDPAGEFAULTOUTPUT.
+pub type D3D12DREDPAGEFAULTOUTPUT = @owner.D3D12DREDPAGEFAULTOUTPUT_f4cc0a76899f
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12DREDPAGEFAULTOUTPUT1.
+pub type D3D12DREDPAGEFAULTOUTPUT1 = @owner.D3D12DREDPAGEFAULTOUTPUT1_00a479107b32
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12DREDPAGEFAULTOUTPUT2.
+pub type D3D12DREDPAGEFAULTOUTPUT2 = @owner.D3D12DREDPAGEFAULTOUTPUT2_7af0d7e5da35
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12DREDVERSION.
+pub type D3D12DREDVERSION = @owner.D3D12DREDVERSION_c1344f9f79f4
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12DRIVERMATCHINGIDENTIFIERSTATUS.
+pub type D3D12DRIVERMATCHINGIDENTIFIERSTATUS = @owner.D3D12DRIVERMATCHINGIDENTIFIERSTATUS_ff2dc12cdbc8
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12DSVDIMENSION.
+pub type D3D12DSVDIMENSION = @owner.D3D12DSVDIMENSION_7e32d9c3d6e3
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12DSVFLAGS.
+pub type D3D12DSVFLAGS = @owner.D3D12DSVFLAGS_47eab24292f5
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12DXILLIBRARYDESC.
+pub type D3D12DXILLIBRARYDESC = @owner.D3D12DXILLIBRARYDESC_2a48d0f50061
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12DXILSUBOBJECTTOEXPORTSASSOCIATION.
+pub type D3D12DXILSUBOBJECTTOEXPORTSASSOCIATION = @owner.D3D12DXILSUBOBJECTTOEXPORTSASSOCIATION_e6eb607d93e6
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12ELEMENTSLAYOUT.
+pub type D3D12ELEMENTSLAYOUT = @owner.D3D12ELEMENTSLAYOUT_e49d39088178
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12EXECUTEINDIRECTTIER.
+pub type D3D12EXECUTEINDIRECTTIER = @owner.D3D12EXECUTEINDIRECTTIER_28d4725afae9
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12EXISTINGCOLLECTIONBYKEYDESC.
+pub type D3D12EXISTINGCOLLECTIONBYKEYDESC = @owner.D3D12EXISTINGCOLLECTIONBYKEYDESC_583435b7e4f5
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12EXISTINGCOLLECTIONDESC.
+pub type D3D12EXISTINGCOLLECTIONDESC = @owner.D3D12EXISTINGCOLLECTIONDESC_934ac61235ce
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12EXPORTDESC.
+pub type D3D12EXPORTDESC = @owner.D3D12EXPORTDESC_be5a6c62d5c3
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12EXPORTFLAGS.
+pub type D3D12EXPORTFLAGS = @owner.D3D12EXPORTFLAGS_2b7dc83faa8a
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12FEATURE.
+pub type D3D12FEATURE = @owner.D3D12FEATURE_bc4ea41530a8
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12FEATUREDATAAPPLICATIONSPECIFICDRIVERSTATE.
+pub type D3D12FEATUREDATAAPPLICATIONSPECIFICDRIVERSTATE = @owner.D3D12FEATUREDATAAPPLICATIONSPECIFICDRIVERSTATE_463163296099
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12FEATUREDATAARCHITECTURE.
+pub type D3D12FEATUREDATAARCHITECTURE = @owner.D3D12FEATUREDATAARCHITECTURE_cee318c06be8
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12FEATUREDATAARCHITECTURE1.
+pub type D3D12FEATUREDATAARCHITECTURE1 = @owner.D3D12FEATUREDATAARCHITECTURE1_968b6cfb0437
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12FEATUREDATABYTECODEBYPASSHASHSUPPORTED.
+pub type D3D12FEATUREDATABYTECODEBYPASSHASHSUPPORTED = @owner.D3D12FEATUREDATABYTECODEBYPASSHASHSUPPORTED_1ad999d827f7
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12FEATUREDATACOMMANDQUEUEPRIORITY.
+pub type D3D12FEATUREDATACOMMANDQUEUEPRIORITY = @owner.D3D12FEATUREDATACOMMANDQUEUEPRIORITY_ea34445cabf0
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12FEATUREDATACROSSNODE.
+pub type D3D12FEATUREDATACROSSNODE = @owner.D3D12FEATUREDATACROSSNODE_e717fb11319e
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12FEATUREDATAD3D12OPTIONS.
+pub type D3D12FEATUREDATAD3D12OPTIONS = @owner.D3D12FEATUREDATAD3D12OPTIONS_f1e2ba939615
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12FEATUREDATAD3D12OPTIONS1.
+pub type D3D12FEATUREDATAD3D12OPTIONS1 = @owner.D3D12FEATUREDATAD3D12OPTIONS1_e2de9eb60b8e
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12FEATUREDATAD3D12OPTIONS10.
+pub type D3D12FEATUREDATAD3D12OPTIONS10 = @owner.D3D12FEATUREDATAD3D12OPTIONS10_3a1ab75b0582
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12FEATUREDATAD3D12OPTIONS11.
+pub type D3D12FEATUREDATAD3D12OPTIONS11 = @owner.D3D12FEATUREDATAD3D12OPTIONS11_0dbba5203c0e
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12FEATUREDATAD3D12OPTIONS12.
+pub type D3D12FEATUREDATAD3D12OPTIONS12 = @owner.D3D12FEATUREDATAD3D12OPTIONS12_0132c06363d4
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12FEATUREDATAD3D12OPTIONS13.
+pub type D3D12FEATUREDATAD3D12OPTIONS13 = @owner.D3D12FEATUREDATAD3D12OPTIONS13_34cde071a383
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12FEATUREDATAD3D12OPTIONS14.
+pub type D3D12FEATUREDATAD3D12OPTIONS14 = @owner.D3D12FEATUREDATAD3D12OPTIONS14_8854ced366d3
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12FEATUREDATAD3D12OPTIONS15.
+pub type D3D12FEATUREDATAD3D12OPTIONS15 = @owner.D3D12FEATUREDATAD3D12OPTIONS15_8b323efcfb56
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12FEATUREDATAD3D12OPTIONS16.
+pub type D3D12FEATUREDATAD3D12OPTIONS16 = @owner.D3D12FEATUREDATAD3D12OPTIONS16_5913979d104f
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12FEATUREDATAD3D12OPTIONS17.
+pub type D3D12FEATUREDATAD3D12OPTIONS17 = @owner.D3D12FEATUREDATAD3D12OPTIONS17_602bd4ea805b
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12FEATUREDATAD3D12OPTIONS18.
+pub type D3D12FEATUREDATAD3D12OPTIONS18 = @owner.D3D12FEATUREDATAD3D12OPTIONS18_75c20b0e12a1
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12FEATUREDATAD3D12OPTIONS19.
+pub type D3D12FEATUREDATAD3D12OPTIONS19 = @owner.D3D12FEATUREDATAD3D12OPTIONS19_664ca06ed3a9
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12FEATUREDATAD3D12OPTIONS2.
+pub type D3D12FEATUREDATAD3D12OPTIONS2 = @owner.D3D12FEATUREDATAD3D12OPTIONS2_80e478eeabab
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12FEATUREDATAD3D12OPTIONS20.
+pub type D3D12FEATUREDATAD3D12OPTIONS20 = @owner.D3D12FEATUREDATAD3D12OPTIONS20_f7e2aece22a5
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12FEATUREDATAD3D12OPTIONS21.
+pub type D3D12FEATUREDATAD3D12OPTIONS21 = @owner.D3D12FEATUREDATAD3D12OPTIONS21_0becf085de24
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12FEATUREDATAD3D12OPTIONS3.
+pub type D3D12FEATUREDATAD3D12OPTIONS3 = @owner.D3D12FEATUREDATAD3D12OPTIONS3_8875720b0b07
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12FEATUREDATAD3D12OPTIONS4.
+pub type D3D12FEATUREDATAD3D12OPTIONS4 = @owner.D3D12FEATUREDATAD3D12OPTIONS4_75e8d99c8d34
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12FEATUREDATAD3D12OPTIONS5.
+pub type D3D12FEATUREDATAD3D12OPTIONS5 = @owner.D3D12FEATUREDATAD3D12OPTIONS5_370e84e18edc
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12FEATUREDATAD3D12OPTIONS6.
+pub type D3D12FEATUREDATAD3D12OPTIONS6 = @owner.D3D12FEATUREDATAD3D12OPTIONS6_bf52beca5350
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12FEATUREDATAD3D12OPTIONS7.
+pub type D3D12FEATUREDATAD3D12OPTIONS7 = @owner.D3D12FEATUREDATAD3D12OPTIONS7_d23f466014ca
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12FEATUREDATAD3D12OPTIONS8.
+pub type D3D12FEATUREDATAD3D12OPTIONS8 = @owner.D3D12FEATUREDATAD3D12OPTIONS8_402e2f7b0587
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12FEATUREDATAD3D12OPTIONS9.
+pub type D3D12FEATUREDATAD3D12OPTIONS9 = @owner.D3D12FEATUREDATAD3D12OPTIONS9_fbc198246795
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12FEATUREDATADISPLAYABLE.
+pub type D3D12FEATUREDATADISPLAYABLE = @owner.D3D12FEATUREDATADISPLAYABLE_df8cb775a45b
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12FEATUREDATAEXISTINGHEAPS.
+pub type D3D12FEATUREDATAEXISTINGHEAPS = @owner.D3D12FEATUREDATAEXISTINGHEAPS_d153c3f19a83
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12FEATUREDATAFEATURELEVELS.
+pub type D3D12FEATUREDATAFEATURELEVELS = @owner.D3D12FEATUREDATAFEATURELEVELS_909952b37797
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12FEATUREDATAFORMATINFO.
+pub type D3D12FEATUREDATAFORMATINFO = @owner.D3D12FEATUREDATAFORMATINFO_543d572d8417
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12FEATUREDATAFORMATSUPPORT.
+pub type D3D12FEATUREDATAFORMATSUPPORT = @owner.D3D12FEATUREDATAFORMATSUPPORT_9c992df91731
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12FEATUREDATAGPUVIRTUALADDRESSSUPPORT.
+pub type D3D12FEATUREDATAGPUVIRTUALADDRESSSUPPORT = @owner.D3D12FEATUREDATAGPUVIRTUALADDRESSSUPPORT_040e8098a619
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12FEATUREDATAHARDWARECOPY.
+pub type D3D12FEATUREDATAHARDWARECOPY = @owner.D3D12FEATUREDATAHARDWARECOPY_2b42c469616c
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12FEATUREDATAHARDWARESCHEDULINGQUEUEGROUPINGS.
+pub type D3D12FEATUREDATAHARDWARESCHEDULINGQUEUEGROUPINGS = @owner.D3D12FEATUREDATAHARDWARESCHEDULINGQUEUEGROUPINGS_ab838dd15b56
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12FEATUREDATAMULTISAMPLEQUALITYLEVELS.
+pub type D3D12FEATUREDATAMULTISAMPLEQUALITYLEVELS = @owner.D3D12FEATUREDATAMULTISAMPLEQUALITYLEVELS_d3c00cf74cbb
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12FEATUREDATAPLACEDRESOURCESUPPORTINFO.
+pub type D3D12FEATUREDATAPLACEDRESOURCESUPPORTINFO = @owner.D3D12FEATUREDATAPLACEDRESOURCESUPPORTINFO_6540875e718c
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12FEATUREDATAPREDICATION.
+pub type D3D12FEATUREDATAPREDICATION = @owner.D3D12FEATUREDATAPREDICATION_fd67c1ffbf91
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12FEATUREDATAPROTECTEDRESOURCESESSIONSUPPORT.
+pub type D3D12FEATUREDATAPROTECTEDRESOURCESESSIONSUPPORT = @owner.D3D12FEATUREDATAPROTECTEDRESOURCESESSIONSUPPORT_29de55210641
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12FEATUREDATAPROTECTEDRESOURCESESSIONTYPES.
+pub type D3D12FEATUREDATAPROTECTEDRESOURCESESSIONTYPES = @owner.D3D12FEATUREDATAPROTECTEDRESOURCESESSIONTYPES_83e5d9da39d1
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12FEATUREDATAPROTECTEDRESOURCESESSIONTYPECOUNT.
+pub type D3D12FEATUREDATAPROTECTEDRESOURCESESSIONTYPECOUNT = @owner.D3D12FEATUREDATAPROTECTEDRESOURCESESSIONTYPECOUNT_34153f44c1eb
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12FEATUREDATAQUERYMETACOMMAND.
+pub type D3D12FEATUREDATAQUERYMETACOMMAND = @owner.D3D12FEATUREDATAQUERYMETACOMMAND_8c7a616061c7
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12FEATUREDATAROOTSIGNATURE.
+pub type D3D12FEATUREDATAROOTSIGNATURE = @owner.D3D12FEATUREDATAROOTSIGNATURE_0eea9b4941d2
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12FEATUREDATASERIALIZATION.
+pub type D3D12FEATUREDATASERIALIZATION = @owner.D3D12FEATUREDATASERIALIZATION_3d8773d9930d
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12FEATUREDATASHADERCACHEABISUPPORT.
+pub type D3D12FEATUREDATASHADERCACHEABISUPPORT = @owner.D3D12FEATUREDATASHADERCACHEABISUPPORT_06d56996dfe5
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12FEATUREDATASHADERCACHE.
+pub type D3D12FEATUREDATASHADERCACHE = @owner.D3D12FEATUREDATASHADERCACHE_00cb1f4780ac
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12FEATUREDATASHADERMODEL.
+pub type D3D12FEATUREDATASHADERMODEL = @owner.D3D12FEATUREDATASHADERMODEL_f1dd14481135
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12FEATUREDATATIGHTALIGNMENT.
+pub type D3D12FEATUREDATATIGHTALIGNMENT = @owner.D3D12FEATUREDATATIGHTALIGNMENT_3de8fec7f02d
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12FENCEFLAGS.
+pub type D3D12FENCEFLAGS = @owner.D3D12FENCEFLAGS_1ae6b8cac8b2
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12FILLMODE.
+pub type D3D12FILLMODE = @owner.D3D12FILLMODE_ae66b3fd8257
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12FILTER.
+pub type D3D12FILTER = @owner.D3D12FILTER_bba44b285832
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12FILTERREDUCTIONTYPE.
+pub type D3D12FILTERREDUCTIONTYPE = @owner.D3D12FILTERREDUCTIONTYPE_11770146b659
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12FILTERTYPE.
+pub type D3D12FILTERTYPE = @owner.D3D12FILTERTYPE_fae696c1825a
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12FORMATSUPPORT1.
+pub type D3D12FORMATSUPPORT1 = @owner.D3D12FORMATSUPPORT1_129c301b9d9b
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12FORMATSUPPORT2.
+pub type D3D12FORMATSUPPORT2 = @owner.D3D12FORMATSUPPORT2_b9d53ff90ad2
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12FUNCTIONDESC.
+pub type D3D12FUNCTIONDESC = @owner.D3D12FUNCTIONDESC_f07cfa289b6a
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12GENERICPROGRAMDESC.
+pub type D3D12GENERICPROGRAMDESC = @owner.D3D12GENERICPROGRAMDESC_c245ca299889
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12GLOBALBARRIER.
+pub type D3D12GLOBALBARRIER = @owner.D3D12GLOBALBARRIER_755dea46e9be
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12GLOBALROOTSIGNATURE.
+pub type D3D12GLOBALROOTSIGNATURE = @owner.D3D12GLOBALROOTSIGNATURE_cd9a2dd2f0e7
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12GLOBALSERIALIZEDROOTSIGNATURE.
+pub type D3D12GLOBALSERIALIZEDROOTSIGNATURE = @owner.D3D12GLOBALSERIALIZEDROOTSIGNATURE_4b763b87bf79
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12GPUBASEDVALIDATIONFLAGS.
+pub type D3D12GPUBASEDVALIDATIONFLAGS = @owner.D3D12GPUBASEDVALIDATIONFLAGS_093d476c8f97
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12GPUBASEDVALIDATIONPIPELINESTATECREATEFLAGS.
+pub type D3D12GPUBASEDVALIDATIONPIPELINESTATECREATEFLAGS = @owner.D3D12GPUBASEDVALIDATIONPIPELINESTATECREATEFLAGS_29f690ea825a
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12GPUBASEDVALIDATIONSHADERPATCHMODE.
+pub type D3D12GPUBASEDVALIDATIONSHADERPATCHMODE = @owner.D3D12GPUBASEDVALIDATIONSHADERPATCHMODE_a42c3efd1f35
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12GPUDESCRIPTORHANDLE.
+pub type D3D12GPUDESCRIPTORHANDLE = @owner.D3D12GPUDESCRIPTORHANDLE_7ae334952283
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12GPUVIRTUALADDRESSANDSTRIDE.
+pub type D3D12GPUVIRTUALADDRESSANDSTRIDE = @owner.D3D12GPUVIRTUALADDRESSANDSTRIDE_eea066307e27
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12GPUVIRTUALADDRESSRANGE.
+pub type D3D12GPUVIRTUALADDRESSRANGE = @owner.D3D12GPUVIRTUALADDRESSRANGE_45dc186761b8
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12GPUVIRTUALADDRESSRANGEANDSTRIDE.
+pub type D3D12GPUVIRTUALADDRESSRANGEANDSTRIDE = @owner.D3D12GPUVIRTUALADDRESSRANGEANDSTRIDE_61f800e36d1b
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12GRAPHICSPIPELINESTATEDESC.
+pub type D3D12GRAPHICSPIPELINESTATEDESC = @owner.D3D12GRAPHICSPIPELINESTATEDESC_cd858d4da718
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12GRAPHICSSTATES.
+pub type D3D12GRAPHICSSTATES = @owner.D3D12GRAPHICSSTATES_4b5d608d8edf
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12HEAPDESC.
+pub type D3D12HEAPDESC = @owner.D3D12HEAPDESC_280252296ebf
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12HEAPFLAGS.
+pub type D3D12HEAPFLAGS = @owner.D3D12HEAPFLAGS_9dcff6911888
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12HEAPPROPERTIES.
+pub type D3D12HEAPPROPERTIES = @owner.D3D12HEAPPROPERTIES_5a72b2aa8083
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12HEAPSERIALIZATIONTIER.
+pub type D3D12HEAPSERIALIZATIONTIER = @owner.D3D12HEAPSERIALIZATIONTIER_f29be4cf9329
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12HEAPTYPE.
+pub type D3D12HEAPTYPE = @owner.D3D12HEAPTYPE_b0eb8abbac2e
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12HITGROUPDESC.
+pub type D3D12HITGROUPDESC = @owner.D3D12HITGROUPDESC_24ce18c6299a
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12HITGROUPTYPE.
+pub type D3D12HITGROUPTYPE = @owner.D3D12HITGROUPTYPE_eb9421248385
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12HITKIND.
+pub type D3D12HITKIND = @owner.D3D12HITKIND_c3a06b33e14a
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12IBSTRIPCUTVALUE.
+pub type D3D12IBSTRIPCUTVALUE = @owner.D3D12IBSTRIPCUTVALUE_df5d773973ef
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12INDEXBUFFERSTRIPCUTVALUE.
+pub type D3D12INDEXBUFFERSTRIPCUTVALUE = @owner.D3D12INDEXBUFFERSTRIPCUTVALUE_d288bdf8c7bd
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12INDEXBUFFERVIEW.
+pub type D3D12INDEXBUFFERVIEW = @owner.D3D12INDEXBUFFERVIEW_717a9e51005b
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12INDIRECTARGUMENTDESC.
+pub type D3D12INDIRECTARGUMENTDESC = @owner.D3D12INDIRECTARGUMENTDESC_91b0e2d6edaf
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12INDIRECTARGUMENTTYPE.
+pub type D3D12INDIRECTARGUMENTTYPE = @owner.D3D12INDIRECTARGUMENTTYPE_f6f463a73309
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12INFOQUEUEFILTER.
+pub type D3D12INFOQUEUEFILTER = @owner.D3D12INFOQUEUEFILTER_f601e7268db7
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12INFOQUEUEFILTERDESC.
+pub type D3D12INFOQUEUEFILTERDESC = @owner.D3D12INFOQUEUEFILTERDESC_0c5db3955123
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12INPUTCLASSIFICATION.
+pub type D3D12INPUTCLASSIFICATION = @owner.D3D12INPUTCLASSIFICATION_7bba1d8aaff9
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12INPUTELEMENTDESC.
+pub type D3D12INPUTELEMENTDESC = @owner.D3D12INPUTELEMENTDESC_dac52293db1d
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12INPUTLAYOUTDESC.
+pub type D3D12INPUTLAYOUTDESC = @owner.D3D12INPUTLAYOUTDESC_aa62f78fa8f0
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12LIBRARYDESC.
+pub type D3D12LIBRARYDESC = @owner.D3D12LIBRARYDESC_e78b0a6172eb
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12LIFETIMESTATE.
+pub type D3D12LIFETIMESTATE = @owner.D3D12LIFETIMESTATE_5a37fd55c252
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12LINERASTERIZATIONMODE.
+pub type D3D12LINERASTERIZATIONMODE = @owner.D3D12LINERASTERIZATIONMODE_60d746373b9f
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12LOCALROOTSIGNATURE.
+pub type D3D12LOCALROOTSIGNATURE = @owner.D3D12LOCALROOTSIGNATURE_e27b2ebaf354
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12LOCALSERIALIZEDROOTSIGNATURE.
+pub type D3D12LOCALSERIALIZEDROOTSIGNATURE = @owner.D3D12LOCALSERIALIZEDROOTSIGNATURE_67c6f6f12422
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12LOGICOP.
+pub type D3D12LOGICOP = @owner.D3D12LOGICOP_a1986bab5d86
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12MARKERAPI.
+pub type D3D12MARKERAPI = @owner.D3D12MARKERAPI_ee02c586d237
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12MEASUREMENTSACTION.
+pub type D3D12MEASUREMENTSACTION = @owner.D3D12MEASUREMENTSACTION_7245d1d044c1
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12MEMCPYDEST.
+pub type D3D12MEMCPYDEST = @owner.D3D12MEMCPYDEST_7d54b9b32ea3
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12MEMORYPOOL.
+pub type D3D12MEMORYPOOL = @owner.D3D12MEMORYPOOL_d7f17bc229aa
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12MESHSHADERTIER.
+pub type D3D12MESHSHADERTIER = @owner.D3D12MESHSHADERTIER_9b5d9c81e95b
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12MESSAGE.
+pub type D3D12MESSAGE = @owner.D3D12MESSAGE_724840f0be8d
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12MESSAGECALLBACKFLAGS.
+pub type D3D12MESSAGECALLBACKFLAGS = @owner.D3D12MESSAGECALLBACKFLAGS_3fb0f38d9dd6
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12MESSAGECATEGORY.
+pub type D3D12MESSAGECATEGORY = @owner.D3D12MESSAGECATEGORY_f02b072f9c45
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12MESSAGEID.
+pub type D3D12MESSAGEID = @owner.D3D12MESSAGEID_ad78d8874e68
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12MESSAGESEVERITY.
+pub type D3D12MESSAGESEVERITY = @owner.D3D12MESSAGESEVERITY_a467832a69cb
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12METACOMMANDDESC.
+pub type D3D12METACOMMANDDESC = @owner.D3D12METACOMMANDDESC_43c28aac2495
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12METACOMMANDPARAMETERDESC.
+pub type D3D12METACOMMANDPARAMETERDESC = @owner.D3D12METACOMMANDPARAMETERDESC_2a24efdff203
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12METACOMMANDPARAMETERFLAGS.
+pub type D3D12METACOMMANDPARAMETERFLAGS = @owner.D3D12METACOMMANDPARAMETERFLAGS_57ae9c19bc20
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12METACOMMANDPARAMETERSTAGE.
+pub type D3D12METACOMMANDPARAMETERSTAGE = @owner.D3D12METACOMMANDPARAMETERSTAGE_1a9d50de4d1a
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12METACOMMANDPARAMETERTYPE.
+pub type D3D12METACOMMANDPARAMETERTYPE = @owner.D3D12METACOMMANDPARAMETERTYPE_20f6ffcf97a5
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12MIPREGION.
+pub type D3D12MIPREGION = @owner.D3D12MIPREGION_13889792f5e2
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12MULTIPLEFENCEWAITFLAGS.
+pub type D3D12MULTIPLEFENCEWAITFLAGS = @owner.D3D12MULTIPLEFENCEWAITFLAGS_c87190e598df
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12MULTISAMPLEQUALITYLEVELFLAGS.
+pub type D3D12MULTISAMPLEQUALITYLEVELFLAGS = @owner.D3D12MULTISAMPLEQUALITYLEVELFLAGS_b366d0ca4cb8
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12MULTINODECPUINPUT.
+pub type D3D12MULTINODECPUINPUT = @owner.D3D12MULTINODECPUINPUT_09d0564402c0
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12MULTINODEGPUINPUT.
+pub type D3D12MULTINODEGPUINPUT = @owner.D3D12MULTINODEGPUINPUT_ed3dd10be640
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12NODE.
+pub type D3D12NODE = @owner.D3D12NODE_a0363ee82f20
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12NODECPUINPUT.
+pub type D3D12NODECPUINPUT = @owner.D3D12NODECPUINPUT_ab8505a339a0
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12NODEGPUINPUT.
+pub type D3D12NODEGPUINPUT = @owner.D3D12NODEGPUINPUT_14872285d7d2
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12NODEID.
+pub type D3D12NODEID = @owner.D3D12NODEID_00ace497ac4d
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12NODEMASK.
+pub type D3D12NODEMASK = @owner.D3D12NODEMASK_a3e589ffdd2f
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12NODEOUTPUTOVERRIDES.
+pub type D3D12NODEOUTPUTOVERRIDES = @owner.D3D12NODEOUTPUTOVERRIDES_14dc7c74e880
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12NODEOVERRIDESTYPE.
+pub type D3D12NODEOVERRIDESTYPE = @owner.D3D12NODEOVERRIDESTYPE_084d3a96d9be
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12NODETYPE.
+pub type D3D12NODETYPE = @owner.D3D12NODETYPE_ba2870ab9bf3
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12PACKEDMIPINFO.
+pub type D3D12PACKEDMIPINFO = @owner.D3D12PACKEDMIPINFO_8831e22f238c
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12PARAMETERDESC.
+pub type D3D12PARAMETERDESC = @owner.D3D12PARAMETERDESC_64de3346c8d9
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12PIPELINESTATEFLAGS.
+pub type D3D12PIPELINESTATEFLAGS = @owner.D3D12PIPELINESTATEFLAGS_b24385ff13aa
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12PIPELINESTATESTREAMDESC.
+pub type D3D12PIPELINESTATESTREAMDESC = @owner.D3D12PIPELINESTATESTREAMDESC_1c948372dea6
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12PIPELINESTATESUBOBJECTTYPE.
+pub type D3D12PIPELINESTATESUBOBJECTTYPE = @owner.D3D12PIPELINESTATESUBOBJECTTYPE_d10a0cdccb7d
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12PLACEDSUBRESOURCEFOOTPRINT.
+pub type D3D12PLACEDSUBRESOURCEFOOTPRINT = @owner.D3D12PLACEDSUBRESOURCEFOOTPRINT_e512fdabe17c
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12PREDICATIONOP.
+pub type D3D12PREDICATIONOP = @owner.D3D12PREDICATIONOP_8dbfb212e025
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12PRIMITIVETOPOLOGYDESC.
+pub type D3D12PRIMITIVETOPOLOGYDESC = @owner.D3D12PRIMITIVETOPOLOGYDESC_c908673be1d5
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12PRIMITIVETOPOLOGYTYPE.
+pub type D3D12PRIMITIVETOPOLOGYTYPE = @owner.D3D12PRIMITIVETOPOLOGYTYPE_c153cddd4176
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12PROGRAMMABLESAMPLEPOSITIONSTIER.
+pub type D3D12PROGRAMMABLESAMPLEPOSITIONSTIER = @owner.D3D12PROGRAMMABLESAMPLEPOSITIONSTIER_5b64231e206c
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12PROGRAMIDENTIFIER.
+pub type D3D12PROGRAMIDENTIFIER = @owner.D3D12PROGRAMIDENTIFIER_4f0a1607df0b
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12PROGRAMTYPE.
+pub type D3D12PROGRAMTYPE = @owner.D3D12PROGRAMTYPE_4bbb5815bee3
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12PROTECTEDRESOURCESESSIONDESC.
+pub type D3D12PROTECTEDRESOURCESESSIONDESC = @owner.D3D12PROTECTEDRESOURCESESSIONDESC_9a6db1a3bc0f
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12PROTECTEDRESOURCESESSIONDESC1.
+pub type D3D12PROTECTEDRESOURCESESSIONDESC1 = @owner.D3D12PROTECTEDRESOURCESESSIONDESC1_690ec6b0b3cf
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12PROTECTEDRESOURCESESSIONFLAGS.
+pub type D3D12PROTECTEDRESOURCESESSIONFLAGS = @owner.D3D12PROTECTEDRESOURCESESSIONFLAGS_3b5b4161b34d
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12PROTECTEDRESOURCESESSIONSUPPORTFLAGS.
+pub type D3D12PROTECTEDRESOURCESESSIONSUPPORTFLAGS = @owner.D3D12PROTECTEDRESOURCESESSIONSUPPORTFLAGS_5452249031a3
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12PROTECTEDSESSIONSTATUS.
+pub type D3D12PROTECTEDSESSIONSTATUS = @owner.D3D12PROTECTEDSESSIONSTATUS_e83c057a1d54
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12QUERYDATAPIPELINESTATISTICS.
+pub type D3D12QUERYDATAPIPELINESTATISTICS = @owner.D3D12QUERYDATAPIPELINESTATISTICS_34c87e10299a
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12QUERYDATAPIPELINESTATISTICS1.
+pub type D3D12QUERYDATAPIPELINESTATISTICS1 = @owner.D3D12QUERYDATAPIPELINESTATISTICS1_5d3ae04cb192
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12QUERYDATASOSTATISTICS.
+pub type D3D12QUERYDATASOSTATISTICS = @owner.D3D12QUERYDATASOSTATISTICS_3084b50f873b
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12QUERYHEAPDESC.
+pub type D3D12QUERYHEAPDESC = @owner.D3D12QUERYHEAPDESC_2f4f243c5c83
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12QUERYHEAPTYPE.
+pub type D3D12QUERYHEAPTYPE = @owner.D3D12QUERYHEAPTYPE_d6c304c0b874
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12QUERYTYPE.
+pub type D3D12QUERYTYPE = @owner.D3D12QUERYTYPE_42fecf7c6f7d
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12RANGE.
+pub type D3D12RANGE = @owner.D3D12RANGE_c0f47524cb93
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12RANGEUINT64.
+pub type D3D12RANGEUINT64 = @owner.D3D12RANGEUINT64_62917e962599
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12RASTERIZERDESC.
+pub type D3D12RASTERIZERDESC = @owner.D3D12RASTERIZERDESC_c9ecffc4f1a7
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12RASTERIZERDESC1.
+pub type D3D12RASTERIZERDESC1 = @owner.D3D12RASTERIZERDESC1_c4dd21a2b49c
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12RASTERIZERDESC2.
+pub type D3D12RASTERIZERDESC2 = @owner.D3D12RASTERIZERDESC2_6bea1f7fca0b
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12RAYTRACINGAABB.
+pub type D3D12RAYTRACINGAABB = @owner.D3D12RAYTRACINGAABB_1f4afefb2f60
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12RAYTRACINGACCELERATIONSTRUCTUREBUILDFLAGS.
+pub type D3D12RAYTRACINGACCELERATIONSTRUCTUREBUILDFLAGS = @owner.D3D12RAYTRACINGACCELERATIONSTRUCTUREBUILDFLAGS_03a3b096ca68
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12RAYTRACINGACCELERATIONSTRUCTURECOPYMODE.
+pub type D3D12RAYTRACINGACCELERATIONSTRUCTURECOPYMODE = @owner.D3D12RAYTRACINGACCELERATIONSTRUCTURECOPYMODE_c3aa01dbf257
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12RAYTRACINGACCELERATIONSTRUCTUREPOSTBUILDINFOCOMPACTEDSIZEDESC.
+pub type D3D12RAYTRACINGACCELERATIONSTRUCTUREPOSTBUILDINFOCOMPACTEDSIZEDESC = @owner.D3D12RAYTRACINGACCELERATIONSTRUCTUREPOSTBUILDINFOCOMPACTEDSIZEDESC_eab0353edbd5
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12RAYTRACINGACCELERATIONSTRUCTUREPOSTBUILDINFOCURRENTSIZEDESC.
+pub type D3D12RAYTRACINGACCELERATIONSTRUCTUREPOSTBUILDINFOCURRENTSIZEDESC = @owner.D3D12RAYTRACINGACCELERATIONSTRUCTUREPOSTBUILDINFOCURRENTSIZEDESC_4ee814c89598
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12RAYTRACINGACCELERATIONSTRUCTUREPOSTBUILDINFODESC.
+pub type D3D12RAYTRACINGACCELERATIONSTRUCTUREPOSTBUILDINFODESC = @owner.D3D12RAYTRACINGACCELERATIONSTRUCTUREPOSTBUILDINFODESC_979f086d7f6e
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12RAYTRACINGACCELERATIONSTRUCTUREPOSTBUILDINFOSERIALIZATIONDESC.
+pub type D3D12RAYTRACINGACCELERATIONSTRUCTUREPOSTBUILDINFOSERIALIZATIONDESC = @owner.D3D12RAYTRACINGACCELERATIONSTRUCTUREPOSTBUILDINFOSERIALIZATIONDESC_f1f04e4643b5
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12RAYTRACINGACCELERATIONSTRUCTUREPOSTBUILDINFOTOOLSVISUALIZATIONDESC.
+pub type D3D12RAYTRACINGACCELERATIONSTRUCTUREPOSTBUILDINFOTOOLSVISUALIZATIONDESC = @owner.D3D12RAYTRACINGACCELERATIONSTRUCTUREPOSTBUILDINFOTOOLSVISUALIZATIONDESC_8d61cb32ee1b
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12RAYTRACINGACCELERATIONSTRUCTUREPOSTBUILDINFOTYPE.
+pub type D3D12RAYTRACINGACCELERATIONSTRUCTUREPOSTBUILDINFOTYPE = @owner.D3D12RAYTRACINGACCELERATIONSTRUCTUREPOSTBUILDINFOTYPE_6b551299a53d
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12RAYTRACINGACCELERATIONSTRUCTUREPREBUILDINFO.
+pub type D3D12RAYTRACINGACCELERATIONSTRUCTUREPREBUILDINFO = @owner.D3D12RAYTRACINGACCELERATIONSTRUCTUREPREBUILDINFO_7fee23b2ac33
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12RAYTRACINGACCELERATIONSTRUCTURESRV.
+pub type D3D12RAYTRACINGACCELERATIONSTRUCTURESRV = @owner.D3D12RAYTRACINGACCELERATIONSTRUCTURESRV_5445593c9094
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12RAYTRACINGACCELERATIONSTRUCTURETYPE.
+pub type D3D12RAYTRACINGACCELERATIONSTRUCTURETYPE = @owner.D3D12RAYTRACINGACCELERATIONSTRUCTURETYPE_318ee0b3eae7
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12RAYTRACINGGEOMETRYAABBSDESC.
+pub type D3D12RAYTRACINGGEOMETRYAABBSDESC = @owner.D3D12RAYTRACINGGEOMETRYAABBSDESC_d38168a01764
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12RAYTRACINGGEOMETRYDESC.
+pub type D3D12RAYTRACINGGEOMETRYDESC = @owner.D3D12RAYTRACINGGEOMETRYDESC_e4e4ce7d42e1
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12RAYTRACINGGEOMETRYFLAGS.
+pub type D3D12RAYTRACINGGEOMETRYFLAGS = @owner.D3D12RAYTRACINGGEOMETRYFLAGS_0b8f602ed7cd
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12RAYTRACINGGEOMETRYOMMLINKAGEDESC.
+pub type D3D12RAYTRACINGGEOMETRYOMMLINKAGEDESC = @owner.D3D12RAYTRACINGGEOMETRYOMMLINKAGEDESC_48ceda4aac33
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12RAYTRACINGGEOMETRYOMMTRIANGLESDESC.
+pub type D3D12RAYTRACINGGEOMETRYOMMTRIANGLESDESC = @owner.D3D12RAYTRACINGGEOMETRYOMMTRIANGLESDESC_ca255d7b0d92
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12RAYTRACINGGEOMETRYTRIANGLESDESC.
+pub type D3D12RAYTRACINGGEOMETRYTRIANGLESDESC = @owner.D3D12RAYTRACINGGEOMETRYTRIANGLESDESC_f73913bf67e7
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12RAYTRACINGGEOMETRYTYPE.
+pub type D3D12RAYTRACINGGEOMETRYTYPE = @owner.D3D12RAYTRACINGGEOMETRYTYPE_cdd68d0236d9
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12RAYTRACINGINSTANCEDESC.
+pub type D3D12RAYTRACINGINSTANCEDESC = @owner.D3D12RAYTRACINGINSTANCEDESC_4e0458a04ca8
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12RAYTRACINGINSTANCEFLAGS.
+pub type D3D12RAYTRACINGINSTANCEFLAGS = @owner.D3D12RAYTRACINGINSTANCEFLAGS_f7e1081f8322
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12RAYTRACINGOPACITYMICROMAPARRAYDESC.
+pub type D3D12RAYTRACINGOPACITYMICROMAPARRAYDESC = @owner.D3D12RAYTRACINGOPACITYMICROMAPARRAYDESC_9d2b5c43ffb3
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12RAYTRACINGOPACITYMICROMAPARRAYPOSTBUILDINFOCURRENTSIZEDESC.
+pub type D3D12RAYTRACINGOPACITYMICROMAPARRAYPOSTBUILDINFOCURRENTSIZEDESC = @owner.D3D12RAYTRACINGOPACITYMICROMAPARRAYPOSTBUILDINFOCURRENTSIZEDESC_8f56d09c9547
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12RAYTRACINGOPACITYMICROMAPARRAYPOSTBUILDINFODESC.
+pub type D3D12RAYTRACINGOPACITYMICROMAPARRAYPOSTBUILDINFODESC = @owner.D3D12RAYTRACINGOPACITYMICROMAPARRAYPOSTBUILDINFODESC_a1ef931daf07
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12RAYTRACINGOPACITYMICROMAPARRAYPOSTBUILDINFOTOOLSVISUALIZATIONDESC.
+pub type D3D12RAYTRACINGOPACITYMICROMAPARRAYPOSTBUILDINFOTOOLSVISUALIZATIONDESC = @owner.D3D12RAYTRACINGOPACITYMICROMAPARRAYPOSTBUILDINFOTOOLSVISUALIZATIONDESC_4d297a53ce43
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12RAYTRACINGOPACITYMICROMAPARRAYPOSTBUILDINFOTYPE.
+pub type D3D12RAYTRACINGOPACITYMICROMAPARRAYPOSTBUILDINFOTYPE = @owner.D3D12RAYTRACINGOPACITYMICROMAPARRAYPOSTBUILDINFOTYPE_0a65b90460a9
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12RAYTRACINGOPACITYMICROMAPDESC.
+pub type D3D12RAYTRACINGOPACITYMICROMAPDESC = @owner.D3D12RAYTRACINGOPACITYMICROMAPDESC_4dd0a3867b9d
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12RAYTRACINGOPACITYMICROMAPFORMAT.
+pub type D3D12RAYTRACINGOPACITYMICROMAPFORMAT = @owner.D3D12RAYTRACINGOPACITYMICROMAPFORMAT_6a567d6edf51
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12RAYTRACINGOPACITYMICROMAPHISTOGRAMENTRY.
+pub type D3D12RAYTRACINGOPACITYMICROMAPHISTOGRAMENTRY = @owner.D3D12RAYTRACINGOPACITYMICROMAPHISTOGRAMENTRY_b7dc42e4ca0a
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12RAYTRACINGOPACITYMICROMAPSPECIALINDEX.
+pub type D3D12RAYTRACINGOPACITYMICROMAPSPECIALINDEX = @owner.D3D12RAYTRACINGOPACITYMICROMAPSPECIALINDEX_e5e6282256df
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12RAYTRACINGOPACITYMICROMAPSTATE.
+pub type D3D12RAYTRACINGOPACITYMICROMAPSTATE = @owner.D3D12RAYTRACINGOPACITYMICROMAPSTATE_203e4da14d17
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12RAYTRACINGPIPELINECONFIG.
+pub type D3D12RAYTRACINGPIPELINECONFIG = @owner.D3D12RAYTRACINGPIPELINECONFIG_5a01622beff2
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12RAYTRACINGPIPELINECONFIG1.
+pub type D3D12RAYTRACINGPIPELINECONFIG1 = @owner.D3D12RAYTRACINGPIPELINECONFIG1_f8fe49205173
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12RAYTRACINGPIPELINEFLAGS.
+pub type D3D12RAYTRACINGPIPELINEFLAGS = @owner.D3D12RAYTRACINGPIPELINEFLAGS_5efefb757a12
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12RAYTRACINGSERIALIZEDBLOCK.
+pub type D3D12RAYTRACINGSERIALIZEDBLOCK = @owner.D3D12RAYTRACINGSERIALIZEDBLOCK_191636b2e4e5
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12RAYTRACINGSHADERCONFIG.
+pub type D3D12RAYTRACINGSHADERCONFIG = @owner.D3D12RAYTRACINGSHADERCONFIG_dc7a2a45ac0b
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12RAYTRACINGTIER.
+pub type D3D12RAYTRACINGTIER = @owner.D3D12RAYTRACINGTIER_05cb0631201c
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12RAYFLAGS.
+pub type D3D12RAYFLAGS = @owner.D3D12RAYFLAGS_66816c0baa86
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12RECREATEATTIER.
+pub type D3D12RECREATEATTIER = @owner.D3D12RECREATEATTIER_311068099384
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12RENDERPASSBEGINNINGACCESS.
+pub type D3D12RENDERPASSBEGINNINGACCESS = @owner.D3D12RENDERPASSBEGINNINGACCESS_5ee279e3cdf5
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12RENDERPASSBEGINNINGACCESSCLEARPARAMETERS.
+pub type D3D12RENDERPASSBEGINNINGACCESSCLEARPARAMETERS = @owner.D3D12RENDERPASSBEGINNINGACCESSCLEARPARAMETERS_3432bba036ff
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12RENDERPASSBEGINNINGACCESSPRESERVELOCALPARAMETERS.
+pub type D3D12RENDERPASSBEGINNINGACCESSPRESERVELOCALPARAMETERS = @owner.D3D12RENDERPASSBEGINNINGACCESSPRESERVELOCALPARAMETERS_c6bb6f8032a3
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12RENDERPASSBEGINNINGACCESSTYPE.
+pub type D3D12RENDERPASSBEGINNINGACCESSTYPE = @owner.D3D12RENDERPASSBEGINNINGACCESSTYPE_a7f7c172771a
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12RENDERPASSDEPTHSTENCILDESC.
+pub type D3D12RENDERPASSDEPTHSTENCILDESC = @owner.D3D12RENDERPASSDEPTHSTENCILDESC_b995b266300e
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12RENDERPASSENDINGACCESS.
+pub type D3D12RENDERPASSENDINGACCESS = @owner.D3D12RENDERPASSENDINGACCESS_9d499e811ffb
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12RENDERPASSENDINGACCESSPRESERVELOCALPARAMETERS.
+pub type D3D12RENDERPASSENDINGACCESSPRESERVELOCALPARAMETERS = @owner.D3D12RENDERPASSENDINGACCESSPRESERVELOCALPARAMETERS_d040d84816fc
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12RENDERPASSENDINGACCESSRESOLVEPARAMETERS.
+pub type D3D12RENDERPASSENDINGACCESSRESOLVEPARAMETERS = @owner.D3D12RENDERPASSENDINGACCESSRESOLVEPARAMETERS_6685df15b314
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12RENDERPASSENDINGACCESSRESOLVESUBRESOURCEPARAMETERS.
+pub type D3D12RENDERPASSENDINGACCESSRESOLVESUBRESOURCEPARAMETERS = @owner.D3D12RENDERPASSENDINGACCESSRESOLVESUBRESOURCEPARAMETERS_5cb5c088b6fb
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12RENDERPASSENDINGACCESSTYPE.
+pub type D3D12RENDERPASSENDINGACCESSTYPE = @owner.D3D12RENDERPASSENDINGACCESSTYPE_7901e0f39bf6
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12RENDERPASSFLAGS.
+pub type D3D12RENDERPASSFLAGS = @owner.D3D12RENDERPASSFLAGS_68f53850dc67
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12RENDERPASSRENDERTARGETDESC.
+pub type D3D12RENDERPASSRENDERTARGETDESC = @owner.D3D12RENDERPASSRENDERTARGETDESC_59cbb67b1859
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12RENDERPASSTIER.
+pub type D3D12RENDERPASSTIER = @owner.D3D12RENDERPASSTIER_fd24f2d699a1
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12RENDERTARGETBLENDDESC.
+pub type D3D12RENDERTARGETBLENDDESC = @owner.D3D12RENDERTARGETBLENDDESC_540e409bea29
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12RENDERTARGETVIEWDESC.
+pub type D3D12RENDERTARGETVIEWDESC = @owner.D3D12RENDERTARGETVIEWDESC_079e589601be
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12RESIDENCYFLAGS.
+pub type D3D12RESIDENCYFLAGS = @owner.D3D12RESIDENCYFLAGS_5cce97789565
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12RESIDENCYPRIORITY.
+pub type D3D12RESIDENCYPRIORITY = @owner.D3D12RESIDENCYPRIORITY_9fa5c6e59a6f
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12RESOLVEMODE.
+pub type D3D12RESOLVEMODE = @owner.D3D12RESOLVEMODE_8317ec6fc29b
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12RESOURCEALIASINGBARRIER.
+pub type D3D12RESOURCEALIASINGBARRIER = @owner.D3D12RESOURCEALIASINGBARRIER_7b5c3c5e7560
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12RESOURCEALLOCATIONINFO.
+pub type D3D12RESOURCEALLOCATIONINFO = @owner.D3D12RESOURCEALLOCATIONINFO_70da077bfec7
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12RESOURCEALLOCATIONINFO1.
+pub type D3D12RESOURCEALLOCATIONINFO1 = @owner.D3D12RESOURCEALLOCATIONINFO1_19a2f2b6d52a
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12RESOURCEBARRIER.
+pub type D3D12RESOURCEBARRIER = @owner.D3D12RESOURCEBARRIER_a778a0c99727
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12RESOURCEBARRIERFLAGS.
+pub type D3D12RESOURCEBARRIERFLAGS = @owner.D3D12RESOURCEBARRIERFLAGS_475330d5c83e
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12RESOURCEBARRIERTYPE.
+pub type D3D12RESOURCEBARRIERTYPE = @owner.D3D12RESOURCEBARRIERTYPE_45e981a92f9f
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12RESOURCEBINDINGTIER.
+pub type D3D12RESOURCEBINDINGTIER = @owner.D3D12RESOURCEBINDINGTIER_c16e32ae7f13
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12RESOURCEDESC.
+pub type D3D12RESOURCEDESC = @owner.D3D12RESOURCEDESC_d019a03a65bf
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12RESOURCEDESC1.
+pub type D3D12RESOURCEDESC1 = @owner.D3D12RESOURCEDESC1_ccfb4b255196
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12RESOURCEDIMENSION.
+pub type D3D12RESOURCEDIMENSION = @owner.D3D12RESOURCEDIMENSION_d18e550244c3
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12RESOURCEFLAGS.
+pub type D3D12RESOURCEFLAGS = @owner.D3D12RESOURCEFLAGS_3e1c7eb135b4
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12RESOURCEHEAPTIER.
+pub type D3D12RESOURCEHEAPTIER = @owner.D3D12RESOURCEHEAPTIER_650b332be119
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12RESOURCESTATES.
+pub type D3D12RESOURCESTATES = @owner.D3D12RESOURCESTATES_3fb9ab271f30
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12RESOURCETRANSITIONBARRIER.
+pub type D3D12RESOURCETRANSITIONBARRIER = @owner.D3D12RESOURCETRANSITIONBARRIER_2cf101e6fbd6
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12RESOURCEUAVBARRIER.
+pub type D3D12RESOURCEUAVBARRIER = @owner.D3D12RESOURCEUAVBARRIER_d7f50c35bfc0
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12RLDOFLAGS.
+pub type D3D12RLDOFLAGS = @owner.D3D12RLDOFLAGS_8af5fff69aa4
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12ROOTCONSTANTS.
+pub type D3D12ROOTCONSTANTS = @owner.D3D12ROOTCONSTANTS_11d42b1c44dc
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12ROOTDESCRIPTOR.
+pub type D3D12ROOTDESCRIPTOR = @owner.D3D12ROOTDESCRIPTOR_6e016777c6d3
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12ROOTDESCRIPTOR1.
+pub type D3D12ROOTDESCRIPTOR1 = @owner.D3D12ROOTDESCRIPTOR1_3200e6fe5109
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12ROOTDESCRIPTORFLAGS.
+pub type D3D12ROOTDESCRIPTORFLAGS = @owner.D3D12ROOTDESCRIPTORFLAGS_4cfd55b70583
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12ROOTDESCRIPTORTABLE.
+pub type D3D12ROOTDESCRIPTORTABLE = @owner.D3D12ROOTDESCRIPTORTABLE_d4ed70a99640
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12ROOTDESCRIPTORTABLE1.
+pub type D3D12ROOTDESCRIPTORTABLE1 = @owner.D3D12ROOTDESCRIPTORTABLE1_7562e8249df9
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12ROOTPARAMETER.
+pub type D3D12ROOTPARAMETER = @owner.D3D12ROOTPARAMETER_9d42fe1b27c5
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12ROOTPARAMETER1.
+pub type D3D12ROOTPARAMETER1 = @owner.D3D12ROOTPARAMETER1_43b0cce75aa1
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12ROOTPARAMETERTYPE.
+pub type D3D12ROOTPARAMETERTYPE = @owner.D3D12ROOTPARAMETERTYPE_3f04844353d2
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12ROOTSIGNATUREDESC.
+pub type D3D12ROOTSIGNATUREDESC = @owner.D3D12ROOTSIGNATUREDESC_3ba13c1e8615
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12ROOTSIGNATUREDESC1.
+pub type D3D12ROOTSIGNATUREDESC1 = @owner.D3D12ROOTSIGNATUREDESC1_96059e5e28a8
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12ROOTSIGNATUREDESC2.
+pub type D3D12ROOTSIGNATUREDESC2 = @owner.D3D12ROOTSIGNATUREDESC2_ccc880b486ba
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12ROOTSIGNATUREFLAGS.
+pub type D3D12ROOTSIGNATUREFLAGS = @owner.D3D12ROOTSIGNATUREFLAGS_530485e7a68c
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12RTVDIMENSION.
+pub type D3D12RTVDIMENSION = @owner.D3D12RTVDIMENSION_9b07f1a9dc13
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12RTFORMATARRAY.
+pub type D3D12RTFORMATARRAY = @owner.D3D12RTFORMATARRAY_0ed9f60970fd
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12SAMPLERDESC.
+pub type D3D12SAMPLERDESC = @owner.D3D12SAMPLERDESC_297cc993ffce
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12SAMPLERDESC2.
+pub type D3D12SAMPLERDESC2 = @owner.D3D12SAMPLERDESC2_59d092065062
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12SAMPLERFEEDBACKTIER.
+pub type D3D12SAMPLERFEEDBACKTIER = @owner.D3D12SAMPLERFEEDBACKTIER_8d771dec64e8
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12SAMPLERFLAGS.
+pub type D3D12SAMPLERFLAGS = @owner.D3D12SAMPLERFLAGS_0bc65832dd65
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12SAMPLEMASK.
+pub type D3D12SAMPLEMASK = @owner.D3D12SAMPLEMASK_45422eb182b3
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12SAMPLEPOSITION.
+pub type D3D12SAMPLEPOSITION = @owner.D3D12SAMPLEPOSITION_de83ed60d192
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12SERIALIZEDBLOCKTYPE.
+pub type D3D12SERIALIZEDBLOCKTYPE = @owner.D3D12SERIALIZEDBLOCKTYPE_79db5a38ad5a
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12SERIALIZEDDATADRIVERMATCHINGIDENTIFIER.
+pub type D3D12SERIALIZEDDATADRIVERMATCHINGIDENTIFIER = @owner.D3D12SERIALIZEDDATADRIVERMATCHINGIDENTIFIER_6a0d3d6355bf
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12SERIALIZEDDATATYPE.
+pub type D3D12SERIALIZEDDATATYPE = @owner.D3D12SERIALIZEDDATATYPE_6c14c345cb10
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12SERIALIZEDRAYTRACINGACCELERATIONSTRUCTUREHEADER.
+pub type D3D12SERIALIZEDRAYTRACINGACCELERATIONSTRUCTUREHEADER = @owner.D3D12SERIALIZEDRAYTRACINGACCELERATIONSTRUCTUREHEADER_e6f7674e2ce0
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12SERIALIZEDRAYTRACINGACCELERATIONSTRUCTUREHEADER1.
+pub type D3D12SERIALIZEDRAYTRACINGACCELERATIONSTRUCTUREHEADER1 = @owner.D3D12SERIALIZEDRAYTRACINGACCELERATIONSTRUCTUREHEADER1_3c8112c222d4
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12SERIALIZEDRAYTRACINGACCELERATIONSTRUCTUREHEADERPOSTAMBLETYPE.
+pub type D3D12SERIALIZEDRAYTRACINGACCELERATIONSTRUCTUREHEADERPOSTAMBLETYPE = @owner.D3D12SERIALIZEDRAYTRACINGACCELERATIONSTRUCTUREHEADERPOSTAMBLETYPE_445eb88519f5
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12SERIALIZEDROOTSIGNATUREDESC.
+pub type D3D12SERIALIZEDROOTSIGNATUREDESC = @owner.D3D12SERIALIZEDROOTSIGNATUREDESC_584b2749eadf
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12SETGENERICPIPELINEDESC.
+pub type D3D12SETGENERICPIPELINEDESC = @owner.D3D12SETGENERICPIPELINEDESC_dc86d0ece17c
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12SETPROGRAMDESC.
+pub type D3D12SETPROGRAMDESC = @owner.D3D12SETPROGRAMDESC_4d0097830ae2
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12SETRAYTRACINGPIPELINEDESC.
+pub type D3D12SETRAYTRACINGPIPELINEDESC = @owner.D3D12SETRAYTRACINGPIPELINEDESC_e7c882531ff3
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12SETWORKGRAPHDESC.
+pub type D3D12SETWORKGRAPHDESC = @owner.D3D12SETWORKGRAPHDESC_52662ac97717
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12SETWORKGRAPHFLAGS.
+pub type D3D12SETWORKGRAPHFLAGS = @owner.D3D12SETWORKGRAPHFLAGS_f2492761c5e0
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12SHADERBUFFERDESC.
+pub type D3D12SHADERBUFFERDESC = @owner.D3D12SHADERBUFFERDESC_e852439f9c52
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12SHADERBYTECODE.
+pub type D3D12SHADERBYTECODE = @owner.D3D12SHADERBYTECODE_21f25bb12e57
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12SHADERCACHECONTROLFLAGS.
+pub type D3D12SHADERCACHECONTROLFLAGS = @owner.D3D12SHADERCACHECONTROLFLAGS_4c89c3b3a598
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12SHADERCACHEFLAGS.
+pub type D3D12SHADERCACHEFLAGS = @owner.D3D12SHADERCACHEFLAGS_850e1cfc2967
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12SHADERCACHEKINDFLAGS.
+pub type D3D12SHADERCACHEKINDFLAGS = @owner.D3D12SHADERCACHEKINDFLAGS_f98c14b5fb1d
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12SHADERCACHEMODE.
+pub type D3D12SHADERCACHEMODE = @owner.D3D12SHADERCACHEMODE_43d82dd9c5e4
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12SHADERCACHESESSIONDESC.
+pub type D3D12SHADERCACHESESSIONDESC = @owner.D3D12SHADERCACHESESSIONDESC_51c971a870b5
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12SHADERCACHESUPPORTFLAGS.
+pub type D3D12SHADERCACHESUPPORTFLAGS = @owner.D3D12SHADERCACHESUPPORTFLAGS_c65355f1a55c
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12SHADERCOMPONENTMAPPING.
+pub type D3D12SHADERCOMPONENTMAPPING = @owner.D3D12SHADERCOMPONENTMAPPING_8e3338823a75
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12SHADERDESC.
+pub type D3D12SHADERDESC = @owner.D3D12SHADERDESC_e911e7977977
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12SHADERINPUTBINDDESC.
+pub type D3D12SHADERINPUTBINDDESC = @owner.D3D12SHADERINPUTBINDDESC_1e8eabc49c57
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12SHADERMINPRECISIONSUPPORT.
+pub type D3D12SHADERMINPRECISIONSUPPORT = @owner.D3D12SHADERMINPRECISIONSUPPORT_836a0c6eb104
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12SHADERNODE.
+pub type D3D12SHADERNODE = @owner.D3D12SHADERNODE_70f0d946b287
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12SHADERRESOURCEVIEWDESC.
+pub type D3D12SHADERRESOURCEVIEWDESC = @owner.D3D12SHADERRESOURCEVIEWDESC_7253c14c51a6
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12SHADERTYPEDESC.
+pub type D3D12SHADERTYPEDESC = @owner.D3D12SHADERTYPEDESC_ebda7997b4b2
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12SHADERVARIABLEDESC.
+pub type D3D12SHADERVARIABLEDESC = @owner.D3D12SHADERVARIABLEDESC_a6b409308092
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12SHADERVERSIONTYPE.
+pub type D3D12SHADERVERSIONTYPE = @owner.D3D12SHADERVERSIONTYPE_544c9059cbe4
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12SHADERVISIBILITY.
+pub type D3D12SHADERVISIBILITY = @owner.D3D12SHADERVISIBILITY_e42676c30924
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12SHADINGRATE.
+pub type D3D12SHADINGRATE = @owner.D3D12SHADINGRATE_118bee8e131b
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12SHADINGRATECOMBINER.
+pub type D3D12SHADINGRATECOMBINER = @owner.D3D12SHADINGRATECOMBINER_0ded11827a7c
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12SHAREDRESOURCECOMPATIBILITYTIER.
+pub type D3D12SHAREDRESOURCECOMPATIBILITYTIER = @owner.D3D12SHAREDRESOURCECOMPATIBILITYTIER_ca1aaf349386
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12SIGNATUREPARAMETERDESC.
+pub type D3D12SIGNATUREPARAMETERDESC = @owner.D3D12SIGNATUREPARAMETERDESC_4a790aab747e
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12SODECLARATIONENTRY.
+pub type D3D12SODECLARATIONENTRY = @owner.D3D12SODECLARATIONENTRY_24340b2296ae
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12SRVDIMENSION.
+pub type D3D12SRVDIMENSION = @owner.D3D12SRVDIMENSION_e4e6608742ed
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12STANDARDMULTISAMPLEQUALITYLEVELS.
+pub type D3D12STANDARDMULTISAMPLEQUALITYLEVELS = @owner.D3D12STANDARDMULTISAMPLEQUALITYLEVELS_231956176fed
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12STATEOBJECTCONFIG.
+pub type D3D12STATEOBJECTCONFIG = @owner.D3D12STATEOBJECTCONFIG_d30fd9dfaf43
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12STATEOBJECTDATABASEFLAGS.
+pub type D3D12STATEOBJECTDATABASEFLAGS = @owner.D3D12STATEOBJECTDATABASEFLAGS_0e36d12e43d8
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12STATEOBJECTDESC.
+pub type D3D12STATEOBJECTDESC = @owner.D3D12STATEOBJECTDESC_7291e4e0a14d
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12STATEOBJECTFLAGS.
+pub type D3D12STATEOBJECTFLAGS = @owner.D3D12STATEOBJECTFLAGS_c85afb0f5032
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12STATEOBJECTTYPE.
+pub type D3D12STATEOBJECTTYPE = @owner.D3D12STATEOBJECTTYPE_32a43309af47
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12STATESUBOBJECT.
+pub type D3D12STATESUBOBJECT = @owner.D3D12STATESUBOBJECT_6018757e1ce5
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12STATESUBOBJECTTYPE.
+pub type D3D12STATESUBOBJECTTYPE = @owner.D3D12STATESUBOBJECTTYPE_c787f9f12401
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12STATICBORDERCOLOR.
+pub type D3D12STATICBORDERCOLOR = @owner.D3D12STATICBORDERCOLOR_6e0d20eb4daa
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12STATICSAMPLERDESC.
+pub type D3D12STATICSAMPLERDESC = @owner.D3D12STATICSAMPLERDESC_32f49e166ac0
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12STATICSAMPLERDESC1.
+pub type D3D12STATICSAMPLERDESC1 = @owner.D3D12STATICSAMPLERDESC1_6193f42f4e09
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12STENCILOP.
+pub type D3D12STENCILOP = @owner.D3D12STENCILOP_246dbe8bfaa3
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12STREAMOUTPUTBUFFERVIEW.
+pub type D3D12STREAMOUTPUTBUFFERVIEW = @owner.D3D12STREAMOUTPUTBUFFERVIEW_4276f5f06ab6
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12STREAMOUTPUTDESC.
+pub type D3D12STREAMOUTPUTDESC = @owner.D3D12STREAMOUTPUTDESC_a594fb37e187
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12SUBOBJECTTOEXPORTSASSOCIATION.
+pub type D3D12SUBOBJECTTOEXPORTSASSOCIATION = @owner.D3D12SUBOBJECTTOEXPORTSASSOCIATION_76bceaf11c8c
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12SUBRESOURCEDATA.
+pub type D3D12SUBRESOURCEDATA = @owner.D3D12SUBRESOURCEDATA_b88e4315b2e0
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12SUBRESOURCEFOOTPRINT.
+pub type D3D12SUBRESOURCEFOOTPRINT = @owner.D3D12SUBRESOURCEFOOTPRINT_6e28ba168891
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12SUBRESOURCEINFO.
+pub type D3D12SUBRESOURCEINFO = @owner.D3D12SUBRESOURCEINFO_ea917ca0f4cf
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12SUBRESOURCERANGEUINT64.
+pub type D3D12SUBRESOURCERANGEUINT64 = @owner.D3D12SUBRESOURCERANGEUINT64_383e49668b72
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12SUBRESOURCETILING.
+pub type D3D12SUBRESOURCETILING = @owner.D3D12SUBRESOURCETILING_aee898aca63f
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12TEX1DARRAYDSV.
+pub type D3D12TEX1DARRAYDSV = @owner.D3D12TEX1DARRAYDSV_5e4d2de41173
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12TEX1DARRAYRTV.
+pub type D3D12TEX1DARRAYRTV = @owner.D3D12TEX1DARRAYRTV_02deecf3916b
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12TEX1DARRAYSRV.
+pub type D3D12TEX1DARRAYSRV = @owner.D3D12TEX1DARRAYSRV_a2e6fbf03bf3
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12TEX1DARRAYUAV.
+pub type D3D12TEX1DARRAYUAV = @owner.D3D12TEX1DARRAYUAV_e45155842213
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12TEX1DDSV.
+pub type D3D12TEX1DDSV = @owner.D3D12TEX1DDSV_8cfe8cf0f326
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12TEX1DRTV.
+pub type D3D12TEX1DRTV = @owner.D3D12TEX1DRTV_95df23e25704
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12TEX1DSRV.
+pub type D3D12TEX1DSRV = @owner.D3D12TEX1DSRV_89aafaa63f64
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12TEX1DUAV.
+pub type D3D12TEX1DUAV = @owner.D3D12TEX1DUAV_bb869c2b9978
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12TEX2DMSARRAYDSV.
+pub type D3D12TEX2DMSARRAYDSV = @owner.D3D12TEX2DMSARRAYDSV_fae3d3d20f1a
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12TEX2DMSARRAYRTV.
+pub type D3D12TEX2DMSARRAYRTV = @owner.D3D12TEX2DMSARRAYRTV_794fac7a21fa
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12TEX2DMSARRAYSRV.
+pub type D3D12TEX2DMSARRAYSRV = @owner.D3D12TEX2DMSARRAYSRV_d8627362c7e6
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12TEX2DMSARRAYUAV.
+pub type D3D12TEX2DMSARRAYUAV = @owner.D3D12TEX2DMSARRAYUAV_bcdea4f9bb58
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12TEX2DMSDSV.
+pub type D3D12TEX2DMSDSV = @owner.D3D12TEX2DMSDSV_8c12e4370169
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12TEX2DMSRTV.
+pub type D3D12TEX2DMSRTV = @owner.D3D12TEX2DMSRTV_c560156a85d0
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12TEX2DMSSRV.
+pub type D3D12TEX2DMSSRV = @owner.D3D12TEX2DMSSRV_b2c1d3b10cf6
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12TEX2DMSUAV.
+pub type D3D12TEX2DMSUAV = @owner.D3D12TEX2DMSUAV_0e7e4f415b1a
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12TEX2DARRAYDSV.
+pub type D3D12TEX2DARRAYDSV = @owner.D3D12TEX2DARRAYDSV_f5b4375a2134
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12TEX2DARRAYRTV.
+pub type D3D12TEX2DARRAYRTV = @owner.D3D12TEX2DARRAYRTV_feb7688c3f78
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12TEX2DARRAYSRV.
+pub type D3D12TEX2DARRAYSRV = @owner.D3D12TEX2DARRAYSRV_fd0fca37b088
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12TEX2DARRAYUAV.
+pub type D3D12TEX2DARRAYUAV = @owner.D3D12TEX2DARRAYUAV_f2aa5bfa50aa
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12TEX2DDSV.
+pub type D3D12TEX2DDSV = @owner.D3D12TEX2DDSV_6c314996a2a6
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12TEX2DRTV.
+pub type D3D12TEX2DRTV = @owner.D3D12TEX2DRTV_1839a61f17a2
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12TEX2DSRV.
+pub type D3D12TEX2DSRV = @owner.D3D12TEX2DSRV_5a388554e75c
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12TEX2DUAV.
+pub type D3D12TEX2DUAV = @owner.D3D12TEX2DUAV_3ed271fc760d
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12TEX3DRTV.
+pub type D3D12TEX3DRTV = @owner.D3D12TEX3DRTV_055f13c2b9b9
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12TEX3DSRV.
+pub type D3D12TEX3DSRV = @owner.D3D12TEX3DSRV_512209f4d754
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12TEX3DUAV.
+pub type D3D12TEX3DUAV = @owner.D3D12TEX3DUAV_21a037f1a093
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12TEXCUBEARRAYSRV.
+pub type D3D12TEXCUBEARRAYSRV = @owner.D3D12TEXCUBEARRAYSRV_250f77323e74
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12TEXCUBESRV.
+pub type D3D12TEXCUBESRV = @owner.D3D12TEXCUBESRV_c29ac384eeb3
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12TEXTUREADDRESSMODE.
+pub type D3D12TEXTUREADDRESSMODE = @owner.D3D12TEXTUREADDRESSMODE_7af75dad4d42
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12TEXTUREBARRIER.
+pub type D3D12TEXTUREBARRIER = @owner.D3D12TEXTUREBARRIER_848079af9976
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12TEXTUREBARRIERFLAGS.
+pub type D3D12TEXTUREBARRIERFLAGS = @owner.D3D12TEXTUREBARRIERFLAGS_3835a0d951b4
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12TEXTURECOPYLOCATION.
+pub type D3D12TEXTURECOPYLOCATION = @owner.D3D12TEXTURECOPYLOCATION_c2a516346e78
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12TEXTURECOPYTYPE.
+pub type D3D12TEXTURECOPYTYPE = @owner.D3D12TEXTURECOPYTYPE_159f360c1aff
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12TEXTURELAYOUT.
+pub type D3D12TEXTURELAYOUT = @owner.D3D12TEXTURELAYOUT_d9fcc43743ae
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12THREADLAUNCHOVERRIDES.
+pub type D3D12THREADLAUNCHOVERRIDES = @owner.D3D12THREADLAUNCHOVERRIDES_b6e3295060b3
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12TIGHTALIGNMENTTIER.
+pub type D3D12TIGHTALIGNMENTTIER = @owner.D3D12TIGHTALIGNMENTTIER_a4da389ee99c
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12TILEDRESOURCESTIER.
+pub type D3D12TILEDRESOURCESTIER = @owner.D3D12TILEDRESOURCESTIER_a611a6a84e04
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12TILEDRESOURCECOORDINATE.
+pub type D3D12TILEDRESOURCECOORDINATE = @owner.D3D12TILEDRESOURCECOORDINATE_4b33b97e3874
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12TILECOPYFLAGS.
+pub type D3D12TILECOPYFLAGS = @owner.D3D12TILECOPYFLAGS_f53c5983130d
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12TILEMAPPINGFLAGS.
+pub type D3D12TILEMAPPINGFLAGS = @owner.D3D12TILEMAPPINGFLAGS_28fb2d8b08cb
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12TILERANGEFLAGS.
+pub type D3D12TILERANGEFLAGS = @owner.D3D12TILERANGEFLAGS_b3f7c914ca18
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12TILEREGIONSIZE.
+pub type D3D12TILEREGIONSIZE = @owner.D3D12TILEREGIONSIZE_a7aa2d8c03c4
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12TILESHAPE.
+pub type D3D12TILESHAPE = @owner.D3D12TILESHAPE_281f3d85cd84
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12TRISTATE.
+pub type D3D12TRISTATE = @owner.D3D12TRISTATE_dcfb237e4797
+
+///|
+/// Stable facade for Windows.Win32.Graphics.Direct3D12.D3D12UAVDIMENSION.
+pub type D3D12UAVDIMENSION = @owner.D3D12UAVDIMENSION_62eca4677527

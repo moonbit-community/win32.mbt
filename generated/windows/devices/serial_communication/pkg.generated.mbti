@@ -1,0 +1,200 @@
+// Generated using `moon info`, DON'T EDIT IT
+package "moonbit-community/win32api/windows/devices/serial_communication"
+
+import {
+  "moonbit-community/win32api/runtime/core",
+  "moonbit-community/win32api/scc/eaa420314ea54705",
+  "moonbitlang/core/ref",
+}
+
+// Values
+pub fn add_error_received(@core.RawAddress, @core.RawAddress) -> Int64 raise @core.WindowsError
+
+pub fn add_error_received_raw(@core.RawAddress, @core.RawAddress, @ref.Ref[Int64]) -> Int
+
+pub fn add_pin_changed(@core.RawAddress, @core.RawAddress) -> Int64 raise @core.WindowsError
+
+pub fn add_pin_changed_raw(@core.RawAddress, @core.RawAddress, @ref.Ref[Int64]) -> Int
+
+pub let break_signal : Int
+
+pub let buffer_overrun : Int
+
+pub let carrier_detect : Int
+
+pub let clear_to_send : Int
+
+pub let data_set_ready : Int
+
+pub let even : Int
+
+pub let frame : Int
+
+pub fn from_id_async_raw(@core.RawAddress, @core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_baud_rate(@core.RawAddress) -> UInt raise @core.WindowsError
+
+pub fn get_baud_rate_raw(@core.RawAddress, @ref.Ref[UInt]) -> Int
+
+pub fn get_break_signal_state_raw(@core.RawAddress, Bytes) -> Int
+
+pub fn get_bytes_received(@core.RawAddress) -> UInt raise @core.WindowsError
+
+pub fn get_bytes_received_raw(@core.RawAddress, @ref.Ref[UInt]) -> Int
+
+pub fn get_carrier_detect_state_raw(@core.RawAddress, Bytes) -> Int
+
+pub fn get_clear_to_send_state_raw(@core.RawAddress, Bytes) -> Int
+
+pub fn get_data_bits_raw(@core.RawAddress, Bytes) -> Int
+
+pub fn get_data_set_ready_state_raw(@core.RawAddress, Bytes) -> Int
+
+pub fn get_device_selector_from_port_name_raw(@core.RawAddress, @core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_device_selector_from_usb_vid_pid_raw(@core.RawAddress, UInt, UInt, @ref.Ref[UInt64]) -> Int
+
+pub fn get_device_selector_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_error(@core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn get_error_raw(@core.RawAddress, @ref.Ref[Int]) -> Int
+
+pub fn get_handshake(@core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn get_handshake_raw(@core.RawAddress, @ref.Ref[Int]) -> Int
+
+pub fn get_input_stream_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_is_data_terminal_ready_enabled_raw(@core.RawAddress, Bytes) -> Int
+
+pub fn get_is_request_to_send_enabled_raw(@core.RawAddress, Bytes) -> Int
+
+pub fn get_output_stream_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_parity(@core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn get_parity_raw(@core.RawAddress, @ref.Ref[Int]) -> Int
+
+pub fn get_pin_change(@core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn get_pin_change_raw(@core.RawAddress, @ref.Ref[Int]) -> Int
+
+pub fn get_port_name_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_read_timeout(@core.RawAddress) -> Int64 raise @core.WindowsError
+
+pub fn get_read_timeout_raw(@core.RawAddress, @ref.Ref[Int64]) -> Int
+
+pub fn get_stop_bits(@core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn get_stop_bits_raw(@core.RawAddress, @ref.Ref[Int]) -> Int
+
+pub fn get_usb_product_id_raw(@core.RawAddress, Bytes) -> Int
+
+pub fn get_usb_vendor_id_raw(@core.RawAddress, Bytes) -> Int
+
+pub fn get_write_timeout(@core.RawAddress) -> Int64 raise @core.WindowsError
+
+pub fn get_write_timeout_raw(@core.RawAddress, @ref.Ref[Int64]) -> Int
+
+pub let mark : Int
+
+pub let none_88eb448f14 : Int
+
+pub let none_d690d84dba : Int
+
+pub let odd : Int
+
+pub let one : Int
+
+pub let one_point_five : Int
+
+pub fn put_baud_rate(@core.RawAddress, UInt) -> Unit raise @core.WindowsError
+
+pub fn put_baud_rate_raw(@core.RawAddress, UInt) -> Int
+
+pub fn put_break_signal_state(@core.RawAddress, UInt) -> Unit raise @core.WindowsError
+
+pub fn put_break_signal_state_raw(@core.RawAddress, UInt) -> Int
+
+pub fn put_data_bits(@core.RawAddress, UInt) -> Unit raise @core.WindowsError
+
+pub fn put_data_bits_raw(@core.RawAddress, UInt) -> Int
+
+pub fn put_handshake(@core.RawAddress, Int) -> Unit raise @core.WindowsError
+
+pub fn put_handshake_raw(@core.RawAddress, Int) -> Int
+
+pub fn put_is_data_terminal_ready_enabled(@core.RawAddress, UInt) -> Unit raise @core.WindowsError
+
+pub fn put_is_data_terminal_ready_enabled_raw(@core.RawAddress, UInt) -> Int
+
+pub fn put_is_request_to_send_enabled(@core.RawAddress, UInt) -> Unit raise @core.WindowsError
+
+pub fn put_is_request_to_send_enabled_raw(@core.RawAddress, UInt) -> Int
+
+pub fn put_parity(@core.RawAddress, Int) -> Unit raise @core.WindowsError
+
+pub fn put_parity_raw(@core.RawAddress, Int) -> Int
+
+pub fn put_read_timeout(@core.RawAddress, Int64) -> Unit raise @core.WindowsError
+
+pub fn put_read_timeout_raw(@core.RawAddress, Int64) -> Int
+
+pub fn put_stop_bits(@core.RawAddress, Int) -> Unit raise @core.WindowsError
+
+pub fn put_stop_bits_raw(@core.RawAddress, Int) -> Int
+
+pub fn put_write_timeout(@core.RawAddress, Int64) -> Unit raise @core.WindowsError
+
+pub fn put_write_timeout_raw(@core.RawAddress, Int64) -> Int
+
+pub let receive_full : Int
+
+pub let receive_parity : Int
+
+pub fn remove_error_received(@core.RawAddress, Int64) -> Unit raise @core.WindowsError
+
+pub fn remove_error_received_raw(@core.RawAddress, Int64) -> Int
+
+pub fn remove_pin_changed(@core.RawAddress, Int64) -> Unit raise @core.WindowsError
+
+pub fn remove_pin_changed_raw(@core.RawAddress, Int64) -> Int
+
+pub let request_to_send : Int
+
+pub let request_to_send_x_on_x_off : Int
+
+pub let ring_indicator : Int
+
+pub let space : Int
+
+pub let transmit_full : Int
+
+pub let two : Int
+
+pub let x_on_x_off : Int
+
+// Errors
+
+// Types and methods
+
+// Type aliases
+pub using @eaa420314ea54705 {type ErrorReceivedEventArgs_8817b2b9a0ef as ErrorReceivedEventArgs}
+
+pub using @eaa420314ea54705 {type PinChangedEventArgs_8b24976034ef as PinChangedEventArgs}
+
+pub using @eaa420314ea54705 {type SerialDevice_2a3d4a8644d0 as SerialDevice}
+
+pub using @eaa420314ea54705 {type SerialError_555364f4ca32 as SerialError}
+
+pub using @eaa420314ea54705 {type SerialHandshake_bb2b5e477904 as SerialHandshake}
+
+pub using @eaa420314ea54705 {type SerialParity_7a8426879760 as SerialParity}
+
+pub using @eaa420314ea54705 {type SerialPinChange_44c08fc86f47 as SerialPinChange}
+
+pub using @eaa420314ea54705 {type SerialStopBitCount_2f454c32b53d as SerialStopBitCount}
+
+// Traits

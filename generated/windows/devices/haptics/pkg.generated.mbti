@@ -1,0 +1,168 @@
+// Generated using `moon info`, DON'T EDIT IT
+package "moonbit-community/win32api/windows/devices/haptics"
+
+import {
+  "moonbit-community/win32api/runtime/core",
+  "moonbit-community/win32api/scc/29a3e7c4e00b9998",
+  "moonbitlang/core/ref",
+}
+
+// Values
+pub let allowed : Int
+
+pub fn clear_override_haptics_controller(@core.RawAddress, Int64) -> Unit raise @core.WindowsError
+
+pub fn clear_override_haptics_controller_raw(@core.RawAddress, Int64) -> Int
+
+pub let denied_by_energy_saver : Int
+
+pub let denied_by_system : Int
+
+pub let denied_by_user : Int
+
+pub fn find_all_async_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn from_id_async_raw(@core.RawAddress, @core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub let generic_ : Int
+
+pub fn get_brush_continuous_raw(@core.RawAddress, Bytes) -> Int
+
+pub fn get_buzz_continuous_raw(@core.RawAddress, Bytes) -> Int
+
+pub fn get_chisel_marker_continuous_raw(@core.RawAddress, Bytes) -> Int
+
+pub fn get_click_raw(@core.RawAddress, Bytes) -> Int
+
+pub fn get_current_haptics_controller_device_type(@core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn get_current_haptics_controller_device_type_raw(@core.RawAddress, @ref.Ref[Int]) -> Int
+
+pub fn get_current_haptics_controller_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_default_async_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_device_selector_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_duration(@core.RawAddress) -> Int64 raise @core.WindowsError
+
+pub fn get_duration_raw(@core.RawAddress, @ref.Ref[Int64]) -> Int
+
+pub fn get_eraser_continuous_raw(@core.RawAddress, Bytes) -> Int
+
+pub fn get_error_raw(@core.RawAddress, Bytes) -> Int
+
+pub fn get_for_current_thread_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_galaxy_pen_continuous_raw(@core.RawAddress, Bytes) -> Int
+
+pub fn get_hover_raw(@core.RawAddress, Bytes) -> Int
+
+pub fn get_id_557bacd384_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_id_68bd7440a0_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_ink_continuous_raw(@core.RawAddress, Bytes) -> Int
+
+pub fn get_is_intensity_supported_raw(@core.RawAddress, Bytes) -> Int
+
+pub fn get_is_play_count_supported_raw(@core.RawAddress, Bytes) -> Int
+
+pub fn get_is_play_duration_supported_raw(@core.RawAddress, Bytes) -> Int
+
+pub fn get_is_replay_pause_interval_supported_raw(@core.RawAddress, Bytes) -> Int
+
+pub fn get_marker_continuous_raw(@core.RawAddress, Bytes) -> Int
+
+pub fn get_pencil_continuous_raw(@core.RawAddress, Bytes) -> Int
+
+pub fn get_press_raw(@core.RawAddress, Bytes) -> Int
+
+pub fn get_release_raw(@core.RawAddress, Bytes) -> Int
+
+pub fn get_rumble_continuous_raw(@core.RawAddress, Bytes) -> Int
+
+pub fn get_simple_haptics_controller_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_success_raw(@core.RawAddress, Bytes) -> Int
+
+pub fn get_supported_feedback_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_thread_id(@core.RawAddress) -> UInt raise @core.WindowsError
+
+pub fn get_thread_id_raw(@core.RawAddress, @ref.Ref[UInt]) -> Int
+
+pub fn get_waveform_raw(@core.RawAddress, Bytes) -> Int
+
+pub fn is_haptic_device_present_raw(@core.RawAddress, Bytes) -> Int
+
+pub fn is_supported_raw(@core.RawAddress, Bytes) -> Int
+
+pub let mouse : Int
+
+pub let none : Int
+
+pub let pen : Int
+
+pub fn request_access_async_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn send_haptic_feedback(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn send_haptic_feedback_for_duration(@core.RawAddress, @core.RawAddress, Double, Int64) -> Unit raise @core.WindowsError
+
+pub fn send_haptic_feedback_for_duration_raw(@core.RawAddress, @core.RawAddress, Double, Int64) -> Int
+
+pub fn send_haptic_feedback_for_play_count(@core.RawAddress, @core.RawAddress, Double, Int, Int64) -> Unit raise @core.WindowsError
+
+pub fn send_haptic_feedback_for_play_count_raw(@core.RawAddress, @core.RawAddress, Double, Int, Int64) -> Int
+
+pub fn send_haptic_feedback_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn send_haptic_feedback_with_intensity(@core.RawAddress, @core.RawAddress, Double) -> Unit raise @core.WindowsError
+
+pub fn send_haptic_feedback_with_intensity_raw(@core.RawAddress, @core.RawAddress, Double) -> Int
+
+pub fn set_override_haptics_controller(@core.RawAddress, Int, @core.RawAddress) -> Int64 raise @core.WindowsError
+
+pub fn set_override_haptics_controller_raw(@core.RawAddress, Int, @core.RawAddress, @ref.Ref[Int64]) -> Int
+
+pub fn stop_feedback(@core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn stop_feedback_raw(@core.RawAddress) -> Int
+
+pub let touchpad : Int
+
+pub fn try_get_for_thread_raw(@core.RawAddress, UInt, @ref.Ref[UInt64]) -> Int
+
+pub fn try_send_haptic_waveform_for_duration_raw(@core.RawAddress, UInt, UInt, Double, Int64, Bytes) -> Int
+
+pub fn try_send_haptic_waveform_for_play_count_raw(@core.RawAddress, UInt, UInt, Double, Int, Int64, Bytes) -> Int
+
+pub fn try_send_haptic_waveform_raw(@core.RawAddress, UInt, UInt, Bytes) -> Int
+
+pub fn try_send_haptic_waveform_with_intensity_raw(@core.RawAddress, UInt, UInt, Double, Bytes) -> Int
+
+pub fn try_stop_feedback_raw(@core.RawAddress, Bytes) -> Int
+
+// Errors
+
+// Types and methods
+
+// Type aliases
+pub using @29a3e7c4e00b9998 {type HapticDeviceType_88c21683ab4e as HapticDeviceType}
+
+pub using @29a3e7c4e00b9998 {type HapticsControllerOverrideToken_c03727f3db14 as HapticsControllerOverrideToken}
+
+pub using @29a3e7c4e00b9998 {type InputHapticsManager_a49daea9174a as InputHapticsManager}
+
+pub using @29a3e7c4e00b9998 {type KnownSimpleHapticsControllerWaveforms_3a0a342c4f21 as KnownSimpleHapticsControllerWaveforms}
+
+pub using @29a3e7c4e00b9998 {type SimpleHapticsController_a05ef7bce842 as SimpleHapticsController}
+
+pub using @29a3e7c4e00b9998 {type SimpleHapticsControllerFeedback_bc648ab6ffab as SimpleHapticsControllerFeedback}
+
+pub using @29a3e7c4e00b9998 {type VibrationAccessStatus_f888a2589f43 as VibrationAccessStatus}
+
+pub using @29a3e7c4e00b9998 {type VibrationDevice_ea796d7af03a as VibrationDevice}
+
+// Traits

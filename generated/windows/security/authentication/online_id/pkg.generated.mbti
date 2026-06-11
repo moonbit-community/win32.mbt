@@ -1,0 +1,132 @@
+// Generated using `moon info`, DON'T EDIT IT
+package "moonbit-community/win32api/windows/security/authentication/online_id"
+
+import {
+  "moonbit-community/win32api/runtime/core",
+  "moonbit-community/win32api/scc/b045b35c0c23d354",
+  "moonbitlang/core/ref",
+}
+
+// Values
+pub fn authenticate_user_async_advanced_raw(@core.RawAddress, @core.RawAddress, Int, @ref.Ref[UInt64]) -> Int
+
+pub fn authenticate_user_async_raw(@core.RawAddress, @core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn create_online_id_service_ticket_request_advanced_raw(@core.RawAddress, @core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn create_online_id_service_ticket_request_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub let do_not_prompt : Int
+
+pub let error : Int
+
+pub fn get_application_id_b4789833c7(@core.RawAddress) -> Bytes raise @core.WindowsError
+
+pub fn get_application_id_b4789833c7_raw(@core.RawAddress, Bytes) -> Int
+
+pub fn get_application_id_d8857203d1(@core.RawAddress) -> Bytes raise @core.WindowsError
+
+pub fn get_application_id_d8857203d1_raw(@core.RawAddress, Bytes) -> Int
+
+pub fn get_authenticated_safe_customer_id_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_can_sign_out_raw(@core.RawAddress, Bytes) -> Int
+
+pub fn get_default_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_error_code(@core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn get_error_code_raw(@core.RawAddress, @ref.Ref[Int]) -> Int
+
+pub fn get_extended_error(@core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn get_extended_error_raw(@core.RawAddress, @ref.Ref[Int]) -> Int
+
+pub fn get_first_name_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_for_user_raw(@core.RawAddress, @core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_id_1e64fe6459_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_id_ef5614bfb9_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_identity_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_is_beta_account_raw(@core.RawAddress, Bytes) -> Int
+
+pub fn get_is_confirmed_pc_raw(@core.RawAddress, Bytes) -> Int
+
+pub fn get_last_name_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_policy_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_request_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_safe_customer_id_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_service_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_sign_in_name_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_status(@core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn get_status_raw(@core.RawAddress, @ref.Ref[Int]) -> Int
+
+pub fn get_ticket_async_raw(@core.RawAddress, @core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_ticket_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_tickets_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_user_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_value_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub let prompt_if_needed : Int
+
+pub fn put_application_id_2597fbd07a(@core.RawAddress, Bytes) -> Unit raise @core.WindowsError
+
+pub fn put_application_id_2597fbd07a_raw(@core.RawAddress, Bytes) -> Int
+
+pub fn put_application_id_aba09aee7a(@core.RawAddress, Bytes) -> Unit raise @core.WindowsError
+
+pub fn put_application_id_aba09aee7a_raw(@core.RawAddress, Bytes) -> Int
+
+pub let retype_credentials : Int
+
+pub let service_connection_error : Int
+
+pub fn sign_out_user_async_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub let success : Int
+
+// Errors
+
+// Types and methods
+
+// Type aliases
+pub using @b045b35c0c23d354 {type CredentialPromptType_2bdeaa94b74e as CredentialPromptType}
+
+pub using @b045b35c0c23d354 {type OnlineIdAuthenticator_009a071c48eb as OnlineIdAuthenticator}
+
+pub using @b045b35c0c23d354 {type OnlineIdServiceTicket_670bce5cf647 as OnlineIdServiceTicket}
+
+pub using @b045b35c0c23d354 {type OnlineIdServiceTicketRequest_9c98b846bc8e as OnlineIdServiceTicketRequest}
+
+pub using @b045b35c0c23d354 {type OnlineIdSystemAuthenticator_9aeb20c20bc1 as OnlineIdSystemAuthenticator}
+
+pub using @b045b35c0c23d354 {type OnlineIdSystemAuthenticatorForUser_0ffe560505e9 as OnlineIdSystemAuthenticatorForUser}
+
+pub using @b045b35c0c23d354 {type OnlineIdSystemIdentity_5ced5b5bcc86 as OnlineIdSystemIdentity}
+
+pub using @b045b35c0c23d354 {type OnlineIdSystemTicketResult_0cc809141493 as OnlineIdSystemTicketResult}
+
+pub using @b045b35c0c23d354 {type OnlineIdSystemTicketStatus_2a89b6e8d87b as OnlineIdSystemTicketStatus}
+
+pub using @b045b35c0c23d354 {type SignOutUserOperation_b6d7af988408 as SignOutUserOperation}
+
+pub using @b045b35c0c23d354 {type UserAuthenticationOperation_61a28dc03525 as UserAuthenticationOperation}
+
+pub using @b045b35c0c23d354 {type UserIdentity_a8a559125476 as UserIdentity}
+
+// Traits

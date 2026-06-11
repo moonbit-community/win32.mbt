@@ -1,0 +1,100 @@
+// Generated using `moon info`, DON'T EDIT IT
+package "moonbit-community/win32api/windows/system/remote_desktop/provider"
+
+import {
+  "moonbit-community/win32api/runtime/core",
+  "moonbit-community/win32api/scc/e1746fd6bbc8e82f",
+  "moonbitlang/core/ref",
+}
+
+// Values
+pub fn add_perform_local_action_requested(@core.RawAddress, @core.RawAddress) -> Int64 raise @core.WindowsError
+
+pub fn add_perform_local_action_requested_raw(@core.RawAddress, @core.RawAddress, @ref.Ref[Int64]) -> Int
+
+pub fn add_switch_to_local_session_requested(@core.RawAddress, @core.RawAddress) -> Int64 raise @core.WindowsError
+
+pub fn add_switch_to_local_session_requested_raw(@core.RawAddress, @core.RawAddress, @ref.Ref[Int64]) -> Int
+
+pub let connected : Int
+
+pub let connecting : Int
+
+pub fn create_instance_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub let disconnected : Int
+
+pub fn get_action(@core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn get_action_raw(@core.RawAddress, @ref.Ref[Int]) -> Int
+
+pub fn get_desktop_infos_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_display_name_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_for_launch_uri_1af751a9d3_raw(@core.RawAddress, @core.RawAddress, UInt64, @ref.Ref[UInt64]) -> Int
+
+pub fn get_for_launch_uri_adb790be2f_raw(@core.RawAddress, @core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_id_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn is_switch_supported_raw(@core.RawAddress, Bytes) -> Int
+
+pub fn is_switch_to_local_session_enabled_raw(@core.RawAddress, Bytes) -> Int
+
+pub fn perform_local_action_from_remote(@core.RawAddress, Int) -> Unit raise @core.WindowsError
+
+pub fn perform_local_action_from_remote_raw(@core.RawAddress, Int) -> Int
+
+pub fn remove_perform_local_action_requested(@core.RawAddress, Int64) -> Unit raise @core.WindowsError
+
+pub fn remove_perform_local_action_requested_raw(@core.RawAddress, Int64) -> Int
+
+pub fn remove_switch_to_local_session_requested(@core.RawAddress, Int64) -> Unit raise @core.WindowsError
+
+pub fn remove_switch_to_local_session_requested_raw(@core.RawAddress, Int64) -> Int
+
+pub fn report_switched(@core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn report_switched_raw(@core.RawAddress) -> Int
+
+pub fn set_connection_status(@core.RawAddress, Int) -> Unit raise @core.WindowsError
+
+pub fn set_connection_status_raw(@core.RawAddress, Int) -> Int
+
+pub let show_bluetooth_settings : Int
+
+pub let show_local_settings : Int
+
+pub let show_system_account_settings : Int
+
+pub let show_system_display_settings : Int
+
+pub let show_system_sound_settings : Int
+
+pub fn switch_to_local_session(@core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn switch_to_local_session_raw(@core.RawAddress) -> Int
+
+pub let user_input_needed : Int
+
+// Errors
+
+// Types and methods
+
+// Type aliases
+pub using @e1746fd6bbc8e82f {type PerformLocalActionRequestedEventArgs_9343eec0c63c as PerformLocalActionRequestedEventArgs}
+
+pub using @e1746fd6bbc8e82f {type RemoteDesktopConnectionInfo_212de167eb15 as RemoteDesktopConnectionInfo}
+
+pub using @e1746fd6bbc8e82f {type RemoteDesktopConnectionRemoteInfo_a38c1fd7e800 as RemoteDesktopConnectionRemoteInfo}
+
+pub using @e1746fd6bbc8e82f {type RemoteDesktopConnectionStatus_57a5fc729322 as RemoteDesktopConnectionStatus}
+
+pub using @e1746fd6bbc8e82f {type RemoteDesktopInfo_808c63bedbb2 as RemoteDesktopInfo}
+
+pub using @e1746fd6bbc8e82f {type RemoteDesktopLocalAction_dc35ba0d0afe as RemoteDesktopLocalAction}
+
+pub using @e1746fd6bbc8e82f {type RemoteDesktopRegistrar_e768bdeeaff2 as RemoteDesktopRegistrar}
+
+// Traits

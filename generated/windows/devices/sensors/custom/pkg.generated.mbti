@@ -1,0 +1,72 @@
+// Generated using `moon info`, DON'T EDIT IT
+package "moonbit-community/win32api/windows/devices/sensors/custom"
+
+import {
+  "moonbit-community/win32api/runtime/core",
+  "moonbit-community/win32api/scc/d7279a8854122256",
+  "moonbitlang/core/ref",
+}
+
+// Values
+pub fn add_reading_changed(@core.RawAddress, @core.RawAddress) -> Int64 raise @core.WindowsError
+
+pub fn add_reading_changed_raw(@core.RawAddress, @core.RawAddress, @ref.Ref[Int64]) -> Int
+
+pub fn from_id_async_raw(@core.RawAddress, @core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_current_reading_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_device_id_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_device_selector_raw(@core.RawAddress, Bytes, @ref.Ref[UInt64]) -> Int
+
+pub fn get_max_batch_size(@core.RawAddress) -> UInt raise @core.WindowsError
+
+pub fn get_max_batch_size_raw(@core.RawAddress, @ref.Ref[UInt]) -> Int
+
+pub fn get_minimum_report_interval(@core.RawAddress) -> UInt raise @core.WindowsError
+
+pub fn get_minimum_report_interval_raw(@core.RawAddress, @ref.Ref[UInt]) -> Int
+
+pub fn get_performance_count_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_properties_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_reading_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_report_interval(@core.RawAddress) -> UInt raise @core.WindowsError
+
+pub fn get_report_interval_raw(@core.RawAddress, @ref.Ref[UInt]) -> Int
+
+pub fn get_report_latency(@core.RawAddress) -> UInt raise @core.WindowsError
+
+pub fn get_report_latency_raw(@core.RawAddress, @ref.Ref[UInt]) -> Int
+
+pub fn get_timestamp(@core.RawAddress) -> Int64 raise @core.WindowsError
+
+pub fn get_timestamp_raw(@core.RawAddress, @ref.Ref[Int64]) -> Int
+
+pub fn put_report_interval(@core.RawAddress, UInt) -> Unit raise @core.WindowsError
+
+pub fn put_report_interval_raw(@core.RawAddress, UInt) -> Int
+
+pub fn put_report_latency(@core.RawAddress, UInt) -> Unit raise @core.WindowsError
+
+pub fn put_report_latency_raw(@core.RawAddress, UInt) -> Int
+
+pub fn remove_reading_changed(@core.RawAddress, Int64) -> Unit raise @core.WindowsError
+
+pub fn remove_reading_changed_raw(@core.RawAddress, Int64) -> Int
+
+// Errors
+
+// Types and methods
+
+// Type aliases
+pub using @d7279a8854122256 {type CustomSensor_b2b194ff0c91 as CustomSensor}
+
+pub using @d7279a8854122256 {type CustomSensorReading_2f920bed8021 as CustomSensorReading}
+
+pub using @d7279a8854122256 {type CustomSensorReadingChangedEventArgs_78878365ff23 as CustomSensorReadingChangedEventArgs}
+
+// Traits

@@ -1,0 +1,213 @@
+// Generated using `moon info`, DON'T EDIT IT
+package "moonbit-community/win32api/windows/win32/system/diagnostics/process_snapshotting"
+
+import {
+  "moonbit-community/win32api/runtime/core",
+  "moonbit-community/win32api/scc/2e824a989a2dce3a",
+}
+
+// Values
+pub let pss_capture_handle_basic_information : UInt
+
+pub let pss_capture_handle_name_information : UInt
+
+pub let pss_capture_handle_trace : UInt
+
+pub let pss_capture_handle_type_specific_information : UInt
+
+pub let pss_capture_handles : UInt
+
+pub let pss_capture_ipt_trace : UInt
+
+pub let pss_capture_none : UInt
+
+pub let pss_capture_reserved_00000002 : UInt
+
+pub let pss_capture_reserved_00000400 : UInt
+
+pub let pss_capture_reserved_00004000 : UInt
+
+pub fn pss_capture_snapshot_raw(@core.RawAddress, UInt, UInt, @core.RawAddress) -> UInt
+
+pub let pss_capture_thread_context : UInt
+
+pub let pss_capture_thread_context_extended : UInt
+
+pub let pss_capture_threads : UInt
+
+pub let pss_capture_va_clone : UInt
+
+pub let pss_capture_va_space : UInt
+
+pub let pss_capture_va_space_section_information : UInt
+
+pub let pss_create_breakaway : UInt
+
+pub let pss_create_breakaway_optional : UInt
+
+pub let pss_create_force_breakaway : UInt
+
+pub let pss_create_measure_performance : UInt
+
+pub let pss_create_release_section : UInt
+
+pub let pss_create_use_vm_allocations : UInt
+
+pub let pss_duplicate_close_source : Int
+
+pub let pss_duplicate_none : Int
+
+pub fn pss_duplicate_snapshot_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, Int) -> UInt
+
+pub fn pss_free_snapshot_raw(@core.RawAddress, @core.RawAddress) -> UInt
+
+pub let pss_handle_have_basic_information : Int
+
+pub let pss_handle_have_name : Int
+
+pub let pss_handle_have_type : Int
+
+pub let pss_handle_have_type_specific_information : Int
+
+pub let pss_handle_none : Int
+
+pub let pss_object_type_event : Int
+
+pub let pss_object_type_mutant : Int
+
+pub let pss_object_type_process : Int
+
+pub let pss_object_type_section : Int
+
+pub let pss_object_type_semaphore : Int
+
+pub let pss_object_type_thread : Int
+
+pub let pss_object_type_unknown : Int
+
+pub let pss_perf_resolution : UInt
+
+pub let pss_process_flags_frozen : Int
+
+pub let pss_process_flags_none : Int
+
+pub let pss_process_flags_protected : Int
+
+pub let pss_process_flags_reserved_03 : Int
+
+pub let pss_process_flags_reserved_04 : Int
+
+pub let pss_process_flags_wow64 : Int
+
+pub let pss_query_auxiliary_pages_information : Int
+
+pub let pss_query_handle_information : Int
+
+pub let pss_query_handle_trace_information : Int
+
+pub let pss_query_performance_counters : Int
+
+pub let pss_query_process_information : Int
+
+pub fn pss_query_snapshot_raw(@core.RawAddress, Int, @core.RawAddress, UInt) -> UInt
+
+pub let pss_query_thread_information : Int
+
+pub let pss_query_va_clone_information : Int
+
+pub let pss_query_va_space_information : Int
+
+pub let pss_thread_flags_none : Int
+
+pub let pss_thread_flags_terminated : Int
+
+pub let pss_walk_auxiliary_pages : Int
+
+pub let pss_walk_handles : Int
+
+pub fn pss_walk_marker_create_raw(@core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn pss_walk_marker_free_raw(@core.RawAddress) -> UInt
+
+pub fn pss_walk_marker_get_position_raw(@core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn pss_walk_marker_seek_to_beginning_raw(@core.RawAddress) -> UInt
+
+pub fn pss_walk_marker_set_position_raw(@core.RawAddress, UInt64) -> UInt
+
+pub fn pss_walk_snapshot_raw(@core.RawAddress, Int, @core.RawAddress, @core.RawAddress, UInt) -> UInt
+
+pub let pss_walk_thread_name : Int
+
+pub let pss_walk_threads : Int
+
+pub let pss_walk_va_space : Int
+
+// Errors
+
+// Types and methods
+
+// Type aliases
+pub using @2e824a989a2dce3a {type EventEStruct_ff9788c9eeb8 as EventEStruct}
+
+pub using @2e824a989a2dce3a {type HPSS_2c8c3aaadbda as HPSS}
+
+pub using @2e824a989a2dce3a {type HPSSWALK_76a29a0ab4aa as HPSSWALK}
+
+pub using @2e824a989a2dce3a {type MutantEStruct_2bec1fa2d28c as MutantEStruct}
+
+pub using @2e824a989a2dce3a {type PSSALLOCATOR_bd5a85ed562b as PSSALLOCATOR}
+
+pub using @2e824a989a2dce3a {type PSSAUXILIARYPAGEENTRY_d496baaba253 as PSSAUXILIARYPAGEENTRY}
+
+pub using @2e824a989a2dce3a {type PSSAUXILIARYPAGESINFORMATION_e91595a005f7 as PSSAUXILIARYPAGESINFORMATION}
+
+pub using @2e824a989a2dce3a {type PSSCAPTUREFLAGS_25f8c48e7a07 as PSSCAPTUREFLAGS}
+
+pub using @2e824a989a2dce3a {type PSSDUPLICATEFLAGS_20b4c84ac19a as PSSDUPLICATEFLAGS}
+
+pub using @2e824a989a2dce3a {type PSSHANDLEENTRY_f92f0930d60c as PSSHANDLEENTRY}
+
+pub using @2e824a989a2dce3a {type PSSHANDLEFLAGS_746a9cf27296 as PSSHANDLEFLAGS}
+
+pub using @2e824a989a2dce3a {type PSSHANDLEINFORMATION_0c103f49b035 as PSSHANDLEINFORMATION}
+
+pub using @2e824a989a2dce3a {type PSSHANDLETRACEINFORMATION_d1c8debf0220 as PSSHANDLETRACEINFORMATION}
+
+pub using @2e824a989a2dce3a {type PSSOBJECTTYPE_4bd26bf1a8c8 as PSSOBJECTTYPE}
+
+pub using @2e824a989a2dce3a {type PSSPERFORMANCECOUNTERS_b75eabe01ff9 as PSSPERFORMANCECOUNTERS}
+
+pub using @2e824a989a2dce3a {type PSSPROCESSFLAGS_33aeec363e0a as PSSPROCESSFLAGS}
+
+pub using @2e824a989a2dce3a {type PSSPROCESSINFORMATION_86d6e01742e4 as PSSPROCESSINFORMATION}
+
+pub using @2e824a989a2dce3a {type PSSQUERYINFORMATIONCLASS_3fd1e97c3670 as PSSQUERYINFORMATIONCLASS}
+
+pub using @2e824a989a2dce3a {type PSSTHREADENTRY_5ea4b90437eb as PSSTHREADENTRY}
+
+pub using @2e824a989a2dce3a {type PSSTHREADFLAGS_73e830a77ac4 as PSSTHREADFLAGS}
+
+pub using @2e824a989a2dce3a {type PSSTHREADINFORMATION_35a6b70cc8a0 as PSSTHREADINFORMATION}
+
+pub using @2e824a989a2dce3a {type PSSTHREADNAME_7e95d058a6f8 as PSSTHREADNAME}
+
+pub using @2e824a989a2dce3a {type PSSVACLONEINFORMATION_460170851d38 as PSSVACLONEINFORMATION}
+
+pub using @2e824a989a2dce3a {type PSSVASPACEENTRY_f704780ef85b as PSSVASPACEENTRY}
+
+pub using @2e824a989a2dce3a {type PSSVASPACEINFORMATION_9d3506e31f22 as PSSVASPACEINFORMATION}
+
+pub using @2e824a989a2dce3a {type PSSWALKINFORMATIONCLASS_4d04e3a0f480 as PSSWALKINFORMATIONCLASS}
+
+pub using @2e824a989a2dce3a {type ProcessEStruct_0db16caaad5a as ProcessEStruct}
+
+pub using @2e824a989a2dce3a {type SectionEStruct_4637acc59e21 as SectionEStruct}
+
+pub using @2e824a989a2dce3a {type SemaphoreEStruct_18ea13a96bd6 as SemaphoreEStruct}
+
+pub using @2e824a989a2dce3a {type ThreadEStruct_b0dac9b5d3aa as ThreadEStruct}
+
+pub using @2e824a989a2dce3a {type TypeSpecificInformationEUnion_08e7f29b0e7b as TypeSpecificInformationEUnion}
+
+// Traits

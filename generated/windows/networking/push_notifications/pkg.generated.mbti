@@ -1,0 +1,114 @@
+// Generated using `moon info`, DON'T EDIT IT
+package "moonbit-community/win32api/windows/networking/push_notifications"
+
+import {
+  "moonbit-community/win32api/runtime/core",
+  "moonbit-community/win32api/scc/3d8ef0e8f24163d7",
+  "moonbitlang/core/ref",
+}
+
+// Values
+pub fn add_channels_revoked(@core.RawAddress, @core.RawAddress) -> Int64 raise @core.WindowsError
+
+pub fn add_channels_revoked_raw(@core.RawAddress, @core.RawAddress, @ref.Ref[Int64]) -> Int
+
+pub fn add_push_notification_received(@core.RawAddress, @core.RawAddress) -> Int64 raise @core.WindowsError
+
+pub fn add_push_notification_received_raw(@core.RawAddress, @core.RawAddress, @ref.Ref[Int64]) -> Int
+
+pub let badge : Int
+
+pub fn close(@core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn close_raw(@core.RawAddress) -> Int
+
+pub fn create_push_notification_channel_for_application_async_07918a07e6_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn create_push_notification_channel_for_application_async_558de78b40_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn create_push_notification_channel_for_application_async_with_id_ddbb7c1189_raw(@core.RawAddress, @core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn create_push_notification_channel_for_application_async_with_id_eb03d65c08_raw(@core.RawAddress, @core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn create_push_notification_channel_for_secondary_tile_async_5ec97676e2_raw(@core.RawAddress, @core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn create_push_notification_channel_for_secondary_tile_async_c73dd3ed7c_raw(@core.RawAddress, @core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn create_raw_push_notification_channel_with_alternate_key_for_application_async_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn create_raw_push_notification_channel_with_alternate_key_for_application_async_with_id_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_badge_notification_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_cancel_raw(@core.RawAddress, Bytes) -> Int
+
+pub fn get_channel_id_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_content_bytes_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_content_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_default_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_expiration_time(@core.RawAddress) -> Int64 raise @core.WindowsError
+
+pub fn get_expiration_time_raw(@core.RawAddress, @ref.Ref[Int64]) -> Int
+
+pub fn get_for_user_raw(@core.RawAddress, @core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_headers_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_notification_type(@core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn get_notification_type_raw(@core.RawAddress, @ref.Ref[Int]) -> Int
+
+pub fn get_raw_notification_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_tile_notification_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_toast_notification_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_uri_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_user_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn put_cancel(@core.RawAddress, UInt) -> Unit raise @core.WindowsError
+
+pub fn put_cancel_raw(@core.RawAddress, UInt) -> Int
+
+pub let raw : Int
+
+pub fn remove_channels_revoked(@core.RawAddress, Int64) -> Unit raise @core.WindowsError
+
+pub fn remove_channels_revoked_raw(@core.RawAddress, Int64) -> Int
+
+pub fn remove_push_notification_received(@core.RawAddress, Int64) -> Unit raise @core.WindowsError
+
+pub fn remove_push_notification_received_raw(@core.RawAddress, Int64) -> Int
+
+pub let tile : Int
+
+pub let tile_flyout : Int
+
+pub let toast : Int
+
+// Errors
+
+// Types and methods
+
+// Type aliases
+pub using @3d8ef0e8f24163d7 {type PushNotificationChannel_ceac169df11c as PushNotificationChannel}
+
+pub using @3d8ef0e8f24163d7 {type PushNotificationChannelManager_6d0b28350c85 as PushNotificationChannelManager}
+
+pub using @3d8ef0e8f24163d7 {type PushNotificationChannelManagerForUser_e9fc25f98cb9 as PushNotificationChannelManagerForUser}
+
+pub using @3d8ef0e8f24163d7 {type PushNotificationChannelsRevokedEventArgs_e84adf110553 as PushNotificationChannelsRevokedEventArgs}
+
+pub using @3d8ef0e8f24163d7 {type PushNotificationReceivedEventArgs_0d69bd021b64 as PushNotificationReceivedEventArgs}
+
+pub using @3d8ef0e8f24163d7 {type PushNotificationType_bd0ef31a0f13 as PushNotificationType}
+
+pub using @3d8ef0e8f24163d7 {type RawNotification_38abc3974638 as RawNotification}
+
+// Traits

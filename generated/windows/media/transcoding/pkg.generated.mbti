@@ -1,0 +1,106 @@
+// Generated using `moon info`, DON'T EDIT IT
+package "moonbit-community/win32api/windows/media/transcoding"
+
+import {
+  "moonbit-community/win32api/runtime/core",
+  "moonbit-community/win32api/scc/eef56fd1aeba4c94",
+  "moonbitlang/core/ref",
+}
+
+// Values
+pub fn add_audio_effect(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn add_audio_effect_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn add_audio_effect_with_settings(@core.RawAddress, @core.RawAddress, UInt, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn add_audio_effect_with_settings_raw(@core.RawAddress, @core.RawAddress, UInt, @core.RawAddress) -> Int
+
+pub fn add_video_effect(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn add_video_effect_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn add_video_effect_with_settings(@core.RawAddress, @core.RawAddress, UInt, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn add_video_effect_with_settings_raw(@core.RawAddress, @core.RawAddress, UInt, @core.RawAddress) -> Int
+
+pub fn clear_effects(@core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn clear_effects_raw(@core.RawAddress) -> Int
+
+pub let codec_not_found : Int
+
+pub let default_ : Int
+
+pub fn get_always_reencode_raw(@core.RawAddress, Bytes) -> Int
+
+pub fn get_can_transcode_raw(@core.RawAddress, Bytes) -> Int
+
+pub fn get_failure_reason(@core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn get_failure_reason_raw(@core.RawAddress, @ref.Ref[Int]) -> Int
+
+pub fn get_hardware_acceleration_enabled_raw(@core.RawAddress, Bytes) -> Int
+
+pub fn get_trim_start_time(@core.RawAddress) -> Int64 raise @core.WindowsError
+
+pub fn get_trim_start_time_raw(@core.RawAddress, @ref.Ref[Int64]) -> Int
+
+pub fn get_trim_stop_time(@core.RawAddress) -> Int64 raise @core.WindowsError
+
+pub fn get_trim_stop_time_raw(@core.RawAddress, @ref.Ref[Int64]) -> Int
+
+pub fn get_video_processing_algorithm(@core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn get_video_processing_algorithm_raw(@core.RawAddress, @ref.Ref[Int]) -> Int
+
+pub let invalid_profile : Int
+
+pub let mrf_crf444 : Int
+
+pub let none : Int
+
+pub fn prepare_file_transcode_async_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn prepare_media_stream_source_transcode_async_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn prepare_stream_transcode_async_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn put_always_reencode(@core.RawAddress, UInt) -> Unit raise @core.WindowsError
+
+pub fn put_always_reencode_raw(@core.RawAddress, UInt) -> Int
+
+pub fn put_hardware_acceleration_enabled(@core.RawAddress, UInt) -> Unit raise @core.WindowsError
+
+pub fn put_hardware_acceleration_enabled_raw(@core.RawAddress, UInt) -> Int
+
+pub fn put_trim_start_time(@core.RawAddress, Int64) -> Unit raise @core.WindowsError
+
+pub fn put_trim_start_time_raw(@core.RawAddress, Int64) -> Int
+
+pub fn put_trim_stop_time(@core.RawAddress, Int64) -> Unit raise @core.WindowsError
+
+pub fn put_trim_stop_time_raw(@core.RawAddress, Int64) -> Int
+
+pub fn put_video_processing_algorithm(@core.RawAddress, Int) -> Unit raise @core.WindowsError
+
+pub fn put_video_processing_algorithm_raw(@core.RawAddress, Int) -> Int
+
+pub fn transcode_async_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub let unknown : Int
+
+// Errors
+
+// Types and methods
+
+// Type aliases
+pub using @eef56fd1aeba4c94 {type MediaTranscoder_f3bc945ad345 as MediaTranscoder}
+
+pub using @eef56fd1aeba4c94 {type MediaVideoProcessingAlgorithm_706158fa1b3e as MediaVideoProcessingAlgorithm}
+
+pub using @eef56fd1aeba4c94 {type PrepareTranscodeResult_eb3cc635770d as PrepareTranscodeResult}
+
+pub using @eef56fd1aeba4c94 {type TranscodeFailureReason_39d46c94b814 as TranscodeFailureReason}
+
+// Traits

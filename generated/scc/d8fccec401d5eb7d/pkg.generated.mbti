@@ -1,0 +1,78 @@
+// Generated using `moon info`, DON'T EDIT IT
+package "moonbit-community/win32api/scc/d8fccec401d5eb7d"
+
+import {
+  "moonbit-community/win32api/runtime/com",
+  "moonbit-community/win32api/runtime/core",
+  "moonbit-community/win32api/runtime/strings",
+  "moonbitlang/core/debug",
+  "moonbitlang/core/ref",
+}
+
+// Values
+pub fn get_friendly_name_91feb7e5e9fd_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_local_device_info_ccd91a3a59b4_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_local_system_edition_793383fcde1b_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_oem_support_info_d2243a6f7268_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_operating_system_b3fc61fcf2a5_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_serial_number_13682c215d80_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_support_app_link_16e89d127c2b_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_support_link_a56dc9f3314c_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_support_provider_caabf3239e6d_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_system_firmware_version_45139e914ae7_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_system_hardware_version_e13b4365f401_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_system_manufacturer_484e51c0830d_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_system_product_name_0e82714d2ce3_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_system_sku_62df483f657b_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub let system_manufacturers_contract_f81a5793e12c_alignment : Int
+
+pub let system_manufacturers_contract_f81a5793e12c_size : Int
+
+// Errors
+
+// Types and methods
+pub type IOemSupportInfo_34b684c709e1
+
+pub type ISmbiosInformationStatics_c79d9d576cce
+
+pub type ISystemSupportDeviceInfo_5cc6983a38bf
+
+pub type ISystemSupportInfoStatics2_39387546f1e1
+
+pub type ISystemSupportInfoStatics_6c1a79c30aa5
+
+pub type OemSupportInfo_5304ac48503e
+
+pub type SmbiosInformation_3f799b0b8fdb
+pub fn SmbiosInformation_3f799b0b8fdb::get_serial_number() -> @strings.HString raise @core.WindowsError
+
+pub(all) struct SystemManufacturersContract_f81a5793e12c {
+  raw_bytes : Bytes
+} derive(Eq, @debug.Debug)
+pub fn SystemManufacturersContract_f81a5793e12c::bytes(Self) -> Bytes
+pub fn SystemManufacturersContract_f81a5793e12c::from_bytes(Bytes) -> Self raise @core.WindowsError
+
+pub type SystemSupportDeviceInfo_55ce7a1a48e0
+
+pub type SystemSupportInfo_bfafe42446dc
+pub fn SystemSupportInfo_bfafe42446dc::get_local_device_info() -> @com.ComPtr[SystemSupportDeviceInfo_55ce7a1a48e0] raise @core.WindowsError
+pub fn SystemSupportInfo_bfafe42446dc::get_local_system_edition() -> @strings.HString raise @core.WindowsError
+pub fn SystemSupportInfo_bfafe42446dc::get_oem_support_info() -> @com.ComPtr[OemSupportInfo_5304ac48503e] raise @core.WindowsError
+
+// Type aliases
+
+// Traits

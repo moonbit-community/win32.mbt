@@ -1,0 +1,127 @@
+// Generated using `moon info`, DON'T EDIT IT
+package "moonbit-community/win32api/scc/2a2f3da55951b2ce"
+
+import {
+  "moonbit-community/win32api/runtime/com",
+  "moonbit-community/win32api/runtime/core",
+  "moonbitlang/core/debug",
+  "moonbitlang/core/ref",
+}
+
+// Values
+pub fn add_canceled_2ddcb020dbdf(@core.RawAddress, @core.RawAddress) -> Int64 raise @core.WindowsError
+
+pub fn add_canceled_2ddcb020dbdf_raw(@core.RawAddress, @core.RawAddress, @ref.Ref[Int64]) -> Int
+
+pub fn add_push_received_651fc1a2e18a(@core.RawAddress, @core.RawAddress) -> Int64 raise @core.WindowsError
+
+pub fn add_push_received_651fc1a2e18a_raw(@core.RawAddress, @core.RawAddress, @ref.Ref[Int64]) -> Int
+
+pub fn close_624f799d31f8(@core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn close_624f799d31f8_raw(@core.RawAddress) -> Int
+
+pub let completed_failure_7d634013d747 : Int
+
+pub let completed_success_f035d124409f : Int
+
+pub fn create_channel_async_e75d786c190b_raw(@core.RawAddress, Bytes, @ref.Ref[UInt64]) -> Int
+
+pub fn get_channel_339e79bd3006_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_default_a941307c1f84_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_deferral_d8f17a447a05_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_expiration_time_b30e5e49b36a(@core.RawAddress) -> Int64 raise @core.WindowsError
+
+pub fn get_expiration_time_b30e5e49b36a_raw(@core.RawAddress, @ref.Ref[Int64]) -> Int
+
+pub fn get_extended_error_5a09bf83fd51(@core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn get_extended_error_5a09bf83fd51_raw(@core.RawAddress, @ref.Ref[Int]) -> Int
+
+pub fn get_payload_a75c7f6c3951_raw(@core.RawAddress, @ref.Ref[UInt], @ref.Ref[UInt64]) -> Int
+
+pub fn get_status_f60d33433e9d(@core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn get_status_f60d33433e9d_raw(@core.RawAddress, @ref.Ref[Int]) -> Int
+
+pub fn get_uri_ff0104ea862b_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub let in_progress_2186bd3a1eef : Int
+
+pub let in_progress_retry_1bd67e7d361f : Int
+
+pub fn is_supported_b9ace309c42a_raw(@core.RawAddress, Bytes) -> Int
+
+pub let push_notification_create_channel_status_380bd955cc2a_alignment : Int
+
+pub let push_notification_create_channel_status_380bd955cc2a_size : Int
+
+pub let push_notifications_contract_6cec817be958_alignment : Int
+
+pub let push_notifications_contract_6cec817be958_size : Int
+
+pub fn register__c5e40397477a(@core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn register__c5e40397477a_raw(@core.RawAddress) -> Int
+
+pub fn remove_canceled_b2ab902884b5(@core.RawAddress, Int64) -> Unit raise @core.WindowsError
+
+pub fn remove_canceled_b2ab902884b5_raw(@core.RawAddress, Int64) -> Int
+
+pub fn remove_push_received_54d5059aaa67(@core.RawAddress, Int64) -> Unit raise @core.WindowsError
+
+pub fn remove_push_received_54d5059aaa67_raw(@core.RawAddress, Int64) -> Int
+
+pub fn unregister_4338f5e8f368(@core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn unregister_4338f5e8f368_raw(@core.RawAddress) -> Int
+
+pub fn unregister_all_6a1e9c317b77(@core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn unregister_all_6a1e9c317b77_raw(@core.RawAddress) -> Int
+
+// Errors
+
+// Types and methods
+pub type IPushNotificationChannel_2bdd1375c3c8
+
+pub type IPushNotificationCreateChannelResult_df79b785c323
+
+pub type IPushNotificationManagerStatics_d408427a87e1
+
+pub type IPushNotificationManager_774b9b59affb
+
+pub type IPushNotificationReceivedEventArgs_00f083f39e0a
+
+pub(all) struct PushNotificationChannelStatus_d8c3d877155a(Int) derive(Compare, Eq, @debug.Debug)
+pub fn PushNotificationChannelStatus_d8c3d877155a::from_int(Int) -> Self
+pub fn PushNotificationChannelStatus_d8c3d877155a::to_int(Self) -> Int
+
+pub type PushNotificationChannel_f38e140358f1
+
+pub type PushNotificationCreateChannelResult_161919dadb4f
+
+pub(all) struct PushNotificationCreateChannelStatus_380bd955cc2a {
+  raw_bytes : Bytes
+} derive(Eq, @debug.Debug)
+pub fn PushNotificationCreateChannelStatus_380bd955cc2a::bytes(Self) -> Bytes
+pub fn PushNotificationCreateChannelStatus_380bd955cc2a::from_bytes(Bytes) -> Self raise @core.WindowsError
+
+pub type PushNotificationManager_7ed1f6d1506f
+pub fn PushNotificationManager_7ed1f6d1506f::get_default() -> @com.ComPtr[Self] raise @core.WindowsError
+pub fn PushNotificationManager_7ed1f6d1506f::is_supported() -> Bool raise @core.WindowsError
+
+pub type PushNotificationReceivedEventArgs_fd0f7f8530b4
+
+pub(all) struct PushNotificationsContract_6cec817be958 {
+  raw_bytes : Bytes
+} derive(Eq, @debug.Debug)
+pub fn PushNotificationsContract_6cec817be958::bytes(Self) -> Bytes
+pub fn PushNotificationsContract_6cec817be958::from_bytes(Bytes) -> Self raise @core.WindowsError
+
+// Type aliases
+
+// Traits

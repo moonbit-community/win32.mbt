@@ -1,0 +1,91 @@
+// Generated using `moon info`, DON'T EDIT IT
+package "moonbit-community/win32api/scc/3dcb7e0f3c6dedb9"
+
+import {
+  "moonbit-community/win32api/runtime/core",
+  "moonbit-community/win32api/runtime/strings",
+  "moonbitlang/core/debug",
+  "moonbitlang/core/ref",
+}
+
+// Values
+pub let active_high_cecb4174ceca : Int
+
+pub let active_low_4339912eb2ff : Int
+
+pub fn from_id_async_f0e749087d91_raw(@core.RawAddress, @core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_active_duty_cycle_percentage_1aec60352811_raw(@core.RawAddress, Bytes) -> Int
+
+pub fn get_actual_frequency_308c1372ecbb_raw(@core.RawAddress, Bytes) -> Int
+
+pub fn get_controller_010c0817a392_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_controllers_async_4a164dd96970_raw(@core.RawAddress, @core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_default_async_d7c520a15212_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_device_selector_2b4b822c471b_raw(@core.RawAddress, @core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_device_selector_5148d8064446_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_is_started_142985d7206a_raw(@core.RawAddress, Bytes) -> Int
+
+pub fn get_max_frequency_d46775b50c00_raw(@core.RawAddress, Bytes) -> Int
+
+pub fn get_min_frequency_2155d29ffdb6_raw(@core.RawAddress, Bytes) -> Int
+
+pub fn get_pin_count_12f27b8db707(@core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn get_pin_count_12f27b8db707_raw(@core.RawAddress, @ref.Ref[Int]) -> Int
+
+pub fn get_polarity_20bd17b8dcd2(@core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn get_polarity_20bd17b8dcd2_raw(@core.RawAddress, @ref.Ref[Int]) -> Int
+
+pub fn open_pin_345fa96c9436_raw(@core.RawAddress, Int, @ref.Ref[UInt64]) -> Int
+
+pub fn put_polarity_f62ab7811d99(@core.RawAddress, Int) -> Unit raise @core.WindowsError
+
+pub fn put_polarity_f62ab7811d99_raw(@core.RawAddress, Int) -> Int
+
+pub fn set_active_duty_cycle_percentage_f58aef778764(@core.RawAddress, Double) -> Unit raise @core.WindowsError
+
+pub fn set_active_duty_cycle_percentage_f58aef778764_raw(@core.RawAddress, Double) -> Int
+
+pub fn set_desired_frequency_93be2b22cbba_raw(@core.RawAddress, Double, Bytes) -> Int
+
+pub fn start_42a593bec341(@core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn start_42a593bec341_raw(@core.RawAddress) -> Int
+
+pub fn stop_8607de335096(@core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn stop_8607de335096_raw(@core.RawAddress) -> Int
+
+// Errors
+
+// Types and methods
+pub type IPwmControllerStatics2_5f7383915c97
+
+pub type IPwmControllerStatics3_4eaddb55c0f8
+
+pub type IPwmControllerStatics_954d5cce235a
+
+pub type IPwmController_405b0178de88
+
+pub type IPwmPin_b6efcd93fbf8
+
+pub type PwmController_e3030098d658
+pub fn PwmController_e3030098d658::get_device_selector() -> @strings.HString raise @core.WindowsError
+pub fn PwmController_e3030098d658::get_device_selector_from_friendly_name(@strings.HString) -> @strings.HString raise @core.WindowsError
+
+pub type PwmPin_c9ce4d95f563
+
+pub(all) struct PwmPulsePolarity_10d8da26469d(Int) derive(Compare, Eq, @debug.Debug)
+pub fn PwmPulsePolarity_10d8da26469d::from_int(Int) -> Self
+pub fn PwmPulsePolarity_10d8da26469d::to_int(Self) -> Int
+
+// Type aliases
+
+// Traits

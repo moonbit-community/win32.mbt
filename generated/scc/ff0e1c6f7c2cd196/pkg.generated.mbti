@@ -1,0 +1,126 @@
+// Generated using `moon info`, DON'T EDIT IT
+package "moonbit-community/win32api/scc/ff0e1c6f7c2cd196"
+
+import {
+  "moonbit-community/win32api/runtime/com",
+  "moonbit-community/win32api/runtime/core",
+  "moonbitlang/core/debug",
+  "moonbitlang/core/ref",
+}
+
+// Values
+pub let app_recording_contract_d481a3d467ef_alignment : Int
+
+pub let app_recording_contract_d481a3d467ef_size : Int
+
+pub fn get_can_record_83504dbe2822_raw(@core.RawAddress, Bytes) -> Int
+
+pub fn get_can_record_time_span_e82b7ccdb63f_raw(@core.RawAddress, Bytes) -> Int
+
+pub fn get_default_d745febd3dd2_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_details_1fa0db57112d_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_duration_a66d6ee0c514(@core.RawAddress) -> Int64 raise @core.WindowsError
+
+pub fn get_duration_a66d6ee0c514_raw(@core.RawAddress, @ref.Ref[Int64]) -> Int
+
+pub fn get_extended_error_809b38a1ae3a(@core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn get_extended_error_809b38a1ae3a_raw(@core.RawAddress, @ref.Ref[Int]) -> Int
+
+pub fn get_extended_error_a28c10e1da2b(@core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn get_extended_error_a28c10e1da2b_raw(@core.RawAddress, @ref.Ref[Int]) -> Int
+
+pub fn get_file_fb7ceb31c206_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_historical_buffer_duration_9820118af046(@core.RawAddress) -> Int64 raise @core.WindowsError
+
+pub fn get_historical_buffer_duration_9820118af046_raw(@core.RawAddress, @ref.Ref[Int64]) -> Int
+
+pub fn get_is_any_app_broadcasting_6ba3061e0e65_raw(@core.RawAddress, Bytes) -> Int
+
+pub fn get_is_app_inactive_9f06ab5314a5_raw(@core.RawAddress, Bytes) -> Int
+
+pub fn get_is_blocked_for_app_9554c8caa5df_raw(@core.RawAddress, Bytes) -> Int
+
+pub fn get_is_capture_resource_unavailable_2d738cf5dcbb_raw(@core.RawAddress, Bytes) -> Int
+
+pub fn get_is_disabled_by_system_5917be0423ce_raw(@core.RawAddress, Bytes) -> Int
+
+pub fn get_is_disabled_by_user_afaad866dae8_raw(@core.RawAddress, Bytes) -> Int
+
+pub fn get_is_file_truncated_5cc617f37784_raw(@core.RawAddress, Bytes) -> Int
+
+pub fn get_is_game_stream_in_progress_0a8b1bbca21a_raw(@core.RawAddress, Bytes) -> Int
+
+pub fn get_is_gpu_constrained_a82138418bad_raw(@core.RawAddress, Bytes) -> Int
+
+pub fn get_is_time_span_recording_disabled_fc05626e10a8_raw(@core.RawAddress, Bytes) -> Int
+
+pub fn get_media_encoding_subtype_dc712453876d_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_saved_screenshot_infos_39444f2ea576_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_status_6726ef8f3506_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_succeeded_2d2b347053a4_raw(@core.RawAddress, Bytes) -> Int
+
+pub fn get_succeeded_d25187c525db_raw(@core.RawAddress, Bytes) -> Int
+
+pub fn get_supported_screenshot_media_encoding_subtypes_92c4625c26a1_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub let hdr_content_visible_dc8c619ad492 : Int
+
+pub let none_c779e846df90 : Int
+
+pub fn record_time_span_to_file_async_f8cf160311da_raw(@core.RawAddress, Int64, Int64, @core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn save_screenshot_to_files_async_a7eacef3aa58_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, Int, @core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn start_recording_to_file_async_4eb5482677a5_raw(@core.RawAddress, @core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+// Errors
+
+// Types and methods
+pub(all) struct AppRecordingContract_d481a3d467ef {
+  raw_bytes : Bytes
+} derive(Eq, @debug.Debug)
+pub fn AppRecordingContract_d481a3d467ef::bytes(Self) -> Bytes
+pub fn AppRecordingContract_d481a3d467ef::from_bytes(Bytes) -> Self raise @core.WindowsError
+
+pub type AppRecordingManager_fc48656a6193
+pub fn AppRecordingManager_fc48656a6193::get_default() -> @com.ComPtr[Self] raise @core.WindowsError
+
+pub type AppRecordingResult_42bac2f3022b
+
+pub(all) struct AppRecordingSaveScreenshotOption_36b497d68764(Int) derive(Compare, Eq, @debug.Debug)
+pub fn AppRecordingSaveScreenshotOption_36b497d68764::from_int(Int) -> Self
+pub fn AppRecordingSaveScreenshotOption_36b497d68764::to_int(Self) -> Int
+
+pub type AppRecordingSaveScreenshotResult_9591bd2b4939
+
+pub type AppRecordingSavedScreenshotInfo_be75ad1019e6
+
+pub type AppRecordingStatusDetails_6abe29b49bd0
+
+pub type AppRecordingStatus_a5ae5d05677b
+
+pub type IAppRecordingManagerStatics_3f7886cd1fd5
+
+pub type IAppRecordingManager_a7aed98c6881
+
+pub type IAppRecordingResult_1915808e92b2
+
+pub type IAppRecordingSaveScreenshotResult_cfa6f98586fd
+
+pub type IAppRecordingSavedScreenshotInfo_46f76a8130d5
+
+pub type IAppRecordingStatusDetails_7cd50b23888f
+
+pub type IAppRecordingStatus_0ecdf4f2c765
+
+// Type aliases
+
+// Traits

@@ -1,0 +1,58 @@
+// Generated using `moon info`, DON'T EDIT IT
+package "moonbit-community/win32api/windows/ai/agents/mcp"
+
+import {
+  "moonbit-community/win32api/runtime/core",
+  "moonbit-community/win32api/scc/fac9d1e8caf59fd1",
+  "moonbitlang/core/ref",
+}
+
+// Values
+pub fn allow(@core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn allow_raw(@core.RawAddress) -> Int
+
+pub let client_to_server : Int
+
+pub fn get_is_allowed_raw(@core.RawAddress, Bytes) -> Int
+
+pub fn get_message_if_not_allowed_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn initialize(@core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress, UInt) -> Unit raise @core.WindowsError
+
+pub fn initialize_raw(@core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress, UInt) -> Int
+
+pub fn on_message(@core.RawAddress, @core.RawAddress, Int, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn on_message_raw(@core.RawAddress, @core.RawAddress, Int, @core.RawAddress) -> Int
+
+pub fn put_is_allowed(@core.RawAddress, UInt) -> Unit raise @core.WindowsError
+
+pub fn put_is_allowed_raw(@core.RawAddress, UInt) -> Int
+
+pub fn put_message_if_not_allowed(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn put_message_if_not_allowed_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn reject(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn reject_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub let server_to_client : Int
+
+// Errors
+
+// Types and methods
+
+// Type aliases
+pub using @fac9d1e8caf59fd1 {type IMcpMessageFilterExperimental_0b70da089138 as IMcpMessageFilterExperimental}
+
+pub using @fac9d1e8caf59fd1 {type IMcpMessageFilterResponseExperimental_4e6ae42dc460 as IMcpMessageFilterResponseExperimental}
+
+pub using @fac9d1e8caf59fd1 {type IMcpMessageFilterResponseExperimental2_285216b16515 as IMcpMessageFilterResponseExperimental2}
+
+pub using @fac9d1e8caf59fd1 {type McpMessageDirection_11dca31f98aa as McpMessageDirection}
+
+pub using @fac9d1e8caf59fd1 {type McpMessageFilterResponse_0175f9bf704d as McpMessageFilterResponse}
+
+// Traits

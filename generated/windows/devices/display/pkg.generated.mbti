@@ -1,0 +1,128 @@
+// Generated using `moon info`, DON'T EDIT IT
+package "moonbit-community/win32api/windows/devices/display"
+
+import {
+  "moonbit-community/win32api/runtime/core",
+  "moonbit-community/win32api/scc/0f3e6061c58a77e4",
+  "moonbitlang/core/ref",
+}
+
+// Values
+pub let analog_tv : Int
+
+pub let display_id : Int
+
+pub let display_port : Int
+
+pub let dvi : Int
+
+pub let edid : Int
+
+pub fn from_id_async_raw(@core.RawAddress, @core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn from_interface_id_async_raw(@core.RawAddress, @core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_blue_primary(@core.RawAddress) -> Bytes raise @core.WindowsError
+
+pub fn get_blue_primary_raw(@core.RawAddress, Bytes) -> Int
+
+pub fn get_connection_kind(@core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn get_connection_kind_raw(@core.RawAddress, @ref.Ref[Int]) -> Int
+
+pub fn get_descriptor_raw(@core.RawAddress, Int, @ref.Ref[UInt], @ref.Ref[UInt64]) -> Int
+
+pub fn get_device_id_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_device_selector_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_display_adapter_device_id_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_display_adapter_id(@core.RawAddress) -> Bytes raise @core.WindowsError
+
+pub fn get_display_adapter_id_raw(@core.RawAddress, Bytes) -> Int
+
+pub fn get_display_adapter_target_id(@core.RawAddress) -> UInt raise @core.WindowsError
+
+pub fn get_display_adapter_target_id_raw(@core.RawAddress, @ref.Ref[UInt]) -> Int
+
+pub fn get_display_name_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_green_primary(@core.RawAddress) -> Bytes raise @core.WindowsError
+
+pub fn get_green_primary_raw(@core.RawAddress, Bytes) -> Int
+
+pub fn get_is_dolby_vision_supported_in_hdr_mode_raw(@core.RawAddress, Bytes) -> Int
+
+pub fn get_max_average_full_frame_luminance_in_nits_raw(@core.RawAddress, Bytes) -> Int
+
+pub fn get_max_luminance_in_nits_raw(@core.RawAddress, Bytes) -> Int
+
+pub fn get_min_luminance_in_nits_raw(@core.RawAddress, Bytes) -> Int
+
+pub fn get_native_resolution_in_raw_pixels(@core.RawAddress) -> Bytes raise @core.WindowsError
+
+pub fn get_native_resolution_in_raw_pixels_raw(@core.RawAddress, Bytes) -> Int
+
+pub fn get_physical_connector(@core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn get_physical_connector_raw(@core.RawAddress, @ref.Ref[Int]) -> Int
+
+pub fn get_physical_size_in_inches_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_raw_dpi_x_raw(@core.RawAddress, Bytes) -> Int
+
+pub fn get_raw_dpi_y_raw(@core.RawAddress, Bytes) -> Int
+
+pub fn get_red_primary(@core.RawAddress) -> Bytes raise @core.WindowsError
+
+pub fn get_red_primary_raw(@core.RawAddress, Bytes) -> Int
+
+pub fn get_usage_kind(@core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn get_usage_kind_raw(@core.RawAddress, @ref.Ref[Int]) -> Int
+
+pub fn get_white_point(@core.RawAddress) -> Bytes raise @core.WindowsError
+
+pub fn get_white_point_raw(@core.RawAddress, Bytes) -> Int
+
+pub let hd15 : Int
+
+pub let hdmi : Int
+
+pub let head_mounted : Int
+
+pub let internal : Int
+
+pub let lvds : Int
+
+pub let sdi : Int
+
+pub let special_purpose : Int
+
+pub let standard : Int
+
+pub let unknown : Int
+
+pub let virtual_ : Int
+
+pub let wired : Int
+
+pub let wireless : Int
+
+// Errors
+
+// Types and methods
+
+// Type aliases
+pub using @0f3e6061c58a77e4 {type DisplayMonitor_51661dfb1804 as DisplayMonitor}
+
+pub using @0f3e6061c58a77e4 {type DisplayMonitorConnectionKind_221d61c7f109 as DisplayMonitorConnectionKind}
+
+pub using @0f3e6061c58a77e4 {type DisplayMonitorDescriptorKind_d06079147019 as DisplayMonitorDescriptorKind}
+
+pub using @0f3e6061c58a77e4 {type DisplayMonitorPhysicalConnectorKind_7a3a3a9d1b66 as DisplayMonitorPhysicalConnectorKind}
+
+pub using @0f3e6061c58a77e4 {type DisplayMonitorUsageKind_c0242a8359b5 as DisplayMonitorUsageKind}
+
+// Traits

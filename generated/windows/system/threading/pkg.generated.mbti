@@ -1,0 +1,78 @@
+// Generated using `moon info`, DON'T EDIT IT
+package "moonbit-community/win32api/windows/system/threading"
+
+import {
+  "moonbit-community/win32api/runtime/core",
+  "moonbit-community/win32api/scc/bbe507b83ead8b04",
+  "moonbitlang/core/ref",
+}
+
+// Values
+pub fn cancel(@core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn cancel_raw(@core.RawAddress) -> Int
+
+pub fn create_periodic_timer_raw(@core.RawAddress, @core.RawAddress, Int64, @ref.Ref[UInt64]) -> Int
+
+pub fn create_periodic_timer_with_completion_raw(@core.RawAddress, @core.RawAddress, Int64, @core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn create_timer_raw(@core.RawAddress, @core.RawAddress, Int64, @ref.Ref[UInt64]) -> Int
+
+pub fn create_timer_with_completion_raw(@core.RawAddress, @core.RawAddress, Int64, @core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_delay(@core.RawAddress) -> Int64 raise @core.WindowsError
+
+pub fn get_delay_raw(@core.RawAddress, @ref.Ref[Int64]) -> Int
+
+pub fn get_period(@core.RawAddress) -> Int64 raise @core.WindowsError
+
+pub fn get_period_raw(@core.RawAddress, @ref.Ref[Int64]) -> Int
+
+pub let high : Int
+
+pub fn invoke_820040ce53(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn invoke_820040ce53_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn invoke_91b5a420ae(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn invoke_91b5a420ae_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn invoke_9b9de20ba8(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn invoke_9b9de20ba8_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub let low : Int
+
+pub let none : UInt
+
+pub let normal : Int
+
+pub fn run_async_raw(@core.RawAddress, @core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn run_with_priority_and_options_async_raw(@core.RawAddress, @core.RawAddress, Int, UInt, @ref.Ref[UInt64]) -> Int
+
+pub fn run_with_priority_async_raw(@core.RawAddress, @core.RawAddress, Int, @ref.Ref[UInt64]) -> Int
+
+pub let time_sliced : UInt
+
+// Errors
+
+// Types and methods
+
+// Type aliases
+pub using @bbe507b83ead8b04 {type ThreadPool_e41fb2503d32 as ThreadPool}
+
+pub using @bbe507b83ead8b04 {type ThreadPoolTimer_d2313fa54f36 as ThreadPoolTimer}
+
+pub using @bbe507b83ead8b04 {type TimerDestroyedHandler_51653aeb8b30 as TimerDestroyedHandler}
+
+pub using @bbe507b83ead8b04 {type TimerElapsedHandler_f878bdec3dc0 as TimerElapsedHandler}
+
+pub using @bbe507b83ead8b04 {type WorkItemHandler_f7f56829b184 as WorkItemHandler}
+
+pub using @bbe507b83ead8b04 {type WorkItemOptions_47f378b3e468 as WorkItemOptions}
+
+pub using @bbe507b83ead8b04 {type WorkItemPriority_da9e9a8abbe4 as WorkItemPriority}
+
+// Traits

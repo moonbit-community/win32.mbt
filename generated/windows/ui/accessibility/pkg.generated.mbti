@@ -1,0 +1,36 @@
+// Generated using `moon info`, DON'T EDIT IT
+package "moonbit-community/win32api/windows/ui/accessibility"
+
+import {
+  "moonbit-community/win32api/runtime/core",
+  "moonbit-community/win32api/scc/9b4d4c1a6efdb527",
+  "moonbitlang/core/ref",
+}
+
+// Values
+pub fn add_screen_reader_position_changed(@core.RawAddress, @core.RawAddress) -> Int64 raise @core.WindowsError
+
+pub fn add_screen_reader_position_changed_raw(@core.RawAddress, @core.RawAddress, @ref.Ref[Int64]) -> Int
+
+pub fn get_current_screen_reader_position_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_is_reading_text_raw(@core.RawAddress, Bytes) -> Int
+
+pub fn get_screen_position_in_raw_pixels(@core.RawAddress) -> Bytes raise @core.WindowsError
+
+pub fn get_screen_position_in_raw_pixels_raw(@core.RawAddress, Bytes) -> Int
+
+pub fn remove_screen_reader_position_changed(@core.RawAddress, Int64) -> Unit raise @core.WindowsError
+
+pub fn remove_screen_reader_position_changed_raw(@core.RawAddress, Int64) -> Int
+
+// Errors
+
+// Types and methods
+
+// Type aliases
+pub using @9b4d4c1a6efdb527 {type ScreenReaderPositionChangedEventArgs_922124deec65 as ScreenReaderPositionChangedEventArgs}
+
+pub using @9b4d4c1a6efdb527 {type ScreenReaderService_46645d0c5165 as ScreenReaderService}
+
+// Traits

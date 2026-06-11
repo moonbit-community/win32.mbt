@@ -1,0 +1,59 @@
+// Generated using `moon info`, DON'T EDIT IT
+package "moonbit-community/win32api/scc/51ca7cdf0aa835b2"
+
+import {
+  "moonbit-community/win32api/runtime/com",
+  "moonbit-community/win32api/runtime/core",
+  "moonbitlang/core/debug",
+  "moonbitlang/core/ref",
+}
+
+// Values
+pub fn create_bb8ed687ecb4_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub let devices_low_level_contract_8e2bd383abc4_alignment : Int
+
+pub let devices_low_level_contract_8e2bd383abc4_size : Int
+
+pub fn get_adc_controller_provider_972fe08b336b_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_default_provider_8edfdbbe341f_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_gpio_controller_provider_8548a66487ec_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_i2c_controller_provider_6d1d7eb3db4d_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_pwm_controller_provider_095d3f863f72_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_spi_controller_provider_8bc699ef7c91_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn put_default_provider_b34fac985608(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn put_default_provider_b34fac985608_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+// Errors
+
+// Types and methods
+pub(all) struct DevicesLowLevelContract_8e2bd383abc4 {
+  raw_bytes : Bytes
+} derive(Eq, @debug.Debug)
+pub fn DevicesLowLevelContract_8e2bd383abc4::bytes(Self) -> Bytes
+pub fn DevicesLowLevelContract_8e2bd383abc4::from_bytes(Bytes) -> Self raise @core.WindowsError
+
+pub type ILowLevelDevicesAggregateProviderFactory_cc032cb29ff9
+
+pub type ILowLevelDevicesAggregateProvider_b9fd765e8ba5
+
+pub type ILowLevelDevicesControllerStatics_228a853c6d7d
+
+pub type ILowLevelDevicesController_92c37362c76d
+
+pub type LowLevelDevicesAggregateProvider_5ef77b3cb2f9
+
+pub type LowLevelDevicesController_e6ebbc3a9c42
+pub fn LowLevelDevicesController_e6ebbc3a9c42::get_default_provider() -> @com.ComPtr[ILowLevelDevicesAggregateProvider_b9fd765e8ba5] raise @core.WindowsError
+pub fn LowLevelDevicesController_e6ebbc3a9c42::put_default_provider(@com.ComPtr[ILowLevelDevicesAggregateProvider_b9fd765e8ba5]) -> Unit raise @core.WindowsError
+
+// Type aliases
+
+// Traits

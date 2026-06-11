@@ -1,0 +1,894 @@
+// Generated using `moon info`, DON'T EDIT IT
+package "moonbit-community/win32api/windows/devices/smart_cards"
+
+import {
+  "moonbit-community/win32api/runtime/core",
+  "moonbit-community/win32api/scc/b9a9bcd0ac8df8e6",
+  "moonbitlang/core/ref",
+}
+
+// Values
+pub let above_lock : Int
+
+pub fn add_apdu_received(@core.RawAddress, @core.RawAddress) -> Int64 raise @core.WindowsError
+
+pub fn add_apdu_received_raw(@core.RawAddress, @core.RawAddress, @ref.Ref[Int64]) -> Int
+
+pub fn add_card_added(@core.RawAddress, @core.RawAddress) -> Int64 raise @core.WindowsError
+
+pub fn add_card_added_raw(@core.RawAddress, @core.RawAddress, @ref.Ref[Int64]) -> Int
+
+pub fn add_card_removed(@core.RawAddress, @core.RawAddress) -> Int64 raise @core.WindowsError
+
+pub fn add_card_removed_raw(@core.RawAddress, @core.RawAddress, @ref.Ref[Int64]) -> Int
+
+pub fn add_connection_deactivated(@core.RawAddress, @core.RawAddress) -> Int64 raise @core.WindowsError
+
+pub fn add_connection_deactivated_raw(@core.RawAddress, @core.RawAddress, @ref.Ref[Int64]) -> Int
+
+pub let aes : Int
+
+pub let allow : Int
+
+pub let allow_unlock_prompt : Int
+
+pub let allowed : Int
+
+pub let always : Int
+
+pub let any : Int
+
+pub let apdu_response_not_sent : Int
+
+pub let authorization_canceled : Int
+
+pub let authorization_failed : Int
+
+pub let authorization_required : Int
+
+pub let cbc_mac : Int
+
+pub let chain_output : UInt
+
+pub fn change_administrative_key_async_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn complete(@core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn complete_raw(@core.RawAddress) -> Int
+
+pub fn connect_async_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub let connection_lost : Int
+
+pub let connection_redirected : Int
+
+pub fn create_1928b6d9ae_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn create_70a6954a31_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, Int, Int, @ref.Ref[UInt64]) -> Int
+
+pub fn create_cryptogram_material_storage_key_async_raw(@core.RawAddress, Int, @core.RawAddress, Int, UInt, @ref.Ref[UInt64]) -> Int
+
+pub let cryptogram_material_package_storage_key_exists : Int
+
+pub let cvc3_md : Int
+
+pub let cvc3_umd : Int
+
+pub let decimalized_msd : Int
+
+pub let default_ : Int
+
+pub fn delete_cryptogram_material_package_async_raw(@core.RawAddress, @core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn delete_cryptogram_material_storage_key_async_raw(@core.RawAddress, @core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub let denied : Int
+
+pub let disabled : Int
+
+pub let disallow : Int
+
+pub let disconnected_0399ab6ccb : Int
+
+pub let disconnected_cb71377551 : Int
+
+pub let embedded_se_280aa9820e : Int
+
+pub let embedded_se_b4b7c7a238 : Int
+
+pub let emulator_applet_id_group_registration_changed : Int
+
+pub let emulator_host_application_activated : Int
+
+pub let emulator_near_field_entry : Int
+
+pub let emulator_near_field_exit : Int
+
+pub let emulator_transaction : Int
+
+pub let enabled : Int
+
+pub let exclusive_60f1974d0d : Int
+
+pub let exclusive_c82b0ccd1d : Int
+
+pub fn find_all_cards_async_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub let foreground_override : Int
+
+pub fn from_id_async_raw(@core.RawAddress, @core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn from_smart_card_async_raw(@core.RawAddress, @core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub let generic_ : Int
+
+pub fn get_activation_policy(@core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn get_activation_policy_raw(@core.RawAddress, @ref.Ref[Int]) -> Int
+
+pub fn get_algorithm_1ce8509e95(@core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn get_algorithm_1ce8509e95_raw(@core.RawAddress, @ref.Ref[Int]) -> Int
+
+pub fn get_algorithm_634955ccbd(@core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn get_algorithm_634955ccbd_raw(@core.RawAddress, @ref.Ref[Int]) -> Int
+
+pub fn get_all_cryptogram_material_characteristics_async_raw(@core.RawAddress, Int, @core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_all_cryptogram_material_package_characteristics_async_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_all_cryptogram_material_package_characteristics_with_storage_key_async_raw(@core.RawAddress, @core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_all_cryptogram_storage_key_characteristics_async_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_allow_when_cryptogram_generator_not_prepared_raw(@core.RawAddress, Bytes) -> Int
+
+pub fn get_allowed_algorithms_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_allowed_proof_of_possession_algorithms_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_allowed_validations_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_answer_to_reset_async_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_applet_id_group_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_applet_id_group_registrations_async_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_applet_id_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_applet_ids_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_attestation_certificate_chain_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_attestation_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_attestation_status(@core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn get_attestation_status_raw(@core.RawAddress, @ref.Ref[Int]) -> Int
+
+pub fn get_authority_key_container_name_async_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_automatic_enablement_raw(@core.RawAddress, Bytes) -> Int
+
+pub fn get_automatic_response_status(@core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn get_automatic_response_status_raw(@core.RawAddress, @ref.Ref[Int]) -> Int
+
+pub fn get_capabilities_81fd8f1df5(@core.RawAddress) -> UInt raise @core.WindowsError
+
+pub fn get_capabilities_81fd8f1df5_raw(@core.RawAddress, @ref.Ref[UInt]) -> Int
+
+pub fn get_capabilities_d8ded1de36(@core.RawAddress) -> UInt raise @core.WindowsError
+
+pub fn get_capabilities_d8ded1de36_raw(@core.RawAddress, @ref.Ref[UInt]) -> Int
+
+pub fn get_chained_output_step_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_challenge_28011408f2_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_challenge_6eb837dbc9_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_challenge_context_async_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_characteristics_1966cd9fcd_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_characteristics_bc327774ff_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_characteristics_eb95f09dd5_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_command_apdu_5797824f55_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_command_apdu_bf6823f818_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_command_apdu_bit_mask_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_connection_properties_380a93a9a7_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_connection_properties_6c6dac974f_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_cryptogram_length(@core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn get_cryptogram_length_raw(@core.RawAddress, @ref.Ref[Int]) -> Int
+
+pub fn get_cryptogram_material_name_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_cryptogram_material_package_name_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_cryptogram_offset(@core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn get_cryptogram_offset_raw(@core.RawAddress, @ref.Ref[Int]) -> Int
+
+pub fn get_cryptogram_placement_options(@core.RawAddress) -> UInt raise @core.WindowsError
+
+pub fn get_cryptogram_placement_options_raw(@core.RawAddress, @ref.Ref[UInt]) -> Int
+
+pub fn get_date_created(@core.RawAddress) -> Int64 raise @core.WindowsError
+
+pub fn get_date_created_raw(@core.RawAddress, @ref.Ref[Int64]) -> Int
+
+pub fn get_date_imported(@core.RawAddress) -> Int64 raise @core.WindowsError
+
+pub fn get_date_imported_raw(@core.RawAddress, @ref.Ref[Int64]) -> Int
+
+pub fn get_deadline(@core.RawAddress) -> Int64 raise @core.WindowsError
+
+pub fn get_deadline_raw(@core.RawAddress, @ref.Ref[Int64]) -> Int
+
+pub fn get_default_async_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_deferral_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_description_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_device_id_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_device_selector_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_device_selector_with_kind_raw(@core.RawAddress, Int, @ref.Ref[UInt64]) -> Int
+
+pub fn get_digits(@core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn get_digits_raw(@core.RawAddress, @ref.Ref[Int]) -> Int
+
+pub fn get_display_name_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_emulator_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_enablement_policy(@core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn get_enablement_policy_raw(@core.RawAddress, @ref.Ref[Int]) -> Int
+
+pub fn get_id_async_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_id_ebc245dbce(@core.RawAddress) -> Bytes raise @core.WindowsError
+
+pub fn get_id_ebc245dbce_raw(@core.RawAddress, Bytes) -> Int
+
+pub fn get_id_f22ee3effe(@core.RawAddress) -> Bytes raise @core.WindowsError
+
+pub fn get_id_f22ee3effe_raw(@core.RawAddress, Bytes) -> Int
+
+pub fn get_input_state_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_kind(@core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn get_kind_raw(@core.RawAddress, @ref.Ref[Int]) -> Int
+
+pub fn get_logo_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_lowercase_letters(@core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn get_lowercase_letters_raw(@core.RawAddress, @ref.Ref[Int]) -> Int
+
+pub fn get_material_length(@core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn get_material_length_raw(@core.RawAddress, @ref.Ref[Int]) -> Int
+
+pub fn get_material_name_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_material_type(@core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn get_material_type_raw(@core.RawAddress, @ref.Ref[Int]) -> Int
+
+pub fn get_max_applet_id_group_registrations_raw(@core.RawAddress, Bytes) -> Int
+
+pub fn get_max_applet_ids_raw(@core.RawAddress, Bytes) -> Int
+
+pub fn get_max_length(@core.RawAddress) -> UInt raise @core.WindowsError
+
+pub fn get_max_length_raw(@core.RawAddress, @ref.Ref[UInt]) -> Int
+
+pub fn get_min_length(@core.RawAddress) -> UInt raise @core.WindowsError
+
+pub fn get_min_length_raw(@core.RawAddress, @ref.Ref[UInt]) -> Int
+
+pub fn get_name_async_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_name_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_operation_status_181202f292(@core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn get_operation_status_181202f292_raw(@core.RawAddress, @ref.Ref[Int]) -> Int
+
+pub fn get_operation_status_35cbd21085(@core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn get_operation_status_35cbd21085_raw(@core.RawAddress, @ref.Ref[Int]) -> Int
+
+pub fn get_operation_status_4d2dd447fd(@core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn get_operation_status_4d2dd447fd_raw(@core.RawAddress, @ref.Ref[Int]) -> Int
+
+pub fn get_operation_status_a344f7b214(@core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn get_operation_status_a344f7b214_raw(@core.RawAddress, @ref.Ref[Int]) -> Int
+
+pub fn get_operation_status_e087d4d8e1(@core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn get_operation_status_e087d4d8e1_raw(@core.RawAddress, @ref.Ref[Int]) -> Int
+
+pub fn get_operational_requirements_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_output_state_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_package_format(@core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn get_package_format_raw(@core.RawAddress, @ref.Ref[Int]) -> Int
+
+pub fn get_package_name_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_payment_system_environment_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_proof_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_properties_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_protection_method(@core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn get_protection_method_raw(@core.RawAddress, @ref.Ref[Int]) -> Int
+
+pub fn get_protection_version(@core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn get_protection_version_raw(@core.RawAddress, @ref.Ref[Int]) -> Int
+
+pub fn get_proximity_payment_system_environment_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_public_key_blob_type(@core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn get_public_key_blob_type_raw(@core.RawAddress, @ref.Ref[Int]) -> Int
+
+pub fn get_public_key_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_reader_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_reason(@core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn get_reason_raw(@core.RawAddress, @ref.Ref[Int]) -> Int
+
+pub fn get_response_apdu_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_secure_user_authentication_required_raw(@core.RawAddress, Bytes) -> Int
+
+pub fn get_should_match_length_raw(@core.RawAddress, Bytes) -> Int
+
+pub fn get_smart_card_0f35457207_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_smart_card_67b24e5309_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_smart_card_6f55d92125_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_smart_card_89bc021c61_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_smart_card_cryptogram_generator_async_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_smart_card_emulation_category(@core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn get_smart_card_emulation_category_raw(@core.RawAddress, @ref.Ref[Int]) -> Int
+
+pub fn get_smart_card_emulation_type(@core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn get_smart_card_emulation_type_raw(@core.RawAddress, @ref.Ref[Int]) -> Int
+
+pub fn get_smart_card_reader_id_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_source(@core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn get_source_applet_id_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_source_data_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_source_raw(@core.RawAddress, @ref.Ref[Int]) -> Int
+
+pub fn get_special_characters(@core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn get_special_characters_raw(@core.RawAddress, @ref.Ref[Int]) -> Int
+
+pub fn get_state(@core.RawAddress) -> UInt raise @core.WindowsError
+
+pub fn get_state_raw(@core.RawAddress, @ref.Ref[UInt]) -> Int
+
+pub fn get_status_async_2fe822be86_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_status_async_cccc24366b_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_storage_key_name_8b91ae5b10_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_storage_key_name_caa76fa80d_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_supported_cryptogram_algorithms_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_supported_cryptogram_material_package_confirmation_response_formats_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_supported_cryptogram_material_package_formats_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_supported_cryptogram_material_types_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_supported_smart_card_cryptogram_storage_key_capabilities_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_template_offset(@core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn get_template_offset_raw(@core.RawAddress, @ref.Ref[Int]) -> Int
+
+pub fn get_trigger_data_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_trigger_type(@core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn get_trigger_type_raw(@core.RawAddress, @ref.Ref[Int]) -> Int
+
+pub fn get_uppercase_letters(@core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn get_uppercase_letters_raw(@core.RawAddress, @ref.Ref[Int]) -> Int
+
+pub let hardware_protection : UInt
+
+pub let host : Int
+
+pub fn import_cryptogram_material_package_async_raw(@core.RawAddress, Int, @core.RawAddress, @core.RawAddress, @core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub let invalid_cryptogram_material_usage : Int
+
+pub fn invoke(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn invoke_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn is_host_card_emulation_supported_raw(@core.RawAddress, Bytes) -> Int
+
+pub fn is_supported_b48e5e756d_raw(@core.RawAddress, Bytes) -> Int
+
+pub fn is_supported_f446ca4930_raw(@core.RawAddress, Bytes) -> Int
+
+pub let jwe_rsa_pki : Int
+
+pub let never : Int
+
+pub let nfc : Int
+
+pub let nfc_reader : Int
+
+pub let no_attestation : Int
+
+pub let no_cryptogram_material_package : Int
+
+pub let no_cryptogram_material_package_storage_key : Int
+
+pub let none_0312d70816 : Int
+
+pub let none_2ec41e991a : Int
+
+pub let none_516651b130 : Int
+
+pub let none_6469c69d80 : UInt
+
+pub let none_6705aa5363 : Int
+
+pub let none_67d525622b : Int
+
+pub let none_70c107ac0e : Int
+
+pub let none_a89b28b793 : UInt
+
+pub let none_ff960aa90c : Int
+
+pub let not_supported : Int
+
+pub let other : Int
+
+pub let other_error : Int
+
+pub let payment : Int
+
+pub let prevent_unlock_prompt : Int
+
+pub fn provision_async_raw(@core.RawAddress, @core.RawAddress, UInt, @ref.Ref[UInt64]) -> Int
+
+pub fn provision_async_with_new_card_id_raw(@core.RawAddress, @core.RawAddress, UInt, Bytes, @ref.Ref[UInt64]) -> Int
+
+pub fn put_algorithm(@core.RawAddress, Int) -> Unit raise @core.WindowsError
+
+pub fn put_algorithm_raw(@core.RawAddress, Int) -> Int
+
+pub fn put_allow_when_cryptogram_generator_not_prepared(@core.RawAddress, UInt) -> Unit raise @core.WindowsError
+
+pub fn put_allow_when_cryptogram_generator_not_prepared_raw(@core.RawAddress, UInt) -> Int
+
+pub fn put_applet_id(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn put_applet_id_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn put_automatic_enablement(@core.RawAddress, UInt) -> Unit raise @core.WindowsError
+
+pub fn put_automatic_enablement_raw(@core.RawAddress, UInt) -> Int
+
+pub fn put_chained_output_step(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn put_chained_output_step_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn put_command_apdu(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn put_command_apdu_bit_mask(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn put_command_apdu_bit_mask_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn put_command_apdu_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn put_cryptogram_length(@core.RawAddress, Int) -> Unit raise @core.WindowsError
+
+pub fn put_cryptogram_length_raw(@core.RawAddress, Int) -> Int
+
+pub fn put_cryptogram_material_name(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn put_cryptogram_material_name_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn put_cryptogram_material_package_name(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn put_cryptogram_material_package_name_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn put_cryptogram_offset(@core.RawAddress, Int) -> Unit raise @core.WindowsError
+
+pub fn put_cryptogram_offset_raw(@core.RawAddress, Int) -> Int
+
+pub fn put_cryptogram_placement_options(@core.RawAddress, UInt) -> Unit raise @core.WindowsError
+
+pub fn put_cryptogram_placement_options_raw(@core.RawAddress, UInt) -> Int
+
+pub fn put_description(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn put_description_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn put_digits(@core.RawAddress, Int) -> Unit raise @core.WindowsError
+
+pub fn put_digits_raw(@core.RawAddress, Int) -> Int
+
+pub fn put_display_name(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn put_display_name_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn put_input_state(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn put_input_state_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn put_logo(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn put_logo_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn put_lowercase_letters(@core.RawAddress, Int) -> Unit raise @core.WindowsError
+
+pub fn put_lowercase_letters_raw(@core.RawAddress, Int) -> Int
+
+pub fn put_max_length(@core.RawAddress, UInt) -> Unit raise @core.WindowsError
+
+pub fn put_max_length_raw(@core.RawAddress, UInt) -> Int
+
+pub fn put_min_length(@core.RawAddress, UInt) -> Unit raise @core.WindowsError
+
+pub fn put_min_length_raw(@core.RawAddress, UInt) -> Int
+
+pub fn put_output_state(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn put_output_state_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn put_response_apdu(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn put_response_apdu_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn put_secure_user_authentication_required(@core.RawAddress, UInt) -> Unit raise @core.WindowsError
+
+pub fn put_secure_user_authentication_required_raw(@core.RawAddress, UInt) -> Int
+
+pub fn put_should_match_length(@core.RawAddress, UInt) -> Unit raise @core.WindowsError
+
+pub fn put_should_match_length_raw(@core.RawAddress, UInt) -> Int
+
+pub fn put_smart_card_emulation_category(@core.RawAddress, Int) -> Unit raise @core.WindowsError
+
+pub fn put_smart_card_emulation_category_raw(@core.RawAddress, Int) -> Int
+
+pub fn put_smart_card_emulation_type(@core.RawAddress, Int) -> Unit raise @core.WindowsError
+
+pub fn put_smart_card_emulation_type_raw(@core.RawAddress, Int) -> Int
+
+pub fn put_source_data(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn put_source_data_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn put_special_characters(@core.RawAddress, Int) -> Unit raise @core.WindowsError
+
+pub fn put_special_characters_raw(@core.RawAddress, Int) -> Int
+
+pub fn put_template_offset(@core.RawAddress, Int) -> Unit raise @core.WindowsError
+
+pub fn put_template_offset_raw(@core.RawAddress, Int) -> Int
+
+pub fn put_uppercase_letters(@core.RawAddress, Int) -> Unit raise @core.WindowsError
+
+pub fn put_uppercase_letters_raw(@core.RawAddress, Int) -> Int
+
+pub let reader_card_added : Int
+
+pub let ready_5a42c274c4 : Int
+
+pub let ready_5d2378108e : Int
+
+pub fn register_applet_id_group_async_raw(@core.RawAddress, @core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn remove_apdu_received(@core.RawAddress, Int64) -> Unit raise @core.WindowsError
+
+pub fn remove_apdu_received_raw(@core.RawAddress, Int64) -> Int
+
+pub fn remove_card_added(@core.RawAddress, Int64) -> Unit raise @core.WindowsError
+
+pub fn remove_card_added_raw(@core.RawAddress, Int64) -> Int
+
+pub fn remove_card_removed(@core.RawAddress, Int64) -> Unit raise @core.WindowsError
+
+pub fn remove_card_removed_raw(@core.RawAddress, Int64) -> Int
+
+pub fn remove_connection_deactivated(@core.RawAddress, Int64) -> Unit raise @core.WindowsError
+
+pub fn remove_connection_deactivated_raw(@core.RawAddress, Int64) -> Int
+
+pub fn request_activation_policy_change_async_raw(@core.RawAddress, Int, @ref.Ref[UInt64]) -> Int
+
+pub fn request_attested_virtual_smart_card_creation_async_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn request_attested_virtual_smart_card_creation_async_with_card_id_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, Bytes, @ref.Ref[UInt64]) -> Int
+
+pub fn request_cryptogram_material_storage_key_info_async_raw(@core.RawAddress, Int, @core.RawAddress, Int, @ref.Ref[UInt64]) -> Int
+
+pub fn request_pin_change_async_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn request_pin_reset_async_raw(@core.RawAddress, @core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn request_unlock_cryptogram_material_for_use_async_raw(@core.RawAddress, Int, @ref.Ref[UInt64]) -> Int
+
+pub fn request_virtual_smart_card_creation_async_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn request_virtual_smart_card_creation_async_with_card_id_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, Bytes, @ref.Ref[UInt64]) -> Int
+
+pub fn request_virtual_smart_card_deletion_async_raw(@core.RawAddress, @core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub let require_at_least_one : Int
+
+pub let require_unlock_prompt : Int
+
+pub let rsa2048 : Int
+
+pub let rsa_pkcs1_83b08313da : Int
+
+pub let rsa_pkcs1_83b52a44ef : Int
+
+pub let screen_on : Int
+
+pub let screen_unlocked : Int
+
+pub fn set_automatic_response_apdus_async_raw(@core.RawAddress, @core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn set_properties_async_raw(@core.RawAddress, @core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn set_response(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn set_response_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub let sha1 : Int
+
+pub let sha256_hmac : Int
+
+pub let shared : Int
+
+pub let signed_dynamic_application_data : Int
+
+pub let software_key_with_tpm : Int
+
+pub let software_key_without_tpm : Int
+
+pub fn start(@core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn start_raw(@core.RawAddress) -> Int
+
+pub let static_data_authentication : Int
+
+pub let success_38eda08ec3 : Int
+
+pub let success_61da62948d : Int
+
+pub let tpm : Int
+
+pub let tpm_key_unknown_attestation_status : Int
+
+pub let tpm_key_with_attestation : Int
+
+pub let tpm_key_with_long_term_attestation_failure : Int
+
+pub let tpm_key_with_temporary_attestation_failure : Int
+
+pub let tpm_key_without_attestation_capability : Int
+
+pub fn transmit_async_raw(@core.RawAddress, @core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub let triple_des112 : Int
+
+pub fn try_launch_current_app_async_raw(@core.RawAddress, @core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn try_launch_current_app_with_behavior_async_raw(@core.RawAddress, @core.RawAddress, Int, @ref.Ref[UInt64]) -> Int
+
+pub fn try_prove_possession_of_cryptogram_material_package_async_raw(@core.RawAddress, Int, Int, @core.RawAddress, @core.RawAddress, @core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn try_respond_async_raw(@core.RawAddress, @core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn try_respond_with_cryptograms_and_state_async_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn try_respond_with_cryptograms_async_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn try_respond_with_state_async_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub let uicc_0012c1dc31 : Int
+
+pub let uicc_8b2509cd01 : Int
+
+pub let units_are_in_nibbles : UInt
+
+pub let unknown : Int
+
+pub let unknown_cryptogram_material_name : Int
+
+pub let unknown_error : Int
+
+pub let unlock_prompt : UInt
+
+pub fn unregister_applet_id_group_async_raw(@core.RawAddress, @core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub let unresponsive : Int
+
+pub let unsupported_cryptogram_material_package : Int
+
+pub fn validate_request_apdu_async_raw(@core.RawAddress, Int, @core.RawAddress, @core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub let validation_failed : Int
+
+pub fn verify_response_async_raw(@core.RawAddress, @core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub let visa_hmac : Int
+
+pub let white_boxing : Int
+
+// Errors
+
+// Types and methods
+
+// Type aliases
+pub using @b9a9bcd0ac8df8e6 {type CardAddedEventArgs_3c2fbc26aa4b as CardAddedEventArgs}
+
+pub using @b9a9bcd0ac8df8e6 {type CardRemovedEventArgs_99fd3a221c41 as CardRemovedEventArgs}
+
+pub using @b9a9bcd0ac8df8e6 {type KnownSmartCardAppletIds_49e32a857694 as KnownSmartCardAppletIds}
+
+pub using @b9a9bcd0ac8df8e6 {type SmartCard_73f3b683799d as SmartCard}
+
+pub using @b9a9bcd0ac8df8e6 {type SmartCardActivationPolicyChangeResult_0cdd063ffe70 as SmartCardActivationPolicyChangeResult}
+
+pub using @b9a9bcd0ac8df8e6 {type SmartCardAppletIdGroup_c0161392e70d as SmartCardAppletIdGroup}
+
+pub using @b9a9bcd0ac8df8e6 {type SmartCardAppletIdGroupActivationPolicy_d38f6c2e7a2b as SmartCardAppletIdGroupActivationPolicy}
+
+pub using @b9a9bcd0ac8df8e6 {type SmartCardAppletIdGroupRegistration_a87ebeaa6044 as SmartCardAppletIdGroupRegistration}
+
+pub using @b9a9bcd0ac8df8e6 {type SmartCardAutomaticResponseApdu_eb9a5c5cab64 as SmartCardAutomaticResponseApdu}
+
+pub using @b9a9bcd0ac8df8e6 {type SmartCardAutomaticResponseStatus_5ac0fd662e12 as SmartCardAutomaticResponseStatus}
+
+pub using @b9a9bcd0ac8df8e6 {type SmartCardBackgroundTriggerContract_2f182bb81a25 as SmartCardBackgroundTriggerContract}
+
+pub using @b9a9bcd0ac8df8e6 {type SmartCardChallengeContext_8f61ee869c4c as SmartCardChallengeContext}
+
+pub using @b9a9bcd0ac8df8e6 {type SmartCardConnection_04d55f26a814 as SmartCardConnection}
+
+pub using @b9a9bcd0ac8df8e6 {type SmartCardCryptogramAlgorithm_a5898c48a98f as SmartCardCryptogramAlgorithm}
+
+pub using @b9a9bcd0ac8df8e6 {type SmartCardCryptogramGenerator_1c3e0a07144b as SmartCardCryptogramGenerator}
+
+pub using @b9a9bcd0ac8df8e6 {type SmartCardCryptogramGeneratorOperationStatus_17c0876cf755 as SmartCardCryptogramGeneratorOperationStatus}
+
+pub using @b9a9bcd0ac8df8e6 {type SmartCardCryptogramGetAllCryptogramMaterialCharacteristicsResult_546c5cd86109 as SmartCardCryptogramGetAllCryptogramMaterialCharacteristicsResult}
+
+pub using @b9a9bcd0ac8df8e6 {type SmartCardCryptogramGetAllCryptogramMaterialPackageCharacteristicsResult_add281e8ba49 as SmartCardCryptogramGetAllCryptogramMaterialPackageCharacteristicsResult}
+
+pub using @b9a9bcd0ac8df8e6 {type SmartCardCryptogramGetAllCryptogramStorageKeyCharacteristicsResult_03baaf6214da as SmartCardCryptogramGetAllCryptogramStorageKeyCharacteristicsResult}
+
+pub using @b9a9bcd0ac8df8e6 {type SmartCardCryptogramMaterialCharacteristics_acbb84f0910d as SmartCardCryptogramMaterialCharacteristics}
+
+pub using @b9a9bcd0ac8df8e6 {type SmartCardCryptogramMaterialPackageCharacteristics_15db3aa5e872 as SmartCardCryptogramMaterialPackageCharacteristics}
+
+pub using @b9a9bcd0ac8df8e6 {type SmartCardCryptogramMaterialPackageConfirmationResponseFormat_9cc3d112a77a as SmartCardCryptogramMaterialPackageConfirmationResponseFormat}
+
+pub using @b9a9bcd0ac8df8e6 {type SmartCardCryptogramMaterialPackageFormat_20842309563e as SmartCardCryptogramMaterialPackageFormat}
+
+pub using @b9a9bcd0ac8df8e6 {type SmartCardCryptogramMaterialPossessionProof_ab82e50130a1 as SmartCardCryptogramMaterialPossessionProof}
+
+pub using @b9a9bcd0ac8df8e6 {type SmartCardCryptogramMaterialProtectionMethod_acfb2649fe5f as SmartCardCryptogramMaterialProtectionMethod}
+
+pub using @b9a9bcd0ac8df8e6 {type SmartCardCryptogramMaterialType_e5b8b4eb28f7 as SmartCardCryptogramMaterialType}
+
+pub using @b9a9bcd0ac8df8e6 {type SmartCardCryptogramPlacementOptions_574e91f080bf as SmartCardCryptogramPlacementOptions}
+
+pub using @b9a9bcd0ac8df8e6 {type SmartCardCryptogramPlacementStep_a61c124a73fe as SmartCardCryptogramPlacementStep}
+
+pub using @b9a9bcd0ac8df8e6 {type SmartCardCryptogramStorageKeyAlgorithm_568aefab038b as SmartCardCryptogramStorageKeyAlgorithm}
+
+pub using @b9a9bcd0ac8df8e6 {type SmartCardCryptogramStorageKeyCapabilities_a86679b45db3 as SmartCardCryptogramStorageKeyCapabilities}
+
+pub using @b9a9bcd0ac8df8e6 {type SmartCardCryptogramStorageKeyCharacteristics_4a7eeaa00866 as SmartCardCryptogramStorageKeyCharacteristics}
+
+pub using @b9a9bcd0ac8df8e6 {type SmartCardCryptogramStorageKeyInfo_826ef0d163ef as SmartCardCryptogramStorageKeyInfo}
+
+pub using @b9a9bcd0ac8df8e6 {type SmartCardCryptographicKeyAttestationStatus_304b965581db as SmartCardCryptographicKeyAttestationStatus}
+
+pub using @b9a9bcd0ac8df8e6 {type SmartCardEmulationCategory_04f3be00655a as SmartCardEmulationCategory}
+
+pub using @b9a9bcd0ac8df8e6 {type SmartCardEmulationType_2b416eeb720e as SmartCardEmulationType}
+
+pub using @b9a9bcd0ac8df8e6 {type SmartCardEmulator_578d25066f67 as SmartCardEmulator}
+
+pub using @b9a9bcd0ac8df8e6 {type SmartCardEmulatorApduReceivedEventArgs_9afee5352173 as SmartCardEmulatorApduReceivedEventArgs}
+
+pub using @b9a9bcd0ac8df8e6 {type SmartCardEmulatorConnectionDeactivatedEventArgs_6f3667f47010 as SmartCardEmulatorConnectionDeactivatedEventArgs}
+
+pub using @b9a9bcd0ac8df8e6 {type SmartCardEmulatorConnectionDeactivatedReason_8ac5dd6c418a as SmartCardEmulatorConnectionDeactivatedReason}
+
+pub using @b9a9bcd0ac8df8e6 {type SmartCardEmulatorConnectionProperties_0ea3946d83d3 as SmartCardEmulatorConnectionProperties}
+
+pub using @b9a9bcd0ac8df8e6 {type SmartCardEmulatorConnectionSource_3caec8708158 as SmartCardEmulatorConnectionSource}
+
+pub using @b9a9bcd0ac8df8e6 {type SmartCardEmulatorContract_b2a94187fad2 as SmartCardEmulatorContract}
+
+pub using @b9a9bcd0ac8df8e6 {type SmartCardEmulatorEnablementPolicy_12b0cf266c4c as SmartCardEmulatorEnablementPolicy}
+
+pub using @b9a9bcd0ac8df8e6 {type SmartCardLaunchBehavior_88a766955998 as SmartCardLaunchBehavior}
+
+pub using @b9a9bcd0ac8df8e6 {type SmartCardPinCharacterPolicyOption_3e1356b76719 as SmartCardPinCharacterPolicyOption}
+
+pub using @b9a9bcd0ac8df8e6 {type SmartCardPinPolicy_5653eba605ec as SmartCardPinPolicy}
+
+pub using @b9a9bcd0ac8df8e6 {type SmartCardPinResetDeferral_5f0e51cd0a36 as SmartCardPinResetDeferral}
+
+pub using @b9a9bcd0ac8df8e6 {type SmartCardPinResetHandler_5cdcac0e7d29 as SmartCardPinResetHandler}
+
+pub using @b9a9bcd0ac8df8e6 {type SmartCardPinResetRequest_bfef4b9a4eaa as SmartCardPinResetRequest}
+
+pub using @b9a9bcd0ac8df8e6 {type SmartCardProvisioning_5bc09bee41f8 as SmartCardProvisioning}
+
+pub using @b9a9bcd0ac8df8e6 {type SmartCardReader_5b6cd92a5601 as SmartCardReader}
+
+pub using @b9a9bcd0ac8df8e6 {type SmartCardReaderKind_d22817a41100 as SmartCardReaderKind}
+
+pub using @b9a9bcd0ac8df8e6 {type SmartCardReaderStatus_5a86f6ee8886 as SmartCardReaderStatus}
+
+pub using @b9a9bcd0ac8df8e6 {type SmartCardStatus_4b0f30a0cd06 as SmartCardStatus}
+
+pub using @b9a9bcd0ac8df8e6 {type SmartCardTriggerDetails_fa0d144d8fba as SmartCardTriggerDetails}
+
+pub using @b9a9bcd0ac8df8e6 {type SmartCardTriggerType_33621507175e as SmartCardTriggerType}
+
+pub using @b9a9bcd0ac8df8e6 {type SmartCardUnlockPromptingBehavior_37919d26f04d as SmartCardUnlockPromptingBehavior}
+
+// Traits

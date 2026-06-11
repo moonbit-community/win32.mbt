@@ -1,0 +1,44 @@
+// Generated using `moon info`, DON'T EDIT IT
+package "moonbit-community/win32api/windows/management/workplace"
+
+import {
+  "moonbit-community/win32api/runtime/core",
+  "moonbit-community/win32api/scc/2589050378bc21ef",
+  "moonbitlang/core/ref",
+}
+
+// Values
+pub let allowed : Int
+
+pub let disallowed : Int
+
+pub fn get_is_microsoft_account_optional_raw(@core.RawAddress, Bytes) -> Int
+
+pub fn get_messaging_sync_policy(@core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn get_messaging_sync_policy_raw(@core.RawAddress, @ref.Ref[Int]) -> Int
+
+pub fn is_browser_allowed_raw(@core.RawAddress, Bytes) -> Int
+
+pub fn is_camera_allowed_raw(@core.RawAddress, Bytes) -> Int
+
+pub fn is_microsoft_account_allowed_raw(@core.RawAddress, Bytes) -> Int
+
+pub fn is_store_allowed_raw(@core.RawAddress, Bytes) -> Int
+
+pub let required : Int
+
+// Errors
+
+// Types and methods
+
+// Type aliases
+pub using @2589050378bc21ef {type MdmPolicy_ec384b061dd7 as MdmPolicy}
+
+pub using @2589050378bc21ef {type MessagingSyncPolicy_d84f9be41e41 as MessagingSyncPolicy}
+
+pub using @2589050378bc21ef {type WorkplaceSettings_8f375d378833 as WorkplaceSettings}
+
+pub using @2589050378bc21ef {type WorkplaceSettingsContract_d6bcf26493a5 as WorkplaceSettingsContract}
+
+// Traits

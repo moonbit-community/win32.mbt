@@ -1,0 +1,132 @@
+// Generated using `moon info`, DON'T EDIT IT
+package "moonbit-community/win32api/windows/devices/spi"
+
+import {
+  "moonbit-community/win32api/runtime/core",
+  "moonbit-community/win32api/scc/9ca29a2b5f2ee168",
+  "moonbitlang/core/ref",
+}
+
+// Values
+pub fn create_raw(@core.RawAddress, Int, @ref.Ref[UInt64]) -> Int
+
+pub let exclusive : Int
+
+pub fn from_id_async_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_bus_info_raw(@core.RawAddress, @core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_chip_select_line(@core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn get_chip_select_line_count(@core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn get_chip_select_line_count_raw(@core.RawAddress, @ref.Ref[Int]) -> Int
+
+pub fn get_chip_select_line_raw(@core.RawAddress, @ref.Ref[Int]) -> Int
+
+pub fn get_clock_frequency(@core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn get_clock_frequency_raw(@core.RawAddress, @ref.Ref[Int]) -> Int
+
+pub fn get_connection_settings_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_controllers_async_raw(@core.RawAddress, @core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_data_bit_length(@core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn get_data_bit_length_raw(@core.RawAddress, @ref.Ref[Int]) -> Int
+
+pub fn get_default_async_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_device_id_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_device_raw(@core.RawAddress, @core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_device_selector_from_friendly_name_raw(@core.RawAddress, @core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_device_selector_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_max_clock_frequency(@core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn get_max_clock_frequency_raw(@core.RawAddress, @ref.Ref[Int]) -> Int
+
+pub fn get_min_clock_frequency(@core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn get_min_clock_frequency_raw(@core.RawAddress, @ref.Ref[Int]) -> Int
+
+pub fn get_mode(@core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn get_mode_raw(@core.RawAddress, @ref.Ref[Int]) -> Int
+
+pub fn get_sharing_mode(@core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn get_sharing_mode_raw(@core.RawAddress, @ref.Ref[Int]) -> Int
+
+pub fn get_supported_data_bit_lengths_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub let mode0 : Int
+
+pub let mode1 : Int
+
+pub let mode2 : Int
+
+pub let mode3 : Int
+
+pub fn put_chip_select_line(@core.RawAddress, Int) -> Unit raise @core.WindowsError
+
+pub fn put_chip_select_line_raw(@core.RawAddress, Int) -> Int
+
+pub fn put_clock_frequency(@core.RawAddress, Int) -> Unit raise @core.WindowsError
+
+pub fn put_clock_frequency_raw(@core.RawAddress, Int) -> Int
+
+pub fn put_data_bit_length(@core.RawAddress, Int) -> Unit raise @core.WindowsError
+
+pub fn put_data_bit_length_raw(@core.RawAddress, Int) -> Int
+
+pub fn put_mode(@core.RawAddress, Int) -> Unit raise @core.WindowsError
+
+pub fn put_mode_raw(@core.RawAddress, Int) -> Int
+
+pub fn put_sharing_mode(@core.RawAddress, Int) -> Unit raise @core.WindowsError
+
+pub fn put_sharing_mode_raw(@core.RawAddress, Int) -> Int
+
+pub fn read(@core.RawAddress, UInt, Bytes) -> Unit raise @core.WindowsError
+
+pub fn read_raw(@core.RawAddress, UInt, Bytes) -> Int
+
+pub let shared : Int
+
+pub fn transfer_full_duplex(@core.RawAddress, UInt, Bytes, UInt, Bytes) -> Unit raise @core.WindowsError
+
+pub fn transfer_full_duplex_raw(@core.RawAddress, UInt, Bytes, UInt, Bytes) -> Int
+
+pub fn transfer_sequential(@core.RawAddress, UInt, Bytes, UInt, Bytes) -> Unit raise @core.WindowsError
+
+pub fn transfer_sequential_raw(@core.RawAddress, UInt, Bytes, UInt, Bytes) -> Int
+
+pub fn write(@core.RawAddress, UInt, Bytes) -> Unit raise @core.WindowsError
+
+pub fn write_raw(@core.RawAddress, UInt, Bytes) -> Int
+
+// Errors
+
+// Types and methods
+
+// Type aliases
+pub using @9ca29a2b5f2ee168 {type ISpiDeviceStatics_e6edb995b8af as ISpiDeviceStatics}
+
+pub using @9ca29a2b5f2ee168 {type SpiBusInfo_b34ed5562245 as SpiBusInfo}
+
+pub using @9ca29a2b5f2ee168 {type SpiConnectionSettings_43d04d991bf4 as SpiConnectionSettings}
+
+pub using @9ca29a2b5f2ee168 {type SpiController_7e84a9f87148 as SpiController}
+
+pub using @9ca29a2b5f2ee168 {type SpiDevice_c1a7ced8c234 as SpiDevice}
+
+pub using @9ca29a2b5f2ee168 {type SpiMode_3976f188d8a1 as SpiMode}
+
+pub using @9ca29a2b5f2ee168 {type SpiSharingMode_20b0133ab658 as SpiSharingMode}
+
+// Traits

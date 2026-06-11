@@ -1,0 +1,92 @@
+// Generated using `moon info`, DON'T EDIT IT
+package "moonbit-community/win32api/windows/devices/custom"
+
+import {
+  "moonbit-community/win32api/runtime/core",
+  "moonbit-community/win32api/scc/f06daa0ce2a9ba21",
+  "moonbitlang/core/ref",
+}
+
+// Values
+pub let any : Int
+
+pub let buffered : Int
+
+pub fn create_io_control_code_raw(@core.RawAddress, UInt, UInt, Int, Int, @ref.Ref[UInt64]) -> Int
+
+pub let direct_input : Int
+
+pub let direct_output : Int
+
+pub let exclusive : Int
+
+pub fn from_id_async_raw(@core.RawAddress, @core.RawAddress, Int, Int, @ref.Ref[UInt64]) -> Int
+
+pub fn get_access_mode(@core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn get_access_mode_raw(@core.RawAddress, @ref.Ref[Int]) -> Int
+
+pub fn get_buffering_method(@core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn get_buffering_method_raw(@core.RawAddress, @ref.Ref[Int]) -> Int
+
+pub fn get_control_code(@core.RawAddress) -> UInt raise @core.WindowsError
+
+pub fn get_control_code_raw(@core.RawAddress, @ref.Ref[UInt]) -> Int
+
+pub fn get_device_selector_raw(@core.RawAddress, Bytes, @ref.Ref[UInt64]) -> Int
+
+pub fn get_device_type_raw(@core.RawAddress, Bytes) -> Int
+
+pub fn get_function_raw(@core.RawAddress, Bytes) -> Int
+
+pub fn get_input_stream_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_output_stream_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_unknown_raw(@core.RawAddress, Bytes) -> Int
+
+pub let neither : Int
+
+pub let read_3ee0baad49 : Int
+
+pub let read_f35be16837 : Int
+
+pub let read_write_830ec3df71 : Int
+
+pub let read_write_9c433a1a1a : Int
+
+pub fn send_io_control_async_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub let shared : Int
+
+pub fn try_send_io_control_async_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub let write_06dcaa8661 : Int
+
+pub let write_d0650b9c49 : Int
+
+// Errors
+
+// Types and methods
+
+// Type aliases
+pub using @f06daa0ce2a9ba21 {type CustomDevice_96e867da3015 as CustomDevice}
+
+pub using @f06daa0ce2a9ba21 {type CustomDeviceContract_76e363813390 as CustomDeviceContract}
+
+pub using @f06daa0ce2a9ba21 {type DeviceAccessMode_bc08254add0b as DeviceAccessMode}
+
+pub using @f06daa0ce2a9ba21 {type DeviceSharingMode_62038986585a as DeviceSharingMode}
+
+pub using @f06daa0ce2a9ba21 {type IIOControlCode_0e0e4977db6d as IIOControlCode}
+
+pub using @f06daa0ce2a9ba21 {type IOControlAccessMode_9bec5593d805 as IOControlAccessMode}
+
+pub using @f06daa0ce2a9ba21 {type IOControlBufferingMethod_93b2cb6948e7 as IOControlBufferingMethod}
+
+pub using @f06daa0ce2a9ba21 {type IOControlCode_03c65236c1f3 as IOControlCode}
+
+pub using @f06daa0ce2a9ba21 {type KnownDeviceTypes_053852540bc7 as KnownDeviceTypes}
+
+// Traits

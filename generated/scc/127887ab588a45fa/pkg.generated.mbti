@@ -1,0 +1,54 @@
+// Generated using `moon info`, DON'T EDIT IT
+package "moonbit-community/win32api/scc/127887ab588a45fa"
+
+import {
+  "moonbit-community/win32api/runtime/com",
+  "moonbit-community/win32api/runtime/core",
+  "moonbitlang/core/debug",
+  "moonbitlang/core/ref",
+}
+
+// Values
+pub fn get_files_30f825b2a784_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn load_async_26ab3f7b01e3_raw(@core.RawAddress, @core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub let m3u_20aba8187f38 : Int
+
+pub let playlists_contract_b219c2e41bba_alignment : Int
+
+pub let playlists_contract_b219c2e41bba_size : Int
+
+pub fn save_as_async_67a191ee1f03_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, Int, Int, @ref.Ref[UInt64]) -> Int
+
+pub fn save_as_async_7be868c6c812_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, Int, @ref.Ref[UInt64]) -> Int
+
+pub fn save_async_7eca9f6fdae4_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub let windows_media_6acea7af5531 : Int
+
+pub let zune_a2473191a79b : Int
+
+// Errors
+
+// Types and methods
+pub type IPlaylistStatics_a41b5525c497
+
+pub type IPlaylist_898599606a56
+
+pub(all) struct PlaylistFormat_022f94db8bf9(Int) derive(Compare, Eq, @debug.Debug)
+pub fn PlaylistFormat_022f94db8bf9::from_int(Int) -> Self
+pub fn PlaylistFormat_022f94db8bf9::to_int(Self) -> Int
+
+pub type Playlist_8c12ba49c9ad
+pub fn Playlist_8c12ba49c9ad::new() -> @com.ComPtr[Self] raise @core.WindowsError
+
+pub(all) struct PlaylistsContract_b219c2e41bba {
+  raw_bytes : Bytes
+} derive(Eq, @debug.Debug)
+pub fn PlaylistsContract_b219c2e41bba::bytes(Self) -> Bytes
+pub fn PlaylistsContract_b219c2e41bba::from_bytes(Bytes) -> Self raise @core.WindowsError
+
+// Type aliases
+
+// Traits

@@ -1,0 +1,1484 @@
+// Generated using `moon info`, DON'T EDIT IT
+package "moonbit-community/win32api/windows/application_model/email"
+
+import {
+  "moonbit-community/win32api/runtime/core",
+  "moonbit-community/win32api/scc/b9a9bcd0ac8df8e6",
+  "moonbitlang/core/ref",
+}
+
+// Values
+pub let accept : Int
+
+pub fn accept_changes(@core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn accept_changes_raw(@core.RawAddress) -> Int
+
+pub fn accept_changes_through(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn accept_changes_through_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn add_mailbox_changed(@core.RawAddress, @core.RawAddress) -> Int64 raise @core.WindowsError
+
+pub fn add_mailbox_changed_raw(@core.RawAddress, @core.RawAddress, @ref.Ref[Int64]) -> Int
+
+pub fn add_sync_status_changed(@core.RawAddress, @core.RawAddress) -> Int64 raise @core.WindowsError
+
+pub fn add_sync_status_changed_raw(@core.RawAddress, @core.RawAddress, @ref.Ref[Int64]) -> Int
+
+pub let all_21f102ee98 : Int
+
+pub let all_7ecfbcdf6d : UInt
+
+pub let all_mailboxes_limited_read_write : Int
+
+pub let ambiguous_recipient : Int
+
+pub let any_79e4075093 : Int
+
+pub let any_ae14cde3e8 : Int
+
+pub let any_algorithm : Int
+
+pub let app_mailboxes_read_write : Int
+
+pub let ascending : Int
+
+pub let authentication_error : Int
+
+pub let cannot_resolve_distribution_list : Int
+
+pub let certificate_request_limit_reached : Int
+
+pub let chain_revoked : Int
+
+pub let change_message_flag_state : Int
+
+pub fn change_message_flag_state_async_raw(@core.RawAddress, @core.RawAddress, Int, @ref.Ref[UInt64]) -> Int
+
+pub let change_tracking_lost : Int
+
+pub let clear_signed : Int
+
+pub let cleared : Int
+
+pub fn complete(@core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn complete_raw(@core.RawAddress) -> Int
+
+pub let completed : Int
+
+pub let could_not_delete_everything_2514e3b553 : Int
+
+pub let could_not_delete_everything_95ede3f370 : Int
+
+pub fn create_8ab35bff3a_raw(@core.RawAddress, Int64, @core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn create_bb86163ba4_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn create_df2d60ca97_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn create_f885c1f61e_raw(@core.RawAddress, @core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn create_fe527a10f3_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn create_folder_async_raw(@core.RawAddress, @core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn create_mailbox_async_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn create_mailbox_in_account_async_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub let create_response_forward_message : Int
+
+pub fn create_response_message_async_raw(@core.RawAddress, @core.RawAddress, Int, @core.RawAddress, Int, @core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub let create_response_reply_all_message : Int
+
+pub let create_response_reply_message : Int
+
+pub fn create_with_name_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn create_with_text_and_fields_raw(@core.RawAddress, @core.RawAddress, UInt, @ref.Ref[UInt64]) -> Int
+
+pub fn create_with_text_raw(@core.RawAddress, @core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub let date : Int
+
+pub let decline : Int
+
+pub fn delete_async_246a23be9f_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn delete_async_3e78e85246_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn delete_message_async_raw(@core.RawAddress, @core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub let deleted_items : Int
+
+pub let des : Int
+
+pub let descending : Int
+
+pub fn download_attachment_async_raw(@core.RawAddress, @core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn download_message_async_raw(@core.RawAddress, @core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub let downloaded_569cb5ce89 : Int
+
+pub let downloaded_7d154606ee : Int
+
+pub let downloading_48760a7140 : Int
+
+pub let downloading_f1a902aa1a : Int
+
+pub let drafts : Int
+
+pub fn enable(@core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn enable_raw(@core.RawAddress) -> Int
+
+pub let encrypted : Int
+
+pub let expired : Int
+
+pub let failed_4fa81a49c8 : Int
+
+pub let failed_c969eab989 : Int
+
+pub fn find_child_folders_async_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn find_mailboxes_async_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn find_messages_async_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn find_messages_with_count_async_raw(@core.RawAddress, UInt, @ref.Ref[UInt64]) -> Int
+
+pub let flagged_39f6a1c652 : Int
+
+pub let flagged_bdf30071ec : Int
+
+pub let folder_created : Int
+
+pub let folder_deleted : Int
+
+pub let folder_modified : Int
+
+pub let forward : Int
+
+pub let full : Int
+
+pub fn get_address_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_allow_internet_images_raw(@core.RawAddress, Bytes) -> Int
+
+pub fn get_allow_new_time_proposal_raw(@core.RawAddress, Bytes) -> Int
+
+pub fn get_allow_smime_soft_certificates_raw(@core.RawAddress, Bytes) -> Int
+
+pub fn get_allowed_smime_encryption_algorithm_negotiation(@core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn get_allowed_smime_encryption_algorithm_negotiation_raw(@core.RawAddress, @ref.Ref[Int]) -> Int
+
+pub fn get_appointment_original_start_time_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_appointment_roaming_id_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_attachments_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_bcc_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_body_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_body_stream_raw(@core.RawAddress, Int, @ref.Ref[UInt64]) -> Int
+
+pub fn get_can_create_folder_raw(@core.RawAddress, Bytes) -> Int
+
+pub fn get_can_delete_folder_raw(@core.RawAddress, Bytes) -> Int
+
+pub fn get_can_edit_raw(@core.RawAddress, Bytes) -> Int
+
+pub fn get_can_empty_folder_raw(@core.RawAddress, Bytes) -> Int
+
+pub fn get_can_extract_data_raw(@core.RawAddress, Bytes) -> Int
+
+pub fn get_can_forward_meetings_raw(@core.RawAddress, Bytes) -> Int
+
+pub fn get_can_forward_raw(@core.RawAddress, Bytes) -> Int
+
+pub fn get_can_get_and_set_external_auto_replies_raw(@core.RawAddress, Bytes) -> Int
+
+pub fn get_can_get_and_set_internal_auto_replies_raw(@core.RawAddress, Bytes) -> Int
+
+pub fn get_can_modify_recipients_on_response_raw(@core.RawAddress, Bytes) -> Int
+
+pub fn get_can_move_folder_raw(@core.RawAddress, Bytes) -> Int
+
+pub fn get_can_print_data_raw(@core.RawAddress, Bytes) -> Int
+
+pub fn get_can_propose_new_time_for_meetings_raw(@core.RawAddress, Bytes) -> Int
+
+pub fn get_can_remove_irm_on_response_raw(@core.RawAddress, Bytes) -> Int
+
+pub fn get_can_reply_all_raw(@core.RawAddress, Bytes) -> Int
+
+pub fn get_can_reply_raw(@core.RawAddress, Bytes) -> Int
+
+pub fn get_can_resolve_recipients_raw(@core.RawAddress, Bytes) -> Int
+
+pub fn get_can_server_search_folders_raw(@core.RawAddress, Bytes) -> Int
+
+pub fn get_can_server_search_mailbox_raw(@core.RawAddress, Bytes) -> Int
+
+pub fn get_can_smart_send_raw(@core.RawAddress, Bytes) -> Int
+
+pub fn get_can_update_meeting_responses_raw(@core.RawAddress, Bytes) -> Int
+
+pub fn get_can_validate_certificates_raw(@core.RawAddress, Bytes) -> Int
+
+pub fn get_capabilities_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_cc_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_change_number_0a9a499a0e(@core.RawAddress) -> UInt64 raise @core.WindowsError
+
+pub fn get_change_number_0a9a499a0e_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_change_number_b702f0a2b6(@core.RawAddress) -> UInt64 raise @core.WindowsError
+
+pub fn get_change_number_b702f0a2b6_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_change_reader_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_change_tracker_05e2d31431_raw(@core.RawAddress, @core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_change_tracker_79423d4b70_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_change_type(@core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn get_change_type_raw(@core.RawAddress, @ref.Ref[Int]) -> Int
+
+pub fn get_content_id_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_content_location_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_conversation_async_5d0bcbab14_raw(@core.RawAddress, @core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_conversation_async_6cb15e52b5_raw(@core.RawAddress, @core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_conversation_id_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_conversation_reader_67572f30fc_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_conversation_reader_b68a6d1850_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_conversation_reader_bc15e9af0c_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_conversation_reader_with_options_278edeff77_raw(@core.RawAddress, @core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_conversation_reader_with_options_6b638580e0_raw(@core.RawAddress, @core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_conversation_reader_with_options_8337df0e15_raw(@core.RawAddress, @core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_conversations_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_data_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_deferral_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_description_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_display_name_1673cfe338_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_display_name_d82ec6b218_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_download_state_7c7bfe0dcc(@core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn get_download_state_7c7bfe0dcc_raw(@core.RawAddress, @ref.Ref[Int]) -> Int
+
+pub fn get_download_state_ea659322c1(@core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn get_download_state_ea659322c1_raw(@core.RawAddress, @ref.Ref[Int]) -> Int
+
+pub fn get_duration(@core.RawAddress) -> Int64 raise @core.WindowsError
+
+pub fn get_duration_raw(@core.RawAddress, @ref.Ref[Int64]) -> Int
+
+pub fn get_end_time_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_estimated_download_size_in_bytes_823fad0a94(@core.RawAddress) -> UInt64 raise @core.WindowsError
+
+pub fn get_estimated_download_size_in_bytes_823fad0a94_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_estimated_download_size_in_bytes_83b6620e4a(@core.RawAddress) -> UInt raise @core.WindowsError
+
+pub fn get_estimated_download_size_in_bytes_83b6620e4a_raw(@core.RawAddress, @ref.Ref[UInt]) -> Int
+
+pub fn get_expiration_date(@core.RawAddress) -> Int64 raise @core.WindowsError
+
+pub fn get_expiration_date_raw(@core.RawAddress, @ref.Ref[Int64]) -> Int
+
+pub fn get_fields(@core.RawAddress) -> UInt raise @core.WindowsError
+
+pub fn get_fields_raw(@core.RawAddress, @ref.Ref[UInt]) -> Int
+
+pub fn get_file_name_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_flag_state_c738a85073(@core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn get_flag_state_c738a85073_raw(@core.RawAddress, @ref.Ref[Int]) -> Int
+
+pub fn get_flag_state_ee00391013(@core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn get_flag_state_ee00391013_raw(@core.RawAddress, @ref.Ref[Int]) -> Int
+
+pub fn get_flagged(@core.RawAddress) -> UInt raise @core.WindowsError
+
+pub fn get_flagged_raw(@core.RawAddress, @ref.Ref[UInt]) -> Int
+
+pub fn get_folder_async_75f99d646b_raw(@core.RawAddress, @core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_folder_async_8f6fb9fbbd_raw(@core.RawAddress, @core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_folder_d3bbf7a590_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_folder_efba24ad71_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_folder_id_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_folder_ids_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_for_user_raw(@core.RawAddress, @core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_has_attachment_raw(@core.RawAddress, Bytes) -> Int
+
+pub fn get_has_partial_bodies_raw(@core.RawAddress, Bytes) -> Int
+
+pub fn get_id_49fc8ab91d_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_id_5ce3a8819e_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_id_7ff152fa46_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_id_b50306382f_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_id_e803beea6b_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_id_f4d153960f_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_importance_68b2b1a451(@core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn get_importance_68b2b1a451_raw(@core.RawAddress, @ref.Ref[Int]) -> Int
+
+pub fn get_importance_87f695a26d(@core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn get_importance_87f695a26d_raw(@core.RawAddress, @ref.Ref[Int]) -> Int
+
+pub fn get_important(@core.RawAddress) -> UInt raise @core.WindowsError
+
+pub fn get_important_raw(@core.RawAddress, @ref.Ref[UInt]) -> Int
+
+pub fn get_in_response_to_message_id_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_internal_reply_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_irm_info_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_is_all_day_raw(@core.RawAddress, Bytes) -> Int
+
+pub fn get_is_data_encrypted_under_lock_raw(@core.RawAddress, Bytes) -> Int
+
+pub fn get_is_draft_message_raw(@core.RawAddress, Bytes) -> Int
+
+pub fn get_is_enabled_65ae2dbac8_raw(@core.RawAddress, Bytes) -> Int
+
+pub fn get_is_enabled_72559797be_raw(@core.RawAddress, Bytes) -> Int
+
+pub fn get_is_from_base_message_raw(@core.RawAddress, Bytes) -> Int
+
+pub fn get_is_inline_raw(@core.RawAddress, Bytes) -> Int
+
+pub fn get_is_irm_originator_raw(@core.RawAddress, Bytes) -> Int
+
+pub fn get_is_owned_by_current_app_raw(@core.RawAddress, Bytes) -> Int
+
+pub fn get_is_programatic_access_allowed_raw(@core.RawAddress, Bytes) -> Int
+
+pub fn get_is_read_raw(@core.RawAddress, Bytes) -> Int
+
+pub fn get_is_reported_out_of_date_by_server_raw(@core.RawAddress, Bytes) -> Int
+
+pub fn get_is_response_requested_raw(@core.RawAddress, Bytes) -> Int
+
+pub fn get_is_seen_raw(@core.RawAddress, Bytes) -> Int
+
+pub fn get_is_server_search_message_raw(@core.RawAddress, Bytes) -> Int
+
+pub fn get_is_smart_sendable_raw(@core.RawAddress, Bytes) -> Int
+
+pub fn get_is_sync_enabled_raw(@core.RawAddress, Bytes) -> Int
+
+pub fn get_is_tracking_raw(@core.RawAddress, Bytes) -> Int
+
+pub fn get_kind_75e35c1efe(@core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn get_kind_75e35c1efe_raw(@core.RawAddress, @ref.Ref[Int]) -> Int
+
+pub fn get_kind_b4cc33a877(@core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn get_kind_b4cc33a877_raw(@core.RawAddress, @ref.Ref[Int]) -> Int
+
+pub fn get_kind_d2a7513745(@core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn get_kind_d2a7513745_raw(@core.RawAddress, @ref.Ref[Int]) -> Int
+
+pub fn get_known_external_reply_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_last_attempted_sync_time(@core.RawAddress) -> Int64 raise @core.WindowsError
+
+pub fn get_last_attempted_sync_time_raw(@core.RawAddress, @ref.Ref[Int64]) -> Int
+
+pub fn get_last_email_response_kind(@core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn get_last_email_response_kind_raw(@core.RawAddress, @ref.Ref[Int]) -> Int
+
+pub fn get_last_response_kind(@core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn get_last_response_kind_raw(@core.RawAddress, @ref.Ref[Int]) -> Int
+
+pub fn get_last_successful_sync_time_00e4397ee1(@core.RawAddress) -> Int64 raise @core.WindowsError
+
+pub fn get_last_successful_sync_time_00e4397ee1_raw(@core.RawAddress, @ref.Ref[Int64]) -> Int
+
+pub fn get_last_successful_sync_time_abaf67b73a(@core.RawAddress) -> Int64 raise @core.WindowsError
+
+pub fn get_last_successful_sync_time_abaf67b73a_raw(@core.RawAddress, @ref.Ref[Int64]) -> Int
+
+pub fn get_latest_sender_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_linked_mailbox_id_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_location_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_mail_address_aliases_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_mail_address_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_mailbox_actions_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_mailbox_async_raw(@core.RawAddress, @core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_mailbox_id_1f12d6357d_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_mailbox_id_4c659ee5a5_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_mailbox_id_e14bcc232b_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_meeting_info_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_message_async_78e056936d_raw(@core.RawAddress, @core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_message_async_c7cc98752c_raw(@core.RawAddress, @core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_message_async_fdf444e836_raw(@core.RawAddress, @core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_message_class_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_message_count(@core.RawAddress) -> UInt raise @core.WindowsError
+
+pub fn get_message_count_raw(@core.RawAddress, @ref.Ref[UInt]) -> Int
+
+pub fn get_message_counts_async_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_message_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_message_reader_2852e2d451_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_message_reader_ce48713ee6_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_message_reader_d1fb9157a4_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_message_reader_with_options_4a01d3ebd7_raw(@core.RawAddress, @core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_message_reader_with_options_b3e69dd842_raw(@core.RawAddress, @core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_message_reader_with_options_ddfb058f3f_raw(@core.RawAddress, @core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_messages_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_mime_type_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_most_recent_message_id_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_most_recent_message_time(@core.RawAddress) -> Int64 raise @core.WindowsError
+
+pub fn get_most_recent_message_time_raw(@core.RawAddress, @ref.Ref[Int64]) -> Int
+
+pub fn get_must_encrypt_smime_messages_raw(@core.RawAddress, Bytes) -> Int
+
+pub fn get_must_sign_smime_messages_raw(@core.RawAddress, Bytes) -> Int
+
+pub fn get_name_429770f2c3_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_name_eef36e4d78_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_network_account_id_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_network_id_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_normalized_subject_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_original_code_page(@core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn get_original_code_page_raw(@core.RawAddress, @ref.Ref[Int]) -> Int
+
+pub fn get_other_app_read_access(@core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn get_other_app_read_access_raw(@core.RawAddress, @ref.Ref[Int]) -> Int
+
+pub fn get_other_app_write_access(@core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn get_other_app_write_access_raw(@core.RawAddress, @ref.Ref[Int]) -> Int
+
+pub fn get_parent_folder_id_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_policies_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_preview_0f9b2e300e_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_preview_fec03906e7_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_proposed_duration_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_proposed_start_time_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_public_keys_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_recurrence_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_recurrence_start_time_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_remote_change_number(@core.RawAddress) -> UInt64 raise @core.WindowsError
+
+pub fn get_remote_change_number_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_remote_id_0ae6473576_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_remote_id_166b1a67d8_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_reply_to_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_required_smime_encryption_algorithm_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_required_smime_signing_algorithm_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_response_kind(@core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn get_response_kind_raw(@core.RawAddress, @ref.Ref[Int]) -> Int
+
+pub fn get_response_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_search_scope(@core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn get_search_scope_raw(@core.RawAddress, @ref.Ref[Int]) -> Int
+
+pub fn get_sender_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_sent_representing_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_sent_time_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_smime_data_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_smime_kind(@core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn get_smime_kind_raw(@core.RawAddress, @ref.Ref[Int]) -> Int
+
+pub fn get_sort_direction(@core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn get_sort_direction_raw(@core.RawAddress, @ref.Ref[Int]) -> Int
+
+pub fn get_sort_property(@core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn get_sort_property_raw(@core.RawAddress, @ref.Ref[Int]) -> Int
+
+pub fn get_source_display_name_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_special_folder_async_raw(@core.RawAddress, Int, @ref.Ref[UInt64]) -> Int
+
+pub fn get_start_time_3648988fd6(@core.RawAddress) -> Int64 raise @core.WindowsError
+
+pub fn get_start_time_3648988fd6_raw(@core.RawAddress, @ref.Ref[Int64]) -> Int
+
+pub fn get_start_time_d75c6a5a49_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_status_33bb48bdf2(@core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn get_status_33bb48bdf2_raw(@core.RawAddress, @ref.Ref[Int]) -> Int
+
+pub fn get_status_3acfc01375(@core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn get_status_3acfc01375_raw(@core.RawAddress, @ref.Ref[Int]) -> Int
+
+pub fn get_status_3fefed0a9d(@core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn get_status_3fefed0a9d_raw(@core.RawAddress, @ref.Ref[Int]) -> Int
+
+pub fn get_status_b13dbff7b1(@core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn get_status_b13dbff7b1_raw(@core.RawAddress, @ref.Ref[Int]) -> Int
+
+pub fn get_status_bfca5ea416(@core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn get_status_bfca5ea416_raw(@core.RawAddress, @ref.Ref[Int]) -> Int
+
+pub fn get_subject_8e3e269161_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_subject_ad55509b61_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_sync_manager_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_template_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_text_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_text_search_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_to_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_total(@core.RawAddress) -> UInt raise @core.WindowsError
+
+pub fn get_total_raw(@core.RawAddress, @ref.Ref[UInt]) -> Int
+
+pub fn get_unknown_external_reply_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_unread(@core.RawAddress) -> UInt raise @core.WindowsError
+
+pub fn get_unread_message_count(@core.RawAddress) -> UInt raise @core.WindowsError
+
+pub fn get_unread_message_count_raw(@core.RawAddress, @ref.Ref[UInt]) -> Int
+
+pub fn get_unread_raw(@core.RawAddress, @ref.Ref[UInt]) -> Int
+
+pub fn get_user_data_account_id_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_user_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub let high : Int
+
+pub let html_2d851464ef : Int
+
+pub let html_48ae3e3f4f : Int
+
+pub let idle : Int
+
+pub let important : Int
+
+pub let inbox : Int
+
+pub let invalid_certificate : Int
+
+pub let invalid_usage : Int
+
+pub let limited : Int
+
+pub let local_ : Int
+
+pub let low : Int
+
+pub let manual_account_removal_required : Int
+
+pub fn mark_folder_as_seen_async_raw(@core.RawAddress, @core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub let mark_folder_for_sync_enabled : Int
+
+pub fn mark_folder_sync_enabled_async_raw(@core.RawAddress, @core.RawAddress, UInt, @ref.Ref[UInt64]) -> Int
+
+pub let mark_message_as_seen : Int
+
+pub fn mark_message_as_seen_async_raw(@core.RawAddress, @core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub let mark_message_read : Int
+
+pub fn mark_message_read_async_raw(@core.RawAddress, @core.RawAddress, UInt, @ref.Ref[UInt64]) -> Int
+
+pub let md5 : Int
+
+pub let message_created : Int
+
+pub let message_deleted : Int
+
+pub let message_modified : Int
+
+pub let move_folder : Int
+
+pub let move_message : Int
+
+pub let name_collision : Int
+
+pub let network_error_13b7af6836 : Int
+
+pub let network_error_a834ade111 : Int
+
+pub let network_error_db43f322dd : Int
+
+pub let no_certificate : Int
+
+pub let no_match : Int
+
+pub let none_0ce6183350 : Int
+
+pub let none_209e0886a0 : Int
+
+pub let none_2f78e81fd3 : Int
+
+pub let none_5803b26d51 : Int
+
+pub let none_6ccdae9e83 : UInt
+
+pub let none_f820bcd1ef : Int
+
+pub let none_f87ae2356d : Int
+
+pub let normal : Int
+
+pub let not_downloaded : Int
+
+pub let opaque_signed : Int
+
+pub let outbox : Int
+
+pub let partially_downloaded : Int
+
+pub let permissions_error_4ddd598425 : Int
+
+pub let permissions_error_ce3af56e60 : Int
+
+pub let permissions_error_f01cbc5681 : Int
+
+pub let plain_text_190f39b103 : Int
+
+pub let plain_text_af2ab33bc2 : Int
+
+pub let policy_error : Int
+
+pub let preview : UInt
+
+pub fn put_address(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn put_address_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn put_allow_internet_images(@core.RawAddress, UInt) -> Unit raise @core.WindowsError
+
+pub fn put_allow_internet_images_raw(@core.RawAddress, UInt) -> Int
+
+pub fn put_allow_new_time_proposal(@core.RawAddress, UInt) -> Unit raise @core.WindowsError
+
+pub fn put_allow_new_time_proposal_raw(@core.RawAddress, UInt) -> Int
+
+pub fn put_allow_smime_soft_certificates(@core.RawAddress, UInt) -> Unit raise @core.WindowsError
+
+pub fn put_allow_smime_soft_certificates_raw(@core.RawAddress, UInt) -> Int
+
+pub fn put_allowed_smime_encryption_algorithm_negotiation(@core.RawAddress, Int) -> Unit raise @core.WindowsError
+
+pub fn put_allowed_smime_encryption_algorithm_negotiation_raw(@core.RawAddress, Int) -> Int
+
+pub fn put_appointment_original_start_time(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn put_appointment_original_start_time_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn put_appointment_roaming_id(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn put_appointment_roaming_id_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn put_body(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn put_body_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn put_can_create_folder(@core.RawAddress, UInt) -> Unit raise @core.WindowsError
+
+pub fn put_can_create_folder_raw(@core.RawAddress, UInt) -> Int
+
+pub fn put_can_delete_folder(@core.RawAddress, UInt) -> Unit raise @core.WindowsError
+
+pub fn put_can_delete_folder_raw(@core.RawAddress, UInt) -> Int
+
+pub fn put_can_edit(@core.RawAddress, UInt) -> Unit raise @core.WindowsError
+
+pub fn put_can_edit_raw(@core.RawAddress, UInt) -> Int
+
+pub fn put_can_empty_folder(@core.RawAddress, UInt) -> Unit raise @core.WindowsError
+
+pub fn put_can_empty_folder_raw(@core.RawAddress, UInt) -> Int
+
+pub fn put_can_extract_data(@core.RawAddress, UInt) -> Unit raise @core.WindowsError
+
+pub fn put_can_extract_data_raw(@core.RawAddress, UInt) -> Int
+
+pub fn put_can_forward(@core.RawAddress, UInt) -> Unit raise @core.WindowsError
+
+pub fn put_can_forward_meetings(@core.RawAddress, UInt) -> Unit raise @core.WindowsError
+
+pub fn put_can_forward_meetings_raw(@core.RawAddress, UInt) -> Int
+
+pub fn put_can_forward_raw(@core.RawAddress, UInt) -> Int
+
+pub fn put_can_get_and_set_external_auto_replies(@core.RawAddress, UInt) -> Unit raise @core.WindowsError
+
+pub fn put_can_get_and_set_external_auto_replies_raw(@core.RawAddress, UInt) -> Int
+
+pub fn put_can_get_and_set_internal_auto_replies(@core.RawAddress, UInt) -> Unit raise @core.WindowsError
+
+pub fn put_can_get_and_set_internal_auto_replies_raw(@core.RawAddress, UInt) -> Int
+
+pub fn put_can_modify_recipients_on_response(@core.RawAddress, UInt) -> Unit raise @core.WindowsError
+
+pub fn put_can_modify_recipients_on_response_raw(@core.RawAddress, UInt) -> Int
+
+pub fn put_can_move_folder(@core.RawAddress, UInt) -> Unit raise @core.WindowsError
+
+pub fn put_can_move_folder_raw(@core.RawAddress, UInt) -> Int
+
+pub fn put_can_print_data(@core.RawAddress, UInt) -> Unit raise @core.WindowsError
+
+pub fn put_can_print_data_raw(@core.RawAddress, UInt) -> Int
+
+pub fn put_can_propose_new_time_for_meetings(@core.RawAddress, UInt) -> Unit raise @core.WindowsError
+
+pub fn put_can_propose_new_time_for_meetings_raw(@core.RawAddress, UInt) -> Int
+
+pub fn put_can_remove_irm_on_response(@core.RawAddress, UInt) -> Unit raise @core.WindowsError
+
+pub fn put_can_remove_irm_on_response_raw(@core.RawAddress, UInt) -> Int
+
+pub fn put_can_reply(@core.RawAddress, UInt) -> Unit raise @core.WindowsError
+
+pub fn put_can_reply_all(@core.RawAddress, UInt) -> Unit raise @core.WindowsError
+
+pub fn put_can_reply_all_raw(@core.RawAddress, UInt) -> Int
+
+pub fn put_can_reply_raw(@core.RawAddress, UInt) -> Int
+
+pub fn put_can_resolve_recipients(@core.RawAddress, UInt) -> Unit raise @core.WindowsError
+
+pub fn put_can_resolve_recipients_raw(@core.RawAddress, UInt) -> Int
+
+pub fn put_can_server_search_folders(@core.RawAddress, UInt) -> Unit raise @core.WindowsError
+
+pub fn put_can_server_search_folders_raw(@core.RawAddress, UInt) -> Int
+
+pub fn put_can_server_search_mailbox(@core.RawAddress, UInt) -> Unit raise @core.WindowsError
+
+pub fn put_can_server_search_mailbox_raw(@core.RawAddress, UInt) -> Int
+
+pub fn put_can_smart_send(@core.RawAddress, UInt) -> Unit raise @core.WindowsError
+
+pub fn put_can_smart_send_raw(@core.RawAddress, UInt) -> Int
+
+pub fn put_can_update_meeting_responses(@core.RawAddress, UInt) -> Unit raise @core.WindowsError
+
+pub fn put_can_update_meeting_responses_raw(@core.RawAddress, UInt) -> Int
+
+pub fn put_can_validate_certificates(@core.RawAddress, UInt) -> Unit raise @core.WindowsError
+
+pub fn put_can_validate_certificates_raw(@core.RawAddress, UInt) -> Int
+
+pub fn put_content_id(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn put_content_id_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn put_content_location(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn put_content_location_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn put_data(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn put_data_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn put_description(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn put_description_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn put_display_name_80a3a893a8(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn put_display_name_80a3a893a8_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn put_display_name_90fb0bce82(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn put_display_name_90fb0bce82_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn put_download_state_7b0d3f78e0(@core.RawAddress, Int) -> Unit raise @core.WindowsError
+
+pub fn put_download_state_7b0d3f78e0_raw(@core.RawAddress, Int) -> Int
+
+pub fn put_download_state_f79c54c246(@core.RawAddress, Int) -> Unit raise @core.WindowsError
+
+pub fn put_download_state_f79c54c246_raw(@core.RawAddress, Int) -> Int
+
+pub fn put_duration(@core.RawAddress, Int64) -> Unit raise @core.WindowsError
+
+pub fn put_duration_raw(@core.RawAddress, Int64) -> Int
+
+pub fn put_end_time(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn put_end_time_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn put_estimated_download_size_in_bytes_3a727c6ebe(@core.RawAddress, UInt) -> Unit raise @core.WindowsError
+
+pub fn put_estimated_download_size_in_bytes_3a727c6ebe_raw(@core.RawAddress, UInt) -> Int
+
+pub fn put_estimated_download_size_in_bytes_e8aecbd369(@core.RawAddress, UInt64) -> Unit raise @core.WindowsError
+
+pub fn put_estimated_download_size_in_bytes_e8aecbd369_raw(@core.RawAddress, UInt64) -> Int
+
+pub fn put_expiration_date(@core.RawAddress, Int64) -> Unit raise @core.WindowsError
+
+pub fn put_expiration_date_raw(@core.RawAddress, Int64) -> Int
+
+pub fn put_fields(@core.RawAddress, UInt) -> Unit raise @core.WindowsError
+
+pub fn put_fields_raw(@core.RawAddress, UInt) -> Int
+
+pub fn put_file_name(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn put_file_name_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn put_flag_state(@core.RawAddress, Int) -> Unit raise @core.WindowsError
+
+pub fn put_flag_state_raw(@core.RawAddress, Int) -> Int
+
+pub fn put_id(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn put_id_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn put_importance(@core.RawAddress, Int) -> Unit raise @core.WindowsError
+
+pub fn put_importance_raw(@core.RawAddress, Int) -> Int
+
+pub fn put_irm_info(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn put_irm_info_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn put_is_all_day(@core.RawAddress, UInt) -> Unit raise @core.WindowsError
+
+pub fn put_is_all_day_raw(@core.RawAddress, UInt) -> Int
+
+pub fn put_is_enabled_1b20435088(@core.RawAddress, UInt) -> Unit raise @core.WindowsError
+
+pub fn put_is_enabled_1b20435088_raw(@core.RawAddress, UInt) -> Int
+
+pub fn put_is_enabled_ab4b1041f8(@core.RawAddress, UInt) -> Unit raise @core.WindowsError
+
+pub fn put_is_enabled_ab4b1041f8_raw(@core.RawAddress, UInt) -> Int
+
+pub fn put_is_inline(@core.RawAddress, UInt) -> Unit raise @core.WindowsError
+
+pub fn put_is_inline_raw(@core.RawAddress, UInt) -> Int
+
+pub fn put_is_irm_originator(@core.RawAddress, UInt) -> Unit raise @core.WindowsError
+
+pub fn put_is_irm_originator_raw(@core.RawAddress, UInt) -> Int
+
+pub fn put_is_programatic_access_allowed(@core.RawAddress, UInt) -> Unit raise @core.WindowsError
+
+pub fn put_is_programatic_access_allowed_raw(@core.RawAddress, UInt) -> Int
+
+pub fn put_is_read(@core.RawAddress, UInt) -> Unit raise @core.WindowsError
+
+pub fn put_is_read_raw(@core.RawAddress, UInt) -> Int
+
+pub fn put_is_response_requested(@core.RawAddress, UInt) -> Unit raise @core.WindowsError
+
+pub fn put_is_response_requested_raw(@core.RawAddress, UInt) -> Int
+
+pub fn put_is_seen(@core.RawAddress, UInt) -> Unit raise @core.WindowsError
+
+pub fn put_is_seen_raw(@core.RawAddress, UInt) -> Int
+
+pub fn put_is_sync_enabled(@core.RawAddress, UInt) -> Unit raise @core.WindowsError
+
+pub fn put_is_sync_enabled_raw(@core.RawAddress, UInt) -> Int
+
+pub fn put_kind(@core.RawAddress, Int) -> Unit raise @core.WindowsError
+
+pub fn put_kind_raw(@core.RawAddress, Int) -> Int
+
+pub fn put_last_attempted_sync_time(@core.RawAddress, Int64) -> Unit raise @core.WindowsError
+
+pub fn put_last_attempted_sync_time_raw(@core.RawAddress, Int64) -> Int
+
+pub fn put_last_response_kind(@core.RawAddress, Int) -> Unit raise @core.WindowsError
+
+pub fn put_last_response_kind_raw(@core.RawAddress, Int) -> Int
+
+pub fn put_last_successful_sync_time_6434dac23f(@core.RawAddress, Int64) -> Unit raise @core.WindowsError
+
+pub fn put_last_successful_sync_time_6434dac23f_raw(@core.RawAddress, Int64) -> Int
+
+pub fn put_last_successful_sync_time_b915db0c3a(@core.RawAddress, Int64) -> Unit raise @core.WindowsError
+
+pub fn put_last_successful_sync_time_b915db0c3a_raw(@core.RawAddress, Int64) -> Int
+
+pub fn put_location(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn put_location_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn put_mail_address(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn put_mail_address_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn put_meeting_info(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn put_meeting_info_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn put_message_class(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn put_message_class_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn put_mime_type(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn put_mime_type_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn put_must_encrypt_smime_messages(@core.RawAddress, UInt) -> Unit raise @core.WindowsError
+
+pub fn put_must_encrypt_smime_messages_raw(@core.RawAddress, UInt) -> Int
+
+pub fn put_must_sign_smime_messages(@core.RawAddress, UInt) -> Unit raise @core.WindowsError
+
+pub fn put_must_sign_smime_messages_raw(@core.RawAddress, UInt) -> Int
+
+pub fn put_name_5d3a165fca(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn put_name_5d3a165fca_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn put_name_9ae974c66e(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn put_name_9ae974c66e_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn put_original_code_page(@core.RawAddress, Int) -> Unit raise @core.WindowsError
+
+pub fn put_original_code_page_raw(@core.RawAddress, Int) -> Int
+
+pub fn put_other_app_read_access(@core.RawAddress, Int) -> Unit raise @core.WindowsError
+
+pub fn put_other_app_read_access_raw(@core.RawAddress, Int) -> Int
+
+pub fn put_other_app_write_access(@core.RawAddress, Int) -> Unit raise @core.WindowsError
+
+pub fn put_other_app_write_access_raw(@core.RawAddress, Int) -> Int
+
+pub fn put_preview(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn put_preview_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn put_proposed_duration(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn put_proposed_duration_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn put_proposed_start_time(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn put_proposed_start_time_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn put_recurrence(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn put_recurrence_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn put_recurrence_start_time(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn put_recurrence_start_time_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn put_remote_change_number(@core.RawAddress, UInt64) -> Unit raise @core.WindowsError
+
+pub fn put_remote_change_number_raw(@core.RawAddress, UInt64) -> Int
+
+pub fn put_remote_id_27e22c009e(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn put_remote_id_27e22c009e_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn put_remote_id_3ba1366a52(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn put_remote_id_3ba1366a52_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn put_required_smime_encryption_algorithm(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn put_required_smime_encryption_algorithm_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn put_required_smime_signing_algorithm(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn put_required_smime_signing_algorithm_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn put_response(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn put_response_kind(@core.RawAddress, Int) -> Unit raise @core.WindowsError
+
+pub fn put_response_kind_raw(@core.RawAddress, Int) -> Int
+
+pub fn put_response_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn put_search_scope(@core.RawAddress, Int) -> Unit raise @core.WindowsError
+
+pub fn put_search_scope_raw(@core.RawAddress, Int) -> Int
+
+pub fn put_sender(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn put_sender_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn put_sent_representing(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn put_sent_representing_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn put_sent_time(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn put_sent_time_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn put_smime_data(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn put_smime_data_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn put_smime_kind(@core.RawAddress, Int) -> Unit raise @core.WindowsError
+
+pub fn put_smime_kind_raw(@core.RawAddress, Int) -> Int
+
+pub fn put_sort_direction(@core.RawAddress, Int) -> Unit raise @core.WindowsError
+
+pub fn put_sort_direction_raw(@core.RawAddress, Int) -> Int
+
+pub fn put_sort_property(@core.RawAddress, Int) -> Unit raise @core.WindowsError
+
+pub fn put_sort_property_raw(@core.RawAddress, Int) -> Int
+
+pub fn put_start_time_8fe97eab7b(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn put_start_time_8fe97eab7b_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn put_start_time_d03963ed20(@core.RawAddress, Int64) -> Unit raise @core.WindowsError
+
+pub fn put_start_time_d03963ed20_raw(@core.RawAddress, Int64) -> Int
+
+pub fn put_status_695cda5e12(@core.RawAddress, Int) -> Unit raise @core.WindowsError
+
+pub fn put_status_695cda5e12_raw(@core.RawAddress, Int) -> Int
+
+pub fn put_status_ab87a16844(@core.RawAddress, Int) -> Unit raise @core.WindowsError
+
+pub fn put_status_ab87a16844_raw(@core.RawAddress, Int) -> Int
+
+pub fn put_subject(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn put_subject_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn put_template(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn put_template_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn put_text(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn put_text_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub let rc2128_bit : Int
+
+pub let rc240_bit : Int
+
+pub let rc264_bit : Int
+
+pub let read : Int
+
+pub fn read_batch_async_62c478d85f_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn read_batch_async_eab9dd09c7_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn read_batch_async_fea88fe3dd_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub let recipient_not_found : Int
+
+pub let recipients : UInt
+
+pub fn register_sync_manager_async_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn remove_mailbox_changed(@core.RawAddress, Int64) -> Unit raise @core.WindowsError
+
+pub fn remove_mailbox_changed_raw(@core.RawAddress, Int64) -> Int
+
+pub fn remove_sync_status_changed(@core.RawAddress, Int64) -> Unit raise @core.WindowsError
+
+pub fn remove_sync_status_changed_raw(@core.RawAddress, Int64) -> Int
+
+pub let reply : Int
+
+pub let reply_all : Int
+
+pub fn request_store_async_4444a6fe48_raw(@core.RawAddress, Int, @ref.Ref[UInt64]) -> Int
+
+pub fn request_store_async_f7561f1fe3_raw(@core.RawAddress, Int, @ref.Ref[UInt64]) -> Int
+
+pub fn reset(@core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn reset_raw(@core.RawAddress) -> Int
+
+pub fn resolve_recipients_async_raw(@core.RawAddress, @core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub let revocation_server_failure : Int
+
+pub let revoked : Int
+
+pub let root : Int
+
+pub fn save_async_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub let save_draft : Int
+
+pub fn save_draft_async_raw(@core.RawAddress, @core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn save_message_async_raw(@core.RawAddress, @core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub let send_message : Int
+
+pub fn send_message_async_raw(@core.RawAddress, @core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub let sender : UInt
+
+pub let sent : Int
+
+pub let server : Int
+
+pub let server_error_26963bad5b : Int
+
+pub let server_error_464ec1d3c2 : Int
+
+pub let server_error_9d30950029 : Int
+
+pub let server_error_c9601974af : Int
+
+pub let server_error_ddeb0175aa : Int
+
+pub let server_rejected : Int
+
+pub let server_search_sync_manager_error : Int
+
+pub let server_search_unknown_error : Int
+
+pub fn set_body_stream(@core.RawAddress, Int, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn set_body_stream_raw(@core.RawAddress, Int, @core.RawAddress) -> Int
+
+pub fn set_public_keys(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn set_public_keys_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub let sha1 : Int
+
+pub fn show_compose_new_email_async_6e269d62f6_raw(@core.RawAddress, @core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn show_compose_new_email_async_ad5d62e304_raw(@core.RawAddress, @core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn smart_send_message_async_raw(@core.RawAddress, @core.RawAddress, UInt, @ref.Ref[UInt64]) -> Int
+
+pub let strong_algorithm : Int
+
+pub let subject : UInt
+
+pub let success_27e4595de0 : Int
+
+pub let success_46f252821a : Int
+
+pub let success_4877c809e0 : Int
+
+pub let success_48edd7a932 : Int
+
+pub let success_944365272e : Int
+
+pub let success_fe039d0d77 : Int
+
+pub fn sync_async_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub let syncing : Int
+
+pub let system_only : Int
+
+pub let tentative : Int
+
+pub let triple_des : Int
+
+pub fn try_create_folder_async_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn try_delete_folder_async_raw(@core.RawAddress, @core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn try_empty_folder_async_raw(@core.RawAddress, @core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn try_forward_meeting_async_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, Int, @core.RawAddress, @core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn try_get_auto_reply_settings_async_raw(@core.RawAddress, Int, @ref.Ref[UInt64]) -> Int
+
+pub fn try_move_async_raw(@core.RawAddress, @core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn try_move_folder_async_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn try_move_folder_with_new_name_async_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn try_move_message_async_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn try_move_with_new_name_async_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn try_propose_new_time_for_meeting_async_raw(@core.RawAddress, @core.RawAddress, Int64, Int64, @core.RawAddress, @core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn try_save_async_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn try_set_auto_reply_settings_async_raw(@core.RawAddress, @core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn try_update_meeting_response_async_raw(@core.RawAddress, @core.RawAddress, Int, @core.RawAddress, @core.RawAddress, UInt, @ref.Ref[UInt64]) -> Int
+
+pub let unflagged : Int
+
+pub let unknown_error : Int
+
+pub let unknown_failure_52b4819a4a : Int
+
+pub let unknown_failure_aa42432a8f : Int
+
+pub let unknown_failure_c3309806e5 : Int
+
+pub let unknown_failure_e7d011b1bc : Int
+
+pub let unknown_failure_fff78e4b27 : Int
+
+pub let unread : Int
+
+pub let unseen : Int
+
+pub let untrusted : Int
+
+pub let up_to_date : Int
+
+pub fn validate_certificates_async_raw(@core.RawAddress, @core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+// Errors
+
+// Types and methods
+
+// Type aliases
+pub using @b9a9bcd0ac8df8e6 {type EmailAttachment_9d367b5008ec as EmailAttachment}
+
+pub using @b9a9bcd0ac8df8e6 {type EmailAttachmentDownloadState_e9121de7ff2a as EmailAttachmentDownloadState}
+
+pub using @b9a9bcd0ac8df8e6 {type EmailBatchStatus_8c72133273db as EmailBatchStatus}
+
+pub using @b9a9bcd0ac8df8e6 {type EmailCertificateValidationStatus_53f9aaa6021c as EmailCertificateValidationStatus}
+
+pub using @b9a9bcd0ac8df8e6 {type EmailConversation_5c79ead70a19 as EmailConversation}
+
+pub using @b9a9bcd0ac8df8e6 {type EmailConversationBatch_692bcd86f503 as EmailConversationBatch}
+
+pub using @b9a9bcd0ac8df8e6 {type EmailConversationReader_7aa706665ba5 as EmailConversationReader}
+
+pub using @b9a9bcd0ac8df8e6 {type EmailFlagState_a3f7ab426b33 as EmailFlagState}
+
+pub using @b9a9bcd0ac8df8e6 {type EmailFolder_916d289e2edd as EmailFolder}
+
+pub using @b9a9bcd0ac8df8e6 {type EmailImportance_b819299a847b as EmailImportance}
+
+pub using @b9a9bcd0ac8df8e6 {type EmailIrmInfo_9795ad987ca1 as EmailIrmInfo}
+
+pub using @b9a9bcd0ac8df8e6 {type EmailIrmTemplate_fd12a365b41a as EmailIrmTemplate}
+
+pub using @b9a9bcd0ac8df8e6 {type EmailItemCounts_b386a015957b as EmailItemCounts}
+
+pub using @b9a9bcd0ac8df8e6 {type EmailMailbox_fb6b89349262 as EmailMailbox}
+
+pub using @b9a9bcd0ac8df8e6 {type EmailMailboxAction_953535b837d3 as EmailMailboxAction}
+
+pub using @b9a9bcd0ac8df8e6 {type EmailMailboxActionKind_e5636bbc7fac as EmailMailboxActionKind}
+
+pub using @b9a9bcd0ac8df8e6 {type EmailMailboxAllowedSmimeEncryptionAlgorithmNegotiation_a1079525be65 as EmailMailboxAllowedSmimeEncryptionAlgorithmNegotiation}
+
+pub using @b9a9bcd0ac8df8e6 {type EmailMailboxAutoReply_9dee06f248c9 as EmailMailboxAutoReply}
+
+pub using @b9a9bcd0ac8df8e6 {type EmailMailboxAutoReplyMessageResponseKind_8e929ff3b87e as EmailMailboxAutoReplyMessageResponseKind}
+
+pub using @b9a9bcd0ac8df8e6 {type EmailMailboxAutoReplySettings_32d1dc3e21b7 as EmailMailboxAutoReplySettings}
+
+pub using @b9a9bcd0ac8df8e6 {type EmailMailboxCapabilities_ccfb65ea860a as EmailMailboxCapabilities}
+
+pub using @b9a9bcd0ac8df8e6 {type EmailMailboxChange_a0ec6b6ad9d3 as EmailMailboxChange}
+
+pub using @b9a9bcd0ac8df8e6 {type EmailMailboxChangeReader_bd3a40ede826 as EmailMailboxChangeReader}
+
+pub using @b9a9bcd0ac8df8e6 {type EmailMailboxChangeTracker_8e1e03ce141f as EmailMailboxChangeTracker}
+
+pub using @b9a9bcd0ac8df8e6 {type EmailMailboxChangeType_14869ccef5a3 as EmailMailboxChangeType}
+
+pub using @b9a9bcd0ac8df8e6 {type EmailMailboxChangedDeferral_fd0c12c7df84 as EmailMailboxChangedDeferral}
+
+pub using @b9a9bcd0ac8df8e6 {type EmailMailboxChangedEventArgs_8c0800137b1f as EmailMailboxChangedEventArgs}
+
+pub using @b9a9bcd0ac8df8e6 {type EmailMailboxCreateFolderResult_d02b29074c5a as EmailMailboxCreateFolderResult}
+
+pub using @b9a9bcd0ac8df8e6 {type EmailMailboxCreateFolderStatus_03fa6190c9a6 as EmailMailboxCreateFolderStatus}
+
+pub using @b9a9bcd0ac8df8e6 {type EmailMailboxDeleteFolderStatus_e222f780d0ed as EmailMailboxDeleteFolderStatus}
+
+pub using @b9a9bcd0ac8df8e6 {type EmailMailboxEmptyFolderStatus_bdba2efd8c18 as EmailMailboxEmptyFolderStatus}
+
+pub using @b9a9bcd0ac8df8e6 {type EmailMailboxOtherAppReadAccess_bc66df832277 as EmailMailboxOtherAppReadAccess}
+
+pub using @b9a9bcd0ac8df8e6 {type EmailMailboxOtherAppWriteAccess_ea55e60085fd as EmailMailboxOtherAppWriteAccess}
+
+pub using @b9a9bcd0ac8df8e6 {type EmailMailboxPolicies_2e53904f973c as EmailMailboxPolicies}
+
+pub using @b9a9bcd0ac8df8e6 {type EmailMailboxSmimeEncryptionAlgorithm_3637b5a8269f as EmailMailboxSmimeEncryptionAlgorithm}
+
+pub using @b9a9bcd0ac8df8e6 {type EmailMailboxSmimeSigningAlgorithm_06d7c3b7763a as EmailMailboxSmimeSigningAlgorithm}
+
+pub using @b9a9bcd0ac8df8e6 {type EmailMailboxSyncManager_417d405d816a as EmailMailboxSyncManager}
+
+pub using @b9a9bcd0ac8df8e6 {type EmailMailboxSyncStatus_b53e0861c533 as EmailMailboxSyncStatus}
+
+pub using @b9a9bcd0ac8df8e6 {type EmailManager_a7f3e4ea9467 as EmailManager}
+
+pub using @b9a9bcd0ac8df8e6 {type EmailManagerForUser_f8950a742903 as EmailManagerForUser}
+
+pub using @b9a9bcd0ac8df8e6 {type EmailMeetingInfo_e1573e632e5f as EmailMeetingInfo}
+
+pub using @b9a9bcd0ac8df8e6 {type EmailMeetingResponseType_463c907b2055 as EmailMeetingResponseType}
+
+pub using @b9a9bcd0ac8df8e6 {type EmailMessage_d0a56451efca as EmailMessage}
+
+pub using @b9a9bcd0ac8df8e6 {type EmailMessageBatch_c6347b76f1fa as EmailMessageBatch}
+
+pub using @b9a9bcd0ac8df8e6 {type EmailMessageBodyKind_567a60b0c729 as EmailMessageBodyKind}
+
+pub using @b9a9bcd0ac8df8e6 {type EmailMessageDownloadState_484f6336a10c as EmailMessageDownloadState}
+
+pub using @b9a9bcd0ac8df8e6 {type EmailMessageReader_56354b611e31 as EmailMessageReader}
+
+pub using @b9a9bcd0ac8df8e6 {type EmailMessageResponseKind_3d8f69f80cc2 as EmailMessageResponseKind}
+
+pub using @b9a9bcd0ac8df8e6 {type EmailMessageSmimeKind_a554f3bf9b73 as EmailMessageSmimeKind}
+
+pub using @b9a9bcd0ac8df8e6 {type EmailQueryKind_76bd647d8b00 as EmailQueryKind}
+
+pub using @b9a9bcd0ac8df8e6 {type EmailQueryOptions_e3e0db79d86d as EmailQueryOptions}
+
+pub using @b9a9bcd0ac8df8e6 {type EmailQuerySearchFields_b5636c636fa7 as EmailQuerySearchFields}
+
+pub using @b9a9bcd0ac8df8e6 {type EmailQuerySearchScope_8e2843e16530 as EmailQuerySearchScope}
+
+pub using @b9a9bcd0ac8df8e6 {type EmailQuerySortDirection_5e7b85a47ed6 as EmailQuerySortDirection}
+
+pub using @b9a9bcd0ac8df8e6 {type EmailQuerySortProperty_a6da6fe5868b as EmailQuerySortProperty}
+
+pub using @b9a9bcd0ac8df8e6 {type EmailQueryTextSearch_d2ec7e67948f as EmailQueryTextSearch}
+
+pub using @b9a9bcd0ac8df8e6 {type EmailRecipient_cc513f7b0fc6 as EmailRecipient}
+
+pub using @b9a9bcd0ac8df8e6 {type EmailRecipientResolutionResult_ffa7342cc9f3 as EmailRecipientResolutionResult}
+
+pub using @b9a9bcd0ac8df8e6 {type EmailRecipientResolutionStatus_2fe4a9db9687 as EmailRecipientResolutionStatus}
+
+pub using @b9a9bcd0ac8df8e6 {type EmailSpecialFolderKind_887f95367b56 as EmailSpecialFolderKind}
+
+pub using @b9a9bcd0ac8df8e6 {type EmailStore_9b5a47e4e950 as EmailStore}
+
+pub using @b9a9bcd0ac8df8e6 {type EmailStoreAccessType_a851b03ae081 as EmailStoreAccessType}
+
+pub using @b9a9bcd0ac8df8e6 {type EmailStoreNotificationTriggerDetails_fabd01fb64d6 as EmailStoreNotificationTriggerDetails}
+
+// Traits

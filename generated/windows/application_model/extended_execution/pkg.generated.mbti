@@ -1,0 +1,76 @@
+// Generated using `moon info`, DON'T EDIT IT
+package "moonbit-community/win32api/windows/application_model/extended_execution"
+
+import {
+  "moonbit-community/win32api/runtime/core",
+  "moonbit-community/win32api/scc/e8c5e69b254f29fe",
+  "moonbitlang/core/ref",
+}
+
+// Values
+pub fn add_revoked(@core.RawAddress, @core.RawAddress) -> Int64 raise @core.WindowsError
+
+pub fn add_revoked_raw(@core.RawAddress, @core.RawAddress, @ref.Ref[Int64]) -> Int
+
+pub let allowed : Int
+
+pub let denied : Int
+
+pub fn get_description_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_percent_progress(@core.RawAddress) -> UInt raise @core.WindowsError
+
+pub fn get_percent_progress_raw(@core.RawAddress, @ref.Ref[UInt]) -> Int
+
+pub fn get_reason_29d3c80093(@core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn get_reason_29d3c80093_raw(@core.RawAddress, @ref.Ref[Int]) -> Int
+
+pub fn get_reason_b10b587788(@core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn get_reason_b10b587788_raw(@core.RawAddress, @ref.Ref[Int]) -> Int
+
+pub let location_tracking : Int
+
+pub fn put_description(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn put_description_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn put_percent_progress(@core.RawAddress, UInt) -> Unit raise @core.WindowsError
+
+pub fn put_percent_progress_raw(@core.RawAddress, UInt) -> Int
+
+pub fn put_reason(@core.RawAddress, Int) -> Unit raise @core.WindowsError
+
+pub fn put_reason_raw(@core.RawAddress, Int) -> Int
+
+pub fn remove_revoked(@core.RawAddress, Int64) -> Unit raise @core.WindowsError
+
+pub fn remove_revoked_raw(@core.RawAddress, Int64) -> Int
+
+pub fn request_extension_async_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub let resumed : Int
+
+pub let saving_data : Int
+
+pub let system_policy : Int
+
+pub let unspecified : Int
+
+// Errors
+
+// Types and methods
+
+// Type aliases
+pub using @e8c5e69b254f29fe {type ExtendedExecutionReason_ac5600e8ab95 as ExtendedExecutionReason}
+
+pub using @e8c5e69b254f29fe {type ExtendedExecutionResult_2ad062c9ad4c as ExtendedExecutionResult}
+
+pub using @e8c5e69b254f29fe {type ExtendedExecutionRevokedEventArgs_c418dbb3d217 as ExtendedExecutionRevokedEventArgs}
+
+pub using @e8c5e69b254f29fe {type ExtendedExecutionRevokedReason_b822ee239b1a as ExtendedExecutionRevokedReason}
+
+pub using @e8c5e69b254f29fe {type ExtendedExecutionSession_3ec60d456e8e as ExtendedExecutionSession}
+
+// Traits

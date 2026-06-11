@@ -1,0 +1,132 @@
+// Generated using `moon info`, DON'T EDIT IT
+package "moonbit-community/win32api/windows/devices/geolocation/geofencing"
+
+import {
+  "moonbit-community/win32api/runtime/core",
+  "moonbit-community/win32api/scc/d5eba6bd5053ea9b",
+  "moonbitlang/core/ref",
+}
+
+// Values
+pub fn add_geofence_state_changed(@core.RawAddress, @core.RawAddress) -> Int64 raise @core.WindowsError
+
+pub fn add_geofence_state_changed_raw(@core.RawAddress, @core.RawAddress, @ref.Ref[Int64]) -> Int
+
+pub fn add_status_changed(@core.RawAddress, @core.RawAddress) -> Int64 raise @core.WindowsError
+
+pub fn add_status_changed_raw(@core.RawAddress, @core.RawAddress, @ref.Ref[Int64]) -> Int
+
+pub fn create_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn create_with_monitor_states_and_dwell_time_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, UInt, UInt, Int64, @ref.Ref[UInt64]) -> Int
+
+pub fn create_with_monitor_states_dwell_time_start_time_and_duration_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, UInt, UInt, Int64, Int64, Int64, @ref.Ref[UInt64]) -> Int
+
+pub fn create_with_monitor_states_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, UInt, UInt, @ref.Ref[UInt64]) -> Int
+
+pub let disabled : Int
+
+pub let entered_14e60bb7f8 : UInt
+
+pub let entered_613d4fc956 : UInt
+
+pub let exited_03a4243874 : UInt
+
+pub let exited_13997f8e8f : UInt
+
+pub let expired : Int
+
+pub fn get_current_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_duration(@core.RawAddress) -> Int64 raise @core.WindowsError
+
+pub fn get_duration_raw(@core.RawAddress, @ref.Ref[Int64]) -> Int
+
+pub fn get_dwell_time(@core.RawAddress) -> Int64 raise @core.WindowsError
+
+pub fn get_dwell_time_raw(@core.RawAddress, @ref.Ref[Int64]) -> Int
+
+pub fn get_geofence_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_geofences_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_geoposition_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_geoshape_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_id_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_last_known_geoposition_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_monitored_states(@core.RawAddress) -> UInt raise @core.WindowsError
+
+pub fn get_monitored_states_raw(@core.RawAddress, @ref.Ref[UInt]) -> Int
+
+pub fn get_new_state(@core.RawAddress) -> UInt raise @core.WindowsError
+
+pub fn get_new_state_raw(@core.RawAddress, @ref.Ref[UInt]) -> Int
+
+pub fn get_removal_reason(@core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn get_removal_reason_raw(@core.RawAddress, @ref.Ref[Int]) -> Int
+
+pub fn get_single_use_raw(@core.RawAddress, Bytes) -> Int
+
+pub fn get_start_time(@core.RawAddress) -> Int64 raise @core.WindowsError
+
+pub fn get_start_time_raw(@core.RawAddress, @ref.Ref[Int64]) -> Int
+
+pub fn get_status(@core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn get_status_raw(@core.RawAddress, @ref.Ref[Int]) -> Int
+
+pub let initializing : Int
+
+pub let no_data : Int
+
+pub let none_77e9065482 : UInt
+
+pub let none_efda5f4a15 : UInt
+
+pub let not_available : Int
+
+pub let not_initialized : Int
+
+pub fn read_reports_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub let ready : Int
+
+pub fn remove_geofence_state_changed(@core.RawAddress, Int64) -> Unit raise @core.WindowsError
+
+pub fn remove_geofence_state_changed_raw(@core.RawAddress, Int64) -> Int
+
+pub fn remove_status_changed(@core.RawAddress, Int64) -> Unit raise @core.WindowsError
+
+pub fn remove_status_changed_raw(@core.RawAddress, Int64) -> Int
+
+pub let removed_3a996db1d3 : UInt
+
+pub let removed_42d6cae9a3 : UInt
+
+pub let used : Int
+
+// Errors
+
+// Types and methods
+
+// Type aliases
+pub using @d5eba6bd5053ea9b {type Geofence_47e98ac39703 as Geofence}
+
+pub using @d5eba6bd5053ea9b {type GeofenceMonitor_1c6cbbb4eeb8 as GeofenceMonitor}
+
+pub using @d5eba6bd5053ea9b {type GeofenceMonitorStatus_9a3b230f3a52 as GeofenceMonitorStatus}
+
+pub using @d5eba6bd5053ea9b {type GeofenceRemovalReason_c0d6f147e294 as GeofenceRemovalReason}
+
+pub using @d5eba6bd5053ea9b {type GeofenceState_eaf4c7dff2f8 as GeofenceState}
+
+pub using @d5eba6bd5053ea9b {type GeofenceStateChangeReport_a3e77604e24a as GeofenceStateChangeReport}
+
+pub using @d5eba6bd5053ea9b {type MonitoredGeofenceStates_78541babb1d0 as MonitoredGeofenceStates}
+
+// Traits

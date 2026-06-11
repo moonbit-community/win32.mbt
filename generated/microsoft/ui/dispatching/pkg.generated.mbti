@@ -1,0 +1,156 @@
+// Generated using `moon info`, DON'T EDIT IT
+package "moonbit-community/win32api/microsoft/ui/dispatching"
+
+import {
+  "moonbit-community/win32api/runtime/core",
+  "moonbit-community/win32api/scc/effbbd52806b9cac",
+  "moonbitlang/core/ref",
+}
+
+// Values
+pub fn add_framework_shutdown_completed(@core.RawAddress, @core.RawAddress) -> Int64 raise @core.WindowsError
+
+pub fn add_framework_shutdown_completed_raw(@core.RawAddress, @core.RawAddress, @ref.Ref[Int64]) -> Int
+
+pub fn add_framework_shutdown_starting(@core.RawAddress, @core.RawAddress) -> Int64 raise @core.WindowsError
+
+pub fn add_framework_shutdown_starting_raw(@core.RawAddress, @core.RawAddress, @ref.Ref[Int64]) -> Int
+
+pub fn add_shutdown_completed(@core.RawAddress, @core.RawAddress) -> Int64 raise @core.WindowsError
+
+pub fn add_shutdown_completed_raw(@core.RawAddress, @core.RawAddress, @ref.Ref[Int64]) -> Int
+
+pub fn add_shutdown_starting(@core.RawAddress, @core.RawAddress) -> Int64 raise @core.WindowsError
+
+pub fn add_shutdown_starting_raw(@core.RawAddress, @core.RawAddress, @ref.Ref[Int64]) -> Int
+
+pub fn add_tick(@core.RawAddress, @core.RawAddress) -> Int64 raise @core.WindowsError
+
+pub fn add_tick_raw(@core.RawAddress, @core.RawAddress, @ref.Ref[Int64]) -> Int
+
+pub fn complete(@core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn complete_raw(@core.RawAddress) -> Int
+
+pub let continue_on_quit : UInt
+
+pub fn create_on_current_thread_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn create_on_dedicated_thread_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn create_timer_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn enqueue_event_loop_exit(@core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn enqueue_event_loop_exit_raw(@core.RawAddress) -> Int
+
+pub fn ensure_system_dispatcher_queue(@core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn ensure_system_dispatcher_queue_raw(@core.RawAddress) -> Int
+
+pub fn get_deferral_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_dispatcher_queue_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_for_current_thread_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_has_thread_access_raw(@core.RawAddress, Bytes) -> Int
+
+pub fn get_interval(@core.RawAddress) -> Int64 raise @core.WindowsError
+
+pub fn get_interval_raw(@core.RawAddress, @ref.Ref[Int64]) -> Int
+
+pub fn get_is_repeating_raw(@core.RawAddress, Bytes) -> Int
+
+pub fn get_is_running_raw(@core.RawAddress, Bytes) -> Int
+
+pub let high : Int
+
+pub fn invoke(@core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn invoke_raw(@core.RawAddress) -> Int
+
+pub let low : Int
+
+pub let none : UInt
+
+pub let normal : Int
+
+pub fn put_interval(@core.RawAddress, Int64) -> Unit raise @core.WindowsError
+
+pub fn put_interval_raw(@core.RawAddress, Int64) -> Int
+
+pub fn put_is_repeating(@core.RawAddress, UInt) -> Unit raise @core.WindowsError
+
+pub fn put_is_repeating_raw(@core.RawAddress, UInt) -> Int
+
+pub let quit_only_local_loop : UInt
+
+pub fn remove_framework_shutdown_completed(@core.RawAddress, Int64) -> Unit raise @core.WindowsError
+
+pub fn remove_framework_shutdown_completed_raw(@core.RawAddress, Int64) -> Int
+
+pub fn remove_framework_shutdown_starting(@core.RawAddress, Int64) -> Unit raise @core.WindowsError
+
+pub fn remove_framework_shutdown_starting_raw(@core.RawAddress, Int64) -> Int
+
+pub fn remove_shutdown_completed(@core.RawAddress, Int64) -> Unit raise @core.WindowsError
+
+pub fn remove_shutdown_completed_raw(@core.RawAddress, Int64) -> Int
+
+pub fn remove_shutdown_starting(@core.RawAddress, Int64) -> Unit raise @core.WindowsError
+
+pub fn remove_shutdown_starting_raw(@core.RawAddress, Int64) -> Int
+
+pub fn remove_tick(@core.RawAddress, Int64) -> Unit raise @core.WindowsError
+
+pub fn remove_tick_raw(@core.RawAddress, Int64) -> Int
+
+pub fn run_event_loop(@core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn run_event_loop_raw(@core.RawAddress) -> Int
+
+pub fn run_event_loop_with_options(@core.RawAddress, UInt, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn run_event_loop_with_options_raw(@core.RawAddress, UInt, @core.RawAddress) -> Int
+
+pub fn shutdown_queue(@core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn shutdown_queue_async_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn shutdown_queue_raw(@core.RawAddress) -> Int
+
+pub fn start(@core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn start_raw(@core.RawAddress) -> Int
+
+pub fn stop(@core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn stop_raw(@core.RawAddress) -> Int
+
+pub fn try_enqueue_raw(@core.RawAddress, @core.RawAddress, Bytes) -> Int
+
+pub fn try_enqueue_with_priority_raw(@core.RawAddress, Int, @core.RawAddress, Bytes) -> Int
+
+// Errors
+
+// Types and methods
+
+// Type aliases
+pub using @effbbd52806b9cac {type DispatcherExitDeferral_c213c6860544 as DispatcherExitDeferral}
+
+pub using @effbbd52806b9cac {type DispatcherQueue_88c4ca5853ac as DispatcherQueue}
+
+pub using @effbbd52806b9cac {type DispatcherQueueController_5e1078a63d63 as DispatcherQueueController}
+
+pub using @effbbd52806b9cac {type DispatcherQueueHandler_4a1e13c2c16e as DispatcherQueueHandler}
+
+pub using @effbbd52806b9cac {type DispatcherQueuePriority_0770c7e53798 as DispatcherQueuePriority}
+
+pub using @effbbd52806b9cac {type DispatcherQueueShutdownStartingEventArgs_62621750cfce as DispatcherQueueShutdownStartingEventArgs}
+
+pub using @effbbd52806b9cac {type DispatcherQueueTimer_b93e6e0b240c as DispatcherQueueTimer}
+
+pub using @effbbd52806b9cac {type DispatcherRunOptions_8c9baee24b52 as DispatcherRunOptions}
+
+// Traits

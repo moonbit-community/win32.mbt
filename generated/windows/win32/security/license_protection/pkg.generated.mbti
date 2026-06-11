@@ -1,0 +1,35 @@
+// Generated using `moon info`, DON'T EDIT IT
+package "moonbit-community/win32api/windows/win32/security/license_protection"
+
+import {
+  "moonbit-community/win32api/runtime/core",
+  "moonbit-community/win32api/scc/811db995c27982bc",
+}
+
+// Values
+pub let license_key_already_exists : Int
+
+pub let license_key_corrupted : Int
+
+pub let license_key_not_found : Int
+
+pub let license_key_unprotected : Int
+
+pub fn register_license_key_with_expiration(@core.RawAddress, UInt, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn register_license_key_with_expiration_raw(@core.RawAddress, UInt, @core.RawAddress) -> Int
+
+pub let success : Int
+
+pub fn validate_license_key_protection(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn validate_license_key_protection_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+// Errors
+
+// Types and methods
+
+// Type aliases
+pub using @811db995c27982bc {type LicenseProtectionStatus_899d3dedef42 as LicenseProtectionStatus}
+
+// Traits

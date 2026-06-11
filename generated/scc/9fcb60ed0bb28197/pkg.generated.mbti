@@ -1,0 +1,116 @@
+// Generated using `moon info`, DON'T EDIT IT
+package "moonbit-community/win32api/scc/9fcb60ed0bb28197"
+
+import {
+  "moonbit-community/win32api/runtime/com",
+  "moonbit-community/win32api/runtime/core",
+  "moonbit-community/win32api/runtime/strings",
+  "moonbitlang/core/debug",
+  "moonbitlang/core/ref",
+}
+
+// Values
+pub let always_8fac9ccfec5e : Int
+
+pub let application_data_contract_4dd0c135d099_alignment : Int
+
+pub let application_data_contract_4dd0c135d099_size : Int
+
+pub fn clear_async_b66eeea76e0d_raw(@core.RawAddress, Int, @ref.Ref[UInt64]) -> Int
+
+pub fn clear_publisher_cache_folder_async_8536abb5731b_raw(@core.RawAddress, @core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn create_container_8515b9d10d5d_raw(@core.RawAddress, @core.RawAddress, Int, @ref.Ref[UInt64]) -> Int
+
+pub fn delete_container_52aca1ff114a(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn delete_container_52aca1ff114a_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub let existing_6c9b9dd8aeb3 : Int
+
+pub fn get_containers_4610b07ff88b_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_default_7882c6de45ab_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_for_package_family_4cb3f6475d64_raw(@core.RawAddress, @core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_for_user_ff41426239d7_raw(@core.RawAddress, @core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_is_machine_path_supported_a52f7fb6010c_raw(@core.RawAddress, Bytes) -> Int
+
+pub fn get_local_cache_folder_03cce134e2ce_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_local_cache_path_b11eda5e8755_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_local_folder_8b66d68ad2ba_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_local_path_7b7050660584_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_local_settings_2cc6bfab05d4_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_locality_01760bd2fa92(@core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn get_locality_01760bd2fa92_raw(@core.RawAddress, @ref.Ref[Int]) -> Int
+
+pub fn get_machine_folder_4fd65866755c_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_machine_path_796e37394a18_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_name_117c81b98ea8_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_publisher_cache_folder_442f747565fc_raw(@core.RawAddress, @core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_publisher_cache_path_76977e8d5162_raw(@core.RawAddress, @core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_shared_local_folder_043dccaad33a_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_shared_local_path_e95f03fa3226_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_temporary_folder_8e257bc84cd9_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_temporary_path_831ecdeba6b8_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_values_38c3be0c839a_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub let local__3f2bfafce1bd : Int
+
+pub let local_cache_85d49e86dc77 : Int
+
+pub let machine_398c7c521eef : Int
+
+pub let shared_local_8961c9fdb68e : Int
+
+pub let temporary_d4c9e49fb5d6 : Int
+
+// Errors
+
+// Types and methods
+pub type ApplicationDataContainer_f3ef1382a154
+
+pub(all) struct ApplicationDataContract_4dd0c135d099 {
+  raw_bytes : Bytes
+} derive(Eq, @debug.Debug)
+pub fn ApplicationDataContract_4dd0c135d099::bytes(Self) -> Bytes
+pub fn ApplicationDataContract_4dd0c135d099::from_bytes(Bytes) -> Self raise @core.WindowsError
+
+pub(all) struct ApplicationDataCreateDisposition_0258e8571677(Int) derive(Compare, Eq, @debug.Debug)
+pub fn ApplicationDataCreateDisposition_0258e8571677::from_int(Int) -> Self
+pub fn ApplicationDataCreateDisposition_0258e8571677::to_int(Self) -> Int
+
+pub(all) struct ApplicationDataLocality_fc18fa68b451(Int) derive(Compare, Eq, @debug.Debug)
+pub fn ApplicationDataLocality_fc18fa68b451::from_int(Int) -> Self
+pub fn ApplicationDataLocality_fc18fa68b451::to_int(Self) -> Int
+
+pub type ApplicationData_9feabd126ee1
+pub fn ApplicationData_9feabd126ee1::get_default() -> @com.ComPtr[Self] raise @core.WindowsError
+pub fn ApplicationData_9feabd126ee1::get_for_package_family(@strings.HString) -> @com.ComPtr[Self] raise @core.WindowsError
+
+pub type IApplicationDataContainer_0a66d3bce256
+
+pub type IApplicationDataStatics_1a6d88f69716
+
+pub type IApplicationData_674c1ddc18d1
+
+// Type aliases
+
+// Traits

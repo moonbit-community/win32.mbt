@@ -1,0 +1,66 @@
+// Generated using `moon info`, DON'T EDIT IT
+package "moonbit-community/win32api/windows/devices/adc"
+
+import {
+  "moonbit-community/win32api/runtime/core",
+  "moonbit-community/win32api/scc/877e84c50ddb06c6",
+  "moonbitlang/core/ref",
+}
+
+// Values
+pub let differential : Int
+
+pub fn get_channel_count(@core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn get_channel_count_raw(@core.RawAddress, @ref.Ref[Int]) -> Int
+
+pub fn get_channel_mode(@core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn get_channel_mode_raw(@core.RawAddress, @ref.Ref[Int]) -> Int
+
+pub fn get_controller_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_controllers_async_raw(@core.RawAddress, @core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_default_async_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_max_value(@core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn get_max_value_raw(@core.RawAddress, @ref.Ref[Int]) -> Int
+
+pub fn get_min_value(@core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn get_min_value_raw(@core.RawAddress, @ref.Ref[Int]) -> Int
+
+pub fn get_resolution_in_bits(@core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn get_resolution_in_bits_raw(@core.RawAddress, @ref.Ref[Int]) -> Int
+
+pub fn is_channel_mode_supported_raw(@core.RawAddress, Int, Bytes) -> Int
+
+pub fn open_channel_raw(@core.RawAddress, Int, @ref.Ref[UInt64]) -> Int
+
+pub fn put_channel_mode(@core.RawAddress, Int) -> Unit raise @core.WindowsError
+
+pub fn put_channel_mode_raw(@core.RawAddress, Int) -> Int
+
+pub fn read_ratio_raw(@core.RawAddress, Bytes) -> Int
+
+pub fn read_value(@core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn read_value_raw(@core.RawAddress, @ref.Ref[Int]) -> Int
+
+pub let single_ended : Int
+
+// Errors
+
+// Types and methods
+
+// Type aliases
+pub using @877e84c50ddb06c6 {type AdcChannel_c45c6cd7199c as AdcChannel}
+
+pub using @877e84c50ddb06c6 {type AdcChannelMode_bddfa300a692 as AdcChannelMode}
+
+pub using @877e84c50ddb06c6 {type AdcController_e6321dd97bfc as AdcController}
+
+// Traits

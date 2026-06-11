@@ -1,0 +1,156 @@
+// Generated using `moon info`, DON'T EDIT IT
+package "moonbit-community/win32api/windows/application_model/calls/background"
+
+import {
+  "moonbit-community/win32api/runtime/core",
+  "moonbit-community/win32api/scc/6cef6bebbee7e3f0",
+  "moonbitlang/core/ref",
+}
+
+// Values
+pub let added : Int
+
+pub let airplane_mode_disabled_for_emergency_call : Int
+
+pub let branding_options : UInt
+
+pub let call_blocked : Int
+
+pub let call_history_changed : Int
+
+pub let call_origin_data_request : Int
+
+pub let call_rejected : Int
+
+pub let can_dial : UInt
+
+pub let cellular_details : UInt
+
+pub let connection_lost : Int
+
+pub let display_color : UInt
+
+pub let display_name : UInt
+
+pub fn get_call_blocked_reason(@core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn get_call_blocked_reason_raw(@core.RawAddress, @ref.Ref[Int]) -> Int
+
+pub fn get_call_id_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_change_type(@core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn get_change_type_raw(@core.RawAddress, @ref.Ref[Int]) -> Int
+
+pub fn get_dismissal_time(@core.RawAddress) -> Int64 raise @core.WindowsError
+
+pub fn get_dismissal_time_raw(@core.RawAddress, @ref.Ref[Int64]) -> Int
+
+pub fn get_display_name_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_line_id_2b767c7a85(@core.RawAddress) -> Bytes raise @core.WindowsError
+
+pub fn get_line_id_2b767c7a85_raw(@core.RawAddress, Bytes) -> Int
+
+pub fn get_line_id_3be36fef62(@core.RawAddress) -> Bytes raise @core.WindowsError
+
+pub fn get_line_id_3be36fef62_raw(@core.RawAddress, Bytes) -> Int
+
+pub fn get_line_id_8a8f2f2bb0(@core.RawAddress) -> Bytes raise @core.WindowsError
+
+pub fn get_line_id_8a8f2f2bb0_raw(@core.RawAddress, Bytes) -> Int
+
+pub fn get_line_id_d8ebac5975(@core.RawAddress) -> Bytes raise @core.WindowsError
+
+pub fn get_line_id_d8ebac5975_raw(@core.RawAddress, Bytes) -> Int
+
+pub fn get_line_id_fb6c40c864(@core.RawAddress) -> Bytes raise @core.WindowsError
+
+pub fn get_line_id_fb6c40c864_raw(@core.RawAddress, Bytes) -> Int
+
+pub fn get_operator_message_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_phone_number_1d8096a991_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_phone_number_bc2ad39e8f_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_phone_number_ec72f531f0_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_reason(@core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn get_reason_raw(@core.RawAddress, @ref.Ref[Int]) -> Int
+
+pub fn get_request_id(@core.RawAddress) -> Bytes raise @core.WindowsError
+
+pub fn get_request_id_raw(@core.RawAddress, Bytes) -> Int
+
+pub fn get_text_reply_message_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_voicemail_count(@core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn get_voicemail_count_raw(@core.RawAddress, @ref.Ref[Int]) -> Int
+
+pub fn has_line_property_changed_raw(@core.RawAddress, UInt, Bytes) -> Int
+
+pub let in_call_blocking_list : Int
+
+pub let incoming_call_dismissed : Int
+
+pub let incoming_call_notification : Int
+
+pub let line_changed : Int
+
+pub let network_name : UInt
+
+pub let network_state : UInt
+
+pub let new_voicemail_message : Int
+
+pub let none : UInt
+
+pub let private_number : Int
+
+pub let properties_changed : Int
+
+pub let removed : Int
+
+pub let text_reply : Int
+
+pub let transport : UInt
+
+pub let unknown : Int
+
+pub let unknown_number : Int
+
+pub let voicemail : UInt
+
+// Errors
+
+// Types and methods
+
+// Type aliases
+pub using @6cef6bebbee7e3f0 {type CallsBackgroundContract_3ec1541e0c61 as CallsBackgroundContract}
+
+pub using @6cef6bebbee7e3f0 {type PhoneCallBlockedReason_1a0cdf11197b as PhoneCallBlockedReason}
+
+pub using @6cef6bebbee7e3f0 {type PhoneCallBlockedTriggerDetails_08d6b4dda2d7 as PhoneCallBlockedTriggerDetails}
+
+pub using @6cef6bebbee7e3f0 {type PhoneCallOriginDataRequestTriggerDetails_67031d5a987f as PhoneCallOriginDataRequestTriggerDetails}
+
+pub using @6cef6bebbee7e3f0 {type PhoneIncomingCallDismissedReason_53042e66066f as PhoneIncomingCallDismissedReason}
+
+pub using @6cef6bebbee7e3f0 {type PhoneIncomingCallDismissedTriggerDetails_c4dcf0d455f4 as PhoneIncomingCallDismissedTriggerDetails}
+
+pub using @6cef6bebbee7e3f0 {type PhoneIncomingCallNotificationTriggerDetails_b0e9737fc453 as PhoneIncomingCallNotificationTriggerDetails}
+
+pub using @6cef6bebbee7e3f0 {type PhoneLineChangeKind_7aa9b0bab419 as PhoneLineChangeKind}
+
+pub using @6cef6bebbee7e3f0 {type PhoneLineChangedTriggerDetails_63f7ead10fcc as PhoneLineChangedTriggerDetails}
+
+pub using @6cef6bebbee7e3f0 {type PhoneLineProperties_1aa82c070fa9 as PhoneLineProperties}
+
+pub using @6cef6bebbee7e3f0 {type PhoneNewVoicemailMessageTriggerDetails_2784eafad0f0 as PhoneNewVoicemailMessageTriggerDetails}
+
+pub using @6cef6bebbee7e3f0 {type PhoneTriggerType_42c34f83e51e as PhoneTriggerType}
+
+// Traits

@@ -1,0 +1,44 @@
+// Generated using `moon info`, DON'T EDIT IT
+package "moonbit-community/win32api/windows/ui/core/preview"
+
+import {
+  "moonbit-community/win32api/runtime/core",
+  "moonbit-community/win32api/scc/40dbd25a5689f875",
+  "moonbitlang/core/ref",
+}
+
+// Values
+pub fn add_close_requested(@core.RawAddress, @core.RawAddress) -> Int64 raise @core.WindowsError
+
+pub fn add_close_requested_raw(@core.RawAddress, @core.RawAddress, @ref.Ref[Int64]) -> Int
+
+pub fn get_deferral_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_for_current_view_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_handled_raw(@core.RawAddress, Bytes) -> Int
+
+pub fn get_id_from_window(@core.RawAddress, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn get_id_from_window_raw(@core.RawAddress, @core.RawAddress, @ref.Ref[Int]) -> Int
+
+pub fn put_handled(@core.RawAddress, UInt) -> Unit raise @core.WindowsError
+
+pub fn put_handled_raw(@core.RawAddress, UInt) -> Int
+
+pub fn remove_close_requested(@core.RawAddress, Int64) -> Unit raise @core.WindowsError
+
+pub fn remove_close_requested_raw(@core.RawAddress, Int64) -> Int
+
+// Errors
+
+// Types and methods
+
+// Type aliases
+pub using @40dbd25a5689f875 {type CoreAppWindowPreview_fd2fa8d99ae5 as CoreAppWindowPreview}
+
+pub using @40dbd25a5689f875 {type SystemNavigationCloseRequestedPreviewEventArgs_a4d28cfd925f as SystemNavigationCloseRequestedPreviewEventArgs}
+
+pub using @40dbd25a5689f875 {type SystemNavigationManagerPreview_6cce810b898b as SystemNavigationManagerPreview}
+
+// Traits

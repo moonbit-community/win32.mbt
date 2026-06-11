@@ -1,0 +1,76 @@
+// Generated using `moon info`, DON'T EDIT IT
+package "moonbit-community/win32api/windows/devices/pwm"
+
+import {
+  "moonbit-community/win32api/runtime/core",
+  "moonbit-community/win32api/scc/3dcb7e0f3c6dedb9",
+  "moonbitlang/core/ref",
+}
+
+// Values
+pub let active_high : Int
+
+pub let active_low : Int
+
+pub fn from_id_async_raw(@core.RawAddress, @core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_active_duty_cycle_percentage_raw(@core.RawAddress, Bytes) -> Int
+
+pub fn get_actual_frequency_raw(@core.RawAddress, Bytes) -> Int
+
+pub fn get_controller_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_controllers_async_raw(@core.RawAddress, @core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_default_async_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_device_selector_from_friendly_name_raw(@core.RawAddress, @core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_device_selector_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_is_started_raw(@core.RawAddress, Bytes) -> Int
+
+pub fn get_max_frequency_raw(@core.RawAddress, Bytes) -> Int
+
+pub fn get_min_frequency_raw(@core.RawAddress, Bytes) -> Int
+
+pub fn get_pin_count(@core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn get_pin_count_raw(@core.RawAddress, @ref.Ref[Int]) -> Int
+
+pub fn get_polarity(@core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn get_polarity_raw(@core.RawAddress, @ref.Ref[Int]) -> Int
+
+pub fn open_pin_raw(@core.RawAddress, Int, @ref.Ref[UInt64]) -> Int
+
+pub fn put_polarity(@core.RawAddress, Int) -> Unit raise @core.WindowsError
+
+pub fn put_polarity_raw(@core.RawAddress, Int) -> Int
+
+pub fn set_active_duty_cycle_percentage(@core.RawAddress, Double) -> Unit raise @core.WindowsError
+
+pub fn set_active_duty_cycle_percentage_raw(@core.RawAddress, Double) -> Int
+
+pub fn set_desired_frequency_raw(@core.RawAddress, Double, Bytes) -> Int
+
+pub fn start(@core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn start_raw(@core.RawAddress) -> Int
+
+pub fn stop(@core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn stop_raw(@core.RawAddress) -> Int
+
+// Errors
+
+// Types and methods
+
+// Type aliases
+pub using @3dcb7e0f3c6dedb9 {type PwmController_e3030098d658 as PwmController}
+
+pub using @3dcb7e0f3c6dedb9 {type PwmPin_c9ce4d95f563 as PwmPin}
+
+pub using @3dcb7e0f3c6dedb9 {type PwmPulsePolarity_10d8da26469d as PwmPulsePolarity}
+
+// Traits

@@ -1,0 +1,62 @@
+// Generated using `moon info`, DON'T EDIT IT
+package "moonbit-community/win32api/microsoft/windows/badge_notifications"
+
+import {
+  "moonbit-community/win32api/runtime/core",
+  "moonbit-community/win32api/scc/a8b3e91127122b3b",
+  "moonbitlang/core/ref",
+}
+
+// Values
+pub let activity : Int
+
+pub let alarm : Int
+
+pub let alert : Int
+
+pub let attention : Int
+
+pub let available : Int
+
+pub let away : Int
+
+pub let busy : Int
+
+pub fn clear_badge(@core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn clear_badge_raw(@core.RawAddress) -> Int
+
+pub let error : Int
+
+pub fn get_current_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub let new_message : Int
+
+pub let none : Int
+
+pub let paused : Int
+
+pub let playing : Int
+
+pub fn set_badge_as_count(@core.RawAddress, UInt) -> Unit raise @core.WindowsError
+
+pub fn set_badge_as_count_raw(@core.RawAddress, UInt) -> Int
+
+pub fn set_badge_as_glyph(@core.RawAddress, Int) -> Unit raise @core.WindowsError
+
+pub fn set_badge_as_glyph_raw(@core.RawAddress, Int) -> Int
+
+pub let unavailable : Int
+
+// Errors
+
+// Types and methods
+
+// Type aliases
+pub using @a8b3e91127122b3b {type BadgeNotificationGlyph_104053cfcdc0 as BadgeNotificationGlyph}
+
+pub using @a8b3e91127122b3b {type BadgeNotificationManager_169055beff40 as BadgeNotificationManager}
+
+pub using @a8b3e91127122b3b {type BadgeNotificationsContract_758f8c9308f4 as BadgeNotificationsContract}
+
+// Traits

@@ -1,0 +1,70 @@
+// Generated using `moon info`, DON'T EDIT IT
+package "moonbit-community/win32api/windows/application_model/extended_execution/foreground"
+
+import {
+  "moonbit-community/win32api/runtime/core",
+  "moonbit-community/win32api/scc/2cd27cca2886e82d",
+  "moonbitlang/core/ref",
+}
+
+// Values
+pub fn add_revoked(@core.RawAddress, @core.RawAddress) -> Int64 raise @core.WindowsError
+
+pub fn add_revoked_raw(@core.RawAddress, @core.RawAddress, @ref.Ref[Int64]) -> Int
+
+pub let allowed : Int
+
+pub let background_audio : Int
+
+pub let denied : Int
+
+pub fn get_description_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_reason_62e92ed09b(@core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn get_reason_62e92ed09b_raw(@core.RawAddress, @ref.Ref[Int]) -> Int
+
+pub fn get_reason_ec8d0791a3(@core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn get_reason_ec8d0791a3_raw(@core.RawAddress, @ref.Ref[Int]) -> Int
+
+pub fn put_description(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn put_description_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn put_reason(@core.RawAddress, Int) -> Unit raise @core.WindowsError
+
+pub fn put_reason_raw(@core.RawAddress, Int) -> Int
+
+pub fn remove_revoked(@core.RawAddress, Int64) -> Unit raise @core.WindowsError
+
+pub fn remove_revoked_raw(@core.RawAddress, Int64) -> Int
+
+pub fn request_extension_async_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub let resumed : Int
+
+pub let saving_data : Int
+
+pub let system_policy : Int
+
+pub let unconstrained : Int
+
+pub let unspecified : Int
+
+// Errors
+
+// Types and methods
+
+// Type aliases
+pub using @2cd27cca2886e82d {type ExtendedExecutionForegroundReason_645207b865a5 as ExtendedExecutionForegroundReason}
+
+pub using @2cd27cca2886e82d {type ExtendedExecutionForegroundResult_f13e394849ec as ExtendedExecutionForegroundResult}
+
+pub using @2cd27cca2886e82d {type ExtendedExecutionForegroundRevokedEventArgs_d12c55eb3e2c as ExtendedExecutionForegroundRevokedEventArgs}
+
+pub using @2cd27cca2886e82d {type ExtendedExecutionForegroundRevokedReason_d961fddddc13 as ExtendedExecutionForegroundRevokedReason}
+
+pub using @2cd27cca2886e82d {type ExtendedExecutionForegroundSession_2fd493f33d21 as ExtendedExecutionForegroundSession}
+
+// Traits

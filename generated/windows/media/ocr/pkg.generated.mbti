@@ -1,0 +1,56 @@
+// Generated using `moon info`, DON'T EDIT IT
+package "moonbit-community/win32api/windows/media/ocr"
+
+import {
+  "moonbit-community/win32api/runtime/core",
+  "moonbit-community/win32api/scc/afc15258851f7a9f",
+  "moonbitlang/core/ref",
+}
+
+// Values
+pub fn get_available_recognizer_languages_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_bounding_rect(@core.RawAddress) -> Bytes raise @core.WindowsError
+
+pub fn get_bounding_rect_raw(@core.RawAddress, Bytes) -> Int
+
+pub fn get_lines_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_max_image_dimension(@core.RawAddress) -> UInt raise @core.WindowsError
+
+pub fn get_max_image_dimension_raw(@core.RawAddress, @ref.Ref[UInt]) -> Int
+
+pub fn get_recognizer_language_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_text_051b46b3e3_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_text_77f7b93243_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_text_angle_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_text_e02559e2de_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_words_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn is_language_supported_raw(@core.RawAddress, @core.RawAddress, Bytes) -> Int
+
+pub fn recognize_async_raw(@core.RawAddress, @core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn try_create_from_language_raw(@core.RawAddress, @core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn try_create_from_user_profile_languages_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+// Errors
+
+// Types and methods
+
+// Type aliases
+pub using @afc15258851f7a9f {type OcrEngine_947786bdec58 as OcrEngine}
+
+pub using @afc15258851f7a9f {type OcrLine_7e91d89d15f8 as OcrLine}
+
+pub using @afc15258851f7a9f {type OcrResult_fd6fe26490c2 as OcrResult}
+
+pub using @afc15258851f7a9f {type OcrWord_dc16d532dd26 as OcrWord}
+
+// Traits

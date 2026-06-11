@@ -1,0 +1,96 @@
+// Generated using `moon info`, DON'T EDIT IT
+package "moonbit-community/win32api/microsoft/windows/push_notifications"
+
+import {
+  "moonbit-community/win32api/runtime/core",
+  "moonbit-community/win32api/scc/2a2f3da55951b2ce",
+  "moonbitlang/core/ref",
+}
+
+// Values
+pub fn add_canceled(@core.RawAddress, @core.RawAddress) -> Int64 raise @core.WindowsError
+
+pub fn add_canceled_raw(@core.RawAddress, @core.RawAddress, @ref.Ref[Int64]) -> Int
+
+pub fn add_push_received(@core.RawAddress, @core.RawAddress) -> Int64 raise @core.WindowsError
+
+pub fn add_push_received_raw(@core.RawAddress, @core.RawAddress, @ref.Ref[Int64]) -> Int
+
+pub fn close(@core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn close_raw(@core.RawAddress) -> Int
+
+pub let completed_failure : Int
+
+pub let completed_success : Int
+
+pub fn create_channel_async_raw(@core.RawAddress, Bytes, @ref.Ref[UInt64]) -> Int
+
+pub fn get_channel_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_default_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_deferral_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_expiration_time(@core.RawAddress) -> Int64 raise @core.WindowsError
+
+pub fn get_expiration_time_raw(@core.RawAddress, @ref.Ref[Int64]) -> Int
+
+pub fn get_extended_error(@core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn get_extended_error_raw(@core.RawAddress, @ref.Ref[Int]) -> Int
+
+pub fn get_payload_raw(@core.RawAddress, @ref.Ref[UInt], @ref.Ref[UInt64]) -> Int
+
+pub fn get_status(@core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn get_status_raw(@core.RawAddress, @ref.Ref[Int]) -> Int
+
+pub fn get_uri_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub let in_progress : Int
+
+pub let in_progress_retry : Int
+
+pub fn is_supported_raw(@core.RawAddress, Bytes) -> Int
+
+pub fn register_(@core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn register__raw(@core.RawAddress) -> Int
+
+pub fn remove_canceled(@core.RawAddress, Int64) -> Unit raise @core.WindowsError
+
+pub fn remove_canceled_raw(@core.RawAddress, Int64) -> Int
+
+pub fn remove_push_received(@core.RawAddress, Int64) -> Unit raise @core.WindowsError
+
+pub fn remove_push_received_raw(@core.RawAddress, Int64) -> Int
+
+pub fn unregister(@core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn unregister_all(@core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn unregister_all_raw(@core.RawAddress) -> Int
+
+pub fn unregister_raw(@core.RawAddress) -> Int
+
+// Errors
+
+// Types and methods
+
+// Type aliases
+pub using @2a2f3da55951b2ce {type PushNotificationChannel_f38e140358f1 as PushNotificationChannel}
+
+pub using @2a2f3da55951b2ce {type PushNotificationChannelStatus_d8c3d877155a as PushNotificationChannelStatus}
+
+pub using @2a2f3da55951b2ce {type PushNotificationCreateChannelResult_161919dadb4f as PushNotificationCreateChannelResult}
+
+pub using @2a2f3da55951b2ce {type PushNotificationCreateChannelStatus_380bd955cc2a as PushNotificationCreateChannelStatus}
+
+pub using @2a2f3da55951b2ce {type PushNotificationManager_7ed1f6d1506f as PushNotificationManager}
+
+pub using @2a2f3da55951b2ce {type PushNotificationReceivedEventArgs_fd0f7f8530b4 as PushNotificationReceivedEventArgs}
+
+pub using @2a2f3da55951b2ce {type PushNotificationsContract_6cec817be958 as PushNotificationsContract}
+
+// Traits

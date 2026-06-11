@@ -1,0 +1,390 @@
+// Generated using `moon info`, DON'T EDIT IT
+package "moonbit-community/win32api/windows/perception/spatial"
+
+import {
+  "moonbit-community/win32api/runtime/core",
+  "moonbit-community/win32api/scc/8f303e0f5d9574e5",
+  "moonbitlang/core/ref",
+}
+
+// Values
+pub let aborted : Int
+
+pub fn add_added(@core.RawAddress, @core.RawAddress) -> Int64 raise @core.WindowsError
+
+pub fn add_added_raw(@core.RawAddress, @core.RawAddress, @ref.Ref[Int64]) -> Int
+
+pub fn add_current_changed(@core.RawAddress, @core.RawAddress) -> Int64 raise @core.WindowsError
+
+pub fn add_current_changed_raw(@core.RawAddress, @core.RawAddress, @ref.Ref[Int64]) -> Int
+
+pub fn add_enumeration_completed(@core.RawAddress, @core.RawAddress) -> Int64 raise @core.WindowsError
+
+pub fn add_enumeration_completed_raw(@core.RawAddress, @core.RawAddress, @ref.Ref[Int64]) -> Int
+
+pub fn add_locatability_changed(@core.RawAddress, @core.RawAddress) -> Int64 raise @core.WindowsError
+
+pub fn add_locatability_changed_raw(@core.RawAddress, @core.RawAddress, @ref.Ref[Int64]) -> Int
+
+pub fn add_positional_tracking_deactivating(@core.RawAddress, @core.RawAddress) -> Int64 raise @core.WindowsError
+
+pub fn add_positional_tracking_deactivating_raw(@core.RawAddress, @core.RawAddress, @ref.Ref[Int64]) -> Int
+
+pub fn add_raw_coordinate_system_adjusted(@core.RawAddress, @core.RawAddress) -> Int64 raise @core.WindowsError
+
+pub fn add_raw_coordinate_system_adjusted_raw(@core.RawAddress, @core.RawAddress, @ref.Ref[Int64]) -> Int
+
+pub fn add_removed(@core.RawAddress, @core.RawAddress) -> Int64 raise @core.WindowsError
+
+pub fn add_removed_raw(@core.RawAddress, @core.RawAddress, @ref.Ref[Int64]) -> Int
+
+pub fn add_updated(@core.RawAddress, @core.RawAddress) -> Int64 raise @core.WindowsError
+
+pub fn add_updated_raw(@core.RawAddress, @core.RawAddress, @ref.Ref[Int64]) -> Int
+
+pub fn adjust_heading(@core.RawAddress, Double) -> Unit raise @core.WindowsError
+
+pub fn adjust_heading_raw(@core.RawAddress, Double) -> Int
+
+pub let allowed : Int
+
+pub let bounded : Int
+
+pub fn clear(@core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn clear_raw(@core.RawAddress) -> Int
+
+pub fn create_attached_frame_of_reference_at_current_heading_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn create_attached_frame_of_reference_at_current_heading_with_position_and_orientation_and_relative_heading_raw(@core.RawAddress, Bytes, Bytes, Double, @ref.Ref[UInt64]) -> Int
+
+pub fn create_attached_frame_of_reference_at_current_heading_with_position_and_orientation_raw(@core.RawAddress, Bytes, Bytes, @ref.Ref[UInt64]) -> Int
+
+pub fn create_attached_frame_of_reference_at_current_heading_with_position_raw(@core.RawAddress, Bytes, @ref.Ref[UInt64]) -> Int
+
+pub fn create_entity_watcher_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn create_stationary_frame_of_reference_at_current_location_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn create_stationary_frame_of_reference_at_current_location_with_position_and_orientation_and_relative_heading_raw(@core.RawAddress, Bytes, Bytes, Double, @ref.Ref[UInt64]) -> Int
+
+pub fn create_stationary_frame_of_reference_at_current_location_with_position_and_orientation_raw(@core.RawAddress, Bytes, Bytes, @ref.Ref[UInt64]) -> Int
+
+pub fn create_stationary_frame_of_reference_at_current_location_with_position_raw(@core.RawAddress, Bytes, @ref.Ref[UInt64]) -> Int
+
+pub fn create_with_spatial_anchor_and_properties_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn create_with_spatial_anchor_raw(@core.RawAddress, @core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub let created : Int
+
+pub let denied_by_system : Int
+
+pub let denied_by_user : Int
+
+pub let enumeration_completed : Int
+
+pub let forward_only : Int
+
+pub fn from_box_raw(@core.RawAddress, @core.RawAddress, Bytes, @ref.Ref[UInt64]) -> Int
+
+pub fn from_frustum_raw(@core.RawAddress, @core.RawAddress, Bytes, @ref.Ref[UInt64]) -> Int
+
+pub fn from_oriented_box_raw(@core.RawAddress, @core.RawAddress, Bytes, @ref.Ref[UInt64]) -> Int
+
+pub fn from_sphere_raw(@core.RawAddress, @core.RawAddress, Bytes, @ref.Ref[UInt64]) -> Int
+
+pub fn get_absolute_angular_acceleration(@core.RawAddress) -> Bytes raise @core.WindowsError
+
+pub fn get_absolute_angular_acceleration_axis_angle(@core.RawAddress) -> Bytes raise @core.WindowsError
+
+pub fn get_absolute_angular_acceleration_axis_angle_raw(@core.RawAddress, Bytes) -> Int
+
+pub fn get_absolute_angular_acceleration_raw(@core.RawAddress, Bytes) -> Int
+
+pub fn get_absolute_angular_velocity(@core.RawAddress) -> Bytes raise @core.WindowsError
+
+pub fn get_absolute_angular_velocity_axis_angle(@core.RawAddress) -> Bytes raise @core.WindowsError
+
+pub fn get_absolute_angular_velocity_axis_angle_raw(@core.RawAddress, Bytes) -> Int
+
+pub fn get_absolute_angular_velocity_raw(@core.RawAddress, Bytes) -> Int
+
+pub fn get_absolute_linear_acceleration(@core.RawAddress) -> Bytes raise @core.WindowsError
+
+pub fn get_absolute_linear_acceleration_raw(@core.RawAddress, Bytes) -> Int
+
+pub fn get_absolute_linear_velocity(@core.RawAddress) -> Bytes raise @core.WindowsError
+
+pub fn get_absolute_linear_velocity_raw(@core.RawAddress, Bytes) -> Int
+
+pub fn get_all_saved_anchors_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_anchor_export_sufficiency_async_raw(@core.RawAddress, @core.RawAddress, Int, @ref.Ref[UInt64]) -> Int
+
+pub fn get_anchor_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_canceled_raw(@core.RawAddress, Bytes) -> Int
+
+pub fn get_coordinate_system_2f0caa7c2a_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_coordinate_system_at_current_location_raw(@core.RawAddress, @core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_coordinate_system_cd4428ed87_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_coordinate_system_ee0061e00d_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_current_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_default_47366e43d6_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_default_ce9428ba1e_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_entity_12f307a5ff_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_entity_45e034a6f4_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_entity_d8ee775d8f_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_id_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_is_minimally_sufficient_raw(@core.RawAddress, Bytes) -> Int
+
+pub fn get_is_supported_raw(@core.RawAddress, Bytes) -> Int
+
+pub fn get_locatability(@core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn get_locatability_raw(@core.RawAddress, @ref.Ref[Int]) -> Int
+
+pub fn get_look_direction_range(@core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn get_look_direction_range_raw(@core.RawAddress, @ref.Ref[Int]) -> Int
+
+pub fn get_movement_range(@core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn get_movement_range_raw(@core.RawAddress, @ref.Ref[Int]) -> Int
+
+pub fn get_old_raw_coordinate_system_to_new_raw_coordinate_system_transform(@core.RawAddress) -> Bytes raise @core.WindowsError
+
+pub fn get_old_raw_coordinate_system_to_new_raw_coordinate_system_transform_raw(@core.RawAddress, Bytes) -> Int
+
+pub fn get_orientation(@core.RawAddress) -> Bytes raise @core.WindowsError
+
+pub fn get_orientation_raw(@core.RawAddress, Bytes) -> Int
+
+pub fn get_position(@core.RawAddress) -> Bytes raise @core.WindowsError
+
+pub fn get_position_raw(@core.RawAddress, Bytes) -> Int
+
+pub fn get_properties_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_raw_coordinate_system_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_recommended_sufficiency_level_raw(@core.RawAddress, Bytes) -> Int
+
+pub fn get_relative_orientation(@core.RawAddress) -> Bytes raise @core.WindowsError
+
+pub fn get_relative_orientation_raw(@core.RawAddress, Bytes) -> Int
+
+pub fn get_relative_position(@core.RawAddress) -> Bytes raise @core.WindowsError
+
+pub fn get_relative_position_raw(@core.RawAddress, Bytes) -> Int
+
+pub fn get_removed_by_user_raw(@core.RawAddress, Bytes) -> Int
+
+pub fn get_stationary_coordinate_system_at_timestamp_raw(@core.RawAddress, @core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_status(@core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn get_status_raw(@core.RawAddress, @ref.Ref[Int]) -> Int
+
+pub fn get_sufficiency_level_raw(@core.RawAddress, Bytes) -> Int
+
+pub let no_movement : Int
+
+pub let omnidirectional : Int
+
+pub let orientation_only : Int
+
+pub let positional_tracking_activating : Int
+
+pub let positional_tracking_active : Int
+
+pub let positional_tracking_inhibited : Int
+
+pub fn put_canceled(@core.RawAddress, UInt) -> Unit raise @core.WindowsError
+
+pub fn put_canceled_raw(@core.RawAddress, UInt) -> Int
+
+pub fn put_relative_orientation(@core.RawAddress, Bytes) -> Unit raise @core.WindowsError
+
+pub fn put_relative_orientation_raw(@core.RawAddress, Bytes) -> Int
+
+pub fn put_relative_position(@core.RawAddress, Bytes) -> Unit raise @core.WindowsError
+
+pub fn put_relative_position_raw(@core.RawAddress, Bytes) -> Int
+
+pub let relocalization : Int
+
+pub fn remove(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn remove_added(@core.RawAddress, Int64) -> Unit raise @core.WindowsError
+
+pub fn remove_added_raw(@core.RawAddress, Int64) -> Int
+
+pub fn remove_async_raw(@core.RawAddress, @core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn remove_current_changed(@core.RawAddress, Int64) -> Unit raise @core.WindowsError
+
+pub fn remove_current_changed_raw(@core.RawAddress, Int64) -> Int
+
+pub fn remove_enumeration_completed(@core.RawAddress, Int64) -> Unit raise @core.WindowsError
+
+pub fn remove_enumeration_completed_raw(@core.RawAddress, Int64) -> Int
+
+pub fn remove_locatability_changed(@core.RawAddress, Int64) -> Unit raise @core.WindowsError
+
+pub fn remove_locatability_changed_raw(@core.RawAddress, Int64) -> Int
+
+pub fn remove_positional_tracking_deactivating(@core.RawAddress, Int64) -> Unit raise @core.WindowsError
+
+pub fn remove_positional_tracking_deactivating_raw(@core.RawAddress, Int64) -> Int
+
+pub fn remove_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn remove_raw_coordinate_system_adjusted(@core.RawAddress, Int64) -> Unit raise @core.WindowsError
+
+pub fn remove_raw_coordinate_system_adjusted_raw(@core.RawAddress, Int64) -> Int
+
+pub fn remove_removed(@core.RawAddress, Int64) -> Unit raise @core.WindowsError
+
+pub fn remove_removed_raw(@core.RawAddress, Int64) -> Int
+
+pub fn remove_updated(@core.RawAddress, Int64) -> Unit raise @core.WindowsError
+
+pub fn remove_updated_raw(@core.RawAddress, Int64) -> Int
+
+pub fn request_access_async_20e83f45c2_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn request_access_async_4d84c04033_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn request_new_stage_async_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn request_store_async_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn save_async_raw(@core.RawAddress, @core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub let sharing : Int
+
+pub fn start(@core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn start_raw(@core.RawAddress) -> Int
+
+pub let started : Int
+
+pub fn stop(@core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn stop_raw(@core.RawAddress) -> Int
+
+pub let stopped : Int
+
+pub let stopping : Int
+
+pub fn try_create_relative_to_raw(@core.RawAddress, @core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn try_create_with_position_and_orientation_relative_to_raw(@core.RawAddress, @core.RawAddress, Bytes, Bytes, @ref.Ref[UInt64]) -> Int
+
+pub fn try_create_with_position_relative_to_raw(@core.RawAddress, @core.RawAddress, Bytes, @ref.Ref[UInt64]) -> Int
+
+pub fn try_export_anchor_async_raw(@core.RawAddress, @core.RawAddress, Int, @core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn try_export_anchors_async_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn try_get_for_remote_system_session_raw(@core.RawAddress, @core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn try_get_movement_bounds_raw(@core.RawAddress, @core.RawAddress, @ref.Ref[UInt], @ref.Ref[UInt64]) -> Int
+
+pub fn try_get_relative_heading_at_timestamp_raw(@core.RawAddress, @core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn try_get_transform_to_raw(@core.RawAddress, @core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn try_import_anchors_async_raw(@core.RawAddress, @core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn try_locate_at_timestamp_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn try_save_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, Bytes) -> Int
+
+pub let unavailable : Int
+
+pub let unspecified : Int
+
+// Errors
+
+// Types and methods
+
+// Type aliases
+pub using @8f303e0f5d9574e5 {type SpatialAnchor_b9b07b55fca2 as SpatialAnchor}
+
+pub using @8f303e0f5d9574e5 {type SpatialAnchorExportPurpose_b2104e84566f as SpatialAnchorExportPurpose}
+
+pub using @8f303e0f5d9574e5 {type SpatialAnchorExportSufficiency_2171192fefde as SpatialAnchorExportSufficiency}
+
+pub using @8f303e0f5d9574e5 {type SpatialAnchorExporter_8902967d33b3 as SpatialAnchorExporter}
+
+pub using @8f303e0f5d9574e5 {type SpatialAnchorManager_429978510db2 as SpatialAnchorManager}
+
+pub using @8f303e0f5d9574e5 {type SpatialAnchorRawCoordinateSystemAdjustedEventArgs_ddd072203754 as SpatialAnchorRawCoordinateSystemAdjustedEventArgs}
+
+pub using @8f303e0f5d9574e5 {type SpatialAnchorStore_b720948431df as SpatialAnchorStore}
+
+pub using @8f303e0f5d9574e5 {type SpatialAnchorTransferManager_50810c88197d as SpatialAnchorTransferManager}
+
+pub using @8f303e0f5d9574e5 {type SpatialBoundingBox_7dc26883817f as SpatialBoundingBox}
+
+pub using @8f303e0f5d9574e5 {type SpatialBoundingFrustum_71d9014e48d9 as SpatialBoundingFrustum}
+
+pub using @8f303e0f5d9574e5 {type SpatialBoundingOrientedBox_80db510766ce as SpatialBoundingOrientedBox}
+
+pub using @8f303e0f5d9574e5 {type SpatialBoundingSphere_002e847dba05 as SpatialBoundingSphere}
+
+pub using @8f303e0f5d9574e5 {type SpatialBoundingVolume_3e1c5655b6ab as SpatialBoundingVolume}
+
+pub using @8f303e0f5d9574e5 {type SpatialCoordinateSystem_96e36c185a4d as SpatialCoordinateSystem}
+
+pub using @8f303e0f5d9574e5 {type SpatialEntity_5d83c9c79bc6 as SpatialEntity}
+
+pub using @8f303e0f5d9574e5 {type SpatialEntityAddedEventArgs_11f4fcea5339 as SpatialEntityAddedEventArgs}
+
+pub using @8f303e0f5d9574e5 {type SpatialEntityRemovedEventArgs_ebad520aeab0 as SpatialEntityRemovedEventArgs}
+
+pub using @8f303e0f5d9574e5 {type SpatialEntityStore_57db99a0125b as SpatialEntityStore}
+
+pub using @8f303e0f5d9574e5 {type SpatialEntityUpdatedEventArgs_942610ce2344 as SpatialEntityUpdatedEventArgs}
+
+pub using @8f303e0f5d9574e5 {type SpatialEntityWatcher_805d3abaa34e as SpatialEntityWatcher}
+
+pub using @8f303e0f5d9574e5 {type SpatialEntityWatcherStatus_7201b0f9dd98 as SpatialEntityWatcherStatus}
+
+pub using @8f303e0f5d9574e5 {type SpatialLocatability_b9438bca5963 as SpatialLocatability}
+
+pub using @8f303e0f5d9574e5 {type SpatialLocation_1f5331c61ebb as SpatialLocation}
+
+pub using @8f303e0f5d9574e5 {type SpatialLocator_00d9a78f2b8e as SpatialLocator}
+
+pub using @8f303e0f5d9574e5 {type SpatialLocatorAttachedFrameOfReference_410b6899b379 as SpatialLocatorAttachedFrameOfReference}
+
+pub using @8f303e0f5d9574e5 {type SpatialLocatorPositionalTrackingDeactivatingEventArgs_cba325c94428 as SpatialLocatorPositionalTrackingDeactivatingEventArgs}
+
+pub using @8f303e0f5d9574e5 {type SpatialLookDirectionRange_e16e3b683d35 as SpatialLookDirectionRange}
+
+pub using @8f303e0f5d9574e5 {type SpatialMovementRange_f00858e362a7 as SpatialMovementRange}
+
+pub using @8f303e0f5d9574e5 {type SpatialPerceptionAccessStatus_bc1cf78d621d as SpatialPerceptionAccessStatus}
+
+pub using @8f303e0f5d9574e5 {type SpatialRay_e13113f4148f as SpatialRay}
+
+pub using @8f303e0f5d9574e5 {type SpatialStageFrameOfReference_611b64d41396 as SpatialStageFrameOfReference}
+
+pub using @8f303e0f5d9574e5 {type SpatialStationaryFrameOfReference_321161f03734 as SpatialStationaryFrameOfReference}
+
+// Traits

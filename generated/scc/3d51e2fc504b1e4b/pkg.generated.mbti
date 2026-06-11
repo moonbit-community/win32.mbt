@@ -1,0 +1,67 @@
+// Generated using `moon info`, DON'T EDIT IT
+package "moonbit-community/win32api/scc/3d51e2fc504b1e4b"
+
+import {
+  "moonbit-community/win32api/runtime/com",
+  "moonbit-community/win32api/runtime/core",
+  "moonbit-community/win32api/runtime/strings",
+  "moonbitlang/core/debug",
+  "moonbitlang/core/ref",
+}
+
+// Values
+pub fn get_status_c587f22e8cc0(@core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn get_status_c587f22e8cc0_raw(@core.RawAddress, @ref.Ref[Int]) -> Int
+
+pub fn get_storage_size_7f59c8833bf6(@core.RawAddress) -> UInt raise @core.WindowsError
+
+pub fn get_storage_size_7f59c8833bf6_raw(@core.RawAddress, @ref.Ref[UInt]) -> Int
+
+pub fn get_upload_quota_size_aebb8eb31d46(@core.RawAddress) -> UInt raise @core.WindowsError
+
+pub fn get_upload_quota_size_aebb8eb31d46_raw(@core.RawAddress, @ref.Ref[UInt]) -> Int
+
+pub fn put_storage_size_739ff90f47c0(@core.RawAddress, UInt) -> Unit raise @core.WindowsError
+
+pub fn put_storage_size_739ff90f47c0_raw(@core.RawAddress, UInt) -> Int
+
+pub fn put_upload_quota_size_699f51668008(@core.RawAddress, UInt) -> Unit raise @core.WindowsError
+
+pub fn put_upload_quota_size_699f51668008_raw(@core.RawAddress, UInt) -> Int
+
+pub fn register__747cacb1fb76_raw(@core.RawAddress, @core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn register__f174ee4f9c55_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub let settings_out_of_range_065c6d24f525 : Int
+
+pub let success_17932f34906c : Int
+
+pub let unknown_failure_06d80f34da48 : Int
+
+// Errors
+
+// Types and methods
+pub type IPlatformTelemetryClientStatics_ab1119d4c7fb
+
+pub type IPlatformTelemetryRegistrationResult_5a4174fc2745
+
+pub type IPlatformTelemetryRegistrationSettings_ef27f3cc04c1
+
+pub type PlatformTelemetryClient_07a9ec63d1b4
+pub fn PlatformTelemetryClient_07a9ec63d1b4::register_(@strings.HString) -> @com.ComPtr[PlatformTelemetryRegistrationResult_324c393e8900] raise @core.WindowsError
+pub fn PlatformTelemetryClient_07a9ec63d1b4::register_with_settings(@strings.HString, @com.ComPtr[PlatformTelemetryRegistrationSettings_a7e7a6d1b7c9]) -> @com.ComPtr[PlatformTelemetryRegistrationResult_324c393e8900] raise @core.WindowsError
+
+pub type PlatformTelemetryRegistrationResult_324c393e8900
+
+pub type PlatformTelemetryRegistrationSettings_a7e7a6d1b7c9
+pub fn PlatformTelemetryRegistrationSettings_a7e7a6d1b7c9::new() -> @com.ComPtr[Self] raise @core.WindowsError
+
+pub(all) struct PlatformTelemetryRegistrationStatus_5417797b3b87(Int) derive(Compare, Eq, @debug.Debug)
+pub fn PlatformTelemetryRegistrationStatus_5417797b3b87::from_int(Int) -> Self
+pub fn PlatformTelemetryRegistrationStatus_5417797b3b87::to_int(Self) -> Int
+
+// Type aliases
+
+// Traits

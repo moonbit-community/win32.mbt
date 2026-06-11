@@ -1,0 +1,192 @@
+// Generated using `moon info`, DON'T EDIT IT
+package "moonbit-community/win32api/windows/system/update"
+
+import {
+  "moonbit-community/win32api/runtime/core",
+  "moonbit-community/win32api/scc/60a8c9de461eaa9c",
+  "moonbitlang/core/ref",
+}
+
+// Values
+pub fn add_state_changed(@core.RawAddress, @core.RawAddress) -> Int64 raise @core.WindowsError
+
+pub fn add_state_changed_raw(@core.RawAddress, @core.RawAddress, @ref.Ref[Int64]) -> Int
+
+pub let allow_reboot : Int
+
+pub let attention_required : Int
+
+pub fn block_automatic_reboot_async_raw(@core.RawAddress, @core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub let calculating : Int
+
+pub let completed_2ef7c9101b : Int
+
+pub let completed_7a84cbf3bb : Int
+
+pub let detecting : Int
+
+pub let downloading_008e37c53a : Int
+
+pub let downloading_abc1ce5f76 : Int
+
+pub let error_60f44626a8 : Int
+
+pub let error_a2a6779e62 : Int
+
+pub let finalizing : Int
+
+pub fn get_attention_required_reason(@core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn get_attention_required_reason_raw(@core.RawAddress, @ref.Ref[Int]) -> Int
+
+pub fn get_automatic_reboot_block_ids_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_description_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_download_progress_7706941ce7_raw(@core.RawAddress, Bytes) -> Int
+
+pub fn get_download_progress_d7536a9ce2_raw(@core.RawAddress, Bytes) -> Int
+
+pub fn get_extended_error_0bf75bf072(@core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn get_extended_error_0bf75bf072_raw(@core.RawAddress, @ref.Ref[Int]) -> Int
+
+pub fn get_extended_error_7065edd360(@core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn get_extended_error_7065edd360_raw(@core.RawAddress, @ref.Ref[Int]) -> Int
+
+pub fn get_extended_error_84bf0aa2bf(@core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn get_extended_error_84bf0aa2bf_raw(@core.RawAddress, @ref.Ref[Int]) -> Int
+
+pub fn get_flight_ring_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_id_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_install_progress_1e03e081f7_raw(@core.RawAddress, Bytes) -> Int
+
+pub fn get_install_progress_b15775b2be_raw(@core.RawAddress, Bytes) -> Int
+
+pub fn get_is_interactive_raw(@core.RawAddress, Bytes) -> Int
+
+pub fn get_last_error_info_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_last_update_check_time(@core.RawAddress) -> Int64 raise @core.WindowsError
+
+pub fn get_last_update_check_time_raw(@core.RawAddress, @ref.Ref[Int64]) -> Int
+
+pub fn get_last_update_install_time(@core.RawAddress) -> Int64 raise @core.WindowsError
+
+pub fn get_last_update_install_time_raw(@core.RawAddress, @ref.Ref[Int64]) -> Int
+
+pub fn get_revision(@core.RawAddress) -> UInt raise @core.WindowsError
+
+pub fn get_revision_raw(@core.RawAddress, @ref.Ref[UInt]) -> Int
+
+pub fn get_state_15fba86e24(@core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn get_state_15fba86e24_raw(@core.RawAddress, @ref.Ref[Int]) -> Int
+
+pub fn get_state_d210a1ffaf(@core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn get_state_d210a1ffaf_raw(@core.RawAddress, @ref.Ref[Int]) -> Int
+
+pub fn get_state_e8f2b364e1(@core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn get_state_e8f2b364e1_raw(@core.RawAddress, @ref.Ref[Int]) -> Int
+
+pub fn get_title_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_update_items_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_user_active_hours_end(@core.RawAddress) -> Int64 raise @core.WindowsError
+
+pub fn get_user_active_hours_end_raw(@core.RawAddress, @ref.Ref[Int64]) -> Int
+
+pub fn get_user_active_hours_max(@core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn get_user_active_hours_max_raw(@core.RawAddress, @ref.Ref[Int]) -> Int
+
+pub fn get_user_active_hours_start(@core.RawAddress) -> Int64 raise @core.WindowsError
+
+pub fn get_user_active_hours_start_raw(@core.RawAddress, @ref.Ref[Int64]) -> Int
+
+pub let idle : Int
+
+pub let initializing : Int
+
+pub let installing_07ada85871 : Int
+
+pub let installing_26f4ffb8d5 : Int
+
+pub let insufficient_battery : Int
+
+pub let insufficient_disk_space : Int
+
+pub fn is_supported_raw(@core.RawAddress, Bytes) -> Int
+
+pub let network_required : Int
+
+pub let none : Int
+
+pub let not_started : Int
+
+pub let preparing : Int
+
+pub let ready_to_download : Int
+
+pub let ready_to_finalize : Int
+
+pub let ready_to_install : Int
+
+pub let reboot_required_1733b83eb0 : Int
+
+pub let reboot_required_a1c6149624 : Int
+
+pub fn reboot_to_complete_install(@core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn reboot_to_complete_install_raw(@core.RawAddress) -> Int
+
+pub fn remove_state_changed(@core.RawAddress, Int64) -> Unit raise @core.WindowsError
+
+pub fn remove_state_changed_raw(@core.RawAddress, Int64) -> Int
+
+pub fn set_flight_ring_raw(@core.RawAddress, @core.RawAddress, Bytes) -> Int
+
+pub fn start_cancel_updates(@core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn start_cancel_updates_raw(@core.RawAddress) -> Int
+
+pub fn start_install(@core.RawAddress, Int) -> Unit raise @core.WindowsError
+
+pub fn start_install_raw(@core.RawAddress, Int) -> Int
+
+pub fn try_set_user_active_hours_raw(@core.RawAddress, Int64, Int64, Bytes) -> Int
+
+pub fn unblock_automatic_reboot_async_raw(@core.RawAddress, @core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub let up_to_reboot : Int
+
+pub let update_blocked : Int
+
+// Errors
+
+// Types and methods
+
+// Type aliases
+pub using @60a8c9de461eaa9c {type SystemUpdateAttentionRequiredReason_64bde14ff142 as SystemUpdateAttentionRequiredReason}
+
+pub using @60a8c9de461eaa9c {type SystemUpdateItem_fd91aa7b8331 as SystemUpdateItem}
+
+pub using @60a8c9de461eaa9c {type SystemUpdateItemState_1572bc7125a0 as SystemUpdateItemState}
+
+pub using @60a8c9de461eaa9c {type SystemUpdateLastErrorInfo_b7aa7016bba8 as SystemUpdateLastErrorInfo}
+
+pub using @60a8c9de461eaa9c {type SystemUpdateManager_26b3ffd7ef91 as SystemUpdateManager}
+
+pub using @60a8c9de461eaa9c {type SystemUpdateManagerState_97130574066f as SystemUpdateManagerState}
+
+pub using @60a8c9de461eaa9c {type SystemUpdateStartInstallAction_d03456ed8de5 as SystemUpdateStartInstallAction}
+
+// Traits

@@ -1,0 +1,154 @@
+// Generated using `moon info`, DON'T EDIT IT
+package "moonbit-community/win32api/scc/bba223dcbb7d7b8e"
+
+import {
+  "moonbit-community/win32api/runtime/com",
+  "moonbit-community/win32api/runtime/core",
+  "moonbit-community/win32api/runtime/strings",
+  "moonbitlang/core/debug",
+  "moonbitlang/core/ref",
+}
+
+// Values
+pub let alert_status_available_7f78d41f63b2 : Int
+
+pub fn attach_async_e2a93890a49a_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub let base64_63905fb549e6 : Int
+
+pub let boolean_ff4ee40acc78 : Int
+
+pub let communicating_2b4967aef660 : Int
+
+pub let completed_a7856c8255e7 : Int
+
+pub let connecting_fad33f19212e : Int
+
+pub let critical_c9c58defc5a1 : Int
+
+pub fn delete_c0c8e1b35807(@core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn delete_c0c8e1b35807_raw(@core.RawAddress) -> Int
+
+pub fn delete_session_by_id_5f3091b3773f(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn delete_session_by_id_5f3091b3773f_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub let fatal_738aa2d63c24 : Int
+
+pub fn get_alerts_ad3cab6f8a94_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_data_bc792c1d8689_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_extended_error_acd76c8e2729(@core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn get_extended_error_acd76c8e2729_raw(@core.RawAddress, @ref.Ref[Int]) -> Int
+
+pub fn get_format_ece194a06e51(@core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn get_format_ece194a06e51_raw(@core.RawAddress, @ref.Ref[Int]) -> Int
+
+pub fn get_id_c6acd5503406_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_mark_60f97ea7ecb7(@core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn get_mark_60f97ea7ecb7_raw(@core.RawAddress, @ref.Ref[Int]) -> Int
+
+pub fn get_session_by_id_f7cd2a065707_raw(@core.RawAddress, @core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_session_ids_ac506c2cddce_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_source_015b7d763eb5_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_state_9c01699b7b3d(@core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn get_state_9c01699b7b3d_raw(@core.RawAddress, @ref.Ref[Int]) -> Int
+
+pub fn get_status_8416c2c2c167(@core.RawAddress) -> UInt raise @core.WindowsError
+
+pub fn get_status_8416c2c2c167_raw(@core.RawAddress, @ref.Ref[UInt]) -> Int
+
+pub fn get_target_6d3c781122dc_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_type_834f20f05af4_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub let informational_7dd015aeac32 : Int
+
+pub let integer_c313ddb334ed : Int
+
+pub let none_10b67cbdc551 : Int
+
+pub let not_started_7a275a67607a : Int
+
+pub fn put_data_9bf2ea3aa014(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn put_data_9bf2ea3aa014_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn put_format_6cc87c0a61c3(@core.RawAddress, Int) -> Unit raise @core.WindowsError
+
+pub fn put_format_6cc87c0a61c3_raw(@core.RawAddress, Int) -> Int
+
+pub fn put_mark_01bd71d7df05(@core.RawAddress, Int) -> Unit raise @core.WindowsError
+
+pub fn put_mark_01bd71d7df05_raw(@core.RawAddress, Int) -> Int
+
+pub fn put_source_5eed064a8ef4(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn put_source_5eed064a8ef4_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn put_target_20358c248ac1(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn put_target_20358c248ac1_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn put_type_e4daaacae6bb(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn put_type_e4daaacae6bb_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub let retrying_e8c617a6020b : Int
+
+pub fn start_async_8f876db6c09a_raw(@core.RawAddress, @core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn start_async_e9faacfebaf2_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub let starting_d6048b616c3b : Int
+
+pub let string_dd300d4cab5b : Int
+
+pub fn try_create_session_9ea9787c856a_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub let warning_3acac18760d8 : Int
+
+// Errors
+
+// Types and methods
+pub type IMdmAlert_43c0d079a609
+
+pub type IMdmSessionManagerStatics_65fb07cc6671
+
+pub type IMdmSession_864ecc960642
+
+pub(all) struct MdmAlertDataType_8424f9f2ded0(Int) derive(Compare, Eq, @debug.Debug)
+pub fn MdmAlertDataType_8424f9f2ded0::from_int(Int) -> Self
+pub fn MdmAlertDataType_8424f9f2ded0::to_int(Self) -> Int
+
+pub(all) struct MdmAlertMark_bfc5d91f25fa(Int) derive(Compare, Eq, @debug.Debug)
+pub fn MdmAlertMark_bfc5d91f25fa::from_int(Int) -> Self
+pub fn MdmAlertMark_bfc5d91f25fa::to_int(Self) -> Int
+
+pub type MdmAlert_a7640fc13570
+pub fn MdmAlert_a7640fc13570::new() -> @com.ComPtr[Self] raise @core.WindowsError
+
+pub type MdmSessionManager_710a493319ed
+pub fn MdmSessionManager_710a493319ed::delete_session_by_id(@strings.HString) -> Unit raise @core.WindowsError
+pub fn MdmSessionManager_710a493319ed::get_session_by_id(@strings.HString) -> @com.ComPtr[MdmSession_1dd6bbe097b3] raise @core.WindowsError
+pub fn MdmSessionManager_710a493319ed::try_create_session() -> @com.ComPtr[MdmSession_1dd6bbe097b3] raise @core.WindowsError
+
+pub(all) struct MdmSessionState_af35fcbbbd8f(Int) derive(Compare, Eq, @debug.Debug)
+pub fn MdmSessionState_af35fcbbbd8f::from_int(Int) -> Self
+pub fn MdmSessionState_af35fcbbbd8f::to_int(Self) -> Int
+
+pub type MdmSession_1dd6bbe097b3
+
+// Type aliases
+
+// Traits

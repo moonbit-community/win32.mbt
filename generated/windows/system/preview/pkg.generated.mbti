@@ -1,0 +1,70 @@
+// Generated using `moon info`, DON'T EDIT IT
+package "moonbit-community/win32api/windows/system/preview"
+
+import {
+  "moonbit-community/win32api/runtime/core",
+  "moonbit-community/win32api/scc/f7de8c45b3b00535",
+  "moonbitlang/core/ref",
+}
+
+// Values
+pub fn add_posture_changed(@core.RawAddress, @core.RawAddress) -> Int64 raise @core.WindowsError
+
+pub fn add_posture_changed_raw(@core.RawAddress, @core.RawAddress, @ref.Ref[Int64]) -> Int
+
+pub let closed : Int
+
+pub let concave : Int
+
+pub let convex : Int
+
+pub let flat : Int
+
+pub let full : Int
+
+pub fn get_current_posture_async_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_default_async_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_hinge_state(@core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn get_hinge_state_raw(@core.RawAddress, @ref.Ref[Int]) -> Int
+
+pub fn get_panel1_id_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_panel1_orientation(@core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn get_panel1_orientation_raw(@core.RawAddress, @ref.Ref[Int]) -> Int
+
+pub fn get_panel2_id_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_panel2_orientation(@core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn get_panel2_orientation_raw(@core.RawAddress, @ref.Ref[Int]) -> Int
+
+pub fn get_reading_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_timestamp(@core.RawAddress) -> Int64 raise @core.WindowsError
+
+pub fn get_timestamp_raw(@core.RawAddress, @ref.Ref[Int64]) -> Int
+
+pub fn remove_posture_changed(@core.RawAddress, Int64) -> Unit raise @core.WindowsError
+
+pub fn remove_posture_changed_raw(@core.RawAddress, Int64) -> Int
+
+pub let unknown : Int
+
+// Errors
+
+// Types and methods
+
+// Type aliases
+pub using @f7de8c45b3b00535 {type HingeState_9b2088887864 as HingeState}
+
+pub using @f7de8c45b3b00535 {type TwoPanelHingedDevicePosturePreview_897900e5e57a as TwoPanelHingedDevicePosturePreview}
+
+pub using @f7de8c45b3b00535 {type TwoPanelHingedDevicePosturePreviewReading_1cb82965e15a as TwoPanelHingedDevicePosturePreviewReading}
+
+pub using @f7de8c45b3b00535 {type TwoPanelHingedDevicePosturePreviewReadingChangedEventArgs_cd179fe73bfd as TwoPanelHingedDevicePosturePreviewReadingChangedEventArgs}
+
+// Traits

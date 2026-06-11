@@ -1,0 +1,54 @@
+// Generated using `moon info`, DON'T EDIT IT
+package "moonbit-community/win32api/windows/application_model/store/license_management"
+
+import {
+  "moonbit-community/win32api/runtime/core",
+  "moonbit-community/win32api/scc/ab4dbdc503c3389e",
+  "moonbitlang/core/ref",
+}
+
+// Values
+pub fn add_license_async_raw(@core.RawAddress, @core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub let all_licenses : Int
+
+pub fn get_extended_error(@core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn get_extended_error_raw(@core.RawAddress, @ref.Ref[Int]) -> Int
+
+pub fn get_is_satisfied_raw(@core.RawAddress, Bytes) -> Int
+
+pub fn get_license_satisfaction_infos_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_satisfaction_infos_async_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_satisfied_by_device_raw(@core.RawAddress, Bytes) -> Int
+
+pub fn get_satisfied_by_install_media_raw(@core.RawAddress, Bytes) -> Int
+
+pub fn get_satisfied_by_open_license_raw(@core.RawAddress, Bytes) -> Int
+
+pub fn get_satisfied_by_pass_raw(@core.RawAddress, Bytes) -> Int
+
+pub fn get_satisfied_by_signed_in_user_raw(@core.RawAddress, Bytes) -> Int
+
+pub fn get_satisfied_by_trial_raw(@core.RawAddress, Bytes) -> Int
+
+pub fn refresh_licenses_async_raw(@core.RawAddress, Int, @ref.Ref[UInt64]) -> Int
+
+pub let running_licenses : Int
+
+// Errors
+
+// Types and methods
+
+// Type aliases
+pub using @ab4dbdc503c3389e {type LicenseManager_65d8797173e0 as LicenseManager}
+
+pub using @ab4dbdc503c3389e {type LicenseRefreshOption_2f874ab290b8 as LicenseRefreshOption}
+
+pub using @ab4dbdc503c3389e {type LicenseSatisfactionInfo_5b331acf1a81 as LicenseSatisfactionInfo}
+
+pub using @ab4dbdc503c3389e {type LicenseSatisfactionResult_67693faf1ff2 as LicenseSatisfactionResult}
+
+// Traits

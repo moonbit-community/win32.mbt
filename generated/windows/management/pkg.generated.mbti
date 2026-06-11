@@ -1,0 +1,136 @@
+// Generated using `moon info`, DON'T EDIT IT
+package "moonbit-community/win32api/windows/management"
+
+import {
+  "moonbit-community/win32api/runtime/core",
+  "moonbit-community/win32api/scc/bba223dcbb7d7b8e",
+  "moonbitlang/core/ref",
+}
+
+// Values
+pub let alert_status_available : Int
+
+pub fn attach_async_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub let base64 : Int
+
+pub let boolean : Int
+
+pub let communicating : Int
+
+pub let completed : Int
+
+pub let connecting : Int
+
+pub let critical : Int
+
+pub fn delete(@core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn delete_raw(@core.RawAddress) -> Int
+
+pub fn delete_session_by_id(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn delete_session_by_id_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub let fatal : Int
+
+pub fn get_alerts_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_data_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_extended_error(@core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn get_extended_error_raw(@core.RawAddress, @ref.Ref[Int]) -> Int
+
+pub fn get_format(@core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn get_format_raw(@core.RawAddress, @ref.Ref[Int]) -> Int
+
+pub fn get_id_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_mark(@core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn get_mark_raw(@core.RawAddress, @ref.Ref[Int]) -> Int
+
+pub fn get_session_by_id_raw(@core.RawAddress, @core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_session_ids_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_source_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_state(@core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn get_state_raw(@core.RawAddress, @ref.Ref[Int]) -> Int
+
+pub fn get_status(@core.RawAddress) -> UInt raise @core.WindowsError
+
+pub fn get_status_raw(@core.RawAddress, @ref.Ref[UInt]) -> Int
+
+pub fn get_target_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_type_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub let informational : Int
+
+pub let integer : Int
+
+pub let none : Int
+
+pub let not_started : Int
+
+pub fn put_data(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn put_data_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn put_format(@core.RawAddress, Int) -> Unit raise @core.WindowsError
+
+pub fn put_format_raw(@core.RawAddress, Int) -> Int
+
+pub fn put_mark(@core.RawAddress, Int) -> Unit raise @core.WindowsError
+
+pub fn put_mark_raw(@core.RawAddress, Int) -> Int
+
+pub fn put_source(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn put_source_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn put_target(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn put_target_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn put_type(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn put_type_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub let retrying : Int
+
+pub fn start_async_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn start_with_alerts_async_raw(@core.RawAddress, @core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub let starting : Int
+
+pub let string : Int
+
+pub fn try_create_session_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub let warning : Int
+
+// Errors
+
+// Types and methods
+
+// Type aliases
+pub using @bba223dcbb7d7b8e {type MdmAlert_a7640fc13570 as MdmAlert}
+
+pub using @bba223dcbb7d7b8e {type MdmAlertDataType_8424f9f2ded0 as MdmAlertDataType}
+
+pub using @bba223dcbb7d7b8e {type MdmAlertMark_bfc5d91f25fa as MdmAlertMark}
+
+pub using @bba223dcbb7d7b8e {type MdmSession_1dd6bbe097b3 as MdmSession}
+
+pub using @bba223dcbb7d7b8e {type MdmSessionManager_710a493319ed as MdmSessionManager}
+
+pub using @bba223dcbb7d7b8e {type MdmSessionState_af35fcbbbd8f as MdmSessionState}
+
+// Traits

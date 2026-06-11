@@ -1,0 +1,228 @@
+// Generated using `moon info`, DON'T EDIT IT
+package "moonbit-community/win32api/windows/media/protection"
+
+import {
+  "moonbit-community/win32api/runtime/core",
+  "moonbit-community/win32api/scc/eef56fd1aeba4c94",
+  "moonbitlang/core/ref",
+}
+
+// Values
+pub fn add_component_load_failed(@core.RawAddress, @core.RawAddress) -> Int64 raise @core.WindowsError
+
+pub fn add_component_load_failed_raw(@core.RawAddress, @core.RawAddress, @ref.Ref[Int64]) -> Int
+
+pub fn add_protection_changed(@core.RawAddress, @core.RawAddress) -> Int64 raise @core.WindowsError
+
+pub fn add_protection_changed_raw(@core.RawAddress, @core.RawAddress, @ref.Ref[Int64]) -> Int
+
+pub fn add_reboot_needed(@core.RawAddress, @core.RawAddress) -> Int64 raise @core.WindowsError
+
+pub fn add_reboot_needed_raw(@core.RawAddress, @core.RawAddress, @ref.Ref[Int64]) -> Int
+
+pub fn add_service_requested(@core.RawAddress, @core.RawAddress) -> Int64 raise @core.WindowsError
+
+pub fn add_service_requested_raw(@core.RawAddress, @core.RawAddress, @ref.Ref[Int64]) -> Int
+
+pub let app_component : UInt
+
+pub let app_components_may_need_updating : Int
+
+pub let boot_driver_verification_failed : UInt
+
+pub fn complete(@core.RawAddress, UInt) -> Unit raise @core.WindowsError
+
+pub fn complete_raw(@core.RawAddress, UInt) -> Int
+
+pub let component_certificate_revoked : UInt
+
+pub let component_high_security_certificate_revoked : UInt
+
+pub let component_low_security_certificate_revoked : UInt
+
+pub let component_revoked : UInt
+
+pub let component_signed_with_test_certificate : UInt
+
+pub fn create_pmp_server_raw(@core.RawAddress, @core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub let driver_not_supported : Int
+
+pub let driver_signing_failure : Int
+
+pub let encryption_failure : UInt
+
+pub let environment_not_supported : Int
+
+pub fn get_completion_40016ef57a_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_completion_bf591f3066_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_effective_protection_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_header_hash_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_information_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_items_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_media_playback_item_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_name_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_properties_171e921abb_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_properties_cdfb22b627_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_protection_system(@core.RawAddress) -> Bytes raise @core.WindowsError
+
+pub fn get_protection_system_raw(@core.RawAddress, Bytes) -> Int
+
+pub fn get_public_key_hash_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_reasons(@core.RawAddress) -> UInt raise @core.WindowsError
+
+pub fn get_reasons_raw(@core.RawAddress, @ref.Ref[UInt]) -> Int
+
+pub fn get_renewal_id_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_request_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_type(@core.RawAddress) -> Bytes raise @core.WindowsError
+
+pub fn get_type_raw(@core.RawAddress, Bytes) -> Int
+
+pub let global_revocation_list_absent : UInt
+
+pub let global_revocation_list_load_failed : UInt
+
+pub let invalid_component_certificate_extended_key_use : UInt
+
+pub let invalid_component_certificate_root : UInt
+
+pub let invalid_global_revocation_list_signature : UInt
+
+pub fn invoke_23f0ccec72(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn invoke_23f0ccec72_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn invoke_84b959e07f(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn invoke_84b959e07f_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn invoke_aa718ae862(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn invoke_aa718ae862_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn is_effective_protection_at_least_raw(@core.RawAddress, Int, Bytes) -> Int
+
+pub fn is_type_supported(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn is_type_supported_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @ref.Ref[Int]) -> Int
+
+pub let kernel_mode_component_load : UInt
+
+pub let maybe : Int
+
+pub let no_components_found : Int
+
+pub let not_started : Int
+
+pub let not_supported_1e70851c54 : Int
+
+pub let not_supported_d0291c925b : Int
+
+pub let off : Int
+
+pub let on : Int
+
+pub let on_with_type_enforcement : Int
+
+pub let probably : Int
+
+pub fn remove_component_load_failed(@core.RawAddress, Int64) -> Unit raise @core.WindowsError
+
+pub fn remove_component_load_failed_raw(@core.RawAddress, Int64) -> Int
+
+pub fn remove_protection_changed(@core.RawAddress, Int64) -> Unit raise @core.WindowsError
+
+pub fn remove_protection_changed_raw(@core.RawAddress, Int64) -> Int
+
+pub fn remove_reboot_needed(@core.RawAddress, Int64) -> Unit raise @core.WindowsError
+
+pub fn remove_reboot_needed_raw(@core.RawAddress, Int64) -> Int
+
+pub fn remove_service_requested(@core.RawAddress, Int64) -> Unit raise @core.WindowsError
+
+pub fn remove_service_requested_raw(@core.RawAddress, Int64) -> Int
+
+pub fn renew_system_components_async_raw(@core.RawAddress, @core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn set_desired_min_protection_async_raw(@core.RawAddress, Int, @ref.Ref[UInt64]) -> Int
+
+pub let success : Int
+
+pub let timed_out : Int
+
+pub let trust_established : Int
+
+pub let trust_not_required : Int
+
+pub let unknown_failure_b960ae19e2 : Int
+
+pub let unknown_failure_d36acc9ef8 : Int
+
+pub let updates_in_progress : Int
+
+pub let user_cancelled : Int
+
+pub let user_mode_component_load : UInt
+
+// Errors
+
+// Types and methods
+
+// Type aliases
+pub using @eef56fd1aeba4c94 {type ComponentLoadFailedEventArgs_0541f3ec1f08 as ComponentLoadFailedEventArgs}
+
+pub using @eef56fd1aeba4c94 {type ComponentLoadFailedEventHandler_49f4bd224832 as ComponentLoadFailedEventHandler}
+
+pub using @eef56fd1aeba4c94 {type ComponentRenewal_c4bb6b80f71a as ComponentRenewal}
+
+pub using @eef56fd1aeba4c94 {type GraphicsTrustStatus_d02d17c6700c as GraphicsTrustStatus}
+
+pub using @eef56fd1aeba4c94 {type HdcpProtection_a8862135b789 as HdcpProtection}
+
+pub using @eef56fd1aeba4c94 {type HdcpSession_6a9fa9cd312a as HdcpSession}
+
+pub using @eef56fd1aeba4c94 {type HdcpSetProtectionResult_62394bb0ee36 as HdcpSetProtectionResult}
+
+pub using @eef56fd1aeba4c94 {type IMediaProtectionServiceRequest_1c22b9a13c05 as IMediaProtectionServiceRequest}
+
+pub using @eef56fd1aeba4c94 {type MediaProtectionManager_c9aa67bbe626 as MediaProtectionManager}
+
+pub using @eef56fd1aeba4c94 {type MediaProtectionPMPServer_e378151bbe53 as MediaProtectionPMPServer}
+
+pub using @eef56fd1aeba4c94 {type MediaProtectionServiceCompletion_e4a9c38f5105 as MediaProtectionServiceCompletion}
+
+pub using @eef56fd1aeba4c94 {type ProtectionCapabilities_8cd57b7533ad as ProtectionCapabilities}
+
+pub using @eef56fd1aeba4c94 {type ProtectionCapabilityResult_eb8485c89ac3 as ProtectionCapabilityResult}
+
+pub using @eef56fd1aeba4c94 {type ProtectionRenewalContract_f87a3bfe2aa7 as ProtectionRenewalContract}
+
+pub using @eef56fd1aeba4c94 {type RebootNeededEventHandler_70c54a90733a as RebootNeededEventHandler}
+
+pub using @eef56fd1aeba4c94 {type RenewalStatus_432597b3b28b as RenewalStatus}
+
+pub using @eef56fd1aeba4c94 {type RevocationAndRenewalInformation_b92805b17896 as RevocationAndRenewalInformation}
+
+pub using @eef56fd1aeba4c94 {type RevocationAndRenewalItem_04026229a175 as RevocationAndRenewalItem}
+
+pub using @eef56fd1aeba4c94 {type RevocationAndRenewalReasons_abb76c7d9106 as RevocationAndRenewalReasons}
+
+pub using @eef56fd1aeba4c94 {type ServiceRequestedEventArgs_e1ac5f2de0a1 as ServiceRequestedEventArgs}
+
+pub using @eef56fd1aeba4c94 {type ServiceRequestedEventHandler_26dff831fd9e as ServiceRequestedEventHandler}
+
+// Traits

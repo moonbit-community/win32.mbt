@@ -1,0 +1,1802 @@
+// Generated using `moon info`, DON'T EDIT IT
+package "moonbit-community/win32-bindings/windows/win32/system/remote_management"
+
+import {
+  "moonbit-community/win32-bindings/runtime/core",
+  "moonbit-community/win32-bindings/scc/7f36cfe2eea45ef1",
+}
+
+// Values
+pub fn add_option(@core.RawAddress, @core.RawAddress, Bytes, Int) -> Unit raise @core.WindowsError
+
+pub fn add_option_raw(@core.RawAddress, @core.RawAddress, Bytes, Int) -> Int
+
+pub fn add_selector(@core.RawAddress, @core.RawAddress, Bytes) -> Unit raise @core.WindowsError
+
+pub fn add_selector_raw(@core.RawAddress, @core.RawAddress, Bytes) -> Int
+
+pub fn clear_options(@core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn clear_options_raw(@core.RawAddress) -> Int
+
+pub fn clear_selectors(@core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn clear_selectors_raw(@core.RawAddress) -> Int
+
+pub fn config_sddl(@core.RawAddress, @core.RawAddress, Bytes, Int, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn config_sddl_raw(@core.RawAddress, @core.RawAddress, Bytes, Int, @core.RawAddress) -> Int
+
+pub fn create(@core.RawAddress, Bytes, @core.RawAddress, Int, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn create_connection_options(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn create_connection_options_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn create_raw(@core.RawAddress, Bytes, @core.RawAddress, Int, @core.RawAddress) -> Int
+
+pub fn create_resource_locator(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn create_resource_locator_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn create_session(@core.RawAddress, @core.RawAddress, Int, @core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn create_session_raw(@core.RawAddress, @core.RawAddress, Int, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn delete(@core.RawAddress, Bytes, Int) -> Unit raise @core.WindowsError
+
+pub fn delete_raw(@core.RawAddress, Bytes, Int) -> Int
+
+pub fn enumerate(@core.RawAddress, Bytes, @core.RawAddress, @core.RawAddress, Int, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn enumerate_raw(@core.RawAddress, Bytes, @core.RawAddress, @core.RawAddress, Int, @core.RawAddress) -> Int
+
+pub fn enumeration_flag_associated_instance(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn enumeration_flag_associated_instance_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn enumeration_flag_association_instance(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn enumeration_flag_association_instance_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn enumeration_flag_hierarchy_deep(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn enumeration_flag_hierarchy_deep_base_props_only(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn enumeration_flag_hierarchy_deep_base_props_only_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn enumeration_flag_hierarchy_deep_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn enumeration_flag_hierarchy_shallow(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn enumeration_flag_hierarchy_shallow_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn enumeration_flag_non_xml_text(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn enumeration_flag_non_xml_text_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn enumeration_flag_return_epr(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn enumeration_flag_return_epr_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn enumeration_flag_return_object(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn enumeration_flag_return_object_and_epr(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn enumeration_flag_return_object_and_epr_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn enumeration_flag_return_object_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub let error_redirect_location_invalid : UInt
+
+pub let error_redirect_location_too_long : UInt
+
+pub let error_service_cbt_hardening_invalid : UInt
+
+pub let error_winrs_client_closereceivehandle_null_param : UInt
+
+pub let error_winrs_client_closesendhandle_null_param : UInt
+
+pub let error_winrs_client_closeshell_null_param : UInt
+
+pub let error_winrs_client_createshell_null_param : UInt
+
+pub let error_winrs_client_freecreateshellresult_null_param : UInt
+
+pub let error_winrs_client_freepullresult_null_param : UInt
+
+pub let error_winrs_client_freeruncommandresult_null_param : UInt
+
+pub let error_winrs_client_get_null_param : UInt
+
+pub let error_winrs_client_invalid_flag : UInt
+
+pub let error_winrs_client_null_param : UInt
+
+pub let error_winrs_client_pull_null_param : UInt
+
+pub let error_winrs_client_push_null_param : UInt
+
+pub let error_winrs_client_receive_null_param : UInt
+
+pub let error_winrs_client_runcommand_null_param : UInt
+
+pub let error_winrs_client_send_null_param : UInt
+
+pub let error_winrs_client_signal_null_param : UInt
+
+pub let error_winrs_code_page_not_supported : UInt
+
+pub let error_winrs_connect_response_bad_body : UInt
+
+pub let error_winrs_idletimeout_outofbounds : UInt
+
+pub let error_winrs_receive_in_progress : UInt
+
+pub let error_winrs_receive_no_response_data : UInt
+
+pub let error_winrs_shell_clientid_not_valid : UInt
+
+pub let error_winrs_shell_clientid_resource_conflict : UInt
+
+pub let error_winrs_shell_clientsessionid_mismatch : UInt
+
+pub let error_winrs_shell_connected_to_different_client : UInt
+
+pub let error_winrs_shell_disconnect_not_supported : UInt
+
+pub let error_winrs_shell_disconnect_operation_not_graceful : UInt
+
+pub let error_winrs_shell_disconnect_operation_not_valid : UInt
+
+pub let error_winrs_shell_disconnected : UInt
+
+pub let error_winrs_shell_reconnect_operation_not_valid : UInt
+
+pub let error_winrs_shell_uri_invalid : UInt
+
+pub let error_winrs_shellcommand_clientid_not_valid : UInt
+
+pub let error_winrs_shellcommand_clientid_resource_conflict : UInt
+
+pub let error_winrs_shellcommand_disconnect_operation_not_valid : UInt
+
+pub let error_winrs_shellcommand_reconnect_operation_not_valid : UInt
+
+pub let error_wsman_ack_not_supported : UInt
+
+pub let error_wsman_action_mismatch : UInt
+
+pub let error_wsman_action_not_supported : UInt
+
+pub let error_wsman_addobject_missing_epr : UInt
+
+pub let error_wsman_addobject_missing_object : UInt
+
+pub let error_wsman_already_exists : UInt
+
+pub let error_wsman_ambiguous_selectors : UInt
+
+pub let error_wsman_authentication_invalid_flag : UInt
+
+pub let error_wsman_authorization_mode_not_supported : UInt
+
+pub let error_wsman_bad_method : UInt
+
+pub let error_wsman_batch_complete : UInt
+
+pub let error_wsman_batchsize_too_small : UInt
+
+pub let error_wsman_bookmark_expired : UInt
+
+pub let error_wsman_bookmarks_not_supported : UInt
+
+pub let error_wsman_cannot_change_keys : UInt
+
+pub let error_wsman_cannot_decrypt : UInt
+
+pub let error_wsman_cannot_process_filter : UInt
+
+pub let error_wsman_cannot_use_allow_negotiate_implicit_credentials_for_http : UInt
+
+pub let error_wsman_cannot_use_certificates_for_http : UInt
+
+pub let error_wsman_cannot_use_proxy_settings_for_credssp : UInt
+
+pub let error_wsman_cannot_use_proxy_settings_for_http : UInt
+
+pub let error_wsman_cannot_use_proxy_settings_for_kerberos : UInt
+
+pub let error_wsman_cert_invalid_usage : UInt
+
+pub let error_wsman_cert_invalid_usage_client : UInt
+
+pub let error_wsman_cert_missing_auth_flag : UInt
+
+pub let error_wsman_cert_multiple_credentials_flag : UInt
+
+pub let error_wsman_cert_not_found : UInt
+
+pub let error_wsman_cert_thumbprint_blank : UInt
+
+pub let error_wsman_cert_thumbprint_not_blank : UInt
+
+pub let error_wsman_certmapping_configlimit_exceeded : UInt
+
+pub let error_wsman_certmapping_credential_management_failied : UInt
+
+pub let error_wsman_certmapping_invalidissuerkey : UInt
+
+pub let error_wsman_certmapping_invalidsubjectkey : UInt
+
+pub let error_wsman_certmapping_invalidusercredentials : UInt
+
+pub let error_wsman_certmapping_passwordblank : UInt
+
+pub let error_wsman_certmapping_passwordtoolong : UInt
+
+pub let error_wsman_certmapping_passwordusertuple : UInt
+
+pub let error_wsman_character_set : UInt
+
+pub let error_wsman_client_allowfreshcredentials : UInt
+
+pub let error_wsman_client_allowfreshcredentials_ntlmonly : UInt
+
+pub let error_wsman_client_basic_authentication_disabled : UInt
+
+pub let error_wsman_client_batch_items_too_small : UInt
+
+pub let error_wsman_client_blank_action_uri : UInt
+
+pub let error_wsman_client_blank_input_xml : UInt
+
+pub let error_wsman_client_blank_uri : UInt
+
+pub let error_wsman_client_cert_needed : UInt
+
+pub let error_wsman_client_cert_unknown_location : UInt
+
+pub let error_wsman_client_cert_unknown_type : UInt
+
+pub let error_wsman_client_cert_unneeded_creds : UInt
+
+pub let error_wsman_client_cert_unneeded_username : UInt
+
+pub let error_wsman_client_certificates_authentication_disabled : UInt
+
+pub let error_wsman_client_closecommand_null_param : UInt
+
+pub let error_wsman_client_closeshell_null_param : UInt
+
+pub let error_wsman_client_compression_invalid_option : UInt
+
+pub let error_wsman_client_connectcommand_null_param : UInt
+
+pub let error_wsman_client_connectshell_null_param : UInt
+
+pub let error_wsman_client_constructerror_null_param : UInt
+
+pub let error_wsman_client_createsession_null_param : UInt
+
+pub let error_wsman_client_createshell_name_invalid : UInt
+
+pub let error_wsman_client_createshell_null_param : UInt
+
+pub let error_wsman_client_credentials_flag_needed : UInt
+
+pub let error_wsman_client_credentials_for_default_authentication : UInt
+
+pub let error_wsman_client_credentials_for_proxy_authentication : UInt
+
+pub let error_wsman_client_credentials_needed : UInt
+
+pub let error_wsman_client_credssp_authentication_disabled : UInt
+
+pub let error_wsman_client_decodeobject_null_param : UInt
+
+pub let error_wsman_client_deliverendsubscription_null_param : UInt
+
+pub let error_wsman_client_deliverevents_null_param : UInt
+
+pub let error_wsman_client_digest_authentication_disabled : UInt
+
+pub let error_wsman_client_disable_loopback_with_explicit_credentials : UInt
+
+pub let error_wsman_client_disconnectshell_null_param : UInt
+
+pub let error_wsman_client_encodeobject_null_param : UInt
+
+pub let error_wsman_client_enum_received_too_many_items : UInt
+
+pub let error_wsman_client_enumerate_null_param : UInt
+
+pub let error_wsman_client_enumeratoraddevent_null_param : UInt
+
+pub let error_wsman_client_enumeratoraddobject_null_param : UInt
+
+pub let error_wsman_client_enumeratornextobject_null_param : UInt
+
+pub let error_wsman_client_getbookmark_null_param : UInt
+
+pub let error_wsman_client_geterrormessage_null_param : UInt
+
+pub let error_wsman_client_getsessionoption_dword_invalid_param : UInt
+
+pub let error_wsman_client_getsessionoption_dword_null_param : UInt
+
+pub let error_wsman_client_getsessionoption_invalid_param : UInt
+
+pub let error_wsman_client_getsessionoption_string_invalid_param : UInt
+
+pub let error_wsman_client_initialize_null_param : UInt
+
+pub let error_wsman_client_invalid_cert : UInt
+
+pub let error_wsman_client_invalid_cert_dns_or_upn : UInt
+
+pub let error_wsman_client_invalid_close_command_flag : UInt
+
+pub let error_wsman_client_invalid_close_shell_flag : UInt
+
+pub let error_wsman_client_invalid_create_shell_flag : UInt
+
+pub let error_wsman_client_invalid_deinit_application_flag : UInt
+
+pub let error_wsman_client_invalid_delivery_retry : UInt
+
+pub let error_wsman_client_invalid_disable_loopback : UInt
+
+pub let error_wsman_client_invalid_disconnect_shell_flag : UInt
+
+pub let error_wsman_client_invalid_flag : UInt
+
+pub let error_wsman_client_invalid_geterrormessage_flag : UInt
+
+pub let error_wsman_client_invalid_init_application_flag : UInt
+
+pub let error_wsman_client_invalid_language_code : UInt
+
+pub let error_wsman_client_invalid_locale : UInt
+
+pub let error_wsman_client_invalid_receive_shell_flag : UInt
+
+pub let error_wsman_client_invalid_resource_locator : UInt
+
+pub let error_wsman_client_invalid_runcommand_flag : UInt
+
+pub let error_wsman_client_invalid_send_shell_flag : UInt
+
+pub let error_wsman_client_invalid_send_shell_parameter : UInt
+
+pub let error_wsman_client_invalid_shell_command_pair : UInt
+
+pub let error_wsman_client_invalid_signal_shell_flag : UInt
+
+pub let error_wsman_client_invalid_ui_language : UInt
+
+pub let error_wsman_client_kerberos_authentication_disabled : UInt
+
+pub let error_wsman_client_local_invalid_connection_options : UInt
+
+pub let error_wsman_client_local_invalid_creds : UInt
+
+pub let error_wsman_client_max_chars_too_small : UInt
+
+pub let error_wsman_client_missing_expiration : UInt
+
+pub let error_wsman_client_multiple_auth_flags : UInt
+
+pub let error_wsman_client_multiple_delivery_modes : UInt
+
+pub let error_wsman_client_multiple_enum_mode_flags : UInt
+
+pub let error_wsman_client_multiple_envelope_policies : UInt
+
+pub let error_wsman_client_multiple_proxy_auth_flags : UInt
+
+pub let error_wsman_client_negotiate_authentication_disabled : UInt
+
+pub let error_wsman_client_no_handle : UInt
+
+pub let error_wsman_client_no_sources : UInt
+
+pub let error_wsman_client_null_issuers : UInt
+
+pub let error_wsman_client_null_publishers : UInt
+
+pub let error_wsman_client_null_result_param : UInt
+
+pub let error_wsman_client_pull_invalid_flags : UInt
+
+pub let error_wsman_client_push_host_too_long : UInt
+
+pub let error_wsman_client_push_unsupported_transport : UInt
+
+pub let error_wsman_client_receive_null_param : UInt
+
+pub let error_wsman_client_reconnectshell_null_param : UInt
+
+pub let error_wsman_client_reconnectshellcommand_null_param : UInt
+
+pub let error_wsman_client_runcommand_notcompleted : UInt
+
+pub let error_wsman_client_runcommand_null_param : UInt
+
+pub let error_wsman_client_send_null_param : UInt
+
+pub let error_wsman_client_session_unusable : UInt
+
+pub let error_wsman_client_setsessionoption_invalid_param : UInt
+
+pub let error_wsman_client_setsessionoption_null_param : UInt
+
+pub let error_wsman_client_signal_null_param : UInt
+
+pub let error_wsman_client_spn_wrong_auth : UInt
+
+pub let error_wsman_client_subscribe_null_param : UInt
+
+pub let error_wsman_client_unencrypted_disabled : UInt
+
+pub let error_wsman_client_unencrypted_http_only : UInt
+
+pub let error_wsman_client_unknown_expiration_type : UInt
+
+pub let error_wsman_client_username_and_password_needed : UInt
+
+pub let error_wsman_client_username_password_needed : UInt
+
+pub let error_wsman_client_workgroup_no_kerberos : UInt
+
+pub let error_wsman_client_zero_heartbeat : UInt
+
+pub let error_wsman_command_already_closed : UInt
+
+pub let error_wsman_command_terminated : UInt
+
+pub let error_wsman_concurrency : UInt
+
+pub let error_wsman_config_cannot_change_certmapping_keys : UInt
+
+pub let error_wsman_config_cannot_change_gpo_controlled_setting : UInt
+
+pub let error_wsman_config_cannot_change_mutual : UInt
+
+pub let error_wsman_config_cannot_share_ssl_config : UInt
+
+pub let error_wsman_config_cert_cn_does_not_match_hostname : UInt
+
+pub let error_wsman_config_corrupted : UInt
+
+pub let error_wsman_config_group_policy_change_notification_subscription_failed : UInt
+
+pub let error_wsman_config_hostname_change_without_cert : UInt
+
+pub let error_wsman_config_port_invalid : UInt
+
+pub let error_wsman_config_readonly_property : UInt
+
+pub let error_wsman_config_shell_uri_cmdshelluri_notpermitted : UInt
+
+pub let error_wsman_config_shell_uri_invalid : UInt
+
+pub let error_wsman_config_shelluri_invalid_operation_on_key : UInt
+
+pub let error_wsman_config_shelluri_invalid_processpath : UInt
+
+pub let error_wsman_config_thumbprint_should_be_empty : UInt
+
+pub let error_wsman_connectionstr_invalid : UInt
+
+pub let error_wsman_connector_get : UInt
+
+pub let error_wsman_create_response_no_epr : UInt
+
+pub let error_wsman_createshell_null_environment_variable_name : UInt
+
+pub let error_wsman_createshell_null_streamid : UInt
+
+pub let error_wsman_createshell_runas_failed : UInt
+
+pub let error_wsman_creds_passed_with_no_auth_flag : UInt
+
+pub let error_wsman_credssp_username_password_needed : UInt
+
+pub let error_wsman_customremoteshell_deprecated : UInt
+
+pub let error_wsman_defaultauth_ipaddress : UInt
+
+pub let error_wsman_deliver_in_progress : UInt
+
+pub let error_wsman_delivery_refused : UInt
+
+pub let error_wsman_delivery_retries_not_supported : UInt
+
+pub let error_wsman_deprecated_config_setting : UInt
+
+pub let error_wsman_deserialize_class : UInt
+
+pub let error_wsman_destination_invalid : UInt
+
+pub let error_wsman_destination_unreachable : UInt
+
+pub let error_wsman_different_authz_token : UInt
+
+pub let error_wsman_different_cim_selector : UInt
+
+pub let error_wsman_duplicate_selectors : UInt
+
+pub let error_wsman_encoding_limit : UInt
+
+pub let error_wsman_encoding_type : UInt
+
+pub let error_wsman_endpoint_unavailable : UInt
+
+pub let error_wsman_endpoint_unavailable_invalid_value : UInt
+
+pub let error_wsman_enumerate_cannot_process_filter : UInt
+
+pub let error_wsman_enumerate_filter_dialect_requested_unavailable : UInt
+
+pub let error_wsman_enumerate_filtering_not_supported : UInt
+
+pub let error_wsman_enumerate_invalid_enumeration_context : UInt
+
+pub let error_wsman_enumerate_invalid_expiration_time : UInt
+
+pub let error_wsman_enumerate_shellcomamnds_filter_expected : UInt
+
+pub let error_wsman_enumerate_shellcommands_eprs_notsupported : UInt
+
+pub let error_wsman_enumerate_timed_out : UInt
+
+pub let error_wsman_enumerate_unable_to_renew : UInt
+
+pub let error_wsman_enumerate_unsupported_expiration_time : UInt
+
+pub let error_wsman_enumerate_unsupported_expiration_type : UInt
+
+pub let error_wsman_enumerate_wmi_invalid_key : UInt
+
+pub let error_wsman_enumeration_closed : UInt
+
+pub let error_wsman_enumeration_initializing : UInt
+
+pub let error_wsman_enumeration_invalid : UInt
+
+pub let error_wsman_enumeration_mode_unsupported : UInt
+
+pub let error_wsman_envelope_too_large : UInt
+
+pub let error_wsman_epr_nesting_exceeded : UInt
+
+pub let error_wsman_eventing_concurrent_client_receive : UInt
+
+pub let error_wsman_eventing_delivery_mode_requested_invalid : UInt
+
+pub let error_wsman_eventing_delivery_mode_requested_unavailable : UInt
+
+pub let error_wsman_eventing_deliveryfailed_fromsource : UInt
+
+pub let error_wsman_eventing_fast_sender : UInt
+
+pub let error_wsman_eventing_filtering_not_supported : UInt
+
+pub let error_wsman_eventing_filtering_requested_unavailable : UInt
+
+pub let error_wsman_eventing_incompatible_batchparams_and_deliverymode : UInt
+
+pub let error_wsman_eventing_insecure_pushsubscription_connection : UInt
+
+pub let error_wsman_eventing_invalid_encoding_in_delivery : UInt
+
+pub let error_wsman_eventing_invalid_endto_addresss : UInt
+
+pub let error_wsman_eventing_invalid_eventsource : UInt
+
+pub let error_wsman_eventing_invalid_expiration_time : UInt
+
+pub let error_wsman_eventing_invalid_heartbeat : UInt
+
+pub let error_wsman_eventing_invalid_incoming_event_packet_header : UInt
+
+pub let error_wsman_eventing_invalid_locale_in_delivery : UInt
+
+pub let error_wsman_eventing_invalid_message : UInt
+
+pub let error_wsman_eventing_invalid_notifyto_addresss : UInt
+
+pub let error_wsman_eventing_loopback_testfailed : UInt
+
+pub let error_wsman_eventing_missing_locale_in_delivery : UInt
+
+pub let error_wsman_eventing_missing_notifyto : UInt
+
+pub let error_wsman_eventing_missing_notifyto_addresss : UInt
+
+pub let error_wsman_eventing_nomatching_listener : UInt
+
+pub let error_wsman_eventing_nondomainjoined_collector : UInt
+
+pub let error_wsman_eventing_nondomainjoined_publisher : UInt
+
+pub let error_wsman_eventing_push_subscription_noactivate_eventsource : UInt
+
+pub let error_wsman_eventing_source_unable_to_process : UInt
+
+pub let error_wsman_eventing_subscription_cancelled_bysource : UInt
+
+pub let error_wsman_eventing_subscriptionclosed_byremoteservice : UInt
+
+pub let error_wsman_eventing_unable_to_renew : UInt
+
+pub let error_wsman_eventing_unsupported_expiration_type : UInt
+
+pub let error_wsman_expiration_time_not_supported : UInt
+
+pub let error_wsman_explicit_credentials_required : UInt
+
+pub let error_wsman_failed_authentication : UInt
+
+pub let error_wsman_feature_deprecated : UInt
+
+pub let error_wsman_file_not_present : UInt
+
+pub let error_wsman_filtering_required : UInt
+
+pub let error_wsman_filtering_required_not_supported : UInt
+
+pub let error_wsman_format_mismatch_not_supported : UInt
+
+pub let error_wsman_format_security_token_not_supported : UInt
+
+pub let error_wsman_fragment_dialect_requested_unavailable : UInt
+
+pub let error_wsman_fragment_transfer_not_supported : UInt
+
+pub let error_wsman_getclass : UInt
+
+pub let error_wsman_heartbeats_not_supported : UInt
+
+pub let error_wsman_html_error : UInt
+
+pub let error_wsman_http_content_type_missmatch_response_data : UInt
+
+pub let error_wsman_http_invalid_content_type_in_response_data : UInt
+
+pub let error_wsman_http_no_response_data : UInt
+
+pub let error_wsman_http_not_found_status : UInt
+
+pub let error_wsman_http_request_too_large_status : UInt
+
+pub let error_wsman_http_service_unavailable_status : UInt
+
+pub let error_wsman_http_status_bad_request : UInt
+
+pub let error_wsman_http_status_server_error : UInt
+
+pub let error_wsman_iisconfiguration_read_failed : UInt
+
+pub let error_wsman_incompatible_epr : UInt
+
+pub let error_wsman_inexistent_mac_address : UInt
+
+pub let error_wsman_insecure_address_not_supported : UInt
+
+pub let error_wsman_insuffcient_selectors : UInt
+
+pub let error_wsman_insufficient_metadata_for_basic : UInt
+
+pub let error_wsman_invalid_actionuri : UInt
+
+pub let error_wsman_invalid_batch_parameter : UInt
+
+pub let error_wsman_invalid_batch_settings_parameter : UInt
+
+pub let error_wsman_invalid_bookmark : UInt
+
+pub let error_wsman_invalid_characters_in_response : UInt
+
+pub let error_wsman_invalid_configsddl_url : UInt
+
+pub let error_wsman_invalid_connectionretry : UInt
+
+pub let error_wsman_invalid_filepath : UInt
+
+pub let error_wsman_invalid_filter_xml : UInt
+
+pub let error_wsman_invalid_fragment_dialect : UInt
+
+pub let error_wsman_invalid_fragment_path : UInt
+
+pub let error_wsman_invalid_fragment_path_blank : UInt
+
+pub let error_wsman_invalid_header : UInt
+
+pub let error_wsman_invalid_hostname_pattern : UInt
+
+pub let error_wsman_invalid_ipfilter : UInt
+
+pub let error_wsman_invalid_key : UInt
+
+pub let error_wsman_invalid_literal_uri : UInt
+
+pub let error_wsman_invalid_message_information_header : UInt
+
+pub let error_wsman_invalid_option_no_proxy_server : UInt
+
+pub let error_wsman_invalid_options : UInt
+
+pub let error_wsman_invalid_optionset : UInt
+
+pub let error_wsman_invalid_parameter : UInt
+
+pub let error_wsman_invalid_parameter_name : UInt
+
+pub let error_wsman_invalid_proposed_id : UInt
+
+pub let error_wsman_invalid_provider_response : UInt
+
+pub let error_wsman_invalid_publishers_type : UInt
+
+pub let error_wsman_invalid_redirect_error : UInt
+
+pub let error_wsman_invalid_representation : UInt
+
+pub let error_wsman_invalid_resource_uri : UInt
+
+pub let error_wsman_invalid_resumption_context : UInt
+
+pub let error_wsman_invalid_security_descriptor : UInt
+
+pub let error_wsman_invalid_selector_name : UInt
+
+pub let error_wsman_invalid_selector_value : UInt
+
+pub let error_wsman_invalid_selectors : UInt
+
+pub let error_wsman_invalid_soap_body : UInt
+
+pub let error_wsman_invalid_subscribe_object : UInt
+
+pub let error_wsman_invalid_subscription_manager : UInt
+
+pub let error_wsman_invalid_system : UInt
+
+pub let error_wsman_invalid_target_resourceuri : UInt
+
+pub let error_wsman_invalid_target_selectors : UInt
+
+pub let error_wsman_invalid_target_system : UInt
+
+pub let error_wsman_invalid_timeout_header : UInt
+
+pub let error_wsman_invalid_uri : UInt
+
+pub let error_wsman_invalid_uri_wmi_enum_wql : UInt
+
+pub let error_wsman_invalid_uri_wmi_singleton : UInt
+
+pub let error_wsman_invalid_usessl_param : UInt
+
+pub let error_wsman_invalid_xml : UInt
+
+pub let error_wsman_invalid_xml_fragment : UInt
+
+pub let error_wsman_invalid_xml_missing_values : UInt
+
+pub let error_wsman_invalid_xml_namespace : UInt
+
+pub let error_wsman_invalid_xml_runas_disabled : UInt
+
+pub let error_wsman_invalid_xml_values : UInt
+
+pub let error_wsman_kerberos_ipaddress : UInt
+
+pub let error_wsman_listener_address_invalid : UInt
+
+pub let error_wsman_locale_not_supported : UInt
+
+pub let error_wsman_machine_option_required : UInt
+
+pub let error_wsman_max_elements_not_supported : UInt
+
+pub let error_wsman_max_envelope_size : UInt
+
+pub let error_wsman_max_envelope_size_exceeded : UInt
+
+pub let error_wsman_maxenvelope_policy_not_supported : UInt
+
+pub let error_wsman_maxenvelope_size_not_supported : UInt
+
+pub let error_wsman_maxitems_not_supported : UInt
+
+pub let error_wsman_maxtime_not_supported : UInt
+
+pub let error_wsman_message_information_header_required : UInt
+
+pub let error_wsman_metadata_redirect : UInt
+
+pub let error_wsman_min_envelope_size : UInt
+
+pub let error_wsman_missing_classname : UInt
+
+pub let error_wsman_missing_fragment_path : UInt
+
+pub let error_wsman_multiple_credentials : UInt
+
+pub let error_wsman_mustunderstand_on_locale_unsupported : UInt
+
+pub let error_wsman_mutual_auth_failed : UInt
+
+pub let error_wsman_name_not_resolved : UInt
+
+pub let error_wsman_network_timedout : UInt
+
+pub let error_wsman_new_deserializer : UInt
+
+pub let error_wsman_new_session : UInt
+
+pub let error_wsman_no_ack : UInt
+
+pub let error_wsman_no_certmapping_operation_for_local_session : UInt
+
+pub let error_wsman_no_command_response : UInt
+
+pub let error_wsman_no_commandid : UInt
+
+pub let error_wsman_no_dhcp_addresses : UInt
+
+pub let error_wsman_no_identify_for_local_session : UInt
+
+pub let error_wsman_no_push_subscription_for_local_session : UInt
+
+pub let error_wsman_no_receive_response : UInt
+
+pub let error_wsman_no_unicast_addresses : UInt
+
+pub let error_wsman_non_pull_subscription_not_supported : UInt
+
+pub let error_wsman_null_key : UInt
+
+pub let error_wsman_objectonly_invalid : UInt
+
+pub let error_wsman_operation_timedout : UInt
+
+pub let error_wsman_operation_timeout_not_supported : UInt
+
+pub let error_wsman_option_limit : UInt
+
+pub let error_wsman_options_invalid_name : UInt
+
+pub let error_wsman_options_invalid_value : UInt
+
+pub let error_wsman_options_not_supported : UInt
+
+pub let error_wsman_parameter_type_mismatch : UInt
+
+pub let error_wsman_plugin_configuration_corrupted : UInt
+
+pub let error_wsman_plugin_failed : UInt
+
+pub let error_wsman_policy_cannot_comply : UInt
+
+pub let error_wsman_policy_corrupted : UInt
+
+pub let error_wsman_policy_too_complex : UInt
+
+pub let error_wsman_polymorphism_mode_unsupported : UInt
+
+pub let error_wsman_port_invalid : UInt
+
+pub let error_wsman_provider_failure : UInt
+
+pub let error_wsman_provider_load_failed : UInt
+
+pub let error_wsman_provsys_not_supported : UInt
+
+pub let error_wsman_proxy_access_type : UInt
+
+pub let error_wsman_proxy_authentication_invalid_flag : UInt
+
+pub let error_wsman_public_firewall_profile_active : UInt
+
+pub let error_wsman_pull_in_progress : UInt
+
+pub let error_wsman_pull_params_not_same_as_enum : UInt
+
+pub let error_wsman_push_subscription_config_invalid : UInt
+
+pub let error_wsman_pushsubscription_invaliduseraccount : UInt
+
+pub let error_wsman_quick_config_failed_cert_required : UInt
+
+pub let error_wsman_quick_config_firewall_exceptions_disallowed : UInt
+
+pub let error_wsman_quick_config_local_policy_change_disallowed : UInt
+
+pub let error_wsman_quota_limit : UInt
+
+pub let error_wsman_quota_max_commands_per_shell_ppq : UInt
+
+pub let error_wsman_quota_max_operations : UInt
+
+pub let error_wsman_quota_max_operations_user_ppq : UInt
+
+pub let error_wsman_quota_max_pluginoperations_ppq : UInt
+
+pub let error_wsman_quota_max_pluginshells_ppq : UInt
+
+pub let error_wsman_quota_max_shells : UInt
+
+pub let error_wsman_quota_max_shells_ppq : UInt
+
+pub let error_wsman_quota_max_shellusers : UInt
+
+pub let error_wsman_quota_max_users_ppq : UInt
+
+pub let error_wsman_quota_min_requirement_not_available_ppq : UInt
+
+pub let error_wsman_quota_system : UInt
+
+pub let error_wsman_quota_user : UInt
+
+pub let error_wsman_redirect_location_not_available : UInt
+
+pub let error_wsman_redirect_requested : UInt
+
+pub let error_wsman_remote_cimpath_not_supported : UInt
+
+pub let error_wsman_remote_connection_not_allowed : UInt
+
+pub let error_wsman_remoteshells_not_allowed : UInt
+
+pub let error_wsman_rename_failure : UInt
+
+pub let error_wsman_request_init_error : UInt
+
+pub let error_wsman_request_not_supported_at_service : UInt
+
+pub let error_wsman_resource_not_found : UInt
+
+pub let error_wsman_response_invalid_enumeration_context : UInt
+
+pub let error_wsman_response_invalid_message_information_header : UInt
+
+pub let error_wsman_response_invalid_soap_fault : UInt
+
+pub let error_wsman_response_no_results : UInt
+
+pub let error_wsman_response_no_soap_header_body : UInt
+
+pub let error_wsman_response_no_xml_fragment_wrapper : UInt
+
+pub let error_wsman_resumption_not_supported : UInt
+
+pub let error_wsman_resumption_type_not_supported : UInt
+
+pub let error_wsman_runas_invalidusercredentials : UInt
+
+pub let error_wsman_runasuser_managedaccount_logon_failed : UInt
+
+pub let error_wsman_runshellcommand_null_argument : UInt
+
+pub let error_wsman_schema_validation_error : UInt
+
+pub let error_wsman_security_unmapped : UInt
+
+pub let error_wsman_selector_limit : UInt
+
+pub let error_wsman_selector_typemismatch : UInt
+
+pub let error_wsman_semanticcallback_timedout : UInt
+
+pub let error_wsman_sendhearbeat_empty_enumerator : UInt
+
+pub let error_wsman_sendshellinput_invalid_streamid_index : UInt
+
+pub let error_wsman_server_destination_localhost : UInt
+
+pub let error_wsman_server_envelope_limit : UInt
+
+pub let error_wsman_server_nonpullsubscribe_null_param : UInt
+
+pub let error_wsman_server_not_trusted : UInt
+
+pub let error_wsman_service_remote_access_disabled : UInt
+
+pub let error_wsman_service_stream_disconnected : UInt
+
+pub let error_wsman_session_already_closed : UInt
+
+pub let error_wsman_shell_already_closed : UInt
+
+pub let error_wsman_shell_invalid_command_handle : UInt
+
+pub let error_wsman_shell_invalid_desired_streams : UInt
+
+pub let error_wsman_shell_invalid_input_stream : UInt
+
+pub let error_wsman_shell_invalid_shell_handle : UInt
+
+pub let error_wsman_shell_not_initialized : UInt
+
+pub let error_wsman_shell_synchronous_not_supported : UInt
+
+pub let error_wsman_soap_data_encoding_unknown : UInt
+
+pub let error_wsman_soap_fault_must_understand : UInt
+
+pub let error_wsman_soap_version_mismatch : UInt
+
+pub let error_wsman_ssl_connection_aborted : UInt
+
+pub let error_wsman_subscribe_wmi_invalid_key : UInt
+
+pub let error_wsman_subscription_client_did_not_call_within_heartbeat : UInt
+
+pub let error_wsman_subscription_close_in_progress : UInt
+
+pub let error_wsman_subscription_closed : UInt
+
+pub let error_wsman_subscription_listener_nolongervalid : UInt
+
+pub let error_wsman_subscription_no_heartbeat : UInt
+
+pub let error_wsman_system_not_found : UInt
+
+pub let error_wsman_target_already_exists : UInt
+
+pub let error_wsman_transport_not_supported : UInt
+
+pub let error_wsman_unexpected_selectors : UInt
+
+pub let error_wsman_unknown_http_status_returned : UInt
+
+pub let error_wsman_unreportable_success : UInt
+
+pub let error_wsman_unsupported_addressing_mode : UInt
+
+pub let error_wsman_unsupported_encoding : UInt
+
+pub let error_wsman_unsupported_feature : UInt
+
+pub let error_wsman_unsupported_feature_identify : UInt
+
+pub let error_wsman_unsupported_feature_options : UInt
+
+pub let error_wsman_unsupported_http_status_redirect : UInt
+
+pub let error_wsman_unsupported_media : UInt
+
+pub let error_wsman_unsupported_octettype : UInt
+
+pub let error_wsman_unsupported_timeout : UInt
+
+pub let error_wsman_unsupported_type : UInt
+
+pub let error_wsman_uri_limit : UInt
+
+pub let error_wsman_uri_non_dmtf_class : UInt
+
+pub let error_wsman_uri_query_string_syntax_error : UInt
+
+pub let error_wsman_uri_security_uri : UInt
+
+pub let error_wsman_uri_wrong_dmtf_version : UInt
+
+pub let error_wsman_urisecurity_invalidurikey : UInt
+
+pub let error_wsman_virtualaccount_notsupported : UInt
+
+pub let error_wsman_virtualaccount_notsupported_downlevel : UInt
+
+pub let error_wsman_whitespace : UInt
+
+pub let error_wsman_wmi_cannot_connect_access_denied : UInt
+
+pub let error_wsman_wmi_invalid_value : UInt
+
+pub let error_wsman_wmi_max_nested : UInt
+
+pub let error_wsman_wmi_provider_access_denied : UInt
+
+pub let error_wsman_wmi_provider_invalid_parameter : UInt
+
+pub let error_wsman_wmi_provider_not_capable : UInt
+
+pub let error_wsman_wmi_svc_access_denied : UInt
+
+pub let error_wsman_wrong_metadata : UInt
+
+pub fn get(@core.RawAddress, Bytes, Int, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn get_at_end_of_stream(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn get_at_end_of_stream_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn get_batch_items(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn get_batch_items_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn get_certificate_thumbprint(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn get_certificate_thumbprint_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn get_command_line(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn get_command_line_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn get_error_06be6c8251(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn get_error_06be6c8251_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn get_error_71b3cfa742(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn get_error_71b3cfa742_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn get_error_78ce5293a5(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn get_error_78ce5293a5_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn get_error_d3ab437ef8(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn get_error_d3ab437ef8_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn get_error_message(@core.RawAddress, UInt, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn get_error_message_raw(@core.RawAddress, UInt, @core.RawAddress) -> Int
+
+pub fn get_fragment_dialect(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn get_fragment_dialect_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn get_fragment_path(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn get_fragment_path_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn get_must_understand_options(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn get_must_understand_options_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn get_raw(@core.RawAddress, Bytes, Int, @core.RawAddress) -> Int
+
+pub fn get_resource_uri(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn get_resource_uri_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn get_timeout(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn get_timeout_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn get_user_name(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn get_user_name_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn identify(@core.RawAddress, Int, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn identify_raw(@core.RawAddress, Int, @core.RawAddress) -> Int
+
+pub fn invoke(@core.RawAddress, @core.RawAddress, Bytes, @core.RawAddress, Int, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn invoke_raw(@core.RawAddress, @core.RawAddress, Bytes, @core.RawAddress, Int, @core.RawAddress) -> Int
+
+pub fn proxy_authentication_use_basic(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn proxy_authentication_use_basic_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn proxy_authentication_use_digest(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn proxy_authentication_use_digest_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn proxy_authentication_use_negotiate(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn proxy_authentication_use_negotiate_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn proxy_auto_detect(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn proxy_auto_detect_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn proxy_ie_config(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn proxy_ie_config_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn proxy_no_proxy_server(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn proxy_no_proxy_server_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn proxy_win_http_config(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn proxy_win_http_config_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn put(@core.RawAddress, Bytes, @core.RawAddress, Int, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn put_batch_items(@core.RawAddress, Int) -> Unit raise @core.WindowsError
+
+pub fn put_batch_items_raw(@core.RawAddress, Int) -> Int
+
+pub fn put_certificate_thumbprint(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn put_certificate_thumbprint_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn put_fragment_dialect(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn put_fragment_dialect_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn put_fragment_path(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn put_fragment_path_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn put_must_understand_options(@core.RawAddress, Int) -> Unit raise @core.WindowsError
+
+pub fn put_must_understand_options_raw(@core.RawAddress, Int) -> Int
+
+pub fn put_password(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn put_password_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn put_raw(@core.RawAddress, Bytes, @core.RawAddress, Int, @core.RawAddress) -> Int
+
+pub fn put_resource_uri(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn put_resource_uri_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn put_timeout(@core.RawAddress, Int) -> Unit raise @core.WindowsError
+
+pub fn put_timeout_raw(@core.RawAddress, Int) -> Int
+
+pub fn put_user_name(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn put_user_name_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn read_item(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn read_item_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn session_flag_allow_negotiate_implicit_credentials(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn session_flag_allow_negotiate_implicit_credentials_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn session_flag_cred_username_password(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn session_flag_cred_username_password_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn session_flag_enable_spn_server_port(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn session_flag_enable_spn_server_port_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn session_flag_no_encryption(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn session_flag_no_encryption_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn session_flag_skip_ca_check(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn session_flag_skip_ca_check_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn session_flag_skip_cn_check(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn session_flag_skip_cn_check_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn session_flag_skip_revocation_check(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn session_flag_skip_revocation_check_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn session_flag_use_basic(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn session_flag_use_basic_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn session_flag_use_client_certificate(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn session_flag_use_client_certificate_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn session_flag_use_cred_ssp(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn session_flag_use_cred_ssp_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn session_flag_use_digest(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn session_flag_use_digest_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn session_flag_use_kerberos(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn session_flag_use_kerberos_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn session_flag_use_negotiate(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn session_flag_use_negotiate_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn session_flag_use_no_authentication(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn session_flag_use_no_authentication_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn session_flag_use_ssl(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn session_flag_use_ssl_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn session_flag_utf16(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn session_flag_utf16_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn session_flag_utf8(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn session_flag_utf8_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn set_proxy(@core.RawAddress, Int, Int, @core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn set_proxy_raw(@core.RawAddress, Int, Int, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn ws_man_close_command_raw(Int64, UInt, @core.RawAddress) -> Unit
+
+pub fn ws_man_close_operation_raw(Int64, UInt) -> UInt
+
+pub fn ws_man_close_session_raw(Int64, UInt) -> UInt
+
+pub fn ws_man_close_shell_raw(Int64, UInt, @core.RawAddress) -> Unit
+
+pub fn ws_man_connect_shell_command_raw(Int64, UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Unit
+
+pub fn ws_man_connect_shell_raw(Int64, UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Unit
+
+pub fn ws_man_create_session_raw(Int64, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn ws_man_create_shell_ex_raw(Int64, UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Unit
+
+pub fn ws_man_create_shell_raw(Int64, UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Unit
+
+pub fn ws_man_deinitialize_raw(Int64, UInt) -> UInt
+
+pub fn ws_man_disconnect_shell_raw(Int64, UInt, @core.RawAddress, @core.RawAddress) -> Unit
+
+pub let ws_man_flag_allow_negotiate_implicit_credentials : Int
+
+pub let ws_man_flag_associated_instance : Int
+
+pub let ws_man_flag_association_instance : Int
+
+pub let ws_man_flag_cred_username_password : Int
+
+pub let ws_man_flag_enable_spn_server_port : Int
+
+pub let ws_man_flag_hierarchy_deep : Int
+
+pub let ws_man_flag_hierarchy_deep_base_props_only : Int
+
+pub let ws_man_flag_hierarchy_shallow : Int
+
+pub let ws_man_flag_no_encryption : Int
+
+pub let ws_man_flag_non_xml_text : Int
+
+pub let ws_man_flag_proxy_authentication_use_basic : Int
+
+pub let ws_man_flag_proxy_authentication_use_digest : Int
+
+pub let ws_man_flag_proxy_authentication_use_negotiate : Int
+
+pub let ws_man_flag_return_epr : Int
+
+pub let ws_man_flag_return_object : Int
+
+pub let ws_man_flag_return_object_and_epr : Int
+
+pub let ws_man_flag_skip_ca_check : Int
+
+pub let ws_man_flag_skip_cn_check : Int
+
+pub let ws_man_flag_skip_revocation_check : Int
+
+pub let ws_man_flag_use_basic : Int
+
+pub let ws_man_flag_use_client_certificate : Int
+
+pub let ws_man_flag_use_cred_ssp : Int
+
+pub let ws_man_flag_use_digest : Int
+
+pub let ws_man_flag_use_kerberos : Int
+
+pub let ws_man_flag_use_negotiate : Int
+
+pub let ws_man_flag_use_no_authentication : Int
+
+pub let ws_man_flag_use_ssl : Int
+
+pub let ws_man_flag_utf16 : Int
+
+pub let ws_man_flag_utf8 : Int
+
+pub fn ws_man_get_error_message_raw(Int64, UInt, @core.RawAddress, UInt, UInt, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn ws_man_get_session_option_as_dword_raw(Int64, Int, @core.RawAddress) -> UInt
+
+pub fn ws_man_get_session_option_as_string_raw(Int64, Int, UInt, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn ws_man_initialize_raw(UInt, @core.RawAddress) -> UInt
+
+pub fn ws_man_plugin_authz_operation_complete_raw(@core.RawAddress, UInt, @core.RawAddress, UInt, @core.RawAddress) -> UInt
+
+pub fn ws_man_plugin_authz_query_quota_complete_raw(@core.RawAddress, UInt, @core.RawAddress, UInt, @core.RawAddress) -> UInt
+
+pub fn ws_man_plugin_authz_user_complete_raw(@core.RawAddress, UInt, @core.RawAddress, @core.RawAddress, Int, UInt, @core.RawAddress) -> UInt
+
+pub fn ws_man_plugin_free_request_details_raw(@core.RawAddress) -> UInt
+
+pub fn ws_man_plugin_get_configuration_raw(@core.RawAddress, UInt, @core.RawAddress) -> UInt
+
+pub fn ws_man_plugin_get_operation_parameters_raw(@core.RawAddress, UInt, @core.RawAddress) -> UInt
+
+pub fn ws_man_plugin_operation_complete_raw(@core.RawAddress, UInt, UInt, @core.RawAddress) -> UInt
+
+pub fn ws_man_plugin_receive_result_raw(@core.RawAddress, UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress, UInt) -> UInt
+
+pub fn ws_man_plugin_report_completion_raw(@core.RawAddress, UInt) -> UInt
+
+pub fn ws_man_plugin_report_context_raw(@core.RawAddress, UInt, @core.RawAddress) -> UInt
+
+pub let ws_man_proxy_auto_detect : Int
+
+pub let ws_man_proxy_ie_config : Int
+
+pub let ws_man_proxy_no_proxy_server : Int
+
+pub let ws_man_proxy_win_http_config : Int
+
+pub fn ws_man_receive_shell_output_raw(Int64, Int64, UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Unit
+
+pub fn ws_man_reconnect_shell_command_raw(Int64, UInt, @core.RawAddress) -> Unit
+
+pub fn ws_man_reconnect_shell_raw(Int64, UInt, @core.RawAddress) -> Unit
+
+pub fn ws_man_run_shell_command_ex_raw(Int64, UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Unit
+
+pub fn ws_man_run_shell_command_raw(Int64, UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Unit
+
+pub fn ws_man_send_shell_input_raw(Int64, Int64, UInt, @core.RawAddress, @core.RawAddress, Int, @core.RawAddress, @core.RawAddress) -> Unit
+
+pub fn ws_man_set_session_option_raw(Int64, Int, @core.RawAddress) -> UInt
+
+pub fn ws_man_signal_shell_raw(Int64, Int64, UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Unit
+
+pub let wsman_cmdshell_option_codepage : String
+
+pub let wsman_cmdshell_option_consolemode_stdin : String
+
+pub let wsman_cmdshell_option_skip_cmd_shell : String
+
+pub let wsman_data_none : Int
+
+pub let wsman_data_type_binary : Int
+
+pub let wsman_data_type_dword : Int
+
+pub let wsman_data_type_text : Int
+
+pub let wsman_default_timeout_ms : UInt
+
+pub let wsman_flag_auth_basic : Int
+
+pub let wsman_flag_auth_client_certificate : Int
+
+pub let wsman_flag_auth_credssp : Int
+
+pub let wsman_flag_auth_digest : Int
+
+pub let wsman_flag_auth_kerberos : Int
+
+pub let wsman_flag_auth_negotiate : Int
+
+pub let wsman_flag_callback_end_of_operation : Int
+
+pub let wsman_flag_callback_end_of_stream : Int
+
+pub let wsman_flag_callback_network_failure_detected : Int
+
+pub let wsman_flag_callback_receive_delay_stream_request_processed : Int
+
+pub let wsman_flag_callback_reconnected_after_network_failure : Int
+
+pub let wsman_flag_callback_retry_aborted_due_to_internal_error : Int
+
+pub let wsman_flag_callback_retrying_after_network_failure : Int
+
+pub let wsman_flag_callback_shell_autodisconnected : Int
+
+pub let wsman_flag_callback_shell_autodisconnecting : Int
+
+pub let wsman_flag_callback_shell_supports_disconnect : Int
+
+pub let wsman_flag_default_authentication : Int
+
+pub let wsman_flag_delete_server_session : Int
+
+pub let wsman_flag_no_authentication : Int
+
+pub let wsman_flag_no_compression : Int
+
+pub let wsman_flag_receive_delay_output_stream : Int
+
+pub let wsman_flag_receive_flush : UInt
+
+pub let wsman_flag_receive_result_data_boundary : UInt
+
+pub let wsman_flag_receive_result_no_more_data : UInt
+
+pub let wsman_flag_requested_api_version_1_0 : UInt
+
+pub let wsman_flag_requested_api_version_1_1 : UInt
+
+pub let wsman_flag_send_no_more_data : UInt
+
+pub let wsman_flag_server_buffering_mode_block : Int
+
+pub let wsman_flag_server_buffering_mode_drop : Int
+
+pub let wsman_operation_infov1 : UInt
+
+pub let wsman_operation_infov2 : UInt
+
+pub let wsman_option_allow_negotiate_implicit_credentials : Int
+
+pub let wsman_option_default_operation_timeoutms : Int
+
+pub let wsman_option_enable_spn_server_port : Int
+
+pub let wsman_option_locale : Int
+
+pub let wsman_option_machine_id : Int
+
+pub let wsman_option_max_envelope_size_kb : Int
+
+pub let wsman_option_max_retry_time : Int
+
+pub let wsman_option_proxy_auto_detect : Int
+
+pub let wsman_option_proxy_ie_proxy_config : Int
+
+pub let wsman_option_proxy_no_proxy_server : Int
+
+pub let wsman_option_proxy_winhttp_proxy_config : Int
+
+pub let wsman_option_redirect_location : Int
+
+pub let wsman_option_shell_max_data_size_per_message_kb : Int
+
+pub let wsman_option_skip_ca_check : Int
+
+pub let wsman_option_skip_cn_check : Int
+
+pub let wsman_option_skip_revocation_check : Int
+
+pub let wsman_option_timeoutms_close_shell : Int
+
+pub let wsman_option_timeoutms_create_shell : Int
+
+pub let wsman_option_timeoutms_receive_shell_output : Int
+
+pub let wsman_option_timeoutms_run_shell_command : Int
+
+pub let wsman_option_timeoutms_send_shell_input : Int
+
+pub let wsman_option_timeoutms_signal_shell : Int
+
+pub let wsman_option_ui_language : Int
+
+pub let wsman_option_unencrypted_messages : Int
+
+pub let wsman_option_use_intearactive_token : Int
+
+pub let wsman_option_use_ssl : Int
+
+pub let wsman_option_utf16 : Int
+
+pub let wsman_plugin_params_autorestart : UInt
+
+pub let wsman_plugin_params_get_requested_data_locale : UInt
+
+pub let wsman_plugin_params_get_requested_locale : UInt
+
+pub let wsman_plugin_params_hostidletimeoutseconds : UInt
+
+pub let wsman_plugin_params_largest_result_size : UInt
+
+pub let wsman_plugin_params_max_envelope_size : UInt
+
+pub let wsman_plugin_params_name : UInt
+
+pub let wsman_plugin_params_remaining_result_size : UInt
+
+pub let wsman_plugin_params_runas_user : UInt
+
+pub let wsman_plugin_params_sharedhost : UInt
+
+pub let wsman_plugin_params_timeout : UInt
+
+pub let wsman_plugin_shutdown_idletimeout_elapsed : UInt
+
+pub let wsman_plugin_shutdown_iishost : UInt
+
+pub let wsman_plugin_shutdown_service : UInt
+
+pub let wsman_plugin_shutdown_system : UInt
+
+pub let wsman_plugin_startup_autorestarted_crash : UInt
+
+pub let wsman_plugin_startup_autorestarted_reboot : UInt
+
+pub let wsman_plugin_startup_request_received : UInt
+
+pub let wsman_shell_ns : String
+
+pub let wsman_shell_option_noprofile : String
+
+pub let wsman_stream_id_stderr : String
+
+pub let wsman_stream_id_stdin : String
+
+pub let wsman_stream_id_stdout : String
+
+// Errors
+
+// Types and methods
+
+// Type aliases
+pub using @7f36cfe2eea45ef1 {type AnonymousEUnion_7b34bdb7e7b0 as AnonymousEUnion_7b34bdb7e7}
+
+pub using @7f36cfe2eea45ef1 {type AnonymousEUnion_924e9fcd8fbc as AnonymousEUnion_924e9fcd8f}
+
+pub using @7f36cfe2eea45ef1 {type IWSMan_a447930edad7 as IWSMan}
+
+pub using @7f36cfe2eea45ef1 {type IWSManConnectionOptions_998061cf6bc1 as IWSManConnectionOptions}
+
+pub using @7f36cfe2eea45ef1 {type IWSManConnectionOptionsEx_e43fc47c30e9 as IWSManConnectionOptionsEx}
+
+pub using @7f36cfe2eea45ef1 {type IWSManConnectionOptionsEx2_516b9aa369fe as IWSManConnectionOptionsEx2}
+
+pub using @7f36cfe2eea45ef1 {type IWSManEnumerator_17b594d5fc46 as IWSManEnumerator}
+
+pub using @7f36cfe2eea45ef1 {type IWSManEx_c71a976e5b0f as IWSManEx}
+
+pub using @7f36cfe2eea45ef1 {type IWSManEx2_ec83c0e635ea as IWSManEx2}
+
+pub using @7f36cfe2eea45ef1 {type IWSManEx3_6b32965f96cd as IWSManEx3}
+
+pub using @7f36cfe2eea45ef1 {type IWSManInternal_69ccd2fcec38 as IWSManInternal}
+
+pub using @7f36cfe2eea45ef1 {type IWSManResourceLocator_2b2ba272928a as IWSManResourceLocator}
+
+pub using @7f36cfe2eea45ef1 {type IWSManResourceLocatorInternal_7d8a5284244b as IWSManResourceLocatorInternal}
+
+pub using @7f36cfe2eea45ef1 {type IWSManSession_c7cc7d439f27 as IWSManSession}
+
+pub using @7f36cfe2eea45ef1 {type WSMANAPIHANDLE_19d9b6459a8e as WSMANAPIHANDLE}
+
+pub using @7f36cfe2eea45ef1 {type WSMANAUTHENTICATIONCREDENTIALS_d8a0cc75d8dc as WSMANAUTHENTICATIONCREDENTIALS}
+
+pub using @7f36cfe2eea45ef1 {type WSMANAUTHZQUOTA_54ece0ad697e as WSMANAUTHZQUOTA}
+
+pub using @7f36cfe2eea45ef1 {type WSMANCERTIFICATEDETAILS_1ee0380dfc0e as WSMANCERTIFICATEDETAILS}
+
+pub using @7f36cfe2eea45ef1 {type WSMANCOMMANDARGSET_e0478ffc6c50 as WSMANCOMMANDARGSET}
+
+pub using @7f36cfe2eea45ef1 {type WSMANCOMMANDHANDLE_1df1e1a789bf as WSMANCOMMANDHANDLE}
+
+pub using @7f36cfe2eea45ef1 {type WSMANCONNECTDATA_45c01d875142 as WSMANCONNECTDATA}
+
+pub using @7f36cfe2eea45ef1 {type WSMANCREATESHELLDATA_b834dada3689 as WSMANCREATESHELLDATA}
+
+pub using @7f36cfe2eea45ef1 {type WSMANDATA_1c104ba1aac0 as WSMANDATA}
+
+pub using @7f36cfe2eea45ef1 {type WSMANDATABINARY_b68e47ae29b3 as WSMANDATABINARY}
+
+pub using @7f36cfe2eea45ef1 {type WSMANDATATEXT_15242b6b22f5 as WSMANDATATEXT}
+
+pub using @7f36cfe2eea45ef1 {type WSMANENVIRONMENTVARIABLE_e498ca02bdef as WSMANENVIRONMENTVARIABLE}
+
+pub using @7f36cfe2eea45ef1 {type WSMANENVIRONMENTVARIABLESET_cafaf33db93f as WSMANENVIRONMENTVARIABLESET}
+
+pub using @7f36cfe2eea45ef1 {type WSMANERROR_106b1b8d846e as WSMANERROR}
+
+pub using @7f36cfe2eea45ef1 {type WSMANFILTER_041cb46900e3 as WSMANFILTER}
+
+pub using @7f36cfe2eea45ef1 {type WSMANFRAGMENT_33063d0cbe0e as WSMANFRAGMENT}
+
+pub using @7f36cfe2eea45ef1 {type WSMANKEY_c4ccc0d48cfb as WSMANKEY}
+
+pub using @7f36cfe2eea45ef1 {type WSMANOPERATIONHANDLE_819c0675a21f as WSMANOPERATIONHANDLE}
+
+pub using @7f36cfe2eea45ef1 {type WSMANOPERATIONINFO_74bb32b92ddf as WSMANOPERATIONINFO}
+
+pub using @7f36cfe2eea45ef1 {type WSMANOPERATIONINFOEX_6478ef4111c3 as WSMANOPERATIONINFOEX}
+
+pub using @7f36cfe2eea45ef1 {type WSMANOPTION_60d4594cfccb as WSMANOPTION}
+
+pub using @7f36cfe2eea45ef1 {type WSMANOPTIONSET_904a7bd37efc as WSMANOPTIONSET}
+
+pub using @7f36cfe2eea45ef1 {type WSMANOPTIONSETEX_03efcf4763b9 as WSMANOPTIONSETEX}
+
+pub using @7f36cfe2eea45ef1 {type WSMANPLUGINAUTHORIZEOPERATION_6fe34fb5cee4 as WSMANPLUGINAUTHORIZEOPERATION}
+
+pub using @7f36cfe2eea45ef1 {type WSMANPLUGINAUTHORIZEQUERYQUOTA_3412148be972 as WSMANPLUGINAUTHORIZEQUERYQUOTA}
+
+pub using @7f36cfe2eea45ef1 {type WSMANPLUGINAUTHORIZERELEASECONTEXT_b55df9d5e477 as WSMANPLUGINAUTHORIZERELEASECONTEXT}
+
+pub using @7f36cfe2eea45ef1 {type WSMANPLUGINAUTHORIZEUSER_992476d68380 as WSMANPLUGINAUTHORIZEUSER}
+
+pub using @7f36cfe2eea45ef1 {type WSMANPLUGINCOMMAND_7a4f4c66a9bc as WSMANPLUGINCOMMAND}
+
+pub using @7f36cfe2eea45ef1 {type WSMANPLUGINCONNECT_2efeb3b9d9bb as WSMANPLUGINCONNECT}
+
+pub using @7f36cfe2eea45ef1 {type WSMANPLUGINRECEIVE_8d3a2efcfd98 as WSMANPLUGINRECEIVE}
+
+pub using @7f36cfe2eea45ef1 {type WSMANPLUGINRELEASECOMMANDCONTEXT_6555742cce88 as WSMANPLUGINRELEASECOMMANDCONTEXT}
+
+pub using @7f36cfe2eea45ef1 {type WSMANPLUGINRELEASESHELLCONTEXT_3240375eca22 as WSMANPLUGINRELEASESHELLCONTEXT}
+
+pub using @7f36cfe2eea45ef1 {type WSMANPLUGINREQUEST_a10005ebe36d as WSMANPLUGINREQUEST}
+
+pub using @7f36cfe2eea45ef1 {type WSMANPLUGINSEND_af55fd2ab6b9 as WSMANPLUGINSEND}
+
+pub using @7f36cfe2eea45ef1 {type WSMANPLUGINSHELL_49c81674f7b7 as WSMANPLUGINSHELL}
+
+pub using @7f36cfe2eea45ef1 {type WSMANPLUGINSHUTDOWN_3c81e958c421 as WSMANPLUGINSHUTDOWN}
+
+pub using @7f36cfe2eea45ef1 {type WSMANPLUGINSIGNAL_4c49125b7a77 as WSMANPLUGINSIGNAL}
+
+pub using @7f36cfe2eea45ef1 {type WSMANPLUGINSTARTUP_e640a833077d as WSMANPLUGINSTARTUP}
+
+pub using @7f36cfe2eea45ef1 {type WSMANPROXYINFO_cc1ddb64ab89 as WSMANPROXYINFO}
+
+pub using @7f36cfe2eea45ef1 {type WSMANRECEIVEDATARESULT_528c66bb64d2 as WSMANRECEIVEDATARESULT}
+
+pub using @7f36cfe2eea45ef1 {type WSMANRESPONSEDATA_80a0e71f80af as WSMANRESPONSEDATA}
+
+pub using @7f36cfe2eea45ef1 {type WSMANSELECTORSET_da9d7fcd0041 as WSMANSELECTORSET}
+
+pub using @7f36cfe2eea45ef1 {type WSMANSENDERDETAILS_5cb0145e1b6d as WSMANSENDERDETAILS}
+
+pub using @7f36cfe2eea45ef1 {type WSMANSESSIONHANDLE_1148300212c4 as WSMANSESSIONHANDLE}
+
+pub using @7f36cfe2eea45ef1 {type WSMANSHELLASYNC_70acc3307db0 as WSMANSHELLASYNC}
+
+pub using @7f36cfe2eea45ef1 {type WSMANSHELLCOMPLETIONFUNCTION_84439ec48284 as WSMANSHELLCOMPLETIONFUNCTION}
+
+pub using @7f36cfe2eea45ef1 {type WSMANSHELLDISCONNECTINFO_40183d20641a as WSMANSHELLDISCONNECTINFO}
+
+pub using @7f36cfe2eea45ef1 {type WSMANSHELLHANDLE_d77cdcf0a4d9 as WSMANSHELLHANDLE}
+
+pub using @7f36cfe2eea45ef1 {type WSMANSHELLSTARTUPINFOV10_869c03a45c93 as WSMANSHELLSTARTUPINFOV10}
+
+pub using @7f36cfe2eea45ef1 {type WSMANSHELLSTARTUPINFOV11_98279c39841e as WSMANSHELLSTARTUPINFOV11}
+
+pub using @7f36cfe2eea45ef1 {type WSMANSTREAMIDSET_1ced750db72f as WSMANSTREAMIDSET}
+
+pub using @7f36cfe2eea45ef1 {type WSMANUSERNAMEPASSWORDCREDS_ecd1a61296af as WSMANUSERNAMEPASSWORDCREDS}
+
+pub using @7f36cfe2eea45ef1 {type WSMan_03537475c4d6 as WSMan}
+
+pub using @7f36cfe2eea45ef1 {type WSManAuthenticationFlags_db2750cce47d as WSManAuthenticationFlags}
+
+pub using @7f36cfe2eea45ef1 {type WSManCallbackFlags_6901dd0c6362 as WSManCallbackFlags}
+
+pub using @7f36cfe2eea45ef1 {type WSManDataType_9fca41b3a75c as WSManDataType}
+
+pub using @7f36cfe2eea45ef1 {type WSManEnumFlags_905dc840ee22 as WSManEnumFlags}
+
+pub using @7f36cfe2eea45ef1 {type WSManInternal_9da3d2c56865 as WSManInternal}
+
+pub using @7f36cfe2eea45ef1 {type WSManProxyAccessType_a262bfad9616 as WSManProxyAccessType}
+
+pub using @7f36cfe2eea45ef1 {type WSManProxyAccessTypeFlags_b10fde36ba5c as WSManProxyAccessTypeFlags}
+
+pub using @7f36cfe2eea45ef1 {type WSManProxyAuthenticationFlags_c13d80e7010c as WSManProxyAuthenticationFlags}
+
+pub using @7f36cfe2eea45ef1 {type WSManSessionFlags_7e6a98ace8f4 as WSManSessionFlags}
+
+pub using @7f36cfe2eea45ef1 {type WSManSessionOption_c1722edb97af as WSManSessionOption}
+
+pub using @7f36cfe2eea45ef1 {type WSManShellFlag_379a515c961c as WSManShellFlag}
+
+// Traits
+

@@ -1,0 +1,176 @@
+// Generated using `moon info`, DON'T EDIT IT
+package "moonbit-community/win32-bindings/scc/c06e8a81057b0551"
+
+import {
+  "moonbit-community/win32-bindings/runtime/core",
+  "moonbitlang/core/debug",
+}
+
+// Values
+pub let anonymous_e_union_e362ac07fad1_alignment : Int
+
+pub let anonymous_e_union_e362ac07fad1_size : Int
+
+pub let cch_rm_max_app_name_6de7db63f904 : UInt
+
+pub let cch_rm_max_svc_name_9d4df73f3801 : UInt
+
+pub let cch_rm_session_key_b08ef4f4902c : UInt
+
+pub fn rm_add_filter_be34eb1212c5_raw(UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress, Int) -> UInt
+
+pub fn rm_cancel_current_task_d3129c85fdc0_raw(UInt) -> UInt
+
+pub let rm_console_f8ab68f1a5f0 : Int
+
+pub let rm_critical_afc132c95db0 : Int
+
+pub fn rm_end_session_46433d3e31ee_raw(UInt) -> UInt
+
+pub let rm_explorer_64c4b553f3ed : Int
+
+pub let rm_filter_trigger_file_6c637f297a3f : Int
+
+pub let rm_filter_trigger_invalid_85241b1ef3ec : Int
+
+pub let rm_filter_trigger_process_77ef5e8d4b99 : Int
+
+pub let rm_filter_trigger_service_b963186b5391 : Int
+
+pub let rm_force_shutdown_9a788ba7d65e : Int
+
+pub fn rm_get_filter_list_103f02037e3c_raw(UInt, @core.RawAddress, UInt, @core.RawAddress) -> UInt
+
+pub fn rm_get_list_76b21f42354c_raw(UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub let rm_invalid_filter_action_889372f4a9f4 : Int
+
+pub let rm_invalid_process_ad0d443865c0 : Int
+
+pub let rm_invalid_ts_session_b3ca2144db2a : Int
+
+pub fn rm_join_session_e08e94b30c8c_raw(@core.RawAddress, @core.RawAddress) -> UInt
+
+pub let rm_main_window_273363ea5e00 : Int
+
+pub let rm_no_restart_7170fa155370 : Int
+
+pub let rm_no_shutdown_30105493605d : Int
+
+pub let rm_other_window_7f74e7dd3487 : Int
+
+pub let rm_reboot_reason_critical_process_8e9148379fdf : Int
+
+pub let rm_reboot_reason_critical_service_f5160ad03576 : Int
+
+pub let rm_reboot_reason_detected_self_21caa3a2c035 : Int
+
+pub let rm_reboot_reason_none_b955600ae45e : Int
+
+pub let rm_reboot_reason_permission_denied_82e284d06df3 : Int
+
+pub let rm_reboot_reason_session_mismatch_d7d50ed57e01 : Int
+
+pub fn rm_register_resources_b57ba582eecd_raw(UInt, UInt, @core.RawAddress, UInt, @core.RawAddress, UInt, @core.RawAddress) -> UInt
+
+pub fn rm_remove_filter_01d1cbab75b1_raw(UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn rm_restart_f0e35d2fba75_raw(UInt, UInt, @core.RawAddress) -> UInt
+
+pub let rm_service_f2eac4340238 : Int
+
+pub fn rm_shutdown_14bb0f5a4d27_raw(UInt, UInt, @core.RawAddress) -> UInt
+
+pub let rm_shutdown_only_registered_0c0a6d2269a1 : Int
+
+pub fn rm_start_session_3b23ec3e1654_raw(@core.RawAddress, UInt, @core.RawAddress) -> UInt
+
+pub let rm_status_error_on_restart_a7dabbb3ff5e : Int
+
+pub let rm_status_error_on_stop_224eb6c03272 : Int
+
+pub let rm_status_restart_masked_38024acbee40 : Int
+
+pub let rm_status_restarted_e6629ad096b1 : Int
+
+pub let rm_status_running_740f728f1f11 : Int
+
+pub let rm_status_shutdown_masked_324d52904db2 : Int
+
+pub let rm_status_stopped_d1fc41beb4b7 : Int
+
+pub let rm_status_stopped_other_bdb99886f91f : Int
+
+pub let rm_status_unknown_c1e7f5af01f6 : Int
+
+pub let rm_unknown_app_aa8d51735b64 : Int
+
+pub let rmfilterinfo_84e2cdcb5bb0_alignment : Int
+
+pub let rmfilterinfo_84e2cdcb5bb0_size : Int
+
+pub let rmprocessinfo_5822d426c9d8_alignment : Int
+
+pub let rmprocessinfo_5822d426c9d8_size : Int
+
+pub let rmuniqueprocess_9bdcdcf5cbce_alignment : Int
+
+pub let rmuniqueprocess_9bdcdcf5cbce_size : Int
+
+// Errors
+
+// Types and methods
+pub(all) struct AnonymousEUnion_e362ac07fad1 {
+  raw_bytes : Bytes
+} derive(Eq, @debug.Debug)
+pub fn AnonymousEUnion_e362ac07fad1::bytes(Self) -> Bytes
+pub fn AnonymousEUnion_e362ac07fad1::from_bytes(Bytes) -> Self raise @core.WindowsError
+
+pub(all) struct RMAPPSTATUS_d7128a4a0e4a(Int) derive(Compare, Eq, @debug.Debug)
+pub fn RMAPPSTATUS_d7128a4a0e4a::from_int(Int) -> Self
+pub fn RMAPPSTATUS_d7128a4a0e4a::to_int(Self) -> Int
+
+pub(all) struct RMAPPTYPE_f9ca818edbd7(Int) derive(Compare, Eq, @debug.Debug)
+pub fn RMAPPTYPE_f9ca818edbd7::from_int(Int) -> Self
+pub fn RMAPPTYPE_f9ca818edbd7::to_int(Self) -> Int
+
+pub(all) struct RMFILTERACTION_9e03b209b0a5(Int) derive(Compare, Eq, @debug.Debug)
+pub fn RMFILTERACTION_9e03b209b0a5::from_int(Int) -> Self
+pub fn RMFILTERACTION_9e03b209b0a5::to_int(Self) -> Int
+
+pub(all) struct RMFILTERINFO_84e2cdcb5bb0 {
+  raw_bytes : Bytes
+} derive(Eq, @debug.Debug)
+pub fn RMFILTERINFO_84e2cdcb5bb0::bytes(Self) -> Bytes
+pub fn RMFILTERINFO_84e2cdcb5bb0::from_bytes(Bytes) -> Self raise @core.WindowsError
+
+pub(all) struct RMFILTERTRIGGER_262c183d2bcd(Int) derive(Compare, Eq, @debug.Debug)
+pub fn RMFILTERTRIGGER_262c183d2bcd::from_int(Int) -> Self
+pub fn RMFILTERTRIGGER_262c183d2bcd::to_int(Self) -> Int
+
+pub(all) struct RMPROCESSINFO_5822d426c9d8 {
+  raw_bytes : Bytes
+} derive(Eq, @debug.Debug)
+pub fn RMPROCESSINFO_5822d426c9d8::bytes(Self) -> Bytes
+pub fn RMPROCESSINFO_5822d426c9d8::from_bytes(Bytes) -> Self raise @core.WindowsError
+
+pub(all) struct RMREBOOTREASON_ceafd605aba1(Int) derive(Compare, Eq, @debug.Debug)
+pub fn RMREBOOTREASON_ceafd605aba1::from_int(Int) -> Self
+pub fn RMREBOOTREASON_ceafd605aba1::to_int(Self) -> Int
+
+pub(all) struct RMSHUTDOWNTYPE_4904786e6ea9(Int) derive(Compare, Eq, @debug.Debug)
+pub fn RMSHUTDOWNTYPE_4904786e6ea9::from_int(Int) -> Self
+pub fn RMSHUTDOWNTYPE_4904786e6ea9::to_int(Self) -> Int
+
+pub(all) struct RMUNIQUEPROCESS_9bdcdcf5cbce {
+  raw_bytes : Bytes
+} derive(Eq, @debug.Debug)
+pub fn RMUNIQUEPROCESS_9bdcdcf5cbce::bytes(Self) -> Bytes
+pub fn RMUNIQUEPROCESS_9bdcdcf5cbce::from_bytes(Bytes) -> Self raise @core.WindowsError
+
+pub type RMWRITESTATUSCALLBACK_4e8f868d039b
+
+// Type aliases
+
+// Traits
+

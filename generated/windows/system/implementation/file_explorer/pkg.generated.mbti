@@ -1,0 +1,52 @@
+// Generated using `moon info`, DON'T EDIT IT
+package "moonbit-community/win32-bindings/windows/system/implementation/file_explorer"
+
+import {
+  "moonbit-community/win32-bindings/runtime/com",
+  "moonbit-community/win32-bindings/runtime/core",
+  "moonbit-community/win32-bindings/scc/9bc7e135b4b95c39",
+  "moonbitlang/core/ref",
+}
+
+// Values
+pub fn activatable_factory(@core.Guid) -> @com.ComPtr[@com.IInspectable] raise @core.WindowsError
+
+pub fn add_event_received(@core.RawAddress, @core.RawAddress) -> Int64 raise @core.WindowsError
+
+pub fn add_event_received_raw(@core.RawAddress, @core.RawAddress, @ref.Ref[Int64]) -> Int
+
+pub fn create_instance_raw(@core.RawAddress, @core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub let event_received : String
+
+pub fn get_event_source_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_http_request_provider_raw(@core.RawAddress, @core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_json_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub let json_8b350ae37d : String
+
+pub let json_f92fccfa8e : String
+
+pub fn remove_event_received(@core.RawAddress, Int64) -> Unit raise @core.WindowsError
+
+pub fn remove_event_received_raw(@core.RawAddress, Int64) -> Int
+
+pub fn send_request_async_raw(@core.RawAddress, @core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+// Errors
+
+// Types and methods
+
+// Type aliases
+pub using @9bc7e135b4b95c39 {type ISysStorageProviderEventSource_c80c9d4a17fb as ISysStorageProviderEventSource}
+
+pub using @9bc7e135b4b95c39 {type ISysStorageProviderHandlerFactory_5c5eaf3be35a as ISysStorageProviderHandlerFactory}
+
+pub using @9bc7e135b4b95c39 {type ISysStorageProviderHttpRequestProvider_c237364c82d5 as ISysStorageProviderHttpRequestProvider}
+
+pub using @9bc7e135b4b95c39 {type SysStorageProviderEventReceivedEventArgs_c6b94003a412 as SysStorageProviderEventReceivedEventArgs}
+
+// Traits
+

@@ -1,0 +1,96 @@
+// Generated using `moon info`, DON'T EDIT IT
+package "moonbit-community/win32-bindings/windows/devices/adc"
+
+import {
+  "moonbit-community/win32-bindings/runtime/com",
+  "moonbit-community/win32-bindings/runtime/core",
+  "moonbit-community/win32-bindings/scc/5a26d4b1ffdeef1f",
+  "moonbitlang/core/ref",
+}
+
+// Values
+pub let channel_count_860e101af0 : String
+
+pub let channel_count_91a111e47b : String
+
+pub let channel_mode_785d50174a : String
+
+pub let channel_mode_b9f8d40e20 : String
+
+pub let controller_2d3d6029b0 : String
+
+pub let controller_6df092d003 : String
+
+pub let differential : Int
+
+pub fn get_channel_count(@core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn get_channel_count_raw(@core.RawAddress, @ref.Ref[Int]) -> Int
+
+pub fn get_channel_mode(@core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn get_channel_mode_raw(@core.RawAddress, @ref.Ref[Int]) -> Int
+
+pub fn get_controller_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_controllers_async_raw(@core.RawAddress, @core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_default_async_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_max_value(@core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn get_max_value_raw(@core.RawAddress, @ref.Ref[Int]) -> Int
+
+pub fn get_min_value(@core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn get_min_value_raw(@core.RawAddress, @ref.Ref[Int]) -> Int
+
+pub fn get_resolution_in_bits(@core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn get_resolution_in_bits_raw(@core.RawAddress, @ref.Ref[Int]) -> Int
+
+pub fn is_channel_mode_supported_raw(@core.RawAddress, Int, Bytes) -> Int
+
+pub let max_value_5355f1ba83 : String
+
+pub let max_value_5f24a03a9e : String
+
+pub let min_value_16bb8ac898 : String
+
+pub let min_value_f69f0f0b20 : String
+
+pub fn open_channel_raw(@core.RawAddress, Int, @ref.Ref[UInt64]) -> Int
+
+pub fn put_channel_mode(@core.RawAddress, Int) -> Unit raise @core.WindowsError
+
+pub fn put_channel_mode_raw(@core.RawAddress, Int) -> Int
+
+pub fn read_ratio_raw(@core.RawAddress, Bytes) -> Int
+
+pub fn read_value(@core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn read_value_raw(@core.RawAddress, @ref.Ref[Int]) -> Int
+
+pub let resolution_in_bits_23fdea5df6 : String
+
+pub let resolution_in_bits_3aab2340d9 : String
+
+pub let single_ended : Int
+
+pub fn static_factory_453b31ee50(@core.Guid) -> @com.ComPtr[@com.IInspectable] raise @core.WindowsError
+
+pub fn static_factory_5f3533f87b(@core.Guid) -> @com.ComPtr[@com.IInspectable] raise @core.WindowsError
+
+// Errors
+
+// Types and methods
+
+// Type aliases
+pub using @5a26d4b1ffdeef1f {type AdcChannel_c45c6cd7199c as AdcChannel}
+
+pub using @5a26d4b1ffdeef1f {type AdcChannelMode_bddfa300a692 as AdcChannelMode}
+
+pub using @5a26d4b1ffdeef1f {type AdcController_e6321dd97bfc as AdcController}
+
+// Traits
+

@@ -1,0 +1,578 @@
+// Generated using `moon info`, DON'T EDIT IT
+package "moonbit-community/win32-bindings/windows/win32/system/event_log"
+
+import {
+  "moonbit-community/win32-bindings/runtime/core",
+  "moonbit-community/win32-bindings/scc/8cf950c8cea46b05",
+}
+
+// Values
+pub fn backup_event_log_a_raw(@core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn backup_event_log_w_raw(@core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn clear_event_log_a_raw(@core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn clear_event_log_w_raw(@core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn close_event_log_raw(@core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn deregister_event_source_raw(@core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub let event_metadata_event_channel : Int
+
+pub let event_metadata_event_id : Int
+
+pub let event_metadata_event_keyword : Int
+
+pub let event_metadata_event_level : Int
+
+pub let event_metadata_event_message_id : Int
+
+pub let event_metadata_event_opcode : Int
+
+pub let event_metadata_event_task : Int
+
+pub let event_metadata_event_template : Int
+
+pub let event_metadata_event_version : Int
+
+pub let eventlog_audit_failure : UInt
+
+pub let eventlog_audit_success : UInt
+
+pub let eventlog_backwards_read : UInt
+
+pub let eventlog_error_type : UInt
+
+pub let eventlog_forwards_read : UInt
+
+pub let eventlog_information_type : UInt
+
+pub let eventlog_seek_read : UInt
+
+pub let eventlog_sequential_read : UInt
+
+pub let eventlog_success : UInt
+
+pub let eventlog_warning_type : UInt
+
+pub let evt_all_access : UInt
+
+pub fn evt_archive_exported_log_raw(Int64, @core.RawAddress, UInt, UInt) -> @core.RawWin32Call[Int]
+
+pub fn evt_cancel_raw(Int64) -> @core.RawWin32Call[Int]
+
+pub let evt_channel_clock_type_qpc : Int
+
+pub let evt_channel_clock_type_system_time : Int
+
+pub let evt_channel_config_access : Int
+
+pub let evt_channel_config_classic_eventlog : Int
+
+pub let evt_channel_config_enabled : Int
+
+pub let evt_channel_config_isolation : Int
+
+pub let evt_channel_config_owning_publisher : Int
+
+pub let evt_channel_config_property_id_end : Int
+
+pub let evt_channel_config_type : Int
+
+pub let evt_channel_isolation_type_application : Int
+
+pub let evt_channel_isolation_type_custom : Int
+
+pub let evt_channel_isolation_type_system : Int
+
+pub let evt_channel_logging_config_auto_backup : Int
+
+pub let evt_channel_logging_config_log_file_path : Int
+
+pub let evt_channel_logging_config_max_size : Int
+
+pub let evt_channel_logging_config_retention : Int
+
+pub let evt_channel_publisher_list : Int
+
+pub let evt_channel_publishing_config_buffer_size : Int
+
+pub let evt_channel_publishing_config_clock_type : Int
+
+pub let evt_channel_publishing_config_control_guid : Int
+
+pub let evt_channel_publishing_config_file_max : Int
+
+pub let evt_channel_publishing_config_keywords : Int
+
+pub let evt_channel_publishing_config_latency : Int
+
+pub let evt_channel_publishing_config_level : Int
+
+pub let evt_channel_publishing_config_max_buffers : Int
+
+pub let evt_channel_publishing_config_min_buffers : Int
+
+pub let evt_channel_publishing_config_sid_type : Int
+
+pub let evt_channel_reference_imported : UInt
+
+pub let evt_channel_sid_type_none : Int
+
+pub let evt_channel_sid_type_publishing : Int
+
+pub let evt_channel_type_admin : Int
+
+pub let evt_channel_type_analytic : Int
+
+pub let evt_channel_type_debug : Int
+
+pub let evt_channel_type_operational : Int
+
+pub let evt_clear_access : UInt
+
+pub fn evt_clear_log_raw(Int64, @core.RawAddress, @core.RawAddress, UInt) -> @core.RawWin32Call[Int]
+
+pub fn evt_close_raw(Int64) -> @core.RawWin32Call[Int]
+
+pub fn evt_create_bookmark_raw(@core.RawAddress) -> @core.RawWin32Call[Int64]
+
+pub fn evt_create_render_context_raw(UInt, @core.RawAddress, UInt) -> @core.RawWin32Call[Int64]
+
+pub let evt_event_metadata_property_id_end : Int
+
+pub let evt_event_path : Int
+
+pub let evt_event_property_id_end : Int
+
+pub let evt_event_query_i_ds : Int
+
+pub let evt_export_log_channel_path : UInt
+
+pub let evt_export_log_file_path : UInt
+
+pub let evt_export_log_overwrite : UInt
+
+pub fn evt_export_log_raw(Int64, @core.RawAddress, @core.RawAddress, @core.RawAddress, UInt) -> @core.RawWin32Call[Int]
+
+pub let evt_export_log_tolerate_query_errors : UInt
+
+pub let evt_format_message_channel : UInt
+
+pub let evt_format_message_event : UInt
+
+pub let evt_format_message_id : UInt
+
+pub let evt_format_message_keyword : UInt
+
+pub let evt_format_message_level : UInt
+
+pub let evt_format_message_opcode : UInt
+
+pub let evt_format_message_provider : UInt
+
+pub fn evt_format_message_raw(Int64, Int64, UInt, UInt, @core.RawAddress, UInt, UInt, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub let evt_format_message_task : UInt
+
+pub let evt_format_message_xml : UInt
+
+pub fn evt_get_channel_config_property_raw(Int64, Int, UInt, UInt, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn evt_get_event_info_raw(Int64, Int, UInt, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn evt_get_event_metadata_property_raw(Int64, Int, UInt, UInt, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn evt_get_extended_status_raw(UInt, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn evt_get_log_info_raw(Int64, Int, UInt, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn evt_get_object_array_property_raw(Int64, UInt, UInt, UInt, UInt, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn evt_get_object_array_size_raw(Int64, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn evt_get_publisher_metadata_property_raw(Int64, Int, UInt, UInt, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn evt_get_query_info_raw(Int64, Int, UInt, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub let evt_log_attributes : Int
+
+pub let evt_log_creation_time : Int
+
+pub let evt_log_file_size : Int
+
+pub let evt_log_full : Int
+
+pub let evt_log_last_access_time : Int
+
+pub let evt_log_last_write_time : Int
+
+pub let evt_log_number_of_log_records : Int
+
+pub let evt_log_oldest_record_number : Int
+
+pub fn evt_next_channel_path_raw(Int64, UInt, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn evt_next_event_metadata_raw(Int64, UInt) -> @core.RawWin32Call[Int64]
+
+pub fn evt_next_publisher_id_raw(Int64, UInt, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn evt_next_raw(Int64, UInt, @core.RawAddress, UInt, UInt, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn evt_open_channel_config_raw(Int64, @core.RawAddress, UInt) -> @core.RawWin32Call[Int64]
+
+pub fn evt_open_channel_enum_raw(Int64, UInt) -> @core.RawWin32Call[Int64]
+
+pub let evt_open_channel_path : UInt
+
+pub fn evt_open_event_metadata_enum_raw(Int64, UInt) -> @core.RawWin32Call[Int64]
+
+pub let evt_open_file_path : UInt
+
+pub fn evt_open_log_raw(Int64, @core.RawAddress, UInt) -> @core.RawWin32Call[Int64]
+
+pub fn evt_open_publisher_enum_raw(Int64, UInt) -> @core.RawWin32Call[Int64]
+
+pub fn evt_open_publisher_metadata_raw(Int64, @core.RawAddress, @core.RawAddress, UInt, UInt) -> @core.RawWin32Call[Int64]
+
+pub fn evt_open_session_raw(Int, @core.RawAddress, UInt, UInt) -> @core.RawWin32Call[Int64]
+
+pub let evt_publisher_metadata_channel_reference_flags : Int
+
+pub let evt_publisher_metadata_channel_reference_id : Int
+
+pub let evt_publisher_metadata_channel_reference_index : Int
+
+pub let evt_publisher_metadata_channel_reference_message_id : Int
+
+pub let evt_publisher_metadata_channel_reference_path : Int
+
+pub let evt_publisher_metadata_channel_references : Int
+
+pub let evt_publisher_metadata_help_link : Int
+
+pub let evt_publisher_metadata_keyword_message_id : Int
+
+pub let evt_publisher_metadata_keyword_name : Int
+
+pub let evt_publisher_metadata_keyword_value : Int
+
+pub let evt_publisher_metadata_keywords : Int
+
+pub let evt_publisher_metadata_level_message_id : Int
+
+pub let evt_publisher_metadata_level_name : Int
+
+pub let evt_publisher_metadata_level_value : Int
+
+pub let evt_publisher_metadata_levels : Int
+
+pub let evt_publisher_metadata_message_file_path : Int
+
+pub let evt_publisher_metadata_opcode_message_id : Int
+
+pub let evt_publisher_metadata_opcode_name : Int
+
+pub let evt_publisher_metadata_opcode_value : Int
+
+pub let evt_publisher_metadata_opcodes : Int
+
+pub let evt_publisher_metadata_parameter_file_path : Int
+
+pub let evt_publisher_metadata_property_id_end : Int
+
+pub let evt_publisher_metadata_publisher_guid : Int
+
+pub let evt_publisher_metadata_publisher_message_id : Int
+
+pub let evt_publisher_metadata_resource_file_path : Int
+
+pub let evt_publisher_metadata_task_event_guid : Int
+
+pub let evt_publisher_metadata_task_message_id : Int
+
+pub let evt_publisher_metadata_task_name : Int
+
+pub let evt_publisher_metadata_task_value : Int
+
+pub let evt_publisher_metadata_tasks : Int
+
+pub let evt_query_channel_path : UInt
+
+pub let evt_query_file_path : UInt
+
+pub let evt_query_forward_direction : UInt
+
+pub let evt_query_names : Int
+
+pub let evt_query_property_id_end : Int
+
+pub fn evt_query_raw(Int64, @core.RawAddress, @core.RawAddress, UInt) -> @core.RawWin32Call[Int64]
+
+pub let evt_query_reverse_direction : UInt
+
+pub let evt_query_statuses : Int
+
+pub let evt_query_tolerate_query_errors : UInt
+
+pub let evt_read_access : UInt
+
+pub let evt_render_bookmark : UInt
+
+pub let evt_render_context_system : UInt
+
+pub let evt_render_context_user : UInt
+
+pub let evt_render_context_values : UInt
+
+pub let evt_render_event_values : UInt
+
+pub let evt_render_event_xml : UInt
+
+pub fn evt_render_raw(Int64, Int64, UInt, UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub let evt_rpc_login : Int
+
+pub let evt_rpc_login_auth_default : UInt
+
+pub let evt_rpc_login_auth_kerberos : UInt
+
+pub let evt_rpc_login_auth_negotiate : UInt
+
+pub let evt_rpc_login_auth_ntlm : UInt
+
+pub fn evt_save_channel_config_raw(Int64, UInt) -> @core.RawWin32Call[Int]
+
+pub let evt_seek_origin_mask : UInt
+
+pub fn evt_seek_raw(Int64, Int64, Int64, UInt, UInt) -> @core.RawWin32Call[Int]
+
+pub let evt_seek_relative_to_bookmark : UInt
+
+pub let evt_seek_relative_to_current : UInt
+
+pub let evt_seek_relative_to_first : UInt
+
+pub let evt_seek_relative_to_last : UInt
+
+pub let evt_seek_strict : UInt
+
+pub fn evt_set_channel_config_property_raw(Int64, Int, UInt, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub let evt_subscribe_action_deliver : Int
+
+pub let evt_subscribe_action_error : Int
+
+pub let evt_subscribe_origin_mask : UInt
+
+pub fn evt_subscribe_raw(Int64, @core.RawAddress, @core.RawAddress, @core.RawAddress, Int64, @core.RawAddress, @core.RawAddress, UInt) -> @core.RawWin32Call[Int64]
+
+pub let evt_subscribe_start_after_bookmark : UInt
+
+pub let evt_subscribe_start_at_oldest_record : UInt
+
+pub let evt_subscribe_strict : UInt
+
+pub let evt_subscribe_to_future_events : UInt
+
+pub let evt_subscribe_tolerate_query_errors : UInt
+
+pub let evt_system_activity_id : Int
+
+pub let evt_system_channel : Int
+
+pub let evt_system_computer : Int
+
+pub let evt_system_event_id : Int
+
+pub let evt_system_event_record_id : Int
+
+pub let evt_system_keywords : Int
+
+pub let evt_system_level : Int
+
+pub let evt_system_opcode : Int
+
+pub let evt_system_process_id : Int
+
+pub let evt_system_property_id_end : Int
+
+pub let evt_system_provider_guid : Int
+
+pub let evt_system_provider_name : Int
+
+pub let evt_system_qualifiers : Int
+
+pub let evt_system_related_activity_id : Int
+
+pub let evt_system_task : Int
+
+pub let evt_system_thread_id : Int
+
+pub let evt_system_time_created : Int
+
+pub let evt_system_user_id : Int
+
+pub let evt_system_version : Int
+
+pub fn evt_update_bookmark_raw(Int64, Int64) -> @core.RawWin32Call[Int]
+
+pub let evt_var_type_ansi_string : Int
+
+pub let evt_var_type_binary : Int
+
+pub let evt_var_type_boolean : Int
+
+pub let evt_var_type_byte : Int
+
+pub let evt_var_type_double : Int
+
+pub let evt_var_type_evt_handle : Int
+
+pub let evt_var_type_evt_xml : Int
+
+pub let evt_var_type_file_time : Int
+
+pub let evt_var_type_guid : Int
+
+pub let evt_var_type_hex_int32 : Int
+
+pub let evt_var_type_hex_int64 : Int
+
+pub let evt_var_type_int16 : Int
+
+pub let evt_var_type_int32 : Int
+
+pub let evt_var_type_int64 : Int
+
+pub let evt_var_type_null : Int
+
+pub let evt_var_type_s_byte : Int
+
+pub let evt_var_type_sid : Int
+
+pub let evt_var_type_single : Int
+
+pub let evt_var_type_size_t : Int
+
+pub let evt_var_type_string : Int
+
+pub let evt_var_type_sys_time : Int
+
+pub let evt_var_type_u_int16 : Int
+
+pub let evt_var_type_u_int32 : Int
+
+pub let evt_var_type_u_int64 : Int
+
+pub let evt_variant_type_array : UInt
+
+pub let evt_variant_type_mask : UInt
+
+pub let evt_write_access : UInt
+
+pub fn get_event_log_information_raw(@core.RawAddress, UInt, @core.RawAddress, UInt, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn get_number_of_event_log_records_raw(@core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn get_oldest_event_log_record_raw(@core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn notify_change_event_log_raw(@core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn open_backup_event_log_a_raw(@core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[@core.RawAddress]
+
+pub fn open_backup_event_log_w_raw(@core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[@core.RawAddress]
+
+pub fn open_event_log_a_raw(@core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[@core.RawAddress]
+
+pub fn open_event_log_w_raw(@core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[@core.RawAddress]
+
+pub fn read_event_log_a_raw(@core.RawAddress, UInt, UInt, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn read_event_log_w_raw(@core.RawAddress, UInt, UInt, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn register_event_source_a_raw(@core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[@core.RawAddress]
+
+pub fn register_event_source_w_raw(@core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[@core.RawAddress]
+
+pub fn report_event_a_raw(@core.RawAddress, UInt, UInt, UInt, @core.RawAddress, UInt, UInt, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn report_event_w_raw(@core.RawAddress, UInt, UInt, UInt, @core.RawAddress, UInt, UInt, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+// Errors
+
+// Types and methods
+
+// Type aliases
+pub using @8cf950c8cea46b05 {type AnonymousEUnion_279d62421848 as AnonymousEUnion}
+
+pub using @8cf950c8cea46b05 {type EVENTLOGFULLINFORMATION_e3b8e36eada0 as EVENTLOGFULLINFORMATION}
+
+pub using @8cf950c8cea46b05 {type EVENTLOGRECORD_5bf76b1b89ea as EVENTLOGRECORD}
+
+pub using @8cf950c8cea46b05 {type EVENTSFORLOGFILE_d0fe2c31279f as EVENTSFORLOGFILE}
+
+pub using @8cf950c8cea46b05 {type EVTCHANNELCLOCKTYPE_5be3f3b35734 as EVTCHANNELCLOCKTYPE}
+
+pub using @8cf950c8cea46b05 {type EVTCHANNELCONFIGPROPERTYID_bf2b0c40390d as EVTCHANNELCONFIGPROPERTYID}
+
+pub using @8cf950c8cea46b05 {type EVTCHANNELISOLATIONTYPE_38f620e0a46a as EVTCHANNELISOLATIONTYPE}
+
+pub using @8cf950c8cea46b05 {type EVTCHANNELREFERENCEFLAGS_0fbc19c7b2ab as EVTCHANNELREFERENCEFLAGS}
+
+pub using @8cf950c8cea46b05 {type EVTCHANNELSIDTYPE_cc252905d820 as EVTCHANNELSIDTYPE}
+
+pub using @8cf950c8cea46b05 {type EVTCHANNELTYPE_41995fa6b8e6 as EVTCHANNELTYPE}
+
+pub using @8cf950c8cea46b05 {type EVTEVENTMETADATAPROPERTYID_a86515c2bc0d as EVTEVENTMETADATAPROPERTYID}
+
+pub using @8cf950c8cea46b05 {type EVTEVENTPROPERTYID_0105c8d7ddb5 as EVTEVENTPROPERTYID}
+
+pub using @8cf950c8cea46b05 {type EVTEXPORTLOGFLAGS_7a51f6695df5 as EVTEXPORTLOGFLAGS}
+
+pub using @8cf950c8cea46b05 {type EVTFORMATMESSAGEFLAGS_f4b706e45d35 as EVTFORMATMESSAGEFLAGS}
+
+pub using @8cf950c8cea46b05 {type EVTHANDLE_e67b020826fd as EVTHANDLE}
+
+pub using @8cf950c8cea46b05 {type EVTLOGINCLASS_76811299eec5 as EVTLOGINCLASS}
+
+pub using @8cf950c8cea46b05 {type EVTLOGPROPERTYID_2655e6779c40 as EVTLOGPROPERTYID}
+
+pub using @8cf950c8cea46b05 {type EVTOPENLOGFLAGS_e4dcfcd5f9f3 as EVTOPENLOGFLAGS}
+
+pub using @8cf950c8cea46b05 {type EVTPUBLISHERMETADATAPROPERTYID_5b990637dcb5 as EVTPUBLISHERMETADATAPROPERTYID}
+
+pub using @8cf950c8cea46b05 {type EVTQUERYFLAGS_e3ba897f2013 as EVTQUERYFLAGS}
+
+pub using @8cf950c8cea46b05 {type EVTQUERYPROPERTYID_25546d7d4944 as EVTQUERYPROPERTYID}
+
+pub using @8cf950c8cea46b05 {type EVTRENDERCONTEXTFLAGS_3c1ec2996c94 as EVTRENDERCONTEXTFLAGS}
+
+pub using @8cf950c8cea46b05 {type EVTRENDERFLAGS_9bb4f32df77f as EVTRENDERFLAGS}
+
+pub using @8cf950c8cea46b05 {type EVTRPCLOGIN_f2f3f77888bf as EVTRPCLOGIN}
+
+pub using @8cf950c8cea46b05 {type EVTRPCLOGINFLAGS_6049e3fd6383 as EVTRPCLOGINFLAGS}
+
+pub using @8cf950c8cea46b05 {type EVTSEEKFLAGS_a86089a0f2d3 as EVTSEEKFLAGS}
+
+pub using @8cf950c8cea46b05 {type EVTSUBSCRIBECALLBACK_a8dd8da2a06a as EVTSUBSCRIBECALLBACK}
+
+pub using @8cf950c8cea46b05 {type EVTSUBSCRIBEFLAGS_d1ab17619d78 as EVTSUBSCRIBEFLAGS}
+
+pub using @8cf950c8cea46b05 {type EVTSUBSCRIBENOTIFYACTION_6e6f29edf6bc as EVTSUBSCRIBENOTIFYACTION}
+
+pub using @8cf950c8cea46b05 {type EVTSYSTEMPROPERTYID_523c7455d4de as EVTSYSTEMPROPERTYID}
+
+pub using @8cf950c8cea46b05 {type EVTVARIANT_9c7d273c5394 as EVTVARIANT}
+
+pub using @8cf950c8cea46b05 {type EVTVARIANTTYPE_d42ae0b6b737 as EVTVARIANTTYPE}
+
+pub using @8cf950c8cea46b05 {type READEVENTLOGREADFLAGS_dee22900a43c as READEVENTLOGREADFLAGS}
+
+pub using @8cf950c8cea46b05 {type REPORTEVENTTYPE_a0ab30c78edf as REPORTEVENTTYPE}
+
+// Traits
+

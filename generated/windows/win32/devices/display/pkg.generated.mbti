@@ -1,0 +1,2888 @@
+// Generated using `moon info`, DON'T EDIT IT
+package "moonbit-community/win32-bindings/windows/win32/devices/display"
+
+import {
+  "moonbit-community/win32-bindings/runtime/core",
+  "moonbit-community/win32-bindings/scc/dd2f48dd8788277c",
+}
+
+// Values
+pub let ar_disabled : Int
+
+pub let ar_docked : Int
+
+pub let ar_enabled : Int
+
+pub let ar_laptop : Int
+
+pub let ar_multimon : Int
+
+pub let ar_nosensor : Int
+
+pub let ar_not_supported : Int
+
+pub let ar_remotesession : Int
+
+pub let ar_suppressed : Int
+
+pub let backlight_optimization_desktop : Int
+
+pub let backlight_optimization_dimmed : Int
+
+pub let backlight_optimization_disable : Int
+
+pub let backlight_optimization_dynamic : Int
+
+pub let backlight_optimization_edr : Int
+
+pub let bitmap_array_byte : UInt
+
+pub let bitmap_bits_byte_align : UInt
+
+pub let bitmap_bits_pixel : UInt
+
+pub let bitmap_bits_word_align : UInt
+
+pub let bitmap_planes : UInt
+
+pub let black_screen_diagnostics_data : Int
+
+pub let black_screen_display_recovery : Int
+
+pub let bmf_16_bpp : Int
+
+pub let bmf_1_bpp : Int
+
+pub let bmf_24_bpp : Int
+
+pub let bmf_32_bpp : Int
+
+pub let bmf_4_bpp : Int
+
+pub let bmf_4_rle : Int
+
+pub let bmf_8_bpp : Int
+
+pub let bmf_8_rle : Int
+
+pub let bmf_acc_notify : UInt
+
+pub let bmf_dontcache : UInt
+
+pub let bmf_jpeg : Int
+
+pub let bmf_kmsection : UInt
+
+pub let bmf_notsysmem : UInt
+
+pub let bmf_nozeroinit : UInt
+
+pub let bmf_png : Int
+
+pub let bmf_reserved : UInt
+
+pub let bmf_rmt_enter : UInt
+
+pub let bmf_temp_alpha : UInt
+
+pub let bmf_topdown : UInt
+
+pub let bmf_umpdmem : UInt
+
+pub let bmf_usermem : UInt
+
+pub let bmf_window_blt : UInt
+
+pub let br_cmykcolor : UInt
+
+pub let br_device_icm : UInt
+
+pub let br_host_icm : UInt
+
+pub let br_origcolor : UInt
+
+pub let brightness_interface_version_1 : Int
+
+pub let brightness_interface_version_2 : Int
+
+pub let brightness_interface_version_3 : Int
+
+pub let brightness_max_level_count : UInt
+
+pub let brightness_max_nit_range_count : UInt
+
+pub fn brushobj_h_get_color_transform_raw(@core.RawAddress) -> @core.RawAddress
+
+pub fn brushobj_pv_alloc_rbrush_raw(@core.RawAddress, UInt) -> @core.RawAddress
+
+pub fn brushobj_pv_get_rbrush_raw(@core.RawAddress) -> @core.RawAddress
+
+pub fn brushobj_ul_get_brush_color_raw(@core.RawAddress) -> UInt
+
+pub fn capabilities_request_and_capabilities_reply_raw(@core.RawAddress, @core.RawAddress, UInt) -> @core.RawWin32Call[Int]
+
+pub let cd_any : Int
+
+pub let cd_leftdown : Int
+
+pub let cd_leftup : Int
+
+pub let cd_leftwards : Int
+
+pub let cd_rightdown : Int
+
+pub let cd_rightup : Int
+
+pub let cd_upwards : Int
+
+pub let cdbex_crossadapter : UInt
+
+pub let cdbex_dxinterop : UInt
+
+pub let cdbex_ntsharedsurfacehandle : UInt
+
+pub let cdbex_redirection : UInt
+
+pub let cdbex_reuse : UInt
+
+pub fn clipobj_b_enum_raw(@core.RawAddress, UInt, @core.RawAddress) -> Int
+
+pub fn clipobj_c_enum_start_raw(@core.RawAddress, Int, UInt, UInt, UInt) -> UInt
+
+pub fn clipobj_ppo_get_path_raw(@core.RawAddress) -> @core.RawAddress
+
+pub let color_space_transform_stage_control_bypass : Int
+
+pub let color_space_transform_stage_control_enable : Int
+
+pub let color_space_transform_stage_control_no_change : Int
+
+pub let colorspace_transform_data_type_fixed_point : Int
+
+pub let colorspace_transform_data_type_float : Int
+
+pub let colorspace_transform_type_default : Int
+
+pub let colorspace_transform_type_dxgi_1 : Int
+
+pub let colorspace_transform_type_matrix_3x4 : Int
+
+pub let colorspace_transform_type_matrix_v2 : Int
+
+pub let colorspace_transform_type_rgb256x3x16 : Int
+
+pub let colorspace_transform_type_uninitialized : Int
+
+pub let colorspace_transform_version_1 : Int
+
+pub let colorspace_transform_version_default : Int
+
+pub let colorspace_transform_version_not_supported : Int
+
+pub fn commit_6ff9a0c807(@core.RawAddress, Int) -> Unit raise @core.WindowsError
+
+pub fn commit_6ff9a0c807_raw(@core.RawAddress, Int) -> Int
+
+pub fn commit_d67ecc2a92(@core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn commit_d67ecc2a92_raw(@core.RawAddress) -> Int
+
+pub let ct_rectangles : Int
+
+pub let dc_complex : UInt
+
+pub let dc_rect : UInt
+
+pub let dc_trivial : UInt
+
+pub let dcr_driver : UInt
+
+pub let dcr_halftone : UInt
+
+pub let dcr_solid : UInt
+
+pub let dct_default : Int
+
+pub let dct_force_high_performance : Int
+
+pub let dct_force_low_power : Int
+
+pub let dd_fullscreen_video_device_name : String
+
+pub let ddi_driver_version_nt4 : UInt
+
+pub let ddi_driver_version_nt5 : UInt
+
+pub let ddi_driver_version_nt5_01 : UInt
+
+pub let ddi_driver_version_nt5_01_sp1 : UInt
+
+pub let ddi_driver_version_sp3 : UInt
+
+pub let ddi_error : UInt
+
+pub fn degauss_monitor_raw(@core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn destroy_physical_monitor_raw(@core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn destroy_physical_monitors_raw(UInt, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub let devhtadjf_additive_device : UInt
+
+pub let devhtadjf_color_device : UInt
+
+pub fn display_config_get_device_info_raw(@core.RawAddress) -> Int
+
+pub fn display_config_set_device_info_raw(@core.RawAddress) -> Int
+
+pub let displayconfig_device_info_get_adapter_name : Int
+
+pub let displayconfig_device_info_get_advanced_color_info : Int
+
+pub let displayconfig_device_info_get_advanced_color_info_2 : Int
+
+pub let displayconfig_device_info_get_monitor_specialization : Int
+
+pub let displayconfig_device_info_get_sdr_white_level : Int
+
+pub let displayconfig_device_info_get_source_name : Int
+
+pub let displayconfig_device_info_get_support_virtual_resolution : Int
+
+pub let displayconfig_device_info_get_target_base_type : Int
+
+pub let displayconfig_device_info_get_target_name : Int
+
+pub let displayconfig_device_info_get_target_preferred_mode : Int
+
+pub let displayconfig_device_info_set_advanced_color_state : Int
+
+pub let displayconfig_device_info_set_hdr_state : Int
+
+pub let displayconfig_device_info_set_monitor_specialization : Int
+
+pub let displayconfig_device_info_set_reserved1 : Int
+
+pub let displayconfig_device_info_set_support_virtual_resolution : Int
+
+pub let displayconfig_device_info_set_target_persistence : Int
+
+pub let displayconfig_device_info_set_wcg_state : Int
+
+pub let displayconfig_mode_info_type_desktop_image : Int
+
+pub let displayconfig_mode_info_type_source : Int
+
+pub let displayconfig_mode_info_type_target : Int
+
+pub let displayconfig_output_technology_component_video : Int
+
+pub let displayconfig_output_technology_composite_video : Int
+
+pub let displayconfig_output_technology_d_jpn : Int
+
+pub let displayconfig_output_technology_displayport_embedded : Int
+
+pub let displayconfig_output_technology_displayport_external : Int
+
+pub let displayconfig_output_technology_displayport_usb_tunnel : Int
+
+pub let displayconfig_output_technology_dvi : Int
+
+pub let displayconfig_output_technology_hd15 : Int
+
+pub let displayconfig_output_technology_hdmi : Int
+
+pub let displayconfig_output_technology_indirect_virtual : Int
+
+pub let displayconfig_output_technology_indirect_wired : Int
+
+pub let displayconfig_output_technology_internal : Int
+
+pub let displayconfig_output_technology_lvds : Int
+
+pub let displayconfig_output_technology_miracast : Int
+
+pub let displayconfig_output_technology_other : Int
+
+pub let displayconfig_output_technology_sdi : Int
+
+pub let displayconfig_output_technology_sdtvdongle : Int
+
+pub let displayconfig_output_technology_svideo : Int
+
+pub let displayconfig_output_technology_udi_embedded : Int
+
+pub let displayconfig_output_technology_udi_external : Int
+
+pub let displayconfig_pixelformat_16_bpp : Int
+
+pub let displayconfig_pixelformat_24_bpp : Int
+
+pub let displayconfig_pixelformat_32_bpp : Int
+
+pub let displayconfig_pixelformat_8_bpp : Int
+
+pub let displayconfig_pixelformat_nongdi : Int
+
+pub let displayconfig_rotation_identity : Int
+
+pub let displayconfig_rotation_rotate180 : Int
+
+pub let displayconfig_rotation_rotate270 : Int
+
+pub let displayconfig_rotation_rotate90 : Int
+
+pub let displayconfig_scaling_aspectratiocenteredmax : Int
+
+pub let displayconfig_scaling_centered : Int
+
+pub let displayconfig_scaling_custom : Int
+
+pub let displayconfig_scaling_identity : Int
+
+pub let displayconfig_scaling_preferred : Int
+
+pub let displayconfig_scaling_stretched : Int
+
+pub let displayconfig_scanline_ordering_interlaced : Int
+
+pub let displayconfig_scanline_ordering_interlaced_lowerfieldfirst : Int
+
+pub let displayconfig_scanline_ordering_interlaced_upperfieldfirst : Int
+
+pub let displayconfig_scanline_ordering_progressive : Int
+
+pub let displayconfig_scanline_ordering_unspecified : Int
+
+pub let displayconfig_topology_clone : Int
+
+pub let displayconfig_topology_extend : Int
+
+pub let displayconfig_topology_external : Int
+
+pub let displayconfig_topology_internal : Int
+
+pub let displaypolicy_ac : UInt
+
+pub let displaypolicy_dc : UInt
+
+pub let dm_default : UInt
+
+pub let dm_monochrome : UInt
+
+pub let dn_acceleration_level : UInt
+
+pub let dn_associate_window : UInt
+
+pub let dn_composition_changed : UInt
+
+pub let dn_device_origin : UInt
+
+pub let dn_drawing_begin : UInt
+
+pub let dn_drawing_begin_apibitmap : UInt
+
+pub let dn_sleep_mode : UInt
+
+pub let dn_surfobj_destruction : UInt
+
+pub let drd_error : UInt
+
+pub let drd_success : UInt
+
+pub let drh_apibitmap : UInt
+
+pub let drvquery_usermode : UInt
+
+pub let dsi_checksum_error_corrected : UInt
+
+pub let dsi_checksum_error_not_corrected : UInt
+
+pub let dsi_contention_detected : UInt
+
+pub let dsi_dsi_data_type_not_recognized : UInt
+
+pub let dsi_dsi_protocol_violation : UInt
+
+pub let dsi_dsi_vc_id_invalid : UInt
+
+pub let dsi_eot_sync_error : UInt
+
+pub let dsi_escape_mode_entry_command_error : UInt
+
+pub let dsi_false_control_error : UInt
+
+pub let dsi_invalid_packet_index : UInt
+
+pub let dsi_invalid_transmission_length : UInt
+
+pub let dsi_long_packet_payload_checksum_error : UInt
+
+pub let dsi_low_power_transmit_sync_error : UInt
+
+pub let dsi_packet_embedded_payload_size : UInt
+
+pub let dsi_peripheral_timeout_error : UInt
+
+pub let dsi_sot_error : UInt
+
+pub let dsi_sot_sync_error : UInt
+
+pub let dss_flush_event : UInt
+
+pub let dss_reserved : UInt
+
+pub let dss_reserved1 : UInt
+
+pub let dss_reserved2 : UInt
+
+pub let dss_timer_event : UInt
+
+pub let dxgk_win32_k_param_flag_disableview : UInt
+
+pub let dxgk_win32_k_param_flag_modeswitch : UInt
+
+pub let dxgk_win32_k_param_flag_updateregistry : UInt
+
+pub let ecs_redraw : UInt
+
+pub let ecs_teardown : UInt
+
+pub let ed_abortdoc : UInt
+
+pub let ehn_error : UInt
+
+pub let ehn_restored : UInt
+
+pub let endcap_butt : Int
+
+pub let endcap_round : Int
+
+pub let endcap_square : Int
+
+pub fn eng_acquire_semaphore_raw(@core.RawAddress) -> Unit
+
+pub fn eng_alpha_blend_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn eng_associate_surface_raw(@core.RawAddress, @core.RawAddress, UInt) -> Int
+
+pub fn eng_bit_blt_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, UInt) -> Int
+
+pub fn eng_check_abort_raw(@core.RawAddress) -> Int
+
+pub fn eng_compute_glyph_set_raw(Int, Int, Int) -> @core.RawAddress
+
+pub fn eng_copy_bits_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn eng_create_bitmap_raw(Bytes, Int, UInt, UInt, @core.RawAddress) -> @core.RawAddress
+
+pub fn eng_create_clip_raw() -> @core.RawAddress
+
+pub fn eng_create_device_bitmap_raw(@core.RawAddress, Bytes, UInt) -> @core.RawAddress
+
+pub fn eng_create_device_surface_raw(@core.RawAddress, Bytes, UInt) -> @core.RawAddress
+
+pub fn eng_create_palette_raw(UInt, UInt, @core.RawAddress, UInt, UInt, UInt) -> @core.RawAddress
+
+pub fn eng_create_semaphore_raw() -> @core.RawAddress
+
+pub fn eng_delete_clip_raw(@core.RawAddress) -> Unit
+
+pub fn eng_delete_palette_raw(@core.RawAddress) -> Int
+
+pub fn eng_delete_path_raw(@core.RawAddress) -> Unit
+
+pub fn eng_delete_semaphore_raw(@core.RawAddress) -> Unit
+
+pub fn eng_delete_surface_raw(@core.RawAddress) -> Int
+
+pub fn eng_erase_surface_raw(@core.RawAddress, @core.RawAddress, UInt) -> Int
+
+pub fn eng_fill_path_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, UInt, UInt) -> Int
+
+pub fn eng_find_resource_raw(@core.RawAddress, Int, Int, @core.RawAddress) -> @core.RawAddress
+
+pub let eng_fnt_cache_read_fault : UInt
+
+pub let eng_fnt_cache_write_fault : UInt
+
+pub fn eng_free_module_raw(@core.RawAddress) -> Unit
+
+pub fn eng_get_current_code_page_raw(@core.RawAddress, @core.RawAddress) -> Unit
+
+pub fn eng_get_driver_name_raw(@core.RawAddress) -> @core.RawAddress
+
+pub fn eng_get_printer_data_file_name_raw(@core.RawAddress) -> @core.RawAddress
+
+pub fn eng_gradient_fill_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress, UInt) -> Int
+
+pub fn eng_line_to_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, Int, Int, Int, Int, @core.RawAddress, UInt) -> Int
+
+pub fn eng_load_module_raw(@core.RawAddress) -> @core.RawAddress
+
+pub fn eng_lock_surface_raw(@core.RawAddress) -> @core.RawAddress
+
+pub fn eng_mark_banding_surface_raw(@core.RawAddress) -> Int
+
+pub fn eng_multi_byte_to_unicode_n_raw(@core.RawAddress, UInt, @core.RawAddress, @core.RawAddress, UInt) -> Unit
+
+pub fn eng_multi_byte_to_wide_char_raw(UInt, @core.RawAddress, Int, @core.RawAddress, Int) -> Int
+
+pub let eng_number_of_processors : Int
+
+pub let eng_optimum_available_system_memory : Int
+
+pub let eng_optimum_available_user_memory : Int
+
+pub fn eng_paint_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, UInt) -> Int
+
+pub fn eng_plg_blt_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, UInt) -> Int
+
+pub let eng_processor_feature : Int
+
+pub fn eng_query_emf_info_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn eng_query_local_time_raw(@core.RawAddress) -> Unit
+
+pub fn eng_release_semaphore_raw(@core.RawAddress) -> Unit
+
+pub fn eng_stretch_blt_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, UInt) -> Int
+
+pub fn eng_stretch_blt_rop_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, UInt) -> Int
+
+pub fn eng_stroke_and_fill_path_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, UInt, UInt) -> Int
+
+pub fn eng_stroke_path_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, UInt) -> Int
+
+pub fn eng_text_out_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, UInt) -> Int
+
+pub fn eng_transparent_blt_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, UInt, UInt) -> Int
+
+pub fn eng_unicode_to_multi_byte_n_raw(@core.RawAddress, UInt, @core.RawAddress, @core.RawAddress, UInt) -> Unit
+
+pub fn eng_unlock_surface_raw(@core.RawAddress) -> Unit
+
+pub fn eng_wide_char_to_multi_byte_raw(UInt, @core.RawAddress, Int, @core.RawAddress, Int) -> Int
+
+pub let fc_complex : UInt
+
+pub let fc_rect : UInt
+
+pub let fc_rect4 : UInt
+
+pub let fd_error : UInt
+
+pub let fd_negative_font : Int
+
+pub let fdm_type_bm_side_const : UInt
+
+pub let fdm_type_char_inc_equal_bm_base : UInt
+
+pub let fdm_type_const_bearings : UInt
+
+pub let fdm_type_maxext_equal_bm_side : UInt
+
+pub let fdm_type_zero_bearings : UInt
+
+pub let ff_ignored_signature : UInt
+
+pub let ff_signature_verified : UInt
+
+pub let fl_non_session : UInt
+
+pub let fl_nonpaged_memory : UInt
+
+pub let fl_zero_memory : UInt
+
+pub let fm_editable_embed : UInt
+
+pub let fm_info_16_bpp : UInt
+
+pub let fm_info_1_bpp : UInt
+
+pub let fm_info_24_bpp : UInt
+
+pub let fm_info_32_bpp : UInt
+
+pub let fm_info_4_bpp : UInt
+
+pub let fm_info_8_bpp : UInt
+
+pub let fm_info_90_degree_rotations : UInt
+
+pub let fm_info_anisotropic_scaling_only : UInt
+
+pub let fm_info_arb_xforms : UInt
+
+pub let fm_info_constant_width : UInt
+
+pub let fm_info_dbcs_fixed_pitch : UInt
+
+pub let fm_info_do_not_enumerate : UInt
+
+pub let fm_info_dsig : UInt
+
+pub let fm_info_family_equiv : UInt
+
+pub let fm_info_ignore_tc_ra_able : UInt
+
+pub let fm_info_integer_width : UInt
+
+pub let fm_info_integral_scaling : UInt
+
+pub let fm_info_isotropic_scaling_only : UInt
+
+pub let fm_info_nonnegative_ac : UInt
+
+pub let fm_info_not_contiguous : UInt
+
+pub let fm_info_optically_fixed_pitch : UInt
+
+pub let fm_info_returns_bitmaps : UInt
+
+pub let fm_info_returns_outlines : UInt
+
+pub let fm_info_returns_strokes : UInt
+
+pub let fm_info_right_handed : UInt
+
+pub let fm_info_tech_bitmap : UInt
+
+pub let fm_info_tech_cff : UInt
+
+pub let fm_info_tech_mm : UInt
+
+pub let fm_info_tech_outline_not_truetype : UInt
+
+pub let fm_info_tech_stroke : UInt
+
+pub let fm_info_tech_truetype : UInt
+
+pub let fm_info_tech_type1 : UInt
+
+pub let fm_no_embedding : UInt
+
+pub let fm_panose_culture_latin : UInt
+
+pub let fm_readonly_embed : UInt
+
+pub let fm_sel_bold : UInt
+
+pub let fm_sel_italic : UInt
+
+pub let fm_sel_negative : UInt
+
+pub let fm_sel_outlined : UInt
+
+pub let fm_sel_regular : UInt
+
+pub let fm_sel_strikeout : UInt
+
+pub let fm_sel_underscore : UInt
+
+pub let fm_sel_use_typo_metrics : UInt
+
+pub let fm_type_licensed : UInt
+
+pub let fm_version_number : UInt
+
+pub let fo_attr_mode_rotate : UInt
+
+pub let fo_cff : UInt
+
+pub let fo_cleartype_x : UInt
+
+pub let fo_cleartype_y : UInt
+
+pub let fo_cleartypenatural_x : UInt
+
+pub let fo_dbcs_font : UInt
+
+pub let fo_device_font : Int
+
+pub let fo_em_height : UInt
+
+pub let fo_glyphbits : Int
+
+pub let fo_gray16 : UInt
+
+pub let fo_hglyphs : Int
+
+pub let fo_multiplemaster : UInt
+
+pub let fo_no_choice : UInt
+
+pub let fo_nocleartype : UInt
+
+pub let fo_nogray16 : UInt
+
+pub let fo_nohints : UInt
+
+pub let fo_outline_capable : Int
+
+pub let fo_pathobj : Int
+
+pub let fo_postscript : UInt
+
+pub let fo_sim_bold : UInt
+
+pub let fo_sim_italic : UInt
+
+pub let fo_vert_face : UInt
+
+pub fn fontobj_c_get_all_glyph_handles_raw(@core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn fontobj_c_get_glyphs_raw(@core.RawAddress, UInt, UInt, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn fontobj_p_query_glyph_attrs_raw(@core.RawAddress, UInt) -> @core.RawAddress
+
+pub fn fontobj_pfdg_raw(@core.RawAddress) -> @core.RawAddress
+
+pub fn fontobj_pifi_raw(@core.RawAddress) -> @core.RawAddress
+
+pub fn fontobj_pv_true_type_font_file_raw(@core.RawAddress, @core.RawAddress) -> @core.RawAddress
+
+pub fn fontobj_pxo_get_xform_raw(@core.RawAddress) -> @core.RawAddress
+
+pub fn fontobj_v_get_info_raw(@core.RawAddress, UInt, @core.RawAddress) -> Unit
+
+pub let fp_alternatemode : Int
+
+pub let fp_windingmode : Int
+
+pub let gcaps2_acc_driver : UInt
+
+pub let gcaps2_alphacursor : UInt
+
+pub let gcaps2_bitmapexreuse : UInt
+
+pub let gcaps2_changegammaramp : UInt
+
+pub let gcaps2_cleartype : UInt
+
+pub let gcaps2_excludelayered : UInt
+
+pub let gcaps2_icd_multimon : UInt
+
+pub let gcaps2_includeapibitmaps : UInt
+
+pub let gcaps2_jpegsrc : UInt
+
+pub let gcaps2_mousetrails : UInt
+
+pub let gcaps2_pngsrc : UInt
+
+pub let gcaps2_remotedriver : UInt
+
+pub let gcaps2_reserved1 : UInt
+
+pub let gcaps2_showhiddenpointer : UInt
+
+pub let gcaps2_syncflush : UInt
+
+pub let gcaps2_synctimer : UInt
+
+pub let gcaps2_xxxx : UInt
+
+pub let gcaps_alternatefill : UInt
+
+pub let gcaps_arbrushopaque : UInt
+
+pub let gcaps_arbrushtext : UInt
+
+pub let gcaps_asyncchange : UInt
+
+pub let gcaps_asyncmove : UInt
+
+pub let gcaps_beziers : UInt
+
+pub let gcaps_cmykcolor : UInt
+
+pub let gcaps_color_dither : UInt
+
+pub let gcaps_directdraw : UInt
+
+pub let gcaps_ditheronrealize : UInt
+
+pub let gcaps_dontjournal : UInt
+
+pub let gcaps_font_rasterizer : UInt
+
+pub let gcaps_forcedither : UInt
+
+pub let gcaps_geometricwide : UInt
+
+pub let gcaps_gray16 : UInt
+
+pub let gcaps_halftone : UInt
+
+pub let gcaps_highrestext : UInt
+
+pub let gcaps_horizstrike : UInt
+
+pub let gcaps_icm : UInt
+
+pub let gcaps_layered : UInt
+
+pub let gcaps_mono_dither : UInt
+
+pub let gcaps_no64_bitmemaccess : UInt
+
+pub let gcaps_nup : UInt
+
+pub let gcaps_opaquerect : UInt
+
+pub let gcaps_palmanaged : UInt
+
+pub let gcaps_panning : UInt
+
+pub let gcaps_screenprecision : UInt
+
+pub let gcaps_vectorfont : UInt
+
+pub let gcaps_vertstrike : UInt
+
+pub let gcaps_windingfill : UInt
+
+pub let gdi_driver_version : UInt
+
+pub fn get_active_topology_36b6c91d9a(@core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn get_active_topology_36b6c91d9a_raw(@core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn get_active_topology_e987ca86b6(@core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn get_active_topology_e987ca86b6_raw(@core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn get_auto_rotation_state_raw(@core.RawAddress) -> Int
+
+pub fn get_capabilities_string_length_raw(@core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn get_connected_i_ds_84c8b3cd48(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, UInt) -> Unit raise @core.WindowsError
+
+pub fn get_connected_i_ds_84c8b3cd48_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, UInt) -> Int
+
+pub fn get_connected_i_ds_a9b9440702(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, UInt) -> Unit raise @core.WindowsError
+
+pub fn get_connected_i_ds_a9b9440702_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, UInt) -> Int
+
+pub fn get_display_auto_rotation_preferences_raw(@core.RawAddress) -> Int
+
+pub fn get_display_config_buffer_sizes_raw(UInt, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn get_monitor_brightness_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn get_monitor_capabilities_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn get_monitor_color_temperature_raw(@core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn get_monitor_contrast_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn get_monitor_display_area_position_raw(@core.RawAddress, Int, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn get_monitor_display_area_size_raw(@core.RawAddress, Int, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn get_monitor_red_green_or_blue_drive_raw(@core.RawAddress, Int, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn get_monitor_red_green_or_blue_gain_raw(@core.RawAddress, Int, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn get_monitor_technology_type_raw(@core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn get_number_of_physical_monitors_from_hmonitor_raw(@core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn get_number_of_physical_monitors_from_i_direct3_d_device9(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn get_number_of_physical_monitors_from_i_direct3_d_device9_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn get_physical_monitors_from_hmonitor_raw(@core.RawAddress, UInt, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn get_physical_monitors_from_i_direct3_d_device9(@core.RawAddress, UInt, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn get_physical_monitors_from_i_direct3_d_device9_raw(@core.RawAddress, UInt, @core.RawAddress) -> Int
+
+pub fn get_proceed_on_new_configuration(@core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn get_proceed_on_new_configuration_raw(@core.RawAddress) -> Int
+
+pub fn get_timing_report_raw(@core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn get_vcp_feature_and_vcp_feature_reply_raw(@core.RawAddress, UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub let getconnectedids_source : UInt
+
+pub let getconnectedids_target : UInt
+
+pub let gs_16_bit_handles : UInt
+
+pub let gs_8_bit_handles : UInt
+
+pub let gs_unicode_handles : UInt
+
+pub let gx_general : Int
+
+pub let gx_identity : Int
+
+pub let gx_offset : Int
+
+pub let gx_scale : Int
+
+pub let hook_alphablend : UInt
+
+pub let hook_bitblt : UInt
+
+pub let hook_copybits : UInt
+
+pub let hook_fillpath : UInt
+
+pub let hook_flags : UInt
+
+pub let hook_gradientfill : UInt
+
+pub let hook_lineto : UInt
+
+pub let hook_movepanning : UInt
+
+pub let hook_paint : UInt
+
+pub let hook_plgblt : UInt
+
+pub let hook_stretchblt : UInt
+
+pub let hook_stretchbltrop : UInt
+
+pub let hook_strokeandfillpath : UInt
+
+pub let hook_strokepath : UInt
+
+pub let hook_synchronize : UInt
+
+pub let hook_synchronizeaccess : UInt
+
+pub let hook_textout : UInt
+
+pub let hook_transparentblt : UInt
+
+pub let host_dsi_bad_transmission_mode : UInt
+
+pub let host_dsi_device_not_ready : UInt
+
+pub let host_dsi_device_reset : UInt
+
+pub let host_dsi_driver_rejected_packet : UInt
+
+pub let host_dsi_interface_reset : UInt
+
+pub let host_dsi_invalid_transmission : UInt
+
+pub let host_dsi_os_rejected_packet : UInt
+
+pub let host_dsi_transmission_cancelled : UInt
+
+pub let host_dsi_transmission_dropped : UInt
+
+pub let host_dsi_transmission_timeout : UInt
+
+pub let hs_ddi_max : UInt
+
+pub let ht_flag_8_bpp_cmy332_mask : UInt
+
+pub let ht_flag_additive_prims : UInt
+
+pub let ht_flag_do_devclr_xform : UInt
+
+pub let ht_flag_has_black_dye : UInt
+
+pub let ht_flag_ink_absorption_idx0 : UInt
+
+pub let ht_flag_ink_absorption_idx1 : UInt
+
+pub let ht_flag_ink_absorption_idx2 : UInt
+
+pub let ht_flag_ink_absorption_idx3 : UInt
+
+pub let ht_flag_ink_absorption_indices : UInt
+
+pub let ht_flag_ink_high_absorption : UInt
+
+pub let ht_flag_invert_8_bpp_bitmask_idx : UInt
+
+pub let ht_flag_low_ink_absorption : UInt
+
+pub let ht_flag_lower_ink_absorption : UInt
+
+pub let ht_flag_lowest_ink_absorption : UInt
+
+pub let ht_flag_normal_ink_absorption : UInt
+
+pub let ht_flag_output_cmy : UInt
+
+pub let ht_flag_print_draft_mode : UInt
+
+pub let ht_flag_square_device_pel : UInt
+
+pub let ht_flag_use_8_bpp_bitmask : UInt
+
+pub let ht_format_16_bpp : UInt
+
+pub let ht_format_1_bpp : UInt
+
+pub let ht_format_24_bpp : UInt
+
+pub let ht_format_32_bpp : UInt
+
+pub let ht_format_4_bpp : UInt
+
+pub let ht_format_4_bpp_irgb : UInt
+
+pub let ht_format_8_bpp : UInt
+
+pub fn ht_get8_bpp_format_palette_raw(@core.RawAddress, UInt, UInt, UInt) -> Int
+
+pub fn ht_get8_bpp_mask_palette_raw(@core.RawAddress, Int, UInt, UInt, UInt, UInt) -> Int
+
+pub let ht_patsize_10x10 : UInt
+
+pub let ht_patsize_10x10_m : UInt
+
+pub let ht_patsize_12x12 : UInt
+
+pub let ht_patsize_12x12_m : UInt
+
+pub let ht_patsize_14x14 : UInt
+
+pub let ht_patsize_14x14_m : UInt
+
+pub let ht_patsize_16x16 : UInt
+
+pub let ht_patsize_16x16_m : UInt
+
+pub let ht_patsize_2x2 : UInt
+
+pub let ht_patsize_2x2_m : UInt
+
+pub let ht_patsize_4x4 : UInt
+
+pub let ht_patsize_4x4_m : UInt
+
+pub let ht_patsize_6x6 : UInt
+
+pub let ht_patsize_6x6_m : UInt
+
+pub let ht_patsize_8x8 : UInt
+
+pub let ht_patsize_8x8_m : UInt
+
+pub let ht_patsize_default : UInt
+
+pub let ht_patsize_max_index : UInt
+
+pub let ht_patsize_supercell : UInt
+
+pub let ht_patsize_supercell_m : UInt
+
+pub let ht_patsize_user : UInt
+
+pub let ht_userpat_cx_max : UInt
+
+pub let ht_userpat_cx_min : UInt
+
+pub let ht_userpat_cy_max : UInt
+
+pub let ht_userpat_cy_min : UInt
+
+pub let igrf_rgb_256_bytes : UInt
+
+pub let igrf_rgb_256_words : UInt
+
+pub let index_drv_accumulate_d3_d_dirty_rect : Int
+
+pub let index_drv_alpha_blend : Int
+
+pub let index_drv_assert_mode : Int
+
+pub let index_drv_associate_shared_surface : Int
+
+pub let index_drv_bit_blt : Int
+
+pub let index_drv_complete_pdev : Int
+
+pub let index_drv_copy_bits : Int
+
+pub let index_drv_create_device_bitmap : Int
+
+pub let index_drv_create_device_bitmap_ex : Int
+
+pub let index_drv_delete_device_bitmap : Int
+
+pub let index_drv_delete_device_bitmap_ex : Int
+
+pub let index_drv_derive_surface : Int
+
+pub let index_drv_describe_pixel_format : Int
+
+pub let index_drv_destroy_font : Int
+
+pub let index_drv_disable_direct_draw : Int
+
+pub let index_drv_disable_driver : Int
+
+pub let index_drv_disable_pdev : Int
+
+pub let index_drv_disable_surface : Int
+
+pub let index_drv_dither_color : Int
+
+pub let index_drv_draw_escape : Int
+
+pub let index_drv_enable_direct_draw : Int
+
+pub let index_drv_enable_pdev : Int
+
+pub let index_drv_enable_surface : Int
+
+pub let index_drv_end_doc : Int
+
+pub let index_drv_end_dx_interop : Int
+
+pub let index_drv_escape : Int
+
+pub let index_drv_fill_path : Int
+
+pub let index_drv_font_management : Int
+
+pub let index_drv_free : Int
+
+pub let index_drv_get_direct_draw_info : Int
+
+pub let index_drv_get_glyph_mode : Int
+
+pub let index_drv_get_modes : Int
+
+pub let index_drv_get_synthesized_font_files : Int
+
+pub let index_drv_get_true_type_file : Int
+
+pub let index_drv_gradient_fill : Int
+
+pub let index_drv_icm_check_bitmap_bits : Int
+
+pub let index_drv_icm_create_color_transform : Int
+
+pub let index_drv_icm_delete_color_transform : Int
+
+pub let index_drv_icm_set_device_gamma_ramp : Int
+
+pub let index_drv_line_to : Int
+
+pub let index_drv_load_font_file : Int
+
+pub let index_drv_lock_display_area : Int
+
+pub let index_drv_move_panning : Int
+
+pub let index_drv_move_pointer : Int
+
+pub let index_drv_next_band : Int
+
+pub let index_drv_notify : Int
+
+pub let index_drv_offset : Int
+
+pub let index_drv_paint : Int
+
+pub let index_drv_plg_blt : Int
+
+pub let index_drv_query_advance_widths : Int
+
+pub let index_drv_query_device_support : Int
+
+pub let index_drv_query_font : Int
+
+pub let index_drv_query_font_caps : Int
+
+pub let index_drv_query_font_data : Int
+
+pub let index_drv_query_font_file : Int
+
+pub let index_drv_query_font_tree : Int
+
+pub let index_drv_query_glyph_attrs : Int
+
+pub let index_drv_query_per_band_info : Int
+
+pub let index_drv_query_spool_type : Int
+
+pub let index_drv_query_true_type_outline : Int
+
+pub let index_drv_query_true_type_table : Int
+
+pub let index_drv_realize_brush : Int
+
+pub let index_drv_render_hint : Int
+
+pub let index_drv_reserved1 : Int
+
+pub let index_drv_reserved10 : Int
+
+pub let index_drv_reserved11 : Int
+
+pub let index_drv_reserved2 : Int
+
+pub let index_drv_reserved3 : Int
+
+pub let index_drv_reserved4 : Int
+
+pub let index_drv_reserved5 : Int
+
+pub let index_drv_reserved6 : Int
+
+pub let index_drv_reserved7 : Int
+
+pub let index_drv_reserved8 : Int
+
+pub let index_drv_reserved9 : Int
+
+pub let index_drv_reset_device : Int
+
+pub let index_drv_reset_pdev : Int
+
+pub let index_drv_save_screen_bits : Int
+
+pub let index_drv_send_page : Int
+
+pub let index_drv_set_palette : Int
+
+pub let index_drv_set_pixel_format : Int
+
+pub let index_drv_set_pointer_shape : Int
+
+pub let index_drv_start_banding : Int
+
+pub let index_drv_start_doc : Int
+
+pub let index_drv_start_dx_interop : Int
+
+pub let index_drv_start_page : Int
+
+pub let index_drv_stretch_blt : Int
+
+pub let index_drv_stretch_blt_rop : Int
+
+pub let index_drv_stroke_and_fill_path : Int
+
+pub let index_drv_stroke_path : Int
+
+pub let index_drv_surface_complete : Int
+
+pub let index_drv_swap_buffers : Int
+
+pub let index_drv_synchronize : Int
+
+pub let index_drv_synchronize_redirection_bitmaps : Int
+
+pub let index_drv_synchronize_surface : Int
+
+pub let index_drv_synthesize_font : Int
+
+pub let index_drv_text_out : Int
+
+pub let index_drv_transparent_blt : Int
+
+pub let index_drv_unload_font_file : Int
+
+pub let index_drv_unlock_display_area : Int
+
+pub let index_last : Int
+
+pub let indirect_display_info_flags_created_iddcx_adapter : UInt
+
+pub let indirect_display_info_flags_support_fp16 : UInt
+
+pub let ioctl_colorspace_transform_query_target_caps : UInt
+
+pub let ioctl_colorspace_transform_set : UInt
+
+pub let ioctl_fsvideo_copy_frame_buffer : UInt
+
+pub let ioctl_fsvideo_reverse_mouse_pointer : UInt
+
+pub let ioctl_fsvideo_set_current_mode : UInt
+
+pub let ioctl_fsvideo_set_cursor_position : UInt
+
+pub let ioctl_fsvideo_set_screen_information : UInt
+
+pub let ioctl_fsvideo_write_to_frame_buffer : UInt
+
+pub let ioctl_get_scalar_multiplier_caps : UInt
+
+pub let ioctl_mipi_dsi_query_caps : UInt
+
+pub let ioctl_mipi_dsi_reset : UInt
+
+pub let ioctl_mipi_dsi_transmission : UInt
+
+pub let ioctl_panel_get_backlight_reduction : UInt
+
+pub let ioctl_panel_get_brightness : UInt
+
+pub let ioctl_panel_get_manufacturing_mode : UInt
+
+pub let ioctl_panel_query_brightness_caps : UInt
+
+pub let ioctl_panel_query_brightness_ranges : UInt
+
+pub let ioctl_panel_set_backlight_optimization : UInt
+
+pub let ioctl_panel_set_brightness : UInt
+
+pub let ioctl_panel_set_brightness_state : UInt
+
+pub let ioctl_set_active_color_profile_name : UInt
+
+pub let ioctl_set_scalar_multiplier : UInt
+
+pub let ioctl_video_disable_cursor : UInt
+
+pub let ioctl_video_disable_pointer : UInt
+
+pub let ioctl_video_disable_vdm : UInt
+
+pub let ioctl_video_enable_cursor : UInt
+
+pub let ioctl_video_enable_pointer : UInt
+
+pub let ioctl_video_enable_vdm : UInt
+
+pub let ioctl_video_enum_monitor_pdo : UInt
+
+pub let ioctl_video_free_public_access_ranges : UInt
+
+pub let ioctl_video_get_bank_select_code : UInt
+
+pub let ioctl_video_get_child_state : UInt
+
+pub let ioctl_video_get_output_device_power_state : UInt
+
+pub let ioctl_video_get_power_management : UInt
+
+pub let ioctl_video_handle_videoparameters : UInt
+
+pub let ioctl_video_init_win32_k_callbacks : UInt
+
+pub let ioctl_video_is_vga_device : UInt
+
+pub let ioctl_video_load_and_set_font : UInt
+
+pub let ioctl_video_map_video_memory : UInt
+
+pub let ioctl_video_monitor_device : UInt
+
+pub let ioctl_video_prepare_for_earecovery : UInt
+
+pub let ioctl_video_query_avail_modes : UInt
+
+pub let ioctl_video_query_color_capabilities : UInt
+
+pub let ioctl_video_query_current_mode : UInt
+
+pub let ioctl_video_query_cursor_attr : UInt
+
+pub let ioctl_video_query_cursor_position : UInt
+
+pub let ioctl_video_query_display_brightness : UInt
+
+pub let ioctl_video_query_num_avail_modes : UInt
+
+pub let ioctl_video_query_pointer_attr : UInt
+
+pub let ioctl_video_query_pointer_capabilities : UInt
+
+pub let ioctl_video_query_pointer_position : UInt
+
+pub let ioctl_video_query_public_access_ranges : UInt
+
+pub let ioctl_video_query_supported_brightness : UInt
+
+pub let ioctl_video_register_vdm : UInt
+
+pub let ioctl_video_reset_device : UInt
+
+pub let ioctl_video_restore_hardware_state : UInt
+
+pub let ioctl_video_save_hardware_state : UInt
+
+pub let ioctl_video_set_bank_position : UInt
+
+pub let ioctl_video_set_child_state_configuration : UInt
+
+pub let ioctl_video_set_color_lut_data : UInt
+
+pub let ioctl_video_set_color_registers : UInt
+
+pub let ioctl_video_set_current_mode : UInt
+
+pub let ioctl_video_set_cursor_attr : UInt
+
+pub let ioctl_video_set_cursor_position : UInt
+
+pub let ioctl_video_set_display_brightness : UInt
+
+pub let ioctl_video_set_output_device_power_state : UInt
+
+pub let ioctl_video_set_palette_registers : UInt
+
+pub let ioctl_video_set_pointer_attr : UInt
+
+pub let ioctl_video_set_pointer_position : UInt
+
+pub let ioctl_video_set_power_management : UInt
+
+pub let ioctl_video_share_video_memory : UInt
+
+pub let ioctl_video_switch_dualview : UInt
+
+pub let ioctl_video_unmap_video_memory : UInt
+
+pub let ioctl_video_unshare_video_memory : UInt
+
+pub let ioctl_video_use_device_in_session : UInt
+
+pub let ioctl_video_validate_child_state_configuration : UInt
+
+pub let join_bevel : Int
+
+pub let join_miter : Int
+
+pub let join_round : Int
+
+pub let la_alternate : UInt
+
+pub let la_geometric : UInt
+
+pub let la_startgap : UInt
+
+pub let la_styled : UInt
+
+pub let max_packet_count : UInt
+
+pub let maxcharsets : UInt
+
+pub let mc_aperture_grill_cathode_ray_tube : Int
+
+pub let mc_blue_drive : Int
+
+pub let mc_blue_gain : Int
+
+pub let mc_caps_brightness : UInt
+
+pub let mc_caps_color_temperature : UInt
+
+pub let mc_caps_contrast : UInt
+
+pub let mc_caps_degauss : UInt
+
+pub let mc_caps_display_area_position : UInt
+
+pub let mc_caps_display_area_size : UInt
+
+pub let mc_caps_monitor_technology_type : UInt
+
+pub let mc_caps_none : UInt
+
+pub let mc_caps_red_green_blue_drive : UInt
+
+pub let mc_caps_red_green_blue_gain : UInt
+
+pub let mc_caps_restore_factory_color_defaults : UInt
+
+pub let mc_caps_restore_factory_defaults : UInt
+
+pub let mc_color_temperature_10000_k : Int
+
+pub let mc_color_temperature_11500_k : Int
+
+pub let mc_color_temperature_4000_k : Int
+
+pub let mc_color_temperature_5000_k : Int
+
+pub let mc_color_temperature_6500_k : Int
+
+pub let mc_color_temperature_7500_k : Int
+
+pub let mc_color_temperature_8200_k : Int
+
+pub let mc_color_temperature_9300_k : Int
+
+pub let mc_color_temperature_unknown : Int
+
+pub let mc_electroluminescent : Int
+
+pub let mc_field_emission_device : Int
+
+pub let mc_green_drive : Int
+
+pub let mc_green_gain : Int
+
+pub let mc_height : Int
+
+pub let mc_horizontal_position : Int
+
+pub let mc_liquid_crystal_on_silicon : Int
+
+pub let mc_microelectromechanical : Int
+
+pub let mc_momentary : Int
+
+pub let mc_organic_light_emitting_diode : Int
+
+pub let mc_plasma : Int
+
+pub let mc_red_drive : Int
+
+pub let mc_red_gain : Int
+
+pub let mc_restore_factory_defaults_enables_monitor_settings : UInt
+
+pub let mc_set_parameter : Int
+
+pub let mc_shadow_mask_cathode_ray_tube : Int
+
+pub let mc_supported_color_temperature_10000_k : UInt
+
+pub let mc_supported_color_temperature_11500_k : UInt
+
+pub let mc_supported_color_temperature_4000_k : UInt
+
+pub let mc_supported_color_temperature_5000_k : UInt
+
+pub let mc_supported_color_temperature_6500_k : UInt
+
+pub let mc_supported_color_temperature_7500_k : UInt
+
+pub let mc_supported_color_temperature_8200_k : UInt
+
+pub let mc_supported_color_temperature_9300_k : UInt
+
+pub let mc_supported_color_temperature_none : UInt
+
+pub let mc_thin_film_transistor : Int
+
+pub let mc_vertical_position : Int
+
+pub let mc_width : Int
+
+pub let ms_cdddevicebitmap : UInt
+
+pub let ms_notsystemmemory : UInt
+
+pub let ms_reuseddevicebitmap : UInt
+
+pub let ms_sharedaccess : UInt
+
+pub let num_video_bank_types : Int
+
+pub let oc_bank_clip : UInt
+
+pub let opengl_cmd : UInt
+
+pub let opengl_getinfo : UInt
+
+pub let orientation_preference_landscape : Int
+
+pub let orientation_preference_landscape_flipped : Int
+
+pub let orientation_preference_none : Int
+
+pub let orientation_preference_portrait : Int
+
+pub let orientation_preference_portrait_flipped : Int
+
+pub let output_color_encoding_intensity : Int
+
+pub let output_color_encoding_rgb : Int
+
+pub let output_color_encoding_ycbcr420 : Int
+
+pub let output_color_encoding_ycbcr422 : Int
+
+pub let output_color_encoding_ycbcr444 : Int
+
+pub let output_wire_color_space_g2084_p2020 : Int
+
+pub let output_wire_color_space_g2084_p2020_dvll : Int
+
+pub let output_wire_color_space_g2084_p2020_hdr10_plus : Int
+
+pub let output_wire_color_space_g22_p2020 : Int
+
+pub let output_wire_color_space_g22_p709 : Int
+
+pub let output_wire_color_space_g22_p709_wcg : Int
+
+pub let output_wire_color_space_reserved : Int
+
+pub let pal_bgr : UInt
+
+pub let pal_bitfields : UInt
+
+pub let pal_cmyk : UInt
+
+pub let pal_indexed : UInt
+
+pub let pal_rgb : UInt
+
+pub fn pathobj_b_enum_clip_lines_raw(@core.RawAddress, UInt, @core.RawAddress) -> Int
+
+pub fn pathobj_b_enum_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn pathobj_v_enum_start_clip_lines_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Unit
+
+pub fn pathobj_v_enum_start_raw(@core.RawAddress) -> Unit
+
+pub fn pathobj_v_get_bounds_raw(@core.RawAddress, @core.RawAddress) -> Unit
+
+pub let pd_beginsubpath : UInt
+
+pub let pd_beziers : UInt
+
+pub let pd_closefigure : UInt
+
+pub let pd_endsubpath : UInt
+
+pub let pd_resetstyle : UInt
+
+pub let physical_monitor_description_size : UInt
+
+pub let planar_hc : UInt
+
+pub let po_all_integers : UInt
+
+pub let po_beziers : UInt
+
+pub let po_ellipse : UInt
+
+pub let po_enum_as_integers : UInt
+
+pub let po_widened : UInt
+
+pub let ppc_bgr_order_horizontal_stripes : UInt
+
+pub let ppc_bgr_order_vertical_stripes : UInt
+
+pub let ppc_default : UInt
+
+pub let ppc_rgb_order_horizontal_stripes : UInt
+
+pub let ppc_rgb_order_vertical_stripes : UInt
+
+pub let ppc_undefined : UInt
+
+pub let ppg_default : UInt
+
+pub let ppg_srgb : UInt
+
+pub let primary_order_abc : UInt
+
+pub let primary_order_acb : UInt
+
+pub let primary_order_bac : UInt
+
+pub let primary_order_bca : UInt
+
+pub let primary_order_cab : UInt
+
+pub let primary_order_cba : UInt
+
+pub let qaw_geteasywidths : UInt
+
+pub let qaw_getwidths : UInt
+
+pub let qc_1_bit : UInt
+
+pub let qc_4_bit : UInt
+
+pub let qc_outlines : UInt
+
+pub let qda_acceleration_level : Int
+
+pub let qda_reserved : Int
+
+pub let qdc_all_paths : UInt
+
+pub let qdc_database_current : UInt
+
+pub let qdc_include_hmd : UInt
+
+pub let qdc_only_active_paths : UInt
+
+pub let qdc_virtual_mode_aware : UInt
+
+pub let qdc_virtual_refresh_rate_aware : UInt
+
+pub let qds_checkjpegformat : UInt
+
+pub let qds_checkpngformat : UInt
+
+pub let qfd_glyphandbitmap : Int
+
+pub let qfd_glyphandoutline : Int
+
+pub let qfd_maxextents : Int
+
+pub let qfd_tt_glyphandbitmap : Int
+
+pub let qfd_tt_gray1_bitmap : Int
+
+pub let qfd_tt_gray2_bitmap : Int
+
+pub let qfd_tt_gray4_bitmap : Int
+
+pub let qfd_tt_gray8_bitmap : Int
+
+pub let qfd_tt_mono_bitmap : Int
+
+pub let qff_description : Int
+
+pub let qff_numfaces : Int
+
+pub let qft_glyphset : Int
+
+pub let qft_kernpairs : Int
+
+pub let qft_ligatures : Int
+
+pub let qsa_3_dnow : UInt
+
+pub let qsa_mmx : UInt
+
+pub let qsa_sse : UInt
+
+pub let qsa_sse1 : UInt
+
+pub let qsa_sse2 : UInt
+
+pub let qsa_sse3 : UInt
+
+pub fn query_display_config_raw(UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub let rb_dithercolor : Int
+
+pub fn restore_monitor_factory_color_defaults_raw(@core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn restore_monitor_factory_defaults_raw(@core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub let s_init : UInt
+
+pub fn save_current_monitor_settings_raw(@core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn save_current_settings_raw(@core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub let sdc_allow_changes : UInt
+
+pub let sdc_allow_path_order_changes : UInt
+
+pub let sdc_apply : UInt
+
+pub let sdc_force_mode_enumeration : UInt
+
+pub let sdc_no_optimization : UInt
+
+pub let sdc_path_persist_if_required : UInt
+
+pub let sdc_save_to_database : UInt
+
+pub let sdc_topology_clone : UInt
+
+pub let sdc_topology_extend : UInt
+
+pub let sdc_topology_external : UInt
+
+pub let sdc_topology_internal : UInt
+
+pub let sdc_topology_supplied : UInt
+
+pub let sdc_use_database_current : UInt
+
+pub let sdc_use_supplied_display_config : UInt
+
+pub let sdc_validate : UInt
+
+pub let sdc_virtual_mode_aware : UInt
+
+pub let sdc_virtual_refresh_rate_aware : UInt
+
+pub fn set_active_topology_5ca83c95d5(@core.RawAddress, @core.RawAddress, UInt, UInt, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn set_active_topology_5ca83c95d5_raw(@core.RawAddress, @core.RawAddress, UInt, UInt, @core.RawAddress) -> Int
+
+pub fn set_active_topology_829457358c(@core.RawAddress, @core.RawAddress, UInt, UInt, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn set_active_topology_829457358c_raw(@core.RawAddress, @core.RawAddress, UInt, UInt, @core.RawAddress) -> Int
+
+pub fn set_configuration(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn set_configuration_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn set_display_auto_rotation_preferences_raw(Int) -> Int
+
+pub fn set_display_config_raw(UInt, @core.RawAddress, UInt, @core.RawAddress, UInt) -> Int
+
+pub fn set_monitor_brightness_raw(@core.RawAddress, UInt) -> @core.RawWin32Call[Int]
+
+pub fn set_monitor_color_temperature_raw(@core.RawAddress, Int) -> @core.RawWin32Call[Int]
+
+pub fn set_monitor_contrast_raw(@core.RawAddress, UInt) -> @core.RawWin32Call[Int]
+
+pub fn set_monitor_display_area_position_raw(@core.RawAddress, Int, UInt) -> @core.RawWin32Call[Int]
+
+pub fn set_monitor_display_area_size_raw(@core.RawAddress, Int, UInt) -> @core.RawWin32Call[Int]
+
+pub fn set_monitor_red_green_or_blue_drive_raw(@core.RawAddress, Int, UInt) -> Int
+
+pub fn set_monitor_red_green_or_blue_gain_raw(@core.RawAddress, Int, UInt) -> Int
+
+pub fn set_vcp_feature_raw(@core.RawAddress, UInt, UInt) -> Int
+
+pub let setconfiguration_status_additional : UInt
+
+pub let setconfiguration_status_applied : UInt
+
+pub let setconfiguration_status_overridden : UInt
+
+pub let sgi_extraspace : UInt
+
+pub let so_break_extra : UInt
+
+pub let so_char_inc_equal_bm_base : UInt
+
+pub let so_character_extra : UInt
+
+pub let so_do_not_substitute_device_font : UInt
+
+pub let so_dxdy : UInt
+
+pub let so_esc_not_orient : UInt
+
+pub let so_flag_default_placement : UInt
+
+pub let so_glyphindex_textout : UInt
+
+pub let so_horizontal : UInt
+
+pub let so_maxext_equal_bm_side : UInt
+
+pub let so_reversed : UInt
+
+pub let so_vertical : UInt
+
+pub let so_zero_bearings : UInt
+
+pub let sps_accept_exclude : UInt
+
+pub let sps_accept_noexclude : UInt
+
+pub let sps_accept_synchronous : UInt
+
+pub let sps_alpha : Int
+
+pub let sps_animatestart : Int
+
+pub let sps_animateupdate : Int
+
+pub let sps_asyncchange : Int
+
+pub let sps_change : Int
+
+pub let sps_decline : UInt
+
+pub let sps_error : UInt
+
+pub let sps_flagsmask : Int
+
+pub let sps_freqmask : Int
+
+pub let sps_lengthmask : Int
+
+pub let sps_reserved : Int
+
+pub let sps_reserved1 : Int
+
+pub let ss_free : UInt
+
+pub let ss_restore : UInt
+
+pub let ss_save : UInt
+
+pub fn strobj_b_enum_positions_only_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn strobj_b_enum_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn strobj_b_get_advance_widths_raw(@core.RawAddress, UInt, UInt, @core.RawAddress) -> Int
+
+pub fn strobj_dw_get_code_page_raw(@core.RawAddress) -> UInt
+
+pub fn strobj_v_enum_start_raw(@core.RawAddress) -> Unit
+
+pub let stype_bitmap : Int
+
+pub let stype_devbitmap : Int
+
+pub let tc_pathobj : UInt
+
+pub let tc_rectangles : UInt
+
+pub let tto_metrics_only : UInt
+
+pub let tto_qubics : UInt
+
+pub let tto_unhinted : UInt
+
+pub let video_banked1_r1_w : Int
+
+pub let video_banked1_rw : Int
+
+pub let video_banked2_rw : Int
+
+pub let video_black_screen_diagnostics : Int
+
+pub let video_color_lut_data_format_privateformat : UInt
+
+pub let video_color_lut_data_format_rgb256_words : UInt
+
+pub let video_desktop_duplication_change : Int
+
+pub let video_device_color : UInt
+
+pub let video_device_name : String
+
+pub let video_disable_multi_plane_overlay : Int
+
+pub let video_dualview_primary : UInt
+
+pub let video_dualview_removable : UInt
+
+pub let video_dualview_secondary : UInt
+
+pub let video_dualview_wddm_vga : UInt
+
+pub let video_dxgk_display_switch_callout : Int
+
+pub let video_dxgk_find_adapter_tdr_callout : Int
+
+pub let video_dxgk_hardware_protection_teardown : Int
+
+pub let video_enum_child_pdo_notify_callout : Int
+
+pub let video_find_adapter_callout : Int
+
+pub let video_force_composition_render : Int
+
+pub let video_max_reason : UInt
+
+pub let video_mode_animate_start : UInt
+
+pub let video_mode_animate_update : UInt
+
+pub let video_mode_async_pointer : UInt
+
+pub let video_mode_banked : UInt
+
+pub let video_mode_color : UInt
+
+pub let video_mode_color_pointer : UInt
+
+pub let video_mode_graphics : UInt
+
+pub let video_mode_interlaced : UInt
+
+pub let video_mode_linear : UInt
+
+pub let video_mode_managed_palette : UInt
+
+pub let video_mode_map_mem_linear : UInt
+
+pub let video_mode_mono_pointer : UInt
+
+pub let video_mode_no_64_bit_access : UInt
+
+pub let video_mode_no_off_screen : UInt
+
+pub let video_mode_no_zero_memory : UInt
+
+pub let video_mode_palette_driven : UInt
+
+pub let video_not_banked : Int
+
+pub let video_optional_gammet_table : UInt
+
+pub let video_pnp_notify_callout : Int
+
+pub let video_power_hibernate : Int
+
+pub let video_power_maximum : Int
+
+pub let video_power_notify_callout : Int
+
+pub let video_power_off : Int
+
+pub let video_power_on : Int
+
+pub let video_power_shutdown : Int
+
+pub let video_power_stand_by : Int
+
+pub let video_power_suspend : Int
+
+pub let video_power_unspecified : Int
+
+pub let video_reason_allocation : UInt
+
+pub let video_reason_configuration : UInt
+
+pub let video_reason_failed_rotation : UInt
+
+pub let video_reason_lock : UInt
+
+pub let video_reason_none : UInt
+
+pub let video_reason_policy1 : UInt
+
+pub let video_reason_policy2 : UInt
+
+pub let video_reason_policy3 : UInt
+
+pub let video_reason_policy4 : UInt
+
+pub let video_reason_scratch : UInt
+
+pub let video_repaint_desktop : Int
+
+pub let video_state_non_standard_vga : UInt
+
+pub let video_state_packed_chain4_mode : UInt
+
+pub let video_state_unemulated_vga_state : UInt
+
+pub let video_update_cursor : Int
+
+pub let winddi_max_broadcast_context : UInt
+
+pub let winddi_maxsetpalettecolorindex : UInt
+
+pub let winddi_maxsetpalettecolors : UInt
+
+pub let wndobj_setup : UInt
+
+pub let wo_draw_notify : UInt
+
+pub let wo_rgn_client : UInt
+
+pub let wo_rgn_client_delta : UInt
+
+pub let wo_rgn_desktop_coord : UInt
+
+pub let wo_rgn_sprite : UInt
+
+pub let wo_rgn_surface : UInt
+
+pub let wo_rgn_surface_delta : UInt
+
+pub let wo_rgn_update_all : UInt
+
+pub let wo_rgn_window : UInt
+
+pub let wo_sprite_notify : UInt
+
+pub let woc_changed : UInt
+
+pub let woc_delete : UInt
+
+pub let woc_drawn : UInt
+
+pub let woc_rgn_client : UInt
+
+pub let woc_rgn_client_delta : UInt
+
+pub let woc_rgn_sprite : UInt
+
+pub let woc_rgn_surface : UInt
+
+pub let woc_rgn_surface_delta : UInt
+
+pub let woc_sprite_no_overlap : UInt
+
+pub let woc_sprite_overlap : UInt
+
+pub let wvideo_device_name : String
+
+pub let xf_inv_fxtol : Int
+
+pub let xf_inv_ltol : Int
+
+pub let xf_ltofx : Int
+
+pub let xf_ltol : Int
+
+pub fn xformobj_b_apply_xform_raw(@core.RawAddress, UInt, UInt, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn xformobj_i_get_xform_raw(@core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn xlateobj_c_get_palette_raw(@core.RawAddress, UInt, UInt, @core.RawAddress) -> UInt
+
+pub fn xlateobj_h_get_color_transform_raw(@core.RawAddress) -> @core.RawAddress
+
+pub fn xlateobj_i_xlate_raw(@core.RawAddress, UInt) -> UInt
+
+pub fn xlateobj_pi_vector_raw(@core.RawAddress) -> @core.RawAddress
+
+pub let xo_destbitfields : UInt
+
+pub let xo_destdcpalette : UInt
+
+pub let xo_destpalette : UInt
+
+pub let xo_device_icm : UInt
+
+pub let xo_from_cmyk : UInt
+
+pub let xo_host_icm : UInt
+
+pub let xo_srcbitfields : UInt
+
+pub let xo_srcpalette : UInt
+
+pub let xo_table : UInt
+
+pub let xo_to_mono : UInt
+
+pub let xo_trivial : UInt
+
+// Errors
+
+// Types and methods
+
+// Type aliases
+pub using @dd2f48dd8788277c {type ARSTATE_d88e42dcf8ab as ARSTATE}
+
+pub using @dd2f48dd8788277c {type Adapter_a2b86d65dc86 as Adapter}
+
+pub using @dd2f48dd8788277c {type Adapters_c2972679cd48 as Adapters}
+
+pub using @dd2f48dd8788277c {type AdditionalSignalInfoEStruct_119be01a34e7 as AdditionalSignalInfoEStruct}
+
+pub using @dd2f48dd8788277c {type Anonymous1EStruct_9c9f81f2d8af as Anonymous1EStruct}
+
+pub using @dd2f48dd8788277c {type Anonymous1EUnion_0f6e1d11b025 as Anonymous1EUnion}
+
+pub using @dd2f48dd8788277c {type Anonymous2EStruct_e7ac57c164a6 as Anonymous2EStruct}
+
+pub using @dd2f48dd8788277c {type Anonymous2EUnion_62a3d402a841 as Anonymous2EUnion}
+
+pub using @dd2f48dd8788277c {type AnonymousEStruct_08a0f318a95f as AnonymousEStruct_08a0f318a9}
+
+pub using @dd2f48dd8788277c {type AnonymousEStruct_155f02ba8f55 as AnonymousEStruct_155f02ba8f}
+
+pub using @dd2f48dd8788277c {type AnonymousEStruct_3269ca5dd306 as AnonymousEStruct_3269ca5dd3}
+
+pub using @dd2f48dd8788277c {type AnonymousEStruct_3500b6072dd5 as AnonymousEStruct_3500b6072d}
+
+pub using @dd2f48dd8788277c {type AnonymousEStruct_3644a8148a12 as AnonymousEStruct_3644a8148a}
+
+pub using @dd2f48dd8788277c {type AnonymousEStruct_3655089f71f8 as AnonymousEStruct_3655089f71}
+
+pub using @dd2f48dd8788277c {type AnonymousEStruct_36a2e3622461 as AnonymousEStruct_36a2e36224}
+
+pub using @dd2f48dd8788277c {type AnonymousEStruct_4d5d9499340a as AnonymousEStruct_4d5d949934}
+
+pub using @dd2f48dd8788277c {type AnonymousEStruct_4dc3c46d8681 as AnonymousEStruct_4dc3c46d86}
+
+pub using @dd2f48dd8788277c {type AnonymousEStruct_5a6705c250c5 as AnonymousEStruct_5a6705c250}
+
+pub using @dd2f48dd8788277c {type AnonymousEStruct_5e3817c4eb9e as AnonymousEStruct_5e3817c4eb}
+
+pub using @dd2f48dd8788277c {type AnonymousEStruct_5e981fc37d42 as AnonymousEStruct_5e981fc37d}
+
+pub using @dd2f48dd8788277c {type AnonymousEStruct_66813c005f59 as AnonymousEStruct_66813c005f}
+
+pub using @dd2f48dd8788277c {type AnonymousEStruct_78d11970a61e as AnonymousEStruct_78d11970a6}
+
+pub using @dd2f48dd8788277c {type AnonymousEStruct_7ada59e60564 as AnonymousEStruct_7ada59e605}
+
+pub using @dd2f48dd8788277c {type AnonymousEStruct_92956638139c as AnonymousEStruct_9295663813}
+
+pub using @dd2f48dd8788277c {type AnonymousEStruct_9dc270c3f8ca as AnonymousEStruct_9dc270c3f8}
+
+pub using @dd2f48dd8788277c {type AnonymousEStruct_9f1d15acff08 as AnonymousEStruct_9f1d15acff}
+
+pub using @dd2f48dd8788277c {type AnonymousEStruct_d6d59ce12f06 as AnonymousEStruct_d6d59ce12f}
+
+pub using @dd2f48dd8788277c {type AnonymousEStruct_e8b4179833d1 as AnonymousEStruct_e8b4179833}
+
+pub using @dd2f48dd8788277c {type AnonymousEStruct_ef8d5c3a5e04 as AnonymousEStruct_ef8d5c3a5e}
+
+pub using @dd2f48dd8788277c {type AnonymousEStruct_f21ec293473f as AnonymousEStruct_f21ec29347}
+
+pub using @dd2f48dd8788277c {type AnonymousEStruct_ff38f3a9c7a3 as AnonymousEStruct_ff38f3a9c7}
+
+pub using @dd2f48dd8788277c {type AnonymousEUnion_05e4223f6ba9 as AnonymousEUnion_05e4223f6b}
+
+pub using @dd2f48dd8788277c {type AnonymousEUnion_108ab92e0237 as AnonymousEUnion_108ab92e02}
+
+pub using @dd2f48dd8788277c {type AnonymousEUnion_13a4d9cdd457 as AnonymousEUnion_13a4d9cdd4}
+
+pub using @dd2f48dd8788277c {type AnonymousEUnion_1ccb37c6b21b as AnonymousEUnion_1ccb37c6b2}
+
+pub using @dd2f48dd8788277c {type AnonymousEUnion_25e2fb98bbdd as AnonymousEUnion_25e2fb98bb}
+
+pub using @dd2f48dd8788277c {type AnonymousEUnion_33b55a67bcb5 as AnonymousEUnion_33b55a67bc}
+
+pub using @dd2f48dd8788277c {type AnonymousEUnion_3ac018485f6b as AnonymousEUnion_3ac018485f}
+
+pub using @dd2f48dd8788277c {type AnonymousEUnion_3c58bdaabb18 as AnonymousEUnion_3c58bdaabb}
+
+pub using @dd2f48dd8788277c {type AnonymousEUnion_3ed30c7795bf as AnonymousEUnion_3ed30c7795}
+
+pub using @dd2f48dd8788277c {type AnonymousEUnion_6b6b78c252ea as AnonymousEUnion_6b6b78c252}
+
+pub using @dd2f48dd8788277c {type AnonymousEUnion_80965b9b3780 as AnonymousEUnion_80965b9b37}
+
+pub using @dd2f48dd8788277c {type AnonymousEUnion_8f4e6d4d3fc2 as AnonymousEUnion_8f4e6d4d3f}
+
+pub using @dd2f48dd8788277c {type AnonymousEUnion_a23e25b0085f as AnonymousEUnion_a23e25b008}
+
+pub using @dd2f48dd8788277c {type AnonymousEUnion_a3c89eabc5b6 as AnonymousEUnion_a3c89eabc5}
+
+pub using @dd2f48dd8788277c {type AnonymousEUnion_a928390a9895 as AnonymousEUnion_a928390a98}
+
+pub using @dd2f48dd8788277c {type AnonymousEUnion_b975ac08e4da as AnonymousEUnion_b975ac08e4}
+
+pub using @dd2f48dd8788277c {type AnonymousEUnion_bf383c1e2629 as AnonymousEUnion_bf383c1e26}
+
+pub using @dd2f48dd8788277c {type AnonymousEUnion_bfd8964fe63d as AnonymousEUnion_bfd8964fe6}
+
+pub using @dd2f48dd8788277c {type AnonymousEUnion_cb9e417e9066 as AnonymousEUnion_cb9e417e90}
+
+pub using @dd2f48dd8788277c {type AnonymousEUnion_d8d09da2e3f9 as AnonymousEUnion_d8d09da2e3}
+
+pub using @dd2f48dd8788277c {type AnonymousEUnion_e29e600e54ea as AnonymousEUnion_e29e600e54}
+
+pub using @dd2f48dd8788277c {type AnonymousEUnion_efffe874b8fb as AnonymousEUnion_efffe874b8}
+
+pub using @dd2f48dd8788277c {type AnonymousEUnion_f2cb7eb60e9d as AnonymousEUnion_f2cb7eb60e}
+
+pub using @dd2f48dd8788277c {type AnonymousEUnion_f93a6517235c as AnonymousEUnion_f93a651723}
+
+pub using @dd2f48dd8788277c {type BACKLIGHTOPTIMIZATIONLEVEL_3a9c24832eb9 as BACKLIGHTOPTIMIZATIONLEVEL}
+
+pub using @dd2f48dd8788277c {type BACKLIGHTREDUCTIONGAMMARAMP_e68d704b33d8 as BACKLIGHTREDUCTIONGAMMARAMP}
+
+pub using @dd2f48dd8788277c {type BANKPOSITION_883d4d36e8b4 as BANKPOSITION}
+
+pub using @dd2f48dd8788277c {type BLENDOBJ_1adb77a76df8 as BLENDOBJ}
+
+pub using @dd2f48dd8788277c {type BRIGHTNESSINTERFACEVERSION_dd31f69e2c80 as BRIGHTNESSINTERFACEVERSION}
+
+pub using @dd2f48dd8788277c {type BRIGHTNESSLEVEL_3c5cc06a0b74 as BRIGHTNESSLEVEL}
+
+pub using @dd2f48dd8788277c {type BRIGHTNESSNITRANGE_2c3f244be501 as BRIGHTNESSNITRANGE}
+
+pub using @dd2f48dd8788277c {type BRIGHTNESSNITRANGES_c90c353ca56a as BRIGHTNESSNITRANGES}
+
+pub using @dd2f48dd8788277c {type BRUSHOBJ_5817b9be06ae as BRUSHOBJ}
+
+pub using @dd2f48dd8788277c {type BlackScreenDiagnosticsCalloutParam_fa3704af3cc8 as BlackScreenDiagnosticsCalloutParam}
+
+pub using @dd2f48dd8788277c {type CDDDXGKREDIRBITMAPPRESENTINFO_d327d7f06753 as CDDDXGKREDIRBITMAPPRESENTINFO}
+
+pub using @dd2f48dd8788277c {type CHARIMAGEINFO_4820b961c24e as CHARIMAGEINFO}
+
+pub using @dd2f48dd8788277c {type CHROMATICITYCOORDINATE_ed58b4385eaa as CHROMATICITYCOORDINATE}
+
+pub using @dd2f48dd8788277c {type CIECHROMA_78378b497e87 as CIECHROMA}
+
+pub using @dd2f48dd8788277c {type CLIPLINE_9c62bce3087d as CLIPLINE}
+
+pub using @dd2f48dd8788277c {type CLIPOBJ_7da20d1e5225 as CLIPOBJ}
+
+pub using @dd2f48dd8788277c {type COLORINFO_9064068104e6 as COLORINFO}
+
+pub using @dd2f48dd8788277c {type COLORSPACESCALARMULTIPLIERCAPS_cbab0b7e2cf1 as COLORSPACESCALARMULTIPLIERCAPS}
+
+pub using @dd2f48dd8788277c {type COLORSPACETRANSFORM_49dffc068412 as COLORSPACETRANSFORM}
+
+pub using @dd2f48dd8788277c {type COLORSPACETRANSFORM1DLUTCAP_34dab9782382 as COLORSPACETRANSFORM1DLUTCAP}
+
+pub using @dd2f48dd8788277c {type COLORSPACETRANSFORM3x4_52ec124cf65e as COLORSPACETRANSFORM3x4}
+
+pub using @dd2f48dd8788277c {type COLORSPACETRANSFORMDATACAP_7c86a511b45a as COLORSPACETRANSFORMDATACAP}
+
+pub using @dd2f48dd8788277c {type COLORSPACETRANSFORMDATATYPE_89b2ae484599 as COLORSPACETRANSFORMDATATYPE}
+
+pub using @dd2f48dd8788277c {type COLORSPACETRANSFORMMATRIXCAP_10bd2e4f3c96 as COLORSPACETRANSFORMMATRIXCAP}
+
+pub using @dd2f48dd8788277c {type COLORSPACETRANSFORMMATRIXV2_d32c7d5cc735 as COLORSPACETRANSFORMMATRIXV2}
+
+pub using @dd2f48dd8788277c {type COLORSPACETRANSFORMSETINPUT_8a3e3249821b as COLORSPACETRANSFORMSETINPUT}
+
+pub using @dd2f48dd8788277c {type COLORSPACETRANSFORMSTAGECONTROL_4756849570f8 as COLORSPACETRANSFORMSTAGECONTROL}
+
+pub using @dd2f48dd8788277c {type COLORSPACETRANSFORMTARGETCAPS_f783f1fb39c3 as COLORSPACETRANSFORMTARGETCAPS}
+
+pub using @dd2f48dd8788277c {type COLORSPACETRANSFORMTARGETCAPSVERSION_8b41dad9b1f1 as COLORSPACETRANSFORMTARGETCAPSVERSION}
+
+pub using @dd2f48dd8788277c {type COLORSPACETRANSFORMTYPE_51e1d702c9ab as COLORSPACETRANSFORMTYPE}
+
+pub using @dd2f48dd8788277c {type DEVHTADJDATA_4aae56e0d44b as DEVHTADJDATA}
+
+pub using @dd2f48dd8788277c {type DEVHTINFO_bce622575e87 as DEVHTINFO}
+
+pub using @dd2f48dd8788277c {type DEVINFO_12797f0bd7cd as DEVINFO}
+
+pub using @dd2f48dd8788277c {type DHPDEV_427389ed6f72 as DHPDEV}
+
+pub using @dd2f48dd8788277c {type DHSURF_249f25d69c74 as DHSURF}
+
+pub using @dd2f48dd8788277c {type DISPLAYBRIGHTNESS_9233cbbe3914 as DISPLAYBRIGHTNESS}
+
+pub using @dd2f48dd8788277c {type DISPLAYCONFIG2DREGION_0ce3ee1a503e as DISPLAYCONFIG2DREGION}
+
+pub using @dd2f48dd8788277c {type DISPLAYCONFIGADAPTERNAME_a8fc240f35d7 as DISPLAYCONFIGADAPTERNAME}
+
+pub using @dd2f48dd8788277c {type DISPLAYCONFIGDESKTOPIMAGEINFO_f34c458fc131 as DISPLAYCONFIGDESKTOPIMAGEINFO}
+
+pub using @dd2f48dd8788277c {type DISPLAYCONFIGDEVICEINFOHEADER_df4188483093 as DISPLAYCONFIGDEVICEINFOHEADER}
+
+pub using @dd2f48dd8788277c {type DISPLAYCONFIGDEVICEINFOTYPE_c3e910a81c29 as DISPLAYCONFIGDEVICEINFOTYPE}
+
+pub using @dd2f48dd8788277c {type DISPLAYCONFIGGETADVANCEDCOLORINFO_c594bc1cd848 as DISPLAYCONFIGGETADVANCEDCOLORINFO}
+
+pub using @dd2f48dd8788277c {type DISPLAYCONFIGGETADVANCEDCOLORINFO2_ffef138eaea9 as DISPLAYCONFIGGETADVANCEDCOLORINFO2}
+
+pub using @dd2f48dd8788277c {type DISPLAYCONFIGGETMONITORSPECIALIZATION_9f6842d59284 as DISPLAYCONFIGGETMONITORSPECIALIZATION}
+
+pub using @dd2f48dd8788277c {type DISPLAYCONFIGMODEINFO_4c2ea757bf38 as DISPLAYCONFIGMODEINFO}
+
+pub using @dd2f48dd8788277c {type DISPLAYCONFIGMODEINFOTYPE_c1d58b8277e8 as DISPLAYCONFIGMODEINFOTYPE}
+
+pub using @dd2f48dd8788277c {type DISPLAYCONFIGPATHINFO_2e5c8b6afb2a as DISPLAYCONFIGPATHINFO}
+
+pub using @dd2f48dd8788277c {type DISPLAYCONFIGPATHSOURCEINFO_7b0efe13b8a7 as DISPLAYCONFIGPATHSOURCEINFO}
+
+pub using @dd2f48dd8788277c {type DISPLAYCONFIGPATHTARGETINFO_0d711ae35ee0 as DISPLAYCONFIGPATHTARGETINFO}
+
+pub using @dd2f48dd8788277c {type DISPLAYCONFIGPIXELFORMAT_12e2ce69b1c5 as DISPLAYCONFIGPIXELFORMAT}
+
+pub using @dd2f48dd8788277c {type DISPLAYCONFIGRATIONAL_0b2a60de064f as DISPLAYCONFIGRATIONAL}
+
+pub using @dd2f48dd8788277c {type DISPLAYCONFIGROTATION_978279b47590 as DISPLAYCONFIGROTATION}
+
+pub using @dd2f48dd8788277c {type DISPLAYCONFIGSCALING_c5f92f8d3579 as DISPLAYCONFIGSCALING}
+
+pub using @dd2f48dd8788277c {type DISPLAYCONFIGSCANLINEORDERING_cf931f27a729 as DISPLAYCONFIGSCANLINEORDERING}
+
+pub using @dd2f48dd8788277c {type DISPLAYCONFIGSDRWHITELEVEL_32981ac90596 as DISPLAYCONFIGSDRWHITELEVEL}
+
+pub using @dd2f48dd8788277c {type DISPLAYCONFIGSETADVANCEDCOLORSTATE_7d8937478da3 as DISPLAYCONFIGSETADVANCEDCOLORSTATE}
+
+pub using @dd2f48dd8788277c {type DISPLAYCONFIGSETHDRSTATE_6e049c8badd8 as DISPLAYCONFIGSETHDRSTATE}
+
+pub using @dd2f48dd8788277c {type DISPLAYCONFIGSETMONITORSPECIALIZATION_4b313a703687 as DISPLAYCONFIGSETMONITORSPECIALIZATION}
+
+pub using @dd2f48dd8788277c {type DISPLAYCONFIGSETTARGETPERSISTENCE_8ab5b01c63bc as DISPLAYCONFIGSETTARGETPERSISTENCE}
+
+pub using @dd2f48dd8788277c {type DISPLAYCONFIGSETWCGSTATE_c57ebb11d3cd as DISPLAYCONFIGSETWCGSTATE}
+
+pub using @dd2f48dd8788277c {type DISPLAYCONFIGSOURCEDEVICENAME_d3984d58bd5d as DISPLAYCONFIGSOURCEDEVICENAME}
+
+pub using @dd2f48dd8788277c {type DISPLAYCONFIGSOURCEMODE_e7b92d6723ed as DISPLAYCONFIGSOURCEMODE}
+
+pub using @dd2f48dd8788277c {type DISPLAYCONFIGSUPPORTVIRTUALRESOLUTION_2ca4b45637ff as DISPLAYCONFIGSUPPORTVIRTUALRESOLUTION}
+
+pub using @dd2f48dd8788277c {type DISPLAYCONFIGTARGETBASETYPE_64f09d8e615c as DISPLAYCONFIGTARGETBASETYPE}
+
+pub using @dd2f48dd8788277c {type DISPLAYCONFIGTARGETDEVICENAME_d1ee16ed1f61 as DISPLAYCONFIGTARGETDEVICENAME}
+
+pub using @dd2f48dd8788277c {type DISPLAYCONFIGTARGETDEVICENAMEFLAGS_e2033be5e1b0 as DISPLAYCONFIGTARGETDEVICENAMEFLAGS}
+
+pub using @dd2f48dd8788277c {type DISPLAYCONFIGTARGETMODE_385e9eb82a26 as DISPLAYCONFIGTARGETMODE}
+
+pub using @dd2f48dd8788277c {type DISPLAYCONFIGTARGETPREFERREDMODE_1c082f8bc513 as DISPLAYCONFIGTARGETPREFERREDMODE}
+
+pub using @dd2f48dd8788277c {type DISPLAYCONFIGTOPOLOGYID_10646bfd7ad6 as DISPLAYCONFIGTOPOLOGYID}
+
+pub using @dd2f48dd8788277c {type DISPLAYCONFIGVIDEOOUTPUTTECHNOLOGY_722d4835081f as DISPLAYCONFIGVIDEOOUTPUTTECHNOLOGY}
+
+pub using @dd2f48dd8788277c {type DISPLAYCONFIGVIDEOSIGNALINFO_823fb31759b6 as DISPLAYCONFIGVIDEOSIGNALINFO}
+
+pub using @dd2f48dd8788277c {type DRHAPIBITMAPDATA_e767c8fd33fa as DRHAPIBITMAPDATA}
+
+pub using @dd2f48dd8788277c {type DRIVEROBJ_181ff74536df as DRIVEROBJ}
+
+pub using @dd2f48dd8788277c {type DRVENABLEDATA_db0bab6c66ea as DRVENABLEDATA}
+
+pub using @dd2f48dd8788277c {type DRVFN_099c86621649 as DRVFN}
+
+pub using @dd2f48dd8788277c {type DSICONTROLTRANSMISSIONMODE_91780b203ce1 as DSICONTROLTRANSMISSIONMODE}
+
+pub using @dd2f48dd8788277c {type DXGKWIN32KPARAMDATA_6dd8eb70ee41 as DXGKWIN32KPARAMDATA}
+
+pub using @dd2f48dd8788277c {type DataEUnion_bbd20ce7bbe0 as DataEUnion}
+
+pub using @dd2f48dd8788277c {type DisplayMode_bf6925072fb5 as DisplayMode}
+
+pub using @dd2f48dd8788277c {type DisplayModes_9cf36ba260e8 as DisplayModes}
+
+pub using @dd2f48dd8788277c {type EMFINFO_6bef9a3d2e96 as EMFINFO}
+
+pub using @dd2f48dd8788277c {type ENGDEVICEATTRIBUTE_a02407dc0392 as ENGDEVICEATTRIBUTE}
+
+pub using @dd2f48dd8788277c {type ENGEVENT_9510a01aaac6 as ENGEVENT}
+
+pub using @dd2f48dd8788277c {type ENGSAFESEMAPHORE_c237829e9c6f as ENGSAFESEMAPHORE}
+
+pub using @dd2f48dd8788277c {type ENGSYSTEMATTRIBUTE_f0c1d96fc77d as ENGSYSTEMATTRIBUTE}
+
+pub using @dd2f48dd8788277c {type ENGTIMEFIELDS_d9115a8a8e12 as ENGTIMEFIELDS}
+
+pub using @dd2f48dd8788277c {type ENUMRECTS_92bd2f6c01a2 as ENUMRECTS}
+
+pub using @dd2f48dd8788277c {type FDDEVICEMETRICS_3e33924d8fa1 as FDDEVICEMETRICS}
+
+pub using @dd2f48dd8788277c {type FDGLYPHATTR_f37f76bf92d8 as FDGLYPHATTR}
+
+pub using @dd2f48dd8788277c {type FDGLYPHSET_e32b515b67eb as FDGLYPHSET}
+
+pub using @dd2f48dd8788277c {type FDKERNINGPAIR_887bdd62177f as FDKERNINGPAIR}
+
+pub using @dd2f48dd8788277c {type FDLIGATURE_4b8d869bf195 as FDLIGATURE}
+
+pub using @dd2f48dd8788277c {type FDXFORM_ff8e4a93d690 as FDXFORM}
+
+pub using @dd2f48dd8788277c {type FLOATLONG_001594db6dd9 as FLOATLONG}
+
+pub using @dd2f48dd8788277c {type FLOATOBJ_b54f7bd94129 as FLOATOBJ}
+
+pub using @dd2f48dd8788277c {type FLOATOBJXFORM_89757fa82159 as FLOATOBJXFORM}
+
+pub using @dd2f48dd8788277c {type FONTDIFF_4e7b42092ab9 as FONTDIFF}
+
+pub using @dd2f48dd8788277c {type FONTIMAGEINFO_ff279c159aaa as FONTIMAGEINFO}
+
+pub using @dd2f48dd8788277c {type FONTINFO_59e9cea03492 as FONTINFO}
+
+pub using @dd2f48dd8788277c {type FONTOBJ_b287ca2cf44e as FONTOBJ}
+
+pub using @dd2f48dd8788277c {type FONTSIM_2760c04de761 as FONTSIM}
+
+pub using @dd2f48dd8788277c {type FREEOBJPROC_f6c10645d8e4 as FREEOBJPROC}
+
+pub using @dd2f48dd8788277c {type FSCNTLSCREENINFO_b8aff0bb6d27 as FSCNTLSCREENINFO}
+
+pub using @dd2f48dd8788277c {type FSVIDEOCOPYFRAMEBUFFER_5217beebce36 as FSVIDEOCOPYFRAMEBUFFER}
+
+pub using @dd2f48dd8788277c {type FSVIDEOCURSORPOSITION_368170d0e71d as FSVIDEOCURSORPOSITION}
+
+pub using @dd2f48dd8788277c {type FSVIDEOMODEINFORMATION_8ed718059c38 as FSVIDEOMODEINFORMATION}
+
+pub using @dd2f48dd8788277c {type FSVIDEOREVERSEMOUSEPOINTER_0bcf973a6c2c as FSVIDEOREVERSEMOUSEPOINTER}
+
+pub using @dd2f48dd8788277c {type FSVIDEOSCREENINFORMATION_adefab42d1f6 as FSVIDEOSCREENINFORMATION}
+
+pub using @dd2f48dd8788277c {type FSVIDEOWRITETOFRAMEBUFFER_33c78bd89809 as FSVIDEOWRITETOFRAMEBUFFER}
+
+pub using @dd2f48dd8788277c {type GAMMARAMP_80a471f50605 as GAMMARAMP}
+
+pub using @dd2f48dd8788277c {type GAMMARAMPDXGI1_33c0ecccb2b0 as GAMMARAMPDXGI1}
+
+pub using @dd2f48dd8788277c {type GAMMARAMPRGB_7fda355515b1 as GAMMARAMPRGB}
+
+pub using @dd2f48dd8788277c {type GAMMARAMPRGB256x3x16_ed9c23ee63f7 as GAMMARAMPRGB256x3x16}
+
+pub using @dd2f48dd8788277c {type GDIINFO_b9ca7930fb95 as GDIINFO}
+
+pub using @dd2f48dd8788277c {type GLYPHBITS_96cc251d0577 as GLYPHBITS}
+
+pub using @dd2f48dd8788277c {type GLYPHDATA_cd26c3668b04 as GLYPHDATA}
+
+pub using @dd2f48dd8788277c {type GLYPHDEF_1c3600c697eb as GLYPHDEF}
+
+pub using @dd2f48dd8788277c {type GLYPHPOS_0d7941f528b4 as GLYPHPOS}
+
+pub using @dd2f48dd8788277c {type HBM_d8273e15e04b as HBM}
+
+pub using @dd2f48dd8788277c {type HDEV_7a4f8af73130 as HDEV}
+
+pub using @dd2f48dd8788277c {type HDRVOBJ_fb042d8e4bba as HDRVOBJ}
+
+pub using @dd2f48dd8788277c {type HFASTMUTEX_64f8eebdfd94 as HFASTMUTEX}
+
+pub using @dd2f48dd8788277c {type HSEMAPHORE_eafd057241a5 as HSEMAPHORE}
+
+pub using @dd2f48dd8788277c {type HSURF_dc5a806bcb6a as HSURF}
+
+pub using @dd2f48dd8788277c {type ICloneViewHelper_47af2c1e1ce1 as ICloneViewHelper}
+
+pub using @dd2f48dd8788277c {type IFIEXTRA_e92042ad8b78 as IFIEXTRA}
+
+pub using @dd2f48dd8788277c {type IFIMETRICS_fa3c584f95fd as IFIMETRICS}
+
+pub using @dd2f48dd8788277c {type INDIRECTDISPLAYINFO_187a44c065d9 as INDIRECTDISPLAYINFO}
+
+pub using @dd2f48dd8788277c {type IViewHelper_18db1a314197 as IViewHelper}
+
+pub using @dd2f48dd8788277c {type LIGATURE_689c57163548 as LIGATURE}
+
+pub using @dd2f48dd8788277c {type LINEATTRS_afaf90f147eb as LINEATTRS}
+
+pub using @dd2f48dd8788277c {type MCCOLORTEMPERATURE_35f6bf7b1584 as MCCOLORTEMPERATURE}
+
+pub using @dd2f48dd8788277c {type MCDISPLAYTECHNOLOGYTYPE_6bfa5e6cd54b as MCDISPLAYTECHNOLOGYTYPE}
+
+pub using @dd2f48dd8788277c {type MCDRIVETYPE_19ed57d47f66 as MCDRIVETYPE}
+
+pub using @dd2f48dd8788277c {type MCGAINTYPE_5180051c8a3d as MCGAINTYPE}
+
+pub using @dd2f48dd8788277c {type MCPOSITIONTYPE_f1c376ce29c1 as MCPOSITIONTYPE}
+
+pub using @dd2f48dd8788277c {type MCSIZETYPE_8b97621afd37 as MCSIZETYPE}
+
+pub using @dd2f48dd8788277c {type MCTIMINGREPORT_4fce857a0bb6 as MCTIMINGREPORT}
+
+pub using @dd2f48dd8788277c {type MCVCPCODETYPE_be70ce60c3c2 as MCVCPCODETYPE}
+
+pub using @dd2f48dd8788277c {type MIPIDSICAPS_b4921e0ef45d as MIPIDSICAPS}
+
+pub using @dd2f48dd8788277c {type MIPIDSIPACKET_aa23e3656bf6 as MIPIDSIPACKET}
+
+pub using @dd2f48dd8788277c {type MIPIDSIRESET_a09fb1f5eead as MIPIDSIRESET}
+
+pub using @dd2f48dd8788277c {type MIPIDSITRANSMISSION_226b87a65582 as MIPIDSITRANSMISSION}
+
+pub using @dd2f48dd8788277c {type ORIENTATIONPREFERENCE_b9bc0b44f080 as ORIENTATIONPREFERENCE}
+
+pub using @dd2f48dd8788277c {type OUTPUTCOLORENCODING_3a724d771a5c as OUTPUTCOLORENCODING}
+
+pub using @dd2f48dd8788277c {type OUTPUTWIRECOLORSPACETYPE_6d8016e1759e as OUTPUTWIRECOLORSPACETYPE}
+
+pub using @dd2f48dd8788277c {type OUTPUTWIREFORMAT_6243bed02eb8 as OUTPUTWIREFORMAT}
+
+pub using @dd2f48dd8788277c {type PALOBJ_ae35ecf8b20d as PALOBJ}
+
+pub using @dd2f48dd8788277c {type PANELBRIGHTNESSSENSORDATA_fca06bbd199c as PANELBRIGHTNESSSENSORDATA}
+
+pub using @dd2f48dd8788277c {type PANELGETBACKLIGHTREDUCTION_97462f2222a5 as PANELGETBACKLIGHTREDUCTION}
+
+pub using @dd2f48dd8788277c {type PANELGETBRIGHTNESS_766714d236b4 as PANELGETBRIGHTNESS}
+
+pub using @dd2f48dd8788277c {type PANELQUERYBRIGHTNESSCAPS_30863e1a16d6 as PANELQUERYBRIGHTNESSCAPS}
+
+pub using @dd2f48dd8788277c {type PANELQUERYBRIGHTNESSRANGES_ab61c265b0fc as PANELQUERYBRIGHTNESSRANGES}
+
+pub using @dd2f48dd8788277c {type PANELSETBACKLIGHTOPTIMIZATION_d6ae9f847f52 as PANELSETBACKLIGHTOPTIMIZATION}
+
+pub using @dd2f48dd8788277c {type PANELSETBRIGHTNESS_f7823f1bcdbd as PANELSETBRIGHTNESS}
+
+pub using @dd2f48dd8788277c {type PANELSETBRIGHTNESSSTATE_0d4887462a94 as PANELSETBRIGHTNESSSTATE}
+
+pub using @dd2f48dd8788277c {type PATHDATA_4cbcb417b7cc as PATHDATA}
+
+pub using @dd2f48dd8788277c {type PATHOBJ_740f02469af9 as PATHOBJ}
+
+pub using @dd2f48dd8788277c {type PERBANDINFO_5a70bd811214 as PERBANDINFO}
+
+pub using @dd2f48dd8788277c {type PFN_c5f45512cd59 as PFN}
+
+pub using @dd2f48dd8788277c {type PFNDrvAccumulateD3DDirtyRect_607fd6584dbf as PFNDrvAccumulateD3DDirtyRect}
+
+pub using @dd2f48dd8788277c {type PFNDrvAlphaBlend_03c479068b5a as PFNDrvAlphaBlend}
+
+pub using @dd2f48dd8788277c {type PFNDrvAssertMode_4ffffbf6cfb2 as PFNDrvAssertMode}
+
+pub using @dd2f48dd8788277c {type PFNDrvAssociateSharedSurface_7f0de524a9cb as PFNDrvAssociateSharedSurface}
+
+pub using @dd2f48dd8788277c {type PFNDrvBitBlt_a8da292cacd2 as PFNDrvBitBlt}
+
+pub using @dd2f48dd8788277c {type PFNDrvCompletePDEV_be70e61b1d79 as PFNDrvCompletePDEV}
+
+pub using @dd2f48dd8788277c {type PFNDrvCopyBits_5783a7f3cda3 as PFNDrvCopyBits}
+
+pub using @dd2f48dd8788277c {type PFNDrvCreateDeviceBitmap_a0ac62836489 as PFNDrvCreateDeviceBitmap}
+
+pub using @dd2f48dd8788277c {type PFNDrvCreateDeviceBitmapEx_71e9d3fd685f as PFNDrvCreateDeviceBitmapEx}
+
+pub using @dd2f48dd8788277c {type PFNDrvDeleteDeviceBitmap_f7610fa07c60 as PFNDrvDeleteDeviceBitmap}
+
+pub using @dd2f48dd8788277c {type PFNDrvDeleteDeviceBitmapEx_b4f012c768c4 as PFNDrvDeleteDeviceBitmapEx}
+
+pub using @dd2f48dd8788277c {type PFNDrvDeriveSurface_1dc4e894fa15 as PFNDrvDeriveSurface}
+
+pub using @dd2f48dd8788277c {type PFNDrvDescribePixelFormat_9b670d966de1 as PFNDrvDescribePixelFormat}
+
+pub using @dd2f48dd8788277c {type PFNDrvDestroyFont_a8a82958c593 as PFNDrvDestroyFont}
+
+pub using @dd2f48dd8788277c {type PFNDrvDisableDirectDraw_661d6951ac92 as PFNDrvDisableDirectDraw}
+
+pub using @dd2f48dd8788277c {type PFNDrvDisableDriver_91f3d35ac59c as PFNDrvDisableDriver}
+
+pub using @dd2f48dd8788277c {type PFNDrvDisablePDEV_d501c56d2471 as PFNDrvDisablePDEV}
+
+pub using @dd2f48dd8788277c {type PFNDrvDisableSurface_69e085bd5171 as PFNDrvDisableSurface}
+
+pub using @dd2f48dd8788277c {type PFNDrvDitherColor_4b559a7fdc42 as PFNDrvDitherColor}
+
+pub using @dd2f48dd8788277c {type PFNDrvDrawEscape_08cc1e5f10bf as PFNDrvDrawEscape}
+
+pub using @dd2f48dd8788277c {type PFNDrvEnableDirectDraw_d811046b8745 as PFNDrvEnableDirectDraw}
+
+pub using @dd2f48dd8788277c {type PFNDrvEnableDriver_66bcb848fc82 as PFNDrvEnableDriver}
+
+pub using @dd2f48dd8788277c {type PFNDrvEnablePDEV_4959d8d0ec36 as PFNDrvEnablePDEV}
+
+pub using @dd2f48dd8788277c {type PFNDrvEnableSurface_6dcffbb3fc16 as PFNDrvEnableSurface}
+
+pub using @dd2f48dd8788277c {type PFNDrvEndDoc_5ec8185ecb84 as PFNDrvEndDoc}
+
+pub using @dd2f48dd8788277c {type PFNDrvEndDxInterop_86580b190945 as PFNDrvEndDxInterop}
+
+pub using @dd2f48dd8788277c {type PFNDrvEscape_eff2ae78544a as PFNDrvEscape}
+
+pub using @dd2f48dd8788277c {type PFNDrvFillPath_7a90cf730151 as PFNDrvFillPath}
+
+pub using @dd2f48dd8788277c {type PFNDrvFontManagement_e57794ef01e3 as PFNDrvFontManagement}
+
+pub using @dd2f48dd8788277c {type PFNDrvFree_ca80a30cf6bf as PFNDrvFree}
+
+pub using @dd2f48dd8788277c {type PFNDrvGetDirectDrawInfo_95a1360d6b49 as PFNDrvGetDirectDrawInfo}
+
+pub using @dd2f48dd8788277c {type PFNDrvGetGlyphMode_cb0c11a18f21 as PFNDrvGetGlyphMode}
+
+pub using @dd2f48dd8788277c {type PFNDrvGetModes_7089ab9c0a58 as PFNDrvGetModes}
+
+pub using @dd2f48dd8788277c {type PFNDrvGetTrueTypeFile_d91acde8bdce as PFNDrvGetTrueTypeFile}
+
+pub using @dd2f48dd8788277c {type PFNDrvGradientFill_43cd52eb1fd3 as PFNDrvGradientFill}
+
+pub using @dd2f48dd8788277c {type PFNDrvIcmCheckBitmapBits_25f7c65189c0 as PFNDrvIcmCheckBitmapBits}
+
+pub using @dd2f48dd8788277c {type PFNDrvIcmCreateColorTransform_14de4832ccdb as PFNDrvIcmCreateColorTransform}
+
+pub using @dd2f48dd8788277c {type PFNDrvIcmDeleteColorTransform_014afdf1a633 as PFNDrvIcmDeleteColorTransform}
+
+pub using @dd2f48dd8788277c {type PFNDrvIcmSetDeviceGammaRamp_9c13ac5891c5 as PFNDrvIcmSetDeviceGammaRamp}
+
+pub using @dd2f48dd8788277c {type PFNDrvLineTo_b77208287939 as PFNDrvLineTo}
+
+pub using @dd2f48dd8788277c {type PFNDrvLoadFontFile_6968f50daccb as PFNDrvLoadFontFile}
+
+pub using @dd2f48dd8788277c {type PFNDrvLockDisplayArea_e291a7069a47 as PFNDrvLockDisplayArea}
+
+pub using @dd2f48dd8788277c {type PFNDrvMovePointer_6ec35ce0c0b1 as PFNDrvMovePointer}
+
+pub using @dd2f48dd8788277c {type PFNDrvNextBand_ad86f240c096 as PFNDrvNextBand}
+
+pub using @dd2f48dd8788277c {type PFNDrvNotify_31b38422305e as PFNDrvNotify}
+
+pub using @dd2f48dd8788277c {type PFNDrvPaint_d0eae6d1dc6b as PFNDrvPaint}
+
+pub using @dd2f48dd8788277c {type PFNDrvPlgBlt_c6a6bf03993c as PFNDrvPlgBlt}
+
+pub using @dd2f48dd8788277c {type PFNDrvQueryAdvanceWidths_5029e224fae3 as PFNDrvQueryAdvanceWidths}
+
+pub using @dd2f48dd8788277c {type PFNDrvQueryDeviceSupport_39c3b070a856 as PFNDrvQueryDeviceSupport}
+
+pub using @dd2f48dd8788277c {type PFNDrvQueryFont_433ea50738ef as PFNDrvQueryFont}
+
+pub using @dd2f48dd8788277c {type PFNDrvQueryFontCaps_7578707c2f3f as PFNDrvQueryFontCaps}
+
+pub using @dd2f48dd8788277c {type PFNDrvQueryFontData_24fd9b8c4577 as PFNDrvQueryFontData}
+
+pub using @dd2f48dd8788277c {type PFNDrvQueryFontFile_2d16ae9272df as PFNDrvQueryFontFile}
+
+pub using @dd2f48dd8788277c {type PFNDrvQueryFontTree_6d0352fa8427 as PFNDrvQueryFontTree}
+
+pub using @dd2f48dd8788277c {type PFNDrvQueryGlyphAttrs_e9363c11959f as PFNDrvQueryGlyphAttrs}
+
+pub using @dd2f48dd8788277c {type PFNDrvQueryPerBandInfo_d0054d8c935e as PFNDrvQueryPerBandInfo}
+
+pub using @dd2f48dd8788277c {type PFNDrvQuerySpoolType_b65160de0baa as PFNDrvQuerySpoolType}
+
+pub using @dd2f48dd8788277c {type PFNDrvQueryTrueTypeOutline_9018215e4a06 as PFNDrvQueryTrueTypeOutline}
+
+pub using @dd2f48dd8788277c {type PFNDrvQueryTrueTypeSection_2cbbdcf4ca88 as PFNDrvQueryTrueTypeSection}
+
+pub using @dd2f48dd8788277c {type PFNDrvQueryTrueTypeTable_c6d717d80f85 as PFNDrvQueryTrueTypeTable}
+
+pub using @dd2f48dd8788277c {type PFNDrvRealizeBrush_4dc952925d8a as PFNDrvRealizeBrush}
+
+pub using @dd2f48dd8788277c {type PFNDrvRenderHint_fa01dda5a2e0 as PFNDrvRenderHint}
+
+pub using @dd2f48dd8788277c {type PFNDrvResetDevice_86cbbd1cd3cd as PFNDrvResetDevice}
+
+pub using @dd2f48dd8788277c {type PFNDrvResetPDEV_a54a60813362 as PFNDrvResetPDEV}
+
+pub using @dd2f48dd8788277c {type PFNDrvSaveScreenBits_7fffd7fa6d83 as PFNDrvSaveScreenBits}
+
+pub using @dd2f48dd8788277c {type PFNDrvSendPage_ffead4196f7a as PFNDrvSendPage}
+
+pub using @dd2f48dd8788277c {type PFNDrvSetPalette_01ea2d38cb31 as PFNDrvSetPalette}
+
+pub using @dd2f48dd8788277c {type PFNDrvSetPixelFormat_886948993fca as PFNDrvSetPixelFormat}
+
+pub using @dd2f48dd8788277c {type PFNDrvSetPointerShape_8c734a38f242 as PFNDrvSetPointerShape}
+
+pub using @dd2f48dd8788277c {type PFNDrvStartBanding_f42fd7813010 as PFNDrvStartBanding}
+
+pub using @dd2f48dd8788277c {type PFNDrvStartDoc_4a9b4999b720 as PFNDrvStartDoc}
+
+pub using @dd2f48dd8788277c {type PFNDrvStartDxInterop_7c6720d3e861 as PFNDrvStartDxInterop}
+
+pub using @dd2f48dd8788277c {type PFNDrvStartPage_69e4d92c3294 as PFNDrvStartPage}
+
+pub using @dd2f48dd8788277c {type PFNDrvStretchBlt_49a574ba24a2 as PFNDrvStretchBlt}
+
+pub using @dd2f48dd8788277c {type PFNDrvStretchBltROP_7cb95243d8c0 as PFNDrvStretchBltROP}
+
+pub using @dd2f48dd8788277c {type PFNDrvStrokeAndFillPath_5de015dd985f as PFNDrvStrokeAndFillPath}
+
+pub using @dd2f48dd8788277c {type PFNDrvStrokePath_fb90555d790c as PFNDrvStrokePath}
+
+pub using @dd2f48dd8788277c {type PFNDrvSurfaceComplete_cf7deacf5060 as PFNDrvSurfaceComplete}
+
+pub using @dd2f48dd8788277c {type PFNDrvSwapBuffers_a09cb4387188 as PFNDrvSwapBuffers}
+
+pub using @dd2f48dd8788277c {type PFNDrvSynchronize_4a25f138fa95 as PFNDrvSynchronize}
+
+pub using @dd2f48dd8788277c {type PFNDrvSynchronizeRedirectionBitmaps_34b54eca0933 as PFNDrvSynchronizeRedirectionBitmaps}
+
+pub using @dd2f48dd8788277c {type PFNDrvSynchronizeSurface_ecd99415897f as PFNDrvSynchronizeSurface}
+
+pub using @dd2f48dd8788277c {type PFNDrvTextOut_af755306c4fb as PFNDrvTextOut}
+
+pub using @dd2f48dd8788277c {type PFNDrvTransparentBlt_6d4fc2c8aa10 as PFNDrvTransparentBlt}
+
+pub using @dd2f48dd8788277c {type PFNDrvUnloadFontFile_37c2d636d5ce as PFNDrvUnloadFontFile}
+
+pub using @dd2f48dd8788277c {type PFNDrvUnlockDisplayArea_0c261b71c049 as PFNDrvUnlockDisplayArea}
+
+pub using @dd2f48dd8788277c {type PHYSICALMONITOR_543ba7a1ee2d as PHYSICALMONITOR}
+
+pub using @dd2f48dd8788277c {type POINTE_a7d1881e2d5b as POINTE}
+
+pub using @dd2f48dd8788277c {type POINTFIX_6cc6bc7051f1 as POINTFIX}
+
+pub using @dd2f48dd8788277c {type POINTQF_4691db7682e5 as POINTQF}
+
+pub using @dd2f48dd8788277c {type PVIDEOWIN32KCALLOUT_91ed0fe61c5d as PVIDEOWIN32KCALLOUT}
+
+pub using @dd2f48dd8788277c {type QUERYDISPLAYCONFIGFLAGS_cb846bd81d65 as QUERYDISPLAYCONFIGFLAGS}
+
+pub using @dd2f48dd8788277c {type RECTFX_6b57a9e43529 as RECTFX}
+
+pub using @dd2f48dd8788277c {type RUN_678a7076fbfe as RUN}
+
+pub using @dd2f48dd8788277c {type SETACTIVECOLORPROFILENAME_a540dd48a5e7 as SETACTIVECOLORPROFILENAME}
+
+pub using @dd2f48dd8788277c {type SETDISPLAYCONFIGFLAGS_502df2c5fdb8 as SETDISPLAYCONFIGFLAGS}
+
+pub using @dd2f48dd8788277c {type SORTCOMP_7b2367dfdfe0 as SORTCOMP}
+
+pub using @dd2f48dd8788277c {type STROBJ_dd62e0138518 as STROBJ}
+
+pub using @dd2f48dd8788277c {type SURFOBJ_0fd3144023fc as SURFOBJ}
+
+pub using @dd2f48dd8788277c {type Sources_956002ee5c37 as Sources}
+
+pub using @dd2f48dd8788277c {type TYPE1FONT_8b50ff6121c0 as TYPE1FONT}
+
+pub using @dd2f48dd8788277c {type VGACHAR_84746a5d4593 as VGACHAR}
+
+pub using @dd2f48dd8788277c {type VIDEOBANKSELECT_fba54f6a0c49 as VIDEOBANKSELECT}
+
+pub using @dd2f48dd8788277c {type VIDEOBANKTYPE_e8625f896c00 as VIDEOBANKTYPE}
+
+pub using @dd2f48dd8788277c {type VIDEOBRIGHTNESSPOLICY_0250fc3d8313 as VIDEOBRIGHTNESSPOLICY}
+
+pub using @dd2f48dd8788277c {type VIDEOCLUT_35e871efc873 as VIDEOCLUT}
+
+pub using @dd2f48dd8788277c {type VIDEOCLUTDATA_f05edd50864f as VIDEOCLUTDATA}
+
+pub using @dd2f48dd8788277c {type VIDEOCOLORCAPABILITIES_1025c6b31b86 as VIDEOCOLORCAPABILITIES}
+
+pub using @dd2f48dd8788277c {type VIDEOCOLORLUTDATA_dd7f8e49137f as VIDEOCOLORLUTDATA}
+
+pub using @dd2f48dd8788277c {type VIDEOCURSORATTRIBUTES_a01f1bf1c28b as VIDEOCURSORATTRIBUTES}
+
+pub using @dd2f48dd8788277c {type VIDEOCURSORPOSITION_ca96dafe70d4 as VIDEOCURSORPOSITION}
+
+pub using @dd2f48dd8788277c {type VIDEODEVICESESSIONSTATUS_6e412345ada9 as VIDEODEVICESESSIONSTATUS}
+
+pub using @dd2f48dd8788277c {type VIDEOHARDWARESTATE_c814333b102a as VIDEOHARDWARESTATE}
+
+pub using @dd2f48dd8788277c {type VIDEOHARDWARESTATEHEADER_759e7650aad4 as VIDEOHARDWARESTATEHEADER}
+
+pub using @dd2f48dd8788277c {type VIDEOLOADFONTINFORMATION_37b2630d774e as VIDEOLOADFONTINFORMATION}
+
+pub using @dd2f48dd8788277c {type VIDEOLUTRGB256WORDS_05935a889cc4 as VIDEOLUTRGB256WORDS}
+
+pub using @dd2f48dd8788277c {type VIDEOMEMORY_b676117abb20 as VIDEOMEMORY}
+
+pub using @dd2f48dd8788277c {type VIDEOMEMORYINFORMATION_f39c7f57a221 as VIDEOMEMORYINFORMATION}
+
+pub using @dd2f48dd8788277c {type VIDEOMODE_ea2cb14b8268 as VIDEOMODE}
+
+pub using @dd2f48dd8788277c {type VIDEOMODEINFORMATION_e2ce964bae18 as VIDEOMODEINFORMATION}
+
+pub using @dd2f48dd8788277c {type VIDEOMONITORDESCRIPTOR_a9f9edeb0b43 as VIDEOMONITORDESCRIPTOR}
+
+pub using @dd2f48dd8788277c {type VIDEONUMMODES_e475f410352b as VIDEONUMMODES}
+
+pub using @dd2f48dd8788277c {type VIDEOPALETTEDATA_bb9b044276db as VIDEOPALETTEDATA}
+
+pub using @dd2f48dd8788277c {type VIDEOPARAMETERS_3cf51d90250e as VIDEOPARAMETERS}
+
+pub using @dd2f48dd8788277c {type VIDEOPERFORMANCECOUNTER_d6317c04fdb0 as VIDEOPERFORMANCECOUNTER}
+
+pub using @dd2f48dd8788277c {type VIDEOPOINTERATTRIBUTES_56261cb3cd36 as VIDEOPOINTERATTRIBUTES}
+
+pub using @dd2f48dd8788277c {type VIDEOPOINTERCAPABILITIES_06625431a259 as VIDEOPOINTERCAPABILITIES}
+
+pub using @dd2f48dd8788277c {type VIDEOPOINTERPOSITION_9fcf4a6193ae as VIDEOPOINTERPOSITION}
+
+pub using @dd2f48dd8788277c {type VIDEOPOWERMANAGEMENT_b4d0d4b98d69 as VIDEOPOWERMANAGEMENT}
+
+pub using @dd2f48dd8788277c {type VIDEOPOWERSTATE_7582affb6e76 as VIDEOPOWERSTATE}
+
+pub using @dd2f48dd8788277c {type VIDEOPUBLICACCESSRANGES_9752ed965cd7 as VIDEOPUBLICACCESSRANGES}
+
+pub using @dd2f48dd8788277c {type VIDEOQUERYPERFORMANCECOUNTER_6d9df2841086 as VIDEOQUERYPERFORMANCECOUNTER}
+
+pub using @dd2f48dd8788277c {type VIDEOREGISTERVDM_4c4ecc9f17b6 as VIDEOREGISTERVDM}
+
+pub using @dd2f48dd8788277c {type VIDEOSHAREMEMORY_42be9a67b59b as VIDEOSHAREMEMORY}
+
+pub using @dd2f48dd8788277c {type VIDEOSHAREMEMORYINFORMATION_792ad2cf1b40 as VIDEOSHAREMEMORYINFORMATION}
+
+pub using @dd2f48dd8788277c {type VIDEOVDM_0621c1a6f642 as VIDEOVDM}
+
+pub using @dd2f48dd8788277c {type VIDEOWIN32KCALLBACKS_a74c091c875c as VIDEOWIN32KCALLBACKS}
+
+pub using @dd2f48dd8788277c {type VIDEOWIN32KCALLBACKSPARAMS_f4b072d22ab3 as VIDEOWIN32KCALLBACKSPARAMS}
+
+pub using @dd2f48dd8788277c {type VIDEOWIN32KCALLBACKSPARAMSTYPE_669630e53805 as VIDEOWIN32KCALLBACKSPARAMSTYPE}
+
+pub using @dd2f48dd8788277c {type WCRUN_7f75ecaa06d6 as WCRUN}
+
+pub using @dd2f48dd8788277c {type WNDOBJ_4d68120a1ee5 as WNDOBJ}
+
+pub using @dd2f48dd8788277c {type WNDOBJCHANGEPROC_f74921dfa526 as WNDOBJCHANGEPROC}
+
+pub using @dd2f48dd8788277c {type XFORML_583d7ddc163e as XFORML}
+
+pub using @dd2f48dd8788277c {type XFORMOBJ_1db9c0dd3d0a as XFORMOBJ}
+
+pub using @dd2f48dd8788277c {type XLATEOBJ_8eac206ca87e as XLATEOBJ}
+
+// Traits
+

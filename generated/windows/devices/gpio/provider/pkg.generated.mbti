@@ -1,0 +1,134 @@
+// Generated using `moon info`, DON'T EDIT IT
+package "moonbit-community/win32-bindings/windows/devices/gpio/provider"
+
+import {
+  "moonbit-community/win32-bindings/runtime/com",
+  "moonbit-community/win32-bindings/runtime/core",
+  "moonbit-community/win32-bindings/scc/a5c4bb732506463c",
+  "moonbitlang/core/ref",
+}
+
+// Values
+pub fn activatable_factory(@core.Guid) -> @com.ComPtr[@com.IInspectable] raise @core.WindowsError
+
+pub fn add_value_changed(@core.RawAddress, @core.RawAddress) -> Int64 raise @core.WindowsError
+
+pub fn add_value_changed_raw(@core.RawAddress, @core.RawAddress, @ref.Ref[Int64]) -> Int
+
+pub fn create_raw(@core.RawAddress, Int, @ref.Ref[UInt64]) -> Int
+
+pub let debounce_timeout : String
+
+pub let edge_bc1c45fe8e : String
+
+pub let edge_dfbff0f133 : String
+
+pub let exclusive : Int
+
+pub let falling_edge : Int
+
+pub fn get_controllers_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_debounce_timeout(@core.RawAddress) -> Int64 raise @core.WindowsError
+
+pub fn get_debounce_timeout_raw(@core.RawAddress, @ref.Ref[Int64]) -> Int
+
+pub fn get_drive_mode(@core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn get_drive_mode_raw(@core.RawAddress, @ref.Ref[Int]) -> Int
+
+pub fn get_edge(@core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn get_edge_raw(@core.RawAddress, @ref.Ref[Int]) -> Int
+
+pub fn get_pin_count(@core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn get_pin_count_raw(@core.RawAddress, @ref.Ref[Int]) -> Int
+
+pub fn get_pin_number(@core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn get_pin_number_raw(@core.RawAddress, @ref.Ref[Int]) -> Int
+
+pub fn get_sharing_mode(@core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn get_sharing_mode_raw(@core.RawAddress, @ref.Ref[Int]) -> Int
+
+pub let high : Int
+
+pub let input : Int
+
+pub let input_pull_down : Int
+
+pub let input_pull_up : Int
+
+pub fn is_drive_mode_supported_raw(@core.RawAddress, Int, Bytes) -> Int
+
+pub let low : Int
+
+pub fn open_pin_provider_raw(@core.RawAddress, Int, Int, @ref.Ref[UInt64]) -> Int
+
+pub let output : Int
+
+pub let output_open_drain : Int
+
+pub let output_open_drain_pull_up : Int
+
+pub let output_open_source : Int
+
+pub let output_open_source_pull_down : Int
+
+pub let pin_count : String
+
+pub let pin_number : String
+
+pub fn put_debounce_timeout(@core.RawAddress, Int64) -> Unit raise @core.WindowsError
+
+pub fn put_debounce_timeout_raw(@core.RawAddress, Int64) -> Int
+
+pub fn read(@core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn read_raw(@core.RawAddress, @ref.Ref[Int]) -> Int
+
+pub fn remove_value_changed(@core.RawAddress, Int64) -> Unit raise @core.WindowsError
+
+pub fn remove_value_changed_raw(@core.RawAddress, Int64) -> Int
+
+pub let rising_edge : Int
+
+pub fn set_drive_mode(@core.RawAddress, Int) -> Unit raise @core.WindowsError
+
+pub fn set_drive_mode_raw(@core.RawAddress, Int) -> Int
+
+pub let shared_read_only : Int
+
+pub let sharing_mode : String
+
+pub let value_changed : String
+
+pub fn write(@core.RawAddress, Int) -> Unit raise @core.WindowsError
+
+pub fn write_raw(@core.RawAddress, Int) -> Int
+
+// Errors
+
+// Types and methods
+
+// Type aliases
+pub using @a5c4bb732506463c {type GpioPinProviderValueChangedEventArgs_0ce0629f1702 as GpioPinProviderValueChangedEventArgs}
+
+pub using @a5c4bb732506463c {type IGpioControllerProvider_dc489ea8d111 as IGpioControllerProvider}
+
+pub using @a5c4bb732506463c {type IGpioPinProvider_7422065dbeef as IGpioPinProvider}
+
+pub using @a5c4bb732506463c {type IGpioProvider_2eee10135275 as IGpioProvider}
+
+pub using @a5c4bb732506463c {type ProviderGpioPinDriveMode_d1dd933a23b2 as ProviderGpioPinDriveMode}
+
+pub using @a5c4bb732506463c {type ProviderGpioPinEdge_8a8cf255996e as ProviderGpioPinEdge}
+
+pub using @a5c4bb732506463c {type ProviderGpioPinValue_c2063d702498 as ProviderGpioPinValue}
+
+pub using @a5c4bb732506463c {type ProviderGpioSharingMode_0252eaf273c4 as ProviderGpioSharingMode}
+
+// Traits
+

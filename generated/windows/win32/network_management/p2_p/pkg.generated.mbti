@@ -1,0 +1,1460 @@
+// Generated using `moon info`, DON'T EDIT IT
+package "moonbit-community/win32-bindings/windows/win32/network_management/p2_p"
+
+import {
+  "moonbit-community/win32-bindings/runtime/core",
+  "moonbit-community/win32-bindings/scc/1dd8e340fde34c7a",
+}
+
+// Values
+pub let drt_active : Int
+
+pub let drt_address_flag_accepted : Int
+
+pub let drt_address_flag_bad_validate_id : Int
+
+pub let drt_address_flag_inquire : Int
+
+pub let drt_address_flag_loop : Int
+
+pub let drt_address_flag_rejected : Int
+
+pub let drt_address_flag_suspect_unregistered_id : Int
+
+pub let drt_address_flag_too_busy : Int
+
+pub let drt_address_flag_unreachable : Int
+
+pub let drt_alone : Int
+
+pub fn drt_close_raw(@core.RawAddress) -> Unit
+
+pub fn drt_continue_search(@core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn drt_continue_search_raw(@core.RawAddress) -> Int
+
+pub fn drt_create_derived_key(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn drt_create_derived_key_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn drt_create_derived_key_security_provider(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn drt_create_derived_key_security_provider_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn drt_create_dns_bootstrap_resolver(UInt, @core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn drt_create_dns_bootstrap_resolver_raw(UInt, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn drt_create_ipv6_udp_transport(Int, UInt, UInt, @core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn drt_create_ipv6_udp_transport_raw(Int, UInt, UInt, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn drt_create_null_security_provider(@core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn drt_create_null_security_provider_raw(@core.RawAddress) -> Int
+
+pub fn drt_create_pnrp_bootstrap_resolver(Int, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn drt_create_pnrp_bootstrap_resolver_raw(Int, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn drt_delete_derived_key_security_provider_raw(@core.RawAddress) -> Unit
+
+pub fn drt_delete_dns_bootstrap_resolver_raw(@core.RawAddress) -> Unit
+
+pub fn drt_delete_ipv6_udp_transport(@core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn drt_delete_ipv6_udp_transport_raw(@core.RawAddress) -> Int
+
+pub fn drt_delete_null_security_provider_raw(@core.RawAddress) -> Unit
+
+pub fn drt_delete_pnrp_bootstrap_resolver_raw(@core.RawAddress) -> Unit
+
+pub let drt_e_bootstrapprovider_in_use : Int
+
+pub let drt_e_bootstrapprovider_not_attached : Int
+
+pub let drt_e_capability_mismatch : Int
+
+pub let drt_e_duplicate_key : Int
+
+pub let drt_e_faulted : Int
+
+pub let drt_e_insufficient_buffer : Int
+
+pub let drt_e_invalid_address : Int
+
+pub let drt_e_invalid_bootstrap_provider : Int
+
+pub let drt_e_invalid_cert_chain : Int
+
+pub let drt_e_invalid_instance_prefix : Int
+
+pub let drt_e_invalid_key : Int
+
+pub let drt_e_invalid_key_size : Int
+
+pub let drt_e_invalid_max_addresses : Int
+
+pub let drt_e_invalid_max_endpoints : Int
+
+pub let drt_e_invalid_message : Int
+
+pub let drt_e_invalid_port : Int
+
+pub let drt_e_invalid_scope : Int
+
+pub let drt_e_invalid_search_info : Int
+
+pub let drt_e_invalid_search_range : Int
+
+pub let drt_e_invalid_security_mode : Int
+
+pub let drt_e_invalid_security_provider : Int
+
+pub let drt_e_invalid_settings : Int
+
+pub let drt_e_invalid_transport_provider : Int
+
+pub let drt_e_no_addresses_available : Int
+
+pub let drt_e_no_more : Int
+
+pub let drt_e_search_in_progress : Int
+
+pub let drt_e_securityprovider_in_use : Int
+
+pub let drt_e_securityprovider_not_attached : Int
+
+pub let drt_e_still_in_use : Int
+
+pub let drt_e_timeout : Int
+
+pub let drt_e_transport_already_bound : Int
+
+pub let drt_e_transport_already_exists_for_scope : Int
+
+pub let drt_e_transport_executing_callback : Int
+
+pub let drt_e_transport_invalid_argument : Int
+
+pub let drt_e_transport_no_dest_addresses : Int
+
+pub let drt_e_transport_not_bound : Int
+
+pub let drt_e_transport_shutting_down : Int
+
+pub let drt_e_transport_still_bound : Int
+
+pub let drt_e_transport_unexpected : Int
+
+pub let drt_e_transportprovider_in_use : Int
+
+pub let drt_e_transportprovider_not_attached : Int
+
+pub fn drt_end_search(@core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn drt_end_search_raw(@core.RawAddress) -> Int
+
+pub let drt_event_leafset_key_changed : Int
+
+pub let drt_event_registration_state_changed : Int
+
+pub let drt_event_status_changed : Int
+
+pub let drt_faulted : Int
+
+pub fn drt_get_event_data(@core.RawAddress, UInt, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn drt_get_event_data_raw(@core.RawAddress, UInt, @core.RawAddress) -> Int
+
+pub fn drt_get_event_data_size(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn drt_get_event_data_size_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn drt_get_instance_name(@core.RawAddress, UInt, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn drt_get_instance_name_raw(@core.RawAddress, UInt, @core.RawAddress) -> Int
+
+pub fn drt_get_instance_name_size(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn drt_get_instance_name_size_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn drt_get_search_path(@core.RawAddress, UInt, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn drt_get_search_path_raw(@core.RawAddress, UInt, @core.RawAddress) -> Int
+
+pub fn drt_get_search_path_size(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn drt_get_search_path_size_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn drt_get_search_result(@core.RawAddress, UInt, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn drt_get_search_result_raw(@core.RawAddress, UInt, @core.RawAddress) -> Int
+
+pub fn drt_get_search_result_size(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn drt_get_search_result_size_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub let drt_global_scope : Int
+
+pub let drt_leafset_key_added : Int
+
+pub let drt_leafset_key_deleted : Int
+
+pub let drt_link_local_isatap_scopeid : UInt
+
+pub let drt_link_local_scope : Int
+
+pub let drt_match_exact : Int
+
+pub let drt_match_intermediate : Int
+
+pub let drt_match_near : Int
+
+pub let drt_max_instance_prefix_len : UInt
+
+pub let drt_max_payload_size : UInt
+
+pub let drt_max_routing_addresses : UInt
+
+pub let drt_min_routing_addresses : UInt
+
+pub let drt_no_network : Int
+
+pub fn drt_open(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn drt_open_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub let drt_payload_revoked : UInt
+
+pub fn drt_register_key(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn drt_register_key_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub let drt_registration_state_unresolveable : Int
+
+pub let drt_s_retry : Int
+
+pub let drt_secure_confidentialpayload : Int
+
+pub let drt_secure_membership : Int
+
+pub let drt_secure_resolve : Int
+
+pub let drt_site_local_scope : Int
+
+pub fn drt_start_search(@core.RawAddress, @core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn drt_start_search_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn drt_unregister_key_raw(@core.RawAddress) -> Unit
+
+pub fn drt_update_key(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn drt_update_key_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub let facility_drt : UInt
+
+pub let maximum_peer_dist_client_info_by_handles_class : Int
+
+pub let ns_pnrpcloud : UInt
+
+pub let ns_pnrpname : UInt
+
+pub let peer_application_all_users : Int
+
+pub let peer_application_current_user : Int
+
+pub let peer_change_added : Int
+
+pub let peer_change_deleted : Int
+
+pub let peer_change_updated : Int
+
+pub fn peer_collab_add_contact(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn peer_collab_add_contact_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn peer_collab_async_invite_contact(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn peer_collab_async_invite_contact_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn peer_collab_async_invite_endpoint(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn peer_collab_async_invite_endpoint_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn peer_collab_cancel_invitation(@core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn peer_collab_cancel_invitation_raw(@core.RawAddress) -> Int
+
+pub fn peer_collab_close_handle(@core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn peer_collab_close_handle_raw(@core.RawAddress) -> Int
+
+pub fn peer_collab_delete_contact(@core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn peer_collab_delete_contact_raw(@core.RawAddress) -> Int
+
+pub fn peer_collab_delete_endpoint_data(@core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn peer_collab_delete_endpoint_data_raw(@core.RawAddress) -> Int
+
+pub fn peer_collab_delete_object(@core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn peer_collab_delete_object_raw(@core.RawAddress) -> Int
+
+pub fn peer_collab_enum_application_registration_info(Int, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn peer_collab_enum_application_registration_info_raw(Int, @core.RawAddress) -> Int
+
+pub fn peer_collab_enum_applications(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn peer_collab_enum_applications_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn peer_collab_enum_contacts(@core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn peer_collab_enum_contacts_raw(@core.RawAddress) -> Int
+
+pub fn peer_collab_enum_endpoints(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn peer_collab_enum_endpoints_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn peer_collab_enum_objects(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn peer_collab_enum_objects_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn peer_collab_enum_people_near_me(@core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn peer_collab_enum_people_near_me_raw(@core.RawAddress) -> Int
+
+pub fn peer_collab_export_contact(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn peer_collab_export_contact_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn peer_collab_get_app_launch_info(@core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn peer_collab_get_app_launch_info_raw(@core.RawAddress) -> Int
+
+pub fn peer_collab_get_application_registration_info(@core.RawAddress, Int, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn peer_collab_get_application_registration_info_raw(@core.RawAddress, Int, @core.RawAddress) -> Int
+
+pub fn peer_collab_get_contact(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn peer_collab_get_contact_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn peer_collab_get_endpoint_name(@core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn peer_collab_get_endpoint_name_raw(@core.RawAddress) -> Int
+
+pub fn peer_collab_get_event_data(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn peer_collab_get_event_data_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn peer_collab_get_invitation_response(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn peer_collab_get_invitation_response_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn peer_collab_get_presence_info(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn peer_collab_get_presence_info_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn peer_collab_get_signin_options(@core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn peer_collab_get_signin_options_raw(@core.RawAddress) -> Int
+
+pub fn peer_collab_invite_contact(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn peer_collab_invite_contact_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn peer_collab_invite_endpoint(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn peer_collab_invite_endpoint_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn peer_collab_parse_contact(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn peer_collab_parse_contact_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn peer_collab_query_contact_data(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn peer_collab_query_contact_data_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn peer_collab_refresh_endpoint_data(@core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn peer_collab_refresh_endpoint_data_raw(@core.RawAddress) -> Int
+
+pub fn peer_collab_register_application(@core.RawAddress, Int) -> Unit raise @core.WindowsError
+
+pub fn peer_collab_register_application_raw(@core.RawAddress, Int) -> Int
+
+pub fn peer_collab_register_event(@core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn peer_collab_register_event_raw(@core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn peer_collab_set_endpoint_name(@core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn peer_collab_set_endpoint_name_raw(@core.RawAddress) -> Int
+
+pub fn peer_collab_set_object(@core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn peer_collab_set_object_raw(@core.RawAddress) -> Int
+
+pub fn peer_collab_set_presence_info(@core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn peer_collab_set_presence_info_raw(@core.RawAddress) -> Int
+
+pub fn peer_collab_shutdown() -> Unit raise @core.WindowsError
+
+pub fn peer_collab_shutdown_raw() -> Int
+
+pub fn peer_collab_signin(@core.RawAddress, UInt) -> Unit raise @core.WindowsError
+
+pub fn peer_collab_signin_raw(@core.RawAddress, UInt) -> Int
+
+pub fn peer_collab_signout(UInt) -> Unit raise @core.WindowsError
+
+pub fn peer_collab_signout_raw(UInt) -> Int
+
+pub fn peer_collab_startup(UInt) -> Unit raise @core.WindowsError
+
+pub fn peer_collab_startup_raw(UInt) -> Int
+
+pub fn peer_collab_subscribe_endpoint_data(@core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn peer_collab_subscribe_endpoint_data_raw(@core.RawAddress) -> Int
+
+pub fn peer_collab_unregister_application(@core.RawAddress, Int) -> Unit raise @core.WindowsError
+
+pub fn peer_collab_unregister_application_raw(@core.RawAddress, Int) -> Int
+
+pub fn peer_collab_unregister_event(@core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn peer_collab_unregister_event_raw(@core.RawAddress) -> Int
+
+pub fn peer_collab_unsubscribe_endpoint_data(@core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn peer_collab_unsubscribe_endpoint_data_raw(@core.RawAddress) -> Int
+
+pub fn peer_collab_update_contact(@core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn peer_collab_update_contact_raw(@core.RawAddress) -> Int
+
+pub let peer_connected : Int
+
+pub let peer_connection_direct : Int
+
+pub let peer_connection_failed : Int
+
+pub let peer_connection_neighbor : Int
+
+pub fn peer_create_peer_name(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn peer_create_peer_name_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub let peer_defer_expiration : Int
+
+pub let peer_disable_presence : Int
+
+pub let peer_disconnected : Int
+
+pub fn peer_dist_client_add_content_information_raw(Int64, Int64, UInt, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn peer_dist_client_add_data_raw(Int64, Int64, UInt, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub let peer_dist_client_basic_info : Int
+
+pub fn peer_dist_client_block_read_raw(Int64, Int64, UInt, @core.RawAddress, UInt, @core.RawAddress) -> UInt
+
+pub fn peer_dist_client_cancel_async_operation_raw(Int64, Int64, @core.RawAddress) -> @core.RawWin32Call[UInt]
+
+pub fn peer_dist_client_close_content_raw(Int64, Int64) -> UInt
+
+pub fn peer_dist_client_complete_content_information_raw(Int64, Int64, @core.RawAddress) -> UInt
+
+pub fn peer_dist_client_flush_content_raw(Int64, @core.RawAddress, @core.RawAddress, UInt64, @core.RawAddress) -> UInt
+
+pub fn peer_dist_client_get_information_by_handle_raw(Int64, Int64, Int, UInt, @core.RawAddress) -> UInt
+
+pub fn peer_dist_client_open_content_raw(Int64, @core.RawAddress, @core.RawAddress, UInt64, @core.RawAddress) -> UInt
+
+pub fn peer_dist_client_stream_read_raw(Int64, Int64, UInt, @core.RawAddress, UInt, @core.RawAddress) -> UInt
+
+pub fn peer_dist_get_overlapped_result_raw(@core.RawAddress, @core.RawAddress, Int) -> Int
+
+pub fn peer_dist_get_status_ex_raw(Int64, @core.RawAddress) -> UInt
+
+pub fn peer_dist_get_status_raw(Int64, @core.RawAddress) -> UInt
+
+pub fn peer_dist_register_for_status_change_notification_ex_raw(Int64, @core.RawAddress, UInt64, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn peer_dist_register_for_status_change_notification_raw(Int64, @core.RawAddress, UInt64, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn peer_dist_server_cancel_async_operation_raw(Int64, UInt, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[UInt]
+
+pub fn peer_dist_server_close_content_information_raw(Int64, Int64) -> UInt
+
+pub fn peer_dist_server_close_stream_handle_raw(Int64, Int64) -> UInt
+
+pub fn peer_dist_server_open_content_information_ex_raw(Int64, UInt, @core.RawAddress, UInt64, UInt64, @core.RawAddress, @core.RawAddress, UInt64, @core.RawAddress) -> UInt
+
+pub fn peer_dist_server_open_content_information_raw(Int64, UInt, @core.RawAddress, UInt64, UInt64, @core.RawAddress, UInt64, @core.RawAddress) -> UInt
+
+pub fn peer_dist_server_publish_add_to_stream_raw(Int64, Int64, UInt, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn peer_dist_server_publish_complete_stream_raw(Int64, Int64, @core.RawAddress) -> UInt
+
+pub fn peer_dist_server_publish_stream_raw(Int64, UInt, @core.RawAddress, UInt64, @core.RawAddress, @core.RawAddress, UInt64, @core.RawAddress) -> UInt
+
+pub fn peer_dist_server_retrieve_content_information_raw(Int64, Int64, UInt, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn peer_dist_server_unpublish_raw(Int64, UInt, @core.RawAddress) -> UInt
+
+pub fn peer_dist_shutdown_raw(Int64) -> UInt
+
+pub fn peer_dist_startup_raw(UInt, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn peer_dist_unregister_for_status_change_notification_raw(Int64) -> @core.RawWin32Call[UInt]
+
+pub let peer_e_already_exists : Int
+
+pub let peer_e_client_invalid_compartment_id : Int
+
+pub let peer_e_cloud_disabled : Int
+
+pub let peer_e_cloud_is_dead : Int
+
+pub let peer_e_cloud_is_search_only : Int
+
+pub let peer_e_cloud_not_found : Int
+
+pub let peer_e_disk_full : Int
+
+pub let peer_e_duplicate_peer_name : Int
+
+pub let peer_e_invalid_identity : Int
+
+pub let peer_e_not_found : Int
+
+pub let peer_e_too_much_load : Int
+
+pub fn peer_end_enumeration(@core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn peer_end_enumeration_raw(@core.RawAddress) -> Int
+
+pub fn peer_enum_groups(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn peer_enum_groups_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn peer_enum_identities(@core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn peer_enum_identities_raw(@core.RawAddress) -> Int
+
+pub let peer_event_endpoint_application_changed : Int
+
+pub let peer_event_endpoint_changed : Int
+
+pub let peer_event_endpoint_object_changed : Int
+
+pub let peer_event_endpoint_presence_changed : Int
+
+pub let peer_event_my_application_changed : Int
+
+pub let peer_event_my_endpoint_changed : Int
+
+pub let peer_event_my_object_changed : Int
+
+pub let peer_event_my_presence_changed : Int
+
+pub let peer_event_people_near_me_changed : Int
+
+pub let peer_event_request_status_changed : Int
+
+pub let peer_event_watchlist_changed : Int
+
+pub fn peer_free_data_raw(@core.RawAddress) -> Unit
+
+pub fn peer_get_item_count(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn peer_get_item_count_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn peer_get_next_item(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn peer_get_next_item_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn peer_graph_add_record(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn peer_graph_add_record_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn peer_graph_close(@core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn peer_graph_close_direct_connection(@core.RawAddress, UInt64) -> Unit raise @core.WindowsError
+
+pub fn peer_graph_close_direct_connection_raw(@core.RawAddress, UInt64) -> Int
+
+pub fn peer_graph_close_raw(@core.RawAddress) -> Int
+
+pub fn peer_graph_connect(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn peer_graph_connect_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn peer_graph_create(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn peer_graph_create_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn peer_graph_delete(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn peer_graph_delete_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn peer_graph_delete_record(@core.RawAddress, @core.RawAddress, Int) -> Unit raise @core.WindowsError
+
+pub fn peer_graph_delete_record_raw(@core.RawAddress, @core.RawAddress, Int) -> Int
+
+pub fn peer_graph_end_enumeration(@core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn peer_graph_end_enumeration_raw(@core.RawAddress) -> Int
+
+pub fn peer_graph_enum_connections(@core.RawAddress, UInt, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn peer_graph_enum_connections_raw(@core.RawAddress, UInt, @core.RawAddress) -> Int
+
+pub fn peer_graph_enum_nodes(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn peer_graph_enum_nodes_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn peer_graph_enum_records(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn peer_graph_enum_records_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub let peer_graph_event_connection_required : Int
+
+pub let peer_graph_event_direct_connection : Int
+
+pub let peer_graph_event_incoming_data : Int
+
+pub let peer_graph_event_neighbor_connection : Int
+
+pub let peer_graph_event_node_changed : Int
+
+pub let peer_graph_event_property_changed : Int
+
+pub let peer_graph_event_record_changed : Int
+
+pub let peer_graph_event_status_changed : Int
+
+pub let peer_graph_event_synchronized : Int
+
+pub fn peer_graph_export_database(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn peer_graph_export_database_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn peer_graph_free_data_raw(@core.RawAddress) -> Unit
+
+pub fn peer_graph_get_event_data(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn peer_graph_get_event_data_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn peer_graph_get_item_count(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn peer_graph_get_item_count_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn peer_graph_get_next_item(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn peer_graph_get_next_item_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn peer_graph_get_node_info(@core.RawAddress, UInt64, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn peer_graph_get_node_info_raw(@core.RawAddress, UInt64, @core.RawAddress) -> Int
+
+pub fn peer_graph_get_properties(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn peer_graph_get_properties_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn peer_graph_get_record(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn peer_graph_get_record_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn peer_graph_get_status(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn peer_graph_get_status_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn peer_graph_import_database(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn peer_graph_import_database_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn peer_graph_listen(@core.RawAddress, UInt, UInt, UInt) -> Unit raise @core.WindowsError
+
+pub fn peer_graph_listen_raw(@core.RawAddress, UInt, UInt, UInt) -> Int
+
+pub fn peer_graph_open(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn peer_graph_open_direct_connection(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn peer_graph_open_direct_connection_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn peer_graph_open_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn peer_graph_peer_time_to_universal_time(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn peer_graph_peer_time_to_universal_time_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub let peer_graph_property_defer_expiration : Int
+
+pub let peer_graph_property_heartbeats : Int
+
+pub fn peer_graph_register_event(@core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn peer_graph_register_event_raw(@core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> Int
+
+pub let peer_graph_scope_any : Int
+
+pub let peer_graph_scope_global : Int
+
+pub let peer_graph_scope_linklocal : Int
+
+pub let peer_graph_scope_loopback : Int
+
+pub let peer_graph_scope_sitelocal : Int
+
+pub fn peer_graph_search_records(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn peer_graph_search_records_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn peer_graph_send_data(@core.RawAddress, UInt64, @core.RawAddress, UInt, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn peer_graph_send_data_raw(@core.RawAddress, UInt64, @core.RawAddress, UInt, @core.RawAddress) -> Int
+
+pub fn peer_graph_set_node_attributes(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn peer_graph_set_node_attributes_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn peer_graph_set_presence(@core.RawAddress, Int) -> Unit raise @core.WindowsError
+
+pub fn peer_graph_set_presence_raw(@core.RawAddress, Int) -> Int
+
+pub fn peer_graph_set_properties(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn peer_graph_set_properties_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn peer_graph_shutdown() -> Unit raise @core.WindowsError
+
+pub fn peer_graph_shutdown_raw() -> Int
+
+pub fn peer_graph_startup(UInt, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn peer_graph_startup_raw(UInt, @core.RawAddress) -> Int
+
+pub let peer_graph_status_has_connections : Int
+
+pub let peer_graph_status_listening : Int
+
+pub let peer_graph_status_synchronized : Int
+
+pub fn peer_graph_universal_time_to_peer_time(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn peer_graph_universal_time_to_peer_time_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn peer_graph_unregister_event(@core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn peer_graph_unregister_event_raw(@core.RawAddress) -> Int
+
+pub fn peer_graph_update_record(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn peer_graph_update_record_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn peer_graph_validate_deferred_records(@core.RawAddress, UInt, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn peer_graph_validate_deferred_records_raw(@core.RawAddress, UInt, @core.RawAddress) -> Int
+
+pub fn peer_group_add_record(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn peer_group_add_record_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn peer_group_close(@core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn peer_group_close_direct_connection(@core.RawAddress, UInt64) -> Unit raise @core.WindowsError
+
+pub fn peer_group_close_direct_connection_raw(@core.RawAddress, UInt64) -> Int
+
+pub fn peer_group_close_raw(@core.RawAddress) -> Int
+
+pub fn peer_group_connect(@core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn peer_group_connect_by_address(@core.RawAddress, UInt, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn peer_group_connect_by_address_raw(@core.RawAddress, UInt, @core.RawAddress) -> Int
+
+pub fn peer_group_connect_raw(@core.RawAddress) -> Int
+
+pub fn peer_group_create(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn peer_group_create_invitation(@core.RawAddress, @core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn peer_group_create_invitation_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn peer_group_create_password_invitation(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn peer_group_create_password_invitation_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn peer_group_create_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn peer_group_delete(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn peer_group_delete_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn peer_group_delete_record(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn peer_group_delete_record_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn peer_group_enum_connections(@core.RawAddress, UInt, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn peer_group_enum_connections_raw(@core.RawAddress, UInt, @core.RawAddress) -> Int
+
+pub fn peer_group_enum_members(@core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn peer_group_enum_members_raw(@core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn peer_group_enum_records(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn peer_group_enum_records_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub let peer_group_event_authentication_failed : Int
+
+pub let peer_group_event_connection_failed : Int
+
+pub let peer_group_event_direct_connection : Int
+
+pub let peer_group_event_incoming_data : Int
+
+pub let peer_group_event_member_changed : Int
+
+pub let peer_group_event_neighbor_connection : Int
+
+pub let peer_group_event_property_changed : Int
+
+pub let peer_group_event_record_changed : Int
+
+pub let peer_group_event_status_changed : Int
+
+pub fn peer_group_export_config(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn peer_group_export_config_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn peer_group_export_database(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn peer_group_export_database_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn peer_group_get_event_data(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn peer_group_get_event_data_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn peer_group_get_properties(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn peer_group_get_properties_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn peer_group_get_record(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn peer_group_get_record_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn peer_group_get_status(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn peer_group_get_status_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub let peer_group_gmc_authentication : Int
+
+pub fn peer_group_import_config(@core.RawAddress, @core.RawAddress, Int, @core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn peer_group_import_config_raw(@core.RawAddress, @core.RawAddress, Int, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn peer_group_import_database(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn peer_group_import_database_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn peer_group_issue_credentials(@core.RawAddress, @core.RawAddress, @core.RawAddress, UInt, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn peer_group_issue_credentials_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, UInt, @core.RawAddress) -> Int
+
+pub fn peer_group_join(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn peer_group_join_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn peer_group_open(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn peer_group_open_direct_connection(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn peer_group_open_direct_connection_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn peer_group_open_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn peer_group_parse_invitation(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn peer_group_parse_invitation_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub let peer_group_password_authentication : Int
+
+pub fn peer_group_password_join(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn peer_group_password_join_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn peer_group_peer_time_to_universal_time(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn peer_group_peer_time_to_universal_time_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn peer_group_register_event(@core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn peer_group_register_event_raw(@core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn peer_group_resume_password_authentication(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn peer_group_resume_password_authentication_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn peer_group_search_records(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn peer_group_search_records_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn peer_group_send_data(@core.RawAddress, UInt64, @core.RawAddress, UInt, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn peer_group_send_data_raw(@core.RawAddress, UInt64, @core.RawAddress, UInt, @core.RawAddress) -> Int
+
+pub fn peer_group_set_properties(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn peer_group_set_properties_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn peer_group_shutdown() -> Unit raise @core.WindowsError
+
+pub fn peer_group_shutdown_raw() -> Int
+
+pub fn peer_group_startup(UInt, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn peer_group_startup_raw(UInt, @core.RawAddress) -> Int
+
+pub let peer_group_status_has_connections : Int
+
+pub let peer_group_status_listening : Int
+
+pub let peer_group_store_credentials : Int
+
+pub fn peer_group_universal_time_to_peer_time(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn peer_group_universal_time_to_peer_time_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn peer_group_unregister_event(@core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn peer_group_unregister_event_raw(@core.RawAddress) -> Int
+
+pub fn peer_group_update_record(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn peer_group_update_record_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn peer_host_name_to_peer_name(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn peer_host_name_to_peer_name_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn peer_identity_create(@core.RawAddress, @core.RawAddress, UInt64, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn peer_identity_create_raw(@core.RawAddress, @core.RawAddress, UInt64, @core.RawAddress) -> Int
+
+pub fn peer_identity_delete(@core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn peer_identity_delete_raw(@core.RawAddress) -> Int
+
+pub fn peer_identity_export(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn peer_identity_export_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn peer_identity_get_crypt_key(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn peer_identity_get_crypt_key_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn peer_identity_get_default(@core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn peer_identity_get_default_raw(@core.RawAddress) -> Int
+
+pub fn peer_identity_get_friendly_name(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn peer_identity_get_friendly_name_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn peer_identity_get_xml(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn peer_identity_get_xml_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn peer_identity_import(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn peer_identity_import_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn peer_identity_set_friendly_name(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn peer_identity_set_friendly_name_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub let peer_invitation_response_accepted : Int
+
+pub let peer_invitation_response_declined : Int
+
+pub let peer_invitation_response_error : Int
+
+pub let peer_invitation_response_expired : Int
+
+pub let peer_member_connected : Int
+
+pub let peer_member_data_optional : Int
+
+pub let peer_member_disconnected : Int
+
+pub let peer_member_joined : Int
+
+pub let peer_member_left : Int
+
+pub let peer_member_present : Int
+
+pub let peer_member_updated : Int
+
+pub fn peer_name_to_peer_host_name(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn peer_name_to_peer_host_name_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub let peer_node_change_connected : Int
+
+pub let peer_node_change_disconnected : Int
+
+pub let peer_node_change_updated : Int
+
+pub let peer_pnrp_all_link_clouds : String
+
+pub fn peer_pnrp_end_resolve(@core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn peer_pnrp_end_resolve_raw(@core.RawAddress) -> Int
+
+pub fn peer_pnrp_get_cloud_info(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn peer_pnrp_get_cloud_info_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn peer_pnrp_get_endpoint(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn peer_pnrp_get_endpoint_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn peer_pnrp_register(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn peer_pnrp_register_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn peer_pnrp_resolve(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn peer_pnrp_resolve_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn peer_pnrp_shutdown() -> Unit raise @core.WindowsError
+
+pub fn peer_pnrp_shutdown_raw() -> Int
+
+pub fn peer_pnrp_start_resolve(@core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn peer_pnrp_start_resolve_raw(@core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn peer_pnrp_startup(UInt) -> Unit raise @core.WindowsError
+
+pub fn peer_pnrp_startup_raw(UInt) -> Int
+
+pub fn peer_pnrp_unregister(@core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn peer_pnrp_unregister_raw(@core.RawAddress) -> Int
+
+pub fn peer_pnrp_update_registration(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn peer_pnrp_update_registration_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub let peer_presence_away : Int
+
+pub let peer_presence_be_right_back : Int
+
+pub let peer_presence_busy : Int
+
+pub let peer_presence_idle : Int
+
+pub let peer_presence_offline : Int
+
+pub let peer_presence_on_the_phone : Int
+
+pub let peer_presence_online : Int
+
+pub let peer_presence_out_to_lunch : Int
+
+pub let peer_publication_scope_all : Int
+
+pub let peer_publication_scope_internet : Int
+
+pub let peer_publication_scope_near_me : Int
+
+pub let peer_publication_scope_none : Int
+
+pub let peer_record_added : Int
+
+pub let peer_record_deleted : Int
+
+pub let peer_record_expired : Int
+
+pub let peer_record_flag_autorefresh : Int
+
+pub let peer_record_flag_deleted : Int
+
+pub let peer_record_updated : Int
+
+pub let peer_signin_all : Int
+
+pub let peer_signin_internet : Int
+
+pub let peer_signin_near_me : Int
+
+pub let peer_signin_none : Int
+
+pub let peer_watch_allowed : Int
+
+pub let peer_watch_blocked : Int
+
+pub let peerdist_publication_options_version : Int
+
+pub let peerdist_publication_options_version_1 : Int
+
+pub let peerdist_publication_options_version_2 : Int
+
+pub let peerdist_read_timeout_default : UInt
+
+pub let peerdist_read_timeout_local_cache_only : UInt
+
+pub let peerdist_retrieval_options_contentinfo_version : UInt
+
+pub let peerdist_retrieval_options_contentinfo_version_1 : UInt
+
+pub let peerdist_retrieval_options_contentinfo_version_2 : UInt
+
+pub let peerdist_status_available : Int
+
+pub let peerdist_status_disabled : Int
+
+pub let peerdist_status_unavailable : Int
+
+pub let pnrp_cloud_full_participant : Int
+
+pub let pnrp_cloud_name_local : Int
+
+pub let pnrp_cloud_no_flags : Int
+
+pub let pnrp_cloud_resolve_only : Int
+
+pub let pnrp_cloud_state_active : Int
+
+pub let pnrp_cloud_state_alone : Int
+
+pub let pnrp_cloud_state_dead : Int
+
+pub let pnrp_cloud_state_disabled : Int
+
+pub let pnrp_cloud_state_no_net : Int
+
+pub let pnrp_cloud_state_synchronising : Int
+
+pub let pnrp_cloud_state_virtual : Int
+
+pub let pnrp_extended_payload_type_binary : Int
+
+pub let pnrp_extended_payload_type_none : Int
+
+pub let pnrp_extended_payload_type_string : Int
+
+pub let pnrp_global_scope : Int
+
+pub let pnrp_link_local_scope : Int
+
+pub let pnrp_max_endpoint_addresses : UInt
+
+pub let pnrp_max_extended_payload_bytes : UInt
+
+pub let pnrp_registered_id_state_ok : Int
+
+pub let pnrp_registered_id_state_problem : Int
+
+pub let pnrp_resolve_criteria_any_peer_name : Int
+
+pub let pnrp_resolve_criteria_default : Int
+
+pub let pnrp_resolve_criteria_nearest_non_current_process_peer_name : Int
+
+pub let pnrp_resolve_criteria_nearest_peer_name : Int
+
+pub let pnrp_resolve_criteria_nearest_remote_peer_name : Int
+
+pub let pnrp_resolve_criteria_non_current_process_peer_name : Int
+
+pub let pnrp_resolve_criteria_remote_peer_name : Int
+
+pub let pnrp_scope_any : Int
+
+pub let pnrp_site_local_scope : Int
+
+pub let pnrpinfo_hint : UInt
+
+pub let wsa_pnrp_client_invalid_compartment_id : UInt
+
+pub let wsa_pnrp_cloud_disabled : UInt
+
+pub let wsa_pnrp_cloud_is_dead : UInt
+
+pub let wsa_pnrp_cloud_is_search_only : UInt
+
+pub let wsa_pnrp_cloud_not_found : UInt
+
+pub let wsa_pnrp_duplicate_peer_name : UInt
+
+pub let wsa_pnrp_error_base : UInt
+
+pub let wsa_pnrp_invalid_identity : UInt
+
+pub let wsa_pnrp_too_much_load : UInt
+
+pub let wsz_scope_global : String
+
+pub let wsz_scope_linklocal : String
+
+pub let wsz_scope_sitelocal : String
+
+// Errors
+
+// Types and methods
+
+// Type aliases
+pub using @1dd8e340fde34c7a {type AnonymousEUnion_21dfe3f90432 as AnonymousEUnion_21dfe3f904}
+
+pub using @1dd8e340fde34c7a {type AnonymousEUnion_7ec7e02f0c82 as AnonymousEUnion_7ec7e02f0c}
+
+pub using @1dd8e340fde34c7a {type AnonymousEUnion_a6f94958b57b as AnonymousEUnion_a6f94958b5}
+
+pub using @1dd8e340fde34c7a {type AnonymousEUnion_abb5ce3ad87f as AnonymousEUnion_abb5ce3ad8}
+
+pub using @1dd8e340fde34c7a {type AnonymousEUnion_d79b13e7d99a as AnonymousEUnion_d79b13e7d9}
+
+pub using @1dd8e340fde34c7a {type BootstrapAddressesEStruct_a5bd079ab3a8 as BootstrapAddressesEStruct}
+
+pub using @1dd8e340fde34c7a {type DRTADDRESS_f05b9a81482a as DRTADDRESS}
+
+pub using @1dd8e340fde34c7a {type DRTADDRESSFLAGS_35b7a2c4144f as DRTADDRESSFLAGS}
+
+pub using @1dd8e340fde34c7a {type DRTADDRESSLIST_bf64dc792d6c as DRTADDRESSLIST}
+
+pub using @1dd8e340fde34c7a {type DRTBOOTSTRAPPROVIDER_4471fd161812 as DRTBOOTSTRAPPROVIDER}
+
+pub using @1dd8e340fde34c7a {type DRTBOOTSTRAPRESOLVECALLBACK_9cf250d3a785 as DRTBOOTSTRAPRESOLVECALLBACK}
+
+pub using @1dd8e340fde34c7a {type DRTDATA_afac3303568d as DRTDATA}
+
+pub using @1dd8e340fde34c7a {type DRTEVENTDATA_72bdd8a79f28 as DRTEVENTDATA}
+
+pub using @1dd8e340fde34c7a {type DRTEVENTTYPE_3bf698d6be43 as DRTEVENTTYPE}
+
+pub using @1dd8e340fde34c7a {type DRTLEAFSETKEYCHANGETYPE_0ef2b6673b20 as DRTLEAFSETKEYCHANGETYPE}
+
+pub using @1dd8e340fde34c7a {type DRTMATCHTYPE_5619f7e520b4 as DRTMATCHTYPE}
+
+pub using @1dd8e340fde34c7a {type DRTREGISTRATION_cca21db36613 as DRTREGISTRATION}
+
+pub using @1dd8e340fde34c7a {type DRTREGISTRATIONSTATE_a550c4fc8e9a as DRTREGISTRATIONSTATE}
+
+pub using @1dd8e340fde34c7a {type DRTSCOPE_9c617693ee86 as DRTSCOPE}
+
+pub using @1dd8e340fde34c7a {type DRTSEARCHINFO_9880ac4a1ce2 as DRTSEARCHINFO}
+
+pub using @1dd8e340fde34c7a {type DRTSEARCHRESULT_630836d74b97 as DRTSEARCHRESULT}
+
+pub using @1dd8e340fde34c7a {type DRTSECURITYMODE_fe01d2e425af as DRTSECURITYMODE}
+
+pub using @1dd8e340fde34c7a {type DRTSECURITYPROVIDER_0990b4df3b33 as DRTSECURITYPROVIDER}
+
+pub using @1dd8e340fde34c7a {type DRTSETTINGS_13113d12abb8 as DRTSETTINGS}
+
+pub using @1dd8e340fde34c7a {type DRTSTATUS_1c0f7fb7f0b0 as DRTSTATUS}
+
+pub using @1dd8e340fde34c7a {type LeafsetKeyChangeEStruct_001446f398ec as LeafsetKeyChangeEStruct}
+
+pub using @1dd8e340fde34c7a {type PEERADDRESS_923b256f5e23 as PEERADDRESS}
+
+pub using @1dd8e340fde34c7a {type PEERAPPLAUNCHINFO_3f6c725fe98e as PEERAPPLAUNCHINFO}
+
+pub using @1dd8e340fde34c7a {type PEERAPPLICATION_047eb3785d7e as PEERAPPLICATION}
+
+pub using @1dd8e340fde34c7a {type PEERAPPLICATIONREGISTRATIONINFO_659a31dcd08d as PEERAPPLICATIONREGISTRATIONINFO}
+
+pub using @1dd8e340fde34c7a {type PEERAPPLICATIONREGISTRATIONTYPE_d04d10a7915b as PEERAPPLICATIONREGISTRATIONTYPE}
+
+pub using @1dd8e340fde34c7a {type PEERCHANGETYPE_7b3e583dcfa1 as PEERCHANGETYPE}
+
+pub using @1dd8e340fde34c7a {type PEERCOLLABEVENTDATA_5788a029dd70 as PEERCOLLABEVENTDATA}
+
+pub using @1dd8e340fde34c7a {type PEERCOLLABEVENTREGISTRATION_f6442282623b as PEERCOLLABEVENTREGISTRATION}
+
+pub using @1dd8e340fde34c7a {type PEERCOLLABEVENTTYPE_eafde29a57ef as PEERCOLLABEVENTTYPE}
+
+pub using @1dd8e340fde34c7a {type PEERCONNECTIONFLAGS_154d4b0a6ec8 as PEERCONNECTIONFLAGS}
+
+pub using @1dd8e340fde34c7a {type PEERCONNECTIONINFO_30100f7a9d44 as PEERCONNECTIONINFO}
+
+pub using @1dd8e340fde34c7a {type PEERCONNECTIONSTATUS_7b946e01ad2e as PEERCONNECTIONSTATUS}
+
+pub using @1dd8e340fde34c7a {type PEERCONTACT_efb36a08299f as PEERCONTACT}
+
+pub using @1dd8e340fde34c7a {type PEERCREDENTIALINFO_9144ab63124f as PEERCREDENTIALINFO}
+
+pub using @1dd8e340fde34c7a {type PEERDATA_a7e9236c5c7d as PEERDATA}
+
+pub using @1dd8e340fde34c7a {type PEERDISTCLIENTBASICINFO_499df288a680 as PEERDISTCLIENTBASICINFO}
+
+pub using @1dd8e340fde34c7a {type PEERDISTCLIENTINFOBYHANDLECLASS_f5a2455383e9 as PEERDISTCLIENTINFOBYHANDLECLASS}
+
+pub using @1dd8e340fde34c7a {type PEERDISTCONTENTTAG_3d74ef981cc0 as PEERDISTCONTENTTAG}
+
+pub using @1dd8e340fde34c7a {type PEERDISTPUBLICATIONOPTIONS_e6a9d216b879 as PEERDISTPUBLICATIONOPTIONS}
+
+pub using @1dd8e340fde34c7a {type PEERDISTRETRIEVALOPTIONS_4ed6b6147b47 as PEERDISTRETRIEVALOPTIONS}
+
+pub using @1dd8e340fde34c7a {type PEERDISTRETRIEVALOPTIONSCONTENTINFOVERSIONVALUE_aa34e6d81dc8 as PEERDISTRETRIEVALOPTIONSCONTENTINFOVERSIONVALUE}
+
+pub using @1dd8e340fde34c7a {type PEERDISTSTATUS_20c793e76084 as PEERDISTSTATUS}
+
+pub using @1dd8e340fde34c7a {type PEERDISTSTATUSINFO_dd443f065dfd as PEERDISTSTATUSINFO}
+
+pub using @1dd8e340fde34c7a {type PEERENDPOINT_3a8174b99757 as PEERENDPOINT}
+
+pub using @1dd8e340fde34c7a {type PEEREVENTAPPLICATIONCHANGEDDATA_037651e67568 as PEEREVENTAPPLICATIONCHANGEDDATA}
+
+pub using @1dd8e340fde34c7a {type PEEREVENTCONNECTIONCHANGEDATA_8f3535227e2f as PEEREVENTCONNECTIONCHANGEDATA}
+
+pub using @1dd8e340fde34c7a {type PEEREVENTENDPOINTCHANGEDDATA_b5ac0fe8b6f0 as PEEREVENTENDPOINTCHANGEDDATA}
+
+pub using @1dd8e340fde34c7a {type PEEREVENTINCOMINGDATA_6b565877ac26 as PEEREVENTINCOMINGDATA}
+
+pub using @1dd8e340fde34c7a {type PEEREVENTMEMBERCHANGEDATA_9172f32d651d as PEEREVENTMEMBERCHANGEDATA}
+
+pub using @1dd8e340fde34c7a {type PEEREVENTNODECHANGEDATA_2387c34929e7 as PEEREVENTNODECHANGEDATA}
+
+pub using @1dd8e340fde34c7a {type PEEREVENTOBJECTCHANGEDDATA_60b1da04bc21 as PEEREVENTOBJECTCHANGEDDATA}
+
+pub using @1dd8e340fde34c7a {type PEEREVENTPEOPLENEARMECHANGEDDATA_1404322b2931 as PEEREVENTPEOPLENEARMECHANGEDDATA}
+
+pub using @1dd8e340fde34c7a {type PEEREVENTPRESENCECHANGEDDATA_2b85ecf53c9a as PEEREVENTPRESENCECHANGEDDATA}
+
+pub using @1dd8e340fde34c7a {type PEEREVENTRECORDCHANGEDATA_3fe1f52bf386 as PEEREVENTRECORDCHANGEDATA}
+
+pub using @1dd8e340fde34c7a {type PEEREVENTREQUESTSTATUSCHANGEDDATA_167920848743 as PEEREVENTREQUESTSTATUSCHANGEDDATA}
+
+pub using @1dd8e340fde34c7a {type PEEREVENTSYNCHRONIZEDDATA_d025317fb38e as PEEREVENTSYNCHRONIZEDDATA}
+
+pub using @1dd8e340fde34c7a {type PEEREVENTWATCHLISTCHANGEDDATA_4a2fe663382f as PEEREVENTWATCHLISTCHANGEDDATA}
+
+pub using @1dd8e340fde34c7a {type PEERGRAPHEVENTDATA_230754c7e881 as PEERGRAPHEVENTDATA}
+
+pub using @1dd8e340fde34c7a {type PEERGRAPHEVENTREGISTRATION_d676ec8f9b3e as PEERGRAPHEVENTREGISTRATION}
+
+pub using @1dd8e340fde34c7a {type PEERGRAPHEVENTTYPE_65810765c806 as PEERGRAPHEVENTTYPE}
+
+pub using @1dd8e340fde34c7a {type PEERGRAPHPROPERTIES_380d1a4e7d10 as PEERGRAPHPROPERTIES}
+
+pub using @1dd8e340fde34c7a {type PEERGRAPHPROPERTYFLAGS_dc95269e8997 as PEERGRAPHPROPERTYFLAGS}
+
+pub using @1dd8e340fde34c7a {type PEERGRAPHSCOPE_861526dfddcb as PEERGRAPHSCOPE}
+
+pub using @1dd8e340fde34c7a {type PEERGRAPHSTATUSFLAGS_f1b919f21b04 as PEERGRAPHSTATUSFLAGS}
+
+pub using @1dd8e340fde34c7a {type PEERGROUPAUTHENTICATIONSCHEME_8a902e9150cc as PEERGROUPAUTHENTICATIONSCHEME}
+
+pub using @1dd8e340fde34c7a {type PEERGROUPEVENTDATA_0a1cbc9d9d5b as PEERGROUPEVENTDATA}
+
+pub using @1dd8e340fde34c7a {type PEERGROUPEVENTREGISTRATION_a1d6d5a63321 as PEERGROUPEVENTREGISTRATION}
+
+pub using @1dd8e340fde34c7a {type PEERGROUPEVENTTYPE_776eda56d92b as PEERGROUPEVENTTYPE}
+
+pub using @1dd8e340fde34c7a {type PEERGROUPISSUECREDENTIALFLAGS_6c503d3ef518 as PEERGROUPISSUECREDENTIALFLAGS}
+
+pub using @1dd8e340fde34c7a {type PEERGROUPPROPERTIES_e78567818247 as PEERGROUPPROPERTIES}
+
+pub using @1dd8e340fde34c7a {type PEERGROUPPROPERTYFLAGS_6807d992be71 as PEERGROUPPROPERTYFLAGS}
+
+pub using @1dd8e340fde34c7a {type PEERGROUPSTATUS_61e7afc2449a as PEERGROUPSTATUS}
+
+pub using @1dd8e340fde34c7a {type PEERINVITATION_dcc12c743692 as PEERINVITATION}
+
+pub using @1dd8e340fde34c7a {type PEERINVITATIONINFO_327f32e39ae5 as PEERINVITATIONINFO}
+
+pub using @1dd8e340fde34c7a {type PEERINVITATIONRESPONSE_23954fc63a0a as PEERINVITATIONRESPONSE}
+
+pub using @1dd8e340fde34c7a {type PEERINVITATIONRESPONSETYPE_ad8738c360f1 as PEERINVITATIONRESPONSETYPE}
+
+pub using @1dd8e340fde34c7a {type PEERMEMBER_a13b3fd0057d as PEERMEMBER}
+
+pub using @1dd8e340fde34c7a {type PEERMEMBERCHANGETYPE_9a85076a4621 as PEERMEMBERCHANGETYPE}
+
+pub using @1dd8e340fde34c7a {type PEERMEMBERFLAGS_5ef13b1f8e01 as PEERMEMBERFLAGS}
+
+pub using @1dd8e340fde34c7a {type PEERNAMEPAIR_891a533b0cbc as PEERNAMEPAIR}
+
+pub using @1dd8e340fde34c7a {type PEERNODECHANGETYPE_c52a2bfcbcd0 as PEERNODECHANGETYPE}
+
+pub using @1dd8e340fde34c7a {type PEERNODEINFO_5b3886c1addb as PEERNODEINFO}
+
+pub using @1dd8e340fde34c7a {type PEEROBJECT_c7a00cc25b61 as PEEROBJECT}
+
+pub using @1dd8e340fde34c7a {type PEERPEOPLENEARME_18804a517cc2 as PEERPEOPLENEARME}
+
+pub using @1dd8e340fde34c7a {type PEERPNRPCLOUDINFO_1bdf8456e156 as PEERPNRPCLOUDINFO}
+
+pub using @1dd8e340fde34c7a {type PEERPNRPENDPOINTINFO_cc7572f172a3 as PEERPNRPENDPOINTINFO}
+
+pub using @1dd8e340fde34c7a {type PEERPNRPREGISTRATIONINFO_3ef6c2dd3479 as PEERPNRPREGISTRATIONINFO}
+
+pub using @1dd8e340fde34c7a {type PEERPRESENCEINFO_47bcdbcc6d96 as PEERPRESENCEINFO}
+
+pub using @1dd8e340fde34c7a {type PEERPRESENCESTATUS_b43610bd2b4c as PEERPRESENCESTATUS}
+
+pub using @1dd8e340fde34c7a {type PEERPUBLICATIONSCOPE_9e5687eec097 as PEERPUBLICATIONSCOPE}
+
+pub using @1dd8e340fde34c7a {type PEERRECORD_21c2a7262dcc as PEERRECORD}
+
+pub using @1dd8e340fde34c7a {type PEERRECORDCHANGETYPE_2ec53943cf71 as PEERRECORDCHANGETYPE}
+
+pub using @1dd8e340fde34c7a {type PEERRECORDFLAGS_eacc1520d641 as PEERRECORDFLAGS}
+
+pub using @1dd8e340fde34c7a {type PEERSECURITYINTERFACE_3255bca47a12 as PEERSECURITYINTERFACE}
+
+pub using @1dd8e340fde34c7a {type PEERSIGNINFLAGS_ff31130644fe as PEERSIGNINFLAGS}
+
+pub using @1dd8e340fde34c7a {type PEERVERSIONDATA_01cc5756d04c as PEERVERSIONDATA}
+
+pub using @1dd8e340fde34c7a {type PEERWATCHPERMISSION_1da3e59b6cfd as PEERWATCHPERMISSION}
+
+pub using @1dd8e340fde34c7a {type PFNPEERFREESECURITYDATA_5184e3a5e120 as PFNPEERFREESECURITYDATA}
+
+pub using @1dd8e340fde34c7a {type PFNPEERONPASSWORDAUTHFAILED_ce2b3b891f9d as PFNPEERONPASSWORDAUTHFAILED}
+
+pub using @1dd8e340fde34c7a {type PFNPEERSECURERECORD_7e28d14840ed as PFNPEERSECURERECORD}
+
+pub using @1dd8e340fde34c7a {type PFNPEERVALIDATERECORD_b54b81d7c98b as PFNPEERVALIDATERECORD}
+
+pub using @1dd8e340fde34c7a {type PNRPCLOUDFLAGS_8bf0a959e991 as PNRPCLOUDFLAGS}
+
+pub using @1dd8e340fde34c7a {type PNRPCLOUDID_df76bb296409 as PNRPCLOUDID}
+
+pub using @1dd8e340fde34c7a {type PNRPCLOUDINFO_c32366197e90 as PNRPCLOUDINFO}
+
+pub using @1dd8e340fde34c7a {type PNRPCLOUDSTATE_ab34492323cf as PNRPCLOUDSTATE}
+
+pub using @1dd8e340fde34c7a {type PNRPEXTENDEDPAYLOADTYPE_ec08c5d3741c as PNRPEXTENDEDPAYLOADTYPE}
+
+pub using @1dd8e340fde34c7a {type PNRPINFOV1_3c0ec0446b67 as PNRPINFOV1}
+
+pub using @1dd8e340fde34c7a {type PNRPINFOV2_0127b0d40ef4 as PNRPINFOV2}
+
+pub using @1dd8e340fde34c7a {type PNRPREGISTEREDIDSTATE_6fdba2be62cb as PNRPREGISTEREDIDSTATE}
+
+pub using @1dd8e340fde34c7a {type PNRPRESOLVECRITERIA_6c12a00cefee as PNRPRESOLVECRITERIA}
+
+pub using @1dd8e340fde34c7a {type PNRPSCOPE_ed8856cdb8e9 as PNRPSCOPE}
+
+pub using @1dd8e340fde34c7a {type RegistrationStateChangeEStruct_78efd7f4a18a as RegistrationStateChangeEStruct}
+
+pub using @1dd8e340fde34c7a {type StatusChangeEStruct_8771ca5c8471 as StatusChangeEStruct}
+
+// Traits
+

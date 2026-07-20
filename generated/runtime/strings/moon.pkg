@@ -1,0 +1,12 @@
+import {
+  "moonbit-community/win32-bindings/runtime/core",
+  "moonbitlang/core/encoding/utf8",
+  "moonbitlang/core/encoding/utf16",
+}
+
+supported_targets = "native"
+
+options(
+  "native-stub": [ "runtime_strings.c" ],
+  targets: { "ffi.mbt": [ "native" ] },
+)

@@ -1,0 +1,262 @@
+// Generated using `moon info`, DON'T EDIT IT
+package "moonbit-community/win32-bindings/windows/win32/graphics/dx_core"
+
+import {
+  "moonbit-community/win32-bindings/runtime/core",
+  "moonbit-community/win32-bindings/scc/f347cc1fbefd597c",
+}
+
+// Values
+pub let acg_compatible : UInt
+
+pub let adapter_budget_change : UInt
+
+pub let adapter_engine_count : UInt
+
+pub let adapter_engine_frequency_hertz : UInt
+
+pub let adapter_engine_name : UInt
+
+pub let adapter_engine_running_time_by_process_microseconds : UInt
+
+pub let adapter_engine_running_time_microseconds : UInt
+
+pub let adapter_hardware_content_protection_teardown : UInt
+
+pub let adapter_in_use_process_count : UInt
+
+pub let adapter_in_use_process_set : UInt
+
+pub let adapter_list_stale : UInt
+
+pub let adapter_memory_budget : UInt
+
+pub let adapter_memory_frequency_hertz : UInt
+
+pub let adapter_memory_usage_by_process_bytes : UInt
+
+pub let adapter_memory_usage_bytes : UInt
+
+pub let adapter_no_longer_valid : UInt
+
+pub let adapter_temperature_celsius : UInt
+
+pub let compute : UInt
+
+pub let compute_accelerator : UInt
+
+pub let compute_preemption_granularity : UInt
+
+pub fn create_adapter_list(@core.RawAddress, UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn create_adapter_list_by_workload(@core.RawAddress, UInt, UInt, UInt, @core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn create_adapter_list_by_workload_raw(@core.RawAddress, UInt, UInt, UInt, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn create_adapter_list_raw(@core.RawAddress, UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub let d3_d11 : UInt
+
+pub let d3_d12 : UInt
+
+pub let dedicated : UInt
+
+pub let dedicated_adapter_memory : UInt
+
+pub let dedicated_system_memory : UInt
+
+pub let driver_description : UInt
+
+pub let driver_version : UInt
+
+pub fn dx_core_create_adapter_factory(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn dx_core_create_adapter_factory_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub let facdxcore : UInt
+
+pub fn get_adapter(@core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn get_adapter_by_luid(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn get_adapter_by_luid_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn get_adapter_count_raw(@core.RawAddress) -> UInt
+
+pub fn get_adapter_raw(@core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn get_factory_30c6aacd29(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn get_factory_30c6aacd29_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn get_factory_ecb2d38f60(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn get_factory_ecb2d38f60_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn get_property(@core.RawAddress, UInt, UInt64, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn get_property_raw(@core.RawAddress, UInt, UInt64, @core.RawAddress) -> Int
+
+pub fn get_property_size(@core.RawAddress, UInt, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn get_property_size_raw(@core.RawAddress, UInt, @core.RawAddress) -> Int
+
+pub fn get_property_with_input(@core.RawAddress, UInt, UInt64, @core.RawAddress, UInt64, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn get_property_with_input_raw(@core.RawAddress, UInt, UInt64, @core.RawAddress, UInt64, @core.RawAddress) -> Int
+
+pub let gpu : UInt
+
+pub let graphics : UInt
+
+pub let graphics_preemption_granularity : UInt
+
+pub let hardware : UInt
+
+pub let hardware_id : UInt
+
+pub let hardware_id_parts : UInt
+
+pub let high_performance : UInt
+
+pub let instance_luid : UInt
+
+pub fn is_adapter_preference_supported_raw(@core.RawAddress, UInt) -> Int
+
+pub fn is_attribute_supported_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub let is_detachable : UInt
+
+pub let is_driver_update_in_progress : UInt
+
+pub let is_hardware : UInt
+
+pub let is_integrated : UInt
+
+pub fn is_notification_type_supported_raw(@core.RawAddress, UInt) -> Int
+
+pub fn is_property_supported_raw(@core.RawAddress, UInt) -> Int
+
+pub fn is_query_state_supported_raw(@core.RawAddress, UInt) -> Int
+
+pub fn is_set_state_supported_raw(@core.RawAddress, UInt) -> Int
+
+pub fn is_stale_raw(@core.RawAddress) -> Int
+
+pub fn is_valid_raw(@core.RawAddress) -> Int
+
+pub let kmd_model_version : UInt
+
+pub let local_ : UInt
+
+pub let machine_learning : UInt
+
+pub let media : UInt
+
+pub let media_accelerator : UInt
+
+pub let minimum_power : UInt
+
+pub let non_local : UInt
+
+pub let none_4ece497564 : UInt
+
+pub let none_e3c9f7cc45 : UInt
+
+pub let npu : UInt
+
+pub let physical_adapter_count : UInt
+
+pub fn query_state(@core.RawAddress, UInt, UInt64, @core.RawAddress, UInt64, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn query_state_raw(@core.RawAddress, UInt, UInt64, @core.RawAddress, UInt64, @core.RawAddress) -> Int
+
+pub fn register_event_notification(@core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn register_event_notification_raw(@core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn set_state(@core.RawAddress, UInt, UInt64, @core.RawAddress, UInt64, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn set_state_raw(@core.RawAddress, UInt, UInt64, @core.RawAddress, UInt64, @core.RawAddress) -> Int
+
+pub let shared : UInt
+
+pub let shared_system_memory : UInt
+
+pub fn sort(@core.RawAddress, UInt, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn sort_raw(@core.RawAddress, UInt, @core.RawAddress) -> Int
+
+pub fn unregister_event_notification(@core.RawAddress, UInt) -> Unit raise @core.WindowsError
+
+pub fn unregister_event_notification_raw(@core.RawAddress, UInt) -> Int
+
+// Errors
+
+// Types and methods
+
+// Type aliases
+pub using @f347cc1fbefd597c {type DXCoreAdapterEngineIndex_575b6caf8cbc as DXCoreAdapterEngineIndex}
+
+pub using @f347cc1fbefd597c {type DXCoreAdapterMemoryBudget_3c2778061a74 as DXCoreAdapterMemoryBudget}
+
+pub using @f347cc1fbefd597c {type DXCoreAdapterMemoryBudgetNodeSegmentGroup_37d69d166878 as DXCoreAdapterMemoryBudgetNodeSegmentGroup}
+
+pub using @f347cc1fbefd597c {type DXCoreAdapterPreference_51481992fd55 as DXCoreAdapterPreference}
+
+pub using @f347cc1fbefd597c {type DXCoreAdapterProcessSetQueryInput_4aca345b0c34 as DXCoreAdapterProcessSetQueryInput}
+
+pub using @f347cc1fbefd597c {type DXCoreAdapterProcessSetQueryOutput_827ff4c7ad6c as DXCoreAdapterProcessSetQueryOutput}
+
+pub using @f347cc1fbefd597c {type DXCoreAdapterProperty_d9e5435b8437 as DXCoreAdapterProperty}
+
+pub using @f347cc1fbefd597c {type DXCoreAdapterState_a864015295ad as DXCoreAdapterState}
+
+pub using @f347cc1fbefd597c {type DXCoreEngineNamePropertyInput_467430051313 as DXCoreEngineNamePropertyInput}
+
+pub using @f347cc1fbefd597c {type DXCoreEngineNamePropertyOutput_6e2daf69e990 as DXCoreEngineNamePropertyOutput}
+
+pub using @f347cc1fbefd597c {type DXCoreEngineQueryInput_527507915ded as DXCoreEngineQueryInput}
+
+pub using @f347cc1fbefd597c {type DXCoreEngineQueryOutput_3350989d1858 as DXCoreEngineQueryOutput}
+
+pub using @f347cc1fbefd597c {type DXCoreFrequencyQueryOutput_4ffc9cabba26 as DXCoreFrequencyQueryOutput}
+
+pub using @f347cc1fbefd597c {type DXCoreHardwareID_113cbe4e58e4 as DXCoreHardwareID}
+
+pub using @f347cc1fbefd597c {type DXCoreHardwareIDParts_1b8085e4d350 as DXCoreHardwareIDParts}
+
+pub using @f347cc1fbefd597c {type DXCoreHardwareTypeFilterFlags_e42aeb0eb5ad as DXCoreHardwareTypeFilterFlags}
+
+pub using @f347cc1fbefd597c {type DXCoreMemoryQueryInput_9e742a2a2788 as DXCoreMemoryQueryInput}
+
+pub using @f347cc1fbefd597c {type DXCoreMemoryType_6989872a120d as DXCoreMemoryType}
+
+pub using @f347cc1fbefd597c {type DXCoreMemoryUsage_6f56e6444144 as DXCoreMemoryUsage}
+
+pub using @f347cc1fbefd597c {type DXCoreNotificationType_8bc98d6d4901 as DXCoreNotificationType}
+
+pub using @f347cc1fbefd597c {type DXCoreProcessMemoryQueryInput_9b7ccd459281 as DXCoreProcessMemoryQueryInput}
+
+pub using @f347cc1fbefd597c {type DXCoreProcessMemoryQueryOutput_1b7f1faf0c8b as DXCoreProcessMemoryQueryOutput}
+
+pub using @f347cc1fbefd597c {type DXCoreRuntimeFilterFlags_ed221532b226 as DXCoreRuntimeFilterFlags}
+
+pub using @f347cc1fbefd597c {type DXCoreSegmentGroup_a092295ddc57 as DXCoreSegmentGroup}
+
+pub using @f347cc1fbefd597c {type DXCoreWorkload_ba4bfe78f024 as DXCoreWorkload}
+
+pub using @f347cc1fbefd597c {type IDXCoreAdapter_9895773f6aa9 as IDXCoreAdapter}
+
+pub using @f347cc1fbefd597c {type IDXCoreAdapter1_8fb1c3a37a20 as IDXCoreAdapter1}
+
+pub using @f347cc1fbefd597c {type IDXCoreAdapterFactory_b4a9353324f8 as IDXCoreAdapterFactory}
+
+pub using @f347cc1fbefd597c {type IDXCoreAdapterFactory1_7dd3f58536e5 as IDXCoreAdapterFactory1}
+
+pub using @f347cc1fbefd597c {type IDXCoreAdapterList_c1399675ab80 as IDXCoreAdapterList}
+
+pub using @f347cc1fbefd597c {type PFNDXCORENOTIFICATIONCALLBACK_9e6da206640f as PFNDXCORENOTIFICATIONCALLBACK}
+
+// Traits
+

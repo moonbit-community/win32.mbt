@@ -1,0 +1,14 @@
+import {
+  "moonbit-community/win32-bindings/runtime/com",
+  "moonbit-community/win32-bindings/runtime/core",
+  "moonbit-community/win32-bindings/runtime/strings",
+  "moonbitlang/core/encoding/utf8",
+  "moonbitlang/x/crypto",
+}
+
+supported_targets = "native"
+
+options(
+  "native-stub": [ "runtime_winrt.c" ],
+  targets: { "ffi.mbt": [ "native" ] },
+)

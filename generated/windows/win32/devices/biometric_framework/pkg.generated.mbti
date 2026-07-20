@@ -1,0 +1,1074 @@
+// Generated using `moon info`, DON'T EDIT IT
+package "moonbit-community/win32-bindings/windows/win32/devices/biometric_framework"
+
+import {
+  "moonbit-community/win32-bindings/runtime/core",
+  "moonbit-community/win32-bindings/scc/c98daf7570978765",
+}
+
+// Values
+pub let facility_none : UInt
+
+pub let facility_winbio : UInt
+
+pub let ioctl_biometric_vendor : UInt
+
+pub fn win_bio_acquire_focus() -> Unit raise @core.WindowsError
+
+pub fn win_bio_acquire_focus_raw() -> Int
+
+pub fn win_bio_async_enum_biometric_units(UInt, UInt) -> Unit raise @core.WindowsError
+
+pub fn win_bio_async_enum_biometric_units_raw(UInt, UInt) -> Int
+
+pub fn win_bio_async_enum_databases(UInt, UInt) -> Unit raise @core.WindowsError
+
+pub fn win_bio_async_enum_databases_raw(UInt, UInt) -> Int
+
+pub fn win_bio_async_enum_service_providers(UInt, UInt) -> Unit raise @core.WindowsError
+
+pub fn win_bio_async_enum_service_providers_raw(UInt, UInt) -> Int
+
+pub fn win_bio_async_monitor_framework_changes(UInt, UInt) -> Unit raise @core.WindowsError
+
+pub fn win_bio_async_monitor_framework_changes_raw(UInt, UInt) -> Int
+
+pub fn win_bio_async_open_framework(Int, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress, Int, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn win_bio_async_open_framework_raw(Int, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress, Int, @core.RawAddress) -> Int
+
+pub fn win_bio_async_open_session(UInt, UInt, UInt, @core.RawAddress, UInt64, @core.RawAddress, Int, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress, Int, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn win_bio_async_open_session_raw(UInt, UInt, UInt, @core.RawAddress, UInt64, @core.RawAddress, Int, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress, Int, @core.RawAddress) -> Int
+
+pub fn win_bio_cancel(UInt) -> Unit raise @core.WindowsError
+
+pub fn win_bio_cancel_raw(UInt) -> Int
+
+pub fn win_bio_capture_sample(UInt, UInt, UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn win_bio_capture_sample_raw(UInt, UInt, UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn win_bio_capture_sample_with_callback(UInt, UInt, UInt, @core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn win_bio_capture_sample_with_callback_raw(UInt, UInt, UInt, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn win_bio_close_framework(UInt) -> Unit raise @core.WindowsError
+
+pub fn win_bio_close_framework_raw(UInt) -> Int
+
+pub fn win_bio_close_session(UInt) -> Unit raise @core.WindowsError
+
+pub fn win_bio_close_session_raw(UInt) -> Int
+
+pub fn win_bio_control_unit(UInt, UInt, UInt, UInt, @core.RawAddress, UInt64, @core.RawAddress, UInt64, @core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn win_bio_control_unit_privileged(UInt, UInt, UInt, UInt, @core.RawAddress, UInt64, @core.RawAddress, UInt64, @core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn win_bio_control_unit_privileged_raw(UInt, UInt, UInt, UInt, @core.RawAddress, UInt64, @core.RawAddress, UInt64, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn win_bio_control_unit_raw(UInt, UInt, UInt, UInt, @core.RawAddress, UInt64, @core.RawAddress, UInt64, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn win_bio_delete_template(UInt, UInt, @core.RawAddress, UInt) -> Unit raise @core.WindowsError
+
+pub fn win_bio_delete_template_raw(UInt, UInt, @core.RawAddress, UInt) -> Int
+
+pub fn win_bio_enroll_begin(UInt, UInt, UInt) -> Unit raise @core.WindowsError
+
+pub fn win_bio_enroll_begin_raw(UInt, UInt, UInt) -> Int
+
+pub fn win_bio_enroll_capture(UInt, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn win_bio_enroll_capture_raw(UInt, @core.RawAddress) -> Int
+
+pub fn win_bio_enroll_capture_with_callback(UInt, @core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn win_bio_enroll_capture_with_callback_raw(UInt, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn win_bio_enroll_commit(UInt, @core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn win_bio_enroll_commit_raw(UInt, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn win_bio_enroll_discard(UInt) -> Unit raise @core.WindowsError
+
+pub fn win_bio_enroll_discard_raw(UInt) -> Int
+
+pub fn win_bio_enroll_select(UInt, UInt64) -> Unit raise @core.WindowsError
+
+pub fn win_bio_enroll_select_raw(UInt, UInt64) -> Int
+
+pub fn win_bio_enum_biometric_units(UInt, @core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn win_bio_enum_biometric_units_raw(UInt, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn win_bio_enum_databases(UInt, @core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn win_bio_enum_databases_raw(UInt, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn win_bio_enum_enrollments(UInt, UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn win_bio_enum_enrollments_raw(UInt, UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn win_bio_enum_service_providers(UInt, @core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn win_bio_enum_service_providers_raw(UInt, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn win_bio_free(@core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn win_bio_free_raw(@core.RawAddress) -> Int
+
+pub fn win_bio_get_credential_state(Bytes, Int, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn win_bio_get_credential_state_raw(Bytes, Int, @core.RawAddress) -> Int
+
+pub fn win_bio_get_domain_logon_setting_raw(@core.RawAddress, @core.RawAddress) -> Unit
+
+pub fn win_bio_get_enabled_setting_raw(@core.RawAddress, @core.RawAddress) -> Unit
+
+pub fn win_bio_get_enrolled_factors(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn win_bio_get_enrolled_factors_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn win_bio_get_logon_setting_raw(@core.RawAddress, @core.RawAddress) -> Unit
+
+pub fn win_bio_get_property(UInt, UInt, UInt, UInt, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn win_bio_get_property_raw(UInt, UInt, UInt, UInt, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn win_bio_identify(UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn win_bio_identify_raw(UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn win_bio_identify_with_callback(UInt, @core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn win_bio_identify_with_callback_raw(UInt, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn win_bio_improve_begin(UInt, UInt) -> Unit raise @core.WindowsError
+
+pub fn win_bio_improve_begin_raw(UInt, UInt) -> Int
+
+pub fn win_bio_improve_end(UInt) -> Unit raise @core.WindowsError
+
+pub fn win_bio_improve_end_raw(UInt) -> Int
+
+pub fn win_bio_is_ess_capable(@core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn win_bio_is_ess_capable_raw(@core.RawAddress) -> Int
+
+pub fn win_bio_locate_sensor(UInt, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn win_bio_locate_sensor_raw(UInt, @core.RawAddress) -> Int
+
+pub fn win_bio_locate_sensor_with_callback(UInt, @core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn win_bio_locate_sensor_with_callback_raw(UInt, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn win_bio_lock_unit(UInt, UInt) -> Unit raise @core.WindowsError
+
+pub fn win_bio_lock_unit_raw(UInt, UInt) -> Int
+
+pub fn win_bio_logon_identified_user(UInt) -> Unit raise @core.WindowsError
+
+pub fn win_bio_logon_identified_user_raw(UInt) -> Int
+
+pub fn win_bio_monitor_presence(UInt, UInt) -> Unit raise @core.WindowsError
+
+pub fn win_bio_monitor_presence_raw(UInt, UInt) -> Int
+
+pub fn win_bio_open_session(UInt, UInt, UInt, @core.RawAddress, UInt64, @core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn win_bio_open_session_raw(UInt, UInt, UInt, @core.RawAddress, UInt64, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn win_bio_register_event_monitor(UInt, UInt, @core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn win_bio_register_event_monitor_raw(UInt, UInt, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn win_bio_release_focus() -> Unit raise @core.WindowsError
+
+pub fn win_bio_release_focus_raw() -> Int
+
+pub fn win_bio_remove_all_credentials() -> Unit raise @core.WindowsError
+
+pub fn win_bio_remove_all_credentials_raw() -> Int
+
+pub fn win_bio_remove_all_domain_credentials() -> Unit raise @core.WindowsError
+
+pub fn win_bio_remove_all_domain_credentials_raw() -> Int
+
+pub fn win_bio_remove_credential(Bytes, Int) -> Unit raise @core.WindowsError
+
+pub fn win_bio_remove_credential_raw(Bytes, Int) -> Int
+
+pub fn win_bio_set_credential(Int, @core.RawAddress, UInt64, Int) -> Unit raise @core.WindowsError
+
+pub fn win_bio_set_credential_raw(Int, @core.RawAddress, UInt64, Int) -> Int
+
+pub fn win_bio_set_property(UInt, UInt, UInt, UInt, @core.RawAddress, UInt, @core.RawAddress, UInt64) -> Unit raise @core.WindowsError
+
+pub fn win_bio_set_property_raw(UInt, UInt, UInt, UInt, @core.RawAddress, UInt, @core.RawAddress, UInt64) -> Int
+
+pub fn win_bio_unlock_unit(UInt, UInt) -> Unit raise @core.WindowsError
+
+pub fn win_bio_unlock_unit_raw(UInt, UInt) -> Int
+
+pub fn win_bio_unregister_event_monitor(UInt) -> Unit raise @core.WindowsError
+
+pub fn win_bio_unregister_event_monitor_raw(UInt) -> Int
+
+pub fn win_bio_verify(UInt, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn win_bio_verify_raw(UInt, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn win_bio_verify_with_callback(UInt, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn win_bio_verify_with_callback_raw(UInt, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn win_bio_wait(UInt) -> Unit raise @core.WindowsError
+
+pub fn win_bio_wait_raw(UInt) -> Int
+
+pub let winbio_ansi_381_img_bit_packed : UInt
+
+pub let winbio_ansi_381_img_compressed_jpeg : UInt
+
+pub let winbio_ansi_381_img_compressed_jpeg2000 : UInt
+
+pub let winbio_ansi_381_img_compressed_png : UInt
+
+pub let winbio_ansi_381_img_compressed_wsq : UInt
+
+pub let winbio_ansi_381_img_uncompressed : UInt
+
+pub let winbio_ansi_381_imp_type_latent : UInt
+
+pub let winbio_ansi_381_imp_type_live_scan_contactless : UInt
+
+pub let winbio_ansi_381_imp_type_live_scan_plain : UInt
+
+pub let winbio_ansi_381_imp_type_live_scan_rolled : UInt
+
+pub let winbio_ansi_381_imp_type_nonlive_scan_plain : UInt
+
+pub let winbio_ansi_381_imp_type_nonlive_scan_rolled : UInt
+
+pub let winbio_ansi_381_imp_type_swipe : UInt
+
+pub let winbio_ansi_381_pixels_per_cm : UInt
+
+pub let winbio_ansi_381_pixels_per_inch : UInt
+
+pub let winbio_anti_spoof_disable : Int
+
+pub let winbio_anti_spoof_enable : Int
+
+pub let winbio_anti_spoof_remove : Int
+
+pub let winbio_async_notify_callback : Int
+
+pub let winbio_async_notify_maximum_value : Int
+
+pub let winbio_async_notify_message : Int
+
+pub let winbio_async_notify_none : Int
+
+pub let winbio_bir_algin_size : UInt
+
+pub let winbio_bir_align_size : UInt
+
+pub let winbio_component_engine : UInt
+
+pub let winbio_component_sensor : UInt
+
+pub let winbio_component_storage : UInt
+
+pub let winbio_credential_all : Int
+
+pub let winbio_credential_not_set : Int
+
+pub let winbio_credential_password : Int
+
+pub let winbio_credential_set : Int
+
+pub let winbio_data_flag_integrity : UInt
+
+pub let winbio_data_flag_intermediate : UInt
+
+pub let winbio_data_flag_option_mask_present : UInt
+
+pub let winbio_data_flag_privacy : UInt
+
+pub let winbio_data_flag_processed : UInt
+
+pub let winbio_data_flag_raw : UInt
+
+pub let winbio_data_flag_signed : UInt
+
+pub let winbio_e_adapter_integrity_failure : Int
+
+pub let winbio_e_auto_logon_disabled : Int
+
+pub let winbio_e_bad_capture : Int
+
+pub let winbio_e_calibration_buffer_invalid : Int
+
+pub let winbio_e_calibration_buffer_too_large : Int
+
+pub let winbio_e_calibration_buffer_too_small : Int
+
+pub let winbio_e_canceled : Int
+
+pub let winbio_e_capture_aborted : Int
+
+pub let winbio_e_configuration_failure : Int
+
+pub let winbio_e_cred_prov_disabled : Int
+
+pub let winbio_e_cred_prov_no_credential : Int
+
+pub let winbio_e_cred_prov_security_lockout : Int
+
+pub let winbio_e_data_collection_in_progress : Int
+
+pub let winbio_e_data_protection_failure : Int
+
+pub let winbio_e_database_already_exists : Int
+
+pub let winbio_e_database_bad_index_vector : Int
+
+pub let winbio_e_database_cant_close : Int
+
+pub let winbio_e_database_cant_create : Int
+
+pub let winbio_e_database_cant_erase : Int
+
+pub let winbio_e_database_cant_find : Int
+
+pub let winbio_e_database_cant_open : Int
+
+pub let winbio_e_database_corrupted : Int
+
+pub let winbio_e_database_eof : Int
+
+pub let winbio_e_database_full : Int
+
+pub let winbio_e_database_locked : Int
+
+pub let winbio_e_database_no_more_records : Int
+
+pub let winbio_e_database_no_results : Int
+
+pub let winbio_e_database_no_such_record : Int
+
+pub let winbio_e_database_read_error : Int
+
+pub let winbio_e_database_write_error : Int
+
+pub let winbio_e_deadlock_detected : Int
+
+pub let winbio_e_device_busy : Int
+
+pub let winbio_e_device_failure : Int
+
+pub let winbio_e_disabled : Int
+
+pub let winbio_e_duplicate_enrollment : Int
+
+pub let winbio_e_duplicate_template : Int
+
+pub let winbio_e_enrollment_canceled_by_suspend : Int
+
+pub let winbio_e_enrollment_in_progress : Int
+
+pub let winbio_e_event_monitor_active : Int
+
+pub let winbio_e_fast_user_switch_disabled : Int
+
+pub let winbio_e_incorrect_bsp : Int
+
+pub let winbio_e_incorrect_sensor_pool : Int
+
+pub let winbio_e_incorrect_session_type : Int
+
+pub let winbio_e_insecure_sensor : Int
+
+pub let winbio_e_invalid_buffer : Int
+
+pub let winbio_e_invalid_buffer_id : Int
+
+pub let winbio_e_invalid_calibration_format_array : Int
+
+pub let winbio_e_invalid_control_code : Int
+
+pub let winbio_e_invalid_device_state : Int
+
+pub let winbio_e_invalid_key_identifier : Int
+
+pub let winbio_e_invalid_operation : Int
+
+pub let winbio_e_invalid_property_id : Int
+
+pub let winbio_e_invalid_property_type : Int
+
+pub let winbio_e_invalid_sensor_mode : Int
+
+pub let winbio_e_invalid_subfactor : Int
+
+pub let winbio_e_invalid_ticket : Int
+
+pub let winbio_e_invalid_unit : Int
+
+pub let winbio_e_key_creation_failed : Int
+
+pub let winbio_e_key_identifier_buffer_too_small : Int
+
+pub let winbio_e_lock_violation : Int
+
+pub let winbio_e_max_error_count_exceeded : Int
+
+pub let winbio_e_no_capture_data : Int
+
+pub let winbio_e_no_match : Int
+
+pub let winbio_e_no_preboot_identity : Int
+
+pub let winbio_e_no_supported_calibration_format : Int
+
+pub let winbio_e_not_active_console : Int
+
+pub let winbio_e_policy_protection_unavailable : Int
+
+pub let winbio_e_presence_monitor_active : Int
+
+pub let winbio_e_property_unavailable : Int
+
+pub let winbio_e_sas_enabled : Int
+
+pub let winbio_e_selection_required : Int
+
+pub let winbio_e_sensor_unavailable : Int
+
+pub let winbio_e_session_busy : Int
+
+pub let winbio_e_session_handle_closed : Int
+
+pub let winbio_e_ticket_quota_exceeded : Int
+
+pub let winbio_e_trustlet_integrity_fail : Int
+
+pub let winbio_e_unknown_id : Int
+
+pub let winbio_e_unsupported_data_format : Int
+
+pub let winbio_e_unsupported_data_type : Int
+
+pub let winbio_e_unsupported_factor : Int
+
+pub let winbio_e_unsupported_pool_type : Int
+
+pub let winbio_e_unsupported_property : Int
+
+pub let winbio_e_unsupported_purpose : Int
+
+pub let winbio_e_unsupported_sensor_calibration_format : Int
+
+pub let winbio_ess_blocked_non_ess_camera : Int
+
+pub let winbio_ess_blocked_non_ess_fpr : Int
+
+pub let winbio_ess_managed_by_policy : Int
+
+pub let winbio_ess_requires_enablement : Int
+
+pub let winbio_ess_requires_face_sensor : Int
+
+pub let winbio_ess_requires_fpr_sensor : Int
+
+pub let winbio_ess_requires_isolated_process : Int
+
+pub let winbio_ess_requires_non_vbs_biometric_enrollment_absence : Int
+
+pub let winbio_ess_requires_non_vbs_windows_hello_absence : Int
+
+pub let winbio_ess_requires_tpm2 : Int
+
+pub let winbio_ess_requires_vbs_biometric_enrollment : Int
+
+pub let winbio_ess_requires_vbs_capable : Int
+
+pub let winbio_ess_requires_vbs_encryption_key : Int
+
+pub let winbio_ess_requires_vbs_running : Int
+
+pub let winbio_ess_requires_vbs_windows_hello : Int
+
+pub let winbio_ess_source_default : Int
+
+pub let winbio_i_extended_status_information : Int
+
+pub let winbio_i_more_data : Int
+
+pub let winbio_max_string_len : UInt
+
+pub let winbio_password_generic : Int
+
+pub let winbio_password_packed : Int
+
+pub let winbio_password_protected : Int
+
+pub let winbio_policy_admin : Int
+
+pub let winbio_policy_default : Int
+
+pub let winbio_policy_local : Int
+
+pub let winbio_policy_unknown : Int
+
+pub let winbio_pool_private : UInt
+
+pub let winbio_pool_system : UInt
+
+pub let winbio_scp_curve_field_size_v1 : UInt
+
+pub let winbio_scp_digest_size_v1 : UInt
+
+pub let winbio_scp_encryption_block_size_v1 : UInt
+
+pub let winbio_scp_encryption_key_size_v1 : UInt
+
+pub let winbio_scp_private_key_size_v1 : UInt
+
+pub let winbio_scp_public_key_size_v1 : UInt
+
+pub let winbio_scp_random_size_v1 : UInt
+
+pub let winbio_scp_signature_size_v1 : UInt
+
+pub let winbio_scp_version_1 : UInt
+
+pub let winbio_setting_source_default : UInt
+
+pub let winbio_setting_source_invalid : UInt
+
+pub let winbio_setting_source_local : UInt
+
+pub let winbio_setting_source_policy : UInt
+
+pub let winbio_wbdi_major_version : UInt
+
+pub let winbio_wbdi_minor_version : UInt
+
+// Errors
+
+// Types and methods
+
+// Type aliases
+pub using @c98daf7570978765 {type AccountSidEStruct_5201b8454880 as AccountSidEStruct}
+
+pub using @c98daf7570978765 {type AuthorizationEStruct_2961f8a2b3b6 as AuthorizationEStruct}
+
+pub using @c98daf7570978765 {type CaptureSampleEStruct_66d7caaf80b2 as CaptureSampleEStruct}
+
+pub using @c98daf7570978765 {type ControlUnitEStruct_b57a5356ed17 as ControlUnitEStruct}
+
+pub using @c98daf7570978765 {type DeleteTemplateEStruct_5f7d8dfd55a3 as DeleteTemplateEStruct}
+
+pub using @c98daf7570978765 {type EnrollBeginEStruct_b2ed6425768c as EnrollBeginEStruct}
+
+pub using @c98daf7570978765 {type EnrollCaptureEStruct_7d5e2cd8edd3 as EnrollCaptureEStruct}
+
+pub using @c98daf7570978765 {type EnrollCommitEStruct_b62d9d1ee416 as EnrollCommitEStruct}
+
+pub using @c98daf7570978765 {type EnrollSelectEStruct_b86a31c5e221 as EnrollSelectEStruct}
+
+pub using @c98daf7570978765 {type EnrollmentRequirementsEStruct_2b56dec5af54 as EnrollmentRequirementsEStruct_2b56dec5af}
+
+pub using @c98daf7570978765 {type EnrollmentRequirementsEStruct_39e21ba9e3f1 as EnrollmentRequirementsEStruct_39e21ba9e3}
+
+pub using @c98daf7570978765 {type EnrollmentRequirementsEStruct_98d9113a1d25 as EnrollmentRequirementsEStruct_98d9113a1d}
+
+pub using @c98daf7570978765 {type EnrollmentRequirementsEStruct_f850c1d0281d as EnrollmentRequirementsEStruct_f850c1d028}
+
+pub using @c98daf7570978765 {type EnumBiometricUnitsEStruct_e9683bda18ed as EnumBiometricUnitsEStruct}
+
+pub using @c98daf7570978765 {type EnumDatabasesEStruct_588508dfa681 as EnumDatabasesEStruct}
+
+pub using @c98daf7570978765 {type EnumEnrollmentsEStruct_7a783ecf8f86 as EnumEnrollmentsEStruct}
+
+pub using @c98daf7570978765 {type EnumServiceProvidersEStruct_a30efd603cbf as EnumServiceProvidersEStruct}
+
+pub using @c98daf7570978765 {type ErrorEStruct_32c75aa47911 as ErrorEStruct}
+
+pub using @c98daf7570978765 {type FacialFeaturesEStruct_08840e82d88e as FacialFeaturesEStruct_08840e82d8}
+
+pub using @c98daf7570978765 {type FacialFeaturesEStruct_151accea8120 as FacialFeaturesEStruct_151accea81}
+
+pub using @c98daf7570978765 {type FacialFeaturesEStruct_9ec4b4c9a5f3 as FacialFeaturesEStruct_9ec4b4c9a5}
+
+pub using @c98daf7570978765 {type FacialFeaturesEStruct_d69621928d21 as FacialFeaturesEStruct_d69621928d}
+
+pub using @c98daf7570978765 {type FacialFeaturesEStruct_e166df5c61a1 as FacialFeaturesEStruct_e166df5c61}
+
+pub using @c98daf7570978765 {type FingerprintEStruct_0d5123543e73 as FingerprintEStruct_0d5123543e}
+
+pub using @c98daf7570978765 {type FingerprintEStruct_10e8212ab396 as FingerprintEStruct_10e8212ab3}
+
+pub using @c98daf7570978765 {type FingerprintEStruct_80c7dca37099 as FingerprintEStruct_80c7dca370}
+
+pub using @c98daf7570978765 {type FingerprintEStruct_993e042424e3 as FingerprintEStruct_993e042424}
+
+pub using @c98daf7570978765 {type GetEventEStruct_2b95dd006cda as GetEventEStruct}
+
+pub using @c98daf7570978765 {type GetPropertyEStruct_e0f501f09ea2 as GetPropertyEStruct}
+
+pub using @c98daf7570978765 {type GetProtectionPolicyEStruct_6bb154429da0 as GetProtectionPolicyEStruct}
+
+pub using @c98daf7570978765 {type HardwareInfoEStruct_3a70c90f5f8e as HardwareInfoEStruct}
+
+pub using @c98daf7570978765 {type IdentifyAndReleaseTicketEStruct_80c8a68a9fb3 as IdentifyAndReleaseTicketEStruct}
+
+pub using @c98daf7570978765 {type IdentifyEStruct_d222b47d0c55 as IdentifyEStruct}
+
+pub using @c98daf7570978765 {type IrisEStruct_2f90ca668966 as IrisEStruct_2f90ca6689}
+
+pub using @c98daf7570978765 {type IrisEStruct_39d882324835 as IrisEStruct_39d8823248}
+
+pub using @c98daf7570978765 {type IrisEStruct_7a341679334c as IrisEStruct_7a34167933}
+
+pub using @c98daf7570978765 {type IrisEStruct_8aade6648757 as IrisEStruct_8aade66487}
+
+pub using @c98daf7570978765 {type IrisEStruct_fe3691df5091 as IrisEStruct_fe3691df50}
+
+pub using @c98daf7570978765 {type MonitorPresenceEStruct_6f0fd625411c as MonitorPresenceEStruct}
+
+pub using @c98daf7570978765 {type NotifyUnitStatusChangeEStruct_c86b4cf62edc as NotifyUnitStatusChangeEStruct}
+
+pub using @c98daf7570978765 {type OpaqueEngineDataEStruct_48f76c1fde09 as OpaqueEngineDataEStruct_48f76c1fde}
+
+pub using @c98daf7570978765 {type OpaqueEngineDataEStruct_a5dc3a479e10 as OpaqueEngineDataEStruct_a5dc3a479e}
+
+pub using @c98daf7570978765 {type PIBIOENGINEACCEPTPRIVATESENSORTYPEINFOFN_a3611c59341e as PIBIOENGINEACCEPTPRIVATESENSORTYPEINFOFN}
+
+pub using @c98daf7570978765 {type PIBIOENGINEACCEPTSAMPLEDATAFN_794bc7735cdd as PIBIOENGINEACCEPTSAMPLEDATAFN}
+
+pub using @c98daf7570978765 {type PIBIOENGINEACTIVATEFN_58fd649d0df5 as PIBIOENGINEACTIVATEFN}
+
+pub using @c98daf7570978765 {type PIBIOENGINEATTACHFN_c018f870ab17 as PIBIOENGINEATTACHFN}
+
+pub using @c98daf7570978765 {type PIBIOENGINECHECKFORDUPLICATEFN_ffee91645b26 as PIBIOENGINECHECKFORDUPLICATEFN}
+
+pub using @c98daf7570978765 {type PIBIOENGINECLEARCONTEXTFN_0f8a1ab9c565 as PIBIOENGINECLEARCONTEXTFN}
+
+pub using @c98daf7570978765 {type PIBIOENGINECOMMITENROLLMENTFN_caf22a70fdac as PIBIOENGINECOMMITENROLLMENTFN}
+
+pub using @c98daf7570978765 {type PIBIOENGINECONTROLUNITFN_bacc4e587216 as PIBIOENGINECONTROLUNITFN}
+
+pub using @c98daf7570978765 {type PIBIOENGINECONTROLUNITPRIVILEGEDFN_beddd4431ab9 as PIBIOENGINECONTROLUNITPRIVILEGEDFN}
+
+pub using @c98daf7570978765 {type PIBIOENGINECREATEENROLLMENTAUTHENTICATEDFN_204de352c551 as PIBIOENGINECREATEENROLLMENTAUTHENTICATEDFN}
+
+pub using @c98daf7570978765 {type PIBIOENGINECREATEENROLLMENTFN_84deaea7ab3f as PIBIOENGINECREATEENROLLMENTFN}
+
+pub using @c98daf7570978765 {type PIBIOENGINECREATEKEYFN_c35545d3dee7 as PIBIOENGINECREATEKEYFN}
+
+pub using @c98daf7570978765 {type PIBIOENGINEDEACTIVATEFN_caa31cf954b3 as PIBIOENGINEDEACTIVATEFN}
+
+pub using @c98daf7570978765 {type PIBIOENGINEDETACHFN_21b0f9a9b43f as PIBIOENGINEDETACHFN}
+
+pub using @c98daf7570978765 {type PIBIOENGINEDISCARDENROLLMENTFN_91f51a87fc11 as PIBIOENGINEDISCARDENROLLMENTFN}
+
+pub using @c98daf7570978765 {type PIBIOENGINEEXPORTENGINEDATAFN_c2ae2d99e80a as PIBIOENGINEEXPORTENGINEDATAFN}
+
+pub using @c98daf7570978765 {type PIBIOENGINEGETENROLLMENTHASHFN_b21ac7040514 as PIBIOENGINEGETENROLLMENTHASHFN}
+
+pub using @c98daf7570978765 {type PIBIOENGINEGETENROLLMENTSTATUSFN_56959ea185b1 as PIBIOENGINEGETENROLLMENTSTATUSFN}
+
+pub using @c98daf7570978765 {type PIBIOENGINEIDENTIFYALLFN_8f8dc61e3325 as PIBIOENGINEIDENTIFYALLFN}
+
+pub using @c98daf7570978765 {type PIBIOENGINEIDENTIFYFEATURESETAUTHENTICATEDFN_70abbaf2317f as PIBIOENGINEIDENTIFYFEATURESETAUTHENTICATEDFN}
+
+pub using @c98daf7570978765 {type PIBIOENGINEIDENTIFYFEATURESETFN_c483e7b0195d as PIBIOENGINEIDENTIFYFEATURESETFN}
+
+pub using @c98daf7570978765 {type PIBIOENGINEIDENTIFYFEATURESETSECUREFN_ceed87a621c6 as PIBIOENGINEIDENTIFYFEATURESETSECUREFN}
+
+pub using @c98daf7570978765 {type PIBIOENGINENOTIFYPOWERCHANGEFN_e17f5ac89100 as PIBIOENGINENOTIFYPOWERCHANGEFN}
+
+pub using @c98daf7570978765 {type PIBIOENGINEPIPELINECLEANUPFN_13982050650b as PIBIOENGINEPIPELINECLEANUPFN}
+
+pub using @c98daf7570978765 {type PIBIOENGINEPIPELINEINITFN_72651a9cec26 as PIBIOENGINEPIPELINEINITFN}
+
+pub using @c98daf7570978765 {type PIBIOENGINEQUERYCALIBRATIONDATAFN_4cd1eb2e24d5 as PIBIOENGINEQUERYCALIBRATIONDATAFN}
+
+pub using @c98daf7570978765 {type PIBIOENGINEQUERYEXTENDEDENROLLMENTSTATUSFN_98520ae34502 as PIBIOENGINEQUERYEXTENDEDENROLLMENTSTATUSFN}
+
+pub using @c98daf7570978765 {type PIBIOENGINEQUERYEXTENDEDINFOFN_0dc1826463a0 as PIBIOENGINEQUERYEXTENDEDINFOFN}
+
+pub using @c98daf7570978765 {type PIBIOENGINEQUERYHASHALGORITHMSFN_9401178778ba as PIBIOENGINEQUERYHASHALGORITHMSFN}
+
+pub using @c98daf7570978765 {type PIBIOENGINEQUERYINDEXVECTORSIZEFN_7afde21dc927 as PIBIOENGINEQUERYINDEXVECTORSIZEFN}
+
+pub using @c98daf7570978765 {type PIBIOENGINEQUERYPREFERREDFORMATFN_a6a170fb38a1 as PIBIOENGINEQUERYPREFERREDFORMATFN}
+
+pub using @c98daf7570978765 {type PIBIOENGINEQUERYSAMPLEHINTFN_5ed906b3ac84 as PIBIOENGINEQUERYSAMPLEHINTFN}
+
+pub using @c98daf7570978765 {type PIBIOENGINEREFRESHCACHEFN_8d1f6953cd64 as PIBIOENGINEREFRESHCACHEFN}
+
+pub using @c98daf7570978765 {type PIBIOENGINERESERVED1FN_e865b3418469 as PIBIOENGINERESERVED1FN}
+
+pub using @c98daf7570978765 {type PIBIOENGINESELECTCALIBRATIONFORMATFN_bcd116509299 as PIBIOENGINESELECTCALIBRATIONFORMATFN}
+
+pub using @c98daf7570978765 {type PIBIOENGINESETACCOUNTPOLICYFN_fd52601ca2ed as PIBIOENGINESETACCOUNTPOLICYFN}
+
+pub using @c98daf7570978765 {type PIBIOENGINESETENROLLMENTPARAMETERSFN_0d269585c3f6 as PIBIOENGINESETENROLLMENTPARAMETERSFN}
+
+pub using @c98daf7570978765 {type PIBIOENGINESETENROLLMENTSELECTORFN_5db09f0be0e0 as PIBIOENGINESETENROLLMENTSELECTORFN}
+
+pub using @c98daf7570978765 {type PIBIOENGINESETHASHALGORITHMFN_7ee37ddbcf37 as PIBIOENGINESETHASHALGORITHMFN}
+
+pub using @c98daf7570978765 {type PIBIOENGINEUPDATEENROLLMENTFN_9fb5156e3edf as PIBIOENGINEUPDATEENROLLMENTFN}
+
+pub using @c98daf7570978765 {type PIBIOENGINEVERIFYFEATURESETFN_5029089ecb4c as PIBIOENGINEVERIFYFEATURESETFN}
+
+pub using @c98daf7570978765 {type PIBIOFRAMEWORKALLOCATEMEMORYFN_961cef4276d7 as PIBIOFRAMEWORKALLOCATEMEMORYFN}
+
+pub using @c98daf7570978765 {type PIBIOFRAMEWORKFREEMEMORYFN_4021e48c6fef as PIBIOFRAMEWORKFREEMEMORYFN}
+
+pub using @c98daf7570978765 {type PIBIOFRAMEWORKGETPROPERTYFN_b709179ec19d as PIBIOFRAMEWORKGETPROPERTYFN}
+
+pub using @c98daf7570978765 {type PIBIOFRAMEWORKLOCKANDVALIDATESECUREBUFFERFN_f0080da71c07 as PIBIOFRAMEWORKLOCKANDVALIDATESECUREBUFFERFN}
+
+pub using @c98daf7570978765 {type PIBIOFRAMEWORKRELEASESECUREBUFFERFN_506d493b7006 as PIBIOFRAMEWORKRELEASESECUREBUFFERFN}
+
+pub using @c98daf7570978765 {type PIBIOFRAMEWORKSETUNITSTATUSFN_2b95f19414fd as PIBIOFRAMEWORKSETUNITSTATUSFN}
+
+pub using @c98daf7570978765 {type PIBIOFRAMEWORKVSMCACHECLEARFN_b14ea4fc4968 as PIBIOFRAMEWORKVSMCACHECLEARFN}
+
+pub using @c98daf7570978765 {type PIBIOFRAMEWORKVSMCACHEEXPORTBEGINFN_21dd6f70783a as PIBIOFRAMEWORKVSMCACHEEXPORTBEGINFN}
+
+pub using @c98daf7570978765 {type PIBIOFRAMEWORKVSMCACHEEXPORTENDFN_761cc7724295 as PIBIOFRAMEWORKVSMCACHEEXPORTENDFN}
+
+pub using @c98daf7570978765 {type PIBIOFRAMEWORKVSMCACHEEXPORTNEXTFN_4718b0b33c73 as PIBIOFRAMEWORKVSMCACHEEXPORTNEXTFN}
+
+pub using @c98daf7570978765 {type PIBIOFRAMEWORKVSMCACHEIMPORTBEGINFN_111368716881 as PIBIOFRAMEWORKVSMCACHEIMPORTBEGINFN}
+
+pub using @c98daf7570978765 {type PIBIOFRAMEWORKVSMCACHEIMPORTENDFN_ba60c6629e7b as PIBIOFRAMEWORKVSMCACHEIMPORTENDFN}
+
+pub using @c98daf7570978765 {type PIBIOFRAMEWORKVSMCACHEIMPORTNEXTFN_5ccd93f1da81 as PIBIOFRAMEWORKVSMCACHEIMPORTNEXTFN}
+
+pub using @c98daf7570978765 {type PIBIOFRAMEWORKVSMDECRYPTSAMPLEFN_e6310892b2c2 as PIBIOFRAMEWORKVSMDECRYPTSAMPLEFN}
+
+pub using @c98daf7570978765 {type PIBIOFRAMEWORKVSMQUERYAUTHORIZEDENROLLMENTSFN_a3411cdebf10 as PIBIOFRAMEWORKVSMQUERYAUTHORIZEDENROLLMENTSFN}
+
+pub using @c98daf7570978765 {type PIBIOFRAMEWORKVSMSTORAGERESERVED1FN_1b30518c98bf as PIBIOFRAMEWORKVSMSTORAGERESERVED1FN}
+
+pub using @c98daf7570978765 {type PIBIOFRAMEWORKVSMSTORAGERESERVED2FN_2e3fe8dc6687 as PIBIOFRAMEWORKVSMSTORAGERESERVED2FN}
+
+pub using @c98daf7570978765 {type PIBIOFRAMEWORKVSMSTORAGERESERVED3FN_42632e732b97 as PIBIOFRAMEWORKVSMSTORAGERESERVED3FN}
+
+pub using @c98daf7570978765 {type PIBIOSENSORACCEPTCALIBRATIONDATAFN_072a13f45477 as PIBIOSENSORACCEPTCALIBRATIONDATAFN}
+
+pub using @c98daf7570978765 {type PIBIOSENSORACTIVATEFN_fb6e43f77f0a as PIBIOSENSORACTIVATEFN}
+
+pub using @c98daf7570978765 {type PIBIOSENSORASYNCIMPORTRAWBUFFERFN_f1a176410085 as PIBIOSENSORASYNCIMPORTRAWBUFFERFN}
+
+pub using @c98daf7570978765 {type PIBIOSENSORASYNCIMPORTSECUREBUFFERFN_97159e74aadb as PIBIOSENSORASYNCIMPORTSECUREBUFFERFN}
+
+pub using @c98daf7570978765 {type PIBIOSENSORATTACHFN_06ee840ea8eb as PIBIOSENSORATTACHFN}
+
+pub using @c98daf7570978765 {type PIBIOSENSORCANCELFN_f7096b28c117 as PIBIOSENSORCANCELFN}
+
+pub using @c98daf7570978765 {type PIBIOSENSORCLEARCONTEXTFN_67e73df21d87 as PIBIOSENSORCLEARCONTEXTFN}
+
+pub using @c98daf7570978765 {type PIBIOSENSORCONNECTSECUREFN_1d4623fad7cb as PIBIOSENSORCONNECTSECUREFN}
+
+pub using @c98daf7570978765 {type PIBIOSENSORCONTROLUNITFN_e850947b8463 as PIBIOSENSORCONTROLUNITFN}
+
+pub using @c98daf7570978765 {type PIBIOSENSORCONTROLUNITPRIVILEGEDFN_2e8d7362ce4b as PIBIOSENSORCONTROLUNITPRIVILEGEDFN}
+
+pub using @c98daf7570978765 {type PIBIOSENSORDEACTIVATEFN_095ab69ed084 as PIBIOSENSORDEACTIVATEFN}
+
+pub using @c98daf7570978765 {type PIBIOSENSORDETACHFN_074bf011e45d as PIBIOSENSORDETACHFN}
+
+pub using @c98daf7570978765 {type PIBIOSENSOREXPORTSENSORDATAFN_199c822bc166 as PIBIOSENSOREXPORTSENSORDATAFN}
+
+pub using @c98daf7570978765 {type PIBIOSENSORFINISHCAPTUREFN_f5b3f0cad432 as PIBIOSENSORFINISHCAPTUREFN}
+
+pub using @c98daf7570978765 {type PIBIOSENSORFINISHNOTIFYWAKEFN_4725d644694f as PIBIOSENSORFINISHNOTIFYWAKEFN}
+
+pub using @c98daf7570978765 {type PIBIOSENSORGETINDICATORSTATUSFN_cfe99b59f1c4 as PIBIOSENSORGETINDICATORSTATUSFN}
+
+pub using @c98daf7570978765 {type PIBIOSENSORNOTIFYPOWERCHANGEFN_abd8a85a2e75 as PIBIOSENSORNOTIFYPOWERCHANGEFN}
+
+pub using @c98daf7570978765 {type PIBIOSENSORPIPELINECLEANUPFN_eb03ba3e254b as PIBIOSENSORPIPELINECLEANUPFN}
+
+pub using @c98daf7570978765 {type PIBIOSENSORPIPELINEINITFN_38090baba198 as PIBIOSENSORPIPELINEINITFN}
+
+pub using @c98daf7570978765 {type PIBIOSENSORPUSHDATATOENGINEFN_fb2e38ca502d as PIBIOSENSORPUSHDATATOENGINEFN}
+
+pub using @c98daf7570978765 {type PIBIOSENSORQUERYCALIBRATIONFORMATSFN_021eaafceea4 as PIBIOSENSORQUERYCALIBRATIONFORMATSFN}
+
+pub using @c98daf7570978765 {type PIBIOSENSORQUERYEXTENDEDINFOFN_b8bf8e7fb489 as PIBIOSENSORQUERYEXTENDEDINFOFN}
+
+pub using @c98daf7570978765 {type PIBIOSENSORQUERYPRIVATESENSORTYPEFN_dd62959ab73c as PIBIOSENSORQUERYPRIVATESENSORTYPEFN}
+
+pub using @c98daf7570978765 {type PIBIOSENSORQUERYSTATUSFN_3235a94ad023 as PIBIOSENSORQUERYSTATUSFN}
+
+pub using @c98daf7570978765 {type PIBIOSENSORRESETFN_da647e670fe1 as PIBIOSENSORRESETFN}
+
+pub using @c98daf7570978765 {type PIBIOSENSORSETCALIBRATIONFORMATFN_ddee40f18fc7 as PIBIOSENSORSETCALIBRATIONFORMATFN}
+
+pub using @c98daf7570978765 {type PIBIOSENSORSETINDICATORSTATUSFN_2890b6b4fe2d as PIBIOSENSORSETINDICATORSTATUSFN}
+
+pub using @c98daf7570978765 {type PIBIOSENSORSETMODEFN_c5e53df7d9a9 as PIBIOSENSORSETMODEFN}
+
+pub using @c98daf7570978765 {type PIBIOSENSORSTARTCAPTUREEXFN_5f532f856fce as PIBIOSENSORSTARTCAPTUREEXFN}
+
+pub using @c98daf7570978765 {type PIBIOSENSORSTARTCAPTUREFN_97a2916cc2ca as PIBIOSENSORSTARTCAPTUREFN}
+
+pub using @c98daf7570978765 {type PIBIOSENSORSTARTNOTIFYWAKEFN_1db464251913 as PIBIOSENSORSTARTNOTIFYWAKEFN}
+
+pub using @c98daf7570978765 {type PIBIOSTORAGEACTIVATEFN_23f33dea5282 as PIBIOSTORAGEACTIVATEFN}
+
+pub using @c98daf7570978765 {type PIBIOSTORAGEADDRECORDFN_5a9a090651c8 as PIBIOSTORAGEADDRECORDFN}
+
+pub using @c98daf7570978765 {type PIBIOSTORAGEATTACHFN_75561150c0ce as PIBIOSTORAGEATTACHFN}
+
+pub using @c98daf7570978765 {type PIBIOSTORAGECLEARCONTEXTFN_fee528e05568 as PIBIOSTORAGECLEARCONTEXTFN}
+
+pub using @c98daf7570978765 {type PIBIOSTORAGECLOSEDATABASEFN_f1d6a003305c as PIBIOSTORAGECLOSEDATABASEFN}
+
+pub using @c98daf7570978765 {type PIBIOSTORAGECONTROLUNITFN_50574c73bf80 as PIBIOSTORAGECONTROLUNITFN}
+
+pub using @c98daf7570978765 {type PIBIOSTORAGECONTROLUNITPRIVILEGEDFN_ddd284d6850e as PIBIOSTORAGECONTROLUNITPRIVILEGEDFN}
+
+pub using @c98daf7570978765 {type PIBIOSTORAGECREATEDATABASEFN_66f07f8e11d3 as PIBIOSTORAGECREATEDATABASEFN}
+
+pub using @c98daf7570978765 {type PIBIOSTORAGEDEACTIVATEFN_e70b20db5d38 as PIBIOSTORAGEDEACTIVATEFN}
+
+pub using @c98daf7570978765 {type PIBIOSTORAGEDELETERECORDFN_34362b03e206 as PIBIOSTORAGEDELETERECORDFN}
+
+pub using @c98daf7570978765 {type PIBIOSTORAGEDETACHFN_bd3f7d7efac2 as PIBIOSTORAGEDETACHFN}
+
+pub using @c98daf7570978765 {type PIBIOSTORAGEERASEDATABASEFN_2ef9c59003c3 as PIBIOSTORAGEERASEDATABASEFN}
+
+pub using @c98daf7570978765 {type PIBIOSTORAGEFIRSTRECORDFN_3953605b5edc as PIBIOSTORAGEFIRSTRECORDFN}
+
+pub using @c98daf7570978765 {type PIBIOSTORAGEGETCURRENTRECORDFN_501bc970f4db as PIBIOSTORAGEGETCURRENTRECORDFN}
+
+pub using @c98daf7570978765 {type PIBIOSTORAGEGETDATABASESIZEFN_ac817cc38ddb as PIBIOSTORAGEGETDATABASESIZEFN}
+
+pub using @c98daf7570978765 {type PIBIOSTORAGEGETDATAFORMATFN_6d6c5c5f0df9 as PIBIOSTORAGEGETDATAFORMATFN}
+
+pub using @c98daf7570978765 {type PIBIOSTORAGEGETRECORDCOUNTFN_670e74f98e1c as PIBIOSTORAGEGETRECORDCOUNTFN}
+
+pub using @c98daf7570978765 {type PIBIOSTORAGENEXTRECORDFN_1ce4df6fac81 as PIBIOSTORAGENEXTRECORDFN}
+
+pub using @c98daf7570978765 {type PIBIOSTORAGENOTIFYDATABASECHANGEFN_ce2d7a77c35e as PIBIOSTORAGENOTIFYDATABASECHANGEFN}
+
+pub using @c98daf7570978765 {type PIBIOSTORAGENOTIFYPOWERCHANGEFN_f6563bbdd92e as PIBIOSTORAGENOTIFYPOWERCHANGEFN}
+
+pub using @c98daf7570978765 {type PIBIOSTORAGEOPENDATABASEFN_b340130221ab as PIBIOSTORAGEOPENDATABASEFN}
+
+pub using @c98daf7570978765 {type PIBIOSTORAGEPIPELINECLEANUPFN_acff22145151 as PIBIOSTORAGEPIPELINECLEANUPFN}
+
+pub using @c98daf7570978765 {type PIBIOSTORAGEPIPELINEINITFN_2770d6df2ea9 as PIBIOSTORAGEPIPELINEINITFN}
+
+pub using @c98daf7570978765 {type PIBIOSTORAGEQUERYBYCONTENTFN_c72e59db5bb5 as PIBIOSTORAGEQUERYBYCONTENTFN}
+
+pub using @c98daf7570978765 {type PIBIOSTORAGEQUERYBYSUBJECTFN_cf38446b0221 as PIBIOSTORAGEQUERYBYSUBJECTFN}
+
+pub using @c98daf7570978765 {type PIBIOSTORAGEQUERYEXTENDEDINFOFN_18ab009665f7 as PIBIOSTORAGEQUERYEXTENDEDINFOFN}
+
+pub using @c98daf7570978765 {type PIBIOSTORAGERESERVED1FN_04a249609605 as PIBIOSTORAGERESERVED1FN}
+
+pub using @c98daf7570978765 {type PIBIOSTORAGERESERVED2FN_fd17d843e58c as PIBIOSTORAGERESERVED2FN}
+
+pub using @c98daf7570978765 {type PIBIOSTORAGEUPDATERECORDBEGINFN_726ce06a0c8c as PIBIOSTORAGEUPDATERECORDBEGINFN}
+
+pub using @c98daf7570978765 {type PIBIOSTORAGEUPDATERECORDCOMMITFN_d2b4bdd03ce1 as PIBIOSTORAGEUPDATERECORDCOMMITFN}
+
+pub using @c98daf7570978765 {type PWINBIOASYNCCOMPLETIONCALLBACK_49096727c90e as PWINBIOASYNCCOMPLETIONCALLBACK}
+
+pub using @c98daf7570978765 {type PWINBIOCAPTURECALLBACK_92acd73f2cd0 as PWINBIOCAPTURECALLBACK}
+
+pub using @c98daf7570978765 {type PWINBIOENROLLCAPTURECALLBACK_3f75038559bc as PWINBIOENROLLCAPTURECALLBACK}
+
+pub using @c98daf7570978765 {type PWINBIOEVENTCALLBACK_a3f93179d13d as PWINBIOEVENTCALLBACK}
+
+pub using @c98daf7570978765 {type PWINBIOIDENTIFYCALLBACK_747d8ed3ee2b as PWINBIOIDENTIFYCALLBACK}
+
+pub using @c98daf7570978765 {type PWINBIOLOCATESENSORCALLBACK_3c285216b720 as PWINBIOLOCATESENSORCALLBACK}
+
+pub using @c98daf7570978765 {type PWINBIOQUERYENGINEINTERFACEFN_20c861ff9884 as PWINBIOQUERYENGINEINTERFACEFN}
+
+pub using @c98daf7570978765 {type PWINBIOQUERYSENSORINTERFACEFN_29ca81989ccb as PWINBIOQUERYSENSORINTERFACEFN}
+
+pub using @c98daf7570978765 {type PWINBIOQUERYSTORAGEINTERFACEFN_b866985d7470 as PWINBIOQUERYSTORAGEINTERFACEFN}
+
+pub using @c98daf7570978765 {type PWINBIOVERIFYCALLBACK_fdee65068bbd as PWINBIOVERIFYCALLBACK}
+
+pub using @c98daf7570978765 {type ParametersEUnion_30ab0a8f5183 as ParametersEUnion_30ab0a8f51}
+
+pub using @c98daf7570978765 {type ParametersEUnion_c7d28db44883 as ParametersEUnion_c7d28db448}
+
+pub using @c98daf7570978765 {type Point3DEStruct_33f4c1c46410 as Point3DEStruct}
+
+pub using @c98daf7570978765 {type SetPropertyEStruct_eab630ed5919 as SetPropertyEStruct}
+
+pub using @c98daf7570978765 {type SpecificEUnion_37d8802a2e03 as SpecificEUnion_37d8802a2e}
+
+pub using @c98daf7570978765 {type SpecificEUnion_5801dd55b541 as SpecificEUnion_5801dd55b5}
+
+pub using @c98daf7570978765 {type SpecificEUnion_e1d6a97ecb5d as SpecificEUnion_e1d6a97ecb}
+
+pub using @c98daf7570978765 {type SpecificEUnion_fad920025120 as SpecificEUnion_fad9200251}
+
+pub using @c98daf7570978765 {type UnclaimedEStruct_bd4c8e3ec056 as UnclaimedEStruct}
+
+pub using @c98daf7570978765 {type UnclaimedIdentifyEStruct_3d25f8832f75 as UnclaimedIdentifyEStruct}
+
+pub using @c98daf7570978765 {type ValidityPeriodEStruct_1ddd6819628d as ValidityPeriodEStruct}
+
+pub using @c98daf7570978765 {type ValueEUnion_690f77412aca as ValueEUnion}
+
+pub using @c98daf7570978765 {type VerifyAndReleaseTicketEStruct_5c9fcfd235b0 as VerifyAndReleaseTicketEStruct}
+
+pub using @c98daf7570978765 {type VerifyEStruct_a7af080b54d8 as VerifyEStruct}
+
+pub using @c98daf7570978765 {type VoiceEStruct_33a68338a2ba as VoiceEStruct_33a68338a2}
+
+pub using @c98daf7570978765 {type VoiceEStruct_4698a3a9ac90 as VoiceEStruct_4698a3a9ac}
+
+pub using @c98daf7570978765 {type VoiceEStruct_594656d93ab6 as VoiceEStruct_594656d93a}
+
+pub using @c98daf7570978765 {type VoiceEStruct_99d41f043466 as VoiceEStruct_99d41f0434}
+
+pub using @c98daf7570978765 {type WINBIOACCOUNTPOLICY_74a850aca9c5 as WINBIOACCOUNTPOLICY}
+
+pub using @c98daf7570978765 {type WINBIOADAPTERINTERFACEVERSION_e41be00c4afa as WINBIOADAPTERINTERFACEVERSION}
+
+pub using @c98daf7570978765 {type WINBIOANTISPOOFPOLICY_83489d4c1a2b as WINBIOANTISPOOFPOLICY}
+
+pub using @c98daf7570978765 {type WINBIOANTISPOOFPOLICYACTION_7af1b1d2620d as WINBIOANTISPOOFPOLICYACTION}
+
+pub using @c98daf7570978765 {type WINBIOASYNCNOTIFICATIONMETHOD_ee8bea97d9cb as WINBIOASYNCNOTIFICATIONMETHOD}
+
+pub using @c98daf7570978765 {type WINBIOASYNCRESULT_243d98339968 as WINBIOASYNCRESULT}
+
+pub using @c98daf7570978765 {type WINBIOBDBANSI381HEADER_57672273cf4b as WINBIOBDBANSI381HEADER}
+
+pub using @c98daf7570978765 {type WINBIOBDBANSI381RECORD_786be7bff39b as WINBIOBDBANSI381RECORD}
+
+pub using @c98daf7570978765 {type WINBIOBIR_723c6349ae29 as WINBIOBIR}
+
+pub using @c98daf7570978765 {type WINBIOBIRDATA_a305f4a28eba as WINBIOBIRDATA}
+
+pub using @c98daf7570978765 {type WINBIOBIRHEADER_b472646a40cc as WINBIOBIRHEADER}
+
+pub using @c98daf7570978765 {type WINBIOBLANKPAYLOAD_43e09d224e47 as WINBIOBLANKPAYLOAD}
+
+pub using @c98daf7570978765 {type WINBIOBSPSCHEMA_d39b0f6872d6 as WINBIOBSPSCHEMA}
+
+pub using @c98daf7570978765 {type WINBIOCALIBRATIONINFO_12fdb1726573 as WINBIOCALIBRATIONINFO}
+
+pub using @c98daf7570978765 {type WINBIOCAPTUREDATA_cec82e145617 as WINBIOCAPTUREDATA}
+
+pub using @c98daf7570978765 {type WINBIOCAPTUREPARAMETERS_33b7c1c02a1d as WINBIOCAPTUREPARAMETERS}
+
+pub using @c98daf7570978765 {type WINBIOCOMPONENT_31c0e7bf313d as WINBIOCOMPONENT}
+
+pub using @c98daf7570978765 {type WINBIOCONNECTEDSENSOR_161572404ade as WINBIOCONNECTEDSENSOR}
+
+pub using @c98daf7570978765 {type WINBIOCREDENTIALFORMAT_ea3e394c1b7c as WINBIOCREDENTIALFORMAT}
+
+pub using @c98daf7570978765 {type WINBIOCREDENTIALSTATE_4b241c2a6cf1 as WINBIOCREDENTIALSTATE}
+
+pub using @c98daf7570978765 {type WINBIOCREDENTIALTYPE_a31ae015572a as WINBIOCREDENTIALTYPE}
+
+pub using @c98daf7570978765 {type WINBIODATA_aafb28efe783 as WINBIODATA}
+
+pub using @c98daf7570978765 {type WINBIODIAGNOSTICS_19a25a9e7d04 as WINBIODIAGNOSTICS}
+
+pub using @c98daf7570978765 {type WINBIOENCRYPTEDCAPTUREPARAMS_bb3af3460d4c as WINBIOENCRYPTEDCAPTUREPARAMS}
+
+pub using @c98daf7570978765 {type WINBIOENGINEINTERFACE_8d4e10a4dfc5 as WINBIOENGINEINTERFACE}
+
+pub using @c98daf7570978765 {type WINBIOESSSTATEFLAGS_9fac8176325d as WINBIOESSSTATEFLAGS}
+
+pub using @c98daf7570978765 {type WINBIOEVENT_9aecc297349f as WINBIOEVENT}
+
+pub using @c98daf7570978765 {type WINBIOEXTENDEDENGINEINFO_cacd583f99b6 as WINBIOEXTENDEDENGINEINFO}
+
+pub using @c98daf7570978765 {type WINBIOEXTENDEDENROLLMENTPARAMETERS_7cfa3585ee75 as WINBIOEXTENDEDENROLLMENTPARAMETERS}
+
+pub using @c98daf7570978765 {type WINBIOEXTENDEDENROLLMENTSTATUS_e42b75bcf512 as WINBIOEXTENDEDENROLLMENTSTATUS}
+
+pub using @c98daf7570978765 {type WINBIOEXTENDEDSENSORINFO_198641149591 as WINBIOEXTENDEDSENSORINFO}
+
+pub using @c98daf7570978765 {type WINBIOEXTENDEDSTORAGEINFO_a020d7e21c52 as WINBIOEXTENDEDSTORAGEINFO}
+
+pub using @c98daf7570978765 {type WINBIOEXTENDEDUNITSTATUS_e63cc6a58d48 as WINBIOEXTENDEDUNITSTATUS}
+
+pub using @c98daf7570978765 {type WINBIOFPBUSTATE_13d63e5945d4 as WINBIOFPBUSTATE}
+
+pub using @c98daf7570978765 {type WINBIOFRAMEWORKINTERFACE_7d3d8c8359a8 as WINBIOFRAMEWORKINTERFACE}
+
+pub using @c98daf7570978765 {type WINBIOGESTUREMETADATA_2867eeed8dae as WINBIOGESTUREMETADATA}
+
+pub using @c98daf7570978765 {type WINBIOGETINDICATOR_40e82a11d9ac as WINBIOGETINDICATOR}
+
+pub using @c98daf7570978765 {type WINBIOIDENTITY_c489f8abec9a as WINBIOIDENTITY}
+
+pub using @c98daf7570978765 {type WINBIONOTIFYWAKE_2ccdc06d9200 as WINBIONOTIFYWAKE}
+
+pub using @c98daf7570978765 {type WINBIOPIPELINE_740f7ee66a63 as WINBIOPIPELINE}
+
+pub using @c98daf7570978765 {type WINBIOPOLICYSOURCE_cb0ff682e2d4 as WINBIOPOLICYSOURCE}
+
+pub using @c98daf7570978765 {type WINBIOPOOL_227e4f453304 as WINBIOPOOL}
+
+pub using @c98daf7570978765 {type WINBIOPRESENCE_8fc37e5f542c as WINBIOPRESENCE}
+
+pub using @c98daf7570978765 {type WINBIOPRESENCEPROPERTIES_fba10838ac2a as WINBIOPRESENCEPROPERTIES}
+
+pub using @c98daf7570978765 {type WINBIOPRIVATESENSORTYPEINFO_60764ba2476d as WINBIOPRIVATESENSORTYPEINFO}
+
+pub using @c98daf7570978765 {type WINBIOPROTECTIONPOLICY_633ccceaa7c2 as WINBIOPROTECTIONPOLICY}
+
+pub using @c98daf7570978765 {type WINBIOREGISTEREDFORMAT_4095e5f59bdb as WINBIOREGISTEREDFORMAT}
+
+pub using @c98daf7570978765 {type WINBIOSECUREBUFFERHEADERV1_8282f3f315fe as WINBIOSECUREBUFFERHEADERV1}
+
+pub using @c98daf7570978765 {type WINBIOSECURECONNECTIONDATA_d84a0c5b3793 as WINBIOSECURECONNECTIONDATA}
+
+pub using @c98daf7570978765 {type WINBIOSECURECONNECTIONPARAMS_f79906fb2e00 as WINBIOSECURECONNECTIONPARAMS}
+
+pub using @c98daf7570978765 {type WINBIOSENSORATTRIBUTES_525819ccbe05 as WINBIOSENSORATTRIBUTES}
+
+pub using @c98daf7570978765 {type WINBIOSENSORINTERFACE_50ad15d83435 as WINBIOSENSORINTERFACE}
+
+pub using @c98daf7570978765 {type WINBIOSETINDICATOR_6dc48a9c6afb as WINBIOSETINDICATOR}
+
+pub using @c98daf7570978765 {type WINBIOSETTINGSOURCE_9eaef769598c as WINBIOSETTINGSOURCE}
+
+pub using @c98daf7570978765 {type WINBIOSTORAGEINTERFACE_cb2254e12f04 as WINBIOSTORAGEINTERFACE}
+
+pub using @c98daf7570978765 {type WINBIOSTORAGERECORD_4727d5f8a81c as WINBIOSTORAGERECORD}
+
+pub using @c98daf7570978765 {type WINBIOSTORAGESCHEMA_73dcd0b74163 as WINBIOSTORAGESCHEMA}
+
+pub using @c98daf7570978765 {type WINBIOSUPPORTEDALGORITHMS_f9b18a639303 as WINBIOSUPPORTEDALGORITHMS}
+
+pub using @c98daf7570978765 {type WINBIOUNITSCHEMA_434c8cb8755b as WINBIOUNITSCHEMA}
+
+pub using @c98daf7570978765 {type WINBIOUPDATEFIRMWARE_fc9d1a3eec03 as WINBIOUPDATEFIRMWARE}
+
+pub using @c98daf7570978765 {type WINBIOVERSION_e7dddd174c7e as WINBIOVERSION}
+
+pub using @c98daf7570978765 {type WINIBIOENGINECONTEXT_f983f2b274d8 as WINIBIOENGINECONTEXT}
+
+pub using @c98daf7570978765 {type WINIBIOSENSORCONTEXT_b9597a4adb8f as WINIBIOSENSORCONTEXT}
+
+pub using @c98daf7570978765 {type WINIBIOSTORAGECONTEXT_0cd97b4df759 as WINIBIOSTORAGECONTEXT}
+
+// Traits
+

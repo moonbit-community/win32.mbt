@@ -1,0 +1,964 @@
+// Generated using `moon info`, DON'T EDIT IT
+package "moonbit-community/win32-bindings/windows/win32/system/parental_controls"
+
+import {
+  "moonbit-community/win32-bindings/runtime/core",
+  "moonbit-community/win32-bindings/scc/a6b6860ea8e439ee",
+}
+
+// Values
+pub let array_sep_char : UInt
+
+pub fn configure(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn configure_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn disable(@core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn disable_raw(@core.RawAddress) -> Int
+
+pub fn enable(@core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn enable_raw(@core.RawAddress) -> Int
+
+pub let facility_wpc : UInt
+
+pub fn get_current(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn get_current_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn get_games_settings(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn get_games_settings_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn get_last_settings_change_time(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn get_last_settings_change_time_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn get_restrictions(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn get_restrictions_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn get_settings(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn get_settings_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn get_user_settings(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn get_user_settings_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn get_user_summary(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn get_user_summary_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn get_visibility(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn get_visibility_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn get_web_filter_info(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn get_web_filter_info_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn get_web_settings(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn get_web_settings_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn is_blocked(@core.RawAddress, Bytes, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn is_blocked_raw(@core.RawAddress, Bytes, @core.RawAddress) -> Int
+
+pub fn is_logging_required(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn is_logging_required_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub let msg_event_app_blocked : Int
+
+pub let msg_event_app_override : Int
+
+pub let msg_event_application : Int
+
+pub let msg_event_computer_usage : Int
+
+pub let msg_event_content_usage : Int
+
+pub let msg_event_custom : Int
+
+pub let msg_event_email_contact : Int
+
+pub let msg_event_email_received : Int
+
+pub let msg_event_email_sent : Int
+
+pub let msg_event_file_download : Int
+
+pub let msg_event_game_start : Int
+
+pub let msg_event_im_contact : Int
+
+pub let msg_event_im_feature : Int
+
+pub let msg_event_im_invitation : Int
+
+pub let msg_event_im_join : Int
+
+pub let msg_event_im_leave : Int
+
+pub let msg_event_media_playback : Int
+
+pub let msg_event_setting_change : Int
+
+pub let msg_event_url_visit : Int
+
+pub let msg_event_web_override : Int
+
+pub let msg_event_website_visit : Int
+
+pub let msg_keyword_third_party : Int
+
+pub let msg_keyword_wpc : Int
+
+pub let msg_opcode_launch : Int
+
+pub let msg_opcode_locate : Int
+
+pub let msg_opcode_modify : Int
+
+pub let msg_opcode_system : Int
+
+pub let msg_opcode_web : Int
+
+pub let msg_publisher_name : Int
+
+pub let msg_task_app_blocked : Int
+
+pub let msg_task_app_override : Int
+
+pub let msg_task_application : Int
+
+pub let msg_task_computer_usage : Int
+
+pub let msg_task_content_usage : Int
+
+pub let msg_task_custom : Int
+
+pub let msg_task_email_contact : Int
+
+pub let msg_task_email_received : Int
+
+pub let msg_task_email_sent : Int
+
+pub let msg_task_file_download : Int
+
+pub let msg_task_game_start : Int
+
+pub let msg_task_im_contact : Int
+
+pub let msg_task_im_feature : Int
+
+pub let msg_task_im_invitation : Int
+
+pub let msg_task_im_join : Int
+
+pub let msg_task_im_leave : Int
+
+pub let msg_task_media_playback : Int
+
+pub let msg_task_setting_change : Int
+
+pub let msg_task_url_visit : Int
+
+pub let msg_task_web_override : Int
+
+pub let msg_task_website_visit : Int
+
+pub fn request_override(@core.RawAddress, @core.RawAddress, @core.RawAddress, UInt) -> Unit raise @core.WindowsError
+
+pub fn request_override_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, UInt) -> Int
+
+pub fn request_url_override(@core.RawAddress, @core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn request_url_override_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> Int
+
+pub let wpc_app_launch : UInt
+
+pub let wpc_args_applicationevent_cargs : Int
+
+pub let wpc_args_applicationevent_creationtime : Int
+
+pub let wpc_args_applicationevent_decision : Int
+
+pub let wpc_args_applicationevent_processid : Int
+
+pub let wpc_args_applicationevent_serializedapplication : Int
+
+pub let wpc_args_applicationevent_timeused : Int
+
+pub let wpc_args_appoverrideevent_cargs : Int
+
+pub let wpc_args_appoverrideevent_path : Int
+
+pub let wpc_args_appoverrideevent_reason : Int
+
+pub let wpc_args_appoverrideevent_userid : Int
+
+pub let wpc_args_computerusageevent_cargs : Int
+
+pub let wpc_args_computerusageevent_id : Int
+
+pub let wpc_args_computerusageevent_timeused : Int
+
+pub let wpc_args_contentusageevent_cargs : Int
+
+pub let wpc_args_contentusageevent_category : Int
+
+pub let wpc_args_contentusageevent_contentproviderid : Int
+
+pub let wpc_args_contentusageevent_contentprovidertitle : Int
+
+pub let wpc_args_contentusageevent_decision : Int
+
+pub let wpc_args_contentusageevent_id : Int
+
+pub let wpc_args_contentusageevent_ratings : Int
+
+pub let wpc_args_contentusageevent_title : Int
+
+pub let wpc_args_conversationinitevent_accountname : Int
+
+pub let wpc_args_conversationinitevent_appname : Int
+
+pub let wpc_args_conversationinitevent_appversion : Int
+
+pub let wpc_args_conversationinitevent_cargs : Int
+
+pub let wpc_args_conversationinitevent_convid : Int
+
+pub let wpc_args_conversationinitevent_reason : Int
+
+pub let wpc_args_conversationinitevent_recipcount : Int
+
+pub let wpc_args_conversationinitevent_recipient : Int
+
+pub let wpc_args_conversationinitevent_requestingip : Int
+
+pub let wpc_args_conversationinitevent_sender : Int
+
+pub let wpc_args_conversationjoinevent_accountname : Int
+
+pub let wpc_args_conversationjoinevent_appname : Int
+
+pub let wpc_args_conversationjoinevent_appversion : Int
+
+pub let wpc_args_conversationjoinevent_cargs : Int
+
+pub let wpc_args_conversationjoinevent_convid : Int
+
+pub let wpc_args_conversationjoinevent_joiningip : Int
+
+pub let wpc_args_conversationjoinevent_joininguser : Int
+
+pub let wpc_args_conversationjoinevent_member : Int
+
+pub let wpc_args_conversationjoinevent_membercount : Int
+
+pub let wpc_args_conversationjoinevent_reason : Int
+
+pub let wpc_args_conversationjoinevent_sender : Int
+
+pub let wpc_args_conversationleaveevent_accountname : Int
+
+pub let wpc_args_conversationleaveevent_appname : Int
+
+pub let wpc_args_conversationleaveevent_appversion : Int
+
+pub let wpc_args_conversationleaveevent_cargs : Int
+
+pub let wpc_args_conversationleaveevent_convid : Int
+
+pub let wpc_args_conversationleaveevent_flags : Int
+
+pub let wpc_args_conversationleaveevent_leavingip : Int
+
+pub let wpc_args_conversationleaveevent_leavinguser : Int
+
+pub let wpc_args_conversationleaveevent_member : Int
+
+pub let wpc_args_conversationleaveevent_membercount : Int
+
+pub let wpc_args_conversationleaveevent_reason : Int
+
+pub let wpc_args_customevent_appname : Int
+
+pub let wpc_args_customevent_appversion : Int
+
+pub let wpc_args_customevent_blocked : Int
+
+pub let wpc_args_customevent_cargs : Int
+
+pub let wpc_args_customevent_event : Int
+
+pub let wpc_args_customevent_publisher : Int
+
+pub let wpc_args_customevent_reason : Int
+
+pub let wpc_args_customevent_value1 : Int
+
+pub let wpc_args_customevent_value2 : Int
+
+pub let wpc_args_customevent_value3 : Int
+
+pub let wpc_args_emailcontactevent_appname : Int
+
+pub let wpc_args_emailcontactevent_appversion : Int
+
+pub let wpc_args_emailcontactevent_cargs : Int
+
+pub let wpc_args_emailcontactevent_emailaccount : Int
+
+pub let wpc_args_emailcontactevent_newid : Int
+
+pub let wpc_args_emailcontactevent_newname : Int
+
+pub let wpc_args_emailcontactevent_oldid : Int
+
+pub let wpc_args_emailcontactevent_oldname : Int
+
+pub let wpc_args_emailcontactevent_reason : Int
+
+pub let wpc_args_emailreceievedevent_appname : Int
+
+pub let wpc_args_emailreceievedevent_appversion : Int
+
+pub let wpc_args_emailreceievedevent_attachcount : Int
+
+pub let wpc_args_emailreceievedevent_attachmentname : Int
+
+pub let wpc_args_emailreceievedevent_cargs : Int
+
+pub let wpc_args_emailreceievedevent_emailaccount : Int
+
+pub let wpc_args_emailreceievedevent_reason : Int
+
+pub let wpc_args_emailreceievedevent_receivedtime : Int
+
+pub let wpc_args_emailreceievedevent_recipcount : Int
+
+pub let wpc_args_emailreceievedevent_recipient : Int
+
+pub let wpc_args_emailreceievedevent_sender : Int
+
+pub let wpc_args_emailreceievedevent_subject : Int
+
+pub let wpc_args_emailsentevent_appname : Int
+
+pub let wpc_args_emailsentevent_appversion : Int
+
+pub let wpc_args_emailsentevent_attachcount : Int
+
+pub let wpc_args_emailsentevent_attachmentname : Int
+
+pub let wpc_args_emailsentevent_cargs : Int
+
+pub let wpc_args_emailsentevent_emailaccount : Int
+
+pub let wpc_args_emailsentevent_reason : Int
+
+pub let wpc_args_emailsentevent_recipcount : Int
+
+pub let wpc_args_emailsentevent_recipient : Int
+
+pub let wpc_args_emailsentevent_sender : Int
+
+pub let wpc_args_emailsentevent_subject : Int
+
+pub let wpc_args_filedownloadevent_appname : Int
+
+pub let wpc_args_filedownloadevent_blocked : Int
+
+pub let wpc_args_filedownloadevent_cargs : Int
+
+pub let wpc_args_filedownloadevent_path : Int
+
+pub let wpc_args_filedownloadevent_url : Int
+
+pub let wpc_args_filedownloadevent_version : Int
+
+pub let wpc_args_gamestartevent_appid : Int
+
+pub let wpc_args_gamestartevent_appversion : Int
+
+pub let wpc_args_gamestartevent_cargs : Int
+
+pub let wpc_args_gamestartevent_desccount : Int
+
+pub let wpc_args_gamestartevent_descriptor : Int
+
+pub let wpc_args_gamestartevent_instanceid : Int
+
+pub let wpc_args_gamestartevent_path : Int
+
+pub let wpc_args_gamestartevent_pid : Int
+
+pub let wpc_args_gamestartevent_rating : Int
+
+pub let wpc_args_gamestartevent_ratingsystem : Int
+
+pub let wpc_args_gamestartevent_reason : Int
+
+pub let wpc_args_imcontactevent_accountname : Int
+
+pub let wpc_args_imcontactevent_appname : Int
+
+pub let wpc_args_imcontactevent_appversion : Int
+
+pub let wpc_args_imcontactevent_cargs : Int
+
+pub let wpc_args_imcontactevent_newid : Int
+
+pub let wpc_args_imcontactevent_newname : Int
+
+pub let wpc_args_imcontactevent_oldid : Int
+
+pub let wpc_args_imcontactevent_oldname : Int
+
+pub let wpc_args_imcontactevent_reason : Int
+
+pub let wpc_args_imfeatureevent_accountname : Int
+
+pub let wpc_args_imfeatureevent_appname : Int
+
+pub let wpc_args_imfeatureevent_appversion : Int
+
+pub let wpc_args_imfeatureevent_cargs : Int
+
+pub let wpc_args_imfeatureevent_convid : Int
+
+pub let wpc_args_imfeatureevent_data : Int
+
+pub let wpc_args_imfeatureevent_mediatype : Int
+
+pub let wpc_args_imfeatureevent_reason : Int
+
+pub let wpc_args_imfeatureevent_recipcount : Int
+
+pub let wpc_args_imfeatureevent_recipient : Int
+
+pub let wpc_args_imfeatureevent_sender : Int
+
+pub let wpc_args_imfeatureevent_senderip : Int
+
+pub let wpc_args_mediadownloadevent_album : Int
+
+pub let wpc_args_mediadownloadevent_appname : Int
+
+pub let wpc_args_mediadownloadevent_appversion : Int
+
+pub let wpc_args_mediadownloadevent_cargs : Int
+
+pub let wpc_args_mediadownloadevent_explicit : Int
+
+pub let wpc_args_mediadownloadevent_mediatype : Int
+
+pub let wpc_args_mediadownloadevent_path : Int
+
+pub let wpc_args_mediadownloadevent_pml : Int
+
+pub let wpc_args_mediadownloadevent_reason : Int
+
+pub let wpc_args_mediadownloadevent_title : Int
+
+pub let wpc_args_mediaplaybackevent_album : Int
+
+pub let wpc_args_mediaplaybackevent_appname : Int
+
+pub let wpc_args_mediaplaybackevent_appversion : Int
+
+pub let wpc_args_mediaplaybackevent_cargs : Int
+
+pub let wpc_args_mediaplaybackevent_explicit : Int
+
+pub let wpc_args_mediaplaybackevent_mediatype : Int
+
+pub let wpc_args_mediaplaybackevent_path : Int
+
+pub let wpc_args_mediaplaybackevent_pml : Int
+
+pub let wpc_args_mediaplaybackevent_reason : Int
+
+pub let wpc_args_mediaplaybackevent_title : Int
+
+pub let wpc_args_saferappblocked_cargs : Int
+
+pub let wpc_args_saferappblocked_path : Int
+
+pub let wpc_args_saferappblocked_ruleid : Int
+
+pub let wpc_args_saferappblocked_timestamp : Int
+
+pub let wpc_args_saferappblocked_userid : Int
+
+pub let wpc_args_settingschangeevent_cargs : Int
+
+pub let wpc_args_settingschangeevent_class : Int
+
+pub let wpc_args_settingschangeevent_newval : Int
+
+pub let wpc_args_settingschangeevent_oldval : Int
+
+pub let wpc_args_settingschangeevent_optional : Int
+
+pub let wpc_args_settingschangeevent_owner : Int
+
+pub let wpc_args_settingschangeevent_reason : Int
+
+pub let wpc_args_settingschangeevent_setting : Int
+
+pub let wpc_args_urlvisitevent_appname : Int
+
+pub let wpc_args_urlvisitevent_cargs : Int
+
+pub let wpc_args_urlvisitevent_catcount : Int
+
+pub let wpc_args_urlvisitevent_category : Int
+
+pub let wpc_args_urlvisitevent_ratingsystemid : Int
+
+pub let wpc_args_urlvisitevent_reason : Int
+
+pub let wpc_args_urlvisitevent_url : Int
+
+pub let wpc_args_urlvisitevent_version : Int
+
+pub let wpc_args_weboverrideevent_cargs : Int
+
+pub let wpc_args_weboverrideevent_reason : Int
+
+pub let wpc_args_weboverrideevent_url : Int
+
+pub let wpc_args_weboverrideevent_userid : Int
+
+pub let wpc_args_websitevisitevent_blockedcategories : Int
+
+pub let wpc_args_websitevisitevent_cargs : Int
+
+pub let wpc_args_websitevisitevent_categories : Int
+
+pub let wpc_args_websitevisitevent_contenttype : Int
+
+pub let wpc_args_websitevisitevent_decision : Int
+
+pub let wpc_args_websitevisitevent_referrer : Int
+
+pub let wpc_args_websitevisitevent_serializedapplication : Int
+
+pub let wpc_args_websitevisitevent_telemetry : Int
+
+pub let wpc_args_websitevisitevent_title : Int
+
+pub let wpc_args_websitevisitevent_url : Int
+
+pub let wpc_media_explicit_false : Int
+
+pub let wpc_media_explicit_true : Int
+
+pub let wpc_media_explicit_unknown : Int
+
+pub let wpc_media_type_audio_file : Int
+
+pub let wpc_media_type_cd_audio : Int
+
+pub let wpc_media_type_dvd : Int
+
+pub let wpc_media_type_max : Int
+
+pub let wpc_media_type_other : Int
+
+pub let wpc_media_type_picture_file : Int
+
+pub let wpc_media_type_recorded_tv : Int
+
+pub let wpc_media_type_video_file : Int
+
+pub let wpc_setting_count : Int
+
+pub let wpc_settings_allow_block : Int
+
+pub let wpc_settings_game_allow_unrated : Int
+
+pub let wpc_settings_game_blocked : Int
+
+pub let wpc_settings_game_denied_descriptors : Int
+
+pub let wpc_settings_game_max_allowed : Int
+
+pub let wpc_settings_game_restricted : Int
+
+pub let wpc_settings_locate : UInt
+
+pub let wpc_settings_modify : UInt
+
+pub let wpc_settings_rating_system_path : Int
+
+pub let wpc_settings_system_current_rating_system : Int
+
+pub let wpc_settings_system_filter_id : Int
+
+pub let wpc_settings_system_filter_name : Int
+
+pub let wpc_settings_system_http_exemption_list : Int
+
+pub let wpc_settings_system_last_log_view : Int
+
+pub let wpc_settings_system_locale : Int
+
+pub let wpc_settings_system_log_view_reminder_interval : Int
+
+pub let wpc_settings_system_url_exemption_list : Int
+
+pub let wpc_settings_user_app_restrictions : Int
+
+pub let wpc_settings_user_hourly_restrictions : Int
+
+pub let wpc_settings_user_logging_required : Int
+
+pub let wpc_settings_user_logon_hours : Int
+
+pub let wpc_settings_user_overrride_requests : Int
+
+pub let wpc_settings_user_time_allowance : Int
+
+pub let wpc_settings_user_time_allowance_restrictions : Int
+
+pub let wpc_settings_user_wpc_enabled : Int
+
+pub let wpc_settings_web_block_unrated : Int
+
+pub let wpc_settings_web_blocked_category_list : Int
+
+pub let wpc_settings_web_download_blocked : Int
+
+pub let wpc_settings_web_filter_level : Int
+
+pub let wpc_settings_web_filter_on : Int
+
+pub let wpc_settings_wpc_enabled : Int
+
+pub let wpc_settings_wpc_extension_disabledimage_path : Int
+
+pub let wpc_settings_wpc_extension_image_path : Int
+
+pub let wpc_settings_wpc_extension_name : Int
+
+pub let wpc_settings_wpc_extension_path : Int
+
+pub let wpc_settings_wpc_extension_silo : Int
+
+pub let wpc_settings_wpc_extension_sub_title : Int
+
+pub let wpc_settings_wpc_logging_required : Int
+
+pub let wpc_settings_wpc_provider_current : Int
+
+pub let wpc_system : UInt
+
+pub let wpc_web : UInt
+
+pub let wpcchannel : UInt
+
+pub let wpcevent_application_value : UInt
+
+pub let wpcevent_appoverride_value : UInt
+
+pub let wpcevent_computerusage_value : UInt
+
+pub let wpcevent_contentusage_value : UInt
+
+pub let wpcevent_custom_value : UInt
+
+pub let wpcevent_email_contact_value : UInt
+
+pub let wpcevent_email_received_value : UInt
+
+pub let wpcevent_email_sent_value : UInt
+
+pub let wpcevent_game_start_value : UInt
+
+pub let wpcevent_im_contact_value : UInt
+
+pub let wpcevent_im_feature_value : UInt
+
+pub let wpcevent_im_invitation_value : UInt
+
+pub let wpcevent_im_join_value : UInt
+
+pub let wpcevent_im_leave_value : UInt
+
+pub let wpcevent_media_playback_value : UInt
+
+pub let wpcevent_sys_settingchange_value : UInt
+
+pub let wpcevent_system_appblocked_value : UInt
+
+pub let wpcevent_web_filedownload_value : UInt
+
+pub let wpcevent_web_urlvisit_value : UInt
+
+pub let wpcevent_web_websitevisit_value : UInt
+
+pub let wpcevent_weboverride_value : UInt
+
+pub let wpcflag_application : Int
+
+pub let wpcflag_apps_restricted : Int
+
+pub let wpcflag_games_blocked : Int
+
+pub let wpcflag_games_restricted : Int
+
+pub let wpcflag_hours_restricted : Int
+
+pub let wpcflag_im_feature_all : Int
+
+pub let wpcflag_im_feature_audio : Int
+
+pub let wpcflag_im_feature_fileswap : Int
+
+pub let wpcflag_im_feature_game : Int
+
+pub let wpcflag_im_feature_none : Int
+
+pub let wpcflag_im_feature_sending : Int
+
+pub let wpcflag_im_feature_sms : Int
+
+pub let wpcflag_im_feature_urlswap : Int
+
+pub let wpcflag_im_feature_video : Int
+
+pub let wpcflag_im_leave_conversation_end : Int
+
+pub let wpcflag_im_leave_forced : Int
+
+pub let wpcflag_im_leave_normal : Int
+
+pub let wpcflag_isblocked_attachmentblocked : Int
+
+pub let wpcflag_isblocked_badpass : Int
+
+pub let wpcflag_isblocked_categoryblocked : Int
+
+pub let wpcflag_isblocked_categorynotinlist : Int
+
+pub let wpcflag_isblocked_contactblocked : Int
+
+pub let wpcflag_isblocked_descriptorblocked : Int
+
+pub let wpcflag_isblocked_downloadblocked : Int
+
+pub let wpcflag_isblocked_emailblocked : Int
+
+pub let wpcflag_isblocked_explicitblock : Int
+
+pub let wpcflag_isblocked_featureblocked : Int
+
+pub let wpcflag_isblocked_gamesblocked : Int
+
+pub let wpcflag_isblocked_imblocked : Int
+
+pub let wpcflag_isblocked_internalerror : Int
+
+pub let wpcflag_isblocked_maxhours : Int
+
+pub let wpcflag_isblocked_mediaplaybackblocked : Int
+
+pub let wpcflag_isblocked_noaccess : Int
+
+pub let wpcflag_isblocked_notblocked : Int
+
+pub let wpcflag_isblocked_notexplicitlyallowed : Int
+
+pub let wpcflag_isblocked_notinlist : Int
+
+pub let wpcflag_isblocked_notkids : Int
+
+pub let wpcflag_isblocked_ratingblocked : Int
+
+pub let wpcflag_isblocked_receiverblocked : Int
+
+pub let wpcflag_isblocked_senderblocked : Int
+
+pub let wpcflag_isblocked_settingschangeblocked : Int
+
+pub let wpcflag_isblocked_spechours : Int
+
+pub let wpcflag_isblocked_unrated : Int
+
+pub let wpcflag_isblocked_webblocked : Int
+
+pub let wpcflag_logging_required : Int
+
+pub let wpcflag_logoff_type_forcedfus : Int
+
+pub let wpcflag_logoff_type_fus : Int
+
+pub let wpcflag_logoff_type_logout : Int
+
+pub let wpcflag_logoff_type_restart : Int
+
+pub let wpcflag_logoff_type_shutdown : Int
+
+pub let wpcflag_no_restriction : Int
+
+pub let wpcflag_time_allowance_restricted : Int
+
+pub let wpcflag_web_filtered : Int
+
+pub let wpcflag_web_setting_downloadsblocked : Int
+
+pub let wpcflag_web_setting_notblocked : Int
+
+pub let wpcflag_wpc_hidden : Int
+
+pub let wpcflag_wpc_visible : Int
+
+pub let wpcprov_keyword_third_party : UInt
+
+pub let wpcprov_keyword_wpc : UInt
+
+pub let wpcprov_task_app_blocked : UInt
+
+pub let wpcprov_task_app_override : UInt
+
+pub let wpcprov_task_application : UInt
+
+pub let wpcprov_task_computer_usage : UInt
+
+pub let wpcprov_task_content_usage : UInt
+
+pub let wpcprov_task_custom : UInt
+
+pub let wpcprov_task_email_contact : UInt
+
+pub let wpcprov_task_email_received : UInt
+
+pub let wpcprov_task_email_sent : UInt
+
+pub let wpcprov_task_file_download : UInt
+
+pub let wpcprov_task_game_start : UInt
+
+pub let wpcprov_task_im_contact : UInt
+
+pub let wpcprov_task_im_feature : UInt
+
+pub let wpcprov_task_im_invitation : UInt
+
+pub let wpcprov_task_im_join : UInt
+
+pub let wpcprov_task_im_leave : UInt
+
+pub let wpcprov_task_media_playback : UInt
+
+pub let wpcprov_task_setting_change : UInt
+
+pub let wpcprov_task_url_visit : UInt
+
+pub let wpcprov_task_web_override : UInt
+
+pub let wpcprov_task_website_visit : UInt
+
+// Errors
+
+// Types and methods
+
+// Type aliases
+pub using @a6b6860ea8e439ee {type IWPCGamesSettings_aa0955eb5b02 as IWPCGamesSettings}
+
+pub using @a6b6860ea8e439ee {type IWPCProviderConfig_3f29b48e6d8c as IWPCProviderConfig}
+
+pub using @a6b6860ea8e439ee {type IWPCProviderState_230c0fb913ed as IWPCProviderState}
+
+pub using @a6b6860ea8e439ee {type IWPCProviderSupport_b436bf28266c as IWPCProviderSupport}
+
+pub using @a6b6860ea8e439ee {type IWPCSettings_fecfe38f71d0 as IWPCSettings}
+
+pub using @a6b6860ea8e439ee {type IWPCWebSettings_5799facc5b13 as IWPCWebSettings}
+
+pub using @a6b6860ea8e439ee {type IWindowsParentalControls_7830b01da481 as IWindowsParentalControls}
+
+pub using @a6b6860ea8e439ee {type IWindowsParentalControlsCore_881781d8416e as IWindowsParentalControlsCore}
+
+pub using @a6b6860ea8e439ee {type WPCARGSAPPLICATIONEVENT_fb638d6d1dee as WPCARGSAPPLICATIONEVENT}
+
+pub using @a6b6860ea8e439ee {type WPCARGSAPPOVERRIDEEVENT_98000fd71be0 as WPCARGSAPPOVERRIDEEVENT}
+
+pub using @a6b6860ea8e439ee {type WPCARGSCOMPUTERUSAGEEVENT_7d1d8f98530f as WPCARGSCOMPUTERUSAGEEVENT}
+
+pub using @a6b6860ea8e439ee {type WPCARGSCONTENTUSAGEEVENT_051a8b855499 as WPCARGSCONTENTUSAGEEVENT}
+
+pub using @a6b6860ea8e439ee {type WPCARGSCONVERSATIONINITEVENT_dd912312135b as WPCARGSCONVERSATIONINITEVENT}
+
+pub using @a6b6860ea8e439ee {type WPCARGSCONVERSATIONJOINEVENT_5294b238404f as WPCARGSCONVERSATIONJOINEVENT}
+
+pub using @a6b6860ea8e439ee {type WPCARGSCONVERSATIONLEAVEEVENT_110882562af7 as WPCARGSCONVERSATIONLEAVEEVENT}
+
+pub using @a6b6860ea8e439ee {type WPCARGSCUSTOMEVENT_843d298aa2e4 as WPCARGSCUSTOMEVENT}
+
+pub using @a6b6860ea8e439ee {type WPCARGSEMAILCONTACTEVENT_64044f8dcffb as WPCARGSEMAILCONTACTEVENT}
+
+pub using @a6b6860ea8e439ee {type WPCARGSEMAILRECEIEVEDEVENT_2180c6497b42 as WPCARGSEMAILRECEIEVEDEVENT}
+
+pub using @a6b6860ea8e439ee {type WPCARGSEMAILSENTEVENT_1d8ff304f3df as WPCARGSEMAILSENTEVENT}
+
+pub using @a6b6860ea8e439ee {type WPCARGSFILEDOWNLOADEVENT_fb09d0fa5f6a as WPCARGSFILEDOWNLOADEVENT}
+
+pub using @a6b6860ea8e439ee {type WPCARGSGAMESTARTEVENT_6617eec29901 as WPCARGSGAMESTARTEVENT}
+
+pub using @a6b6860ea8e439ee {type WPCARGSIMCONTACTEVENT_1356c8718373 as WPCARGSIMCONTACTEVENT}
+
+pub using @a6b6860ea8e439ee {type WPCARGSIMFEATUREEVENT_250a1bf6bc31 as WPCARGSIMFEATUREEVENT}
+
+pub using @a6b6860ea8e439ee {type WPCARGSMEDIADOWNLOADEVENT_973a0791a71c as WPCARGSMEDIADOWNLOADEVENT}
+
+pub using @a6b6860ea8e439ee {type WPCARGSMEDIAPLAYBACKEVENT_8d02420d504e as WPCARGSMEDIAPLAYBACKEVENT}
+
+pub using @a6b6860ea8e439ee {type WPCARGSSAFERAPPBLOCKED_226913373876 as WPCARGSSAFERAPPBLOCKED}
+
+pub using @a6b6860ea8e439ee {type WPCARGSSETTINGSCHANGEEVENT_5b97b5e8a8dc as WPCARGSSETTINGSCHANGEEVENT}
+
+pub using @a6b6860ea8e439ee {type WPCARGSURLVISITEVENT_3d5371b19f1d as WPCARGSURLVISITEVENT}
+
+pub using @a6b6860ea8e439ee {type WPCARGSWEBOVERRIDEEVENT_711ac78712e4 as WPCARGSWEBOVERRIDEEVENT}
+
+pub using @a6b6860ea8e439ee {type WPCARGSWEBSITEVISITEVENT_ac5178760fb7 as WPCARGSWEBSITEVISITEVENT}
+
+pub using @a6b6860ea8e439ee {type WPCFLAGIMFEATURE_08849b91cbde as WPCFLAGIMFEATURE}
+
+pub using @a6b6860ea8e439ee {type WPCFLAGIMLEAVE_eec676c2d2a3 as WPCFLAGIMLEAVE}
+
+pub using @a6b6860ea8e439ee {type WPCFLAGISBLOCKED_3878a14b6059 as WPCFLAGISBLOCKED}
+
+pub using @a6b6860ea8e439ee {type WPCFLAGLOGOFFTYPE_cc3dbcdca052 as WPCFLAGLOGOFFTYPE}
+
+pub using @a6b6860ea8e439ee {type WPCFLAGOVERRIDE_906f02a79bbe as WPCFLAGOVERRIDE}
+
+pub using @a6b6860ea8e439ee {type WPCFLAGRESTRICTION_5b0e0d0eda6d as WPCFLAGRESTRICTION}
+
+pub using @a6b6860ea8e439ee {type WPCFLAGVISIBILITY_07efe0f4411d as WPCFLAGVISIBILITY}
+
+pub using @a6b6860ea8e439ee {type WPCFLAGWEBSETTING_e4c13a4035d7 as WPCFLAGWEBSETTING}
+
+pub using @a6b6860ea8e439ee {type WPCMEDIAEXPLICIT_5f9bcd2035c9 as WPCMEDIAEXPLICIT}
+
+pub using @a6b6860ea8e439ee {type WPCMEDIATYPE_9f639f5fd2b8 as WPCMEDIATYPE}
+
+pub using @a6b6860ea8e439ee {type WPCSETTINGS_43fbe47bca16 as WPCSETTINGS}
+
+pub using @a6b6860ea8e439ee {type WindowsParentalControls_3aa2dc9e36bb as WindowsParentalControls}
+
+pub using @a6b6860ea8e439ee {type WpcProviderSupport_cf20a97bbf46 as WpcProviderSupport}
+
+pub using @a6b6860ea8e439ee {type WpcSettingsProvider_7bebe9175e67 as WpcSettingsProvider}
+
+// Traits
+

@@ -1,0 +1,390 @@
+// Generated using `moon info`, DON'T EDIT IT
+package "moonbit-community/win32-bindings/windows/win32/media/audio/apo"
+
+import {
+  "moonbit-community/win32-bindings/runtime/core",
+  "moonbit-community/win32-bindings/scc/dcdfd6a468933bef",
+}
+
+// Values
+pub fn accept_input_raw(@core.RawAddress, UInt, @core.RawAddress) -> Unit
+
+pub fn add_auxiliary_input(@core.RawAddress, UInt, UInt, @core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn add_auxiliary_input_raw(@core.RawAddress, UInt, UInt, @core.RawAddress, @core.RawAddress) -> Int
+
+pub let apo_connection_buffer_type_allocated : Int
+
+pub let apo_connection_buffer_type_dependant : Int
+
+pub let apo_connection_buffer_type_external : Int
+
+pub let apo_flag_bitspersample_must_match : Int
+
+pub let apo_flag_default : Int
+
+pub let apo_flag_framespersecond_must_match : Int
+
+pub let apo_flag_inplace : Int
+
+pub let apo_flag_mixer : Int
+
+pub let apo_flag_none : Int
+
+pub let apo_flag_samplesperframe_must_match : Int
+
+pub let apo_log_level_always : Int
+
+pub let apo_log_level_critical : Int
+
+pub let apo_log_level_error : Int
+
+pub let apo_log_level_info : Int
+
+pub let apo_log_level_verbose : Int
+
+pub let apo_log_level_warning : Int
+
+pub fn apo_log_raw(@core.RawAddress, Int, @core.RawAddress) -> Unit
+
+pub let apo_notification_type_audio_environment_state_change : Int
+
+pub let apo_notification_type_device_orientation : Int
+
+pub let apo_notification_type_endpoint_property_change : Int
+
+pub let apo_notification_type_endpoint_volume : Int
+
+pub let apo_notification_type_endpoint_volume2 : Int
+
+pub let apo_notification_type_microphone_boost : Int
+
+pub let apo_notification_type_none : Int
+
+pub let apo_notification_type_system_effects_property_change : Int
+
+pub fn apo_process_raw(@core.RawAddress, UInt, @core.RawAddress, UInt, @core.RawAddress) -> Unit
+
+pub let apo_reference_stream_properties_none : Int
+
+pub let apo_reference_stream_properties_post_volume_loopback : Int
+
+pub let apoerr_already_initialized : Int
+
+pub let apoerr_already_unlocked : Int
+
+pub let apoerr_apo_locked : Int
+
+pub let apoerr_buffers_overlap : Int
+
+pub let apoerr_format_not_supported : Int
+
+pub let apoerr_invalid_apo_clsid : Int
+
+pub let apoerr_invalid_coeffcount : Int
+
+pub let apoerr_invalid_coefficient : Int
+
+pub let apoerr_invalid_connection_format : Int
+
+pub let apoerr_invalid_curve_param : Int
+
+pub let apoerr_invalid_inputid : Int
+
+pub let apoerr_invalid_output_maxframecount : Int
+
+pub let apoerr_not_initialized : Int
+
+pub let apoerr_num_connections_invalid : Int
+
+pub let audio_flow_pull : Int
+
+pub let audio_flow_push : Int
+
+pub let audio_max_channels : UInt
+
+pub let audio_max_framerate : UInt64
+
+pub let audio_min_channels : UInt
+
+pub let audio_min_framerate : UInt64
+
+pub let audio_systemeffect_state_off : Int
+
+pub let audio_systemeffect_state_on : Int
+
+pub let audiomediatype_equal_format_data : UInt
+
+pub let audiomediatype_equal_format_types : UInt
+
+pub let audiomediatype_equal_format_user_data : UInt
+
+pub let buffer_invalid : Int
+
+pub let buffer_silent : Int
+
+pub let buffer_valid : Int
+
+pub fn calc_input_frames_raw(@core.RawAddress, UInt) -> UInt
+
+pub fn calc_max_input_frames(@core.RawAddress, UInt, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn calc_max_input_frames_raw(@core.RawAddress, UInt, @core.RawAddress) -> Int
+
+pub fn calc_max_output_frames(@core.RawAddress, UInt, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn calc_max_output_frames_raw(@core.RawAddress, UInt, @core.RawAddress) -> Int
+
+pub fn calc_output_frames_raw(@core.RawAddress, UInt) -> UInt
+
+pub let device_not_rotated : Int
+
+pub let device_rotated_180_degrees_clockwise : Int
+
+pub let device_rotated_270_degrees_clockwise : Int
+
+pub let device_rotated_90_degrees_clockwise : Int
+
+pub let e_audio_constriction14_14 : Int
+
+pub let e_audio_constriction44_16 : Int
+
+pub let e_audio_constriction48_16 : Int
+
+pub let e_audio_constriction_mute : Int
+
+pub let e_audio_constriction_off : Int
+
+pub fn get_apo_notification_registration_info(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn get_apo_notification_registration_info2(@core.RawAddress, Int, @core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn get_apo_notification_registration_info2_raw(@core.RawAddress, Int, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn get_apo_notification_registration_info_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn get_audio_format_raw(@core.RawAddress) -> @core.RawAddress
+
+pub fn get_controllable_system_effects_list(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn get_controllable_system_effects_list_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn get_desired_reference_stream_properties(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn get_desired_reference_stream_properties_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn get_effects_list(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn get_effects_list_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn get_format(@core.RawAddress, UInt, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn get_format_count(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn get_format_count_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn get_format_raw(@core.RawAddress, UInt, @core.RawAddress) -> Int
+
+pub fn get_format_representation(@core.RawAddress, UInt, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn get_format_representation_raw(@core.RawAddress, UInt, @core.RawAddress) -> Int
+
+pub fn get_input_channel_count(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn get_input_channel_count_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn get_latency(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn get_latency_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn get_preferred_input_format(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn get_preferred_input_format_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn get_preferred_output_format(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn get_preferred_output_format_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn get_real_time_work_queue(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn get_real_time_work_queue_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn get_registration_properties(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn get_registration_properties_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn get_uncompressed_audio_format(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn get_uncompressed_audio_format_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn handle_notification_raw(@core.RawAddress, @core.RawAddress) -> Unit
+
+pub fn initialize(@core.RawAddress, UInt, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn initialize_raw(@core.RawAddress, UInt, @core.RawAddress) -> Int
+
+pub fn is_compressed_format(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn is_compressed_format_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn is_equal(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn is_equal_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn is_input_format_supported_4a2f80ec70(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn is_input_format_supported_4a2f80ec70_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn is_input_format_supported_53b4a91642(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn is_input_format_supported_53b4a91642_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn is_output_format_supported(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn is_output_format_supported_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn lock_for_process(@core.RawAddress, UInt, @core.RawAddress, UInt, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn lock_for_process_raw(@core.RawAddress, UInt, @core.RawAddress, UInt, @core.RawAddress) -> Int
+
+pub fn remove_auxiliary_input(@core.RawAddress, UInt) -> Unit raise @core.WindowsError
+
+pub fn remove_auxiliary_input_raw(@core.RawAddress, UInt) -> Int
+
+pub fn reset(@core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn reset_raw(@core.RawAddress) -> Int
+
+pub fn set_audio_device_modules_manager(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn set_audio_device_modules_manager_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn set_audio_system_effect_state(@core.RawAddress, Bytes, Int) -> Unit raise @core.WindowsError
+
+pub fn set_audio_system_effect_state_raw(@core.RawAddress, Bytes, Int) -> Int
+
+pub fn unlock_for_process(@core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn unlock_for_process_raw(@core.RawAddress) -> Int
+
+// Errors
+
+// Types and methods
+
+// Type aliases
+pub using @dcdfd6a468933bef {type APOBUFFERFLAGS_7b7fe2cd7fae as APOBUFFERFLAGS}
+
+pub using @dcdfd6a468933bef {type APOCONNECTIONBUFFERTYPE_56f01c998c67 as APOCONNECTIONBUFFERTYPE}
+
+pub using @dcdfd6a468933bef {type APOCONNECTIONDESCRIPTOR_e83d855893b4 as APOCONNECTIONDESCRIPTOR}
+
+pub using @dcdfd6a468933bef {type APOCONNECTIONPROPERTY_d042b4434a57 as APOCONNECTIONPROPERTY}
+
+pub using @dcdfd6a468933bef {type APOCONNECTIONPROPERTYV2_237badf23a47 as APOCONNECTIONPROPERTYV2}
+
+pub using @dcdfd6a468933bef {type APOFLAG_d7e08971b188 as APOFLAG}
+
+pub using @dcdfd6a468933bef {type APOInitBaseStruct_a0af00fa38b7 as APOInitBaseStruct}
+
+pub using @dcdfd6a468933bef {type APOInitSystemEffects_998ea6052805 as APOInitSystemEffects}
+
+pub using @dcdfd6a468933bef {type APOInitSystemEffects2_73613c26b08b as APOInitSystemEffects2}
+
+pub using @dcdfd6a468933bef {type APOInitSystemEffects3_c46bac54b21d as APOInitSystemEffects3}
+
+pub using @dcdfd6a468933bef {type APOLOGLEVEL_db6cc266d400 as APOLOGLEVEL}
+
+pub using @dcdfd6a468933bef {type APONOTIFICATION_8d572e9a188d as APONOTIFICATION}
+
+pub using @dcdfd6a468933bef {type APONOTIFICATIONDESCRIPTOR_d75f5ee528fc as APONOTIFICATIONDESCRIPTOR}
+
+pub using @dcdfd6a468933bef {type APONOTIFICATIONTYPE_1e686a995374 as APONOTIFICATIONTYPE}
+
+pub using @dcdfd6a468933bef {type APOREFERENCESTREAMPROPERTIES_356b1f35f2f4 as APOREFERENCESTREAMPROPERTIES}
+
+pub using @dcdfd6a468933bef {type APOREGPROPERTIES_ece37d39125f as APOREGPROPERTIES}
+
+pub using @dcdfd6a468933bef {type AUDIOENDPOINTPROPERTYCHANGEAPONOTIFICATIONDESCRIPTOR_a8d4a97f1b6a as AUDIOENDPOINTPROPERTYCHANGEAPONOTIFICATIONDESCRIPTOR}
+
+pub using @dcdfd6a468933bef {type AUDIOENDPOINTPROPERTYCHANGENOTIFICATION_7560e3eaa534 as AUDIOENDPOINTPROPERTYCHANGENOTIFICATION}
+
+pub using @dcdfd6a468933bef {type AUDIOENDPOINTVOLUMEAPONOTIFICATIONDESCRIPTOR_d0d0ba3de259 as AUDIOENDPOINTVOLUMEAPONOTIFICATIONDESCRIPTOR}
+
+pub using @dcdfd6a468933bef {type AUDIOENDPOINTVOLUMECHANGENOTIFICATION_16f363a8f993 as AUDIOENDPOINTVOLUMECHANGENOTIFICATION}
+
+pub using @dcdfd6a468933bef {type AUDIOENDPOINTVOLUMECHANGENOTIFICATION2_07df61fb1535 as AUDIOENDPOINTVOLUMECHANGENOTIFICATION2}
+
+pub using @dcdfd6a468933bef {type AUDIOENVIRONMENTSTATECHANGENOTIFICATION_356b8fe132a2 as AUDIOENVIRONMENTSTATECHANGENOTIFICATION}
+
+pub using @dcdfd6a468933bef {type AUDIOFLOWTYPE_b861a7dbaca3 as AUDIOFLOWTYPE}
+
+pub using @dcdfd6a468933bef {type AUDIOMICROPHONEBOOSTAPONOTIFICATIONDESCRIPTOR_8122ebc74f5c as AUDIOMICROPHONEBOOSTAPONOTIFICATIONDESCRIPTOR}
+
+pub using @dcdfd6a468933bef {type AUDIOMICROPHONEBOOSTNOTIFICATION_cb99039b5426 as AUDIOMICROPHONEBOOSTNOTIFICATION}
+
+pub using @dcdfd6a468933bef {type AUDIOSYSTEMEFFECT_0603885a80f5 as AUDIOSYSTEMEFFECT}
+
+pub using @dcdfd6a468933bef {type AUDIOSYSTEMEFFECTSPROPERTYCHANGEAPONOTIFICATIONDESCRIPTOR_1b17553df449 as AUDIOSYSTEMEFFECTSPROPERTYCHANGEAPONOTIFICATIONDESCRIPTOR}
+
+pub using @dcdfd6a468933bef {type AUDIOSYSTEMEFFECTSPROPERTYCHANGENOTIFICATION_cdb96eb4565b as AUDIOSYSTEMEFFECTSPROPERTYCHANGENOTIFICATION}
+
+pub using @dcdfd6a468933bef {type AUDIOSYSTEMEFFECTSTATE_07a2e1e32075 as AUDIOSYSTEMEFFECTSTATE}
+
+pub using @dcdfd6a468933bef {type AUDIOVOLUMENOTIFICATIONDATA2_88686fd82c10 as AUDIOVOLUMENOTIFICATIONDATA2}
+
+pub using @dcdfd6a468933bef {type AcousticEchoCancellerReferenceInput_5c37920335c2 as AcousticEchoCancellerReferenceInput}
+
+pub using @dcdfd6a468933bef {type AnonymousEUnion_418d94626ce8 as AnonymousEUnion_418d94626c}
+
+pub using @dcdfd6a468933bef {type AnonymousEUnion_dd4ee91587e8 as AnonymousEUnion_dd4ee91587}
+
+pub using @dcdfd6a468933bef {type AudioFXExtensionParams_6c82c36c1f88 as AudioFXExtensionParams}
+
+pub using @dcdfd6a468933bef {type DEVICEORIENTATIONTYPE_2d37b5902665 as DEVICEORIENTATIONTYPE}
+
+pub using @dcdfd6a468933bef {type EAudioConstriction_52c9b4834a46 as EAudioConstriction}
+
+pub using @dcdfd6a468933bef {type FNAPONOTIFICATIONCALLBACK_48bc18f8ae9f as FNAPONOTIFICATIONCALLBACK}
+
+pub using @dcdfd6a468933bef {type IApoAcousticEchoCancellation_b7c6b750d341 as IApoAcousticEchoCancellation}
+
+pub using @dcdfd6a468933bef {type IApoAcousticEchoCancellation2_2973f03878f8 as IApoAcousticEchoCancellation2}
+
+pub using @dcdfd6a468933bef {type IApoAuxiliaryInputConfiguration_cce66941f5ba as IApoAuxiliaryInputConfiguration}
+
+pub using @dcdfd6a468933bef {type IApoAuxiliaryInputRT_f513f8101937 as IApoAuxiliaryInputRT}
+
+pub using @dcdfd6a468933bef {type IAudioDeviceModulesClient_595f343e88f8 as IAudioDeviceModulesClient}
+
+pub using @dcdfd6a468933bef {type IAudioMediaType_71e2bda6123d as IAudioMediaType}
+
+pub using @dcdfd6a468933bef {type IAudioProcessingObject_a25a19be8f35 as IAudioProcessingObject}
+
+pub using @dcdfd6a468933bef {type IAudioProcessingObjectConfiguration_2dedf7607ea2 as IAudioProcessingObjectConfiguration}
+
+pub using @dcdfd6a468933bef {type IAudioProcessingObjectLoggingService_261de5d4ec5d as IAudioProcessingObjectLoggingService}
+
+pub using @dcdfd6a468933bef {type IAudioProcessingObjectNotifications_1d5ebaf69677 as IAudioProcessingObjectNotifications}
+
+pub using @dcdfd6a468933bef {type IAudioProcessingObjectNotifications2_70f7d9188503 as IAudioProcessingObjectNotifications2}
+
+pub using @dcdfd6a468933bef {type IAudioProcessingObjectPreferredFormatSupport_e7e296cdb165 as IAudioProcessingObjectPreferredFormatSupport}
+
+pub using @dcdfd6a468933bef {type IAudioProcessingObjectRT_779680c1edee as IAudioProcessingObjectRT}
+
+pub using @dcdfd6a468933bef {type IAudioProcessingObjectRTQueueService_76cf5be7bc99 as IAudioProcessingObjectRTQueueService}
+
+pub using @dcdfd6a468933bef {type IAudioProcessingObjectVBR_d2c9e6b048f7 as IAudioProcessingObjectVBR}
+
+pub using @dcdfd6a468933bef {type IAudioSystemEffects_b7d1056d9b72 as IAudioSystemEffects}
+
+pub using @dcdfd6a468933bef {type IAudioSystemEffects2_c17436aa119e as IAudioSystemEffects2}
+
+pub using @dcdfd6a468933bef {type IAudioSystemEffects3_40434819b273 as IAudioSystemEffects3}
+
+pub using @dcdfd6a468933bef {type IAudioSystemEffectsCustomFormats_79440e6261d0 as IAudioSystemEffectsCustomFormats}
+
+pub using @dcdfd6a468933bef {type UNCOMPRESSEDAUDIOFORMAT_0f459dd7dc42 as UNCOMPRESSEDAUDIOFORMAT}
+
+// Traits
+

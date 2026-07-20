@@ -1,0 +1,608 @@
+// Generated using `moon info`, DON'T EDIT IT
+package "moonbit-community/win32-bindings/windows/win32/system/memory"
+
+import {
+  "moonbit-community/win32-bindings/runtime/core",
+  "moonbit-community/win32-bindings/scc/a3d4bf33d3bc5d82",
+}
+
+// Values
+pub fn add_secure_memory_cache_callback_raw(@core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn allocate_user_physical_pages2_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, UInt) -> Int
+
+pub fn allocate_user_physical_pages_numa_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, UInt) -> @core.RawWin32Call[Int]
+
+pub fn allocate_user_physical_pages_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn create_file_mapping2_raw(@core.RawAddress, @core.RawAddress, UInt, UInt, UInt, UInt64, @core.RawAddress, @core.RawAddress, UInt) -> @core.RawWin32Call[@core.RawAddress]
+
+pub fn create_file_mapping_a_raw(@core.RawAddress, @core.RawAddress, UInt, UInt, UInt, @core.RawAddress) -> @core.RawWin32Call[@core.RawAddress]
+
+pub fn create_file_mapping_from_app_raw(@core.RawAddress, @core.RawAddress, UInt, UInt64, @core.RawAddress) -> @core.RawWin32Call[@core.RawAddress]
+
+pub fn create_file_mapping_numa_a_raw(@core.RawAddress, @core.RawAddress, UInt, UInt, UInt, @core.RawAddress, UInt) -> @core.RawWin32Call[@core.RawAddress]
+
+pub fn create_file_mapping_numa_w_raw(@core.RawAddress, @core.RawAddress, UInt, UInt, UInt, @core.RawAddress, UInt) -> @core.RawWin32Call[@core.RawAddress]
+
+pub fn create_file_mapping_w_raw(@core.RawAddress, @core.RawAddress, UInt, UInt, UInt, @core.RawAddress) -> @core.RawWin32Call[@core.RawAddress]
+
+pub fn create_memory_resource_notification_raw(Int) -> @core.RawWin32Call[@core.RawAddress]
+
+pub fn discard_virtual_memory_raw(@core.RawAddress, UInt64) -> UInt
+
+pub let file_cache_max_hard_disable : UInt
+
+pub let file_cache_max_hard_enable : UInt
+
+pub let file_cache_min_hard_disable : UInt
+
+pub let file_cache_min_hard_enable : UInt
+
+pub let file_map_all_access : UInt
+
+pub let file_map_copy : UInt
+
+pub let file_map_execute : UInt
+
+pub let file_map_large_pages : UInt
+
+pub let file_map_read : UInt
+
+pub let file_map_reserve : UInt
+
+pub let file_map_targets_invalid : UInt
+
+pub let file_map_write : UInt
+
+pub fn flush_view_of_file_raw(@core.RawAddress, UInt64) -> @core.RawWin32Call[Int]
+
+pub fn free_user_physical_pages_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn get_large_page_minimum_raw() -> UInt64
+
+pub fn get_memory_error_handling_capabilities_raw(@core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn get_memory_numa_closest_initiator_node_raw(UInt, @core.RawAddress) -> Int
+
+pub fn get_memory_numa_performance_information_raw(UInt, UInt, @core.RawAddress) -> Int
+
+pub fn get_process_heap_raw() -> @core.RawWin32Call[@core.RawAddress]
+
+pub fn get_process_heaps_raw(UInt, @core.RawAddress) -> @core.RawWin32Call[UInt]
+
+pub fn get_process_working_set_size_ex_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn get_system_file_cache_size_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn get_write_watch_raw(UInt, @core.RawAddress, UInt64, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub let ghnd : UInt
+
+pub fn global_alloc_raw(UInt, UInt64) -> @core.RawWin32Call[@core.RawAddress]
+
+pub fn global_flags_raw(@core.RawAddress) -> @core.RawWin32Call[UInt]
+
+pub fn global_handle_raw(@core.RawAddress) -> @core.RawWin32Call[@core.RawAddress]
+
+pub fn global_lock_raw(@core.RawAddress) -> @core.RawWin32Call[@core.RawAddress]
+
+pub fn global_re_alloc_raw(@core.RawAddress, UInt64, UInt) -> @core.RawWin32Call[@core.RawAddress]
+
+pub fn global_size_raw(@core.RawAddress) -> @core.RawWin32Call[UInt64]
+
+pub fn global_unlock_raw(@core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub let gmem_fixed : UInt
+
+pub let gmem_moveable : UInt
+
+pub let gmem_zeroinit : UInt
+
+pub let gptr : UInt
+
+pub fn heap_alloc_raw(@core.RawAddress, UInt, UInt64) -> @core.RawAddress
+
+pub fn heap_compact_raw(@core.RawAddress, UInt) -> @core.RawWin32Call[UInt64]
+
+pub let heap_compatibility_information : Int
+
+pub let heap_create_align_16 : UInt
+
+pub let heap_create_enable_execute : UInt
+
+pub let heap_create_enable_tracing : UInt
+
+pub let heap_create_hardened : UInt
+
+pub fn heap_create_raw(UInt, UInt64, UInt64) -> @core.RawWin32Call[@core.RawAddress]
+
+pub let heap_create_segment_heap : UInt
+
+pub fn heap_destroy_raw(@core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub let heap_disable_coalesce_on_free : UInt
+
+pub let heap_enable_termination_on_corruption : Int
+
+pub let heap_free_checking_enabled : UInt
+
+pub fn heap_free_raw(@core.RawAddress, UInt, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub let heap_generate_exceptions : UInt
+
+pub let heap_growable : UInt
+
+pub fn heap_lock_raw(@core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub let heap_maximum_tag : UInt
+
+pub let heap_no_serialize : UInt
+
+pub let heap_none : UInt
+
+pub let heap_optimize_resources : Int
+
+pub let heap_pseudo_tag_flag : UInt
+
+pub fn heap_query_information_raw(@core.RawAddress, Int, @core.RawAddress, UInt64, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn heap_re_alloc_raw(@core.RawAddress, UInt, @core.RawAddress, UInt64) -> @core.RawAddress
+
+pub let heap_realloc_in_place_only : UInt
+
+pub fn heap_set_information_raw(@core.RawAddress, Int, @core.RawAddress, UInt64) -> @core.RawWin32Call[Int]
+
+pub fn heap_size_raw(@core.RawAddress, UInt, @core.RawAddress) -> UInt64
+
+pub fn heap_summary_raw(@core.RawAddress, UInt, @core.RawAddress) -> Int
+
+pub let heap_tag : Int
+
+pub let heap_tag_shift : UInt
+
+pub let heap_tail_checking_enabled : UInt
+
+pub fn heap_unlock_raw(@core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn heap_validate_raw(@core.RawAddress, UInt, @core.RawAddress) -> Int
+
+pub fn heap_walk_raw(@core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub let heap_zero_memory : UInt
+
+pub let high_memory_resource_notification : Int
+
+pub fn is_bad_code_ptr_raw(@core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn is_bad_read_ptr_raw(@core.RawAddress, UInt64) -> Int
+
+pub fn is_bad_string_ptr_a_raw(@core.RawAddress, UInt64) -> Int
+
+pub fn is_bad_string_ptr_w_raw(@core.RawAddress, UInt64) -> Int
+
+pub fn is_bad_write_ptr_raw(@core.RawAddress, UInt64) -> Int
+
+pub let lhnd : UInt
+
+pub let lmem_fixed : UInt
+
+pub let lmem_moveable : UInt
+
+pub let lmem_zeroinit : UInt
+
+pub fn local_alloc_raw(UInt, UInt64) -> @core.RawWin32Call[@core.RawAddress]
+
+pub fn local_flags_raw(@core.RawAddress) -> @core.RawWin32Call[UInt]
+
+pub fn local_handle_raw(@core.RawAddress) -> @core.RawWin32Call[@core.RawAddress]
+
+pub fn local_lock_raw(@core.RawAddress) -> @core.RawWin32Call[@core.RawAddress]
+
+pub fn local_re_alloc_raw(@core.RawAddress, UInt64, UInt) -> @core.RawWin32Call[@core.RawAddress]
+
+pub fn local_size_raw(@core.RawAddress) -> @core.RawWin32Call[UInt64]
+
+pub fn local_unlock_raw(@core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub let low_memory_resource_notification : Int
+
+pub let lptr : UInt
+
+pub fn map_user_physical_pages_raw(@core.RawAddress, UInt64, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn map_user_physical_pages_scatter_raw(@core.RawAddress, UInt64, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn map_view_of_file3_from_app_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, UInt64, UInt64, UInt, UInt, @core.RawAddress, UInt) -> @core.RawWin32Call[@core.RawAddress]
+
+pub fn map_view_of_file3_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, UInt64, UInt64, UInt, UInt, @core.RawAddress, UInt) -> @core.RawWin32Call[@core.RawAddress]
+
+pub fn map_view_of_file_ex_numa_raw(@core.RawAddress, UInt, UInt, UInt, UInt64, @core.RawAddress, UInt) -> @core.RawWin32Call[@core.RawAddress]
+
+pub fn map_view_of_file_ex_raw(@core.RawAddress, UInt, UInt, UInt, UInt64, @core.RawAddress) -> @core.RawWin32Call[@core.RawAddress]
+
+pub fn map_view_of_file_from_app_raw(@core.RawAddress, UInt, UInt64, UInt64) -> @core.RawWin32Call[@core.RawAddress]
+
+pub fn map_view_of_file_numa2_raw(@core.RawAddress, @core.RawAddress, UInt64, @core.RawAddress, UInt64, UInt, UInt, UInt) -> @core.RawWin32Call[@core.RawAddress]
+
+pub fn map_view_of_file_raw(@core.RawAddress, UInt, UInt, UInt, UInt64) -> @core.RawWin32Call[@core.RawAddress]
+
+pub let mehc_patrol_scrubber_present : UInt
+
+pub let mem_commit : UInt
+
+pub let mem_decommit : UInt
+
+pub let mem_dedicated_attribute_max : Int
+
+pub let mem_dedicated_attribute_read_bandwidth : Int
+
+pub let mem_dedicated_attribute_read_latency : Int
+
+pub let mem_dedicated_attribute_write_bandwidth : Int
+
+pub let mem_dedicated_attribute_write_latency : Int
+
+pub let mem_extended_parameter_address_requirements : Int
+
+pub let mem_extended_parameter_attribute_flags : Int
+
+pub let mem_extended_parameter_image_machine : Int
+
+pub let mem_extended_parameter_invalid_type : Int
+
+pub let mem_extended_parameter_max : Int
+
+pub let mem_extended_parameter_numa_node : Int
+
+pub let mem_extended_parameter_partition_handle : Int
+
+pub let mem_extended_parameter_user_physical_handle : Int
+
+pub let mem_free : UInt
+
+pub let mem_image : UInt
+
+pub let mem_large_pages : UInt
+
+pub let mem_mapped : UInt
+
+pub let mem_preserve_placeholder : UInt
+
+pub let mem_private : UInt
+
+pub let mem_release : UInt
+
+pub let mem_replace_placeholder : UInt
+
+pub let mem_reserve : UInt
+
+pub let mem_reserve_placeholder : UInt
+
+pub let mem_reset : UInt
+
+pub let mem_reset_undo : UInt
+
+pub let mem_section_extended_parameter_invalid_type : Int
+
+pub let mem_section_extended_parameter_max : Int
+
+pub let mem_section_extended_parameter_numa_node : Int
+
+pub let mem_section_extended_parameter_signing_level : Int
+
+pub let mem_section_extended_parameter_user_physical_flags : Int
+
+pub let mem_unmap_none : UInt
+
+pub let mem_unmap_with_transient_boost : UInt
+
+pub let memory_partition_dedicated_memory_info : Int
+
+pub let memory_partition_info : Int
+
+pub let memory_region_info : Int
+
+pub let nonzerolhnd : UInt
+
+pub let nonzerolptr : UInt
+
+pub fn offer_virtual_memory_raw(@core.RawAddress, UInt64, Int) -> UInt
+
+pub fn open_dedicated_memory_partition_raw(@core.RawAddress, UInt64, UInt, Int) -> @core.RawAddress
+
+pub fn open_file_mapping_a_raw(UInt, Int, @core.RawAddress) -> @core.RawWin32Call[@core.RawAddress]
+
+pub fn open_file_mapping_from_app_raw(UInt, Int, @core.RawAddress) -> @core.RawWin32Call[@core.RawAddress]
+
+pub fn open_file_mapping_w_raw(UInt, Int, @core.RawAddress) -> @core.RawWin32Call[@core.RawAddress]
+
+pub let page_enclave_decommit : UInt
+
+pub let page_enclave_mask : UInt
+
+pub let page_enclave_ss_first : UInt
+
+pub let page_enclave_ss_rest : UInt
+
+pub let page_enclave_thread_control : UInt
+
+pub let page_enclave_unvalidated : UInt
+
+pub let page_execute : UInt
+
+pub let page_execute_read : UInt
+
+pub let page_execute_readwrite : UInt
+
+pub let page_execute_writecopy : UInt
+
+pub let page_graphics_coherent : UInt
+
+pub let page_graphics_execute : UInt
+
+pub let page_graphics_execute_read : UInt
+
+pub let page_graphics_execute_readwrite : UInt
+
+pub let page_graphics_noaccess : UInt
+
+pub let page_graphics_nocache : UInt
+
+pub let page_graphics_readonly : UInt
+
+pub let page_graphics_readwrite : UInt
+
+pub let page_guard : UInt
+
+pub let page_noaccess : UInt
+
+pub let page_nocache : UInt
+
+pub let page_readonly : UInt
+
+pub let page_readwrite : UInt
+
+pub let page_revert_to_file_map : UInt
+
+pub let page_targets_invalid : UInt
+
+pub let page_targets_no_update : UInt
+
+pub let page_writecombine : UInt
+
+pub let page_writecopy : UInt
+
+pub fn prefetch_virtual_memory_raw(@core.RawAddress, UInt64, @core.RawAddress, UInt) -> @core.RawWin32Call[Int]
+
+pub fn query_memory_resource_notification_raw(@core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn query_partition_information_raw(@core.RawAddress, Int, @core.RawAddress, UInt) -> Int
+
+pub fn query_virtual_memory_information_raw(@core.RawAddress, @core.RawAddress, Int, @core.RawAddress, UInt64, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub let quota_limits_hardws_max_disable : UInt
+
+pub let quota_limits_hardws_max_enable : UInt
+
+pub let quota_limits_hardws_min_disable : UInt
+
+pub let quota_limits_hardws_min_enable : UInt
+
+pub fn reclaim_virtual_memory_raw(@core.RawAddress, UInt64) -> UInt
+
+pub fn register_bad_memory_notification_raw(@core.RawAddress) -> @core.RawAddress
+
+pub fn remove_secure_memory_cache_callback_raw(@core.RawAddress) -> Int
+
+pub fn reset_write_watch_raw(@core.RawAddress, UInt64) -> UInt
+
+pub fn rtl_compare_memory_raw(@core.RawAddress, @core.RawAddress, UInt64) -> UInt64
+
+pub fn rtl_crc32_raw(@core.RawAddress, UInt64, UInt) -> UInt
+
+pub fn rtl_crc64_raw(@core.RawAddress, UInt64, UInt64) -> UInt64
+
+pub fn rtl_is_zero_memory_raw(@core.RawAddress, UInt64) -> UInt
+
+pub let sec_64_k_pages : UInt
+
+pub let sec_commit : UInt
+
+pub let sec_file : UInt
+
+pub let sec_image : UInt
+
+pub let sec_image_no_execute : UInt
+
+pub let sec_large_pages : UInt
+
+pub let sec_nocache : UInt
+
+pub let sec_partition_owner_handle : UInt
+
+pub let sec_protected_image : UInt
+
+pub let sec_reserve : UInt
+
+pub let sec_writecombine : UInt
+
+pub let section_all_access : UInt
+
+pub let section_extend_size : UInt
+
+pub let section_map_execute : UInt
+
+pub let section_map_execute_explicit : UInt
+
+pub let section_map_read : UInt
+
+pub let section_map_write : UInt
+
+pub let section_query : UInt
+
+pub fn set_process_valid_call_targets_for_mapped_view_raw(@core.RawAddress, @core.RawAddress, UInt64, UInt, @core.RawAddress, @core.RawAddress, UInt64) -> Int
+
+pub fn set_process_valid_call_targets_raw(@core.RawAddress, @core.RawAddress, UInt64, UInt, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn set_process_working_set_size_ex_raw(@core.RawAddress, UInt64, UInt64, UInt) -> @core.RawWin32Call[Int]
+
+pub fn set_system_file_cache_size_raw(UInt64, UInt64, UInt) -> @core.RawWin32Call[Int]
+
+pub fn unmap_view_of_file2_raw(@core.RawAddress, @core.RawAddress, UInt) -> @core.RawWin32Call[Int]
+
+pub fn unmap_view_of_file_ex_raw(@core.RawAddress, UInt) -> @core.RawWin32Call[Int]
+
+pub fn unmap_view_of_file_raw(@core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn unregister_bad_memory_notification_raw(@core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn virtual_alloc2_from_app_raw(@core.RawAddress, @core.RawAddress, UInt64, UInt, UInt, @core.RawAddress, UInt) -> @core.RawWin32Call[@core.RawAddress]
+
+pub fn virtual_alloc2_raw(@core.RawAddress, @core.RawAddress, UInt64, UInt, UInt, @core.RawAddress, UInt) -> @core.RawWin32Call[@core.RawAddress]
+
+pub fn virtual_alloc_ex_numa_raw(@core.RawAddress, @core.RawAddress, UInt64, UInt, UInt, UInt) -> @core.RawWin32Call[@core.RawAddress]
+
+pub fn virtual_alloc_ex_raw(@core.RawAddress, @core.RawAddress, UInt64, UInt, UInt) -> @core.RawWin32Call[@core.RawAddress]
+
+pub fn virtual_alloc_from_app_raw(@core.RawAddress, UInt64, UInt, UInt) -> @core.RawWin32Call[@core.RawAddress]
+
+pub fn virtual_alloc_raw(@core.RawAddress, UInt64, UInt, UInt) -> @core.RawWin32Call[@core.RawAddress]
+
+pub fn virtual_free_ex_raw(@core.RawAddress, @core.RawAddress, UInt64, UInt) -> @core.RawWin32Call[Int]
+
+pub fn virtual_free_raw(@core.RawAddress, UInt64, UInt) -> @core.RawWin32Call[Int]
+
+pub fn virtual_lock_raw(@core.RawAddress, UInt64) -> @core.RawWin32Call[Int]
+
+pub fn virtual_protect_ex_raw(@core.RawAddress, @core.RawAddress, UInt64, UInt, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn virtual_protect_from_app_raw(@core.RawAddress, UInt64, UInt, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn virtual_protect_raw(@core.RawAddress, UInt64, UInt, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn virtual_query_ex_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, UInt64) -> @core.RawWin32Call[UInt64]
+
+pub fn virtual_query_raw(@core.RawAddress, @core.RawAddress, UInt64) -> @core.RawWin32Call[UInt64]
+
+pub fn virtual_unlock_ex_raw(@core.RawAddress, @core.RawAddress, UInt64) -> Int
+
+pub fn virtual_unlock_raw(@core.RawAddress, UInt64) -> @core.RawWin32Call[Int]
+
+pub let vm_offer_priority_below_normal : Int
+
+pub let vm_offer_priority_low : Int
+
+pub let vm_offer_priority_normal : Int
+
+pub let vm_offer_priority_very_low : Int
+
+pub let win32_memory_numa_performance_all_target_node : UInt
+
+pub let win32_memory_numa_performance_read_bandwidth : UInt
+
+pub let win32_memory_numa_performance_read_latency : UInt
+
+pub let win32_memory_numa_performance_write_bandwidth : UInt
+
+pub let win32_memory_numa_performance_write_latency : UInt
+
+// Errors
+
+// Types and methods
+
+// Type aliases
+pub using @a3d4bf33d3bc5d82 {type Anonymous1EStruct_a65938b8e5b7 as Anonymous1EStruct}
+
+pub using @a3d4bf33d3bc5d82 {type Anonymous2EUnion_e99e9e844929 as Anonymous2EUnion}
+
+pub using @a3d4bf33d3bc5d82 {type AnonymousEStruct_59baeac7cba1 as AnonymousEStruct}
+
+pub using @a3d4bf33d3bc5d82 {type AnonymousEUnion_6de1ba4fe371 as AnonymousEUnion_6de1ba4fe3}
+
+pub using @a3d4bf33d3bc5d82 {type AnonymousEUnion_c8be7ac0c7b8 as AnonymousEUnion_c8be7ac0c7}
+
+pub using @a3d4bf33d3bc5d82 {type AtlThunkDataT_b634fb1878fd as AtlThunkDataT}
+
+pub using @a3d4bf33d3bc5d82 {type BlockEStruct_e50a5ad648a1 as BlockEStruct}
+
+pub using @a3d4bf33d3bc5d82 {type CFGCALLTARGETINFO_fbf811ba548c as CFGCALLTARGETINFO}
+
+pub using @a3d4bf33d3bc5d82 {type FILEMAP_ff0a07408e58 as FILEMAP}
+
+pub using @a3d4bf33d3bc5d82 {type FlagsEStruct_707f21c0ba2c as FlagsEStruct}
+
+pub using @a3d4bf33d3bc5d82 {type GLOBALALLOCFLAGS_2d1b2047ca15 as GLOBALALLOCFLAGS}
+
+pub using @a3d4bf33d3bc5d82 {type HEAPFLAGS_3f93fd10ffc5 as HEAPFLAGS}
+
+pub using @a3d4bf33d3bc5d82 {type HEAPINFORMATIONCLASS_b2ff08d126b6 as HEAPINFORMATIONCLASS}
+
+pub using @a3d4bf33d3bc5d82 {type HEAPSUMMARY_4988a9ea03a5 as HEAPSUMMARY}
+
+pub using @a3d4bf33d3bc5d82 {type LOCALALLOCFLAGS_177c8d3d93d2 as LOCALALLOCFLAGS}
+
+pub using @a3d4bf33d3bc5d82 {type MEMADDRESSREQUIREMENTS_956e3bdc083a as MEMADDRESSREQUIREMENTS}
+
+pub using @a3d4bf33d3bc5d82 {type MEMDEDICATEDATTRIBUTETYPE_0ecb37c9c92e as MEMDEDICATEDATTRIBUTETYPE}
+
+pub using @a3d4bf33d3bc5d82 {type MEMEXTENDEDPARAMETER_5042548d9f2a as MEMEXTENDEDPARAMETER}
+
+pub using @a3d4bf33d3bc5d82 {type MEMEXTENDEDPARAMETERTYPE_91830a617902 as MEMEXTENDEDPARAMETERTYPE}
+
+pub using @a3d4bf33d3bc5d82 {type MEMORYBASICINFORMATION_6d271225652c as MEMORYBASICINFORMATION}
+
+pub using @a3d4bf33d3bc5d82 {type MEMORYBASICINFORMATION32_76c34f0fc725 as MEMORYBASICINFORMATION32}
+
+pub using @a3d4bf33d3bc5d82 {type MEMORYBASICINFORMATION64_6f58ac1b2449 as MEMORYBASICINFORMATION64}
+
+pub using @a3d4bf33d3bc5d82 {type MEMORYMAPPEDVIEWADDRESS_e1ee69ea93f4 as MEMORYMAPPEDVIEWADDRESS}
+
+pub using @a3d4bf33d3bc5d82 {type MEMORYPARTITIONDEDICATEDMEMORYATTRIBUTE_d4f84c349e36 as MEMORYPARTITIONDEDICATEDMEMORYATTRIBUTE}
+
+pub using @a3d4bf33d3bc5d82 {type MEMORYPARTITIONDEDICATEDMEMORYINFORMATION_0448347fa141 as MEMORYPARTITIONDEDICATEDMEMORYINFORMATION}
+
+pub using @a3d4bf33d3bc5d82 {type MEMORYRESOURCENOTIFICATIONTYPE_14aa0fc843c8 as MEMORYRESOURCENOTIFICATIONTYPE}
+
+pub using @a3d4bf33d3bc5d82 {type MEMSECTIONEXTENDEDPARAMETERTYPE_ec0bbae1cfd2 as MEMSECTIONEXTENDEDPARAMETERTYPE}
+
+pub using @a3d4bf33d3bc5d82 {type OFFERPRIORITY_6800c8e52a89 as OFFERPRIORITY}
+
+pub using @a3d4bf33d3bc5d82 {type PAGEPROTECTIONFLAGS_0d699f79efc8 as PAGEPROTECTIONFLAGS}
+
+pub using @a3d4bf33d3bc5d82 {type PAGETYPE_81a7d0b136ce as PAGETYPE}
+
+pub using @a3d4bf33d3bc5d82 {type PBADMEMORYCALLBACKROUTINE_76a6314254c1 as PBADMEMORYCALLBACKROUTINE}
+
+pub using @a3d4bf33d3bc5d82 {type PROCESSHEAPENTRY_aadb80992b9e as PROCESSHEAPENTRY}
+
+pub using @a3d4bf33d3bc5d82 {type PSECUREMEMORYCACHECALLBACK_eed49d56aa63 as PSECUREMEMORYCACHECALLBACK}
+
+pub using @a3d4bf33d3bc5d82 {type RegionEStruct_3d053f2295a2 as RegionEStruct}
+
+pub using @a3d4bf33d3bc5d82 {type SECTIONFLAGS_34f4926e99d8 as SECTIONFLAGS}
+
+pub using @a3d4bf33d3bc5d82 {type SETPROCESSWORKINGSETSIZEEXFLAGS_2d303aa79d60 as SETPROCESSWORKINGSETSIZEEXFLAGS}
+
+pub using @a3d4bf33d3bc5d82 {type UNMAPVIEWOFFILEFLAGS_cf8484f5edb0 as UNMAPVIEWOFFILEFLAGS}
+
+pub using @a3d4bf33d3bc5d82 {type VIRTUALALLOCATIONTYPE_70e59c2fef0b as VIRTUALALLOCATIONTYPE}
+
+pub using @a3d4bf33d3bc5d82 {type VIRTUALFREETYPE_ba6c11556d12 as VIRTUALFREETYPE}
+
+pub using @a3d4bf33d3bc5d82 {type WIN32MEMORYINFORMATIONCLASS_8e3ca596f894 as WIN32MEMORYINFORMATIONCLASS}
+
+pub using @a3d4bf33d3bc5d82 {type WIN32MEMORYNUMAPERFORMANCEENTRY_ac6549b0660e as WIN32MEMORYNUMAPERFORMANCEENTRY}
+
+pub using @a3d4bf33d3bc5d82 {type WIN32MEMORYNUMAPERFORMANCEINFORMATIONOUTPUT_c4a86d2c79e2 as WIN32MEMORYNUMAPERFORMANCEINFORMATIONOUTPUT}
+
+pub using @a3d4bf33d3bc5d82 {type WIN32MEMORYPARTITIONINFORMATION_5bfa89f04331 as WIN32MEMORYPARTITIONINFORMATION}
+
+pub using @a3d4bf33d3bc5d82 {type WIN32MEMORYPARTITIONINFORMATIONCLASS_e5488477331f as WIN32MEMORYPARTITIONINFORMATIONCLASS}
+
+pub using @a3d4bf33d3bc5d82 {type WIN32MEMORYRANGEENTRY_f8e4ff2720c5 as WIN32MEMORYRANGEENTRY}
+
+pub using @a3d4bf33d3bc5d82 {type WIN32MEMORYREGIONINFORMATION_7886f06c9e87 as WIN32MEMORYREGIONINFORMATION}
+
+// Traits
+

@@ -1,0 +1,401 @@
+// Generated using `moon info`, DON'T EDIT IT
+package "moonbit-community/win32-bindings/windows/win32/devices/nfc"
+
+import {
+  "moonbit-community/win32-bindings/scc/f950594f10c0f0d2",
+}
+
+// Values
+pub let application_selected : Int
+
+pub let connection_oriented : Int
+
+pub let connectionless : Int
+
+pub let default_snep_server : Int
+
+pub let device_host : Int
+
+pub let discovery : Int
+
+pub let emulation_disabled : Int
+
+pub let emulation_enabled : Int
+
+pub let emulation_off : Int
+
+pub let emulation_on_power_dependent : Int
+
+pub let emulation_on_power_independent : Int
+
+pub let emulation_stealth_listen : Int
+
+pub let evt_transaction_parameter_max_len : UInt
+
+pub let evt_transaction_tag_aid : UInt
+
+pub let evt_transaction_tag_parameters : UInt
+
+pub let extended_snep_server : Int
+
+pub let external : Int
+
+pub let external_field_enter : Int
+
+pub let external_field_exit : Int
+
+pub let external_reader_arrival : Int
+
+pub let external_reader_departure : Int
+
+pub let hce_activated : Int
+
+pub let hce_deactivated : Int
+
+pub let idle_mode : Int
+
+pub let integrated : Int
+
+pub let ioctl_nfcdta_config_p2_p_param : UInt
+
+pub let ioctl_nfcdta_config_rf_discovery : UInt
+
+pub let ioctl_nfcdta_llcp_activate : UInt
+
+pub let ioctl_nfcdta_llcp_config : UInt
+
+pub let ioctl_nfcdta_llcp_deactivate : UInt
+
+pub let ioctl_nfcdta_llcp_discover_services : UInt
+
+pub let ioctl_nfcdta_llcp_get_next_link_status : UInt
+
+pub let ioctl_nfcdta_llcp_link_status_check : UInt
+
+pub let ioctl_nfcdta_llcp_socket_accept : UInt
+
+pub let ioctl_nfcdta_llcp_socket_bind : UInt
+
+pub let ioctl_nfcdta_llcp_socket_close : UInt
+
+pub let ioctl_nfcdta_llcp_socket_connect : UInt
+
+pub let ioctl_nfcdta_llcp_socket_create : UInt
+
+pub let ioctl_nfcdta_llcp_socket_disconnect : UInt
+
+pub let ioctl_nfcdta_llcp_socket_get_next_error : UInt
+
+pub let ioctl_nfcdta_llcp_socket_listen : UInt
+
+pub let ioctl_nfcdta_llcp_socket_recv : UInt
+
+pub let ioctl_nfcdta_llcp_socket_recv_from : UInt
+
+pub let ioctl_nfcdta_llcp_socket_send : UInt
+
+pub let ioctl_nfcdta_llcp_socket_sned_to : UInt
+
+pub let ioctl_nfcdta_remote_dev_check_presence : UInt
+
+pub let ioctl_nfcdta_remote_dev_connect : UInt
+
+pub let ioctl_nfcdta_remote_dev_disconnect : UInt
+
+pub let ioctl_nfcdta_remote_dev_get_next : UInt
+
+pub let ioctl_nfcdta_remote_dev_ndef_check : UInt
+
+pub let ioctl_nfcdta_remote_dev_ndef_convert_read_only : UInt
+
+pub let ioctl_nfcdta_remote_dev_ndef_read : UInt
+
+pub let ioctl_nfcdta_remote_dev_ndef_write : UInt
+
+pub let ioctl_nfcdta_remote_dev_recv : UInt
+
+pub let ioctl_nfcdta_remote_dev_send : UInt
+
+pub let ioctl_nfcdta_remote_dev_transceive : UInt
+
+pub let ioctl_nfcdta_se_enumerate : UInt
+
+pub let ioctl_nfcdta_se_get_next_event : UInt
+
+pub let ioctl_nfcdta_se_set_emulation_mode : UInt
+
+pub let ioctl_nfcdta_se_set_routing_table : UInt
+
+pub let ioctl_nfcdta_set_rf_config : UInt
+
+pub let ioctl_nfcdta_snep_client_get : UInt
+
+pub let ioctl_nfcdta_snep_client_put : UInt
+
+pub let ioctl_nfcdta_snep_deinit_client : UInt
+
+pub let ioctl_nfcdta_snep_deinit_server : UInt
+
+pub let ioctl_nfcdta_snep_init_client : UInt
+
+pub let ioctl_nfcdta_snep_init_server : UInt
+
+pub let ioctl_nfcdta_snep_server_accept : UInt
+
+pub let ioctl_nfcdta_snep_server_get_next_connection : UInt
+
+pub let ioctl_nfcdta_snep_server_get_next_request : UInt
+
+pub let ioctl_nfcdta_snep_server_send_response : UInt
+
+pub let ioctl_nfcrm_query_radio_state : UInt
+
+pub let ioctl_nfcrm_set_radio_state : UInt
+
+pub let ioctl_nfcse_enum_endpoints : UInt
+
+pub let ioctl_nfcse_get_next_event : UInt
+
+pub let ioctl_nfcse_get_nfcc_capabilities : UInt
+
+pub let ioctl_nfcse_get_routing_table : UInt
+
+pub let ioctl_nfcse_hce_remote_recv : UInt
+
+pub let ioctl_nfcse_hce_remote_send : UInt
+
+pub let ioctl_nfcse_set_card_emulation_mode : UInt
+
+pub let ioctl_nfcse_set_power_mode : UInt
+
+pub let ioctl_nfcse_set_routing_table : UInt
+
+pub let ioctl_nfcse_subscribe_for_event : UInt
+
+pub let ioctl_nfcserm_query_radio_state : UInt
+
+pub let ioctl_nfcserm_set_radio_state : UInt
+
+pub let iso_7816_maximum_aid_length : UInt
+
+pub let iso_7816_minimum_aid_length : UInt
+
+pub let link_activated : Int
+
+pub let link_deactivated : Int
+
+pub let max_atr_length : UInt
+
+pub let max_llcp_service_name_size : UInt
+
+pub let max_snep_server_name_size : UInt
+
+pub let max_uid_size : UInt
+
+pub let nfc_connect_by_sap : Int
+
+pub let nfc_connect_by_uri : Int
+
+pub let nfc_dep_default : Int
+
+pub let nfc_dep_listen : Int
+
+pub let nfc_dep_poll : Int
+
+pub let nfc_ip1_initiator : Int
+
+pub let nfc_ip1_target : Int
+
+pub let nfc_llcp_error_busy_condition : Int
+
+pub let nfc_llcp_error_disconnected : Int
+
+pub let nfc_llcp_error_frame_rejected : Int
+
+pub let nfc_llcp_error_not_busy_condition : Int
+
+pub let nfc_reader : Int
+
+pub let nfc_type1_tag : Int
+
+pub let nfc_type2_tag : Int
+
+pub let nfc_type3_tag : Int
+
+pub let nfc_type4_tag : Int
+
+pub let nfcrmddi_ioctl_base : UInt
+
+pub let rf_discovery_config : Int
+
+pub let rf_discovery_resume : Int
+
+pub let rf_discovery_start : Int
+
+pub let routing_type_aid : Int
+
+pub let routing_type_protocol : Int
+
+pub let routing_type_tech : Int
+
+pub let se_power_mode_allow_off : Int
+
+pub let se_power_mode_force_on : Int
+
+pub let sleep_mode : Int
+
+pub let snep_request_get : Int
+
+pub let snep_request_put : Int
+
+pub let transaction : Int
+
+// Errors
+
+// Types and methods
+
+// Type aliases
+pub using @f950594f10c0f0d2 {type AnonymousEUnion_64a8e4f07401 as AnonymousEUnion_64a8e4f074}
+
+pub using @f950594f10c0f0d2 {type AnonymousEUnion_de0f69a65807 as AnonymousEUnion_de0f69a658}
+
+pub using @f950594f10c0f0d2 {type AnonymousEUnion_fc3a3d4d103a as AnonymousEUnion_fc3a3d4d10}
+
+pub using @f950594f10c0f0d2 {type NFCDATABUFFER_1abc9bf4d672 as NFCDATABUFFER}
+
+pub using @f950594f10c0f0d2 {type NFCDEVICETYPE_515fe04a7c5d as NFCDEVICETYPE}
+
+pub using @f950594f10c0f0d2 {type NFCLLCPCONFIG_bca182569778 as NFCLLCPCONFIG}
+
+pub using @f950594f10c0f0d2 {type NFCLLCPLINKSTATUS_54f5dfda459c as NFCLLCPLINKSTATUS}
+
+pub using @f950594f10c0f0d2 {type NFCLLCPSERVICEDISCOVERREQUEST_c988a8131244 as NFCLLCPSERVICEDISCOVERREQUEST}
+
+pub using @f950594f10c0f0d2 {type NFCLLCPSERVICEDISCOVERSAP_f93385c90c46 as NFCLLCPSERVICEDISCOVERSAP}
+
+pub using @f950594f10c0f0d2 {type NFCLLCPSERVICENAMEENTRY_14ba090ff519 as NFCLLCPSERVICENAMEENTRY}
+
+pub using @f950594f10c0f0d2 {type NFCLLCPSOCKETACCEPTINFO_202273e9a725 as NFCLLCPSOCKETACCEPTINFO}
+
+pub using @f950594f10c0f0d2 {type NFCLLCPSOCKETCLPAYLOAD_0261da0c4e2c as NFCLLCPSOCKETCLPAYLOAD}
+
+pub using @f950594f10c0f0d2 {type NFCLLCPSOCKETCONNECTINFO_725ca970be67 as NFCLLCPSOCKETCONNECTINFO}
+
+pub using @f950594f10c0f0d2 {type NFCLLCPSOCKETCONNECTTYPE_f199cde243db as NFCLLCPSOCKETCONNECTTYPE}
+
+pub using @f950594f10c0f0d2 {type NFCLLCPSOCKETERROR_cd376c5f082d as NFCLLCPSOCKETERROR}
+
+pub using @f950594f10c0f0d2 {type NFCLLCPSOCKETERRORINFO_2daf57f02f73 as NFCLLCPSOCKETERRORINFO}
+
+pub using @f950594f10c0f0d2 {type NFCLLCPSOCKETINFO_47a5605a4b1b as NFCLLCPSOCKETINFO}
+
+pub using @f950594f10c0f0d2 {type NFCLLCPSOCKETOPTION_b22f9fd8c42f as NFCLLCPSOCKETOPTION}
+
+pub using @f950594f10c0f0d2 {type NFCLLCPSOCKETPAYLOAD_6b052d6a516a as NFCLLCPSOCKETPAYLOAD}
+
+pub using @f950594f10c0f0d2 {type NFCLLCPSOCKETSERVICEINFO_94b9a82a8a01 as NFCLLCPSOCKETSERVICEINFO}
+
+pub using @f950594f10c0f0d2 {type NFCLLCPSOCKETTYPE_9ec56240d140 as NFCLLCPSOCKETTYPE}
+
+pub using @f950594f10c0f0d2 {type NFCNDEFINFO_04a9f88e57ae as NFCNDEFINFO}
+
+pub using @f950594f10c0f0d2 {type NFCP2PMODE_d12a7876a89f as NFCP2PMODE}
+
+pub using @f950594f10c0f0d2 {type NFCP2PPARAMCONFIG_4264514126d1 as NFCP2PPARAMCONFIG}
+
+pub using @f950594f10c0f0d2 {type NFCRELEASETYPE_198240826668 as NFCRELEASETYPE}
+
+pub using @f950594f10c0f0d2 {type NFCREMOTEDEVICEDISCONNET_2d8922136654 as NFCREMOTEDEVICEDISCONNET}
+
+pub using @f950594f10c0f0d2 {type NFCREMOTEDEVINFO_2789971bd551 as NFCREMOTEDEVINFO}
+
+pub using @f950594f10c0f0d2 {type NFCREMOTEDEVRECVINFO_9cbb03296f25 as NFCREMOTEDEVRECVINFO}
+
+pub using @f950594f10c0f0d2 {type NFCREMOTEDEVSENDINFO_9807ac9219e6 as NFCREMOTEDEVSENDINFO}
+
+pub using @f950594f10c0f0d2 {type NFCRFDISCOVERYCONFIG_a54e13ace625 as NFCRFDISCOVERYCONFIG}
+
+pub using @f950594f10c0f0d2 {type NFCRFDISCOVERYMODE_7f4aba99fdd8 as NFCRFDISCOVERYMODE}
+
+pub using @f950594f10c0f0d2 {type NFCRMRADIOSTATE_94d2d01c81a5 as NFCRMRADIOSTATE}
+
+pub using @f950594f10c0f0d2 {type NFCRMSETRADIOSTATE_b547ddf9fe9f as NFCRMSETRADIOSTATE}
+
+pub using @f950594f10c0f0d2 {type NFCSEAIDROUTINGINFO_0027bd8244d2 as NFCSEAIDROUTINGINFO}
+
+pub using @f950594f10c0f0d2 {type NFCSEEMULATIONMODE_cc3329cc3c0f as NFCSEEMULATIONMODE}
+
+pub using @f950594f10c0f0d2 {type NFCSEEMULATIONMODEINFO_123b269edca4 as NFCSEEMULATIONMODEINFO}
+
+pub using @f950594f10c0f0d2 {type NFCSEEVENTINFO_bdddbef88aa1 as NFCSEEVENTINFO}
+
+pub using @f950594f10c0f0d2 {type NFCSEINFO_53e52446d482 as NFCSEINFO}
+
+pub using @f950594f10c0f0d2 {type NFCSELIST_21269783fed8 as NFCSELIST}
+
+pub using @f950594f10c0f0d2 {type NFCSEPROTOROUTINGINFO_8f33b2e1c287 as NFCSEPROTOROUTINGINFO}
+
+pub using @f950594f10c0f0d2 {type NFCSEROUTINGTABLE_249ee857c684 as NFCSEROUTINGTABLE}
+
+pub using @f950594f10c0f0d2 {type NFCSEROUTINGTABLEENTRY_2dc69b6ba0d6 as NFCSEROUTINGTABLEENTRY}
+
+pub using @f950594f10c0f0d2 {type NFCSETECHROUTINGINFO_16e62e8e9707 as NFCSETECHROUTINGINFO}
+
+pub using @f950594f10c0f0d2 {type NFCSNEPCLIENTGETINFO_e5f98bafe062 as NFCSNEPCLIENTGETINFO}
+
+pub using @f950594f10c0f0d2 {type NFCSNEPCLIENTINFO_b8aef5d1ee84 as NFCSNEPCLIENTINFO}
+
+pub using @f950594f10c0f0d2 {type NFCSNEPCLIENTPUTINFO_269b7061556b as NFCSNEPCLIENTPUTINFO}
+
+pub using @f950594f10c0f0d2 {type NFCSNEPREQUESTTYPE_4b57c019cc24 as NFCSNEPREQUESTTYPE}
+
+pub using @f950594f10c0f0d2 {type NFCSNEPSERVERACCEPTINFO_68b250e5347a as NFCSNEPSERVERACCEPTINFO}
+
+pub using @f950594f10c0f0d2 {type NFCSNEPSERVERINFO_655a2c487c0d as NFCSNEPSERVERINFO}
+
+pub using @f950594f10c0f0d2 {type NFCSNEPSERVERREQUEST_98a3a6a0ae94 as NFCSNEPSERVERREQUEST}
+
+pub using @f950594f10c0f0d2 {type NFCSNEPSERVERRESPONSEINFO_fed6da26b619 as NFCSNEPSERVERRESPONSEINFO}
+
+pub using @f950594f10c0f0d2 {type NFCSNEPSERVERTYPE_02a50aab1148 as NFCSNEPSERVERTYPE}
+
+pub using @f950594f10c0f0d2 {type SECUREELEMENTAIDROUTINGINFO_58b53bfbb7ee as SECUREELEMENTAIDROUTINGINFO}
+
+pub using @f950594f10c0f0d2 {type SECUREELEMENTCARDEMULATIONMODE_6ccd2d746d4b as SECUREELEMENTCARDEMULATIONMODE}
+
+pub using @f950594f10c0f0d2 {type SECUREELEMENTENDPOINTINFO_5234b4ea0387 as SECUREELEMENTENDPOINTINFO}
+
+pub using @f950594f10c0f0d2 {type SECUREELEMENTENDPOINTLIST_39d68d6fbcc4 as SECUREELEMENTENDPOINTLIST}
+
+pub using @f950594f10c0f0d2 {type SECUREELEMENTEVENTINFO_688c04af3353 as SECUREELEMENTEVENTINFO}
+
+pub using @f950594f10c0f0d2 {type SECUREELEMENTEVENTSUBSCRIPTIONINFO_b32e5b2d17bd as SECUREELEMENTEVENTSUBSCRIPTIONINFO}
+
+pub using @f950594f10c0f0d2 {type SECUREELEMENTEVENTTYPE_85d3f53ff658 as SECUREELEMENTEVENTTYPE}
+
+pub using @f950594f10c0f0d2 {type SECUREELEMENTHCEACTIVATIONPAYLOAD_9da680456604 as SECUREELEMENTHCEACTIVATIONPAYLOAD}
+
+pub using @f950594f10c0f0d2 {type SECUREELEMENTHCEDATAPACKET_1e15303de789 as SECUREELEMENTHCEDATAPACKET}
+
+pub using @f950594f10c0f0d2 {type SECUREELEMENTNFCCCAPABILITIES_cab5e1bbb7b5 as SECUREELEMENTNFCCCAPABILITIES}
+
+pub using @f950594f10c0f0d2 {type SECUREELEMENTPOWERMODE_6c3d1a0678d7 as SECUREELEMENTPOWERMODE}
+
+pub using @f950594f10c0f0d2 {type SECUREELEMENTPROTOROUTINGINFO_16c1ca32048c as SECUREELEMENTPROTOROUTINGINFO}
+
+pub using @f950594f10c0f0d2 {type SECUREELEMENTROUTINGTABLE_f44254acf285 as SECUREELEMENTROUTINGTABLE}
+
+pub using @f950594f10c0f0d2 {type SECUREELEMENTROUTINGTABLEENTRY_b754ccbc245a as SECUREELEMENTROUTINGTABLEENTRY}
+
+pub using @f950594f10c0f0d2 {type SECUREELEMENTROUTINGTYPE_930c0c9034ac as SECUREELEMENTROUTINGTYPE}
+
+pub using @f950594f10c0f0d2 {type SECUREELEMENTSETCARDEMULATIONMODEINFO_6e1a685045a7 as SECUREELEMENTSETCARDEMULATIONMODEINFO}
+
+pub using @f950594f10c0f0d2 {type SECUREELEMENTSETPOWERMODEINFO_2821255d340d as SECUREELEMENTSETPOWERMODEINFO}
+
+pub using @f950594f10c0f0d2 {type SECUREELEMENTTECHROUTINGINFO_4095e16bf2ee as SECUREELEMENTTECHROUTINGINFO}
+
+pub using @f950594f10c0f0d2 {type SECUREELEMENTTYPE_ce51cd0a0dad as SECUREELEMENTTYPE}
+
+// Traits
+

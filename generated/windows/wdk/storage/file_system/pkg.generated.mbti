@@ -1,0 +1,2902 @@
+// Generated using `moon info`, DON'T EDIT IT
+package "moonbit-community/win32-bindings/windows/wdk/storage/file_system"
+
+import {
+  "moonbit-community/win32-bindings/runtime/core",
+  "moonbit-community/win32-bindings/scc/98ce62fb5372700b",
+}
+
+// Values
+pub fn apply_control_token(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn apply_control_token_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub let atomic_create_ecp_in_flag_best_effort : UInt
+
+pub let atomic_create_ecp_in_flag_eof_specified : UInt
+
+pub let atomic_create_ecp_in_flag_file_attributes_specified : UInt
+
+pub let atomic_create_ecp_in_flag_gen_flags_specified : UInt
+
+pub let atomic_create_ecp_in_flag_mark_usn_source_info : UInt
+
+pub let atomic_create_ecp_in_flag_op_flags_specified : UInt
+
+pub let atomic_create_ecp_in_flag_operation_mask : UInt
+
+pub let atomic_create_ecp_in_flag_reparse_point_specified : UInt
+
+pub let atomic_create_ecp_in_flag_sparse_specified : UInt
+
+pub let atomic_create_ecp_in_flag_suppress_dir_change_notify : UInt
+
+pub let atomic_create_ecp_in_flag_suppress_file_attribute_inheritance : UInt
+
+pub let atomic_create_ecp_in_flag_suppress_parent_timestamps_update : UInt
+
+pub let atomic_create_ecp_in_flag_timestamps_specified : UInt
+
+pub let atomic_create_ecp_in_flag_vdl_specified : UInt
+
+pub let atomic_create_ecp_in_flag_write_usn_close_record : UInt
+
+pub let atomic_create_ecp_in_op_flag_case_sensitive_flags_specified : UInt
+
+pub let atomic_create_ecp_out_flag_eof_set : UInt
+
+pub let atomic_create_ecp_out_flag_file_attribute_inheritance_suppressed : UInt
+
+pub let atomic_create_ecp_out_flag_file_attributes_returned : UInt
+
+pub let atomic_create_ecp_out_flag_file_attributes_set : UInt
+
+pub let atomic_create_ecp_out_flag_op_flags_honored : UInt
+
+pub let atomic_create_ecp_out_flag_operation_mask : UInt
+
+pub let atomic_create_ecp_out_flag_reparse_point_set : UInt
+
+pub let atomic_create_ecp_out_flag_sparse_set : UInt
+
+pub let atomic_create_ecp_out_flag_timestamps_returned : UInt
+
+pub let atomic_create_ecp_out_flag_timestamps_set : UInt
+
+pub let atomic_create_ecp_out_flag_usn_close_record_written : UInt
+
+pub let atomic_create_ecp_out_flag_usn_returned : UInt
+
+pub let atomic_create_ecp_out_flag_usn_source_info_marked : UInt
+
+pub let atomic_create_ecp_out_flag_vdl_set : UInt
+
+pub let atomic_create_ecp_out_op_flag_case_sensitive_flags_set : UInt
+
+pub let audit_access_check : Int
+
+pub let audit_close_non_object : Int
+
+pub let audit_close_object : Int
+
+pub let audit_delete_object : Int
+
+pub let audit_handle_creation : Int
+
+pub let audit_object_reference : Int
+
+pub let audit_open_non_object : Int
+
+pub let audit_open_object : Int
+
+pub let audit_open_object_for_delete : Int
+
+pub let audit_open_object_for_delete_with_transaction : Int
+
+pub let audit_open_object_with_transaction : Int
+
+pub let audit_privilege_object : Int
+
+pub let audit_privilege_service : Int
+
+pub let cache_manager_callbacks_ex_v1 : UInt
+
+pub let cache_use_direct_access_mapping : UInt
+
+pub let cache_valid_flags : UInt
+
+pub let cc_acquire_dont_wait : UInt
+
+pub let cc_acquire_supports_async_lazywrite : UInt
+
+pub let cc_aggressive_unmap_behind : UInt
+
+pub let cc_disable_dirty_page_tracking : UInt
+
+pub let cc_disable_read_ahead : UInt
+
+pub let cc_disable_unmap_behind : UInt
+
+pub let cc_disable_write_behind : UInt
+
+pub let cc_enable_cpu_cache : UInt
+
+pub let cc_enable_disk_io_accounting : UInt
+
+pub let cc_flush_and_purge_gather_dirty_bits : UInt
+
+pub let cc_flush_and_purge_no_purge : UInt
+
+pub let cc_flush_and_purge_writeable_views_notseen : UInt
+
+pub let change_data_control_area : Int
+
+pub let change_image_control_area : Int
+
+pub let change_shared_cache_map : Int
+
+pub fn complete_auth_token(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn complete_auth_token_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub let compression_engine_mask : UInt
+
+pub let compression_engine_max : UInt
+
+pub let compression_format_mask : UInt
+
+pub let compression_format_max : UInt
+
+pub let create_redirection_flags_serviced_from_layer : UInt
+
+pub let create_redirection_flags_serviced_from_registered_layer : UInt
+
+pub let create_redirection_flags_serviced_from_remote_layer : UInt
+
+pub let create_redirection_flags_serviced_from_scratch : UInt
+
+pub let create_redirection_flags_serviced_from_user_mode : UInt
+
+pub let csv_csv_fs_internal_file_object : Int
+
+pub let csv_down_level_file_object : Int
+
+pub let csv_set_handle_properties_ecp_context_flags_valid_only_if_csv_coordinator : UInt
+
+pub let dd_mup_device_name : String
+
+pub let device_reset_keep_stack : UInt
+
+pub let device_reset_reserved_0 : UInt
+
+pub let device_reset_reserved_1 : UInt
+
+pub let dfs_link_tracking_information : Int
+
+pub let do_boot_critical : UInt
+
+pub let do_buffered_io : UInt
+
+pub let do_bus_enumerated_device : UInt
+
+pub let do_dax_volume : UInt
+
+pub let do_device_has_name : UInt
+
+pub let do_device_initializing : UInt
+
+pub let do_device_irp_requires_extension : UInt
+
+pub let do_device_to_be_reset : UInt
+
+pub let do_direct_io : UInt
+
+pub let do_disallow_execute : UInt
+
+pub let do_exclusive : UInt
+
+pub let do_force_neither_io : UInt
+
+pub let do_long_term_requests : UInt
+
+pub let do_low_priority_filesystem : UInt
+
+pub let do_map_io_buffer : UInt
+
+pub let do_never_last_device : UInt
+
+pub let do_not_purge_dirty_pages : UInt
+
+pub let do_not_retry_purge : UInt
+
+pub let do_power_inrush : UInt
+
+pub let do_power_pagable : UInt
+
+pub let do_shutdown_registered : UInt
+
+pub let do_supports_persistent_acls : UInt
+
+pub let do_supports_transactions : UInt
+
+pub let do_system_boot_partition : UInt
+
+pub let do_system_critical_partition : UInt
+
+pub let do_system_system_partition : UInt
+
+pub let do_verify_volume : UInt
+
+pub let do_volume_device_object : UInt
+
+pub let ea_name_network_open_ecp_integrity : String
+
+pub let ea_name_network_open_ecp_integrity_u : String
+
+pub let ea_name_network_open_ecp_privacy : String
+
+pub let ea_name_network_open_ecp_privacy_u : String
+
+pub let ecp_open_parameters_flag_fail_on_case_sensitive_dir : UInt
+
+pub let ecp_open_parameters_flag_ignore_dir_case_sensitivity : UInt
+
+pub let ecp_open_parameters_flag_open_for_delete : UInt
+
+pub let ecp_open_parameters_flag_open_for_read : UInt
+
+pub let ecp_open_parameters_flag_open_for_write : UInt
+
+pub let equal_to : Int
+
+pub let event_increment : UInt
+
+pub fn export_security_context(@core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn export_security_context_raw(@core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> Int
+
+pub let fast_io_is_not_possible : Int
+
+pub let fast_io_is_possible : Int
+
+pub let fast_io_is_questionable : Int
+
+pub let file_access_information : Int
+
+pub let file_action_added_stream : UInt
+
+pub let file_action_id_not_tunnelled : UInt
+
+pub let file_action_modified_stream : UInt
+
+pub let file_action_removed_by_delete : UInt
+
+pub let file_action_removed_stream : UInt
+
+pub let file_action_tunnelled_id_collision : UInt
+
+pub let file_alignment_information : Int
+
+pub let file_all_information : Int
+
+pub let file_allocation_information : Int
+
+pub let file_alternate_name_information : Int
+
+pub let file_attribute_tag_information : Int
+
+pub let file_basic_information : Int
+
+pub let file_both_directory_information : Int
+
+pub let file_case_sensitive_information : Int
+
+pub let file_case_sensitive_information_force_access_check : Int
+
+pub let file_cleanup_file_deleted : UInt
+
+pub let file_cleanup_file_remains : UInt
+
+pub let file_cleanup_link_deleted : UInt
+
+pub let file_cleanup_posix_style_delete : UInt
+
+pub let file_cleanup_stream_deleted : UInt
+
+pub let file_cleanup_unknown : UInt
+
+pub let file_cleanup_wrong_device : UInt
+
+pub let file_complete_if_oplocked : UInt
+
+pub let file_completion_information : Int
+
+pub let file_compression_information : Int
+
+pub let file_contains_extended_create_information : UInt
+
+pub let file_create : UInt
+
+pub let file_create_tree_connection : UInt
+
+pub let file_delete_on_close : UInt
+
+pub let file_desired_storage_class_information : Int
+
+pub let file_directory_file : UInt
+
+pub let file_directory_information : Int
+
+pub let file_disallow_exclusive : UInt
+
+pub let file_disposition_delete : UInt
+
+pub let file_disposition_do_not_delete : UInt
+
+pub let file_disposition_force_image_section_check : UInt
+
+pub let file_disposition_ignore_readonly_attribute : UInt
+
+pub let file_disposition_information : Int
+
+pub let file_disposition_information_ex : Int
+
+pub let file_disposition_on_close : UInt
+
+pub let file_disposition_posix_semantics : UInt
+
+pub let file_ea_information : Int
+
+pub let file_ea_type_ascii : UInt
+
+pub let file_ea_type_asn1 : UInt
+
+pub let file_ea_type_binary : UInt
+
+pub let file_ea_type_bitmap : UInt
+
+pub let file_ea_type_ea : UInt
+
+pub let file_ea_type_family_ids : UInt
+
+pub let file_ea_type_icon : UInt
+
+pub let file_ea_type_metafile : UInt
+
+pub let file_ea_type_mvmt : UInt
+
+pub let file_ea_type_mvst : UInt
+
+pub let file_end_of_file_information : Int
+
+pub let file_fs_attribute_information : Int
+
+pub let file_fs_control_information : Int
+
+pub let file_fs_data_copy_information : Int
+
+pub let file_fs_device_information : Int
+
+pub let file_fs_driver_path_information : Int
+
+pub let file_fs_full_size_information : Int
+
+pub let file_fs_full_size_information_ex : Int
+
+pub let file_fs_label_information : Int
+
+pub let file_fs_maximum_information : Int
+
+pub let file_fs_metadata_size_information : Int
+
+pub let file_fs_object_id_information : Int
+
+pub let file_fs_sector_size_information : Int
+
+pub let file_fs_size_information : Int
+
+pub let file_fs_volume_flags_information : Int
+
+pub let file_fs_volume_information : Int
+
+pub let file_full_directory_information : Int
+
+pub let file_full_ea_information : Int
+
+pub let file_hard_link_full_id_information : Int
+
+pub let file_hard_link_information : Int
+
+pub let file_id_both_directory_information : Int
+
+pub let file_id_extd_both_directory_information : Int
+
+pub let file_id_extd_directory_information : Int
+
+pub let file_id_full_directory_information : Int
+
+pub let file_id_global_tx_dir_info_flag_visible_outside_tx : UInt
+
+pub let file_id_global_tx_dir_info_flag_visible_to_tx : UInt
+
+pub let file_id_global_tx_dir_info_flag_writelocked : UInt
+
+pub let file_id_global_tx_directory_information : Int
+
+pub let file_id_information : Int
+
+pub let file_internal_information : Int
+
+pub let file_io_completion_notification_information : Int
+
+pub let file_io_priority_hint_information : Int
+
+pub let file_io_status_block_range_information : Int
+
+pub let file_is_remote_device_information : Int
+
+pub let file_known_folder_information : Int
+
+pub let file_link_force_resize_source_sr : UInt
+
+pub let file_link_force_resize_sr : UInt
+
+pub let file_link_force_resize_target_sr : UInt
+
+pub let file_link_ignore_readonly_attribute : UInt
+
+pub let file_link_information : Int
+
+pub let file_link_information_bypass_access_check : Int
+
+pub let file_link_information_ex : Int
+
+pub let file_link_information_ex_bypass_access_check : Int
+
+pub let file_link_no_decrease_available_space : UInt
+
+pub let file_link_no_increase_available_space : UInt
+
+pub let file_link_posix_semantics : UInt
+
+pub let file_link_preserve_available_space : UInt
+
+pub let file_link_replace_if_exists : UInt
+
+pub let file_link_suppress_storage_reserve_inheritance : UInt
+
+pub let file_mailslot_query_information : Int
+
+pub let file_mailslot_set_information : Int
+
+pub let file_maximum_information : Int
+
+pub let file_memory_partition_information : Int
+
+pub let file_mode_information : Int
+
+pub let file_move_cluster_information : Int
+
+pub let file_name_information : Int
+
+pub let file_names_information : Int
+
+pub let file_need_ea : UInt
+
+pub let file_network_open_information : Int
+
+pub let file_network_physical_name_information : Int
+
+pub let file_no_compression : UInt
+
+pub let file_no_ea_knowledge : UInt
+
+pub let file_no_intermediate_buffering : UInt
+
+pub let file_non_directory_file : UInt
+
+pub let file_normalized_name_information : Int
+
+pub let file_notify_change_ea : UInt
+
+pub let file_notify_change_name : UInt
+
+pub let file_notify_change_stream_name : UInt
+
+pub let file_notify_change_stream_size : UInt
+
+pub let file_notify_change_stream_write : UInt
+
+pub let file_notify_valid_mask : UInt
+
+pub let file_numa_node_information : Int
+
+pub let file_object_id_information : Int
+
+pub let file_opbatch_break_underway : UInt
+
+pub let file_open : UInt
+
+pub let file_open_by_file_id : UInt
+
+pub let file_open_for_backup_intent : UInt
+
+pub let file_open_for_free_space_query : UInt
+
+pub let file_open_if : UInt
+
+pub let file_open_no_recall : UInt
+
+pub let file_open_reparse_point : UInt
+
+pub let file_open_requiring_oplock : UInt
+
+pub let file_oplock_broken_to_level_2 : UInt
+
+pub let file_oplock_broken_to_none : UInt
+
+pub let file_overwrite : UInt
+
+pub let file_overwrite_if : UInt
+
+pub let file_pipe_accept_remote_clients : UInt
+
+pub let file_pipe_byte_stream_mode : UInt
+
+pub let file_pipe_byte_stream_type : UInt
+
+pub let file_pipe_client_end : UInt
+
+pub let file_pipe_closing_state : UInt
+
+pub let file_pipe_complete_operation : UInt
+
+pub let file_pipe_computer_name_length : UInt
+
+pub let file_pipe_connected_state : UInt
+
+pub let file_pipe_disconnected_state : UInt
+
+pub let file_pipe_full_duplex : UInt
+
+pub let file_pipe_inbound : UInt
+
+pub let file_pipe_information : Int
+
+pub let file_pipe_listening_state : UInt
+
+pub let file_pipe_local_information : Int
+
+pub let file_pipe_message_mode : UInt
+
+pub let file_pipe_message_type : UInt
+
+pub let file_pipe_outbound : UInt
+
+pub let file_pipe_queue_operation : UInt
+
+pub let file_pipe_read_data : UInt
+
+pub let file_pipe_reject_remote_clients : UInt
+
+pub let file_pipe_remote_information : Int
+
+pub let file_pipe_server_end : UInt
+
+pub let file_pipe_symlink_flag_global : UInt
+
+pub let file_pipe_symlink_flag_relative : UInt
+
+pub let file_pipe_type_valid_mask : UInt
+
+pub let file_pipe_write_space : UInt
+
+pub let file_position_information : Int
+
+pub let file_process_ids_using_file_information : Int
+
+pub let file_quota_information : Int
+
+pub let file_random_access : UInt
+
+pub let file_remote_protocol_information : Int
+
+pub let file_rename_force_resize_source_sr : UInt
+
+pub let file_rename_force_resize_sr : UInt
+
+pub let file_rename_force_resize_target_sr : UInt
+
+pub let file_rename_ignore_readonly_attribute : UInt
+
+pub let file_rename_information : Int
+
+pub let file_rename_information_bypass_access_check : Int
+
+pub let file_rename_information_ex : Int
+
+pub let file_rename_information_ex_bypass_access_check : Int
+
+pub let file_rename_no_decrease_available_space : UInt
+
+pub let file_rename_no_increase_available_space : UInt
+
+pub let file_rename_posix_semantics : UInt
+
+pub let file_rename_preserve_available_space : UInt
+
+pub let file_rename_replace_if_exists : UInt
+
+pub let file_rename_suppress_pin_state_inheritance : UInt
+
+pub let file_rename_suppress_storage_reserve_inheritance : UInt
+
+pub let file_reparse_point_information : Int
+
+pub let file_replace_completion_information : Int
+
+pub let file_reserve_opfilter : UInt
+
+pub let file_sequential_only : UInt
+
+pub let file_session_aware : UInt
+
+pub let file_sfio_reserve_information : Int
+
+pub let file_sfio_volume_information : Int
+
+pub let file_short_name_information : Int
+
+pub let file_standard_information : Int
+
+pub let file_standard_link_information : Int
+
+pub let file_stat_information : Int
+
+pub let file_stat_lx_information : Int
+
+pub let file_storage_reserve_id_information : Int
+
+pub let file_stream_information : Int
+
+pub let file_supersede : UInt
+
+pub let file_synchronous_io_alert : UInt
+
+pub let file_synchronous_io_nonalert : UInt
+
+pub let file_tracking_information : Int
+
+pub let file_unused_information : Int
+
+pub let file_valid_data_length_information : Int
+
+pub let file_vc_content_index_disabled : UInt
+
+pub let file_vc_log_quota_limit : UInt
+
+pub let file_vc_log_quota_threshold : UInt
+
+pub let file_vc_log_volume_limit : UInt
+
+pub let file_vc_log_volume_threshold : UInt
+
+pub let file_vc_quota_enforce : UInt
+
+pub let file_vc_quota_mask : UInt
+
+pub let file_vc_quota_none : UInt
+
+pub let file_vc_quota_track : UInt
+
+pub let file_vc_quotas_incomplete : UInt
+
+pub let file_vc_quotas_rebuilding : UInt
+
+pub let file_vc_valid_mask : UInt
+
+pub let file_volume_name_information : Int
+
+pub let file_write_through : UInt
+
+pub let flags_delay_reasons_bitmap_scanned : UInt
+
+pub let flags_delay_reasons_log_file_full : UInt
+
+pub let flags_end_of_file_info_ex_extend_paging : UInt
+
+pub let flags_end_of_file_info_ex_no_extra_paging_extend : UInt
+
+pub let flags_end_of_file_info_ex_time_constrained : UInt
+
+pub let fs_filter_acquire_for_cc_flush : UInt
+
+pub let fs_filter_acquire_for_mod_write : UInt
+
+pub let fs_filter_acquire_for_section_synchronization : UInt
+
+pub let fs_filter_query_open : UInt
+
+pub let fs_filter_release_for_cc_flush : UInt
+
+pub let fs_filter_release_for_mod_write : UInt
+
+pub let fs_filter_release_for_section_synchronization : UInt
+
+pub let fs_filter_section_sync_image_extents_are_not_rva : UInt
+
+pub let fs_filter_section_sync_in_flag_dont_update_last_access : UInt
+
+pub let fs_filter_section_sync_in_flag_dont_update_last_write : UInt
+
+pub let fs_filter_section_sync_supports_async_parallel_io : UInt
+
+pub let fs_filter_section_sync_supports_direct_map_data : UInt
+
+pub let fs_filter_section_sync_supports_direct_map_image : UInt
+
+pub let fsctl_lmr_get_link_tracking_information : UInt
+
+pub let fsctl_lmr_set_link_tracking_information : UInt
+
+pub let fsctl_mailslot_peek : UInt
+
+pub let fsctl_pipe_assign_event : UInt
+
+pub let fsctl_pipe_create_symlink : UInt
+
+pub let fsctl_pipe_delete_symlink : UInt
+
+pub let fsctl_pipe_disable_impersonate : UInt
+
+pub let fsctl_pipe_disconnect : UInt
+
+pub let fsctl_pipe_flush : UInt
+
+pub let fsctl_pipe_get_connection_attribute : UInt
+
+pub let fsctl_pipe_get_handle_attribute : UInt
+
+pub let fsctl_pipe_get_pipe_attribute : UInt
+
+pub let fsctl_pipe_impersonate : UInt
+
+pub let fsctl_pipe_internal_read : UInt
+
+pub let fsctl_pipe_internal_read_ovflow : UInt
+
+pub let fsctl_pipe_internal_transceive : UInt
+
+pub let fsctl_pipe_internal_write : UInt
+
+pub let fsctl_pipe_listen : UInt
+
+pub let fsctl_pipe_peek : UInt
+
+pub let fsctl_pipe_query_client_process : UInt
+
+pub let fsctl_pipe_query_client_process_v2 : UInt
+
+pub let fsctl_pipe_query_event : UInt
+
+pub let fsctl_pipe_set_client_process : UInt
+
+pub let fsctl_pipe_set_connection_attribute : UInt
+
+pub let fsctl_pipe_set_handle_attribute : UInt
+
+pub let fsctl_pipe_set_pipe_attribute : UInt
+
+pub let fsctl_pipe_silo_arrival : UInt
+
+pub let fsctl_pipe_transceive : UInt
+
+pub let fsctl_pipe_wait : UInt
+
+pub let fsrtl_add_tc_case_sensitive : UInt
+
+pub let fsrtl_add_tc_key_by_short_name : UInt
+
+pub let fsrtl_allocate_ecp_flag_charge_quota : UInt
+
+pub let fsrtl_allocate_ecp_flag_nonpaged_pool : UInt
+
+pub let fsrtl_allocate_ecplist_flag_charge_quota : UInt
+
+pub let fsrtl_auxiliary_flag_deallocate : UInt
+
+pub let fsrtl_cc_flush_error_flag_no_hard_error : UInt
+
+pub let fsrtl_cc_flush_error_flag_no_log_entry : UInt
+
+pub let fsrtl_driver_backing_flag_use_page_file : UInt
+
+pub let fsrtl_ecp_lookaside_flag_nonpaged_pool : UInt
+
+pub let fsrtl_fat_legal : UInt
+
+pub let fsrtl_fcb_header_v0 : UInt
+
+pub let fsrtl_fcb_header_v1 : UInt
+
+pub let fsrtl_fcb_header_v2 : UInt
+
+pub let fsrtl_fcb_header_v3 : UInt
+
+pub let fsrtl_fcb_header_v4 : UInt
+
+pub let fsrtl_find_tc_case_sensitive : UInt
+
+pub let fsrtl_flag2_bypassio_stream_paused : UInt
+
+pub let fsrtl_flag2_do_modified_write : UInt
+
+pub let fsrtl_flag2_is_paging_file : UInt
+
+pub let fsrtl_flag2_purge_when_mapped : UInt
+
+pub let fsrtl_flag2_supports_filter_contexts : UInt
+
+pub let fsrtl_flag2_writable_user_mapped_file : UInt
+
+pub let fsrtl_flag_acquire_main_rsrc_ex : UInt
+
+pub let fsrtl_flag_acquire_main_rsrc_sh : UInt
+
+pub let fsrtl_flag_advanced_header : UInt
+
+pub let fsrtl_flag_eof_advance_active : UInt
+
+pub let fsrtl_flag_file_length_changed : UInt
+
+pub let fsrtl_flag_file_modified : UInt
+
+pub let fsrtl_flag_limit_modified_pages : UInt
+
+pub let fsrtl_flag_user_mapped_file : UInt
+
+pub let fsrtl_hpfs_legal : UInt
+
+pub let fsrtl_ntfs_legal : UInt
+
+pub let fsrtl_ole_legal : UInt
+
+pub let fsrtl_unc_hardening_capabilities_integrity : UInt
+
+pub let fsrtl_unc_hardening_capabilities_mutual_auth : UInt
+
+pub let fsrtl_unc_hardening_capabilities_privacy : UInt
+
+pub let fsrtl_unc_provider_flags_container_aware : UInt
+
+pub let fsrtl_unc_provider_flags_csc_enabled : UInt
+
+pub let fsrtl_unc_provider_flags_domain_svc_aware : UInt
+
+pub let fsrtl_unc_provider_flags_mailslots_supported : UInt
+
+pub let fsrtl_unc_registration_current_version : UInt
+
+pub let fsrtl_unc_registration_version_0200 : UInt
+
+pub let fsrtl_unc_registration_version_0201 : UInt
+
+pub let fsrtl_virtdisk_fully_allocated : UInt
+
+pub let fsrtl_virtdisk_no_drive_letter : UInt
+
+pub let fsrtl_volume_background_format : UInt
+
+pub let fsrtl_volume_change_size : UInt
+
+pub let fsrtl_volume_dismount : UInt
+
+pub let fsrtl_volume_dismount_failed : UInt
+
+pub let fsrtl_volume_forced_closed : UInt
+
+pub let fsrtl_volume_info_make_compat : UInt
+
+pub let fsrtl_volume_lock : UInt
+
+pub let fsrtl_volume_lock_failed : UInt
+
+pub let fsrtl_volume_mount : UInt
+
+pub let fsrtl_volume_needs_chkdsk : UInt
+
+pub let fsrtl_volume_preparing_eject : UInt
+
+pub let fsrtl_volume_unlock : UInt
+
+pub let fsrtl_volume_wearing_out : UInt
+
+pub let fsrtl_volume_worm_near_full : UInt
+
+pub let fsrtl_wild_character : UInt
+
+pub let gcr_allow_lm : UInt
+
+pub let gcr_allow_no_target : UInt
+
+pub let gcr_allow_ntlm : UInt
+
+pub let gcr_machine_credential : UInt
+
+pub let gcr_ntlm3_parms : UInt
+
+pub let gcr_target_info : UInt
+
+pub let gcr_use_oem_set : UInt
+
+pub let gcr_use_owf_password : UInt
+
+pub let gcr_vsm_protected_password : UInt
+
+pub let generate_client_challenge : UInt
+
+pub fn get_security_user_info_raw(@core.RawAddress, UInt, @core.RawAddress) -> Int
+
+pub let greater_than : Int
+
+pub let heap_class_0 : UInt
+
+pub let heap_class_1 : UInt
+
+pub let heap_class_2 : UInt
+
+pub let heap_class_3 : UInt
+
+pub let heap_class_4 : UInt
+
+pub let heap_class_5 : UInt
+
+pub let heap_class_6 : UInt
+
+pub let heap_class_7 : UInt
+
+pub let heap_class_8 : UInt
+
+pub let heap_class_mask : UInt
+
+pub let heap_create_align_16 : UInt
+
+pub let heap_create_enable_execute : UInt
+
+pub let heap_create_enable_tracing : UInt
+
+pub let heap_create_hardened : UInt
+
+pub let heap_create_segment_heap : UInt
+
+pub let heap_disable_coalesce_on_free : UInt
+
+pub let heap_free_checking_enabled : UInt
+
+pub let heap_generate_exceptions : UInt
+
+pub let heap_global_tag : UInt
+
+pub let heap_growable : UInt
+
+pub let heap_maximum_tag : UInt
+
+pub let heap_memory_basic_information : Int
+
+pub let heap_no_serialize : UInt
+
+pub let heap_pseudo_tag_flag : UInt
+
+pub let heap_realloc_in_place_only : UInt
+
+pub let heap_settable_user_flag1 : UInt
+
+pub let heap_settable_user_flag2 : UInt
+
+pub let heap_settable_user_flag3 : UInt
+
+pub let heap_settable_user_flags : UInt
+
+pub let heap_settable_user_value : UInt
+
+pub let heap_tag_shift : UInt
+
+pub let heap_tail_checking_enabled : UInt
+
+pub let heap_zero_memory : UInt
+
+pub let invalid_processor_index : UInt
+
+pub let io_cd_rom_increment : UInt
+
+pub let io_create_stream_file_lite : UInt
+
+pub let io_create_stream_file_raise_on_error : UInt
+
+pub let io_disk_increment : UInt
+
+pub let io_file_object_non_paged_pool_charge : UInt
+
+pub let io_file_object_paged_pool_charge : UInt
+
+pub let io_ignore_readonly_attribute : UInt
+
+pub let io_mailslot_increment : UInt
+
+pub let io_mm_paging_file : UInt
+
+pub let io_named_pipe_increment : UInt
+
+pub let io_network_increment : UInt
+
+pub let io_no_increment : UInt
+
+pub let io_open_paging_file : UInt
+
+pub let io_open_target_directory : UInt
+
+pub let io_reparse_tag_acronis_hsm_0 : Int
+
+pub let io_reparse_tag_acronis_hsm_1 : Int
+
+pub let io_reparse_tag_acronis_hsm_2 : Int
+
+pub let io_reparse_tag_acronis_hsm_3 : Int
+
+pub let io_reparse_tag_acronis_hsm_4 : Int
+
+pub let io_reparse_tag_acronis_hsm_5 : Int
+
+pub let io_reparse_tag_acronis_hsm_6 : Int
+
+pub let io_reparse_tag_acronis_hsm_7 : Int
+
+pub let io_reparse_tag_acronis_hsm_8 : Int
+
+pub let io_reparse_tag_acronis_hsm_9 : Int
+
+pub let io_reparse_tag_acronis_hsm_a : Int
+
+pub let io_reparse_tag_acronis_hsm_b : Int
+
+pub let io_reparse_tag_acronis_hsm_c : Int
+
+pub let io_reparse_tag_acronis_hsm_d : Int
+
+pub let io_reparse_tag_acronis_hsm_e : Int
+
+pub let io_reparse_tag_acronis_hsm_f : Int
+
+pub let io_reparse_tag_activision_hsm : Int
+
+pub let io_reparse_tag_ada_hsm : Int
+
+pub let io_reparse_tag_adobe_hsm : Int
+
+pub let io_reparse_tag_alertboot : Int
+
+pub let io_reparse_tag_altiris_hsm : Int
+
+pub let io_reparse_tag_appxstrm : Int
+
+pub let io_reparse_tag_arco_backup : Int
+
+pub let io_reparse_tag_arkivio : Int
+
+pub let io_reparse_tag_auristor_fs : Int
+
+pub let io_reparse_tag_autn_hsm : Int
+
+pub let io_reparse_tag_bridgehead_hsm : Int
+
+pub let io_reparse_tag_c2_csystems_hsm : Int
+
+pub let io_reparse_tag_caringo_hsm : Int
+
+pub let io_reparse_tag_carroll_hsm : Int
+
+pub let io_reparse_tag_citrix_pm : Int
+
+pub let io_reparse_tag_commvault : Int
+
+pub let io_reparse_tag_commvault_hsm : Int
+
+pub let io_reparse_tag_comtrade_hsm : Int
+
+pub let io_reparse_tag_ctera_hsm : Int
+
+pub let io_reparse_tag_datafirst_hsm : Int
+
+pub let io_reparse_tag_dataglobal_hsm : Int
+
+pub let io_reparse_tag_datastor_sis : Int
+
+pub let io_reparse_tag_dfm : Int
+
+pub let io_reparse_tag_dor_hsm : Int
+
+pub let io_reparse_tag_double_take_hsm : Int
+
+pub let io_reparse_tag_double_take_sis : Int
+
+pub let io_reparse_tag_drive_extender : Int
+
+pub let io_reparse_tag_dropbox_hsm : Int
+
+pub let io_reparse_tag_easefilter_hsm : Int
+
+pub let io_reparse_tag_easevault_hsm : Int
+
+pub let io_reparse_tag_edsi_hsm : Int
+
+pub let io_reparse_tag_eltan_hsm : Int
+
+pub let io_reparse_tag_emc_hsm : Int
+
+pub let io_reparse_tag_enigma_hsm : Int
+
+pub let io_reparse_tag_filter_manager : Int
+
+pub let io_reparse_tag_global360_hsm : Int
+
+pub let io_reparse_tag_google_hsm : Int
+
+pub let io_reparse_tag_grau_datastorage_hsm : Int
+
+pub let io_reparse_tag_hds_hcp_hsm : Int
+
+pub let io_reparse_tag_hds_hsm : Int
+
+pub let io_reparse_tag_hermes_hsm : Int
+
+pub let io_reparse_tag_hp_backup : Int
+
+pub let io_reparse_tag_hp_data_protect : Int
+
+pub let io_reparse_tag_hp_hsm : Int
+
+pub let io_reparse_tag_hsag_hsm : Int
+
+pub let io_reparse_tag_hubstor_hsm : Int
+
+pub let io_reparse_tag_ifstest_congruent : Int
+
+pub let io_reparse_tag_iis_cache : Int
+
+pub let io_reparse_tag_imanage_hsm : Int
+
+pub let io_reparse_tag_intercope_hsm : Int
+
+pub let io_reparse_tag_itstation : Int
+
+pub let io_reparse_tag_kom_networks_hsm : Int
+
+pub let io_reparse_tag_lx_blk : Int
+
+pub let io_reparse_tag_lx_chr : Int
+
+pub let io_reparse_tag_lx_fifo : Int
+
+pub let io_reparse_tag_lx_symlink : Int
+
+pub let io_reparse_tag_maginatics_rdr : Int
+
+pub let io_reparse_tag_maxiscale_hsm : Int
+
+pub let io_reparse_tag_memory_tech_hsm : Int
+
+pub let io_reparse_tag_mimosa_hsm : Int
+
+pub let io_reparse_tag_moonwalk_hsm : Int
+
+pub let io_reparse_tag_mtalos : Int
+
+pub let io_reparse_tag_neushield : Int
+
+pub let io_reparse_tag_nexsan_hsm : Int
+
+pub let io_reparse_tag_nippon_hsm : Int
+
+pub let io_reparse_tag_nvidia_unionfs : Int
+
+pub let io_reparse_tag_openafs_dfs : Int
+
+pub let io_reparse_tag_osr_sample : Int
+
+pub let io_reparse_tag_overtone : Int
+
+pub let io_reparse_tag_pointsoft_hsm : Int
+
+pub let io_reparse_tag_qi_tech_hsm : Int
+
+pub let io_reparse_tag_quaddra_hsm : Int
+
+pub let io_reparse_tag_quest_hsm : Int
+
+pub let io_reparse_tag_redstor_hsm : Int
+
+pub let io_reparse_tag_riverbed_hsm : Int
+
+pub let io_reparse_tag_ser_hsm : Int
+
+pub let io_reparse_tag_shx_backup : Int
+
+pub let io_reparse_tag_solutionsoft : Int
+
+pub let io_reparse_tag_sony_hsm : Int
+
+pub let io_reparse_tag_spharsoft : Int
+
+pub let io_reparse_tag_symantec_hsm : Int
+
+pub let io_reparse_tag_symantec_hsm2 : Int
+
+pub let io_reparse_tag_tsinghua_university_research : Int
+
+pub let io_reparse_tag_utixo_hsm : Int
+
+pub let io_reparse_tag_valid_values : UInt
+
+pub let io_reparse_tag_vmware_pm : Int
+
+pub let io_reparse_tag_waterford : Int
+
+pub let io_reparse_tag_wisdata_hsm : Int
+
+pub let io_reparse_tag_zlti_hsm : Int
+
+pub let io_stop_on_symlink : UInt
+
+pub let ioctl_lmr_are_file_objects_on_same_server : UInt
+
+pub let ioctl_redir_query_path : UInt
+
+pub let ioctl_redir_query_path_ex : UInt
+
+pub let ioctl_volsnap_flush_and_hold_writes : UInt
+
+pub let known_folder_desktop : Int
+
+pub let known_folder_documents : Int
+
+pub let known_folder_downloads : Int
+
+pub let known_folder_max : Int
+
+pub let known_folder_music : Int
+
+pub let known_folder_none : Int
+
+pub let known_folder_other : Int
+
+pub let known_folder_pictures : Int
+
+pub let known_folder_videos : Int
+
+pub let lcn_checksum_valid : Int
+
+pub let lcn_weak_reference_valid : Int
+
+pub let less_than : Int
+
+pub let lx_file_case_sensitive_dir : UInt
+
+pub let lx_file_metadata_device_id_ea_name : String
+
+pub let lx_file_metadata_gid_ea_name : String
+
+pub let lx_file_metadata_has_device_id : UInt
+
+pub let lx_file_metadata_has_gid : UInt
+
+pub let lx_file_metadata_has_mode : UInt
+
+pub let lx_file_metadata_has_uid : UInt
+
+pub let lx_file_metadata_mode_ea_name : String
+
+pub let lx_file_metadata_uid_ea_name : String
+
+pub fn make_signature(@core.RawAddress, UInt, @core.RawAddress, UInt) -> Unit raise @core.WindowsError
+
+pub fn make_signature_raw(@core.RawAddress, UInt, @core.RawAddress, UInt) -> Int
+
+pub let map_disable_pagefault_clustering : UInt
+
+pub let map_high_priority : UInt
+
+pub let map_no_read : UInt
+
+pub let map_wait : UInt
+
+pub let max_unicode_stack_buffer_length : UInt
+
+pub let maximum_leadbytes : UInt
+
+pub let mcb_flag_raise_on_allocation_failure : UInt
+
+pub let memory_basic_information : Int
+
+pub let memory_type64_k_page : Int
+
+pub let memory_type_custom : Int
+
+pub let memory_type_huge_page : Int
+
+pub let memory_type_large_page : Int
+
+pub let memory_type_max : Int
+
+pub let memory_type_non_paged : Int
+
+pub let memory_type_paged : Int
+
+pub let mm_flush_for_delete : Int
+
+pub let mm_flush_for_write : Int
+
+pub let mm_force_closed_data : UInt
+
+pub let mm_force_closed_image : UInt
+
+pub let mm_force_closed_later_ok : UInt
+
+pub let mm_is_file_section_active_data : UInt
+
+pub let mm_is_file_section_active_image : UInt
+
+pub let mm_is_file_section_active_user : UInt
+
+pub let msv_av_channel_bindings : Int
+
+pub let msv_av_dns_computer_name : Int
+
+pub let msv_av_dns_domain_name : Int
+
+pub let msv_av_dns_tree_name : Int
+
+pub let msv_av_eol : Int
+
+pub let msv_av_flags : Int
+
+pub let msv_av_nb_computer_name : Int
+
+pub let msv_av_nb_domain_name : Int
+
+pub let msv_av_restrictions : Int
+
+pub let msv_av_target_name : Int
+
+pub let msv_av_timestamp : Int
+
+pub let network_open_ecp_in_flag_disable_handle_collapsing : UInt
+
+pub let network_open_ecp_in_flag_disable_handle_durability : UInt
+
+pub let network_open_ecp_in_flag_disable_oplocks : UInt
+
+pub let network_open_ecp_in_flag_force_buffered_synchronous_io_hack : UInt
+
+pub let network_open_ecp_in_flag_force_max_eof_hack : UInt
+
+pub let network_open_ecp_in_flag_req_mutual_auth : UInt
+
+pub let network_open_ecp_out_flag_ret_mutual_auth : UInt
+
+pub let network_open_integrity_any : Int
+
+pub let network_open_integrity_encrypted : Int
+
+pub let network_open_integrity_maximum : Int
+
+pub let network_open_integrity_none : Int
+
+pub let network_open_integrity_signed : Int
+
+pub let network_open_location_any : Int
+
+pub let network_open_location_loopback : Int
+
+pub let network_open_location_remote : Int
+
+pub let no_8_dot3_name_present : UInt
+
+pub let notify_type_create : Int
+
+pub let notify_type_retired : Int
+
+pub fn nt_access_check_and_audit_alarm_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn nt_access_check_by_type_and_audit_alarm_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, UInt, Int, UInt, @core.RawAddress, UInt, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn nt_access_check_by_type_result_list_and_audit_alarm_by_handle_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, UInt, Int, UInt, @core.RawAddress, UInt, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn nt_access_check_by_type_result_list_and_audit_alarm_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, UInt, Int, UInt, @core.RawAddress, UInt, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn nt_adjust_groups_token_raw(@core.RawAddress, UInt, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn nt_adjust_privileges_token_raw(@core.RawAddress, UInt, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn nt_allocate_virtual_memory_ex_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, UInt, UInt, @core.RawAddress, UInt) -> Int
+
+pub fn nt_allocate_virtual_memory_raw(@core.RawAddress, @core.RawAddress, UInt64, @core.RawAddress, UInt, UInt) -> Int
+
+pub fn nt_cancel_io_file_ex_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn nt_close_object_audit_alarm_raw(@core.RawAddress, @core.RawAddress, UInt) -> Int
+
+pub fn nt_create_directory_object_raw(@core.RawAddress, UInt, @core.RawAddress) -> Int
+
+pub fn nt_create_event_raw(@core.RawAddress, UInt, @core.RawAddress, Int, UInt) -> Int
+
+pub fn nt_create_file_raw(@core.RawAddress, UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress, UInt, UInt, UInt, UInt, @core.RawAddress, UInt) -> Int
+
+pub fn nt_create_section_ex_raw(@core.RawAddress, UInt, @core.RawAddress, @core.RawAddress, UInt, UInt, @core.RawAddress, @core.RawAddress, UInt) -> Int
+
+pub fn nt_create_section_raw(@core.RawAddress, UInt, @core.RawAddress, @core.RawAddress, UInt, UInt, @core.RawAddress) -> Int
+
+pub fn nt_delete_file_raw(@core.RawAddress) -> Int
+
+pub fn nt_delete_object_audit_alarm_raw(@core.RawAddress, @core.RawAddress, UInt) -> Int
+
+pub fn nt_duplicate_object_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, UInt, UInt, UInt) -> Int
+
+pub fn nt_duplicate_token_raw(@core.RawAddress, UInt, @core.RawAddress, UInt, Int, @core.RawAddress) -> Int
+
+pub fn nt_filter_token_raw(@core.RawAddress, UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn nt_flush_buffers_file_ex_raw(@core.RawAddress, UInt, @core.RawAddress, UInt, @core.RawAddress) -> Int
+
+pub fn nt_flush_buffers_file_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn nt_flush_virtual_memory_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn nt_free_virtual_memory_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, UInt) -> Int
+
+pub fn nt_fs_control_file_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, UInt, @core.RawAddress, UInt) -> Int
+
+pub fn nt_impersonate_anonymous_token_raw(@core.RawAddress) -> Int
+
+pub fn nt_lock_file_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, UInt, UInt, UInt) -> Int
+
+pub fn nt_notify_change_key_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, UInt, UInt, @core.RawAddress, UInt, UInt) -> Int
+
+pub fn nt_open_directory_object_raw(@core.RawAddress, UInt, @core.RawAddress) -> Int
+
+pub fn nt_open_file_raw(@core.RawAddress, UInt, @core.RawAddress, @core.RawAddress, UInt, UInt) -> Int
+
+pub fn nt_open_object_audit_alarm_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, UInt, UInt, @core.RawAddress, UInt, UInt, @core.RawAddress) -> Int
+
+pub fn nt_open_process_token_ex_raw(@core.RawAddress, UInt, UInt, @core.RawAddress) -> Int
+
+pub fn nt_open_process_token_raw(@core.RawAddress, UInt, @core.RawAddress) -> Int
+
+pub fn nt_open_symbolic_link_object_raw(@core.RawAddress, UInt, @core.RawAddress) -> Int
+
+pub fn nt_open_thread_token_ex_raw(@core.RawAddress, UInt, UInt, UInt, @core.RawAddress) -> Int
+
+pub fn nt_open_thread_token_raw(@core.RawAddress, UInt, UInt, @core.RawAddress) -> Int
+
+pub fn nt_privilege_check_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn nt_privilege_object_audit_alarm_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, UInt) -> Int
+
+pub fn nt_privileged_service_audit_alarm_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, UInt) -> Int
+
+pub fn nt_query_directory_file_ex_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, UInt, Int, UInt, @core.RawAddress) -> Int
+
+pub fn nt_query_directory_file_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, UInt, Int, UInt, @core.RawAddress, UInt) -> Int
+
+pub fn nt_query_directory_object_raw(@core.RawAddress, @core.RawAddress, UInt, UInt, UInt, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn nt_query_ea_file_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, UInt, UInt, @core.RawAddress, UInt, @core.RawAddress, UInt) -> Int
+
+pub fn nt_query_full_attributes_file_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn nt_query_information_by_name_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, UInt, Int) -> Int
+
+pub fn nt_query_information_file_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, UInt, Int) -> Int
+
+pub fn nt_query_information_token_raw(@core.RawAddress, Int, @core.RawAddress, UInt, @core.RawAddress) -> Int
+
+pub fn nt_query_quota_information_file_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, UInt, UInt, @core.RawAddress, UInt, @core.RawAddress, UInt) -> Int
+
+pub fn nt_query_security_object_raw(@core.RawAddress, UInt, @core.RawAddress, UInt, @core.RawAddress) -> Int
+
+pub fn nt_query_symbolic_link_object_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn nt_query_virtual_memory_raw(@core.RawAddress, @core.RawAddress, Int, @core.RawAddress, UInt64, @core.RawAddress) -> Int
+
+pub fn nt_query_volume_information_file_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, UInt, Int) -> Int
+
+pub fn nt_read_file_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn nt_set_ea_file_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, UInt) -> Int
+
+pub fn nt_set_event_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn nt_set_information_file_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, UInt, Int) -> Int
+
+pub fn nt_set_information_token_raw(@core.RawAddress, Int, @core.RawAddress, UInt) -> Int
+
+pub fn nt_set_information_virtual_memory_raw(@core.RawAddress, Int, UInt64, @core.RawAddress, @core.RawAddress, UInt) -> Int
+
+pub fn nt_set_quota_information_file_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, UInt) -> Int
+
+pub fn nt_set_security_object_raw(@core.RawAddress, UInt, @core.RawAddress) -> Int
+
+pub fn nt_set_volume_information_file_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, UInt, Int) -> Int
+
+pub fn nt_unlock_file_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, UInt) -> Int
+
+pub fn nt_write_file_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> Int
+
+pub let ntfs_link_tracking_information : Int
+
+pub let open_reparse_point_override_create_option : UInt
+
+pub let open_reparse_point_reparse_always : UInt
+
+pub let open_reparse_point_reparse_if_child_exists : UInt
+
+pub let open_reparse_point_reparse_if_child_not_exists : UInt
+
+pub let open_reparse_point_reparse_if_directory_final_component : UInt
+
+pub let open_reparse_point_reparse_if_directory_final_component_always : UInt
+
+pub let open_reparse_point_reparse_if_final_component : UInt
+
+pub let open_reparse_point_reparse_if_final_component_always : UInt
+
+pub let open_reparse_point_reparse_if_non_directory_final_component : UInt
+
+pub let open_reparse_point_reparse_if_non_directory_final_component_always : UInt
+
+pub let open_reparse_point_reparse_if_non_directory_non_final_component : UInt
+
+pub let open_reparse_point_reparse_if_non_directory_non_final_component_always : UInt
+
+pub let open_reparse_point_reparse_if_non_final_component : UInt
+
+pub let open_reparse_point_return_reparse_data_buffer : UInt
+
+pub let open_reparse_point_tag_encountered : UInt
+
+pub let open_reparse_point_version_ex : UInt
+
+pub let oplock_flag_back_out_atomic_oplock : UInt
+
+pub let oplock_flag_breaking_for_sharing_violation : UInt
+
+pub let oplock_flag_closing_delete_on_close : UInt
+
+pub let oplock_flag_complete_if_oplocked : UInt
+
+pub let oplock_flag_ignore_oplock_keys : UInt
+
+pub let oplock_flag_oplock_key_check_only : UInt
+
+pub let oplock_flag_parent_object : UInt
+
+pub let oplock_flag_removing_file_or_link : UInt
+
+pub let oplock_fsctrl_flag_all_keys_match : UInt
+
+pub let oplock_notify_break_wait_interim_timeout : Int
+
+pub let oplock_notify_break_wait_terminated : Int
+
+pub let oplock_upper_flag_check_no_break : UInt
+
+pub let oplock_upper_flag_notify_refresh_read : UInt
+
+pub fn pfx_find_prefix_raw(@core.RawAddress, @core.RawAddress) -> @core.RawAddress
+
+pub fn pfx_initialize_raw(@core.RawAddress) -> Unit
+
+pub fn pfx_insert_prefix_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn pfx_remove_prefix_raw(@core.RawAddress, @core.RawAddress) -> Unit
+
+pub let pin_caller_tracks_dirty_data : UInt
+
+pub let pin_exclusive : UInt
+
+pub let pin_high_priority : UInt
+
+pub let pin_if_bcb : UInt
+
+pub let pin_no_read : UInt
+
+pub let pin_verify_required : UInt
+
+pub let pin_wait : UInt
+
+pub let po_cb_ac_status : UInt
+
+pub let po_cb_button_collision : UInt
+
+pub let po_cb_lid_switch_state : UInt
+
+pub let po_cb_processor_power_policy : UInt
+
+pub let po_cb_system_power_policy : UInt
+
+pub let po_cb_system_state_lock : UInt
+
+pub let policy_audit_subcategory_count : UInt
+
+pub let psmp_maximum_sysapp_claim_values : UInt
+
+pub let psmp_minimum_sysapp_claim_values : UInt
+
+pub let purge_with_active_views : UInt
+
+pub let qo_c_file_ea_information : UInt
+
+pub let qo_c_file_lx_information : UInt
+
+pub let qo_c_file_stat_information : UInt
+
+pub let query_direct_access_data_extents : UInt
+
+pub let query_direct_access_image_extents : UInt
+
+pub fn query_security_context_token(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn query_security_context_token_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub let refs_compression_format_lz4 : Int
+
+pub let refs_compression_format_max : Int
+
+pub let refs_compression_format_uncompressed : Int
+
+pub let refs_compression_format_zstd : Int
+
+pub let refs_deallocate_ranges_allocator_caa : Int
+
+pub let refs_deallocate_ranges_allocator_maa : Int
+
+pub let refs_deallocate_ranges_allocator_none : Int
+
+pub let refs_deallocate_ranges_allocator_saa : Int
+
+pub let refs_set_volume_compression_info_flag_compress_sync : Int
+
+pub let refs_set_volume_compression_info_flag_max : Int
+
+pub let refs_stream_extent_property_crc32 : Int
+
+pub let refs_stream_extent_property_crc64 : Int
+
+pub let refs_stream_extent_property_ghosted : Int
+
+pub let refs_stream_extent_property_readonly : Int
+
+pub let refs_stream_extent_property_sparse : Int
+
+pub let refs_stream_extent_property_stream_reserved : Int
+
+pub let refs_stream_extent_property_valid : Int
+
+pub let refs_stream_snapshot_operation_clear_shadow_btree : Int
+
+pub let refs_stream_snapshot_operation_create : Int
+
+pub let refs_stream_snapshot_operation_invalid : Int
+
+pub let refs_stream_snapshot_operation_list : Int
+
+pub let refs_stream_snapshot_operation_max : Int
+
+pub let refs_stream_snapshot_operation_query_deltas : Int
+
+pub let refs_stream_snapshot_operation_revert : Int
+
+pub let refs_stream_snapshot_operation_set_shadow_btree : Int
+
+pub let remote_protocol_flag_integrity : UInt
+
+pub let remote_protocol_flag_loopback : UInt
+
+pub let remote_protocol_flag_mutual_auth : UInt
+
+pub let remote_protocol_flag_offline : UInt
+
+pub let remote_protocol_flag_persistent_handle : UInt
+
+pub let remote_protocol_flag_privacy : UInt
+
+pub let removed_8_dot3_name : UInt
+
+pub let reparse_data_ex_flag_given_tag_or_none : UInt
+
+pub let return_non_nt_user_session_key : UInt
+
+pub let return_primary_logon_domainname : UInt
+
+pub let return_primary_username : UInt
+
+pub let return_reserved_parameter : UInt
+
+pub let rpi_smb2_servercap_dfs : UInt
+
+pub let rpi_smb2_servercap_directory_leasing : UInt
+
+pub let rpi_smb2_servercap_encryption_aware : UInt
+
+pub let rpi_smb2_servercap_largemtu : UInt
+
+pub let rpi_smb2_servercap_leasing : UInt
+
+pub let rpi_smb2_servercap_multichannel : UInt
+
+pub let rpi_smb2_servercap_persistent_handles : UInt
+
+pub let rpi_smb2_sharecap_access_based_directory_enum : UInt
+
+pub let rpi_smb2_sharecap_asymmetric_scaleout : UInt
+
+pub let rpi_smb2_sharecap_cluster : UInt
+
+pub let rpi_smb2_sharecap_continuous_availability : UInt
+
+pub let rpi_smb2_sharecap_dfs : UInt
+
+pub let rpi_smb2_sharecap_encrypted : UInt
+
+pub let rpi_smb2_sharecap_identity_remoting : UInt
+
+pub let rpi_smb2_sharecap_scaleout : UInt
+
+pub let rpi_smb2_sharecap_timewarp : UInt
+
+pub let rpi_smb2_sharetype_disk : UInt
+
+pub let rpi_smb2_sharetype_pipe : UInt
+
+pub let rpi_smb2_sharetype_print : UInt
+
+pub fn rtl_absolute_to_self_relative_sd_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn rtl_add_access_allowed_ace_ex_raw(@core.RawAddress, UInt, UInt, UInt, @core.RawAddress) -> Int
+
+pub fn rtl_add_access_allowed_ace_raw(@core.RawAddress, UInt, UInt, @core.RawAddress) -> Int
+
+pub fn rtl_add_ace_raw(@core.RawAddress, UInt, UInt, @core.RawAddress, UInt) -> Int
+
+pub fn rtl_allocate_and_initialize_sid_ex_raw(@core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn rtl_allocate_and_initialize_sid_raw(@core.RawAddress, UInt, UInt, UInt, UInt, UInt, UInt, UInt, UInt, UInt, @core.RawAddress) -> Int
+
+pub fn rtl_allocate_heap_raw(@core.RawAddress, UInt, UInt64) -> @core.RawAddress
+
+pub fn rtl_append_string_to_string_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn rtl_compare_altitudes_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn rtl_compare_memory_ulong_raw(@core.RawAddress, UInt64, UInt) -> UInt64
+
+pub fn rtl_compress_buffer_raw(UInt, @core.RawAddress, UInt, @core.RawAddress, UInt, UInt, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn rtl_copy_luid_raw(@core.RawAddress, @core.RawAddress) -> Unit
+
+pub fn rtl_copy_sid_raw(UInt, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn rtl_create_acl_raw(@core.RawAddress, UInt, UInt) -> Int
+
+pub fn rtl_create_heap_raw(UInt, @core.RawAddress, UInt64, UInt64, @core.RawAddress, @core.RawAddress) -> @core.RawAddress
+
+pub fn rtl_create_service_sid_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn rtl_create_system_volume_information_folder_raw(@core.RawAddress) -> Int
+
+pub fn rtl_create_unicode_string_raw(@core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn rtl_create_virtual_account_sid_raw(@core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn rtl_custom_cp_to_unicode_n_raw(@core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress, UInt) -> Int
+
+pub fn rtl_decompress_buffer_ex_raw(UInt, @core.RawAddress, UInt, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn rtl_decompress_buffer_raw(UInt, @core.RawAddress, UInt, @core.RawAddress, UInt, @core.RawAddress) -> Int
+
+pub fn rtl_decompress_fragment_raw(UInt, @core.RawAddress, UInt, @core.RawAddress, UInt, UInt, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn rtl_delete_ace_raw(@core.RawAddress, UInt) -> Int
+
+pub fn rtl_destroy_heap_raw(@core.RawAddress) -> @core.RawAddress
+
+pub fn rtl_dos_path_name_to_nt_path_name_u_with_status_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn rtl_downcase_unicode_string_raw(@core.RawAddress, @core.RawAddress, UInt) -> Int
+
+pub let rtl_duplicate_unicode_string_allocate_null_string : UInt
+
+pub let rtl_duplicate_unicode_string_null_terminate : UInt
+
+pub fn rtl_duplicate_unicode_string_raw(UInt, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn rtl_equal_prefix_sid_raw(@core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn rtl_equal_sid_raw(@core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn rtl_free_heap_raw(@core.RawAddress, UInt, @core.RawAddress) -> UInt
+
+pub fn rtl_free_sid_raw(@core.RawAddress) -> @core.RawAddress
+
+pub fn rtl_generate8dot3_name_raw(@core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn rtl_get_ace_raw(@core.RawAddress, UInt, @core.RawAddress) -> Int
+
+pub fn rtl_get_compression_work_space_size_raw(UInt, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn rtl_get_dacl_security_descriptor_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn rtl_get_group_security_descriptor_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn rtl_get_owner_security_descriptor_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn rtl_get_sacl_security_descriptor_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub let rtl_heap_memory_limit_current_version : UInt
+
+pub fn rtl_identifier_authority_sid_raw(@core.RawAddress) -> @core.RawAddress
+
+pub fn rtl_idn_to_ascii_raw(UInt, @core.RawAddress, Int, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn rtl_idn_to_nameprep_unicode_raw(UInt, @core.RawAddress, Int, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn rtl_idn_to_unicode_raw(UInt, @core.RawAddress, Int, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn rtl_init_code_page_table_raw(@core.RawAddress, @core.RawAddress) -> Unit
+
+pub fn rtl_init_unicode_string_ex_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn rtl_initialize_sid_raw(@core.RawAddress, @core.RawAddress, UInt) -> Int
+
+pub fn rtl_is_cloud_files_placeholder_raw(UInt, UInt) -> UInt
+
+pub fn rtl_is_dos_device_name_u_raw(@core.RawAddress) -> UInt
+
+pub fn rtl_is_non_empty_directory_reparse_point_allowed_raw(UInt) -> UInt
+
+pub fn rtl_is_normalized_string_raw(UInt, @core.RawAddress, Int, @core.RawAddress) -> Int
+
+pub fn rtl_is_partial_placeholder_file_handle_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn rtl_is_partial_placeholder_file_info_raw(@core.RawAddress, Int, @core.RawAddress) -> Int
+
+pub fn rtl_is_partial_placeholder_raw(UInt, UInt) -> UInt
+
+pub fn rtl_length_required_sid_raw(UInt) -> UInt
+
+pub fn rtl_length_sid_raw(@core.RawAddress) -> UInt
+
+pub fn rtl_multi_byte_to_unicode_n_raw(@core.RawAddress, UInt, @core.RawAddress, @core.RawAddress, UInt) -> Int
+
+pub fn rtl_multi_byte_to_unicode_size_raw(@core.RawAddress, @core.RawAddress, UInt) -> Int
+
+pub fn rtl_normalize_string_raw(UInt, @core.RawAddress, Int, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn rtl_nt_status_to_dos_error_no_teb_raw(Int) -> UInt
+
+pub fn rtl_oem_string_to_unicode_string_raw(@core.RawAddress, @core.RawAddress, UInt) -> Int
+
+pub fn rtl_oem_to_unicode_n_raw(@core.RawAddress, UInt, @core.RawAddress, @core.RawAddress, UInt) -> Int
+
+pub fn rtl_prefix_string_raw(@core.RawAddress, @core.RawAddress, UInt) -> UInt
+
+pub fn rtl_query_package_identity_ex_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn rtl_query_package_identity_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn rtl_query_process_placeholder_compatibility_mode_raw() -> Int
+
+pub fn rtl_query_thread_placeholder_compatibility_mode_raw() -> Int
+
+pub fn rtl_random_ex_raw(@core.RawAddress) -> UInt
+
+pub fn rtl_random_raw(@core.RawAddress) -> UInt
+
+pub fn rtl_replace_sid_in_sd_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn rtl_seconds_since1970_to_time_raw(UInt, @core.RawAddress) -> Unit
+
+pub fn rtl_seconds_since1980_to_time_raw(UInt, @core.RawAddress) -> Unit
+
+pub fn rtl_self_relative_to_absolute_sd_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn rtl_set_group_security_descriptor_raw(@core.RawAddress, @core.RawAddress, UInt) -> Int
+
+pub fn rtl_set_owner_security_descriptor_raw(@core.RawAddress, @core.RawAddress, UInt) -> Int
+
+pub fn rtl_set_process_placeholder_compatibility_mode_raw(Int) -> Int
+
+pub fn rtl_set_thread_placeholder_compatibility_mode_raw(Int) -> Int
+
+pub fn rtl_sub_authority_count_sid_raw(@core.RawAddress) -> @core.RawAddress
+
+pub fn rtl_sub_authority_sid_raw(@core.RawAddress, UInt) -> @core.RawAddress
+
+pub let rtl_system_volume_information_folder : String
+
+pub fn rtl_time_to_seconds_since1980_raw(@core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn rtl_unicode_string_to_counted_oem_string_raw(@core.RawAddress, @core.RawAddress, UInt) -> Int
+
+pub fn rtl_unicode_to_custom_cpn_raw(@core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress, UInt) -> Int
+
+pub fn rtl_unicode_to_multi_byte_n_raw(@core.RawAddress, UInt, @core.RawAddress, @core.RawAddress, UInt) -> Int
+
+pub fn rtl_unicode_to_oem_n_raw(@core.RawAddress, UInt, @core.RawAddress, @core.RawAddress, UInt) -> Int
+
+pub fn rtl_upcase_unicode_string_to_counted_oem_string_raw(@core.RawAddress, @core.RawAddress, UInt) -> Int
+
+pub fn rtl_upcase_unicode_string_to_oem_string_raw(@core.RawAddress, @core.RawAddress, UInt) -> Int
+
+pub fn rtl_upcase_unicode_to_custom_cpn_raw(@core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress, UInt) -> Int
+
+pub fn rtl_upcase_unicode_to_multi_byte_n_raw(@core.RawAddress, UInt, @core.RawAddress, @core.RawAddress, UInt) -> Int
+
+pub fn rtl_upcase_unicode_to_oem_n_raw(@core.RawAddress, UInt, @core.RawAddress, @core.RawAddress, UInt) -> Int
+
+pub fn rtl_valid_sid_raw(@core.RawAddress) -> UInt
+
+pub fn rtl_validate_unicode_string_raw(UInt, @core.RawAddress) -> Int
+
+pub fn rtlx_oem_string_to_unicode_size_raw(@core.RawAddress) -> UInt
+
+pub fn rtlx_unicode_string_to_oem_size_raw(@core.RawAddress) -> UInt
+
+pub let se_backup_privileges_checked : UInt
+
+pub let se_dacl_untrusted : UInt
+
+pub let se_server_security : UInt
+
+pub let security_anonymous_logon_rid : Int
+
+pub let segment_heap_flg_use_page_heap : UInt
+
+pub let segment_heap_parameters_version : UInt
+
+pub let segment_heap_params_valid_flags : UInt
+
+pub let semaphore_increment : UInt
+
+pub fn set_context_attributes_w(@core.RawAddress, UInt, @core.RawAddress, UInt) -> Unit raise @core.WindowsError
+
+pub fn set_context_attributes_w_raw(@core.RawAddress, UInt, @core.RawAddress, UInt) -> Int
+
+pub let set_purge_failure_mode_disabled : UInt
+
+pub let shared_virtual_disk_cdp_snapshots_supported : Int
+
+pub let shared_virtual_disk_handle_state_file_shared : Int
+
+pub let shared_virtual_disk_handle_state_handle_shared : Int
+
+pub let shared_virtual_disk_handle_state_none : Int
+
+pub let shared_virtual_disk_snapshots_supported : Int
+
+pub let shared_virtual_disks_supported : Int
+
+pub let shared_virtual_disks_unsupported : Int
+
+pub let special_encrypted_open : UInt
+
+pub let srv_instance_type_csv : Int
+
+pub let srv_instance_type_primary : Int
+
+pub let srv_instance_type_sbl : Int
+
+pub let srv_instance_type_sr : Int
+
+pub let srv_instance_type_undefined : Int
+
+pub let srv_instance_type_vsmb : Int
+
+pub let srv_open_ecp_context_version_2 : UInt
+
+pub let supported_fs_features_bypass_io : UInt
+
+pub let supported_fs_features_offload_read : UInt
+
+pub let supported_fs_features_offload_write : UInt
+
+pub let supported_fs_features_query_open : UInt
+
+pub let symlink_directory : UInt
+
+pub let symlink_file : UInt
+
+pub let symlink_flag_relative : UInt
+
+pub let symlink_reserved_mask : UInt
+
+pub let sync_type_create_section : Int
+
+pub let sync_type_other : Int
+
+pub let system_page_priority_bits : UInt
+
+pub let token_audit_no_child_process : UInt
+
+pub let token_audit_redirection_trust : UInt
+
+pub let token_do_not_use_global_attribs_for_query : UInt
+
+pub let token_enforce_redirection_trust : UInt
+
+pub let token_has_backup_privilege : UInt
+
+pub let token_has_impersonate_privilege : UInt
+
+pub let token_has_own_claim_attributes : UInt
+
+pub let token_has_restore_privilege : UInt
+
+pub let token_has_traverse_privilege : UInt
+
+pub let token_is_filtered : UInt
+
+pub let token_is_restricted : UInt
+
+pub let token_learning_mode_logging : UInt
+
+pub let token_lowbox : UInt
+
+pub let token_no_child_process : UInt
+
+pub let token_no_child_process_unless_secure : UInt
+
+pub let token_not_low : UInt
+
+pub let token_permissive_learning_mode : UInt
+
+pub let token_private_namespace : UInt
+
+pub let token_sandbox_inert : UInt
+
+pub let token_session_not_referenced : UInt
+
+pub let token_uiaccess : UInt
+
+pub let token_virtualize_allowed : UInt
+
+pub let token_virtualize_enabled : UInt
+
+pub let token_write_restricted : UInt
+
+pub let uninitialize_cache_maps : UInt
+
+pub let use_primary_password : UInt
+
+pub let usn_delete_flag_delete : UInt
+
+pub let vacb_mapping_granularity : UInt
+
+pub let vacb_offset_shift : UInt
+
+pub let valid_inherit_flags : UInt
+
+pub fn verify_signature(@core.RawAddress, @core.RawAddress, UInt, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn verify_signature_raw(@core.RawAddress, @core.RawAddress, UInt, @core.RawAddress) -> Int
+
+pub let vm_prefetch_information : Int
+
+pub let volsnapcontroltype : UInt
+
+pub let wcifs_redirection_flags_create_serviced_from_layer : UInt
+
+pub let wcifs_redirection_flags_create_serviced_from_registered_layer : UInt
+
+pub let wcifs_redirection_flags_create_serviced_from_remote_layer : UInt
+
+pub let wcifs_redirection_flags_create_serviced_from_scratch : UInt
+
+pub fn zw_access_check_and_audit_alarm_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn zw_access_check_by_type_and_audit_alarm_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, UInt, Int, UInt, @core.RawAddress, UInt, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn zw_access_check_by_type_result_list_and_audit_alarm_by_handle_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, UInt, Int, UInt, @core.RawAddress, UInt, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn zw_access_check_by_type_result_list_and_audit_alarm_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, UInt, Int, UInt, @core.RawAddress, UInt, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn zw_adjust_groups_token_raw(@core.RawAddress, UInt, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn zw_adjust_privileges_token_raw(@core.RawAddress, UInt, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn zw_allocate_virtual_memory_ex_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, UInt, UInt, @core.RawAddress, UInt) -> Int
+
+pub fn zw_allocate_virtual_memory_raw(@core.RawAddress, @core.RawAddress, UInt64, @core.RawAddress, UInt, UInt) -> Int
+
+pub fn zw_cancel_io_file_ex_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn zw_close_object_audit_alarm_raw(@core.RawAddress, @core.RawAddress, UInt) -> Int
+
+pub fn zw_create_directory_object_raw(@core.RawAddress, UInt, @core.RawAddress) -> Int
+
+pub fn zw_create_event_raw(@core.RawAddress, UInt, @core.RawAddress, Int, UInt) -> Int
+
+pub fn zw_create_section_ex_raw(@core.RawAddress, UInt, @core.RawAddress, @core.RawAddress, UInt, UInt, @core.RawAddress, @core.RawAddress, UInt) -> Int
+
+pub fn zw_delete_file_raw(@core.RawAddress) -> Int
+
+pub fn zw_delete_object_audit_alarm_raw(@core.RawAddress, @core.RawAddress, UInt) -> Int
+
+pub fn zw_duplicate_object_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, UInt, UInt, UInt) -> Int
+
+pub fn zw_duplicate_token_raw(@core.RawAddress, UInt, @core.RawAddress, UInt, Int, @core.RawAddress) -> Int
+
+pub fn zw_filter_token_raw(@core.RawAddress, UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn zw_flush_buffers_file_ex_raw(@core.RawAddress, UInt, @core.RawAddress, UInt, @core.RawAddress) -> Int
+
+pub fn zw_flush_buffers_file_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn zw_flush_virtual_memory_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn zw_free_virtual_memory_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, UInt) -> Int
+
+pub fn zw_fs_control_file_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, UInt, @core.RawAddress, UInt) -> Int
+
+pub fn zw_impersonate_anonymous_token_raw(@core.RawAddress) -> Int
+
+pub fn zw_lock_file_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, UInt, UInt, UInt) -> Int
+
+pub fn zw_notify_change_key_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, UInt, UInt, @core.RawAddress, UInt, UInt) -> Int
+
+pub fn zw_open_directory_object_raw(@core.RawAddress, UInt, @core.RawAddress) -> Int
+
+pub fn zw_open_object_audit_alarm_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, UInt, UInt, @core.RawAddress, UInt, UInt, @core.RawAddress) -> Int
+
+pub fn zw_open_process_token_ex_raw(@core.RawAddress, UInt, UInt, @core.RawAddress) -> Int
+
+pub fn zw_open_process_token_raw(@core.RawAddress, UInt, @core.RawAddress) -> Int
+
+pub fn zw_open_thread_token_ex_raw(@core.RawAddress, UInt, UInt, UInt, @core.RawAddress) -> Int
+
+pub fn zw_open_thread_token_raw(@core.RawAddress, UInt, UInt, @core.RawAddress) -> Int
+
+pub fn zw_privilege_check_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn zw_privilege_object_audit_alarm_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, UInt) -> Int
+
+pub fn zw_privileged_service_audit_alarm_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, UInt) -> Int
+
+pub fn zw_query_directory_file_ex_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, UInt, Int, UInt, @core.RawAddress) -> Int
+
+pub fn zw_query_directory_file_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, UInt, Int, UInt, @core.RawAddress, UInt) -> Int
+
+pub fn zw_query_directory_object_raw(@core.RawAddress, @core.RawAddress, UInt, UInt, UInt, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn zw_query_ea_file_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, UInt, UInt, @core.RawAddress, UInt, @core.RawAddress, UInt) -> Int
+
+pub fn zw_query_full_attributes_file_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn zw_query_information_token_raw(@core.RawAddress, Int, @core.RawAddress, UInt, @core.RawAddress) -> Int
+
+pub fn zw_query_object_raw(@core.RawAddress, Int, @core.RawAddress, UInt, @core.RawAddress) -> Int
+
+pub fn zw_query_quota_information_file_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, UInt, UInt, @core.RawAddress, UInt, @core.RawAddress, UInt) -> Int
+
+pub fn zw_query_security_object_raw(@core.RawAddress, UInt, @core.RawAddress, UInt, @core.RawAddress) -> Int
+
+pub fn zw_query_virtual_memory_raw(@core.RawAddress, @core.RawAddress, Int, @core.RawAddress, UInt64, @core.RawAddress) -> Int
+
+pub fn zw_query_volume_information_file_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, UInt, Int) -> Int
+
+pub fn zw_set_ea_file_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, UInt) -> Int
+
+pub fn zw_set_event_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn zw_set_information_token_raw(@core.RawAddress, Int, @core.RawAddress, UInt) -> Int
+
+pub fn zw_set_information_virtual_memory_raw(@core.RawAddress, Int, UInt64, @core.RawAddress, @core.RawAddress, UInt) -> Int
+
+pub fn zw_set_quota_information_file_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, UInt) -> Int
+
+pub fn zw_set_security_object_raw(@core.RawAddress, UInt, @core.RawAddress) -> Int
+
+pub fn zw_set_volume_information_file_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, UInt, Int) -> Int
+
+pub fn zw_unlock_file_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, UInt) -> Int
+
+// Errors
+
+// Types and methods
+
+// Type aliases
+pub using @98ce62fb5372700b {type ACEHEADER_3646b45e4196 as ACEHEADER}
+
+pub using @98ce62fb5372700b {type ALLOCATEVIRTUALMEMORYEXCALLBACK_1002f3761e81 as ALLOCATEVIRTUALMEMORYEXCALLBACK}
+
+pub using @98ce62fb5372700b {type ATOMICCREATEECPCONTEXT_efc68b543d17 as ATOMICCREATEECPCONTEXT}
+
+pub using @98ce62fb5372700b {type AcquireForModifiedPageWriterEStruct_f5015f0a1cdd as AcquireForModifiedPageWriterEStruct}
+
+pub using @98ce62fb5372700b {type AcquireForSectionSynchronizationEStruct_37a93f868d92 as AcquireForSectionSynchronizationEStruct}
+
+pub using @98ce62fb5372700b {type Anonymous1EUnion_990afb0700be as Anonymous1EUnion_990afb0700}
+
+pub using @98ce62fb5372700b {type Anonymous1EUnion_ead1f1be2897 as Anonymous1EUnion_ead1f1be28}
+
+pub using @98ce62fb5372700b {type Anonymous2EUnion_9e3c382afc75 as Anonymous2EUnion_9e3c382afc}
+
+pub using @98ce62fb5372700b {type Anonymous2EUnion_aec66c63d262 as Anonymous2EUnion_aec66c63d2}
+
+pub using @98ce62fb5372700b {type AnonymousEStruct_0a30cc402f2a as AnonymousEStruct_0a30cc402f}
+
+pub using @98ce62fb5372700b {type AnonymousEStruct_7c196b16edc1 as AnonymousEStruct_7c196b16ed}
+
+pub using @98ce62fb5372700b {type AnonymousEStruct_952305fbdffa as AnonymousEStruct_952305fbdf}
+
+pub using @98ce62fb5372700b {type AnonymousEStruct_a4433a3e28bf as AnonymousEStruct_a4433a3e28}
+
+pub using @98ce62fb5372700b {type AnonymousEStruct_a577aa047a13 as AnonymousEStruct_a577aa047a}
+
+pub using @98ce62fb5372700b {type AnonymousEStruct_b73236201862 as AnonymousEStruct_b732362018}
+
+pub using @98ce62fb5372700b {type AnonymousEStruct_cd9fdafb4d1b as AnonymousEStruct_cd9fdafb4d}
+
+pub using @98ce62fb5372700b {type AnonymousEStruct_daf0a61b567b as AnonymousEStruct_daf0a61b56}
+
+pub using @98ce62fb5372700b {type AnonymousEStruct_ea9b7589324f as AnonymousEStruct_ea9b758932}
+
+pub using @98ce62fb5372700b {type AnonymousEUnion_596b61ac379e as AnonymousEUnion_596b61ac37}
+
+pub using @98ce62fb5372700b {type AnonymousEUnion_6641be67305a as AnonymousEUnion_6641be6730}
+
+pub using @98ce62fb5372700b {type AnonymousEUnion_9e761e71c02b as AnonymousEUnion_9e761e71c0}
+
+pub using @98ce62fb5372700b {type AnonymousEUnion_b1a8135f56de as AnonymousEUnion_b1a8135f56}
+
+pub using @98ce62fb5372700b {type AnonymousEUnion_c8ad8e70a59c as AnonymousEUnion_c8ad8e70a5}
+
+pub using @98ce62fb5372700b {type AnonymousEUnion_cb1392f958dc as AnonymousEUnion_cb1392f958}
+
+pub using @98ce62fb5372700b {type AnonymousEUnion_f3e66b5e65cd as AnonymousEUnion_f3e66b5e65}
+
+pub using @98ce62fb5372700b {type BASEMCB_5a5db11f1fa6 as BASEMCB}
+
+pub using @98ce62fb5372700b {type BOOTAREAINFO_f26e5afda727 as BOOTAREAINFO}
+
+pub using @98ce62fb5372700b {type CACHEMANAGERCALLBACKFUNCTIONS_cd10e5324b79 as CACHEMANAGERCALLBACKFUNCTIONS}
+
+pub using @98ce62fb5372700b {type CACHEMANAGERCALLBACKS_da811da5dc81 as CACHEMANAGERCALLBACKS}
+
+pub using @98ce62fb5372700b {type CACHEMANAGERCALLBACKSEX_ce2ab3eff7d4 as CACHEMANAGERCALLBACKSEX}
+
+pub using @98ce62fb5372700b {type CACHEUNINITIALIZEEVENT_7e56a983b108 as CACHEUNINITIALIZEEVENT}
+
+pub using @98ce62fb5372700b {type CCASYNCREADCONTEXT_97f38f41b904 as CCASYNCREADCONTEXT}
+
+pub using @98ce62fb5372700b {type CCERRORCALLBACKCONTEXT_a1c8f5415b2b as CCERRORCALLBACKCONTEXT}
+
+pub using @98ce62fb5372700b {type CCFILESIZES_bf909b58cd99 as CCFILESIZES}
+
+pub using @98ce62fb5372700b {type COMPRESSEDDATAINFO_733188a113ff as COMPRESSEDDATAINFO}
+
+pub using @98ce62fb5372700b {type CONTAINERROOTINFOINPUT_2becd8ad2e75 as CONTAINERROOTINFOINPUT}
+
+pub using @98ce62fb5372700b {type CONTAINERROOTINFOOUTPUT_c947288c4908 as CONTAINERROOTINFOOUTPUT}
+
+pub using @98ce62fb5372700b {type CONTAINERVOLUMESTATE_3f542ccf7835 as CONTAINERVOLUMESTATE}
+
+pub using @98ce62fb5372700b {type COPYINFORMATION_91bb1c328eb9 as COPYINFORMATION}
+
+pub using @98ce62fb5372700b {type CPTABLEINFO_4f17fc75511e as CPTABLEINFO}
+
+pub using @98ce62fb5372700b {type CREATEREDIRECTIONECPCONTEXT_0471c3df85c5 as CREATEREDIRECTIONECPCONTEXT}
+
+pub using @98ce62fb5372700b {type CREATEUSNJOURNALDATA_ef41a68bdab5 as CREATEUSNJOURNALDATA}
+
+pub using @98ce62fb5372700b {type CSVDOWNLEVELFILETYPE_c022d93219f2 as CSVDOWNLEVELFILETYPE}
+
+pub using @98ce62fb5372700b {type CSVDOWNLEVELOPENECPCONTEXT_f762d34a1b70 as CSVDOWNLEVELOPENECPCONTEXT}
+
+pub using @98ce62fb5372700b {type CSVQUERYFILEREVISIONECPCONTEXT_42c54153e587 as CSVQUERYFILEREVISIONECPCONTEXT}
+
+pub using @98ce62fb5372700b {type CSVQUERYFILEREVISIONECPCONTEXTFILEID128_603a47e6bbdc as CSVQUERYFILEREVISIONECPCONTEXTFILEID128}
+
+pub using @98ce62fb5372700b {type CSVSETHANDLEPROPERTIESECPCONTEXT_25b169f4432d as CSVSETHANDLEPROPERTIESECPCONTEXT}
+
+pub using @98ce62fb5372700b {type DUALOPLOCKKEYECPCONTEXT_f3164bfb956e as DUALOPLOCKKEYECPCONTEXT}
+
+pub using @98ce62fb5372700b {type DUPLICATECLUSTERDATA_bee332c45598 as DUPLICATECLUSTERDATA}
+
+pub using @98ce62fb5372700b {type ECPOPENPARAMETERS_2d830fd317af as ECPOPENPARAMETERS}
+
+pub using @98ce62fb5372700b {type EOFWAITBLOCK_517108af6f24 as EOFWAITBLOCK}
+
+pub using @98ce62fb5372700b {type EXTENTREADCACHEINFOBUFFER_c38cbb5f9fee as EXTENTREADCACHEINFOBUFFER}
+
+pub using @98ce62fb5372700b {type FASTIOPOSSIBLE_651eb723dba0 as FASTIOPOSSIBLE}
+
+pub using @98ce62fb5372700b {type FILEACCESSINFORMATION_f204ae81267f as FILEACCESSINFORMATION}
+
+pub using @98ce62fb5372700b {type FILEALIGNMENTINFORMATION_2452e1b410bd as FILEALIGNMENTINFORMATION}
+
+pub using @98ce62fb5372700b {type FILEALLINFORMATION_66b4b9d08b7a as FILEALLINFORMATION}
+
+pub using @98ce62fb5372700b {type FILEALLOCATIONINFORMATION_54a269327f3e as FILEALLOCATIONINFORMATION}
+
+pub using @98ce62fb5372700b {type FILEBASICINFORMATION_0fc43a7c5275 as FILEBASICINFORMATION}
+
+pub using @98ce62fb5372700b {type FILEBOTHDIRINFORMATION_8b8139f7bd1d as FILEBOTHDIRINFORMATION}
+
+pub using @98ce62fb5372700b {type FILECASESENSITIVEINFORMATION_4efa49a37470 as FILECASESENSITIVEINFORMATION}
+
+pub using @98ce62fb5372700b {type FILECOMPLETIONINFORMATION_10f191843926 as FILECOMPLETIONINFORMATION}
+
+pub using @98ce62fb5372700b {type FILECOMPRESSIONINFORMATION_555550a7c129 as FILECOMPRESSIONINFORMATION}
+
+pub using @98ce62fb5372700b {type FILEDIRECTORYINFORMATION_a4763e05325c as FILEDIRECTORYINFORMATION}
+
+pub using @98ce62fb5372700b {type FILEDISPOSITIONINFORMATION_a5976c51b39d as FILEDISPOSITIONINFORMATION}
+
+pub using @98ce62fb5372700b {type FILEDISPOSITIONINFORMATIONEX_0439614b944c as FILEDISPOSITIONINFORMATIONEX}
+
+pub using @98ce62fb5372700b {type FILEDISPOSITIONINFORMATIONEXFLAGS_cb566d6ca855 as FILEDISPOSITIONINFORMATIONEXFLAGS}
+
+pub using @98ce62fb5372700b {type FILEEAINFORMATION_62656e1ea1b7 as FILEEAINFORMATION}
+
+pub using @98ce62fb5372700b {type FILEENDOFFILEINFORMATIONEX_c19c938bb4aa as FILEENDOFFILEINFORMATIONEX}
+
+pub using @98ce62fb5372700b {type FILEFSATTRIBUTEINFORMATION_b30ece07655d as FILEFSATTRIBUTEINFORMATION}
+
+pub using @98ce62fb5372700b {type FILEFSCONTROLINFORMATION_a61c52125071 as FILEFSCONTROLINFORMATION}
+
+pub using @98ce62fb5372700b {type FILEFSDATACOPYINFORMATION_065c5b09164d as FILEFSDATACOPYINFORMATION}
+
+pub using @98ce62fb5372700b {type FILEFSDRIVERPATHINFORMATION_a9de4d82b306 as FILEFSDRIVERPATHINFORMATION}
+
+pub using @98ce62fb5372700b {type FILEFSSECTORSIZEINFORMATION_577e99ea4be8 as FILEFSSECTORSIZEINFORMATION}
+
+pub using @98ce62fb5372700b {type FILEFSVOLUMEFLAGSINFORMATION_c837c87bdae9 as FILEFSVOLUMEFLAGSINFORMATION}
+
+pub using @98ce62fb5372700b {type FILEFULLDIRINFORMATION_ec4a526e5757 as FILEFULLDIRINFORMATION}
+
+pub using @98ce62fb5372700b {type FILEFULLEAINFORMATION_9da6d68fffbf as FILEFULLEAINFORMATION}
+
+pub using @98ce62fb5372700b {type FILEGETEAINFORMATION_5e2add7b13e2 as FILEGETEAINFORMATION}
+
+pub using @98ce62fb5372700b {type FILEGETQUOTAINFORMATION_a0ee3c231d94 as FILEGETQUOTAINFORMATION}
+
+pub using @98ce62fb5372700b {type FILEIDBOTHDIRINFORMATION_10bd3305bfa2 as FILEIDBOTHDIRINFORMATION}
+
+pub using @98ce62fb5372700b {type FILEIDEXTDBOTHDIRINFORMATION_aa79153922a4 as FILEIDEXTDBOTHDIRINFORMATION}
+
+pub using @98ce62fb5372700b {type FILEIDEXTDDIRINFORMATION_b1bd80535524 as FILEIDEXTDDIRINFORMATION}
+
+pub using @98ce62fb5372700b {type FILEIDFULLDIRINFORMATION_f2bd09f29d97 as FILEIDFULLDIRINFORMATION}
+
+pub using @98ce62fb5372700b {type FILEIDGLOBALTXDIRINFORMATION_9b8c1bbb0bd9 as FILEIDGLOBALTXDIRINFORMATION}
+
+pub using @98ce62fb5372700b {type FILEIDINFORMATION_83f1cb6a30f8 as FILEIDINFORMATION}
+
+pub using @98ce62fb5372700b {type FILEINFORMATIONCLASS_a900d6a7f800 as FILEINFORMATIONCLASS}
+
+pub using @98ce62fb5372700b {type FILEINFORMATIONDEFINITION_322c9297dae0 as FILEINFORMATIONDEFINITION}
+
+pub using @98ce62fb5372700b {type FILEINTERNALINFORMATION_374b8e309f04 as FILEINTERNALINFORMATION}
+
+pub using @98ce62fb5372700b {type FILEKNOWNFOLDERINFORMATION_f37d9ef049f1 as FILEKNOWNFOLDERINFORMATION}
+
+pub using @98ce62fb5372700b {type FILEKNOWNFOLDERTYPE_dcc590586f30 as FILEKNOWNFOLDERTYPE}
+
+pub using @98ce62fb5372700b {type FILELINKENTRYFULLIDINFORMATION_211804d35783 as FILELINKENTRYFULLIDINFORMATION}
+
+pub using @98ce62fb5372700b {type FILELINKENTRYINFORMATION_2d38d297c406 as FILELINKENTRYINFORMATION}
+
+pub using @98ce62fb5372700b {type FILELINKINFORMATION_4c542b150f7a as FILELINKINFORMATION}
+
+pub using @98ce62fb5372700b {type FILELINKSFULLIDINFORMATION_a43720a6b97c as FILELINKSFULLIDINFORMATION}
+
+pub using @98ce62fb5372700b {type FILELINKSINFORMATION_72ca5330ffe4 as FILELINKSINFORMATION}
+
+pub using @98ce62fb5372700b {type FILELOCK_bacaf81aa7b0 as FILELOCK}
+
+pub using @98ce62fb5372700b {type FILELOCKINFO_c7af6e389674 as FILELOCKINFO}
+
+pub using @98ce62fb5372700b {type FILEMAILSLOTQUERYINFORMATION_221498c4709e as FILEMAILSLOTQUERYINFORMATION}
+
+pub using @98ce62fb5372700b {type FILEMAILSLOTSETINFORMATION_b7da4c737378 as FILEMAILSLOTSETINFORMATION}
+
+pub using @98ce62fb5372700b {type FILEMODEINFORMATION_626b083dc196 as FILEMODEINFORMATION}
+
+pub using @98ce62fb5372700b {type FILEMOVECLUSTERINFORMATION_eda15f8939cb as FILEMOVECLUSTERINFORMATION}
+
+pub using @98ce62fb5372700b {type FILENAMEINFORMATION_d19b7d150baa as FILENAMEINFORMATION}
+
+pub using @98ce62fb5372700b {type FILENAMESINFORMATION_c0530104aa60 as FILENAMESINFORMATION}
+
+pub using @98ce62fb5372700b {type FILENETWORKOPENINFORMATION_d327a3c1df99 as FILENETWORKOPENINFORMATION}
+
+pub using @98ce62fb5372700b {type FILENETWORKPHYSICALNAMEINFORMATION_ffe7fe69ba21 as FILENETWORKPHYSICALNAMEINFORMATION}
+
+pub using @98ce62fb5372700b {type FILEOBJECTIDINFORMATION_767260ab7408 as FILEOBJECTIDINFORMATION}
+
+pub using @98ce62fb5372700b {type FILEPIPEASSIGNEVENTBUFFER_8333dccd9132 as FILEPIPEASSIGNEVENTBUFFER}
+
+pub using @98ce62fb5372700b {type FILEPIPECLIENTPROCESSBUFFER_3ee5c1cf8bc1 as FILEPIPECLIENTPROCESSBUFFER}
+
+pub using @98ce62fb5372700b {type FILEPIPECLIENTPROCESSBUFFEREX_d4de938cf1f3 as FILEPIPECLIENTPROCESSBUFFEREX}
+
+pub using @98ce62fb5372700b {type FILEPIPECLIENTPROCESSBUFFERV2_8e609df34b14 as FILEPIPECLIENTPROCESSBUFFERV2}
+
+pub using @98ce62fb5372700b {type FILEPIPECREATESYMLINKINPUT_be5cc7220d69 as FILEPIPECREATESYMLINKINPUT}
+
+pub using @98ce62fb5372700b {type FILEPIPEDELETESYMLINKINPUT_8d4976b85734 as FILEPIPEDELETESYMLINKINPUT}
+
+pub using @98ce62fb5372700b {type FILEPIPEEVENTBUFFER_e3d7f1ab7cb8 as FILEPIPEEVENTBUFFER}
+
+pub using @98ce62fb5372700b {type FILEPIPEINFORMATION_e080a011d588 as FILEPIPEINFORMATION}
+
+pub using @98ce62fb5372700b {type FILEPIPELOCALINFORMATION_c14ab03ab5cb as FILEPIPELOCALINFORMATION}
+
+pub using @98ce62fb5372700b {type FILEPIPEPEEKBUFFER_0a5e870d7707 as FILEPIPEPEEKBUFFER}
+
+pub using @98ce62fb5372700b {type FILEPIPEREMOTEINFORMATION_b6633ada1fd8 as FILEPIPEREMOTEINFORMATION}
+
+pub using @98ce62fb5372700b {type FILEPIPESILOARRIVALINPUT_d67d4505188e as FILEPIPESILOARRIVALINPUT}
+
+pub using @98ce62fb5372700b {type FILEPIPEWAITFORBUFFER_f047c5e2fad0 as FILEPIPEWAITFORBUFFER}
+
+pub using @98ce62fb5372700b {type FILEPOSITIONINFORMATION_2ec30e045885 as FILEPOSITIONINFORMATION}
+
+pub using @98ce62fb5372700b {type FILEQUOTAINFORMATION_f445ebd1e5be as FILEQUOTAINFORMATION}
+
+pub using @98ce62fb5372700b {type FILEREMOTEPROTOCOLINFORMATION_910b5964d007 as FILEREMOTEPROTOCOLINFORMATION}
+
+pub using @98ce62fb5372700b {type FILERENAMEINFORMATION_edf6f43f0ca3 as FILERENAMEINFORMATION}
+
+pub using @98ce62fb5372700b {type FILEREPARSEPOINTINFORMATION_7be2890c1e9b as FILEREPARSEPOINTINFORMATION}
+
+pub using @98ce62fb5372700b {type FILESTANDARDINFORMATION_80ed9c3a35e2 as FILESTANDARDINFORMATION}
+
+pub using @98ce62fb5372700b {type FILESTANDARDLINKINFORMATION_631e9cb16ee7 as FILESTANDARDLINKINFORMATION}
+
+pub using @98ce62fb5372700b {type FILESTATINFORMATION_5e51b8221875 as FILESTATINFORMATION}
+
+pub using @98ce62fb5372700b {type FILESTATLXINFORMATION_e31fc25ce656 as FILESTATLXINFORMATION}
+
+pub using @98ce62fb5372700b {type FILESTORAGERESERVEIDINFORMATION_01b3658b3a8a as FILESTORAGERESERVEIDINFORMATION}
+
+pub using @98ce62fb5372700b {type FILESTREAMINFORMATION_bc251f7f0e16 as FILESTREAMINFORMATION}
+
+pub using @98ce62fb5372700b {type FILETIMESTAMPS_a342342c113c as FILETIMESTAMPS}
+
+pub using @98ce62fb5372700b {type FILETRACKINGINFORMATION_64178c7b0575 as FILETRACKINGINFORMATION}
+
+pub using @98ce62fb5372700b {type FILEVOLUMENAMEINFORMATION_3d6d9806d509 as FILEVOLUMENAMEINFORMATION}
+
+pub using @98ce62fb5372700b {type FREEVIRTUALMEMORYEXCALLBACK_f20ffc0f15b8 as FREEVIRTUALMEMORYEXCALLBACK}
+
+pub using @98ce62fb5372700b {type FSBPIOINFO_898302888ad6 as FSBPIOINFO}
+
+pub using @98ce62fb5372700b {type FSBPIOINPUT_a1a00adfabab as FSBPIOINPUT}
+
+pub using @98ce62fb5372700b {type FSCTLGHOSTFILEEXTENTSINPUTBUFFER_e3606724cce0 as FSCTLGHOSTFILEEXTENTSINPUTBUFFER}
+
+pub using @98ce62fb5372700b {type FSCTLQUERYGHOSTEDFILEEXTENTSINPUTRANGE_6aad531d0273 as FSCTLQUERYGHOSTEDFILEEXTENTSINPUTRANGE}
+
+pub using @98ce62fb5372700b {type FSCTLQUERYGHOSTEDFILEEXTENTSOUTPUT_bbca74f81673 as FSCTLQUERYGHOSTEDFILEEXTENTSOUTPUT}
+
+pub using @98ce62fb5372700b {type FSCTLQUERYVOLUMENUMAINFOOUTPUT_91eb5a5eeb21 as FSCTLQUERYVOLUMENUMAINFOOUTPUT}
+
+pub using @98ce62fb5372700b {type FSCTLUNMAPSPACEINPUTBUFFER_931603b8c5bf as FSCTLUNMAPSPACEINPUTBUFFER}
+
+pub using @98ce62fb5372700b {type FSCTLUNMAPSPACEOUTPUT_0410b1db6250 as FSCTLUNMAPSPACEOUTPUT}
+
+pub using @98ce62fb5372700b {type FSFILTERCALLBACKDATA_6b89d3688ec7 as FSFILTERCALLBACKDATA}
+
+pub using @98ce62fb5372700b {type FSFILTERCALLBACKS_9a38c47af776 as FSFILTERCALLBACKS}
+
+pub using @98ce62fb5372700b {type FSFILTERPARAMETERS_9cba6604546d as FSFILTERPARAMETERS}
+
+pub using @98ce62fb5372700b {type FSFILTERSECTIONSYNCOUTPUT_a56dbb2f408e as FSFILTERSECTIONSYNCOUTPUT}
+
+pub using @98ce62fb5372700b {type FSFILTERSECTIONSYNCTYPE_488d764fbb0b as FSFILTERSECTIONSYNCTYPE}
+
+pub using @98ce62fb5372700b {type FSFILTERSTREAMFONOTIFICATIONTYPE_cd2a06e969db as FSFILTERSTREAMFONOTIFICATIONTYPE}
+
+pub using @98ce62fb5372700b {type FSINFORMATIONCLASS_275b3e3d3d05 as FSINFORMATIONCLASS}
+
+pub using @98ce62fb5372700b {type FSRTLADVANCEDFCBHEADER_c3f62f3ae715 as FSRTLADVANCEDFCBHEADER}
+
+pub using @98ce62fb5372700b {type FSRTLAUXILIARYBUFFER_1ca12daa1eca as FSRTLAUXILIARYBUFFER}
+
+pub using @98ce62fb5372700b {type FSRTLCHANGEBACKINGTYPE_5d226d74a2dc as FSRTLCHANGEBACKINGTYPE}
+
+pub using @98ce62fb5372700b {type FSRTLCOMMONFCBHEADER_c573eefb70e5 as FSRTLCOMMONFCBHEADER}
+
+pub using @98ce62fb5372700b {type FSRTLCOMPARISONRESULT_ad2f88df278a as FSRTLCOMPARISONRESULT}
+
+pub using @98ce62fb5372700b {type FSRTLMUPPROVIDERINFOLEVEL1_5f91ca9eb5bb as FSRTLMUPPROVIDERINFOLEVEL1}
+
+pub using @98ce62fb5372700b {type FSRTLMUPPROVIDERINFOLEVEL2_d691eac9114a as FSRTLMUPPROVIDERINFOLEVEL2}
+
+pub using @98ce62fb5372700b {type FSRTLPERFILECONTEXT_756df422cd80 as FSRTLPERFILECONTEXT}
+
+pub using @98ce62fb5372700b {type FSRTLPERFILEOBJECTCONTEXT_6e02b518f5e8 as FSRTLPERFILEOBJECTCONTEXT}
+
+pub using @98ce62fb5372700b {type FSRTLPERSTREAMCONTEXT_3fd8b820b53b as FSRTLPERSTREAMCONTEXT}
+
+pub using @98ce62fb5372700b {type FSRTLUNCPROVIDERREGISTRATION_25ed95c0fb2d as FSRTLUNCPROVIDERREGISTRATION}
+
+pub using @98ce62fb5372700b {type FlagsEStruct_a7b05ef68021 as FlagsEStruct}
+
+pub using @98ce62fb5372700b {type GENERATENAMECONTEXT_5b1337c42935 as GENERATENAMECONTEXT}
+
+pub using @98ce62fb5372700b {type GHOSTEDFILEEXTENT_91c5cc675791 as GHOSTEDFILEEXTENT}
+
+pub using @98ce62fb5372700b {type GenericReparseBufferEStruct_fbb6ea945d8d as GenericReparseBufferEStruct}
+
+pub using @98ce62fb5372700b {type GenericReservedEStruct_3d9935727cd5 as GenericReservedEStruct}
+
+pub using @98ce62fb5372700b {type HEAPMEMORYINFOCLASS_2932eca097d2 as HEAPMEMORYINFOCLASS}
+
+pub using @98ce62fb5372700b {type IOCREATESTREAMFILEOPTIONS_56524f9245d6 as IOCREATESTREAMFILEOPTIONS}
+
+pub using @98ce62fb5372700b {type IODEVICEHINTECPCONTEXT_96c2b2b988c4 as IODEVICEHINTECPCONTEXT}
+
+pub using @98ce62fb5372700b {type IOPRIORITYINFO_0698792766c5 as IOPRIORITYINFO}
+
+pub using @98ce62fb5372700b {type IOSTOPONSYMLINKFILTERECPV0_fdbd5bf9f002 as IOSTOPONSYMLINKFILTERECPV0}
+
+pub using @98ce62fb5372700b {type InEStruct_488afe8b4595 as InEStruct_488afe8b45}
+
+pub using @98ce62fb5372700b {type InEStruct_c9bd57e22d12 as InEStruct_c9bd57e22d}
+
+pub using @98ce62fb5372700b {type KAPCSTATE_ae9ced9b53e4 as KAPCSTATE}
+
+pub using @98ce62fb5372700b {type LARGEMCB_3f5bfea280b3 as LARGEMCB}
+
+pub using @98ce62fb5372700b {type LCNWEAKREFERENCEBUFFER_ae011d27cfe8 as LCNWEAKREFERENCEBUFFER}
+
+pub using @98ce62fb5372700b {type LCNWEAKREFERENCECREATEINPUTBUFFER_3cd6833177cd as LCNWEAKREFERENCECREATEINPUTBUFFER}
+
+pub using @98ce62fb5372700b {type LCNWEAKREFERENCESTATE_2f8ed76070f9 as LCNWEAKREFERENCESTATE}
+
+pub using @98ce62fb5372700b {type LINKTRACKINGINFORMATION_68db1f602619 as LINKTRACKINGINFORMATION}
+
+pub using @98ce62fb5372700b {type LINKTRACKINGINFORMATIONTYPE_45721b7296d7 as LINKTRACKINGINFORMATIONTYPE}
+
+pub using @98ce62fb5372700b {type MCB_d2f0828b5bf0 as MCB}
+
+pub using @98ce62fb5372700b {type MEMORYINFORMATIONCLASS_8415c9fff201 as MEMORYINFORMATIONCLASS}
+
+pub using @98ce62fb5372700b {type MEMORYRANGEENTRY_0683df9dff13 as MEMORYRANGEENTRY}
+
+pub using @98ce62fb5372700b {type MFTENUMDATA_e022d7acd874 as MFTENUMDATA}
+
+pub using @98ce62fb5372700b {type MMFLUSHTYPE_e2dd3afa81fe as MMFLUSHTYPE}
+
+pub using @98ce62fb5372700b {type MMPREFETCHFLAGS_0cd0dd20ebda as MMPREFETCHFLAGS}
+
+pub using @98ce62fb5372700b {type MSV10AVID_8a606c3e64ac as MSV10AVID}
+
+pub using @98ce62fb5372700b {type MSV10ENUMUSERSREQUEST_ef3a42e38b44 as MSV10ENUMUSERSREQUEST}
+
+pub using @98ce62fb5372700b {type MSV10ENUMUSERSRESPONSE_30eff8a96db3 as MSV10ENUMUSERSRESPONSE}
+
+pub using @98ce62fb5372700b {type MSV10GETCHALLENRESPREQUEST_28d45bb82c11 as MSV10GETCHALLENRESPREQUEST}
+
+pub using @98ce62fb5372700b {type MSV10GETCHALLENRESPREQUESTV1_ac060c7f2df0 as MSV10GETCHALLENRESPREQUESTV1}
+
+pub using @98ce62fb5372700b {type MSV10GETCHALLENRESPRESPONSE_217e443c4fde as MSV10GETCHALLENRESPRESPONSE}
+
+pub using @98ce62fb5372700b {type MSV10GETUSERINFOREQUEST_32905b24263e as MSV10GETUSERINFOREQUEST}
+
+pub using @98ce62fb5372700b {type MSV10GETUSERINFORESPONSE_0a3a22efe60c as MSV10GETUSERINFORESPONSE}
+
+pub using @98ce62fb5372700b {type MSV10LM20CHALLENGEREQUEST_26fa6fe4d5b9 as MSV10LM20CHALLENGEREQUEST}
+
+pub using @98ce62fb5372700b {type MSV10LM20CHALLENGERESPONSE_34f4587877e2 as MSV10LM20CHALLENGERESPONSE}
+
+pub using @98ce62fb5372700b {type MountPointReparseBufferEStruct_282a1c4c19a7 as MountPointReparseBufferEStruct}
+
+pub using @98ce62fb5372700b {type NETWORKAPPINSTANCEECPCONTEXT_55cc03482dd2 as NETWORKAPPINSTANCEECPCONTEXT}
+
+pub using @98ce62fb5372700b {type NETWORKAPPINSTANCEVERSIONECPCONTEXT_09ffe252dbda as NETWORKAPPINSTANCEVERSIONECPCONTEXT}
+
+pub using @98ce62fb5372700b {type NETWORKOPENECPCONTEXT_74bc52dfb827 as NETWORKOPENECPCONTEXT}
+
+pub using @98ce62fb5372700b {type NETWORKOPENECPCONTEXTV0_535f15c0cd78 as NETWORKOPENECPCONTEXTV0}
+
+pub using @98ce62fb5372700b {type NETWORKOPENINTEGRITYQUALIFIER_fef11d4ea892 as NETWORKOPENINTEGRITYQUALIFIER}
+
+pub using @98ce62fb5372700b {type NETWORKOPENLOCATIONQUALIFIER_ce2a7f1f87dc as NETWORKOPENLOCATIONQUALIFIER}
+
+pub using @98ce62fb5372700b {type NFSOPENECPCONTEXT_8ed9d0972d1a as NFSOPENECPCONTEXT}
+
+pub using @98ce62fb5372700b {type NLSTABLEINFO_a9fdfe074c5c as NLSTABLEINFO}
+
+pub using @98ce62fb5372700b {type NTCREATEFILECREATEDISPOSITION_a2609c222512 as NTCREATEFILECREATEDISPOSITION}
+
+pub using @98ce62fb5372700b {type NTCREATEFILECREATEOPTIONS_0bd483576917 as NTCREATEFILECREATEOPTIONS}
+
+pub using @98ce62fb5372700b {type OPENREPARSELIST_d85b2c526a4d as OPENREPARSELIST}
+
+pub using @98ce62fb5372700b {type OPENREPARSELISTENTRY_cf44b53e9208 as OPENREPARSELISTENTRY}
+
+pub using @98ce62fb5372700b {type OPLOCKKEYCONTEXT_2359ef997046 as OPLOCKKEYCONTEXT}
+
+pub using @98ce62fb5372700b {type OPLOCKKEYECPCONTEXT_265fd63e2ce3 as OPLOCKKEYECPCONTEXT}
+
+pub using @98ce62fb5372700b {type OPLOCKNOTIFYPARAMS_fae64cb08a8b as OPLOCKNOTIFYPARAMS}
+
+pub using @98ce62fb5372700b {type OPLOCKNOTIFYREASON_90a4a2ecfbd7 as OPLOCKNOTIFYREASON}
+
+pub using @98ce62fb5372700b {type OthersEStruct_468691d96479 as OthersEStruct}
+
+pub using @98ce62fb5372700b {type OutEStruct_2fa30a9315bf as OutEStruct_2fa30a9315}
+
+pub using @98ce62fb5372700b {type OutEStruct_6241f0857c41 as OutEStruct_6241f0857c}
+
+pub using @98ce62fb5372700b {type OutEStruct_d22887868c76 as OutEStruct_d22887868c}
+
+pub using @98ce62fb5372700b {type PACQUIREFORLAZYWRITE_06d629471a4a as PACQUIREFORLAZYWRITE}
+
+pub using @98ce62fb5372700b {type PACQUIREFORLAZYWRITEEX_6408f6575e44 as PACQUIREFORLAZYWRITEEX}
+
+pub using @98ce62fb5372700b {type PACQUIREFORREADAHEAD_9c1d1e13c046 as PACQUIREFORREADAHEAD}
+
+pub using @98ce62fb5372700b {type PALLOCATEVIRTUALMEMORYEXCALLBACK_10c01b259106 as PALLOCATEVIRTUALMEMORYEXCALLBACK}
+
+pub using @98ce62fb5372700b {type PASYNCREADCOMPLETIONCALLBACK_5c5762755e95 as PASYNCREADCOMPLETIONCALLBACK}
+
+pub using @98ce62fb5372700b {type PCCPOSTDEFERREDWRITE_5f8c1f1bddbf as PCCPOSTDEFERREDWRITE}
+
+pub using @98ce62fb5372700b {type PCHECKFORTRAVERSEACCESS_68805d05661a as PCHECKFORTRAVERSEACCESS}
+
+pub using @98ce62fb5372700b {type PCOMPLETELOCKIRPROUTINE_c2f2907bb5cf as PCOMPLETELOCKIRPROUTINE}
+
+pub using @98ce62fb5372700b {type PDIRTYPAGEROUTINE_28da659d0bc2 as PDIRTYPAGEROUTINE}
+
+pub using @98ce62fb5372700b {type PFILTERREPORTCHANGE_8cc38a6c4ce7 as PFILTERREPORTCHANGE}
+
+pub using @98ce62fb5372700b {type PFLUSHTOLSN_9a3100074f81 as PFLUSHTOLSN}
+
+pub using @98ce62fb5372700b {type PFNFSRTLTEARDOWNPERSTREAMCONTEXTS_de6fe704b236 as PFNFSRTLTEARDOWNPERSTREAMCONTEXTS}
+
+pub using @98ce62fb5372700b {type PFREEVIRTUALMEMORYEXCALLBACK_0249f0a8a031 as PFREEVIRTUALMEMORYEXCALLBACK}
+
+pub using @98ce62fb5372700b {type PFSFILTERCALLBACK_35db08fdcc79 as PFSFILTERCALLBACK}
+
+pub using @98ce62fb5372700b {type PFSFILTERCOMPLETIONCALLBACK_f685d432e7b7 as PFSFILTERCOMPLETIONCALLBACK}
+
+pub using @98ce62fb5372700b {type PFSRTLEXTRACREATEPARAMETERCLEANUPCALLBACK_420b2e49ae4d as PFSRTLEXTRACREATEPARAMETERCLEANUPCALLBACK}
+
+pub using @98ce62fb5372700b {type PFSRTLSTACKOVERFLOWROUTINE_a41dfd89d57b as PFSRTLSTACKOVERFLOWROUTINE}
+
+pub using @98ce62fb5372700b {type PHYSICALEXTENTSDESCRIPTOR_7c0bb4539286 as PHYSICALEXTENTSDESCRIPTOR}
+
+pub using @98ce62fb5372700b {type PHYSICALMEMORYDESCRIPTOR_fa3571fe61cd as PHYSICALMEMORYDESCRIPTOR}
+
+pub using @98ce62fb5372700b {type PHYSICALMEMORYRUN_fda667282edd as PHYSICALMEMORYRUN}
+
+pub using @98ce62fb5372700b {type POPLOCKFSPREPOSTIRP_3f89245bc3f8 as POPLOCKFSPREPOSTIRP}
+
+pub using @98ce62fb5372700b {type POPLOCKNOTIFYROUTINE_2d131b5f25f8 as POPLOCKNOTIFYROUTINE}
+
+pub using @98ce62fb5372700b {type POPLOCKWAITCOMPLETEROUTINE_f07dbcc595fa as POPLOCKWAITCOMPLETEROUTINE}
+
+pub using @98ce62fb5372700b {type PQUERYLOGUSAGE_a1cd30b59510 as PQUERYLOGUSAGE}
+
+pub using @98ce62fb5372700b {type PQUERYVIRTUALMEMORYCALLBACK_27c3298c344e as PQUERYVIRTUALMEMORYCALLBACK}
+
+pub using @98ce62fb5372700b {type PREFETCHOPENECPCONTEXT_94e4570e88bc as PREFETCHOPENECPCONTEXT}
+
+pub using @98ce62fb5372700b {type PREFIXTABLE_cf6e4c87e9d6 as PREFIXTABLE}
+
+pub using @98ce62fb5372700b {type PREFIXTABLEENTRY_a3a360bac309 as PREFIXTABLEENTRY}
+
+pub using @98ce62fb5372700b {type PRELEASEFROMLAZYWRITE_f76ba5e6ad00 as PRELEASEFROMLAZYWRITE}
+
+pub using @98ce62fb5372700b {type PRELEASEFROMREADAHEAD_f6ca707db965 as PRELEASEFROMREADAHEAD}
+
+pub using @98ce62fb5372700b {type PRTLALLOCATESTRINGROUTINE_5ad4ebb6a311 as PRTLALLOCATESTRINGROUTINE}
+
+pub using @98ce62fb5372700b {type PRTLFREESTRINGROUTINE_3454ddf0ba98 as PRTLFREESTRINGROUTINE}
+
+pub using @98ce62fb5372700b {type PRTLHEAPCOMMITROUTINE_9c888bf9fd6f as PRTLHEAPCOMMITROUTINE}
+
+pub using @98ce62fb5372700b {type PRTLREALLOCATESTRINGROUTINE_3af814494edf as PRTLREALLOCATESTRINGROUTINE}
+
+pub using @98ce62fb5372700b {type PSELOGONSESSIONTERMINATEDROUTINE_55d312c22a3c as PSELOGONSESSIONTERMINATEDROUTINE}
+
+pub using @98ce62fb5372700b {type PSELOGONSESSIONTERMINATEDROUTINEEX_056f1e56f3c5 as PSELOGONSESSIONTERMINATEDROUTINEEX}
+
+pub using @98ce62fb5372700b {type PUBLICBCB_2f84b2631a1c as PUBLICBCB}
+
+pub using @98ce62fb5372700b {type PUNLOCKROUTINE_44980d266200 as PUNLOCKROUTINE}
+
+pub using @98ce62fb5372700b {type ProtocolSpecificEUnion_85abe43f26cc as ProtocolSpecificEUnion}
+
+pub using @98ce62fb5372700b {type QUERYBADRANGESINPUT_577bc7d24112 as QUERYBADRANGESINPUT}
+
+pub using @98ce62fb5372700b {type QUERYDIRECTACCESSEXTENTS_6439179c9313 as QUERYDIRECTACCESSEXTENTS}
+
+pub using @98ce62fb5372700b {type QUERYONCREATEEAINFORMATION_36713442623c as QUERYONCREATEEAINFORMATION}
+
+pub using @98ce62fb5372700b {type QUERYONCREATEECPCONTEXT_55934be39687 as QUERYONCREATEECPCONTEXT}
+
+pub using @98ce62fb5372700b {type QUERYONCREATEFILELXINFORMATION_fff0c5c2a388 as QUERYONCREATEFILELXINFORMATION}
+
+pub using @98ce62fb5372700b {type QUERYONCREATEFILESTATINFORMATION_1817e99c03e3 as QUERYONCREATEFILESTATINFORMATION}
+
+pub using @98ce62fb5372700b {type QUERYPATHREQUEST_e4825355df86 as QUERYPATHREQUEST}
+
+pub using @98ce62fb5372700b {type QUERYPATHREQUESTEX_fe904ae579d4 as QUERYPATHREQUESTEX}
+
+pub using @98ce62fb5372700b {type QUERYPATHRESPONSE_7cb5d25883cf as QUERYPATHRESPONSE}
+
+pub using @98ce62fb5372700b {type QUERYVIRTUALMEMORYCALLBACK_5f957a6e55db as QUERYVIRTUALMEMORYCALLBACK}
+
+pub using @98ce62fb5372700b {type QueryOpenEStruct_36ca23fb573a as QueryOpenEStruct}
+
+pub using @98ce62fb5372700b {type READAHEADPARAMETERS_ba596748bffc as READAHEADPARAMETERS}
+
+pub using @98ce62fb5372700b {type READLIST_3553aa79f9b7 as READLIST}
+
+pub using @98ce62fb5372700b {type READUSNJOURNALDATA_1ca690812b55 as READUSNJOURNALDATA}
+
+pub using @98ce62fb5372700b {type REFSCOMPRESSIONFORMATS_f1efe9f47213 as REFSCOMPRESSIONFORMATS}
+
+pub using @98ce62fb5372700b {type REFSDEALLOCATERANGESALLOCATOR_88522cafa931 as REFSDEALLOCATERANGESALLOCATOR}
+
+pub using @98ce62fb5372700b {type REFSDEALLOCATERANGESINPUTBUFFER_8757c7c10948 as REFSDEALLOCATERANGESINPUTBUFFER}
+
+pub using @98ce62fb5372700b {type REFSDEALLOCATERANGESINPUTBUFFEREX_7d9c8ad90d4a as REFSDEALLOCATERANGESINPUTBUFFEREX}
+
+pub using @98ce62fb5372700b {type REFSDEALLOCATERANGESRANGE_6da0c7df1e3e as REFSDEALLOCATERANGESRANGE}
+
+pub using @98ce62fb5372700b {type REFSQUERYVOLUMECOMPRESSIONINFOOUTPUTBUFFER_7edfa81f662c as REFSQUERYVOLUMECOMPRESSIONINFOOUTPUTBUFFER}
+
+pub using @98ce62fb5372700b {type REFSQUERYVOLUMEDEDUPINFOOUTPUTBUFFER_ec5f6c6f0134 as REFSQUERYVOLUMEDEDUPINFOOUTPUTBUFFER}
+
+pub using @98ce62fb5372700b {type REFSREMOVEHARDLINKBACKPOINTER_8720a05d3952 as REFSREMOVEHARDLINKBACKPOINTER}
+
+pub using @98ce62fb5372700b {type REFSSETVOLUMECOMPRESSIONINFOFLAGS_c89cf636c8c3 as REFSSETVOLUMECOMPRESSIONINFOFLAGS}
+
+pub using @98ce62fb5372700b {type REFSSETVOLUMECOMPRESSIONINFOINPUTBUFFER_cabc653f4c68 as REFSSETVOLUMECOMPRESSIONINFOINPUTBUFFER}
+
+pub using @98ce62fb5372700b {type REFSSETVOLUMEDEDUPINFOINPUTBUFFER_83f8e5dd4e8d as REFSSETVOLUMEDEDUPINFOINPUTBUFFER}
+
+pub using @98ce62fb5372700b {type REFSSTREAMEXTENT_18c29be9429a as REFSSTREAMEXTENT}
+
+pub using @98ce62fb5372700b {type REFSSTREAMEXTENTPROPERTIES_13a1e2a9e8bb as REFSSTREAMEXTENTPROPERTIES}
+
+pub using @98ce62fb5372700b {type REFSSTREAMSNAPSHOTLISTOUTPUTBUFFER_13982292df04 as REFSSTREAMSNAPSHOTLISTOUTPUTBUFFER}
+
+pub using @98ce62fb5372700b {type REFSSTREAMSNAPSHOTLISTOUTPUTBUFFERENTRY_885d7d6afaf4 as REFSSTREAMSNAPSHOTLISTOUTPUTBUFFERENTRY}
+
+pub using @98ce62fb5372700b {type REFSSTREAMSNAPSHOTMANAGEMENTINPUTBUFFER_1b567962af01 as REFSSTREAMSNAPSHOTMANAGEMENTINPUTBUFFER}
+
+pub using @98ce62fb5372700b {type REFSSTREAMSNAPSHOTOPERATION_9db60b497954 as REFSSTREAMSNAPSHOTOPERATION}
+
+pub using @98ce62fb5372700b {type REFSSTREAMSNAPSHOTQUERYDELTASINPUTBUFFER_f3190044eca7 as REFSSTREAMSNAPSHOTQUERYDELTASINPUTBUFFER}
+
+pub using @98ce62fb5372700b {type REFSSTREAMSNAPSHOTQUERYDELTASOUTPUTBUFFER_99e08ee7e51e as REFSSTREAMSNAPSHOTQUERYDELTASOUTPUTBUFFER}
+
+pub using @98ce62fb5372700b {type REFSVOLUMECOUNTERINFOINPUTBUFFER_d1d406e2aad1 as REFSVOLUMECOUNTERINFOINPUTBUFFER}
+
+pub using @98ce62fb5372700b {type REFSVOLUMEDATABUFFER_67827a9cc472 as REFSVOLUMEDATABUFFER}
+
+pub using @98ce62fb5372700b {type REMOTELINKTRACKINGINFORMATION_79a759df3014 as REMOTELINKTRACKINGINFORMATION}
+
+pub using @98ce62fb5372700b {type REPARSEDATABUFFER_87d4103ddefb as REPARSEDATABUFFER}
+
+pub using @98ce62fb5372700b {type REPARSEDATABUFFEREX_b6a6b49d8815 as REPARSEDATABUFFEREX}
+
+pub using @98ce62fb5372700b {type REPARSEINDEXKEY_6c3ee0bd2a74 as REPARSEINDEXKEY}
+
+pub using @98ce62fb5372700b {type RETRIEVALPOINTERSANDREFCOUNTBUFFER_c4c52682aefd as RETRIEVALPOINTERSANDREFCOUNTBUFFER}
+
+pub using @98ce62fb5372700b {type RKFBYPASSECPCONTEXT_84a0176ae8e4 as RKFBYPASSECPCONTEXT}
+
+pub using @98ce62fb5372700b {type RTLALLOCATESTRINGROUTINE_9a3acddda3a7 as RTLALLOCATESTRINGROUTINE}
+
+pub using @98ce62fb5372700b {type RTLFREESTRINGROUTINE_e581fe52c10c as RTLFREESTRINGROUTINE}
+
+pub using @98ce62fb5372700b {type RTLHEAPCOMMITROUTINE_11ba0c9afd58 as RTLHEAPCOMMITROUTINE}
+
+pub using @98ce62fb5372700b {type RTLHEAPMEMORYLIMITDATA_17094cf39431 as RTLHEAPMEMORYLIMITDATA}
+
+pub using @98ce62fb5372700b {type RTLHEAPMEMORYLIMITINFO_e30e0de28727 as RTLHEAPMEMORYLIMITINFO}
+
+pub using @98ce62fb5372700b {type RTLHEAPPARAMETERS_1f64d58a9d84 as RTLHEAPPARAMETERS}
+
+pub using @98ce62fb5372700b {type RTLMEMORYTYPE_eca40e0a1ae8 as RTLMEMORYTYPE}
+
+pub using @98ce62fb5372700b {type RTLNLSSTATE_9b807678358a as RTLNLSSTATE}
+
+pub using @98ce62fb5372700b {type RTLREALLOCATESTRINGROUTINE_11375fe70c47 as RTLREALLOCATESTRINGROUTINE}
+
+pub using @98ce62fb5372700b {type RTLSEGMENTHEAPMEMORYSOURCE_ab413f0149aa as RTLSEGMENTHEAPMEMORYSOURCE}
+
+pub using @98ce62fb5372700b {type RTLSEGMENTHEAPPARAMETERS_6149635ced57 as RTLSEGMENTHEAPPARAMETERS}
+
+pub using @98ce62fb5372700b {type RTLSEGMENTHEAPVACALLBACKS_598acb87d9ff as RTLSEGMENTHEAPVACALLBACKS}
+
+pub using @98ce62fb5372700b {type ReleaseForModifiedPageWriterEStruct_3cb53c64712a as ReleaseForModifiedPageWriterEStruct}
+
+pub using @98ce62fb5372700b {type SEAUDITINFO_f356778d10cb as SEAUDITINFO}
+
+pub using @98ce62fb5372700b {type SEAUDITOPERATION_278cf56213d5 as SEAUDITOPERATION}
+
+pub using @98ce62fb5372700b {type SECAPPLICATIONPROTOCOLS_9fcc1ebeb629 as SECAPPLICATIONPROTOCOLS}
+
+pub using @98ce62fb5372700b {type SECDTLSMTU_7fd944e7fc89 as SECDTLSMTU}
+
+pub using @98ce62fb5372700b {type SECFLAGS_ede81d7a40b0 as SECFLAGS}
+
+pub using @98ce62fb5372700b {type SECNEGOTIATIONINFO_db0df2566971 as SECNEGOTIATIONINFO}
+
+pub using @98ce62fb5372700b {type SECPRESHAREDKEY_ed372a120947 as SECPRESHAREDKEY}
+
+pub using @98ce62fb5372700b {type SECSRTPMASTERKEYIDENTIFIER_9e4207992224 as SECSRTPMASTERKEYIDENTIFIER}
+
+pub using @98ce62fb5372700b {type SECURITYCLIENTCONTEXT_a35450373d6b as SECURITYCLIENTCONTEXT}
+
+pub using @98ce62fb5372700b {type SEEXPORTS_13e1613c4d7d as SEEXPORTS}
+
+pub using @98ce62fb5372700b {type SELOGONSESSIONTERMINATEDROUTINE_1b5c926f6d20 as SELOGONSESSIONTERMINATEDROUTINE}
+
+pub using @98ce62fb5372700b {type SELOGONSESSIONTERMINATEDROUTINEEX_5467e0c942d1 as SELOGONSESSIONTERMINATEDROUTINEEX}
+
+pub using @98ce62fb5372700b {type SETCACHEDRUNSSTATEINPUTBUFFER_2bd311160c2e as SETCACHEDRUNSSTATEINPUTBUFFER}
+
+pub using @98ce62fb5372700b {type SRVINSTANCETYPE_e7cf51f3df22 as SRVINSTANCETYPE}
+
+pub using @98ce62fb5372700b {type SRVOPENECPCONTEXT_04e154411336 as SRVOPENECPCONTEXT}
+
+pub using @98ce62fb5372700b {type SYSTEMPROCESSTRUSTLABELACE_293c536824f8 as SYSTEMPROCESSTRUSTLABELACE}
+
+pub using @98ce62fb5372700b {type SecBuffer_c23571e3bde7 as SecBuffer}
+
+pub using @98ce62fb5372700b {type SecBufferDesc_73eddf71d0b3 as SecBufferDesc}
+
+pub using @98ce62fb5372700b {type SecHandle_4f665bafa175 as SecHandle}
+
+pub using @98ce62fb5372700b {type ServerEStruct_30844bea127d as ServerEStruct}
+
+pub using @98ce62fb5372700b {type ShareEStruct_80d58d80b463 as ShareEStruct}
+
+pub using @98ce62fb5372700b {type SharedVirtualDiskHandleState_bd09e5a31e80 as SharedVirtualDiskHandleState}
+
+pub using @98ce62fb5372700b {type SharedVirtualDiskSupportType_14cf1f10881b as SharedVirtualDiskSupportType}
+
+pub using @98ce62fb5372700b {type Smb2EStruct_e78e5c9e1cd0 as Smb2EStruct}
+
+pub using @98ce62fb5372700b {type SspiAsyncNotifyCallback_c641dc6967e5 as SspiAsyncNotifyCallback}
+
+pub using @98ce62fb5372700b {type SymbolicLinkReparseBufferEStruct_040947ffc0f0 as SymbolicLinkReparseBufferEStruct}
+
+pub using @98ce62fb5372700b {type TUNNEL_b81086ed03c5 as TUNNEL}
+
+pub using @98ce62fb5372700b {type UNICODEPREFIXTABLE_75e15ce96cd5 as UNICODEPREFIXTABLE}
+
+pub using @98ce62fb5372700b {type UNICODEPREFIXTABLEENTRY_8bc686f6d6fd as UNICODEPREFIXTABLEENTRY}
+
+pub using @98ce62fb5372700b {type USNJOURNALDATA_6bd654b460ae as USNJOURNALDATA}
+
+pub using @98ce62fb5372700b {type USNRECORD_4fe761bc80a5 as USNRECORD}
+
+pub using @98ce62fb5372700b {type VCNRANGEINPUTBUFFER_ea3da37c6c64 as VCNRANGEINPUTBUFFER}
+
+pub using @98ce62fb5372700b {type VIRTUALMEMORYINFORMATIONCLASS_db7cb8f7f2a2 as VIRTUALMEMORYINFORMATIONCLASS}
+
+pub using @98ce62fb5372700b {type VOLUMEREFSINFOBUFFER_5db29fdb3974 as VOLUMEREFSINFOBUFFER}
+
+// Traits
+

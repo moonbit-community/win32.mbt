@@ -1,0 +1,34 @@
+// Generated using `moon info`, DON'T EDIT IT
+package "moonbit-community/win32-bindings/runtime/strings"
+
+import {
+  "moonbit-community/win32-bindings/runtime/core",
+}
+
+// Values
+
+// Errors
+
+// Types and methods
+pub type BStr
+pub fn BStr::from_string(String) -> Self raise @core.WindowsError
+pub fn BStr::raw(Self) -> @core.RawAddress
+pub fn BStr::to_string(Self) -> String
+
+pub type HString
+pub fn HString::from_string(String) -> Self raise @core.WindowsError
+pub fn HString::raw(Self) -> @core.RawAddress
+pub fn HString::to_string(Self) -> String
+
+pub struct PStr(Bytes)
+pub fn PStr::bytes(Self) -> Bytes
+pub fn PStr::from_string(String) -> Self
+
+pub struct PWStr(Bytes)
+pub fn PWStr::bytes(Self) -> Bytes
+pub fn PWStr::from_string(String) -> Self
+
+// Type aliases
+
+// Traits
+

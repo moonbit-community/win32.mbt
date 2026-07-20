@@ -1,0 +1,136 @@
+// Generated using `moon info`, DON'T EDIT IT
+package "moonbit-community/win32-bindings/microsoft/windows/push_notifications"
+
+import {
+  "moonbit-community/win32-bindings/runtime/com",
+  "moonbit-community/win32-bindings/runtime/core",
+  "moonbit-community/win32-bindings/scc/df636b7e2c6f41c6",
+  "moonbitlang/core/ref",
+}
+
+// Values
+pub fn add_canceled(@core.RawAddress, @core.RawAddress) -> Int64 raise @core.WindowsError
+
+pub fn add_canceled_raw(@core.RawAddress, @core.RawAddress, @ref.Ref[Int64]) -> Int
+
+pub fn add_push_received(@core.RawAddress, @core.RawAddress) -> Int64 raise @core.WindowsError
+
+pub fn add_push_received_raw(@core.RawAddress, @core.RawAddress, @ref.Ref[Int64]) -> Int
+
+pub let canceled_30a4759e4d : String
+
+pub let canceled_ce320bc2d6 : String
+
+pub let channel_237402fa0f : String
+
+pub let channel_9317bb4bde : String
+
+pub fn close(@core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn close_raw(@core.RawAddress) -> Int
+
+pub let completed_failure : Int
+
+pub let completed_success : Int
+
+pub fn create_channel_async_raw(@core.RawAddress, Bytes, @ref.Ref[UInt64]) -> Int
+
+pub let default__b1016d4095 : String
+
+pub let default__fb0d50f24c : String
+
+pub let expiration_time_83ee076185 : String
+
+pub let expiration_time_d8036f08f9 : String
+
+pub let extended_error_7dbe9bedf7 : String
+
+pub let extended_error_a243ff3751 : String
+
+pub fn get_channel_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_default_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_deferral_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_expiration_time(@core.RawAddress) -> Int64 raise @core.WindowsError
+
+pub fn get_expiration_time_raw(@core.RawAddress, @ref.Ref[Int64]) -> Int
+
+pub fn get_extended_error(@core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn get_extended_error_raw(@core.RawAddress, @ref.Ref[Int]) -> Int
+
+pub fn get_payload_raw(@core.RawAddress, @ref.Ref[UInt], @ref.Ref[UInt64]) -> Int
+
+pub fn get_status(@core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn get_status_raw(@core.RawAddress, @ref.Ref[Int]) -> Int
+
+pub fn get_uri_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub let in_progress : Int
+
+pub let in_progress_retry : Int
+
+pub fn is_supported_raw(@core.RawAddress, Bytes) -> Int
+
+pub let payload_4ca02d2ad9 : String
+
+pub let payload_c56e776d7e : String
+
+pub let push_received_3cb9b9502f : String
+
+pub let push_received_57bcb18bab : String
+
+pub fn register_(@core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn register__raw(@core.RawAddress) -> Int
+
+pub fn remove_canceled(@core.RawAddress, Int64) -> Unit raise @core.WindowsError
+
+pub fn remove_canceled_raw(@core.RawAddress, Int64) -> Int
+
+pub fn remove_push_received(@core.RawAddress, Int64) -> Unit raise @core.WindowsError
+
+pub fn remove_push_received_raw(@core.RawAddress, Int64) -> Int
+
+pub fn static_factory(@core.Guid) -> @com.ComPtr[@com.IInspectable] raise @core.WindowsError
+
+pub let status_0327e0b5bd : String
+
+pub let status_d0214b8f6e : String
+
+pub fn unregister(@core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn unregister_all(@core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn unregister_all_raw(@core.RawAddress) -> Int
+
+pub fn unregister_raw(@core.RawAddress) -> Int
+
+pub let uri_405c517d03 : String
+
+pub let uri_e6fd38f163 : String
+
+// Errors
+
+// Types and methods
+
+// Type aliases
+pub using @df636b7e2c6f41c6 {type PushNotificationChannel_f38e140358f1 as PushNotificationChannel}
+
+pub using @df636b7e2c6f41c6 {type PushNotificationChannelStatus_d8c3d877155a as PushNotificationChannelStatus}
+
+pub using @df636b7e2c6f41c6 {type PushNotificationCreateChannelResult_161919dadb4f as PushNotificationCreateChannelResult}
+
+pub using @df636b7e2c6f41c6 {type PushNotificationCreateChannelStatus_380bd955cc2a as PushNotificationCreateChannelStatus}
+
+pub using @df636b7e2c6f41c6 {type PushNotificationManager_7ed1f6d1506f as PushNotificationManager}
+
+pub using @df636b7e2c6f41c6 {type PushNotificationReceivedEventArgs_fd0f7f8530b4 as PushNotificationReceivedEventArgs}
+
+pub using @df636b7e2c6f41c6 {type PushNotificationsContract_6cec817be958 as PushNotificationsContract}
+
+// Traits
+

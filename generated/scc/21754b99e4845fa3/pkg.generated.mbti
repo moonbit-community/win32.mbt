@@ -1,0 +1,1164 @@
+// Generated using `moon info`, DON'T EDIT IT
+package "moonbit-community/win32-bindings/scc/21754b99e4845fa3"
+
+import {
+  "moonbit-community/win32-bindings/runtime/core",
+  "moonbitlang/core/debug",
+}
+
+// Values
+pub let ack_data_e_struct_c61eb3fdc9d9_alignment : Int
+
+pub let ack_data_e_struct_c61eb3fdc9d9_size : Int
+
+pub let ack_dehydrate_e_struct_e5a032f24e9e_alignment : Int
+
+pub let ack_dehydrate_e_struct_e5a032f24e9e_size : Int
+
+pub let ack_delete_e_struct_45ed98d9f915_alignment : Int
+
+pub let ack_delete_e_struct_45ed98d9f915_size : Int
+
+pub let ack_rename_e_struct_afa582973545_alignment : Int
+
+pub let ack_rename_e_struct_afa582973545_size : Int
+
+pub let anonymous_e_union_102f6adac411_alignment : Int
+
+pub let anonymous_e_union_102f6adac411_size : Int
+
+pub let anonymous_e_union_39ce112c55ba_alignment : Int
+
+pub let anonymous_e_union_39ce112c55ba_size : Int
+
+pub let anonymous_e_union_ae60f068ccc1_alignment : Int
+
+pub let anonymous_e_union_ae60f068ccc1_size : Int
+
+pub let cancel_e_struct_c3c1cf8027c5_alignment : Int
+
+pub let cancel_e_struct_c3c1cf8027c5_size : Int
+
+pub let cf_callback_cancel_flag_io_aborted_df8e4bce4283 : Int
+
+pub let cf_callback_cancel_flag_io_timeout_afaa4a792b79 : Int
+
+pub let cf_callback_cancel_flag_none_659171a65833 : Int
+
+pub let cf_callback_close_completion_flag_deleted_b075422f009a : Int
+
+pub let cf_callback_close_completion_flag_none_a2a8f6c5ddba : Int
+
+pub let cf_callback_dehydrate_completion_flag_background_e8a3f4a7652d : Int
+
+pub let cf_callback_dehydrate_completion_flag_dehydrated_f2ebfdc3c739 : Int
+
+pub let cf_callback_dehydrate_completion_flag_none_a1cd2b32ccf4 : Int
+
+pub let cf_callback_dehydrate_flag_background_5db52b9b7393 : Int
+
+pub let cf_callback_dehydrate_flag_none_69e734808fc3 : Int
+
+pub let cf_callback_dehydration_reason_none_c2adaab36cd7 : Int
+
+pub let cf_callback_dehydration_reason_system_inactivity_6f32ffd59639 : Int
+
+pub let cf_callback_dehydration_reason_system_low_space_9a459c08c911 : Int
+
+pub let cf_callback_dehydration_reason_system_os_upgrade_480379ff050c : Int
+
+pub let cf_callback_dehydration_reason_user_manual_0afff581cf8e : Int
+
+pub let cf_callback_delete_completion_flag_none_fabfe573eb48 : Int
+
+pub let cf_callback_delete_flag_is_directory_4b02948233bb : Int
+
+pub let cf_callback_delete_flag_is_undelete_a020a3f2074a : Int
+
+pub let cf_callback_delete_flag_none_bdd2d4d90ac9 : Int
+
+pub let cf_callback_fetch_data_flag_explicit_hydration_a0eaeb51b926 : Int
+
+pub let cf_callback_fetch_data_flag_none_fa8ec3c7aa20 : Int
+
+pub let cf_callback_fetch_data_flag_recovery_cab317e2012e : Int
+
+pub let cf_callback_fetch_placeholders_flag_none_3a6d65d0a6b5 : Int
+
+pub let cf_callback_open_completion_flag_none_f10b6f88cba1 : Int
+
+pub let cf_callback_open_completion_flag_placeholder_unknown_9d9973729828 : Int
+
+pub let cf_callback_open_completion_flag_placeholder_unsupported_49b6a178ccc1 : Int
+
+pub let cf_callback_rename_completion_flag_none_ac302230ef20 : Int
+
+pub let cf_callback_rename_flag_is_directory_424d4a368034 : Int
+
+pub let cf_callback_rename_flag_none_7a8c7fe11f3c : Int
+
+pub let cf_callback_rename_flag_source_in_scope_3c46e506d02b : Int
+
+pub let cf_callback_rename_flag_target_in_scope_dc415e286059 : Int
+
+pub let cf_callback_type_cancel_fetch_data_d92bcadc7da1 : Int
+
+pub let cf_callback_type_cancel_fetch_placeholders_e9ac9d4e9334 : Int
+
+pub let cf_callback_type_fetch_data_8562c043936d : Int
+
+pub let cf_callback_type_fetch_placeholders_84286f725600 : Int
+
+pub let cf_callback_type_none_6481219ae113 : Int
+
+pub let cf_callback_type_notify_dehydrate_759dc21993eb : Int
+
+pub let cf_callback_type_notify_dehydrate_completion_c729e009183d : Int
+
+pub let cf_callback_type_notify_delete_824609d5fbb4 : Int
+
+pub let cf_callback_type_notify_delete_completion_bdefe0cc21f1 : Int
+
+pub let cf_callback_type_notify_file_close_completion_a41a7bd0aec4 : Int
+
+pub let cf_callback_type_notify_file_open_completion_457bc0204c13 : Int
+
+pub let cf_callback_type_notify_rename_072906977ea9 : Int
+
+pub let cf_callback_type_notify_rename_completion_7ec5760d7b7d : Int
+
+pub let cf_callback_type_validate_data_8ff265c3d32c : Int
+
+pub let cf_callback_validate_data_flag_explicit_hydration_fa452350c0c8 : Int
+
+pub let cf_callback_validate_data_flag_none_d9bd52463bc5 : Int
+
+pub fn cf_close_handle_89efc2b9ee0d_raw(@core.RawAddress) -> Unit
+
+pub let cf_connect_flag_block_self_implicit_hydration_52aeddd15952 : Int
+
+pub let cf_connect_flag_none_f957b3fbdc75 : Int
+
+pub let cf_connect_flag_require_full_file_path_b327a24c2eab : Int
+
+pub let cf_connect_flag_require_process_info_5066c91bae46 : Int
+
+pub fn cf_connect_sync_root_8d7a3fc374f0(@core.RawAddress, @core.RawAddress, @core.RawAddress, Int, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn cf_connect_sync_root_8d7a3fc374f0_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, Int, @core.RawAddress) -> Int
+
+pub let cf_convert_flag_always_full_61d3179673fd : Int
+
+pub let cf_convert_flag_dehydrate_4231ac014b0f : Int
+
+pub let cf_convert_flag_enable_on_demand_population_222edad66e0a : Int
+
+pub let cf_convert_flag_force_convert_to_cloud_file_f8847f219a80 : Int
+
+pub let cf_convert_flag_mark_in_sync_18dee0167cde : Int
+
+pub let cf_convert_flag_none_33fdbd97757f : Int
+
+pub fn cf_convert_to_placeholder_5f9d953a32bc(@core.RawAddress, @core.RawAddress, UInt, Int, @core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn cf_convert_to_placeholder_5f9d953a32bc_raw(@core.RawAddress, @core.RawAddress, UInt, Int, @core.RawAddress, @core.RawAddress) -> Int
+
+pub let cf_create_flag_none_33b079c06378 : Int
+
+pub let cf_create_flag_stop_on_error_c12d146568ef : Int
+
+pub fn cf_create_placeholders_ac140031ec18(@core.RawAddress, @core.RawAddress, UInt, Int, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn cf_create_placeholders_ac140031ec18_raw(@core.RawAddress, @core.RawAddress, UInt, Int, @core.RawAddress) -> Int
+
+pub let cf_dehydrate_flag_background_bdbd8bb8ae1d : Int
+
+pub let cf_dehydrate_flag_none_ae53338ec105 : Int
+
+pub fn cf_dehydrate_placeholder_6844a419a0c5(@core.RawAddress, Int64, Int64, Int, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn cf_dehydrate_placeholder_6844a419a0c5_raw(@core.RawAddress, Int64, Int64, Int, @core.RawAddress) -> Int
+
+pub fn cf_disconnect_sync_root_f074c240a692(Int64) -> Unit raise @core.WindowsError
+
+pub fn cf_disconnect_sync_root_f074c240a692_raw(Int64) -> Int
+
+pub fn cf_execute_c95a046c4d2c(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn cf_execute_c95a046c4d2c_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn cf_get_correlation_vector_a060282fa767(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn cf_get_correlation_vector_a060282fa767_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn cf_get_placeholder_info_e676c0b2f940(@core.RawAddress, Int, @core.RawAddress, UInt, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn cf_get_placeholder_info_e676c0b2f940_raw(@core.RawAddress, Int, @core.RawAddress, UInt, @core.RawAddress) -> Int
+
+pub fn cf_get_placeholder_range_info_d60dde5db6c0(@core.RawAddress, Int, Int64, Int64, @core.RawAddress, UInt, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn cf_get_placeholder_range_info_d60dde5db6c0_raw(@core.RawAddress, Int, Int64, Int64, @core.RawAddress, UInt, @core.RawAddress) -> Int
+
+pub fn cf_get_placeholder_range_info_for_hydration_d6b432e25868(Int64, Int64, Int64, Int, Int64, Int64, @core.RawAddress, UInt, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn cf_get_placeholder_range_info_for_hydration_d6b432e25868_raw(Int64, Int64, Int64, Int, Int64, Int64, @core.RawAddress, UInt, @core.RawAddress) -> Int
+
+pub fn cf_get_placeholder_state_from_attribute_tag_dcdca12916fb_raw(UInt, UInt) -> UInt
+
+pub fn cf_get_placeholder_state_from_file_info_ef560b6242b0_raw(@core.RawAddress, Int) -> UInt
+
+pub fn cf_get_placeholder_state_from_find_data_a57c43483acc_raw(@core.RawAddress) -> UInt
+
+pub fn cf_get_platform_info_1bc5eff70a89(@core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn cf_get_platform_info_1bc5eff70a89_raw(@core.RawAddress) -> Int
+
+pub fn cf_get_sync_root_info_by_handle_cd5950e61573(@core.RawAddress, Int, @core.RawAddress, UInt, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn cf_get_sync_root_info_by_handle_cd5950e61573_raw(@core.RawAddress, Int, @core.RawAddress, UInt, @core.RawAddress) -> Int
+
+pub fn cf_get_sync_root_info_by_path_431cc9b4ef85(@core.RawAddress, Int, @core.RawAddress, UInt, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn cf_get_sync_root_info_by_path_431cc9b4ef85_raw(@core.RawAddress, Int, @core.RawAddress, UInt, @core.RawAddress) -> Int
+
+pub fn cf_get_transfer_key_527d063fe72c(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn cf_get_transfer_key_527d063fe72c_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn cf_get_win32_handle_from_protected_handle_a91abef4b1c1_raw(@core.RawAddress) -> @core.RawAddress
+
+pub let cf_hardlink_policy_allowed_1f8615f40229 : Int
+
+pub let cf_hardlink_policy_none_e3141ad1b143 : Int
+
+pub let cf_hydrate_flag_none_9a5b5e65d059 : Int
+
+pub fn cf_hydrate_placeholder_a7a713587e83(@core.RawAddress, Int64, Int64, Int, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn cf_hydrate_placeholder_a7a713587e83_raw(@core.RawAddress, Int64, Int64, Int, @core.RawAddress) -> Int
+
+pub let cf_hydration_policy_always_full_9bcef74beecd : UInt
+
+pub let cf_hydration_policy_full_2cf143407276 : UInt
+
+pub let cf_hydration_policy_modifier_allow_full_restart_hydration_ce4977dc5869 : UInt
+
+pub let cf_hydration_policy_modifier_auto_dehydration_allowed_01357f7c59f2 : UInt
+
+pub let cf_hydration_policy_modifier_none_43c25b4f9f64 : UInt
+
+pub let cf_hydration_policy_modifier_streaming_allowed_7b9360d88f69 : UInt
+
+pub let cf_hydration_policy_modifier_validation_required_b5852463b7cc : UInt
+
+pub let cf_hydration_policy_partial_0784dce6cfe7 : UInt
+
+pub let cf_hydration_policy_progressive_959b253f63f7 : UInt
+
+pub let cf_in_sync_state_in_sync_0689030bc790 : Int
+
+pub let cf_in_sync_state_not_in_sync_a411b95b844b : Int
+
+pub let cf_insync_policy_none_e1afa653a512 : UInt
+
+pub let cf_insync_policy_preserve_insync_for_sync_engine_dd247dbb35f6 : UInt
+
+pub let cf_insync_policy_track_all_7a48cca0f755 : UInt
+
+pub let cf_insync_policy_track_directory_all_c9ca45906eb0 : UInt
+
+pub let cf_insync_policy_track_directory_creation_time_c9a0d57c71a0 : UInt
+
+pub let cf_insync_policy_track_directory_hidden_attribute_5edcd5f8606b : UInt
+
+pub let cf_insync_policy_track_directory_last_write_time_0db44b845a14 : UInt
+
+pub let cf_insync_policy_track_directory_readonly_attribute_e0af021ac028 : UInt
+
+pub let cf_insync_policy_track_directory_system_attribute_23f16c5abdc5 : UInt
+
+pub let cf_insync_policy_track_file_all_e299bd0b2d44 : UInt
+
+pub let cf_insync_policy_track_file_creation_time_e08d4b696774 : UInt
+
+pub let cf_insync_policy_track_file_hidden_attribute_4894fce3536c : UInt
+
+pub let cf_insync_policy_track_file_last_write_time_2f39233b3eeb : UInt
+
+pub let cf_insync_policy_track_file_readonly_attribute_6357889ca004 : UInt
+
+pub let cf_insync_policy_track_file_system_attribute_f6ae8c509a34 : UInt
+
+pub let cf_max_priority_hint_9b57c1309e89 : UInt
+
+pub let cf_max_provider_name_length_bedd16f986b3 : UInt
+
+pub let cf_max_provider_version_length_55c3f8167f68 : UInt
+
+pub let cf_open_file_flag_delete_access_4aa174a1acdb : Int
+
+pub let cf_open_file_flag_exclusive_d215b68c579e : Int
+
+pub let cf_open_file_flag_foreground_3164180ce8ad : Int
+
+pub let cf_open_file_flag_none_609f7a8878ea : Int
+
+pub let cf_open_file_flag_write_access_b75cab43802e : Int
+
+pub fn cf_open_file_with_oplock_8845ceeb8c90(@core.RawAddress, Int, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn cf_open_file_with_oplock_8845ceeb8c90_raw(@core.RawAddress, Int, @core.RawAddress) -> Int
+
+pub let cf_operation_ack_data_flag_none_0a32a8d1a129 : Int
+
+pub let cf_operation_ack_dehydrate_flag_none_774cb1104eaf : Int
+
+pub let cf_operation_ack_delete_flag_none_3ed46337660b : Int
+
+pub let cf_operation_ack_rename_flag_none_cd75e47612b9 : Int
+
+pub let cf_operation_restart_hydration_flag_mark_in_sync_c74a80ebc1e2 : Int
+
+pub let cf_operation_restart_hydration_flag_none_0673323efb3a : Int
+
+pub let cf_operation_retrieve_data_flag_none_2856e6ad6be4 : Int
+
+pub let cf_operation_transfer_data_flag_none_4e287b37b572 : Int
+
+pub let cf_operation_transfer_placeholders_flag_disable_on_demand_population_37e52372dbbe : Int
+
+pub let cf_operation_transfer_placeholders_flag_none_d3e2e175d332 : Int
+
+pub let cf_operation_transfer_placeholders_flag_stop_on_error_849efbd51270 : Int
+
+pub let cf_operation_type_ack_data_57a0d37646b7 : Int
+
+pub let cf_operation_type_ack_dehydrate_fffd2a071101 : Int
+
+pub let cf_operation_type_ack_delete_8f0fd0e88fc6 : Int
+
+pub let cf_operation_type_ack_rename_2cb7ba0a6036 : Int
+
+pub let cf_operation_type_restart_hydration_be530bb57a8f : Int
+
+pub let cf_operation_type_retrieve_data_e2b558f760de : Int
+
+pub let cf_operation_type_transfer_data_7bfd272317b3 : Int
+
+pub let cf_operation_type_transfer_placeholders_f3a01e456424 : Int
+
+pub let cf_pin_state_excluded_5887b86801f2 : Int
+
+pub let cf_pin_state_inherit_ceb3324642b1 : Int
+
+pub let cf_pin_state_pinned_28a8c073013e : Int
+
+pub let cf_pin_state_unpinned_a7027aae3407 : Int
+
+pub let cf_pin_state_unspecified_6f394aede83e : Int
+
+pub let cf_placeholder_create_flag_always_full_334367718c48 : Int
+
+pub let cf_placeholder_create_flag_disable_on_demand_population_b59e2cd6789b : Int
+
+pub let cf_placeholder_create_flag_mark_in_sync_fef38e9228be : Int
+
+pub let cf_placeholder_create_flag_none_df35febb84cc : Int
+
+pub let cf_placeholder_create_flag_supersede_62888d5606ae : Int
+
+pub let cf_placeholder_info_basic_cf3e22e941f5 : Int
+
+pub let cf_placeholder_info_standard_91fd0fc996d1 : Int
+
+pub let cf_placeholder_management_policy_convert_to_unrestricted_29835544e18d : Int
+
+pub let cf_placeholder_management_policy_create_unrestricted_3a920be60c10 : Int
+
+pub let cf_placeholder_management_policy_default_77e434552a40 : Int
+
+pub let cf_placeholder_management_policy_update_unrestricted_01b4a42bb725 : Int
+
+pub let cf_placeholder_max_file_identity_length_421a87417641 : UInt
+
+pub let cf_placeholder_range_info_modified_52c29b9a67f4 : Int
+
+pub let cf_placeholder_range_info_ondisk_9f764d8a0dcd : Int
+
+pub let cf_placeholder_range_info_validated_5e38739b331c : Int
+
+pub let cf_placeholder_state_essential_prop_present_554cdf032762 : UInt
+
+pub let cf_placeholder_state_in_sync_8b7a5e32f176 : UInt
+
+pub let cf_placeholder_state_invalid_b6cfff664a40 : UInt
+
+pub let cf_placeholder_state_no_states_121ad4c434d3 : UInt
+
+pub let cf_placeholder_state_partial_7892057c1d7d : UInt
+
+pub let cf_placeholder_state_partially_on_disk_96323a2f0c30 : UInt
+
+pub let cf_placeholder_state_placeholder_45df2b1f24a3 : UInt
+
+pub let cf_placeholder_state_sync_root_93a0751c7e0a : UInt
+
+pub let cf_population_policy_always_full_6408b0c14a7c : UInt
+
+pub let cf_population_policy_full_0dbbdd9f5f42 : UInt
+
+pub let cf_population_policy_modifier_none_c28e9f505d68 : UInt
+
+pub let cf_population_policy_partial_7d73c36948f8 : UInt
+
+pub let cf_provider_status_clear_flags_882b8a1c184f : UInt
+
+pub let cf_provider_status_connectivity_lost_24ffbcfea1c1 : UInt
+
+pub let cf_provider_status_disconnected_cd727c9d48f3 : UInt
+
+pub let cf_provider_status_error_fc7b39b62308 : UInt
+
+pub let cf_provider_status_idle_490d1c8ffe87 : UInt
+
+pub let cf_provider_status_populate_content_acff625b1156 : UInt
+
+pub let cf_provider_status_populate_metadata_f6f9c917fd7d : UInt
+
+pub let cf_provider_status_populate_namespace_e2276940c03b : UInt
+
+pub let cf_provider_status_sync_full_8150d7746d2f : UInt
+
+pub let cf_provider_status_sync_incremental_5b37d0875522 : UInt
+
+pub let cf_provider_status_terminated_01eb6a18d9a9 : UInt
+
+pub fn cf_query_sync_provider_status_c2c43563f9c7(Int64, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn cf_query_sync_provider_status_c2c43563f9c7_raw(Int64, @core.RawAddress) -> Int
+
+pub fn cf_reference_protected_handle_772a7a17c3ac_raw(@core.RawAddress) -> UInt
+
+pub let cf_register_flag_disable_on_demand_population_on_root_9c653dd44216 : Int
+
+pub let cf_register_flag_mark_in_sync_on_root_623f2f181e27 : Int
+
+pub let cf_register_flag_none_6f098fa3c8b7 : Int
+
+pub let cf_register_flag_update_ae32a956b70d : Int
+
+pub fn cf_register_sync_root_fcb9a44010b6(@core.RawAddress, @core.RawAddress, @core.RawAddress, Int) -> Unit raise @core.WindowsError
+
+pub fn cf_register_sync_root_fcb9a44010b6_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, Int) -> Int
+
+pub fn cf_release_protected_handle_7661ba700173_raw(@core.RawAddress) -> Unit
+
+pub fn cf_release_transfer_key_051971d1fe7a_raw(@core.RawAddress, @core.RawAddress) -> Unit
+
+pub fn cf_report_provider_progress2_131a9d390769(Int64, Int64, Int64, Int64, Int64, UInt) -> Unit raise @core.WindowsError
+
+pub fn cf_report_provider_progress2_131a9d390769_raw(Int64, Int64, Int64, Int64, Int64, UInt) -> Int
+
+pub fn cf_report_provider_progress_3843df9e3ce0(Int64, Int64, Int64, Int64) -> Unit raise @core.WindowsError
+
+pub fn cf_report_provider_progress_3843df9e3ce0_raw(Int64, Int64, Int64, Int64) -> Int
+
+pub fn cf_report_sync_status_064875431c8b(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn cf_report_sync_status_064875431c8b_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub let cf_request_key_default_03e7658f9f53 : UInt
+
+pub let cf_revert_flag_none_ded5e321c8e9 : Int
+
+pub fn cf_revert_placeholder_ad6a61402197(@core.RawAddress, Int, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn cf_revert_placeholder_ad6a61402197_raw(@core.RawAddress, Int, @core.RawAddress) -> Int
+
+pub fn cf_set_correlation_vector_116a489513cc(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn cf_set_correlation_vector_116a489513cc_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub let cf_set_in_sync_flag_none_34918a48d62c : Int
+
+pub fn cf_set_in_sync_state_5fb2dbb85716(@core.RawAddress, Int, Int, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn cf_set_in_sync_state_5fb2dbb85716_raw(@core.RawAddress, Int, Int, @core.RawAddress) -> Int
+
+pub let cf_set_pin_flag_none_ef35a1076703 : Int
+
+pub let cf_set_pin_flag_recurse_1c34295de23c : Int
+
+pub let cf_set_pin_flag_recurse_only_13854b4ea35b : Int
+
+pub let cf_set_pin_flag_recurse_stop_on_error_f5f4b0ce3f10 : Int
+
+pub fn cf_set_pin_state_927f36890ab3(@core.RawAddress, Int, Int, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn cf_set_pin_state_927f36890ab3_raw(@core.RawAddress, Int, Int, @core.RawAddress) -> Int
+
+pub let cf_sync_root_info_basic_08d1eb5a416d : Int
+
+pub let cf_sync_root_info_provider_210346dc5505 : Int
+
+pub let cf_sync_root_info_standard_48e00ad4e4db : Int
+
+pub fn cf_unregister_sync_root_86bda182f4b6(@core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn cf_unregister_sync_root_86bda182f4b6_raw(@core.RawAddress) -> Int
+
+pub let cf_update_flag_allow_partial_cb275553adf6 : Int
+
+pub let cf_update_flag_always_full_6408440c1e47 : Int
+
+pub let cf_update_flag_clear_in_sync_a039da04e007 : Int
+
+pub let cf_update_flag_dehydrate_7b00140f8f37 : Int
+
+pub let cf_update_flag_disable_on_demand_population_dd5a55b91330 : Int
+
+pub let cf_update_flag_enable_on_demand_population_34d67f932c20 : Int
+
+pub let cf_update_flag_mark_in_sync_e05b4ff06b2d : Int
+
+pub let cf_update_flag_none_032c4364bb2b : Int
+
+pub let cf_update_flag_passthrough_fs_metadata_3a3cea88a5f5 : Int
+
+pub let cf_update_flag_remove_file_identity_d2b65e107b17 : Int
+
+pub let cf_update_flag_remove_property_af2a1d59f9c8 : Int
+
+pub let cf_update_flag_verify_in_sync_f992a55fc225 : Int
+
+pub fn cf_update_placeholder_12f5dbfab125(@core.RawAddress, @core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, UInt, Int, @core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn cf_update_placeholder_12f5dbfab125_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, UInt, Int, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn cf_update_sync_provider_status_8b6536cc0c4b(Int64, UInt) -> Unit raise @core.WindowsError
+
+pub fn cf_update_sync_provider_status_8b6536cc0c4b_raw(Int64, UInt) -> Int
+
+pub let cfcallbackinfo_7de753197076_alignment : Int
+
+pub let cfcallbackinfo_7de753197076_size : Int
+
+pub let cfcallbackparameters_ff8033413816_alignment : Int
+
+pub let cfcallbackparameters_ff8033413816_size : Int
+
+pub let cfcallbackregistration_ed519fc47ca4_alignment : Int
+
+pub let cfcallbackregistration_ed519fc47ca4_size : Int
+
+pub let cfconnectionkey_6be88ec2b8d6_alignment : Int
+
+pub let cfconnectionkey_6be88ec2b8d6_size : Int
+
+pub let cffilerange_09fd03e9a552_alignment : Int
+
+pub let cffilerange_09fd03e9a552_size : Int
+
+pub let cffsmetadata_c8237ff65800_alignment : Int
+
+pub let cffsmetadata_c8237ff65800_size : Int
+
+pub let cfhydrationpolicy_c5134d2557b4_alignment : Int
+
+pub let cfhydrationpolicy_c5134d2557b4_size : Int
+
+pub let cfoperationinfo_d68c6809dbd1_alignment : Int
+
+pub let cfoperationinfo_d68c6809dbd1_size : Int
+
+pub let cfoperationparameters_033265537f24_alignment : Int
+
+pub let cfoperationparameters_033265537f24_size : Int
+
+pub let cfplaceholderbasicinfo_57809eefb907_alignment : Int
+
+pub let cfplaceholderbasicinfo_57809eefb907_size : Int
+
+pub let cfplaceholdercreateinfo_e3b145b2a031_alignment : Int
+
+pub let cfplaceholdercreateinfo_e3b145b2a031_size : Int
+
+pub let cfplaceholderstandardinfo_a72788c4d82e_alignment : Int
+
+pub let cfplaceholderstandardinfo_a72788c4d82e_size : Int
+
+pub let cfplatforminfo_e4aaaa388e5f_alignment : Int
+
+pub let cfplatforminfo_e4aaaa388e5f_size : Int
+
+pub let cfpopulationpolicy_e0b3606610d6_alignment : Int
+
+pub let cfpopulationpolicy_e0b3606610d6_size : Int
+
+pub let cfprocessinfo_848400a2f0f7_alignment : Int
+
+pub let cfprocessinfo_848400a2f0f7_size : Int
+
+pub let cfsyncpolicies_5b468716d3a2_alignment : Int
+
+pub let cfsyncpolicies_5b468716d3a2_size : Int
+
+pub let cfsyncregistration_1ed9fff694a1_alignment : Int
+
+pub let cfsyncregistration_1ed9fff694a1_size : Int
+
+pub let cfsyncrootbasicinfo_6e1b6cf38f20_alignment : Int
+
+pub let cfsyncrootbasicinfo_6e1b6cf38f20_size : Int
+
+pub let cfsyncrootproviderinfo_5f1ef419b0ee_alignment : Int
+
+pub let cfsyncrootproviderinfo_5f1ef419b0ee_size : Int
+
+pub let cfsyncrootstandardinfo_41b15d94569b_alignment : Int
+
+pub let cfsyncrootstandardinfo_41b15d94569b_size : Int
+
+pub let cfsyncstatus_19859dc3d854_alignment : Int
+
+pub let cfsyncstatus_19859dc3d854_size : Int
+
+pub let close_completion_e_struct_495c32d4b53f_alignment : Int
+
+pub let close_completion_e_struct_495c32d4b53f_size : Int
+
+pub let dehydrate_completion_e_struct_9447d84f194e_alignment : Int
+
+pub let dehydrate_completion_e_struct_9447d84f194e_size : Int
+
+pub let dehydrate_e_struct_1e0cd97cf02d_alignment : Int
+
+pub let dehydrate_e_struct_1e0cd97cf02d_size : Int
+
+pub let delete_completion_e_struct_4484fec0df3f_alignment : Int
+
+pub let delete_completion_e_struct_4484fec0df3f_size : Int
+
+pub let delete_e_struct_3f9a9ca6d2c2_alignment : Int
+
+pub let delete_e_struct_3f9a9ca6d2c2_size : Int
+
+pub let fetch_data_e_struct_7e4c835cb78c_alignment : Int
+
+pub let fetch_data_e_struct_7e4c835cb78c_size : Int
+
+pub let fetch_data_e_struct_f8dbc0466fa4_alignment : Int
+
+pub let fetch_data_e_struct_f8dbc0466fa4_size : Int
+
+pub let fetch_placeholders_e_struct_59b1d9998fc6_alignment : Int
+
+pub let fetch_placeholders_e_struct_59b1d9998fc6_size : Int
+
+pub let open_completion_e_struct_270869a6f3bc_alignment : Int
+
+pub let open_completion_e_struct_270869a6f3bc_size : Int
+
+pub let rename_completion_e_struct_3517cd33756e_alignment : Int
+
+pub let rename_completion_e_struct_3517cd33756e_size : Int
+
+pub let rename_e_struct_9e8b2ad43820_alignment : Int
+
+pub let rename_e_struct_9e8b2ad43820_size : Int
+
+pub let restart_hydration_e_struct_972824b19ef4_alignment : Int
+
+pub let restart_hydration_e_struct_972824b19ef4_size : Int
+
+pub let retrieve_data_e_struct_7f95e7f356b3_alignment : Int
+
+pub let retrieve_data_e_struct_7f95e7f356b3_size : Int
+
+pub let transfer_data_e_struct_b2b8ef61ac57_alignment : Int
+
+pub let transfer_data_e_struct_b2b8ef61ac57_size : Int
+
+pub let transfer_placeholders_e_struct_9ee2b356393b_alignment : Int
+
+pub let transfer_placeholders_e_struct_9ee2b356393b_size : Int
+
+pub let validate_data_e_struct_8ab469e9be5e_alignment : Int
+
+pub let validate_data_e_struct_8ab469e9be5e_size : Int
+
+// Errors
+
+// Types and methods
+pub(all) struct AckDataEStruct_c61eb3fdc9d9 {
+  raw_bytes : Bytes
+} derive(Eq, @debug.Debug)
+pub fn AckDataEStruct_c61eb3fdc9d9::bytes(Self) -> Bytes
+pub fn AckDataEStruct_c61eb3fdc9d9::from_bytes(Bytes) -> Self raise @core.WindowsError
+
+pub(all) struct AckDehydrateEStruct_e5a032f24e9e {
+  raw_bytes : Bytes
+} derive(Eq, @debug.Debug)
+pub fn AckDehydrateEStruct_e5a032f24e9e::bytes(Self) -> Bytes
+pub fn AckDehydrateEStruct_e5a032f24e9e::from_bytes(Bytes) -> Self raise @core.WindowsError
+
+pub(all) struct AckDeleteEStruct_45ed98d9f915 {
+  raw_bytes : Bytes
+} derive(Eq, @debug.Debug)
+pub fn AckDeleteEStruct_45ed98d9f915::bytes(Self) -> Bytes
+pub fn AckDeleteEStruct_45ed98d9f915::from_bytes(Bytes) -> Self raise @core.WindowsError
+
+pub(all) struct AckRenameEStruct_afa582973545 {
+  raw_bytes : Bytes
+} derive(Eq, @debug.Debug)
+pub fn AckRenameEStruct_afa582973545::bytes(Self) -> Bytes
+pub fn AckRenameEStruct_afa582973545::from_bytes(Bytes) -> Self raise @core.WindowsError
+
+pub(all) struct AnonymousEUnion_102f6adac411 {
+  raw_bytes : Bytes
+} derive(Eq, @debug.Debug)
+pub fn AnonymousEUnion_102f6adac411::bytes(Self) -> Bytes
+pub fn AnonymousEUnion_102f6adac411::from_bytes(Bytes) -> Self raise @core.WindowsError
+
+pub(all) struct AnonymousEUnion_39ce112c55ba {
+  raw_bytes : Bytes
+} derive(Eq, @debug.Debug)
+pub fn AnonymousEUnion_39ce112c55ba::bytes(Self) -> Bytes
+pub fn AnonymousEUnion_39ce112c55ba::from_bytes(Bytes) -> Self raise @core.WindowsError
+
+pub(all) struct AnonymousEUnion_ae60f068ccc1 {
+  raw_bytes : Bytes
+} derive(Eq, @debug.Debug)
+pub fn AnonymousEUnion_ae60f068ccc1::bytes(Self) -> Bytes
+pub fn AnonymousEUnion_ae60f068ccc1::from_bytes(Bytes) -> Self raise @core.WindowsError
+
+pub(all) struct CFCALLBACKCANCELFLAGS_02135ad2fa7e(Int) derive(Compare, Eq, @debug.Debug)
+pub fn CFCALLBACKCANCELFLAGS_02135ad2fa7e::from_int(Int) -> Self
+pub fn CFCALLBACKCANCELFLAGS_02135ad2fa7e::to_int(Self) -> Int
+
+pub(all) struct CFCALLBACKCLOSECOMPLETIONFLAGS_67d9ea582deb(Int) derive(Compare, Eq, @debug.Debug)
+pub fn CFCALLBACKCLOSECOMPLETIONFLAGS_67d9ea582deb::from_int(Int) -> Self
+pub fn CFCALLBACKCLOSECOMPLETIONFLAGS_67d9ea582deb::to_int(Self) -> Int
+
+pub(all) struct CFCALLBACKDEHYDRATECOMPLETIONFLAGS_7a04436a4b28(Int) derive(Compare, Eq, @debug.Debug)
+pub fn CFCALLBACKDEHYDRATECOMPLETIONFLAGS_7a04436a4b28::from_int(Int) -> Self
+pub fn CFCALLBACKDEHYDRATECOMPLETIONFLAGS_7a04436a4b28::to_int(Self) -> Int
+
+pub(all) struct CFCALLBACKDEHYDRATEFLAGS_0d0210c13abd(Int) derive(Compare, Eq, @debug.Debug)
+pub fn CFCALLBACKDEHYDRATEFLAGS_0d0210c13abd::from_int(Int) -> Self
+pub fn CFCALLBACKDEHYDRATEFLAGS_0d0210c13abd::to_int(Self) -> Int
+
+pub(all) struct CFCALLBACKDEHYDRATIONREASON_bfa2ddb097dd(Int) derive(Compare, Eq, @debug.Debug)
+pub fn CFCALLBACKDEHYDRATIONREASON_bfa2ddb097dd::from_int(Int) -> Self
+pub fn CFCALLBACKDEHYDRATIONREASON_bfa2ddb097dd::to_int(Self) -> Int
+
+pub(all) struct CFCALLBACKDELETECOMPLETIONFLAGS_0c76c5af44c4(Int) derive(Compare, Eq, @debug.Debug)
+pub fn CFCALLBACKDELETECOMPLETIONFLAGS_0c76c5af44c4::from_int(Int) -> Self
+pub fn CFCALLBACKDELETECOMPLETIONFLAGS_0c76c5af44c4::to_int(Self) -> Int
+
+pub(all) struct CFCALLBACKDELETEFLAGS_d7f1a7e2cf84(Int) derive(Compare, Eq, @debug.Debug)
+pub fn CFCALLBACKDELETEFLAGS_d7f1a7e2cf84::from_int(Int) -> Self
+pub fn CFCALLBACKDELETEFLAGS_d7f1a7e2cf84::to_int(Self) -> Int
+
+pub(all) struct CFCALLBACKFETCHDATAFLAGS_acedec890ca0(Int) derive(Compare, Eq, @debug.Debug)
+pub fn CFCALLBACKFETCHDATAFLAGS_acedec890ca0::from_int(Int) -> Self
+pub fn CFCALLBACKFETCHDATAFLAGS_acedec890ca0::to_int(Self) -> Int
+
+pub(all) struct CFCALLBACKFETCHPLACEHOLDERSFLAGS_6c295c09bb65(Int) derive(Compare, Eq, @debug.Debug)
+pub fn CFCALLBACKFETCHPLACEHOLDERSFLAGS_6c295c09bb65::from_int(Int) -> Self
+pub fn CFCALLBACKFETCHPLACEHOLDERSFLAGS_6c295c09bb65::to_int(Self) -> Int
+
+pub(all) struct CFCALLBACKINFO_7de753197076 {
+  raw_bytes : Bytes
+} derive(Eq, @debug.Debug)
+pub fn CFCALLBACKINFO_7de753197076::bytes(Self) -> Bytes
+pub fn CFCALLBACKINFO_7de753197076::from_bytes(Bytes) -> Self raise @core.WindowsError
+
+pub(all) struct CFCALLBACKOPENCOMPLETIONFLAGS_b408ab13c85f(Int) derive(Compare, Eq, @debug.Debug)
+pub fn CFCALLBACKOPENCOMPLETIONFLAGS_b408ab13c85f::from_int(Int) -> Self
+pub fn CFCALLBACKOPENCOMPLETIONFLAGS_b408ab13c85f::to_int(Self) -> Int
+
+pub(all) struct CFCALLBACKPARAMETERS_ff8033413816 {
+  raw_bytes : Bytes
+} derive(Eq, @debug.Debug)
+pub fn CFCALLBACKPARAMETERS_ff8033413816::bytes(Self) -> Bytes
+pub fn CFCALLBACKPARAMETERS_ff8033413816::from_bytes(Bytes) -> Self raise @core.WindowsError
+
+pub(all) struct CFCALLBACKREGISTRATION_ed519fc47ca4 {
+  raw_bytes : Bytes
+} derive(Eq, @debug.Debug)
+pub fn CFCALLBACKREGISTRATION_ed519fc47ca4::bytes(Self) -> Bytes
+pub fn CFCALLBACKREGISTRATION_ed519fc47ca4::from_bytes(Bytes) -> Self raise @core.WindowsError
+
+pub(all) struct CFCALLBACKRENAMECOMPLETIONFLAGS_1f692c30bc2a(Int) derive(Compare, Eq, @debug.Debug)
+pub fn CFCALLBACKRENAMECOMPLETIONFLAGS_1f692c30bc2a::from_int(Int) -> Self
+pub fn CFCALLBACKRENAMECOMPLETIONFLAGS_1f692c30bc2a::to_int(Self) -> Int
+
+pub(all) struct CFCALLBACKRENAMEFLAGS_08ae0f7600b4(Int) derive(Compare, Eq, @debug.Debug)
+pub fn CFCALLBACKRENAMEFLAGS_08ae0f7600b4::from_int(Int) -> Self
+pub fn CFCALLBACKRENAMEFLAGS_08ae0f7600b4::to_int(Self) -> Int
+
+pub(all) struct CFCALLBACKTYPE_976e3314686b(Int) derive(Compare, Eq, @debug.Debug)
+pub fn CFCALLBACKTYPE_976e3314686b::from_int(Int) -> Self
+pub fn CFCALLBACKTYPE_976e3314686b::to_int(Self) -> Int
+
+pub(all) struct CFCALLBACKVALIDATEDATAFLAGS_65f38d7d3ebb(Int) derive(Compare, Eq, @debug.Debug)
+pub fn CFCALLBACKVALIDATEDATAFLAGS_65f38d7d3ebb::from_int(Int) -> Self
+pub fn CFCALLBACKVALIDATEDATAFLAGS_65f38d7d3ebb::to_int(Self) -> Int
+
+pub type CFCALLBACK_40675b252853
+
+pub(all) struct CFCONNECTFLAGS_3288580c75d5(Int) derive(Compare, Eq, @debug.Debug)
+pub fn CFCONNECTFLAGS_3288580c75d5::from_int(Int) -> Self
+pub fn CFCONNECTFLAGS_3288580c75d5::to_int(Self) -> Int
+
+pub(all) struct CFCONNECTIONKEY_6be88ec2b8d6 {
+  raw_bytes : Bytes
+} derive(Eq, @debug.Debug)
+pub fn CFCONNECTIONKEY_6be88ec2b8d6::bytes(Self) -> Bytes
+pub fn CFCONNECTIONKEY_6be88ec2b8d6::from_bytes(Bytes) -> Self raise @core.WindowsError
+
+pub(all) struct CFCONVERTFLAGS_b9cb3bcade76(Int) derive(Compare, Eq, @debug.Debug)
+pub fn CFCONVERTFLAGS_b9cb3bcade76::from_int(Int) -> Self
+pub fn CFCONVERTFLAGS_b9cb3bcade76::to_int(Self) -> Int
+
+pub(all) struct CFCREATEFLAGS_6a744f1a737d(Int) derive(Compare, Eq, @debug.Debug)
+pub fn CFCREATEFLAGS_6a744f1a737d::from_int(Int) -> Self
+pub fn CFCREATEFLAGS_6a744f1a737d::to_int(Self) -> Int
+
+pub(all) struct CFDEHYDRATEFLAGS_0374caf7b0ed(Int) derive(Compare, Eq, @debug.Debug)
+pub fn CFDEHYDRATEFLAGS_0374caf7b0ed::from_int(Int) -> Self
+pub fn CFDEHYDRATEFLAGS_0374caf7b0ed::to_int(Self) -> Int
+
+pub(all) struct CFFILERANGE_09fd03e9a552 {
+  raw_bytes : Bytes
+} derive(Eq, @debug.Debug)
+pub fn CFFILERANGE_09fd03e9a552::bytes(Self) -> Bytes
+pub fn CFFILERANGE_09fd03e9a552::from_bytes(Bytes) -> Self raise @core.WindowsError
+
+pub(all) struct CFFSMETADATA_c8237ff65800 {
+  raw_bytes : Bytes
+} derive(Eq, @debug.Debug)
+pub fn CFFSMETADATA_c8237ff65800::bytes(Self) -> Bytes
+pub fn CFFSMETADATA_c8237ff65800::from_bytes(Bytes) -> Self raise @core.WindowsError
+
+pub(all) struct CFHARDLINKPOLICY_60786c21eec0(Int) derive(Compare, Eq, @debug.Debug)
+pub fn CFHARDLINKPOLICY_60786c21eec0::from_int(Int) -> Self
+pub fn CFHARDLINKPOLICY_60786c21eec0::to_int(Self) -> Int
+
+pub(all) struct CFHYDRATEFLAGS_ca433a380470(Int) derive(Compare, Eq, @debug.Debug)
+pub fn CFHYDRATEFLAGS_ca433a380470::from_int(Int) -> Self
+pub fn CFHYDRATEFLAGS_ca433a380470::to_int(Self) -> Int
+
+pub(all) struct CFHYDRATIONPOLICYMODIFIER_73c0be8188a4(Int) derive(Compare, Eq, @debug.Debug)
+pub fn CFHYDRATIONPOLICYMODIFIER_73c0be8188a4::from_int(Int) -> Self
+pub fn CFHYDRATIONPOLICYMODIFIER_73c0be8188a4::to_int(Self) -> Int
+
+pub(all) struct CFHYDRATIONPOLICYPRIMARY_ca393a30a390(Int) derive(Compare, Eq, @debug.Debug)
+pub fn CFHYDRATIONPOLICYPRIMARY_ca393a30a390::from_int(Int) -> Self
+pub fn CFHYDRATIONPOLICYPRIMARY_ca393a30a390::to_int(Self) -> Int
+
+pub(all) struct CFHYDRATIONPOLICY_c5134d2557b4 {
+  raw_bytes : Bytes
+} derive(Eq, @debug.Debug)
+pub fn CFHYDRATIONPOLICY_c5134d2557b4::bytes(Self) -> Bytes
+pub fn CFHYDRATIONPOLICY_c5134d2557b4::from_bytes(Bytes) -> Self raise @core.WindowsError
+
+pub(all) struct CFINSYNCPOLICY_194346ed8f7d(Int) derive(Compare, Eq, @debug.Debug)
+pub fn CFINSYNCPOLICY_194346ed8f7d::from_int(Int) -> Self
+pub fn CFINSYNCPOLICY_194346ed8f7d::to_int(Self) -> Int
+
+pub(all) struct CFINSYNCSTATE_97ecc8ee5b07(Int) derive(Compare, Eq, @debug.Debug)
+pub fn CFINSYNCSTATE_97ecc8ee5b07::from_int(Int) -> Self
+pub fn CFINSYNCSTATE_97ecc8ee5b07::to_int(Self) -> Int
+
+pub(all) struct CFOPENFILEFLAGS_89a5e4d6ff08(Int) derive(Compare, Eq, @debug.Debug)
+pub fn CFOPENFILEFLAGS_89a5e4d6ff08::from_int(Int) -> Self
+pub fn CFOPENFILEFLAGS_89a5e4d6ff08::to_int(Self) -> Int
+
+pub(all) struct CFOPERATIONACKDATAFLAGS_a8f553910014(Int) derive(Compare, Eq, @debug.Debug)
+pub fn CFOPERATIONACKDATAFLAGS_a8f553910014::from_int(Int) -> Self
+pub fn CFOPERATIONACKDATAFLAGS_a8f553910014::to_int(Self) -> Int
+
+pub(all) struct CFOPERATIONACKDEHYDRATEFLAGS_87eb10b851be(Int) derive(Compare, Eq, @debug.Debug)
+pub fn CFOPERATIONACKDEHYDRATEFLAGS_87eb10b851be::from_int(Int) -> Self
+pub fn CFOPERATIONACKDEHYDRATEFLAGS_87eb10b851be::to_int(Self) -> Int
+
+pub(all) struct CFOPERATIONACKDELETEFLAGS_df67e4d490ac(Int) derive(Compare, Eq, @debug.Debug)
+pub fn CFOPERATIONACKDELETEFLAGS_df67e4d490ac::from_int(Int) -> Self
+pub fn CFOPERATIONACKDELETEFLAGS_df67e4d490ac::to_int(Self) -> Int
+
+pub(all) struct CFOPERATIONACKRENAMEFLAGS_59bd93a32f05(Int) derive(Compare, Eq, @debug.Debug)
+pub fn CFOPERATIONACKRENAMEFLAGS_59bd93a32f05::from_int(Int) -> Self
+pub fn CFOPERATIONACKRENAMEFLAGS_59bd93a32f05::to_int(Self) -> Int
+
+pub(all) struct CFOPERATIONINFO_d68c6809dbd1 {
+  raw_bytes : Bytes
+} derive(Eq, @debug.Debug)
+pub fn CFOPERATIONINFO_d68c6809dbd1::bytes(Self) -> Bytes
+pub fn CFOPERATIONINFO_d68c6809dbd1::from_bytes(Bytes) -> Self raise @core.WindowsError
+
+pub(all) struct CFOPERATIONPARAMETERS_033265537f24 {
+  raw_bytes : Bytes
+} derive(Eq, @debug.Debug)
+pub fn CFOPERATIONPARAMETERS_033265537f24::bytes(Self) -> Bytes
+pub fn CFOPERATIONPARAMETERS_033265537f24::from_bytes(Bytes) -> Self raise @core.WindowsError
+
+pub(all) struct CFOPERATIONRESTARTHYDRATIONFLAGS_ab1763a6ae6e(Int) derive(Compare, Eq, @debug.Debug)
+pub fn CFOPERATIONRESTARTHYDRATIONFLAGS_ab1763a6ae6e::from_int(Int) -> Self
+pub fn CFOPERATIONRESTARTHYDRATIONFLAGS_ab1763a6ae6e::to_int(Self) -> Int
+
+pub(all) struct CFOPERATIONRETRIEVEDATAFLAGS_0aa8cb3e8720(Int) derive(Compare, Eq, @debug.Debug)
+pub fn CFOPERATIONRETRIEVEDATAFLAGS_0aa8cb3e8720::from_int(Int) -> Self
+pub fn CFOPERATIONRETRIEVEDATAFLAGS_0aa8cb3e8720::to_int(Self) -> Int
+
+pub(all) struct CFOPERATIONTRANSFERDATAFLAGS_42052d1de244(Int) derive(Compare, Eq, @debug.Debug)
+pub fn CFOPERATIONTRANSFERDATAFLAGS_42052d1de244::from_int(Int) -> Self
+pub fn CFOPERATIONTRANSFERDATAFLAGS_42052d1de244::to_int(Self) -> Int
+
+pub(all) struct CFOPERATIONTRANSFERPLACEHOLDERSFLAGS_069a0d393860(Int) derive(Compare, Eq, @debug.Debug)
+pub fn CFOPERATIONTRANSFERPLACEHOLDERSFLAGS_069a0d393860::from_int(Int) -> Self
+pub fn CFOPERATIONTRANSFERPLACEHOLDERSFLAGS_069a0d393860::to_int(Self) -> Int
+
+pub(all) struct CFOPERATIONTYPE_d1541da80db4(Int) derive(Compare, Eq, @debug.Debug)
+pub fn CFOPERATIONTYPE_d1541da80db4::from_int(Int) -> Self
+pub fn CFOPERATIONTYPE_d1541da80db4::to_int(Self) -> Int
+
+pub(all) struct CFPINSTATE_3cc3d45a59a6(Int) derive(Compare, Eq, @debug.Debug)
+pub fn CFPINSTATE_3cc3d45a59a6::from_int(Int) -> Self
+pub fn CFPINSTATE_3cc3d45a59a6::to_int(Self) -> Int
+
+pub(all) struct CFPLACEHOLDERBASICINFO_57809eefb907 {
+  raw_bytes : Bytes
+} derive(Eq, @debug.Debug)
+pub fn CFPLACEHOLDERBASICINFO_57809eefb907::bytes(Self) -> Bytes
+pub fn CFPLACEHOLDERBASICINFO_57809eefb907::from_bytes(Bytes) -> Self raise @core.WindowsError
+
+pub(all) struct CFPLACEHOLDERCREATEFLAGS_403308b934d9(Int) derive(Compare, Eq, @debug.Debug)
+pub fn CFPLACEHOLDERCREATEFLAGS_403308b934d9::from_int(Int) -> Self
+pub fn CFPLACEHOLDERCREATEFLAGS_403308b934d9::to_int(Self) -> Int
+
+pub(all) struct CFPLACEHOLDERCREATEINFO_e3b145b2a031 {
+  raw_bytes : Bytes
+} derive(Eq, @debug.Debug)
+pub fn CFPLACEHOLDERCREATEINFO_e3b145b2a031::bytes(Self) -> Bytes
+pub fn CFPLACEHOLDERCREATEINFO_e3b145b2a031::from_bytes(Bytes) -> Self raise @core.WindowsError
+
+pub(all) struct CFPLACEHOLDERINFOCLASS_12b2a6b134cb(Int) derive(Compare, Eq, @debug.Debug)
+pub fn CFPLACEHOLDERINFOCLASS_12b2a6b134cb::from_int(Int) -> Self
+pub fn CFPLACEHOLDERINFOCLASS_12b2a6b134cb::to_int(Self) -> Int
+
+pub(all) struct CFPLACEHOLDERMANAGEMENTPOLICY_20c30bf50aff(Int) derive(Compare, Eq, @debug.Debug)
+pub fn CFPLACEHOLDERMANAGEMENTPOLICY_20c30bf50aff::from_int(Int) -> Self
+pub fn CFPLACEHOLDERMANAGEMENTPOLICY_20c30bf50aff::to_int(Self) -> Int
+
+pub(all) struct CFPLACEHOLDERRANGEINFOCLASS_b0601a9111ab(Int) derive(Compare, Eq, @debug.Debug)
+pub fn CFPLACEHOLDERRANGEINFOCLASS_b0601a9111ab::from_int(Int) -> Self
+pub fn CFPLACEHOLDERRANGEINFOCLASS_b0601a9111ab::to_int(Self) -> Int
+
+pub(all) struct CFPLACEHOLDERSTANDARDINFO_a72788c4d82e {
+  raw_bytes : Bytes
+} derive(Eq, @debug.Debug)
+pub fn CFPLACEHOLDERSTANDARDINFO_a72788c4d82e::bytes(Self) -> Bytes
+pub fn CFPLACEHOLDERSTANDARDINFO_a72788c4d82e::from_bytes(Bytes) -> Self raise @core.WindowsError
+
+pub(all) struct CFPLACEHOLDERSTATE_e4384af1354c(Int) derive(Compare, Eq, @debug.Debug)
+pub fn CFPLACEHOLDERSTATE_e4384af1354c::from_int(Int) -> Self
+pub fn CFPLACEHOLDERSTATE_e4384af1354c::to_int(Self) -> Int
+
+pub(all) struct CFPLATFORMINFO_e4aaaa388e5f {
+  raw_bytes : Bytes
+} derive(Eq, @debug.Debug)
+pub fn CFPLATFORMINFO_e4aaaa388e5f::bytes(Self) -> Bytes
+pub fn CFPLATFORMINFO_e4aaaa388e5f::from_bytes(Bytes) -> Self raise @core.WindowsError
+
+pub(all) struct CFPOPULATIONPOLICYMODIFIER_33c10dc2859f(Int) derive(Compare, Eq, @debug.Debug)
+pub fn CFPOPULATIONPOLICYMODIFIER_33c10dc2859f::from_int(Int) -> Self
+pub fn CFPOPULATIONPOLICYMODIFIER_33c10dc2859f::to_int(Self) -> Int
+
+pub(all) struct CFPOPULATIONPOLICYPRIMARY_f1bec8fc3907(Int) derive(Compare, Eq, @debug.Debug)
+pub fn CFPOPULATIONPOLICYPRIMARY_f1bec8fc3907::from_int(Int) -> Self
+pub fn CFPOPULATIONPOLICYPRIMARY_f1bec8fc3907::to_int(Self) -> Int
+
+pub(all) struct CFPOPULATIONPOLICY_e0b3606610d6 {
+  raw_bytes : Bytes
+} derive(Eq, @debug.Debug)
+pub fn CFPOPULATIONPOLICY_e0b3606610d6::bytes(Self) -> Bytes
+pub fn CFPOPULATIONPOLICY_e0b3606610d6::from_bytes(Bytes) -> Self raise @core.WindowsError
+
+pub(all) struct CFPROCESSINFO_848400a2f0f7 {
+  raw_bytes : Bytes
+} derive(Eq, @debug.Debug)
+pub fn CFPROCESSINFO_848400a2f0f7::bytes(Self) -> Bytes
+pub fn CFPROCESSINFO_848400a2f0f7::from_bytes(Bytes) -> Self raise @core.WindowsError
+
+pub(all) struct CFREGISTERFLAGS_04732f5f69e6(Int) derive(Compare, Eq, @debug.Debug)
+pub fn CFREGISTERFLAGS_04732f5f69e6::from_int(Int) -> Self
+pub fn CFREGISTERFLAGS_04732f5f69e6::to_int(Self) -> Int
+
+pub(all) struct CFREVERTFLAGS_2583310bc81b(Int) derive(Compare, Eq, @debug.Debug)
+pub fn CFREVERTFLAGS_2583310bc81b::from_int(Int) -> Self
+pub fn CFREVERTFLAGS_2583310bc81b::to_int(Self) -> Int
+
+pub(all) struct CFSETINSYNCFLAGS_e60e79c3be42(Int) derive(Compare, Eq, @debug.Debug)
+pub fn CFSETINSYNCFLAGS_e60e79c3be42::from_int(Int) -> Self
+pub fn CFSETINSYNCFLAGS_e60e79c3be42::to_int(Self) -> Int
+
+pub(all) struct CFSETPINFLAGS_a4d0415d1384(Int) derive(Compare, Eq, @debug.Debug)
+pub fn CFSETPINFLAGS_a4d0415d1384::from_int(Int) -> Self
+pub fn CFSETPINFLAGS_a4d0415d1384::to_int(Self) -> Int
+
+pub(all) struct CFSYNCPOLICIES_5b468716d3a2 {
+  raw_bytes : Bytes
+} derive(Eq, @debug.Debug)
+pub fn CFSYNCPOLICIES_5b468716d3a2::bytes(Self) -> Bytes
+pub fn CFSYNCPOLICIES_5b468716d3a2::from_bytes(Bytes) -> Self raise @core.WindowsError
+
+pub(all) struct CFSYNCPROVIDERSTATUS_7f2d4717a818(Int) derive(Compare, Eq, @debug.Debug)
+pub fn CFSYNCPROVIDERSTATUS_7f2d4717a818::from_int(Int) -> Self
+pub fn CFSYNCPROVIDERSTATUS_7f2d4717a818::to_int(Self) -> Int
+
+pub(all) struct CFSYNCREGISTRATION_1ed9fff694a1 {
+  raw_bytes : Bytes
+} derive(Eq, @debug.Debug)
+pub fn CFSYNCREGISTRATION_1ed9fff694a1::bytes(Self) -> Bytes
+pub fn CFSYNCREGISTRATION_1ed9fff694a1::from_bytes(Bytes) -> Self raise @core.WindowsError
+
+pub(all) struct CFSYNCROOTBASICINFO_6e1b6cf38f20 {
+  raw_bytes : Bytes
+} derive(Eq, @debug.Debug)
+pub fn CFSYNCROOTBASICINFO_6e1b6cf38f20::bytes(Self) -> Bytes
+pub fn CFSYNCROOTBASICINFO_6e1b6cf38f20::from_bytes(Bytes) -> Self raise @core.WindowsError
+
+pub(all) struct CFSYNCROOTINFOCLASS_c922d24d481b(Int) derive(Compare, Eq, @debug.Debug)
+pub fn CFSYNCROOTINFOCLASS_c922d24d481b::from_int(Int) -> Self
+pub fn CFSYNCROOTINFOCLASS_c922d24d481b::to_int(Self) -> Int
+
+pub(all) struct CFSYNCROOTPROVIDERINFO_5f1ef419b0ee {
+  raw_bytes : Bytes
+} derive(Eq, @debug.Debug)
+pub fn CFSYNCROOTPROVIDERINFO_5f1ef419b0ee::bytes(Self) -> Bytes
+pub fn CFSYNCROOTPROVIDERINFO_5f1ef419b0ee::from_bytes(Bytes) -> Self raise @core.WindowsError
+
+pub(all) struct CFSYNCROOTSTANDARDINFO_41b15d94569b {
+  raw_bytes : Bytes
+} derive(Eq, @debug.Debug)
+pub fn CFSYNCROOTSTANDARDINFO_41b15d94569b::bytes(Self) -> Bytes
+pub fn CFSYNCROOTSTANDARDINFO_41b15d94569b::from_bytes(Bytes) -> Self raise @core.WindowsError
+
+pub(all) struct CFSYNCSTATUS_19859dc3d854 {
+  raw_bytes : Bytes
+} derive(Eq, @debug.Debug)
+pub fn CFSYNCSTATUS_19859dc3d854::bytes(Self) -> Bytes
+pub fn CFSYNCSTATUS_19859dc3d854::from_bytes(Bytes) -> Self raise @core.WindowsError
+
+pub(all) struct CFUPDATEFLAGS_617a510cd483(Int) derive(Compare, Eq, @debug.Debug)
+pub fn CFUPDATEFLAGS_617a510cd483::from_int(Int) -> Self
+pub fn CFUPDATEFLAGS_617a510cd483::to_int(Self) -> Int
+
+pub(all) struct CancelEStruct_c3c1cf8027c5 {
+  raw_bytes : Bytes
+} derive(Eq, @debug.Debug)
+pub fn CancelEStruct_c3c1cf8027c5::bytes(Self) -> Bytes
+pub fn CancelEStruct_c3c1cf8027c5::from_bytes(Bytes) -> Self raise @core.WindowsError
+
+pub(all) struct CloseCompletionEStruct_495c32d4b53f {
+  raw_bytes : Bytes
+} derive(Eq, @debug.Debug)
+pub fn CloseCompletionEStruct_495c32d4b53f::bytes(Self) -> Bytes
+pub fn CloseCompletionEStruct_495c32d4b53f::from_bytes(Bytes) -> Self raise @core.WindowsError
+
+pub(all) struct DehydrateCompletionEStruct_9447d84f194e {
+  raw_bytes : Bytes
+} derive(Eq, @debug.Debug)
+pub fn DehydrateCompletionEStruct_9447d84f194e::bytes(Self) -> Bytes
+pub fn DehydrateCompletionEStruct_9447d84f194e::from_bytes(Bytes) -> Self raise @core.WindowsError
+
+pub(all) struct DehydrateEStruct_1e0cd97cf02d {
+  raw_bytes : Bytes
+} derive(Eq, @debug.Debug)
+pub fn DehydrateEStruct_1e0cd97cf02d::bytes(Self) -> Bytes
+pub fn DehydrateEStruct_1e0cd97cf02d::from_bytes(Bytes) -> Self raise @core.WindowsError
+
+pub(all) struct DeleteCompletionEStruct_4484fec0df3f {
+  raw_bytes : Bytes
+} derive(Eq, @debug.Debug)
+pub fn DeleteCompletionEStruct_4484fec0df3f::bytes(Self) -> Bytes
+pub fn DeleteCompletionEStruct_4484fec0df3f::from_bytes(Bytes) -> Self raise @core.WindowsError
+
+pub(all) struct DeleteEStruct_3f9a9ca6d2c2 {
+  raw_bytes : Bytes
+} derive(Eq, @debug.Debug)
+pub fn DeleteEStruct_3f9a9ca6d2c2::bytes(Self) -> Bytes
+pub fn DeleteEStruct_3f9a9ca6d2c2::from_bytes(Bytes) -> Self raise @core.WindowsError
+
+pub(all) struct FetchDataEStruct_7e4c835cb78c {
+  raw_bytes : Bytes
+} derive(Eq, @debug.Debug)
+pub fn FetchDataEStruct_7e4c835cb78c::bytes(Self) -> Bytes
+pub fn FetchDataEStruct_7e4c835cb78c::from_bytes(Bytes) -> Self raise @core.WindowsError
+
+pub(all) struct FetchDataEStruct_f8dbc0466fa4 {
+  raw_bytes : Bytes
+} derive(Eq, @debug.Debug)
+pub fn FetchDataEStruct_f8dbc0466fa4::bytes(Self) -> Bytes
+pub fn FetchDataEStruct_f8dbc0466fa4::from_bytes(Bytes) -> Self raise @core.WindowsError
+
+pub(all) struct FetchPlaceholdersEStruct_59b1d9998fc6 {
+  raw_bytes : Bytes
+} derive(Eq, @debug.Debug)
+pub fn FetchPlaceholdersEStruct_59b1d9998fc6::bytes(Self) -> Bytes
+pub fn FetchPlaceholdersEStruct_59b1d9998fc6::from_bytes(Bytes) -> Self raise @core.WindowsError
+
+pub(all) struct OpenCompletionEStruct_270869a6f3bc {
+  raw_bytes : Bytes
+} derive(Eq, @debug.Debug)
+pub fn OpenCompletionEStruct_270869a6f3bc::bytes(Self) -> Bytes
+pub fn OpenCompletionEStruct_270869a6f3bc::from_bytes(Bytes) -> Self raise @core.WindowsError
+
+pub(all) struct RenameCompletionEStruct_3517cd33756e {
+  raw_bytes : Bytes
+} derive(Eq, @debug.Debug)
+pub fn RenameCompletionEStruct_3517cd33756e::bytes(Self) -> Bytes
+pub fn RenameCompletionEStruct_3517cd33756e::from_bytes(Bytes) -> Self raise @core.WindowsError
+
+pub(all) struct RenameEStruct_9e8b2ad43820 {
+  raw_bytes : Bytes
+} derive(Eq, @debug.Debug)
+pub fn RenameEStruct_9e8b2ad43820::bytes(Self) -> Bytes
+pub fn RenameEStruct_9e8b2ad43820::from_bytes(Bytes) -> Self raise @core.WindowsError
+
+pub(all) struct RestartHydrationEStruct_972824b19ef4 {
+  raw_bytes : Bytes
+} derive(Eq, @debug.Debug)
+pub fn RestartHydrationEStruct_972824b19ef4::bytes(Self) -> Bytes
+pub fn RestartHydrationEStruct_972824b19ef4::from_bytes(Bytes) -> Self raise @core.WindowsError
+
+pub(all) struct RetrieveDataEStruct_7f95e7f356b3 {
+  raw_bytes : Bytes
+} derive(Eq, @debug.Debug)
+pub fn RetrieveDataEStruct_7f95e7f356b3::bytes(Self) -> Bytes
+pub fn RetrieveDataEStruct_7f95e7f356b3::from_bytes(Bytes) -> Self raise @core.WindowsError
+
+pub(all) struct TransferDataEStruct_b2b8ef61ac57 {
+  raw_bytes : Bytes
+} derive(Eq, @debug.Debug)
+pub fn TransferDataEStruct_b2b8ef61ac57::bytes(Self) -> Bytes
+pub fn TransferDataEStruct_b2b8ef61ac57::from_bytes(Bytes) -> Self raise @core.WindowsError
+
+pub(all) struct TransferPlaceholdersEStruct_9ee2b356393b {
+  raw_bytes : Bytes
+} derive(Eq, @debug.Debug)
+pub fn TransferPlaceholdersEStruct_9ee2b356393b::bytes(Self) -> Bytes
+pub fn TransferPlaceholdersEStruct_9ee2b356393b::from_bytes(Bytes) -> Self raise @core.WindowsError
+
+pub(all) struct ValidateDataEStruct_8ab469e9be5e {
+  raw_bytes : Bytes
+} derive(Eq, @debug.Debug)
+pub fn ValidateDataEStruct_8ab469e9be5e::bytes(Self) -> Bytes
+pub fn ValidateDataEStruct_8ab469e9be5e::from_bytes(Bytes) -> Self raise @core.WindowsError
+
+// Type aliases
+
+// Traits
+

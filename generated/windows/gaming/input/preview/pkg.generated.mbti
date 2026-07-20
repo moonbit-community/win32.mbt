@@ -1,0 +1,228 @@
+// Generated using `moon info`, DON'T EDIT IT
+package "moonbit-community/win32-bindings/windows/gaming/input/preview"
+
+import {
+  "moonbit-community/win32-bindings/runtime/com",
+  "moonbit-community/win32-bindings/runtime/core",
+  "moonbit-community/win32-bindings/scc/add84a48fb582fed",
+  "moonbitlang/core/ref",
+}
+
+// Values
+pub let active : Int
+
+pub let analog_settings : Int
+
+pub let app_compat_version_1190c65351 : String
+
+pub let app_compat_version_6aec99b82d : String
+
+pub let app_corrupt : Int
+
+pub let bass_boost_gain : Int
+
+pub let battery_charging_state_5bf4a874fe : String
+
+pub let battery_charging_state_f2fba6f13a : String
+
+pub let battery_kind_63a19ddcfa : String
+
+pub let battery_kind_fdfb8c29c0 : String
+
+pub let battery_level_5c9bfce96d : String
+
+pub let battery_level_77050cf6d9 : String
+
+pub let button_settings : Int
+
+pub fn clear_pairing(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn clear_pairing_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub let critical : Int
+
+pub let eeprom_corrupt : Int
+
+pub let error : Int
+
+pub fn execute_command(@core.RawAddress, Int) -> Unit raise @core.WindowsError
+
+pub fn execute_command_raw(@core.RawAddress, Int) -> Int
+
+pub fn from_game_controller_provider_raw(@core.RawAddress, @core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn from_game_controller_raw(@core.RawAddress, @core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub let full : Int
+
+pub let geq : Int
+
+pub fn get_app_compat_version(@core.RawAddress) -> UInt raise @core.WindowsError
+
+pub fn get_app_compat_version_raw(@core.RawAddress, @ref.Ref[UInt]) -> Int
+
+pub fn get_battery_charging_state(@core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn get_battery_charging_state_raw(@core.RawAddress, @ref.Ref[Int]) -> Int
+
+pub fn get_battery_kind(@core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn get_battery_kind_raw(@core.RawAddress, @ref.Ref[Int]) -> Int
+
+pub fn get_battery_level(@core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn get_battery_level_raw(@core.RawAddress, @ref.Ref[Int]) -> Int
+
+pub fn get_device_firmware_corruption_state(@core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn get_device_firmware_corruption_state_raw(@core.RawAddress, @ref.Ref[Int]) -> Int
+
+pub fn get_extended_device_info_raw(@core.RawAddress, @ref.Ref[UInt], @ref.Ref[UInt64]) -> Int
+
+pub fn get_headset_operation_raw(@core.RawAddress, Int, @ref.Ref[UInt], @ref.Ref[UInt64]) -> Int
+
+pub fn get_is_firmware_corrupted_raw(@core.RawAddress, Bytes) -> Int
+
+pub fn get_is_synthetic_device_raw(@core.RawAddress, Bytes) -> Int
+
+pub fn get_parent_provider_id_raw(@core.RawAddress, @core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_preferred_types_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_provider_id_raw(@core.RawAddress, @core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_standard_controller_button_remapping_raw(@core.RawAddress, @core.RawAddress, UInt, @ref.Ref[UInt64]) -> Int
+
+pub let high : Int
+
+pub let inactive : Int
+
+pub fn is_copilot_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub let is_firmware_corrupted_70233f2289 : String
+
+pub let is_firmware_corrupted_d49db7967b : String
+
+pub fn is_interface_supported_raw(@core.RawAddress, Bytes, Bytes) -> Int
+
+pub fn is_pilot_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub let is_synthetic_device_c7119252e6 : String
+
+pub let is_synthetic_device_e7a5c874e3 : String
+
+pub let low_2c1d959dbf : Int
+
+pub let low_61dc4f9a27 : Int
+
+pub let medium_6f83940cb7 : Int
+
+pub let medium_9323ac2430 : Int
+
+pub let mute_led_brightness : Int
+
+pub let none : Int
+
+pub let not_corrupt : Int
+
+pub let off : Int
+
+pub fn pair_pilot_to_copilot(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn pair_pilot_to_copilot_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub let preferred_types_4fd2819e0a : String
+
+pub let preferred_types_c095dc98ba : String
+
+pub let radio_corrupt : Int
+
+pub let rechargeable : Int
+
+pub let reset : Int
+
+pub let safe_to_update : Int
+
+pub fn set_headset_operation(@core.RawAddress, Int, UInt, Bytes) -> Unit raise @core.WindowsError
+
+pub fn set_headset_operation_raw(@core.RawAddress, Int, UInt, Bytes) -> Int
+
+pub fn set_home_led_intensity(@core.RawAddress, UInt) -> Unit raise @core.WindowsError
+
+pub fn set_home_led_intensity_raw(@core.RawAddress, UInt) -> Int
+
+pub fn set_standard_controller_button_remapping(@core.RawAddress, @core.RawAddress, UInt, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn set_standard_controller_button_remapping_raw(@core.RawAddress, @core.RawAddress, UInt, @core.RawAddress) -> Int
+
+pub let share_double_press : Int
+
+pub let share_double_press_meta_data : Int
+
+pub let share_double_press_meta_data_display : Int
+
+pub let share_long_press : Int
+
+pub let share_long_press_meta_data : Int
+
+pub let share_long_press_meta_data_display : Int
+
+pub let share_short_press : Int
+
+pub let share_short_press_meta_data : Int
+
+pub let share_short_press_meta_data_display : Int
+
+pub let side_tone : Int
+
+pub let smart_mute : Int
+
+pub let standard : Int
+
+pub fn static_factory_37b5a9674b(@core.Guid) -> @com.ComPtr[@com.IInspectable] raise @core.WindowsError
+
+pub fn static_factory_8e24b9288d(@core.Guid) -> @com.ComPtr[@com.IInspectable] raise @core.WindowsError
+
+pub let swap_mix_and_volume_dials : Int
+
+pub let two_up_corrupt : Int
+
+pub let unknown_4fe6161843 : Int
+
+pub let unknown_aae75edef4 : Int
+
+pub let unknown_be490df8e3 : Int
+
+pub let unknown_f56bc2e963 : Int
+
+pub let vibration_settings : Int
+
+// Errors
+
+// Types and methods
+
+// Type aliases
+pub using @add84a48fb582fed {type DeviceCommand_685c7f92853d as DeviceCommand}
+
+pub using @add84a48fb582fed {type GameControllerBatteryChargingState_a1aef8f69b85 as GameControllerBatteryChargingState}
+
+pub using @add84a48fb582fed {type GameControllerBatteryKind_fc7d732cfeaf as GameControllerBatteryKind}
+
+pub using @add84a48fb582fed {type GameControllerBatteryLevel_c37c95259fb6 as GameControllerBatteryLevel}
+
+pub using @add84a48fb582fed {type GameControllerFirmwareCorruptReason_4997a572be48 as GameControllerFirmwareCorruptReason}
+
+pub using @add84a48fb582fed {type GameControllerProviderInfo_d2a1924c81ab as GameControllerProviderInfo}
+
+pub using @add84a48fb582fed {type HeadsetGeqGains_f405b4bb1be8 as HeadsetGeqGains}
+
+pub using @add84a48fb582fed {type HeadsetLevel_7f754ec1b9a5 as HeadsetLevel}
+
+pub using @add84a48fb582fed {type HeadsetOperation_cfa18144e462 as HeadsetOperation}
+
+pub using @add84a48fb582fed {type LegacyGipGameControllerProvider_22b9afc0e53d as LegacyGipGameControllerProvider}
+
+pub using @add84a48fb582fed {type RemappingButtonCategory_287e9a12ca78 as RemappingButtonCategory}
+
+// Traits
+

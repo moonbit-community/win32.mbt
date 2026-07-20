@@ -1,0 +1,684 @@
+// Generated using `moon info`, DON'T EDIT IT
+package "moonbit-community/win32-bindings/windows/win32/network_management/windows_connect_now"
+
+import {
+  "moonbit-community/win32-bindings/runtime/core",
+  "moonbit-community/win32-bindings/scc/eae5aa912b4ee1af",
+}
+
+// Values
+pub fn connect(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn connect_failed(@core.RawAddress, Int) -> Unit raise @core.WindowsError
+
+pub fn connect_failed_raw(@core.RawAddress, Int) -> Int
+
+pub fn connect_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn connect_succeeded(@core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn connect_succeeded_raw(@core.RawAddress) -> Int
+
+pub fn get_attribute(@core.RawAddress, Int, UInt, @core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn get_attribute_raw(@core.RawAddress, Int, UInt, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn get_integer_attribute(@core.RawAddress, Int, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn get_integer_attribute_raw(@core.RawAddress, Int, @core.RawAddress) -> Int
+
+pub fn get_network_profile(@core.RawAddress, UInt, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn get_network_profile_raw(@core.RawAddress, UInt, @core.RawAddress) -> Int
+
+pub fn get_string_attribute(@core.RawAddress, Int, UInt, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn get_string_attribute_raw(@core.RawAddress, Int, UInt, @core.RawAddress) -> Int
+
+pub fn get_vendor_extension(@core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn get_vendor_extension_raw(@core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn set_network_profile(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn set_network_profile_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn set_nfc_password_params(@core.RawAddress, Int, UInt, UInt, @core.RawAddress, UInt, @core.RawAddress, UInt, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn set_nfc_password_params_raw(@core.RawAddress, Int, UInt, UInt, @core.RawAddress, UInt, @core.RawAddress, UInt, @core.RawAddress) -> Int
+
+pub fn set_password(@core.RawAddress, Int, UInt, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn set_password_raw(@core.RawAddress, Int, UInt, @core.RawAddress) -> Int
+
+pub fn set_vendor_extension(@core.RawAddress, @core.RawAddress, UInt, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn set_vendor_extension_raw(@core.RawAddress, @core.RawAddress, UInt, @core.RawAddress) -> Int
+
+pub fn unadvise(@core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn unadvise_raw(@core.RawAddress) -> Int
+
+pub let wcn_api_max_buffer_size : UInt
+
+pub let wcn_e_authentication_failed : Int
+
+pub let wcn_e_connection_rejected : Int
+
+pub let wcn_e_peer_not_found : Int
+
+pub let wcn_e_protocol_error : Int
+
+pub let wcn_e_session_timedout : Int
+
+pub let wcn_flag_authenticated_ve : UInt
+
+pub let wcn_flag_discovery_ve : UInt
+
+pub let wcn_flag_encrypted_ve : UInt
+
+pub let wcn_microsoft_vendor_id : UInt
+
+pub let wcn_no_subtype : UInt
+
+pub let wcn_num_attribute_types : Int
+
+pub let wcn_password_type_oob_specified : Int
+
+pub let wcn_password_type_pin : Int
+
+pub let wcn_password_type_pin_registrar_specified : Int
+
+pub let wcn_password_type_push_button : Int
+
+pub let wcn_password_type_wfds : Int
+
+pub let wcn_query_constraint_use_softap : String
+
+pub let wcn_session_status_failure_generic : Int
+
+pub let wcn_session_status_failure_timeout : Int
+
+pub let wcn_session_status_success : Int
+
+pub let wcn_type_802_1_x_enabled : Int
+
+pub let wcn_type_ap_channel : Int
+
+pub let wcn_type_ap_setup_locked : Int
+
+pub let wcn_type_application_extension : Int
+
+pub let wcn_type_appsessionkey : Int
+
+pub let wcn_type_association_state : Int
+
+pub let wcn_type_authentication_type : Int
+
+pub let wcn_type_authentication_type_flags : Int
+
+pub let wcn_type_authenticator : Int
+
+pub let wcn_type_authorized_macs : Int
+
+pub let wcn_type_bssid : Int
+
+pub let wcn_type_config_methods : Int
+
+pub let wcn_type_configuration_error : Int
+
+pub let wcn_type_confirmation_url4 : Int
+
+pub let wcn_type_confirmation_url6 : Int
+
+pub let wcn_type_connection_type : Int
+
+pub let wcn_type_connection_type_flags : Int
+
+pub let wcn_type_credential : Int
+
+pub let wcn_type_current_ssid : Int
+
+pub let wcn_type_device_name : Int
+
+pub let wcn_type_device_password_id : Int
+
+pub let wcn_type_dot11_mac_address : Int
+
+pub let wcn_type_e_hash1 : Int
+
+pub let wcn_type_e_hash2 : Int
+
+pub let wcn_type_e_snonce1 : Int
+
+pub let wcn_type_e_snonce2 : Int
+
+pub let wcn_type_eap_identity : Int
+
+pub let wcn_type_eap_type : Int
+
+pub let wcn_type_encrypted_settings : Int
+
+pub let wcn_type_encryption_type : Int
+
+pub let wcn_type_encryption_type_flags : Int
+
+pub let wcn_type_enrollee_nonce : Int
+
+pub let wcn_type_feature_id : Int
+
+pub let wcn_type_identity : Int
+
+pub let wcn_type_identity_proof : Int
+
+pub let wcn_type_initialization_vector : Int
+
+pub let wcn_type_key_identifier : Int
+
+pub let wcn_type_key_lifetime : Int
+
+pub let wcn_type_key_provided_automatically : Int
+
+pub let wcn_type_key_wrap_authenticator : Int
+
+pub let wcn_type_mac_address : Int
+
+pub let wcn_type_manufacturer : Int
+
+pub let wcn_type_message_counter : Int
+
+pub let wcn_type_message_type : Int
+
+pub let wcn_type_model_name : Int
+
+pub let wcn_type_model_number : Int
+
+pub let wcn_type_network_index : Int
+
+pub let wcn_type_network_key : Int
+
+pub let wcn_type_network_key_index : Int
+
+pub let wcn_type_network_key_shareable : Int
+
+pub let wcn_type_new_device_name : Int
+
+pub let wcn_type_new_password : Int
+
+pub let wcn_type_oob_device_password : Int
+
+pub let wcn_type_os_version : Int
+
+pub let wcn_type_permitted_config_methods : Int
+
+pub let wcn_type_portable_device : Int
+
+pub let wcn_type_power_level : Int
+
+pub let wcn_type_primary_device_type : Int
+
+pub let wcn_type_primary_device_type_category : Int
+
+pub let wcn_type_primary_device_type_subcategory : Int
+
+pub let wcn_type_primary_device_type_subcategory_oui : Int
+
+pub let wcn_type_psk_current : Int
+
+pub let wcn_type_psk_max : Int
+
+pub let wcn_type_public_key : Int
+
+pub let wcn_type_public_key_hash : Int
+
+pub let wcn_type_r_hash1 : Int
+
+pub let wcn_type_r_hash2 : Int
+
+pub let wcn_type_r_snonce1 : Int
+
+pub let wcn_type_r_snonce2 : Int
+
+pub let wcn_type_radio_enabled : Int
+
+pub let wcn_type_reboot : Int
+
+pub let wcn_type_registrar_current : Int
+
+pub let wcn_type_registrar_established : Int
+
+pub let wcn_type_registrar_list : Int
+
+pub let wcn_type_registrar_max : Int
+
+pub let wcn_type_registrar_nonce : Int
+
+pub let wcn_type_rekey_key : Int
+
+pub let wcn_type_request_to_enroll : Int
+
+pub let wcn_type_request_type : Int
+
+pub let wcn_type_requested_device_type : Int
+
+pub let wcn_type_response_type : Int
+
+pub let wcn_type_rf_bands : Int
+
+pub let wcn_type_secondary_device_type_list : Int
+
+pub let wcn_type_selected_registrar : Int
+
+pub let wcn_type_selected_registrar_config_methods : Int
+
+pub let wcn_type_serial_number : Int
+
+pub let wcn_type_settings_delay_time : Int
+
+pub let wcn_type_ssid : Int
+
+pub let wcn_type_total_networks : Int
+
+pub let wcn_type_uuid : Int
+
+pub let wcn_type_uuid_e : Int
+
+pub let wcn_type_uuid_r : Int
+
+pub let wcn_type_vendor_extension : Int
+
+pub let wcn_type_vendor_extension_wfa : Int
+
+pub let wcn_type_version : Int
+
+pub let wcn_type_version2 : Int
+
+pub let wcn_type_weptransmitkey : Int
+
+pub let wcn_type_wi_fi_protected_setup_state : Int
+
+pub let wcn_type_x_509_certificate : Int
+
+pub let wcn_type_x_509_certificate_request : Int
+
+pub let wcn_value_as_association_failure : Int
+
+pub let wcn_value_as_configuration_failure : Int
+
+pub let wcn_value_as_connection_success : Int
+
+pub let wcn_value_as_ip_failure : Int
+
+pub let wcn_value_as_not_associated : Int
+
+pub let wcn_value_at_open : Int
+
+pub let wcn_value_at_shared : Int
+
+pub let wcn_value_at_wpa : Int
+
+pub let wcn_value_at_wpa2 : Int
+
+pub let wcn_value_at_wpa2_psk : Int
+
+pub let wcn_value_at_wpapsk : Int
+
+pub let wcn_value_at_wpawpa2_psk_mixed : Int
+
+pub let wcn_value_ce_2_4_channel_not_supported : Int
+
+pub let wcn_value_ce_5_0_channel_not_supported : Int
+
+pub let wcn_value_ce_could_not_connect_to_registrar : Int
+
+pub let wcn_value_ce_decryption_crc_failure : Int
+
+pub let wcn_value_ce_device_busy : Int
+
+pub let wcn_value_ce_device_password_auth_failure : Int
+
+pub let wcn_value_ce_failed_dhcp_config : Int
+
+pub let wcn_value_ce_ip_address_conflict : Int
+
+pub let wcn_value_ce_message_timeout : Int
+
+pub let wcn_value_ce_multiple_pbc_sessions_detected : Int
+
+pub let wcn_value_ce_network_association_failure : Int
+
+pub let wcn_value_ce_network_authentication_failure : Int
+
+pub let wcn_value_ce_no_dhcp_response : Int
+
+pub let wcn_value_ce_no_error : Int
+
+pub let wcn_value_ce_oob_interface_read_error : Int
+
+pub let wcn_value_ce_registration_session_timeout : Int
+
+pub let wcn_value_ce_rogue_activity_suspected : Int
+
+pub let wcn_value_ce_setup_locked : Int
+
+pub let wcn_value_ce_signal_too_weak : Int
+
+pub let wcn_value_cm_display : Int
+
+pub let wcn_value_cm_ethernet : Int
+
+pub let wcn_value_cm_external_nfc : Int
+
+pub let wcn_value_cm_integrated_nfc : Int
+
+pub let wcn_value_cm_keypad : Int
+
+pub let wcn_value_cm_label : Int
+
+pub let wcn_value_cm_nfc_interface : Int
+
+pub let wcn_value_cm_phys_display : Int
+
+pub let wcn_value_cm_phys_pushbutton : Int
+
+pub let wcn_value_cm_pushbutton : Int
+
+pub let wcn_value_cm_usba : Int
+
+pub let wcn_value_cm_virt_display : Int
+
+pub let wcn_value_cm_virt_pushbutton : Int
+
+pub let wcn_value_ct_ess : Int
+
+pub let wcn_value_ct_ibss : Int
+
+pub let wcn_value_dp_default : Int
+
+pub let wcn_value_dp_machine_specified : Int
+
+pub let wcn_value_dp_nfc_connection_handover : Int
+
+pub let wcn_value_dp_outofband_max : Int
+
+pub let wcn_value_dp_outofband_min : Int
+
+pub let wcn_value_dp_pushbutton : Int
+
+pub let wcn_value_dp_registrar_specified : Int
+
+pub let wcn_value_dp_rekey : Int
+
+pub let wcn_value_dp_user_specified : Int
+
+pub let wcn_value_dp_wfd_services : Int
+
+pub let wcn_value_dt_category_audio_device : UInt
+
+pub let wcn_value_dt_category_camera : UInt
+
+pub let wcn_value_dt_category_computer : UInt
+
+pub let wcn_value_dt_category_display : UInt
+
+pub let wcn_value_dt_category_gaming_device : UInt
+
+pub let wcn_value_dt_category_input_device : UInt
+
+pub let wcn_value_dt_category_multimedia_device : UInt
+
+pub let wcn_value_dt_category_network_infrastructure : UInt
+
+pub let wcn_value_dt_category_other : UInt
+
+pub let wcn_value_dt_category_printer : UInt
+
+pub let wcn_value_dt_category_storage : UInt
+
+pub let wcn_value_dt_category_telephone : UInt
+
+pub let wcn_value_dt_subtype_audio_device_headphones : UInt
+
+pub let wcn_value_dt_subtype_audio_device_headset : UInt
+
+pub let wcn_value_dt_subtype_audio_device_hometheater : UInt
+
+pub let wcn_value_dt_subtype_audio_device_microphone : UInt
+
+pub let wcn_value_dt_subtype_audio_device_pmp : UInt
+
+pub let wcn_value_dt_subtype_audio_device_speakers : UInt
+
+pub let wcn_value_dt_subtype_audio_device_tuner_receiver : UInt
+
+pub let wcn_value_dt_subtype_camera_security_camera : UInt
+
+pub let wcn_value_dt_subtype_camera_still_camera : UInt
+
+pub let wcn_value_dt_subtype_camera_video_camera : UInt
+
+pub let wcn_value_dt_subtype_camera_web_camera : UInt
+
+pub let wcn_value_dt_subtype_computer_desktop : UInt
+
+pub let wcn_value_dt_subtype_computer_mediacenter : UInt
+
+pub let wcn_value_dt_subtype_computer_mid : UInt
+
+pub let wcn_value_dt_subtype_computer_netbook : UInt
+
+pub let wcn_value_dt_subtype_computer_notebook : UInt
+
+pub let wcn_value_dt_subtype_computer_pc : UInt
+
+pub let wcn_value_dt_subtype_computer_server : UInt
+
+pub let wcn_value_dt_subtype_computer_ultramobilepc : UInt
+
+pub let wcn_value_dt_subtype_display_monitor : UInt
+
+pub let wcn_value_dt_subtype_display_picture_frame : UInt
+
+pub let wcn_value_dt_subtype_display_projector : UInt
+
+pub let wcn_value_dt_subtype_display_television : UInt
+
+pub let wcn_value_dt_subtype_gaming_device_console_adapt : UInt
+
+pub let wcn_value_dt_subtype_gaming_device_playstation : UInt
+
+pub let wcn_value_dt_subtype_gaming_device_portable : UInt
+
+pub let wcn_value_dt_subtype_gaming_device_xbox : UInt
+
+pub let wcn_value_dt_subtype_gaming_device_xbox360 : UInt
+
+pub let wcn_value_dt_subtype_input_device_barcodereader : UInt
+
+pub let wcn_value_dt_subtype_input_device_biometricreader : UInt
+
+pub let wcn_value_dt_subtype_input_device_gamecontroller : UInt
+
+pub let wcn_value_dt_subtype_input_device_joystick : UInt
+
+pub let wcn_value_dt_subtype_input_device_keyboard : UInt
+
+pub let wcn_value_dt_subtype_input_device_mouse : UInt
+
+pub let wcn_value_dt_subtype_input_device_remote : UInt
+
+pub let wcn_value_dt_subtype_input_device_touchscreen : UInt
+
+pub let wcn_value_dt_subtype_input_device_trackball : UInt
+
+pub let wcn_value_dt_subtype_multimedia_device_dar : UInt
+
+pub let wcn_value_dt_subtype_multimedia_device_mcx : UInt
+
+pub let wcn_value_dt_subtype_multimedia_device_media_server_adapt_ext : UInt
+
+pub let wcn_value_dt_subtype_multimedia_device_pvp : UInt
+
+pub let wcn_value_dt_subtype_multimedia_device_pvr : UInt
+
+pub let wcn_value_dt_subtype_multimedia_device_settopbox : UInt
+
+pub let wcn_value_dt_subtype_network_infrastrucuture_ap : UInt
+
+pub let wcn_value_dt_subtype_network_infrastrucuture_bridge : UInt
+
+pub let wcn_value_dt_subtype_network_infrastrucuture_gateway : UInt
+
+pub let wcn_value_dt_subtype_network_infrastrucuture_router : UInt
+
+pub let wcn_value_dt_subtype_network_infrastrucuture_switch : UInt
+
+pub let wcn_value_dt_subtype_printer_allinone : UInt
+
+pub let wcn_value_dt_subtype_printer_copier : UInt
+
+pub let wcn_value_dt_subtype_printer_fax : UInt
+
+pub let wcn_value_dt_subtype_printer_printer : UInt
+
+pub let wcn_value_dt_subtype_printer_scanner : UInt
+
+pub let wcn_value_dt_subtype_storage_nas : UInt
+
+pub let wcn_value_dt_subtype_telephone_phone_dualmode : UInt
+
+pub let wcn_value_dt_subtype_telephone_phone_singlemode : UInt
+
+pub let wcn_value_dt_subtype_telephone_smartphone_dualmode : UInt
+
+pub let wcn_value_dt_subtype_telephone_smartphone_singlemode : UInt
+
+pub let wcn_value_dt_subtype_telephone_windows_mobile : UInt
+
+pub let wcn_value_dt_subtype_wifi_oui : UInt
+
+pub let wcn_value_et_aes : Int
+
+pub let wcn_value_et_none : Int
+
+pub let wcn_value_et_tkip : Int
+
+pub let wcn_value_et_tkip_aes_mixed : Int
+
+pub let wcn_value_et_wep : Int
+
+pub let wcn_value_false : Int
+
+pub let wcn_value_mt_ack : Int
+
+pub let wcn_value_mt_beacon : Int
+
+pub let wcn_value_mt_done : Int
+
+pub let wcn_value_mt_m1 : Int
+
+pub let wcn_value_mt_m2 : Int
+
+pub let wcn_value_mt_m2_d : Int
+
+pub let wcn_value_mt_m3 : Int
+
+pub let wcn_value_mt_m4 : Int
+
+pub let wcn_value_mt_m5 : Int
+
+pub let wcn_value_mt_m6 : Int
+
+pub let wcn_value_mt_m7 : Int
+
+pub let wcn_value_mt_m8 : Int
+
+pub let wcn_value_mt_nack : Int
+
+pub let wcn_value_mt_probe_request : Int
+
+pub let wcn_value_mt_probe_response : Int
+
+pub let wcn_value_rb_24_ghz : Int
+
+pub let wcn_value_rb_50_ghz : Int
+
+pub let wcn_value_req_t_enrollee_info : Int
+
+pub let wcn_value_req_t_enrollee_open_1_x : Int
+
+pub let wcn_value_req_t_manager_registrar : Int
+
+pub let wcn_value_req_t_registrar : Int
+
+pub let wcn_value_rsp_t_ap : Int
+
+pub let wcn_value_rsp_t_enrollee_info : Int
+
+pub let wcn_value_rsp_t_enrollee_open_1_x : Int
+
+pub let wcn_value_rsp_t_registrar : Int
+
+pub let wcn_value_ss_configured : Int
+
+pub let wcn_value_ss_not_configured : Int
+
+pub let wcn_value_ss_reserved00 : Int
+
+pub let wcn_value_true : Int
+
+pub let wcn_value_version_1_0 : Int
+
+pub let wcn_value_version_2_0 : Int
+
+// Errors
+
+// Types and methods
+
+// Type aliases
+pub using @eae5aa912b4ee1af {type IWCNConnectNotify_14ff4a22e428 as IWCNConnectNotify}
+
+pub using @eae5aa912b4ee1af {type IWCNDevice_abd4e1d7fa40 as IWCNDevice}
+
+pub using @eae5aa912b4ee1af {type WCNATTRIBUTETYPE_e2c8fea669d1 as WCNATTRIBUTETYPE}
+
+pub using @eae5aa912b4ee1af {type WCNDeviceObject_ba083055c2d5 as WCNDeviceObject}
+
+pub using @eae5aa912b4ee1af {type WCNPASSWORDTYPE_7c49365187c6 as WCNPASSWORDTYPE}
+
+pub using @eae5aa912b4ee1af {type WCNSESSIONSTATUS_f23bb8097655 as WCNSESSIONSTATUS}
+
+pub using @eae5aa912b4ee1af {type WCNVALUETYPEASSOCIATIONSTATE_1c986f92e6e9 as WCNVALUETYPEASSOCIATIONSTATE}
+
+pub using @eae5aa912b4ee1af {type WCNVALUETYPEAUTHENTICATIONTYPE_7fed38689c4a as WCNVALUETYPEAUTHENTICATIONTYPE}
+
+pub using @eae5aa912b4ee1af {type WCNVALUETYPEBOOLEAN_fcdc624609db as WCNVALUETYPEBOOLEAN}
+
+pub using @eae5aa912b4ee1af {type WCNVALUETYPECONFIGMETHODS_1396e6b3919f as WCNVALUETYPECONFIGMETHODS}
+
+pub using @eae5aa912b4ee1af {type WCNVALUETYPECONFIGURATIONERROR_e01c0bfdced5 as WCNVALUETYPECONFIGURATIONERROR}
+
+pub using @eae5aa912b4ee1af {type WCNVALUETYPECONNECTIONTYPE_e4f735f651fc as WCNVALUETYPECONNECTIONTYPE}
+
+pub using @eae5aa912b4ee1af {type WCNVALUETYPEDEVICEPASSWORDID_a86a86020be2 as WCNVALUETYPEDEVICEPASSWORDID}
+
+pub using @eae5aa912b4ee1af {type WCNVALUETYPEENCRYPTIONTYPE_2b65fa8fb7d9 as WCNVALUETYPEENCRYPTIONTYPE}
+
+pub using @eae5aa912b4ee1af {type WCNVALUETYPEMESSAGETYPE_62125cfada26 as WCNVALUETYPEMESSAGETYPE}
+
+pub using @eae5aa912b4ee1af {type WCNVALUETYPEPRIMARYDEVICETYPE_58021d959143 as WCNVALUETYPEPRIMARYDEVICETYPE}
+
+pub using @eae5aa912b4ee1af {type WCNVALUETYPEREQUESTTYPE_1343594aa862 as WCNVALUETYPEREQUESTTYPE}
+
+pub using @eae5aa912b4ee1af {type WCNVALUETYPERESPONSETYPE_832440ce66ef as WCNVALUETYPERESPONSETYPE}
+
+pub using @eae5aa912b4ee1af {type WCNVALUETYPERFBANDS_0bf77f2381c3 as WCNVALUETYPERFBANDS}
+
+pub using @eae5aa912b4ee1af {type WCNVALUETYPEVERSION_2beeda89b2fe as WCNVALUETYPEVERSION}
+
+pub using @eae5aa912b4ee1af {type WCNVALUETYPEWIFIPROTECTEDSETUPSTATE_a078eb236f41 as WCNVALUETYPEWIFIPROTECTEDSETUPSTATE}
+
+pub using @eae5aa912b4ee1af {type WCNVENDOREXTENSIONSPEC_168ce5364d02 as WCNVENDOREXTENSIONSPEC}
+
+// Traits
+

@@ -1,0 +1,86 @@
+// Generated using `moon info`, DON'T EDIT IT
+package "moonbit-community/win32-bindings/scc/55efa17bbc4994e7"
+
+import {
+  "moonbit-community/win32-bindings/runtime/core",
+  "moonbitlang/core/debug",
+}
+
+// Values
+pub let constant_buffer_cf07da521add : UInt
+
+pub let decoder_10a54965938f : UInt
+
+pub let default__491d328595e5 : Int
+
+pub let depth_stencil_acdf72f9f077 : UInt
+
+pub let description_2e5151e38623 : String
+
+pub let direct3_d_multisample_description_321a452ed2a6_alignment : Int
+
+pub let direct3_d_multisample_description_321a452ed2a6_size : Int
+
+pub let direct3_d_surface_description_683147acce69_alignment : Int
+
+pub let direct3_d_surface_description_683147acce69_size : Int
+
+pub let dynamic_48c9147b48ef : Int
+
+pub fn get_description_be8a3af0d9de(@core.RawAddress) -> Bytes raise @core.WindowsError
+
+pub fn get_description_be8a3af0d9de_raw(@core.RawAddress, Bytes) -> Int
+
+pub let immutable_a1b68629f2dd : Int
+
+pub let index_buffer_c0d5e46295cb : UInt
+
+pub let render_target_d55cbb4e2590 : UInt
+
+pub let shader_resource_87570bb87cb6 : UInt
+
+pub let staging_2d1e4aa67296 : Int
+
+pub let stream_output_8a2e7577e7c7 : UInt
+
+pub fn trim_141b2f3f4cfd(@core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn trim_141b2f3f4cfd_raw(@core.RawAddress) -> Int
+
+pub let unordered_access_8e5d76c12cbf : UInt
+
+pub let vertex_buffer_069a4278fa4a : UInt
+
+pub let video_encoder_57a5e4f93764 : UInt
+
+// Errors
+
+// Types and methods
+pub(all) struct Direct3DBindings_8c8d2e553dbf(Int) derive(Compare, Eq, @debug.Debug)
+pub fn Direct3DBindings_8c8d2e553dbf::from_int(Int) -> Self
+pub fn Direct3DBindings_8c8d2e553dbf::to_int(Self) -> Int
+
+pub(all) struct Direct3DMultisampleDescription_321a452ed2a6 {
+  raw_bytes : Bytes
+} derive(Eq, @debug.Debug)
+pub fn Direct3DMultisampleDescription_321a452ed2a6::bytes(Self) -> Bytes
+pub fn Direct3DMultisampleDescription_321a452ed2a6::from_bytes(Bytes) -> Self raise @core.WindowsError
+
+pub(all) struct Direct3DSurfaceDescription_683147acce69 {
+  raw_bytes : Bytes
+} derive(Eq, @debug.Debug)
+pub fn Direct3DSurfaceDescription_683147acce69::bytes(Self) -> Bytes
+pub fn Direct3DSurfaceDescription_683147acce69::from_bytes(Bytes) -> Self raise @core.WindowsError
+
+pub(all) struct Direct3DUsage_3fb1525952a1(Int) derive(Compare, Eq, @debug.Debug)
+pub fn Direct3DUsage_3fb1525952a1::from_int(Int) -> Self
+pub fn Direct3DUsage_3fb1525952a1::to_int(Self) -> Int
+
+pub type IDirect3DDevice_bb5b19749e1a
+
+pub type IDirect3DSurface_b774c1b10b78
+
+// Type aliases
+
+// Traits
+

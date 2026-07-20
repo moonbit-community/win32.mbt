@@ -1,0 +1,134 @@
+// Generated using `moon info`, DON'T EDIT IT
+package "moonbit-community/win32-bindings/windows/system/remote_desktop/provider"
+
+import {
+  "moonbit-community/win32-bindings/runtime/com",
+  "moonbit-community/win32-bindings/runtime/core",
+  "moonbit-community/win32-bindings/scc/e12028ca58728680",
+  "moonbitlang/core/ref",
+}
+
+// Values
+pub let action_28cddcc65b : String
+
+pub let action_5fab33c3dc : String
+
+pub fn activatable_factory(@core.Guid) -> @com.ComPtr[@com.IInspectable] raise @core.WindowsError
+
+pub fn add_perform_local_action_requested(@core.RawAddress, @core.RawAddress) -> Int64 raise @core.WindowsError
+
+pub fn add_perform_local_action_requested_raw(@core.RawAddress, @core.RawAddress, @ref.Ref[Int64]) -> Int
+
+pub fn add_switch_to_local_session_requested(@core.RawAddress, @core.RawAddress) -> Int64 raise @core.WindowsError
+
+pub fn add_switch_to_local_session_requested_raw(@core.RawAddress, @core.RawAddress, @ref.Ref[Int64]) -> Int
+
+pub let connected : Int
+
+pub let connecting : Int
+
+pub fn create_instance_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub let desktop_infos_8fceeb78cb : String
+
+pub let desktop_infos_be1a0d3662 : String
+
+pub let disconnected : Int
+
+pub let display_name_b4499ff31c : String
+
+pub let display_name_c67f282f4f : String
+
+pub fn get_action(@core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn get_action_raw(@core.RawAddress, @ref.Ref[Int]) -> Int
+
+pub fn get_desktop_infos_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_display_name_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_for_launch_uri_1af751a9d3_raw(@core.RawAddress, @core.RawAddress, UInt64, @ref.Ref[UInt64]) -> Int
+
+pub fn get_for_launch_uri_adb790be2f_raw(@core.RawAddress, @core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_id_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub let id_7373c8434a : String
+
+pub let id_825b27c48e : String
+
+pub fn is_switch_supported_raw(@core.RawAddress, Bytes) -> Int
+
+pub fn is_switch_to_local_session_enabled_raw(@core.RawAddress, Bytes) -> Int
+
+pub fn perform_local_action_from_remote(@core.RawAddress, Int) -> Unit raise @core.WindowsError
+
+pub fn perform_local_action_from_remote_raw(@core.RawAddress, Int) -> Int
+
+pub let perform_local_action_requested_24d8a2519c : String
+
+pub let perform_local_action_requested_c62d817fcf : String
+
+pub fn remove_perform_local_action_requested(@core.RawAddress, Int64) -> Unit raise @core.WindowsError
+
+pub fn remove_perform_local_action_requested_raw(@core.RawAddress, Int64) -> Int
+
+pub fn remove_switch_to_local_session_requested(@core.RawAddress, Int64) -> Unit raise @core.WindowsError
+
+pub fn remove_switch_to_local_session_requested_raw(@core.RawAddress, Int64) -> Int
+
+pub fn report_switched(@core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn report_switched_raw(@core.RawAddress) -> Int
+
+pub fn set_connection_status(@core.RawAddress, Int) -> Unit raise @core.WindowsError
+
+pub fn set_connection_status_raw(@core.RawAddress, Int) -> Int
+
+pub let show_bluetooth_settings : Int
+
+pub let show_local_settings : Int
+
+pub let show_system_account_settings : Int
+
+pub let show_system_display_settings : Int
+
+pub let show_system_sound_settings : Int
+
+pub fn static_factory_218b348b1a(@core.Guid) -> @com.ComPtr[@com.IInspectable] raise @core.WindowsError
+
+pub fn static_factory_680a99e135(@core.Guid) -> @com.ComPtr[@com.IInspectable] raise @core.WindowsError
+
+pub fn static_factory_fc22b1ed2f(@core.Guid) -> @com.ComPtr[@com.IInspectable] raise @core.WindowsError
+
+pub fn switch_to_local_session(@core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn switch_to_local_session_raw(@core.RawAddress) -> Int
+
+pub let switch_to_local_session_requested_26614a3aed : String
+
+pub let switch_to_local_session_requested_e75a7403b3 : String
+
+pub let user_input_needed : Int
+
+// Errors
+
+// Types and methods
+
+// Type aliases
+pub using @e12028ca58728680 {type PerformLocalActionRequestedEventArgs_9343eec0c63c as PerformLocalActionRequestedEventArgs}
+
+pub using @e12028ca58728680 {type RemoteDesktopConnectionInfo_212de167eb15 as RemoteDesktopConnectionInfo}
+
+pub using @e12028ca58728680 {type RemoteDesktopConnectionRemoteInfo_a38c1fd7e800 as RemoteDesktopConnectionRemoteInfo}
+
+pub using @e12028ca58728680 {type RemoteDesktopConnectionStatus_57a5fc729322 as RemoteDesktopConnectionStatus}
+
+pub using @e12028ca58728680 {type RemoteDesktopInfo_808c63bedbb2 as RemoteDesktopInfo}
+
+pub using @e12028ca58728680 {type RemoteDesktopLocalAction_dc35ba0d0afe as RemoteDesktopLocalAction}
+
+pub using @e12028ca58728680 {type RemoteDesktopRegistrar_e768bdeeaff2 as RemoteDesktopRegistrar}
+
+// Traits
+

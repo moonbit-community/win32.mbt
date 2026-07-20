@@ -1,0 +1,114 @@
+// Generated using `moon info`, DON'T EDIT IT
+package "moonbit-community/win32-bindings/scc/2341ecff97fb21fa"
+
+import {
+  "moonbit-community/win32-bindings/runtime/core",
+  "moonbitlang/core/debug",
+}
+
+// Values
+pub fn allow_set_foreground_access_3d4b90cdcd12(@core.RawAddress, UInt) -> Unit raise @core.WindowsError
+
+pub fn allow_set_foreground_access_3d4b90cdcd12_raw(@core.RawAddress, UInt) -> Int
+
+pub fn create_app_container_profile_70a00c9c5b66(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, UInt, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn create_app_container_profile_70a00c9c5b66_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, UInt, @core.RawAddress) -> Int
+
+pub fn delete_app_container_profile_06f8570fcfcf(@core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn delete_app_container_profile_06f8570fcfcf_raw(@core.RawAddress) -> Int
+
+pub fn derive_app_container_sid_from_app_container_name_e2cde68f05d8(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn derive_app_container_sid_from_app_container_name_e2cde68f05d8_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn derive_restricted_app_container_sid_from_app_container_sid_and_restricted_name_49a2de1aaf20(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn derive_restricted_app_container_sid_from_app_container_sid_and_restricted_name_49a2de1aaf20_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn get_app_container_folder_path_85433738e037(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn get_app_container_folder_path_85433738e037_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn get_app_container_named_object_path_69f08ed8585f_raw(@core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn get_app_container_registry_location_3ea3c0a21b37(UInt, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn get_app_container_registry_location_3ea3c0a21b37_raw(UInt, @core.RawAddress) -> Int
+
+pub fn get_container_guid_e29e2534d3c0(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn get_container_guid_e29e2534d3c0_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn is_container_running_3b89a9f196c9(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn is_container_running_3b89a9f196c9_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn is_cross_isolated_environment_clipboard_content_3f0d29b417da(@core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn is_cross_isolated_environment_clipboard_content_3f0d29b417da_raw(@core.RawAddress) -> Int
+
+pub fn is_process_in_isolated_container_ca1081577aaf(@core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn is_process_in_isolated_container_ca1081577aaf_raw(@core.RawAddress) -> Int
+
+pub fn is_process_in_isolated_windows_environment_a146438579f2(@core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn is_process_in_isolated_windows_environment_a146438579f2_raw(@core.RawAddress) -> Int
+
+pub fn is_process_in_wdag_container_cef1313e2a23(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn is_process_in_wdag_container_cef1313e2a23_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub let isolated_app_launcher_a93ea8964f91_alignment : Int
+
+pub let isolated_app_launcher_a93ea8964f91_size : Int
+
+pub let isolated_app_launcher_telemetry_parameters_843857a02d9a_alignment : Int
+
+pub let isolated_app_launcher_telemetry_parameters_843857a02d9a_size : Int
+
+pub fn launch_985ddea716c7(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn launch_985ddea716c7_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn launch_process2_ddc08cae560f(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn launch_process2_ddc08cae560f_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn launch_process_a571fcfd9f02(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn launch_process_a571fcfd9f02_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn share_directory_0a74f69e8548(@core.RawAddress, @core.RawAddress, @core.RawAddress, Int) -> Unit raise @core.WindowsError
+
+pub fn share_directory_0a74f69e8548_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, Int) -> Int
+
+pub let wdag_clipboard_tag_034369a82086 : String
+
+// Errors
+
+// Types and methods
+pub type IIsolatedAppLauncher_75ce1cd48d4e
+
+pub type IIsolatedProcessLauncher2_5a543c2985a4
+
+pub type IIsolatedProcessLauncher_b1ab46205d28
+
+pub(all) struct IsolatedAppLauncherTelemetryParameters_843857a02d9a {
+  raw_bytes : Bytes
+} derive(Eq, @debug.Debug)
+pub fn IsolatedAppLauncherTelemetryParameters_843857a02d9a::bytes(Self) -> Bytes
+pub fn IsolatedAppLauncherTelemetryParameters_843857a02d9a::from_bytes(Bytes) -> Self raise @core.WindowsError
+
+pub(all) struct IsolatedAppLauncher_a93ea8964f91 {
+  raw_bytes : Bytes
+} derive(Eq, @debug.Debug)
+pub fn IsolatedAppLauncher_a93ea8964f91::bytes(Self) -> Bytes
+pub fn IsolatedAppLauncher_a93ea8964f91::from_bytes(Bytes) -> Self raise @core.WindowsError
+
+// Type aliases
+
+// Traits
+

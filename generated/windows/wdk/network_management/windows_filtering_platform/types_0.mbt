@@ -1,0 +1,3 @@
+///|
+/// Stable facade for Windows.Wdk.NetworkManagement.WindowsFilteringPlatform.FWPMSERVICESTATECHANGECALLBACK0.
+pub type FWPMSERVICESTATECHANGECALLBACK0 = @owner.FWPMSERVICESTATECHANGECALLBACK0_983f67b6ab54

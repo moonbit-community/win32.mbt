@@ -1,0 +1,130 @@
+// Generated using `moon info`, DON'T EDIT IT
+package "moonbit-community/win32-bindings/scc/284233aa2f9f942a"
+
+import {
+  "moonbit-community/win32-bindings/runtime/core",
+  "moonbitlang/core/debug",
+}
+
+// Values
+pub let accessibility_setting_7297fc35c7fd : UInt
+
+pub let application_install_afb6eb19e5a0 : UInt
+
+pub let application_run_75ebf029c776 : UInt
+
+pub let application_uninstall_a945d3701283 : UInt
+
+pub let backup_802c8aff6778 : UInt
+
+pub let backup_recovery_7391c0d3764b : UInt
+
+pub let begin_nested_system_change_d640eabd88fa : UInt
+
+pub let begin_nested_system_change_norp_bf8619f3dff0 : UInt
+
+pub let begin_system_change_e4c0e241d199 : UInt
+
+pub let cancelled_operation_8feb930769dc : UInt
+
+pub let checkpoint_39e32a06765e : UInt
+
+pub let critical_update_664ebcc1f837 : UInt
+
+pub let desktop_setting_7ee0e1f77a29 : UInt
+
+pub let device_driver_install_3005a6181986 : UInt
+
+pub let end_nested_system_change_842db96e3ca7 : UInt
+
+pub let end_system_change_e12b1e788c1f : UInt
+
+pub let firstrun_b3480e51a0a3 : UInt
+
+pub let manual_checkpoint_cd605fa003e3 : UInt
+
+pub let max_desc_90f4e4c73678 : UInt
+
+pub let max_desc_w_10d0c2857eb9 : UInt
+
+pub let max_event_56aef247e2d5 : UInt
+
+pub let max_rpt_59f67c91a52f : UInt
+
+pub let min_event_88e7e6c2b4e2 : UInt
+
+pub let min_rpt_e84b8acb312f : UInt
+
+pub let modify_settings_32f2cc388cba : UInt
+
+pub let oe_setting_6ca5d972fb3e : UInt
+
+pub let restore_ec5c46d39c6b : UInt
+
+pub let restorepointinfoa_31fb940cb3e4_alignment : Int
+
+pub let restorepointinfoa_31fb940cb3e4_size : Int
+
+pub let restorepointinfoex_9a27fb9ff652_alignment : Int
+
+pub let restorepointinfoex_9a27fb9ff652_size : Int
+
+pub let restorepointinfow_afaca3ddfa5a_alignment : Int
+
+pub let restorepointinfow_afaca3ddfa5a_size : Int
+
+pub fn sr_remove_restore_point_80c6f8133548_raw(UInt) -> UInt
+
+pub fn sr_set_restore_point_a_67e6af798328_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn sr_set_restore_point_w_b6bdb2b9382c_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub let statemgrstatus_27cafb665fe6_alignment : Int
+
+pub let statemgrstatus_27cafb665fe6_size : Int
+
+pub let windows_boot_444cda417d0a : UInt
+
+pub let windows_shutdown_17db561bb1d9 : UInt
+
+pub let windows_update_e5dd9d4cb84c : UInt
+
+// Errors
+
+// Types and methods
+pub(all) struct RESTOREPOINTINFOA_31fb940cb3e4 {
+  raw_bytes : Bytes
+} derive(Eq, @debug.Debug)
+pub fn RESTOREPOINTINFOA_31fb940cb3e4::bytes(Self) -> Bytes
+pub fn RESTOREPOINTINFOA_31fb940cb3e4::from_bytes(Bytes) -> Self raise @core.WindowsError
+
+pub(all) struct RESTOREPOINTINFOEVENTTYPE_eac5673d8082(Int) derive(Compare, Eq, @debug.Debug)
+pub fn RESTOREPOINTINFOEVENTTYPE_eac5673d8082::from_int(Int) -> Self
+pub fn RESTOREPOINTINFOEVENTTYPE_eac5673d8082::to_int(Self) -> Int
+
+pub(all) struct RESTOREPOINTINFOEX_9a27fb9ff652 {
+  raw_bytes : Bytes
+} derive(Eq, @debug.Debug)
+pub fn RESTOREPOINTINFOEX_9a27fb9ff652::bytes(Self) -> Bytes
+pub fn RESTOREPOINTINFOEX_9a27fb9ff652::from_bytes(Bytes) -> Self raise @core.WindowsError
+
+pub(all) struct RESTOREPOINTINFOTYPE_fddaa681f125(Int) derive(Compare, Eq, @debug.Debug)
+pub fn RESTOREPOINTINFOTYPE_fddaa681f125::from_int(Int) -> Self
+pub fn RESTOREPOINTINFOTYPE_fddaa681f125::to_int(Self) -> Int
+
+pub(all) struct RESTOREPOINTINFOW_afaca3ddfa5a {
+  raw_bytes : Bytes
+} derive(Eq, @debug.Debug)
+pub fn RESTOREPOINTINFOW_afaca3ddfa5a::bytes(Self) -> Bytes
+pub fn RESTOREPOINTINFOW_afaca3ddfa5a::from_bytes(Bytes) -> Self raise @core.WindowsError
+
+pub(all) struct STATEMGRSTATUS_27cafb665fe6 {
+  raw_bytes : Bytes
+} derive(Eq, @debug.Debug)
+pub fn STATEMGRSTATUS_27cafb665fe6::bytes(Self) -> Bytes
+pub fn STATEMGRSTATUS_27cafb665fe6::from_bytes(Bytes) -> Self raise @core.WindowsError
+
+// Type aliases
+
+// Traits
+

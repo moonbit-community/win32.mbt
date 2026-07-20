@@ -1,0 +1,96 @@
+// Generated using `moon info`, DON'T EDIT IT
+package "moonbit-community/win32-bindings/scc/536d3e401e15288a"
+
+import {
+  "moonbit-community/win32-bindings/runtime/core",
+  "moonbitlang/core/debug",
+}
+
+// Values
+pub let cancel_request_fa08a30d0478 : Int
+
+pub fn dav_add_connection_36709a5c1fef_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, UInt) -> UInt
+
+pub let dav_authn_scheme_basic_537fc01af347 : UInt
+
+pub let dav_authn_scheme_cert_885d67e340c9 : UInt
+
+pub let dav_authn_scheme_digest_279b284f13b1 : UInt
+
+pub let dav_authn_scheme_fba_54a807cf842a : UInt
+
+pub let dav_authn_scheme_negotiate_72c805a582ff : UInt
+
+pub let dav_authn_scheme_ntlm_183ee2dfbfba : UInt
+
+pub let dav_authn_scheme_passport_119650232bc4 : UInt
+
+pub fn dav_cancel_connections_to_server_7cfd78d71ab2_raw(@core.RawAddress, Int) -> UInt
+
+pub fn dav_delete_connection_adb63b8f6b76_raw(@core.RawAddress) -> UInt
+
+pub fn dav_flush_file_fbac6c3264ff_raw(@core.RawAddress) -> UInt
+
+pub fn dav_get_extended_error_b8c0151e3a4f_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn dav_get_http_from_unc_path_9ab539864ef1_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn dav_get_the_lock_owner_of_the_file_5153e8d57a7c_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn dav_get_unc_from_http_path_85a449d056e2_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn dav_invalidate_cache_11eefe824057_raw(@core.RawAddress) -> UInt
+
+pub fn dav_register_auth_callback_d8cd5491e56f_raw(@core.RawAddress, UInt) -> UInt
+
+pub fn dav_unregister_auth_callback_cf2292d03083_raw(UInt) -> Unit
+
+pub let davcallbackauthblob_9d7dbda7cae9_alignment : Int
+
+pub let davcallbackauthblob_9d7dbda7cae9_size : Int
+
+pub let davcallbackauthunp_f5f706390f94_alignment : Int
+
+pub let davcallbackauthunp_f5f706390f94_size : Int
+
+pub let davcallbackcred_c7b16504992e_alignment : Int
+
+pub let davcallbackcred_c7b16504992e_size : Int
+
+pub let default_behavior_50c3854fc618 : Int
+
+pub let retry_request_0291723ca56b : Int
+
+// Errors
+
+// Types and methods
+pub(all) struct AUTHNEXTSTEP_22033f8a0716(Int) derive(Compare, Eq, @debug.Debug)
+pub fn AUTHNEXTSTEP_22033f8a0716::from_int(Int) -> Self
+pub fn AUTHNEXTSTEP_22033f8a0716::to_int(Self) -> Int
+
+pub(all) struct DAVCALLBACKAUTHBLOB_9d7dbda7cae9 {
+  raw_bytes : Bytes
+} derive(Eq, @debug.Debug)
+pub fn DAVCALLBACKAUTHBLOB_9d7dbda7cae9::bytes(Self) -> Bytes
+pub fn DAVCALLBACKAUTHBLOB_9d7dbda7cae9::from_bytes(Bytes) -> Self raise @core.WindowsError
+
+pub(all) struct DAVCALLBACKAUTHUNP_f5f706390f94 {
+  raw_bytes : Bytes
+} derive(Eq, @debug.Debug)
+pub fn DAVCALLBACKAUTHUNP_f5f706390f94::bytes(Self) -> Bytes
+pub fn DAVCALLBACKAUTHUNP_f5f706390f94::from_bytes(Bytes) -> Self raise @core.WindowsError
+
+pub(all) struct DAVCALLBACKCRED_c7b16504992e {
+  raw_bytes : Bytes
+} derive(Eq, @debug.Debug)
+pub fn DAVCALLBACKCRED_c7b16504992e::bytes(Self) -> Bytes
+pub fn DAVCALLBACKCRED_c7b16504992e::from_bytes(Bytes) -> Self raise @core.WindowsError
+
+pub type PFNDAVAUTHCALLBACKFREECRED_aefe0ecf5dae
+
+pub type PFNDAVAUTHCALLBACK_8d921ffac41e
+
+// Type aliases
+
+// Traits
+

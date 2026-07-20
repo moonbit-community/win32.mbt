@@ -1,0 +1,13 @@
+import {
+  "moonbit-community/win32-bindings/runtime/core" @win32_core,
+  "moonbit-community/win32-bindings/runtime/strings" @win32_strings,
+  "moonbit-community/win32-bindings/runtime/com" @win32_com,
+  "moonbit-community/win32-bindings/runtime/winrt" @win32_winrt,
+}
+
+supported_targets = "native"
+
+options(
+  "native-stub": [ "ffi_0.c" ],
+  targets: { "ffi_0.mbt": [ "native" ] },
+)

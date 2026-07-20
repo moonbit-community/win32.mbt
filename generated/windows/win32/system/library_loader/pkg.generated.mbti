@@ -1,0 +1,194 @@
+// Generated using `moon info`, DON'T EDIT IT
+package "moonbit-community/win32-bindings/windows/win32/system/library_loader"
+
+import {
+  "moonbit-community/win32-bindings/runtime/core",
+  "moonbit-community/win32-bindings/scc/4f0897729916e79f",
+}
+
+// Values
+pub fn add_dll_directory_raw(@core.RawAddress) -> @core.RawWin32Call[@core.RawAddress]
+
+pub fn begin_update_resource_a_raw(@core.RawAddress, Int) -> @core.RawWin32Call[@core.RawAddress]
+
+pub fn begin_update_resource_w_raw(@core.RawAddress, Int) -> @core.RawWin32Call[@core.RawAddress]
+
+pub let current_import_redirection_version : UInt
+
+pub fn disable_thread_library_calls_raw(@core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub let dont_resolve_dll_references : UInt
+
+pub fn end_update_resource_a_raw(@core.RawAddress, Int) -> @core.RawWin32Call[Int]
+
+pub fn end_update_resource_w_raw(@core.RawAddress, Int) -> @core.RawWin32Call[Int]
+
+pub fn enum_resource_languages_a_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, Int64) -> @core.RawWin32Call[Int]
+
+pub fn enum_resource_languages_ex_a_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, Int64, UInt, UInt) -> @core.RawWin32Call[Int]
+
+pub fn enum_resource_languages_ex_w_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, Int64, UInt, UInt) -> @core.RawWin32Call[Int]
+
+pub fn enum_resource_languages_w_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, Int64) -> @core.RawWin32Call[Int]
+
+pub fn enum_resource_names_a_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, Int64) -> @core.RawWin32Call[Int]
+
+pub fn enum_resource_names_ex_a_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, Int64, UInt, UInt) -> @core.RawWin32Call[Int]
+
+pub fn enum_resource_names_ex_w_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, Int64, UInt, UInt) -> @core.RawWin32Call[Int]
+
+pub fn enum_resource_names_w_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, Int64) -> Int
+
+pub fn enum_resource_types_a_raw(@core.RawAddress, @core.RawAddress, Int64) -> @core.RawWin32Call[Int]
+
+pub fn enum_resource_types_ex_a_raw(@core.RawAddress, @core.RawAddress, Int64, UInt, UInt) -> @core.RawWin32Call[Int]
+
+pub fn enum_resource_types_ex_w_raw(@core.RawAddress, @core.RawAddress, Int64, UInt, UInt) -> @core.RawWin32Call[Int]
+
+pub fn enum_resource_types_w_raw(@core.RawAddress, @core.RawAddress, Int64) -> @core.RawWin32Call[Int]
+
+pub fn find_resource_a_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[@core.RawAddress]
+
+pub let find_resource_directory_languages : UInt
+
+pub let find_resource_directory_names : UInt
+
+pub let find_resource_directory_types : UInt
+
+pub fn find_resource_ex_a_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, UInt) -> @core.RawWin32Call[@core.RawAddress]
+
+pub fn find_resource_ex_w_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, UInt) -> @core.RawAddress
+
+pub fn find_resource_w_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> @core.RawAddress
+
+pub fn free_library_and_exit_thread_raw(@core.RawAddress, UInt) -> Unit
+
+pub fn free_resource_raw(@core.RawAddress) -> Int
+
+pub fn get_dll_directory_a_raw(UInt, @core.RawAddress) -> @core.RawWin32Call[UInt]
+
+pub fn get_dll_directory_w_raw(UInt, @core.RawAddress) -> @core.RawWin32Call[UInt]
+
+pub fn get_module_file_name_a_raw(@core.RawAddress, @core.RawAddress, UInt) -> @core.RawWin32Call[UInt]
+
+pub fn get_module_file_name_w_raw(@core.RawAddress, @core.RawAddress, UInt) -> @core.RawWin32Call[UInt]
+
+pub fn get_module_handle_a_raw(@core.RawAddress) -> @core.RawWin32Call[@core.RawAddress]
+
+pub fn get_module_handle_ex_a_raw(UInt, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub let get_module_handle_ex_flag_from_address : UInt
+
+pub let get_module_handle_ex_flag_pin : UInt
+
+pub let get_module_handle_ex_flag_unchanged_refcount : UInt
+
+pub fn get_module_handle_ex_w_raw(UInt, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn get_module_handle_w_raw(@core.RawAddress) -> @core.RawWin32Call[@core.RawAddress]
+
+pub fn get_proc_address_raw(@core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[@core.RawAddress]
+
+pub let load_ignore_code_authz_level : UInt
+
+pub fn load_library_a_raw(@core.RawAddress) -> @core.RawWin32Call[@core.RawAddress]
+
+pub let load_library_as_datafile : UInt
+
+pub let load_library_as_datafile_exclusive : UInt
+
+pub let load_library_as_image_resource : UInt
+
+pub fn load_library_ex_a_raw(@core.RawAddress, @core.RawAddress, UInt) -> @core.RawWin32Call[@core.RawAddress]
+
+pub fn load_library_ex_w_raw(@core.RawAddress, @core.RawAddress, UInt) -> @core.RawWin32Call[@core.RawAddress]
+
+pub let load_library_os_integrity_continuity : UInt
+
+pub let load_library_require_signed_target : UInt
+
+pub let load_library_safe_current_dirs : UInt
+
+pub let load_library_search_application_dir : UInt
+
+pub let load_library_search_default_dirs : UInt
+
+pub let load_library_search_dll_load_dir : UInt
+
+pub let load_library_search_system32 : UInt
+
+pub let load_library_search_system32_no_forwarder : UInt
+
+pub let load_library_search_user_dirs : UInt
+
+pub fn load_library_w_raw(@core.RawAddress) -> @core.RawWin32Call[@core.RawAddress]
+
+pub fn load_module_raw(@core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn load_packaged_library_raw(@core.RawAddress, UInt) -> @core.RawWin32Call[@core.RawAddress]
+
+pub fn load_resource_raw(@core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[@core.RawAddress]
+
+pub let load_with_altered_search_path : UInt
+
+pub fn lock_resource_raw(@core.RawAddress) -> @core.RawAddress
+
+pub fn query_optional_delay_loaded_api_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, UInt) -> @core.RawWin32Call[Int]
+
+pub fn remove_dll_directory_raw(@core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub let resource_enum_ln : UInt
+
+pub let resource_enum_module_exact : UInt
+
+pub let resource_enum_mui : UInt
+
+pub let resource_enum_mui_system : UInt
+
+pub let resource_enum_validate : UInt
+
+pub fn set_default_dll_directories_raw(UInt) -> @core.RawWin32Call[Int]
+
+pub fn set_dll_directory_a_raw(@core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn set_dll_directory_w_raw(@core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn sizeof_resource_raw(@core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[UInt]
+
+pub let support_lang_number : UInt
+
+pub fn update_resource_a_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, UInt) -> @core.RawWin32Call[Int]
+
+pub fn update_resource_w_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, UInt) -> @core.RawWin32Call[Int]
+
+// Errors
+
+// Types and methods
+
+// Type aliases
+pub using @4f0897729916e79f {type ENUMRESLANGPROCA_146444d2920f as ENUMRESLANGPROCA}
+
+pub using @4f0897729916e79f {type ENUMRESLANGPROCW_d4716e73b6d9 as ENUMRESLANGPROCW}
+
+pub using @4f0897729916e79f {type ENUMRESNAMEPROCA_c7a0eca6f044 as ENUMRESNAMEPROCA}
+
+pub using @4f0897729916e79f {type ENUMRESNAMEPROCW_2a87e9416f1c as ENUMRESNAMEPROCW}
+
+pub using @4f0897729916e79f {type ENUMRESTYPEPROCA_9586d26b202b as ENUMRESTYPEPROCA}
+
+pub using @4f0897729916e79f {type ENUMRESTYPEPROCW_4df5178b4fa3 as ENUMRESTYPEPROCW}
+
+pub using @4f0897729916e79f {type ENUMUILANG_797ad1b01b59 as ENUMUILANG}
+
+pub using @4f0897729916e79f {type LOADLIBRARYFLAGS_f0ffc72db60b as LOADLIBRARYFLAGS}
+
+pub using @4f0897729916e79f {type PGETMODULEHANDLEEXA_b8df695c5aac as PGETMODULEHANDLEEXA}
+
+pub using @4f0897729916e79f {type PGETMODULEHANDLEEXW_4d2419d34299 as PGETMODULEHANDLEEXW}
+
+pub using @4f0897729916e79f {type REDIRECTIONDESCRIPTOR_ab85cb5a0fd6 as REDIRECTIONDESCRIPTOR}
+
+pub using @4f0897729916e79f {type REDIRECTIONFUNCTIONDESCRIPTOR_62da8657cfbc as REDIRECTIONFUNCTIONDESCRIPTOR}
+
+// Traits
+

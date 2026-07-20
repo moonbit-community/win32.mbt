@@ -1,0 +1,274 @@
+// Generated using `moon info`, DON'T EDIT IT
+package "moonbit-community/win32-bindings/scc/de281e6dff802a26"
+
+import {
+  "moonbit-community/win32-bindings/runtime/core",
+  "moonbitlang/core/debug",
+}
+
+// Values
+pub let component_type_enforcement_client_rp_68ccdaf5078e : UInt
+
+pub let component_type_enforcement_client_so_h_e67b72d07791 : UInt
+
+pub let correlation_id_c517dfd228c9_alignment : Int
+
+pub let correlation_id_c517dfd228c9_size : Int
+
+pub let counted_string_a3fddf390845_alignment : Int
+
+pub let counted_string_a3fddf390845_size : Int
+
+pub let extended_isolation_state_infected_41f59ed6ddca : Int
+
+pub let extended_isolation_state_no_data_66508a44a003 : Int
+
+pub let extended_isolation_state_transition_966a967be47d : Int
+
+pub let extended_isolation_state_unknown_aa8900edc331 : Int
+
+pub let failure_category_client_communication_c142939dd281 : Int
+
+pub let failure_category_client_component_906d32b4d2cc : Int
+
+pub let failure_category_count_c1c1ad7c7a5b : UInt
+
+pub let failure_category_mapping_482bd09aec28_alignment : Int
+
+pub let failure_category_mapping_482bd09aec28_size : Int
+
+pub let failure_category_none_b03e81b8ec80 : Int
+
+pub let failure_category_other_8367273a01d7 : Int
+
+pub let failure_category_server_communication_1eaa2a957555 : Int
+
+pub let failure_category_server_component_07ebe9340f43 : Int
+
+pub let fixup_info_7416814450fe_alignment : Int
+
+pub let fixup_info_7416814450fe_size : Int
+
+pub let fixup_state_could_not_update_b9986806fc26 : Int
+
+pub let fixup_state_in_progress_70b52d00e0e3 : Int
+
+pub let fixup_state_success_c2babaec2279 : Int
+
+pub let fresh_so_h_request_91ffb3737091 : UInt
+
+pub let ipv4_address_871602ade59e_alignment : Int
+
+pub let ipv4_address_871602ade59e_size : Int
+
+pub let ipv6_address_bfa0968a5c82_alignment : Int
+
+pub let ipv6_address_bfa0968a5c82_size : Int
+
+pub let isolation_info_666fa905c906_alignment : Int
+
+pub let isolation_info_666fa905c906_size : Int
+
+pub let isolation_info_ex_aafbdc9a6008_alignment : Int
+
+pub let isolation_info_ex_aafbdc9a6008_size : Int
+
+pub let isolation_state_in_probation_ef4fdb9f408e : Int
+
+pub let isolation_state_not_restricted_081452f43b5b : Int
+
+pub let isolation_state_restricted_access_3eeb0d40291a : Int
+
+pub let max_connection_count_per_enforcer_81bd2d7f5186 : UInt
+
+pub let max_enforcer_count_b2a933159089 : UInt
+
+pub let max_network_so_h_size_f193e237f1cc : UInt
+
+pub let max_private_data_size_a317e4423bf8 : UInt
+
+pub let max_so_h_attribute_count_8df96aaec60e : UInt
+
+pub let max_so_h_attribute_size_efd05b0f6d05 : UInt
+
+pub let max_string_length_f1e8f73b759f : UInt
+
+pub let max_system_health_entity_count_7dc56617b708 : UInt
+
+pub let min_network_so_h_size_df7d1c7b217c : UInt
+
+pub let nap_component_registration_info_4d53d8332772_alignment : Int
+
+pub let nap_component_registration_info_4d53d8332772_size : Int
+
+pub let nap_notify_type_quar_state_a564fd112430 : Int
+
+pub let nap_notify_type_service_state_c244778e844f : Int
+
+pub let nap_notify_type_unknown_3b89b4653a74 : Int
+
+pub let network_so_h_fae2d30d68d0_alignment : Int
+
+pub let network_so_h_fae2d30d68d0_size : Int
+
+pub let percentage_not_supported_a193a89696d5 : UInt
+
+pub let private_data_6ed85f9b6836_alignment : Int
+
+pub let private_data_6ed85f9b6836_size : Int
+
+pub let remote_config_type_config_blob_2c170024d536 : Int
+
+pub let remote_config_type_machine_deff1cda0c73 : Int
+
+pub let result_codes_3b6cb6f6f262_alignment : Int
+
+pub let result_codes_3b6cb6f6f262_size : Int
+
+pub let sha_fixup_c55afcf98ec1 : UInt
+
+pub let so_h_2792d65f396e_alignment : Int
+
+pub let so_h_2792d65f396e_size : Int
+
+pub let so_h_attribute_94343e45efde_alignment : Int
+
+pub let so_h_attribute_94343e45efde_size : Int
+
+pub let system_health_agent_state_9aae4e06865d_alignment : Int
+
+pub let system_health_agent_state_9aae4e06865d_size : Int
+
+pub let tracing_level_advanced_9453714567dd : Int
+
+pub let tracing_level_basic_f999ba8375e0 : Int
+
+pub let tracing_level_debug_977a9f562c60 : Int
+
+pub let tracing_level_undefined_0087b67639bb : Int
+
+// Errors
+
+// Types and methods
+pub(all) struct CorrelationId_c517dfd228c9 {
+  raw_bytes : Bytes
+} derive(Eq, @debug.Debug)
+pub fn CorrelationId_c517dfd228c9::bytes(Self) -> Bytes
+pub fn CorrelationId_c517dfd228c9::from_bytes(Bytes) -> Self raise @core.WindowsError
+
+pub(all) struct CountedString_a3fddf390845 {
+  raw_bytes : Bytes
+} derive(Eq, @debug.Debug)
+pub fn CountedString_a3fddf390845::bytes(Self) -> Bytes
+pub fn CountedString_a3fddf390845::from_bytes(Bytes) -> Self raise @core.WindowsError
+
+pub(all) struct ExtendedIsolationState_c83b854b8602(Int) derive(Compare, Eq, @debug.Debug)
+pub fn ExtendedIsolationState_c83b854b8602::from_int(Int) -> Self
+pub fn ExtendedIsolationState_c83b854b8602::to_int(Self) -> Int
+
+pub(all) struct FailureCategoryMapping_482bd09aec28 {
+  raw_bytes : Bytes
+} derive(Eq, @debug.Debug)
+pub fn FailureCategoryMapping_482bd09aec28::bytes(Self) -> Bytes
+pub fn FailureCategoryMapping_482bd09aec28::from_bytes(Bytes) -> Self raise @core.WindowsError
+
+pub(all) struct FailureCategory_4be3da820cb5(Int) derive(Compare, Eq, @debug.Debug)
+pub fn FailureCategory_4be3da820cb5::from_int(Int) -> Self
+pub fn FailureCategory_4be3da820cb5::to_int(Self) -> Int
+
+pub(all) struct FixupInfo_7416814450fe {
+  raw_bytes : Bytes
+} derive(Eq, @debug.Debug)
+pub fn FixupInfo_7416814450fe::bytes(Self) -> Bytes
+pub fn FixupInfo_7416814450fe::from_bytes(Bytes) -> Self raise @core.WindowsError
+
+pub(all) struct FixupState_6cbd9e254208(Int) derive(Compare, Eq, @debug.Debug)
+pub fn FixupState_6cbd9e254208::from_int(Int) -> Self
+pub fn FixupState_6cbd9e254208::to_int(Self) -> Int
+
+pub(all) struct Ipv4Address_871602ade59e {
+  raw_bytes : Bytes
+} derive(Eq, @debug.Debug)
+pub fn Ipv4Address_871602ade59e::bytes(Self) -> Bytes
+pub fn Ipv4Address_871602ade59e::from_bytes(Bytes) -> Self raise @core.WindowsError
+
+pub(all) struct Ipv6Address_bfa0968a5c82 {
+  raw_bytes : Bytes
+} derive(Eq, @debug.Debug)
+pub fn Ipv6Address_bfa0968a5c82::bytes(Self) -> Bytes
+pub fn Ipv6Address_bfa0968a5c82::from_bytes(Bytes) -> Self raise @core.WindowsError
+
+pub(all) struct IsolationInfoEx_aafbdc9a6008 {
+  raw_bytes : Bytes
+} derive(Eq, @debug.Debug)
+pub fn IsolationInfoEx_aafbdc9a6008::bytes(Self) -> Bytes
+pub fn IsolationInfoEx_aafbdc9a6008::from_bytes(Bytes) -> Self raise @core.WindowsError
+
+pub(all) struct IsolationInfo_666fa905c906 {
+  raw_bytes : Bytes
+} derive(Eq, @debug.Debug)
+pub fn IsolationInfo_666fa905c906::bytes(Self) -> Bytes
+pub fn IsolationInfo_666fa905c906::from_bytes(Bytes) -> Self raise @core.WindowsError
+
+pub(all) struct IsolationState_faf4d252efec(Int) derive(Compare, Eq, @debug.Debug)
+pub fn IsolationState_faf4d252efec::from_int(Int) -> Self
+pub fn IsolationState_faf4d252efec::to_int(Self) -> Int
+
+pub(all) struct NapComponentRegistrationInfo_4d53d8332772 {
+  raw_bytes : Bytes
+} derive(Eq, @debug.Debug)
+pub fn NapComponentRegistrationInfo_4d53d8332772::bytes(Self) -> Bytes
+pub fn NapComponentRegistrationInfo_4d53d8332772::from_bytes(Bytes) -> Self raise @core.WindowsError
+
+pub(all) struct NapNotifyType_186897cb0105(Int) derive(Compare, Eq, @debug.Debug)
+pub fn NapNotifyType_186897cb0105::from_int(Int) -> Self
+pub fn NapNotifyType_186897cb0105::to_int(Self) -> Int
+
+pub(all) struct NapTracingLevel_760756841554(Int) derive(Compare, Eq, @debug.Debug)
+pub fn NapTracingLevel_760756841554::from_int(Int) -> Self
+pub fn NapTracingLevel_760756841554::to_int(Self) -> Int
+
+pub(all) struct NetworkSoH_fae2d30d68d0 {
+  raw_bytes : Bytes
+} derive(Eq, @debug.Debug)
+pub fn NetworkSoH_fae2d30d68d0::bytes(Self) -> Bytes
+pub fn NetworkSoH_fae2d30d68d0::from_bytes(Bytes) -> Self raise @core.WindowsError
+
+pub(all) struct PrivateData_6ed85f9b6836 {
+  raw_bytes : Bytes
+} derive(Eq, @debug.Debug)
+pub fn PrivateData_6ed85f9b6836::bytes(Self) -> Bytes
+pub fn PrivateData_6ed85f9b6836::from_bytes(Bytes) -> Self raise @core.WindowsError
+
+pub(all) struct RemoteConfigurationType_99206801d88a(Int) derive(Compare, Eq, @debug.Debug)
+pub fn RemoteConfigurationType_99206801d88a::from_int(Int) -> Self
+pub fn RemoteConfigurationType_99206801d88a::to_int(Self) -> Int
+
+pub(all) struct ResultCodes_3b6cb6f6f262 {
+  raw_bytes : Bytes
+} derive(Eq, @debug.Debug)
+pub fn ResultCodes_3b6cb6f6f262::bytes(Self) -> Bytes
+pub fn ResultCodes_3b6cb6f6f262::from_bytes(Bytes) -> Self raise @core.WindowsError
+
+pub(all) struct SoHAttribute_94343e45efde {
+  raw_bytes : Bytes
+} derive(Eq, @debug.Debug)
+pub fn SoHAttribute_94343e45efde::bytes(Self) -> Bytes
+pub fn SoHAttribute_94343e45efde::from_bytes(Bytes) -> Self raise @core.WindowsError
+
+pub(all) struct SoH_2792d65f396e {
+  raw_bytes : Bytes
+} derive(Eq, @debug.Debug)
+pub fn SoH_2792d65f396e::bytes(Self) -> Bytes
+pub fn SoH_2792d65f396e::from_bytes(Bytes) -> Self raise @core.WindowsError
+
+pub(all) struct SystemHealthAgentState_9aae4e06865d {
+  raw_bytes : Bytes
+} derive(Eq, @debug.Debug)
+pub fn SystemHealthAgentState_9aae4e06865d::bytes(Self) -> Bytes
+pub fn SystemHealthAgentState_9aae4e06865d::from_bytes(Bytes) -> Self raise @core.WindowsError
+
+// Type aliases
+
+// Traits
+

@@ -1,0 +1,75 @@
+// Generated using `moon info`, DON'T EDIT IT
+package "moonbit-community/win32-bindings/runtime/core"
+
+import {
+  "moonbitlang/core/debug",
+}
+
+// Values
+
+// Errors
+pub(all) suberror WindowsError {
+  HResultFailure(HResult)
+  LastErrorFailure(UInt)
+  LoaderFailure(String)
+  MissingEntrypoint(String, String)
+  InvalidArgument(String)
+  NullPointer(String)
+} derive(Eq, @debug.Debug)
+
+// Types and methods
+pub struct AbiArrayBuffer {
+  storage : Bytes
+  element_size_value : Int
+  mut length_value : Int
+}
+pub fn AbiArrayBuffer::bytes(Self) -> Bytes
+pub fn AbiArrayBuffer::capacity(Self) -> Int
+pub fn AbiArrayBuffer::element_size(Self) -> Int
+pub fn AbiArrayBuffer::from_bytes(Bytes, element_size~ : Int, length~ : Int) -> Self raise WindowsError
+pub fn AbiArrayBuffer::length(Self) -> Int
+pub fn AbiArrayBuffer::new(element_size~ : Int, capacity~ : Int) -> Self raise WindowsError
+pub fn AbiArrayBuffer::set_length(Self, Int) -> Unit raise WindowsError
+pub fn AbiArrayBuffer::used_bytes(Self) -> Bytes
+
+pub(all) struct Guid {
+  data1 : UInt
+  data2 : UInt16
+  data3 : UInt16
+  data4 : Bytes
+} derive(Eq, @debug.Debug)
+pub fn Guid::new(data1~ : UInt, data2~ : UInt16, data3~ : UInt16, data4~ : Bytes) -> Self raise WindowsError
+pub fn Guid::to_bytes_le(Self) -> Bytes
+
+pub(all) struct HResult(Int) derive(Compare, Eq, @debug.Debug)
+pub fn HResult::from_int(Int) -> Self
+pub fn HResult::is_err(Self) -> Bool
+pub fn HResult::is_ok(Self) -> Bool
+pub fn HResult::or_raise(Self) -> Unit raise WindowsError
+pub fn HResult::to_int(Self) -> Int
+
+#external
+pub type RawAddress
+pub fn RawAddress::from_uint64(UInt64) -> Self
+pub fn RawAddress::is_null(Self) -> Bool
+pub fn RawAddress::null() -> Self
+pub fn RawAddress::to_uint64(Self) -> UInt64
+pub impl Eq for RawAddress
+
+pub struct RawPtr[T] {
+  address_value : RawAddress
+  marker : T?
+}
+pub fn[T] RawPtr::address(Self[T]) -> RawAddress
+pub fn[T] RawPtr::from_address(RawAddress) -> Self[T]
+
+pub(all) struct RawWin32Call[T] {
+  value : T
+  last_error : UInt
+} derive(Eq, @debug.Debug)
+pub fn[T] RawWin32Call::new(value~ : T, last_error~ : UInt) -> Self[T]
+
+// Type aliases
+
+// Traits
+

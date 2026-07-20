@@ -1,0 +1,92 @@
+// Generated using `moon info`, DON'T EDIT IT
+package "moonbit-community/win32-bindings/windows/win32/system/diagnostics/tool_help"
+
+import {
+  "moonbit-community/win32-bindings/runtime/core",
+  "moonbit-community/win32-bindings/scc/11c55327740db637",
+}
+
+// Values
+pub fn create_toolhelp32_snapshot_raw(UInt, UInt) -> @core.RawWin32Call[@core.RawAddress]
+
+pub fn heap32_first_raw(@core.RawAddress, UInt, UInt64) -> @core.RawWin32Call[Int]
+
+pub fn heap32_list_first_raw(@core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn heap32_list_next_raw(@core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn heap32_next_raw(@core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub let hf32_default : UInt
+
+pub let hf32_shared : UInt
+
+pub let lf32_fixed : UInt
+
+pub let lf32_free : UInt
+
+pub let lf32_moveable : UInt
+
+pub let max_module_name32 : UInt
+
+pub fn module32_first_raw(@core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn module32_first_w_raw(@core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn module32_next_raw(@core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn module32_next_w_raw(@core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn process32_first_raw(@core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn process32_first_w_raw(@core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn process32_next_raw(@core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn process32_next_w_raw(@core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub let th32_cs_inherit : UInt
+
+pub let th32_cs_snapall : UInt
+
+pub let th32_cs_snapheaplist : UInt
+
+pub let th32_cs_snapmodule : UInt
+
+pub let th32_cs_snapmodule32 : UInt
+
+pub let th32_cs_snapprocess : UInt
+
+pub let th32_cs_snapthread : UInt
+
+pub fn thread32_first_raw(@core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn thread32_next_raw(@core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn toolhelp32_read_process_memory_raw(UInt, @core.RawAddress, @core.RawAddress, UInt64, @core.RawAddress) -> Int
+
+// Errors
+
+// Types and methods
+
+// Type aliases
+pub using @11c55327740db637 {type CREATETOOLHELPSNAPSHOTFLAGS_0bdfc67cf020 as CREATETOOLHELPSNAPSHOTFLAGS}
+
+pub using @11c55327740db637 {type HEAPENTRY32_68951307f825 as HEAPENTRY32}
+
+pub using @11c55327740db637 {type HEAPENTRY32FLAGS_dab1ebdd1bb9 as HEAPENTRY32FLAGS}
+
+pub using @11c55327740db637 {type HEAPLIST32_9d55bde4ae7c as HEAPLIST32}
+
+pub using @11c55327740db637 {type MODULEENTRY32_2d22ddbb0f93 as MODULEENTRY32}
+
+pub using @11c55327740db637 {type MODULEENTRY32W_86f2c8c0374f as MODULEENTRY32W}
+
+pub using @11c55327740db637 {type PROCESSENTRY32_d54e69bf3b81 as PROCESSENTRY32}
+
+pub using @11c55327740db637 {type PROCESSENTRY32W_b24a72ccca2e as PROCESSENTRY32W}
+
+pub using @11c55327740db637 {type THREADENTRY32_6f26e5b243be as THREADENTRY32}
+
+// Traits
+

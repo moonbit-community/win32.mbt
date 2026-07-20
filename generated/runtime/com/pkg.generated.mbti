@@ -1,0 +1,32 @@
+// Generated using `moon info`, DON'T EDIT IT
+package "moonbit-community/win32-bindings/runtime/com"
+
+import {
+  "moonbit-community/win32-bindings/runtime/core",
+}
+
+// Values
+
+// Errors
+
+// Types and methods
+type ComObject
+
+pub struct ComPtr[T] {
+  object : ComObject
+  marker : T?
+}
+pub fn[T] ComPtr::clone(Self[T]) -> Self[T]
+pub fn[T] ComPtr::close(Self[T]) -> Unit
+pub fn[T] ComPtr::from_raw(@core.RawAddress, add_ref? : Bool) -> Self[T] raise @core.WindowsError
+pub fn[T, U] ComPtr::query(Self[T], @core.Guid) -> Self[U] raise @core.WindowsError
+pub fn[T] ComPtr::raw(Self[T]) -> @core.RawAddress
+
+pub type IInspectable
+
+pub type IUnknown
+
+// Type aliases
+
+// Traits
+

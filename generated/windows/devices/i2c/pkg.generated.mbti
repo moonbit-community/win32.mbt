@@ -1,0 +1,144 @@
+// Generated using `moon info`, DON'T EDIT IT
+package "moonbit-community/win32-bindings/windows/devices/i2c"
+
+import {
+  "moonbit-community/win32-bindings/runtime/com",
+  "moonbit-community/win32-bindings/runtime/core",
+  "moonbit-community/win32-bindings/scc/0e9df41df2282864",
+  "moonbitlang/core/ref",
+}
+
+// Values
+pub fn activatable_factory(@core.Guid) -> @com.ComPtr[@com.IInspectable] raise @core.WindowsError
+
+pub let bus_speed_1ea46e5ec9 : String
+
+pub let bus_speed_4268af0f6e : String
+
+pub let clock_stretch_timeout : Int
+
+pub let connection_settings_07e022283b : String
+
+pub let connection_settings_eeb20611de : String
+
+pub fn create_raw(@core.RawAddress, Int, @ref.Ref[UInt64]) -> Int
+
+pub let device_id_40dc370cfa : String
+
+pub let device_id_aa719629a1 : String
+
+pub let exclusive : Int
+
+pub let fast_mode : Int
+
+pub fn from_id_async_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub let full_transfer : Int
+
+pub fn get_bus_speed(@core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn get_bus_speed_raw(@core.RawAddress, @ref.Ref[Int]) -> Int
+
+pub fn get_connection_settings_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_controllers_async_raw(@core.RawAddress, @core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_default_async_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_device_id_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_device_raw(@core.RawAddress, @core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_device_selector_a99b7869d8_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_device_selector_abf519e61f_raw(@core.RawAddress, @core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_sharing_mode(@core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn get_sharing_mode_raw(@core.RawAddress, @ref.Ref[Int]) -> Int
+
+pub fn get_slave_address(@core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn get_slave_address_raw(@core.RawAddress, @ref.Ref[Int]) -> Int
+
+pub let partial_transfer : Int
+
+pub fn put_bus_speed(@core.RawAddress, Int) -> Unit raise @core.WindowsError
+
+pub fn put_bus_speed_raw(@core.RawAddress, Int) -> Int
+
+pub fn put_sharing_mode(@core.RawAddress, Int) -> Unit raise @core.WindowsError
+
+pub fn put_sharing_mode_raw(@core.RawAddress, Int) -> Int
+
+pub fn put_slave_address(@core.RawAddress, Int) -> Unit raise @core.WindowsError
+
+pub fn put_slave_address_raw(@core.RawAddress, Int) -> Int
+
+pub fn read(@core.RawAddress, UInt, Bytes) -> Unit raise @core.WindowsError
+
+pub fn read_partial(@core.RawAddress, UInt, Bytes) -> Bytes raise @core.WindowsError
+
+pub fn read_partial_raw(@core.RawAddress, UInt, Bytes, Bytes) -> Int
+
+pub fn read_raw(@core.RawAddress, UInt, Bytes) -> Int
+
+pub let shared : Int
+
+pub let sharing_mode_98b8f81f48 : String
+
+pub let sharing_mode_aacd349ceb : String
+
+pub let slave_address_71f42218b8 : String
+
+pub let slave_address_bf258159b4 : String
+
+pub let slave_address_not_acknowledged : Int
+
+pub let standard_mode : Int
+
+pub fn static_factory_a46b5f666b(@core.Guid) -> @com.ComPtr[@com.IInspectable] raise @core.WindowsError
+
+pub fn static_factory_d030dd7f28(@core.Guid) -> @com.ComPtr[@com.IInspectable] raise @core.WindowsError
+
+pub let unknown_error : Int
+
+pub fn write(@core.RawAddress, UInt, Bytes) -> Unit raise @core.WindowsError
+
+pub fn write_partial(@core.RawAddress, UInt, Bytes) -> Bytes raise @core.WindowsError
+
+pub fn write_partial_raw(@core.RawAddress, UInt, Bytes, Bytes) -> Int
+
+pub fn write_raw(@core.RawAddress, UInt, Bytes) -> Int
+
+pub fn write_read(@core.RawAddress, UInt, Bytes, UInt, Bytes) -> Unit raise @core.WindowsError
+
+pub fn write_read_partial(@core.RawAddress, UInt, Bytes, UInt, Bytes) -> Bytes raise @core.WindowsError
+
+pub fn write_read_partial_raw(@core.RawAddress, UInt, Bytes, UInt, Bytes, Bytes) -> Int
+
+pub fn write_read_raw(@core.RawAddress, UInt, Bytes, UInt, Bytes) -> Int
+
+// Errors
+
+// Types and methods
+
+// Type aliases
+pub using @0e9df41df2282864 {type I2cBusSpeed_0f0a1270c9b2 as I2cBusSpeed}
+
+pub using @0e9df41df2282864 {type I2cConnectionSettings_de951e83adf7 as I2cConnectionSettings}
+
+pub using @0e9df41df2282864 {type I2cController_a6e44a217e1d as I2cController}
+
+pub using @0e9df41df2282864 {type I2cDevice_613b5c157366 as I2cDevice}
+
+pub using @0e9df41df2282864 {type I2cSharingMode_5c686a7667dd as I2cSharingMode}
+
+pub using @0e9df41df2282864 {type I2cTransferResult_f531ee033623 as I2cTransferResult}
+
+pub using @0e9df41df2282864 {type I2cTransferStatus_312274bf4e5d as I2cTransferStatus}
+
+pub using @0e9df41df2282864 {type II2cDeviceStatics_a36b490d66c8 as II2cDeviceStatics}
+
+// Traits
+

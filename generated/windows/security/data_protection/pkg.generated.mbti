@@ -1,0 +1,100 @@
+// Generated using `moon info`, DON'T EDIT IT
+package "moonbit-community/win32-bindings/windows/security/data_protection"
+
+import {
+  "moonbit-community/win32-bindings/runtime/com",
+  "moonbit-community/win32-bindings/runtime/core",
+  "moonbit-community/win32-bindings/scc/66c7598934c58ff1",
+  "moonbitlang/core/ref",
+}
+
+// Values
+pub fn add_data_availability_state_changed(@core.RawAddress, @core.RawAddress) -> Int64 raise @core.WindowsError
+
+pub fn add_data_availability_state_changed_raw(@core.RawAddress, @core.RawAddress, @ref.Ref[Int64]) -> Int
+
+pub let after_first_unlock : Int
+
+pub let always : Int
+
+pub let availability_17c4b7839b : String
+
+pub let availability_e6a54cc100 : String
+
+pub let data_availability_state_changed_3fa07730c5 : String
+
+pub let data_availability_state_changed_59a7aa178b : String
+
+pub let data_unavailable : Int
+
+pub fn get_availability(@core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn get_availability_raw(@core.RawAddress, @ref.Ref[Int]) -> Int
+
+pub fn get_deferral_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_status(@core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn get_status_raw(@core.RawAddress, @ref.Ref[Int]) -> Int
+
+pub fn get_storage_item_protection_info_async_raw(@core.RawAddress, @core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_unprotected_buffer_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn is_continued_data_availability_expected_raw(@core.RawAddress, Int, Bytes) -> Int
+
+pub let not_protectable : Int
+
+pub fn protect_buffer_async_raw(@core.RawAddress, @core.RawAddress, Int, @ref.Ref[UInt64]) -> Int
+
+pub fn protect_storage_item_async_raw(@core.RawAddress, @core.RawAddress, Int, @ref.Ref[UInt64]) -> Int
+
+pub fn remove_data_availability_state_changed(@core.RawAddress, Int64) -> Unit raise @core.WindowsError
+
+pub fn remove_data_availability_state_changed_raw(@core.RawAddress, Int64) -> Int
+
+pub fn static_factory(@core.Guid) -> @com.ComPtr[@com.IInspectable] raise @core.WindowsError
+
+pub let status_95b6eb53dc : String
+
+pub let status_baeea55ac2 : String
+
+pub let succeeded_1978ff6044 : Int
+
+pub let succeeded_5feb2af9f5 : Int
+
+pub fn try_get_default_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn try_get_for_user_raw(@core.RawAddress, @core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub let unavailable : Int
+
+pub fn unprotect_buffer_async_raw(@core.RawAddress, @core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub let unprotected_buffer_2aefe45d00 : String
+
+pub let unprotected_buffer_372f4c2aac : String
+
+pub let while_unlocked : Int
+
+// Errors
+
+// Types and methods
+
+// Type aliases
+pub using @66c7598934c58ff1 {type UserDataAvailability_86ef24c2c6e1 as UserDataAvailability}
+
+pub using @66c7598934c58ff1 {type UserDataAvailabilityStateChangedEventArgs_e9bc448e5ff9 as UserDataAvailabilityStateChangedEventArgs}
+
+pub using @66c7598934c58ff1 {type UserDataBufferUnprotectResult_a86ef9dac870 as UserDataBufferUnprotectResult}
+
+pub using @66c7598934c58ff1 {type UserDataBufferUnprotectStatus_3f716caedab6 as UserDataBufferUnprotectStatus}
+
+pub using @66c7598934c58ff1 {type UserDataProtectionManager_25f13c91e488 as UserDataProtectionManager}
+
+pub using @66c7598934c58ff1 {type UserDataStorageItemProtectionInfo_9d2eff090706 as UserDataStorageItemProtectionInfo}
+
+pub using @66c7598934c58ff1 {type UserDataStorageItemProtectionStatus_f08b10c2d707 as UserDataStorageItemProtectionStatus}
+
+// Traits
+

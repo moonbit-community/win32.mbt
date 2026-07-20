@@ -1,0 +1,1224 @@
+// Generated using `moon info`, DON'T EDIT IT
+package "moonbit-community/win32-bindings/windows/win32/system/system_information"
+
+import {
+  "moonbit-community/win32-bindings/runtime/core",
+  "moonbit-community/win32-bindings/scc/508e787831cbf13f",
+}
+
+// Values
+pub let acpi : UInt
+
+pub let cache_data : Int
+
+pub let cache_instruction : Int
+
+pub let cache_trace : Int
+
+pub let cache_unified : Int
+
+pub let cache_unknown : Int
+
+pub let computer_name_dns_domain : Int
+
+pub let computer_name_dns_fully_qualified : Int
+
+pub let computer_name_dns_hostname : Int
+
+pub let computer_name_max : Int
+
+pub let computer_name_net_bios : Int
+
+pub let computer_name_physical_dns_domain : Int
+
+pub let computer_name_physical_dns_fully_qualified : Int
+
+pub let computer_name_physical_dns_hostname : Int
+
+pub let computer_name_physical_net_bios : Int
+
+pub let cpu_set_information : Int
+
+pub let dep_policy_always_off : Int
+
+pub let dep_policy_always_on : Int
+
+pub let dep_policy_opt_in : Int
+
+pub let dep_policy_opt_out : Int
+
+pub let dep_total_policy_count : Int
+
+pub let developer_drive_disabled_by_group_policy : Int
+
+pub let developer_drive_disabled_by_system_policy : Int
+
+pub let developer_drive_enabled : Int
+
+pub let developer_drive_enablement_state_error : Int
+
+pub let devicefamilydeviceform_allinone : UInt
+
+pub let devicefamilydeviceform_banking : UInt
+
+pub let devicefamilydeviceform_building_automation : UInt
+
+pub let devicefamilydeviceform_convertible : UInt
+
+pub let devicefamilydeviceform_desktop : UInt
+
+pub let devicefamilydeviceform_detachable : UInt
+
+pub let devicefamilydeviceform_digital_signage : UInt
+
+pub let devicefamilydeviceform_gaming : UInt
+
+pub let devicefamilydeviceform_gaming_console : UInt
+
+pub let devicefamilydeviceform_gaming_handheld : UInt
+
+pub let devicefamilydeviceform_hmd : UInt
+
+pub let devicefamilydeviceform_home_automation : UInt
+
+pub let devicefamilydeviceform_industrial_automation : UInt
+
+pub let devicefamilydeviceform_industry_handheld : UInt
+
+pub let devicefamilydeviceform_industry_other : UInt
+
+pub let devicefamilydeviceform_industry_tablet : UInt
+
+pub let devicefamilydeviceform_kiosk : UInt
+
+pub let devicefamilydeviceform_largescreen : UInt
+
+pub let devicefamilydeviceform_maker_board : UInt
+
+pub let devicefamilydeviceform_max : UInt
+
+pub let devicefamilydeviceform_medical : UInt
+
+pub let devicefamilydeviceform_networking : UInt
+
+pub let devicefamilydeviceform_notebook : UInt
+
+pub let devicefamilydeviceform_phone : UInt
+
+pub let devicefamilydeviceform_point_of_service : UInt
+
+pub let devicefamilydeviceform_printing : UInt
+
+pub let devicefamilydeviceform_puck : UInt
+
+pub let devicefamilydeviceform_stickpc : UInt
+
+pub let devicefamilydeviceform_tablet : UInt
+
+pub let devicefamilydeviceform_thin_client : UInt
+
+pub let devicefamilydeviceform_toy : UInt
+
+pub let devicefamilydeviceform_unknown : UInt
+
+pub let devicefamilydeviceform_vending : UInt
+
+pub let devicefamilydeviceform_xbox_one : UInt
+
+pub let devicefamilydeviceform_xbox_one_s : UInt
+
+pub let devicefamilydeviceform_xbox_one_x : UInt
+
+pub let devicefamilydeviceform_xbox_one_x_devkit : UInt
+
+pub let devicefamilydeviceform_xbox_reserved_01 : UInt
+
+pub let devicefamilydeviceform_xbox_reserved_02 : UInt
+
+pub let devicefamilydeviceform_xbox_reserved_03 : UInt
+
+pub let devicefamilydeviceform_xbox_reserved_04 : UInt
+
+pub let devicefamilydeviceform_xbox_reserved_05 : UInt
+
+pub let devicefamilydeviceform_xbox_reserved_06 : UInt
+
+pub let devicefamilydeviceform_xbox_reserved_07 : UInt
+
+pub let devicefamilydeviceform_xbox_reserved_08 : UInt
+
+pub let devicefamilydeviceform_xbox_reserved_09 : UInt
+
+pub let devicefamilydeviceform_xbox_series_s : UInt
+
+pub let devicefamilydeviceform_xbox_series_x : UInt
+
+pub let devicefamilydeviceform_xbox_series_x_devkit : UInt
+
+pub let devicefamilyinfoenum_7067329 : UInt
+
+pub let devicefamilyinfoenum_8828080 : UInt
+
+pub let devicefamilyinfoenum_desktop : UInt
+
+pub let devicefamilyinfoenum_holographic : UInt
+
+pub let devicefamilyinfoenum_iot : UInt
+
+pub let devicefamilyinfoenum_iot_headless : UInt
+
+pub let devicefamilyinfoenum_max : UInt
+
+pub let devicefamilyinfoenum_mobile : UInt
+
+pub let devicefamilyinfoenum_server : UInt
+
+pub let devicefamilyinfoenum_server_nano : UInt
+
+pub let devicefamilyinfoenum_team : UInt
+
+pub let devicefamilyinfoenum_uap : UInt
+
+pub let devicefamilyinfoenum_windows_8_x : UInt
+
+pub let devicefamilyinfoenum_windows_core : UInt
+
+pub let devicefamilyinfoenum_windows_core_headless : UInt
+
+pub let devicefamilyinfoenum_windows_phone_8_x : UInt
+
+pub let devicefamilyinfoenum_xbox : UInt
+
+pub let devicefamilyinfoenum_xboxera : UInt
+
+pub let devicefamilyinfoenum_xboxsra : UInt
+
+pub fn dns_hostname_to_computer_name_ex_w_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn enum_system_firmware_tables_raw(UInt, @core.RawAddress, UInt) -> @core.RawWin32Call[UInt]
+
+pub let firm : UInt
+
+pub let firmware_type_bios : Int
+
+pub let firmware_type_max : Int
+
+pub let firmware_type_uefi : Int
+
+pub let firmware_type_unknown : Int
+
+pub fn get_computer_name_ex_a_raw(Int, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn get_computer_name_ex_w_raw(Int, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn get_developer_drive_enablement_state_raw() -> Int
+
+pub fn get_firmware_type_raw(@core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn get_integrated_display_size(@core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn get_integrated_display_size_raw(@core.RawAddress) -> Int
+
+pub fn get_local_time_raw(@core.RawAddress) -> Unit
+
+pub fn get_logical_processor_information_ex_raw(Int, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn get_logical_processor_information_raw(@core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn get_native_system_info_raw(@core.RawAddress) -> Unit
+
+pub fn get_os_manufacturing_mode_raw(@core.RawAddress) -> Int
+
+pub fn get_os_safe_boot_mode_raw(@core.RawAddress) -> Int
+
+pub fn get_physically_installed_system_memory_raw(@core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn get_processor_system_cycle_time_raw(UInt, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn get_product_info_raw(UInt, UInt, UInt, UInt, @core.RawAddress) -> Int
+
+pub fn get_runtime_attestation_report_raw(@core.RawAddress, UInt, UInt64, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn get_system_cpu_set_information_raw(@core.RawAddress, UInt, @core.RawAddress, @core.RawAddress, UInt) -> Int
+
+pub fn get_system_dep_policy_raw() -> Int
+
+pub fn get_system_directory_a_raw(@core.RawAddress, UInt) -> @core.RawWin32Call[UInt]
+
+pub fn get_system_directory_w_raw(@core.RawAddress, UInt) -> @core.RawWin32Call[UInt]
+
+pub fn get_system_firmware_table_raw(UInt, UInt, @core.RawAddress, UInt) -> @core.RawWin32Call[UInt]
+
+pub fn get_system_info_raw(@core.RawAddress) -> Unit
+
+pub fn get_system_leap_second_information_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn get_system_time_adjustment_precise_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn get_system_time_adjustment_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn get_system_time_as_file_time_raw(@core.RawAddress) -> Unit
+
+pub fn get_system_time_precise_as_file_time_raw(@core.RawAddress) -> Unit
+
+pub fn get_system_time_raw(@core.RawAddress) -> Unit
+
+pub fn get_system_windows_directory_a_raw(@core.RawAddress, UInt) -> @core.RawWin32Call[UInt]
+
+pub fn get_system_windows_directory_w_raw(@core.RawAddress, UInt) -> @core.RawWin32Call[UInt]
+
+pub fn get_system_wow64_directory2_a_raw(@core.RawAddress, UInt, UInt) -> @core.RawWin32Call[UInt]
+
+pub fn get_system_wow64_directory2_w_raw(@core.RawAddress, UInt, UInt) -> @core.RawWin32Call[UInt]
+
+pub fn get_system_wow64_directory_a_raw(@core.RawAddress, UInt) -> @core.RawWin32Call[UInt]
+
+pub fn get_system_wow64_directory_w_raw(@core.RawAddress, UInt) -> @core.RawWin32Call[UInt]
+
+pub fn get_tick_count64_raw() -> UInt64
+
+pub fn get_tick_count_raw() -> UInt
+
+pub fn get_version_ex_a_raw(@core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn get_version_ex_w_raw(@core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn get_version_raw() -> UInt
+
+pub fn get_windows_directory_a_raw(@core.RawAddress, UInt) -> @core.RawWin32Call[UInt]
+
+pub fn get_windows_directory_w_raw(@core.RawAddress, UInt) -> @core.RawWin32Call[UInt]
+
+pub let global_data_id_console_shared_data_flags : Int
+
+pub let global_data_id_cycles_per_yield : Int
+
+pub let global_data_id_image_number_high : Int
+
+pub let global_data_id_image_number_low : Int
+
+pub let global_data_id_interrupt_time : Int
+
+pub let global_data_id_kd_debugger_enabled : Int
+
+pub let global_data_id_last_system_rit_event_tick_count : Int
+
+pub let global_data_id_nt_major_version : Int
+
+pub let global_data_id_nt_minor_version : Int
+
+pub let global_data_id_nt_system_root_drive : Int
+
+pub let global_data_id_qpc_bias : Int
+
+pub let global_data_id_qpc_bypass_enabled : Int
+
+pub let global_data_id_qpc_data : Int
+
+pub let global_data_id_rng_seed_version : Int
+
+pub let global_data_id_safe_boot_mode : Int
+
+pub let global_data_id_system_expiration_date : Int
+
+pub let global_data_id_time_zone_bias : Int
+
+pub let global_data_id_time_zone_id : Int
+
+pub let global_data_id_unknown : Int
+
+pub fn global_memory_status_ex_raw(@core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn global_memory_status_raw(@core.RawAddress) -> Unit
+
+pub let image_file_machine_alpha : UInt
+
+pub let image_file_machine_alpha64 : UInt
+
+pub let image_file_machine_am33 : UInt
+
+pub let image_file_machine_amd64 : UInt
+
+pub let image_file_machine_arm : UInt
+
+pub let image_file_machine_arm64 : UInt
+
+pub let image_file_machine_armnt : UInt
+
+pub let image_file_machine_axp64 : UInt
+
+pub let image_file_machine_cee : UInt
+
+pub let image_file_machine_cef : UInt
+
+pub let image_file_machine_ebc : UInt
+
+pub let image_file_machine_i386 : UInt
+
+pub let image_file_machine_ia64 : UInt
+
+pub let image_file_machine_m32_r : UInt
+
+pub let image_file_machine_mips16 : UInt
+
+pub let image_file_machine_mipsfpu : UInt
+
+pub let image_file_machine_mipsfpu16 : UInt
+
+pub let image_file_machine_powerpc : UInt
+
+pub let image_file_machine_powerpcfp : UInt
+
+pub let image_file_machine_r10000 : UInt
+
+pub let image_file_machine_r3000 : UInt
+
+pub let image_file_machine_r4000 : UInt
+
+pub let image_file_machine_sh3 : UInt
+
+pub let image_file_machine_sh3_dsp : UInt
+
+pub let image_file_machine_sh3_e : UInt
+
+pub let image_file_machine_sh4 : UInt
+
+pub let image_file_machine_sh5 : UInt
+
+pub let image_file_machine_target_host : UInt
+
+pub let image_file_machine_thumb : UInt
+
+pub let image_file_machine_tricore : UInt
+
+pub let image_file_machine_unknown : UInt
+
+pub let image_file_machine_wcemipsv2 : UInt
+
+pub fn is_user_cet_available_in_environment_raw(UInt) -> Int
+
+pub fn is_wow64_guest_machine_supported(UInt, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn is_wow64_guest_machine_supported_raw(UInt, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub let ntddi_longhorn : UInt
+
+pub let ntddi_version : UInt
+
+pub let ntddi_vista : UInt
+
+pub let ntddi_vistasp1 : UInt
+
+pub let ntddi_vistasp2 : UInt
+
+pub let ntddi_vistasp3 : UInt
+
+pub let ntddi_vistasp4 : UInt
+
+pub let ntddi_win10 : UInt
+
+pub let ntddi_win10_19_h1 : UInt
+
+pub let ntddi_win10_co : UInt
+
+pub let ntddi_win10_cu : UInt
+
+pub let ntddi_win10_fe : UInt
+
+pub let ntddi_win10_mn : UInt
+
+pub let ntddi_win10_ni : UInt
+
+pub let ntddi_win10_rs1 : UInt
+
+pub let ntddi_win10_rs2 : UInt
+
+pub let ntddi_win10_rs3 : UInt
+
+pub let ntddi_win10_rs4 : UInt
+
+pub let ntddi_win10_rs5 : UInt
+
+pub let ntddi_win10_th2 : UInt
+
+pub let ntddi_win10_vb : UInt
+
+pub let ntddi_win11_ga : UInt
+
+pub let ntddi_win11_ge : UInt
+
+pub let ntddi_win11_zn : UInt
+
+pub let ntddi_win2_k : UInt
+
+pub let ntddi_win2_ksp1 : UInt
+
+pub let ntddi_win2_ksp2 : UInt
+
+pub let ntddi_win2_ksp3 : UInt
+
+pub let ntddi_win2_ksp4 : UInt
+
+pub let ntddi_win4 : UInt
+
+pub let ntddi_win6 : UInt
+
+pub let ntddi_win6_sp1 : UInt
+
+pub let ntddi_win6_sp2 : UInt
+
+pub let ntddi_win6_sp3 : UInt
+
+pub let ntddi_win6_sp4 : UInt
+
+pub let ntddi_win7 : UInt
+
+pub let ntddi_win8 : UInt
+
+pub let ntddi_winblue : UInt
+
+pub let ntddi_winthreshold : UInt
+
+pub let ntddi_winxp : UInt
+
+pub let ntddi_winxpsp1 : UInt
+
+pub let ntddi_winxpsp2 : UInt
+
+pub let ntddi_winxpsp3 : UInt
+
+pub let ntddi_winxpsp4 : UInt
+
+pub let ntddi_ws03 : UInt
+
+pub let ntddi_ws03_sp1 : UInt
+
+pub let ntddi_ws03_sp2 : UInt
+
+pub let ntddi_ws03_sp3 : UInt
+
+pub let ntddi_ws03_sp4 : UInt
+
+pub let ntddi_ws08 : UInt
+
+pub let ntddi_ws08_sp2 : UInt
+
+pub let ntddi_ws08_sp3 : UInt
+
+pub let ntddi_ws08_sp4 : UInt
+
+pub let os_deployment_compact : Int
+
+pub let os_deployment_standard : Int
+
+pub let osversion_mask : UInt
+
+pub let processor_architecture_alpha : UInt
+
+pub let processor_architecture_alpha64 : UInt
+
+pub let processor_architecture_amd64 : UInt
+
+pub let processor_architecture_arm : UInt
+
+pub let processor_architecture_arm32_on_win64 : UInt
+
+pub let processor_architecture_arm64 : UInt
+
+pub let processor_architecture_ia32_on_arm64 : UInt
+
+pub let processor_architecture_ia32_on_win64 : UInt
+
+pub let processor_architecture_ia64 : UInt
+
+pub let processor_architecture_intel : UInt
+
+pub let processor_architecture_mips : UInt
+
+pub let processor_architecture_msil : UInt
+
+pub let processor_architecture_neutral : UInt
+
+pub let processor_architecture_ppc : UInt
+
+pub let processor_architecture_shx : UInt
+
+pub let processor_architecture_unknown : UInt
+
+pub let product_arm64_server : UInt
+
+pub let product_azure_nano_server : UInt
+
+pub let product_azure_server_agentbridge : UInt
+
+pub let product_azure_server_cloudhost : UInt
+
+pub let product_azure_server_cloudmos : UInt
+
+pub let product_azure_server_core : UInt
+
+pub let product_azure_server_nanohost : UInt
+
+pub let product_azurestackhci_server_core : UInt
+
+pub let product_business : UInt
+
+pub let product_business_n : UInt
+
+pub let product_cloud : UInt
+
+pub let product_cloud_host_infrastructure_server : UInt
+
+pub let product_cloud_storage_server : UInt
+
+pub let product_cloude : UInt
+
+pub let product_cloudedition : UInt
+
+pub let product_cloudeditionn : UInt
+
+pub let product_clouden : UInt
+
+pub let product_cloudn : UInt
+
+pub let product_cluster_server : UInt
+
+pub let product_cluster_server_v : UInt
+
+pub let product_connected_car : UInt
+
+pub let product_core : UInt
+
+pub let product_core_arm : UInt
+
+pub let product_core_connected : UInt
+
+pub let product_core_connected_countryspecific : UInt
+
+pub let product_core_connected_n : UInt
+
+pub let product_core_connected_singlelanguage : UInt
+
+pub let product_core_countryspecific : UInt
+
+pub let product_core_n : UInt
+
+pub let product_core_singlelanguage : UInt
+
+pub let product_datacenter_a_server_core : UInt
+
+pub let product_datacenter_evaluation_server : UInt
+
+pub let product_datacenter_evaluation_server_core : UInt
+
+pub let product_datacenter_nano_server : UInt
+
+pub let product_datacenter_server : UInt
+
+pub let product_datacenter_server_azure_edition : UInt
+
+pub let product_datacenter_server_core : UInt
+
+pub let product_datacenter_server_core_azure_edition : UInt
+
+pub let product_datacenter_server_core_v : UInt
+
+pub let product_datacenter_server_v : UInt
+
+pub let product_datacenter_ws_server_core : UInt
+
+pub let product_datacenter_ws_server_core_azure_edition : UInt
+
+pub let product_education : UInt
+
+pub let product_education_n : UInt
+
+pub let product_embedded : UInt
+
+pub let product_embedded_a : UInt
+
+pub let product_embedded_automotive : UInt
+
+pub let product_embedded_e : UInt
+
+pub let product_embedded_e_eval : UInt
+
+pub let product_embedded_eval : UInt
+
+pub let product_embedded_industry : UInt
+
+pub let product_embedded_industry_a : UInt
+
+pub let product_embedded_industry_a_e : UInt
+
+pub let product_embedded_industry_e : UInt
+
+pub let product_embedded_industry_e_eval : UInt
+
+pub let product_embedded_industry_eval : UInt
+
+pub let product_enterprise : UInt
+
+pub let product_enterprise_e : UInt
+
+pub let product_enterprise_evaluation : UInt
+
+pub let product_enterprise_n : UInt
+
+pub let product_enterprise_n_evaluation : UInt
+
+pub let product_enterprise_s : UInt
+
+pub let product_enterprise_s_evaluation : UInt
+
+pub let product_enterprise_s_n : UInt
+
+pub let product_enterprise_s_n_evaluation : UInt
+
+pub let product_enterprise_server : UInt
+
+pub let product_enterprise_server_core : UInt
+
+pub let product_enterprise_server_core_v : UInt
+
+pub let product_enterprise_server_ia64 : UInt
+
+pub let product_enterprise_server_v : UInt
+
+pub let product_enterprise_subscription : UInt
+
+pub let product_enterprise_subscription_n : UInt
+
+pub let product_enterpriseg : UInt
+
+pub let product_enterprisegn : UInt
+
+pub let product_essentialbusiness_server_addl : UInt
+
+pub let product_essentialbusiness_server_addlsvc : UInt
+
+pub let product_essentialbusiness_server_mgmt : UInt
+
+pub let product_essentialbusiness_server_mgmtsvc : UInt
+
+pub let product_holographic : UInt
+
+pub let product_holographic_business : UInt
+
+pub let product_home_basic : UInt
+
+pub let product_home_basic_e : UInt
+
+pub let product_home_basic_n : UInt
+
+pub let product_home_premium : UInt
+
+pub let product_home_premium_e : UInt
+
+pub let product_home_premium_n : UInt
+
+pub let product_home_premium_server : UInt
+
+pub let product_home_server : UInt
+
+pub let product_hubos : UInt
+
+pub let product_hyperv : UInt
+
+pub let product_industry_handheld : UInt
+
+pub let product_iotedgeos : UInt
+
+pub let product_iotenterprise : UInt
+
+pub let product_iotenterprisek : UInt
+
+pub let product_iotenterprises : UInt
+
+pub let product_iotenterpriseseval : UInt
+
+pub let product_iotenterprisesk : UInt
+
+pub let product_iotos : UInt
+
+pub let product_iotuap : UInt
+
+pub let product_lite : UInt
+
+pub let product_mediumbusiness_server_management : UInt
+
+pub let product_mediumbusiness_server_messaging : UInt
+
+pub let product_mediumbusiness_server_security : UInt
+
+pub let product_multipoint_premium_server : UInt
+
+pub let product_multipoint_standard_server : UInt
+
+pub let product_nano_server : UInt
+
+pub let product_onecoreupdateos : UInt
+
+pub let product_ppi_pro : UInt
+
+pub let product_pro_china : UInt
+
+pub let product_pro_for_education : UInt
+
+pub let product_pro_for_education_n : UInt
+
+pub let product_pro_single_language : UInt
+
+pub let product_pro_workstation : UInt
+
+pub let product_pro_workstation_n : UInt
+
+pub let product_professional : UInt
+
+pub let product_professional_e : UInt
+
+pub let product_professional_embedded : UInt
+
+pub let product_professional_n : UInt
+
+pub let product_professional_s : UInt
+
+pub let product_professional_s_n : UInt
+
+pub let product_professional_student : UInt
+
+pub let product_professional_student_n : UInt
+
+pub let product_professional_wmc : UInt
+
+pub let product_sb_solution_server : UInt
+
+pub let product_sb_solution_server_em : UInt
+
+pub let product_server_for_sb_solutions : UInt
+
+pub let product_server_for_sb_solutions_em : UInt
+
+pub let product_server_for_smallbusiness : UInt
+
+pub let product_server_for_smallbusiness_v : UInt
+
+pub let product_server_foundation : UInt
+
+pub let product_serverrdsh : UInt
+
+pub let product_smallbusiness_server : UInt
+
+pub let product_smallbusiness_server_premium : UInt
+
+pub let product_smallbusiness_server_premium_core : UInt
+
+pub let product_solution_embeddedserver : UInt
+
+pub let product_solution_embeddedserver_core : UInt
+
+pub let product_standard_a_server_core : UInt
+
+pub let product_standard_evaluation_server : UInt
+
+pub let product_standard_evaluation_server_core : UInt
+
+pub let product_standard_nano_server : UInt
+
+pub let product_standard_server : UInt
+
+pub let product_standard_server_core : UInt
+
+pub let product_standard_server_core_v : UInt
+
+pub let product_standard_server_solutions : UInt
+
+pub let product_standard_server_solutions_core : UInt
+
+pub let product_standard_server_v : UInt
+
+pub let product_standard_ws_server_core : UInt
+
+pub let product_starter : UInt
+
+pub let product_starter_e : UInt
+
+pub let product_starter_n : UInt
+
+pub let product_storage_enterprise_server : UInt
+
+pub let product_storage_enterprise_server_core : UInt
+
+pub let product_storage_express_server : UInt
+
+pub let product_storage_express_server_core : UInt
+
+pub let product_storage_standard_evaluation_server : UInt
+
+pub let product_storage_standard_server : UInt
+
+pub let product_storage_standard_server_core : UInt
+
+pub let product_storage_workgroup_evaluation_server : UInt
+
+pub let product_storage_workgroup_server : UInt
+
+pub let product_storage_workgroup_server_core : UInt
+
+pub let product_thinpc : UInt
+
+pub let product_ultimate : UInt
+
+pub let product_ultimate_e : UInt
+
+pub let product_ultimate_n : UInt
+
+pub let product_undefined : UInt
+
+pub let product_unlicensed : UInt
+
+pub let product_utility_vm : UInt
+
+pub let product_validation : UInt
+
+pub let product_web_server : UInt
+
+pub let product_web_server_core : UInt
+
+pub let product_wnc : UInt
+
+pub let product_xbox_durangohostos : UInt
+
+pub let product_xbox_eraos : UInt
+
+pub let product_xbox_gameos : UInt
+
+pub let product_xbox_keystone : UInt
+
+pub let product_xbox_scarletthostos : UInt
+
+pub let product_xbox_systemos : UInt
+
+pub let relation_all : Int
+
+pub let relation_cache : Int
+
+pub let relation_group : Int
+
+pub let relation_numa_node : Int
+
+pub let relation_numa_node_ex : Int
+
+pub let relation_processor_core : Int
+
+pub let relation_processor_die : Int
+
+pub let relation_processor_module : Int
+
+pub let relation_processor_package : Int
+
+pub let rsmb : UInt
+
+pub fn rtl_convert_device_family_info_to_string_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn rtl_get_device_family_info_enum_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Unit
+
+pub fn rtl_get_product_info_raw(UInt, UInt, UInt, UInt, @core.RawAddress) -> UInt
+
+pub fn rtl_get_system_global_data_raw(Int, @core.RawAddress, UInt) -> UInt
+
+pub fn rtl_os_deployment_state_raw(UInt) -> Int
+
+pub fn rtl_switched_vvi_raw(@core.RawAddress, UInt, UInt64) -> UInt
+
+pub let scex2_alt_netbios_name : UInt
+
+pub fn set_computer_name_a_raw(@core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn set_computer_name_ex2_w_raw(Int, UInt, @core.RawAddress) -> Int
+
+pub fn set_computer_name_ex_a_raw(Int, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn set_computer_name_ex_w_raw(Int, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn set_computer_name_w_raw(@core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn set_local_time_raw(@core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn set_system_time_adjustment_precise_raw(UInt64, Int) -> @core.RawWin32Call[Int]
+
+pub fn set_system_time_adjustment_raw(UInt, Int) -> @core.RawWin32Call[Int]
+
+pub fn set_system_time_raw(@core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub let spversion_mask : UInt
+
+pub let subversion_mask : UInt
+
+pub let system_cpu_set_information_allocated : UInt
+
+pub let system_cpu_set_information_allocated_to_target_process : UInt
+
+pub let system_cpu_set_information_parked : UInt
+
+pub let system_cpu_set_information_realtime : UInt
+
+pub let user_cet_environment_sgx2_enclave : UInt
+
+pub let user_cet_environment_vbs_basic_enclave : UInt
+
+pub let user_cet_environment_vbs_enclave : UInt
+
+pub let user_cet_environment_win32_process : UInt
+
+pub let ver_buildnumber : UInt
+
+pub let ver_majorversion : UInt
+
+pub let ver_minorversion : UInt
+
+pub let ver_platformid : UInt
+
+pub let ver_product_type : UInt
+
+pub let ver_servicepackmajor : UInt
+
+pub let ver_servicepackminor : UInt
+
+pub fn ver_set_condition_mask_raw(UInt64, UInt, UInt) -> UInt64
+
+pub let ver_suitename : UInt
+
+pub fn verify_version_info_a_raw(@core.RawAddress, UInt, UInt64) -> @core.RawWin32Call[Int]
+
+pub fn verify_version_info_w_raw(@core.RawAddress, UInt, UInt64) -> @core.RawWin32Call[Int]
+
+pub let wdk_ntddi_version : UInt
+
+pub let win32_ie_ie100 : UInt
+
+pub let win32_ie_ie110 : UInt
+
+pub let win32_ie_ie20 : UInt
+
+pub let win32_ie_ie30 : UInt
+
+pub let win32_ie_ie302 : UInt
+
+pub let win32_ie_ie40 : UInt
+
+pub let win32_ie_ie401 : UInt
+
+pub let win32_ie_ie50 : UInt
+
+pub let win32_ie_ie501 : UInt
+
+pub let win32_ie_ie55 : UInt
+
+pub let win32_ie_ie60 : UInt
+
+pub let win32_ie_ie60_sp1 : UInt
+
+pub let win32_ie_ie60_sp2 : UInt
+
+pub let win32_ie_ie70 : UInt
+
+pub let win32_ie_ie80 : UInt
+
+pub let win32_ie_ie90 : UInt
+
+pub let win32_ie_longhorn : UInt
+
+pub let win32_ie_nt4 : UInt
+
+pub let win32_ie_nt4_sp1 : UInt
+
+pub let win32_ie_nt4_sp2 : UInt
+
+pub let win32_ie_nt4_sp3 : UInt
+
+pub let win32_ie_nt4_sp4 : UInt
+
+pub let win32_ie_nt4_sp5 : UInt
+
+pub let win32_ie_nt4_sp6 : UInt
+
+pub let win32_ie_win10 : UInt
+
+pub let win32_ie_win2_k : UInt
+
+pub let win32_ie_win2_ksp1 : UInt
+
+pub let win32_ie_win2_ksp2 : UInt
+
+pub let win32_ie_win2_ksp3 : UInt
+
+pub let win32_ie_win2_ksp4 : UInt
+
+pub let win32_ie_win6 : UInt
+
+pub let win32_ie_win7 : UInt
+
+pub let win32_ie_win8 : UInt
+
+pub let win32_ie_win98 : UInt
+
+pub let win32_ie_win98_se : UInt
+
+pub let win32_ie_winblue : UInt
+
+pub let win32_ie_winme : UInt
+
+pub let win32_ie_winthreshold : UInt
+
+pub let win32_ie_ws03 : UInt
+
+pub let win32_ie_ws03_sp1 : UInt
+
+pub let win32_ie_xp : UInt
+
+pub let win32_ie_xpsp1 : UInt
+
+pub let win32_ie_xpsp2 : UInt
+
+pub let win32_winnt_longhorn : UInt
+
+pub let win32_winnt_nt4 : UInt
+
+pub let win32_winnt_vista : UInt
+
+pub let win32_winnt_win10 : UInt
+
+pub let win32_winnt_win2_k : UInt
+
+pub let win32_winnt_win6 : UInt
+
+pub let win32_winnt_win7 : UInt
+
+pub let win32_winnt_win8 : UInt
+
+pub let win32_winnt_winblue : UInt
+
+pub let win32_winnt_winthreshold : UInt
+
+pub let win32_winnt_winxp : UInt
+
+pub let win32_winnt_ws03 : UInt
+
+pub let win32_winnt_ws08 : UInt
+
+// Errors
+
+// Types and methods
+
+// Type aliases
+pub using @508e787831cbf13f {type Anonymous1EUnion_f53502fda3c2 as Anonymous1EUnion}
+
+pub using @508e787831cbf13f {type Anonymous2EUnion_575cf43bec06 as Anonymous2EUnion}
+
+pub using @508e787831cbf13f {type AnonymousEStruct_cbabde953e63 as AnonymousEStruct_cbabde953e}
+
+pub using @508e787831cbf13f {type AnonymousEStruct_f0eabafd4437 as AnonymousEStruct_f0eabafd44}
+
+pub using @508e787831cbf13f {type AnonymousEUnion_1212ccd97702 as AnonymousEUnion_1212ccd977}
+
+pub using @508e787831cbf13f {type AnonymousEUnion_598b11654c93 as AnonymousEUnion_598b11654c}
+
+pub using @508e787831cbf13f {type AnonymousEUnion_60b8f1c6594b as AnonymousEUnion_60b8f1c659}
+
+pub using @508e787831cbf13f {type AnonymousEUnion_b14b28ec8ab9 as AnonymousEUnion_b14b28ec8a}
+
+pub using @508e787831cbf13f {type AnonymousEUnion_bccf0bea9d53 as AnonymousEUnion_bccf0bea9d}
+
+pub using @508e787831cbf13f {type AnonymousEUnion_ead755b3c3a7 as AnonymousEUnion_ead755b3c3}
+
+pub using @508e787831cbf13f {type CACHEDESCRIPTOR_32cd4fa32587 as CACHEDESCRIPTOR}
+
+pub using @508e787831cbf13f {type CACHERELATIONSHIP_6bcb5830ae1d as CACHERELATIONSHIP}
+
+pub using @508e787831cbf13f {type COMPUTERNAMEFORMAT_176f997ab6bc as COMPUTERNAMEFORMAT}
+
+pub using @508e787831cbf13f {type CPUSETINFORMATIONTYPE_e0c435bda8a7 as CPUSETINFORMATIONTYPE}
+
+pub using @508e787831cbf13f {type CpuSetEStruct_48c90b3c33ab as CpuSetEStruct}
+
+pub using @508e787831cbf13f {type DEPSYSTEMPOLICYTYPE_e3773999e7cc as DEPSYSTEMPOLICYTYPE}
+
+pub using @508e787831cbf13f {type DEVELOPERDRIVEENABLEMENTSTATE_e9d7a98cc265 as DEVELOPERDRIVEENABLEMENTSTATE}
+
+pub using @508e787831cbf13f {type DEVICEFAMILYDEVICEFORM_c78d94e48fff as DEVICEFAMILYDEVICEFORM}
+
+pub using @508e787831cbf13f {type DEVICEFAMILYINFOENUM_fcee6ff39763 as DEVICEFAMILYINFOENUM}
+
+pub using @508e787831cbf13f {type FIRMWARETABLEPROVIDER_00755cab63b4 as FIRMWARETABLEPROVIDER}
+
+pub using @508e787831cbf13f {type FIRMWARETYPE_ed200ec85142 as FIRMWARETYPE}
+
+pub using @508e787831cbf13f {type GROUPAFFINITY_8f63fbeb5549 as GROUPAFFINITY}
+
+pub using @508e787831cbf13f {type GROUPAFFINITY32_64eedfca6b4e as GROUPAFFINITY32}
+
+pub using @508e787831cbf13f {type GROUPAFFINITY64_83cdaf0ed393 as GROUPAFFINITY64}
+
+pub using @508e787831cbf13f {type GROUPRELATIONSHIP_856a7ecd94fe as GROUPRELATIONSHIP}
+
+pub using @508e787831cbf13f {type IMAGEFILEMACHINE_81a4157f5ede as IMAGEFILEMACHINE}
+
+pub using @508e787831cbf13f {type LOGICALPROCESSORRELATIONSHIP_69c7a2c0d9c1 as LOGICALPROCESSORRELATIONSHIP}
+
+pub using @508e787831cbf13f {type MEMORYSTATUS_ab130ec2bfa0 as MEMORYSTATUS}
+
+pub using @508e787831cbf13f {type MEMORYSTATUSEX_0b3e2ee51886 as MEMORYSTATUSEX}
+
+pub using @508e787831cbf13f {type NUMANODERELATIONSHIP_79d92f702c8d as NUMANODERELATIONSHIP}
+
+pub using @508e787831cbf13f {type NumaNodeEStruct_c10596661555 as NumaNodeEStruct}
+
+pub using @508e787831cbf13f {type OSDEPLOYEMENTSTATEVALUES_1c98c4c54401 as OSDEPLOYEMENTSTATEVALUES}
+
+pub using @508e787831cbf13f {type OSPRODUCTTYPE_b26c37dbf357 as OSPRODUCTTYPE}
+
+pub using @508e787831cbf13f {type OSVERSIONINFOA_e70567efc97c as OSVERSIONINFOA}
+
+pub using @508e787831cbf13f {type OSVERSIONINFOEXA_d3acc53252e8 as OSVERSIONINFOEXA}
+
+pub using @508e787831cbf13f {type OSVERSIONINFOEXW_7571adc28abe as OSVERSIONINFOEXW}
+
+pub using @508e787831cbf13f {type OSVERSIONINFOW_8019b4ceb7c4 as OSVERSIONINFOW}
+
+pub using @508e787831cbf13f {type PGETSYSTEMWOW64DIRECTORYA_4e1f756f2e27 as PGETSYSTEMWOW64DIRECTORYA}
+
+pub using @508e787831cbf13f {type PGETSYSTEMWOW64DIRECTORYW_4bfca6f9f242 as PGETSYSTEMWOW64DIRECTORYW}
+
+pub using @508e787831cbf13f {type PROCESSORARCHITECTURE_a7a5dd5b6ee7 as PROCESSORARCHITECTURE}
+
+pub using @508e787831cbf13f {type PROCESSORCACHETYPE_0281ae00f8af as PROCESSORCACHETYPE}
+
+pub using @508e787831cbf13f {type PROCESSORGROUPINFO_4981d91a9e92 as PROCESSORGROUPINFO}
+
+pub using @508e787831cbf13f {type PROCESSORRELATIONSHIP_c0194b43f8db as PROCESSORRELATIONSHIP}
+
+pub using @508e787831cbf13f {type ProcessorCoreEStruct_a4554e05f2f8 as ProcessorCoreEStruct}
+
+pub using @508e787831cbf13f {type RTLSYSTEMGLOBALDATAID_cfd5ecfeb5af as RTLSYSTEMGLOBALDATAID}
+
+pub using @508e787831cbf13f {type SYSTEMCPUSETINFORMATION_0745c207884b as SYSTEMCPUSETINFORMATION}
+
+pub using @508e787831cbf13f {type SYSTEMINFO_d218828e9ec7 as SYSTEMINFO}
+
+pub using @508e787831cbf13f {type SYSTEMLOGICALPROCESSORINFORMATION_f7809bcae49f as SYSTEMLOGICALPROCESSORINFORMATION}
+
+pub using @508e787831cbf13f {type SYSTEMLOGICALPROCESSORINFORMATIONEX_85af86d875c7 as SYSTEMLOGICALPROCESSORINFORMATIONEX}
+
+pub using @508e787831cbf13f {type SYSTEMPOOLZEROINGINFORMATION_ba728da8f8d9 as SYSTEMPOOLZEROINGINFORMATION}
+
+pub using @508e787831cbf13f {type SYSTEMPROCESSORCYCLETIMEINFORMATION_d7f8565237e7 as SYSTEMPROCESSORCYCLETIMEINFORMATION}
+
+pub using @508e787831cbf13f {type SYSTEMSUPPORTEDPROCESSORARCHITECTURESINFORMATION_a5743fb059b7 as SYSTEMSUPPORTEDPROCESSORARCHITECTURESINFORMATION}
+
+pub using @508e787831cbf13f {type USERCETENVIRONMENT_f1c3373902b8 as USERCETENVIRONMENT}
+
+pub using @508e787831cbf13f {type VERFLAGS_a6893776d5b2 as VERFLAGS}
+
+// Traits
+

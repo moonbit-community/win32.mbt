@@ -1,0 +1,228 @@
+// Generated using `moon info`, DON'T EDIT IT
+package "moonbit-community/win32-bindings/windows/win32/devices/serial_communication"
+
+import {
+  "moonbit-community/win32-bindings/runtime/core",
+  "moonbit-community/win32-bindings/scc/37638e55f6a300b6",
+}
+
+// Values
+pub let cdb_report_bits : UInt
+
+pub let cdb_report_bytes : UInt
+
+pub fn com_db_claim_next_free_port_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn com_db_claim_port_raw(@core.RawAddress, UInt, Int, @core.RawAddress) -> Int
+
+pub fn com_db_close_raw(@core.RawAddress) -> Int
+
+pub fn com_db_get_current_port_usage_raw(@core.RawAddress, @core.RawAddress, UInt, UInt, @core.RawAddress) -> Int
+
+pub fn com_db_open_raw(@core.RawAddress) -> Int
+
+pub fn com_db_release_port_raw(@core.RawAddress, UInt) -> Int
+
+pub fn com_db_resize_database_raw(@core.RawAddress, UInt) -> Int
+
+pub let comdb_max_ports_arbitrated : UInt
+
+pub let comdb_min_ports_arbitrated : UInt
+
+pub let even_parity : UInt
+
+pub let ioctl_internal_serenum_remove_self : UInt
+
+pub let ioctl_serial_apply_default_configuration : UInt
+
+pub let ioctl_serial_clear_stats : UInt
+
+pub let ioctl_serial_clr_dtr : UInt
+
+pub let ioctl_serial_clr_rts : UInt
+
+pub let ioctl_serial_config_size : UInt
+
+pub let ioctl_serial_get_baud_rate : UInt
+
+pub let ioctl_serial_get_chars : UInt
+
+pub let ioctl_serial_get_commconfig : UInt
+
+pub let ioctl_serial_get_commstatus : UInt
+
+pub let ioctl_serial_get_dtrrts : UInt
+
+pub let ioctl_serial_get_handflow : UInt
+
+pub let ioctl_serial_get_line_control : UInt
+
+pub let ioctl_serial_get_modem_control : UInt
+
+pub let ioctl_serial_get_modemstatus : UInt
+
+pub let ioctl_serial_get_properties : UInt
+
+pub let ioctl_serial_get_stats : UInt
+
+pub let ioctl_serial_get_timeouts : UInt
+
+pub let ioctl_serial_get_wait_mask : UInt
+
+pub let ioctl_serial_immediate_char : UInt
+
+pub let ioctl_serial_internal_basic_settings : UInt
+
+pub let ioctl_serial_internal_cancel_wait_wake : UInt
+
+pub let ioctl_serial_internal_do_wait_wake : UInt
+
+pub let ioctl_serial_internal_restore_settings : UInt
+
+pub let ioctl_serial_purge : UInt
+
+pub let ioctl_serial_reset_device : UInt
+
+pub let ioctl_serial_set_baud_rate : UInt
+
+pub let ioctl_serial_set_break_off : UInt
+
+pub let ioctl_serial_set_break_on : UInt
+
+pub let ioctl_serial_set_chars : UInt
+
+pub let ioctl_serial_set_commconfig : UInt
+
+pub let ioctl_serial_set_dtr : UInt
+
+pub let ioctl_serial_set_fifo_control : UInt
+
+pub let ioctl_serial_set_handflow : UInt
+
+pub let ioctl_serial_set_interval_timer_resolution : UInt
+
+pub let ioctl_serial_set_line_control : UInt
+
+pub let ioctl_serial_set_modem_control : UInt
+
+pub let ioctl_serial_set_queue_size : UInt
+
+pub let ioctl_serial_set_rts : UInt
+
+pub let ioctl_serial_set_timeouts : UInt
+
+pub let ioctl_serial_set_wait_mask : UInt
+
+pub let ioctl_serial_set_xoff : UInt
+
+pub let ioctl_serial_set_xon : UInt
+
+pub let ioctl_serial_wait_on_mask : UInt
+
+pub let ioctl_serial_xoff_counter : UInt
+
+pub let mark_parity : UInt
+
+pub let no_parity : UInt
+
+pub let odd_parity : UInt
+
+pub let serenum_first_half : Int
+
+pub let serenum_second_half : Int
+
+pub let serenum_whole : Int
+
+pub let serial_ev_break : UInt
+
+pub let serial_ev_cts : UInt
+
+pub let serial_ev_dsr : UInt
+
+pub let serial_ev_err : UInt
+
+pub let serial_ev_event1 : UInt
+
+pub let serial_ev_event2 : UInt
+
+pub let serial_ev_perr : UInt
+
+pub let serial_ev_ring : UInt
+
+pub let serial_ev_rlsd : UInt
+
+pub let serial_ev_rx80_full : UInt
+
+pub let serial_ev_rxchar : UInt
+
+pub let serial_ev_rxflag : UInt
+
+pub let serial_ev_txempty : UInt
+
+pub let serial_lsrmst_escape : UInt
+
+pub let serial_lsrmst_lsr_data : UInt
+
+pub let serial_lsrmst_lsr_nodata : UInt
+
+pub let serial_lsrmst_mst : UInt
+
+pub let serial_purge_rxabort : UInt
+
+pub let serial_purge_rxclear : UInt
+
+pub let serial_purge_txabort : UInt
+
+pub let serial_purge_txclear : UInt
+
+pub let space_parity : UInt
+
+pub let stop_bit_1 : UInt
+
+pub let stop_bits_1_5 : UInt
+
+pub let stop_bits_2 : UInt
+
+// Errors
+
+// Types and methods
+
+// Type aliases
+pub using @37638e55f6a300b6 {type HCOMDB_244bce5c50d2 as HCOMDB}
+
+pub using @37638e55f6a300b6 {type PSERENUMREADPORT_685da3f7d699 as PSERENUMREADPORT}
+
+pub using @37638e55f6a300b6 {type PSERENUMWRITEPORT_a366b13db8ad as PSERENUMWRITEPORT}
+
+pub using @37638e55f6a300b6 {type SERENUMPORTDESC_73854aaf023b as SERENUMPORTDESC}
+
+pub using @37638e55f6a300b6 {type SERENUMPORTION_dddab4dd48d2 as SERENUMPORTION}
+
+pub using @37638e55f6a300b6 {type SERENUMPORTPARAMETERS_521dc0013f39 as SERENUMPORTPARAMETERS}
+
+pub using @37638e55f6a300b6 {type SERIALBASICSETTINGS_a8659cf7b56e as SERIALBASICSETTINGS}
+
+pub using @37638e55f6a300b6 {type SERIALBAUDRATE_ab9efb627e9d as SERIALBAUDRATE}
+
+pub using @37638e55f6a300b6 {type SERIALCHARS_01fefeb269b8 as SERIALCHARS}
+
+pub using @37638e55f6a300b6 {type SERIALCOMMPROP_b9199d4448c7 as SERIALCOMMPROP}
+
+pub using @37638e55f6a300b6 {type SERIALCONFIG_9f0fb9a0677d as SERIALCONFIG}
+
+pub using @37638e55f6a300b6 {type SERIALHANDFLOW_61800aa600eb as SERIALHANDFLOW}
+
+pub using @37638e55f6a300b6 {type SERIALLINECONTROL_d64375638f08 as SERIALLINECONTROL}
+
+pub using @37638e55f6a300b6 {type SERIALPERFSTATS_d79eca451d8a as SERIALPERFSTATS}
+
+pub using @37638e55f6a300b6 {type SERIALQUEUESIZE_aff549fc8fc4 as SERIALQUEUESIZE}
+
+pub using @37638e55f6a300b6 {type SERIALSTATUS_dfce36f20c68 as SERIALSTATUS}
+
+pub using @37638e55f6a300b6 {type SERIALTIMEOUTS_afd1ce2f1eef as SERIALTIMEOUTS}
+
+pub using @37638e55f6a300b6 {type SERIALXOFFCOUNTER_bc9bd5f0b175 as SERIALXOFFCOUNTER}
+
+// Traits
+

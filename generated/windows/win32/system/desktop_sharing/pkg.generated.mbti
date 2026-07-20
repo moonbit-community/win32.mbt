@@ -1,0 +1,988 @@
+// Generated using `moon info`, DON'T EDIT IT
+package "moonbit-community/win32-bindings/windows/win32/system/desktop_sharing"
+
+import {
+  "moonbit-community/win32-bindings/runtime/core",
+  "moonbit-community/win32-bindings/scc/8e8f7b1c4d8547b0",
+}
+
+// Values
+pub fn add_touch_input(@core.RawAddress, UInt, UInt, Int, Int) -> Unit raise @core.WindowsError
+
+pub fn add_touch_input_raw(@core.RawAddress, UInt, UInt, Int, Int) -> Int
+
+pub fn alloc_buffer(@core.RawAddress, Int, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn alloc_buffer_raw(@core.RawAddress, Int, @core.RawAddress) -> Int
+
+pub let app_flag_privileged : Int
+
+pub let attendee_disconnect_reason_app : Int
+
+pub let attendee_disconnect_reason_cli : Int
+
+pub let attendee_disconnect_reason_err : Int
+
+pub let attendee_disconnect_reason_max : Int
+
+pub let attendee_disconnect_reason_min : Int
+
+pub let attendee_flags_local : Int
+
+pub fn begin_touch_frame(@core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn begin_touch_frame_raw(@core.RawAddress) -> Int
+
+pub let channel_access_enum_none : Int
+
+pub let channel_access_enum_sendreceive : Int
+
+pub let channel_flags_dynamic : Int
+
+pub let channel_flags_legacy : Int
+
+pub let channel_flags_uncompressed : Int
+
+pub let channel_priority_hi : Int
+
+pub let channel_priority_lo : Int
+
+pub let channel_priority_med : Int
+
+pub fn close_a109a169f4(@core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn close_a109a169f4_raw(@core.RawAddress) -> Int
+
+pub fn close_c6eead6196(@core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn close_c6eead6196_raw(@core.RawAddress) -> Int
+
+pub fn connect(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn connect_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn connect_to_client(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn connect_to_client_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn connect_using_transport_stream(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn connect_using_transport_stream_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub let const_attendee_id_default : Int
+
+pub let const_attendee_id_everyone : Int
+
+pub let const_attendee_id_host : Int
+
+pub let const_conn_interval : Int
+
+pub let const_max_channel_message_size : Int
+
+pub let const_max_channel_name_len : Int
+
+pub let const_max_legacy_channel_message_size : Int
+
+pub fn create_invitation(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, Int, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn create_invitation_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, Int, @core.RawAddress) -> Int
+
+pub fn create_logger(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn create_logger_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn create_virtual_channel(@core.RawAddress, @core.RawAddress, Int, UInt, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn create_virtual_channel_raw(@core.RawAddress, @core.RawAddress, Int, UInt, @core.RawAddress) -> Int
+
+pub let ctrl_level_interactive : Int
+
+pub let ctrl_level_invalid : Int
+
+pub let ctrl_level_max : Int
+
+pub let ctrl_level_min : Int
+
+pub let ctrl_level_none : Int
+
+pub let ctrl_level_reqctrl_interactive : Int
+
+pub let ctrl_level_reqctrl_view : Int
+
+pub let ctrl_level_view : Int
+
+pub fn disconnect(@core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn disconnect_raw(@core.RawAddress) -> Int
+
+pub let dispid_rdpapi_event_on_bounding_rect_changed : UInt
+
+pub let dispid_rdpsrapi_event_on_appfilter_update : UInt
+
+pub let dispid_rdpsrapi_event_on_application_close : UInt
+
+pub let dispid_rdpsrapi_event_on_application_open : UInt
+
+pub let dispid_rdpsrapi_event_on_application_update : UInt
+
+pub let dispid_rdpsrapi_event_on_attendee_connected : UInt
+
+pub let dispid_rdpsrapi_event_on_attendee_disconnected : UInt
+
+pub let dispid_rdpsrapi_event_on_attendee_update : UInt
+
+pub let dispid_rdpsrapi_event_on_ctrllevel_change_request : UInt
+
+pub let dispid_rdpsrapi_event_on_ctrllevel_change_response : UInt
+
+pub let dispid_rdpsrapi_event_on_error : UInt
+
+pub let dispid_rdpsrapi_event_on_focusreleased : UInt
+
+pub let dispid_rdpsrapi_event_on_graphics_stream_paused : UInt
+
+pub let dispid_rdpsrapi_event_on_graphics_stream_resumed : UInt
+
+pub let dispid_rdpsrapi_event_on_shared_desktop_settings_changed : UInt
+
+pub let dispid_rdpsrapi_event_on_shared_rect_changed : UInt
+
+pub let dispid_rdpsrapi_event_on_stream_closed : UInt
+
+pub let dispid_rdpsrapi_event_on_stream_datareceived : UInt
+
+pub let dispid_rdpsrapi_event_on_stream_sendcompleted : UInt
+
+pub let dispid_rdpsrapi_event_on_viewer_authenticated : UInt
+
+pub let dispid_rdpsrapi_event_on_viewer_connected : UInt
+
+pub let dispid_rdpsrapi_event_on_viewer_connectfailed : UInt
+
+pub let dispid_rdpsrapi_event_on_viewer_disconnected : UInt
+
+pub let dispid_rdpsrapi_event_on_virtual_channel_datareceived : UInt
+
+pub let dispid_rdpsrapi_event_on_virtual_channel_join : UInt
+
+pub let dispid_rdpsrapi_event_on_virtual_channel_leave : UInt
+
+pub let dispid_rdpsrapi_event_on_virtual_channel_sendcompleted : UInt
+
+pub let dispid_rdpsrapi_event_on_window_close : UInt
+
+pub let dispid_rdpsrapi_event_on_window_open : UInt
+
+pub let dispid_rdpsrapi_event_on_window_update : UInt
+
+pub let dispid_rdpsrapi_event_view_mouse_button_received : UInt
+
+pub let dispid_rdpsrapi_event_view_mouse_move_received : UInt
+
+pub let dispid_rdpsrapi_event_view_mouse_wheel_received : UInt
+
+pub let dispid_rdpsrapi_method_add_touch_input : UInt
+
+pub let dispid_rdpsrapi_method_begin_touch_frame : UInt
+
+pub let dispid_rdpsrapi_method_close : UInt
+
+pub let dispid_rdpsrapi_method_connecttoclient : UInt
+
+pub let dispid_rdpsrapi_method_connectusingtransportstream : UInt
+
+pub let dispid_rdpsrapi_method_create_invitation : UInt
+
+pub let dispid_rdpsrapi_method_end_touch_frame : UInt
+
+pub let dispid_rdpsrapi_method_getframebufferbits : UInt
+
+pub let dispid_rdpsrapi_method_getsharedrect : UInt
+
+pub let dispid_rdpsrapi_method_open : UInt
+
+pub let dispid_rdpsrapi_method_pause : UInt
+
+pub let dispid_rdpsrapi_method_request_color_depth_change : UInt
+
+pub let dispid_rdpsrapi_method_request_control : UInt
+
+pub let dispid_rdpsrapi_method_resume : UInt
+
+pub let dispid_rdpsrapi_method_send_keyboard_event : UInt
+
+pub let dispid_rdpsrapi_method_send_mouse_button_event : UInt
+
+pub let dispid_rdpsrapi_method_send_mouse_move_event : UInt
+
+pub let dispid_rdpsrapi_method_send_mouse_wheel_event : UInt
+
+pub let dispid_rdpsrapi_method_send_sync_event : UInt
+
+pub let dispid_rdpsrapi_method_sendcontrollevelchangeresponse : UInt
+
+pub let dispid_rdpsrapi_method_set_rendering_surface : UInt
+
+pub let dispid_rdpsrapi_method_setsharedrect : UInt
+
+pub let dispid_rdpsrapi_method_show_window : UInt
+
+pub let dispid_rdpsrapi_method_startrevconnectlistener : UInt
+
+pub let dispid_rdpsrapi_method_stream_allocbuffer : UInt
+
+pub let dispid_rdpsrapi_method_stream_freebuffer : UInt
+
+pub let dispid_rdpsrapi_method_streamclose : UInt
+
+pub let dispid_rdpsrapi_method_streamopen : UInt
+
+pub let dispid_rdpsrapi_method_streamreaddata : UInt
+
+pub let dispid_rdpsrapi_method_streamsenddata : UInt
+
+pub let dispid_rdpsrapi_method_terminate_connection : UInt
+
+pub let dispid_rdpsrapi_method_viewerconnect : UInt
+
+pub let dispid_rdpsrapi_method_viewerdisconnect : UInt
+
+pub let dispid_rdpsrapi_method_virtual_channel_create : UInt
+
+pub let dispid_rdpsrapi_method_virtual_channel_send_data : UInt
+
+pub let dispid_rdpsrapi_method_virtual_channel_set_access : UInt
+
+pub let dispid_rdpsrapi_prop_appfilter_enabled : UInt
+
+pub let dispid_rdpsrapi_prop_appfilterenabled : UInt
+
+pub let dispid_rdpsrapi_prop_appflags : UInt
+
+pub let dispid_rdpsrapi_prop_application : UInt
+
+pub let dispid_rdpsrapi_prop_application_filter : UInt
+
+pub let dispid_rdpsrapi_prop_application_list : UInt
+
+pub let dispid_rdpsrapi_prop_appname : UInt
+
+pub let dispid_rdpsrapi_prop_attendee_flags : UInt
+
+pub let dispid_rdpsrapi_prop_attendeelimit : UInt
+
+pub let dispid_rdpsrapi_prop_attendees : UInt
+
+pub let dispid_rdpsrapi_prop_channelmanager : UInt
+
+pub let dispid_rdpsrapi_prop_code : UInt
+
+pub let dispid_rdpsrapi_prop_coninfo : UInt
+
+pub let dispid_rdpsrapi_prop_connection_string : UInt
+
+pub let dispid_rdpsrapi_prop_count : UInt
+
+pub let dispid_rdpsrapi_prop_ctrl_level : UInt
+
+pub let dispid_rdpsrapi_prop_dbg_clx_cmdline : UInt
+
+pub let dispid_rdpsrapi_prop_disconnected_string : UInt
+
+pub let dispid_rdpsrapi_prop_dispidvalue : UInt
+
+pub let dispid_rdpsrapi_prop_framebuffer : UInt
+
+pub let dispid_rdpsrapi_prop_framebuffer_bpp : UInt
+
+pub let dispid_rdpsrapi_prop_framebuffer_height : UInt
+
+pub let dispid_rdpsrapi_prop_framebuffer_width : UInt
+
+pub let dispid_rdpsrapi_prop_group_name : UInt
+
+pub let dispid_rdpsrapi_prop_id : UInt
+
+pub let dispid_rdpsrapi_prop_invitation : UInt
+
+pub let dispid_rdpsrapi_prop_invitationitem : UInt
+
+pub let dispid_rdpsrapi_prop_invitations : UInt
+
+pub let dispid_rdpsrapi_prop_local_ip : UInt
+
+pub let dispid_rdpsrapi_prop_local_port : UInt
+
+pub let dispid_rdpsrapi_prop_password : UInt
+
+pub let dispid_rdpsrapi_prop_peer_ip : UInt
+
+pub let dispid_rdpsrapi_prop_peer_port : UInt
+
+pub let dispid_rdpsrapi_prop_protocol_type : UInt
+
+pub let dispid_rdpsrapi_prop_reason : UInt
+
+pub let dispid_rdpsrapi_prop_remotename : UInt
+
+pub let dispid_rdpsrapi_prop_revoked : UInt
+
+pub let dispid_rdpsrapi_prop_session_colordepth : UInt
+
+pub let dispid_rdpsrapi_prop_session_properties : UInt
+
+pub let dispid_rdpsrapi_prop_shared : UInt
+
+pub let dispid_rdpsrapi_prop_streambuffer_context : UInt
+
+pub let dispid_rdpsrapi_prop_streambuffer_flags : UInt
+
+pub let dispid_rdpsrapi_prop_streambuffer_payloadoffset : UInt
+
+pub let dispid_rdpsrapi_prop_streambuffer_payloadsize : UInt
+
+pub let dispid_rdpsrapi_prop_streambuffer_storage : UInt
+
+pub let dispid_rdpsrapi_prop_streambuffer_storesize : UInt
+
+pub let dispid_rdpsrapi_prop_usesmartsizing : UInt
+
+pub let dispid_rdpsrapi_prop_virtual_channel_getflags : UInt
+
+pub let dispid_rdpsrapi_prop_virtual_channel_getname : UInt
+
+pub let dispid_rdpsrapi_prop_virtual_channel_getpriority : UInt
+
+pub let dispid_rdpsrapi_prop_window_list : UInt
+
+pub let dispid_rdpsrapi_prop_windowid : UInt
+
+pub let dispid_rdpsrapi_prop_windowname : UInt
+
+pub let dispid_rdpsrapi_prop_windowshared : UInt
+
+pub let dispid_rdpsrapi_prop_wndflags : UInt
+
+pub fn end_touch_frame(@core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn end_touch_frame_raw(@core.RawAddress) -> Int
+
+pub fn free_buffer_0622156b33(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn free_buffer_0622156b33_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn free_buffer_a019c1e1d1(@core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn free_buffer_a019c1e1d1_raw(@core.RawAddress) -> Int
+
+pub fn get_application(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn get_application_filter_470b21fe94(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn get_application_filter_470b21fe94_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn get_application_filter_fb53f50c41(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn get_application_filter_fb53f50c41_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn get_application_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn get_applications(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn get_applications_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn get_attendee(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn get_attendee_limit(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn get_attendee_limit_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn get_attendee_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn get_attendees_518bcdd502(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn get_attendees_518bcdd502_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn get_attendees_d16e302310(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn get_attendees_d16e302310_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn get_bpp(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn get_bpp_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn get_buffer(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn get_buffer_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn get_clx_cmd_line(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn get_clx_cmd_line_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn get_code(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn get_code_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn get_color_depth(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn get_color_depth_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn get_connection_string(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn get_connection_string_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn get_connectivity_info(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn get_connectivity_info_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn get_context(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn get_context_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn get_control_level(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn get_control_level_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn get_count(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn get_count_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn get_desktop_shared_rect(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn get_desktop_shared_rect_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn get_disconnected_text(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn get_disconnected_text_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn get_enabled(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn get_enabled_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn get_flags_350393c4d9(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn get_flags_350393c4d9_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn get_flags_73f1a4e7fb(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn get_flags_73f1a4e7fb_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn get_flags_75303cb114(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn get_flags_75303cb114_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn get_flags_8911f51e3d(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn get_flags_8911f51e3d_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn get_flags_cbea7130ce(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn get_flags_cbea7130ce_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn get_frame_buffer(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn get_frame_buffer_bits(@core.RawAddress, Int, Int, Int, Int, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn get_frame_buffer_bits_raw(@core.RawAddress, Int, Int, Int, Int, @core.RawAddress) -> Int
+
+pub fn get_frame_buffer_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn get_group_name(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn get_group_name_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn get_height(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn get_height_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn get_id_7a2edadb0b(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn get_id_7a2edadb0b_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn get_id_7a2fe98639(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn get_id_7a2fe98639_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn get_id_e2a0e7dd4f(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn get_id_e2a0e7dd4f_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn get_invitation(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn get_invitation_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn get_invitations_61a479a04b(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn get_invitations_61a479a04b_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn get_invitations_720b08d811(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn get_invitations_720b08d811_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn get_item_2c93a99e58(@core.RawAddress, Bytes, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn get_item_2c93a99e58_raw(@core.RawAddress, Bytes, @core.RawAddress) -> Int
+
+pub fn get_item_57516c2c23(@core.RawAddress, Bytes, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn get_item_57516c2c23_raw(@core.RawAddress, Bytes, @core.RawAddress) -> Int
+
+pub fn get_item_939815f64a(@core.RawAddress, Int, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn get_item_939815f64a_raw(@core.RawAddress, Int, @core.RawAddress) -> Int
+
+pub fn get_item_a389529ae1(@core.RawAddress, Int, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn get_item_a389529ae1_raw(@core.RawAddress, Int, @core.RawAddress) -> Int
+
+pub fn get_item_d6f5567374(@core.RawAddress, Int, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn get_item_d6f5567374_raw(@core.RawAddress, Int, @core.RawAddress) -> Int
+
+pub fn get_local_ip(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn get_local_ip_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn get_local_port(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn get_local_port_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn get_name_6a9dc18ee8(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn get_name_6a9dc18ee8_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn get_name_eff0da6530(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn get_name_eff0da6530_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn get_name_f80b027867(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn get_name_f80b027867_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn get_new_enum_2dc3c4f68c(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn get_new_enum_2dc3c4f68c_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn get_new_enum_2eb747acf9(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn get_new_enum_2eb747acf9_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn get_new_enum_6a12bfd542(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn get_new_enum_6a12bfd542_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn get_new_enum_cf154e5863(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn get_new_enum_cf154e5863_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn get_new_enum_d2be770b1f(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn get_new_enum_d2be770b1f_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn get_password(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn get_password_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn get_payload_offset(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn get_payload_offset_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn get_payload_size(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn get_payload_size_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn get_peer_ip(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn get_peer_ip_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn get_peer_port(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn get_peer_port_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn get_priority(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn get_priority_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn get_properties_061b8cd763(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn get_properties_061b8cd763_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn get_properties_b0445e0080(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn get_properties_b0445e0080_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn get_property(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn get_property_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn get_protocol(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn get_protocol_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn get_reason(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn get_reason_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn get_remote_name(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn get_remote_name_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn get_revoked(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn get_revoked_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn get_shared_a53baeb3a3(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn get_shared_a53baeb3a3_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn get_shared_d91c1491dd(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn get_shared_d91c1491dd_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn get_smart_sizing(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn get_smart_sizing_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn get_storage(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn get_storage_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn get_storage_size(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn get_storage_size_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn get_virtual_channel_manager_0ca4c52efe(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn get_virtual_channel_manager_0ca4c52efe_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn get_virtual_channel_manager_77ba7b38a0(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn get_virtual_channel_manager_77ba7b38a0_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn get_width(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn get_width_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn get_windows_999314db4f(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn get_windows_999314db4f_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn get_windows_c423a570df(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn get_windows_c423a570df_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn initialize(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn initialize_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn log_value(@core.RawAddress, Int64) -> Unit raise @core.WindowsError
+
+pub fn log_value_raw(@core.RawAddress, Int64) -> Int
+
+pub fn on_paste_from_clipboard(@core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn on_paste_from_clipboard_raw(@core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn on_read_completed_raw(@core.RawAddress, @core.RawAddress) -> Unit
+
+pub fn on_stream_closed_raw(@core.RawAddress, Int) -> Unit
+
+pub fn on_write_completed_raw(@core.RawAddress, @core.RawAddress) -> Unit
+
+pub fn open_5f18f5bffd(@core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn open_5f18f5bffd_raw(@core.RawAddress) -> Int
+
+pub fn open_e238b8e103(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn open_e238b8e103_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn pause(@core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn pause_raw(@core.RawAddress) -> Int
+
+pub fn put_attendee_limit(@core.RawAddress, Int) -> Unit raise @core.WindowsError
+
+pub fn put_attendee_limit_raw(@core.RawAddress, Int) -> Int
+
+pub fn put_clx_cmd_line(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn put_clx_cmd_line_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn put_color_depth(@core.RawAddress, Int) -> Unit raise @core.WindowsError
+
+pub fn put_color_depth_raw(@core.RawAddress, Int) -> Int
+
+pub fn put_context(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn put_context_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn put_control_level(@core.RawAddress, Int) -> Unit raise @core.WindowsError
+
+pub fn put_control_level_raw(@core.RawAddress, Int) -> Int
+
+pub fn put_disconnected_text(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn put_disconnected_text_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn put_enabled(@core.RawAddress, Int) -> Unit raise @core.WindowsError
+
+pub fn put_enabled_raw(@core.RawAddress, Int) -> Int
+
+pub fn put_flags(@core.RawAddress, Int) -> Unit raise @core.WindowsError
+
+pub fn put_flags_raw(@core.RawAddress, Int) -> Int
+
+pub fn put_payload_offset(@core.RawAddress, Int) -> Unit raise @core.WindowsError
+
+pub fn put_payload_offset_raw(@core.RawAddress, Int) -> Int
+
+pub fn put_payload_size(@core.RawAddress, Int) -> Unit raise @core.WindowsError
+
+pub fn put_payload_size_raw(@core.RawAddress, Int) -> Int
+
+pub fn put_property(@core.RawAddress, @core.RawAddress, Bytes) -> Unit raise @core.WindowsError
+
+pub fn put_property_raw(@core.RawAddress, @core.RawAddress, Bytes) -> Int
+
+pub fn put_revoked(@core.RawAddress, Int) -> Unit raise @core.WindowsError
+
+pub fn put_revoked_raw(@core.RawAddress, Int) -> Int
+
+pub fn put_shared_1858642ba5(@core.RawAddress, Int) -> Unit raise @core.WindowsError
+
+pub fn put_shared_1858642ba5_raw(@core.RawAddress, Int) -> Int
+
+pub fn put_shared_c121eab7c5(@core.RawAddress, Int) -> Unit raise @core.WindowsError
+
+pub fn put_shared_c121eab7c5_raw(@core.RawAddress, Int) -> Int
+
+pub fn put_smart_sizing(@core.RawAddress, Int) -> Unit raise @core.WindowsError
+
+pub fn put_smart_sizing_raw(@core.RawAddress, Int) -> Int
+
+pub let rdpsrapi_kbd_code_scancode : Int
+
+pub let rdpsrapi_kbd_code_unicode : Int
+
+pub let rdpsrapi_kbd_sync_flag_caps_lock : Int
+
+pub let rdpsrapi_kbd_sync_flag_kana_lock : Int
+
+pub let rdpsrapi_kbd_sync_flag_num_lock : Int
+
+pub let rdpsrapi_kbd_sync_flag_scroll_lock : Int
+
+pub let rdpsrapi_mouse_button_button1 : Int
+
+pub let rdpsrapi_mouse_button_button2 : Int
+
+pub let rdpsrapi_mouse_button_button3 : Int
+
+pub let rdpsrapi_mouse_button_xbutton1 : Int
+
+pub let rdpsrapi_mouse_button_xbutton2 : Int
+
+pub let rdpsrapi_mouse_button_xbutton3 : Int
+
+pub fn read_buffer(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn read_buffer_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn request_color_depth_change(@core.RawAddress, Int) -> Unit raise @core.WindowsError
+
+pub fn request_color_depth_change_raw(@core.RawAddress, Int) -> Int
+
+pub fn request_control(@core.RawAddress, Int) -> Unit raise @core.WindowsError
+
+pub fn request_control_raw(@core.RawAddress, Int) -> Int
+
+pub fn resume_(@core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn resume__raw(@core.RawAddress) -> Int
+
+pub fn send_control_level_change_response(@core.RawAddress, @core.RawAddress, Int, Int) -> Unit raise @core.WindowsError
+
+pub fn send_control_level_change_response_raw(@core.RawAddress, @core.RawAddress, Int, Int) -> Int
+
+pub fn send_data(@core.RawAddress, @core.RawAddress, Int, UInt) -> Unit raise @core.WindowsError
+
+pub fn send_data_raw(@core.RawAddress, @core.RawAddress, Int, UInt) -> Int
+
+pub fn send_keyboard_event(@core.RawAddress, Int, UInt, Int, Int, Int) -> Unit raise @core.WindowsError
+
+pub fn send_keyboard_event_raw(@core.RawAddress, Int, UInt, Int, Int, Int) -> Int
+
+pub fn send_mouse_button_event(@core.RawAddress, Int, Int, UInt, UInt) -> Unit raise @core.WindowsError
+
+pub fn send_mouse_button_event_raw(@core.RawAddress, Int, Int, UInt, UInt) -> Int
+
+pub fn send_mouse_move_event(@core.RawAddress, UInt, UInt) -> Unit raise @core.WindowsError
+
+pub fn send_mouse_move_event_raw(@core.RawAddress, UInt, UInt) -> Int
+
+pub fn send_mouse_wheel_event(@core.RawAddress, UInt) -> Unit raise @core.WindowsError
+
+pub fn send_mouse_wheel_event_raw(@core.RawAddress, UInt) -> Int
+
+pub fn send_sync_event(@core.RawAddress, UInt) -> Unit raise @core.WindowsError
+
+pub fn send_sync_event_raw(@core.RawAddress, UInt) -> Int
+
+pub fn set_access(@core.RawAddress, Int, Int) -> Unit raise @core.WindowsError
+
+pub fn set_access_raw(@core.RawAddress, Int, Int) -> Int
+
+pub fn set_desktop_shared_rect(@core.RawAddress, Int, Int, Int, Int) -> Unit raise @core.WindowsError
+
+pub fn set_desktop_shared_rect_raw(@core.RawAddress, Int, Int, Int, Int) -> Int
+
+pub fn show(@core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn show_raw(@core.RawAddress) -> Int
+
+pub fn start(@core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn start_raw(@core.RawAddress) -> Int
+
+pub fn start_reverse_connect_listener(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn start_reverse_connect_listener_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn stop(@core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn stop_raw(@core.RawAddress) -> Int
+
+pub fn terminate_connection(@core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn terminate_connection_raw(@core.RawAddress) -> Int
+
+pub let wnd_flag_privileged : Int
+
+pub fn write_buffer(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn write_buffer_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+// Errors
+
+// Types and methods
+
+// Type aliases
+pub using @8e8f7b1c4d8547b0 {type ATTENDEEDISCONNECTREASON_e77180be6efd as ATTENDEEDISCONNECTREASON}
+
+pub using @8e8f7b1c4d8547b0 {type CHANNELACCESSENUM_c6ab41f3eded as CHANNELACCESSENUM}
+
+pub using @8e8f7b1c4d8547b0 {type CHANNELFLAGS_b95c311e96c9 as CHANNELFLAGS}
+
+pub using @8e8f7b1c4d8547b0 {type CHANNELPRIORITY_966cf45b4164 as CHANNELPRIORITY}
+
+pub using @8e8f7b1c4d8547b0 {type CTRLLEVEL_1b17cc8e7d53 as CTRLLEVEL}
+
+pub using @8e8f7b1c4d8547b0 {type IRDPSRAPIApplication_5b40970c9739 as IRDPSRAPIApplication}
+
+pub using @8e8f7b1c4d8547b0 {type IRDPSRAPIApplicationFilter_edd1dd257639 as IRDPSRAPIApplicationFilter}
+
+pub using @8e8f7b1c4d8547b0 {type IRDPSRAPIApplicationList_be225e937210 as IRDPSRAPIApplicationList}
+
+pub using @8e8f7b1c4d8547b0 {type IRDPSRAPIAttendee_52aadf376bb3 as IRDPSRAPIAttendee}
+
+pub using @8e8f7b1c4d8547b0 {type IRDPSRAPIAttendeeDisconnectInfo_79fc4ff5b84a as IRDPSRAPIAttendeeDisconnectInfo}
+
+pub using @8e8f7b1c4d8547b0 {type IRDPSRAPIAttendeeManager_bf306cd606f4 as IRDPSRAPIAttendeeManager}
+
+pub using @8e8f7b1c4d8547b0 {type IRDPSRAPIAudioStream_50a4bafbb36b as IRDPSRAPIAudioStream}
+
+pub using @8e8f7b1c4d8547b0 {type IRDPSRAPIClipboardUseEvents_7b9e55f5aced as IRDPSRAPIClipboardUseEvents}
+
+pub using @8e8f7b1c4d8547b0 {type IRDPSRAPIDebug_6b117a95dbbc as IRDPSRAPIDebug}
+
+pub using @8e8f7b1c4d8547b0 {type IRDPSRAPIFrameBuffer_14f6553cb814 as IRDPSRAPIFrameBuffer}
+
+pub using @8e8f7b1c4d8547b0 {type IRDPSRAPIInvitation_491669379418 as IRDPSRAPIInvitation}
+
+pub using @8e8f7b1c4d8547b0 {type IRDPSRAPIInvitationManager_266693351735 as IRDPSRAPIInvitationManager}
+
+pub using @8e8f7b1c4d8547b0 {type IRDPSRAPIPerfCounterLogger_eb4f76c420fd as IRDPSRAPIPerfCounterLogger}
+
+pub using @8e8f7b1c4d8547b0 {type IRDPSRAPIPerfCounterLoggingManager_9baa9f6eda96 as IRDPSRAPIPerfCounterLoggingManager}
+
+pub using @8e8f7b1c4d8547b0 {type IRDPSRAPISessionProperties_6389dc8fc7ae as IRDPSRAPISessionProperties}
+
+pub using @8e8f7b1c4d8547b0 {type IRDPSRAPISharingSession_dc994a0d0d1f as IRDPSRAPISharingSession}
+
+pub using @8e8f7b1c4d8547b0 {type IRDPSRAPISharingSession2_aafa17a8b0a6 as IRDPSRAPISharingSession2}
+
+pub using @8e8f7b1c4d8547b0 {type IRDPSRAPITcpConnectionInfo_27dea35ea4a2 as IRDPSRAPITcpConnectionInfo}
+
+pub using @8e8f7b1c4d8547b0 {type IRDPSRAPITransportStream_307bb985833d as IRDPSRAPITransportStream}
+
+pub using @8e8f7b1c4d8547b0 {type IRDPSRAPITransportStreamBuffer_a8bb008ccaef as IRDPSRAPITransportStreamBuffer}
+
+pub using @8e8f7b1c4d8547b0 {type IRDPSRAPITransportStreamEvents_3f00ef9458d6 as IRDPSRAPITransportStreamEvents}
+
+pub using @8e8f7b1c4d8547b0 {type IRDPSRAPIViewer_f792d83a627d as IRDPSRAPIViewer}
+
+pub using @8e8f7b1c4d8547b0 {type IRDPSRAPIVirtualChannel_a0a789ae6db4 as IRDPSRAPIVirtualChannel}
+
+pub using @8e8f7b1c4d8547b0 {type IRDPSRAPIVirtualChannelManager_dcfb1a720cca as IRDPSRAPIVirtualChannelManager}
+
+pub using @8e8f7b1c4d8547b0 {type IRDPSRAPIWindow_5b4daa4e84ed as IRDPSRAPIWindow}
+
+pub using @8e8f7b1c4d8547b0 {type IRDPSRAPIWindowList_e5995cac9d80 as IRDPSRAPIWindowList}
+
+pub using @8e8f7b1c4d8547b0 {type IRDPSessionEvents_87a8ba820139 as IRDPSessionEvents}
+
+pub using @8e8f7b1c4d8547b0 {type IRDPViewerInputSink_3ec7283de0c3 as IRDPViewerInputSink}
+
+pub using @8e8f7b1c4d8547b0 {type RDPENCOMAPIATTENDEEFLAGS_b5158af0e34e as RDPENCOMAPIATTENDEEFLAGS}
+
+pub using @8e8f7b1c4d8547b0 {type RDPENCOMAPICONSTANTS_a978c0b19cfb as RDPENCOMAPICONSTANTS}
+
+pub using @8e8f7b1c4d8547b0 {type RDPSRAPIAPPFLAGS_437a74e62804 as RDPSRAPIAPPFLAGS}
+
+pub using @8e8f7b1c4d8547b0 {type RDPSRAPIApplication_96ff71c731ce as RDPSRAPIApplication}
+
+pub using @8e8f7b1c4d8547b0 {type RDPSRAPIApplicationFilter_48df9c196d9d as RDPSRAPIApplicationFilter}
+
+pub using @8e8f7b1c4d8547b0 {type RDPSRAPIApplicationList_346fcb4ec6ee as RDPSRAPIApplicationList}
+
+pub using @8e8f7b1c4d8547b0 {type RDPSRAPIAttendee_1820cbcaa9bd as RDPSRAPIAttendee}
+
+pub using @8e8f7b1c4d8547b0 {type RDPSRAPIAttendeeDisconnectInfo_14ea7355dc44 as RDPSRAPIAttendeeDisconnectInfo}
+
+pub using @8e8f7b1c4d8547b0 {type RDPSRAPIAttendeeManager_fe9973ae7ece as RDPSRAPIAttendeeManager}
+
+pub using @8e8f7b1c4d8547b0 {type RDPSRAPIFrameBuffer_7a8dbfbf64be as RDPSRAPIFrameBuffer}
+
+pub using @8e8f7b1c4d8547b0 {type RDPSRAPIInvitation_64cb56fe9c7a as RDPSRAPIInvitation}
+
+pub using @8e8f7b1c4d8547b0 {type RDPSRAPIInvitationManager_92bf63d17806 as RDPSRAPIInvitationManager}
+
+pub using @8e8f7b1c4d8547b0 {type RDPSRAPIKBDCODETYPE_56397e1c980e as RDPSRAPIKBDCODETYPE}
+
+pub using @8e8f7b1c4d8547b0 {type RDPSRAPIKBDSYNCFLAG_1a4817309357 as RDPSRAPIKBDSYNCFLAG}
+
+pub using @8e8f7b1c4d8547b0 {type RDPSRAPIMOUSEBUTTONTYPE_4b8c2a96b947 as RDPSRAPIMOUSEBUTTONTYPE}
+
+pub using @8e8f7b1c4d8547b0 {type RDPSRAPISessionProperties_166515a0d205 as RDPSRAPISessionProperties}
+
+pub using @8e8f7b1c4d8547b0 {type RDPSRAPITcpConnectionInfo_eb7c0875185c as RDPSRAPITcpConnectionInfo}
+
+pub using @8e8f7b1c4d8547b0 {type RDPSRAPIWNDFLAGS_c2b2eccef60f as RDPSRAPIWNDFLAGS}
+
+pub using @8e8f7b1c4d8547b0 {type RDPSRAPIWindow_d305bdbce0fc as RDPSRAPIWindow}
+
+pub using @8e8f7b1c4d8547b0 {type RDPSRAPIWindowList_cea8b89e666a as RDPSRAPIWindowList}
+
+pub using @8e8f7b1c4d8547b0 {type RDPSession_8eb023848fa3 as RDPSession}
+
+pub using @8e8f7b1c4d8547b0 {type RDPTransportStreamBuffer_feb2bd041b71 as RDPTransportStreamBuffer}
+
+pub using @8e8f7b1c4d8547b0 {type RDPTransportStreamEvents_bb5152d05506 as RDPTransportStreamEvents}
+
+pub using @8e8f7b1c4d8547b0 {type RDPViewer_8a0a8565e1c2 as RDPViewer}
+
+pub using @8e8f7b1c4d8547b0 {type ReferenceRemainingTypes_0297e2aa644f as ReferenceRemainingTypes}
+
+// Traits
+

@@ -1,0 +1,63 @@
+// Generated using `moon info`, DON'T EDIT IT
+package "moonbit-community/win32-bindings/windows/devices/pwm/provider"
+
+import {
+  "moonbit-community/win32-bindings/runtime/core",
+  "moonbit-community/win32-bindings/scc/746a42315a6f413e",
+  "moonbitlang/core/ref",
+}
+
+// Values
+pub fn acquire_pin(@core.RawAddress, Int) -> Unit raise @core.WindowsError
+
+pub fn acquire_pin_raw(@core.RawAddress, Int) -> Int
+
+pub let actual_frequency : String
+
+pub fn disable_pin(@core.RawAddress, Int) -> Unit raise @core.WindowsError
+
+pub fn disable_pin_raw(@core.RawAddress, Int) -> Int
+
+pub fn enable_pin(@core.RawAddress, Int) -> Unit raise @core.WindowsError
+
+pub fn enable_pin_raw(@core.RawAddress, Int) -> Int
+
+pub fn get_actual_frequency_raw(@core.RawAddress, Bytes) -> Int
+
+pub fn get_controllers_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_max_frequency_raw(@core.RawAddress, Bytes) -> Int
+
+pub fn get_min_frequency_raw(@core.RawAddress, Bytes) -> Int
+
+pub fn get_pin_count(@core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn get_pin_count_raw(@core.RawAddress, @ref.Ref[Int]) -> Int
+
+pub let max_frequency : String
+
+pub let min_frequency : String
+
+pub let pin_count : String
+
+pub fn release_pin(@core.RawAddress, Int) -> Unit raise @core.WindowsError
+
+pub fn release_pin_raw(@core.RawAddress, Int) -> Int
+
+pub fn set_desired_frequency_raw(@core.RawAddress, Double, Bytes) -> Int
+
+pub fn set_pulse_parameters(@core.RawAddress, Int, Double, UInt) -> Unit raise @core.WindowsError
+
+pub fn set_pulse_parameters_raw(@core.RawAddress, Int, Double, UInt) -> Int
+
+// Errors
+
+// Types and methods
+
+// Type aliases
+pub using @746a42315a6f413e {type IPwmControllerProvider_5283a97c84e3 as IPwmControllerProvider}
+
+pub using @746a42315a6f413e {type IPwmProvider_88ad39695332 as IPwmProvider}
+
+// Traits
+

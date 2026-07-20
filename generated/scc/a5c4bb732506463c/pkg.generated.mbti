@@ -1,0 +1,146 @@
+// Generated using `moon info`, DON'T EDIT IT
+package "moonbit-community/win32-bindings/scc/a5c4bb732506463c"
+
+import {
+  "moonbit-community/win32-bindings/runtime/com",
+  "moonbit-community/win32-bindings/runtime/core",
+  "moonbitlang/core/debug",
+  "moonbitlang/core/ref",
+}
+
+// Values
+pub fn activatable_factory_e543abba7c2d(@core.Guid) -> @com.ComPtr[@com.IInspectable] raise @core.WindowsError
+
+pub fn add_value_changed_13451f4ee0d2(@core.RawAddress, @core.RawAddress) -> Int64 raise @core.WindowsError
+
+pub fn add_value_changed_13451f4ee0d2_raw(@core.RawAddress, @core.RawAddress, @ref.Ref[Int64]) -> Int
+
+pub fn create_7268b7318551_raw(@core.RawAddress, Int, @ref.Ref[UInt64]) -> Int
+
+pub let debounce_timeout_f69afdb18396 : String
+
+pub let edge_bc1c45fe8e83 : String
+
+pub let edge_dfbff0f13361 : String
+
+pub let exclusive_8765a85fec10 : Int
+
+pub let falling_edge_8e2da4bab98d : Int
+
+pub fn get_controllers_ee3b870f7d5a_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_debounce_timeout_ab3b979b8d2a(@core.RawAddress) -> Int64 raise @core.WindowsError
+
+pub fn get_debounce_timeout_ab3b979b8d2a_raw(@core.RawAddress, @ref.Ref[Int64]) -> Int
+
+pub fn get_drive_mode_2d5011935ade(@core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn get_drive_mode_2d5011935ade_raw(@core.RawAddress, @ref.Ref[Int]) -> Int
+
+pub fn get_edge_581f8d083828(@core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn get_edge_581f8d083828_raw(@core.RawAddress, @ref.Ref[Int]) -> Int
+
+pub fn get_pin_count_33b831c49f7a(@core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn get_pin_count_33b831c49f7a_raw(@core.RawAddress, @ref.Ref[Int]) -> Int
+
+pub fn get_pin_number_6246d6e82089(@core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn get_pin_number_6246d6e82089_raw(@core.RawAddress, @ref.Ref[Int]) -> Int
+
+pub fn get_sharing_mode_d38c2e473ea6(@core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn get_sharing_mode_d38c2e473ea6_raw(@core.RawAddress, @ref.Ref[Int]) -> Int
+
+pub let high_f6a6f3aa2561 : Int
+
+pub let input_6677f5eb31c1 : Int
+
+pub let input_pull_down_0f17a3475f53 : Int
+
+pub let input_pull_up_baf074cbed30 : Int
+
+pub fn is_drive_mode_supported_1bba72726742_raw(@core.RawAddress, Int, Bytes) -> Int
+
+pub let low_c72a61f21370 : Int
+
+pub fn open_pin_provider_7b07e9e36295_raw(@core.RawAddress, Int, Int, @ref.Ref[UInt64]) -> Int
+
+pub let output_5d2e853dd48f : Int
+
+pub let output_open_drain_5fcfa1a748f2 : Int
+
+pub let output_open_drain_pull_up_d1c391bc2e67 : Int
+
+pub let output_open_source_2a719e807880 : Int
+
+pub let output_open_source_pull_down_39c1c21396be : Int
+
+pub let pin_count_caf49c73e294 : String
+
+pub let pin_number_a8ddaf5ac47f : String
+
+pub fn put_debounce_timeout_9505999733a0(@core.RawAddress, Int64) -> Unit raise @core.WindowsError
+
+pub fn put_debounce_timeout_9505999733a0_raw(@core.RawAddress, Int64) -> Int
+
+pub fn read_509b5be06e5c(@core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn read_509b5be06e5c_raw(@core.RawAddress, @ref.Ref[Int]) -> Int
+
+pub fn remove_value_changed_8140c61dd52f(@core.RawAddress, Int64) -> Unit raise @core.WindowsError
+
+pub fn remove_value_changed_8140c61dd52f_raw(@core.RawAddress, Int64) -> Int
+
+pub let rising_edge_9fb6a41da6ef : Int
+
+pub fn set_drive_mode_6c0077d3bba2(@core.RawAddress, Int) -> Unit raise @core.WindowsError
+
+pub fn set_drive_mode_6c0077d3bba2_raw(@core.RawAddress, Int) -> Int
+
+pub let shared_read_only_996f3fdabde6 : Int
+
+pub let sharing_mode_340b14e18e5f : String
+
+pub let value_changed_a4b3ef4e8ff6 : String
+
+pub fn write_4f963162d27c(@core.RawAddress, Int) -> Unit raise @core.WindowsError
+
+pub fn write_4f963162d27c_raw(@core.RawAddress, Int) -> Int
+
+// Errors
+
+// Types and methods
+pub type GpioPinProviderValueChangedEventArgs_0ce0629f1702
+
+pub type IGpioControllerProvider_dc489ea8d111
+
+pub type IGpioPinProviderValueChangedEventArgsFactory_7fe1db4a7e9f
+
+pub type IGpioPinProviderValueChangedEventArgs_39a60f78a618
+
+pub type IGpioPinProvider_7422065dbeef
+
+pub type IGpioProvider_2eee10135275
+
+pub(all) struct ProviderGpioPinDriveMode_d1dd933a23b2(Int) derive(Compare, Eq, @debug.Debug)
+pub fn ProviderGpioPinDriveMode_d1dd933a23b2::from_int(Int) -> Self
+pub fn ProviderGpioPinDriveMode_d1dd933a23b2::to_int(Self) -> Int
+
+pub(all) struct ProviderGpioPinEdge_8a8cf255996e(Int) derive(Compare, Eq, @debug.Debug)
+pub fn ProviderGpioPinEdge_8a8cf255996e::from_int(Int) -> Self
+pub fn ProviderGpioPinEdge_8a8cf255996e::to_int(Self) -> Int
+
+pub(all) struct ProviderGpioPinValue_c2063d702498(Int) derive(Compare, Eq, @debug.Debug)
+pub fn ProviderGpioPinValue_c2063d702498::from_int(Int) -> Self
+pub fn ProviderGpioPinValue_c2063d702498::to_int(Self) -> Int
+
+pub(all) struct ProviderGpioSharingMode_0252eaf273c4(Int) derive(Compare, Eq, @debug.Debug)
+pub fn ProviderGpioSharingMode_0252eaf273c4::from_int(Int) -> Self
+pub fn ProviderGpioSharingMode_0252eaf273c4::to_int(Self) -> Int
+
+// Type aliases
+
+// Traits
+

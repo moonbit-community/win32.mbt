@@ -1,0 +1,5159 @@
+// Generated using `moon info`, DON'T EDIT IT
+package "moonbit-community/win32-bindings/windows/wdk/network_management/ndis"
+
+import {
+  "moonbit-community/win32-bindings/scc/1e68162b4d54a721",
+}
+
+// Values
+pub let authenticate : Int
+
+pub let binary_compatible : UInt
+
+pub let broadcast_vc : UInt
+
+pub let cached_net_buffer_list : Int
+
+pub let call_parameters_changed : UInt
+
+pub let classification_handle_packet_info : Int
+
+pub let clock_network_derived : UInt
+
+pub let clock_precision : UInt
+
+pub let co_address_family_proxy : UInt
+
+pub let co_send_flag_set_discard_elibility : UInt
+
+pub let crypto_generic_error : UInt
+
+pub let crypto_invalid_packet_syntax : UInt
+
+pub let crypto_invalid_protocol : UInt
+
+pub let crypto_success : UInt
+
+pub let crypto_transport_ah_auth_failed : UInt
+
+pub let crypto_transport_esp_auth_failed : UInt
+
+pub let crypto_tunnel_ah_auth_failed : UInt
+
+pub let crypto_tunnel_esp_auth_failed : UInt
+
+pub let dd_ndis_device_name : String
+
+pub let dot11_rsn_kck_length : UInt
+
+pub let dot11_rsn_kek_length : UInt
+
+pub let dot11_rsn_max_cipher_key_length : UInt
+
+pub let eapol_request_id_wol_flag_must_encrypt : UInt
+
+pub let encrypt : Int
+
+pub let erred_packet_indication : UInt
+
+pub let ethernet_length_of_address : UInt
+
+pub let f_ndis_guid_allow_read : UInt
+
+pub let f_ndis_guid_allow_write : UInt
+
+pub let f_ndis_guid_ansi_string : UInt
+
+pub let f_ndis_guid_array : UInt
+
+pub let f_ndis_guid_method : UInt
+
+pub let f_ndis_guid_ndis_reserved : UInt
+
+pub let f_ndis_guid_support_common_header : UInt
+
+pub let f_ndis_guid_to_oid : UInt
+
+pub let f_ndis_guid_to_status : UInt
+
+pub let f_ndis_guid_unicode_string : UInt
+
+pub let f_packet_allocated_by_ndis : UInt
+
+pub let f_packet_contains_media_specific_info : UInt
+
+pub let f_packet_wrapper_reserved : UInt
+
+pub let ieee8021_q_info : Int
+
+pub let indicate_end_of_tx : UInt
+
+pub let indicate_erred_packets : UInt
+
+pub let ioctl_ndis_reserved5 : UInt
+
+pub let ioctl_ndis_reserved6 : UInt
+
+pub let ip_sec_packet_info : Int
+
+pub let ipsec_offload_v2_and_tcp_checksum_coexistence : UInt
+
+pub let ipsec_offload_v2_and_udp_checksum_coexistence : UInt
+
+pub let ipsec_offload_v2_authentication_aes_gcm_128 : UInt
+
+pub let ipsec_offload_v2_authentication_aes_gcm_192 : UInt
+
+pub let ipsec_offload_v2_authentication_aes_gcm_256 : UInt
+
+pub let ipsec_offload_v2_authentication_md5 : UInt
+
+pub let ipsec_offload_v2_authentication_sha_1 : UInt
+
+pub let ipsec_offload_v2_authentication_sha_256 : UInt
+
+pub let ipsec_offload_v2_encryption_3_des_cbc : UInt
+
+pub let ipsec_offload_v2_encryption_aes_cbc_128 : UInt
+
+pub let ipsec_offload_v2_encryption_aes_cbc_192 : UInt
+
+pub let ipsec_offload_v2_encryption_aes_cbc_256 : UInt
+
+pub let ipsec_offload_v2_encryption_aes_gcm_128 : UInt
+
+pub let ipsec_offload_v2_encryption_aes_gcm_192 : UInt
+
+pub let ipsec_offload_v2_encryption_aes_gcm_256 : UInt
+
+pub let ipsec_offload_v2_encryption_des_cbc : UInt
+
+pub let ipsec_offload_v2_encryption_none : UInt
+
+pub let ipsec_offload_v2_esn_sa : UInt
+
+pub let ipsec_offload_v2_i_pv6 : UInt
+
+pub let ipsec_offload_v2_inbound : UInt
+
+pub let ipsec_offload_v2_max_extension_headers : UInt
+
+pub let ipsec_offload_v2_transport_over_udp_esp_encapsulation_tunnel : UInt
+
+pub let ipsec_offload_v2_udp_esp_encapsulation_none : UInt
+
+pub let ipsec_offload_v2_udp_esp_encapsulation_transport : UInt
+
+pub let ipsec_offload_v2_udp_esp_encapsulation_transport_over_tunnel : UInt
+
+pub let ipsec_offload_v2_udp_esp_encapsulation_tunnel : UInt
+
+pub let ipsec_tpt_udpesp_encaptype_ike : UInt
+
+pub let ipsec_tpt_udpesp_encaptype_other : UInt
+
+pub let ipsec_tpt_udpesp_over_pure_tun_encaptype_ike : UInt
+
+pub let ipsec_tpt_udpesp_over_pure_tun_encaptype_other : UInt
+
+pub let ipsec_tptovertun_udpesp_encaptype_ike : UInt
+
+pub let ipsec_tptovertun_udpesp_encaptype_other : UInt
+
+pub let ipsec_tun_udpesp_encaptype_ike : UInt
+
+pub let ipsec_tun_udpesp_encaptype_other : UInt
+
+pub let max_hashes : UInt
+
+pub let max_per_packet_info : Int
+
+pub let maximum_ip_oper_status_address_families_supported : UInt
+
+pub let multipoint_vc : UInt
+
+pub let nbl_flags_miniport_reserved : UInt
+
+pub let nbl_flags_ndis_reserved : UInt
+
+pub let nbl_flags_protocol_reserved : UInt
+
+pub let nbl_flags_scratch : UInt
+
+pub let nbl_prot_rsvd_flags : UInt
+
+pub let ndis630_miniport : UInt
+
+pub let ndis685_miniport : UInt
+
+pub let ndis802_11_auth_mode_auto_switch : Int
+
+pub let ndis802_11_auth_mode_max : Int
+
+pub let ndis802_11_auth_mode_open : Int
+
+pub let ndis802_11_auth_mode_shared : Int
+
+pub let ndis802_11_auth_mode_wpa : Int
+
+pub let ndis802_11_auth_mode_wpa2 : Int
+
+pub let ndis802_11_auth_mode_wpa2_psk : Int
+
+pub let ndis802_11_auth_mode_wpa3 : Int
+
+pub let ndis802_11_auth_mode_wpa3_ent : Int
+
+pub let ndis802_11_auth_mode_wpa3_ent192 : Int
+
+pub let ndis802_11_auth_mode_wpa3_sae : Int
+
+pub let ndis802_11_auth_mode_wpa_none : Int
+
+pub let ndis802_11_auth_mode_wpapsk : Int
+
+pub let ndis802_11_auto_unknown : Int
+
+pub let ndis802_11_automode : Int
+
+pub let ndis802_11_ds : Int
+
+pub let ndis802_11_encryption1_enabled : Int
+
+pub let ndis802_11_encryption1_key_absent : Int
+
+pub let ndis802_11_encryption2_enabled : Int
+
+pub let ndis802_11_encryption2_key_absent : Int
+
+pub let ndis802_11_encryption3_enabled : Int
+
+pub let ndis802_11_encryption3_key_absent : Int
+
+pub let ndis802_11_encryption_disabled : Int
+
+pub let ndis802_11_encryption_not_supported : Int
+
+pub let ndis802_11_fh : Int
+
+pub let ndis802_11_ibss : Int
+
+pub let ndis802_11_infrastructure : Int
+
+pub let ndis802_11_infrastructure_max : Int
+
+pub let ndis802_11_media_stream_off : Int
+
+pub let ndis802_11_media_stream_on : Int
+
+pub let ndis802_11_network_type_max : Int
+
+pub let ndis802_11_ofdm24 : Int
+
+pub let ndis802_11_ofdm5 : Int
+
+pub let ndis802_11_power_mode_cam : Int
+
+pub let ndis802_11_power_mode_fast_psp : Int
+
+pub let ndis802_11_power_mode_max : Int
+
+pub let ndis802_11_power_mode_max_psp : Int
+
+pub let ndis802_11_priv_filter8021x_wep : Int
+
+pub let ndis802_11_priv_filter_accept_all : Int
+
+pub let ndis802_11_radio_status_hardware_off : Int
+
+pub let ndis802_11_radio_status_hardware_software_off : Int
+
+pub let ndis802_11_radio_status_max : Int
+
+pub let ndis802_11_radio_status_on : Int
+
+pub let ndis802_11_radio_status_software_off : Int
+
+pub let ndis802_11_reload_wep_keys : Int
+
+pub let ndis802_11_status_type_authentication : Int
+
+pub let ndis802_11_status_type_max : Int
+
+pub let ndis802_11_status_type_media_stream_mode : Int
+
+pub let ndis802_11_status_type_pmkid_candidate_list : Int
+
+pub let ndis802_11_wep_disabled : Int
+
+pub let ndis802_11_wep_enabled : Int
+
+pub let ndis802_11_wep_key_absent : Int
+
+pub let ndis802_11_wep_not_supported : Int
+
+pub let ndis_802_11_ai_reqfi_capabilities : UInt
+
+pub let ndis_802_11_ai_reqfi_currentapaddress : UInt
+
+pub let ndis_802_11_ai_reqfi_listeninterval : UInt
+
+pub let ndis_802_11_ai_resfi_associationid : UInt
+
+pub let ndis_802_11_ai_resfi_capabilities : UInt
+
+pub let ndis_802_11_ai_resfi_statuscode : UInt
+
+pub let ndis_802_11_auth_request_auth_fields : UInt
+
+pub let ndis_802_11_auth_request_group_error : UInt
+
+pub let ndis_802_11_auth_request_keyupdate : UInt
+
+pub let ndis_802_11_auth_request_pairwise_error : UInt
+
+pub let ndis_802_11_auth_request_reauth : UInt
+
+pub let ndis_802_11_length_rates : UInt
+
+pub let ndis_802_11_length_rates_ex : UInt
+
+pub let ndis_802_11_length_ssid : UInt
+
+pub let ndis_802_11_pmkid_candidate_preauth_enabled : UInt
+
+pub let ndis_802_3_mac_option_priority : UInt
+
+pub let ndis_any_number_of_nbls : UInt
+
+pub let ndis_attribute_bus_master : UInt
+
+pub let ndis_attribute_deserialize : UInt
+
+pub let ndis_attribute_do_not_bind_to_all_co : UInt
+
+pub let ndis_attribute_ignore_packet_timeout : UInt
+
+pub let ndis_attribute_ignore_request_timeout : UInt
+
+pub let ndis_attribute_ignore_token_ring_errors : UInt
+
+pub let ndis_attribute_intermediate_driver : UInt
+
+pub let ndis_attribute_miniport_pads_short_packets : UInt
+
+pub let ndis_attribute_no_halt_on_suspend : UInt
+
+pub let ndis_attribute_not_co_ndis : UInt
+
+pub let ndis_attribute_surprise_remove_ok : UInt
+
+pub let ndis_attribute_uses_safe_buffer_apis : UInt
+
+pub let ndis_bind_failed_notification_revision_1 : UInt
+
+pub let ndis_bind_parameters_revision_1 : UInt
+
+pub let ndis_bind_parameters_revision_2 : UInt
+
+pub let ndis_bind_parameters_revision_3 : UInt
+
+pub let ndis_bind_parameters_revision_4 : UInt
+
+pub let ndis_class802_3_priority : Int
+
+pub let ndis_class_atm_aal_info : Int
+
+pub let ndis_class_irda_packet_info : Int
+
+pub let ndis_class_wireless_wan_mbx_mailbox : Int
+
+pub let ndis_clone_flags_reserved : UInt
+
+pub let ndis_clone_flags_use_original_mdls : UInt
+
+pub let ndis_co_call_manager_optional_handlers_revision_1 : UInt
+
+pub let ndis_co_client_optional_handlers_revision_1 : UInt
+
+pub let ndis_co_mac_option_dynamic_link_speed : UInt
+
+pub let ndis_config_flag_filter_instance_configuration : UInt
+
+pub let ndis_configuration_object_revision_1 : UInt
+
+pub let ndis_default_receive_filter_id : UInt
+
+pub let ndis_default_receive_queue_group_id : UInt
+
+pub let ndis_default_receive_queue_id : UInt
+
+pub let ndis_default_switch_id : UInt
+
+pub let ndis_default_vport_id : UInt
+
+pub let ndis_definitely_network_change : Int
+
+pub let ndis_device_object_attributes_revision_1 : UInt
+
+pub let ndis_device_pn_p_event_maximum : Int
+
+pub let ndis_device_pn_p_event_power_profile_changed : Int
+
+pub let ndis_device_pn_p_event_query_removed : Int
+
+pub let ndis_device_pn_p_event_query_stopped : Int
+
+pub let ndis_device_pn_p_event_removed : Int
+
+pub let ndis_device_pn_p_event_stopped : Int
+
+pub let ndis_device_pn_p_event_surprise_removed : Int
+
+pub let ndis_device_state_d0 : Int
+
+pub let ndis_device_state_d1 : Int
+
+pub let ndis_device_state_d2 : Int
+
+pub let ndis_device_state_d3 : Int
+
+pub let ndis_device_state_maximum : Int
+
+pub let ndis_device_state_unspecified : Int
+
+pub let ndis_device_type_endpoint : UInt
+
+pub let ndis_device_wake_on_magic_packet_enable : UInt
+
+pub let ndis_device_wake_on_pattern_match_enable : UInt
+
+pub let ndis_device_wake_up_enable : UInt
+
+pub let ndis_driver_flags_reserved : UInt
+
+pub let ndis_encapsulated_packet_task_offload_inner_ipv4 : UInt
+
+pub let ndis_encapsulated_packet_task_offload_inner_ipv6 : UInt
+
+pub let ndis_encapsulated_packet_task_offload_not_supported : UInt
+
+pub let ndis_encapsulated_packet_task_offload_outer_ipv4 : UInt
+
+pub let ndis_encapsulated_packet_task_offload_outer_ipv6 : UInt
+
+pub let ndis_encapsulation_ieee_802_3 : UInt
+
+pub let ndis_encapsulation_ieee_802_3_p_and_q : UInt
+
+pub let ndis_encapsulation_ieee_802_3_p_and_q_in_oob : UInt
+
+pub let ndis_encapsulation_ieee_llc_snap_routed : UInt
+
+pub let ndis_encapsulation_not_supported : UInt
+
+pub let ndis_encapsulation_null : UInt
+
+pub let ndis_encapsulation_type_gre_mac : UInt
+
+pub let ndis_encapsulation_type_vxlan : UInt
+
+pub let ndis_enum_filters_revision_1 : UInt
+
+pub let ndis_environment_windows : Int
+
+pub let ndis_environment_windows_nt : Int
+
+pub let ndis_eth_type_802_1_q : UInt
+
+pub let ndis_eth_type_802_1_x : UInt
+
+pub let ndis_eth_type_arp : UInt
+
+pub let ndis_eth_type_ipv4 : UInt
+
+pub let ndis_eth_type_ipv6 : UInt
+
+pub let ndis_eth_type_slow_protocol : UInt
+
+pub let ndis_fddi_ring_detect : Int
+
+pub let ndis_fddi_ring_directed : Int
+
+pub let ndis_fddi_ring_isolated : Int
+
+pub let ndis_fddi_ring_non_operational : Int
+
+pub let ndis_fddi_ring_non_operational_dup : Int
+
+pub let ndis_fddi_ring_operational : Int
+
+pub let ndis_fddi_ring_operational_dup : Int
+
+pub let ndis_fddi_ring_trace : Int
+
+pub let ndis_fddi_state_active : Int
+
+pub let ndis_fddi_state_break : Int
+
+pub let ndis_fddi_state_connect : Int
+
+pub let ndis_fddi_state_join : Int
+
+pub let ndis_fddi_state_maintenance : Int
+
+pub let ndis_fddi_state_next : Int
+
+pub let ndis_fddi_state_off : Int
+
+pub let ndis_fddi_state_signal : Int
+
+pub let ndis_fddi_state_trace : Int
+
+pub let ndis_fddi_state_verify : Int
+
+pub let ndis_fddi_type_c_wrap_a : Int
+
+pub let ndis_fddi_type_c_wrap_b : Int
+
+pub let ndis_fddi_type_c_wrap_s : Int
+
+pub let ndis_fddi_type_isolated : Int
+
+pub let ndis_fddi_type_local_a : Int
+
+pub let ndis_fddi_type_local_ab : Int
+
+pub let ndis_fddi_type_local_b : Int
+
+pub let ndis_fddi_type_local_s : Int
+
+pub let ndis_fddi_type_through : Int
+
+pub let ndis_fddi_type_wrap_a : Int
+
+pub let ndis_fddi_type_wrap_ab : Int
+
+pub let ndis_fddi_type_wrap_b : Int
+
+pub let ndis_fddi_type_wrap_s : Int
+
+pub let ndis_filter_attach_flags_ignore_mandatory : UInt
+
+pub let ndis_filter_attach_parameters_revision_1 : UInt
+
+pub let ndis_filter_attach_parameters_revision_2 : UInt
+
+pub let ndis_filter_attach_parameters_revision_3 : UInt
+
+pub let ndis_filter_attach_parameters_revision_4 : UInt
+
+pub let ndis_filter_attributes_revision_1 : UInt
+
+pub let ndis_filter_characteristics_revision_1 : UInt
+
+pub let ndis_filter_characteristics_revision_2 : UInt
+
+pub let ndis_filter_characteristics_revision_3 : UInt
+
+pub let ndis_filter_driver_mandatory : UInt
+
+pub let ndis_filter_driver_supports_current_mac_address_change : UInt
+
+pub let ndis_filter_driver_supports_l2_mtu_size_change : UInt
+
+pub let ndis_filter_interface_im_filter : UInt
+
+pub let ndis_filter_interface_lw_filter : UInt
+
+pub let ndis_filter_interface_receive_bypass : UInt
+
+pub let ndis_filter_interface_revision_1 : UInt
+
+pub let ndis_filter_interface_revision_2 : UInt
+
+pub let ndis_filter_interface_send_bypass : UInt
+
+pub let ndis_filter_major_version : UInt
+
+pub let ndis_filter_minimum_major_version : UInt
+
+pub let ndis_filter_minimum_minor_version : UInt
+
+pub let ndis_filter_minor_version : UInt
+
+pub let ndis_filter_partial_characteristics_revision_1 : UInt
+
+pub let ndis_filter_pause_parameters_revision_1 : UInt
+
+pub let ndis_filter_restart_parameters_revision_1 : UInt
+
+pub let ndis_flags_dont_loopback : UInt
+
+pub let ndis_flags_double_buffered : UInt
+
+pub let ndis_flags_is_loopback_packet : UInt
+
+pub let ndis_flags_loopback_only : UInt
+
+pub let ndis_flags_multicast_packet : UInt
+
+pub let ndis_flags_padded : UInt
+
+pub let ndis_flags_protocol_id_mask : UInt
+
+pub let ndis_flags_reserved2 : UInt
+
+pub let ndis_flags_reserved3 : UInt
+
+pub let ndis_flags_reserved4 : UInt
+
+pub let ndis_flags_sent_at_dpc : UInt
+
+pub let ndis_flags_uses_original_packet : UInt
+
+pub let ndis_flags_uses_sg_buffer_list : UInt
+
+pub let ndis_flags_xlate_at_top : UInt
+
+pub let ndis_gfp_encapsulation_type_ip_in_gre : UInt
+
+pub let ndis_gfp_encapsulation_type_ip_in_ip : UInt
+
+pub let ndis_gfp_encapsulation_type_not_encapsulated : UInt
+
+pub let ndis_gfp_encapsulation_type_nvgre : UInt
+
+pub let ndis_gfp_encapsulation_type_vxlan : UInt
+
+pub let ndis_gfp_exact_match_profile_rdma_flow : UInt
+
+pub let ndis_gfp_exact_match_profile_revision_1 : UInt
+
+pub let ndis_gfp_header_group_exact_match_is_ttl_one : UInt
+
+pub let ndis_gfp_header_group_exact_match_profile_is_ttl_one : UInt
+
+pub let ndis_gfp_header_group_exact_match_profile_revision_1 : UInt
+
+pub let ndis_gfp_header_group_exact_match_revision_1 : UInt
+
+pub let ndis_gfp_header_group_wildcard_match_is_ttl_one : UInt
+
+pub let ndis_gfp_header_group_wildcard_match_profile_is_ttl_one : UInt
+
+pub let ndis_gfp_header_group_wildcard_match_profile_revision_1 : UInt
+
+pub let ndis_gfp_header_group_wildcard_match_revision_1 : UInt
+
+pub let ndis_gfp_header_present_esp : UInt
+
+pub let ndis_gfp_header_present_ethernet : UInt
+
+pub let ndis_gfp_header_present_icmp : UInt
+
+pub let ndis_gfp_header_present_ip_in_gre_encap : UInt
+
+pub let ndis_gfp_header_present_ip_in_ip_encap : UInt
+
+pub let ndis_gfp_header_present_ipv4 : UInt
+
+pub let ndis_gfp_header_present_ipv6 : UInt
+
+pub let ndis_gfp_header_present_no_encap : UInt
+
+pub let ndis_gfp_header_present_nvgre_encap : UInt
+
+pub let ndis_gfp_header_present_tcp : UInt
+
+pub let ndis_gfp_header_present_udp : UInt
+
+pub let ndis_gfp_header_present_vxlan_encap : UInt
+
+pub let ndis_gfp_undefined_profile_id : UInt
+
+pub let ndis_gfp_wildcard_match_profile_revision_1 : UInt
+
+pub let ndis_gft_counter_info_array_revision_1 : UInt
+
+pub let ndis_gft_counter_info_revision_1 : UInt
+
+pub let ndis_gft_counter_parameters_client_specified_address : UInt
+
+pub let ndis_gft_counter_parameters_revision_1 : UInt
+
+pub let ndis_gft_counter_value_array_get_values : UInt
+
+pub let ndis_gft_counter_value_array_revision_1 : UInt
+
+pub let ndis_gft_counter_value_array_update_memory_mapped_counters : UInt
+
+pub let ndis_gft_custom_action_last_action : UInt
+
+pub let ndis_gft_custom_action_profile_revision_1 : UInt
+
+pub let ndis_gft_custom_action_revision_1 : UInt
+
+pub let ndis_gft_delete_profile_all_profiles : UInt
+
+pub let ndis_gft_delete_profile_parameters_revision_1 : UInt
+
+pub let ndis_gft_delete_table_parameters_revision_1 : UInt
+
+pub let ndis_gft_emfe_add_in_activated_state : UInt
+
+pub let ndis_gft_emfe_all_vport_flow_entries : UInt
+
+pub let ndis_gft_emfe_copy_after_tcp_fin_flag_set : UInt
+
+pub let ndis_gft_emfe_copy_after_tcp_rst_flag_set : UInt
+
+pub let ndis_gft_emfe_copy_all_packets : UInt
+
+pub let ndis_gft_emfe_copy_condition_changed : UInt
+
+pub let ndis_gft_emfe_copy_first_packet : UInt
+
+pub let ndis_gft_emfe_copy_when_tcp_flag_set : UInt
+
+pub let ndis_gft_emfe_counter_allocate : UInt
+
+pub let ndis_gft_emfe_counter_client_specified_address : UInt
+
+pub let ndis_gft_emfe_counter_memory_mapped : UInt
+
+pub let ndis_gft_emfe_counter_track_tcp_flow : UInt
+
+pub let ndis_gft_emfe_custom_action_present : UInt
+
+pub let ndis_gft_emfe_match_and_action_must_be_supported : UInt
+
+pub let ndis_gft_emfe_meta_action_before_header_transposition : UInt
+
+pub let ndis_gft_emfe_rdma_flow : UInt
+
+pub let ndis_gft_emfe_redirect_to_egress_queue_of_vport : UInt
+
+pub let ndis_gft_emfe_redirect_to_egress_queue_of_vport_if_ttl_is_one : UInt
+
+pub let ndis_gft_emfe_redirect_to_ingress_queue_of_vport : UInt
+
+pub let ndis_gft_emfe_redirect_to_ingress_queue_of_vport_if_ttl_is_one : UInt
+
+pub let ndis_gft_exact_match_flow_entry_revision_1 : UInt
+
+pub let ndis_gft_flow_entry_array_revision_1 : UInt
+
+pub let ndis_gft_flow_entry_id_all_nic_switch_flow_entries : UInt
+
+pub let ndis_gft_flow_entry_id_all_table_flow_entries : UInt
+
+pub let ndis_gft_flow_entry_id_all_vport_flow_entries : UInt
+
+pub let ndis_gft_flow_entry_id_array_counter_values : UInt
+
+pub let ndis_gft_flow_entry_id_array_defined : UInt
+
+pub let ndis_gft_flow_entry_id_array_revision_1 : UInt
+
+pub let ndis_gft_flow_entry_id_range_defined : UInt
+
+pub let ndis_gft_flow_entry_info_all_flow_entries : UInt
+
+pub let ndis_gft_flow_entry_info_array_revision_1 : UInt
+
+pub let ndis_gft_free_counter_parameters_revision_1 : UInt
+
+pub let ndis_gft_header_group_transposition_decrement_ttl_if_not_one : UInt
+
+pub let ndis_gft_header_group_transposition_profile_decrement_ttl_if_not_one : UInt
+
+pub let ndis_gft_header_group_transposition_profile_revision_1 : UInt
+
+pub let ndis_gft_header_group_transposition_revision_1 : UInt
+
+pub let ndis_gft_header_transposition_profile_revision_1 : UInt
+
+pub let ndis_gft_htp_copy_all_packets : UInt
+
+pub let ndis_gft_htp_copy_first_packet : UInt
+
+pub let ndis_gft_htp_copy_when_tcp_flag_set : UInt
+
+pub let ndis_gft_htp_custom_action_present : UInt
+
+pub let ndis_gft_htp_meta_action_before_header_transposition : UInt
+
+pub let ndis_gft_htp_redirect_to_egress_queue_of_vport : UInt
+
+pub let ndis_gft_htp_redirect_to_egress_queue_of_vport_if_ttl_is_one : UInt
+
+pub let ndis_gft_htp_redirect_to_ingress_queue_of_vport : UInt
+
+pub let ndis_gft_htp_redirect_to_ingress_queue_of_vport_if_ttl_is_one : UInt
+
+pub let ndis_gft_max_counter_objects_per_flow_entry : UInt
+
+pub let ndis_gft_offload_capabilities_revision_1 : UInt
+
+pub let ndis_gft_offload_caps_8021_p_priority_mask : UInt
+
+pub let ndis_gft_offload_caps_add_flow_entry_deactivated_preferred : UInt
+
+pub let ndis_gft_offload_caps_allow : UInt
+
+pub let ndis_gft_offload_caps_client_specified_memory_mapped_counters : UInt
+
+pub let ndis_gft_offload_caps_combined_counter_and_state : UInt
+
+pub let ndis_gft_offload_caps_copy_all : UInt
+
+pub let ndis_gft_offload_caps_copy_first : UInt
+
+pub let ndis_gft_offload_caps_copy_when_tcp_flag_set : UInt
+
+pub let ndis_gft_offload_caps_designated_exception_vport : UInt
+
+pub let ndis_gft_offload_caps_drop : UInt
+
+pub let ndis_gft_offload_caps_dscp_mask : UInt
+
+pub let ndis_gft_offload_caps_egress_aggregate_counters : UInt
+
+pub let ndis_gft_offload_caps_egress_exact_match : UInt
+
+pub let ndis_gft_offload_caps_egress_wildcard_match : UInt
+
+pub let ndis_gft_offload_caps_ext_vport_egress_exact_match : UInt
+
+pub let ndis_gft_offload_caps_ext_vport_egress_wildcard_match : UInt
+
+pub let ndis_gft_offload_caps_ext_vport_ingress_exact_match : UInt
+
+pub let ndis_gft_offload_caps_ext_vport_ingress_wildcard_match : UInt
+
+pub let ndis_gft_offload_caps_ignore_action_supported : UInt
+
+pub let ndis_gft_offload_caps_ingress_aggregate_counters : UInt
+
+pub let ndis_gft_offload_caps_ingress_exact_match : UInt
+
+pub let ndis_gft_offload_caps_ingress_wildcard_match : UInt
+
+pub let ndis_gft_offload_caps_memory_mapped_counters : UInt
+
+pub let ndis_gft_offload_caps_memory_mapped_pakcet_and_byte_counters : UInt
+
+pub let ndis_gft_offload_caps_meta_action_after_header_transposition : UInt
+
+pub let ndis_gft_offload_caps_meta_action_before_header_transposition : UInt
+
+pub let ndis_gft_offload_caps_modify : UInt
+
+pub let ndis_gft_offload_caps_per_flow_entry_counters : UInt
+
+pub let ndis_gft_offload_caps_per_packet_counter_update : UInt
+
+pub let ndis_gft_offload_caps_per_vport_exception_vport : UInt
+
+pub let ndis_gft_offload_caps_pop : UInt
+
+pub let ndis_gft_offload_caps_push : UInt
+
+pub let ndis_gft_offload_caps_rate_limiting_queue_supported : UInt
+
+pub let ndis_gft_offload_caps_redirect_to_egress_queue_of_vport : UInt
+
+pub let ndis_gft_offload_caps_redirect_to_egress_queue_of_vport_if_ttl_is_one : UInt
+
+pub let ndis_gft_offload_caps_redirect_to_ingress_queue_of_vport : UInt
+
+pub let ndis_gft_offload_caps_redirect_to_ingress_queue_of_vport_if_ttl_is_one : UInt
+
+pub let ndis_gft_offload_caps_sample : UInt
+
+pub let ndis_gft_offload_caps_track_tcp_flow_state : UInt
+
+pub let ndis_gft_offload_info_copy_packet : UInt
+
+pub let ndis_gft_offload_info_direction_ingress : UInt
+
+pub let ndis_gft_offload_info_exception_packet : UInt
+
+pub let ndis_gft_offload_info_sample_packet : UInt
+
+pub let ndis_gft_offload_parameters_custom_provider_reserved : UInt
+
+pub let ndis_gft_offload_parameters_enable_offload : UInt
+
+pub let ndis_gft_offload_parameters_revision_1 : UInt
+
+pub let ndis_gft_profile_info_array_revision_1 : UInt
+
+pub let ndis_gft_profile_info_revision_1 : UInt
+
+pub let ndis_gft_reserved_custom_actions : UInt
+
+pub let ndis_gft_statistics_revision_1 : UInt
+
+pub let ndis_gft_table_include_external_vpport : UInt
+
+pub let ndis_gft_table_info_array_revision_1 : UInt
+
+pub let ndis_gft_table_info_revision_1 : UInt
+
+pub let ndis_gft_table_parameters_revision_1 : UInt
+
+pub let ndis_gft_undefined_counter_id : UInt
+
+pub let ndis_gft_undefined_custom_action : UInt
+
+pub let ndis_gft_undefined_flow_entry_id : UInt
+
+pub let ndis_gft_undefined_table_id : UInt
+
+pub let ndis_gft_vport_dscp_flags_changed : UInt
+
+pub let ndis_gft_vport_dscp_guard_enable_rx : UInt
+
+pub let ndis_gft_vport_dscp_guard_enable_tx : UInt
+
+pub let ndis_gft_vport_dscp_mask_changed : UInt
+
+pub let ndis_gft_vport_dscp_mask_enable_rx : UInt
+
+pub let ndis_gft_vport_dscp_mask_enable_tx : UInt
+
+pub let ndis_gft_vport_enable : UInt
+
+pub let ndis_gft_vport_enable_state_changed : UInt
+
+pub let ndis_gft_vport_exception_vport_changed : UInt
+
+pub let ndis_gft_vport_max_dscp_mask_counter_objects : UInt
+
+pub let ndis_gft_vport_max_priority_mask_counter_objects : UInt
+
+pub let ndis_gft_vport_parameters_revision_1 : UInt
+
+pub let ndis_gft_vport_params_change_mask : UInt
+
+pub let ndis_gft_vport_params_custom_provider_reserved : UInt
+
+pub let ndis_gft_vport_parse_vxlan : UInt
+
+pub let ndis_gft_vport_parse_vxlan_not_in_src_port_range : UInt
+
+pub let ndis_gft_vport_priority_mask_changed : UInt
+
+pub let ndis_gft_vport_sampling_rate_changed : UInt
+
+pub let ndis_gft_vport_vxlan_settings_changed : UInt
+
+pub let ndis_gft_wcfe_add_in_activated_state : UInt
+
+pub let ndis_gft_wcfe_copy_all_packets : UInt
+
+pub let ndis_gft_wcfe_counter_allocate : UInt
+
+pub let ndis_gft_wcfe_counter_client_specified_address : UInt
+
+pub let ndis_gft_wcfe_counter_memory_mapped : UInt
+
+pub let ndis_gft_wcfe_custom_action_present : UInt
+
+pub let ndis_gft_wcfe_redirect_to_egress_queue_of_vport : UInt
+
+pub let ndis_gft_wcfe_redirect_to_egress_queue_of_vport_if_ttl_is_one : UInt
+
+pub let ndis_gft_wcfe_redirect_to_ingress_queue_of_vport : UInt
+
+pub let ndis_gft_wcfe_redirect_to_ingress_queue_of_vport_if_ttl_is_one : UInt
+
+pub let ndis_gft_wildcard_match_flow_entry_revision_1 : UInt
+
+pub let ndis_hardware_crosstimestamp_revision_1 : UInt
+
+pub let ndis_hardware_status_closing : Int
+
+pub let ndis_hardware_status_initializing : Int
+
+pub let ndis_hardware_status_not_ready : Int
+
+pub let ndis_hardware_status_ready : Int
+
+pub let ndis_hardware_status_reset : Int
+
+pub let ndis_hash_function_mask : UInt
+
+pub let ndis_hash_function_reserved1 : UInt
+
+pub let ndis_hash_function_reserved2 : UInt
+
+pub let ndis_hash_function_reserved3 : UInt
+
+pub let ndis_hash_function_toeplitz : UInt
+
+pub let ndis_hash_ipv4 : UInt
+
+pub let ndis_hash_ipv6 : UInt
+
+pub let ndis_hash_ipv6_ex : UInt
+
+pub let ndis_hash_tcp_ipv4 : UInt
+
+pub let ndis_hash_tcp_ipv6 : UInt
+
+pub let ndis_hash_tcp_ipv6_ex : UInt
+
+pub let ndis_hash_type_mask : UInt
+
+pub let ndis_hash_udp_ipv4 : UInt
+
+pub let ndis_hash_udp_ipv6 : UInt
+
+pub let ndis_hash_udp_ipv6_ex : UInt
+
+pub let ndis_hd_split_attributes_revision_1 : UInt
+
+pub let ndis_hd_split_caps_supports_header_data_split : UInt
+
+pub let ndis_hd_split_caps_supports_ipv4_options : UInt
+
+pub let ndis_hd_split_caps_supports_ipv6_extension_headers : UInt
+
+pub let ndis_hd_split_caps_supports_tcp_options : UInt
+
+pub let ndis_hd_split_combine_all_headers : UInt
+
+pub let ndis_hd_split_current_config_revision_1 : UInt
+
+pub let ndis_hd_split_enable_header_data_split : UInt
+
+pub let ndis_hd_split_parameters_revision_1 : UInt
+
+pub let ndis_hypervisor_info_flag_hypervisor_present : UInt
+
+pub let ndis_hypervisor_info_revision_1 : UInt
+
+pub let ndis_interface1394 : Int
+
+pub let ndis_interface_c_bus : Int
+
+pub let ndis_interface_eisa : Int
+
+pub let ndis_interface_internal : Int
+
+pub let ndis_interface_internal_power_bus : Int
+
+pub let ndis_interface_irda : Int
+
+pub let ndis_interface_isa : Int
+
+pub let ndis_interface_mca : Int
+
+pub let ndis_interface_mpi_bus : Int
+
+pub let ndis_interface_mpsa_bus : Int
+
+pub let ndis_interface_pc_mcia : Int
+
+pub let ndis_interface_pci : Int
+
+pub let ndis_interface_pnp_bus : Int
+
+pub let ndis_interface_pnpisa_bus : Int
+
+pub let ndis_interface_processor_internal : Int
+
+pub let ndis_interface_turbo_channel : Int
+
+pub let ndis_interface_usb : Int
+
+pub let ndis_intermediate_driver : UInt
+
+pub let ndis_interrupt_moderation_change_needs_reinitialize : UInt
+
+pub let ndis_interrupt_moderation_change_needs_reset : UInt
+
+pub let ndis_interrupt_moderation_disabled : Int
+
+pub let ndis_interrupt_moderation_enabled : Int
+
+pub let ndis_interrupt_moderation_not_supported : Int
+
+pub let ndis_interrupt_moderation_parameters_revision_1 : UInt
+
+pub let ndis_interrupt_moderation_unknown : Int
+
+pub let ndis_ip_oper_state_revision_1 : UInt
+
+pub let ndis_ip_oper_status_info_revision_1 : UInt
+
+pub let ndis_ipsec_offload_v2_add_sa_ex_revision_1 : UInt
+
+pub let ndis_ipsec_offload_v2_add_sa_revision_1 : UInt
+
+pub let ndis_ipsec_offload_v2_delete_sa_revision_1 : UInt
+
+pub let ndis_ipsec_offload_v2_update_sa_revision_1 : UInt
+
+pub let ndis_isolation_name_max_string_size : UInt
+
+pub let ndis_isolation_parameters_revision_1 : UInt
+
+pub let ndis_kdnet_add_pf_revision_1 : UInt
+
+pub let ndis_kdnet_enumerate_pfs_revision_1 : UInt
+
+pub let ndis_kdnet_pf_enum_element_revision_1 : UInt
+
+pub let ndis_kdnet_query_pf_information_revision_1 : UInt
+
+pub let ndis_kdnet_remove_pf_revision_1 : UInt
+
+pub let ndis_large_send_offload_max_header_length : UInt
+
+pub let ndis_legacy_driver : UInt
+
+pub let ndis_legacy_miniport : UInt
+
+pub let ndis_legacy_protocol : UInt
+
+pub let ndis_link_parameters_revision_1 : UInt
+
+pub let ndis_link_state_duplex_auto_negotiated : UInt
+
+pub let ndis_link_state_pause_functions_auto_negotiated : UInt
+
+pub let ndis_link_state_rcv_link_speed_auto_negotiated : UInt
+
+pub let ndis_link_state_revision_1 : UInt
+
+pub let ndis_link_state_xmit_link_speed_auto_negotiated : UInt
+
+pub let ndis_m_max_lookahead : UInt
+
+pub let ndis_mac_option_8021_p_priority : UInt
+
+pub let ndis_mac_option_8021_q_vlan : UInt
+
+pub let ndis_mac_option_copy_lookahead_data : UInt
+
+pub let ndis_mac_option_eotx_indication : UInt
+
+pub let ndis_mac_option_full_duplex : UInt
+
+pub let ndis_mac_option_no_loopback : UInt
+
+pub let ndis_mac_option_receive_at_dpc : UInt
+
+pub let ndis_mac_option_receive_serialized : UInt
+
+pub let ndis_mac_option_reserved : UInt
+
+pub let ndis_mac_option_supports_mac_address_overwrite : UInt
+
+pub let ndis_mac_option_transfers_not_pend : UInt
+
+pub let ndis_max_lookahead_size_accessed_undefined : Int
+
+pub let ndis_max_processor_count : UInt
+
+pub let ndis_maximum_interface_type : Int
+
+pub let ndis_maximum_ports : UInt
+
+pub let ndis_media_cap_receive : UInt
+
+pub let ndis_media_cap_transmit : UInt
+
+pub let ndis_media_specific_info_eapol : UInt
+
+pub let ndis_media_specific_info_fcoe : UInt
+
+pub let ndis_media_specific_info_lldp : UInt
+
+pub let ndis_media_specific_info_timesync : UInt
+
+pub let ndis_media_specific_info_tundl : UInt
+
+pub let ndis_media_state_connected : Int
+
+pub let ndis_media_state_disconnected : Int
+
+pub let ndis_medium1394 : Int
+
+pub let ndis_medium802_3 : Int
+
+pub let ndis_medium802_5 : Int
+
+pub let ndis_medium_arcnet878_2 : Int
+
+pub let ndis_medium_arcnet_raw : Int
+
+pub let ndis_medium_atm : Int
+
+pub let ndis_medium_bpc : Int
+
+pub let ndis_medium_co_wan : Int
+
+pub let ndis_medium_dix : Int
+
+pub let ndis_medium_fddi : Int
+
+pub let ndis_medium_infini_band : Int
+
+pub let ndis_medium_ip : Int
+
+pub let ndis_medium_irda : Int
+
+pub let ndis_medium_local_talk : Int
+
+pub let ndis_medium_loopback : Int
+
+pub let ndis_medium_max : Int
+
+pub let ndis_medium_native802_11 : Int
+
+pub let ndis_medium_tunnel : Int
+
+pub let ndis_medium_wan : Int
+
+pub let ndis_medium_wi_max : Int
+
+pub let ndis_medium_wireless_wan : Int
+
+pub let ndis_memory_contiguous : UInt
+
+pub let ndis_memory_noncached : UInt
+
+pub let ndis_min_api : UInt
+
+pub let ndis_miniport_adapter_802_11_attributes_revision_1 : UInt
+
+pub let ndis_miniport_adapter_802_11_attributes_revision_2 : UInt
+
+pub let ndis_miniport_adapter_802_11_attributes_revision_3 : UInt
+
+pub let ndis_miniport_adapter_general_attributes_revision_1 : UInt
+
+pub let ndis_miniport_adapter_general_attributes_revision_2 : UInt
+
+pub let ndis_miniport_adapter_hardware_assist_attributes_revision_1 : UInt
+
+pub let ndis_miniport_adapter_hardware_assist_attributes_revision_2 : UInt
+
+pub let ndis_miniport_adapter_hardware_assist_attributes_revision_3 : UInt
+
+pub let ndis_miniport_adapter_hardware_assist_attributes_revision_4 : UInt
+
+pub let ndis_miniport_adapter_ndk_attributes_revision_1 : UInt
+
+pub let ndis_miniport_adapter_offload_attributes_revision_1 : UInt
+
+pub let ndis_miniport_adapter_packet_direct_attributes_revision_1 : UInt
+
+pub let ndis_miniport_adapter_registration_attributes_revision_1 : UInt
+
+pub let ndis_miniport_adapter_registration_attributes_revision_2 : UInt
+
+pub let ndis_miniport_add_device_registration_attributes_revision_1 : UInt
+
+pub let ndis_miniport_attributes_bus_master : UInt
+
+pub let ndis_miniport_attributes_controls_default_port : UInt
+
+pub let ndis_miniport_attributes_do_not_bind_to_all_co : UInt
+
+pub let ndis_miniport_attributes_hardware_device : UInt
+
+pub let ndis_miniport_attributes_ndis_wdm : UInt
+
+pub let ndis_miniport_attributes_no_halt_on_suspend : UInt
+
+pub let ndis_miniport_attributes_no_oid_intercept_on_nondefault_ports : UInt
+
+pub let ndis_miniport_attributes_no_pause_on_suspend : UInt
+
+pub let ndis_miniport_attributes_not_co_ndis : UInt
+
+pub let ndis_miniport_attributes_register_bugcheck_callback : UInt
+
+pub let ndis_miniport_attributes_surprise_remove_ok : UInt
+
+pub let ndis_miniport_co_characteristics_revision_1 : UInt
+
+pub let ndis_miniport_driver : UInt
+
+pub let ndis_miniport_driver_characteristics_revision_1 : UInt
+
+pub let ndis_miniport_driver_characteristics_revision_2 : UInt
+
+pub let ndis_miniport_driver_characteristics_revision_3 : UInt
+
+pub let ndis_miniport_init_parameters_revision_1 : UInt
+
+pub let ndis_miniport_interrupt_revision_1 : UInt
+
+pub let ndis_miniport_major_version : UInt
+
+pub let ndis_miniport_minimum_major_version : UInt
+
+pub let ndis_miniport_minimum_minor_version : UInt
+
+pub let ndis_miniport_minor_version : UInt
+
+pub let ndis_miniport_pause_parameters_revision_1 : UInt
+
+pub let ndis_miniport_pnp_characteristics_revision_1 : UInt
+
+pub let ndis_miniport_restart_parameters_revision_1 : UInt
+
+pub let ndis_miniport_ss_characteristics_revision_1 : UInt
+
+pub let ndis_monitor_config_revision_1 : UInt
+
+pub let ndis_msix_config_parameters_revision_1 : UInt
+
+pub let ndis_nbl_flags_capture_timestamp_on_transmit : UInt
+
+pub let ndis_nbl_flags_hd_split : UInt
+
+pub let ndis_nbl_flags_is_ipv4 : UInt
+
+pub let ndis_nbl_flags_is_ipv6 : UInt
+
+pub let ndis_nbl_flags_is_loopback_packet : UInt
+
+pub let ndis_nbl_flags_is_tcp : UInt
+
+pub let ndis_nbl_flags_is_udp : UInt
+
+pub let ndis_nbl_flags_recv_read_only : UInt
+
+pub let ndis_nbl_flags_send_read_only : UInt
+
+pub let ndis_nbl_flags_split_at_upper_layer_protocol_header : UInt
+
+pub let ndis_nbl_flags_split_at_upper_layer_protocol_payload : UInt
+
+pub let ndis_nbl_media_specific_info_revision_1 : UInt
+
+pub let ndis_ndk_capabilities_revision_1 : UInt
+
+pub let ndis_ndk_connections_revision_1 : UInt
+
+pub let ndis_ndk_local_endpoints_revision_1 : UInt
+
+pub let ndis_ndk_statistics_info_revision_1 : UInt
+
+pub let ndis_network_change_from_media_connect : Int
+
+pub let ndis_network_change_max : Int
+
+pub let ndis_nic_switch_capabilities_revision_1 : UInt
+
+pub let ndis_nic_switch_capabilities_revision_2 : UInt
+
+pub let ndis_nic_switch_capabilities_revision_3 : UInt
+
+pub let ndis_nic_switch_caps_asymmetric_queue_pairs_for_nondefault_vport_supported : UInt
+
+pub let ndis_nic_switch_caps_nic_switch_without_iov_supported : UInt
+
+pub let ndis_nic_switch_caps_per_vport_interrupt_moderation_supported : UInt
+
+pub let ndis_nic_switch_caps_rss_on_pf_vports_supported : UInt
+
+pub let ndis_nic_switch_caps_rss_parameters_per_pf_vport_supported : UInt
+
+pub let ndis_nic_switch_caps_rss_per_pf_vport_hash_function_supported : UInt
+
+pub let ndis_nic_switch_caps_rss_per_pf_vport_hash_key_supported : UInt
+
+pub let ndis_nic_switch_caps_rss_per_pf_vport_hash_type_supported : UInt
+
+pub let ndis_nic_switch_caps_rss_per_pf_vport_indirection_table_size_restricted : UInt
+
+pub let ndis_nic_switch_caps_rss_per_pf_vport_indirection_table_supported : UInt
+
+pub let ndis_nic_switch_caps_single_vport_pool : UInt
+
+pub let ndis_nic_switch_caps_vf_rss_supported : UInt
+
+pub let ndis_nic_switch_caps_vlan_supported : UInt
+
+pub let ndis_nic_switch_delete_switch_parameters_revision_1 : UInt
+
+pub let ndis_nic_switch_delete_vport_parameters_revision_1 : UInt
+
+pub let ndis_nic_switch_free_vf_parameters_revision_1 : UInt
+
+pub let ndis_nic_switch_info_array_revision_1 : UInt
+
+pub let ndis_nic_switch_info_revision_1 : UInt
+
+pub let ndis_nic_switch_parameters_change_mask : UInt
+
+pub let ndis_nic_switch_parameters_default_number_of_queue_pairs_for_default_vport : UInt
+
+pub let ndis_nic_switch_parameters_revision_1 : UInt
+
+pub let ndis_nic_switch_parameters_revision_2 : UInt
+
+pub let ndis_nic_switch_parameters_switch_name_changed : UInt
+
+pub let ndis_nic_switch_vf_info_array_enum_on_specific_switch : UInt
+
+pub let ndis_nic_switch_vf_info_array_revision_1 : UInt
+
+pub let ndis_nic_switch_vf_info_revision_1 : UInt
+
+pub let ndis_nic_switch_vf_parameters_revision_1 : UInt
+
+pub let ndis_nic_switch_vport_info_array_enum_on_specific_function : UInt
+
+pub let ndis_nic_switch_vport_info_array_enum_on_specific_switch : UInt
+
+pub let ndis_nic_switch_vport_info_array_revision_1 : UInt
+
+pub let ndis_nic_switch_vport_info_gft_enabled : UInt
+
+pub let ndis_nic_switch_vport_info_lookahead_split_enabled : UInt
+
+pub let ndis_nic_switch_vport_info_packet_direct_rx_only : UInt
+
+pub let ndis_nic_switch_vport_info_revision_1 : UInt
+
+pub let ndis_nic_switch_vport_parameters_revision_1 : UInt
+
+pub let ndis_nic_switch_vport_parameters_revision_2 : UInt
+
+pub let ndis_nic_switch_vport_params_change_mask : UInt
+
+pub let ndis_nic_switch_vport_params_enforce_max_sg_list : UInt
+
+pub let ndis_nic_switch_vport_params_flags_changed : UInt
+
+pub let ndis_nic_switch_vport_params_int_mod_changed : UInt
+
+pub let ndis_nic_switch_vport_params_lookahead_split_enabled : UInt
+
+pub let ndis_nic_switch_vport_params_name_changed : UInt
+
+pub let ndis_nic_switch_vport_params_ndk_params_changed : UInt
+
+pub let ndis_nic_switch_vport_params_num_queue_pairs_changed : UInt
+
+pub let ndis_nic_switch_vport_params_packet_direct_rx_only : UInt
+
+pub let ndis_nic_switch_vport_params_processor_affinity_changed : UInt
+
+pub let ndis_nic_switch_vport_params_qos_sq_id_changed : UInt
+
+pub let ndis_nic_switch_vport_params_state_changed : UInt
+
+pub let ndis_nt : UInt
+
+pub let ndis_object_revision_1 : UInt
+
+pub let ndis_object_type_bind_parameters : UInt
+
+pub let ndis_object_type_client_chimney_offload_characteristics : UInt
+
+pub let ndis_object_type_client_chimney_offload_generic_characteristics : UInt
+
+pub let ndis_object_type_co_call_manager_optional_handlers : UInt
+
+pub let ndis_object_type_co_client_optional_handlers : UInt
+
+pub let ndis_object_type_co_miniport_characteristics : UInt
+
+pub let ndis_object_type_co_protocol_characteristics : UInt
+
+pub let ndis_object_type_configuration_object : UInt
+
+pub let ndis_object_type_default : UInt
+
+pub let ndis_object_type_device_object_attributes : UInt
+
+pub let ndis_object_type_driver_wrapper_object : UInt
+
+pub let ndis_object_type_driver_wrapper_revision_1 : UInt
+
+pub let ndis_object_type_filter_attach_parameters : UInt
+
+pub let ndis_object_type_filter_attributes : UInt
+
+pub let ndis_object_type_filter_driver_characteristics : UInt
+
+pub let ndis_object_type_filter_partial_characteristics : UInt
+
+pub let ndis_object_type_filter_pause_parameters : UInt
+
+pub let ndis_object_type_filter_restart_parameters : UInt
+
+pub let ndis_object_type_hd_split_attributes : UInt
+
+pub let ndis_object_type_miniport_adapter_general_attributes : UInt
+
+pub let ndis_object_type_miniport_adapter_hardware_assist_attributes : UInt
+
+pub let ndis_object_type_miniport_adapter_native_802_11_attributes : UInt
+
+pub let ndis_object_type_miniport_adapter_ndk_attributes : UInt
+
+pub let ndis_object_type_miniport_adapter_offload_attributes : UInt
+
+pub let ndis_object_type_miniport_adapter_packet_direct_attributes : UInt
+
+pub let ndis_object_type_miniport_adapter_registration_attributes : UInt
+
+pub let ndis_object_type_miniport_add_device_registration_attributes : UInt
+
+pub let ndis_object_type_miniport_device_power_notification : UInt
+
+pub let ndis_object_type_miniport_driver_characteristics : UInt
+
+pub let ndis_object_type_miniport_init_parameters : UInt
+
+pub let ndis_object_type_miniport_interrupt : UInt
+
+pub let ndis_object_type_miniport_pnp_characteristics : UInt
+
+pub let ndis_object_type_miniport_ss_characteristics : UInt
+
+pub let ndis_object_type_ndk_provider_characteristics : UInt
+
+pub let ndis_object_type_nsi_compartment_rw_struct : UInt
+
+pub let ndis_object_type_nsi_interface_persist_rw_struct : UInt
+
+pub let ndis_object_type_nsi_network_rw_struct : UInt
+
+pub let ndis_object_type_offload : UInt
+
+pub let ndis_object_type_offload_encapsulation : UInt
+
+pub let ndis_object_type_oid_request : UInt
+
+pub let ndis_object_type_open_parameters : UInt
+
+pub let ndis_object_type_pci_device_custom_properties_revision_1 : UInt
+
+pub let ndis_object_type_pci_device_custom_properties_revision_2 : UInt
+
+pub let ndis_object_type_pd_receive_queue : UInt
+
+pub let ndis_object_type_pd_transmit_queue : UInt
+
+pub let ndis_object_type_port_characteristics : UInt
+
+pub let ndis_object_type_port_state : UInt
+
+pub let ndis_object_type_protocol_driver_characteristics : UInt
+
+pub let ndis_object_type_protocol_restart_parameters : UInt
+
+pub let ndis_object_type_provider_chimney_offload_characteristics : UInt
+
+pub let ndis_object_type_provider_chimney_offload_generic_characteristics : UInt
+
+pub let ndis_object_type_qos_capabilities : UInt
+
+pub let ndis_object_type_qos_classification_element : UInt
+
+pub let ndis_object_type_qos_parameters : UInt
+
+pub let ndis_object_type_request_ex : UInt
+
+pub let ndis_object_type_restart_general_attributes : UInt
+
+pub let ndis_object_type_rss_capabilities : UInt
+
+pub let ndis_object_type_rss_parameters : UInt
+
+pub let ndis_object_type_rss_parameters_v2 : UInt
+
+pub let ndis_object_type_rss_processor_info : UInt
+
+pub let ndis_object_type_rss_set_indirection_entries : UInt
+
+pub let ndis_object_type_sg_dma_description : UInt
+
+pub let ndis_object_type_shared_memory_provider_characteristics : UInt
+
+pub let ndis_object_type_status_indication : UInt
+
+pub let ndis_object_type_switch_optional_handlers : UInt
+
+pub let ndis_object_type_timer_characteristics : UInt
+
+pub let ndis_offload_encapsulation_revision_1 : UInt
+
+pub let ndis_offload_flags_group_checksum_capabilities : UInt
+
+pub let ndis_offload_not_supported : UInt
+
+pub let ndis_offload_parameters_connection_offload_disabled : UInt
+
+pub let ndis_offload_parameters_connection_offload_enabled : UInt
+
+pub let ndis_offload_parameters_ipsecv1_ah_and_esp_enabled : UInt
+
+pub let ndis_offload_parameters_ipsecv1_ah_enabled : UInt
+
+pub let ndis_offload_parameters_ipsecv1_disabled : UInt
+
+pub let ndis_offload_parameters_ipsecv1_esp_enabled : UInt
+
+pub let ndis_offload_parameters_ipsecv2_ah_and_esp_enabled : UInt
+
+pub let ndis_offload_parameters_ipsecv2_ah_enabled : UInt
+
+pub let ndis_offload_parameters_ipsecv2_disabled : UInt
+
+pub let ndis_offload_parameters_ipsecv2_esp_enabled : UInt
+
+pub let ndis_offload_parameters_lsov1_disabled : UInt
+
+pub let ndis_offload_parameters_lsov1_enabled : UInt
+
+pub let ndis_offload_parameters_lsov2_disabled : UInt
+
+pub let ndis_offload_parameters_lsov2_enabled : UInt
+
+pub let ndis_offload_parameters_no_change : UInt
+
+pub let ndis_offload_parameters_revision_1 : UInt
+
+pub let ndis_offload_parameters_revision_2 : UInt
+
+pub let ndis_offload_parameters_revision_3 : UInt
+
+pub let ndis_offload_parameters_revision_4 : UInt
+
+pub let ndis_offload_parameters_revision_5 : UInt
+
+pub let ndis_offload_parameters_rsc_disabled : UInt
+
+pub let ndis_offload_parameters_rsc_enabled : UInt
+
+pub let ndis_offload_parameters_rx_enabled_tx_disabled : UInt
+
+pub let ndis_offload_parameters_skip_registry_update : UInt
+
+pub let ndis_offload_parameters_tx_enabled_rx_disabled : UInt
+
+pub let ndis_offload_parameters_tx_rx_disabled : UInt
+
+pub let ndis_offload_parameters_tx_rx_enabled : UInt
+
+pub let ndis_offload_parameters_uso_disabled : UInt
+
+pub let ndis_offload_parameters_uso_enabled : UInt
+
+pub let ndis_offload_revision_1 : UInt
+
+pub let ndis_offload_revision_2 : UInt
+
+pub let ndis_offload_revision_3 : UInt
+
+pub let ndis_offload_revision_4 : UInt
+
+pub let ndis_offload_revision_5 : UInt
+
+pub let ndis_offload_revision_6 : UInt
+
+pub let ndis_offload_revision_7 : UInt
+
+pub let ndis_offload_set_no_change : UInt
+
+pub let ndis_offload_set_off : UInt
+
+pub let ndis_offload_set_on : UInt
+
+pub let ndis_offload_supported : UInt
+
+pub let ndis_oid_request_flags_vport_id_valid : UInt
+
+pub let ndis_oid_request_ndis_reserved_size : UInt
+
+pub let ndis_oid_request_revision_1 : UInt
+
+pub let ndis_oid_request_revision_2 : UInt
+
+pub let ndis_oid_request_timeout_infinite : UInt
+
+pub let ndis_open_parameters_revision_1 : UInt
+
+pub let ndis_open_receive_not_reentrant : UInt
+
+pub let ndis_oper_state_revision_1 : UInt
+
+pub let ndis_packet_type_all_functional : UInt
+
+pub let ndis_packet_type_all_local : UInt
+
+pub let ndis_packet_type_all_multicast : UInt
+
+pub let ndis_packet_type_broadcast : UInt
+
+pub let ndis_packet_type_directed : UInt
+
+pub let ndis_packet_type_functional : UInt
+
+pub let ndis_packet_type_group : UInt
+
+pub let ndis_packet_type_mac_frame : UInt
+
+pub let ndis_packet_type_multicast : UInt
+
+pub let ndis_packet_type_no_local : UInt
+
+pub let ndis_packet_type_promiscuous : UInt
+
+pub let ndis_packet_type_smt : UInt
+
+pub let ndis_packet_type_source_routing : UInt
+
+pub let ndis_parameter_binary : Int
+
+pub let ndis_parameter_hex_integer : Int
+
+pub let ndis_parameter_integer : Int
+
+pub let ndis_parameter_multi_string : Int
+
+pub let ndis_parameter_string : Int
+
+pub let ndis_pause_attach_filter : UInt
+
+pub let ndis_pause_bind_protocol : UInt
+
+pub let ndis_pause_detach_filter : UInt
+
+pub let ndis_pause_filter_restart_stack : UInt
+
+pub let ndis_pause_functions_receive_only : Int
+
+pub let ndis_pause_functions_send_and_receive : Int
+
+pub let ndis_pause_functions_send_only : Int
+
+pub let ndis_pause_functions_unknown : Int
+
+pub let ndis_pause_functions_unsupported : Int
+
+pub let ndis_pause_low_power : UInt
+
+pub let ndis_pause_miniport_device_remove : UInt
+
+pub let ndis_pause_ndis_internal : UInt
+
+pub let ndis_pause_unbind_protocol : UInt
+
+pub let ndis_pd_acquire_queues_flag_drain_notification : UInt
+
+pub let ndis_pd_acquire_queues_parameters_revision_1 : UInt
+
+pub let ndis_pd_capabilities_revision_1 : UInt
+
+pub let ndis_pd_caps_drain_notifications_supported : UInt
+
+pub let ndis_pd_caps_notification_moderation_count_supported : UInt
+
+pub let ndis_pd_caps_notification_moderation_interval_supported : UInt
+
+pub let ndis_pd_caps_receive_filter_counters_supported : UInt
+
+pub let ndis_pd_close_provider_parameters_revision_1 : UInt
+
+pub let ndis_pd_config_revision_1 : UInt
+
+pub let ndis_pd_counter_parameters_revision_1 : UInt
+
+pub let ndis_pd_filter_parameters_revision_1 : UInt
+
+pub let ndis_pd_open_provider_parameters_revision_1 : UInt
+
+pub let ndis_pd_provider_dispatch_revision_1 : UInt
+
+pub let ndis_pd_queue_dispatch_revision_1 : UInt
+
+pub let ndis_pd_queue_flag_drain_notification : UInt
+
+pub let ndis_pd_queue_parameters_revision_1 : UInt
+
+pub let ndis_pd_queue_revision_1 : UInt
+
+pub let ndis_physical_medium1394 : Int
+
+pub let ndis_physical_medium802_3 : Int
+
+pub let ndis_physical_medium802_5 : Int
+
+pub let ndis_physical_medium_bluetooth : Int
+
+pub let ndis_physical_medium_cable_modem : Int
+
+pub let ndis_physical_medium_dsl : Int
+
+pub let ndis_physical_medium_fibre_channel : Int
+
+pub let ndis_physical_medium_infiniband : Int
+
+pub let ndis_physical_medium_irda : Int
+
+pub let ndis_physical_medium_max : Int
+
+pub let ndis_physical_medium_native802_11 : Int
+
+pub let ndis_physical_medium_native802_15_4 : Int
+
+pub let ndis_physical_medium_other : Int
+
+pub let ndis_physical_medium_phone_line : Int
+
+pub let ndis_physical_medium_power_line : Int
+
+pub let ndis_physical_medium_unspecified : Int
+
+pub let ndis_physical_medium_uwb : Int
+
+pub let ndis_physical_medium_wi_max : Int
+
+pub let ndis_physical_medium_wired_co_wan : Int
+
+pub let ndis_physical_medium_wired_wan : Int
+
+pub let ndis_physical_medium_wireless_lan : Int
+
+pub let ndis_physical_medium_wireless_wan : Int
+
+pub let ndis_pm_capabilities_revision_1 : UInt
+
+pub let ndis_pm_capabilities_revision_2 : UInt
+
+pub let ndis_pm_max_pattern_id : UInt
+
+pub let ndis_pm_max_string_size : UInt
+
+pub let ndis_pm_parameters_revision_1 : UInt
+
+pub let ndis_pm_parameters_revision_2 : UInt
+
+pub let ndis_pm_private_pattern_id : UInt
+
+pub let ndis_pm_protocol_offload_80211_rsn_rekey_enabled : UInt
+
+pub let ndis_pm_protocol_offload_80211_rsn_rekey_supported : UInt
+
+pub let ndis_pm_protocol_offload_arp_enabled : UInt
+
+pub let ndis_pm_protocol_offload_arp_supported : UInt
+
+pub let ndis_pm_protocol_offload_ns_enabled : UInt
+
+pub let ndis_pm_protocol_offload_ns_supported : UInt
+
+pub let ndis_pm_protocol_offload_priority_highest : UInt
+
+pub let ndis_pm_protocol_offload_priority_lowest : UInt
+
+pub let ndis_pm_protocol_offload_priority_normal : UInt
+
+pub let ndis_pm_protocol_offload_revision_1 : UInt
+
+pub let ndis_pm_protocol_offload_revision_2 : UInt
+
+pub let ndis_pm_selective_suspend_enabled : UInt
+
+pub let ndis_pm_selective_suspend_supported : UInt
+
+pub let ndis_pm_wake_on_link_change_enabled : UInt
+
+pub let ndis_pm_wake_on_media_connect_supported : UInt
+
+pub let ndis_pm_wake_on_media_disconnect_enabled : UInt
+
+pub let ndis_pm_wake_on_media_disconnect_supported : UInt
+
+pub let ndis_pm_wake_packet_indication_supported : UInt
+
+pub let ndis_pm_wake_packet_revision_1 : UInt
+
+pub let ndis_pm_wake_reason_revision_1 : UInt
+
+pub let ndis_pm_wol_bitmap_pattern_enabled : UInt
+
+pub let ndis_pm_wol_bitmap_pattern_supported : UInt
+
+pub let ndis_pm_wol_eapol_request_id_message_enabled : UInt
+
+pub let ndis_pm_wol_eapol_request_id_message_supported : UInt
+
+pub let ndis_pm_wol_ipv4_dest_addr_wildcard_enabled : UInt
+
+pub let ndis_pm_wol_ipv4_dest_addr_wildcard_supported : UInt
+
+pub let ndis_pm_wol_ipv4_tcp_syn_enabled : UInt
+
+pub let ndis_pm_wol_ipv4_tcp_syn_supported : UInt
+
+pub let ndis_pm_wol_ipv6_dest_addr_wildcard_enabled : UInt
+
+pub let ndis_pm_wol_ipv6_dest_addr_wildcard_supported : UInt
+
+pub let ndis_pm_wol_ipv6_tcp_syn_enabled : UInt
+
+pub let ndis_pm_wol_ipv6_tcp_syn_supported : UInt
+
+pub let ndis_pm_wol_magic_packet_enabled : UInt
+
+pub let ndis_pm_wol_magic_packet_supported : UInt
+
+pub let ndis_pm_wol_pattern_revision_1 : UInt
+
+pub let ndis_pm_wol_pattern_revision_2 : UInt
+
+pub let ndis_pm_wol_priority_highest : UInt
+
+pub let ndis_pm_wol_priority_lowest : UInt
+
+pub let ndis_pm_wol_priority_normal : UInt
+
+pub let ndis_pnp_wake_up_link_change : UInt
+
+pub let ndis_pnp_wake_up_magic_packet : UInt
+
+pub let ndis_pnp_wake_up_pattern_match : UInt
+
+pub let ndis_poll_characteristics_revision_1 : UInt
+
+pub let ndis_poll_data_revision_1 : UInt
+
+pub let ndis_poll_notification_revision_1 : UInt
+
+pub let ndis_port_array_revision_1 : UInt
+
+pub let ndis_port_authentication_parameters_revision_1 : UInt
+
+pub let ndis_port_authorization_unknown : Int
+
+pub let ndis_port_authorized : Int
+
+pub let ndis_port_char_use_default_auth_settings : UInt
+
+pub let ndis_port_characteristics_revision_1 : UInt
+
+pub let ndis_port_control_state_controlled : Int
+
+pub let ndis_port_control_state_uncontrolled : Int
+
+pub let ndis_port_control_state_unknown : Int
+
+pub let ndis_port_reauthorizing : Int
+
+pub let ndis_port_state_revision_1 : UInt
+
+pub let ndis_port_type8021x_supplicant : Int
+
+pub let ndis_port_type_bridge : Int
+
+pub let ndis_port_type_max : Int
+
+pub let ndis_port_type_ras_connection : Int
+
+pub let ndis_port_type_undefined : Int
+
+pub let ndis_port_unauthorized : Int
+
+pub let ndis_possible_network_change : Int
+
+pub let ndis_power_profile_ac_on_line : Int
+
+pub let ndis_power_profile_battery : Int
+
+pub let ndis_processor_alpha : Int
+
+pub let ndis_processor_amd64 : Int
+
+pub let ndis_processor_arm : Int
+
+pub let ndis_processor_arm64 : Int
+
+pub let ndis_processor_ia64 : Int
+
+pub let ndis_processor_mips : Int
+
+pub let ndis_processor_ppc : Int
+
+pub let ndis_processor_vendor_authentic_amd : Int
+
+pub let ndis_processor_vendor_genuin_intel : Int
+
+pub let ndis_processor_vendor_genuine_intel : Int
+
+pub let ndis_processor_vendor_unknown : Int
+
+pub let ndis_processor_x86 : Int
+
+pub let ndis_prot_option_estimated_length : UInt
+
+pub let ndis_prot_option_no_loopback : UInt
+
+pub let ndis_prot_option_no_rsvd_on_rcvpkt : UInt
+
+pub let ndis_prot_option_send_restricted : UInt
+
+pub let ndis_protocol_co_characteristics_revision_1 : UInt
+
+pub let ndis_protocol_driver_characteristics_revision_1 : UInt
+
+pub let ndis_protocol_driver_characteristics_revision_2 : UInt
+
+pub let ndis_protocol_driver_supports_current_mac_address_change : UInt
+
+pub let ndis_protocol_driver_supports_l2_mtu_size_change : UInt
+
+pub let ndis_protocol_id_default : UInt
+
+pub let ndis_protocol_id_ip6 : UInt
+
+pub let ndis_protocol_id_ipx : UInt
+
+pub let ndis_protocol_id_mask : UInt
+
+pub let ndis_protocol_id_max : UInt
+
+pub let ndis_protocol_id_nbf : UInt
+
+pub let ndis_protocol_id_tcp_ip : UInt
+
+pub let ndis_protocol_major_version : UInt
+
+pub let ndis_protocol_minimum_major_version : UInt
+
+pub let ndis_protocol_minimum_minor_version : UInt
+
+pub let ndis_protocol_minor_version : UInt
+
+pub let ndis_protocol_pause_parameters_revision_1 : UInt
+
+pub let ndis_protocol_restart_parameters_revision_1 : UInt
+
+pub let ndis_qos_action_maximum : UInt
+
+pub let ndis_qos_action_priority : UInt
+
+pub let ndis_qos_capabilities_cee_dcbx_supported : UInt
+
+pub let ndis_qos_capabilities_ieee_dcbx_supported : UInt
+
+pub let ndis_qos_capabilities_macsec_bypass_supported : UInt
+
+pub let ndis_qos_capabilities_revision_1 : UInt
+
+pub let ndis_qos_capabilities_strict_tsa_supported : UInt
+
+pub let ndis_qos_classification_element_revision_1 : UInt
+
+pub let ndis_qos_classification_enforced_by_miniport : UInt
+
+pub let ndis_qos_classification_set_by_miniport_mask : UInt
+
+pub let ndis_qos_condition_default : UInt
+
+pub let ndis_qos_condition_ethertype : UInt
+
+pub let ndis_qos_condition_maximum : UInt
+
+pub let ndis_qos_condition_netdirect_port : UInt
+
+pub let ndis_qos_condition_reserved : UInt
+
+pub let ndis_qos_condition_tcp_or_udp_port : UInt
+
+pub let ndis_qos_condition_tcp_port : UInt
+
+pub let ndis_qos_condition_udp_port : UInt
+
+pub let ndis_qos_default_sq_id : UInt
+
+pub let ndis_qos_maximum_priorities : UInt
+
+pub let ndis_qos_maximum_traffic_classes : UInt
+
+pub let ndis_qos_offload_capabilities_revision_1 : UInt
+
+pub let ndis_qos_offload_capabilities_revision_2 : UInt
+
+pub let ndis_qos_offload_caps_gft_sq : UInt
+
+pub let ndis_qos_offload_caps_standard_sq : UInt
+
+pub let ndis_qos_parameters_classification_changed : UInt
+
+pub let ndis_qos_parameters_classification_configured : UInt
+
+pub let ndis_qos_parameters_ets_changed : UInt
+
+pub let ndis_qos_parameters_ets_configured : UInt
+
+pub let ndis_qos_parameters_pfc_changed : UInt
+
+pub let ndis_qos_parameters_pfc_configured : UInt
+
+pub let ndis_qos_parameters_revision_1 : UInt
+
+pub let ndis_qos_parameters_willing : UInt
+
+pub let ndis_qos_sq_array_revision_1 : UInt
+
+pub let ndis_qos_sq_parameters_array_revision_1 : UInt
+
+pub let ndis_qos_sq_parameters_revision_1 : UInt
+
+pub let ndis_qos_sq_parameters_revision_2 : UInt
+
+pub let ndis_qos_sq_receive_cap_enabled : UInt
+
+pub let ndis_qos_sq_stats_revision_1 : UInt
+
+pub let ndis_qos_sq_transmit_cap_enabled : UInt
+
+pub let ndis_qos_sq_transmit_reservation_enabled : UInt
+
+pub let ndis_qos_tsa_cbs : UInt
+
+pub let ndis_qos_tsa_ets : UInt
+
+pub let ndis_qos_tsa_maximum : UInt
+
+pub let ndis_qos_tsa_strict : UInt
+
+pub let ndis_receive_filter_any_vlan_supported : UInt
+
+pub let ndis_receive_filter_arp_header_operation_supported : UInt
+
+pub let ndis_receive_filter_arp_header_spa_supported : UInt
+
+pub let ndis_receive_filter_arp_header_supported : UInt
+
+pub let ndis_receive_filter_arp_header_tpa_supported : UInt
+
+pub let ndis_receive_filter_capabilities_revision_1 : UInt
+
+pub let ndis_receive_filter_capabilities_revision_2 : UInt
+
+pub let ndis_receive_filter_clear_parameters_revision_1 : UInt
+
+pub let ndis_receive_filter_dynamic_processor_affinity_change_for_default_queue_supported : UInt
+
+pub let ndis_receive_filter_dynamic_processor_affinity_change_supported : UInt
+
+pub let ndis_receive_filter_field_mac_header_vlan_untagged_or_zero : UInt
+
+pub let ndis_receive_filter_field_parameters_revision_1 : UInt
+
+pub let ndis_receive_filter_field_parameters_revision_2 : UInt
+
+pub let ndis_receive_filter_flags_reserved : UInt
+
+pub let ndis_receive_filter_global_parameters_revision_1 : UInt
+
+pub let ndis_receive_filter_implat_min_of_queues_mode : UInt
+
+pub let ndis_receive_filter_implat_sum_of_queues_mode : UInt
+
+pub let ndis_receive_filter_info_array_revision_1 : UInt
+
+pub let ndis_receive_filter_info_array_revision_2 : UInt
+
+pub let ndis_receive_filter_info_array_vport_id_specified : UInt
+
+pub let ndis_receive_filter_info_revision_1 : UInt
+
+pub let ndis_receive_filter_interrupt_vector_coalescing_supported : UInt
+
+pub let ndis_receive_filter_ipv4_header_protocol_supported : UInt
+
+pub let ndis_receive_filter_ipv4_header_supported : UInt
+
+pub let ndis_receive_filter_ipv6_header_protocol_supported : UInt
+
+pub let ndis_receive_filter_ipv6_header_supported : UInt
+
+pub let ndis_receive_filter_lookahead_split_supported : UInt
+
+pub let ndis_receive_filter_mac_header_dest_addr_supported : UInt
+
+pub let ndis_receive_filter_mac_header_packet_type_supported : UInt
+
+pub let ndis_receive_filter_mac_header_priority_supported : UInt
+
+pub let ndis_receive_filter_mac_header_protocol_supported : UInt
+
+pub let ndis_receive_filter_mac_header_source_addr_supported : UInt
+
+pub let ndis_receive_filter_mac_header_supported : UInt
+
+pub let ndis_receive_filter_mac_header_vlan_id_supported : UInt
+
+pub let ndis_receive_filter_move_filter_parameters_revision_1 : UInt
+
+pub let ndis_receive_filter_msi_x_supported : UInt
+
+pub let ndis_receive_filter_packet_coalescing_filters_enabled : UInt
+
+pub let ndis_receive_filter_packet_coalescing_supported_on_default_queue : UInt
+
+pub let ndis_receive_filter_packet_encapsulation : UInt
+
+pub let ndis_receive_filter_packet_encapsulation_gre : UInt
+
+pub let ndis_receive_filter_parameters_revision_1 : UInt
+
+pub let ndis_receive_filter_parameters_revision_2 : UInt
+
+pub let ndis_receive_filter_queue_state_change_revision_1 : UInt
+
+pub let ndis_receive_filter_reserved : UInt
+
+pub let ndis_receive_filter_test_header_field_equal_supported : UInt
+
+pub let ndis_receive_filter_test_header_field_mask_equal_supported : UInt
+
+pub let ndis_receive_filter_test_header_field_not_equal_supported : UInt
+
+pub let ndis_receive_filter_udp_header_dest_port_supported : UInt
+
+pub let ndis_receive_filter_udp_header_supported : UInt
+
+pub let ndis_receive_filter_vm_queue_supported : UInt
+
+pub let ndis_receive_filter_vm_queues_enabled : UInt
+
+pub let ndis_receive_filter_vmq_filters_enabled : UInt
+
+pub let ndis_receive_flags_dispatch_level : UInt
+
+pub let ndis_receive_flags_more_nbls : UInt
+
+pub let ndis_receive_flags_perfect_filtered : UInt
+
+pub let ndis_receive_flags_resources : UInt
+
+pub let ndis_receive_flags_shared_memory_info_valid : UInt
+
+pub let ndis_receive_flags_single_ether_type : UInt
+
+pub let ndis_receive_flags_single_queue : UInt
+
+pub let ndis_receive_flags_single_vlan : UInt
+
+pub let ndis_receive_flags_switch_destination_group : UInt
+
+pub let ndis_receive_flags_switch_single_source : UInt
+
+pub let ndis_receive_hash_flag_enable_hash : UInt
+
+pub let ndis_receive_hash_flag_hash_info_unchanged : UInt
+
+pub let ndis_receive_hash_flag_hash_key_unchanged : UInt
+
+pub let ndis_receive_hash_parameters_revision_1 : UInt
+
+pub let ndis_receive_queue_allocation_complete_array_revision_1 : UInt
+
+pub let ndis_receive_queue_allocation_complete_parameters_revision_1 : UInt
+
+pub let ndis_receive_queue_free_parameters_revision_1 : UInt
+
+pub let ndis_receive_queue_info_array_revision_1 : UInt
+
+pub let ndis_receive_queue_info_revision_1 : UInt
+
+pub let ndis_receive_queue_info_revision_2 : UInt
+
+pub let ndis_receive_queue_parameters_change_mask : UInt
+
+pub let ndis_receive_queue_parameters_flags_changed : UInt
+
+pub let ndis_receive_queue_parameters_interrupt_coalescing_domain_id_changed : UInt
+
+pub let ndis_receive_queue_parameters_lookahead_split_required : UInt
+
+pub let ndis_receive_queue_parameters_name_changed : UInt
+
+pub let ndis_receive_queue_parameters_per_queue_receive_indication : UInt
+
+pub let ndis_receive_queue_parameters_processor_affinity_changed : UInt
+
+pub let ndis_receive_queue_parameters_qos_sq_id_changed : UInt
+
+pub let ndis_receive_queue_parameters_revision_1 : UInt
+
+pub let ndis_receive_queue_parameters_revision_2 : UInt
+
+pub let ndis_receive_queue_parameters_revision_3 : UInt
+
+pub let ndis_receive_queue_parameters_suggested_recv_buffer_numbers_changed : UInt
+
+pub let ndis_receive_queue_state_revision_1 : UInt
+
+pub let ndis_receive_scale_capabilities_revision_1 : UInt
+
+pub let ndis_receive_scale_capabilities_revision_2 : UInt
+
+pub let ndis_receive_scale_capabilities_revision_3 : UInt
+
+pub let ndis_receive_scale_param_enable_rss : UInt
+
+pub let ndis_receive_scale_param_hash_info_changed : UInt
+
+pub let ndis_receive_scale_param_hash_key_changed : UInt
+
+pub let ndis_receive_scale_param_number_of_entries_changed : UInt
+
+pub let ndis_receive_scale_param_number_of_queues_changed : UInt
+
+pub let ndis_receive_scale_parameters_revision_1 : UInt
+
+pub let ndis_receive_scale_parameters_revision_2 : UInt
+
+pub let ndis_receive_scale_parameters_revision_3 : UInt
+
+pub let ndis_receive_scale_parameters_v2_revision_1 : UInt
+
+pub let ndis_request_close : Int
+
+pub let ndis_request_generic1 : Int
+
+pub let ndis_request_generic2 : Int
+
+pub let ndis_request_generic3 : Int
+
+pub let ndis_request_generic4 : Int
+
+pub let ndis_request_open : Int
+
+pub let ndis_request_query_information : Int
+
+pub let ndis_request_query_statistics : Int
+
+pub let ndis_request_reset : Int
+
+pub let ndis_request_send : Int
+
+pub let ndis_request_set_information : Int
+
+pub let ndis_request_transfer_data : Int
+
+pub let ndis_reserved : Int
+
+pub let ndis_restart_general_attributes_max_lookahead_accessed_defined : UInt
+
+pub let ndis_restart_general_attributes_revision_1 : UInt
+
+pub let ndis_restart_general_attributes_revision_2 : UInt
+
+pub let ndis_return_flags_dispatch_level : UInt
+
+pub let ndis_return_flags_single_queue : UInt
+
+pub let ndis_return_flags_switch_single_source : UInt
+
+pub let ndis_ring_auto_removal_error : UInt
+
+pub let ndis_ring_counter_overflow : UInt
+
+pub let ndis_ring_hard_error : UInt
+
+pub let ndis_ring_lobe_wire_fault : UInt
+
+pub let ndis_ring_remove_received : UInt
+
+pub let ndis_ring_ring_recovery : UInt
+
+pub let ndis_ring_signal_loss : UInt
+
+pub let ndis_ring_single_station : UInt
+
+pub let ndis_ring_soft_error : UInt
+
+pub let ndis_ring_state_closed : Int
+
+pub let ndis_ring_state_closing : Int
+
+pub let ndis_ring_state_open_failure : Int
+
+pub let ndis_ring_state_opened : Int
+
+pub let ndis_ring_state_opening : Int
+
+pub let ndis_ring_state_ring_failure : Int
+
+pub let ndis_ring_transmit_beacon : UInt
+
+pub let ndis_routing_domain_entry_revision_1 : UInt
+
+pub let ndis_routing_domain_isolation_entry_revision_1 : UInt
+
+pub let ndis_rsc_statistics_revision_1 : UInt
+
+pub let ndis_rss_caps_classification_at_dpc : UInt
+
+pub let ndis_rss_caps_classification_at_isr : UInt
+
+pub let ndis_rss_caps_hash_type_tcp_ipv4 : UInt
+
+pub let ndis_rss_caps_hash_type_tcp_ipv6 : UInt
+
+pub let ndis_rss_caps_hash_type_tcp_ipv6_ex : UInt
+
+pub let ndis_rss_caps_hash_type_udp_ipv4 : UInt
+
+pub let ndis_rss_caps_hash_type_udp_ipv6 : UInt
+
+pub let ndis_rss_caps_hash_type_udp_ipv6_ex : UInt
+
+pub let ndis_rss_caps_message_signaled_interrupts : UInt
+
+pub let ndis_rss_caps_rss_available_on_ports : UInt
+
+pub let ndis_rss_caps_supports_independent_entry_move : UInt
+
+pub let ndis_rss_caps_supports_msi_x : UInt
+
+pub let ndis_rss_caps_using_msi_x : UInt
+
+pub let ndis_rss_hash_secret_key_max_size_revision_1 : UInt
+
+pub let ndis_rss_hash_secret_key_max_size_revision_2 : UInt
+
+pub let ndis_rss_hash_secret_key_max_size_revision_3 : UInt
+
+pub let ndis_rss_hash_secret_key_size_revision_1 : UInt
+
+pub let ndis_rss_indirection_table_max_size_revision_1 : UInt
+
+pub let ndis_rss_indirection_table_size_revision_1 : UInt
+
+pub let ndis_rss_param_flag_base_cpu_unchanged : UInt
+
+pub let ndis_rss_param_flag_default_processor_unchanged : UInt
+
+pub let ndis_rss_param_flag_disable_rss : UInt
+
+pub let ndis_rss_param_flag_hash_info_unchanged : UInt
+
+pub let ndis_rss_param_flag_hash_key_unchanged : UInt
+
+pub let ndis_rss_param_flag_itable_unchanged : UInt
+
+pub let ndis_rss_processor_info_revision_1 : UInt
+
+pub let ndis_rss_processor_info_revision_2 : UInt
+
+pub let ndis_rss_set_indirection_entries_revision_1 : UInt
+
+pub let ndis_rss_set_indirection_entry_flag_default_processor : UInt
+
+pub let ndis_rss_set_indirection_entry_flag_primary_processor : UInt
+
+pub let ndis_runtime_version_60 : UInt
+
+pub let ndis_rwl_at_dispatch_level : UInt
+
+pub let ndis_scatter_gather_list_parameters_revision_1 : UInt
+
+pub let ndis_send_complete_flags_dispatch_level : UInt
+
+pub let ndis_send_complete_flags_single_queue : UInt
+
+pub let ndis_send_complete_flags_switch_single_source : UInt
+
+pub let ndis_send_flags_check_for_loopback : UInt
+
+pub let ndis_send_flags_dispatch_level : UInt
+
+pub let ndis_send_flags_single_queue : UInt
+
+pub let ndis_send_flags_switch_destination_group : UInt
+
+pub let ndis_send_flags_switch_single_source : UInt
+
+pub let ndis_sg_dma_64_bit_address : UInt
+
+pub let ndis_sg_dma_description_revision_1 : UInt
+
+pub let ndis_sg_dma_description_revision_2 : UInt
+
+pub let ndis_sg_dma_hybrid_dma : UInt
+
+pub let ndis_sg_dma_v3_hal_api : UInt
+
+pub let ndis_sg_list_write_to_device : UInt64
+
+pub let ndis_shared_mem_parameters_contigous : UInt
+
+pub let ndis_shared_mem_parameters_contiguous : UInt
+
+pub let ndis_shared_memory_parameters_revision_1 : UInt
+
+pub let ndis_shared_memory_parameters_revision_2 : UInt
+
+pub let ndis_shared_memory_provider_char_supports_pf_vports : UInt
+
+pub let ndis_shared_memory_provider_characteristics_revision_1 : UInt
+
+pub let ndis_sizeof_ndis_pm_protocol_offload_revision_1 : UInt
+
+pub let ndis_sriov_bar_resources_info_revision_1 : UInt
+
+pub let ndis_sriov_capabilities_revision_1 : UInt
+
+pub let ndis_sriov_caps_pf_miniport : UInt
+
+pub let ndis_sriov_caps_sriov_supported : UInt
+
+pub let ndis_sriov_caps_vf_miniport : UInt
+
+pub let ndis_sriov_config_state_parameters_revision_1 : UInt
+
+pub let ndis_sriov_overlying_adapter_info_version_1 : UInt
+
+pub let ndis_sriov_pf_luid_info_revision_1 : UInt
+
+pub let ndis_sriov_probed_bars_info_revision_1 : UInt
+
+pub let ndis_sriov_read_vf_config_block_parameters_revision_1 : UInt
+
+pub let ndis_sriov_read_vf_config_space_parameters_revision_1 : UInt
+
+pub let ndis_sriov_reset_vf_parameters_revision_1 : UInt
+
+pub let ndis_sriov_set_vf_power_state_parameters_revision_1 : UInt
+
+pub let ndis_sriov_vf_invalidate_config_block_info_revision_1 : UInt
+
+pub let ndis_sriov_vf_serial_number_info_revision_1 : UInt
+
+pub let ndis_sriov_vf_vendor_device_id_info_revision_1 : UInt
+
+pub let ndis_sriov_write_vf_config_block_parameters_revision_1 : UInt
+
+pub let ndis_sriov_write_vf_config_space_parameters_revision_1 : UInt
+
+pub let ndis_statistics_broadcast_bytes_rcv_supported : UInt
+
+pub let ndis_statistics_broadcast_bytes_xmit_supported : UInt
+
+pub let ndis_statistics_broadcast_frames_rcv_supported : UInt
+
+pub let ndis_statistics_broadcast_frames_xmit_supported : UInt
+
+pub let ndis_statistics_bytes_rcv_supported : UInt
+
+pub let ndis_statistics_bytes_xmit_supported : UInt
+
+pub let ndis_statistics_directed_bytes_rcv_supported : UInt
+
+pub let ndis_statistics_directed_bytes_xmit_supported : UInt
+
+pub let ndis_statistics_directed_frames_rcv_supported : UInt
+
+pub let ndis_statistics_directed_frames_xmit_supported : UInt
+
+pub let ndis_statistics_flags_valid_broadcast_bytes_rcv : UInt
+
+pub let ndis_statistics_flags_valid_broadcast_bytes_xmit : UInt
+
+pub let ndis_statistics_flags_valid_broadcast_frames_rcv : UInt
+
+pub let ndis_statistics_flags_valid_broadcast_frames_xmit : UInt
+
+pub let ndis_statistics_flags_valid_bytes_rcv : UInt
+
+pub let ndis_statistics_flags_valid_bytes_xmit : UInt
+
+pub let ndis_statistics_flags_valid_directed_bytes_rcv : UInt
+
+pub let ndis_statistics_flags_valid_directed_bytes_xmit : UInt
+
+pub let ndis_statistics_flags_valid_directed_frames_rcv : UInt
+
+pub let ndis_statistics_flags_valid_directed_frames_xmit : UInt
+
+pub let ndis_statistics_flags_valid_multicast_bytes_rcv : UInt
+
+pub let ndis_statistics_flags_valid_multicast_bytes_xmit : UInt
+
+pub let ndis_statistics_flags_valid_multicast_frames_rcv : UInt
+
+pub let ndis_statistics_flags_valid_multicast_frames_xmit : UInt
+
+pub let ndis_statistics_flags_valid_rcv_discards : UInt
+
+pub let ndis_statistics_flags_valid_rcv_error : UInt
+
+pub let ndis_statistics_flags_valid_xmit_discards : UInt
+
+pub let ndis_statistics_flags_valid_xmit_error : UInt
+
+pub let ndis_statistics_gen_statistics_supported : UInt
+
+pub let ndis_statistics_info_revision_1 : UInt
+
+pub let ndis_statistics_multicast_bytes_rcv_supported : UInt
+
+pub let ndis_statistics_multicast_bytes_xmit_supported : UInt
+
+pub let ndis_statistics_multicast_frames_rcv_supported : UInt
+
+pub let ndis_statistics_multicast_frames_xmit_supported : UInt
+
+pub let ndis_statistics_rcv_crc_error_supported : UInt
+
+pub let ndis_statistics_rcv_discards_supported : UInt
+
+pub let ndis_statistics_rcv_error_supported : UInt
+
+pub let ndis_statistics_rcv_no_buffer_supported : UInt
+
+pub let ndis_statistics_rcv_ok_supported : UInt
+
+pub let ndis_statistics_transmit_queue_length_supported : UInt
+
+pub let ndis_statistics_xmit_discards_supported : UInt
+
+pub let ndis_statistics_xmit_error_supported : UInt
+
+pub let ndis_statistics_xmit_ok_supported : UInt
+
+pub let ndis_status_indication_flags_media_connect_to_connect : UInt
+
+pub let ndis_status_indication_flags_ndis_reserved : UInt
+
+pub let ndis_status_indication_revision_1 : UInt
+
+pub let ndis_support_60_compatible_api : UInt
+
+pub let ndis_support_ndis6 : UInt
+
+pub let ndis_support_ndis61 : UInt
+
+pub let ndis_support_ndis620 : UInt
+
+pub let ndis_support_ndis630 : UInt
+
+pub let ndis_support_ndis640 : UInt
+
+pub let ndis_support_ndis650 : UInt
+
+pub let ndis_support_ndis651 : UInt
+
+pub let ndis_support_ndis660 : UInt
+
+pub let ndis_support_ndis670 : UInt
+
+pub let ndis_support_ndis680 : UInt
+
+pub let ndis_support_ndis681 : UInt
+
+pub let ndis_support_ndis682 : UInt
+
+pub let ndis_support_ndis683 : UInt
+
+pub let ndis_support_ndis684 : UInt
+
+pub let ndis_support_ndis685 : UInt
+
+pub let ndis_support_ndis686 : UInt
+
+pub let ndis_support_ndis687 : UInt
+
+pub let ndis_switch_copy_nbl_info_flags_preserve_destinations : UInt
+
+pub let ndis_switch_copy_nbl_info_flags_preserve_switch_info_only : UInt
+
+pub let ndis_switch_default_nic_index : UInt
+
+pub let ndis_switch_default_port_id : UInt
+
+pub let ndis_switch_feature_status_custom_revision_1 : UInt
+
+pub let ndis_switch_feature_status_parameters_revision_1 : UInt
+
+pub let ndis_switch_forwarding_destination_array_revision_1 : UInt
+
+pub let ndis_switch_net_buffer_list_context_type_info_revision_1 : UInt
+
+pub let ndis_switch_nic_array_revision_1 : UInt
+
+pub let ndis_switch_nic_flags_mapped_nic_updated : UInt
+
+pub let ndis_switch_nic_flags_nic_initializing : UInt
+
+pub let ndis_switch_nic_flags_nic_suspended : UInt
+
+pub let ndis_switch_nic_flags_nic_suspended_lm : UInt
+
+pub let ndis_switch_nic_oid_request_revision_1 : UInt
+
+pub let ndis_switch_nic_parameters_revision_1 : UInt
+
+pub let ndis_switch_nic_parameters_revision_2 : UInt
+
+pub let ndis_switch_nic_save_state_revision_1 : UInt
+
+pub let ndis_switch_nic_save_state_revision_2 : UInt
+
+pub let ndis_switch_nic_status_indication_revision_1 : UInt
+
+pub let ndis_switch_object_serialization_version_1 : UInt
+
+pub let ndis_switch_optional_handlers_pd_reserved_size : UInt
+
+pub let ndis_switch_optional_handlers_revision_1 : UInt
+
+pub let ndis_switch_optional_handlers_revision_2 : UInt
+
+pub let ndis_switch_parameters_revision_1 : UInt
+
+pub let ndis_switch_port_array_revision_1 : UInt
+
+pub let ndis_switch_port_feature_status_custom_revision_1 : UInt
+
+pub let ndis_switch_port_feature_status_parameters_revision_1 : UInt
+
+pub let ndis_switch_port_parameters_flag_restoring_port : UInt
+
+pub let ndis_switch_port_parameters_flag_untrusted_internal_port : UInt
+
+pub let ndis_switch_port_parameters_revision_1 : UInt
+
+pub let ndis_switch_port_property_custom_revision_1 : UInt
+
+pub let ndis_switch_port_property_delete_parameters_revision_1 : UInt
+
+pub let ndis_switch_port_property_enum_info_revision_1 : UInt
+
+pub let ndis_switch_port_property_enum_parameters_revision_1 : UInt
+
+pub let ndis_switch_port_property_isolation_revision_1 : UInt
+
+pub let ndis_switch_port_property_parameters_revision_1 : UInt
+
+pub let ndis_switch_port_property_profile_revision_1 : UInt
+
+pub let ndis_switch_port_property_routing_domain_revision_1 : UInt
+
+pub let ndis_switch_port_property_security_revision_1 : UInt
+
+pub let ndis_switch_port_property_security_revision_2 : UInt
+
+pub let ndis_switch_port_property_vlan_revision_1 : UInt
+
+pub let ndis_switch_property_custom_revision_1 : UInt
+
+pub let ndis_switch_property_delete_parameters_revision_1 : UInt
+
+pub let ndis_switch_property_enum_info_revision_1 : UInt
+
+pub let ndis_switch_property_enum_parameters_revision_1 : UInt
+
+pub let ndis_switch_property_parameters_revision_1 : UInt
+
+pub let ndis_switch_report_filtered_nbl_flags_is_incoming : UInt
+
+pub let ndis_system_processor_info_ex_revision_1 : UInt
+
+pub let ndis_system_processor_info_revision_1 : UInt
+
+pub let ndis_task_offload_version : UInt
+
+pub let ndis_task_tcp_large_send_v0 : UInt
+
+pub let ndis_tcp_connection_offload_revision_1 : UInt
+
+pub let ndis_tcp_connection_offload_revision_2 : UInt
+
+pub let ndis_tcp_large_send_offload_i_pv4 : UInt
+
+pub let ndis_tcp_large_send_offload_i_pv6 : UInt
+
+pub let ndis_tcp_large_send_offload_v1_type : UInt
+
+pub let ndis_tcp_large_send_offload_v2_type : UInt
+
+pub let ndis_tcp_recv_seg_coalesc_offload_revision_1 : UInt
+
+pub let ndis_timeout_dpc_request_capabilities_revision_1 : UInt
+
+pub let ndis_timer_characteristics_revision_1 : UInt
+
+pub let ndis_timestamp_capabilities_revision_1 : UInt
+
+pub let ndis_udp_segmentation_offload_ipv4 : UInt
+
+pub let ndis_udp_segmentation_offload_ipv6 : UInt
+
+pub let ndis_wan_error_control : Int
+
+pub let ndis_wan_header_ethernet : Int
+
+pub let ndis_wan_header_native : Int
+
+pub let ndis_wan_medium_agile_vpn : Int
+
+pub let ndis_wan_medium_atm : Int
+
+pub let ndis_wan_medium_frame_relay : Int
+
+pub let ndis_wan_medium_gre : Int
+
+pub let ndis_wan_medium_hub : Int
+
+pub let ndis_wan_medium_irda : Int
+
+pub let ndis_wan_medium_isdn : Int
+
+pub let ndis_wan_medium_l2_tp : Int
+
+pub let ndis_wan_medium_parallel : Int
+
+pub let ndis_wan_medium_pppoe : Int
+
+pub let ndis_wan_medium_pptp : Int
+
+pub let ndis_wan_medium_serial : Int
+
+pub let ndis_wan_medium_sonet : Int
+
+pub let ndis_wan_medium_sstp : Int
+
+pub let ndis_wan_medium_sub_type_max : Int
+
+pub let ndis_wan_medium_sw56_k : Int
+
+pub let ndis_wan_medium_x_25 : Int
+
+pub let ndis_wan_raw : Int
+
+pub let ndis_wan_reliable : Int
+
+pub let ndis_wdf : UInt
+
+pub let ndis_wdm : UInt
+
+pub let ndis_wdm_driver : UInt
+
+pub let ndis_wlan_wake_on_4_way_handshake_request_enabled : UInt
+
+pub let ndis_wlan_wake_on_4_way_handshake_request_supported : UInt
+
+pub let ndis_wlan_wake_on_ap_association_lost_enabled : UInt
+
+pub let ndis_wlan_wake_on_ap_association_lost_supported : UInt
+
+pub let ndis_wlan_wake_on_gtk_handshake_error_enabled : UInt
+
+pub let ndis_wlan_wake_on_gtk_handshake_error_supported : UInt
+
+pub let ndis_wlan_wake_on_nlo_discovery_enabled : UInt
+
+pub let ndis_wlan_wake_on_nlo_discovery_supported : UInt
+
+pub let ndis_wmi_default_method_id : UInt
+
+pub let ndis_wmi_enum_adapter_revision_1 : UInt
+
+pub let ndis_wmi_event_header_revision_1 : UInt
+
+pub let ndis_wmi_method_header_revision_1 : UInt
+
+pub let ndis_wmi_object_type_enum_adapter : UInt
+
+pub let ndis_wmi_object_type_event : UInt
+
+pub let ndis_wmi_object_type_method : UInt
+
+pub let ndis_wmi_object_type_output_info : UInt
+
+pub let ndis_wmi_object_type_set : UInt
+
+pub let ndis_wmi_pm_active_capabilities_revision_1 : UInt
+
+pub let ndis_wmi_pm_admin_config_revision_1 : UInt
+
+pub let ndis_wmi_receive_queue_info_revision_1 : UInt
+
+pub let ndis_wmi_receive_queue_parameters_revision_1 : UInt
+
+pub let ndis_wmi_set_header_revision_1 : UInt
+
+pub let ndis_wwan_wake_on_packet_state_enabled : UInt
+
+pub let ndis_wwan_wake_on_packet_state_supported : UInt
+
+pub let ndis_wwan_wake_on_register_state_enabled : UInt
+
+pub let ndis_wwan_wake_on_register_state_supported : UInt
+
+pub let ndis_wwan_wake_on_sms_receive_enabled : UInt
+
+pub let ndis_wwan_wake_on_sms_receive_supported : UInt
+
+pub let ndis_wwan_wake_on_uicc_change_enabled : UInt
+
+pub let ndis_wwan_wake_on_uicc_change_supported : UInt
+
+pub let ndis_wwan_wake_on_ussd_receive_enabled : UInt
+
+pub let ndis_wwan_wake_on_ussd_receive_supported : UInt
+
+pub let net_buffer_list_pool_flag_verify : UInt
+
+pub let net_buffer_list_pool_parameters_revision_1 : UInt
+
+pub let net_buffer_list_pool_parameters_revision_2 : UInt
+
+pub let net_buffer_pool_flag_verify : UInt
+
+pub let net_buffer_pool_parameters_revision_1 : UInt
+
+pub let net_buffer_pool_parameters_revision_2 : UInt
+
+pub let net_device_pnp_event_revision_1 : UInt
+
+pub let net_event_flags_vport_id_valid : UInt
+
+pub let net_event_halt_miniport_on_low_power : UInt
+
+pub let net_pnp_event_notification_revision_1 : UInt
+
+pub let net_pnp_event_notification_revision_2 : UInt
+
+pub let offload_inbound_sa : UInt
+
+pub let offload_ipsec_conf_3_des : Int
+
+pub let offload_ipsec_conf_des : Int
+
+pub let offload_ipsec_conf_max : Int
+
+pub let offload_ipsec_conf_none : Int
+
+pub let offload_ipsec_conf_reserved : Int
+
+pub let offload_ipsec_integrity_max : Int
+
+pub let offload_ipsec_integrity_md5 : Int
+
+pub let offload_ipsec_integrity_none : Int
+
+pub let offload_ipsec_integrity_sha : Int
+
+pub let offload_ipsec_udpesp_encaptype_ike : Int
+
+pub let offload_ipsec_udpesp_encaptype_other : Int
+
+pub let offload_max_sas : UInt
+
+pub let offload_outbound_sa : UInt
+
+pub let oid_1394_local_node_info : UInt
+
+pub let oid_1394_vc_info : UInt
+
+pub let oid_802_11_add_key : UInt
+
+pub let oid_802_11_add_wep : UInt
+
+pub let oid_802_11_association_information : UInt
+
+pub let oid_802_11_authentication_mode : UInt
+
+pub let oid_802_11_bssid : UInt
+
+pub let oid_802_11_bssid_list : UInt
+
+pub let oid_802_11_bssid_list_scan : UInt
+
+pub let oid_802_11_capability : UInt
+
+pub let oid_802_11_configuration : UInt
+
+pub let oid_802_11_desired_rates : UInt
+
+pub let oid_802_11_disassociate : UInt
+
+pub let oid_802_11_encryption_status : UInt
+
+pub let oid_802_11_fragmentation_threshold : UInt
+
+pub let oid_802_11_infrastructure_mode : UInt
+
+pub let oid_802_11_media_stream_mode : UInt
+
+pub let oid_802_11_network_type_in_use : UInt
+
+pub let oid_802_11_network_types_supported : UInt
+
+pub let oid_802_11_non_bcast_ssid_list : UInt
+
+pub let oid_802_11_number_of_antennas : UInt
+
+pub let oid_802_11_pmkid : UInt
+
+pub let oid_802_11_power_mode : UInt
+
+pub let oid_802_11_privacy_filter : UInt
+
+pub let oid_802_11_radio_status : UInt
+
+pub let oid_802_11_reload_defaults : UInt
+
+pub let oid_802_11_remove_key : UInt
+
+pub let oid_802_11_remove_wep : UInt
+
+pub let oid_802_11_rssi : UInt
+
+pub let oid_802_11_rssi_trigger : UInt
+
+pub let oid_802_11_rts_threshold : UInt
+
+pub let oid_802_11_rx_antenna_selected : UInt
+
+pub let oid_802_11_ssid : UInt
+
+pub let oid_802_11_statistics : UInt
+
+pub let oid_802_11_supported_rates : UInt
+
+pub let oid_802_11_test : UInt
+
+pub let oid_802_11_tx_antenna_selected : UInt
+
+pub let oid_802_11_tx_power_level : UInt
+
+pub let oid_802_11_wep_status : UInt
+
+pub let oid_802_3_add_multicast_address : UInt
+
+pub let oid_802_3_current_address : UInt
+
+pub let oid_802_3_delete_multicast_address : UInt
+
+pub let oid_802_3_mac_options : UInt
+
+pub let oid_802_3_maximum_list_size : UInt
+
+pub let oid_802_3_multicast_list : UInt
+
+pub let oid_802_3_permanent_address : UInt
+
+pub let oid_802_3_rcv_error_alignment : UInt
+
+pub let oid_802_3_rcv_overrun : UInt
+
+pub let oid_802_3_xmit_deferred : UInt
+
+pub let oid_802_3_xmit_heartbeat_failure : UInt
+
+pub let oid_802_3_xmit_late_collisions : UInt
+
+pub let oid_802_3_xmit_max_collisions : UInt
+
+pub let oid_802_3_xmit_more_collisions : UInt
+
+pub let oid_802_3_xmit_one_collision : UInt
+
+pub let oid_802_3_xmit_times_crs_lost : UInt
+
+pub let oid_802_3_xmit_underrun : UInt
+
+pub let oid_802_5_abort_delimeters : UInt
+
+pub let oid_802_5_ac_errors : UInt
+
+pub let oid_802_5_burst_errors : UInt
+
+pub let oid_802_5_current_address : UInt
+
+pub let oid_802_5_current_functional : UInt
+
+pub let oid_802_5_current_group : UInt
+
+pub let oid_802_5_current_ring_state : UInt
+
+pub let oid_802_5_current_ring_status : UInt
+
+pub let oid_802_5_frame_copied_errors : UInt
+
+pub let oid_802_5_frequency_errors : UInt
+
+pub let oid_802_5_internal_errors : UInt
+
+pub let oid_802_5_last_open_status : UInt
+
+pub let oid_802_5_line_errors : UInt
+
+pub let oid_802_5_lost_frames : UInt
+
+pub let oid_802_5_permanent_address : UInt
+
+pub let oid_802_5_token_errors : UInt
+
+pub let oid_arcnet_current_address : UInt
+
+pub let oid_arcnet_permanent_address : UInt
+
+pub let oid_arcnet_reconfigurations : UInt
+
+pub let oid_atm_acquire_access_net_resources : UInt
+
+pub let oid_atm_alignment_required : UInt
+
+pub let oid_atm_assigned_vpi : UInt
+
+pub let oid_atm_call_alerting : UInt
+
+pub let oid_atm_call_notify : UInt
+
+pub let oid_atm_call_proceeding : UInt
+
+pub let oid_atm_cells_hec_error : UInt
+
+pub let oid_atm_digital_broadcast_vpivci : UInt
+
+pub let oid_atm_get_nearest_flow : UInt
+
+pub let oid_atm_hw_current_address : UInt
+
+pub let oid_atm_ilmi_vpivci : UInt
+
+pub let oid_atm_lecs_address : UInt
+
+pub let oid_atm_max_aal0_packet_size : UInt
+
+pub let oid_atm_max_aal1_packet_size : UInt
+
+pub let oid_atm_max_aal34_packet_size : UInt
+
+pub let oid_atm_max_aal5_packet_size : UInt
+
+pub let oid_atm_max_active_vci_bits : UInt
+
+pub let oid_atm_max_active_vcs : UInt
+
+pub let oid_atm_max_active_vpi_bits : UInt
+
+pub let oid_atm_my_ip_nm_address : UInt
+
+pub let oid_atm_party_alerting : UInt
+
+pub let oid_atm_rcv_cells_dropped : UInt
+
+pub let oid_atm_rcv_cells_ok : UInt
+
+pub let oid_atm_rcv_invalid_vpi_vci : UInt
+
+pub let oid_atm_rcv_reassembly_error : UInt
+
+pub let oid_atm_release_access_net_resources : UInt
+
+pub let oid_atm_service_address : UInt
+
+pub let oid_atm_signaling_vpivci : UInt
+
+pub let oid_atm_supported_aal_types : UInt
+
+pub let oid_atm_supported_service_category : UInt
+
+pub let oid_atm_supported_vc_rates : UInt
+
+pub let oid_atm_xmit_cells_ok : UInt
+
+pub let oid_co_add_address : UInt
+
+pub let oid_co_add_pvc : UInt
+
+pub let oid_co_address_change : UInt
+
+pub let oid_co_af_close : UInt
+
+pub let oid_co_delete_address : UInt
+
+pub let oid_co_delete_pvc : UInt
+
+pub let oid_co_get_addresses : UInt
+
+pub let oid_co_get_call_information : UInt
+
+pub let oid_co_signaling_disabled : UInt
+
+pub let oid_co_signaling_enabled : UInt
+
+pub let oid_co_tapi_address_caps : UInt
+
+pub let oid_co_tapi_cm_caps : UInt
+
+pub let oid_co_tapi_dont_report_digits : UInt
+
+pub let oid_co_tapi_get_call_diagnostics : UInt
+
+pub let oid_co_tapi_line_caps : UInt
+
+pub let oid_co_tapi_report_digits : UInt
+
+pub let oid_co_tapi_translate_ndis_callparams : UInt
+
+pub let oid_co_tapi_translate_tapi_callparams : UInt
+
+pub let oid_co_tapi_translate_tapi_sap : UInt
+
+pub let oid_fddi_attachment_type : UInt
+
+pub let oid_fddi_downstream_node_long : UInt
+
+pub let oid_fddi_frame_errors : UInt
+
+pub let oid_fddi_frames_lost : UInt
+
+pub let oid_fddi_if_admin_status : UInt
+
+pub let oid_fddi_if_descr : UInt
+
+pub let oid_fddi_if_in_discards : UInt
+
+pub let oid_fddi_if_in_errors : UInt
+
+pub let oid_fddi_if_in_nucast_pkts : UInt
+
+pub let oid_fddi_if_in_octets : UInt
+
+pub let oid_fddi_if_in_ucast_pkts : UInt
+
+pub let oid_fddi_if_in_unknown_protos : UInt
+
+pub let oid_fddi_if_last_change : UInt
+
+pub let oid_fddi_if_mtu : UInt
+
+pub let oid_fddi_if_oper_status : UInt
+
+pub let oid_fddi_if_out_discards : UInt
+
+pub let oid_fddi_if_out_errors : UInt
+
+pub let oid_fddi_if_out_nucast_pkts : UInt
+
+pub let oid_fddi_if_out_octets : UInt
+
+pub let oid_fddi_if_out_qlen : UInt
+
+pub let oid_fddi_if_out_ucast_pkts : UInt
+
+pub let oid_fddi_if_phys_address : UInt
+
+pub let oid_fddi_if_specific : UInt
+
+pub let oid_fddi_if_speed : UInt
+
+pub let oid_fddi_if_type : UInt
+
+pub let oid_fddi_lconnection_state : UInt
+
+pub let oid_fddi_lct_failures : UInt
+
+pub let oid_fddi_lem_rejects : UInt
+
+pub let oid_fddi_long_current_addr : UInt
+
+pub let oid_fddi_long_max_list_size : UInt
+
+pub let oid_fddi_long_multicast_list : UInt
+
+pub let oid_fddi_long_permanent_addr : UInt
+
+pub let oid_fddi_mac_available_paths : UInt
+
+pub let oid_fddi_mac_bridge_functions : UInt
+
+pub let oid_fddi_mac_copied_ct : UInt
+
+pub let oid_fddi_mac_current_path : UInt
+
+pub let oid_fddi_mac_da_flag : UInt
+
+pub let oid_fddi_mac_downstream_nbr : UInt
+
+pub let oid_fddi_mac_downstream_port_type : UInt
+
+pub let oid_fddi_mac_dup_address_test : UInt
+
+pub let oid_fddi_mac_error_ct : UInt
+
+pub let oid_fddi_mac_frame_ct : UInt
+
+pub let oid_fddi_mac_frame_error_flag : UInt
+
+pub let oid_fddi_mac_frame_error_ratio : UInt
+
+pub let oid_fddi_mac_frame_error_threshold : UInt
+
+pub let oid_fddi_mac_frame_status_functions : UInt
+
+pub let oid_fddi_mac_hardware_present : UInt
+
+pub let oid_fddi_mac_index : UInt
+
+pub let oid_fddi_mac_late_ct : UInt
+
+pub let oid_fddi_mac_long_grp_address : UInt
+
+pub let oid_fddi_mac_lost_ct : UInt
+
+pub let oid_fddi_mac_ma_unitdata_available : UInt
+
+pub let oid_fddi_mac_ma_unitdata_enable : UInt
+
+pub let oid_fddi_mac_not_copied_ct : UInt
+
+pub let oid_fddi_mac_not_copied_flag : UInt
+
+pub let oid_fddi_mac_not_copied_ratio : UInt
+
+pub let oid_fddi_mac_not_copied_threshold : UInt
+
+pub let oid_fddi_mac_old_downstream_nbr : UInt
+
+pub let oid_fddi_mac_old_upstream_nbr : UInt
+
+pub let oid_fddi_mac_requested_paths : UInt
+
+pub let oid_fddi_mac_ring_op_ct : UInt
+
+pub let oid_fddi_mac_rmt_state : UInt
+
+pub let oid_fddi_mac_short_grp_address : UInt
+
+pub let oid_fddi_mac_smt_address : UInt
+
+pub let oid_fddi_mac_t_max : UInt
+
+pub let oid_fddi_mac_t_max_capability : UInt
+
+pub let oid_fddi_mac_t_neg : UInt
+
+pub let oid_fddi_mac_t_pri0 : UInt
+
+pub let oid_fddi_mac_t_pri1 : UInt
+
+pub let oid_fddi_mac_t_pri2 : UInt
+
+pub let oid_fddi_mac_t_pri3 : UInt
+
+pub let oid_fddi_mac_t_pri4 : UInt
+
+pub let oid_fddi_mac_t_pri5 : UInt
+
+pub let oid_fddi_mac_t_pri6 : UInt
+
+pub let oid_fddi_mac_t_req : UInt
+
+pub let oid_fddi_mac_token_ct : UInt
+
+pub let oid_fddi_mac_transmit_ct : UInt
+
+pub let oid_fddi_mac_tvx_capability : UInt
+
+pub let oid_fddi_mac_tvx_expired_ct : UInt
+
+pub let oid_fddi_mac_tvx_value : UInt
+
+pub let oid_fddi_mac_unda_flag : UInt
+
+pub let oid_fddi_mac_upstream_nbr : UInt
+
+pub let oid_fddi_path_configuration : UInt
+
+pub let oid_fddi_path_index : UInt
+
+pub let oid_fddi_path_max_t_req : UInt
+
+pub let oid_fddi_path_ring_latency : UInt
+
+pub let oid_fddi_path_sba_available : UInt
+
+pub let oid_fddi_path_sba_overhead : UInt
+
+pub let oid_fddi_path_sba_payload : UInt
+
+pub let oid_fddi_path_t_max_lower_bound : UInt
+
+pub let oid_fddi_path_t_r_mode : UInt
+
+pub let oid_fddi_path_trace_status : UInt
+
+pub let oid_fddi_path_tvx_lower_bound : UInt
+
+pub let oid_fddi_port_action : UInt
+
+pub let oid_fddi_port_available_paths : UInt
+
+pub let oid_fddi_port_bs_flag : UInt
+
+pub let oid_fddi_port_connection_capabilities : UInt
+
+pub let oid_fddi_port_connection_policies : UInt
+
+pub let oid_fddi_port_connnect_state : UInt
+
+pub let oid_fddi_port_current_path : UInt
+
+pub let oid_fddi_port_eb_error_ct : UInt
+
+pub let oid_fddi_port_hardware_present : UInt
+
+pub let oid_fddi_port_index : UInt
+
+pub let oid_fddi_port_lct_fail_ct : UInt
+
+pub let oid_fddi_port_lem_ct : UInt
+
+pub let oid_fddi_port_lem_reject_ct : UInt
+
+pub let oid_fddi_port_ler_alarm : UInt
+
+pub let oid_fddi_port_ler_cutoff : UInt
+
+pub let oid_fddi_port_ler_estimate : UInt
+
+pub let oid_fddi_port_ler_flag : UInt
+
+pub let oid_fddi_port_mac_indicated : UInt
+
+pub let oid_fddi_port_mac_loop_time : UInt
+
+pub let oid_fddi_port_mac_placement : UInt
+
+pub let oid_fddi_port_maint_ls : UInt
+
+pub let oid_fddi_port_my_type : UInt
+
+pub let oid_fddi_port_neighbor_type : UInt
+
+pub let oid_fddi_port_pc_ls : UInt
+
+pub let oid_fddi_port_pc_withhold : UInt
+
+pub let oid_fddi_port_pcm_state : UInt
+
+pub let oid_fddi_port_pmd_class : UInt
+
+pub let oid_fddi_port_requested_paths : UInt
+
+pub let oid_fddi_ring_mgt_state : UInt
+
+pub let oid_fddi_short_current_addr : UInt
+
+pub let oid_fddi_short_max_list_size : UInt
+
+pub let oid_fddi_short_multicast_list : UInt
+
+pub let oid_fddi_short_permanent_addr : UInt
+
+pub let oid_fddi_smt_available_paths : UInt
+
+pub let oid_fddi_smt_bypass_present : UInt
+
+pub let oid_fddi_smt_cf_state : UInt
+
+pub let oid_fddi_smt_config_capabilities : UInt
+
+pub let oid_fddi_smt_config_policy : UInt
+
+pub let oid_fddi_smt_connection_policy : UInt
+
+pub let oid_fddi_smt_ecm_state : UInt
+
+pub let oid_fddi_smt_hi_version_id : UInt
+
+pub let oid_fddi_smt_hold_state : UInt
+
+pub let oid_fddi_smt_last_set_station_id : UInt
+
+pub let oid_fddi_smt_lo_version_id : UInt
+
+pub let oid_fddi_smt_mac_ct : UInt
+
+pub let oid_fddi_smt_mac_indexes : UInt
+
+pub let oid_fddi_smt_manufacturer_data : UInt
+
+pub let oid_fddi_smt_master_ct : UInt
+
+pub let oid_fddi_smt_mib_version_id : UInt
+
+pub let oid_fddi_smt_msg_time_stamp : UInt
+
+pub let oid_fddi_smt_non_master_ct : UInt
+
+pub let oid_fddi_smt_op_version_id : UInt
+
+pub let oid_fddi_smt_peer_wrap_flag : UInt
+
+pub let oid_fddi_smt_port_indexes : UInt
+
+pub let oid_fddi_smt_remote_disconnect_flag : UInt
+
+pub let oid_fddi_smt_set_count : UInt
+
+pub let oid_fddi_smt_stat_rpt_policy : UInt
+
+pub let oid_fddi_smt_station_action : UInt
+
+pub let oid_fddi_smt_station_id : UInt
+
+pub let oid_fddi_smt_station_status : UInt
+
+pub let oid_fddi_smt_t_notify : UInt
+
+pub let oid_fddi_smt_trace_max_expiration : UInt
+
+pub let oid_fddi_smt_transition_time_stamp : UInt
+
+pub let oid_fddi_smt_user_data : UInt
+
+pub let oid_fddi_upstream_node_long : UInt
+
+pub let oid_ffp_adapter_stats : UInt
+
+pub let oid_ffp_control : UInt
+
+pub let oid_ffp_data : UInt
+
+pub let oid_ffp_driver_stats : UInt
+
+pub let oid_ffp_flush : UInt
+
+pub let oid_ffp_params : UInt
+
+pub let oid_ffp_support : UInt
+
+pub let oid_gen_admin_status : UInt
+
+pub let oid_gen_alias : UInt
+
+pub let oid_gen_broadcast_bytes_rcv : UInt
+
+pub let oid_gen_broadcast_bytes_xmit : UInt
+
+pub let oid_gen_broadcast_frames_rcv : UInt
+
+pub let oid_gen_broadcast_frames_xmit : UInt
+
+pub let oid_gen_bytes_rcv : UInt
+
+pub let oid_gen_bytes_xmit : UInt
+
+pub let oid_gen_co_bytes_rcv : UInt
+
+pub let oid_gen_co_bytes_xmit : UInt
+
+pub let oid_gen_co_bytes_xmit_outstanding : UInt
+
+pub let oid_gen_co_device_profile : UInt
+
+pub let oid_gen_co_driver_version : UInt
+
+pub let oid_gen_co_get_netcard_time : UInt
+
+pub let oid_gen_co_get_time_caps : UInt
+
+pub let oid_gen_co_hardware_status : UInt
+
+pub let oid_gen_co_link_speed : UInt
+
+pub let oid_gen_co_mac_options : UInt
+
+pub let oid_gen_co_media_connect_status : UInt
+
+pub let oid_gen_co_media_in_use : UInt
+
+pub let oid_gen_co_media_supported : UInt
+
+pub let oid_gen_co_minimum_link_speed : UInt
+
+pub let oid_gen_co_netcard_load : UInt
+
+pub let oid_gen_co_protocol_options : UInt
+
+pub let oid_gen_co_rcv_crc_error : UInt
+
+pub let oid_gen_co_rcv_pdus_error : UInt
+
+pub let oid_gen_co_rcv_pdus_no_buffer : UInt
+
+pub let oid_gen_co_rcv_pdus_ok : UInt
+
+pub let oid_gen_co_supported_guids : UInt
+
+pub let oid_gen_co_supported_list : UInt
+
+pub let oid_gen_co_transmit_queue_length : UInt
+
+pub let oid_gen_co_vendor_description : UInt
+
+pub let oid_gen_co_vendor_driver_version : UInt
+
+pub let oid_gen_co_vendor_id : UInt
+
+pub let oid_gen_co_xmit_pdus_error : UInt
+
+pub let oid_gen_co_xmit_pdus_ok : UInt
+
+pub let oid_gen_current_lookahead : UInt
+
+pub let oid_gen_current_packet_filter : UInt
+
+pub let oid_gen_device_profile : UInt
+
+pub let oid_gen_directed_bytes_rcv : UInt
+
+pub let oid_gen_directed_bytes_xmit : UInt
+
+pub let oid_gen_directed_frames_rcv : UInt
+
+pub let oid_gen_directed_frames_xmit : UInt
+
+pub let oid_gen_discontinuity_time : UInt
+
+pub let oid_gen_driver_version : UInt
+
+pub let oid_gen_enumerate_ports : UInt
+
+pub let oid_gen_friendly_name : UInt
+
+pub let oid_gen_get_netcard_time : UInt
+
+pub let oid_gen_get_time_caps : UInt
+
+pub let oid_gen_hardware_status : UInt
+
+pub let oid_gen_hd_split_current_config : UInt
+
+pub let oid_gen_hd_split_parameters : UInt
+
+pub let oid_gen_init_time_ms : UInt
+
+pub let oid_gen_interface_info : UInt
+
+pub let oid_gen_interrupt_moderation : UInt
+
+pub let oid_gen_ip_oper_status : UInt
+
+pub let oid_gen_isolation_parameters : UInt
+
+pub let oid_gen_last_change : UInt
+
+pub let oid_gen_link_parameters : UInt
+
+pub let oid_gen_link_speed : UInt
+
+pub let oid_gen_link_speed_ex : UInt
+
+pub let oid_gen_link_state : UInt
+
+pub let oid_gen_mac_address : UInt
+
+pub let oid_gen_mac_options : UInt
+
+pub let oid_gen_machine_name : UInt
+
+pub let oid_gen_max_link_speed : UInt
+
+pub let oid_gen_maximum_frame_size : UInt
+
+pub let oid_gen_maximum_lookahead : UInt
+
+pub let oid_gen_maximum_send_packets : UInt
+
+pub let oid_gen_maximum_total_size : UInt
+
+pub let oid_gen_media_capabilities : UInt
+
+pub let oid_gen_media_connect_status : UInt
+
+pub let oid_gen_media_connect_status_ex : UInt
+
+pub let oid_gen_media_duplex_state : UInt
+
+pub let oid_gen_media_in_use : UInt
+
+pub let oid_gen_media_sense_counts : UInt
+
+pub let oid_gen_media_supported : UInt
+
+pub let oid_gen_miniport_restart_attributes : UInt
+
+pub let oid_gen_multicast_bytes_rcv : UInt
+
+pub let oid_gen_multicast_bytes_xmit : UInt
+
+pub let oid_gen_multicast_frames_rcv : UInt
+
+pub let oid_gen_multicast_frames_xmit : UInt
+
+pub let oid_gen_ndis_reserved_1 : UInt
+
+pub let oid_gen_ndis_reserved_2 : UInt
+
+pub let oid_gen_ndis_reserved_3 : UInt
+
+pub let oid_gen_ndis_reserved_4 : UInt
+
+pub let oid_gen_ndis_reserved_5 : UInt
+
+pub let oid_gen_ndis_reserved_6 : UInt
+
+pub let oid_gen_ndis_reserved_7 : UInt
+
+pub let oid_gen_netcard_load : UInt
+
+pub let oid_gen_network_layer_addresses : UInt
+
+pub let oid_gen_operational_status : UInt
+
+pub let oid_gen_packet_monitor : UInt
+
+pub let oid_gen_pci_device_custom_properties : UInt
+
+pub let oid_gen_physical_medium : UInt
+
+pub let oid_gen_physical_medium_ex : UInt
+
+pub let oid_gen_port_authentication_parameters : UInt
+
+pub let oid_gen_port_state : UInt
+
+pub let oid_gen_promiscuous_mode : UInt
+
+pub let oid_gen_protocol_options : UInt
+
+pub let oid_gen_rcv_crc_error : UInt
+
+pub let oid_gen_rcv_discards : UInt
+
+pub let oid_gen_rcv_error : UInt
+
+pub let oid_gen_rcv_link_speed : UInt
+
+pub let oid_gen_rcv_no_buffer : UInt
+
+pub let oid_gen_rcv_ok : UInt
+
+pub let oid_gen_receive_block_size : UInt
+
+pub let oid_gen_receive_buffer_space : UInt
+
+pub let oid_gen_receive_hash : UInt
+
+pub let oid_gen_receive_scale_capabilities : UInt
+
+pub let oid_gen_receive_scale_parameters : UInt
+
+pub let oid_gen_receive_scale_parameters_v2 : UInt
+
+pub let oid_gen_reset_counts : UInt
+
+pub let oid_gen_rndis_config_parameter : UInt
+
+pub let oid_gen_rss_set_indirection_table_entries : UInt
+
+pub let oid_gen_statistics : UInt
+
+pub let oid_gen_supported_guids : UInt
+
+pub let oid_gen_supported_list : UInt
+
+pub let oid_gen_timeout_dpc_request_capabilities : UInt
+
+pub let oid_gen_transmit_block_size : UInt
+
+pub let oid_gen_transmit_buffer_space : UInt
+
+pub let oid_gen_transmit_queue_length : UInt
+
+pub let oid_gen_transport_header_offset : UInt
+
+pub let oid_gen_unknown_protos : UInt
+
+pub let oid_gen_vendor_description : UInt
+
+pub let oid_gen_vendor_driver_version : UInt
+
+pub let oid_gen_vendor_id : UInt
+
+pub let oid_gen_vlan_id : UInt
+
+pub let oid_gen_xmit_discards : UInt
+
+pub let oid_gen_xmit_error : UInt
+
+pub let oid_gen_xmit_link_speed : UInt
+
+pub let oid_gen_xmit_ok : UInt
+
+pub let oid_gft_activate_flow_entries : UInt
+
+pub let oid_gft_add_flow_entries : UInt
+
+pub let oid_gft_allocate_counters : UInt
+
+pub let oid_gft_counter_values : UInt
+
+pub let oid_gft_create_logical_vport : UInt
+
+pub let oid_gft_create_table : UInt
+
+pub let oid_gft_current_capabilities : UInt
+
+pub let oid_gft_deactivate_flow_entries : UInt
+
+pub let oid_gft_delete_flow_entries : UInt
+
+pub let oid_gft_delete_logical_vport : UInt
+
+pub let oid_gft_delete_profile : UInt
+
+pub let oid_gft_delete_table : UInt
+
+pub let oid_gft_enum_counters : UInt
+
+pub let oid_gft_enum_flow_entries : UInt
+
+pub let oid_gft_enum_logical_vports : UInt
+
+pub let oid_gft_enum_profiles : UInt
+
+pub let oid_gft_enum_tables : UInt
+
+pub let oid_gft_exact_match_profile : UInt
+
+pub let oid_gft_flow_entry_parameters : UInt
+
+pub let oid_gft_free_counters : UInt
+
+pub let oid_gft_global_parameters : UInt
+
+pub let oid_gft_hardware_capabilities : UInt
+
+pub let oid_gft_header_transposition_profile : UInt
+
+pub let oid_gft_statistics : UInt
+
+pub let oid_gft_vport_parameters : UInt
+
+pub let oid_gft_wildcard_match_profile : UInt
+
+pub let oid_ip4_offload_stats : UInt
+
+pub let oid_ip6_offload_stats : UInt
+
+pub let oid_irda_extra_rcv_bofs : UInt
+
+pub let oid_irda_link_speed : UInt
+
+pub let oid_irda_max_receive_window_size : UInt
+
+pub let oid_irda_max_send_window_size : UInt
+
+pub let oid_irda_max_unicast_list_size : UInt
+
+pub let oid_irda_media_busy : UInt
+
+pub let oid_irda_rate_sniff : UInt
+
+pub let oid_irda_receiving : UInt
+
+pub let oid_irda_reserved1 : UInt
+
+pub let oid_irda_reserved2 : UInt
+
+pub let oid_irda_supported_speeds : UInt
+
+pub let oid_irda_turnaround_time : UInt
+
+pub let oid_irda_unicast_list : UInt
+
+pub let oid_kdnet_add_pf : UInt
+
+pub let oid_kdnet_enumerate_pfs : UInt
+
+pub let oid_kdnet_query_pf_information : UInt
+
+pub let oid_kdnet_remove_pf : UInt
+
+pub let oid_ltalk_collisions : UInt
+
+pub let oid_ltalk_current_node_id : UInt
+
+pub let oid_ltalk_defers : UInt
+
+pub let oid_ltalk_fcs_errors : UInt
+
+pub let oid_ltalk_in_broadcasts : UInt
+
+pub let oid_ltalk_in_length_errors : UInt
+
+pub let oid_ltalk_no_data_errors : UInt
+
+pub let oid_ltalk_out_no_handlers : UInt
+
+pub let oid_ltalk_random_cts_errors : UInt
+
+pub let oid_ndk_connections : UInt
+
+pub let oid_ndk_local_endpoints : UInt
+
+pub let oid_ndk_set_state : UInt
+
+pub let oid_ndk_statistics : UInt
+
+pub let oid_nic_switch_allocate_vf : UInt
+
+pub let oid_nic_switch_create_switch : UInt
+
+pub let oid_nic_switch_create_vport : UInt
+
+pub let oid_nic_switch_current_capabilities : UInt
+
+pub let oid_nic_switch_delete_switch : UInt
+
+pub let oid_nic_switch_delete_vport : UInt
+
+pub let oid_nic_switch_enum_switches : UInt
+
+pub let oid_nic_switch_enum_vfs : UInt
+
+pub let oid_nic_switch_enum_vports : UInt
+
+pub let oid_nic_switch_free_vf : UInt
+
+pub let oid_nic_switch_hardware_capabilities : UInt
+
+pub let oid_nic_switch_parameters : UInt
+
+pub let oid_nic_switch_vf_parameters : UInt
+
+pub let oid_nic_switch_vport_parameters : UInt
+
+pub let oid_offload_encapsulation : UInt
+
+pub let oid_packet_coalescing_filter_match_count : UInt
+
+pub let oid_pd_close_provider : UInt
+
+pub let oid_pd_open_provider : UInt
+
+pub let oid_pd_query_current_config : UInt
+
+pub let oid_pm_add_protocol_offload : UInt
+
+pub let oid_pm_add_wol_pattern : UInt
+
+pub let oid_pm_current_capabilities : UInt
+
+pub let oid_pm_get_protocol_offload : UInt
+
+pub let oid_pm_hardware_capabilities : UInt
+
+pub let oid_pm_parameters : UInt
+
+pub let oid_pm_protocol_offload_list : UInt
+
+pub let oid_pm_remove_protocol_offload : UInt
+
+pub let oid_pm_remove_wol_pattern : UInt
+
+pub let oid_pm_reserved_1 : UInt
+
+pub let oid_pm_wol_pattern_list : UInt
+
+pub let oid_pnp_add_wake_up_pattern : UInt
+
+pub let oid_pnp_capabilities : UInt
+
+pub let oid_pnp_enable_wake_up : UInt
+
+pub let oid_pnp_query_power : UInt
+
+pub let oid_pnp_remove_wake_up_pattern : UInt
+
+pub let oid_pnp_set_power : UInt
+
+pub let oid_pnp_wake_up_error : UInt
+
+pub let oid_pnp_wake_up_ok : UInt
+
+pub let oid_pnp_wake_up_pattern_list : UInt
+
+pub let oid_qos_current_capabilities : UInt
+
+pub let oid_qos_hardware_capabilities : UInt
+
+pub let oid_qos_offload_create_sq : UInt
+
+pub let oid_qos_offload_current_capabilities : UInt
+
+pub let oid_qos_offload_delete_sq : UInt
+
+pub let oid_qos_offload_enum_sqs : UInt
+
+pub let oid_qos_offload_hardware_capabilities : UInt
+
+pub let oid_qos_offload_sq_stats : UInt
+
+pub let oid_qos_offload_update_sq : UInt
+
+pub let oid_qos_operational_parameters : UInt
+
+pub let oid_qos_parameters : UInt
+
+pub let oid_qos_remote_parameters : UInt
+
+pub let oid_qos_reserved1 : UInt
+
+pub let oid_qos_reserved10 : UInt
+
+pub let oid_qos_reserved11 : UInt
+
+pub let oid_qos_reserved12 : UInt
+
+pub let oid_qos_reserved13 : UInt
+
+pub let oid_qos_reserved14 : UInt
+
+pub let oid_qos_reserved15 : UInt
+
+pub let oid_qos_reserved16 : UInt
+
+pub let oid_qos_reserved17 : UInt
+
+pub let oid_qos_reserved18 : UInt
+
+pub let oid_qos_reserved19 : UInt
+
+pub let oid_qos_reserved2 : UInt
+
+pub let oid_qos_reserved20 : UInt
+
+pub let oid_qos_reserved3 : UInt
+
+pub let oid_qos_reserved4 : UInt
+
+pub let oid_qos_reserved5 : UInt
+
+pub let oid_qos_reserved6 : UInt
+
+pub let oid_qos_reserved7 : UInt
+
+pub let oid_qos_reserved8 : UInt
+
+pub let oid_qos_reserved9 : UInt
+
+pub let oid_receive_filter_allocate_queue : UInt
+
+pub let oid_receive_filter_clear_filter : UInt
+
+pub let oid_receive_filter_current_capabilities : UInt
+
+pub let oid_receive_filter_enum_filters : UInt
+
+pub let oid_receive_filter_enum_queues : UInt
+
+pub let oid_receive_filter_free_queue : UInt
+
+pub let oid_receive_filter_global_parameters : UInt
+
+pub let oid_receive_filter_hardware_capabilities : UInt
+
+pub let oid_receive_filter_move_filter : UInt
+
+pub let oid_receive_filter_parameters : UInt
+
+pub let oid_receive_filter_queue_allocation_complete : UInt
+
+pub let oid_receive_filter_queue_parameters : UInt
+
+pub let oid_receive_filter_set_filter : UInt
+
+pub let oid_sriov_bar_resources : UInt
+
+pub let oid_sriov_config_state : UInt
+
+pub let oid_sriov_current_capabilities : UInt
+
+pub let oid_sriov_hardware_capabilities : UInt
+
+pub let oid_sriov_overlying_adapter_info : UInt
+
+pub let oid_sriov_pf_luid : UInt
+
+pub let oid_sriov_probed_bars : UInt
+
+pub let oid_sriov_read_vf_config_block : UInt
+
+pub let oid_sriov_read_vf_config_space : UInt
+
+pub let oid_sriov_reset_vf : UInt
+
+pub let oid_sriov_set_vf_power_state : UInt
+
+pub let oid_sriov_vf_invalidate_config_block : UInt
+
+pub let oid_sriov_vf_serial_number : UInt
+
+pub let oid_sriov_vf_vendor_device_id : UInt
+
+pub let oid_sriov_write_vf_config_block : UInt
+
+pub let oid_sriov_write_vf_config_space : UInt
+
+pub let oid_switch_feature_status_query : UInt
+
+pub let oid_switch_nic_array : UInt
+
+pub let oid_switch_nic_connect : UInt
+
+pub let oid_switch_nic_create : UInt
+
+pub let oid_switch_nic_delete : UInt
+
+pub let oid_switch_nic_direct_request : UInt
+
+pub let oid_switch_nic_disconnect : UInt
+
+pub let oid_switch_nic_request : UInt
+
+pub let oid_switch_nic_restore : UInt
+
+pub let oid_switch_nic_restore_complete : UInt
+
+pub let oid_switch_nic_resume : UInt
+
+pub let oid_switch_nic_save : UInt
+
+pub let oid_switch_nic_save_complete : UInt
+
+pub let oid_switch_nic_suspend : UInt
+
+pub let oid_switch_nic_suspended_lm_source_finished : UInt
+
+pub let oid_switch_nic_suspended_lm_source_started : UInt
+
+pub let oid_switch_nic_updated : UInt
+
+pub let oid_switch_parameters : UInt
+
+pub let oid_switch_port_array : UInt
+
+pub let oid_switch_port_create : UInt
+
+pub let oid_switch_port_delete : UInt
+
+pub let oid_switch_port_feature_status_query : UInt
+
+pub let oid_switch_port_property_add : UInt
+
+pub let oid_switch_port_property_delete : UInt
+
+pub let oid_switch_port_property_enum : UInt
+
+pub let oid_switch_port_property_update : UInt
+
+pub let oid_switch_port_teardown : UInt
+
+pub let oid_switch_port_updated : UInt
+
+pub let oid_switch_property_add : UInt
+
+pub let oid_switch_property_delete : UInt
+
+pub let oid_switch_property_enum : UInt
+
+pub let oid_switch_property_update : UInt
+
+pub let oid_tapi_accept : UInt
+
+pub let oid_tapi_answer : UInt
+
+pub let oid_tapi_close : UInt
+
+pub let oid_tapi_close_call : UInt
+
+pub let oid_tapi_conditional_media_detection : UInt
+
+pub let oid_tapi_config_dialog : UInt
+
+pub let oid_tapi_dev_specific : UInt
+
+pub let oid_tapi_dial : UInt
+
+pub let oid_tapi_drop : UInt
+
+pub let oid_tapi_gather_digits : UInt
+
+pub let oid_tapi_get_address_caps : UInt
+
+pub let oid_tapi_get_address_id : UInt
+
+pub let oid_tapi_get_address_status : UInt
+
+pub let oid_tapi_get_call_address_id : UInt
+
+pub let oid_tapi_get_call_info : UInt
+
+pub let oid_tapi_get_call_status : UInt
+
+pub let oid_tapi_get_dev_caps : UInt
+
+pub let oid_tapi_get_dev_config : UInt
+
+pub let oid_tapi_get_extension_id : UInt
+
+pub let oid_tapi_get_id : UInt
+
+pub let oid_tapi_get_line_dev_status : UInt
+
+pub let oid_tapi_make_call : UInt
+
+pub let oid_tapi_monitor_digits : UInt
+
+pub let oid_tapi_negotiate_ext_version : UInt
+
+pub let oid_tapi_open : UInt
+
+pub let oid_tapi_provider_initialize : UInt
+
+pub let oid_tapi_provider_shutdown : UInt
+
+pub let oid_tapi_secure_call : UInt
+
+pub let oid_tapi_select_ext_version : UInt
+
+pub let oid_tapi_send_user_user_info : UInt
+
+pub let oid_tapi_set_app_specific : UInt
+
+pub let oid_tapi_set_call_params : UInt
+
+pub let oid_tapi_set_default_media_detection : UInt
+
+pub let oid_tapi_set_dev_config : UInt
+
+pub let oid_tapi_set_media_mode : UInt
+
+pub let oid_tapi_set_status_messages : UInt
+
+pub let oid_tcp4_offload_stats : UInt
+
+pub let oid_tcp6_offload_stats : UInt
+
+pub let oid_tcp_connection_offload_current_config : UInt
+
+pub let oid_tcp_connection_offload_hardware_capabilities : UInt
+
+pub let oid_tcp_connection_offload_parameters : UInt
+
+pub let oid_tcp_offload_current_config : UInt
+
+pub let oid_tcp_offload_hardware_capabilities : UInt
+
+pub let oid_tcp_offload_parameters : UInt
+
+pub let oid_tcp_rsc_statistics : UInt
+
+pub let oid_tcp_san_support : UInt
+
+pub let oid_tcp_task_ipsec_add_sa : UInt
+
+pub let oid_tcp_task_ipsec_add_udpesp_sa : UInt
+
+pub let oid_tcp_task_ipsec_delete_sa : UInt
+
+pub let oid_tcp_task_ipsec_delete_udpesp_sa : UInt
+
+pub let oid_tcp_task_ipsec_offload_v2_add_sa : UInt
+
+pub let oid_tcp_task_ipsec_offload_v2_add_sa_ex : UInt
+
+pub let oid_tcp_task_ipsec_offload_v2_delete_sa : UInt
+
+pub let oid_tcp_task_ipsec_offload_v2_update_sa : UInt
+
+pub let oid_tcp_task_offload : UInt
+
+pub let oid_timestamp_capability : UInt
+
+pub let oid_timestamp_current_config : UInt
+
+pub let oid_timestamp_get_crosstimestamp : UInt
+
+pub let oid_tunnel_interface_release_oid : UInt
+
+pub let oid_tunnel_interface_set_oid : UInt
+
+pub let oid_vlan_reserved1 : UInt
+
+pub let oid_vlan_reserved2 : UInt
+
+pub let oid_vlan_reserved3 : UInt
+
+pub let oid_vlan_reserved4 : UInt
+
+pub let oid_wan_co_get_comp_info : UInt
+
+pub let oid_wan_co_get_info : UInt
+
+pub let oid_wan_co_get_link_info : UInt
+
+pub let oid_wan_co_get_stats_info : UInt
+
+pub let oid_wan_co_set_comp_info : UInt
+
+pub let oid_wan_co_set_link_info : UInt
+
+pub let oid_wan_current_address : UInt
+
+pub let oid_wan_get_bridge_info : UInt
+
+pub let oid_wan_get_comp_info : UInt
+
+pub let oid_wan_get_info : UInt
+
+pub let oid_wan_get_link_info : UInt
+
+pub let oid_wan_get_stats_info : UInt
+
+pub let oid_wan_header_format : UInt
+
+pub let oid_wan_line_count : UInt
+
+pub let oid_wan_medium_subtype : UInt
+
+pub let oid_wan_permanent_address : UInt
+
+pub let oid_wan_protocol_caps : UInt
+
+pub let oid_wan_protocol_type : UInt
+
+pub let oid_wan_quality_of_service : UInt
+
+pub let oid_wan_set_bridge_info : UInt
+
+pub let oid_wan_set_comp_info : UInt
+
+pub let oid_wan_set_link_info : UInt
+
+pub let oid_wwan_auth_challenge : UInt
+
+pub let oid_wwan_base_stations_info : UInt
+
+pub let oid_wwan_connect : UInt
+
+pub let oid_wwan_create_mac : UInt
+
+pub let oid_wwan_delete_mac : UInt
+
+pub let oid_wwan_device_bindings : UInt
+
+pub let oid_wwan_device_caps : UInt
+
+pub let oid_wwan_device_caps_ex : UInt
+
+pub let oid_wwan_device_reset : UInt
+
+pub let oid_wwan_device_service_command : UInt
+
+pub let oid_wwan_device_service_session : UInt
+
+pub let oid_wwan_device_service_session_write : UInt
+
+pub let oid_wwan_driver_caps : UInt
+
+pub let oid_wwan_enumerate_device_service_commands : UInt
+
+pub let oid_wwan_enumerate_device_services : UInt
+
+pub let oid_wwan_home_provider : UInt
+
+pub let oid_wwan_ims_voice_state : UInt
+
+pub let oid_wwan_location_state : UInt
+
+pub let oid_wwan_lte_attach_config : UInt
+
+pub let oid_wwan_lte_attach_status : UInt
+
+pub let oid_wwan_mbim_version : UInt
+
+pub let oid_wwan_modem_config_info : UInt
+
+pub let oid_wwan_modem_logging_config : UInt
+
+pub let oid_wwan_mpdp : UInt
+
+pub let oid_wwan_network_blacklist : UInt
+
+pub let oid_wwan_network_idle_hint : UInt
+
+pub let oid_wwan_network_params : UInt
+
+pub let oid_wwan_nitz : UInt
+
+pub let oid_wwan_packet_service : UInt
+
+pub let oid_wwan_pco : UInt
+
+pub let oid_wwan_pin : UInt
+
+pub let oid_wwan_pin_ex : UInt
+
+pub let oid_wwan_pin_ex2 : UInt
+
+pub let oid_wwan_pin_list : UInt
+
+pub let oid_wwan_preferred_multicarrier_providers : UInt
+
+pub let oid_wwan_preferred_providers : UInt
+
+pub let oid_wwan_preshutdown : UInt
+
+pub let oid_wwan_provisioned_contexts : UInt
+
+pub let oid_wwan_ps_media_config : UInt
+
+pub let oid_wwan_radio_state : UInt
+
+pub let oid_wwan_ready_info : UInt
+
+pub let oid_wwan_register_params : UInt
+
+pub let oid_wwan_register_state : UInt
+
+pub let oid_wwan_register_state_ex : UInt
+
+pub let oid_wwan_sar_config : UInt
+
+pub let oid_wwan_sar_transmission_status : UInt
+
+pub let oid_wwan_service_activation : UInt
+
+pub let oid_wwan_signal_state : UInt
+
+pub let oid_wwan_signal_state_ex : UInt
+
+pub let oid_wwan_slot_info_status : UInt
+
+pub let oid_wwan_sms_configuration : UInt
+
+pub let oid_wwan_sms_delete : UInt
+
+pub let oid_wwan_sms_read : UInt
+
+pub let oid_wwan_sms_send : UInt
+
+pub let oid_wwan_sms_status : UInt
+
+pub let oid_wwan_subscribe_device_service_events : UInt
+
+pub let oid_wwan_sys_caps : UInt
+
+pub let oid_wwan_sys_slotmappings : UInt
+
+pub let oid_wwan_ue_policy : UInt
+
+pub let oid_wwan_uicc_access_binary : UInt
+
+pub let oid_wwan_uicc_access_record : UInt
+
+pub let oid_wwan_uicc_apdu : UInt
+
+pub let oid_wwan_uicc_app_list : UInt
+
+pub let oid_wwan_uicc_atr : UInt
+
+pub let oid_wwan_uicc_close_channel : UInt
+
+pub let oid_wwan_uicc_file_status : UInt
+
+pub let oid_wwan_uicc_open_channel : UInt
+
+pub let oid_wwan_uicc_reset : UInt
+
+pub let oid_wwan_uicc_terminal_capability : UInt
+
+pub let oid_wwan_ussd : UInt
+
+pub let oid_wwan_vendor_specific : UInt
+
+pub let oid_wwan_visible_providers : UInt
+
+pub let oid_xbox_acc_reserved0 : UInt
+
+pub let original_net_buffer_list : Int
+
+pub let original_packet_info : Int
+
+pub let packet_cancel_id : Int
+
+pub let pd_buffer_attr_built_in_data_buffer : UInt
+
+pub let pd_buffer_flag_partial_packet_head : UInt
+
+pub let pd_buffer_min_rx_data_start_alignment : UInt
+
+pub let pd_buffer_min_rx_data_start_value : UInt
+
+pub let pd_buffer_min_tx_data_start_alignment : UInt
+
+pub let permanent_vc : UInt
+
+pub let query_call_parameters : UInt
+
+pub let readable_local_clock : UInt
+
+pub let receive_time_indication : UInt
+
+pub let receive_time_indication_capable : UInt
+
+pub let receive_vc : UInt
+
+pub let reserve_resources_vc : UInt
+
+pub let round_down_flow : UInt
+
+pub let round_up_flow : UInt
+
+pub let scatter_gather_list_packet_info : Int
+
+pub let short_packet_padding_info : Int
+
+pub let stringformat_ascii : UInt
+
+pub let stringformat_binary : UInt
+
+pub let stringformat_dbcs : UInt
+
+pub let stringformat_unicode : UInt
+
+pub let tcp_ip_checksum_packet_info : Int
+
+pub let tcp_large_send_packet_info : Int
+
+pub let time_stamp_capable : UInt
+
+pub let timed_send_capable : UInt
+
+pub let transmit_vc : UInt
+
+pub let truncated_hash_len : UInt
+
+pub let use_time_stamps : UInt
+
+pub let wan_protocol_keeps_stats : UInt
+
+// Errors
+
+// Types and methods
+
+// Type aliases
+pub using @1e68162b4d54a721 {type Anonymous1EUnion_5e08022eb067 as Anonymous1EUnion}
+
+pub using @1e68162b4d54a721 {type Anonymous2EUnion_d1792e53b3f3 as Anonymous2EUnion}
+
+pub using @1e68162b4d54a721 {type AnonymousEStruct_16b1ed6fd22c as AnonymousEStruct_16b1ed6fd2}
+
+pub using @1e68162b4d54a721 {type AnonymousEStruct_294ab9e86f4d as AnonymousEStruct_294ab9e86f}
+
+pub using @1e68162b4d54a721 {type AnonymousEUnion_00fab24cd3b3 as AnonymousEUnion_00fab24cd3}
+
+pub using @1e68162b4d54a721 {type AnonymousEUnion_9e6e9917c93d as AnonymousEUnion_9e6e9917c9}
+
+pub using @1e68162b4d54a721 {type AnonymousEUnion_cccbe5e9c93e as AnonymousEUnion_cccbe5e9c9}
+
+pub using @1e68162b4d54a721 {type AnonymousEUnion_cd1fb4646c80 as AnonymousEUnion_cd1fb4646c}
+
+pub using @1e68162b4d54a721 {type AnonymousEUnion_f570789ef12d as AnonymousEUnion_f570789ef1}
+
+pub using @1e68162b4d54a721 {type BINARYDATA_393815de8669 as BINARYDATA}
+
+pub using @1e68162b4d54a721 {type BSSIDINFO_ee968cccd9a1 as BSSIDINFO}
+
+pub using @1e68162b4d54a721 {type CLADDPARTYCOMPLETEHANDLER_61f30a9844c3 as CLADDPARTYCOMPLETEHANDLER}
+
+pub using @1e68162b4d54a721 {type CLCALLCONNECTEDHANDLER_57cf07c444fe as CLCALLCONNECTEDHANDLER}
+
+pub using @1e68162b4d54a721 {type CLCLOSEAFCOMPLETEHANDLER_185b81840f5e as CLCLOSEAFCOMPLETEHANDLER}
+
+pub using @1e68162b4d54a721 {type CLCLOSECALLCOMPLETEHANDLER_ceef1b353d3e as CLCLOSECALLCOMPLETEHANDLER}
+
+pub using @1e68162b4d54a721 {type CLDEREGSAPCOMPLETEHANDLER_88e90f130007 as CLDEREGSAPCOMPLETEHANDLER}
+
+pub using @1e68162b4d54a721 {type CLDROPPARTYCOMPLETEHANDLER_5e69a1d21f3f as CLDROPPARTYCOMPLETEHANDLER}
+
+pub using @1e68162b4d54a721 {type CLINCOMINGCALLHANDLER_80b2445af5f6 as CLINCOMINGCALLHANDLER}
+
+pub using @1e68162b4d54a721 {type CLINCOMINGCALLQOSCHANGEHANDLER_f6196e45fd87 as CLINCOMINGCALLQOSCHANGEHANDLER}
+
+pub using @1e68162b4d54a721 {type CLINCOMINGCLOSECALLHANDLER_36f70ff57c49 as CLINCOMINGCLOSECALLHANDLER}
+
+pub using @1e68162b4d54a721 {type CLINCOMINGDROPPARTYHANDLER_ac64ca7383f0 as CLINCOMINGDROPPARTYHANDLER}
+
+pub using @1e68162b4d54a721 {type CLMAKECALLCOMPLETEHANDLER_147145d49ae2 as CLMAKECALLCOMPLETEHANDLER}
+
+pub using @1e68162b4d54a721 {type CLMODIFYCALLQOSCOMPLETEHANDLER_0ce50862e48c as CLMODIFYCALLQOSCOMPLETEHANDLER}
+
+pub using @1e68162b4d54a721 {type CLOPENAFCOMPLETEHANDLER_90f7a9688a4b as CLOPENAFCOMPLETEHANDLER}
+
+pub using @1e68162b4d54a721 {type CLREGSAPCOMPLETEHANDLER_9f2df8ec29e1 as CLREGSAPCOMPLETEHANDLER}
+
+pub using @1e68162b4d54a721 {type CMACTIVATEVCCOMPLETEHANDLER_02baaef2b3d6 as CMACTIVATEVCCOMPLETEHANDLER}
+
+pub using @1e68162b4d54a721 {type CMADDPARTYHANDLER_5a426d0d5fa2 as CMADDPARTYHANDLER}
+
+pub using @1e68162b4d54a721 {type CMCLOSEAFHANDLER_4e8f643270c0 as CMCLOSEAFHANDLER}
+
+pub using @1e68162b4d54a721 {type CMCLOSECALLHANDLER_d521bfd29604 as CMCLOSECALLHANDLER}
+
+pub using @1e68162b4d54a721 {type CMDEACTIVATEVCCOMPLETEHANDLER_3f8692dd3cee as CMDEACTIVATEVCCOMPLETEHANDLER}
+
+pub using @1e68162b4d54a721 {type CMDEREGSAPHANDLER_912ab38999ee as CMDEREGSAPHANDLER}
+
+pub using @1e68162b4d54a721 {type CMDROPPARTYHANDLER_0257c30e3e5c as CMDROPPARTYHANDLER}
+
+pub using @1e68162b4d54a721 {type CMINCOMINGCALLCOMPLETEHANDLER_8245a80183b7 as CMINCOMINGCALLCOMPLETEHANDLER}
+
+pub using @1e68162b4d54a721 {type CMMAKECALLHANDLER_96fc60deabf7 as CMMAKECALLHANDLER}
+
+pub using @1e68162b4d54a721 {type CMMODIFYCALLQOSHANDLER_33e6a1030ab5 as CMMODIFYCALLQOSHANDLER}
+
+pub using @1e68162b4d54a721 {type CMOPENAFHANDLER_172ebf6741f3 as CMOPENAFHANDLER}
+
+pub using @1e68162b4d54a721 {type CMREGSAPHANDLER_427a4b008626 as CMREGSAPHANDLER}
+
+pub using @1e68162b4d54a721 {type COADDRESS_f740c5fa6ace as COADDRESS}
+
+pub using @1e68162b4d54a721 {type COADDRESSFAMILY_65fea52f581f as COADDRESSFAMILY}
+
+pub using @1e68162b4d54a721 {type COADDRESSLIST_e4aed8b7b3b6 as COADDRESSLIST}
+
+pub using @1e68162b4d54a721 {type COAFREGISTERNOTIFYHANDLER_030cd0c52ae2 as COAFREGISTERNOTIFYHANDLER}
+
+pub using @1e68162b4d54a721 {type COCALLMANAGERPARAMETERS_5904e0f09d1b as COCALLMANAGERPARAMETERS}
+
+pub using @1e68162b4d54a721 {type COCALLPARAMETERS_ea2c37f6b66e as COCALLPARAMETERS}
+
+pub using @1e68162b4d54a721 {type COCREATEVCHANDLER_aebd9ca0baf0 as COCREATEVCHANDLER}
+
+pub using @1e68162b4d54a721 {type CODELETEVCHANDLER_9f10249fd869 as CODELETEVCHANDLER}
+
+pub using @1e68162b4d54a721 {type COMEDIAPARAMETERS_55c4a08325cd as COMEDIAPARAMETERS}
+
+pub using @1e68162b4d54a721 {type COPVC_955d10e60978 as COPVC}
+
+pub using @1e68162b4d54a721 {type COSAP_50c8e06912e4 as COSAP}
+
+pub using @1e68162b4d54a721 {type COSPECIFICPARAMETERS_3eaf6d40a7f9 as COSPECIFICPARAMETERS}
+
+pub using @1e68162b4d54a721 {type ETHFILTER_471b174c4583 as ETHFILTER}
+
+pub using @1e68162b4d54a721 {type FILTERDBS_e36f244f3472 as FILTERDBS}
+
+pub using @1e68162b4d54a721 {type GENGETNETCARDTIME_d08a36aa24aa as GENGETNETCARDTIME}
+
+pub using @1e68162b4d54a721 {type GENGETTIMECAPS_20edda9ee112 as GENGETTIMECAPS}
+
+pub using @1e68162b4d54a721 {type IPv4AHEStruct_62b43584a23c as IPv4AHEStruct_62b43584a2}
+
+pub using @1e68162b4d54a721 {type IPv4AHEStruct_d791ea6c82e0 as IPv4AHEStruct_d791ea6c82}
+
+pub using @1e68162b4d54a721 {type IPv4ESPEStruct_61b4da7937ba as IPv4ESPEStruct_61b4da7937}
+
+pub using @1e68162b4d54a721 {type IPv4ESPEStruct_e0504ac9203f as IPv4ESPEStruct_e0504ac920}
+
+pub using @1e68162b4d54a721 {type IPv4EStruct_12b07e1e220a as IPv4EStruct_12b07e1e22}
+
+pub using @1e68162b4d54a721 {type IPv4EStruct_801e58bce170 as IPv4EStruct_801e58bce1}
+
+pub using @1e68162b4d54a721 {type IPv4EStruct_a23c5f5cdfdc as IPv4EStruct_a23c5f5cdf}
+
+pub using @1e68162b4d54a721 {type IPv4EStruct_f6a8efa42413 as IPv4EStruct_f6a8efa424}
+
+pub using @1e68162b4d54a721 {type IPv4ReceiveEStruct_4523937b6b87 as IPv4ReceiveEStruct_4523937b6b}
+
+pub using @1e68162b4d54a721 {type IPv4ReceiveEStruct_b64ebc6bb3ee as IPv4ReceiveEStruct_b64ebc6bb3}
+
+pub using @1e68162b4d54a721 {type IPv4TransmitEStruct_9f46017cf7ae as IPv4TransmitEStruct_9f46017cf7}
+
+pub using @1e68162b4d54a721 {type IPv4TransmitEStruct_c156e367a558 as IPv4TransmitEStruct_c156e367a5}
+
+pub using @1e68162b4d54a721 {type IPv6EStruct_15a00d592d69 as IPv6EStruct_15a00d592d}
+
+pub using @1e68162b4d54a721 {type IPv6EStruct_75f2736c4ef4 as IPv6EStruct_75f2736c4e}
+
+pub using @1e68162b4d54a721 {type IPv6ReceiveEStruct_b2d3e90634d1 as IPv6ReceiveEStruct_b2d3e90634}
+
+pub using @1e68162b4d54a721 {type IPv6ReceiveEStruct_b3d7148b0705 as IPv6ReceiveEStruct_b3d7148b07}
+
+pub using @1e68162b4d54a721 {type IPv6TransmitEStruct_40547b8b2282 as IPv6TransmitEStruct_40547b8b22}
+
+pub using @1e68162b4d54a721 {type IPv6TransmitEStruct_f06b595ab7c3 as IPv6TransmitEStruct_f06b595ab7}
+
+pub using @1e68162b4d54a721 {type LOCKSTATE_c27cb13f60b2 as LOCKSTATE}
+
+pub using @1e68162b4d54a721 {type MEDIASPECIFICINFORMATION_8b40dec6ac52 as MEDIASPECIFICINFORMATION}
+
+pub using @1e68162b4d54a721 {type MINIPORTCOACTIVATEVC_00214b428595 as MINIPORTCOACTIVATEVC}
+
+pub using @1e68162b4d54a721 {type MINIPORTCOCREATEVC_f82c739fb549 as MINIPORTCOCREATEVC}
+
+pub using @1e68162b4d54a721 {type MINIPORTCODEACTIVATEVC_caf45691bb97 as MINIPORTCODEACTIVATEVC}
+
+pub using @1e68162b4d54a721 {type MINIPORTCODELETEVC_1c21420adbb1 as MINIPORTCODELETEVC}
+
+pub using @1e68162b4d54a721 {type NDIS80211AIREQFI_f4ed45d67875 as NDIS80211AIREQFI}
+
+pub using @1e68162b4d54a721 {type NDIS80211AIRESFI_541196f83111 as NDIS80211AIRESFI}
+
+pub using @1e68162b4d54a721 {type NDIS80211ASSOCIATIONINFORMATION_04b09e5e480c as NDIS80211ASSOCIATIONINFORMATION}
+
+pub using @1e68162b4d54a721 {type NDIS80211AUTHENTICATIONENCRYPTION_e300afe46467 as NDIS80211AUTHENTICATIONENCRYPTION}
+
+pub using @1e68162b4d54a721 {type NDIS80211AUTHENTICATIONEVENT_f6906297b573 as NDIS80211AUTHENTICATIONEVENT}
+
+pub using @1e68162b4d54a721 {type NDIS80211AUTHENTICATIONMODE_851dd7ab516c as NDIS80211AUTHENTICATIONMODE}
+
+pub using @1e68162b4d54a721 {type NDIS80211AUTHENTICATIONREQUEST_793c88c2c3e0 as NDIS80211AUTHENTICATIONREQUEST}
+
+pub using @1e68162b4d54a721 {type NDIS80211BSSIDLIST_ec7e098ff734 as NDIS80211BSSIDLIST}
+
+pub using @1e68162b4d54a721 {type NDIS80211BSSIDLISTEX_1d0f94c47210 as NDIS80211BSSIDLISTEX}
+
+pub using @1e68162b4d54a721 {type NDIS80211CAPABILITY_a899c3653f3c as NDIS80211CAPABILITY}
+
+pub using @1e68162b4d54a721 {type NDIS80211CONFIGURATION_0d9fdd4dfba0 as NDIS80211CONFIGURATION}
+
+pub using @1e68162b4d54a721 {type NDIS80211CONFIGURATIONFH_496f50f29b40 as NDIS80211CONFIGURATIONFH}
+
+pub using @1e68162b4d54a721 {type NDIS80211FIXEDIEs_934cb4d82cc8 as NDIS80211FIXEDIEs}
+
+pub using @1e68162b4d54a721 {type NDIS80211KEY_0fe8595c6d41 as NDIS80211KEY}
+
+pub using @1e68162b4d54a721 {type NDIS80211MEDIASTREAMMODE_b40310441ca5 as NDIS80211MEDIASTREAMMODE}
+
+pub using @1e68162b4d54a721 {type NDIS80211NETWORKINFRASTRUCTURE_0b59df5935d6 as NDIS80211NETWORKINFRASTRUCTURE}
+
+pub using @1e68162b4d54a721 {type NDIS80211NETWORKTYPE_022a36cb378a as NDIS80211NETWORKTYPE}
+
+pub using @1e68162b4d54a721 {type NDIS80211NETWORKTYPELIST_81f06be8aa6f as NDIS80211NETWORKTYPELIST}
+
+pub using @1e68162b4d54a721 {type NDIS80211NONBCASTSSIDLIST_3ddb7ce3dcca as NDIS80211NONBCASTSSIDLIST}
+
+pub using @1e68162b4d54a721 {type NDIS80211PMKID_0be3ac0a805a as NDIS80211PMKID}
+
+pub using @1e68162b4d54a721 {type NDIS80211PMKIDCANDIDATELIST_40073927f679 as NDIS80211PMKIDCANDIDATELIST}
+
+pub using @1e68162b4d54a721 {type NDIS80211POWERMODE_27be943782d5 as NDIS80211POWERMODE}
+
+pub using @1e68162b4d54a721 {type NDIS80211PRIVACYFILTER_4bfb9b59da9b as NDIS80211PRIVACYFILTER}
+
+pub using @1e68162b4d54a721 {type NDIS80211RADIOSTATUS_3c51ecb48ff3 as NDIS80211RADIOSTATUS}
+
+pub using @1e68162b4d54a721 {type NDIS80211RELOADDEFAULTS_44fbb577ed56 as NDIS80211RELOADDEFAULTS}
+
+pub using @1e68162b4d54a721 {type NDIS80211REMOVEKEY_bbf03d0606df as NDIS80211REMOVEKEY}
+
+pub using @1e68162b4d54a721 {type NDIS80211SSID_74b7b4b5ddfd as NDIS80211SSID}
+
+pub using @1e68162b4d54a721 {type NDIS80211STATISTICS_26ed204ac89f as NDIS80211STATISTICS}
+
+pub using @1e68162b4d54a721 {type NDIS80211STATUSINDICATION_d607b00ee98b as NDIS80211STATUSINDICATION}
+
+pub using @1e68162b4d54a721 {type NDIS80211STATUSTYPE_c41b1083faac as NDIS80211STATUSTYPE}
+
+pub using @1e68162b4d54a721 {type NDIS80211TEST_c003ad29f9bc as NDIS80211TEST}
+
+pub using @1e68162b4d54a721 {type NDIS80211VARIABLEIEs_19838faeb6fa as NDIS80211VARIABLEIEs}
+
+pub using @1e68162b4d54a721 {type NDIS80211WEP_670c5027b5f6 as NDIS80211WEP}
+
+pub using @1e68162b4d54a721 {type NDIS80211WEPSTATUS_5dda4709e85a as NDIS80211WEPSTATUS}
+
+pub using @1e68162b4d54a721 {type NDIS8025RINGSTATE_7d5b1779111f as NDIS8025RINGSTATE}
+
+pub using @1e68162b4d54a721 {type NDISAFLIST_01993aaf7d23 as NDISAFLIST}
+
+pub using @1e68162b4d54a721 {type NDISCALLMANAGERCHARACTERISTICS_744529bc2f00 as NDISCALLMANAGERCHARACTERISTICS}
+
+pub using @1e68162b4d54a721 {type NDISCLASSID_5b682ac990da as NDISCLASSID}
+
+pub using @1e68162b4d54a721 {type NDISCODEVICEPROFILE_6a061f15ec0a as NDISCODEVICEPROFILE}
+
+pub using @1e68162b4d54a721 {type NDISCOLINKSPEED_5866b61f7756 as NDISCOLINKSPEED}
+
+pub using @1e68162b4d54a721 {type NDISCONFIGURATIONPARAMETER_faa567babfc9 as NDISCONFIGURATIONPARAMETER}
+
+pub using @1e68162b4d54a721 {type NDISDEVICEPNPEVENT_b5b7c641dbf7 as NDISDEVICEPNPEVENT}
+
+pub using @1e68162b4d54a721 {type NDISDEVICEPOWERSTATE_a1d4cd2f874d as NDISDEVICEPOWERSTATE}
+
+pub using @1e68162b4d54a721 {type NDISDMABLOCK_51a6267a92b9 as NDISDMABLOCK}
+
+pub using @1e68162b4d54a721 {type NDISDMADESCRIPTION_32881bf327c2 as NDISDMADESCRIPTION}
+
+pub using @1e68162b4d54a721 {type NDISENVIRONMENTTYPE_b744f43c5d5f as NDISENVIRONMENTTYPE}
+
+pub using @1e68162b4d54a721 {type NDISEVENT_171f93e5e00f as NDISEVENT}
+
+pub using @1e68162b4d54a721 {type NDISFDDIATTACHMENTTYPE_a472e489c4b3 as NDISFDDIATTACHMENTTYPE}
+
+pub using @1e68162b4d54a721 {type NDISFDDILCONNECTIONSTATE_240a60d81605 as NDISFDDILCONNECTIONSTATE}
+
+pub using @1e68162b4d54a721 {type NDISFDDIRINGMGTSTATE_520b1a92ebb3 as NDISFDDIRINGMGTSTATE}
+
+pub using @1e68162b4d54a721 {type NDISGUID_0c8467f09393 as NDISGUID}
+
+pub using @1e68162b4d54a721 {type NDISHARDWARECROSSTIMESTAMP_bbbe08a0eba8 as NDISHARDWARECROSSTIMESTAMP}
+
+pub using @1e68162b4d54a721 {type NDISHARDWARESTATUS_aca3360a9393 as NDISHARDWARESTATUS}
+
+pub using @1e68162b4d54a721 {type NDISINTERFACETYPE_12008f9e3e5c as NDISINTERFACETYPE}
+
+pub using @1e68162b4d54a721 {type NDISINTERRUPTMODERATION_d1bf1011f443 as NDISINTERRUPTMODERATION}
+
+pub using @1e68162b4d54a721 {type NDISINTERRUPTMODERATIONPARAMETERS_b2332d450ec6 as NDISINTERRUPTMODERATIONPARAMETERS}
+
+pub using @1e68162b4d54a721 {type NDISIPOPERSTATE_145579b1ebd3 as NDISIPOPERSTATE}
+
+pub using @1e68162b4d54a721 {type NDISIPOPERSTATUS_92e49d230a04 as NDISIPOPERSTATUS}
+
+pub using @1e68162b4d54a721 {type NDISIPOPERSTATUSINFO_ae805a422e32 as NDISIPOPERSTATUSINFO}
+
+pub using @1e68162b4d54a721 {type NDISIPSECOFFLOADV1_cc3f2068afac as NDISIPSECOFFLOADV1}
+
+pub using @1e68162b4d54a721 {type NDISIRDAPACKETINFO_77a7515448c8 as NDISIRDAPACKETINFO}
+
+pub using @1e68162b4d54a721 {type NDISLINKPARAMETERS_a93e1445f006 as NDISLINKPARAMETERS}
+
+pub using @1e68162b4d54a721 {type NDISLINKSPEED_eb9e0d73d15a as NDISLINKSPEED}
+
+pub using @1e68162b4d54a721 {type NDISLINKSTATE_b316bb1d1ed1 as NDISLINKSTATE}
+
+pub using @1e68162b4d54a721 {type NDISMDRIVERBLOCK_aba478e70198 as NDISMDRIVERBLOCK}
+
+pub using @1e68162b4d54a721 {type NDISMEDIASTATE_bfef87a0ee10 as NDISMEDIASTATE}
+
+pub using @1e68162b4d54a721 {type NDISMEDIUM_1d3272aa3dfd as NDISMEDIUM}
+
+pub using @1e68162b4d54a721 {type NDISMINIPORTBLOCK_d12c40504891 as NDISMINIPORTBLOCK}
+
+pub using @1e68162b4d54a721 {type NDISMINIPORTTIMER_0b2f9790fb7a as NDISMINIPORTTIMER}
+
+pub using @1e68162b4d54a721 {type NDISNETWORKCHANGETYPE_96bbb491b3fa as NDISNETWORKCHANGETYPE}
+
+pub using @1e68162b4d54a721 {type NDISOBJECTHEADER_893db3967e2c as NDISOBJECTHEADER}
+
+pub using @1e68162b4d54a721 {type NDISOFFLOAD_f72016b04df5 as NDISOFFLOAD}
+
+pub using @1e68162b4d54a721 {type NDISOFFLOADPARAMETERS_b71369867ce1 as NDISOFFLOADPARAMETERS}
+
+pub using @1e68162b4d54a721 {type NDISOPENBLOCK_0bb65fd5f3c7 as NDISOPENBLOCK}
+
+pub using @1e68162b4d54a721 {type NDISOPERSTATE_b3dc358493e5 as NDISOPERSTATE}
+
+pub using @1e68162b4d54a721 {type NDISPACKET8021QINFO_83ea1c2c7bd2 as NDISPACKET8021QINFO}
+
+pub using @1e68162b4d54a721 {type NDISPARAMETERTYPE_6552f5477297 as NDISPARAMETERTYPE}
+
+pub using @1e68162b4d54a721 {type NDISPCIDEVICECUSTOMPROPERTIES_b400550b84d4 as NDISPCIDEVICECUSTOMPROPERTIES}
+
+pub using @1e68162b4d54a721 {type NDISPDCOUNTERHANDLE_4986d2c61adb as NDISPDCOUNTERHANDLE}
+
+pub using @1e68162b4d54a721 {type NDISPDFILTERHANDLE_c32df8823b27 as NDISPDFILTERHANDLE}
+
+pub using @1e68162b4d54a721 {type NDISPDPROVIDERHANDLE_85912df2b0ce as NDISPDPROVIDERHANDLE}
+
+pub using @1e68162b4d54a721 {type NDISPERPACKETINFO_b300be76056a as NDISPERPACKETINFO}
+
+pub using @1e68162b4d54a721 {type NDISPHYSICALADDRESSUNIT_1be7c894d716 as NDISPHYSICALADDRESSUNIT}
+
+pub using @1e68162b4d54a721 {type NDISPHYSICALMEDIUM_f42a1ba79664 as NDISPHYSICALMEDIUM}
+
+pub using @1e68162b4d54a721 {type NDISPMPACKETPATTERN_4ad3f9dbc26a as NDISPMPACKETPATTERN}
+
+pub using @1e68162b4d54a721 {type NDISPMWAKEUPCAPABILITIES_911502434881 as NDISPMWAKEUPCAPABILITIES}
+
+pub using @1e68162b4d54a721 {type NDISPNPCAPABILITIES_8d80b6d87513 as NDISPNPCAPABILITIES}
+
+pub using @1e68162b4d54a721 {type NDISPOLLHANDLE_83d47d8a3c75 as NDISPOLLHANDLE}
+
+pub using @1e68162b4d54a721 {type NDISPORT_58ce1c739140 as NDISPORT}
+
+pub using @1e68162b4d54a721 {type NDISPORTARRAY_1da27eaa3327 as NDISPORTARRAY}
+
+pub using @1e68162b4d54a721 {type NDISPORTAUTHENTICATIONPARAMETERS_1afbe503ef33 as NDISPORTAUTHENTICATIONPARAMETERS}
+
+pub using @1e68162b4d54a721 {type NDISPORTAUTHORIZATIONSTATE_4282a4577913 as NDISPORTAUTHORIZATIONSTATE}
+
+pub using @1e68162b4d54a721 {type NDISPORTCHARACTERISTICS_efcab8a2473b as NDISPORTCHARACTERISTICS}
+
+pub using @1e68162b4d54a721 {type NDISPORTCONTROLSTATE_d82cc32d94a8 as NDISPORTCONTROLSTATE}
+
+pub using @1e68162b4d54a721 {type NDISPORTSTATE_73bd8c771433 as NDISPORTSTATE}
+
+pub using @1e68162b4d54a721 {type NDISPORTTYPE_1d9aedd4cfa8 as NDISPORTTYPE}
+
+pub using @1e68162b4d54a721 {type NDISPOWERPROFILE_fcfa05763500 as NDISPOWERPROFILE}
+
+pub using @1e68162b4d54a721 {type NDISPROC_8b74e85013d1 as NDISPROC}
+
+pub using @1e68162b4d54a721 {type NDISPROCCALLBACK_d95df3da6ff9 as NDISPROCCALLBACK}
+
+pub using @1e68162b4d54a721 {type NDISPROCESSORTYPE_b6079f7262f5 as NDISPROCESSORTYPE}
+
+pub using @1e68162b4d54a721 {type NDISPROCESSORVENDOR_b942238e9d5b as NDISPROCESSORVENDOR}
+
+pub using @1e68162b4d54a721 {type NDISPROTOCOLBLOCK_616d8265f4b6 as NDISPROTOCOLBLOCK}
+
+pub using @1e68162b4d54a721 {type NDISRECEIVEHASHPARAMETERS_fce6bcdae2d1 as NDISRECEIVEHASHPARAMETERS}
+
+pub using @1e68162b4d54a721 {type NDISRECEIVESCALECAPABILITIES_a0aae0d708a6 as NDISRECEIVESCALECAPABILITIES}
+
+pub using @1e68162b4d54a721 {type NDISRECEIVESCALEPARAMETERS_03a04852652e as NDISRECEIVESCALEPARAMETERS}
+
+pub using @1e68162b4d54a721 {type NDISREQUESTTYPE_4eefa310827b as NDISREQUESTTYPE}
+
+pub using @1e68162b4d54a721 {type NDISRWLOCK_c9755ac7ac44 as NDISRWLOCK}
+
+pub using @1e68162b4d54a721 {type NDISRWLOCKREFCOUNT_df24b6b8c1d7 as NDISRWLOCKREFCOUNT}
+
+pub using @1e68162b4d54a721 {type NDISSPINLOCK_7d4a537cb2a8 as NDISSPINLOCK}
+
+pub using @1e68162b4d54a721 {type NDISSTATISTICSINFO_689d20efcb46 as NDISSTATISTICSINFO}
+
+pub using @1e68162b4d54a721 {type NDISSTATISTICSVALUE_d76821cb69b0 as NDISSTATISTICSVALUE}
+
+pub using @1e68162b4d54a721 {type NDISSTATISTICSVALUEEX_be20cf357baf as NDISSTATISTICSVALUEEX}
+
+pub using @1e68162b4d54a721 {type NDISSUPPORTEDPAUSEFUNCTIONS_e507b2ce2000 as NDISSUPPORTEDPAUSEFUNCTIONS}
+
+pub using @1e68162b4d54a721 {type NDISTCPCONNECTIONOFFLOAD_e76f797261f1 as NDISTCPCONNECTIONOFFLOAD}
+
+pub using @1e68162b4d54a721 {type NDISTCPIPCHECKSUMOFFLOAD_074df7349cc5 as NDISTCPIPCHECKSUMOFFLOAD}
+
+pub using @1e68162b4d54a721 {type NDISTCPIPCHECKSUMPACKETINFO_11173f8f5240 as NDISTCPIPCHECKSUMPACKETINFO}
+
+pub using @1e68162b4d54a721 {type NDISTCPLARGESENDOFFLOADV1_87097516746e as NDISTCPLARGESENDOFFLOADV1}
+
+pub using @1e68162b4d54a721 {type NDISTCPLARGESENDOFFLOADV2_c7e7803a6de6 as NDISTCPLARGESENDOFFLOADV2}
+
+pub using @1e68162b4d54a721 {type NDISTIMEOUTDPCREQUESTCAPABILITIES_7fdaa19d40cd as NDISTIMEOUTDPCREQUESTCAPABILITIES}
+
+pub using @1e68162b4d54a721 {type NDISTIMER_20a1dda478f1 as NDISTIMER}
+
+pub using @1e68162b4d54a721 {type NDISTIMERFUNCTION_b185394f7171 as NDISTIMERFUNCTION}
+
+pub using @1e68162b4d54a721 {type NDISTIMESTAMPCAPABILITIES_dda6baed5127 as NDISTIMESTAMPCAPABILITIES}
+
+pub using @1e68162b4d54a721 {type NDISTIMESTAMPCAPABILITYFLAGS_047c1d55b4aa as NDISTIMESTAMPCAPABILITYFLAGS}
+
+pub using @1e68162b4d54a721 {type NDISVARDATADESC_0523602c9537 as NDISVARDATADESC}
+
+pub using @1e68162b4d54a721 {type NDISWANFRAGMENT_f17c35bf8c6d as NDISWANFRAGMENT}
+
+pub using @1e68162b4d54a721 {type NDISWANGETSTATS_24794134b865 as NDISWANGETSTATS}
+
+pub using @1e68162b4d54a721 {type NDISWANHEADERFORMAT_050cf2c3efd0 as NDISWANHEADERFORMAT}
+
+pub using @1e68162b4d54a721 {type NDISWANLINEDOWN_43d00c83adb6 as NDISWANLINEDOWN}
+
+pub using @1e68162b4d54a721 {type NDISWANLINEUP_f46b478c6aac as NDISWANLINEUP}
+
+pub using @1e68162b4d54a721 {type NDISWANMEDIUMSUBTYPE_0fe1dc8fb2dd as NDISWANMEDIUMSUBTYPE}
+
+pub using @1e68162b4d54a721 {type NDISWANPROTOCOLCAPS_f2a89cd2e401 as NDISWANPROTOCOLCAPS}
+
+pub using @1e68162b4d54a721 {type NDISWANQUALITY_0b9d35b5b737 as NDISWANQUALITY}
+
+pub using @1e68162b4d54a721 {type NDISWLANBSSID_e8832655774c as NDISWLANBSSID}
+
+pub using @1e68162b4d54a721 {type NDISWLANBSSIDEX_b62365b10c7e as NDISWLANBSSIDEX}
+
+pub using @1e68162b4d54a721 {type NDISWMIENUMADAPTER_6e342fa2d2e1 as NDISWMIENUMADAPTER}
+
+pub using @1e68162b4d54a721 {type NDISWMIEVENTHEADER_839b691f5dff as NDISWMIEVENTHEADER}
+
+pub using @1e68162b4d54a721 {type NDISWMIIPSECOFFLOADV1_ddf4a4d8f899 as NDISWMIIPSECOFFLOADV1}
+
+pub using @1e68162b4d54a721 {type NDISWMIMETHODHEADER_c84a5a1ee547 as NDISWMIMETHODHEADER}
+
+pub using @1e68162b4d54a721 {type NDISWMIOFFLOAD_28e6410ba658 as NDISWMIOFFLOAD}
+
+pub using @1e68162b4d54a721 {type NDISWMIOUTPUTINFO_8d57aeb25f08 as NDISWMIOUTPUTINFO}
+
+pub using @1e68162b4d54a721 {type NDISWMISETHEADER_f48170d6be89 as NDISWMISETHEADER}
+
+pub using @1e68162b4d54a721 {type NDISWMITCPCONNECTIONOFFLOAD_2d97afeccfb2 as NDISWMITCPCONNECTIONOFFLOAD}
+
+pub using @1e68162b4d54a721 {type NDISWMITCPIPCHECKSUMOFFLOAD_a52f142c9cf3 as NDISWMITCPIPCHECKSUMOFFLOAD}
+
+pub using @1e68162b4d54a721 {type NDISWMITCPLARGESENDOFFLOADV1_f891ae360a56 as NDISWMITCPLARGESENDOFFLOADV1}
+
+pub using @1e68162b4d54a721 {type NDISWMITCPLARGESENDOFFLOADV2_d61a965ad56f as NDISWMITCPLARGESENDOFFLOADV2}
+
+pub using @1e68162b4d54a721 {type NDISWORKITEM_445e0eb5da11 as NDISWORKITEM}
+
+pub using @1e68162b4d54a721 {type NDISWRAPPERHANDLE_2a56118e2a47 as NDISWRAPPERHANDLE}
+
+pub using @1e68162b4d54a721 {type NETWORKADDRESS_dfdb5bfdc2cf as NETWORKADDRESS}
+
+pub using @1e68162b4d54a721 {type NETWORKADDRESSIP_5b0e8c4c311e as NETWORKADDRESSIP}
+
+pub using @1e68162b4d54a721 {type NETWORKADDRESSIP6_422dcaeb1e1d as NETWORKADDRESSIP6}
+
+pub using @1e68162b4d54a721 {type NETWORKADDRESSIPX_20aa1e900303 as NETWORKADDRESSIPX}
+
+pub using @1e68162b4d54a721 {type NETWORKADDRESSLIST_dddcfad9ed6a as NETWORKADDRESSLIST}
+
+pub using @1e68162b4d54a721 {type NULLFILTER_832acd297afa as NULLFILTER}
+
+pub using @1e68162b4d54a721 {type OFFLOADALGOINFO_f66ccac93831 as OFFLOADALGOINFO}
+
+pub using @1e68162b4d54a721 {type OFFLOADCONFALGO_28039fabbbaf as OFFLOADCONFALGO}
+
+pub using @1e68162b4d54a721 {type OFFLOADINTEGRITYALGO_fff1f0e5af3a as OFFLOADINTEGRITYALGO}
+
+pub using @1e68162b4d54a721 {type OFFLOADIPSECADDSA_217e5a505c26 as OFFLOADIPSECADDSA}
+
+pub using @1e68162b4d54a721 {type OFFLOADIPSECADDUDPESPSA_8a2823019924 as OFFLOADIPSECADDUDPESPSA}
+
+pub using @1e68162b4d54a721 {type OFFLOADIPSECDELETESA_d0ce9fb035bd as OFFLOADIPSECDELETESA}
+
+pub using @1e68162b4d54a721 {type OFFLOADIPSECDELETEUDPESPSA_222bd038479a as OFFLOADIPSECDELETEUDPESPSA}
+
+pub using @1e68162b4d54a721 {type OFFLOADIPSECUDPESPENCAPTYPEENTRY_e20ea5aa2cf6 as OFFLOADIPSECUDPESPENCAPTYPEENTRY}
+
+pub using @1e68162b4d54a721 {type OFFLOADOPERATIONE_de35bd8b607f as OFFLOADOPERATIONE}
+
+pub using @1e68162b4d54a721 {type OFFLOADSECURITYASSOCIATION_76ed5932aec9 as OFFLOADSECURITYASSOCIATION}
+
+pub using @1e68162b4d54a721 {type PMKIDCANDIDATE_3d63ff051e4e as PMKIDCANDIDATE}
+
+pub using @1e68162b4d54a721 {type PNDISTIMERFUNCTION_85e89cce2c20 as PNDISTIMERFUNCTION}
+
+pub using @1e68162b4d54a721 {type PROTCOLCOAFREGISTERNOTIFY_2fa8d4d558df as PROTCOLCOAFREGISTERNOTIFY}
+
+pub using @1e68162b4d54a721 {type PROTOCOLCLADDPARTYCOMPLETE_dda7837f486d as PROTOCOLCLADDPARTYCOMPLETE}
+
+pub using @1e68162b4d54a721 {type PROTOCOLCLCALLCONNECTED_b1463187a045 as PROTOCOLCLCALLCONNECTED}
+
+pub using @1e68162b4d54a721 {type PROTOCOLCLCLOSEAFCOMPLETE_3590f3a4afa4 as PROTOCOLCLCLOSEAFCOMPLETE}
+
+pub using @1e68162b4d54a721 {type PROTOCOLCLCLOSECALLCOMPLETE_aef9c8075c3d as PROTOCOLCLCLOSECALLCOMPLETE}
+
+pub using @1e68162b4d54a721 {type PROTOCOLCLDEREGISTERSAPCOMPLETE_8304e6bb9398 as PROTOCOLCLDEREGISTERSAPCOMPLETE}
+
+pub using @1e68162b4d54a721 {type PROTOCOLCLDROPPARTYCOMPLETE_0b98f46540ab as PROTOCOLCLDROPPARTYCOMPLETE}
+
+pub using @1e68162b4d54a721 {type PROTOCOLCLINCOMINGCALL_4b5e93692479 as PROTOCOLCLINCOMINGCALL}
+
+pub using @1e68162b4d54a721 {type PROTOCOLCLINCOMINGCALLQOSCHANGE_8ec6137601d5 as PROTOCOLCLINCOMINGCALLQOSCHANGE}
+
+pub using @1e68162b4d54a721 {type PROTOCOLCLINCOMINGCLOSECALL_c6602fe0f707 as PROTOCOLCLINCOMINGCLOSECALL}
+
+pub using @1e68162b4d54a721 {type PROTOCOLCLINCOMINGDROPPARTY_be36937ab250 as PROTOCOLCLINCOMINGDROPPARTY}
+
+pub using @1e68162b4d54a721 {type PROTOCOLCLMAKECALLCOMPLETE_08573427ee56 as PROTOCOLCLMAKECALLCOMPLETE}
+
+pub using @1e68162b4d54a721 {type PROTOCOLCLMODIFYCALLQOSCOMPLETE_3fe61b9f48ae as PROTOCOLCLMODIFYCALLQOSCOMPLETE}
+
+pub using @1e68162b4d54a721 {type PROTOCOLCLOPENAFCOMPLETE_daf80f9b70e3 as PROTOCOLCLOPENAFCOMPLETE}
+
+pub using @1e68162b4d54a721 {type PROTOCOLCLREGISTERSAPCOMPLETE_6c92348d680a as PROTOCOLCLREGISTERSAPCOMPLETE}
+
+pub using @1e68162b4d54a721 {type PROTOCOLCMACTIVATEVCCOMPLETE_cd28c4fa6c5e as PROTOCOLCMACTIVATEVCCOMPLETE}
+
+pub using @1e68162b4d54a721 {type PROTOCOLCMADDPARTY_8063f438b76f as PROTOCOLCMADDPARTY}
+
+pub using @1e68162b4d54a721 {type PROTOCOLCMCLOSEAF_126943783b3a as PROTOCOLCMCLOSEAF}
+
+pub using @1e68162b4d54a721 {type PROTOCOLCMCLOSECALL_57f679f2f9a2 as PROTOCOLCMCLOSECALL}
+
+pub using @1e68162b4d54a721 {type PROTOCOLCMDEACTIVATEVCCOMPLETE_441c797b6722 as PROTOCOLCMDEACTIVATEVCCOMPLETE}
+
+pub using @1e68162b4d54a721 {type PROTOCOLCMDEREGISTERSAP_31d05d61f0ed as PROTOCOLCMDEREGISTERSAP}
+
+pub using @1e68162b4d54a721 {type PROTOCOLCMDROPPARTY_a28f800a1f0d as PROTOCOLCMDROPPARTY}
+
+pub using @1e68162b4d54a721 {type PROTOCOLCMINCOMINGCALLCOMPLETE_46741a823f6c as PROTOCOLCMINCOMINGCALLCOMPLETE}
+
+pub using @1e68162b4d54a721 {type PROTOCOLCMMAKECALL_c48d9d32d057 as PROTOCOLCMMAKECALL}
+
+pub using @1e68162b4d54a721 {type PROTOCOLCMMODIFYQOSCALL_3344c536c983 as PROTOCOLCMMODIFYQOSCALL}
+
+pub using @1e68162b4d54a721 {type PROTOCOLCMOPENAF_fd466a87cf15 as PROTOCOLCMOPENAF}
+
+pub using @1e68162b4d54a721 {type PROTOCOLCMREGSAP_74f438a6f612 as PROTOCOLCMREGSAP}
+
+pub using @1e68162b4d54a721 {type PROTOCOLCOAFREGISTERNOTIFY_c90f4df9bb09 as PROTOCOLCOAFREGISTERNOTIFY}
+
+pub using @1e68162b4d54a721 {type PROTOCOLCOCREATEVC_e06678a1f372 as PROTOCOLCOCREATEVC}
+
+pub using @1e68162b4d54a721 {type PROTOCOLCODELETEVC_347442082ccc as PROTOCOLCODELETEVC}
+
+pub using @1e68162b4d54a721 {type ParameterDataEUnion_44e1ecaa75c8 as ParameterDataEUnion}
+
+pub using @1e68162b4d54a721 {type REFERENCE_8e6fa7359645 as REFERENCE}
+
+pub using @1e68162b4d54a721 {type ReceiveEStruct_f617529c3478 as ReceiveEStruct}
+
+pub using @1e68162b4d54a721 {type SupportedEStruct_5650409abb41 as SupportedEStruct_5650409abb}
+
+pub using @1e68162b4d54a721 {type SupportedEStruct_746848ca5e24 as SupportedEStruct_746848ca5e}
+
+pub using @1e68162b4d54a721 {type TDIPNPHANDLER_144c69798366 as TDIPNPHANDLER}
+
+pub using @1e68162b4d54a721 {type TDIREGISTERCALLBACK_4432f4e3371e as TDIREGISTERCALLBACK}
+
+pub using @1e68162b4d54a721 {type TRANSPORTHEADEROFFSET_57e16fe6eec7 as TRANSPORTHEADEROFFSET}
+
+pub using @1e68162b4d54a721 {type TRFILTER_0b64b1b5f957 as TRFILTER}
+
+pub using @1e68162b4d54a721 {type TagHeaderEStruct_6a1c16f1a148 as TagHeaderEStruct}
+
+pub using @1e68162b4d54a721 {type TransmitEStruct_a914337a2ce4 as TransmitEStruct}
+
+pub using @1e68162b4d54a721 {type UDPENCAPTYPE_719141e33be6 as UDPENCAPTYPE}
+
+pub using @1e68162b4d54a721 {type VARSTRING_87c275ae8869 as VARSTRING}
+
+pub using @1e68162b4d54a721 {type WCOACTIVATEVCHANDLER_47ca1f5c8ddd as WCOACTIVATEVCHANDLER}
+
+pub using @1e68162b4d54a721 {type WCOCREATEVCHANDLER_72c4a327ab2b as WCOCREATEVCHANDLER}
+
+pub using @1e68162b4d54a721 {type WCODEACTIVATEVCHANDLER_45187d6dbe63 as WCODEACTIVATEVCHANDLER}
+
+pub using @1e68162b4d54a721 {type WCODELETEVCHANDLER_4376f32a0368 as WCODELETEVCHANDLER}
+
+// Traits
+

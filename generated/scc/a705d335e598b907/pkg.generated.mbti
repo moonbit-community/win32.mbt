@@ -1,0 +1,66 @@
+// Generated using `moon info`, DON'T EDIT IT
+package "moonbit-community/win32-bindings/scc/a705d335e598b907"
+
+import {
+  "moonbit-community/win32-bindings/runtime/com",
+  "moonbit-community/win32-bindings/runtime/core",
+  "moonbitlang/core/debug",
+  "moonbitlang/core/ref",
+}
+
+// Values
+pub let calendar_service_815e6b8ada0f : Int
+
+pub let contacts_service_d15c1a026b25 : Int
+
+pub let device_status_service_ada08f2dc7be : Int
+
+pub fn from_id_c6425c471380_raw(@core.RawAddress, @core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_device_selector_793e85ef5198_raw(@core.RawAddress, Int, @ref.Ref[UInt64]) -> Int
+
+pub fn get_device_selector_f694b646f65d_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_device_selector_from_service_id_d352ad7e34a5_raw(@core.RawAddress, Bytes, @ref.Ref[UInt64]) -> Int
+
+pub let notes_service_97a942dff2f6 : Int
+
+pub let portable_device_contract_de39a51e8640_alignment : Int
+
+pub let portable_device_contract_de39a51e8640_size : Int
+
+pub let ringtones_service_97b3b2ea9f37 : Int
+
+pub let sms_service_c45556a99964 : Int
+
+pub fn static_factory_9d9fc386644e(@core.Guid) -> @com.ComPtr[@com.IInspectable] raise @core.WindowsError
+
+pub fn static_factory_c06f3ab86881(@core.Guid) -> @com.ComPtr[@com.IInspectable] raise @core.WindowsError
+
+pub let tasks_service_ef86c6788b62 : Int
+
+// Errors
+
+// Types and methods
+pub type IServiceDeviceStatics_1ebafa0de1c9
+
+pub type IStorageDeviceStatics_44a4dca6b8e9
+
+pub(all) struct PortableDeviceContract_de39a51e8640 {
+  raw_bytes : Bytes
+} derive(Eq, @debug.Debug)
+pub fn PortableDeviceContract_de39a51e8640::bytes(Self) -> Bytes
+pub fn PortableDeviceContract_de39a51e8640::from_bytes(Bytes) -> Self raise @core.WindowsError
+
+pub(all) struct ServiceDeviceType_a4ad001841aa(Int) derive(Compare, Eq, @debug.Debug)
+pub fn ServiceDeviceType_a4ad001841aa::from_int(Int) -> Self
+pub fn ServiceDeviceType_a4ad001841aa::to_int(Self) -> Int
+
+pub type ServiceDevice_f90761fe39ac
+
+pub type StorageDevice_df38113d1acf
+
+// Type aliases
+
+// Traits
+

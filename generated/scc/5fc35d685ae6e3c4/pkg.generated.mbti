@@ -1,0 +1,131 @@
+// Generated using `moon info`, DON'T EDIT IT
+package "moonbit-community/win32-bindings/scc/5fc35d685ae6e3c4"
+
+import {
+  "moonbit-community/win32-bindings/runtime/core",
+  "moonbitlang/core/debug",
+  "moonbitlang/core/ref",
+}
+
+// Values
+pub let bus_speed_3af546265e38 : String
+
+pub let bus_speed_d4f3849edd6f : String
+
+pub let device_id_daba0d8bc8b4 : String
+
+pub let exclusive_57eb3c60be59 : Int
+
+pub let fast_mode_94f725038aa2 : Int
+
+pub let full_transfer_b1108f6f6138 : Int
+
+pub fn get_bus_speed_fbc1b19251a6(@core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn get_bus_speed_fbc1b19251a6_raw(@core.RawAddress, @ref.Ref[Int]) -> Int
+
+pub fn get_controllers_async_d63152654630_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_device_id_77dc4953ee8a_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_device_provider_ed06cfdf5021_raw(@core.RawAddress, @core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_sharing_mode_9039314b792a(@core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn get_sharing_mode_9039314b792a_raw(@core.RawAddress, @ref.Ref[Int]) -> Int
+
+pub fn get_slave_address_3d88217fc45a(@core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn get_slave_address_3d88217fc45a_raw(@core.RawAddress, @ref.Ref[Int]) -> Int
+
+pub let partial_transfer_d179626d1858 : Int
+
+pub let provider_i2c_transfer_result_8520a5408253_alignment : Int
+
+pub let provider_i2c_transfer_result_8520a5408253_size : Int
+
+pub fn put_bus_speed_708ef2703ccd(@core.RawAddress, Int) -> Unit raise @core.WindowsError
+
+pub fn put_bus_speed_708ef2703ccd_raw(@core.RawAddress, Int) -> Int
+
+pub fn put_sharing_mode_170b42543c8f(@core.RawAddress, Int) -> Unit raise @core.WindowsError
+
+pub fn put_sharing_mode_170b42543c8f_raw(@core.RawAddress, Int) -> Int
+
+pub fn put_slave_address_4d4008ffa39b(@core.RawAddress, Int) -> Unit raise @core.WindowsError
+
+pub fn put_slave_address_4d4008ffa39b_raw(@core.RawAddress, Int) -> Int
+
+pub fn read_9e29c3c997a6(@core.RawAddress, UInt, Bytes) -> Unit raise @core.WindowsError
+
+pub fn read_9e29c3c997a6_raw(@core.RawAddress, UInt, Bytes) -> Int
+
+pub fn read_partial_8531a00fb58b(@core.RawAddress, UInt, Bytes) -> Bytes raise @core.WindowsError
+
+pub fn read_partial_8531a00fb58b_raw(@core.RawAddress, UInt, Bytes, Bytes) -> Int
+
+pub let shared_b2da16614fbe : Int
+
+pub let sharing_mode_11f7e277bbc3 : String
+
+pub let sharing_mode_e874c4881d50 : String
+
+pub let slave_address_5471046433a8 : String
+
+pub let slave_address_5506f7672dc1 : String
+
+pub let slave_address_not_acknowledged_de8db4a7605e : Int
+
+pub let standard_mode_f35b3855f0be : Int
+
+pub fn write_013002f25491(@core.RawAddress, UInt, Bytes) -> Unit raise @core.WindowsError
+
+pub fn write_013002f25491_raw(@core.RawAddress, UInt, Bytes) -> Int
+
+pub fn write_partial_6fe3cd5669a2(@core.RawAddress, UInt, Bytes) -> Bytes raise @core.WindowsError
+
+pub fn write_partial_6fe3cd5669a2_raw(@core.RawAddress, UInt, Bytes, Bytes) -> Int
+
+pub fn write_read_b2610f80db66(@core.RawAddress, UInt, Bytes, UInt, Bytes) -> Unit raise @core.WindowsError
+
+pub fn write_read_b2610f80db66_raw(@core.RawAddress, UInt, Bytes, UInt, Bytes) -> Int
+
+pub fn write_read_partial_f30cde55eb79(@core.RawAddress, UInt, Bytes, UInt, Bytes) -> Bytes raise @core.WindowsError
+
+pub fn write_read_partial_f30cde55eb79_raw(@core.RawAddress, UInt, Bytes, UInt, Bytes, Bytes) -> Int
+
+// Errors
+
+// Types and methods
+pub type II2cControllerProvider_f520e5ef5856
+
+pub type II2cDeviceProvider_47deaa491a05
+
+pub type II2cProvider_1b69ee5e6e30
+
+pub type IProviderI2cConnectionSettings_d729bc1c2c7c
+
+pub(all) struct ProviderI2cBusSpeed_b1139e9dc989(Int) derive(Compare, Eq, @debug.Debug)
+pub fn ProviderI2cBusSpeed_b1139e9dc989::from_int(Int) -> Self
+pub fn ProviderI2cBusSpeed_b1139e9dc989::to_int(Self) -> Int
+
+pub type ProviderI2cConnectionSettings_5eb9c0bae2f6
+
+pub(all) struct ProviderI2cSharingMode_98fed55081a0(Int) derive(Compare, Eq, @debug.Debug)
+pub fn ProviderI2cSharingMode_98fed55081a0::from_int(Int) -> Self
+pub fn ProviderI2cSharingMode_98fed55081a0::to_int(Self) -> Int
+
+pub(all) struct ProviderI2cTransferResult_8520a5408253 {
+  raw_bytes : Bytes
+} derive(Eq, @debug.Debug)
+pub fn ProviderI2cTransferResult_8520a5408253::bytes(Self) -> Bytes
+pub fn ProviderI2cTransferResult_8520a5408253::from_bytes(Bytes) -> Self raise @core.WindowsError
+
+pub(all) struct ProviderI2cTransferStatus_c4c0c7999203(Int) derive(Compare, Eq, @debug.Debug)
+pub fn ProviderI2cTransferStatus_c4c0c7999203::from_int(Int) -> Self
+pub fn ProviderI2cTransferStatus_c4c0c7999203::to_int(Self) -> Int
+
+// Type aliases
+
+// Traits
+

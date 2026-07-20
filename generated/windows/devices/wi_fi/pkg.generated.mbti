@@ -1,0 +1,466 @@
+// Generated using `moon info`, DON'T EDIT IT
+package "moonbit-community/win32-bindings/windows/devices/wi_fi"
+
+import {
+  "moonbit-community/win32-bindings/runtime/com",
+  "moonbit-community/win32-bindings/runtime/core",
+  "moonbit-community/win32-bindings/scc/f6974f8227916b31",
+  "moonbitlang/core/ref",
+}
+
+// Values
+pub let access_point_cannot_connect : Int
+
+pub let access_revoked : Int
+
+pub fn add_available_networks_changed(@core.RawAddress, @core.RawAddress) -> Int64 raise @core.WindowsError
+
+pub fn add_available_networks_changed_raw(@core.RawAddress, @core.RawAddress, @ref.Ref[Int64]) -> Int
+
+pub let adhoc : Int
+
+pub let allowed : Int
+
+pub let any : Int
+
+pub let app_timed_out : Int
+
+pub let automatic : Int
+
+pub let availability_d1205f9031 : String
+
+pub let availability_e1d88b5bcf : String
+
+pub let available : Int
+
+pub let available_networks_49312138d4 : String
+
+pub let available_networks_changed_3d533ba077 : String
+
+pub let available_networks_changed_422d95999b : String
+
+pub let available_networks_d78a61eacd : String
+
+pub let beacon_interval_7fdb888921 : String
+
+pub let beacon_interval_e8a04483a0 : String
+
+pub let bluetooth_connect_failed : Int
+
+pub let bluetooth_transmission_error : Int
+
+pub let bssid_47a1731895 : String
+
+pub let bssid_87165b4bcc : String
+
+pub let cellular_bars_0579f4c57f : String
+
+pub let cellular_bars_22b110f187 : String
+
+pub let cellular_connect_timed_out : Int
+
+pub let cellular_data_turned_off : Int
+
+pub let channel_center_frequency_in_kilohertz_264b455173 : String
+
+pub let channel_center_frequency_in_kilohertz_9397c55b5a : String
+
+pub fn connect_async_0be077cd0a_raw(@core.RawAddress, @core.RawAddress, Int, @core.RawAddress, @core.RawAddress, Int, @ref.Ref[UInt64]) -> Int
+
+pub fn connect_async_174e104c67_raw(@core.RawAddress, @core.RawAddress, Int, @core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn connect_async_1e0cde87bc_raw(@core.RawAddress, @core.RawAddress, Int, @core.RawAddress, @core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn connect_async_6309bff30e_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn connect_async_9e46cbdb98_raw(@core.RawAddress, @core.RawAddress, Int, @ref.Ref[UInt64]) -> Int
+
+pub fn connect_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub let connection_status_2b9518942e : String
+
+pub let connection_status_37dc3071e5 : String
+
+pub let data_limit_reached : Int
+
+pub let default_ : Int
+
+pub let denied_by_system : Int
+
+pub let denied_by_user : Int
+
+pub fn disconnect(@core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn disconnect_raw(@core.RawAddress) -> Int
+
+pub let display_name_18f5447e40 : String
+
+pub let display_name_b72c1d1c1b : String
+
+pub let dmg : Int
+
+pub let dsss : Int
+
+pub let eht : Int
+
+pub let entitlement_check_failed : Int
+
+pub let erp : Int
+
+pub let ethernet : Int
+
+pub let fhss : Int
+
+pub fn find_all_adapters_async_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub let five_bars : Int
+
+pub let four_bars : Int
+
+pub fn from_id_async_raw(@core.RawAddress, @core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_availability(@core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn get_availability_raw(@core.RawAddress, @ref.Ref[Int]) -> Int
+
+pub fn get_available_networks_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_beacon_interval(@core.RawAddress) -> Int64 raise @core.WindowsError
+
+pub fn get_beacon_interval_raw(@core.RawAddress, @ref.Ref[Int64]) -> Int
+
+pub fn get_bssid_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_cellular_bars_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_channel_center_frequency_in_kilohertz(@core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn get_channel_center_frequency_in_kilohertz_raw(@core.RawAddress, @ref.Ref[Int]) -> Int
+
+pub fn get_connection_status(@core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn get_connection_status_raw(@core.RawAddress, @ref.Ref[Int]) -> Int
+
+pub fn get_device_selector_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_display_name_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_id(@core.RawAddress) -> Bytes raise @core.WindowsError
+
+pub fn get_id_raw(@core.RawAddress, Bytes) -> Int
+
+pub fn get_is_metered_raw(@core.RawAddress, Bytes) -> Int
+
+pub fn get_is_wi_fi_direct_raw(@core.RawAddress, Bytes) -> Int
+
+pub fn get_network_adapter_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_network_kind(@core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn get_network_kind_raw(@core.RawAddress, @ref.Ref[Int]) -> Int
+
+pub fn get_network_report_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_network_rssi_in_decibel_milliwatts_raw(@core.RawAddress, Bytes) -> Int
+
+pub fn get_or_create_by_id_raw(@core.RawAddress, Bytes, @ref.Ref[UInt64]) -> Int
+
+pub fn get_password_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_phy_kind(@core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn get_phy_kind_raw(@core.RawAddress, @ref.Ref[Int]) -> Int
+
+pub fn get_properties_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_remaining_battery_percent_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_requested_network_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_security_settings_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_signal_bars_raw(@core.RawAddress, Bytes) -> Int
+
+pub fn get_ssid_781f9014c7_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_ssid_9f1a4f8648_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_status_7c52cfbea8(@core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn get_status_7c52cfbea8_raw(@core.RawAddress, @ref.Ref[Int]) -> Int
+
+pub fn get_status_b9778e836d(@core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn get_status_b9778e836d_raw(@core.RawAddress, @ref.Ref[Int]) -> Int
+
+pub fn get_supported_wps_kinds_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_timestamp(@core.RawAddress) -> Int64 raise @core.WindowsError
+
+pub fn get_timestamp_raw(@core.RawAddress, @ref.Ref[Int64]) -> Int
+
+pub fn get_uptime(@core.RawAddress) -> Int64 raise @core.WindowsError
+
+pub fn get_uptime_raw(@core.RawAddress, @ref.Ref[Int64]) -> Int
+
+pub fn get_wps_configuration_async_raw(@core.RawAddress, @core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub let he : Int
+
+pub let hrdsss : Int
+
+pub let ht : Int
+
+pub let id_4b68287715 : String
+
+pub let id_d1cd58f826 : String
+
+pub let infrastructure : Int
+
+pub let invalid_credential_4b36a735a3 : Int
+
+pub let invalid_credential_6bed13c2bd : Int
+
+pub let ir_baseband : Int
+
+pub let is_metered_12e0b69232 : String
+
+pub let is_metered_9f423a0898 : String
+
+pub let is_wi_fi_direct_b5b5ab46a0 : String
+
+pub let is_wi_fi_direct_e60f04a6eb : String
+
+pub let manual : Int
+
+pub let network_adapter_0a0f816cf9 : String
+
+pub let network_adapter_262dbcda20 : String
+
+pub let network_kind_4d9956de76 : String
+
+pub let network_kind_b04321fdc3 : String
+
+pub let network_not_available_441c156f16 : Int
+
+pub let network_not_available_7f7188fe9b : Int
+
+pub let network_report_18edba3efb : String
+
+pub let network_report_d416d2e830 : String
+
+pub let network_rssi_in_decibel_milliwatts_327e3f87ca : String
+
+pub let network_rssi_in_decibel_milliwatts_61b6fb8dbc : String
+
+pub let nfc : Int
+
+pub let no_cellular_signal : Int
+
+pub let ofdm : Int
+
+pub let one_bar : Int
+
+pub let operation_canceled_by_user : Int
+
+pub let pairing_required : Int
+
+pub let password_e33cef9ecd : String
+
+pub let password_e473dd7aff : String
+
+pub let phy_kind_4282b9601e : String
+
+pub let phy_kind_4ba1ea0a54 : String
+
+pub let pin : Int
+
+pub let push_button : Int
+
+pub fn put_availability(@core.RawAddress, Int) -> Unit raise @core.WindowsError
+
+pub fn put_availability_raw(@core.RawAddress, Int) -> Int
+
+pub fn put_cellular_bars(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn put_cellular_bars_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn put_display_name(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn put_display_name_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn put_is_metered(@core.RawAddress, UInt) -> Unit raise @core.WindowsError
+
+pub fn put_is_metered_raw(@core.RawAddress, UInt) -> Int
+
+pub fn put_password(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn put_password_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn put_remaining_battery_percent(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn put_remaining_battery_percent_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn put_ssid(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn put_ssid_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub let remaining_battery_percent_4ed93bc551 : String
+
+pub let remaining_battery_percent_539b8d6b9e : String
+
+pub fn remove_available_networks_changed(@core.RawAddress, Int64) -> Unit raise @core.WindowsError
+
+pub fn remove_available_networks_changed_raw(@core.RawAddress, Int64) -> Int
+
+pub fn report_error(@core.RawAddress, Int) -> Unit raise @core.WindowsError
+
+pub fn report_error_raw(@core.RawAddress, Int) -> Int
+
+pub fn request_access_async_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub let requested_network_7d39dc3f28 : String
+
+pub let requested_network_86b1e9ba6a : String
+
+pub let roaming_not_allowed : Int
+
+pub fn scan_async_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub let security_settings_d271e72644 : String
+
+pub let security_settings_d5d624692b : String
+
+pub let signal_bars_6105d76beb : String
+
+pub let signal_bars_aeebb60f12 : String
+
+pub let ssid_3d0ef1bbb7 : String
+
+pub let ssid_400931d506 : String
+
+pub let ssid_61fee9aa56 : String
+
+pub let ssid_f256c70c41 : String
+
+pub fn static_factory_76f3c8fc71(@core.Guid) -> @com.ComPtr[@com.IInspectable] raise @core.WindowsError
+
+pub fn static_factory_e2e3ce0de7(@core.Guid) -> @com.ComPtr[@com.IInspectable] raise @core.WindowsError
+
+pub let status_4ccbdec3b5 : String
+
+pub let status_535bdc8548 : String
+
+pub let status_db07ff9a22 : String
+
+pub let status_e33a00c974 : String
+
+pub let success_6fa2b0118c : Int
+
+pub let success_def2e94413 : Int
+
+pub let success_fdb5623255 : Int
+
+pub let supported_wps_kinds_556a0eb4c3 : String
+
+pub let supported_wps_kinds_f406c7a7bc : String
+
+pub let three_bars : Int
+
+pub let timeout_9c06cb82ec : Int
+
+pub let timeout_b55d5cdeb4 : Int
+
+pub let timestamp_0fa94a7184 : String
+
+pub let timestamp_cb3681abb1 : String
+
+pub let two_bars : Int
+
+pub let unavailable : Int
+
+pub let unknown_5308d25acd : Int
+
+pub let unknown_d153d73fd3 : Int
+
+pub let unspecified : Int
+
+pub let unspecified_failure_1113050f89 : Int
+
+pub let unspecified_failure_21d13917d3 : Int
+
+pub let unspecified_failure_5849077916 : Int
+
+pub let unsupported_authentication_protocol_5f92486e4d : Int
+
+pub let unsupported_authentication_protocol_8cde5f788c : Int
+
+pub fn update_properties(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn update_properties_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub let uptime_2fd5ba5af5 : String
+
+pub let uptime_8b7b4263f1 : String
+
+pub let usb : Int
+
+pub let vht : Int
+
+pub let wlan_connect_failed : Int
+
+pub let wlan_not_visible : Int
+
+pub let wps_pin : Int
+
+pub let wps_push_button : Int
+
+pub let zero_bars : Int
+
+// Errors
+
+// Types and methods
+
+// Type aliases
+pub using @f6974f8227916b31 {type WiFiAccessStatus_2c5d6278d083 as WiFiAccessStatus}
+
+pub using @f6974f8227916b31 {type WiFiAdapter_15478319ee27 as WiFiAdapter}
+
+pub using @f6974f8227916b31 {type WiFiAvailableNetwork_f5c93750a389 as WiFiAvailableNetwork}
+
+pub using @f6974f8227916b31 {type WiFiConnectionMethod_224437174963 as WiFiConnectionMethod}
+
+pub using @f6974f8227916b31 {type WiFiConnectionResult_18f85a2f1afa as WiFiConnectionResult}
+
+pub using @f6974f8227916b31 {type WiFiConnectionStatus_f3e14989341e as WiFiConnectionStatus}
+
+pub using @f6974f8227916b31 {type WiFiNetworkKind_273711a12822 as WiFiNetworkKind}
+
+pub using @f6974f8227916b31 {type WiFiNetworkReport_4af1c4c23373 as WiFiNetworkReport}
+
+pub using @f6974f8227916b31 {type WiFiOnDemandHotspotAvailability_5e7407ca201a as WiFiOnDemandHotspotAvailability}
+
+pub using @f6974f8227916b31 {type WiFiOnDemandHotspotCellularBars_c4e65e63aefb as WiFiOnDemandHotspotCellularBars}
+
+pub using @f6974f8227916b31 {type WiFiOnDemandHotspotConnectStatus_5076a739d732 as WiFiOnDemandHotspotConnectStatus}
+
+pub using @f6974f8227916b31 {type WiFiOnDemandHotspotConnectTriggerDetails_1965a3e8e243 as WiFiOnDemandHotspotConnectTriggerDetails}
+
+pub using @f6974f8227916b31 {type WiFiOnDemandHotspotConnectionResult_66054e867113 as WiFiOnDemandHotspotConnectionResult}
+
+pub using @f6974f8227916b31 {type WiFiOnDemandHotspotNetwork_a854b2d56877 as WiFiOnDemandHotspotNetwork}
+
+pub using @f6974f8227916b31 {type WiFiOnDemandHotspotNetworkProperties_e85c8f34dd33 as WiFiOnDemandHotspotNetworkProperties}
+
+pub using @f6974f8227916b31 {type WiFiPhyKind_aff11d5fa479 as WiFiPhyKind}
+
+pub using @f6974f8227916b31 {type WiFiReconnectionKind_1c1939239c6f as WiFiReconnectionKind}
+
+pub using @f6974f8227916b31 {type WiFiWpsConfigurationResult_71553499fc95 as WiFiWpsConfigurationResult}
+
+pub using @f6974f8227916b31 {type WiFiWpsConfigurationStatus_564807a09772 as WiFiWpsConfigurationStatus}
+
+pub using @f6974f8227916b31 {type WiFiWpsKind_f7e424d08db8 as WiFiWpsKind}
+
+// Traits
+

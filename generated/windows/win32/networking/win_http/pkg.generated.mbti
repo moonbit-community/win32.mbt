@@ -1,0 +1,1818 @@
+// Generated using `moon info`, DON'T EDIT IT
+package "moonbit-community/win32-bindings/windows/win32/networking/win_http"
+
+import {
+  "moonbit-community/win32-bindings/runtime/core",
+  "moonbit-community/win32-bindings/scc/276e9466edd92f6e",
+}
+
+// Values
+pub fn abort(@core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn abort_raw(@core.RawAddress) -> Int
+
+pub let api_get_proxy_for_url : UInt
+
+pub let api_get_proxy_settings : UInt
+
+pub let api_query_data_available : UInt
+
+pub let api_read_data : UInt
+
+pub let api_receive_response : UInt
+
+pub let api_send_request : UInt
+
+pub let api_write_data : UInt
+
+pub let auto_logon_policy_always : Int
+
+pub let auto_logon_policy_never : Int
+
+pub let auto_logon_policy_only_if_bypass_proxy : Int
+
+pub let error_winhttp_auto_proxy_service_error : UInt
+
+pub let error_winhttp_autodetection_failed : UInt
+
+pub let error_winhttp_bad_auto_proxy_script : UInt
+
+pub let error_winhttp_cannot_call_after_open : UInt
+
+pub let error_winhttp_cannot_call_after_send : UInt
+
+pub let error_winhttp_cannot_call_before_open : UInt
+
+pub let error_winhttp_cannot_call_before_send : UInt
+
+pub let error_winhttp_cannot_connect : UInt
+
+pub let error_winhttp_chunked_encoding_header_size_overflow : UInt
+
+pub let error_winhttp_client_auth_cert_needed : UInt
+
+pub let error_winhttp_client_auth_cert_needed_proxy : UInt
+
+pub let error_winhttp_client_cert_no_access_private_key : UInt
+
+pub let error_winhttp_client_cert_no_private_key : UInt
+
+pub let error_winhttp_connection_error : UInt
+
+pub let error_winhttp_fast_forwarding_not_supported : UInt
+
+pub let error_winhttp_feature_disabled : UInt
+
+pub let error_winhttp_global_callback_failed : UInt
+
+pub let error_winhttp_header_already_exists : UInt
+
+pub let error_winhttp_header_count_exceeded : UInt
+
+pub let error_winhttp_header_not_found : UInt
+
+pub let error_winhttp_header_size_overflow : UInt
+
+pub let error_winhttp_http_protocol_mismatch : UInt
+
+pub let error_winhttp_incorrect_handle_state : UInt
+
+pub let error_winhttp_incorrect_handle_type : UInt
+
+pub let error_winhttp_internal_error : UInt
+
+pub let error_winhttp_invalid_header : UInt
+
+pub let error_winhttp_invalid_option : UInt
+
+pub let error_winhttp_invalid_query_request : UInt
+
+pub let error_winhttp_invalid_server_response : UInt
+
+pub let error_winhttp_invalid_url : UInt
+
+pub let error_winhttp_login_failure : UInt
+
+pub let error_winhttp_name_not_resolved : UInt
+
+pub let error_winhttp_not_initialized : UInt
+
+pub let error_winhttp_operation_cancelled : UInt
+
+pub let error_winhttp_option_not_settable : UInt
+
+pub let error_winhttp_out_of_handles : UInt
+
+pub let error_winhttp_redirect_failed : UInt
+
+pub let error_winhttp_resend_request : UInt
+
+pub let error_winhttp_reserved_189 : UInt
+
+pub let error_winhttp_response_drain_overflow : UInt
+
+pub let error_winhttp_script_execution_error : UInt
+
+pub let error_winhttp_secure_cert_cn_invalid : UInt
+
+pub let error_winhttp_secure_cert_date_invalid : UInt
+
+pub let error_winhttp_secure_cert_rev_failed : UInt
+
+pub let error_winhttp_secure_cert_revoked : UInt
+
+pub let error_winhttp_secure_cert_wrong_usage : UInt
+
+pub let error_winhttp_secure_channel_error : UInt
+
+pub let error_winhttp_secure_failure : UInt
+
+pub let error_winhttp_secure_failure_proxy : UInt
+
+pub let error_winhttp_secure_invalid_ca : UInt
+
+pub let error_winhttp_secure_invalid_cert : UInt
+
+pub let error_winhttp_shutdown : UInt
+
+pub let error_winhttp_timeout : UInt
+
+pub let error_winhttp_unable_to_download_script : UInt
+
+pub let error_winhttp_unhandled_script_type : UInt
+
+pub let error_winhttp_unrecognized_scheme : UInt
+
+pub fn get_all_response_headers(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn get_all_response_headers_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn get_option(@core.RawAddress, Int, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn get_option_raw(@core.RawAddress, Int, @core.RawAddress) -> Int
+
+pub fn get_response_body(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn get_response_body_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn get_response_header(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn get_response_header_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn get_response_stream(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn get_response_stream_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn get_response_text(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn get_response_text_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn get_status(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn get_status_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn get_status_text(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn get_status_text_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub let http_status_accepted : UInt
+
+pub let http_status_ambiguous : UInt
+
+pub let http_status_bad_gateway : UInt
+
+pub let http_status_bad_method : UInt
+
+pub let http_status_bad_request : UInt
+
+pub let http_status_conflict : UInt
+
+pub let http_status_continue : UInt
+
+pub let http_status_created : UInt
+
+pub let http_status_denied : UInt
+
+pub let http_status_first : UInt
+
+pub let http_status_forbidden : UInt
+
+pub let http_status_gateway_timeout : UInt
+
+pub let http_status_gone : UInt
+
+pub let http_status_last : UInt
+
+pub let http_status_length_required : UInt
+
+pub let http_status_moved : UInt
+
+pub let http_status_no_content : UInt
+
+pub let http_status_none_acceptable : UInt
+
+pub let http_status_not_found : UInt
+
+pub let http_status_not_modified : UInt
+
+pub let http_status_not_supported : UInt
+
+pub let http_status_ok : UInt
+
+pub let http_status_partial : UInt
+
+pub let http_status_partial_content : UInt
+
+pub let http_status_payment_req : UInt
+
+pub let http_status_permanent_redirect : UInt
+
+pub let http_status_precond_failed : UInt
+
+pub let http_status_proxy_auth_req : UInt
+
+pub let http_status_redirect : UInt
+
+pub let http_status_redirect_keep_verb : UInt
+
+pub let http_status_redirect_method : UInt
+
+pub let http_status_request_timeout : UInt
+
+pub let http_status_request_too_large : UInt
+
+pub let http_status_reset_content : UInt
+
+pub let http_status_retry_with : UInt
+
+pub let http_status_server_error : UInt
+
+pub let http_status_service_unavail : UInt
+
+pub let http_status_switch_protocols : UInt
+
+pub let http_status_unsupported_media : UInt
+
+pub let http_status_uri_too_long : UInt
+
+pub let http_status_use_proxy : UInt
+
+pub let http_status_version_not_sup : UInt
+
+pub let http_status_webdav_multi_status : UInt
+
+pub let httprequest_proxysetting_default : UInt
+
+pub let httprequest_proxysetting_direct : UInt
+
+pub let httprequest_proxysetting_preconfig : UInt
+
+pub let httprequest_proxysetting_proxy : UInt
+
+pub let httprequest_setcredentials_for_proxy : UInt
+
+pub let httprequest_setcredentials_for_server : UInt
+
+pub let icu_browser_mode : UInt
+
+pub let icu_decode : UInt
+
+pub let icu_encode_percent : UInt
+
+pub let icu_encode_spaces_only : UInt
+
+pub let icu_escape : UInt
+
+pub let icu_escape_authority : UInt
+
+pub let icu_include_default_port : UInt
+
+pub let icu_no_encode : UInt
+
+pub let icu_no_meta : UInt
+
+pub let icu_reject_userpwd : UInt
+
+pub let internet_default_http_port : UInt
+
+pub let internet_default_https_port : UInt
+
+pub let internet_default_port : UInt
+
+pub let networking_key_bufsize : UInt
+
+pub fn on_error_raw(@core.RawAddress, Int, @core.RawAddress) -> Unit
+
+pub fn on_response_data_available_raw(@core.RawAddress, @core.RawAddress) -> Unit
+
+pub fn on_response_finished_raw(@core.RawAddress) -> Unit
+
+pub fn on_response_start_raw(@core.RawAddress, Int, @core.RawAddress) -> Unit
+
+pub fn open(@core.RawAddress, @core.RawAddress, @core.RawAddress, Bytes) -> Unit raise @core.WindowsError
+
+pub fn open_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, Bytes) -> Int
+
+pub fn put_option(@core.RawAddress, Int, Bytes) -> Unit raise @core.WindowsError
+
+pub fn put_option_raw(@core.RawAddress, Int, Bytes) -> Int
+
+pub let secure_protocol_all : Int
+
+pub let secure_protocol_ssl2 : Int
+
+pub let secure_protocol_ssl3 : Int
+
+pub let secure_protocol_tls1 : Int
+
+pub let secure_protocol_tls1_1 : Int
+
+pub let secure_protocol_tls1_2 : Int
+
+pub let security_flag_ignore_cert_cn_invalid : UInt
+
+pub let security_flag_ignore_cert_date_invalid : UInt
+
+pub let security_flag_ignore_cert_wrong_usage : UInt
+
+pub let security_flag_ignore_unknown_ca : UInt
+
+pub let security_flag_secure : UInt
+
+pub let security_flag_strength_medium : UInt
+
+pub let security_flag_strength_strong : UInt
+
+pub let security_flag_strength_weak : UInt
+
+pub fn send(@core.RawAddress, Bytes) -> Unit raise @core.WindowsError
+
+pub fn send_raw(@core.RawAddress, Bytes) -> Int
+
+pub fn set_auto_logon_policy(@core.RawAddress, Int) -> Unit raise @core.WindowsError
+
+pub fn set_auto_logon_policy_raw(@core.RawAddress, Int) -> Int
+
+pub fn set_client_certificate(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn set_client_certificate_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn set_credentials(@core.RawAddress, @core.RawAddress, @core.RawAddress, Int) -> Unit raise @core.WindowsError
+
+pub fn set_credentials_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, Int) -> Int
+
+pub fn set_proxy(@core.RawAddress, Int, Bytes, Bytes) -> Unit raise @core.WindowsError
+
+pub fn set_proxy_raw(@core.RawAddress, Int, Bytes, Bytes) -> Int
+
+pub fn set_request_header(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn set_request_header_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn set_timeouts(@core.RawAddress, Int, Int, Int, Int) -> Unit raise @core.WindowsError
+
+pub fn set_timeouts_raw(@core.RawAddress, Int, Int, Int, Int) -> Int
+
+pub let ssl_error_flag_cert_cn_invalid : Int
+
+pub let ssl_error_flag_cert_date_invalid : Int
+
+pub let ssl_error_flag_cert_wrong_usage : Int
+
+pub let ssl_error_flag_ignore_all : Int
+
+pub let ssl_error_flag_unknown_ca : Int
+
+pub fn wait_for_response(@core.RawAddress, Bytes, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn wait_for_response_raw(@core.RawAddress, Bytes, @core.RawAddress) -> Int
+
+pub fn win_http_add_request_headers_ex_raw(@core.RawAddress, UInt, UInt64, UInt64, UInt, @core.RawAddress) -> UInt
+
+pub fn win_http_add_request_headers_raw(@core.RawAddress, @core.RawAddress, UInt, UInt) -> @core.RawWin32Call[Int]
+
+pub fn win_http_check_platform_raw() -> @core.RawWin32Call[Int]
+
+pub fn win_http_close_handle_raw(@core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub let win_http_connect_failure_count : Int
+
+pub fn win_http_connect_raw(@core.RawAddress, @core.RawAddress, UInt, UInt) -> @core.RawWin32Call[@core.RawAddress]
+
+pub let win_http_connection_acquire_end : Int
+
+pub let win_http_connection_acquire_start : Int
+
+pub let win_http_connection_acquire_wait_end : Int
+
+pub let win_http_connection_establishment_end : Int
+
+pub let win_http_connection_establishment_start : Int
+
+pub fn win_http_crack_url_raw(@core.RawAddress, UInt, UInt, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn win_http_create_proxy_resolver_raw(@core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn win_http_create_url_raw(@core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn win_http_detect_auto_proxy_config_url_raw(UInt, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub let win_http_fast_forwarding_state_client_side_failed : Int
+
+pub let win_http_fast_forwarding_state_in_progress : Int
+
+pub let win_http_fast_forwarding_state_server_side_failed : Int
+
+pub let win_http_fast_forwarding_state_succeeded : Int
+
+pub fn win_http_free_proxy_result_ex_raw(@core.RawAddress) -> Unit
+
+pub fn win_http_free_proxy_result_raw(@core.RawAddress) -> Unit
+
+pub fn win_http_free_proxy_settings_ex_raw(Int, @core.RawAddress) -> UInt
+
+pub fn win_http_free_proxy_settings_raw(@core.RawAddress) -> Unit
+
+pub fn win_http_free_query_connection_group_result_raw(@core.RawAddress) -> Unit
+
+pub fn win_http_get_default_proxy_configuration_raw(@core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn win_http_get_ie_proxy_config_for_current_user_raw(@core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn win_http_get_proxy_for_url_ex2_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, UInt64) -> UInt
+
+pub fn win_http_get_proxy_for_url_ex_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, UInt64) -> UInt
+
+pub fn win_http_get_proxy_for_url_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn win_http_get_proxy_result_ex_raw(@core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn win_http_get_proxy_result_raw(@core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn win_http_get_proxy_settings_ex_raw(@core.RawAddress, Int, @core.RawAddress, UInt64) -> UInt
+
+pub fn win_http_get_proxy_settings_result_ex_raw(@core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn win_http_get_proxy_settings_version_raw(@core.RawAddress, @core.RawAddress) -> UInt
+
+pub let win_http_name_resolution_end : Int
+
+pub let win_http_name_resolution_start : Int
+
+pub fn win_http_open_raw(@core.RawAddress, UInt, @core.RawAddress, @core.RawAddress, UInt) -> @core.RawWin32Call[@core.RawAddress]
+
+pub fn win_http_open_request_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, UInt) -> @core.RawWin32Call[@core.RawAddress]
+
+pub fn win_http_protocol_complete_upgrade_raw(@core.RawAddress, UInt64) -> @core.RawAddress
+
+pub fn win_http_protocol_receive_raw(@core.RawAddress, UInt64, @core.RawAddress, UInt, @core.RawAddress) -> UInt
+
+pub fn win_http_protocol_send_raw(@core.RawAddress, UInt64, @core.RawAddress, UInt) -> UInt
+
+pub let win_http_proxy_detection_end : Int
+
+pub let win_http_proxy_detection_start : Int
+
+pub let win_http_proxy_failure_count : Int
+
+pub let win_http_proxy_settings_type_unknown : Int
+
+pub let win_http_proxy_settings_type_wsa : Int
+
+pub let win_http_proxy_settings_type_wsl : Int
+
+pub let win_http_proxy_settings_type_x_box : Int
+
+pub let win_http_proxy_tls_handshake_client_leg1_end : Int
+
+pub let win_http_proxy_tls_handshake_client_leg1_size : Int
+
+pub let win_http_proxy_tls_handshake_client_leg1_start : Int
+
+pub let win_http_proxy_tls_handshake_client_leg2_end : Int
+
+pub let win_http_proxy_tls_handshake_client_leg2_size : Int
+
+pub let win_http_proxy_tls_handshake_client_leg2_start : Int
+
+pub let win_http_proxy_tls_handshake_client_leg3_end : Int
+
+pub let win_http_proxy_tls_handshake_client_leg3_start : Int
+
+pub let win_http_proxy_tls_handshake_server_leg1_size : Int
+
+pub let win_http_proxy_tls_handshake_server_leg2_size : Int
+
+pub let win_http_proxy_tunnel_end : Int
+
+pub let win_http_proxy_tunnel_start : Int
+
+pub fn win_http_query_auth_schemes_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn win_http_query_connection_group_raw(@core.RawAddress, @core.RawAddress, UInt64, @core.RawAddress) -> UInt
+
+pub fn win_http_query_data_available_raw(@core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn win_http_query_headers_ex_raw(@core.RawAddress, UInt, UInt64, UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn win_http_query_headers_raw(@core.RawAddress, UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn win_http_query_option_raw(@core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn win_http_read_data_ex_raw(@core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, UInt64, UInt, @core.RawAddress) -> UInt
+
+pub fn win_http_read_data_raw(@core.RawAddress, @core.RawAddress, UInt, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn win_http_read_proxy_settings_raw(@core.RawAddress, @core.RawAddress, Int, Int, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub let win_http_receive_response_body_decompression_delta : Int
+
+pub let win_http_receive_response_end : Int
+
+pub let win_http_receive_response_headers_decompression_end : Int
+
+pub let win_http_receive_response_headers_decompression_start : Int
+
+pub let win_http_receive_response_headers_end : Int
+
+pub fn win_http_receive_response_raw(@core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub let win_http_receive_response_start : Int
+
+pub fn win_http_register_proxy_change_notification_raw(UInt64, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub let win_http_request_headers_compressed_size : Int
+
+pub let win_http_request_headers_size : Int
+
+pub let win_http_request_option_enable_certificate_revocation_check : Int
+
+pub let win_http_request_option_enable_http1_1 : Int
+
+pub let win_http_request_option_enable_https_to_http_redirects : Int
+
+pub let win_http_request_option_enable_passport_authentication : Int
+
+pub let win_http_request_option_enable_redirects : Int
+
+pub let win_http_request_option_enable_tracing : Int
+
+pub let win_http_request_option_escape_percent_in_url : Int
+
+pub let win_http_request_option_max_automatic_redirects : Int
+
+pub let win_http_request_option_max_response_drain_size : Int
+
+pub let win_http_request_option_max_response_header_size : Int
+
+pub let win_http_request_option_reject_userpwd : Int
+
+pub let win_http_request_option_revert_impersonation_over_ssl : Int
+
+pub let win_http_request_option_secure_protocols : Int
+
+pub let win_http_request_option_select_certificate : Int
+
+pub let win_http_request_option_ssl_error_ignore_flags : Int
+
+pub let win_http_request_option_url : Int
+
+pub let win_http_request_option_url_code_page : Int
+
+pub let win_http_request_option_url_escape_disable : Int
+
+pub let win_http_request_option_url_escape_disable_query : Int
+
+pub let win_http_request_option_user_agent_string : Int
+
+pub let win_http_request_stat_last : Int
+
+pub let win_http_request_stat_max : Int
+
+pub let win_http_request_time_last : Int
+
+pub let win_http_request_time_max : Int
+
+pub fn win_http_reset_auto_proxy_raw(@core.RawAddress, UInt) -> UInt
+
+pub let win_http_response_body_compressed_size : Int
+
+pub let win_http_response_body_size : Int
+
+pub let win_http_response_headers_compressed_size : Int
+
+pub let win_http_response_headers_size : Int
+
+pub let win_http_secure_dns_setting_default : Int
+
+pub let win_http_secure_dns_setting_force_plaintext : Int
+
+pub let win_http_secure_dns_setting_max : Int
+
+pub let win_http_secure_dns_setting_require_encryption : Int
+
+pub let win_http_secure_dns_setting_try_encryption_with_fallback : Int
+
+pub let win_http_send_request_end : Int
+
+pub let win_http_send_request_headers_compression_end : Int
+
+pub let win_http_send_request_headers_compression_start : Int
+
+pub let win_http_send_request_headers_end : Int
+
+pub fn win_http_send_request_raw(@core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, UInt, UInt, UInt64) -> @core.RawWin32Call[Int]
+
+pub let win_http_send_request_start : Int
+
+pub fn win_http_set_credentials_raw(@core.RawAddress, UInt, UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn win_http_set_default_proxy_configuration_raw(@core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn win_http_set_option_raw(@core.RawAddress, UInt, @core.RawAddress, UInt) -> @core.RawWin32Call[Int]
+
+pub fn win_http_set_proxy_settings_per_user_raw(Int) -> UInt
+
+pub fn win_http_set_status_callback_raw(@core.RawAddress, @core.RawAddress, UInt, UInt64) -> @core.RawWin32Call[@core.RawAddress]
+
+pub fn win_http_set_timeouts_raw(@core.RawAddress, Int, Int, Int, Int) -> @core.RawWin32Call[Int]
+
+pub let win_http_stream_wait_end : Int
+
+pub let win_http_stream_wait_start : Int
+
+pub fn win_http_time_from_system_time_raw(@core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn win_http_time_to_system_time_raw(@core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub let win_http_tls_handshake_client_leg1_end : Int
+
+pub let win_http_tls_handshake_client_leg1_size : Int
+
+pub let win_http_tls_handshake_client_leg1_start : Int
+
+pub let win_http_tls_handshake_client_leg2_end : Int
+
+pub let win_http_tls_handshake_client_leg2_size : Int
+
+pub let win_http_tls_handshake_client_leg2_start : Int
+
+pub let win_http_tls_handshake_client_leg3_end : Int
+
+pub let win_http_tls_handshake_client_leg3_start : Int
+
+pub let win_http_tls_handshake_server_leg1_size : Int
+
+pub let win_http_tls_handshake_server_leg2_size : Int
+
+pub fn win_http_unregister_proxy_change_notification_raw(@core.RawAddress) -> UInt
+
+pub fn win_http_web_socket_close_raw(@core.RawAddress, UInt, @core.RawAddress, UInt) -> UInt
+
+pub fn win_http_web_socket_complete_upgrade_raw(@core.RawAddress, UInt64) -> @core.RawWin32Call[@core.RawAddress]
+
+pub fn win_http_web_socket_query_close_status_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, UInt, @core.RawAddress) -> UInt
+
+pub fn win_http_web_socket_receive_raw(@core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn win_http_web_socket_send_raw(@core.RawAddress, Int, @core.RawAddress, UInt) -> UInt
+
+pub fn win_http_web_socket_shutdown_raw(@core.RawAddress, UInt, @core.RawAddress, UInt) -> UInt
+
+pub fn win_http_write_data_raw(@core.RawAddress, @core.RawAddress, UInt, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn win_http_write_proxy_settings_raw(@core.RawAddress, Int, @core.RawAddress) -> UInt
+
+pub let winhttp_access_type_automatic_proxy : UInt
+
+pub let winhttp_access_type_default_proxy : UInt
+
+pub let winhttp_access_type_named_proxy : UInt
+
+pub let winhttp_access_type_no_proxy : UInt
+
+pub let winhttp_addreq_flag_add : UInt
+
+pub let winhttp_addreq_flag_add_if_new : UInt
+
+pub let winhttp_addreq_flag_coalesce : UInt
+
+pub let winhttp_addreq_flag_coalesce_with_comma : UInt
+
+pub let winhttp_addreq_flag_coalesce_with_semicolon : UInt
+
+pub let winhttp_addreq_flag_replace : UInt
+
+pub let winhttp_addreq_flags_mask : UInt
+
+pub let winhttp_addreq_index_mask : UInt
+
+pub let winhttp_auth_scheme_basic : UInt
+
+pub let winhttp_auth_scheme_digest : UInt
+
+pub let winhttp_auth_scheme_negotiate : UInt
+
+pub let winhttp_auth_scheme_ntlm : UInt
+
+pub let winhttp_auth_scheme_passport : UInt
+
+pub let winhttp_auth_target_proxy : UInt
+
+pub let winhttp_auth_target_server : UInt
+
+pub let winhttp_auto_detect_type_dhcp : UInt
+
+pub let winhttp_auto_detect_type_dns_a : UInt
+
+pub let winhttp_autologon_security_level_default : UInt
+
+pub let winhttp_autologon_security_level_high : UInt
+
+pub let winhttp_autologon_security_level_low : UInt
+
+pub let winhttp_autologon_security_level_max : UInt
+
+pub let winhttp_autologon_security_level_medium : UInt
+
+pub let winhttp_autologon_security_level_proxy_only : UInt
+
+pub let winhttp_autoproxy_allow_autoconfig : UInt
+
+pub let winhttp_autoproxy_allow_cm : UInt
+
+pub let winhttp_autoproxy_allow_static : UInt
+
+pub let winhttp_autoproxy_auto_detect : UInt
+
+pub let winhttp_autoproxy_config_url : UInt
+
+pub let winhttp_autoproxy_host_keepcase : UInt
+
+pub let winhttp_autoproxy_host_lowercase : UInt
+
+pub let winhttp_autoproxy_no_cache_client : UInt
+
+pub let winhttp_autoproxy_no_cache_svc : UInt
+
+pub let winhttp_autoproxy_no_directaccess : UInt
+
+pub let winhttp_autoproxy_run_inprocess : UInt
+
+pub let winhttp_autoproxy_run_outprocess_only : UInt
+
+pub let winhttp_autoproxy_sort_results : UInt
+
+pub let winhttp_autoproxy_use_interface_config : UInt
+
+pub let winhttp_callback_flag_all_notifications : UInt
+
+pub let winhttp_callback_flag_data_available : UInt
+
+pub let winhttp_callback_flag_detecting_proxy : UInt
+
+pub let winhttp_callback_flag_getproxyforurl_complete : UInt
+
+pub let winhttp_callback_flag_getproxysettings_complete : UInt
+
+pub let winhttp_callback_flag_headers_available : UInt
+
+pub let winhttp_callback_flag_intermediate_response : UInt
+
+pub let winhttp_callback_flag_read_complete : UInt
+
+pub let winhttp_callback_flag_redirect : UInt
+
+pub let winhttp_callback_flag_request_error : UInt
+
+pub let winhttp_callback_flag_secure_failure : UInt
+
+pub let winhttp_callback_flag_sendrequest_complete : UInt
+
+pub let winhttp_callback_flag_write_complete : UInt
+
+pub let winhttp_callback_status_close_complete : UInt
+
+pub let winhttp_callback_status_closing_connection : UInt
+
+pub let winhttp_callback_status_connected_to_server : UInt
+
+pub let winhttp_callback_status_connecting_to_server : UInt
+
+pub let winhttp_callback_status_connection_closed : UInt
+
+pub let winhttp_callback_status_data_available : UInt
+
+pub let winhttp_callback_status_detecting_proxy : UInt
+
+pub let winhttp_callback_status_flag_cert_cn_invalid : UInt
+
+pub let winhttp_callback_status_flag_cert_date_invalid : UInt
+
+pub let winhttp_callback_status_flag_cert_rev_failed : UInt
+
+pub let winhttp_callback_status_flag_cert_revoked : UInt
+
+pub let winhttp_callback_status_flag_cert_wrong_usage : UInt
+
+pub let winhttp_callback_status_flag_invalid_ca : UInt
+
+pub let winhttp_callback_status_flag_invalid_cert : UInt
+
+pub let winhttp_callback_status_flag_security_channel_error : UInt
+
+pub let winhttp_callback_status_getproxyforurl_complete : UInt
+
+pub let winhttp_callback_status_getproxysettings_complete : UInt
+
+pub let winhttp_callback_status_handle_closing : UInt
+
+pub let winhttp_callback_status_handle_created : UInt
+
+pub let winhttp_callback_status_headers_available : UInt
+
+pub let winhttp_callback_status_intermediate_response : UInt
+
+pub let winhttp_callback_status_name_resolved : UInt
+
+pub let winhttp_callback_status_read_complete : UInt
+
+pub let winhttp_callback_status_receiving_response : UInt
+
+pub let winhttp_callback_status_redirect : UInt
+
+pub let winhttp_callback_status_request_error : UInt
+
+pub let winhttp_callback_status_request_sent : UInt
+
+pub let winhttp_callback_status_resolving_name : UInt
+
+pub let winhttp_callback_status_response_received : UInt
+
+pub let winhttp_callback_status_secure_failure : UInt
+
+pub let winhttp_callback_status_sending_request : UInt
+
+pub let winhttp_callback_status_sendrequest_complete : UInt
+
+pub let winhttp_callback_status_settings_read_complete : UInt
+
+pub let winhttp_callback_status_settings_write_complete : UInt
+
+pub let winhttp_callback_status_shutdown_complete : UInt
+
+pub let winhttp_callback_status_write_complete : UInt
+
+pub let winhttp_connection_retry_condition_408 : UInt
+
+pub let winhttp_connection_retry_condition_ssl_handshake : UInt
+
+pub let winhttp_connection_retry_condition_stale_connection : UInt
+
+pub let winhttp_conns_per_server_unlimited : UInt
+
+pub let winhttp_decompression_flag_deflate : UInt
+
+pub let winhttp_decompression_flag_gzip : UInt
+
+pub let winhttp_disable_authentication : UInt
+
+pub let winhttp_disable_cookies : UInt
+
+pub let winhttp_disable_keep_alive : UInt
+
+pub let winhttp_disable_passport_auth : UInt
+
+pub let winhttp_disable_passport_keyring : UInt
+
+pub let winhttp_disable_redirects : UInt
+
+pub let winhttp_disable_spn_server_port : UInt
+
+pub let winhttp_enable_passport_auth : UInt
+
+pub let winhttp_enable_passport_keyring : UInt
+
+pub let winhttp_enable_spn_server_port : UInt
+
+pub let winhttp_enable_ssl_revert_impersonation : UInt
+
+pub let winhttp_enable_ssl_revocation : UInt
+
+pub let winhttp_error_base : UInt
+
+pub let winhttp_error_last : UInt
+
+pub let winhttp_extended_header_flag_unicode : UInt
+
+pub let winhttp_feature_add_request_headers_ex : UInt
+
+pub let winhttp_feature_background_connections : UInt
+
+pub let winhttp_feature_connection_guid : UInt
+
+pub let winhttp_feature_connection_stats_v0 : UInt
+
+pub let winhttp_feature_connection_stats_v1 : UInt
+
+pub let winhttp_feature_connection_stats_v2 : UInt
+
+pub let winhttp_feature_disable_aia_flag : UInt
+
+pub let winhttp_feature_disable_cert_chain_building : UInt
+
+pub let winhttp_feature_disable_global_pooling : UInt
+
+pub let winhttp_feature_disable_proxy_auth_schemes : UInt
+
+pub let winhttp_feature_disable_secure_protocol_fallback : UInt
+
+pub let winhttp_feature_disable_stream_queue : UInt
+
+pub let winhttp_feature_dscp_tag : UInt
+
+pub let winhttp_feature_enable_http2_plus_client_cert : UInt
+
+pub let winhttp_feature_error_log_guid : UInt
+
+pub let winhttp_feature_expire_connection : UInt
+
+pub let winhttp_feature_extended_header_flag_unicode : UInt
+
+pub let winhttp_feature_failed_connection_retries : UInt
+
+pub let winhttp_feature_fast_forward_response : UInt
+
+pub let winhttp_feature_first_available_connection : UInt
+
+pub let winhttp_feature_flag_automatic_chunking : UInt
+
+pub let winhttp_feature_flag_secure_defaults : UInt
+
+pub let winhttp_feature_free_query_connection_group_result : UInt
+
+pub let winhttp_feature_get_proxy_settings_ex : UInt
+
+pub let winhttp_feature_get_proxy_settings_ex_xbox : UInt
+
+pub let winhttp_feature_http11_downgrade_ttl : UInt
+
+pub let winhttp_feature_http2_keepalive : UInt
+
+pub let winhttp_feature_http2_plus_transfer_encoding : UInt
+
+pub let winhttp_feature_http2_receive_window : UInt
+
+pub let winhttp_feature_http3_handshake_timeout : UInt
+
+pub let winhttp_feature_http3_initial_rtt : UInt
+
+pub let winhttp_feature_http3_keepalive : UInt
+
+pub let winhttp_feature_http3_stream_error_code : UInt
+
+pub let winhttp_feature_http_protocol_required : UInt
+
+pub let winhttp_feature_ignore_cert_revocation_offline : UInt
+
+pub let winhttp_feature_ipv6_fast_fallback : UInt
+
+pub let winhttp_feature_is_feature_supported : UInt
+
+pub let winhttp_feature_match_connection_guid : UInt
+
+pub let winhttp_feature_match_connection_guid_flag_require_marked_connection : UInt
+
+pub let winhttp_feature_query_connection_group : UInt
+
+pub let winhttp_feature_query_connection_group_flag_insecure : UInt
+
+pub let winhttp_feature_query_ex_all_headers : UInt
+
+pub let winhttp_feature_query_flag_trailers : UInt
+
+pub let winhttp_feature_query_flag_wire_encoding : UInt
+
+pub let winhttp_feature_query_headers_ex : UInt
+
+pub let winhttp_feature_quic_stats : UInt
+
+pub let winhttp_feature_quic_stats_v2 : UInt
+
+pub let winhttp_feature_quic_stream_stats : UInt
+
+pub let winhttp_feature_read_data_ex : UInt
+
+pub let winhttp_feature_read_data_ex_flag_fill_buffer : UInt
+
+pub let winhttp_feature_referer_token_binding_hostname : UInt
+
+pub let winhttp_feature_request_annotation : UInt
+
+pub let winhttp_feature_request_stats : UInt
+
+pub let winhttp_feature_request_times : UInt
+
+pub let winhttp_feature_require_stream_end : UInt
+
+pub let winhttp_feature_resolution_hostname : UInt
+
+pub let winhttp_feature_resolver_cache_config : UInt
+
+pub let winhttp_feature_resolver_cache_config_flag_bypass_cache : UInt
+
+pub let winhttp_feature_resolver_cache_config_flag_conn_use_ttl : UInt
+
+pub let winhttp_feature_resolver_cache_config_flag_soft_limit : UInt
+
+pub let winhttp_feature_resolver_cache_config_flag_use_dns_ttl : UInt
+
+pub let winhttp_feature_revert_impersonation_server_cert : UInt
+
+pub let winhttp_feature_security_flag_ignore_all_cert_errors : UInt
+
+pub let winhttp_feature_security_info : UInt
+
+pub let winhttp_feature_server_cert_chain_context : UInt
+
+pub let winhttp_feature_session_error_log_guid : UInt
+
+pub let winhttp_feature_session_sch_cred : UInt
+
+pub let winhttp_feature_set_proxy_setings_per_user : UInt
+
+pub let winhttp_feature_set_token_binding : UInt
+
+pub let winhttp_feature_stream_error_code : UInt
+
+pub let winhttp_feature_tcp_fast_open : UInt
+
+pub let winhttp_feature_tcp_keepalive : UInt
+
+pub let winhttp_feature_tcp_priority_status : UInt
+
+pub let winhttp_feature_tls_false_start : UInt
+
+pub let winhttp_feature_tls_protocol_insecure_fallback : UInt
+
+pub let winhttp_feature_token_binding_public_key : UInt
+
+pub let winhttp_feature_upgrade_to_protocol : UInt
+
+pub let winhttp_feature_url_include_default_port : UInt
+
+pub let winhttp_feature_use_lookaside : UInt
+
+pub let winhttp_flag_async : UInt
+
+pub let winhttp_flag_automatic_chunking : UInt
+
+pub let winhttp_flag_bypass_proxy_cache : UInt
+
+pub let winhttp_flag_escape_disable : UInt
+
+pub let winhttp_flag_escape_disable_query : UInt
+
+pub let winhttp_flag_escape_percent : UInt
+
+pub let winhttp_flag_null_codepage : UInt
+
+pub let winhttp_flag_refresh : UInt
+
+pub let winhttp_flag_secure : UInt
+
+pub let winhttp_flag_secure_defaults : UInt
+
+pub let winhttp_flag_secure_protocol_ssl2 : UInt
+
+pub let winhttp_flag_secure_protocol_ssl3 : UInt
+
+pub let winhttp_flag_secure_protocol_tls1 : UInt
+
+pub let winhttp_flag_secure_protocol_tls1_1 : UInt
+
+pub let winhttp_flag_secure_protocol_tls1_2 : UInt
+
+pub let winhttp_flag_secure_protocol_tls1_3 : UInt
+
+pub let winhttp_handle_type_connect : UInt
+
+pub let winhttp_handle_type_protocol : UInt
+
+pub let winhttp_handle_type_proxy_resolver : UInt
+
+pub let winhttp_handle_type_request : UInt
+
+pub let winhttp_handle_type_session : UInt
+
+pub let winhttp_handle_type_websocket : UInt
+
+pub let winhttp_ignore_request_total_length : UInt
+
+pub let winhttp_internet_scheme_ftp : Int
+
+pub let winhttp_internet_scheme_http : Int
+
+pub let winhttp_internet_scheme_https : Int
+
+pub let winhttp_internet_scheme_socks : Int
+
+pub let winhttp_last_option : UInt
+
+pub let winhttp_match_connection_guid_flag_require_marked_connection : UInt
+
+pub let winhttp_match_connection_guid_flags_mask : UInt
+
+pub let winhttp_option_assured_non_blocking_callbacks : UInt
+
+pub let winhttp_option_autologon_policy : UInt
+
+pub let winhttp_option_background_connections : UInt
+
+pub let winhttp_option_callback : UInt
+
+pub let winhttp_option_client_cert_context : UInt
+
+pub let winhttp_option_client_cert_issuer_list : UInt
+
+pub let winhttp_option_codepage : UInt
+
+pub let winhttp_option_configure_passport_auth : UInt
+
+pub let winhttp_option_connect_retries : UInt
+
+pub let winhttp_option_connect_timeout : UInt
+
+pub let winhttp_option_connection_filter : UInt
+
+pub let winhttp_option_connection_guid : UInt
+
+pub let winhttp_option_connection_info : UInt
+
+pub let winhttp_option_connection_stats_v0 : UInt
+
+pub let winhttp_option_connection_stats_v1 : UInt
+
+pub let winhttp_option_connection_stats_v2 : UInt
+
+pub let winhttp_option_context_value : UInt
+
+pub let winhttp_option_decompression : UInt
+
+pub let winhttp_option_disable_cert_chain_building : UInt
+
+pub let winhttp_option_disable_feature : UInt
+
+pub let winhttp_option_disable_global_pooling : UInt
+
+pub let winhttp_option_disable_proxy_auth_schemes : UInt
+
+pub let winhttp_option_disable_secure_protocol_fallback : UInt
+
+pub let winhttp_option_disable_stream_queue : UInt
+
+pub let winhttp_option_dscp_tag : UInt
+
+pub let winhttp_option_enable_fast_forwarding : UInt
+
+pub let winhttp_option_enable_feature : UInt
+
+pub let winhttp_option_enable_http2_plus_client_cert : UInt
+
+pub let winhttp_option_enable_http_protocol : UInt
+
+pub let winhttp_option_enabletracing : UInt
+
+pub let winhttp_option_encode_extra : UInt
+
+pub let winhttp_option_error_log_guid : UInt
+
+pub let winhttp_option_expire_connection : UInt
+
+pub let winhttp_option_extended_error : UInt
+
+pub let winhttp_option_failed_connection_retries : UInt
+
+pub let winhttp_option_fast_forwarding_response_data : UInt
+
+pub let winhttp_option_fast_forwarding_response_status : UInt
+
+pub let winhttp_option_feature_supported : UInt
+
+pub let winhttp_option_first_available_connection : UInt
+
+pub let winhttp_option_global_proxy_creds : UInt
+
+pub let winhttp_option_global_server_creds : UInt
+
+pub let winhttp_option_handle_type : UInt
+
+pub let winhttp_option_http11_downgrade_ttl : UInt
+
+pub let winhttp_option_http2_keepalive : UInt
+
+pub let winhttp_option_http2_plus_transfer_encoding : UInt
+
+pub let winhttp_option_http2_receive_window : UInt
+
+pub let winhttp_option_http3_handshake_timeout : UInt
+
+pub let winhttp_option_http3_initial_rtt : UInt
+
+pub let winhttp_option_http3_keepalive : UInt
+
+pub let winhttp_option_http3_stream_error_code : UInt
+
+pub let winhttp_option_http_protocol_required : UInt
+
+pub let winhttp_option_http_protocol_used : UInt
+
+pub let winhttp_option_http_version : UInt
+
+pub let winhttp_option_ignore_cert_revocation_offline : UInt
+
+pub let winhttp_option_ipv6_fast_fallback : UInt
+
+pub let winhttp_option_is_proxy_connect_response : UInt
+
+pub let winhttp_option_kdc_proxy_settings : UInt
+
+pub let winhttp_option_match_connection_guid : UInt
+
+pub let winhttp_option_max_conns_per_1_0_server : UInt
+
+pub let winhttp_option_max_conns_per_server : UInt
+
+pub let winhttp_option_max_http_automatic_redirects : UInt
+
+pub let winhttp_option_max_http_status_continue : UInt
+
+pub let winhttp_option_max_response_drain_size : UInt
+
+pub let winhttp_option_max_response_header_size : UInt
+
+pub let winhttp_option_network_interface_affinity : UInt
+
+pub let winhttp_option_parent_handle : UInt
+
+pub let winhttp_option_passport_cobranding_text : UInt
+
+pub let winhttp_option_passport_cobranding_url : UInt
+
+pub let winhttp_option_passport_return_url : UInt
+
+pub let winhttp_option_passport_sign_out : UInt
+
+pub let winhttp_option_password : UInt
+
+pub let winhttp_option_proxy : UInt
+
+pub let winhttp_option_proxy_disable_service_calls : UInt
+
+pub let winhttp_option_proxy_password : UInt
+
+pub let winhttp_option_proxy_result_entry : UInt
+
+pub let winhttp_option_proxy_spn_used : UInt
+
+pub let winhttp_option_proxy_username : UInt
+
+pub let winhttp_option_quic_stats : UInt
+
+pub let winhttp_option_quic_stats_v2 : UInt
+
+pub let winhttp_option_quic_stream_stats : UInt
+
+pub let winhttp_option_read_buffer_size : UInt
+
+pub let winhttp_option_receive_proxy_connect_response : UInt
+
+pub let winhttp_option_receive_response_timeout : UInt
+
+pub let winhttp_option_receive_timeout : UInt
+
+pub let winhttp_option_redirect_policy : UInt
+
+pub let winhttp_option_redirect_policy_always : UInt
+
+pub let winhttp_option_redirect_policy_default : UInt
+
+pub let winhttp_option_redirect_policy_disallow_https_to_http : UInt
+
+pub let winhttp_option_redirect_policy_last : UInt
+
+pub let winhttp_option_redirect_policy_never : UInt
+
+pub let winhttp_option_referer_token_binding_hostname : UInt
+
+pub let winhttp_option_reject_userpwd_in_url : UInt
+
+pub let winhttp_option_request_annotation : UInt
+
+pub let winhttp_option_request_annotation_max_length : UInt
+
+pub let winhttp_option_request_priority : UInt
+
+pub let winhttp_option_request_stats : UInt
+
+pub let winhttp_option_request_times : UInt
+
+pub let winhttp_option_require_stream_end : UInt
+
+pub let winhttp_option_resolution_hostname : UInt
+
+pub let winhttp_option_resolve_timeout : UInt
+
+pub let winhttp_option_resolver_cache_config : UInt
+
+pub let winhttp_option_revert_impersonation_server_cert : UInt
+
+pub let winhttp_option_secure_protocols : UInt
+
+pub let winhttp_option_security_certificate_struct : UInt
+
+pub let winhttp_option_security_flags : UInt
+
+pub let winhttp_option_security_info : UInt
+
+pub let winhttp_option_security_key_bitness : UInt
+
+pub let winhttp_option_send_timeout : UInt
+
+pub let winhttp_option_server_cbt : UInt
+
+pub let winhttp_option_server_cert_chain_build_cache_only : UInt
+
+pub let winhttp_option_server_cert_chain_build_flags : UInt
+
+pub let winhttp_option_server_cert_chain_context : UInt
+
+pub let winhttp_option_server_cert_context : UInt
+
+pub let winhttp_option_server_spn_used : UInt
+
+pub let winhttp_option_session_error_log_guid : UInt
+
+pub let winhttp_option_set_token_binding : UInt
+
+pub let winhttp_option_spn : UInt
+
+pub let winhttp_option_spn_mask : UInt
+
+pub let winhttp_option_stream_error_code : UInt
+
+pub let winhttp_option_tcp_fast_open : UInt
+
+pub let winhttp_option_tcp_keepalive : UInt
+
+pub let winhttp_option_tcp_priority_hint : UInt
+
+pub let winhttp_option_tcp_priority_status : UInt
+
+pub let winhttp_option_tls_false_start : UInt
+
+pub let winhttp_option_tls_protocol_insecure_fallback : UInt
+
+pub let winhttp_option_token_binding_public_key : UInt
+
+pub let winhttp_option_unload_notify_event : UInt
+
+pub let winhttp_option_unsafe_header_parsing : UInt
+
+pub let winhttp_option_upgrade_to_protocol : UInt
+
+pub let winhttp_option_upgrade_to_web_socket : UInt
+
+pub let winhttp_option_url : UInt
+
+pub let winhttp_option_use_global_server_credentials : UInt
+
+pub let winhttp_option_use_lookaside : UInt
+
+pub let winhttp_option_use_session_sch_cred : UInt
+
+pub let winhttp_option_user_agent : UInt
+
+pub let winhttp_option_username : UInt
+
+pub let winhttp_option_web_socket_close_timeout : UInt
+
+pub let winhttp_option_web_socket_keepalive_interval : UInt
+
+pub let winhttp_option_web_socket_receive_buffer_size : UInt
+
+pub let winhttp_option_web_socket_send_buffer_size : UInt
+
+pub let winhttp_option_worker_thread_count : UInt
+
+pub let winhttp_option_write_buffer_size : UInt
+
+pub let winhttp_protocol_flag_http2 : UInt
+
+pub let winhttp_protocol_flag_http3 : UInt
+
+pub let winhttp_protocol_receive_operation : Int
+
+pub let winhttp_protocol_send_operation : Int
+
+pub let winhttp_proxy_disable_auth_local_service : UInt
+
+pub let winhttp_proxy_disable_scheme_basic : UInt
+
+pub let winhttp_proxy_disable_scheme_digest : UInt
+
+pub let winhttp_proxy_disable_scheme_kerberos : UInt
+
+pub let winhttp_proxy_disable_scheme_negotiate : UInt
+
+pub let winhttp_proxy_disable_scheme_ntlm : UInt
+
+pub let winhttp_proxy_notify_change : UInt
+
+pub let winhttp_proxy_type_auto_detect : UInt
+
+pub let winhttp_proxy_type_auto_proxy_url : UInt
+
+pub let winhttp_proxy_type_direct : UInt
+
+pub let winhttp_proxy_type_proxy : UInt
+
+pub let winhttp_query_accept : UInt
+
+pub let winhttp_query_accept_charset : UInt
+
+pub let winhttp_query_accept_encoding : UInt
+
+pub let winhttp_query_accept_language : UInt
+
+pub let winhttp_query_accept_ranges : UInt
+
+pub let winhttp_query_age : UInt
+
+pub let winhttp_query_allow : UInt
+
+pub let winhttp_query_authentication_info : UInt
+
+pub let winhttp_query_authorization : UInt
+
+pub let winhttp_query_cache_control : UInt
+
+pub let winhttp_query_connection : UInt
+
+pub let winhttp_query_content_base : UInt
+
+pub let winhttp_query_content_description : UInt
+
+pub let winhttp_query_content_disposition : UInt
+
+pub let winhttp_query_content_encoding : UInt
+
+pub let winhttp_query_content_id : UInt
+
+pub let winhttp_query_content_language : UInt
+
+pub let winhttp_query_content_length : UInt
+
+pub let winhttp_query_content_location : UInt
+
+pub let winhttp_query_content_md5 : UInt
+
+pub let winhttp_query_content_range : UInt
+
+pub let winhttp_query_content_transfer_encoding : UInt
+
+pub let winhttp_query_content_type : UInt
+
+pub let winhttp_query_cookie : UInt
+
+pub let winhttp_query_cost : UInt
+
+pub let winhttp_query_custom : UInt
+
+pub let winhttp_query_date : UInt
+
+pub let winhttp_query_derived_from : UInt
+
+pub let winhttp_query_etag : UInt
+
+pub let winhttp_query_ex_all_headers : UInt
+
+pub let winhttp_query_expect : UInt
+
+pub let winhttp_query_expires : UInt
+
+pub let winhttp_query_flag_number : UInt
+
+pub let winhttp_query_flag_number64 : UInt
+
+pub let winhttp_query_flag_request_headers : UInt
+
+pub let winhttp_query_flag_systemtime : UInt
+
+pub let winhttp_query_flag_trailers : UInt
+
+pub let winhttp_query_flag_wire_encoding : UInt
+
+pub let winhttp_query_forwarded : UInt
+
+pub let winhttp_query_from : UInt
+
+pub let winhttp_query_host : UInt
+
+pub let winhttp_query_if_match : UInt
+
+pub let winhttp_query_if_modified_since : UInt
+
+pub let winhttp_query_if_none_match : UInt
+
+pub let winhttp_query_if_range : UInt
+
+pub let winhttp_query_if_unmodified_since : UInt
+
+pub let winhttp_query_last_modified : UInt
+
+pub let winhttp_query_link : UInt
+
+pub let winhttp_query_location : UInt
+
+pub let winhttp_query_max : UInt
+
+pub let winhttp_query_max_forwards : UInt
+
+pub let winhttp_query_message_id : UInt
+
+pub let winhttp_query_mime_version : UInt
+
+pub let winhttp_query_orig_uri : UInt
+
+pub let winhttp_query_passport_config : UInt
+
+pub let winhttp_query_passport_urls : UInt
+
+pub let winhttp_query_pragma : UInt
+
+pub let winhttp_query_proxy_authenticate : UInt
+
+pub let winhttp_query_proxy_authorization : UInt
+
+pub let winhttp_query_proxy_connection : UInt
+
+pub let winhttp_query_proxy_support : UInt
+
+pub let winhttp_query_public : UInt
+
+pub let winhttp_query_range : UInt
+
+pub let winhttp_query_raw_headers : UInt
+
+pub let winhttp_query_raw_headers_crlf : UInt
+
+pub let winhttp_query_referer : UInt
+
+pub let winhttp_query_refresh : UInt
+
+pub let winhttp_query_request_method : UInt
+
+pub let winhttp_query_retry_after : UInt
+
+pub let winhttp_query_server : UInt
+
+pub let winhttp_query_set_cookie : UInt
+
+pub let winhttp_query_status_code : UInt
+
+pub let winhttp_query_status_text : UInt
+
+pub let winhttp_query_title : UInt
+
+pub let winhttp_query_transfer_encoding : UInt
+
+pub let winhttp_query_unless_modified_since : UInt
+
+pub let winhttp_query_upgrade : UInt
+
+pub let winhttp_query_uri : UInt
+
+pub let winhttp_query_user_agent : UInt
+
+pub let winhttp_query_vary : UInt
+
+pub let winhttp_query_version : UInt
+
+pub let winhttp_query_via : UInt
+
+pub let winhttp_query_warning : UInt
+
+pub let winhttp_query_www_authenticate : UInt
+
+pub let winhttp_request_stat_flag_first_request : UInt
+
+pub let winhttp_request_stat_flag_proxy_tls_false_start : UInt
+
+pub let winhttp_request_stat_flag_proxy_tls_session_resumption : UInt
+
+pub let winhttp_request_stat_flag_tcp_fast_open : UInt
+
+pub let winhttp_request_stat_flag_tls_false_start : UInt
+
+pub let winhttp_request_stat_flag_tls_session_resumption : UInt
+
+pub let winhttp_reset_all : UInt
+
+pub let winhttp_reset_discard_resolvers : UInt
+
+pub let winhttp_reset_notify_network_changed : UInt
+
+pub let winhttp_reset_out_of_proc : UInt
+
+pub let winhttp_reset_script_cache : UInt
+
+pub let winhttp_reset_state : UInt
+
+pub let winhttp_reset_swpad_all : UInt
+
+pub let winhttp_reset_swpad_current_network : UInt
+
+pub let winhttp_resolver_cache_config_flag_bypass_cache : UInt
+
+pub let winhttp_resolver_cache_config_flag_conn_use_ttl : UInt
+
+pub let winhttp_resolver_cache_config_flag_soft_limit : UInt
+
+pub let winhttp_resolver_cache_config_flag_use_dns_ttl : UInt
+
+pub let winhttp_server_cert_chain_cache_only_url_retrieval : UInt
+
+pub let winhttp_server_cert_chain_disable_aia : UInt
+
+pub let winhttp_server_cert_chain_revocation_check_cache_only : UInt
+
+pub let winhttp_time_format_bufsize : UInt
+
+pub let winhttp_web_socket_aborted_close_status : Int
+
+pub let winhttp_web_socket_binary_fragment_buffer_type : Int
+
+pub let winhttp_web_socket_binary_message_buffer_type : Int
+
+pub let winhttp_web_socket_close_buffer_type : Int
+
+pub let winhttp_web_socket_close_operation : Int
+
+pub let winhttp_web_socket_empty_close_status : Int
+
+pub let winhttp_web_socket_endpoint_terminated_close_status : Int
+
+pub let winhttp_web_socket_invalid_data_type_close_status : Int
+
+pub let winhttp_web_socket_invalid_payload_close_status : Int
+
+pub let winhttp_web_socket_max_close_reason_length : UInt
+
+pub let winhttp_web_socket_message_too_big_close_status : Int
+
+pub let winhttp_web_socket_min_keepalive_value : UInt
+
+pub let winhttp_web_socket_policy_violation_close_status : Int
+
+pub let winhttp_web_socket_protocol_error_close_status : Int
+
+pub let winhttp_web_socket_receive_operation : Int
+
+pub let winhttp_web_socket_secure_handshake_error_close_status : Int
+
+pub let winhttp_web_socket_send_operation : Int
+
+pub let winhttp_web_socket_server_error_close_status : Int
+
+pub let winhttp_web_socket_shutdown_operation : Int
+
+pub let winhttp_web_socket_success_close_status : Int
+
+pub let winhttp_web_socket_unsupported_extensions_close_status : Int
+
+pub let winhttp_web_socket_utf8_fragment_buffer_type : Int
+
+pub let winhttp_web_socket_utf8_message_buffer_type : Int
+
+// Errors
+
+// Types and methods
+
+// Type aliases
+pub using @276e9466edd92f6e {type Anonymous1EUnion_5010548ce5e7 as Anonymous1EUnion}
+
+pub using @276e9466edd92f6e {type Anonymous2EUnion_ac27d893d7b3 as Anonymous2EUnion}
+
+pub using @276e9466edd92f6e {type HTTPVERSIONINFO_d7f790a4a6ec as HTTPVERSIONINFO}
+
+pub using @276e9466edd92f6e {type IWinHttpRequest_67d1ed814d68 as IWinHttpRequest}
+
+pub using @276e9466edd92f6e {type IWinHttpRequestEvents_c3d8d3227d40 as IWinHttpRequestEvents}
+
+pub using @276e9466edd92f6e {type URLCOMPONENTS_cbfaac4ed926 as URLCOMPONENTS}
+
+pub using @276e9466edd92f6e {type WINHTTPACCESSTYPE_03a395d82054 as WINHTTPACCESSTYPE}
+
+pub using @276e9466edd92f6e {type WINHTTPASYNCRESULT_ec46a65b6be5 as WINHTTPASYNCRESULT}
+
+pub using @276e9466edd92f6e {type WINHTTPAUTOPROXYOPTIONS_17eae7769a51 as WINHTTPAUTOPROXYOPTIONS}
+
+pub using @276e9466edd92f6e {type WINHTTPCERTIFICATEINFO_612f627f5d23 as WINHTTPCERTIFICATEINFO}
+
+pub using @276e9466edd92f6e {type WINHTTPCONNECTIONGROUP_79cedded1693 as WINHTTPCONNECTIONGROUP}
+
+pub using @276e9466edd92f6e {type WINHTTPCONNECTIONINFO_1dc174671628 as WINHTTPCONNECTIONINFO}
+
+pub using @276e9466edd92f6e {type WINHTTPCREATEURLFLAGS_8f6b8a1fff7f as WINHTTPCREATEURLFLAGS}
+
+pub using @276e9466edd92f6e {type WINHTTPCREDS_f835597f1f4d as WINHTTPCREDS}
+
+pub using @276e9466edd92f6e {type WINHTTPCREDSAUTHSCHEME_fb650734fe75 as WINHTTPCREDSAUTHSCHEME}
+
+pub using @276e9466edd92f6e {type WINHTTPCREDSEX_cb88d5d024ca as WINHTTPCREDSEX}
+
+pub using @276e9466edd92f6e {type WINHTTPCURRENTUSERIEPROXYCONFIG_64988bdaa8b6 as WINHTTPCURRENTUSERIEPROXYCONFIG}
+
+pub using @276e9466edd92f6e {type WINHTTPEXTENDEDHEADER_a831a7112b11 as WINHTTPEXTENDEDHEADER}
+
+pub using @276e9466edd92f6e {type WINHTTPFAILEDCONNECTIONRETRIES_8e85b89b403b as WINHTTPFAILEDCONNECTIONRETRIES}
+
+pub using @276e9466edd92f6e {type WINHTTPFASTFORWARDINGSTATE_bea790824471 as WINHTTPFASTFORWARDINGSTATE}
+
+pub using @276e9466edd92f6e {type WINHTTPFASTFORWARDINGSTATUS_50b4f441e3e6 as WINHTTPFASTFORWARDINGSTATUS}
+
+pub using @276e9466edd92f6e {type WINHTTPHEADERNAME_8157d87897f4 as WINHTTPHEADERNAME}
+
+pub using @276e9466edd92f6e {type WINHTTPHOSTCONNECTIONGROUP_3348f3f1e7db as WINHTTPHOSTCONNECTIONGROUP}
+
+pub using @276e9466edd92f6e {type WINHTTPHTTP2RECEIVEWINDOW_d028a82cc0c7 as WINHTTPHTTP2RECEIVEWINDOW}
+
+pub using @276e9466edd92f6e {type WINHTTPINTERNETSCHEME_167ab8f8df22 as WINHTTPINTERNETSCHEME}
+
+pub using @276e9466edd92f6e {type WINHTTPMATCHCONNECTIONGUID_edd4c6deea4c as WINHTTPMATCHCONNECTIONGUID}
+
+pub using @276e9466edd92f6e {type WINHTTPOPENREQUESTFLAGS_bb0cb3ba03c6 as WINHTTPOPENREQUESTFLAGS}
+
+pub using @276e9466edd92f6e {type WINHTTPPROTOCOLASYNCRESULT_a4003b8c8dd5 as WINHTTPPROTOCOLASYNCRESULT}
+
+pub using @276e9466edd92f6e {type WINHTTPPROTOCOLOPERATION_806bface8ed2 as WINHTTPPROTOCOLOPERATION}
+
+pub using @276e9466edd92f6e {type WINHTTPPROXYCHANGECALLBACK_383effcddf76 as WINHTTPPROXYCHANGECALLBACK}
+
+pub using @276e9466edd92f6e {type WINHTTPPROXYINFO_956846924ff0 as WINHTTPPROXYINFO}
+
+pub using @276e9466edd92f6e {type WINHTTPPROXYNETWORKINGKEY_2dc9033894c0 as WINHTTPPROXYNETWORKINGKEY}
+
+pub using @276e9466edd92f6e {type WINHTTPPROXYRESULT_2a70ca6d0856 as WINHTTPPROXYRESULT}
+
+pub using @276e9466edd92f6e {type WINHTTPPROXYRESULTENTRY_97f02e02777b as WINHTTPPROXYRESULTENTRY}
+
+pub using @276e9466edd92f6e {type WINHTTPPROXYRESULTEX_8cfa0964cac9 as WINHTTPPROXYRESULTEX}
+
+pub using @276e9466edd92f6e {type WINHTTPPROXYSETTINGS_f87a97647375 as WINHTTPPROXYSETTINGS}
+
+pub using @276e9466edd92f6e {type WINHTTPPROXYSETTINGSEX_a910bb5671b2 as WINHTTPPROXYSETTINGSEX}
+
+pub using @276e9466edd92f6e {type WINHTTPPROXYSETTINGSPARAM_c00a4e6d29fc as WINHTTPPROXYSETTINGSPARAM}
+
+pub using @276e9466edd92f6e {type WINHTTPPROXYSETTINGSTYPE_4787f9315ecb as WINHTTPPROXYSETTINGSTYPE}
+
+pub using @276e9466edd92f6e {type WINHTTPQUERYCONNECTIONGROUPRESULT_262c1cbe9b61 as WINHTTPQUERYCONNECTIONGROUPRESULT}
+
+pub using @276e9466edd92f6e {type WINHTTPREQUESTSTATENTRY_b3b2531aa13a as WINHTTPREQUESTSTATENTRY}
+
+pub using @276e9466edd92f6e {type WINHTTPREQUESTSTATS_28f649379742 as WINHTTPREQUESTSTATS}
+
+pub using @276e9466edd92f6e {type WINHTTPREQUESTTIMEENTRY_c63c7bf04451 as WINHTTPREQUESTTIMEENTRY}
+
+pub using @276e9466edd92f6e {type WINHTTPREQUESTTIMES_7fa57f79df7e as WINHTTPREQUESTTIMES}
+
+pub using @276e9466edd92f6e {type WINHTTPRESOLVERCACHECONFIG_f3c4d4bb1c51 as WINHTTPRESOLVERCACHECONFIG}
+
+pub using @276e9466edd92f6e {type WINHTTPSECUREDNSSETTING_5e2fe4fc1c14 as WINHTTPSECUREDNSSETTING}
+
+pub using @276e9466edd92f6e {type WINHTTPSTATUSCALLBACK_600c8546f0e2 as WINHTTPSTATUSCALLBACK}
+
+pub using @276e9466edd92f6e {type WINHTTPWEBSOCKETASYNCRESULT_0423a07446df as WINHTTPWEBSOCKETASYNCRESULT}
+
+pub using @276e9466edd92f6e {type WINHTTPWEBSOCKETBUFFERTYPE_a157f7570f31 as WINHTTPWEBSOCKETBUFFERTYPE}
+
+pub using @276e9466edd92f6e {type WINHTTPWEBSOCKETCLOSESTATUS_1a0e7b36dec9 as WINHTTPWEBSOCKETCLOSESTATUS}
+
+pub using @276e9466edd92f6e {type WINHTTPWEBSOCKETOPERATION_a7c67a6bbad3 as WINHTTPWEBSOCKETOPERATION}
+
+pub using @276e9466edd92f6e {type WINHTTPWEBSOCKETSTATUS_5a91b72f0486 as WINHTTPWEBSOCKETSTATUS}
+
+pub using @276e9466edd92f6e {type WinHttpRequest_ff41f8f3dbec as WinHttpRequest}
+
+pub using @276e9466edd92f6e {type WinHttpRequestAutoLogonPolicy_cd86e4af515f as WinHttpRequestAutoLogonPolicy}
+
+pub using @276e9466edd92f6e {type WinHttpRequestOption_81242d354779 as WinHttpRequestOption}
+
+pub using @276e9466edd92f6e {type WinHttpRequestSecureProtocols_9e8038b4819f as WinHttpRequestSecureProtocols}
+
+pub using @276e9466edd92f6e {type WinHttpRequestSslErrorFlags_063fb2fec96f as WinHttpRequestSslErrorFlags}
+
+// Traits
+

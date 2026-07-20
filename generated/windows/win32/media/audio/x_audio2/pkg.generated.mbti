@@ -1,0 +1,826 @@
+// Generated using `moon info`, DON'T EDIT IT
+package "moonbit-community/win32-bindings/windows/win32/media/audio/x_audio2"
+
+import {
+  "moonbit-community/win32-bindings/runtime/core",
+  "moonbit-community/win32-bindings/scc/ab25fbf36198ff79",
+}
+
+// Values
+pub let band_pass_filter : Int
+
+pub fn calc_input_frames_raw(@core.RawAddress, UInt) -> UInt
+
+pub fn calc_output_frames_raw(@core.RawAddress, UInt) -> UInt
+
+pub let cardioid : Int
+
+pub fn commit_changes(@core.RawAddress, UInt) -> Unit raise @core.WindowsError
+
+pub fn commit_changes_raw(@core.RawAddress, UInt) -> Int
+
+pub let cone : Int
+
+pub fn create_audio_reverb(@core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn create_audio_reverb_raw(@core.RawAddress) -> Int
+
+pub fn create_audio_volume_meter(@core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn create_audio_volume_meter_raw(@core.RawAddress) -> Int
+
+pub fn create_fx(@core.RawAddress, @core.RawAddress, @core.RawAddress, UInt) -> Unit raise @core.WindowsError
+
+pub fn create_fx_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, UInt) -> Int
+
+pub fn create_hrtf_apo(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn create_hrtf_apo_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn create_mastering_voice(@core.RawAddress, @core.RawAddress, UInt, UInt, UInt, @core.RawAddress, @core.RawAddress, Int) -> Unit raise @core.WindowsError
+
+pub fn create_mastering_voice_raw(@core.RawAddress, @core.RawAddress, UInt, UInt, UInt, @core.RawAddress, @core.RawAddress, Int) -> Int
+
+pub fn create_source_voice(@core.RawAddress, @core.RawAddress, @core.RawAddress, UInt, Float, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn create_source_voice_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, UInt, Float, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn create_submix_voice(@core.RawAddress, @core.RawAddress, UInt, UInt, UInt, UInt, @core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn create_submix_voice_raw(@core.RawAddress, @core.RawAddress, UInt, UInt, UInt, UInt, @core.RawAddress, @core.RawAddress) -> Int
+
+pub let custom_decay : Int
+
+pub fn destroy_voice_raw(@core.RawAddress) -> Unit
+
+pub fn disable_effect(@core.RawAddress, UInt, UInt) -> Unit raise @core.WindowsError
+
+pub fn disable_effect_raw(@core.RawAddress, UInt, UInt) -> Int
+
+pub fn discontinuity(@core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn discontinuity_raw(@core.RawAddress) -> Int
+
+pub fn enable_effect(@core.RawAddress, UInt, UInt) -> Unit raise @core.WindowsError
+
+pub fn enable_effect_raw(@core.RawAddress, UInt, UInt) -> Int
+
+pub fn exit_loop(@core.RawAddress, UInt) -> Unit raise @core.WindowsError
+
+pub fn exit_loop_raw(@core.RawAddress, UInt) -> Int
+
+pub let facility_xapo : UInt
+
+pub let facility_xaudio2 : UInt
+
+pub fn flush_source_buffers(@core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn flush_source_buffers_raw(@core.RawAddress) -> Int
+
+pub let fxecho_default_delay : UInt
+
+pub let fxecho_default_feedback : UInt
+
+pub let fxecho_default_wetdrymix : UInt
+
+pub let fxecho_max_delay : UInt
+
+pub let fxecho_max_feedback : UInt
+
+pub let fxecho_max_wetdrymix : UInt
+
+pub let fxecho_min_delay : UInt
+
+pub let fxecho_min_feedback : UInt
+
+pub let fxecho_min_wetdrymix : UInt
+
+pub let fxeq_default_bandwidth : UInt
+
+pub let fxeq_default_frequency_center_0 : UInt
+
+pub let fxeq_default_frequency_center_1 : UInt
+
+pub let fxeq_default_frequency_center_2 : UInt
+
+pub let fxeq_default_frequency_center_3 : UInt
+
+pub let fxeq_default_gain : UInt
+
+pub let fxeq_max_bandwidth : UInt
+
+pub let fxeq_max_framerate : UInt
+
+pub let fxeq_max_frequency_center : UInt
+
+pub let fxeq_max_gain : UInt
+
+pub let fxeq_min_bandwidth : UInt
+
+pub let fxeq_min_framerate : UInt
+
+pub let fxeq_min_frequency_center : UInt
+
+pub let fxeq_min_gain : UInt
+
+pub let fxloudness_default_momentary_ms : UInt
+
+pub let fxloudness_default_shortterm_ms : UInt
+
+pub let fxmasteringlimiter_default_loudness : UInt
+
+pub let fxmasteringlimiter_default_release : UInt
+
+pub let fxmasteringlimiter_max_loudness : UInt
+
+pub let fxmasteringlimiter_max_release : UInt
+
+pub let fxmasteringlimiter_min_loudness : UInt
+
+pub let fxmasteringlimiter_min_release : UInt
+
+pub let fxreverb_default_diffusion : UInt
+
+pub let fxreverb_default_roomsize : UInt
+
+pub let fxreverb_max_diffusion : UInt
+
+pub let fxreverb_max_roomsize : UInt
+
+pub let fxreverb_min_diffusion : UInt
+
+pub let fxreverb_min_roomsize : UInt
+
+pub fn get_channel_mask(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn get_channel_mask_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn get_channel_volumes_raw(@core.RawAddress, UInt, @core.RawAddress) -> Unit
+
+pub fn get_effect_parameters(@core.RawAddress, UInt, @core.RawAddress, UInt) -> Unit raise @core.WindowsError
+
+pub fn get_effect_parameters_raw(@core.RawAddress, UInt, @core.RawAddress, UInt) -> Int
+
+pub fn get_effect_state_raw(@core.RawAddress, UInt, @core.RawAddress) -> Unit
+
+pub fn get_filter_parameters_raw(@core.RawAddress, @core.RawAddress) -> Unit
+
+pub fn get_frequency_ratio_raw(@core.RawAddress, @core.RawAddress) -> Unit
+
+pub fn get_output_filter_parameters_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Unit
+
+pub fn get_output_matrix_raw(@core.RawAddress, @core.RawAddress, UInt, UInt, @core.RawAddress) -> Unit
+
+pub fn get_parameters_raw(@core.RawAddress, @core.RawAddress, UInt) -> Unit
+
+pub fn get_performance_data_raw(@core.RawAddress, @core.RawAddress) -> Unit
+
+pub fn get_processing_quantum_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Unit
+
+pub fn get_processor_raw(@core.RawAddress, @core.RawAddress) -> Unit
+
+pub fn get_registration_properties(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn get_registration_properties_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn get_state_raw(@core.RawAddress, @core.RawAddress, UInt) -> Unit
+
+pub fn get_voice_details_raw(@core.RawAddress, @core.RawAddress) -> Unit
+
+pub fn get_volume_raw(@core.RawAddress, @core.RawAddress) -> Unit
+
+pub let high_pass_filter : Int
+
+pub let high_pass_one_pole_filter : Int
+
+pub let hrtf_default_unity_gain_distance : UInt
+
+pub let hrtf_max_gain_limit : UInt
+
+pub let hrtf_min_gain_limit : UInt
+
+pub let hrtf_min_unity_gain_distance : UInt
+
+pub fn initialize(@core.RawAddress, @core.RawAddress, UInt) -> Unit raise @core.WindowsError
+
+pub fn initialize_raw(@core.RawAddress, @core.RawAddress, UInt) -> Int
+
+pub fn is_input_format_supported(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn is_input_format_supported_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn is_output_format_supported(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn is_output_format_supported_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub let large : Int
+
+pub fn lock_for_process(@core.RawAddress, UInt, @core.RawAddress, UInt, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn lock_for_process_raw(@core.RawAddress, UInt, @core.RawAddress, UInt, @core.RawAddress) -> Int
+
+pub let low_pass_filter : Int
+
+pub let low_pass_one_pole_filter : Int
+
+pub let medium : Int
+
+pub let natural_decay : Int
+
+pub let notch_filter : Int
+
+pub let omni_directional : Int
+
+pub fn on_buffer_end_raw(@core.RawAddress, @core.RawAddress) -> Unit
+
+pub fn on_buffer_start_raw(@core.RawAddress, @core.RawAddress) -> Unit
+
+pub fn on_critical_error_raw(@core.RawAddress, Int) -> Unit
+
+pub fn on_loop_end_raw(@core.RawAddress, @core.RawAddress) -> Unit
+
+pub fn on_processing_pass_end_raw(@core.RawAddress) -> Unit
+
+pub fn on_processing_pass_start_raw(@core.RawAddress) -> Unit
+
+pub fn on_stream_end_raw(@core.RawAddress) -> Unit
+
+pub fn on_voice_error_raw(@core.RawAddress, @core.RawAddress, Int) -> Unit
+
+pub fn on_voice_processing_pass_end_raw(@core.RawAddress) -> Unit
+
+pub fn on_voice_processing_pass_start_raw(@core.RawAddress, UInt) -> Unit
+
+pub let outdoors : Int
+
+pub fn process_raw(@core.RawAddress, UInt, @core.RawAddress, UInt, @core.RawAddress, Int) -> Unit
+
+pub let processor1 : UInt
+
+pub let processor10 : UInt
+
+pub let processor11 : UInt
+
+pub let processor12 : UInt
+
+pub let processor13 : UInt
+
+pub let processor14 : UInt
+
+pub let processor15 : UInt
+
+pub let processor16 : UInt
+
+pub let processor17 : UInt
+
+pub let processor18 : UInt
+
+pub let processor19 : UInt
+
+pub let processor2 : UInt
+
+pub let processor20 : UInt
+
+pub let processor21 : UInt
+
+pub let processor22 : UInt
+
+pub let processor23 : UInt
+
+pub let processor24 : UInt
+
+pub let processor25 : UInt
+
+pub let processor26 : UInt
+
+pub let processor27 : UInt
+
+pub let processor28 : UInt
+
+pub let processor29 : UInt
+
+pub let processor3 : UInt
+
+pub let processor30 : UInt
+
+pub let processor31 : UInt
+
+pub let processor32 : UInt
+
+pub let processor4 : UInt
+
+pub let processor5 : UInt
+
+pub let processor6 : UInt
+
+pub let processor7 : UInt
+
+pub let processor8 : UInt
+
+pub let processor9 : UInt
+
+pub fn register_for_callbacks(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn register_for_callbacks_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn reset_raw(@core.RawAddress) -> Unit
+
+pub fn set_channel_volumes(@core.RawAddress, UInt, @core.RawAddress, UInt) -> Unit raise @core.WindowsError
+
+pub fn set_channel_volumes_raw(@core.RawAddress, UInt, @core.RawAddress, UInt) -> Int
+
+pub fn set_debug_configuration_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Unit
+
+pub fn set_effect_chain(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn set_effect_chain_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn set_effect_parameters(@core.RawAddress, UInt, @core.RawAddress, UInt, UInt) -> Unit raise @core.WindowsError
+
+pub fn set_effect_parameters_raw(@core.RawAddress, UInt, @core.RawAddress, UInt, UInt) -> Int
+
+pub fn set_environment(@core.RawAddress, Int) -> Unit raise @core.WindowsError
+
+pub fn set_environment_raw(@core.RawAddress, Int) -> Int
+
+pub fn set_filter_parameters(@core.RawAddress, @core.RawAddress, UInt) -> Unit raise @core.WindowsError
+
+pub fn set_filter_parameters_raw(@core.RawAddress, @core.RawAddress, UInt) -> Int
+
+pub fn set_frequency_ratio(@core.RawAddress, Float, UInt) -> Unit raise @core.WindowsError
+
+pub fn set_frequency_ratio_raw(@core.RawAddress, Float, UInt) -> Int
+
+pub fn set_output_filter_parameters(@core.RawAddress, @core.RawAddress, @core.RawAddress, UInt) -> Unit raise @core.WindowsError
+
+pub fn set_output_filter_parameters_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, UInt) -> Int
+
+pub fn set_output_matrix(@core.RawAddress, @core.RawAddress, UInt, UInt, @core.RawAddress, UInt) -> Unit raise @core.WindowsError
+
+pub fn set_output_matrix_raw(@core.RawAddress, @core.RawAddress, UInt, UInt, @core.RawAddress, UInt) -> Int
+
+pub fn set_output_voices(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn set_output_voices_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn set_parameters_raw(@core.RawAddress, @core.RawAddress, UInt) -> Unit
+
+pub fn set_source_gain(@core.RawAddress, Float) -> Unit raise @core.WindowsError
+
+pub fn set_source_gain_raw(@core.RawAddress, Float) -> Int
+
+pub fn set_source_orientation(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn set_source_orientation_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn set_source_position(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn set_source_position_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn set_source_sample_rate(@core.RawAddress, UInt) -> Unit raise @core.WindowsError
+
+pub fn set_source_sample_rate_raw(@core.RawAddress, UInt) -> Int
+
+pub fn set_volume(@core.RawAddress, Float, UInt) -> Unit raise @core.WindowsError
+
+pub fn set_volume_raw(@core.RawAddress, Float, UInt) -> Int
+
+pub let small : Int
+
+pub let speaker_mono : UInt
+
+pub fn start(@core.RawAddress, UInt, UInt) -> Unit raise @core.WindowsError
+
+pub fn start_engine(@core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn start_engine_raw(@core.RawAddress) -> Int
+
+pub fn start_raw(@core.RawAddress, UInt, UInt) -> Int
+
+pub fn stop(@core.RawAddress, UInt, UInt) -> Unit raise @core.WindowsError
+
+pub fn stop_engine_raw(@core.RawAddress) -> Unit
+
+pub fn stop_raw(@core.RawAddress, UInt, UInt) -> Int
+
+pub fn submit_source_buffer(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn submit_source_buffer_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn unlock_for_process_raw(@core.RawAddress) -> Unit
+
+pub fn unregister_for_callbacks_raw(@core.RawAddress, @core.RawAddress) -> Unit
+
+pub let x3_daudio_2_pi : UInt
+
+pub let x3_daudio_calculate_delay : UInt
+
+pub let x3_daudio_calculate_doppler : UInt
+
+pub let x3_daudio_calculate_emitter_angle : UInt
+
+pub let x3_daudio_calculate_lpf_direct : UInt
+
+pub let x3_daudio_calculate_lpf_reverb : UInt
+
+pub let x3_daudio_calculate_matrix : UInt
+
+pub let x3_daudio_calculate_redirect_to_lfe : UInt
+
+pub let x3_daudio_calculate_reverb : UInt
+
+pub let x3_daudio_calculate_zerocenter : UInt
+
+pub let x3_daudio_handle_bytesize : UInt
+
+pub let x3_daudio_pi : UInt
+
+pub let x3_daudio_speed_of_sound : UInt
+
+pub fn x_audio2_create_with_version_info(@core.RawAddress, UInt, UInt, UInt) -> Unit raise @core.WindowsError
+
+pub fn x_audio2_create_with_version_info_raw(@core.RawAddress, UInt, UInt, UInt) -> Int
+
+pub let xapo_buffer_silent : Int
+
+pub let xapo_buffer_valid : Int
+
+pub let xapo_e_format_unsupported : Int
+
+pub let xapo_flag_bitspersample_must_match : UInt
+
+pub let xapo_flag_buffercount_must_match : UInt
+
+pub let xapo_flag_channels_must_match : UInt
+
+pub let xapo_flag_framerate_must_match : UInt
+
+pub let xapo_flag_inplace_required : UInt
+
+pub let xapo_flag_inplace_supported : UInt
+
+pub let xapo_max_channels : UInt
+
+pub let xapo_max_framerate : UInt
+
+pub let xapo_min_channels : UInt
+
+pub let xapo_min_framerate : UInt
+
+pub let xapo_registration_string_length : UInt
+
+pub let xaudio2_1024_quantum : UInt
+
+pub let xaudio2_any_processor : UInt
+
+pub let xaudio2_commit_all : UInt
+
+pub let xaudio2_commit_now : UInt
+
+pub let xaudio2_d_dll : String
+
+pub let xaudio2_d_dll_a : String
+
+pub let xaudio2_d_dll_w : String
+
+pub let xaudio2_debug_engine : UInt
+
+pub let xaudio2_default_channels : UInt
+
+pub let xaudio2_default_filter_frequency : UInt
+
+pub let xaudio2_default_filter_oneoverq : UInt
+
+pub let xaudio2_default_freq_ratio : UInt
+
+pub let xaudio2_default_processor : UInt
+
+pub let xaudio2_default_samplerate : UInt
+
+pub let xaudio2_dll : String
+
+pub let xaudio2_dll_a : String
+
+pub let xaudio2_dll_w : String
+
+pub let xaudio2_e_device_invalidated : Int
+
+pub let xaudio2_e_invalid_call : Int
+
+pub let xaudio2_e_xapo_creation_failed : Int
+
+pub let xaudio2_e_xma_decoder_error : Int
+
+pub let xaudio2_end_of_stream : UInt
+
+pub let xaudio2_fx_reverb_default_7_point1_rear_delay : UInt
+
+pub let xaudio2_fx_reverb_default_7_point1_side_delay : UInt
+
+pub let xaudio2_fx_reverb_default_decay_time : UInt
+
+pub let xaudio2_fx_reverb_default_density : UInt
+
+pub let xaudio2_fx_reverb_default_disable_late_field : UInt
+
+pub let xaudio2_fx_reverb_default_early_diffusion : UInt
+
+pub let xaudio2_fx_reverb_default_high_eq_cutoff : UInt
+
+pub let xaudio2_fx_reverb_default_high_eq_gain : UInt
+
+pub let xaudio2_fx_reverb_default_late_diffusion : UInt
+
+pub let xaudio2_fx_reverb_default_low_eq_cutoff : UInt
+
+pub let xaudio2_fx_reverb_default_low_eq_gain : UInt
+
+pub let xaudio2_fx_reverb_default_position : UInt
+
+pub let xaudio2_fx_reverb_default_position_matrix : UInt
+
+pub let xaudio2_fx_reverb_default_rear_delay : UInt
+
+pub let xaudio2_fx_reverb_default_reflections_delay : UInt
+
+pub let xaudio2_fx_reverb_default_reflections_gain : UInt
+
+pub let xaudio2_fx_reverb_default_reverb_delay : UInt
+
+pub let xaudio2_fx_reverb_default_reverb_gain : UInt
+
+pub let xaudio2_fx_reverb_default_room_filter_freq : UInt
+
+pub let xaudio2_fx_reverb_default_room_filter_hf : UInt
+
+pub let xaudio2_fx_reverb_default_room_filter_main : UInt
+
+pub let xaudio2_fx_reverb_default_room_size : UInt
+
+pub let xaudio2_fx_reverb_default_wet_dry_mix : UInt
+
+pub let xaudio2_fx_reverb_max_7_point1_rear_delay : UInt
+
+pub let xaudio2_fx_reverb_max_7_point1_side_delay : UInt
+
+pub let xaudio2_fx_reverb_max_density : UInt
+
+pub let xaudio2_fx_reverb_max_diffusion : UInt
+
+pub let xaudio2_fx_reverb_max_framerate : UInt
+
+pub let xaudio2_fx_reverb_max_high_eq_cutoff : UInt
+
+pub let xaudio2_fx_reverb_max_high_eq_gain : UInt
+
+pub let xaudio2_fx_reverb_max_low_eq_cutoff : UInt
+
+pub let xaudio2_fx_reverb_max_low_eq_gain : UInt
+
+pub let xaudio2_fx_reverb_max_position : UInt
+
+pub let xaudio2_fx_reverb_max_rear_delay : UInt
+
+pub let xaudio2_fx_reverb_max_reflections_delay : UInt
+
+pub let xaudio2_fx_reverb_max_reflections_gain : UInt
+
+pub let xaudio2_fx_reverb_max_reverb_delay : UInt
+
+pub let xaudio2_fx_reverb_max_reverb_gain : UInt
+
+pub let xaudio2_fx_reverb_max_room_filter_freq : UInt
+
+pub let xaudio2_fx_reverb_max_room_filter_hf : UInt
+
+pub let xaudio2_fx_reverb_max_room_filter_main : UInt
+
+pub let xaudio2_fx_reverb_max_room_size : UInt
+
+pub let xaudio2_fx_reverb_max_wet_dry_mix : UInt
+
+pub let xaudio2_fx_reverb_min_7_point1_rear_delay : UInt
+
+pub let xaudio2_fx_reverb_min_7_point1_side_delay : UInt
+
+pub let xaudio2_fx_reverb_min_decay_time : UInt
+
+pub let xaudio2_fx_reverb_min_density : UInt
+
+pub let xaudio2_fx_reverb_min_diffusion : UInt
+
+pub let xaudio2_fx_reverb_min_framerate : UInt
+
+pub let xaudio2_fx_reverb_min_high_eq_cutoff : UInt
+
+pub let xaudio2_fx_reverb_min_high_eq_gain : UInt
+
+pub let xaudio2_fx_reverb_min_low_eq_cutoff : UInt
+
+pub let xaudio2_fx_reverb_min_low_eq_gain : UInt
+
+pub let xaudio2_fx_reverb_min_position : UInt
+
+pub let xaudio2_fx_reverb_min_rear_delay : UInt
+
+pub let xaudio2_fx_reverb_min_reflections_delay : UInt
+
+pub let xaudio2_fx_reverb_min_reflections_gain : UInt
+
+pub let xaudio2_fx_reverb_min_reverb_delay : UInt
+
+pub let xaudio2_fx_reverb_min_reverb_gain : UInt
+
+pub let xaudio2_fx_reverb_min_room_filter_freq : UInt
+
+pub let xaudio2_fx_reverb_min_room_filter_hf : UInt
+
+pub let xaudio2_fx_reverb_min_room_filter_main : UInt
+
+pub let xaudio2_fx_reverb_min_room_size : UInt
+
+pub let xaudio2_fx_reverb_min_wet_dry_mix : UInt
+
+pub let xaudio2_log_api_calls : UInt
+
+pub let xaudio2_log_detail : UInt
+
+pub let xaudio2_log_errors : UInt
+
+pub let xaudio2_log_func_calls : UInt
+
+pub let xaudio2_log_info : UInt
+
+pub let xaudio2_log_locks : UInt
+
+pub let xaudio2_log_memory : UInt
+
+pub let xaudio2_log_streaming : UInt
+
+pub let xaudio2_log_timing : UInt
+
+pub let xaudio2_log_warnings : UInt
+
+pub let xaudio2_loop_infinite : UInt
+
+pub let xaudio2_max_audio_channels : UInt
+
+pub let xaudio2_max_buffer_bytes : UInt
+
+pub let xaudio2_max_buffers_system : UInt
+
+pub let xaudio2_max_filter_frequency : UInt
+
+pub let xaudio2_max_filter_oneoverq : UInt
+
+pub let xaudio2_max_freq_ratio : UInt
+
+pub let xaudio2_max_instances : UInt
+
+pub let xaudio2_max_loop_count : UInt
+
+pub let xaudio2_max_queued_buffers : UInt
+
+pub let xaudio2_max_ratio_times_rate_xma_mono : UInt
+
+pub let xaudio2_max_ratio_times_rate_xma_multichannel : UInt
+
+pub let xaudio2_max_sample_rate : UInt
+
+pub let xaudio2_max_volume_level : UInt
+
+pub let xaudio2_min_sample_rate : UInt
+
+pub let xaudio2_no_loop_region : UInt
+
+pub let xaudio2_no_virtual_audio_client : UInt
+
+pub let xaudio2_play_tails : UInt
+
+pub let xaudio2_quantum_denominator : UInt
+
+pub let xaudio2_quantum_numerator : UInt
+
+pub let xaudio2_send_usefilter : UInt
+
+pub let xaudio2_stop_engine_when_idle : UInt
+
+pub let xaudio2_use_default_processor : UInt
+
+pub let xaudio2_voice_nopitch : UInt
+
+pub let xaudio2_voice_nosamplesplayed : UInt
+
+pub let xaudio2_voice_nosrc : UInt
+
+pub let xaudio2_voice_usefilter : UInt
+
+// Errors
+
+// Types and methods
+
+// Type aliases
+pub using @ab25fbf36198ff79 {type AudioReverb_5d401861021e as AudioReverb}
+
+pub using @ab25fbf36198ff79 {type AudioVolumeMeter_7838215c5e45 as AudioVolumeMeter}
+
+pub using @ab25fbf36198ff79 {type FXECHOINITDATA_acebdc0c6f0e as FXECHOINITDATA}
+
+pub using @ab25fbf36198ff79 {type FXECHOPARAMETERS_4b88a49cce36 as FXECHOPARAMETERS}
+
+pub using @ab25fbf36198ff79 {type FXEQ_7bb9fb177101 as FXEQ}
+
+pub using @ab25fbf36198ff79 {type FXEQPARAMETERS_661418e62b49 as FXEQPARAMETERS}
+
+pub using @ab25fbf36198ff79 {type FXEcho_ed66007831d9 as FXEcho}
+
+pub using @ab25fbf36198ff79 {type FXMASTERINGLIMITERPARAMETERS_a6e09222470b as FXMASTERINGLIMITERPARAMETERS}
+
+pub using @ab25fbf36198ff79 {type FXMasteringLimiter_0600676a9564 as FXMasteringLimiter}
+
+pub using @ab25fbf36198ff79 {type FXREVERBPARAMETERS_4910ec48da71 as FXREVERBPARAMETERS}
+
+pub using @ab25fbf36198ff79 {type FXReverb_84794f92cdfa as FXReverb}
+
+pub using @ab25fbf36198ff79 {type HrtfApoInit_1a360152a81f as HrtfApoInit}
+
+pub using @ab25fbf36198ff79 {type HrtfDirectivity_e78c24a971dd as HrtfDirectivity}
+
+pub using @ab25fbf36198ff79 {type HrtfDirectivityCardioid_230c757b6f09 as HrtfDirectivityCardioid}
+
+pub using @ab25fbf36198ff79 {type HrtfDirectivityCone_46ef988bc3b0 as HrtfDirectivityCone}
+
+pub using @ab25fbf36198ff79 {type HrtfDirectivityType_74c4f4fd7d7a as HrtfDirectivityType}
+
+pub using @ab25fbf36198ff79 {type HrtfDistanceDecay_78fcdfa52627 as HrtfDistanceDecay}
+
+pub using @ab25fbf36198ff79 {type HrtfDistanceDecayType_aacf0d42f12c as HrtfDistanceDecayType}
+
+pub using @ab25fbf36198ff79 {type HrtfEnvironment_dba248518587 as HrtfEnvironment}
+
+pub using @ab25fbf36198ff79 {type HrtfOrientation_3572273e46fb as HrtfOrientation}
+
+pub using @ab25fbf36198ff79 {type HrtfPosition_6567c9bc15ba as HrtfPosition}
+
+pub using @ab25fbf36198ff79 {type IXAPO_1a643c000d19 as IXAPO}
+
+pub using @ab25fbf36198ff79 {type IXAPOHrtfParameters_5f0d7de79355 as IXAPOHrtfParameters}
+
+pub using @ab25fbf36198ff79 {type IXAPOParameters_a35d536e948f as IXAPOParameters}
+
+pub using @ab25fbf36198ff79 {type IXAudio2_241822f96572 as IXAudio2}
+
+pub using @ab25fbf36198ff79 {type IXAudio2EngineCallback_469c4b1b16e5 as IXAudio2EngineCallback}
+
+pub using @ab25fbf36198ff79 {type IXAudio2Extension_747ec6c1caba as IXAudio2Extension}
+
+pub using @ab25fbf36198ff79 {type IXAudio2MasteringVoice_25067b19a745 as IXAudio2MasteringVoice}
+
+pub using @ab25fbf36198ff79 {type IXAudio2SourceVoice_6dc2401de45e as IXAudio2SourceVoice}
+
+pub using @ab25fbf36198ff79 {type IXAudio2SubmixVoice_843210223602 as IXAudio2SubmixVoice}
+
+pub using @ab25fbf36198ff79 {type IXAudio2Voice_7cdef7ec7a1f as IXAudio2Voice}
+
+pub using @ab25fbf36198ff79 {type IXAudio2VoiceCallback_cc57e487e7cd as IXAudio2VoiceCallback}
+
+pub using @ab25fbf36198ff79 {type XAPOBUFFERFLAGS_e14426eb2f68 as XAPOBUFFERFLAGS}
+
+pub using @ab25fbf36198ff79 {type XAPOLOCKFORPROCESSPARAMETERS_811a1f7caecf as XAPOLOCKFORPROCESSPARAMETERS}
+
+pub using @ab25fbf36198ff79 {type XAPOPROCESSBUFFERPARAMETERS_054515e06797 as XAPOPROCESSBUFFERPARAMETERS}
+
+pub using @ab25fbf36198ff79 {type XAPOREGISTRATIONPROPERTIES_bc1324af7fa0 as XAPOREGISTRATIONPROPERTIES}
+
+pub using @ab25fbf36198ff79 {type XAUDIO2BUFFER_6e66f56c4a8b as XAUDIO2BUFFER}
+
+pub using @ab25fbf36198ff79 {type XAUDIO2BUFFERWMA_2ddff68388c8 as XAUDIO2BUFFERWMA}
+
+pub using @ab25fbf36198ff79 {type XAUDIO2DEBUGCONFIGURATION_331953d0713d as XAUDIO2DEBUGCONFIGURATION}
+
+pub using @ab25fbf36198ff79 {type XAUDIO2EFFECTCHAIN_3fbec6d79820 as XAUDIO2EFFECTCHAIN}
+
+pub using @ab25fbf36198ff79 {type XAUDIO2EFFECTDESCRIPTOR_856c487ee30f as XAUDIO2EFFECTDESCRIPTOR}
+
+pub using @ab25fbf36198ff79 {type XAUDIO2FILTERPARAMETERS_d6e1fda83cf2 as XAUDIO2FILTERPARAMETERS}
+
+pub using @ab25fbf36198ff79 {type XAUDIO2FILTERTYPE_89e80cc40ba6 as XAUDIO2FILTERTYPE}
+
+pub using @ab25fbf36198ff79 {type XAUDIO2FXREVERBI3DL2PARAMETERS_393f01b44163 as XAUDIO2FXREVERBI3DL2PARAMETERS}
+
+pub using @ab25fbf36198ff79 {type XAUDIO2FXREVERBPARAMETERS_e8c9ff60a82c as XAUDIO2FXREVERBPARAMETERS}
+
+pub using @ab25fbf36198ff79 {type XAUDIO2FXVOLUMEMETERLEVELS_acc58a6567f2 as XAUDIO2FXVOLUMEMETERLEVELS}
+
+pub using @ab25fbf36198ff79 {type XAUDIO2PERFORMANCEDATA_da6c7e45b460 as XAUDIO2PERFORMANCEDATA}
+
+pub using @ab25fbf36198ff79 {type XAUDIO2SENDDESCRIPTOR_40fb1815f59b as XAUDIO2SENDDESCRIPTOR}
+
+pub using @ab25fbf36198ff79 {type XAUDIO2VOICEDETAILS_4fdde619297f as XAUDIO2VOICEDETAILS}
+
+pub using @ab25fbf36198ff79 {type XAUDIO2VOICESENDS_2e5d54c22b4f as XAUDIO2VOICESENDS}
+
+pub using @ab25fbf36198ff79 {type XAUDIO2VOICESTATE_17de278c7543 as XAUDIO2VOICESTATE}
+
+// Traits
+

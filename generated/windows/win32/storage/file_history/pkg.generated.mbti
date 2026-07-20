@@ -1,0 +1,324 @@
+// Generated using `moon info`, DON'T EDIT IT
+package "moonbit-community/win32-bindings/windows/win32/storage/file_history"
+
+import {
+  "moonbit-community/win32-bindings/runtime/core",
+  "moonbit-community/win32-bindings/scc/48acc7db852c6d4a",
+}
+
+// Values
+pub fn add_remove_exclude_rule(@core.RawAddress, Int, Int, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn add_remove_exclude_rule_raw(@core.RawAddress, Int, Int, @core.RawAddress) -> Int
+
+pub let backup_cancelled : Int
+
+pub let backup_invalid_stop_reason : Int
+
+pub let backup_limit_user_busy_machine_on_ac : Int
+
+pub let backup_limit_user_busy_machine_on_dc : Int
+
+pub let backup_limit_user_idle_machine_on_dc : Int
+
+pub fn change_default_target_recommendation(@core.RawAddress, Int) -> Unit raise @core.WindowsError
+
+pub fn change_default_target_recommendation_raw(@core.RawAddress, Int) -> Int
+
+pub fn create_default_configuration(@core.RawAddress, Int) -> Unit raise @core.WindowsError
+
+pub fn create_default_configuration_raw(@core.RawAddress, Int) -> Int
+
+pub let fh_access_denied : Int
+
+pub let fh_current_default : Int
+
+pub let fh_drive_fixed : Int
+
+pub let fh_drive_remote : Int
+
+pub let fh_drive_removable : Int
+
+pub let fh_drive_unknown : Int
+
+pub let fh_folder : Int
+
+pub let fh_frequency : Int
+
+pub let fh_invalid_drive_type : Int
+
+pub let fh_library : Int
+
+pub let fh_namespace_exists : Int
+
+pub let fh_read_only_permission : Int
+
+pub let fh_retention_age : Int
+
+pub let fh_retention_age_based : Int
+
+pub let fh_retention_disabled : Int
+
+pub let fh_retention_type : Int
+
+pub let fh_retention_unlimited : Int
+
+pub fn fh_service_block_backup(@core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn fh_service_block_backup_raw(@core.RawAddress) -> Int
+
+pub fn fh_service_close_pipe(@core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn fh_service_close_pipe_raw(@core.RawAddress) -> Int
+
+pub fn fh_service_open_pipe(Int, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn fh_service_open_pipe_raw(Int, @core.RawAddress) -> Int
+
+pub fn fh_service_reload_configuration(@core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn fh_service_reload_configuration_raw(@core.RawAddress) -> Int
+
+pub fn fh_service_start_backup(@core.RawAddress, Int) -> Unit raise @core.WindowsError
+
+pub fn fh_service_start_backup_raw(@core.RawAddress, Int) -> Int
+
+pub fn fh_service_stop_backup(@core.RawAddress, Int) -> Unit raise @core.WindowsError
+
+pub fn fh_service_stop_backup_raw(@core.RawAddress, Int) -> Int
+
+pub fn fh_service_unblock_backup(@core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn fh_service_unblock_backup_raw(@core.RawAddress) -> Int
+
+pub let fh_state_backup_not_supported : UInt
+
+pub let fh_state_disabled_by_gp : UInt
+
+pub let fh_state_fatal_config_error : UInt
+
+pub let fh_state_migrating : UInt
+
+pub let fh_state_no_error : UInt
+
+pub let fh_state_not_tracked : UInt
+
+pub let fh_state_off : UInt
+
+pub let fh_state_rehydrating : UInt
+
+pub let fh_state_running : UInt
+
+pub let fh_state_staging_full : UInt
+
+pub let fh_state_target_absent : UInt
+
+pub let fh_state_target_access_denied : UInt
+
+pub let fh_state_target_fs_limitation : UInt
+
+pub let fh_state_target_full : UInt
+
+pub let fh_state_target_full_retention_max : UInt
+
+pub let fh_state_target_low_space : UInt
+
+pub let fh_state_target_low_space_retention_max : UInt
+
+pub let fh_state_target_volume_dirty : UInt
+
+pub let fh_state_too_much_behind : UInt
+
+pub let fh_status_disabled : Int
+
+pub let fh_status_disabled_by_gp : Int
+
+pub let fh_status_enabled : Int
+
+pub let fh_status_rehydrating : Int
+
+pub let fh_target_drive_type : Int
+
+pub let fh_target_name : Int
+
+pub let fh_target_part_of_library : Int
+
+pub let fh_target_url : Int
+
+pub let fh_valid_target : Int
+
+pub let fhcfg_e_config_already_exists : Int
+
+pub let fhcfg_e_config_file_not_found : Int
+
+pub let fhcfg_e_configuration_previously_loaded : Int
+
+pub let fhcfg_e_corrupt_config_file : Int
+
+pub let fhcfg_e_invalid_rehydration_state : Int
+
+pub let fhcfg_e_legacy_backup_not_found : Int
+
+pub let fhcfg_e_legacy_backup_user_excluded : Int
+
+pub let fhcfg_e_legacy_target_unsupported : Int
+
+pub let fhcfg_e_legacy_target_validation_unsupported : Int
+
+pub let fhcfg_e_no_valid_configuration_loaded : Int
+
+pub let fhcfg_e_recommendation_change_not_allowed : Int
+
+pub let fhcfg_e_target_cannot_be_used : Int
+
+pub let fhcfg_e_target_not_configured : Int
+
+pub let fhcfg_e_target_not_connected : Int
+
+pub let fhcfg_e_target_not_enough_free_space : Int
+
+pub let fhcfg_e_target_rehydrated_elsewhere : Int
+
+pub let fhcfg_e_target_verification_failed : Int
+
+pub let fhsvc_e_backup_blocked : Int
+
+pub let fhsvc_e_config_disabled : Int
+
+pub let fhsvc_e_config_disabled_gp : Int
+
+pub let fhsvc_e_config_rehydrating : Int
+
+pub let fhsvc_e_fatal_config_error : Int
+
+pub let fhsvc_e_not_configured : Int
+
+pub fn get_backup_status(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn get_backup_status_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn get_configuration_details(@core.RawAddress, UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn get_configuration_details_raw(@core.RawAddress, UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn get_default_target(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn get_default_target_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn get_include_exclude_rules(@core.RawAddress, Int, Int, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn get_include_exclude_rules_raw(@core.RawAddress, Int, Int, @core.RawAddress) -> Int
+
+pub fn get_item(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn get_item_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn get_local_policy(@core.RawAddress, Int, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn get_local_policy_raw(@core.RawAddress, Int, @core.RawAddress) -> Int
+
+pub fn get_numerical_property(@core.RawAddress, Int, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn get_numerical_property_raw(@core.RawAddress, Int, @core.RawAddress) -> Int
+
+pub fn get_string_property(@core.RawAddress, Int, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn get_string_property_raw(@core.RawAddress, Int, @core.RawAddress) -> Int
+
+pub fn load_configuration(@core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn load_configuration_raw(@core.RawAddress) -> Int
+
+pub let max_backup_status : Int
+
+pub let max_local_policy : Int
+
+pub let max_protected_item_category : Int
+
+pub let max_retention_type : Int
+
+pub let max_target_property : Int
+
+pub let max_validation_result : Int
+
+pub fn move_to_next_item(@core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn move_to_next_item_raw(@core.RawAddress) -> Int
+
+pub fn perform_reassociation(@core.RawAddress, Int) -> Unit raise @core.WindowsError
+
+pub fn perform_reassociation_raw(@core.RawAddress, Int) -> Int
+
+pub fn provision_and_set_new_target(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn provision_and_set_new_target_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn query_protection_status(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn query_protection_status_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn save_configuration(@core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn save_configuration_raw(@core.RawAddress) -> Int
+
+pub fn scan_target_for_configurations(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn scan_target_for_configurations_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn select_configuration(@core.RawAddress, UInt) -> Unit raise @core.WindowsError
+
+pub fn select_configuration_raw(@core.RawAddress, UInt) -> Int
+
+pub fn set_backup_status(@core.RawAddress, Int) -> Unit raise @core.WindowsError
+
+pub fn set_backup_status_raw(@core.RawAddress, Int) -> Int
+
+pub fn set_local_policy(@core.RawAddress, Int, UInt64) -> Unit raise @core.WindowsError
+
+pub fn set_local_policy_raw(@core.RawAddress, Int, UInt64) -> Int
+
+pub fn validate_target_466fbe6525(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn validate_target_466fbe6525_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn validate_target_dd1e758d70(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn validate_target_dd1e758d70_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+// Errors
+
+// Types and methods
+
+// Type aliases
+pub using @48acc7db852c6d4a {type FHBACKUPSTATUS_750af3f7c843 as FHBACKUPSTATUS}
+
+pub using @48acc7db852c6d4a {type FHDEVICEVALIDATIONRESULT_23d0053180ad as FHDEVICEVALIDATIONRESULT}
+
+pub using @48acc7db852c6d4a {type FHLOCALPOLICYTYPE_c6bfdbfb332c as FHLOCALPOLICYTYPE}
+
+pub using @48acc7db852c6d4a {type FHPROTECTEDITEMCATEGORY_332144ed8b60 as FHPROTECTEDITEMCATEGORY}
+
+pub using @48acc7db852c6d4a {type FHRETENTIONTYPES_bd963a00a312 as FHRETENTIONTYPES}
+
+pub using @48acc7db852c6d4a {type FHSERVICEPIPEHANDLE_4d6473109c3b as FHSERVICEPIPEHANDLE}
+
+pub using @48acc7db852c6d4a {type FHTARGETDRIVETYPES_94f8e92d1c19 as FHTARGETDRIVETYPES}
+
+pub using @48acc7db852c6d4a {type FHTARGETPROPERTYTYPE_075b37591074 as FHTARGETPROPERTYTYPE}
+
+pub using @48acc7db852c6d4a {type FhBackupStopReason_5dd580d7eac1 as FhBackupStopReason}
+
+pub using @48acc7db852c6d4a {type FhConfigMgr_89977eb23972 as FhConfigMgr}
+
+pub using @48acc7db852c6d4a {type FhReassociation_e69e428e9889 as FhReassociation}
+
+pub using @48acc7db852c6d4a {type IFhConfigMgr_6278e40a86ba as IFhConfigMgr}
+
+pub using @48acc7db852c6d4a {type IFhReassociation_cafdbafb8a4a as IFhReassociation}
+
+pub using @48acc7db852c6d4a {type IFhScopeIterator_41c72d77c201 as IFhScopeIterator}
+
+pub using @48acc7db852c6d4a {type IFhTarget_78accc7eb95d as IFhTarget}
+
+// Traits
+

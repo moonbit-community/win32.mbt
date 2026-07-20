@@ -1,0 +1,134 @@
+// Generated using `moon info`, DON'T EDIT IT
+package "moonbit-community/win32-bindings/windows/devices/spi/provider"
+
+import {
+  "moonbit-community/win32-bindings/runtime/com",
+  "moonbit-community/win32-bindings/runtime/core",
+  "moonbit-community/win32-bindings/scc/6952ffe46bbb0bbb",
+  "moonbitlang/core/ref",
+}
+
+// Values
+pub fn activatable_factory(@core.Guid) -> @com.ComPtr[@com.IInspectable] raise @core.WindowsError
+
+pub let chip_select_line_0ec9662876 : String
+
+pub let chip_select_line_7a5205ec21 : String
+
+pub let clock_frequency_914c50e3e5 : String
+
+pub let clock_frequency_b2f3dfe3e6 : String
+
+pub let connection_settings : String
+
+pub fn create_raw(@core.RawAddress, Int, @ref.Ref[UInt64]) -> Int
+
+pub let data_bit_length_24b4954542 : String
+
+pub let data_bit_length_5719f8712c : String
+
+pub let device_id : String
+
+pub let exclusive : Int
+
+pub fn get_chip_select_line(@core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn get_chip_select_line_raw(@core.RawAddress, @ref.Ref[Int]) -> Int
+
+pub fn get_clock_frequency(@core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn get_clock_frequency_raw(@core.RawAddress, @ref.Ref[Int]) -> Int
+
+pub fn get_connection_settings_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_controllers_async_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_data_bit_length(@core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn get_data_bit_length_raw(@core.RawAddress, @ref.Ref[Int]) -> Int
+
+pub fn get_device_id_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_device_provider_raw(@core.RawAddress, @core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_mode(@core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn get_mode_raw(@core.RawAddress, @ref.Ref[Int]) -> Int
+
+pub fn get_sharing_mode(@core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn get_sharing_mode_raw(@core.RawAddress, @ref.Ref[Int]) -> Int
+
+pub let mode0 : Int
+
+pub let mode1 : Int
+
+pub let mode2 : Int
+
+pub let mode3 : Int
+
+pub let mode_1772d0a91a : String
+
+pub let mode_43f63a0c87 : String
+
+pub fn put_chip_select_line(@core.RawAddress, Int) -> Unit raise @core.WindowsError
+
+pub fn put_chip_select_line_raw(@core.RawAddress, Int) -> Int
+
+pub fn put_clock_frequency(@core.RawAddress, Int) -> Unit raise @core.WindowsError
+
+pub fn put_clock_frequency_raw(@core.RawAddress, Int) -> Int
+
+pub fn put_data_bit_length(@core.RawAddress, Int) -> Unit raise @core.WindowsError
+
+pub fn put_data_bit_length_raw(@core.RawAddress, Int) -> Int
+
+pub fn put_mode(@core.RawAddress, Int) -> Unit raise @core.WindowsError
+
+pub fn put_mode_raw(@core.RawAddress, Int) -> Int
+
+pub fn put_sharing_mode(@core.RawAddress, Int) -> Unit raise @core.WindowsError
+
+pub fn put_sharing_mode_raw(@core.RawAddress, Int) -> Int
+
+pub fn read(@core.RawAddress, UInt, Bytes) -> Unit raise @core.WindowsError
+
+pub fn read_raw(@core.RawAddress, UInt, Bytes) -> Int
+
+pub let shared : Int
+
+pub let sharing_mode_ac7cf06e96 : String
+
+pub let sharing_mode_cdafebb745 : String
+
+pub fn transfer_full_duplex(@core.RawAddress, UInt, Bytes, UInt, Bytes) -> Unit raise @core.WindowsError
+
+pub fn transfer_full_duplex_raw(@core.RawAddress, UInt, Bytes, UInt, Bytes) -> Int
+
+pub fn transfer_sequential(@core.RawAddress, UInt, Bytes, UInt, Bytes) -> Unit raise @core.WindowsError
+
+pub fn transfer_sequential_raw(@core.RawAddress, UInt, Bytes, UInt, Bytes) -> Int
+
+pub fn write(@core.RawAddress, UInt, Bytes) -> Unit raise @core.WindowsError
+
+pub fn write_raw(@core.RawAddress, UInt, Bytes) -> Int
+
+// Errors
+
+// Types and methods
+
+// Type aliases
+pub using @6952ffe46bbb0bbb {type ISpiControllerProvider_2b9b539a1642 as ISpiControllerProvider}
+
+pub using @6952ffe46bbb0bbb {type ISpiDeviceProvider_ee8b6087e5df as ISpiDeviceProvider}
+
+pub using @6952ffe46bbb0bbb {type ISpiProvider_1460b2abe5e3 as ISpiProvider}
+
+pub using @6952ffe46bbb0bbb {type ProviderSpiConnectionSettings_dbf35b079d3c as ProviderSpiConnectionSettings}
+
+pub using @6952ffe46bbb0bbb {type ProviderSpiMode_46870fd0ed4a as ProviderSpiMode}
+
+pub using @6952ffe46bbb0bbb {type ProviderSpiSharingMode_652d9e18dcab as ProviderSpiSharingMode}
+
+// Traits
+

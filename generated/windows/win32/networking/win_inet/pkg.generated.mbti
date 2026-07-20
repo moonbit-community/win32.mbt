@@ -1,0 +1,3110 @@
+// Generated using `moon info`, DON'T EDIT IT
+package "moonbit-community/win32-bindings/windows/win32/networking/win_inet"
+
+import {
+  "moonbit-community/win32-bindings/runtime/core",
+  "moonbit-community/win32-bindings/scc/02de1f47977223f1",
+}
+
+// Values
+pub let any_cache_entry : UInt
+
+pub fn app_cache_check_manifest_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn app_cache_close_handle_raw(@core.RawAddress) -> Unit
+
+pub fn app_cache_create_and_commit_file_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, UInt) -> UInt
+
+pub fn app_cache_delete_group_raw(@core.RawAddress) -> UInt
+
+pub fn app_cache_delete_ie_group_raw(@core.RawAddress) -> UInt
+
+pub fn app_cache_duplicate_handle_raw(@core.RawAddress, @core.RawAddress) -> UInt
+
+pub let app_cache_entry_type_explicit : UInt
+
+pub let app_cache_entry_type_fallback : UInt
+
+pub let app_cache_entry_type_foreign : UInt
+
+pub let app_cache_entry_type_manifest : UInt
+
+pub let app_cache_entry_type_master : UInt
+
+pub fn app_cache_finalize_raw(@core.RawAddress, @core.RawAddress, UInt, @core.RawAddress) -> UInt
+
+pub let app_cache_finalize_state_complete : Int
+
+pub let app_cache_finalize_state_incomplete : Int
+
+pub let app_cache_finalize_state_manifest_change : Int
+
+pub fn app_cache_free_download_list_raw(@core.RawAddress) -> Unit
+
+pub fn app_cache_free_group_list_raw(@core.RawAddress) -> Unit
+
+pub fn app_cache_free_ie_space_raw(Bytes) -> UInt
+
+pub fn app_cache_free_space_raw(Bytes) -> UInt
+
+pub fn app_cache_get_download_list_raw(@core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn app_cache_get_fallback_url_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn app_cache_get_group_list_raw(@core.RawAddress) -> UInt
+
+pub fn app_cache_get_ie_group_list_raw(@core.RawAddress) -> UInt
+
+pub fn app_cache_get_info_raw(@core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn app_cache_get_manifest_url_raw(@core.RawAddress, @core.RawAddress) -> UInt
+
+pub let app_cache_lookup_no_master_only : UInt
+
+pub fn app_cache_lookup_raw(@core.RawAddress, UInt, @core.RawAddress) -> UInt
+
+pub let app_cache_state_no_update_needed : Int
+
+pub let app_cache_state_update_needed : Int
+
+pub let app_cache_state_update_needed_master_only : Int
+
+pub let app_cache_state_update_needed_new : Int
+
+pub let auth_flag_disable_basic_clearchannel : UInt
+
+pub let auth_flag_disable_negotiate : UInt
+
+pub let auth_flag_disable_server_auth : UInt
+
+pub let auth_flag_enable_negotiate : UInt
+
+pub let auth_flag_reset : UInt
+
+pub let auto_proxy_flag_always_detect : UInt
+
+pub let auto_proxy_flag_cache_init_run : UInt
+
+pub let auto_proxy_flag_detection_run : UInt
+
+pub let auto_proxy_flag_detection_suspect : UInt
+
+pub let auto_proxy_flag_dont_cache_proxy_result : UInt
+
+pub let auto_proxy_flag_migrated : UInt
+
+pub let auto_proxy_flag_user_set : UInt
+
+pub let autodial_mode_always : UInt
+
+pub let autodial_mode_never : UInt
+
+pub let autodial_mode_no_network_present : UInt
+
+pub let cache_config_appcontainer_content_quota_fc : UInt
+
+pub let cache_config_appcontainer_total_content_quota_fc : UInt
+
+pub let cache_config_content_paths_fc : UInt
+
+pub let cache_config_content_quota_fc : UInt
+
+pub let cache_config_content_usage_fc : UInt
+
+pub let cache_config_cookies_paths_fc : UInt
+
+pub let cache_config_disk_cache_paths_fc : UInt
+
+pub let cache_config_force_cleanup_fc : UInt
+
+pub let cache_config_history_paths_fc : UInt
+
+pub let cache_config_quota_fc : UInt
+
+pub let cache_config_sticky_content_usage_fc : UInt
+
+pub let cache_config_sync_mode_fc : UInt
+
+pub let cache_config_total_content_quota_fc : UInt
+
+pub let cache_config_user_mode_fc : UInt
+
+pub let cache_entry_acctime_fc : UInt
+
+pub let cache_entry_attribute_fc : UInt
+
+pub let cache_entry_exempt_delta_fc : UInt
+
+pub let cache_entry_exptime_fc : UInt
+
+pub let cache_entry_headerinfo_fc : UInt
+
+pub let cache_entry_hitrate_fc : UInt
+
+pub let cache_entry_modify_data_fc : UInt
+
+pub let cache_entry_modtime_fc : UInt
+
+pub let cache_entry_synctime_fc : UInt
+
+pub let cache_entry_type_fc : UInt
+
+pub let cache_find_container_return_nochange : UInt
+
+pub let cache_header_data_cache_read_count_since_last_scavenge : UInt
+
+pub let cache_header_data_cache_reserved_12 : UInt
+
+pub let cache_header_data_cache_reserved_13 : UInt
+
+pub let cache_header_data_cache_reserved_15 : UInt
+
+pub let cache_header_data_cache_reserved_16 : UInt
+
+pub let cache_header_data_cache_reserved_17 : UInt
+
+pub let cache_header_data_cache_reserved_18 : UInt
+
+pub let cache_header_data_cache_reserved_19 : UInt
+
+pub let cache_header_data_cache_reserved_20 : UInt
+
+pub let cache_header_data_cache_reserved_23 : UInt
+
+pub let cache_header_data_cache_reserved_24 : UInt
+
+pub let cache_header_data_cache_reserved_25 : UInt
+
+pub let cache_header_data_cache_reserved_26 : UInt
+
+pub let cache_header_data_cache_reserved_28 : UInt
+
+pub let cache_header_data_cache_reserved_29 : UInt
+
+pub let cache_header_data_cache_reserved_30 : UInt
+
+pub let cache_header_data_cache_reserved_31 : UInt
+
+pub let cache_header_data_cache_write_count_since_last_scavenge : UInt
+
+pub let cache_header_data_conlist_change_count : UInt
+
+pub let cache_header_data_cookie_change_count : UInt
+
+pub let cache_header_data_current_settings_version : UInt
+
+pub let cache_header_data_download_partial : UInt
+
+pub let cache_header_data_gid_high : UInt
+
+pub let cache_header_data_gid_low : UInt
+
+pub let cache_header_data_hsts_change_count : UInt
+
+pub let cache_header_data_last : UInt
+
+pub let cache_header_data_last_scavenge_timestamp : UInt
+
+pub let cache_header_data_notification_filter : UInt
+
+pub let cache_header_data_notification_hwnd : UInt
+
+pub let cache_header_data_notification_mesg : UInt
+
+pub let cache_header_data_root_grouplist_offset : UInt
+
+pub let cache_header_data_root_leak_offset : UInt
+
+pub let cache_header_data_rootgroup_offset : UInt
+
+pub let cache_header_data_ssl_state_count : UInt
+
+pub let cache_notify_add_url : UInt
+
+pub let cache_notify_delete_all : UInt
+
+pub let cache_notify_delete_url : UInt
+
+pub let cache_notify_filter_changed : UInt
+
+pub let cache_notify_set_offline : UInt
+
+pub let cache_notify_set_online : UInt
+
+pub let cache_notify_update_url : UInt
+
+pub let cache_notify_url_set_sticky : UInt
+
+pub let cache_notify_url_unset_sticky : UInt
+
+pub let cachegroup_attribute_basic : UInt
+
+pub let cachegroup_attribute_flag : UInt
+
+pub let cachegroup_attribute_get_all : UInt
+
+pub let cachegroup_attribute_groupname : UInt
+
+pub let cachegroup_attribute_quota : UInt
+
+pub let cachegroup_attribute_storage : UInt
+
+pub let cachegroup_attribute_type : UInt
+
+pub let cachegroup_flag_flushurl_ondelete : UInt
+
+pub let cachegroup_flag_gidonly : UInt
+
+pub let cachegroup_flag_nonpurgeable : UInt
+
+pub let cachegroup_flag_valid : UInt
+
+pub let cachegroup_id_builtin_sticky : UInt64
+
+pub let cachegroup_search_all : UInt
+
+pub let cachegroup_search_byurl : UInt
+
+pub let cachegroup_type_invalid : UInt
+
+pub fn commit_url_cache_entry_a_raw(@core.RawAddress, @core.RawAddress, Bytes, Bytes, UInt, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn commit_url_cache_entry_binary_blob_raw(@core.RawAddress, UInt, Bytes, Bytes, @core.RawAddress, UInt) -> UInt
+
+pub fn commit_url_cache_entry_w_raw(@core.RawAddress, @core.RawAddress, Bytes, Bytes, UInt, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub let connection_establishment_end : Int
+
+pub let connection_establishment_start : Int
+
+pub let cookie_accepted_cache_entry : UInt
+
+pub let cookie_allow : UInt
+
+pub let cookie_allow_all : UInt
+
+pub let cookie_cache_entry : UInt
+
+pub let cookie_dont_allow : UInt
+
+pub let cookie_dont_allow_all : UInt
+
+pub let cookie_downgraded_cache_entry : UInt
+
+pub let cookie_leashed_cache_entry : UInt
+
+pub let cookie_op_3_rd_party : UInt
+
+pub let cookie_op_get : UInt
+
+pub let cookie_op_modify : UInt
+
+pub let cookie_op_persistent : UInt
+
+pub let cookie_op_session : UInt
+
+pub let cookie_op_set : UInt
+
+pub let cookie_rejected_cache_entry : UInt
+
+pub let cookie_state_accept : Int
+
+pub let cookie_state_downgrade : Int
+
+pub let cookie_state_lb : UInt
+
+pub let cookie_state_leash : Int
+
+pub let cookie_state_max : Int
+
+pub let cookie_state_prompt : Int
+
+pub let cookie_state_reject : Int
+
+pub let cookie_state_ub : UInt
+
+pub let cookie_state_unknown : Int
+
+pub fn create_md5_sso_hash_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn create_url_cache_container_a_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, UInt, UInt, UInt, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn create_url_cache_container_w_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, UInt, UInt, UInt, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn create_url_cache_entry_a_raw(@core.RawAddress, UInt, @core.RawAddress, @core.RawAddress, UInt) -> @core.RawWin32Call[Int]
+
+pub fn create_url_cache_entry_ex_w_raw(@core.RawAddress, UInt, @core.RawAddress, @core.RawAddress, UInt, Int) -> Int
+
+pub fn create_url_cache_entry_w_raw(@core.RawAddress, UInt, @core.RawAddress, @core.RawAddress, UInt) -> @core.RawWin32Call[Int]
+
+pub fn create_url_cache_group_raw(UInt, @core.RawAddress) -> @core.RawWin32Call[Int64]
+
+pub fn delete_ie3_cache_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, Int) -> UInt
+
+pub fn delete_url_cache_container_a_raw(@core.RawAddress, UInt) -> @core.RawWin32Call[Int]
+
+pub fn delete_url_cache_container_w_raw(@core.RawAddress, UInt) -> @core.RawWin32Call[Int]
+
+pub fn delete_url_cache_entry_a_raw(@core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn delete_url_cache_entry_raw(@core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn delete_url_cache_entry_w_raw(@core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn delete_url_cache_group_raw(Int64, UInt, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn delete_wpad_cache_for_networks_raw(Int) -> Int
+
+pub fn detect_auto_proxy_url_raw(@core.RawAddress, UInt, UInt) -> @core.RawWin32Call[Int]
+
+pub fn dial(@core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn dial_raw(@core.RawAddress) -> Int
+
+pub let dialeng_operation_complete : UInt
+
+pub let dialeng_redial_attempt : UInt
+
+pub let dialeng_redial_wait : UInt
+
+pub let dialprop_domain : String
+
+pub let dialprop_lasterror : String
+
+pub let dialprop_password : String
+
+pub let dialprop_phonenumber : String
+
+pub let dialprop_redialcount : String
+
+pub let dialprop_redialinterval : String
+
+pub let dialprop_resolvedphone : String
+
+pub let dialprop_savepassword : String
+
+pub let dialprop_username : String
+
+pub let dlg_flags_insecure_fallback : UInt
+
+pub let dlg_flags_invalid_ca : UInt
+
+pub let dlg_flags_sec_cert_cn_invalid : UInt
+
+pub let dlg_flags_sec_cert_date_invalid : UInt
+
+pub let dlg_flags_sec_cert_rev_failed : UInt
+
+pub let dlg_flags_weak_signature : UInt
+
+pub fn do_connectoids_exist_raw() -> Int
+
+pub let download_cache_entry : UInt
+
+pub let duo_protocol_flag_spdy3 : UInt
+
+pub let duo_protocol_mask : UInt
+
+pub let edited_cache_entry : UInt
+
+pub let error_ftp_dropped : UInt
+
+pub let error_ftp_no_passive_mode : UInt
+
+pub let error_ftp_transfer_in_progress : UInt
+
+pub let error_gopher_attribute_not_found : UInt
+
+pub let error_gopher_data_error : UInt
+
+pub let error_gopher_end_of_data : UInt
+
+pub let error_gopher_incorrect_locator_type : UInt
+
+pub let error_gopher_invalid_locator : UInt
+
+pub let error_gopher_not_file : UInt
+
+pub let error_gopher_not_gopher_plus : UInt
+
+pub let error_gopher_protocol_error : UInt
+
+pub let error_gopher_unknown_locator : UInt
+
+pub let error_http_cookie_declined : UInt
+
+pub let error_http_cookie_needs_confirmation : UInt
+
+pub let error_http_cookie_needs_confirmation_ex : UInt
+
+pub let error_http_downlevel_server : UInt
+
+pub let error_http_header_already_exists : UInt
+
+pub let error_http_header_not_found : UInt
+
+pub let error_http_hsts_redirect_required : UInt
+
+pub let error_http_invalid_header : UInt
+
+pub let error_http_invalid_query_request : UInt
+
+pub let error_http_invalid_server_response : UInt
+
+pub let error_http_not_redirected : UInt
+
+pub let error_http_push_enable_failed : UInt
+
+pub let error_http_push_retry_not_supported : UInt
+
+pub let error_http_push_status_code_not_supported : UInt
+
+pub let error_http_redirect_failed : UInt
+
+pub let error_http_redirect_needs_confirmation : UInt
+
+pub let error_internet_async_thread_failed : UInt
+
+pub let error_internet_bad_auto_proxy_script : UInt
+
+pub let error_internet_bad_option_length : UInt
+
+pub let error_internet_bad_registry_parameter : UInt
+
+pub let error_internet_cache_success : UInt
+
+pub let error_internet_cannot_connect : UInt
+
+pub let error_internet_chg_post_is_non_secure : UInt
+
+pub let error_internet_client_auth_cert_needed : UInt
+
+pub let error_internet_client_auth_cert_needed_proxy : UInt
+
+pub let error_internet_client_auth_not_setup : UInt
+
+pub let error_internet_connection_aborted : UInt
+
+pub let error_internet_connection_available : UInt
+
+pub let error_internet_connection_reset : UInt
+
+pub let error_internet_decoding_failed : UInt
+
+pub let error_internet_dialog_pending : UInt
+
+pub let error_internet_disallow_inprivate : UInt
+
+pub let error_internet_disconnected : UInt
+
+pub let error_internet_extended_error : UInt
+
+pub let error_internet_failed_duetosecuritycheck : UInt
+
+pub let error_internet_feature_disabled : UInt
+
+pub let error_internet_force_retry : UInt
+
+pub let error_internet_fortezza_login_needed : UInt
+
+pub let error_internet_global_callback_failed : UInt
+
+pub let error_internet_handle_exists : UInt
+
+pub let error_internet_http_protocol_mismatch : UInt
+
+pub let error_internet_http_to_https_on_redir : UInt
+
+pub let error_internet_https_http_submit_redir : UInt
+
+pub let error_internet_https_to_http_on_redir : UInt
+
+pub let error_internet_incorrect_format : UInt
+
+pub let error_internet_incorrect_handle_state : UInt
+
+pub let error_internet_incorrect_handle_type : UInt
+
+pub let error_internet_incorrect_password : UInt
+
+pub let error_internet_incorrect_user_name : UInt
+
+pub let error_internet_insecure_fallback_required : UInt
+
+pub let error_internet_insert_cdrom : UInt
+
+pub let error_internet_internal_error : UInt
+
+pub let error_internet_internal_socket_error : UInt
+
+pub let error_internet_invalid_ca : UInt
+
+pub let error_internet_invalid_operation : UInt
+
+pub let error_internet_invalid_option : UInt
+
+pub let error_internet_invalid_proxy_request : UInt
+
+pub let error_internet_invalid_url : UInt
+
+pub let error_internet_item_not_found : UInt
+
+pub let error_internet_login_failure : UInt
+
+pub let error_internet_login_failure_display_entity_body : UInt
+
+pub let error_internet_mixed_security : UInt
+
+pub let error_internet_name_not_resolved : UInt
+
+pub let error_internet_need_msn_sspi_pkg : UInt
+
+pub let error_internet_need_ui : UInt
+
+pub let error_internet_no_callback : UInt
+
+pub let error_internet_no_cm_connection : UInt
+
+pub let error_internet_no_context : UInt
+
+pub let error_internet_no_direct_access : UInt
+
+pub let error_internet_no_known_servers : UInt
+
+pub let error_internet_no_new_containers : UInt
+
+pub let error_internet_no_ping_support : UInt
+
+pub let error_internet_not_initialized : UInt
+
+pub let error_internet_not_proxy_request : UInt
+
+pub let error_internet_offline : UInt
+
+pub let error_internet_operation_cancelled : UInt
+
+pub let error_internet_option_not_settable : UInt
+
+pub let error_internet_out_of_handles : UInt
+
+pub let error_internet_ping_failed : UInt
+
+pub let error_internet_post_is_non_secure : UInt
+
+pub let error_internet_protocol_not_found : UInt
+
+pub let error_internet_proxy_alert : UInt
+
+pub let error_internet_proxy_server_unreachable : UInt
+
+pub let error_internet_redirect_scheme_change : UInt
+
+pub let error_internet_registry_value_not_found : UInt
+
+pub let error_internet_request_pending : UInt
+
+pub let error_internet_retry_dialog : UInt
+
+pub let error_internet_sec_cert_cn_invalid : UInt
+
+pub let error_internet_sec_cert_date_invalid : UInt
+
+pub let error_internet_sec_cert_errors : UInt
+
+pub let error_internet_sec_cert_no_rev : UInt
+
+pub let error_internet_sec_cert_rev_failed : UInt
+
+pub let error_internet_sec_cert_revoked : UInt
+
+pub let error_internet_sec_cert_weak_signature : UInt
+
+pub let error_internet_sec_invalid_cert : UInt
+
+pub let error_internet_secure_failure_proxy : UInt
+
+pub let error_internet_security_channel_error : UInt
+
+pub let error_internet_server_unreachable : UInt
+
+pub let error_internet_shutdown : UInt
+
+pub let error_internet_source_port_in_use : UInt
+
+pub let error_internet_tcpip_not_installed : UInt
+
+pub let error_internet_timeout : UInt
+
+pub let error_internet_unable_to_cache_file : UInt
+
+pub let error_internet_unable_to_download_script : UInt
+
+pub let error_internet_unrecognized_scheme : UInt
+
+pub fn export_cookie_file_a_raw(@core.RawAddress, Int) -> Int
+
+pub fn export_cookie_file_w_raw(@core.RawAddress, Int) -> Int
+
+pub fn find_close_url_cache_raw(@core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn find_first_url_cache_container_a_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, UInt) -> @core.RawAddress
+
+pub fn find_first_url_cache_container_w_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, UInt) -> @core.RawAddress
+
+pub fn find_first_url_cache_entry_a_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[@core.RawAddress]
+
+pub fn find_first_url_cache_entry_ex_a_raw(@core.RawAddress, UInt, UInt, Int64, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[@core.RawAddress]
+
+pub fn find_first_url_cache_entry_ex_w_raw(@core.RawAddress, UInt, UInt, Int64, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[@core.RawAddress]
+
+pub fn find_first_url_cache_entry_w_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[@core.RawAddress]
+
+pub fn find_first_url_cache_group_raw(UInt, UInt, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[@core.RawAddress]
+
+pub fn find_next_url_cache_container_a_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn find_next_url_cache_container_w_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn find_next_url_cache_entry_a_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn find_next_url_cache_entry_ex_a_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn find_next_url_cache_entry_ex_w_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn find_next_url_cache_entry_w_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn find_next_url_cache_group_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn find_p3_p_policy_symbol_raw(@core.RawAddress) -> Int
+
+pub let flag_icc_force_connection : UInt
+
+pub let flags_error_ui_filter_for_errors : UInt
+
+pub let flags_error_ui_flags_change_options : UInt
+
+pub let flags_error_ui_flags_generate_data : UInt
+
+pub let flags_error_ui_flags_no_ui : UInt
+
+pub let flags_error_ui_serialize_dialogs : UInt
+
+pub let flags_error_ui_show_idn_hostname : UInt
+
+pub let fortcmd_chg_personality : Int
+
+pub let fortcmd_logoff : Int
+
+pub let fortcmd_logon : Int
+
+pub let fortstat_installed : Int
+
+pub let fortstat_loggedon : Int
+
+pub fn free_url_cache_space_a_raw(@core.RawAddress, UInt, UInt) -> @core.RawWin32Call[Int]
+
+pub fn free_url_cache_space_w_raw(@core.RawAddress, UInt, UInt) -> @core.RawWin32Call[Int]
+
+pub fn ftp_command_a_raw(@core.RawAddress, Int, UInt, @core.RawAddress, UInt64, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn ftp_command_w_raw(@core.RawAddress, Int, UInt, @core.RawAddress, UInt64, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn ftp_create_directory_a_raw(@core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn ftp_create_directory_w_raw(@core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn ftp_delete_file_a_raw(@core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn ftp_delete_file_w_raw(@core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn ftp_find_first_file_a_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, UInt, UInt64) -> @core.RawWin32Call[@core.RawAddress]
+
+pub fn ftp_find_first_file_w_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, UInt, UInt64) -> @core.RawWin32Call[@core.RawAddress]
+
+pub fn ftp_get_current_directory_a_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn ftp_get_current_directory_w_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn ftp_get_file_a_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, Int, UInt, UInt, UInt64) -> @core.RawWin32Call[Int]
+
+pub fn ftp_get_file_ex_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, Int, UInt, UInt, UInt64) -> Int
+
+pub fn ftp_get_file_size_raw(@core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn ftp_get_file_w_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, Int, UInt, UInt, UInt64) -> @core.RawWin32Call[Int]
+
+pub fn ftp_open_file_a_raw(@core.RawAddress, @core.RawAddress, UInt, UInt, UInt64) -> @core.RawWin32Call[@core.RawAddress]
+
+pub fn ftp_open_file_w_raw(@core.RawAddress, @core.RawAddress, UInt, UInt, UInt64) -> @core.RawWin32Call[@core.RawAddress]
+
+pub fn ftp_put_file_a_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, UInt, UInt64) -> @core.RawWin32Call[Int]
+
+pub fn ftp_put_file_ex_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, UInt, UInt64) -> Int
+
+pub fn ftp_put_file_w_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, UInt, UInt64) -> @core.RawWin32Call[Int]
+
+pub fn ftp_remove_directory_a_raw(@core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn ftp_remove_directory_w_raw(@core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn ftp_rename_file_a_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn ftp_rename_file_w_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn ftp_set_current_directory_a_raw(@core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn ftp_set_current_directory_w_raw(@core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub let ftp_transfer_type_ascii : UInt
+
+pub let ftp_transfer_type_binary : UInt
+
+pub let ftp_transfer_type_unknown : UInt
+
+pub fn get_bitmap(@core.RawAddress, UInt, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn get_bitmap_raw(@core.RawAddress, UInt, @core.RawAddress) -> Int
+
+pub fn get_connect_handle(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn get_connect_handle_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn get_connected_state(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn get_connected_state_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn get_cookie_info_for_uri(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn get_cookie_info_for_uri_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn get_cookie_info_for_uri_with_options(@core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn get_cookie_info_for_uri_with_options_raw(@core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn get_cookie_info_for_uri_with_user_agent_id(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn get_cookie_info_for_uri_with_user_agent_id_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn get_cookie_info_with_uri_and_user_agent_id_for_account(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn get_cookie_info_with_uri_and_user_agent_id_for_account_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn get_cookie_info_with_uri_for_account(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn get_cookie_info_with_uri_for_account_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn get_disk_info_a_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn get_property(@core.RawAddress, @core.RawAddress, @core.RawAddress, UInt) -> Unit raise @core.WindowsError
+
+pub fn get_property_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, UInt) -> Int
+
+pub fn get_url_cache_config_info_a_raw(@core.RawAddress, @core.RawAddress, UInt) -> @core.RawWin32Call[Int]
+
+pub fn get_url_cache_config_info_w_raw(@core.RawAddress, @core.RawAddress, UInt) -> @core.RawWin32Call[Int]
+
+pub fn get_url_cache_entry_binary_blob_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn get_url_cache_entry_info_a_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn get_url_cache_entry_info_ex_a_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, UInt) -> @core.RawWin32Call[Int]
+
+pub fn get_url_cache_entry_info_ex_w_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, UInt) -> @core.RawWin32Call[Int]
+
+pub fn get_url_cache_entry_info_w_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn get_url_cache_group_attribute_a_raw(Int64, UInt, UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn get_url_cache_group_attribute_w_raw(Int64, UInt, UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn get_url_cache_header_data_raw(UInt, @core.RawAddress) -> Int
+
+pub let gopher_abstract_attribute : String
+
+pub let gopher_abstract_category : String
+
+pub let gopher_admin_attribute : String
+
+pub let gopher_admin_category : String
+
+pub let gopher_attribute_id_abstract : UInt
+
+pub let gopher_attribute_id_admin : UInt
+
+pub let gopher_attribute_id_all : UInt
+
+pub let gopher_attribute_id_base : UInt
+
+pub let gopher_attribute_id_geog : UInt
+
+pub let gopher_attribute_id_location : UInt
+
+pub let gopher_attribute_id_mod_date : UInt
+
+pub let gopher_attribute_id_org : UInt
+
+pub let gopher_attribute_id_provider : UInt
+
+pub let gopher_attribute_id_range : UInt
+
+pub let gopher_attribute_id_score : UInt
+
+pub let gopher_attribute_id_site : UInt
+
+pub let gopher_attribute_id_timezone : UInt
+
+pub let gopher_attribute_id_treewalk : UInt
+
+pub let gopher_attribute_id_ttl : UInt
+
+pub let gopher_attribute_id_unknown : UInt
+
+pub let gopher_attribute_id_version : UInt
+
+pub let gopher_attribute_id_view : UInt
+
+pub let gopher_category_id_abstract : UInt
+
+pub let gopher_category_id_admin : UInt
+
+pub let gopher_category_id_all : UInt
+
+pub let gopher_category_id_ask : UInt
+
+pub let gopher_category_id_info : UInt
+
+pub let gopher_category_id_unknown : UInt
+
+pub let gopher_category_id_veronica : UInt
+
+pub let gopher_category_id_views : UInt
+
+pub fn gopher_create_locator_a_raw(@core.RawAddress, UInt, @core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn gopher_create_locator_w_raw(@core.RawAddress, UInt, @core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn gopher_find_first_file_a_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, UInt, UInt64) -> @core.RawWin32Call[@core.RawAddress]
+
+pub fn gopher_find_first_file_w_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, UInt, UInt64) -> @core.RawWin32Call[@core.RawAddress]
+
+pub let gopher_geog_attribute : String
+
+pub fn gopher_get_attribute_a_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress, UInt64) -> @core.RawWin32Call[Int]
+
+pub fn gopher_get_attribute_w_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress, UInt64) -> @core.RawWin32Call[Int]
+
+pub fn gopher_get_locator_type_a_raw(@core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn gopher_get_locator_type_w_raw(@core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub let gopher_info_category : String
+
+pub let gopher_location_attribute : String
+
+pub let gopher_mod_date_attribute : String
+
+pub fn gopher_open_file_a_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, UInt, UInt64) -> @core.RawWin32Call[@core.RawAddress]
+
+pub fn gopher_open_file_w_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, UInt, UInt64) -> @core.RawWin32Call[@core.RawAddress]
+
+pub let gopher_org_attribute : String
+
+pub let gopher_provider_attribute : String
+
+pub let gopher_range_attribute : String
+
+pub let gopher_score_attribute : String
+
+pub let gopher_site_attribute : String
+
+pub let gopher_timezone_attribute : String
+
+pub let gopher_treewalk_attribute : String
+
+pub let gopher_ttl_attribute : String
+
+pub let gopher_type_ask : UInt
+
+pub let gopher_type_binary : UInt
+
+pub let gopher_type_bitmap : UInt
+
+pub let gopher_type_calendar : UInt
+
+pub let gopher_type_cso : UInt
+
+pub let gopher_type_directory : UInt
+
+pub let gopher_type_dos_archive : UInt
+
+pub let gopher_type_error : UInt
+
+pub let gopher_type_gif : UInt
+
+pub let gopher_type_gopher_plus : UInt
+
+pub let gopher_type_html : UInt
+
+pub let gopher_type_image : UInt
+
+pub let gopher_type_index_server : UInt
+
+pub let gopher_type_inline : UInt
+
+pub let gopher_type_mac_binhex : UInt
+
+pub let gopher_type_movie : UInt
+
+pub let gopher_type_pdf : UInt
+
+pub let gopher_type_redundant : UInt
+
+pub let gopher_type_sound : UInt
+
+pub let gopher_type_telnet : UInt
+
+pub let gopher_type_text_file : UInt
+
+pub let gopher_type_tn3270 : UInt
+
+pub let gopher_type_unix_uuencoded : UInt
+
+pub let gopher_type_unknown : UInt
+
+pub let gopher_veronica_category : String
+
+pub let gopher_version_attribute : String
+
+pub let gopher_view_attribute : String
+
+pub let gopher_views_category : String
+
+pub let group_owner_storage_size : UInt
+
+pub let groupname_max_length : UInt
+
+pub fn hang_up(@core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn hang_up_raw(@core.RawAddress) -> Int
+
+pub let hsr_async : UInt
+
+pub let hsr_chunked : UInt
+
+pub let hsr_download : UInt
+
+pub let hsr_initiate : UInt
+
+pub let hsr_sync : UInt
+
+pub let hsr_use_context : UInt
+
+pub let http_1_1_cache_entry : UInt
+
+pub fn http_add_request_headers_a_raw(@core.RawAddress, @core.RawAddress, UInt, UInt) -> @core.RawWin32Call[Int]
+
+pub fn http_add_request_headers_w_raw(@core.RawAddress, @core.RawAddress, UInt, UInt) -> @core.RawWin32Call[Int]
+
+pub let http_addreq_flag_add : UInt
+
+pub let http_addreq_flag_add_if_new : UInt
+
+pub let http_addreq_flag_allow_empty_values : UInt
+
+pub let http_addreq_flag_coalesce : UInt
+
+pub let http_addreq_flag_coalesce_with_comma : UInt
+
+pub let http_addreq_flag_coalesce_with_semicolon : UInt
+
+pub let http_addreq_flag_replace : UInt
+
+pub let http_addreq_flag_response_headers : UInt
+
+pub let http_addreq_flags_mask : UInt
+
+pub let http_addreq_index_mask : UInt
+
+pub fn http_check_dav_compliance_a_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn http_check_dav_compliance_w_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn http_close_dependency_handle_raw(@core.RawAddress) -> Unit
+
+pub let http_cookies_same_site_level_cross_site : UInt
+
+pub let http_cookies_same_site_level_cross_site_lax : UInt
+
+pub let http_cookies_same_site_level_max : UInt
+
+pub let http_cookies_same_site_level_same_site : UInt
+
+pub let http_cookies_same_site_level_unknown : UInt
+
+pub fn http_duplicate_dependency_handle_raw(@core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn http_end_request_a_raw(@core.RawAddress, @core.RawAddress, UInt, UInt64) -> @core.RawWin32Call[Int]
+
+pub fn http_end_request_w_raw(@core.RawAddress, @core.RawAddress, UInt, UInt64) -> @core.RawWin32Call[Int]
+
+pub fn http_get_server_credentials_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn http_indicate_page_load_complete_raw(@core.RawAddress) -> UInt
+
+pub fn http_is_host_hsts_enabled_raw(@core.RawAddress, @core.RawAddress) -> UInt
+
+pub let http_major_version : UInt
+
+pub let http_minor_version : UInt
+
+pub fn http_open_dependency_handle_raw(@core.RawAddress, Int, @core.RawAddress) -> UInt
+
+pub fn http_open_request_a_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, UInt, UInt64) -> @core.RawWin32Call[@core.RawAddress]
+
+pub fn http_open_request_w_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, UInt, UInt64) -> @core.RawWin32Call[@core.RawAddress]
+
+pub let http_protocol_flag_http2 : UInt
+
+pub let http_protocol_mask : UInt
+
+pub fn http_push_close_raw(@core.RawAddress) -> Unit
+
+pub fn http_push_enable_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub let http_push_wait_enable_complete : Int
+
+pub fn http_push_wait_raw(@core.RawAddress, Int, @core.RawAddress) -> UInt
+
+pub let http_push_wait_receive_complete : Int
+
+pub let http_push_wait_send_complete : Int
+
+pub let http_query_accept : UInt
+
+pub let http_query_accept_charset : UInt
+
+pub let http_query_accept_encoding : UInt
+
+pub let http_query_accept_language : UInt
+
+pub let http_query_accept_ranges : UInt
+
+pub let http_query_age : UInt
+
+pub let http_query_allow : UInt
+
+pub let http_query_authentication_info : UInt
+
+pub let http_query_authorization : UInt
+
+pub let http_query_cache_control : UInt
+
+pub let http_query_connection : UInt
+
+pub let http_query_content_base : UInt
+
+pub let http_query_content_description : UInt
+
+pub let http_query_content_disposition : UInt
+
+pub let http_query_content_encoding : UInt
+
+pub let http_query_content_id : UInt
+
+pub let http_query_content_language : UInt
+
+pub let http_query_content_length : UInt
+
+pub let http_query_content_location : UInt
+
+pub let http_query_content_md5 : UInt
+
+pub let http_query_content_range : UInt
+
+pub let http_query_content_transfer_encoding : UInt
+
+pub let http_query_content_type : UInt
+
+pub let http_query_cookie : UInt
+
+pub let http_query_cost : UInt
+
+pub let http_query_custom : UInt
+
+pub let http_query_date : UInt
+
+pub let http_query_default_style : UInt
+
+pub let http_query_derived_from : UInt
+
+pub let http_query_do_not_track : UInt
+
+pub let http_query_echo_headers : UInt
+
+pub let http_query_echo_headers_crlf : UInt
+
+pub let http_query_echo_reply : UInt
+
+pub let http_query_echo_request : UInt
+
+pub let http_query_etag : UInt
+
+pub let http_query_expect : UInt
+
+pub let http_query_expires : UInt
+
+pub let http_query_flag_coalesce : UInt
+
+pub let http_query_flag_coalesce_with_comma : UInt
+
+pub let http_query_flag_number : UInt
+
+pub let http_query_flag_number64 : UInt
+
+pub let http_query_flag_request_headers : UInt
+
+pub let http_query_flag_systemtime : UInt
+
+pub let http_query_forwarded : UInt
+
+pub let http_query_from : UInt
+
+pub let http_query_host : UInt
+
+pub let http_query_http2_settings : UInt
+
+pub let http_query_if_match : UInt
+
+pub let http_query_if_modified_since : UInt
+
+pub let http_query_if_none_match : UInt
+
+pub let http_query_if_range : UInt
+
+pub let http_query_if_unmodified_since : UInt
+
+pub let http_query_include_referer_token_binding_id : UInt
+
+pub let http_query_include_referred_token_binding_id : UInt
+
+pub fn http_query_info_a_raw(@core.RawAddress, UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn http_query_info_w_raw(@core.RawAddress, UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub let http_query_keep_alive : UInt
+
+pub let http_query_last_modified : UInt
+
+pub let http_query_link : UInt
+
+pub let http_query_location : UInt
+
+pub let http_query_max : UInt
+
+pub let http_query_max_forwards : UInt
+
+pub let http_query_message_id : UInt
+
+pub let http_query_mime_version : UInt
+
+pub let http_query_orig_uri : UInt
+
+pub let http_query_p3_p : UInt
+
+pub let http_query_passport_config : UInt
+
+pub let http_query_passport_urls : UInt
+
+pub let http_query_pragma : UInt
+
+pub let http_query_proxy_authenticate : UInt
+
+pub let http_query_proxy_authorization : UInt
+
+pub let http_query_proxy_connection : UInt
+
+pub let http_query_proxy_support : UInt
+
+pub let http_query_public : UInt
+
+pub let http_query_public_key_pins : UInt
+
+pub let http_query_public_key_pins_report_only : UInt
+
+pub let http_query_range : UInt
+
+pub let http_query_raw_headers : UInt
+
+pub let http_query_raw_headers_crlf : UInt
+
+pub let http_query_referer : UInt
+
+pub let http_query_refresh : UInt
+
+pub let http_query_request_method : UInt
+
+pub let http_query_retry_after : UInt
+
+pub let http_query_server : UInt
+
+pub let http_query_set_cookie : UInt
+
+pub let http_query_set_cookie2 : UInt
+
+pub let http_query_status_code : UInt
+
+pub let http_query_status_text : UInt
+
+pub let http_query_strict_transport_security : UInt
+
+pub let http_query_title : UInt
+
+pub let http_query_token_binding : UInt
+
+pub let http_query_transfer_encoding : UInt
+
+pub let http_query_translate : UInt
+
+pub let http_query_unless_modified_since : UInt
+
+pub let http_query_upgrade : UInt
+
+pub let http_query_uri : UInt
+
+pub let http_query_user_agent : UInt
+
+pub let http_query_vary : UInt
+
+pub let http_query_version : UInt
+
+pub let http_query_via : UInt
+
+pub let http_query_warning : UInt
+
+pub let http_query_www_authenticate : UInt
+
+pub let http_query_x_content_type_options : UInt
+
+pub let http_query_x_frame_options : UInt
+
+pub let http_query_x_p2_p_peerdist : UInt
+
+pub let http_query_x_ua_compatible : UInt
+
+pub let http_query_x_xss_protection : UInt
+
+pub let http_request_time_max : Int
+
+pub fn http_send_request_a_raw(@core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, UInt) -> @core.RawWin32Call[Int]
+
+pub fn http_send_request_ex_a_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, UInt, UInt64) -> @core.RawWin32Call[Int]
+
+pub fn http_send_request_ex_w_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, UInt, UInt64) -> @core.RawWin32Call[Int]
+
+pub fn http_send_request_w_raw(@core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, UInt) -> @core.RawWin32Call[Int]
+
+pub let http_status_misdirected_request : UInt
+
+pub let http_versiona : String
+
+pub let http_versionw : String
+
+pub let http_web_socket_aborted_close_status : Int
+
+pub let http_web_socket_binary_fragment_type : Int
+
+pub let http_web_socket_binary_message_type : Int
+
+pub let http_web_socket_close_operation : Int
+
+pub fn http_web_socket_close_raw(@core.RawAddress, UInt, @core.RawAddress, UInt) -> Int
+
+pub let http_web_socket_close_type : Int
+
+pub fn http_web_socket_complete_upgrade_raw(@core.RawAddress, UInt64) -> @core.RawAddress
+
+pub let http_web_socket_empty_close_status : Int
+
+pub let http_web_socket_endpoint_terminated_close_status : Int
+
+pub let http_web_socket_invalid_data_type_close_status : Int
+
+pub let http_web_socket_invalid_payload_close_status : Int
+
+pub let http_web_socket_max_close_reason_length : UInt
+
+pub let http_web_socket_message_too_big_close_status : Int
+
+pub let http_web_socket_min_keepalive_value : UInt
+
+pub let http_web_socket_ping_type : Int
+
+pub let http_web_socket_policy_violation_close_status : Int
+
+pub let http_web_socket_protocol_error_close_status : Int
+
+pub fn http_web_socket_query_close_status_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, UInt, @core.RawAddress) -> Int
+
+pub let http_web_socket_receive_operation : Int
+
+pub fn http_web_socket_receive_raw(@core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> Int
+
+pub let http_web_socket_secure_handshake_error_close_status : Int
+
+pub let http_web_socket_send_operation : Int
+
+pub fn http_web_socket_send_raw(@core.RawAddress, Int, @core.RawAddress, UInt) -> Int
+
+pub let http_web_socket_server_error_close_status : Int
+
+pub let http_web_socket_shutdown_operation : Int
+
+pub fn http_web_socket_shutdown_raw(@core.RawAddress, UInt, @core.RawAddress, UInt) -> Int
+
+pub let http_web_socket_success_close_status : Int
+
+pub let http_web_socket_unsupported_extensions_close_status : Int
+
+pub let http_web_socket_utf8_fragment_type : Int
+
+pub let http_web_socket_utf8_message_type : Int
+
+pub let icu_username : UInt
+
+pub let identity_cache_entry : UInt
+
+pub let idsi_flag_keep_alive : UInt
+
+pub let idsi_flag_proxy : UInt
+
+pub let idsi_flag_secure : UInt
+
+pub let idsi_flag_tunnel : UInt
+
+pub let immutable_cache_entry : UInt
+
+pub fn import_cookie_file_a_raw(@core.RawAddress) -> Int
+
+pub fn import_cookie_file_w_raw(@core.RawAddress) -> Int
+
+pub fn increment_url_cache_header_data_raw(UInt, @core.RawAddress) -> Int
+
+pub fn initialize_97f3a090c5(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn initialize_97f3a090c5_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn initialize_d7ef7c0a6f(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn initialize_d7ef7c0a6f_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub let installed_cache_entry : UInt
+
+pub let interent_goonline_mask : UInt
+
+pub let interent_goonline_noprompt : UInt
+
+pub let interent_goonline_refresh : UInt
+
+pub fn internal_internet_get_cookie_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn internet_alg_id_to_string_a_raw(UInt, @core.RawAddress, @core.RawAddress, UInt) -> Int
+
+pub fn internet_alg_id_to_string_w_raw(UInt, @core.RawAddress, @core.RawAddress, UInt) -> Int
+
+pub fn internet_attempt_connect_raw(UInt) -> UInt
+
+pub let internet_auth_scheme_basic : UInt
+
+pub let internet_auth_scheme_digest : UInt
+
+pub let internet_auth_scheme_kerberos : UInt
+
+pub let internet_auth_scheme_negotiate : UInt
+
+pub let internet_auth_scheme_ntlm : UInt
+
+pub let internet_auth_scheme_passport : UInt
+
+pub let internet_auth_scheme_unknown : UInt
+
+pub let internet_autodial_failifsecuritycheck : UInt
+
+pub let internet_autodial_force_online : UInt
+
+pub let internet_autodial_force_unattended : UInt
+
+pub fn internet_autodial_hangup_raw(UInt) -> @core.RawWin32Call[Int]
+
+pub let internet_autodial_override_net_present : UInt
+
+pub fn internet_autodial_raw(UInt, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub let internet_autoproxy_init_default : UInt
+
+pub let internet_autoproxy_init_downloadsync : UInt
+
+pub let internet_autoproxy_init_onlyquery : UInt
+
+pub let internet_autoproxy_init_querystate : UInt
+
+pub let internet_cache_container_autodelete : UInt
+
+pub let internet_cache_container_bloom_filter : UInt
+
+pub let internet_cache_container_map_enabled : UInt
+
+pub let internet_cache_container_nodesktopinit : UInt
+
+pub let internet_cache_container_nosubdirs : UInt
+
+pub let internet_cache_container_reserved1 : UInt
+
+pub let internet_cache_container_share_read : UInt
+
+pub let internet_cache_container_share_read_write : UInt
+
+pub let internet_cache_flag_add_filename_only : UInt
+
+pub let internet_cache_flag_allow_collisions : UInt
+
+pub let internet_cache_flag_entry_or_mapping : UInt
+
+pub let internet_cache_flag_get_struct_only : UInt
+
+pub let internet_cache_flag_installed_entry : UInt
+
+pub let internet_cache_group_add : UInt
+
+pub let internet_cache_group_remove : UInt
+
+pub fn internet_canonicalize_url_a_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, UInt) -> @core.RawWin32Call[Int]
+
+pub fn internet_canonicalize_url_w_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, UInt) -> @core.RawWin32Call[Int]
+
+pub fn internet_check_connection_a_raw(@core.RawAddress, UInt, UInt) -> @core.RawWin32Call[Int]
+
+pub fn internet_check_connection_w_raw(@core.RawAddress, UInt, UInt) -> @core.RawWin32Call[Int]
+
+pub fn internet_clear_all_per_site_cookie_decisions_raw() -> Int
+
+pub fn internet_close_handle_raw(@core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn internet_combine_url_a_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, UInt) -> @core.RawWin32Call[Int]
+
+pub fn internet_combine_url_w_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, UInt) -> @core.RawWin32Call[Int]
+
+pub fn internet_confirm_zone_crossing_a_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, Int) -> UInt
+
+pub fn internet_confirm_zone_crossing_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, Int) -> UInt
+
+pub fn internet_confirm_zone_crossing_w_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, Int) -> UInt
+
+pub fn internet_connect_a_raw(@core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress, UInt, UInt, UInt64) -> @core.RawWin32Call[@core.RawAddress]
+
+pub fn internet_connect_w_raw(@core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress, UInt, UInt, UInt64) -> @core.RawWin32Call[@core.RawAddress]
+
+pub let internet_connection_configured : UInt
+
+pub let internet_connection_lan : UInt
+
+pub let internet_connection_modem : UInt
+
+pub let internet_connection_modem_busy : UInt
+
+pub let internet_connection_offline : UInt
+
+pub let internet_connection_proxy : UInt
+
+pub fn internet_convert_url_from_wire_to_wide_char_raw(@core.RawAddress, UInt, @core.RawAddress, UInt, UInt, Int, UInt, @core.RawAddress) -> UInt
+
+pub let internet_cookie_all_cookies : UInt
+
+pub let internet_cookie_apply_host_only : UInt
+
+pub let internet_cookie_apply_p3_p : UInt
+
+pub let internet_cookie_ectx_3_rdparty : UInt
+
+pub let internet_cookie_edge_cookies : UInt
+
+pub let internet_cookie_evaluate_p3_p : UInt
+
+pub let internet_cookie_host_only : UInt
+
+pub let internet_cookie_host_only_applied : UInt
+
+pub let internet_cookie_httponly : UInt
+
+pub let internet_cookie_ie6 : UInt
+
+pub let internet_cookie_is_legacy : UInt
+
+pub let internet_cookie_is_restricted : UInt
+
+pub let internet_cookie_is_secure : UInt
+
+pub let internet_cookie_is_session : UInt
+
+pub let internet_cookie_no_callback : UInt
+
+pub let internet_cookie_non_script : UInt
+
+pub let internet_cookie_p3_p_enabled : UInt
+
+pub let internet_cookie_persistent_host_only : UInt
+
+pub let internet_cookie_prompt_required : UInt
+
+pub let internet_cookie_restricted_zone : UInt
+
+pub let internet_cookie_same_site_lax : UInt
+
+pub let internet_cookie_same_site_level_cross_site : UInt
+
+pub let internet_cookie_same_site_strict : UInt
+
+pub let internet_cookie_third_party : UInt
+
+pub fn internet_crack_url_a_raw(@core.RawAddress, UInt, UInt, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn internet_crack_url_w_raw(@core.RawAddress, UInt, UInt, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn internet_create_url_a_raw(@core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn internet_create_url_w_raw(@core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub let internet_customdial_can_hangup : UInt
+
+pub let internet_customdial_connect : UInt
+
+pub let internet_customdial_disconnect : UInt
+
+pub let internet_customdial_safe_for_unattended : UInt
+
+pub let internet_customdial_showoffline : UInt
+
+pub let internet_customdial_unattended : UInt
+
+pub let internet_customdial_will_supply_state : UInt
+
+pub let internet_default_ftp_port : UInt
+
+pub let internet_default_gopher_port : UInt
+
+pub let internet_default_socks_port : UInt
+
+pub fn internet_dial_a_raw(@core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, UInt) -> UInt
+
+pub let internet_dial_force_prompt : UInt
+
+pub fn internet_dial_raw(@core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, UInt) -> UInt
+
+pub let internet_dial_show_offline : UInt
+
+pub let internet_dial_unattended : UInt
+
+pub fn internet_dial_w_raw(@core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, UInt) -> UInt
+
+pub let internet_dialstate_disconnected : UInt
+
+pub fn internet_enum_per_site_cookie_decision_a_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, UInt) -> Int
+
+pub fn internet_enum_per_site_cookie_decision_w_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, UInt) -> Int
+
+pub let internet_error_base : UInt
+
+pub fn internet_error_dlg_raw(@core.RawAddress, @core.RawAddress, UInt, UInt, @core.RawAddress) -> UInt
+
+pub let internet_error_last : UInt
+
+pub let internet_error_mask_combined_sec_cert : UInt
+
+pub let internet_error_mask_insert_cdrom : UInt
+
+pub let internet_error_mask_login_failure_display_entity_body : UInt
+
+pub let internet_error_mask_need_msn_sspi_pkg : UInt
+
+pub fn internet_find_next_file_a_raw(@core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn internet_find_next_file_w_raw(@core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub let internet_first_option : UInt
+
+pub let internet_flag_async : UInt
+
+pub let internet_flag_bgupdate : UInt
+
+pub let internet_flag_cache_async : UInt
+
+pub let internet_flag_cache_if_net_fail : UInt
+
+pub let internet_flag_dont_cache : UInt
+
+pub let internet_flag_existing_connect : UInt
+
+pub let internet_flag_forms_submit : UInt
+
+pub let internet_flag_from_cache : UInt
+
+pub let internet_flag_ftp_folder_view : UInt
+
+pub let internet_flag_fwd_back : UInt
+
+pub let internet_flag_hyperlink : UInt
+
+pub let internet_flag_idn_direct : UInt
+
+pub let internet_flag_idn_proxy : UInt
+
+pub let internet_flag_ignore_cert_cn_invalid : UInt
+
+pub let internet_flag_ignore_cert_date_invalid : UInt
+
+pub let internet_flag_ignore_redirect_to_http : UInt
+
+pub let internet_flag_ignore_redirect_to_https : UInt
+
+pub let internet_flag_keep_connection : UInt
+
+pub let internet_flag_make_persistent : UInt
+
+pub let internet_flag_must_cache_request : UInt
+
+pub let internet_flag_need_file : UInt
+
+pub let internet_flag_no_auth : UInt
+
+pub let internet_flag_no_auto_redirect : UInt
+
+pub let internet_flag_no_cache_write : UInt
+
+pub let internet_flag_no_cookies : UInt
+
+pub let internet_flag_no_ui : UInt
+
+pub let internet_flag_offline : UInt
+
+pub let internet_flag_passive : UInt
+
+pub let internet_flag_pragma_nocache : UInt
+
+pub let internet_flag_raw_data : UInt
+
+pub let internet_flag_read_prefetch : UInt
+
+pub let internet_flag_reload : UInt
+
+pub let internet_flag_restricted_zone : UInt
+
+pub let internet_flag_resynchronize : UInt
+
+pub let internet_flag_secure : UInt
+
+pub let internet_flag_transfer_ascii : UInt
+
+pub let internet_flag_transfer_binary : UInt
+
+pub fn internet_fortezza_command_raw(UInt, @core.RawAddress, UInt64) -> Int
+
+pub fn internet_free_cookies_raw(@core.RawAddress, UInt) -> Unit
+
+pub fn internet_free_proxy_info_list_raw(@core.RawAddress) -> Unit
+
+pub fn internet_get_connected_state_ex_a_raw(@core.RawAddress, @core.RawAddress, UInt, UInt) -> @core.RawWin32Call[Int]
+
+pub fn internet_get_connected_state_ex_raw(@core.RawAddress, @core.RawAddress, UInt, UInt) -> @core.RawWin32Call[Int]
+
+pub fn internet_get_connected_state_ex_w_raw(@core.RawAddress, @core.RawAddress, UInt, UInt) -> @core.RawWin32Call[Int]
+
+pub fn internet_get_connected_state_raw(@core.RawAddress, UInt) -> @core.RawWin32Call[Int]
+
+pub fn internet_get_cookie_a_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn internet_get_cookie_ex2_raw(@core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn internet_get_cookie_ex_a_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, UInt, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn internet_get_cookie_ex_w_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, UInt, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn internet_get_cookie_w_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn internet_get_last_response_info_a_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn internet_get_last_response_info_w_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn internet_get_per_site_cookie_decision_a_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn internet_get_per_site_cookie_decision_w_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn internet_get_proxy_for_url_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn internet_get_security_info_by_url_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn internet_get_security_info_by_urla_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn internet_get_security_info_by_urlw_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub let internet_global_callback_detecting_proxy : UInt
+
+pub let internet_global_callback_sending_http_headers : UInt
+
+pub fn internet_go_online_a_raw(@core.RawAddress, @core.RawAddress, UInt) -> @core.RawWin32Call[Int]
+
+pub fn internet_go_online_raw(@core.RawAddress, @core.RawAddress, UInt) -> @core.RawWin32Call[Int]
+
+pub fn internet_go_online_w_raw(@core.RawAddress, @core.RawAddress, UInt) -> @core.RawWin32Call[Int]
+
+pub let internet_handle_type_connect_ftp : UInt
+
+pub let internet_handle_type_connect_gopher : UInt
+
+pub let internet_handle_type_connect_http : UInt
+
+pub let internet_handle_type_file_request : UInt
+
+pub let internet_handle_type_ftp_file : UInt
+
+pub let internet_handle_type_ftp_file_html : UInt
+
+pub let internet_handle_type_ftp_find : UInt
+
+pub let internet_handle_type_ftp_find_html : UInt
+
+pub let internet_handle_type_gopher_file : UInt
+
+pub let internet_handle_type_gopher_file_html : UInt
+
+pub let internet_handle_type_gopher_find : UInt
+
+pub let internet_handle_type_gopher_find_html : UInt
+
+pub let internet_handle_type_http_request : UInt
+
+pub let internet_handle_type_internet : UInt
+
+pub fn internet_hang_up_raw(UInt64, UInt) -> UInt
+
+pub let internet_identity_flag_clear_content : UInt
+
+pub let internet_identity_flag_clear_cookies : UInt
+
+pub let internet_identity_flag_clear_data : UInt
+
+pub let internet_identity_flag_clear_history : UInt
+
+pub let internet_identity_flag_private_cache : UInt
+
+pub let internet_identity_flag_shared_cache : UInt
+
+pub fn internet_initialize_auto_proxy_dll_raw(UInt) -> @core.RawWin32Call[Int]
+
+pub let internet_internal_error_base : UInt
+
+pub let internet_invalid_port_number : UInt
+
+pub let internet_keep_alive_disabled : UInt
+
+pub let internet_keep_alive_enabled : UInt
+
+pub let internet_keep_alive_unknown : UInt
+
+pub let internet_last_option : UInt
+
+pub let internet_last_option_internal : UInt
+
+pub fn internet_lock_request_file_raw(@core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub let internet_max_host_name_length : UInt
+
+pub let internet_max_password_length : UInt
+
+pub let internet_max_port_number_length : UInt
+
+pub let internet_max_port_number_value : UInt
+
+pub let internet_max_user_name_length : UInt
+
+pub let internet_no_callback : UInt
+
+pub fn internet_open_a_raw(@core.RawAddress, UInt, @core.RawAddress, @core.RawAddress, UInt) -> @core.RawWin32Call[@core.RawAddress]
+
+pub let internet_open_type_direct : UInt
+
+pub let internet_open_type_preconfig : UInt
+
+pub let internet_open_type_preconfig_with_no_autoproxy : UInt
+
+pub let internet_open_type_proxy : UInt
+
+pub fn internet_open_url_a_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, UInt, UInt, UInt64) -> @core.RawWin32Call[@core.RawAddress]
+
+pub fn internet_open_url_w_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, UInt, UInt, UInt64) -> @core.RawWin32Call[@core.RawAddress]
+
+pub fn internet_open_w_raw(@core.RawAddress, UInt, @core.RawAddress, @core.RawAddress, UInt) -> @core.RawWin32Call[@core.RawAddress]
+
+pub let internet_option_activate_worker_threads : UInt
+
+pub let internet_option_activity_id : UInt
+
+pub let internet_option_allow_failed_connect_content : UInt
+
+pub let internet_option_allow_insecure_fallback : UInt
+
+pub let internet_option_alter_identity : UInt
+
+pub let internet_option_app_cache : UInt
+
+pub let internet_option_async : UInt
+
+pub let internet_option_async_id : UInt
+
+pub let internet_option_async_priority : UInt
+
+pub let internet_option_auth_flags : UInt
+
+pub let internet_option_auth_scheme_selected : UInt
+
+pub let internet_option_autodial_connection : UInt
+
+pub let internet_option_autodial_hwnd : UInt
+
+pub let internet_option_autodial_mode : UInt
+
+pub let internet_option_background_connections : UInt
+
+pub let internet_option_bypass_edited_entry : UInt
+
+pub let internet_option_cache_entry_extra_data : UInt
+
+pub let internet_option_cache_partition : UInt
+
+pub let internet_option_cache_stream_handle : UInt
+
+pub let internet_option_cache_timestamps : UInt
+
+pub let internet_option_callback : UInt
+
+pub let internet_option_callback_filter : UInt
+
+pub let internet_option_caller_module : UInt
+
+pub let internet_option_cancel_cache_write : UInt
+
+pub let internet_option_cert_error_flags : UInt
+
+pub let internet_option_chunk_encode_request : UInt
+
+pub let internet_option_client_cert_context : UInt
+
+pub let internet_option_client_cert_issuer_list : UInt
+
+pub let internet_option_cm_handle_copy_ref : UInt
+
+pub let internet_option_codepage : UInt
+
+pub let internet_option_codepage_extra : UInt
+
+pub let internet_option_codepage_path : UInt
+
+pub let internet_option_compressed_content_length : UInt
+
+pub let internet_option_connect_backoff : UInt
+
+pub let internet_option_connect_limit : UInt
+
+pub let internet_option_connect_retries : UInt
+
+pub let internet_option_connect_time : UInt
+
+pub let internet_option_connect_timeout : UInt
+
+pub let internet_option_connected_state : UInt
+
+pub let internet_option_connection_filter : UInt
+
+pub let internet_option_connection_info : UInt
+
+pub let internet_option_context_value : UInt
+
+pub let internet_option_context_value_old : UInt
+
+pub let internet_option_control_receive_timeout : UInt
+
+pub let internet_option_control_send_timeout : UInt
+
+pub let internet_option_cookies_3_rd_party : UInt
+
+pub let internet_option_cookies_apply_host_only : UInt
+
+pub let internet_option_cookies_same_site_level : UInt
+
+pub let internet_option_data_receive_timeout : UInt
+
+pub let internet_option_data_send_timeout : UInt
+
+pub let internet_option_datafile_ext : UInt
+
+pub let internet_option_datafile_name : UInt
+
+pub let internet_option_dependency_handle : UInt
+
+pub let internet_option_detect_post_send : UInt
+
+pub let internet_option_diagnostic_socket_info : UInt
+
+pub let internet_option_digest_auth_unload : UInt
+
+pub let internet_option_disable_autodial : UInt
+
+pub let internet_option_disable_insecure_fallback : UInt
+
+pub let internet_option_disable_ntlm_preauth : UInt
+
+pub let internet_option_disable_passport_auth : UInt
+
+pub let internet_option_disable_proxy_link_local_name_resolution : UInt
+
+pub let internet_option_disallow_premature_eof : UInt
+
+pub let internet_option_disconnected_timeout : UInt
+
+pub let internet_option_do_not_track : UInt
+
+pub let internet_option_download_mode : UInt
+
+pub let internet_option_download_mode_handle : UInt
+
+pub let internet_option_duo_used : UInt
+
+pub let internet_option_edge_cookies : UInt
+
+pub let internet_option_edge_cookies_temp : UInt
+
+pub let internet_option_edge_mode : UInt
+
+pub let internet_option_enable_duo : UInt
+
+pub let internet_option_enable_header_callbacks : UInt
+
+pub let internet_option_enable_http_protocol : UInt
+
+pub let internet_option_enable_passport_auth : UInt
+
+pub let internet_option_enable_redirect_cache_read : UInt
+
+pub let internet_option_enable_test_signing : UInt
+
+pub let internet_option_enable_wboext : UInt
+
+pub let internet_option_enable_zlib_deflate : UInt
+
+pub let internet_option_encode_extra : UInt
+
+pub let internet_option_encode_fallback_for_redirect_uri : UInt
+
+pub let internet_option_end_browser_session : UInt
+
+pub let internet_option_enterprise_context : UInt
+
+pub let internet_option_error_mask : UInt
+
+pub let internet_option_exempt_connection_limit : UInt
+
+pub let internet_option_extended_callbacks : UInt
+
+pub let internet_option_extended_error : UInt
+
+pub let internet_option_fail_on_cache_write_error : UInt
+
+pub let internet_option_false_start : UInt
+
+pub let internet_option_flush_state : UInt
+
+pub let internet_option_force_decode : UInt
+
+pub let internet_option_from_cache_timeout : UInt
+
+pub let internet_option_global_callback : UInt
+
+pub let internet_option_handle_type : UInt
+
+pub let internet_option_hibernate_inactive_worker_threads : UInt
+
+pub let internet_option_hsts : UInt
+
+pub let internet_option_http_09 : UInt
+
+pub let internet_option_http_decoding : UInt
+
+pub let internet_option_http_protocol_used : UInt
+
+pub let internet_option_http_version : UInt
+
+pub let internet_option_identity : UInt
+
+pub let internet_option_idle_state : UInt
+
+pub let internet_option_idn : UInt
+
+pub let internet_option_ignore_cert_error_flags : UInt
+
+pub let internet_option_ignore_offline : UInt
+
+pub let internet_option_keep_connection : UInt
+
+pub let internet_option_line_state : UInt
+
+pub let internet_option_listen_timeout : UInt
+
+pub let internet_option_max_conns_per_1_0_server : UInt
+
+pub let internet_option_max_conns_per_proxy : UInt
+
+pub let internet_option_max_conns_per_server : UInt
+
+pub let internet_option_max_query_buffer_size : UInt
+
+pub let internet_option_net_speed : UInt
+
+pub let internet_option_no_http_server_auth : UInt
+
+pub let internet_option_nocache_write_in_private : UInt
+
+pub let internet_option_notify_sending_cookie : UInt
+
+pub let internet_option_offline_mode : UInt
+
+pub let internet_option_offline_semantics : UInt
+
+pub let internet_option_offline_timeout : UInt
+
+pub let internet_option_opt_in_weak_signature : UInt
+
+pub let internet_option_original_connect_flags : UInt
+
+pub let internet_option_parent_handle : UInt
+
+pub let internet_option_parse_line_folding : UInt
+
+pub let internet_option_password : UInt
+
+pub let internet_option_per_connection_option : UInt
+
+pub let internet_option_policy : UInt
+
+pub let internet_option_preserve_referer_on_https_to_http_redirect : UInt
+
+pub let internet_option_preserve_request_server_credentials_on_redirect : UInt
+
+pub let internet_option_proxy : UInt
+
+pub let internet_option_proxy_auth_scheme : UInt
+
+pub let internet_option_proxy_credentials : UInt
+
+pub let internet_option_proxy_from_request : UInt
+
+pub let internet_option_proxy_password : UInt
+
+pub let internet_option_proxy_settings_changed : UInt
+
+pub let internet_option_proxy_username : UInt
+
+pub let internet_option_read_buffer_size : UInt
+
+pub let internet_option_receive_throughput : UInt
+
+pub let internet_option_receive_timeout : UInt
+
+pub let internet_option_referer_token_binding_hostname : UInt
+
+pub let internet_option_refresh : UInt
+
+pub let internet_option_remove_identity : UInt
+
+pub let internet_option_request_annotation : UInt
+
+pub let internet_option_request_annotation_max_length : UInt
+
+pub let internet_option_request_flags : UInt
+
+pub let internet_option_request_priority : UInt
+
+pub let internet_option_request_times : UInt
+
+pub let internet_option_reset : UInt
+
+pub let internet_option_reset_urlcache_session : UInt
+
+pub let internet_option_response_resumable : UInt
+
+pub let internet_option_restore_worker_thread_defaults : UInt
+
+pub let internet_option_secondary_cache_key : UInt
+
+pub let internet_option_secure_failure : UInt
+
+pub let internet_option_security_certificate : UInt
+
+pub let internet_option_security_certificate_struct : UInt
+
+pub let internet_option_security_connection_info : UInt
+
+pub let internet_option_security_flags : UInt
+
+pub let internet_option_security_key_bitness : UInt
+
+pub let internet_option_security_select_client_cert : UInt
+
+pub let internet_option_send_throughput : UInt
+
+pub let internet_option_send_timeout : UInt
+
+pub let internet_option_send_utf8_servername_to_proxy : UInt
+
+pub let internet_option_server_address_info : UInt
+
+pub let internet_option_server_auth_scheme : UInt
+
+pub let internet_option_server_cert_chain_context : UInt
+
+pub let internet_option_server_credentials : UInt
+
+pub let internet_option_session_start_time : UInt
+
+pub let internet_option_set_in_private : UInt
+
+pub let internet_option_settings_changed : UInt
+
+pub let internet_option_socket_nodelay : UInt
+
+pub let internet_option_socket_notification_ioctl : UInt
+
+pub let internet_option_socket_send_buffer_length : UInt
+
+pub let internet_option_source_port : UInt
+
+pub let internet_option_suppress_behavior : UInt
+
+pub let internet_option_suppress_server_auth : UInt
+
+pub let internet_option_sync_mode_automatic_session_disabled : UInt
+
+pub let internet_option_tcp_fast_open : UInt
+
+pub let internet_option_timed_connection_limit_bypass : UInt
+
+pub let internet_option_token_binding_public_key : UInt
+
+pub let internet_option_tunnel_only : UInt
+
+pub let internet_option_unload_notify_event : UInt
+
+pub let internet_option_upgrade_to_web_socket : UInt
+
+pub let internet_option_url : UInt
+
+pub let internet_option_use_first_available_connection : UInt
+
+pub let internet_option_use_modified_header_filter : UInt
+
+pub let internet_option_user_agent : UInt
+
+pub let internet_option_user_pass_server_only : UInt
+
+pub let internet_option_username : UInt
+
+pub let internet_option_version : UInt
+
+pub let internet_option_web_socket_close_timeout : UInt
+
+pub let internet_option_web_socket_keepalive_interval : UInt
+
+pub let internet_option_wpad_sleep : UInt
+
+pub let internet_option_write_buffer_size : UInt
+
+pub let internet_option_wwa_mode : UInt
+
+pub let internet_per_conn_autoconfig_last_detect_time : UInt
+
+pub let internet_per_conn_autoconfig_last_detect_url : UInt
+
+pub let internet_per_conn_autoconfig_reload_delay_mins : UInt
+
+pub let internet_per_conn_autoconfig_secondary_url : UInt
+
+pub let internet_per_conn_autoconfig_url : UInt
+
+pub let internet_per_conn_autodiscovery_flags : UInt
+
+pub let internet_per_conn_flags : UInt
+
+pub let internet_per_conn_flags_ui : UInt
+
+pub let internet_per_conn_proxy_bypass : UInt
+
+pub let internet_per_conn_proxy_server : UInt
+
+pub let internet_prefetch_aborted : UInt
+
+pub let internet_prefetch_complete : UInt
+
+pub let internet_prefetch_progress : UInt
+
+pub let internet_priority_foreground : UInt
+
+pub fn internet_query_data_available_raw(@core.RawAddress, @core.RawAddress, UInt, UInt64) -> @core.RawWin32Call[Int]
+
+pub fn internet_query_fortezza_status_raw(@core.RawAddress, UInt64) -> Int
+
+pub fn internet_query_option_a_raw(@core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn internet_query_option_w_raw(@core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub let internet_ras_installed : UInt
+
+pub fn internet_read_file_ex_a_raw(@core.RawAddress, @core.RawAddress, UInt, UInt64) -> @core.RawWin32Call[Int]
+
+pub fn internet_read_file_ex_w_raw(@core.RawAddress, @core.RawAddress, UInt, UInt64) -> @core.RawWin32Call[Int]
+
+pub fn internet_read_file_raw(@core.RawAddress, @core.RawAddress, UInt, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub let internet_reqflag_async : UInt
+
+pub let internet_reqflag_cache_write_disabled : UInt
+
+pub let internet_reqflag_from_app_cache : UInt
+
+pub let internet_reqflag_from_cache : UInt
+
+pub let internet_reqflag_net_timeout : UInt
+
+pub let internet_reqflag_no_headers : UInt
+
+pub let internet_reqflag_passive : UInt
+
+pub let internet_reqflag_via_proxy : UInt
+
+pub let internet_rfc1123_bufsize : UInt
+
+pub let internet_rfc1123_format : UInt
+
+pub let internet_scheme_default : Int
+
+pub let internet_scheme_file : Int
+
+pub let internet_scheme_first : Int
+
+pub let internet_scheme_ftp : Int
+
+pub let internet_scheme_gopher : Int
+
+pub let internet_scheme_http : Int
+
+pub let internet_scheme_https : Int
+
+pub let internet_scheme_javascript : Int
+
+pub let internet_scheme_last : Int
+
+pub let internet_scheme_mailto : Int
+
+pub let internet_scheme_news : Int
+
+pub let internet_scheme_partial : Int
+
+pub let internet_scheme_res : Int
+
+pub let internet_scheme_socks : Int
+
+pub let internet_scheme_unknown : Int
+
+pub let internet_scheme_vbscript : Int
+
+pub fn internet_security_protocol_to_string_a_raw(UInt, @core.RawAddress, @core.RawAddress, UInt) -> Int
+
+pub fn internet_security_protocol_to_string_w_raw(UInt, @core.RawAddress, @core.RawAddress, UInt) -> Int
+
+pub let internet_service_ftp : UInt
+
+pub let internet_service_gopher : UInt
+
+pub let internet_service_http : UInt
+
+pub let internet_service_url : UInt
+
+pub fn internet_set_cookie_a_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn internet_set_cookie_ex2_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, UInt, @core.RawAddress) -> UInt
+
+pub fn internet_set_cookie_ex_a_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, UInt, UInt64) -> @core.RawWin32Call[UInt]
+
+pub fn internet_set_cookie_ex_w_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, UInt, UInt64) -> @core.RawWin32Call[UInt]
+
+pub fn internet_set_cookie_w_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn internet_set_dial_state_a_raw(@core.RawAddress, UInt, UInt) -> Int
+
+pub fn internet_set_dial_state_raw(@core.RawAddress, UInt, UInt) -> Int
+
+pub fn internet_set_dial_state_w_raw(@core.RawAddress, UInt, UInt) -> Int
+
+pub fn internet_set_file_pointer_raw(@core.RawAddress, Int, @core.RawAddress, UInt, UInt64) -> @core.RawWin32Call[UInt]
+
+pub fn internet_set_option_a_raw(@core.RawAddress, UInt, @core.RawAddress, UInt) -> @core.RawWin32Call[Int]
+
+pub fn internet_set_option_ex_a_raw(@core.RawAddress, UInt, @core.RawAddress, UInt, UInt) -> Int
+
+pub fn internet_set_option_ex_w_raw(@core.RawAddress, UInt, @core.RawAddress, UInt, UInt) -> Int
+
+pub fn internet_set_option_w_raw(@core.RawAddress, UInt, @core.RawAddress, UInt) -> @core.RawWin32Call[Int]
+
+pub fn internet_set_per_site_cookie_decision_a_raw(@core.RawAddress, UInt) -> Int
+
+pub fn internet_set_per_site_cookie_decision_w_raw(@core.RawAddress, UInt) -> Int
+
+pub fn internet_set_status_callback_a_raw(@core.RawAddress, @core.RawAddress) -> @core.RawAddress
+
+pub fn internet_set_status_callback_raw(@core.RawAddress, @core.RawAddress) -> @core.RawAddress
+
+pub fn internet_set_status_callback_w_raw(@core.RawAddress, @core.RawAddress) -> @core.RawAddress
+
+pub fn internet_show_security_info_by_url_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn internet_show_security_info_by_urla_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn internet_show_security_info_by_urlw_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub let internet_state_busy : UInt
+
+pub let internet_state_connected : UInt
+
+pub let internet_state_disconnected : UInt
+
+pub let internet_state_disconnected_by_user : UInt
+
+pub let internet_state_idle : UInt
+
+pub let internet_status_closing_connection : UInt
+
+pub let internet_status_connected_to_server : UInt
+
+pub let internet_status_connecting_to_server : UInt
+
+pub let internet_status_connection_closed : UInt
+
+pub let internet_status_cookie : UInt
+
+pub let internet_status_cookie_history : UInt
+
+pub let internet_status_cookie_received : UInt
+
+pub let internet_status_cookie_sent : UInt
+
+pub let internet_status_ctl_response_received : UInt
+
+pub let internet_status_detecting_proxy : UInt
+
+pub let internet_status_end_browser_session : UInt
+
+pub let internet_status_filter_closed : UInt
+
+pub let internet_status_filter_closing : UInt
+
+pub let internet_status_filter_connected : UInt
+
+pub let internet_status_filter_connecting : UInt
+
+pub let internet_status_filter_handle_closing : UInt
+
+pub let internet_status_filter_handle_created : UInt
+
+pub let internet_status_filter_prefetch : UInt
+
+pub let internet_status_filter_received : UInt
+
+pub let internet_status_filter_receiving : UInt
+
+pub let internet_status_filter_redirect : UInt
+
+pub let internet_status_filter_resolved : UInt
+
+pub let internet_status_filter_resolving : UInt
+
+pub let internet_status_filter_sending : UInt
+
+pub let internet_status_filter_sent : UInt
+
+pub let internet_status_filter_state_change : UInt
+
+pub let internet_status_handle_closing : UInt
+
+pub let internet_status_handle_created : UInt
+
+pub let internet_status_intermediate_response : UInt
+
+pub let internet_status_name_resolved : UInt
+
+pub let internet_status_p3_p_header : UInt
+
+pub let internet_status_p3_p_policyref : UInt
+
+pub let internet_status_prefetch : UInt
+
+pub let internet_status_privacy_impacted : UInt
+
+pub let internet_status_proxy_credentials : UInt
+
+pub let internet_status_receiving_response : UInt
+
+pub let internet_status_redirect : UInt
+
+pub let internet_status_request_complete : UInt
+
+pub let internet_status_request_headers_set : UInt
+
+pub let internet_status_request_sent : UInt
+
+pub let internet_status_resolving_name : UInt
+
+pub let internet_status_response_headers_set : UInt
+
+pub let internet_status_response_received : UInt
+
+pub let internet_status_sending_cookie : UInt
+
+pub let internet_status_sending_request : UInt
+
+pub let internet_status_server_connection_state : UInt
+
+pub let internet_status_server_credentials : UInt
+
+pub let internet_status_state_change : UInt
+
+pub let internet_status_user_input_required : UInt
+
+pub let internet_suppress_cookie_persist : UInt
+
+pub let internet_suppress_cookie_persist_reset : UInt
+
+pub let internet_suppress_cookie_policy : UInt
+
+pub let internet_suppress_cookie_policy_reset : UInt
+
+pub let internet_suppress_reset_all : UInt
+
+pub fn internet_time_from_system_time_a_raw(@core.RawAddress, UInt, @core.RawAddress, UInt) -> @core.RawWin32Call[Int]
+
+pub fn internet_time_from_system_time_raw(@core.RawAddress, UInt, @core.RawAddress, UInt) -> @core.RawWin32Call[Int]
+
+pub fn internet_time_from_system_time_w_raw(@core.RawAddress, UInt, @core.RawAddress, UInt) -> @core.RawWin32Call[Int]
+
+pub fn internet_time_to_system_time_a_raw(@core.RawAddress, @core.RawAddress, UInt) -> @core.RawWin32Call[Int]
+
+pub fn internet_time_to_system_time_raw(@core.RawAddress, @core.RawAddress, UInt) -> @core.RawWin32Call[Int]
+
+pub fn internet_time_to_system_time_w_raw(@core.RawAddress, @core.RawAddress, UInt) -> @core.RawWin32Call[Int]
+
+pub fn internet_unlock_request_file_raw(@core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn internet_write_file_ex_a_raw(@core.RawAddress, @core.RawAddress, UInt, UInt64) -> Int
+
+pub fn internet_write_file_ex_w_raw(@core.RawAddress, @core.RawAddress, UInt, UInt64) -> Int
+
+pub fn internet_write_file_raw(@core.RawAddress, @core.RawAddress, UInt, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub let irf_async : UInt
+
+pub let irf_no_wait : UInt
+
+pub let irf_sync : UInt
+
+pub let irf_use_context : UInt
+
+pub fn is_domain_legal_cookie_domain_a_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn is_domain_legal_cookie_domain_w_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn is_host_in_proxy_bypass_list_raw(Int, @core.RawAddress, UInt) -> Int
+
+pub fn is_profiles_enabled_raw() -> Int
+
+pub fn is_url_cache_entry_expired_a_raw(@core.RawAddress, UInt, @core.RawAddress) -> Int
+
+pub fn is_url_cache_entry_expired_w_raw(@core.RawAddress, UInt, @core.RawAddress) -> Int
+
+pub let iso_force_disconnected : UInt
+
+pub let iso_force_offline : UInt
+
+pub let iso_global : UInt
+
+pub let iso_registry : UInt
+
+pub fn load_url_cache_content_raw() -> Int
+
+pub let local_namespace_prefix : String
+
+pub let local_namespace_prefix_w : String
+
+pub let max_cache_entry_info_size : UInt
+
+pub let max_gopher_attribute_name : UInt
+
+pub let max_gopher_category_name : UInt
+
+pub let max_gopher_display_text : UInt
+
+pub let max_gopher_host_name : UInt
+
+pub let max_gopher_selector_text : UInt
+
+pub let max_privacy_settings : UInt
+
+pub let min_gopher_attribute_length : UInt
+
+pub let must_revalidate_cache_entry : UInt
+
+pub let name_resolution_end : Int
+
+pub let name_resolution_start : Int
+
+pub let normal_cache_entry : UInt
+
+pub fn on_event(@core.RawAddress, UInt, UInt) -> Unit raise @core.WindowsError
+
+pub fn on_event_raw(@core.RawAddress, UInt, UInt) -> Int
+
+pub let other_user_cache_entry : UInt
+
+pub fn parse_x509_encoded_certificate_for_list_box_entry_raw(@core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub let pending_delete_cache_entry : UInt
+
+pub fn perform_operation_over_url_cache_a_raw(@core.RawAddress, UInt, UInt, Int64, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub let policy_extension_type_none : Int
+
+pub let policy_extension_type_winhttp : Int
+
+pub let policy_extension_type_wininet : Int
+
+pub let policy_extension_version1 : Int
+
+pub let post_check_cache_entry : UInt
+
+pub let post_response_cache_entry : UInt
+
+pub fn privacy_get_zone_preference_w_raw(UInt, UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub let privacy_impacted_cache_entry : UInt
+
+pub let privacy_mode_cache_entry : UInt
+
+pub fn privacy_set_zone_preference_w_raw(UInt, UInt, UInt, @core.RawAddress) -> UInt
+
+pub let privacy_template_advanced : UInt
+
+pub let privacy_template_custom : UInt
+
+pub let privacy_template_high : UInt
+
+pub let privacy_template_low : UInt
+
+pub let privacy_template_max : UInt
+
+pub let privacy_template_medium : UInt
+
+pub let privacy_template_medium_high : UInt
+
+pub let privacy_template_medium_low : UInt
+
+pub let privacy_template_no_cookies : UInt
+
+pub let privacy_type_first_party : UInt
+
+pub let privacy_type_third_party : UInt
+
+pub let proof_of_possession_allow_silent_requests : UInt
+
+pub let proof_of_possession_default : UInt
+
+pub let proxy_auto_detect_type_dhcp : UInt
+
+pub let proxy_auto_detect_type_dns_a : UInt
+
+pub let proxy_type_auto_detect : UInt
+
+pub let proxy_type_auto_proxy_url : UInt
+
+pub let proxy_type_direct : UInt
+
+pub let proxy_type_proxy : UInt
+
+pub fn read_guids_for_connected_networks_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn read_url_cache_entry_stream_ex_raw(@core.RawAddress, UInt64, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn read_url_cache_entry_stream_raw(@core.RawAddress, UInt, @core.RawAddress, @core.RawAddress, UInt) -> @core.RawWin32Call[Int]
+
+pub let redirect_cache_entry : UInt
+
+pub fn register_url_cache_notification_raw(@core.RawAddress, UInt, Int64, UInt, UInt) -> Int
+
+pub let regstr_dial_autoconnect : String
+
+pub let regstr_leash_legacy_cookies : String
+
+pub fn resume_suspended_download_raw(@core.RawAddress, UInt) -> @core.RawWin32Call[Int]
+
+pub fn retrieve_url_cache_entry_file_a_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, UInt) -> @core.RawWin32Call[Int]
+
+pub fn retrieve_url_cache_entry_file_w_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, UInt) -> @core.RawWin32Call[Int]
+
+pub fn retrieve_url_cache_entry_stream_a_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, Int, UInt) -> @core.RawWin32Call[@core.RawAddress]
+
+pub fn retrieve_url_cache_entry_stream_w_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, Int, UInt) -> @core.RawWin32Call[@core.RawAddress]
+
+pub fn run_once_url_cache_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, Int) -> UInt
+
+pub let security_flag_128_bit : UInt
+
+pub let security_flag_40_bit : UInt
+
+pub let security_flag_56_bit : UInt
+
+pub let security_flag_fortezza : UInt
+
+pub let security_flag_ietfssl4 : UInt
+
+pub let security_flag_ignore_redirect_to_http : UInt
+
+pub let security_flag_ignore_redirect_to_https : UInt
+
+pub let security_flag_ignore_revocation : UInt
+
+pub let security_flag_ignore_weak_signature : UInt
+
+pub let security_flag_ignore_wrong_usage : UInt
+
+pub let security_flag_normalbitness : UInt
+
+pub let security_flag_opt_in_weak_signature : UInt
+
+pub let security_flag_pct : UInt
+
+pub let security_flag_pct4 : UInt
+
+pub let security_flag_ssl : UInt
+
+pub let security_flag_ssl3 : UInt
+
+pub let security_flag_unknownbit : UInt
+
+pub fn set_property(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn set_property_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn set_url_cache_config_info_a_raw(@core.RawAddress, UInt) -> Int
+
+pub fn set_url_cache_config_info_w_raw(@core.RawAddress, UInt) -> Int
+
+pub fn set_url_cache_entry_group_a_raw(@core.RawAddress, UInt, Int64, @core.RawAddress, UInt, @core.RawAddress) -> Int
+
+pub fn set_url_cache_entry_group_raw(@core.RawAddress, UInt, Int64, @core.RawAddress, UInt, @core.RawAddress) -> Int
+
+pub fn set_url_cache_entry_group_w_raw(@core.RawAddress, UInt, Int64, @core.RawAddress, UInt, @core.RawAddress) -> Int
+
+pub fn set_url_cache_entry_info_a_raw(@core.RawAddress, @core.RawAddress, UInt) -> @core.RawWin32Call[Int]
+
+pub fn set_url_cache_entry_info_w_raw(@core.RawAddress, @core.RawAddress, UInt) -> @core.RawWin32Call[Int]
+
+pub fn set_url_cache_group_attribute_a_raw(Int64, UInt, UInt, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn set_url_cache_group_attribute_w_raw(Int64, UInt, UInt, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn set_url_cache_header_data_raw(UInt, UInt) -> Int
+
+pub let shortpath_cache_entry : UInt
+
+pub fn show_client_auth_certs_raw(@core.RawAddress) -> UInt
+
+pub fn show_security_info_raw(@core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn show_x509_encoded_certificate_raw(@core.RawAddress, @core.RawAddress, UInt) -> UInt
+
+pub let sparse_cache_entry : UInt
+
+pub let static_cache_entry : UInt
+
+pub let sticky_cache_entry : UInt
+
+pub let tls_handshake_end : Int
+
+pub let tls_handshake_start : Int
+
+pub let track_offline_cache_entry : UInt
+
+pub let track_online_cache_entry : UInt
+
+pub fn unlock_url_cache_entry_file_a_raw(@core.RawAddress, UInt) -> @core.RawWin32Call[Int]
+
+pub fn unlock_url_cache_entry_file_raw(@core.RawAddress, UInt) -> @core.RawWin32Call[Int]
+
+pub fn unlock_url_cache_entry_file_w_raw(@core.RawAddress, UInt) -> @core.RawWin32Call[Int]
+
+pub fn unlock_url_cache_entry_stream_raw(@core.RawAddress, UInt) -> @core.RawWin32Call[Int]
+
+pub fn update_url_cache_content_path_raw(@core.RawAddress) -> Int
+
+pub fn url_cache_check_entries_exist_raw(@core.RawAddress, UInt, @core.RawAddress) -> UInt
+
+pub fn url_cache_close_entry_handle_raw(@core.RawAddress) -> Unit
+
+pub fn url_cache_container_set_entry_maximum_age_raw(@core.RawAddress, UInt) -> UInt
+
+pub fn url_cache_create_container_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, UInt64, UInt) -> UInt
+
+pub fn url_cache_find_first_entry_raw(@core.RawAddress, UInt, UInt, Int64, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn url_cache_find_next_entry_raw(@core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn url_cache_free_entry_info_raw(@core.RawAddress) -> Unit
+
+pub fn url_cache_free_global_space_raw(UInt64, UInt) -> UInt
+
+pub fn url_cache_get_content_paths_raw(@core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn url_cache_get_entry_info_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn url_cache_get_global_cache_size_raw(UInt, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn url_cache_get_global_limit_raw(Int, @core.RawAddress) -> UInt
+
+pub let url_cache_limit_type_app_container : Int
+
+pub let url_cache_limit_type_app_container_total : Int
+
+pub let url_cache_limit_type_ie : Int
+
+pub let url_cache_limit_type_ie_total : Int
+
+pub let url_cache_limit_type_num : Int
+
+pub fn url_cache_read_entry_stream_raw(@core.RawAddress, UInt64, @core.RawAddress, UInt, @core.RawAddress) -> UInt
+
+pub fn url_cache_reload_settings_raw() -> UInt
+
+pub fn url_cache_retrieve_entry_file_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn url_cache_retrieve_entry_stream_raw(@core.RawAddress, @core.RawAddress, Int, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn url_cache_server_raw() -> UInt
+
+pub fn url_cache_set_global_limit_raw(Int, UInt64) -> UInt
+
+pub fn url_cache_update_entry_extra_data_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, UInt) -> UInt
+
+pub let urlhistory_cache_entry : UInt
+
+pub let wininet_api_flag_async : UInt
+
+pub let wininet_api_flag_sync : UInt
+
+pub let wininet_api_flag_use_context : UInt
+
+pub let wininet_sync_mode_always : Int
+
+pub let wininet_sync_mode_automatic : Int
+
+pub let wininet_sync_mode_default : Int
+
+pub let wininet_sync_mode_never : Int
+
+pub let wininet_sync_mode_on_expiry : Int
+
+pub let wininet_sync_mode_once_per_session : Int
+
+pub let wpad_cache_delete_all : Int
+
+pub let wpad_cache_delete_current : Int
+
+pub let xdr_cache_entry : UInt
+
+// Errors
+
+// Types and methods
+
+// Type aliases
+pub using @02de1f47977223f1 {type APPCACHEDOWNLOADENTRY_318689d6a15b as APPCACHEDOWNLOADENTRY}
+
+pub using @02de1f47977223f1 {type APPCACHEDOWNLOADLIST_c46040a047d2 as APPCACHEDOWNLOADLIST}
+
+pub using @02de1f47977223f1 {type APPCACHEFINALIZESTATE_998ca002a24b as APPCACHEFINALIZESTATE}
+
+pub using @02de1f47977223f1 {type APPCACHEGROUPINFO_6f079a61c291 as APPCACHEGROUPINFO}
+
+pub using @02de1f47977223f1 {type APPCACHEGROUPLIST_41560be2d399 as APPCACHEGROUPLIST}
+
+pub using @02de1f47977223f1 {type APPCACHESTATE_c051f222ef8a as APPCACHESTATE}
+
+pub using @02de1f47977223f1 {type AUTOPROXYSCRIPTBUFFER_980fb25cf1ef as AUTOPROXYSCRIPTBUFFER}
+
+pub using @02de1f47977223f1 {type AnonymousEStruct_3c56b7e2b359 as AnonymousEStruct_3c56b7e2b3}
+
+pub using @02de1f47977223f1 {type AnonymousEStruct_85a44dc4ce7b as AnonymousEStruct_85a44dc4ce}
+
+pub using @02de1f47977223f1 {type AnonymousEStruct_f548a578c457 as AnonymousEStruct_f548a578c4}
+
+pub using @02de1f47977223f1 {type AnonymousEUnion_0f2165060dd7 as AnonymousEUnion_0f2165060d}
+
+pub using @02de1f47977223f1 {type AnonymousEUnion_1a2fafb9891d as AnonymousEUnion_1a2fafb989}
+
+pub using @02de1f47977223f1 {type AnonymousEUnion_6a30eff193f3 as AnonymousEUnion_6a30eff193}
+
+pub using @02de1f47977223f1 {type AnonymousEUnion_88e7d53db298 as AnonymousEUnion_88e7d53db2}
+
+pub using @02de1f47977223f1 {type AnonymousEUnion_e6019dfd6347 as AnonymousEUnion_e6019dfd63}
+
+pub using @02de1f47977223f1 {type AttributeTypeEUnion_f0b391ea26d3 as AttributeTypeEUnion}
+
+pub using @02de1f47977223f1 {type AutoProxyHelperFunctions_94a995422dd1 as AutoProxyHelperFunctions}
+
+pub using @02de1f47977223f1 {type AutoProxyHelperVtbl_46e5a9aa9531 as AutoProxyHelperVtbl}
+
+pub using @02de1f47977223f1 {type CACHECONFIG_11b8a2895119 as CACHECONFIG}
+
+pub using @02de1f47977223f1 {type CACHEOPERATOR_41cda40dd412 as CACHEOPERATOR}
+
+pub using @02de1f47977223f1 {type COOKIEDLGINFO_a63c69aec30f as COOKIEDLGINFO}
+
+pub using @02de1f47977223f1 {type CookieDecision_802fc813465e as CookieDecision}
+
+pub using @02de1f47977223f1 {type FORTCMD_041adf094abe as FORTCMD}
+
+pub using @02de1f47977223f1 {type FORTSTAT_4de6656c87f4 as FORTSTAT}
+
+pub using @02de1f47977223f1 {type FTPFLAGS_52ff882f4dcb as FTPFLAGS}
+
+pub using @02de1f47977223f1 {type GOPHERABSTRACTATTRIBUTETYPE_ab070bc5d232 as GOPHERABSTRACTATTRIBUTETYPE}
+
+pub using @02de1f47977223f1 {type GOPHERADMINATTRIBUTETYPE_aae1ae7db106 as GOPHERADMINATTRIBUTETYPE}
+
+pub using @02de1f47977223f1 {type GOPHERASKATTRIBUTETYPE_a66006ff3b3a as GOPHERASKATTRIBUTETYPE}
+
+pub using @02de1f47977223f1 {type GOPHERATTRIBUTEENUMERATOR_9e37e8b82f13 as GOPHERATTRIBUTEENUMERATOR}
+
+pub using @02de1f47977223f1 {type GOPHERATTRIBUTETYPE_5ca34a91bab6 as GOPHERATTRIBUTETYPE}
+
+pub using @02de1f47977223f1 {type GOPHERFINDDATAA_845251ca0dbe as GOPHERFINDDATAA}
+
+pub using @02de1f47977223f1 {type GOPHERFINDDATAW_9df3d85ebba3 as GOPHERFINDDATAW}
+
+pub using @02de1f47977223f1 {type GOPHERGEOGRAPHICALLOCATIONATTRIBUTETYPE_f96ba2ea7fd8 as GOPHERGEOGRAPHICALLOCATIONATTRIBUTETYPE}
+
+pub using @02de1f47977223f1 {type GOPHERLOCATIONATTRIBUTETYPE_900378cf9121 as GOPHERLOCATIONATTRIBUTETYPE}
+
+pub using @02de1f47977223f1 {type GOPHERMODDATEATTRIBUTETYPE_6eb0a756e82e as GOPHERMODDATEATTRIBUTETYPE}
+
+pub using @02de1f47977223f1 {type GOPHERORGANIZATIONATTRIBUTETYPE_90d8444aa77d as GOPHERORGANIZATIONATTRIBUTETYPE}
+
+pub using @02de1f47977223f1 {type GOPHERPROVIDERATTRIBUTETYPE_9074f548fdd3 as GOPHERPROVIDERATTRIBUTETYPE}
+
+pub using @02de1f47977223f1 {type GOPHERSCOREATTRIBUTETYPE_d48829684a64 as GOPHERSCOREATTRIBUTETYPE}
+
+pub using @02de1f47977223f1 {type GOPHERSCORERANGEATTRIBUTETYPE_c474202e7e63 as GOPHERSCORERANGEATTRIBUTETYPE}
+
+pub using @02de1f47977223f1 {type GOPHERSITEATTRIBUTETYPE_e739c0a5c41d as GOPHERSITEATTRIBUTETYPE}
+
+pub using @02de1f47977223f1 {type GOPHERTIMEZONEATTRIBUTETYPE_6d00719d720e as GOPHERTIMEZONEATTRIBUTETYPE}
+
+pub using @02de1f47977223f1 {type GOPHERTTLATTRIBUTETYPE_62c517880495 as GOPHERTTLATTRIBUTETYPE}
+
+pub using @02de1f47977223f1 {type GOPHERTYPE_69a9dfcd75f6 as GOPHERTYPE}
+
+pub using @02de1f47977223f1 {type GOPHERUNKNOWNATTRIBUTETYPE_6b67ee866f14 as GOPHERUNKNOWNATTRIBUTETYPE}
+
+pub using @02de1f47977223f1 {type GOPHERVERONICAATTRIBUTETYPE_b013e0318f6b as GOPHERVERONICAATTRIBUTETYPE}
+
+pub using @02de1f47977223f1 {type GOPHERVERSIONATTRIBUTETYPE_8d59c18edc8a as GOPHERVERSIONATTRIBUTETYPE}
+
+pub using @02de1f47977223f1 {type GOPHERVIEWATTRIBUTETYPE_3100fa9d96b2 as GOPHERVIEWATTRIBUTETYPE}
+
+pub using @02de1f47977223f1 {type HTTPADDREQFLAG_432b8323ee38 as HTTPADDREQFLAG}
+
+pub using @02de1f47977223f1 {type HTTPPOLICYEXTENSIONINIT_1b2f934d6a0c as HTTPPOLICYEXTENSIONINIT}
+
+pub using @02de1f47977223f1 {type HTTPPOLICYEXTENSIONSHUTDOWN_c8c7dc6e6211 as HTTPPOLICYEXTENSIONSHUTDOWN}
+
+pub using @02de1f47977223f1 {type HTTPPOLICYEXTENSIONTYPE_ee25c18053bd as HTTPPOLICYEXTENSIONTYPE}
+
+pub using @02de1f47977223f1 {type HTTPPOLICYEXTENSIONVERSION_80f93cc89473 as HTTPPOLICYEXTENSIONVERSION}
+
+pub using @02de1f47977223f1 {type HTTPPUSHNOTIFICATIONSTATUS_1856e232de0b as HTTPPUSHNOTIFICATIONSTATUS}
+
+pub using @02de1f47977223f1 {type HTTPPUSHTRANSPORTSETTING_7a1413f09753 as HTTPPUSHTRANSPORTSETTING}
+
+pub using @02de1f47977223f1 {type HTTPPUSHWAITHANDLE_8bc317b39407 as HTTPPUSHWAITHANDLE}
+
+pub using @02de1f47977223f1 {type HTTPPUSHWAITTYPE_96a6c8ef48f4 as HTTPPUSHWAITTYPE}
+
+pub using @02de1f47977223f1 {type HTTPREQUESTTIMES_e418b5f24de4 as HTTPREQUESTTIMES}
+
+pub using @02de1f47977223f1 {type HTTPWEBSOCKETASYNCRESULT_e162c7f43e16 as HTTPWEBSOCKETASYNCRESULT}
+
+pub using @02de1f47977223f1 {type HTTPWEBSOCKETBUFFERTYPE_fbec2caf640c as HTTPWEBSOCKETBUFFERTYPE}
+
+pub using @02de1f47977223f1 {type HTTPWEBSOCKETCLOSESTATUS_1ba122f0ef74 as HTTPWEBSOCKETCLOSESTATUS}
+
+pub using @02de1f47977223f1 {type HTTPWEBSOCKETOPERATION_542a338dc863 as HTTPWEBSOCKETOPERATION}
+
+pub using @02de1f47977223f1 {type IDialBranding_771b001e4599 as IDialBranding}
+
+pub using @02de1f47977223f1 {type IDialEngine_35d7ccf01fcd as IDialEngine}
+
+pub using @02de1f47977223f1 {type IDialEventSink_e0be06cd1150 as IDialEventSink}
+
+pub using @02de1f47977223f1 {type INTERNETACCESSTYPE_68053b90c079 as INTERNETACCESSTYPE}
+
+pub using @02de1f47977223f1 {type INTERNETASYNCRESULT_9b53bc8c1c7a as INTERNETASYNCRESULT}
+
+pub using @02de1f47977223f1 {type INTERNETAUTHNOTIFYDATA_2a8a039d71b3 as INTERNETAUTHNOTIFYDATA}
+
+pub using @02de1f47977223f1 {type INTERNETAUTODIAL_ba47d68d4cde as INTERNETAUTODIAL}
+
+pub using @02de1f47977223f1 {type INTERNETBUFFERSA_3f094f22b004 as INTERNETBUFFERSA}
+
+pub using @02de1f47977223f1 {type INTERNETBUFFERSW_060926cb653b as INTERNETBUFFERSW}
+
+pub using @02de1f47977223f1 {type INTERNETCACHECONFIGINFOA_7587414d43af as INTERNETCACHECONFIGINFOA}
+
+pub using @02de1f47977223f1 {type INTERNETCACHECONFIGINFOW_1b5e3e565702 as INTERNETCACHECONFIGINFOW}
+
+pub using @02de1f47977223f1 {type INTERNETCACHECONFIGPATHENTRYA_7bfc57c880d2 as INTERNETCACHECONFIGPATHENTRYA}
+
+pub using @02de1f47977223f1 {type INTERNETCACHECONFIGPATHENTRYW_2e17fee24fdd as INTERNETCACHECONFIGPATHENTRYW}
+
+pub using @02de1f47977223f1 {type INTERNETCACHECONTAINERINFOA_6f38e63d6638 as INTERNETCACHECONTAINERINFOA}
+
+pub using @02de1f47977223f1 {type INTERNETCACHECONTAINERINFOW_8b4aaa14ec43 as INTERNETCACHECONTAINERINFOW}
+
+pub using @02de1f47977223f1 {type INTERNETCACHEENTRYINFOA_9fd234ca355e as INTERNETCACHEENTRYINFOA}
+
+pub using @02de1f47977223f1 {type INTERNETCACHEENTRYINFOW_8b7ce065f2c3 as INTERNETCACHEENTRYINFOW}
+
+pub using @02de1f47977223f1 {type INTERNETCACHEGROUPINFOA_1092394c08c9 as INTERNETCACHEGROUPINFOA}
+
+pub using @02de1f47977223f1 {type INTERNETCACHEGROUPINFOW_0efc04091f4d as INTERNETCACHEGROUPINFOW}
+
+pub using @02de1f47977223f1 {type INTERNETCACHETIMESTAMPS_51d453a477d7 as INTERNETCACHETIMESTAMPS}
+
+pub using @02de1f47977223f1 {type INTERNETCALLBACKCOOKIE_8f3b32399bdf as INTERNETCALLBACKCOOKIE}
+
+pub using @02de1f47977223f1 {type INTERNETCERTIFICATEINFO_84d8b3311aa5 as INTERNETCERTIFICATEINFO}
+
+pub using @02de1f47977223f1 {type INTERNETCONNECTEDINFO_cd51f6ee9126 as INTERNETCONNECTEDINFO}
+
+pub using @02de1f47977223f1 {type INTERNETCONNECTION_4cdc367f973f as INTERNETCONNECTION}
+
+pub using @02de1f47977223f1 {type INTERNETCOOKIE_6b6898442ff4 as INTERNETCOOKIE}
+
+pub using @02de1f47977223f1 {type INTERNETCOOKIE2_ba11d924eff4 as INTERNETCOOKIE2}
+
+pub using @02de1f47977223f1 {type INTERNETCOOKIEFLAGS_aa5cb2d9f9e9 as INTERNETCOOKIEFLAGS}
+
+pub using @02de1f47977223f1 {type INTERNETCREDENTIALS_95c32814e01c as INTERNETCREDENTIALS}
+
+pub using @02de1f47977223f1 {type INTERNETDIAGNOSTICSOCKETINFO_3671bc0fa4c3 as INTERNETDIAGNOSTICSOCKETINFO}
+
+pub using @02de1f47977223f1 {type INTERNETDOWNLOADMODEHANDLE_ac9102521bbb as INTERNETDOWNLOADMODEHANDLE}
+
+pub using @02de1f47977223f1 {type INTERNETENDBROWSERSESSIONDATA_054934818672 as INTERNETENDBROWSERSESSIONDATA}
+
+pub using @02de1f47977223f1 {type INTERNETPERCONN_207f3b8a51f3 as INTERNETPERCONN}
+
+pub using @02de1f47977223f1 {type INTERNETPERCONNOPTIONA_752ae3582087 as INTERNETPERCONNOPTIONA}
+
+pub using @02de1f47977223f1 {type INTERNETPERCONNOPTIONLISTA_7565258bdb3a as INTERNETPERCONNOPTIONLISTA}
+
+pub using @02de1f47977223f1 {type INTERNETPERCONNOPTIONLISTW_f0217b51e895 as INTERNETPERCONNOPTIONLISTW}
+
+pub using @02de1f47977223f1 {type INTERNETPERCONNOPTIONW_3b10a30057be as INTERNETPERCONNOPTIONW}
+
+pub using @02de1f47977223f1 {type INTERNETPREFETCHSTATUS_bfae3d8f5c03 as INTERNETPREFETCHSTATUS}
+
+pub using @02de1f47977223f1 {type INTERNETPROXYINFO_19ea2e1c5fa2 as INTERNETPROXYINFO}
+
+pub using @02de1f47977223f1 {type INTERNETSCHEME_e2c7f88f380c as INTERNETSCHEME}
+
+pub using @02de1f47977223f1 {type INTERNETSECURITYCONNECTIONINFO_c985fce9a5c8 as INTERNETSECURITYCONNECTIONINFO}
+
+pub using @02de1f47977223f1 {type INTERNETSECURITYINFO_0517418289a4 as INTERNETSECURITYINFO}
+
+pub using @02de1f47977223f1 {type INTERNETSERVERCONNECTIONSTATE_fc886d8bcc9c as INTERNETSERVERCONNECTIONSTATE}
+
+pub using @02de1f47977223f1 {type INTERNETSTATE_45d104045db9 as INTERNETSTATE}
+
+pub using @02de1f47977223f1 {type INTERNETVERSIONINFO_6c1bc9909dbd as INTERNETVERSIONINFO}
+
+pub using @02de1f47977223f1 {type IProofOfPossessionCookieInfoManager_cef10de99577 as IProofOfPossessionCookieInfoManager}
+
+pub using @02de1f47977223f1 {type IProofOfPossessionCookieInfoManager2_a6b2e0f93577 as IProofOfPossessionCookieInfoManager2}
+
+pub using @02de1f47977223f1 {type IProofOfPossessionCookieInfoManager3_21f9495ec88e as IProofOfPossessionCookieInfoManager3}
+
+pub using @02de1f47977223f1 {type IProofOfPossessionCookieInfoManager4_039d974b883b as IProofOfPossessionCookieInfoManager4}
+
+pub using @02de1f47977223f1 {type IncomingCookieState_27f38de5200c as IncomingCookieState}
+
+pub using @02de1f47977223f1 {type InternetCookieHistory_146d0171203c as InternetCookieHistory}
+
+pub using @02de1f47977223f1 {type InternetCookieState_47ab9e7b3168 as InternetCookieState}
+
+pub using @02de1f47977223f1 {type LPINTERNETSTATUSCALLBACK_e2cad01c7953 as LPINTERNETSTATUSCALLBACK}
+
+pub using @02de1f47977223f1 {type OutgoingCookieState_61da28a6b534 as OutgoingCookieState}
+
+pub using @02de1f47977223f1 {type PFNAUTHNOTIFY_782c96b56f79 as PFNAUTHNOTIFY}
+
+pub using @02de1f47977223f1 {type PFNDIALHANDLER_e88a38cfcbb6 as PFNDIALHANDLER}
+
+pub using @02de1f47977223f1 {type PROOFOFPOSSESSIONFLAGS_3d74fa52107b as PROOFOFPOSSESSIONFLAGS}
+
+pub using @02de1f47977223f1 {type PROXYAUTODETECTTYPE_15578feed644 as PROXYAUTODETECTTYPE}
+
+pub using @02de1f47977223f1 {type PfnInternetDeInitializeAutoProxyDll_9d4a212a0f0d as PfnInternetDeInitializeAutoProxyDll}
+
+pub using @02de1f47977223f1 {type PfnInternetGetProxyInfo_1be3c2716901 as PfnInternetGetProxyInfo}
+
+pub using @02de1f47977223f1 {type PfnInternetInitializeAutoProxyDll_8f56d3238d1c as PfnInternetInitializeAutoProxyDll}
+
+pub using @02de1f47977223f1 {type ProofOfPossessionCookieInfo_2fe7e36ea8b7 as ProofOfPossessionCookieInfo}
+
+pub using @02de1f47977223f1 {type ProofOfPossessionCookieInfoManager_5ef6767004b2 as ProofOfPossessionCookieInfoManager}
+
+pub using @02de1f47977223f1 {type REQUESTTIMES_92c1f7d5514f as REQUESTTIMES}
+
+pub using @02de1f47977223f1 {type URLCACHEENTRYINFO_4e59451be93c as URLCACHEENTRYINFO}
+
+pub using @02de1f47977223f1 {type URLCACHELIMITTYPE_eaf418dfdacb as URLCACHELIMITTYPE}
+
+pub using @02de1f47977223f1 {type URLCOMPONENTSA_7935879ab6f7 as URLCOMPONENTSA}
+
+pub using @02de1f47977223f1 {type URLCOMPONENTSW_2ce7814f5a96 as URLCOMPONENTSW}
+
+pub using @02de1f47977223f1 {type ValueEUnion_6edf092b0396 as ValueEUnion_6edf092b03}
+
+pub using @02de1f47977223f1 {type ValueEUnion_bea58721ed38 as ValueEUnion_bea58721ed}
+
+pub using @02de1f47977223f1 {type WININETPROXYINFO_24955b58aaa0 as WININETPROXYINFO}
+
+pub using @02de1f47977223f1 {type WININETPROXYINFOLIST_d55f7e789a3d as WININETPROXYINFOLIST}
+
+pub using @02de1f47977223f1 {type WININETSYNCMODE_769622a085c5 as WININETSYNCMODE}
+
+pub using @02de1f47977223f1 {type WPADCACHEDELETE_73a4fdc57ed7 as WPADCACHEDELETE}
+
+// Traits
+

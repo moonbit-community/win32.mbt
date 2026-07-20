@@ -1,0 +1,206 @@
+// Generated using `moon info`, DON'T EDIT IT
+package "moonbit-community/win32-bindings/windows/devices/geolocation/geofencing"
+
+import {
+  "moonbit-community/win32-bindings/runtime/com",
+  "moonbit-community/win32-bindings/runtime/core",
+  "moonbit-community/win32-bindings/scc/969156b7108a46b0",
+  "moonbitlang/core/ref",
+}
+
+// Values
+pub fn activatable_factory(@core.Guid) -> @com.ComPtr[@com.IInspectable] raise @core.WindowsError
+
+pub fn add_geofence_state_changed(@core.RawAddress, @core.RawAddress) -> Int64 raise @core.WindowsError
+
+pub fn add_geofence_state_changed_raw(@core.RawAddress, @core.RawAddress, @ref.Ref[Int64]) -> Int
+
+pub fn add_status_changed(@core.RawAddress, @core.RawAddress) -> Int64 raise @core.WindowsError
+
+pub fn add_status_changed_raw(@core.RawAddress, @core.RawAddress, @ref.Ref[Int64]) -> Int
+
+pub fn create_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn create_with_monitor_states_and_dwell_time_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, UInt, UInt, Int64, @ref.Ref[UInt64]) -> Int
+
+pub fn create_with_monitor_states_dwell_time_start_time_and_duration_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, UInt, UInt, Int64, Int64, Int64, @ref.Ref[UInt64]) -> Int
+
+pub fn create_with_monitor_states_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, UInt, UInt, @ref.Ref[UInt64]) -> Int
+
+pub let current_aaadeebc92 : String
+
+pub let current_b4572cfe3d : String
+
+pub let disabled : Int
+
+pub let duration_8aa3bb2956 : String
+
+pub let duration_eb60e9b3c9 : String
+
+pub let dwell_time_8421a31120 : String
+
+pub let dwell_time_cf7bdc9b5f : String
+
+pub let entered_14e60bb7f8 : UInt
+
+pub let entered_613d4fc956 : UInt
+
+pub let exited_03a4243874 : UInt
+
+pub let exited_13997f8e8f : UInt
+
+pub let expired : Int
+
+pub let geofence_de77386878 : String
+
+pub let geofence_ec2868b06f : String
+
+pub let geofence_state_changed_6847ff39dd : String
+
+pub let geofence_state_changed_ff845735ca : String
+
+pub let geofences_07e431dc8c : String
+
+pub let geofences_c7ff9f955a : String
+
+pub let geoposition_8c14afc042 : String
+
+pub let geoposition_c47729f596 : String
+
+pub let geoshape_730e23d007 : String
+
+pub let geoshape_e79d7250cb : String
+
+pub fn get_current_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_duration(@core.RawAddress) -> Int64 raise @core.WindowsError
+
+pub fn get_duration_raw(@core.RawAddress, @ref.Ref[Int64]) -> Int
+
+pub fn get_dwell_time(@core.RawAddress) -> Int64 raise @core.WindowsError
+
+pub fn get_dwell_time_raw(@core.RawAddress, @ref.Ref[Int64]) -> Int
+
+pub fn get_geofence_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_geofences_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_geoposition_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_geoshape_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_id_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_last_known_geoposition_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_monitored_states(@core.RawAddress) -> UInt raise @core.WindowsError
+
+pub fn get_monitored_states_raw(@core.RawAddress, @ref.Ref[UInt]) -> Int
+
+pub fn get_new_state(@core.RawAddress) -> UInt raise @core.WindowsError
+
+pub fn get_new_state_raw(@core.RawAddress, @ref.Ref[UInt]) -> Int
+
+pub fn get_removal_reason(@core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn get_removal_reason_raw(@core.RawAddress, @ref.Ref[Int]) -> Int
+
+pub fn get_single_use_raw(@core.RawAddress, Bytes) -> Int
+
+pub fn get_start_time(@core.RawAddress) -> Int64 raise @core.WindowsError
+
+pub fn get_start_time_raw(@core.RawAddress, @ref.Ref[Int64]) -> Int
+
+pub fn get_status(@core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn get_status_raw(@core.RawAddress, @ref.Ref[Int]) -> Int
+
+pub let id_63e8f820bd : String
+
+pub let id_6f7f1a0ce0 : String
+
+pub let initializing : Int
+
+pub let last_known_geoposition_a2f684b182 : String
+
+pub let last_known_geoposition_d429160a0e : String
+
+pub let monitored_states_270f33abc8 : String
+
+pub let monitored_states_ac9d37f5a4 : String
+
+pub let new_state_c82af6aa4f : String
+
+pub let new_state_d28fd7c5e6 : String
+
+pub let no_data : Int
+
+pub let none_77e9065482 : UInt
+
+pub let none_efda5f4a15 : UInt
+
+pub let not_available : Int
+
+pub let not_initialized : Int
+
+pub fn read_reports_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub let ready : Int
+
+pub let removal_reason_48cd15a39a : String
+
+pub let removal_reason_ac4518a37c : String
+
+pub fn remove_geofence_state_changed(@core.RawAddress, Int64) -> Unit raise @core.WindowsError
+
+pub fn remove_geofence_state_changed_raw(@core.RawAddress, Int64) -> Int
+
+pub fn remove_status_changed(@core.RawAddress, Int64) -> Unit raise @core.WindowsError
+
+pub fn remove_status_changed_raw(@core.RawAddress, Int64) -> Int
+
+pub let removed_3a996db1d3 : UInt
+
+pub let removed_42d6cae9a3 : UInt
+
+pub let single_use_0a8d1386b7 : String
+
+pub let single_use_7bd343cb65 : String
+
+pub let start_time_0ffa4504b6 : String
+
+pub let start_time_a6125d5138 : String
+
+pub fn static_factory(@core.Guid) -> @com.ComPtr[@com.IInspectable] raise @core.WindowsError
+
+pub let status_464c6685b7 : String
+
+pub let status_aca15d3768 : String
+
+pub let status_changed_4a543f7292 : String
+
+pub let status_changed_7dd5a7e623 : String
+
+pub let used : Int
+
+// Errors
+
+// Types and methods
+
+// Type aliases
+pub using @969156b7108a46b0 {type Geofence_47e98ac39703 as Geofence}
+
+pub using @969156b7108a46b0 {type GeofenceMonitor_1c6cbbb4eeb8 as GeofenceMonitor}
+
+pub using @969156b7108a46b0 {type GeofenceMonitorStatus_9a3b230f3a52 as GeofenceMonitorStatus}
+
+pub using @969156b7108a46b0 {type GeofenceRemovalReason_c0d6f147e294 as GeofenceRemovalReason}
+
+pub using @969156b7108a46b0 {type GeofenceState_eaf4c7dff2f8 as GeofenceState}
+
+pub using @969156b7108a46b0 {type GeofenceStateChangeReport_a3e77604e24a as GeofenceStateChangeReport}
+
+pub using @969156b7108a46b0 {type MonitoredGeofenceStates_78541babb1d0 as MonitoredGeofenceStates}
+
+// Traits
+

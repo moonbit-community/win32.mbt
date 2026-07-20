@@ -1,0 +1,244 @@
+// Generated using `moon info`, DON'T EDIT IT
+package "moonbit-community/win32-bindings/windows/win32/storage/cabinets"
+
+import {
+  "moonbit-community/win32-bindings/runtime/core",
+  "moonbit-community/win32-bindings/scc/2f58db27e6a597d0",
+}
+
+// Values
+pub let a_exec : UInt
+
+pub let a_name_is_utf : UInt
+
+pub let cb_max_cab_path : UInt
+
+pub let cb_max_cabinet_name : UInt
+
+pub let cb_max_disk : Int
+
+pub let cb_max_disk_name : UInt
+
+pub let cb_max_filename : UInt
+
+pub let cpu80286 : Int
+
+pub let cpu80386 : Int
+
+pub let cpu_unknown : Int
+
+pub fn fci_add_file_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, Int, @core.RawAddress, @core.RawAddress, @core.RawAddress, UInt) -> Int
+
+pub fn fci_create_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> @core.RawAddress
+
+pub fn fci_destroy_raw(@core.RawAddress) -> Int
+
+pub fn fci_flush_cabinet_raw(@core.RawAddress, Int, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn fci_flush_folder_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub let fcierr_alloc_fail : Int
+
+pub let fcierr_bad_compr_type : Int
+
+pub let fcierr_cab_file : Int
+
+pub let fcierr_cab_format_limit : Int
+
+pub let fcierr_mci_fail : Int
+
+pub let fcierr_none : Int
+
+pub let fcierr_open_src : Int
+
+pub let fcierr_read_src : Int
+
+pub let fcierr_temp_file : Int
+
+pub let fcierr_user_abort : Int
+
+pub fn fdi_copy_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, Int, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn fdi_create_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, Int, @core.RawAddress) -> @core.RawAddress
+
+pub fn fdi_destroy_raw(@core.RawAddress) -> Int
+
+pub fn fdi_is_cabinet_raw(@core.RawAddress, Int64, @core.RawAddress) -> Int
+
+pub fn fdi_truncate_cabinet_raw(@core.RawAddress, @core.RawAddress, UInt) -> Int
+
+pub let fdidt_decrypt : Int
+
+pub let fdidt_new_cabinet : Int
+
+pub let fdidt_new_folder : Int
+
+pub let fdierror_alloc_fail : Int
+
+pub let fdierror_bad_compr_type : Int
+
+pub let fdierror_cabinet_not_found : Int
+
+pub let fdierror_corrupt_cabinet : Int
+
+pub let fdierror_eof : Int
+
+pub let fdierror_mdi_fail : Int
+
+pub let fdierror_none : Int
+
+pub let fdierror_not_a_cabinet : Int
+
+pub let fdierror_reserve_mismatch : Int
+
+pub let fdierror_target_file : Int
+
+pub let fdierror_unknown_cabinet_version : Int
+
+pub let fdierror_user_abort : Int
+
+pub let fdierror_wrong_cabinet : Int
+
+pub let fdint_cabinet_info : Int
+
+pub let fdint_close_file_info : Int
+
+pub let fdint_copy_file : Int
+
+pub let fdint_enumerate : Int
+
+pub let fdint_next_cabinet : Int
+
+pub let fdint_partial_file : Int
+
+pub let included_fci : UInt
+
+pub let included_fdi : UInt
+
+pub let included_types_fci_fdi : UInt
+
+pub let status_cabinet : UInt
+
+pub let status_file : UInt
+
+pub let status_folder : UInt
+
+pub let tcomp_bad : UInt
+
+pub let tcomp_lzx_window_hi : UInt
+
+pub let tcomp_lzx_window_lo : UInt
+
+pub let tcomp_mask_lzx_window : UInt
+
+pub let tcomp_mask_quantum_level : UInt
+
+pub let tcomp_mask_quantum_mem : UInt
+
+pub let tcomp_mask_reserved : UInt
+
+pub let tcomp_mask_type : UInt
+
+pub let tcomp_quantum_level_hi : UInt
+
+pub let tcomp_quantum_level_lo : UInt
+
+pub let tcomp_quantum_mem_hi : UInt
+
+pub let tcomp_quantum_mem_lo : UInt
+
+pub let tcomp_shift_lzx_window : UInt
+
+pub let tcomp_shift_quantum_level : UInt
+
+pub let tcomp_shift_quantum_mem : UInt
+
+pub let tcomp_type_lzx : UInt
+
+pub let tcomp_type_mszip : UInt
+
+pub let tcomp_type_none : UInt
+
+pub let tcomp_type_quantum : UInt
+
+// Errors
+
+// Types and methods
+
+// Type aliases
+pub using @2f58db27e6a597d0 {type AnonymousEUnion_cac02035b0de as AnonymousEUnion}
+
+pub using @2f58db27e6a597d0 {type CCAB_58498375a588 as CCAB}
+
+pub using @2f58db27e6a597d0 {type CabinetEStruct_85865a7c332e as CabinetEStruct}
+
+pub using @2f58db27e6a597d0 {type DecryptEStruct_705ee5a83956 as DecryptEStruct}
+
+pub using @2f58db27e6a597d0 {type ERF_1c97df8ecc7d as ERF}
+
+pub using @2f58db27e6a597d0 {type FCIERROR_56be179bd4b3 as FCIERROR}
+
+pub using @2f58db27e6a597d0 {type FDICABINETINFO_207b6515bdab as FDICABINETINFO}
+
+pub using @2f58db27e6a597d0 {type FDICREATECPUTYPE_3847551c4c63 as FDICREATECPUTYPE}
+
+pub using @2f58db27e6a597d0 {type FDIDECRYPT_37c88d9c6f2a as FDIDECRYPT}
+
+pub using @2f58db27e6a597d0 {type FDIDECRYPTTYPE_1b169d095cba as FDIDECRYPTTYPE}
+
+pub using @2f58db27e6a597d0 {type FDIERROR_17717d3ce08d as FDIERROR}
+
+pub using @2f58db27e6a597d0 {type FDINOTIFICATION_8e4750b0ddd4 as FDINOTIFICATION}
+
+pub using @2f58db27e6a597d0 {type FDINOTIFICATIONTYPE_3e4173d743b4 as FDINOTIFICATIONTYPE}
+
+pub using @2f58db27e6a597d0 {type FDISPILLFILE_2491129c6afb as FDISPILLFILE}
+
+pub using @2f58db27e6a597d0 {type FolderEStruct_1da89063728d as FolderEStruct}
+
+pub using @2f58db27e6a597d0 {type PFNALLOC_0ece639bf8e0 as PFNALLOC}
+
+pub using @2f58db27e6a597d0 {type PFNCLOSE_805116997983 as PFNCLOSE}
+
+pub using @2f58db27e6a597d0 {type PFNFCIALLOC_de505d5c2f2f as PFNFCIALLOC}
+
+pub using @2f58db27e6a597d0 {type PFNFCICLOSE_f03e7e10be32 as PFNFCICLOSE}
+
+pub using @2f58db27e6a597d0 {type PFNFCIDELETE_5b96d232333e as PFNFCIDELETE}
+
+pub using @2f58db27e6a597d0 {type PFNFCIFILEPLACED_62f95b513718 as PFNFCIFILEPLACED}
+
+pub using @2f58db27e6a597d0 {type PFNFCIFREE_e75d3fa9c979 as PFNFCIFREE}
+
+pub using @2f58db27e6a597d0 {type PFNFCIGETNEXTCABINET_cc979e60eb5d as PFNFCIGETNEXTCABINET}
+
+pub using @2f58db27e6a597d0 {type PFNFCIGETOPENINFO_8664d26f5c30 as PFNFCIGETOPENINFO}
+
+pub using @2f58db27e6a597d0 {type PFNFCIGETTEMPFILE_3029cad553f2 as PFNFCIGETTEMPFILE}
+
+pub using @2f58db27e6a597d0 {type PFNFCIOPEN_9c9096a1990c as PFNFCIOPEN}
+
+pub using @2f58db27e6a597d0 {type PFNFCIREAD_b197c8724c9e as PFNFCIREAD}
+
+pub using @2f58db27e6a597d0 {type PFNFCISEEK_dd9377d38100 as PFNFCISEEK}
+
+pub using @2f58db27e6a597d0 {type PFNFCISTATUS_5f6e95056b27 as PFNFCISTATUS}
+
+pub using @2f58db27e6a597d0 {type PFNFCIWRITE_d3803ca3d54e as PFNFCIWRITE}
+
+pub using @2f58db27e6a597d0 {type PFNFDIDECRYPT_6bb68d94cc4e as PFNFDIDECRYPT}
+
+pub using @2f58db27e6a597d0 {type PFNFDINOTIFY_85ebf9de4ecd as PFNFDINOTIFY}
+
+pub using @2f58db27e6a597d0 {type PFNFREE_39c940a66353 as PFNFREE}
+
+pub using @2f58db27e6a597d0 {type PFNOPEN_01c2bc041adb as PFNOPEN}
+
+pub using @2f58db27e6a597d0 {type PFNREAD_bc0ee103b64b as PFNREAD}
+
+pub using @2f58db27e6a597d0 {type PFNSEEK_63f50f2afa49 as PFNSEEK}
+
+pub using @2f58db27e6a597d0 {type PFNWRITE_1af8b6e9998e as PFNWRITE}
+
+// Traits
+

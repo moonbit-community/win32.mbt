@@ -1,0 +1,100 @@
+// Generated using `moon info`, DON'T EDIT IT
+package "moonbit-community/win32-bindings/scc/e9287a2907a64469"
+
+import {
+  "moonbit-community/win32-bindings/runtime/core",
+  "moonbitlang/core/debug",
+}
+
+// Values
+pub let dispid_event_on_context_data_a7b3b5fd32c7 : UInt
+
+pub let dispid_event_on_send_error_8f2eda1012d0 : UInt
+
+pub let dispid_event_on_state_changed_e07f87618ad7 : UInt
+
+pub let dispid_event_on_termination_02ff10d31758 : UInt
+
+pub fn get_flags_a6668f880722(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn get_flags_a6668f880722_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn get_remote_user_7e6a6bf5d4d7(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn get_remote_user_7e6a6bf5d4d7_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn get_state_951578c47575(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn get_state_951578c47575_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub let rendezvous_application_efe08cefcce6_alignment : Int
+
+pub let rendezvous_application_efe08cefcce6_size : Int
+
+pub let rsf_invitee_89f27b28480f : Int
+
+pub let rsf_inviter_b784dbe332d8 : Int
+
+pub let rsf_none_82cb6c49a2a1 : Int
+
+pub let rsf_original_inviter_0263165f53cc : Int
+
+pub let rsf_remote_legacysession_87d8dec61762 : Int
+
+pub let rsf_remote_win7_session_be6efb459399 : Int
+
+pub let rss_accepted_2d2ee2417c0f : Int
+
+pub let rss_cancelled_c24266cbcdb6 : Int
+
+pub let rss_connected_9ba004a77441 : Int
+
+pub let rss_declined_ca74774e6680 : Int
+
+pub let rss_invitation_ae5b41d61285 : Int
+
+pub let rss_ready_9ccd635b2e45 : Int
+
+pub let rss_terminated_8b41bf679e2e : Int
+
+pub let rss_unknown_5bf7646f02cd : Int
+
+pub fn send_context_data_be4e96efea87(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn send_context_data_be4e96efea87_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn set_rendezvous_session_4e45be624938(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn set_rendezvous_session_4e45be624938_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn terminate_dee2cb3a18bc(@core.RawAddress, Int, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn terminate_dee2cb3a18bc_raw(@core.RawAddress, Int, @core.RawAddress) -> Int
+
+// Errors
+
+// Types and methods
+pub type DRendezvousSessionEvents_06a2e96f06f6
+
+pub type IRendezvousApplication_3fbe62799bd0
+
+pub type IRendezvousSession_ff0d8855a42c
+
+pub(all) struct RENDEZVOUSSESSIONFLAGS_b41bb31c2643(Int) derive(Compare, Eq, @debug.Debug)
+pub fn RENDEZVOUSSESSIONFLAGS_b41bb31c2643::from_int(Int) -> Self
+pub fn RENDEZVOUSSESSIONFLAGS_b41bb31c2643::to_int(Self) -> Int
+
+pub(all) struct RENDEZVOUSSESSIONSTATE_317f532ce722(Int) derive(Compare, Eq, @debug.Debug)
+pub fn RENDEZVOUSSESSIONSTATE_317f532ce722::from_int(Int) -> Self
+pub fn RENDEZVOUSSESSIONSTATE_317f532ce722::to_int(Self) -> Int
+
+pub(all) struct RendezvousApplication_efe08cefcce6 {
+  raw_bytes : Bytes
+} derive(Eq, @debug.Debug)
+pub fn RendezvousApplication_efe08cefcce6::bytes(Self) -> Bytes
+pub fn RendezvousApplication_efe08cefcce6::from_bytes(Bytes) -> Self raise @core.WindowsError
+
+// Type aliases
+
+// Traits
+

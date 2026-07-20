@@ -1,0 +1,3 @@
+///|
+/// Stable facade for Windows.Win32.System.SetupAndMigration.OOBECOMPLETEDCALLBACK.
+pub type OOBECOMPLETEDCALLBACK = @owner.OOBECOMPLETEDCALLBACK_856670a27141

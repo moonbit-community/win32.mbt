@@ -1,0 +1,216 @@
+// Generated using `moon info`, DON'T EDIT IT
+package "moonbit-community/win32-bindings/windows/win32/media/audio/endpoints"
+
+import {
+  "moonbit-community/win32-bindings/runtime/core",
+  "moonbit-community/win32-bindings/scc/42b59bd886a1caa3",
+}
+
+// Values
+pub let e_connector_count : Int
+
+pub let e_host_process_connector : Int
+
+pub let e_keyword_detector_connector : Int
+
+pub let e_loopback_connector : Int
+
+pub let e_loopback_connector_post_volume : Int
+
+pub let e_offload_connector : Int
+
+pub fn get_available_offload_connector_count(@core.RawAddress, @core.RawAddress, UInt, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn get_available_offload_connector_count_raw(@core.RawAddress, @core.RawAddress, UInt, @core.RawAddress) -> Int
+
+pub fn get_channel_count(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn get_channel_count_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn get_channel_volume_level(@core.RawAddress, UInt, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn get_channel_volume_level_raw(@core.RawAddress, UInt, @core.RawAddress) -> Int
+
+pub fn get_channel_volume_level_scalar(@core.RawAddress, UInt, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn get_channel_volume_level_scalar_raw(@core.RawAddress, UInt, @core.RawAddress) -> Int
+
+pub fn get_channel_volumes(@core.RawAddress, UInt, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn get_channel_volumes_raw(@core.RawAddress, UInt, @core.RawAddress) -> Int
+
+pub fn get_channels_peak_values(@core.RawAddress, UInt, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn get_channels_peak_values_raw(@core.RawAddress, UInt, @core.RawAddress) -> Int
+
+pub fn get_engine_format(@core.RawAddress, @core.RawAddress, Int, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn get_engine_format_raw(@core.RawAddress, @core.RawAddress, Int, @core.RawAddress) -> Int
+
+pub fn get_gfx_state(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn get_gfx_state_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn get_local_effects_state(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn get_local_effects_state_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn get_master_volume_level(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn get_master_volume_level_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn get_master_volume_level_scalar(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn get_master_volume_level_scalar_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn get_meter_channel_count(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn get_meter_channel_count_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn get_metering_channel_count(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn get_metering_channel_count_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn get_metering_data(@core.RawAddress, UInt, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn get_metering_data_raw(@core.RawAddress, UInt, @core.RawAddress) -> Int
+
+pub fn get_mute_a8189abd4d(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn get_mute_a8189abd4d_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn get_mute_aa84454bc2(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn get_mute_aa84454bc2_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn get_peak_value(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn get_peak_value_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn get_volume_channel_count(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn get_volume_channel_count_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn get_volume_range(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn get_volume_range_channel(@core.RawAddress, UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn get_volume_range_channel_raw(@core.RawAddress, UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn get_volume_range_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn get_volume_step_info(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn get_volume_step_info_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn is_last_buffer_control_supported_raw(@core.RawAddress) -> Int
+
+pub fn on_notify(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn on_notify_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn query_hardware_support_d1f550c0ee(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn query_hardware_support_d1f550c0ee_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn query_hardware_support_e1efc342b7(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn query_hardware_support_e1efc342b7_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn register_control_change_notify(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn register_control_change_notify_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn release_output_data_pointer_for_last_buffer_raw(@core.RawAddress, @core.RawAddress) -> Unit
+
+pub fn reset_to_default(@core.RawAddress, UInt) -> Unit raise @core.WindowsError
+
+pub fn reset_to_default_raw(@core.RawAddress, UInt) -> Int
+
+pub fn set_channel_volume_level(@core.RawAddress, UInt, Float, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn set_channel_volume_level_raw(@core.RawAddress, UInt, Float, @core.RawAddress) -> Int
+
+pub fn set_channel_volume_level_scalar(@core.RawAddress, UInt, Float, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn set_channel_volume_level_scalar_raw(@core.RawAddress, UInt, Float, @core.RawAddress) -> Int
+
+pub fn set_channel_volumes(@core.RawAddress, UInt, @core.RawAddress, Int, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn set_channel_volumes_raw(@core.RawAddress, UInt, @core.RawAddress, Int, @core.RawAddress) -> Int
+
+pub fn set_engine_device_format(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn set_engine_device_format_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn set_gfx_state(@core.RawAddress, @core.RawAddress, Int) -> Unit raise @core.WindowsError
+
+pub fn set_gfx_state_raw(@core.RawAddress, @core.RawAddress, Int) -> Int
+
+pub fn set_local_effects_state(@core.RawAddress, Int) -> Unit raise @core.WindowsError
+
+pub fn set_local_effects_state_raw(@core.RawAddress, Int) -> Int
+
+pub fn set_master_volume_level(@core.RawAddress, Float, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn set_master_volume_level_raw(@core.RawAddress, Float, @core.RawAddress) -> Int
+
+pub fn set_master_volume_level_scalar(@core.RawAddress, Float, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn set_master_volume_level_scalar_raw(@core.RawAddress, Float, @core.RawAddress) -> Int
+
+pub fn set_mute_0a64cf140b(@core.RawAddress, Int, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn set_mute_0a64cf140b_raw(@core.RawAddress, Int, @core.RawAddress) -> Int
+
+pub fn set_mute_adee7f855e(@core.RawAddress, UInt) -> Unit raise @core.WindowsError
+
+pub fn set_mute_adee7f855e_raw(@core.RawAddress, UInt) -> Int
+
+pub fn unregister_control_change_notify(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn unregister_control_change_notify_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn volume_step_down(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn volume_step_down_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn volume_step_up(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn volume_step_up_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+// Errors
+
+// Types and methods
+
+// Type aliases
+pub using @42b59bd886a1caa3 {type AUDIOENDPOINTSHAREDCREATEPARAMS_4e56dfcd2846 as AUDIOENDPOINTSHAREDCREATEPARAMS}
+
+pub using @42b59bd886a1caa3 {type DEVINTERFACEAUDIOENDPOINTPLUGIN_97ff348ff1d7 as DEVINTERFACEAUDIOENDPOINTPLUGIN}
+
+pub using @42b59bd886a1caa3 {type EndpointConnectorType_ba55e30800cb as EndpointConnectorType}
+
+pub using @42b59bd886a1caa3 {type IAudioEndpointFormatControl_bfb1b727c91e as IAudioEndpointFormatControl}
+
+pub using @42b59bd886a1caa3 {type IAudioEndpointLastBufferControl_3c8714f073db as IAudioEndpointLastBufferControl}
+
+pub using @42b59bd886a1caa3 {type IAudioEndpointOffloadStreamMeter_179edeb0f436 as IAudioEndpointOffloadStreamMeter}
+
+pub using @42b59bd886a1caa3 {type IAudioEndpointOffloadStreamMute_4ccc0f827b78 as IAudioEndpointOffloadStreamMute}
+
+pub using @42b59bd886a1caa3 {type IAudioEndpointOffloadStreamVolume_dc1c1b4c44c4 as IAudioEndpointOffloadStreamVolume}
+
+pub using @42b59bd886a1caa3 {type IAudioEndpointVolume_db8649343a8d as IAudioEndpointVolume}
+
+pub using @42b59bd886a1caa3 {type IAudioEndpointVolumeCallback_044902535331 as IAudioEndpointVolumeCallback}
+
+pub using @42b59bd886a1caa3 {type IAudioEndpointVolumeEx_238ffa5f60f2 as IAudioEndpointVolumeEx}
+
+pub using @42b59bd886a1caa3 {type IAudioLfxControl_6e7b6dc2d254 as IAudioLfxControl}
+
+pub using @42b59bd886a1caa3 {type IAudioMeterInformation_1423c944bdbb as IAudioMeterInformation}
+
+pub using @42b59bd886a1caa3 {type IHardwareAudioEngineBase_0bb2df6f6a69 as IHardwareAudioEngineBase}
+
+// Traits
+

@@ -1,0 +1,1066 @@
+// Generated using `moon info`, DON'T EDIT IT
+package "moonbit-community/win32-bindings/windows/win32/ui/input/keyboard_and_mouse"
+
+import {
+  "moonbit-community/win32-bindings/runtime/core",
+  "moonbit-community/win32-bindings/scc/af0363c3df514d95",
+}
+
+// Values
+pub fn activate_keyboard_layout_raw(@core.RawAddress, UInt) -> @core.RawWin32Call[@core.RawAddress]
+
+pub let acute : UInt
+
+pub let ax_kbd_desktop_type : UInt
+
+pub fn block_input_raw(Int) -> @core.RawWin32Call[Int]
+
+pub let breve : UInt
+
+pub let caplok : UInt
+
+pub let caplokaltgr : UInt
+
+pub let cedilla : UInt
+
+pub let circumflex : UInt
+
+pub let dec_kbd_ansi_layout_type : UInt
+
+pub let dec_kbd_jis_layout_type : UInt
+
+pub let diaresis : UInt
+
+pub let diaresis_tonos : UInt
+
+pub let dkf_dead : UInt
+
+pub let dontcare_bit : UInt
+
+pub let dot_above : UInt
+
+pub let double_acute : UInt
+
+pub fn drag_detect_raw(@core.RawAddress, Bytes) -> Int
+
+pub fn enable_window_raw(@core.RawAddress, Int) -> Int
+
+pub let extended_bit : UInt
+
+pub let fake_keystroke : UInt
+
+pub let fmr_kbd_jis_type : UInt
+
+pub let fmr_kbd_oasys_type : UInt
+
+pub let fmv_kbd_oasys_type : UInt
+
+pub fn get_active_window_raw() -> @core.RawAddress
+
+pub fn get_async_key_state_raw(Int) -> Int
+
+pub fn get_capture_raw() -> @core.RawAddress
+
+pub fn get_double_click_time_raw() -> UInt
+
+pub fn get_focus_raw() -> @core.RawAddress
+
+pub fn get_kb_code_page_raw() -> UInt
+
+pub fn get_key_name_text_a_raw(Int, @core.RawAddress, Int) -> @core.RawWin32Call[Int]
+
+pub fn get_key_name_text_w_raw(Int, @core.RawAddress, Int) -> @core.RawWin32Call[Int]
+
+pub fn get_key_state_raw(Int) -> Int
+
+pub fn get_keyboard_layout_list_raw(Int, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn get_keyboard_layout_name_a_raw(@core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn get_keyboard_layout_name_w_raw(@core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn get_keyboard_layout_raw(UInt) -> @core.RawAddress
+
+pub fn get_keyboard_state_raw(@core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn get_keyboard_type_raw(Int) -> @core.RawWin32Call[Int]
+
+pub fn get_last_input_info_raw(@core.RawAddress) -> Int
+
+pub fn get_mouse_move_points_ex_raw(UInt, @core.RawAddress, @core.RawAddress, Int, UInt) -> @core.RawWin32Call[Int]
+
+pub let gmmp_use_display_points : UInt
+
+pub let gmmp_use_high_resolution_points : UInt
+
+pub let grave : UInt
+
+pub let grpseltap : UInt
+
+pub let hacek : UInt
+
+pub let hook_above : UInt
+
+pub let input_hardware : UInt
+
+pub let input_keyboard : UInt
+
+pub let input_mouse : UInt
+
+pub fn is_window_enabled_raw(@core.RawAddress) -> Int
+
+pub let kanalok : UInt
+
+pub let kbd_type : UInt
+
+pub let kbd_version : UInt
+
+pub let kbdalt : UInt
+
+pub let kbdbase : UInt
+
+pub let kbdctrl : UInt
+
+pub let kbdgrpseltap : UInt
+
+pub let kbdkana : UInt
+
+pub let kbdloya : UInt
+
+pub let kbdnls_alphanum : UInt
+
+pub let kbdnls_codeinput : UInt
+
+pub let kbdnls_conv_or_nonconv : UInt
+
+pub let kbdnls_help_or_end : UInt
+
+pub let kbdnls_hiragana : UInt
+
+pub let kbdnls_home_or_clear : UInt
+
+pub let kbdnls_index_alt : UInt
+
+pub let kbdnls_index_normal : UInt
+
+pub let kbdnls_kanaevent : UInt
+
+pub let kbdnls_kanalock : UInt
+
+pub let kbdnls_katakana : UInt
+
+pub let kbdnls_noevent : UInt
+
+pub let kbdnls_null : UInt
+
+pub let kbdnls_numpad : UInt
+
+pub let kbdnls_roman : UInt
+
+pub let kbdnls_sbcsdbcs : UInt
+
+pub let kbdnls_send_base_vk : UInt
+
+pub let kbdnls_send_param_vk : UInt
+
+pub let kbdnls_type_normal : UInt
+
+pub let kbdnls_type_null : UInt
+
+pub let kbdnls_type_toggle : UInt
+
+pub let kbdroya : UInt
+
+pub let kbdshift : UInt
+
+pub let kbdtable_multi_max : UInt
+
+pub fn keybd_event_raw(UInt, UInt, UInt, UInt64) -> Unit
+
+pub let keyboard_type_generic_101 : UInt
+
+pub let keyboard_type_japan : UInt
+
+pub let keyboard_type_korea : UInt
+
+pub let keyboard_type_unknown : UInt
+
+pub let keyeventf_extendedkey : UInt
+
+pub let keyeventf_keyup : UInt
+
+pub let keyeventf_scancode : UInt
+
+pub let keyeventf_unicode : UInt
+
+pub let klf_activate : UInt
+
+pub let klf_notellshell : UInt
+
+pub let klf_reorder : UInt
+
+pub let klf_replacelang : UInt
+
+pub let klf_reset : UInt
+
+pub let klf_setforprocess : UInt
+
+pub let klf_shiftlock : UInt
+
+pub let klf_substitute_ok : UInt
+
+pub let kllf_altgr : UInt
+
+pub let kllf_global_attrs : UInt
+
+pub let kllf_lrm_rlm : UInt
+
+pub let kllf_shiftlock : UInt
+
+pub fn load_keyboard_layout_a_raw(@core.RawAddress, UInt) -> @core.RawWin32Call[@core.RawAddress]
+
+pub fn load_keyboard_layout_w_raw(@core.RawAddress, UInt) -> @core.RawWin32Call[@core.RawAddress]
+
+pub let macron : UInt
+
+pub fn map_virtual_key_a_raw(UInt, UInt) -> UInt
+
+pub fn map_virtual_key_ex_a_raw(UInt, UInt, @core.RawAddress) -> UInt
+
+pub fn map_virtual_key_ex_w_raw(UInt, UInt, @core.RawAddress) -> UInt
+
+pub fn map_virtual_key_w_raw(UInt, UInt) -> UInt
+
+pub let mapvk_vk_to_char : UInt
+
+pub let mapvk_vk_to_vsc : UInt
+
+pub let mapvk_vk_to_vsc_ex : UInt
+
+pub let mapvk_vsc_to_vk : UInt
+
+pub let mapvk_vsc_to_vk_ex : UInt
+
+pub let microsoft_kbd_001_type : UInt
+
+pub let microsoft_kbd_002_type : UInt
+
+pub let microsoft_kbd_101_a_type : UInt
+
+pub let microsoft_kbd_101_b_type : UInt
+
+pub let microsoft_kbd_101_c_type : UInt
+
+pub let microsoft_kbd_101_type : UInt
+
+pub let microsoft_kbd_103_type : UInt
+
+pub let microsoft_kbd_106_type : UInt
+
+pub let microsoft_kbd_ax_type : UInt
+
+pub let microsoft_kbd_func : UInt
+
+pub let mod_alt : UInt
+
+pub let mod_control : UInt
+
+pub let mod_norepeat : UInt
+
+pub let mod_shift : UInt
+
+pub let mod_win : UInt
+
+pub fn mouse_event_raw(UInt, Int, Int, Int, UInt64) -> Unit
+
+pub let mouseeventf_absolute : UInt
+
+pub let mouseeventf_hwheel : UInt
+
+pub let mouseeventf_leftdown : UInt
+
+pub let mouseeventf_leftup : UInt
+
+pub let mouseeventf_middledown : UInt
+
+pub let mouseeventf_middleup : UInt
+
+pub let mouseeventf_move : UInt
+
+pub let mouseeventf_move_nocoalesce : UInt
+
+pub let mouseeventf_rightdown : UInt
+
+pub let mouseeventf_rightup : UInt
+
+pub let mouseeventf_virtualdesk : UInt
+
+pub let mouseeventf_wheel : UInt
+
+pub let mouseeventf_xdown : UInt
+
+pub let mouseeventf_xup : UInt
+
+pub let nec_kbd_106_type : UInt
+
+pub let nec_kbd_h_mode_type : UInt
+
+pub let nec_kbd_laptop_type : UInt
+
+pub let nec_kbd_n_mode_type : UInt
+
+pub let nec_kbd_normal_type : UInt
+
+pub let nlskbd_info_accessibility_keymap : UInt
+
+pub let nlskbd_info_emurate_101_keyboard : UInt
+
+pub let nlskbd_info_emurate_106_keyboard : UInt
+
+pub let nlskbd_info_send_ime_notification : UInt
+
+pub let nlskbd_oem_ax : UInt
+
+pub let nlskbd_oem_dec : UInt
+
+pub let nlskbd_oem_epson : UInt
+
+pub let nlskbd_oem_fujitsu : UInt
+
+pub let nlskbd_oem_ibm : UInt
+
+pub let nlskbd_oem_matsushita : UInt
+
+pub let nlskbd_oem_microsoft : UInt
+
+pub let nlskbd_oem_nec : UInt
+
+pub let nlskbd_oem_toshiba : UInt
+
+pub fn oem_key_scan_raw(UInt) -> UInt
+
+pub let ogonek : UInt
+
+pub let overscore : UInt
+
+pub fn register_hot_key_raw(@core.RawAddress, Int, UInt, UInt) -> @core.RawWin32Call[Int]
+
+pub fn release_capture_raw() -> @core.RawWin32Call[Int]
+
+pub let ring : UInt
+
+pub let scancode_alt : UInt
+
+pub let scancode_ctrl : UInt
+
+pub let scancode_lshift : UInt
+
+pub let scancode_lwin : UInt
+
+pub let scancode_numpad_first : UInt
+
+pub let scancode_numpad_last : UInt
+
+pub let scancode_rshift : UInt
+
+pub let scancode_rwin : UInt
+
+pub let scancode_thai_layout_toggle : UInt
+
+pub fn send_input_raw(UInt, @core.RawAddress, Int) -> @core.RawWin32Call[UInt]
+
+pub fn set_active_window_raw(@core.RawAddress) -> @core.RawWin32Call[@core.RawAddress]
+
+pub fn set_capture_raw(@core.RawAddress) -> @core.RawAddress
+
+pub fn set_double_click_time_raw(UInt) -> @core.RawWin32Call[Int]
+
+pub fn set_focus_raw(@core.RawAddress) -> @core.RawWin32Call[@core.RawAddress]
+
+pub fn set_keyboard_state_raw(@core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub let sgcaps : UInt
+
+pub let shft_invalid : UInt
+
+pub fn swap_mouse_button_raw(Int) -> Int
+
+pub let tilde : UInt
+
+pub let tme_cancel : UInt
+
+pub let tme_hover : UInt
+
+pub let tme_leave : UInt
+
+pub let tme_nonclient : UInt
+
+pub let tme_query : UInt
+
+pub fn to_ascii_ex_raw(UInt, UInt, @core.RawAddress, @core.RawAddress, UInt, @core.RawAddress) -> Int
+
+pub fn to_ascii_raw(UInt, UInt, @core.RawAddress, @core.RawAddress, UInt) -> Int
+
+pub fn to_unicode_ex_raw(UInt, UInt, @core.RawAddress, @core.RawAddress, Int, UInt, @core.RawAddress) -> Int
+
+pub fn to_unicode_raw(UInt, UInt, @core.RawAddress, @core.RawAddress, Int, UInt) -> Int
+
+pub let tonos : UInt
+
+pub let toshiba_kbd_desktop_type : UInt
+
+pub let toshiba_kbd_laptop_type : UInt
+
+pub fn track_mouse_event_b312162f98_raw(@core.RawAddress) -> Int
+
+pub fn track_mouse_event_f3807379b1_raw(@core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub let umlaut : UInt
+
+pub fn unload_keyboard_layout_raw(@core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn unregister_hot_key_raw(@core.RawAddress, Int) -> @core.RawWin32Call[Int]
+
+pub let vk_0 : UInt
+
+pub let vk_1 : UInt
+
+pub let vk_2 : UInt
+
+pub let vk_3 : UInt
+
+pub let vk_4 : UInt
+
+pub let vk_5 : UInt
+
+pub let vk_6 : UInt
+
+pub let vk_7 : UInt
+
+pub let vk_8 : UInt
+
+pub let vk_9 : UInt
+
+pub let vk_a : UInt
+
+pub let vk_abnt_c1 : UInt
+
+pub let vk_abnt_c2 : UInt
+
+pub let vk_accept : UInt
+
+pub let vk_add : UInt
+
+pub let vk_apps : UInt
+
+pub let vk_attn : UInt
+
+pub let vk_b : UInt
+
+pub let vk_back : UInt
+
+pub let vk_browser_back : UInt
+
+pub let vk_browser_favorites : UInt
+
+pub let vk_browser_forward : UInt
+
+pub let vk_browser_home : UInt
+
+pub let vk_browser_refresh : UInt
+
+pub let vk_browser_search : UInt
+
+pub let vk_browser_stop : UInt
+
+pub let vk_c : UInt
+
+pub let vk_cancel : UInt
+
+pub let vk_capital : UInt
+
+pub let vk_clear : UInt
+
+pub let vk_control : UInt
+
+pub let vk_convert : UInt
+
+pub let vk_crsel : UInt
+
+pub let vk_d : UInt
+
+pub let vk_dbe_alphanumeric : UInt
+
+pub let vk_dbe_codeinput : UInt
+
+pub let vk_dbe_dbcschar : UInt
+
+pub let vk_dbe_determinestring : UInt
+
+pub let vk_dbe_enterdlgconversionmode : UInt
+
+pub let vk_dbe_enterimeconfigmode : UInt
+
+pub let vk_dbe_enterwordregistermode : UInt
+
+pub let vk_dbe_flushstring : UInt
+
+pub let vk_dbe_hiragana : UInt
+
+pub let vk_dbe_katakana : UInt
+
+pub let vk_dbe_nocodeinput : UInt
+
+pub let vk_dbe_noroman : UInt
+
+pub let vk_dbe_roman : UInt
+
+pub let vk_dbe_sbcschar : UInt
+
+pub let vk_decimal : UInt
+
+pub let vk_delete : UInt
+
+pub let vk_divide : UInt
+
+pub let vk_down : UInt
+
+pub let vk_e : UInt
+
+pub let vk_end : UInt
+
+pub let vk_ereof : UInt
+
+pub let vk_escape : UInt
+
+pub let vk_execute : UInt
+
+pub let vk_exsel : UInt
+
+pub let vk_f : UInt
+
+pub let vk_f1 : UInt
+
+pub let vk_f10 : UInt
+
+pub let vk_f11 : UInt
+
+pub let vk_f12 : UInt
+
+pub let vk_f13 : UInt
+
+pub let vk_f14 : UInt
+
+pub let vk_f15 : UInt
+
+pub let vk_f16 : UInt
+
+pub let vk_f17 : UInt
+
+pub let vk_f18 : UInt
+
+pub let vk_f19 : UInt
+
+pub let vk_f2 : UInt
+
+pub let vk_f20 : UInt
+
+pub let vk_f21 : UInt
+
+pub let vk_f22 : UInt
+
+pub let vk_f23 : UInt
+
+pub let vk_f24 : UInt
+
+pub let vk_f3 : UInt
+
+pub let vk_f4 : UInt
+
+pub let vk_f5 : UInt
+
+pub let vk_f6 : UInt
+
+pub let vk_f7 : UInt
+
+pub let vk_f8 : UInt
+
+pub let vk_f9 : UInt
+
+pub let vk_final : UInt
+
+pub let vk_g : UInt
+
+pub let vk_gamepad_a : UInt
+
+pub let vk_gamepad_b : UInt
+
+pub let vk_gamepad_dpad_down : UInt
+
+pub let vk_gamepad_dpad_left : UInt
+
+pub let vk_gamepad_dpad_right : UInt
+
+pub let vk_gamepad_dpad_up : UInt
+
+pub let vk_gamepad_left_shoulder : UInt
+
+pub let vk_gamepad_left_thumbstick_button : UInt
+
+pub let vk_gamepad_left_thumbstick_down : UInt
+
+pub let vk_gamepad_left_thumbstick_left : UInt
+
+pub let vk_gamepad_left_thumbstick_right : UInt
+
+pub let vk_gamepad_left_thumbstick_up : UInt
+
+pub let vk_gamepad_left_trigger : UInt
+
+pub let vk_gamepad_menu : UInt
+
+pub let vk_gamepad_right_shoulder : UInt
+
+pub let vk_gamepad_right_thumbstick_button : UInt
+
+pub let vk_gamepad_right_thumbstick_down : UInt
+
+pub let vk_gamepad_right_thumbstick_left : UInt
+
+pub let vk_gamepad_right_thumbstick_right : UInt
+
+pub let vk_gamepad_right_thumbstick_up : UInt
+
+pub let vk_gamepad_right_trigger : UInt
+
+pub let vk_gamepad_view : UInt
+
+pub let vk_gamepad_x : UInt
+
+pub let vk_gamepad_y : UInt
+
+pub let vk_h : UInt
+
+pub let vk_hangeul : UInt
+
+pub let vk_hangul : UInt
+
+pub let vk_hanja : UInt
+
+pub let vk_help : UInt
+
+pub let vk_home : UInt
+
+pub let vk_i : UInt
+
+pub let vk_ico_00 : UInt
+
+pub let vk_ico_clear : UInt
+
+pub let vk_ico_help : UInt
+
+pub let vk_ime_off : UInt
+
+pub let vk_ime_on : UInt
+
+pub let vk_insert : UInt
+
+pub let vk_j : UInt
+
+pub let vk_junja : UInt
+
+pub let vk_k : UInt
+
+pub let vk_kana : UInt
+
+pub let vk_kanji : UInt
+
+pub fn vk_key_scan_a_raw(Int) -> Int
+
+pub fn vk_key_scan_ex_a_raw(Int, @core.RawAddress) -> Int
+
+pub fn vk_key_scan_ex_w_raw(UInt, @core.RawAddress) -> Int
+
+pub fn vk_key_scan_w_raw(UInt) -> Int
+
+pub let vk_l : UInt
+
+pub let vk_launch_app1 : UInt
+
+pub let vk_launch_app2 : UInt
+
+pub let vk_launch_mail : UInt
+
+pub let vk_launch_media_select : UInt
+
+pub let vk_lbutton : UInt
+
+pub let vk_lcontrol : UInt
+
+pub let vk_left : UInt
+
+pub let vk_lmenu : UInt
+
+pub let vk_lshift : UInt
+
+pub let vk_lwin : UInt
+
+pub let vk_m : UInt
+
+pub let vk_mbutton : UInt
+
+pub let vk_media_next_track : UInt
+
+pub let vk_media_play_pause : UInt
+
+pub let vk_media_prev_track : UInt
+
+pub let vk_media_stop : UInt
+
+pub let vk_menu : UInt
+
+pub let vk_modechange : UInt
+
+pub let vk_multiply : UInt
+
+pub let vk_n : UInt
+
+pub let vk_navigation_accept : UInt
+
+pub let vk_navigation_cancel : UInt
+
+pub let vk_navigation_down : UInt
+
+pub let vk_navigation_left : UInt
+
+pub let vk_navigation_menu : UInt
+
+pub let vk_navigation_right : UInt
+
+pub let vk_navigation_up : UInt
+
+pub let vk_navigation_view : UInt
+
+pub let vk_next : UInt
+
+pub let vk_noname : UInt
+
+pub let vk_nonconvert : UInt
+
+pub let vk_none : UInt
+
+pub let vk_numlock : UInt
+
+pub let vk_numpad0 : UInt
+
+pub let vk_numpad1 : UInt
+
+pub let vk_numpad2 : UInt
+
+pub let vk_numpad3 : UInt
+
+pub let vk_numpad4 : UInt
+
+pub let vk_numpad5 : UInt
+
+pub let vk_numpad6 : UInt
+
+pub let vk_numpad7 : UInt
+
+pub let vk_numpad8 : UInt
+
+pub let vk_numpad9 : UInt
+
+pub let vk_o : UInt
+
+pub let vk_oem_1 : UInt
+
+pub let vk_oem_102 : UInt
+
+pub let vk_oem_2 : UInt
+
+pub let vk_oem_3 : UInt
+
+pub let vk_oem_4 : UInt
+
+pub let vk_oem_5 : UInt
+
+pub let vk_oem_6 : UInt
+
+pub let vk_oem_7 : UInt
+
+pub let vk_oem_8 : UInt
+
+pub let vk_oem_attn : UInt
+
+pub let vk_oem_auto : UInt
+
+pub let vk_oem_ax : UInt
+
+pub let vk_oem_backtab : UInt
+
+pub let vk_oem_clear : UInt
+
+pub let vk_oem_comma : UInt
+
+pub let vk_oem_copy : UInt
+
+pub let vk_oem_cusel : UInt
+
+pub let vk_oem_enlw : UInt
+
+pub let vk_oem_finish : UInt
+
+pub let vk_oem_fj_jisho : UInt
+
+pub let vk_oem_fj_loya : UInt
+
+pub let vk_oem_fj_masshou : UInt
+
+pub let vk_oem_fj_roya : UInt
+
+pub let vk_oem_fj_touroku : UInt
+
+pub let vk_oem_jump : UInt
+
+pub let vk_oem_minus : UInt
+
+pub let vk_oem_nec_equal : UInt
+
+pub let vk_oem_pa1 : UInt
+
+pub let vk_oem_pa2 : UInt
+
+pub let vk_oem_pa3 : UInt
+
+pub let vk_oem_period : UInt
+
+pub let vk_oem_plus : UInt
+
+pub let vk_oem_reset : UInt
+
+pub let vk_oem_wsctrl : UInt
+
+pub let vk_p : UInt
+
+pub let vk_pa1 : UInt
+
+pub let vk_packet : UInt
+
+pub let vk_pause : UInt
+
+pub let vk_play : UInt
+
+pub let vk_print : UInt
+
+pub let vk_prior : UInt
+
+pub let vk_processkey : UInt
+
+pub let vk_q : UInt
+
+pub let vk_r : UInt
+
+pub let vk_rbutton : UInt
+
+pub let vk_rcontrol : UInt
+
+pub let vk_return : UInt
+
+pub let vk_right : UInt
+
+pub let vk_rmenu : UInt
+
+pub let vk_rshift : UInt
+
+pub let vk_rwin : UInt
+
+pub let vk_s : UInt
+
+pub let vk_scroll : UInt
+
+pub let vk_select : UInt
+
+pub let vk_separator : UInt
+
+pub let vk_shift : UInt
+
+pub let vk_sleep : UInt
+
+pub let vk_snapshot : UInt
+
+pub let vk_space : UInt
+
+pub let vk_subtract : UInt
+
+pub let vk_t : UInt
+
+pub let vk_tab : UInt
+
+pub let vk_u : UInt
+
+pub let vk_up : UInt
+
+pub let vk_v : UInt
+
+pub let vk_volume_down : UInt
+
+pub let vk_volume_mute : UInt
+
+pub let vk_volume_up : UInt
+
+pub let vk_w : UInt
+
+pub let vk_x : UInt
+
+pub let vk_xbutton1 : UInt
+
+pub let vk_xbutton2 : UInt
+
+pub let vk_y : UInt
+
+pub let vk_z : UInt
+
+pub let vk_zoom : UInt
+
+pub let wch_dead : UInt
+
+pub let wch_lgtr : UInt
+
+pub let wch_none : UInt
+
+pub let wsz_acute : String
+
+pub let wsz_breve : String
+
+pub let wsz_cedilla : String
+
+pub let wsz_circumflex : String
+
+pub let wsz_diaresis_tonos : String
+
+pub let wsz_dot_above : String
+
+pub let wsz_double_acute : String
+
+pub let wsz_grave : String
+
+pub let wsz_hacek : String
+
+pub let wsz_hook_above : String
+
+pub let wsz_macron : String
+
+pub let wsz_ogonek : String
+
+pub let wsz_overscore : String
+
+pub let wsz_ring : String
+
+pub let wsz_tilde : String
+
+pub let wsz_tonos : String
+
+pub let wsz_umlaut : String
+
+// Errors
+
+// Types and methods
+
+// Type aliases
+pub using @af0363c3df514d95 {type ACTIVATEKEYBOARDLAYOUTFLAGS_3183d657ffbb as ACTIVATEKEYBOARDLAYOUTFLAGS}
+
+pub using @af0363c3df514d95 {type AnonymousEUnion_710e7a5ffbd8 as AnonymousEUnion}
+
+pub using @af0363c3df514d95 {type DEADKEY_ecfdf505fd55 as DEADKEY}
+
+pub using @af0363c3df514d95 {type GETMOUSEMOVEPOINTSEXRESOLUTION_675b2017aa43 as GETMOUSEMOVEPOINTSEXRESOLUTION}
+
+pub using @af0363c3df514d95 {type HARDWAREINPUT_ba227de7ab3a as HARDWAREINPUT}
+
+pub using @af0363c3df514d95 {type HKL_3d610ebd1d8c as HKL}
+
+pub using @af0363c3df514d95 {type HOTKEYMODIFIERS_b64ffb168cde as HOTKEYMODIFIERS}
+
+pub using @af0363c3df514d95 {type INPUT_a2f9aa5eda24 as INPUT}
+
+pub using @af0363c3df514d95 {type INPUTTYPE_e918d8bc9366 as INPUTTYPE}
+
+pub using @af0363c3df514d95 {type KBDNLSTABLES_3c92c14a3ccc as KBDNLSTABLES}
+
+pub using @af0363c3df514d95 {type KBDTABLEDESC_8420259a5089 as KBDTABLEDESC}
+
+pub using @af0363c3df514d95 {type KBDTABLEMULTI_a21908ce4d6d as KBDTABLEMULTI}
+
+pub using @af0363c3df514d95 {type KBDTABLES_8cb2de95a408 as KBDTABLES}
+
+pub using @af0363c3df514d95 {type KBDTYPEINFO_f9ff7656ae8f as KBDTYPEINFO}
+
+pub using @af0363c3df514d95 {type KEYBDEVENTFLAGS_91fa53c524d8 as KEYBDEVENTFLAGS}
+
+pub using @af0363c3df514d95 {type KEYBDINPUT_11fdd95b5fe3 as KEYBDINPUT}
+
+pub using @af0363c3df514d95 {type LASTINPUTINFO_b34c5bb7d8f1 as LASTINPUTINFO}
+
+pub using @af0363c3df514d95 {type LIGATURE1_1752e51bc7e1 as LIGATURE1}
+
+pub using @af0363c3df514d95 {type LIGATURE2_016f899db8cf as LIGATURE2}
+
+pub using @af0363c3df514d95 {type LIGATURE3_c8a2968cc021 as LIGATURE3}
+
+pub using @af0363c3df514d95 {type LIGATURE4_89f1b4c2dc73 as LIGATURE4}
+
+pub using @af0363c3df514d95 {type LIGATURE5_5fe449673e5c as LIGATURE5}
+
+pub using @af0363c3df514d95 {type MAPVIRTUALKEYTYPE_12e85f3b152d as MAPVIRTUALKEYTYPE}
+
+pub using @af0363c3df514d95 {type MODIFIERS_c0b8d76e83cc as MODIFIERS}
+
+pub using @af0363c3df514d95 {type MOUSEEVENTFLAGS_af264031a9d0 as MOUSEEVENTFLAGS}
+
+pub using @af0363c3df514d95 {type MOUSEINPUT_90754051c903 as MOUSEINPUT}
+
+pub using @af0363c3df514d95 {type MOUSEMOVEPOINT_d5b4452e48bc as MOUSEMOVEPOINT}
+
+pub using @af0363c3df514d95 {type TRACKMOUSEEVENT_54cf3c9a03a0 as TRACKMOUSEEVENT}
+
+pub using @af0363c3df514d95 {type TRACKMOUSEEVENTFLAGS_a5dcc520c0d7 as TRACKMOUSEEVENTFLAGS}
+
+pub using @af0363c3df514d95 {type VIRTUALKEY_cfc9a32a5ddd as VIRTUALKEY}
+
+pub using @af0363c3df514d95 {type VKF_08147071a6c2 as VKF}
+
+pub using @af0363c3df514d95 {type VKFPARAM_ec7c80543d04 as VKFPARAM}
+
+pub using @af0363c3df514d95 {type VKTOBIT_9b81aa76f470 as VKTOBIT}
+
+pub using @af0363c3df514d95 {type VKTOWCHARS1_fb8f13a24071 as VKTOWCHARS1}
+
+pub using @af0363c3df514d95 {type VKTOWCHARS10_6238b87ab5ad as VKTOWCHARS10}
+
+pub using @af0363c3df514d95 {type VKTOWCHARS2_7373fcb0894c as VKTOWCHARS2}
+
+pub using @af0363c3df514d95 {type VKTOWCHARS3_e0bc661cfc79 as VKTOWCHARS3}
+
+pub using @af0363c3df514d95 {type VKTOWCHARS4_1c2662da0e75 as VKTOWCHARS4}
+
+pub using @af0363c3df514d95 {type VKTOWCHARS5_effab157ef2c as VKTOWCHARS5}
+
+pub using @af0363c3df514d95 {type VKTOWCHARS6_418260b3d05d as VKTOWCHARS6}
+
+pub using @af0363c3df514d95 {type VKTOWCHARS7_05be7d1f5852 as VKTOWCHARS7}
+
+pub using @af0363c3df514d95 {type VKTOWCHARS8_65e2a639572f as VKTOWCHARS8}
+
+pub using @af0363c3df514d95 {type VKTOWCHARS9_55adbb84da45 as VKTOWCHARS9}
+
+pub using @af0363c3df514d95 {type VKTOWCHARTABLE_e9e56816d9df as VKTOWCHARTABLE}
+
+pub using @af0363c3df514d95 {type VKVSC_c14227684bea as VKVSC}
+
+pub using @af0363c3df514d95 {type VSCLPWSTR_9dc1a6436bf3 as VSCLPWSTR}
+
+pub using @af0363c3df514d95 {type VSCVK_9a6fbee9b739 as VSCVK}
+
+// Traits
+

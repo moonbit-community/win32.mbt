@@ -1,0 +1,7 @@
+///|
+/// Stable facade for Windows.Win32.System.Time.DYNAMICTIMEZONEINFORMATION.
+pub type DYNAMICTIMEZONEINFORMATION = @owner.DYNAMICTIMEZONEINFORMATION_aed85b2b5d28
+
+///|
+/// Stable facade for Windows.Win32.System.Time.TIMEZONEINFORMATION.
+pub type TIMEZONEINFORMATION = @owner.TIMEZONEINFORMATION_c4e0d5e5a59e

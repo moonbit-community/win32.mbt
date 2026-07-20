@@ -1,0 +1,514 @@
+// Generated using `moon info`, DON'T EDIT IT
+package "moonbit-community/win32-bindings/windows/win32/system/error_reporting"
+
+import {
+  "moonbit-community/win32-bindings/runtime/core",
+  "moonbit-community/win32-bindings/scc/9adff21a990d2116",
+}
+
+// Values
+pub fn add_er_excluded_application_a_raw(@core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn add_er_excluded_application_w_raw(@core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub let appcrash_event : String
+
+pub let e_store_invalid : Int
+
+pub let e_store_machine_archive : Int
+
+pub let e_store_machine_queue : Int
+
+pub let e_store_user_archive : Int
+
+pub let e_store_user_queue : Int
+
+pub let frrv_err : Int
+
+pub let frrv_err_another_instance : Int
+
+pub let frrv_err_double_fault : Int
+
+pub let frrv_err_no_dw : Int
+
+pub let frrv_err_no_memory : Int
+
+pub let frrv_err_timeout : Int
+
+pub let frrv_launch_debugger : Int
+
+pub let frrv_ok : Int
+
+pub let frrv_ok_headless : Int
+
+pub let frrv_ok_manifest : Int
+
+pub let frrv_ok_queued : Int
+
+pub let packaged_appcrash_event : String
+
+pub fn report_fault_raw(@core.RawAddress, UInt) -> Int
+
+pub fn wer_add_excluded_application(@core.RawAddress, Int) -> Unit raise @core.WindowsError
+
+pub fn wer_add_excluded_application_raw(@core.RawAddress, Int) -> Int
+
+pub let wer_consent_always_prompt : Int
+
+pub let wer_consent_approved : Int
+
+pub let wer_consent_denied : Int
+
+pub let wer_consent_max : Int
+
+pub let wer_consent_not_asked : Int
+
+pub let wer_custom_action : Int
+
+pub let wer_disabled : Int
+
+pub let wer_disabled_queue : Int
+
+pub let wer_dump_aux_promote : UInt
+
+pub let wer_dump_auxiliary : UInt
+
+pub let wer_dump_mask_start : UInt
+
+pub let wer_dump_noheap_onqueue : UInt
+
+pub let wer_dump_type_heap_dump : Int
+
+pub let wer_dump_type_max : Int
+
+pub let wer_dump_type_micro_dump : Int
+
+pub let wer_dump_type_mini_dump : Int
+
+pub let wer_dump_type_none : Int
+
+pub let wer_dump_type_triage_dump : Int
+
+pub let wer_fault_reporting_always_show_ui : UInt
+
+pub let wer_fault_reporting_critical : UInt
+
+pub let wer_fault_reporting_disable_snapshot_crash : UInt
+
+pub let wer_fault_reporting_disable_snapshot_hang : UInt
+
+pub let wer_fault_reporting_durable : UInt
+
+pub let wer_fault_reporting_flag_disable_thread_suspension : UInt
+
+pub let wer_fault_reporting_flag_no_heap_on_queue : UInt
+
+pub let wer_fault_reporting_flag_noheap : UInt
+
+pub let wer_fault_reporting_flag_queue : UInt
+
+pub let wer_fault_reporting_flag_queue_upload : UInt
+
+pub let wer_fault_reporting_no_ui : UInt
+
+pub let wer_file_anonymous_data : UInt
+
+pub let wer_file_compressed : UInt
+
+pub let wer_file_delete_when_done : UInt
+
+pub let wer_file_type_auxiliary_dump : Int
+
+pub let wer_file_type_auxiliary_heap_dump : Int
+
+pub let wer_file_type_custom_dump : Int
+
+pub let wer_file_type_etl_trace : Int
+
+pub let wer_file_type_heapdump : Int
+
+pub let wer_file_type_max : Int
+
+pub let wer_file_type_microdump : Int
+
+pub let wer_file_type_minidump : Int
+
+pub let wer_file_type_other : Int
+
+pub let wer_file_type_triagedump : Int
+
+pub let wer_file_type_user_document : Int
+
+pub fn wer_free_string_raw(@core.RawAddress) -> Unit
+
+pub fn wer_get_flags(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn wer_get_flags_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub let wer_max_application_name_length : UInt
+
+pub let wer_max_bucket_id_string_length : UInt
+
+pub let wer_max_description_length : UInt
+
+pub let wer_max_event_name_length : UInt
+
+pub let wer_max_friendly_event_name_length : UInt
+
+pub let wer_max_local_dump_subpath_length : UInt
+
+pub let wer_max_param_count : UInt
+
+pub let wer_max_param_length : UInt
+
+pub let wer_max_preferred_modules : UInt
+
+pub let wer_max_preferred_modules_buffer : UInt
+
+pub let wer_max_registered_dumpcollection : UInt
+
+pub let wer_max_registered_entries : UInt
+
+pub let wer_max_registered_metadata : UInt
+
+pub let wer_max_registered_runtime_exception_modules : UInt
+
+pub let wer_max_signature_name_length : UInt
+
+pub let wer_max_total_param_length : UInt
+
+pub let wer_metadata_key_max_length : UInt
+
+pub let wer_metadata_value_max_length : UInt
+
+pub let wer_p0 : UInt
+
+pub let wer_p1 : UInt
+
+pub let wer_p2 : UInt
+
+pub let wer_p3 : UInt
+
+pub let wer_p4 : UInt
+
+pub let wer_p5 : UInt
+
+pub let wer_p6 : UInt
+
+pub let wer_p7 : UInt
+
+pub let wer_p8 : UInt
+
+pub let wer_p9 : UInt
+
+pub let wer_reg_file_type_max : Int
+
+pub let wer_reg_file_type_other : Int
+
+pub let wer_reg_file_type_user_document : Int
+
+pub fn wer_register_additional_process(UInt, UInt) -> Unit raise @core.WindowsError
+
+pub fn wer_register_additional_process_raw(UInt, UInt) -> Int
+
+pub fn wer_register_app_local_dump(@core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn wer_register_app_local_dump_raw(@core.RawAddress) -> Int
+
+pub fn wer_register_custom_metadata(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn wer_register_custom_metadata_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn wer_register_excluded_memory_block(@core.RawAddress, UInt) -> Unit raise @core.WindowsError
+
+pub fn wer_register_excluded_memory_block_raw(@core.RawAddress, UInt) -> Int
+
+pub fn wer_register_file(@core.RawAddress, Int, UInt) -> Unit raise @core.WindowsError
+
+pub fn wer_register_file_raw(@core.RawAddress, Int, UInt) -> Int
+
+pub fn wer_register_memory_block(@core.RawAddress, UInt) -> Unit raise @core.WindowsError
+
+pub fn wer_register_memory_block_raw(@core.RawAddress, UInt) -> Int
+
+pub fn wer_register_runtime_exception_module(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn wer_register_runtime_exception_module_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn wer_remove_excluded_application(@core.RawAddress, Int) -> Unit raise @core.WindowsError
+
+pub fn wer_remove_excluded_application_raw(@core.RawAddress, Int) -> Int
+
+pub fn wer_report_add_dump(@core.RawAddress, @core.RawAddress, @core.RawAddress, Int, @core.RawAddress, @core.RawAddress, UInt) -> Unit raise @core.WindowsError
+
+pub fn wer_report_add_dump_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, Int, @core.RawAddress, @core.RawAddress, UInt) -> Int
+
+pub fn wer_report_add_file(@core.RawAddress, @core.RawAddress, Int, UInt) -> Unit raise @core.WindowsError
+
+pub fn wer_report_add_file_raw(@core.RawAddress, @core.RawAddress, Int, UInt) -> Int
+
+pub let wer_report_application_crash : Int
+
+pub let wer_report_application_hang : Int
+
+pub let wer_report_async : Int
+
+pub let wer_report_cancelled : Int
+
+pub fn wer_report_close_handle(@core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn wer_report_close_handle_raw(@core.RawAddress) -> Int
+
+pub fn wer_report_create(@core.RawAddress, Int, @core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn wer_report_create_raw(@core.RawAddress, Int, @core.RawAddress, @core.RawAddress) -> Int
+
+pub let wer_report_critical : Int
+
+pub let wer_report_debug : Int
+
+pub let wer_report_failed : Int
+
+pub fn wer_report_hang(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn wer_report_hang_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub let wer_report_invalid : Int
+
+pub let wer_report_kernel : Int
+
+pub let wer_report_non_critical : Int
+
+pub let wer_report_queued : Int
+
+pub fn wer_report_set_parameter(@core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn wer_report_set_parameter_raw(@core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn wer_report_set_ui_option(@core.RawAddress, Int, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn wer_report_set_ui_option_raw(@core.RawAddress, Int, @core.RawAddress) -> Int
+
+pub fn wer_report_submit(@core.RawAddress, Int, UInt, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn wer_report_submit_raw(@core.RawAddress, Int, UInt, @core.RawAddress) -> Int
+
+pub let wer_report_uploaded : Int
+
+pub let wer_report_uploaded_cab : Int
+
+pub let wer_runtime_exception_debugger_launch : String
+
+pub let wer_runtime_exception_event_function : String
+
+pub let wer_runtime_exception_event_signature_function : String
+
+pub fn wer_set_flags(UInt) -> Unit raise @core.WindowsError
+
+pub fn wer_set_flags_raw(UInt) -> Int
+
+pub let wer_storage_location_not_found : Int
+
+pub fn wer_store_close_raw(@core.RawAddress) -> Unit
+
+pub fn wer_store_get_first_report_key(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn wer_store_get_first_report_key_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn wer_store_get_next_report_key(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn wer_store_get_next_report_key_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn wer_store_get_report_count(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn wer_store_get_report_count_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn wer_store_get_size_on_disk(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn wer_store_get_size_on_disk_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn wer_store_open(Int, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn wer_store_open_raw(Int, @core.RawAddress) -> Int
+
+pub fn wer_store_purge() -> Unit raise @core.WindowsError
+
+pub fn wer_store_purge_raw() -> Int
+
+pub fn wer_store_query_report_metadata_v1(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn wer_store_query_report_metadata_v1_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn wer_store_query_report_metadata_v2(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn wer_store_query_report_metadata_v2_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn wer_store_query_report_metadata_v3(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn wer_store_query_report_metadata_v3_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn wer_store_upload_report(@core.RawAddress, @core.RawAddress, UInt, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn wer_store_upload_report_raw(@core.RawAddress, @core.RawAddress, UInt, @core.RawAddress) -> Int
+
+pub let wer_submit_add_registered_data : UInt
+
+pub let wer_submit_archive_parameters_only : UInt
+
+pub let wer_submit_bypass_data_throttling : UInt
+
+pub let wer_submit_bypass_network_cost_throttling : UInt
+
+pub let wer_submit_bypass_power_throttling : UInt
+
+pub let wer_submit_honor_recovery : UInt
+
+pub let wer_submit_honor_restart : UInt
+
+pub let wer_submit_no_archive : UInt
+
+pub let wer_submit_no_close_ui : UInt
+
+pub let wer_submit_no_queue : UInt
+
+pub let wer_submit_outofprocess : UInt
+
+pub let wer_submit_outofprocess_async : UInt
+
+pub let wer_submit_queue : UInt
+
+pub let wer_submit_report_machine_id : UInt
+
+pub let wer_submit_result_max : Int
+
+pub let wer_submit_show_debug : UInt
+
+pub let wer_submit_start_minimized : UInt
+
+pub let wer_throttled : Int
+
+pub let wer_ui_additional_data_dlg_header : Int
+
+pub let wer_ui_close_dlg_body : Int
+
+pub let wer_ui_close_dlg_button_text : Int
+
+pub let wer_ui_close_dlg_header : Int
+
+pub let wer_ui_close_text : Int
+
+pub let wer_ui_consent_dlg_body : Int
+
+pub let wer_ui_consent_dlg_header : Int
+
+pub let wer_ui_icon_file_path : Int
+
+pub let wer_ui_max : Int
+
+pub let wer_ui_offline_solution_check_text : Int
+
+pub let wer_ui_online_solution_check_text : Int
+
+pub fn wer_unregister_additional_process(UInt) -> Unit raise @core.WindowsError
+
+pub fn wer_unregister_additional_process_raw(UInt) -> Int
+
+pub fn wer_unregister_app_local_dump() -> Unit raise @core.WindowsError
+
+pub fn wer_unregister_app_local_dump_raw() -> Int
+
+pub fn wer_unregister_custom_metadata(@core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn wer_unregister_custom_metadata_raw(@core.RawAddress) -> Int
+
+pub fn wer_unregister_excluded_memory_block(@core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn wer_unregister_excluded_memory_block_raw(@core.RawAddress) -> Int
+
+pub fn wer_unregister_file(@core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn wer_unregister_file_raw(@core.RawAddress) -> Int
+
+pub fn wer_unregister_memory_block(@core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn wer_unregister_memory_block_raw(@core.RawAddress) -> Int
+
+pub fn wer_unregister_runtime_exception_module(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn wer_unregister_runtime_exception_module_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+// Errors
+
+// Types and methods
+
+// Type aliases
+pub using @9adff21a990d2116 {type EFaultRepRetVal_2d7388c8f0ee as EFaultRepRetVal}
+
+pub using @9adff21a990d2116 {type HREPORT_87deabcb8875 as HREPORT}
+
+pub using @9adff21a990d2116 {type HREPORTSTORE_702008b59354 as HREPORTSTORE}
+
+pub using @9adff21a990d2116 {type PFNWERRUNTIMEEXCEPTIONDEBUGGERLAUNCH_42fb0eb901fc as PFNWERRUNTIMEEXCEPTIONDEBUGGERLAUNCH}
+
+pub using @9adff21a990d2116 {type PFNWERRUNTIMEEXCEPTIONEVENT_d89522cea212 as PFNWERRUNTIMEEXCEPTIONEVENT}
+
+pub using @9adff21a990d2116 {type PFNWERRUNTIMEEXCEPTIONEVENTSIGNATURE_fc7d8ea8e2e8 as PFNWERRUNTIMEEXCEPTIONEVENTSIGNATURE}
+
+pub using @9adff21a990d2116 {type PfnADDEREXCLUDEDAPPLICATIONA_a8927f1d8e7d as PfnADDEREXCLUDEDAPPLICATIONA}
+
+pub using @9adff21a990d2116 {type PfnADDEREXCLUDEDAPPLICATIONW_6b4e5b90c9f0 as PfnADDEREXCLUDEDAPPLICATIONW}
+
+pub using @9adff21a990d2116 {type PfnREPORTFAULT_4f5cdd827bfa as PfnREPORTFAULT}
+
+pub using @9adff21a990d2116 {type REPORTSTORETYPES_b9e74056cd50 as REPORTSTORETYPES}
+
+pub using @9adff21a990d2116 {type WERCONSENT_52bb4e821f5a as WERCONSENT}
+
+pub using @9adff21a990d2116 {type WERDUMPCUSTOMOPTIONS_9afb22a001dc as WERDUMPCUSTOMOPTIONS}
+
+pub using @9adff21a990d2116 {type WERDUMPCUSTOMOPTIONSV2_e6c404b193fb as WERDUMPCUSTOMOPTIONSV2}
+
+pub using @9adff21a990d2116 {type WERDUMPCUSTOMOPTIONSV3_9da7d2676864 as WERDUMPCUSTOMOPTIONSV3}
+
+pub using @9adff21a990d2116 {type WERDUMPTYPE_58c34735f668 as WERDUMPTYPE}
+
+pub using @9adff21a990d2116 {type WEREXCEPTIONINFORMATION_edc57dc21738 as WEREXCEPTIONINFORMATION}
+
+pub using @9adff21a990d2116 {type WERFAULTREPORTING_c09be935cd2e as WERFAULTREPORTING}
+
+pub using @9adff21a990d2116 {type WERFILE_7e4477d5d13a as WERFILE}
+
+pub using @9adff21a990d2116 {type WERFILETYPE_f8d2e257884a as WERFILETYPE}
+
+pub using @9adff21a990d2116 {type WERREGISTERFILETYPE_9a138fd4b37c as WERREGISTERFILETYPE}
+
+pub using @9adff21a990d2116 {type WERREPORTINFORMATION_298f0b409671 as WERREPORTINFORMATION}
+
+pub using @9adff21a990d2116 {type WERREPORTINFORMATIONV3_8ebb511dc004 as WERREPORTINFORMATIONV3}
+
+pub using @9adff21a990d2116 {type WERREPORTINFORMATIONV4_9bf417a76f23 as WERREPORTINFORMATIONV4}
+
+pub using @9adff21a990d2116 {type WERREPORTINFORMATIONV5_e3d0aaf82335 as WERREPORTINFORMATIONV5}
+
+pub using @9adff21a990d2116 {type WERREPORTMETADATAV1_3a09d1c7db13 as WERREPORTMETADATAV1}
+
+pub using @9adff21a990d2116 {type WERREPORTMETADATAV2_8d2f4c50fae1 as WERREPORTMETADATAV2}
+
+pub using @9adff21a990d2116 {type WERREPORTMETADATAV3_4fac64393e50 as WERREPORTMETADATAV3}
+
+pub using @9adff21a990d2116 {type WERREPORTPARAMETER_e208a15c9941 as WERREPORTPARAMETER}
+
+pub using @9adff21a990d2116 {type WERREPORTSIGNATURE_fa55cc524cc3 as WERREPORTSIGNATURE}
+
+pub using @9adff21a990d2116 {type WERREPORTTYPE_bc76204d0e01 as WERREPORTTYPE}
+
+pub using @9adff21a990d2116 {type WERREPORTUI_026dbf541ca8 as WERREPORTUI}
+
+pub using @9adff21a990d2116 {type WERRUNTIMEEXCEPTIONINFORMATION_dc1a0257eaa3 as WERRUNTIMEEXCEPTIONINFORMATION}
+
+pub using @9adff21a990d2116 {type WERSUBMITFLAGS_0f30e09e7727 as WERSUBMITFLAGS}
+
+pub using @9adff21a990d2116 {type WERSUBMITRESULT_d9a72bfcde13 as WERSUBMITRESULT}
+
+// Traits
+

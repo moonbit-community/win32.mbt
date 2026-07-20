@@ -1,0 +1,570 @@
+// Generated using `moon info`, DON'T EDIT IT
+package "moonbit-community/win32-bindings/windows/win32/network_management/snmp"
+
+import {
+  "moonbit-community/win32-bindings/runtime/core",
+  "moonbit-community/win32-bindings/scc/e0730632dac2066d",
+}
+
+// Values
+pub let asn_application : UInt
+
+pub let asn_constructor : UInt
+
+pub let asn_context : UInt
+
+pub let asn_contextspecific : UInt
+
+pub let asn_primative : UInt
+
+pub let asn_primitive : UInt
+
+pub let asn_private : UInt
+
+pub let asn_universal : UInt
+
+pub let default_snmp_port_ipx : UInt
+
+pub let default_snmp_port_udp : UInt
+
+pub let default_snmptrap_port_ipx : UInt
+
+pub let default_snmptrap_port_udp : UInt
+
+pub let maxobjidsize : UInt
+
+pub let maxobjidstrsize : UInt
+
+pub let maxvendorinfo : UInt
+
+pub let mgmctl_setagentport : UInt
+
+pub let snmp_access_none : UInt
+
+pub let snmp_access_notify : UInt
+
+pub let snmp_access_read_create : UInt
+
+pub let snmp_access_read_only : UInt
+
+pub let snmp_access_read_write : UInt
+
+pub let snmp_authapi_invalid_msg_type : UInt
+
+pub let snmp_authapi_invalid_version : UInt
+
+pub let snmp_authapi_triv_auth_failed : UInt
+
+pub let snmp_berapi_invalid_length : UInt
+
+pub let snmp_berapi_invalid_objelem : UInt
+
+pub let snmp_berapi_invalid_tag : UInt
+
+pub let snmp_berapi_overflow : UInt
+
+pub let snmp_berapi_short_buffer : UInt
+
+pub fn snmp_cancel_msg_raw(Int64, Int) -> UInt
+
+pub fn snmp_cleanup_ex_raw() -> UInt
+
+pub fn snmp_cleanup_raw() -> UInt
+
+pub fn snmp_close_raw(Int64) -> UInt
+
+pub fn snmp_context_to_str_raw(Int64, @core.RawAddress) -> UInt
+
+pub fn snmp_count_vbl_raw(Int64) -> UInt
+
+pub fn snmp_create_pdu_raw(Int64, UInt, Int, Int, Int, Int64) -> Int64
+
+pub fn snmp_create_session_raw(@core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> Int64
+
+pub fn snmp_create_vbl_raw(Int64, @core.RawAddress, @core.RawAddress) -> Int64
+
+pub fn snmp_decode_msg_raw(Int64, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn snmp_delete_vb_raw(Int64, UInt) -> UInt
+
+pub fn snmp_duplicate_pdu_raw(Int64, Int64) -> Int64
+
+pub fn snmp_duplicate_vbl_raw(Int64, Int64) -> Int64
+
+pub fn snmp_encode_msg_raw(Int64, Int64, Int64, Int64, Int64, @core.RawAddress) -> UInt
+
+pub fn snmp_entity_to_str_raw(Int64, UInt, @core.RawAddress) -> UInt
+
+pub let snmp_error_authorizationerror : UInt
+
+pub let snmp_error_badvalue : UInt
+
+pub let snmp_error_commitfailed : UInt
+
+pub let snmp_error_generr : UInt
+
+pub let snmp_error_inconsistentname : UInt
+
+pub let snmp_error_inconsistentvalue : UInt
+
+pub let snmp_error_noaccess : UInt
+
+pub let snmp_error_nocreation : UInt
+
+pub let snmp_error_noerror : UInt
+
+pub let snmp_error_nosuchname : UInt
+
+pub let snmp_error_notwritable : UInt
+
+pub let snmp_error_readonly : UInt
+
+pub let snmp_error_resourceunavailable : UInt
+
+pub let snmp_error_toobig : UInt
+
+pub let snmp_error_undofailed : UInt
+
+pub let snmp_error_wrongencoding : UInt
+
+pub let snmp_error_wronglength : UInt
+
+pub let snmp_error_wrongtype : UInt
+
+pub let snmp_error_wrongvalue : UInt
+
+pub let snmp_errorstatus_authorizationerror : UInt
+
+pub let snmp_errorstatus_badvalue : UInt
+
+pub let snmp_errorstatus_commitfailed : UInt
+
+pub let snmp_errorstatus_generr : UInt
+
+pub let snmp_errorstatus_inconsistentname : UInt
+
+pub let snmp_errorstatus_inconsistentvalue : UInt
+
+pub let snmp_errorstatus_noaccess : UInt
+
+pub let snmp_errorstatus_nocreation : UInt
+
+pub let snmp_errorstatus_noerror : UInt
+
+pub let snmp_errorstatus_nosuchname : UInt
+
+pub let snmp_errorstatus_notwritable : UInt
+
+pub let snmp_errorstatus_readonly : UInt
+
+pub let snmp_errorstatus_resourceunavailable : UInt
+
+pub let snmp_errorstatus_toobig : UInt
+
+pub let snmp_errorstatus_undofailed : UInt
+
+pub let snmp_errorstatus_wrongencoding : UInt
+
+pub let snmp_errorstatus_wronglength : UInt
+
+pub let snmp_errorstatus_wrongtype : UInt
+
+pub let snmp_errorstatus_wrongvalue : UInt
+
+pub let snmp_extension_get : UInt
+
+pub let snmp_extension_get_next : UInt
+
+pub let snmp_extension_set_cleanup : UInt
+
+pub let snmp_extension_set_commit : UInt
+
+pub let snmp_extension_set_test : UInt
+
+pub let snmp_extension_set_undo : UInt
+
+pub fn snmp_free_context_raw(Int64) -> UInt
+
+pub fn snmp_free_descriptor_raw(UInt, @core.RawAddress) -> UInt
+
+pub fn snmp_free_entity_raw(Int64) -> UInt
+
+pub fn snmp_free_pdu_raw(Int64) -> UInt
+
+pub fn snmp_free_vbl_raw(Int64) -> UInt
+
+pub let snmp_generictrap_authfailure : UInt
+
+pub let snmp_generictrap_coldstart : UInt
+
+pub let snmp_generictrap_egpneighloss : UInt
+
+pub let snmp_generictrap_enterspecific : UInt
+
+pub let snmp_generictrap_linkdown : UInt
+
+pub let snmp_generictrap_linkup : UInt
+
+pub let snmp_generictrap_warmstart : UInt
+
+pub fn snmp_get_last_error_raw(Int64) -> UInt
+
+pub fn snmp_get_pdu_data_raw(Int64, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn snmp_get_retransmit_mode_raw(@core.RawAddress) -> UInt
+
+pub fn snmp_get_retry_raw(Int64, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn snmp_get_timeout_raw(Int64, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn snmp_get_translate_mode_raw(@core.RawAddress) -> UInt
+
+pub fn snmp_get_vb_raw(Int64, UInt, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn snmp_get_vendor_info_raw(@core.RawAddress) -> UInt
+
+pub fn snmp_listen_ex_raw(Int64, UInt, UInt) -> UInt
+
+pub fn snmp_listen_raw(Int64, UInt) -> UInt
+
+pub let snmp_log_error : Int
+
+pub let snmp_log_fatal : Int
+
+pub let snmp_log_silent : Int
+
+pub let snmp_log_trace : Int
+
+pub let snmp_log_verbose : Int
+
+pub let snmp_log_warning : Int
+
+pub let snmp_max_oid_len : UInt
+
+pub let snmp_mem_alloc_error : UInt
+
+pub let snmp_mgmtapi_again : UInt
+
+pub let snmp_mgmtapi_invalid_buffer : UInt
+
+pub let snmp_mgmtapi_invalid_ctl : UInt
+
+pub let snmp_mgmtapi_invalid_session : UInt
+
+pub let snmp_mgmtapi_notraps : UInt
+
+pub let snmp_mgmtapi_select_fderrors : UInt
+
+pub let snmp_mgmtapi_timeout : UInt
+
+pub let snmp_mgmtapi_trap_dupinit : UInt
+
+pub let snmp_mgmtapi_trap_errors : UInt
+
+pub fn snmp_mgr_close_raw(@core.RawAddress) -> Int
+
+pub fn snmp_mgr_ctl_raw(@core.RawAddress, UInt, @core.RawAddress, UInt, @core.RawAddress, UInt, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn snmp_mgr_get_trap_ex_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn snmp_mgr_get_trap_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn snmp_mgr_oid_to_str_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn snmp_mgr_open_raw(@core.RawAddress, @core.RawAddress, Int, Int) -> @core.RawWin32Call[@core.RawAddress]
+
+pub fn snmp_mgr_request_raw(@core.RawAddress, UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn snmp_mgr_str_to_oid_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn snmp_mgr_trap_listen_raw(@core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn snmp_oid_compare_raw(@core.RawAddress, @core.RawAddress, UInt, @core.RawAddress) -> UInt
+
+pub fn snmp_oid_copy_raw(@core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn snmp_oid_to_str_raw(@core.RawAddress, UInt, @core.RawAddress) -> UInt
+
+pub fn snmp_open_raw(@core.RawAddress, UInt) -> Int64
+
+pub let snmp_output_to_console : UInt
+
+pub let snmp_output_to_debugger : UInt
+
+pub let snmp_output_to_eventlog : UInt
+
+pub let snmp_output_to_logfile : UInt
+
+pub let snmp_pdu_get : UInt
+
+pub let snmp_pdu_getbulk : UInt
+
+pub let snmp_pdu_getnext : UInt
+
+pub let snmp_pdu_response : UInt
+
+pub let snmp_pdu_set : UInt
+
+pub let snmp_pdu_trap : UInt
+
+pub let snmp_pduapi_invalid_es : UInt
+
+pub let snmp_pduapi_invalid_gt : UInt
+
+pub let snmp_pduapi_unrecognized_pdu : UInt
+
+pub fn snmp_recv_msg_raw(Int64, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn snmp_register_raw(Int64, Int64, Int64, Int64, @core.RawAddress, UInt) -> UInt
+
+pub fn snmp_send_msg_raw(Int64, Int64, Int64, Int64, Int64) -> UInt
+
+pub fn snmp_set_pdu_data_raw(Int64, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn snmp_set_port_raw(Int64, UInt) -> UInt
+
+pub fn snmp_set_retransmit_mode_raw(UInt) -> UInt
+
+pub fn snmp_set_retry_raw(Int64, UInt) -> UInt
+
+pub fn snmp_set_timeout_raw(Int64, UInt) -> UInt
+
+pub fn snmp_set_translate_mode_raw(UInt) -> UInt
+
+pub fn snmp_set_vb_raw(Int64, UInt, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn snmp_startup_ex_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn snmp_startup_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn snmp_str_to_context_raw(Int64, @core.RawAddress) -> Int64
+
+pub fn snmp_str_to_entity_raw(Int64, @core.RawAddress) -> Int64
+
+pub fn snmp_str_to_oid_raw(@core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn snmp_svc_get_uptime_raw() -> UInt
+
+pub fn snmp_svc_set_log_level_raw(Int) -> Unit
+
+pub fn snmp_svc_set_log_type_raw(Int) -> Unit
+
+pub let snmp_trap_authfail : UInt
+
+pub let snmp_trap_coldstart : UInt
+
+pub let snmp_trap_egpneighborloss : UInt
+
+pub let snmp_trap_enterprisespecific : UInt
+
+pub let snmp_trap_linkdown : UInt
+
+pub let snmp_trap_linkup : UInt
+
+pub let snmp_trap_warmstart : UInt
+
+pub fn snmp_util_asn_any_cpy_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn snmp_util_asn_any_free_raw(@core.RawAddress) -> Unit
+
+pub fn snmp_util_ids_to_a_raw(@core.RawAddress, UInt) -> @core.RawAddress
+
+pub fn snmp_util_mem_alloc_raw(UInt) -> @core.RawAddress
+
+pub fn snmp_util_mem_free_raw(@core.RawAddress) -> Unit
+
+pub fn snmp_util_mem_re_alloc_raw(@core.RawAddress, UInt) -> @core.RawAddress
+
+pub fn snmp_util_octets_cmp_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn snmp_util_octets_cpy_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn snmp_util_octets_free_raw(@core.RawAddress) -> Unit
+
+pub fn snmp_util_octets_n_cmp_raw(@core.RawAddress, @core.RawAddress, UInt) -> Int
+
+pub fn snmp_util_oid_append_raw(@core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn snmp_util_oid_cmp_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn snmp_util_oid_cpy_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn snmp_util_oid_free_raw(@core.RawAddress) -> Unit
+
+pub fn snmp_util_oid_n_cmp_raw(@core.RawAddress, @core.RawAddress, UInt) -> Int
+
+pub fn snmp_util_oid_to_a_raw(@core.RawAddress) -> @core.RawAddress
+
+pub fn snmp_util_print_asn_any_raw(@core.RawAddress) -> Unit
+
+pub fn snmp_util_print_oid_raw(@core.RawAddress) -> Unit
+
+pub fn snmp_util_var_bind_cpy_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn snmp_util_var_bind_free_raw(@core.RawAddress) -> Unit
+
+pub fn snmp_util_var_bind_list_cpy_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn snmp_util_var_bind_list_free_raw(@core.RawAddress) -> Unit
+
+pub let snmpapi_alloc_error : UInt
+
+pub let snmpapi_context_invalid : UInt
+
+pub let snmpapi_context_unknown : UInt
+
+pub let snmpapi_entity_invalid : UInt
+
+pub let snmpapi_entity_unknown : UInt
+
+pub let snmpapi_error : UInt
+
+pub let snmpapi_failure : UInt
+
+pub let snmpapi_hwnd_invalid : UInt
+
+pub let snmpapi_index_invalid : UInt
+
+pub let snmpapi_m2_m_support : UInt
+
+pub let snmpapi_message_invalid : UInt
+
+pub let snmpapi_mode_invalid : UInt
+
+pub let snmpapi_no_support : UInt
+
+pub let snmpapi_noerror : UInt
+
+pub let snmpapi_noop : UInt
+
+pub let snmpapi_not_initialized : UInt
+
+pub let snmpapi_off : UInt
+
+pub let snmpapi_oid_invalid : UInt
+
+pub let snmpapi_on : UInt
+
+pub let snmpapi_operation_invalid : UInt
+
+pub let snmpapi_other_error : UInt
+
+pub let snmpapi_output_truncated : UInt
+
+pub let snmpapi_pdu_invalid : UInt
+
+pub let snmpapi_session_invalid : UInt
+
+pub let snmpapi_size_invalid : UInt
+
+pub let snmpapi_success : UInt
+
+pub let snmpapi_syntax_invalid : UInt
+
+pub let snmpapi_tl_in_use : UInt
+
+pub let snmpapi_tl_invalid_param : UInt
+
+pub let snmpapi_tl_not_available : UInt
+
+pub let snmpapi_tl_not_initialized : UInt
+
+pub let snmpapi_tl_not_supported : UInt
+
+pub let snmpapi_tl_other : UInt
+
+pub let snmpapi_tl_pdu_too_big : UInt
+
+pub let snmpapi_tl_resource_error : UInt
+
+pub let snmpapi_tl_src_invalid : UInt
+
+pub let snmpapi_tl_timeout : UInt
+
+pub let snmpapi_tl_undeliverable : UInt
+
+pub let snmpapi_translated : UInt
+
+pub let snmpapi_untranslated_v1 : UInt
+
+pub let snmpapi_untranslated_v2 : UInt
+
+pub let snmpapi_v1_support : UInt
+
+pub let snmpapi_v2_support : UInt
+
+pub let snmpapi_vbl_invalid : UInt
+
+pub let snmplisten_all_addr : UInt
+
+pub let snmplisten_useentity_addr : UInt
+
+// Errors
+
+// Types and methods
+
+// Type aliases
+pub using @e0730632dac2066d {type AsnAny_4fd0ca9af590 as AsnAny}
+
+pub using @e0730632dac2066d {type AsnObjectIdentifier_8be934ceb339 as AsnObjectIdentifier}
+
+pub using @e0730632dac2066d {type AsnOctetString_cd3733f519c4 as AsnOctetString}
+
+pub using @e0730632dac2066d {type AsnValueEUnion_544fa9781b27 as AsnValueEUnion}
+
+pub using @e0730632dac2066d {type PFNSNMPCLEANUPEX_18de4ceff1fa as PFNSNMPCLEANUPEX}
+
+pub using @e0730632dac2066d {type PFNSNMPEXTENSIONCLOSE_5ab85bf67f57 as PFNSNMPEXTENSIONCLOSE}
+
+pub using @e0730632dac2066d {type PFNSNMPEXTENSIONINIT_1948ba321ae1 as PFNSNMPEXTENSIONINIT}
+
+pub using @e0730632dac2066d {type PFNSNMPEXTENSIONINITEX_fa690e320c9e as PFNSNMPEXTENSIONINITEX}
+
+pub using @e0730632dac2066d {type PFNSNMPEXTENSIONMONITOR_425e528c2fe4 as PFNSNMPEXTENSIONMONITOR}
+
+pub using @e0730632dac2066d {type PFNSNMPEXTENSIONQUERY_fbab6b02f879 as PFNSNMPEXTENSIONQUERY}
+
+pub using @e0730632dac2066d {type PFNSNMPEXTENSIONQUERYEX_842fc589653c as PFNSNMPEXTENSIONQUERYEX}
+
+pub using @e0730632dac2066d {type PFNSNMPEXTENSIONTRAP_0d76f3135776 as PFNSNMPEXTENSIONTRAP}
+
+pub using @e0730632dac2066d {type PFNSNMPSTARTUPEX_ca862842b4a4 as PFNSNMPSTARTUPEX}
+
+pub using @e0730632dac2066d {type SNMPAPICALLBACK_1cfdcd7cd6ed as SNMPAPICALLBACK}
+
+pub using @e0730632dac2066d {type SNMPAPITRANSLATEMODE_a9cb44682c82 as SNMPAPITRANSLATEMODE}
+
+pub using @e0730632dac2066d {type SNMPERROR_63439af52c8e as SNMPERROR}
+
+pub using @e0730632dac2066d {type SNMPERRORSTATUS_b2ccbb2ad2fa as SNMPERRORSTATUS}
+
+pub using @e0730632dac2066d {type SNMPEXTENSIONREQUESTTYPE_901e254a26b7 as SNMPEXTENSIONREQUESTTYPE}
+
+pub using @e0730632dac2066d {type SNMPGENERICTRAP_b83c846988eb as SNMPGENERICTRAP}
+
+pub using @e0730632dac2066d {type SNMPLOG_a5db36f32eb3 as SNMPLOG}
+
+pub using @e0730632dac2066d {type SNMPOUTPUTLOGTYPE_c276c99c5ff6 as SNMPOUTPUTLOGTYPE}
+
+pub using @e0730632dac2066d {type SNMPPDUTYPE_4fcf29458497 as SNMPPDUTYPE}
+
+pub using @e0730632dac2066d {type SNMPSTATUS_9cd17318d326 as SNMPSTATUS}
+
+pub using @e0730632dac2066d {type SmiCNTR64_8f28fd597cb5 as SmiCNTR64}
+
+pub using @e0730632dac2066d {type SmiOCTETS_9383aa898aea as SmiOCTETS}
+
+pub using @e0730632dac2066d {type SmiOID_9c230b034fce as SmiOID}
+
+pub using @e0730632dac2066d {type SmiVALUE_ad0516fd64d9 as SmiVALUE}
+
+pub using @e0730632dac2066d {type SmiVENDORINFO_1f295fb5a6bf as SmiVENDORINFO}
+
+pub using @e0730632dac2066d {type SnmpVarBind_aff49b1d17b3 as SnmpVarBind}
+
+pub using @e0730632dac2066d {type SnmpVarBindList_eba46102f754 as SnmpVarBindList}
+
+pub using @e0730632dac2066d {type ValueEUnion_c8fea747e918 as ValueEUnion}
+
+// Traits
+

@@ -1,0 +1,440 @@
+// Generated using `moon info`, DON'T EDIT IT
+package "moonbit-community/win32-bindings/windows/win32/devices/communication"
+
+import {
+  "moonbit-community/win32-bindings/runtime/core",
+  "moonbit-community/win32-bindings/scc/0c0667da7a0dc47c",
+}
+
+// Values
+pub fn build_comm_dcb_and_timeouts_a_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn build_comm_dcb_and_timeouts_w_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn build_comm_dcba_raw(@core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn build_comm_dcbw_raw(@core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub let ce_break : UInt
+
+pub let ce_frame : UInt
+
+pub let ce_overrun : UInt
+
+pub let ce_rxover : UInt
+
+pub let ce_rxparity : UInt
+
+pub fn clear_comm_break_raw(@core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn clear_comm_error_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub let clrbreak : UInt
+
+pub let clrdtr : UInt
+
+pub let clrrts : UInt
+
+pub fn comm_config_dialog_a_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn comm_config_dialog_w_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub let dialoption_billing : UInt
+
+pub let dialoption_dialtone : UInt
+
+pub let dialoption_quiet : UInt
+
+pub fn escape_comm_function_raw(@core.RawAddress, UInt) -> @core.RawWin32Call[Int]
+
+pub let ev_break : UInt
+
+pub let ev_cts : UInt
+
+pub let ev_dsr : UInt
+
+pub let ev_err : UInt
+
+pub let ev_event1 : UInt
+
+pub let ev_event2 : UInt
+
+pub let ev_perr : UInt
+
+pub let ev_ring : UInt
+
+pub let ev_rlsd : UInt
+
+pub let ev_rx80_full : UInt
+
+pub let ev_rxchar : UInt
+
+pub let ev_rxflag : UInt
+
+pub let ev_txempty : UInt
+
+pub let evenparity : UInt
+
+pub fn get_comm_config_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn get_comm_mask_raw(@core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn get_comm_modem_status_raw(@core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn get_comm_ports_raw(@core.RawAddress, UInt, @core.RawAddress) -> UInt
+
+pub fn get_comm_properties_raw(@core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn get_comm_state_raw(@core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn get_comm_timeouts_raw(@core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn get_default_comm_config_a_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn get_default_comm_config_w_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub let markparity : UInt
+
+pub let maxlength_nai : UInt
+
+pub let maxlength_uiccdatastore : UInt
+
+pub let mdm_analog_rlp_off : UInt
+
+pub let mdm_analog_rlp_on : UInt
+
+pub let mdm_analog_v34 : UInt
+
+pub let mdm_auto_ml_2 : UInt
+
+pub let mdm_auto_ml_default : UInt
+
+pub let mdm_auto_ml_none : UInt
+
+pub let mdm_auto_speed_default : UInt
+
+pub let mdm_bearermode_analog : UInt
+
+pub let mdm_bearermode_gsm : UInt
+
+pub let mdm_bearermode_isdn : UInt
+
+pub let mdm_blind_dial : UInt
+
+pub let mdm_ccitt_override : UInt
+
+pub let mdm_cellular : UInt
+
+pub let mdm_compression : UInt
+
+pub let mdm_diagnostics : UInt
+
+pub let mdm_error_control : UInt
+
+pub let mdm_flowcontrol_hard : UInt
+
+pub let mdm_flowcontrol_soft : UInt
+
+pub let mdm_forced_ec : UInt
+
+pub let mdm_hdlcppp_auth_chap : UInt
+
+pub let mdm_hdlcppp_auth_default : UInt
+
+pub let mdm_hdlcppp_auth_mschap : UInt
+
+pub let mdm_hdlcppp_auth_none : UInt
+
+pub let mdm_hdlcppp_auth_pap : UInt
+
+pub let mdm_hdlcppp_ml_2 : UInt
+
+pub let mdm_hdlcppp_ml_default : UInt
+
+pub let mdm_hdlcppp_ml_none : UInt
+
+pub let mdm_hdlcppp_speed_56_k : UInt
+
+pub let mdm_hdlcppp_speed_64_k : UInt
+
+pub let mdm_hdlcppp_speed_default : UInt
+
+pub let mdm_mask_auto_ml : UInt
+
+pub let mdm_mask_auto_speed : UInt
+
+pub let mdm_mask_bearermode : UInt
+
+pub let mdm_mask_hdlcppp_auth : UInt
+
+pub let mdm_mask_hdlcppp_ml : UInt
+
+pub let mdm_mask_hdlcppp_speed : UInt
+
+pub let mdm_mask_protocoldata : UInt
+
+pub let mdm_mask_protocolid : UInt
+
+pub let mdm_mask_v110_speed : UInt
+
+pub let mdm_mask_v120_ml : UInt
+
+pub let mdm_mask_v120_speed : UInt
+
+pub let mdm_mask_x75_data : UInt
+
+pub let mdm_piafs_incoming : UInt
+
+pub let mdm_piafs_outgoing : UInt
+
+pub let mdm_protocolid_analog : UInt
+
+pub let mdm_protocolid_auto : UInt
+
+pub let mdm_protocolid_default : UInt
+
+pub let mdm_protocolid_gprs : UInt
+
+pub let mdm_protocolid_hdlcppp : UInt
+
+pub let mdm_protocolid_piafs : UInt
+
+pub let mdm_protocolid_v110 : UInt
+
+pub let mdm_protocolid_v120 : UInt
+
+pub let mdm_protocolid_v128 : UInt
+
+pub let mdm_protocolid_x75 : UInt
+
+pub let mdm_shift_auto_ml : UInt
+
+pub let mdm_shift_auto_speed : UInt
+
+pub let mdm_shift_bearermode : UInt
+
+pub let mdm_shift_extendedinfo : UInt
+
+pub let mdm_shift_hdlcppp_auth : UInt
+
+pub let mdm_shift_hdlcppp_ml : UInt
+
+pub let mdm_shift_hdlcppp_speed : UInt
+
+pub let mdm_shift_protocoldata : UInt
+
+pub let mdm_shift_protocolid : UInt
+
+pub let mdm_shift_protocolinfo : UInt
+
+pub let mdm_shift_v110_speed : UInt
+
+pub let mdm_shift_v120_ml : UInt
+
+pub let mdm_shift_v120_speed : UInt
+
+pub let mdm_shift_x75_data : UInt
+
+pub let mdm_speed_adjust : UInt
+
+pub let mdm_tone_dial : UInt
+
+pub let mdm_v110_speed_12_dot0_k : UInt
+
+pub let mdm_v110_speed_14_dot4_k : UInt
+
+pub let mdm_v110_speed_19_dot2_k : UInt
+
+pub let mdm_v110_speed_1_dot2_k : UInt
+
+pub let mdm_v110_speed_28_dot8_k : UInt
+
+pub let mdm_v110_speed_2_dot4_k : UInt
+
+pub let mdm_v110_speed_38_dot4_k : UInt
+
+pub let mdm_v110_speed_4_dot8_k : UInt
+
+pub let mdm_v110_speed_57_dot6_k : UInt
+
+pub let mdm_v110_speed_9_dot6_k : UInt
+
+pub let mdm_v110_speed_default : UInt
+
+pub let mdm_v120_ml_2 : UInt
+
+pub let mdm_v120_ml_default : UInt
+
+pub let mdm_v120_ml_none : UInt
+
+pub let mdm_v120_speed_56_k : UInt
+
+pub let mdm_v120_speed_64_k : UInt
+
+pub let mdm_v120_speed_default : UInt
+
+pub let mdm_v23_override : UInt
+
+pub let mdm_x75_data_128_k : UInt
+
+pub let mdm_x75_data_64_k : UInt
+
+pub let mdm_x75_data_btx : UInt
+
+pub let mdm_x75_data_default : UInt
+
+pub let mdm_x75_data_t_70 : UInt
+
+pub let mdmspkr_callsetup : UInt
+
+pub let mdmspkr_dial : UInt
+
+pub let mdmspkr_off : UInt
+
+pub let mdmspkr_on : UInt
+
+pub let mdmspkrflag_callsetup : UInt
+
+pub let mdmspkrflag_dial : UInt
+
+pub let mdmspkrflag_off : UInt
+
+pub let mdmspkrflag_on : UInt
+
+pub let mdmvol_high : UInt
+
+pub let mdmvol_low : UInt
+
+pub let mdmvol_medium : UInt
+
+pub let mdmvolflag_high : UInt
+
+pub let mdmvolflag_low : UInt
+
+pub let mdmvolflag_medium : UInt
+
+pub let ms_cts_on : UInt
+
+pub let ms_dsr_on : UInt
+
+pub let ms_ring_on : UInt
+
+pub let ms_rlsd_on : UInt
+
+pub let noparity : UInt
+
+pub let oddparity : UInt
+
+pub let one5_stopbits : UInt
+
+pub let onestopbit : UInt
+
+pub fn open_comm_port_raw(UInt, UInt, UInt) -> @core.RawAddress
+
+pub let parity_even : UInt
+
+pub let parity_mark : UInt
+
+pub let parity_none : UInt
+
+pub let parity_odd : UInt
+
+pub let parity_space : UInt
+
+pub fn purge_comm_raw(@core.RawAddress, UInt) -> @core.RawWin32Call[Int]
+
+pub let purge_rxabort : UInt
+
+pub let purge_rxclear : UInt
+
+pub let purge_txabort : UInt
+
+pub let purge_txclear : UInt
+
+pub fn set_comm_break_raw(@core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn set_comm_config_raw(@core.RawAddress, @core.RawAddress, UInt) -> @core.RawWin32Call[Int]
+
+pub fn set_comm_mask_raw(@core.RawAddress, UInt) -> @core.RawWin32Call[Int]
+
+pub fn set_comm_state_raw(@core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn set_comm_timeouts_raw(@core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn set_default_comm_config_a_raw(@core.RawAddress, @core.RawAddress, UInt) -> @core.RawWin32Call[Int]
+
+pub fn set_default_comm_config_w_raw(@core.RawAddress, @core.RawAddress, UInt) -> @core.RawWin32Call[Int]
+
+pub let setbreak : UInt
+
+pub let setdtr : UInt
+
+pub let setrts : UInt
+
+pub fn setup_comm_raw(@core.RawAddress, UInt, UInt) -> @core.RawWin32Call[Int]
+
+pub let setxoff : UInt
+
+pub let setxon : UInt
+
+pub let spaceparity : UInt
+
+pub let stopbits_10 : UInt
+
+pub let stopbits_15 : UInt
+
+pub let stopbits_20 : UInt
+
+pub fn transmit_comm_char_raw(@core.RawAddress, Int) -> @core.RawWin32Call[Int]
+
+pub let twostopbits : UInt
+
+pub fn wait_comm_event_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+// Errors
+
+// Types and methods
+
+// Type aliases
+pub using @0c0667da7a0dc47c {type CLEARCOMMERRORFLAGS_93f028fb8d20 as CLEARCOMMERRORFLAGS}
+
+pub using @0c0667da7a0dc47c {type COMMCONFIG_c59615862c96 as COMMCONFIG}
+
+pub using @0c0667da7a0dc47c {type COMMEVENTMASK_a02f34646a71 as COMMEVENTMASK}
+
+pub using @0c0667da7a0dc47c {type COMMPROP_56947e7da1bb as COMMPROP}
+
+pub using @0c0667da7a0dc47c {type COMMPROPSTOPPARITY_397ec937a149 as COMMPROPSTOPPARITY}
+
+pub using @0c0667da7a0dc47c {type COMMTIMEOUTS_694a93fa6b8a as COMMTIMEOUTS}
+
+pub using @0c0667da7a0dc47c {type COMSTAT_b85646318096 as COMSTAT}
+
+pub using @0c0667da7a0dc47c {type DCB_936a5665c85d as DCB}
+
+pub using @0c0667da7a0dc47c {type DCBPARITY_d3b7eaf343c1 as DCBPARITY}
+
+pub using @0c0667da7a0dc47c {type DCBSTOPBITS_fb693eb32922 as DCBSTOPBITS}
+
+pub using @0c0667da7a0dc47c {type ESCAPECOMMFUNCTION_f78e7b17ca9c as ESCAPECOMMFUNCTION}
+
+pub using @0c0667da7a0dc47c {type MODEMDEVCAPS_a53645d48b09 as MODEMDEVCAPS}
+
+pub using @0c0667da7a0dc47c {type MODEMDEVCAPSDIALOPTIONS_58bef2bf05ec as MODEMDEVCAPSDIALOPTIONS}
+
+pub using @0c0667da7a0dc47c {type MODEMDEVCAPSSPEAKERMODE_f4a1f0697833 as MODEMDEVCAPSSPEAKERMODE}
+
+pub using @0c0667da7a0dc47c {type MODEMDEVCAPSSPEAKERVOLUME_dfe66442c45c as MODEMDEVCAPSSPEAKERVOLUME}
+
+pub using @0c0667da7a0dc47c {type MODEMSETTINGS_4c098410f718 as MODEMSETTINGS}
+
+pub using @0c0667da7a0dc47c {type MODEMSETTINGSSPEAKERMODE_51ec564a167b as MODEMSETTINGSSPEAKERMODE}
+
+pub using @0c0667da7a0dc47c {type MODEMSPEAKERVOLUME_d078eb9ee470 as MODEMSPEAKERVOLUME}
+
+pub using @0c0667da7a0dc47c {type MODEMSTATUSFLAGS_42ace814184d as MODEMSTATUSFLAGS}
+
+pub using @0c0667da7a0dc47c {type PURGECOMMFLAGS_d8ce45bf1f27 as PURGECOMMFLAGS}
+
+// Traits
+

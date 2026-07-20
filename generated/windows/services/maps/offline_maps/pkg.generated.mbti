@@ -1,0 +1,126 @@
+// Generated using `moon info`, DON'T EDIT IT
+package "moonbit-community/win32-bindings/windows/services/maps/offline_maps"
+
+import {
+  "moonbit-community/win32-bindings/runtime/com",
+  "moonbit-community/win32-bindings/runtime/core",
+  "moonbit-community/win32-bindings/scc/ad58665ddb6140ae",
+  "moonbitlang/core/ref",
+}
+
+// Values
+pub fn add_status_changed(@core.RawAddress, @core.RawAddress) -> Int64 raise @core.WindowsError
+
+pub fn add_status_changed_raw(@core.RawAddress, @core.RawAddress, @ref.Ref[Int64]) -> Int
+
+pub let deleting : Int
+
+pub let denied_without_capability : Int
+
+pub let display_name_6151d07150 : String
+
+pub let display_name_81cad35e90 : String
+
+pub let downloaded : Int
+
+pub let downloading : Int
+
+pub let enclosing_region_name_1d0d555490 : String
+
+pub let enclosing_region_name_2a94590134 : String
+
+pub let estimated_size_in_bytes_07c7661b9f : String
+
+pub let estimated_size_in_bytes_0da7ed6637 : String
+
+pub fn find_packages_async_raw(@core.RawAddress, @core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn find_packages_in_bounding_box_async_raw(@core.RawAddress, @core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn find_packages_in_geocircle_async_raw(@core.RawAddress, @core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_display_name_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_enclosing_region_name_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_estimated_size_in_bytes(@core.RawAddress) -> UInt64 raise @core.WindowsError
+
+pub fn get_estimated_size_in_bytes_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_packages_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_status_1fd5c65d30(@core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn get_status_1fd5c65d30_raw(@core.RawAddress, @ref.Ref[Int]) -> Int
+
+pub fn get_status_7f566454f6(@core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn get_status_7f566454f6_raw(@core.RawAddress, @ref.Ref[Int]) -> Int
+
+pub fn get_status_ca4eaf6980(@core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn get_status_ca4eaf6980_raw(@core.RawAddress, @ref.Ref[Int]) -> Int
+
+pub let invalid_credentials_88ff9e1884 : Int
+
+pub let invalid_credentials_aa7f5d68da : Int
+
+pub let network_failure : Int
+
+pub let not_downloaded : Int
+
+pub let packages_4fc7383752 : String
+
+pub let packages_df3d9a7e57 : String
+
+pub fn remove_status_changed(@core.RawAddress, Int64) -> Unit raise @core.WindowsError
+
+pub fn remove_status_changed_raw(@core.RawAddress, Int64) -> Int
+
+pub fn request_start_download_async_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn static_factory(@core.Guid) -> @com.ComPtr[@com.IInspectable] raise @core.WindowsError
+
+pub let status_0f5cbf6b1c : String
+
+pub let status_53d4b28ff7 : String
+
+pub let status_5a0c58dc15 : String
+
+pub let status_8eb1073208 : String
+
+pub let status_c13dfb2df3 : String
+
+pub let status_changed_8835ded37c : String
+
+pub let status_changed_a2d8d51d58 : String
+
+pub let status_e331f32dc5 : String
+
+pub let success_6a0cea50ac : Int
+
+pub let success_7628f168de : Int
+
+pub let unknown_error_a7b193fb31 : Int
+
+pub let unknown_error_a90ae68241 : Int
+
+// Errors
+
+// Types and methods
+
+// Type aliases
+pub using @ad58665ddb6140ae {type OfflineMapPackage_328395925bc7 as OfflineMapPackage}
+
+pub using @ad58665ddb6140ae {type OfflineMapPackageQueryResult_ca59ae70f23d as OfflineMapPackageQueryResult}
+
+pub using @ad58665ddb6140ae {type OfflineMapPackageQueryStatus_e809e32328fe as OfflineMapPackageQueryStatus}
+
+pub using @ad58665ddb6140ae {type OfflineMapPackageStartDownloadResult_61d5cf675db4 as OfflineMapPackageStartDownloadResult}
+
+pub using @ad58665ddb6140ae {type OfflineMapPackageStartDownloadStatus_a2a07803ff5a as OfflineMapPackageStartDownloadStatus}
+
+pub using @ad58665ddb6140ae {type OfflineMapPackageStatus_82a608bdd44d as OfflineMapPackageStatus}
+
+// Traits
+

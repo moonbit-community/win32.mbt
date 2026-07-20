@@ -1,0 +1,600 @@
+// Generated using `moon info`, DON'T EDIT IT
+package "moonbit-community/win32-bindings/windows/win32/security/authentication/web_authn"
+
+import {
+  "moonbit-community/win32-bindings/runtime/core",
+  "moonbit-community/win32-bindings/scc/3d4a3569f8c2c006",
+}
+
+// Values
+pub let authenticator_state_disabled : Int
+
+pub let authenticator_state_enabled : Int
+
+pub fn cancel_operation(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn cancel_operation_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub let ctapcbor_hybrid_storage_linked_data_current_version : UInt
+
+pub let ctapcbor_hybrid_storage_linked_data_version_1 : UInt
+
+pub fn experimental_plugin_cancel_operation(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn experimental_plugin_cancel_operation_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn experimental_plugin_get_assertion(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn experimental_plugin_get_assertion_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn experimental_plugin_make_credential(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn experimental_plugin_make_credential_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub let experimental_webauthn_ctapcbor_authenticator_options_current_version : UInt
+
+pub let experimental_webauthn_ctapcbor_authenticator_options_version_1 : UInt
+
+pub let experimental_webauthn_ctapcbor_ecc_public_key_current_version : UInt
+
+pub let experimental_webauthn_ctapcbor_ecc_public_key_version_1 : UInt
+
+pub let experimental_webauthn_ctapcbor_get_assertion_request_current_version : UInt
+
+pub let experimental_webauthn_ctapcbor_get_assertion_request_version_1 : UInt
+
+pub let experimental_webauthn_ctapcbor_hmac_salt_extension_current_version : UInt
+
+pub let experimental_webauthn_ctapcbor_hmac_salt_extension_version_1 : UInt
+
+pub let experimental_webauthn_ctapcbor_make_credential_request_current_version : UInt
+
+pub let experimental_webauthn_ctapcbor_make_credential_request_version_1 : UInt
+
+pub fn get_assertion(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn get_assertion_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn get_lock_status(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn get_lock_status_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub let get_pub_key : Int
+
+pub let get_public_key : Int
+
+pub let get_user_verification_count : Int
+
+pub let get_uv_count : Int
+
+pub fn make_credential(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn make_credential_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub let perform_user_verification : Int
+
+pub let perform_uv : Int
+
+pub let plugin_authenticator_state_disabled : Int
+
+pub let plugin_authenticator_state_enabled : Int
+
+pub let plugin_authenticator_state_unknown : Int
+
+pub let plugin_locked : Int
+
+pub let plugin_unlocked : Int
+
+pub fn web_auth_n_authenticator_get_assertion(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn web_auth_n_authenticator_get_assertion_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn web_auth_n_authenticator_make_credential(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn web_auth_n_authenticator_make_credential_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn web_auth_n_cancel_current_operation(@core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn web_auth_n_cancel_current_operation_raw(@core.RawAddress) -> Int
+
+pub fn web_auth_n_delete_platform_credential(UInt, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn web_auth_n_delete_platform_credential_raw(UInt, @core.RawAddress) -> Int
+
+pub fn web_auth_n_free_assertion_raw(@core.RawAddress) -> Unit
+
+pub fn web_auth_n_free_authenticator_list_raw(@core.RawAddress) -> Unit
+
+pub fn web_auth_n_free_credential_attestation_raw(@core.RawAddress) -> Unit
+
+pub fn web_auth_n_free_platform_credential_list_raw(@core.RawAddress) -> Unit
+
+pub fn web_auth_n_get_api_version_number_raw() -> UInt
+
+pub fn web_auth_n_get_authenticator_list(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn web_auth_n_get_authenticator_list_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn web_auth_n_get_cancellation_id(@core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn web_auth_n_get_cancellation_id_raw(@core.RawAddress) -> Int
+
+pub fn web_auth_n_get_error_name_raw(Int) -> @core.RawAddress
+
+pub fn web_auth_n_get_platform_credential_list(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn web_auth_n_get_platform_credential_list_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn web_auth_n_get_w3_c_exception_dom_error(Int) -> Unit raise @core.WindowsError
+
+pub fn web_auth_n_get_w3_c_exception_dom_error_raw(Int) -> Int
+
+pub fn web_auth_n_is_user_verifying_platform_authenticator_available(@core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn web_auth_n_is_user_verifying_platform_authenticator_available_raw(@core.RawAddress) -> Int
+
+pub let webauthn_api_current_version : UInt
+
+pub let webauthn_api_version_1 : UInt
+
+pub let webauthn_api_version_2 : UInt
+
+pub let webauthn_api_version_3 : UInt
+
+pub let webauthn_api_version_4 : UInt
+
+pub let webauthn_api_version_5 : UInt
+
+pub let webauthn_api_version_6 : UInt
+
+pub let webauthn_api_version_7 : UInt
+
+pub let webauthn_api_version_8 : UInt
+
+pub let webauthn_api_version_9 : UInt
+
+pub let webauthn_assertion_current_version : UInt
+
+pub let webauthn_assertion_version_1 : UInt
+
+pub let webauthn_assertion_version_2 : UInt
+
+pub let webauthn_assertion_version_3 : UInt
+
+pub let webauthn_assertion_version_4 : UInt
+
+pub let webauthn_assertion_version_5 : UInt
+
+pub let webauthn_assertion_version_6 : UInt
+
+pub let webauthn_attestation_conveyance_preference_any : UInt
+
+pub let webauthn_attestation_conveyance_preference_direct : UInt
+
+pub let webauthn_attestation_conveyance_preference_indirect : UInt
+
+pub let webauthn_attestation_conveyance_preference_none : UInt
+
+pub let webauthn_attestation_decode_common : UInt
+
+pub let webauthn_attestation_decode_none : UInt
+
+pub let webauthn_attestation_type_none : String
+
+pub let webauthn_attestation_type_packed : String
+
+pub let webauthn_attestation_type_tpm : String
+
+pub let webauthn_attestation_type_u2_f : String
+
+pub let webauthn_attestation_ver_tpm_2_0 : String
+
+pub let webauthn_authenticator_attachment_any : UInt
+
+pub let webauthn_authenticator_attachment_cross_platform : UInt
+
+pub let webauthn_authenticator_attachment_cross_platform_u2_f_v2 : UInt
+
+pub let webauthn_authenticator_attachment_platform : UInt
+
+pub let webauthn_authenticator_details_current_version : UInt
+
+pub let webauthn_authenticator_details_options_current_version : UInt
+
+pub let webauthn_authenticator_details_options_version_1 : UInt
+
+pub let webauthn_authenticator_details_version_1 : UInt
+
+pub let webauthn_authenticator_get_assertion_options_current_version : UInt
+
+pub let webauthn_authenticator_get_assertion_options_version_1 : UInt
+
+pub let webauthn_authenticator_get_assertion_options_version_2 : UInt
+
+pub let webauthn_authenticator_get_assertion_options_version_3 : UInt
+
+pub let webauthn_authenticator_get_assertion_options_version_4 : UInt
+
+pub let webauthn_authenticator_get_assertion_options_version_5 : UInt
+
+pub let webauthn_authenticator_get_assertion_options_version_6 : UInt
+
+pub let webauthn_authenticator_get_assertion_options_version_7 : UInt
+
+pub let webauthn_authenticator_get_assertion_options_version_8 : UInt
+
+pub let webauthn_authenticator_get_assertion_options_version_9 : UInt
+
+pub let webauthn_authenticator_hmac_secret_values_flag : UInt
+
+pub let webauthn_authenticator_make_credential_options_current_version : UInt
+
+pub let webauthn_authenticator_make_credential_options_version_1 : UInt
+
+pub let webauthn_authenticator_make_credential_options_version_2 : UInt
+
+pub let webauthn_authenticator_make_credential_options_version_3 : UInt
+
+pub let webauthn_authenticator_make_credential_options_version_4 : UInt
+
+pub let webauthn_authenticator_make_credential_options_version_5 : UInt
+
+pub let webauthn_authenticator_make_credential_options_version_6 : UInt
+
+pub let webauthn_authenticator_make_credential_options_version_7 : UInt
+
+pub let webauthn_authenticator_make_credential_options_version_8 : UInt
+
+pub let webauthn_authenticator_make_credential_options_version_9 : UInt
+
+pub let webauthn_client_data_current_version : UInt
+
+pub let webauthn_common_attestation_current_version : UInt
+
+pub let webauthn_cose_algorithm_ecdsa_p256_with_sha256 : Int
+
+pub let webauthn_cose_algorithm_ecdsa_p384_with_sha384 : Int
+
+pub let webauthn_cose_algorithm_ecdsa_p521_with_sha512 : Int
+
+pub let webauthn_cose_algorithm_rsa_pss_with_sha256 : Int
+
+pub let webauthn_cose_algorithm_rsa_pss_with_sha384 : Int
+
+pub let webauthn_cose_algorithm_rsa_pss_with_sha512 : Int
+
+pub let webauthn_cose_algorithm_rsassa_pkcs1_v1_5_with_sha256 : Int
+
+pub let webauthn_cose_algorithm_rsassa_pkcs1_v1_5_with_sha384 : Int
+
+pub let webauthn_cose_algorithm_rsassa_pkcs1_v1_5_with_sha512 : Int
+
+pub let webauthn_cose_credential_parameter_current_version : UInt
+
+pub let webauthn_cred_large_blob_operation_delete : UInt
+
+pub let webauthn_cred_large_blob_operation_get : UInt
+
+pub let webauthn_cred_large_blob_operation_none : UInt
+
+pub let webauthn_cred_large_blob_operation_set : UInt
+
+pub let webauthn_cred_large_blob_status_authenticator_error : UInt
+
+pub let webauthn_cred_large_blob_status_invalid_data : UInt
+
+pub let webauthn_cred_large_blob_status_invalid_parameter : UInt
+
+pub let webauthn_cred_large_blob_status_lack_of_space : UInt
+
+pub let webauthn_cred_large_blob_status_multiple_credentials : UInt
+
+pub let webauthn_cred_large_blob_status_none : UInt
+
+pub let webauthn_cred_large_blob_status_not_found : UInt
+
+pub let webauthn_cred_large_blob_status_not_supported : UInt
+
+pub let webauthn_cred_large_blob_status_platform_error : UInt
+
+pub let webauthn_cred_large_blob_status_success : UInt
+
+pub let webauthn_credential_attestation_current_version : UInt
+
+pub let webauthn_credential_attestation_version_1 : UInt
+
+pub let webauthn_credential_attestation_version_2 : UInt
+
+pub let webauthn_credential_attestation_version_3 : UInt
+
+pub let webauthn_credential_attestation_version_4 : UInt
+
+pub let webauthn_credential_attestation_version_5 : UInt
+
+pub let webauthn_credential_attestation_version_6 : UInt
+
+pub let webauthn_credential_attestation_version_7 : UInt
+
+pub let webauthn_credential_attestation_version_8 : UInt
+
+pub let webauthn_credential_current_version : UInt
+
+pub let webauthn_credential_details_current_version : UInt
+
+pub let webauthn_credential_details_version_1 : UInt
+
+pub let webauthn_credential_details_version_2 : UInt
+
+pub let webauthn_credential_details_version_3 : UInt
+
+pub let webauthn_credential_details_version_4 : UInt
+
+pub let webauthn_credential_ex_current_version : UInt
+
+pub let webauthn_credential_hint_client_device : String
+
+pub let webauthn_credential_hint_hybrid : String
+
+pub let webauthn_credential_hint_security_key : String
+
+pub let webauthn_credential_type_public_key : String
+
+pub let webauthn_ctap_one_hmac_secret_length : UInt
+
+pub let webauthn_ctap_transport_ble : UInt
+
+pub let webauthn_ctap_transport_ble_string : String
+
+pub let webauthn_ctap_transport_flags_mask : UInt
+
+pub let webauthn_ctap_transport_hybrid : UInt
+
+pub let webauthn_ctap_transport_hybrid_string : String
+
+pub let webauthn_ctap_transport_internal : UInt
+
+pub let webauthn_ctap_transport_internal_string : String
+
+pub let webauthn_ctap_transport_nfc : UInt
+
+pub let webauthn_ctap_transport_nfc_string : String
+
+pub let webauthn_ctap_transport_smart_card : UInt
+
+pub let webauthn_ctap_transport_smart_card_string : String
+
+pub let webauthn_ctap_transport_test : UInt
+
+pub let webauthn_ctap_transport_usb : UInt
+
+pub let webauthn_ctap_transport_usb_string : String
+
+pub let webauthn_ctapcbor_authenticator_options_current_version : UInt
+
+pub let webauthn_ctapcbor_authenticator_options_version_1 : UInt
+
+pub let webauthn_ctapcbor_ecc_public_key_current_version : UInt
+
+pub let webauthn_ctapcbor_ecc_public_key_version_1 : UInt
+
+pub let webauthn_ctapcbor_get_assertion_request_current_version : UInt
+
+pub let webauthn_ctapcbor_get_assertion_request_version_1 : UInt
+
+pub let webauthn_ctapcbor_hmac_salt_extension_current_version : UInt
+
+pub let webauthn_ctapcbor_hmac_salt_extension_version_1 : UInt
+
+pub let webauthn_ctapcbor_make_credential_request_current_version : UInt
+
+pub let webauthn_ctapcbor_make_credential_request_version_1 : UInt
+
+pub let webauthn_enterprise_attestation_none : UInt
+
+pub let webauthn_enterprise_attestation_platform_managed : UInt
+
+pub let webauthn_enterprise_attestation_vendor_facilitated : UInt
+
+pub let webauthn_extensions_identifier_cred_blob : String
+
+pub let webauthn_extensions_identifier_cred_protect : String
+
+pub let webauthn_extensions_identifier_hmac_secret : String
+
+pub let webauthn_extensions_identifier_min_pin_length : String
+
+pub let webauthn_get_credentials_options_current_version : UInt
+
+pub let webauthn_get_credentials_options_version_1 : UInt
+
+pub let webauthn_hash_algorithm_sha_256 : String
+
+pub let webauthn_hash_algorithm_sha_384 : String
+
+pub let webauthn_hash_algorithm_sha_512 : String
+
+pub let webauthn_large_blob_support_none : UInt
+
+pub let webauthn_large_blob_support_preferred : UInt
+
+pub let webauthn_large_blob_support_required : UInt
+
+pub let webauthn_max_user_id_length : UInt
+
+pub let webauthn_plugin_request_type_ctap2_cbor : Int
+
+pub let webauthn_rp_entity_information_current_version : UInt
+
+pub let webauthn_rp_entity_information_version_1 : UInt
+
+pub let webauthn_user_entity_information_current_version : UInt
+
+pub let webauthn_user_entity_information_version_1 : UInt
+
+pub let webauthn_user_verification_any : UInt
+
+pub let webauthn_user_verification_optional : UInt
+
+pub let webauthn_user_verification_optional_with_credential_id_list : UInt
+
+pub let webauthn_user_verification_required : UInt
+
+pub let webauthn_user_verification_requirement_any : UInt
+
+pub let webauthn_user_verification_requirement_discouraged : UInt
+
+pub let webauthn_user_verification_requirement_preferred : UInt
+
+pub let webauthn_user_verification_requirement_required : UInt
+
+// Errors
+
+// Types and methods
+
+// Type aliases
+pub using @3d4a3569f8c2c006 {type AUTHENTICATORSTATE_e6e74180c851 as AUTHENTICATORSTATE}
+
+pub using @3d4a3569f8c2c006 {type CTAPCBORHYBRIDSTORAGELINKEDDATA_43679120a9a8 as CTAPCBORHYBRIDSTORAGELINKEDDATA}
+
+pub using @3d4a3569f8c2c006 {type EXPERIMENTALIPluginAuthenticator_536ec9f8661a as EXPERIMENTALIPluginAuthenticator}
+
+pub using @3d4a3569f8c2c006 {type EXPERIMENTALPLUGINAUTHENTICATORSTATE_bd550a8cdc8f as EXPERIMENTALPLUGINAUTHENTICATORSTATE}
+
+pub using @3d4a3569f8c2c006 {type EXPERIMENTALWEBAUTHNCTAPCBORAUTHENTICATOROPTIONS_c678661efb22 as EXPERIMENTALWEBAUTHNCTAPCBORAUTHENTICATOROPTIONS}
+
+pub using @3d4a3569f8c2c006 {type EXPERIMENTALWEBAUTHNCTAPCBORECCPUBLICKEY_575f715ff9c1 as EXPERIMENTALWEBAUTHNCTAPCBORECCPUBLICKEY}
+
+pub using @3d4a3569f8c2c006 {type EXPERIMENTALWEBAUTHNCTAPCBORGETASSERTIONREQUEST_f73dcd462901 as EXPERIMENTALWEBAUTHNCTAPCBORGETASSERTIONREQUEST}
+
+pub using @3d4a3569f8c2c006 {type EXPERIMENTALWEBAUTHNCTAPCBORGETASSERTIONRESPONSE_6edfdd47bedc as EXPERIMENTALWEBAUTHNCTAPCBORGETASSERTIONRESPONSE}
+
+pub using @3d4a3569f8c2c006 {type EXPERIMENTALWEBAUTHNCTAPCBORHMACSALTEXTENSION_bdd7e16c741f as EXPERIMENTALWEBAUTHNCTAPCBORHMACSALTEXTENSION}
+
+pub using @3d4a3569f8c2c006 {type EXPERIMENTALWEBAUTHNCTAPCBORMAKECREDENTIALREQUEST_64b5419f4b53 as EXPERIMENTALWEBAUTHNCTAPCBORMAKECREDENTIALREQUEST}
+
+pub using @3d4a3569f8c2c006 {type EXPERIMENTALWEBAUTHNPLUGINADDAUTHENTICATOROPTIONS_70b57b336177 as EXPERIMENTALWEBAUTHNPLUGINADDAUTHENTICATOROPTIONS}
+
+pub using @3d4a3569f8c2c006 {type EXPERIMENTALWEBAUTHNPLUGINADDAUTHENTICATOROPTIONS2_98fe0b7e2e14 as EXPERIMENTALWEBAUTHNPLUGINADDAUTHENTICATOROPTIONS2}
+
+pub using @3d4a3569f8c2c006 {type EXPERIMENTALWEBAUTHNPLUGINADDAUTHENTICATORRESPONSE_a1c61fcafd48 as EXPERIMENTALWEBAUTHNPLUGINADDAUTHENTICATORRESPONSE}
+
+pub using @3d4a3569f8c2c006 {type EXPERIMENTALWEBAUTHNPLUGINCANCELOPERATIONREQUEST_810b3ac721e8 as EXPERIMENTALWEBAUTHNPLUGINCANCELOPERATIONREQUEST}
+
+pub using @3d4a3569f8c2c006 {type EXPERIMENTALWEBAUTHNPLUGINCREDENTIALDETAILS_14b6bed796e4 as EXPERIMENTALWEBAUTHNPLUGINCREDENTIALDETAILS}
+
+pub using @3d4a3569f8c2c006 {type EXPERIMENTALWEBAUTHNPLUGINCREDENTIALDETAILSLIST_2151a6dd3922 as EXPERIMENTALWEBAUTHNPLUGINCREDENTIALDETAILSLIST}
+
+pub using @3d4a3569f8c2c006 {type EXPERIMENTALWEBAUTHNPLUGINOPERATIONREQUEST_6a59dac260a7 as EXPERIMENTALWEBAUTHNPLUGINOPERATIONREQUEST}
+
+pub using @3d4a3569f8c2c006 {type EXPERIMENTALWEBAUTHNPLUGINOPERATIONRESPONSE_bb92e524d326 as EXPERIMENTALWEBAUTHNPLUGINOPERATIONRESPONSE}
+
+pub using @3d4a3569f8c2c006 {type EXPERIMENTALWEBAUTHNPLUGINPERFORMUV_5b053641b963 as EXPERIMENTALWEBAUTHNPLUGINPERFORMUV}
+
+pub using @3d4a3569f8c2c006 {type EXPERIMENTALWEBAUTHNPLUGINPERFORMUVOPERATIONTYPE_7fb56279a844 as EXPERIMENTALWEBAUTHNPLUGINPERFORMUVOPERATIONTYPE}
+
+pub using @3d4a3569f8c2c006 {type EXPERIMENTALWEBAUTHNPLUGINPERFORMUVRESPONSE_17fac4fe957a as EXPERIMENTALWEBAUTHNPLUGINPERFORMUVRESPONSE}
+
+pub using @3d4a3569f8c2c006 {type EXPERIMENTALWEBAUTHNPLUGINSTATUSCHANGECALLBACK_4a50e4dee162 as EXPERIMENTALWEBAUTHNPLUGINSTATUSCHANGECALLBACK}
+
+pub using @3d4a3569f8c2c006 {type EXPERIMENTALWEBAUTHNPLUGINUPDATEAUTHENTICATORDETAILS_0ad626fcd16d as EXPERIMENTALWEBAUTHNPLUGINUPDATEAUTHENTICATORDETAILS}
+
+pub using @3d4a3569f8c2c006 {type EXPERIMENTALWEBAUTHNPLUGINUPDATEAUTHENTICATORDETAILS2_567bf15efa54 as EXPERIMENTALWEBAUTHNPLUGINUPDATEAUTHENTICATORDETAILS2}
+
+pub using @3d4a3569f8c2c006 {type EXPERIMENTALWEBAUTHNPLUGINUSERVERIFICATIONREQUEST2_e06ee8ef19c4 as EXPERIMENTALWEBAUTHNPLUGINUSERVERIFICATIONREQUEST2}
+
+pub using @3d4a3569f8c2c006 {type IPluginAuthenticator_bae5ea9e3c25 as IPluginAuthenticator}
+
+pub using @3d4a3569f8c2c006 {type PLUGINLOCKSTATUS_702a4cbe0ddc as PLUGINLOCKSTATUS}
+
+pub using @3d4a3569f8c2c006 {type WEBAUTHNASSERTION_068b9ab9b1f7 as WEBAUTHNASSERTION}
+
+pub using @3d4a3569f8c2c006 {type WEBAUTHNAUTHENTICATORDETAILS_fa0e1476409f as WEBAUTHNAUTHENTICATORDETAILS}
+
+pub using @3d4a3569f8c2c006 {type WEBAUTHNAUTHENTICATORDETAILSLIST_afbdea909aa4 as WEBAUTHNAUTHENTICATORDETAILSLIST}
+
+pub using @3d4a3569f8c2c006 {type WEBAUTHNAUTHENTICATORDETAILSOPTIONS_b2146d5765d3 as WEBAUTHNAUTHENTICATORDETAILSOPTIONS}
+
+pub using @3d4a3569f8c2c006 {type WEBAUTHNAUTHENTICATORGETASSERTIONOPTIONS_dd578a64581b as WEBAUTHNAUTHENTICATORGETASSERTIONOPTIONS}
+
+pub using @3d4a3569f8c2c006 {type WEBAUTHNAUTHENTICATORMAKECREDENTIALOPTIONS_9f35a14ddc44 as WEBAUTHNAUTHENTICATORMAKECREDENTIALOPTIONS}
+
+pub using @3d4a3569f8c2c006 {type WEBAUTHNCLIENTDATA_638f9ce304c3 as WEBAUTHNCLIENTDATA}
+
+pub using @3d4a3569f8c2c006 {type WEBAUTHNCOMMONATTESTATION_b6ced87854f9 as WEBAUTHNCOMMONATTESTATION}
+
+pub using @3d4a3569f8c2c006 {type WEBAUTHNCOSECREDENTIALPARAMETER_b2225f772c91 as WEBAUTHNCOSECREDENTIALPARAMETER}
+
+pub using @3d4a3569f8c2c006 {type WEBAUTHNCOSECREDENTIALPARAMETERS_f5b12a7304f4 as WEBAUTHNCOSECREDENTIALPARAMETERS}
+
+pub using @3d4a3569f8c2c006 {type WEBAUTHNCREDBLOBEXTENSION_ad129452fa29 as WEBAUTHNCREDBLOBEXTENSION}
+
+pub using @3d4a3569f8c2c006 {type WEBAUTHNCREDENTIAL_d144fd749cd7 as WEBAUTHNCREDENTIAL}
+
+pub using @3d4a3569f8c2c006 {type WEBAUTHNCREDENTIALATTESTATION_da671456ec23 as WEBAUTHNCREDENTIALATTESTATION}
+
+pub using @3d4a3569f8c2c006 {type WEBAUTHNCREDENTIALDETAILS_2a6516a47e9a as WEBAUTHNCREDENTIALDETAILS}
+
+pub using @3d4a3569f8c2c006 {type WEBAUTHNCREDENTIALDETAILSLIST_2804d015b868 as WEBAUTHNCREDENTIALDETAILSLIST}
+
+pub using @3d4a3569f8c2c006 {type WEBAUTHNCREDENTIALEX_ac938eb7d29a as WEBAUTHNCREDENTIALEX}
+
+pub using @3d4a3569f8c2c006 {type WEBAUTHNCREDENTIALLIST_f1461b42c49d as WEBAUTHNCREDENTIALLIST}
+
+pub using @3d4a3569f8c2c006 {type WEBAUTHNCREDENTIALS_96d47b993ece as WEBAUTHNCREDENTIALS}
+
+pub using @3d4a3569f8c2c006 {type WEBAUTHNCREDPROTECTEXTENSIONIN_eca5d0af0afa as WEBAUTHNCREDPROTECTEXTENSIONIN}
+
+pub using @3d4a3569f8c2c006 {type WEBAUTHNCREDWITHHMACSECRETSALT_6e1f718a400a as WEBAUTHNCREDWITHHMACSECRETSALT}
+
+pub using @3d4a3569f8c2c006 {type WEBAUTHNCTAPCBORAUTHENTICATOROPTIONS_641cb922760c as WEBAUTHNCTAPCBORAUTHENTICATOROPTIONS}
+
+pub using @3d4a3569f8c2c006 {type WEBAUTHNCTAPCBORECCPUBLICKEY_0b8b11ef0352 as WEBAUTHNCTAPCBORECCPUBLICKEY}
+
+pub using @3d4a3569f8c2c006 {type WEBAUTHNCTAPCBORGETASSERTIONREQUEST_8183316feea2 as WEBAUTHNCTAPCBORGETASSERTIONREQUEST}
+
+pub using @3d4a3569f8c2c006 {type WEBAUTHNCTAPCBORGETASSERTIONRESPONSE_63ca269be9da as WEBAUTHNCTAPCBORGETASSERTIONRESPONSE}
+
+pub using @3d4a3569f8c2c006 {type WEBAUTHNCTAPCBORHMACSALTEXTENSION_2652933b9c9d as WEBAUTHNCTAPCBORHMACSALTEXTENSION}
+
+pub using @3d4a3569f8c2c006 {type WEBAUTHNCTAPCBORMAKECREDENTIALREQUEST_fb01a761bc87 as WEBAUTHNCTAPCBORMAKECREDENTIALREQUEST}
+
+pub using @3d4a3569f8c2c006 {type WEBAUTHNEXTENSION_4c96d52ce0d9 as WEBAUTHNEXTENSION}
+
+pub using @3d4a3569f8c2c006 {type WEBAUTHNEXTENSIONS_c9d107dedc3c as WEBAUTHNEXTENSIONS}
+
+pub using @3d4a3569f8c2c006 {type WEBAUTHNGETCREDENTIALSOPTIONS_4629378673cf as WEBAUTHNGETCREDENTIALSOPTIONS}
+
+pub using @3d4a3569f8c2c006 {type WEBAUTHNHMACSECRETSALT_8b5f33273491 as WEBAUTHNHMACSECRETSALT}
+
+pub using @3d4a3569f8c2c006 {type WEBAUTHNHMACSECRETSALTVALUES_40e47b6a44d0 as WEBAUTHNHMACSECRETSALTVALUES}
+
+pub using @3d4a3569f8c2c006 {type WEBAUTHNPLUGINADDAUTHENTICATOROPTIONS_fc8fb241b83c as WEBAUTHNPLUGINADDAUTHENTICATOROPTIONS}
+
+pub using @3d4a3569f8c2c006 {type WEBAUTHNPLUGINADDAUTHENTICATORRESPONSE_e4d58a0dccb9 as WEBAUTHNPLUGINADDAUTHENTICATORRESPONSE}
+
+pub using @3d4a3569f8c2c006 {type WEBAUTHNPLUGINCANCELOPERATIONREQUEST_aa387f51e388 as WEBAUTHNPLUGINCANCELOPERATIONREQUEST}
+
+pub using @3d4a3569f8c2c006 {type WEBAUTHNPLUGINCREDENTIALDETAILS_cfdc40b85ce9 as WEBAUTHNPLUGINCREDENTIALDETAILS}
+
+pub using @3d4a3569f8c2c006 {type WEBAUTHNPLUGINOPERATIONREQUEST_6acd2b2e0ce4 as WEBAUTHNPLUGINOPERATIONREQUEST}
+
+pub using @3d4a3569f8c2c006 {type WEBAUTHNPLUGINOPERATIONRESPONSE_75fdd77fc755 as WEBAUTHNPLUGINOPERATIONRESPONSE}
+
+pub using @3d4a3569f8c2c006 {type WEBAUTHNPLUGINPERFORMUVOPERATIONTYPE_05d3afc827f9 as WEBAUTHNPLUGINPERFORMUVOPERATIONTYPE}
+
+pub using @3d4a3569f8c2c006 {type WEBAUTHNPLUGINREQUESTTYPE_c7a1c85a97d2 as WEBAUTHNPLUGINREQUESTTYPE}
+
+pub using @3d4a3569f8c2c006 {type WEBAUTHNPLUGINSTATUSCHANGECALLBACK_ccc6ea0e7fc3 as WEBAUTHNPLUGINSTATUSCHANGECALLBACK}
+
+pub using @3d4a3569f8c2c006 {type WEBAUTHNPLUGINUPDATEAUTHENTICATORDETAILS_f32dcf2f5b7c as WEBAUTHNPLUGINUPDATEAUTHENTICATORDETAILS}
+
+pub using @3d4a3569f8c2c006 {type WEBAUTHNPLUGINUSERVERIFICATIONREQUEST_a9ba2308a547 as WEBAUTHNPLUGINUSERVERIFICATIONREQUEST}
+
+pub using @3d4a3569f8c2c006 {type WEBAUTHNRPENTITYINFORMATION_c6d5cd23106f as WEBAUTHNRPENTITYINFORMATION}
+
+pub using @3d4a3569f8c2c006 {type WEBAUTHNUSERENTITYINFORMATION_7e4e2d54a521 as WEBAUTHNUSERENTITYINFORMATION}
+
+pub using @3d4a3569f8c2c006 {type WEBAUTHNX5C_1d88deb3b9a0 as WEBAUTHNX5C}
+
+// Traits
+

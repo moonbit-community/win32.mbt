@@ -1,0 +1,140 @@
+// Generated using `moon info`, DON'T EDIT IT
+package "moonbit-community/win32-bindings/scc/0c1cc24a36569348"
+
+import {
+  "moonbit-community/win32-bindings/runtime/core",
+  "moonbitlang/core/debug",
+}
+
+// Values
+pub fn cancel_1f97e0865875(@core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn cancel_1f97e0865875_raw(@core.RawAddress) -> Int
+
+pub fn cancel_3192afa083cf(@core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn cancel_3192afa083cf_raw(@core.RawAddress) -> Int
+
+pub fn close_f0ce1b759d34(@core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn close_f0ce1b759d34_raw(@core.RawAddress) -> Int
+
+pub fn create_document_package_target_for_print_job_87c3dcd7e530(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn create_document_package_target_for_print_job_87c3dcd7e530_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn get_is_target_ipp_printer_25b4aecdc8ac(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn get_is_target_ipp_printer_25b4aecdc8ac_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn get_job_status_4d31de382094(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn get_job_status_4d31de382094_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn get_package_target_42b61af933dd(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn get_package_target_42b61af933dd_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn get_package_target_types_59a79e65c11a(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn get_package_target_types_59a79e65c11a_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn get_target_ipp_print_device_280e056bbf3b(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn get_target_ipp_print_device_280e056bbf3b_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn package_status_updated_66a5c0e3c56a(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn package_status_updated_66a5c0e3c56a_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub let print_document_package_completion_canceled_8711312c828b : Int
+
+pub let print_document_package_completion_completed_19a985140b4c : Int
+
+pub let print_document_package_completion_failed_a526e2a0c61b : Int
+
+pub let print_document_package_completion_in_progress_a3dd201afeef : Int
+
+pub let print_document_package_status_253d2f2a0be4_alignment : Int
+
+pub let print_document_package_status_253d2f2a0be4_size : Int
+
+pub let print_document_package_target_5b4265b039e7_alignment : Int
+
+pub let print_document_package_target_5b4265b039e7_size : Int
+
+pub let print_document_package_target_factory_e6a4f44c338f_alignment : Int
+
+pub let print_document_package_target_factory_e6a4f44c338f_size : Int
+
+pub fn start_xps_print_job1_455464790b9a(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn start_xps_print_job1_455464790b9a_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn start_xps_print_job_7811f1c13620(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn start_xps_print_job_7811f1c13620_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub let xps_job_cancelled_e40ef82efb22 : Int
+
+pub let xps_job_completed_6855650cf5d5 : Int
+
+pub let xps_job_failed_359b1a7cb116 : Int
+
+pub let xps_job_in_progress_46477756636a : Int
+
+pub let xpsjobstatus_4cb3aa8a4e4b_alignment : Int
+
+pub let xpsjobstatus_4cb3aa8a4e4b_size : Int
+
+// Errors
+
+// Types and methods
+pub type IPrintDocumentPackageStatusEvent_96b67c4b7d90
+
+pub type IPrintDocumentPackageTarget2_4108ebf2474e
+
+pub type IPrintDocumentPackageTargetFactory_71b098da2d81
+
+pub type IPrintDocumentPackageTarget_71d66045c3aa
+
+pub type IXpsPrintJobStream_430e955ddb58
+
+pub type IXpsPrintJob_ab4112072cbe
+
+pub(all) struct PrintDocumentPackageCompletion_d1abab5aa57c(Int) derive(Compare, Eq, @debug.Debug)
+pub fn PrintDocumentPackageCompletion_d1abab5aa57c::from_int(Int) -> Self
+pub fn PrintDocumentPackageCompletion_d1abab5aa57c::to_int(Self) -> Int
+
+pub(all) struct PrintDocumentPackageStatus_253d2f2a0be4 {
+  raw_bytes : Bytes
+} derive(Eq, @debug.Debug)
+pub fn PrintDocumentPackageStatus_253d2f2a0be4::bytes(Self) -> Bytes
+pub fn PrintDocumentPackageStatus_253d2f2a0be4::from_bytes(Bytes) -> Self raise @core.WindowsError
+
+pub(all) struct PrintDocumentPackageTargetFactory_e6a4f44c338f {
+  raw_bytes : Bytes
+} derive(Eq, @debug.Debug)
+pub fn PrintDocumentPackageTargetFactory_e6a4f44c338f::bytes(Self) -> Bytes
+pub fn PrintDocumentPackageTargetFactory_e6a4f44c338f::from_bytes(Bytes) -> Self raise @core.WindowsError
+
+pub(all) struct PrintDocumentPackageTarget_5b4265b039e7 {
+  raw_bytes : Bytes
+} derive(Eq, @debug.Debug)
+pub fn PrintDocumentPackageTarget_5b4265b039e7::bytes(Self) -> Bytes
+pub fn PrintDocumentPackageTarget_5b4265b039e7::from_bytes(Bytes) -> Self raise @core.WindowsError
+
+pub(all) struct XPSJOBCOMPLETION_cbd112da1e2b(Int) derive(Compare, Eq, @debug.Debug)
+pub fn XPSJOBCOMPLETION_cbd112da1e2b::from_int(Int) -> Self
+pub fn XPSJOBCOMPLETION_cbd112da1e2b::to_int(Self) -> Int
+
+pub(all) struct XPSJOBSTATUS_4cb3aa8a4e4b {
+  raw_bytes : Bytes
+} derive(Eq, @debug.Debug)
+pub fn XPSJOBSTATUS_4cb3aa8a4e4b::bytes(Self) -> Bytes
+pub fn XPSJOBSTATUS_4cb3aa8a4e4b::from_bytes(Bytes) -> Self raise @core.WindowsError
+
+// Type aliases
+
+// Traits
+

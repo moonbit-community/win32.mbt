@@ -1,0 +1,236 @@
+// Generated using `moon info`, DON'T EDIT IT
+package "moonbit-community/win32-bindings/windows/win32/security/authorization/ui"
+
+import {
+  "moonbit-community/win32-bindings/runtime/core",
+  "moonbit-community/win32-bindings/scc/4bf7c568d4db86ec",
+}
+
+// Values
+pub let cfstr_aclui_sid_info_list : String
+
+pub fn compute_effective_permission_with_secondary_security(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn compute_effective_permission_with_secondary_security_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn create_security_page_raw(@core.RawAddress) -> @core.RawWin32Call[@core.RawAddress]
+
+pub let dobj_cond_ntacls : Int
+
+pub let dobj_res_cont : Int
+
+pub let dobj_res_root : Int
+
+pub let dobj_ribbon_launch : Int
+
+pub let dobj_vol_ntacls : Int
+
+pub fn edit_security_advanced(@core.RawAddress, @core.RawAddress, Int) -> Unit raise @core.WindowsError
+
+pub fn edit_security_advanced_raw(@core.RawAddress, @core.RawAddress, Int) -> Int
+
+pub fn edit_security_raw(@core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn get_access_rights(@core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn get_access_rights_raw(@core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn get_effective_permission(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn get_effective_permission_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn get_full_resource_name(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn get_full_resource_name_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn get_inherit_source(@core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn get_inherit_source_raw(@core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn get_inherit_types(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn get_inherit_types_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn get_object_information(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn get_object_information_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn get_secondary_security(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn get_secondary_security_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn get_security(@core.RawAddress, UInt, @core.RawAddress, Int) -> Unit raise @core.WindowsError
+
+pub fn get_security_raw(@core.RawAddress, UInt, @core.RawAddress, Int) -> Int
+
+pub fn is_dacl_canonical_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn lookup_sids(@core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn lookup_sids_raw(@core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn map_generic(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn map_generic_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn open_elevated_editor(@core.RawAddress, @core.RawAddress, Int) -> Unit raise @core.WindowsError
+
+pub fn open_elevated_editor_raw(@core.RawAddress, @core.RawAddress, Int) -> Int
+
+pub fn property_sheet_page_callback(@core.RawAddress, @core.RawAddress, UInt, Int) -> Unit raise @core.WindowsError
+
+pub fn property_sheet_page_callback_raw(@core.RawAddress, @core.RawAddress, UInt, Int) -> Int
+
+pub let security_object_id_central_access_rule : UInt
+
+pub let security_object_id_central_policy : UInt
+
+pub let security_object_id_object_sd : UInt
+
+pub let security_object_id_share : UInt
+
+pub fn set_security(@core.RawAddress, UInt, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn set_security_raw(@core.RawAddress, UInt, @core.RawAddress) -> Int
+
+pub let si_access_container : Int
+
+pub let si_access_general : Int
+
+pub let si_access_property : Int
+
+pub let si_access_specific : Int
+
+pub let si_advanced : UInt
+
+pub let si_audits_elevation_required : UInt
+
+pub let si_container : Int
+
+pub let si_disable_deny_ace : UInt
+
+pub let si_edit_audits : UInt
+
+pub let si_edit_effective : UInt
+
+pub let si_edit_owner : Int
+
+pub let si_edit_perms : Int
+
+pub let si_edit_properties : UInt
+
+pub let si_enable_central_policy : UInt
+
+pub let si_enable_edit_attribute_condition : UInt
+
+pub let si_may_write : UInt
+
+pub let si_no_acl_protect : Int
+
+pub let si_no_additional_permission : UInt
+
+pub let si_no_tree_apply : Int
+
+pub let si_object_guid : Int
+
+pub let si_owner_elevation_required : UInt
+
+pub let si_owner_readonly : Int
+
+pub let si_owner_recurse : Int
+
+pub let si_page_advperm : Int
+
+pub let si_page_audit : Int
+
+pub let si_page_effective : Int
+
+pub let si_page_owner : Int
+
+pub let si_page_perm : Int
+
+pub let si_page_share : Int
+
+pub let si_page_takeownership : Int
+
+pub let si_page_title : Int
+
+pub let si_perms_elevation_required : UInt
+
+pub let si_readonly : Int
+
+pub let si_reset : Int
+
+pub let si_reset_dacl : UInt
+
+pub let si_reset_dacl_tree : Int
+
+pub let si_reset_owner : UInt
+
+pub let si_reset_sacl : UInt
+
+pub let si_reset_sacl_tree : Int
+
+pub let si_scope_elevation_required : UInt
+
+pub let si_server_is_dc : Int
+
+pub let si_show_audit_activated : Int
+
+pub let si_show_central_policy_activated : Int
+
+pub let si_show_default : Int
+
+pub let si_show_effective_activated : Int
+
+pub let si_show_owner_activated : Int
+
+pub let si_show_perm_activated : Int
+
+pub let si_show_share_activated : Int
+
+pub let si_view_only : UInt
+
+// Errors
+
+// Types and methods
+
+// Type aliases
+pub using @4bf7c568d4db86ec {type EFFPERMRESULTLIST_6324f28082fc as EFFPERMRESULTLIST}
+
+pub using @4bf7c568d4db86ec {type IEffectivePermission_f0daa12ded67 as IEffectivePermission}
+
+pub using @4bf7c568d4db86ec {type IEffectivePermission2_113b18b88c5d as IEffectivePermission2}
+
+pub using @4bf7c568d4db86ec {type ISecurityInformation_c4c9441b3010 as ISecurityInformation}
+
+pub using @4bf7c568d4db86ec {type ISecurityInformation2_6ac7bef67b65 as ISecurityInformation2}
+
+pub using @4bf7c568d4db86ec {type ISecurityInformation3_7b4c46683e43 as ISecurityInformation3}
+
+pub using @4bf7c568d4db86ec {type ISecurityInformation4_a1e25884962d as ISecurityInformation4}
+
+pub using @4bf7c568d4db86ec {type ISecurityObjectTypeInfo_86b5dcc28433 as ISecurityObjectTypeInfo}
+
+pub using @4bf7c568d4db86ec {type SECURITYINFOPAGEFLAGS_70a3cb5b2868 as SECURITYINFOPAGEFLAGS}
+
+pub using @4bf7c568d4db86ec {type SECURITYOBJECT_bdc0f9810c20 as SECURITYOBJECT}
+
+pub using @4bf7c568d4db86ec {type SIACCESS_279b62fd1341 as SIACCESS}
+
+pub using @4bf7c568d4db86ec {type SIDINFO_1dd57e7d85e3 as SIDINFO}
+
+pub using @4bf7c568d4db86ec {type SIDINFOLIST_a6877f634cc7 as SIDINFOLIST}
+
+pub using @4bf7c568d4db86ec {type SIINHERITTYPE_5a0817b43e37 as SIINHERITTYPE}
+
+pub using @4bf7c568d4db86ec {type SIOBJECTINFO_d82660aedca3 as SIOBJECTINFO}
+
+pub using @4bf7c568d4db86ec {type SIOBJECTINFOFLAGS_dc40db5a04dc as SIOBJECTINFOFLAGS}
+
+pub using @4bf7c568d4db86ec {type SIPAGEACTIVATED_270b6c9dd1eb as SIPAGEACTIVATED}
+
+pub using @4bf7c568d4db86ec {type SIPAGETYPE_d1f559e19656 as SIPAGETYPE}
+
+// Traits
+

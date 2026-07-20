@@ -1,0 +1,190 @@
+// Generated using `moon info`, DON'T EDIT IT
+package "moonbit-community/win32-bindings/windows/win32/system/security_center"
+
+import {
+  "moonbit-community/win32-bindings/runtime/core",
+  "moonbit-community/win32-bindings/scc/64b48e0fc0e46146",
+}
+
+// Values
+pub fn get_antivirus_days_until_expired(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn get_antivirus_days_until_expired_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn get_antivirus_protection_update_substatus(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn get_antivirus_protection_update_substatus_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn get_antivirus_scan_substatus(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn get_antivirus_scan_substatus_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn get_antivirus_settings_substatus(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn get_antivirus_settings_substatus_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn get_count(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn get_count_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn get_firewall_domain_profile_substatus(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn get_firewall_domain_profile_substatus_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn get_firewall_private_profile_substatus(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn get_firewall_private_profile_substatus_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn get_firewall_public_profile_substatus(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn get_firewall_public_profile_substatus_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn get_item(@core.RawAddress, UInt, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn get_item_raw(@core.RawAddress, UInt, @core.RawAddress) -> Int
+
+pub fn get_product_guid(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn get_product_guid_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn get_product_is_default(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn get_product_is_default_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn get_product_name(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn get_product_name_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn get_product_state(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn get_product_state_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn get_product_state_timestamp(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn get_product_state_timestamp_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn get_remediation_path(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn get_remediation_path_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn get_signature_status(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn get_signature_status_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn initialize(@core.RawAddress, UInt) -> Unit raise @core.WindowsError
+
+pub fn initialize_raw(@core.RawAddress, UInt) -> Int
+
+pub let security_product_type_antispyware : Int
+
+pub let security_product_type_antivirus : Int
+
+pub let security_product_type_firewall : Int
+
+pub fn set_default_product(@core.RawAddress, Int, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn set_default_product_raw(@core.RawAddress, Int, @core.RawAddress) -> Int
+
+pub fn wsc_get_anti_malware_uri(@core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn wsc_get_anti_malware_uri_raw(@core.RawAddress) -> Int
+
+pub fn wsc_get_security_provider_health(UInt, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn wsc_get_security_provider_health_raw(UInt, @core.RawAddress) -> Int
+
+pub fn wsc_query_anti_malware_uri() -> Unit raise @core.WindowsError
+
+pub fn wsc_query_anti_malware_uri_raw() -> Int
+
+pub fn wsc_register_for_changes(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn wsc_register_for_changes_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn wsc_register_for_user_notifications() -> Unit raise @core.WindowsError
+
+pub fn wsc_register_for_user_notifications_raw() -> Int
+
+pub let wsc_security_product_out_of_date : Int
+
+pub let wsc_security_product_state_expired : Int
+
+pub let wsc_security_product_state_off : Int
+
+pub let wsc_security_product_state_on : Int
+
+pub let wsc_security_product_state_snoozed : Int
+
+pub let wsc_security_product_substatus_action_needed : Int
+
+pub let wsc_security_product_substatus_action_recommended : Int
+
+pub let wsc_security_product_substatus_no_action : Int
+
+pub let wsc_security_product_substatus_not_set : Int
+
+pub let wsc_security_product_up_to_date : Int
+
+pub let wsc_security_provider_all : Int
+
+pub let wsc_security_provider_antispyware : Int
+
+pub let wsc_security_provider_antivirus : Int
+
+pub let wsc_security_provider_autoupdate_settings : Int
+
+pub let wsc_security_provider_firewall : Int
+
+pub let wsc_security_provider_health_good : Int
+
+pub let wsc_security_provider_health_notmonitored : Int
+
+pub let wsc_security_provider_health_poor : Int
+
+pub let wsc_security_provider_health_snooze : Int
+
+pub let wsc_security_provider_internet_settings : Int
+
+pub let wsc_security_provider_none : Int
+
+pub let wsc_security_provider_service : Int
+
+pub let wsc_security_provider_user_account_control : Int
+
+pub fn wsc_un_register_changes(@core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn wsc_un_register_changes_raw(@core.RawAddress) -> Int
+
+// Errors
+
+// Types and methods
+
+// Type aliases
+pub using @64b48e0fc0e46146 {type IWSCDefaultProduct_db03ffa7cbe4 as IWSCDefaultProduct}
+
+pub using @64b48e0fc0e46146 {type IWSCProductList_51e275fe2cb2 as IWSCProductList}
+
+pub using @64b48e0fc0e46146 {type IWscProduct_44efd785ff15 as IWscProduct}
+
+pub using @64b48e0fc0e46146 {type IWscProduct2_bc0078193f23 as IWscProduct2}
+
+pub using @64b48e0fc0e46146 {type IWscProduct3_57ebd10df2fc as IWscProduct3}
+
+pub using @64b48e0fc0e46146 {type SECURITYPRODUCTTYPE_3310740dbb46 as SECURITYPRODUCTTYPE}
+
+pub using @64b48e0fc0e46146 {type WSCDefaultProduct_30296c05220b as WSCDefaultProduct}
+
+pub using @64b48e0fc0e46146 {type WSCProductList_a0bac1d722ad as WSCProductList}
+
+pub using @64b48e0fc0e46146 {type WSCSECURITYPRODUCTSTATE_90b71732a173 as WSCSECURITYPRODUCTSTATE}
+
+pub using @64b48e0fc0e46146 {type WSCSECURITYPRODUCTSUBSTATUS_6d6fae3fc631 as WSCSECURITYPRODUCTSUBSTATUS}
+
+pub using @64b48e0fc0e46146 {type WSCSECURITYPROVIDER_8136efc22619 as WSCSECURITYPROVIDER}
+
+pub using @64b48e0fc0e46146 {type WSCSECURITYPROVIDERHEALTH_2e836ec67529 as WSCSECURITYPROVIDERHEALTH}
+
+pub using @64b48e0fc0e46146 {type WSCSECURITYSIGNATURESTATUS_8aa69bb5fa92 as WSCSECURITYSIGNATURESTATUS}
+
+// Traits
+

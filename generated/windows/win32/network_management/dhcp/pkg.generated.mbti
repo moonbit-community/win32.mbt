@@ -1,0 +1,1644 @@
+// Generated using `moon info`, DON'T EDIT IT
+package "moonbit-community/win32-bindings/windows/win32/network_management/dhcp"
+
+import {
+  "moonbit-community/win32-bindings/runtime/core",
+  "moonbit-community/win32-bindings/scc/538e064b8c133740",
+}
+
+// Values
+pub let address_type_iana : UInt
+
+pub let address_type_iata : UInt
+
+pub let allow : Int
+
+pub let changestate : UInt
+
+pub let client_type_bootp : UInt
+
+pub let client_type_dhcp : UInt
+
+pub let client_type_none : UInt
+
+pub let client_type_reservation_flag : UInt
+
+pub let client_type_unspecified : UInt
+
+pub let communication_int : Int
+
+pub let conflict_done : Int
+
+pub let defaultquarsetting : Int
+
+pub let deny : Int
+
+pub fn dhcp_add_filter_v4_raw(@core.RawAddress, @core.RawAddress, Int) -> UInt
+
+pub fn dhcp_add_security_group_raw(@core.RawAddress) -> UInt
+
+pub fn dhcp_add_server_raw(UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn dhcp_add_subnet_element_raw(@core.RawAddress, UInt, @core.RawAddress) -> UInt
+
+pub fn dhcp_add_subnet_element_v4_raw(@core.RawAddress, UInt, @core.RawAddress) -> UInt
+
+pub fn dhcp_add_subnet_element_v5_raw(@core.RawAddress, UInt, @core.RawAddress) -> UInt
+
+pub fn dhcp_add_subnet_element_v6_raw(@core.RawAddress, Bytes, @core.RawAddress) -> UInt
+
+pub let dhcp_array_type_option : Int
+
+pub let dhcp_attr_fqdn : Int
+
+pub let dhcp_attr_fqdn_single_label : Int
+
+pub let dhcp_attr_hw_addr : Int
+
+pub let dhcp_attr_option : Int
+
+pub let dhcp_attr_sub_option : Int
+
+pub let dhcp_attrib_bool_is_admin : UInt
+
+pub let dhcp_attrib_bool_is_binding_aware : UInt
+
+pub let dhcp_attrib_bool_is_dynbootp : UInt
+
+pub let dhcp_attrib_bool_is_part_of_dsdc : UInt
+
+pub let dhcp_attrib_bool_is_rogue : UInt
+
+pub let dhcp_attrib_type_bool : UInt
+
+pub let dhcp_attrib_type_ulong : UInt
+
+pub let dhcp_attrib_ulong_restore_status : UInt
+
+pub fn dhcp_audit_log_get_params_raw(@core.RawAddress, UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn dhcp_audit_log_set_params_raw(@core.RawAddress, UInt, @core.RawAddress, UInt, UInt, UInt) -> UInt
+
+pub let dhcp_binary_data_option : Int
+
+pub let dhcp_byte_option : Int
+
+pub fn dhcp_c_api_cleanup_raw() -> Unit
+
+pub fn dhcp_c_api_initialize_raw(@core.RawAddress) -> UInt
+
+pub let dhcp_callout_entry_point : String
+
+pub let dhcp_callout_list_key : String
+
+pub let dhcp_callout_list_value : String
+
+pub let dhcp_client_bootp : UInt
+
+pub let dhcp_client_dhcp : UInt
+
+pub let dhcp_client_hardware_address : Int
+
+pub let dhcp_client_ip_address : Int
+
+pub let dhcp_client_name : Int
+
+pub let dhcp_comp_begins_with : Int
+
+pub let dhcp_comp_ends_with : Int
+
+pub let dhcp_comp_equal : Int
+
+pub let dhcp_comp_not_begin_with : Int
+
+pub let dhcp_comp_not_end_with : Int
+
+pub let dhcp_comp_not_equal : Int
+
+pub let dhcp_control_continue : UInt
+
+pub let dhcp_control_pause : UInt
+
+pub let dhcp_control_start : UInt
+
+pub let dhcp_control_stop : UInt
+
+pub fn dhcp_create_class_raw(@core.RawAddress, UInt, @core.RawAddress) -> UInt
+
+pub fn dhcp_create_class_v6_raw(@core.RawAddress, UInt, @core.RawAddress) -> UInt
+
+pub fn dhcp_create_client_info_raw(@core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn dhcp_create_client_info_v4_raw(@core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn dhcp_create_client_info_vq_raw(@core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn dhcp_create_option_raw(@core.RawAddress, UInt, @core.RawAddress) -> UInt
+
+pub fn dhcp_create_option_v5_raw(@core.RawAddress, UInt, UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn dhcp_create_option_v6_raw(@core.RawAddress, UInt, UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn dhcp_create_subnet_raw(@core.RawAddress, UInt, @core.RawAddress) -> UInt
+
+pub fn dhcp_create_subnet_v6_raw(@core.RawAddress, Bytes, @core.RawAddress) -> UInt
+
+pub fn dhcp_create_subnet_vq_raw(@core.RawAddress, UInt, @core.RawAddress) -> UInt
+
+pub let dhcp_d_word_d_word_option : Int
+
+pub let dhcp_d_word_option : Int
+
+pub let dhcp_database_fix : Int
+
+pub fn dhcp_de_register_param_change_raw(UInt, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub let dhcp_default_options : Int
+
+pub let dhcp_default_options6 : Int
+
+pub fn dhcp_delete_class_raw(@core.RawAddress, UInt, @core.RawAddress) -> UInt
+
+pub fn dhcp_delete_class_v6_raw(@core.RawAddress, UInt, @core.RawAddress) -> UInt
+
+pub fn dhcp_delete_client_info_raw(@core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn dhcp_delete_client_info_v6_raw(@core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn dhcp_delete_filter_v4_raw(@core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn dhcp_delete_server_raw(UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn dhcp_delete_subnet_raw(@core.RawAddress, UInt, Int) -> UInt
+
+pub fn dhcp_delete_subnet_v6_raw(@core.RawAddress, Bytes, Int) -> UInt
+
+pub fn dhcp_delete_super_scope_v4_raw(@core.RawAddress, @core.RawAddress) -> UInt
+
+pub let dhcp_drop_duplicate : UInt
+
+pub let dhcp_drop_gen_failure : UInt
+
+pub let dhcp_drop_internal_error : UInt
+
+pub let dhcp_drop_invalid : UInt
+
+pub let dhcp_drop_no_subnets : UInt
+
+pub let dhcp_drop_noaddress : UInt
+
+pub let dhcp_drop_nomem : UInt
+
+pub let dhcp_drop_paused : UInt
+
+pub let dhcp_drop_processed : UInt
+
+pub let dhcp_drop_timeout : UInt
+
+pub let dhcp_drop_unauth : UInt
+
+pub let dhcp_drop_wrong_server : UInt
+
+pub fn dhcp_ds_cleanup_raw() -> Unit
+
+pub fn dhcp_ds_init_raw() -> UInt
+
+pub let dhcp_encapsulated_data_option : Int
+
+pub let dhcp_endpoint_flag_cant_modify : UInt
+
+pub fn dhcp_enum_classes_raw(@core.RawAddress, UInt, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn dhcp_enum_classes_v6_raw(@core.RawAddress, UInt, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn dhcp_enum_filter_v4_raw(@core.RawAddress, @core.RawAddress, UInt, Int, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn dhcp_enum_option_values_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn dhcp_enum_option_values_v5_raw(@core.RawAddress, UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn dhcp_enum_option_values_v6_raw(@core.RawAddress, UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn dhcp_enum_options_raw(@core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn dhcp_enum_options_v5_raw(@core.RawAddress, UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn dhcp_enum_options_v6_raw(@core.RawAddress, UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn dhcp_enum_servers_raw(UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn dhcp_enum_subnet_clients_filter_status_info_raw(@core.RawAddress, UInt, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn dhcp_enum_subnet_clients_raw(@core.RawAddress, UInt, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn dhcp_enum_subnet_clients_v4_raw(@core.RawAddress, UInt, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn dhcp_enum_subnet_clients_v5_raw(@core.RawAddress, UInt, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn dhcp_enum_subnet_clients_v6_raw(@core.RawAddress, Bytes, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn dhcp_enum_subnet_clients_vq_raw(@core.RawAddress, UInt, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn dhcp_enum_subnet_elements_raw(@core.RawAddress, UInt, Int, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn dhcp_enum_subnet_elements_v4_raw(@core.RawAddress, UInt, Int, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn dhcp_enum_subnet_elements_v5_raw(@core.RawAddress, UInt, Int, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn dhcp_enum_subnet_elements_v6_raw(@core.RawAddress, Bytes, Int, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn dhcp_enum_subnets_raw(@core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn dhcp_enum_subnets_v6_raw(@core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub let dhcp_excluded_ip_ranges : Int
+
+pub let dhcp_failover_delete_scopes : UInt
+
+pub let dhcp_failover_force : Int
+
+pub let dhcp_failover_max_num_add_scopes : UInt
+
+pub let dhcp_failover_max_num_rel : UInt
+
+pub let dhcp_flags_dont_access_ds : UInt
+
+pub let dhcp_flags_dont_do_rpc : UInt
+
+pub let dhcp_flags_option_is_vendor : UInt
+
+pub let dhcp_full_force : Int
+
+pub fn dhcp_get_all_option_values_raw(@core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn dhcp_get_all_option_values_v6_raw(@core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn dhcp_get_all_options_raw(@core.RawAddress, UInt, @core.RawAddress) -> UInt
+
+pub fn dhcp_get_all_options_v6_raw(@core.RawAddress, UInt, @core.RawAddress) -> UInt
+
+pub fn dhcp_get_class_info_raw(@core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn dhcp_get_client_info_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn dhcp_get_client_info_v4_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn dhcp_get_client_info_v6_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn dhcp_get_client_info_vq_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn dhcp_get_client_options_raw(@core.RawAddress, UInt, UInt, @core.RawAddress) -> UInt
+
+pub fn dhcp_get_filter_v4_raw(@core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn dhcp_get_mib_info_raw(@core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn dhcp_get_mib_info_v5_raw(@core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn dhcp_get_mib_info_v6_raw(@core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn dhcp_get_option_info_raw(@core.RawAddress, UInt, @core.RawAddress) -> UInt
+
+pub fn dhcp_get_option_info_v5_raw(@core.RawAddress, UInt, UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn dhcp_get_option_info_v6_raw(@core.RawAddress, UInt, UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn dhcp_get_option_value_raw(@core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn dhcp_get_option_value_v5_raw(@core.RawAddress, UInt, UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn dhcp_get_option_value_v6_raw(@core.RawAddress, UInt, UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn dhcp_get_original_subnet_mask_raw(@core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn dhcp_get_server_binding_info_raw(@core.RawAddress, UInt, @core.RawAddress) -> UInt
+
+pub fn dhcp_get_server_binding_info_v6_raw(@core.RawAddress, UInt, @core.RawAddress) -> UInt
+
+pub fn dhcp_get_server_specific_strings_raw(@core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn dhcp_get_subnet_delay_offer_raw(@core.RawAddress, UInt, @core.RawAddress) -> UInt
+
+pub fn dhcp_get_subnet_info_raw(@core.RawAddress, UInt, @core.RawAddress) -> UInt
+
+pub fn dhcp_get_subnet_info_v6_raw(@core.RawAddress, Bytes, @core.RawAddress) -> UInt
+
+pub fn dhcp_get_subnet_info_vq_raw(@core.RawAddress, UInt, @core.RawAddress) -> UInt
+
+pub fn dhcp_get_super_scope_info_v4_raw(@core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn dhcp_get_thread_options_raw(@core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn dhcp_get_version_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub let dhcp_give_address_new : UInt
+
+pub let dhcp_give_address_old : UInt
+
+pub let dhcp_global_options : Int
+
+pub let dhcp_global_options6 : Int
+
+pub fn dhcp_hlpr_add_v4_policy_condition_raw(@core.RawAddress, UInt, Int, UInt, UInt, @core.RawAddress, Int, @core.RawAddress, UInt, @core.RawAddress) -> UInt
+
+pub fn dhcp_hlpr_add_v4_policy_expr_raw(@core.RawAddress, UInt, Int, @core.RawAddress) -> UInt
+
+pub fn dhcp_hlpr_add_v4_policy_range_raw(@core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn dhcp_hlpr_create_v4_policy_ex_raw(@core.RawAddress, Int, UInt, UInt, Int, @core.RawAddress, Int, @core.RawAddress) -> UInt
+
+pub fn dhcp_hlpr_create_v4_policy_raw(@core.RawAddress, Int, UInt, UInt, Int, @core.RawAddress, Int, @core.RawAddress) -> UInt
+
+pub fn dhcp_hlpr_find_v4_dhcp_property_raw(@core.RawAddress, Int, Int) -> @core.RawAddress
+
+pub fn dhcp_hlpr_free_v4_dhcp_property_array_raw(@core.RawAddress) -> Unit
+
+pub fn dhcp_hlpr_free_v4_dhcp_property_raw(@core.RawAddress) -> Unit
+
+pub fn dhcp_hlpr_free_v4_policy_array_raw(@core.RawAddress) -> Unit
+
+pub fn dhcp_hlpr_free_v4_policy_ex_array_raw(@core.RawAddress) -> Unit
+
+pub fn dhcp_hlpr_free_v4_policy_ex_raw(@core.RawAddress) -> Unit
+
+pub fn dhcp_hlpr_free_v4_policy_raw(@core.RawAddress) -> Unit
+
+pub fn dhcp_hlpr_is_v4_policy_single_uc_raw(@core.RawAddress) -> Int
+
+pub fn dhcp_hlpr_is_v4_policy_valid_raw(@core.RawAddress) -> UInt
+
+pub fn dhcp_hlpr_is_v4_policy_well_formed_raw(@core.RawAddress) -> Int
+
+pub fn dhcp_hlpr_modify_v4_policy_expr_raw(@core.RawAddress, Int) -> UInt
+
+pub fn dhcp_hlpr_reset_v4_policy_expr_raw(@core.RawAddress) -> UInt
+
+pub let dhcp_ip_address_option : Int
+
+pub let dhcp_ip_ranges : Int
+
+pub let dhcp_ip_ranges_bootp_only : Int
+
+pub let dhcp_ip_ranges_dhcp_bootp : Int
+
+pub let dhcp_ip_ranges_dhcp_only : Int
+
+pub let dhcp_ip_used_clusters : Int
+
+pub let dhcp_ipv6_address_option : Int
+
+pub let dhcp_logical_and : Int
+
+pub let dhcp_logical_or : Int
+
+pub let dhcp_m_scope_options : Int
+
+pub let dhcp_max_delay : UInt
+
+pub let dhcp_min_delay : UInt
+
+pub fn dhcp_modify_class_raw(@core.RawAddress, UInt, @core.RawAddress) -> UInt
+
+pub fn dhcp_modify_class_v6_raw(@core.RawAddress, UInt, @core.RawAddress) -> UInt
+
+pub let dhcp_no_force : Int
+
+pub let dhcp_opt_enum_ignore_vendor : UInt
+
+pub let dhcp_opt_enum_use_classname : UInt
+
+pub let dhcp_prob_conflict : UInt
+
+pub let dhcp_prob_decline : UInt
+
+pub let dhcp_prob_nacked : UInt
+
+pub let dhcp_prob_release : UInt
+
+pub let dhcp_prop_id_client_address_state_ex : Int
+
+pub let dhcp_prop_id_policy_dns_suffix : Int
+
+pub let dhcp_prop_type_binary : Int
+
+pub let dhcp_prop_type_byte : Int
+
+pub let dhcp_prop_type_dword : Int
+
+pub let dhcp_prop_type_string : Int
+
+pub let dhcp_prop_type_word : Int
+
+pub fn dhcp_register_param_change_raw(UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress, Bytes, @core.RawAddress) -> UInt
+
+pub let dhcp_registry_fix : Int
+
+pub fn dhcp_remove_dns_registrations_raw() -> UInt
+
+pub fn dhcp_remove_option_raw(@core.RawAddress, UInt) -> UInt
+
+pub fn dhcp_remove_option_v5_raw(@core.RawAddress, UInt, UInt, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn dhcp_remove_option_v6_raw(@core.RawAddress, UInt, UInt, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn dhcp_remove_option_value_raw(@core.RawAddress, UInt, @core.RawAddress) -> UInt
+
+pub fn dhcp_remove_option_value_v5_raw(@core.RawAddress, UInt, UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn dhcp_remove_option_value_v6_raw(@core.RawAddress, UInt, UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn dhcp_remove_subnet_element_raw(@core.RawAddress, UInt, @core.RawAddress, Int) -> UInt
+
+pub fn dhcp_remove_subnet_element_v4_raw(@core.RawAddress, UInt, @core.RawAddress, Int) -> UInt
+
+pub fn dhcp_remove_subnet_element_v5_raw(@core.RawAddress, UInt, @core.RawAddress, Int) -> UInt
+
+pub fn dhcp_remove_subnet_element_v6_raw(@core.RawAddress, Bytes, @core.RawAddress, Int) -> UInt
+
+pub fn dhcp_request_params_raw(UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress, Bytes, Bytes, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub let dhcp_reserved_ips : Int
+
+pub let dhcp_reserved_options : Int
+
+pub let dhcp_reserved_options6 : Int
+
+pub fn dhcp_rpc_free_memory_raw(@core.RawAddress) -> Unit
+
+pub fn dhcp_scan_database_raw(@core.RawAddress, UInt, UInt, @core.RawAddress) -> UInt
+
+pub let dhcp_scope_options6 : Int
+
+pub let dhcp_secondary_hosts : Int
+
+pub let dhcp_send_packet : UInt
+
+pub fn dhcp_server_auditlog_params_free_raw(@core.RawAddress) -> Unit
+
+pub fn dhcp_server_backup_database_raw(@core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn dhcp_server_get_config_raw(@core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn dhcp_server_get_config_v4_raw(@core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn dhcp_server_get_config_v6_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn dhcp_server_get_config_vq_raw(@core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn dhcp_server_query_attribute_raw(@core.RawAddress, UInt, UInt, @core.RawAddress) -> UInt
+
+pub fn dhcp_server_query_attributes_raw(@core.RawAddress, UInt, UInt, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn dhcp_server_query_dns_reg_credentials_raw(@core.RawAddress, UInt, @core.RawAddress, UInt, @core.RawAddress) -> UInt
+
+pub fn dhcp_server_redo_authorization_raw(@core.RawAddress, UInt) -> UInt
+
+pub fn dhcp_server_restore_database_raw(@core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn dhcp_server_set_config_raw(@core.RawAddress, UInt, @core.RawAddress) -> UInt
+
+pub fn dhcp_server_set_config_v4_raw(@core.RawAddress, UInt, @core.RawAddress) -> UInt
+
+pub fn dhcp_server_set_config_v6_raw(@core.RawAddress, @core.RawAddress, UInt, @core.RawAddress) -> UInt
+
+pub fn dhcp_server_set_config_vq_raw(@core.RawAddress, UInt, @core.RawAddress) -> UInt
+
+pub fn dhcp_server_set_dns_reg_credentials_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn dhcp_server_set_dns_reg_credentials_v5_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn dhcp_set_client_info_raw(@core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn dhcp_set_client_info_v4_raw(@core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn dhcp_set_client_info_v6_raw(@core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn dhcp_set_client_info_vq_raw(@core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn dhcp_set_filter_v4_raw(@core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn dhcp_set_option_info_raw(@core.RawAddress, UInt, @core.RawAddress) -> UInt
+
+pub fn dhcp_set_option_info_v5_raw(@core.RawAddress, UInt, UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn dhcp_set_option_info_v6_raw(@core.RawAddress, UInt, UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn dhcp_set_option_value_raw(@core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn dhcp_set_option_value_v5_raw(@core.RawAddress, UInt, UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn dhcp_set_option_value_v6_raw(@core.RawAddress, UInt, UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn dhcp_set_option_values_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn dhcp_set_option_values_v5_raw(@core.RawAddress, UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn dhcp_set_server_binding_info_raw(@core.RawAddress, UInt, @core.RawAddress) -> UInt
+
+pub fn dhcp_set_server_binding_info_v6_raw(@core.RawAddress, UInt, @core.RawAddress) -> UInt
+
+pub fn dhcp_set_subnet_delay_offer_raw(@core.RawAddress, UInt, UInt) -> UInt
+
+pub fn dhcp_set_subnet_info_raw(@core.RawAddress, UInt, @core.RawAddress) -> UInt
+
+pub fn dhcp_set_subnet_info_v6_raw(@core.RawAddress, Bytes, @core.RawAddress) -> UInt
+
+pub fn dhcp_set_subnet_info_vq_raw(@core.RawAddress, UInt, @core.RawAddress) -> UInt
+
+pub fn dhcp_set_super_scope_v4_raw(@core.RawAddress, UInt, @core.RawAddress, Int) -> UInt
+
+pub fn dhcp_set_thread_options_raw(UInt, @core.RawAddress) -> UInt
+
+pub let dhcp_stateless_purge_interval : Int
+
+pub let dhcp_stateless_status : Int
+
+pub let dhcp_string_data_option : Int
+
+pub let dhcp_subnet_disabled : Int
+
+pub let dhcp_subnet_disabled_switched : Int
+
+pub let dhcp_subnet_enabled : Int
+
+pub let dhcp_subnet_enabled_switched : Int
+
+pub let dhcp_subnet_info_vq_flag_quarantine : UInt
+
+pub let dhcp_subnet_invalid_state : Int
+
+pub let dhcp_subnet_options : Int
+
+pub let dhcp_unary_element_type_option : Int
+
+pub fn dhcp_undo_request_params_raw(UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub let dhcp_update_policy_descr : Int
+
+pub let dhcp_update_policy_dns_suffix : Int
+
+pub let dhcp_update_policy_expr : Int
+
+pub let dhcp_update_policy_name : Int
+
+pub let dhcp_update_policy_order : Int
+
+pub let dhcp_update_policy_ranges : Int
+
+pub let dhcp_update_policy_status : Int
+
+pub fn dhcp_v4_add_policy_range_raw(@core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn dhcp_v4_create_client_info_ex_raw(@core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn dhcp_v4_create_client_info_raw(@core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn dhcp_v4_create_policy_ex_raw(@core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn dhcp_v4_create_policy_raw(@core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn dhcp_v4_delete_policy_raw(@core.RawAddress, Int, UInt, @core.RawAddress) -> UInt
+
+pub fn dhcp_v4_enum_policies_ex_raw(@core.RawAddress, @core.RawAddress, UInt, Int, UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn dhcp_v4_enum_policies_raw(@core.RawAddress, @core.RawAddress, UInt, Int, UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn dhcp_v4_enum_subnet_clients_ex_raw(@core.RawAddress, UInt, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn dhcp_v4_enum_subnet_clients_raw(@core.RawAddress, UInt, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn dhcp_v4_enum_subnet_reservations_raw(@core.RawAddress, UInt, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn dhcp_v4_failover_add_scope_to_relationship_raw(@core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn dhcp_v4_failover_create_relationship_raw(@core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn dhcp_v4_failover_delete_relationship_raw(@core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn dhcp_v4_failover_delete_scope_from_relationship_raw(@core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn dhcp_v4_failover_enum_relationship_raw(@core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn dhcp_v4_failover_get_address_status_raw(@core.RawAddress, UInt, @core.RawAddress) -> UInt
+
+pub fn dhcp_v4_failover_get_client_info_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn dhcp_v4_failover_get_relationship_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn dhcp_v4_failover_get_scope_relationship_raw(@core.RawAddress, UInt, @core.RawAddress) -> UInt
+
+pub fn dhcp_v4_failover_get_scope_statistics_raw(@core.RawAddress, UInt, @core.RawAddress) -> UInt
+
+pub fn dhcp_v4_failover_get_system_time_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn dhcp_v4_failover_set_relationship_raw(@core.RawAddress, UInt, @core.RawAddress) -> UInt
+
+pub fn dhcp_v4_failover_trigger_addr_allocation_raw(@core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn dhcp_v4_get_all_option_values_raw(@core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn dhcp_v4_get_client_info_ex_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn dhcp_v4_get_client_info_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn dhcp_v4_get_free_ip_address_raw(@core.RawAddress, UInt, UInt, UInt, UInt, @core.RawAddress) -> UInt
+
+pub fn dhcp_v4_get_option_value_raw(@core.RawAddress, UInt, UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn dhcp_v4_get_policy_ex_raw(@core.RawAddress, Int, UInt, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn dhcp_v4_get_policy_raw(@core.RawAddress, Int, UInt, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn dhcp_v4_query_policy_enforcement_raw(@core.RawAddress, Int, UInt, @core.RawAddress) -> UInt
+
+pub fn dhcp_v4_remove_option_value_raw(@core.RawAddress, UInt, UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn dhcp_v4_remove_policy_range_raw(@core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn dhcp_v4_set_option_value_raw(@core.RawAddress, UInt, UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn dhcp_v4_set_option_values_raw(@core.RawAddress, UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn dhcp_v4_set_policy_enforcement_raw(@core.RawAddress, Int, UInt, Int) -> UInt
+
+pub fn dhcp_v4_set_policy_ex_raw(@core.RawAddress, UInt, Int, UInt, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn dhcp_v4_set_policy_raw(@core.RawAddress, UInt, Int, UInt, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn dhcp_v6_create_client_info_raw(@core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn dhcp_v6_get_free_ip_address_raw(@core.RawAddress, Bytes, Bytes, Bytes, UInt, @core.RawAddress) -> UInt
+
+pub fn dhcp_v6_get_stateless_statistics_raw(@core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn dhcp_v6_get_stateless_store_params_raw(@core.RawAddress, Int, Bytes, @core.RawAddress) -> UInt
+
+pub fn dhcp_v6_set_stateless_store_params_raw(@core.RawAddress, Int, Bytes, UInt, @core.RawAddress) -> UInt
+
+pub let dhcp_word_option : Int
+
+pub let dhcpcapi_deregister_handle_event : UInt
+
+pub let dhcpcapi_register_handle_event : UInt
+
+pub let dhcpcapi_request_asynchronous : UInt
+
+pub let dhcpcapi_request_cancel : UInt
+
+pub let dhcpcapi_request_mask : UInt
+
+pub let dhcpcapi_request_persistent : UInt
+
+pub let dhcpcapi_request_synchronous : UInt
+
+pub fn dhcpv6_c_api_cleanup_raw() -> Unit
+
+pub fn dhcpv6_c_api_initialize_raw(@core.RawAddress) -> Unit
+
+pub let dhcpv6_client_duid : Int
+
+pub let dhcpv6_client_ip_address : Int
+
+pub let dhcpv6_client_name : Int
+
+pub let dhcpv6_excluded_ip_ranges : Int
+
+pub let dhcpv6_ip_ranges : Int
+
+pub let dhcpv6_option_clientid : UInt
+
+pub let dhcpv6_option_dnr : UInt
+
+pub let dhcpv6_option_dns_servers : UInt
+
+pub let dhcpv6_option_domain_list : UInt
+
+pub let dhcpv6_option_ia_na : UInt
+
+pub let dhcpv6_option_ia_pd : UInt
+
+pub let dhcpv6_option_ia_ta : UInt
+
+pub let dhcpv6_option_nis_domain_name : UInt
+
+pub let dhcpv6_option_nis_servers : UInt
+
+pub let dhcpv6_option_nisp_domain_name : UInt
+
+pub let dhcpv6_option_nisp_servers : UInt
+
+pub let dhcpv6_option_oro : UInt
+
+pub let dhcpv6_option_preference : UInt
+
+pub let dhcpv6_option_rapid_commit : UInt
+
+pub let dhcpv6_option_reconf_msg : UInt
+
+pub let dhcpv6_option_serverid : UInt
+
+pub let dhcpv6_option_sip_servers_addrs : UInt
+
+pub let dhcpv6_option_sip_servers_names : UInt
+
+pub let dhcpv6_option_unicast : UInt
+
+pub let dhcpv6_option_user_class : UInt
+
+pub let dhcpv6_option_vendor_class : UInt
+
+pub let dhcpv6_option_vendor_opts : UInt
+
+pub fn dhcpv6_release_prefix_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn dhcpv6_renew_prefix_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, UInt) -> UInt
+
+pub fn dhcpv6_request_params_raw(Int, @core.RawAddress, @core.RawAddress, @core.RawAddress, Bytes, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn dhcpv6_request_prefix_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub let dhcpv6_reserved_ips : Int
+
+pub let dns_flag_cleanup_expired : UInt
+
+pub let dns_flag_disable_ptr_update : UInt
+
+pub let dns_flag_enabled : UInt
+
+pub let dns_flag_has_dns_suffix : UInt
+
+pub let dns_flag_update_both_always : UInt
+
+pub let dns_flag_update_dhcid : UInt
+
+pub let dns_flag_update_downlevel : UInt
+
+pub let droppacket : Int
+
+pub let error_dds_class_does_not_exist : UInt
+
+pub let error_dds_class_exists : UInt
+
+pub let error_dds_dhcp_server_not_found : UInt
+
+pub let error_dds_no_dhcp_root : UInt
+
+pub let error_dds_no_ds_available : UInt
+
+pub let error_dds_option_already_exists : UInt
+
+pub let error_dds_option_does_not_exist : UInt
+
+pub let error_dds_possible_range_conflict : UInt
+
+pub let error_dds_range_does_not_exist : UInt
+
+pub let error_dds_reservation_conflict : UInt
+
+pub let error_dds_reservation_not_present : UInt
+
+pub let error_dds_server_address_mismatch : UInt
+
+pub let error_dds_server_already_exists : UInt
+
+pub let error_dds_server_does_not_exist : UInt
+
+pub let error_dds_subnet_exists : UInt
+
+pub let error_dds_subnet_has_diff_sscope : UInt
+
+pub let error_dds_subnet_not_present : UInt
+
+pub let error_dds_too_many_errors : UInt
+
+pub let error_dds_unexpected_error : UInt
+
+pub let error_dhcp_address_not_available : UInt
+
+pub let error_dhcp_cannot_modify_bindings : UInt
+
+pub let error_dhcp_cant_change_attribute : UInt
+
+pub let error_dhcp_class_already_exists : UInt
+
+pub let error_dhcp_class_not_found : UInt
+
+pub let error_dhcp_client_exists : UInt
+
+pub let error_dhcp_database_init_failed : UInt
+
+pub let error_dhcp_default_scope_exits : UInt
+
+pub let error_dhcp_delete_builtin_class : UInt
+
+pub let error_dhcp_element_cant_remove : UInt
+
+pub let error_dhcp_exemption_exists : UInt
+
+pub let error_dhcp_exemption_not_present : UInt
+
+pub let error_dhcp_fo_addscope_leases_not_synced : UInt
+
+pub let error_dhcp_fo_boot_not_supported : UInt
+
+pub let error_dhcp_fo_feature_not_supported : UInt
+
+pub let error_dhcp_fo_iprange_type_conv_illegal : UInt
+
+pub let error_dhcp_fo_max_add_scopes : UInt
+
+pub let error_dhcp_fo_max_relationships : UInt
+
+pub let error_dhcp_fo_not_supported : UInt
+
+pub let error_dhcp_fo_range_part_of_rel : UInt
+
+pub let error_dhcp_fo_relation_is_secondary : UInt
+
+pub let error_dhcp_fo_relationship_does_not_exist : UInt
+
+pub let error_dhcp_fo_relationship_exists : UInt
+
+pub let error_dhcp_fo_relationship_name_too_long : UInt
+
+pub let error_dhcp_fo_scope_already_in_relationship : UInt
+
+pub let error_dhcp_fo_scope_not_in_relationship : UInt
+
+pub let error_dhcp_fo_scope_sync_in_progress : UInt
+
+pub let error_dhcp_fo_state_not_normal : UInt
+
+pub let error_dhcp_fo_time_out_of_sync : UInt
+
+pub let error_dhcp_hardware_address_type_already_exempt : UInt
+
+pub let error_dhcp_invalid_delay : UInt
+
+pub let error_dhcp_invalid_dhcp_client : UInt
+
+pub let error_dhcp_invalid_dhcp_message : UInt
+
+pub let error_dhcp_invalid_parameter_option32 : UInt
+
+pub let error_dhcp_invalid_policy_expression : UInt
+
+pub let error_dhcp_invalid_processing_order : UInt
+
+pub let error_dhcp_invalid_range : UInt
+
+pub let error_dhcp_invalid_subnet_prefix : UInt
+
+pub let error_dhcp_ip_address_in_use : UInt
+
+pub let error_dhcp_iprange_conv_illegal : UInt
+
+pub let error_dhcp_iprange_exits : UInt
+
+pub let error_dhcp_jet97_conv_required : UInt
+
+pub let error_dhcp_jet_conv_required : UInt
+
+pub let error_dhcp_jet_error : UInt
+
+pub let error_dhcp_linklayer_address_does_not_exist : UInt
+
+pub let error_dhcp_linklayer_address_exists : UInt
+
+pub let error_dhcp_linklayer_address_reservation_exists : UInt
+
+pub let error_dhcp_log_file_path_too_long : UInt
+
+pub let error_dhcp_mscope_exists : UInt
+
+pub let error_dhcp_nap_not_supported : UInt
+
+pub let error_dhcp_network_changed : UInt
+
+pub let error_dhcp_network_init_failed : UInt
+
+pub let error_dhcp_no_admin_permission : UInt
+
+pub let error_dhcp_not_reserved_client : UInt
+
+pub let error_dhcp_option_exits : UInt
+
+pub let error_dhcp_option_not_present : UInt
+
+pub let error_dhcp_option_type_mismatch : UInt
+
+pub let error_dhcp_policy_bad_parent_expr : UInt
+
+pub let error_dhcp_policy_edit_fqdn_unsupported : UInt
+
+pub let error_dhcp_policy_exists : UInt
+
+pub let error_dhcp_policy_fqdn_option_unsupported : UInt
+
+pub let error_dhcp_policy_fqdn_range_unsupported : UInt
+
+pub let error_dhcp_policy_not_found : UInt
+
+pub let error_dhcp_policy_range_bad : UInt
+
+pub let error_dhcp_policy_range_exists : UInt
+
+pub let error_dhcp_primary_not_found : UInt
+
+pub let error_dhcp_range_extended : UInt
+
+pub let error_dhcp_range_full : UInt
+
+pub let error_dhcp_range_invalid_in_server_policy : UInt
+
+pub let error_dhcp_range_too_small : UInt
+
+pub let error_dhcp_reached_end_of_selection : UInt
+
+pub let error_dhcp_registry_init_failed : UInt
+
+pub let error_dhcp_reserved_client : UInt
+
+pub let error_dhcp_reservedip_exits : UInt
+
+pub let error_dhcp_rogue_ds_conflict : UInt
+
+pub let error_dhcp_rogue_ds_unreachable : UInt
+
+pub let error_dhcp_rogue_init_failed : UInt
+
+pub let error_dhcp_rogue_not_authorized : UInt
+
+pub let error_dhcp_rogue_not_our_enterprise : UInt
+
+pub let error_dhcp_rogue_samshutdown : UInt
+
+pub let error_dhcp_rogue_standalone_in_ds : UInt
+
+pub let error_dhcp_rpc_init_failed : UInt
+
+pub let error_dhcp_scope_name_too_long : UInt
+
+pub let error_dhcp_server_name_not_resolved : UInt
+
+pub let error_dhcp_server_not_reachable : UInt
+
+pub let error_dhcp_server_not_running : UInt
+
+pub let error_dhcp_service_paused : UInt
+
+pub let error_dhcp_subnet_exists : UInt
+
+pub let error_dhcp_subnet_exits : UInt
+
+pub let error_dhcp_subnet_not_present : UInt
+
+pub let error_dhcp_super_scope_name_too_long : UInt
+
+pub let error_dhcp_undefined_hardware_address_type : UInt
+
+pub let error_dhcp_unsupported_client : UInt
+
+pub let error_extend_too_small : UInt
+
+pub let error_last_dhcp_server_error : UInt
+
+pub let error_mscope_range_too_small : UInt
+
+pub let error_scope_range_policy_range_conflict : UInt
+
+pub let error_server_invalid_boot_file_table : UInt
+
+pub let error_server_unknown_boot_file_name : UInt
+
+pub let exempt : Int
+
+pub let filter_status_full_match_in_allow_list : UInt
+
+pub let filter_status_full_match_in_deny_list : UInt
+
+pub let filter_status_none : UInt
+
+pub let filter_status_wildcard_match_in_allow_list : UInt
+
+pub let filter_status_wildcard_match_in_deny_list : UInt
+
+pub let hot_standby : Int
+
+pub let hwtype_ethernet_10_mb : UInt
+
+pub let init_ : Int
+
+pub let load_balance : Int
+
+pub let mac_address_length : UInt
+
+pub let max_pattern_length : UInt
+
+pub let mclt : UInt
+
+pub let mode : UInt
+
+pub let no_state : Int
+
+pub let noquarantine : Int
+
+pub let noquarinfo : Int
+
+pub let normal : Int
+
+pub let option_all_subnets_mtu : UInt
+
+pub let option_arp_cache_timeout : UInt
+
+pub let option_be_a_mask_supplier : UInt
+
+pub let option_be_a_router : UInt
+
+pub let option_boot_file_size : UInt
+
+pub let option_bootfile_name : UInt
+
+pub let option_broadcast_address : UInt
+
+pub let option_client_class_info : UInt
+
+pub let option_client_id : UInt
+
+pub let option_cookie_servers : UInt
+
+pub let option_default_ttl : UInt
+
+pub let option_dnr : UInt
+
+pub let option_domain_name : UInt
+
+pub let option_domain_name_servers : UInt
+
+pub let option_end : UInt
+
+pub let option_ethernet_encapsulation : UInt
+
+pub let option_extensions_path : UInt
+
+pub let option_host_name : UInt
+
+pub let option_ien116_name_servers : UInt
+
+pub let option_impress_servers : UInt
+
+pub let option_ipv6_only_preferred : UInt
+
+pub let option_keep_alive_data_size : UInt
+
+pub let option_keep_alive_interval : UInt
+
+pub let option_lease_time : UInt
+
+pub let option_log_servers : UInt
+
+pub let option_lpr_servers : UInt
+
+pub let option_max_reassembly_size : UInt
+
+pub let option_merit_dump_file : UInt
+
+pub let option_message : UInt
+
+pub let option_message_length : UInt
+
+pub let option_message_type : UInt
+
+pub let option_msft_ie_proxy : UInt
+
+pub let option_mtu : UInt
+
+pub let option_netbios_datagram_server : UInt
+
+pub let option_netbios_name_server : UInt
+
+pub let option_netbios_node_type : UInt
+
+pub let option_netbios_scope_option : UInt
+
+pub let option_network_info_servers : UInt
+
+pub let option_network_info_service_dom : UInt
+
+pub let option_network_time_servers : UInt
+
+pub let option_non_local_source_routing : UInt
+
+pub let option_ok_to_overlay : UInt
+
+pub let option_pad : UInt
+
+pub let option_parameter_request_list : UInt
+
+pub let option_perform_mask_discovery : UInt
+
+pub let option_perform_router_discovery : UInt
+
+pub let option_pmtu_aging_timeout : UInt
+
+pub let option_pmtu_plateau_table : UInt
+
+pub let option_policy_filter_for_nlsr : UInt
+
+pub let option_rebind_time : UInt
+
+pub let option_renewal_time : UInt
+
+pub let option_requested_address : UInt
+
+pub let option_rlp_servers : UInt
+
+pub let option_root_disk : UInt
+
+pub let option_router_address : UInt
+
+pub let option_router_solicitation_addr : UInt
+
+pub let option_server_identifier : UInt
+
+pub let option_static_routes : UInt
+
+pub let option_subnet_mask : UInt
+
+pub let option_swap_server : UInt
+
+pub let option_tftp_server_name : UInt
+
+pub let option_time_offset : UInt
+
+pub let option_time_servers : UInt
+
+pub let option_trailers : UInt
+
+pub let option_ttl : UInt
+
+pub let option_vendor_spec_info : UInt
+
+pub let option_xwindow_display_manager : UInt
+
+pub let option_xwindow_font_server : UInt
+
+pub let partner_down : Int
+
+pub let paused : Int
+
+pub let percentage : UInt
+
+pub let potential_conflict : Int
+
+pub let prevstate : UInt
+
+pub let primary_server : Int
+
+pub let probation : Int
+
+pub let quarantin_option_base : UInt
+
+pub let quarantine_config_option : UInt
+
+pub let quarantine_scope_quarprofile_option : UInt
+
+pub let recover : Int
+
+pub let recover_done : Int
+
+pub let recover_wait : Int
+
+pub let resolution_int : Int
+
+pub let restrictedaccess : Int
+
+pub let safeperiod : UInt
+
+pub let secondary_server : Int
+
+pub let set_api_protocol_support : UInt
+
+pub let set_audit_log_state : UInt
+
+pub let set_backup_interval : UInt
+
+pub let set_backup_path : UInt
+
+pub let set_boot_file_table : UInt
+
+pub let set_database_cleanup_interval : UInt
+
+pub let set_database_logging_flag : UInt
+
+pub let set_database_name : UInt
+
+pub let set_database_path : UInt
+
+pub let set_debug_flag : UInt
+
+pub let set_ping_retries : UInt
+
+pub let set_preferred_lifetime : UInt
+
+pub let set_preferred_lifetime_iata : UInt
+
+pub let set_quarantine_def_fail : UInt
+
+pub let set_quarantine_on : UInt
+
+pub let set_rapid_commit_flag : UInt
+
+pub let set_restore_flag : UInt
+
+pub let set_t1 : UInt
+
+pub let set_t2 : UInt
+
+pub let set_unicast_flag : UInt
+
+pub let set_valid_lifetime : UInt
+
+pub let set_valid_lifetime_iata : UInt
+
+pub let sharedsecret : UInt
+
+pub let shutdown : Int
+
+pub let startup : Int
+
+pub let status_no_binding : Int
+
+pub let status_no_error : Int
+
+pub let status_noprefix_avail : Int
+
+pub let status_unspecified_failure : Int
+
+pub let v5_address_bit_both_rec : UInt
+
+pub let v5_address_bit_deleted : UInt
+
+pub let v5_address_bit_unregistered : UInt
+
+pub let v5_address_ex_bit_disable_ptr_rr : UInt
+
+pub let v5_address_state_active : UInt
+
+pub let v5_address_state_declined : UInt
+
+pub let v5_address_state_doom : UInt
+
+pub let v5_address_state_offered : UInt
+
+pub let warning_extended_less : Int
+
+// Errors
+
+// Types and methods
+
+// Type aliases
+pub using @538e064b8c133740 {type AnonymousEStruct_39c038cccaac as AnonymousEStruct_39c038ccca}
+
+pub using @538e064b8c133740 {type AnonymousEStruct_4ee48e7e7510 as AnonymousEStruct_4ee48e7e75}
+
+pub using @538e064b8c133740 {type AnonymousEStruct_8a779000e22a as AnonymousEStruct_8a779000e2}
+
+pub using @538e064b8c133740 {type AnonymousEUnion_ad7f99e627df as AnonymousEUnion}
+
+pub using @538e064b8c133740 {type DATETIME_033ffd9ff393 as DATETIME}
+
+pub using @538e064b8c133740 {type DHCPADDRPATTERN_a862b523ea86 as DHCPADDRPATTERN}
+
+pub using @538e064b8c133740 {type DHCPALLOPTIONS_02c22a146af0 as DHCPALLOPTIONS}
+
+pub using @538e064b8c133740 {type DHCPALLOPTIONVALUES_ac39d59df738 as DHCPALLOPTIONVALUES}
+
+pub using @538e064b8c133740 {type DHCPALLOPTIONVALUESPB_7d0269d47cdf as DHCPALLOPTIONVALUESPB}
+
+pub using @538e064b8c133740 {type DHCPAPIPARAMS_92c6902db8de as DHCPAPIPARAMS}
+
+pub using @538e064b8c133740 {type DHCPATTRIB_254a9611d043 as DHCPATTRIB}
+
+pub using @538e064b8c133740 {type DHCPATTRIBARRAY_b3592ea192d6 as DHCPATTRIBARRAY}
+
+pub using @538e064b8c133740 {type DHCPBINARYDATA_62abb0a909b1 as DHCPBINARYDATA}
+
+pub using @538e064b8c133740 {type DHCPBINDELEMENT_216d7e26c04d as DHCPBINDELEMENT}
+
+pub using @538e064b8c133740 {type DHCPBINDELEMENTARRAY_96448047d964 as DHCPBINDELEMENTARRAY}
+
+pub using @538e064b8c133740 {type DHCPBOOTPIPRANGE_9ea498e4367c as DHCPBOOTPIPRANGE}
+
+pub using @538e064b8c133740 {type DHCPCALLOUTTABLE_84b73d89020b as DHCPCALLOUTTABLE}
+
+pub using @538e064b8c133740 {type DHCPCAPICLASSID_8c9d7c03e588 as DHCPCAPICLASSID}
+
+pub using @538e064b8c133740 {type DHCPCAPIPARAMSARRAY_78ee7a96b3e4 as DHCPCAPIPARAMSARRAY}
+
+pub using @538e064b8c133740 {type DHCPCLASSINFO_2cd54a41ffc2 as DHCPCLASSINFO}
+
+pub using @538e064b8c133740 {type DHCPCLASSINFOARRAY_ad5b93606352 as DHCPCLASSINFOARRAY}
+
+pub using @538e064b8c133740 {type DHCPCLASSINFOARRAYV6_1a90c193de89 as DHCPCLASSINFOARRAYV6}
+
+pub using @538e064b8c133740 {type DHCPCLASSINFOV6_081ee2ed8f1a as DHCPCLASSINFOV6}
+
+pub using @538e064b8c133740 {type DHCPCLIENTFILTERSTATUSINFO_5b862ea1c9dd as DHCPCLIENTFILTERSTATUSINFO}
+
+pub using @538e064b8c133740 {type DHCPCLIENTFILTERSTATUSINFOARRAY_881b98bbf23b as DHCPCLIENTFILTERSTATUSINFOARRAY}
+
+pub using @538e064b8c133740 {type DHCPCLIENTINFO_7e5c5713404f as DHCPCLIENTINFO}
+
+pub using @538e064b8c133740 {type DHCPCLIENTINFOARRAY_ddc45ef3f887 as DHCPCLIENTINFOARRAY}
+
+pub using @538e064b8c133740 {type DHCPCLIENTINFOARRAYV4_91c92a62fcdc as DHCPCLIENTINFOARRAYV4}
+
+pub using @538e064b8c133740 {type DHCPCLIENTINFOARRAYV5_7c5775532a81 as DHCPCLIENTINFOARRAYV5}
+
+pub using @538e064b8c133740 {type DHCPCLIENTINFOARRAYV6_53783b1cfe05 as DHCPCLIENTINFOARRAYV6}
+
+pub using @538e064b8c133740 {type DHCPCLIENTINFOARRAYVQ_86e7db7944ac as DHCPCLIENTINFOARRAYVQ}
+
+pub using @538e064b8c133740 {type DHCPCLIENTINFOEX_a89cbf602e1f as DHCPCLIENTINFOEX}
+
+pub using @538e064b8c133740 {type DHCPCLIENTINFOEXARRAY_653975a90371 as DHCPCLIENTINFOEXARRAY}
+
+pub using @538e064b8c133740 {type DHCPCLIENTINFOPB_8b7c5203bd61 as DHCPCLIENTINFOPB}
+
+pub using @538e064b8c133740 {type DHCPCLIENTINFOPBARRAY_af4c8683f362 as DHCPCLIENTINFOPBARRAY}
+
+pub using @538e064b8c133740 {type DHCPCLIENTINFOV4_250765c03840 as DHCPCLIENTINFOV4}
+
+pub using @538e064b8c133740 {type DHCPCLIENTINFOV5_2801c739f706 as DHCPCLIENTINFOV5}
+
+pub using @538e064b8c133740 {type DHCPCLIENTINFOV6_0543615000f3 as DHCPCLIENTINFOV6}
+
+pub using @538e064b8c133740 {type DHCPCLIENTINFOVQ_4d8553b04f75 as DHCPCLIENTINFOVQ}
+
+pub using @538e064b8c133740 {type DHCPCLIENTSEARCHUNION_bb66ff77c018 as DHCPCLIENTSEARCHUNION}
+
+pub using @538e064b8c133740 {type DHCPCLIENTSEARCHUNIONV6_c9fe21c50085 as DHCPCLIENTSEARCHUNIONV6}
+
+pub using @538e064b8c133740 {type DHCPDSSERVER_60569703b7ea as DHCPDSSERVER}
+
+pub using @538e064b8c133740 {type DHCPDSSERVERS_fe90e53901a5 as DHCPDSSERVERS}
+
+pub using @538e064b8c133740 {type DHCPFAILOVERMODE_4ca5eeb4a211 as DHCPFAILOVERMODE}
+
+pub using @538e064b8c133740 {type DHCPFAILOVERRELATIONSHIP_fb5850841710 as DHCPFAILOVERRELATIONSHIP}
+
+pub using @538e064b8c133740 {type DHCPFAILOVERRELATIONSHIPARRAY_daedf61f5555 as DHCPFAILOVERRELATIONSHIPARRAY}
+
+pub using @538e064b8c133740 {type DHCPFAILOVERSERVER_b827b8d98219 as DHCPFAILOVERSERVER}
+
+pub using @538e064b8c133740 {type DHCPFAILOVERSTATISTICS_4c46fcd4467c as DHCPFAILOVERSTATISTICS}
+
+pub using @538e064b8c133740 {type DHCPFILTERADDINFO_cb5e14730446 as DHCPFILTERADDINFO}
+
+pub using @538e064b8c133740 {type DHCPFILTERENUMINFO_f739a48142ee as DHCPFILTERENUMINFO}
+
+pub using @538e064b8c133740 {type DHCPFILTERGLOBALINFO_227160b41b8c as DHCPFILTERGLOBALINFO}
+
+pub using @538e064b8c133740 {type DHCPFILTERLISTTYPE_e2383a193371 as DHCPFILTERLISTTYPE}
+
+pub using @538e064b8c133740 {type DHCPFILTERRECORD_352ef076cbd4 as DHCPFILTERRECORD}
+
+pub using @538e064b8c133740 {type DHCPFORCEFLAG_eb6879784d20 as DHCPFORCEFLAG}
+
+pub using @538e064b8c133740 {type DHCPHOSTINFO_8a35a1dc3c4c as DHCPHOSTINFO}
+
+pub using @538e064b8c133740 {type DHCPHOSTINFOV6_b00617a77d05 as DHCPHOSTINFOV6}
+
+pub using @538e064b8c133740 {type DHCPIPARRAY_51ff11d7869b as DHCPIPARRAY}
+
+pub using @538e064b8c133740 {type DHCPIPCLUSTER_26e054028d8c as DHCPIPCLUSTER}
+
+pub using @538e064b8c133740 {type DHCPIPRANGE_25451d01d6e9 as DHCPIPRANGE}
+
+pub using @538e064b8c133740 {type DHCPIPRANGEARRAY_4f3e0c032048 as DHCPIPRANGEARRAY}
+
+pub using @538e064b8c133740 {type DHCPIPRANGEV6_4ddb441e52d5 as DHCPIPRANGEV6}
+
+pub using @538e064b8c133740 {type DHCPIPRESERVATION_1854e5a145ab as DHCPIPRESERVATION}
+
+pub using @538e064b8c133740 {type DHCPIPRESERVATIONINFO_cbfd17beede2 as DHCPIPRESERVATIONINFO}
+
+pub using @538e064b8c133740 {type DHCPIPRESERVATIONV4_55bfc3631a9b as DHCPIPRESERVATIONV4}
+
+pub using @538e064b8c133740 {type DHCPIPRESERVATIONV6_d0071b3dc143 as DHCPIPRESERVATIONV6}
+
+pub using @538e064b8c133740 {type DHCPIPV6ADDRESS_a8cee1d34e4a as DHCPIPV6ADDRESS}
+
+pub using @538e064b8c133740 {type DHCPMIBINFO_877921356cbb as DHCPMIBINFO}
+
+pub using @538e064b8c133740 {type DHCPMIBINFOV5_fc7fa63208c8 as DHCPMIBINFOV5}
+
+pub using @538e064b8c133740 {type DHCPMIBINFOV6_ba38cc3c3a0e as DHCPMIBINFOV6}
+
+pub using @538e064b8c133740 {type DHCPMIBINFOVQ_dda1f8c6cbd1 as DHCPMIBINFOVQ}
+
+pub using @538e064b8c133740 {type DHCPOPTION_2ea2076a0d48 as DHCPOPTION}
+
+pub using @538e064b8c133740 {type DHCPOPTIONARRAY_2ab2d266a2e1 as DHCPOPTIONARRAY}
+
+pub using @538e064b8c133740 {type DHCPOPTIONDATA_7657daee4aeb as DHCPOPTIONDATA}
+
+pub using @538e064b8c133740 {type DHCPOPTIONDATAELEMENT_a3d8bad2c7ea as DHCPOPTIONDATAELEMENT}
+
+pub using @538e064b8c133740 {type DHCPOPTIONDATATYPE_b7848cc71b7a as DHCPOPTIONDATATYPE}
+
+pub using @538e064b8c133740 {type DHCPOPTIONELEMENTUNION_c94e6b839e77 as DHCPOPTIONELEMENTUNION}
+
+pub using @538e064b8c133740 {type DHCPOPTIONLIST_787358991d4e as DHCPOPTIONLIST}
+
+pub using @538e064b8c133740 {type DHCPOPTIONSCOPEINFO_bb3bfa880a6e as DHCPOPTIONSCOPEINFO}
+
+pub using @538e064b8c133740 {type DHCPOPTIONSCOPEINFO6_052e6e137565 as DHCPOPTIONSCOPEINFO6}
+
+pub using @538e064b8c133740 {type DHCPOPTIONSCOPETYPE_18083b2551b9 as DHCPOPTIONSCOPETYPE}
+
+pub using @538e064b8c133740 {type DHCPOPTIONSCOPETYPE6_fcf31a477834 as DHCPOPTIONSCOPETYPE6}
+
+pub using @538e064b8c133740 {type DHCPOPTIONSCOPEUNION_0b9379e18361 as DHCPOPTIONSCOPEUNION}
+
+pub using @538e064b8c133740 {type DHCPOPTIONSCOPEUNION6_20081b487d7c as DHCPOPTIONSCOPEUNION6}
+
+pub using @538e064b8c133740 {type DHCPOPTIONTYPE_0e1545a176c1 as DHCPOPTIONTYPE}
+
+pub using @538e064b8c133740 {type DHCPOPTIONVALUE_def9e1b599d9 as DHCPOPTIONVALUE}
+
+pub using @538e064b8c133740 {type DHCPOPTIONVALUEARRAY_f6e5756d432a as DHCPOPTIONVALUEARRAY}
+
+pub using @538e064b8c133740 {type DHCPPERFSTATS_09577c5c03d0 as DHCPPERFSTATS}
+
+pub using @538e064b8c133740 {type DHCPPOLATTRTYPE_e731d3d014d6 as DHCPPOLATTRTYPE}
+
+pub using @538e064b8c133740 {type DHCPPOLCOMPARATOR_16e46baad45a as DHCPPOLCOMPARATOR}
+
+pub using @538e064b8c133740 {type DHCPPOLCOND_6e4d10e521c7 as DHCPPOLCOND}
+
+pub using @538e064b8c133740 {type DHCPPOLCONDARRAY_32ba36ed00dd as DHCPPOLCONDARRAY}
+
+pub using @538e064b8c133740 {type DHCPPOLEXPR_3b7b2f9c79b6 as DHCPPOLEXPR}
+
+pub using @538e064b8c133740 {type DHCPPOLEXPRARRAY_63766a8ade95 as DHCPPOLEXPRARRAY}
+
+pub using @538e064b8c133740 {type DHCPPOLICY_80a9364b3cfb as DHCPPOLICY}
+
+pub using @538e064b8c133740 {type DHCPPOLICYARRAY_406818c95639 as DHCPPOLICYARRAY}
+
+pub using @538e064b8c133740 {type DHCPPOLICYEX_29f717a99d02 as DHCPPOLICYEX}
+
+pub using @538e064b8c133740 {type DHCPPOLICYEXARRAY_53cf6c541451 as DHCPPOLICYEXARRAY}
+
+pub using @538e064b8c133740 {type DHCPPOLICYFIELDSTOUPDATE_85eed6cf5ff5 as DHCPPOLICYFIELDSTOUPDATE}
+
+pub using @538e064b8c133740 {type DHCPPOLLOGICOPER_0854aee9f479 as DHCPPOLLOGICOPER}
+
+pub using @538e064b8c133740 {type DHCPPROPERTY_4fe0152c5c82 as DHCPPROPERTY}
+
+pub using @538e064b8c133740 {type DHCPPROPERTYARRAY_d91cdfca4d6b as DHCPPROPERTYARRAY}
+
+pub using @538e064b8c133740 {type DHCPPROPERTYID_dcf1ae1e002d as DHCPPROPERTYID}
+
+pub using @538e064b8c133740 {type DHCPPROPERTYTYPE_f185b67531ed as DHCPPROPERTYTYPE}
+
+pub using @538e064b8c133740 {type DHCPPROPERTYVALUEUNION_651669363ec5 as DHCPPROPERTYVALUEUNION}
+
+pub using @538e064b8c133740 {type DHCPRESERVATIONINFOARRAY_ec549f5d9681 as DHCPRESERVATIONINFOARRAY}
+
+pub using @538e064b8c133740 {type DHCPRESERVEDSCOPE_13a2448fd731 as DHCPRESERVEDSCOPE}
+
+pub using @538e064b8c133740 {type DHCPRESERVEDSCOPE6_c0c31f2b7f52 as DHCPRESERVEDSCOPE6}
+
+pub using @538e064b8c133740 {type DHCPSCANFLAG_3bbcfdf3860b as DHCPSCANFLAG}
+
+pub using @538e064b8c133740 {type DHCPSCANITEM_56c65b053d5a as DHCPSCANITEM}
+
+pub using @538e064b8c133740 {type DHCPSCANLIST_1e0534f10aee as DHCPSCANLIST}
+
+pub using @538e064b8c133740 {type DHCPSEARCHINFO_05c87e1d6aab as DHCPSEARCHINFO}
+
+pub using @538e064b8c133740 {type DHCPSEARCHINFOTYPE_5ee1c5d169e7 as DHCPSEARCHINFOTYPE}
+
+pub using @538e064b8c133740 {type DHCPSEARCHINFOTYPEV6_bce72f83314b as DHCPSEARCHINFOTYPEV6}
+
+pub using @538e064b8c133740 {type DHCPSEARCHINFOV6_68b79c770935 as DHCPSEARCHINFOV6}
+
+pub using @538e064b8c133740 {type DHCPSERVERCONFIGINFO_192725e38b59 as DHCPSERVERCONFIGINFO}
+
+pub using @538e064b8c133740 {type DHCPSERVERCONFIGINFOV4_519e42a7316e as DHCPSERVERCONFIGINFOV4}
+
+pub using @538e064b8c133740 {type DHCPSERVERCONFIGINFOV6_e9484f5a0913 as DHCPSERVERCONFIGINFOV6}
+
+pub using @538e064b8c133740 {type DHCPSERVERCONFIGINFOVQ_3d59bc2e12bf as DHCPSERVERCONFIGINFOVQ}
+
+pub using @538e064b8c133740 {type DHCPSERVEROPTIONS_4bdf13e7a199 as DHCPSERVEROPTIONS}
+
+pub using @538e064b8c133740 {type DHCPSERVERSPECIFICSTRINGS_4e628d862282 as DHCPSERVERSPECIFICSTRINGS}
+
+pub using @538e064b8c133740 {type DHCPSUBNETELEMENTDATA_9a6543970777 as DHCPSUBNETELEMENTDATA}
+
+pub using @538e064b8c133740 {type DHCPSUBNETELEMENTDATAV4_9d3bde9caba7 as DHCPSUBNETELEMENTDATAV4}
+
+pub using @538e064b8c133740 {type DHCPSUBNETELEMENTDATAV5_4e4338625bd4 as DHCPSUBNETELEMENTDATAV5}
+
+pub using @538e064b8c133740 {type DHCPSUBNETELEMENTDATAV6_bbf1bb8571a8 as DHCPSUBNETELEMENTDATAV6}
+
+pub using @538e064b8c133740 {type DHCPSUBNETELEMENTINFOARRAY_6b531f663052 as DHCPSUBNETELEMENTINFOARRAY}
+
+pub using @538e064b8c133740 {type DHCPSUBNETELEMENTINFOARRAYV4_16cb9d63329b as DHCPSUBNETELEMENTINFOARRAYV4}
+
+pub using @538e064b8c133740 {type DHCPSUBNETELEMENTINFOARRAYV5_90f1a5890073 as DHCPSUBNETELEMENTINFOARRAYV5}
+
+pub using @538e064b8c133740 {type DHCPSUBNETELEMENTINFOARRAYV6_961bccc1adf7 as DHCPSUBNETELEMENTINFOARRAYV6}
+
+pub using @538e064b8c133740 {type DHCPSUBNETELEMENTTYPE_cdd2947f5e1d as DHCPSUBNETELEMENTTYPE}
+
+pub using @538e064b8c133740 {type DHCPSUBNETELEMENTTYPEV6_4e3b1146f632 as DHCPSUBNETELEMENTTYPEV6}
+
+pub using @538e064b8c133740 {type DHCPSUBNETELEMENTUNION_5115868dec25 as DHCPSUBNETELEMENTUNION}
+
+pub using @538e064b8c133740 {type DHCPSUBNETELEMENTUNIONV4_c17eef659c77 as DHCPSUBNETELEMENTUNIONV4}
+
+pub using @538e064b8c133740 {type DHCPSUBNETELEMENTUNIONV5_7a99acc5f603 as DHCPSUBNETELEMENTUNIONV5}
+
+pub using @538e064b8c133740 {type DHCPSUBNETELEMENTUNIONV6_e1bac5c5fe9a as DHCPSUBNETELEMENTUNIONV6}
+
+pub using @538e064b8c133740 {type DHCPSUBNETINFO_0bb17dbd204f as DHCPSUBNETINFO}
+
+pub using @538e064b8c133740 {type DHCPSUBNETINFOV6_79626d2aee2e as DHCPSUBNETINFOV6}
+
+pub using @538e064b8c133740 {type DHCPSUBNETINFOVQ_e0743c917bdf as DHCPSUBNETINFOVQ}
+
+pub using @538e064b8c133740 {type DHCPSUBNETSTATE_4085051679cd as DHCPSUBNETSTATE}
+
+pub using @538e064b8c133740 {type DHCPSUPERSCOPETABLE_ddfc406a7895 as DHCPSUPERSCOPETABLE}
+
+pub using @538e064b8c133740 {type DHCPSUPERSCOPETABLEENTRY_12c22794ddf3 as DHCPSUPERSCOPETABLEENTRY}
+
+pub using @538e064b8c133740 {type DHCPV4FAILOVERCLIENTINFO_3554bbbe65df as DHCPV4FAILOVERCLIENTINFO}
+
+pub using @538e064b8c133740 {type DHCPV4FAILOVERCLIENTINFOARRAY_2a89939639b3 as DHCPV4FAILOVERCLIENTINFOARRAY}
+
+pub using @538e064b8c133740 {type DHCPV4FAILOVERCLIENTINFOEX_ba7f92f6f3ca as DHCPV4FAILOVERCLIENTINFOEX}
+
+pub using @538e064b8c133740 {type DHCPV6BINDELEMENT_7e2d435f5e53 as DHCPV6BINDELEMENT}
+
+pub using @538e064b8c133740 {type DHCPV6BINDELEMENTARRAY_5e629c106299 as DHCPV6BINDELEMENTARRAY}
+
+pub using @538e064b8c133740 {type DHCPV6CAPICLASSID_3a7635f56d69 as DHCPV6CAPICLASSID}
+
+pub using @538e064b8c133740 {type DHCPV6CAPIPARAMS_8a99cbf60d15 as DHCPV6CAPIPARAMS}
+
+pub using @538e064b8c133740 {type DHCPV6CAPIPARAMSARRAY_a37c8c12a6be as DHCPV6CAPIPARAMSARRAY}
+
+pub using @538e064b8c133740 {type DHCPV6IPARRAY_b6c3efe38d49 as DHCPV6IPARRAY}
+
+pub using @538e064b8c133740 {type DHCPV6Prefix_791ad3725a5a as DHCPV6Prefix}
+
+pub using @538e064b8c133740 {type DHCPV6PrefixLeaseInformation_1c911e750a85 as DHCPV6PrefixLeaseInformation}
+
+pub using @538e064b8c133740 {type DHCPV6STATELESSPARAMS_3f39f57e98ed as DHCPV6STATELESSPARAMS}
+
+pub using @538e064b8c133740 {type DHCPV6STATELESSPARAMTYPE_fce5b67dd7a9 as DHCPV6STATELESSPARAMTYPE}
+
+pub using @538e064b8c133740 {type DHCPV6STATELESSSCOPESTATS_58ea3122e50b as DHCPV6STATELESSSCOPESTATS}
+
+pub using @538e064b8c133740 {type DHCPV6STATELESSSTATS_5cb2e82611d1 as DHCPV6STATELESSSTATS}
+
+pub using @538e064b8c133740 {type DWORDDWORD_ea8d109cc7be as DWORDDWORD}
+
+pub using @538e064b8c133740 {type FSMSTATE_0d437bc19ffc as FSMSTATE}
+
+pub using @538e064b8c133740 {type LPDHCPCONTROL_dda9155d80ef as LPDHCPCONTROL}
+
+pub using @538e064b8c133740 {type LPDHCPDELETECLIENT_07c9b1be1592 as LPDHCPDELETECLIENT}
+
+pub using @538e064b8c133740 {type LPDHCPDROPSEND_08e17bd94d43 as LPDHCPDROPSEND}
+
+pub using @538e064b8c133740 {type LPDHCPENTRYPOINTFUNC_86d66f7f8b3e as LPDHCPENTRYPOINTFUNC}
+
+pub using @538e064b8c133740 {type LPDHCPGIVEADDRESS_37f37a4a70ab as LPDHCPGIVEADDRESS}
+
+pub using @538e064b8c133740 {type LPDHCPHANDLEOPTIONS_2c59d83e372f as LPDHCPHANDLEOPTIONS}
+
+pub using @538e064b8c133740 {type LPDHCPNEWPKT_e91c70dd36a4 as LPDHCPNEWPKT}
+
+pub using @538e064b8c133740 {type LPDHCPPROB_7bda95d7602a as LPDHCPPROB}
+
+pub using @538e064b8c133740 {type QuarantineStatus_d32d061350a4 as QuarantineStatus}
+
+pub using @538e064b8c133740 {type SCOPEMIBINFO_1f6579cbad11 as SCOPEMIBINFO}
+
+pub using @538e064b8c133740 {type SCOPEMIBINFOV5_af16e003b6a8 as SCOPEMIBINFOV5}
+
+pub using @538e064b8c133740 {type SCOPEMIBINFOV6_41ccd50aeb75 as SCOPEMIBINFOV6}
+
+pub using @538e064b8c133740 {type SCOPEMIBINFOVQ_3920b2a3cff5 as SCOPEMIBINFOVQ}
+
+pub using @538e064b8c133740 {type StatusCode_8d5192175b64 as StatusCode}
+
+// Traits
+

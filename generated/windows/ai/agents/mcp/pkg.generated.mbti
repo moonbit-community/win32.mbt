@@ -1,0 +1,63 @@
+// Generated using `moon info`, DON'T EDIT IT
+package "moonbit-community/win32-bindings/windows/ai/agents/mcp"
+
+import {
+  "moonbit-community/win32-bindings/runtime/core",
+  "moonbit-community/win32-bindings/scc/2b35c90bf47ad828",
+  "moonbitlang/core/ref",
+}
+
+// Values
+pub fn allow(@core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn allow_raw(@core.RawAddress) -> Int
+
+pub let client_to_server : Int
+
+pub fn get_is_allowed_raw(@core.RawAddress, Bytes) -> Int
+
+pub fn get_message_if_not_allowed_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn initialize(@core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress, UInt) -> Unit raise @core.WindowsError
+
+pub fn initialize_raw(@core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress, UInt) -> Int
+
+pub let is_allowed : String
+
+pub let message_if_not_allowed : String
+
+pub fn on_message(@core.RawAddress, @core.RawAddress, Int, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn on_message_raw(@core.RawAddress, @core.RawAddress, Int, @core.RawAddress) -> Int
+
+pub fn put_is_allowed(@core.RawAddress, UInt) -> Unit raise @core.WindowsError
+
+pub fn put_is_allowed_raw(@core.RawAddress, UInt) -> Int
+
+pub fn put_message_if_not_allowed(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn put_message_if_not_allowed_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn reject(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn reject_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub let server_to_client : Int
+
+// Errors
+
+// Types and methods
+
+// Type aliases
+pub using @2b35c90bf47ad828 {type IMcpMessageFilterExperimental_0b70da089138 as IMcpMessageFilterExperimental}
+
+pub using @2b35c90bf47ad828 {type IMcpMessageFilterResponseExperimental_4e6ae42dc460 as IMcpMessageFilterResponseExperimental}
+
+pub using @2b35c90bf47ad828 {type IMcpMessageFilterResponseExperimental2_285216b16515 as IMcpMessageFilterResponseExperimental2}
+
+pub using @2b35c90bf47ad828 {type McpMessageDirection_11dca31f98aa as McpMessageDirection}
+
+pub using @2b35c90bf47ad828 {type McpMessageFilterResponse_0175f9bf704d as McpMessageFilterResponse}
+
+// Traits
+

@@ -1,0 +1,98 @@
+// Generated using `moon info`, DON'T EDIT IT
+package "moonbit-community/win32-bindings/windows/win32/security/isolation"
+
+import {
+  "moonbit-community/win32-bindings/runtime/core",
+  "moonbit-community/win32-bindings/scc/2341ecff97fb21fa",
+}
+
+// Values
+pub fn allow_set_foreground_access(@core.RawAddress, UInt) -> Unit raise @core.WindowsError
+
+pub fn allow_set_foreground_access_raw(@core.RawAddress, UInt) -> Int
+
+pub fn create_app_container_profile(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, UInt, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn create_app_container_profile_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, UInt, @core.RawAddress) -> Int
+
+pub fn delete_app_container_profile(@core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn delete_app_container_profile_raw(@core.RawAddress) -> Int
+
+pub fn derive_app_container_sid_from_app_container_name(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn derive_app_container_sid_from_app_container_name_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn derive_restricted_app_container_sid_from_app_container_sid_and_restricted_name(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn derive_restricted_app_container_sid_from_app_container_sid_and_restricted_name_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn get_app_container_folder_path(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn get_app_container_folder_path_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn get_app_container_named_object_path_raw(@core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn get_app_container_registry_location(UInt, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn get_app_container_registry_location_raw(UInt, @core.RawAddress) -> Int
+
+pub fn get_container_guid(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn get_container_guid_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn is_container_running(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn is_container_running_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn is_cross_isolated_environment_clipboard_content(@core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn is_cross_isolated_environment_clipboard_content_raw(@core.RawAddress) -> Int
+
+pub fn is_process_in_isolated_container(@core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn is_process_in_isolated_container_raw(@core.RawAddress) -> Int
+
+pub fn is_process_in_isolated_windows_environment(@core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn is_process_in_isolated_windows_environment_raw(@core.RawAddress) -> Int
+
+pub fn is_process_in_wdag_container(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn is_process_in_wdag_container_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn launch(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn launch_process(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn launch_process2(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn launch_process2_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn launch_process_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn launch_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn share_directory(@core.RawAddress, @core.RawAddress, @core.RawAddress, Int) -> Unit raise @core.WindowsError
+
+pub fn share_directory_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, Int) -> Int
+
+pub let wdag_clipboard_tag : String
+
+// Errors
+
+// Types and methods
+
+// Type aliases
+pub using @2341ecff97fb21fa {type IIsolatedAppLauncher_75ce1cd48d4e as IIsolatedAppLauncher}
+
+pub using @2341ecff97fb21fa {type IIsolatedProcessLauncher_b1ab46205d28 as IIsolatedProcessLauncher}
+
+pub using @2341ecff97fb21fa {type IIsolatedProcessLauncher2_5a543c2985a4 as IIsolatedProcessLauncher2}
+
+pub using @2341ecff97fb21fa {type IsolatedAppLauncher_a93ea8964f91 as IsolatedAppLauncher}
+
+pub using @2341ecff97fb21fa {type IsolatedAppLauncherTelemetryParameters_843857a02d9a as IsolatedAppLauncherTelemetryParameters}
+
+// Traits
+

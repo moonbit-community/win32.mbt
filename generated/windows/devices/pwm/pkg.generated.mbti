@@ -1,0 +1,112 @@
+// Generated using `moon info`, DON'T EDIT IT
+package "moonbit-community/win32-bindings/windows/devices/pwm"
+
+import {
+  "moonbit-community/win32-bindings/runtime/com",
+  "moonbit-community/win32-bindings/runtime/core",
+  "moonbit-community/win32-bindings/scc/5edb6bfd858e8776",
+  "moonbitlang/core/ref",
+}
+
+// Values
+pub let active_high : Int
+
+pub let active_low : Int
+
+pub let actual_frequency_0046905b33 : String
+
+pub let actual_frequency_94271b130f : String
+
+pub let controller_00a9b7fda7 : String
+
+pub let controller_f25027ae2f : String
+
+pub fn from_id_async_raw(@core.RawAddress, @core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_active_duty_cycle_percentage_raw(@core.RawAddress, Bytes) -> Int
+
+pub fn get_actual_frequency_raw(@core.RawAddress, Bytes) -> Int
+
+pub fn get_controller_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_controllers_async_raw(@core.RawAddress, @core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_default_async_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_device_selector_2b4b822c47_raw(@core.RawAddress, @core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_device_selector_5148d80644_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_is_started_raw(@core.RawAddress, Bytes) -> Int
+
+pub fn get_max_frequency_raw(@core.RawAddress, Bytes) -> Int
+
+pub fn get_min_frequency_raw(@core.RawAddress, Bytes) -> Int
+
+pub fn get_pin_count(@core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn get_pin_count_raw(@core.RawAddress, @ref.Ref[Int]) -> Int
+
+pub fn get_polarity(@core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn get_polarity_raw(@core.RawAddress, @ref.Ref[Int]) -> Int
+
+pub let is_started_50ee40653e : String
+
+pub let is_started_55b9e92172 : String
+
+pub let max_frequency_508403bab2 : String
+
+pub let max_frequency_cb0ac14570 : String
+
+pub let min_frequency_e5d5959229 : String
+
+pub let min_frequency_ec4b13e332 : String
+
+pub fn open_pin_raw(@core.RawAddress, Int, @ref.Ref[UInt64]) -> Int
+
+pub let pin_count_457044c6b4 : String
+
+pub let pin_count_83524b94e0 : String
+
+pub let polarity_0285bfcadb : String
+
+pub let polarity_cca1bca11c : String
+
+pub fn put_polarity(@core.RawAddress, Int) -> Unit raise @core.WindowsError
+
+pub fn put_polarity_raw(@core.RawAddress, Int) -> Int
+
+pub fn set_active_duty_cycle_percentage(@core.RawAddress, Double) -> Unit raise @core.WindowsError
+
+pub fn set_active_duty_cycle_percentage_raw(@core.RawAddress, Double) -> Int
+
+pub fn set_desired_frequency_raw(@core.RawAddress, Double, Bytes) -> Int
+
+pub fn start(@core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn start_raw(@core.RawAddress) -> Int
+
+pub fn static_factory_70b9e76c2e(@core.Guid) -> @com.ComPtr[@com.IInspectable] raise @core.WindowsError
+
+pub fn static_factory_8fea2df34f(@core.Guid) -> @com.ComPtr[@com.IInspectable] raise @core.WindowsError
+
+pub fn static_factory_950f0318e9(@core.Guid) -> @com.ComPtr[@com.IInspectable] raise @core.WindowsError
+
+pub fn stop(@core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn stop_raw(@core.RawAddress) -> Int
+
+// Errors
+
+// Types and methods
+
+// Type aliases
+pub using @5edb6bfd858e8776 {type PwmController_e3030098d658 as PwmController}
+
+pub using @5edb6bfd858e8776 {type PwmPin_c9ce4d95f563 as PwmPin}
+
+pub using @5edb6bfd858e8776 {type PwmPulsePolarity_10d8da26469d as PwmPulsePolarity}
+
+// Traits
+

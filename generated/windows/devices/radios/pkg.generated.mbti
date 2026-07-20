@@ -1,0 +1,98 @@
+// Generated using `moon info`, DON'T EDIT IT
+package "moonbit-community/win32-bindings/windows/devices/radios"
+
+import {
+  "moonbit-community/win32-bindings/runtime/com",
+  "moonbit-community/win32-bindings/runtime/core",
+  "moonbit-community/win32-bindings/scc/fa7e49cac09e8197",
+  "moonbitlang/core/ref",
+}
+
+// Values
+pub fn add_state_changed(@core.RawAddress, @core.RawAddress) -> Int64 raise @core.WindowsError
+
+pub fn add_state_changed_raw(@core.RawAddress, @core.RawAddress, @ref.Ref[Int64]) -> Int
+
+pub let allowed : Int
+
+pub let bluetooth : Int
+
+pub let denied_by_system : Int
+
+pub let denied_by_user : Int
+
+pub let disabled : Int
+
+pub let fm : Int
+
+pub fn from_id_async_raw(@core.RawAddress, @core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_device_selector_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_kind(@core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn get_kind_raw(@core.RawAddress, @ref.Ref[Int]) -> Int
+
+pub fn get_name_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_radios_async_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_state(@core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn get_state_raw(@core.RawAddress, @ref.Ref[Int]) -> Int
+
+pub let kind_154ed0d94e : String
+
+pub let kind_603eae31eb : String
+
+pub let mobile_broadband : Int
+
+pub let name_0d3a6950db : String
+
+pub let name_11a9a1dbea : String
+
+pub let off : Int
+
+pub let on : Int
+
+pub let other : Int
+
+pub fn remove_state_changed(@core.RawAddress, Int64) -> Unit raise @core.WindowsError
+
+pub fn remove_state_changed_raw(@core.RawAddress, Int64) -> Int
+
+pub fn request_access_async_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn set_state_async_raw(@core.RawAddress, Int, @ref.Ref[UInt64]) -> Int
+
+pub let state_0298a4d052 : String
+
+pub let state_63bb19d65b : String
+
+pub let state_changed_889d565872 : String
+
+pub let state_changed_d684f3a63e : String
+
+pub fn static_factory(@core.Guid) -> @com.ComPtr[@com.IInspectable] raise @core.WindowsError
+
+pub let unknown : Int
+
+pub let unspecified : Int
+
+pub let wi_fi : Int
+
+// Errors
+
+// Types and methods
+
+// Type aliases
+pub using @fa7e49cac09e8197 {type Radio_9d4c72d8f60c as Radio}
+
+pub using @fa7e49cac09e8197 {type RadioAccessStatus_261d73c12e8a as RadioAccessStatus}
+
+pub using @fa7e49cac09e8197 {type RadioKind_812047ed6583 as RadioKind}
+
+pub using @fa7e49cac09e8197 {type RadioState_323def4e9181 as RadioState}
+
+// Traits
+

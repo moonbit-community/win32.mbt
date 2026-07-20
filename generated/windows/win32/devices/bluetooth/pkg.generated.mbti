@@ -1,0 +1,2054 @@
+// Generated using `moon info`, DON'T EDIT IT
+package "moonbit-community/win32-bindings/windows/win32/devices/bluetooth"
+
+import {
+  "moonbit-community/win32-bindings/runtime/core",
+  "moonbit-community/win32-bindings/scc/94b0efd94649899e",
+}
+
+// Values
+pub let a2_dp_sink_supported_features_amplifier : UInt
+
+pub let a2_dp_sink_supported_features_headphone : UInt
+
+pub let a2_dp_sink_supported_features_recorder : UInt
+
+pub let a2_dp_sink_supported_features_speaker : UInt
+
+pub let a2_dp_source_supported_features_microphone : UInt
+
+pub let a2_dp_source_supported_features_mixer : UInt
+
+pub let a2_dp_source_supported_features_player : UInt
+
+pub let a2_dp_source_supported_features_tuner : UInt
+
+pub let advanced_audio_distribution_profile_id_uuid16 : UInt
+
+pub let advanced_audio_distribution_service_class_id_uuid16 : UInt
+
+pub let af_bth : UInt
+
+pub let att_protocol_uuid16 : UInt
+
+pub let audio_sink_service_class_id_uuid16 : UInt
+
+pub let audio_sink_source_service_class_id_uuid16 : UInt
+
+pub let audio_source_service_class_id_uuid16 : UInt
+
+pub let audio_video_service_class_id_uuid16 : UInt
+
+pub let audio_video_service_class_uuid16 : UInt
+
+pub let av_remote_control_controller_service_class_uuid16 : UInt
+
+pub let av_remote_control_service_class_id_uuid16 : UInt
+
+pub let av_remote_control_target_service_class_id_uuid16 : UInt
+
+pub let avctp_protocol_uuid16 : UInt
+
+pub let avdtp_protocol_uuid16 : UInt
+
+pub let avrcp_supported_features_category_1 : UInt
+
+pub let avrcp_supported_features_category_2 : UInt
+
+pub let avrcp_supported_features_category_3 : UInt
+
+pub let avrcp_supported_features_category_4 : UInt
+
+pub let avrcp_supported_features_ct_browsing : UInt
+
+pub let avrcp_supported_features_ct_cover_art_image : UInt
+
+pub let avrcp_supported_features_ct_cover_art_image_properties : UInt
+
+pub let avrcp_supported_features_ct_cover_art_linked_thumbnail : UInt
+
+pub let avrcp_supported_features_tg_browsing : UInt
+
+pub let avrcp_supported_features_tg_cover_art : UInt
+
+pub let avrcp_supported_features_tg_group_navigation : UInt
+
+pub let avrcp_supported_features_tg_multiple_player_applications : UInt
+
+pub let avrcp_supported_features_tg_player_application_settings : UInt
+
+pub let basic_printing_profile_id_uuid16 : UInt
+
+pub let basic_printing_service_class_id_uuid16 : UInt
+
+pub let bdif_address : UInt
+
+pub let bdif_br : UInt
+
+pub let bdif_br_secure_connection_paired : UInt
+
+pub let bdif_cod : UInt
+
+pub let bdif_connected : UInt
+
+pub let bdif_debugkey : UInt
+
+pub let bdif_eir : UInt
+
+pub let bdif_le : UInt
+
+pub let bdif_le_connectable : UInt
+
+pub let bdif_le_connected : UInt
+
+pub let bdif_le_debugkey : UInt
+
+pub let bdif_le_discoverable : UInt
+
+pub let bdif_le_mitm_protected : UInt
+
+pub let bdif_le_name : UInt
+
+pub let bdif_le_paired : UInt
+
+pub let bdif_le_personal : UInt
+
+pub let bdif_le_privacy_enabled : UInt
+
+pub let bdif_le_random_address_type : UInt
+
+pub let bdif_le_secure_connection_paired : UInt
+
+pub let bdif_le_visible : UInt
+
+pub let bdif_name : UInt
+
+pub let bdif_paired : UInt
+
+pub let bdif_personal : UInt
+
+pub let bdif_rssi : UInt
+
+pub let bdif_short_name : UInt
+
+pub let bdif_ssp_mitm_protected : UInt
+
+pub let bdif_ssp_paired : UInt
+
+pub let bdif_ssp_supported : UInt
+
+pub let bdif_tx_power : UInt
+
+pub let bdif_visible : UInt
+
+pub fn bluetooth_authenticate_device_ex_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, Int) -> UInt
+
+pub fn bluetooth_authenticate_device_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, UInt) -> UInt
+
+pub fn bluetooth_authenticate_multiple_devices_raw(@core.RawAddress, @core.RawAddress, UInt, @core.RawAddress) -> UInt
+
+pub let bluetooth_authentication_method_legacy : Int
+
+pub let bluetooth_authentication_method_numeric_comparison : Int
+
+pub let bluetooth_authentication_method_oob : Int
+
+pub let bluetooth_authentication_method_passkey : Int
+
+pub let bluetooth_authentication_method_passkey_notification : Int
+
+pub let bluetooth_device_name_size : UInt
+
+pub fn bluetooth_display_device_properties_raw(@core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn bluetooth_enable_discovery_raw(@core.RawAddress, Int) -> Int
+
+pub fn bluetooth_enable_incoming_connections_raw(@core.RawAddress, Int) -> Int
+
+pub fn bluetooth_enumerate_installed_services_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn bluetooth_find_device_close_raw(@core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn bluetooth_find_first_device_raw(@core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[@core.RawAddress]
+
+pub fn bluetooth_find_first_radio_raw(@core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[@core.RawAddress]
+
+pub fn bluetooth_find_next_device_raw(@core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn bluetooth_find_next_radio_raw(@core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn bluetooth_find_radio_close_raw(@core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn bluetooth_gatt_abort_reliable_write(@core.RawAddress, UInt64, UInt) -> Unit raise @core.WindowsError
+
+pub fn bluetooth_gatt_abort_reliable_write_raw(@core.RawAddress, UInt64, UInt) -> Int
+
+pub fn bluetooth_gatt_begin_reliable_write(@core.RawAddress, @core.RawAddress, UInt) -> Unit raise @core.WindowsError
+
+pub fn bluetooth_gatt_begin_reliable_write_raw(@core.RawAddress, @core.RawAddress, UInt) -> Int
+
+pub fn bluetooth_gatt_end_reliable_write(@core.RawAddress, UInt64, UInt) -> Unit raise @core.WindowsError
+
+pub fn bluetooth_gatt_end_reliable_write_raw(@core.RawAddress, UInt64, UInt) -> Int
+
+pub let bluetooth_gatt_flag_connection_authenticated : UInt
+
+pub let bluetooth_gatt_flag_connection_encrypted : UInt
+
+pub let bluetooth_gatt_flag_force_read_from_cache : UInt
+
+pub let bluetooth_gatt_flag_force_read_from_device : UInt
+
+pub let bluetooth_gatt_flag_none : UInt
+
+pub let bluetooth_gatt_flag_return_all : UInt
+
+pub let bluetooth_gatt_flag_signed_write : UInt
+
+pub let bluetooth_gatt_flag_write_without_response : UInt
+
+pub fn bluetooth_gatt_get_characteristic_value(@core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress, UInt) -> Unit raise @core.WindowsError
+
+pub fn bluetooth_gatt_get_characteristic_value_raw(@core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress, UInt) -> Int
+
+pub fn bluetooth_gatt_get_characteristics(@core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress, UInt) -> Unit raise @core.WindowsError
+
+pub fn bluetooth_gatt_get_characteristics_raw(@core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress, UInt) -> Int
+
+pub fn bluetooth_gatt_get_descriptor_value(@core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress, UInt) -> Unit raise @core.WindowsError
+
+pub fn bluetooth_gatt_get_descriptor_value_raw(@core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress, UInt) -> Int
+
+pub fn bluetooth_gatt_get_descriptors(@core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress, UInt) -> Unit raise @core.WindowsError
+
+pub fn bluetooth_gatt_get_descriptors_raw(@core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress, UInt) -> Int
+
+pub fn bluetooth_gatt_get_included_services(@core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress, UInt) -> Unit raise @core.WindowsError
+
+pub fn bluetooth_gatt_get_included_services_raw(@core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress, UInt) -> Int
+
+pub fn bluetooth_gatt_get_services(@core.RawAddress, UInt, @core.RawAddress, @core.RawAddress, UInt) -> Unit raise @core.WindowsError
+
+pub fn bluetooth_gatt_get_services_raw(@core.RawAddress, UInt, @core.RawAddress, @core.RawAddress, UInt) -> Int
+
+pub fn bluetooth_gatt_register_event(@core.RawAddress, Int, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, UInt) -> Unit raise @core.WindowsError
+
+pub fn bluetooth_gatt_register_event_raw(@core.RawAddress, Int, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, UInt) -> Int
+
+pub fn bluetooth_gatt_set_characteristic_value(@core.RawAddress, @core.RawAddress, @core.RawAddress, UInt64, UInt) -> Unit raise @core.WindowsError
+
+pub fn bluetooth_gatt_set_characteristic_value_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, UInt64, UInt) -> Int
+
+pub fn bluetooth_gatt_set_descriptor_value(@core.RawAddress, @core.RawAddress, @core.RawAddress, UInt) -> Unit raise @core.WindowsError
+
+pub fn bluetooth_gatt_set_descriptor_value_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, UInt) -> Int
+
+pub fn bluetooth_gatt_unregister_event(Int64, UInt) -> Unit raise @core.WindowsError
+
+pub fn bluetooth_gatt_unregister_event_raw(Int64, UInt) -> Int
+
+pub fn bluetooth_get_device_info_raw(@core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn bluetooth_get_radio_info_raw(@core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[UInt]
+
+pub let bluetooth_io_capability_displayonly : Int
+
+pub let bluetooth_io_capability_displayyesno : Int
+
+pub let bluetooth_io_capability_keyboardonly : Int
+
+pub let bluetooth_io_capability_noinputnooutput : Int
+
+pub let bluetooth_io_capability_undefined : Int
+
+pub fn bluetooth_is_connectable_raw(@core.RawAddress) -> Int
+
+pub fn bluetooth_is_discoverable_raw(@core.RawAddress) -> Int
+
+pub fn bluetooth_is_version_available_raw(UInt, UInt) -> Int
+
+pub let bluetooth_max_name_size : UInt
+
+pub let bluetooth_max_passkey_buffer_size : UInt
+
+pub let bluetooth_max_passkey_size : UInt
+
+pub let bluetooth_max_service_name_size : UInt
+
+pub let bluetooth_mitm_protection_not_defined : Int
+
+pub let bluetooth_mitm_protection_not_required : Int
+
+pub let bluetooth_mitm_protection_not_required_bonding : Int
+
+pub let bluetooth_mitm_protection_not_required_general_bonding : Int
+
+pub let bluetooth_mitm_protection_required : Int
+
+pub let bluetooth_mitm_protection_required_bonding : Int
+
+pub let bluetooth_mitm_protection_required_general_bonding : Int
+
+pub fn bluetooth_register_for_authentication_ex_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn bluetooth_register_for_authentication_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[UInt]
+
+pub fn bluetooth_remove_device_raw(@core.RawAddress) -> UInt
+
+pub fn bluetooth_sdp_enum_attributes_raw(@core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn bluetooth_sdp_get_attribute_value_raw(@core.RawAddress, UInt, UInt, @core.RawAddress) -> UInt
+
+pub fn bluetooth_sdp_get_container_element_data_raw(@core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn bluetooth_sdp_get_element_data_raw(@core.RawAddress, UInt, @core.RawAddress) -> UInt
+
+pub fn bluetooth_sdp_get_string_raw(@core.RawAddress, UInt, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn bluetooth_select_devices_free_raw(@core.RawAddress) -> Int
+
+pub fn bluetooth_select_devices_raw(@core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn bluetooth_send_authentication_response_ex_raw(@core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn bluetooth_send_authentication_response_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub let bluetooth_service_disable : UInt
+
+pub let bluetooth_service_enable : UInt
+
+pub fn bluetooth_set_local_service_info_raw(@core.RawAddress, @core.RawAddress, UInt, @core.RawAddress) -> UInt
+
+pub fn bluetooth_set_service_state_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, UInt) -> UInt
+
+pub fn bluetooth_unregister_authentication_raw(Int64) -> @core.RawWin32Call[Int]
+
+pub fn bluetooth_update_device_record_raw(@core.RawAddress) -> UInt
+
+pub let bnep_protocol_uuid16 : UInt
+
+pub let browse_group_descriptor_service_class_id_uuid16 : UInt
+
+pub let bt_port_dyn_first : UInt
+
+pub let bt_port_max : UInt
+
+pub let bt_port_min : UInt
+
+pub let bth_addr_giac : UInt
+
+pub let bth_addr_iac_first : UInt
+
+pub let bth_addr_iac_last : UInt
+
+pub let bth_addr_liac : UInt
+
+pub let bth_addr_string_size : UInt
+
+pub let bth_eir_128_uuids_complete_id : UInt
+
+pub let bth_eir_128_uuids_partial_id : UInt
+
+pub let bth_eir_16_uuids_complete_id : UInt
+
+pub let bth_eir_16_uuids_partial_id : UInt
+
+pub let bth_eir_32_uuids_complete_id : UInt
+
+pub let bth_eir_32_uuids_partial_id : UInt
+
+pub let bth_eir_flags_id : UInt
+
+pub let bth_eir_local_name_complete_id : UInt
+
+pub let bth_eir_local_name_partial_id : UInt
+
+pub let bth_eir_manufacturer_id : UInt
+
+pub let bth_eir_oob_bd_addr_id : UInt
+
+pub let bth_eir_oob_cod_id : UInt
+
+pub let bth_eir_oob_opt_data_len_id : UInt
+
+pub let bth_eir_oob_sp_hash_id : UInt
+
+pub let bth_eir_oob_sp_randomizer_id : UInt
+
+pub let bth_eir_size : UInt
+
+pub let bth_eir_tx_power_level_id : UInt
+
+pub let bth_error_acl_connection_already_exists : UInt
+
+pub let bth_error_authentication_failure : UInt
+
+pub let bth_error_channel_classification_not_supported : UInt
+
+pub let bth_error_coarse_clock_adjustment_rejected : UInt
+
+pub let bth_error_command_disallowed : UInt
+
+pub let bth_error_connection_failed_to_be_established : UInt
+
+pub let bth_error_connection_rejected_due_to_no_suitable_channel_found : UInt
+
+pub let bth_error_connection_terminated_due_to_mic_failure : UInt
+
+pub let bth_error_connection_timeout : UInt
+
+pub let bth_error_controller_busy : UInt
+
+pub let bth_error_different_transaction_collision : UInt
+
+pub let bth_error_directed_advertising_timeout : UInt
+
+pub let bth_error_encryption_mode_not_acceptable : UInt
+
+pub let bth_error_extended_inquiry_response_too_large : UInt
+
+pub let bth_error_hardware_failure : UInt
+
+pub let bth_error_host_busy_pairing : UInt
+
+pub let bth_error_host_rejected_limited_resources : UInt
+
+pub let bth_error_host_rejected_personal_device : UInt
+
+pub let bth_error_host_rejected_security_reasons : UInt
+
+pub let bth_error_host_timeout : UInt
+
+pub let bth_error_instant_passed : UInt
+
+pub let bth_error_insufficient_security : UInt
+
+pub let bth_error_invalid_hci_parameter : UInt
+
+pub let bth_error_invalid_lmp_parameters : UInt
+
+pub let bth_error_key_missing : UInt
+
+pub let bth_error_limit_reached : UInt
+
+pub let bth_error_lmp_pdu_not_allowed : UInt
+
+pub let bth_error_lmp_response_timeout : UInt
+
+pub let bth_error_lmp_transaction_collision : UInt
+
+pub let bth_error_local_host_terminated_connection : UInt
+
+pub let bth_error_mac_connection_failed : UInt
+
+pub let bth_error_max_number_of_connections : UInt
+
+pub let bth_error_max_number_of_sco_connections : UInt
+
+pub let bth_error_memory_full : UInt
+
+pub let bth_error_no_connection : UInt
+
+pub let bth_error_operation_cancelled_by_host : UInt
+
+pub let bth_error_packet_too_long : UInt
+
+pub let bth_error_page_timeout : UInt
+
+pub let bth_error_pairing_not_allowed : UInt
+
+pub let bth_error_pairing_with_unit_key_not_supported : UInt
+
+pub let bth_error_parameter_out_of_mandatory_range : UInt
+
+pub let bth_error_qos_is_not_supported : UInt
+
+pub let bth_error_qos_rejected : UInt
+
+pub let bth_error_qos_unacceptable_parameter : UInt
+
+pub let bth_error_remote_low_resources : UInt
+
+pub let bth_error_remote_powering_off : UInt
+
+pub let bth_error_remote_user_ended_connection : UInt
+
+pub let bth_error_repeated_attempts : UInt
+
+pub let bth_error_reserved_slot_violation : UInt
+
+pub let bth_error_role_change_not_allowed : UInt
+
+pub let bth_error_role_switch_failed : UInt
+
+pub let bth_error_role_switch_pending : UInt
+
+pub let bth_error_sco_airmode_rejected : UInt
+
+pub let bth_error_sco_interval_rejected : UInt
+
+pub let bth_error_sco_offset_rejected : UInt
+
+pub let bth_error_secure_simple_pairing_not_supported_by_host : UInt
+
+pub let bth_error_success : UInt
+
+pub let bth_error_type_0_submap_not_defined : UInt
+
+pub let bth_error_uknown_lmp_pdu : UInt
+
+pub let bth_error_unacceptable_connection_interval : UInt
+
+pub let bth_error_unit_key_not_used : UInt
+
+pub let bth_error_unknown_advertising_identifier : UInt
+
+pub let bth_error_unknown_hci_command : UInt
+
+pub let bth_error_unspecified : UInt
+
+pub let bth_error_unspecified_error : UInt
+
+pub let bth_error_unsupported_feature_or_parameter : UInt
+
+pub let bth_error_unsupported_lmp_parm_value : UInt
+
+pub let bth_error_unsupported_remote_feature : UInt
+
+pub let bth_host_feature_enhanced_retransmission_mode : UInt64
+
+pub let bth_host_feature_low_energy : UInt64
+
+pub let bth_host_feature_sco_hci : UInt64
+
+pub let bth_host_feature_sco_hcibypass : UInt64
+
+pub let bth_host_feature_streaming_mode : UInt64
+
+pub let bth_ioctl_base : UInt
+
+pub let bth_le_att_cid : UInt
+
+pub let bth_le_att_max_value_size : UInt
+
+pub let bth_le_att_transaction_timeout : UInt
+
+pub let bth_le_error_attribute_not_found : UInt
+
+pub let bth_le_error_attribute_not_long : UInt
+
+pub let bth_le_error_insufficient_authentication : UInt
+
+pub let bth_le_error_insufficient_authorization : UInt
+
+pub let bth_le_error_insufficient_encryption : UInt
+
+pub let bth_le_error_insufficient_encryption_key_size : UInt
+
+pub let bth_le_error_insufficient_resources : UInt
+
+pub let bth_le_error_invalid_attribute_value_length : UInt
+
+pub let bth_le_error_invalid_handle : UInt
+
+pub let bth_le_error_invalid_offset : UInt
+
+pub let bth_le_error_invalid_pdu : UInt
+
+pub let bth_le_error_prepare_queue_full : UInt
+
+pub let bth_le_error_read_not_permitted : UInt
+
+pub let bth_le_error_request_not_supported : UInt
+
+pub let bth_le_error_unknown : UInt
+
+pub let bth_le_error_unlikely : UInt
+
+pub let bth_le_error_unsupported_group_type : UInt
+
+pub let bth_le_error_write_not_permitted : UInt
+
+pub let bth_le_gap_appearance_audio_sink_subcategory_bookshelf_speaker : UInt
+
+pub let bth_le_gap_appearance_audio_sink_subcategory_soundbar : UInt
+
+pub let bth_le_gap_appearance_audio_sink_subcategory_speakerphone : UInt
+
+pub let bth_le_gap_appearance_audio_sink_subcategory_standalone_speaker : UInt
+
+pub let bth_le_gap_appearance_audio_sink_subcategory_standmounted_speaker : UInt
+
+pub let bth_le_gap_appearance_audio_source_subcategory_alarm : UInt
+
+pub let bth_le_gap_appearance_audio_source_subcategory_auditorium : UInt
+
+pub let bth_le_gap_appearance_audio_source_subcategory_bell : UInt
+
+pub let bth_le_gap_appearance_audio_source_subcategory_broadcasting_device : UInt
+
+pub let bth_le_gap_appearance_audio_source_subcategory_broadcasting_room : UInt
+
+pub let bth_le_gap_appearance_audio_source_subcategory_horn : UInt
+
+pub let bth_le_gap_appearance_audio_source_subcategory_kiosk : UInt
+
+pub let bth_le_gap_appearance_audio_source_subcategory_microphone : UInt
+
+pub let bth_le_gap_appearance_audio_source_subcategory_service_desk : UInt
+
+pub let bth_le_gap_appearance_blood_pressure_subcategory_arm : UInt
+
+pub let bth_le_gap_appearance_blood_pressure_subcategory_wrist : UInt
+
+pub let bth_le_gap_appearance_category_access_control : UInt
+
+pub let bth_le_gap_appearance_category_air_conditioning : UInt
+
+pub let bth_le_gap_appearance_category_aircraft : UInt
+
+pub let bth_le_gap_appearance_category_audio_sink : UInt
+
+pub let bth_le_gap_appearance_category_audio_source : UInt
+
+pub let bth_le_gap_appearance_category_av_equipment : UInt
+
+pub let bth_le_gap_appearance_category_barcode_scanner : UInt
+
+pub let bth_le_gap_appearance_category_blood_pressure : UInt
+
+pub let bth_le_gap_appearance_category_clock : UInt
+
+pub let bth_le_gap_appearance_category_computer : UInt
+
+pub let bth_le_gap_appearance_category_continuous_glucose_monitor : UInt
+
+pub let bth_le_gap_appearance_category_control_device : UInt
+
+pub let bth_le_gap_appearance_category_cycling : UInt
+
+pub let bth_le_gap_appearance_category_display : UInt
+
+pub let bth_le_gap_appearance_category_display_equipment : UInt
+
+pub let bth_le_gap_appearance_category_domestic_appliance : UInt
+
+pub let bth_le_gap_appearance_category_eye_glasses : UInt
+
+pub let bth_le_gap_appearance_category_fan : UInt
+
+pub let bth_le_gap_appearance_category_gaming : UInt
+
+pub let bth_le_gap_appearance_category_glucose_meter : UInt
+
+pub let bth_le_gap_appearance_category_hearing_aid : UInt
+
+pub let bth_le_gap_appearance_category_heart_rate : UInt
+
+pub let bth_le_gap_appearance_category_heating : UInt
+
+pub let bth_le_gap_appearance_category_hid : UInt
+
+pub let bth_le_gap_appearance_category_humidifier : UInt
+
+pub let bth_le_gap_appearance_category_hvac : UInt
+
+pub let bth_le_gap_appearance_category_insulin_pump : UInt
+
+pub let bth_le_gap_appearance_category_keyring : UInt
+
+pub let bth_le_gap_appearance_category_light_fixtures : UInt
+
+pub let bth_le_gap_appearance_category_light_source : UInt
+
+pub let bth_le_gap_appearance_category_mask : UInt
+
+pub let bth_le_gap_appearance_category_media_player : UInt
+
+pub let bth_le_gap_appearance_category_medication_delivery : UInt
+
+pub let bth_le_gap_appearance_category_motorized_device : UInt
+
+pub let bth_le_gap_appearance_category_motorized_vehicle : UInt
+
+pub let bth_le_gap_appearance_category_network_device : UInt
+
+pub let bth_le_gap_appearance_category_offset : UInt
+
+pub let bth_le_gap_appearance_category_outdoor_sports_activity : UInt
+
+pub let bth_le_gap_appearance_category_personal_mobility_device : UInt
+
+pub let bth_le_gap_appearance_category_phone : UInt
+
+pub let bth_le_gap_appearance_category_pluse_oximeter : UInt
+
+pub let bth_le_gap_appearance_category_power_device : UInt
+
+pub let bth_le_gap_appearance_category_remote_control : UInt
+
+pub let bth_le_gap_appearance_category_running_walking_sensor : UInt
+
+pub let bth_le_gap_appearance_category_sensor : UInt
+
+pub let bth_le_gap_appearance_category_signage : UInt
+
+pub let bth_le_gap_appearance_category_tag : UInt
+
+pub let bth_le_gap_appearance_category_thermometer : UInt
+
+pub let bth_le_gap_appearance_category_uncategorized : UInt
+
+pub let bth_le_gap_appearance_category_watch : UInt
+
+pub let bth_le_gap_appearance_category_wearable_audio_device : UInt
+
+pub let bth_le_gap_appearance_category_weight_scale : UInt
+
+pub let bth_le_gap_appearance_category_window_covering : UInt
+
+pub let bth_le_gap_appearance_cycling_subcategory_cadence_sensor : UInt
+
+pub let bth_le_gap_appearance_cycling_subcategory_cycling_computer : UInt
+
+pub let bth_le_gap_appearance_cycling_subcategory_power_sensor : UInt
+
+pub let bth_le_gap_appearance_cycling_subcategory_speed_and_cadence_sensor : UInt
+
+pub let bth_le_gap_appearance_cycling_subcategory_speed_sensor : UInt
+
+pub let bth_le_gap_appearance_hearing_aid_subcategory_behind_ear_hearing_aid : UInt
+
+pub let bth_le_gap_appearance_hearing_aid_subcategory_cochlear_implant : UInt
+
+pub let bth_le_gap_appearance_hearing_aid_subcategory_in_ear_hearing_aid : UInt
+
+pub let bth_le_gap_appearance_heart_rate_subcategory_heart_rate_belt : UInt
+
+pub let bth_le_gap_appearance_hid_subcategory_barcode_scanner : UInt
+
+pub let bth_le_gap_appearance_hid_subcategory_card_reader : UInt
+
+pub let bth_le_gap_appearance_hid_subcategory_digital_pen : UInt
+
+pub let bth_le_gap_appearance_hid_subcategory_digitizer_tablet : UInt
+
+pub let bth_le_gap_appearance_hid_subcategory_gamepad : UInt
+
+pub let bth_le_gap_appearance_hid_subcategory_joystick : UInt
+
+pub let bth_le_gap_appearance_hid_subcategory_keyboard : UInt
+
+pub let bth_le_gap_appearance_hid_subcategory_mouse : UInt
+
+pub let bth_le_gap_appearance_hid_subcategory_presentation_remote : UInt
+
+pub let bth_le_gap_appearance_hid_subcategory_touchpad : UInt
+
+pub let bth_le_gap_appearance_outdoor_sports_activity_subcategory_location_display_device : UInt
+
+pub let bth_le_gap_appearance_outdoor_sports_activity_subcategory_location_navigation_display_device : UInt
+
+pub let bth_le_gap_appearance_outdoor_sports_activity_subcategory_location_navigation_pod : UInt
+
+pub let bth_le_gap_appearance_outdoor_sports_activity_subcategory_location_pod : UInt
+
+pub let bth_le_gap_appearance_pulse_oximeter_subcategory_fingertip : UInt
+
+pub let bth_le_gap_appearance_pulse_oximeter_subcategory_wrist_worn : UInt
+
+pub let bth_le_gap_appearance_running_walking_sensor_subcategory_in_shoe : UInt
+
+pub let bth_le_gap_appearance_running_walking_sensor_subcategory_on_hip : UInt
+
+pub let bth_le_gap_appearance_running_walking_sensor_subcategory_on_shoe : UInt
+
+pub let bth_le_gap_appearance_sub_category_mask : UInt
+
+pub let bth_le_gap_appearance_subcategory_generic : UInt
+
+pub let bth_le_gap_appearance_thermometer_subcategory_ear : UInt
+
+pub let bth_le_gap_appearance_watch_subcategory_sports_watch : UInt
+
+pub let bth_le_gap_appearance_wearable_audio_device_subcategory_earbud : UInt
+
+pub let bth_le_gap_appearance_wearable_audio_device_subcategory_headphones : UInt
+
+pub let bth_le_gap_appearance_wearable_audio_device_subcategory_headset : UInt
+
+pub let bth_le_gap_appearance_wearable_audio_device_subcategory_neckband : UInt
+
+pub let bth_le_gatt_attribute_type_characteristic : UInt
+
+pub let bth_le_gatt_attribute_type_include : UInt
+
+pub let bth_le_gatt_attribute_type_primary_service : UInt
+
+pub let bth_le_gatt_attribute_type_secondary_service : UInt
+
+pub let bth_le_gatt_characteristic_descriptor_aggregate_format : UInt
+
+pub let bth_le_gatt_characteristic_descriptor_client_configuration : UInt
+
+pub let bth_le_gatt_characteristic_descriptor_extended_properties : UInt
+
+pub let bth_le_gatt_characteristic_descriptor_format : UInt
+
+pub let bth_le_gatt_characteristic_descriptor_server_configuration : UInt
+
+pub let bth_le_gatt_characteristic_descriptor_user_description : UInt
+
+pub let bth_le_gatt_characteristic_type_appearance : UInt
+
+pub let bth_le_gatt_characteristic_type_device_name : UInt
+
+pub let bth_le_gatt_characteristic_type_peripheral_prefered_connection_parameter : UInt
+
+pub let bth_le_gatt_characteristic_type_peripheral_privacy_flag : UInt
+
+pub let bth_le_gatt_characteristic_type_reconnection_address : UInt
+
+pub let bth_le_gatt_characteristic_type_service_changed : UInt
+
+pub let bth_le_gatt_default_max_included_services_depth : UInt
+
+pub let bth_le_service_gap : UInt
+
+pub let bth_le_service_gatt : UInt
+
+pub let bth_link_key_length : UInt
+
+pub let bth_majorversion : UInt
+
+pub let bth_max_name_size : UInt
+
+pub let bth_max_pin_size : UInt
+
+pub let bth_max_service_name_size : UInt
+
+pub let bth_mfg_3_com : UInt
+
+pub let bth_mfg_alcatel : UInt
+
+pub let bth_mfg_apple : UInt
+
+pub let bth_mfg_aruba_networks : UInt
+
+pub let bth_mfg_atmel : UInt
+
+pub let bth_mfg_avm_berlin : UInt
+
+pub let bth_mfg_bandspeed : UInt
+
+pub let bth_mfg_broadcom : UInt
+
+pub let bth_mfg_c_technologies : UInt
+
+pub let bth_mfg_conexant : UInt
+
+pub let bth_mfg_csr : UInt
+
+pub let bth_mfg_digianswer : UInt
+
+pub let bth_mfg_ericsson : UInt
+
+pub let bth_mfg_hitachi : UInt
+
+pub let bth_mfg_ibm : UInt
+
+pub let bth_mfg_infineon : UInt
+
+pub let bth_mfg_intel : UInt
+
+pub let bth_mfg_internal_use : UInt
+
+pub let bth_mfg_inventel : UInt
+
+pub let bth_mfg_kc_technology : UInt
+
+pub let bth_mfg_lucent : UInt
+
+pub let bth_mfg_macronix_international : UInt
+
+pub let bth_mfg_mansella : UInt
+
+pub let bth_mfg_marvell : UInt
+
+pub let bth_mfg_microsoft : UInt
+
+pub let bth_mfg_mitel : UInt
+
+pub let bth_mfg_mitsibushi : UInt
+
+pub let bth_mfg_motorola : UInt
+
+pub let bth_mfg_nec : UInt
+
+pub let bth_mfg_newlogic : UInt
+
+pub let bth_mfg_nokia : UInt
+
+pub let bth_mfg_nordic_semiconductors_asa : UInt
+
+pub let bth_mfg_open_interface : UInt
+
+pub let bth_mfg_parthus : UInt
+
+pub let bth_mfg_philips_semiconductor : UInt
+
+pub let bth_mfg_qualcomm : UInt
+
+pub let bth_mfg_rf_micro_devices : UInt
+
+pub let bth_mfg_rohde_schwarz : UInt
+
+pub let bth_mfg_rtx_telecom : UInt
+
+pub let bth_mfg_signia : UInt
+
+pub let bth_mfg_siliconwave : UInt
+
+pub let bth_mfg_symbol_technologies : UInt
+
+pub let bth_mfg_tenovis : UInt
+
+pub let bth_mfg_ti : UInt
+
+pub let bth_mfg_toshiba : UInt
+
+pub let bth_mfg_transilica : UInt
+
+pub let bth_mfg_ttpcom : UInt
+
+pub let bth_mfg_waveplus_technology_co : UInt
+
+pub let bth_mfg_widcomm : UInt
+
+pub let bth_mfg_zeevo : UInt
+
+pub let bth_minorversion : UInt
+
+pub let bth_sdp_version : UInt
+
+pub let bth_vid_default_value : UInt
+
+pub let bthleenum_att_mtu_default : UInt
+
+pub let bthleenum_att_mtu_initial_negotiation : UInt
+
+pub let bthleenum_att_mtu_max : UInt
+
+pub let bthleenum_att_mtu_min : UInt
+
+pub let bthns_result_device_authenticated : UInt
+
+pub let bthns_result_device_connected : UInt
+
+pub let bthns_result_device_remembered : UInt
+
+pub let bthproto_l2_cap : UInt
+
+pub let bthproto_rfcomm : UInt
+
+pub let characteristic_aggregate_format : Int
+
+pub let characteristic_extended_properties : Int
+
+pub let characteristic_format : Int
+
+pub let characteristic_user_description : Int
+
+pub let characteristic_value_changed_event : Int
+
+pub let client_characteristic_configuration : Int
+
+pub let cmpt_protocol_uuid16 : UInt
+
+pub let cod_audio_minor_camcorder : UInt
+
+pub let cod_audio_minor_car_audio : UInt
+
+pub let cod_audio_minor_gaming_toy : UInt
+
+pub let cod_audio_minor_hands_free : UInt
+
+pub let cod_audio_minor_headphones : UInt
+
+pub let cod_audio_minor_headset : UInt
+
+pub let cod_audio_minor_headset_hands_free : UInt
+
+pub let cod_audio_minor_hifi_audio : UInt
+
+pub let cod_audio_minor_loudspeaker : UInt
+
+pub let cod_audio_minor_microphone : UInt
+
+pub let cod_audio_minor_portable_audio : UInt
+
+pub let cod_audio_minor_set_top_box : UInt
+
+pub let cod_audio_minor_unclassified : UInt
+
+pub let cod_audio_minor_vcr : UInt
+
+pub let cod_audio_minor_video_camera : UInt
+
+pub let cod_audio_minor_video_display_conferencing : UInt
+
+pub let cod_audio_minor_video_display_loudspeaker : UInt
+
+pub let cod_audio_minor_video_monitor : UInt
+
+pub let cod_computer_minor_desktop : UInt
+
+pub let cod_computer_minor_handheld : UInt
+
+pub let cod_computer_minor_laptop : UInt
+
+pub let cod_computer_minor_palm : UInt
+
+pub let cod_computer_minor_server : UInt
+
+pub let cod_computer_minor_unclassified : UInt
+
+pub let cod_computer_minor_wearable : UInt
+
+pub let cod_format_bit_offset : UInt
+
+pub let cod_format_mask : UInt
+
+pub let cod_health_minor_blood_pressure_monitor : UInt
+
+pub let cod_health_minor_glucose_meter : UInt
+
+pub let cod_health_minor_health_data_display : UInt
+
+pub let cod_health_minor_heart_pulse_monitor : UInt
+
+pub let cod_health_minor_pulse_oximeter : UInt
+
+pub let cod_health_minor_step_counter : UInt
+
+pub let cod_health_minor_thermometer : UInt
+
+pub let cod_health_minor_weighing_scale : UInt
+
+pub let cod_imaging_minor_camera_mask : UInt
+
+pub let cod_imaging_minor_display_mask : UInt
+
+pub let cod_imaging_minor_printer_mask : UInt
+
+pub let cod_imaging_minor_scanner_mask : UInt
+
+pub let cod_lan_access_0_used : UInt
+
+pub let cod_lan_access_17_used : UInt
+
+pub let cod_lan_access_33_used : UInt
+
+pub let cod_lan_access_50_used : UInt
+
+pub let cod_lan_access_67_used : UInt
+
+pub let cod_lan_access_83_used : UInt
+
+pub let cod_lan_access_99_used : UInt
+
+pub let cod_lan_access_bit_offset : UInt
+
+pub let cod_lan_access_full : UInt
+
+pub let cod_lan_access_mask : UInt
+
+pub let cod_lan_minor_mask : UInt
+
+pub let cod_lan_minor_unclassified : UInt
+
+pub let cod_major_audio : UInt
+
+pub let cod_major_computer : UInt
+
+pub let cod_major_health : UInt
+
+pub let cod_major_imaging : UInt
+
+pub let cod_major_lan_access : UInt
+
+pub let cod_major_mask : UInt
+
+pub let cod_major_miscellaneous : UInt
+
+pub let cod_major_peripheral : UInt
+
+pub let cod_major_phone : UInt
+
+pub let cod_major_toy : UInt
+
+pub let cod_major_unclassified : UInt
+
+pub let cod_major_wearable : UInt
+
+pub let cod_minor_bit_offset : UInt
+
+pub let cod_minor_mask : UInt
+
+pub let cod_peripheral_minor_gamepad : UInt
+
+pub let cod_peripheral_minor_joystick : UInt
+
+pub let cod_peripheral_minor_keyboard_mask : UInt
+
+pub let cod_peripheral_minor_no_category : UInt
+
+pub let cod_peripheral_minor_pointer_mask : UInt
+
+pub let cod_peripheral_minor_remote_control : UInt
+
+pub let cod_peripheral_minor_sensing : UInt
+
+pub let cod_phone_minor_cellular : UInt
+
+pub let cod_phone_minor_cordless : UInt
+
+pub let cod_phone_minor_smart : UInt
+
+pub let cod_phone_minor_unclassified : UInt
+
+pub let cod_phone_minor_wired_modem : UInt
+
+pub let cod_service_audio : UInt
+
+pub let cod_service_capturing : UInt
+
+pub let cod_service_information : UInt
+
+pub let cod_service_le_audio : UInt
+
+pub let cod_service_limited : UInt
+
+pub let cod_service_mask : UInt
+
+pub let cod_service_max_count : UInt
+
+pub let cod_service_networking : UInt
+
+pub let cod_service_object_xfer : UInt
+
+pub let cod_service_positioning : UInt
+
+pub let cod_service_rendering : UInt
+
+pub let cod_service_telephony : UInt
+
+pub let cod_toy_minor_controller : UInt
+
+pub let cod_toy_minor_doll_action_figure : UInt
+
+pub let cod_toy_minor_game : UInt
+
+pub let cod_toy_minor_robot : UInt
+
+pub let cod_toy_minor_vehicle : UInt
+
+pub let cod_version : UInt
+
+pub let cod_wearable_minor_glasses : UInt
+
+pub let cod_wearable_minor_helmet : UInt
+
+pub let cod_wearable_minor_jacket : UInt
+
+pub let cod_wearable_minor_pager : UInt
+
+pub let cod_wearable_minor_wrist_watch : UInt
+
+pub let common_isdn_access_service_class_id_uuid16 : UInt
+
+pub let common_isdn_access_service_class_uuid16 : UInt
+
+pub let cordless_external_network_analog_cellular : UInt
+
+pub let cordless_external_network_cdma : UInt
+
+pub let cordless_external_network_gsm : UInt
+
+pub let cordless_external_network_isdn : UInt
+
+pub let cordless_external_network_other : UInt
+
+pub let cordless_external_network_packet_switched : UInt
+
+pub let cordless_external_network_pstn : UInt
+
+pub let cordless_service_class_id_uuid16 : UInt
+
+pub let cordless_telephony_service_class_id_uuid16 : UInt
+
+pub let ctn_access_service_class_id_uuid16 : UInt
+
+pub let ctn_notification_service_class_id_uuid16 : UInt
+
+pub let ctn_profile_id_uuid16 : UInt
+
+pub let custom_descriptor : Int
+
+pub let di_vendor_id_source_bluetooth_sig : UInt
+
+pub let di_vendor_id_source_usb_if : UInt
+
+pub let dialup_networking_service_class_id_uuid16 : UInt
+
+pub let direct_printing_reference_objects_service_class_id_uuid16 : UInt
+
+pub let direct_printing_service_class_id_uuid16 : UInt
+
+pub let e_sdp_upnp_ip_lap_service_class_id_uuid16 : UInt
+
+pub let e_sdp_upnp_ip_pan_service_class_id_uuid16 : UInt
+
+pub let e_sdp_upnp_l2cap_service_class_id_uuid16 : UInt
+
+pub let encoding_utf_8 : UInt
+
+pub let fax_service_class_id_uuid16 : UInt
+
+pub let ftp_protocol_uuid16 : UInt
+
+pub let generic_audio_service_class_id_uuid16 : UInt
+
+pub let generic_file_transfer_service_class_id_uuid16 : UInt
+
+pub let generic_networking_service_class_id_uuid16 : UInt
+
+pub let generic_telephony_service_class_id_uuid16 : UInt
+
+pub let gn_service_class_id_uuid16 : UInt
+
+pub let gnss_profile_id_uuid16 : UInt
+
+pub let gnss_server_service_class_id_uuid16 : UInt
+
+pub let handsfree_audio_gateway_service_class_id_uuid16 : UInt
+
+pub let handsfree_service_class_id_uuid16 : UInt
+
+pub let hardcopy_cable_replacement_profile_id_uuid16 : UInt
+
+pub let hardcopy_cable_replacement_service_class_id_uuid16 : UInt
+
+pub let hccc_protocol_uuid16 : UInt
+
+pub let hcdc_protocol_uuid16 : UInt
+
+pub let hci_connection_type_acl : UInt
+
+pub let hci_connection_type_le : UInt
+
+pub let hci_connection_type_sco : UInt
+
+pub let hci_connnection_type_acl : UInt
+
+pub let hci_connnection_type_sco : UInt
+
+pub let hcn_protocol_uuid16 : UInt
+
+pub let hcr_print_service_class_id_uuid16 : UInt
+
+pub let hcr_scan_service_class_id_uuid16 : UInt
+
+pub let headset_audio_gateway_service_class_id_uuid16 : UInt
+
+pub let headset_hs_service_class_id_uuid16 : UInt
+
+pub let headset_service_class_id_uuid16 : UInt
+
+pub let health_device_profile_id_uuid16 : UInt
+
+pub let health_device_profile_sink_service_class_id_uuid16 : UInt
+
+pub let health_device_profile_source_service_class_id_uuid16 : UInt
+
+pub let hid_protocol_uuid16 : UInt
+
+pub let http_protocol_uuid16 : UInt
+
+pub let human_interface_device_service_class_id_uuid16 : UInt
+
+pub let imaging_automatic_archive_service_class_id_uuid16 : UInt
+
+pub let imaging_reference_objects_service_class_id_uuid16 : UInt
+
+pub let imaging_responder_service_class_id_uuid16 : UInt
+
+pub let imaging_service_class_id_uuid16 : UInt
+
+pub let imaging_service_profile_id_uuid16 : UInt
+
+pub let intercom_service_class_id_uuid16 : UInt
+
+pub let io_caps_display_only : Int
+
+pub let io_caps_display_yes_no : Int
+
+pub let io_caps_keyboard_only : Int
+
+pub let io_caps_no_input_no_output : Int
+
+pub let io_caps_undefined : Int
+
+pub let ip_protocol_uuid16 : UInt
+
+pub let ir_mc_sync_command_service_class_id_uuid16 : UInt
+
+pub let ir_mc_sync_service_class_id_uuid16 : UInt
+
+pub let l2_cap_default_mtu : UInt
+
+pub let l2_cap_max_mtu : UInt
+
+pub let l2_cap_min_mtu : UInt
+
+pub let l2_cap_protocol_uuid16 : UInt
+
+pub let lan_access_using_ppp_service_class_id_uuid16 : UInt
+
+pub let lang_base_encoding_index : UInt
+
+pub let lang_base_language_index : UInt
+
+pub let lang_base_offset_index : UInt
+
+pub let lang_default_id : UInt
+
+pub let language_en_us : UInt
+
+pub let lap_giac_value : UInt
+
+pub let lap_liac_value : UInt
+
+pub let max_l2_cap_info_data_length : UInt
+
+pub let max_l2_cap_ping_data_length : UInt
+
+pub let max_uuids_in_query : UInt
+
+pub let message_access_profile_id_uuid16 : UInt
+
+pub let message_access_server_service_class_id_uuid16 : UInt
+
+pub let message_notification_server_service_class_id_uuid16 : UInt
+
+pub let mitm_protection_not_defined : Int
+
+pub let mitm_protection_not_required : Int
+
+pub let mitm_protection_not_required_bonding : Int
+
+pub let mitm_protection_not_required_general_bonding : Int
+
+pub let mitm_protection_required : Int
+
+pub let mitm_protection_required_bonding : Int
+
+pub let mitm_protection_required_general_bonding : Int
+
+pub let mps_profile_id_uuid16 : UInt
+
+pub let mps_service_class_id_uuid16 : UInt
+
+pub let nap_service_class_id_uuid16 : UInt
+
+pub let node_container_type_alternative : Int
+
+pub let node_container_type_sequence : Int
+
+pub let ns_bth : UInt
+
+pub let obex_file_transfer_service_class_id_uuid16 : UInt
+
+pub let obex_object_push_service_class_id_uuid16 : UInt
+
+pub let obex_protocol_uuid16 : UInt
+
+pub let object_push_format_any : UInt
+
+pub let object_push_format_ical_2_0 : UInt
+
+pub let object_push_format_vcal_1_0 : UInt
+
+pub let object_push_format_vcard_2_1 : UInt
+
+pub let object_push_format_vcard_3_0 : UInt
+
+pub let object_push_format_vmessage : UInt
+
+pub let object_push_format_vnote : UInt
+
+pub let panu_service_class_id_uuid16 : UInt
+
+pub let pf_bth : UInt
+
+pub let phonebook_access_pce_service_class_id_uuid16 : UInt
+
+pub let phonebook_access_profile_id_uuid16 : UInt
+
+pub let phonebook_access_pse_service_class_id_uuid16 : UInt
+
+pub let pn_p_information_service_class_id_uuid16 : UInt
+
+pub let printing_status_service_class_id_uuid16 : UInt
+
+pub let psm_3_dsp : UInt
+
+pub let psm_att : UInt
+
+pub let psm_avctp : UInt
+
+pub let psm_avctp_browse : UInt
+
+pub let psm_avdtp : UInt
+
+pub let psm_bnep : UInt
+
+pub let psm_hid_control : UInt
+
+pub let psm_hid_interrupt : UInt
+
+pub let psm_le_ipsp : UInt
+
+pub let psm_rfcomm : UInt
+
+pub let psm_sdp : UInt
+
+pub let psm_tcs_bin : UInt
+
+pub let psm_tcs_bin_cordless : UInt
+
+pub let psm_udi_c_plane : UInt
+
+pub let psm_upnp : UInt
+
+pub let public_browse_group_service_class_id_uuid16 : UInt
+
+pub let reference_printing_service_class_id_uuid16 : UInt
+
+pub let reflects_ui_service_class_id_uuid16 : UInt
+
+pub let rfcomm_cmd_msc : UInt
+
+pub let rfcomm_cmd_none : UInt
+
+pub let rfcomm_cmd_rls : UInt
+
+pub let rfcomm_cmd_rpn : UInt
+
+pub let rfcomm_cmd_rpn_request : UInt
+
+pub let rfcomm_cmd_rpn_response : UInt
+
+pub let rfcomm_max_mtu : UInt
+
+pub let rfcomm_min_mtu : UInt
+
+pub let rfcomm_protocol_uuid16 : UInt
+
+pub let rls_error : UInt
+
+pub let rls_framing : UInt
+
+pub let rls_overrun : UInt
+
+pub let rls_parity : UInt
+
+pub let rpn_baud_115200 : UInt
+
+pub let rpn_baud_19200 : UInt
+
+pub let rpn_baud_230400 : UInt
+
+pub let rpn_baud_2400 : UInt
+
+pub let rpn_baud_38400 : UInt
+
+pub let rpn_baud_4800 : UInt
+
+pub let rpn_baud_57600 : UInt
+
+pub let rpn_baud_7200 : UInt
+
+pub let rpn_baud_9600 : UInt
+
+pub let rpn_data_5 : UInt
+
+pub let rpn_data_6 : UInt
+
+pub let rpn_data_7 : UInt
+
+pub let rpn_data_8 : UInt
+
+pub let rpn_flow_rtc_in : UInt
+
+pub let rpn_flow_rtc_out : UInt
+
+pub let rpn_flow_rtr_in : UInt
+
+pub let rpn_flow_rtr_out : UInt
+
+pub let rpn_flow_x_in : UInt
+
+pub let rpn_flow_x_out : UInt
+
+pub let rpn_param_baud : UInt
+
+pub let rpn_param_data : UInt
+
+pub let rpn_param_p_type : UInt
+
+pub let rpn_param_parity : UInt
+
+pub let rpn_param_rtc_in : UInt
+
+pub let rpn_param_rtc_out : UInt
+
+pub let rpn_param_rtr_in : UInt
+
+pub let rpn_param_rtr_out : UInt
+
+pub let rpn_param_stop : UInt
+
+pub let rpn_param_x_in : UInt
+
+pub let rpn_param_x_out : UInt
+
+pub let rpn_param_xoff : UInt
+
+pub let rpn_param_xon : UInt
+
+pub let rpn_parity_even : UInt
+
+pub let rpn_parity_mark : UInt
+
+pub let rpn_parity_none : UInt
+
+pub let rpn_parity_odd : UInt
+
+pub let rpn_parity_space : UInt
+
+pub let rpn_stop_1 : UInt
+
+pub let rpn_stop_1_5 : UInt
+
+pub let sap_bit_offset : UInt
+
+pub let sdp_attrib_a2_dp_supported_features : UInt
+
+pub let sdp_attrib_additional_protocol_descriptor_list : UInt
+
+pub let sdp_attrib_availability : UInt
+
+pub let sdp_attrib_avrcp_supported_features : UInt
+
+pub let sdp_attrib_browse_group_id : UInt
+
+pub let sdp_attrib_browse_group_list : UInt
+
+pub let sdp_attrib_class_id_list : UInt
+
+pub let sdp_attrib_client_executable_url : UInt
+
+pub let sdp_attrib_cordless_external_network : UInt
+
+pub let sdp_attrib_di_primary_record : UInt
+
+pub let sdp_attrib_di_product_id : UInt
+
+pub let sdp_attrib_di_specification_id : UInt
+
+pub let sdp_attrib_di_vendor_id : UInt
+
+pub let sdp_attrib_di_vendor_id_source : UInt
+
+pub let sdp_attrib_di_version : UInt
+
+pub let sdp_attrib_documentation_url : UInt
+
+pub let sdp_attrib_fax_audio_feedback_support : UInt
+
+pub let sdp_attrib_fax_class_1_support : UInt
+
+pub let sdp_attrib_fax_class_2_0_support : UInt
+
+pub let sdp_attrib_fax_class_2_support : UInt
+
+pub let sdp_attrib_headset_remote_audio_volume_control : UInt
+
+pub let sdp_attrib_hfp_supported_features : UInt
+
+pub let sdp_attrib_hid_battery_power : UInt
+
+pub let sdp_attrib_hid_boot_device : UInt
+
+pub let sdp_attrib_hid_country_code : UInt
+
+pub let sdp_attrib_hid_descriptor_list : UInt
+
+pub let sdp_attrib_hid_device_release_number : UInt
+
+pub let sdp_attrib_hid_device_subclass : UInt
+
+pub let sdp_attrib_hid_lang_id_base_list : UInt
+
+pub let sdp_attrib_hid_normally_connectable : UInt
+
+pub let sdp_attrib_hid_parser_version : UInt
+
+pub let sdp_attrib_hid_profile_version : UInt
+
+pub let sdp_attrib_hid_reconnect_initiate : UInt
+
+pub let sdp_attrib_hid_remote_wake : UInt
+
+pub let sdp_attrib_hid_sdp_disable : UInt
+
+pub let sdp_attrib_hid_ssr_host_max_latency : UInt
+
+pub let sdp_attrib_hid_ssr_host_min_timeout : UInt
+
+pub let sdp_attrib_hid_supervision_timeout : UInt
+
+pub let sdp_attrib_hid_virtual_cable : UInt
+
+pub let sdp_attrib_icon_url : UInt
+
+pub let sdp_attrib_imaging_supported_capabilities : UInt
+
+pub let sdp_attrib_imaging_supported_features : UInt
+
+pub let sdp_attrib_imaging_supported_functions : UInt
+
+pub let sdp_attrib_imaging_total_data_capacity : UInt
+
+pub let sdp_attrib_info_time_to_live : UInt
+
+pub let sdp_attrib_lan_lpsubnet : UInt
+
+pub let sdp_attrib_lang_base_attrib_id_list : UInt
+
+pub let sdp_attrib_object_push_supported_formats_list : UInt
+
+pub let sdp_attrib_pan_home_page_url : UInt
+
+pub let sdp_attrib_pan_max_net_access_rate : UInt
+
+pub let sdp_attrib_pan_net_access_type : UInt
+
+pub let sdp_attrib_pan_network_address : UInt
+
+pub let sdp_attrib_pan_security_description : UInt
+
+pub let sdp_attrib_pan_wap_gateway : UInt
+
+pub let sdp_attrib_pan_wap_stack_type : UInt
+
+pub let sdp_attrib_profile_descriptor_list : UInt
+
+pub let sdp_attrib_profile_specific : UInt
+
+pub let sdp_attrib_protocol_descriptor_list : UInt
+
+pub let sdp_attrib_record_handle : UInt
+
+pub let sdp_attrib_record_state : UInt
+
+pub let sdp_attrib_sdp_database_state : UInt
+
+pub let sdp_attrib_sdp_version_number_list : UInt
+
+pub let sdp_attrib_service_id : UInt
+
+pub let sdp_attrib_service_version : UInt
+
+pub let sdp_attrib_synch_supported_data_stores_list : UInt
+
+pub let sdp_connect_allow_pin : UInt
+
+pub let sdp_connect_cache : UInt
+
+pub let sdp_default_inquiry_max_responses : UInt
+
+pub let sdp_default_inquiry_seconds : UInt
+
+pub let sdp_error_insufficient_resources : UInt
+
+pub let sdp_error_invalid_continuation_state : UInt
+
+pub let sdp_error_invalid_pdu_size : UInt
+
+pub let sdp_error_invalid_record_handle : UInt
+
+pub let sdp_error_invalid_request_syntax : UInt
+
+pub let sdp_error_invalid_sdp_version : UInt
+
+pub let sdp_max_inquiry_seconds : UInt
+
+pub let sdp_protocol_uuid16 : UInt
+
+pub let sdp_request_to_default : UInt
+
+pub let sdp_request_to_max : UInt
+
+pub let sdp_request_to_min : UInt
+
+pub let sdp_search_no_format_check : UInt
+
+pub let sdp_search_no_parse_check : UInt
+
+pub let sdp_service_attribute_request : UInt
+
+pub let sdp_service_search_attribute_request : UInt
+
+pub let sdp_service_search_request : UInt
+
+pub let sdp_st_int128 : Int
+
+pub let sdp_st_int16 : Int
+
+pub let sdp_st_int32 : Int
+
+pub let sdp_st_int64 : Int
+
+pub let sdp_st_int8 : Int
+
+pub let sdp_st_none : Int
+
+pub let sdp_st_uint128 : Int
+
+pub let sdp_st_uint16 : Int
+
+pub let sdp_st_uint32 : Int
+
+pub let sdp_st_uint64 : Int
+
+pub let sdp_st_uint8 : Int
+
+pub let sdp_st_uuid128 : Int
+
+pub let sdp_st_uuid16 : Int
+
+pub let sdp_st_uuid32 : Int
+
+pub let sdp_type_alternative : Int
+
+pub let sdp_type_boolean : Int
+
+pub let sdp_type_container : Int
+
+pub let sdp_type_int : Int
+
+pub let sdp_type_nil : Int
+
+pub let sdp_type_sequence : Int
+
+pub let sdp_type_string : Int
+
+pub let sdp_type_uint : Int
+
+pub let sdp_type_url : Int
+
+pub let sdp_type_uuid : Int
+
+pub let serial_port_service_class_id_uuid16 : UInt
+
+pub let server_characteristic_configuration : Int
+
+pub let service_discovery_server_service_class_id_uuid16 : UInt
+
+pub let service_option_do_not_publish : UInt
+
+pub let service_option_do_not_publish_eir : UInt
+
+pub let service_option_no_public_browse : UInt
+
+pub let service_security_authenticate : UInt
+
+pub let service_security_authorize : UInt
+
+pub let service_security_disabled : UInt
+
+pub let service_security_encrypt_optional : UInt
+
+pub let service_security_encrypt_required : UInt
+
+pub let service_security_no_ask : UInt
+
+pub let service_security_none : UInt
+
+pub let service_security_use_defaults : UInt
+
+pub let sim_access_service_class_id_uuid16 : UInt
+
+pub let so_bth_authenticate : UInt
+
+pub let so_bth_encrypt : UInt
+
+pub let so_bth_mtu : UInt
+
+pub let so_bth_mtu_max : UInt
+
+pub let so_bth_mtu_min : UInt
+
+pub let sol_l2_cap : UInt
+
+pub let sol_rfcomm : UInt
+
+pub let sol_sdp : UInt
+
+pub let str_addr_fmt : String
+
+pub let str_addr_fmta : String
+
+pub let str_addr_fmtw : String
+
+pub let str_addr_short_fmt : String
+
+pub let str_addr_short_fmta : String
+
+pub let str_addr_short_fmtw : String
+
+pub let str_usbhci_class_hardwareid : String
+
+pub let str_usbhci_class_hardwareida : String
+
+pub let str_usbhci_class_hardwareidw : String
+
+pub let string_description_offset : UInt
+
+pub let string_name_offset : UInt
+
+pub let string_provider_name_offset : UInt
+
+pub let synch_data_store_calendar : UInt
+
+pub let synch_data_store_messages : UInt
+
+pub let synch_data_store_notes : UInt
+
+pub let synch_data_store_phonebook : UInt
+
+pub let tcp_protocol_uuid16 : UInt
+
+pub let tcsat_protocol_uuid16 : UInt
+
+pub let tcsbin_protocol_uuid16 : UInt
+
+pub let three_dimensional_display_service_class_id_uuid16 : UInt
+
+pub let three_dimensional_glasses_service_class_id_uuid16 : UInt
+
+pub let three_dimensional_synchronization_profile_id_uuid16 : UInt
+
+pub let u_pnp_ip_service_class_id_uuid16 : UInt
+
+pub let u_pnp_service_class_id_uuid16 : UInt
+
+pub let udi_c_plane_protocol_uuid16 : UInt
+
+pub let udimt_service_class_id_uuid16 : UInt
+
+pub let udimt_service_class_uuid16 : UInt
+
+pub let udita_service_class_id_uuid16 : UInt
+
+pub let udita_service_class_uuid16 : UInt
+
+pub let udp_protocol_uuid16 : UInt
+
+pub let upnp_protocol_uuid16 : UInt
+
+pub let video_conferencing_gw_service_class_id_uuid16 : UInt
+
+pub let video_conferencing_gw_service_class_uuid16 : UInt
+
+pub let video_conferencing_service_class_id_uuid16 : UInt
+
+pub let video_distribution_profile_id_uuid16 : UInt
+
+pub let video_sink_service_class_id_uuid16 : UInt
+
+pub let video_source_service_class_id_uuid16 : UInt
+
+pub let wap_client_service_class_id_uuid16 : UInt
+
+pub let wap_service_class_id_uuid16 : UInt
+
+pub let wsp_protocol_uuid16 : UInt
+
+// Errors
+
+// Types and methods
+
+// Type aliases
+pub using @94b0efd94649899e {type AUTHENTICATIONREQUIREMENTS_c5bc674173d2 as AUTHENTICATIONREQUIREMENTS}
+
+pub using @94b0efd94649899e {type AlternativeEStruct_9522055d714c as AlternativeEStruct}
+
+pub using @94b0efd94649899e {type AnonymousEUnion_0db747be988f as AnonymousEUnion_0db747be98}
+
+pub using @94b0efd94649899e {type AnonymousEUnion_23f8c54c9bed as AnonymousEUnion_23f8c54c9b}
+
+pub using @94b0efd94649899e {type AnonymousEUnion_375a31c14689 as AnonymousEUnion_375a31c146}
+
+pub using @94b0efd94649899e {type AnonymousEUnion_792031c78164 as AnonymousEUnion_792031c781}
+
+pub using @94b0efd94649899e {type AnonymousEUnion_e9334746581d as AnonymousEUnion_e933474658}
+
+pub using @94b0efd94649899e {type BLUETOOTHADDRESS_d6ed6bc6661b as BLUETOOTHADDRESS}
+
+pub using @94b0efd94649899e {type BLUETOOTHAUTHENTICATERESPONSE_d2463d798b01 as BLUETOOTHAUTHENTICATERESPONSE}
+
+pub using @94b0efd94649899e {type BLUETOOTHAUTHENTICATIONCALLBACKPARAMS_f4429147f8f7 as BLUETOOTHAUTHENTICATIONCALLBACKPARAMS}
+
+pub using @94b0efd94649899e {type BLUETOOTHAUTHENTICATIONMETHOD_e291b250f7b2 as BLUETOOTHAUTHENTICATIONMETHOD}
+
+pub using @94b0efd94649899e {type BLUETOOTHAUTHENTICATIONREQUIREMENTS_7ba4b7c62472 as BLUETOOTHAUTHENTICATIONREQUIREMENTS}
+
+pub using @94b0efd94649899e {type BLUETOOTHCODPAIRS_ad2eaf7a813b as BLUETOOTHCODPAIRS}
+
+pub using @94b0efd94649899e {type BLUETOOTHDEVICEINFO_b8e3a14decc1 as BLUETOOTHDEVICEINFO}
+
+pub using @94b0efd94649899e {type BLUETOOTHDEVICESEARCHPARAMS_5bae49584be8 as BLUETOOTHDEVICESEARCHPARAMS}
+
+pub using @94b0efd94649899e {type BLUETOOTHFINDRADIOPARAMS_5868eaec0725 as BLUETOOTHFINDRADIOPARAMS}
+
+pub using @94b0efd94649899e {type BLUETOOTHGATTVALUECHANGEDEVENT_7c105ca79e14 as BLUETOOTHGATTVALUECHANGEDEVENT}
+
+pub using @94b0efd94649899e {type BLUETOOTHGATTVALUECHANGEDEVENTREGISTRATION_46ae44ab8678 as BLUETOOTHGATTVALUECHANGEDEVENTREGISTRATION}
+
+pub using @94b0efd94649899e {type BLUETOOTHIOCAPABILITY_78f198ba7df3 as BLUETOOTHIOCAPABILITY}
+
+pub using @94b0efd94649899e {type BLUETOOTHLOCALSERVICEINFO_898ed20dc141 as BLUETOOTHLOCALSERVICEINFO}
+
+pub using @94b0efd94649899e {type BLUETOOTHNUMERICCOMPARISONINFO_f16a4978871e as BLUETOOTHNUMERICCOMPARISONINFO}
+
+pub using @94b0efd94649899e {type BLUETOOTHOOBDATAINFO_ab110b7c9839 as BLUETOOTHOOBDATAINFO}
+
+pub using @94b0efd94649899e {type BLUETOOTHPASSKEYINFO_7f055dd26e0d as BLUETOOTHPASSKEYINFO}
+
+pub using @94b0efd94649899e {type BLUETOOTHPININFO_83cd05f98407 as BLUETOOTHPININFO}
+
+pub using @94b0efd94649899e {type BLUETOOTHRADIOINFO_3cce5d6bd9a0 as BLUETOOTHRADIOINFO}
+
+pub using @94b0efd94649899e {type BLUETOOTHSELECTDEVICEPARAMS_58efc9ebf4e4 as BLUETOOTHSELECTDEVICEPARAMS}
+
+pub using @94b0efd94649899e {type BTHDEVICEINFO_d7ab085c943a as BTHDEVICEINFO}
+
+pub using @94b0efd94649899e {type BTHHCIEVENTINFO_a10a9cb2af9a as BTHHCIEVENTINFO}
+
+pub using @94b0efd94649899e {type BTHINFOREQ_d098c9bf3c81 as BTHINFOREQ}
+
+pub using @94b0efd94649899e {type BTHINFORSP_d2ac3a22c9a0 as BTHINFORSP}
+
+pub using @94b0efd94649899e {type BTHL2CAPEVENTINFO_d9072c413728 as BTHL2CAPEVENTINFO}
+
+pub using @94b0efd94649899e {type BTHLEGATTCHARACTERISTIC_274fd9e3630d as BTHLEGATTCHARACTERISTIC}
+
+pub using @94b0efd94649899e {type BTHLEGATTCHARACTERISTICVALUE_dce04f16e1da as BTHLEGATTCHARACTERISTICVALUE}
+
+pub using @94b0efd94649899e {type BTHLEGATTDESCRIPTOR_563c6da68dba as BTHLEGATTDESCRIPTOR}
+
+pub using @94b0efd94649899e {type BTHLEGATTDESCRIPTORTYPE_c038aeb93c6b as BTHLEGATTDESCRIPTORTYPE}
+
+pub using @94b0efd94649899e {type BTHLEGATTDESCRIPTORVALUE_566294258e32 as BTHLEGATTDESCRIPTORVALUE}
+
+pub using @94b0efd94649899e {type BTHLEGATTEVENTTYPE_708b4fa27b96 as BTHLEGATTEVENTTYPE}
+
+pub using @94b0efd94649899e {type BTHLEGATTSERVICE_8bc8d3932f64 as BTHLEGATTSERVICE}
+
+pub using @94b0efd94649899e {type BTHLEUUID_29813ad68c89 as BTHLEUUID}
+
+pub using @94b0efd94649899e {type BTHPINGREQ_9c2ffb7971ef as BTHPINGREQ}
+
+pub using @94b0efd94649899e {type BTHPINGRSP_8bc720d65ac0 as BTHPINGRSP}
+
+pub using @94b0efd94649899e {type BTHQUERYDEVICE_b64c55ada0bd as BTHQUERYDEVICE}
+
+pub using @94b0efd94649899e {type BTHQUERYSERVICE_42aed9386cf7 as BTHQUERYSERVICE}
+
+pub using @94b0efd94649899e {type BTHRADIOINRANGE_bba2ba3ae12f as BTHRADIOINRANGE}
+
+pub using @94b0efd94649899e {type BTHSETSERVICE_be1c70a4181c as BTHSETSERVICE}
+
+pub using @94b0efd94649899e {type CharacteristicExtendedPropertiesEStruct_faa82a0f0e06 as CharacteristicExtendedPropertiesEStruct}
+
+pub using @94b0efd94649899e {type CharacteristicFormatEStruct_79ced4532bbd as CharacteristicFormatEStruct}
+
+pub using @94b0efd94649899e {type ClientCharacteristicConfigurationEStruct_7a103fb78453 as ClientCharacteristicConfigurationEStruct}
+
+pub using @94b0efd94649899e {type DataEUnion_6c18271c1250 as DataEUnion_6c18271c12}
+
+pub using @94b0efd94649899e {type DataEUnion_b20ae76c2af3 as DataEUnion_b20ae76c2a}
+
+pub using @94b0efd94649899e {type HANDLESDPTYPE_ddf909cd6e70 as HANDLESDPTYPE}
+
+pub using @94b0efd94649899e {type HBLUETOOTHDEVICEFIND_009b9d59d482 as HBLUETOOTHDEVICEFIND}
+
+pub using @94b0efd94649899e {type HBLUETOOTHRADIOFIND_cbea12a89a54 as HBLUETOOTHRADIOFIND}
+
+pub using @94b0efd94649899e {type IOCAPABILITY_01369e69b65a as IOCAPABILITY}
+
+pub using @94b0efd94649899e {type NodeContainerType_02a5d9fff3af as NodeContainerType}
+
+pub using @94b0efd94649899e {type PFNAUTHENTICATIONCALLBACK_fc3f74f17ea2 as PFNAUTHENTICATIONCALLBACK}
+
+pub using @94b0efd94649899e {type PFNAUTHENTICATIONCALLBACKEX_3016aeb69896 as PFNAUTHENTICATIONCALLBACKEX}
+
+pub using @94b0efd94649899e {type PFNBLUETOOTHENUMATTRIBUTESCALLBACK_8200656bac92 as PFNBLUETOOTHENUMATTRIBUTESCALLBACK}
+
+pub using @94b0efd94649899e {type PFNBLUETOOTHGATTEVENTCALLBACK_18829a8d7792 as PFNBLUETOOTHGATTEVENTCALLBACK}
+
+pub using @94b0efd94649899e {type PFNDEVICECALLBACK_2ecfa390fedc as PFNDEVICECALLBACK}
+
+pub using @94b0efd94649899e {type RFCOMMCOMMAND_1ff45659cdea as RFCOMMCOMMAND}
+
+pub using @94b0efd94649899e {type RFCOMMMSCDATA_944e18cf5d32 as RFCOMMMSCDATA}
+
+pub using @94b0efd94649899e {type RFCOMMRLSDATA_b30b75500430 as RFCOMMRLSDATA}
+
+pub using @94b0efd94649899e {type RFCOMMRPNDATA_2cf384e84181 as RFCOMMRPNDATA}
+
+pub using @94b0efd94649899e {type SDPELEMENTDATA_b35bbebefc61 as SDPELEMENTDATA}
+
+pub using @94b0efd94649899e {type SDPLARGEINTEGER16_275d7ab76d06 as SDPLARGEINTEGER16}
+
+pub using @94b0efd94649899e {type SDPSPECIFICTYPE_64494be4d34a as SDPSPECIFICTYPE}
+
+pub using @94b0efd94649899e {type SDPSTRINGTYPEDATA_ea4c2cf3464b as SDPSTRINGTYPEDATA}
+
+pub using @94b0efd94649899e {type SDPTYPE_446d6d1b8cce as SDPTYPE}
+
+pub using @94b0efd94649899e {type SDPULARGEINTEGER16_bf655d1c0779 as SDPULARGEINTEGER16}
+
+pub using @94b0efd94649899e {type SOCKADDRBTH_c25fa4aa83bd as SOCKADDRBTH}
+
+pub using @94b0efd94649899e {type SdpAttributeRange_ff9bf8426697 as SdpAttributeRange}
+
+pub using @94b0efd94649899e {type SdpQueryUuid_42fc146a6b34 as SdpQueryUuid}
+
+pub using @94b0efd94649899e {type SdpQueryUuidUnion_1ede540cef34 as SdpQueryUuidUnion}
+
+pub using @94b0efd94649899e {type SequenceEStruct_bd13085d363f as SequenceEStruct}
+
+pub using @94b0efd94649899e {type ServerCharacteristicConfigurationEStruct_4d3ef8eadeac as ServerCharacteristicConfigurationEStruct}
+
+pub using @94b0efd94649899e {type StringEStruct_2a698da01d4c as StringEStruct}
+
+pub using @94b0efd94649899e {type UrlEStruct_b49268dce764 as UrlEStruct}
+
+pub using @94b0efd94649899e {type ValueEUnion_9a2953286e50 as ValueEUnion}
+
+// Traits
+

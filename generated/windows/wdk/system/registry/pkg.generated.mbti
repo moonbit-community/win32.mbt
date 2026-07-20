@@ -1,0 +1,188 @@
+// Generated using `moon info`, DON'T EDIT IT
+package "moonbit-community/win32-bindings/windows/wdk/system/registry"
+
+import {
+  "moonbit-community/win32-bindings/runtime/core",
+  "moonbit-community/win32-bindings/scc/cdb6c392abff9935",
+}
+
+// Values
+pub let key_basic_information : Int
+
+pub let key_cached_information : Int
+
+pub let key_control_flags_information : Int
+
+pub let key_flags_information : Int
+
+pub let key_full_information : Int
+
+pub let key_handle_tags_information : Int
+
+pub let key_layer_information : Int
+
+pub let key_name_information : Int
+
+pub let key_node_information : Int
+
+pub let key_set_debug_information : Int
+
+pub let key_set_handle_tags_information : Int
+
+pub let key_set_layer_information : Int
+
+pub let key_set_virtualization_information : Int
+
+pub let key_trust_information : Int
+
+pub let key_value_basic_information : Int
+
+pub let key_value_full_information : Int
+
+pub let key_value_full_information_align64 : Int
+
+pub let key_value_layer_information : Int
+
+pub let key_value_partial_information : Int
+
+pub let key_value_partial_information_align64 : Int
+
+pub let key_virtualization_information : Int
+
+pub let key_wow64_flags_information : Int
+
+pub let key_write_time_information : Int
+
+pub let max_key_info_class : Int
+
+pub let max_key_set_info_class : Int
+
+pub let max_key_value_info_class : Int
+
+pub fn nt_commit_registry_transaction_raw(@core.RawAddress, UInt) -> Int
+
+pub fn nt_create_key_raw(@core.RawAddress, UInt, @core.RawAddress, UInt, @core.RawAddress, UInt, @core.RawAddress) -> Int
+
+pub fn nt_create_key_transacted_raw(@core.RawAddress, UInt, @core.RawAddress, UInt, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn nt_create_registry_transaction_raw(@core.RawAddress, UInt, @core.RawAddress, UInt) -> Int
+
+pub fn nt_delete_key_raw(@core.RawAddress) -> Int
+
+pub fn nt_delete_value_key_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn nt_enumerate_key_raw(@core.RawAddress, UInt, Int, @core.RawAddress, UInt, @core.RawAddress) -> Int
+
+pub fn nt_enumerate_value_key_raw(@core.RawAddress, UInt, Int, @core.RawAddress, UInt, @core.RawAddress) -> Int
+
+pub fn nt_flush_key_raw(@core.RawAddress) -> Int
+
+pub fn nt_notify_change_multiple_keys_raw(@core.RawAddress, UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, UInt, UInt, @core.RawAddress, UInt, UInt) -> Int
+
+pub fn nt_open_key_ex_raw(@core.RawAddress, UInt, @core.RawAddress, UInt) -> Int
+
+pub fn nt_open_key_raw(@core.RawAddress, UInt, @core.RawAddress) -> Int
+
+pub fn nt_open_key_transacted_ex_raw(@core.RawAddress, UInt, @core.RawAddress, UInt, @core.RawAddress) -> Int
+
+pub fn nt_open_key_transacted_raw(@core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn nt_open_registry_transaction_raw(@core.RawAddress, UInt, @core.RawAddress) -> Int
+
+pub fn nt_query_key_raw(@core.RawAddress, Int, @core.RawAddress, UInt, @core.RawAddress) -> Int
+
+pub fn nt_query_multiple_value_key_raw(@core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn nt_query_value_key_raw(@core.RawAddress, @core.RawAddress, Int, @core.RawAddress, UInt, @core.RawAddress) -> Int
+
+pub fn nt_rename_key_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn nt_restore_key_raw(@core.RawAddress, @core.RawAddress, UInt) -> Int
+
+pub fn nt_rollback_registry_transaction_raw(@core.RawAddress, UInt) -> Int
+
+pub fn nt_save_key_ex_raw(@core.RawAddress, @core.RawAddress, UInt) -> Int
+
+pub fn nt_save_key_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn nt_set_information_key_raw(@core.RawAddress, Int, @core.RawAddress, UInt) -> Int
+
+pub fn nt_set_value_key_raw(@core.RawAddress, @core.RawAddress, UInt, UInt, @core.RawAddress, UInt) -> Int
+
+pub fn zw_commit_registry_transaction_raw(@core.RawAddress, UInt) -> Int
+
+pub fn zw_create_key_raw(@core.RawAddress, UInt, @core.RawAddress, UInt, @core.RawAddress, UInt, @core.RawAddress) -> Int
+
+pub fn zw_create_key_transacted_raw(@core.RawAddress, UInt, @core.RawAddress, UInt, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn zw_create_registry_transaction_raw(@core.RawAddress, UInt, @core.RawAddress, UInt) -> Int
+
+pub fn zw_delete_key_raw(@core.RawAddress) -> Int
+
+pub fn zw_delete_value_key_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn zw_enumerate_key_raw(@core.RawAddress, UInt, Int, @core.RawAddress, UInt, @core.RawAddress) -> Int
+
+pub fn zw_enumerate_value_key_raw(@core.RawAddress, UInt, Int, @core.RawAddress, UInt, @core.RawAddress) -> Int
+
+pub fn zw_flush_key_raw(@core.RawAddress) -> Int
+
+pub fn zw_notify_change_multiple_keys_raw(@core.RawAddress, UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, UInt, UInt, @core.RawAddress, UInt, UInt) -> Int
+
+pub fn zw_open_key_ex_raw(@core.RawAddress, UInt, @core.RawAddress, UInt) -> Int
+
+pub fn zw_open_key_raw(@core.RawAddress, UInt, @core.RawAddress) -> Int
+
+pub fn zw_open_key_transacted_ex_raw(@core.RawAddress, UInt, @core.RawAddress, UInt, @core.RawAddress) -> Int
+
+pub fn zw_open_key_transacted_raw(@core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn zw_open_registry_transaction_raw(@core.RawAddress, UInt, @core.RawAddress) -> Int
+
+pub fn zw_query_key_raw(@core.RawAddress, Int, @core.RawAddress, UInt, @core.RawAddress) -> Int
+
+pub fn zw_query_multiple_value_key_raw(@core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn zw_query_value_key_raw(@core.RawAddress, @core.RawAddress, Int, @core.RawAddress, UInt, @core.RawAddress) -> Int
+
+pub fn zw_rename_key_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn zw_restore_key_raw(@core.RawAddress, @core.RawAddress, UInt) -> Int
+
+pub fn zw_rollback_registry_transaction_raw(@core.RawAddress, UInt) -> Int
+
+pub fn zw_save_key_ex_raw(@core.RawAddress, @core.RawAddress, UInt) -> Int
+
+pub fn zw_save_key_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn zw_set_information_key_raw(@core.RawAddress, Int, @core.RawAddress, UInt) -> Int
+
+pub fn zw_set_value_key_raw(@core.RawAddress, @core.RawAddress, UInt, UInt, @core.RawAddress, UInt) -> Int
+
+// Errors
+
+// Types and methods
+
+// Type aliases
+pub using @cdb6c392abff9935 {type KEYINFORMATIONCLASS_6c4fcaa67bef as KEYINFORMATIONCLASS}
+
+pub using @cdb6c392abff9935 {type KEYSETINFORMATIONCLASS_b9014f6a52b4 as KEYSETINFORMATIONCLASS}
+
+pub using @cdb6c392abff9935 {type KEYVALUEENTRY_325799650978 as KEYVALUEENTRY}
+
+pub using @cdb6c392abff9935 {type KEYVALUEINFORMATIONCLASS_ca581491f265 as KEYVALUEINFORMATIONCLASS}
+
+pub using @cdb6c392abff9935 {type REGENUMERATEKEYINFORMATION_697996cfc2b1 as REGENUMERATEKEYINFORMATION}
+
+pub using @cdb6c392abff9935 {type REGENUMERATEVALUEKEYINFORMATION_4b2bd68e09db as REGENUMERATEVALUEKEYINFORMATION}
+
+pub using @cdb6c392abff9935 {type REGQUERYKEYINFORMATION_753a18c58336 as REGQUERYKEYINFORMATION}
+
+pub using @cdb6c392abff9935 {type REGQUERYMULTIPLEVALUEKEYINFORMATION_881a74524f56 as REGQUERYMULTIPLEVALUEKEYINFORMATION}
+
+pub using @cdb6c392abff9935 {type REGQUERYVALUEKEYINFORMATION_b15475750716 as REGQUERYVALUEKEYINFORMATION}
+
+pub using @cdb6c392abff9935 {type REGSETINFORMATIONKEYINFORMATION_c2347837a1a4 as REGSETINFORMATIONKEYINFORMATION}
+
+// Traits
+

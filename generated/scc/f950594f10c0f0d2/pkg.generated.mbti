@@ -1,0 +1,874 @@
+// Generated using `moon info`, DON'T EDIT IT
+package "moonbit-community/win32-bindings/scc/f950594f10c0f0d2"
+
+import {
+  "moonbit-community/win32-bindings/runtime/core",
+  "moonbitlang/core/debug",
+}
+
+// Values
+pub let anonymous_e_union_64a8e4f07401_alignment : Int
+
+pub let anonymous_e_union_64a8e4f07401_size : Int
+
+pub let anonymous_e_union_de0f69a65807_alignment : Int
+
+pub let anonymous_e_union_de0f69a65807_size : Int
+
+pub let anonymous_e_union_fc3a3d4d103a_alignment : Int
+
+pub let anonymous_e_union_fc3a3d4d103a_size : Int
+
+pub let application_selected_622141cce594 : Int
+
+pub let connection_oriented_5f09003733a4 : Int
+
+pub let connectionless_aedf12552850 : Int
+
+pub let default_snep_server_b18d768cd67f : Int
+
+pub let device_host_17df42bdc956 : Int
+
+pub let discovery_34ccb47e91e1 : Int
+
+pub let emulation_disabled_76ff0323c86a : Int
+
+pub let emulation_enabled_c291f0bea3d1 : Int
+
+pub let emulation_off_380a883721d2 : Int
+
+pub let emulation_on_power_dependent_95a68997b558 : Int
+
+pub let emulation_on_power_independent_4b659194aa02 : Int
+
+pub let emulation_stealth_listen_c1ae221ae4ea : Int
+
+pub let evt_transaction_parameter_max_len_e820ae72fd63 : UInt
+
+pub let evt_transaction_tag_aid_a448413c255f : UInt
+
+pub let evt_transaction_tag_parameters_6160e6165f32 : UInt
+
+pub let extended_snep_server_142abb1e92d1 : Int
+
+pub let external_0140090cca0e : Int
+
+pub let external_field_enter_6302b9e464af : Int
+
+pub let external_field_exit_99117bda787f : Int
+
+pub let external_reader_arrival_d28c7cec36f3 : Int
+
+pub let external_reader_departure_f904ce561e6f : Int
+
+pub let hce_activated_14c52132bdf3 : Int
+
+pub let hce_deactivated_9c9f5d687ca1 : Int
+
+pub let idle_mode_fdfdeceb8d56 : Int
+
+pub let integrated_f25be884a750 : Int
+
+pub let ioctl_nfcdta_config_p2_p_param_cf0d3b8fb5be : UInt
+
+pub let ioctl_nfcdta_config_rf_discovery_744a114ae346 : UInt
+
+pub let ioctl_nfcdta_llcp_activate_bb78f73b215e : UInt
+
+pub let ioctl_nfcdta_llcp_config_0458e793e003 : UInt
+
+pub let ioctl_nfcdta_llcp_deactivate_ce826face143 : UInt
+
+pub let ioctl_nfcdta_llcp_discover_services_9ece7ccf2868 : UInt
+
+pub let ioctl_nfcdta_llcp_get_next_link_status_905073e77578 : UInt
+
+pub let ioctl_nfcdta_llcp_link_status_check_19e6131c7e39 : UInt
+
+pub let ioctl_nfcdta_llcp_socket_accept_e52a7f5f05ea : UInt
+
+pub let ioctl_nfcdta_llcp_socket_bind_6d6d4d9305cd : UInt
+
+pub let ioctl_nfcdta_llcp_socket_close_e62460b95551 : UInt
+
+pub let ioctl_nfcdta_llcp_socket_connect_ae2d65dd10c2 : UInt
+
+pub let ioctl_nfcdta_llcp_socket_create_b54ec9e125c5 : UInt
+
+pub let ioctl_nfcdta_llcp_socket_disconnect_eb4eddd950c6 : UInt
+
+pub let ioctl_nfcdta_llcp_socket_get_next_error_8106b767b4c1 : UInt
+
+pub let ioctl_nfcdta_llcp_socket_listen_e66c1867dcd7 : UInt
+
+pub let ioctl_nfcdta_llcp_socket_recv_9d3d6d039604 : UInt
+
+pub let ioctl_nfcdta_llcp_socket_recv_from_16c1bf764b28 : UInt
+
+pub let ioctl_nfcdta_llcp_socket_send_e01db1be64a6 : UInt
+
+pub let ioctl_nfcdta_llcp_socket_sned_to_48e553d4bd30 : UInt
+
+pub let ioctl_nfcdta_remote_dev_check_presence_bedc3fa09d4e : UInt
+
+pub let ioctl_nfcdta_remote_dev_connect_d28687dd0621 : UInt
+
+pub let ioctl_nfcdta_remote_dev_disconnect_a9a6db05dffd : UInt
+
+pub let ioctl_nfcdta_remote_dev_get_next_d9f4718a9001 : UInt
+
+pub let ioctl_nfcdta_remote_dev_ndef_check_9bb8e5fbe2b5 : UInt
+
+pub let ioctl_nfcdta_remote_dev_ndef_convert_read_only_4d6fe20c29fa : UInt
+
+pub let ioctl_nfcdta_remote_dev_ndef_read_65f32aba51a4 : UInt
+
+pub let ioctl_nfcdta_remote_dev_ndef_write_577ff5269378 : UInt
+
+pub let ioctl_nfcdta_remote_dev_recv_df92381b8cde : UInt
+
+pub let ioctl_nfcdta_remote_dev_send_d12e40f2be42 : UInt
+
+pub let ioctl_nfcdta_remote_dev_transceive_9645b5653f16 : UInt
+
+pub let ioctl_nfcdta_se_enumerate_a8945a1da6fa : UInt
+
+pub let ioctl_nfcdta_se_get_next_event_b5185d15dbeb : UInt
+
+pub let ioctl_nfcdta_se_set_emulation_mode_61b2fed0d8d0 : UInt
+
+pub let ioctl_nfcdta_se_set_routing_table_bfa03669e2ef : UInt
+
+pub let ioctl_nfcdta_set_rf_config_0acaa287d523 : UInt
+
+pub let ioctl_nfcdta_snep_client_get_fdb0e1a7a997 : UInt
+
+pub let ioctl_nfcdta_snep_client_put_c0fc1b31b670 : UInt
+
+pub let ioctl_nfcdta_snep_deinit_client_df0568a532ce : UInt
+
+pub let ioctl_nfcdta_snep_deinit_server_ea365c931807 : UInt
+
+pub let ioctl_nfcdta_snep_init_client_29ed7c98df30 : UInt
+
+pub let ioctl_nfcdta_snep_init_server_19c16b2b1458 : UInt
+
+pub let ioctl_nfcdta_snep_server_accept_36f20bc9d79b : UInt
+
+pub let ioctl_nfcdta_snep_server_get_next_connection_85119563a661 : UInt
+
+pub let ioctl_nfcdta_snep_server_get_next_request_25f9af574b85 : UInt
+
+pub let ioctl_nfcdta_snep_server_send_response_2073b3794506 : UInt
+
+pub let ioctl_nfcrm_query_radio_state_6c734ca990dd : UInt
+
+pub let ioctl_nfcrm_set_radio_state_65b8d8ff180d : UInt
+
+pub let ioctl_nfcse_enum_endpoints_28341a578f77 : UInt
+
+pub let ioctl_nfcse_get_next_event_44cfd9575f99 : UInt
+
+pub let ioctl_nfcse_get_nfcc_capabilities_65f8a2b509c4 : UInt
+
+pub let ioctl_nfcse_get_routing_table_9d83bf66a13a : UInt
+
+pub let ioctl_nfcse_hce_remote_recv_264d0fb060d1 : UInt
+
+pub let ioctl_nfcse_hce_remote_send_b2c1c1a6e66c : UInt
+
+pub let ioctl_nfcse_set_card_emulation_mode_3ae2a614768c : UInt
+
+pub let ioctl_nfcse_set_power_mode_d92e33359763 : UInt
+
+pub let ioctl_nfcse_set_routing_table_7df5a2b4c503 : UInt
+
+pub let ioctl_nfcse_subscribe_for_event_49d223ba8a04 : UInt
+
+pub let ioctl_nfcserm_query_radio_state_7d70c489887c : UInt
+
+pub let ioctl_nfcserm_set_radio_state_2fac7354a4b3 : UInt
+
+pub let iso_7816_maximum_aid_length_b9e483d152e7 : UInt
+
+pub let iso_7816_minimum_aid_length_830adc54aa20 : UInt
+
+pub let link_activated_c12e0fa1d056 : Int
+
+pub let link_deactivated_5a49623d2de2 : Int
+
+pub let max_atr_length_b1a020c9544f : UInt
+
+pub let max_llcp_service_name_size_433788ca6015 : UInt
+
+pub let max_snep_server_name_size_0e2b41df1564 : UInt
+
+pub let max_uid_size_3d8f41eecdf1 : UInt
+
+pub let nfc_connect_by_sap_d6c0fb691471 : Int
+
+pub let nfc_connect_by_uri_49b9fed53d91 : Int
+
+pub let nfc_dep_default_26a75d2306de : Int
+
+pub let nfc_dep_listen_74884f71ecfd : Int
+
+pub let nfc_dep_poll_119b73e6dd87 : Int
+
+pub let nfc_ip1_initiator_870fa914919b : Int
+
+pub let nfc_ip1_target_2bb04534b484 : Int
+
+pub let nfc_llcp_error_busy_condition_f45510f5dce3 : Int
+
+pub let nfc_llcp_error_disconnected_4ffae9615c45 : Int
+
+pub let nfc_llcp_error_frame_rejected_9e5032c2a69c : Int
+
+pub let nfc_llcp_error_not_busy_condition_73a5d863b645 : Int
+
+pub let nfc_reader_bee4442b70e3 : Int
+
+pub let nfc_type1_tag_bf82cd1cf606 : Int
+
+pub let nfc_type2_tag_edd6586fb084 : Int
+
+pub let nfc_type3_tag_1b1ea444a326 : Int
+
+pub let nfc_type4_tag_887ec8710daf : Int
+
+pub let nfcdatabuffer_1abc9bf4d672_alignment : Int
+
+pub let nfcdatabuffer_1abc9bf4d672_size : Int
+
+pub let nfcllcpconfig_bca182569778_alignment : Int
+
+pub let nfcllcpconfig_bca182569778_size : Int
+
+pub let nfcllcpservicediscoverrequest_c988a8131244_alignment : Int
+
+pub let nfcllcpservicediscoverrequest_c988a8131244_size : Int
+
+pub let nfcllcpservicediscoversap_f93385c90c46_alignment : Int
+
+pub let nfcllcpservicediscoversap_f93385c90c46_size : Int
+
+pub let nfcllcpservicenameentry_14ba090ff519_alignment : Int
+
+pub let nfcllcpservicenameentry_14ba090ff519_size : Int
+
+pub let nfcllcpsocketacceptinfo_202273e9a725_alignment : Int
+
+pub let nfcllcpsocketacceptinfo_202273e9a725_size : Int
+
+pub let nfcllcpsocketclpayload_0261da0c4e2c_alignment : Int
+
+pub let nfcllcpsocketclpayload_0261da0c4e2c_size : Int
+
+pub let nfcllcpsocketconnectinfo_725ca970be67_alignment : Int
+
+pub let nfcllcpsocketconnectinfo_725ca970be67_size : Int
+
+pub let nfcllcpsocketerrorinfo_2daf57f02f73_alignment : Int
+
+pub let nfcllcpsocketerrorinfo_2daf57f02f73_size : Int
+
+pub let nfcllcpsocketinfo_47a5605a4b1b_alignment : Int
+
+pub let nfcllcpsocketinfo_47a5605a4b1b_size : Int
+
+pub let nfcllcpsocketoption_b22f9fd8c42f_alignment : Int
+
+pub let nfcllcpsocketoption_b22f9fd8c42f_size : Int
+
+pub let nfcllcpsocketpayload_6b052d6a516a_alignment : Int
+
+pub let nfcllcpsocketpayload_6b052d6a516a_size : Int
+
+pub let nfcllcpsocketserviceinfo_94b9a82a8a01_alignment : Int
+
+pub let nfcllcpsocketserviceinfo_94b9a82a8a01_size : Int
+
+pub let nfcndefinfo_04a9f88e57ae_alignment : Int
+
+pub let nfcndefinfo_04a9f88e57ae_size : Int
+
+pub let nfcp2_pparamconfig_4264514126d1_alignment : Int
+
+pub let nfcp2_pparamconfig_4264514126d1_size : Int
+
+pub let nfcremotedevicedisconnet_2d8922136654_alignment : Int
+
+pub let nfcremotedevicedisconnet_2d8922136654_size : Int
+
+pub let nfcremotedevinfo_2789971bd551_alignment : Int
+
+pub let nfcremotedevinfo_2789971bd551_size : Int
+
+pub let nfcremotedevrecvinfo_9cbb03296f25_alignment : Int
+
+pub let nfcremotedevrecvinfo_9cbb03296f25_size : Int
+
+pub let nfcremotedevsendinfo_9807ac9219e6_alignment : Int
+
+pub let nfcremotedevsendinfo_9807ac9219e6_size : Int
+
+pub let nfcrfdiscoveryconfig_a54e13ace625_alignment : Int
+
+pub let nfcrfdiscoveryconfig_a54e13ace625_size : Int
+
+pub let nfcrmddi_ioctl_base_2995a9f3f67e : UInt
+
+pub let nfcrmradiostate_94d2d01c81a5_alignment : Int
+
+pub let nfcrmradiostate_94d2d01c81a5_size : Int
+
+pub let nfcrmsetradiostate_b547ddf9fe9f_alignment : Int
+
+pub let nfcrmsetradiostate_b547ddf9fe9f_size : Int
+
+pub let nfcseaidroutinginfo_0027bd8244d2_alignment : Int
+
+pub let nfcseaidroutinginfo_0027bd8244d2_size : Int
+
+pub let nfcseemulationmodeinfo_123b269edca4_alignment : Int
+
+pub let nfcseemulationmodeinfo_123b269edca4_size : Int
+
+pub let nfcseeventinfo_bdddbef88aa1_alignment : Int
+
+pub let nfcseeventinfo_bdddbef88aa1_size : Int
+
+pub let nfcseinfo_53e52446d482_alignment : Int
+
+pub let nfcseinfo_53e52446d482_size : Int
+
+pub let nfcselist_21269783fed8_alignment : Int
+
+pub let nfcselist_21269783fed8_size : Int
+
+pub let nfcseprotoroutinginfo_8f33b2e1c287_alignment : Int
+
+pub let nfcseprotoroutinginfo_8f33b2e1c287_size : Int
+
+pub let nfcseroutingtable_249ee857c684_alignment : Int
+
+pub let nfcseroutingtable_249ee857c684_size : Int
+
+pub let nfcseroutingtableentry_2dc69b6ba0d6_alignment : Int
+
+pub let nfcseroutingtableentry_2dc69b6ba0d6_size : Int
+
+pub let nfcsetechroutinginfo_16e62e8e9707_alignment : Int
+
+pub let nfcsetechroutinginfo_16e62e8e9707_size : Int
+
+pub let nfcsnepclientgetinfo_e5f98bafe062_alignment : Int
+
+pub let nfcsnepclientgetinfo_e5f98bafe062_size : Int
+
+pub let nfcsnepclientinfo_b8aef5d1ee84_alignment : Int
+
+pub let nfcsnepclientinfo_b8aef5d1ee84_size : Int
+
+pub let nfcsnepclientputinfo_269b7061556b_alignment : Int
+
+pub let nfcsnepclientputinfo_269b7061556b_size : Int
+
+pub let nfcsnepserveracceptinfo_68b250e5347a_alignment : Int
+
+pub let nfcsnepserveracceptinfo_68b250e5347a_size : Int
+
+pub let nfcsnepserverinfo_655a2c487c0d_alignment : Int
+
+pub let nfcsnepserverinfo_655a2c487c0d_size : Int
+
+pub let nfcsnepserverrequest_98a3a6a0ae94_alignment : Int
+
+pub let nfcsnepserverrequest_98a3a6a0ae94_size : Int
+
+pub let nfcsnepserverresponseinfo_fed6da26b619_alignment : Int
+
+pub let nfcsnepserverresponseinfo_fed6da26b619_size : Int
+
+pub let rf_discovery_config_294330a01ac9 : Int
+
+pub let rf_discovery_resume_8bf5853217b1 : Int
+
+pub let rf_discovery_start_a90973a068bf : Int
+
+pub let routing_type_aid_2293033c86e1 : Int
+
+pub let routing_type_protocol_08f9fcc2c0d3 : Int
+
+pub let routing_type_tech_fbe545ea7c6d : Int
+
+pub let se_power_mode_allow_off_99dee64f4049 : Int
+
+pub let se_power_mode_force_on_bb0e05d78733 : Int
+
+pub let secureelementaidroutinginfo_58b53bfbb7ee_alignment : Int
+
+pub let secureelementaidroutinginfo_58b53bfbb7ee_size : Int
+
+pub let secureelementendpointinfo_5234b4ea0387_alignment : Int
+
+pub let secureelementendpointinfo_5234b4ea0387_size : Int
+
+pub let secureelementendpointlist_39d68d6fbcc4_alignment : Int
+
+pub let secureelementendpointlist_39d68d6fbcc4_size : Int
+
+pub let secureelementeventinfo_688c04af3353_alignment : Int
+
+pub let secureelementeventinfo_688c04af3353_size : Int
+
+pub let secureelementeventsubscriptioninfo_b32e5b2d17bd_alignment : Int
+
+pub let secureelementeventsubscriptioninfo_b32e5b2d17bd_size : Int
+
+pub let secureelementhceactivationpayload_9da680456604_alignment : Int
+
+pub let secureelementhceactivationpayload_9da680456604_size : Int
+
+pub let secureelementhcedatapacket_1e15303de789_alignment : Int
+
+pub let secureelementhcedatapacket_1e15303de789_size : Int
+
+pub let secureelementnfcccapabilities_cab5e1bbb7b5_alignment : Int
+
+pub let secureelementnfcccapabilities_cab5e1bbb7b5_size : Int
+
+pub let secureelementprotoroutinginfo_16c1ca32048c_alignment : Int
+
+pub let secureelementprotoroutinginfo_16c1ca32048c_size : Int
+
+pub let secureelementroutingtable_f44254acf285_alignment : Int
+
+pub let secureelementroutingtable_f44254acf285_size : Int
+
+pub let secureelementroutingtableentry_b754ccbc245a_alignment : Int
+
+pub let secureelementroutingtableentry_b754ccbc245a_size : Int
+
+pub let secureelementsetcardemulationmodeinfo_6e1a685045a7_alignment : Int
+
+pub let secureelementsetcardemulationmodeinfo_6e1a685045a7_size : Int
+
+pub let secureelementsetpowermodeinfo_2821255d340d_alignment : Int
+
+pub let secureelementsetpowermodeinfo_2821255d340d_size : Int
+
+pub let secureelementtechroutinginfo_4095e16bf2ee_alignment : Int
+
+pub let secureelementtechroutinginfo_4095e16bf2ee_size : Int
+
+pub let sleep_mode_044f40afa3c7 : Int
+
+pub let snep_request_get_f678c554f471 : Int
+
+pub let snep_request_put_5db1be460293 : Int
+
+pub let transaction_e0e48b2e2865 : Int
+
+// Errors
+
+// Types and methods
+pub(all) struct AnonymousEUnion_64a8e4f07401 {
+  raw_bytes : Bytes
+} derive(Eq, @debug.Debug)
+pub fn AnonymousEUnion_64a8e4f07401::bytes(Self) -> Bytes
+pub fn AnonymousEUnion_64a8e4f07401::from_bytes(Bytes) -> Self raise @core.WindowsError
+
+pub(all) struct AnonymousEUnion_de0f69a65807 {
+  raw_bytes : Bytes
+} derive(Eq, @debug.Debug)
+pub fn AnonymousEUnion_de0f69a65807::bytes(Self) -> Bytes
+pub fn AnonymousEUnion_de0f69a65807::from_bytes(Bytes) -> Self raise @core.WindowsError
+
+pub(all) struct AnonymousEUnion_fc3a3d4d103a {
+  raw_bytes : Bytes
+} derive(Eq, @debug.Debug)
+pub fn AnonymousEUnion_fc3a3d4d103a::bytes(Self) -> Bytes
+pub fn AnonymousEUnion_fc3a3d4d103a::from_bytes(Bytes) -> Self raise @core.WindowsError
+
+pub(all) struct NFCDATABUFFER_1abc9bf4d672 {
+  raw_bytes : Bytes
+} derive(Eq, @debug.Debug)
+pub fn NFCDATABUFFER_1abc9bf4d672::bytes(Self) -> Bytes
+pub fn NFCDATABUFFER_1abc9bf4d672::from_bytes(Bytes) -> Self raise @core.WindowsError
+
+pub(all) struct NFCDEVICETYPE_515fe04a7c5d(Int) derive(Compare, Eq, @debug.Debug)
+pub fn NFCDEVICETYPE_515fe04a7c5d::from_int(Int) -> Self
+pub fn NFCDEVICETYPE_515fe04a7c5d::to_int(Self) -> Int
+
+pub(all) struct NFCLLCPCONFIG_bca182569778 {
+  raw_bytes : Bytes
+} derive(Eq, @debug.Debug)
+pub fn NFCLLCPCONFIG_bca182569778::bytes(Self) -> Bytes
+pub fn NFCLLCPCONFIG_bca182569778::from_bytes(Bytes) -> Self raise @core.WindowsError
+
+pub(all) struct NFCLLCPLINKSTATUS_54f5dfda459c(Int) derive(Compare, Eq, @debug.Debug)
+pub fn NFCLLCPLINKSTATUS_54f5dfda459c::from_int(Int) -> Self
+pub fn NFCLLCPLINKSTATUS_54f5dfda459c::to_int(Self) -> Int
+
+pub(all) struct NFCLLCPSERVICEDISCOVERREQUEST_c988a8131244 {
+  raw_bytes : Bytes
+} derive(Eq, @debug.Debug)
+pub fn NFCLLCPSERVICEDISCOVERREQUEST_c988a8131244::bytes(Self) -> Bytes
+pub fn NFCLLCPSERVICEDISCOVERREQUEST_c988a8131244::from_bytes(Bytes) -> Self raise @core.WindowsError
+
+pub(all) struct NFCLLCPSERVICEDISCOVERSAP_f93385c90c46 {
+  raw_bytes : Bytes
+} derive(Eq, @debug.Debug)
+pub fn NFCLLCPSERVICEDISCOVERSAP_f93385c90c46::bytes(Self) -> Bytes
+pub fn NFCLLCPSERVICEDISCOVERSAP_f93385c90c46::from_bytes(Bytes) -> Self raise @core.WindowsError
+
+pub(all) struct NFCLLCPSERVICENAMEENTRY_14ba090ff519 {
+  raw_bytes : Bytes
+} derive(Eq, @debug.Debug)
+pub fn NFCLLCPSERVICENAMEENTRY_14ba090ff519::bytes(Self) -> Bytes
+pub fn NFCLLCPSERVICENAMEENTRY_14ba090ff519::from_bytes(Bytes) -> Self raise @core.WindowsError
+
+pub(all) struct NFCLLCPSOCKETACCEPTINFO_202273e9a725 {
+  raw_bytes : Bytes
+} derive(Eq, @debug.Debug)
+pub fn NFCLLCPSOCKETACCEPTINFO_202273e9a725::bytes(Self) -> Bytes
+pub fn NFCLLCPSOCKETACCEPTINFO_202273e9a725::from_bytes(Bytes) -> Self raise @core.WindowsError
+
+pub(all) struct NFCLLCPSOCKETCLPAYLOAD_0261da0c4e2c {
+  raw_bytes : Bytes
+} derive(Eq, @debug.Debug)
+pub fn NFCLLCPSOCKETCLPAYLOAD_0261da0c4e2c::bytes(Self) -> Bytes
+pub fn NFCLLCPSOCKETCLPAYLOAD_0261da0c4e2c::from_bytes(Bytes) -> Self raise @core.WindowsError
+
+pub(all) struct NFCLLCPSOCKETCONNECTINFO_725ca970be67 {
+  raw_bytes : Bytes
+} derive(Eq, @debug.Debug)
+pub fn NFCLLCPSOCKETCONNECTINFO_725ca970be67::bytes(Self) -> Bytes
+pub fn NFCLLCPSOCKETCONNECTINFO_725ca970be67::from_bytes(Bytes) -> Self raise @core.WindowsError
+
+pub(all) struct NFCLLCPSOCKETCONNECTTYPE_f199cde243db(Int) derive(Compare, Eq, @debug.Debug)
+pub fn NFCLLCPSOCKETCONNECTTYPE_f199cde243db::from_int(Int) -> Self
+pub fn NFCLLCPSOCKETCONNECTTYPE_f199cde243db::to_int(Self) -> Int
+
+pub(all) struct NFCLLCPSOCKETERRORINFO_2daf57f02f73 {
+  raw_bytes : Bytes
+} derive(Eq, @debug.Debug)
+pub fn NFCLLCPSOCKETERRORINFO_2daf57f02f73::bytes(Self) -> Bytes
+pub fn NFCLLCPSOCKETERRORINFO_2daf57f02f73::from_bytes(Bytes) -> Self raise @core.WindowsError
+
+pub(all) struct NFCLLCPSOCKETERROR_cd376c5f082d(Int) derive(Compare, Eq, @debug.Debug)
+pub fn NFCLLCPSOCKETERROR_cd376c5f082d::from_int(Int) -> Self
+pub fn NFCLLCPSOCKETERROR_cd376c5f082d::to_int(Self) -> Int
+
+pub(all) struct NFCLLCPSOCKETINFO_47a5605a4b1b {
+  raw_bytes : Bytes
+} derive(Eq, @debug.Debug)
+pub fn NFCLLCPSOCKETINFO_47a5605a4b1b::bytes(Self) -> Bytes
+pub fn NFCLLCPSOCKETINFO_47a5605a4b1b::from_bytes(Bytes) -> Self raise @core.WindowsError
+
+pub(all) struct NFCLLCPSOCKETOPTION_b22f9fd8c42f {
+  raw_bytes : Bytes
+} derive(Eq, @debug.Debug)
+pub fn NFCLLCPSOCKETOPTION_b22f9fd8c42f::bytes(Self) -> Bytes
+pub fn NFCLLCPSOCKETOPTION_b22f9fd8c42f::from_bytes(Bytes) -> Self raise @core.WindowsError
+
+pub(all) struct NFCLLCPSOCKETPAYLOAD_6b052d6a516a {
+  raw_bytes : Bytes
+} derive(Eq, @debug.Debug)
+pub fn NFCLLCPSOCKETPAYLOAD_6b052d6a516a::bytes(Self) -> Bytes
+pub fn NFCLLCPSOCKETPAYLOAD_6b052d6a516a::from_bytes(Bytes) -> Self raise @core.WindowsError
+
+pub(all) struct NFCLLCPSOCKETSERVICEINFO_94b9a82a8a01 {
+  raw_bytes : Bytes
+} derive(Eq, @debug.Debug)
+pub fn NFCLLCPSOCKETSERVICEINFO_94b9a82a8a01::bytes(Self) -> Bytes
+pub fn NFCLLCPSOCKETSERVICEINFO_94b9a82a8a01::from_bytes(Bytes) -> Self raise @core.WindowsError
+
+pub(all) struct NFCLLCPSOCKETTYPE_9ec56240d140(Int) derive(Compare, Eq, @debug.Debug)
+pub fn NFCLLCPSOCKETTYPE_9ec56240d140::from_int(Int) -> Self
+pub fn NFCLLCPSOCKETTYPE_9ec56240d140::to_int(Self) -> Int
+
+pub(all) struct NFCNDEFINFO_04a9f88e57ae {
+  raw_bytes : Bytes
+} derive(Eq, @debug.Debug)
+pub fn NFCNDEFINFO_04a9f88e57ae::bytes(Self) -> Bytes
+pub fn NFCNDEFINFO_04a9f88e57ae::from_bytes(Bytes) -> Self raise @core.WindowsError
+
+pub(all) struct NFCP2PMODE_d12a7876a89f(Int) derive(Compare, Eq, @debug.Debug)
+pub fn NFCP2PMODE_d12a7876a89f::from_int(Int) -> Self
+pub fn NFCP2PMODE_d12a7876a89f::to_int(Self) -> Int
+
+pub(all) struct NFCP2PPARAMCONFIG_4264514126d1 {
+  raw_bytes : Bytes
+} derive(Eq, @debug.Debug)
+pub fn NFCP2PPARAMCONFIG_4264514126d1::bytes(Self) -> Bytes
+pub fn NFCP2PPARAMCONFIG_4264514126d1::from_bytes(Bytes) -> Self raise @core.WindowsError
+
+pub(all) struct NFCRELEASETYPE_198240826668(Int) derive(Compare, Eq, @debug.Debug)
+pub fn NFCRELEASETYPE_198240826668::from_int(Int) -> Self
+pub fn NFCRELEASETYPE_198240826668::to_int(Self) -> Int
+
+pub(all) struct NFCREMOTEDEVICEDISCONNET_2d8922136654 {
+  raw_bytes : Bytes
+} derive(Eq, @debug.Debug)
+pub fn NFCREMOTEDEVICEDISCONNET_2d8922136654::bytes(Self) -> Bytes
+pub fn NFCREMOTEDEVICEDISCONNET_2d8922136654::from_bytes(Bytes) -> Self raise @core.WindowsError
+
+pub(all) struct NFCREMOTEDEVINFO_2789971bd551 {
+  raw_bytes : Bytes
+} derive(Eq, @debug.Debug)
+pub fn NFCREMOTEDEVINFO_2789971bd551::bytes(Self) -> Bytes
+pub fn NFCREMOTEDEVINFO_2789971bd551::from_bytes(Bytes) -> Self raise @core.WindowsError
+
+pub(all) struct NFCREMOTEDEVRECVINFO_9cbb03296f25 {
+  raw_bytes : Bytes
+} derive(Eq, @debug.Debug)
+pub fn NFCREMOTEDEVRECVINFO_9cbb03296f25::bytes(Self) -> Bytes
+pub fn NFCREMOTEDEVRECVINFO_9cbb03296f25::from_bytes(Bytes) -> Self raise @core.WindowsError
+
+pub(all) struct NFCREMOTEDEVSENDINFO_9807ac9219e6 {
+  raw_bytes : Bytes
+} derive(Eq, @debug.Debug)
+pub fn NFCREMOTEDEVSENDINFO_9807ac9219e6::bytes(Self) -> Bytes
+pub fn NFCREMOTEDEVSENDINFO_9807ac9219e6::from_bytes(Bytes) -> Self raise @core.WindowsError
+
+pub(all) struct NFCRFDISCOVERYCONFIG_a54e13ace625 {
+  raw_bytes : Bytes
+} derive(Eq, @debug.Debug)
+pub fn NFCRFDISCOVERYCONFIG_a54e13ace625::bytes(Self) -> Bytes
+pub fn NFCRFDISCOVERYCONFIG_a54e13ace625::from_bytes(Bytes) -> Self raise @core.WindowsError
+
+pub(all) struct NFCRFDISCOVERYMODE_7f4aba99fdd8(Int) derive(Compare, Eq, @debug.Debug)
+pub fn NFCRFDISCOVERYMODE_7f4aba99fdd8::from_int(Int) -> Self
+pub fn NFCRFDISCOVERYMODE_7f4aba99fdd8::to_int(Self) -> Int
+
+pub(all) struct NFCRMRADIOSTATE_94d2d01c81a5 {
+  raw_bytes : Bytes
+} derive(Eq, @debug.Debug)
+pub fn NFCRMRADIOSTATE_94d2d01c81a5::bytes(Self) -> Bytes
+pub fn NFCRMRADIOSTATE_94d2d01c81a5::from_bytes(Bytes) -> Self raise @core.WindowsError
+
+pub(all) struct NFCRMSETRADIOSTATE_b547ddf9fe9f {
+  raw_bytes : Bytes
+} derive(Eq, @debug.Debug)
+pub fn NFCRMSETRADIOSTATE_b547ddf9fe9f::bytes(Self) -> Bytes
+pub fn NFCRMSETRADIOSTATE_b547ddf9fe9f::from_bytes(Bytes) -> Self raise @core.WindowsError
+
+pub(all) struct NFCSEAIDROUTINGINFO_0027bd8244d2 {
+  raw_bytes : Bytes
+} derive(Eq, @debug.Debug)
+pub fn NFCSEAIDROUTINGINFO_0027bd8244d2::bytes(Self) -> Bytes
+pub fn NFCSEAIDROUTINGINFO_0027bd8244d2::from_bytes(Bytes) -> Self raise @core.WindowsError
+
+pub(all) struct NFCSEEMULATIONMODEINFO_123b269edca4 {
+  raw_bytes : Bytes
+} derive(Eq, @debug.Debug)
+pub fn NFCSEEMULATIONMODEINFO_123b269edca4::bytes(Self) -> Bytes
+pub fn NFCSEEMULATIONMODEINFO_123b269edca4::from_bytes(Bytes) -> Self raise @core.WindowsError
+
+pub(all) struct NFCSEEMULATIONMODE_cc3329cc3c0f(Int) derive(Compare, Eq, @debug.Debug)
+pub fn NFCSEEMULATIONMODE_cc3329cc3c0f::from_int(Int) -> Self
+pub fn NFCSEEMULATIONMODE_cc3329cc3c0f::to_int(Self) -> Int
+
+pub(all) struct NFCSEEVENTINFO_bdddbef88aa1 {
+  raw_bytes : Bytes
+} derive(Eq, @debug.Debug)
+pub fn NFCSEEVENTINFO_bdddbef88aa1::bytes(Self) -> Bytes
+pub fn NFCSEEVENTINFO_bdddbef88aa1::from_bytes(Bytes) -> Self raise @core.WindowsError
+
+pub(all) struct NFCSEINFO_53e52446d482 {
+  raw_bytes : Bytes
+} derive(Eq, @debug.Debug)
+pub fn NFCSEINFO_53e52446d482::bytes(Self) -> Bytes
+pub fn NFCSEINFO_53e52446d482::from_bytes(Bytes) -> Self raise @core.WindowsError
+
+pub(all) struct NFCSELIST_21269783fed8 {
+  raw_bytes : Bytes
+} derive(Eq, @debug.Debug)
+pub fn NFCSELIST_21269783fed8::bytes(Self) -> Bytes
+pub fn NFCSELIST_21269783fed8::from_bytes(Bytes) -> Self raise @core.WindowsError
+
+pub(all) struct NFCSEPROTOROUTINGINFO_8f33b2e1c287 {
+  raw_bytes : Bytes
+} derive(Eq, @debug.Debug)
+pub fn NFCSEPROTOROUTINGINFO_8f33b2e1c287::bytes(Self) -> Bytes
+pub fn NFCSEPROTOROUTINGINFO_8f33b2e1c287::from_bytes(Bytes) -> Self raise @core.WindowsError
+
+pub(all) struct NFCSEROUTINGTABLEENTRY_2dc69b6ba0d6 {
+  raw_bytes : Bytes
+} derive(Eq, @debug.Debug)
+pub fn NFCSEROUTINGTABLEENTRY_2dc69b6ba0d6::bytes(Self) -> Bytes
+pub fn NFCSEROUTINGTABLEENTRY_2dc69b6ba0d6::from_bytes(Bytes) -> Self raise @core.WindowsError
+
+pub(all) struct NFCSEROUTINGTABLE_249ee857c684 {
+  raw_bytes : Bytes
+} derive(Eq, @debug.Debug)
+pub fn NFCSEROUTINGTABLE_249ee857c684::bytes(Self) -> Bytes
+pub fn NFCSEROUTINGTABLE_249ee857c684::from_bytes(Bytes) -> Self raise @core.WindowsError
+
+pub(all) struct NFCSETECHROUTINGINFO_16e62e8e9707 {
+  raw_bytes : Bytes
+} derive(Eq, @debug.Debug)
+pub fn NFCSETECHROUTINGINFO_16e62e8e9707::bytes(Self) -> Bytes
+pub fn NFCSETECHROUTINGINFO_16e62e8e9707::from_bytes(Bytes) -> Self raise @core.WindowsError
+
+pub(all) struct NFCSNEPCLIENTGETINFO_e5f98bafe062 {
+  raw_bytes : Bytes
+} derive(Eq, @debug.Debug)
+pub fn NFCSNEPCLIENTGETINFO_e5f98bafe062::bytes(Self) -> Bytes
+pub fn NFCSNEPCLIENTGETINFO_e5f98bafe062::from_bytes(Bytes) -> Self raise @core.WindowsError
+
+pub(all) struct NFCSNEPCLIENTINFO_b8aef5d1ee84 {
+  raw_bytes : Bytes
+} derive(Eq, @debug.Debug)
+pub fn NFCSNEPCLIENTINFO_b8aef5d1ee84::bytes(Self) -> Bytes
+pub fn NFCSNEPCLIENTINFO_b8aef5d1ee84::from_bytes(Bytes) -> Self raise @core.WindowsError
+
+pub(all) struct NFCSNEPCLIENTPUTINFO_269b7061556b {
+  raw_bytes : Bytes
+} derive(Eq, @debug.Debug)
+pub fn NFCSNEPCLIENTPUTINFO_269b7061556b::bytes(Self) -> Bytes
+pub fn NFCSNEPCLIENTPUTINFO_269b7061556b::from_bytes(Bytes) -> Self raise @core.WindowsError
+
+pub(all) struct NFCSNEPREQUESTTYPE_4b57c019cc24(Int) derive(Compare, Eq, @debug.Debug)
+pub fn NFCSNEPREQUESTTYPE_4b57c019cc24::from_int(Int) -> Self
+pub fn NFCSNEPREQUESTTYPE_4b57c019cc24::to_int(Self) -> Int
+
+pub(all) struct NFCSNEPSERVERACCEPTINFO_68b250e5347a {
+  raw_bytes : Bytes
+} derive(Eq, @debug.Debug)
+pub fn NFCSNEPSERVERACCEPTINFO_68b250e5347a::bytes(Self) -> Bytes
+pub fn NFCSNEPSERVERACCEPTINFO_68b250e5347a::from_bytes(Bytes) -> Self raise @core.WindowsError
+
+pub(all) struct NFCSNEPSERVERINFO_655a2c487c0d {
+  raw_bytes : Bytes
+} derive(Eq, @debug.Debug)
+pub fn NFCSNEPSERVERINFO_655a2c487c0d::bytes(Self) -> Bytes
+pub fn NFCSNEPSERVERINFO_655a2c487c0d::from_bytes(Bytes) -> Self raise @core.WindowsError
+
+pub(all) struct NFCSNEPSERVERREQUEST_98a3a6a0ae94 {
+  raw_bytes : Bytes
+} derive(Eq, @debug.Debug)
+pub fn NFCSNEPSERVERREQUEST_98a3a6a0ae94::bytes(Self) -> Bytes
+pub fn NFCSNEPSERVERREQUEST_98a3a6a0ae94::from_bytes(Bytes) -> Self raise @core.WindowsError
+
+pub(all) struct NFCSNEPSERVERRESPONSEINFO_fed6da26b619 {
+  raw_bytes : Bytes
+} derive(Eq, @debug.Debug)
+pub fn NFCSNEPSERVERRESPONSEINFO_fed6da26b619::bytes(Self) -> Bytes
+pub fn NFCSNEPSERVERRESPONSEINFO_fed6da26b619::from_bytes(Bytes) -> Self raise @core.WindowsError
+
+pub(all) struct NFCSNEPSERVERTYPE_02a50aab1148(Int) derive(Compare, Eq, @debug.Debug)
+pub fn NFCSNEPSERVERTYPE_02a50aab1148::from_int(Int) -> Self
+pub fn NFCSNEPSERVERTYPE_02a50aab1148::to_int(Self) -> Int
+
+pub(all) struct SECUREELEMENTAIDROUTINGINFO_58b53bfbb7ee {
+  raw_bytes : Bytes
+} derive(Eq, @debug.Debug)
+pub fn SECUREELEMENTAIDROUTINGINFO_58b53bfbb7ee::bytes(Self) -> Bytes
+pub fn SECUREELEMENTAIDROUTINGINFO_58b53bfbb7ee::from_bytes(Bytes) -> Self raise @core.WindowsError
+
+pub(all) struct SECUREELEMENTCARDEMULATIONMODE_6ccd2d746d4b(Int) derive(Compare, Eq, @debug.Debug)
+pub fn SECUREELEMENTCARDEMULATIONMODE_6ccd2d746d4b::from_int(Int) -> Self
+pub fn SECUREELEMENTCARDEMULATIONMODE_6ccd2d746d4b::to_int(Self) -> Int
+
+pub(all) struct SECUREELEMENTENDPOINTINFO_5234b4ea0387 {
+  raw_bytes : Bytes
+} derive(Eq, @debug.Debug)
+pub fn SECUREELEMENTENDPOINTINFO_5234b4ea0387::bytes(Self) -> Bytes
+pub fn SECUREELEMENTENDPOINTINFO_5234b4ea0387::from_bytes(Bytes) -> Self raise @core.WindowsError
+
+pub(all) struct SECUREELEMENTENDPOINTLIST_39d68d6fbcc4 {
+  raw_bytes : Bytes
+} derive(Eq, @debug.Debug)
+pub fn SECUREELEMENTENDPOINTLIST_39d68d6fbcc4::bytes(Self) -> Bytes
+pub fn SECUREELEMENTENDPOINTLIST_39d68d6fbcc4::from_bytes(Bytes) -> Self raise @core.WindowsError
+
+pub(all) struct SECUREELEMENTEVENTINFO_688c04af3353 {
+  raw_bytes : Bytes
+} derive(Eq, @debug.Debug)
+pub fn SECUREELEMENTEVENTINFO_688c04af3353::bytes(Self) -> Bytes
+pub fn SECUREELEMENTEVENTINFO_688c04af3353::from_bytes(Bytes) -> Self raise @core.WindowsError
+
+pub(all) struct SECUREELEMENTEVENTSUBSCRIPTIONINFO_b32e5b2d17bd {
+  raw_bytes : Bytes
+} derive(Eq, @debug.Debug)
+pub fn SECUREELEMENTEVENTSUBSCRIPTIONINFO_b32e5b2d17bd::bytes(Self) -> Bytes
+pub fn SECUREELEMENTEVENTSUBSCRIPTIONINFO_b32e5b2d17bd::from_bytes(Bytes) -> Self raise @core.WindowsError
+
+pub(all) struct SECUREELEMENTEVENTTYPE_85d3f53ff658(Int) derive(Compare, Eq, @debug.Debug)
+pub fn SECUREELEMENTEVENTTYPE_85d3f53ff658::from_int(Int) -> Self
+pub fn SECUREELEMENTEVENTTYPE_85d3f53ff658::to_int(Self) -> Int
+
+pub(all) struct SECUREELEMENTHCEACTIVATIONPAYLOAD_9da680456604 {
+  raw_bytes : Bytes
+} derive(Eq, @debug.Debug)
+pub fn SECUREELEMENTHCEACTIVATIONPAYLOAD_9da680456604::bytes(Self) -> Bytes
+pub fn SECUREELEMENTHCEACTIVATIONPAYLOAD_9da680456604::from_bytes(Bytes) -> Self raise @core.WindowsError
+
+pub(all) struct SECUREELEMENTHCEDATAPACKET_1e15303de789 {
+  raw_bytes : Bytes
+} derive(Eq, @debug.Debug)
+pub fn SECUREELEMENTHCEDATAPACKET_1e15303de789::bytes(Self) -> Bytes
+pub fn SECUREELEMENTHCEDATAPACKET_1e15303de789::from_bytes(Bytes) -> Self raise @core.WindowsError
+
+pub(all) struct SECUREELEMENTNFCCCAPABILITIES_cab5e1bbb7b5 {
+  raw_bytes : Bytes
+} derive(Eq, @debug.Debug)
+pub fn SECUREELEMENTNFCCCAPABILITIES_cab5e1bbb7b5::bytes(Self) -> Bytes
+pub fn SECUREELEMENTNFCCCAPABILITIES_cab5e1bbb7b5::from_bytes(Bytes) -> Self raise @core.WindowsError
+
+pub(all) struct SECUREELEMENTPOWERMODE_6c3d1a0678d7(Int) derive(Compare, Eq, @debug.Debug)
+pub fn SECUREELEMENTPOWERMODE_6c3d1a0678d7::from_int(Int) -> Self
+pub fn SECUREELEMENTPOWERMODE_6c3d1a0678d7::to_int(Self) -> Int
+
+pub(all) struct SECUREELEMENTPROTOROUTINGINFO_16c1ca32048c {
+  raw_bytes : Bytes
+} derive(Eq, @debug.Debug)
+pub fn SECUREELEMENTPROTOROUTINGINFO_16c1ca32048c::bytes(Self) -> Bytes
+pub fn SECUREELEMENTPROTOROUTINGINFO_16c1ca32048c::from_bytes(Bytes) -> Self raise @core.WindowsError
+
+pub(all) struct SECUREELEMENTROUTINGTABLEENTRY_b754ccbc245a {
+  raw_bytes : Bytes
+} derive(Eq, @debug.Debug)
+pub fn SECUREELEMENTROUTINGTABLEENTRY_b754ccbc245a::bytes(Self) -> Bytes
+pub fn SECUREELEMENTROUTINGTABLEENTRY_b754ccbc245a::from_bytes(Bytes) -> Self raise @core.WindowsError
+
+pub(all) struct SECUREELEMENTROUTINGTABLE_f44254acf285 {
+  raw_bytes : Bytes
+} derive(Eq, @debug.Debug)
+pub fn SECUREELEMENTROUTINGTABLE_f44254acf285::bytes(Self) -> Bytes
+pub fn SECUREELEMENTROUTINGTABLE_f44254acf285::from_bytes(Bytes) -> Self raise @core.WindowsError
+
+pub(all) struct SECUREELEMENTROUTINGTYPE_930c0c9034ac(Int) derive(Compare, Eq, @debug.Debug)
+pub fn SECUREELEMENTROUTINGTYPE_930c0c9034ac::from_int(Int) -> Self
+pub fn SECUREELEMENTROUTINGTYPE_930c0c9034ac::to_int(Self) -> Int
+
+pub(all) struct SECUREELEMENTSETCARDEMULATIONMODEINFO_6e1a685045a7 {
+  raw_bytes : Bytes
+} derive(Eq, @debug.Debug)
+pub fn SECUREELEMENTSETCARDEMULATIONMODEINFO_6e1a685045a7::bytes(Self) -> Bytes
+pub fn SECUREELEMENTSETCARDEMULATIONMODEINFO_6e1a685045a7::from_bytes(Bytes) -> Self raise @core.WindowsError
+
+pub(all) struct SECUREELEMENTSETPOWERMODEINFO_2821255d340d {
+  raw_bytes : Bytes
+} derive(Eq, @debug.Debug)
+pub fn SECUREELEMENTSETPOWERMODEINFO_2821255d340d::bytes(Self) -> Bytes
+pub fn SECUREELEMENTSETPOWERMODEINFO_2821255d340d::from_bytes(Bytes) -> Self raise @core.WindowsError
+
+pub(all) struct SECUREELEMENTTECHROUTINGINFO_4095e16bf2ee {
+  raw_bytes : Bytes
+} derive(Eq, @debug.Debug)
+pub fn SECUREELEMENTTECHROUTINGINFO_4095e16bf2ee::bytes(Self) -> Bytes
+pub fn SECUREELEMENTTECHROUTINGINFO_4095e16bf2ee::from_bytes(Bytes) -> Self raise @core.WindowsError
+
+pub(all) struct SECUREELEMENTTYPE_ce51cd0a0dad(Int) derive(Compare, Eq, @debug.Debug)
+pub fn SECUREELEMENTTYPE_ce51cd0a0dad::from_int(Int) -> Self
+pub fn SECUREELEMENTTYPE_ce51cd0a0dad::to_int(Self) -> Int
+
+// Type aliases
+
+// Traits
+

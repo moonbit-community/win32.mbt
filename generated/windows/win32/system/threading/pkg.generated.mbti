@@ -1,0 +1,2120 @@
+// Generated using `moon info`, DON'T EDIT IT
+package "moonbit-community/win32-bindings/windows/win32/system/threading"
+
+import {
+  "moonbit-community/win32-bindings/runtime/core",
+  "moonbit-community/win32-bindings/scc/99889f7a8d1c05a3",
+}
+
+// Values
+pub let above_normal_priority_class : UInt
+
+pub fn acquire_srw_lock_exclusive_raw(@core.RawAddress) -> Unit
+
+pub fn acquire_srw_lock_shared_raw(@core.RawAddress) -> Unit
+
+pub fn add_integrity_label_to_boundary_descriptor_raw(@core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn add_sid_to_boundary_descriptor_raw(@core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub let all_processor_groups : UInt
+
+pub fn attach_thread_input_raw(UInt, UInt, Int) -> Int
+
+pub fn av_query_system_responsiveness_raw(@core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn av_revert_mm_thread_characteristics_raw(@core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn av_rt_create_thread_ordering_group_ex_a_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn av_rt_create_thread_ordering_group_ex_w_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn av_rt_create_thread_ordering_group_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn av_rt_delete_thread_ordering_group_raw(@core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn av_rt_join_thread_ordering_group_raw(@core.RawAddress, @core.RawAddress, Int) -> @core.RawWin32Call[Int]
+
+pub fn av_rt_leave_thread_ordering_group_raw(@core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn av_rt_wait_on_thread_ordering_group_raw(@core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn av_set_mm_max_thread_characteristics_a_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[@core.RawAddress]
+
+pub fn av_set_mm_max_thread_characteristics_w_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[@core.RawAddress]
+
+pub fn av_set_mm_thread_characteristics_a_raw(@core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[@core.RawAddress]
+
+pub fn av_set_mm_thread_characteristics_w_raw(@core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[@core.RawAddress]
+
+pub fn av_set_mm_thread_priority_raw(@core.RawAddress, Int) -> @core.RawWin32Call[Int]
+
+pub let avrt_priority_critical : Int
+
+pub let avrt_priority_high : Int
+
+pub let avrt_priority_low : Int
+
+pub let avrt_priority_normal : Int
+
+pub let avrt_priority_verylow : Int
+
+pub let below_normal_priority_class : UInt
+
+pub fn callback_may_run_long_raw(Int64) -> Int
+
+pub fn cancel_threadpool_io_raw(Int64) -> Unit
+
+pub fn cancel_timer_queue_timer_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn cancel_waitable_timer_raw(@core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn change_timer_queue_timer_raw(@core.RawAddress, @core.RawAddress, UInt, UInt) -> @core.RawWin32Call[Int]
+
+pub fn close_private_namespace_raw(@core.RawAddress, UInt) -> @core.RawWin32Call[UInt]
+
+pub fn close_threadpool_cleanup_group_members_raw(Int64, Int, @core.RawAddress) -> Unit
+
+pub fn close_threadpool_cleanup_group_raw(Int64) -> Unit
+
+pub fn close_threadpool_io_raw(Int64) -> Unit
+
+pub fn close_threadpool_raw(Int64) -> Unit
+
+pub fn close_threadpool_timer_raw(Int64) -> Unit
+
+pub fn close_threadpool_wait_raw(Int64) -> Unit
+
+pub fn close_threadpool_work_raw(Int64) -> Unit
+
+pub let condition_variable_lockmode_shared : UInt
+
+pub fn convert_fiber_to_thread_raw() -> @core.RawWin32Call[Int]
+
+pub fn convert_thread_to_fiber_ex_raw(@core.RawAddress, UInt) -> @core.RawWin32Call[@core.RawAddress]
+
+pub fn convert_thread_to_fiber_raw(@core.RawAddress) -> @core.RawWin32Call[@core.RawAddress]
+
+pub fn create_boundary_descriptor_a_raw(@core.RawAddress, UInt) -> @core.RawWin32Call[@core.RawAddress]
+
+pub fn create_boundary_descriptor_w_raw(@core.RawAddress, UInt) -> @core.RawAddress
+
+pub let create_breakaway_from_job : UInt
+
+pub let create_default_error_mode : UInt
+
+pub fn create_event_a_raw(@core.RawAddress, Int, Int, @core.RawAddress) -> @core.RawWin32Call[@core.RawAddress]
+
+pub fn create_event_ex_a_raw(@core.RawAddress, @core.RawAddress, UInt, UInt) -> @core.RawWin32Call[@core.RawAddress]
+
+pub fn create_event_ex_w_raw(@core.RawAddress, @core.RawAddress, UInt, UInt) -> @core.RawWin32Call[@core.RawAddress]
+
+pub let create_event_initial_set : UInt
+
+pub let create_event_manual_reset : UInt
+
+pub fn create_event_w_raw(@core.RawAddress, Int, Int, @core.RawAddress) -> @core.RawWin32Call[@core.RawAddress]
+
+pub fn create_fiber_ex_raw(UInt64, UInt64, UInt, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[@core.RawAddress]
+
+pub fn create_fiber_raw(UInt64, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[@core.RawAddress]
+
+pub let create_forcedos : UInt
+
+pub let create_ignore_system_default : UInt
+
+pub fn create_mutex_a_raw(@core.RawAddress, Int, @core.RawAddress) -> @core.RawWin32Call[@core.RawAddress]
+
+pub fn create_mutex_ex_a_raw(@core.RawAddress, @core.RawAddress, UInt, UInt) -> @core.RawWin32Call[@core.RawAddress]
+
+pub fn create_mutex_ex_w_raw(@core.RawAddress, @core.RawAddress, UInt, UInt) -> @core.RawWin32Call[@core.RawAddress]
+
+pub let create_mutex_initial_owner : UInt
+
+pub fn create_mutex_w_raw(@core.RawAddress, Int, @core.RawAddress) -> @core.RawWin32Call[@core.RawAddress]
+
+pub let create_new_console : UInt
+
+pub let create_new_process_group : UInt
+
+pub let create_no_window : UInt
+
+pub let create_preserve_code_authz_level : UInt
+
+pub fn create_private_namespace_a_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[@core.RawAddress]
+
+pub fn create_private_namespace_w_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> @core.RawAddress
+
+pub fn create_process_a_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, Int, UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn create_process_as_user_a_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, Int, UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn create_process_as_user_w_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, Int, UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn create_process_w_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, Int, UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn create_process_with_logon_w_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn create_process_with_token_w_raw(@core.RawAddress, UInt, @core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub let create_protected_process : UInt
+
+pub fn create_remote_thread_ex_raw(@core.RawAddress, @core.RawAddress, UInt64, @core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[@core.RawAddress]
+
+pub fn create_remote_thread_raw(@core.RawAddress, @core.RawAddress, UInt64, @core.RawAddress, @core.RawAddress, UInt, @core.RawAddress) -> @core.RawWin32Call[@core.RawAddress]
+
+pub let create_secure_process : UInt
+
+pub fn create_semaphore_a_raw(@core.RawAddress, Int, Int, @core.RawAddress) -> @core.RawWin32Call[@core.RawAddress]
+
+pub fn create_semaphore_ex_a_raw(@core.RawAddress, Int, Int, @core.RawAddress, UInt, UInt) -> @core.RawWin32Call[@core.RawAddress]
+
+pub fn create_semaphore_ex_w_raw(@core.RawAddress, Int, Int, @core.RawAddress, UInt, UInt) -> @core.RawWin32Call[@core.RawAddress]
+
+pub fn create_semaphore_w_raw(@core.RawAddress, Int, Int, @core.RawAddress) -> @core.RawWin32Call[@core.RawAddress]
+
+pub let create_separate_wow_vdm : UInt
+
+pub let create_shared_wow_vdm : UInt
+
+pub let create_suspended : UInt
+
+pub fn create_thread_raw(@core.RawAddress, UInt64, @core.RawAddress, @core.RawAddress, UInt, @core.RawAddress) -> @core.RawWin32Call[@core.RawAddress]
+
+pub fn create_threadpool_cleanup_group_raw() -> @core.RawWin32Call[Int64]
+
+pub fn create_threadpool_io_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int64]
+
+pub fn create_threadpool_raw(@core.RawAddress) -> @core.RawWin32Call[Int64]
+
+pub fn create_threadpool_timer_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int64]
+
+pub fn create_threadpool_wait_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int64]
+
+pub fn create_threadpool_work_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int64]
+
+pub fn create_timer_queue_raw() -> @core.RawWin32Call[@core.RawAddress]
+
+pub fn create_timer_queue_timer_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, UInt, UInt, UInt) -> @core.RawWin32Call[Int]
+
+pub fn create_ums_completion_list_raw(@core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn create_ums_thread_context_raw(@core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub let create_unicode_environment : UInt
+
+pub fn create_waitable_timer_a_raw(@core.RawAddress, Int, @core.RawAddress) -> @core.RawAddress
+
+pub fn create_waitable_timer_ex_a_raw(@core.RawAddress, @core.RawAddress, UInt, UInt) -> @core.RawAddress
+
+pub fn create_waitable_timer_ex_w_raw(@core.RawAddress, @core.RawAddress, UInt, UInt) -> @core.RawWin32Call[@core.RawAddress]
+
+pub let create_waitable_timer_high_resolution : UInt
+
+pub let create_waitable_timer_manual_reset : UInt
+
+pub fn create_waitable_timer_w_raw(@core.RawAddress, Int, @core.RawAddress) -> @core.RawWin32Call[@core.RawAddress]
+
+pub let debug_only_this_process : UInt
+
+pub let debug_process : UInt
+
+pub fn delete_boundary_descriptor_raw(@core.RawAddress) -> Unit
+
+pub fn delete_critical_section_raw(@core.RawAddress) -> Unit
+
+pub fn delete_fiber_raw(@core.RawAddress) -> Unit
+
+pub fn delete_proc_thread_attribute_list_raw(@core.RawAddress) -> Unit
+
+pub fn delete_synchronization_barrier_raw(@core.RawAddress) -> Int
+
+pub fn delete_timer_queue_ex_raw(@core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn delete_timer_queue_raw(@core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn delete_timer_queue_timer_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn delete_ums_completion_list_raw(@core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn delete_ums_thread_context_raw(@core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn dequeue_ums_completion_list_items_raw(@core.RawAddress, UInt, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub let detached_process : UInt
+
+pub fn disassociate_current_thread_from_callback_raw(Int64) -> Unit
+
+pub fn enter_critical_section_raw(@core.RawAddress) -> Unit
+
+pub fn enter_synchronization_barrier_raw(@core.RawAddress, UInt) -> Int
+
+pub fn enter_ums_scheduling_mode_raw(@core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub let event_all_access : UInt
+
+pub let event_modify_state : UInt
+
+pub fn execute_ums_thread_raw(@core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn exit_process_raw(UInt) -> Unit
+
+pub fn exit_thread_raw(UInt) -> Unit
+
+pub let extended_startupinfo_present : UInt
+
+pub fn fls_alloc_raw(@core.RawAddress) -> @core.RawWin32Call[UInt]
+
+pub fn fls_free_raw(UInt) -> @core.RawWin32Call[Int]
+
+pub fn fls_get_value2_raw(UInt) -> @core.RawAddress
+
+pub fn fls_get_value_raw(UInt) -> @core.RawWin32Call[@core.RawAddress]
+
+pub let fls_out_of_indexes : UInt
+
+pub fn fls_set_value_raw(UInt, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn flush_process_write_buffers_raw() -> Unit
+
+pub fn free_library_when_callback_returns_raw(Int64, @core.RawAddress) -> Unit
+
+pub fn get_active_processor_count_raw(UInt) -> @core.RawWin32Call[UInt]
+
+pub fn get_active_processor_group_count_raw() -> UInt
+
+pub fn get_current_process_id_raw() -> UInt
+
+pub fn get_current_process_raw() -> @core.RawAddress
+
+pub fn get_current_processor_number_ex_raw(@core.RawAddress) -> Unit
+
+pub fn get_current_processor_number_raw() -> UInt
+
+pub fn get_current_thread_id_raw() -> UInt
+
+pub fn get_current_thread_raw() -> @core.RawAddress
+
+pub fn get_current_thread_stack_limits_raw(@core.RawAddress, @core.RawAddress) -> Unit
+
+pub fn get_current_ums_thread_raw() -> @core.RawWin32Call[@core.RawAddress]
+
+pub fn get_exit_code_process_raw(@core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn get_exit_code_thread_raw(@core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn get_gui_resources_raw(@core.RawAddress, UInt) -> @core.RawWin32Call[UInt]
+
+pub fn get_machine_type_attributes(UInt, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn get_machine_type_attributes_raw(UInt, @core.RawAddress) -> Int
+
+pub fn get_maximum_processor_count_raw(UInt) -> @core.RawWin32Call[UInt]
+
+pub fn get_maximum_processor_group_count_raw() -> UInt
+
+pub fn get_next_ums_list_item_raw(@core.RawAddress) -> @core.RawWin32Call[@core.RawAddress]
+
+pub fn get_numa_available_memory_node_ex_raw(UInt, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn get_numa_available_memory_node_raw(UInt, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn get_numa_highest_node_number_raw(@core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn get_numa_node_number_from_handle_raw(@core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn get_numa_node_processor_mask2_raw(UInt, @core.RawAddress, UInt, @core.RawAddress) -> Int
+
+pub fn get_numa_node_processor_mask_ex_raw(UInt, @core.RawAddress) -> Int
+
+pub fn get_numa_node_processor_mask_raw(UInt, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn get_numa_processor_node_ex_raw(@core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn get_numa_processor_node_raw(UInt, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn get_numa_proximity_node_ex_raw(UInt, @core.RawAddress) -> Int
+
+pub fn get_numa_proximity_node_raw(UInt, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn get_object(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn get_object_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn get_parameters(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn get_parameters_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn get_priority_class_raw(@core.RawAddress) -> @core.RawWin32Call[UInt]
+
+pub fn get_process_affinity_mask_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn get_process_default_cpu_set_masks_raw(@core.RawAddress, @core.RawAddress, UInt, @core.RawAddress) -> Int
+
+pub fn get_process_default_cpu_sets_raw(@core.RawAddress, @core.RawAddress, UInt, @core.RawAddress) -> Int
+
+pub fn get_process_dep_policy_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn get_process_group_affinity_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn get_process_handle_count_raw(@core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn get_process_handle_from_hwnd_raw(@core.RawAddress) -> @core.RawAddress
+
+pub fn get_process_id_of_thread_raw(@core.RawAddress) -> @core.RawWin32Call[UInt]
+
+pub fn get_process_id_raw(@core.RawAddress) -> @core.RawWin32Call[UInt]
+
+pub fn get_process_information_raw(@core.RawAddress, Int, @core.RawAddress, UInt) -> @core.RawWin32Call[Int]
+
+pub fn get_process_io_counters_raw(@core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn get_process_mitigation_policy_raw(@core.RawAddress, Int, @core.RawAddress, UInt64) -> @core.RawWin32Call[Int]
+
+pub fn get_process_priority_boost_raw(@core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn get_process_shutdown_parameters_raw(@core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn get_process_times_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn get_process_version_raw(UInt) -> @core.RawWin32Call[UInt]
+
+pub fn get_process_working_set_size_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn get_startup_info_a_raw(@core.RawAddress) -> Unit
+
+pub fn get_startup_info_w_raw(@core.RawAddress) -> Unit
+
+pub fn get_state(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn get_state_no_add_ref_raw(@core.RawAddress) -> @core.RawAddress
+
+pub fn get_state_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn get_status(@core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn get_status_raw(@core.RawAddress) -> Int
+
+pub fn get_system_times_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn get_thread_description(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn get_thread_description_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn get_thread_group_affinity_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn get_thread_id_raw(@core.RawAddress) -> @core.RawWin32Call[UInt]
+
+pub fn get_thread_ideal_processor_ex_raw(@core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn get_thread_information_raw(@core.RawAddress, Int, @core.RawAddress, UInt) -> @core.RawWin32Call[Int]
+
+pub fn get_thread_io_pending_flag_raw(@core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn get_thread_priority_boost_raw(@core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn get_thread_priority_raw(@core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn get_thread_selected_cpu_set_masks_raw(@core.RawAddress, @core.RawAddress, UInt, @core.RawAddress) -> Int
+
+pub fn get_thread_selected_cpu_sets_raw(@core.RawAddress, @core.RawAddress, UInt, @core.RawAddress) -> Int
+
+pub fn get_thread_times_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn get_ums_completion_list_event_raw(@core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn get_ums_system_thread_information_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub let gr_gdiobjects : UInt
+
+pub let gr_gdiobjects_peak : UInt
+
+pub let gr_global : UInt
+
+pub let gr_userobjects : UInt
+
+pub let gr_userobjects_peak : UInt
+
+pub let high_priority_class : UInt
+
+pub let idle_priority_class : UInt
+
+pub let infinite : UInt
+
+pub let inherit_caller_priority : UInt
+
+pub let inherit_parent_affinity : UInt
+
+pub let init_once_async : UInt
+
+pub fn init_once_begin_initialize_raw(@core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub let init_once_check_only : UInt
+
+pub fn init_once_complete_raw(@core.RawAddress, UInt, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub let init_once_ctx_reserved_bits : UInt
+
+pub fn init_once_execute_once_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub let init_once_init_failed : UInt
+
+pub fn init_once_initialize_raw(@core.RawAddress) -> Unit
+
+pub fn initialization_complete(@core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn initialization_complete_raw(@core.RawAddress) -> Int
+
+pub fn initialize_condition_variable_raw(@core.RawAddress) -> Unit
+
+pub fn initialize_critical_section_and_spin_count_raw(@core.RawAddress, UInt) -> @core.RawWin32Call[Int]
+
+pub fn initialize_critical_section_ex_raw(@core.RawAddress, UInt, UInt) -> @core.RawWin32Call[Int]
+
+pub fn initialize_critical_section_raw(@core.RawAddress) -> Unit
+
+pub fn initialize_proc_thread_attribute_list_raw(@core.RawAddress, UInt, UInt, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn initialize_s_list_head_raw(@core.RawAddress) -> Unit
+
+pub fn initialize_srw_lock_raw(@core.RawAddress) -> Unit
+
+pub fn initialize_synchronization_barrier_raw(@core.RawAddress, Int, Int) -> @core.RawWin32Call[Int]
+
+pub fn interlocked_flush_s_list_raw(@core.RawAddress) -> @core.RawAddress
+
+pub fn interlocked_pop_entry_s_list_raw(@core.RawAddress) -> @core.RawAddress
+
+pub fn interlocked_push_entry_s_list_raw(@core.RawAddress, @core.RawAddress) -> @core.RawAddress
+
+pub fn interlocked_push_list_s_list_ex_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, UInt) -> @core.RawAddress
+
+pub fn invoke(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn invoke_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn is_immersive_process_raw(@core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn is_process_critical_raw(@core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn is_processor_feature_present_raw(UInt) -> Int
+
+pub fn is_thread_a_fiber_raw() -> Int
+
+pub fn is_threadpool_timer_set_raw(Int64) -> Int
+
+pub fn is_wow64_process2_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn is_wow64_process_raw(@core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub let kernel_enabled : Int
+
+pub fn leave_critical_section_raw(@core.RawAddress) -> Unit
+
+pub fn leave_critical_section_when_callback_returns_raw(Int64, @core.RawAddress) -> Unit
+
+pub let logon_netcredentials_only : UInt
+
+pub let logon_with_profile : UInt
+
+pub let max_process_mitigation_policy : Int
+
+pub let memory_priority_below_normal : UInt
+
+pub let memory_priority_low : UInt
+
+pub let memory_priority_medium : UInt
+
+pub let memory_priority_normal : UInt
+
+pub let memory_priority_very_low : UInt
+
+pub let mutex_all_access : UInt
+
+pub let mutex_modify_state : UInt
+
+pub let normal_priority_class : UInt
+
+pub fn open_event_a_raw(UInt, Int, @core.RawAddress) -> @core.RawWin32Call[@core.RawAddress]
+
+pub fn open_event_w_raw(UInt, Int, @core.RawAddress) -> @core.RawWin32Call[@core.RawAddress]
+
+pub fn open_mutex_w_raw(UInt, Int, @core.RawAddress) -> @core.RawWin32Call[@core.RawAddress]
+
+pub fn open_private_namespace_a_raw(@core.RawAddress, @core.RawAddress) -> @core.RawAddress
+
+pub fn open_private_namespace_w_raw(@core.RawAddress, @core.RawAddress) -> @core.RawAddress
+
+pub fn open_process_raw(UInt, Int, UInt) -> @core.RawWin32Call[@core.RawAddress]
+
+pub fn open_process_token_raw(@core.RawAddress, UInt, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn open_semaphore_w_raw(UInt, Int, @core.RawAddress) -> @core.RawWin32Call[@core.RawAddress]
+
+pub fn open_thread_raw(UInt, Int, UInt) -> @core.RawWin32Call[@core.RawAddress]
+
+pub fn open_thread_token_raw(@core.RawAddress, UInt, Int, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn open_waitable_timer_a_raw(UInt, Int, @core.RawAddress) -> @core.RawAddress
+
+pub fn open_waitable_timer_w_raw(UInt, Int, @core.RawAddress) -> @core.RawWin32Call[@core.RawAddress]
+
+pub let pf_3_dnow_instructions_available : UInt
+
+pub let pf_alpha_byte_instructions : UInt
+
+pub let pf_arm_64_bit_loadstore_atomic : UInt
+
+pub let pf_arm_divide_instruction_available : UInt
+
+pub let pf_arm_external_cache_available : UInt
+
+pub let pf_arm_fmac_instructions_available : UInt
+
+pub let pf_arm_lse2_available : UInt
+
+pub let pf_arm_neon_instructions_available : UInt
+
+pub let pf_arm_sha3_instructions_available : UInt
+
+pub let pf_arm_sha512_instructions_available : UInt
+
+pub let pf_arm_sme2_1_instructions_available : UInt
+
+pub let pf_arm_sme2_2_instructions_available : UInt
+
+pub let pf_arm_sme2_instructions_available : UInt
+
+pub let pf_arm_sme_aes_instructions_available : UInt
+
+pub let pf_arm_sme_b16_b16_instructions_available : UInt
+
+pub let pf_arm_sme_f16_f16_instructions_available : UInt
+
+pub let pf_arm_sme_f64_f64_instructions_available : UInt
+
+pub let pf_arm_sme_f8_f16_instructions_available : UInt
+
+pub let pf_arm_sme_f8_f32_instructions_available : UInt
+
+pub let pf_arm_sme_fa64_instructions_available : UInt
+
+pub let pf_arm_sme_i16_i64_instructions_available : UInt
+
+pub let pf_arm_sme_instructions_available : UInt
+
+pub let pf_arm_sme_lu_tv2_instructions_available : UInt
+
+pub let pf_arm_sme_sbitperm_instructions_available : UInt
+
+pub let pf_arm_sme_sf8_dp2_instructions_available : UInt
+
+pub let pf_arm_sme_sf8_dp4_instructions_available : UInt
+
+pub let pf_arm_sme_sf8_fma_instructions_available : UInt
+
+pub let pf_arm_sme_sf8_mm4_instructions_available : UInt
+
+pub let pf_arm_sme_sf8_mm8_instructions_available : UInt
+
+pub let pf_arm_sve2_1_instructions_available : UInt
+
+pub let pf_arm_sve2_instructions_available : UInt
+
+pub let pf_arm_sve_aes_instructions_available : UInt
+
+pub let pf_arm_sve_b16_b16_instructions_available : UInt
+
+pub let pf_arm_sve_bf16_instructions_available : UInt
+
+pub let pf_arm_sve_bitperm_instructions_available : UInt
+
+pub let pf_arm_sve_ebf16_instructions_available : UInt
+
+pub let pf_arm_sve_f32_mm_instructions_available : UInt
+
+pub let pf_arm_sve_f64_mm_instructions_available : UInt
+
+pub let pf_arm_sve_i8_mm_instructions_available : UInt
+
+pub let pf_arm_sve_instructions_available : UInt
+
+pub let pf_arm_sve_pmull128_instructions_available : UInt
+
+pub let pf_arm_sve_sha3_instructions_available : UInt
+
+pub let pf_arm_sve_sm4_instructions_available : UInt
+
+pub let pf_arm_v81_atomic_instructions_available : UInt
+
+pub let pf_arm_v82_dp_instructions_available : UInt
+
+pub let pf_arm_v82_fp16_instructions_available : UInt
+
+pub let pf_arm_v82_i8_mm_instructions_available : UInt
+
+pub let pf_arm_v83_jscvt_instructions_available : UInt
+
+pub let pf_arm_v83_lrcpc_instructions_available : UInt
+
+pub let pf_arm_v86_bf16_instructions_available : UInt
+
+pub let pf_arm_v86_ebf16_instructions_available : UInt
+
+pub let pf_arm_v8_crc32_instructions_available : UInt
+
+pub let pf_arm_v8_crypto_instructions_available : UInt
+
+pub let pf_arm_v8_instructions_available : UInt
+
+pub let pf_arm_vfp_32_registers_available : UInt
+
+pub let pf_avx2_instructions_available : UInt
+
+pub let pf_avx512_f_instructions_available : UInt
+
+pub let pf_avx_instructions_available : UInt
+
+pub let pf_bmi2_instructions_available : UInt
+
+pub let pf_channels_enabled : UInt
+
+pub let pf_compare64_exchange128 : UInt
+
+pub let pf_compare_exchange128 : UInt
+
+pub let pf_compare_exchange_double : UInt
+
+pub let pf_erms_available : UInt
+
+pub let pf_fastfail_available : UInt
+
+pub let pf_floating_point_emulated : UInt
+
+pub let pf_floating_point_precision_errata : UInt
+
+pub let pf_mmx_instructions_available : UInt
+
+pub let pf_monitorx_instruction_available : UInt
+
+pub let pf_movdir64_b_instruction_available : UInt
+
+pub let pf_nx_enabled : UInt
+
+pub let pf_pae_enabled : UInt
+
+pub let pf_ppc_movemem_64_bit_ok : UInt
+
+pub let pf_rdpid_instruction_available : UInt
+
+pub let pf_rdrand_instruction_available : UInt
+
+pub let pf_rdtsc_instruction_available : UInt
+
+pub let pf_rdtscp_instruction_available : UInt
+
+pub let pf_rdwrfsgsbase_available : UInt
+
+pub let pf_reserved_feature : UInt
+
+pub let pf_second_level_address_translation : UInt
+
+pub let pf_sse3_instructions_available : UInt
+
+pub let pf_sse4_1_instructions_available : UInt
+
+pub let pf_sse4_2_instructions_available : UInt
+
+pub let pf_sse_daz_mode_available : UInt
+
+pub let pf_ssse3_instructions_available : UInt
+
+pub let pf_virt_firmware_enabled : UInt
+
+pub let pf_xmmi64_instructions_available : UInt
+
+pub let pf_xmmi_instructions_available : UInt
+
+pub let pf_xsave_enabled : UInt
+
+pub let pme_current_version : UInt
+
+pub let pme_failfast_on_commit_fail_disable : UInt
+
+pub let pme_failfast_on_commit_fail_enable : UInt
+
+pub let pme_type_fail_fast_on_commit_failure : Int
+
+pub let pme_type_max : Int
+
+pub let power_request_context_detailed_string : UInt
+
+pub let power_request_context_simple_string : UInt
+
+pub let private_namespace_flag_destroy : UInt
+
+pub let proc_thread_attribute_additive : UInt
+
+pub let proc_thread_attribute_all_application_packages_policy_4258e018a7 : UInt
+
+pub let proc_thread_attribute_all_application_packages_policy_89e82999f7 : UInt
+
+pub let proc_thread_attribute_child_process_policy_0441edd6e8 : UInt
+
+pub let proc_thread_attribute_child_process_policy_bfc34838f3 : UInt
+
+pub let proc_thread_attribute_component_filter_790e02c213 : UInt
+
+pub let proc_thread_attribute_component_filter_c00553d4c3 : UInt
+
+pub let proc_thread_attribute_desktop_app_policy_72b3302b8f : UInt
+
+pub let proc_thread_attribute_desktop_app_policy_bee1b58787 : UInt
+
+pub let proc_thread_attribute_enable_optional_x_state_features : UInt
+
+pub let proc_thread_attribute_enable_optional_xstate_features : UInt
+
+pub let proc_thread_attribute_group_affinity_c77895bf26 : UInt
+
+pub let proc_thread_attribute_group_affinity_cf4b524b96 : UInt
+
+pub let proc_thread_attribute_handle_list_9ebed9eeee : UInt
+
+pub let proc_thread_attribute_handle_list_dd5a5b6069 : UInt
+
+pub let proc_thread_attribute_ideal_processor_284e66279d : UInt
+
+pub let proc_thread_attribute_ideal_processor_706d3f471d : UInt
+
+pub let proc_thread_attribute_input : UInt
+
+pub let proc_thread_attribute_job_list_211995e833 : UInt
+
+pub let proc_thread_attribute_job_list_884f0ace38 : UInt
+
+pub let proc_thread_attribute_machine_type_afe5b3b310 : UInt
+
+pub let proc_thread_attribute_machine_type_b30c1af84b : UInt
+
+pub let proc_thread_attribute_mitigation_audit_policy_31051d6fce : UInt
+
+pub let proc_thread_attribute_mitigation_audit_policy_3addee9a56 : UInt
+
+pub let proc_thread_attribute_mitigation_policy_0158a651aa : UInt
+
+pub let proc_thread_attribute_mitigation_policy_46e0c17cbd : UInt
+
+pub let proc_thread_attribute_number : UInt
+
+pub let proc_thread_attribute_parent_process_0e0af03b5f : UInt
+
+pub let proc_thread_attribute_parent_process_b26a0d1fb3 : UInt
+
+pub let proc_thread_attribute_preferred_node_80c18d84c4 : UInt
+
+pub let proc_thread_attribute_preferred_node_c000727125 : UInt
+
+pub let proc_thread_attribute_protection_level_0415566e5c : UInt
+
+pub let proc_thread_attribute_protection_level_fa7a7b4713 : UInt
+
+pub let proc_thread_attribute_pseudo_console : UInt
+
+pub let proc_thread_attribute_pseudoconsole : UInt
+
+pub let proc_thread_attribute_replace_value : UInt
+
+pub let proc_thread_attribute_safe_open_prompt_origin_claim : UInt
+
+pub let proc_thread_attribute_security_capabilities_52c2d7dd4b : UInt
+
+pub let proc_thread_attribute_security_capabilities_5f18912115 : UInt
+
+pub let proc_thread_attribute_sve_vector_length : UInt
+
+pub let proc_thread_attribute_thread : UInt
+
+pub let proc_thread_attribute_trusted_app : UInt
+
+pub let proc_thread_attribute_ums_thread_31877f4064 : UInt
+
+pub let proc_thread_attribute_ums_thread_80bfd9c69c : UInt
+
+pub let proc_thread_attribute_win32_k_filter : UInt
+
+pub let proc_thread_attribute_win32k_filter : UInt
+
+pub let process_affinity_disable_auto_update : UInt
+
+pub let process_affinity_enable_auto_update : UInt
+
+pub let process_all_access : UInt
+
+pub let process_app_memory_info : Int
+
+pub let process_aslr_policy : Int
+
+pub let process_child_process_policy : Int
+
+pub let process_control_flow_guard_policy : Int
+
+pub let process_create_process : UInt
+
+pub let process_create_thread : UInt
+
+pub let process_creation_all_application_packages_opt_out : UInt
+
+pub let process_creation_child_process_override : UInt
+
+pub let process_creation_child_process_restricted : UInt
+
+pub let process_creation_child_process_restricted_unless_secure : UInt
+
+pub let process_creation_desktop_app_breakaway_disable_process_tree : UInt
+
+pub let process_creation_desktop_app_breakaway_enable_process_tree : UInt
+
+pub let process_creation_desktop_app_breakaway_override : UInt
+
+pub let process_creation_desktop_app_trusted_launch_allow_windows_host : UInt
+
+pub let process_creation_mitigation_audit_policy2_block_non_cet_binaries_always_off : UInt64
+
+pub let process_creation_mitigation_audit_policy2_block_non_cet_binaries_always_on : UInt64
+
+pub let process_creation_mitigation_audit_policy2_block_non_cet_binaries_defer : UInt64
+
+pub let process_creation_mitigation_audit_policy2_block_non_cet_binaries_mask : UInt64
+
+pub let process_creation_mitigation_audit_policy2_block_non_cet_binaries_reserved : UInt64
+
+pub let process_creation_mitigation_audit_policy2_cet_user_shadow_stacks_always_off : UInt64
+
+pub let process_creation_mitigation_audit_policy2_cet_user_shadow_stacks_always_on : UInt64
+
+pub let process_creation_mitigation_audit_policy2_cet_user_shadow_stacks_defer : UInt64
+
+pub let process_creation_mitigation_audit_policy2_cet_user_shadow_stacks_mask : UInt64
+
+pub let process_creation_mitigation_audit_policy2_cet_user_shadow_stacks_reserved : UInt64
+
+pub let process_creation_mitigation_audit_policy2_user_cet_set_context_ip_validation_always_off : UInt64
+
+pub let process_creation_mitigation_audit_policy2_user_cet_set_context_ip_validation_always_on : UInt64
+
+pub let process_creation_mitigation_audit_policy2_user_cet_set_context_ip_validation_defer : UInt64
+
+pub let process_creation_mitigation_audit_policy2_user_cet_set_context_ip_validation_mask : UInt64
+
+pub let process_creation_mitigation_audit_policy2_user_cet_set_context_ip_validation_reserved : UInt64
+
+pub let process_creation_mitigation_audit_policy2_xtended_control_flow_guard_always_off : UInt64
+
+pub let process_creation_mitigation_audit_policy2_xtended_control_flow_guard_always_on : UInt64
+
+pub let process_creation_mitigation_audit_policy2_xtended_control_flow_guard_defer : UInt64
+
+pub let process_creation_mitigation_audit_policy2_xtended_control_flow_guard_mask : UInt64
+
+pub let process_creation_mitigation_audit_policy2_xtended_control_flow_guard_reserved : UInt64
+
+pub let process_creation_mitigation_policy2_allow_downgrade_dynamic_code_policy_always_off : UInt64
+
+pub let process_creation_mitigation_policy2_allow_downgrade_dynamic_code_policy_always_on : UInt64
+
+pub let process_creation_mitigation_policy2_allow_downgrade_dynamic_code_policy_defer : UInt64
+
+pub let process_creation_mitigation_policy2_allow_downgrade_dynamic_code_policy_mask : UInt64
+
+pub let process_creation_mitigation_policy2_allow_downgrade_dynamic_code_policy_reserved : UInt64
+
+pub let process_creation_mitigation_policy2_block_non_cet_binaries_always_off : UInt64
+
+pub let process_creation_mitigation_policy2_block_non_cet_binaries_always_on : UInt64
+
+pub let process_creation_mitigation_policy2_block_non_cet_binaries_defer : UInt64
+
+pub let process_creation_mitigation_policy2_block_non_cet_binaries_mask : UInt64
+
+pub let process_creation_mitigation_policy2_block_non_cet_binaries_non_ehcont : UInt64
+
+pub let process_creation_mitigation_policy2_cet_dynamic_apis_out_of_proc_only_always_off : UInt64
+
+pub let process_creation_mitigation_policy2_cet_dynamic_apis_out_of_proc_only_always_on : UInt64
+
+pub let process_creation_mitigation_policy2_cet_dynamic_apis_out_of_proc_only_defer : UInt64
+
+pub let process_creation_mitigation_policy2_cet_dynamic_apis_out_of_proc_only_mask : UInt64
+
+pub let process_creation_mitigation_policy2_cet_dynamic_apis_out_of_proc_only_reserved : UInt64
+
+pub let process_creation_mitigation_policy2_cet_user_shadow_stacks_always_off : UInt64
+
+pub let process_creation_mitigation_policy2_cet_user_shadow_stacks_always_on : UInt64
+
+pub let process_creation_mitigation_policy2_cet_user_shadow_stacks_defer : UInt64
+
+pub let process_creation_mitigation_policy2_cet_user_shadow_stacks_mask : UInt64
+
+pub let process_creation_mitigation_policy2_cet_user_shadow_stacks_strict_mode : UInt64
+
+pub let process_creation_mitigation_policy2_fsctl_system_call_disable_always_off : UInt64
+
+pub let process_creation_mitigation_policy2_fsctl_system_call_disable_always_on : UInt64
+
+pub let process_creation_mitigation_policy2_fsctl_system_call_disable_defer : UInt64
+
+pub let process_creation_mitigation_policy2_fsctl_system_call_disable_mask : UInt64
+
+pub let process_creation_mitigation_policy2_fsctl_system_call_disable_reserved : UInt64
+
+pub let process_creation_mitigation_policy2_loader_integrity_continuity_always_off : UInt64
+
+pub let process_creation_mitigation_policy2_loader_integrity_continuity_always_on : UInt64
+
+pub let process_creation_mitigation_policy2_loader_integrity_continuity_audit : UInt64
+
+pub let process_creation_mitigation_policy2_loader_integrity_continuity_defer : UInt64
+
+pub let process_creation_mitigation_policy2_loader_integrity_continuity_mask : UInt64
+
+pub let process_creation_mitigation_policy2_module_tampering_protection_always_off : UInt64
+
+pub let process_creation_mitigation_policy2_module_tampering_protection_always_on : UInt64
+
+pub let process_creation_mitigation_policy2_module_tampering_protection_defer : UInt64
+
+pub let process_creation_mitigation_policy2_module_tampering_protection_mask : UInt64
+
+pub let process_creation_mitigation_policy2_module_tampering_protection_noinherit : UInt64
+
+pub let process_creation_mitigation_policy2_pointer_auth_user_ip_always_off : UInt64
+
+pub let process_creation_mitigation_policy2_pointer_auth_user_ip_always_on : UInt64
+
+pub let process_creation_mitigation_policy2_pointer_auth_user_ip_defer : UInt64
+
+pub let process_creation_mitigation_policy2_pointer_auth_user_ip_mask : UInt64
+
+pub let process_creation_mitigation_policy2_pointer_auth_user_ip_reserved : UInt64
+
+pub let process_creation_mitigation_policy2_restrict_core_sharing_always_off : UInt64
+
+pub let process_creation_mitigation_policy2_restrict_core_sharing_always_on : UInt64
+
+pub let process_creation_mitigation_policy2_restrict_core_sharing_defer : UInt64
+
+pub let process_creation_mitigation_policy2_restrict_core_sharing_mask : UInt64
+
+pub let process_creation_mitigation_policy2_restrict_core_sharing_reserved : UInt64
+
+pub let process_creation_mitigation_policy2_restrict_indirect_branch_prediction_always_off : UInt64
+
+pub let process_creation_mitigation_policy2_restrict_indirect_branch_prediction_always_on : UInt64
+
+pub let process_creation_mitigation_policy2_restrict_indirect_branch_prediction_defer : UInt64
+
+pub let process_creation_mitigation_policy2_restrict_indirect_branch_prediction_mask : UInt64
+
+pub let process_creation_mitigation_policy2_restrict_indirect_branch_prediction_reserved : UInt64
+
+pub let process_creation_mitigation_policy2_speculative_store_bypass_disable_always_off : UInt64
+
+pub let process_creation_mitigation_policy2_speculative_store_bypass_disable_always_on : UInt64
+
+pub let process_creation_mitigation_policy2_speculative_store_bypass_disable_defer : UInt64
+
+pub let process_creation_mitigation_policy2_speculative_store_bypass_disable_mask : UInt64
+
+pub let process_creation_mitigation_policy2_speculative_store_bypass_disable_reserved : UInt64
+
+pub let process_creation_mitigation_policy2_strict_control_flow_guard_always_off : UInt64
+
+pub let process_creation_mitigation_policy2_strict_control_flow_guard_always_on : UInt64
+
+pub let process_creation_mitigation_policy2_strict_control_flow_guard_defer : UInt64
+
+pub let process_creation_mitigation_policy2_strict_control_flow_guard_mask : UInt64
+
+pub let process_creation_mitigation_policy2_strict_control_flow_guard_reserved : UInt64
+
+pub let process_creation_mitigation_policy2_user_cet_set_context_ip_validation_always_off : UInt64
+
+pub let process_creation_mitigation_policy2_user_cet_set_context_ip_validation_always_on : UInt64
+
+pub let process_creation_mitigation_policy2_user_cet_set_context_ip_validation_defer : UInt64
+
+pub let process_creation_mitigation_policy2_user_cet_set_context_ip_validation_mask : UInt64
+
+pub let process_creation_mitigation_policy2_user_cet_set_context_ip_validation_relaxed_mode : UInt64
+
+pub let process_creation_mitigation_policy2_xtended_control_flow_guard_always_off : UInt64
+
+pub let process_creation_mitigation_policy2_xtended_control_flow_guard_always_on : UInt64
+
+pub let process_creation_mitigation_policy2_xtended_control_flow_guard_defer : UInt64
+
+pub let process_creation_mitigation_policy2_xtended_control_flow_guard_mask : UInt64
+
+pub let process_creation_mitigation_policy2_xtended_control_flow_guard_reserved : UInt64
+
+pub let process_creation_mitigation_policy_audit_nonsystem_fonts : UInt64
+
+pub let process_creation_mitigation_policy_block_non_microsoft_binaries_allow_store : UInt64
+
+pub let process_creation_mitigation_policy_block_non_microsoft_binaries_always_off : UInt64
+
+pub let process_creation_mitigation_policy_block_non_microsoft_binaries_always_on : UInt64
+
+pub let process_creation_mitigation_policy_block_non_microsoft_binaries_defer : UInt64
+
+pub let process_creation_mitigation_policy_block_non_microsoft_binaries_mask : UInt64
+
+pub let process_creation_mitigation_policy_bottom_up_aslr_always_off : UInt
+
+pub let process_creation_mitigation_policy_bottom_up_aslr_always_on : UInt
+
+pub let process_creation_mitigation_policy_bottom_up_aslr_defer : UInt
+
+pub let process_creation_mitigation_policy_bottom_up_aslr_mask : UInt
+
+pub let process_creation_mitigation_policy_bottom_up_aslr_reserved : UInt
+
+pub let process_creation_mitigation_policy_control_flow_guard_always_off : UInt64
+
+pub let process_creation_mitigation_policy_control_flow_guard_always_on : UInt64
+
+pub let process_creation_mitigation_policy_control_flow_guard_defer : UInt64
+
+pub let process_creation_mitigation_policy_control_flow_guard_export_suppression : UInt64
+
+pub let process_creation_mitigation_policy_control_flow_guard_mask : UInt64
+
+pub let process_creation_mitigation_policy_dep_atl_thunk_enable : UInt
+
+pub let process_creation_mitigation_policy_dep_enable : UInt
+
+pub let process_creation_mitigation_policy_extension_point_disable_always_off : UInt64
+
+pub let process_creation_mitigation_policy_extension_point_disable_always_on : UInt64
+
+pub let process_creation_mitigation_policy_extension_point_disable_defer : UInt64
+
+pub let process_creation_mitigation_policy_extension_point_disable_mask : UInt64
+
+pub let process_creation_mitigation_policy_extension_point_disable_reserved : UInt64
+
+pub let process_creation_mitigation_policy_font_disable_always_off : UInt64
+
+pub let process_creation_mitigation_policy_font_disable_always_on : UInt64
+
+pub let process_creation_mitigation_policy_font_disable_defer : UInt64
+
+pub let process_creation_mitigation_policy_font_disable_mask : UInt64
+
+pub let process_creation_mitigation_policy_force_relocate_images_always_off : UInt
+
+pub let process_creation_mitigation_policy_force_relocate_images_always_on : UInt
+
+pub let process_creation_mitigation_policy_force_relocate_images_always_on_req_relocs : UInt
+
+pub let process_creation_mitigation_policy_force_relocate_images_defer : UInt
+
+pub let process_creation_mitigation_policy_force_relocate_images_mask : UInt
+
+pub let process_creation_mitigation_policy_heap_terminate_always_off : UInt
+
+pub let process_creation_mitigation_policy_heap_terminate_always_on : UInt
+
+pub let process_creation_mitigation_policy_heap_terminate_defer : UInt
+
+pub let process_creation_mitigation_policy_heap_terminate_mask : UInt
+
+pub let process_creation_mitigation_policy_heap_terminate_reserved : UInt
+
+pub let process_creation_mitigation_policy_high_entropy_aslr_always_off : UInt
+
+pub let process_creation_mitigation_policy_high_entropy_aslr_always_on : UInt
+
+pub let process_creation_mitigation_policy_high_entropy_aslr_defer : UInt
+
+pub let process_creation_mitigation_policy_high_entropy_aslr_mask : UInt
+
+pub let process_creation_mitigation_policy_high_entropy_aslr_reserved : UInt
+
+pub let process_creation_mitigation_policy_image_load_no_low_label_always_off : UInt64
+
+pub let process_creation_mitigation_policy_image_load_no_low_label_always_on : UInt64
+
+pub let process_creation_mitigation_policy_image_load_no_low_label_defer : UInt64
+
+pub let process_creation_mitigation_policy_image_load_no_low_label_mask : UInt64
+
+pub let process_creation_mitigation_policy_image_load_no_low_label_reserved : UInt64
+
+pub let process_creation_mitigation_policy_image_load_no_remote_always_off : UInt64
+
+pub let process_creation_mitigation_policy_image_load_no_remote_always_on : UInt64
+
+pub let process_creation_mitigation_policy_image_load_no_remote_defer : UInt64
+
+pub let process_creation_mitigation_policy_image_load_no_remote_mask : UInt64
+
+pub let process_creation_mitigation_policy_image_load_no_remote_reserved : UInt64
+
+pub let process_creation_mitigation_policy_image_load_prefer_system32_always_off : UInt64
+
+pub let process_creation_mitigation_policy_image_load_prefer_system32_always_on : UInt64
+
+pub let process_creation_mitigation_policy_image_load_prefer_system32_defer : UInt64
+
+pub let process_creation_mitigation_policy_image_load_prefer_system32_mask : UInt64
+
+pub let process_creation_mitigation_policy_image_load_prefer_system32_reserved : UInt64
+
+pub let process_creation_mitigation_policy_prohibit_dynamic_code_always_off : UInt64
+
+pub let process_creation_mitigation_policy_prohibit_dynamic_code_always_on : UInt64
+
+pub let process_creation_mitigation_policy_prohibit_dynamic_code_always_on_allow_opt_out : UInt64
+
+pub let process_creation_mitigation_policy_prohibit_dynamic_code_defer : UInt64
+
+pub let process_creation_mitigation_policy_prohibit_dynamic_code_mask : UInt64
+
+pub let process_creation_mitigation_policy_sehop_enable : UInt
+
+pub let process_creation_mitigation_policy_strict_handle_checks_always_off : UInt
+
+pub let process_creation_mitigation_policy_strict_handle_checks_always_on : UInt
+
+pub let process_creation_mitigation_policy_strict_handle_checks_defer : UInt
+
+pub let process_creation_mitigation_policy_strict_handle_checks_mask : UInt
+
+pub let process_creation_mitigation_policy_strict_handle_checks_reserved : UInt
+
+pub let process_creation_mitigation_policy_win32_k_system_call_disable_always_off : UInt
+
+pub let process_creation_mitigation_policy_win32_k_system_call_disable_always_on : UInt
+
+pub let process_creation_mitigation_policy_win32_k_system_call_disable_defer : UInt
+
+pub let process_creation_mitigation_policy_win32_k_system_call_disable_mask : UInt
+
+pub let process_creation_mitigation_policy_win32_k_system_call_disable_reserved : UInt
+
+pub let process_delete : UInt
+
+pub let process_dep_disable_atl_thunk_emulation : UInt
+
+pub let process_dep_enable : UInt
+
+pub let process_dep_none : UInt
+
+pub let process_dep_policy : Int
+
+pub let process_dup_handle : UInt
+
+pub let process_dynamic_code_policy : Int
+
+pub let process_extension_point_disable_policy : Int
+
+pub let process_font_disable_policy : Int
+
+pub let process_image_load_policy : Int
+
+pub let process_in_private_info : Int
+
+pub let process_information_class_max : Int
+
+pub let process_leap_second_info : Int
+
+pub let process_leap_second_info_flag_enable_sixty_second : UInt
+
+pub let process_leap_second_info_valid_flags : UInt
+
+pub let process_machine_type_info : Int
+
+pub let process_max_override_prefetch_parameter : Int
+
+pub let process_memory_exhaustion_info : Int
+
+pub let process_memory_priority : Int
+
+pub let process_mitigation_options_mask : Int
+
+pub let process_mode_background_begin : UInt
+
+pub let process_mode_background_end : UInt
+
+pub let process_name_native : UInt
+
+pub let process_name_win32 : UInt
+
+pub let process_override_subsequent_prefetch_parameter : Int
+
+pub let process_payload_restriction_policy : Int
+
+pub let process_power_throttling : Int
+
+pub let process_power_throttling_current_version : UInt
+
+pub let process_power_throttling_execution_speed : UInt
+
+pub let process_power_throttling_ignore_timer_resolution : UInt
+
+pub let process_protection_level_info : Int
+
+pub let process_query_information : UInt
+
+pub let process_query_limited_information : UInt
+
+pub let process_read_control : UInt
+
+pub let process_redirection_trust_policy : Int
+
+pub let process_reserved_value1 : Int
+
+pub let process_sehop_policy : Int
+
+pub let process_set_information : UInt
+
+pub let process_set_limited_information : UInt
+
+pub let process_set_quota : UInt
+
+pub let process_set_sessionid : UInt
+
+pub let process_side_channel_isolation_policy : Int
+
+pub let process_signature_policy : Int
+
+pub let process_standard_rights_required : UInt
+
+pub let process_strict_handle_check_policy : Int
+
+pub let process_suspend_resume : UInt
+
+pub let process_synchronize : UInt
+
+pub let process_system_call_disable_policy : Int
+
+pub let process_system_call_filter_policy : Int
+
+pub let process_telemetry_coverage_info : Int
+
+pub let process_terminate : UInt
+
+pub let process_user_pointer_auth_policy : Int
+
+pub let process_user_shadow_stack_policy : Int
+
+pub let process_vm_operation : UInt
+
+pub let process_vm_read : UInt
+
+pub let process_vm_write : UInt
+
+pub let process_write_dac : UInt
+
+pub let process_write_owner : UInt
+
+pub let profile_kernel : UInt
+
+pub let profile_server : UInt
+
+pub let profile_user : UInt
+
+pub let protection_level_antimalware_light : UInt
+
+pub let protection_level_authenticode : UInt
+
+pub let protection_level_codegen_light : UInt
+
+pub let protection_level_lsa_light : UInt
+
+pub let protection_level_none : UInt
+
+pub let protection_level_ppl_app : UInt
+
+pub let protection_level_windows : UInt
+
+pub let protection_level_windows_light : UInt
+
+pub let protection_level_wintcb : UInt
+
+pub let protection_level_wintcb_light : UInt
+
+pub fn pulse_event_raw(@core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn query_depth_s_list_raw(@core.RawAddress) -> UInt
+
+pub fn query_full_process_image_name_a_raw(@core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn query_full_process_image_name_w_raw(@core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn query_process_affinity_update_mode_raw(@core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn query_protected_policy_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn query_threadpool_stack_information_raw(Int64, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn query_ums_thread_information_raw(@core.RawAddress, Int, @core.RawAddress, UInt, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn queue_user_apc2_raw(@core.RawAddress, @core.RawAddress, UInt64, Int) -> Int
+
+pub let queue_user_apc_callback_data_context : Int
+
+pub let queue_user_apc_flags_none : Int
+
+pub let queue_user_apc_flags_special_user_apc : Int
+
+pub fn queue_user_apc_raw(@core.RawAddress, @core.RawAddress, UInt64) -> @core.RawWin32Call[UInt]
+
+pub fn queue_user_work_item_raw(@core.RawAddress, @core.RawAddress, UInt) -> @core.RawWin32Call[Int]
+
+pub let realtime_priority_class : UInt
+
+pub fn register_wait_for_single_object_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, UInt, UInt) -> @core.RawWin32Call[Int]
+
+pub fn release_mutex_raw(@core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn release_mutex_when_callback_returns_raw(Int64, @core.RawAddress) -> Unit
+
+pub fn release_semaphore_raw(@core.RawAddress, Int, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn release_semaphore_when_callback_returns_raw(Int64, @core.RawAddress, UInt) -> Unit
+
+pub fn release_srw_lock_exclusive_raw(@core.RawAddress) -> Unit
+
+pub fn release_srw_lock_shared_raw(@core.RawAddress) -> Unit
+
+pub fn reset_event_raw(@core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn resume_thread_raw(@core.RawAddress) -> @core.RawWin32Call[UInt]
+
+pub let rtl_critical_section_all_flag_bits : UInt
+
+pub let rtl_critical_section_debug_flag_static_init : UInt
+
+pub let rtl_critical_section_flag_dynamic_spin : UInt
+
+pub let rtl_critical_section_flag_force_debug_info : UInt
+
+pub let rtl_critical_section_flag_no_debug_info : UInt
+
+pub let rtl_critical_section_flag_resource_type : UInt
+
+pub let rtl_critical_section_flag_static_init : UInt
+
+pub fn rtwq_add_periodic_callback(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn rtwq_add_periodic_callback_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn rtwq_allocate_serial_work_queue(UInt, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn rtwq_allocate_serial_work_queue_raw(UInt, @core.RawAddress) -> Int
+
+pub fn rtwq_allocate_work_queue(Int, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn rtwq_allocate_work_queue_raw(Int, @core.RawAddress) -> Int
+
+pub fn rtwq_begin_register_work_queue_with_mmcss(UInt, @core.RawAddress, UInt, Int, @core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn rtwq_begin_register_work_queue_with_mmcss_raw(UInt, @core.RawAddress, UInt, Int, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn rtwq_begin_unregister_work_queue_with_mmcss(UInt, @core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn rtwq_begin_unregister_work_queue_with_mmcss_raw(UInt, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn rtwq_cancel_deadline(@core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn rtwq_cancel_deadline_raw(@core.RawAddress) -> Int
+
+pub fn rtwq_cancel_work_item(UInt64) -> Unit raise @core.WindowsError
+
+pub fn rtwq_cancel_work_item_raw(UInt64) -> Int
+
+pub fn rtwq_create_async_result(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn rtwq_create_async_result_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn rtwq_end_register_work_queue_with_mmcss(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn rtwq_end_register_work_queue_with_mmcss_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn rtwq_get_work_queue_mmcss_class(UInt, @core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn rtwq_get_work_queue_mmcss_class_raw(UInt, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn rtwq_get_work_queue_mmcss_priority(UInt, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn rtwq_get_work_queue_mmcss_priority_raw(UInt, @core.RawAddress) -> Int
+
+pub fn rtwq_get_work_queue_mmcss_task_id(UInt, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn rtwq_get_work_queue_mmcss_task_id_raw(UInt, @core.RawAddress) -> Int
+
+pub fn rtwq_invoke_callback(@core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn rtwq_invoke_callback_raw(@core.RawAddress) -> Int
+
+pub fn rtwq_join_work_queue(UInt, @core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn rtwq_join_work_queue_raw(UInt, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn rtwq_lock_platform() -> Unit raise @core.WindowsError
+
+pub fn rtwq_lock_platform_raw() -> Int
+
+pub fn rtwq_lock_shared_work_queue(@core.RawAddress, Int, @core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn rtwq_lock_shared_work_queue_raw(@core.RawAddress, Int, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn rtwq_lock_work_queue(UInt) -> Unit raise @core.WindowsError
+
+pub fn rtwq_lock_work_queue_raw(UInt) -> Int
+
+pub let rtwq_multithreaded_workqueue : Int
+
+pub fn rtwq_put_waiting_work_item(@core.RawAddress, Int, @core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn rtwq_put_waiting_work_item_raw(@core.RawAddress, Int, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn rtwq_put_work_item(UInt, Int, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn rtwq_put_work_item_raw(UInt, Int, @core.RawAddress) -> Int
+
+pub fn rtwq_register_platform_events(@core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn rtwq_register_platform_events_raw(@core.RawAddress) -> Int
+
+pub fn rtwq_register_platform_with_mmcss(@core.RawAddress, @core.RawAddress, Int) -> Unit raise @core.WindowsError
+
+pub fn rtwq_register_platform_with_mmcss_raw(@core.RawAddress, @core.RawAddress, Int) -> Int
+
+pub fn rtwq_remove_periodic_callback(UInt) -> Unit raise @core.WindowsError
+
+pub fn rtwq_remove_periodic_callback_raw(UInt) -> Int
+
+pub fn rtwq_schedule_work_item(@core.RawAddress, Int64, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn rtwq_schedule_work_item_raw(@core.RawAddress, Int64, @core.RawAddress) -> Int
+
+pub fn rtwq_set_deadline(UInt, Int64, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn rtwq_set_deadline2(UInt, Int64, Int64, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn rtwq_set_deadline2_raw(UInt, Int64, Int64, @core.RawAddress) -> Int
+
+pub fn rtwq_set_deadline_raw(UInt, Int64, @core.RawAddress) -> Int
+
+pub fn rtwq_set_long_running(UInt, Int) -> Unit raise @core.WindowsError
+
+pub fn rtwq_set_long_running_raw(UInt, Int) -> Int
+
+pub fn rtwq_shutdown() -> Unit raise @core.WindowsError
+
+pub fn rtwq_shutdown_raw() -> Int
+
+pub let rtwq_standard_workqueue : Int
+
+pub fn rtwq_startup() -> Unit raise @core.WindowsError
+
+pub fn rtwq_startup_raw() -> Int
+
+pub fn rtwq_unjoin_work_queue(UInt, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn rtwq_unjoin_work_queue_raw(UInt, @core.RawAddress) -> Int
+
+pub fn rtwq_unlock_platform() -> Unit raise @core.WindowsError
+
+pub fn rtwq_unlock_platform_raw() -> Int
+
+pub fn rtwq_unlock_work_queue(UInt) -> Unit raise @core.WindowsError
+
+pub fn rtwq_unlock_work_queue_raw(UInt) -> Int
+
+pub fn rtwq_unregister_platform_events(@core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn rtwq_unregister_platform_events_raw(@core.RawAddress) -> Int
+
+pub fn rtwq_unregister_platform_from_mmcss() -> Unit raise @core.WindowsError
+
+pub fn rtwq_unregister_platform_from_mmcss_raw() -> Int
+
+pub let rtwq_window_workqueue : Int
+
+pub let semaphore_all_access : UInt
+
+pub let semaphore_modify_state : UInt
+
+pub fn set_critical_section_spin_count_raw(@core.RawAddress, UInt) -> UInt
+
+pub fn set_event_raw(@core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn set_event_when_callback_returns_raw(Int64, @core.RawAddress) -> Unit
+
+pub fn set_priority_class_raw(@core.RawAddress, UInt) -> @core.RawWin32Call[Int]
+
+pub fn set_process_affinity_mask_raw(@core.RawAddress, UInt64) -> @core.RawWin32Call[Int]
+
+pub fn set_process_affinity_update_mode_raw(@core.RawAddress, UInt) -> @core.RawWin32Call[Int]
+
+pub fn set_process_default_cpu_set_masks_raw(@core.RawAddress, @core.RawAddress, UInt) -> Int
+
+pub fn set_process_default_cpu_sets_raw(@core.RawAddress, @core.RawAddress, UInt) -> Int
+
+pub fn set_process_dep_policy_raw(UInt) -> @core.RawWin32Call[Int]
+
+pub fn set_process_dynamic_eh_continuation_targets_raw(@core.RawAddress, UInt, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn set_process_dynamic_enforced_cet_compatible_ranges_raw(@core.RawAddress, UInt, @core.RawAddress) -> Int
+
+pub fn set_process_information_raw(@core.RawAddress, Int, @core.RawAddress, UInt) -> @core.RawWin32Call[Int]
+
+pub fn set_process_mitigation_policy_raw(Int, @core.RawAddress, UInt64) -> @core.RawWin32Call[Int]
+
+pub fn set_process_priority_boost_raw(@core.RawAddress, Int) -> @core.RawWin32Call[Int]
+
+pub fn set_process_restriction_exemption_raw(Int) -> @core.RawWin32Call[Int]
+
+pub fn set_process_shutdown_parameters_raw(UInt, UInt) -> @core.RawWin32Call[Int]
+
+pub fn set_process_working_set_size_raw(@core.RawAddress, UInt64, UInt64) -> @core.RawWin32Call[Int]
+
+pub fn set_protected_policy_raw(@core.RawAddress, UInt64, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn set_status(@core.RawAddress, Int) -> Unit raise @core.WindowsError
+
+pub fn set_status_raw(@core.RawAddress, Int) -> Int
+
+pub fn set_thread_affinity_mask_raw(@core.RawAddress, UInt64) -> @core.RawWin32Call[UInt64]
+
+pub fn set_thread_description(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn set_thread_description_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn set_thread_group_affinity_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn set_thread_ideal_processor_ex_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn set_thread_ideal_processor_raw(@core.RawAddress, UInt) -> @core.RawWin32Call[UInt]
+
+pub fn set_thread_information_raw(@core.RawAddress, Int, @core.RawAddress, UInt) -> @core.RawWin32Call[Int]
+
+pub fn set_thread_priority_boost_raw(@core.RawAddress, Int) -> @core.RawWin32Call[Int]
+
+pub fn set_thread_priority_raw(@core.RawAddress, Int) -> @core.RawWin32Call[Int]
+
+pub fn set_thread_selected_cpu_set_masks_raw(@core.RawAddress, @core.RawAddress, UInt) -> Int
+
+pub fn set_thread_selected_cpu_sets_raw(@core.RawAddress, @core.RawAddress, UInt) -> Int
+
+pub fn set_thread_stack_guarantee_raw(@core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn set_thread_token_raw(@core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn set_threadpool_stack_information_raw(Int64, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn set_threadpool_thread_maximum_raw(Int64, UInt) -> Unit
+
+pub fn set_threadpool_thread_minimum_raw(Int64, UInt) -> @core.RawWin32Call[Int]
+
+pub fn set_threadpool_timer_ex_raw(Int64, @core.RawAddress, UInt, UInt) -> Int
+
+pub fn set_threadpool_timer_raw(Int64, @core.RawAddress, UInt, UInt) -> Unit
+
+pub fn set_threadpool_wait_ex_raw(Int64, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn set_threadpool_wait_raw(Int64, @core.RawAddress, @core.RawAddress) -> Unit
+
+pub fn set_timer_queue_timer_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, UInt, UInt, Int) -> @core.RawAddress
+
+pub fn set_ums_thread_information_raw(@core.RawAddress, Int, @core.RawAddress, UInt) -> @core.RawWin32Call[Int]
+
+pub fn set_waitable_timer_ex_raw(@core.RawAddress, @core.RawAddress, Int, @core.RawAddress, @core.RawAddress, @core.RawAddress, UInt) -> @core.RawWin32Call[Int]
+
+pub fn set_waitable_timer_raw(@core.RawAddress, @core.RawAddress, Int, @core.RawAddress, @core.RawAddress, Int) -> @core.RawWin32Call[Int]
+
+pub fn shutdown_complete(@core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn shutdown_complete_raw(@core.RawAddress) -> Int
+
+pub fn shutdown_start(@core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn shutdown_start_raw(@core.RawAddress) -> Int
+
+pub fn signal_object_and_wait_raw(@core.RawAddress, @core.RawAddress, UInt, Int) -> @core.RawWin32Call[UInt]
+
+pub fn sleep_condition_variable_cs_raw(@core.RawAddress, @core.RawAddress, UInt) -> @core.RawWin32Call[Int]
+
+pub fn sleep_condition_variable_srw_raw(@core.RawAddress, @core.RawAddress, UInt, UInt) -> @core.RawWin32Call[Int]
+
+pub fn sleep_ex_raw(UInt, Int) -> UInt
+
+pub fn sleep_raw(UInt) -> Unit
+
+pub let stack_size_param_is_a_reservation : UInt
+
+pub fn start_threadpool_io_raw(Int64) -> Unit
+
+pub let startf_forceofffeedback : UInt
+
+pub let startf_forceonfeedback : UInt
+
+pub let startf_preventpinning : UInt
+
+pub let startf_runfullscreen : UInt
+
+pub let startf_titleisappid : UInt
+
+pub let startf_titleislinkname : UInt
+
+pub let startf_untrustedsource : UInt
+
+pub let startf_usecountchars : UInt
+
+pub let startf_usefillattribute : UInt
+
+pub let startf_usehotkey : UInt
+
+pub let startf_useposition : UInt
+
+pub let startf_useshowwindow : UInt
+
+pub let startf_usesize : UInt
+
+pub let startf_usestdhandles : UInt
+
+pub fn submit_threadpool_work_raw(Int64) -> Unit
+
+pub fn suspend_thread_raw(@core.RawAddress) -> @core.RawWin32Call[UInt]
+
+pub fn switch_to_fiber_raw(@core.RawAddress) -> Unit
+
+pub fn switch_to_thread_raw() -> Int
+
+pub let synchronization_barrier_flags_block_only : UInt
+
+pub let synchronization_barrier_flags_no_delete : UInt
+
+pub let synchronization_barrier_flags_spin_only : UInt
+
+pub let synchronization_delete : UInt
+
+pub let synchronization_read_control : UInt
+
+pub let synchronization_synchronize : UInt
+
+pub let synchronization_write_dac : UInt
+
+pub let synchronization_write_owner : UInt
+
+pub fn terminate_process_raw(@core.RawAddress, UInt) -> @core.RawWin32Call[Int]
+
+pub fn terminate_thread_raw(@core.RawAddress, UInt) -> @core.RawWin32Call[Int]
+
+pub let thread_absolute_cpu_priority : Int
+
+pub let thread_all_access : UInt
+
+pub let thread_create_run_immediately : UInt
+
+pub let thread_create_suspended : UInt
+
+pub let thread_delete : UInt
+
+pub let thread_direct_impersonation : UInt
+
+pub let thread_dynamic_code_policy : Int
+
+pub let thread_get_context : UInt
+
+pub let thread_impersonate : UInt
+
+pub let thread_information_class_max : Int
+
+pub let thread_memory_priority : Int
+
+pub let thread_mode_background_begin : Int
+
+pub let thread_mode_background_end : Int
+
+pub let thread_power_throttling : Int
+
+pub let thread_power_throttling_current_version : UInt
+
+pub let thread_power_throttling_execution_speed : UInt
+
+pub let thread_power_throttling_valid_flags : UInt
+
+pub let thread_priority_above_normal : Int
+
+pub let thread_priority_below_normal : Int
+
+pub let thread_priority_highest : Int
+
+pub let thread_priority_idle : Int
+
+pub let thread_priority_lowest : Int
+
+pub let thread_priority_min : Int
+
+pub let thread_priority_normal : Int
+
+pub let thread_priority_time_critical : Int
+
+pub let thread_query_information : UInt
+
+pub let thread_query_limited_information : UInt
+
+pub let thread_read_control : UInt
+
+pub let thread_resume : UInt
+
+pub let thread_set_context : UInt
+
+pub let thread_set_information : UInt
+
+pub let thread_set_limited_information : UInt
+
+pub let thread_set_thread_token : UInt
+
+pub let thread_standard_rights_required : UInt
+
+pub let thread_suspend_resume : UInt
+
+pub let thread_synchronize : UInt
+
+pub let thread_terminate : UInt
+
+pub let thread_write_dac : UInt
+
+pub let thread_write_owner : UInt
+
+pub let timer_all_access : UInt
+
+pub let timer_modify_state : UInt
+
+pub let timer_query_state : UInt
+
+pub fn tls_alloc_raw() -> @core.RawWin32Call[UInt]
+
+pub fn tls_free_raw(UInt) -> @core.RawWin32Call[Int]
+
+pub fn tls_get_value2_raw(UInt) -> @core.RawAddress
+
+pub fn tls_get_value_raw(UInt) -> @core.RawWin32Call[@core.RawAddress]
+
+pub let tls_out_of_indexes : UInt
+
+pub fn tls_set_value_raw(UInt, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub let tp_callback_priority_count : Int
+
+pub let tp_callback_priority_high : Int
+
+pub let tp_callback_priority_invalid : Int
+
+pub let tp_callback_priority_low : Int
+
+pub let tp_callback_priority_normal : Int
+
+pub fn try_acquire_srw_lock_exclusive_raw(@core.RawAddress) -> UInt
+
+pub fn try_acquire_srw_lock_shared_raw(@core.RawAddress) -> UInt
+
+pub fn try_enter_critical_section_raw(@core.RawAddress) -> Int
+
+pub fn try_submit_threadpool_callback_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub let ums_thread_affinity : Int
+
+pub let ums_thread_invalid_info_class : Int
+
+pub let ums_thread_is_suspended : Int
+
+pub let ums_thread_is_terminated : Int
+
+pub let ums_thread_max_info_class : Int
+
+pub let ums_thread_priority : Int
+
+pub let ums_thread_teb : Int
+
+pub let ums_thread_user_context : Int
+
+pub fn ums_thread_yield_raw(@core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn unregister_wait_ex_raw(@core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn unregister_wait_raw(@core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn update_proc_thread_attribute_raw(@core.RawAddress, UInt, UInt64, @core.RawAddress, UInt64, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub let user_enabled : Int
+
+pub fn wait_for_input_idle_raw(@core.RawAddress, UInt) -> UInt
+
+pub fn wait_for_multiple_objects_ex_raw(UInt, @core.RawAddress, Int, UInt, Int) -> @core.RawWin32Call[UInt]
+
+pub fn wait_for_multiple_objects_raw(UInt, @core.RawAddress, Int, UInt) -> @core.RawWin32Call[UInt]
+
+pub fn wait_for_single_object_ex_raw(@core.RawAddress, UInt, Int) -> @core.RawWin32Call[UInt]
+
+pub fn wait_for_single_object_raw(@core.RawAddress, UInt) -> @core.RawWin32Call[UInt]
+
+pub fn wait_for_threadpool_io_callbacks_raw(Int64, Int) -> Unit
+
+pub fn wait_for_threadpool_timer_callbacks_raw(Int64, Int) -> Unit
+
+pub fn wait_for_threadpool_wait_callbacks_raw(Int64, Int) -> Unit
+
+pub fn wait_for_threadpool_work_callbacks_raw(Int64, Int) -> Unit
+
+pub fn wait_on_address_raw(@core.RawAddress, @core.RawAddress, UInt64, UInt) -> @core.RawWin32Call[Int]
+
+pub fn wake_all_condition_variable_raw(@core.RawAddress) -> Unit
+
+pub fn wake_by_address_all_raw(@core.RawAddress) -> Unit
+
+pub fn wake_by_address_single_raw(@core.RawAddress) -> Unit
+
+pub fn wake_condition_variable_raw(@core.RawAddress) -> Unit
+
+pub fn win_exec_raw(@core.RawAddress, UInt) -> UInt
+
+pub let wow64_container : Int
+
+pub fn wow64_set_thread_default_guest_machine_raw(UInt) -> UInt
+
+pub fn wow64_suspend_thread_raw(@core.RawAddress) -> @core.RawWin32Call[UInt]
+
+pub let wt_executedefault : UInt
+
+pub let wt_executeiniothread : UInt
+
+pub let wt_executeinpersistentthread : UInt
+
+pub let wt_executeintimerthread : UInt
+
+pub let wt_executeinwaitthread : UInt
+
+pub let wt_executelongfunction : UInt
+
+pub let wt_executeonlyonce : UInt
+
+pub let wt_transfer_impersonation : UInt
+
+// Errors
+
+// Types and methods
+
+// Type aliases
+pub using @99889f7a8d1c05a3 {type APCCALLBACKFUNCTION_97e5364a0c1d as APCCALLBACKFUNCTION}
+
+pub using @99889f7a8d1c05a3 {type APPMEMORYINFORMATION_f390ece32ce2 as APPMEMORYINFORMATION}
+
+pub using @99889f7a8d1c05a3 {type AVRTPRIORITY_6c575d5bda53 as AVRTPRIORITY}
+
+pub using @99889f7a8d1c05a3 {type AVRTTASKHANDLE_434b34ae0b6c as AVRTTASKHANDLE}
+
+pub using @99889f7a8d1c05a3 {type AVRTTHREADORDERINGGROUPHANDLE_1506eff7c8ce as AVRTTHREADORDERINGGROUPHANDLE}
+
+pub using @99889f7a8d1c05a3 {type AnonymousEStruct_b633ed2f3400 as AnonymousEStruct}
+
+pub using @99889f7a8d1c05a3 {type AnonymousEUnion_4f381074842a as AnonymousEUnion}
+
+pub using @99889f7a8d1c05a3 {type CONDITIONVARIABLE_8f251c1b2e18 as CONDITIONVARIABLE}
+
+pub using @99889f7a8d1c05a3 {type CREATEEVENT_e410aabfb42f as CREATEEVENT}
+
+pub using @99889f7a8d1c05a3 {type CREATEPROCESSLOGONFLAGS_23717401f83d as CREATEPROCESSLOGONFLAGS}
+
+pub using @99889f7a8d1c05a3 {type CRITICALSECTION_eda351855ea9 as CRITICALSECTION}
+
+pub using @99889f7a8d1c05a3 {type CRITICALSECTIONDEBUG_fce25766b474 as CRITICALSECTIONDEBUG}
+
+pub using @99889f7a8d1c05a3 {type DetailedEStruct_32fb2a24b99e as DetailedEStruct}
+
+pub using @99889f7a8d1c05a3 {type GETGUIRESOURCESFLAGS_1a8b09e37e49 as GETGUIRESOURCESFLAGS}
+
+pub using @99889f7a8d1c05a3 {type INITONCE_48b246e34063 as INITONCE}
+
+pub using @99889f7a8d1c05a3 {type IOCOUNTERS_69a54304c053 as IOCOUNTERS}
+
+pub using @99889f7a8d1c05a3 {type IRtwqAsyncCallback_129f903a524e as IRtwqAsyncCallback}
+
+pub using @99889f7a8d1c05a3 {type IRtwqAsyncResult_145ce03d15e0 as IRtwqAsyncResult}
+
+pub using @99889f7a8d1c05a3 {type IRtwqPlatformEvents_4987c15bdfc0 as IRtwqPlatformEvents}
+
+pub using @99889f7a8d1c05a3 {type LPFIBERSTARTROUTINE_823ee8758d9d as LPFIBERSTARTROUTINE}
+
+pub using @99889f7a8d1c05a3 {type LPPROCTHREADATTRIBUTELIST_3bb6b86f2831 as LPPROCTHREADATTRIBUTELIST}
+
+pub using @99889f7a8d1c05a3 {type LPTHREADSTARTROUTINE_4b4c12894c67 as LPTHREADSTARTROUTINE}
+
+pub using @99889f7a8d1c05a3 {type MACHINEATTRIBUTES_f9ab8dd3ab22 as MACHINEATTRIBUTES}
+
+pub using @99889f7a8d1c05a3 {type MEMORYPRIORITY_e2e380ba1bb1 as MEMORYPRIORITY}
+
+pub using @99889f7a8d1c05a3 {type MEMORYPRIORITYINFORMATION_116d946b84db as MEMORYPRIORITYINFORMATION}
+
+pub using @99889f7a8d1c05a3 {type OVERRIDEPREFETCHPARAMETER_d7356e1d7202 as OVERRIDEPREFETCHPARAMETER}
+
+pub using @99889f7a8d1c05a3 {type PEB_a35f0a2b186e as PEB}
+
+pub using @99889f7a8d1c05a3 {type PEBLDRDATA_d2add70d4078 as PEBLDRDATA}
+
+pub using @99889f7a8d1c05a3 {type PFLSCALLBACKFUNCTION_e329ecbb5e6b as PFLSCALLBACKFUNCTION}
+
+pub using @99889f7a8d1c05a3 {type PINITONCEFN_8d73290e2b33 as PINITONCEFN}
+
+pub using @99889f7a8d1c05a3 {type POWERREQUESTCONTEXTFLAGS_698cea071d0d as POWERREQUESTCONTEXTFLAGS}
+
+pub using @99889f7a8d1c05a3 {type PPSPOSTPROCESSINITROUTINE_b12bfb6275ab as PPSPOSTPROCESSINITROUTINE}
+
+pub using @99889f7a8d1c05a3 {type PROCESSACCESSRIGHTS_a532a49b61d9 as PROCESSACCESSRIGHTS}
+
+pub using @99889f7a8d1c05a3 {type PROCESSAFFINITYAUTOUPDATEFLAGS_2ba3caebbc47 as PROCESSAFFINITYAUTOUPDATEFLAGS}
+
+pub using @99889f7a8d1c05a3 {type PROCESSBASICINFORMATION_fb5c676414bd as PROCESSBASICINFORMATION}
+
+pub using @99889f7a8d1c05a3 {type PROCESSCREATIONFLAGS_fd76e56a36b1 as PROCESSCREATIONFLAGS}
+
+pub using @99889f7a8d1c05a3 {type PROCESSDEPFLAGS_6de0911ffa1f as PROCESSDEPFLAGS}
+
+pub using @99889f7a8d1c05a3 {type PROCESSDYNAMICEHCONTINUATIONTARGET_6dd2a511679e as PROCESSDYNAMICEHCONTINUATIONTARGET}
+
+pub using @99889f7a8d1c05a3 {type PROCESSDYNAMICEHCONTINUATIONTARGETSINFORMATION_105e86de3eef as PROCESSDYNAMICEHCONTINUATIONTARGETSINFORMATION}
+
+pub using @99889f7a8d1c05a3 {type PROCESSDYNAMICENFORCEDADDRESSRANGE_dc8a41706742 as PROCESSDYNAMICENFORCEDADDRESSRANGE}
+
+pub using @99889f7a8d1c05a3 {type PROCESSDYNAMICENFORCEDADDRESSRANGESINFORMATION_ae5f7012ac09 as PROCESSDYNAMICENFORCEDADDRESSRANGESINFORMATION}
+
+pub using @99889f7a8d1c05a3 {type PROCESSINFORMATION_f7eb173f94a4 as PROCESSINFORMATION}
+
+pub using @99889f7a8d1c05a3 {type PROCESSINFORMATIONCLASS_e748930dd7ef as PROCESSINFORMATIONCLASS}
+
+pub using @99889f7a8d1c05a3 {type PROCESSLEAPSECONDINFO_2f27a958b178 as PROCESSLEAPSECONDINFO}
+
+pub using @99889f7a8d1c05a3 {type PROCESSMACHINEINFORMATION_de2e816cdcaa as PROCESSMACHINEINFORMATION}
+
+pub using @99889f7a8d1c05a3 {type PROCESSMEMORYEXHAUSTIONINFO_dfcf4982c154 as PROCESSMEMORYEXHAUSTIONINFO}
+
+pub using @99889f7a8d1c05a3 {type PROCESSMEMORYEXHAUSTIONTYPE_5a79fb6b32dd as PROCESSMEMORYEXHAUSTIONTYPE}
+
+pub using @99889f7a8d1c05a3 {type PROCESSMITIGATIONPOLICY_c8bde2085d23 as PROCESSMITIGATIONPOLICY}
+
+pub using @99889f7a8d1c05a3 {type PROCESSNAMEFORMAT_191310626eac as PROCESSNAMEFORMAT}
+
+pub using @99889f7a8d1c05a3 {type PROCESSORFEATUREID_94536fead8a8 as PROCESSORFEATUREID}
+
+pub using @99889f7a8d1c05a3 {type PROCESSPOWERTHROTTLINGSTATE_d456d5c821f2 as PROCESSPOWERTHROTTLINGSTATE}
+
+pub using @99889f7a8d1c05a3 {type PROCESSPROTECTIONLEVEL_100ca19e5ea3 as PROCESSPROTECTIONLEVEL}
+
+pub using @99889f7a8d1c05a3 {type PROCESSPROTECTIONLEVELINFORMATION_0d15ca293032 as PROCESSPROTECTIONLEVELINFORMATION}
+
+pub using @99889f7a8d1c05a3 {type PROCTHREADATTRIBUTENUM_cb2fe8b4a736 as PROCTHREADATTRIBUTENUM}
+
+pub using @99889f7a8d1c05a3 {type PRTLUMSSCHEDULERENTRYPOINT_a166aecdf28d as PRTLUMSSCHEDULERENTRYPOINT}
+
+pub using @99889f7a8d1c05a3 {type PTIMERAPCROUTINE_24133d7dc351 as PTIMERAPCROUTINE}
+
+pub using @99889f7a8d1c05a3 {type PTPCALLBACKINSTANCE_3766c843e473 as PTPCALLBACKINSTANCE}
+
+pub using @99889f7a8d1c05a3 {type PTPCLEANUPGROUP_13cd8bdcfed3 as PTPCLEANUPGROUP}
+
+pub using @99889f7a8d1c05a3 {type PTPCLEANUPGROUPCANCELCALLBACK_e259c3df5df9 as PTPCLEANUPGROUPCANCELCALLBACK}
+
+pub using @99889f7a8d1c05a3 {type PTPIO_c4882629fccb as PTPIO}
+
+pub using @99889f7a8d1c05a3 {type PTPPOOL_eadd8b0723ea as PTPPOOL}
+
+pub using @99889f7a8d1c05a3 {type PTPSIMPLECALLBACK_7a5308a67e01 as PTPSIMPLECALLBACK}
+
+pub using @99889f7a8d1c05a3 {type PTPTIMER_7291b76e13e5 as PTPTIMER}
+
+pub using @99889f7a8d1c05a3 {type PTPTIMERCALLBACK_f370fbe9aa6b as PTPTIMERCALLBACK}
+
+pub using @99889f7a8d1c05a3 {type PTPWAIT_8c9e925d5607 as PTPWAIT}
+
+pub using @99889f7a8d1c05a3 {type PTPWAITCALLBACK_50a57b329890 as PTPWAITCALLBACK}
+
+pub using @99889f7a8d1c05a3 {type PTPWIN32IOCALLBACK_3b9133b8dc1a as PTPWIN32IOCALLBACK}
+
+pub using @99889f7a8d1c05a3 {type PTPWORK_663e1ac8b014 as PTPWORK}
+
+pub using @99889f7a8d1c05a3 {type PTPWORKCALLBACK_ad4222a82145 as PTPWORKCALLBACK}
+
+pub using @99889f7a8d1c05a3 {type QUEUEUSERAPCFLAGS_d2653f85259b as QUEUEUSERAPCFLAGS}
+
+pub using @99889f7a8d1c05a3 {type REASONCONTEXT_1fc2b4eb403a as REASONCONTEXT}
+
+pub using @99889f7a8d1c05a3 {type RTLUSERPROCESSPARAMETERS_9ee54f66aa3d as RTLUSERPROCESSPARAMETERS}
+
+pub using @99889f7a8d1c05a3 {type RTWQASYNCRESULT_42504f38acba as RTWQASYNCRESULT}
+
+pub using @99889f7a8d1c05a3 {type RTWQPERIODICCALLBACK_f41fabce791c as RTWQPERIODICCALLBACK}
+
+pub using @99889f7a8d1c05a3 {type RTWQWORKQUEUETYPE_9dfc2b21f75b as RTWQWORKQUEUETYPE}
+
+pub using @99889f7a8d1c05a3 {type ReasonEUnion_563e0e00b0d0 as ReasonEUnion}
+
+pub using @99889f7a8d1c05a3 {type SEStruct_17e33cc124d5 as SEStruct}
+
+pub using @99889f7a8d1c05a3 {type SRWLOCK_9abe83ab1481 as SRWLOCK}
+
+pub using @99889f7a8d1c05a3 {type STARTUPINFOA_3b952fc92559 as STARTUPINFOA}
+
+pub using @99889f7a8d1c05a3 {type STARTUPINFOEXA_374537ac5dae as STARTUPINFOEXA}
+
+pub using @99889f7a8d1c05a3 {type STARTUPINFOEXW_980068dc85c7 as STARTUPINFOEXW}
+
+pub using @99889f7a8d1c05a3 {type STARTUPINFOW_40a0d6c836f4 as STARTUPINFOW}
+
+pub using @99889f7a8d1c05a3 {type STARTUPINFOWFLAGS_c4a7e454468a as STARTUPINFOWFLAGS}
+
+pub using @99889f7a8d1c05a3 {type SYNCHRONIZATIONACCESSRIGHTS_868bacf8e154 as SYNCHRONIZATIONACCESSRIGHTS}
+
+pub using @99889f7a8d1c05a3 {type SYNCHRONIZATIONBARRIER_1adac94e4b18 as SYNCHRONIZATIONBARRIER}
+
+pub using @99889f7a8d1c05a3 {type TEB_50c50149e534 as TEB}
+
+pub using @99889f7a8d1c05a3 {type THREADACCESSRIGHTS_6bed5e017fed as THREADACCESSRIGHTS}
+
+pub using @99889f7a8d1c05a3 {type THREADCREATIONFLAGS_15de29f96ee7 as THREADCREATIONFLAGS}
+
+pub using @99889f7a8d1c05a3 {type THREADINFORMATIONCLASS_fcabef18f154 as THREADINFORMATIONCLASS}
+
+pub using @99889f7a8d1c05a3 {type THREADPOWERTHROTTLINGSTATE_d85f5a95ccfd as THREADPOWERTHROTTLINGSTATE}
+
+pub using @99889f7a8d1c05a3 {type THREADPRIORITY_5dd3261af0ea as THREADPRIORITY}
+
+pub using @99889f7a8d1c05a3 {type TPCALLBACKENVIRONV3_7381fdf652c4 as TPCALLBACKENVIRONV3}
+
+pub using @99889f7a8d1c05a3 {type TPCALLBACKPRIORITY_dfbc3aababb2 as TPCALLBACKPRIORITY}
+
+pub using @99889f7a8d1c05a3 {type TPPOOLSTACKINFORMATION_77ba0e44043f as TPPOOLSTACKINFORMATION}
+
+pub using @99889f7a8d1c05a3 {type UEUnion_cabc79aa1fc0 as UEUnion}
+
+pub using @99889f7a8d1c05a3 {type UMSSCHEDULERSTARTUPINFO_bd4bbfa5ed32 as UMSSCHEDULERSTARTUPINFO}
+
+pub using @99889f7a8d1c05a3 {type UMSSYSTEMTHREADINFORMATION_232eb3b98d4c as UMSSYSTEMTHREADINFORMATION}
+
+pub using @99889f7a8d1c05a3 {type UMSTHREADINFOCLASS_396f1e046239 as UMSTHREADINFOCLASS}
+
+pub using @99889f7a8d1c05a3 {type WAITORTIMERCALLBACK_e01bb932495e as WAITORTIMERCALLBACK}
+
+pub using @99889f7a8d1c05a3 {type WORKERCALLBACKFUNC_56188f885aae as WORKERCALLBACKFUNC}
+
+pub using @99889f7a8d1c05a3 {type WORKERTHREADFLAGS_137f494d7aef as WORKERTHREADFLAGS}
+
+// Traits
+

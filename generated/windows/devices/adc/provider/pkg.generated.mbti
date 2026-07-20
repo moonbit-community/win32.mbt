@@ -1,0 +1,77 @@
+// Generated using `moon info`, DON'T EDIT IT
+package "moonbit-community/win32-bindings/windows/devices/adc/provider"
+
+import {
+  "moonbit-community/win32-bindings/runtime/core",
+  "moonbit-community/win32-bindings/scc/3de7a6572822e286",
+  "moonbitlang/core/ref",
+}
+
+// Values
+pub fn acquire_channel(@core.RawAddress, Int) -> Unit raise @core.WindowsError
+
+pub fn acquire_channel_raw(@core.RawAddress, Int) -> Int
+
+pub let channel_count : String
+
+pub let channel_mode : String
+
+pub let differential : Int
+
+pub fn get_channel_count(@core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn get_channel_count_raw(@core.RawAddress, @ref.Ref[Int]) -> Int
+
+pub fn get_channel_mode(@core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn get_channel_mode_raw(@core.RawAddress, @ref.Ref[Int]) -> Int
+
+pub fn get_controllers_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_max_value(@core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn get_max_value_raw(@core.RawAddress, @ref.Ref[Int]) -> Int
+
+pub fn get_min_value(@core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn get_min_value_raw(@core.RawAddress, @ref.Ref[Int]) -> Int
+
+pub fn get_resolution_in_bits(@core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn get_resolution_in_bits_raw(@core.RawAddress, @ref.Ref[Int]) -> Int
+
+pub fn is_channel_mode_supported_raw(@core.RawAddress, Int, Bytes) -> Int
+
+pub let max_value : String
+
+pub let min_value : String
+
+pub fn put_channel_mode(@core.RawAddress, Int) -> Unit raise @core.WindowsError
+
+pub fn put_channel_mode_raw(@core.RawAddress, Int) -> Int
+
+pub fn read_value(@core.RawAddress, Int) -> Int raise @core.WindowsError
+
+pub fn read_value_raw(@core.RawAddress, Int, @ref.Ref[Int]) -> Int
+
+pub fn release_channel(@core.RawAddress, Int) -> Unit raise @core.WindowsError
+
+pub fn release_channel_raw(@core.RawAddress, Int) -> Int
+
+pub let resolution_in_bits : String
+
+pub let single_ended : Int
+
+// Errors
+
+// Types and methods
+
+// Type aliases
+pub using @3de7a6572822e286 {type IAdcControllerProvider_c90c8705317d as IAdcControllerProvider}
+
+pub using @3de7a6572822e286 {type IAdcProvider_f9329b86cd76 as IAdcProvider}
+
+pub using @3de7a6572822e286 {type ProviderAdcChannelMode_936dc604ac2a as ProviderAdcChannelMode}
+
+// Traits
+

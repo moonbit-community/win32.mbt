@@ -1,0 +1,142 @@
+// Generated using `moon info`, DON'T EDIT IT
+package "moonbit-community/win32-bindings/windows/web"
+
+import {
+  "moonbit-community/win32-bindings/runtime/com",
+  "moonbit-community/win32-bindings/runtime/core",
+  "moonbit-community/win32-bindings/scc/d4602fba41a4993d",
+  "moonbitlang/core/ref",
+}
+
+// Values
+pub let bad_gateway : Int
+
+pub let bad_request : Int
+
+pub let cannot_connect : Int
+
+pub let certificate_common_name_is_incorrect : Int
+
+pub let certificate_contains_errors : Int
+
+pub let certificate_expired : Int
+
+pub let certificate_is_invalid : Int
+
+pub let certificate_revoked : Int
+
+pub let conflict : Int
+
+pub let connection_aborted : Int
+
+pub let connection_reset : Int
+
+pub let disconnected : Int
+
+pub let error_http_invalid_server_response : Int
+
+pub let expectation_failed : Int
+
+pub let forbidden : Int
+
+pub let found : Int
+
+pub let gateway_timeout : Int
+
+pub fn get_status(@core.RawAddress, Int) -> Int raise @core.WindowsError
+
+pub fn get_status_raw(@core.RawAddress, Int, @ref.Ref[Int]) -> Int
+
+pub let gone : Int
+
+pub let host_name_not_resolved : Int
+
+pub let http_to_https_on_redirection : Int
+
+pub let http_version_not_supported : Int
+
+pub let https_to_http_on_redirection : Int
+
+pub let insufficient_range_support : Int
+
+pub let internal_server_error : Int
+
+pub let length_required : Int
+
+pub let method_not_allowed : Int
+
+pub let missing_content_length_support : Int
+
+pub let moved_permanently : Int
+
+pub let multiple_choices : Int
+
+pub let not_acceptable : Int
+
+pub let not_found : Int
+
+pub let not_implemented : Int
+
+pub let not_modified : Int
+
+pub let operation_canceled : Int
+
+pub let payment_required : Int
+
+pub let precondition_failed : Int
+
+pub let proxy_authentication_required : Int
+
+pub let redirect_failed : Int
+
+pub let request_entity_too_large : Int
+
+pub let request_timeout : Int
+
+pub let request_uri_too_long : Int
+
+pub let requested_range_not_satisfiable : Int
+
+pub let see_other : Int
+
+pub let server_unreachable : Int
+
+pub let service_unavailable : Int
+
+pub fn static_factory(@core.Guid) -> @com.ComPtr[@com.IInspectable] raise @core.WindowsError
+
+pub let temporary_redirect : Int
+
+pub let timeout : Int
+
+pub let unauthorized : Int
+
+pub let unexpected_client_error : Int
+
+pub let unexpected_redirection : Int
+
+pub let unexpected_server_error : Int
+
+pub let unexpected_status_code : Int
+
+pub let unknown : Int
+
+pub let unsupported_media_type : Int
+
+pub fn uri_to_stream_async_raw(@core.RawAddress, @core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub let use_proxy : Int
+
+// Errors
+
+// Types and methods
+
+// Type aliases
+pub using @d4602fba41a4993d {type IUriToStreamResolver_9adc68bb0028 as IUriToStreamResolver}
+
+pub using @d4602fba41a4993d {type WebError_1eec7d8ea48b as WebError}
+
+pub using @d4602fba41a4993d {type WebErrorStatus_78272d36c6b1 as WebErrorStatus}
+
+// Traits
+

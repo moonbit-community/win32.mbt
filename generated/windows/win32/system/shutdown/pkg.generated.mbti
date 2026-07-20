@@ -1,0 +1,240 @@
+// Generated using `moon info`, DON'T EDIT IT
+package "moonbit-community/win32-bindings/windows/win32/system/shutdown"
+
+import {
+  "moonbit-community/win32-bindings/runtime/core",
+  "moonbit-community/win32-bindings/scc/0289dd4951d67162",
+}
+
+// Values
+pub fn abort_system_shutdown_a_raw(@core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn abort_system_shutdown_w_raw(@core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn check_for_hiberboot_raw(@core.RawAddress, UInt) -> UInt
+
+pub let ewx_arso : UInt
+
+pub let ewx_bootoptions : UInt
+
+pub let ewx_check_safe_for_server : UInt
+
+pub let ewx_force : UInt
+
+pub let ewx_forceifhung : UInt
+
+pub let ewx_hybrid_shutdown : UInt
+
+pub let ewx_logoff : UInt
+
+pub let ewx_poweroff : UInt
+
+pub let ewx_quickresolve : UInt
+
+pub let ewx_reboot : UInt
+
+pub let ewx_restartapps : UInt
+
+pub let ewx_shutdown : UInt
+
+pub let ewx_system_initiated : UInt
+
+pub fn exit_windows_ex_raw(UInt, UInt) -> @core.RawWin32Call[Int]
+
+pub fn initiate_shutdown_a_raw(@core.RawAddress, @core.RawAddress, UInt, UInt, UInt) -> UInt
+
+pub fn initiate_shutdown_w_raw(@core.RawAddress, @core.RawAddress, UInt, UInt, UInt) -> UInt
+
+pub fn initiate_system_shutdown_a_raw(@core.RawAddress, @core.RawAddress, UInt, Int, Int) -> @core.RawWin32Call[Int]
+
+pub fn initiate_system_shutdown_ex_a_raw(@core.RawAddress, @core.RawAddress, UInt, Int, Int, UInt) -> @core.RawWin32Call[Int]
+
+pub fn initiate_system_shutdown_ex_w_raw(@core.RawAddress, @core.RawAddress, UInt, Int, Int, UInt) -> @core.RawWin32Call[Int]
+
+pub fn initiate_system_shutdown_w_raw(@core.RawAddress, @core.RawAddress, UInt, Int, Int) -> @core.RawWin32Call[Int]
+
+pub fn lock_work_station_raw() -> @core.RawWin32Call[Int]
+
+pub let max_num_reasons : UInt
+
+pub let max_reason_bugid_len : UInt
+
+pub let max_reason_comment_len : UInt
+
+pub let max_reason_desc_len : UInt
+
+pub let max_reason_name_len : UInt
+
+pub let policy_showreasonui_always : UInt
+
+pub let policy_showreasonui_never : UInt
+
+pub let policy_showreasonui_serveronly : UInt
+
+pub let policy_showreasonui_workstationonly : UInt
+
+pub let shtdn_reason_flag_clean_ui : UInt
+
+pub let shtdn_reason_flag_comment_required : UInt
+
+pub let shtdn_reason_flag_dirty_problem_id_required : UInt
+
+pub let shtdn_reason_flag_dirty_ui : UInt
+
+pub let shtdn_reason_flag_mobile_ui_reserved : UInt
+
+pub let shtdn_reason_flag_planned : UInt
+
+pub let shtdn_reason_flag_user_defined : UInt
+
+pub let shtdn_reason_legacy_api : UInt
+
+pub let shtdn_reason_major_application : UInt
+
+pub let shtdn_reason_major_hardware : UInt
+
+pub let shtdn_reason_major_legacy_api : UInt
+
+pub let shtdn_reason_major_none : UInt
+
+pub let shtdn_reason_major_operatingsystem : UInt
+
+pub let shtdn_reason_major_other : UInt
+
+pub let shtdn_reason_major_power : UInt
+
+pub let shtdn_reason_major_software : UInt
+
+pub let shtdn_reason_major_system : UInt
+
+pub let shtdn_reason_minor_bluescreen : UInt
+
+pub let shtdn_reason_minor_cordunplugged : UInt
+
+pub let shtdn_reason_minor_dc_demotion : UInt
+
+pub let shtdn_reason_minor_dc_promotion : UInt
+
+pub let shtdn_reason_minor_disk : UInt
+
+pub let shtdn_reason_minor_environment : UInt
+
+pub let shtdn_reason_minor_hardware_driver : UInt
+
+pub let shtdn_reason_minor_hotfix : UInt
+
+pub let shtdn_reason_minor_hotfix_uninstall : UInt
+
+pub let shtdn_reason_minor_hung : UInt
+
+pub let shtdn_reason_minor_installation : UInt
+
+pub let shtdn_reason_minor_maintenance : UInt
+
+pub let shtdn_reason_minor_mmc : UInt
+
+pub let shtdn_reason_minor_network_connectivity : UInt
+
+pub let shtdn_reason_minor_networkcard : UInt
+
+pub let shtdn_reason_minor_none : UInt
+
+pub let shtdn_reason_minor_other : UInt
+
+pub let shtdn_reason_minor_otherdriver : UInt
+
+pub let shtdn_reason_minor_power_supply : UInt
+
+pub let shtdn_reason_minor_processor : UInt
+
+pub let shtdn_reason_minor_reconfig : UInt
+
+pub let shtdn_reason_minor_security : UInt
+
+pub let shtdn_reason_minor_securityfix : UInt
+
+pub let shtdn_reason_minor_securityfix_uninstall : UInt
+
+pub let shtdn_reason_minor_servicepack : UInt
+
+pub let shtdn_reason_minor_servicepack_uninstall : UInt
+
+pub let shtdn_reason_minor_systemrestore : UInt
+
+pub let shtdn_reason_minor_termsrv : UInt
+
+pub let shtdn_reason_minor_unstable : UInt
+
+pub let shtdn_reason_minor_upgrade : UInt
+
+pub let shtdn_reason_minor_wmi : UInt
+
+pub let shtdn_reason_none : UInt
+
+pub let shtdn_reason_unknown : UInt
+
+pub let shtdn_reason_valid_bit_mask : UInt
+
+pub let shutdown_arso : UInt
+
+pub fn shutdown_block_reason_create_raw(@core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn shutdown_block_reason_destroy_raw(@core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn shutdown_block_reason_query_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub let shutdown_check_safe_for_server : UInt
+
+pub let shutdown_force_others : UInt
+
+pub let shutdown_force_self : UInt
+
+pub let shutdown_grace_override : UInt
+
+pub let shutdown_hybrid : UInt
+
+pub let shutdown_install_updates : UInt
+
+pub let shutdown_mobile_ui : UInt
+
+pub let shutdown_noreboot : UInt
+
+pub let shutdown_poweroff : UInt
+
+pub let shutdown_restart : UInt
+
+pub let shutdown_restart_bootoptions : UInt
+
+pub let shutdown_restartapps : UInt
+
+pub let shutdown_skip_svc_preshutdown : UInt
+
+pub let shutdown_soft_reboot : UInt
+
+pub let shutdown_system_initiated : UInt
+
+pub let shutdown_type_len : UInt
+
+pub let shutdown_update_poweroff : UInt
+
+pub let shutdown_vail_container : UInt
+
+pub let snapshot_policy_always : UInt
+
+pub let snapshot_policy_never : UInt
+
+pub let snapshot_policy_unplanned : UInt
+
+// Errors
+
+// Types and methods
+
+// Type aliases
+pub using @0289dd4951d67162 {type EXITWINDOWSFLAGS_20229754a472 as EXITWINDOWSFLAGS}
+
+pub using @0289dd4951d67162 {type SHUTDOWNFLAGS_71301ad14fd6 as SHUTDOWNFLAGS}
+
+pub using @0289dd4951d67162 {type SHUTDOWNREASON_e655f02c9839 as SHUTDOWNREASON}
+
+// Traits
+

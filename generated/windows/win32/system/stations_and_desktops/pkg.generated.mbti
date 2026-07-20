@@ -1,0 +1,174 @@
+// Generated using `moon info`, DON'T EDIT IT
+package "moonbit-community/win32-bindings/windows/win32/system/stations_and_desktops"
+
+import {
+  "moonbit-community/win32-bindings/runtime/core",
+  "moonbit-community/win32-bindings/scc/1e80b539d3a8dd8a",
+}
+
+// Values
+pub fn broadcast_system_message_a_raw(UInt, @core.RawAddress, UInt, UInt64, Int64) -> Int
+
+pub fn broadcast_system_message_ex_a_raw(UInt, @core.RawAddress, UInt, UInt64, Int64, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn broadcast_system_message_ex_w_raw(UInt, @core.RawAddress, UInt, UInt64, Int64, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn broadcast_system_message_w_raw(UInt, @core.RawAddress, UInt, UInt64, Int64) -> @core.RawWin32Call[Int]
+
+pub let bsf_allowsfw : UInt
+
+pub let bsf_flushdisk : UInt
+
+pub let bsf_forceifhung : UInt
+
+pub let bsf_ignorecurrenttask : UInt
+
+pub let bsf_luid : UInt
+
+pub let bsf_nohang : UInt
+
+pub let bsf_notimeoutifnothung : UInt
+
+pub let bsf_postmessage : UInt
+
+pub let bsf_query : UInt
+
+pub let bsf_returnhdesk : UInt
+
+pub let bsf_sendnotifymessage : UInt
+
+pub let bsm_allcomponents : UInt
+
+pub let bsm_alldesktops : UInt
+
+pub let bsm_applications : UInt
+
+pub fn close_desktop_raw(@core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn close_window_station_raw(@core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn create_desktop_a_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, UInt, UInt, @core.RawAddress) -> @core.RawWin32Call[@core.RawAddress]
+
+pub fn create_desktop_ex_a_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, UInt, UInt, @core.RawAddress, UInt, @core.RawAddress) -> @core.RawWin32Call[@core.RawAddress]
+
+pub fn create_desktop_ex_w_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, UInt, UInt, @core.RawAddress, UInt, @core.RawAddress) -> @core.RawWin32Call[@core.RawAddress]
+
+pub fn create_desktop_w_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, UInt, UInt, @core.RawAddress) -> @core.RawWin32Call[@core.RawAddress]
+
+pub fn create_window_station_a_raw(@core.RawAddress, UInt, UInt, @core.RawAddress) -> @core.RawWin32Call[@core.RawAddress]
+
+pub fn create_window_station_w_raw(@core.RawAddress, UInt, UInt, @core.RawAddress) -> @core.RawWin32Call[@core.RawAddress]
+
+pub let desktop_createmenu : UInt
+
+pub let desktop_createwindow : UInt
+
+pub let desktop_delete : UInt
+
+pub let desktop_enumerate : UInt
+
+pub let desktop_hookcontrol : UInt
+
+pub let desktop_journalplayback : UInt
+
+pub let desktop_journalrecord : UInt
+
+pub let desktop_read_control : UInt
+
+pub let desktop_readobjects : UInt
+
+pub let desktop_switchdesktop : UInt
+
+pub let desktop_synchronize : UInt
+
+pub let desktop_write_dac : UInt
+
+pub let desktop_write_owner : UInt
+
+pub let desktop_writeobjects : UInt
+
+pub let df_allowotheraccounthook : UInt
+
+pub fn enum_desktop_windows_raw(@core.RawAddress, @core.RawAddress, Int64) -> @core.RawWin32Call[Int]
+
+pub fn enum_desktops_a_raw(@core.RawAddress, @core.RawAddress, Int64) -> @core.RawWin32Call[Int]
+
+pub fn enum_desktops_w_raw(@core.RawAddress, @core.RawAddress, Int64) -> @core.RawWin32Call[Int]
+
+pub fn enum_window_stations_a_raw(@core.RawAddress, Int64) -> @core.RawWin32Call[Int]
+
+pub fn enum_window_stations_w_raw(@core.RawAddress, Int64) -> @core.RawWin32Call[Int]
+
+pub fn get_process_window_station_raw() -> @core.RawWin32Call[@core.RawAddress]
+
+pub fn get_thread_desktop_raw(UInt) -> @core.RawWin32Call[@core.RawAddress]
+
+pub fn get_user_object_information_a_raw(@core.RawAddress, Int, @core.RawAddress, UInt, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn get_user_object_information_w_raw(@core.RawAddress, Int, @core.RawAddress, UInt, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn open_desktop_a_raw(@core.RawAddress, UInt, Int, UInt) -> @core.RawWin32Call[@core.RawAddress]
+
+pub fn open_desktop_w_raw(@core.RawAddress, UInt, Int, UInt) -> @core.RawWin32Call[@core.RawAddress]
+
+pub fn open_input_desktop_raw(UInt, Int, UInt) -> @core.RawWin32Call[@core.RawAddress]
+
+pub fn open_window_station_a_raw(@core.RawAddress, Int, UInt) -> @core.RawWin32Call[@core.RawAddress]
+
+pub fn open_window_station_w_raw(@core.RawAddress, Int, UInt) -> @core.RawWin32Call[@core.RawAddress]
+
+pub fn set_process_window_station_raw(@core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn set_thread_desktop_raw(@core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn set_user_object_information_a_raw(@core.RawAddress, Int, @core.RawAddress, UInt) -> @core.RawWin32Call[Int]
+
+pub fn set_user_object_information_w_raw(@core.RawAddress, Int, @core.RawAddress, UInt) -> @core.RawWin32Call[Int]
+
+pub fn switch_desktop_raw(@core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub let uoi_flags : Int
+
+pub let uoi_heapsize : Int
+
+pub let uoi_io : Int
+
+pub let uoi_name : Int
+
+pub let uoi_type : Int
+
+pub let uoi_user_sid : Int
+
+// Errors
+
+// Types and methods
+
+// Type aliases
+pub using @1e80b539d3a8dd8a {type BROADCASTSYSTEMMESSAGEFLAGS_ff4f95049498 as BROADCASTSYSTEMMESSAGEFLAGS}
+
+pub using @1e80b539d3a8dd8a {type BROADCASTSYSTEMMESSAGEINFO_be2d8a8f95d7 as BROADCASTSYSTEMMESSAGEINFO}
+
+pub using @1e80b539d3a8dd8a {type BSMINFO_b85559f64688 as BSMINFO}
+
+pub using @1e80b539d3a8dd8a {type DESKTOPACCESSFLAGS_d724193547e6 as DESKTOPACCESSFLAGS}
+
+pub using @1e80b539d3a8dd8a {type DESKTOPCONTROLFLAGS_3dbb3818fbd9 as DESKTOPCONTROLFLAGS}
+
+pub using @1e80b539d3a8dd8a {type DESKTOPENUMPROCA_31d2efe39e96 as DESKTOPENUMPROCA}
+
+pub using @1e80b539d3a8dd8a {type DESKTOPENUMPROCW_d9bbebef38e1 as DESKTOPENUMPROCW}
+
+pub using @1e80b539d3a8dd8a {type HDESK_287357fbf7fd as HDESK}
+
+pub using @1e80b539d3a8dd8a {type HWINSTA_cd078b6dd9d3 as HWINSTA}
+
+pub using @1e80b539d3a8dd8a {type USEROBJECTFLAGS_55c85712e3d2 as USEROBJECTFLAGS}
+
+pub using @1e80b539d3a8dd8a {type USEROBJECTINFORMATIONINDEX_9fed24ccb3e5 as USEROBJECTINFORMATIONINDEX}
+
+pub using @1e80b539d3a8dd8a {type WINSTAENUMPROCA_0452269a4ed2 as WINSTAENUMPROCA}
+
+pub using @1e80b539d3a8dd8a {type WINSTAENUMPROCW_517265042ee3 as WINSTAENUMPROCW}
+
+// Traits
+

@@ -1,0 +1,452 @@
+// Generated using `moon info`, DON'T EDIT IT
+package "moonbit-community/win32-bindings/windows/win32/security/cryptography/ui"
+
+import {
+  "moonbit-community/win32-bindings/runtime/core",
+  "moonbit-community/win32-bindings/scc/54a1289fc33cda5c",
+}
+
+// Values
+pub let action_revocation_default_cache : UInt
+
+pub let action_revocation_default_online : UInt
+
+pub let cert_credential_provider_id : Int
+
+pub let cert_dispwell_distrust_add_ca_cert : UInt
+
+pub let cert_dispwell_distrust_add_leaf_cert : UInt
+
+pub let cert_dispwell_distrust_ca_cert : UInt
+
+pub let cert_dispwell_distrust_leaf_cert : UInt
+
+pub let cert_dispwell_select : UInt
+
+pub let cert_dispwell_trust_add_ca_cert : UInt
+
+pub let cert_dispwell_trust_add_leaf_cert : UInt
+
+pub let cert_dispwell_trust_ca_cert : UInt
+
+pub let cert_dispwell_trust_leaf_cert : UInt
+
+pub let cert_filter_include_v1_certs : UInt
+
+pub let cert_filter_issuer_certs_only : UInt
+
+pub let cert_filter_key_exists : UInt
+
+pub let cert_filter_leaf_certs_only : UInt
+
+pub let cert_filter_op_equality : UInt
+
+pub let cert_filter_op_exists : UInt
+
+pub let cert_filter_op_not_exists : UInt
+
+pub let cert_filter_valid_signature : UInt
+
+pub let cert_filter_valid_time_range : UInt
+
+pub fn cert_selection_get_serialized_blob(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn cert_selection_get_serialized_blob_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub let cert_trust_do_full_search : UInt
+
+pub let cert_trust_do_full_trust : UInt
+
+pub let cert_trust_mask : UInt
+
+pub let cert_trust_permit_missing_crls : UInt
+
+pub let cert_validity_after_end : UInt
+
+pub let cert_validity_before_start : UInt
+
+pub let cert_validity_certificate_revoked : UInt
+
+pub let cert_validity_crl_out_of_date : UInt
+
+pub let cert_validity_explicitly_distrusted : UInt
+
+pub let cert_validity_extended_usage_failure : UInt
+
+pub let cert_validity_issuer_distrust : UInt
+
+pub let cert_validity_issuer_invalid : UInt
+
+pub let cert_validity_key_usage_ext_failure : UInt
+
+pub let cert_validity_mask_trust : UInt
+
+pub let cert_validity_mask_validity : UInt
+
+pub let cert_validity_name_constraints_failure : UInt
+
+pub let cert_validity_no_crl_found : UInt
+
+pub let cert_validity_no_issuer_cert_found : UInt
+
+pub let cert_validity_no_trust_data : UInt
+
+pub let cert_validity_other_error : UInt
+
+pub let cert_validity_other_extension_failure : UInt
+
+pub let cert_validity_period_nesting_failure : UInt
+
+pub let cert_validity_signature_fails : UInt
+
+pub let cert_validity_unknown_critical_extension : UInt
+
+pub let certview_cryptui_lparam : UInt
+
+pub let cm_add_cert_stores : UInt
+
+pub let cm_enablehook : UInt
+
+pub let cm_enabletemplate : UInt
+
+pub let cm_hide_advancepage : UInt
+
+pub let cm_hide_detailpage : UInt
+
+pub let cm_hide_trustpage : UInt
+
+pub let cm_no_edittrust : UInt
+
+pub let cm_no_namechange : UInt
+
+pub let cm_show_help : UInt
+
+pub let cm_show_helpicon : UInt
+
+pub let cm_viewflags_mask : UInt
+
+pub fn crypt_ui_dlg_cert_mgr_raw(@core.RawAddress) -> Int
+
+pub fn crypt_ui_dlg_select_certificate_from_store_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, UInt, UInt, @core.RawAddress) -> @core.RawAddress
+
+pub fn crypt_ui_dlg_view_certificate_a_raw(@core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn crypt_ui_dlg_view_certificate_w_raw(@core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn crypt_ui_dlg_view_context_raw(UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress, UInt, @core.RawAddress) -> Int
+
+pub fn crypt_ui_wiz_digital_sign_raw(UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn crypt_ui_wiz_export_raw(UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn crypt_ui_wiz_free_digital_sign_context_raw(@core.RawAddress) -> Int
+
+pub fn crypt_ui_wiz_import_raw(UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub let cryptdlg_action_mask : UInt
+
+pub let cryptdlg_cache_only_url_retrieval : UInt
+
+pub let cryptdlg_disable_aia : UInt
+
+pub let cryptdlg_policy_mask : UInt
+
+pub let cryptdlg_revocation_cache : UInt
+
+pub let cryptdlg_revocation_default : UInt
+
+pub let cryptdlg_revocation_none : UInt
+
+pub let cryptdlg_revocation_online : UInt
+
+pub let cryptui_accept_decline_style : UInt
+
+pub let cryptui_cache_only_url_retrieval : UInt
+
+pub let cryptui_cert_mgr_publisher_tab : UInt
+
+pub let cryptui_cert_mgr_single_tab_flag : UInt
+
+pub let cryptui_cert_mgr_tab_mask : UInt
+
+pub let cryptui_disable_addtostore : UInt
+
+pub let cryptui_disable_editproperties : UInt
+
+pub let cryptui_disable_export : UInt
+
+pub let cryptui_disable_htmllink : UInt
+
+pub let cryptui_disable_issuerstatement : UInt
+
+pub let cryptui_dont_open_stores : UInt
+
+pub let cryptui_enable_addtostore : UInt
+
+pub let cryptui_enable_editproperties : UInt
+
+pub let cryptui_enable_revocation_check_chain : UInt
+
+pub let cryptui_enable_revocation_check_chain_exclude_root : UInt
+
+pub let cryptui_enable_revocation_check_end_cert : UInt
+
+pub let cryptui_enable_revocation_checking : UInt
+
+pub let cryptui_hide_detailpage : UInt
+
+pub let cryptui_hide_hierarchypage : UInt
+
+pub let cryptui_ignore_untrusted_root : UInt
+
+pub let cryptui_only_open_root_store : UInt
+
+pub let cryptui_select_expiration_column : UInt64
+
+pub let cryptui_select_friendlyname_column : UInt64
+
+pub let cryptui_select_intendeduse_column : UInt64
+
+pub let cryptui_select_issuedby_column : UInt64
+
+pub let cryptui_select_issuedto_column : UInt64
+
+pub let cryptui_select_location_column : UInt64
+
+pub let cryptui_warn_remote_trust : UInt
+
+pub let cryptui_warn_untrusted_root : UInt
+
+pub let cryptui_wiz_digital_sign_add_chain : UInt
+
+pub let cryptui_wiz_digital_sign_add_chain_no_root : UInt
+
+pub let cryptui_wiz_digital_sign_add_none : UInt
+
+pub let cryptui_wiz_digital_sign_cert : UInt
+
+pub let cryptui_wiz_digital_sign_commercial : UInt
+
+pub let cryptui_wiz_digital_sign_exclude_page_hashes : UInt
+
+pub let cryptui_wiz_digital_sign_include_page_hashes : UInt
+
+pub let cryptui_wiz_digital_sign_individual : UInt
+
+pub let cryptui_wiz_digital_sign_none : UInt
+
+pub let cryptui_wiz_digital_sign_pvk : UInt
+
+pub let cryptui_wiz_digital_sign_pvk_file : UInt
+
+pub let cryptui_wiz_digital_sign_pvk_prov : UInt
+
+pub let cryptui_wiz_digital_sign_store : UInt
+
+pub let cryptui_wiz_digital_sign_subject_blob : UInt
+
+pub let cryptui_wiz_digital_sign_subject_file : UInt
+
+pub let cryptui_wiz_digital_sign_subject_none : UInt
+
+pub let cryptui_wiz_export_cert_context : UInt
+
+pub let cryptui_wiz_export_cert_store : UInt
+
+pub let cryptui_wiz_export_cert_store_certificates_only : UInt
+
+pub let cryptui_wiz_export_crl_context : UInt
+
+pub let cryptui_wiz_export_ctl_context : UInt
+
+pub let cryptui_wiz_export_format_base64 : UInt
+
+pub let cryptui_wiz_export_format_crl : UInt
+
+pub let cryptui_wiz_export_format_ctl : UInt
+
+pub let cryptui_wiz_export_format_der : UInt
+
+pub let cryptui_wiz_export_format_pfx : UInt
+
+pub let cryptui_wiz_export_format_pkcs7 : UInt
+
+pub let cryptui_wiz_export_format_serialized_cert_store : UInt
+
+pub let cryptui_wiz_export_no_delete_private_key : UInt
+
+pub let cryptui_wiz_export_private_key : UInt
+
+pub let cryptui_wiz_ignore_no_ui_flag_for_csps : UInt
+
+pub let cryptui_wiz_import_allow_cert : UInt
+
+pub let cryptui_wiz_import_allow_crl : UInt
+
+pub let cryptui_wiz_import_allow_ctl : UInt
+
+pub let cryptui_wiz_import_no_change_dest_store : UInt
+
+pub let cryptui_wiz_import_remote_dest_store : UInt
+
+pub let cryptui_wiz_import_subject_cert_context : UInt
+
+pub let cryptui_wiz_import_subject_cert_store : UInt
+
+pub let cryptui_wiz_import_subject_crl_context : UInt
+
+pub let cryptui_wiz_import_subject_ctl_context : UInt
+
+pub let cryptui_wiz_import_subject_file : UInt
+
+pub let cryptui_wiz_import_to_currentuser : UInt
+
+pub let cryptui_wiz_import_to_localmachine : UInt
+
+pub let cryptui_wiz_no_ui : UInt
+
+pub let cryptui_wiz_no_ui_except_csp : UInt
+
+pub let crytpdlg_flags_mask : UInt
+
+pub let css_allowmultiselect : UInt
+
+pub let css_enablehook : UInt
+
+pub let css_enabletemplate : UInt
+
+pub let css_enabletemplatehandle : UInt
+
+pub let css_hide_properties : UInt
+
+pub let css_selectcert_mask : UInt
+
+pub let css_show_help : UInt
+
+pub let ctl_modify_request_add_not_trusted : UInt
+
+pub let ctl_modify_request_add_trusted : UInt
+
+pub let ctl_modify_request_remove : UInt
+
+pub let policy_ignore_non_critical_bc : UInt
+
+pub let selcert_algorithm : UInt
+
+pub let selcert_certlist : UInt
+
+pub let selcert_fineprint : UInt
+
+pub let selcert_issued_to : UInt
+
+pub let selcert_properties : UInt
+
+pub let selcert_serial_num : UInt
+
+pub let selcert_thumbprint : UInt
+
+pub let selcert_validity : UInt
+
+pub let sz_cert_certificate_action_verify : String
+
+// Errors
+
+// Types and methods
+
+// Type aliases
+pub using @54a1289fc33cda5c {type Anonymous1EUnion_206725b0fc93 as Anonymous1EUnion}
+
+pub using @54a1289fc33cda5c {type Anonymous2EUnion_4700239676e8 as Anonymous2EUnion}
+
+pub using @54a1289fc33cda5c {type AnonymousEUnion_215805aed50e as AnonymousEUnion_215805aed5}
+
+pub using @54a1289fc33cda5c {type AnonymousEUnion_85872e24ca3c as AnonymousEUnion_85872e24ca}
+
+pub using @54a1289fc33cda5c {type AnonymousEUnion_8ac050b8de8c as AnonymousEUnion_8ac050b8de}
+
+pub using @54a1289fc33cda5c {type AnonymousEUnion_ba97eaa390a2 as AnonymousEUnion_ba97eaa390}
+
+pub using @54a1289fc33cda5c {type AnonymousEUnion_d3d22e54f5ed as AnonymousEUnion_d3d22e54f5}
+
+pub using @54a1289fc33cda5c {type CERTFILTERDATA_32cd652e8353 as CERTFILTERDATA}
+
+pub using @54a1289fc33cda5c {type CERTFILTEREXTENSIONMATCH_6fae9c7dcc32 as CERTFILTEREXTENSIONMATCH}
+
+pub using @54a1289fc33cda5c {type CERTSELECTSTRUCTA_852e470f77a5 as CERTSELECTSTRUCTA}
+
+pub using @54a1289fc33cda5c {type CERTSELECTSTRUCTFLAGS_8d7f7594c0de as CERTSELECTSTRUCTFLAGS}
+
+pub using @54a1289fc33cda5c {type CERTSELECTSTRUCTW_404365920a53 as CERTSELECTSTRUCTW}
+
+pub using @54a1289fc33cda5c {type CERTSELECTUIINPUT_ef41b11a1417 as CERTSELECTUIINPUT}
+
+pub using @54a1289fc33cda5c {type CERTVERIFYCERTIFICATETRUST_c8691f44f71f as CERTVERIFYCERTIFICATETRUST}
+
+pub using @54a1289fc33cda5c {type CERTVIEWPROPERTIESSTRUCTA_7c35a2f62842 as CERTVIEWPROPERTIESSTRUCTA}
+
+pub using @54a1289fc33cda5c {type CERTVIEWPROPERTIESSTRUCTFLAGS_08999ecfd2db as CERTVIEWPROPERTIESSTRUCTFLAGS}
+
+pub using @54a1289fc33cda5c {type CERTVIEWPROPERTIESSTRUCTW_33934ab28214 as CERTVIEWPROPERTIESSTRUCTW}
+
+pub using @54a1289fc33cda5c {type CRYPTUICERTMGRSTRUCT_ecb38a564456 as CRYPTUICERTMGRSTRUCT}
+
+pub using @54a1289fc33cda5c {type CRYPTUIINITDIALOGSTRUCT_57e035eacc93 as CRYPTUIINITDIALOGSTRUCT}
+
+pub using @54a1289fc33cda5c {type CRYPTUIVIEWCERTIFICATEFLAGS_7ea78daf982f as CRYPTUIVIEWCERTIFICATEFLAGS}
+
+pub using @54a1289fc33cda5c {type CRYPTUIVIEWCERTIFICATESTRUCTA_6214d60cda53 as CRYPTUIVIEWCERTIFICATESTRUCTA}
+
+pub using @54a1289fc33cda5c {type CRYPTUIVIEWCERTIFICATESTRUCTW_9dfa903250e0 as CRYPTUIVIEWCERTIFICATESTRUCTW}
+
+pub using @54a1289fc33cda5c {type CRYPTUIWIZDIGITALADDITIONALCERTCHOICE_deb15f681a0a as CRYPTUIWIZDIGITALADDITIONALCERTCHOICE}
+
+pub using @54a1289fc33cda5c {type CRYPTUIWIZDIGITALSIGN_cc670b5db6dc as CRYPTUIWIZDIGITALSIGN}
+
+pub using @54a1289fc33cda5c {type CRYPTUIWIZDIGITALSIGNBLOBINFO_9c260ec8386a as CRYPTUIWIZDIGITALSIGNBLOBINFO}
+
+pub using @54a1289fc33cda5c {type CRYPTUIWIZDIGITALSIGNCERTPVKINFO_78bc24198a0c as CRYPTUIWIZDIGITALSIGNCERTPVKINFO}
+
+pub using @54a1289fc33cda5c {type CRYPTUIWIZDIGITALSIGNCONTEXT_ae24f42ab8d4 as CRYPTUIWIZDIGITALSIGNCONTEXT}
+
+pub using @54a1289fc33cda5c {type CRYPTUIWIZDIGITALSIGNEXTENDEDINFO_628d807ac70d as CRYPTUIWIZDIGITALSIGNEXTENDEDINFO}
+
+pub using @54a1289fc33cda5c {type CRYPTUIWIZDIGITALSIGNINFO_11595f212e65 as CRYPTUIWIZDIGITALSIGNINFO}
+
+pub using @54a1289fc33cda5c {type CRYPTUIWIZDIGITALSIGNPVKFILEINFO_fbe6092f3cd2 as CRYPTUIWIZDIGITALSIGNPVKFILEINFO}
+
+pub using @54a1289fc33cda5c {type CRYPTUIWIZDIGITALSIGNPVKOPTION_0a921bb2baa8 as CRYPTUIWIZDIGITALSIGNPVKOPTION}
+
+pub using @54a1289fc33cda5c {type CRYPTUIWIZDIGITALSIGNSIGTYPE_cb6b9113caef as CRYPTUIWIZDIGITALSIGNSIGTYPE}
+
+pub using @54a1289fc33cda5c {type CRYPTUIWIZDIGITALSIGNSTOREINFO_29ef91d9369d as CRYPTUIWIZDIGITALSIGNSTOREINFO}
+
+pub using @54a1289fc33cda5c {type CRYPTUIWIZDIGITALSIGNSUBJECT_2b986b2c9c68 as CRYPTUIWIZDIGITALSIGNSUBJECT}
+
+pub using @54a1289fc33cda5c {type CRYPTUIWIZEXPORTCERTCONTEXTINFO_32b086ff5be6 as CRYPTUIWIZEXPORTCERTCONTEXTINFO}
+
+pub using @54a1289fc33cda5c {type CRYPTUIWIZEXPORTFORMAT_b0655e94f0a5 as CRYPTUIWIZEXPORTFORMAT}
+
+pub using @54a1289fc33cda5c {type CRYPTUIWIZEXPORTINFO_31378a1c4c52 as CRYPTUIWIZEXPORTINFO}
+
+pub using @54a1289fc33cda5c {type CRYPTUIWIZEXPORTSUBJECT_75b15fe44f79 as CRYPTUIWIZEXPORTSUBJECT}
+
+pub using @54a1289fc33cda5c {type CRYPTUIWIZFLAGS_255a0571762b as CRYPTUIWIZFLAGS}
+
+pub using @54a1289fc33cda5c {type CRYPTUIWIZIMPORTSRCINFO_1abc320f5f56 as CRYPTUIWIZIMPORTSRCINFO}
+
+pub using @54a1289fc33cda5c {type CRYPTUIWIZIMPORTSUBJECTOPTION_b2e23d9a7453 as CRYPTUIWIZIMPORTSUBJECTOPTION}
+
+pub using @54a1289fc33cda5c {type CTLMODIFYREQUEST_82daa5d0bdd1 as CTLMODIFYREQUEST}
+
+pub using @54a1289fc33cda5c {type CTLMODIFYREQUESTOPERATION_647ca3a84bfe as CTLMODIFYREQUESTOPERATION}
+
+pub using @54a1289fc33cda5c {type PFNCFILTERPROC_7c8e04ab6954 as PFNCFILTERPROC}
+
+pub using @54a1289fc33cda5c {type PFNCMFILTERPROC_38b3366d65ee as PFNCMFILTERPROC}
+
+pub using @54a1289fc33cda5c {type PFNCMHOOKPROC_ab8989935091 as PFNCMHOOKPROC}
+
+pub using @54a1289fc33cda5c {type PFNTRUSTHELPER_4dda112afd78 as PFNTRUSTHELPER}
+
+// Traits
+

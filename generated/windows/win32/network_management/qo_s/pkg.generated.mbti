@@ -1,0 +1,1202 @@
+// Generated using `moon info`, DON'T EDIT IT
+package "moonbit-community/win32-bindings/windows/win32/network_management/qo_s"
+
+import {
+  "moonbit-community/win32-bindings/runtime/core",
+  "moonbit-community/win32-bindings/scc/e3d01496a63a684d",
+}
+
+// Values
+pub let able_to_recv_rsvp : UInt
+
+pub let ad_flag_break_bit : UInt
+
+pub let allowed_to_send_data : UInt
+
+pub let any_dest_addr : UInt
+
+pub let credential_sub_type_ascii_id : UInt
+
+pub let credential_sub_type_kerberos_tkt : UInt
+
+pub let credential_sub_type_pgp_cert : UInt
+
+pub let credential_sub_type_unicode_id : UInt
+
+pub let credential_sub_type_x509_v3_cert : UInt
+
+pub let current_tci_version : UInt
+
+pub let dd_tcp_device_name : String
+
+pub let end_to_end_qosability : UInt
+
+pub let error_address_type_not_supported : UInt
+
+pub let error_ds_mapping_exists : UInt
+
+pub let error_duplicate_filter : UInt
+
+pub let error_filter_conflict : UInt
+
+pub let error_incompatable_qos : UInt
+
+pub let error_incompatible_tci_version : UInt
+
+pub let error_invalid_address_type : UInt
+
+pub let error_invalid_diffserv_flow : UInt
+
+pub let error_invalid_ds_class : UInt
+
+pub let error_invalid_flow_mode : UInt
+
+pub let error_invalid_peak_rate : UInt
+
+pub let error_invalid_qos_priority : UInt
+
+pub let error_invalid_sd_mode : UInt
+
+pub let error_invalid_service_type : UInt
+
+pub let error_invalid_shape_rate : UInt
+
+pub let error_invalid_token_rate : UInt
+
+pub let error_invalid_traffic_class : UInt
+
+pub let error_tc_not_supported : UInt
+
+pub let error_tc_object_length_invalid : UInt
+
+pub let error_tc_supported_objects_exist : UInt
+
+pub let error_too_many_clients : UInt
+
+pub let filterspec_end : Int
+
+pub let filterspecv4 : Int
+
+pub let filterspecv4_gpi : Int
+
+pub let filterspecv6 : Int
+
+pub let filterspecv6_flow : Int
+
+pub let filterspecv6_gpi : Int
+
+pub let fsctl_tcp_base : UInt
+
+pub let fveb_unlock_flag_auk_osfveinfo : UInt
+
+pub let fveb_unlock_flag_cached : UInt
+
+pub let fveb_unlock_flag_external : UInt
+
+pub let fveb_unlock_flag_media : UInt
+
+pub let fveb_unlock_flag_nbp : UInt
+
+pub let fveb_unlock_flag_none : UInt
+
+pub let fveb_unlock_flag_passphrase : UInt
+
+pub let fveb_unlock_flag_pin : UInt
+
+pub let fveb_unlock_flag_recovery : UInt
+
+pub let fveb_unlock_flag_tpm : UInt
+
+pub let gqos_api : UInt
+
+pub let gqos_errorcode_unknown : UInt
+
+pub let gqos_errorvalue_unknown : UInt
+
+pub let gqos_kernel_tc : UInt
+
+pub let gqos_kernel_tc_sys : UInt
+
+pub let gqos_net_admission : UInt
+
+pub let gqos_net_policy : UInt
+
+pub let gqos_no_errorcode : UInt
+
+pub let gqos_no_errorvalue : UInt
+
+pub let gqos_rsvp : UInt
+
+pub let gqos_rsvp_sys : UInt
+
+pub let highly_delay_sensitive : UInt
+
+pub let if_mib_stats_id : UInt
+
+pub let info_not_available : UInt
+
+pub let ioctl_code : UInt
+
+pub let ip_intfc_info_id : UInt
+
+pub let ip_mib_addrtable_entry_id : UInt
+
+pub let ip_mib_stats_id : UInt
+
+pub let line_rate : UInt
+
+pub let local_qosability : UInt
+
+pub let local_traffic_control : UInt
+
+pub let m_company : UInt
+
+pub let m_ioc_in : UInt
+
+pub let m_ioc_out : UInt
+
+pub let m_ioc_vendor : UInt
+
+pub let max_physaddr_size : UInt
+
+pub let max_pluton_upgrade_filename_length : UInt
+
+pub let max_string_length : UInt
+
+pub let moderately_delay_sensitive : UInt
+
+pub let osdevice_type_blockio_cdrom : UInt
+
+pub let osdevice_type_blockio_file : UInt
+
+pub let osdevice_type_blockio_harddisk : UInt
+
+pub let osdevice_type_blockio_partition : UInt
+
+pub let osdevice_type_blockio_ramdisk : UInt
+
+pub let osdevice_type_blockio_removabledisk : UInt
+
+pub let osdevice_type_blockio_virtualharddisk : UInt
+
+pub let osdevice_type_cimfs : UInt
+
+pub let osdevice_type_composite : UInt
+
+pub let osdevice_type_serial : UInt
+
+pub let osdevice_type_udp : UInt
+
+pub let osdevice_type_unknown : UInt
+
+pub let osdevice_type_vmbus : UInt
+
+pub let pe_attrib_type_credential : UInt
+
+pub let pe_attrib_type_policy_locator : UInt
+
+pub let pe_type_appid : UInt
+
+pub let policy_locator_sub_type_ascii_dn : UInt
+
+pub let policy_locator_sub_type_ascii_dn_enc : UInt
+
+pub let policy_locator_sub_type_unicode_dn : UInt
+
+pub let policy_locator_sub_type_unicode_dn_enc : UInt
+
+pub let positive_infinity_rate : UInt
+
+pub fn qos_add_socket_to_flow_raw(@core.RawAddress, UInt64, @core.RawAddress, Int, UInt, @core.RawAddress) -> Int
+
+pub fn qos_cancel_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn qos_close_handle_raw(@core.RawAddress) -> Int
+
+pub fn qos_create_handle_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn qos_enumerate_flows_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub let qos_flow_rate_congestion : Int
+
+pub let qos_flow_rate_content_change : Int
+
+pub let qos_flow_rate_higher_content_encoding : Int
+
+pub let qos_flow_rate_not_applicable : Int
+
+pub let qos_flow_rate_user_caused : Int
+
+pub let qos_general_id_base : UInt
+
+pub let qos_max_object_string_length : UInt
+
+pub let qos_non_adaptive_flow : UInt
+
+pub let qos_not_specified : UInt
+
+pub let qos_notify_available : Int
+
+pub let qos_notify_congested : Int
+
+pub fn qos_notify_flow_raw(@core.RawAddress, UInt, Int, @core.RawAddress, @core.RawAddress, UInt, @core.RawAddress) -> Int
+
+pub let qos_notify_uncongested : Int
+
+pub let qos_outgoing_default_minimum_bandwidth : UInt
+
+pub let qos_query_flow_fundamentals : Int
+
+pub fn qos_query_flow_raw(@core.RawAddress, UInt, Int, @core.RawAddress, @core.RawAddress, UInt, @core.RawAddress) -> Int
+
+pub let qos_query_outgoing_rate : Int
+
+pub let qos_query_packet_priority : Int
+
+pub let qos_queryflow_fresh : UInt
+
+pub fn qos_remove_socket_from_flow_raw(@core.RawAddress, UInt64, UInt, UInt) -> Int
+
+pub fn qos_set_flow_raw(@core.RawAddress, UInt, Int, UInt, @core.RawAddress, UInt, @core.RawAddress) -> Int
+
+pub let qos_set_outgoing_dscp_value : Int
+
+pub let qos_set_outgoing_rate : Int
+
+pub let qos_set_traffic_type : Int
+
+pub let qos_shape_and_mark : Int
+
+pub let qos_shape_only : Int
+
+pub fn qos_start_tracking_client_raw(@core.RawAddress, @core.RawAddress, UInt) -> Int
+
+pub fn qos_stop_tracking_client_raw(@core.RawAddress, @core.RawAddress, UInt) -> Int
+
+pub let qos_traffic_general_id_base : UInt
+
+pub let qos_traffic_type_audio_video : Int
+
+pub let qos_traffic_type_background : Int
+
+pub let qos_traffic_type_best_effort : Int
+
+pub let qos_traffic_type_control : Int
+
+pub let qos_traffic_type_excellent_effort : Int
+
+pub let qos_traffic_type_voice : Int
+
+pub let qos_use_non_conformant_markings : Int
+
+pub let qossp_err_base : UInt
+
+pub let qosspbase : UInt
+
+pub let rsvp_default_style : UInt
+
+pub let rsvp_fixed_filter_style : UInt
+
+pub let rsvp_object_id_base : UInt
+
+pub let rsvp_shared_explicit_style : UInt
+
+pub let rsvp_wildcard_style : UInt
+
+pub let service_besteffort : UInt
+
+pub let service_controlledload : UInt
+
+pub let service_guaranteed : UInt
+
+pub let service_no_qos_signaling : UInt
+
+pub let service_no_traffic_control : UInt
+
+pub let service_qualitative : UInt
+
+pub let servicetype_besteffort : UInt
+
+pub let servicetype_controlledload : UInt
+
+pub let servicetype_general_information : UInt
+
+pub let servicetype_guaranteed : UInt
+
+pub let servicetype_network_control : UInt
+
+pub let servicetype_network_unavailable : UInt
+
+pub let servicetype_nochange : UInt
+
+pub let servicetype_nonconforming : UInt
+
+pub let servicetype_notraffic : UInt
+
+pub let servicetype_qualitative : UInt
+
+pub let sipaerror_firmwarefailure : UInt
+
+pub let sipaerror_hypervisorfailure : UInt
+
+pub let sipaerror_internalfailure : UInt
+
+pub let sipaev_action : UInt
+
+pub let sipaev_amd_abl_1 : UInt
+
+pub let sipaev_amd_abl_10 : UInt
+
+pub let sipaev_amd_abl_11 : UInt
+
+pub let sipaev_amd_abl_12 : UInt
+
+pub let sipaev_amd_abl_13 : UInt
+
+pub let sipaev_amd_abl_14 : UInt
+
+pub let sipaev_amd_abl_15 : UInt
+
+pub let sipaev_amd_abl_16 : UInt
+
+pub let sipaev_amd_abl_17 : UInt
+
+pub let sipaev_amd_abl_18 : UInt
+
+pub let sipaev_amd_abl_19 : UInt
+
+pub let sipaev_amd_abl_2 : UInt
+
+pub let sipaev_amd_abl_20 : UInt
+
+pub let sipaev_amd_abl_21 : UInt
+
+pub let sipaev_amd_abl_22 : UInt
+
+pub let sipaev_amd_abl_23 : UInt
+
+pub let sipaev_amd_abl_24 : UInt
+
+pub let sipaev_amd_abl_25 : UInt
+
+pub let sipaev_amd_abl_26 : UInt
+
+pub let sipaev_amd_abl_27 : UInt
+
+pub let sipaev_amd_abl_28 : UInt
+
+pub let sipaev_amd_abl_29 : UInt
+
+pub let sipaev_amd_abl_3 : UInt
+
+pub let sipaev_amd_abl_30 : UInt
+
+pub let sipaev_amd_abl_31 : UInt
+
+pub let sipaev_amd_abl_32 : UInt
+
+pub let sipaev_amd_abl_33 : UInt
+
+pub let sipaev_amd_abl_34 : UInt
+
+pub let sipaev_amd_abl_35 : UInt
+
+pub let sipaev_amd_abl_36 : UInt
+
+pub let sipaev_amd_abl_37 : UInt
+
+pub let sipaev_amd_abl_38 : UInt
+
+pub let sipaev_amd_abl_39 : UInt
+
+pub let sipaev_amd_abl_4 : UInt
+
+pub let sipaev_amd_abl_40 : UInt
+
+pub let sipaev_amd_abl_41 : UInt
+
+pub let sipaev_amd_abl_42 : UInt
+
+pub let sipaev_amd_abl_43 : UInt
+
+pub let sipaev_amd_abl_44 : UInt
+
+pub let sipaev_amd_abl_45 : UInt
+
+pub let sipaev_amd_abl_46 : UInt
+
+pub let sipaev_amd_abl_47 : UInt
+
+pub let sipaev_amd_abl_48 : UInt
+
+pub let sipaev_amd_abl_5 : UInt
+
+pub let sipaev_amd_abl_6 : UInt
+
+pub let sipaev_amd_abl_7 : UInt
+
+pub let sipaev_amd_abl_8 : UInt
+
+pub let sipaev_amd_abl_9 : UInt
+
+pub let sipaev_amd_abl_toc : UInt
+
+pub let sipaev_amd_agesa_drv : UInt
+
+pub let sipaev_amd_base_2 : UInt
+
+pub let sipaev_amd_drtm_drv : UInt
+
+pub let sipaev_amd_ftpm_drv : UInt
+
+pub let sipaev_amd_gmi3 : UInt
+
+pub let sipaev_amd_ip_discovery : UInt
+
+pub let sipaev_amd_mid_smu : UInt
+
+pub let sipaev_amd_mp2_config : UInt
+
+pub let sipaev_amd_mp2_fw : UInt
+
+pub let sipaev_amd_mp5 : UInt
+
+pub let sipaev_amd_mpccx : UInt
+
+pub let sipaev_amd_mpio_fw : UInt
+
+pub let sipaev_amd_no_action : UInt
+
+pub let sipaev_amd_pm_fw1 : UInt
+
+pub let sipaev_amd_pmfw0 : UInt
+
+pub let sipaev_amd_pmu1 : UInt
+
+pub let sipaev_amd_pmu1_data : UInt
+
+pub let sipaev_amd_pmu2 : UInt
+
+pub let sipaev_amd_pmu2_data : UInt
+
+pub let sipaev_amd_psp_bl_end : UInt
+
+pub let sipaev_amd_psp_bl_stage_1 : UInt
+
+pub let sipaev_amd_psp_bl_stage_2 : UInt
+
+pub let sipaev_amd_psp_df_rib0 : UInt
+
+pub let sipaev_amd_psp_df_rib1 : UInt
+
+pub let sipaev_amd_psp_df_rib10 : UInt
+
+pub let sipaev_amd_psp_df_rib11 : UInt
+
+pub let sipaev_amd_psp_df_rib12 : UInt
+
+pub let sipaev_amd_psp_df_rib13 : UInt
+
+pub let sipaev_amd_psp_df_rib14 : UInt
+
+pub let sipaev_amd_psp_df_rib15 : UInt
+
+pub let sipaev_amd_psp_df_rib2 : UInt
+
+pub let sipaev_amd_psp_df_rib3 : UInt
+
+pub let sipaev_amd_psp_df_rib4 : UInt
+
+pub let sipaev_amd_psp_df_rib5 : UInt
+
+pub let sipaev_amd_psp_df_rib6 : UInt
+
+pub let sipaev_amd_psp_df_rib7 : UInt
+
+pub let sipaev_amd_psp_df_rib8 : UInt
+
+pub let sipaev_amd_psp_df_rib9 : UInt
+
+pub let sipaev_amd_psp_df_rib_toc : UInt
+
+pub let sipaev_amd_psp_end : UInt
+
+pub let sipaev_amd_psp_keydb : UInt
+
+pub let sipaev_amd_psp_l0_sec_pol : UInt
+
+pub let sipaev_amd_psp_l1_sec_pol : UInt
+
+pub let sipaev_amd_psp_spirom_config : UInt
+
+pub let sipaev_amd_psp_tos_keydb : UInt
+
+pub let sipaev_amd_secure_debug_unlock : UInt
+
+pub let sipaev_amd_sl_event_base : UInt
+
+pub let sipaev_amd_sl_load : UInt
+
+pub let sipaev_amd_sl_load_1 : UInt
+
+pub let sipaev_amd_sl_psp_fw_splt : UInt
+
+pub let sipaev_amd_sl_pub_key : UInt
+
+pub let sipaev_amd_sl_separator : UInt
+
+pub let sipaev_amd_sl_svn : UInt
+
+pub let sipaev_amd_sl_tsme_rb_fuse : UInt
+
+pub let sipaev_amd_spl_table_fw : UInt
+
+pub let sipaev_amd_spl_table_rom : UInt
+
+pub let sipaev_amd_sys_drv : UInt
+
+pub let sipaev_amd_tos : UInt
+
+pub let sipaev_amd_tpmlite : UInt
+
+pub let sipaev_amd_vbl_1 : UInt
+
+pub let sipaev_amd_vbl_10 : UInt
+
+pub let sipaev_amd_vbl_2 : UInt
+
+pub let sipaev_amd_vbl_3 : UInt
+
+pub let sipaev_amd_vbl_4 : UInt
+
+pub let sipaev_amd_vbl_5 : UInt
+
+pub let sipaev_amd_vbl_6 : UInt
+
+pub let sipaev_amd_vbl_7 : UInt
+
+pub let sipaev_amd_vbl_8 : UInt
+
+pub let sipaev_amd_vbl_9 : UInt
+
+pub let sipaev_arm_base : UInt
+
+pub let sipaev_arm_dce : UInt
+
+pub let sipaev_arm_dce_pubkey : UInt
+
+pub let sipaev_arm_dce_secondary : UInt
+
+pub let sipaev_arm_debug_config : UInt
+
+pub let sipaev_arm_dlme : UInt
+
+pub let sipaev_arm_dlme_entry_point : UInt
+
+pub let sipaev_arm_dlme_pubkey : UInt
+
+pub let sipaev_arm_dlme_svn : UInt
+
+pub let sipaev_arm_no_action : UInt
+
+pub let sipaev_arm_nonsecure_config : UInt
+
+pub let sipaev_arm_pcr_schema : UInt
+
+pub let sipaev_arm_secure_int_disable : UInt
+
+pub let sipaev_arm_separator : UInt
+
+pub let sipaev_arm_tzfw : UInt
+
+pub let sipaev_compact_hash : UInt
+
+pub let sipaev_cpu_microcode : UInt
+
+pub let sipaev_efi_action : UInt
+
+pub let sipaev_efi_boot_services_application : UInt
+
+pub let sipaev_efi_boot_services_driver : UInt
+
+pub let sipaev_efi_event_base : UInt
+
+pub let sipaev_efi_gpt_event : UInt
+
+pub let sipaev_efi_handoff_tables : UInt
+
+pub let sipaev_efi_handoff_tables2 : UInt
+
+pub let sipaev_efi_hcrtm_event : UInt
+
+pub let sipaev_efi_platform_firmware_blob : UInt
+
+pub let sipaev_efi_platform_firmware_blob2 : UInt
+
+pub let sipaev_efi_runtime_services_driver : UInt
+
+pub let sipaev_efi_spdm_firmware_blob : UInt
+
+pub let sipaev_efi_spdm_firmware_config : UInt
+
+pub let sipaev_efi_variable_authority : UInt
+
+pub let sipaev_efi_variable_boot : UInt
+
+pub let sipaev_efi_variable_boot2 : UInt
+
+pub let sipaev_efi_variable_driver_config : UInt
+
+pub let sipaev_event_tag : UInt
+
+pub let sipaev_ipl : UInt
+
+pub let sipaev_ipl_partition_data : UInt
+
+pub let sipaev_no_action : UInt
+
+pub let sipaev_nonhost_code : UInt
+
+pub let sipaev_nonhost_config : UInt
+
+pub let sipaev_nonhost_info : UInt
+
+pub let sipaev_omit_boot_device_events : UInt
+
+pub let sipaev_platform_config_flags : UInt
+
+pub let sipaev_post_code : UInt
+
+pub let sipaev_preboot_cert : UInt
+
+pub let sipaev_s_crtm_contents : UInt
+
+pub let sipaev_s_crtm_version : UInt
+
+pub let sipaev_separator : UInt
+
+pub let sipaev_table_of_devices : UInt
+
+pub let sipaev_txt_biosac_reg_data : UInt
+
+pub let sipaev_txt_boot_pol_hash : UInt
+
+pub let sipaev_txt_bpm_hash : UInt
+
+pub let sipaev_txt_bpm_info_hash : UInt
+
+pub let sipaev_txt_cap_value : UInt
+
+pub let sipaev_txt_cold_boot_bios_hash : UInt
+
+pub let sipaev_txt_combined_hash : UInt
+
+pub let sipaev_txt_cpu_scrtm_stat : UInt
+
+pub let sipaev_txt_elements_hash : UInt
+
+pub let sipaev_txt_event_base : UInt
+
+pub let sipaev_txt_hash_start : UInt
+
+pub let sipaev_txt_km_hash : UInt
+
+pub let sipaev_txt_km_info_hash : UInt
+
+pub let sipaev_txt_lcp_authorities_hash : UInt
+
+pub let sipaev_txt_lcp_control_hash : UInt
+
+pub let sipaev_txt_lcp_details_hash : UInt
+
+pub let sipaev_txt_lcp_hash : UInt
+
+pub let sipaev_txt_mle_hash : UInt
+
+pub let sipaev_txt_nv_info_hash : UInt
+
+pub let sipaev_txt_ossinitdata_cap_hash : UInt
+
+pub let sipaev_txt_pcr_mapping : UInt
+
+pub let sipaev_txt_random_value : UInt
+
+pub let sipaev_txt_sinit_pubkey_hash : UInt
+
+pub let sipaev_txt_stm_hash : UInt
+
+pub let sipaev_unused : UInt
+
+pub let sipaevent_application_return : UInt
+
+pub let sipaevent_application_svn : UInt
+
+pub let sipaevent_authenticodehash : UInt
+
+pub let sipaevent_authorityissuer : UInt
+
+pub let sipaevent_authoritypubkey : UInt
+
+pub let sipaevent_authoritypublisher : UInt
+
+pub let sipaevent_authorityserial : UInt
+
+pub let sipaevent_authoritysha1_thumbprint : UInt
+
+pub let sipaevent_bitlocker_unlock : UInt
+
+pub let sipaevent_boot_revocation_list : UInt
+
+pub let sipaevent_bootcounter : UInt
+
+pub let sipaevent_bootdebugging : UInt
+
+pub let sipaevent_codeintegrity : UInt
+
+pub let sipaevent_counterid : UInt
+
+pub let sipaevent_dataexecutionprevention : UInt
+
+pub let sipaevent_driver_load_policy : UInt
+
+pub let sipaevent_drtm_amd_smm_hash : UInt
+
+pub let sipaevent_drtm_amd_smm_signer_key : UInt
+
+pub let sipaevent_drtm_smm_level : UInt
+
+pub let sipaevent_drtm_state_auth : UInt
+
+pub let sipaevent_dump_encryption_enabled : UInt
+
+pub let sipaevent_dump_encryption_key_digest : UInt
+
+pub let sipaevent_dumps_disabled : UInt
+
+pub let sipaevent_elam_configuration : UInt
+
+pub let sipaevent_elam_keyname : UInt
+
+pub let sipaevent_elam_measured : UInt
+
+pub let sipaevent_elam_policy : UInt
+
+pub let sipaevent_eventcounter : UInt
+
+pub let sipaevent_filepath : UInt
+
+pub let sipaevent_flightsigning : UInt
+
+pub let sipaevent_hashalgorithmid : UInt
+
+pub let sipaevent_hibernation_disabled : UInt
+
+pub let sipaevent_hypervisor_boot_dma_protection : UInt
+
+pub let sipaevent_hypervisor_debug : UInt
+
+pub let sipaevent_hypervisor_iommu_policy : UInt
+
+pub let sipaevent_hypervisor_launch_type : UInt
+
+pub let sipaevent_hypervisor_mmio_nx_policy : UInt
+
+pub let sipaevent_hypervisor_msr_filter_policy : UInt
+
+pub let sipaevent_hypervisor_path : UInt
+
+pub let sipaevent_idk_generation_status : UInt
+
+pub let sipaevent_imagebase : UInt
+
+pub let sipaevent_imagesize : UInt
+
+pub let sipaevent_imagevalidated : UInt
+
+pub let sipaevent_information : UInt
+
+pub let sipaevent_ksr_signature : UInt
+
+pub let sipaevent_lsaiso_config : UInt
+
+pub let sipaevent_module_original_filename : UInt
+
+pub let sipaevent_module_pluton : UInt
+
+pub let sipaevent_module_svn : UInt
+
+pub let sipaevent_module_version : UInt
+
+pub let sipaevent_morbit_api_status : UInt
+
+pub let sipaevent_morbit_not_cancelable : UInt
+
+pub let sipaevent_noauthority : UInt
+
+pub let sipaevent_os_revocation_list : UInt
+
+pub let sipaevent_osdevice : UInt
+
+pub let sipaevent_oskerneldebug : UInt
+
+pub let sipaevent_pagefile_encryption_enabled : UInt
+
+pub let sipaevent_physicaladdressextension : UInt
+
+pub let sipaevent_publisher_oemname : UInt
+
+pub let sipaevent_refs_rollback_protection_frozen_volume_checksum : UInt
+
+pub let sipaevent_refs_rollback_protection_user_payload_hash : UInt
+
+pub let sipaevent_refs_rollback_protection_verification_succeeded : UInt
+
+pub let sipaevent_refs_rollback_protection_volume_first_ever_mount : UInt
+
+pub let sipaevent_refs_volume_checkpoint_record_checksum : UInt
+
+pub let sipaevent_safemode : UInt
+
+pub let sipaevent_sbcp_info : UInt
+
+pub let sipaevent_si_policy : UInt
+
+pub let sipaevent_si_policy_signer : UInt
+
+pub let sipaevent_si_policy_update_signer : UInt
+
+pub let sipaevent_smt_status : UInt
+
+pub let sipaevent_svn_chain_status : UInt
+
+pub let sipaevent_systemroot : UInt
+
+pub let sipaevent_testsigning : UInt
+
+pub let sipaevent_transfer_control : UInt
+
+pub let sipaevent_vbs_dump_uses_ameroot : UInt
+
+pub let sipaevent_vbs_hvci_policy : UInt
+
+pub let sipaevent_vbs_iommu_required : UInt
+
+pub let sipaevent_vbs_mandatory_enforcement : UInt
+
+pub let sipaevent_vbs_microsoft_boot_chain_required : UInt
+
+pub let sipaevent_vbs_mmio_nx_required : UInt
+
+pub let sipaevent_vbs_msr_filtering_required : UInt
+
+pub let sipaevent_vbs_secureboot_required : UInt
+
+pub let sipaevent_vbs_vsm_nosecrets_enforced : UInt
+
+pub let sipaevent_vbs_vsm_required : UInt
+
+pub let sipaevent_vsm_drtm_keyroll_detected : UInt
+
+pub let sipaevent_vsm_idk_info : UInt
+
+pub let sipaevent_vsm_idks_info : UInt
+
+pub let sipaevent_vsm_launch_type : UInt
+
+pub let sipaevent_vsm_sealed_si_policy : UInt
+
+pub let sipaevent_vsm_srtm_anti_rollback_counter : UInt
+
+pub let sipaevent_vsm_srtm_unseal_policy : UInt
+
+pub let sipaevent_vtl1_dump_config : UInt
+
+pub let sipaevent_winpe : UInt
+
+pub let sipaeventtype_aggregation : UInt
+
+pub let sipaeventtype_authority : UInt
+
+pub let sipaeventtype_container : UInt
+
+pub let sipaeventtype_drtm : UInt
+
+pub let sipaeventtype_elam : UInt
+
+pub let sipaeventtype_error : UInt
+
+pub let sipaeventtype_information : UInt
+
+pub let sipaeventtype_ksr : UInt
+
+pub let sipaeventtype_loadedmodule : UInt
+
+pub let sipaeventtype_nonmeasured : UInt
+
+pub let sipaeventtype_osparameter : UInt
+
+pub let sipaeventtype_preosparameter : UInt
+
+pub let sipaeventtype_trustpoint : UInt
+
+pub let sipaeventtype_vbs : UInt
+
+pub let sipahdrsignature : UInt
+
+pub let sipaksrhdrsignature : UInt
+
+pub let sipalogversion : UInt
+
+pub fn tc_add_filter_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn tc_add_flow_raw(@core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn tc_close_interface_raw(@core.RawAddress) -> UInt
+
+pub fn tc_delete_filter_raw(@core.RawAddress) -> UInt
+
+pub fn tc_delete_flow_raw(@core.RawAddress) -> UInt
+
+pub fn tc_deregister_client_raw(@core.RawAddress) -> UInt
+
+pub fn tc_enumerate_flows_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn tc_enumerate_interfaces_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn tc_get_flow_name_a_raw(@core.RawAddress, UInt, @core.RawAddress) -> UInt
+
+pub fn tc_get_flow_name_w_raw(@core.RawAddress, UInt, @core.RawAddress) -> UInt
+
+pub fn tc_modify_flow_raw(@core.RawAddress, @core.RawAddress) -> UInt
+
+pub let tc_nonconf_borrow : UInt
+
+pub let tc_nonconf_borrow_plus : UInt
+
+pub let tc_nonconf_discard : UInt
+
+pub let tc_nonconf_shape : UInt
+
+pub let tc_notify_flow_close : UInt
+
+pub let tc_notify_ifc_change : UInt
+
+pub let tc_notify_ifc_close : UInt
+
+pub let tc_notify_ifc_up : UInt
+
+pub let tc_notify_param_changed : UInt
+
+pub fn tc_open_interface_a_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn tc_open_interface_w_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn tc_query_flow_a_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn tc_query_flow_w_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn tc_query_interface_raw(@core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn tc_register_client_raw(UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn tc_set_flow_a_raw(@core.RawAddress, @core.RawAddress, UInt, @core.RawAddress) -> UInt
+
+pub fn tc_set_flow_w_raw(@core.RawAddress, @core.RawAddress, UInt, @core.RawAddress) -> UInt
+
+pub fn tc_set_interface_raw(@core.RawAddress, @core.RawAddress, UInt, @core.RawAddress) -> UInt
+
+pub let tcbase : UInt
+
+pub let wbcl_digest_alg_bitmap_sha3_256 : UInt
+
+pub let wbcl_digest_alg_bitmap_sha3_384 : UInt
+
+pub let wbcl_digest_alg_bitmap_sha3_512 : UInt
+
+pub let wbcl_digest_alg_bitmap_sha_1 : UInt
+
+pub let wbcl_digest_alg_bitmap_sha_2_256 : UInt
+
+pub let wbcl_digest_alg_bitmap_sha_2_384 : UInt
+
+pub let wbcl_digest_alg_bitmap_sha_2_512 : UInt
+
+pub let wbcl_digest_alg_bitmap_sm3_256 : UInt
+
+pub let wbcl_digest_alg_id_sha3_256 : UInt
+
+pub let wbcl_digest_alg_id_sha3_384 : UInt
+
+pub let wbcl_digest_alg_id_sha3_512 : UInt
+
+pub let wbcl_digest_alg_id_sha_1 : UInt
+
+pub let wbcl_digest_alg_id_sha_2_256 : UInt
+
+pub let wbcl_digest_alg_id_sha_2_384 : UInt
+
+pub let wbcl_digest_alg_id_sha_2_512 : UInt
+
+pub let wbcl_digest_alg_id_sm3_256 : UInt
+
+pub let wbcl_hash_len_sha1 : UInt
+
+pub let wbcl_max_pluton_upgrade_hash_len : UInt
+
+// Errors
+
+// Types and methods
+
+// Type aliases
+pub using @e3d01496a63a684d {type ADDRESSLISTDESCRIPTOR_115252885cb1 as ADDRESSLISTDESCRIPTOR}
+
+pub using @e3d01496a63a684d {type ADGENERALPARAMS_fd7d97a0722d as ADGENERALPARAMS}
+
+pub using @e3d01496a63a684d {type ADGUARANTEED_c69e34cb12aa as ADGUARANTEED}
+
+pub using @e3d01496a63a684d {type AnonymousEUnion_3e402f2d6e6b as AnonymousEUnion_3e402f2d6e}
+
+pub using @e3d01496a63a684d {type AnonymousEUnion_a9bbb8e4139a as AnonymousEUnion_a9bbb8e413}
+
+pub using @e3d01496a63a684d {type AnonymousEUnion_cda1aaf09b5b as AnonymousEUnion_cda1aaf09b}
+
+pub using @e3d01496a63a684d {type CONTROLSERVICE_5fb25542c702 as CONTROLSERVICE}
+
+pub using @e3d01496a63a684d {type ENUMERATIONBUFFER_d8c26e03cefc as ENUMERATIONBUFFER}
+
+pub using @e3d01496a63a684d {type FLOWDESCRIPTOR_6f368b14009b as FLOWDESCRIPTOR}
+
+pub using @e3d01496a63a684d {type FilterType_bcce1c263657 as FilterType}
+
+pub using @e3d01496a63a684d {type IDPEATTR_cf610494256f as IDPEATTR}
+
+pub using @e3d01496a63a684d {type INADDRIPV4_44a8afd85023 as INADDRIPV4}
+
+pub using @e3d01496a63a684d {type INADDRIPV6_ec58f16b7a41 as INADDRIPV6}
+
+pub using @e3d01496a63a684d {type IPPATTERN_d22be3839793 as IPPATTERN}
+
+pub using @e3d01496a63a684d {type IPXPATTERN_9298f09d1df9 as IPXPATTERN}
+
+pub using @e3d01496a63a684d {type PARAMBUFFER_088028c03e2a as PARAMBUFFER}
+
+pub using @e3d01496a63a684d {type PLUTONUPGRADEIMAGEDATA_02acf3ace2b1 as PLUTONUPGRADEIMAGEDATA}
+
+pub using @e3d01496a63a684d {type QOSDESTADDR_22356c9c7949 as QOSDESTADDR}
+
+pub using @e3d01496a63a684d {type QOSDIFFSERV_619bffbbdbbb as QOSDIFFSERV}
+
+pub using @e3d01496a63a684d {type QOSDIFFSERVRULE_de11250c99e0 as QOSDIFFSERVRULE}
+
+pub using @e3d01496a63a684d {type QOSDSCLASS_00110655e88b as QOSDSCLASS}
+
+pub using @e3d01496a63a684d {type QOSFLOWFUNDAMENTALS_10c8075e3742 as QOSFLOWFUNDAMENTALS}
+
+pub using @e3d01496a63a684d {type QOSFLOWRATEOUTGOING_cc35faf68e17 as QOSFLOWRATEOUTGOING}
+
+pub using @e3d01496a63a684d {type QOSFLOWRATEREASON_65eeac9dcef5 as QOSFLOWRATEREASON}
+
+pub using @e3d01496a63a684d {type QOSFRIENDLYNAME_280f5bb2dbc8 as QOSFRIENDLYNAME}
+
+pub using @e3d01496a63a684d {type QOSNOTIFYFLOW_dee3016dc6da as QOSNOTIFYFLOW}
+
+pub using @e3d01496a63a684d {type QOSOBJECTHDR_bd004a946518 as QOSOBJECTHDR}
+
+pub using @e3d01496a63a684d {type QOSPACKETPRIORITY_cc197a6ba779 as QOSPACKETPRIORITY}
+
+pub using @e3d01496a63a684d {type QOSQUERYFLOW_eb15f6e1d7ec as QOSQUERYFLOW}
+
+pub using @e3d01496a63a684d {type QOSSDMODE_0b7d3fe5d7ed as QOSSDMODE}
+
+pub using @e3d01496a63a684d {type QOSSETFLOW_ee98c3762ec3 as QOSSETFLOW}
+
+pub using @e3d01496a63a684d {type QOSSHAPING_244fbf17a178 as QOSSHAPING}
+
+pub using @e3d01496a63a684d {type QOSSHAPINGRATE_47a5ab08c6bf as QOSSHAPINGRATE}
+
+pub using @e3d01496a63a684d {type QOSTCPTRAFFIC_f0e7202262ab as QOSTCPTRAFFIC}
+
+pub using @e3d01496a63a684d {type QOSTRAFFICCLASS_97a1e49b7666 as QOSTRAFFICCLASS}
+
+pub using @e3d01496a63a684d {type QOSTRAFFICTYPE_0ec3444feb57 as QOSTRAFFICTYPE}
+
+pub using @e3d01496a63a684d {type QOSVERSION_baedab5ba42d as QOSVERSION}
+
+pub using @e3d01496a63a684d {type RHANDLE_6efec84d967b as RHANDLE}
+
+pub using @e3d01496a63a684d {type RSVPADSPEC_b6d76925d9aa as RSVPADSPEC}
+
+pub using @e3d01496a63a684d {type RSVPFILTERSPEC_6e9a71249cc9 as RSVPFILTERSPEC}
+
+pub using @e3d01496a63a684d {type RSVPFILTERSPECV4_74be1fce6a6f as RSVPFILTERSPECV4}
+
+pub using @e3d01496a63a684d {type RSVPFILTERSPECV4GPI_95f4fd0ab3ea as RSVPFILTERSPECV4GPI}
+
+pub using @e3d01496a63a684d {type RSVPFILTERSPECV6_deedc06980c9 as RSVPFILTERSPECV6}
+
+pub using @e3d01496a63a684d {type RSVPFILTERSPECV6FLOW_c77071ec8cd4 as RSVPFILTERSPECV6FLOW}
+
+pub using @e3d01496a63a684d {type RSVPFILTERSPECV6GPI_c1e754071e2c as RSVPFILTERSPECV6GPI}
+
+pub using @e3d01496a63a684d {type RSVPPOLICY_5fd9a26153ab as RSVPPOLICY}
+
+pub using @e3d01496a63a684d {type RSVPPOLICYINFO_c53f3a0a6b38 as RSVPPOLICYINFO}
+
+pub using @e3d01496a63a684d {type RSVPRESERVEINFO_67baabd9dfc9 as RSVPRESERVEINFO}
+
+pub using @e3d01496a63a684d {type RSVPSTATUSINFO_588e4cd6c383 as RSVPSTATUSINFO}
+
+pub using @e3d01496a63a684d {type SIPAEVENTKSRSIGNATUREPAYLOAD_556f7393e222 as SIPAEVENTKSRSIGNATUREPAYLOAD}
+
+pub using @e3d01496a63a684d {type SIPAEVENTREFSROLLBACKPROTECTIONUSERPAYLOADHASHDATA_6c7e4597b3de as SIPAEVENTREFSROLLBACKPROTECTIONUSERPAYLOADHASHDATA}
+
+pub using @e3d01496a63a684d {type SIPAEVENTREVOCATIONLISTPAYLOAD_fe2bf5303c2a as SIPAEVENTREVOCATIONLISTPAYLOAD}
+
+pub using @e3d01496a63a684d {type SIPAEVENTSBCPINFOPAYLOADV1_3fa9bc578da1 as SIPAEVENTSBCPINFOPAYLOADV1}
+
+pub using @e3d01496a63a684d {type SIPAEVENTSIPOLICYCERTIFICATEPAYLOAD_6f5e6018b200 as SIPAEVENTSIPOLICYCERTIFICATEPAYLOAD}
+
+pub using @e3d01496a63a684d {type SIPAEVENTSIPOLICYPAYLOAD_b05ff5e45261 as SIPAEVENTSIPOLICYPAYLOAD}
+
+pub using @e3d01496a63a684d {type SIPAEVENTSIPOLICYSIGNERPAYLOAD_e625b968410b as SIPAEVENTSIPOLICYSIGNERPAYLOAD}
+
+pub using @e3d01496a63a684d {type SIPAEVENTVSMIDKINFOPAYLOAD_3d37c22dd6a3 as SIPAEVENTVSMIDKINFOPAYLOAD}
+
+pub using @e3d01496a63a684d {type SIPAEVENTVSMIDKRSAINFO_181be79bf0fb as SIPAEVENTVSMIDKRSAINFO}
+
+pub using @e3d01496a63a684d {type SUnEUnion_546389c66f8c as SUnEUnion}
+
+pub using @e3d01496a63a684d {type SUnIcmpEStruct_f5773bdb6b46 as SUnIcmpEStruct}
+
+pub using @e3d01496a63a684d {type SUnPortsEStruct_34a7005d1bd0 as SUnPortsEStruct}
+
+pub using @e3d01496a63a684d {type SrcEStruct_7c32117ea6af as SrcEStruct}
+
+pub using @e3d01496a63a684d {type TCGENFILTER_fb0e18b30282 as TCGENFILTER}
+
+pub using @e3d01496a63a684d {type TCGENFLOW_8dc419462de2 as TCGENFLOW}
+
+pub using @e3d01496a63a684d {type TCGPCClientPCREventStruct_9737691f63c2 as TCGPCClientPCREventStruct}
+
+pub using @e3d01496a63a684d {type TCGPCClientTaggedEventStruct_b2d683dca739 as TCGPCClientTaggedEventStruct}
+
+pub using @e3d01496a63a684d {type TCIADDFLOWCOMPLETEHANDLER_435541d0b4a2 as TCIADDFLOWCOMPLETEHANDLER}
+
+pub using @e3d01496a63a684d {type TCICLIENTFUNCLIST_b4428cf2c3ed as TCICLIENTFUNCLIST}
+
+pub using @e3d01496a63a684d {type TCIDELFLOWCOMPLETEHANDLER_e53bdc3af918 as TCIDELFLOWCOMPLETEHANDLER}
+
+pub using @e3d01496a63a684d {type TCIFCDESCRIPTOR_3dc45034e8c2 as TCIFCDESCRIPTOR}
+
+pub using @e3d01496a63a684d {type TCIMODFLOWCOMPLETEHANDLER_3a4f81cb314e as TCIMODFLOWCOMPLETEHANDLER}
+
+pub using @e3d01496a63a684d {type TCINOTIFYHANDLER_919dc834e75b as TCINOTIFYHANDLER}
+
+pub using @e3d01496a63a684d {type TCSUPPORTEDINFOBUFFER_c0a2adfcb4a8 as TCSUPPORTEDINFOBUFFER}
+
+pub using @e3d01496a63a684d {type WBCLIterator_205b7e1611af as WBCLIterator}
+
+pub using @e3d01496a63a684d {type WBCLLogHdr_87c41318b1ed as WBCLLogHdr}
+
+// Traits
+

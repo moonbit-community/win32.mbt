@@ -1,0 +1,100 @@
+// Generated using `moon info`, DON'T EDIT IT
+package "moonbit-community/win32-bindings/windows/media/ocr"
+
+import {
+  "moonbit-community/win32-bindings/runtime/com",
+  "moonbit-community/win32-bindings/runtime/core",
+  "moonbit-community/win32-bindings/scc/05cafde8b44a2d07",
+  "moonbitlang/core/ref",
+}
+
+// Values
+pub let available_recognizer_languages_bb45ffcc6a : String
+
+pub let available_recognizer_languages_bd0d128668 : String
+
+pub let bounding_rect_87efc16461 : String
+
+pub let bounding_rect_96aeb5b57f : String
+
+pub fn get_available_recognizer_languages_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_bounding_rect(@core.RawAddress) -> Bytes raise @core.WindowsError
+
+pub fn get_bounding_rect_raw(@core.RawAddress, Bytes) -> Int
+
+pub fn get_lines_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_max_image_dimension(@core.RawAddress) -> UInt raise @core.WindowsError
+
+pub fn get_max_image_dimension_raw(@core.RawAddress, @ref.Ref[UInt]) -> Int
+
+pub fn get_recognizer_language_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_text_051b46b3e3_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_text_77f7b93243_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_text_angle_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_text_e02559e2de_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_words_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn is_language_supported_raw(@core.RawAddress, @core.RawAddress, Bytes) -> Int
+
+pub let lines_ac589fd512 : String
+
+pub let lines_c4018f0530 : String
+
+pub let max_image_dimension_3285bd0639 : String
+
+pub let max_image_dimension_5082a942a2 : String
+
+pub fn recognize_async_raw(@core.RawAddress, @core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub let recognizer_language_437a1ea885 : String
+
+pub let recognizer_language_be4fac2a71 : String
+
+pub fn static_factory(@core.Guid) -> @com.ComPtr[@com.IInspectable] raise @core.WindowsError
+
+pub let text_183009e55f : String
+
+pub let text_607e5317f6 : String
+
+pub let text_angle_efd9514f89 : String
+
+pub let text_angle_f500448af2 : String
+
+pub let text_b266660226 : String
+
+pub let text_b3d8a62c43 : String
+
+pub let text_ddde666c0d : String
+
+pub let text_fefc241a9e : String
+
+pub fn try_create_from_language_raw(@core.RawAddress, @core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn try_create_from_user_profile_languages_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub let words_b9991f4637 : String
+
+pub let words_ecf53e6d46 : String
+
+// Errors
+
+// Types and methods
+
+// Type aliases
+pub using @05cafde8b44a2d07 {type OcrEngine_947786bdec58 as OcrEngine}
+
+pub using @05cafde8b44a2d07 {type OcrLine_7e91d89d15f8 as OcrLine}
+
+pub using @05cafde8b44a2d07 {type OcrResult_fd6fe26490c2 as OcrResult}
+
+pub using @05cafde8b44a2d07 {type OcrWord_dc16d532dd26 as OcrWord}
+
+// Traits
+

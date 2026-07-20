@@ -1,0 +1,510 @@
+// Generated using `moon info`, DON'T EDIT IT
+package "moonbit-community/win32-bindings/windows/win32/devices/sensors"
+
+import {
+  "moonbit-community/win32-bindings/runtime/core",
+  "moonbit-community/win32-bindings/scc/b353f1a177950716",
+}
+
+// Values
+pub let activity_state_biking : Int
+
+pub let activity_state_count : Int
+
+pub let activity_state_fidgeting : Int
+
+pub let activity_state_force_dword : Int
+
+pub let activity_state_idle : Int
+
+pub let activity_state_in_vehicle : Int
+
+pub let activity_state_max : Int
+
+pub let activity_state_running : Int
+
+pub let activity_state_stationary : Int
+
+pub let activity_state_unknown : Int
+
+pub let activity_state_walking : Int
+
+pub fn add(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn add_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub let axis_max : Int
+
+pub let axis_x : Int
+
+pub let axis_y : Int
+
+pub let axis_z : Int
+
+pub fn check_location_capability(@core.RawAddress, UInt) -> Unit raise @core.WindowsError
+
+pub fn check_location_capability_raw(@core.RawAddress, UInt) -> Int
+
+pub fn clear(@core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn clear_raw(@core.RawAddress) -> Int
+
+pub fn collections_list_allocate_buffer_and_serialize_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn collections_list_copy_and_marshall_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn collections_list_deserialize_from_buffer_raw(UInt, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn collections_list_get_fillable_count_raw(UInt) -> UInt
+
+pub fn collections_list_get_marshalled_size_raw(@core.RawAddress) -> UInt
+
+pub fn collections_list_get_marshalled_size_without_serialization_raw(@core.RawAddress) -> UInt
+
+pub fn collections_list_get_serialized_size_raw(@core.RawAddress) -> UInt
+
+pub fn collections_list_marshall_raw(@core.RawAddress) -> Int
+
+pub fn collections_list_serialize_to_buffer_raw(@core.RawAddress, UInt, @core.RawAddress) -> Int
+
+pub fn collections_list_sort_subscribed_activities_by_confidence_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn collections_list_update_marshalled_pointer_raw(@core.RawAddress) -> Int
+
+pub let elevation_change_mode_elevator : Int
+
+pub let elevation_change_mode_force_dword : Int
+
+pub let elevation_change_mode_max : Int
+
+pub let elevation_change_mode_stepping : Int
+
+pub let elevation_change_mode_unknown : Int
+
+pub fn evaluate_activity_thresholds_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn get_at(@core.RawAddress, UInt, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn get_at_raw(@core.RawAddress, UInt, @core.RawAddress) -> Int
+
+pub fn get_category(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn get_category_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn get_count(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn get_count_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn get_data(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn get_data_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn get_event_interest(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn get_event_interest_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn get_friendly_name(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn get_friendly_name_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn get_global_location_permission(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn get_global_location_permission_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn get_id(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn get_id_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn get_performance_time_raw(@core.RawAddress) -> Int
+
+pub fn get_properties(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn get_properties_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn get_property(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn get_property_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn get_sensor_by_id(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn get_sensor_by_id_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn get_sensor_value(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn get_sensor_value_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn get_sensor_values(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn get_sensor_values_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn get_sensors_by_category(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn get_sensors_by_category_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn get_sensors_by_type(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn get_sensors_by_type_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn get_state(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn get_state_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn get_supported_data_fields(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn get_supported_data_fields_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn get_timestamp(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn get_timestamp_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn get_type(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn get_type_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub let gnss_clear_all_assistance_data : UInt
+
+pub let human_presence_detection_type_audio_biometric : Int
+
+pub let human_presence_detection_type_count : Int
+
+pub let human_presence_detection_type_facial_biometric : Int
+
+pub let human_presence_detection_type_force_dword : Int
+
+pub let human_presence_detection_type_undefined : Int
+
+pub let human_presence_detection_type_vendor_defined_biometric : Int
+
+pub let human_presence_detection_type_vendor_defined_non_biometric : Int
+
+pub fn init_prop_variant_from_clsid_array(@core.RawAddress, UInt, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn init_prop_variant_from_clsid_array_raw(@core.RawAddress, UInt, @core.RawAddress) -> Int
+
+pub fn init_prop_variant_from_float(Float, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn init_prop_variant_from_float_raw(Float, @core.RawAddress) -> Int
+
+pub fn is_collection_list_same_raw(@core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn is_guid_present_in_list_raw(@core.RawAddress, UInt, @core.RawAddress) -> UInt
+
+pub fn is_key_present_in_collection_list_raw(@core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn is_key_present_in_property_list_raw(@core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn is_sensor_subscribed_raw(@core.RawAddress, Bytes) -> UInt
+
+pub let location_desired_accuracy_default : Int
+
+pub let location_desired_accuracy_high : Int
+
+pub let location_position_source_cellular : Int
+
+pub let location_position_source_ipaddress : Int
+
+pub let location_position_source_satellite : Int
+
+pub let location_position_source_unknown : Int
+
+pub let location_position_source_wifi : Int
+
+pub let magnetometer_accuracy_approximate_b2b5c1f14d : Int
+
+pub let magnetometer_accuracy_approximate_c00ec5c30d : Int
+
+pub let magnetometer_accuracy_high_1e62fbacee : Int
+
+pub let magnetometer_accuracy_high_ae3a591968 : Int
+
+pub let magnetometer_accuracy_unknown_02626714f4 : Int
+
+pub let magnetometer_accuracy_unknown_3f048c396b : Int
+
+pub let magnetometer_accuracy_unreliable_bc258239ac : Int
+
+pub let magnetometer_accuracy_unreliable_ea2e1605c5 : Int
+
+pub fn on_data_updated(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn on_data_updated_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn on_event(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn on_event_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn on_leave(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn on_leave_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn on_sensor_enter(@core.RawAddress, @core.RawAddress, Int) -> Unit raise @core.WindowsError
+
+pub fn on_sensor_enter_raw(@core.RawAddress, @core.RawAddress, Int) -> Int
+
+pub fn on_state_changed(@core.RawAddress, @core.RawAddress, Int) -> Unit raise @core.WindowsError
+
+pub fn on_state_changed_raw(@core.RawAddress, @core.RawAddress, Int) -> Int
+
+pub let pedometer_step_type_count : Int
+
+pub let pedometer_step_type_force_dword : Int
+
+pub let pedometer_step_type_max : Int
+
+pub let pedometer_step_type_running : Int
+
+pub let pedometer_step_type_unknown : Int
+
+pub let pedometer_step_type_walking : Int
+
+pub fn prop_key_find_key_get_bool_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn prop_key_find_key_get_double_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn prop_key_find_key_get_file_time_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn prop_key_find_key_get_float_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn prop_key_find_key_get_guid_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn prop_key_find_key_get_int32_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn prop_key_find_key_get_int64_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn prop_key_find_key_get_nth_int64_raw(@core.RawAddress, @core.RawAddress, UInt, @core.RawAddress) -> Int
+
+pub fn prop_key_find_key_get_nth_ulong_raw(@core.RawAddress, @core.RawAddress, UInt, @core.RawAddress) -> Int
+
+pub fn prop_key_find_key_get_nth_ushort_raw(@core.RawAddress, @core.RawAddress, UInt, @core.RawAddress) -> Int
+
+pub fn prop_key_find_key_get_prop_variant_raw(@core.RawAddress, @core.RawAddress, UInt, @core.RawAddress) -> Int
+
+pub fn prop_key_find_key_get_ulong_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn prop_key_find_key_get_ushort_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn prop_key_find_key_set_prop_variant_raw(@core.RawAddress, @core.RawAddress, UInt, @core.RawAddress) -> Int
+
+pub fn prop_variant_get_information_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn properties_list_copy_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn properties_list_get_fillable_count_raw(UInt) -> UInt
+
+pub let proximity_sensor_human_engagement_capable : Int
+
+pub let proximity_sensor_human_head_altitude_capable : Int
+
+pub let proximity_sensor_human_head_azimuth_capable : Int
+
+pub let proximity_sensor_human_head_pitch_capable : Int
+
+pub let proximity_sensor_human_head_roll_capable : Int
+
+pub let proximity_sensor_human_head_yaw_capable : Int
+
+pub let proximity_sensor_human_identification_capable : Int
+
+pub let proximity_sensor_human_presence_capable : Int
+
+pub let proximity_sensor_multi_person_detection_capable : Int
+
+pub let proximity_sensor_supported_capabilities : Int
+
+pub let proximity_type_force_dword : Int
+
+pub let proximity_type_human_proximity : Int
+
+pub let proximity_type_object_proximity : Int
+
+pub fn remove(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn remove_by_id(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn remove_by_id_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn remove_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn request_permissions(@core.RawAddress, @core.RawAddress, @core.RawAddress, Int) -> Unit raise @core.WindowsError
+
+pub fn request_permissions_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, Int) -> Int
+
+pub fn sensor_collection_get_at_raw(UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub let sensor_connection_type_attached : Int
+
+pub let sensor_connection_type_external : Int
+
+pub let sensor_connection_type_integrated : Int
+
+pub let sensor_connection_type_pc_attached : Int
+
+pub let sensor_connection_type_pc_external : Int
+
+pub let sensor_connection_type_pc_integrated : Int
+
+pub let sensor_property_list_header_size : UInt
+
+pub let sensor_state_access_denied : Int
+
+pub let sensor_state_active : Int
+
+pub let sensor_state_error_55597ab057 : Int
+
+pub let sensor_state_error_cd30c1c1e3 : Int
+
+pub let sensor_state_idle : Int
+
+pub let sensor_state_initializing_5123c294f5 : Int
+
+pub let sensor_state_initializing_7f20733617 : Int
+
+pub let sensor_state_max : Int
+
+pub let sensor_state_min : Int
+
+pub let sensor_state_no_data : Int
+
+pub let sensor_state_not_available : Int
+
+pub let sensor_state_ready : Int
+
+pub fn serialization_buffer_allocate_raw(UInt, @core.RawAddress) -> Int
+
+pub fn serialization_buffer_free_raw(@core.RawAddress) -> Unit
+
+pub fn set_event_interest(@core.RawAddress, @core.RawAddress, UInt) -> Unit raise @core.WindowsError
+
+pub fn set_event_interest_raw(@core.RawAddress, @core.RawAddress, UInt) -> Int
+
+pub fn set_event_sink_30dc4fe6a2(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn set_event_sink_30dc4fe6a2_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn set_event_sink_cddef4f009(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn set_event_sink_cddef4f009_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn set_properties(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn set_properties_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub let simple_device_orientation_facedown : Int
+
+pub let simple_device_orientation_faceup : Int
+
+pub let simple_device_orientation_not_rotated_6ca1610852 : Int
+
+pub let simple_device_orientation_not_rotated_97fd87ffae : Int
+
+pub let simple_device_orientation_rotated180_degrees_counterclockwise : Int
+
+pub let simple_device_orientation_rotated270_degrees_counterclockwise : Int
+
+pub let simple_device_orientation_rotated90_degrees_counterclockwise : Int
+
+pub let simple_device_orientation_rotated_180 : Int
+
+pub let simple_device_orientation_rotated_270 : Int
+
+pub let simple_device_orientation_rotated_90 : Int
+
+pub let simple_device_orientation_rotated_face_down : Int
+
+pub let simple_device_orientation_rotated_face_up : Int
+
+pub fn supports_data_field(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn supports_data_field_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn supports_event(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn supports_event_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+// Errors
+
+// Types and methods
+
+// Type aliases
+pub using @b353f1a177950716 {type ACTIVITYSTATE_2278f742d2cc as ACTIVITYSTATE}
+
+pub using @b353f1a177950716 {type ACTIVITYSTATECOUNT_0b181816e341 as ACTIVITYSTATECOUNT}
+
+pub using @b353f1a177950716 {type AXIS_07f64a4b15b0 as AXIS}
+
+pub using @b353f1a177950716 {type Anonymous1EStruct_8ef092ab1b73 as Anonymous1EStruct}
+
+pub using @b353f1a177950716 {type Anonymous2EStruct_36f5af7fe37f as Anonymous2EStruct}
+
+pub using @b353f1a177950716 {type AnonymousEUnion_9f90bb9c0dcf as AnonymousEUnion}
+
+pub using @b353f1a177950716 {type ELEVATIONCHANGEMODE_c90773aa4bb8 as ELEVATIONCHANGEMODE}
+
+pub using @b353f1a177950716 {type HUMANPRESENCEDETECTIONTYPE_4ed237f2fb9a as HUMANPRESENCEDETECTIONTYPE}
+
+pub using @b353f1a177950716 {type HUMANPRESENCEDETECTIONTYPECOUNT_957a39e908ad as HUMANPRESENCEDETECTIONTYPECOUNT}
+
+pub using @b353f1a177950716 {type ILocationPermissions_c75954992462 as ILocationPermissions}
+
+pub using @b353f1a177950716 {type ISensor_fb2b28ccb9b4 as ISensor}
+
+pub using @b353f1a177950716 {type ISensorCollection_9d728def7d3a as ISensorCollection}
+
+pub using @b353f1a177950716 {type ISensorDataReport_d43ea7c6f8bc as ISensorDataReport}
+
+pub using @b353f1a177950716 {type ISensorEvents_02c3d642a594 as ISensorEvents}
+
+pub using @b353f1a177950716 {type ISensorManager_81afb9599c4e as ISensorManager}
+
+pub using @b353f1a177950716 {type ISensorManagerEvents_444446f504b7 as ISensorManagerEvents}
+
+pub using @b353f1a177950716 {type LOCATIONDESIREDACCURACY_4aad21f33608 as LOCATIONDESIREDACCURACY}
+
+pub using @b353f1a177950716 {type LOCATIONPOSITIONSOURCE_e296c07f62a5 as LOCATIONPOSITIONSOURCE}
+
+pub using @b353f1a177950716 {type MAGNETOMETERACCURACY_54016767a085 as MAGNETOMETERACCURACY}
+
+pub using @b353f1a177950716 {type MATRIX3X3_697a64c56d5f as MATRIX3X3}
+
+pub using @b353f1a177950716 {type MagnetometerAccuracy_860bf6f1abe1 as MagnetometerAccuracy}
+
+pub using @b353f1a177950716 {type PEDOMETERSTEPTYPE_f9e0b76cf119 as PEDOMETERSTEPTYPE}
+
+pub using @b353f1a177950716 {type PEDOMETERSTEPTYPECOUNT_8fdfcb0fc9ac as PEDOMETERSTEPTYPECOUNT}
+
+pub using @b353f1a177950716 {type PROXIMITYSENSORCAPABILITIES_7ca785ab34c4 as PROXIMITYSENSORCAPABILITIES}
+
+pub using @b353f1a177950716 {type PROXIMITYTYPE_c2825f848769 as PROXIMITYTYPE}
+
+pub using @b353f1a177950716 {type QUATERNION_52bb07bcba38 as QUATERNION}
+
+pub using @b353f1a177950716 {type SENSORCOLLECTIONLIST_5bbcb9a12ebc as SENSORCOLLECTIONLIST}
+
+pub using @b353f1a177950716 {type SENSORCONNECTIONTYPES_21fa0512c880 as SENSORCONNECTIONTYPES}
+
+pub using @b353f1a177950716 {type SENSORPROPERTYLIST_a1cec9c33f4b as SENSORPROPERTYLIST}
+
+pub using @b353f1a177950716 {type SENSORSTATE_21901fd6299a as SENSORSTATE}
+
+pub using @b353f1a177950716 {type SENSORVALUEPAIR_5703d8e7a840 as SENSORVALUEPAIR}
+
+pub using @b353f1a177950716 {type SIMPLEDEVICEORIENTATION_694c2fc8ddd1 as SIMPLEDEVICEORIENTATION}
+
+pub using @b353f1a177950716 {type Sensor_8c51ed6c3c89 as Sensor}
+
+pub using @b353f1a177950716 {type SensorCollection_405d02a60ff7 as SensorCollection}
+
+pub using @b353f1a177950716 {type SensorConnectionType_5b6fc5d810b2 as SensorConnectionType}
+
+pub using @b353f1a177950716 {type SensorDataReport_0e183d325804 as SensorDataReport}
+
+pub using @b353f1a177950716 {type SensorManager_9432d3af738a as SensorManager}
+
+pub using @b353f1a177950716 {type SensorState_bbb4fbb50718 as SensorState}
+
+pub using @b353f1a177950716 {type SimpleDeviceOrientation_824471ad32ad as SimpleDeviceOrientation}
+
+pub using @b353f1a177950716 {type VEC3D_3df02e6e0e0a as VEC3D}
+
+// Traits
+

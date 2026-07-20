@@ -1,0 +1,66 @@
+// Generated using `moon info`, DON'T EDIT IT
+package "moonbit-community/win32-bindings/windows/ui/notifications/management"
+
+import {
+  "moonbit-community/win32-bindings/runtime/com",
+  "moonbit-community/win32-bindings/runtime/core",
+  "moonbit-community/win32-bindings/scc/7fb4d6a9dd51141f",
+  "moonbitlang/core/ref",
+}
+
+// Values
+pub fn add_notification_changed(@core.RawAddress, @core.RawAddress) -> Int64 raise @core.WindowsError
+
+pub fn add_notification_changed_raw(@core.RawAddress, @core.RawAddress, @ref.Ref[Int64]) -> Int
+
+pub let allowed : Int
+
+pub fn clear_notifications(@core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn clear_notifications_raw(@core.RawAddress) -> Int
+
+pub let current_b871c762b5 : String
+
+pub let current_f81be08f66 : String
+
+pub let denied : Int
+
+pub fn get_access_status(@core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn get_access_status_raw(@core.RawAddress, @ref.Ref[Int]) -> Int
+
+pub fn get_current_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_notification_raw(@core.RawAddress, UInt, @ref.Ref[UInt64]) -> Int
+
+pub fn get_notifications_async_raw(@core.RawAddress, UInt, @ref.Ref[UInt64]) -> Int
+
+pub let notification_changed_286f45ab74 : String
+
+pub let notification_changed_388cce555b : String
+
+pub fn remove_notification(@core.RawAddress, UInt) -> Unit raise @core.WindowsError
+
+pub fn remove_notification_changed(@core.RawAddress, Int64) -> Unit raise @core.WindowsError
+
+pub fn remove_notification_changed_raw(@core.RawAddress, Int64) -> Int
+
+pub fn remove_notification_raw(@core.RawAddress, UInt) -> Int
+
+pub fn request_access_async_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn static_factory(@core.Guid) -> @com.ComPtr[@com.IInspectable] raise @core.WindowsError
+
+pub let unspecified : Int
+
+// Errors
+
+// Types and methods
+
+// Type aliases
+pub using @7fb4d6a9dd51141f {type UserNotificationListener_fc4f35d1464b as UserNotificationListener}
+
+pub using @7fb4d6a9dd51141f {type UserNotificationListenerAccessStatus_9723e3569bd9 as UserNotificationListenerAccessStatus}
+
+// Traits
+

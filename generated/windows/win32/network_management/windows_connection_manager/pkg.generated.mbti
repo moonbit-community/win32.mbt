@@ -1,0 +1,136 @@
+// Generated using `moon info`, DON'T EDIT IT
+package "moonbit-community/win32-bindings/windows/win32/network_management/windows_connection_manager"
+
+import {
+  "moonbit-community/win32-bindings/runtime/core",
+  "moonbit-community/win32-bindings/scc/328f4e45e82b0721",
+}
+
+// Values
+pub fn free_interface_context_table_raw(@core.RawAddress) -> Unit
+
+pub fn get_interface_context_table_for_host_name(@core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, UInt, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn get_interface_context_table_for_host_name_raw(@core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, UInt, @core.RawAddress) -> Int
+
+pub let net_interface_flag_connect_if_needed : UInt
+
+pub let net_interface_flag_none : UInt
+
+pub fn on_demand_get_routing_hint(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn on_demand_get_routing_hint_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn on_demand_register_notification(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn on_demand_register_notification_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn on_demand_un_register_notification(@core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn on_demand_un_register_notification_raw(@core.RawAddress) -> Int
+
+pub let wcm_api_version : UInt
+
+pub let wcm_api_version_1_0 : UInt
+
+pub let wcm_connection_cost_approachingdatalimit : Int
+
+pub let wcm_connection_cost_congested : Int
+
+pub let wcm_connection_cost_fixed : Int
+
+pub let wcm_connection_cost_overdatalimit : Int
+
+pub let wcm_connection_cost_roaming : Int
+
+pub let wcm_connection_cost_source_default : Int
+
+pub let wcm_connection_cost_source_gp : Int
+
+pub let wcm_connection_cost_source_operator : Int
+
+pub let wcm_connection_cost_source_user : Int
+
+pub let wcm_connection_cost_unknown : Int
+
+pub let wcm_connection_cost_unrestricted : Int
+
+pub let wcm_connection_cost_variable : Int
+
+pub fn wcm_free_memory_raw(@core.RawAddress) -> Unit
+
+pub fn wcm_get_profile_list_raw(@core.RawAddress, @core.RawAddress) -> UInt
+
+pub let wcm_global_property_domain_policy : Int
+
+pub let wcm_global_property_minimize_policy : Int
+
+pub let wcm_global_property_powermanagement_policy : Int
+
+pub let wcm_global_property_roaming_policy : Int
+
+pub let wcm_intf_property_connection_cost : Int
+
+pub let wcm_intf_property_dataplan_status : Int
+
+pub let wcm_intf_property_hotspot_profile : Int
+
+pub let wcm_max_profile_name : UInt
+
+pub let wcm_media_ethernet : Int
+
+pub let wcm_media_invalid : Int
+
+pub let wcm_media_max : Int
+
+pub let wcm_media_mbn : Int
+
+pub let wcm_media_unknown : Int
+
+pub let wcm_media_wlan : Int
+
+pub fn wcm_query_property_raw(@core.RawAddress, @core.RawAddress, Int, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn wcm_set_profile_list_raw(@core.RawAddress, UInt, Int, @core.RawAddress) -> UInt
+
+pub fn wcm_set_property_raw(@core.RawAddress, @core.RawAddress, Int, @core.RawAddress, UInt, @core.RawAddress) -> UInt
+
+pub let wcm_unknown_dataplan_status : UInt
+
+// Errors
+
+// Types and methods
+
+// Type aliases
+pub using @328f4e45e82b0721 {type NETINTERFACECONTEXT_fd84d950b852 as NETINTERFACECONTEXT}
+
+pub using @328f4e45e82b0721 {type NETINTERFACECONTEXTTABLE_903fbeef8811 as NETINTERFACECONTEXTTABLE}
+
+pub using @328f4e45e82b0721 {type ONDEMANDNOTIFICATIONCALLBACK_a7017c6b895c as ONDEMANDNOTIFICATIONCALLBACK}
+
+pub using @328f4e45e82b0721 {type WCMBILLINGCYCLEINFO_52576ce57292 as WCMBILLINGCYCLEINFO}
+
+pub using @328f4e45e82b0721 {type WCMCONNECTIONCOST_32bfdb24a04f as WCMCONNECTIONCOST}
+
+pub using @328f4e45e82b0721 {type WCMCONNECTIONCOSTDATA_2689074296ed as WCMCONNECTIONCOSTDATA}
+
+pub using @328f4e45e82b0721 {type WCMCONNECTIONCOSTSOURCE_2a42369e7164 as WCMCONNECTIONCOSTSOURCE}
+
+pub using @328f4e45e82b0721 {type WCMDATAPLANSTATUS_2e8ab67a2f55 as WCMDATAPLANSTATUS}
+
+pub using @328f4e45e82b0721 {type WCMMEDIATYPE_b23154dca971 as WCMMEDIATYPE}
+
+pub using @328f4e45e82b0721 {type WCMPOLICYVALUE_6a848fc97f11 as WCMPOLICYVALUE}
+
+pub using @328f4e45e82b0721 {type WCMPROFILEINFO_cb09ef4d6b05 as WCMPROFILEINFO}
+
+pub using @328f4e45e82b0721 {type WCMPROFILEINFOLIST_f34521da7217 as WCMPROFILEINFOLIST}
+
+pub using @328f4e45e82b0721 {type WCMPROPERTY_4e408c941795 as WCMPROPERTY}
+
+pub using @328f4e45e82b0721 {type WCMTIMEINTERVAL_5f682d36ad91 as WCMTIMEINTERVAL}
+
+pub using @328f4e45e82b0721 {type WCMUSAGEDATA_4399a81e6736 as WCMUSAGEDATA}
+
+// Traits
+

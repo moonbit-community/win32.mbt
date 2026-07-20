@@ -1,0 +1,738 @@
+// Generated using `moon info`, DON'T EDIT IT
+package "moonbit-community/win32-bindings/windows/win32/storage/enhanced_storage"
+
+import {
+  "moonbit-community/win32-bindings/runtime/core",
+  "moonbit-community/win32-bindings/scc/3206b58aa3609cb9",
+}
+
+// Values
+pub let act_authorize_on_resume : UInt
+
+pub let act_authorize_on_session_unlock : UInt
+
+pub let act_authorized : Int
+
+pub let act_unauthorize_on_session_lock : UInt
+
+pub let act_unauthorize_on_suspend : UInt
+
+pub let act_unauthorized : Int
+
+pub let appusermodel_startpinoption_default : UInt
+
+pub let appusermodel_startpinoption_nopinoninstall : UInt
+
+pub let appusermodel_startpinoption_userpinned : UInt
+
+pub let audio_channelcount_mono : UInt
+
+pub let audio_channelcount_stereo : UInt
+
+pub fn authorize(@core.RawAddress, UInt, UInt) -> Unit raise @core.WindowsError
+
+pub fn authorize_raw(@core.RawAddress, UInt, UInt) -> Int
+
+pub let bluetooth_address_type_public : UInt
+
+pub let bluetooth_address_type_random : UInt
+
+pub let bluetooth_cache_mode_cached : UInt
+
+pub let bluetooth_cached_mode_uncached : UInt
+
+pub let cert_capability_asymmetric_key_cryptography : UInt
+
+pub let cert_capability_certificate_support : UInt
+
+pub let cert_capability_hash_alg : UInt
+
+pub let cert_capability_optional_features : UInt
+
+pub let cert_capability_signature_alg : UInt
+
+pub let cert_max_capability : UInt
+
+pub let cert_rsa_1024_oid : String
+
+pub let cert_rsa_2048_oid : String
+
+pub let cert_rsa_3072_oid : String
+
+pub let cert_rsassa_pss_sha1_oid : String
+
+pub let cert_rsassa_pss_sha256_oid : String
+
+pub let cert_rsassa_pss_sha384_oid : String
+
+pub let cert_rsassa_pss_sha512_oid : String
+
+pub let cert_type_as_ch : UInt
+
+pub let cert_type_as_cm : UInt
+
+pub let cert_type_empty : UInt
+
+pub let cert_type_h_ch : UInt
+
+pub let cert_type_p_cp : UInt
+
+pub let cert_type_signer : UInt
+
+pub let cert_validation_policy_basic : UInt
+
+pub let cert_validation_policy_extended : UInt
+
+pub let cert_validation_policy_none : UInt
+
+pub let cert_validation_policy_reserved : UInt
+
+pub let creatoropenwithuioption_hidden : UInt
+
+pub let creatoropenwithuioption_visible : UInt
+
+pub let enhanced_storage_authn_state_authenticated : UInt
+
+pub let enhanced_storage_authn_state_authentication_denied : UInt
+
+pub let enhanced_storage_authn_state_device_error : UInt
+
+pub let enhanced_storage_authn_state_no_authentication_required : UInt
+
+pub let enhanced_storage_authn_state_not_authenticated : UInt
+
+pub let enhanced_storage_authn_state_unknown : UInt
+
+pub let es_authn_error_end : UInt
+
+pub let es_authn_error_start : UInt
+
+pub let es_e_authorized_unexpected : UInt
+
+pub let es_e_bad_sequence : UInt
+
+pub let es_e_challenge_mismatch : UInt
+
+pub let es_e_challenge_size_mismatch : UInt
+
+pub let es_e_device_digest_missing : UInt
+
+pub let es_e_friendly_name_too_long : UInt
+
+pub let es_e_group_policy_forbidden_operation : UInt
+
+pub let es_e_group_policy_forbidden_use : UInt
+
+pub let es_e_incomplete_command : UInt
+
+pub let es_e_inconsistent_param_length : UInt
+
+pub let es_e_invalid_capability : UInt
+
+pub let es_e_invalid_field_identifier : UInt
+
+pub let es_e_invalid_param_combination : UInt
+
+pub let es_e_invalid_param_length : UInt
+
+pub let es_e_invalid_response : UInt
+
+pub let es_e_invalid_silo : UInt
+
+pub let es_e_no_authentication_required : UInt
+
+pub let es_e_no_probe : UInt
+
+pub let es_e_not_authorized_unexpected : UInt
+
+pub let es_e_other_security_protocol_active : UInt
+
+pub let es_e_password_hint_too_long : UInt
+
+pub let es_e_password_too_long : UInt
+
+pub let es_e_provisioned_unexpected : UInt
+
+pub let es_e_silo_name_too_long : UInt
+
+pub let es_e_unknown_digest_algorithm : UInt
+
+pub let es_e_unprovisioned_hardware : UInt
+
+pub let es_e_unsupported_hardware : UInt
+
+pub let es_general_error_end : UInt
+
+pub let es_general_error_start : UInt
+
+pub let es_pw_silo_error_end : UInt
+
+pub let es_pw_silo_error_start : UInt
+
+pub let es_reserved_com_error_end : UInt
+
+pub let es_reserved_com_error_start : UInt
+
+pub let es_reserved_silo_error_end : UInt
+
+pub let es_reserved_silo_error_start : UInt
+
+pub let es_reserved_silo_specific_error_end : UInt
+
+pub let es_reserved_silo_specific_error_start : UInt
+
+pub let es_vendor_error_end : UInt
+
+pub let es_vendor_error_start : UInt
+
+pub let facility_enhanced_storage : UInt
+
+pub let fileofflineavailabilitystatus_complete : UInt
+
+pub let fileofflineavailabilitystatus_complete_pinned : UInt
+
+pub let fileofflineavailabilitystatus_excluded : UInt
+
+pub let fileofflineavailabilitystatus_folder_empty : UInt
+
+pub let fileofflineavailabilitystatus_notavailableoffline : UInt
+
+pub let fileofflineavailabilitystatus_partial : UInt
+
+pub let flagstatus_completed : Int
+
+pub let flagstatus_followup : Int
+
+pub let flagstatus_notflagged : Int
+
+pub fn get_ac_ts(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn get_ac_ts_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn get_actions(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn get_actions_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn get_authorization_state(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn get_authorization_state_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn get_description(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn get_description_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn get_device_name(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn get_device_name_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn get_device_path(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn get_device_path_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn get_info(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn get_info_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn get_matching_act(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn get_matching_act_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn get_matching_volume(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn get_matching_volume_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn get_name(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn get_name_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn get_portable_device(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn get_portable_device_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn get_shell_ext_support(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn get_shell_ext_support_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn get_silos(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn get_silos_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn get_unique_identity(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn get_unique_identity_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub let homegrouping_frequent : UInt
+
+pub let homegrouping_pinned : UInt
+
+pub let homegrouping_recent : UInt
+
+pub let homegrouping_recommendations : UInt
+
+pub let homegrouping_shared : UInt
+
+pub let homegrouping_unspecified : UInt
+
+pub let importance_high_max : Int
+
+pub let importance_high_min : Int
+
+pub let importance_high_set : Int
+
+pub let importance_low_max : Int
+
+pub let importance_low_min : Int
+
+pub let importance_low_set : Int
+
+pub let importance_normal_max : Int
+
+pub let importance_normal_min : Int
+
+pub let importance_normal_set : Int
+
+pub fn invoke(@core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn invoke_raw(@core.RawAddress) -> Int
+
+pub fn is_device_removable(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn is_device_removable_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn is_queue_frozen(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn is_queue_frozen_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub let isdefaultsave_both : UInt
+
+pub let isdefaultsave_none : UInt
+
+pub let isdefaultsave_nonowner : UInt
+
+pub let isdefaultsave_owner : UInt
+
+pub let kind_calendar : String
+
+pub let kind_communication : String
+
+pub let kind_contact : String
+
+pub let kind_document : String
+
+pub let kind_email : String
+
+pub let kind_feed : String
+
+pub let kind_folder : String
+
+pub let kind_game : String
+
+pub let kind_instantmessage : String
+
+pub let kind_journal : String
+
+pub let kind_link : String
+
+pub let kind_movie : String
+
+pub let kind_music : String
+
+pub let kind_note : String
+
+pub let kind_picture : String
+
+pub let kind_playlist : String
+
+pub let kind_program : String
+
+pub let kind_recordedtv : String
+
+pub let kind_searchfolder : String
+
+pub let kind_task : String
+
+pub let kind_unknown : String
+
+pub let kind_video : String
+
+pub let kind_webhistory : String
+
+pub let layoutpattern_cvmfb_alpha : String
+
+pub let layoutpattern_cvmfb_beta : String
+
+pub let layoutpattern_cvmfb_delta : String
+
+pub let layoutpattern_cvmfb_gamma : String
+
+pub let layoutpattern_cvmfs_alpha : String
+
+pub let layoutpattern_cvmfs_beta : String
+
+pub let layoutpattern_cvmfs_delta : String
+
+pub let layoutpattern_cvmfs_gamma : String
+
+pub let link_status_broken : Int
+
+pub let link_status_resolved : Int
+
+pub let match_kind_lexical : Int
+
+pub let match_kind_semantic : Int
+
+pub let offlineavailability_always_available : UInt
+
+pub let offlineavailability_available : UInt
+
+pub let offlineavailability_not_available : UInt
+
+pub let offlinestatus_offline : UInt
+
+pub let offlinestatus_offline_error : UInt
+
+pub let offlinestatus_offline_forced : UInt
+
+pub let offlinestatus_offline_item_version_conflict : UInt
+
+pub let offlinestatus_offline_slow : UInt
+
+pub let offlinestatus_offline_suspended : UInt
+
+pub let offlinestatus_online : UInt
+
+pub let photo_contrast_hard : UInt
+
+pub let photo_contrast_normal : UInt
+
+pub let photo_contrast_soft : UInt
+
+pub let photo_exposureprogram_action : UInt
+
+pub let photo_exposureprogram_aperture : UInt
+
+pub let photo_exposureprogram_creative : UInt
+
+pub let photo_exposureprogram_landscape : UInt
+
+pub let photo_exposureprogram_manual : UInt
+
+pub let photo_exposureprogram_normal : UInt
+
+pub let photo_exposureprogram_portrait : UInt
+
+pub let photo_exposureprogram_shutter : UInt
+
+pub let photo_exposureprogram_unknown : UInt
+
+pub let photo_flash_flash : UInt
+
+pub let photo_flash_flash_auto : UInt
+
+pub let photo_flash_flash_auto_noreturnlight : UInt
+
+pub let photo_flash_flash_auto_redeye : UInt
+
+pub let photo_flash_flash_auto_redeye_noreturnlight : UInt
+
+pub let photo_flash_flash_auto_redeye_returnlight : UInt
+
+pub let photo_flash_flash_auto_returnlight : UInt
+
+pub let photo_flash_flash_compulsory : UInt
+
+pub let photo_flash_flash_compulsory_noreturnlight : UInt
+
+pub let photo_flash_flash_compulsory_redeye : UInt
+
+pub let photo_flash_flash_compulsory_redeye_noreturnlight : UInt
+
+pub let photo_flash_flash_compulsory_redeye_returnlight : UInt
+
+pub let photo_flash_flash_compulsory_returnlight : UInt
+
+pub let photo_flash_flash_redeye : UInt
+
+pub let photo_flash_flash_redeye_noreturnlight : UInt
+
+pub let photo_flash_flash_redeye_returnlight : UInt
+
+pub let photo_flash_nofunction : UInt
+
+pub let photo_flash_none : UInt
+
+pub let photo_flash_none_auto : UInt
+
+pub let photo_flash_none_compulsory : UInt
+
+pub let photo_flash_withoutstrobe : UInt
+
+pub let photo_flash_withstrobe : UInt
+
+pub let photo_gaincontrol_highgaindown : UInt64
+
+pub let photo_gaincontrol_highgainup : UInt64
+
+pub let photo_gaincontrol_lowgaindown : UInt64
+
+pub let photo_gaincontrol_lowgainup : UInt64
+
+pub let photo_gaincontrol_none : UInt64
+
+pub let photo_lightsource_d55 : UInt
+
+pub let photo_lightsource_d65 : UInt
+
+pub let photo_lightsource_d75 : UInt
+
+pub let photo_lightsource_daylight : UInt
+
+pub let photo_lightsource_fluorescent : UInt
+
+pub let photo_lightsource_standard_a : UInt
+
+pub let photo_lightsource_standard_b : UInt
+
+pub let photo_lightsource_standard_c : UInt
+
+pub let photo_lightsource_tungsten : UInt
+
+pub let photo_lightsource_unknown : UInt
+
+pub let photo_programmode_action : UInt
+
+pub let photo_programmode_aperture : UInt
+
+pub let photo_programmode_creative : UInt
+
+pub let photo_programmode_landscape : UInt
+
+pub let photo_programmode_manual : UInt
+
+pub let photo_programmode_normal : UInt
+
+pub let photo_programmode_notdefined : UInt
+
+pub let photo_programmode_portrait : UInt
+
+pub let photo_programmode_shutter : UInt
+
+pub let photo_saturation_high : UInt
+
+pub let photo_saturation_low : UInt
+
+pub let photo_saturation_normal : UInt
+
+pub let photo_sharpness_hard : UInt
+
+pub let photo_sharpness_normal : UInt
+
+pub let photo_sharpness_soft : UInt
+
+pub let photo_whitebalance_auto : UInt
+
+pub let photo_whitebalance_manual : UInt
+
+pub let playbackstate_nomedia : UInt
+
+pub let playbackstate_paused : UInt
+
+pub let playbackstate_playing : UInt
+
+pub let playbackstate_recording : UInt
+
+pub let playbackstate_recordingpaused : UInt
+
+pub let playbackstate_stopped : UInt
+
+pub let playbackstate_transitioning : UInt
+
+pub let playbackstate_unknown : UInt
+
+pub let rating_five_stars_max : UInt
+
+pub let rating_five_stars_min : UInt
+
+pub let rating_five_stars_set : UInt
+
+pub let rating_four_stars_max : UInt
+
+pub let rating_four_stars_min : UInt
+
+pub let rating_four_stars_set : UInt
+
+pub let rating_one_star_max : UInt
+
+pub let rating_one_star_min : UInt
+
+pub let rating_one_star_set : UInt
+
+pub let rating_three_stars_max : UInt
+
+pub let rating_three_stars_min : UInt
+
+pub let rating_three_stars_set : UInt
+
+pub let rating_two_stars_max : UInt
+
+pub let rating_two_stars_min : UInt
+
+pub let rating_two_stars_set : UInt
+
+pub fn send_command(@core.RawAddress, UInt, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn send_command_raw(@core.RawAddress, UInt, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> Int
+
+pub let sfgaostr_browsable : String
+
+pub let sfgaostr_fileanc : String
+
+pub let sfgaostr_filesys : String
+
+pub let sfgaostr_folder : String
+
+pub let sfgaostr_hidden : String
+
+pub let sfgaostr_link : String
+
+pub let sfgaostr_nonenum : String
+
+pub let sfgaostr_placeholder : String
+
+pub let sfgaostr_storageanc : String
+
+pub let sfgaostr_stream : String
+
+pub let sfgaostr_superhidden : String
+
+pub let sfgaostr_system : String
+
+pub let sharingstatus_notshared : UInt
+
+pub let sharingstatus_private : UInt
+
+pub let sharingstatus_shared : UInt
+
+pub let storage_provider_share_status_group : String
+
+pub let storage_provider_share_status_owner : String
+
+pub let storage_provider_share_status_private : String
+
+pub let storage_provider_share_status_public : String
+
+pub let storage_provider_share_status_shared : String
+
+pub let storage_provider_sharingstatus_notshared : UInt
+
+pub let storage_provider_sharingstatus_private : UInt
+
+pub let storage_provider_sharingstatus_public : UInt
+
+pub let storage_provider_sharingstatus_public_coowned : UInt
+
+pub let storage_provider_sharingstatus_public_owned : UInt
+
+pub let storage_provider_sharingstatus_shared : UInt
+
+pub let storage_provider_sharingstatus_shared_coowned : UInt
+
+pub let storage_provider_sharingstatus_shared_owned : UInt
+
+pub let storageprovidercustom_icon_phone : UInt
+
+pub let storageproviderstate_error : UInt
+
+pub let storageproviderstate_excluded : UInt
+
+pub let storageproviderstate_in_sync : UInt
+
+pub let storageproviderstate_none : UInt
+
+pub let storageproviderstate_pending_download : UInt
+
+pub let storageproviderstate_pending_unspecified : UInt
+
+pub let storageproviderstate_pending_upload : UInt
+
+pub let storageproviderstate_pinned : UInt
+
+pub let storageproviderstate_sparse : UInt
+
+pub let storageproviderstate_transferring : UInt
+
+pub let storageproviderstate_warning : UInt
+
+pub let storageprovideruseraccountkind_business : UInt
+
+pub let storageprovideruseraccountkind_consumer : UInt
+
+pub let storageprovideruseraccountkind_unknown : UInt
+
+pub let sync_handlertype_computers : UInt
+
+pub let sync_handlertype_devices : UInt
+
+pub let sync_handlertype_folders : UInt
+
+pub let sync_handlertype_other : UInt
+
+pub let sync_handlertype_programs : UInt
+
+pub let sync_handlertype_webservices : UInt
+
+pub let sync_state_error : UInt
+
+pub let sync_state_idle : UInt
+
+pub let sync_state_notsetup : UInt
+
+pub let sync_state_pending : UInt
+
+pub let sync_state_syncing : UInt
+
+pub let sync_state_syncnotrun : UInt
+
+pub fn unauthorize(@core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn unauthorize_ex(@core.RawAddress, UInt) -> Unit raise @core.WindowsError
+
+pub fn unauthorize_ex_raw(@core.RawAddress, UInt) -> Int
+
+pub fn unauthorize_raw(@core.RawAddress) -> Int
+
+// Errors
+
+// Types and methods
+
+// Type aliases
+pub using @3206b58aa3609cb9 {type ACTAUTHORIZATIONSTATE_26d1185b57e8 as ACTAUTHORIZATIONSTATE}
+
+pub using @3206b58aa3609cb9 {type ACTAUTHORIZATIONSTATEVALUE_e580086709ba as ACTAUTHORIZATIONSTATEVALUE}
+
+pub using @3206b58aa3609cb9 {type ENHANCEDSTORAGEPASSWORDSILOINFORMATION_da0124e54055 as ENHANCEDSTORAGEPASSWORDSILOINFORMATION}
+
+pub using @3206b58aa3609cb9 {type EnhancedStorageACT_c067b0cc434a as EnhancedStorageACT}
+
+pub using @3206b58aa3609cb9 {type EnhancedStorageSilo_40bd6cb94cce as EnhancedStorageSilo}
+
+pub using @3206b58aa3609cb9 {type EnhancedStorageSiloAction_f1dc03e4833d as EnhancedStorageSiloAction}
+
+pub using @3206b58aa3609cb9 {type EnumEnhancedStorageACT_97f58d19ddc4 as EnumEnhancedStorageACT}
+
+pub using @3206b58aa3609cb9 {type IEnhancedStorageACT_91e548188249 as IEnhancedStorageACT}
+
+pub using @3206b58aa3609cb9 {type IEnhancedStorageACT2_092b264042c1 as IEnhancedStorageACT2}
+
+pub using @3206b58aa3609cb9 {type IEnhancedStorageACT3_3edef0bd57b3 as IEnhancedStorageACT3}
+
+pub using @3206b58aa3609cb9 {type IEnhancedStorageSilo_909bbf46eb9c as IEnhancedStorageSilo}
+
+pub using @3206b58aa3609cb9 {type IEnhancedStorageSiloAction_f4f1f8a3bd7d as IEnhancedStorageSiloAction}
+
+pub using @3206b58aa3609cb9 {type IEnumEnhancedStorageACT_b6663b0ff2c9 as IEnumEnhancedStorageACT}
+
+pub using @3206b58aa3609cb9 {type SILOINFO_742c1b35918f as SILOINFO}
+
+// Traits
+

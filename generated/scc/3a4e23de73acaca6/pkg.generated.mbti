@@ -1,0 +1,104 @@
+// Generated using `moon info`, DON'T EDIT IT
+package "moonbit-community/win32-bindings/scc/3a4e23de73acaca6"
+
+import {
+  "moonbit-community/win32-bindings/runtime/core",
+  "moonbitlang/core/debug",
+}
+
+// Values
+pub fn close_compressor_3509493f080d_raw(@core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn close_decompressor_d1705e8a69f3_raw(@core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub let compress_algorithm_invalid_02de04f82be5 : UInt
+
+pub let compress_algorithm_lzms_4556a14988b3 : UInt
+
+pub let compress_algorithm_max_0d9497d756f3 : UInt
+
+pub let compress_algorithm_mszip_be3b9952c334 : UInt
+
+pub let compress_algorithm_null_1bc23c0892c3 : UInt
+
+pub let compress_algorithm_xpress_b85fa0f89026 : UInt
+
+pub let compress_algorithm_xpress_huff_20f1005dca25 : UInt
+
+pub fn compress_da1ce0ef8f1f_raw(@core.RawAddress, @core.RawAddress, UInt64, @core.RawAddress, UInt64, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub let compress_information_class_block_size_b0f4a8cc67eb : Int
+
+pub let compress_information_class_invalid_d0c7546eac48 : Int
+
+pub let compress_information_class_level_aa8802523966 : Int
+
+pub let compress_raw_c42743081964 : UInt
+
+pub let compressallocationroutines_1e7e8e07ea5f_alignment : Int
+
+pub let compressallocationroutines_1e7e8e07ea5f_size : Int
+
+pub let compressorhandle_3069644771a0_alignment : Int
+
+pub let compressorhandle_3069644771a0_size : Int
+
+pub fn create_compressor_7e47538a095f_raw(UInt, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn create_decompressor_a19fd2e51880_raw(UInt, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn decompress_3dc8afed6e85_raw(@core.RawAddress, @core.RawAddress, UInt64, @core.RawAddress, UInt64, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub let decompressorhandle_e95a8cc88052_alignment : Int
+
+pub let decompressorhandle_e95a8cc88052_size : Int
+
+pub fn query_compressor_information_abbdd024b36c_raw(@core.RawAddress, Int, @core.RawAddress, UInt64) -> @core.RawWin32Call[Int]
+
+pub fn query_decompressor_information_40f7f04f27ea_raw(@core.RawAddress, Int, @core.RawAddress, UInt64) -> @core.RawWin32Call[Int]
+
+pub fn reset_compressor_7db4d5ea161c_raw(@core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn reset_decompressor_62535711b317_raw(@core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn set_compressor_information_8da1baec1e56_raw(@core.RawAddress, Int, @core.RawAddress, UInt64) -> @core.RawWin32Call[Int]
+
+pub fn set_decompressor_information_b7b8f9577e2f_raw(@core.RawAddress, Int, @core.RawAddress, UInt64) -> @core.RawWin32Call[Int]
+
+// Errors
+
+// Types and methods
+pub(all) struct COMPRESSALGORITHM_d038df07581b(Int) derive(Compare, Eq, @debug.Debug)
+pub fn COMPRESSALGORITHM_d038df07581b::from_int(Int) -> Self
+pub fn COMPRESSALGORITHM_d038df07581b::to_int(Self) -> Int
+
+pub(all) struct COMPRESSALLOCATIONROUTINES_1e7e8e07ea5f {
+  raw_bytes : Bytes
+} derive(Eq, @debug.Debug)
+pub fn COMPRESSALLOCATIONROUTINES_1e7e8e07ea5f::bytes(Self) -> Bytes
+pub fn COMPRESSALLOCATIONROUTINES_1e7e8e07ea5f::from_bytes(Bytes) -> Self raise @core.WindowsError
+
+pub(all) struct COMPRESSINFORMATIONCLASS_35b8ad4b17c3(Int) derive(Compare, Eq, @debug.Debug)
+pub fn COMPRESSINFORMATIONCLASS_35b8ad4b17c3::from_int(Int) -> Self
+pub fn COMPRESSINFORMATIONCLASS_35b8ad4b17c3::to_int(Self) -> Int
+
+pub(all) struct COMPRESSORHANDLE_3069644771a0 {
+  raw_bytes : Bytes
+} derive(Eq, @debug.Debug)
+pub fn COMPRESSORHANDLE_3069644771a0::bytes(Self) -> Bytes
+pub fn COMPRESSORHANDLE_3069644771a0::from_bytes(Bytes) -> Self raise @core.WindowsError
+
+pub(all) struct DECOMPRESSORHANDLE_e95a8cc88052 {
+  raw_bytes : Bytes
+} derive(Eq, @debug.Debug)
+pub fn DECOMPRESSORHANDLE_e95a8cc88052::bytes(Self) -> Bytes
+pub fn DECOMPRESSORHANDLE_e95a8cc88052::from_bytes(Bytes) -> Self raise @core.WindowsError
+
+pub type PFNCOMPRESSALLOCATE_a092da8ff14b
+
+pub type PFNCOMPRESSFREE_b4f138fcf6d6
+
+// Type aliases
+
+// Traits
+

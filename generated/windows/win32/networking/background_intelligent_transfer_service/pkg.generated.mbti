@@ -1,0 +1,1500 @@
+// Generated using `moon info`, DON'T EDIT IT
+package "moonbit-community/win32-bindings/windows/win32/networking/background_intelligent_transfer_service"
+
+import {
+  "moonbit-community/win32-bindings/runtime/core",
+  "moonbit-community/win32-bindings/scc/83919970a4ed0767",
+}
+
+// Values
+pub fn add_file(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn add_file_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn add_file_set(@core.RawAddress, UInt, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn add_file_set_raw(@core.RawAddress, UInt, @core.RawAddress) -> Int
+
+pub fn add_file_with_ranges(@core.RawAddress, @core.RawAddress, @core.RawAddress, UInt, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn add_file_with_ranges_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, UInt, @core.RawAddress) -> Int
+
+pub fn add_files(@core.RawAddress, UInt, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn add_files_raw(@core.RawAddress, UInt, @core.RawAddress) -> Int
+
+pub fn begin_job_error(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn begin_job_error_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn begin_job_modification(@core.RawAddress, @core.RawAddress, UInt) -> Unit raise @core.WindowsError
+
+pub fn begin_job_modification_raw(@core.RawAddress, @core.RawAddress, UInt) -> Int
+
+pub fn begin_job_transferred(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn begin_job_transferred_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub let bg_auth_scheme_basic : Int
+
+pub let bg_auth_scheme_digest : Int
+
+pub let bg_auth_scheme_negotiate : Int
+
+pub let bg_auth_scheme_ntlm : Int
+
+pub let bg_auth_scheme_passport : Int
+
+pub let bg_auth_target_proxy : Int
+
+pub let bg_auth_target_server : Int
+
+pub let bg_cert_store_location_current_service : Int
+
+pub let bg_cert_store_location_current_user : Int
+
+pub let bg_cert_store_location_current_user_group_policy : Int
+
+pub let bg_cert_store_location_local_machine : Int
+
+pub let bg_cert_store_location_local_machine_enterprise : Int
+
+pub let bg_cert_store_location_local_machine_group_policy : Int
+
+pub let bg_cert_store_location_services : Int
+
+pub let bg_cert_store_location_users : Int
+
+pub let bg_copy_file_all : UInt
+
+pub let bg_copy_file_dacl : UInt
+
+pub let bg_copy_file_group : UInt
+
+pub let bg_copy_file_owner : UInt
+
+pub let bg_copy_file_sacl : UInt
+
+pub let bg_disable_branch_cache : UInt
+
+pub let bg_e_app_package_not_found : Int
+
+pub let bg_e_app_package_scenario_not_supported : Int
+
+pub let bg_e_blocked_by_background_access_policy : Int
+
+pub let bg_e_blocked_by_battery_policy : Int
+
+pub let bg_e_blocked_by_battery_saver : Int
+
+pub let bg_e_blocked_by_cost_transfer_policy : Int
+
+pub let bg_e_blocked_by_game_mode : Int
+
+pub let bg_e_blocked_by_policy : Int
+
+pub let bg_e_blocked_by_system_policy : Int
+
+pub let bg_e_busycacherecord : Int
+
+pub let bg_e_client_server_protocol_mismatch : Int
+
+pub let bg_e_commit_in_progress : Int
+
+pub let bg_e_connect_failure : Int
+
+pub let bg_e_connection_closed : Int
+
+pub let bg_e_database_corrupt : Int
+
+pub let bg_e_destination_locked : Int
+
+pub let bg_e_discovery_in_progress : Int
+
+pub let bg_e_empty : Int
+
+pub let bg_e_error_context_general_queue_manager : Int
+
+pub let bg_e_error_context_general_transport : Int
+
+pub let bg_e_error_context_local_file : Int
+
+pub let bg_e_error_context_queue_manager_notification : Int
+
+pub let bg_e_error_context_remote_application : Int
+
+pub let bg_e_error_context_remote_file : Int
+
+pub let bg_e_error_context_server_certificate_callback : Int
+
+pub let bg_e_error_context_unknown : Int
+
+pub let bg_e_error_information_unavailable : Int
+
+pub let bg_e_file_not_available : Int
+
+pub let bg_e_file_not_found : Int
+
+pub let bg_e_http_error_100 : Int
+
+pub let bg_e_http_error_101 : Int
+
+pub let bg_e_http_error_200 : Int
+
+pub let bg_e_http_error_201 : Int
+
+pub let bg_e_http_error_202 : Int
+
+pub let bg_e_http_error_203 : Int
+
+pub let bg_e_http_error_204 : Int
+
+pub let bg_e_http_error_205 : Int
+
+pub let bg_e_http_error_206 : Int
+
+pub let bg_e_http_error_300 : Int
+
+pub let bg_e_http_error_301 : Int
+
+pub let bg_e_http_error_302 : Int
+
+pub let bg_e_http_error_303 : Int
+
+pub let bg_e_http_error_304 : Int
+
+pub let bg_e_http_error_305 : Int
+
+pub let bg_e_http_error_307 : Int
+
+pub let bg_e_http_error_400 : Int
+
+pub let bg_e_http_error_401 : Int
+
+pub let bg_e_http_error_402 : Int
+
+pub let bg_e_http_error_403 : Int
+
+pub let bg_e_http_error_404 : Int
+
+pub let bg_e_http_error_405 : Int
+
+pub let bg_e_http_error_406 : Int
+
+pub let bg_e_http_error_407 : Int
+
+pub let bg_e_http_error_408 : Int
+
+pub let bg_e_http_error_409 : Int
+
+pub let bg_e_http_error_410 : Int
+
+pub let bg_e_http_error_411 : Int
+
+pub let bg_e_http_error_412 : Int
+
+pub let bg_e_http_error_413 : Int
+
+pub let bg_e_http_error_414 : Int
+
+pub let bg_e_http_error_415 : Int
+
+pub let bg_e_http_error_416 : Int
+
+pub let bg_e_http_error_417 : Int
+
+pub let bg_e_http_error_449 : Int
+
+pub let bg_e_http_error_500 : Int
+
+pub let bg_e_http_error_501 : Int
+
+pub let bg_e_http_error_502 : Int
+
+pub let bg_e_http_error_503 : Int
+
+pub let bg_e_http_error_504 : Int
+
+pub let bg_e_http_error_505 : Int
+
+pub let bg_e_insufficient_http_support : Int
+
+pub let bg_e_insufficient_range_support : Int
+
+pub let bg_e_invalid_auth_scheme : Int
+
+pub let bg_e_invalid_auth_target : Int
+
+pub let bg_e_invalid_credentials : Int
+
+pub let bg_e_invalid_hash_algorithm : Int
+
+pub let bg_e_invalid_proxy_info : Int
+
+pub let bg_e_invalid_range : Int
+
+pub let bg_e_invalid_server_response : Int
+
+pub let bg_e_invalid_state : Int
+
+pub let bg_e_local_file_changed : Int
+
+pub let bg_e_max_download_size_invalid_value : Int
+
+pub let bg_e_max_download_size_limit_reached : Int
+
+pub let bg_e_maxdownload_timeout : Int
+
+pub let bg_e_missing_file_size : Int
+
+pub let bg_e_network_disconnected : Int
+
+pub let bg_e_new_owner_diff_mapping : Int
+
+pub let bg_e_new_owner_no_file_access : Int
+
+pub let bg_e_no_progress : Int
+
+pub let bg_e_not_found : Int
+
+pub let bg_e_not_supported_with_custom_http_method : Int
+
+pub let bg_e_overlapping_ranges : Int
+
+pub let bg_e_password_too_large : Int
+
+pub let bg_e_peercaching_disabled : Int
+
+pub let bg_e_property_supported_for_download_jobs_only : Int
+
+pub let bg_e_protocol_not_available : Int
+
+pub let bg_e_proxy_bypass_list_too_large : Int
+
+pub let bg_e_proxy_list_too_large : Int
+
+pub let bg_e_random_access_not_supported : Int
+
+pub let bg_e_read_only_property : Int
+
+pub let bg_e_read_only_property_after_addfile : Int
+
+pub let bg_e_read_only_property_after_resume : Int
+
+pub let bg_e_read_only_when_job_active : Int
+
+pub let bg_e_record_deleted : Int
+
+pub let bg_e_remote_file_changed : Int
+
+pub let bg_e_remote_not_supported : Int
+
+pub let bg_e_server_cert_validation_interface_required : Int
+
+pub let bg_e_server_execute_enable : Int
+
+pub let bg_e_session_not_found : Int
+
+pub let bg_e_standby_mode : Int
+
+pub let bg_e_string_too_long : Int
+
+pub let bg_e_test_option_blocked_download : Int
+
+pub let bg_e_token_required : Int
+
+pub let bg_e_too_large : Int
+
+pub let bg_e_too_many_files : Int
+
+pub let bg_e_too_many_files_in_job : Int
+
+pub let bg_e_too_many_jobs_per_machine : Int
+
+pub let bg_e_too_many_jobs_per_user : Int
+
+pub let bg_e_too_many_ranges_in_file : Int
+
+pub let bg_e_unknown_property_id : Int
+
+pub let bg_e_unsupported_job_configuration : Int
+
+pub let bg_e_upnp_error : Int
+
+pub let bg_e_use_stored_credentials_not_supported : Int
+
+pub let bg_e_username_too_large : Int
+
+pub let bg_e_validation_failed : Int
+
+pub let bg_e_volume_changed : Int
+
+pub let bg_e_watchdog_timeout : Int
+
+pub let bg_enable_peercaching_client : UInt
+
+pub let bg_enable_peercaching_server : UInt
+
+pub let bg_error_context_general_queue_manager : Int
+
+pub let bg_error_context_general_transport : Int
+
+pub let bg_error_context_local_file : Int
+
+pub let bg_error_context_none : Int
+
+pub let bg_error_context_queue_manager_notification : Int
+
+pub let bg_error_context_remote_application : Int
+
+pub let bg_error_context_remote_file : Int
+
+pub let bg_error_context_server_certificate_callback : Int
+
+pub let bg_error_context_unknown : Int
+
+pub let bg_http_redirect_policy_allow_https_to_http : UInt
+
+pub let bg_http_redirect_policy_allow_report : UInt
+
+pub let bg_http_redirect_policy_allow_silent : UInt
+
+pub let bg_http_redirect_policy_disallow : UInt
+
+pub let bg_http_redirect_policy_mask : UInt
+
+pub let bg_job_disable_branch_cache : UInt
+
+pub let bg_job_enable_peercaching_client : UInt
+
+pub let bg_job_enable_peercaching_server : UInt
+
+pub let bg_job_enum_all_users : UInt
+
+pub let bg_job_priority_foreground : Int
+
+pub let bg_job_priority_high : Int
+
+pub let bg_job_priority_low : Int
+
+pub let bg_job_priority_normal : Int
+
+pub let bg_job_proxy_usage_autodetect : Int
+
+pub let bg_job_proxy_usage_no_proxy : Int
+
+pub let bg_job_proxy_usage_override : Int
+
+pub let bg_job_proxy_usage_preconfig : Int
+
+pub let bg_job_state_acknowledged : Int
+
+pub let bg_job_state_cancelled : Int
+
+pub let bg_job_state_connecting : Int
+
+pub let bg_job_state_error : Int
+
+pub let bg_job_state_queued : Int
+
+pub let bg_job_state_suspended : Int
+
+pub let bg_job_state_transferred : Int
+
+pub let bg_job_state_transferring : Int
+
+pub let bg_job_state_transient_error : Int
+
+pub let bg_job_type_download : Int
+
+pub let bg_job_type_upload : Int
+
+pub let bg_job_type_upload_reply : Int
+
+pub let bg_notify_disable : UInt
+
+pub let bg_notify_file_ranges_transferred : UInt
+
+pub let bg_notify_file_transferred : UInt
+
+pub let bg_notify_job_error : UInt
+
+pub let bg_notify_job_modification : UInt
+
+pub let bg_notify_job_transferred : UInt
+
+pub let bg_s_error_context_none : Int
+
+pub let bg_s_overridden_by_policy : Int
+
+pub let bg_s_partial_complete : Int
+
+pub let bg_s_proxy_changed : Int
+
+pub let bg_s_unable_to_delete_files : Int
+
+pub let bg_ssl_enable_crl_check : UInt
+
+pub let bg_ssl_ignore_cert_cn_invalid : UInt
+
+pub let bg_ssl_ignore_cert_date_invalid : UInt
+
+pub let bg_ssl_ignore_cert_wrong_usage : UInt
+
+pub let bg_ssl_ignore_unknown_ca : UInt
+
+pub let bg_token_local_file : UInt
+
+pub let bg_token_network : UInt
+
+pub let bits_cost_option_ignore_congestion : UInt
+
+pub let bits_cost_state_below_cap : UInt
+
+pub let bits_cost_state_capped_usage_unknown : UInt
+
+pub let bits_cost_state_near_cap : UInt
+
+pub let bits_cost_state_overcap_charged : UInt
+
+pub let bits_cost_state_overcap_throttled : UInt
+
+pub let bits_cost_state_reserved : UInt
+
+pub let bits_cost_state_roaming : UInt
+
+pub let bits_cost_state_unrestricted : UInt
+
+pub let bits_cost_state_usage_based : UInt
+
+pub let bits_file_property_id_http_response_headers : Int
+
+pub let bits_job_property_dynamic_content : Int
+
+pub let bits_job_property_high_performance : Int
+
+pub let bits_job_property_id_cost_flags : Int
+
+pub let bits_job_property_max_download_size : Int
+
+pub let bits_job_property_minimum_notification_interval_ms : Int
+
+pub let bits_job_property_notification_clsid : Int
+
+pub let bits_job_property_on_demand_mode : Int
+
+pub let bits_job_property_use_stored_credentials : Int
+
+pub let bits_job_transfer_policy_always : Int
+
+pub let bits_job_transfer_policy_no_surcharge : Int
+
+pub let bits_job_transfer_policy_not_roaming : Int
+
+pub let bits_job_transfer_policy_standard : Int
+
+pub let bits_job_transfer_policy_unrestricted : Int
+
+pub let bits_mc_failed_to_start : Int
+
+pub let bits_mc_fatal_igd_error : Int
+
+pub let bits_mc_file_deletion_failed : Int
+
+pub let bits_mc_file_deletion_failed_more : Int
+
+pub let bits_mc_job_cancelled : Int
+
+pub let bits_mc_job_notification_failure : Int
+
+pub let bits_mc_job_property_change : Int
+
+pub let bits_mc_job_scavenged : Int
+
+pub let bits_mc_job_take_ownership : Int
+
+pub let bits_mc_peercaching_port : Int
+
+pub let bits_mc_state_file_corrupt : Int
+
+pub let bits_mc_wsd_port : Int
+
+pub fn cancel(@core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn cancel_group(@core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn cancel_group_raw(@core.RawAddress) -> Int
+
+pub fn cancel_job(@core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn cancel_job_raw(@core.RawAddress) -> Int
+
+pub fn cancel_raw(@core.RawAddress) -> Int
+
+pub fn clear_helper_token(@core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn clear_helper_token_raw(@core.RawAddress) -> Int
+
+pub fn clear_peers(@core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn clear_peers_raw(@core.RawAddress) -> Int
+
+pub fn clear_records(@core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn clear_records_raw(@core.RawAddress) -> Int
+
+pub fn clone_19047e2f72(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn clone_19047e2f72_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn clone_4543c0c55b(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn clone_4543c0c55b_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn clone_86c222dea5(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn clone_86c222dea5_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn clone_ab0cd7025c(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn clone_ab0cd7025c_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn clone_d8b4bab0fb(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn clone_d8b4bab0fb_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn clone_e718377c22(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn clone_e718377c22_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn complete(@core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn complete_raw(@core.RawAddress) -> Int
+
+pub fn create_group(@core.RawAddress, Bytes, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn create_group_raw(@core.RawAddress, Bytes, @core.RawAddress) -> Int
+
+pub fn create_job_104084807f(@core.RawAddress, @core.RawAddress, Int, @core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn create_job_104084807f_raw(@core.RawAddress, @core.RawAddress, Int, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn create_job_141b5f0476(@core.RawAddress, Bytes, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn create_job_141b5f0476_raw(@core.RawAddress, Bytes, @core.RawAddress) -> Int
+
+pub fn delete_record(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn delete_record_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn delete_url(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn delete_url_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn disable_bits_uploads(@core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn disable_bits_uploads_raw(@core.RawAddress) -> Int
+
+pub fn discover_peers(@core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn discover_peers_raw(@core.RawAddress) -> Int
+
+pub fn enable_bits_uploads(@core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn enable_bits_uploads_raw(@core.RawAddress) -> Int
+
+pub fn enum_files(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn enum_files_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn enum_groups(@core.RawAddress, UInt, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn enum_groups_raw(@core.RawAddress, UInt, @core.RawAddress) -> Int
+
+pub fn enum_jobs_1351ed93ed(@core.RawAddress, UInt, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn enum_jobs_1351ed93ed_raw(@core.RawAddress, UInt, @core.RawAddress) -> Int
+
+pub fn enum_jobs_7e83a4b225(@core.RawAddress, UInt, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn enum_jobs_7e83a4b225_raw(@core.RawAddress, UInt, @core.RawAddress) -> Int
+
+pub fn enum_peers(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn enum_peers_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn enum_records(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn enum_records_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn file_ranges_transferred(@core.RawAddress, @core.RawAddress, @core.RawAddress, UInt, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn file_ranges_transferred_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, UInt, @core.RawAddress) -> Int
+
+pub fn file_transferred(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn file_transferred_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn finish_job_error(@core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn finish_job_error_raw(@core.RawAddress) -> Int
+
+pub fn finish_job_modification(@core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn finish_job_modification_raw(@core.RawAddress) -> Int
+
+pub fn finish_job_transferred(@core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn finish_job_transferred_raw(@core.RawAddress) -> Int
+
+pub fn get_cleanup_task(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn get_cleanup_task_name(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn get_cleanup_task_name_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn get_cleanup_task_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn get_client_certificate(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn get_client_certificate_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn get_configuration_flags(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn get_configuration_flags_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn get_count_274d3d37f3(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn get_count_274d3d37f3_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn get_count_44e38ce5cc(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn get_count_44e38ce5cc_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn get_count_62039f4a7b(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn get_count_62039f4a7b_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn get_count_8ea5ad60cd(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn get_count_8ea5ad60cd_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn get_count_b0ed99250f(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn get_count_b0ed99250f_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn get_count_b8201f691a(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn get_count_b8201f691a_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn get_custom_headers(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn get_custom_headers_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn get_description(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn get_description_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn get_display_name(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn get_display_name_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn get_error_8aba6741ec(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn get_error_8aba6741ec_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn get_error_a2fe1bf3b2(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn get_error_a2fe1bf3b2_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn get_error_context_description(@core.RawAddress, UInt, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn get_error_context_description_raw(@core.RawAddress, UInt, @core.RawAddress) -> Int
+
+pub fn get_error_count(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn get_error_count_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn get_error_description_7fcad07f82(@core.RawAddress, UInt, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn get_error_description_7fcad07f82_raw(@core.RawAddress, UInt, @core.RawAddress) -> Int
+
+pub fn get_error_description_8781841b94(@core.RawAddress, Int, UInt, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn get_error_description_8781841b94_raw(@core.RawAddress, Int, UInt, @core.RawAddress) -> Int
+
+pub fn get_file_140089862e(@core.RawAddress, UInt, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn get_file_140089862e_raw(@core.RawAddress, UInt, @core.RawAddress) -> Int
+
+pub fn get_file_883bfe1b99(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn get_file_883bfe1b99_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn get_file_acl_flags(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn get_file_acl_flags_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn get_file_count(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn get_file_count_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn get_file_modification_time(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn get_file_modification_time_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn get_file_ranges_5e1838c33b(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn get_file_ranges_5e1838c33b_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn get_file_ranges_860477b068(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn get_file_ranges_860477b068_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn get_file_size(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn get_file_size_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn get_filled_file_ranges(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn get_filled_file_ranges_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn get_group(@core.RawAddress, Bytes, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn get_group_id(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn get_group_id_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn get_group_raw(@core.RawAddress, Bytes, @core.RawAddress) -> Int
+
+pub fn get_helper_token_flags(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn get_helper_token_flags_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn get_helper_token_sid(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn get_helper_token_sid_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn get_http_method(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn get_http_method_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn get_id_6ceaaec893(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn get_id_6ceaaec893_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn get_id_aa7087d5a0(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn get_id_aa7087d5a0_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn get_job_5667b1cde4(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn get_job_5667b1cde4_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn get_job_e4fe1b2d49(@core.RawAddress, Bytes, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn get_job_e4fe1b2d49_raw(@core.RawAddress, Bytes, @core.RawAddress) -> Int
+
+pub fn get_job_id(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn get_job_id_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn get_last_access_time(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn get_last_access_time_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn get_local_name(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn get_local_name_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn get_maximum_cache_size(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn get_maximum_cache_size_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn get_maximum_content_age(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn get_maximum_content_age_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn get_maximum_download_time(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn get_maximum_download_time_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn get_minimum_retry_delay(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn get_minimum_retry_delay_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn get_no_progress_timeout(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn get_no_progress_timeout_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn get_notify_cmd_line(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn get_notify_cmd_line_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn get_notify_flags(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn get_notify_flags_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn get_notify_interface(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn get_notify_interface_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn get_object(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn get_object_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn get_origin_url(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn get_origin_url_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn get_owner(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn get_owner_elevation_state(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn get_owner_elevation_state_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn get_owner_integrity_level(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn get_owner_integrity_level_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn get_owner_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn get_peer_caching_flags(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn get_peer_caching_flags_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn get_peer_download_stats(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn get_peer_download_stats_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn get_peer_name(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn get_peer_name_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn get_priority(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn get_priority_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn get_progress_0c9e97cd0c(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn get_progress_0c9e97cd0c_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn get_progress_6c6ce44706(@core.RawAddress, UInt, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn get_progress_6c6ce44706_raw(@core.RawAddress, UInt, @core.RawAddress) -> Int
+
+pub fn get_progress_70bb12ff24(@core.RawAddress, UInt, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn get_progress_70bb12ff24_raw(@core.RawAddress, UInt, @core.RawAddress) -> Int
+
+pub fn get_progress_bfe5155946(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn get_progress_bfe5155946_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn get_prop(@core.RawAddress, Int, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn get_prop_raw(@core.RawAddress, Int, @core.RawAddress) -> Int
+
+pub fn get_property_79fada1189(@core.RawAddress, Int, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn get_property_79fada1189_raw(@core.RawAddress, Int, @core.RawAddress) -> Int
+
+pub fn get_property_8f45d661f4(@core.RawAddress, Int, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn get_property_8f45d661f4_raw(@core.RawAddress, Int, @core.RawAddress) -> Int
+
+pub fn get_protocol(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn get_protocol_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn get_proxy_settings(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn get_proxy_settings_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn get_record(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn get_record_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn get_remote_name(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn get_remote_name_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn get_reply_data(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn get_reply_data_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn get_reply_file_name(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn get_reply_file_name_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn get_reply_progress(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn get_reply_progress_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn get_security_flags(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn get_security_flags_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn get_size(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn get_size_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn get_state(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn get_state_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn get_status_2cda6e6611(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn get_status_2cda6e6611_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn get_status_447457dfda(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn get_status_447457dfda_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn get_temporary_name(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn get_temporary_name_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn get_times(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn get_times_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn get_type(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn get_type_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn get_validation_state(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn get_validation_state_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub let groupprop_description : Int
+
+pub let groupprop_displayname : Int
+
+pub let groupprop_localuserid : Int
+
+pub let groupprop_localuserpwd : Int
+
+pub let groupprop_notifyclsid : Int
+
+pub let groupprop_notifyflags : Int
+
+pub let groupprop_priority : Int
+
+pub let groupprop_progresspercent : Int
+
+pub let groupprop_progresssize : Int
+
+pub let groupprop_progresstime : Int
+
+pub let groupprop_protocolflags : Int
+
+pub let groupprop_remoteuserid : Int
+
+pub let groupprop_remoteuserpwd : Int
+
+pub fn is_authenticated(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn is_authenticated_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn is_available(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn is_available_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn is_downloaded_from_peer(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn is_downloaded_from_peer_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn is_file_validated(@core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn is_file_validated_raw(@core.RawAddress) -> Int
+
+pub fn job_error(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn job_error_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn job_modification(@core.RawAddress, @core.RawAddress, UInt) -> Unit raise @core.WindowsError
+
+pub fn job_modification_raw(@core.RawAddress, @core.RawAddress, UInt) -> Int
+
+pub fn job_transferred(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn job_transferred_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn make_custom_headers_write_only(@core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn make_custom_headers_write_only_raw(@core.RawAddress) -> Int
+
+pub fn next_71298e4e6c(@core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn next_71298e4e6c_raw(@core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn next_96ece0bdde(@core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn next_96ece0bdde_raw(@core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn next_b58e5d801f(@core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn next_b58e5d801f_raw(@core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn next_e8b329d0e9(@core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn next_e8b329d0e9_raw(@core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn next_e9f052d5bf(@core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn next_e9f052d5bf_raw(@core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn next_f6af5f6bfd(@core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn next_f6af5f6bfd_raw(@core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn on_progress(@core.RawAddress, UInt, @core.RawAddress, @core.RawAddress, UInt, UInt) -> Unit raise @core.WindowsError
+
+pub fn on_progress_ex(@core.RawAddress, UInt, @core.RawAddress, @core.RawAddress, UInt, UInt, UInt, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn on_progress_ex_raw(@core.RawAddress, UInt, @core.RawAddress, @core.RawAddress, UInt, UInt, UInt, @core.RawAddress) -> Int
+
+pub fn on_progress_raw(@core.RawAddress, UInt, @core.RawAddress, @core.RawAddress, UInt, UInt) -> Int
+
+pub fn on_status(@core.RawAddress, @core.RawAddress, @core.RawAddress, UInt, UInt, UInt, UInt, UInt) -> Unit raise @core.WindowsError
+
+pub fn on_status_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, UInt, UInt, UInt, UInt, UInt) -> Int
+
+pub let qm_e_downloader_unavailable : UInt
+
+pub let qm_e_invalid_state : UInt
+
+pub let qm_e_item_not_found : UInt
+
+pub let qm_e_service_unavailable : UInt
+
+pub let qm_notify_disable_notify : UInt
+
+pub let qm_notify_file_done : UInt
+
+pub let qm_notify_group_done : UInt
+
+pub let qm_notify_job_done : UInt
+
+pub let qm_notify_use_progressex : UInt
+
+pub let qm_progress_percent_done : UInt
+
+pub let qm_progress_size_done : UInt
+
+pub let qm_progress_time_done : UInt
+
+pub let qm_protocol_custom : UInt
+
+pub let qm_protocol_ftp : UInt
+
+pub let qm_protocol_http : UInt
+
+pub let qm_protocol_smb : UInt
+
+pub let qm_status_file_complete : UInt
+
+pub let qm_status_file_incomplete : UInt
+
+pub let qm_status_group_complete : UInt
+
+pub let qm_status_group_error : UInt
+
+pub let qm_status_group_foreground : UInt
+
+pub let qm_status_group_incomplete : UInt
+
+pub let qm_status_group_suspended : UInt
+
+pub let qm_status_job_complete : UInt
+
+pub let qm_status_job_error : UInt
+
+pub let qm_status_job_foreground : UInt
+
+pub let qm_status_job_incomplete : UInt
+
+pub fn query_new_job_interface(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn query_new_job_interface_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn remove_client_certificate(@core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn remove_client_certificate_raw(@core.RawAddress) -> Int
+
+pub fn remove_credentials(@core.RawAddress, Int, Int) -> Unit raise @core.WindowsError
+
+pub fn remove_credentials_raw(@core.RawAddress, Int, Int) -> Int
+
+pub fn replace_remote_prefix(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn replace_remote_prefix_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn request_file_ranges(@core.RawAddress, UInt, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn request_file_ranges_raw(@core.RawAddress, UInt, @core.RawAddress) -> Int
+
+pub fn reset_1f1dbe0dbc(@core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn reset_1f1dbe0dbc_raw(@core.RawAddress) -> Int
+
+pub fn reset_4e16bd1cf0(@core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn reset_4e16bd1cf0_raw(@core.RawAddress) -> Int
+
+pub fn reset_7518306335(@core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn reset_7518306335_raw(@core.RawAddress) -> Int
+
+pub fn reset_a401c59918(@core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn reset_a401c59918_raw(@core.RawAddress) -> Int
+
+pub fn reset_ac1c3a8097(@core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn reset_ac1c3a8097_raw(@core.RawAddress) -> Int
+
+pub fn reset_f8a7d56a7f(@core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn reset_f8a7d56a7f_raw(@core.RawAddress) -> Int
+
+pub fn resume_(@core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn resume__raw(@core.RawAddress) -> Int
+
+pub fn resume_group(@core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn resume_group_raw(@core.RawAddress) -> Int
+
+pub fn set_client_certificate_by_id(@core.RawAddress, Int, @core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn set_client_certificate_by_id_raw(@core.RawAddress, Int, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn set_client_certificate_by_name(@core.RawAddress, Int, @core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn set_client_certificate_by_name_raw(@core.RawAddress, Int, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn set_configuration_flags(@core.RawAddress, UInt) -> Unit raise @core.WindowsError
+
+pub fn set_configuration_flags_raw(@core.RawAddress, UInt) -> Int
+
+pub fn set_credentials(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn set_credentials_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn set_custom_headers(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn set_custom_headers_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn set_description(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn set_description_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn set_display_name(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn set_display_name_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn set_file_acl_flags(@core.RawAddress, UInt) -> Unit raise @core.WindowsError
+
+pub fn set_file_acl_flags_raw(@core.RawAddress, UInt) -> Int
+
+pub fn set_helper_token(@core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn set_helper_token_flags(@core.RawAddress, UInt) -> Unit raise @core.WindowsError
+
+pub fn set_helper_token_flags_raw(@core.RawAddress, UInt) -> Int
+
+pub fn set_helper_token_raw(@core.RawAddress) -> Int
+
+pub fn set_http_method(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn set_http_method_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn set_maximum_cache_size(@core.RawAddress, UInt) -> Unit raise @core.WindowsError
+
+pub fn set_maximum_cache_size_raw(@core.RawAddress, UInt) -> Int
+
+pub fn set_maximum_content_age(@core.RawAddress, UInt) -> Unit raise @core.WindowsError
+
+pub fn set_maximum_content_age_raw(@core.RawAddress, UInt) -> Int
+
+pub fn set_maximum_download_time(@core.RawAddress, UInt) -> Unit raise @core.WindowsError
+
+pub fn set_maximum_download_time_raw(@core.RawAddress, UInt) -> Int
+
+pub fn set_minimum_retry_delay(@core.RawAddress, UInt) -> Unit raise @core.WindowsError
+
+pub fn set_minimum_retry_delay_raw(@core.RawAddress, UInt) -> Int
+
+pub fn set_no_progress_timeout(@core.RawAddress, UInt) -> Unit raise @core.WindowsError
+
+pub fn set_no_progress_timeout_raw(@core.RawAddress, UInt) -> Int
+
+pub fn set_notification_pointer(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn set_notification_pointer_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn set_notify_cmd_line(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn set_notify_cmd_line_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn set_notify_flags(@core.RawAddress, UInt) -> Unit raise @core.WindowsError
+
+pub fn set_notify_flags_raw(@core.RawAddress, UInt) -> Int
+
+pub fn set_notify_interface(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn set_notify_interface_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn set_peer_caching_flags(@core.RawAddress, UInt) -> Unit raise @core.WindowsError
+
+pub fn set_peer_caching_flags_raw(@core.RawAddress, UInt) -> Int
+
+pub fn set_priority(@core.RawAddress, Int) -> Unit raise @core.WindowsError
+
+pub fn set_priority_raw(@core.RawAddress, Int) -> Int
+
+pub fn set_prop(@core.RawAddress, Int, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn set_prop_raw(@core.RawAddress, Int, @core.RawAddress) -> Int
+
+pub fn set_property_375a237261(@core.RawAddress, Int, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn set_property_375a237261_raw(@core.RawAddress, Int, @core.RawAddress) -> Int
+
+pub fn set_property_8b6862b4ed(@core.RawAddress, Int, Bytes) -> Unit raise @core.WindowsError
+
+pub fn set_property_8b6862b4ed_raw(@core.RawAddress, Int, Bytes) -> Int
+
+pub fn set_proxy_settings(@core.RawAddress, Int, @core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn set_proxy_settings_raw(@core.RawAddress, Int, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn set_remote_name(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn set_remote_name_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn set_reply_file_name(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn set_reply_file_name_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn set_security_flags(@core.RawAddress, UInt) -> Unit raise @core.WindowsError
+
+pub fn set_security_flags_raw(@core.RawAddress, UInt) -> Int
+
+pub fn set_server_certificate_validation_interface(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn set_server_certificate_validation_interface_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn set_validation_state(@core.RawAddress, Int) -> Unit raise @core.WindowsError
+
+pub fn set_validation_state_raw(@core.RawAddress, Int) -> Int
+
+pub fn skip_a6a2802405(@core.RawAddress, UInt) -> Unit raise @core.WindowsError
+
+pub fn skip_a6a2802405_raw(@core.RawAddress, UInt) -> Int
+
+pub fn skip_bfae935543(@core.RawAddress, UInt) -> Unit raise @core.WindowsError
+
+pub fn skip_bfae935543_raw(@core.RawAddress, UInt) -> Int
+
+pub fn skip_cef466fef5(@core.RawAddress, UInt) -> Unit raise @core.WindowsError
+
+pub fn skip_cef466fef5_raw(@core.RawAddress, UInt) -> Int
+
+pub fn skip_ddde714fc0(@core.RawAddress, UInt) -> Unit raise @core.WindowsError
+
+pub fn skip_ddde714fc0_raw(@core.RawAddress, UInt) -> Int
+
+pub fn skip_e86a45ee6f(@core.RawAddress, UInt) -> Unit raise @core.WindowsError
+
+pub fn skip_e86a45ee6f_raw(@core.RawAddress, UInt) -> Int
+
+pub fn skip_ff86d0ea0b(@core.RawAddress, UInt) -> Unit raise @core.WindowsError
+
+pub fn skip_ff86d0ea0b_raw(@core.RawAddress, UInt) -> Int
+
+pub fn suspend(@core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn suspend_group(@core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn suspend_group_raw(@core.RawAddress) -> Int
+
+pub fn suspend_raw(@core.RawAddress) -> Int
+
+pub fn switch_to_foreground_6d0725e35a(@core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn switch_to_foreground_6d0725e35a_raw(@core.RawAddress) -> Int
+
+pub fn switch_to_foreground_de0cfa00d4(@core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn switch_to_foreground_de0cfa00d4_raw(@core.RawAddress) -> Int
+
+pub fn take_ownership(@core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn take_ownership_raw(@core.RawAddress) -> Int
+
+pub fn update_download_position(@core.RawAddress, UInt64) -> Unit raise @core.WindowsError
+
+pub fn update_download_position_raw(@core.RawAddress, UInt64) -> Int
+
+pub fn validate_server_certificate(@core.RawAddress, @core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, UInt, UInt, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn validate_server_certificate_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, UInt, UInt, @core.RawAddress) -> Int
+
+// Errors
+
+// Types and methods
+
+// Type aliases
+pub using @83919970a4ed0767 {type AsyncIBackgroundCopyCallback_82fbeb245b91 as AsyncIBackgroundCopyCallback}
+
+pub using @83919970a4ed0767 {type BGAUTHCREDENTIALS_3456d3549a6d as BGAUTHCREDENTIALS}
+
+pub using @83919970a4ed0767 {type BGAUTHCREDENTIALSUNION_bbf4a68cf69d as BGAUTHCREDENTIALSUNION}
+
+pub using @83919970a4ed0767 {type BGAUTHSCHEME_a2430e88170a as BGAUTHSCHEME}
+
+pub using @83919970a4ed0767 {type BGAUTHTARGET_7c024b9f519d as BGAUTHTARGET}
+
+pub using @83919970a4ed0767 {type BGBASICCREDENTIALS_01015e5c8505 as BGBASICCREDENTIALS}
+
+pub using @83919970a4ed0767 {type BGCERTSTORELOCATION_39a4953d2a31 as BGCERTSTORELOCATION}
+
+pub using @83919970a4ed0767 {type BGERRORCONTEXT_6440ac292a91 as BGERRORCONTEXT}
+
+pub using @83919970a4ed0767 {type BGFILEINFO_b693f9092786 as BGFILEINFO}
+
+pub using @83919970a4ed0767 {type BGFILEPROGRESS_da280ca8d7f5 as BGFILEPROGRESS}
+
+pub using @83919970a4ed0767 {type BGFILERANGE_841ca8520ebd as BGFILERANGE}
+
+pub using @83919970a4ed0767 {type BGJOBPRIORITY_9364de45c3c3 as BGJOBPRIORITY}
+
+pub using @83919970a4ed0767 {type BGJOBPROGRESS_4be9c798720f as BGJOBPROGRESS}
+
+pub using @83919970a4ed0767 {type BGJOBPROXYUSAGE_b764f6e01931 as BGJOBPROXYUSAGE}
+
+pub using @83919970a4ed0767 {type BGJOBREPLYPROGRESS_e49b5ca484c9 as BGJOBREPLYPROGRESS}
+
+pub using @83919970a4ed0767 {type BGJOBSTATE_436494a7040b as BGJOBSTATE}
+
+pub using @83919970a4ed0767 {type BGJOBTIMES_9e6c1339f9c7 as BGJOBTIMES}
+
+pub using @83919970a4ed0767 {type BGJOBTYPE_045dc23989d1 as BGJOBTYPE}
+
+pub using @83919970a4ed0767 {type BGTOKEN_2f80f7071d34 as BGTOKEN}
+
+pub using @83919970a4ed0767 {type BITSExtensionSetupFactory_c566650452f9 as BITSExtensionSetupFactory}
+
+pub using @83919970a4ed0767 {type BITSFILEPROPERTYID_ce8d9a481ef3 as BITSFILEPROPERTYID}
+
+pub using @83919970a4ed0767 {type BITSFILEPROPERTYVALUE_6911dd8378c9 as BITSFILEPROPERTYVALUE}
+
+pub using @83919970a4ed0767 {type BITSJOBPROPERTYID_f89af3a68348 as BITSJOBPROPERTYID}
+
+pub using @83919970a4ed0767 {type BITSJOBPROPERTYVALUE_d354506858f3 as BITSJOBPROPERTYVALUE}
+
+pub using @83919970a4ed0767 {type BITSJOBTRANSFERPOLICY_a26d2faba6a2 as BITSJOBTRANSFERPOLICY}
+
+pub using @83919970a4ed0767 {type BackgroundCopyManager_bf968ceb8a81 as BackgroundCopyManager}
+
+pub using @83919970a4ed0767 {type BackgroundCopyManager101_f660d8c75fa1 as BackgroundCopyManager101}
+
+pub using @83919970a4ed0767 {type BackgroundCopyManager102_5f912d745299 as BackgroundCopyManager102}
+
+pub using @83919970a4ed0767 {type BackgroundCopyManager103_7bf20e67986d as BackgroundCopyManager103}
+
+pub using @83919970a4ed0767 {type BackgroundCopyManager15_a6796bdfef0a as BackgroundCopyManager15}
+
+pub using @83919970a4ed0767 {type BackgroundCopyManager20_c449dc1324e0 as BackgroundCopyManager20}
+
+pub using @83919970a4ed0767 {type BackgroundCopyManager25_efa10fbce16e as BackgroundCopyManager25}
+
+pub using @83919970a4ed0767 {type BackgroundCopyManager30_1127ad8d9df9 as BackgroundCopyManager30}
+
+pub using @83919970a4ed0767 {type BackgroundCopyManager40_9bf50a479dfe as BackgroundCopyManager40}
+
+pub using @83919970a4ed0767 {type BackgroundCopyManager50_36d1a174ecdd as BackgroundCopyManager50}
+
+pub using @83919970a4ed0767 {type BackgroundCopyQMgr_d3972008ce92 as BackgroundCopyQMgr}
+
+pub using @83919970a4ed0767 {type FILESETINFO_8bed732393ca as FILESETINFO}
+
+pub using @83919970a4ed0767 {type GROUPPROP_61994ecd173b as GROUPPROP}
+
+pub using @83919970a4ed0767 {type IBITSExtensionSetup_719d926756fc as IBITSExtensionSetup}
+
+pub using @83919970a4ed0767 {type IBITSExtensionSetupFactory_22348c0d4946 as IBITSExtensionSetupFactory}
+
+pub using @83919970a4ed0767 {type IBackgroundCopyCallback_5839f617ae98 as IBackgroundCopyCallback}
+
+pub using @83919970a4ed0767 {type IBackgroundCopyCallback1_29b7492b2dd8 as IBackgroundCopyCallback1}
+
+pub using @83919970a4ed0767 {type IBackgroundCopyCallback2_6d0a100e0204 as IBackgroundCopyCallback2}
+
+pub using @83919970a4ed0767 {type IBackgroundCopyCallback3_edf2b853022a as IBackgroundCopyCallback3}
+
+pub using @83919970a4ed0767 {type IBackgroundCopyError_4c8229b225d2 as IBackgroundCopyError}
+
+pub using @83919970a4ed0767 {type IBackgroundCopyFile_1bcf55266651 as IBackgroundCopyFile}
+
+pub using @83919970a4ed0767 {type IBackgroundCopyFile2_2eeeaf0c9af4 as IBackgroundCopyFile2}
+
+pub using @83919970a4ed0767 {type IBackgroundCopyFile3_59904fae29b4 as IBackgroundCopyFile3}
+
+pub using @83919970a4ed0767 {type IBackgroundCopyFile4_72680645b4cc as IBackgroundCopyFile4}
+
+pub using @83919970a4ed0767 {type IBackgroundCopyFile5_6c4d0a0a46b6 as IBackgroundCopyFile5}
+
+pub using @83919970a4ed0767 {type IBackgroundCopyFile6_61a3284ffb9e as IBackgroundCopyFile6}
+
+pub using @83919970a4ed0767 {type IBackgroundCopyGroup_3b05a884e706 as IBackgroundCopyGroup}
+
+pub using @83919970a4ed0767 {type IBackgroundCopyJob_2e4d66e467c7 as IBackgroundCopyJob}
+
+pub using @83919970a4ed0767 {type IBackgroundCopyJob1_b547b6f94591 as IBackgroundCopyJob1}
+
+pub using @83919970a4ed0767 {type IBackgroundCopyJob2_6c55ce98b225 as IBackgroundCopyJob2}
+
+pub using @83919970a4ed0767 {type IBackgroundCopyJob3_7ed8be9bf313 as IBackgroundCopyJob3}
+
+pub using @83919970a4ed0767 {type IBackgroundCopyJob4_822ab690aea7 as IBackgroundCopyJob4}
+
+pub using @83919970a4ed0767 {type IBackgroundCopyJob5_7d8a1aee004b as IBackgroundCopyJob5}
+
+pub using @83919970a4ed0767 {type IBackgroundCopyJobHttpOptions_76d7cc3eba54 as IBackgroundCopyJobHttpOptions}
+
+pub using @83919970a4ed0767 {type IBackgroundCopyJobHttpOptions2_40a3bdbfff98 as IBackgroundCopyJobHttpOptions2}
+
+pub using @83919970a4ed0767 {type IBackgroundCopyJobHttpOptions3_e175aa6b4191 as IBackgroundCopyJobHttpOptions3}
+
+pub using @83919970a4ed0767 {type IBackgroundCopyManager_8f9a4eecd214 as IBackgroundCopyManager}
+
+pub using @83919970a4ed0767 {type IBackgroundCopyQMgr_06bc68f88637 as IBackgroundCopyQMgr}
+
+pub using @83919970a4ed0767 {type IBackgroundCopyServerCertificateValidationCallback_838168e8562a as IBackgroundCopyServerCertificateValidationCallback}
+
+pub using @83919970a4ed0767 {type IBitsPeer_da84ff764454 as IBitsPeer}
+
+pub using @83919970a4ed0767 {type IBitsPeerCacheAdministration_cc048863dac3 as IBitsPeerCacheAdministration}
+
+pub using @83919970a4ed0767 {type IBitsPeerCacheRecord_6642afd3288d as IBitsPeerCacheRecord}
+
+pub using @83919970a4ed0767 {type IBitsTokenOptions_5de02d02ea5d as IBitsTokenOptions}
+
+pub using @83919970a4ed0767 {type IEnumBackgroundCopyFiles_741934f3c66b as IEnumBackgroundCopyFiles}
+
+pub using @83919970a4ed0767 {type IEnumBackgroundCopyGroups_4836362a6e8b as IEnumBackgroundCopyGroups}
+
+pub using @83919970a4ed0767 {type IEnumBackgroundCopyJobs_870ff82337c9 as IEnumBackgroundCopyJobs}
+
+pub using @83919970a4ed0767 {type IEnumBackgroundCopyJobs1_824ce6d365b6 as IEnumBackgroundCopyJobs1}
+
+pub using @83919970a4ed0767 {type IEnumBitsPeerCacheRecords_0ea8fa84fcb5 as IEnumBitsPeerCacheRecords}
+
+pub using @83919970a4ed0767 {type IEnumBitsPeers_157157cfd8f7 as IEnumBitsPeers}
+
+// Traits
+

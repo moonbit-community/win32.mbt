@@ -1,0 +1,706 @@
+// Generated using `moon info`, DON'T EDIT IT
+package "moonbit-community/win32-bindings/windows/win32/storage/cloud_filters"
+
+import {
+  "moonbit-community/win32-bindings/runtime/core",
+  "moonbit-community/win32-bindings/scc/21754b99e4845fa3",
+}
+
+// Values
+pub let cf_callback_cancel_flag_io_aborted : Int
+
+pub let cf_callback_cancel_flag_io_timeout : Int
+
+pub let cf_callback_cancel_flag_none : Int
+
+pub let cf_callback_close_completion_flag_deleted : Int
+
+pub let cf_callback_close_completion_flag_none : Int
+
+pub let cf_callback_dehydrate_completion_flag_background : Int
+
+pub let cf_callback_dehydrate_completion_flag_dehydrated : Int
+
+pub let cf_callback_dehydrate_completion_flag_none : Int
+
+pub let cf_callback_dehydrate_flag_background : Int
+
+pub let cf_callback_dehydrate_flag_none : Int
+
+pub let cf_callback_dehydration_reason_none : Int
+
+pub let cf_callback_dehydration_reason_system_inactivity : Int
+
+pub let cf_callback_dehydration_reason_system_low_space : Int
+
+pub let cf_callback_dehydration_reason_system_os_upgrade : Int
+
+pub let cf_callback_dehydration_reason_user_manual : Int
+
+pub let cf_callback_delete_completion_flag_none : Int
+
+pub let cf_callback_delete_flag_is_directory : Int
+
+pub let cf_callback_delete_flag_is_undelete : Int
+
+pub let cf_callback_delete_flag_none : Int
+
+pub let cf_callback_fetch_data_flag_explicit_hydration : Int
+
+pub let cf_callback_fetch_data_flag_none : Int
+
+pub let cf_callback_fetch_data_flag_recovery : Int
+
+pub let cf_callback_fetch_placeholders_flag_none : Int
+
+pub let cf_callback_open_completion_flag_none : Int
+
+pub let cf_callback_open_completion_flag_placeholder_unknown : Int
+
+pub let cf_callback_open_completion_flag_placeholder_unsupported : Int
+
+pub let cf_callback_rename_completion_flag_none : Int
+
+pub let cf_callback_rename_flag_is_directory : Int
+
+pub let cf_callback_rename_flag_none : Int
+
+pub let cf_callback_rename_flag_source_in_scope : Int
+
+pub let cf_callback_rename_flag_target_in_scope : Int
+
+pub let cf_callback_type_cancel_fetch_data : Int
+
+pub let cf_callback_type_cancel_fetch_placeholders : Int
+
+pub let cf_callback_type_fetch_data : Int
+
+pub let cf_callback_type_fetch_placeholders : Int
+
+pub let cf_callback_type_none : Int
+
+pub let cf_callback_type_notify_dehydrate : Int
+
+pub let cf_callback_type_notify_dehydrate_completion : Int
+
+pub let cf_callback_type_notify_delete : Int
+
+pub let cf_callback_type_notify_delete_completion : Int
+
+pub let cf_callback_type_notify_file_close_completion : Int
+
+pub let cf_callback_type_notify_file_open_completion : Int
+
+pub let cf_callback_type_notify_rename : Int
+
+pub let cf_callback_type_notify_rename_completion : Int
+
+pub let cf_callback_type_validate_data : Int
+
+pub let cf_callback_validate_data_flag_explicit_hydration : Int
+
+pub let cf_callback_validate_data_flag_none : Int
+
+pub fn cf_close_handle_raw(@core.RawAddress) -> Unit
+
+pub let cf_connect_flag_block_self_implicit_hydration : Int
+
+pub let cf_connect_flag_none : Int
+
+pub let cf_connect_flag_require_full_file_path : Int
+
+pub let cf_connect_flag_require_process_info : Int
+
+pub fn cf_connect_sync_root(@core.RawAddress, @core.RawAddress, @core.RawAddress, Int, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn cf_connect_sync_root_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, Int, @core.RawAddress) -> Int
+
+pub let cf_convert_flag_always_full : Int
+
+pub let cf_convert_flag_dehydrate : Int
+
+pub let cf_convert_flag_enable_on_demand_population : Int
+
+pub let cf_convert_flag_force_convert_to_cloud_file : Int
+
+pub let cf_convert_flag_mark_in_sync : Int
+
+pub let cf_convert_flag_none : Int
+
+pub fn cf_convert_to_placeholder(@core.RawAddress, @core.RawAddress, UInt, Int, @core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn cf_convert_to_placeholder_raw(@core.RawAddress, @core.RawAddress, UInt, Int, @core.RawAddress, @core.RawAddress) -> Int
+
+pub let cf_create_flag_none : Int
+
+pub let cf_create_flag_stop_on_error : Int
+
+pub fn cf_create_placeholders(@core.RawAddress, @core.RawAddress, UInt, Int, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn cf_create_placeholders_raw(@core.RawAddress, @core.RawAddress, UInt, Int, @core.RawAddress) -> Int
+
+pub let cf_dehydrate_flag_background : Int
+
+pub let cf_dehydrate_flag_none : Int
+
+pub fn cf_dehydrate_placeholder(@core.RawAddress, Int64, Int64, Int, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn cf_dehydrate_placeholder_raw(@core.RawAddress, Int64, Int64, Int, @core.RawAddress) -> Int
+
+pub fn cf_disconnect_sync_root(Int64) -> Unit raise @core.WindowsError
+
+pub fn cf_disconnect_sync_root_raw(Int64) -> Int
+
+pub fn cf_execute(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn cf_execute_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn cf_get_correlation_vector(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn cf_get_correlation_vector_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn cf_get_placeholder_info(@core.RawAddress, Int, @core.RawAddress, UInt, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn cf_get_placeholder_info_raw(@core.RawAddress, Int, @core.RawAddress, UInt, @core.RawAddress) -> Int
+
+pub fn cf_get_placeholder_range_info(@core.RawAddress, Int, Int64, Int64, @core.RawAddress, UInt, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn cf_get_placeholder_range_info_for_hydration(Int64, Int64, Int64, Int, Int64, Int64, @core.RawAddress, UInt, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn cf_get_placeholder_range_info_for_hydration_raw(Int64, Int64, Int64, Int, Int64, Int64, @core.RawAddress, UInt, @core.RawAddress) -> Int
+
+pub fn cf_get_placeholder_range_info_raw(@core.RawAddress, Int, Int64, Int64, @core.RawAddress, UInt, @core.RawAddress) -> Int
+
+pub fn cf_get_placeholder_state_from_attribute_tag_raw(UInt, UInt) -> UInt
+
+pub fn cf_get_placeholder_state_from_file_info_raw(@core.RawAddress, Int) -> UInt
+
+pub fn cf_get_placeholder_state_from_find_data_raw(@core.RawAddress) -> UInt
+
+pub fn cf_get_platform_info(@core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn cf_get_platform_info_raw(@core.RawAddress) -> Int
+
+pub fn cf_get_sync_root_info_by_handle(@core.RawAddress, Int, @core.RawAddress, UInt, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn cf_get_sync_root_info_by_handle_raw(@core.RawAddress, Int, @core.RawAddress, UInt, @core.RawAddress) -> Int
+
+pub fn cf_get_sync_root_info_by_path(@core.RawAddress, Int, @core.RawAddress, UInt, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn cf_get_sync_root_info_by_path_raw(@core.RawAddress, Int, @core.RawAddress, UInt, @core.RawAddress) -> Int
+
+pub fn cf_get_transfer_key(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn cf_get_transfer_key_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn cf_get_win32_handle_from_protected_handle_raw(@core.RawAddress) -> @core.RawAddress
+
+pub let cf_hardlink_policy_allowed : Int
+
+pub let cf_hardlink_policy_none : Int
+
+pub let cf_hydrate_flag_none : Int
+
+pub fn cf_hydrate_placeholder(@core.RawAddress, Int64, Int64, Int, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn cf_hydrate_placeholder_raw(@core.RawAddress, Int64, Int64, Int, @core.RawAddress) -> Int
+
+pub let cf_hydration_policy_always_full : UInt
+
+pub let cf_hydration_policy_full : UInt
+
+pub let cf_hydration_policy_modifier_allow_full_restart_hydration : UInt
+
+pub let cf_hydration_policy_modifier_auto_dehydration_allowed : UInt
+
+pub let cf_hydration_policy_modifier_none : UInt
+
+pub let cf_hydration_policy_modifier_streaming_allowed : UInt
+
+pub let cf_hydration_policy_modifier_validation_required : UInt
+
+pub let cf_hydration_policy_partial : UInt
+
+pub let cf_hydration_policy_progressive : UInt
+
+pub let cf_in_sync_state_in_sync : Int
+
+pub let cf_in_sync_state_not_in_sync : Int
+
+pub let cf_insync_policy_none : UInt
+
+pub let cf_insync_policy_preserve_insync_for_sync_engine : UInt
+
+pub let cf_insync_policy_track_all : UInt
+
+pub let cf_insync_policy_track_directory_all : UInt
+
+pub let cf_insync_policy_track_directory_creation_time : UInt
+
+pub let cf_insync_policy_track_directory_hidden_attribute : UInt
+
+pub let cf_insync_policy_track_directory_last_write_time : UInt
+
+pub let cf_insync_policy_track_directory_readonly_attribute : UInt
+
+pub let cf_insync_policy_track_directory_system_attribute : UInt
+
+pub let cf_insync_policy_track_file_all : UInt
+
+pub let cf_insync_policy_track_file_creation_time : UInt
+
+pub let cf_insync_policy_track_file_hidden_attribute : UInt
+
+pub let cf_insync_policy_track_file_last_write_time : UInt
+
+pub let cf_insync_policy_track_file_readonly_attribute : UInt
+
+pub let cf_insync_policy_track_file_system_attribute : UInt
+
+pub let cf_max_priority_hint : UInt
+
+pub let cf_max_provider_name_length : UInt
+
+pub let cf_max_provider_version_length : UInt
+
+pub let cf_open_file_flag_delete_access : Int
+
+pub let cf_open_file_flag_exclusive : Int
+
+pub let cf_open_file_flag_foreground : Int
+
+pub let cf_open_file_flag_none : Int
+
+pub let cf_open_file_flag_write_access : Int
+
+pub fn cf_open_file_with_oplock(@core.RawAddress, Int, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn cf_open_file_with_oplock_raw(@core.RawAddress, Int, @core.RawAddress) -> Int
+
+pub let cf_operation_ack_data_flag_none : Int
+
+pub let cf_operation_ack_dehydrate_flag_none : Int
+
+pub let cf_operation_ack_delete_flag_none : Int
+
+pub let cf_operation_ack_rename_flag_none : Int
+
+pub let cf_operation_restart_hydration_flag_mark_in_sync : Int
+
+pub let cf_operation_restart_hydration_flag_none : Int
+
+pub let cf_operation_retrieve_data_flag_none : Int
+
+pub let cf_operation_transfer_data_flag_none : Int
+
+pub let cf_operation_transfer_placeholders_flag_disable_on_demand_population : Int
+
+pub let cf_operation_transfer_placeholders_flag_none : Int
+
+pub let cf_operation_transfer_placeholders_flag_stop_on_error : Int
+
+pub let cf_operation_type_ack_data : Int
+
+pub let cf_operation_type_ack_dehydrate : Int
+
+pub let cf_operation_type_ack_delete : Int
+
+pub let cf_operation_type_ack_rename : Int
+
+pub let cf_operation_type_restart_hydration : Int
+
+pub let cf_operation_type_retrieve_data : Int
+
+pub let cf_operation_type_transfer_data : Int
+
+pub let cf_operation_type_transfer_placeholders : Int
+
+pub let cf_pin_state_excluded : Int
+
+pub let cf_pin_state_inherit : Int
+
+pub let cf_pin_state_pinned : Int
+
+pub let cf_pin_state_unpinned : Int
+
+pub let cf_pin_state_unspecified : Int
+
+pub let cf_placeholder_create_flag_always_full : Int
+
+pub let cf_placeholder_create_flag_disable_on_demand_population : Int
+
+pub let cf_placeholder_create_flag_mark_in_sync : Int
+
+pub let cf_placeholder_create_flag_none : Int
+
+pub let cf_placeholder_create_flag_supersede : Int
+
+pub let cf_placeholder_info_basic : Int
+
+pub let cf_placeholder_info_standard : Int
+
+pub let cf_placeholder_management_policy_convert_to_unrestricted : Int
+
+pub let cf_placeholder_management_policy_create_unrestricted : Int
+
+pub let cf_placeholder_management_policy_default : Int
+
+pub let cf_placeholder_management_policy_update_unrestricted : Int
+
+pub let cf_placeholder_max_file_identity_length : UInt
+
+pub let cf_placeholder_range_info_modified : Int
+
+pub let cf_placeholder_range_info_ondisk : Int
+
+pub let cf_placeholder_range_info_validated : Int
+
+pub let cf_placeholder_state_essential_prop_present : UInt
+
+pub let cf_placeholder_state_in_sync : UInt
+
+pub let cf_placeholder_state_invalid : UInt
+
+pub let cf_placeholder_state_no_states : UInt
+
+pub let cf_placeholder_state_partial : UInt
+
+pub let cf_placeholder_state_partially_on_disk : UInt
+
+pub let cf_placeholder_state_placeholder : UInt
+
+pub let cf_placeholder_state_sync_root : UInt
+
+pub let cf_population_policy_always_full : UInt
+
+pub let cf_population_policy_full : UInt
+
+pub let cf_population_policy_modifier_none : UInt
+
+pub let cf_population_policy_partial : UInt
+
+pub let cf_provider_status_clear_flags : UInt
+
+pub let cf_provider_status_connectivity_lost : UInt
+
+pub let cf_provider_status_disconnected : UInt
+
+pub let cf_provider_status_error : UInt
+
+pub let cf_provider_status_idle : UInt
+
+pub let cf_provider_status_populate_content : UInt
+
+pub let cf_provider_status_populate_metadata : UInt
+
+pub let cf_provider_status_populate_namespace : UInt
+
+pub let cf_provider_status_sync_full : UInt
+
+pub let cf_provider_status_sync_incremental : UInt
+
+pub let cf_provider_status_terminated : UInt
+
+pub fn cf_query_sync_provider_status(Int64, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn cf_query_sync_provider_status_raw(Int64, @core.RawAddress) -> Int
+
+pub fn cf_reference_protected_handle_raw(@core.RawAddress) -> UInt
+
+pub let cf_register_flag_disable_on_demand_population_on_root : Int
+
+pub let cf_register_flag_mark_in_sync_on_root : Int
+
+pub let cf_register_flag_none : Int
+
+pub let cf_register_flag_update : Int
+
+pub fn cf_register_sync_root(@core.RawAddress, @core.RawAddress, @core.RawAddress, Int) -> Unit raise @core.WindowsError
+
+pub fn cf_register_sync_root_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, Int) -> Int
+
+pub fn cf_release_protected_handle_raw(@core.RawAddress) -> Unit
+
+pub fn cf_release_transfer_key_raw(@core.RawAddress, @core.RawAddress) -> Unit
+
+pub fn cf_report_provider_progress(Int64, Int64, Int64, Int64) -> Unit raise @core.WindowsError
+
+pub fn cf_report_provider_progress2(Int64, Int64, Int64, Int64, Int64, UInt) -> Unit raise @core.WindowsError
+
+pub fn cf_report_provider_progress2_raw(Int64, Int64, Int64, Int64, Int64, UInt) -> Int
+
+pub fn cf_report_provider_progress_raw(Int64, Int64, Int64, Int64) -> Int
+
+pub fn cf_report_sync_status(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn cf_report_sync_status_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub let cf_request_key_default : UInt
+
+pub let cf_revert_flag_none : Int
+
+pub fn cf_revert_placeholder(@core.RawAddress, Int, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn cf_revert_placeholder_raw(@core.RawAddress, Int, @core.RawAddress) -> Int
+
+pub fn cf_set_correlation_vector(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn cf_set_correlation_vector_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub let cf_set_in_sync_flag_none : Int
+
+pub fn cf_set_in_sync_state(@core.RawAddress, Int, Int, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn cf_set_in_sync_state_raw(@core.RawAddress, Int, Int, @core.RawAddress) -> Int
+
+pub let cf_set_pin_flag_none : Int
+
+pub let cf_set_pin_flag_recurse : Int
+
+pub let cf_set_pin_flag_recurse_only : Int
+
+pub let cf_set_pin_flag_recurse_stop_on_error : Int
+
+pub fn cf_set_pin_state(@core.RawAddress, Int, Int, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn cf_set_pin_state_raw(@core.RawAddress, Int, Int, @core.RawAddress) -> Int
+
+pub let cf_sync_root_info_basic : Int
+
+pub let cf_sync_root_info_provider : Int
+
+pub let cf_sync_root_info_standard : Int
+
+pub fn cf_unregister_sync_root(@core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn cf_unregister_sync_root_raw(@core.RawAddress) -> Int
+
+pub let cf_update_flag_allow_partial : Int
+
+pub let cf_update_flag_always_full : Int
+
+pub let cf_update_flag_clear_in_sync : Int
+
+pub let cf_update_flag_dehydrate : Int
+
+pub let cf_update_flag_disable_on_demand_population : Int
+
+pub let cf_update_flag_enable_on_demand_population : Int
+
+pub let cf_update_flag_mark_in_sync : Int
+
+pub let cf_update_flag_none : Int
+
+pub let cf_update_flag_passthrough_fs_metadata : Int
+
+pub let cf_update_flag_remove_file_identity : Int
+
+pub let cf_update_flag_remove_property : Int
+
+pub let cf_update_flag_verify_in_sync : Int
+
+pub fn cf_update_placeholder(@core.RawAddress, @core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, UInt, Int, @core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn cf_update_placeholder_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, UInt, Int, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn cf_update_sync_provider_status(Int64, UInt) -> Unit raise @core.WindowsError
+
+pub fn cf_update_sync_provider_status_raw(Int64, UInt) -> Int
+
+// Errors
+
+// Types and methods
+
+// Type aliases
+pub using @21754b99e4845fa3 {type AckDataEStruct_c61eb3fdc9d9 as AckDataEStruct}
+
+pub using @21754b99e4845fa3 {type AckDehydrateEStruct_e5a032f24e9e as AckDehydrateEStruct}
+
+pub using @21754b99e4845fa3 {type AckDeleteEStruct_45ed98d9f915 as AckDeleteEStruct}
+
+pub using @21754b99e4845fa3 {type AckRenameEStruct_afa582973545 as AckRenameEStruct}
+
+pub using @21754b99e4845fa3 {type AnonymousEUnion_102f6adac411 as AnonymousEUnion_102f6adac4}
+
+pub using @21754b99e4845fa3 {type AnonymousEUnion_39ce112c55ba as AnonymousEUnion_39ce112c55}
+
+pub using @21754b99e4845fa3 {type AnonymousEUnion_ae60f068ccc1 as AnonymousEUnion_ae60f068cc}
+
+pub using @21754b99e4845fa3 {type CFCALLBACK_40675b252853 as CFCALLBACK}
+
+pub using @21754b99e4845fa3 {type CFCALLBACKCANCELFLAGS_02135ad2fa7e as CFCALLBACKCANCELFLAGS}
+
+pub using @21754b99e4845fa3 {type CFCALLBACKCLOSECOMPLETIONFLAGS_67d9ea582deb as CFCALLBACKCLOSECOMPLETIONFLAGS}
+
+pub using @21754b99e4845fa3 {type CFCALLBACKDEHYDRATECOMPLETIONFLAGS_7a04436a4b28 as CFCALLBACKDEHYDRATECOMPLETIONFLAGS}
+
+pub using @21754b99e4845fa3 {type CFCALLBACKDEHYDRATEFLAGS_0d0210c13abd as CFCALLBACKDEHYDRATEFLAGS}
+
+pub using @21754b99e4845fa3 {type CFCALLBACKDEHYDRATIONREASON_bfa2ddb097dd as CFCALLBACKDEHYDRATIONREASON}
+
+pub using @21754b99e4845fa3 {type CFCALLBACKDELETECOMPLETIONFLAGS_0c76c5af44c4 as CFCALLBACKDELETECOMPLETIONFLAGS}
+
+pub using @21754b99e4845fa3 {type CFCALLBACKDELETEFLAGS_d7f1a7e2cf84 as CFCALLBACKDELETEFLAGS}
+
+pub using @21754b99e4845fa3 {type CFCALLBACKFETCHDATAFLAGS_acedec890ca0 as CFCALLBACKFETCHDATAFLAGS}
+
+pub using @21754b99e4845fa3 {type CFCALLBACKFETCHPLACEHOLDERSFLAGS_6c295c09bb65 as CFCALLBACKFETCHPLACEHOLDERSFLAGS}
+
+pub using @21754b99e4845fa3 {type CFCALLBACKINFO_7de753197076 as CFCALLBACKINFO}
+
+pub using @21754b99e4845fa3 {type CFCALLBACKOPENCOMPLETIONFLAGS_b408ab13c85f as CFCALLBACKOPENCOMPLETIONFLAGS}
+
+pub using @21754b99e4845fa3 {type CFCALLBACKPARAMETERS_ff8033413816 as CFCALLBACKPARAMETERS}
+
+pub using @21754b99e4845fa3 {type CFCALLBACKREGISTRATION_ed519fc47ca4 as CFCALLBACKREGISTRATION}
+
+pub using @21754b99e4845fa3 {type CFCALLBACKRENAMECOMPLETIONFLAGS_1f692c30bc2a as CFCALLBACKRENAMECOMPLETIONFLAGS}
+
+pub using @21754b99e4845fa3 {type CFCALLBACKRENAMEFLAGS_08ae0f7600b4 as CFCALLBACKRENAMEFLAGS}
+
+pub using @21754b99e4845fa3 {type CFCALLBACKTYPE_976e3314686b as CFCALLBACKTYPE}
+
+pub using @21754b99e4845fa3 {type CFCALLBACKVALIDATEDATAFLAGS_65f38d7d3ebb as CFCALLBACKVALIDATEDATAFLAGS}
+
+pub using @21754b99e4845fa3 {type CFCONNECTFLAGS_3288580c75d5 as CFCONNECTFLAGS}
+
+pub using @21754b99e4845fa3 {type CFCONNECTIONKEY_6be88ec2b8d6 as CFCONNECTIONKEY}
+
+pub using @21754b99e4845fa3 {type CFCONVERTFLAGS_b9cb3bcade76 as CFCONVERTFLAGS}
+
+pub using @21754b99e4845fa3 {type CFCREATEFLAGS_6a744f1a737d as CFCREATEFLAGS}
+
+pub using @21754b99e4845fa3 {type CFDEHYDRATEFLAGS_0374caf7b0ed as CFDEHYDRATEFLAGS}
+
+pub using @21754b99e4845fa3 {type CFFILERANGE_09fd03e9a552 as CFFILERANGE}
+
+pub using @21754b99e4845fa3 {type CFFSMETADATA_c8237ff65800 as CFFSMETADATA}
+
+pub using @21754b99e4845fa3 {type CFHARDLINKPOLICY_60786c21eec0 as CFHARDLINKPOLICY}
+
+pub using @21754b99e4845fa3 {type CFHYDRATEFLAGS_ca433a380470 as CFHYDRATEFLAGS}
+
+pub using @21754b99e4845fa3 {type CFHYDRATIONPOLICY_c5134d2557b4 as CFHYDRATIONPOLICY}
+
+pub using @21754b99e4845fa3 {type CFHYDRATIONPOLICYMODIFIER_73c0be8188a4 as CFHYDRATIONPOLICYMODIFIER}
+
+pub using @21754b99e4845fa3 {type CFHYDRATIONPOLICYPRIMARY_ca393a30a390 as CFHYDRATIONPOLICYPRIMARY}
+
+pub using @21754b99e4845fa3 {type CFINSYNCPOLICY_194346ed8f7d as CFINSYNCPOLICY}
+
+pub using @21754b99e4845fa3 {type CFINSYNCSTATE_97ecc8ee5b07 as CFINSYNCSTATE}
+
+pub using @21754b99e4845fa3 {type CFOPENFILEFLAGS_89a5e4d6ff08 as CFOPENFILEFLAGS}
+
+pub using @21754b99e4845fa3 {type CFOPERATIONACKDATAFLAGS_a8f553910014 as CFOPERATIONACKDATAFLAGS}
+
+pub using @21754b99e4845fa3 {type CFOPERATIONACKDEHYDRATEFLAGS_87eb10b851be as CFOPERATIONACKDEHYDRATEFLAGS}
+
+pub using @21754b99e4845fa3 {type CFOPERATIONACKDELETEFLAGS_df67e4d490ac as CFOPERATIONACKDELETEFLAGS}
+
+pub using @21754b99e4845fa3 {type CFOPERATIONACKRENAMEFLAGS_59bd93a32f05 as CFOPERATIONACKRENAMEFLAGS}
+
+pub using @21754b99e4845fa3 {type CFOPERATIONINFO_d68c6809dbd1 as CFOPERATIONINFO}
+
+pub using @21754b99e4845fa3 {type CFOPERATIONPARAMETERS_033265537f24 as CFOPERATIONPARAMETERS}
+
+pub using @21754b99e4845fa3 {type CFOPERATIONRESTARTHYDRATIONFLAGS_ab1763a6ae6e as CFOPERATIONRESTARTHYDRATIONFLAGS}
+
+pub using @21754b99e4845fa3 {type CFOPERATIONRETRIEVEDATAFLAGS_0aa8cb3e8720 as CFOPERATIONRETRIEVEDATAFLAGS}
+
+pub using @21754b99e4845fa3 {type CFOPERATIONTRANSFERDATAFLAGS_42052d1de244 as CFOPERATIONTRANSFERDATAFLAGS}
+
+pub using @21754b99e4845fa3 {type CFOPERATIONTRANSFERPLACEHOLDERSFLAGS_069a0d393860 as CFOPERATIONTRANSFERPLACEHOLDERSFLAGS}
+
+pub using @21754b99e4845fa3 {type CFOPERATIONTYPE_d1541da80db4 as CFOPERATIONTYPE}
+
+pub using @21754b99e4845fa3 {type CFPINSTATE_3cc3d45a59a6 as CFPINSTATE}
+
+pub using @21754b99e4845fa3 {type CFPLACEHOLDERBASICINFO_57809eefb907 as CFPLACEHOLDERBASICINFO}
+
+pub using @21754b99e4845fa3 {type CFPLACEHOLDERCREATEFLAGS_403308b934d9 as CFPLACEHOLDERCREATEFLAGS}
+
+pub using @21754b99e4845fa3 {type CFPLACEHOLDERCREATEINFO_e3b145b2a031 as CFPLACEHOLDERCREATEINFO}
+
+pub using @21754b99e4845fa3 {type CFPLACEHOLDERINFOCLASS_12b2a6b134cb as CFPLACEHOLDERINFOCLASS}
+
+pub using @21754b99e4845fa3 {type CFPLACEHOLDERMANAGEMENTPOLICY_20c30bf50aff as CFPLACEHOLDERMANAGEMENTPOLICY}
+
+pub using @21754b99e4845fa3 {type CFPLACEHOLDERRANGEINFOCLASS_b0601a9111ab as CFPLACEHOLDERRANGEINFOCLASS}
+
+pub using @21754b99e4845fa3 {type CFPLACEHOLDERSTANDARDINFO_a72788c4d82e as CFPLACEHOLDERSTANDARDINFO}
+
+pub using @21754b99e4845fa3 {type CFPLACEHOLDERSTATE_e4384af1354c as CFPLACEHOLDERSTATE}
+
+pub using @21754b99e4845fa3 {type CFPLATFORMINFO_e4aaaa388e5f as CFPLATFORMINFO}
+
+pub using @21754b99e4845fa3 {type CFPOPULATIONPOLICY_e0b3606610d6 as CFPOPULATIONPOLICY}
+
+pub using @21754b99e4845fa3 {type CFPOPULATIONPOLICYMODIFIER_33c10dc2859f as CFPOPULATIONPOLICYMODIFIER}
+
+pub using @21754b99e4845fa3 {type CFPOPULATIONPOLICYPRIMARY_f1bec8fc3907 as CFPOPULATIONPOLICYPRIMARY}
+
+pub using @21754b99e4845fa3 {type CFPROCESSINFO_848400a2f0f7 as CFPROCESSINFO}
+
+pub using @21754b99e4845fa3 {type CFREGISTERFLAGS_04732f5f69e6 as CFREGISTERFLAGS}
+
+pub using @21754b99e4845fa3 {type CFREVERTFLAGS_2583310bc81b as CFREVERTFLAGS}
+
+pub using @21754b99e4845fa3 {type CFSETINSYNCFLAGS_e60e79c3be42 as CFSETINSYNCFLAGS}
+
+pub using @21754b99e4845fa3 {type CFSETPINFLAGS_a4d0415d1384 as CFSETPINFLAGS}
+
+pub using @21754b99e4845fa3 {type CFSYNCPOLICIES_5b468716d3a2 as CFSYNCPOLICIES}
+
+pub using @21754b99e4845fa3 {type CFSYNCPROVIDERSTATUS_7f2d4717a818 as CFSYNCPROVIDERSTATUS}
+
+pub using @21754b99e4845fa3 {type CFSYNCREGISTRATION_1ed9fff694a1 as CFSYNCREGISTRATION}
+
+pub using @21754b99e4845fa3 {type CFSYNCROOTBASICINFO_6e1b6cf38f20 as CFSYNCROOTBASICINFO}
+
+pub using @21754b99e4845fa3 {type CFSYNCROOTINFOCLASS_c922d24d481b as CFSYNCROOTINFOCLASS}
+
+pub using @21754b99e4845fa3 {type CFSYNCROOTPROVIDERINFO_5f1ef419b0ee as CFSYNCROOTPROVIDERINFO}
+
+pub using @21754b99e4845fa3 {type CFSYNCROOTSTANDARDINFO_41b15d94569b as CFSYNCROOTSTANDARDINFO}
+
+pub using @21754b99e4845fa3 {type CFSYNCSTATUS_19859dc3d854 as CFSYNCSTATUS}
+
+pub using @21754b99e4845fa3 {type CFUPDATEFLAGS_617a510cd483 as CFUPDATEFLAGS}
+
+pub using @21754b99e4845fa3 {type CancelEStruct_c3c1cf8027c5 as CancelEStruct}
+
+pub using @21754b99e4845fa3 {type CloseCompletionEStruct_495c32d4b53f as CloseCompletionEStruct}
+
+pub using @21754b99e4845fa3 {type DehydrateCompletionEStruct_9447d84f194e as DehydrateCompletionEStruct}
+
+pub using @21754b99e4845fa3 {type DehydrateEStruct_1e0cd97cf02d as DehydrateEStruct}
+
+pub using @21754b99e4845fa3 {type DeleteCompletionEStruct_4484fec0df3f as DeleteCompletionEStruct}
+
+pub using @21754b99e4845fa3 {type DeleteEStruct_3f9a9ca6d2c2 as DeleteEStruct}
+
+pub using @21754b99e4845fa3 {type FetchDataEStruct_7e4c835cb78c as FetchDataEStruct_7e4c835cb7}
+
+pub using @21754b99e4845fa3 {type FetchDataEStruct_f8dbc0466fa4 as FetchDataEStruct_f8dbc0466f}
+
+pub using @21754b99e4845fa3 {type FetchPlaceholdersEStruct_59b1d9998fc6 as FetchPlaceholdersEStruct}
+
+pub using @21754b99e4845fa3 {type OpenCompletionEStruct_270869a6f3bc as OpenCompletionEStruct}
+
+pub using @21754b99e4845fa3 {type RenameCompletionEStruct_3517cd33756e as RenameCompletionEStruct}
+
+pub using @21754b99e4845fa3 {type RenameEStruct_9e8b2ad43820 as RenameEStruct}
+
+pub using @21754b99e4845fa3 {type RestartHydrationEStruct_972824b19ef4 as RestartHydrationEStruct}
+
+pub using @21754b99e4845fa3 {type RetrieveDataEStruct_7f95e7f356b3 as RetrieveDataEStruct}
+
+pub using @21754b99e4845fa3 {type TransferDataEStruct_b2b8ef61ac57 as TransferDataEStruct}
+
+pub using @21754b99e4845fa3 {type TransferPlaceholdersEStruct_9ee2b356393b as TransferPlaceholdersEStruct}
+
+pub using @21754b99e4845fa3 {type ValidateDataEStruct_8ab469e9be5e as ValidateDataEStruct}
+
+// Traits
+

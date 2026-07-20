@@ -1,0 +1,178 @@
+// Generated using `moon info`, DON'T EDIT IT
+package "moonbit-community/win32-bindings/windows/win32/networking/delivery_optimization"
+
+import {
+  "moonbit-community/win32-bindings/runtime/core",
+  "moonbit-community/win32-bindings/scc/cf3419f61e712da1",
+}
+
+// Values
+pub fn abort(@core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn abort_raw(@core.RawAddress) -> Int
+
+pub fn create_download(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn create_download_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub let decryption_info_algorithm_name : String
+
+pub let decryption_info_chaining_mode : String
+
+pub let decryption_info_encryption_buffer_size : String
+
+pub let decryption_info_key_data : String
+
+pub let do_download_cost_policy_always : Int
+
+pub let do_download_cost_policy_no_cellular : Int
+
+pub let do_download_cost_policy_no_roaming : Int
+
+pub let do_download_cost_policy_no_surcharge : Int
+
+pub let do_download_cost_policy_standard : Int
+
+pub let do_download_cost_policy_unrestricted : Int
+
+pub let do_download_property_blocking_mode : Int
+
+pub let do_download_property_callback_freq_percent : Int
+
+pub let do_download_property_callback_freq_seconds : Int
+
+pub let do_download_property_callback_interface : Int
+
+pub let do_download_property_content_id : Int
+
+pub let do_download_property_correlation_vector : Int
+
+pub let do_download_property_cost_policy : Int
+
+pub let do_download_property_decryption_info : Int
+
+pub let do_download_property_disallow_on_cellular : Int
+
+pub let do_download_property_display_name : Int
+
+pub let do_download_property_foreground_priority : Int
+
+pub let do_download_property_http_allow_secure_to_non_secure_redirect : Int
+
+pub let do_download_property_http_custom_auth_headers : Int
+
+pub let do_download_property_http_custom_headers : Int
+
+pub let do_download_property_http_redirection_target : Int
+
+pub let do_download_property_http_response_headers : Int
+
+pub let do_download_property_http_server_ip_address : Int
+
+pub let do_download_property_http_status_code : Int
+
+pub let do_download_property_id : Int
+
+pub let do_download_property_integrity_check_info : Int
+
+pub let do_download_property_integrity_check_mandatory : Int
+
+pub let do_download_property_local_path : Int
+
+pub let do_download_property_network_token : Int
+
+pub let do_download_property_no_progress_timeout_seconds : Int
+
+pub let do_download_property_non_volatile : Int
+
+pub let do_download_property_security_context : Int
+
+pub let do_download_property_security_flags : Int
+
+pub let do_download_property_stream_interface : Int
+
+pub let do_download_property_total_size_bytes : Int
+
+pub let do_download_property_uri : Int
+
+pub let do_download_state_aborted : Int
+
+pub let do_download_state_created : Int
+
+pub let do_download_state_finalized : Int
+
+pub let do_download_state_paused : Int
+
+pub let do_download_state_transferred : Int
+
+pub let do_download_state_transferring : Int
+
+pub fn enum_downloads(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn enum_downloads_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn finalize(@core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn finalize_raw(@core.RawAddress) -> Int
+
+pub fn get_property(@core.RawAddress, Int, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn get_property_raw(@core.RawAddress, Int, @core.RawAddress) -> Int
+
+pub fn get_status(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn get_status_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub let integrity_check_info_hash_of_hashes : String
+
+pub let integrity_check_info_pieces_hash_file_digest : String
+
+pub let integrity_check_info_pieces_hash_file_digest_algorithm : String
+
+pub let integrity_check_info_pieces_hash_file_url : String
+
+pub fn on_status_change(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn on_status_change_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn pause(@core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn pause_raw(@core.RawAddress) -> Int
+
+pub fn set_property(@core.RawAddress, Int, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn set_property_raw(@core.RawAddress, Int, @core.RawAddress) -> Int
+
+pub fn start(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn start_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+// Errors
+
+// Types and methods
+
+// Type aliases
+pub using @cf3419f61e712da1 {type DODOWNLOADENUMCATEGORY_6c2855978bdc as DODOWNLOADENUMCATEGORY}
+
+pub using @cf3419f61e712da1 {type DODOWNLOADRANGE_5385cc25d135 as DODOWNLOADRANGE}
+
+pub using @cf3419f61e712da1 {type DODOWNLOADRANGESINFO_469a4da0bf3e as DODOWNLOADRANGESINFO}
+
+pub using @cf3419f61e712da1 {type DODOWNLOADSTATUS_4f310c51bbf5 as DODOWNLOADSTATUS}
+
+pub using @cf3419f61e712da1 {type DODownloadCostPolicy_657c242617e0 as DODownloadCostPolicy}
+
+pub using @cf3419f61e712da1 {type DODownloadProperty_fb330cbb73ae as DODownloadProperty}
+
+pub using @cf3419f61e712da1 {type DODownloadState_32c08bf23e78 as DODownloadState}
+
+pub using @cf3419f61e712da1 {type DeliveryOptimization_61d5b83ee0dc as DeliveryOptimization}
+
+pub using @cf3419f61e712da1 {type IDODownload_4b881ae45361 as IDODownload}
+
+pub using @cf3419f61e712da1 {type IDODownloadStatusCallback_9e28f03125f4 as IDODownloadStatusCallback}
+
+pub using @cf3419f61e712da1 {type IDOManager_8fc3f7e687db as IDOManager}
+
+// Traits
+

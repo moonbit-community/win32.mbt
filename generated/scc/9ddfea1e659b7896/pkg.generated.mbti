@@ -1,0 +1,658 @@
+// Generated using `moon info`, DON'T EDIT IT
+package "moonbit-community/win32-bindings/scc/9ddfea1e659b7896"
+
+import {
+  "moonbit-community/win32-bindings/runtime/core",
+  "moonbitlang/core/debug",
+}
+
+// Values
+pub let adr_encodes_current_position_670ea4a5fb9b : UInt
+
+pub let adr_encodes_isrc_4cf1a4f28b4b : UInt
+
+pub let adr_encodes_media_catalog_e0b32570db3a : UInt
+
+pub let adr_no_mode_information_59b5d4ef497a : UInt
+
+pub let anonymous_e_union_b1aaf123499c_alignment : Int
+
+pub let anonymous_e_union_b1aaf123499c_size : Int
+
+pub let audio_data_track_1dac626e48dc : UInt
+
+pub let audio_status_in_progress_fb0ddf6719ec : UInt
+
+pub let audio_status_no_status_050a02119fb8 : UInt
+
+pub let audio_status_not_supported_665d33bace83 : UInt
+
+pub let audio_status_paused_681d54fb2a08 : UInt
+
+pub let audio_status_play_complete_f455e8ac9276 : UInt
+
+pub let audio_status_play_error_4510073fdc5f : UInt
+
+pub let audio_with_preemphasis_ec4ec5b3eee0 : UInt
+
+pub let cd_raw_read_c2_size_ddacaf892166 : UInt
+
+pub let cd_raw_read_subcode_size_e310002dd4e7 : UInt
+
+pub let cd_raw_sector_with_c2_size_c4be8b9eaf68 : UInt
+
+pub let cd_raw_sector_with_subcode_size_0c822af7d7c9 : UInt
+
+pub let cdda_ad4ab19cf434 : Int
+
+pub let cdrom10_nominal20_exceptions_429f20845f8e : Int
+
+pub let cdrom_cav_rotation_177687a7e480 : Int
+
+pub let cdrom_cd_text_pack_album_name_f3aedabe1572 : UInt
+
+pub let cdrom_cd_text_pack_arranger_a9ee5c111910 : UInt
+
+pub let cdrom_cd_text_pack_composer_20cf6693ab44 : UInt
+
+pub let cdrom_cd_text_pack_disc_id_71830b602c0f : UInt
+
+pub let cdrom_cd_text_pack_genre_936507d20ddb : UInt
+
+pub let cdrom_cd_text_pack_messages_42fa6696645b : UInt
+
+pub let cdrom_cd_text_pack_performer_092acc969927 : UInt
+
+pub let cdrom_cd_text_pack_size_info_6e9956945671 : UInt
+
+pub let cdrom_cd_text_pack_songwriter_95cfc7a868df : UInt
+
+pub let cdrom_cd_text_pack_toc_info2_36afb199cf27 : UInt
+
+pub let cdrom_cd_text_pack_toc_info_3e8c9bf2ee79 : UInt
+
+pub let cdrom_cd_text_pack_upc_ean_c8dfc898e630 : UInt
+
+pub let cdrom_default_rotation_1f0bcded9cc1 : Int
+
+pub let cdrom_disk_audio_track_1ad9615bf54e : UInt
+
+pub let cdrom_disk_data_track_63d40a83c6c4 : UInt
+
+pub let cdrom_entire_performance_list_ddd255352c82 : Int
+
+pub let cdrom_exclusive_caller_length_7e5a1bfdab58 : UInt
+
+pub let cdrom_in_exclusive_mode_790a722c0267 : UInt
+
+pub let cdrom_lock_ignore_volume_8526b968786f : UInt
+
+pub let cdrom_no_media_notifications_a0ab8cfb70ab : UInt
+
+pub let cdrom_nominal_performance_1232e397f287 : Int
+
+pub let cdrom_not_in_exclusive_mode_b5675853105d : UInt
+
+pub let cdrom_performance_exceptions_only_2bd9cbbb72d5 : Int
+
+pub let cdrom_performance_request_a87d26954b30 : Int
+
+pub let cdrom_read_performance_80346190737c : Int
+
+pub let cdrom_read_toc_ex_format_atip_ba9162705acf : UInt
+
+pub let cdrom_read_toc_ex_format_cdtext_8875501f8635 : UInt
+
+pub let cdrom_read_toc_ex_format_full_toc_e05cc2b27939 : UInt
+
+pub let cdrom_read_toc_ex_format_pma_276d17deabeb : UInt
+
+pub let cdrom_read_toc_ex_format_session_b0e54de9cb8a : UInt
+
+pub let cdrom_read_toc_ex_format_toc_83053027caec : UInt
+
+pub let cdrom_set_speed_cafa04aeea43 : Int
+
+pub let cdrom_set_streaming_1f41b3f5bde0 : Int
+
+pub let cdrom_streaming_disable_deb1840e0fe7 : Int
+
+pub let cdrom_streaming_enable_for_read_only_fd6a253d6440 : Int
+
+pub let cdrom_streaming_enable_for_read_write_07d01885ed04 : Int
+
+pub let cdrom_streaming_enable_for_write_only_8cdc7bcd41fa : Int
+
+pub let cdrom_write_performance_c19cacdca9c2 : Int
+
+pub let cdrom_write_speed_request_278d6d03ef92 : Int
+
+pub let cdromdiskdata_becd871c87e7_alignment : Int
+
+pub let cdromdiskdata_becd871c87e7_size : Int
+
+pub let cdromexceptionperformancedescriptor_8204e0e7fe57_alignment : Int
+
+pub let cdromexceptionperformancedescriptor_8204e0e7fe57_size : Int
+
+pub let cdromexclusiveaccess_8e17be9126a2_alignment : Int
+
+pub let cdromexclusiveaccess_8e17be9126a2_size : Int
+
+pub let cdromexclusivelock_bd988924a164_alignment : Int
+
+pub let cdromexclusivelock_bd988924a164_size : Int
+
+pub let cdromexclusivelockstate_b696af4168b5_alignment : Int
+
+pub let cdromexclusivelockstate_b696af4168b5_size : Int
+
+pub let cdromnominalperformancedescriptor_ff137642f117_alignment : Int
+
+pub let cdromnominalperformancedescriptor_ff137642f117_size : Int
+
+pub let cdromperformanceheader_f1bd7e2aba12_alignment : Int
+
+pub let cdromperformanceheader_f1bd7e2aba12_size : Int
+
+pub let cdromperformancerequest_d5de7bf9931d_alignment : Int
+
+pub let cdromperformancerequest_d5de7bf9931d_size : Int
+
+pub let cdromplayaudiomsf_7ca126b1cee2_alignment : Int
+
+pub let cdromplayaudiomsf_7ca126b1cee2_size : Int
+
+pub let cdromreadtocex_61fedf0aaa2b_alignment : Int
+
+pub let cdromreadtocex_61fedf0aaa2b_size : Int
+
+pub let cdromseekaudiomsf_1e5c70241c1b_alignment : Int
+
+pub let cdromseekaudiomsf_1e5c70241c1b_size : Int
+
+pub let cdromsetspeed_4fc69d3a2521_alignment : Int
+
+pub let cdromsetspeed_4fc69d3a2521_size : Int
+
+pub let cdromsetstreaming_903bd66e9437_alignment : Int
+
+pub let cdromsetstreaming_903bd66e9437_size : Int
+
+pub let cdromsimpleopcinfo_9b10c43533a7_alignment : Int
+
+pub let cdromsimpleopcinfo_9b10c43533a7_size : Int
+
+pub let cdromstreamingcontrol_747f43e39cd3_alignment : Int
+
+pub let cdromstreamingcontrol_747f43e39cd3_size : Int
+
+pub let cdromsubqdataformat_85a7c0f96886_alignment : Int
+
+pub let cdromsubqdataformat_85a7c0f96886_size : Int
+
+pub let cdromtoc_fefa36e63ad0_alignment : Int
+
+pub let cdromtoc_fefa36e63ad0_size : Int
+
+pub let cdromtocatipdata_0f2e787e754d_alignment : Int
+
+pub let cdromtocatipdata_0f2e787e754d_size : Int
+
+pub let cdromtocatipdatablock_32700f10e616_alignment : Int
+
+pub let cdromtocatipdatablock_32700f10e616_size : Int
+
+pub let cdromtoccdtextdata_53d9be33c8d6_alignment : Int
+
+pub let cdromtoccdtextdata_53d9be33c8d6_size : Int
+
+pub let cdromtoccdtextdatablock_b602e97780c7_alignment : Int
+
+pub let cdromtoccdtextdatablock_b602e97780c7_size : Int
+
+pub let cdromtocfulltocdata_30b16bc1978a_alignment : Int
+
+pub let cdromtocfulltocdata_30b16bc1978a_size : Int
+
+pub let cdromtocfulltocdatablock_30cc30cf702f_alignment : Int
+
+pub let cdromtocfulltocdatablock_30cc30cf702f_size : Int
+
+pub let cdromtocpmadata_500f242fb41b_alignment : Int
+
+pub let cdromtocpmadata_500f242fb41b_size : Int
+
+pub let cdromtocsessiondata_d42a423cdc15_alignment : Int
+
+pub let cdromtocsessiondata_d42a423cdc15_size : Int
+
+pub let cdromwritespeeddescriptor_0a61dbfdf880_alignment : Int
+
+pub let cdromwritespeeddescriptor_0a61dbfdf880_size : Int
+
+pub let cdromwritespeedrequest_fc72087a80d7_alignment : Int
+
+pub let cdromwritespeedrequest_fc72087a80d7_size : Int
+
+pub let digital_copy_permitted_002bfe64bb9a : UInt
+
+pub let exclusive_access_lock_device_e78c8da7fd79 : Int
+
+pub let exclusive_access_query_state_a0569fc1d520 : Int
+
+pub let exclusive_access_unlock_device_65c21d599fe4 : Int
+
+pub let ioctl_cdrom_base_e502e442af28 : Int
+
+pub let ioctl_cdrom_check_verify_fae866a30b9b : UInt
+
+pub let ioctl_cdrom_current_position_fc8fc99ca4b6 : UInt
+
+pub let ioctl_cdrom_disk_type_5af6dacfaeda : UInt
+
+pub let ioctl_cdrom_eject_media_cbe62cddb2e7 : UInt
+
+pub let ioctl_cdrom_enable_streaming_f081eab7583f : UInt
+
+pub let ioctl_cdrom_exclusive_access_319133231e91 : UInt
+
+pub let ioctl_cdrom_find_new_devices_77fcd7d10499 : UInt
+
+pub let ioctl_cdrom_get_configuration_5cba15b1a69b : UInt
+
+pub let ioctl_cdrom_get_control_83c28db039a4 : UInt
+
+pub let ioctl_cdrom_get_drive_geometry_78e8bb90623a : UInt
+
+pub let ioctl_cdrom_get_drive_geometry_ex_999b857fb441 : UInt
+
+pub let ioctl_cdrom_get_inquiry_data_24b955b77a6d : UInt
+
+pub let ioctl_cdrom_get_last_session_fdb85c240338 : UInt
+
+pub let ioctl_cdrom_get_performance_2abbe2fa7ccf : UInt
+
+pub let ioctl_cdrom_get_volume_52cee64ba08b : UInt
+
+pub let ioctl_cdrom_load_media_cd9e26cd53e9 : UInt
+
+pub let ioctl_cdrom_media_catalog_bbc359827344 : UInt
+
+pub let ioctl_cdrom_media_removal_eb4be77bb4f1 : UInt
+
+pub let ioctl_cdrom_pause_audio_31d0a813a3c2 : UInt
+
+pub let ioctl_cdrom_play_audio_msf_a7a49d55efa5 : UInt
+
+pub let ioctl_cdrom_raw_read_3f85e10a79d4 : UInt
+
+pub let ioctl_cdrom_read_q_channel_95e793482c25 : UInt
+
+pub let ioctl_cdrom_read_toc_0aff8a740d86 : UInt
+
+pub let ioctl_cdrom_read_toc_ex_a71257183c09 : UInt
+
+pub let ioctl_cdrom_release_74f9502ac375 : UInt
+
+pub let ioctl_cdrom_reserve_2fe46ce87060 : UInt
+
+pub let ioctl_cdrom_resume_audio_a7fbace46d1b : UInt
+
+pub let ioctl_cdrom_seek_audio_msf_537c2f38d3c3 : UInt
+
+pub let ioctl_cdrom_send_opc_information_71653e0b1705 : UInt
+
+pub let ioctl_cdrom_set_speed_790da2ddaf27 : UInt
+
+pub let ioctl_cdrom_set_volume_3f0a005bdadb : UInt
+
+pub let ioctl_cdrom_simbad_093dda52f793 : UInt
+
+pub let ioctl_cdrom_stop_audio_e2b1a003239e : UInt
+
+pub let ioctl_cdrom_sub_q_channel_65ae1b137737 : UInt
+
+pub let ioctl_cdrom_track_isrc_e64d1954bcf3 : UInt
+
+pub let ioctl_cdrom_unload_driver_3f6f80b967db : UInt
+
+pub let maximum_cdrom_inquiry_size_788cd35fabc4 : UInt
+
+pub let maximum_cdrom_size_56e4a52574bd : UInt
+
+pub let maximum_number_tracks_7e3b015ba8cd : UInt
+
+pub let media_blank_type_erase_last_session_236c872162ed : Int
+
+pub let media_blank_type_full_e250b6bb5ae9 : Int
+
+pub let media_blank_type_incomplete_track_718aeb51d210 : Int
+
+pub let media_blank_type_minimal_ed17c3228db1 : Int
+
+pub let media_blank_type_track_tail_6b0c0359bcfa : Int
+
+pub let media_blank_type_unclose_last_session_88667baf9f86 : Int
+
+pub let media_blank_type_unreserve_last_track_19b0b1322aae : Int
+
+pub let minimum_cdrom_inquiry_size_4230ca5b219e : UInt
+
+pub let minimum_cdrom_read_toc_ex_size_cc17a8bfc80a : UInt
+
+pub let obsolete_ioctl_cdrom_get_control_cca4d8d51259 : UInt
+
+pub let raw_with_c2_85f7933f52f1 : Int
+
+pub let raw_with_c2_and_sub_code_5f239350f405 : Int
+
+pub let raw_with_sub_code_7d41ebd6bd63 : Int
+
+pub let rawreadinfo_0d9ce721b9b8_alignment : Int
+
+pub let rawreadinfo_0d9ce721b9b8_size : Int
+
+pub let simple_opc_info_6849cfac3601 : Int
+
+pub let subqchanneldata_6bd6939764a7_alignment : Int
+
+pub let subqchanneldata_6bd6939764a7_size : Int
+
+pub let subqcurrentposition_9370d03ec3c6_alignment : Int
+
+pub let subqcurrentposition_9370d03ec3c6_size : Int
+
+pub let subqheader_ee30958d55a5_alignment : Int
+
+pub let subqheader_ee30958d55a5_size : Int
+
+pub let subqmediacatalognumber_8b2fe2eff2c1_alignment : Int
+
+pub let subqmediacatalognumber_8b2fe2eff2c1_size : Int
+
+pub let subqtrackisrc_a8c9abbdebe9_alignment : Int
+
+pub let subqtrackisrc_a8c9abbdebe9_size : Int
+
+pub let trackdata_4fab3a3a8bad_alignment : Int
+
+pub let trackdata_4fab3a3a8bad_size : Int
+
+pub let two_four_channel_audio_c86854fa5d0b : UInt
+
+pub let volumecontrol_53fe2657e45c_alignment : Int
+
+pub let volumecontrol_53fe2657e45c_size : Int
+
+pub let xa_form2_73b3aea0d4d7 : Int
+
+pub let yellow_mode2_dbfe5ad6cddd : Int
+
+// Errors
+
+// Types and methods
+pub(all) struct AnonymousEUnion_b1aaf123499c {
+  raw_bytes : Bytes
+} derive(Eq, @debug.Debug)
+pub fn AnonymousEUnion_b1aaf123499c::bytes(Self) -> Bytes
+pub fn AnonymousEUnion_b1aaf123499c::from_bytes(Bytes) -> Self raise @core.WindowsError
+
+pub(all) struct CDROMDISKDATA_becd871c87e7 {
+  raw_bytes : Bytes
+} derive(Eq, @debug.Debug)
+pub fn CDROMDISKDATA_becd871c87e7::bytes(Self) -> Bytes
+pub fn CDROMDISKDATA_becd871c87e7::from_bytes(Bytes) -> Self raise @core.WindowsError
+
+pub(all) struct CDROMEXCEPTIONPERFORMANCEDESCRIPTOR_8204e0e7fe57 {
+  raw_bytes : Bytes
+} derive(Eq, @debug.Debug)
+pub fn CDROMEXCEPTIONPERFORMANCEDESCRIPTOR_8204e0e7fe57::bytes(Self) -> Bytes
+pub fn CDROMEXCEPTIONPERFORMANCEDESCRIPTOR_8204e0e7fe57::from_bytes(Bytes) -> Self raise @core.WindowsError
+
+pub(all) struct CDROMEXCLUSIVEACCESS_8e17be9126a2 {
+  raw_bytes : Bytes
+} derive(Eq, @debug.Debug)
+pub fn CDROMEXCLUSIVEACCESS_8e17be9126a2::bytes(Self) -> Bytes
+pub fn CDROMEXCLUSIVEACCESS_8e17be9126a2::from_bytes(Bytes) -> Self raise @core.WindowsError
+
+pub(all) struct CDROMEXCLUSIVELOCKSTATE_b696af4168b5 {
+  raw_bytes : Bytes
+} derive(Eq, @debug.Debug)
+pub fn CDROMEXCLUSIVELOCKSTATE_b696af4168b5::bytes(Self) -> Bytes
+pub fn CDROMEXCLUSIVELOCKSTATE_b696af4168b5::from_bytes(Bytes) -> Self raise @core.WindowsError
+
+pub(all) struct CDROMEXCLUSIVELOCK_bd988924a164 {
+  raw_bytes : Bytes
+} derive(Eq, @debug.Debug)
+pub fn CDROMEXCLUSIVELOCK_bd988924a164::bytes(Self) -> Bytes
+pub fn CDROMEXCLUSIVELOCK_bd988924a164::from_bytes(Bytes) -> Self raise @core.WindowsError
+
+pub(all) struct CDROMNOMINALPERFORMANCEDESCRIPTOR_ff137642f117 {
+  raw_bytes : Bytes
+} derive(Eq, @debug.Debug)
+pub fn CDROMNOMINALPERFORMANCEDESCRIPTOR_ff137642f117::bytes(Self) -> Bytes
+pub fn CDROMNOMINALPERFORMANCEDESCRIPTOR_ff137642f117::from_bytes(Bytes) -> Self raise @core.WindowsError
+
+pub(all) struct CDROMOPCINFOTYPE_ac9588c7d988(Int) derive(Compare, Eq, @debug.Debug)
+pub fn CDROMOPCINFOTYPE_ac9588c7d988::from_int(Int) -> Self
+pub fn CDROMOPCINFOTYPE_ac9588c7d988::to_int(Self) -> Int
+
+pub(all) struct CDROMPERFORMANCEEXCEPTIONTYPE_76edc3b6d1a1(Int) derive(Compare, Eq, @debug.Debug)
+pub fn CDROMPERFORMANCEEXCEPTIONTYPE_76edc3b6d1a1::from_int(Int) -> Self
+pub fn CDROMPERFORMANCEEXCEPTIONTYPE_76edc3b6d1a1::to_int(Self) -> Int
+
+pub(all) struct CDROMPERFORMANCEHEADER_f1bd7e2aba12 {
+  raw_bytes : Bytes
+} derive(Eq, @debug.Debug)
+pub fn CDROMPERFORMANCEHEADER_f1bd7e2aba12::bytes(Self) -> Bytes
+pub fn CDROMPERFORMANCEHEADER_f1bd7e2aba12::from_bytes(Bytes) -> Self raise @core.WindowsError
+
+pub(all) struct CDROMPERFORMANCEREQUESTTYPE_65bffe25897e(Int) derive(Compare, Eq, @debug.Debug)
+pub fn CDROMPERFORMANCEREQUESTTYPE_65bffe25897e::from_int(Int) -> Self
+pub fn CDROMPERFORMANCEREQUESTTYPE_65bffe25897e::to_int(Self) -> Int
+
+pub(all) struct CDROMPERFORMANCEREQUEST_d5de7bf9931d {
+  raw_bytes : Bytes
+} derive(Eq, @debug.Debug)
+pub fn CDROMPERFORMANCEREQUEST_d5de7bf9931d::bytes(Self) -> Bytes
+pub fn CDROMPERFORMANCEREQUEST_d5de7bf9931d::from_bytes(Bytes) -> Self raise @core.WindowsError
+
+pub(all) struct CDROMPERFORMANCETOLERANCETYPE_f5122cde8b4e(Int) derive(Compare, Eq, @debug.Debug)
+pub fn CDROMPERFORMANCETOLERANCETYPE_f5122cde8b4e::from_int(Int) -> Self
+pub fn CDROMPERFORMANCETOLERANCETYPE_f5122cde8b4e::to_int(Self) -> Int
+
+pub(all) struct CDROMPERFORMANCETYPE_1464683f6c1b(Int) derive(Compare, Eq, @debug.Debug)
+pub fn CDROMPERFORMANCETYPE_1464683f6c1b::from_int(Int) -> Self
+pub fn CDROMPERFORMANCETYPE_1464683f6c1b::to_int(Self) -> Int
+
+pub(all) struct CDROMPLAYAUDIOMSF_7ca126b1cee2 {
+  raw_bytes : Bytes
+} derive(Eq, @debug.Debug)
+pub fn CDROMPLAYAUDIOMSF_7ca126b1cee2::bytes(Self) -> Bytes
+pub fn CDROMPLAYAUDIOMSF_7ca126b1cee2::from_bytes(Bytes) -> Self raise @core.WindowsError
+
+pub(all) struct CDROMREADTOCEX_61fedf0aaa2b {
+  raw_bytes : Bytes
+} derive(Eq, @debug.Debug)
+pub fn CDROMREADTOCEX_61fedf0aaa2b::bytes(Self) -> Bytes
+pub fn CDROMREADTOCEX_61fedf0aaa2b::from_bytes(Bytes) -> Self raise @core.WindowsError
+
+pub(all) struct CDROMSEEKAUDIOMSF_1e5c70241c1b {
+  raw_bytes : Bytes
+} derive(Eq, @debug.Debug)
+pub fn CDROMSEEKAUDIOMSF_1e5c70241c1b::bytes(Self) -> Bytes
+pub fn CDROMSEEKAUDIOMSF_1e5c70241c1b::from_bytes(Bytes) -> Self raise @core.WindowsError
+
+pub(all) struct CDROMSETSPEED_4fc69d3a2521 {
+  raw_bytes : Bytes
+} derive(Eq, @debug.Debug)
+pub fn CDROMSETSPEED_4fc69d3a2521::bytes(Self) -> Bytes
+pub fn CDROMSETSPEED_4fc69d3a2521::from_bytes(Bytes) -> Self raise @core.WindowsError
+
+pub(all) struct CDROMSETSTREAMING_903bd66e9437 {
+  raw_bytes : Bytes
+} derive(Eq, @debug.Debug)
+pub fn CDROMSETSTREAMING_903bd66e9437::bytes(Self) -> Bytes
+pub fn CDROMSETSTREAMING_903bd66e9437::from_bytes(Bytes) -> Self raise @core.WindowsError
+
+pub(all) struct CDROMSIMPLEOPCINFO_9b10c43533a7 {
+  raw_bytes : Bytes
+} derive(Eq, @debug.Debug)
+pub fn CDROMSIMPLEOPCINFO_9b10c43533a7::bytes(Self) -> Bytes
+pub fn CDROMSIMPLEOPCINFO_9b10c43533a7::from_bytes(Bytes) -> Self raise @core.WindowsError
+
+pub(all) struct CDROMSPEEDREQUEST_3c693172a355(Int) derive(Compare, Eq, @debug.Debug)
+pub fn CDROMSPEEDREQUEST_3c693172a355::from_int(Int) -> Self
+pub fn CDROMSPEEDREQUEST_3c693172a355::to_int(Self) -> Int
+
+pub(all) struct CDROMSTREAMINGCONTROL_747f43e39cd3 {
+  raw_bytes : Bytes
+} derive(Eq, @debug.Debug)
+pub fn CDROMSTREAMINGCONTROL_747f43e39cd3::bytes(Self) -> Bytes
+pub fn CDROMSTREAMINGCONTROL_747f43e39cd3::from_bytes(Bytes) -> Self raise @core.WindowsError
+
+pub(all) struct CDROMSUBQDATAFORMAT_85a7c0f96886 {
+  raw_bytes : Bytes
+} derive(Eq, @debug.Debug)
+pub fn CDROMSUBQDATAFORMAT_85a7c0f96886::bytes(Self) -> Bytes
+pub fn CDROMSUBQDATAFORMAT_85a7c0f96886::from_bytes(Bytes) -> Self raise @core.WindowsError
+
+pub(all) struct CDROMTOCATIPDATABLOCK_32700f10e616 {
+  raw_bytes : Bytes
+} derive(Eq, @debug.Debug)
+pub fn CDROMTOCATIPDATABLOCK_32700f10e616::bytes(Self) -> Bytes
+pub fn CDROMTOCATIPDATABLOCK_32700f10e616::from_bytes(Bytes) -> Self raise @core.WindowsError
+
+pub(all) struct CDROMTOCATIPDATA_0f2e787e754d {
+  raw_bytes : Bytes
+} derive(Eq, @debug.Debug)
+pub fn CDROMTOCATIPDATA_0f2e787e754d::bytes(Self) -> Bytes
+pub fn CDROMTOCATIPDATA_0f2e787e754d::from_bytes(Bytes) -> Self raise @core.WindowsError
+
+pub(all) struct CDROMTOCCDTEXTDATABLOCK_b602e97780c7 {
+  raw_bytes : Bytes
+} derive(Eq, @debug.Debug)
+pub fn CDROMTOCCDTEXTDATABLOCK_b602e97780c7::bytes(Self) -> Bytes
+pub fn CDROMTOCCDTEXTDATABLOCK_b602e97780c7::from_bytes(Bytes) -> Self raise @core.WindowsError
+
+pub(all) struct CDROMTOCCDTEXTDATA_53d9be33c8d6 {
+  raw_bytes : Bytes
+} derive(Eq, @debug.Debug)
+pub fn CDROMTOCCDTEXTDATA_53d9be33c8d6::bytes(Self) -> Bytes
+pub fn CDROMTOCCDTEXTDATA_53d9be33c8d6::from_bytes(Bytes) -> Self raise @core.WindowsError
+
+pub(all) struct CDROMTOCFULLTOCDATABLOCK_30cc30cf702f {
+  raw_bytes : Bytes
+} derive(Eq, @debug.Debug)
+pub fn CDROMTOCFULLTOCDATABLOCK_30cc30cf702f::bytes(Self) -> Bytes
+pub fn CDROMTOCFULLTOCDATABLOCK_30cc30cf702f::from_bytes(Bytes) -> Self raise @core.WindowsError
+
+pub(all) struct CDROMTOCFULLTOCDATA_30b16bc1978a {
+  raw_bytes : Bytes
+} derive(Eq, @debug.Debug)
+pub fn CDROMTOCFULLTOCDATA_30b16bc1978a::bytes(Self) -> Bytes
+pub fn CDROMTOCFULLTOCDATA_30b16bc1978a::from_bytes(Bytes) -> Self raise @core.WindowsError
+
+pub(all) struct CDROMTOCPMADATA_500f242fb41b {
+  raw_bytes : Bytes
+} derive(Eq, @debug.Debug)
+pub fn CDROMTOCPMADATA_500f242fb41b::bytes(Self) -> Bytes
+pub fn CDROMTOCPMADATA_500f242fb41b::from_bytes(Bytes) -> Self raise @core.WindowsError
+
+pub(all) struct CDROMTOCSESSIONDATA_d42a423cdc15 {
+  raw_bytes : Bytes
+} derive(Eq, @debug.Debug)
+pub fn CDROMTOCSESSIONDATA_d42a423cdc15::bytes(Self) -> Bytes
+pub fn CDROMTOCSESSIONDATA_d42a423cdc15::from_bytes(Bytes) -> Self raise @core.WindowsError
+
+pub(all) struct CDROMTOC_fefa36e63ad0 {
+  raw_bytes : Bytes
+} derive(Eq, @debug.Debug)
+pub fn CDROMTOC_fefa36e63ad0::bytes(Self) -> Bytes
+pub fn CDROMTOC_fefa36e63ad0::from_bytes(Bytes) -> Self raise @core.WindowsError
+
+pub(all) struct CDROMWRITESPEEDDESCRIPTOR_0a61dbfdf880 {
+  raw_bytes : Bytes
+} derive(Eq, @debug.Debug)
+pub fn CDROMWRITESPEEDDESCRIPTOR_0a61dbfdf880::bytes(Self) -> Bytes
+pub fn CDROMWRITESPEEDDESCRIPTOR_0a61dbfdf880::from_bytes(Bytes) -> Self raise @core.WindowsError
+
+pub(all) struct CDROMWRITESPEEDREQUEST_fc72087a80d7 {
+  raw_bytes : Bytes
+} derive(Eq, @debug.Debug)
+pub fn CDROMWRITESPEEDREQUEST_fc72087a80d7::bytes(Self) -> Bytes
+pub fn CDROMWRITESPEEDREQUEST_fc72087a80d7::from_bytes(Bytes) -> Self raise @core.WindowsError
+
+pub(all) struct EXCLUSIVEACCESSREQUESTTYPE_190b2a070057(Int) derive(Compare, Eq, @debug.Debug)
+pub fn EXCLUSIVEACCESSREQUESTTYPE_190b2a070057::from_int(Int) -> Self
+pub fn EXCLUSIVEACCESSREQUESTTYPE_190b2a070057::to_int(Self) -> Int
+
+pub(all) struct MEDIABLANKTYPE_97236fa6a863(Int) derive(Compare, Eq, @debug.Debug)
+pub fn MEDIABLANKTYPE_97236fa6a863::from_int(Int) -> Self
+pub fn MEDIABLANKTYPE_97236fa6a863::to_int(Self) -> Int
+
+pub(all) struct RAWREADINFO_0d9ce721b9b8 {
+  raw_bytes : Bytes
+} derive(Eq, @debug.Debug)
+pub fn RAWREADINFO_0d9ce721b9b8::bytes(Self) -> Bytes
+pub fn RAWREADINFO_0d9ce721b9b8::from_bytes(Bytes) -> Self raise @core.WindowsError
+
+pub(all) struct STREAMINGCONTROLREQUESTTYPE_1b21e7518f85(Int) derive(Compare, Eq, @debug.Debug)
+pub fn STREAMINGCONTROLREQUESTTYPE_1b21e7518f85::from_int(Int) -> Self
+pub fn STREAMINGCONTROLREQUESTTYPE_1b21e7518f85::to_int(Self) -> Int
+
+pub(all) struct SUBQCHANNELDATA_6bd6939764a7 {
+  raw_bytes : Bytes
+} derive(Eq, @debug.Debug)
+pub fn SUBQCHANNELDATA_6bd6939764a7::bytes(Self) -> Bytes
+pub fn SUBQCHANNELDATA_6bd6939764a7::from_bytes(Bytes) -> Self raise @core.WindowsError
+
+pub(all) struct SUBQCURRENTPOSITION_9370d03ec3c6 {
+  raw_bytes : Bytes
+} derive(Eq, @debug.Debug)
+pub fn SUBQCURRENTPOSITION_9370d03ec3c6::bytes(Self) -> Bytes
+pub fn SUBQCURRENTPOSITION_9370d03ec3c6::from_bytes(Bytes) -> Self raise @core.WindowsError
+
+pub(all) struct SUBQHEADER_ee30958d55a5 {
+  raw_bytes : Bytes
+} derive(Eq, @debug.Debug)
+pub fn SUBQHEADER_ee30958d55a5::bytes(Self) -> Bytes
+pub fn SUBQHEADER_ee30958d55a5::from_bytes(Bytes) -> Self raise @core.WindowsError
+
+pub(all) struct SUBQMEDIACATALOGNUMBER_8b2fe2eff2c1 {
+  raw_bytes : Bytes
+} derive(Eq, @debug.Debug)
+pub fn SUBQMEDIACATALOGNUMBER_8b2fe2eff2c1::bytes(Self) -> Bytes
+pub fn SUBQMEDIACATALOGNUMBER_8b2fe2eff2c1::from_bytes(Bytes) -> Self raise @core.WindowsError
+
+pub(all) struct SUBQTRACKISRC_a8c9abbdebe9 {
+  raw_bytes : Bytes
+} derive(Eq, @debug.Debug)
+pub fn SUBQTRACKISRC_a8c9abbdebe9::bytes(Self) -> Bytes
+pub fn SUBQTRACKISRC_a8c9abbdebe9::from_bytes(Bytes) -> Self raise @core.WindowsError
+
+pub(all) struct TRACKDATA_4fab3a3a8bad {
+  raw_bytes : Bytes
+} derive(Eq, @debug.Debug)
+pub fn TRACKDATA_4fab3a3a8bad::bytes(Self) -> Bytes
+pub fn TRACKDATA_4fab3a3a8bad::from_bytes(Bytes) -> Self raise @core.WindowsError
+
+pub(all) struct TRACKMODETYPE_14f49144f15c(Int) derive(Compare, Eq, @debug.Debug)
+pub fn TRACKMODETYPE_14f49144f15c::from_int(Int) -> Self
+pub fn TRACKMODETYPE_14f49144f15c::to_int(Self) -> Int
+
+pub(all) struct VOLUMECONTROL_53fe2657e45c {
+  raw_bytes : Bytes
+} derive(Eq, @debug.Debug)
+pub fn VOLUMECONTROL_53fe2657e45c::bytes(Self) -> Bytes
+pub fn VOLUMECONTROL_53fe2657e45c::from_bytes(Bytes) -> Self raise @core.WindowsError
+
+pub(all) struct WRITEROTATION_190cad0323f2(Int) derive(Compare, Eq, @debug.Debug)
+pub fn WRITEROTATION_190cad0323f2::from_int(Int) -> Self
+pub fn WRITEROTATION_190cad0323f2::to_int(Self) -> Int
+
+// Type aliases
+
+// Traits
+

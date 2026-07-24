@@ -1,0 +1,2082 @@
+// Generated using `moon info`, DON'T EDIT IT
+package "moonbit-community/win32-bindings/windows/win32/system/diagnostics/etw"
+
+import {
+  "moonbit-community/win32-bindings/runtime/core",
+  "moonbit-community/win32-bindings/scc/5b0aec5c5ec59042",
+}
+
+// Values
+pub fn add_logfile_trace_stream(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn add_logfile_trace_stream_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn add_realtime_trace_stream(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn add_realtime_trace_stream_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn cancel(@core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn cancel_raw(@core.RawAddress) -> Int
+
+pub fn clone(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn clone_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn close_trace_raw(UInt64) -> UInt
+
+pub fn control_trace_a_raw(UInt64, @core.RawAddress, @core.RawAddress, UInt) -> UInt
+
+pub fn control_trace_w_raw(UInt64, @core.RawAddress, @core.RawAddress, UInt) -> UInt
+
+pub fn create_event_instance(@core.RawAddress, UInt64, UInt, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn create_event_instance_raw(@core.RawAddress, UInt64, UInt, @core.RawAddress) -> Int
+
+pub fn create_trace_instance_id_raw(@core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn cve_event_write_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub let decoding_source_max : Int
+
+pub let decoding_source_tlg : Int
+
+pub let decoding_source_wbem : Int
+
+pub let decoding_source_wpp : Int
+
+pub let decoding_source_xml_file : Int
+
+pub let diag_logger_namea : String
+
+pub let diag_logger_namew : String
+
+pub fn enable_trace_ex2_raw(UInt64, @core.RawAddress, UInt, UInt, UInt64, UInt64, UInt, @core.RawAddress) -> UInt
+
+pub fn enable_trace_ex_raw(@core.RawAddress, @core.RawAddress, UInt64, UInt, UInt, UInt64, UInt64, UInt, @core.RawAddress) -> UInt
+
+pub let enable_trace_parameters_version : UInt
+
+pub let enable_trace_parameters_version_2 : UInt
+
+pub fn enable_trace_raw(UInt, UInt, UInt, @core.RawAddress, UInt64) -> UInt
+
+pub fn enumerate_trace_guids_ex_raw(Int, @core.RawAddress, UInt, @core.RawAddress, UInt, @core.RawAddress) -> UInt
+
+pub fn enumerate_trace_guids_raw(@core.RawAddress, UInt, @core.RawAddress) -> UInt
+
+pub let etw_asciichar_type_value : UInt
+
+pub let etw_asciistring_type_value : UInt
+
+pub let etw_bool_type_value : UInt
+
+pub let etw_boolean_type_value : UInt
+
+pub let etw_byte_type_value : UInt
+
+pub let etw_char_type_value : UInt
+
+pub let etw_compression_mode_no_disable : Int
+
+pub let etw_compression_mode_no_restart : Int
+
+pub let etw_compression_mode_restart : Int
+
+pub let etw_context_register_type_control : Int
+
+pub let etw_context_register_type_integer : Int
+
+pub let etw_context_register_type_none : Int
+
+pub let etw_counted_ansistring_type_value : UInt
+
+pub let etw_counted_string_type_value : UInt
+
+pub let etw_datetime_type_value : UInt
+
+pub let etw_decimal_type_value : UInt
+
+pub let etw_double_type_value : UInt
+
+pub let etw_guid_type_value : UInt
+
+pub let etw_hidden_type_value : UInt
+
+pub let etw_int16_type_value : UInt
+
+pub let etw_int32_type_value : UInt
+
+pub let etw_int64_type_value : UInt
+
+pub let etw_non_null_terminated_string_type_value : UInt
+
+pub let etw_null_type_value : UInt
+
+pub let etw_object_type_value : UInt
+
+pub let etw_pmc_owner_free : Int
+
+pub let etw_pmc_owner_tagged : Int
+
+pub let etw_pmc_owner_tagged_with_source : Int
+
+pub let etw_pmc_owner_untagged : Int
+
+pub let etw_pointer_type_value : UInt
+
+pub let etw_process_trace_mode_none : Int
+
+pub let etw_process_trace_mode_raw_timestamp : Int
+
+pub let etw_provider_trait_decode_guid : Int
+
+pub let etw_provider_trait_type_group : Int
+
+pub let etw_provider_trait_type_max : Int
+
+pub let etw_ptvector_type_value : UInt
+
+pub let etw_query_last_dropped_times : Int
+
+pub let etw_query_log_file_header : Int
+
+pub let etw_query_partition_information : Int
+
+pub let etw_query_partition_information_v2 : Int
+
+pub let etw_query_process_handle_info_max : Int
+
+pub let etw_reduced_ansistring_type_value : UInt
+
+pub let etw_reduced_string_type_value : UInt
+
+pub let etw_refrence_type_value : UInt
+
+pub let etw_reversed_counted_ansistring_type_value : UInt
+
+pub let etw_reversed_counted_string_type_value : UInt
+
+pub let etw_sbyte_type_value : UInt
+
+pub let etw_sid_type_value : UInt
+
+pub let etw_single_type_value : UInt
+
+pub let etw_sizet_type_value : UInt
+
+pub let etw_string_type_value : UInt
+
+pub let etw_uint16_type_value : UInt
+
+pub let etw_uint32_type_value : UInt
+
+pub let etw_uint64_type_value : UInt
+
+pub let etw_variant_type_value : UInt
+
+pub let etw_wmitime_type_value : UInt
+
+pub fn event_access_control_raw(@core.RawAddress, UInt, @core.RawAddress, UInt, UInt) -> UInt
+
+pub fn event_access_query_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn event_access_remove_raw(@core.RawAddress) -> UInt
+
+pub let event_activity_ctrl_create_id : UInt
+
+pub let event_activity_ctrl_create_set_id : UInt
+
+pub let event_activity_ctrl_get_id : UInt
+
+pub let event_activity_ctrl_get_set_id : UInt
+
+pub let event_activity_ctrl_set_id : UInt
+
+pub fn event_activity_id_control_raw(UInt, @core.RawAddress) -> UInt
+
+pub let event_channel_information : Int
+
+pub let event_control_code_capture_state : UInt
+
+pub let event_control_code_disable_provider : UInt
+
+pub let event_control_code_enable_provider : UInt
+
+pub let event_data_descriptor_type_event_metadata : UInt
+
+pub let event_data_descriptor_type_none : UInt
+
+pub let event_data_descriptor_type_provider_metadata : UInt
+
+pub let event_data_descriptor_type_timestamp_override : UInt
+
+pub let event_enable_property_enable_keyword_0 : UInt
+
+pub let event_enable_property_enable_silos : UInt
+
+pub let event_enable_property_event_key : UInt
+
+pub let event_enable_property_exclude_inprivate : UInt
+
+pub let event_enable_property_ignore_keyword_0 : UInt
+
+pub let event_enable_property_process_start_key : UInt
+
+pub let event_enable_property_provider_group : UInt
+
+pub let event_enable_property_psm_key : UInt
+
+pub let event_enable_property_sid : UInt
+
+pub let event_enable_property_source_container_tracking : UInt
+
+pub let event_enable_property_stack_trace : UInt
+
+pub let event_enable_property_ts_id : UInt
+
+pub fn event_enabled_raw(Int64, @core.RawAddress) -> UInt
+
+pub let event_filter_type_container : UInt
+
+pub let event_filter_type_event_id : UInt
+
+pub let event_filter_type_event_name : UInt
+
+pub let event_filter_type_executable_name : UInt
+
+pub let event_filter_type_none : UInt
+
+pub let event_filter_type_package_app_id : UInt
+
+pub let event_filter_type_package_id : UInt
+
+pub let event_filter_type_payload : UInt
+
+pub let event_filter_type_pid : UInt
+
+pub let event_filter_type_schematized : UInt
+
+pub let event_filter_type_stackwalk : UInt
+
+pub let event_filter_type_stackwalk_level_kw : UInt
+
+pub let event_filter_type_stackwalk_name : UInt
+
+pub let event_filter_type_system_flags : UInt
+
+pub let event_filter_type_tracehandle : UInt
+
+pub let event_header_ext_type_container_id : UInt
+
+pub let event_header_ext_type_control_guid : UInt
+
+pub let event_header_ext_type_event_key : UInt
+
+pub let event_header_ext_type_event_schema_tl : UInt
+
+pub let event_header_ext_type_instance_info : UInt
+
+pub let event_header_ext_type_max : UInt
+
+pub let event_header_ext_type_pebs_index : UInt
+
+pub let event_header_ext_type_pmc_counters : UInt
+
+pub let event_header_ext_type_process_start_key : UInt
+
+pub let event_header_ext_type_prov_traits : UInt
+
+pub let event_header_ext_type_psm_key : UInt
+
+pub let event_header_ext_type_qpc_delta : UInt
+
+pub let event_header_ext_type_related_activityid : UInt
+
+pub let event_header_ext_type_sid : UInt
+
+pub let event_header_ext_type_stack_key32 : UInt
+
+pub let event_header_ext_type_stack_key64 : UInt
+
+pub let event_header_ext_type_stack_trace32 : UInt
+
+pub let event_header_ext_type_stack_trace64 : UInt
+
+pub let event_header_ext_type_ts_id : UInt
+
+pub let event_header_flag_32_bit_header : UInt
+
+pub let event_header_flag_64_bit_header : UInt
+
+pub let event_header_flag_classic_header : UInt
+
+pub let event_header_flag_decode_guid : UInt
+
+pub let event_header_flag_extended_info : UInt
+
+pub let event_header_flag_no_cputime : UInt
+
+pub let event_header_flag_private_session : UInt
+
+pub let event_header_flag_processor_index : UInt
+
+pub let event_header_flag_string_only : UInt
+
+pub let event_header_flag_trace_message : UInt
+
+pub let event_header_property_forwarded_xml : UInt
+
+pub let event_header_property_legacy_eventlog : UInt
+
+pub let event_header_property_reloggable : UInt
+
+pub let event_header_property_xml : UInt
+
+pub let event_information_max : Int
+
+pub let event_keyword_information : Int
+
+pub let event_level_information : Int
+
+pub let event_logger_name : String
+
+pub let event_logger_namea : String
+
+pub let event_logger_namew : String
+
+pub let event_max_level : UInt
+
+pub let event_min_level : UInt
+
+pub let event_opcode_information : Int
+
+pub let event_provider_binary_track_info : Int
+
+pub fn event_provider_enabled_raw(Int64, UInt, UInt64) -> UInt
+
+pub let event_provider_set_reserved1 : Int
+
+pub let event_provider_set_traits : Int
+
+pub let event_provider_use_descriptor_type : Int
+
+pub fn event_register_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub let event_security_add_dacl : Int
+
+pub let event_security_add_sacl : Int
+
+pub let event_security_max : Int
+
+pub let event_security_set_dacl : Int
+
+pub let event_security_set_sacl : Int
+
+pub fn event_set_information_raw(Int64, Int, @core.RawAddress, UInt) -> UInt
+
+pub let event_task_information : Int
+
+pub let event_trace_add_header_mode : UInt
+
+pub let event_trace_addto_triage_dump : UInt
+
+pub let event_trace_buffering_mode : UInt
+
+pub let event_trace_compressed_mode : UInt
+
+pub let event_trace_control_convert_to_realtime : UInt
+
+pub let event_trace_control_flush : UInt
+
+pub let event_trace_control_increment_file : UInt
+
+pub let event_trace_control_query : UInt
+
+pub let event_trace_control_stop : UInt
+
+pub let event_trace_control_update : UInt
+
+pub let event_trace_delay_open_file_mode : UInt
+
+pub let event_trace_file_mode_append : UInt
+
+pub let event_trace_file_mode_circular : UInt
+
+pub let event_trace_file_mode_newfile : UInt
+
+pub let event_trace_file_mode_none : UInt
+
+pub let event_trace_file_mode_preallocate : UInt
+
+pub let event_trace_file_mode_sequential : UInt
+
+pub let event_trace_flag_alpc : UInt
+
+pub let event_trace_flag_cswitch : UInt
+
+pub let event_trace_flag_dbgprint : UInt
+
+pub let event_trace_flag_debug_events : UInt
+
+pub let event_trace_flag_disk_file_io : UInt
+
+pub let event_trace_flag_disk_io : UInt
+
+pub let event_trace_flag_disk_io_init : UInt
+
+pub let event_trace_flag_dispatcher : UInt
+
+pub let event_trace_flag_dpc : UInt
+
+pub let event_trace_flag_driver : UInt
+
+pub let event_trace_flag_enable_reserve : UInt
+
+pub let event_trace_flag_extension : UInt
+
+pub let event_trace_flag_file_io : UInt
+
+pub let event_trace_flag_file_io_init : UInt
+
+pub let event_trace_flag_forward_wmi : UInt
+
+pub let event_trace_flag_image_load : UInt
+
+pub let event_trace_flag_interrupt : UInt
+
+pub let event_trace_flag_job : UInt
+
+pub let event_trace_flag_memory_hard_faults : UInt
+
+pub let event_trace_flag_memory_page_faults : UInt
+
+pub let event_trace_flag_network_tcpip : UInt
+
+pub let event_trace_flag_no_sysconfig : UInt
+
+pub let event_trace_flag_process : UInt
+
+pub let event_trace_flag_process_counters : UInt
+
+pub let event_trace_flag_profile : UInt
+
+pub let event_trace_flag_registry : UInt
+
+pub let event_trace_flag_split_io : UInt
+
+pub let event_trace_flag_systemcall : UInt
+
+pub let event_trace_flag_thread : UInt
+
+pub let event_trace_flag_vamap : UInt
+
+pub let event_trace_flag_virtual_alloc : UInt
+
+pub let event_trace_independent_session_mode : UInt
+
+pub let event_trace_mode_reserved : UInt
+
+pub let event_trace_no_per_processor_buffering : UInt
+
+pub let event_trace_nonstoppable_mode : UInt
+
+pub let event_trace_persist_on_hybrid_shutdown : UInt
+
+pub let event_trace_private_in_proc : UInt
+
+pub let event_trace_private_logger_mode : UInt
+
+pub let event_trace_real_time_mode : UInt
+
+pub let event_trace_relog_mode : UInt
+
+pub let event_trace_secure_mode : UInt
+
+pub let event_trace_stop_on_hybrid_shutdown : UInt
+
+pub let event_trace_system_logger_mode : UInt
+
+pub let event_trace_type_accept : UInt
+
+pub let event_trace_type_ackdup : UInt
+
+pub let event_trace_type_ackfull : UInt
+
+pub let event_trace_type_ackpart : UInt
+
+pub let event_trace_type_checkpoint : UInt
+
+pub let event_trace_type_config : UInt
+
+pub let event_trace_type_config_boot : UInt
+
+pub let event_trace_type_config_ci_info : UInt
+
+pub let event_trace_type_config_cpu : UInt
+
+pub let event_trace_type_config_defrag : UInt
+
+pub let event_trace_type_config_devicefamily : UInt
+
+pub let event_trace_type_config_dpi : UInt
+
+pub let event_trace_type_config_flightid : UInt
+
+pub let event_trace_type_config_idechannel : UInt
+
+pub let event_trace_type_config_irq : UInt
+
+pub let event_trace_type_config_logicaldisk : UInt
+
+pub let event_trace_type_config_machineid : UInt
+
+pub let event_trace_type_config_mobileplatform : UInt
+
+pub let event_trace_type_config_netinfo : UInt
+
+pub let event_trace_type_config_nic : UInt
+
+pub let event_trace_type_config_numanode : UInt
+
+pub let event_trace_type_config_opticalmedia : UInt
+
+pub let event_trace_type_config_physicaldisk : UInt
+
+pub let event_trace_type_config_physicaldisk_ex : UInt
+
+pub let event_trace_type_config_platform : UInt
+
+pub let event_trace_type_config_pnp : UInt
+
+pub let event_trace_type_config_power : UInt
+
+pub let event_trace_type_config_processor : UInt
+
+pub let event_trace_type_config_processorgroup : UInt
+
+pub let event_trace_type_config_processornumber : UInt
+
+pub let event_trace_type_config_services : UInt
+
+pub let event_trace_type_config_video : UInt
+
+pub let event_trace_type_config_virtualization : UInt
+
+pub let event_trace_type_connect : UInt
+
+pub let event_trace_type_connfail : UInt
+
+pub let event_trace_type_copy_arp : UInt
+
+pub let event_trace_type_copy_tcp : UInt
+
+pub let event_trace_type_dbgid_rsds : UInt
+
+pub let event_trace_type_dc_end : UInt
+
+pub let event_trace_type_dc_start : UInt
+
+pub let event_trace_type_dequeue : UInt
+
+pub let event_trace_type_disconnect : UInt
+
+pub let event_trace_type_end : UInt
+
+pub let event_trace_type_extension : UInt
+
+pub let event_trace_type_flt_postop_completion : UInt
+
+pub let event_trace_type_flt_postop_failure : UInt
+
+pub let event_trace_type_flt_postop_init : UInt
+
+pub let event_trace_type_flt_preop_completion : UInt
+
+pub let event_trace_type_flt_preop_failure : UInt
+
+pub let event_trace_type_flt_preop_init : UInt
+
+pub let event_trace_type_guidmap : UInt
+
+pub let event_trace_type_info : UInt
+
+pub let event_trace_type_io_flush : UInt
+
+pub let event_trace_type_io_flush_init : UInt
+
+pub let event_trace_type_io_read : UInt
+
+pub let event_trace_type_io_read_init : UInt
+
+pub let event_trace_type_io_redirected_init : UInt
+
+pub let event_trace_type_io_write : UInt
+
+pub let event_trace_type_io_write_init : UInt
+
+pub let event_trace_type_load : UInt
+
+pub let event_trace_type_mm_av : UInt
+
+pub let event_trace_type_mm_cow : UInt
+
+pub let event_trace_type_mm_dzf : UInt
+
+pub let event_trace_type_mm_gpf : UInt
+
+pub let event_trace_type_mm_hpf : UInt
+
+pub let event_trace_type_mm_tf : UInt
+
+pub let event_trace_type_optical_io_flush : UInt
+
+pub let event_trace_type_optical_io_flush_init : UInt
+
+pub let event_trace_type_optical_io_read : UInt
+
+pub let event_trace_type_optical_io_read_init : UInt
+
+pub let event_trace_type_optical_io_write : UInt
+
+pub let event_trace_type_optical_io_write_init : UInt
+
+pub let event_trace_type_receive : UInt
+
+pub let event_trace_type_reconnect : UInt
+
+pub let event_trace_type_regclose : UInt
+
+pub let event_trace_type_regcommit : UInt
+
+pub let event_trace_type_regcreate : UInt
+
+pub let event_trace_type_regdelete : UInt
+
+pub let event_trace_type_regdeletevalue : UInt
+
+pub let event_trace_type_regenumeratekey : UInt
+
+pub let event_trace_type_regenumeratevaluekey : UInt
+
+pub let event_trace_type_regflush : UInt
+
+pub let event_trace_type_regkcbcreate : UInt
+
+pub let event_trace_type_regkcbdelete : UInt
+
+pub let event_trace_type_regkcbrundownbegin : UInt
+
+pub let event_trace_type_regkcbrundownend : UInt
+
+pub let event_trace_type_regmounthive : UInt
+
+pub let event_trace_type_regopen : UInt
+
+pub let event_trace_type_regprepare : UInt
+
+pub let event_trace_type_regquery : UInt
+
+pub let event_trace_type_regquerymultiplevalue : UInt
+
+pub let event_trace_type_regquerysecurity : UInt
+
+pub let event_trace_type_regqueryvalue : UInt
+
+pub let event_trace_type_regrollback : UInt
+
+pub let event_trace_type_regsetinformation : UInt
+
+pub let event_trace_type_regsetsecurity : UInt
+
+pub let event_trace_type_regsetvalue : UInt
+
+pub let event_trace_type_regvirtualize : UInt
+
+pub let event_trace_type_reply : UInt
+
+pub let event_trace_type_resume : UInt
+
+pub let event_trace_type_retransmit : UInt
+
+pub let event_trace_type_security : UInt
+
+pub let event_trace_type_send : UInt
+
+pub let event_trace_type_sidinfo : UInt
+
+pub let event_trace_type_start : UInt
+
+pub let event_trace_type_stop : UInt
+
+pub let event_trace_type_suspend : UInt
+
+pub let event_trace_type_terminate : UInt
+
+pub let event_trace_type_winevt_receive : UInt
+
+pub let event_trace_type_winevt_send : UInt
+
+pub let event_trace_use_global_sequence : UInt
+
+pub let event_trace_use_kbytes_for_size : UInt
+
+pub let event_trace_use_local_sequence : UInt
+
+pub let event_trace_use_nocputime : UInt
+
+pub let event_trace_use_paged_memory : UInt
+
+pub let event_trace_use_proctime : UInt
+
+pub fn event_unregister_raw(Int64) -> UInt
+
+pub fn event_write_ex_raw(Int64, @core.RawAddress, UInt64, UInt, @core.RawAddress, @core.RawAddress, UInt, @core.RawAddress) -> UInt
+
+pub let event_write_flag_inprivate : UInt
+
+pub let event_write_flag_no_faulting : UInt
+
+pub fn event_write_raw(Int64, @core.RawAddress, UInt, @core.RawAddress) -> UInt
+
+pub fn event_write_string_raw(Int64, UInt, UInt64, @core.RawAddress) -> UInt
+
+pub fn event_write_transfer_raw(Int64, @core.RawAddress, @core.RawAddress, @core.RawAddress, UInt, @core.RawAddress) -> UInt
+
+pub let eventmap_entry_valuetype_string : Int
+
+pub let eventmap_entry_valuetype_ulong : Int
+
+pub let eventmap_info_flag_manifest_bitmap : Int
+
+pub let eventmap_info_flag_manifest_patternmap : Int
+
+pub let eventmap_info_flag_manifest_valuemap : Int
+
+pub let eventmap_info_flag_wbem_bitmap : Int
+
+pub let eventmap_info_flag_wbem_flag : Int
+
+pub let eventmap_info_flag_wbem_no_map : Int
+
+pub let eventmap_info_flag_wbem_valuemap : Int
+
+pub fn flush_trace_a_raw(UInt64, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn flush_trace_w_raw(UInt64, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn get_event_record(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn get_event_record_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn get_trace_enable_flags_raw(UInt64) -> @core.RawWin32Call[UInt]
+
+pub fn get_trace_enable_level_raw(UInt64) -> @core.RawWin32Call[UInt]
+
+pub fn get_trace_logger_handle_raw(@core.RawAddress) -> @core.RawWin32Call[UInt64]
+
+pub fn get_user_context(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn get_user_context_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub let global_logger_name : String
+
+pub let global_logger_namea : String
+
+pub let global_logger_namew : String
+
+pub fn inject(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn inject_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub let kernel_logger_name : String
+
+pub let kernel_logger_namea : String
+
+pub let kernel_logger_namew : String
+
+pub let max_event_data_descriptors : UInt
+
+pub let max_event_filter_data_size : UInt
+
+pub let max_event_filter_event_id_count : UInt
+
+pub let max_event_filter_event_name_size : UInt
+
+pub let max_event_filter_payload_size : UInt
+
+pub let max_event_filter_pid_count : UInt
+
+pub let max_event_filters_count : UInt
+
+pub let max_event_info : Int
+
+pub let max_mof_fields : UInt
+
+pub let max_payload_predicates : UInt
+
+pub let max_trace_set_info_class : Int
+
+pub fn on_begin_process_trace(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn on_begin_process_trace_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn on_event(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn on_event_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn on_finalize_process_trace(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn on_finalize_process_trace_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn open_trace_a_raw(@core.RawAddress) -> @core.RawWin32Call[UInt64]
+
+pub fn open_trace_from_buffer_stream_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt64
+
+pub fn open_trace_from_file_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt64
+
+pub fn open_trace_from_real_time_logger_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt64
+
+pub fn open_trace_from_real_time_logger_with_allocation_options_raw(@core.RawAddress, @core.RawAddress, UInt64, @core.RawAddress, @core.RawAddress) -> UInt64
+
+pub fn open_trace_w_raw(@core.RawAddress) -> @core.RawWin32Call[UInt64]
+
+pub let payloadfield_between : Int
+
+pub let payloadfield_contains : Int
+
+pub let payloadfield_doesntcontain : Int
+
+pub let payloadfield_eq : Int
+
+pub let payloadfield_ge : Int
+
+pub let payloadfield_gt : Int
+
+pub let payloadfield_invalid : Int
+
+pub let payloadfield_is : Int
+
+pub let payloadfield_isnot : Int
+
+pub let payloadfield_le : Int
+
+pub let payloadfield_lt : Int
+
+pub let payloadfield_modulo : Int
+
+pub let payloadfield_ne : Int
+
+pub let payloadfield_notbetween : Int
+
+pub fn process_trace_44bd5faa5c_raw(@core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn process_trace_add_buffer_to_buffer_stream_raw(UInt64, @core.RawAddress, UInt) -> UInt
+
+pub fn process_trace_buffer_decrement_reference_raw(@core.RawAddress) -> UInt
+
+pub fn process_trace_buffer_increment_reference_raw(UInt64, @core.RawAddress) -> UInt
+
+pub fn process_trace_db16249e9d(@core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn process_trace_db16249e9d_raw(@core.RawAddress) -> Int
+
+pub let process_trace_mode_event_record : UInt
+
+pub let process_trace_mode_raw_timestamp : UInt
+
+pub let process_trace_mode_real_time : UInt
+
+pub let property_has_custom_schema : Int
+
+pub let property_has_tags : Int
+
+pub let property_param_count : Int
+
+pub let property_param_fixed_count : Int
+
+pub let property_param_fixed_length : Int
+
+pub let property_param_length : Int
+
+pub let property_struct : Int
+
+pub let property_wbem_xml_fragment : Int
+
+pub fn query_all_traces_a_raw(@core.RawAddress, UInt, @core.RawAddress) -> UInt
+
+pub fn query_all_traces_w_raw(@core.RawAddress, UInt, @core.RawAddress) -> UInt
+
+pub fn query_trace_a_raw(UInt64, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn query_trace_processing_handle_raw(UInt64, Int, @core.RawAddress, UInt, @core.RawAddress, UInt, @core.RawAddress) -> UInt
+
+pub fn query_trace_w_raw(UInt64, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn register_callback(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn register_callback_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn register_trace_guids_a_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn register_trace_guids_w_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn remove_trace_callback_raw(@core.RawAddress) -> UInt
+
+pub fn set_activity_id(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn set_activity_id_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn set_compression_mode(@core.RawAddress, UInt) -> Unit raise @core.WindowsError
+
+pub fn set_compression_mode_raw(@core.RawAddress, UInt) -> Int
+
+pub fn set_event_descriptor(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn set_event_descriptor_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn set_output_filename(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn set_output_filename_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn set_payload(@core.RawAddress, @core.RawAddress, UInt) -> Unit raise @core.WindowsError
+
+pub fn set_payload_raw(@core.RawAddress, @core.RawAddress, UInt) -> Int
+
+pub fn set_process_id(@core.RawAddress, UInt) -> Unit raise @core.WindowsError
+
+pub fn set_process_id_raw(@core.RawAddress, UInt) -> Int
+
+pub fn set_processor_index(@core.RawAddress, UInt) -> Unit raise @core.WindowsError
+
+pub fn set_processor_index_raw(@core.RawAddress, UInt) -> Int
+
+pub fn set_provider_id(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn set_provider_id_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn set_thread_id(@core.RawAddress, UInt) -> Unit raise @core.WindowsError
+
+pub fn set_thread_id_raw(@core.RawAddress, UInt) -> Int
+
+pub fn set_thread_times(@core.RawAddress, UInt, UInt) -> Unit raise @core.WindowsError
+
+pub fn set_thread_times_raw(@core.RawAddress, UInt, UInt) -> Int
+
+pub fn set_time_stamp(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn set_time_stamp_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn set_trace_callback_raw(@core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn start_trace_a_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn start_trace_w_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn stop_trace_a_raw(UInt64, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn stop_trace_w_raw(UInt64, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub let system_alpc_kw_general : UInt64
+
+pub let system_config_kw_graphics : UInt64
+
+pub let system_config_kw_network : UInt64
+
+pub let system_config_kw_optical : UInt64
+
+pub let system_config_kw_pnp : UInt64
+
+pub let system_config_kw_services : UInt64
+
+pub let system_config_kw_storage : UInt64
+
+pub let system_config_kw_system : UInt64
+
+pub let system_cpu_kw_cache_flush : UInt64
+
+pub let system_cpu_kw_config : UInt64
+
+pub let system_cpu_kw_domain_change : UInt64
+
+pub let system_cpu_kw_spec_control : UInt64
+
+pub let system_event_type : UInt
+
+pub let system_hypervisor_kw_callouts : UInt64
+
+pub let system_hypervisor_kw_profile : UInt64
+
+pub let system_hypervisor_kw_vtl_change : UInt64
+
+pub let system_interrupt_kw_clock_interrupt : UInt64
+
+pub let system_interrupt_kw_dpc : UInt64
+
+pub let system_interrupt_kw_dpc_queue : UInt64
+
+pub let system_interrupt_kw_general : UInt64
+
+pub let system_interrupt_kw_ipi : UInt64
+
+pub let system_interrupt_kw_wdf_dpc : UInt64
+
+pub let system_interrupt_kw_wdf_interrupt : UInt64
+
+pub let system_io_kw_cc : UInt64
+
+pub let system_io_kw_disk : UInt64
+
+pub let system_io_kw_disk_init : UInt64
+
+pub let system_io_kw_drivers : UInt64
+
+pub let system_io_kw_file : UInt64
+
+pub let system_io_kw_file_init : UInt64
+
+pub let system_io_kw_filename : UInt64
+
+pub let system_io_kw_network : UInt64
+
+pub let system_io_kw_optical : UInt64
+
+pub let system_io_kw_optical_init : UInt64
+
+pub let system_io_kw_split : UInt64
+
+pub let system_io_kw_timer : UInt64
+
+pub let system_iofilter_kw_failure : UInt64
+
+pub let system_iofilter_kw_fastio : UInt64
+
+pub let system_iofilter_kw_general : UInt64
+
+pub let system_iofilter_kw_init : UInt64
+
+pub let system_lock_kw_spinlock : UInt64
+
+pub let system_lock_kw_spinlock_counters : UInt64
+
+pub let system_lock_kw_sync_objects : UInt64
+
+pub let system_memory_kw_all_faults : UInt64
+
+pub let system_memory_kw_contmem_gen : UInt64
+
+pub let system_memory_kw_footprint : UInt64
+
+pub let system_memory_kw_general : UInt64
+
+pub let system_memory_kw_hard_faults : UInt64
+
+pub let system_memory_kw_heap : UInt64
+
+pub let system_memory_kw_meminfo : UInt64
+
+pub let system_memory_kw_meminfo_ws : UInt64
+
+pub let system_memory_kw_nontradeable : UInt64
+
+pub let system_memory_kw_pfsection : UInt64
+
+pub let system_memory_kw_pool : UInt64
+
+pub let system_memory_kw_refset : UInt64
+
+pub let system_memory_kw_session : UInt64
+
+pub let system_memory_kw_vamap : UInt64
+
+pub let system_memory_kw_virtual_alloc : UInt64
+
+pub let system_memory_kw_ws : UInt64
+
+pub let system_memory_pool_filter_id : UInt
+
+pub let system_object_kw_general : UInt64
+
+pub let system_object_kw_handle : UInt64
+
+pub let system_power_kw_general : UInt64
+
+pub let system_power_kw_hiber_rundown : UInt64
+
+pub let system_power_kw_idle_selection : UInt64
+
+pub let system_power_kw_ppm_exit_latency : UInt64
+
+pub let system_power_kw_processor_idle : UInt64
+
+pub let system_process_kw_dbgprint : UInt64
+
+pub let system_process_kw_debug_events : UInt64
+
+pub let system_process_kw_freeze : UInt64
+
+pub let system_process_kw_general : UInt64
+
+pub let system_process_kw_inswap : UInt64
+
+pub let system_process_kw_job : UInt64
+
+pub let system_process_kw_loader : UInt64
+
+pub let system_process_kw_perf_counter : UInt64
+
+pub let system_process_kw_thread : UInt64
+
+pub let system_process_kw_wake_counter : UInt64
+
+pub let system_process_kw_wake_drop : UInt64
+
+pub let system_process_kw_wake_event : UInt64
+
+pub let system_process_kw_worker_thread : UInt64
+
+pub let system_profile_kw_general : UInt64
+
+pub let system_profile_kw_pmc_profile : UInt64
+
+pub let system_registry_kw_general : UInt64
+
+pub let system_registry_kw_hive : UInt64
+
+pub let system_registry_kw_notification : UInt64
+
+pub let system_scheduler_kw_affinity : UInt64
+
+pub let system_scheduler_kw_anti_starvation : UInt64
+
+pub let system_scheduler_kw_autoboost : UInt64
+
+pub let system_scheduler_kw_compact_cswitch : UInt64
+
+pub let system_scheduler_kw_context_switch : UInt64
+
+pub let system_scheduler_kw_cpu_partition : UInt64
+
+pub let system_scheduler_kw_dispatcher : UInt64
+
+pub let system_scheduler_kw_ideal_processor : UInt64
+
+pub let system_scheduler_kw_kernel_queue : UInt64
+
+pub let system_scheduler_kw_load_balancer : UInt64
+
+pub let system_scheduler_kw_priority : UInt64
+
+pub let system_scheduler_kw_ready_queue : UInt64
+
+pub let system_scheduler_kw_schedule_thread : UInt64
+
+pub let system_scheduler_kw_should_yield : UInt64
+
+pub let system_scheduler_kw_thread_feedback_read : UInt64
+
+pub let system_scheduler_kw_workload_class_update : UInt64
+
+pub let system_scheduler_kw_xscheduler : UInt64
+
+pub let system_syscall_kw_general : UInt64
+
+pub let system_timer_kw_clock_timer : UInt64
+
+pub let system_timer_kw_general : UInt64
+
+pub fn tdh_aggregate_payload_filters_raw(UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn tdh_cleanup_payload_event_filter_descriptor_raw(@core.RawAddress) -> UInt
+
+pub fn tdh_close_decoding_handle_raw(Int64) -> UInt
+
+pub let tdh_context_maximum : Int
+
+pub let tdh_context_pdb_path : Int
+
+pub let tdh_context_pointersize : Int
+
+pub let tdh_context_wpp_gmt : Int
+
+pub let tdh_context_wpp_tmffile : Int
+
+pub let tdh_context_wpp_tmfsearchpath : Int
+
+pub fn tdh_create_payload_filter_raw(@core.RawAddress, @core.RawAddress, UInt, UInt, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn tdh_delete_payload_filter_raw(@core.RawAddress) -> UInt
+
+pub fn tdh_enumerate_manifest_provider_events_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn tdh_enumerate_provider_field_information_raw(@core.RawAddress, Int, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn tdh_enumerate_provider_filters_raw(@core.RawAddress, UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn tdh_enumerate_providers_for_decoding_source_raw(Int, @core.RawAddress, UInt, @core.RawAddress) -> UInt
+
+pub fn tdh_enumerate_providers_raw(@core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn tdh_format_property_raw(@core.RawAddress, @core.RawAddress, UInt, UInt, UInt, UInt, UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn tdh_get_decoding_parameter_raw(Int64, @core.RawAddress) -> UInt
+
+pub fn tdh_get_event_information_raw(@core.RawAddress, UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn tdh_get_event_map_information_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn tdh_get_manifest_event_information_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn tdh_get_property_raw(@core.RawAddress, UInt, @core.RawAddress, UInt, @core.RawAddress, UInt, @core.RawAddress) -> UInt
+
+pub fn tdh_get_property_size_raw(@core.RawAddress, UInt, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn tdh_get_wpp_message_raw(Int64, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn tdh_get_wpp_property_raw(Int64, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub let tdh_intype_ansichar : Int
+
+pub let tdh_intype_ansistring : Int
+
+pub let tdh_intype_binary : Int
+
+pub let tdh_intype_boolean : Int
+
+pub let tdh_intype_countedansistring : Int
+
+pub let tdh_intype_countedstring : Int
+
+pub let tdh_intype_double : Int
+
+pub let tdh_intype_filetime : Int
+
+pub let tdh_intype_float : Int
+
+pub let tdh_intype_guid : Int
+
+pub let tdh_intype_hexdump : Int
+
+pub let tdh_intype_hexint32 : Int
+
+pub let tdh_intype_hexint64 : Int
+
+pub let tdh_intype_int16 : Int
+
+pub let tdh_intype_int32 : Int
+
+pub let tdh_intype_int64 : Int
+
+pub let tdh_intype_int8 : Int
+
+pub let tdh_intype_manifest_countedansistring : Int
+
+pub let tdh_intype_manifest_countedbinary : Int
+
+pub let tdh_intype_manifest_countedstring : Int
+
+pub let tdh_intype_nonnullterminatedansistring : Int
+
+pub let tdh_intype_nonnullterminatedstring : Int
+
+pub let tdh_intype_null : Int
+
+pub let tdh_intype_pointer : Int
+
+pub let tdh_intype_reserved24 : Int
+
+pub let tdh_intype_reversedcountedansistring : Int
+
+pub let tdh_intype_reversedcountedstring : Int
+
+pub let tdh_intype_sid : Int
+
+pub let tdh_intype_sizet : Int
+
+pub let tdh_intype_systemtime : Int
+
+pub let tdh_intype_uint16 : Int
+
+pub let tdh_intype_uint32 : Int
+
+pub let tdh_intype_uint64 : Int
+
+pub let tdh_intype_uint8 : Int
+
+pub let tdh_intype_unicodechar : Int
+
+pub let tdh_intype_unicodestring : Int
+
+pub let tdh_intype_wbemsid : Int
+
+pub fn tdh_load_manifest_from_binary_raw(@core.RawAddress) -> UInt
+
+pub fn tdh_load_manifest_from_memory_raw(@core.RawAddress, UInt) -> UInt
+
+pub fn tdh_load_manifest_raw(@core.RawAddress) -> UInt
+
+pub fn tdh_open_decoding_handle_raw(@core.RawAddress) -> UInt
+
+pub let tdh_outtype_boolean : Int
+
+pub let tdh_outtype_byte : Int
+
+pub let tdh_outtype_cimdatetime : Int
+
+pub let tdh_outtype_code_pointer : Int
+
+pub let tdh_outtype_culture_insensitive_datetime : Int
+
+pub let tdh_outtype_datetime : Int
+
+pub let tdh_outtype_datetime_utc : Int
+
+pub let tdh_outtype_double : Int
+
+pub let tdh_outtype_errorcode : Int
+
+pub let tdh_outtype_etwtime : Int
+
+pub let tdh_outtype_float : Int
+
+pub let tdh_outtype_guid : Int
+
+pub let tdh_outtype_hexbinary : Int
+
+pub let tdh_outtype_hexint16 : Int
+
+pub let tdh_outtype_hexint32 : Int
+
+pub let tdh_outtype_hexint64 : Int
+
+pub let tdh_outtype_hexint8 : Int
+
+pub let tdh_outtype_hresult : Int
+
+pub let tdh_outtype_int : Int
+
+pub let tdh_outtype_ipv4 : Int
+
+pub let tdh_outtype_ipv6 : Int
+
+pub let tdh_outtype_json : Int
+
+pub let tdh_outtype_long : Int
+
+pub let tdh_outtype_noprint : Int
+
+pub let tdh_outtype_ntstatus : Int
+
+pub let tdh_outtype_null : Int
+
+pub let tdh_outtype_pid : Int
+
+pub let tdh_outtype_pkcs7_with_type_info : Int
+
+pub let tdh_outtype_port : Int
+
+pub let tdh_outtype_reducedstring : Int
+
+pub let tdh_outtype_short : Int
+
+pub let tdh_outtype_socketaddress : Int
+
+pub let tdh_outtype_string : Int
+
+pub let tdh_outtype_tid : Int
+
+pub let tdh_outtype_unsignedbyte : Int
+
+pub let tdh_outtype_unsignedint : Int
+
+pub let tdh_outtype_unsignedlong : Int
+
+pub let tdh_outtype_unsignedshort : Int
+
+pub let tdh_outtype_utf8 : Int
+
+pub let tdh_outtype_win32_error : Int
+
+pub let tdh_outtype_xml : Int
+
+pub fn tdh_query_provider_field_information_raw(@core.RawAddress, UInt64, Int, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn tdh_set_decoding_parameter_raw(Int64, @core.RawAddress) -> UInt
+
+pub fn tdh_unload_manifest_from_memory_raw(@core.RawAddress, UInt) -> UInt
+
+pub fn tdh_unload_manifest_raw(@core.RawAddress) -> UInt
+
+pub let template_control_guid : Int
+
+pub let template_event_data : Int
+
+pub let template_user_data : Int
+
+pub fn trace_configure_last_branch_record_raw(UInt64, Int, @core.RawAddress, UInt) -> UInt
+
+pub let trace_context_register_info : Int
+
+pub let trace_disallow_list_query : Int
+
+pub fn trace_event_instance_raw(UInt64, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn trace_event_raw(UInt64, @core.RawAddress) -> UInt
+
+pub let trace_group_query_info : Int
+
+pub let trace_group_query_list : Int
+
+pub let trace_guid_query_info : Int
+
+pub let trace_guid_query_list : Int
+
+pub let trace_guid_query_process : Int
+
+pub let trace_header_flag_log_wnode : UInt
+
+pub let trace_header_flag_traced_guid : UInt
+
+pub let trace_header_flag_use_guid_ptr : UInt
+
+pub let trace_header_flag_use_mof_ptr : UInt
+
+pub let trace_header_flag_use_timestamp : UInt
+
+pub let trace_info_reserved15 : Int
+
+pub let trace_lbr_configuration_callstack_enable : Int
+
+pub let trace_lbr_configuration_exclude_far_branch : Int
+
+pub let trace_lbr_configuration_exclude_jcc : Int
+
+pub let trace_lbr_configuration_exclude_kernel : Int
+
+pub let trace_lbr_configuration_exclude_near_ind_call : Int
+
+pub let trace_lbr_configuration_exclude_near_ind_jmp : Int
+
+pub let trace_lbr_configuration_exclude_near_rel_call : Int
+
+pub let trace_lbr_configuration_exclude_near_rel_jmp : Int
+
+pub let trace_lbr_configuration_exclude_near_ret : Int
+
+pub let trace_lbr_configuration_exclude_user : Int
+
+pub let trace_lbr_configuration_info : Int
+
+pub let trace_lbr_configuration_none : Int
+
+pub let trace_lbr_configuration_sampled : Int
+
+pub let trace_lbr_event_list_info : Int
+
+pub let trace_lbr_event_opcode : UInt
+
+pub let trace_lbr_maximum_events : UInt
+
+pub let trace_level_critical : UInt
+
+pub let trace_level_error : UInt
+
+pub let trace_level_fatal : UInt
+
+pub let trace_level_information : UInt
+
+pub let trace_level_none : UInt
+
+pub let trace_level_reserved6 : UInt
+
+pub let trace_level_reserved7 : UInt
+
+pub let trace_level_reserved8 : UInt
+
+pub let trace_level_reserved9 : UInt
+
+pub let trace_level_verbose : UInt
+
+pub let trace_level_warning : UInt
+
+pub let trace_max_loggers_query : Int
+
+pub let trace_max_pmc_counter_query : Int
+
+pub let trace_message_componentid : UInt
+
+pub let trace_message_flag_mask : UInt
+
+pub let trace_message_guid : UInt
+
+pub let trace_message_performance_timestamp : UInt
+
+pub let trace_message_pointer32 : UInt
+
+pub let trace_message_pointer64 : UInt
+
+pub let trace_message_sequence : UInt
+
+pub let trace_message_systeminfo : UInt
+
+pub let trace_message_timestamp : UInt
+
+pub fn trace_message_va_raw(UInt64, UInt, @core.RawAddress, UInt, @core.RawAddress) -> UInt
+
+pub let trace_periodic_capture_state_info : Int
+
+pub let trace_periodic_capture_state_list_info : Int
+
+pub let trace_pmc_counter_list_info : Int
+
+pub let trace_pmc_counter_owners : Int
+
+pub let trace_pmc_event_list_info : Int
+
+pub let trace_pmc_session_information : Int
+
+pub let trace_profile_source_config_info : Int
+
+pub let trace_profile_source_list_info : Int
+
+pub let trace_provider_binary_tracking : Int
+
+pub let trace_provider_flag_legacy : UInt
+
+pub let trace_provider_flag_pre_enable : UInt
+
+pub fn trace_query_information_raw(UInt64, Int, @core.RawAddress, UInt, @core.RawAddress) -> UInt
+
+pub let trace_sampled_profile_interval_info : Int
+
+pub let trace_set_disallow_list : Int
+
+pub fn trace_set_information_raw(UInt64, Int, @core.RawAddress, UInt) -> UInt
+
+pub let trace_stack_caching_info : Int
+
+pub let trace_stack_tracing_info : Int
+
+pub let trace_stream_count : Int
+
+pub let trace_system_trace_enable_flags_info : Int
+
+pub let trace_unified_stack_caching_info : Int
+
+pub let trace_version_info : Int
+
+pub let tracelog_access_kernel_logger : UInt
+
+pub let tracelog_access_realtime : UInt
+
+pub let tracelog_create_inproc : UInt
+
+pub let tracelog_create_ondisk : UInt
+
+pub let tracelog_create_realtime : UInt
+
+pub let tracelog_guid_enable : UInt
+
+pub let tracelog_join_group : UInt
+
+pub let tracelog_log_event : UInt
+
+pub let tracelog_register_guids : UInt
+
+pub let typedef_tracelogger_handle : UInt
+
+pub fn unregister_trace_guids_raw(UInt64) -> UInt
+
+pub fn update_trace_a_raw(UInt64, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn update_trace_w_raw(UInt64, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub let wmi_capture_state : Int
+
+pub let wmi_disable_collection : Int
+
+pub let wmi_disable_events : Int
+
+pub let wmi_enable_collection : Int
+
+pub let wmi_enable_events : Int
+
+pub let wmi_execute_method : Int
+
+pub let wmi_get_all_data : Int
+
+pub let wmi_get_single_instance : Int
+
+pub let wmi_global_logger_id : UInt
+
+pub let wmi_guidtype_data : UInt
+
+pub let wmi_guidtype_event : UInt
+
+pub let wmi_guidtype_trace : UInt
+
+pub let wmi_guidtype_tracecontrol : UInt
+
+pub let wmi_reginfo : Int
+
+pub let wmi_set_single_instance : Int
+
+pub let wmi_set_single_item : Int
+
+pub let wmiguid_execute : UInt
+
+pub let wmiguid_notification : UInt
+
+pub let wmiguid_query : UInt
+
+pub let wmiguid_read_description : UInt
+
+pub let wmiguid_set : UInt
+
+pub let wmireg_flag_event_only_guid : UInt
+
+pub let wmireg_flag_expensive : UInt
+
+pub let wmireg_flag_instance_basename : UInt
+
+pub let wmireg_flag_instance_list : UInt
+
+pub let wmireg_flag_instance_pdo : UInt
+
+pub let wmireg_flag_remove_guid : UInt
+
+pub let wmireg_flag_reserved1 : UInt
+
+pub let wmireg_flag_reserved2 : UInt
+
+pub let wmireg_flag_trace_control_guid : UInt
+
+pub let wmireg_flag_traced_guid : UInt
+
+pub let wnode_flag_all_data : UInt
+
+pub let wnode_flag_ansi_instancenames : UInt
+
+pub let wnode_flag_event_item : UInt
+
+pub let wnode_flag_event_reference : UInt
+
+pub let wnode_flag_fixed_instance_size : UInt
+
+pub let wnode_flag_instances_same : UInt
+
+pub let wnode_flag_internal : UInt
+
+pub let wnode_flag_log_wnode : UInt
+
+pub let wnode_flag_method_item : UInt
+
+pub let wnode_flag_no_header : UInt
+
+pub let wnode_flag_pdo_instance_names : UInt
+
+pub let wnode_flag_persist_event : UInt
+
+pub let wnode_flag_send_data_block : UInt
+
+pub let wnode_flag_severity_mask : UInt
+
+pub let wnode_flag_single_instance : UInt
+
+pub let wnode_flag_single_item : UInt
+
+pub let wnode_flag_static_instance_names : UInt
+
+pub let wnode_flag_too_small : UInt
+
+pub let wnode_flag_traced_guid : UInt
+
+pub let wnode_flag_use_guid_ptr : UInt
+
+pub let wnode_flag_use_mof_ptr : UInt
+
+pub let wnode_flag_use_timestamp : UInt
+
+pub let wnode_flag_versioned_properties : UInt
+
+// Errors
+
+// Types and methods
+
+// Type aliases
+pub using @5b0aec5c5ec59042 {type Anonymous1EStruct_bcaf8e75907b as Anonymous1EStruct_bcaf8e7590}
+
+pub using @5b0aec5c5ec59042 {type Anonymous1EStruct_c63a87c8217c as Anonymous1EStruct_c63a87c821}
+
+pub using @5b0aec5c5ec59042 {type Anonymous1EUnion_02a93e2408aa as Anonymous1EUnion_02a93e2408}
+
+pub using @5b0aec5c5ec59042 {type Anonymous1EUnion_02adf390f5fd as Anonymous1EUnion_02adf390f5}
+
+pub using @5b0aec5c5ec59042 {type Anonymous1EUnion_0a718b0ceaaa as Anonymous1EUnion_0a718b0cea}
+
+pub using @5b0aec5c5ec59042 {type Anonymous1EUnion_1d9fbaa8aecb as Anonymous1EUnion_1d9fbaa8ae}
+
+pub using @5b0aec5c5ec59042 {type Anonymous1EUnion_2a2636199c6d as Anonymous1EUnion_2a2636199c}
+
+pub using @5b0aec5c5ec59042 {type Anonymous1EUnion_5e7015edd3cb as Anonymous1EUnion_5e7015edd3}
+
+pub using @5b0aec5c5ec59042 {type Anonymous1EUnion_803c65f4f87e as Anonymous1EUnion_803c65f4f8}
+
+pub using @5b0aec5c5ec59042 {type Anonymous1EUnion_84b1e42bcf94 as Anonymous1EUnion_84b1e42bcf}
+
+pub using @5b0aec5c5ec59042 {type Anonymous1EUnion_96db24a290ad as Anonymous1EUnion_96db24a290}
+
+pub using @5b0aec5c5ec59042 {type Anonymous1EUnion_9f943e9e9a00 as Anonymous1EUnion_9f943e9e9a}
+
+pub using @5b0aec5c5ec59042 {type Anonymous1EUnion_f293d4e263ed as Anonymous1EUnion_f293d4e263}
+
+pub using @5b0aec5c5ec59042 {type Anonymous2EStruct_612387d86c8f as Anonymous2EStruct_612387d86c}
+
+pub using @5b0aec5c5ec59042 {type Anonymous2EStruct_aeb2c0fa7873 as Anonymous2EStruct_aeb2c0fa78}
+
+pub using @5b0aec5c5ec59042 {type Anonymous2EUnion_19abf7a2278a as Anonymous2EUnion_19abf7a227}
+
+pub using @5b0aec5c5ec59042 {type Anonymous2EUnion_29715c595fb4 as Anonymous2EUnion_29715c595f}
+
+pub using @5b0aec5c5ec59042 {type Anonymous2EUnion_30d042edb2ff as Anonymous2EUnion_30d042edb2}
+
+pub using @5b0aec5c5ec59042 {type Anonymous2EUnion_33aeb2993b72 as Anonymous2EUnion_33aeb2993b}
+
+pub using @5b0aec5c5ec59042 {type Anonymous2EUnion_3a0fac46921b as Anonymous2EUnion_3a0fac4692}
+
+pub using @5b0aec5c5ec59042 {type Anonymous2EUnion_8b691c30f528 as Anonymous2EUnion_8b691c30f5}
+
+pub using @5b0aec5c5ec59042 {type Anonymous2EUnion_8ee127592442 as Anonymous2EUnion_8ee1275924}
+
+pub using @5b0aec5c5ec59042 {type Anonymous2EUnion_b38e6ccd330f as Anonymous2EUnion_b38e6ccd33}
+
+pub using @5b0aec5c5ec59042 {type Anonymous2EUnion_d2958313ce5f as Anonymous2EUnion_d2958313ce}
+
+pub using @5b0aec5c5ec59042 {type Anonymous2EUnion_dab1435b82e0 as Anonymous2EUnion_dab1435b82}
+
+pub using @5b0aec5c5ec59042 {type Anonymous2EUnion_e67d8581faea as Anonymous2EUnion_e67d8581fa}
+
+pub using @5b0aec5c5ec59042 {type Anonymous3EUnion_235e0a3037a8 as Anonymous3EUnion_235e0a3037}
+
+pub using @5b0aec5c5ec59042 {type Anonymous3EUnion_36e58d024a84 as Anonymous3EUnion_36e58d024a}
+
+pub using @5b0aec5c5ec59042 {type Anonymous3EUnion_4c64c6b58da3 as Anonymous3EUnion_4c64c6b58d}
+
+pub using @5b0aec5c5ec59042 {type Anonymous3EUnion_85fa22a81b50 as Anonymous3EUnion_85fa22a81b}
+
+pub using @5b0aec5c5ec59042 {type Anonymous3EUnion_87e6832ae180 as Anonymous3EUnion_87e6832ae1}
+
+pub using @5b0aec5c5ec59042 {type Anonymous4EUnion_6a9b5e554019 as Anonymous4EUnion_6a9b5e5540}
+
+pub using @5b0aec5c5ec59042 {type Anonymous4EUnion_98957d46c06b as Anonymous4EUnion_98957d46c0}
+
+pub using @5b0aec5c5ec59042 {type AnonymousEStruct_025084934f85 as AnonymousEStruct_025084934f}
+
+pub using @5b0aec5c5ec59042 {type AnonymousEStruct_2e18d6dbd4e9 as AnonymousEStruct_2e18d6dbd4}
+
+pub using @5b0aec5c5ec59042 {type AnonymousEStruct_37598b7558d1 as AnonymousEStruct_37598b7558}
+
+pub using @5b0aec5c5ec59042 {type AnonymousEStruct_3994f403732c as AnonymousEStruct_3994f40373}
+
+pub using @5b0aec5c5ec59042 {type AnonymousEStruct_47ad5ead9189 as AnonymousEStruct_47ad5ead91}
+
+pub using @5b0aec5c5ec59042 {type AnonymousEStruct_5be847385d8f as AnonymousEStruct_5be847385d}
+
+pub using @5b0aec5c5ec59042 {type AnonymousEStruct_66950dd28f9e as AnonymousEStruct_66950dd28f}
+
+pub using @5b0aec5c5ec59042 {type AnonymousEStruct_7ff45f7afce6 as AnonymousEStruct_7ff45f7afc}
+
+pub using @5b0aec5c5ec59042 {type AnonymousEStruct_8ac48306f8bf as AnonymousEStruct_8ac48306f8}
+
+pub using @5b0aec5c5ec59042 {type AnonymousEStruct_99d3e8c1f007 as AnonymousEStruct_99d3e8c1f0}
+
+pub using @5b0aec5c5ec59042 {type AnonymousEStruct_b7cca29609d5 as AnonymousEStruct_b7cca29609}
+
+pub using @5b0aec5c5ec59042 {type AnonymousEStruct_beef6b40b0d9 as AnonymousEStruct_beef6b40b0}
+
+pub using @5b0aec5c5ec59042 {type AnonymousEStruct_c3e0ead369cc as AnonymousEStruct_c3e0ead369}
+
+pub using @5b0aec5c5ec59042 {type AnonymousEStruct_f56e8a0c995e as AnonymousEStruct_f56e8a0c99}
+
+pub using @5b0aec5c5ec59042 {type AnonymousEUnion_04be5e3b24d0 as AnonymousEUnion_04be5e3b24}
+
+pub using @5b0aec5c5ec59042 {type AnonymousEUnion_194e53fcab90 as AnonymousEUnion_194e53fcab}
+
+pub using @5b0aec5c5ec59042 {type AnonymousEUnion_24eb9f794da0 as AnonymousEUnion_24eb9f794d}
+
+pub using @5b0aec5c5ec59042 {type AnonymousEUnion_4ae4f379b675 as AnonymousEUnion_4ae4f379b6}
+
+pub using @5b0aec5c5ec59042 {type AnonymousEUnion_60091395cacb as AnonymousEUnion_60091395ca}
+
+pub using @5b0aec5c5ec59042 {type AnonymousEUnion_70b6b42810c9 as AnonymousEUnion_70b6b42810}
+
+pub using @5b0aec5c5ec59042 {type AnonymousEUnion_77b85014499a as AnonymousEUnion_77b8501449}
+
+pub using @5b0aec5c5ec59042 {type AnonymousEUnion_80b2728ef9b0 as AnonymousEUnion_80b2728ef9}
+
+pub using @5b0aec5c5ec59042 {type AnonymousEUnion_ada677e2e9e4 as AnonymousEUnion_ada677e2e9}
+
+pub using @5b0aec5c5ec59042 {type AnonymousEUnion_c0d7a436dcfb as AnonymousEUnion_c0d7a436dc}
+
+pub using @5b0aec5c5ec59042 {type CLASSICEVENTID_9cc7e85eacc0 as CLASSICEVENTID}
+
+pub using @5b0aec5c5ec59042 {type CONTROLTRACEHANDLE_c6834a2fccb8 as CONTROLTRACEHANDLE}
+
+pub using @5b0aec5c5ec59042 {type CTraceRelogger_206d3e5ccfa9 as CTraceRelogger}
+
+pub using @5b0aec5c5ec59042 {type ClassEStruct_4114ae92777c as ClassEStruct_4114ae9277}
+
+pub using @5b0aec5c5ec59042 {type ClassEStruct_86b6da81b89a as ClassEStruct_86b6da81b8}
+
+pub using @5b0aec5c5ec59042 {type CustomSchemaType_3df236d245b4 as CustomSchemaType}
+
+pub using @5b0aec5c5ec59042 {type DECODINGSOURCE_3c070dab96ec as DECODINGSOURCE}
+
+pub using @5b0aec5c5ec59042 {type ENABLECALLBACKENABLEDSTATE_19a2ecff66f2 as ENABLECALLBACKENABLEDSTATE}
+
+pub using @5b0aec5c5ec59042 {type ENABLETRACEPARAMETERS_231c33faa611 as ENABLETRACEPARAMETERS}
+
+pub using @5b0aec5c5ec59042 {type ENABLETRACEPARAMETERSV1_42d35f4e423e as ENABLETRACEPARAMETERSV1}
+
+pub using @5b0aec5c5ec59042 {type ETWBUFFERCALLBACKINFORMATION_1c80e84179db as ETWBUFFERCALLBACKINFORMATION}
+
+pub using @5b0aec5c5ec59042 {type ETWBUFFERCONTEXT_110cbeaf5e50 as ETWBUFFERCONTEXT}
+
+pub using @5b0aec5c5ec59042 {type ETWBUFFERHEADER_ae8ddb2d3196 as ETWBUFFERHEADER}
+
+pub using @5b0aec5c5ec59042 {type ETWCOMPRESSIONRESUMPTIONMODE_6e29dbe7b67d as ETWCOMPRESSIONRESUMPTIONMODE}
+
+pub using @5b0aec5c5ec59042 {type ETWCONTEXTREGISTERTYPES_6dd458df6483 as ETWCONTEXTREGISTERTYPES}
+
+pub using @5b0aec5c5ec59042 {type ETWOPENTRACEOPTIONS_187e3e22c843 as ETWOPENTRACEOPTIONS}
+
+pub using @5b0aec5c5ec59042 {type ETWPMCCOUNTEROWNER_86b834bec78c as ETWPMCCOUNTEROWNER}
+
+pub using @5b0aec5c5ec59042 {type ETWPMCCOUNTEROWNERSHIPSTATUS_248a477737c2 as ETWPMCCOUNTEROWNERSHIPSTATUS}
+
+pub using @5b0aec5c5ec59042 {type ETWPMCCOUNTEROWNERTYPE_cd51a6c8a1d4 as ETWPMCCOUNTEROWNERTYPE}
+
+pub using @5b0aec5c5ec59042 {type ETWPMCSESSIONINFO_32161ec0d454 as ETWPMCSESSIONINFO}
+
+pub using @5b0aec5c5ec59042 {type ETWPROCESSHANDLEINFOTYPE_d125d5de2cb7 as ETWPROCESSHANDLEINFOTYPE}
+
+pub using @5b0aec5c5ec59042 {type ETWPROCESSTRACEMODES_d02d2108f2cf as ETWPROCESSTRACEMODES}
+
+pub using @5b0aec5c5ec59042 {type ETWPROVIDERTRAITTYPE_23785fd5b6dd as ETWPROVIDERTRAITTYPE}
+
+pub using @5b0aec5c5ec59042 {type ETWTRACEPARTITIONINFORMATION_fa1c1d636f82 as ETWTRACEPARTITIONINFORMATION}
+
+pub using @5b0aec5c5ec59042 {type ETWTRACEPARTITIONINFORMATIONV2_58ce77bffc72 as ETWTRACEPARTITIONINFORMATIONV2}
+
+pub using @5b0aec5c5ec59042 {type EVENTDATADESCRIPTOR_bdfbb3b555ba as EVENTDATADESCRIPTOR}
+
+pub using @5b0aec5c5ec59042 {type EVENTDESCRIPTOR_6663bc93c138 as EVENTDESCRIPTOR}
+
+pub using @5b0aec5c5ec59042 {type EVENTEXTENDEDITEMEVENTKEY_b8b782db2bf8 as EVENTEXTENDEDITEMEVENTKEY}
+
+pub using @5b0aec5c5ec59042 {type EVENTEXTENDEDITEMINSTANCE_f216f389381a as EVENTEXTENDEDITEMINSTANCE}
+
+pub using @5b0aec5c5ec59042 {type EVENTEXTENDEDITEMPEBSINDEX_217c45b1ab27 as EVENTEXTENDEDITEMPEBSINDEX}
+
+pub using @5b0aec5c5ec59042 {type EVENTEXTENDEDITEMPMCCOUNTERS_a5b402b36263 as EVENTEXTENDEDITEMPMCCOUNTERS}
+
+pub using @5b0aec5c5ec59042 {type EVENTEXTENDEDITEMPROCESSSTARTKEY_5c20ec3c0f51 as EVENTEXTENDEDITEMPROCESSSTARTKEY}
+
+pub using @5b0aec5c5ec59042 {type EVENTEXTENDEDITEMRELATEDACTIVITYID_541a5b44bd8d as EVENTEXTENDEDITEMRELATEDACTIVITYID}
+
+pub using @5b0aec5c5ec59042 {type EVENTEXTENDEDITEMSTACKKEY32_39528e706cfa as EVENTEXTENDEDITEMSTACKKEY32}
+
+pub using @5b0aec5c5ec59042 {type EVENTEXTENDEDITEMSTACKKEY64_b9d5fc027375 as EVENTEXTENDEDITEMSTACKKEY64}
+
+pub using @5b0aec5c5ec59042 {type EVENTEXTENDEDITEMSTACKTRACE32_7c17a9813f2e as EVENTEXTENDEDITEMSTACKTRACE32}
+
+pub using @5b0aec5c5ec59042 {type EVENTEXTENDEDITEMSTACKTRACE64_39a0b44e8eb3 as EVENTEXTENDEDITEMSTACKTRACE64}
+
+pub using @5b0aec5c5ec59042 {type EVENTEXTENDEDITEMTSID_126dc237677b as EVENTEXTENDEDITEMTSID}
+
+pub using @5b0aec5c5ec59042 {type EVENTFIELDTYPE_9edcf7d5dfb1 as EVENTFIELDTYPE}
+
+pub using @5b0aec5c5ec59042 {type EVENTFILTERDESCRIPTOR_6d5857412cef as EVENTFILTERDESCRIPTOR}
+
+pub using @5b0aec5c5ec59042 {type EVENTFILTEREVENTID_f2b379d365dd as EVENTFILTEREVENTID}
+
+pub using @5b0aec5c5ec59042 {type EVENTFILTEREVENTNAME_3a229fd2b67b as EVENTFILTEREVENTNAME}
+
+pub using @5b0aec5c5ec59042 {type EVENTFILTERHEADER_e1ce8ff2130a as EVENTFILTERHEADER}
+
+pub using @5b0aec5c5ec59042 {type EVENTFILTERLEVELKW_12bf2ad3949d as EVENTFILTERLEVELKW}
+
+pub using @5b0aec5c5ec59042 {type EVENTHEADER_4bdfa6aad7d5 as EVENTHEADER}
+
+pub using @5b0aec5c5ec59042 {type EVENTHEADEREXTENDEDDATAITEM_1af81830b751 as EVENTHEADEREXTENDEDDATAITEM}
+
+pub using @5b0aec5c5ec59042 {type EVENTINFOCLASS_b0b2666963c7 as EVENTINFOCLASS}
+
+pub using @5b0aec5c5ec59042 {type EVENTINSTANCEHEADER_a01e33060f77 as EVENTINSTANCEHEADER}
+
+pub using @5b0aec5c5ec59042 {type EVENTINSTANCEINFO_dc691074881b as EVENTINSTANCEINFO}
+
+pub using @5b0aec5c5ec59042 {type EVENTMAPENTRY_d4b362456622 as EVENTMAPENTRY}
+
+pub using @5b0aec5c5ec59042 {type EVENTMAPINFO_9ecf0d37d5bb as EVENTMAPINFO}
+
+pub using @5b0aec5c5ec59042 {type EVENTPROPERTYINFO_38e36fa4fc47 as EVENTPROPERTYINFO}
+
+pub using @5b0aec5c5ec59042 {type EVENTRECORD_2805219cf028 as EVENTRECORD}
+
+pub using @5b0aec5c5ec59042 {type EVENTSECURITYOPERATION_79ba176f8fc3 as EVENTSECURITYOPERATION}
+
+pub using @5b0aec5c5ec59042 {type EVENTTRACE_d9d8324b4501 as EVENTTRACE}
+
+pub using @5b0aec5c5ec59042 {type EVENTTRACECONTROL_0d66acbbb4eb as EVENTTRACECONTROL}
+
+pub using @5b0aec5c5ec59042 {type EVENTTRACEFLAG_83c8e3de8ffd as EVENTTRACEFLAG}
+
+pub using @5b0aec5c5ec59042 {type EVENTTRACEHEADER_6b55475734f5 as EVENTTRACEHEADER}
+
+pub using @5b0aec5c5ec59042 {type EVENTTRACELOGFILEA_3138d4eb1c64 as EVENTTRACELOGFILEA}
+
+pub using @5b0aec5c5ec59042 {type EVENTTRACELOGFILEW_ee7603f6e5a8 as EVENTTRACELOGFILEW}
+
+pub using @5b0aec5c5ec59042 {type EVENTTRACEPROPERTIES_b06992ac5f62 as EVENTTRACEPROPERTIES}
+
+pub using @5b0aec5c5ec59042 {type EVENTTRACEPROPERTIESV2_9317028c3d4a as EVENTTRACEPROPERTIESV2}
+
+pub using @5b0aec5c5ec59042 {type ITraceEvent_2d74b8972927 as ITraceEvent}
+
+pub using @5b0aec5c5ec59042 {type ITraceEventCallback_0d74541e9e30 as ITraceEventCallback}
+
+pub using @5b0aec5c5ec59042 {type ITraceRelogger_6b39f8cb4afa as ITraceRelogger}
+
+pub using @5b0aec5c5ec59042 {type MAPFLAGS_5f841c89e804 as MAPFLAGS}
+
+pub using @5b0aec5c5ec59042 {type MAPVALUETYPE_b0a2ca3016ee as MAPVALUETYPE}
+
+pub using @5b0aec5c5ec59042 {type MOFFIELD_4c7e8ca20688 as MOFFIELD}
+
+pub using @5b0aec5c5ec59042 {type NonStructType_d4204282ce44 as NonStructType}
+
+pub using @5b0aec5c5ec59042 {type OFFSETINSTANCEDATAANDLENGTH_de4777f42130 as OFFSETINSTANCEDATAANDLENGTH}
+
+pub using @5b0aec5c5ec59042 {type PAYLOADFILTERPREDICATE_732a343f9c2e as PAYLOADFILTERPREDICATE}
+
+pub using @5b0aec5c5ec59042 {type PAYLOADOPERATOR_84b37f80c68c as PAYLOADOPERATOR}
+
+pub using @5b0aec5c5ec59042 {type PENABLECALLBACK_b5262f0c77d3 as PENABLECALLBACK}
+
+pub using @5b0aec5c5ec59042 {type PETWBUFFERCALLBACK_b00d34378bd4 as PETWBUFFERCALLBACK}
+
+pub using @5b0aec5c5ec59042 {type PETWBUFFERCOMPLETIONCALLBACK_ee4b70071afc as PETWBUFFERCOMPLETIONCALLBACK}
+
+pub using @5b0aec5c5ec59042 {type PEVENTCALLBACK_5cbd77e2775e as PEVENTCALLBACK}
+
+pub using @5b0aec5c5ec59042 {type PEVENTRECORDCALLBACK_36b96b7ab487 as PEVENTRECORDCALLBACK}
+
+pub using @5b0aec5c5ec59042 {type PEVENTTRACEBUFFERCALLBACKA_a4fabfbd8c4e as PEVENTTRACEBUFFERCALLBACKA}
+
+pub using @5b0aec5c5ec59042 {type PEVENTTRACEBUFFERCALLBACKW_0f1f21b5963b as PEVENTTRACEBUFFERCALLBACKW}
+
+pub using @5b0aec5c5ec59042 {type PROCESSTRACEHANDLE_92f1514097b0 as PROCESSTRACEHANDLE}
+
+pub using @5b0aec5c5ec59042 {type PROFILESOURCEINFO_5d3142bcafc2 as PROFILESOURCEINFO}
+
+pub using @5b0aec5c5ec59042 {type PROPERTYDATADESCRIPTOR_f69d91981fec as PROPERTYDATADESCRIPTOR}
+
+pub using @5b0aec5c5ec59042 {type PROPERTYFLAGS_5e46e81a2802 as PROPERTYFLAGS}
+
+pub using @5b0aec5c5ec59042 {type PROVIDERENUMERATIONINFO_77c5fc2a1574 as PROVIDERENUMERATIONINFO}
+
+pub using @5b0aec5c5ec59042 {type PROVIDEREVENTINFO_156673061606 as PROVIDEREVENTINFO}
+
+pub using @5b0aec5c5ec59042 {type PROVIDERFIELDINFO_6d85c3072ad3 as PROVIDERFIELDINFO}
+
+pub using @5b0aec5c5ec59042 {type PROVIDERFIELDINFOARRAY_22d829a8d651 as PROVIDERFIELDINFOARRAY}
+
+pub using @5b0aec5c5ec59042 {type PROVIDERFILTERINFO_43a4d15e109d as PROVIDERFILTERINFO}
+
+pub using @5b0aec5c5ec59042 {type REGHANDLE_1106b45cb99c as REGHANDLE}
+
+pub using @5b0aec5c5ec59042 {type RELOGSTREAMHANDLE_52ca09fecb12 as RELOGSTREAMHANDLE}
+
+pub using @5b0aec5c5ec59042 {type StructType_07ab0c99305a as StructType}
+
+pub using @5b0aec5c5ec59042 {type TDHCONTEXT_3895d222ce16 as TDHCONTEXT}
+
+pub using @5b0aec5c5ec59042 {type TDHCONTEXTTYPE_f755e0b3ebc5 as TDHCONTEXTTYPE}
+
+pub using @5b0aec5c5ec59042 {type TDHHANDLE_b15d9b9141fe as TDHHANDLE}
+
+pub using @5b0aec5c5ec59042 {type TDHINTYPE_178ee09da9dc as TDHINTYPE}
+
+pub using @5b0aec5c5ec59042 {type TDHOUTTYPE_2e15c40b1cf0 as TDHOUTTYPE}
+
+pub using @5b0aec5c5ec59042 {type TEMPLATEFLAGS_b4a900c305ab as TEMPLATEFLAGS}
+
+pub using @5b0aec5c5ec59042 {type TRACECONTEXTREGISTERINFO_36f86a40ec90 as TRACECONTEXTREGISTERINFO}
+
+pub using @5b0aec5c5ec59042 {type TRACEENABLEINFO_8a97d57feb28 as TRACEENABLEINFO}
+
+pub using @5b0aec5c5ec59042 {type TRACEEVENTINFO_d3ae88407b43 as TRACEEVENTINFO}
+
+pub using @5b0aec5c5ec59042 {type TRACEGUIDINFO_d2b330898284 as TRACEGUIDINFO}
+
+pub using @5b0aec5c5ec59042 {type TRACEGUIDPROPERTIES_0cd79306b17c as TRACEGUIDPROPERTIES}
+
+pub using @5b0aec5c5ec59042 {type TRACEGUIDREGISTRATION_4a2b60943890 as TRACEGUIDREGISTRATION}
+
+pub using @5b0aec5c5ec59042 {type TRACELBRCONFIGURATION_3f2c250ba7fb as TRACELBRCONFIGURATION}
+
+pub using @5b0aec5c5ec59042 {type TRACELOGFILEHEADER_8763c469ef74 as TRACELOGFILEHEADER}
+
+pub using @5b0aec5c5ec59042 {type TRACELOGFILEHEADER32_3f9942a7391d as TRACELOGFILEHEADER32}
+
+pub using @5b0aec5c5ec59042 {type TRACELOGFILEHEADER64_6d0e0ffd7c74 as TRACELOGFILEHEADER64}
+
+pub using @5b0aec5c5ec59042 {type TRACEMESSAGEFLAGS_7f286e1428c8 as TRACEMESSAGEFLAGS}
+
+pub using @5b0aec5c5ec59042 {type TRACEPERIODICCAPTURESTATEINFO_193edbd58aff as TRACEPERIODICCAPTURESTATEINFO}
+
+pub using @5b0aec5c5ec59042 {type TRACEPROFILEINTERVAL_6c91e1617a01 as TRACEPROFILEINTERVAL}
+
+pub using @5b0aec5c5ec59042 {type TRACEPROVIDERINFO_57093a9f3258 as TRACEPROVIDERINFO}
+
+pub using @5b0aec5c5ec59042 {type TRACEPROVIDERINSTANCEINFO_dcb99fe54741 as TRACEPROVIDERINSTANCEINFO}
+
+pub using @5b0aec5c5ec59042 {type TRACEQUERYINFOCLASS_c23682c1423b as TRACEQUERYINFOCLASS}
+
+pub using @5b0aec5c5ec59042 {type TRACESTACKCACHINGINFO_a3693ffb4c40 as TRACESTACKCACHINGINFO}
+
+pub using @5b0aec5c5ec59042 {type TRACEVERSIONINFO_bd11e16412bb as TRACEVERSIONINFO}
+
+pub using @5b0aec5c5ec59042 {type VersionDetailEStruct_130a9c0faaf7 as VersionDetailEStruct_130a9c0faa}
+
+pub using @5b0aec5c5ec59042 {type VersionDetailEStruct_c85705ec4f40 as VersionDetailEStruct_c85705ec4f}
+
+pub using @5b0aec5c5ec59042 {type VersionDetailEStruct_f7c965d04f55 as VersionDetailEStruct_f7c965d04f}
+
+pub using @5b0aec5c5ec59042 {type WMIDPREQUEST_b8382d5b2138 as WMIDPREQUEST}
+
+pub using @5b0aec5c5ec59042 {type WMIDPREQUESTCODE_295e8d23cec3 as WMIDPREQUESTCODE}
+
+pub using @5b0aec5c5ec59042 {type WMIREGGUIDW_8224e07cdeb4 as WMIREGGUIDW}
+
+pub using @5b0aec5c5ec59042 {type WMIREGINFOW_09d6b54038a5 as WMIREGINFOW}
+
+pub using @5b0aec5c5ec59042 {type WNODEALLDATA_5cfe23d104df as WNODEALLDATA}
+
+pub using @5b0aec5c5ec59042 {type WNODEEVENTITEM_c67652cfb1ca as WNODEEVENTITEM}
+
+pub using @5b0aec5c5ec59042 {type WNODEEVENTREFERENCE_47d0b914183b as WNODEEVENTREFERENCE}
+
+pub using @5b0aec5c5ec59042 {type WNODEHEADER_8e16277dcfdf as WNODEHEADER}
+
+pub using @5b0aec5c5ec59042 {type WNODEMETHODITEM_393f5a8f66bc as WNODEMETHODITEM}
+
+pub using @5b0aec5c5ec59042 {type WNODESINGLEINSTANCE_eb334b08203c as WNODESINGLEINSTANCE}
+
+pub using @5b0aec5c5ec59042 {type WNODESINGLEITEM_a1eae664a20f as WNODESINGLEITEM}
+
+pub using @5b0aec5c5ec59042 {type WNODETOOSMALL_e17bf1e82389 as WNODETOOSMALL}
+
+// Traits
+

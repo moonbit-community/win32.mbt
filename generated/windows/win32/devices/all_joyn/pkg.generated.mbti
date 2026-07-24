@@ -1,0 +1,2292 @@
+// Generated using `moon info`, DON'T EDIT IT
+package "moonbit-community/win32-bindings/windows/win32/devices/all_joyn"
+
+import {
+  "moonbit-community/win32-bindings/runtime/core",
+  "moonbit-community/win32-bindings/scc/4fac9202b24f6665",
+}
+
+// Values
+pub let aj_ifc_security_inherit : Int
+
+pub let aj_ifc_security_off : Int
+
+pub let aj_ifc_security_required : Int
+
+pub fn all_joyn_accept_bus_connection_raw(@core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn all_joyn_close_bus_handle_raw(@core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn all_joyn_connect_to_bus_raw(@core.RawAddress) -> @core.RawWin32Call[@core.RawAddress]
+
+pub fn all_joyn_create_bus_raw(UInt, UInt, @core.RawAddress) -> @core.RawAddress
+
+pub fn all_joyn_enum_events_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn all_joyn_event_select_raw(@core.RawAddress, @core.RawAddress, UInt) -> @core.RawWin32Call[Int]
+
+pub fn all_joyn_receive_from_bus_raw(@core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn all_joyn_send_to_bus_raw(@core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn alljoyn_aboutdata_create_empty_raw() -> Int64
+
+pub fn alljoyn_aboutdata_create_full_raw(Int64, @core.RawAddress) -> Int64
+
+pub fn alljoyn_aboutdata_create_raw(@core.RawAddress) -> Int64
+
+pub fn alljoyn_aboutdata_createfrommsgarg_raw(Int64, Int64, @core.RawAddress) -> Int
+
+pub fn alljoyn_aboutdata_createfromxml_raw(Int64, @core.RawAddress) -> Int
+
+pub fn alljoyn_aboutdata_destroy_raw(Int64) -> Unit
+
+pub fn alljoyn_aboutdata_getaboutdata_raw(Int64, Int64, @core.RawAddress) -> Int
+
+pub fn alljoyn_aboutdata_getajsoftwareversion_raw(Int64, @core.RawAddress) -> Int
+
+pub fn alljoyn_aboutdata_getannouncedaboutdata_raw(Int64, Int64) -> Int
+
+pub fn alljoyn_aboutdata_getappid_raw(Int64, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn alljoyn_aboutdata_getappname_raw(Int64, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn alljoyn_aboutdata_getdateofmanufacture_raw(Int64, @core.RawAddress) -> Int
+
+pub fn alljoyn_aboutdata_getdefaultlanguage_raw(Int64, @core.RawAddress) -> Int
+
+pub fn alljoyn_aboutdata_getdescription_raw(Int64, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn alljoyn_aboutdata_getdeviceid_raw(Int64, @core.RawAddress) -> Int
+
+pub fn alljoyn_aboutdata_getdevicename_raw(Int64, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn alljoyn_aboutdata_getfield_raw(Int64, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn alljoyn_aboutdata_getfields_raw(Int64, @core.RawAddress, UInt64) -> UInt64
+
+pub fn alljoyn_aboutdata_getfieldsignature_raw(Int64, @core.RawAddress) -> @core.RawAddress
+
+pub fn alljoyn_aboutdata_gethardwareversion_raw(Int64, @core.RawAddress) -> Int
+
+pub fn alljoyn_aboutdata_getmanufacturer_raw(Int64, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn alljoyn_aboutdata_getmodelnumber_raw(Int64, @core.RawAddress) -> Int
+
+pub fn alljoyn_aboutdata_getsoftwareversion_raw(Int64, @core.RawAddress) -> Int
+
+pub fn alljoyn_aboutdata_getsupportedlanguages_raw(Int64, @core.RawAddress, UInt64) -> UInt64
+
+pub fn alljoyn_aboutdata_getsupporturl_raw(Int64, @core.RawAddress) -> Int
+
+pub fn alljoyn_aboutdata_isfieldannounced_raw(Int64, @core.RawAddress) -> UInt
+
+pub fn alljoyn_aboutdata_isfieldlocalized_raw(Int64, @core.RawAddress) -> UInt
+
+pub fn alljoyn_aboutdata_isfieldrequired_raw(Int64, @core.RawAddress) -> UInt
+
+pub fn alljoyn_aboutdata_isvalid_raw(Int64, @core.RawAddress) -> UInt
+
+pub fn alljoyn_aboutdata_setappid_fromstring_raw(Int64, @core.RawAddress) -> Int
+
+pub fn alljoyn_aboutdata_setappid_raw(Int64, @core.RawAddress, UInt64) -> Int
+
+pub fn alljoyn_aboutdata_setappname_raw(Int64, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn alljoyn_aboutdata_setdateofmanufacture_raw(Int64, @core.RawAddress) -> Int
+
+pub fn alljoyn_aboutdata_setdefaultlanguage_raw(Int64, @core.RawAddress) -> Int
+
+pub fn alljoyn_aboutdata_setdescription_raw(Int64, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn alljoyn_aboutdata_setdeviceid_raw(Int64, @core.RawAddress) -> Int
+
+pub fn alljoyn_aboutdata_setdevicename_raw(Int64, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn alljoyn_aboutdata_setfield_raw(Int64, @core.RawAddress, Int64, @core.RawAddress) -> Int
+
+pub fn alljoyn_aboutdata_sethardwareversion_raw(Int64, @core.RawAddress) -> Int
+
+pub fn alljoyn_aboutdata_setmanufacturer_raw(Int64, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn alljoyn_aboutdata_setmodelnumber_raw(Int64, @core.RawAddress) -> Int
+
+pub fn alljoyn_aboutdata_setsoftwareversion_raw(Int64, @core.RawAddress) -> Int
+
+pub fn alljoyn_aboutdata_setsupportedlanguage_raw(Int64, @core.RawAddress) -> Int
+
+pub fn alljoyn_aboutdata_setsupporturl_raw(Int64, @core.RawAddress) -> Int
+
+pub fn alljoyn_aboutdatalistener_create_raw(@core.RawAddress, @core.RawAddress) -> Int64
+
+pub fn alljoyn_aboutdatalistener_destroy_raw(Int64) -> Unit
+
+pub fn alljoyn_abouticon_clear_raw(Int64) -> Unit
+
+pub fn alljoyn_abouticon_create_raw() -> Int64
+
+pub fn alljoyn_abouticon_destroy_raw(Int64) -> Unit
+
+pub fn alljoyn_abouticon_getcontent_raw(Int64, @core.RawAddress, @core.RawAddress) -> Unit
+
+pub fn alljoyn_abouticon_geturl_raw(Int64, @core.RawAddress, @core.RawAddress) -> Unit
+
+pub fn alljoyn_abouticon_setcontent_frommsgarg_raw(Int64, Int64) -> Int
+
+pub fn alljoyn_abouticon_setcontent_raw(Int64, @core.RawAddress, @core.RawAddress, UInt64, UInt) -> Int
+
+pub fn alljoyn_abouticon_seturl_raw(Int64, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn alljoyn_abouticonobj_create_raw(Int64, Int64) -> Int64
+
+pub fn alljoyn_abouticonobj_destroy_raw(Int64) -> Unit
+
+pub fn alljoyn_abouticonproxy_create_raw(Int64, @core.RawAddress, UInt) -> Int64
+
+pub fn alljoyn_abouticonproxy_destroy_raw(Int64) -> Unit
+
+pub fn alljoyn_abouticonproxy_geticon_raw(Int64, Int64) -> Int
+
+pub fn alljoyn_abouticonproxy_getversion_raw(Int64, @core.RawAddress) -> Int
+
+pub fn alljoyn_aboutlistener_create_raw(@core.RawAddress, @core.RawAddress) -> Int64
+
+pub fn alljoyn_aboutlistener_destroy_raw(Int64) -> Unit
+
+pub fn alljoyn_aboutobj_announce_raw(Int64, UInt, Int64) -> Int
+
+pub fn alljoyn_aboutobj_announce_using_datalistener_raw(Int64, UInt, Int64) -> Int
+
+pub fn alljoyn_aboutobj_create_raw(Int64, Int) -> Int64
+
+pub fn alljoyn_aboutobj_destroy_raw(Int64) -> Unit
+
+pub fn alljoyn_aboutobj_unannounce_raw(Int64) -> Int
+
+pub fn alljoyn_aboutobjectdescription_clear_raw(Int64) -> Unit
+
+pub fn alljoyn_aboutobjectdescription_create_full_raw(Int64) -> Int64
+
+pub fn alljoyn_aboutobjectdescription_create_raw() -> Int64
+
+pub fn alljoyn_aboutobjectdescription_createfrommsgarg_raw(Int64, Int64) -> Int
+
+pub fn alljoyn_aboutobjectdescription_destroy_raw(Int64) -> Unit
+
+pub fn alljoyn_aboutobjectdescription_getinterfacepaths_raw(Int64, @core.RawAddress, @core.RawAddress, UInt64) -> UInt64
+
+pub fn alljoyn_aboutobjectdescription_getinterfaces_raw(Int64, @core.RawAddress, @core.RawAddress, UInt64) -> UInt64
+
+pub fn alljoyn_aboutobjectdescription_getmsgarg_raw(Int64, Int64) -> Int
+
+pub fn alljoyn_aboutobjectdescription_getpaths_raw(Int64, @core.RawAddress, UInt64) -> UInt64
+
+pub fn alljoyn_aboutobjectdescription_hasinterface_raw(Int64, @core.RawAddress) -> UInt
+
+pub fn alljoyn_aboutobjectdescription_hasinterfaceatpath_raw(Int64, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn alljoyn_aboutobjectdescription_haspath_raw(Int64, @core.RawAddress) -> UInt
+
+pub fn alljoyn_aboutproxy_create_raw(Int64, @core.RawAddress, UInt) -> Int64
+
+pub fn alljoyn_aboutproxy_destroy_raw(Int64) -> Unit
+
+pub fn alljoyn_aboutproxy_getaboutdata_raw(Int64, @core.RawAddress, Int64) -> Int
+
+pub fn alljoyn_aboutproxy_getobjectdescription_raw(Int64, Int64) -> Int
+
+pub fn alljoyn_aboutproxy_getversion_raw(Int64, @core.RawAddress) -> Int
+
+pub fn alljoyn_applicationstatelistener_create_raw(@core.RawAddress, @core.RawAddress) -> Int64
+
+pub fn alljoyn_applicationstatelistener_destroy_raw(Int64) -> Unit
+
+pub let alljoyn_array : Int
+
+pub fn alljoyn_authlistener_create_raw(@core.RawAddress, @core.RawAddress) -> Int64
+
+pub fn alljoyn_authlistener_destroy_raw(Int64) -> Unit
+
+pub fn alljoyn_authlistener_requestcredentialsresponse_raw(Int64, @core.RawAddress, Int, Int64) -> Int
+
+pub fn alljoyn_authlistener_setsharedsecret_raw(Int64, @core.RawAddress, UInt64) -> Int
+
+pub fn alljoyn_authlistener_verifycredentialsresponse_raw(Int64, @core.RawAddress, Int) -> Int
+
+pub fn alljoyn_authlistenerasync_create_raw(@core.RawAddress, @core.RawAddress) -> Int64
+
+pub fn alljoyn_authlistenerasync_destroy_raw(Int64) -> Unit
+
+pub fn alljoyn_autopinger_adddestination_raw(Int64, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn alljoyn_autopinger_addpinggroup_raw(Int64, @core.RawAddress, Int64, UInt) -> Unit
+
+pub fn alljoyn_autopinger_create_raw(Int64) -> Int64
+
+pub fn alljoyn_autopinger_destroy_raw(Int64) -> Unit
+
+pub fn alljoyn_autopinger_pause_raw(Int64) -> Unit
+
+pub fn alljoyn_autopinger_removedestination_raw(Int64, @core.RawAddress, @core.RawAddress, Int) -> Int
+
+pub fn alljoyn_autopinger_removepinggroup_raw(Int64, @core.RawAddress) -> Unit
+
+pub fn alljoyn_autopinger_resume_raw(Int64) -> Unit
+
+pub fn alljoyn_autopinger_setpinginterval_raw(Int64, @core.RawAddress, UInt) -> Int
+
+pub let alljoyn_big_endian : UInt
+
+pub let alljoyn_boolean : Int
+
+pub let alljoyn_boolean_array : Int
+
+pub fn alljoyn_busattachment_addlogonentry_raw(Int64, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn alljoyn_busattachment_addmatch_raw(Int64, @core.RawAddress) -> Int
+
+pub fn alljoyn_busattachment_advertisename_raw(Int64, @core.RawAddress, UInt) -> Int
+
+pub fn alljoyn_busattachment_bindsessionport_raw(Int64, @core.RawAddress, Int64, Int64) -> Int
+
+pub fn alljoyn_busattachment_canceladvertisename_raw(Int64, @core.RawAddress, UInt) -> Int
+
+pub fn alljoyn_busattachment_cancelfindadvertisedname_raw(Int64, @core.RawAddress) -> Int
+
+pub fn alljoyn_busattachment_cancelfindadvertisednamebytransport_raw(Int64, @core.RawAddress, UInt) -> Int
+
+pub fn alljoyn_busattachment_cancelwhoimplements_interface_raw(Int64, @core.RawAddress) -> Int
+
+pub fn alljoyn_busattachment_cancelwhoimplements_interfaces_raw(Int64, @core.RawAddress, UInt64) -> Int
+
+pub fn alljoyn_busattachment_clearkeys_raw(Int64, @core.RawAddress) -> Int
+
+pub fn alljoyn_busattachment_clearkeystore_raw(Int64) -> Unit
+
+pub fn alljoyn_busattachment_connect_raw(Int64, @core.RawAddress) -> Int
+
+pub fn alljoyn_busattachment_create_concurrency_raw(@core.RawAddress, Int, UInt) -> Int64
+
+pub fn alljoyn_busattachment_create_raw(@core.RawAddress, Int) -> Int64
+
+pub fn alljoyn_busattachment_createinterface_raw(Int64, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn alljoyn_busattachment_createinterface_secure_raw(Int64, @core.RawAddress, @core.RawAddress, Int) -> Int
+
+pub fn alljoyn_busattachment_createinterfacesfromxml_raw(Int64, @core.RawAddress) -> Int
+
+pub fn alljoyn_busattachment_deletedefaultkeystore_raw(@core.RawAddress) -> Int
+
+pub fn alljoyn_busattachment_deleteinterface_raw(Int64, Int64) -> Int
+
+pub fn alljoyn_busattachment_destroy_raw(Int64) -> Unit
+
+pub fn alljoyn_busattachment_disconnect_raw(Int64, @core.RawAddress) -> Int
+
+pub fn alljoyn_busattachment_enableconcurrentcallbacks_raw(Int64) -> Unit
+
+pub fn alljoyn_busattachment_enablepeersecurity_raw(Int64, @core.RawAddress, Int64, @core.RawAddress, Int) -> Int
+
+pub fn alljoyn_busattachment_enablepeersecuritywithpermissionconfigurationlistener_raw(Int64, @core.RawAddress, Int64, @core.RawAddress, Int, Int64) -> Int
+
+pub fn alljoyn_busattachment_findadvertisedname_raw(Int64, @core.RawAddress) -> Int
+
+pub fn alljoyn_busattachment_findadvertisednamebytransport_raw(Int64, @core.RawAddress, UInt) -> Int
+
+pub fn alljoyn_busattachment_getalljoyndebugobj_raw(Int64) -> Int64
+
+pub fn alljoyn_busattachment_getalljoynproxyobj_raw(Int64) -> Int64
+
+pub fn alljoyn_busattachment_getconcurrency_raw(Int64) -> UInt
+
+pub fn alljoyn_busattachment_getconnectspec_raw(Int64) -> @core.RawAddress
+
+pub fn alljoyn_busattachment_getdbusproxyobj_raw(Int64) -> Int64
+
+pub fn alljoyn_busattachment_getglobalguidstring_raw(Int64) -> @core.RawAddress
+
+pub fn alljoyn_busattachment_getinterface_raw(Int64, @core.RawAddress) -> Int64
+
+pub fn alljoyn_busattachment_getinterfaces_raw(Int64, @core.RawAddress, UInt64) -> UInt64
+
+pub fn alljoyn_busattachment_getkeyexpiration_raw(Int64, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn alljoyn_busattachment_getpeerguid_raw(Int64, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn alljoyn_busattachment_getpermissionconfigurator_raw(Int64) -> Int64
+
+pub fn alljoyn_busattachment_gettimestamp_raw() -> UInt
+
+pub fn alljoyn_busattachment_getuniquename_raw(Int64) -> @core.RawAddress
+
+pub fn alljoyn_busattachment_isconnected_raw(Int64) -> Int
+
+pub fn alljoyn_busattachment_ispeersecurityenabled_raw(Int64) -> Int
+
+pub fn alljoyn_busattachment_isstarted_raw(Int64) -> Int
+
+pub fn alljoyn_busattachment_isstopping_raw(Int64) -> Int
+
+pub fn alljoyn_busattachment_join_raw(Int64) -> Int
+
+pub fn alljoyn_busattachment_joinsession_raw(Int64, @core.RawAddress, UInt, Int64, @core.RawAddress, Int64) -> Int
+
+pub fn alljoyn_busattachment_joinsessionasync_raw(Int64, @core.RawAddress, UInt, Int64, Int64, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn alljoyn_busattachment_leavesession_raw(Int64, UInt) -> Int
+
+pub fn alljoyn_busattachment_namehasowner_raw(Int64, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn alljoyn_busattachment_ping_raw(Int64, @core.RawAddress, UInt) -> Int
+
+pub fn alljoyn_busattachment_registeraboutlistener_raw(Int64, Int64) -> Unit
+
+pub fn alljoyn_busattachment_registerapplicationstatelistener_raw(Int64, Int64) -> Int
+
+pub fn alljoyn_busattachment_registerbuslistener_raw(Int64, Int64) -> Unit
+
+pub fn alljoyn_busattachment_registerbusobject_raw(Int64, Int64) -> Int
+
+pub fn alljoyn_busattachment_registerbusobject_secure_raw(Int64, Int64) -> Int
+
+pub fn alljoyn_busattachment_registerkeystorelistener_raw(Int64, Int64) -> Int
+
+pub fn alljoyn_busattachment_registersignalhandler_raw(Int64, @core.RawAddress, Bytes, @core.RawAddress) -> Int
+
+pub fn alljoyn_busattachment_registersignalhandlerwithrule_raw(Int64, @core.RawAddress, Bytes, @core.RawAddress) -> Int
+
+pub fn alljoyn_busattachment_releasename_raw(Int64, @core.RawAddress) -> Int
+
+pub fn alljoyn_busattachment_reloadkeystore_raw(Int64) -> Int
+
+pub fn alljoyn_busattachment_removematch_raw(Int64, @core.RawAddress) -> Int
+
+pub fn alljoyn_busattachment_removesessionmember_raw(Int64, UInt, @core.RawAddress) -> Int
+
+pub fn alljoyn_busattachment_requestname_raw(Int64, @core.RawAddress, UInt) -> Int
+
+pub fn alljoyn_busattachment_secureconnection_raw(Int64, @core.RawAddress, Int) -> Int
+
+pub fn alljoyn_busattachment_secureconnectionasync_raw(Int64, @core.RawAddress, Int) -> Int
+
+pub fn alljoyn_busattachment_setdaemondebug_raw(Int64, @core.RawAddress, UInt) -> Int
+
+pub fn alljoyn_busattachment_setkeyexpiration_raw(Int64, @core.RawAddress, UInt) -> Int
+
+pub fn alljoyn_busattachment_setlinktimeout_raw(Int64, UInt, @core.RawAddress) -> Int
+
+pub fn alljoyn_busattachment_setlinktimeoutasync_raw(Int64, UInt, UInt, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn alljoyn_busattachment_setsessionlistener_raw(Int64, UInt, Int64) -> Int
+
+pub fn alljoyn_busattachment_start_raw(Int64) -> Int
+
+pub fn alljoyn_busattachment_stop_raw(Int64) -> Int
+
+pub fn alljoyn_busattachment_unbindsessionport_raw(Int64, UInt) -> Int
+
+pub fn alljoyn_busattachment_unregisteraboutlistener_raw(Int64, Int64) -> Unit
+
+pub fn alljoyn_busattachment_unregisterallaboutlisteners_raw(Int64) -> Unit
+
+pub fn alljoyn_busattachment_unregisterallhandlers_raw(Int64) -> Int
+
+pub fn alljoyn_busattachment_unregisterapplicationstatelistener_raw(Int64, Int64) -> Int
+
+pub fn alljoyn_busattachment_unregisterbuslistener_raw(Int64, Int64) -> Unit
+
+pub fn alljoyn_busattachment_unregisterbusobject_raw(Int64, Int64) -> Unit
+
+pub fn alljoyn_busattachment_unregistersignalhandler_raw(Int64, @core.RawAddress, Bytes, @core.RawAddress) -> Int
+
+pub fn alljoyn_busattachment_unregistersignalhandlerwithrule_raw(Int64, @core.RawAddress, Bytes, @core.RawAddress) -> Int
+
+pub fn alljoyn_busattachment_whoimplements_interface_raw(Int64, @core.RawAddress) -> Int
+
+pub fn alljoyn_busattachment_whoimplements_interfaces_raw(Int64, @core.RawAddress, UInt64) -> Int
+
+pub fn alljoyn_buslistener_create_raw(@core.RawAddress, @core.RawAddress) -> Int64
+
+pub fn alljoyn_buslistener_destroy_raw(Int64) -> Unit
+
+pub fn alljoyn_busobject_addinterface_announced_raw(Int64, Int64) -> Int
+
+pub fn alljoyn_busobject_addinterface_raw(Int64, Int64) -> Int
+
+pub fn alljoyn_busobject_addmethodhandler_raw(Int64, Bytes, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn alljoyn_busobject_addmethodhandlers_raw(Int64, @core.RawAddress, UInt64) -> Int
+
+pub fn alljoyn_busobject_cancelsessionlessmessage_raw(Int64, Int64) -> Int
+
+pub fn alljoyn_busobject_cancelsessionlessmessage_serial_raw(Int64, UInt) -> Int
+
+pub fn alljoyn_busobject_create_raw(@core.RawAddress, Int, @core.RawAddress, @core.RawAddress) -> Int64
+
+pub fn alljoyn_busobject_destroy_raw(Int64) -> Unit
+
+pub fn alljoyn_busobject_emitpropertieschanged_raw(Int64, @core.RawAddress, @core.RawAddress, UInt64, UInt) -> Unit
+
+pub fn alljoyn_busobject_emitpropertychanged_raw(Int64, @core.RawAddress, @core.RawAddress, Int64, UInt) -> Unit
+
+pub fn alljoyn_busobject_getannouncedinterfacenames_raw(Int64, @core.RawAddress, UInt64) -> UInt64
+
+pub fn alljoyn_busobject_getbusattachment_raw(Int64) -> Int64
+
+pub fn alljoyn_busobject_getname_raw(Int64, @core.RawAddress, UInt64) -> UInt64
+
+pub fn alljoyn_busobject_getpath_raw(Int64) -> @core.RawAddress
+
+pub fn alljoyn_busobject_issecure_raw(Int64) -> Int
+
+pub fn alljoyn_busobject_methodreply_args_raw(Int64, Int64, Int64, UInt64) -> Int
+
+pub fn alljoyn_busobject_methodreply_err_raw(Int64, Int64, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn alljoyn_busobject_methodreply_status_raw(Int64, Int64, Int) -> Int
+
+pub fn alljoyn_busobject_setannounceflag_raw(Int64, Int64, Int) -> Int
+
+pub fn alljoyn_busobject_signal_raw(Int64, @core.RawAddress, UInt, Bytes, Int64, UInt64, UInt, UInt, Int64) -> Int
+
+pub let alljoyn_byte : Int
+
+pub let alljoyn_byte_array : Int
+
+pub let alljoyn_cred_cert_chain : UInt
+
+pub let alljoyn_cred_expiration : UInt
+
+pub let alljoyn_cred_logon_entry : UInt
+
+pub let alljoyn_cred_new_password : UInt
+
+pub let alljoyn_cred_one_time_pwd : UInt
+
+pub let alljoyn_cred_password : UInt
+
+pub let alljoyn_cred_private_key : UInt
+
+pub let alljoyn_cred_user_name : UInt
+
+pub fn alljoyn_credentials_clear_raw(Int64) -> Unit
+
+pub fn alljoyn_credentials_create_raw() -> Int64
+
+pub fn alljoyn_credentials_destroy_raw(Int64) -> Unit
+
+pub fn alljoyn_credentials_getcertchain_raw(Int64) -> @core.RawAddress
+
+pub fn alljoyn_credentials_getexpiration_raw(Int64) -> UInt
+
+pub fn alljoyn_credentials_getlogonentry_raw(Int64) -> @core.RawAddress
+
+pub fn alljoyn_credentials_getpassword_raw(Int64) -> @core.RawAddress
+
+pub fn alljoyn_credentials_getprivate_key_raw(Int64) -> @core.RawAddress
+
+pub fn alljoyn_credentials_getusername_raw(Int64) -> @core.RawAddress
+
+pub fn alljoyn_credentials_isset_raw(Int64, UInt) -> Int
+
+pub fn alljoyn_credentials_setcertchain_raw(Int64, @core.RawAddress) -> Unit
+
+pub fn alljoyn_credentials_setexpiration_raw(Int64, UInt) -> Unit
+
+pub fn alljoyn_credentials_setlogonentry_raw(Int64, @core.RawAddress) -> Unit
+
+pub fn alljoyn_credentials_setpassword_raw(Int64, @core.RawAddress) -> Unit
+
+pub fn alljoyn_credentials_setprivatekey_raw(Int64, @core.RawAddress) -> Unit
+
+pub fn alljoyn_credentials_setusername_raw(Int64, @core.RawAddress) -> Unit
+
+pub let alljoyn_dict_entry : Int
+
+pub let alljoyn_dict_entry_close : Int
+
+pub let alljoyn_dict_entry_open : Int
+
+pub let alljoyn_disconnected : UInt
+
+pub let alljoyn_double : Int
+
+pub let alljoyn_double_array : Int
+
+pub fn alljoyn_getbuildinfo_raw() -> @core.RawAddress
+
+pub fn alljoyn_getnumericversion_raw() -> UInt
+
+pub fn alljoyn_getversion_raw() -> @core.RawAddress
+
+pub let alljoyn_handle : Int
+
+pub fn alljoyn_init_raw() -> Int
+
+pub let alljoyn_int16 : Int
+
+pub let alljoyn_int16_array : Int
+
+pub let alljoyn_int32 : Int
+
+pub let alljoyn_int32_array : Int
+
+pub let alljoyn_int64 : Int
+
+pub let alljoyn_int64_array : Int
+
+pub fn alljoyn_interfacedescription_activate_raw(Int64) -> Unit
+
+pub fn alljoyn_interfacedescription_addannotation_raw(Int64, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn alljoyn_interfacedescription_addargannotation_raw(Int64, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn alljoyn_interfacedescription_addmember_raw(Int64, Int, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, UInt) -> Int
+
+pub fn alljoyn_interfacedescription_addmemberannotation_raw(Int64, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn alljoyn_interfacedescription_addmethod_raw(Int64, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, UInt, @core.RawAddress) -> Int
+
+pub fn alljoyn_interfacedescription_addproperty_raw(Int64, @core.RawAddress, @core.RawAddress, UInt) -> Int
+
+pub fn alljoyn_interfacedescription_addpropertyannotation_raw(Int64, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn alljoyn_interfacedescription_addsignal_raw(Int64, @core.RawAddress, @core.RawAddress, @core.RawAddress, UInt, @core.RawAddress) -> Int
+
+pub fn alljoyn_interfacedescription_eql_raw(Int64, Int64) -> Int
+
+pub fn alljoyn_interfacedescription_getannotation_raw(Int64, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn alljoyn_interfacedescription_getannotationatindex_raw(Int64, UInt64, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Unit
+
+pub fn alljoyn_interfacedescription_getannotationscount_raw(Int64) -> UInt64
+
+pub fn alljoyn_interfacedescription_getargdescriptionforlanguage_raw(Int64, @core.RawAddress, @core.RawAddress, @core.RawAddress, UInt64, @core.RawAddress) -> UInt64
+
+pub fn alljoyn_interfacedescription_getdescriptionforlanguage_raw(Int64, @core.RawAddress, UInt64, @core.RawAddress) -> UInt64
+
+pub fn alljoyn_interfacedescription_getdescriptionlanguages2_raw(Int64, @core.RawAddress, UInt64) -> UInt64
+
+pub fn alljoyn_interfacedescription_getdescriptionlanguages_raw(Int64, @core.RawAddress, UInt64) -> UInt64
+
+pub fn alljoyn_interfacedescription_getdescriptiontranslationcallback_raw(Int64) -> @core.RawAddress
+
+pub fn alljoyn_interfacedescription_getmember_raw(Int64, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn alljoyn_interfacedescription_getmemberannotation_raw(Int64, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn alljoyn_interfacedescription_getmemberargannotation_raw(Int64, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn alljoyn_interfacedescription_getmemberdescriptionforlanguage_raw(Int64, @core.RawAddress, @core.RawAddress, UInt64, @core.RawAddress) -> UInt64
+
+pub fn alljoyn_interfacedescription_getmembers_raw(Int64, @core.RawAddress, UInt64) -> UInt64
+
+pub fn alljoyn_interfacedescription_getmethod_raw(Int64, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn alljoyn_interfacedescription_getname_raw(Int64) -> @core.RawAddress
+
+pub fn alljoyn_interfacedescription_getproperties_raw(Int64, @core.RawAddress, UInt64) -> UInt64
+
+pub fn alljoyn_interfacedescription_getproperty_raw(Int64, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn alljoyn_interfacedescription_getpropertyannotation_raw(Int64, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn alljoyn_interfacedescription_getpropertydescriptionforlanguage_raw(Int64, @core.RawAddress, @core.RawAddress, UInt64, @core.RawAddress) -> UInt64
+
+pub fn alljoyn_interfacedescription_getsecuritypolicy_raw(Int64) -> Int
+
+pub fn alljoyn_interfacedescription_getsignal_raw(Int64, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn alljoyn_interfacedescription_hasdescription_raw(Int64) -> Int
+
+pub fn alljoyn_interfacedescription_hasmember_raw(Int64, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn alljoyn_interfacedescription_hasproperties_raw(Int64) -> Int
+
+pub fn alljoyn_interfacedescription_hasproperty_raw(Int64, @core.RawAddress) -> Int
+
+pub fn alljoyn_interfacedescription_introspect_raw(Int64, @core.RawAddress, UInt64, UInt64) -> UInt64
+
+pub fn alljoyn_interfacedescription_issecure_raw(Int64) -> Int
+
+pub fn alljoyn_interfacedescription_member_eql_raw(Bytes, Bytes) -> Int
+
+pub fn alljoyn_interfacedescription_member_getannotation_raw(Bytes, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn alljoyn_interfacedescription_member_getannotationatindex_raw(Bytes, UInt64, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Unit
+
+pub fn alljoyn_interfacedescription_member_getannotationscount_raw(Bytes) -> UInt64
+
+pub fn alljoyn_interfacedescription_member_getargannotation_raw(Bytes, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn alljoyn_interfacedescription_member_getargannotationatindex_raw(Bytes, @core.RawAddress, UInt64, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Unit
+
+pub fn alljoyn_interfacedescription_member_getargannotationscount_raw(Bytes, @core.RawAddress) -> UInt64
+
+pub fn alljoyn_interfacedescription_property_eql_raw(Bytes, Bytes) -> Int
+
+pub fn alljoyn_interfacedescription_property_getannotation_raw(Bytes, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn alljoyn_interfacedescription_property_getannotationatindex_raw(Bytes, UInt64, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Unit
+
+pub fn alljoyn_interfacedescription_property_getannotationscount_raw(Bytes) -> UInt64
+
+pub fn alljoyn_interfacedescription_setargdescription_raw(Int64, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn alljoyn_interfacedescription_setargdescriptionforlanguage_raw(Int64, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn alljoyn_interfacedescription_setdescription_raw(Int64, @core.RawAddress) -> Unit
+
+pub fn alljoyn_interfacedescription_setdescriptionforlanguage_raw(Int64, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn alljoyn_interfacedescription_setdescriptionlanguage_raw(Int64, @core.RawAddress) -> Unit
+
+pub fn alljoyn_interfacedescription_setdescriptiontranslationcallback_raw(Int64, @core.RawAddress) -> Unit
+
+pub fn alljoyn_interfacedescription_setmemberdescription_raw(Int64, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn alljoyn_interfacedescription_setmemberdescriptionforlanguage_raw(Int64, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn alljoyn_interfacedescription_setpropertydescription_raw(Int64, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn alljoyn_interfacedescription_setpropertydescriptionforlanguage_raw(Int64, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub let alljoyn_invalid : Int
+
+pub fn alljoyn_keystorelistener_create_raw(@core.RawAddress, @core.RawAddress) -> Int64
+
+pub fn alljoyn_keystorelistener_destroy_raw(Int64) -> Unit
+
+pub fn alljoyn_keystorelistener_getkeys_raw(Int64, Int64, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn alljoyn_keystorelistener_putkeys_raw(Int64, Int64, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn alljoyn_keystorelistener_with_synchronization_create_raw(@core.RawAddress, @core.RawAddress) -> Int64
+
+pub let alljoyn_little_endian : UInt
+
+pub let alljoyn_member_annotate_deprecated : UInt
+
+pub let alljoyn_member_annotate_global_broadcast : UInt
+
+pub let alljoyn_member_annotate_no_reply : UInt
+
+pub let alljoyn_member_annotate_sessioncast : UInt
+
+pub let alljoyn_member_annotate_sessionless : UInt
+
+pub let alljoyn_member_annotate_unicast : UInt
+
+pub fn alljoyn_message_create_raw(Int64) -> Int64
+
+pub let alljoyn_message_default_timeout : UInt
+
+pub fn alljoyn_message_description_raw(Int64, @core.RawAddress, UInt64) -> UInt64
+
+pub fn alljoyn_message_destroy_raw(Int64) -> Unit
+
+pub fn alljoyn_message_eql_raw(Int64, Int64) -> Int
+
+pub let alljoyn_message_error : Int
+
+pub let alljoyn_message_flag_allow_remote_msg : UInt
+
+pub let alljoyn_message_flag_auto_start : UInt
+
+pub let alljoyn_message_flag_encrypted : UInt
+
+pub let alljoyn_message_flag_global_broadcast : UInt
+
+pub let alljoyn_message_flag_no_reply_expected : UInt
+
+pub let alljoyn_message_flag_sessionless : UInt
+
+pub fn alljoyn_message_getarg_raw(Int64, UInt64) -> Int64
+
+pub fn alljoyn_message_getargs_raw(Int64, @core.RawAddress, @core.RawAddress) -> Unit
+
+pub fn alljoyn_message_getauthmechanism_raw(Int64) -> @core.RawAddress
+
+pub fn alljoyn_message_getcallserial_raw(Int64) -> UInt
+
+pub fn alljoyn_message_getcompressiontoken_raw(Int64) -> UInt
+
+pub fn alljoyn_message_getdestination_raw(Int64) -> @core.RawAddress
+
+pub fn alljoyn_message_geterrorname_raw(Int64, @core.RawAddress, @core.RawAddress) -> @core.RawAddress
+
+pub fn alljoyn_message_getflags_raw(Int64) -> UInt
+
+pub fn alljoyn_message_getinterface_raw(Int64) -> @core.RawAddress
+
+pub fn alljoyn_message_getmembername_raw(Int64) -> @core.RawAddress
+
+pub fn alljoyn_message_getobjectpath_raw(Int64) -> @core.RawAddress
+
+pub fn alljoyn_message_getreceiveendpointname_raw(Int64) -> @core.RawAddress
+
+pub fn alljoyn_message_getreplyserial_raw(Int64) -> UInt
+
+pub fn alljoyn_message_getsender_raw(Int64) -> @core.RawAddress
+
+pub fn alljoyn_message_getsessionid_raw(Int64) -> UInt
+
+pub fn alljoyn_message_getsignature_raw(Int64) -> @core.RawAddress
+
+pub fn alljoyn_message_gettimestamp_raw(Int64) -> UInt
+
+pub fn alljoyn_message_gettype_raw(Int64) -> Int
+
+pub let alljoyn_message_invalid : Int
+
+pub fn alljoyn_message_isbroadcastsignal_raw(Int64) -> Int
+
+pub fn alljoyn_message_isencrypted_raw(Int64) -> Int
+
+pub fn alljoyn_message_isexpired_raw(Int64, @core.RawAddress) -> Int
+
+pub fn alljoyn_message_isglobalbroadcast_raw(Int64) -> Int
+
+pub fn alljoyn_message_issessionless_raw(Int64) -> Int
+
+pub fn alljoyn_message_isunreliable_raw(Int64) -> Int
+
+pub let alljoyn_message_method_call : Int
+
+pub let alljoyn_message_method_ret : Int
+
+pub fn alljoyn_message_setendianess_raw(Int) -> Unit
+
+pub let alljoyn_message_signal : Int
+
+pub fn alljoyn_message_tostring_raw(Int64, @core.RawAddress, UInt64) -> UInt64
+
+pub fn alljoyn_msgarg_array_create_raw(UInt64) -> Int64
+
+pub fn alljoyn_msgarg_array_element_raw(Int64, UInt64) -> Int64
+
+pub fn alljoyn_msgarg_array_signature_raw(Int64, UInt64, @core.RawAddress, UInt64) -> UInt64
+
+pub fn alljoyn_msgarg_array_tostring_raw(Int64, UInt64, @core.RawAddress, UInt64, UInt64) -> UInt64
+
+pub fn alljoyn_msgarg_clear_raw(Int64) -> Unit
+
+pub fn alljoyn_msgarg_clone_raw(Int64, Int64) -> Unit
+
+pub fn alljoyn_msgarg_copy_raw(Int64) -> Int64
+
+pub fn alljoyn_msgarg_create_raw() -> Int64
+
+pub fn alljoyn_msgarg_destroy_raw(Int64) -> Unit
+
+pub fn alljoyn_msgarg_equal_raw(Int64, Int64) -> Int
+
+pub fn alljoyn_msgarg_get_array_element_raw(Int64, UInt64, @core.RawAddress) -> Unit
+
+pub fn alljoyn_msgarg_get_array_elementsignature_raw(Int64, UInt64) -> @core.RawAddress
+
+pub fn alljoyn_msgarg_get_array_numberofelements_raw(Int64) -> UInt64
+
+pub fn alljoyn_msgarg_get_bool_array_raw(Int64, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn alljoyn_msgarg_get_bool_raw(Int64, @core.RawAddress) -> Int
+
+pub fn alljoyn_msgarg_get_double_array_raw(Int64, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn alljoyn_msgarg_get_double_raw(Int64, @core.RawAddress) -> Int
+
+pub fn alljoyn_msgarg_get_int16_array_raw(Int64, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn alljoyn_msgarg_get_int16_raw(Int64, @core.RawAddress) -> Int
+
+pub fn alljoyn_msgarg_get_int32_array_raw(Int64, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn alljoyn_msgarg_get_int32_raw(Int64, @core.RawAddress) -> Int
+
+pub fn alljoyn_msgarg_get_int64_array_raw(Int64, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn alljoyn_msgarg_get_int64_raw(Int64, @core.RawAddress) -> Int
+
+pub fn alljoyn_msgarg_get_objectpath_raw(Int64, @core.RawAddress) -> Int
+
+pub fn alljoyn_msgarg_get_signature_raw(Int64, @core.RawAddress) -> Int
+
+pub fn alljoyn_msgarg_get_string_raw(Int64, @core.RawAddress) -> Int
+
+pub fn alljoyn_msgarg_get_uint16_array_raw(Int64, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn alljoyn_msgarg_get_uint16_raw(Int64, @core.RawAddress) -> Int
+
+pub fn alljoyn_msgarg_get_uint32_array_raw(Int64, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn alljoyn_msgarg_get_uint32_raw(Int64, @core.RawAddress) -> Int
+
+pub fn alljoyn_msgarg_get_uint64_array_raw(Int64, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn alljoyn_msgarg_get_uint64_raw(Int64, @core.RawAddress) -> Int
+
+pub fn alljoyn_msgarg_get_uint8_array_raw(Int64, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn alljoyn_msgarg_get_uint8_raw(Int64, @core.RawAddress) -> Int
+
+pub fn alljoyn_msgarg_get_variant_array_raw(Int64, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn alljoyn_msgarg_get_variant_raw(Int64, Int64) -> Int
+
+pub fn alljoyn_msgarg_getkey_raw(Int64) -> Int64
+
+pub fn alljoyn_msgarg_getmember_raw(Int64, UInt64) -> Int64
+
+pub fn alljoyn_msgarg_getnummembers_raw(Int64) -> UInt64
+
+pub fn alljoyn_msgarg_gettype_raw(Int64) -> Int
+
+pub fn alljoyn_msgarg_getvalue_raw(Int64) -> Int64
+
+pub fn alljoyn_msgarg_hassignature_raw(Int64, @core.RawAddress) -> Int
+
+pub fn alljoyn_msgarg_set_bool_array_raw(Int64, UInt64, @core.RawAddress) -> Int
+
+pub fn alljoyn_msgarg_set_bool_raw(Int64, Int) -> Int
+
+pub fn alljoyn_msgarg_set_double_array_raw(Int64, UInt64, @core.RawAddress) -> Int
+
+pub fn alljoyn_msgarg_set_double_raw(Int64, Double) -> Int
+
+pub fn alljoyn_msgarg_set_int16_array_raw(Int64, UInt64, @core.RawAddress) -> Int
+
+pub fn alljoyn_msgarg_set_int16_raw(Int64, Int) -> Int
+
+pub fn alljoyn_msgarg_set_int32_array_raw(Int64, UInt64, @core.RawAddress) -> Int
+
+pub fn alljoyn_msgarg_set_int32_raw(Int64, Int) -> Int
+
+pub fn alljoyn_msgarg_set_int64_array_raw(Int64, UInt64, @core.RawAddress) -> Int
+
+pub fn alljoyn_msgarg_set_int64_raw(Int64, Int64) -> Int
+
+pub fn alljoyn_msgarg_set_objectpath_array_raw(Int64, UInt64, @core.RawAddress) -> Int
+
+pub fn alljoyn_msgarg_set_objectpath_raw(Int64, @core.RawAddress) -> Int
+
+pub fn alljoyn_msgarg_set_signature_array_raw(Int64, UInt64, @core.RawAddress) -> Int
+
+pub fn alljoyn_msgarg_set_signature_raw(Int64, @core.RawAddress) -> Int
+
+pub fn alljoyn_msgarg_set_string_array_raw(Int64, UInt64, @core.RawAddress) -> Int
+
+pub fn alljoyn_msgarg_set_string_raw(Int64, @core.RawAddress) -> Int
+
+pub fn alljoyn_msgarg_set_uint16_array_raw(Int64, UInt64, @core.RawAddress) -> Int
+
+pub fn alljoyn_msgarg_set_uint16_raw(Int64, UInt) -> Int
+
+pub fn alljoyn_msgarg_set_uint32_array_raw(Int64, UInt64, @core.RawAddress) -> Int
+
+pub fn alljoyn_msgarg_set_uint32_raw(Int64, UInt) -> Int
+
+pub fn alljoyn_msgarg_set_uint64_array_raw(Int64, UInt64, @core.RawAddress) -> Int
+
+pub fn alljoyn_msgarg_set_uint64_raw(Int64, UInt64) -> Int
+
+pub fn alljoyn_msgarg_set_uint8_array_raw(Int64, UInt64, @core.RawAddress) -> Int
+
+pub fn alljoyn_msgarg_set_uint8_raw(Int64, UInt) -> Int
+
+pub fn alljoyn_msgarg_setdictentry_raw(Int64, Int64, Int64) -> Int
+
+pub fn alljoyn_msgarg_setstruct_raw(Int64, Int64, UInt64) -> Int
+
+pub fn alljoyn_msgarg_signature_raw(Int64, @core.RawAddress, UInt64) -> UInt64
+
+pub fn alljoyn_msgarg_stabilize_raw(Int64) -> Unit
+
+pub fn alljoyn_msgarg_tostring_raw(Int64, @core.RawAddress, UInt64, UInt64) -> UInt64
+
+pub let alljoyn_named_pipe_connect_spec : String
+
+pub let alljoyn_object_path : Int
+
+pub fn alljoyn_observer_create_raw(Int64, @core.RawAddress, UInt64) -> Int64
+
+pub fn alljoyn_observer_destroy_raw(Int64) -> Unit
+
+pub fn alljoyn_observer_get_raw(Int64, @core.RawAddress, @core.RawAddress) -> Int64
+
+pub fn alljoyn_observer_getfirst_raw(Int64) -> Int64
+
+pub fn alljoyn_observer_getnext_raw(Int64, Int64) -> Int64
+
+pub fn alljoyn_observer_registerlistener_raw(Int64, Int64, Int) -> Unit
+
+pub fn alljoyn_observer_unregisteralllisteners_raw(Int64) -> Unit
+
+pub fn alljoyn_observer_unregisterlistener_raw(Int64, Int64) -> Unit
+
+pub fn alljoyn_observerlistener_create_raw(@core.RawAddress, @core.RawAddress) -> Int64
+
+pub fn alljoyn_observerlistener_destroy_raw(Int64) -> Unit
+
+pub fn alljoyn_passwordmanager_setcredentials_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn alljoyn_permissionconfigurationlistener_create_raw(@core.RawAddress, @core.RawAddress) -> Int64
+
+pub fn alljoyn_permissionconfigurationlistener_destroy_raw(Int64) -> Unit
+
+pub fn alljoyn_permissionconfigurator_certificatechain_destroy_raw(@core.RawAddress) -> Unit
+
+pub fn alljoyn_permissionconfigurator_certificateid_cleanup_raw(@core.RawAddress) -> Unit
+
+pub fn alljoyn_permissionconfigurator_certificateidarray_cleanup_raw(@core.RawAddress) -> Unit
+
+pub fn alljoyn_permissionconfigurator_claim_raw(Int64, @core.RawAddress, @core.RawAddress, @core.RawAddress, UInt64, @core.RawAddress, @core.RawAddress, UInt64) -> Int
+
+pub fn alljoyn_permissionconfigurator_endmanagement_raw(Int64) -> Int
+
+pub fn alljoyn_permissionconfigurator_getapplicationstate_raw(Int64, @core.RawAddress) -> Int
+
+pub fn alljoyn_permissionconfigurator_getclaimcapabilities_raw(Int64, @core.RawAddress) -> Int
+
+pub fn alljoyn_permissionconfigurator_getclaimcapabilitiesadditionalinfo_raw(Int64, @core.RawAddress) -> Int
+
+pub fn alljoyn_permissionconfigurator_getdefaultclaimcapabilities_raw() -> UInt
+
+pub fn alljoyn_permissionconfigurator_getdefaultpolicy_raw(Int64, @core.RawAddress) -> Int
+
+pub fn alljoyn_permissionconfigurator_getidentity_raw(Int64, @core.RawAddress) -> Int
+
+pub fn alljoyn_permissionconfigurator_getidentitycertificateid_raw(Int64, @core.RawAddress) -> Int
+
+pub fn alljoyn_permissionconfigurator_getmanifests_raw(Int64, @core.RawAddress) -> Int
+
+pub fn alljoyn_permissionconfigurator_getmanifesttemplate_raw(Int64, @core.RawAddress) -> Int
+
+pub fn alljoyn_permissionconfigurator_getmembershipsummaries_raw(Int64, @core.RawAddress) -> Int
+
+pub fn alljoyn_permissionconfigurator_getpolicy_raw(Int64, @core.RawAddress) -> Int
+
+pub fn alljoyn_permissionconfigurator_getpublickey_raw(Int64, @core.RawAddress) -> Int
+
+pub fn alljoyn_permissionconfigurator_installmanifests_raw(Int64, @core.RawAddress, UInt64, Int) -> Int
+
+pub fn alljoyn_permissionconfigurator_installmembership_raw(Int64, @core.RawAddress) -> Int
+
+pub fn alljoyn_permissionconfigurator_manifestarray_cleanup_raw(@core.RawAddress) -> Unit
+
+pub fn alljoyn_permissionconfigurator_manifesttemplate_destroy_raw(@core.RawAddress) -> Unit
+
+pub fn alljoyn_permissionconfigurator_policy_destroy_raw(@core.RawAddress) -> Unit
+
+pub fn alljoyn_permissionconfigurator_publickey_destroy_raw(@core.RawAddress) -> Unit
+
+pub fn alljoyn_permissionconfigurator_removemembership_raw(Int64, @core.RawAddress, UInt64, @core.RawAddress, @core.RawAddress, UInt64) -> Int
+
+pub fn alljoyn_permissionconfigurator_reset_raw(Int64) -> Int
+
+pub fn alljoyn_permissionconfigurator_resetpolicy_raw(Int64) -> Int
+
+pub fn alljoyn_permissionconfigurator_setapplicationstate_raw(Int64, Int) -> Int
+
+pub fn alljoyn_permissionconfigurator_setclaimcapabilities_raw(Int64, UInt) -> Int
+
+pub fn alljoyn_permissionconfigurator_setclaimcapabilitiesadditionalinfo_raw(Int64, UInt) -> Int
+
+pub fn alljoyn_permissionconfigurator_setmanifesttemplatefromxml_raw(Int64, @core.RawAddress) -> Int
+
+pub fn alljoyn_permissionconfigurator_startmanagement_raw(Int64) -> Int
+
+pub fn alljoyn_permissionconfigurator_updateidentity_raw(Int64, @core.RawAddress, @core.RawAddress, UInt64) -> Int
+
+pub fn alljoyn_permissionconfigurator_updatepolicy_raw(Int64, @core.RawAddress) -> Int
+
+pub fn alljoyn_pinglistener_create_raw(@core.RawAddress, @core.RawAddress) -> Int64
+
+pub fn alljoyn_pinglistener_destroy_raw(Int64) -> Unit
+
+pub let alljoyn_prop_access_read : UInt
+
+pub let alljoyn_prop_access_rw : UInt
+
+pub let alljoyn_prop_access_write : UInt
+
+pub let alljoyn_proximity_any : UInt
+
+pub let alljoyn_proximity_network : UInt
+
+pub let alljoyn_proximity_physical : UInt
+
+pub fn alljoyn_proxybusobject_addchild_raw(Int64, Int64) -> Int
+
+pub fn alljoyn_proxybusobject_addinterface_by_name_raw(Int64, @core.RawAddress) -> Int
+
+pub fn alljoyn_proxybusobject_addinterface_raw(Int64, Int64) -> Int
+
+pub fn alljoyn_proxybusobject_copy_raw(Int64) -> Int64
+
+pub fn alljoyn_proxybusobject_create_raw(Int64, @core.RawAddress, @core.RawAddress, UInt) -> Int64
+
+pub fn alljoyn_proxybusobject_create_secure_raw(Int64, @core.RawAddress, @core.RawAddress, UInt) -> Int64
+
+pub fn alljoyn_proxybusobject_destroy_raw(Int64) -> Unit
+
+pub fn alljoyn_proxybusobject_enablepropertycaching_raw(Int64) -> Unit
+
+pub fn alljoyn_proxybusobject_getallproperties_raw(Int64, @core.RawAddress, Int64) -> Int
+
+pub fn alljoyn_proxybusobject_getallpropertiesasync_raw(Int64, @core.RawAddress, @core.RawAddress, UInt, @core.RawAddress) -> Int
+
+pub fn alljoyn_proxybusobject_getchild_raw(Int64, @core.RawAddress) -> Int64
+
+pub fn alljoyn_proxybusobject_getchildren_raw(Int64, @core.RawAddress, UInt64) -> UInt64
+
+pub fn alljoyn_proxybusobject_getinterface_raw(Int64, @core.RawAddress) -> Int64
+
+pub fn alljoyn_proxybusobject_getinterfaces_raw(Int64, @core.RawAddress, UInt64) -> UInt64
+
+pub fn alljoyn_proxybusobject_getpath_raw(Int64) -> @core.RawAddress
+
+pub fn alljoyn_proxybusobject_getproperty_raw(Int64, @core.RawAddress, @core.RawAddress, Int64) -> Int
+
+pub fn alljoyn_proxybusobject_getpropertyasync_raw(Int64, @core.RawAddress, @core.RawAddress, @core.RawAddress, UInt, @core.RawAddress) -> Int
+
+pub fn alljoyn_proxybusobject_getservicename_raw(Int64) -> @core.RawAddress
+
+pub fn alljoyn_proxybusobject_getsessionid_raw(Int64) -> UInt
+
+pub fn alljoyn_proxybusobject_getuniquename_raw(Int64) -> @core.RawAddress
+
+pub fn alljoyn_proxybusobject_implementsinterface_raw(Int64, @core.RawAddress) -> Int
+
+pub fn alljoyn_proxybusobject_introspectremoteobject_raw(Int64) -> Int
+
+pub fn alljoyn_proxybusobject_introspectremoteobjectasync_raw(Int64, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn alljoyn_proxybusobject_issecure_raw(Int64) -> Int
+
+pub fn alljoyn_proxybusobject_isvalid_raw(Int64) -> Int
+
+pub fn alljoyn_proxybusobject_methodcall_member_noreply_raw(Int64, Bytes, Int64, UInt64, UInt) -> Int
+
+pub fn alljoyn_proxybusobject_methodcall_member_raw(Int64, Bytes, Int64, UInt64, Int64, UInt, UInt) -> Int
+
+pub fn alljoyn_proxybusobject_methodcall_noreply_raw(Int64, @core.RawAddress, @core.RawAddress, Int64, UInt64, UInt) -> Int
+
+pub fn alljoyn_proxybusobject_methodcall_raw(Int64, @core.RawAddress, @core.RawAddress, Int64, UInt64, Int64, UInt, UInt) -> Int
+
+pub fn alljoyn_proxybusobject_methodcallasync_member_raw(Int64, Bytes, @core.RawAddress, Int64, UInt64, @core.RawAddress, UInt, UInt) -> Int
+
+pub fn alljoyn_proxybusobject_methodcallasync_raw(Int64, @core.RawAddress, @core.RawAddress, @core.RawAddress, Int64, UInt64, @core.RawAddress, UInt, UInt) -> Int
+
+pub fn alljoyn_proxybusobject_parsexml_raw(Int64, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn alljoyn_proxybusobject_ref_create_raw(Int64) -> Int64
+
+pub fn alljoyn_proxybusobject_ref_decref_raw(Int64) -> Unit
+
+pub fn alljoyn_proxybusobject_ref_get_raw(Int64) -> Int64
+
+pub fn alljoyn_proxybusobject_ref_incref_raw(Int64) -> Unit
+
+pub fn alljoyn_proxybusobject_registerpropertieschangedlistener_raw(Int64, @core.RawAddress, @core.RawAddress, UInt64, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn alljoyn_proxybusobject_removechild_raw(Int64, @core.RawAddress) -> Int
+
+pub fn alljoyn_proxybusobject_secureconnection_raw(Int64, Int) -> Int
+
+pub fn alljoyn_proxybusobject_secureconnectionasync_raw(Int64, Int) -> Int
+
+pub fn alljoyn_proxybusobject_setproperty_raw(Int64, @core.RawAddress, @core.RawAddress, Int64) -> Int
+
+pub fn alljoyn_proxybusobject_setpropertyasync_raw(Int64, @core.RawAddress, @core.RawAddress, Int64, @core.RawAddress, UInt, @core.RawAddress) -> Int
+
+pub fn alljoyn_proxybusobject_unregisterpropertieschangedlistener_raw(Int64, @core.RawAddress, @core.RawAddress) -> Int
+
+pub let alljoyn_read_ready : UInt
+
+pub fn alljoyn_routerinit_raw() -> Int
+
+pub fn alljoyn_routerinitwithconfig_raw(@core.RawAddress) -> Int
+
+pub fn alljoyn_routershutdown_raw() -> Int
+
+pub fn alljoyn_securityapplicationproxy_claim_raw(Int64, @core.RawAddress, @core.RawAddress, @core.RawAddress, UInt64, @core.RawAddress, @core.RawAddress, UInt64) -> Int
+
+pub fn alljoyn_securityapplicationproxy_computemanifestdigest_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn alljoyn_securityapplicationproxy_create_raw(Int64, @core.RawAddress, UInt) -> Int64
+
+pub fn alljoyn_securityapplicationproxy_destroy_raw(Int64) -> Unit
+
+pub fn alljoyn_securityapplicationproxy_digest_destroy_raw(@core.RawAddress) -> Unit
+
+pub fn alljoyn_securityapplicationproxy_eccpublickey_destroy_raw(@core.RawAddress) -> Unit
+
+pub fn alljoyn_securityapplicationproxy_endmanagement_raw(Int64) -> Int
+
+pub fn alljoyn_securityapplicationproxy_getapplicationstate_raw(Int64, @core.RawAddress) -> Int
+
+pub fn alljoyn_securityapplicationproxy_getclaimcapabilities_raw(Int64, @core.RawAddress) -> Int
+
+pub fn alljoyn_securityapplicationproxy_getclaimcapabilitiesadditionalinfo_raw(Int64, @core.RawAddress) -> Int
+
+pub fn alljoyn_securityapplicationproxy_getdefaultpolicy_raw(Int64, @core.RawAddress) -> Int
+
+pub fn alljoyn_securityapplicationproxy_geteccpublickey_raw(Int64, @core.RawAddress) -> Int
+
+pub fn alljoyn_securityapplicationproxy_getmanifesttemplate_raw(Int64, @core.RawAddress) -> Int
+
+pub fn alljoyn_securityapplicationproxy_getpermissionmanagementsessionport_raw() -> UInt
+
+pub fn alljoyn_securityapplicationproxy_getpolicy_raw(Int64, @core.RawAddress) -> Int
+
+pub fn alljoyn_securityapplicationproxy_installmembership_raw(Int64, @core.RawAddress) -> Int
+
+pub fn alljoyn_securityapplicationproxy_manifest_destroy_raw(@core.RawAddress) -> Unit
+
+pub fn alljoyn_securityapplicationproxy_manifesttemplate_destroy_raw(@core.RawAddress) -> Unit
+
+pub fn alljoyn_securityapplicationproxy_policy_destroy_raw(@core.RawAddress) -> Unit
+
+pub fn alljoyn_securityapplicationproxy_reset_raw(Int64) -> Int
+
+pub fn alljoyn_securityapplicationproxy_resetpolicy_raw(Int64) -> Int
+
+pub fn alljoyn_securityapplicationproxy_setmanifestsignature_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, UInt64, @core.RawAddress) -> Int
+
+pub fn alljoyn_securityapplicationproxy_signmanifest_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn alljoyn_securityapplicationproxy_startmanagement_raw(Int64) -> Int
+
+pub fn alljoyn_securityapplicationproxy_updateidentity_raw(Int64, @core.RawAddress, @core.RawAddress, UInt64) -> Int
+
+pub fn alljoyn_securityapplicationproxy_updatepolicy_raw(Int64, @core.RawAddress) -> Int
+
+pub fn alljoyn_sessionlistener_create_raw(@core.RawAddress, @core.RawAddress) -> Int64
+
+pub fn alljoyn_sessionlistener_destroy_raw(Int64) -> Unit
+
+pub let alljoyn_sessionlost_invalid : Int
+
+pub let alljoyn_sessionlost_link_timeout : Int
+
+pub let alljoyn_sessionlost_reason_other : Int
+
+pub let alljoyn_sessionlost_remote_end_closed_abruptly : Int
+
+pub let alljoyn_sessionlost_remote_end_left_session : Int
+
+pub let alljoyn_sessionlost_removed_by_binder : Int
+
+pub fn alljoyn_sessionopts_cmp_raw(Int64, Int64) -> Int
+
+pub fn alljoyn_sessionopts_create_raw(UInt, Int, UInt, UInt) -> Int64
+
+pub fn alljoyn_sessionopts_destroy_raw(Int64) -> Unit
+
+pub fn alljoyn_sessionopts_get_multipoint_raw(Int64) -> Int
+
+pub fn alljoyn_sessionopts_get_proximity_raw(Int64) -> UInt
+
+pub fn alljoyn_sessionopts_get_traffic_raw(Int64) -> UInt
+
+pub fn alljoyn_sessionopts_get_transports_raw(Int64) -> UInt
+
+pub fn alljoyn_sessionopts_iscompatible_raw(Int64, Int64) -> Int
+
+pub fn alljoyn_sessionopts_set_multipoint_raw(Int64, Int) -> Unit
+
+pub fn alljoyn_sessionopts_set_proximity_raw(Int64, UInt) -> Unit
+
+pub fn alljoyn_sessionopts_set_traffic_raw(Int64, UInt) -> Unit
+
+pub fn alljoyn_sessionopts_set_transports_raw(Int64, UInt) -> Unit
+
+pub fn alljoyn_sessionportlistener_create_raw(@core.RawAddress, @core.RawAddress) -> Int64
+
+pub fn alljoyn_sessionportlistener_destroy_raw(Int64) -> Unit
+
+pub fn alljoyn_shutdown_raw() -> Int
+
+pub let alljoyn_signature : Int
+
+pub let alljoyn_string : Int
+
+pub let alljoyn_struct : Int
+
+pub let alljoyn_struct_close : Int
+
+pub let alljoyn_struct_open : Int
+
+pub let alljoyn_traffic_type_messages : UInt
+
+pub let alljoyn_traffic_type_raw_reliable : UInt
+
+pub let alljoyn_traffic_type_raw_unreliable : UInt
+
+pub let alljoyn_uint16 : Int
+
+pub let alljoyn_uint16_array : Int
+
+pub let alljoyn_uint32 : Int
+
+pub let alljoyn_uint32_array : Int
+
+pub let alljoyn_uint64 : Int
+
+pub let alljoyn_uint64_array : Int
+
+pub fn alljoyn_unity_deferred_callbacks_process_raw() -> Int
+
+pub fn alljoyn_unity_set_deferred_callback_mainthread_only_raw(Int) -> Unit
+
+pub let alljoyn_variant : Int
+
+pub let alljoyn_wildcard : Int
+
+pub let alljoyn_write_ready : UInt
+
+pub let announced : Int
+
+pub let capable_ecdhe_ecdsa : Int
+
+pub let capable_ecdhe_null : Int
+
+pub let capable_ecdhe_speke : Int
+
+pub let claimable : Int
+
+pub let claimed : Int
+
+pub let er_about_aboutdata_missing_required_field : Int
+
+pub let er_about_default_language_not_specified : Int
+
+pub let er_about_field_already_specified : Int
+
+pub let er_about_invalid_aboutdata_field_appid_size : Int
+
+pub let er_about_invalid_aboutdata_field_value : Int
+
+pub let er_about_invalid_aboutdata_listener : Int
+
+pub let er_about_sessionport_not_bound : Int
+
+pub let er_alerted_thread : Int
+
+pub let er_alljoyn_access_permission_error : Int
+
+pub let er_alljoyn_access_permission_warning : Int
+
+pub let er_alljoyn_advertisename_reply_already_advertising : Int
+
+pub let er_alljoyn_advertisename_reply_failed : Int
+
+pub let er_alljoyn_advertisename_reply_transport_not_available : Int
+
+pub let er_alljoyn_bindsessionport_reply_already_exists : Int
+
+pub let er_alljoyn_bindsessionport_reply_failed : Int
+
+pub let er_alljoyn_bindsessionport_reply_invalid_opts : Int
+
+pub let er_alljoyn_canceladvertisename_reply_failed : Int
+
+pub let er_alljoyn_cancelfindadvertisedname_reply_failed : Int
+
+pub let er_alljoyn_findadvertisedname_reply_already_discovering : Int
+
+pub let er_alljoyn_findadvertisedname_reply_failed : Int
+
+pub let er_alljoyn_findadvertisedname_reply_transport_not_available : Int
+
+pub let er_alljoyn_joinsession_reply_already_joined : Int
+
+pub let er_alljoyn_joinsession_reply_bad_session_opts : Int
+
+pub let er_alljoyn_joinsession_reply_connect_failed : Int
+
+pub let er_alljoyn_joinsession_reply_failed : Int
+
+pub let er_alljoyn_joinsession_reply_no_session : Int
+
+pub let er_alljoyn_joinsession_reply_rejected : Int
+
+pub let er_alljoyn_joinsession_reply_unreachable : Int
+
+pub let er_alljoyn_leavesession_reply_failed : Int
+
+pub let er_alljoyn_leavesession_reply_no_session : Int
+
+pub let er_alljoyn_onappresume_reply_failed : Int
+
+pub let er_alljoyn_onappresume_reply_unsupported : Int
+
+pub let er_alljoyn_onappsuspend_reply_failed : Int
+
+pub let er_alljoyn_onappsuspend_reply_unsupported : Int
+
+pub let er_alljoyn_ping_failed : Int
+
+pub let er_alljoyn_ping_reply_failed : Int
+
+pub let er_alljoyn_ping_reply_in_progress : Int
+
+pub let er_alljoyn_ping_reply_incompatible_remote_routing_node : Int
+
+pub let er_alljoyn_ping_reply_timeout : Int
+
+pub let er_alljoyn_ping_reply_unknown_name : Int
+
+pub let er_alljoyn_ping_reply_unreachable : Int
+
+pub let er_alljoyn_removesessionmember_incompatible_remote_daemon : Int
+
+pub let er_alljoyn_removesessionmember_not_binder : Int
+
+pub let er_alljoyn_removesessionmember_not_found : Int
+
+pub let er_alljoyn_removesessionmember_not_multipoint : Int
+
+pub let er_alljoyn_removesessionmember_reply_failed : Int
+
+pub let er_alljoyn_removesessionmember_reply_no_session : Int
+
+pub let er_alljoyn_setlinktimeout_reply_failed : Int
+
+pub let er_alljoyn_setlinktimeout_reply_no_dest_support : Int
+
+pub let er_alljoyn_setlinktimeout_reply_not_supported : Int
+
+pub let er_alljoyn_unbindsessionport_reply_bad_port : Int
+
+pub let er_alljoyn_unbindsessionport_reply_failed : Int
+
+pub let er_application_state_listener_already_exists : Int
+
+pub let er_application_state_listener_no_such_listener : Int
+
+pub let er_ardp_backpressure : Int
+
+pub let er_ardp_disconnecting : Int
+
+pub let er_ardp_invalid_connection : Int
+
+pub let er_ardp_invalid_response : Int
+
+pub let er_ardp_invalid_state : Int
+
+pub let er_ardp_persist_timeout : Int
+
+pub let er_ardp_probe_timeout : Int
+
+pub let er_ardp_remote_connection_reset : Int
+
+pub let er_ardp_ttl_expired : Int
+
+pub let er_ardp_version_not_supported : Int
+
+pub let er_ardp_write_blocked : Int
+
+pub let er_auth_fail : Int
+
+pub let er_auth_user_reject : Int
+
+pub let er_bad_arg_1 : Int
+
+pub let er_bad_arg_2 : Int
+
+pub let er_bad_arg_3 : Int
+
+pub let er_bad_arg_4 : Int
+
+pub let er_bad_arg_5 : Int
+
+pub let er_bad_arg_6 : Int
+
+pub let er_bad_arg_7 : Int
+
+pub let er_bad_arg_8 : Int
+
+pub let er_bad_arg_count : Int
+
+pub let er_bad_hostname : Int
+
+pub let er_bad_string_encoding : Int
+
+pub let er_bad_transport_mask : Int
+
+pub let er_buffer_too_small : Int
+
+pub let er_bus_already_connected : Int
+
+pub let er_bus_already_listening : Int
+
+pub let er_bus_annotation_already_exists : Int
+
+pub let er_bus_authentication_pending : Int
+
+pub let er_bus_bad_body_len : Int
+
+pub let er_bus_bad_bus_name : Int
+
+pub let er_bus_bad_child_path : Int
+
+pub let er_bus_bad_error_name : Int
+
+pub let er_bus_bad_hdr_flags : Int
+
+pub let er_bus_bad_header_field : Int
+
+pub let er_bus_bad_header_len : Int
+
+pub let er_bus_bad_interface_name : Int
+
+pub let er_bus_bad_length : Int
+
+pub let er_bus_bad_member_name : Int
+
+pub let er_bus_bad_obj_path : Int
+
+pub let er_bus_bad_send_parameter : Int
+
+pub let er_bus_bad_sender_id : Int
+
+pub let er_bus_bad_session_opts : Int
+
+pub let er_bus_bad_signature : Int
+
+pub let er_bus_bad_transport_args : Int
+
+pub let er_bus_bad_value : Int
+
+pub let er_bus_bad_value_type : Int
+
+pub let er_bus_bad_xml : Int
+
+pub let er_bus_blocking_call_not_allowed : Int
+
+pub let er_bus_bus_already_started : Int
+
+pub let er_bus_bus_not_started : Int
+
+pub let er_bus_cannot_add_handler : Int
+
+pub let er_bus_cannot_add_interface : Int
+
+pub let er_bus_cannot_expand_message : Int
+
+pub let er_bus_connect_failed : Int
+
+pub let er_bus_connection_rejected : Int
+
+pub let er_bus_corrupt_keystore : Int
+
+pub let er_bus_description_already_exists : Int
+
+pub let er_bus_destination_not_authenticated : Int
+
+pub let er_bus_element_not_found : Int
+
+pub let er_bus_empty_message : Int
+
+pub let er_bus_endpoint_closing : Int
+
+pub let er_bus_endpoint_redirected : Int
+
+pub let er_bus_error_name_missing : Int
+
+pub let er_bus_error_response : Int
+
+pub let er_bus_errors : Int
+
+pub let er_bus_establish_failed : Int
+
+pub let er_bus_handles_mismatch : Int
+
+pub let er_bus_handles_not_enabled : Int
+
+pub let er_bus_hdr_expansion_invalid : Int
+
+pub let er_bus_iface_already_exists : Int
+
+pub let er_bus_incompatible_daemon : Int
+
+pub let er_bus_interface_activated : Int
+
+pub let er_bus_interface_mismatch : Int
+
+pub let er_bus_interface_missing : Int
+
+pub let er_bus_interface_no_such_member : Int
+
+pub let er_bus_invalid_auth_mechanism : Int
+
+pub let er_bus_invalid_header_checksum : Int
+
+pub let er_bus_invalid_header_serial : Int
+
+pub let er_bus_key_expired : Int
+
+pub let er_bus_key_store_not_loaded : Int
+
+pub let er_bus_key_unavailable : Int
+
+pub let er_bus_keyblob_op_invalid : Int
+
+pub let er_bus_keystore_not_loaded : Int
+
+pub let er_bus_keystore_version_mismatch : Int
+
+pub let er_bus_listener_already_set : Int
+
+pub let er_bus_match_rule_not_found : Int
+
+pub let er_bus_member_already_exists : Int
+
+pub let er_bus_member_missing : Int
+
+pub let er_bus_member_no_such_signature : Int
+
+pub let er_bus_message_decryption_failed : Int
+
+pub let er_bus_message_not_encrypted : Int
+
+pub let er_bus_method_call_aborted : Int
+
+pub let er_bus_missing_compression_token : Int
+
+pub let er_bus_name_too_long : Int
+
+pub let er_bus_no_authentication_mechanism : Int
+
+pub let er_bus_no_call_for_reply : Int
+
+pub let er_bus_no_endpoint : Int
+
+pub let er_bus_no_listener : Int
+
+pub let er_bus_no_peer_guid : Int
+
+pub let er_bus_no_route : Int
+
+pub let er_bus_no_session : Int
+
+pub let er_bus_no_such_annotation : Int
+
+pub let er_bus_no_such_handle : Int
+
+pub let er_bus_no_such_interface : Int
+
+pub let er_bus_no_such_message : Int
+
+pub let er_bus_no_such_object : Int
+
+pub let er_bus_no_such_property : Int
+
+pub let er_bus_no_such_service : Int
+
+pub let er_bus_no_transports : Int
+
+pub let er_bus_not_a_complete_type : Int
+
+pub let er_bus_not_a_dictionary : Int
+
+pub let er_bus_not_allowed : Int
+
+pub let er_bus_not_authenticating : Int
+
+pub let er_bus_not_authorized : Int
+
+pub let er_bus_not_compressed : Int
+
+pub let er_bus_not_connected : Int
+
+pub let er_bus_not_nul_terminated : Int
+
+pub let er_bus_not_owner : Int
+
+pub let er_bus_obj_already_exists : Int
+
+pub let er_bus_obj_not_found : Int
+
+pub let er_bus_object_no_such_interface : Int
+
+pub let er_bus_object_no_such_member : Int
+
+pub let er_bus_object_not_registered : Int
+
+pub let er_bus_path_missing : Int
+
+pub let er_bus_peer_auth_version_mismatch : Int
+
+pub let er_bus_ping_group_not_found : Int
+
+pub let er_bus_policy_violation : Int
+
+pub let er_bus_property_access_denied : Int
+
+pub let er_bus_property_already_exists : Int
+
+pub let er_bus_property_value_not_set : Int
+
+pub let er_bus_read_error : Int
+
+pub let er_bus_removed_by_binder : Int
+
+pub let er_bus_removed_by_binder_self : Int
+
+pub let er_bus_reply_is_error_message : Int
+
+pub let er_bus_reply_serial_missing : Int
+
+pub let er_bus_security_fatal : Int
+
+pub let er_bus_security_not_enabled : Int
+
+pub let er_bus_self_connect : Int
+
+pub let er_bus_set_property_rejected : Int
+
+pub let er_bus_set_wrong_signature : Int
+
+pub let er_bus_signature_mismatch : Int
+
+pub let er_bus_stopping : Int
+
+pub let er_bus_time_to_live_expired : Int
+
+pub let er_bus_transport_access_denied : Int
+
+pub let er_bus_transport_not_available : Int
+
+pub let er_bus_transport_not_started : Int
+
+pub let er_bus_truncated : Int
+
+pub let er_bus_unexpected_disposition : Int
+
+pub let er_bus_unexpected_signature : Int
+
+pub let er_bus_unknown_interface : Int
+
+pub let er_bus_unknown_path : Int
+
+pub let er_bus_unknown_serial : Int
+
+pub let er_bus_unmatched_reply_serial : Int
+
+pub let er_bus_wait_failed : Int
+
+pub let er_bus_write_error : Int
+
+pub let er_bus_write_queue_full : Int
+
+pub let er_certificate_not_found : Int
+
+pub let er_common_errors : Int
+
+pub let er_conn_refused : Int
+
+pub let er_connection_limit_exceeded : Int
+
+pub let er_corrupt_keyblob : Int
+
+pub let er_crypto_error : Int
+
+pub let er_crypto_hash_uninitialized : Int
+
+pub let er_crypto_illegal_parameters : Int
+
+pub let er_crypto_insufficient_security : Int
+
+pub let er_crypto_key_unavailable : Int
+
+pub let er_crypto_key_unusable : Int
+
+pub let er_crypto_truncated : Int
+
+pub let er_dbus_release_name_reply_non_existent : Int
+
+pub let er_dbus_release_name_reply_not_owner : Int
+
+pub let er_dbus_release_name_reply_released : Int
+
+pub let er_dbus_request_name_reply_already_owner : Int
+
+pub let er_dbus_request_name_reply_exists : Int
+
+pub let er_dbus_request_name_reply_in_queue : Int
+
+pub let er_dbus_request_name_reply_primary_owner : Int
+
+pub let er_dbus_start_reply_already_running : Int
+
+pub let er_dead_thread : Int
+
+pub let er_deadlock : Int
+
+pub let er_digest_mismatch : Int
+
+pub let er_duplicate_certificate : Int
+
+pub let er_duplicate_key : Int
+
+pub let er_empty_key_blob : Int
+
+pub let er_end_of_data : Int
+
+pub let er_eof : Int
+
+pub let er_external_thread : Int
+
+pub let er_fail : Int
+
+pub let er_feature_not_available : Int
+
+pub let er_init_failed : Int
+
+pub let er_invalid_address : Int
+
+pub let er_invalid_application_state : Int
+
+pub let er_invalid_cert_chain : Int
+
+pub let er_invalid_certificate : Int
+
+pub let er_invalid_certificate_usage : Int
+
+pub let er_invalid_config : Int
+
+pub let er_invalid_data : Int
+
+pub let er_invalid_guid : Int
+
+pub let er_invalid_http_method_used_for_rendezvous_server_interface_message : Int
+
+pub let er_invalid_key_encoding : Int
+
+pub let er_invalid_on_demand_connection_message_response : Int
+
+pub let er_invalid_persistent_connection_message_response : Int
+
+pub let er_invalid_rendezvous_server_interface_message : Int
+
+pub let er_invalid_signal_emission_type : Int
+
+pub let er_invalid_stream : Int
+
+pub let er_iodispatch_stopping : Int
+
+pub let er_key_store_already_initialized : Int
+
+pub let er_key_store_id_not_yet_set : Int
+
+pub let er_language_not_supported : Int
+
+pub let er_management_already_started : Int
+
+pub let er_management_not_started : Int
+
+pub let er_manifest_not_found : Int
+
+pub let er_manifest_rejected : Int
+
+pub let er_missing_digest_in_certificate : Int
+
+pub let er_no_common_trust : Int
+
+pub let er_no_such_alarm : Int
+
+pub let er_no_such_device : Int
+
+pub let er_no_trust_anchor : Int
+
+pub let er_none : Int
+
+pub let er_not_conn : Int
+
+pub let er_not_connected_to_rendezvous_server : Int
+
+pub let er_not_implemented : Int
+
+pub let er_ok : Int
+
+pub let er_open_failed : Int
+
+pub let er_os_error : Int
+
+pub let er_out_of_memory : Int
+
+pub let er_p2_p : Int
+
+pub let er_p2_p_busy : Int
+
+pub let er_p2_p_disabled : Int
+
+pub let er_p2_p_forbidden : Int
+
+pub let er_p2_p_no_go : Int
+
+pub let er_p2_p_no_sta : Int
+
+pub let er_p2_p_not_connected : Int
+
+pub let er_p2_p_timeout : Int
+
+pub let er_packet_bad_crc : Int
+
+pub let er_packet_bad_format : Int
+
+pub let er_packet_bad_parameter : Int
+
+pub let er_packet_bus_no_such_channel : Int
+
+pub let er_packet_channel_fail : Int
+
+pub let er_packet_connect_timeout : Int
+
+pub let er_packet_too_large : Int
+
+pub let er_parse_error : Int
+
+pub let er_permission_denied : Int
+
+pub let er_policy_not_newer : Int
+
+pub let er_proximity_connection_establish_fail : Int
+
+pub let er_proximity_no_peers_found : Int
+
+pub let er_read_error : Int
+
+pub let er_rendezvous_server_deactivated_user : Int
+
+pub let er_rendezvous_server_err401_unauthorized_request : Int
+
+pub let er_rendezvous_server_err500_internal_error : Int
+
+pub let er_rendezvous_server_err503_status_unavailable : Int
+
+pub let er_rendezvous_server_root_certificate_uninitialized : Int
+
+pub let er_rendezvous_server_unknown_user : Int
+
+pub let er_rendezvous_server_unrecoverable_error : Int
+
+pub let er_slap_crc_error : Int
+
+pub let er_slap_error : Int
+
+pub let er_slap_hdr_checksum_error : Int
+
+pub let er_slap_invalid_packet_len : Int
+
+pub let er_slap_invalid_packet_type : Int
+
+pub let er_slap_len_mismatch : Int
+
+pub let er_slap_other_end_closed : Int
+
+pub let er_slap_packet_type_mismatch : Int
+
+pub let er_sock_closing : Int
+
+pub let er_sock_other_end_closed : Int
+
+pub let er_socket_bind_error : Int
+
+pub let er_ssl_connect : Int
+
+pub let er_ssl_errors : Int
+
+pub let er_ssl_init : Int
+
+pub let er_ssl_verify : Int
+
+pub let er_stopping_thread : Int
+
+pub let er_tcp_max_untrusted : Int
+
+pub let er_thread_no_wait : Int
+
+pub let er_thread_running : Int
+
+pub let er_thread_stopping : Int
+
+pub let er_threadpool_exhausted : Int
+
+pub let er_threadpool_stopping : Int
+
+pub let er_timeout : Int
+
+pub let er_timer_exiting : Int
+
+pub let er_timer_fallbehind : Int
+
+pub let er_timer_full : Int
+
+pub let er_timer_not_allowed : Int
+
+pub let er_udp_backpressure : Int
+
+pub let er_udp_bushello : Int
+
+pub let er_udp_demux_no_endpoint : Int
+
+pub let er_udp_disconnect : Int
+
+pub let er_udp_early_exit : Int
+
+pub let er_udp_endpoint_not_started : Int
+
+pub let er_udp_endpoint_removed : Int
+
+pub let er_udp_endpoint_stalled : Int
+
+pub let er_udp_invalid : Int
+
+pub let er_udp_local_disconnect : Int
+
+pub let er_udp_local_disconnect_fail : Int
+
+pub let er_udp_message : Int
+
+pub let er_udp_msg_too_long : Int
+
+pub let er_udp_no_listener : Int
+
+pub let er_udp_no_network : Int
+
+pub let er_udp_not_disconnected : Int
+
+pub let er_udp_not_implemented : Int
+
+pub let er_udp_stopping : Int
+
+pub let er_udp_unexpected_flow : Int
+
+pub let er_udp_unexpected_length : Int
+
+pub let er_udp_unsupported : Int
+
+pub let er_unable_to_connect_to_rendezvous_server : Int
+
+pub let er_unable_to_send_message_to_rendezvous_server : Int
+
+pub let er_unknown_certificate : Int
+
+pub let er_utf_conversion_failed : Int
+
+pub let er_warning : Int
+
+pub let er_wouldblock : Int
+
+pub let er_write_error : Int
+
+pub let er_xml_acl_all_type_peer_with_others : Int
+
+pub let er_xml_acl_peer_not_unique : Int
+
+pub let er_xml_acl_peer_public_key_set : Int
+
+pub let er_xml_acl_peers_missing : Int
+
+pub let er_xml_acls_missing : Int
+
+pub let er_xml_annotation_not_unique : Int
+
+pub let er_xml_converter_error : Int
+
+pub let er_xml_interface_members_missing : Int
+
+pub let er_xml_interface_name_not_unique : Int
+
+pub let er_xml_invalid_acl_peer_children_count : Int
+
+pub let er_xml_invalid_acl_peer_public_key : Int
+
+pub let er_xml_invalid_acl_peer_type : Int
+
+pub let er_xml_invalid_annotations_count : Int
+
+pub let er_xml_invalid_attribute_value : Int
+
+pub let er_xml_invalid_base64 : Int
+
+pub let er_xml_invalid_element_children_count : Int
+
+pub let er_xml_invalid_element_name : Int
+
+pub let er_xml_invalid_interface_name : Int
+
+pub let er_xml_invalid_manifest_version : Int
+
+pub let er_xml_invalid_member_action : Int
+
+pub let er_xml_invalid_member_name : Int
+
+pub let er_xml_invalid_member_type : Int
+
+pub let er_xml_invalid_object_path : Int
+
+pub let er_xml_invalid_oid : Int
+
+pub let er_xml_invalid_policy_serial_number : Int
+
+pub let er_xml_invalid_policy_version : Int
+
+pub let er_xml_invalid_rules_count : Int
+
+pub let er_xml_invalid_security_level_annotation_value : Int
+
+pub let er_xml_malformed : Int
+
+pub let er_xml_member_deny_action_with_other : Int
+
+pub let er_xml_member_name_not_unique : Int
+
+pub let er_xml_object_path_not_unique : Int
+
+pub let need_update : Int
+
+pub let not_claimable : Int
+
+pub let password_generated_by_application : Int
+
+pub let password_generated_by_security_manager : Int
+
+pub let qcc_false : UInt
+
+pub fn qcc_status_text_raw(Int) -> @core.RawAddress
+
+pub let qcc_true : UInt
+
+pub let unannounced : Int
+
+// Errors
+
+// Types and methods
+
+// Type aliases
+pub using @4fac9202b24f6665 {type AlljoynAboutAnnouncedPtr_a6d1297deda3 as AlljoynAboutAnnouncedPtr}
+
+pub using @4fac9202b24f6665 {type AlljoynAboutAnnounceflag_7774a77d05c7 as AlljoynAboutAnnounceflag}
+
+pub using @4fac9202b24f6665 {type AlljoynAboutdata_d39f8e4afe81 as AlljoynAboutdata}
+
+pub using @4fac9202b24f6665 {type AlljoynAboutdatalistener_cd2ebf2a00fb as AlljoynAboutdatalistener}
+
+pub using @4fac9202b24f6665 {type AlljoynAboutdatalistenerCallbacks_7d6edb1149d9 as AlljoynAboutdatalistenerCallbacks}
+
+pub using @4fac9202b24f6665 {type AlljoynAboutdatalistenerGetaboutdataPtr_664d77688c0d as AlljoynAboutdatalistenerGetaboutdataPtr}
+
+pub using @4fac9202b24f6665 {type AlljoynAboutdatalistenerGetannouncedaboutdataPtr_3db4753f2981 as AlljoynAboutdatalistenerGetannouncedaboutdataPtr}
+
+pub using @4fac9202b24f6665 {type AlljoynAbouticon_dc128495ef40 as AlljoynAbouticon}
+
+pub using @4fac9202b24f6665 {type AlljoynAbouticonobj_bf1dc82f20f7 as AlljoynAbouticonobj}
+
+pub using @4fac9202b24f6665 {type AlljoynAbouticonproxy_3efe065161c4 as AlljoynAbouticonproxy}
+
+pub using @4fac9202b24f6665 {type AlljoynAboutlistener_e0eba018b861 as AlljoynAboutlistener}
+
+pub using @4fac9202b24f6665 {type AlljoynAboutlistenerCallback_6e315eeb997f as AlljoynAboutlistenerCallback}
+
+pub using @4fac9202b24f6665 {type AlljoynAboutobj_5d9b3367d59c as AlljoynAboutobj}
+
+pub using @4fac9202b24f6665 {type AlljoynAboutobjectdescription_c65be49c2f12 as AlljoynAboutobjectdescription}
+
+pub using @4fac9202b24f6665 {type AlljoynAboutproxy_18f39dd0ffda as AlljoynAboutproxy}
+
+pub using @4fac9202b24f6665 {type AlljoynApplicationstate_07569c6018ec as AlljoynApplicationstate}
+
+pub using @4fac9202b24f6665 {type AlljoynApplicationstatelistener_aa65f32775cf as AlljoynApplicationstatelistener}
+
+pub using @4fac9202b24f6665 {type AlljoynApplicationstatelistenerCallbacks_9d328801a4d8 as AlljoynApplicationstatelistenerCallbacks}
+
+pub using @4fac9202b24f6665 {type AlljoynApplicationstatelistenerStatePtr_d2d9f95940b5 as AlljoynApplicationstatelistenerStatePtr}
+
+pub using @4fac9202b24f6665 {type AlljoynAuthlistener_3063ff70f1c3 as AlljoynAuthlistener}
+
+pub using @4fac9202b24f6665 {type AlljoynAuthlistenerAuthenticationcompletePtr_08eb500b7e28 as AlljoynAuthlistenerAuthenticationcompletePtr}
+
+pub using @4fac9202b24f6665 {type AlljoynAuthlistenerCallbacks_451d4ba58062 as AlljoynAuthlistenerCallbacks}
+
+pub using @4fac9202b24f6665 {type AlljoynAuthlistenerRequestcredentialsPtr_ffd0648252c1 as AlljoynAuthlistenerRequestcredentialsPtr}
+
+pub using @4fac9202b24f6665 {type AlljoynAuthlistenerRequestcredentialsasyncPtr_c8598ee1d827 as AlljoynAuthlistenerRequestcredentialsasyncPtr}
+
+pub using @4fac9202b24f6665 {type AlljoynAuthlistenerSecurityviolationPtr_ce1c0e220eea as AlljoynAuthlistenerSecurityviolationPtr}
+
+pub using @4fac9202b24f6665 {type AlljoynAuthlistenerVerifycredentialsPtr_a9332d915fd7 as AlljoynAuthlistenerVerifycredentialsPtr}
+
+pub using @4fac9202b24f6665 {type AlljoynAuthlistenerVerifycredentialsasyncPtr_d2a14f4d3c56 as AlljoynAuthlistenerVerifycredentialsasyncPtr}
+
+pub using @4fac9202b24f6665 {type AlljoynAuthlistenerasyncCallbacks_91a80019754e as AlljoynAuthlistenerasyncCallbacks}
+
+pub using @4fac9202b24f6665 {type AlljoynAutopinger_42b1808a3174 as AlljoynAutopinger}
+
+pub using @4fac9202b24f6665 {type AlljoynAutopingerDestinationFoundPtr_70597f9ef598 as AlljoynAutopingerDestinationFoundPtr}
+
+pub using @4fac9202b24f6665 {type AlljoynAutopingerDestinationLostPtr_ce0c971df77e as AlljoynAutopingerDestinationLostPtr}
+
+pub using @4fac9202b24f6665 {type AlljoynBusattachment_4a430fad7594 as AlljoynBusattachment}
+
+pub using @4fac9202b24f6665 {type AlljoynBusattachmentJoinsessioncbPtr_deda5e071bc3 as AlljoynBusattachmentJoinsessioncbPtr}
+
+pub using @4fac9202b24f6665 {type AlljoynBusattachmentSetlinktimeoutcbPtr_583cdcca9883 as AlljoynBusattachmentSetlinktimeoutcbPtr}
+
+pub using @4fac9202b24f6665 {type AlljoynBuslistener_d5520b559cf3 as AlljoynBuslistener}
+
+pub using @4fac9202b24f6665 {type AlljoynBuslistenerBusDisconnectedPtr_0c4ad9198f3e as AlljoynBuslistenerBusDisconnectedPtr}
+
+pub using @4fac9202b24f6665 {type AlljoynBuslistenerBusPropChangedPtr_4df8333ff1c8 as AlljoynBuslistenerBusPropChangedPtr}
+
+pub using @4fac9202b24f6665 {type AlljoynBuslistenerBusStoppingPtr_d224e2ed0185 as AlljoynBuslistenerBusStoppingPtr}
+
+pub using @4fac9202b24f6665 {type AlljoynBuslistenerCallbacks_073775007ccf as AlljoynBuslistenerCallbacks}
+
+pub using @4fac9202b24f6665 {type AlljoynBuslistenerFoundAdvertisedNamePtr_5d42baabbefc as AlljoynBuslistenerFoundAdvertisedNamePtr}
+
+pub using @4fac9202b24f6665 {type AlljoynBuslistenerListenerRegisteredPtr_e4c943df96b5 as AlljoynBuslistenerListenerRegisteredPtr}
+
+pub using @4fac9202b24f6665 {type AlljoynBuslistenerListenerUnregisteredPtr_c061aa282ed3 as AlljoynBuslistenerListenerUnregisteredPtr}
+
+pub using @4fac9202b24f6665 {type AlljoynBuslistenerLostAdvertisedNamePtr_859dcd42fa89 as AlljoynBuslistenerLostAdvertisedNamePtr}
+
+pub using @4fac9202b24f6665 {type AlljoynBuslistenerNameOwnerChangedPtr_c331ccee05a6 as AlljoynBuslistenerNameOwnerChangedPtr}
+
+pub using @4fac9202b24f6665 {type AlljoynBusobject_d87accbd2447 as AlljoynBusobject}
+
+pub using @4fac9202b24f6665 {type AlljoynBusobjectCallbacks_27584be71382 as AlljoynBusobjectCallbacks}
+
+pub using @4fac9202b24f6665 {type AlljoynBusobjectMethodentry_dde488eb33d6 as AlljoynBusobjectMethodentry}
+
+pub using @4fac9202b24f6665 {type AlljoynBusobjectObjectRegistrationPtr_eb17e099d099 as AlljoynBusobjectObjectRegistrationPtr}
+
+pub using @4fac9202b24f6665 {type AlljoynBusobjectPropGetPtr_ee9e935f01eb as AlljoynBusobjectPropGetPtr}
+
+pub using @4fac9202b24f6665 {type AlljoynBusobjectPropSetPtr_6137fda69784 as AlljoynBusobjectPropSetPtr}
+
+pub using @4fac9202b24f6665 {type AlljoynCertificateid_bda24bdedfab as AlljoynCertificateid}
+
+pub using @4fac9202b24f6665 {type AlljoynCertificateidarray_4897a96af07a as AlljoynCertificateidarray}
+
+pub using @4fac9202b24f6665 {type AlljoynClaimcapabilityMasks_c9e6c7345469 as AlljoynClaimcapabilityMasks}
+
+pub using @4fac9202b24f6665 {type AlljoynClaimcapabilityadditionalinfoMasks_6cca17407aa5 as AlljoynClaimcapabilityadditionalinfoMasks}
+
+pub using @4fac9202b24f6665 {type AlljoynCredentials_d0d8eb9d1987 as AlljoynCredentials}
+
+pub using @4fac9202b24f6665 {type AlljoynInterfacedescription_e759ec821b05 as AlljoynInterfacedescription}
+
+pub using @4fac9202b24f6665 {type AlljoynInterfacedescriptionMember_c054954b600b as AlljoynInterfacedescriptionMember}
+
+pub using @4fac9202b24f6665 {type AlljoynInterfacedescriptionProperty_d18094901af0 as AlljoynInterfacedescriptionProperty}
+
+pub using @4fac9202b24f6665 {type AlljoynInterfacedescriptionSecuritypolicy_5efb3e2260a7 as AlljoynInterfacedescriptionSecuritypolicy}
+
+pub using @4fac9202b24f6665 {type AlljoynInterfacedescriptionTranslationCallbackPtr_2d98ff940f22 as AlljoynInterfacedescriptionTranslationCallbackPtr}
+
+pub using @4fac9202b24f6665 {type AlljoynKeystore_88d6c1fa93ea as AlljoynKeystore}
+
+pub using @4fac9202b24f6665 {type AlljoynKeystorelistener_885764fb59c1 as AlljoynKeystorelistener}
+
+pub using @4fac9202b24f6665 {type AlljoynKeystorelistenerAcquireexclusivelockPtr_5be1cc867e85 as AlljoynKeystorelistenerAcquireexclusivelockPtr}
+
+pub using @4fac9202b24f6665 {type AlljoynKeystorelistenerCallbacks_0a2fdc393b27 as AlljoynKeystorelistenerCallbacks}
+
+pub using @4fac9202b24f6665 {type AlljoynKeystorelistenerLoadrequestPtr_b7145b591a19 as AlljoynKeystorelistenerLoadrequestPtr}
+
+pub using @4fac9202b24f6665 {type AlljoynKeystorelistenerReleaseexclusivelockPtr_948f226b316a as AlljoynKeystorelistenerReleaseexclusivelockPtr}
+
+pub using @4fac9202b24f6665 {type AlljoynKeystorelistenerStorerequestPtr_5523b94db1a8 as AlljoynKeystorelistenerStorerequestPtr}
+
+pub using @4fac9202b24f6665 {type AlljoynKeystorelistenerWithSynchronizationCallbacks_3553c9b28a3c as AlljoynKeystorelistenerWithSynchronizationCallbacks}
+
+pub using @4fac9202b24f6665 {type AlljoynManifestarray_43be290976fb as AlljoynManifestarray}
+
+pub using @4fac9202b24f6665 {type AlljoynMessage_ef2209f06885 as AlljoynMessage}
+
+pub using @4fac9202b24f6665 {type AlljoynMessagereceiverMethodhandlerPtr_03ee4ab12b25 as AlljoynMessagereceiverMethodhandlerPtr}
+
+pub using @4fac9202b24f6665 {type AlljoynMessagereceiverReplyhandlerPtr_4b27bc38dfc7 as AlljoynMessagereceiverReplyhandlerPtr}
+
+pub using @4fac9202b24f6665 {type AlljoynMessagereceiverSignalhandlerPtr_5497e638f740 as AlljoynMessagereceiverSignalhandlerPtr}
+
+pub using @4fac9202b24f6665 {type AlljoynMessagetype_a0298d676d1e as AlljoynMessagetype}
+
+pub using @4fac9202b24f6665 {type AlljoynMsgarg_41d8d0a8fc35 as AlljoynMsgarg}
+
+pub using @4fac9202b24f6665 {type AlljoynObserver_541ef73c2552 as AlljoynObserver}
+
+pub using @4fac9202b24f6665 {type AlljoynObserverObjectDiscoveredPtr_51ad28025808 as AlljoynObserverObjectDiscoveredPtr}
+
+pub using @4fac9202b24f6665 {type AlljoynObserverObjectLostPtr_1ed91df52737 as AlljoynObserverObjectLostPtr}
+
+pub using @4fac9202b24f6665 {type AlljoynObserverlistener_b16180378bec as AlljoynObserverlistener}
+
+pub using @4fac9202b24f6665 {type AlljoynObserverlistenerCallback_def66efcd38f as AlljoynObserverlistenerCallback}
+
+pub using @4fac9202b24f6665 {type AlljoynPermissionconfigurationlistener_264273c453fd as AlljoynPermissionconfigurationlistener}
+
+pub using @4fac9202b24f6665 {type AlljoynPermissionconfigurationlistenerCallbacks_f277d35ad488 as AlljoynPermissionconfigurationlistenerCallbacks}
+
+pub using @4fac9202b24f6665 {type AlljoynPermissionconfigurationlistenerEndmanagementPtr_5d942565986e as AlljoynPermissionconfigurationlistenerEndmanagementPtr}
+
+pub using @4fac9202b24f6665 {type AlljoynPermissionconfigurationlistenerFactoryresetPtr_929fb32e9e7c as AlljoynPermissionconfigurationlistenerFactoryresetPtr}
+
+pub using @4fac9202b24f6665 {type AlljoynPermissionconfigurationlistenerPolicychangedPtr_54396dee2f51 as AlljoynPermissionconfigurationlistenerPolicychangedPtr}
+
+pub using @4fac9202b24f6665 {type AlljoynPermissionconfigurationlistenerStartmanagementPtr_494124553b96 as AlljoynPermissionconfigurationlistenerStartmanagementPtr}
+
+pub using @4fac9202b24f6665 {type AlljoynPermissionconfigurator_ae71637d8cbb as AlljoynPermissionconfigurator}
+
+pub using @4fac9202b24f6665 {type AlljoynPinglistener_4de7b15c4aa1 as AlljoynPinglistener}
+
+pub using @4fac9202b24f6665 {type AlljoynPinglistenerCallback_ccdf9cbb7d3f as AlljoynPinglistenerCallback}
+
+pub using @4fac9202b24f6665 {type AlljoynProxybusobject_2b860522c32a as AlljoynProxybusobject}
+
+pub using @4fac9202b24f6665 {type AlljoynProxybusobjectListenerGetallpropertiescbPtr_501f75e3edb2 as AlljoynProxybusobjectListenerGetallpropertiescbPtr}
+
+pub using @4fac9202b24f6665 {type AlljoynProxybusobjectListenerGetpropertycbPtr_4bb01b4a9e78 as AlljoynProxybusobjectListenerGetpropertycbPtr}
+
+pub using @4fac9202b24f6665 {type AlljoynProxybusobjectListenerIntrospectcbPtr_4098fac3514f as AlljoynProxybusobjectListenerIntrospectcbPtr}
+
+pub using @4fac9202b24f6665 {type AlljoynProxybusobjectListenerPropertieschangedPtr_69837af6f794 as AlljoynProxybusobjectListenerPropertieschangedPtr}
+
+pub using @4fac9202b24f6665 {type AlljoynProxybusobjectListenerSetpropertycbPtr_78ea0dae7167 as AlljoynProxybusobjectListenerSetpropertycbPtr}
+
+pub using @4fac9202b24f6665 {type AlljoynProxybusobjectRef_b8a1d44ae034 as AlljoynProxybusobjectRef}
+
+pub using @4fac9202b24f6665 {type AlljoynSecurityapplicationproxy_2b121260c2a7 as AlljoynSecurityapplicationproxy}
+
+pub using @4fac9202b24f6665 {type AlljoynSessionlistener_daecdd547b90 as AlljoynSessionlistener}
+
+pub using @4fac9202b24f6665 {type AlljoynSessionlistenerCallbacks_5bbf42e72431 as AlljoynSessionlistenerCallbacks}
+
+pub using @4fac9202b24f6665 {type AlljoynSessionlistenerSessionlostPtr_dea77bf0b51d as AlljoynSessionlistenerSessionlostPtr}
+
+pub using @4fac9202b24f6665 {type AlljoynSessionlistenerSessionmemberaddedPtr_c13635f8c949 as AlljoynSessionlistenerSessionmemberaddedPtr}
+
+pub using @4fac9202b24f6665 {type AlljoynSessionlistenerSessionmemberremovedPtr_ac329b3f5d9f as AlljoynSessionlistenerSessionmemberremovedPtr}
+
+pub using @4fac9202b24f6665 {type AlljoynSessionlostreason_efbe6520e21f as AlljoynSessionlostreason}
+
+pub using @4fac9202b24f6665 {type AlljoynSessionopts_dbe8f749841e as AlljoynSessionopts}
+
+pub using @4fac9202b24f6665 {type AlljoynSessionportlistener_e4afa50dcb78 as AlljoynSessionportlistener}
+
+pub using @4fac9202b24f6665 {type AlljoynSessionportlistenerAcceptsessionjoinerPtr_8c8c7b4dd80b as AlljoynSessionportlistenerAcceptsessionjoinerPtr}
+
+pub using @4fac9202b24f6665 {type AlljoynSessionportlistenerCallbacks_a063d25c356b as AlljoynSessionportlistenerCallbacks}
+
+pub using @4fac9202b24f6665 {type AlljoynSessionportlistenerSessionjoinedPtr_5a7d32403ed3 as AlljoynSessionportlistenerSessionjoinedPtr}
+
+pub using @4fac9202b24f6665 {type AlljoynTypeid_2bd6c781714b as AlljoynTypeid}
+
+pub using @4fac9202b24f6665 {type QStatus_e5e433a5ef86 as QStatus}
+
+// Traits
+

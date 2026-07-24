@@ -1,0 +1,142 @@
+// Generated using `moon info`, DON'T EDIT IT
+package "moonbit-community/win32-bindings/scc/6952ffe46bbb0bbb"
+
+import {
+  "moonbit-community/win32-bindings/runtime/com",
+  "moonbit-community/win32-bindings/runtime/core",
+  "moonbitlang/core/debug",
+  "moonbitlang/core/ref",
+}
+
+// Values
+pub fn activatable_factory_ba7e59b01058(@core.Guid) -> @com.ComPtr[@com.IInspectable] raise @core.WindowsError
+
+pub let chip_select_line_0ec96628763a : String
+
+pub let chip_select_line_7a5205ec21a8 : String
+
+pub let clock_frequency_914c50e3e538 : String
+
+pub let clock_frequency_b2f3dfe3e653 : String
+
+pub let connection_settings_4287d869f036 : String
+
+pub fn create_4677ee5a016f_raw(@core.RawAddress, Int, @ref.Ref[UInt64]) -> Int
+
+pub let data_bit_length_24b495454270 : String
+
+pub let data_bit_length_5719f8712caa : String
+
+pub let device_id_f4412b0c8479 : String
+
+pub let exclusive_ffde8caf3a66 : Int
+
+pub fn get_chip_select_line_a4d7f725cea3(@core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn get_chip_select_line_a4d7f725cea3_raw(@core.RawAddress, @ref.Ref[Int]) -> Int
+
+pub fn get_clock_frequency_8b8f349a1201(@core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn get_clock_frequency_8b8f349a1201_raw(@core.RawAddress, @ref.Ref[Int]) -> Int
+
+pub fn get_connection_settings_7ac986e4ec3a_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_controllers_async_c5240091efb3_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_data_bit_length_87ae2d8626cb(@core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn get_data_bit_length_87ae2d8626cb_raw(@core.RawAddress, @ref.Ref[Int]) -> Int
+
+pub fn get_device_id_e3230cb81097_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_device_provider_7749166ce7f8_raw(@core.RawAddress, @core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_mode_b3b1f99053a9(@core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn get_mode_b3b1f99053a9_raw(@core.RawAddress, @ref.Ref[Int]) -> Int
+
+pub fn get_sharing_mode_49aecab568c7(@core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn get_sharing_mode_49aecab568c7_raw(@core.RawAddress, @ref.Ref[Int]) -> Int
+
+pub let mode0_3c2175d1fba3 : Int
+
+pub let mode1_fa773c0f7c0e : Int
+
+pub let mode2_726d931f4f2c : Int
+
+pub let mode3_5e32116a7328 : Int
+
+pub let mode_1772d0a91a85 : String
+
+pub let mode_43f63a0c8707 : String
+
+pub fn put_chip_select_line_d8f086a1cdc5(@core.RawAddress, Int) -> Unit raise @core.WindowsError
+
+pub fn put_chip_select_line_d8f086a1cdc5_raw(@core.RawAddress, Int) -> Int
+
+pub fn put_clock_frequency_88fc7f4286a4(@core.RawAddress, Int) -> Unit raise @core.WindowsError
+
+pub fn put_clock_frequency_88fc7f4286a4_raw(@core.RawAddress, Int) -> Int
+
+pub fn put_data_bit_length_b5a32bbe58f8(@core.RawAddress, Int) -> Unit raise @core.WindowsError
+
+pub fn put_data_bit_length_b5a32bbe58f8_raw(@core.RawAddress, Int) -> Int
+
+pub fn put_mode_0a31704cc382(@core.RawAddress, Int) -> Unit raise @core.WindowsError
+
+pub fn put_mode_0a31704cc382_raw(@core.RawAddress, Int) -> Int
+
+pub fn put_sharing_mode_4ccff0fe3416(@core.RawAddress, Int) -> Unit raise @core.WindowsError
+
+pub fn put_sharing_mode_4ccff0fe3416_raw(@core.RawAddress, Int) -> Int
+
+pub fn read_1ecd252c3c51(@core.RawAddress, UInt, Bytes) -> Unit raise @core.WindowsError
+
+pub fn read_1ecd252c3c51_raw(@core.RawAddress, UInt, Bytes) -> Int
+
+pub let shared_ca059f3150eb : Int
+
+pub let sharing_mode_ac7cf06e9650 : String
+
+pub let sharing_mode_cdafebb745c0 : String
+
+pub fn transfer_full_duplex_8194b840f0ce(@core.RawAddress, UInt, Bytes, UInt, Bytes) -> Unit raise @core.WindowsError
+
+pub fn transfer_full_duplex_8194b840f0ce_raw(@core.RawAddress, UInt, Bytes, UInt, Bytes) -> Int
+
+pub fn transfer_sequential_d52c84dd4363(@core.RawAddress, UInt, Bytes, UInt, Bytes) -> Unit raise @core.WindowsError
+
+pub fn transfer_sequential_d52c84dd4363_raw(@core.RawAddress, UInt, Bytes, UInt, Bytes) -> Int
+
+pub fn write_194fce1d12b9(@core.RawAddress, UInt, Bytes) -> Unit raise @core.WindowsError
+
+pub fn write_194fce1d12b9_raw(@core.RawAddress, UInt, Bytes) -> Int
+
+// Errors
+
+// Types and methods
+pub type IProviderSpiConnectionSettingsFactory_dcc7b936bed2
+
+pub type IProviderSpiConnectionSettings_50c204080c69
+
+pub type ISpiControllerProvider_2b9b539a1642
+
+pub type ISpiDeviceProvider_ee8b6087e5df
+
+pub type ISpiProvider_1460b2abe5e3
+
+pub type ProviderSpiConnectionSettings_dbf35b079d3c
+
+pub(all) struct ProviderSpiMode_46870fd0ed4a(Int) derive(Compare, Eq, @debug.Debug)
+pub fn ProviderSpiMode_46870fd0ed4a::from_int(Int) -> Self
+pub fn ProviderSpiMode_46870fd0ed4a::to_int(Self) -> Int
+
+pub(all) struct ProviderSpiSharingMode_652d9e18dcab(Int) derive(Compare, Eq, @debug.Debug)
+pub fn ProviderSpiSharingMode_652d9e18dcab::from_int(Int) -> Self
+pub fn ProviderSpiSharingMode_652d9e18dcab::to_int(Self) -> Int
+
+// Type aliases
+
+// Traits
+

@@ -1,0 +1,152 @@
+// Generated using `moon info`, DON'T EDIT IT
+package "moonbit-community/win32-bindings/windows/system/diagnostics/trace_reporting"
+
+import {
+  "moonbit-community/win32-bindings/runtime/com",
+  "moonbit-community/win32-bindings/runtime/core",
+  "moonbit-community/win32-bindings/scc/e8abf5bde04dc487",
+  "moonbitlang/core/ref",
+}
+
+// Values
+pub let ac_power_not_available : Int
+
+pub let alternative : Int
+
+pub let always_on : Int
+
+pub let cost_deferred : UInt
+
+pub fn download_latest_settings_for_namespace(@core.RawAddress, @core.RawAddress, @core.RawAddress, UInt, UInt, UInt) -> Int raise @core.WindowsError
+
+pub fn download_latest_settings_for_namespace_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, UInt, UInt, UInt, @ref.Ref[Int]) -> Int
+
+pub let etw_runtime_file_time_95ed5d6009 : String
+
+pub let etw_runtime_file_time_cf7e54f08c : String
+
+pub fn force_upload(@core.RawAddress, UInt, UInt, UInt) -> Int raise @core.WindowsError
+
+pub fn force_upload_raw(@core.RawAddress, UInt, UInt, UInt, @ref.Ref[Int]) -> Int
+
+pub let free_network_not_available : Int
+
+pub fn get_active_scenario_list_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_active_trace_runtime_raw(@core.RawAddress, Int, @ref.Ref[UInt64]) -> Int
+
+pub fn get_etw_runtime_file_time(@core.RawAddress) -> Int64 raise @core.WindowsError
+
+pub fn get_etw_runtime_file_time_raw(@core.RawAddress, @ref.Ref[Int64]) -> Int
+
+pub fn get_is_auto_logger_raw(@core.RawAddress, Bytes) -> Int
+
+pub fn get_is_exclusive_raw(@core.RawAddress, Bytes) -> Int
+
+pub fn get_known_trace_list_raw(@core.RawAddress, Int, @ref.Ref[UInt64]) -> Int
+
+pub fn get_max_trace_duration_file_time(@core.RawAddress) -> Int64 raise @core.WindowsError
+
+pub fn get_max_trace_duration_file_time_raw(@core.RawAddress, @ref.Ref[Int64]) -> Int
+
+pub fn get_priority(@core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn get_priority_raw(@core.RawAddress, @ref.Ref[Int]) -> Int
+
+pub fn get_profile_hash(@core.RawAddress) -> UInt64 raise @core.WindowsError
+
+pub fn get_profile_hash_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_runtime_file_time(@core.RawAddress) -> Int64 raise @core.WindowsError
+
+pub fn get_runtime_file_time_raw(@core.RawAddress, @ref.Ref[Int64]) -> Int
+
+pub fn get_scenario_id(@core.RawAddress) -> Bytes raise @core.WindowsError
+
+pub fn get_scenario_id_raw(@core.RawAddress, Bytes) -> Int
+
+pub let is_auto_logger_093cd18b9f : String
+
+pub let is_auto_logger_95016e73ac : String
+
+pub let is_exclusive_1c7945f379 : String
+
+pub let is_exclusive_87343dc565 : String
+
+pub fn is_scenario_enabled_raw(@core.RawAddress, Bytes, Bytes) -> Int
+
+pub fn is_trace_running(@core.RawAddress, Int, Bytes, UInt64) -> Int raise @core.WindowsError
+
+pub fn is_trace_running_raw(@core.RawAddress, Int, Bytes, UInt64, @ref.Ref[Int]) -> Int
+
+pub let max_trace_duration_file_time_2cacbe4481 : String
+
+pub let max_trace_duration_file_time_705db42814 : String
+
+pub let mini : Int
+
+pub let normal_3dfe259b6e : Int
+
+pub let normal_5030d3a9ce : UInt
+
+pub let not_running : Int
+
+pub let on_completion : Int
+
+pub let on_failure : Int
+
+pub let priority_229d8fd921 : String
+
+pub let priority_ee9c339762 : String
+
+pub let profile_hash_540023166d : String
+
+pub let profile_hash_e5926d1a80 : String
+
+pub let realtime : UInt
+
+pub let running : Int
+
+pub let runtime_file_time_02c21378c2 : String
+
+pub let runtime_file_time_a103cef686 : String
+
+pub let scenario_id_123cee9f2d : String
+
+pub let scenario_id_b6f1fd93de : String
+
+pub fn static_factory(@core.Guid) -> @com.ComPtr[@com.IInspectable] raise @core.WindowsError
+
+pub let success : Int
+
+pub let throttled : Int
+
+pub fn try_escalate_scenario_raw(@core.RawAddress, Bytes, Int, @core.RawAddress, UInt, UInt, @core.RawAddress, Bytes) -> Int
+
+pub let user_elevated : Int
+
+// Errors
+
+// Types and methods
+
+// Type aliases
+pub using @e8abf5bde04dc487 {type PlatformDiagnosticActionState_d2dcf8c603b2 as PlatformDiagnosticActionState}
+
+pub using @e8abf5bde04dc487 {type PlatformDiagnosticActions_70bead414315 as PlatformDiagnosticActions}
+
+pub using @e8abf5bde04dc487 {type PlatformDiagnosticEscalationType_9cd23e1cc9b3 as PlatformDiagnosticEscalationType}
+
+pub using @e8abf5bde04dc487 {type PlatformDiagnosticEventBufferLatencies_be01e1706259 as PlatformDiagnosticEventBufferLatencies}
+
+pub using @e8abf5bde04dc487 {type PlatformDiagnosticTraceInfo_e71f918dd26e as PlatformDiagnosticTraceInfo}
+
+pub using @e8abf5bde04dc487 {type PlatformDiagnosticTracePriority_4f895aefaeb2 as PlatformDiagnosticTracePriority}
+
+pub using @e8abf5bde04dc487 {type PlatformDiagnosticTraceRuntimeInfo_f8aef2edc691 as PlatformDiagnosticTraceRuntimeInfo}
+
+pub using @e8abf5bde04dc487 {type PlatformDiagnosticTraceSlotState_d99a3fe72479 as PlatformDiagnosticTraceSlotState}
+
+pub using @e8abf5bde04dc487 {type PlatformDiagnosticTraceSlotType_572a02dd36f8 as PlatformDiagnosticTraceSlotType}
+
+// Traits
+

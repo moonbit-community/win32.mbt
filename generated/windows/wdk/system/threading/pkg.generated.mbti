@@ -1,0 +1,306 @@
+// Generated using `moon info`, DON'T EDIT IT
+package "moonbit-community/win32-bindings/windows/wdk/system/threading"
+
+import {
+  "moonbit-community/win32-bindings/runtime/core",
+  "moonbit-community/win32-bindings/scc/eb9bbb99083707f0",
+}
+
+// Values
+pub let max_process_info_class : Int
+
+pub let max_thread_info_class : Int
+
+pub let max_timer_info_class : Int
+
+pub fn nt_cancel_timer_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn nt_create_timer_raw(@core.RawAddress, UInt, @core.RawAddress, Int) -> Int
+
+pub fn nt_open_event_raw(@core.RawAddress, UInt, @core.RawAddress) -> Int
+
+pub fn nt_open_process_raw(@core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn nt_open_timer_raw(@core.RawAddress, UInt, @core.RawAddress) -> Int
+
+pub fn nt_query_information_process_raw(@core.RawAddress, Int, @core.RawAddress, UInt, @core.RawAddress) -> Int
+
+pub fn nt_query_information_thread_raw(@core.RawAddress, Int, @core.RawAddress, UInt, @core.RawAddress) -> Int
+
+pub fn nt_set_information_thread_raw(@core.RawAddress, Int, @core.RawAddress, UInt) -> Int
+
+pub fn nt_set_timer_ex_raw(@core.RawAddress, Int, @core.RawAddress, UInt) -> Int
+
+pub fn nt_set_timer_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, UInt, Int, @core.RawAddress) -> Int
+
+pub fn nt_terminate_process_raw(@core.RawAddress, Int) -> Int
+
+pub fn nt_wait_for_single_object_raw(@core.RawAddress, UInt, @core.RawAddress) -> Int
+
+pub let process_access_token : Int
+
+pub let process_affinity_mask : Int
+
+pub let process_affinity_update_mode : Int
+
+pub let process_base_priority : Int
+
+pub let process_basic_information : Int
+
+pub let process_break_on_termination : Int
+
+pub let process_check_stack_extents_mode : Int
+
+pub let process_command_line_information : Int
+
+pub let process_commit_release_information : Int
+
+pub let process_cookie : Int
+
+pub let process_cycle_time : Int
+
+pub let process_debug_flags : Int
+
+pub let process_debug_object_handle : Int
+
+pub let process_debug_port : Int
+
+pub let process_default_hard_error_mode : Int
+
+pub let process_device_map : Int
+
+pub let process_dynamic_function_table_information : Int
+
+pub let process_enable_alignment_fault_fixup : Int
+
+pub let process_energy_tracking_state : Int
+
+pub let process_exception_port : Int
+
+pub let process_execute_flags : Int
+
+pub let process_fault_information : Int
+
+pub let process_foreground_information : Int
+
+pub let process_group_information : Int
+
+pub let process_handle_checking_mode : Int
+
+pub let process_handle_count : Int
+
+pub let process_handle_information : Int
+
+pub let process_handle_table : Int
+
+pub let process_handle_tracing : Int
+
+pub let process_image_file_mapping : Int
+
+pub let process_image_file_name : Int
+
+pub let process_image_file_name_win32 : Int
+
+pub let process_image_information : Int
+
+pub let process_in_private : Int
+
+pub let process_instrumentation_callback : Int
+
+pub let process_io_counters : Int
+
+pub let process_io_port_handlers : Int
+
+pub let process_io_priority : Int
+
+pub let process_keep_alive_count : Int
+
+pub let process_ldt_information : Int
+
+pub let process_ldt_size : Int
+
+pub let process_luid_device_maps_enabled : Int
+
+pub let process_memory_allocation_mode : Int
+
+pub let process_memory_exhaustion : Int
+
+pub let process_mitigation_policy : Int
+
+pub let process_owner_information : Int
+
+pub let process_page_priority : Int
+
+pub let process_pooled_usage_and_limits : Int
+
+pub let process_priority_boost : Int
+
+pub let process_priority_class : Int
+
+pub let process_protection_information : Int
+
+pub let process_quota_limits : Int
+
+pub let process_raise_priority : Int
+
+pub let process_raise_um_exception_on_invalid_handle_close : Int
+
+pub let process_reserved1_information : Int
+
+pub let process_reserved2_information : Int
+
+pub let process_revoke_file_handles : Int
+
+pub let process_session_information : Int
+
+pub let process_subsystem_information : Int
+
+pub let process_subsystem_process : Int
+
+pub let process_telemetry_id_information : Int
+
+pub let process_thread_stack_allocation : Int
+
+pub let process_times : Int
+
+pub let process_tls_information : Int
+
+pub let process_token_virtualization_enabled : Int
+
+pub let process_user_mode_iopl : Int
+
+pub let process_vm_counters : Int
+
+pub let process_win32k_syscall_filter_information : Int
+
+pub let process_window_information : Int
+
+pub let process_working_set_control : Int
+
+pub let process_working_set_watch : Int
+
+pub let process_working_set_watch_ex : Int
+
+pub let process_wow64_information : Int
+
+pub let process_wx86_information : Int
+
+pub let thread_actual_base_priority : Int
+
+pub let thread_actual_group_affinity : Int
+
+pub let thread_affinity_mask : Int
+
+pub let thread_am_i_last_thread : Int
+
+pub let thread_base_priority : Int
+
+pub let thread_basic_information : Int
+
+pub let thread_break_on_termination : Int
+
+pub let thread_c_switch_mon : Int
+
+pub let thread_c_switch_pmu : Int
+
+pub let thread_counter_profiling : Int
+
+pub let thread_cpu_accounting_information : Int
+
+pub let thread_cycle_time : Int
+
+pub let thread_descriptor_table_entry : Int
+
+pub let thread_dynamic_code_policy_info : Int
+
+pub let thread_enable_alignment_fault_fixup : Int
+
+pub let thread_event_pair_reusable : Int
+
+pub let thread_group_information : Int
+
+pub let thread_hide_from_debugger : Int
+
+pub let thread_ideal_processor : Int
+
+pub let thread_ideal_processor_ex : Int
+
+pub let thread_impersonation_token : Int
+
+pub let thread_io_priority : Int
+
+pub let thread_is_io_pending : Int
+
+pub let thread_is_terminated : Int
+
+pub let thread_last_system_call : Int
+
+pub let thread_name_information : Int
+
+pub let thread_page_priority : Int
+
+pub let thread_performance_count : Int
+
+pub let thread_priority : Int
+
+pub let thread_priority_boost : Int
+
+pub let thread_query_set_win32_start_address : Int
+
+pub let thread_set_tls_array_address : Int
+
+pub let thread_subsystem_information : Int
+
+pub let thread_suspend_count : Int
+
+pub let thread_switch_legacy_state : Int
+
+pub let thread_teb_information : Int
+
+pub let thread_times : Int
+
+pub let thread_ums_information : Int
+
+pub let thread_wow64_context : Int
+
+pub let thread_zero_tls_cell : Int
+
+pub let timer_set_coalescable_timer : Int
+
+pub fn zw_cancel_timer_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn zw_create_timer_raw(@core.RawAddress, UInt, @core.RawAddress, Int) -> Int
+
+pub fn zw_open_event_raw(@core.RawAddress, UInt, @core.RawAddress) -> Int
+
+pub fn zw_open_process_raw(@core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn zw_open_timer_raw(@core.RawAddress, UInt, @core.RawAddress) -> Int
+
+pub fn zw_query_information_process_raw(@core.RawAddress, Int, @core.RawAddress, UInt, @core.RawAddress) -> Int
+
+pub fn zw_query_information_thread_raw(@core.RawAddress, Int, @core.RawAddress, UInt, @core.RawAddress) -> Int
+
+pub fn zw_set_information_thread_raw(@core.RawAddress, Int, @core.RawAddress, UInt) -> Int
+
+pub fn zw_set_timer_ex_raw(@core.RawAddress, Int, @core.RawAddress, UInt) -> Int
+
+pub fn zw_set_timer_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, UInt, Int, @core.RawAddress) -> Int
+
+pub fn zw_terminate_process_raw(@core.RawAddress, Int) -> Int
+
+pub fn zw_wait_for_single_object_raw(@core.RawAddress, UInt, @core.RawAddress) -> Int
+
+// Errors
+
+// Types and methods
+
+// Type aliases
+pub using @eb9bbb99083707f0 {type PROCESSINFOCLASS_5f459569e300 as PROCESSINFOCLASS}
+
+pub using @eb9bbb99083707f0 {type THREADINFOCLASS_384e64b6c221 as THREADINFOCLASS}
+
+pub using @eb9bbb99083707f0 {type TIMERSETINFORMATIONCLASS_db75c41cc15b as TIMERSETINFORMATIONCLASS}
+
+// Traits
+

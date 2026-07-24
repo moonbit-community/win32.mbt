@@ -1,0 +1,58 @@
+// Generated using `moon info`, DON'T EDIT IT
+package "moonbit-community/win32-bindings/windows/application_model/wallet/system"
+
+import {
+  "moonbit-community/win32-bindings/runtime/com",
+  "moonbit-community/win32-bindings/runtime/core",
+  "moonbit-community/win32-bindings/scc/1a5ac170ab673ab2",
+  "moonbitlang/core/ref",
+}
+
+// Values
+pub fn add_items_changed(@core.RawAddress, @core.RawAddress) -> Int64 raise @core.WindowsError
+
+pub fn add_items_changed_raw(@core.RawAddress, @core.RawAddress, @ref.Ref[Int64]) -> Int
+
+pub let app_installed : Int
+
+pub let app_not_installed : Int
+
+pub fn delete_async_raw(@core.RawAddress, @core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_app_status_for_item(@core.RawAddress, @core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn get_app_status_for_item_raw(@core.RawAddress, @core.RawAddress, @ref.Ref[Int]) -> Int
+
+pub fn get_items_async_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn import_item_async_raw(@core.RawAddress, @core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub let items_changed_10711e9ac7 : String
+
+pub let items_changed_955be0becb : String
+
+pub fn launch_app_for_item_async_raw(@core.RawAddress, @core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub let none : Int
+
+pub fn remove_items_changed(@core.RawAddress, Int64) -> Unit raise @core.WindowsError
+
+pub fn remove_items_changed_raw(@core.RawAddress, Int64) -> Int
+
+pub fn request_store_async_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn static_factory(@core.Guid) -> @com.ComPtr[@com.IInspectable] raise @core.WindowsError
+
+// Errors
+
+// Types and methods
+
+// Type aliases
+pub using @1a5ac170ab673ab2 {type WalletItemAppAssociation_88e815274c82 as WalletItemAppAssociation}
+
+pub using @1a5ac170ab673ab2 {type WalletItemSystemStore_af9f5412f569 as WalletItemSystemStore}
+
+pub using @1a5ac170ab673ab2 {type WalletManagerSystem_f8bc5b013929 as WalletManagerSystem}
+
+// Traits
+

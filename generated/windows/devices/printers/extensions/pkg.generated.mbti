@@ -1,0 +1,200 @@
+// Generated using `moon info`, DON'T EDIT IT
+package "moonbit-community/win32-bindings/windows/devices/printers/extensions"
+
+import {
+  "moonbit-community/win32-bindings/runtime/com",
+  "moonbit-community/win32-bindings/runtime/core",
+  "moonbit-community/win32-bindings/scc/912cf804c8e2dfc4",
+  "moonbitlang/core/ref",
+}
+
+// Values
+pub let abandoned : Int
+
+pub fn add_print_requested(@core.RawAddress, @core.RawAddress) -> Int64 raise @core.WindowsError
+
+pub fn add_print_requested_raw(@core.RawAddress, @core.RawAddress, @ref.Ref[Int64]) -> Int
+
+pub fn add_printer_changed(@core.RawAddress, @core.RawAddress) -> Int64 raise @core.WindowsError
+
+pub fn add_printer_changed_raw(@core.RawAddress, @core.RawAddress, @ref.Ref[Int64]) -> Int
+
+pub fn add_save_requested(@core.RawAddress, @core.RawAddress) -> Int64 raise @core.WindowsError
+
+pub fn add_save_requested_raw(@core.RawAddress, @core.RawAddress, @ref.Ref[Int64]) -> Int
+
+pub fn cancel(@core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn cancel_raw(@core.RawAddress) -> Int
+
+pub let canceled : Int
+
+pub fn complete(@core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn complete_raw(@core.RawAddress) -> Int
+
+pub let deadline_cc1fa71f4e : String
+
+pub let deadline_ecf42c19fb : String
+
+pub let device_id_70b269ba0c : String
+
+pub let device_id_edb31d68a9 : String
+
+pub let event_data_4cb5a3280a : String
+
+pub let event_data_c066a4edce : String
+
+pub let failed : Int
+
+pub fn from_device_id_raw(@core.RawAddress, @core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_deadline(@core.RawAddress) -> Int64 raise @core.WindowsError
+
+pub fn get_deadline_raw(@core.RawAddress, @ref.Ref[Int64]) -> Int
+
+pub fn get_deferral_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_device_id_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_event_data_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_is_print_ready_raw(@core.RawAddress, Bytes) -> Int
+
+pub fn get_new_device_id_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_print_model_package_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_printer_extension_context_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_printer_name_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_request_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_status(@core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn get_status_raw(@core.RawAddress, @ref.Ref[Int]) -> Int
+
+pub let invalid_material_selection : Int
+
+pub let invalid_model : Int
+
+pub let invalid_print_ticket : Int
+
+pub let is_print_ready_24bafcf4fe : String
+
+pub let is_print_ready_aba1d3edad : String
+
+pub let model_exceeds_print_bed : Int
+
+pub let model_not_manifold : Int
+
+pub let new_device_id_4f17ad5af9 : String
+
+pub let new_device_id_e1f58a8422 : String
+
+pub let print_requested_480631f812 : String
+
+pub let print_requested_f7f88e720e : String
+
+pub let printer_changed_652212b137 : String
+
+pub let printer_changed_bc3c16b742 : String
+
+pub let printer_extension_context_03851e41bd : String
+
+pub let printer_extension_context_900466ff70 : String
+
+pub let printer_name_3834ffdb64 : String
+
+pub let printer_name_c13e3110e4 : String
+
+pub fn put_event_data(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn put_event_data_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn put_is_print_ready(@core.RawAddress, UInt) -> Unit raise @core.WindowsError
+
+pub fn put_is_print_ready_raw(@core.RawAddress, UInt) -> Int
+
+pub fn remove_print_requested(@core.RawAddress, Int64) -> Unit raise @core.WindowsError
+
+pub fn remove_print_requested_raw(@core.RawAddress, Int64) -> Int
+
+pub fn remove_printer_changed(@core.RawAddress, Int64) -> Unit raise @core.WindowsError
+
+pub fn remove_printer_changed_raw(@core.RawAddress, Int64) -> Int
+
+pub fn remove_save_requested(@core.RawAddress, Int64) -> Unit raise @core.WindowsError
+
+pub fn remove_save_requested_raw(@core.RawAddress, Int64) -> Int
+
+pub let request_02272a8e0c : String
+
+pub let request_272e9a3f3e : String
+
+pub fn save(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn save_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub let save_requested_8fc6f9dcee : String
+
+pub let save_requested_c1ce392d4e : String
+
+pub fn set_extended_status(@core.RawAddress, Int) -> Unit raise @core.WindowsError
+
+pub fn set_extended_status_raw(@core.RawAddress, Int) -> Int
+
+pub fn set_source(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn set_source_changed(@core.RawAddress, UInt) -> Unit raise @core.WindowsError
+
+pub fn set_source_changed_raw(@core.RawAddress, UInt) -> Int
+
+pub fn set_source_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub let slicing : Int
+
+pub fn static_factory(@core.Guid) -> @com.ComPtr[@com.IInspectable] raise @core.WindowsError
+
+pub let status_168649ef49 : String
+
+pub let status_17e5125067 : String
+
+pub let submitted : Int
+
+pub let unknown : Int
+
+pub let upload_failed : Int
+
+// Errors
+
+// Types and methods
+
+// Type aliases
+pub using @912cf804c8e2dfc4 {type ExtensionsContract_e94b9c1505cc as ExtensionsContract}
+
+pub using @912cf804c8e2dfc4 {type Print3DWorkflow_adbcc2acb77a as Print3DWorkflow}
+
+pub using @912cf804c8e2dfc4 {type Print3DWorkflowDetail_334470df5482 as Print3DWorkflowDetail}
+
+pub using @912cf804c8e2dfc4 {type Print3DWorkflowPrintRequestedEventArgs_5396c816cb3f as Print3DWorkflowPrintRequestedEventArgs}
+
+pub using @912cf804c8e2dfc4 {type Print3DWorkflowPrinterChangedEventArgs_522809559c8d as Print3DWorkflowPrinterChangedEventArgs}
+
+pub using @912cf804c8e2dfc4 {type Print3DWorkflowStatus_9e38ef346593 as Print3DWorkflowStatus}
+
+pub using @912cf804c8e2dfc4 {type PrintExtensionContext_842053f428c8 as PrintExtensionContext}
+
+pub using @912cf804c8e2dfc4 {type PrintNotificationEventDetails_89f86580afb5 as PrintNotificationEventDetails}
+
+pub using @912cf804c8e2dfc4 {type PrintTaskConfiguration_e45505d5ea20 as PrintTaskConfiguration}
+
+pub using @912cf804c8e2dfc4 {type PrintTaskConfigurationSaveRequest_cb0776716e56 as PrintTaskConfigurationSaveRequest}
+
+pub using @912cf804c8e2dfc4 {type PrintTaskConfigurationSaveRequestedDeferral_de80784c6bc4 as PrintTaskConfigurationSaveRequestedDeferral}
+
+pub using @912cf804c8e2dfc4 {type PrintTaskConfigurationSaveRequestedEventArgs_f3421b6a61d3 as PrintTaskConfigurationSaveRequestedEventArgs}
+
+// Traits
+

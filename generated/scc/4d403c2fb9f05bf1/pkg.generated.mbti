@@ -1,0 +1,156 @@
+// Generated using `moon info`, DON'T EDIT IT
+package "moonbit-community/win32-bindings/scc/4d403c2fb9f05bf1"
+
+import {
+  "moonbit-community/win32-bindings/runtime/com",
+  "moonbit-community/win32-bindings/runtime/core",
+  "moonbitlang/core/debug",
+  "moonbitlang/core/ref",
+}
+
+// Values
+pub let access_mode_a080d8a4526d : String
+
+pub let access_mode_d61662352632 : String
+
+pub fn activatable_factory_25fa4073ff94(@core.Guid) -> @com.ComPtr[@com.IInspectable] raise @core.WindowsError
+
+pub let any_43474e13c122 : Int
+
+pub let buffered_065edde301a8 : Int
+
+pub let buffering_method_ee99e1f7a451 : String
+
+pub let buffering_method_f0992f4f98f5 : String
+
+pub let control_code_8b415fe365f4 : String
+
+pub let control_code_e6be54c33eee : String
+
+pub fn create_io_control_code_053c44372fe6_raw(@core.RawAddress, UInt, UInt, Int, Int, @ref.Ref[UInt64]) -> Int
+
+pub let custom_device_contract_76e363813390_alignment : Int
+
+pub let custom_device_contract_76e363813390_size : Int
+
+pub let device_type_94ebca865d87 : String
+
+pub let device_type_aa4d41307d5a : String
+
+pub let direct_input_63a6b1e44bff : Int
+
+pub let direct_output_356a6f99da30 : Int
+
+pub let exclusive_6e2e1f31e4e2 : Int
+
+pub fn from_id_async_483492c116b0_raw(@core.RawAddress, @core.RawAddress, Int, Int, @ref.Ref[UInt64]) -> Int
+
+pub let function_6f0d7e84fa8f : String
+
+pub let function_8126059be39f : String
+
+pub fn get_access_mode_dbd1ab21954b(@core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn get_access_mode_dbd1ab21954b_raw(@core.RawAddress, @ref.Ref[Int]) -> Int
+
+pub fn get_buffering_method_c7fc740d0e39(@core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn get_buffering_method_c7fc740d0e39_raw(@core.RawAddress, @ref.Ref[Int]) -> Int
+
+pub fn get_control_code_d28b6508816f(@core.RawAddress) -> UInt raise @core.WindowsError
+
+pub fn get_control_code_d28b6508816f_raw(@core.RawAddress, @ref.Ref[UInt]) -> Int
+
+pub fn get_device_selector_5f609edda681_raw(@core.RawAddress, Bytes, @ref.Ref[UInt64]) -> Int
+
+pub fn get_device_type_4c384bc7c6f8_raw(@core.RawAddress, Bytes) -> Int
+
+pub fn get_function_7292cb4808aa_raw(@core.RawAddress, Bytes) -> Int
+
+pub fn get_input_stream_9c7e46019410_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_output_stream_584f55d7e70f_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_unknown_f7bfbe9ec281_raw(@core.RawAddress, Bytes) -> Int
+
+pub let input_stream_235a37a98887 : String
+
+pub let input_stream_faf625eefae0 : String
+
+pub let neither_cab54d06376c : Int
+
+pub let output_stream_48b2f6550feb : String
+
+pub let output_stream_fac26e321b85 : String
+
+pub let read_3ee0baad49ad : Int
+
+pub let read_f35be1683767 : Int
+
+pub let read_write_830ec3df716f : Int
+
+pub let read_write_9c433a1a1a72 : Int
+
+pub fn send_io_control_async_d3cd9555b8fb_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub let shared_f268dd27d0f1 : Int
+
+pub fn static_factory_6735839c2942(@core.Guid) -> @com.ComPtr[@com.IInspectable] raise @core.WindowsError
+
+pub fn static_factory_8ecd8e34dd95(@core.Guid) -> @com.ComPtr[@com.IInspectable] raise @core.WindowsError
+
+pub fn try_send_io_control_async_05958f24400a_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub let unknown_042ad32e7c07 : String
+
+pub let unknown_64e8f9a6a119 : String
+
+pub let write_06dcaa8661b2 : Int
+
+pub let write_d0650b9c495a : Int
+
+// Errors
+
+// Types and methods
+pub(all) struct CustomDeviceContract_76e363813390 {
+  raw_bytes : Bytes
+} derive(Eq, @debug.Debug)
+pub fn CustomDeviceContract_76e363813390::bytes(Self) -> Bytes
+pub fn CustomDeviceContract_76e363813390::from_bytes(Bytes) -> Self raise @core.WindowsError
+
+pub type CustomDevice_96e867da3015
+
+pub(all) struct DeviceAccessMode_bc08254add0b(Int) derive(Compare, Eq, @debug.Debug)
+pub fn DeviceAccessMode_bc08254add0b::from_int(Int) -> Self
+pub fn DeviceAccessMode_bc08254add0b::to_int(Self) -> Int
+
+pub(all) struct DeviceSharingMode_62038986585a(Int) derive(Compare, Eq, @debug.Debug)
+pub fn DeviceSharingMode_62038986585a::from_int(Int) -> Self
+pub fn DeviceSharingMode_62038986585a::to_int(Self) -> Int
+
+pub type ICustomDeviceStatics_dd7660cd9507
+
+pub type ICustomDevice_2e48211f68cf
+
+pub type IIOControlCodeFactory_669cac7ca9b5
+
+pub type IIOControlCode_0e0e4977db6d
+
+pub type IKnownDeviceTypesStatics_40f1be7ed788
+
+pub(all) struct IOControlAccessMode_9bec5593d805(Int) derive(Compare, Eq, @debug.Debug)
+pub fn IOControlAccessMode_9bec5593d805::from_int(Int) -> Self
+pub fn IOControlAccessMode_9bec5593d805::to_int(Self) -> Int
+
+pub(all) struct IOControlBufferingMethod_93b2cb6948e7(Int) derive(Compare, Eq, @debug.Debug)
+pub fn IOControlBufferingMethod_93b2cb6948e7::from_int(Int) -> Self
+pub fn IOControlBufferingMethod_93b2cb6948e7::to_int(Self) -> Int
+
+pub type IOControlCode_03c65236c1f3
+
+pub type KnownDeviceTypes_053852540bc7
+
+// Type aliases
+
+// Traits
+

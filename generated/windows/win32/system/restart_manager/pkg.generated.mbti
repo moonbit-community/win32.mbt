@@ -1,0 +1,132 @@
+// Generated using `moon info`, DON'T EDIT IT
+package "moonbit-community/win32-bindings/windows/win32/system/restart_manager"
+
+import {
+  "moonbit-community/win32-bindings/runtime/core",
+  "moonbit-community/win32-bindings/scc/c06e8a81057b0551",
+}
+
+// Values
+pub let cch_rm_max_app_name : UInt
+
+pub let cch_rm_max_svc_name : UInt
+
+pub let cch_rm_session_key : UInt
+
+pub fn rm_add_filter_raw(UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress, Int) -> UInt
+
+pub fn rm_cancel_current_task_raw(UInt) -> UInt
+
+pub let rm_console : Int
+
+pub let rm_critical : Int
+
+pub fn rm_end_session_raw(UInt) -> UInt
+
+pub let rm_explorer : Int
+
+pub let rm_filter_trigger_file : Int
+
+pub let rm_filter_trigger_invalid : Int
+
+pub let rm_filter_trigger_process : Int
+
+pub let rm_filter_trigger_service : Int
+
+pub let rm_force_shutdown : Int
+
+pub fn rm_get_filter_list_raw(UInt, @core.RawAddress, UInt, @core.RawAddress) -> UInt
+
+pub fn rm_get_list_raw(UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub let rm_invalid_filter_action : Int
+
+pub let rm_invalid_process : Int
+
+pub let rm_invalid_ts_session : Int
+
+pub fn rm_join_session_raw(@core.RawAddress, @core.RawAddress) -> UInt
+
+pub let rm_main_window : Int
+
+pub let rm_no_restart : Int
+
+pub let rm_no_shutdown : Int
+
+pub let rm_other_window : Int
+
+pub let rm_reboot_reason_critical_process : Int
+
+pub let rm_reboot_reason_critical_service : Int
+
+pub let rm_reboot_reason_detected_self : Int
+
+pub let rm_reboot_reason_none : Int
+
+pub let rm_reboot_reason_permission_denied : Int
+
+pub let rm_reboot_reason_session_mismatch : Int
+
+pub fn rm_register_resources_raw(UInt, UInt, @core.RawAddress, UInt, @core.RawAddress, UInt, @core.RawAddress) -> UInt
+
+pub fn rm_remove_filter_raw(UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn rm_restart_raw(UInt, UInt, @core.RawAddress) -> UInt
+
+pub let rm_service : Int
+
+pub let rm_shutdown_only_registered : Int
+
+pub fn rm_shutdown_raw(UInt, UInt, @core.RawAddress) -> UInt
+
+pub fn rm_start_session_raw(@core.RawAddress, UInt, @core.RawAddress) -> UInt
+
+pub let rm_status_error_on_restart : Int
+
+pub let rm_status_error_on_stop : Int
+
+pub let rm_status_restart_masked : Int
+
+pub let rm_status_restarted : Int
+
+pub let rm_status_running : Int
+
+pub let rm_status_shutdown_masked : Int
+
+pub let rm_status_stopped : Int
+
+pub let rm_status_stopped_other : Int
+
+pub let rm_status_unknown : Int
+
+pub let rm_unknown_app : Int
+
+// Errors
+
+// Types and methods
+
+// Type aliases
+pub using @c06e8a81057b0551 {type AnonymousEUnion_e362ac07fad1 as AnonymousEUnion}
+
+pub using @c06e8a81057b0551 {type RMAPPSTATUS_d7128a4a0e4a as RMAPPSTATUS}
+
+pub using @c06e8a81057b0551 {type RMAPPTYPE_f9ca818edbd7 as RMAPPTYPE}
+
+pub using @c06e8a81057b0551 {type RMFILTERACTION_9e03b209b0a5 as RMFILTERACTION}
+
+pub using @c06e8a81057b0551 {type RMFILTERINFO_84e2cdcb5bb0 as RMFILTERINFO}
+
+pub using @c06e8a81057b0551 {type RMFILTERTRIGGER_262c183d2bcd as RMFILTERTRIGGER}
+
+pub using @c06e8a81057b0551 {type RMPROCESSINFO_5822d426c9d8 as RMPROCESSINFO}
+
+pub using @c06e8a81057b0551 {type RMREBOOTREASON_ceafd605aba1 as RMREBOOTREASON}
+
+pub using @c06e8a81057b0551 {type RMSHUTDOWNTYPE_4904786e6ea9 as RMSHUTDOWNTYPE}
+
+pub using @c06e8a81057b0551 {type RMUNIQUEPROCESS_9bdcdcf5cbce as RMUNIQUEPROCESS}
+
+pub using @c06e8a81057b0551 {type RMWRITESTATUSCALLBACK_4e8f868d039b as RMWRITESTATUSCALLBACK}
+
+// Traits
+

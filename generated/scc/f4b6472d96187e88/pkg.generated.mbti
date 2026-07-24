@@ -1,0 +1,102 @@
+// Generated using `moon info`, DON'T EDIT IT
+package "moonbit-community/win32-bindings/scc/f4b6472d96187e88"
+
+import {
+  "moonbit-community/win32-bindings/runtime/core",
+  "moonbitlang/core/debug",
+}
+
+// Values
+pub let e_delta_printticket_format_00a5fa96de51 : UInt
+
+pub let e_printcapabilities_format_29a1df6d321a : UInt
+
+pub let e_printdevicecapabilities_format_576ef575d535 : UInt
+
+pub let e_printticket_format_02fdcd80a52a : UInt
+
+pub let hptprovider_944765c1841d_alignment : Int
+
+pub let hptprovider_944765c1841d_size : Int
+
+pub let k_printer_default_devmode_6ed17469ab03 : Int
+
+pub let k_pt_document_scope_27bf256cbf86 : Int
+
+pub let k_pt_job_scope_11915623b68d : Int
+
+pub let k_pt_page_scope_f2c5d132d477 : Int
+
+pub let k_user_default_devmode_1c6f992b1b53 : Int
+
+pub let printticket_istream_apis_41a934b807fc : UInt
+
+pub fn pt_close_provider_8c8f54893213(@core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn pt_close_provider_8c8f54893213_raw(@core.RawAddress) -> Int
+
+pub fn pt_convert_dev_mode_to_print_ticket_abcb624c5493(@core.RawAddress, UInt, @core.RawAddress, Int, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn pt_convert_dev_mode_to_print_ticket_abcb624c5493_raw(@core.RawAddress, UInt, @core.RawAddress, Int, @core.RawAddress) -> Int
+
+pub fn pt_convert_print_ticket_to_dev_mode_da30eff22e7f(@core.RawAddress, @core.RawAddress, Int, Int, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn pt_convert_print_ticket_to_dev_mode_da30eff22e7f_raw(@core.RawAddress, @core.RawAddress, Int, Int, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn pt_get_print_capabilities_c37795b0425c(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn pt_get_print_capabilities_c37795b0425c_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn pt_get_print_device_capabilities_ac501ed1d6e6(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn pt_get_print_device_capabilities_ac501ed1d6e6_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn pt_get_print_device_resources_50fc6188f744(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn pt_get_print_device_resources_50fc6188f744_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn pt_merge_and_validate_print_ticket_84adbac0957f(@core.RawAddress, @core.RawAddress, @core.RawAddress, Int, @core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn pt_merge_and_validate_print_ticket_84adbac0957f_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, Int, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn pt_open_provider_b03b02cfdc42(@core.RawAddress, UInt, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn pt_open_provider_b03b02cfdc42_raw(@core.RawAddress, UInt, @core.RawAddress) -> Int
+
+pub fn pt_open_provider_ex_9b09cbaca45c(@core.RawAddress, UInt, UInt, @core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn pt_open_provider_ex_9b09cbaca45c_raw(@core.RawAddress, UInt, UInt, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn pt_query_schema_version_support_ec85d7e47fbd(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn pt_query_schema_version_support_ec85d7e47fbd_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn pt_release_memory_70b4272d611c(@core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn pt_release_memory_70b4272d611c_raw(@core.RawAddress) -> Int
+
+pub let s_pt_conflict_resolved_d3d464fc0962 : UInt
+
+pub let s_pt_no_conflict_2b90ba056feb : UInt
+
+// Errors
+
+// Types and methods
+pub(all) struct EDefaultDevmodeType_75ebbbd88736(Int) derive(Compare, Eq, @debug.Debug)
+pub fn EDefaultDevmodeType_75ebbbd88736::from_int(Int) -> Self
+pub fn EDefaultDevmodeType_75ebbbd88736::to_int(Self) -> Int
+
+pub(all) struct EPrintTicketScope_2e418a351ebf(Int) derive(Compare, Eq, @debug.Debug)
+pub fn EPrintTicketScope_2e418a351ebf::from_int(Int) -> Self
+pub fn EPrintTicketScope_2e418a351ebf::to_int(Self) -> Int
+
+pub(all) struct HPTPROVIDER_944765c1841d {
+  raw_bytes : Bytes
+} derive(Eq, @debug.Debug)
+pub fn HPTPROVIDER_944765c1841d::bytes(Self) -> Bytes
+pub fn HPTPROVIDER_944765c1841d::from_bytes(Bytes) -> Self raise @core.WindowsError
+
+// Type aliases
+
+// Traits
+

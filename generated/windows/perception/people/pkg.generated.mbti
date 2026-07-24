@@ -1,0 +1,218 @@
+// Generated using `moon info`, DON'T EDIT IT
+package "moonbit-community/win32-bindings/windows/perception/people"
+
+import {
+  "moonbit-community/win32-bindings/runtime/com",
+  "moonbit-community/win32-bindings/runtime/core",
+  "moonbit-community/win32-bindings/scc/c26c632ca7fce2a5",
+  "moonbitlang/core/ref",
+}
+
+// Values
+pub let approximate : Int
+
+pub let coordinate_system_02a68ed122 : String
+
+pub let coordinate_system_cf6c50c56c : String
+
+pub let forward_direction_1660f5fb5b : String
+
+pub let forward_direction_f359b440a8 : String
+
+pub let gaze_0e9f540e0b : String
+
+pub let gaze_6d36dc9326 : String
+
+pub fn get_coordinate_system_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_forward_direction(@core.RawAddress) -> Bytes raise @core.WindowsError
+
+pub fn get_forward_direction_raw(@core.RawAddress, Bytes) -> Int
+
+pub fn get_gaze_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_is_calibration_valid_raw(@core.RawAddress, Bytes) -> Int
+
+pub fn get_model_id(@core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn get_model_id_raw(@core.RawAddress, @ref.Ref[Int]) -> Int
+
+pub fn get_neutral_pose_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_neutral_pose_version(@core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn get_neutral_pose_version_raw(@core.RawAddress, @ref.Ref[Int]) -> Int
+
+pub fn get_position(@core.RawAddress) -> Bytes raise @core.WindowsError
+
+pub fn get_position_raw(@core.RawAddress, Bytes) -> Int
+
+pub fn get_relative_joint(@core.RawAddress, Int, Int) -> Bytes raise @core.WindowsError
+
+pub fn get_relative_joint_raw(@core.RawAddress, Int, Int, Bytes) -> Int
+
+pub fn get_relative_joints(@core.RawAddress, UInt, Bytes, UInt, Bytes, UInt, Bytes) -> Unit raise @core.WindowsError
+
+pub fn get_relative_joints_raw(@core.RawAddress, UInt, Bytes, UInt, Bytes, UInt, Bytes) -> Int
+
+pub fn get_source_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_triangle_index_count(@core.RawAddress) -> UInt raise @core.WindowsError
+
+pub fn get_triangle_index_count_raw(@core.RawAddress, @ref.Ref[UInt]) -> Int
+
+pub fn get_triangle_indices(@core.RawAddress, UInt, Bytes) -> Unit raise @core.WindowsError
+
+pub fn get_triangle_indices_raw(@core.RawAddress, UInt, Bytes) -> Int
+
+pub fn get_up_direction(@core.RawAddress) -> Bytes raise @core.WindowsError
+
+pub fn get_up_direction_raw(@core.RawAddress, Bytes) -> Int
+
+pub fn get_update_timestamp_8562308aa1_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_update_timestamp_f6b7f58f7c_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_vertex_count(@core.RawAddress) -> UInt raise @core.WindowsError
+
+pub fn get_vertex_count_raw(@core.RawAddress, @ref.Ref[UInt]) -> Int
+
+pub fn get_vertex_state_for_pose_raw(@core.RawAddress, @core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn get_vertices(@core.RawAddress, UInt, Bytes) -> Unit raise @core.WindowsError
+
+pub fn get_vertices_raw(@core.RawAddress, UInt, Bytes) -> Int
+
+pub let high : Int
+
+pub let index_distal : Int
+
+pub let index_intermediate : Int
+
+pub let index_metacarpal : Int
+
+pub let index_proximal : Int
+
+pub let index_tip : Int
+
+pub let is_calibration_valid_23a083d0cf : String
+
+pub let is_calibration_valid_c4747f7ace : String
+
+pub fn is_supported_raw(@core.RawAddress, Bytes) -> Int
+
+pub let little_distal : Int
+
+pub let little_intermediate : Int
+
+pub let little_metacarpal : Int
+
+pub let little_proximal : Int
+
+pub let little_tip : Int
+
+pub let middle_distal : Int
+
+pub let middle_intermediate : Int
+
+pub let middle_metacarpal : Int
+
+pub let middle_proximal : Int
+
+pub let middle_tip : Int
+
+pub let model_id_5da33aff04 : String
+
+pub let model_id_6061e8bb4c : String
+
+pub let neutral_pose_92470afb13 : String
+
+pub let neutral_pose_9c2c3b379d : String
+
+pub let neutral_pose_version_2b99f4448e : String
+
+pub let neutral_pose_version_94b89e3f39 : String
+
+pub let palm : Int
+
+pub let position_7cf7a2b10a : String
+
+pub let position_d0f7c82e8b : String
+
+pub fn request_access_async_raw(@core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub let ring_distal : Int
+
+pub let ring_intermediate : Int
+
+pub let ring_metacarpal : Int
+
+pub let ring_proximal : Int
+
+pub let ring_tip : Int
+
+pub let source_26ebf15a70 : String
+
+pub let source_6c1dbd05be : String
+
+pub fn static_factory(@core.Guid) -> @com.ComPtr[@com.IInspectable] raise @core.WindowsError
+
+pub let thumb_distal : Int
+
+pub let thumb_metacarpal : Int
+
+pub let thumb_proximal : Int
+
+pub let thumb_tip : Int
+
+pub let triangle_index_count_131310e39f : String
+
+pub let triangle_index_count_3a85dc0aa2 : String
+
+pub fn try_get_joint_raw(@core.RawAddress, @core.RawAddress, Int, Bytes, Bytes) -> Int
+
+pub fn try_get_joints_raw(@core.RawAddress, @core.RawAddress, UInt, Bytes, UInt, Bytes, Bytes) -> Int
+
+pub let up_direction_52eba9faee : String
+
+pub let up_direction_be742ff00c : String
+
+pub let update_timestamp_359e2a09fa : String
+
+pub let update_timestamp_415d9bccaa : String
+
+pub let update_timestamp_d78ccea47b : String
+
+pub let update_timestamp_f07d4ff800 : String
+
+pub let vertex_count_04c332628a : String
+
+pub let vertex_count_ed55e8499f : String
+
+pub let wrist : Int
+
+// Errors
+
+// Types and methods
+
+// Type aliases
+pub using @c26c632ca7fce2a5 {type EyesPose_cc57273da59e as EyesPose}
+
+pub using @c26c632ca7fce2a5 {type HandJointKind_03120954e557 as HandJointKind}
+
+pub using @c26c632ca7fce2a5 {type HandMeshObserver_59ecbe88246a as HandMeshObserver}
+
+pub using @c26c632ca7fce2a5 {type HandMeshVertex_e2b5d89f5759 as HandMeshVertex}
+
+pub using @c26c632ca7fce2a5 {type HandMeshVertexState_39776e110209 as HandMeshVertexState}
+
+pub using @c26c632ca7fce2a5 {type HandPose_85a9a43063ff as HandPose}
+
+pub using @c26c632ca7fce2a5 {type HeadPose_f1a1a9ea7fb7 as HeadPose}
+
+pub using @c26c632ca7fce2a5 {type JointPose_a4a61fba75d8 as JointPose}
+
+pub using @c26c632ca7fce2a5 {type JointPoseAccuracy_d44b474b79d0 as JointPoseAccuracy}
+
+// Traits
+

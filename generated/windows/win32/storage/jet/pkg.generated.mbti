@@ -1,0 +1,2704 @@
+// Generated using `moon info`, DON'T EDIT IT
+package "moonbit-community/win32-bindings/windows/win32/storage/jet"
+
+import {
+  "moonbit-community/win32-bindings/runtime/core",
+  "moonbit-community/win32-bindings/scc/b61f0d5284a0464c",
+}
+
+// Values
+pub let c_column_info_cols : UInt
+
+pub let c_index_info_cols : UInt
+
+pub let c_object_info_cols : UInt
+
+pub fn jet_add_column_a_raw(UInt64, UInt64, @core.RawAddress, @core.RawAddress, @core.RawAddress, UInt, @core.RawAddress) -> Int
+
+pub fn jet_add_column_w_raw(UInt64, UInt64, @core.RawAddress, @core.RawAddress, @core.RawAddress, UInt, @core.RawAddress) -> Int
+
+pub fn jet_attach_database2_a_raw(UInt64, @core.RawAddress, UInt, UInt) -> Int
+
+pub fn jet_attach_database2_w_raw(UInt64, @core.RawAddress, UInt, UInt) -> Int
+
+pub fn jet_attach_database_a_raw(UInt64, @core.RawAddress, UInt) -> Int
+
+pub fn jet_attach_database_w_raw(UInt64, @core.RawAddress, UInt) -> Int
+
+pub fn jet_backup_a_raw(@core.RawAddress, UInt, @core.RawAddress) -> Int
+
+pub fn jet_backup_instance_a_raw(UInt64, @core.RawAddress, UInt, @core.RawAddress) -> Int
+
+pub fn jet_backup_instance_w_raw(UInt64, @core.RawAddress, UInt, @core.RawAddress) -> Int
+
+pub fn jet_backup_w_raw(@core.RawAddress, UInt, @core.RawAddress) -> Int
+
+pub let jet_base_name_length : UInt
+
+pub fn jet_begin_external_backup_instance_raw(UInt64, UInt) -> Int
+
+pub fn jet_begin_external_backup_raw(UInt) -> Int
+
+pub fn jet_begin_session_a_raw(UInt64, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn jet_begin_session_w_raw(UInt64, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn jet_begin_transaction2_raw(UInt64, UInt) -> Int
+
+pub fn jet_begin_transaction3_raw(UInt64, Int64, UInt) -> Int
+
+pub fn jet_begin_transaction_raw(UInt64) -> Int
+
+pub let jet_bit_abort_snapshot : UInt
+
+pub let jet_bit_all_databases_snapshot : UInt
+
+pub let jet_bit_backup_atomic : UInt
+
+pub let jet_bit_backup_end_abort : UInt
+
+pub let jet_bit_backup_end_normal : UInt
+
+pub let jet_bit_backup_incremental : UInt
+
+pub let jet_bit_backup_snapshot : UInt
+
+pub let jet_bit_backup_truncate_done : UInt
+
+pub let jet_bit_bookmark_permit_virtual_currency : UInt
+
+pub let jet_bit_check_uniqueness : UInt
+
+pub let jet_bit_column_autoincrement : UInt
+
+pub let jet_bit_column_compressed : UInt
+
+pub let jet_bit_column_delete_on_zero : UInt
+
+pub let jet_bit_column_escrow_update : UInt
+
+pub let jet_bit_column_finalize : UInt
+
+pub let jet_bit_column_fixed : UInt
+
+pub let jet_bit_column_maybe_null : UInt
+
+pub let jet_bit_column_multi_valued : UInt
+
+pub let jet_bit_column_not_null : UInt
+
+pub let jet_bit_column_tagged : UInt
+
+pub let jet_bit_column_tt_descending : UInt
+
+pub let jet_bit_column_tt_key : UInt
+
+pub let jet_bit_column_unversioned : UInt
+
+pub let jet_bit_column_updatable : UInt
+
+pub let jet_bit_column_user_defined_default : UInt
+
+pub let jet_bit_column_version : UInt
+
+pub let jet_bit_commit_lazy_flush : UInt
+
+pub let jet_bit_compact_repair : UInt
+
+pub let jet_bit_compact_stats : UInt
+
+pub let jet_bit_config_store_read_control_default : UInt
+
+pub let jet_bit_config_store_read_control_disable_all : UInt
+
+pub let jet_bit_config_store_read_control_inhibit_read : UInt
+
+pub let jet_bit_continue_after_thaw : UInt
+
+pub let jet_bit_copy_snapshot : UInt
+
+pub let jet_bit_create_hint_append_sequential : UInt
+
+pub let jet_bit_create_hint_hotpoint_sequential : UInt
+
+pub let jet_bit_db_delete_corrupt_indexes : UInt
+
+pub let jet_bit_db_delete_unicode_indexes : UInt
+
+pub let jet_bit_db_enable_background_maintenance : UInt
+
+pub let jet_bit_db_exclusive : UInt
+
+pub let jet_bit_db_overwrite_existing : UInt
+
+pub let jet_bit_db_purge_cache_on_attach : UInt
+
+pub let jet_bit_db_read_only : UInt
+
+pub let jet_bit_db_recovery_off : UInt
+
+pub let jet_bit_db_shadowing_off : UInt
+
+pub let jet_bit_db_upgrade : UInt
+
+pub let jet_bit_defragment_avail_space_trees_only : UInt
+
+pub let jet_bit_defragment_b_tree : UInt
+
+pub let jet_bit_defragment_batch_start : UInt
+
+pub let jet_bit_defragment_batch_stop : UInt
+
+pub let jet_bit_defragment_no_partial_merges : UInt
+
+pub let jet_bit_delete_column_ignore_template_columns : UInt
+
+pub let jet_bit_delete_hint_table_sequential : UInt
+
+pub let jet_bit_dump_cache_include_cached_pages : UInt
+
+pub let jet_bit_dump_cache_include_corrupted_pages : UInt
+
+pub let jet_bit_dump_cache_include_dirty_pages : UInt
+
+pub let jet_bit_dump_cache_maximum : UInt
+
+pub let jet_bit_dump_cache_minimum : UInt
+
+pub let jet_bit_dump_cache_no_decommit : UInt
+
+pub let jet_bit_dump_maximum : UInt
+
+pub let jet_bit_dump_minimum : UInt
+
+pub let jet_bit_durable_commit_callback_log_unavailable : UInt
+
+pub let jet_bit_eight_dot_three_soft_compat : UInt
+
+pub let jet_bit_enumerate_compress_output : UInt
+
+pub let jet_bit_enumerate_copy : UInt
+
+pub let jet_bit_enumerate_ignore_default : UInt
+
+pub let jet_bit_enumerate_ignore_user_defined_default : UInt
+
+pub let jet_bit_enumerate_in_record_only : UInt
+
+pub let jet_bit_enumerate_presence_only : UInt
+
+pub let jet_bit_enumerate_tagged_only : UInt
+
+pub let jet_bit_escrow_no_rollback : UInt
+
+pub let jet_bit_ese98_file_names : UInt
+
+pub let jet_bit_explicit_prepare : UInt
+
+pub let jet_bit_force_detach : UInt
+
+pub let jet_bit_force_new_log : UInt
+
+pub let jet_bit_full_column_end_limit : UInt
+
+pub let jet_bit_full_column_start_limit : UInt
+
+pub let jet_bit_hung_io_event : UInt
+
+pub let jet_bit_idle_compact : UInt
+
+pub let jet_bit_idle_flush_buffers : UInt
+
+pub let jet_bit_idle_status : UInt
+
+pub let jet_bit_incremental_snapshot : UInt
+
+pub let jet_bit_index_column_must_be_non_null : UInt
+
+pub let jet_bit_index_column_must_be_null : UInt
+
+pub let jet_bit_index_cross_product : UInt
+
+pub let jet_bit_index_disallow_null : UInt
+
+pub let jet_bit_index_disallow_truncation : UInt
+
+pub let jet_bit_index_dot_net_guid : UInt
+
+pub let jet_bit_index_empty : UInt
+
+pub let jet_bit_index_ignore_any_null : UInt
+
+pub let jet_bit_index_ignore_first_null : UInt
+
+pub let jet_bit_index_ignore_null : UInt
+
+pub let jet_bit_index_immutable_structure : UInt
+
+pub let jet_bit_index_key_most : UInt
+
+pub let jet_bit_index_lazy_flush : UInt
+
+pub let jet_bit_index_nested_table : UInt
+
+pub let jet_bit_index_primary : UInt
+
+pub let jet_bit_index_sort_nulls_high : UInt
+
+pub let jet_bit_index_tuple_limits : UInt
+
+pub let jet_bit_index_tuples : UInt
+
+pub let jet_bit_index_unicode : UInt
+
+pub let jet_bit_index_unique : UInt
+
+pub let jet_bit_index_unversioned : UInt
+
+pub let jet_bit_keep_db_attached_at_end_of_recovery : UInt
+
+pub let jet_bit_key_ascending : UInt
+
+pub let jet_bit_key_data_zero_length : UInt
+
+pub let jet_bit_key_descending : UInt
+
+pub let jet_bit_log_stream_must_exist : UInt
+
+pub let jet_bit_ls_cursor : UInt
+
+pub let jet_bit_ls_reset : UInt
+
+pub let jet_bit_ls_table : UInt
+
+pub let jet_bit_move_first : UInt
+
+pub let jet_bit_move_key_ne : UInt
+
+pub let jet_bit_new_key : UInt
+
+pub let jet_bit_no_move : UInt
+
+pub let jet_bit_normalized_key : UInt
+
+pub let jet_bit_object_system : UInt
+
+pub let jet_bit_object_table_derived : UInt
+
+pub let jet_bit_object_table_fixed_ddl : UInt
+
+pub let jet_bit_object_table_no_fixed_var_columns_in_derived_tables : UInt
+
+pub let jet_bit_object_table_template : UInt
+
+pub let jet_bit_partial_column_end_limit : UInt
+
+pub let jet_bit_partial_column_start_limit : UInt
+
+pub let jet_bit_preread_backward : UInt
+
+pub let jet_bit_preread_first_page : UInt
+
+pub let jet_bit_preread_forward : UInt
+
+pub let jet_bit_preread_normalized_key : UInt
+
+pub let jet_bit_range_inclusive : UInt
+
+pub let jet_bit_range_instant_duration : UInt
+
+pub let jet_bit_range_remove : UInt
+
+pub let jet_bit_range_upper_limit : UInt
+
+pub let jet_bit_read_lock : UInt
+
+pub let jet_bit_record_in_index : UInt
+
+pub let jet_bit_record_not_in_index : UInt
+
+pub let jet_bit_record_size_in_copy_buffer : UInt
+
+pub let jet_bit_record_size_local : UInt
+
+pub let jet_bit_record_size_running_total : UInt
+
+pub let jet_bit_recovery_without_undo : UInt
+
+pub let jet_bit_replay_ignore_lost_logs : UInt
+
+pub let jet_bit_replay_ignore_missing_db : UInt
+
+pub let jet_bit_replay_missing_map_entry_db : UInt
+
+pub let jet_bit_resize_database_only_grow : UInt
+
+pub let jet_bit_resize_database_only_shrink : UInt
+
+pub let jet_bit_retrieve_copy : UInt
+
+pub let jet_bit_retrieve_from_index : UInt
+
+pub let jet_bit_retrieve_from_primary_bookmark : UInt
+
+pub let jet_bit_retrieve_hint_reserve1 : UInt
+
+pub let jet_bit_retrieve_hint_reserve2 : UInt
+
+pub let jet_bit_retrieve_hint_reserve3 : UInt
+
+pub let jet_bit_retrieve_hint_table_scan_backward : UInt
+
+pub let jet_bit_retrieve_hint_table_scan_forward : UInt
+
+pub let jet_bit_retrieve_ignore_default : UInt
+
+pub let jet_bit_retrieve_null : UInt
+
+pub let jet_bit_retrieve_tag : UInt
+
+pub let jet_bit_retrieve_tuple : UInt
+
+pub let jet_bit_rollback_all : UInt
+
+pub let jet_bit_seek_eq : UInt
+
+pub let jet_bit_seek_ge : UInt
+
+pub let jet_bit_seek_gt : UInt
+
+pub let jet_bit_seek_le : UInt
+
+pub let jet_bit_seek_lt : UInt
+
+pub let jet_bit_set_append_lv : UInt
+
+pub let jet_bit_set_compressed : UInt
+
+pub let jet_bit_set_contiguous_lv : UInt
+
+pub let jet_bit_set_index_range : UInt
+
+pub let jet_bit_set_intrinsic_lv : UInt
+
+pub let jet_bit_set_overwrite_lv : UInt
+
+pub let jet_bit_set_revert_to_default_value : UInt
+
+pub let jet_bit_set_separate_lv : UInt
+
+pub let jet_bit_set_size_lv : UInt
+
+pub let jet_bit_set_uncompressed : UInt
+
+pub let jet_bit_set_unique_multi_values : UInt
+
+pub let jet_bit_set_unique_normalized_multi_values : UInt
+
+pub let jet_bit_set_zero_length : UInt
+
+pub let jet_bit_shrink_database_off : UInt
+
+pub let jet_bit_shrink_database_on : UInt
+
+pub let jet_bit_shrink_database_realtime : UInt
+
+pub let jet_bit_shrink_database_trim : UInt
+
+pub let jet_bit_space_hints_utilize_parent_space : UInt
+
+pub let jet_bit_stop_service_all : UInt
+
+pub let jet_bit_stop_service_background_user_tasks : UInt
+
+pub let jet_bit_stop_service_quiesce_caches : UInt
+
+pub let jet_bit_stop_service_resume : UInt
+
+pub let jet_bit_str_limit : UInt
+
+pub let jet_bit_sub_str_limit : UInt
+
+pub let jet_bit_table_class1 : UInt
+
+pub let jet_bit_table_class10 : UInt
+
+pub let jet_bit_table_class11 : UInt
+
+pub let jet_bit_table_class12 : UInt
+
+pub let jet_bit_table_class13 : UInt
+
+pub let jet_bit_table_class14 : UInt
+
+pub let jet_bit_table_class15 : UInt
+
+pub let jet_bit_table_class2 : UInt
+
+pub let jet_bit_table_class3 : UInt
+
+pub let jet_bit_table_class4 : UInt
+
+pub let jet_bit_table_class5 : UInt
+
+pub let jet_bit_table_class6 : UInt
+
+pub let jet_bit_table_class7 : UInt
+
+pub let jet_bit_table_class8 : UInt
+
+pub let jet_bit_table_class9 : UInt
+
+pub let jet_bit_table_class_mask : UInt
+
+pub let jet_bit_table_class_none : UInt
+
+pub let jet_bit_table_create_fixed_ddl : UInt
+
+pub let jet_bit_table_create_immutable_structure : UInt
+
+pub let jet_bit_table_create_no_fixed_var_columns_in_derived_tables : UInt
+
+pub let jet_bit_table_create_template_table : UInt
+
+pub let jet_bit_table_deny_read : UInt
+
+pub let jet_bit_table_deny_write : UInt
+
+pub let jet_bit_table_info_bookmark : UInt
+
+pub let jet_bit_table_info_rollback : UInt
+
+pub let jet_bit_table_info_updatable : UInt
+
+pub let jet_bit_table_no_cache : UInt
+
+pub let jet_bit_table_opportune_read : UInt
+
+pub let jet_bit_table_permit_ddl : UInt
+
+pub let jet_bit_table_preread : UInt
+
+pub let jet_bit_table_read_only : UInt
+
+pub let jet_bit_table_sequential : UInt
+
+pub let jet_bit_table_updatable : UInt
+
+pub let jet_bit_term_abrupt : UInt
+
+pub let jet_bit_term_complete : UInt
+
+pub let jet_bit_term_dirty : UInt
+
+pub let jet_bit_term_stop_backup : UInt
+
+pub let jet_bit_transaction_read_only : UInt
+
+pub let jet_bit_truncate_logs_after_recovery : UInt
+
+pub let jet_bit_tt_dot_net_guid : UInt
+
+pub let jet_bit_tt_error_on_duplicate_insertion : UInt
+
+pub let jet_bit_tt_force_materialization : UInt
+
+pub let jet_bit_tt_forward_only : UInt
+
+pub let jet_bit_tt_indexed : UInt
+
+pub let jet_bit_tt_intrinsic_l_vs_only : UInt
+
+pub let jet_bit_tt_materialize_bbt : UInt
+
+pub let jet_bit_tt_scrollable : UInt
+
+pub let jet_bit_tt_sort_nulls_high : UInt
+
+pub let jet_bit_tt_unique : UInt
+
+pub let jet_bit_tt_updatable : UInt
+
+pub let jet_bit_update_check_ese97_compatibility : UInt
+
+pub let jet_bit_wait_all_level0_commit : UInt
+
+pub let jet_bit_wait_last_level0_commit : UInt
+
+pub let jet_bit_write_lock : UInt
+
+pub let jet_bit_zero_length : UInt
+
+pub let jet_cb_bookmark_most : UInt
+
+pub let jet_cb_column_lv_page_overhead : UInt
+
+pub let jet_cb_column_most : UInt
+
+pub let jet_cb_full_name_most : UInt
+
+pub let jet_cb_key_most : UInt
+
+pub let jet_cb_key_most2_k_byte_page : UInt
+
+pub let jet_cb_key_most4_k_byte_page : UInt
+
+pub let jet_cb_key_most8_k_byte_page : UInt
+
+pub let jet_cb_key_most_min : UInt
+
+pub let jet_cb_limit_key_most : UInt
+
+pub let jet_cb_lv_column_most : UInt
+
+pub let jet_cb_lv_default_value_most : UInt
+
+pub let jet_cb_name_most : UInt
+
+pub let jet_cb_primary_key_most : UInt
+
+pub let jet_cb_secondary_key_most : UInt
+
+pub let jet_cbtyp_after_delete : UInt
+
+pub let jet_cbtyp_after_insert : UInt
+
+pub let jet_cbtyp_after_replace : UInt
+
+pub let jet_cbtyp_before_delete : UInt
+
+pub let jet_cbtyp_before_insert : UInt
+
+pub let jet_cbtyp_before_replace : UInt
+
+pub let jet_cbtyp_finalize : UInt
+
+pub let jet_cbtyp_free_cursor_ls : UInt
+
+pub let jet_cbtyp_free_table_ls : UInt
+
+pub let jet_cbtyp_null : UInt
+
+pub let jet_cbtyp_online_defrag_completed : UInt
+
+pub let jet_cbtyp_user_defined_default_value : UInt
+
+pub let jet_ccol_fixed_most : UInt
+
+pub let jet_ccol_key_most : UInt
+
+pub let jet_ccol_most : UInt
+
+pub let jet_ccol_tagged_most : UInt
+
+pub let jet_ccol_var_most : UInt
+
+pub fn jet_close_database_raw(UInt64, UInt, UInt) -> Int
+
+pub fn jet_close_file_instance_raw(UInt64, UInt64) -> Int
+
+pub fn jet_close_file_raw(UInt64) -> Int
+
+pub fn jet_close_table_raw(UInt64, UInt64) -> Int
+
+pub let jet_col_info_grbit_minimal_info : UInt
+
+pub let jet_col_info_grbit_non_derived_columns_only : UInt
+
+pub let jet_col_info_grbit_sort_by_columnid : UInt
+
+pub let jet_coltyp_binary : UInt
+
+pub let jet_coltyp_bit : UInt
+
+pub let jet_coltyp_currency : UInt
+
+pub let jet_coltyp_date_time : UInt
+
+pub let jet_coltyp_guid : UInt
+
+pub let jet_coltyp_ieee_double : UInt
+
+pub let jet_coltyp_ieee_single : UInt
+
+pub let jet_coltyp_long : UInt
+
+pub let jet_coltyp_long_binary : UInt
+
+pub let jet_coltyp_long_long : UInt
+
+pub let jet_coltyp_long_text : UInt
+
+pub let jet_coltyp_max : UInt
+
+pub let jet_coltyp_nil : UInt
+
+pub let jet_coltyp_short : UInt
+
+pub let jet_coltyp_slv : UInt
+
+pub let jet_coltyp_text : UInt
+
+pub let jet_coltyp_unsigned_byte : UInt
+
+pub let jet_coltyp_unsigned_long : UInt
+
+pub let jet_coltyp_unsigned_long_long : UInt
+
+pub let jet_coltyp_unsigned_short : UInt
+
+pub fn jet_commit_transaction2_raw(UInt64, UInt, UInt, @core.RawAddress) -> Int
+
+pub fn jet_commit_transaction_raw(UInt64, UInt) -> Int
+
+pub fn jet_compact_a_raw(UInt64, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, UInt) -> Int
+
+pub fn jet_compact_w_raw(UInt64, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, UInt) -> Int
+
+pub fn jet_compute_stats_raw(UInt64, UInt64) -> Int
+
+pub let jet_config_default : UInt
+
+pub let jet_config_dynamic_medium_memory : UInt
+
+pub let jet_config_high_concurrency_scaling : UInt
+
+pub let jet_config_low_disk_footprint : UInt
+
+pub let jet_config_low_memory : UInt
+
+pub let jet_config_low_power : UInt
+
+pub let jet_config_medium_disk_footprint : UInt
+
+pub let jet_config_remove_quotas : UInt
+
+pub let jet_config_run_silent : UInt
+
+pub let jet_config_ssd_profile_io : UInt
+
+pub let jet_config_unthrottled_memory : UInt
+
+pub fn jet_configure_process_for_crash_dump_raw(UInt) -> Int
+
+pub fn jet_create_database2_a_raw(UInt64, @core.RawAddress, UInt, @core.RawAddress, UInt) -> Int
+
+pub fn jet_create_database2_w_raw(UInt64, @core.RawAddress, UInt, @core.RawAddress, UInt) -> Int
+
+pub fn jet_create_database_a_raw(UInt64, @core.RawAddress, @core.RawAddress, @core.RawAddress, UInt) -> Int
+
+pub fn jet_create_database_w_raw(UInt64, @core.RawAddress, @core.RawAddress, @core.RawAddress, UInt) -> Int
+
+pub fn jet_create_index2_a_raw(UInt64, UInt64, @core.RawAddress, UInt) -> Int
+
+pub fn jet_create_index2_w_raw(UInt64, UInt64, @core.RawAddress, UInt) -> Int
+
+pub fn jet_create_index3_a_raw(UInt64, UInt64, @core.RawAddress, UInt) -> Int
+
+pub fn jet_create_index3_w_raw(UInt64, UInt64, @core.RawAddress, UInt) -> Int
+
+pub fn jet_create_index4_a_raw(UInt64, UInt64, @core.RawAddress, UInt) -> Int
+
+pub fn jet_create_index4_w_raw(UInt64, UInt64, @core.RawAddress, UInt) -> Int
+
+pub fn jet_create_index_a_raw(UInt64, UInt64, @core.RawAddress, UInt, @core.RawAddress, UInt, UInt) -> Int
+
+pub fn jet_create_index_w_raw(UInt64, UInt64, @core.RawAddress, UInt, @core.RawAddress, UInt, UInt) -> Int
+
+pub fn jet_create_instance2_a_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, UInt) -> Int
+
+pub fn jet_create_instance2_w_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, UInt) -> Int
+
+pub fn jet_create_instance_a_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn jet_create_instance_w_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn jet_create_table_a_raw(UInt64, UInt, @core.RawAddress, UInt, UInt, @core.RawAddress) -> Int
+
+pub fn jet_create_table_column_index2_a_raw(UInt64, UInt, @core.RawAddress) -> Int
+
+pub fn jet_create_table_column_index2_w_raw(UInt64, UInt, @core.RawAddress) -> Int
+
+pub fn jet_create_table_column_index3_a_raw(UInt64, UInt, @core.RawAddress) -> Int
+
+pub fn jet_create_table_column_index3_w_raw(UInt64, UInt, @core.RawAddress) -> Int
+
+pub fn jet_create_table_column_index4_a_raw(UInt64, UInt, @core.RawAddress) -> Int
+
+pub fn jet_create_table_column_index4_w_raw(UInt64, UInt, @core.RawAddress) -> Int
+
+pub fn jet_create_table_column_index_a_raw(UInt64, UInt, @core.RawAddress) -> Int
+
+pub fn jet_create_table_column_index_w_raw(UInt64, UInt, @core.RawAddress) -> Int
+
+pub fn jet_create_table_w_raw(UInt64, UInt, @core.RawAddress, UInt, UInt, @core.RawAddress) -> Int
+
+pub let jet_db_info_collate : UInt
+
+pub let jet_db_info_connect : UInt
+
+pub let jet_db_info_country : UInt
+
+pub let jet_db_info_cp : UInt
+
+pub let jet_db_info_db_in_use : UInt
+
+pub let jet_db_info_file_type : UInt
+
+pub let jet_db_info_filename : UInt
+
+pub let jet_db_info_filesize : UInt
+
+pub let jet_db_info_filesize_on_disk : UInt
+
+pub let jet_db_info_isam : UInt
+
+pub let jet_db_info_langid : UInt
+
+pub let jet_db_info_lcid : UInt
+
+pub let jet_db_info_misc : UInt
+
+pub let jet_db_info_options : UInt
+
+pub let jet_db_info_page_size : UInt
+
+pub let jet_db_info_space_available : UInt
+
+pub let jet_db_info_space_owned : UInt
+
+pub let jet_db_info_transactions : UInt
+
+pub let jet_db_info_upgrade : UInt
+
+pub let jet_db_info_version : UInt
+
+pub let jet_dbstate_being_converted : UInt
+
+pub let jet_dbstate_clean_shutdown : UInt
+
+pub let jet_dbstate_dirty_shutdown : UInt
+
+pub let jet_dbstate_force_detach : UInt
+
+pub let jet_dbstate_just_created : UInt
+
+pub fn jet_defragment2_a_raw(UInt64, UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, UInt) -> Int
+
+pub fn jet_defragment2_w_raw(UInt64, UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, UInt) -> Int
+
+pub fn jet_defragment3_a_raw(UInt64, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, UInt) -> Int
+
+pub fn jet_defragment3_w_raw(UInt64, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, UInt) -> Int
+
+pub fn jet_defragment_a_raw(UInt64, UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress, UInt) -> Int
+
+pub fn jet_defragment_w_raw(UInt64, UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress, UInt) -> Int
+
+pub fn jet_delete_column2_a_raw(UInt64, UInt64, @core.RawAddress, UInt) -> Int
+
+pub fn jet_delete_column2_w_raw(UInt64, UInt64, @core.RawAddress, UInt) -> Int
+
+pub fn jet_delete_column_a_raw(UInt64, UInt64, @core.RawAddress) -> Int
+
+pub fn jet_delete_column_w_raw(UInt64, UInt64, @core.RawAddress) -> Int
+
+pub fn jet_delete_index_a_raw(UInt64, UInt64, @core.RawAddress) -> Int
+
+pub fn jet_delete_index_w_raw(UInt64, UInt64, @core.RawAddress) -> Int
+
+pub fn jet_delete_raw(UInt64, UInt64) -> Int
+
+pub fn jet_delete_table_a_raw(UInt64, UInt, @core.RawAddress) -> Int
+
+pub fn jet_delete_table_w_raw(UInt64, UInt, @core.RawAddress) -> Int
+
+pub fn jet_detach_database2_a_raw(UInt64, @core.RawAddress, UInt) -> Int
+
+pub fn jet_detach_database2_w_raw(UInt64, @core.RawAddress, UInt) -> Int
+
+pub fn jet_detach_database_a_raw(UInt64, @core.RawAddress) -> Int
+
+pub fn jet_detach_database_w_raw(UInt64, @core.RawAddress) -> Int
+
+pub fn jet_dup_cursor_raw(UInt64, UInt64, @core.RawAddress, UInt) -> Int
+
+pub fn jet_dup_session_raw(UInt64, @core.RawAddress) -> Int
+
+pub let jet_efv_allow_higher_persisted_format : UInt
+
+pub let jet_efv_use_engine_default : UInt
+
+pub let jet_efv_use_persisted_format : UInt
+
+pub let jet_efv_windows10v2004 : UInt
+
+pub let jet_efv_windows11v21_h2 : UInt
+
+pub let jet_efv_windows11v22_h2 : UInt
+
+pub let jet_efv_windows11v23_h2 : UInt
+
+pub let jet_efv_windows19_h1_rtm : UInt
+
+pub let jet_efv_windows_server2022 : UInt
+
+pub fn jet_enable_multi_instance_a_raw(@core.RawAddress, UInt, @core.RawAddress) -> Int
+
+pub fn jet_enable_multi_instance_w_raw(@core.RawAddress, UInt, @core.RawAddress) -> Int
+
+pub fn jet_end_external_backup_instance2_raw(UInt64, UInt) -> Int
+
+pub fn jet_end_external_backup_instance_raw(UInt64) -> Int
+
+pub fn jet_end_external_backup_raw() -> Int
+
+pub fn jet_end_session_raw(UInt64, UInt) -> Int
+
+pub fn jet_enumerate_columns_raw(UInt64, UInt64, UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, UInt, UInt) -> Int
+
+pub let jet_err_access_denied : Int
+
+pub let jet_err_after_initialization : Int
+
+pub let jet_err_already_initialized : Int
+
+pub let jet_err_already_prepared : Int
+
+pub let jet_err_attached_database_mismatch : Int
+
+pub let jet_err_auto_increment_not_set : Int
+
+pub let jet_err_backup_abort_by_server : Int
+
+pub let jet_err_backup_directory_not_empty : Int
+
+pub let jet_err_backup_in_progress : Int
+
+pub let jet_err_backup_not_allowed_yet : Int
+
+pub let jet_err_bad_backup_database_size : Int
+
+pub let jet_err_bad_bookmark : Int
+
+pub let jet_err_bad_checkpoint_signature : Int
+
+pub let jet_err_bad_column_id : Int
+
+pub let jet_err_bad_db_signature : Int
+
+pub let jet_err_bad_empty_page : Int
+
+pub let jet_err_bad_itag_sequence : Int
+
+pub let jet_err_bad_line_count : Int
+
+pub let jet_err_bad_log_signature : Int
+
+pub let jet_err_bad_log_version : Int
+
+pub let jet_err_bad_page_link : Int
+
+pub let jet_err_bad_parent_page_link : Int
+
+pub let jet_err_bad_patch_page : Int
+
+pub let jet_err_bad_restore_target_instance : Int
+
+pub let jet_err_bbt_buff_corrupted : Int
+
+pub let jet_err_bbt_node_corrupted : Int
+
+pub let jet_err_buffer_too_small : Int
+
+pub let jet_err_callback_failed : Int
+
+pub let jet_err_callback_not_resolved : Int
+
+pub let jet_err_cannot_add_fixed_var_column_to_derived_table : Int
+
+pub let jet_err_cannot_be_tagged : Int
+
+pub let jet_err_cannot_delete_system_table : Int
+
+pub let jet_err_cannot_delete_temp_table : Int
+
+pub let jet_err_cannot_delete_template_table : Int
+
+pub let jet_err_cannot_disable_versioning : Int
+
+pub let jet_err_cannot_index : Int
+
+pub let jet_err_cannot_index_on_encrypted_column : Int
+
+pub let jet_err_cannot_log_during_recovery_redo : Int
+
+pub let jet_err_cannot_materialize_forward_only_sort : Int
+
+pub let jet_err_cannot_nest_ddl : Int
+
+pub let jet_err_cannot_separate_intrinsic_lv : Int
+
+pub let jet_err_catalog_corrupted : Int
+
+pub let jet_err_checkpoint_corrupt : Int
+
+pub let jet_err_checkpoint_depth_too_deep : Int
+
+pub let jet_err_checkpoint_file_not_found : Int
+
+pub let jet_err_client_request_to_stop_jet_service : Int
+
+pub let jet_err_client_space_begin : Int
+
+pub let jet_err_client_space_end : Int
+
+pub let jet_err_column_cannot_be_compressed : Int
+
+pub let jet_err_column_cannot_be_encrypted : Int
+
+pub let jet_err_column_does_not_fit : Int
+
+pub let jet_err_column_duplicate : Int
+
+pub let jet_err_column_in_relationship : Int
+
+pub let jet_err_column_in_use : Int
+
+pub let jet_err_column_indexed : Int
+
+pub let jet_err_column_long : Int
+
+pub let jet_err_column_no_chunk : Int
+
+pub let jet_err_column_no_encryption_key : Int
+
+pub let jet_err_column_not_found : Int
+
+pub let jet_err_column_not_updatable : Int
+
+pub let jet_err_column_redundant : Int
+
+pub let jet_err_column_too_big : Int
+
+pub let jet_err_committed_log_file_corrupt : Int
+
+pub let jet_err_committed_log_files_missing : Int
+
+pub let jet_err_consistent_time_mismatch : Int
+
+pub let jet_err_container_not_empty : Int
+
+pub let jet_err_data_has_changed : Int
+
+pub let jet_err_database200_format : Int
+
+pub let jet_err_database400_format : Int
+
+pub let jet_err_database500_format : Int
+
+pub let jet_err_database_already_running_maintenance : Int
+
+pub let jet_err_database_already_upgraded : Int
+
+pub let jet_err_database_attached_for_recovery : Int
+
+pub let jet_err_database_buffer_dependencies_corrupted : Int
+
+pub let jet_err_database_corrupted : Int
+
+pub let jet_err_database_corrupted_no_repair : Int
+
+pub let jet_err_database_dirty_shutdown : Int
+
+pub let jet_err_database_duplicate : Int
+
+pub let jet_err_database_file_read_only : Int
+
+pub let jet_err_database_id_in_use : Int
+
+pub let jet_err_database_in_use : Int
+
+pub let jet_err_database_incomplete_upgrade : Int
+
+pub let jet_err_database_inconsistent : Int
+
+pub let jet_err_database_invalid_name : Int
+
+pub let jet_err_database_invalid_pages : Int
+
+pub let jet_err_database_invalid_path : Int
+
+pub let jet_err_database_leak_in_space : Int
+
+pub let jet_err_database_locked : Int
+
+pub let jet_err_database_log_set_mismatch : Int
+
+pub let jet_err_database_not_found : Int
+
+pub let jet_err_database_not_ready : Int
+
+pub let jet_err_database_patch_file_mismatch : Int
+
+pub let jet_err_database_sharing_violation : Int
+
+pub let jet_err_database_sign_in_use : Int
+
+pub let jet_err_database_streaming_file_mismatch : Int
+
+pub let jet_err_database_unavailable : Int
+
+pub let jet_err_databases_not_from_same_snapshot : Int
+
+pub let jet_err_db_time_beyond_max_required : Int
+
+pub let jet_err_db_time_corrupted : Int
+
+pub let jet_err_db_time_too_new : Int
+
+pub let jet_err_db_time_too_old : Int
+
+pub let jet_err_ddl_not_inheritable : Int
+
+pub let jet_err_decompression_failed : Int
+
+pub let jet_err_decryption_failed : Int
+
+pub let jet_err_default_value_too_big : Int
+
+pub let jet_err_delete_backup_file_fail : Int
+
+pub let jet_err_density_invalid : Int
+
+pub let jet_err_derived_column_corruption : Int
+
+pub let jet_err_dirty_shutdown : Int
+
+pub let jet_err_disabled_functionality : Int
+
+pub let jet_err_disk_full : Int
+
+pub let jet_err_disk_io : Int
+
+pub let jet_err_disk_read_verification_failure : Int
+
+pub let jet_err_encryption_bad_itag : Int
+
+pub let jet_err_ending_restore_log_too_low : Int
+
+pub let jet_err_engine_format_version_no_longer_supported_too_low : Int
+
+pub let jet_err_engine_format_version_not_yet_implemented_too_high : Int
+
+pub let jet_err_engine_format_version_param_too_low_for_requested_feature : Int
+
+pub let jet_err_engine_format_version_specified_too_low_for_database_version : Int
+
+pub let jet_err_engine_format_version_specified_too_low_for_log_version : Int
+
+pub let jet_err_entry_point_not_found : Int
+
+pub let jet_err_exclusive_table_lock_required : Int
+
+pub let jet_err_existing_log_file_has_bad_signature : Int
+
+pub let jet_err_existing_log_file_is_not_contiguous : Int
+
+pub let jet_err_feature_not_available : Int
+
+pub let jet_err_file_access_denied : Int
+
+pub let jet_err_file_already_exists : Int
+
+pub let jet_err_file_close : Int
+
+pub let jet_err_file_compressed : Int
+
+pub let jet_err_file_invalid_type : Int
+
+pub let jet_err_file_io_abort : Int
+
+pub let jet_err_file_io_beyond_eof : Int
+
+pub let jet_err_file_io_fail : Int
+
+pub let jet_err_file_io_retry : Int
+
+pub let jet_err_file_io_sparse : Int
+
+pub let jet_err_file_not_found : Int
+
+pub let jet_err_file_system_corruption : Int
+
+pub let jet_err_filtered_move_not_supported : Int
+
+pub let jet_err_fixed_ddl : Int
+
+pub let jet_err_fixed_inherited_ddl : Int
+
+pub let jet_err_flush_map_database_mismatch : Int
+
+pub let jet_err_flush_map_unrecoverable : Int
+
+pub let jet_err_flush_map_version_unsupported : Int
+
+pub let jet_err_force_detach_not_allowed : Int
+
+pub let jet_err_given_log_file_has_bad_signature : Int
+
+pub let jet_err_given_log_file_is_not_contiguous : Int
+
+pub let jet_err_illegal_operation : Int
+
+pub let jet_err_in_transaction : Int
+
+pub let jet_err_index_build_corrupted : Int
+
+pub let jet_err_index_cant_build : Int
+
+pub let jet_err_index_duplicate : Int
+
+pub let jet_err_index_has_primary : Int
+
+pub let jet_err_index_in_use : Int
+
+pub let jet_err_index_invalid_def : Int
+
+pub let jet_err_index_must_stay : Int
+
+pub let jet_err_index_not_found : Int
+
+pub let jet_err_index_tuples_cannot_retrieve_from_index : Int
+
+pub let jet_err_index_tuples_invalid_limits : Int
+
+pub let jet_err_index_tuples_key_too_small : Int
+
+pub let jet_err_index_tuples_non_unique_only : Int
+
+pub let jet_err_index_tuples_one_column_only : Int
+
+pub let jet_err_index_tuples_secondary_index_only : Int
+
+pub let jet_err_index_tuples_text_binary_columns_only : Int
+
+pub let jet_err_index_tuples_text_columns_only : Int
+
+pub let jet_err_index_tuples_too_many_columns : Int
+
+pub let jet_err_index_tuples_var_seg_mac_not_allowed : Int
+
+pub let jet_err_init_in_progress : Int
+
+pub let jet_err_insert_key_out_of_order : Int
+
+pub let jet_err_instance_name_in_use : Int
+
+pub let jet_err_instance_unavailable : Int
+
+pub let jet_err_instance_unavailable_due_to_fatal_log_disk_full : Int
+
+pub let jet_err_internal_error : Int
+
+pub let jet_err_invalid_backup : Int
+
+pub let jet_err_invalid_backup_sequence : Int
+
+pub let jet_err_invalid_bookmark : Int
+
+pub let jet_err_invalid_buffer_size : Int
+
+pub let jet_err_invalid_code_page : Int
+
+pub let jet_err_invalid_column_type : Int
+
+pub let jet_err_invalid_country : Int
+
+pub let jet_err_invalid_create_db_version : Int
+
+pub let jet_err_invalid_create_index : Int
+
+pub let jet_err_invalid_database : Int
+
+pub let jet_err_invalid_database_id : Int
+
+pub let jet_err_invalid_database_version : Int
+
+pub let jet_err_invalid_dbparam_id : Int
+
+pub let jet_err_invalid_filename : Int
+
+pub let jet_err_invalid_grbit : Int
+
+pub let jet_err_invalid_index_id : Int
+
+pub let jet_err_invalid_instance : Int
+
+pub let jet_err_invalid_language_id : Int
+
+pub let jet_err_invalid_lc_map_string_flags : Int
+
+pub let jet_err_invalid_log_directory : Int
+
+pub let jet_err_invalid_log_sequence : Int
+
+pub let jet_err_invalid_logged_operation : Int
+
+pub let jet_err_invalid_lv_chunk_size : Int
+
+pub let jet_err_invalid_name : Int
+
+pub let jet_err_invalid_object : Int
+
+pub let jet_err_invalid_on_sort : Int
+
+pub let jet_err_invalid_operation : Int
+
+pub let jet_err_invalid_parameter : Int
+
+pub let jet_err_invalid_path : Int
+
+pub let jet_err_invalid_placeholder_column : Int
+
+pub let jet_err_invalid_preread : Int
+
+pub let jet_err_invalid_sesid : Int
+
+pub let jet_err_invalid_sesparam_id : Int
+
+pub let jet_err_invalid_settings : Int
+
+pub let jet_err_invalid_system_path : Int
+
+pub let jet_err_invalid_table_id : Int
+
+pub let jet_err_key_boundary : Int
+
+pub let jet_err_key_duplicate : Int
+
+pub let jet_err_key_is_made : Int
+
+pub let jet_err_key_not_made : Int
+
+pub let jet_err_key_too_big : Int
+
+pub let jet_err_key_truncated : Int
+
+pub let jet_err_language_not_supported : Int
+
+pub let jet_err_link_not_supported : Int
+
+pub let jet_err_log_buffer_too_small : Int
+
+pub let jet_err_log_corrupt_during_hard_recovery : Int
+
+pub let jet_err_log_corrupt_during_hard_restore : Int
+
+pub let jet_err_log_corrupted : Int
+
+pub let jet_err_log_disabled_due_to_recovery_failure : Int
+
+pub let jet_err_log_disk_full : Int
+
+pub let jet_err_log_file_corrupt : Int
+
+pub let jet_err_log_file_not_copied : Int
+
+pub let jet_err_log_file_path_in_use : Int
+
+pub let jet_err_log_file_size_mismatch : Int
+
+pub let jet_err_log_file_size_mismatch_databases_consistent : Int
+
+pub let jet_err_log_generation_mismatch : Int
+
+pub let jet_err_log_operation_inconsistent_with_database : Int
+
+pub let jet_err_log_read_verify_failure : Int
+
+pub let jet_err_log_sector_size_mismatch : Int
+
+pub let jet_err_log_sector_size_mismatch_databases_consistent : Int
+
+pub let jet_err_log_sequence_checksum_mismatch : Int
+
+pub let jet_err_log_sequence_end : Int
+
+pub let jet_err_log_sequence_end_databases_consistent : Int
+
+pub let jet_err_log_torn_write_during_hard_recovery : Int
+
+pub let jet_err_log_torn_write_during_hard_restore : Int
+
+pub let jet_err_log_write_fail : Int
+
+pub let jet_err_logging_disabled : Int
+
+pub let jet_err_ls_already_set : Int
+
+pub let jet_err_ls_callback_not_specified : Int
+
+pub let jet_err_ls_not_set : Int
+
+pub let jet_err_lv_corrupted : Int
+
+pub let jet_err_make_backup_directory_fail : Int
+
+pub let jet_err_missing_current_log_files : Int
+
+pub let jet_err_missing_file_to_backup : Int
+
+pub let jet_err_missing_full_backup : Int
+
+pub let jet_err_missing_log_file : Int
+
+pub let jet_err_missing_patch_page : Int
+
+pub let jet_err_missing_previous_log_file : Int
+
+pub let jet_err_missing_restore_log_files : Int
+
+pub let jet_err_multi_valued_column_must_be_tagged : Int
+
+pub let jet_err_multi_valued_duplicate : Int
+
+pub let jet_err_multi_valued_duplicate_after_truncation : Int
+
+pub let jet_err_multi_valued_index_violation : Int
+
+pub let jet_err_must_be_separate_long_value : Int
+
+pub let jet_err_must_disable_logging_for_db_upgrade : Int
+
+pub let jet_err_must_rollback : Int
+
+pub let jet_err_no_backup : Int
+
+pub let jet_err_no_backup_directory : Int
+
+pub let jet_err_no_current_index : Int
+
+pub let jet_err_no_current_record : Int
+
+pub let jet_err_node_corrupted : Int
+
+pub let jet_err_not_in_transaction : Int
+
+pub let jet_err_not_initialized : Int
+
+pub let jet_err_nt_system_call_failed : Int
+
+pub let jet_err_null_invalid : Int
+
+pub let jet_err_null_key_disallowed : Int
+
+pub let jet_err_object_duplicate : Int
+
+pub let jet_err_object_not_found : Int
+
+pub let jet_err_one_database_per_session : Int
+
+pub let jet_err_os_snapshot_invalid_sequence : Int
+
+pub let jet_err_os_snapshot_invalid_snap_id : Int
+
+pub let jet_err_os_snapshot_not_allowed : Int
+
+pub let jet_err_os_snapshot_time_out : Int
+
+pub let jet_err_out_of_autoincrement_values : Int
+
+pub let jet_err_out_of_buffers : Int
+
+pub let jet_err_out_of_cursors : Int
+
+pub let jet_err_out_of_database_space : Int
+
+pub let jet_err_out_of_dbtime_values : Int
+
+pub let jet_err_out_of_file_handles : Int
+
+pub let jet_err_out_of_long_value_i_ds : Int
+
+pub let jet_err_out_of_memory : Int
+
+pub let jet_err_out_of_object_i_ds : Int
+
+pub let jet_err_out_of_sequential_index_values : Int
+
+pub let jet_err_out_of_sessions : Int
+
+pub let jet_err_out_of_threads : Int
+
+pub let jet_err_page_boundary : Int
+
+pub let jet_err_page_initialized_mismatch : Int
+
+pub let jet_err_page_not_initialized : Int
+
+pub let jet_err_page_size_mismatch : Int
+
+pub let jet_err_page_tag_corrupted : Int
+
+pub let jet_err_partially_attached_db : Int
+
+pub let jet_err_patch_file_missing : Int
+
+pub let jet_err_permission_denied : Int
+
+pub let jet_err_previous_version : Int
+
+pub let jet_err_primary_index_corrupted : Int
+
+pub let jet_err_read_lost_flush_verify_failure : Int
+
+pub let jet_err_read_pgno_verify_failure : Int
+
+pub let jet_err_read_verify_failure : Int
+
+pub let jet_err_record_deleted : Int
+
+pub let jet_err_record_format_conversion_failed : Int
+
+pub let jet_err_record_no_copy : Int
+
+pub let jet_err_record_not_deleted : Int
+
+pub let jet_err_record_not_found : Int
+
+pub let jet_err_record_primary_changed : Int
+
+pub let jet_err_record_too_big : Int
+
+pub let jet_err_record_too_big_for_backward_compatibility : Int
+
+pub let jet_err_recovered_with_errors : Int
+
+pub let jet_err_recovered_without_undo : Int
+
+pub let jet_err_recovered_without_undo_databases_consistent : Int
+
+pub let jet_err_recovery_verify_failure : Int
+
+pub let jet_err_redo_abrupt_ended : Int
+
+pub let jet_err_required_log_files_missing : Int
+
+pub let jet_err_restore_in_progress : Int
+
+pub let jet_err_restore_of_non_backup_database : Int
+
+pub let jet_err_rfs_failure : Int
+
+pub let jet_err_rfs_not_armed : Int
+
+pub let jet_err_rollback_error : Int
+
+pub let jet_err_rollback_required : Int
+
+pub let jet_err_running_in_multi_instance_mode : Int
+
+pub let jet_err_running_in_one_instance_mode : Int
+
+pub let jet_err_secondary_index_corrupted : Int
+
+pub let jet_err_sector_size_not_supported : Int
+
+pub let jet_err_separated_long_value : Int
+
+pub let jet_err_sesid_table_id_mismatch : Int
+
+pub let jet_err_session_context_already_set : Int
+
+pub let jet_err_session_context_not_set_by_this_thread : Int
+
+pub let jet_err_session_in_use : Int
+
+pub let jet_err_session_sharing_violation : Int
+
+pub let jet_err_session_write_conflict : Int
+
+pub let jet_err_set_auto_increment_too_high : Int
+
+pub let jet_err_soft_recovery_on_backup_database : Int
+
+pub let jet_err_soft_recovery_on_snapshot : Int
+
+pub let jet_err_sp_avail_ext_cache_out_of_memory : Int
+
+pub let jet_err_sp_avail_ext_cache_out_of_sync : Int
+
+pub let jet_err_sp_avail_ext_corrupted : Int
+
+pub let jet_err_sp_own_ext_corrupted : Int
+
+pub let jet_err_space_hints_invalid : Int
+
+pub let jet_err_starting_restore_log_too_high : Int
+
+pub let jet_err_streaming_data_not_logged : Int
+
+pub let jet_err_success : Int
+
+pub let jet_err_system_parameter_conflict : Int
+
+pub let jet_err_system_params_already_set : Int
+
+pub let jet_err_system_path_in_use : Int
+
+pub let jet_err_table_duplicate : Int
+
+pub let jet_err_table_in_use : Int
+
+pub let jet_err_table_locked : Int
+
+pub let jet_err_table_not_empty : Int
+
+pub let jet_err_tagged_not_null : Int
+
+pub let jet_err_task_dropped : Int
+
+pub let jet_err_temp_file_open_error : Int
+
+pub let jet_err_temp_path_in_use : Int
+
+pub let jet_err_term_in_progress : Int
+
+pub let jet_err_too_many_active_users : Int
+
+pub let jet_err_too_many_attached_databases : Int
+
+pub let jet_err_too_many_columns : Int
+
+pub let jet_err_too_many_indexes : Int
+
+pub let jet_err_too_many_instances : Int
+
+pub let jet_err_too_many_io : Int
+
+pub let jet_err_too_many_keys : Int
+
+pub let jet_err_too_many_mempool_entries : Int
+
+pub let jet_err_too_many_open_databases : Int
+
+pub let jet_err_too_many_open_indexes : Int
+
+pub let jet_err_too_many_open_tables : Int
+
+pub let jet_err_too_many_open_tables_and_cleanup_timed_out : Int
+
+pub let jet_err_too_many_records : Int
+
+pub let jet_err_too_many_sorts : Int
+
+pub let jet_err_too_many_splits : Int
+
+pub let jet_err_trans_read_only : Int
+
+pub let jet_err_trans_too_deep : Int
+
+pub let jet_err_transaction_too_long : Int
+
+pub let jet_err_transactions_not_ready_during_recovery : Int
+
+pub let jet_err_unicode_language_validation_failure : Int
+
+pub let jet_err_unicode_normalization_not_supported : Int
+
+pub let jet_err_unicode_translation_buffer_too_small : Int
+
+pub let jet_err_unicode_translation_fail : Int
+
+pub let jet_err_unloadable_os_functionality : Int
+
+pub let jet_err_update_must_version : Int
+
+pub let jet_err_update_not_prepared : Int
+
+pub let jet_err_version_store_entry_too_big : Int
+
+pub let jet_err_version_store_out_of_memory : Int
+
+pub let jet_err_version_store_out_of_memory_and_cleanup_timed_out : Int
+
+pub let jet_err_write_conflict : Int
+
+pub let jet_err_write_conflict_primary_index : Int
+
+pub let jet_errcat_api : Int
+
+pub let jet_errcat_corruption : Int
+
+pub let jet_errcat_data : Int
+
+pub let jet_errcat_disk : Int
+
+pub let jet_errcat_error : Int
+
+pub let jet_errcat_fatal : Int
+
+pub let jet_errcat_fragmentation : Int
+
+pub let jet_errcat_inconsistent : Int
+
+pub let jet_errcat_io : Int
+
+pub let jet_errcat_max : Int
+
+pub let jet_errcat_memory : Int
+
+pub let jet_errcat_obsolete : Int
+
+pub let jet_errcat_operation : Int
+
+pub let jet_errcat_quota : Int
+
+pub let jet_errcat_resource : Int
+
+pub let jet_errcat_state : Int
+
+pub let jet_errcat_unknown : Int
+
+pub let jet_errcat_usage : Int
+
+pub fn jet_escrow_update_raw(UInt64, UInt64, UInt, @core.RawAddress, UInt, @core.RawAddress, UInt, @core.RawAddress, UInt) -> Int
+
+pub let jet_event_logging_disable : UInt
+
+pub let jet_event_logging_level_high : UInt
+
+pub let jet_event_logging_level_low : UInt
+
+pub let jet_event_logging_level_max : UInt
+
+pub let jet_event_logging_level_medium : UInt
+
+pub let jet_event_logging_level_min : UInt
+
+pub let jet_exception_fail_fast : UInt
+
+pub let jet_exception_msg_box : UInt
+
+pub let jet_exception_none : UInt
+
+pub fn jet_external_restore2_a_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, Int, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn jet_external_restore2_w_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, Int, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn jet_external_restore_a_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, Int, @core.RawAddress, Int, Int, @core.RawAddress) -> Int
+
+pub fn jet_external_restore_w_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, Int, @core.RawAddress, Int, Int, @core.RawAddress) -> Int
+
+pub let jet_filetype_checkpoint : UInt
+
+pub let jet_filetype_database : UInt
+
+pub let jet_filetype_flush_map : UInt
+
+pub let jet_filetype_log : UInt
+
+pub let jet_filetype_temp_database : UInt
+
+pub let jet_filetype_unknown : UInt
+
+pub fn jet_free_buffer_raw(@core.RawAddress) -> Int
+
+pub fn jet_get_attach_info_a_raw(@core.RawAddress, UInt, @core.RawAddress) -> Int
+
+pub fn jet_get_attach_info_instance_a_raw(UInt64, @core.RawAddress, UInt, @core.RawAddress) -> Int
+
+pub fn jet_get_attach_info_instance_w_raw(UInt64, @core.RawAddress, UInt, @core.RawAddress) -> Int
+
+pub fn jet_get_attach_info_w_raw(@core.RawAddress, UInt, @core.RawAddress) -> Int
+
+pub fn jet_get_bookmark_raw(UInt64, UInt64, @core.RawAddress, UInt, @core.RawAddress) -> Int
+
+pub fn jet_get_column_info_a_raw(UInt64, UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress, UInt, UInt) -> Int
+
+pub fn jet_get_column_info_w_raw(UInt64, UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress, UInt, UInt) -> Int
+
+pub fn jet_get_current_index_a_raw(UInt64, UInt64, @core.RawAddress, UInt) -> Int
+
+pub fn jet_get_current_index_w_raw(UInt64, UInt64, @core.RawAddress, UInt) -> Int
+
+pub fn jet_get_cursor_info_raw(UInt64, UInt64, @core.RawAddress, UInt, UInt) -> Int
+
+pub fn jet_get_database_file_info_a_raw(@core.RawAddress, @core.RawAddress, UInt, UInt) -> Int
+
+pub fn jet_get_database_file_info_w_raw(@core.RawAddress, @core.RawAddress, UInt, UInt) -> Int
+
+pub fn jet_get_database_info_a_raw(UInt64, UInt, @core.RawAddress, UInt, UInt) -> Int
+
+pub fn jet_get_database_info_w_raw(UInt64, UInt, @core.RawAddress, UInt, UInt) -> Int
+
+pub fn jet_get_error_info_w_raw(@core.RawAddress, @core.RawAddress, UInt, UInt, UInt) -> Int
+
+pub fn jet_get_index_info_a_raw(UInt64, UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress, UInt, UInt) -> Int
+
+pub fn jet_get_index_info_w_raw(UInt64, UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress, UInt, UInt) -> Int
+
+pub fn jet_get_instance_info_a_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn jet_get_instance_info_w_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn jet_get_instance_misc_info_raw(UInt64, @core.RawAddress, UInt, UInt) -> Int
+
+pub fn jet_get_lock_raw(UInt64, UInt64, UInt) -> Int
+
+pub fn jet_get_log_info_a_raw(@core.RawAddress, UInt, @core.RawAddress) -> Int
+
+pub fn jet_get_log_info_instance2_a_raw(UInt64, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn jet_get_log_info_instance2_w_raw(UInt64, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn jet_get_log_info_instance_a_raw(UInt64, @core.RawAddress, UInt, @core.RawAddress) -> Int
+
+pub fn jet_get_log_info_instance_w_raw(UInt64, @core.RawAddress, UInt, @core.RawAddress) -> Int
+
+pub fn jet_get_log_info_w_raw(@core.RawAddress, UInt, @core.RawAddress) -> Int
+
+pub fn jet_get_ls_raw(UInt64, UInt64, @core.RawAddress, UInt) -> Int
+
+pub fn jet_get_object_info_a_raw(UInt64, UInt, UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress, UInt, UInt) -> Int
+
+pub fn jet_get_object_info_w_raw(UInt64, UInt, UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress, UInt, UInt) -> Int
+
+pub fn jet_get_record_position_raw(UInt64, UInt64, @core.RawAddress, UInt) -> Int
+
+pub fn jet_get_record_size2_raw(UInt64, UInt64, @core.RawAddress, UInt) -> Int
+
+pub fn jet_get_record_size_raw(UInt64, UInt64, @core.RawAddress, UInt) -> Int
+
+pub fn jet_get_secondary_index_bookmark_raw(UInt64, UInt64, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, UInt) -> Int
+
+pub fn jet_get_session_parameter_raw(UInt64, UInt, @core.RawAddress, UInt, @core.RawAddress) -> Int
+
+pub fn jet_get_system_parameter_a_raw(UInt64, UInt64, UInt, @core.RawAddress, @core.RawAddress, UInt) -> Int
+
+pub fn jet_get_system_parameter_w_raw(UInt64, UInt64, UInt, @core.RawAddress, @core.RawAddress, UInt) -> Int
+
+pub fn jet_get_table_column_info_a_raw(UInt64, UInt64, @core.RawAddress, @core.RawAddress, UInt, UInt) -> Int
+
+pub fn jet_get_table_column_info_w_raw(UInt64, UInt64, @core.RawAddress, @core.RawAddress, UInt, UInt) -> Int
+
+pub fn jet_get_table_index_info_a_raw(UInt64, UInt64, @core.RawAddress, @core.RawAddress, UInt, UInt) -> Int
+
+pub fn jet_get_table_index_info_w_raw(UInt64, UInt64, @core.RawAddress, @core.RawAddress, UInt, UInt) -> Int
+
+pub fn jet_get_table_info_a_raw(UInt64, UInt64, @core.RawAddress, UInt, UInt) -> Int
+
+pub fn jet_get_table_info_w_raw(UInt64, UInt64, @core.RawAddress, UInt, UInt) -> Int
+
+pub fn jet_get_thread_stats_raw(@core.RawAddress, UInt) -> Int
+
+pub fn jet_get_truncate_log_info_instance_a_raw(UInt64, @core.RawAddress, UInt, @core.RawAddress) -> Int
+
+pub fn jet_get_truncate_log_info_instance_w_raw(UInt64, @core.RawAddress, UInt, @core.RawAddress) -> Int
+
+pub fn jet_get_version_raw(UInt64, @core.RawAddress) -> Int
+
+pub fn jet_goto_bookmark_raw(UInt64, UInt64, @core.RawAddress, UInt) -> Int
+
+pub fn jet_goto_position_raw(UInt64, UInt64, @core.RawAddress) -> Int
+
+pub fn jet_goto_secondary_index_bookmark_raw(UInt64, UInt64, @core.RawAddress, UInt, @core.RawAddress, UInt, UInt) -> Int
+
+pub fn jet_grow_database_raw(UInt64, UInt, UInt, @core.RawAddress) -> Int
+
+pub fn jet_idle_raw(UInt64, UInt) -> Int
+
+pub let jet_index_checking_defer_to_open_table : Int
+
+pub let jet_index_checking_max : Int
+
+pub let jet_index_checking_off : Int
+
+pub let jet_index_checking_on : Int
+
+pub fn jet_index_record_count_raw(UInt64, UInt64, @core.RawAddress, UInt) -> Int
+
+pub fn jet_init2_raw(@core.RawAddress, UInt) -> Int
+
+pub fn jet_init3_a_raw(@core.RawAddress, @core.RawAddress, UInt) -> Int
+
+pub fn jet_init3_w_raw(@core.RawAddress, @core.RawAddress, UInt) -> Int
+
+pub fn jet_init_raw(@core.RawAddress) -> Int
+
+pub fn jet_intersect_indexes_raw(UInt64, @core.RawAddress, UInt, @core.RawAddress, UInt) -> Int
+
+pub let jet_io_priority_low : UInt
+
+pub let jet_io_priority_normal : UInt
+
+pub fn jet_make_key_raw(UInt64, UInt64, @core.RawAddress, UInt, UInt) -> Int
+
+pub let jet_max_computername_length : UInt
+
+pub let jet_move_first : UInt
+
+pub let jet_move_last : UInt
+
+pub let jet_move_previous : Int
+
+pub fn jet_move_raw(UInt64, UInt64, Int, UInt) -> Int
+
+pub let jet_objtyp_nil : UInt
+
+pub let jet_objtyp_table : UInt
+
+pub let jet_online_defrag_all : UInt
+
+pub let jet_online_defrag_all_obsolete : UInt
+
+pub let jet_online_defrag_databases : UInt
+
+pub let jet_online_defrag_disable : UInt
+
+pub let jet_online_defrag_space_trees : UInt
+
+pub fn jet_open_database_a_raw(UInt64, @core.RawAddress, @core.RawAddress, @core.RawAddress, UInt) -> Int
+
+pub fn jet_open_database_w_raw(UInt64, @core.RawAddress, @core.RawAddress, @core.RawAddress, UInt) -> Int
+
+pub fn jet_open_file_a_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn jet_open_file_instance_a_raw(UInt64, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn jet_open_file_instance_w_raw(UInt64, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn jet_open_file_w_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn jet_open_table_a_raw(UInt64, UInt, @core.RawAddress, @core.RawAddress, UInt, UInt, @core.RawAddress) -> Int
+
+pub fn jet_open_table_w_raw(UInt64, UInt, @core.RawAddress, @core.RawAddress, UInt, UInt, @core.RawAddress) -> Int
+
+pub fn jet_open_temp_table2_raw(UInt64, @core.RawAddress, UInt, UInt, UInt, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn jet_open_temp_table3_raw(UInt64, @core.RawAddress, UInt, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn jet_open_temp_table_raw(UInt64, @core.RawAddress, UInt, UInt, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn jet_open_temporary_table2_raw(UInt64, @core.RawAddress) -> Int
+
+pub fn jet_open_temporary_table_raw(UInt64, @core.RawAddress) -> Int
+
+pub fn jet_os_snapshot_abort_raw(UInt64, UInt) -> Int
+
+pub fn jet_os_snapshot_end_raw(UInt64, UInt) -> Int
+
+pub fn jet_os_snapshot_freeze_a_raw(UInt64, @core.RawAddress, @core.RawAddress, UInt) -> Int
+
+pub fn jet_os_snapshot_freeze_w_raw(UInt64, @core.RawAddress, @core.RawAddress, UInt) -> Int
+
+pub fn jet_os_snapshot_get_freeze_info_a_raw(UInt64, @core.RawAddress, @core.RawAddress, UInt) -> Int
+
+pub fn jet_os_snapshot_get_freeze_info_w_raw(UInt64, @core.RawAddress, @core.RawAddress, UInt) -> Int
+
+pub fn jet_os_snapshot_prepare_instance_raw(UInt64, UInt64, UInt) -> Int
+
+pub fn jet_os_snapshot_prepare_raw(@core.RawAddress, UInt) -> Int
+
+pub fn jet_os_snapshot_thaw_raw(UInt64, UInt) -> Int
+
+pub fn jet_os_snapshot_truncate_log_instance_raw(UInt64, UInt64, UInt) -> Int
+
+pub fn jet_os_snapshot_truncate_log_raw(UInt64, UInt) -> Int
+
+pub let jet_param_access_denied_retry_period : UInt
+
+pub let jet_param_alternate_database_recovery_path : UInt
+
+pub let jet_param_base_name : UInt
+
+pub let jet_param_batch_io_buffer_max : UInt
+
+pub let jet_param_cache_priority : UInt
+
+pub let jet_param_cache_size : UInt
+
+pub let jet_param_cache_size_max : UInt
+
+pub let jet_param_cache_size_min : UInt
+
+pub let jet_param_cached_closed_tables : UInt
+
+pub let jet_param_check_format_when_open_fail : UInt
+
+pub let jet_param_checkpoint_depth_max : UInt
+
+pub let jet_param_checkpoint_io_max : UInt
+
+pub let jet_param_circular_log : UInt
+
+pub let jet_param_cleanup_mismatched_log_files : UInt
+
+pub let jet_param_commit_default : UInt
+
+pub let jet_param_config_store_spec : UInt
+
+pub let jet_param_configuration : UInt
+
+pub let jet_param_create_path_if_not_exist : UInt
+
+pub let jet_param_database_page_size : UInt
+
+pub let jet_param_db_extension_size : UInt
+
+pub let jet_param_db_scan_interval_max_sec : UInt
+
+pub let jet_param_db_scan_interval_min_sec : UInt
+
+pub let jet_param_db_scan_throttle : UInt
+
+pub let jet_param_defragment_sequential_b_trees : UInt
+
+pub let jet_param_defragment_sequential_b_trees_density_check_frequency : UInt
+
+pub let jet_param_delete_old_logs : UInt
+
+pub let jet_param_delete_out_of_range_logs : UInt
+
+pub let jet_param_disable_callbacks : UInt
+
+pub let jet_param_disable_perfmon : UInt
+
+pub let jet_param_durable_commit_callback : UInt
+
+pub let jet_param_enable_advanced : UInt
+
+pub let jet_param_enable_block_cache : UInt
+
+pub let jet_param_enable_db_scan_in_recovery : UInt
+
+pub let jet_param_enable_db_scan_serialization : UInt
+
+pub let jet_param_enable_file_cache : UInt
+
+pub let jet_param_enable_index_checking : UInt
+
+pub let jet_param_enable_index_cleanup : UInt
+
+pub let jet_param_enable_online_defrag : UInt
+
+pub let jet_param_enable_persisted_callbacks : UInt
+
+pub let jet_param_enable_rbs : UInt
+
+pub let jet_param_enable_shrink_database : UInt
+
+pub let jet_param_enable_sqm : UInt
+
+pub let jet_param_enable_temp_table_versioning : UInt
+
+pub let jet_param_enable_view_cache : UInt
+
+pub let jet_param_engine_format_version : UInt
+
+pub let jet_param_error_to_string : UInt
+
+pub let jet_param_event_log_cache : UInt
+
+pub let jet_param_event_logging_level : UInt
+
+pub let jet_param_event_source : UInt
+
+pub let jet_param_event_source_key : UInt
+
+pub let jet_param_exception_action : UInt
+
+pub let jet_param_global_min_ver_pages : UInt
+
+pub let jet_param_hung_io_actions : UInt
+
+pub let jet_param_hung_io_threshold : UInt
+
+pub let jet_param_ignore_log_version : UInt
+
+pub let jet_param_index_tuple_increment : UInt
+
+pub let jet_param_index_tuple_start : UInt
+
+pub let jet_param_index_tuples_length_max : UInt
+
+pub let jet_param_index_tuples_length_min : UInt
+
+pub let jet_param_index_tuples_to_index_max : UInt
+
+pub let jet_param_io_priority : UInt
+
+pub let jet_param_io_throttling_time_quanta : UInt
+
+pub let jet_param_key_most : UInt
+
+pub let jet_param_legacy_file_names : UInt
+
+pub let jet_param_log_buffers : UInt
+
+pub let jet_param_log_checkpoint_period : UInt
+
+pub let jet_param_log_file_create_asynch : UInt
+
+pub let jet_param_log_file_path : UInt
+
+pub let jet_param_log_file_size : UInt
+
+pub let jet_param_log_waiting_user_max : UInt
+
+pub let jet_param_lruk_corr_interval : UInt
+
+pub let jet_param_lruk_history_max : UInt
+
+pub let jet_param_lruk_policy : UInt
+
+pub let jet_param_lruk_timeout : UInt
+
+pub let jet_param_lruk_trx_corr_interval : UInt
+
+pub let jet_param_lv_chunk_size_most : UInt
+
+pub let jet_param_max_coalesce_read_gap_size : UInt
+
+pub let jet_param_max_coalesce_read_size : UInt
+
+pub let jet_param_max_coalesce_write_gap_size : UInt
+
+pub let jet_param_max_coalesce_write_size : UInt
+
+pub let jet_param_max_coltyp : UInt
+
+pub let jet_param_max_cursors : UInt
+
+pub let jet_param_max_instances : UInt
+
+pub let jet_param_max_open_tables : UInt
+
+pub let jet_param_max_sessions : UInt
+
+pub let jet_param_max_temporary_tables : UInt
+
+pub let jet_param_max_transaction_size : UInt
+
+pub let jet_param_max_value_invalid : UInt
+
+pub let jet_param_max_ver_pages : UInt
+
+pub let jet_param_min_data_for_xpress : UInt
+
+pub let jet_param_no_information_event : UInt
+
+pub let jet_param_one_database_per_session : UInt
+
+pub let jet_param_os_snapshot_timeout : UInt
+
+pub let jet_param_outstanding_io_max : UInt
+
+pub let jet_param_page_fragment : UInt
+
+pub let jet_param_page_hint_cache_size : UInt
+
+pub let jet_param_page_temp_db_min : UInt
+
+pub let jet_param_perfmon_refresh_interval : UInt
+
+pub let jet_param_preferred_max_open_tables : UInt
+
+pub let jet_param_preferred_ver_pages : UInt
+
+pub let jet_param_preread_io_max : UInt
+
+pub let jet_param_process_friendly_name : UInt
+
+pub let jet_param_rbs_file_path : UInt
+
+pub let jet_param_record_upgrade_dirty_level : UInt
+
+pub let jet_param_recovery : UInt
+
+pub let jet_param_runtime_callback : UInt
+
+pub let jet_param_start_flush_threshold : UInt
+
+pub let jet_param_stop_flush_threshold : UInt
+
+pub let jet_param_system_path : UInt
+
+pub let jet_param_table_class10_name : UInt
+
+pub let jet_param_table_class11_name : UInt
+
+pub let jet_param_table_class12_name : UInt
+
+pub let jet_param_table_class13_name : UInt
+
+pub let jet_param_table_class14_name : UInt
+
+pub let jet_param_table_class15_name : UInt
+
+pub let jet_param_table_class1_name : UInt
+
+pub let jet_param_table_class2_name : UInt
+
+pub let jet_param_table_class3_name : UInt
+
+pub let jet_param_table_class4_name : UInt
+
+pub let jet_param_table_class5_name : UInt
+
+pub let jet_param_table_class6_name : UInt
+
+pub let jet_param_table_class7_name : UInt
+
+pub let jet_param_table_class8_name : UInt
+
+pub let jet_param_table_class9_name : UInt
+
+pub let jet_param_temp_path : UInt
+
+pub let jet_param_trace_flags : UInt
+
+pub let jet_param_unicode_index_default : UInt
+
+pub let jet_param_use_flush_for_write_durability : UInt
+
+pub let jet_param_ver_page_size : UInt
+
+pub let jet_param_version_store_task_queue_max : UInt
+
+pub let jet_param_wait_log_flush : UInt
+
+pub let jet_param_waypoint_latency : UInt
+
+pub let jet_param_zero_database_during_backup : UInt
+
+pub let jet_prep_cancel : UInt
+
+pub let jet_prep_insert : UInt
+
+pub let jet_prep_insert_copy : UInt
+
+pub let jet_prep_insert_copy_delete_original : UInt
+
+pub let jet_prep_insert_copy_replace_original : UInt
+
+pub let jet_prep_replace : UInt
+
+pub let jet_prep_replace_no_lock : UInt
+
+pub fn jet_prepare_update_raw(UInt64, UInt64, UInt) -> Int
+
+pub fn jet_preread_index_ranges_raw(UInt64, UInt64, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress, UInt, UInt) -> Int
+
+pub fn jet_preread_keys_raw(UInt64, UInt64, @core.RawAddress, @core.RawAddress, Int, @core.RawAddress, UInt) -> Int
+
+pub fn jet_read_file_instance_raw(UInt64, UInt64, @core.RawAddress, UInt, @core.RawAddress) -> Int
+
+pub fn jet_read_file_raw(UInt64, @core.RawAddress, UInt, @core.RawAddress) -> Int
+
+pub fn jet_register_callback_raw(UInt64, UInt64, UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub let jet_relop_bitmask_equals_zero : Int
+
+pub let jet_relop_bitmask_not_equals_zero : Int
+
+pub let jet_relop_equals : Int
+
+pub let jet_relop_greater_than : Int
+
+pub let jet_relop_greater_than_or_equal : Int
+
+pub let jet_relop_less_than : Int
+
+pub let jet_relop_less_than_or_equal : Int
+
+pub let jet_relop_not_equals : Int
+
+pub let jet_relop_prefix_equals : Int
+
+pub fn jet_rename_column_a_raw(UInt64, UInt64, @core.RawAddress, @core.RawAddress, UInt) -> Int
+
+pub fn jet_rename_column_w_raw(UInt64, UInt64, @core.RawAddress, @core.RawAddress, UInt) -> Int
+
+pub fn jet_rename_table_a_raw(UInt64, UInt, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn jet_rename_table_w_raw(UInt64, UInt, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn jet_reset_session_context_raw(UInt64) -> Int
+
+pub fn jet_reset_table_sequential_raw(UInt64, UInt64, UInt) -> Int
+
+pub fn jet_resize_database_raw(UInt64, UInt, UInt, @core.RawAddress, UInt) -> Int
+
+pub fn jet_restore2_a_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn jet_restore2_w_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn jet_restore_a_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn jet_restore_instance_a_raw(UInt64, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn jet_restore_instance_w_raw(UInt64, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn jet_restore_w_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn jet_retrieve_column_raw(UInt64, UInt64, UInt, @core.RawAddress, UInt, @core.RawAddress, UInt, @core.RawAddress) -> Int
+
+pub fn jet_retrieve_columns_raw(UInt64, UInt64, @core.RawAddress, UInt) -> Int
+
+pub fn jet_retrieve_key_raw(UInt64, UInt64, @core.RawAddress, UInt, @core.RawAddress, UInt) -> Int
+
+pub fn jet_rollback_raw(UInt64, UInt) -> Int
+
+pub fn jet_seek_raw(UInt64, UInt64, UInt) -> Int
+
+pub let jet_sesparam_commit_default : UInt
+
+pub let jet_sesparam_correlation_id : UInt
+
+pub let jet_sesparam_max_value_invalid : UInt
+
+pub let jet_sesparam_operation_context : UInt
+
+pub let jet_sesparam_transaction_level : UInt
+
+pub fn jet_set_column_default_value_a_raw(UInt64, UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress, UInt, UInt) -> Int
+
+pub fn jet_set_column_default_value_w_raw(UInt64, UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress, UInt, UInt) -> Int
+
+pub fn jet_set_column_raw(UInt64, UInt64, UInt, @core.RawAddress, UInt, UInt, @core.RawAddress) -> Int
+
+pub fn jet_set_columns_raw(UInt64, UInt64, @core.RawAddress, UInt) -> Int
+
+pub fn jet_set_current_index2_a_raw(UInt64, UInt64, @core.RawAddress, UInt) -> Int
+
+pub fn jet_set_current_index2_w_raw(UInt64, UInt64, @core.RawAddress, UInt) -> Int
+
+pub fn jet_set_current_index3_a_raw(UInt64, UInt64, @core.RawAddress, UInt, UInt) -> Int
+
+pub fn jet_set_current_index3_w_raw(UInt64, UInt64, @core.RawAddress, UInt, UInt) -> Int
+
+pub fn jet_set_current_index4_a_raw(UInt64, UInt64, @core.RawAddress, @core.RawAddress, UInt, UInt) -> Int
+
+pub fn jet_set_current_index4_w_raw(UInt64, UInt64, @core.RawAddress, @core.RawAddress, UInt, UInt) -> Int
+
+pub fn jet_set_current_index_a_raw(UInt64, UInt64, @core.RawAddress) -> Int
+
+pub fn jet_set_current_index_w_raw(UInt64, UInt64, @core.RawAddress) -> Int
+
+pub fn jet_set_cursor_filter_raw(UInt64, UInt64, @core.RawAddress, UInt, UInt) -> Int
+
+pub fn jet_set_database_size_a_raw(UInt64, @core.RawAddress, UInt, @core.RawAddress) -> Int
+
+pub fn jet_set_database_size_w_raw(UInt64, @core.RawAddress, UInt, @core.RawAddress) -> Int
+
+pub fn jet_set_index_range_raw(UInt64, UInt64, UInt) -> Int
+
+pub fn jet_set_ls_raw(UInt64, UInt64, UInt64, UInt) -> Int
+
+pub fn jet_set_session_context_raw(UInt64, UInt64) -> Int
+
+pub fn jet_set_session_parameter_raw(UInt64, UInt, @core.RawAddress, UInt) -> Int
+
+pub fn jet_set_system_parameter_a_raw(@core.RawAddress, UInt64, UInt, UInt64, @core.RawAddress) -> Int
+
+pub fn jet_set_system_parameter_w_raw(@core.RawAddress, UInt64, UInt, UInt64, @core.RawAddress) -> Int
+
+pub fn jet_set_table_sequential_raw(UInt64, UInt64, UInt) -> Int
+
+pub let jet_snp_backup : UInt
+
+pub let jet_snp_compact : UInt
+
+pub let jet_snp_repair : UInt
+
+pub let jet_snp_restore : UInt
+
+pub let jet_snp_scrub : UInt
+
+pub let jet_snp_upgrade : UInt
+
+pub let jet_snp_upgrade_record_format : UInt
+
+pub let jet_snt_begin : UInt
+
+pub let jet_snt_complete : UInt
+
+pub let jet_snt_fail : UInt
+
+pub let jet_snt_progress : UInt
+
+pub let jet_snt_requirements : UInt
+
+pub let jet_sqm_disable : UInt
+
+pub let jet_sqm_enable : UInt
+
+pub let jet_sqm_from_ceip : UInt
+
+pub fn jet_stop_backup_instance_raw(UInt64) -> Int
+
+pub fn jet_stop_backup_raw() -> Int
+
+pub fn jet_stop_service_instance2_raw(UInt64, UInt) -> Int
+
+pub fn jet_stop_service_instance_raw(UInt64) -> Int
+
+pub fn jet_stop_service_raw() -> Int
+
+pub fn jet_term2_raw(UInt64, UInt) -> Int
+
+pub fn jet_term_raw(UInt64) -> Int
+
+pub fn jet_truncate_log_instance_raw(UInt64) -> Int
+
+pub fn jet_truncate_log_raw() -> Int
+
+pub fn jet_unregister_callback_raw(UInt64, UInt64, UInt, UInt64) -> Int
+
+pub fn jet_update2_raw(UInt64, UInt64, @core.RawAddress, UInt, @core.RawAddress, UInt) -> Int
+
+pub fn jet_update_raw(UInt64, UInt64, @core.RawAddress, UInt, @core.RawAddress) -> Int
+
+pub let jet_version : UInt
+
+pub let jet_wrn_buffer_truncated : UInt
+
+pub let jet_wrn_callback_not_registered : UInt
+
+pub let jet_wrn_column_default : UInt
+
+pub let jet_wrn_column_max_truncated : UInt
+
+pub let jet_wrn_column_more_tags : UInt
+
+pub let jet_wrn_column_not_in_record : UInt
+
+pub let jet_wrn_column_not_local : UInt
+
+pub let jet_wrn_column_null : UInt
+
+pub let jet_wrn_column_present : UInt
+
+pub let jet_wrn_column_reference : UInt
+
+pub let jet_wrn_column_set_null : UInt
+
+pub let jet_wrn_column_single_value : UInt
+
+pub let jet_wrn_column_skipped : UInt
+
+pub let jet_wrn_column_truncated : UInt
+
+pub let jet_wrn_committed_log_files_lost : UInt
+
+pub let jet_wrn_committed_log_files_removed : UInt
+
+pub let jet_wrn_copy_long_value : UInt
+
+pub let jet_wrn_corrupt_index_deleted : UInt
+
+pub let jet_wrn_data_has_changed : UInt
+
+pub let jet_wrn_database_attached : UInt
+
+pub let jet_wrn_database_repaired : UInt
+
+pub let jet_wrn_defrag_already_running : UInt
+
+pub let jet_wrn_defrag_not_running : UInt
+
+pub let jet_wrn_existing_log_file_has_bad_signature : UInt
+
+pub let jet_wrn_existing_log_file_is_not_contiguous : UInt
+
+pub let jet_wrn_file_open_read_only : UInt
+
+pub let jet_wrn_finish_with_undo : UInt
+
+pub let jet_wrn_idle_full : UInt
+
+pub let jet_wrn_key_changed : UInt
+
+pub let jet_wrn_no_error_info : UInt
+
+pub let jet_wrn_no_idle_activity : UInt
+
+pub let jet_wrn_no_write_lock : UInt
+
+pub let jet_wrn_nyi : Int
+
+pub let jet_wrn_primary_index_out_of_date : UInt
+
+pub let jet_wrn_remaining_versions : UInt
+
+pub let jet_wrn_secondary_index_out_of_date : UInt
+
+pub let jet_wrn_seek_not_equal : UInt
+
+pub let jet_wrn_separate_long_value : UInt
+
+pub let jet_wrn_shrink_not_possible : UInt
+
+pub let jet_wrn_skip_this_record : UInt
+
+pub let jet_wrn_sort_overflow : UInt
+
+pub let jet_wrn_table_empty : UInt
+
+pub let jet_wrn_table_in_use_by_system : UInt
+
+pub let jet_wrn_target_instance_running : UInt
+
+pub let jet_wrn_unique_key : UInt
+
+pub let jet_wsz_config_store_read_control : String
+
+pub let jet_wsz_config_store_rel_path_sys_param_default : String
+
+pub let jet_wsz_config_store_rel_path_sys_param_override : String
+
+pub let wrn_bt_not_visible_accumulated : UInt
+
+pub let wrn_bt_not_visible_rejected : UInt
+
+// Errors
+
+// Types and methods
+
+// Type aliases
+pub using @b61f0d5284a0464c {type Anonymous1EStruct_4a408649487d as Anonymous1EStruct}
+
+pub using @b61f0d5284a0464c {type Anonymous1EUnion_0fd9406be799 as Anonymous1EUnion_0fd9406be7}
+
+pub using @b61f0d5284a0464c {type Anonymous1EUnion_1436c1957ee6 as Anonymous1EUnion_1436c1957e}
+
+pub using @b61f0d5284a0464c {type Anonymous1EUnion_4beac960c92e as Anonymous1EUnion_4beac960c9}
+
+pub using @b61f0d5284a0464c {type Anonymous1EUnion_6ad51294c0f0 as Anonymous1EUnion_6ad51294c0}
+
+pub using @b61f0d5284a0464c {type Anonymous1EUnion_d710d721a192 as Anonymous1EUnion_d710d721a1}
+
+pub using @b61f0d5284a0464c {type Anonymous1EUnion_d7981d488464 as Anonymous1EUnion_d7981d4884}
+
+pub using @b61f0d5284a0464c {type Anonymous2EStruct_3a4b1e01ce0c as Anonymous2EStruct}
+
+pub using @b61f0d5284a0464c {type Anonymous2EUnion_3ed197e6a03b as Anonymous2EUnion_3ed197e6a0}
+
+pub using @b61f0d5284a0464c {type Anonymous2EUnion_823f07482a12 as Anonymous2EUnion_823f07482a}
+
+pub using @b61f0d5284a0464c {type Anonymous2EUnion_9dfdd421873d as Anonymous2EUnion_9dfdd42187}
+
+pub using @b61f0d5284a0464c {type Anonymous2EUnion_bdd7a106a887 as Anonymous2EUnion_bdd7a106a8}
+
+pub using @b61f0d5284a0464c {type Anonymous2EUnion_ec37a5146500 as Anonymous2EUnion_ec37a51465}
+
+pub using @b61f0d5284a0464c {type Anonymous2EUnion_ff813f034cd4 as Anonymous2EUnion_ff813f034c}
+
+pub using @b61f0d5284a0464c {type AnonymousEStruct_075ba15621ff as AnonymousEStruct_075ba15621}
+
+pub using @b61f0d5284a0464c {type AnonymousEStruct_42677f5fb29a as AnonymousEStruct_42677f5fb2}
+
+pub using @b61f0d5284a0464c {type AnonymousEStruct_8d5b466ef609 as AnonymousEStruct_8d5b466ef6}
+
+pub using @b61f0d5284a0464c {type AnonymousEStruct_99f4e82adf8d as AnonymousEStruct_99f4e82adf}
+
+pub using @b61f0d5284a0464c {type AnonymousEStruct_e19d037915b9 as AnonymousEStruct_e19d037915}
+
+pub using @b61f0d5284a0464c {type AnonymousEStruct_e84c081d0280 as AnonymousEStruct_e84c081d02}
+
+pub using @b61f0d5284a0464c {type AnonymousEStruct_fd73fdaa1f25 as AnonymousEStruct_fd73fdaa1f}
+
+pub using @b61f0d5284a0464c {type AnonymousEUnion_0c2ffd3d1655 as AnonymousEUnion_0c2ffd3d16}
+
+pub using @b61f0d5284a0464c {type AnonymousEUnion_59150c771ee5 as AnonymousEUnion_59150c771e}
+
+pub using @b61f0d5284a0464c {type AnonymousEUnion_5def275d4be7 as AnonymousEUnion_5def275d4b}
+
+pub using @b61f0d5284a0464c {type AnonymousEUnion_6a199416c216 as AnonymousEUnion_6a199416c2}
+
+pub using @b61f0d5284a0464c {type AnonymousEUnion_81c89a9ff6f0 as AnonymousEUnion_81c89a9ff6}
+
+pub using @b61f0d5284a0464c {type AnonymousEUnion_9bb85be29395 as AnonymousEUnion_9bb85be293}
+
+pub using @b61f0d5284a0464c {type AnonymousEUnion_ca394b65baa2 as AnonymousEUnion_ca394b65ba}
+
+pub using @b61f0d5284a0464c {type JETBKINFO_02f7ab13483b as JETBKINFO}
+
+pub using @b61f0d5284a0464c {type JETBKLOGTIME_6a4151f3d22e as JETBKLOGTIME}
+
+pub using @b61f0d5284a0464c {type JETCALLBACK_2e9a5044cda5 as JETCALLBACK}
+
+pub using @b61f0d5284a0464c {type JETCOLUMNBASEA_318482c215a7 as JETCOLUMNBASEA}
+
+pub using @b61f0d5284a0464c {type JETCOLUMNBASEW_786a6829f8cc as JETCOLUMNBASEW}
+
+pub using @b61f0d5284a0464c {type JETCOLUMNCREATEA_40175d04a810 as JETCOLUMNCREATEA}
+
+pub using @b61f0d5284a0464c {type JETCOLUMNCREATEW_daa199f3cafe as JETCOLUMNCREATEW}
+
+pub using @b61f0d5284a0464c {type JETCOLUMNDEF_042633650e48 as JETCOLUMNDEF}
+
+pub using @b61f0d5284a0464c {type JETCOLUMNLIST_d071887826e0 as JETCOLUMNLIST}
+
+pub using @b61f0d5284a0464c {type JETCOMMITID_8575082725e6 as JETCOMMITID}
+
+pub using @b61f0d5284a0464c {type JETCONDITIONALCOLUMNA_b849adc0f220 as JETCONDITIONALCOLUMNA}
+
+pub using @b61f0d5284a0464c {type JETCONDITIONALCOLUMNW_cb68530a0010 as JETCONDITIONALCOLUMNW}
+
+pub using @b61f0d5284a0464c {type JETCONVERTA_0f8f78824c17 as JETCONVERTA}
+
+pub using @b61f0d5284a0464c {type JETCONVERTW_305d575ef9f0 as JETCONVERTW}
+
+pub using @b61f0d5284a0464c {type JETDBINFOMISC_cb965488e5c0 as JETDBINFOMISC}
+
+pub using @b61f0d5284a0464c {type JETDBINFOMISC2_ccba2de118ec as JETDBINFOMISC2}
+
+pub using @b61f0d5284a0464c {type JETDBINFOMISC3_edf6784ee287 as JETDBINFOMISC3}
+
+pub using @b61f0d5284a0464c {type JETDBINFOMISC4_4a3b12d1fe4b as JETDBINFOMISC4}
+
+pub using @b61f0d5284a0464c {type JETDBINFOUPGRADE_dbb95c82d2c2 as JETDBINFOUPGRADE}
+
+pub using @b61f0d5284a0464c {type JETENUMCOLUMN_914e911ac340 as JETENUMCOLUMN}
+
+pub using @b61f0d5284a0464c {type JETENUMCOLUMNID_a31d2c16cd3d as JETENUMCOLUMNID}
+
+pub using @b61f0d5284a0464c {type JETENUMCOLUMNVALUE_e35933e9b0cf as JETENUMCOLUMNVALUE}
+
+pub using @b61f0d5284a0464c {type JETERRCAT_22c897894cb0 as JETERRCAT}
+
+pub using @b61f0d5284a0464c {type JETERRINFOBASICW_5a538ea6cfe9 as JETERRINFOBASICW}
+
+pub using @b61f0d5284a0464c {type JETINDEXCHECKING_c005ea20bf4e as JETINDEXCHECKING}
+
+pub using @b61f0d5284a0464c {type JETINDEXCOLUMN_2b0defa45acf as JETINDEXCOLUMN}
+
+pub using @b61f0d5284a0464c {type JETINDEXCREATE2A_7ad7b668e001 as JETINDEXCREATE2A}
+
+pub using @b61f0d5284a0464c {type JETINDEXCREATE2W_e557e76ff1ae as JETINDEXCREATE2W}
+
+pub using @b61f0d5284a0464c {type JETINDEXCREATE3A_6e3f8684cfbe as JETINDEXCREATE3A}
+
+pub using @b61f0d5284a0464c {type JETINDEXCREATE3W_164ee39cf7ec as JETINDEXCREATE3W}
+
+pub using @b61f0d5284a0464c {type JETINDEXCREATEA_aa6c75a1205f as JETINDEXCREATEA}
+
+pub using @b61f0d5284a0464c {type JETINDEXCREATEW_4d74193b9a96 as JETINDEXCREATEW}
+
+pub using @b61f0d5284a0464c {type JETINDEXID_defcaa4f3c0d as JETINDEXID}
+
+pub using @b61f0d5284a0464c {type JETINDEXLIST_66836ebec492 as JETINDEXLIST}
+
+pub using @b61f0d5284a0464c {type JETINDEXRANGE_250afe37b7be as JETINDEXRANGE_250afe37b7}
+
+pub using @b61f0d5284a0464c {type JETINDEXRANGE_a26360b7055f as JETINDEXRANGE_a26360b705}
+
+pub using @b61f0d5284a0464c {type JETINSTANCE_a9fdb69f23f3 as JETINSTANCE}
+
+pub using @b61f0d5284a0464c {type JETINSTANCEINFOA_938d320971e5 as JETINSTANCEINFOA}
+
+pub using @b61f0d5284a0464c {type JETINSTANCEINFOW_21db1474f720 as JETINSTANCEINFOW}
+
+pub using @b61f0d5284a0464c {type JETLGPOS_59af2e172339 as JETLGPOS}
+
+pub using @b61f0d5284a0464c {type JETLOGINFOA_8376d14981ed as JETLOGINFOA}
+
+pub using @b61f0d5284a0464c {type JETLOGINFOW_e1ab13576588 as JETLOGINFOW}
+
+pub using @b61f0d5284a0464c {type JETLOGTIME_d9f5addfe3f9 as JETLOGTIME}
+
+pub using @b61f0d5284a0464c {type JETLS_af35dfe5eec5 as JETLS}
+
+pub using @b61f0d5284a0464c {type JETOBJECTINFO_86b808191d9d as JETOBJECTINFO}
+
+pub using @b61f0d5284a0464c {type JETOBJECTLIST_213cb156cfc3 as JETOBJECTLIST}
+
+pub using @b61f0d5284a0464c {type JETOPENTEMPORARYTABLE_24f2b0ff775a as JETOPENTEMPORARYTABLE}
+
+pub using @b61f0d5284a0464c {type JETOPENTEMPORARYTABLE2_cc3c63ce09f6 as JETOPENTEMPORARYTABLE2}
+
+pub using @b61f0d5284a0464c {type JETOPERATIONCONTEXT_3e2b46fbb551 as JETOPERATIONCONTEXT}
+
+pub using @b61f0d5284a0464c {type JETOSSNAPID_f6f473a66584 as JETOSSNAPID}
+
+pub using @b61f0d5284a0464c {type JETPFNDURABLECOMMITCALLBACK_e863de2524ff as JETPFNDURABLECOMMITCALLBACK}
+
+pub using @b61f0d5284a0464c {type JETPFNREALLOC_3610f3f72058 as JETPFNREALLOC}
+
+pub using @b61f0d5284a0464c {type JETPFNSTATUS_8f1db0f5cb70 as JETPFNSTATUS}
+
+pub using @b61f0d5284a0464c {type JETRECORDLIST_f4c1bdb80aef as JETRECORDLIST}
+
+pub using @b61f0d5284a0464c {type JETRECPOS_7c46892fe9b7 as JETRECPOS}
+
+pub using @b61f0d5284a0464c {type JETRECPOS2_24cd61cb49df as JETRECPOS2}
+
+pub using @b61f0d5284a0464c {type JETRECSIZE_99fc80c330d6 as JETRECSIZE}
+
+pub using @b61f0d5284a0464c {type JETRECSIZE2_85d7b7f600cd as JETRECSIZE2}
+
+pub using @b61f0d5284a0464c {type JETRELOP_df4e9e2aa375 as JETRELOP}
+
+pub using @b61f0d5284a0464c {type JETRETINFO_6ed95e5c4264 as JETRETINFO}
+
+pub using @b61f0d5284a0464c {type JETRETRIEVECOLUMN_5dc99f2b35a2 as JETRETRIEVECOLUMN}
+
+pub using @b61f0d5284a0464c {type JETRSTINFOA_05dac5817cc8 as JETRSTINFOA}
+
+pub using @b61f0d5284a0464c {type JETRSTINFOW_1ebd34706c32 as JETRSTINFOW}
+
+pub using @b61f0d5284a0464c {type JETRSTMAPA_6b6a5303dd4d as JETRSTMAPA}
+
+pub using @b61f0d5284a0464c {type JETRSTMAPW_42ac328153f6 as JETRSTMAPW}
+
+pub using @b61f0d5284a0464c {type JETSESID_c270dba6490e as JETSESID}
+
+pub using @b61f0d5284a0464c {type JETSETCOLUMN_c8fd5609d352 as JETSETCOLUMN}
+
+pub using @b61f0d5284a0464c {type JETSETINFO_3f0d84d4e795 as JETSETINFO}
+
+pub using @b61f0d5284a0464c {type JETSETSYSPARAMA_a335182a7913 as JETSETSYSPARAMA}
+
+pub using @b61f0d5284a0464c {type JETSETSYSPARAMW_9c3519669709 as JETSETSYSPARAMW}
+
+pub using @b61f0d5284a0464c {type JETSIGNATURE_b62e75ceff97 as JETSIGNATURE}
+
+pub using @b61f0d5284a0464c {type JETSNPROG_3e28d3ecd35c as JETSNPROG}
+
+pub using @b61f0d5284a0464c {type JETSPACEHINTS_d8d16bc2d77c as JETSPACEHINTS}
+
+pub using @b61f0d5284a0464c {type JETTABLECREATE2A_59f16442cf7b as JETTABLECREATE2A}
+
+pub using @b61f0d5284a0464c {type JETTABLECREATE2W_ea9d278c478d as JETTABLECREATE2W}
+
+pub using @b61f0d5284a0464c {type JETTABLECREATE3A_235242365dc6 as JETTABLECREATE3A}
+
+pub using @b61f0d5284a0464c {type JETTABLECREATE3W_3647e6b27c7b as JETTABLECREATE3W}
+
+pub using @b61f0d5284a0464c {type JETTABLECREATE4A_a6eba2969453 as JETTABLECREATE4A}
+
+pub using @b61f0d5284a0464c {type JETTABLECREATE4W_e9e486fbbe15 as JETTABLECREATE4W}
+
+pub using @b61f0d5284a0464c {type JETTABLECREATEA_3f791139e6ce as JETTABLECREATEA}
+
+pub using @b61f0d5284a0464c {type JETTABLECREATEW_9922d4f41370 as JETTABLECREATEW}
+
+pub using @b61f0d5284a0464c {type JETTHREADSTATS_63a7bc808556 as JETTHREADSTATS}
+
+pub using @b61f0d5284a0464c {type JETTHREADSTATS2_12981b4e5ae4 as JETTHREADSTATS2}
+
+pub using @b61f0d5284a0464c {type JETTUPLELIMITS_0b5c87019369 as JETTUPLELIMITS}
+
+pub using @b61f0d5284a0464c {type JETUNICODEINDEX_6b109069a62c as JETUNICODEINDEX}
+
+pub using @b61f0d5284a0464c {type JETUNICODEINDEX2_de31953fa673 as JETUNICODEINDEX2}
+
+pub using @b61f0d5284a0464c {type JETUSERDEFINEDDEFAULTA_d14676e76a03 as JETUSERDEFINEDDEFAULTA}
+
+pub using @b61f0d5284a0464c {type JETUSERDEFINEDDEFAULTW_32eeb23c5b41 as JETUSERDEFINEDDEFAULTW}
+
+// Traits
+

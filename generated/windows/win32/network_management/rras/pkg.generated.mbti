@@ -1,0 +1,2760 @@
+// Generated using `moon info`, DON'T EDIT IT
+package "moonbit-community/win32-bindings/windows/win32/network_management/rras"
+
+import {
+  "moonbit-community/win32-bindings/runtime/core",
+  "moonbit-community/win32-bindings/scc/e851e8d87ce9c6c2",
+}
+
+// Values
+pub let all_sources : Int
+
+pub let allow_no_auth : UInt
+
+pub let any_source : Int
+
+pub let ataddresslen : UInt
+
+pub let do_not_allow_no_auth : UInt
+
+pub let error_accessing_tcpcfgdll : UInt
+
+pub let error_acct_disabled : UInt
+
+pub let error_acct_expired : UInt
+
+pub let error_action_required : UInt
+
+pub let error_allocating_memory : UInt
+
+pub let error_already_disconnecting : UInt
+
+pub let error_async_request_pending : UInt
+
+pub let error_auth_internal : UInt
+
+pub let error_authentication_failure : UInt
+
+pub let error_automatic_vpn_failed : UInt
+
+pub let error_bad_address_specified : UInt
+
+pub let error_bad_callback_number : UInt
+
+pub let error_bad_phone_number : UInt
+
+pub let error_bad_string : UInt
+
+pub let error_bad_usage_in_ini_file : UInt
+
+pub let error_biplex_port_not_available : UInt
+
+pub let error_blocked : UInt
+
+pub let error_broadband_active : UInt
+
+pub let error_broadband_no_nic : UInt
+
+pub let error_broadband_timeout : UInt
+
+pub let error_buffer_invalid : UInt
+
+pub let error_buffer_too_small : UInt
+
+pub let error_bundle_not_found : UInt
+
+pub let error_cannot_delete : UInt
+
+pub let error_cannot_do_customdial : UInt
+
+pub let error_cannot_find_phonebook_entry : UInt
+
+pub let error_cannot_get_lana : UInt
+
+pub let error_cannot_initiate_mobike_update : UInt
+
+pub let error_cannot_load_phonebook : UInt
+
+pub let error_cannot_load_string : UInt
+
+pub let error_cannot_open_phonebook : UInt
+
+pub let error_cannot_project_client : UInt
+
+pub let error_cannot_set_port_info : UInt
+
+pub let error_cannot_share_connection : UInt
+
+pub let error_cannot_use_logon_credentials : UInt
+
+pub let error_cannot_write_phonebook : UInt
+
+pub let error_cert_for_encryption_not_found : UInt
+
+pub let error_changing_password : UInt
+
+pub let error_cmd_too_long : UInt
+
+pub let error_congestion : UInt
+
+pub let error_connecting_device_not_found : UInt
+
+pub let error_connection_already_shared : UInt
+
+pub let error_connection_reject : UInt
+
+pub let error_corrupt_phonebook : UInt
+
+pub let error_dcb_not_found : UInt
+
+pub let error_defaultoff_macro_not_found : UInt
+
+pub let error_device_compliance : UInt
+
+pub let error_device_does_not_exist : UInt
+
+pub let error_device_not_ready : UInt
+
+pub let error_devicename_not_found : UInt
+
+pub let error_devicename_too_long : UInt
+
+pub let error_devicetype_does_not_exist : UInt
+
+pub let error_dial_already_in_progress : UInt
+
+pub let error_disconnection : UInt
+
+pub let error_dnsname_not_resolvable : UInt
+
+pub let error_donotdisturb : UInt
+
+pub let error_eap_method_does_not_support_sso : UInt
+
+pub let error_eap_method_not_installed : UInt
+
+pub let error_eap_method_operation_not_supported : UInt
+
+pub let error_eap_server_cert_expired : UInt
+
+pub let error_eap_server_cert_invalid : UInt
+
+pub let error_eap_server_cert_other_error : UInt
+
+pub let error_eap_server_cert_revoked : UInt
+
+pub let error_eap_server_root_cert_invalid : UInt
+
+pub let error_eap_server_root_cert_name_required : UInt
+
+pub let error_eap_server_root_cert_not_found : UInt
+
+pub let error_eap_user_cert_expired : UInt
+
+pub let error_eap_user_cert_invalid : UInt
+
+pub let error_eap_user_cert_other_error : UInt
+
+pub let error_eap_user_cert_revoked : UInt
+
+pub let error_eap_user_root_cert_expired : UInt
+
+pub let error_eap_user_root_cert_invalid : UInt
+
+pub let error_eap_user_root_cert_not_found : UInt
+
+pub let error_eaptls_cache_credentials_invalid : UInt
+
+pub let error_eaptls_passwd_invalid : UInt
+
+pub let error_eaptls_scard_cache_credentials_invalid : UInt
+
+pub let error_empty_ini_file : UInt
+
+pub let error_event_invalid : UInt
+
+pub let error_failed_cp_required : UInt
+
+pub let error_failed_to_encrypt : UInt
+
+pub let error_fast_user_switch : UInt
+
+pub let error_feature_deprecated : UInt
+
+pub let error_file_could_not_be_opened : UInt
+
+pub let error_from_device : UInt
+
+pub let error_hangup_failed : UInt
+
+pub let error_hardware_failure : UInt
+
+pub let error_hibernation : UInt
+
+pub let error_idle_timeout : UInt
+
+pub let error_ikev2_psk_interface_already_exists : UInt
+
+pub let error_in_command : UInt
+
+pub let error_incompatible : UInt
+
+pub let error_interactive_mode : UInt
+
+pub let error_internal_address_failure : UInt
+
+pub let error_invalid_auth_state : UInt
+
+pub let error_invalid_callback_number : UInt
+
+pub let error_invalid_compression_specified : UInt
+
+pub let error_invalid_destination_ip : UInt
+
+pub let error_invalid_function_for_entry : UInt
+
+pub let error_invalid_interface_config : UInt
+
+pub let error_invalid_mschapv2_config : UInt
+
+pub let error_invalid_peap_cookie_attributes : UInt
+
+pub let error_invalid_peap_cookie_config : UInt
+
+pub let error_invalid_peap_cookie_user : UInt
+
+pub let error_invalid_port_handle : UInt
+
+pub let error_invalid_preferences : UInt
+
+pub let error_invalid_server_cert : UInt
+
+pub let error_invalid_size : UInt
+
+pub let error_invalid_smm : UInt
+
+pub let error_invalid_tunnelid : UInt
+
+pub let error_invalid_vpnstrategy : UInt
+
+pub let error_ip_configuration : UInt
+
+pub let error_ipsec_service_stopped : UInt
+
+pub let error_ipxcp_dialout_already_active : UInt
+
+pub let error_ipxcp_net_number_conflict : UInt
+
+pub let error_ipxcp_no_dialin_configured : UInt
+
+pub let error_ipxcp_no_dialout_configured : UInt
+
+pub let error_key_not_found : UInt
+
+pub let error_line_busy : UInt
+
+pub let error_link_failure : UInt
+
+pub let error_macro_not_defined : UInt
+
+pub let error_macro_not_found : UInt
+
+pub let error_message_macro_not_found : UInt
+
+pub let error_mobike_disabled : UInt
+
+pub let error_name_exists_on_net : UInt
+
+pub let error_netbios_error : UInt
+
+pub let error_no_active_isdn_lines : UInt
+
+pub let error_no_answer : UInt
+
+pub let error_no_carrier : UInt
+
+pub let error_no_certificate : UInt
+
+pub let error_no_command_found : UInt
+
+pub let error_no_connection : UInt
+
+pub let error_no_dialin_permission : UInt
+
+pub let error_no_dialtone : UInt
+
+pub let error_no_diff_user_at_logon : UInt
+
+pub let error_no_eaptls_certificate : UInt
+
+pub let error_no_endpoints : UInt
+
+pub let error_no_ip_addresses : UInt
+
+pub let error_no_ip_ras_adapter : UInt
+
+pub let error_no_isdn_channels_available : UInt
+
+pub let error_no_local_encryption : UInt
+
+pub let error_no_mac_for_port : UInt
+
+pub let error_no_reg_cert_at_logon : UInt
+
+pub let error_no_remote_encryption : UInt
+
+pub let error_no_responses : UInt
+
+pub let error_no_smart_card_reader : UInt
+
+pub let error_not_binary_macro : UInt
+
+pub let error_not_nap_capable : UInt
+
+pub let error_numberchanged : UInt
+
+pub let error_oakley_attrib_fail : UInt
+
+pub let error_oakley_auth_fail : UInt
+
+pub let error_oakley_error : UInt
+
+pub let error_oakley_general_processing : UInt
+
+pub let error_oakley_no_cert : UInt
+
+pub let error_oakley_no_peer_cert : UInt
+
+pub let error_oakley_no_policy : UInt
+
+pub let error_oakley_timed_out : UInt
+
+pub let error_out_of_buffers : UInt
+
+pub let error_outoforder : UInt
+
+pub let error_overrun : UInt
+
+pub let error_partial_response_looping : UInt
+
+pub let error_passwd_expired : UInt
+
+pub let error_peap_cryptobinding_invalid : UInt
+
+pub let error_peap_cryptobinding_notreceived : UInt
+
+pub let error_peap_identity_mismatch : UInt
+
+pub let error_peap_server_rejected_client_tlv : UInt
+
+pub let error_phone_number_too_long : UInt
+
+pub let error_plugin_not_installed : UInt
+
+pub let error_port_already_open : UInt
+
+pub let error_port_disconnected : UInt
+
+pub let error_port_not_available : UInt
+
+pub let error_port_not_configured : UInt
+
+pub let error_port_not_connected : UInt
+
+pub let error_port_not_found : UInt
+
+pub let error_port_not_open : UInt
+
+pub let error_port_or_device : UInt
+
+pub let error_ppp_cp_rejected : UInt
+
+pub let error_ppp_invalid_packet : UInt
+
+pub let error_ppp_lcp_terminated : UInt
+
+pub let error_ppp_loopback_detected : UInt
+
+pub let error_ppp_ncp_terminated : UInt
+
+pub let error_ppp_no_address_assigned : UInt
+
+pub let error_ppp_no_protocols_configured : UInt
+
+pub let error_ppp_no_response : UInt
+
+pub let error_ppp_not_converging : UInt
+
+pub let error_ppp_remote_terminated : UInt
+
+pub let error_ppp_required_address_rejected : UInt
+
+pub let error_ppp_timeout : UInt
+
+pub let error_projection_not_complete : UInt
+
+pub let error_protocol_engine_disabled : UInt
+
+pub let error_protocol_not_configured : UInt
+
+pub let error_rasauto_cannot_initialize : UInt
+
+pub let error_rasman_cannot_initialize : UInt
+
+pub let error_rasman_service_stopped : UInt
+
+pub let error_rasqec_conn_doesnotexist : UInt
+
+pub let error_rasqec_napagent_not_connected : UInt
+
+pub let error_rasqec_napagent_not_enabled : UInt
+
+pub let error_rasqec_resource_creation_failed : UInt
+
+pub let error_rasqec_timeout : UInt
+
+pub let error_reading_defaultoff : UInt
+
+pub let error_reading_devicename : UInt
+
+pub let error_reading_devicetype : UInt
+
+pub let error_reading_ini_file : UInt
+
+pub let error_reading_maxcarrierbps : UInt
+
+pub let error_reading_maxconnectbps : UInt
+
+pub let error_reading_scard : UInt
+
+pub let error_reading_sectionname : UInt
+
+pub let error_reading_usage : UInt
+
+pub let error_recv_buf_full : UInt
+
+pub let error_remote_disconnection : UInt
+
+pub let error_remote_requires_encryption : UInt
+
+pub let error_request_timeout : UInt
+
+pub let error_restricted_logon_hours : UInt
+
+pub let error_route_not_allocated : UInt
+
+pub let error_route_not_available : UInt
+
+pub let error_script_syntax : UInt
+
+pub let error_server_general_net_failure : UInt
+
+pub let error_server_not_responding : UInt
+
+pub let error_server_out_of_resources : UInt
+
+pub let error_server_policy : UInt
+
+pub let error_share_connection_failed : UInt
+
+pub let error_sharing_address_exists : UInt
+
+pub let error_sharing_change_failed : UInt
+
+pub let error_sharing_host_address_conflict : UInt
+
+pub let error_sharing_multiple_addresses : UInt
+
+pub let error_sharing_no_private_lan : UInt
+
+pub let error_sharing_private_install : UInt
+
+pub let error_sharing_router_install : UInt
+
+pub let error_sharing_rras_conflict : UInt
+
+pub let error_slip_requires_ip : UInt
+
+pub let error_smart_card_required : UInt
+
+pub let error_smm_timeout : UInt
+
+pub let error_smm_uninitialized : UInt
+
+pub let error_sso_cert_missing : UInt
+
+pub let error_sstp_cookie_set_failure : UInt
+
+pub let error_state_machines_already_started : UInt
+
+pub let error_state_machines_not_started : UInt
+
+pub let error_system_suspended : UInt
+
+pub let error_tapi_configuration : UInt
+
+pub let error_tempfailure : UInt
+
+pub let error_too_many_line_errors : UInt
+
+pub let error_ts_unacceptable : UInt
+
+pub let error_unable_to_authenticate_server : UInt
+
+pub let error_unexpected_response : UInt
+
+pub let error_unknown : UInt
+
+pub let error_unknown_device_type : UInt
+
+pub let error_unknown_framed_protocol : UInt
+
+pub let error_unknown_response_key : UInt
+
+pub let error_unknown_service_type : UInt
+
+pub let error_unrecognized_response : UInt
+
+pub let error_unsupported_bps : UInt
+
+pub let error_updateconnection_request_in_process : UInt
+
+pub let error_user_disconnection : UInt
+
+pub let error_user_logoff : UInt
+
+pub let error_validating_server_cert : UInt
+
+pub let error_voice_answer : UInt
+
+pub let error_vpn_bad_cert : UInt
+
+pub let error_vpn_bad_psk : UInt
+
+pub let error_vpn_disconnect : UInt
+
+pub let error_vpn_gre_blocked : UInt
+
+pub let error_vpn_plugin_generic : UInt
+
+pub let error_vpn_refused : UInt
+
+pub let error_vpn_timeout : UInt
+
+pub let error_winhttp_auto_proxy_service : UInt
+
+pub let error_writing_defaultoff : UInt
+
+pub let error_writing_devicename : UInt
+
+pub let error_writing_devicetype : UInt
+
+pub let error_writing_initbps : UInt
+
+pub let error_writing_maxcarrierbps : UInt
+
+pub let error_writing_maxconnectbps : UInt
+
+pub let error_writing_sectionname : UInt
+
+pub let error_writing_usage : UInt
+
+pub let error_wrong_device_attached : UInt
+
+pub let error_wrong_info_specified : UInt
+
+pub let error_wrong_key_specified : UInt
+
+pub let error_wrong_module : UInt
+
+pub let error_wrong_tunnel_type : UInt
+
+pub let error_x25_diagnostic : UInt
+
+pub let et_none : UInt
+
+pub let et_optional : UInt
+
+pub let et_require : UInt
+
+pub let et_require_max : UInt
+
+pub let ikev2_id_payload_type_der_asn1_dn : Int
+
+pub let ikev2_id_payload_type_der_asn1_gn : Int
+
+pub let ikev2_id_payload_type_fqdn : Int
+
+pub let ikev2_id_payload_type_id_ipv6_addr : Int
+
+pub let ikev2_id_payload_type_invalid : Int
+
+pub let ikev2_id_payload_type_ipv4_addr : Int
+
+pub let ikev2_id_payload_type_key_id : Int
+
+pub let ikev2_id_payload_type_max : Int
+
+pub let ikev2_id_payload_type_reserved1 : Int
+
+pub let ikev2_id_payload_type_reserved2 : Int
+
+pub let ikev2_id_payload_type_reserved3 : Int
+
+pub let ikev2_id_payload_type_reserved4 : Int
+
+pub let ikev2_id_payload_type_rfc822_addr : Int
+
+pub let ipaddresslen : UInt
+
+pub let ipv6_address_len_in_bytes : UInt
+
+pub let ipxaddresslen : UInt
+
+pub let max_sstp_hash_size : UInt
+
+pub let maxipadresslen : UInt
+
+pub let method_bgp4_as_path : UInt
+
+pub let method_bgp4_nexthop_attr : UInt
+
+pub let method_bgp4_pa_origin : UInt
+
+pub let method_bgp4_peer_id : UInt
+
+pub let method_rip2_neighbour_addr : UInt
+
+pub let method_rip2_outbound_intf : UInt
+
+pub let method_rip2_route_tag : UInt
+
+pub let method_rip2_route_timestamp : UInt
+
+pub let method_type_all_methods : UInt
+
+pub fn mgm_add_group_membership_entry_raw(@core.RawAddress, UInt, UInt, UInt, UInt, UInt, UInt, UInt) -> UInt
+
+pub fn mgm_de_register_m_protocol_raw(@core.RawAddress) -> UInt
+
+pub fn mgm_delete_group_membership_entry_raw(@core.RawAddress, UInt, UInt, UInt, UInt, UInt, UInt, UInt) -> UInt
+
+pub let mgm_forward_state_flag : UInt
+
+pub fn mgm_get_first_mfe_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn mgm_get_first_mfe_stats_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, UInt) -> UInt
+
+pub fn mgm_get_mfe_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn mgm_get_mfe_stats_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, UInt) -> UInt
+
+pub fn mgm_get_next_mfe_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn mgm_get_next_mfe_stats_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, UInt) -> UInt
+
+pub fn mgm_get_protocol_on_interface_raw(UInt, UInt, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn mgm_group_enumeration_end_raw(@core.RawAddress) -> UInt
+
+pub fn mgm_group_enumeration_get_next_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn mgm_group_enumeration_start_raw(@core.RawAddress, Int, @core.RawAddress) -> UInt
+
+pub let mgm_join_state_flag : UInt
+
+pub let mgm_mfe_stats_0 : UInt
+
+pub let mgm_mfe_stats_1 : UInt
+
+pub fn mgm_register_m_protocol_raw(@core.RawAddress, UInt, UInt, @core.RawAddress) -> UInt
+
+pub fn mgm_release_interface_ownership_raw(@core.RawAddress, UInt, UInt) -> UInt
+
+pub fn mgm_take_interface_ownership_raw(@core.RawAddress, UInt, UInt) -> UInt
+
+pub fn mpr_admin_buffer_free_raw(@core.RawAddress) -> UInt
+
+pub fn mpr_admin_connection_clear_stats_raw(Int64, @core.RawAddress) -> UInt
+
+pub fn mpr_admin_connection_enum_ex_raw(Int64, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn mpr_admin_connection_enum_raw(Int64, UInt, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn mpr_admin_connection_get_info_ex_raw(Int64, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn mpr_admin_connection_get_info_raw(Int64, UInt, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn mpr_admin_connection_remove_quarantine_raw(@core.RawAddress, @core.RawAddress, Int) -> UInt
+
+pub fn mpr_admin_deregister_connection_notification_raw(Int64, @core.RawAddress) -> UInt
+
+pub fn mpr_admin_device_enum_raw(Int64, UInt, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn mpr_admin_establish_domain_ras_server_raw(@core.RawAddress, @core.RawAddress, Int) -> UInt
+
+pub fn mpr_admin_get_error_string_raw(UInt, @core.RawAddress) -> UInt
+
+pub fn mpr_admin_get_pdc_server_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn mpr_admin_interface_connect_raw(Int64, @core.RawAddress, @core.RawAddress, Int) -> UInt
+
+pub fn mpr_admin_interface_create_raw(Int64, UInt, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn mpr_admin_interface_delete_raw(Int64, @core.RawAddress) -> UInt
+
+pub fn mpr_admin_interface_device_get_info_raw(Int64, @core.RawAddress, UInt, UInt, @core.RawAddress) -> UInt
+
+pub fn mpr_admin_interface_device_set_info_raw(Int64, @core.RawAddress, UInt, UInt, @core.RawAddress) -> UInt
+
+pub fn mpr_admin_interface_disconnect_raw(Int64, @core.RawAddress) -> UInt
+
+pub fn mpr_admin_interface_enum_raw(Int64, UInt, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn mpr_admin_interface_get_credentials_ex_raw(Int64, @core.RawAddress, UInt, @core.RawAddress) -> UInt
+
+pub fn mpr_admin_interface_get_credentials_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn mpr_admin_interface_get_custom_info_ex_raw(Int64, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn mpr_admin_interface_get_handle_raw(Int64, @core.RawAddress, @core.RawAddress, Int) -> UInt
+
+pub fn mpr_admin_interface_get_info_raw(Int64, @core.RawAddress, UInt, @core.RawAddress) -> UInt
+
+pub fn mpr_admin_interface_query_update_result_raw(Int64, @core.RawAddress, UInt, @core.RawAddress) -> UInt
+
+pub fn mpr_admin_interface_set_credentials_ex_raw(Int64, @core.RawAddress, UInt, @core.RawAddress) -> UInt
+
+pub fn mpr_admin_interface_set_credentials_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn mpr_admin_interface_set_custom_info_ex_raw(Int64, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn mpr_admin_interface_set_info_raw(Int64, @core.RawAddress, UInt, @core.RawAddress) -> UInt
+
+pub fn mpr_admin_interface_transport_add_raw(Int64, @core.RawAddress, UInt, @core.RawAddress, UInt) -> UInt
+
+pub fn mpr_admin_interface_transport_get_info_raw(Int64, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn mpr_admin_interface_transport_remove_raw(Int64, @core.RawAddress, UInt) -> UInt
+
+pub fn mpr_admin_interface_transport_set_info_raw(Int64, @core.RawAddress, UInt, @core.RawAddress, UInt) -> UInt
+
+pub fn mpr_admin_interface_update_phonebook_info_raw(Int64, @core.RawAddress) -> UInt
+
+pub fn mpr_admin_interface_update_routes_raw(Int64, @core.RawAddress, UInt, @core.RawAddress) -> UInt
+
+pub fn mpr_admin_is_domain_ras_server_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn mpr_admin_is_service_initialized_raw(@core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn mpr_admin_is_service_running_raw(@core.RawAddress) -> Int
+
+pub fn mpr_admin_mib_buffer_free_raw(@core.RawAddress) -> UInt
+
+pub fn mpr_admin_mib_entry_create_raw(Int64, UInt, UInt, @core.RawAddress, UInt) -> UInt
+
+pub fn mpr_admin_mib_entry_delete_raw(Int64, UInt, UInt, @core.RawAddress, UInt) -> UInt
+
+pub fn mpr_admin_mib_entry_get_first_raw(Int64, UInt, UInt, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn mpr_admin_mib_entry_get_next_raw(Int64, UInt, UInt, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn mpr_admin_mib_entry_get_raw(Int64, UInt, UInt, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn mpr_admin_mib_entry_set_raw(Int64, UInt, UInt, @core.RawAddress, UInt) -> UInt
+
+pub fn mpr_admin_mib_server_connect_raw(@core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn mpr_admin_mib_server_disconnect_raw(Int64) -> Unit
+
+pub fn mpr_admin_port_clear_stats_raw(Int64, @core.RawAddress) -> UInt
+
+pub fn mpr_admin_port_disconnect_raw(Int64, @core.RawAddress) -> UInt
+
+pub fn mpr_admin_port_enum_raw(Int64, UInt, @core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn mpr_admin_port_get_info_raw(Int64, UInt, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn mpr_admin_port_reset_raw(Int64, @core.RawAddress) -> UInt
+
+pub fn mpr_admin_register_connection_notification_raw(Int64, @core.RawAddress) -> UInt
+
+pub fn mpr_admin_send_user_message_raw(Int64, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn mpr_admin_server_connect_raw(@core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn mpr_admin_server_disconnect_raw(Int64) -> Unit
+
+pub fn mpr_admin_server_get_credentials_raw(Int64, UInt, @core.RawAddress) -> UInt
+
+pub fn mpr_admin_server_get_info_ex_raw(Int64, @core.RawAddress) -> UInt
+
+pub fn mpr_admin_server_get_info_raw(Int64, UInt, @core.RawAddress) -> UInt
+
+pub fn mpr_admin_server_set_credentials_raw(Int64, UInt, @core.RawAddress) -> UInt
+
+pub fn mpr_admin_server_set_info_ex_raw(Int64, @core.RawAddress) -> UInt
+
+pub fn mpr_admin_server_set_info_raw(Int64, UInt, @core.RawAddress) -> UInt
+
+pub fn mpr_admin_transport_create_raw(Int64, UInt, @core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, UInt, @core.RawAddress) -> UInt
+
+pub fn mpr_admin_transport_get_info_raw(Int64, UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn mpr_admin_transport_set_info_raw(Int64, UInt, @core.RawAddress, UInt, @core.RawAddress, UInt) -> UInt
+
+pub fn mpr_admin_update_connection_raw(Int64, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn mpr_admin_user_get_info_raw(@core.RawAddress, @core.RawAddress, UInt, @core.RawAddress) -> UInt
+
+pub fn mpr_admin_user_set_info_raw(@core.RawAddress, @core.RawAddress, UInt, @core.RawAddress) -> UInt
+
+pub fn mpr_config_buffer_free_raw(@core.RawAddress) -> UInt
+
+pub fn mpr_config_filter_get_info_raw(@core.RawAddress, UInt, UInt, @core.RawAddress) -> UInt
+
+pub fn mpr_config_filter_set_info_raw(@core.RawAddress, UInt, UInt, @core.RawAddress) -> UInt
+
+pub fn mpr_config_get_friendly_name_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, UInt) -> UInt
+
+pub fn mpr_config_get_guid_name_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, UInt) -> UInt
+
+pub fn mpr_config_interface_create_raw(@core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn mpr_config_interface_delete_raw(@core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn mpr_config_interface_enum_raw(@core.RawAddress, UInt, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn mpr_config_interface_get_custom_info_ex_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn mpr_config_interface_get_handle_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn mpr_config_interface_get_info_raw(@core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn mpr_config_interface_set_custom_info_ex_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn mpr_config_interface_set_info_raw(@core.RawAddress, @core.RawAddress, UInt, @core.RawAddress) -> UInt
+
+pub fn mpr_config_interface_transport_add_raw(@core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress, UInt, @core.RawAddress) -> UInt
+
+pub fn mpr_config_interface_transport_enum_raw(@core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn mpr_config_interface_transport_get_handle_raw(@core.RawAddress, @core.RawAddress, UInt, @core.RawAddress) -> UInt
+
+pub fn mpr_config_interface_transport_get_info_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn mpr_config_interface_transport_remove_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn mpr_config_interface_transport_set_info_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, UInt) -> UInt
+
+pub fn mpr_config_server_backup_raw(@core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn mpr_config_server_connect_raw(@core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn mpr_config_server_disconnect_raw(@core.RawAddress) -> Unit
+
+pub fn mpr_config_server_get_info_ex_raw(@core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn mpr_config_server_get_info_raw(@core.RawAddress, UInt, @core.RawAddress) -> UInt
+
+pub fn mpr_config_server_install_raw(UInt, @core.RawAddress) -> UInt
+
+pub fn mpr_config_server_refresh_raw(@core.RawAddress) -> UInt
+
+pub fn mpr_config_server_restore_raw(@core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn mpr_config_server_set_info_ex_raw(@core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn mpr_config_server_set_info_raw(Int64, UInt, @core.RawAddress) -> UInt
+
+pub fn mpr_config_transport_create_raw(@core.RawAddress, UInt, @core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn mpr_config_transport_delete_raw(@core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn mpr_config_transport_enum_raw(@core.RawAddress, UInt, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn mpr_config_transport_get_handle_raw(@core.RawAddress, UInt, @core.RawAddress) -> UInt
+
+pub fn mpr_config_transport_get_info_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn mpr_config_transport_set_info_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, UInt, @core.RawAddress) -> UInt
+
+pub let mpr_enable_ras_on_device : UInt
+
+pub let mpr_enable_routing_on_device : UInt
+
+pub let mpr_et_none : UInt
+
+pub let mpr_et_optional : UInt
+
+pub let mpr_et_require : UInt
+
+pub let mpr_et_require_max : UInt
+
+pub fn mpr_info_block_add_raw(@core.RawAddress, UInt, UInt, UInt, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn mpr_info_block_find_raw(@core.RawAddress, UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn mpr_info_block_query_size_raw(@core.RawAddress) -> UInt
+
+pub fn mpr_info_block_remove_raw(@core.RawAddress, UInt, @core.RawAddress) -> UInt
+
+pub fn mpr_info_block_set_raw(@core.RawAddress, UInt, UInt, UInt, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn mpr_info_create_raw(UInt, @core.RawAddress) -> UInt
+
+pub fn mpr_info_delete_raw(@core.RawAddress) -> UInt
+
+pub fn mpr_info_duplicate_raw(@core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn mpr_info_remove_all_raw(@core.RawAddress, @core.RawAddress) -> UInt
+
+pub let mpr_interface_admin_disabled : UInt
+
+pub let mpr_interface_connection_failure : UInt
+
+pub let mpr_interface_dialout_hours_restriction : UInt
+
+pub let mpr_interface_no_device : UInt
+
+pub let mpr_interface_no_media_sense : UInt
+
+pub let mpr_interface_out_of_resources : UInt
+
+pub let mpr_interface_service_paused : UInt
+
+pub let mpr_max_area_code : UInt
+
+pub let mpr_max_callback_number : UInt
+
+pub let mpr_max_device_name : UInt
+
+pub let mpr_max_device_type : UInt
+
+pub let mpr_max_entry_name : UInt
+
+pub let mpr_max_facilities : UInt
+
+pub let mpr_max_ip_address : UInt
+
+pub let mpr_max_ipx_address : UInt
+
+pub let mpr_max_pad_type : UInt
+
+pub let mpr_max_phone_number : UInt
+
+pub let mpr_max_user_data : UInt
+
+pub let mpr_max_x25_address : UInt
+
+pub let mpr_vpn_ts_i_pv4_addr_range : Int
+
+pub let mpr_vpn_ts_i_pv6_addr_range : Int
+
+pub let mpr_vs_default : UInt
+
+pub let mpr_vs_ikev2_first : UInt
+
+pub let mpr_vs_ikev2_only : UInt
+
+pub let mpr_vs_l2tp_first : UInt
+
+pub let mpr_vs_l2tp_only : UInt
+
+pub let mpr_vs_pptp_first : UInt
+
+pub let mpr_vs_pptp_only : UInt
+
+pub let mprapi_admin_dll_version_1 : UInt
+
+pub let mprapi_admin_dll_version_2 : UInt
+
+pub let mprapi_if_custom_config_for_ikev2 : UInt
+
+pub let mprapi_ikev2_auth_using_cert : UInt
+
+pub let mprapi_ikev2_auth_using_eap : UInt
+
+pub let mprapi_ikev2_projection_info_type : UInt
+
+pub let mprapi_ikev2_set_tunnel_config_params : UInt
+
+pub let mprapi_l2_tp_set_tunnel_config_params : UInt
+
+pub let mprapi_mpr_if_custom_config_object_revision_1 : UInt
+
+pub let mprapi_mpr_if_custom_config_object_revision_2 : UInt
+
+pub let mprapi_mpr_if_custom_config_object_revision_3 : UInt
+
+pub let mprapi_mpr_server_object_revision_1 : UInt
+
+pub let mprapi_mpr_server_object_revision_2 : UInt
+
+pub let mprapi_mpr_server_object_revision_3 : UInt
+
+pub let mprapi_mpr_server_object_revision_4 : UInt
+
+pub let mprapi_mpr_server_object_revision_5 : UInt
+
+pub let mprapi_mpr_server_set_config_object_revision_1 : UInt
+
+pub let mprapi_mpr_server_set_config_object_revision_2 : UInt
+
+pub let mprapi_mpr_server_set_config_object_revision_3 : UInt
+
+pub let mprapi_mpr_server_set_config_object_revision_4 : UInt
+
+pub let mprapi_mpr_server_set_config_object_revision_5 : UInt
+
+pub let mprapi_object_type_auth_validation_object : Int
+
+pub let mprapi_object_type_if_custom_config_object : Int
+
+pub let mprapi_object_type_mpr_server_object : Int
+
+pub let mprapi_object_type_mpr_server_set_config_object : Int
+
+pub let mprapi_object_type_ras_connection_object : Int
+
+pub let mprapi_object_type_update_connection_object : Int
+
+pub let mprapi_ppp_projection_info_type : UInt
+
+pub let mprapi_ras_connection_object_revision_1 : UInt
+
+pub let mprapi_ras_update_connection_object_revision_1 : UInt
+
+pub let mprapi_set_config_protocol_for_gre : UInt
+
+pub let mprapi_set_config_protocol_for_ikev2 : UInt
+
+pub let mprapi_set_config_protocol_for_l2_tp : UInt
+
+pub let mprapi_set_config_protocol_for_pptp : UInt
+
+pub let mprapi_set_config_protocol_for_sstp : UInt
+
+pub let mprdm_dial_all : UInt
+
+pub let mprdm_dial_as_needed : UInt
+
+pub let mprdm_dial_first : UInt
+
+pub let mprdt_atm : String
+
+pub let mprdt_frame_relay : String
+
+pub let mprdt_generic : String
+
+pub let mprdt_irda : String
+
+pub let mprdt_isdn : String
+
+pub let mprdt_modem : String
+
+pub let mprdt_pad : String
+
+pub let mprdt_parallel : String
+
+pub let mprdt_serial : String
+
+pub let mprdt_sonet : String
+
+pub let mprdt_sw56 : String
+
+pub let mprdt_vpn : String
+
+pub let mprdt_x25 : String
+
+pub let mpret_direct : UInt
+
+pub let mpret_phone : UInt
+
+pub let mpret_vpn : UInt
+
+pub let mprids_disabled : UInt
+
+pub let mprids_use_global_value : UInt
+
+pub let mprio_disable_lcp_extensions : UInt
+
+pub let mprio_ip_header_compression : UInt
+
+pub let mprio_ip_sec_pre_shared_key : UInt
+
+pub let mprio_network_logon : UInt
+
+pub let mprio_promote_alternates : UInt
+
+pub let mprio_remote_default_gateway : UInt
+
+pub let mprio_require_chap : UInt
+
+pub let mprio_require_data_encryption : UInt
+
+pub let mprio_require_eap : UInt
+
+pub let mprio_require_encrypted_pw : UInt
+
+pub let mprio_require_machine_certificates : UInt
+
+pub let mprio_require_ms_chap : UInt
+
+pub let mprio_require_ms_chap2 : UInt
+
+pub let mprio_require_ms_encrypted_pw : UInt
+
+pub let mprio_require_pap : UInt
+
+pub let mprio_require_spap : UInt
+
+pub let mprio_secure_local_files : UInt
+
+pub let mprio_shared_phone_numbers : UInt
+
+pub let mprio_specific_ip_addr : UInt
+
+pub let mprio_specific_name_servers : UInt
+
+pub let mprio_sw_compression : UInt
+
+pub let mprio_use_pre_shared_key_for_ikev2_initiator : UInt
+
+pub let mprio_use_pre_shared_key_for_ikev2_responder : UInt
+
+pub let mprnp_ip : UInt
+
+pub let mprnp_ipv6 : UInt
+
+pub let mprnp_ipx : UInt
+
+pub let pending : UInt
+
+pub let pid_atalk : UInt
+
+pub let pid_ip : UInt
+
+pub let pid_ipv6 : UInt
+
+pub let pid_ipx : UInt
+
+pub let pid_nbf : UInt
+
+pub let ppp_ccp_compression : UInt
+
+pub let ppp_ccp_encryption128_bit : UInt
+
+pub let ppp_ccp_encryption40_bit : UInt
+
+pub let ppp_ccp_encryption40_bitold : UInt
+
+pub let ppp_ccp_encryption56_bit : UInt
+
+pub let ppp_ccp_historyless : UInt
+
+pub let ppp_ipcp_vj : UInt
+
+pub let ppp_lcp_3_des : UInt
+
+pub let ppp_lcp_acfc : UInt
+
+pub let ppp_lcp_aes_128 : UInt
+
+pub let ppp_lcp_aes_192 : UInt
+
+pub let ppp_lcp_aes_256 : UInt
+
+pub let ppp_lcp_chap : UInt
+
+pub let ppp_lcp_chap_md5 : UInt
+
+pub let ppp_lcp_chap_ms : UInt
+
+pub let ppp_lcp_chap_msv2 : UInt
+
+pub let ppp_lcp_des_56 : UInt
+
+pub let ppp_lcp_eap : UInt
+
+pub let ppp_lcp_gcm_aes_128 : UInt
+
+pub let ppp_lcp_gcm_aes_192 : UInt
+
+pub let ppp_lcp_gcm_aes_256 : UInt
+
+pub let ppp_lcp_multilink_framing : UInt
+
+pub let ppp_lcp_pap : UInt
+
+pub let ppp_lcp_pfc : UInt
+
+pub let ppp_lcp_spap : UInt
+
+pub let ppp_lcp_sshf : UInt
+
+pub let projection_info_type_ik_ev2 : Int
+
+pub let projection_info_type_ppp : Int
+
+pub fn ras_clear_connection_statistics_raw(@core.RawAddress) -> UInt
+
+pub fn ras_clear_link_statistics_raw(@core.RawAddress, UInt) -> UInt
+
+pub fn ras_connection_notification_a_raw(@core.RawAddress, @core.RawAddress, UInt) -> UInt
+
+pub fn ras_connection_notification_w_raw(@core.RawAddress, @core.RawAddress, UInt) -> UInt
+
+pub fn ras_create_phonebook_entry_a_raw(@core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn ras_create_phonebook_entry_w_raw(@core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn ras_delete_entry_a_raw(@core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn ras_delete_entry_w_raw(@core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn ras_delete_sub_entry_a_raw(@core.RawAddress, @core.RawAddress, UInt) -> UInt
+
+pub fn ras_delete_sub_entry_w_raw(@core.RawAddress, @core.RawAddress, UInt) -> UInt
+
+pub fn ras_dial_a_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn ras_dial_dlg_a_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn ras_dial_dlg_w_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn ras_dial_w_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn ras_edit_phonebook_entry_a_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn ras_edit_phonebook_entry_w_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn ras_entry_dlg_a_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn ras_entry_dlg_w_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn ras_enum_autodial_addresses_a_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn ras_enum_autodial_addresses_w_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn ras_enum_connections_a_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn ras_enum_connections_w_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn ras_enum_devices_a_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn ras_enum_devices_w_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn ras_enum_entries_a_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn ras_enum_entries_w_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub let ras_flags_arap_connection : UInt
+
+pub let ras_flags_dormant : UInt
+
+pub let ras_flags_ikev2_connection : UInt
+
+pub let ras_flags_messenger_present : UInt
+
+pub let ras_flags_ppp_connection : UInt
+
+pub let ras_flags_quarantine_present : UInt
+
+pub let ras_flags_ras_connection : UInt
+
+pub fn ras_free_eap_user_identity_a_raw(@core.RawAddress) -> Unit
+
+pub fn ras_free_eap_user_identity_w_raw(@core.RawAddress) -> Unit
+
+pub fn ras_get_autodial_address_a_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn ras_get_autodial_address_w_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn ras_get_autodial_enable_a_raw(UInt, @core.RawAddress) -> UInt
+
+pub fn ras_get_autodial_enable_w_raw(UInt, @core.RawAddress) -> UInt
+
+pub fn ras_get_autodial_param_a_raw(UInt, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn ras_get_autodial_param_w_raw(UInt, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn ras_get_connect_status_a_raw(@core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn ras_get_connect_status_w_raw(@core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn ras_get_connection_statistics_raw(@core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn ras_get_country_info_a_raw(@core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn ras_get_country_info_w_raw(@core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn ras_get_credentials_a_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn ras_get_credentials_w_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn ras_get_custom_auth_data_a_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn ras_get_custom_auth_data_w_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn ras_get_eap_user_data_a_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn ras_get_eap_user_data_w_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn ras_get_eap_user_identity_a_raw(@core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn ras_get_eap_user_identity_w_raw(@core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn ras_get_entry_dial_params_a_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn ras_get_entry_dial_params_w_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn ras_get_entry_properties_a_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn ras_get_entry_properties_w_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn ras_get_error_string_a_raw(UInt, @core.RawAddress, UInt) -> UInt
+
+pub fn ras_get_error_string_w_raw(UInt, @core.RawAddress, UInt) -> UInt
+
+pub fn ras_get_link_statistics_raw(@core.RawAddress, UInt, @core.RawAddress) -> UInt
+
+pub fn ras_get_p_cscf_raw(@core.RawAddress) -> UInt
+
+pub fn ras_get_projection_info_a_raw(@core.RawAddress, Int, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn ras_get_projection_info_ex_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn ras_get_projection_info_w_raw(@core.RawAddress, Int, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn ras_get_sub_entry_handle_a_raw(@core.RawAddress, UInt, @core.RawAddress) -> UInt
+
+pub fn ras_get_sub_entry_handle_w_raw(@core.RawAddress, UInt, @core.RawAddress) -> UInt
+
+pub fn ras_get_sub_entry_properties_a_raw(@core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn ras_get_sub_entry_properties_w_raw(@core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn ras_hang_up_a_raw(@core.RawAddress) -> UInt
+
+pub fn ras_hang_up_w_raw(@core.RawAddress) -> UInt
+
+pub let ras_hardware_failure : Int
+
+pub let ras_hardware_operational : Int
+
+pub fn ras_invoke_eap_ui_raw(@core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub let ras_max_area_code : UInt
+
+pub let ras_max_callback_number : UInt
+
+pub let ras_max_device_name : UInt
+
+pub let ras_max_device_type : UInt
+
+pub let ras_max_dns_suffix : UInt
+
+pub let ras_max_entry_name : UInt
+
+pub let ras_max_facilities : UInt
+
+pub let ras_max_id_size : UInt
+
+pub let ras_max_ip_address : UInt
+
+pub let ras_max_ipx_address : UInt
+
+pub let ras_max_pad_type : UInt
+
+pub let ras_max_phone_number : UInt
+
+pub let ras_max_reply_message : UInt
+
+pub let ras_max_user_data : UInt
+
+pub let ras_max_x25_address : UInt
+
+pub fn ras_phonebook_dlg_a_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn ras_phonebook_dlg_w_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub let ras_port_authenticated : Int
+
+pub let ras_port_authenticating : Int
+
+pub let ras_port_calling_back : Int
+
+pub let ras_port_disconnected : Int
+
+pub let ras_port_initializing : Int
+
+pub let ras_port_listening : Int
+
+pub let ras_port_non_operational : Int
+
+pub let ras_quar_state_normal : Int
+
+pub let ras_quar_state_not_capable : Int
+
+pub let ras_quar_state_probation : Int
+
+pub let ras_quar_state_quarantine : Int
+
+pub fn ras_rename_entry_a_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn ras_rename_entry_w_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn ras_set_autodial_address_a_raw(@core.RawAddress, UInt, @core.RawAddress, UInt, UInt) -> UInt
+
+pub fn ras_set_autodial_address_w_raw(@core.RawAddress, UInt, @core.RawAddress, UInt, UInt) -> UInt
+
+pub fn ras_set_autodial_enable_a_raw(UInt, Int) -> UInt
+
+pub fn ras_set_autodial_enable_w_raw(UInt, Int) -> UInt
+
+pub fn ras_set_autodial_param_a_raw(UInt, @core.RawAddress, UInt) -> UInt
+
+pub fn ras_set_autodial_param_w_raw(UInt, @core.RawAddress, UInt) -> UInt
+
+pub fn ras_set_credentials_a_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, Int) -> UInt
+
+pub fn ras_set_credentials_w_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, Int) -> UInt
+
+pub fn ras_set_custom_auth_data_a_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, UInt) -> UInt
+
+pub fn ras_set_custom_auth_data_w_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, UInt) -> UInt
+
+pub fn ras_set_eap_user_data_a_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, UInt) -> UInt
+
+pub fn ras_set_eap_user_data_w_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, UInt) -> UInt
+
+pub fn ras_set_entry_dial_params_a_raw(@core.RawAddress, @core.RawAddress, Int) -> UInt
+
+pub fn ras_set_entry_dial_params_w_raw(@core.RawAddress, @core.RawAddress, Int) -> UInt
+
+pub fn ras_set_entry_properties_a_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, UInt) -> UInt
+
+pub fn ras_set_entry_properties_w_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, UInt) -> UInt
+
+pub fn ras_set_sub_entry_properties_a_raw(@core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, UInt, @core.RawAddress, UInt) -> UInt
+
+pub fn ras_set_sub_entry_properties_w_raw(@core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, UInt, @core.RawAddress, UInt) -> UInt
+
+pub fn ras_update_connection_raw(@core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn ras_validate_entry_name_a_raw(@core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn ras_validate_entry_name_w_raw(@core.RawAddress, @core.RawAddress) -> UInt
+
+pub let rasadflg_position_dlg : UInt
+
+pub let rasadp_connection_query_timeout : UInt
+
+pub let rasadp_disable_connection_query : UInt
+
+pub let rasadp_failed_connection_timeout : UInt
+
+pub let rasadp_login_session_disable : UInt
+
+pub let rasadp_saved_addresses_limit : UInt
+
+pub let rasapiversion_500 : Int
+
+pub let rasapiversion_501 : Int
+
+pub let rasapiversion_600 : Int
+
+pub let rasapiversion_601 : Int
+
+pub let rasbase : UInt
+
+pub let rasbaseend : UInt
+
+pub let rasccpca_mppc : UInt
+
+pub let rasccpca_stac : UInt
+
+pub let rasccpo_compression : UInt
+
+pub let rasccpo_encryption128bit : UInt
+
+pub let rasccpo_encryption40bit : UInt
+
+pub let rasccpo_encryption56bit : UInt
+
+pub let rasccpo_history_less : UInt
+
+pub let rascf_all_users : UInt
+
+pub let rascf_global_creds : UInt
+
+pub let rascf_owner_known : UInt
+
+pub let rascf_owner_match : UInt
+
+pub let rascm_ddm_pre_shared_key : UInt
+
+pub let rascm_default_creds : UInt
+
+pub let rascm_domain : UInt
+
+pub let rascm_password : UInt
+
+pub let rascm_pre_shared_key : UInt
+
+pub let rascm_server_pre_shared_key : UInt
+
+pub let rascm_user_name : UInt
+
+pub let rascn_bandwidth_added : UInt
+
+pub let rascn_bandwidth_removed : UInt
+
+pub let rascn_connection : UInt
+
+pub let rascn_disconnection : UInt
+
+pub let rascn_dormant : UInt
+
+pub let rascn_epdg_packet_arrival : UInt
+
+pub let rascn_re_connection : UInt
+
+pub let rascs_all_devices_connected : Int
+
+pub let rascs_apply_settings : Int
+
+pub let rascs_auth_ack : Int
+
+pub let rascs_auth_callback : Int
+
+pub let rascs_auth_change_password : Int
+
+pub let rascs_auth_link_speed : Int
+
+pub let rascs_auth_notify : Int
+
+pub let rascs_auth_project : Int
+
+pub let rascs_auth_retry : Int
+
+pub let rascs_authenticate : Int
+
+pub let rascs_authenticated : Int
+
+pub let rascs_callback_complete : Int
+
+pub let rascs_callback_set_by_caller : Int
+
+pub let rascs_connect_device : Int
+
+pub let rascs_connected : Int
+
+pub let rascs_device_connected : Int
+
+pub let rascs_disconnected : Int
+
+pub let rascs_done : UInt
+
+pub let rascs_interactive : Int
+
+pub let rascs_invoke_eap_ui : Int
+
+pub let rascs_logon_network : Int
+
+pub let rascs_open_port : Int
+
+pub let rascs_password_expired : Int
+
+pub let rascs_paused : UInt
+
+pub let rascs_port_opened : Int
+
+pub let rascs_prepare_for_callback : Int
+
+pub let rascs_projected : Int
+
+pub let rascs_re_authenticate : Int
+
+pub let rascs_retry_authentication : Int
+
+pub let rascs_start_authentication : Int
+
+pub let rascs_sub_entry_connected : Int
+
+pub let rascs_sub_entry_disconnected : Int
+
+pub let rascs_wait_for_callback : Int
+
+pub let rascs_wait_for_modem_reset : Int
+
+pub let rascss_done : UInt
+
+pub let rascss_dormant : Int
+
+pub let rascss_none : Int
+
+pub let rascss_reconnected : Int
+
+pub let rascss_reconnecting : Int
+
+pub let rasddflag_aoac_redial : UInt
+
+pub let rasddflag_link_failure : UInt
+
+pub let rasddflag_no_prompt : UInt
+
+pub let rasddflag_position_dlg : UInt
+
+pub let rasdialevent : String
+
+pub let rasdt_atm : String
+
+pub let rasdt_frame_relay : String
+
+pub let rasdt_generic : String
+
+pub let rasdt_irda : String
+
+pub let rasdt_isdn : String
+
+pub let rasdt_modem : String
+
+pub let rasdt_pad : String
+
+pub let rasdt_parallel : String
+
+pub let rasdt_pp_po_e : String
+
+pub let rasdt_serial : String
+
+pub let rasdt_sonet : String
+
+pub let rasdt_sw56 : String
+
+pub let rasdt_vpn : String
+
+pub let rasdt_x25 : String
+
+pub let raseapf_logon : UInt
+
+pub let raseapf_non_interactive : UInt
+
+pub let raseapf_preview : UInt
+
+pub let rasedflag_clone_entry : UInt
+
+pub let rasedflag_incoming_connection : UInt
+
+pub let rasedflag_internet_entry : UInt
+
+pub let rasedflag_nat : UInt
+
+pub let rasedflag_new_broadband_entry : UInt
+
+pub let rasedflag_new_direct_entry : UInt
+
+pub let rasedflag_new_entry : UInt
+
+pub let rasedflag_new_phone_entry : UInt
+
+pub let rasedflag_new_tunnel_entry : UInt
+
+pub let rasedflag_no_rename : UInt
+
+pub let rasedflag_position_dlg : UInt
+
+pub let rasedflag_shell_owned : UInt
+
+pub let rasedm_dial_all : UInt
+
+pub let rasedm_dial_as_needed : UInt
+
+pub let raseo2_auth_type_is_otp : UInt
+
+pub let raseo2_auto_trigger_capable : UInt
+
+pub let raseo2_cache_credentials : UInt
+
+pub let raseo2_disable_class_based_static_route : UInt
+
+pub let raseo2_disable_ike_name_eku_check : UInt
+
+pub let raseo2_disable_mobility : UInt
+
+pub let raseo2_disable_nbt_over_ip : UInt
+
+pub let raseo2_dont_negotiate_multilink : UInt
+
+pub let raseo2_dont_use_ras_credentials : UInt
+
+pub let raseo2_i_pv4_explicit_metric : UInt
+
+pub let raseo2_i_pv6_explicit_metric : UInt
+
+pub let raseo2_i_pv6_remote_default_gateway : UInt
+
+pub let raseo2_i_pv6_specific_name_servers : UInt
+
+pub let raseo2_internet : UInt
+
+pub let raseo2_is_always_on : UInt
+
+pub let raseo2_is_private_network : UInt
+
+pub let raseo2_is_third_party_profile : UInt
+
+pub let raseo2_plumb_ik_ev2_ts_as_routes : UInt
+
+pub let raseo2_reconnect_if_dropped : UInt
+
+pub let raseo2_register_ip_with_dns : UInt
+
+pub let raseo2_require_machine_certificates : UInt
+
+pub let raseo2_secure_client_for_ms_net : UInt
+
+pub let raseo2_secure_file_and_print : UInt
+
+pub let raseo2_secure_routing_compartment : UInt
+
+pub let raseo2_share_phone_numbers : UInt
+
+pub let raseo2_specific_i_pv6_addr : UInt
+
+pub let raseo2_use_dns_suffix_for_registration : UInt
+
+pub let raseo2_use_global_device_settings : UInt
+
+pub let raseo2_use_pre_shared_key : UInt
+
+pub let raseo2_use_pre_shared_key_for_ikev2_initiator : UInt
+
+pub let raseo2_use_pre_shared_key_for_ikev2_responder : UInt
+
+pub let raseo2_use_typical_settings : UInt
+
+pub let raseo_custom : UInt
+
+pub let raseo_custom_script : UInt
+
+pub let raseo_disable_lcp_extensions : UInt
+
+pub let raseo_ip_header_compression : UInt
+
+pub let raseo_modem_lights : UInt
+
+pub let raseo_network_logon : UInt
+
+pub let raseo_preview_domain : UInt
+
+pub let raseo_preview_phone_number : UInt
+
+pub let raseo_preview_user_pw : UInt
+
+pub let raseo_promote_alternates : UInt
+
+pub let raseo_remote_default_gateway : UInt
+
+pub let raseo_require_chap : UInt
+
+pub let raseo_require_data_encryption : UInt
+
+pub let raseo_require_eap : UInt
+
+pub let raseo_require_encrypted_pw : UInt
+
+pub let raseo_require_ms_chap : UInt
+
+pub let raseo_require_ms_chap2 : UInt
+
+pub let raseo_require_ms_encrypted_pw : UInt
+
+pub let raseo_require_pap : UInt
+
+pub let raseo_require_spap : UInt
+
+pub let raseo_require_w95_mschap : UInt
+
+pub let raseo_secure_local_files : UInt
+
+pub let raseo_shared_phone_numbers : UInt
+
+pub let raseo_show_dialing_progress : UInt
+
+pub let raseo_specific_ip_addr : UInt
+
+pub let raseo_specific_name_servers : UInt
+
+pub let raseo_sw_compression : UInt
+
+pub let raseo_terminal_after_dial : UInt
+
+pub let raseo_terminal_before_dial : UInt
+
+pub let raseo_use_country_and_area_codes : UInt
+
+pub let raseo_use_logon_credentials : UInt
+
+pub let raset_broadband : UInt
+
+pub let raset_direct : UInt
+
+pub let raset_internet : UInt
+
+pub let raset_phone : UInt
+
+pub let raset_vpn : UInt
+
+pub let rasfp_ppp : UInt
+
+pub let rasfp_ras : UInt
+
+pub let rasfp_slip : UInt
+
+pub let rasids_disabled : UInt
+
+pub let rasids_use_global_value : UInt
+
+pub let rasik_ev2_auth_eap : UInt
+
+pub let rasik_ev2_auth_machinecertificates : UInt
+
+pub let rasik_ev2_auth_psk : UInt
+
+pub let rasik_ev2_flags_behind_nat : UInt
+
+pub let rasik_ev2_flags_mobikesupported : UInt
+
+pub let rasik_ev2_flags_serverbehind_nat : UInt
+
+pub let rasipo_vj : UInt
+
+pub let raslcpad_chap_md5 : UInt
+
+pub let raslcpad_chap_ms : UInt
+
+pub let raslcpad_chap_msv2 : UInt
+
+pub let raslcpap_chap : UInt
+
+pub let raslcpap_eap : UInt
+
+pub let raslcpap_pap : UInt
+
+pub let raslcpap_spap : UInt
+
+pub let raslcpo_3_des : UInt
+
+pub let raslcpo_acfc : UInt
+
+pub let raslcpo_aes_128 : UInt
+
+pub let raslcpo_aes_192 : UInt
+
+pub let raslcpo_aes_256 : UInt
+
+pub let raslcpo_des_56 : UInt
+
+pub let raslcpo_gcm_aes_128 : UInt
+
+pub let raslcpo_gcm_aes_192 : UInt
+
+pub let raslcpo_gcm_aes_256 : UInt
+
+pub let raslcpo_pfc : UInt
+
+pub let raslcpo_sshf : UInt
+
+pub let rasnap_probation_time : UInt
+
+pub let rasnouser_smart_card : UInt
+
+pub let rasnp_ip : UInt
+
+pub let rasnp_ipv6 : UInt
+
+pub let rasnp_ipx : UInt
+
+pub let rasnp_net_beui : UInt
+
+pub let rasp_amb : Int
+
+pub let rasp_ppp_ccp : Int
+
+pub let rasp_ppp_ip : Int
+
+pub let rasp_ppp_ipv6 : Int
+
+pub let rasp_ppp_ipx : Int
+
+pub let rasp_ppp_lcp : Int
+
+pub let rasp_ppp_nbf : Int
+
+pub let raspbdevent_add_entry : UInt
+
+pub let raspbdevent_dial_entry : UInt
+
+pub let raspbdevent_edit_entry : UInt
+
+pub let raspbdevent_edit_globals : UInt
+
+pub let raspbdevent_no_user : UInt
+
+pub let raspbdevent_no_user_edit : UInt
+
+pub let raspbdevent_remove_entry : UInt
+
+pub let raspbdflag_force_close_on_dial : UInt
+
+pub let raspbdflag_no_user : UInt
+
+pub let raspbdflag_position_dlg : UInt
+
+pub let raspbdflag_update_defaults : UInt
+
+pub let raspriv2_dialin_policy : UInt
+
+pub let raspriv_admin_set_callback : UInt
+
+pub let raspriv_caller_set_callback : UInt
+
+pub let raspriv_dialin_privilege : UInt
+
+pub let raspriv_no_callback : UInt
+
+pub let rastunnelendpoint_i_pv4 : UInt
+
+pub let rastunnelendpoint_i_pv6 : UInt
+
+pub let rastunnelendpoint_unknown : UInt
+
+pub let rcd_all_users : UInt
+
+pub let rcd_eap : UInt
+
+pub let rcd_logon : UInt
+
+pub let rcd_single_user : UInt
+
+pub let rdeopt_custom_dial : UInt
+
+pub let rdeopt_disable_connected_ui : UInt
+
+pub let rdeopt_disable_reconnect : UInt
+
+pub let rdeopt_disable_reconnect_ui : UInt
+
+pub let rdeopt_eap_info_crypt_in_capable : UInt
+
+pub let rdeopt_ignore_modem_speaker : UInt
+
+pub let rdeopt_ignore_software_compression : UInt
+
+pub let rdeopt_invoke_auto_trigger_credential_ui : UInt
+
+pub let rdeopt_no_user : UInt
+
+pub let rdeopt_pause_on_script : UInt
+
+pub let rdeopt_paused_states : UInt
+
+pub let rdeopt_router : UInt
+
+pub let rdeopt_set_modem_speaker : UInt
+
+pub let rdeopt_set_software_compression : UInt
+
+pub let rdeopt_use_custom_scripting : UInt
+
+pub let rdeopt_use_prefix_suffix : UInt
+
+pub let ren_all_users : UInt
+
+pub let ren_user : UInt
+
+pub let router_if_state_connected : Int
+
+pub let router_if_state_connecting : Int
+
+pub let router_if_state_disconnected : Int
+
+pub let router_if_state_unreachable : Int
+
+pub let router_if_type_client : Int
+
+pub let router_if_type_dedicated : Int
+
+pub let router_if_type_dialout : Int
+
+pub let router_if_type_full_router : Int
+
+pub let router_if_type_home_router : Int
+
+pub let router_if_type_internal : Int
+
+pub let router_if_type_loopback : Int
+
+pub let router_if_type_max : Int
+
+pub let router_if_type_tunnel1 : Int
+
+pub let rras_service_name : String
+
+pub fn rtm_add_next_hop_raw(Int64, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn rtm_add_route_to_dest_raw(Int64, @core.RawAddress, @core.RawAddress, @core.RawAddress, UInt, Int64, UInt, Int64, @core.RawAddress) -> UInt
+
+pub let rtm_block_methods : UInt
+
+pub fn rtm_block_methods_raw(Int64, @core.RawAddress, UInt, UInt) -> UInt
+
+pub let rtm_change_notification : Int
+
+pub let rtm_change_type_all : UInt
+
+pub let rtm_change_type_best : UInt
+
+pub let rtm_change_type_forwarding : UInt
+
+pub fn rtm_convert_ipv6_address_and_length_to_net_address_raw(@core.RawAddress, Bytes, UInt, UInt) -> UInt
+
+pub fn rtm_convert_net_address_to_ipv6_address_and_length_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, UInt) -> UInt
+
+pub fn rtm_create_dest_enum_raw(Int64, UInt, UInt, @core.RawAddress, UInt, @core.RawAddress) -> UInt
+
+pub fn rtm_create_next_hop_enum_raw(Int64, UInt, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn rtm_create_route_enum_raw(Int64, Int64, UInt, UInt, @core.RawAddress, UInt, @core.RawAddress, UInt, @core.RawAddress) -> UInt
+
+pub fn rtm_create_route_list_enum_raw(Int64, Int64, @core.RawAddress) -> UInt
+
+pub fn rtm_create_route_list_raw(Int64, @core.RawAddress) -> UInt
+
+pub fn rtm_delete_enum_handle_raw(Int64, Int64) -> UInt
+
+pub fn rtm_delete_next_hop_raw(Int64, Int64, @core.RawAddress) -> UInt
+
+pub fn rtm_delete_route_list_raw(Int64, Int64) -> UInt
+
+pub fn rtm_delete_route_to_dest_raw(Int64, Int64, @core.RawAddress) -> UInt
+
+pub fn rtm_deregister_entity_raw(Int64) -> UInt
+
+pub fn rtm_deregister_from_change_notification_raw(Int64, Int64) -> UInt
+
+pub let rtm_dest_flag_dont_forward : UInt
+
+pub let rtm_dest_flag_fwd_engin_add : UInt
+
+pub let rtm_dest_flag_natural_net : UInt
+
+pub let rtm_entity_deregistered : Int
+
+pub let rtm_entity_registered : Int
+
+pub let rtm_enum_all_dests : UInt
+
+pub let rtm_enum_all_routes : UInt
+
+pub let rtm_enum_next : UInt
+
+pub let rtm_enum_own_dests : UInt
+
+pub let rtm_enum_own_routes : UInt
+
+pub let rtm_enum_range : UInt
+
+pub let rtm_enum_start : UInt
+
+pub fn rtm_find_next_hop_raw(Int64, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn rtm_get_change_status_raw(Int64, Int64, Int64, @core.RawAddress) -> UInt
+
+pub fn rtm_get_changed_dests_raw(Int64, Int64, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn rtm_get_dest_info_raw(Int64, Int64, UInt, UInt, @core.RawAddress) -> UInt
+
+pub fn rtm_get_entity_info_raw(Int64, Int64, @core.RawAddress) -> UInt
+
+pub fn rtm_get_entity_methods_raw(Int64, Int64, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn rtm_get_enum_dests_raw(Int64, Int64, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn rtm_get_enum_next_hops_raw(Int64, Int64, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn rtm_get_enum_routes_raw(Int64, Int64, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn rtm_get_exact_match_destination_raw(Int64, @core.RawAddress, UInt, UInt, @core.RawAddress) -> UInt
+
+pub fn rtm_get_exact_match_route_raw(Int64, @core.RawAddress, UInt, @core.RawAddress, UInt, UInt, @core.RawAddress) -> UInt
+
+pub fn rtm_get_less_specific_destination_raw(Int64, Int64, UInt, UInt, @core.RawAddress) -> UInt
+
+pub fn rtm_get_list_enum_routes_raw(Int64, Int64, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn rtm_get_most_specific_destination_raw(Int64, @core.RawAddress, UInt, UInt, @core.RawAddress) -> UInt
+
+pub fn rtm_get_next_hop_info_raw(Int64, Int64, @core.RawAddress) -> UInt
+
+pub fn rtm_get_next_hop_pointer_raw(Int64, Int64, @core.RawAddress) -> UInt
+
+pub fn rtm_get_opaque_information_pointer_raw(Int64, Int64, @core.RawAddress) -> UInt
+
+pub fn rtm_get_registered_entities_raw(Int64, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn rtm_get_route_info_raw(Int64, Int64, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn rtm_get_route_pointer_raw(Int64, Int64, @core.RawAddress) -> UInt
+
+pub fn rtm_hold_destination_raw(Int64, Int64, UInt, UInt) -> UInt
+
+pub fn rtm_ignore_changed_dests_raw(Int64, Int64, UInt, @core.RawAddress) -> UInt
+
+pub fn rtm_insert_in_route_list_raw(Int64, Int64, UInt, @core.RawAddress) -> UInt
+
+pub fn rtm_invoke_method_raw(Int64, Int64, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn rtm_is_best_route_raw(Int64, Int64, @core.RawAddress) -> UInt
+
+pub fn rtm_is_marked_for_change_notification_raw(Int64, Int64, Int64, @core.RawAddress) -> UInt
+
+pub fn rtm_lock_destination_raw(Int64, Int64, Int, Int) -> UInt
+
+pub fn rtm_lock_next_hop_raw(Int64, Int64, Int, Int, @core.RawAddress) -> UInt
+
+pub fn rtm_lock_route_raw(Int64, Int64, Int, Int, @core.RawAddress) -> UInt
+
+pub fn rtm_mark_dest_for_change_notification_raw(Int64, Int64, Int64, Int) -> UInt
+
+pub let rtm_match_full : UInt
+
+pub let rtm_match_interface : UInt
+
+pub let rtm_match_neighbour : UInt
+
+pub let rtm_match_nexthop : UInt
+
+pub let rtm_match_none : UInt
+
+pub let rtm_match_owner : UInt
+
+pub let rtm_match_pref : UInt
+
+pub let rtm_max_address_size : UInt
+
+pub let rtm_max_views : UInt
+
+pub let rtm_nexthop_change_new : UInt
+
+pub let rtm_nexthop_flags_down : UInt
+
+pub let rtm_nexthop_flags_remote : UInt
+
+pub let rtm_nexthop_state_created : UInt
+
+pub let rtm_nexthop_state_deleted : UInt
+
+pub let rtm_notify_only_marked_dests : UInt
+
+pub let rtm_num_change_types : UInt
+
+pub fn rtm_reference_handles_raw(Int64, UInt, @core.RawAddress) -> UInt
+
+pub fn rtm_register_entity_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, Int, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn rtm_register_for_change_notification_raw(Int64, UInt, UInt, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn rtm_release_changed_dests_raw(Int64, Int64, UInt, @core.RawAddress) -> UInt
+
+pub fn rtm_release_dest_info_raw(Int64, @core.RawAddress) -> UInt
+
+pub fn rtm_release_dests_raw(Int64, UInt, @core.RawAddress) -> UInt
+
+pub fn rtm_release_entities_raw(Int64, UInt, @core.RawAddress) -> UInt
+
+pub fn rtm_release_entity_info_raw(Int64, @core.RawAddress) -> UInt
+
+pub fn rtm_release_next_hop_info_raw(Int64, @core.RawAddress) -> UInt
+
+pub fn rtm_release_next_hops_raw(Int64, UInt, @core.RawAddress) -> UInt
+
+pub fn rtm_release_route_info_raw(Int64, @core.RawAddress) -> UInt
+
+pub fn rtm_release_routes_raw(Int64, UInt, @core.RawAddress) -> UInt
+
+pub let rtm_resume_methods : UInt
+
+pub let rtm_route_change_best : UInt
+
+pub let rtm_route_change_first : UInt
+
+pub let rtm_route_change_new : UInt
+
+pub let rtm_route_expired : Int
+
+pub let rtm_route_flags_blackhole : UInt
+
+pub let rtm_route_flags_discard : UInt
+
+pub let rtm_route_flags_inactive : UInt
+
+pub let rtm_route_flags_limited_bc : UInt
+
+pub let rtm_route_flags_local : UInt
+
+pub let rtm_route_flags_local_mcast : UInt
+
+pub let rtm_route_flags_loopback : UInt
+
+pub let rtm_route_flags_martian : UInt
+
+pub let rtm_route_flags_mcast : UInt
+
+pub let rtm_route_flags_myself : UInt
+
+pub let rtm_route_flags_ones_netbc : UInt
+
+pub let rtm_route_flags_ones_subnetbc : UInt
+
+pub let rtm_route_flags_remote : UInt
+
+pub let rtm_route_flags_zeros_netbc : UInt
+
+pub let rtm_route_flags_zeros_subnetbc : UInt
+
+pub let rtm_route_state_created : UInt
+
+pub let rtm_route_state_deleted : UInt
+
+pub let rtm_route_state_deleting : UInt
+
+pub fn rtm_update_and_unlock_route_raw(Int64, Int64, UInt, Int64, UInt, Int64, @core.RawAddress) -> UInt
+
+pub let rtm_view_id_mcast : UInt
+
+pub let rtm_view_id_ucast : UInt
+
+pub let rtm_view_mask_all : UInt
+
+pub let rtm_view_mask_any : UInt
+
+pub let rtm_view_mask_mcast : UInt
+
+pub let rtm_view_mask_none : UInt
+
+pub let rtm_view_mask_size : UInt
+
+pub let rtm_view_mask_ucast : UInt
+
+pub let securitymsg_error : UInt
+
+pub let securitymsg_failure : UInt
+
+pub let securitymsg_success : UInt
+
+pub let vs_default : UInt
+
+pub let vs_gre_only : UInt
+
+pub let vs_ikev2_first : UInt
+
+pub let vs_ikev2_only : UInt
+
+pub let vs_ikev2_sstp : UInt
+
+pub let vs_l2tp_first : UInt
+
+pub let vs_l2tp_only : UInt
+
+pub let vs_l2tp_sstp : UInt
+
+pub let vs_pptp_first : UInt
+
+pub let vs_pptp_only : UInt
+
+pub let vs_pptp_sstp : UInt
+
+pub let vs_protocol_list : UInt
+
+pub let vs_sstp_first : UInt
+
+pub let vs_sstp_only : UInt
+
+pub let warning_msg_alias_not_added : UInt
+
+pub let wm_rasdialevent : UInt
+
+// Errors
+
+// Types and methods
+
+// Type aliases
+pub using @e851e8d87ce9c6c2 {type AUTHVALIDATIONEX_4d22138d5828 as AUTHVALIDATIONEX}
+
+pub using @e851e8d87ce9c6c2 {type AnonymousEStruct_11ae867737e6 as AnonymousEStruct_11ae867737}
+
+pub using @e851e8d87ce9c6c2 {type AnonymousEStruct_fb47671e87f0 as AnonymousEStruct_fb47671e87}
+
+pub using @e851e8d87ce9c6c2 {type AnonymousEUnion_0f153a98ff14 as AnonymousEUnion_0f153a98ff}
+
+pub using @e851e8d87ce9c6c2 {type AnonymousEUnion_12d82d72df9a as AnonymousEUnion_12d82d72df}
+
+pub using @e851e8d87ce9c6c2 {type AnonymousEUnion_17bf684756cd as AnonymousEUnion_17bf684756}
+
+pub using @e851e8d87ce9c6c2 {type AnonymousEUnion_76fd3b1cafef as AnonymousEUnion_76fd3b1caf}
+
+pub using @e851e8d87ce9c6c2 {type AnonymousEUnion_d61a29a28375 as AnonymousEUnion_d61a29a283}
+
+pub using @e851e8d87ce9c6c2 {type AnonymousEUnion_dee672040708 as AnonymousEUnion_dee6720407}
+
+pub using @e851e8d87ce9c6c2 {type GRECONFIGPARAMS0_0d97a2b4b51f as GRECONFIGPARAMS0}
+
+pub using @e851e8d87ce9c6c2 {type HRASCONN_28c006e1f190 as HRASCONN}
+
+pub using @e851e8d87ce9c6c2 {type IKEV2CONFIGPARAMS_edeabbd27b47 as IKEV2CONFIGPARAMS}
+
+pub using @e851e8d87ce9c6c2 {type IKEV2IDPAYLOADTYPE_1edebaa730bd as IKEV2IDPAYLOADTYPE}
+
+pub using @e851e8d87ce9c6c2 {type IKEV2PROJECTIONINFO_820229ce8e72 as IKEV2PROJECTIONINFO}
+
+pub using @e851e8d87ce9c6c2 {type IKEV2PROJECTIONINFO2_c070824ac349 as IKEV2PROJECTIONINFO2}
+
+pub using @e851e8d87ce9c6c2 {type IKEV2TUNNELCONFIGPARAMS2_4fb37579fd9a as IKEV2TUNNELCONFIGPARAMS2}
+
+pub using @e851e8d87ce9c6c2 {type IKEV2TUNNELCONFIGPARAMS3_84f275e2a9ac as IKEV2TUNNELCONFIGPARAMS3}
+
+pub using @e851e8d87ce9c6c2 {type IKEV2TUNNELCONFIGPARAMS4_513cb68c3b38 as IKEV2TUNNELCONFIGPARAMS4}
+
+pub using @e851e8d87ce9c6c2 {type L2TPCONFIGPARAMS0_ce39917c8ef1 as L2TPCONFIGPARAMS0}
+
+pub using @e851e8d87ce9c6c2 {type L2TPCONFIGPARAMS1_92edaf649fd6 as L2TPCONFIGPARAMS1}
+
+pub using @e851e8d87ce9c6c2 {type L2TPTUNNELCONFIGPARAMS1_f40d2d54ceec as L2TPTUNNELCONFIGPARAMS1}
+
+pub using @e851e8d87ce9c6c2 {type L2TPTUNNELCONFIGPARAMS2_aece89fef6dc as L2TPTUNNELCONFIGPARAMS2}
+
+pub using @e851e8d87ce9c6c2 {type MGMENUMTYPES_47b2923af838 as MGMENUMTYPES}
+
+pub using @e851e8d87ce9c6c2 {type MGMIFENTRY_7abd56e1bcfc as MGMIFENTRY}
+
+pub using @e851e8d87ce9c6c2 {type MPRAPIADMINDLLCALLBACKS_ed5cbbfd59e8 as MPRAPIADMINDLLCALLBACKS}
+
+pub using @e851e8d87ce9c6c2 {type MPRAPIOBJECTHEADER_f8353ba5d4ec as MPRAPIOBJECTHEADER}
+
+pub using @e851e8d87ce9c6c2 {type MPRAPIOBJECTTYPE_7cd61b39ea97 as MPRAPIOBJECTTYPE}
+
+pub using @e851e8d87ce9c6c2 {type MPRAPITUNNELCONFIGPARAMS0_6fdd30bd8917 as MPRAPITUNNELCONFIGPARAMS0}
+
+pub using @e851e8d87ce9c6c2 {type MPRAPITUNNELCONFIGPARAMS1_65627806b828 as MPRAPITUNNELCONFIGPARAMS1}
+
+pub using @e851e8d87ce9c6c2 {type MPRCERTEKU_d563a60d66fc as MPRCERTEKU}
+
+pub using @e851e8d87ce9c6c2 {type MPRCREDENTIALSEX0_f0e6c28e548e as MPRCREDENTIALSEX0}
+
+pub using @e851e8d87ce9c6c2 {type MPRCREDENTIALSEX1_a5048f956946 as MPRCREDENTIALSEX1}
+
+pub using @e851e8d87ce9c6c2 {type MPRDEVICE0_d73e3e5f4cc3 as MPRDEVICE0}
+
+pub using @e851e8d87ce9c6c2 {type MPRDEVICE1_7d9d9048edea as MPRDEVICE1}
+
+pub using @e851e8d87ce9c6c2 {type MPRET_095e30b341b9 as MPRET}
+
+pub using @e851e8d87ce9c6c2 {type MPRFILTER0_63c594922276 as MPRFILTER0}
+
+pub using @e851e8d87ce9c6c2 {type MPRIFCUSTOMINFOEX0_bcf6ea526c74 as MPRIFCUSTOMINFOEX0}
+
+pub using @e851e8d87ce9c6c2 {type MPRIFCUSTOMINFOEX1_8d0fee7db316 as MPRIFCUSTOMINFOEX1}
+
+pub using @e851e8d87ce9c6c2 {type MPRIFCUSTOMINFOEX2_9918b1bd9106 as MPRIFCUSTOMINFOEX2}
+
+pub using @e851e8d87ce9c6c2 {type MPRIFTRANSPORT0_738b5a800748 as MPRIFTRANSPORT0}
+
+pub using @e851e8d87ce9c6c2 {type MPRINTERFACE0_0ce71e4e66d7 as MPRINTERFACE0}
+
+pub using @e851e8d87ce9c6c2 {type MPRINTERFACE1_890d7fa2d4b7 as MPRINTERFACE1}
+
+pub using @e851e8d87ce9c6c2 {type MPRINTERFACE2_1edd223c5eaa as MPRINTERFACE2}
+
+pub using @e851e8d87ce9c6c2 {type MPRINTERFACE3_93e3666ed765 as MPRINTERFACE3}
+
+pub using @e851e8d87ce9c6c2 {type MPRINTERFACEDIALMODE_655fd6407ac7 as MPRINTERFACEDIALMODE}
+
+pub using @e851e8d87ce9c6c2 {type MPRIPINIPINTERFACE0_ee98b07b59e2 as MPRIPINIPINTERFACE0}
+
+pub using @e851e8d87ce9c6c2 {type MPRSERVER0_75d7f4cc92f1 as MPRSERVER0}
+
+pub using @e851e8d87ce9c6c2 {type MPRSERVER1_dd7447895539 as MPRSERVER1}
+
+pub using @e851e8d87ce9c6c2 {type MPRSERVER2_db936c827f6e as MPRSERVER2}
+
+pub using @e851e8d87ce9c6c2 {type MPRSERVEREX0_14732bf249ad as MPRSERVEREX0}
+
+pub using @e851e8d87ce9c6c2 {type MPRSERVEREX1_0c4cdcd53882 as MPRSERVEREX1}
+
+pub using @e851e8d87ce9c6c2 {type MPRSERVERSETCONFIGEX0_f998a00ea79f as MPRSERVERSETCONFIGEX0}
+
+pub using @e851e8d87ce9c6c2 {type MPRSERVERSETCONFIGEX1_9eb109d041a2 as MPRSERVERSETCONFIGEX1}
+
+pub using @e851e8d87ce9c6c2 {type MPRTRANSPORT0_eca0d29df88b as MPRTRANSPORT0}
+
+pub using @e851e8d87ce9c6c2 {type MPRVPNTRAFFICSELECTOR_71a58f05c483 as MPRVPNTRAFFICSELECTOR}
+
+pub using @e851e8d87ce9c6c2 {type MPRVPNTRAFFICSELECTORS_e47194b663a0 as MPRVPNTRAFFICSELECTORS}
+
+pub using @e851e8d87ce9c6c2 {type MPRVPNTSTYPE_81eb174f7373 as MPRVPNTSTYPE}
+
+pub using @e851e8d87ce9c6c2 {type MPRVS_cc12575fbd33 as MPRVS}
+
+pub using @e851e8d87ce9c6c2 {type ORASADFUNC_b1b9327c1e83 as ORASADFUNC}
+
+pub using @e851e8d87ce9c6c2 {type PFNRASFREEBUFFER_3e65f487384b as PFNRASFREEBUFFER}
+
+pub using @e851e8d87ce9c6c2 {type PFNRASGETBUFFER_1ebe93b2b9bf as PFNRASGETBUFFER}
+
+pub using @e851e8d87ce9c6c2 {type PFNRASRECEIVEBUFFER_3fe685f01563 as PFNRASRECEIVEBUFFER}
+
+pub using @e851e8d87ce9c6c2 {type PFNRASRETRIEVEBUFFER_a79d1f5d37b6 as PFNRASRETRIEVEBUFFER}
+
+pub using @e851e8d87ce9c6c2 {type PFNRASSENDBUFFER_bb072de5d315 as PFNRASSENDBUFFER}
+
+pub using @e851e8d87ce9c6c2 {type PFNRASSETCOMMSETTINGS_5a9bc4eff3f6 as PFNRASSETCOMMSETTINGS}
+
+pub using @e851e8d87ce9c6c2 {type PMGMCREATIONALERTCALLBACK_e92b1ae64dc9 as PMGMCREATIONALERTCALLBACK}
+
+pub using @e851e8d87ce9c6c2 {type PMGMDISABLEIGMPCALLBACK_f665d57c3ec3 as PMGMDISABLEIGMPCALLBACK}
+
+pub using @e851e8d87ce9c6c2 {type PMGMENABLEIGMPCALLBACK_1cc57d0b1b89 as PMGMENABLEIGMPCALLBACK}
+
+pub using @e851e8d87ce9c6c2 {type PMGMJOINALERTCALLBACK_9990d0cefdd0 as PMGMJOINALERTCALLBACK}
+
+pub using @e851e8d87ce9c6c2 {type PMGMLOCALJOINCALLBACK_c7bac0e74f51 as PMGMLOCALJOINCALLBACK}
+
+pub using @e851e8d87ce9c6c2 {type PMGMLOCALLEAVECALLBACK_27302c3b7292 as PMGMLOCALLEAVECALLBACK}
+
+pub using @e851e8d87ce9c6c2 {type PMGMPRUNEALERTCALLBACK_242b6164cf75 as PMGMPRUNEALERTCALLBACK}
+
+pub using @e851e8d87ce9c6c2 {type PMGMRPFCALLBACK_8fafffb1f231 as PMGMRPFCALLBACK}
+
+pub using @e851e8d87ce9c6c2 {type PMGMWRONGIFCALLBACK_517e3b878bf0 as PMGMWRONGIFCALLBACK}
+
+pub using @e851e8d87ce9c6c2 {type PMPRADMINACCEPTNEWCONNECTION_bb87ab11f402 as PMPRADMINACCEPTNEWCONNECTION}
+
+pub using @e851e8d87ce9c6c2 {type PMPRADMINACCEPTNEWCONNECTION2_52968dab88fa as PMPRADMINACCEPTNEWCONNECTION2}
+
+pub using @e851e8d87ce9c6c2 {type PMPRADMINACCEPTNEWCONNECTION3_27e24cd6a496 as PMPRADMINACCEPTNEWCONNECTION3}
+
+pub using @e851e8d87ce9c6c2 {type PMPRADMINACCEPTNEWCONNECTIONEX_ad2a6e9dfe69 as PMPRADMINACCEPTNEWCONNECTIONEX}
+
+pub using @e851e8d87ce9c6c2 {type PMPRADMINACCEPTNEWLINK_741df3e1669e as PMPRADMINACCEPTNEWLINK}
+
+pub using @e851e8d87ce9c6c2 {type PMPRADMINACCEPTREAUTHENTICATION_dd43af8da475 as PMPRADMINACCEPTREAUTHENTICATION}
+
+pub using @e851e8d87ce9c6c2 {type PMPRADMINACCEPTREAUTHENTICATIONEX_bda035a44990 as PMPRADMINACCEPTREAUTHENTICATIONEX}
+
+pub using @e851e8d87ce9c6c2 {type PMPRADMINACCEPTTUNNELENDPOINTCHANGEEX_7e9eab658d6d as PMPRADMINACCEPTTUNNELENDPOINTCHANGEEX}
+
+pub using @e851e8d87ce9c6c2 {type PMPRADMINCONNECTIONHANGUPNOTIFICATION_87dda1401e41 as PMPRADMINCONNECTIONHANGUPNOTIFICATION}
+
+pub using @e851e8d87ce9c6c2 {type PMPRADMINCONNECTIONHANGUPNOTIFICATION2_38db58a6a14c as PMPRADMINCONNECTIONHANGUPNOTIFICATION2}
+
+pub using @e851e8d87ce9c6c2 {type PMPRADMINCONNECTIONHANGUPNOTIFICATION3_fbf3adba1769 as PMPRADMINCONNECTIONHANGUPNOTIFICATION3}
+
+pub using @e851e8d87ce9c6c2 {type PMPRADMINCONNECTIONHANGUPNOTIFICATIONEX_366ce9f23ca7 as PMPRADMINCONNECTIONHANGUPNOTIFICATIONEX}
+
+pub using @e851e8d87ce9c6c2 {type PMPRADMINGETIPADDRESSFORUSER_f87d1468ecb5 as PMPRADMINGETIPADDRESSFORUSER}
+
+pub using @e851e8d87ce9c6c2 {type PMPRADMINGETIPV6ADDRESSFORUSER_8d0e9d3d3602 as PMPRADMINGETIPV6ADDRESSFORUSER}
+
+pub using @e851e8d87ce9c6c2 {type PMPRADMINLINKHANGUPNOTIFICATION_412901190d18 as PMPRADMINLINKHANGUPNOTIFICATION}
+
+pub using @e851e8d87ce9c6c2 {type PMPRADMINRASVALIDATEPREAUTHENTICATEDCONNECTIONEX_49b6858f0c37 as PMPRADMINRASVALIDATEPREAUTHENTICATEDCONNECTIONEX}
+
+pub using @e851e8d87ce9c6c2 {type PMPRADMINRELEASEIPADRESS_93da3188ea5c as PMPRADMINRELEASEIPADRESS}
+
+pub using @e851e8d87ce9c6c2 {type PMPRADMINRELEASEIPV6ADDRESSFORUSER_cd99c4a0ceeb as PMPRADMINRELEASEIPV6ADDRESSFORUSER}
+
+pub using @e851e8d87ce9c6c2 {type PMPRADMINTERMINATEDLL_8328a528ec9b as PMPRADMINTERMINATEDLL}
+
+pub using @e851e8d87ce9c6c2 {type PPPATCPINFO_6cf8d1616e29 as PPPATCPINFO}
+
+pub using @e851e8d87ce9c6c2 {type PPPCCPINFO_032ef1ce35ee as PPPCCPINFO}
+
+pub using @e851e8d87ce9c6c2 {type PPPINFO_be768f41036b as PPPINFO}
+
+pub using @e851e8d87ce9c6c2 {type PPPINFO2_007cdbe3cff5 as PPPINFO2}
+
+pub using @e851e8d87ce9c6c2 {type PPPINFO3_fd571acc616c as PPPINFO3}
+
+pub using @e851e8d87ce9c6c2 {type PPPIPCPINFO_90ee4c2ffe44 as PPPIPCPINFO}
+
+pub using @e851e8d87ce9c6c2 {type PPPIPCPINFO2_bc005cc761d6 as PPPIPCPINFO2}
+
+pub using @e851e8d87ce9c6c2 {type PPPIPV6CPINFO_b5258d111617 as PPPIPV6CPINFO}
+
+pub using @e851e8d87ce9c6c2 {type PPPIPXCPINFO_74c1d12bccce as PPPIPXCPINFO}
+
+pub using @e851e8d87ce9c6c2 {type PPPLCP_e9cad278161e as PPPLCP}
+
+pub using @e851e8d87ce9c6c2 {type PPPLCPINFO_097403b724aa as PPPLCPINFO}
+
+pub using @e851e8d87ce9c6c2 {type PPPLCPINFOAUTHDATA_1c7162708e56 as PPPLCPINFOAUTHDATA}
+
+pub using @e851e8d87ce9c6c2 {type PPPNBFCPINFO_a854ef939fa9 as PPPNBFCPINFO}
+
+pub using @e851e8d87ce9c6c2 {type PPPPROJECTIONINFO_d99133475394 as PPPPROJECTIONINFO}
+
+pub using @e851e8d87ce9c6c2 {type PPPPROJECTIONINFO2_ad4f610807c9 as PPPPROJECTIONINFO2}
+
+pub using @e851e8d87ce9c6c2 {type PPTPCONFIGPARAMS_34e684e76f29 as PPTPCONFIGPARAMS}
+
+pub using @e851e8d87ce9c6c2 {type PROJECTIONINFO_bb7eee49b9c9 as PROJECTIONINFO}
+
+pub using @e851e8d87ce9c6c2 {type PROJECTIONINFO2_45a9290e1763 as PROJECTIONINFO2}
+
+pub using @e851e8d87ce9c6c2 {type RASADFUNCA_5633738b8cea as RASADFUNCA}
+
+pub using @e851e8d87ce9c6c2 {type RASADFUNCW_c3abd8424ef8 as RASADFUNCW}
+
+pub using @e851e8d87ce9c6c2 {type RASADPARAMS_5f2681d370eb as RASADPARAMS}
+
+pub using @e851e8d87ce9c6c2 {type RASAMBA_72135ab8bc40 as RASAMBA}
+
+pub using @e851e8d87ce9c6c2 {type RASAMBW_a2a72854e305 as RASAMBW}
+
+pub using @e851e8d87ce9c6c2 {type RASAPIVERSION_f62c9381190e as RASAPIVERSION}
+
+pub using @e851e8d87ce9c6c2 {type RASAUTODIALENTRYA_4ccaca9ba095 as RASAUTODIALENTRYA}
+
+pub using @e851e8d87ce9c6c2 {type RASAUTODIALENTRYW_27fa58eed2e7 as RASAUTODIALENTRYW}
+
+pub using @e851e8d87ce9c6c2 {type RASCOMMSETTINGS_e48932ad5d4c as RASCOMMSETTINGS}
+
+pub using @e851e8d87ce9c6c2 {type RASCONNA_d4d92972d6be as RASCONNA}
+
+pub using @e851e8d87ce9c6c2 {type RASCONNECTION0_675e9911d018 as RASCONNECTION0}
+
+pub using @e851e8d87ce9c6c2 {type RASCONNECTION1_0118c252d054 as RASCONNECTION1}
+
+pub using @e851e8d87ce9c6c2 {type RASCONNECTION2_90045e9d5786 as RASCONNECTION2}
+
+pub using @e851e8d87ce9c6c2 {type RASCONNECTION3_6a55d5688289 as RASCONNECTION3}
+
+pub using @e851e8d87ce9c6c2 {type RASCONNECTION4_c0d9862ca350 as RASCONNECTION4}
+
+pub using @e851e8d87ce9c6c2 {type RASCONNECTIONEX_675c1d1f763d as RASCONNECTIONEX}
+
+pub using @e851e8d87ce9c6c2 {type RASCONNSTATE_1ba27b995c38 as RASCONNSTATE}
+
+pub using @e851e8d87ce9c6c2 {type RASCONNSTATUSA_707b93394683 as RASCONNSTATUSA}
+
+pub using @e851e8d87ce9c6c2 {type RASCONNSTATUSW_976c0af783f6 as RASCONNSTATUSW}
+
+pub using @e851e8d87ce9c6c2 {type RASCONNSUBSTATE_d4507a3de56c as RASCONNSUBSTATE}
+
+pub using @e851e8d87ce9c6c2 {type RASCONNW_a6f8c7509c95 as RASCONNW}
+
+pub using @e851e8d87ce9c6c2 {type RASCREDENTIALSA_2a481b5dddd2 as RASCREDENTIALSA}
+
+pub using @e851e8d87ce9c6c2 {type RASCREDENTIALSW_77cb27e9d9e4 as RASCREDENTIALSW}
+
+pub using @e851e8d87ce9c6c2 {type RASCTRYINFO_afccf7947d34 as RASCTRYINFO}
+
+pub using @e851e8d87ce9c6c2 {type RASCUSTOMSCRIPTEXTENSIONS_726f7fb63e30 as RASCUSTOMSCRIPTEXTENSIONS}
+
+pub using @e851e8d87ce9c6c2 {type RASDEVINFOA_a941f3f58397 as RASDEVINFOA}
+
+pub using @e851e8d87ce9c6c2 {type RASDEVINFOW_38a87ef87ec6 as RASDEVINFOW}
+
+pub using @e851e8d87ce9c6c2 {type RASDEVSPECIFICINFO_a1ff3312dc31 as RASDEVSPECIFICINFO}
+
+pub using @e851e8d87ce9c6c2 {type RASDIALDLG_9a3d4e107218 as RASDIALDLG}
+
+pub using @e851e8d87ce9c6c2 {type RASDIALEXTENSIONS_61f55e1fb401 as RASDIALEXTENSIONS}
+
+pub using @e851e8d87ce9c6c2 {type RASDIALFUNC_349888515ae4 as RASDIALFUNC}
+
+pub using @e851e8d87ce9c6c2 {type RASDIALFUNC1_f69fa9c2952f as RASDIALFUNC1}
+
+pub using @e851e8d87ce9c6c2 {type RASDIALFUNC2_22f7096eb3f3 as RASDIALFUNC2}
+
+pub using @e851e8d87ce9c6c2 {type RASDIALPARAMSA_834d0483bc45 as RASDIALPARAMSA}
+
+pub using @e851e8d87ce9c6c2 {type RASDIALPARAMSW_7506ea46d2ab as RASDIALPARAMSW}
+
+pub using @e851e8d87ce9c6c2 {type RASEAPINFO_0bafd3fbed9d as RASEAPINFO}
+
+pub using @e851e8d87ce9c6c2 {type RASEAPUSERIDENTITYA_e1a8f74328f4 as RASEAPUSERIDENTITYA}
+
+pub using @e851e8d87ce9c6c2 {type RASEAPUSERIDENTITYW_e526ae1eb632 as RASEAPUSERIDENTITYW}
+
+pub using @e851e8d87ce9c6c2 {type RASENTRYA_1388ef108dcb as RASENTRYA}
+
+pub using @e851e8d87ce9c6c2 {type RASENTRYDIALMODE_4890d5adcf48 as RASENTRYDIALMODE}
+
+pub using @e851e8d87ce9c6c2 {type RASENTRYDLGA_5353914355dd as RASENTRYDLGA}
+
+pub using @e851e8d87ce9c6c2 {type RASENTRYDLGW_e5f76166d830 as RASENTRYDLGW}
+
+pub using @e851e8d87ce9c6c2 {type RASENTRYNAMEA_d90e46349386 as RASENTRYNAMEA}
+
+pub using @e851e8d87ce9c6c2 {type RASENTRYNAMEW_481196f87368 as RASENTRYNAMEW}
+
+pub using @e851e8d87ce9c6c2 {type RASENTRYW_fc60c6db6822 as RASENTRYW}
+
+pub using @e851e8d87ce9c6c2 {type RASFLAGS_75656c6b9b2a as RASFLAGS}
+
+pub using @e851e8d87ce9c6c2 {type RASHARDWARECONDITION_07a6f3e9880b as RASHARDWARECONDITION}
+
+pub using @e851e8d87ce9c6c2 {type RASIKEV2PROJECTIONINFO_cce87421620d as RASIKEV2PROJECTIONINFO}
+
+pub using @e851e8d87ce9c6c2 {type RASIKEVPROJECTIONINFOFLAGS_085f5d38c57d as RASIKEVPROJECTIONINFOFLAGS}
+
+pub using @e851e8d87ce9c6c2 {type RASIPADDR_29f447feaa1e as RASIPADDR}
+
+pub using @e851e8d87ce9c6c2 {type RASIPXW_23719e331aed as RASIPXW}
+
+pub using @e851e8d87ce9c6c2 {type RASNOUSERA_f9e696d224b3 as RASNOUSERA}
+
+pub using @e851e8d87ce9c6c2 {type RASNOUSERW_1a6bd96c6133 as RASNOUSERW}
+
+pub using @e851e8d87ce9c6c2 {type RASPBDLGA_ac994c8abde2 as RASPBDLGA}
+
+pub using @e851e8d87ce9c6c2 {type RASPBDLGFUNCA_705790fa6ea6 as RASPBDLGFUNCA}
+
+pub using @e851e8d87ce9c6c2 {type RASPBDLGFUNCW_3dc1376741f1 as RASPBDLGFUNCW}
+
+pub using @e851e8d87ce9c6c2 {type RASPBDLGW_ac467cf809f7 as RASPBDLGW}
+
+pub using @e851e8d87ce9c6c2 {type RASPORT0_e6d84702807c as RASPORT0}
+
+pub using @e851e8d87ce9c6c2 {type RASPORT1_4971bdd9994d as RASPORT1}
+
+pub using @e851e8d87ce9c6c2 {type RASPORT2_6ba590758108 as RASPORT2}
+
+pub using @e851e8d87ce9c6c2 {type RASPORTCONDITION_d2436600d630 as RASPORTCONDITION}
+
+pub using @e851e8d87ce9c6c2 {type RASPPPCCP_b89d3245a510 as RASPPPCCP}
+
+pub using @e851e8d87ce9c6c2 {type RASPPPIPA_a32566daa62a as RASPPPIPA}
+
+pub using @e851e8d87ce9c6c2 {type RASPPPIPV6_ccb397ae0e55 as RASPPPIPV6}
+
+pub using @e851e8d87ce9c6c2 {type RASPPPIPW_96680ccda531 as RASPPPIPW}
+
+pub using @e851e8d87ce9c6c2 {type RASPPPIPXA_af16290c2887 as RASPPPIPXA}
+
+pub using @e851e8d87ce9c6c2 {type RASPPPLCPA_b2145deb3420 as RASPPPLCPA}
+
+pub using @e851e8d87ce9c6c2 {type RASPPPLCPW_01f0783587a4 as RASPPPLCPW}
+
+pub using @e851e8d87ce9c6c2 {type RASPPPNBFA_7b2467e5de56 as RASPPPNBFA}
+
+pub using @e851e8d87ce9c6c2 {type RASPPPNBFW_0d72948ebc10 as RASPPPNBFW}
+
+pub using @e851e8d87ce9c6c2 {type RASPPPPROJECTIONINFO_4c180d2eb88b as RASPPPPROJECTIONINFO}
+
+pub using @e851e8d87ce9c6c2 {type RASPPPPROJECTIONINFOSERVERAUTHDATA_e10fd71bfe9a as RASPPPPROJECTIONINFOSERVERAUTHDATA}
+
+pub using @e851e8d87ce9c6c2 {type RASPPPPROJECTIONINFOSERVERAUTHPROTOCOL_7d27e0c978fc as RASPPPPROJECTIONINFOSERVERAUTHPROTOCOL}
+
+pub using @e851e8d87ce9c6c2 {type RASPROJECTION_5c7f4141af95 as RASPROJECTION}
+
+pub using @e851e8d87ce9c6c2 {type RASPROJECTIONINFO_021279e34298 as RASPROJECTIONINFO}
+
+pub using @e851e8d87ce9c6c2 {type RASPROJECTIONINFOTYPE_5c4b16442b9d as RASPROJECTIONINFOTYPE}
+
+pub using @e851e8d87ce9c6c2 {type RASQUARANTINESTATE_d532159add42 as RASQUARANTINESTATE}
+
+pub using @e851e8d87ce9c6c2 {type RASSECURITYINFO_68dfd7d8dd41 as RASSECURITYINFO}
+
+pub using @e851e8d87ce9c6c2 {type RASSECURITYPROC_9f777f6d31ab as RASSECURITYPROC}
+
+pub using @e851e8d87ce9c6c2 {type RASSTATS_bc30ff180003 as RASSTATS}
+
+pub using @e851e8d87ce9c6c2 {type RASSUBENTRYA_8f22dc25e9c8 as RASSUBENTRYA}
+
+pub using @e851e8d87ce9c6c2 {type RASSUBENTRYW_47d4ee529017 as RASSUBENTRYW}
+
+pub using @e851e8d87ce9c6c2 {type RASTUNNELENDPOINT_4567f88fc45e as RASTUNNELENDPOINT}
+
+pub using @e851e8d87ce9c6c2 {type RASUPDATECONN_8e3b03b5e139 as RASUPDATECONN}
+
+pub using @e851e8d87ce9c6c2 {type RASUPDATECONNECTION_dbf6570efa4b as RASUPDATECONNECTION}
+
+pub using @e851e8d87ce9c6c2 {type RASUSER0_dbc94632d6a7 as RASUSER0}
+
+pub using @e851e8d87ce9c6c2 {type RASUSER1_52d03f9376c9 as RASUSER1}
+
+pub using @e851e8d87ce9c6c2 {type ROUTERCONNECTIONSTATE_012364adce25 as ROUTERCONNECTIONSTATE}
+
+pub using @e851e8d87ce9c6c2 {type ROUTERCUSTOMIKEv2POLICY0_fd6f38d0bb42 as ROUTERCUSTOMIKEv2POLICY0}
+
+pub using @e851e8d87ce9c6c2 {type ROUTERIKEv2IFCUSTOMCONFIG0_22229b0d40b1 as ROUTERIKEv2IFCUSTOMCONFIG0}
+
+pub using @e851e8d87ce9c6c2 {type ROUTERIKEv2IFCUSTOMCONFIG1_94a06480f449 as ROUTERIKEv2IFCUSTOMCONFIG1}
+
+pub using @e851e8d87ce9c6c2 {type ROUTERIKEv2IFCUSTOMCONFIG2_62a239a2af51 as ROUTERIKEv2IFCUSTOMCONFIG2}
+
+pub using @e851e8d87ce9c6c2 {type ROUTERINTERFACETYPE_cc383f37c805 as ROUTERINTERFACETYPE}
+
+pub using @e851e8d87ce9c6c2 {type ROUTINGPROTOCOLCONFIG_e61bda89ed1c as ROUTINGPROTOCOLCONFIG}
+
+pub using @e851e8d87ce9c6c2 {type RTMDESTINFO_9a1f677ea0df as RTMDESTINFO}
+
+pub using @e851e8d87ce9c6c2 {type RTMENTITYEXPORTMETHOD_55402a89d89e as RTMENTITYEXPORTMETHOD}
+
+pub using @e851e8d87ce9c6c2 {type RTMENTITYEXPORTMETHODS_b5032a10cf43 as RTMENTITYEXPORTMETHODS}
+
+pub using @e851e8d87ce9c6c2 {type RTMENTITYID_868c6ca2a3d8 as RTMENTITYID}
+
+pub using @e851e8d87ce9c6c2 {type RTMENTITYINFO_af8d15377a35 as RTMENTITYINFO}
+
+pub using @e851e8d87ce9c6c2 {type RTMENTITYMETHODINPUT_4199ec67c7a2 as RTMENTITYMETHODINPUT}
+
+pub using @e851e8d87ce9c6c2 {type RTMENTITYMETHODOUTPUT_6a4b292dd154 as RTMENTITYMETHODOUTPUT}
+
+pub using @e851e8d87ce9c6c2 {type RTMEVENTCALLBACK_a9375c60c61d as RTMEVENTCALLBACK}
+
+pub using @e851e8d87ce9c6c2 {type RTMEVENTTYPE_73f01a8940cf as RTMEVENTTYPE}
+
+pub using @e851e8d87ce9c6c2 {type RTMNETADDRESS_12746355fdb0 as RTMNETADDRESS}
+
+pub using @e851e8d87ce9c6c2 {type RTMNEXTHOPINFO_bd8ce6af09f3 as RTMNEXTHOPINFO}
+
+pub using @e851e8d87ce9c6c2 {type RTMNEXTHOPLIST_e3d75b0d77f4 as RTMNEXTHOPLIST}
+
+pub using @e851e8d87ce9c6c2 {type RTMPREFINFO_d46475d4ce32 as RTMPREFINFO}
+
+pub using @e851e8d87ce9c6c2 {type RTMREGNPROFILE_d43d4fa901d7 as RTMREGNPROFILE}
+
+pub using @e851e8d87ce9c6c2 {type RTMROUTEINFO_932036caa97a as RTMROUTEINFO}
+
+pub using @e851e8d87ce9c6c2 {type RasCustomDeleteEntryNotifyFn_12e8dc4b4f8d as RasCustomDeleteEntryNotifyFn}
+
+pub using @e851e8d87ce9c6c2 {type RasCustomDialDlgFn_033905baa59a as RasCustomDialDlgFn}
+
+pub using @e851e8d87ce9c6c2 {type RasCustomDialFn_b36c64d1bdfb as RasCustomDialFn}
+
+pub using @e851e8d87ce9c6c2 {type RasCustomEntryDlgFn_f7a9d1802a62 as RasCustomEntryDlgFn}
+
+pub using @e851e8d87ce9c6c2 {type RasCustomHangUpFn_4f90500457df as RasCustomHangUpFn}
+
+pub using @e851e8d87ce9c6c2 {type RasCustomScriptExecuteFn_c3d89c285417 as RasCustomScriptExecuteFn}
+
+pub using @e851e8d87ce9c6c2 {type SECURITYMESSAGE_4c0ad1121b79 as SECURITYMESSAGE}
+
+pub using @e851e8d87ce9c6c2 {type SECURITYMESSAGEMSGID_f490785f1e47 as SECURITYMESSAGEMSGID}
+
+pub using @e851e8d87ce9c6c2 {type SOURCEGROUPENTRY_98b84c5b2ab1 as SOURCEGROUPENTRY}
+
+pub using @e851e8d87ce9c6c2 {type SSTPCERTINFO_d8be88013f6f as SSTPCERTINFO}
+
+pub using @e851e8d87ce9c6c2 {type SSTPCONFIGPARAMS_eb3786a1acaa as SSTPCONFIGPARAMS}
+
+pub using @e851e8d87ce9c6c2 {type VPNTSIPADDRESS_76d745d010bb as VPNTSIPADDRESS}
+
+// Traits
+

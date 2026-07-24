@@ -1,0 +1,322 @@
+// Generated using `moon info`, DON'T EDIT IT
+package "moonbit-community/win32-bindings/scc/23fc2c3574223612"
+
+import {
+  "moonbit-community/win32-bindings/runtime/core",
+  "moonbitlang/core/debug",
+}
+
+// Values
+pub fn call_enclave_1e195d8939e6_raw(Int64, @core.RawAddress, Int, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn create_enclave_77a19e5a5d5c_raw(@core.RawAddress, @core.RawAddress, UInt64, UInt64, UInt, @core.RawAddress, UInt, @core.RawAddress) -> @core.RawWin32Call[@core.RawAddress]
+
+pub fn create_environment_block_044c0395ac2a_raw(@core.RawAddress, @core.RawAddress, Int) -> @core.RawWin32Call[Int]
+
+pub fn delete_enclave_5fb8905fa560_raw(@core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn destroy_environment_block_17209ff63b72_raw(@core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn enclave_copy_into_enclave_8e7707fb9b66(@core.RawAddress, @core.RawAddress, UInt64) -> Unit raise @core.WindowsError
+
+pub fn enclave_copy_into_enclave_8e7707fb9b66_raw(@core.RawAddress, @core.RawAddress, UInt64) -> Int
+
+pub fn enclave_copy_out_of_enclave_b08077097671(@core.RawAddress, @core.RawAddress, UInt64) -> Unit raise @core.WindowsError
+
+pub fn enclave_copy_out_of_enclave_b08077097671_raw(@core.RawAddress, @core.RawAddress, UInt64) -> Int
+
+pub fn enclave_encrypt_data_for_trustlet_7db82d327fc4(@core.RawAddress, UInt, @core.RawAddress, @core.RawAddress, UInt, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn enclave_encrypt_data_for_trustlet_7db82d327fc4_raw(@core.RawAddress, UInt, @core.RawAddress, @core.RawAddress, UInt, @core.RawAddress) -> Int
+
+pub let enclave_flag_dynamic_debug_active_8460fcc020b5 : UInt
+
+pub let enclave_flag_dynamic_debug_enabled_7a170e852362 : UInt
+
+pub let enclave_flag_full_debug_enabled_1765db73db3e : UInt
+
+pub fn enclave_get_attestation_report_14209457221f(@core.RawAddress, @core.RawAddress, UInt, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn enclave_get_attestation_report_14209457221f_raw(@core.RawAddress, @core.RawAddress, UInt, @core.RawAddress) -> Int
+
+pub fn enclave_get_enclave_information_d164f02f05ee(UInt, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn enclave_get_enclave_information_d164f02f05ee_raw(UInt, @core.RawAddress) -> Int
+
+pub let enclave_identity_policy_seal_exact_code_4440ad160762 : Int
+
+pub let enclave_identity_policy_seal_invalid_023a2a5eb62e : Int
+
+pub let enclave_identity_policy_seal_same_author_a12fecbf4c51 : Int
+
+pub let enclave_identity_policy_seal_same_family_26af5209f6d5 : Int
+
+pub let enclave_identity_policy_seal_same_image_4870e2ac0f84 : Int
+
+pub let enclave_identity_policy_seal_same_primary_code_b9fe4aef07dc : Int
+
+pub let enclave_report_data_length_9cfcef307b9c : UInt
+
+pub fn enclave_restrict_containing_process_access_83fe08d2d50d(Int, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn enclave_restrict_containing_process_access_83fe08d2d50d_raw(Int, @core.RawAddress) -> Int
+
+pub let enclave_runtime_policy_allow_dynamic_debug_cf2a2ebbb58c : UInt
+
+pub let enclave_runtime_policy_allow_full_debug_d8ddaca34e71 : UInt
+
+pub fn enclave_seal_data_7785342a2dc8(@core.RawAddress, UInt, Int, UInt, @core.RawAddress, UInt, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn enclave_seal_data_7785342a2dc8_raw(@core.RawAddress, UInt, Int, UInt, @core.RawAddress, UInt, @core.RawAddress) -> Int
+
+pub fn enclave_unseal_data_bce025de06f8(@core.RawAddress, UInt, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn enclave_unseal_data_bce025de06f8_raw(@core.RawAddress, UInt, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub let enclave_unseal_flag_stale_key_4c87f1d4de05 : UInt
+
+pub fn enclave_uses_attested_keys_40b0a80a50f6_raw() -> UInt
+
+pub let enclave_vbs_basic_key_flag_debug_key_9721e0d9bcb7 : UInt
+
+pub let enclave_vbs_basic_key_flag_family_id_3e2679c318fd : UInt
+
+pub let enclave_vbs_basic_key_flag_image_id_7a00e24f3c9e : UInt
+
+pub let enclave_vbs_basic_key_flag_measurement_458779cb918e : UInt
+
+pub fn enclave_verify_attestation_report_2ba6887b7469(UInt, @core.RawAddress, UInt) -> Unit raise @core.WindowsError
+
+pub fn enclave_verify_attestation_report_2ba6887b7469_raw(UInt, @core.RawAddress, UInt) -> Int
+
+pub let enclaveidentity_23b30ad5815d_alignment : Int
+
+pub let enclaveidentity_23b30ad5815d_size : Int
+
+pub let enclaveinformation_90fa59a6d89f_alignment : Int
+
+pub let enclaveinformation_90fa59a6d89f_size : Int
+
+pub let enclavevbsbasickeyrequest_0f4805206127_alignment : Int
+
+pub let enclavevbsbasickeyrequest_0f4805206127_size : Int
+
+pub fn expand_environment_strings_a_9fff43d0abec_raw(@core.RawAddress, @core.RawAddress, UInt) -> @core.RawWin32Call[UInt]
+
+pub fn expand_environment_strings_for_user_a_dfbd1b747e23_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, UInt) -> @core.RawWin32Call[Int]
+
+pub fn expand_environment_strings_for_user_w_a3f546c9e937_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, UInt) -> @core.RawWin32Call[Int]
+
+pub fn expand_environment_strings_w_ef5858c7546a_raw(@core.RawAddress, @core.RawAddress, UInt) -> @core.RawWin32Call[UInt]
+
+pub fn free_environment_strings_a_1160e2350eaa_raw(@core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn free_environment_strings_w_3ac948026471_raw(@core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn get_command_line_a_16a67d7286a3_raw() -> @core.RawAddress
+
+pub fn get_command_line_w_8fd9c75b8788_raw() -> @core.RawAddress
+
+pub fn get_current_directory_a_cb95d37a71a9_raw(UInt, @core.RawAddress) -> UInt
+
+pub fn get_current_directory_w_7a6673c64b23_raw(UInt, @core.RawAddress) -> UInt
+
+pub fn get_environment_strings_7d0bf1f4a0ff_raw() -> @core.RawAddress
+
+pub fn get_environment_strings_w_0bc85f36f0d4_raw() -> @core.RawAddress
+
+pub fn get_environment_variable_a_193df4b8d552_raw(@core.RawAddress, @core.RawAddress, UInt) -> @core.RawWin32Call[UInt]
+
+pub fn get_environment_variable_w_eff8da03498e_raw(@core.RawAddress, @core.RawAddress, UInt) -> @core.RawWin32Call[UInt]
+
+pub fn initialize_enclave_52cfa6c8bbf3_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, UInt, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn is_enclave_type_supported_ea25f879c537_raw(UInt) -> @core.RawWin32Call[Int]
+
+pub fn load_enclave_data_4217532c3d3f_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, UInt64, UInt, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn load_enclave_image_a_3424548e179a_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn load_enclave_image_w_9dd2849cbab5_raw(@core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn need_current_directory_for_exe_path_a_08733ff9a181_raw(@core.RawAddress) -> Int
+
+pub fn need_current_directory_for_exe_path_w_ae9be8d94e88_raw(@core.RawAddress) -> Int
+
+pub let pstrustlettksessionid_6ff0e076f994_alignment : Int
+
+pub let pstrustlettksessionid_6ff0e076f994_size : Int
+
+pub fn set_current_directory_a_c03472d1b16f_raw(@core.RawAddress) -> Int
+
+pub fn set_current_directory_w_ff3037110fd8_raw(@core.RawAddress) -> Int
+
+pub fn set_environment_strings_w_830a28e8d9ce_raw(@core.RawAddress) -> Int
+
+pub fn set_environment_variable_a_c0aae8472d83_raw(@core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn set_environment_variable_w_fd86c7fb5b31_raw(@core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn terminate_enclave_a86882850acc_raw(@core.RawAddress, Int) -> @core.RawWin32Call[Int]
+
+pub let trustletbindingdata_bc97f6cfef68_alignment : Int
+
+pub let trustletbindingdata_bc97f6cfef68_size : Int
+
+pub let vbs_enclave_report_pkg_header_version_current_e27ff6f995c8 : UInt
+
+pub let vbs_enclave_report_signature_scheme_sha256_rsa_pss_sha256_154cbe13584a : UInt
+
+pub let vbs_enclave_report_version_current_2d78454801bd : UInt
+
+pub let vbs_enclave_vardata_invalid_6320f131be37 : UInt
+
+pub let vbs_enclave_vardata_module_46c0f19ae10b : UInt
+
+pub let vbsbasicenclaveexceptionamd64_ef350dcf00f9_alignment : Int
+
+pub let vbsbasicenclaveexceptionamd64_ef350dcf00f9_size : Int
+
+pub let vbsbasicenclavesyscallpage_ca7c6108ef99_alignment : Int
+
+pub let vbsbasicenclavesyscallpage_ca7c6108ef99_size : Int
+
+pub let vbsbasicenclavethreaddescriptor32_925d0548cdd2_alignment : Int
+
+pub let vbsbasicenclavethreaddescriptor32_925d0548cdd2_size : Int
+
+pub let vbsbasicenclavethreaddescriptor64_f193a06a5d89_alignment : Int
+
+pub let vbsbasicenclavethreaddescriptor64_f193a06a5d89_size : Int
+
+pub let vbsenclavereport_e5f3cacc6460_alignment : Int
+
+pub let vbsenclavereport_e5f3cacc6460_size : Int
+
+pub let vbsenclavereportmodule_339b7227a7f4_alignment : Int
+
+pub let vbsenclavereportmodule_339b7227a7f4_size : Int
+
+pub let vbsenclavereportpkgheader_e6565cda8961_alignment : Int
+
+pub let vbsenclavereportpkgheader_e6565cda8961_size : Int
+
+pub let vbsenclavereportvardataheader_8e5b340aa54d_alignment : Int
+
+pub let vbsenclavereportvardataheader_8e5b340aa54d_size : Int
+
+// Errors
+
+// Types and methods
+pub(all) struct ENCLAVEIDENTITY_23b30ad5815d {
+  raw_bytes : Bytes
+} derive(Eq, @debug.Debug)
+pub fn ENCLAVEIDENTITY_23b30ad5815d::bytes(Self) -> Bytes
+pub fn ENCLAVEIDENTITY_23b30ad5815d::from_bytes(Bytes) -> Self raise @core.WindowsError
+
+pub(all) struct ENCLAVEINFORMATION_90fa59a6d89f {
+  raw_bytes : Bytes
+} derive(Eq, @debug.Debug)
+pub fn ENCLAVEINFORMATION_90fa59a6d89f::bytes(Self) -> Bytes
+pub fn ENCLAVEINFORMATION_90fa59a6d89f::from_bytes(Bytes) -> Self raise @core.WindowsError
+
+pub(all) struct ENCLAVESEALINGIDENTITYPOLICY_a14e50723753(Int) derive(Compare, Eq, @debug.Debug)
+pub fn ENCLAVESEALINGIDENTITYPOLICY_a14e50723753::from_int(Int) -> Self
+pub fn ENCLAVESEALINGIDENTITYPOLICY_a14e50723753::to_int(Self) -> Int
+
+pub(all) struct ENCLAVEVBSBASICKEYREQUEST_0f4805206127 {
+  raw_bytes : Bytes
+} derive(Eq, @debug.Debug)
+pub fn ENCLAVEVBSBASICKEYREQUEST_0f4805206127::bytes(Self) -> Bytes
+pub fn ENCLAVEVBSBASICKEYREQUEST_0f4805206127::from_bytes(Bytes) -> Self raise @core.WindowsError
+
+pub(all) struct PSTRUSTLETTKSESSIONID_6ff0e076f994 {
+  raw_bytes : Bytes
+} derive(Eq, @debug.Debug)
+pub fn PSTRUSTLETTKSESSIONID_6ff0e076f994::bytes(Self) -> Bytes
+pub fn PSTRUSTLETTKSESSIONID_6ff0e076f994::from_bytes(Bytes) -> Self raise @core.WindowsError
+
+pub(all) struct TRUSTLETBINDINGDATA_bc97f6cfef68 {
+  raw_bytes : Bytes
+} derive(Eq, @debug.Debug)
+pub fn TRUSTLETBINDINGDATA_bc97f6cfef68::bytes(Self) -> Bytes
+pub fn TRUSTLETBINDINGDATA_bc97f6cfef68::from_bytes(Bytes) -> Self raise @core.WindowsError
+
+pub type VBSBASICENCLAVEBASICCALLCOMMITPAGES_2f0f645a7bf2
+
+pub type VBSBASICENCLAVEBASICCALLCREATETHREAD_863eb189f7cc
+
+pub type VBSBASICENCLAVEBASICCALLDECOMMITPAGES_2502fe3f7ef7
+
+pub type VBSBASICENCLAVEBASICCALLGENERATEKEY_13e3cae5d6f9
+
+pub type VBSBASICENCLAVEBASICCALLGENERATERANDOMDATA_0e09cb1e1b46
+
+pub type VBSBASICENCLAVEBASICCALLGENERATEREPORT_a124096a04ed
+
+pub type VBSBASICENCLAVEBASICCALLGETENCLAVEINFORMATION_cd623d2071a9
+
+pub type VBSBASICENCLAVEBASICCALLINTERRUPTTHREAD_7b83f6e2113f
+
+pub type VBSBASICENCLAVEBASICCALLPROTECTPAGES_fdd2ee1458a7
+
+pub type VBSBASICENCLAVEBASICCALLRETURNFROMENCLAVE_6e4082d7f3ca
+
+pub type VBSBASICENCLAVEBASICCALLRETURNFROMEXCEPTION_46bbab2c0e29
+
+pub type VBSBASICENCLAVEBASICCALLTERMINATETHREAD_e886386066cb
+
+pub type VBSBASICENCLAVEBASICCALLVERIFYREPORT_4050f2029381
+
+pub(all) struct VBSBASICENCLAVEEXCEPTIONAMD64_ef350dcf00f9 {
+  raw_bytes : Bytes
+} derive(Eq, @debug.Debug)
+pub fn VBSBASICENCLAVEEXCEPTIONAMD64_ef350dcf00f9::bytes(Self) -> Bytes
+pub fn VBSBASICENCLAVEEXCEPTIONAMD64_ef350dcf00f9::from_bytes(Bytes) -> Self raise @core.WindowsError
+
+pub(all) struct VBSBASICENCLAVESYSCALLPAGE_ca7c6108ef99 {
+  raw_bytes : Bytes
+} derive(Eq, @debug.Debug)
+pub fn VBSBASICENCLAVESYSCALLPAGE_ca7c6108ef99::bytes(Self) -> Bytes
+pub fn VBSBASICENCLAVESYSCALLPAGE_ca7c6108ef99::from_bytes(Bytes) -> Self raise @core.WindowsError
+
+pub(all) struct VBSBASICENCLAVETHREADDESCRIPTOR32_925d0548cdd2 {
+  raw_bytes : Bytes
+} derive(Eq, @debug.Debug)
+pub fn VBSBASICENCLAVETHREADDESCRIPTOR32_925d0548cdd2::bytes(Self) -> Bytes
+pub fn VBSBASICENCLAVETHREADDESCRIPTOR32_925d0548cdd2::from_bytes(Bytes) -> Self raise @core.WindowsError
+
+pub(all) struct VBSBASICENCLAVETHREADDESCRIPTOR64_f193a06a5d89 {
+  raw_bytes : Bytes
+} derive(Eq, @debug.Debug)
+pub fn VBSBASICENCLAVETHREADDESCRIPTOR64_f193a06a5d89::bytes(Self) -> Bytes
+pub fn VBSBASICENCLAVETHREADDESCRIPTOR64_f193a06a5d89::from_bytes(Bytes) -> Self raise @core.WindowsError
+
+pub(all) struct VBSENCLAVEREPORTMODULE_339b7227a7f4 {
+  raw_bytes : Bytes
+} derive(Eq, @debug.Debug)
+pub fn VBSENCLAVEREPORTMODULE_339b7227a7f4::bytes(Self) -> Bytes
+pub fn VBSENCLAVEREPORTMODULE_339b7227a7f4::from_bytes(Bytes) -> Self raise @core.WindowsError
+
+pub(all) struct VBSENCLAVEREPORTPKGHEADER_e6565cda8961 {
+  raw_bytes : Bytes
+} derive(Eq, @debug.Debug)
+pub fn VBSENCLAVEREPORTPKGHEADER_e6565cda8961::bytes(Self) -> Bytes
+pub fn VBSENCLAVEREPORTPKGHEADER_e6565cda8961::from_bytes(Bytes) -> Self raise @core.WindowsError
+
+pub(all) struct VBSENCLAVEREPORTVARDATAHEADER_8e5b340aa54d {
+  raw_bytes : Bytes
+} derive(Eq, @debug.Debug)
+pub fn VBSENCLAVEREPORTVARDATAHEADER_8e5b340aa54d::bytes(Self) -> Bytes
+pub fn VBSENCLAVEREPORTVARDATAHEADER_8e5b340aa54d::from_bytes(Bytes) -> Self raise @core.WindowsError
+
+pub(all) struct VBSENCLAVEREPORT_e5f3cacc6460 {
+  raw_bytes : Bytes
+} derive(Eq, @debug.Debug)
+pub fn VBSENCLAVEREPORT_e5f3cacc6460::bytes(Self) -> Bytes
+pub fn VBSENCLAVEREPORT_e5f3cacc6460::from_bytes(Bytes) -> Self raise @core.WindowsError
+
+// Type aliases
+
+// Traits
+

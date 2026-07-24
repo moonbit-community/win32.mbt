@@ -1,0 +1,660 @@
+// Generated using `moon info`, DON'T EDIT IT
+package "moonbit-community/win32-bindings/windows/win32/system/console"
+
+import {
+  "moonbit-community/win32-bindings/runtime/core",
+  "moonbit-community/win32-bindings/scc/14d861a53eb3a4c7",
+}
+
+// Values
+pub fn add_console_alias_a_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn add_console_alias_w_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub let alloc_console_mode_default : Int
+
+pub let alloc_console_mode_new_window : Int
+
+pub let alloc_console_mode_no_window : Int
+
+pub fn alloc_console_raw() -> @core.RawWin32Call[Int]
+
+pub let alloc_console_result_existing_console : Int
+
+pub let alloc_console_result_new_console : Int
+
+pub let alloc_console_result_no_console : Int
+
+pub fn alloc_console_with_options(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn alloc_console_with_options_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub let altnumpad_bit : UInt
+
+pub fn attach_console_raw(UInt) -> @core.RawWin32Call[Int]
+
+pub let attach_parent_process : UInt
+
+pub let background_blue : UInt
+
+pub let background_green : UInt
+
+pub let background_intensity : UInt
+
+pub let background_red : UInt
+
+pub let capslock_on : UInt
+
+pub let char_type_leading : UInt
+
+pub let char_type_sbcs : UInt
+
+pub let char_type_trailing : UInt
+
+pub fn close_console_handle_raw(@core.RawAddress) -> Int
+
+pub fn close_pseudo_console_raw(Int64) -> Unit
+
+pub let common_lvb_grid_horizontal : UInt
+
+pub let common_lvb_grid_lvertical : UInt
+
+pub let common_lvb_grid_rvertical : UInt
+
+pub let common_lvb_leading_byte : UInt
+
+pub let common_lvb_reverse_video : UInt
+
+pub let common_lvb_sbcsdbcs : UInt
+
+pub let common_lvb_trailing_byte : UInt
+
+pub let common_lvb_underscore : UInt
+
+pub let console_altenter : UInt
+
+pub let console_altesc : UInt
+
+pub let console_altprtsc : UInt
+
+pub let console_altspace : UInt
+
+pub let console_alttab : UInt
+
+pub fn console_control_raw(Int, @core.RawAddress, UInt) -> Int
+
+pub let console_ctrlesc : UInt
+
+pub let console_end_task : Int
+
+pub let console_fullscreen : UInt
+
+pub let console_fullscreen_hardware : UInt
+
+pub let console_fullscreen_mode : UInt
+
+pub let console_generic : String
+
+pub let console_handle_neverset : UInt
+
+pub let console_handle_signature : UInt
+
+pub let console_input_string : String
+
+pub fn console_menu_control_raw(@core.RawAddress, UInt, UInt) -> @core.RawAddress
+
+pub let console_modifier_alt : UInt
+
+pub let console_modifier_control : UInt
+
+pub let console_modifier_shift : UInt
+
+pub let console_mouse_down : UInt
+
+pub let console_mouse_selection : UInt
+
+pub let console_no_selection : UInt
+
+pub let console_noshortcutkey : UInt
+
+pub let console_notify_console_application : Int
+
+pub let console_output_string : String
+
+pub let console_prtsc : UInt
+
+pub let console_register_vdm : UInt
+
+pub let console_register_wow : UInt
+
+pub let console_selection_in_progress : UInt
+
+pub let console_selection_inverted : UInt
+
+pub let console_selection_not_empty : UInt
+
+pub let console_set_caret_info : Int
+
+pub let console_set_foreground : Int
+
+pub let console_set_window_owner : Int
+
+pub let console_textmode_buffer : UInt
+
+pub let console_unregister_vdm : UInt
+
+pub let console_windowed_mode : UInt
+
+pub fn create_console_screen_buffer_raw(UInt, UInt, @core.RawAddress, UInt, @core.RawAddress) -> @core.RawWin32Call[@core.RawAddress]
+
+pub fn create_pseudo_console(Bytes, @core.RawAddress, @core.RawAddress, UInt, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn create_pseudo_console_raw(Bytes, @core.RawAddress, @core.RawAddress, UInt, @core.RawAddress) -> Int
+
+pub let ctrl_break_event : UInt
+
+pub let ctrl_c_event : UInt
+
+pub let ctrl_close_event : UInt
+
+pub let ctrl_logoff_event : UInt
+
+pub let ctrl_shutdown_event : UInt
+
+pub let disable_newline_auto_return : UInt
+
+pub let double_click : UInt
+
+pub fn duplicate_console_handle_raw(@core.RawAddress, UInt, Int, UInt) -> @core.RawAddress
+
+pub let enable_auto_position : UInt
+
+pub let enable_echo_input : UInt
+
+pub let enable_extended_flags : UInt
+
+pub let enable_insert_mode : UInt
+
+pub let enable_line_input : UInt
+
+pub let enable_lvb_grid_worldwide : UInt
+
+pub let enable_mouse_input : UInt
+
+pub let enable_processed_input : UInt
+
+pub let enable_processed_output : UInt
+
+pub let enable_quick_edit_mode : UInt
+
+pub let enable_virtual_terminal_input : UInt
+
+pub let enable_virtual_terminal_processing : UInt
+
+pub let enable_window_input : UInt
+
+pub let enable_wrap_at_eol_output : UInt
+
+pub let enhanced_key : UInt
+
+pub fn expunge_console_command_history_a_raw(@core.RawAddress) -> Unit
+
+pub fn expunge_console_command_history_w_raw(@core.RawAddress) -> Unit
+
+pub fn fill_console_output_attribute_raw(@core.RawAddress, UInt, UInt, Bytes, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn fill_console_output_character_a_raw(@core.RawAddress, Int, UInt, Bytes, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn fill_console_output_character_w_raw(@core.RawAddress, UInt, UInt, Bytes, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn flush_console_input_buffer_raw(@core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub let focus_event : UInt
+
+pub let foreground_blue : UInt
+
+pub let foreground_green : UInt
+
+pub let foreground_intensity : UInt
+
+pub let foreground_red : UInt
+
+pub fn free_console_raw() -> @core.RawWin32Call[Int]
+
+pub let from_left_1_st_button_pressed : UInt
+
+pub let from_left_2_nd_button_pressed : UInt
+
+pub let from_left_3_rd_button_pressed : UInt
+
+pub let from_left_4_th_button_pressed : UInt
+
+pub fn generate_console_ctrl_event_raw(UInt, UInt) -> @core.RawWin32Call[Int]
+
+pub fn get_console_alias_a_raw(@core.RawAddress, @core.RawAddress, UInt, @core.RawAddress) -> @core.RawWin32Call[UInt]
+
+pub fn get_console_alias_exes_a_raw(@core.RawAddress, UInt) -> @core.RawWin32Call[UInt]
+
+pub fn get_console_alias_exes_length_a_raw() -> UInt
+
+pub fn get_console_alias_exes_length_w_raw() -> UInt
+
+pub fn get_console_alias_exes_w_raw(@core.RawAddress, UInt) -> @core.RawWin32Call[UInt]
+
+pub fn get_console_alias_w_raw(@core.RawAddress, @core.RawAddress, UInt, @core.RawAddress) -> @core.RawWin32Call[UInt]
+
+pub fn get_console_aliases_a_raw(@core.RawAddress, UInt, @core.RawAddress) -> @core.RawWin32Call[UInt]
+
+pub fn get_console_aliases_length_a_raw(@core.RawAddress) -> UInt
+
+pub fn get_console_aliases_length_w_raw(@core.RawAddress) -> UInt
+
+pub fn get_console_aliases_w_raw(@core.RawAddress, UInt, @core.RawAddress) -> @core.RawWin32Call[UInt]
+
+pub fn get_console_char_type_raw(@core.RawAddress, Bytes, @core.RawAddress) -> Int
+
+pub fn get_console_command_history_a_raw(@core.RawAddress, UInt, @core.RawAddress) -> UInt
+
+pub fn get_console_command_history_length_a_raw(@core.RawAddress) -> UInt
+
+pub fn get_console_command_history_length_w_raw(@core.RawAddress) -> UInt
+
+pub fn get_console_command_history_w_raw(@core.RawAddress, UInt, @core.RawAddress) -> UInt
+
+pub fn get_console_cp_raw() -> @core.RawWin32Call[UInt]
+
+pub fn get_console_cursor_info_raw(@core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn get_console_cursor_mode_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn get_console_display_mode_raw(@core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn get_console_font_info_raw(@core.RawAddress, Int, UInt, @core.RawAddress) -> UInt
+
+pub fn get_console_font_size_raw(@core.RawAddress, UInt) -> @core.RawWin32Call[Bytes]
+
+pub fn get_console_hardware_state_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn get_console_history_info_raw(@core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn get_console_input_exe_name_a_raw(UInt, @core.RawAddress) -> UInt
+
+pub fn get_console_input_exe_name_w_raw(UInt, @core.RawAddress) -> UInt
+
+pub fn get_console_input_wait_handle_raw() -> @core.RawAddress
+
+pub fn get_console_keyboard_layout_name_a_raw(@core.RawAddress) -> Int
+
+pub fn get_console_keyboard_layout_name_w_raw(@core.RawAddress) -> Int
+
+pub fn get_console_mode_raw(@core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn get_console_nls_mode_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn get_console_original_title_a_raw(@core.RawAddress, UInt) -> @core.RawWin32Call[UInt]
+
+pub fn get_console_original_title_w_raw(@core.RawAddress, UInt) -> @core.RawWin32Call[UInt]
+
+pub fn get_console_output_cp_raw() -> @core.RawWin32Call[UInt]
+
+pub fn get_console_process_list_raw(@core.RawAddress, UInt) -> @core.RawWin32Call[UInt]
+
+pub fn get_console_screen_buffer_info_ex_raw(@core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn get_console_screen_buffer_info_raw(@core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn get_console_selection_info_raw(@core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn get_console_title_a_raw(@core.RawAddress, UInt) -> @core.RawWin32Call[UInt]
+
+pub fn get_console_title_w_raw(@core.RawAddress, UInt) -> @core.RawWin32Call[UInt]
+
+pub fn get_console_window_raw() -> @core.RawAddress
+
+pub fn get_current_console_font_ex_raw(@core.RawAddress, Int, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn get_current_console_font_raw(@core.RawAddress, Int, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn get_largest_console_window_size_raw(@core.RawAddress) -> @core.RawWin32Call[Bytes]
+
+pub fn get_number_of_console_fonts_raw() -> UInt
+
+pub fn get_number_of_console_input_events_raw(@core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn get_number_of_console_mouse_buttons_raw(@core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn get_std_handle_raw(UInt) -> @core.RawWin32Call[@core.RawAddress]
+
+pub let history_no_dup_flag : UInt
+
+pub fn invalidate_console_di_bits_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub let key_event : UInt
+
+pub let left_alt_pressed : UInt
+
+pub let left_ctrl_pressed : UInt
+
+pub let menu_event : UInt
+
+pub let mouse_event : UInt
+
+pub let mouse_hwheeled : UInt
+
+pub let mouse_moved : UInt
+
+pub let mouse_wheeled : UInt
+
+pub let nls_alphanumeric : UInt
+
+pub let nls_dbcschar : UInt
+
+pub let nls_hiragana : UInt
+
+pub let nls_ime_conversion : UInt
+
+pub let nls_ime_disable : UInt
+
+pub let nls_katakana : UInt
+
+pub let nls_roman : UInt
+
+pub let numlock_on : UInt
+
+pub fn open_console_w_raw(@core.RawAddress, UInt, Int, UInt) -> @core.RawAddress
+
+pub fn peek_console_input_a_raw(@core.RawAddress, @core.RawAddress, UInt, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn peek_console_input_w_raw(@core.RawAddress, @core.RawAddress, UInt, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub let pid_console_ctrlkeysdisabled : UInt
+
+pub let pid_console_cursor_color : UInt
+
+pub let pid_console_cursor_type : UInt
+
+pub let pid_console_defaultbackground : UInt
+
+pub let pid_console_defaultforeground : UInt
+
+pub let pid_console_filteronpaste : UInt
+
+pub let pid_console_forcev2 : UInt
+
+pub let pid_console_intercept_copy_paste : UInt
+
+pub let pid_console_lineselection : UInt
+
+pub let pid_console_terminalscrolling : UInt
+
+pub let pid_console_windowmaximized : UInt
+
+pub let pid_console_windowtransparency : UInt
+
+pub let pid_console_wraptext : UInt
+
+pub let pseudoconsole_inherit_cursor : UInt
+
+pub fn read_console_a_raw(@core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn read_console_input_a_raw(@core.RawAddress, @core.RawAddress, UInt, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn read_console_input_ex_a_raw(@core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, UInt) -> Int
+
+pub fn read_console_input_ex_w_raw(@core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, UInt) -> Int
+
+pub fn read_console_input_w_raw(@core.RawAddress, @core.RawAddress, UInt, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn read_console_output_a_raw(@core.RawAddress, @core.RawAddress, Bytes, Bytes, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn read_console_output_attribute_raw(@core.RawAddress, @core.RawAddress, UInt, Bytes, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn read_console_output_character_a_raw(@core.RawAddress, @core.RawAddress, UInt, Bytes, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn read_console_output_character_w_raw(@core.RawAddress, @core.RawAddress, UInt, Bytes, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn read_console_output_w_raw(@core.RawAddress, @core.RawAddress, Bytes, Bytes, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn read_console_w_raw(@core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn register_console_ime_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn register_console_os2_raw(Int) -> Int
+
+pub fn register_console_vdm_raw(UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress, Bytes, @core.RawAddress) -> Int
+
+pub fn release_pseudo_console(Int64) -> Unit raise @core.WindowsError
+
+pub fn release_pseudo_console_raw(Int64) -> Int
+
+pub let reserved1 : Int
+
+pub let reserved2 : Int
+
+pub let reserved3 : Int
+
+pub fn resize_pseudo_console(Int64, Bytes) -> Unit raise @core.WindowsError
+
+pub fn resize_pseudo_console_raw(Int64, Bytes) -> Int
+
+pub let right_alt_pressed : UInt
+
+pub let right_ctrl_pressed : UInt
+
+pub let rightmost_button_pressed : UInt
+
+pub fn scroll_console_screen_buffer_a_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, Bytes, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn scroll_console_screen_buffer_w_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, Bytes, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub let scrolllock_on : UInt
+
+pub fn set_console_active_screen_buffer_raw(@core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn set_console_cp_raw(UInt) -> @core.RawWin32Call[Int]
+
+pub fn set_console_ctrl_handler_raw(@core.RawAddress, Int) -> @core.RawWin32Call[Int]
+
+pub fn set_console_cursor_info_raw(@core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn set_console_cursor_mode_raw(@core.RawAddress, Int, Int) -> Int
+
+pub fn set_console_cursor_position_raw(@core.RawAddress, Bytes) -> @core.RawWin32Call[Int]
+
+pub fn set_console_cursor_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn set_console_display_mode_raw(@core.RawAddress, UInt, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn set_console_font_raw(@core.RawAddress, UInt) -> Int
+
+pub fn set_console_hardware_state_raw(@core.RawAddress, Bytes, Bytes) -> Int
+
+pub fn set_console_history_info_raw(@core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn set_console_icon_raw(@core.RawAddress) -> Int
+
+pub fn set_console_input_exe_name_a_raw(@core.RawAddress) -> Int
+
+pub fn set_console_input_exe_name_w_raw(@core.RawAddress) -> Int
+
+pub fn set_console_key_shortcuts_raw(Int, UInt, @core.RawAddress, UInt) -> Int
+
+pub fn set_console_local_eudc_raw(@core.RawAddress, UInt, Bytes, @core.RawAddress) -> Int
+
+pub fn set_console_menu_close_raw(Int) -> Int
+
+pub fn set_console_mode_raw(@core.RawAddress, UInt) -> @core.RawWin32Call[Int]
+
+pub fn set_console_nls_mode_raw(@core.RawAddress, UInt) -> Int
+
+pub fn set_console_number_of_commands_a_raw(UInt, @core.RawAddress) -> Int
+
+pub fn set_console_number_of_commands_w_raw(UInt, @core.RawAddress) -> Int
+
+pub fn set_console_os2_oem_format_raw(Int) -> Int
+
+pub fn set_console_output_cp_raw(UInt) -> @core.RawWin32Call[Int]
+
+pub fn set_console_palette_raw(@core.RawAddress, @core.RawAddress, UInt) -> Int
+
+pub fn set_console_screen_buffer_info_ex_raw(@core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn set_console_screen_buffer_size_raw(@core.RawAddress, Bytes) -> @core.RawWin32Call[Int]
+
+pub fn set_console_text_attribute_raw(@core.RawAddress, UInt) -> @core.RawWin32Call[Int]
+
+pub fn set_console_title_a_raw(@core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn set_console_title_w_raw(@core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn set_console_window_info_raw(@core.RawAddress, Int, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn set_current_console_font_ex_raw(@core.RawAddress, Int, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn set_last_console_event_active_raw() -> Unit
+
+pub fn set_std_handle_ex_raw(UInt, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn set_std_handle_raw(UInt, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub let shift_pressed : UInt
+
+pub fn show_console_cursor_raw(@core.RawAddress, Int) -> Int
+
+pub let std_error_handle : UInt
+
+pub let std_input_handle : UInt
+
+pub let std_output_handle : UInt
+
+pub fn unregister_console_ime_raw() -> Int
+
+pub let vdm_client_rect : UInt
+
+pub let vdm_client_to_screen : UInt
+
+pub fn vdm_console_operation_raw(UInt, @core.RawAddress) -> Int
+
+pub let vdm_fullscreen_nopaint : UInt
+
+pub let vdm_hide_window : UInt
+
+pub let vdm_is_hidden : UInt
+
+pub let vdm_is_iconic : UInt
+
+pub let vdm_screen_to_client : UInt
+
+pub let vdm_set_video_mode : UInt
+
+pub fn verify_console_io_handle_raw(@core.RawAddress) -> Int
+
+pub let window_buffer_size_event : UInt
+
+pub fn write_console_a_raw(@core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn write_console_input_a_raw(@core.RawAddress, @core.RawAddress, UInt, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn write_console_input_vdma_raw(@core.RawAddress, @core.RawAddress, UInt, @core.RawAddress) -> Int
+
+pub fn write_console_input_vdmw_raw(@core.RawAddress, @core.RawAddress, UInt, @core.RawAddress) -> Int
+
+pub fn write_console_input_w_raw(@core.RawAddress, @core.RawAddress, UInt, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn write_console_output_a_raw(@core.RawAddress, @core.RawAddress, Bytes, Bytes, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn write_console_output_attribute_raw(@core.RawAddress, @core.RawAddress, UInt, Bytes, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn write_console_output_character_a_raw(@core.RawAddress, @core.RawAddress, UInt, Bytes, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn write_console_output_character_w_raw(@core.RawAddress, @core.RawAddress, UInt, Bytes, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn write_console_output_w_raw(@core.RawAddress, @core.RawAddress, Bytes, Bytes, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn write_console_w_raw(@core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+// Errors
+
+// Types and methods
+
+// Type aliases
+pub using @14d861a53eb3a4c7 {type ALLOCCONSOLEMODE_3acab9f43a08 as ALLOCCONSOLEMODE}
+
+pub using @14d861a53eb3a4c7 {type ALLOCCONSOLEOPTIONS_9ed577122143 as ALLOCCONSOLEOPTIONS}
+
+pub using @14d861a53eb3a4c7 {type ALLOCCONSOLERESULT_22a1fead68a0 as ALLOCCONSOLERESULT}
+
+pub using @14d861a53eb3a4c7 {type APPKEY_c4074f9433ac as APPKEY}
+
+pub using @14d861a53eb3a4c7 {type CHARINFO_7f431fbda6ba as CHARINFO}
+
+pub using @14d861a53eb3a4c7 {type CONSOLECARETINFO_76e15d36246f as CONSOLECARETINFO}
+
+pub using @14d861a53eb3a4c7 {type CONSOLECHARACTERATTRIBUTES_3ea9e34e77bd as CONSOLECHARACTERATTRIBUTES}
+
+pub using @14d861a53eb3a4c7 {type CONSOLECONTROL_c2b041817fd4 as CONSOLECONTROL}
+
+pub using @14d861a53eb3a4c7 {type CONSOLECURSORINFO_3bf917e2d54d as CONSOLECURSORINFO}
+
+pub using @14d861a53eb3a4c7 {type CONSOLEENDTASK_a6aef36f95e2 as CONSOLEENDTASK}
+
+pub using @14d861a53eb3a4c7 {type CONSOLEFONTINFO_55980362346f as CONSOLEFONTINFO}
+
+pub using @14d861a53eb3a4c7 {type CONSOLEFONTINFOEX_72b2c318c8e6 as CONSOLEFONTINFOEX}
+
+pub using @14d861a53eb3a4c7 {type CONSOLEGRAPHICSBUFFERINFO_648cc90ced67 as CONSOLEGRAPHICSBUFFERINFO}
+
+pub using @14d861a53eb3a4c7 {type CONSOLEHISTORYINFO_e4b646383d55 as CONSOLEHISTORYINFO}
+
+pub using @14d861a53eb3a4c7 {type CONSOLEMODE_e0f1e87bcfbc as CONSOLEMODE}
+
+pub using @14d861a53eb3a4c7 {type CONSOLEPROCESSINFO_00ac5c18b5c9 as CONSOLEPROCESSINFO}
+
+pub using @14d861a53eb3a4c7 {type CONSOLEREADCONSOLECONTROL_744dc6b7e076 as CONSOLEREADCONSOLECONTROL}
+
+pub using @14d861a53eb3a4c7 {type CONSOLESCREENBUFFERINFO_477404e44b6e as CONSOLESCREENBUFFERINFO}
+
+pub using @14d861a53eb3a4c7 {type CONSOLESCREENBUFFERINFOEX_df63f310eb4e as CONSOLESCREENBUFFERINFOEX}
+
+pub using @14d861a53eb3a4c7 {type CONSOLESELECTIONINFO_f7721af88dc7 as CONSOLESELECTIONINFO}
+
+pub using @14d861a53eb3a4c7 {type CONSOLESETFOREGROUND_5d8406405763 as CONSOLESETFOREGROUND}
+
+pub using @14d861a53eb3a4c7 {type CONSOLEWINDOWOWNER_b54336d3d5f5 as CONSOLEWINDOWOWNER}
+
+pub using @14d861a53eb3a4c7 {type COORD_2d88bee1c426 as COORD}
+
+pub using @14d861a53eb3a4c7 {type CharEUnion_dfdcd51bcc99 as CharEUnion}
+
+pub using @14d861a53eb3a4c7 {type EventEUnion_d2e0cf46c928 as EventEUnion}
+
+pub using @14d861a53eb3a4c7 {type ExtKeyDef_4a6dc588dda7 as ExtKeyDef}
+
+pub using @14d861a53eb3a4c7 {type ExtKeyDefBuf_18754de68a36 as ExtKeyDefBuf}
+
+pub using @14d861a53eb3a4c7 {type ExtKeySubst_c829e33e5940 as ExtKeySubst}
+
+pub using @14d861a53eb3a4c7 {type FOCUSEVENTRECORD_c07d831b3696 as FOCUSEVENTRECORD}
+
+pub using @14d861a53eb3a4c7 {type HPCON_3d49e0839fcb as HPCON}
+
+pub using @14d861a53eb3a4c7 {type INPUTRECORD_e04cc36d3582 as INPUTRECORD}
+
+pub using @14d861a53eb3a4c7 {type KEYEVENTRECORD_42a637b96d8a as KEYEVENTRECORD}
+
+pub using @14d861a53eb3a4c7 {type MENUEVENTRECORD_484c77c2f0da as MENUEVENTRECORD}
+
+pub using @14d861a53eb3a4c7 {type MOUSEEVENTRECORD_d4e5762a5713 as MOUSEEVENTRECORD}
+
+pub using @14d861a53eb3a4c7 {type PHANDLERROUTINE_b40c65a1d33d as PHANDLERROUTINE}
+
+pub using @14d861a53eb3a4c7 {type SMALLRECT_16f643f0e229 as SMALLRECT}
+
+pub using @14d861a53eb3a4c7 {type STDHANDLE_ffd887213996 as STDHANDLE}
+
+pub using @14d861a53eb3a4c7 {type UCharEUnion_4840acdeddfb as UCharEUnion}
+
+pub using @14d861a53eb3a4c7 {type WINDOWBUFFERSIZERECORD_4743fecd4450 as WINDOWBUFFERSIZERECORD}
+
+// Traits
+

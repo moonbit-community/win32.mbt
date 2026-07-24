@@ -1,0 +1,216 @@
+// Generated using `moon info`, DON'T EDIT IT
+package "moonbit-community/win32-bindings/windows/win32/system/environment"
+
+import {
+  "moonbit-community/win32-bindings/runtime/core",
+  "moonbit-community/win32-bindings/scc/23fc2c3574223612",
+}
+
+// Values
+pub fn call_enclave_raw(Int64, @core.RawAddress, Int, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn create_enclave_raw(@core.RawAddress, @core.RawAddress, UInt64, UInt64, UInt, @core.RawAddress, UInt, @core.RawAddress) -> @core.RawWin32Call[@core.RawAddress]
+
+pub fn create_environment_block_raw(@core.RawAddress, @core.RawAddress, Int) -> @core.RawWin32Call[Int]
+
+pub fn delete_enclave_raw(@core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn destroy_environment_block_raw(@core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn enclave_copy_into_enclave(@core.RawAddress, @core.RawAddress, UInt64) -> Unit raise @core.WindowsError
+
+pub fn enclave_copy_into_enclave_raw(@core.RawAddress, @core.RawAddress, UInt64) -> Int
+
+pub fn enclave_copy_out_of_enclave(@core.RawAddress, @core.RawAddress, UInt64) -> Unit raise @core.WindowsError
+
+pub fn enclave_copy_out_of_enclave_raw(@core.RawAddress, @core.RawAddress, UInt64) -> Int
+
+pub fn enclave_encrypt_data_for_trustlet(@core.RawAddress, UInt, @core.RawAddress, @core.RawAddress, UInt, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn enclave_encrypt_data_for_trustlet_raw(@core.RawAddress, UInt, @core.RawAddress, @core.RawAddress, UInt, @core.RawAddress) -> Int
+
+pub let enclave_flag_dynamic_debug_active : UInt
+
+pub let enclave_flag_dynamic_debug_enabled : UInt
+
+pub let enclave_flag_full_debug_enabled : UInt
+
+pub fn enclave_get_attestation_report(@core.RawAddress, @core.RawAddress, UInt, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn enclave_get_attestation_report_raw(@core.RawAddress, @core.RawAddress, UInt, @core.RawAddress) -> Int
+
+pub fn enclave_get_enclave_information(UInt, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn enclave_get_enclave_information_raw(UInt, @core.RawAddress) -> Int
+
+pub let enclave_identity_policy_seal_exact_code : Int
+
+pub let enclave_identity_policy_seal_invalid : Int
+
+pub let enclave_identity_policy_seal_same_author : Int
+
+pub let enclave_identity_policy_seal_same_family : Int
+
+pub let enclave_identity_policy_seal_same_image : Int
+
+pub let enclave_identity_policy_seal_same_primary_code : Int
+
+pub let enclave_report_data_length : UInt
+
+pub fn enclave_restrict_containing_process_access(Int, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn enclave_restrict_containing_process_access_raw(Int, @core.RawAddress) -> Int
+
+pub let enclave_runtime_policy_allow_dynamic_debug : UInt
+
+pub let enclave_runtime_policy_allow_full_debug : UInt
+
+pub fn enclave_seal_data(@core.RawAddress, UInt, Int, UInt, @core.RawAddress, UInt, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn enclave_seal_data_raw(@core.RawAddress, UInt, Int, UInt, @core.RawAddress, UInt, @core.RawAddress) -> Int
+
+pub fn enclave_unseal_data(@core.RawAddress, UInt, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn enclave_unseal_data_raw(@core.RawAddress, UInt, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub let enclave_unseal_flag_stale_key : UInt
+
+pub fn enclave_uses_attested_keys_raw() -> UInt
+
+pub let enclave_vbs_basic_key_flag_debug_key : UInt
+
+pub let enclave_vbs_basic_key_flag_family_id : UInt
+
+pub let enclave_vbs_basic_key_flag_image_id : UInt
+
+pub let enclave_vbs_basic_key_flag_measurement : UInt
+
+pub fn enclave_verify_attestation_report(UInt, @core.RawAddress, UInt) -> Unit raise @core.WindowsError
+
+pub fn enclave_verify_attestation_report_raw(UInt, @core.RawAddress, UInt) -> Int
+
+pub fn expand_environment_strings_a_raw(@core.RawAddress, @core.RawAddress, UInt) -> @core.RawWin32Call[UInt]
+
+pub fn expand_environment_strings_for_user_a_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, UInt) -> @core.RawWin32Call[Int]
+
+pub fn expand_environment_strings_for_user_w_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, UInt) -> @core.RawWin32Call[Int]
+
+pub fn expand_environment_strings_w_raw(@core.RawAddress, @core.RawAddress, UInt) -> @core.RawWin32Call[UInt]
+
+pub fn free_environment_strings_a_raw(@core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn free_environment_strings_w_raw(@core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn get_command_line_a_raw() -> @core.RawAddress
+
+pub fn get_command_line_w_raw() -> @core.RawAddress
+
+pub fn get_current_directory_a_raw(UInt, @core.RawAddress) -> UInt
+
+pub fn get_current_directory_w_raw(UInt, @core.RawAddress) -> UInt
+
+pub fn get_environment_strings_raw() -> @core.RawAddress
+
+pub fn get_environment_strings_w_raw() -> @core.RawAddress
+
+pub fn get_environment_variable_a_raw(@core.RawAddress, @core.RawAddress, UInt) -> @core.RawWin32Call[UInt]
+
+pub fn get_environment_variable_w_raw(@core.RawAddress, @core.RawAddress, UInt) -> @core.RawWin32Call[UInt]
+
+pub fn initialize_enclave_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, UInt, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn is_enclave_type_supported_raw(UInt) -> @core.RawWin32Call[Int]
+
+pub fn load_enclave_data_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, UInt64, UInt, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn load_enclave_image_a_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn load_enclave_image_w_raw(@core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn need_current_directory_for_exe_path_a_raw(@core.RawAddress) -> Int
+
+pub fn need_current_directory_for_exe_path_w_raw(@core.RawAddress) -> Int
+
+pub fn set_current_directory_a_raw(@core.RawAddress) -> Int
+
+pub fn set_current_directory_w_raw(@core.RawAddress) -> Int
+
+pub fn set_environment_strings_w_raw(@core.RawAddress) -> Int
+
+pub fn set_environment_variable_a_raw(@core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn set_environment_variable_w_raw(@core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn terminate_enclave_raw(@core.RawAddress, Int) -> @core.RawWin32Call[Int]
+
+pub let vbs_enclave_report_pkg_header_version_current : UInt
+
+pub let vbs_enclave_report_signature_scheme_sha256_rsa_pss_sha256 : UInt
+
+pub let vbs_enclave_report_version_current : UInt
+
+pub let vbs_enclave_vardata_invalid : UInt
+
+pub let vbs_enclave_vardata_module : UInt
+
+// Errors
+
+// Types and methods
+
+// Type aliases
+pub using @23fc2c3574223612 {type ENCLAVEIDENTITY_23b30ad5815d as ENCLAVEIDENTITY}
+
+pub using @23fc2c3574223612 {type ENCLAVEINFORMATION_90fa59a6d89f as ENCLAVEINFORMATION}
+
+pub using @23fc2c3574223612 {type ENCLAVESEALINGIDENTITYPOLICY_a14e50723753 as ENCLAVESEALINGIDENTITYPOLICY}
+
+pub using @23fc2c3574223612 {type ENCLAVEVBSBASICKEYREQUEST_0f4805206127 as ENCLAVEVBSBASICKEYREQUEST}
+
+pub using @23fc2c3574223612 {type PSTRUSTLETTKSESSIONID_6ff0e076f994 as PSTRUSTLETTKSESSIONID}
+
+pub using @23fc2c3574223612 {type TRUSTLETBINDINGDATA_bc97f6cfef68 as TRUSTLETBINDINGDATA}
+
+pub using @23fc2c3574223612 {type VBSBASICENCLAVEBASICCALLCOMMITPAGES_2f0f645a7bf2 as VBSBASICENCLAVEBASICCALLCOMMITPAGES}
+
+pub using @23fc2c3574223612 {type VBSBASICENCLAVEBASICCALLCREATETHREAD_863eb189f7cc as VBSBASICENCLAVEBASICCALLCREATETHREAD}
+
+pub using @23fc2c3574223612 {type VBSBASICENCLAVEBASICCALLDECOMMITPAGES_2502fe3f7ef7 as VBSBASICENCLAVEBASICCALLDECOMMITPAGES}
+
+pub using @23fc2c3574223612 {type VBSBASICENCLAVEBASICCALLGENERATEKEY_13e3cae5d6f9 as VBSBASICENCLAVEBASICCALLGENERATEKEY}
+
+pub using @23fc2c3574223612 {type VBSBASICENCLAVEBASICCALLGENERATERANDOMDATA_0e09cb1e1b46 as VBSBASICENCLAVEBASICCALLGENERATERANDOMDATA}
+
+pub using @23fc2c3574223612 {type VBSBASICENCLAVEBASICCALLGENERATEREPORT_a124096a04ed as VBSBASICENCLAVEBASICCALLGENERATEREPORT}
+
+pub using @23fc2c3574223612 {type VBSBASICENCLAVEBASICCALLGETENCLAVEINFORMATION_cd623d2071a9 as VBSBASICENCLAVEBASICCALLGETENCLAVEINFORMATION}
+
+pub using @23fc2c3574223612 {type VBSBASICENCLAVEBASICCALLINTERRUPTTHREAD_7b83f6e2113f as VBSBASICENCLAVEBASICCALLINTERRUPTTHREAD}
+
+pub using @23fc2c3574223612 {type VBSBASICENCLAVEBASICCALLPROTECTPAGES_fdd2ee1458a7 as VBSBASICENCLAVEBASICCALLPROTECTPAGES}
+
+pub using @23fc2c3574223612 {type VBSBASICENCLAVEBASICCALLRETURNFROMENCLAVE_6e4082d7f3ca as VBSBASICENCLAVEBASICCALLRETURNFROMENCLAVE}
+
+pub using @23fc2c3574223612 {type VBSBASICENCLAVEBASICCALLRETURNFROMEXCEPTION_46bbab2c0e29 as VBSBASICENCLAVEBASICCALLRETURNFROMEXCEPTION}
+
+pub using @23fc2c3574223612 {type VBSBASICENCLAVEBASICCALLTERMINATETHREAD_e886386066cb as VBSBASICENCLAVEBASICCALLTERMINATETHREAD}
+
+pub using @23fc2c3574223612 {type VBSBASICENCLAVEBASICCALLVERIFYREPORT_4050f2029381 as VBSBASICENCLAVEBASICCALLVERIFYREPORT}
+
+pub using @23fc2c3574223612 {type VBSBASICENCLAVEEXCEPTIONAMD64_ef350dcf00f9 as VBSBASICENCLAVEEXCEPTIONAMD64}
+
+pub using @23fc2c3574223612 {type VBSBASICENCLAVESYSCALLPAGE_ca7c6108ef99 as VBSBASICENCLAVESYSCALLPAGE}
+
+pub using @23fc2c3574223612 {type VBSBASICENCLAVETHREADDESCRIPTOR32_925d0548cdd2 as VBSBASICENCLAVETHREADDESCRIPTOR32}
+
+pub using @23fc2c3574223612 {type VBSBASICENCLAVETHREADDESCRIPTOR64_f193a06a5d89 as VBSBASICENCLAVETHREADDESCRIPTOR64}
+
+pub using @23fc2c3574223612 {type VBSENCLAVEREPORT_e5f3cacc6460 as VBSENCLAVEREPORT}
+
+pub using @23fc2c3574223612 {type VBSENCLAVEREPORTMODULE_339b7227a7f4 as VBSENCLAVEREPORTMODULE}
+
+pub using @23fc2c3574223612 {type VBSENCLAVEREPORTPKGHEADER_e6565cda8961 as VBSENCLAVEREPORTPKGHEADER}
+
+pub using @23fc2c3574223612 {type VBSENCLAVEREPORTVARDATAHEADER_8e5b340aa54d as VBSENCLAVEREPORTVARDATAHEADER}
+
+// Traits
+

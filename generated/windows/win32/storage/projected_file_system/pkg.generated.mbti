@@ -1,0 +1,270 @@
+// Generated using `moon info`, DON'T EDIT IT
+package "moonbit-community/win32-bindings/windows/win32/storage/projected_file_system"
+
+import {
+  "moonbit-community/win32-bindings/runtime/core",
+  "moonbit-community/win32-bindings/scc/c72a13dcca266358",
+}
+
+// Values
+pub fn prj_allocate_aligned_buffer_raw(@core.RawAddress, UInt64) -> @core.RawAddress
+
+pub let prj_cb_data_flag_enum_restart_scan : Int
+
+pub let prj_cb_data_flag_enum_return_single_entry : Int
+
+pub fn prj_clear_negative_path_cache(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn prj_clear_negative_path_cache_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn prj_complete_command(@core.RawAddress, Int, Int, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn prj_complete_command_raw(@core.RawAddress, Int, Int, @core.RawAddress) -> Int
+
+pub let prj_complete_command_type_enumeration : Int
+
+pub let prj_complete_command_type_notification : Int
+
+pub fn prj_delete_file(@core.RawAddress, @core.RawAddress, Int, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn prj_delete_file_raw(@core.RawAddress, @core.RawAddress, Int, @core.RawAddress) -> Int
+
+pub fn prj_does_name_contain_wild_cards_raw(@core.RawAddress) -> UInt
+
+pub let prj_ext_info_type_symlink : Int
+
+pub fn prj_file_name_compare_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn prj_file_name_match_raw(@core.RawAddress, @core.RawAddress) -> UInt
+
+pub let prj_file_state_dirty_placeholder : Int
+
+pub let prj_file_state_full : Int
+
+pub let prj_file_state_hydrated_placeholder : Int
+
+pub let prj_file_state_placeholder : Int
+
+pub let prj_file_state_tombstone : Int
+
+pub fn prj_fill_dir_entry_buffer(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn prj_fill_dir_entry_buffer2(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn prj_fill_dir_entry_buffer2_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn prj_fill_dir_entry_buffer_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub let prj_flag_none : Int
+
+pub let prj_flag_use_negative_path_cache : Int
+
+pub fn prj_free_aligned_buffer_raw(@core.RawAddress) -> Unit
+
+pub fn prj_get_on_disk_file_state(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn prj_get_on_disk_file_state_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn prj_get_virtualization_instance_info(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn prj_get_virtualization_instance_info_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn prj_mark_directory_as_placeholder(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn prj_mark_directory_as_placeholder_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub let prj_notification_file_handle_closed_file_deleted : Int
+
+pub let prj_notification_file_handle_closed_file_modified : Int
+
+pub let prj_notification_file_handle_closed_no_modification : Int
+
+pub let prj_notification_file_opened : Int
+
+pub let prj_notification_file_overwritten : Int
+
+pub let prj_notification_file_pre_convert_to_full : Int
+
+pub let prj_notification_file_renamed : Int
+
+pub let prj_notification_hardlink_created : Int
+
+pub let prj_notification_new_file_created : Int
+
+pub let prj_notification_pre_delete : Int
+
+pub let prj_notification_pre_rename : Int
+
+pub let prj_notification_pre_set_hardlink : Int
+
+pub let prj_notify_file_handle_closed_file_deleted : UInt
+
+pub let prj_notify_file_handle_closed_file_modified : UInt
+
+pub let prj_notify_file_handle_closed_no_modification : UInt
+
+pub let prj_notify_file_opened : UInt
+
+pub let prj_notify_file_overwritten : UInt
+
+pub let prj_notify_file_pre_convert_to_full : UInt
+
+pub let prj_notify_file_renamed : UInt
+
+pub let prj_notify_hardlink_created : UInt
+
+pub let prj_notify_new_file_created : UInt
+
+pub let prj_notify_none : UInt
+
+pub let prj_notify_pre_delete : UInt
+
+pub let prj_notify_pre_rename : UInt
+
+pub let prj_notify_pre_set_hardlink : UInt
+
+pub let prj_notify_suppress_notifications : UInt
+
+pub let prj_notify_use_existing_mask : UInt
+
+pub let prj_placeholder_id_length : Int
+
+pub fn prj_start_virtualizing(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn prj_start_virtualizing_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn prj_stop_virtualizing_raw(@core.RawAddress) -> Unit
+
+pub let prj_update_allow_dirty_data : Int
+
+pub let prj_update_allow_dirty_metadata : Int
+
+pub let prj_update_allow_read_only : Int
+
+pub let prj_update_allow_tombstone : Int
+
+pub let prj_update_failure_cause_dirty_data : Int
+
+pub let prj_update_failure_cause_dirty_metadata : Int
+
+pub let prj_update_failure_cause_none : Int
+
+pub let prj_update_failure_cause_read_only : Int
+
+pub let prj_update_failure_cause_tombstone : Int
+
+pub fn prj_update_file_if_needed(@core.RawAddress, @core.RawAddress, @core.RawAddress, UInt, Int, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn prj_update_file_if_needed_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, UInt, Int, @core.RawAddress) -> Int
+
+pub let prj_update_max_val : Int
+
+pub let prj_update_none : Int
+
+pub let prj_update_reserved1 : Int
+
+pub let prj_update_reserved2 : Int
+
+pub fn prj_write_file_data(@core.RawAddress, @core.RawAddress, @core.RawAddress, UInt64, UInt) -> Unit raise @core.WindowsError
+
+pub fn prj_write_file_data_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, UInt64, UInt) -> Int
+
+pub fn prj_write_placeholder_info(@core.RawAddress, @core.RawAddress, @core.RawAddress, UInt) -> Unit raise @core.WindowsError
+
+pub fn prj_write_placeholder_info2(@core.RawAddress, @core.RawAddress, @core.RawAddress, UInt, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn prj_write_placeholder_info2_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, UInt, @core.RawAddress) -> Int
+
+pub fn prj_write_placeholder_info_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, UInt) -> Int
+
+// Errors
+
+// Types and methods
+
+// Type aliases
+pub using @c72a13dcca266358 {type AnonymousEUnion_6593eb89ab7f as AnonymousEUnion_6593eb89ab}
+
+pub using @c72a13dcca266358 {type AnonymousEUnion_fa37bea4ecdf as AnonymousEUnion_fa37bea4ec}
+
+pub using @c72a13dcca266358 {type EaInformationEStruct_3b855951e5c5 as EaInformationEStruct}
+
+pub using @c72a13dcca266358 {type EnumerationEStruct_cce4cdc12f97 as EnumerationEStruct}
+
+pub using @c72a13dcca266358 {type FileDeletedOnHandleCloseEStruct_57bb70a16054 as FileDeletedOnHandleCloseEStruct}
+
+pub using @c72a13dcca266358 {type FileRenamedEStruct_0a8f7569412e as FileRenamedEStruct}
+
+pub using @c72a13dcca266358 {type NotificationEStruct_be8e35b182de as NotificationEStruct}
+
+pub using @c72a13dcca266358 {type PRJCALLBACKDATA_cd2cdeec7d7e as PRJCALLBACKDATA}
+
+pub using @c72a13dcca266358 {type PRJCALLBACKDATAFLAGS_1374a8025851 as PRJCALLBACKDATAFLAGS}
+
+pub using @c72a13dcca266358 {type PRJCALLBACKS_072e617fe5cb as PRJCALLBACKS}
+
+pub using @c72a13dcca266358 {type PRJCANCELCOMMANDCB_92041b1295aa as PRJCANCELCOMMANDCB}
+
+pub using @c72a13dcca266358 {type PRJCOMPLETECOMMANDEXTENDEDPARAMETERS_2aeadbb52145 as PRJCOMPLETECOMMANDEXTENDEDPARAMETERS}
+
+pub using @c72a13dcca266358 {type PRJCOMPLETECOMMANDTYPE_e98058fca54c as PRJCOMPLETECOMMANDTYPE}
+
+pub using @c72a13dcca266358 {type PRJDIRENTRYBUFFERHANDLE_7accedd51ce5 as PRJDIRENTRYBUFFERHANDLE}
+
+pub using @c72a13dcca266358 {type PRJENDDIRECTORYENUMERATIONCB_557b4aa20b7d as PRJENDDIRECTORYENUMERATIONCB}
+
+pub using @c72a13dcca266358 {type PRJEXTENDEDINFO_d5c6cbcd6594 as PRJEXTENDEDINFO}
+
+pub using @c72a13dcca266358 {type PRJEXTINFOTYPE_04e0a4398a78 as PRJEXTINFOTYPE}
+
+pub using @c72a13dcca266358 {type PRJFILEBASICINFO_52728e3bad55 as PRJFILEBASICINFO}
+
+pub using @c72a13dcca266358 {type PRJFILESTATE_12a492c4797c as PRJFILESTATE}
+
+pub using @c72a13dcca266358 {type PRJGETDIRECTORYENUMERATIONCB_7129b85e8b5d as PRJGETDIRECTORYENUMERATIONCB}
+
+pub using @c72a13dcca266358 {type PRJGETFILEDATACB_3a1332ceaa46 as PRJGETFILEDATACB}
+
+pub using @c72a13dcca266358 {type PRJGETPLACEHOLDERINFOCB_761e633a425a as PRJGETPLACEHOLDERINFOCB}
+
+pub using @c72a13dcca266358 {type PRJNAMESPACEVIRTUALIZATIONCONTEXT_7d924cefcc48 as PRJNAMESPACEVIRTUALIZATIONCONTEXT}
+
+pub using @c72a13dcca266358 {type PRJNOTIFICATION_e0532322850e as PRJNOTIFICATION}
+
+pub using @c72a13dcca266358 {type PRJNOTIFICATIONCB_02e9d7ecf88b as PRJNOTIFICATIONCB}
+
+pub using @c72a13dcca266358 {type PRJNOTIFICATIONMAPPING_d6ed7f0f6c73 as PRJNOTIFICATIONMAPPING}
+
+pub using @c72a13dcca266358 {type PRJNOTIFICATIONPARAMETERS_61fa61beb3ce as PRJNOTIFICATIONPARAMETERS}
+
+pub using @c72a13dcca266358 {type PRJNOTIFYTYPES_ff0618c3204b as PRJNOTIFYTYPES}
+
+pub using @c72a13dcca266358 {type PRJPLACEHOLDERID_0d3af8e7f27a as PRJPLACEHOLDERID}
+
+pub using @c72a13dcca266358 {type PRJPLACEHOLDERINFO_6e7f0d06cf88 as PRJPLACEHOLDERINFO}
+
+pub using @c72a13dcca266358 {type PRJPLACEHOLDERVERSIONINFO_f6e56b7360a6 as PRJPLACEHOLDERVERSIONINFO}
+
+pub using @c72a13dcca266358 {type PRJQUERYFILENAMECB_c733d4c2cb6f as PRJQUERYFILENAMECB}
+
+pub using @c72a13dcca266358 {type PRJSTARTDIRECTORYENUMERATIONCB_3911dd7d11d4 as PRJSTARTDIRECTORYENUMERATIONCB}
+
+pub using @c72a13dcca266358 {type PRJSTARTVIRTUALIZINGFLAGS_a2a5e4412d42 as PRJSTARTVIRTUALIZINGFLAGS}
+
+pub using @c72a13dcca266358 {type PRJSTARTVIRTUALIZINGOPTIONS_f39c3feb7e42 as PRJSTARTVIRTUALIZINGOPTIONS}
+
+pub using @c72a13dcca266358 {type PRJUPDATEFAILURECAUSES_54ae247b0d03 as PRJUPDATEFAILURECAUSES}
+
+pub using @c72a13dcca266358 {type PRJUPDATETYPES_60c2f1f7e94e as PRJUPDATETYPES}
+
+pub using @c72a13dcca266358 {type PRJVIRTUALIZATIONINSTANCEINFO_3bb243555e5c as PRJVIRTUALIZATIONINSTANCEINFO}
+
+pub using @c72a13dcca266358 {type PostCreateEStruct_86a255bb2023 as PostCreateEStruct}
+
+pub using @c72a13dcca266358 {type SecurityInformationEStruct_2a910b49dc20 as SecurityInformationEStruct}
+
+pub using @c72a13dcca266358 {type StreamsInformationEStruct_cdb01a104bab as StreamsInformationEStruct}
+
+pub using @c72a13dcca266358 {type SymlinkEStruct_866410425397 as SymlinkEStruct}
+
+// Traits
+

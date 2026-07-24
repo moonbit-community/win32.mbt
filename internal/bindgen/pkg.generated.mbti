@@ -1,0 +1,345 @@
+// Generated using `moon info`, DON'T EDIT IT
+package "moonbit-community/win32/internal/bindgen"
+
+import {
+  "moonbit-community/win32/metadata",
+  "moonbitlang/core/debug",
+}
+
+// Values
+pub fn apply_selectors(ArrayView[ItemIdentity], ArrayView[String], ArrayView[String]) -> Array[String] raise BindgenError
+
+pub let bindgen_schema_version : Int
+
+pub fn build_bindgen_index(@metadata.ResolvedUniverse) -> BindgenIndex raise
+
+pub fn build_dependency_closure(ArrayView[String], ArrayView[DependencyEdge], ArrayView[String], ArrayView[String]) -> DependencyClosure raise BindgenError
+
+pub fn build_generation_plan(BindgenProfile, String, String, Array[InventoryInput], Array[ProjectedItem], emitted_files? : Array[GeneratedFile]) -> GenerationPlan raise BindgenError
+
+pub fn canonical_identity_key(String) -> String
+
+pub fn classify_desktop_library(String) -> ProfileDecision
+
+pub fn classify_pinvoke(BindgenProfile, @metadata.PInvokeInfo) -> ProfileDecision
+
+pub fn condensation_edges(ArrayView[OwnerComponent], ArrayView[PackageEdge]) -> Array[PackageEdge] raise BindgenError
+
+pub let desktop_policy_version : String
+
+pub fn disambiguated_name(String, String) -> String
+
+pub fn emit_bindings(BindgenIndex, @metadata.ResolvedUniverse, Array[ProjectedItem], String) -> Array[GeneratedFile] raise
+
+pub fn lower_projected_items(BindgenIndex, @metadata.ResolvedUniverse, Array[ProjectedItem]) -> Array[ProjectedItem] raise
+
+pub fn metadata_base_name(String) -> String
+
+pub fn metadata_kind_from_cli(String) -> @metadata.MetadataFileKind raise BindgenError
+
+pub fn namespace_package_path(String) -> String
+
+pub fn owner_components(ArrayView[String], ArrayView[PackageEdge], BindgenProfile) -> Array[OwnerComponent] raise BindgenError
+
+pub fn parse_api_map(String) -> Map[String, PublicApiLock] raise
+
+pub fn parse_bindings_module_config(String) -> BindingsModuleConfig raise BindgenError
+
+pub fn parse_inventory(String) -> Array[InventoryInput] raise
+
+pub fn parse_manifest_owned_paths(String) -> Array[String] raise
+
+pub fn parse_scc_map(String) -> Map[String, String] raise
+
+pub fn parse_selector(String) -> Selector raise BindgenError
+
+pub fn project_index(BindgenIndex, @metadata.ResolvedUniverse, ArrayView[String], ArrayView[String], BindgenProfile) -> Array[ProjectedItem] raise
+
+pub fn projected_public_signature(ProjectedItem) -> String
+
+pub fn stabilize_api_names(ArrayView[ProjectedItem]) -> Array[ProjectedItem]
+
+pub fn stabilize_api_names_with_lock(ArrayView[ProjectedItem], Map[String, PublicApiLock]) -> Array[ProjectedItem] raise BindgenError
+
+pub fn stable_hash(String, length? : Int) -> String
+
+pub fn stable_lower_snake(String) -> String
+
+pub fn stable_text_compare(String, String) -> Int
+
+pub fn stable_upper_camel(String) -> String
+
+pub fn strongly_connected_components(ArrayView[String], ArrayView[PackageEdge]) -> Array[Array[String]] raise BindgenError
+
+pub fn validate_profile_name(String) -> BindgenProfile raise BindgenError
+
+// Errors
+pub(all) suberror BindgenError {
+  BindgenError(String)
+} derive(Eq, @debug.Debug)
+
+// Types and methods
+pub(all) enum AbiScalar {
+  AbiI8
+  AbiU8
+  AbiI16
+  AbiU16
+  AbiI32
+  AbiU32
+  AbiI64
+  AbiU64
+  AbiF32
+  AbiF64
+  AbiBool32
+  AbiChar16
+  AbiHResult
+} derive(Compare, Eq, @debug.Debug)
+
+pub(all) struct BindgenIndex {
+  items : Array[IndexedItem]
+  dependencies : Array[DependencyEdge]
+  namespace_nodes : Array[String]
+  namespace_edges : Array[PackageEdge]
+} derive(Eq, @debug.Debug)
+
+pub(all) enum BindgenItemKind {
+  Win32ConstantItem
+  Win32TypeItem
+  Win32FunctionItem
+  Win32InterfaceMethodItem
+  WinRtTypeItem
+  WinRtInterfaceMethodItem
+  WinRtRuntimeClassItem
+  WinRtFactoryItem
+  WinRtDelegateItem
+  PropertyItem
+  EventItem
+  DependencyOnlyTypeItem
+} derive(Compare, Eq, @debug.Debug)
+pub fn BindgenItemKind::stable_name(Self) -> String
+
+pub(all) enum BindgenProfile {
+  X64Desktop
+} derive(Compare, Eq, @debug.Debug)
+pub fn BindgenProfile::stable_name(Self) -> String
+
+pub(all) struct BindingsModuleConfig {
+  name : String
+  source_root : String
+} derive(Eq, @debug.Debug)
+
+pub(all) enum CallbackLifetime {
+  CallbackCallScoped
+  CallbackRegistrationScoped
+  CallbackObjectScoped
+  CallbackLifetimeUnknown
+} derive(Compare, Eq, @debug.Debug)
+
+pub(all) enum CallbackThreading {
+  CallbackSynchronous
+  CallbackApartmentThread
+  CallbackRuntimeThread
+  CallbackArbitraryNativeThread
+  CallbackThreadingUnknown
+} derive(Compare, Eq, @debug.Debug)
+
+pub(all) struct DependencyClosure {
+  keys : Array[String]
+  predecessor_edges : Map[String, DependencyEdge]
+} derive(Eq, @debug.Debug)
+
+pub(all) struct DependencyEdge {
+  from_key : String
+  to_key : String
+  kind : DependencyKind
+  detail : String
+} derive(Eq, @debug.Debug)
+
+pub(all) enum DependencyKind {
+  FieldTypeDependency
+  ParameterTypeDependency
+  ReturnTypeDependency
+  BaseTypeDependency
+  InterfaceDependency
+  FactoryDependency
+  DelegateDependency
+  GenericArgumentDependency
+  RuntimeHelperDependency
+  LayoutDependency
+} derive(Compare, Eq, @debug.Debug)
+pub fn DependencyKind::stable_name(Self) -> String
+
+pub(all) enum ExactAbiType {
+  AbiVoid
+  AbiScalarType(AbiScalar)
+  AbiPointer(ExactAbiType, Bool)
+  AbiFunctionPointer(Array[ExactAbiType], ExactAbiType)
+  AbiAggregate(String, Int, Int)
+  AbiFixedArray(ExactAbiType, Int)
+  AbiArray(ExactAbiType)
+  AbiInterfacePointer(String)
+  AbiHString
+  AbiBString
+  AbiPString
+  AbiPWString
+  AbiUnknown(String)
+} derive(Eq, @debug.Debug)
+
+pub(all) enum FfiCarrier {
+  CarrierUnit
+  CarrierInt
+  CarrierUInt
+  CarrierInt64
+  CarrierUInt64
+  CarrierFloat
+  CarrierDouble
+  CarrierByte
+  CarrierRawAddress
+  CarrierBorrowedBytes
+  CarrierBorrowedFixedBytes
+  CarrierBorrowedRefInt
+  CarrierBorrowedRefUInt
+  CarrierBorrowedRefInt64
+  CarrierBorrowedRefUInt64
+} derive(Compare, Eq, @debug.Debug)
+
+pub(all) struct GeneratedFile {
+  relative_path : String
+  content : String
+  kind : String
+} derive(Eq, @debug.Debug)
+
+pub(all) struct GenerationPlan {
+  profile : BindgenProfile
+  module_name : String
+  source_root : String
+  files : Array[GeneratedFile]
+  items : Array[ProjectedItem]
+  inputs : Array[InventoryInput]
+} derive(Eq, @debug.Debug)
+
+pub(all) struct IndexedItem {
+  identity : ItemIdentity
+  location : IndexedLocation
+  type_identity : @metadata.TypeIdentity
+  type_category : @metadata.MetadataTypeCategory
+  projection_eligible : Bool
+} derive(Eq, @debug.Debug)
+
+pub(all) enum IndexedLocation {
+  IndexedType(Int, Int)
+  IndexedField(Int, Int, Int)
+  IndexedMethod(Int, Int, Int)
+  IndexedProperty(Int, Int, Int)
+  IndexedEvent(Int, Int, Int)
+  IndexedRuntimeFactory(Int, Int, Int)
+  IndexedRuntimeHelper(String)
+} derive(Eq, @debug.Debug)
+
+pub(all) struct InventoryInput {
+  filename : String
+  sha256 : String
+  file_kind : @metadata.MetadataFileKind
+} derive(Eq, @debug.Debug)
+
+pub(all) struct ItemIdentity {
+  canonical_key : String
+  namespace_name : String
+  type_name : String
+  member_name : String?
+  kind : BindgenItemKind
+  source_file : String
+  source_table : String
+  source_rid : Int
+} derive(Eq, @debug.Debug)
+pub fn ItemIdentity::display_name(Self) -> String
+
+pub(all) struct LoweredParameter {
+  name : String
+  abi_type : ExactAbiType
+  carrier : FfiCarrier
+  ownership : Ownership
+} derive(Eq, @debug.Debug)
+
+pub(all) struct LoweredSignature {
+  parameters : Array[LoweredParameter]
+  return_abi : ExactAbiType
+  return_carrier : FfiCarrier
+  aggregate_return_size : Int?
+  set_last_error : Bool
+  is_winrt_abi : Bool
+  logical_return_abi : ExactAbiType?
+  consumer_hidden_parameters : Int
+} derive(Eq, @debug.Debug)
+
+pub(all) struct OwnerComponent {
+  members : Array[String]
+  owner_package : String
+  digest : String
+} derive(Eq, @debug.Debug)
+
+pub(all) enum Ownership {
+  BorrowedOwnership
+  TransferredOwnership
+  CallerReleasedOwnership(String)
+  CalleeOwnedOwnership
+  OwnershipUnknown
+} derive(Eq, @debug.Debug)
+
+pub(all) struct PackageEdge {
+  from_package : String
+  to_package : String
+} derive(Eq, @debug.Debug)
+
+pub(all) struct ProfileDecision {
+  included : Bool
+  policy_id : String
+  reason : String?
+} derive(Eq, @debug.Debug)
+
+pub(all) struct ProjectedItem {
+  identity : ItemIdentity
+  status : ProjectionStatus
+  dependencies : Array[DependencyEdge]
+  raw_signature : LoweredSignature?
+  consumer_signature : String?
+  public_package : String?
+  public_name : String?
+  owner_package : String?
+} derive(Eq, @debug.Debug)
+
+pub(all) enum ProjectionStatus {
+  EmittedRaw
+  EmittedRawAndConsumer
+  ProfileExcluded(String, Array[DependencyEdge])
+  NonCallable(String)
+  ProjectionError(String)
+} derive(Eq, @debug.Debug)
+pub fn ProjectionStatus::stable_name(Self) -> String
+
+pub(all) struct PublicApiLock {
+  identity : String
+  package_name : String
+  public_name : String
+  signature : String
+  naming_decision : String
+} derive(Eq, @debug.Debug)
+
+pub(all) struct Selector {
+  kind : SelectorKind
+  value : String
+  original : String
+} derive(Eq, @debug.Debug)
+
+pub(all) enum SelectorKind {
+  SelectAll
+  SelectNamespace
+  SelectExact
+  SelectPrefix
+  SelectAuto
+} derive(Compare, Eq, @debug.Debug)
+
+// Type aliases
+
+// Traits
+

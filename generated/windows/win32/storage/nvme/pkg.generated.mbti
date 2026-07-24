@@ -1,0 +1,2705 @@
+// Generated using `moon info`, DON'T EDIT IT
+package "moonbit-community/win32-bindings/windows/win32/storage/nvme"
+
+import {
+  "moonbit-community/win32-bindings/scc/d9c5d9afd24c7e85",
+}
+
+// Values
+pub let firmware_activation_history_entry_version_1 : UInt
+
+pub let nv_me_device_recovery1_max : Int
+
+pub let nv_me_device_recovery2_max : Int
+
+pub let nv_me_device_recovery_controller_reset : Int
+
+pub let nv_me_device_recovery_device_replacement : Int
+
+pub let nv_me_device_recovery_format_nvm : Int
+
+pub let nv_me_device_recovery_no_action : Int
+
+pub let nv_me_device_recovery_pcie_function_reset : Int
+
+pub let nv_me_device_recovery_pcie_hot_reset : Int
+
+pub let nv_me_device_recovery_perst : Int
+
+pub let nv_me_device_recovery_power_cycle : Int
+
+pub let nv_me_device_recovery_sanitize : Int
+
+pub let nv_me_device_recovery_subsystem_reset : Int
+
+pub let nv_me_device_recovery_vendor_analysis : Int
+
+pub let nv_me_device_recovery_vendor_specific_command : Int
+
+pub let nvm_subsystem_shutdown_abrupt : UInt
+
+pub let nvm_subsystem_shutdown_normal : UInt
+
+pub let nvme_access_frequency_fr_write_fr_read : Int
+
+pub let nvme_access_frequency_fr_write_infr_read : Int
+
+pub let nvme_access_frequency_infr_write_fr_read : Int
+
+pub let nvme_access_frequency_infr_write_infr_read : Int
+
+pub let nvme_access_frequency_none : Int
+
+pub let nvme_access_frequency_one_time_read : Int
+
+pub let nvme_access_frequency_speculative_read : Int
+
+pub let nvme_access_frequency_typical : Int
+
+pub let nvme_access_frequency_will_be_overwritten : Int
+
+pub let nvme_access_latency_idle : Int
+
+pub let nvme_access_latency_low : Int
+
+pub let nvme_access_latency_none : Int
+
+pub let nvme_access_latency_normal : Int
+
+pub let nvme_admin_command_abort : Int
+
+pub let nvme_admin_command_async_event_request : Int
+
+pub let nvme_admin_command_create_io_cq : Int
+
+pub let nvme_admin_command_create_io_sq : Int
+
+pub let nvme_admin_command_delete_io_cq : Int
+
+pub let nvme_admin_command_delete_io_sq : Int
+
+pub let nvme_admin_command_device_self_test : Int
+
+pub let nvme_admin_command_directive_receive : Int
+
+pub let nvme_admin_command_directive_send : Int
+
+pub let nvme_admin_command_discovery_info_mgmt : Int
+
+pub let nvme_admin_command_doorbell_buffer_config : Int
+
+pub let nvme_admin_command_fabrics : Int
+
+pub let nvme_admin_command_firmware_activate : Int
+
+pub let nvme_admin_command_firmware_commit : Int
+
+pub let nvme_admin_command_firmware_image_download : Int
+
+pub let nvme_admin_command_format_nvm : Int
+
+pub let nvme_admin_command_get_features : Int
+
+pub let nvme_admin_command_get_lba_status : Int
+
+pub let nvme_admin_command_get_log_page : Int
+
+pub let nvme_admin_command_identify : Int
+
+pub let nvme_admin_command_keep_alive : Int
+
+pub let nvme_admin_command_namespace_attachment : Int
+
+pub let nvme_admin_command_namespace_management : Int
+
+pub let nvme_admin_command_nvme_mi_receive : Int
+
+pub let nvme_admin_command_nvme_mi_send : Int
+
+pub let nvme_admin_command_sanitize : Int
+
+pub let nvme_admin_command_security_receive : Int
+
+pub let nvme_admin_command_security_send : Int
+
+pub let nvme_admin_command_set_features : Int
+
+pub let nvme_admin_command_virtualization_management : Int
+
+pub let nvme_adminq_id : UInt
+
+pub let nvme_ams_round_robin : Int
+
+pub let nvme_ams_weighted_round_robin_urgent : Int
+
+pub let nvme_async_error_diag_failure : Int
+
+pub let nvme_async_error_firmware_image_load_error : Int
+
+pub let nvme_async_error_invalid_doorbell_write_value : Int
+
+pub let nvme_async_error_persistent_internal_device_error : Int
+
+pub let nvme_async_error_transient_internal_device_error : Int
+
+pub let nvme_async_error_write_to_invalid_doorbell_register : Int
+
+pub let nvme_async_event_type_error_status : Int
+
+pub let nvme_async_event_type_health_status : Int
+
+pub let nvme_async_event_type_immediate : Int
+
+pub let nvme_async_event_type_io_command_set_status : Int
+
+pub let nvme_async_event_type_notice : Int
+
+pub let nvme_async_event_type_vendor_specific : Int
+
+pub let nvme_async_event_type_vendor_specific_device_panic : Int
+
+pub let nvme_async_event_type_vendor_specific_reserved : Int
+
+pub let nvme_async_health_nvm_subsystem_reliability : Int
+
+pub let nvme_async_health_spare_below_threshold : Int
+
+pub let nvme_async_health_temperature_threshold : Int
+
+pub let nvme_async_immediate_nvm_subsystem_normal_shutdown : Int
+
+pub let nvme_async_io_cmd_sanitize_operation_completed : Int
+
+pub let nvme_async_io_cmd_sanitize_operation_completed_with_unexpected_deallocation : Int
+
+pub let nvme_async_io_cmd_set_reservation_log_page_available : Int
+
+pub let nvme_async_notice_asymmetric_access_change : Int
+
+pub let nvme_async_notice_discovery_log_page_changed : Int
+
+pub let nvme_async_notice_endurance_group_event_aggregate_log_change : Int
+
+pub let nvme_async_notice_firmware_activation_starting : Int
+
+pub let nvme_async_notice_lba_status_information_alert : Int
+
+pub let nvme_async_notice_namespace_attribute_changed : Int
+
+pub let nvme_async_notice_predictable_latency_event_aggregate_log_change : Int
+
+pub let nvme_async_notice_telemetry_log_changed : Int
+
+pub let nvme_async_notice_zone_descriptor_changed : Int
+
+pub let nvme_cc_shn_abrupt_shutdown : Int
+
+pub let nvme_cc_shn_no_notification : Int
+
+pub let nvme_cc_shn_normal_shutdown : Int
+
+pub let nvme_cdw10_lsp_action_establish_context_and_read_512_bytes_of_header : UInt
+
+pub let nvme_cdw10_lsp_action_establish_context_and_read_log_data : UInt
+
+pub let nvme_cdw10_lsp_action_read_log_data : UInt
+
+pub let nvme_cdw10_lsp_action_release_context : UInt
+
+pub let nvme_cmbsz_size_units_16_mb : Int
+
+pub let nvme_cmbsz_size_units_1_mb : Int
+
+pub let nvme_cmbsz_size_units_256_mb : Int
+
+pub let nvme_cmbsz_size_units_4_gb : Int
+
+pub let nvme_cmbsz_size_units_4_kb : Int
+
+pub let nvme_cmbsz_size_units_64_gb : Int
+
+pub let nvme_cmbsz_size_units_64_kb : Int
+
+pub let nvme_command_effect_sbumission_execution_limit_none : Int
+
+pub let nvme_command_effect_sbumission_execution_limit_single_per_controller : Int
+
+pub let nvme_command_effect_sbumission_execution_limit_single_per_namespace : Int
+
+pub let nvme_command_set_key_value : Int
+
+pub let nvme_command_set_nvm : Int
+
+pub let nvme_command_set_zoned_namespace : Int
+
+pub let nvme_controller_id_dyn : UInt
+
+pub let nvme_controller_id_max : UInt
+
+pub let nvme_controller_id_min : UInt
+
+pub let nvme_controller_id_stat_persist : UInt
+
+pub let nvme_controller_metadata_chipset_driver_name : Int
+
+pub let nvme_controller_metadata_chipset_driver_version : Int
+
+pub let nvme_controller_metadata_display_driver_name : Int
+
+pub let nvme_controller_metadata_display_driver_version : Int
+
+pub let nvme_controller_metadata_firmware_version : Int
+
+pub let nvme_controller_metadata_host_determined_failure_record : Int
+
+pub let nvme_controller_metadata_operating_system_controller_name : Int
+
+pub let nvme_controller_metadata_operating_system_driver_filename : Int
+
+pub let nvme_controller_metadata_operating_system_driver_name : Int
+
+pub let nvme_controller_metadata_operating_system_driver_version : Int
+
+pub let nvme_controller_metadata_operating_system_name_and_build : Int
+
+pub let nvme_controller_metadata_preboot_controller_name : Int
+
+pub let nvme_controller_metadata_preboot_driver_name : Int
+
+pub let nvme_controller_metadata_preboot_driver_version : Int
+
+pub let nvme_controller_metadata_system_processor_model : Int
+
+pub let nvme_controller_metadata_system_product_name : Int
+
+pub let nvme_cps_controller_scope : Int
+
+pub let nvme_cps_domain_scope : Int
+
+pub let nvme_cps_not_reported : Int
+
+pub let nvme_cps_subsystem_scope : Int
+
+pub let nvme_css_admin_command_set_only : Int
+
+pub let nvme_css_all_supported_io_command_set : Int
+
+pub let nvme_css_nvm_command_set : Int
+
+pub let nvme_csts_shst_no_shutdown : Int
+
+pub let nvme_csts_shst_shutdown_completed : Int
+
+pub let nvme_csts_shst_shutdown_in_process : Int
+
+pub let nvme_ctrl_admin : Int
+
+pub let nvme_ctrl_discovery : Int
+
+pub let nvme_ctrl_io : Int
+
+pub let nvme_ctrl_not_reported : Int
+
+pub let nvme_ctrl_reserved_max : Int
+
+pub let nvme_ctrl_reserved_min : Int
+
+pub let nvme_directive_receive_identify_operation_return_parameters : Int
+
+pub let nvme_directive_receive_streams_operation_allocate_resources : Int
+
+pub let nvme_directive_receive_streams_operation_get_status : Int
+
+pub let nvme_directive_receive_streams_operation_return_parameters : Int
+
+pub let nvme_directive_send_identify_operation_enable_directive : Int
+
+pub let nvme_directive_send_streams_operation_release_identifier : Int
+
+pub let nvme_directive_send_streams_operation_release_resources : Int
+
+pub let nvme_directive_type_identify : Int
+
+pub let nvme_directive_type_streams : Int
+
+pub let nvme_disc_ctrl_type_cdc : Int
+
+pub let nvme_disc_ctrl_type_ddc : Int
+
+pub let nvme_disc_ctrl_type_reserved1 : Int
+
+pub let nvme_disc_ctrl_type_reserved_max : Int
+
+pub let nvme_disc_ctrl_type_unspecified : Int
+
+pub let nvme_discovery_info_entity_type_cdc : Int
+
+pub let nvme_discovery_info_entity_type_ddc : Int
+
+pub let nvme_discovery_info_entity_type_host : Int
+
+pub let nvme_discovery_info_entity_type_reserved : Int
+
+pub let nvme_discovery_info_entry_format_basic : Int
+
+pub let nvme_discovery_info_entry_format_extended : Int
+
+pub let nvme_discovery_info_entry_format_reserved : Int
+
+pub let nvme_discovery_info_mgmt_ektype_portid : UInt
+
+pub let nvme_discovery_info_mgmt_ektype_traddr : UInt
+
+pub let nvme_discovery_info_mgmt_task_deregister : Int
+
+pub let nvme_discovery_info_mgmt_task_register : Int
+
+pub let nvme_discovery_info_mgmt_task_update : Int
+
+pub let nvme_error_injection_type_device_panic_cpu_controller_hang : Int
+
+pub let nvme_error_injection_type_device_panic_dram_corruption_critical : Int
+
+pub let nvme_error_injection_type_device_panic_dram_corruption_noncritical : Int
+
+pub let nvme_error_injection_type_device_panic_hw_malfunction : Int
+
+pub let nvme_error_injection_type_device_panic_logical_fw_error : Int
+
+pub let nvme_error_injection_type_device_panic_nand_corruption : Int
+
+pub let nvme_error_injection_type_device_panic_nand_hang : Int
+
+pub let nvme_error_injection_type_device_panic_plp_defect : Int
+
+pub let nvme_error_injection_type_device_panic_sram_corruption : Int
+
+pub let nvme_error_injection_type_max : Int
+
+pub let nvme_error_injection_type_reserved0 : Int
+
+pub let nvme_error_injection_type_reserved1 : Int
+
+pub let nvme_ext_attr_admin_label_ascii : Int
+
+pub let nvme_ext_attr_admin_label_utf8 : Int
+
+pub let nvme_ext_attr_host_id : Int
+
+pub let nvme_ext_attr_reserved0 : Int
+
+pub let nvme_ext_attr_reserved_end : Int
+
+pub let nvme_ext_attr_reserved_start : Int
+
+pub let nvme_ext_attr_vendor_end : Int
+
+pub let nvme_ext_attr_vendor_start : Int
+
+pub let nvme_extended_host_identifier_size : UInt
+
+pub let nvme_fabrics_command_auth_recv : Int
+
+pub let nvme_fabrics_command_auth_send : Int
+
+pub let nvme_fabrics_command_connect : Int
+
+pub let nvme_fabrics_command_disconnect : Int
+
+pub let nvme_fabrics_command_property_get : Int
+
+pub let nvme_fabrics_command_property_set : Int
+
+pub let nvme_feature_arbitration : Int
+
+pub let nvme_feature_async_event_config : Int
+
+pub let nvme_feature_autonomous_power_state_transition : Int
+
+pub let nvme_feature_clear_fw_update_history : Int
+
+pub let nvme_feature_clear_pcie_correctable_error_counters : Int
+
+pub let nvme_feature_controller_metadata : Int
+
+pub let nvme_feature_dssd_power_state : Int
+
+pub let nvme_feature_enable_ieee1667_silo : Int
+
+pub let nvme_feature_endurance_group_event_config : Int
+
+pub let nvme_feature_enhanced_controller_metadata : Int
+
+pub let nvme_feature_error_injection : Int
+
+pub let nvme_feature_error_recovery : Int
+
+pub let nvme_feature_host_behavior_support : Int
+
+pub let nvme_feature_host_controlled_thermal_management : Int
+
+pub let nvme_feature_host_memory_buffer : Int
+
+pub let nvme_feature_interrupt_coalescing : Int
+
+pub let nvme_feature_interrupt_vector_config : Int
+
+pub let nvme_feature_io_command_set_profile : Int
+
+pub let nvme_feature_keep_alive : Int
+
+pub let nvme_feature_latency_monitor : Int
+
+pub let nvme_feature_lba_range_type : Int
+
+pub let nvme_feature_lba_status_information_report_interval : Int
+
+pub let nvme_feature_namespace_metadata : Int
+
+pub let nvme_feature_nonoperational_power_state : Int
+
+pub let nvme_feature_number_of_queues : Int
+
+pub let nvme_feature_nvm_host_identifier : Int
+
+pub let nvme_feature_nvm_namespace_write_protection_config : Int
+
+pub let nvme_feature_nvm_reservation_notification_mask : Int
+
+pub let nvme_feature_nvm_reservation_persistance : Int
+
+pub let nvme_feature_nvm_software_progress_marker : Int
+
+pub let nvme_feature_plp_health_check_interval : Int
+
+pub let nvme_feature_power_management : Int
+
+pub let nvme_feature_predictable_latency_mode_config : Int
+
+pub let nvme_feature_predictable_latency_mode_window : Int
+
+pub let nvme_feature_read_recovery_level_config : Int
+
+pub let nvme_feature_readonly_writethrough_mode : Int
+
+pub let nvme_feature_sanitize_config : Int
+
+pub let nvme_feature_temperature_threshold : Int
+
+pub let nvme_feature_timestamp : Int
+
+pub let nvme_feature_value_current : Int
+
+pub let nvme_feature_value_default : Int
+
+pub let nvme_feature_value_saved : Int
+
+pub let nvme_feature_value_supported_capabilities : Int
+
+pub let nvme_feature_volatile_write_cache : Int
+
+pub let nvme_feature_write_atomicity : Int
+
+pub let nvme_firmware_activate_action_activate : Int
+
+pub let nvme_firmware_activate_action_download_to_slot : Int
+
+pub let nvme_firmware_activate_action_download_to_slot_and_activate : Int
+
+pub let nvme_firmware_activate_action_download_to_slot_and_activate_immediate : Int
+
+pub let nvme_fused_operation_first_cmd : Int
+
+pub let nvme_fused_operation_normal : Int
+
+pub let nvme_fused_operation_second_cmd : Int
+
+pub let nvme_host_identifier_size : UInt
+
+pub let nvme_host_metadata_add_entry_multiple : Int
+
+pub let nvme_host_metadata_add_replace_entry : Int
+
+pub let nvme_host_metadata_delete_entry_multiple : Int
+
+pub let nvme_identifier_type_csi : Int
+
+pub let nvme_identifier_type_csi_length : Int
+
+pub let nvme_identifier_type_eui64 : Int
+
+pub let nvme_identifier_type_eui64_length : Int
+
+pub let nvme_identifier_type_nguid : Int
+
+pub let nvme_identifier_type_nguid_length : Int
+
+pub let nvme_identifier_type_uuid : Int
+
+pub let nvme_identifier_type_uuid_length : Int
+
+pub let nvme_identify_cns_active_namespace_list_io_command_set : Int
+
+pub let nvme_identify_cns_active_namespaces : Int
+
+pub let nvme_identify_cns_allocated_namespace : Int
+
+pub let nvme_identify_cns_allocated_namespace_io_command_set : Int
+
+pub let nvme_identify_cns_allocated_namespace_list : Int
+
+pub let nvme_identify_cns_allocated_namspace_list_io_command_set : Int
+
+pub let nvme_identify_cns_controller : Int
+
+pub let nvme_identify_cns_controller_list_of_nsid : Int
+
+pub let nvme_identify_cns_controller_list_of_nvm_subsystem : Int
+
+pub let nvme_identify_cns_descriptor_namespace : Int
+
+pub let nvme_identify_cns_descriptor_namespace_size : UInt
+
+pub let nvme_identify_cns_domain_list : Int
+
+pub let nvme_identify_cns_endurance_group_list : Int
+
+pub let nvme_identify_cns_io_command_set : Int
+
+pub let nvme_identify_cns_namespace_granularity_list : Int
+
+pub let nvme_identify_cns_nvm_set : Int
+
+pub let nvme_identify_cns_primary_controller_capabilities : Int
+
+pub let nvme_identify_cns_secondary_controller_list : Int
+
+pub let nvme_identify_cns_specific_controller_io_command_set : Int
+
+pub let nvme_identify_cns_specific_namespace : Int
+
+pub let nvme_identify_cns_specific_namespace_io_command_set : Int
+
+pub let nvme_identify_cns_uuid_list : Int
+
+pub let nvme_io_command_set_combination_rejected : Int
+
+pub let nvme_io_command_set_invalid : Int
+
+pub let nvme_io_command_set_not_enabled : Int
+
+pub let nvme_io_command_set_not_supported : Int
+
+pub let nvme_lba_range_type_cache : Int
+
+pub let nvme_lba_range_type_filesystem : Int
+
+pub let nvme_lba_range_type_page_swap_file : Int
+
+pub let nvme_lba_range_type_raid : Int
+
+pub let nvme_lba_range_type_reserved : Int
+
+pub let nvme_log_page_asymmetric_namespace_access : Int
+
+pub let nvme_log_page_boot_partiton : Int
+
+pub let nvme_log_page_changed_namespace_list : Int
+
+pub let nvme_log_page_changed_zone_list : Int
+
+pub let nvme_log_page_command_and_feature_lockdown : Int
+
+pub let nvme_log_page_command_effects : Int
+
+pub let nvme_log_page_device_self_test : Int
+
+pub let nvme_log_page_discovery : Int
+
+pub let nvme_log_page_endurance_group_event_aggregate : Int
+
+pub let nvme_log_page_endurance_group_information : Int
+
+pub let nvme_log_page_error_info : Int
+
+pub let nvme_log_page_feature_identifiers_supported_and_effects : Int
+
+pub let nvme_log_page_firmware_slot_info : Int
+
+pub let nvme_log_page_health_info : Int
+
+pub let nvme_log_page_lba_status_information : Int
+
+pub let nvme_log_page_media_unit_status : Int
+
+pub let nvme_log_page_nvme_mi_commands_supported_and_effects : Int
+
+pub let nvme_log_page_ocp_device_capabilities : Int
+
+pub let nvme_log_page_ocp_device_error_recovery : Int
+
+pub let nvme_log_page_ocp_device_smart_information : Int
+
+pub let nvme_log_page_ocp_firmware_activation_history : Int
+
+pub let nvme_log_page_ocp_latency_monitor : Int
+
+pub let nvme_log_page_ocp_tcg_configuration : Int
+
+pub let nvme_log_page_ocp_tcg_history : Int
+
+pub let nvme_log_page_ocp_unsupported_requirements : Int
+
+pub let nvme_log_page_persistent_event_log : Int
+
+pub let nvme_log_page_predictable_latency_event_aggregate : Int
+
+pub let nvme_log_page_predictable_latency_nvm_set : Int
+
+pub let nvme_log_page_reservation_notification : Int
+
+pub let nvme_log_page_rotational_media_information : Int
+
+pub let nvme_log_page_sanitize_status : Int
+
+pub let nvme_log_page_supported_capacity_configuration_list : Int
+
+pub let nvme_log_page_supported_log_pages : Int
+
+pub let nvme_log_page_telemetry_ctlr_initiated : Int
+
+pub let nvme_log_page_telemetry_host_initiated : Int
+
+pub let nvme_max_host_identifier_size : UInt
+
+pub let nvme_max_log_page_identifier : UInt
+
+pub let nvme_max_log_size : UInt
+
+pub let nvme_max_uuid_index : UInt
+
+pub let nvme_media_additionally_modified_after_sanitize_not_defined : Int
+
+pub let nvme_media_additionally_mofidied_after_sanitize : Int
+
+pub let nvme_media_not_additionally_modified_after_sanitize : Int
+
+pub let nvme_namespace_all : UInt
+
+pub let nvme_namespace_metadata_operating_system_namespace_name : Int
+
+pub let nvme_namespace_metadata_operating_system_namespace_name_qualifier_1 : Int
+
+pub let nvme_namespace_metadata_operating_system_namespace_name_qualifier_2 : Int
+
+pub let nvme_namespace_metadata_preboot_namespace_name : Int
+
+pub let nvme_nqn_max_len : UInt
+
+pub let nvme_nqn_name_max_len : UInt
+
+pub let nvme_num_fid_supported : UInt
+
+pub let nvme_num_log_page_identifiers : UInt
+
+pub let nvme_num_nvme_mi_commands_supported : UInt
+
+pub let nvme_num_uuid_list_entries : UInt
+
+pub let nvme_nvm_command_compare : Int
+
+pub let nvme_nvm_command_copy : Int
+
+pub let nvme_nvm_command_dataset_management : Int
+
+pub let nvme_nvm_command_flush : Int
+
+pub let nvme_nvm_command_read : Int
+
+pub let nvme_nvm_command_reservation_acquire : Int
+
+pub let nvme_nvm_command_reservation_register : Int
+
+pub let nvme_nvm_command_reservation_release : Int
+
+pub let nvme_nvm_command_reservation_report : Int
+
+pub let nvme_nvm_command_verify : Int
+
+pub let nvme_nvm_command_write : Int
+
+pub let nvme_nvm_command_write_uncorrectable : Int
+
+pub let nvme_nvm_command_write_zeroes : Int
+
+pub let nvme_nvm_command_zone_append : Int
+
+pub let nvme_nvm_command_zone_management_receive : Int
+
+pub let nvme_nvm_command_zone_management_send : Int
+
+pub let nvme_nvm_queue_priority_high : Int
+
+pub let nvme_nvm_queue_priority_low : Int
+
+pub let nvme_nvm_queue_priority_medium : Int
+
+pub let nvme_nvm_queue_priority_urgent : Int
+
+pub let nvme_ocp_device_capabilities_log_version_1 : UInt
+
+pub let nvme_ocp_device_dssd_spec_major_version_0 : UInt
+
+pub let nvme_ocp_device_dssd_spec_major_version_2 : UInt
+
+pub let nvme_ocp_device_error_recovery_log_version_2 : UInt
+
+pub let nvme_ocp_device_firmware_activation_history_log_version_1 : UInt
+
+pub let nvme_ocp_device_latency_monitor_log_version_1 : UInt
+
+pub let nvme_ocp_device_smart_information_log_version_3 : UInt
+
+pub let nvme_ocp_device_tcg_configuration_log_version_1 : UInt
+
+pub let nvme_ocp_device_tcg_history_log_version_1 : UInt
+
+pub let nvme_ocp_device_unsupported_requirements_log_version_1 : UInt
+
+pub let nvme_persistent_event_type_change_namespace : Int
+
+pub let nvme_persistent_event_type_firmware_commit : Int
+
+pub let nvme_persistent_event_type_format_nvm_completion : Int
+
+pub let nvme_persistent_event_type_format_nvm_start : Int
+
+pub let nvme_persistent_event_type_max : Int
+
+pub let nvme_persistent_event_type_nvm_subsystem_hardware_error : Int
+
+pub let nvme_persistent_event_type_power_on_or_reset : Int
+
+pub let nvme_persistent_event_type_reserved0 : Int
+
+pub let nvme_persistent_event_type_reserved1_begin : Int
+
+pub let nvme_persistent_event_type_reserved1_end : Int
+
+pub let nvme_persistent_event_type_reserved2_begin : Int
+
+pub let nvme_persistent_event_type_reserved2_end : Int
+
+pub let nvme_persistent_event_type_sanitize_completion : Int
+
+pub let nvme_persistent_event_type_sanitize_start : Int
+
+pub let nvme_persistent_event_type_set_feature : Int
+
+pub let nvme_persistent_event_type_smart_health_log_snapshot : Int
+
+pub let nvme_persistent_event_type_tcg_defined : Int
+
+pub let nvme_persistent_event_type_telemetry_log_created : Int
+
+pub let nvme_persistent_event_type_thermal_excursion : Int
+
+pub let nvme_persistent_event_type_timestamp_change : Int
+
+pub let nvme_persistent_event_type_vendor_specific_event : Int
+
+pub let nvme_prop_acq : Int
+
+pub let nvme_prop_aqa : Int
+
+pub let nvme_prop_asq : Int
+
+pub let nvme_prop_bpinfo : Int
+
+pub let nvme_prop_bpmbl : Int
+
+pub let nvme_prop_bprsel : Int
+
+pub let nvme_prop_cap : Int
+
+pub let nvme_prop_cc : Int
+
+pub let nvme_prop_cmbebs : Int
+
+pub let nvme_prop_cmbloc : Int
+
+pub let nvme_prop_cmbmsc : Int
+
+pub let nvme_prop_cmbsts : Int
+
+pub let nvme_prop_cmbswtp : Int
+
+pub let nvme_prop_cmbsz : Int
+
+pub let nvme_prop_crto : Int
+
+pub let nvme_prop_csts : Int
+
+pub let nvme_prop_intmc : Int
+
+pub let nvme_prop_intms : Int
+
+pub let nvme_prop_nssd : Int
+
+pub let nvme_prop_nssr : Int
+
+pub let nvme_prop_pmrcap : Int
+
+pub let nvme_prop_pmrctl : Int
+
+pub let nvme_prop_pmrebs : Int
+
+pub let nvme_prop_pmrmscl : Int
+
+pub let nvme_prop_pmrmscu : Int
+
+pub let nvme_prop_pmrsts : Int
+
+pub let nvme_prop_pmrswtp : Int
+
+pub let nvme_prop_vs : Int
+
+pub let nvme_protection_information_not_enabled : Int
+
+pub let nvme_protection_information_type1 : Int
+
+pub let nvme_protection_information_type2 : Int
+
+pub let nvme_protection_information_type3 : Int
+
+pub let nvme_psdt_xfer_prp : UInt
+
+pub let nvme_psdt_xfer_reserved : UInt
+
+pub let nvme_psdt_xfer_sgl_byte : UInt
+
+pub let nvme_psdt_xfer_sgl_qword : UInt
+
+pub let nvme_rdma_keyed_sgl_desc_subtype_invalidate : Int
+
+pub let nvme_read_behavior_not_reported : Int
+
+pub let nvme_read_behavior_return_ones : Int
+
+pub let nvme_read_behavior_return_zero : Int
+
+pub let nvme_reservation_acquire_action_acquire : Int
+
+pub let nvme_reservation_acquire_action_preempt : Int
+
+pub let nvme_reservation_acquire_action_preempt_and_abort : Int
+
+pub let nvme_reservation_notification_type_empty_log_page : Int
+
+pub let nvme_reservation_notification_type_registration_preempted : Int
+
+pub let nvme_reservation_notification_type_registration_released : Int
+
+pub let nvme_reservation_notification_type_reservation_preepmpted : Int
+
+pub let nvme_reservation_register_action_register : Int
+
+pub let nvme_reservation_register_action_replace : Int
+
+pub let nvme_reservation_register_action_unregister : Int
+
+pub let nvme_reservation_register_ptpl_state_no_change : Int
+
+pub let nvme_reservation_register_ptpl_state_reserved : Int
+
+pub let nvme_reservation_register_ptpl_state_set_to_0 : Int
+
+pub let nvme_reservation_register_ptpl_state_set_to_1 : Int
+
+pub let nvme_reservation_release_action_clear : Int
+
+pub let nvme_reservation_release_action_release : Int
+
+pub let nvme_reservation_type_exclusive_access : Int
+
+pub let nvme_reservation_type_exclusive_access_all_registrants : Int
+
+pub let nvme_reservation_type_exclusive_access_registrants_only : Int
+
+pub let nvme_reservation_type_reserved : Int
+
+pub let nvme_reservation_type_write_exclusive : Int
+
+pub let nvme_reservation_type_write_exclusive_all_registrants : Int
+
+pub let nvme_reservation_type_write_exclusive_registrants_only : Int
+
+pub let nvme_sanitize_action_exit_failure_mode : Int
+
+pub let nvme_sanitize_action_reserved : Int
+
+pub let nvme_sanitize_action_start_block_erase_sanitize : Int
+
+pub let nvme_sanitize_action_start_crypto_erase_sanitize : Int
+
+pub let nvme_sanitize_action_start_overwrite_sanitize : Int
+
+pub let nvme_sanitize_operation_failed : Int
+
+pub let nvme_sanitize_operation_in_progress : Int
+
+pub let nvme_sanitize_operation_none : Int
+
+pub let nvme_sanitize_operation_succeeded : Int
+
+pub let nvme_sanitize_operation_succeeded_with_forced_deallocation : Int
+
+pub let nvme_secure_erase_cryptographic : Int
+
+pub let nvme_secure_erase_none : Int
+
+pub let nvme_secure_erase_user_data : Int
+
+pub let nvme_sgl_desc_subtype_address : Int
+
+pub let nvme_sgl_desc_subtype_offset : Int
+
+pub let nvme_sgl_desc_subtype_transport_a : Int
+
+pub let nvme_sgl_desc_subtype_transport_b : Int
+
+pub let nvme_sgl_desc_subtype_transport_c : Int
+
+pub let nvme_sgl_desc_subtype_transport_d : Int
+
+pub let nvme_sgl_desc_subtype_transport_e : Int
+
+pub let nvme_sgl_desc_subtype_transport_f : Int
+
+pub let nvme_sgl_desc_type_bit_bucket : Int
+
+pub let nvme_sgl_desc_type_data_block : Int
+
+pub let nvme_sgl_desc_type_keyed_data_block : Int
+
+pub let nvme_sgl_desc_type_last_segment : Int
+
+pub let nvme_sgl_desc_type_max : Int
+
+pub let nvme_sgl_desc_type_segment : Int
+
+pub let nvme_sgl_desc_type_transport_data_block : Int
+
+pub let nvme_state_zsc : Int
+
+pub let nvme_state_zse : Int
+
+pub let nvme_state_zseo : Int
+
+pub let nvme_state_zsf : Int
+
+pub let nvme_state_zsio : Int
+
+pub let nvme_state_zso : Int
+
+pub let nvme_state_zsro : Int
+
+pub let nvme_status_abort_command_limit_exceeded : Int
+
+pub let nvme_status_admin_command_media_not_ready : Int
+
+pub let nvme_status_ana_attach_failed : Int
+
+pub let nvme_status_asymmetric_access_inaccessible : Int
+
+pub let nvme_status_asymmetric_access_persistent_loss : Int
+
+pub let nvme_status_asymmetric_access_transition : Int
+
+pub let nvme_status_async_event_request_limit_exceeded : Int
+
+pub let nvme_status_atomic_write_unit_exceeded : Int
+
+pub let nvme_status_authentication_required : Int
+
+pub let nvme_status_boot_partition_write_prohibited : Int
+
+pub let nvme_status_command_abort_requested : Int
+
+pub let nvme_status_command_aborted_by_host : Int
+
+pub let nvme_status_command_aborted_due_to_failed_fused_command : Int
+
+pub let nvme_status_command_aborted_due_to_failed_missing_command : Int
+
+pub let nvme_status_command_aborted_due_to_power_loss_notification : Int
+
+pub let nvme_status_command_aborted_due_to_preempt_abort : Int
+
+pub let nvme_status_command_aborted_due_to_sq_deletion : Int
+
+pub let nvme_status_command_id_conflict : Int
+
+pub let nvme_status_command_interrupted : Int
+
+pub let nvme_status_command_not_supported_for_queue_in_cmb : Int
+
+pub let nvme_status_command_prohibited_by_lockdown : Int
+
+pub let nvme_status_command_sequence_error : Int
+
+pub let nvme_status_completion_queue_invalid : Int
+
+pub let nvme_status_connect_invalid_host : Int
+
+pub let nvme_status_connect_invalid_parameters : Int
+
+pub let nvme_status_connect_restart_discovery : Int
+
+pub let nvme_status_controller_busy : Int
+
+pub let nvme_status_controller_list_invalid : Int
+
+pub let nvme_status_controller_pathing_error : Int
+
+pub let nvme_status_data_sgl_length_invalid : Int
+
+pub let nvme_status_data_transfer_error : Int
+
+pub let nvme_status_device_self_test_in_progress : Int
+
+pub let nvme_status_directive_id_invalid : Int
+
+pub let nvme_status_directive_type_invalid : Int
+
+pub let nvme_status_discover_restart : Int
+
+pub let nvme_status_feature_id_not_saveable : Int
+
+pub let nvme_status_feature_not_changeable : Int
+
+pub let nvme_status_feature_not_namespace_specific : Int
+
+pub let nvme_status_firmware_activation_prohibited : Int
+
+pub let nvme_status_firmware_activation_requires_conventional_reset : Int
+
+pub let nvme_status_firmware_activation_requires_max_time_violation : Int
+
+pub let nvme_status_firmware_activation_requires_nvm_subsystem_reset : Int
+
+pub let nvme_status_firmware_activation_requires_reset : Int
+
+pub let nvme_status_format_in_progress : Int
+
+pub let nvme_status_host_identifier_inconsistent_format : Int
+
+pub let nvme_status_host_pathing_error : Int
+
+pub let nvme_status_incompatible_format : Int
+
+pub let nvme_status_insufficient_capacity : Int
+
+pub let nvme_status_insufficient_discovery_resources : Int
+
+pub let nvme_status_internal_device_error : Int
+
+pub let nvme_status_internal_path_error : Int
+
+pub let nvme_status_invalid_ana_group_identifier : Int
+
+pub let nvme_status_invalid_command_opcode : Int
+
+pub let nvme_status_invalid_controller_identifier : Int
+
+pub let nvme_status_invalid_discovery_information : Int
+
+pub let nvme_status_invalid_field_in_command : Int
+
+pub let nvme_status_invalid_firmware_image : Int
+
+pub let nvme_status_invalid_firmware_slot : Int
+
+pub let nvme_status_invalid_format : Int
+
+pub let nvme_status_invalid_interrupt_vector : Int
+
+pub let nvme_status_invalid_log_page : Int
+
+pub let nvme_status_invalid_namespace_or_format : Int
+
+pub let nvme_status_invalid_number_of_controller_resources : Int
+
+pub let nvme_status_invalid_number_of_sgl_descr : Int
+
+pub let nvme_status_invalid_queue_deletion : Int
+
+pub let nvme_status_invalid_queue_identifier : Int
+
+pub let nvme_status_invalid_queue_type : Int
+
+pub let nvme_status_invalid_resource_identifier : Int
+
+pub let nvme_status_invalid_secondary_controller_state : Int
+
+pub let nvme_status_invalid_sgl_last_segment_descr : Int
+
+pub let nvme_status_invalid_use_of_controller_memory_buffer : Int
+
+pub let nvme_status_keep_alive_timeout_expired : Int
+
+pub let nvme_status_keep_alive_timeout_invalid : Int
+
+pub let nvme_status_max_queue_size_exceeded : Int
+
+pub let nvme_status_metadata_sgl_length_invalid : Int
+
+pub let nvme_status_namespace_already_attached : Int
+
+pub let nvme_status_namespace_attachment_limit_exceeded : Int
+
+pub let nvme_status_namespace_identifier_unavailable : Int
+
+pub let nvme_status_namespace_insufficient_capacity : Int
+
+pub let nvme_status_namespace_is_private : Int
+
+pub let nvme_status_namespace_is_write_protected : Int
+
+pub let nvme_status_namespace_not_attached : Int
+
+pub let nvme_status_namespace_thin_provisioning_not_supported : Int
+
+pub let nvme_status_nvm_access_denied : Int
+
+pub let nvme_status_nvm_attempted_write_to_read_only_range : Int
+
+pub let nvme_status_nvm_capacity_exceeded : Int
+
+pub let nvme_status_nvm_command_size_limit_exceeded : Int
+
+pub let nvme_status_nvm_compare_failure : Int
+
+pub let nvme_status_nvm_conflicting_attributes : Int
+
+pub let nvme_status_nvm_deallocated_or_unwritten_logical_block : Int
+
+pub let nvme_status_nvm_end_to_end_application_tag_check_error : Int
+
+pub let nvme_status_nvm_end_to_end_guard_check_error : Int
+
+pub let nvme_status_nvm_end_to_end_reference_tag_check_error : Int
+
+pub let nvme_status_nvm_invalid_protection_information : Int
+
+pub let nvme_status_nvm_lba_out_of_range : Int
+
+pub let nvme_status_nvm_namespace_not_ready : Int
+
+pub let nvme_status_nvm_reservation_conflict : Int
+
+pub let nvme_status_nvm_unrecovered_read_error : Int
+
+pub let nvme_status_nvm_write_fault : Int
+
+pub let nvme_status_operation_denied : Int
+
+pub let nvme_status_overlapping_range : Int
+
+pub let nvme_status_prohibition_not_supported : Int
+
+pub let nvme_status_prp_offset_invalid : Int
+
+pub let nvme_status_reserved : Int
+
+pub let nvme_status_sanitize_failed : Int
+
+pub let nvme_status_sanitize_in_progress : Int
+
+pub let nvme_status_sanitize_prohibited_on_persistent_memory : Int
+
+pub let nvme_status_sgl_data_block_granularity_invalid : Int
+
+pub let nvme_status_sgl_descr_type_invalid : Int
+
+pub let nvme_status_sgl_offset_invalid : Int
+
+pub let nvme_status_stream_resource_allocation_failed : Int
+
+pub let nvme_status_success_completion : Int
+
+pub let nvme_status_transient_transport_error : Int
+
+pub let nvme_status_type_command_specific : Int
+
+pub let nvme_status_type_generic_command : Int
+
+pub let nvme_status_type_media_error : Int
+
+pub let nvme_status_type_path_related : Int
+
+pub let nvme_status_type_vendor_specific : Int
+
+pub let nvme_status_zone_boundary_error : Int
+
+pub let nvme_status_zone_full : Int
+
+pub let nvme_status_zone_invalid_format : Int
+
+pub let nvme_status_zone_invalid_state_transition : Int
+
+pub let nvme_status_zone_invalid_write : Int
+
+pub let nvme_status_zone_offline : Int
+
+pub let nvme_status_zone_read_only : Int
+
+pub let nvme_status_zone_too_many_active : Int
+
+pub let nvme_status_zone_too_many_open : Int
+
+pub let nvme_streams_get_status_max_ids : UInt
+
+pub let nvme_streams_id_max : UInt
+
+pub let nvme_streams_id_min : UInt
+
+pub let nvme_telemetry_data_block_size : UInt
+
+pub let nvme_temperature_over_threshold : Int
+
+pub let nvme_temperature_under_threshold : Int
+
+pub let nvme_uuid_association_none : UInt
+
+pub let nvme_uuid_association_pci_subsystem_vid : UInt
+
+pub let nvme_uuid_association_pci_vid : UInt
+
+pub let nvme_uuid_association_reserved : UInt
+
+pub let nvme_vendor_specific_admin_command_max_opcode : UInt
+
+pub let nvme_vendor_specific_admin_command_min_opcode : UInt
+
+pub let nvme_vendor_specific_feature_max_identifier : UInt
+
+pub let nvme_vendor_specific_feature_min_identifier : UInt
+
+pub let nvme_vendor_specific_log_page_max_identifier : UInt
+
+pub let nvme_vendor_specific_log_page_min_identifier : UInt
+
+pub let nvme_vendor_specific_nvm_command_max_opcode : UInt
+
+pub let nvme_vendor_specific_nvm_command_min_opcode : UInt
+
+pub let nvme_wcs_device_error_recovery_log_version_1 : UInt
+
+pub let nvme_wcs_device_smart_attributes_log_version_2 : UInt
+
+pub let nvme_zone_receive_extended_report_zones : Int
+
+pub let nvme_zone_receive_report_zones : Int
+
+pub let nvme_zone_send_close : Int
+
+pub let nvme_zone_send_finish : Int
+
+pub let nvme_zone_send_offline : Int
+
+pub let nvme_zone_send_open : Int
+
+pub let nvme_zone_send_reset : Int
+
+pub let nvme_zone_send_set_zone_descriptor : Int
+
+pub let nvme_zra_all_zones : Int
+
+pub let nvme_zra_closed_state_zones : Int
+
+pub let nvme_zra_empty_state_zones : Int
+
+pub let nvme_zra_eo_state_zones : Int
+
+pub let nvme_zra_full_state_zones : Int
+
+pub let nvme_zra_io_state_zones : Int
+
+pub let nvme_zra_offline_state_zones : Int
+
+pub let nvme_zra_ro_state_zones : Int
+
+pub let nvmeof_address_fc : Int
+
+pub let nvmeof_address_i_pv4 : Int
+
+pub let nvmeof_address_i_pv6 : Int
+
+pub let nvmeof_address_ib : Int
+
+pub let nvmeof_address_loopback : Int
+
+pub let nvmeof_address_max : Int
+
+pub let nvmeof_address_unknown : Int
+
+pub let nvmeof_adminq_max_depth : UInt
+
+pub let nvmeof_adminq_min_depth : UInt
+
+pub let nvmeof_auth_dh_group_not_usable : Int
+
+pub let nvmeof_auth_dhchap_group2048 : Int
+
+pub let nvmeof_auth_dhchap_group3072 : Int
+
+pub let nvmeof_auth_dhchap_group4096 : Int
+
+pub let nvmeof_auth_dhchap_group6144 : Int
+
+pub let nvmeof_auth_dhchap_group8192 : Int
+
+pub let nvmeof_auth_dhchap_group_max : Int
+
+pub let nvmeof_auth_dhchap_group_null : Int
+
+pub let nvmeof_auth_dhchap_hash_max : Int
+
+pub let nvmeof_auth_dhchap_hash_reserved : Int
+
+pub let nvmeof_auth_dhchap_hash_sha256 : Int
+
+pub let nvmeof_auth_dhchap_hash_sha384 : Int
+
+pub let nvmeof_auth_dhchap_hash_sha512 : Int
+
+pub let nvmeof_auth_failed : Int
+
+pub let nvmeof_auth_failure_reason_failed : Int
+
+pub let nvmeof_auth_hash_function_not_usable : Int
+
+pub let nvmeof_auth_id_challenge : Int
+
+pub let nvmeof_auth_id_failure1 : Int
+
+pub let nvmeof_auth_id_failure2 : Int
+
+pub let nvmeof_auth_id_negotiate : Int
+
+pub let nvmeof_auth_id_reply : Int
+
+pub let nvmeof_auth_id_success1 : Int
+
+pub let nvmeof_auth_id_success2 : Int
+
+pub let nvmeof_auth_incorrect_payload : Int
+
+pub let nvmeof_auth_incorrect_protocol_message : Int
+
+pub let nvmeof_auth_protocol_dhchap : Int
+
+pub let nvmeof_auth_protocol_not_usable : Int
+
+pub let nvmeof_auth_sc_auth_concat_sc_required : Int
+
+pub let nvmeof_auth_sc_auth_required : Int
+
+pub let nvmeof_auth_sc_reserved : Int
+
+pub let nvmeof_auth_sc_unspecified : Int
+
+pub let nvmeof_auth_secure_channel_concat_mismatch : Int
+
+pub let nvmeof_auth_type_common_messages : Int
+
+pub let nvmeof_auth_type_dhchap_messages : Int
+
+pub let nvmeof_dhchap_prefix_v1 : String
+
+pub let nvmeof_dhchap_protocol_id : UInt
+
+pub let nvmeof_dhchap_reply_cval_notvalid : UInt
+
+pub let nvmeof_dhchap_reply_cval_valid : UInt
+
+pub let nvmeof_dhchap_success1_rval_notvalid : UInt
+
+pub let nvmeof_dhchap_success1_rval_valid : UInt
+
+pub let nvmeof_discovery_log_version_0 : UInt
+
+pub let nvmeof_discovery_nqn : String
+
+pub let nvmeof_ioq_max_depth : UInt
+
+pub let nvmeof_ioq_min_depth : UInt
+
+pub let nvmeof_property_size_4_bytes : UInt
+
+pub let nvmeof_property_size_8_bytes : UInt
+
+pub let nvmeof_sc_not_required : Int
+
+pub let nvmeof_sc_required : Int
+
+pub let nvmeof_sc_reserved : Int
+
+pub let nvmeof_sc_unspecified : Int
+
+pub let nvmeof_secure_channel_concat_none : Int
+
+pub let nvmeof_secure_channel_concat_with_tls : Int
+
+pub let nvmeof_secure_channel_new_tlspsk : Int
+
+pub let nvmeof_secure_channel_replace_tlspsk : Int
+
+pub let nvmeof_subsys_type_disc_current : Int
+
+pub let nvmeof_subsys_type_disc_referral : Int
+
+pub let nvmeof_subsys_type_io : Int
+
+pub let nvmeof_subsys_type_max : Int
+
+pub let nvmeof_subsys_type_unknown : Int
+
+pub let nvmeof_transport_addr_max_len : UInt
+
+pub let nvmeof_transport_fc : Int
+
+pub let nvmeof_transport_loopback : Int
+
+pub let nvmeof_transport_max : Int
+
+pub let nvmeof_transport_rdma : Int
+
+pub let nvmeof_transport_sas_max_len : UInt
+
+pub let nvmeof_transport_servid_max_len : UInt
+
+pub let nvmeof_transport_tcp : Int
+
+pub let nvmeof_transport_unknown : Int
+
+pub let tcg_history_entry_version_1 : UInt
+
+pub let zdes_size_multiplier_in_bytes : UInt
+
+// Errors
+
+// Types and methods
+
+// Type aliases
+pub using @d9c5d9afd24c7e85 {type ABORTEStruct_7ceffef81e25 as ABORTEStruct}
+
+pub using @d9c5d9afd24c7e85 {type ACTIVELATENCYCONFIGURATION_f66483e87444 as ACTIVELATENCYCONFIGURATION}
+
+pub using @d9c5d9afd24c7e85 {type AFIEStruct_a76515a05899 as AFIEStruct}
+
+pub using @d9c5d9afd24c7e85 {type ANACAPEStruct_902884d7896b as ANACAPEStruct}
+
+pub using @d9c5d9afd24c7e85 {type APSTAEStruct_1368e9605713 as APSTAEStruct}
+
+pub using @d9c5d9afd24c7e85 {type ATTRIBEStruct_5e43010b10a1 as ATTRIBEStruct_5e43010b10}
+
+pub using @d9c5d9afd24c7e85 {type ATTRIBEStruct_df5af7ba843d as ATTRIBEStruct_df5af7ba84}
+
+pub using @d9c5d9afd24c7e85 {type AUTHREQEUnion_e0e8943c8cb5 as AUTHREQEUnion}
+
+pub using @d9c5d9afd24c7e85 {type AVSCCEStruct_dc2400e0f92d as AVSCCEStruct}
+
+pub using @d9c5d9afd24c7e85 {type Anonymous1EStruct_37cf13bf8ef1 as Anonymous1EStruct_37cf13bf8e}
+
+pub using @d9c5d9afd24c7e85 {type Anonymous1EStruct_476e1628bee8 as Anonymous1EStruct_476e1628be}
+
+pub using @d9c5d9afd24c7e85 {type Anonymous1EUnion_51ac5524399b as Anonymous1EUnion}
+
+pub using @d9c5d9afd24c7e85 {type Anonymous2EStruct_5855214c2156 as Anonymous2EStruct_5855214c21}
+
+pub using @d9c5d9afd24c7e85 {type Anonymous2EStruct_609b279cfc85 as Anonymous2EStruct_609b279cfc}
+
+pub using @d9c5d9afd24c7e85 {type Anonymous2EUnion_539375e24bf1 as Anonymous2EUnion}
+
+pub using @d9c5d9afd24c7e85 {type AnonymousEStruct_0400499e62db as AnonymousEStruct_0400499e62}
+
+pub using @d9c5d9afd24c7e85 {type AnonymousEStruct_04d4b96499cf as AnonymousEStruct_04d4b96499}
+
+pub using @d9c5d9afd24c7e85 {type AnonymousEStruct_04fcd4ff422d as AnonymousEStruct_04fcd4ff42}
+
+pub using @d9c5d9afd24c7e85 {type AnonymousEStruct_06e98f82bc65 as AnonymousEStruct_06e98f82bc}
+
+pub using @d9c5d9afd24c7e85 {type AnonymousEStruct_080bfab5a29d as AnonymousEStruct_080bfab5a2}
+
+pub using @d9c5d9afd24c7e85 {type AnonymousEStruct_0836012c2ab5 as AnonymousEStruct_0836012c2a}
+
+pub using @d9c5d9afd24c7e85 {type AnonymousEStruct_0cd0f3ac2876 as AnonymousEStruct_0cd0f3ac28}
+
+pub using @d9c5d9afd24c7e85 {type AnonymousEStruct_0dceb46e55f3 as AnonymousEStruct_0dceb46e55}
+
+pub using @d9c5d9afd24c7e85 {type AnonymousEStruct_0ea7709b7809 as AnonymousEStruct_0ea7709b78}
+
+pub using @d9c5d9afd24c7e85 {type AnonymousEStruct_1c18fdcafd23 as AnonymousEStruct_1c18fdcafd}
+
+pub using @d9c5d9afd24c7e85 {type AnonymousEStruct_1c60524d0619 as AnonymousEStruct_1c60524d06}
+
+pub using @d9c5d9afd24c7e85 {type AnonymousEStruct_1d1cf88e116e as AnonymousEStruct_1d1cf88e11}
+
+pub using @d9c5d9afd24c7e85 {type AnonymousEStruct_1d5e9718ec8b as AnonymousEStruct_1d5e9718ec}
+
+pub using @d9c5d9afd24c7e85 {type AnonymousEStruct_1edc86f515e5 as AnonymousEStruct_1edc86f515}
+
+pub using @d9c5d9afd24c7e85 {type AnonymousEStruct_1f84737dd23c as AnonymousEStruct_1f84737dd2}
+
+pub using @d9c5d9afd24c7e85 {type AnonymousEStruct_2049bdee8fa6 as AnonymousEStruct_2049bdee8f}
+
+pub using @d9c5d9afd24c7e85 {type AnonymousEStruct_27b4aeb8d992 as AnonymousEStruct_27b4aeb8d9}
+
+pub using @d9c5d9afd24c7e85 {type AnonymousEStruct_281f31456050 as AnonymousEStruct_281f314560}
+
+pub using @d9c5d9afd24c7e85 {type AnonymousEStruct_292a24aab0a6 as AnonymousEStruct_292a24aab0}
+
+pub using @d9c5d9afd24c7e85 {type AnonymousEStruct_2c8ada8469b4 as AnonymousEStruct_2c8ada8469}
+
+pub using @d9c5d9afd24c7e85 {type AnonymousEStruct_30c2401d6da1 as AnonymousEStruct_30c2401d6d}
+
+pub using @d9c5d9afd24c7e85 {type AnonymousEStruct_323fdfa1e6a4 as AnonymousEStruct_323fdfa1e6}
+
+pub using @d9c5d9afd24c7e85 {type AnonymousEStruct_3466e99321a4 as AnonymousEStruct_3466e99321}
+
+pub using @d9c5d9afd24c7e85 {type AnonymousEStruct_34fd1f591739 as AnonymousEStruct_34fd1f5917}
+
+pub using @d9c5d9afd24c7e85 {type AnonymousEStruct_3766b469ce0e as AnonymousEStruct_3766b469ce}
+
+pub using @d9c5d9afd24c7e85 {type AnonymousEStruct_3ac4b5d766a5 as AnonymousEStruct_3ac4b5d766}
+
+pub using @d9c5d9afd24c7e85 {type AnonymousEStruct_3b3266bfd87b as AnonymousEStruct_3b3266bfd8}
+
+pub using @d9c5d9afd24c7e85 {type AnonymousEStruct_3c59611cda61 as AnonymousEStruct_3c59611cda}
+
+pub using @d9c5d9afd24c7e85 {type AnonymousEStruct_3e4394374291 as AnonymousEStruct_3e43943742}
+
+pub using @d9c5d9afd24c7e85 {type AnonymousEStruct_411d6f92733f as AnonymousEStruct_411d6f9273}
+
+pub using @d9c5d9afd24c7e85 {type AnonymousEStruct_412fe964bf1a as AnonymousEStruct_412fe964bf}
+
+pub using @d9c5d9afd24c7e85 {type AnonymousEStruct_414b870db25f as AnonymousEStruct_414b870db2}
+
+pub using @d9c5d9afd24c7e85 {type AnonymousEStruct_41583fbdabfc as AnonymousEStruct_41583fbdab}
+
+pub using @d9c5d9afd24c7e85 {type AnonymousEStruct_43f4d12f0e82 as AnonymousEStruct_43f4d12f0e}
+
+pub using @d9c5d9afd24c7e85 {type AnonymousEStruct_469100d882df as AnonymousEStruct_469100d882}
+
+pub using @d9c5d9afd24c7e85 {type AnonymousEStruct_4c7f5949d5f0 as AnonymousEStruct_4c7f5949d5}
+
+pub using @d9c5d9afd24c7e85 {type AnonymousEStruct_4d314f7d5d63 as AnonymousEStruct_4d314f7d5d}
+
+pub using @d9c5d9afd24c7e85 {type AnonymousEStruct_4fe3cc019f8a as AnonymousEStruct_4fe3cc019f}
+
+pub using @d9c5d9afd24c7e85 {type AnonymousEStruct_51a62da77d40 as AnonymousEStruct_51a62da77d}
+
+pub using @d9c5d9afd24c7e85 {type AnonymousEStruct_554580a01fc1 as AnonymousEStruct_554580a01f}
+
+pub using @d9c5d9afd24c7e85 {type AnonymousEStruct_592f47295969 as AnonymousEStruct_592f472959}
+
+pub using @d9c5d9afd24c7e85 {type AnonymousEStruct_5b59f016d00a as AnonymousEStruct_5b59f016d0}
+
+pub using @d9c5d9afd24c7e85 {type AnonymousEStruct_5c5afffd9ef6 as AnonymousEStruct_5c5afffd9e}
+
+pub using @d9c5d9afd24c7e85 {type AnonymousEStruct_5cba23fe9127 as AnonymousEStruct_5cba23fe91}
+
+pub using @d9c5d9afd24c7e85 {type AnonymousEStruct_5daf70b878c9 as AnonymousEStruct_5daf70b878}
+
+pub using @d9c5d9afd24c7e85 {type AnonymousEStruct_5eb5b07509ec as AnonymousEStruct_5eb5b07509}
+
+pub using @d9c5d9afd24c7e85 {type AnonymousEStruct_610478c84546 as AnonymousEStruct_610478c845}
+
+pub using @d9c5d9afd24c7e85 {type AnonymousEStruct_649cf8f9ea1a as AnonymousEStruct_649cf8f9ea}
+
+pub using @d9c5d9afd24c7e85 {type AnonymousEStruct_6af9e1eb6985 as AnonymousEStruct_6af9e1eb69}
+
+pub using @d9c5d9afd24c7e85 {type AnonymousEStruct_6b63761b2d31 as AnonymousEStruct_6b63761b2d}
+
+pub using @d9c5d9afd24c7e85 {type AnonymousEStruct_6cd99d2f2fb7 as AnonymousEStruct_6cd99d2f2f}
+
+pub using @d9c5d9afd24c7e85 {type AnonymousEStruct_6d55c432e498 as AnonymousEStruct_6d55c432e4}
+
+pub using @d9c5d9afd24c7e85 {type AnonymousEStruct_73fdd0fb1bdd as AnonymousEStruct_73fdd0fb1b}
+
+pub using @d9c5d9afd24c7e85 {type AnonymousEStruct_747c49e5624f as AnonymousEStruct_747c49e562}
+
+pub using @d9c5d9afd24c7e85 {type AnonymousEStruct_77587e0b2e3f as AnonymousEStruct_77587e0b2e}
+
+pub using @d9c5d9afd24c7e85 {type AnonymousEStruct_7927dc7eec45 as AnonymousEStruct_7927dc7eec}
+
+pub using @d9c5d9afd24c7e85 {type AnonymousEStruct_7c39bea4249c as AnonymousEStruct_7c39bea424}
+
+pub using @d9c5d9afd24c7e85 {type AnonymousEStruct_82435b4ad776 as AnonymousEStruct_82435b4ad7}
+
+pub using @d9c5d9afd24c7e85 {type AnonymousEStruct_85af545c9303 as AnonymousEStruct_85af545c93}
+
+pub using @d9c5d9afd24c7e85 {type AnonymousEStruct_85e48a235d61 as AnonymousEStruct_85e48a235d}
+
+pub using @d9c5d9afd24c7e85 {type AnonymousEStruct_8abc6bdf92ac as AnonymousEStruct_8abc6bdf92}
+
+pub using @d9c5d9afd24c7e85 {type AnonymousEStruct_8bf5263a6cf1 as AnonymousEStruct_8bf5263a6c}
+
+pub using @d9c5d9afd24c7e85 {type AnonymousEStruct_8c22a8b41abf as AnonymousEStruct_8c22a8b41a}
+
+pub using @d9c5d9afd24c7e85 {type AnonymousEStruct_8c4136b80794 as AnonymousEStruct_8c4136b807}
+
+pub using @d9c5d9afd24c7e85 {type AnonymousEStruct_9041d38251ef as AnonymousEStruct_9041d38251}
+
+pub using @d9c5d9afd24c7e85 {type AnonymousEStruct_92e261c0d733 as AnonymousEStruct_92e261c0d7}
+
+pub using @d9c5d9afd24c7e85 {type AnonymousEStruct_93ad30ab616e as AnonymousEStruct_93ad30ab61}
+
+pub using @d9c5d9afd24c7e85 {type AnonymousEStruct_957f719fd62c as AnonymousEStruct_957f719fd6}
+
+pub using @d9c5d9afd24c7e85 {type AnonymousEStruct_96df3c747a43 as AnonymousEStruct_96df3c747a}
+
+pub using @d9c5d9afd24c7e85 {type AnonymousEStruct_9a8d20a5cd72 as AnonymousEStruct_9a8d20a5cd}
+
+pub using @d9c5d9afd24c7e85 {type AnonymousEStruct_9ad2c9f4b797 as AnonymousEStruct_9ad2c9f4b7}
+
+pub using @d9c5d9afd24c7e85 {type AnonymousEStruct_9bbe3b854048 as AnonymousEStruct_9bbe3b8540}
+
+pub using @d9c5d9afd24c7e85 {type AnonymousEStruct_9f452f6c152a as AnonymousEStruct_9f452f6c15}
+
+pub using @d9c5d9afd24c7e85 {type AnonymousEStruct_a0d279f7a365 as AnonymousEStruct_a0d279f7a3}
+
+pub using @d9c5d9afd24c7e85 {type AnonymousEStruct_a200ec20eb4c as AnonymousEStruct_a200ec20eb}
+
+pub using @d9c5d9afd24c7e85 {type AnonymousEStruct_a3ab813bb76e as AnonymousEStruct_a3ab813bb7}
+
+pub using @d9c5d9afd24c7e85 {type AnonymousEStruct_a76827d9c2e5 as AnonymousEStruct_a76827d9c2}
+
+pub using @d9c5d9afd24c7e85 {type AnonymousEStruct_a95c46ffa3a7 as AnonymousEStruct_a95c46ffa3}
+
+pub using @d9c5d9afd24c7e85 {type AnonymousEStruct_ab8ba66ba312 as AnonymousEStruct_ab8ba66ba3}
+
+pub using @d9c5d9afd24c7e85 {type AnonymousEStruct_ac4d854d29a4 as AnonymousEStruct_ac4d854d29}
+
+pub using @d9c5d9afd24c7e85 {type AnonymousEStruct_ada3ef7b2040 as AnonymousEStruct_ada3ef7b20}
+
+pub using @d9c5d9afd24c7e85 {type AnonymousEStruct_b1aac5f560c8 as AnonymousEStruct_b1aac5f560}
+
+pub using @d9c5d9afd24c7e85 {type AnonymousEStruct_b35b9f61f8b2 as AnonymousEStruct_b35b9f61f8}
+
+pub using @d9c5d9afd24c7e85 {type AnonymousEStruct_b5d736fa4fcd as AnonymousEStruct_b5d736fa4f}
+
+pub using @d9c5d9afd24c7e85 {type AnonymousEStruct_b86116ebd463 as AnonymousEStruct_b86116ebd4}
+
+pub using @d9c5d9afd24c7e85 {type AnonymousEStruct_bc31ccc77571 as AnonymousEStruct_bc31ccc775}
+
+pub using @d9c5d9afd24c7e85 {type AnonymousEStruct_bcfe7f120f8b as AnonymousEStruct_bcfe7f120f}
+
+pub using @d9c5d9afd24c7e85 {type AnonymousEStruct_bfc5269af374 as AnonymousEStruct_bfc5269af3}
+
+pub using @d9c5d9afd24c7e85 {type AnonymousEStruct_c2f61ca71ba7 as AnonymousEStruct_c2f61ca71b}
+
+pub using @d9c5d9afd24c7e85 {type AnonymousEStruct_c33df4faaed9 as AnonymousEStruct_c33df4faae}
+
+pub using @d9c5d9afd24c7e85 {type AnonymousEStruct_c4232f83ef58 as AnonymousEStruct_c4232f83ef}
+
+pub using @d9c5d9afd24c7e85 {type AnonymousEStruct_c5ca502ad357 as AnonymousEStruct_c5ca502ad3}
+
+pub using @d9c5d9afd24c7e85 {type AnonymousEStruct_cb198806b7ce as AnonymousEStruct_cb198806b7}
+
+pub using @d9c5d9afd24c7e85 {type AnonymousEStruct_cc1dbcea429a as AnonymousEStruct_cc1dbcea42}
+
+pub using @d9c5d9afd24c7e85 {type AnonymousEStruct_cccd62c0e573 as AnonymousEStruct_cccd62c0e5}
+
+pub using @d9c5d9afd24c7e85 {type AnonymousEStruct_ccf7f94a805d as AnonymousEStruct_ccf7f94a80}
+
+pub using @d9c5d9afd24c7e85 {type AnonymousEStruct_cfc72f6d8bff as AnonymousEStruct_cfc72f6d8b}
+
+pub using @d9c5d9afd24c7e85 {type AnonymousEStruct_cfe5eabed7b9 as AnonymousEStruct_cfe5eabed7}
+
+pub using @d9c5d9afd24c7e85 {type AnonymousEStruct_d0368ddd3b94 as AnonymousEStruct_d0368ddd3b}
+
+pub using @d9c5d9afd24c7e85 {type AnonymousEStruct_d3fff55a92f0 as AnonymousEStruct_d3fff55a92}
+
+pub using @d9c5d9afd24c7e85 {type AnonymousEStruct_d74c04e1b183 as AnonymousEStruct_d74c04e1b1}
+
+pub using @d9c5d9afd24c7e85 {type AnonymousEStruct_d7a1d6cf7b2a as AnonymousEStruct_d7a1d6cf7b}
+
+pub using @d9c5d9afd24c7e85 {type AnonymousEStruct_d7e119c749b3 as AnonymousEStruct_d7e119c749}
+
+pub using @d9c5d9afd24c7e85 {type AnonymousEStruct_d87376edf8fe as AnonymousEStruct_d87376edf8}
+
+pub using @d9c5d9afd24c7e85 {type AnonymousEStruct_da1eb841471a as AnonymousEStruct_da1eb84147}
+
+pub using @d9c5d9afd24c7e85 {type AnonymousEStruct_dbd4632c0106 as AnonymousEStruct_dbd4632c01}
+
+pub using @d9c5d9afd24c7e85 {type AnonymousEStruct_dc7bd60c6b42 as AnonymousEStruct_dc7bd60c6b}
+
+pub using @d9c5d9afd24c7e85 {type AnonymousEStruct_dea504d949a7 as AnonymousEStruct_dea504d949}
+
+pub using @d9c5d9afd24c7e85 {type AnonymousEStruct_e22ed30f2956 as AnonymousEStruct_e22ed30f29}
+
+pub using @d9c5d9afd24c7e85 {type AnonymousEStruct_e3519276dfa8 as AnonymousEStruct_e3519276df}
+
+pub using @d9c5d9afd24c7e85 {type AnonymousEStruct_e4bf4a36c093 as AnonymousEStruct_e4bf4a36c0}
+
+pub using @d9c5d9afd24c7e85 {type AnonymousEStruct_e8477913d151 as AnonymousEStruct_e8477913d1}
+
+pub using @d9c5d9afd24c7e85 {type AnonymousEStruct_ec24a51e42c0 as AnonymousEStruct_ec24a51e42}
+
+pub using @d9c5d9afd24c7e85 {type AnonymousEStruct_ee03d200b941 as AnonymousEStruct_ee03d200b9}
+
+pub using @d9c5d9afd24c7e85 {type AnonymousEStruct_ee0515e04794 as AnonymousEStruct_ee0515e047}
+
+pub using @d9c5d9afd24c7e85 {type AnonymousEStruct_f1845a56289a as AnonymousEStruct_f1845a5628}
+
+pub using @d9c5d9afd24c7e85 {type AnonymousEStruct_f4b909902262 as AnonymousEStruct_f4b9099022}
+
+pub using @d9c5d9afd24c7e85 {type AnonymousEStruct_f5662d8139ef as AnonymousEStruct_f5662d8139}
+
+pub using @d9c5d9afd24c7e85 {type AnonymousEStruct_f71433b19e35 as AnonymousEStruct_f71433b19e}
+
+pub using @d9c5d9afd24c7e85 {type AnonymousEStruct_f7517c1bffeb as AnonymousEStruct_f7517c1bff}
+
+pub using @d9c5d9afd24c7e85 {type AnonymousEStruct_f901d801693c as AnonymousEStruct_f901d80169}
+
+pub using @d9c5d9afd24c7e85 {type AnonymousEStruct_f954ddb0da3d as AnonymousEStruct_f954ddb0da}
+
+pub using @d9c5d9afd24c7e85 {type AnonymousEStruct_fa5cf372aacc as AnonymousEStruct_fa5cf372aa}
+
+pub using @d9c5d9afd24c7e85 {type AnonymousEStruct_fd939c07fa8e as AnonymousEStruct_fd939c07fa}
+
+pub using @d9c5d9afd24c7e85 {type AnonymousEStruct_fe730a813071 as AnonymousEStruct_fe730a8130}
+
+pub using @d9c5d9afd24c7e85 {type AnonymousEStruct_ff24d6d82a24 as AnonymousEStruct_ff24d6d82a}
+
+pub using @d9c5d9afd24c7e85 {type AnonymousEUnion_0bede984c409 as AnonymousEUnion_0bede984c4}
+
+pub using @d9c5d9afd24c7e85 {type AnonymousEUnion_31246ad816bc as AnonymousEUnion_31246ad816}
+
+pub using @d9c5d9afd24c7e85 {type AnonymousEUnion_584f1bc91883 as AnonymousEUnion_584f1bc918}
+
+pub using @d9c5d9afd24c7e85 {type AnonymousEUnion_733fdbd7a854 as AnonymousEUnion_733fdbd7a8}
+
+pub using @d9c5d9afd24c7e85 {type AnonymousEUnion_d5ed97e07a21 as AnonymousEUnion_d5ed97e07a}
+
+pub using @d9c5d9afd24c7e85 {type AnonymousEUnion_e88b262a8716 as AnonymousEUnion_e88b262a87}
+
+pub using @d9c5d9afd24c7e85 {type AttributesEStruct_bd5e5e442f99 as AttributesEStruct}
+
+pub using @d9c5d9afd24c7e85 {type BUCKETCOUNTER_a15962f2c8a9 as BUCKETCOUNTER}
+
+pub using @d9c5d9afd24c7e85 {type BadSystemNANDBlockCountEStruct_1863f4e740a3 as BadSystemNANDBlockCountEStruct_1863f4e740}
+
+pub using @d9c5d9afd24c7e85 {type BadSystemNANDBlockCountEStruct_5d14000525ec as BadSystemNANDBlockCountEStruct_5d14000525}
+
+pub using @d9c5d9afd24c7e85 {type BadUserNANDBlockCountEStruct_b6a8fe5194b9 as BadUserNANDBlockCountEStruct_b6a8fe5194}
+
+pub using @d9c5d9afd24c7e85 {type BadUserNANDBlockCountEStruct_e0769d23c5c8 as BadUserNANDBlockCountEStruct_e0769d23c5}
+
+pub using @d9c5d9afd24c7e85 {type CATTREUnion_40032cb489a2 as CATTREUnion}
+
+pub using @d9c5d9afd24c7e85 {type CMICEStruct_0b667335082a as CMICEStruct}
+
+pub using @d9c5d9afd24c7e85 {type CQESEStruct_c400d664d87b as CQESEStruct}
+
+pub using @d9c5d9afd24c7e85 {type CREATEIOCQEStruct_f028a05b9056 as CREATEIOCQEStruct}
+
+pub using @d9c5d9afd24c7e85 {type CREATEIOSQEStruct_ae6fd38276f4 as CREATEIOSQEStruct}
+
+pub using @d9c5d9afd24c7e85 {type CTRATTEStruct_d6f1e1abde00 as CTRATTEStruct}
+
+pub using @d9c5d9afd24c7e85 {type CriticalWarningEUnion_172beda10aea as CriticalWarningEUnion}
+
+pub using @d9c5d9afd24c7e85 {type CurrentCompletionEStruct_07402ab29902 as CurrentCompletionEStruct}
+
+pub using @d9c5d9afd24c7e85 {type CurrentOperationEStruct_4e4946fdbb21 as CurrentOperationEStruct}
+
+pub using @d9c5d9afd24c7e85 {type DATASETMANAGEMENTEStruct_424782b004a9 as DATASETMANAGEMENTEStruct}
+
+pub using @d9c5d9afd24c7e85 {type DEBUGBITFIELD_da407e588fee as DEBUGBITFIELD}
+
+pub using @d9c5d9afd24c7e85 {type DELETEIOQUEUEEStruct_7f90fb70f7dc as DELETEIOQUEUEEStruct}
+
+pub using @d9c5d9afd24c7e85 {type DEVICESELFTESTEStruct_bacd50a1a8c0 as DEVICESELFTESTEStruct}
+
+pub using @d9c5d9afd24c7e85 {type DIRECTIVERECEIVEEStruct_45bbc7794fd2 as DIRECTIVERECEIVEEStruct}
+
+pub using @d9c5d9afd24c7e85 {type DIRECTIVESENDEStruct_b9598530a1b6 as DIRECTIVESENDEStruct}
+
+pub using @d9c5d9afd24c7e85 {type DISCOVERYINFOMGMTEStruct_d98597ca3e8e as DISCOVERYINFOMGMTEStruct}
+
+pub using @d9c5d9afd24c7e85 {type DLFEATEStruct_eef718a78d44 as DLFEATEStruct}
+
+pub using @d9c5d9afd24c7e85 {type DLPFEUnion_34a1ef91c058 as DLPFEUnion}
+
+pub using @d9c5d9afd24c7e85 {type DPCEStruct_3cbbea9ab363 as DPCEStruct}
+
+pub using @d9c5d9afd24c7e85 {type DPSEStruct_017f9625883f as DPSEStruct}
+
+pub using @d9c5d9afd24c7e85 {type DSMEStruct_8b918e46d7ee as DSMEStruct}
+
+pub using @d9c5d9afd24c7e85 {type DSSDPOWERSTATEDESCRIPTOR_82e3ad411f08 as DSSDPOWERSTATEDESCRIPTOR}
+
+pub using @d9c5d9afd24c7e85 {type DSSDSpecVersionEStruct_c9e3a20e4c47 as DSSDSpecVersionEStruct}
+
+pub using @d9c5d9afd24c7e85 {type DW2EUnion_bcbf3670cbdc as DW2EUnion}
+
+pub using @d9c5d9afd24c7e85 {type DW3EUnion_38007ca7a29f as DW3EUnion}
+
+pub using @d9c5d9afd24c7e85 {type DatasetMgmtCommandEUnion_1fb03d42430d as DatasetMgmtCommandEUnion}
+
+pub using @d9c5d9afd24c7e85 {type DebugLogStampUnitsEUnion_2cab6898ea99 as DebugLogStampUnitsEUnion}
+
+pub using @d9c5d9afd24c7e85 {type EFLAGSEUnion_0e6000185c4a as EFLAGSEUnion_0e6000185c}
+
+pub using @d9c5d9afd24c7e85 {type EFLAGSEUnion_7c522a737d58 as EFLAGSEUnion_7c522a737d}
+
+pub using @d9c5d9afd24c7e85 {type EKTYPEEUnion_3cc6cf8e49aa as EKTYPEEUnion}
+
+pub using @d9c5d9afd24c7e85 {type EndToEndCorrectionCountsEStruct_19249a4813f4 as EndToEndCorrectionCountsEStruct_19249a4813}
+
+pub using @d9c5d9afd24c7e85 {type EndToEndCorrectionCountsEStruct_22d11ed9c7ed as EndToEndCorrectionCountsEStruct_22d11ed9c7}
+
+pub using @d9c5d9afd24c7e85 {type FCATTEStruct_cb56e6d57b55 as FCATTEStruct}
+
+pub using @d9c5d9afd24c7e85 {type FIRMWAREACTIVATEEStruct_1907e9ee2623 as FIRMWAREACTIVATEEStruct}
+
+pub using @d9c5d9afd24c7e85 {type FIRMWAREACTIVATIONHISTORYENTRY_4c0b0414e475 as FIRMWAREACTIVATIONHISTORYENTRY}
+
+pub using @d9c5d9afd24c7e85 {type FIRMWAREDOWNLOADEStruct_18d864852f4a as FIRMWAREDOWNLOADEStruct}
+
+pub using @d9c5d9afd24c7e85 {type FLBASEStruct_ed8baad6d92d as FLBASEStruct}
+
+pub using @d9c5d9afd24c7e85 {type FNAEStruct_740590d9c227 as FNAEStruct}
+
+pub using @d9c5d9afd24c7e85 {type FORMATNVMEStruct_1023b36d19e3 as FORMATNVMEStruct}
+
+pub using @d9c5d9afd24c7e85 {type FPIEStruct_21a53598ad0b as FPIEStruct}
+
+pub using @d9c5d9afd24c7e85 {type FRMWEStruct_54140bc1cb6f as FRMWEStruct}
+
+pub using @d9c5d9afd24c7e85 {type FUSESEStruct_db4e028a9dd1 as FUSESEStruct}
+
+pub using @d9c5d9afd24c7e85 {type FlagsEUnion_eb5b2c893501 as FlagsEUnion}
+
+pub using @d9c5d9afd24c7e85 {type FourBytesEStruct_3a0756579b0f as FourBytesEStruct_3a0756579b}
+
+pub using @d9c5d9afd24c7e85 {type FourBytesEStruct_e32200479f5c as FourBytesEStruct_e32200479f}
+
+pub using @d9c5d9afd24c7e85 {type FusedCommandEUnion_04804599bf83 as FusedCommandEUnion}
+
+pub using @d9c5d9afd24c7e85 {type GENERALEStruct_648407665b95 as GENERALEStruct}
+
+pub using @d9c5d9afd24c7e85 {type GETFEATURESEStruct_9960837ffd77 as GETFEATURESEStruct}
+
+pub using @d9c5d9afd24c7e85 {type GETLOGPAGEEStruct_32b47daddcda as GETLOGPAGEEStruct}
+
+pub using @d9c5d9afd24c7e85 {type HCTMAEStruct_bd03237ff80d as HCTMAEStruct}
+
+pub using @d9c5d9afd24c7e85 {type IDENTIFYEStruct_a8fda89b8a88 as IDENTIFYEStruct}
+
+pub using @d9c5d9afd24c7e85 {type IOCOMMANDSETVECTOR_5e043e787cd0 as IOCOMMANDSETVECTOR}
+
+pub using @d9c5d9afd24c7e85 {type IdentifierEUnion_1cb04e344e07 as IdentifierEUnion_1cb04e344e}
+
+pub using @d9c5d9afd24c7e85 {type IdentifierEUnion_40ecf7b293c6 as IdentifierEUnion_40ecf7b293}
+
+pub using @d9c5d9afd24c7e85 {type IdentifierEUnion_4abb90450301 as IdentifierEUnion_4abb904503}
+
+pub using @d9c5d9afd24c7e85 {type IdentifierEUnion_5bfb14579554 as IdentifierEUnion_5bfb145795}
+
+pub using @d9c5d9afd24c7e85 {type IdentifierEUnion_797b879609e4 as IdentifierEUnion_797b879609}
+
+pub using @d9c5d9afd24c7e85 {type IdentifierEUnion_a00a122593b8 as IdentifierEUnion_a00a122593}
+
+pub using @d9c5d9afd24c7e85 {type IdentifierEUnion_e46c54a341fa as IdentifierEUnion_e46c54a341}
+
+pub using @d9c5d9afd24c7e85 {type LATENCYMONITORFEATURESTATUS_6aeaebd92e0c as LATENCYMONITORFEATURESTATUS}
+
+pub using @d9c5d9afd24c7e85 {type LATENCYSTAMP_a4d385f354e7 as LATENCYSTAMP}
+
+pub using @d9c5d9afd24c7e85 {type LATENCYSTAMPUNITS_26c03eb799f4 as LATENCYSTAMPUNITS}
+
+pub using @d9c5d9afd24c7e85 {type LPAEStruct_4c03aba78603 as LPAEStruct}
+
+pub using @d9c5d9afd24c7e85 {type MCEStruct_0c43a8640329 as MCEStruct}
+
+pub using @d9c5d9afd24c7e85 {type MEASUREDLATENCY_b998538a7a13 as MEASUREDLATENCY}
+
+pub using @d9c5d9afd24c7e85 {type NMICEStruct_e7a492179420 as NMICEStruct}
+
+pub using @d9c5d9afd24c7e85 {type NSATTREStruct_ae11db1cd4a9 as NSATTREStruct}
+
+pub using @d9c5d9afd24c7e85 {type NSFEATEStruct_6a3f32a09488 as NSFEATEStruct}
+
+pub using @d9c5d9afd24c7e85 {type NVMEACCESSFREQUENCIES_914375e56e75 as NVMEACCESSFREQUENCIES}
+
+pub using @d9c5d9afd24c7e85 {type NVMEACCESSLATENCIES_cf40a31f8397 as NVMEACCESSLATENCIES}
+
+pub using @d9c5d9afd24c7e85 {type NVMEACTIVENAMESPACEIDLIST_d1190535f9b4 as NVMEACTIVENAMESPACEIDLIST}
+
+pub using @d9c5d9afd24c7e85 {type NVMEADMINCOMMANDS_c04a9444611d as NVMEADMINCOMMANDS}
+
+pub using @d9c5d9afd24c7e85 {type NVMEADMINCOMPLETIONQUEUEBASEADDRESS_c37579287488 as NVMEADMINCOMPLETIONQUEUEBASEADDRESS}
+
+pub using @d9c5d9afd24c7e85 {type NVMEADMINQUEUEATTRIBUTES_e3f91e87818d as NVMEADMINQUEUEATTRIBUTES}
+
+pub using @d9c5d9afd24c7e85 {type NVMEADMINSUBMISSIONQUEUEBASEADDRESS_295b9440e138 as NVMEADMINSUBMISSIONQUEUEBASEADDRESS}
+
+pub using @d9c5d9afd24c7e85 {type NVMEAMSOPTION_c7328dbb6fb2 as NVMEAMSOPTION}
+
+pub using @d9c5d9afd24c7e85 {type NVMEASYNCEVENTERRORSTATUSCODES_29604dce2482 as NVMEASYNCEVENTERRORSTATUSCODES}
+
+pub using @d9c5d9afd24c7e85 {type NVMEASYNCEVENTHEALTHSTATUSCODES_d8220ade1af1 as NVMEASYNCEVENTHEALTHSTATUSCODES}
+
+pub using @d9c5d9afd24c7e85 {type NVMEASYNCEVENTIMMEDIATESTATUSCODES_2a787d02736f as NVMEASYNCEVENTIMMEDIATESTATUSCODES}
+
+pub using @d9c5d9afd24c7e85 {type NVMEASYNCEVENTIOCOMMANDSETSTATUSCODES_637d77a7aabc as NVMEASYNCEVENTIOCOMMANDSETSTATUSCODES}
+
+pub using @d9c5d9afd24c7e85 {type NVMEASYNCEVENTNOTICECODES_c6906cbe08ad as NVMEASYNCEVENTNOTICECODES}
+
+pub using @d9c5d9afd24c7e85 {type NVMEASYNCEVENTTYPES_7a7e189fee7c as NVMEASYNCEVENTTYPES}
+
+pub using @d9c5d9afd24c7e85 {type NVMEASYNCEVENTTYPEVENDORSPECIFICCODES_475dee1f6087 as NVMEASYNCEVENTTYPEVENDORSPECIFICCODES}
+
+pub using @d9c5d9afd24c7e85 {type NVMEAUTOPOWERSTATETRANSITIONENTRY_0da58b903bd2 as NVMEAUTOPOWERSTATETRANSITIONENTRY}
+
+pub using @d9c5d9afd24c7e85 {type NVMECCSHNSHUTDOWNNOTIFICATIONS_276f95b21acb as NVMECCSHNSHUTDOWNNOTIFICATIONS}
+
+pub using @d9c5d9afd24c7e85 {type NVMECDW0FEATUREDSSDPOWERSTATE_582d9c368c8d as NVMECDW0FEATUREDSSDPOWERSTATE}
+
+pub using @d9c5d9afd24c7e85 {type NVMECDW0FEATUREENABLEIEEE1667SILO_d81cb74f6978 as NVMECDW0FEATUREENABLEIEEE1667SILO}
+
+pub using @d9c5d9afd24c7e85 {type NVMECDW0FEATUREERRORINJECTION_67fa4e0956af as NVMECDW0FEATUREERRORINJECTION}
+
+pub using @d9c5d9afd24c7e85 {type NVMECDW0FEATUREREADONLYWRITETHROUGHMODE_144e87023756 as NVMECDW0FEATUREREADONLYWRITETHROUGHMODE}
+
+pub using @d9c5d9afd24c7e85 {type NVMECDW0RESERVATIONPERSISTENCE_28c43f3d76a0 as NVMECDW0RESERVATIONPERSISTENCE}
+
+pub using @d9c5d9afd24c7e85 {type NVMECDW10ABORT_7f25a8f8a6eb as NVMECDW10ABORT}
+
+pub using @d9c5d9afd24c7e85 {type NVMECDW10CREATEIOQUEUE_3342389480cc as NVMECDW10CREATEIOQUEUE}
+
+pub using @d9c5d9afd24c7e85 {type NVMECDW10DATASETMANAGEMENT_318720e0c3cd as NVMECDW10DATASETMANAGEMENT}
+
+pub using @d9c5d9afd24c7e85 {type NVMECDW10DELETEIOQUEUE_1823aece958d as NVMECDW10DELETEIOQUEUE}
+
+pub using @d9c5d9afd24c7e85 {type NVMECDW10DEVICESELFTEST_059c6b57de21 as NVMECDW10DEVICESELFTEST}
+
+pub using @d9c5d9afd24c7e85 {type NVMECDW10DIRECTIVERECEIVE_434e1f62e257 as NVMECDW10DIRECTIVERECEIVE}
+
+pub using @d9c5d9afd24c7e85 {type NVMECDW10DIRECTIVESEND_7a250fd91a15 as NVMECDW10DIRECTIVESEND}
+
+pub using @d9c5d9afd24c7e85 {type NVMECDW10DISCOVERYINFOMGMT_107569475f79 as NVMECDW10DISCOVERYINFOMGMT}
+
+pub using @d9c5d9afd24c7e85 {type NVMECDW10FIRMWAREACTIVATE_cd3ec174c567 as NVMECDW10FIRMWAREACTIVATE}
+
+pub using @d9c5d9afd24c7e85 {type NVMECDW10FIRMWAREDOWNLOAD_14e8acdab1ae as NVMECDW10FIRMWAREDOWNLOAD}
+
+pub using @d9c5d9afd24c7e85 {type NVMECDW10FORMATNVM_b8220b392ba7 as NVMECDW10FORMATNVM}
+
+pub using @d9c5d9afd24c7e85 {type NVMECDW10GETFEATURES_7b34f6549df2 as NVMECDW10GETFEATURES}
+
+pub using @d9c5d9afd24c7e85 {type NVMECDW10GETLOGPAGE_76dfa31a5b05 as NVMECDW10GETLOGPAGE}
+
+pub using @d9c5d9afd24c7e85 {type NVMECDW10GETLOGPAGEV121_86e0527cf487 as NVMECDW10GETLOGPAGEV121}
+
+pub using @d9c5d9afd24c7e85 {type NVMECDW10GETLOGPAGEV13_5c6bed1a00d7 as NVMECDW10GETLOGPAGEV13}
+
+pub using @d9c5d9afd24c7e85 {type NVMECDW10GETLOGPAGEV20_2428994d4e2c as NVMECDW10GETLOGPAGEV20}
+
+pub using @d9c5d9afd24c7e85 {type NVMECDW10IDENTIFY_f45a18fd2d5b as NVMECDW10IDENTIFY}
+
+pub using @d9c5d9afd24c7e85 {type NVMECDW10RESERVATIONACQUIRE_600b77dcee20 as NVMECDW10RESERVATIONACQUIRE}
+
+pub using @d9c5d9afd24c7e85 {type NVMECDW10RESERVATIONREGISTER_042f168c2ae8 as NVMECDW10RESERVATIONREGISTER}
+
+pub using @d9c5d9afd24c7e85 {type NVMECDW10RESERVATIONRELEASE_a3c86b13cee5 as NVMECDW10RESERVATIONRELEASE}
+
+pub using @d9c5d9afd24c7e85 {type NVMECDW10RESERVATIONREPORT_4df14242e2ae as NVMECDW10RESERVATIONREPORT}
+
+pub using @d9c5d9afd24c7e85 {type NVMECDW10SANITIZE_85292a785c14 as NVMECDW10SANITIZE}
+
+pub using @d9c5d9afd24c7e85 {type NVMECDW10SECURITYSENDRECEIVE_c853ca58b2c7 as NVMECDW10SECURITYSENDRECEIVE}
+
+pub using @d9c5d9afd24c7e85 {type NVMECDW10SETFEATURES_2b8d466b16c1 as NVMECDW10SETFEATURES}
+
+pub using @d9c5d9afd24c7e85 {type NVMECDW10ZONEAPPEND_01b052120841 as NVMECDW10ZONEAPPEND}
+
+pub using @d9c5d9afd24c7e85 {type NVMECDW10ZONEMANAGEMENTRECEIVE_8f6fbee8f12d as NVMECDW10ZONEMANAGEMENTRECEIVE}
+
+pub using @d9c5d9afd24c7e85 {type NVMECDW10ZONEMANAGEMENTSEND_6717e02b6d65 as NVMECDW10ZONEMANAGEMENTSEND}
+
+pub using @d9c5d9afd24c7e85 {type NVMECDW11CREATEIOCQ_2d848f1093e7 as NVMECDW11CREATEIOCQ}
+
+pub using @d9c5d9afd24c7e85 {type NVMECDW11CREATEIOSQ_b86b31f9807e as NVMECDW11CREATEIOSQ}
+
+pub using @d9c5d9afd24c7e85 {type NVMECDW11DATASETMANAGEMENT_440cf3eaafc4 as NVMECDW11DATASETMANAGEMENT}
+
+pub using @d9c5d9afd24c7e85 {type NVMECDW11DIRECTIVERECEIVE_c1c5682938e6 as NVMECDW11DIRECTIVERECEIVE}
+
+pub using @d9c5d9afd24c7e85 {type NVMECDW11DIRECTIVESEND_2835e51d114c as NVMECDW11DIRECTIVESEND}
+
+pub using @d9c5d9afd24c7e85 {type NVMECDW11FEATUREARBITRATION_318c4e025d85 as NVMECDW11FEATUREARBITRATION}
+
+pub using @d9c5d9afd24c7e85 {type NVMECDW11FEATUREASYNCEVENTCONFIG_6d3cef2f372f as NVMECDW11FEATUREASYNCEVENTCONFIG}
+
+pub using @d9c5d9afd24c7e85 {type NVMECDW11FEATUREAUTOPOWERSTATETRANSITION_34a40af68f5f as NVMECDW11FEATUREAUTOPOWERSTATETRANSITION}
+
+pub using @d9c5d9afd24c7e85 {type NVMECDW11FEATURECLEARFWUPDATEHISTORY_f94ed3960b4c as NVMECDW11FEATURECLEARFWUPDATEHISTORY}
+
+pub using @d9c5d9afd24c7e85 {type NVMECDW11FEATURECLEARPCIECORRECTABLEERRORCOUNTERS_aecf22ec24aa as NVMECDW11FEATURECLEARPCIECORRECTABLEERRORCOUNTERS}
+
+pub using @d9c5d9afd24c7e85 {type NVMECDW11FEATUREENABLEIEEE1667SILO_99b53678bcef as NVMECDW11FEATUREENABLEIEEE1667SILO}
+
+pub using @d9c5d9afd24c7e85 {type NVMECDW11FEATUREERRORRECOVERY_06800f98e5e3 as NVMECDW11FEATUREERRORRECOVERY}
+
+pub using @d9c5d9afd24c7e85 {type NVMECDW11FEATUREGETHOSTMETADATA_0ca9fa408b9f as NVMECDW11FEATUREGETHOSTMETADATA}
+
+pub using @d9c5d9afd24c7e85 {type NVMECDW11FEATUREHOSTIDENTIFIER_606395da780d as NVMECDW11FEATUREHOSTIDENTIFIER}
+
+pub using @d9c5d9afd24c7e85 {type NVMECDW11FEATUREHOSTMEMORYBUFFER_123741e7efa2 as NVMECDW11FEATUREHOSTMEMORYBUFFER}
+
+pub using @d9c5d9afd24c7e85 {type NVMECDW11FEATUREINTERRUPTCOALESCING_2f292a96e251 as NVMECDW11FEATUREINTERRUPTCOALESCING}
+
+pub using @d9c5d9afd24c7e85 {type NVMECDW11FEATUREINTERRUPTVECTORCONFIG_04a2cac77783 as NVMECDW11FEATUREINTERRUPTVECTORCONFIG}
+
+pub using @d9c5d9afd24c7e85 {type NVMECDW11FEATUREIOCOMMANDSETPROFILE_bf1da3f66269 as NVMECDW11FEATUREIOCOMMANDSETPROFILE}
+
+pub using @d9c5d9afd24c7e85 {type NVMECDW11FEATURELBARANGETYPE_31cd13ea81fc as NVMECDW11FEATURELBARANGETYPE}
+
+pub using @d9c5d9afd24c7e85 {type NVMECDW11FEATURENONOPERATIONALPOWERSTATE_1678ff42b1dd as NVMECDW11FEATURENONOPERATIONALPOWERSTATE}
+
+pub using @d9c5d9afd24c7e85 {type NVMECDW11FEATURENUMBEROFQUEUES_b75704b21c40 as NVMECDW11FEATURENUMBEROFQUEUES}
+
+pub using @d9c5d9afd24c7e85 {type NVMECDW11FEATUREPOWERMANAGEMENT_be78b4d67039 as NVMECDW11FEATUREPOWERMANAGEMENT}
+
+pub using @d9c5d9afd24c7e85 {type NVMECDW11FEATUREREADONLYWRITETHROUGHMODE_6a51e31a7d72 as NVMECDW11FEATUREREADONLYWRITETHROUGHMODE}
+
+pub using @d9c5d9afd24c7e85 {type NVMECDW11FEATURERESERVATIONNOTIFICATIONMASK_9f25c6d37869 as NVMECDW11FEATURERESERVATIONNOTIFICATIONMASK}
+
+pub using @d9c5d9afd24c7e85 {type NVMECDW11FEATURERESERVATIONPERSISTENCE_958b357dfe48 as NVMECDW11FEATURERESERVATIONPERSISTENCE}
+
+pub using @d9c5d9afd24c7e85 {type NVMECDW11FEATURES_0a36b00c0b08 as NVMECDW11FEATURES}
+
+pub using @d9c5d9afd24c7e85 {type NVMECDW11FEATURESETHOSTMETADATA_31c24eb90947 as NVMECDW11FEATURESETHOSTMETADATA}
+
+pub using @d9c5d9afd24c7e85 {type NVMECDW11FEATURESUPPORTEDCAPABILITY_7cce252a7673 as NVMECDW11FEATURESUPPORTEDCAPABILITY}
+
+pub using @d9c5d9afd24c7e85 {type NVMECDW11FEATURETEMPERATURETHRESHOLD_2f9f6a49abef as NVMECDW11FEATURETEMPERATURETHRESHOLD}
+
+pub using @d9c5d9afd24c7e85 {type NVMECDW11FEATUREVOLATILEWRITECACHE_3ebcfdb3b494 as NVMECDW11FEATUREVOLATILEWRITECACHE}
+
+pub using @d9c5d9afd24c7e85 {type NVMECDW11FEATUREWRITEATOMICITYNORMAL_578cc42f178e as NVMECDW11FEATUREWRITEATOMICITYNORMAL}
+
+pub using @d9c5d9afd24c7e85 {type NVMECDW11FIRMWAREDOWNLOAD_bd4ccac95142 as NVMECDW11FIRMWAREDOWNLOAD}
+
+pub using @d9c5d9afd24c7e85 {type NVMECDW11GETLOGPAGE_1767b9b95dbe as NVMECDW11GETLOGPAGE}
+
+pub using @d9c5d9afd24c7e85 {type NVMECDW11IDENTIFY_3f400c7ec4a4 as NVMECDW11IDENTIFY}
+
+pub using @d9c5d9afd24c7e85 {type NVMECDW11RESERVATIONREPORT_b0ba1b83827f as NVMECDW11RESERVATIONREPORT}
+
+pub using @d9c5d9afd24c7e85 {type NVMECDW11SANITIZE_8eca530098f0 as NVMECDW11SANITIZE}
+
+pub using @d9c5d9afd24c7e85 {type NVMECDW11SECURITYRECEIVE_d10aedfd0939 as NVMECDW11SECURITYRECEIVE}
+
+pub using @d9c5d9afd24c7e85 {type NVMECDW11SECURITYSEND_8b9c249fa8eb as NVMECDW11SECURITYSEND}
+
+pub using @d9c5d9afd24c7e85 {type NVMECDW12DIRECTIVERECEIVE_2bc8bf21ad0f as NVMECDW12DIRECTIVERECEIVE}
+
+pub using @d9c5d9afd24c7e85 {type NVMECDW12DIRECTIVERECEIVESTREAMSALLOCATERESOURCES_71f231838e81 as NVMECDW12DIRECTIVERECEIVESTREAMSALLOCATERESOURCES}
+
+pub using @d9c5d9afd24c7e85 {type NVMECDW12DIRECTIVESEND_6a35a2429e73 as NVMECDW12DIRECTIVESEND}
+
+pub using @d9c5d9afd24c7e85 {type NVMECDW12DIRECTIVESENDIDENTIFYENABLEDIRECTIVE_f96a4a988a6c as NVMECDW12DIRECTIVESENDIDENTIFYENABLEDIRECTIVE}
+
+pub using @d9c5d9afd24c7e85 {type NVMECDW12FEATUREHOSTMEMORYBUFFER_404a70b94cd5 as NVMECDW12FEATUREHOSTMEMORYBUFFER}
+
+pub using @d9c5d9afd24c7e85 {type NVMECDW12FEATURES_8a560d7dd3b7 as NVMECDW12FEATURES}
+
+pub using @d9c5d9afd24c7e85 {type NVMECDW12GETLOGPAGE_3f7f8790cbd0 as NVMECDW12GETLOGPAGE}
+
+pub using @d9c5d9afd24c7e85 {type NVMECDW12READWRITE_dc98b0b1c9dc as NVMECDW12READWRITE}
+
+pub using @d9c5d9afd24c7e85 {type NVMECDW12VERIFYCOMMAND_48750daa583d as NVMECDW12VERIFYCOMMAND}
+
+pub using @d9c5d9afd24c7e85 {type NVMECDW12ZONEAPPEND_4d311f09d3b9 as NVMECDW12ZONEAPPEND}
+
+pub using @d9c5d9afd24c7e85 {type NVMECDW13FEATUREHOSTMEMORYBUFFER_3af435757bf4 as NVMECDW13FEATUREHOSTMEMORYBUFFER}
+
+pub using @d9c5d9afd24c7e85 {type NVMECDW13FEATURES_ec8f17153afb as NVMECDW13FEATURES}
+
+pub using @d9c5d9afd24c7e85 {type NVMECDW13GETLOGPAGE_53c0b4ac3c15 as NVMECDW13GETLOGPAGE}
+
+pub using @d9c5d9afd24c7e85 {type NVMECDW13READWRITE_5ceee609897c as NVMECDW13READWRITE}
+
+pub using @d9c5d9afd24c7e85 {type NVMECDW13ZONEMANAGEMENTRECEIVE_d7dab29090e0 as NVMECDW13ZONEMANAGEMENTRECEIVE}
+
+pub using @d9c5d9afd24c7e85 {type NVMECDW13ZONEMANAGEMENTSEND_9d644c5b0e7e as NVMECDW13ZONEMANAGEMENTSEND}
+
+pub using @d9c5d9afd24c7e85 {type NVMECDW14FEATUREHOSTMEMORYBUFFER_9c2a4ce63b2a as NVMECDW14FEATUREHOSTMEMORYBUFFER}
+
+pub using @d9c5d9afd24c7e85 {type NVMECDW14FEATURES_16f5b56074d2 as NVMECDW14FEATURES}
+
+pub using @d9c5d9afd24c7e85 {type NVMECDW14GETLOGPAGE_0618038a8483 as NVMECDW14GETLOGPAGE}
+
+pub using @d9c5d9afd24c7e85 {type NVMECDW14GETLOGPAGEV20_6712b750e87f as NVMECDW14GETLOGPAGEV20}
+
+pub using @d9c5d9afd24c7e85 {type NVMECDW14IDENTIFY_cb3382d132fd as NVMECDW14IDENTIFY}
+
+pub using @d9c5d9afd24c7e85 {type NVMECDW15FEATUREHOSTMEMORYBUFFER_7c7cbbc893ba as NVMECDW15FEATUREHOSTMEMORYBUFFER}
+
+pub using @d9c5d9afd24c7e85 {type NVMECDW15FEATURES_69df8ddb4ccd as NVMECDW15FEATURES}
+
+pub using @d9c5d9afd24c7e85 {type NVMECDW15READWRITE_f24f4f2ff628 as NVMECDW15READWRITE}
+
+pub using @d9c5d9afd24c7e85 {type NVMECDW15VERIFYCOMMAND_f66855ceed9d as NVMECDW15VERIFYCOMMAND}
+
+pub using @d9c5d9afd24c7e85 {type NVMECDW15ZONEAPPEND_2568a9bc0be7 as NVMECDW15ZONEAPPEND}
+
+pub using @d9c5d9afd24c7e85 {type NVMECHANGEDNAMESPACELISTLOG_a53cb83ce7d7 as NVMECHANGEDNAMESPACELISTLOG}
+
+pub using @d9c5d9afd24c7e85 {type NVMECHANGEDZONELISTLOG_4954473024de as NVMECHANGEDZONELISTLOG}
+
+pub using @d9c5d9afd24c7e85 {type NVMECMBSZSIZEUNITS_95eb5492c0b7 as NVMECMBSZSIZEUNITS}
+
+pub using @d9c5d9afd24c7e85 {type NVMECOMMAND_e5597e90f045 as NVMECOMMAND}
+
+pub using @d9c5d9afd24c7e85 {type NVMECOMMANDDWORD0_c227648adf47 as NVMECOMMANDDWORD0}
+
+pub using @d9c5d9afd24c7e85 {type NVMECOMMANDEFFECTSBUMISSIONEXECUTIONLIMITS_510770ab05d0 as NVMECOMMANDEFFECTSBUMISSIONEXECUTIONLIMITS}
+
+pub using @d9c5d9afd24c7e85 {type NVMECOMMANDEFFECTSDATA_d9a2279be7fe as NVMECOMMANDEFFECTSDATA}
+
+pub using @d9c5d9afd24c7e85 {type NVMECOMMANDEFFECTSLOG_417f4d84e598 as NVMECOMMANDEFFECTSLOG}
+
+pub using @d9c5d9afd24c7e85 {type NVMECOMMANDSETIDENTIFIERS_84090bbea866 as NVMECOMMANDSETIDENTIFIERS}
+
+pub using @d9c5d9afd24c7e85 {type NVMECOMMANDSTATUS_0937f0091161 as NVMECOMMANDSTATUS}
+
+pub using @d9c5d9afd24c7e85 {type NVMECOMPLETIONDW0ASYNCEVENTREQUEST_c3cdd36b1008 as NVMECOMPLETIONDW0ASYNCEVENTREQUEST}
+
+pub using @d9c5d9afd24c7e85 {type NVMECOMPLETIONDW0DIRECTIVERECEIVESTREAMSALLOCATERESOURCES_6b8d017e7e5c as NVMECOMPLETIONDW0DIRECTIVERECEIVESTREAMSALLOCATERESOURCES}
+
+pub using @d9c5d9afd24c7e85 {type NVMECOMPLETIONENTRY_6c15278f8eda as NVMECOMPLETIONENTRY}
+
+pub using @d9c5d9afd24c7e85 {type NVMECOMPLETIONQUEUEHEADDOORBELL_c282aac7221f as NVMECOMPLETIONQUEUEHEADDOORBELL}
+
+pub using @d9c5d9afd24c7e85 {type NVMECONTEXTATTRIBUTES_7f3a05ef21a9 as NVMECONTEXTATTRIBUTES}
+
+pub using @d9c5d9afd24c7e85 {type NVMECONTROLLERCAPABILITIES_c0dd0e6f128a as NVMECONTROLLERCAPABILITIES}
+
+pub using @d9c5d9afd24c7e85 {type NVMECONTROLLERCONFIGURATION_d6a7641bfcf1 as NVMECONTROLLERCONFIGURATION}
+
+pub using @d9c5d9afd24c7e85 {type NVMECONTROLLERLIST_5a33357c2dd7 as NVMECONTROLLERLIST}
+
+pub using @d9c5d9afd24c7e85 {type NVMECONTROLLERMEMORYBUFFERLOCATION_179616372672 as NVMECONTROLLERMEMORYBUFFERLOCATION}
+
+pub using @d9c5d9afd24c7e85 {type NVMECONTROLLERMEMORYBUFFERSIZE_2dd0aaf36692 as NVMECONTROLLERMEMORYBUFFERSIZE}
+
+pub using @d9c5d9afd24c7e85 {type NVMECONTROLLERMETADATAELEMENTTYPES_297d952c7f45 as NVMECONTROLLERMETADATAELEMENTTYPES}
+
+pub using @d9c5d9afd24c7e85 {type NVMECONTROLLERREADYTIMEOUTS_7d5bafcc648b as NVMECONTROLLERREADYTIMEOUTS}
+
+pub using @d9c5d9afd24c7e85 {type NVMECONTROLLERREGISTERS_24736c58d40a as NVMECONTROLLERREGISTERS}
+
+pub using @d9c5d9afd24c7e85 {type NVMECONTROLLERSTATUS_353dae2188c6 as NVMECONTROLLERSTATUS}
+
+pub using @d9c5d9afd24c7e85 {type NVMECONTROLLERTYPE_94738c19dd0f as NVMECONTROLLERTYPE}
+
+pub using @d9c5d9afd24c7e85 {type NVMECPSVALUE_001d6c11444b as NVMECPSVALUE}
+
+pub using @d9c5d9afd24c7e85 {type NVMECSSCOMMANDSETS_567745960acc as NVMECSSCOMMANDSETS}
+
+pub using @d9c5d9afd24c7e85 {type NVMECSTSSHSTSHUTDOWNSTATUS_b1af5157cd30 as NVMECSTSSHSTSHUTDOWNSTATUS}
+
+pub using @d9c5d9afd24c7e85 {type NVMEDEALLOCATEREADBEHAVIOR_cf1568043de8 as NVMEDEALLOCATEREADBEHAVIOR}
+
+pub using @d9c5d9afd24c7e85 {type NVMEDEVICESELFTESTLOG_9882de396a8e as NVMEDEVICESELFTESTLOG}
+
+pub using @d9c5d9afd24c7e85 {type NVMEDEVICESELFTESTRESULTDATA_b554d69f3e2d as NVMEDEVICESELFTESTRESULTDATA}
+
+pub using @d9c5d9afd24c7e85 {type NVMEDIRECTIVEIDENTIFYRETURNPARAMETERS_89d383bcc111 as NVMEDIRECTIVEIDENTIFYRETURNPARAMETERS}
+
+pub using @d9c5d9afd24c7e85 {type NVMEDIRECTIVEIDENTIFYRETURNPARAMETERSDESCRIPTOR_d56b84754b7d as NVMEDIRECTIVEIDENTIFYRETURNPARAMETERSDESCRIPTOR}
+
+pub using @d9c5d9afd24c7e85 {type NVMEDIRECTIVERECEIVEIDENTIFYOPERATIONS_61bb04a4c910 as NVMEDIRECTIVERECEIVEIDENTIFYOPERATIONS}
+
+pub using @d9c5d9afd24c7e85 {type NVMEDIRECTIVERECEIVESTREAMSOPERATIONS_305fc6aae4ed as NVMEDIRECTIVERECEIVESTREAMSOPERATIONS}
+
+pub using @d9c5d9afd24c7e85 {type NVMEDIRECTIVESENDIDENTIFYOPERATIONS_742cab2f05d2 as NVMEDIRECTIVESENDIDENTIFYOPERATIONS}
+
+pub using @d9c5d9afd24c7e85 {type NVMEDIRECTIVESENDSTREAMSOPERATIONS_878ce4fcb8ec as NVMEDIRECTIVESENDSTREAMSOPERATIONS}
+
+pub using @d9c5d9afd24c7e85 {type NVMEDIRECTIVESTREAMSGETSTATUSDATA_30042a98d2c4 as NVMEDIRECTIVESTREAMSGETSTATUSDATA}
+
+pub using @d9c5d9afd24c7e85 {type NVMEDIRECTIVESTREAMSRETURNPARAMETERS_b21339fc9dd9 as NVMEDIRECTIVESTREAMSRETURNPARAMETERS}
+
+pub using @d9c5d9afd24c7e85 {type NVMEDIRECTIVETYPES_4140a930eb3e as NVMEDIRECTIVETYPES}
+
+pub using @d9c5d9afd24c7e85 {type NVMEDISCCTRLTYPE_4b3980f75fcd as NVMEDISCCTRLTYPE}
+
+pub using @d9c5d9afd24c7e85 {type NVMEDISCOVERYENTRY_30c6807b2188 as NVMEDISCOVERYENTRY}
+
+pub using @d9c5d9afd24c7e85 {type NVMEDISCOVERYHEADER_32cb6df1fee7 as NVMEDISCOVERYHEADER}
+
+pub using @d9c5d9afd24c7e85 {type NVMEDISCOVERYINFOENTITYTYPES_e151d9a56ad6 as NVMEDISCOVERYINFOENTITYTYPES}
+
+pub using @d9c5d9afd24c7e85 {type NVMEDISCOVERYINFOENTRYFORMATS_57fabd768ddc as NVMEDISCOVERYINFOENTRYFORMATS}
+
+pub using @d9c5d9afd24c7e85 {type NVMEDISCOVERYINFOMGMTHEADER_d71afbb4614f as NVMEDISCOVERYINFOMGMTHEADER}
+
+pub using @d9c5d9afd24c7e85 {type NVMEDISCOVERYINFOMGMTTASK_9d5a7fa776e3 as NVMEDISCOVERYINFOMGMTTASK}
+
+pub using @d9c5d9afd24c7e85 {type NVMEENDURANCEGROUPLOG_0387fcdd1380 as NVMEENDURANCEGROUPLOG}
+
+pub using @d9c5d9afd24c7e85 {type NVMEERRORINFOLOG_3fbdf4d2e82f as NVMEERRORINFOLOG}
+
+pub using @d9c5d9afd24c7e85 {type NVMEERRORINJECTIONENTRY_5376fee4fbbf as NVMEERRORINJECTIONENTRY}
+
+pub using @d9c5d9afd24c7e85 {type NVMEERRORINJECTIONTYPES_f19a254aca1a as NVMEERRORINJECTIONTYPES}
+
+pub using @d9c5d9afd24c7e85 {type NVMEEXTENDEDATTR_4e68b235fa64 as NVMEEXTENDEDATTR}
+
+pub using @d9c5d9afd24c7e85 {type NVMEEXTENDEDATTRTYPE_6af969241ca7 as NVMEEXTENDEDATTRTYPE}
+
+pub using @d9c5d9afd24c7e85 {type NVMEEXTENDEDDISCOVERYENTRY_638efd7620b7 as NVMEEXTENDEDDISCOVERYENTRY}
+
+pub using @d9c5d9afd24c7e85 {type NVMEEXTENDEDREPORTZONEINFO_f5106b0720f8 as NVMEEXTENDEDREPORTZONEINFO}
+
+pub using @d9c5d9afd24c7e85 {type NVMEFABRICSCOMMANDTYPE_4ffc988552ce as NVMEFABRICSCOMMANDTYPE}
+
+pub using @d9c5d9afd24c7e85 {type NVMEFEATUREHOSTIDENTIFIERDATA_8d03f3518a87 as NVMEFEATUREHOSTIDENTIFIERDATA}
+
+pub using @d9c5d9afd24c7e85 {type NVMEFEATUREHOSTMETADATADATA_d9a373c6c14a as NVMEFEATUREHOSTMETADATADATA}
+
+pub using @d9c5d9afd24c7e85 {type NVMEFEATUREIDENTIFIERSEFFECTSLOG_4be8f71a9a00 as NVMEFEATUREIDENTIFIERSEFFECTSLOG}
+
+pub using @d9c5d9afd24c7e85 {type NVMEFEATURES_a98b1e0e880a as NVMEFEATURES}
+
+pub using @d9c5d9afd24c7e85 {type NVMEFEATUREVALUECODES_445698ef9831 as NVMEFEATUREVALUECODES}
+
+pub using @d9c5d9afd24c7e85 {type NVMEFIDSUPPORTEDANDEFFECTS_2606db9d1751 as NVMEFIDSUPPORTEDANDEFFECTS}
+
+pub using @d9c5d9afd24c7e85 {type NVMEFIRMWAREACTIVATEACTIONS_76642d80b01d as NVMEFIRMWAREACTIVATEACTIONS}
+
+pub using @d9c5d9afd24c7e85 {type NVMEFIRMWARESLOTINFOLOG_0c2ec9a9471b as NVMEFIRMWARESLOTINFOLOG}
+
+pub using @d9c5d9afd24c7e85 {type NVMEFUSEDOPERATIONCODES_0efdd8b2a028 as NVMEFUSEDOPERATIONCODES}
+
+pub using @d9c5d9afd24c7e85 {type NVMEGETFEATURETIMESTAMP_e7bb8ed39664 as NVMEGETFEATURETIMESTAMP}
+
+pub using @d9c5d9afd24c7e85 {type NVMEHEALTHINFOLOG_cd627501e9da as NVMEHEALTHINFOLOG}
+
+pub using @d9c5d9afd24c7e85 {type NVMEHOSTBEHAVIORSUPPORTDATA_78deee65722c as NVMEHOSTBEHAVIORSUPPORTDATA}
+
+pub using @d9c5d9afd24c7e85 {type NVMEHOSTMEMORYBUFFERDESCRIPTORENTRY_bb07bc19ab15 as NVMEHOSTMEMORYBUFFERDESCRIPTORENTRY}
+
+pub using @d9c5d9afd24c7e85 {type NVMEHOSTMETADATAELEMENTACTIONS_4c3339370599 as NVMEHOSTMETADATAELEMENTACTIONS}
+
+pub using @d9c5d9afd24c7e85 {type NVMEHOSTMETADATAELEMENTDESCRIPTOR_c90ea5306344 as NVMEHOSTMETADATAELEMENTDESCRIPTOR}
+
+pub using @d9c5d9afd24c7e85 {type NVMEIDENTIFIERTYPE_26f2aea2b2f6 as NVMEIDENTIFIERTYPE}
+
+pub using @d9c5d9afd24c7e85 {type NVMEIDENTIFIERTYPELENGTH_32f34412ece7 as NVMEIDENTIFIERTYPELENGTH}
+
+pub using @d9c5d9afd24c7e85 {type NVMEIDENTIFYCNSCODES_a52cb1676888 as NVMEIDENTIFYCNSCODES}
+
+pub using @d9c5d9afd24c7e85 {type NVMEIDENTIFYCONTROLLERDATA_d746533abbd3 as NVMEIDENTIFYCONTROLLERDATA}
+
+pub using @d9c5d9afd24c7e85 {type NVMEIDENTIFYIOCOMMANDSET_13eb8d07138d as NVMEIDENTIFYIOCOMMANDSET}
+
+pub using @d9c5d9afd24c7e85 {type NVMEIDENTIFYNAMESPACEDATA_6368be3c6932 as NVMEIDENTIFYNAMESPACEDATA}
+
+pub using @d9c5d9afd24c7e85 {type NVMEIDENTIFYNAMESPACEDESCRIPTOR_a0b983ae1eb5 as NVMEIDENTIFYNAMESPACEDESCRIPTOR}
+
+pub using @d9c5d9afd24c7e85 {type NVMEIDENTIFYNVMSPECIFICCONTROLLERIOCOMMANDSET_57af84ab5da1 as NVMEIDENTIFYNVMSPECIFICCONTROLLERIOCOMMANDSET}
+
+pub using @d9c5d9afd24c7e85 {type NVMEIDENTIFYSPECIFICNAMESPACEIOCOMMANDSET_31f83e3f51ab as NVMEIDENTIFYSPECIFICNAMESPACEIOCOMMANDSET}
+
+pub using @d9c5d9afd24c7e85 {type NVMEIDENTIFYZNSSPECIFICCONTROLLERIOCOMMANDSET_b4a5293007c5 as NVMEIDENTIFYZNSSPECIFICCONTROLLERIOCOMMANDSET}
+
+pub using @d9c5d9afd24c7e85 {type NVMELATENCYMONITORINGENTRY_34a1f8a01c50 as NVMELATENCYMONITORINGENTRY}
+
+pub using @d9c5d9afd24c7e85 {type NVMELBAFORMAT_8634e9f52ae7 as NVMELBAFORMAT}
+
+pub using @d9c5d9afd24c7e85 {type NVMELBARANGE_5b7c4e856499 as NVMELBARANGE}
+
+pub using @d9c5d9afd24c7e85 {type NVMELBARANGETTYPEENTRY_946f7272fda4 as NVMELBARANGETTYPEENTRY}
+
+pub using @d9c5d9afd24c7e85 {type NVMELBARANGETYPES_6abe9bfb0d30 as NVMELBARANGETYPES}
+
+pub using @d9c5d9afd24c7e85 {type NVMELBAZONEFORMAT_d5a274a4e580 as NVMELBAZONEFORMAT}
+
+pub using @d9c5d9afd24c7e85 {type NVMELIDSPECIFICPERSISTENTEVENTLOG_7fe60d435e44 as NVMELIDSPECIFICPERSISTENTEVENTLOG}
+
+pub using @d9c5d9afd24c7e85 {type NVMELIDSUPPORTEDANDEFFECTS_73cfc883657c as NVMELIDSUPPORTEDANDEFFECTS}
+
+pub using @d9c5d9afd24c7e85 {type NVMELOGPAGES_c4c2ea021943 as NVMELOGPAGES}
+
+pub using @d9c5d9afd24c7e85 {type NVMENAMESPACEMETADATAELEMENTTYPES_1a7250f3640f as NVMENAMESPACEMETADATAELEMENTTYPES}
+
+pub using @d9c5d9afd24c7e85 {type NVMENODEALLOCATEMODIFIESMEDIAAFTERSANITIZE_8a0550ce82f3 as NVMENODEALLOCATEMODIFIESMEDIAAFTERSANITIZE}
+
+pub using @d9c5d9afd24c7e85 {type NVMENVMCOMMANDS_30ff94b61e74 as NVMENVMCOMMANDS}
+
+pub using @d9c5d9afd24c7e85 {type NVMENVMEMICOMMANDSSUPPORTEDANDEFFECTS_83371dbb7075 as NVMENVMEMICOMMANDSSUPPORTEDANDEFFECTS}
+
+pub using @d9c5d9afd24c7e85 {type NVMENVMEMICOMMANDSSUPPORTEDANDEFFECTSLOG_f488baa65777 as NVMENVMEMICOMMANDSSUPPORTEDANDEFFECTSLOG}
+
+pub using @d9c5d9afd24c7e85 {type NVMENVMQUEUEPRIORITIES_f72dab17f714 as NVMENVMQUEUEPRIORITIES}
+
+pub using @d9c5d9afd24c7e85 {type NVMENVMSUBSYSTEMRESET_c39322a1fca4 as NVMENVMSUBSYSTEMRESET}
+
+pub using @d9c5d9afd24c7e85 {type NVMENVMSUBSYSTEMSHUTDOWN_61bdd4832d01 as NVMENVMSUBSYSTEMSHUTDOWN}
+
+pub using @d9c5d9afd24c7e85 {type NVMEOCPDEVICECAPABILITIESLOG_696812f35f6b as NVMEOCPDEVICECAPABILITIESLOG}
+
+pub using @d9c5d9afd24c7e85 {type NVMEOCPDEVICEERRORRECOVERYLOGV2_57dae8a13ed1 as NVMEOCPDEVICEERRORRECOVERYLOGV2}
+
+pub using @d9c5d9afd24c7e85 {type NVMEOCPDEVICEFIRMWAREACTIVATIONHISTORYLOG_964c3dabf88f as NVMEOCPDEVICEFIRMWAREACTIVATIONHISTORYLOG}
+
+pub using @d9c5d9afd24c7e85 {type NVMEOCPDEVICELATENCYMONITORLOG_814926a307a1 as NVMEOCPDEVICELATENCYMONITORLOG}
+
+pub using @d9c5d9afd24c7e85 {type NVMEOCPDEVICESMARTINFORMATIONLOGV3_f8885eef0421 as NVMEOCPDEVICESMARTINFORMATIONLOGV3}
+
+pub using @d9c5d9afd24c7e85 {type NVMEOCPDEVICETCGCONFIGURATIONLOG_e83ee760aa9f as NVMEOCPDEVICETCGCONFIGURATIONLOG}
+
+pub using @d9c5d9afd24c7e85 {type NVMEOCPDEVICETCGHISTORYLOG_a5a355895605 as NVMEOCPDEVICETCGHISTORYLOG}
+
+pub using @d9c5d9afd24c7e85 {type NVMEOCPDEVICEUNSUPPORTEDREQUIREMENTSLOG_116e755aecaa as NVMEOCPDEVICEUNSUPPORTEDREQUIREMENTSLOG}
+
+pub using @d9c5d9afd24c7e85 {type NVMEOFADDRESSFAMILY_5f07ae07505d as NVMEOFADDRESSFAMILY}
+
+pub using @d9c5d9afd24c7e85 {type NVMEOFAUTHDHCHAPCHALLENGE_fb6621778d0d as NVMEOFAUTHDHCHAPCHALLENGE}
+
+pub using @d9c5d9afd24c7e85 {type NVMEOFAUTHDHCHAPDESCRIPTOR_f36070b299b6 as NVMEOFAUTHDHCHAPDESCRIPTOR}
+
+pub using @d9c5d9afd24c7e85 {type NVMEOFAUTHDHCHAPGROUPID_21606e186af2 as NVMEOFAUTHDHCHAPGROUPID}
+
+pub using @d9c5d9afd24c7e85 {type NVMEOFAUTHDHCHAPHASHID_fe4919c39713 as NVMEOFAUTHDHCHAPHASHID}
+
+pub using @d9c5d9afd24c7e85 {type NVMEOFAUTHDHCHAPREPLY_82195314ac42 as NVMEOFAUTHDHCHAPREPLY}
+
+pub using @d9c5d9afd24c7e85 {type NVMEOFAUTHDHCHAPSUCCESS1_0b6adcbb530f as NVMEOFAUTHDHCHAPSUCCESS1}
+
+pub using @d9c5d9afd24c7e85 {type NVMEOFAUTHDHCHAPSUCCESS2_91e074060f5e as NVMEOFAUTHDHCHAPSUCCESS2}
+
+pub using @d9c5d9afd24c7e85 {type NVMEOFAUTHFAILREASONCODE_7de7c44c34b5 as NVMEOFAUTHFAILREASONCODE}
+
+pub using @d9c5d9afd24c7e85 {type NVMEOFAUTHFAILREASONEXPLANATION_a069634728f8 as NVMEOFAUTHFAILREASONEXPLANATION}
+
+pub using @d9c5d9afd24c7e85 {type NVMEOFAUTHFAILURE_db9f792841f6 as NVMEOFAUTHFAILURE}
+
+pub using @d9c5d9afd24c7e85 {type NVMEOFAUTHID_8101593a4543 as NVMEOFAUTHID}
+
+pub using @d9c5d9afd24c7e85 {type NVMEOFAUTHNEGOTIATE_76f22a9f7abd as NVMEOFAUTHNEGOTIATE}
+
+pub using @d9c5d9afd24c7e85 {type NVMEOFAUTHPROTOCOL_7d2e93425edc as NVMEOFAUTHPROTOCOL}
+
+pub using @d9c5d9afd24c7e85 {type NVMEOFAUTHRECEIVECOMMAND_3293bfc4101b as NVMEOFAUTHRECEIVECOMMAND}
+
+pub using @d9c5d9afd24c7e85 {type NVMEOFAUTHRECEIVERESPONSE_48e7180e4f05 as NVMEOFAUTHRECEIVERESPONSE}
+
+pub using @d9c5d9afd24c7e85 {type NVMEOFAUTHSECURECHANNEL_fa024eb01154 as NVMEOFAUTHSECURECHANNEL}
+
+pub using @d9c5d9afd24c7e85 {type NVMEOFAUTHSENDCOMMAND_0d8cdb930720 as NVMEOFAUTHSENDCOMMAND}
+
+pub using @d9c5d9afd24c7e85 {type NVMEOFAUTHSENDRESPONSE_1dd00f2c8cfb as NVMEOFAUTHSENDRESPONSE}
+
+pub using @d9c5d9afd24c7e85 {type NVMEOFAUTHTYPE_c9ce5fd1d8b6 as NVMEOFAUTHTYPE}
+
+pub using @d9c5d9afd24c7e85 {type NVMEOFCONNECTCOMMAND_aa1b21c6443b as NVMEOFCONNECTCOMMAND}
+
+pub using @d9c5d9afd24c7e85 {type NVMEOFCONNECTDATA_6081ba6acd38 as NVMEOFCONNECTDATA}
+
+pub using @d9c5d9afd24c7e85 {type NVMEOFCONNECTRESPONSE_3a0801352f1f as NVMEOFCONNECTRESPONSE}
+
+pub using @d9c5d9afd24c7e85 {type NVMEOFDISCONNECTCOMMAND_a192b0eb9c26 as NVMEOFDISCONNECTCOMMAND}
+
+pub using @d9c5d9afd24c7e85 {type NVMEOFDISCONNECTRESPONSE_b4529690c7b3 as NVMEOFDISCONNECTRESPONSE}
+
+pub using @d9c5d9afd24c7e85 {type NVMEOFFABRICSCOMMAND_3c29065a6bc8 as NVMEOFFABRICSCOMMAND}
+
+pub using @d9c5d9afd24c7e85 {type NVMEOFFABRICSRESPONSE_a83b3346e7a1 as NVMEOFFABRICSRESPONSE}
+
+pub using @d9c5d9afd24c7e85 {type NVMEOFPROPERTYGETCOMMAND_1995222744fd as NVMEOFPROPERTYGETCOMMAND}
+
+pub using @d9c5d9afd24c7e85 {type NVMEOFPROPERTYGETRESPONSE_4b88cf5cde54 as NVMEOFPROPERTYGETRESPONSE}
+
+pub using @d9c5d9afd24c7e85 {type NVMEOFPROPERTYSETCOMMAND_3a47e2277a44 as NVMEOFPROPERTYSETCOMMAND}
+
+pub using @d9c5d9afd24c7e85 {type NVMEOFPROPERTYSETRESPONSE_7c36f98105a5 as NVMEOFPROPERTYSETRESPONSE}
+
+pub using @d9c5d9afd24c7e85 {type NVMEOFSECURECHANNEL_6041934e8f5f as NVMEOFSECURECHANNEL}
+
+pub using @d9c5d9afd24c7e85 {type NVMEOFSECURECHANNELPROTOCOL_80fb5d5efbec as NVMEOFSECURECHANNELPROTOCOL}
+
+pub using @d9c5d9afd24c7e85 {type NVMEOFSUBSYSTEMTYPE_b3282247a905 as NVMEOFSUBSYSTEMTYPE}
+
+pub using @d9c5d9afd24c7e85 {type NVMEOFTRANSPORTTYPE_51cedaba7b28 as NVMEOFTRANSPORTTYPE}
+
+pub using @d9c5d9afd24c7e85 {type NVMEPERSISTENTEVENTLOGEVENTHEADER_551fbd78b887 as NVMEPERSISTENTEVENTLOGEVENTHEADER}
+
+pub using @d9c5d9afd24c7e85 {type NVMEPERSISTENTEVENTLOGEVENTTYPES_55fa0ac880ca as NVMEPERSISTENTEVENTLOGEVENTTYPES}
+
+pub using @d9c5d9afd24c7e85 {type NVMEPERSISTENTEVENTLOGHEADER_86ea3197ccdb as NVMEPERSISTENTEVENTLOGHEADER}
+
+pub using @d9c5d9afd24c7e85 {type NVMEPOWERSTATEDESC_ea81a30d4e99 as NVMEPOWERSTATEDESC}
+
+pub using @d9c5d9afd24c7e85 {type NVMEPROPERTYOFFSET_d6db3ef94fe6 as NVMEPROPERTYOFFSET}
+
+pub using @d9c5d9afd24c7e85 {type NVMEPROTECTIONINFORMATIONTYPES_0fe926c4fb90 as NVMEPROTECTIONINFORMATIONTYPES}
+
+pub using @d9c5d9afd24c7e85 {type NVMEPRPENTRY_e758b2a6401d as NVMEPRPENTRY}
+
+pub using @d9c5d9afd24c7e85 {type NVMERDMAKEYEDSGLDESCSUBTYPE_1155b1858b87 as NVMERDMAKEYEDSGLDESCSUBTYPE}
+
+pub using @d9c5d9afd24c7e85 {type NVMEREGISTEREDCONTROLLERDATA_ef24729a213a as NVMEREGISTEREDCONTROLLERDATA}
+
+pub using @d9c5d9afd24c7e85 {type NVMEREGISTEREDCONTROLLEREXTENDEDDATA_aabf16377057 as NVMEREGISTEREDCONTROLLEREXTENDEDDATA}
+
+pub using @d9c5d9afd24c7e85 {type NVMEREPORTZONEINFO_79d9a73065c0 as NVMEREPORTZONEINFO}
+
+pub using @d9c5d9afd24c7e85 {type NVMERESERVATIONACQUIREACTIONS_999104d6e893 as NVMERESERVATIONACQUIREACTIONS}
+
+pub using @d9c5d9afd24c7e85 {type NVMERESERVATIONACQUIREDATASTRUCTURE_2f47dfb538f4 as NVMERESERVATIONACQUIREDATASTRUCTURE}
+
+pub using @d9c5d9afd24c7e85 {type NVMERESERVATIONNOTIFICATIONLOG_5a7fea9ecbf9 as NVMERESERVATIONNOTIFICATIONLOG}
+
+pub using @d9c5d9afd24c7e85 {type NVMERESERVATIONNOTIFICATIONTYPES_6023fff66947 as NVMERESERVATIONNOTIFICATIONTYPES}
+
+pub using @d9c5d9afd24c7e85 {type NVMERESERVATIONREGISTERACTIONS_eb5a73139c73 as NVMERESERVATIONREGISTERACTIONS}
+
+pub using @d9c5d9afd24c7e85 {type NVMERESERVATIONREGISTERDATASTRUCTURE_d656042e5fc6 as NVMERESERVATIONREGISTERDATASTRUCTURE}
+
+pub using @d9c5d9afd24c7e85 {type NVMERESERVATIONREGISTERPTPLSTATECHANGES_1f3f19d45939 as NVMERESERVATIONREGISTERPTPLSTATECHANGES}
+
+pub using @d9c5d9afd24c7e85 {type NVMERESERVATIONRELEASEACTIONS_d040ca5c88cb as NVMERESERVATIONRELEASEACTIONS}
+
+pub using @d9c5d9afd24c7e85 {type NVMERESERVATIONRELEASEDATASTRUCTURE_8ec05f42b88f as NVMERESERVATIONRELEASEDATASTRUCTURE}
+
+pub using @d9c5d9afd24c7e85 {type NVMERESERVATIONREPORTSTATUSDATASTRUCTURE_92ef76e7af97 as NVMERESERVATIONREPORTSTATUSDATASTRUCTURE}
+
+pub using @d9c5d9afd24c7e85 {type NVMERESERVATIONREPORTSTATUSEXTENDEDDATASTRUCTURE_eeccb819dbec as NVMERESERVATIONREPORTSTATUSEXTENDEDDATASTRUCTURE}
+
+pub using @d9c5d9afd24c7e85 {type NVMERESERVATIONREPORTSTATUSHEADER_b252e9cf4b14 as NVMERESERVATIONREPORTSTATUSHEADER}
+
+pub using @d9c5d9afd24c7e85 {type NVMERESERVATIONTYPES_8e1d5af6672c as NVMERESERVATIONTYPES}
+
+pub using @d9c5d9afd24c7e85 {type NVMESANITIZEACTION_cbd426304c05 as NVMESANITIZEACTION}
+
+pub using @d9c5d9afd24c7e85 {type NVMESANITIZEOPERATIONSTATUS_320fe64de264 as NVMESANITIZEOPERATIONSTATUS}
+
+pub using @d9c5d9afd24c7e85 {type NVMESANITIZESTATUS_856a7171873d as NVMESANITIZESTATUS}
+
+pub using @d9c5d9afd24c7e85 {type NVMESANITIZESTATUSLOG_6787cc2e422c as NVMESANITIZESTATUSLOG}
+
+pub using @d9c5d9afd24c7e85 {type NVMESCSINAMESTRING_9293a12ab7b3 as NVMESCSINAMESTRING}
+
+pub using @d9c5d9afd24c7e85 {type NVMESECUREERASESETTINGS_6a424951bfed as NVMESECUREERASESETTINGS}
+
+pub using @d9c5d9afd24c7e85 {type NVMESETATTRIBUTESENTRY_5daefd9d257f as NVMESETATTRIBUTESENTRY}
+
+pub using @d9c5d9afd24c7e85 {type NVMESGLBITBUCKETDESC_82e4955d6b10 as NVMESGLBITBUCKETDESC}
+
+pub using @d9c5d9afd24c7e85 {type NVMESGLDATABLOCKDESC_91bf941a9cd8 as NVMESGLDATABLOCKDESC}
+
+pub using @d9c5d9afd24c7e85 {type NVMESGLDESC_997c1e1d96e3 as NVMESGLDESC}
+
+pub using @d9c5d9afd24c7e85 {type NVMESGLDESCSUBTYPE_85cc5e9f5c12 as NVMESGLDESCSUBTYPE}
+
+pub using @d9c5d9afd24c7e85 {type NVMESGLDESCTYPE_66f2e93be8b7 as NVMESGLDESCTYPE}
+
+pub using @d9c5d9afd24c7e85 {type NVMESGLKEYDATABLOCKDESC_e2112e9007ed as NVMESGLKEYDATABLOCKDESC}
+
+pub using @d9c5d9afd24c7e85 {type NVMESGLLASTSEGDESC_29ced701e5e5 as NVMESGLLASTSEGDESC}
+
+pub using @d9c5d9afd24c7e85 {type NVMESGLSEGMENTDESC_b22dee906d77 as NVMESGLSEGMENTDESC}
+
+pub using @d9c5d9afd24c7e85 {type NVMESGLTRANSPORTDATADESC_cc2fa44549ad as NVMESGLTRANSPORTDATADESC}
+
+pub using @d9c5d9afd24c7e85 {type NVMESTATUSCOMMANDSPECIFICCODES_14c0523ab3b4 as NVMESTATUSCOMMANDSPECIFICCODES}
+
+pub using @d9c5d9afd24c7e85 {type NVMESTATUSFABRICCOMMANDCODES_f289534bd3cc as NVMESTATUSFABRICCOMMANDCODES}
+
+pub using @d9c5d9afd24c7e85 {type NVMESTATUSGENERICCOMMANDCODES_05e56de66d72 as NVMESTATUSGENERICCOMMANDCODES}
+
+pub using @d9c5d9afd24c7e85 {type NVMESTATUSMEDIAERRORCODES_fa0a03be02fa as NVMESTATUSMEDIAERRORCODES}
+
+pub using @d9c5d9afd24c7e85 {type NVMESTATUSPATHERRORCODES_90b53b97e94b as NVMESTATUSPATHERRORCODES}
+
+pub using @d9c5d9afd24c7e85 {type NVMESTATUSTYPES_c5b014997eb2 as NVMESTATUSTYPES}
+
+pub using @d9c5d9afd24c7e85 {type NVMESUBMISSIONQUEUETAILDOORBELL_0fb06a145e47 as NVMESUBMISSIONQUEUETAILDOORBELL}
+
+pub using @d9c5d9afd24c7e85 {type NVMESUPPORTEDLOGPAGESLOG_e5be7b306ea7 as NVMESUPPORTEDLOGPAGESLOG}
+
+pub using @d9c5d9afd24c7e85 {type NVMETELEMETRYCONTROLLERINITIATEDLOG_08fc1b781ecb as NVMETELEMETRYCONTROLLERINITIATEDLOG}
+
+pub using @d9c5d9afd24c7e85 {type NVMETELEMETRYHOSTINITIATEDLOG_aad15f6f4fd1 as NVMETELEMETRYHOSTINITIATEDLOG}
+
+pub using @d9c5d9afd24c7e85 {type NVMETEMPERATURETHRESHOLDTYPES_b2f7f60b026e as NVMETEMPERATURETHRESHOLDTYPES}
+
+pub using @d9c5d9afd24c7e85 {type NVMEUUIDLIST_71120623e0b3 as NVMEUUIDLIST}
+
+pub using @d9c5d9afd24c7e85 {type NVMEUUIDLISTENTRY_f7bcac6bcdab as NVMEUUIDLISTENTRY}
+
+pub using @d9c5d9afd24c7e85 {type NVMEVENDORLOGPAGES_f1835f36fa5f as NVMEVENDORLOGPAGES}
+
+pub using @d9c5d9afd24c7e85 {type NVMEVERSION_bbc592932132 as NVMEVERSION}
+
+pub using @d9c5d9afd24c7e85 {type NVMEWCSDEVICECAPABILITIES_e6b24e0d8cdd as NVMEWCSDEVICECAPABILITIES}
+
+pub using @d9c5d9afd24c7e85 {type NVMEWCSDEVICEERRORRECOVERYLOG_3a2151720ec6 as NVMEWCSDEVICEERRORRECOVERYLOG}
+
+pub using @d9c5d9afd24c7e85 {type NVMEWCSDEVICERECOVERYACTION1_f7605337e3bd as NVMEWCSDEVICERECOVERYACTION1}
+
+pub using @d9c5d9afd24c7e85 {type NVMEWCSDEVICERECOVERYACTION2_b234642d7e57 as NVMEWCSDEVICERECOVERYACTION2}
+
+pub using @d9c5d9afd24c7e85 {type NVMEWCSDEVICERESETACTION_e3c8310834f4 as NVMEWCSDEVICERESETACTION}
+
+pub using @d9c5d9afd24c7e85 {type NVMEWCSDEVICESMARTATTRIBUTESLOG_5bf4b8d1b700 as NVMEWCSDEVICESMARTATTRIBUTESLOG}
+
+pub using @d9c5d9afd24c7e85 {type NVMEWCSDEVICESMARTATTRIBUTESLOGV2_89434f7d37d8 as NVMEWCSDEVICESMARTATTRIBUTESLOGV2}
+
+pub using @d9c5d9afd24c7e85 {type NVMEZONEDESCRIPTOR_279b562b506f as NVMEZONEDESCRIPTOR}
+
+pub using @d9c5d9afd24c7e85 {type NVMEZONEDESCRIPTOREXTENSION_7a0c8da38fb1 as NVMEZONEDESCRIPTOREXTENSION}
+
+pub using @d9c5d9afd24c7e85 {type NVMEZONEEXTENDEDREPORTZONEDESC_898a05ee5996 as NVMEZONEEXTENDEDREPORTZONEDESC}
+
+pub using @d9c5d9afd24c7e85 {type NVMEZONERECEIVEACTION_5d5f9fc49e61 as NVMEZONERECEIVEACTION}
+
+pub using @d9c5d9afd24c7e85 {type NVMEZONERECEIVEACTIONSPECIFIC_efb735717136 as NVMEZONERECEIVEACTIONSPECIFIC}
+
+pub using @d9c5d9afd24c7e85 {type NVMEZONESENDACTION_04bd3d8e293e as NVMEZONESENDACTION}
+
+pub using @d9c5d9afd24c7e85 {type NVMRESERVATIONCAPABILITIES_030d53c7c849 as NVMRESERVATIONCAPABILITIES}
+
+pub using @d9c5d9afd24c7e85 {type NVMSETLIST_36d00ae78eac as NVMSETLIST}
+
+pub using @d9c5d9afd24c7e85 {type NVSCCEStruct_0356f2d3decf as NVSCCEStruct}
+
+pub using @d9c5d9afd24c7e85 {type NWPCEStruct_20d00e6b02df as NWPCEStruct}
+
+pub using @d9c5d9afd24c7e85 {type OACSEStruct_605c456a30fb as OACSEStruct}
+
+pub using @d9c5d9afd24c7e85 {type OAESEStruct_573d9523262e as OAESEStruct}
+
+pub using @d9c5d9afd24c7e85 {type OFCSEStruct_3bebcfc8d93a as OFCSEStruct}
+
+pub using @d9c5d9afd24c7e85 {type ONCSEStruct_0df59f61d439 as ONCSEStruct}
+
+pub using @d9c5d9afd24c7e85 {type OZCSEStruct_35161c6111c1 as OZCSEStruct}
+
+pub using @d9c5d9afd24c7e85 {type OobMgmtSupportEUnion_66537160e836 as OobMgmtSupportEUnion}
+
+pub using @d9c5d9afd24c7e85 {type ParameterErrorLocationEStruct_d9390d5e464c as ParameterErrorLocationEStruct}
+
+pub using @d9c5d9afd24c7e85 {type RCSTSEStruct_56418b772af7 as RCSTSEStruct_56418b772a}
+
+pub using @d9c5d9afd24c7e85 {type RCSTSEStruct_7753a7c228df as RCSTSEStruct_7753a7c228}
+
+pub using @d9c5d9afd24c7e85 {type READWRITEEStruct_2b76feeee8d2 as READWRITEEStruct}
+
+pub using @d9c5d9afd24c7e85 {type RESERVATIONACQUIREEStruct_d2fcdb756995 as RESERVATIONACQUIREEStruct}
+
+pub using @d9c5d9afd24c7e85 {type RESERVATIONREGISTEREStruct_0876fb9ba1b7 as RESERVATIONREGISTEREStruct}
+
+pub using @d9c5d9afd24c7e85 {type RESERVATIONRELEASEEStruct_b902ef5cbae5 as RESERVATIONRELEASEEStruct}
+
+pub using @d9c5d9afd24c7e85 {type RESERVATIONREPORTEStruct_d3b0af689ce4 as RESERVATIONREPORTEStruct}
+
+pub using @d9c5d9afd24c7e85 {type RPMBSEStruct_5d1b1f86448f as RPMBSEStruct}
+
+pub using @d9c5d9afd24c7e85 {type RRLSEStruct_36d4bc24440f as RRLSEStruct}
+
+pub using @d9c5d9afd24c7e85 {type SANICAPEStruct_8d921b5518e7 as SANICAPEStruct}
+
+pub using @d9c5d9afd24c7e85 {type SANITIZEEStruct_978ab234c6c9 as SANITIZEEStruct}
+
+pub using @d9c5d9afd24c7e85 {type SCSpecificEUnion_144b100bca55 as SCSpecificEUnion}
+
+pub using @d9c5d9afd24c7e85 {type SECURITYRECEIVEEStruct_852331f6282e as SECURITYRECEIVEEStruct}
+
+pub using @d9c5d9afd24c7e85 {type SECURITYSENDEStruct_db81671817ef as SECURITYSENDEStruct}
+
+pub using @d9c5d9afd24c7e85 {type SETFEATURESEStruct_ce04d6253eab as SETFEATURESEStruct}
+
+pub using @d9c5d9afd24c7e85 {type SGLSEStruct_f63e262ef0c1 as SGLSEStruct}
+
+pub using @d9c5d9afd24c7e85 {type SQESEStruct_91510f9a2e55 as SQESEStruct}
+
+pub using @d9c5d9afd24c7e85 {type SanitizeCommandEUnion_bd8003923952 as SanitizeCommandEUnion}
+
+pub using @d9c5d9afd24c7e85 {type StateEUnion_287a984b050b as StateEUnion}
+
+pub using @d9c5d9afd24c7e85 {type StatusCodeTypeEStruct_b0878daf04b4 as StatusCodeTypeEStruct}
+
+pub using @d9c5d9afd24c7e85 {type StatusEStruct_b4cbec53c276 as StatusEStruct}
+
+pub using @d9c5d9afd24c7e85 {type SuccessEStruct_8901810ff490 as SuccessEStruct}
+
+pub using @d9c5d9afd24c7e85 {type TCGACTIVATEMETHODSPECIFIC_b1fa84421c94 as TCGACTIVATEMETHODSPECIFIC}
+
+pub using @d9c5d9afd24c7e85 {type TCGASSIGNMETHODSPECIFIC_6b34d05b6423 as TCGASSIGNMETHODSPECIFIC}
+
+pub using @d9c5d9afd24c7e85 {type TCGAUTHMETHODSPECIFIC_636d6cb1b782 as TCGAUTHMETHODSPECIFIC}
+
+pub using @d9c5d9afd24c7e85 {type TCGBLOCKSIDMETHODSPECIFIC_6e718b89e8d2 as TCGBLOCKSIDMETHODSPECIFIC}
+
+pub using @d9c5d9afd24c7e85 {type TCGHISTORYENTRY_5acdc1cf5ed5 as TCGHISTORYENTRY}
+
+pub using @d9c5d9afd24c7e85 {type TCGREACTIVATEMETHODSPECIFIC_89a1b0fcd5ae as TCGREACTIVATEMETHODSPECIFIC}
+
+pub using @d9c5d9afd24c7e85 {type TREQEUnion_0c075bbb0d8f as TREQEUnion_0c075bbb0d}
+
+pub using @d9c5d9afd24c7e85 {type TREQEUnion_6f253bb4a4b5 as TREQEUnion_6f253bb4a4}
+
+pub using @d9c5d9afd24c7e85 {type ThermalThrottlingEStruct_9ba13743b500 as ThermalThrottlingEStruct_9ba13743b5}
+
+pub using @d9c5d9afd24c7e85 {type ThermalThrottlingEStruct_ea06833f0487 as ThermalThrottlingEStruct_ea06833f04}
+
+pub using @d9c5d9afd24c7e85 {type UEUnion_58ad19758ee9 as UEUnion}
+
+pub using @d9c5d9afd24c7e85 {type UNSUPPORTEDREQUIREMENT_8c4fb4a1479b as UNSUPPORTEDREQUIREMENT}
+
+pub using @d9c5d9afd24c7e85 {type UserDataEraseCountsEStruct_019f294b707c as UserDataEraseCountsEStruct_019f294b70}
+
+pub using @d9c5d9afd24c7e85 {type UserDataEraseCountsEStruct_ff73e673ae1a as UserDataEraseCountsEStruct_ff73e673ae}
+
+pub using @d9c5d9afd24c7e85 {type VALUEEUnion_beef50ddcaf1 as VALUEEUnion_beef50ddca}
+
+pub using @d9c5d9afd24c7e85 {type VALUEEUnion_c31b59925ea7 as VALUEEUnion_c31b59925e}
+
+pub using @d9c5d9afd24c7e85 {type VENDORSPECIFICEStruct_93cac2d7a8c5 as VENDORSPECIFICEStruct}
+
+pub using @d9c5d9afd24c7e85 {type VERIFYCOMMANDEStruct_6d85f9707905 as VERIFYCOMMANDEStruct}
+
+pub using @d9c5d9afd24c7e85 {type VWCEStruct_386431e3ed47 as VWCEStruct}
+
+pub using @d9c5d9afd24c7e85 {type ValidDiagnosticsEStruct_668903defaee as ValidDiagnosticsEStruct}
+
+pub using @d9c5d9afd24c7e85 {type WriteUncorrectableCommandEUnion_13725cfebf98 as WriteUncorrectableCommandEUnion}
+
+pub using @d9c5d9afd24c7e85 {type WriteZeroesCommandEUnion_3d4172614bbc as WriteZeroesCommandEUnion}
+
+pub using @d9c5d9afd24c7e85 {type ZAEStruct_877f3b386803 as ZAEStruct}
+
+pub using @d9c5d9afd24c7e85 {type ZOCEStruct_fd7d5c2218e2 as ZOCEStruct}
+
+pub using @d9c5d9afd24c7e85 {type ZONEAPPENDEStruct_70fafa188bc9 as ZONEAPPENDEStruct}
+
+pub using @d9c5d9afd24c7e85 {type ZONEMANAGEMENTRECEIVEEStruct_f6018ad552f6 as ZONEMANAGEMENTRECEIVEEStruct}
+
+pub using @d9c5d9afd24c7e85 {type ZONEMANAGEMENTSENDEStruct_03aa6fc6216e as ZONEMANAGEMENTSENDEStruct}
+
+pub using @d9c5d9afd24c7e85 {type ZONESTATE_1b31c25dc82b as ZONESTATE}
+
+// Traits
+

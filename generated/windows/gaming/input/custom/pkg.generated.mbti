@@ -1,0 +1,258 @@
+// Generated using `moon info`, DON'T EDIT IT
+package "moonbit-community/win32-bindings/windows/gaming/input/custom"
+
+import {
+  "moonbit-community/win32-bindings/runtime/com",
+  "moonbit-community/win32-bindings/runtime/core",
+  "moonbit-community/win32-bindings/scc/86b68af8b8bba111",
+  "moonbitlang/core/ref",
+}
+
+// Values
+pub let arcade_pad : Int
+
+pub let arcade_stick : Int
+
+pub let command : Int
+
+pub let completed : Int
+
+pub fn create_game_controller_raw(@core.RawAddress, @core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub let dance_pad : Int
+
+pub let drum_kit : Int
+
+pub let extended_error_code_6ae850f83a : String
+
+pub let extended_error_code_7fb01e3628 : String
+
+pub let failed : Int
+
+pub let final_component_id_01fed0d6a2 : String
+
+pub let final_component_id_a579281de3 : String
+
+pub let firmware_version_info_44e81bc2c6 : String
+
+pub let firmware_version_info_703b934c78 : String
+
+pub let firmware_version_info_cdb1dce29a : String
+
+pub let firmware_version_info_d95f1e62bd : String
+
+pub let flight_stick : Int
+
+pub let gamepad_2c9aca2b08 : Int
+
+pub let gamepad_d9fd5ddac8 : Int
+
+pub fn get_extended_error_code(@core.RawAddress) -> UInt raise @core.WindowsError
+
+pub fn get_extended_error_code_raw(@core.RawAddress, @ref.Ref[UInt]) -> Int
+
+pub fn get_feature_report(@core.RawAddress, UInt, UInt, Bytes) -> Unit raise @core.WindowsError
+
+pub fn get_feature_report_raw(@core.RawAddress, UInt, UInt, Bytes) -> Int
+
+pub fn get_final_component_id(@core.RawAddress) -> UInt raise @core.WindowsError
+
+pub fn get_final_component_id_raw(@core.RawAddress, @ref.Ref[UInt]) -> Int
+
+pub fn get_firmware_version_info(@core.RawAddress) -> Bytes raise @core.WindowsError
+
+pub fn get_firmware_version_info_raw(@core.RawAddress, Bytes) -> Int
+
+pub fn get_hardware_product_id_raw(@core.RawAddress, Bytes) -> Int
+
+pub fn get_hardware_vendor_id_raw(@core.RawAddress, Bytes) -> Int
+
+pub fn get_hardware_version_info(@core.RawAddress) -> Bytes raise @core.WindowsError
+
+pub fn get_hardware_version_info_raw(@core.RawAddress, Bytes) -> Int
+
+pub fn get_is_connected_raw(@core.RawAddress, Bytes) -> Int
+
+pub fn get_status(@core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn get_status_raw(@core.RawAddress, @ref.Ref[Int]) -> Int
+
+pub fn get_usage_id_raw(@core.RawAddress, Bytes) -> Int
+
+pub fn get_usage_page_raw(@core.RawAddress, Bytes) -> Int
+
+pub let guitar : Int
+
+pub let guitar_alternate : Int
+
+pub let guitar_bass : Int
+
+pub let hardware_product_id_37bb240ed8 : String
+
+pub let hardware_product_id_43c42a662f : String
+
+pub let hardware_product_id_4cd6627056 : String
+
+pub let hardware_product_id_9f9ab0a440 : String
+
+pub let hardware_vendor_id_36f66cdfe1 : String
+
+pub let hardware_vendor_id_7160ff782f : String
+
+pub let hardware_vendor_id_751940cf1a : String
+
+pub let hardware_vendor_id_e19da3dede : String
+
+pub let hardware_version_info_4b70dddb78 : String
+
+pub let hardware_version_info_51e520fea7 : String
+
+pub let hardware_version_info_62e8434fc2 : String
+
+pub let hardware_version_info_6d36697716 : String
+
+pub let is_connected_0e79497971 : String
+
+pub let is_connected_20a2567d5c : String
+
+pub let is_connected_cbb063967a : String
+
+pub let is_connected_e4d250e4b2 : String
+
+pub let low_latency : Int
+
+pub fn on_game_controller_added(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn on_game_controller_added_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn on_game_controller_removed(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn on_game_controller_removed_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn on_input_received(@core.RawAddress, UInt64, UInt, UInt, Bytes) -> Unit raise @core.WindowsError
+
+pub fn on_input_received_raw(@core.RawAddress, UInt64, UInt, UInt, Bytes) -> Int
+
+pub fn on_input_report_received(@core.RawAddress, UInt64, UInt, UInt, Bytes) -> Unit raise @core.WindowsError
+
+pub fn on_input_report_received_raw(@core.RawAddress, UInt64, UInt, UInt, Bytes) -> Int
+
+pub fn on_input_resumed(@core.RawAddress, UInt64) -> Unit raise @core.WindowsError
+
+pub fn on_input_resumed_raw(@core.RawAddress, UInt64) -> Int
+
+pub fn on_input_suspended(@core.RawAddress, UInt64) -> Unit raise @core.WindowsError
+
+pub fn on_input_suspended_raw(@core.RawAddress, UInt64) -> Int
+
+pub fn on_key_received(@core.RawAddress, UInt64, UInt, UInt) -> Unit raise @core.WindowsError
+
+pub fn on_key_received_raw(@core.RawAddress, UInt64, UInt, UInt) -> Int
+
+pub fn on_message_received(@core.RawAddress, UInt64, Int, UInt, UInt, UInt, Bytes) -> Unit raise @core.WindowsError
+
+pub fn on_message_received_raw(@core.RawAddress, UInt64, Int, UInt, UInt, UInt, Bytes) -> Int
+
+pub fn register_custom_factory_for_gip_interface(@core.RawAddress, @core.RawAddress, Bytes) -> Unit raise @core.WindowsError
+
+pub fn register_custom_factory_for_gip_interface_raw(@core.RawAddress, @core.RawAddress, Bytes) -> Int
+
+pub fn register_custom_factory_for_hardware_id(@core.RawAddress, @core.RawAddress, UInt, UInt) -> Unit raise @core.WindowsError
+
+pub fn register_custom_factory_for_hardware_id_raw(@core.RawAddress, @core.RawAddress, UInt, UInt) -> Int
+
+pub fn register_custom_factory_for_xusb_type(@core.RawAddress, @core.RawAddress, Int, Int) -> Unit raise @core.WindowsError
+
+pub fn register_custom_factory_for_xusb_type_raw(@core.RawAddress, @core.RawAddress, Int, Int) -> Int
+
+pub fn send_feature_report(@core.RawAddress, UInt, UInt, Bytes) -> Unit raise @core.WindowsError
+
+pub fn send_feature_report_raw(@core.RawAddress, UInt, UInt, Bytes) -> Int
+
+pub fn send_message(@core.RawAddress, Int, UInt, UInt, Bytes) -> Unit raise @core.WindowsError
+
+pub fn send_message_raw(@core.RawAddress, Int, UInt, UInt, Bytes) -> Int
+
+pub fn send_output_report(@core.RawAddress, UInt, UInt, Bytes) -> Unit raise @core.WindowsError
+
+pub fn send_output_report_raw(@core.RawAddress, UInt, UInt, Bytes) -> Int
+
+pub fn send_receive_message(@core.RawAddress, Int, UInt, UInt, Bytes, UInt, Bytes) -> Unit raise @core.WindowsError
+
+pub fn send_receive_message_raw(@core.RawAddress, Int, UInt, UInt, Bytes, UInt, Bytes) -> Int
+
+pub fn set_vibration(@core.RawAddress, Double, Double) -> Unit raise @core.WindowsError
+
+pub fn set_vibration_raw(@core.RawAddress, Double, Double) -> Int
+
+pub let standard_latency : Int
+
+pub fn static_factory_3083729796(@core.Guid) -> @com.ComPtr[@com.IInspectable] raise @core.WindowsError
+
+pub fn static_factory_c087357cd8(@core.Guid) -> @com.ComPtr[@com.IInspectable] raise @core.WindowsError
+
+pub let status_4bcadc6b63 : String
+
+pub let status_fb3b53836c : String
+
+pub fn try_get_factory_controller_from_game_controller_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub let unknown_4b8203c98e : Int
+
+pub let unknown_c516774f87 : Int
+
+pub let up_to_date : Int
+
+pub fn update_firmware_async_raw(@core.RawAddress, @core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub let usage_id_56cbb130a7 : String
+
+pub let usage_id_a8fa12e5c0 : String
+
+pub let usage_page_15a16aa43a : String
+
+pub let usage_page_25deac53f9 : String
+
+pub let wheel : Int
+
+// Errors
+
+// Types and methods
+
+// Type aliases
+pub using @86b68af8b8bba111 {type GameControllerFactoryManager_933ac1f8a2e2 as GameControllerFactoryManager}
+
+pub using @86b68af8b8bba111 {type GameControllerVersionInfo_c4a15ab83e98 as GameControllerVersionInfo}
+
+pub using @86b68af8b8bba111 {type GipFirmwareUpdateProgress_3b6bb18f5552 as GipFirmwareUpdateProgress}
+
+pub using @86b68af8b8bba111 {type GipFirmwareUpdateResult_fecd07ecca75 as GipFirmwareUpdateResult}
+
+pub using @86b68af8b8bba111 {type GipFirmwareUpdateStatus_189c8421f93e as GipFirmwareUpdateStatus}
+
+pub using @86b68af8b8bba111 {type GipGameControllerProvider_9a3b265ab06f as GipGameControllerProvider}
+
+pub using @86b68af8b8bba111 {type GipMessageClass_8767ccc7c428 as GipMessageClass}
+
+pub using @86b68af8b8bba111 {type HidGameControllerProvider_a93218d4eed0 as HidGameControllerProvider}
+
+pub using @86b68af8b8bba111 {type ICustomGameControllerFactory_d10a3eca8bcc as ICustomGameControllerFactory}
+
+pub using @86b68af8b8bba111 {type IGameControllerInputSink_d98bf23f9ffb as IGameControllerInputSink}
+
+pub using @86b68af8b8bba111 {type IGameControllerProvider_5edb0dd47ca0 as IGameControllerProvider}
+
+pub using @86b68af8b8bba111 {type IGipGameControllerInputSink_0d9f595ebf92 as IGipGameControllerInputSink}
+
+pub using @86b68af8b8bba111 {type IHidGameControllerInputSink_80433d391f69 as IHidGameControllerInputSink}
+
+pub using @86b68af8b8bba111 {type IXusbGameControllerInputSink_67f1cd99f80c as IXusbGameControllerInputSink}
+
+pub using @86b68af8b8bba111 {type XusbDeviceSubtype_95dda7e2a1a5 as XusbDeviceSubtype}
+
+pub using @86b68af8b8bba111 {type XusbDeviceType_35c25e75e4ab as XusbDeviceType}
+
+pub using @86b68af8b8bba111 {type XusbGameControllerProvider_a47fe2de7f73 as XusbGameControllerProvider}
+
+// Traits
+

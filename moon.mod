@@ -19,6 +19,13 @@ repository = ""
 
 license = "Apache-2.0"
 
-keywords = [ ]
+keywords = [ "winmd", "metadata", "windows" ]
 
-description = ""
+description = "A MoonBit parser and semantic model for Windows Metadata (WinMD) files."
+
+import {
+  "moonbitlang/async@0.20.1",
+  "moonbitlang/x@0.4.45",
+}
+
+preferred_target = "native"

@@ -1,0 +1,2050 @@
+// Generated using `moon info`, DON'T EDIT IT
+package "moonbit-community/win32-bindings/windows/win32/devices/usb"
+
+import {
+  "moonbit-community/win32-bindings/runtime/core",
+  "moonbit-community/win32-bindings/scc/3543f4ba7bf05224",
+}
+
+// Values
+pub let acquire_bus_info : Int
+
+pub let acquire_controller_name : Int
+
+pub let acquire_hub_name : Int
+
+pub let all_pipe : Int
+
+pub let allow_partial_reads : UInt
+
+pub let asym_link : Int
+
+pub let auto_clear_stall : UInt
+
+pub let auto_flush : UInt
+
+pub let auto_suspend : UInt
+
+pub let bmrequest_class : UInt
+
+pub let bmrequest_device_to_host : UInt
+
+pub let bmrequest_host_to_device : UInt
+
+pub let bmrequest_standard : UInt
+
+pub let bmrequest_to_device : UInt
+
+pub let bmrequest_to_endpoint : UInt
+
+pub let bmrequest_to_interface : UInt
+
+pub let bmrequest_to_other : UInt
+
+pub let bmrequest_vendor : UInt
+
+pub let bulkin_flag : UInt
+
+pub let composite_device : Int
+
+pub let device_caused_overcurrent : Int
+
+pub let device_connected : Int
+
+pub let device_enumerating : Int
+
+pub let device_failed_enumeration : Int
+
+pub let device_general_failure : Int
+
+pub let device_hub_nested_too_deeply : Int
+
+pub let device_in_legacy_hub : Int
+
+pub let device_not_enough_bandwidth : Int
+
+pub let device_not_enough_power : Int
+
+pub let device_reset : Int
+
+pub let device_speed : UInt
+
+pub let dp_bw : Int
+
+pub let dp_con_change : Int
+
+pub let dp_tx_discovery : Int
+
+pub let ehci_generic : Int
+
+pub let ehci_intel_medfield : Int
+
+pub let ehci_lucent : Int
+
+pub let ehci_nec : Int
+
+pub let ehci_nvidia_tegra2 : Int
+
+pub let ehci_nvidia_tegra3 : Int
+
+pub let enumeration_failure : Int
+
+pub let err_addr : Int
+
+pub let err_adp : Int
+
+pub let err_conn : Int
+
+pub let err_enum : Int
+
+pub let err_fc : Int
+
+pub let err_hec : Int
+
+pub let err_len : Int
+
+pub let err_link : Int
+
+pub let err_lock : Int
+
+pub let err_nua : Int
+
+pub let err_plug : Int
+
+pub let eusb2_isoch_endpoint_companion_descriptor_type : UInt
+
+pub let event_pipe : Int
+
+pub let file_device_usb : UInt
+
+pub let file_device_usb_scan : UInt
+
+pub let full_speed : UInt
+
+pub let hcd_diagnostic_mode_off : UInt
+
+pub let hcd_diagnostic_mode_on : UInt
+
+pub let hcd_disable_port : UInt
+
+pub let hcd_enable_port : UInt
+
+pub let hcd_get_driverkey_name : UInt
+
+pub let hcd_get_root_hub_name : UInt
+
+pub let hcd_get_stats_1 : UInt
+
+pub let hcd_get_stats_2 : UInt
+
+pub let hcd_trace_read_request : UInt
+
+pub let hcd_user_request : UInt
+
+pub let high_speed : UInt
+
+pub let hp_ack : Int
+
+pub let hub_device : Int
+
+pub let hub_nested_too_deeply : Int
+
+pub let hub_overcurrent : Int
+
+pub let hub_power_change : Int
+
+pub let ignore_short_packets : UInt
+
+pub let insufficent_bandwidth : Int
+
+pub let insufficent_power : Int
+
+pub let ioctl_abort_pipe : UInt
+
+pub let ioctl_cancel_io : UInt
+
+pub let ioctl_genericusbfn_activate_usb_bus : UInt
+
+pub let ioctl_genericusbfn_bus_event_notification : UInt
+
+pub let ioctl_genericusbfn_control_status_handshake_in : UInt
+
+pub let ioctl_genericusbfn_control_status_handshake_out : UInt
+
+pub let ioctl_genericusbfn_deactivate_usb_bus : UInt
+
+pub let ioctl_genericusbfn_get_class_info : UInt
+
+pub let ioctl_genericusbfn_get_class_info_ex : UInt
+
+pub let ioctl_genericusbfn_get_interface_descriptor_set : UInt
+
+pub let ioctl_genericusbfn_get_pipe_state : UInt
+
+pub let ioctl_genericusbfn_register_usb_string : UInt
+
+pub let ioctl_genericusbfn_set_pipe_state : UInt
+
+pub let ioctl_genericusbfn_transfer_in : UInt
+
+pub let ioctl_genericusbfn_transfer_in_append_zero_pkt : UInt
+
+pub let ioctl_genericusbfn_transfer_out : UInt
+
+pub let ioctl_get_channel_align_rqst : UInt
+
+pub let ioctl_get_device_descriptor : UInt
+
+pub let ioctl_get_hcd_driverkey_name : UInt
+
+pub let ioctl_get_pipe_configuration : UInt
+
+pub let ioctl_get_usb_descriptor : UInt
+
+pub let ioctl_get_version : UInt
+
+pub let ioctl_index : UInt
+
+pub let ioctl_internal_usb_cycle_port : UInt
+
+pub let ioctl_internal_usb_enable_port : UInt
+
+pub let ioctl_internal_usb_fail_get_status_from_device : UInt
+
+pub let ioctl_internal_usb_get_bus_info : UInt
+
+pub let ioctl_internal_usb_get_busguid_info : UInt
+
+pub let ioctl_internal_usb_get_controller_name : UInt
+
+pub let ioctl_internal_usb_get_device_config_info : UInt
+
+pub let ioctl_internal_usb_get_device_handle : UInt
+
+pub let ioctl_internal_usb_get_device_handle_ex : UInt
+
+pub let ioctl_internal_usb_get_hub_count : UInt
+
+pub let ioctl_internal_usb_get_hub_name : UInt
+
+pub let ioctl_internal_usb_get_parent_hub_info : UInt
+
+pub let ioctl_internal_usb_get_port_status : UInt
+
+pub let ioctl_internal_usb_get_roothub_pdo : UInt
+
+pub let ioctl_internal_usb_get_topology_address : UInt
+
+pub let ioctl_internal_usb_get_tt_device_handle : UInt
+
+pub let ioctl_internal_usb_notify_idle_ready : UInt
+
+pub let ioctl_internal_usb_record_failure : UInt
+
+pub let ioctl_internal_usb_register_composite_device : UInt
+
+pub let ioctl_internal_usb_req_global_resume : UInt
+
+pub let ioctl_internal_usb_req_global_suspend : UInt
+
+pub let ioctl_internal_usb_request_remote_wake_notification : UInt
+
+pub let ioctl_internal_usb_reset_port : UInt
+
+pub let ioctl_internal_usb_submit_idle_notification : UInt
+
+pub let ioctl_internal_usb_submit_urb : UInt
+
+pub let ioctl_internal_usb_unregister_composite_device : UInt
+
+pub let ioctl_read_registers : UInt
+
+pub let ioctl_reset_pipe : UInt
+
+pub let ioctl_send_usb_request : UInt
+
+pub let ioctl_set_timeout : UInt
+
+pub let ioctl_usb4_hrd_debug_read_configuration_space : UInt
+
+pub let ioctl_usb_diag_ignore_hubs_off : UInt
+
+pub let ioctl_usb_diag_ignore_hubs_on : UInt
+
+pub let ioctl_usb_diagnostic_mode_off : UInt
+
+pub let ioctl_usb_diagnostic_mode_on : UInt
+
+pub let ioctl_usb_get_descriptor_from_node_connection : UInt
+
+pub let ioctl_usb_get_device_characteristics : UInt
+
+pub let ioctl_usb_get_frame_number_and_qpc_for_time_sync : UInt
+
+pub let ioctl_usb_get_hub_capabilities : UInt
+
+pub let ioctl_usb_get_hub_capabilities_ex : UInt
+
+pub let ioctl_usb_get_hub_information_ex : UInt
+
+pub let ioctl_usb_get_node_connection_attributes : UInt
+
+pub let ioctl_usb_get_node_connection_driverkey_name : UInt
+
+pub let ioctl_usb_get_node_connection_information : UInt
+
+pub let ioctl_usb_get_node_connection_information_ex : UInt
+
+pub let ioctl_usb_get_node_connection_information_ex_v2 : UInt
+
+pub let ioctl_usb_get_node_connection_name : UInt
+
+pub let ioctl_usb_get_node_connection_superspeedplus_information : UInt
+
+pub let ioctl_usb_get_node_information : UInt
+
+pub let ioctl_usb_get_port_connector_properties : UInt
+
+pub let ioctl_usb_get_root_hub_name : UInt
+
+pub let ioctl_usb_get_transport_characteristics : UInt
+
+pub let ioctl_usb_hcd_disable_port : UInt
+
+pub let ioctl_usb_hcd_enable_port : UInt
+
+pub let ioctl_usb_hcd_get_stats_1 : UInt
+
+pub let ioctl_usb_hcd_get_stats_2 : UInt
+
+pub let ioctl_usb_hub_cycle_port : UInt
+
+pub let ioctl_usb_notify_on_transport_characteristics_change : UInt
+
+pub let ioctl_usb_register_for_transport_characteristics_change : UInt
+
+pub let ioctl_usb_reset_hub : UInt
+
+pub let ioctl_usb_start_tracking_for_time_sync : UInt
+
+pub let ioctl_usb_stop_tracking_for_time_sync : UInt
+
+pub let ioctl_usb_unregister_for_transport_characteristics_change : UInt
+
+pub let ioctl_wait_on_device_event : UInt
+
+pub let ioctl_write_registers : UInt
+
+pub let kregmanusbfnenumpath : String
+
+pub let kregusbfnenumpath : String
+
+pub let link_recovery : Int
+
+pub let low_speed : UInt
+
+pub let max_alternate_name_length : UInt
+
+pub let max_association_name_length : UInt
+
+pub let max_configuration_name_length : UInt
+
+pub let max_interface_name_length : UInt
+
+pub let max_num_pipes : UInt
+
+pub let max_num_usbfn_endpoints : UInt
+
+pub let max_supported_configurations : UInt
+
+pub let max_usb_string_length : UInt
+
+pub let maximum_transfer_size : UInt
+
+pub let maximum_usb_string_length : UInt
+
+pub let modern_device_in_legacy_hub : Int
+
+pub let ms_genre_descriptor_index : UInt
+
+pub let ms_os_flags_containerid : UInt
+
+pub let ms_os_string_signature : String
+
+pub let ms_power_descriptor_index : UInt
+
+pub let no_device_connected : Int
+
+pub let ohci_generic : Int
+
+pub let ohci_hydra : Int
+
+pub let ohci_nec : Int
+
+pub let os_string_descriptor_index : UInt
+
+pub let over_current : Int
+
+pub let pcie_wake : Int
+
+pub let pipe_transfer_timeout : UInt
+
+pub let polling_skipped : Int
+
+pub let polling_timeout : Int
+
+pub let pop_cmplt : Int
+
+pub let port_link_state_compliance_mode : UInt
+
+pub let port_link_state_disabled : UInt
+
+pub let port_link_state_hot_reset : UInt
+
+pub let port_link_state_inactive : UInt
+
+pub let port_link_state_loopback : UInt
+
+pub let port_link_state_polling : UInt
+
+pub let port_link_state_recovery : UInt
+
+pub let port_link_state_rx_detect : UInt
+
+pub let port_link_state_test_mode : UInt
+
+pub let port_link_state_u0 : UInt
+
+pub let port_link_state_u1 : UInt
+
+pub let port_link_state_u2 : UInt
+
+pub let port_link_state_u3 : UInt
+
+pub let raw_io : UInt
+
+pub let read_data_pipe : Int
+
+pub let reset_overcurrent : Int
+
+pub let reset_pipe_on_resume : UInt
+
+pub let rop_cmplt : Int
+
+pub let short_packet_terminate : UInt
+
+pub let status_success : Int
+
+pub let status_unknown : Int
+
+pub let suspend_delay : UInt
+
+pub let uhci_generic : Int
+
+pub let uhci_ich1 : Int
+
+pub let uhci_ich2 : Int
+
+pub let uhci_ich3m : Int
+
+pub let uhci_ich4 : Int
+
+pub let uhci_ich5 : Int
+
+pub let uhci_ich6 : Int
+
+pub let uhci_intel : Int
+
+pub let uhci_piix3 : Int
+
+pub let uhci_piix4 : Int
+
+pub let uhci_reserved204 : Int
+
+pub let uhci_via : Int
+
+pub let uhci_via_x01 : Int
+
+pub let uhci_via_x02 : Int
+
+pub let uhci_via_x03 : Int
+
+pub let uhci_via_x04 : Int
+
+pub let uhci_via_x0_e_fifo : Int
+
+pub let urb_function_abort_pipe : UInt
+
+pub let urb_function_bulk_or_interrupt_transfer : UInt
+
+pub let urb_function_bulk_or_interrupt_transfer_using_chained_mdl : UInt
+
+pub let urb_function_class_device : UInt
+
+pub let urb_function_class_endpoint : UInt
+
+pub let urb_function_class_interface : UInt
+
+pub let urb_function_class_other : UInt
+
+pub let urb_function_clear_feature_to_device : UInt
+
+pub let urb_function_clear_feature_to_endpoint : UInt
+
+pub let urb_function_clear_feature_to_interface : UInt
+
+pub let urb_function_clear_feature_to_other : UInt
+
+pub let urb_function_close_static_streams : UInt
+
+pub let urb_function_control_transfer : UInt
+
+pub let urb_function_control_transfer_ex : UInt
+
+pub let urb_function_get_configuration : UInt
+
+pub let urb_function_get_current_frame_number : UInt
+
+pub let urb_function_get_descriptor_from_device : UInt
+
+pub let urb_function_get_descriptor_from_endpoint : UInt
+
+pub let urb_function_get_descriptor_from_interface : UInt
+
+pub let urb_function_get_frame_length : UInt
+
+pub let urb_function_get_interface : UInt
+
+pub let urb_function_get_isoch_pipe_transfer_path_delays : UInt
+
+pub let urb_function_get_ms_feature_descriptor : UInt
+
+pub let urb_function_get_status_from_device : UInt
+
+pub let urb_function_get_status_from_endpoint : UInt
+
+pub let urb_function_get_status_from_interface : UInt
+
+pub let urb_function_get_status_from_other : UInt
+
+pub let urb_function_isoch_transfer : UInt
+
+pub let urb_function_isoch_transfer_using_chained_mdl : UInt
+
+pub let urb_function_open_static_streams : UInt
+
+pub let urb_function_release_frame_length_control : UInt
+
+pub let urb_function_reserve_0_x001_d : UInt
+
+pub let urb_function_reserve_0_x002_b : UInt
+
+pub let urb_function_reserve_0_x002_c : UInt
+
+pub let urb_function_reserve_0_x002_d : UInt
+
+pub let urb_function_reserve_0_x002_e : UInt
+
+pub let urb_function_reserve_0_x002_f : UInt
+
+pub let urb_function_reserve_0_x0033 : UInt
+
+pub let urb_function_reserve_0_x0034 : UInt
+
+pub let urb_function_reserved_0_x0016 : UInt
+
+pub let urb_function_reset_pipe : UInt
+
+pub let urb_function_select_configuration : UInt
+
+pub let urb_function_select_interface : UInt
+
+pub let urb_function_set_descriptor_to_device : UInt
+
+pub let urb_function_set_descriptor_to_endpoint : UInt
+
+pub let urb_function_set_descriptor_to_interface : UInt
+
+pub let urb_function_set_feature_to_device : UInt
+
+pub let urb_function_set_feature_to_endpoint : UInt
+
+pub let urb_function_set_feature_to_interface : UInt
+
+pub let urb_function_set_feature_to_other : UInt
+
+pub let urb_function_set_frame_length : UInt
+
+pub let urb_function_sync_clear_stall : UInt
+
+pub let urb_function_sync_reset_pipe : UInt
+
+pub let urb_function_sync_reset_pipe_and_clear_stall : UInt
+
+pub let urb_function_take_frame_length_control : UInt
+
+pub let urb_function_vendor_device : UInt
+
+pub let urb_function_vendor_endpoint : UInt
+
+pub let urb_function_vendor_interface : UInt
+
+pub let urb_function_vendor_other : UInt
+
+pub let urb_open_static_streams_version_100 : UInt
+
+pub let uregmanusbfnenumpath : String
+
+pub let uregusbfnenumpath : String
+
+pub let usb11_device : Int
+
+pub let usb20_device : Int
+
+pub let usb20_hub : Int
+
+pub let usb30_hub : Int
+
+pub let usb4_adapter_configuration_space : Int
+
+pub let usb4_configuration_registers_dw_length : UInt
+
+pub let usb4_counter_configuration_space : Int
+
+pub let usb4_hrd_debug_function_read_configuration_space : UInt
+
+pub let usb4_hrd_debug_interface_reference_string : String
+
+pub let usb4_max_depth : UInt
+
+pub let usb4_path_configuration_space : Int
+
+pub let usb4_router_configuration_space : Int
+
+pub let usb_20_endpoint_type_interrupt_reserved_mask : UInt
+
+pub let usb_20_hub_descriptor_type : UInt
+
+pub let usb_30_endpoint_type_interrupt_reserved_mask : UInt
+
+pub let usb_30_endpoint_type_interrupt_usage_mask : UInt
+
+pub let usb_30_endpoint_type_interrupt_usage_notification : UInt
+
+pub let usb_30_endpoint_type_interrupt_usage_periodic : UInt
+
+pub let usb_30_endpoint_type_interrupt_usage_reserved10 : UInt
+
+pub let usb_30_endpoint_type_interrupt_usage_reserved11 : UInt
+
+pub let usb_30_hub_descriptor_type : UInt
+
+pub let usb_allow_firmware_update : UInt
+
+pub let usb_bos_descriptor_type : UInt
+
+pub let usb_charging_policy_default : UInt
+
+pub let usb_charging_policy_icchpf : UInt
+
+pub let usb_charging_policy_icclpf : UInt
+
+pub let usb_charging_policy_no_power : UInt
+
+pub let usb_config_bus_powered : UInt
+
+pub let usb_config_power_descriptor_type : UInt
+
+pub let usb_config_powered_mask : UInt
+
+pub let usb_config_remote_wakeup : UInt
+
+pub let usb_config_reserved : UInt
+
+pub let usb_config_self_powered : UInt
+
+pub let usb_configuration_descriptor_type : UInt
+
+pub let usb_controller : Int
+
+pub let usb_cycle_port : UInt
+
+pub let usb_debug_descriptor_type : UInt
+
+pub let usb_default_device_address : UInt
+
+pub let usb_default_endpoint_address : UInt
+
+pub let usb_default_max_packet : UInt
+
+pub let usb_device : Int
+
+pub let usb_device_capability_battery_info : UInt
+
+pub let usb_device_capability_billboard : UInt
+
+pub let usb_device_capability_container_id : UInt
+
+pub let usb_device_capability_descriptor_type : UInt
+
+pub let usb_device_capability_firmware_status : UInt
+
+pub let usb_device_capability_max_u1_latency : UInt
+
+pub let usb_device_capability_max_u2_latency : UInt
+
+pub let usb_device_capability_pd_consumer_port : UInt
+
+pub let usb_device_capability_pd_provider_port : UInt
+
+pub let usb_device_capability_platform : UInt
+
+pub let usb_device_capability_power_delivery : UInt
+
+pub let usb_device_capability_precision_time_measurement : UInt
+
+pub let usb_device_capability_superspeed_bmattributes_ltm_capable : UInt
+
+pub let usb_device_capability_superspeed_bmattributes_reserved_mask : UInt
+
+pub let usb_device_capability_superspeed_speeds_supported_full : UInt
+
+pub let usb_device_capability_superspeed_speeds_supported_high : UInt
+
+pub let usb_device_capability_superspeed_speeds_supported_low : UInt
+
+pub let usb_device_capability_superspeed_speeds_supported_reserved_mask : UInt
+
+pub let usb_device_capability_superspeed_speeds_supported_super : UInt
+
+pub let usb_device_capability_superspeed_u1_device_exit_max_value : UInt
+
+pub let usb_device_capability_superspeed_u2_device_exit_max_value : UInt
+
+pub let usb_device_capability_superspeed_usb : UInt
+
+pub let usb_device_capability_superspeedplus_speed_dir_rx : UInt
+
+pub let usb_device_capability_superspeedplus_speed_dir_tx : UInt
+
+pub let usb_device_capability_superspeedplus_speed_lse_bps : UInt
+
+pub let usb_device_capability_superspeedplus_speed_lse_gbps : UInt
+
+pub let usb_device_capability_superspeedplus_speed_lse_kbps : UInt
+
+pub let usb_device_capability_superspeedplus_speed_lse_mbps : UInt
+
+pub let usb_device_capability_superspeedplus_speed_mode_asymmetric : UInt
+
+pub let usb_device_capability_superspeedplus_speed_mode_symmetric : UInt
+
+pub let usb_device_capability_superspeedplus_speed_protocol_ss : UInt
+
+pub let usb_device_capability_superspeedplus_speed_protocol_ssp : UInt
+
+pub let usb_device_capability_superspeedplus_usb : UInt
+
+pub let usb_device_capability_usb20_extension : UInt
+
+pub let usb_device_capability_usb20_extension_bmattributes_reserved_mask : UInt
+
+pub let usb_device_capability_wireless_usb : UInt
+
+pub let usb_device_characteristics_maximum_path_delays_available : UInt
+
+pub let usb_device_characteristics_version_1 : UInt
+
+pub let usb_device_class_application_specific : UInt
+
+pub let usb_device_class_audio : UInt
+
+pub let usb_device_class_audio_video : UInt
+
+pub let usb_device_class_billboard : UInt
+
+pub let usb_device_class_cdc_data : UInt
+
+pub let usb_device_class_communications : UInt
+
+pub let usb_device_class_content_security : UInt
+
+pub let usb_device_class_diagnostic_device : UInt
+
+pub let usb_device_class_hub : UInt
+
+pub let usb_device_class_human_interface : UInt
+
+pub let usb_device_class_image : UInt
+
+pub let usb_device_class_miscellaneous : UInt
+
+pub let usb_device_class_monitor : UInt
+
+pub let usb_device_class_personal_healthcare : UInt
+
+pub let usb_device_class_physical_interface : UInt
+
+pub let usb_device_class_power : UInt
+
+pub let usb_device_class_printer : UInt
+
+pub let usb_device_class_reserved : UInt
+
+pub let usb_device_class_smart_card : UInt
+
+pub let usb_device_class_storage : UInt
+
+pub let usb_device_class_vendor_specific : UInt
+
+pub let usb_device_class_video : UInt
+
+pub let usb_device_class_wireless_controller : UInt
+
+pub let usb_device_descriptor_type : UInt
+
+pub let usb_device_firmware_hash_length : UInt
+
+pub let usb_device_qualifier_descriptor_type : UInt
+
+pub let usb_diag_ignore_hubs_off : UInt
+
+pub let usb_diag_ignore_hubs_on : UInt
+
+pub let usb_disallow_firmware_update : UInt
+
+pub let usb_enable_port : UInt
+
+pub let usb_endpoint_address_mask : UInt
+
+pub let usb_endpoint_descriptor_type : UInt
+
+pub let usb_endpoint_direction_mask : UInt
+
+pub let usb_endpoint_superspeed_bulk_max_packet_size : UInt
+
+pub let usb_endpoint_superspeed_control_max_packet_size : UInt
+
+pub let usb_endpoint_superspeed_interrupt_max_packet_size : UInt
+
+pub let usb_endpoint_superspeed_iso_max_packet_size : UInt
+
+pub let usb_endpoint_type_bulk : UInt
+
+pub let usb_endpoint_type_bulk_reserved_mask : UInt
+
+pub let usb_endpoint_type_control : UInt
+
+pub let usb_endpoint_type_control_reserved_mask : UInt
+
+pub let usb_endpoint_type_interrupt : UInt
+
+pub let usb_endpoint_type_isochronous : UInt
+
+pub let usb_endpoint_type_isochronous_reserved_mask : UInt
+
+pub let usb_endpoint_type_isochronous_synchronization_adaptive : UInt
+
+pub let usb_endpoint_type_isochronous_synchronization_asynchronous : UInt
+
+pub let usb_endpoint_type_isochronous_synchronization_mask : UInt
+
+pub let usb_endpoint_type_isochronous_synchronization_no_synchronization : UInt
+
+pub let usb_endpoint_type_isochronous_synchronization_synchronous : UInt
+
+pub let usb_endpoint_type_isochronous_usage_data_endoint : UInt
+
+pub let usb_endpoint_type_isochronous_usage_feedback_endpoint : UInt
+
+pub let usb_endpoint_type_isochronous_usage_implicit_feedback_data_endpoint : UInt
+
+pub let usb_endpoint_type_isochronous_usage_mask : UInt
+
+pub let usb_endpoint_type_isochronous_usage_reserved : UInt
+
+pub let usb_endpoint_type_mask : UInt
+
+pub let usb_fail_get_status : UInt
+
+pub let usb_feature_battery_wake_mask : UInt
+
+pub let usb_feature_charging_policy : UInt
+
+pub let usb_feature_endpoint_stall : UInt
+
+pub let usb_feature_function_suspend : UInt
+
+pub let usb_feature_interface_power_d0 : UInt
+
+pub let usb_feature_interface_power_d1 : UInt
+
+pub let usb_feature_interface_power_d2 : UInt
+
+pub let usb_feature_interface_power_d3 : UInt
+
+pub let usb_feature_ldm_enable : UInt
+
+pub let usb_feature_ltm_enable : UInt
+
+pub let usb_feature_os_is_pd_aware : UInt
+
+pub let usb_feature_policy_mode : UInt
+
+pub let usb_feature_remote_wakeup : UInt
+
+pub let usb_feature_test_mode : UInt
+
+pub let usb_feature_u1_enable : UInt
+
+pub let usb_feature_u2_enable : UInt
+
+pub let usb_full_speed : Int
+
+pub let usb_get_bus_info : UInt
+
+pub let usb_get_busguid_info : UInt
+
+pub let usb_get_controller_name : UInt
+
+pub let usb_get_descriptor_from_node_connection : UInt
+
+pub let usb_get_device_characteristics : UInt
+
+pub let usb_get_device_handle : UInt
+
+pub let usb_get_device_handle_ex : UInt
+
+pub let usb_get_firmware_allowed_or_disallowed_state : UInt
+
+pub let usb_get_firmware_hash : UInt
+
+pub let usb_get_frame_number_and_qpc_for_time_sync : UInt
+
+pub let usb_get_hub_capabilities : UInt
+
+pub let usb_get_hub_capabilities_ex : UInt
+
+pub let usb_get_hub_config_info : UInt
+
+pub let usb_get_hub_count : UInt
+
+pub let usb_get_hub_information_ex : UInt
+
+pub let usb_get_hub_name : UInt
+
+pub let usb_get_node_connection_attributes : UInt
+
+pub let usb_get_node_connection_driverkey_name : UInt
+
+pub let usb_get_node_connection_information : UInt
+
+pub let usb_get_node_connection_information_ex : UInt
+
+pub let usb_get_node_connection_information_ex_v2 : UInt
+
+pub let usb_get_node_connection_name : UInt
+
+pub let usb_get_node_connection_superspeedplus_information : UInt
+
+pub let usb_get_node_information : UInt
+
+pub let usb_get_parent_hub_info : UInt
+
+pub let usb_get_port_connector_properties : UInt
+
+pub let usb_get_port_status : UInt
+
+pub let usb_get_roothub_pdo : UInt
+
+pub let usb_get_topology_address : UInt
+
+pub let usb_get_transport_characteristics : UInt
+
+pub let usb_get_tt_device_handle : UInt
+
+pub let usb_getstatus_ltm_enable : UInt
+
+pub let usb_getstatus_remote_wakeup_enabled : UInt
+
+pub let usb_getstatus_self_powered : UInt
+
+pub let usb_getstatus_u1_enable : UInt
+
+pub let usb_getstatus_u2_enable : UInt
+
+pub let usb_hc_feature_flag_port_power_switching : UInt
+
+pub let usb_hc_feature_flag_sel_suspend : UInt
+
+pub let usb_hc_feature_legacy_bios : UInt
+
+pub let usb_hc_feature_time_sync_api : UInt
+
+pub let usb_hc_generic : Int
+
+pub let usb_high_speed : Int
+
+pub let usb_highspeed_eusb2_isochronous_max_bytesperinterval : UInt
+
+pub let usb_highspeed_eusb2_isochronous_min_bytesperinterval : UInt
+
+pub let usb_hub : Int
+
+pub let usb_hub_cycle_port : UInt
+
+pub let usb_idle_notification : UInt
+
+pub let usb_idle_notification_ex : UInt
+
+pub let usb_interface_association_descriptor_type : UInt
+
+pub let usb_interface_descriptor_type : UInt
+
+pub let usb_interface_power_descriptor_type : UInt
+
+pub let usb_low_speed : Int
+
+pub let usb_mi_parent : Int
+
+pub let usb_notify_on_transport_characteristics_change : UInt
+
+pub let usb_otg_descriptor_type : UInt
+
+pub let usb_other_speed_configuration_descriptor_type : UInt
+
+pub let usb_packetflag_async_in : UInt
+
+pub let usb_packetflag_async_out : UInt
+
+pub let usb_packetflag_full_speed : UInt
+
+pub let usb_packetflag_high_speed : UInt
+
+pub let usb_packetflag_iso_in : UInt
+
+pub let usb_packetflag_iso_out : UInt
+
+pub let usb_packetflag_low_speed : UInt
+
+pub let usb_packetflag_setup : UInt
+
+pub let usb_packetflag_toggle0 : UInt
+
+pub let usb_packetflag_toggle1 : UInt
+
+pub let usb_port_status_connect : UInt
+
+pub let usb_port_status_enable : UInt
+
+pub let usb_port_status_high_speed : UInt
+
+pub let usb_port_status_low_speed : UInt
+
+pub let usb_port_status_over_current : UInt
+
+pub let usb_port_status_power : UInt
+
+pub let usb_port_status_reset : UInt
+
+pub let usb_port_status_suspend : UInt
+
+pub let usb_portattr_mini_connector : UInt
+
+pub let usb_portattr_no_connector : UInt
+
+pub let usb_portattr_no_overcurrent_ui : UInt
+
+pub let usb_portattr_oem_connector : UInt
+
+pub let usb_portattr_owned_by_cc : UInt
+
+pub let usb_portattr_shared_usb2 : UInt
+
+pub let usb_record_failure : UInt
+
+pub let usb_register_composite_device : UInt
+
+pub let usb_register_for_transport_bandwidth_change : UInt
+
+pub let usb_register_for_transport_characteristics_change : UInt
+
+pub let usb_register_for_transport_latency_change : UInt
+
+pub let usb_req_global_resume : UInt
+
+pub let usb_req_global_suspend : UInt
+
+pub let usb_request_clear_feature : UInt
+
+pub let usb_request_clear_tt_buffer : UInt
+
+pub let usb_request_get_configuration : UInt
+
+pub let usb_request_get_descriptor : UInt
+
+pub let usb_request_get_firmware_status : UInt
+
+pub let usb_request_get_interface : UInt
+
+pub let usb_request_get_port_err_count : UInt
+
+pub let usb_request_get_state : UInt
+
+pub let usb_request_get_status : UInt
+
+pub let usb_request_get_tt_state : UInt
+
+pub let usb_request_isoch_delay : UInt
+
+pub let usb_request_remote_wake_notification : UInt
+
+pub let usb_request_reset_tt : UInt
+
+pub let usb_request_set_address : UInt
+
+pub let usb_request_set_configuration : UInt
+
+pub let usb_request_set_descriptor : UInt
+
+pub let usb_request_set_feature : UInt
+
+pub let usb_request_set_firmware_status : UInt
+
+pub let usb_request_set_hub_depth : UInt
+
+pub let usb_request_set_interface : UInt
+
+pub let usb_request_set_sel : UInt
+
+pub let usb_request_stop_tt : UInt
+
+pub let usb_request_sync_frame : UInt
+
+pub let usb_reserved_descriptor_type : UInt
+
+pub let usb_reserved_user_base : UInt
+
+pub let usb_reset_hub : UInt
+
+pub let usb_reset_port : UInt
+
+pub let usb_root_hub : Int
+
+pub let usb_start_tracking_for_time_sync : UInt
+
+pub let usb_status_ext_port_status : UInt
+
+pub let usb_status_pd_status : UInt
+
+pub let usb_status_port_status : UInt
+
+pub let usb_stop_tracking_for_time_sync : UInt
+
+pub let usb_string_descriptor_type : UInt
+
+pub let usb_submit_urb : UInt
+
+pub let usb_super_speed : Int
+
+pub let usb_superspeed_endpoint_companion_descriptor_type : UInt
+
+pub let usb_superspeed_isochronous_max_multiplier : UInt
+
+pub let usb_superspeedplus_isoch_endpoint_companion_descriptor_type : UInt
+
+pub let usb_superspeedplus_isochronous_max_bytesperinterval : UInt
+
+pub let usb_superspeedplus_isochronous_min_bytesperinterval : UInt
+
+pub let usb_support_d0_command : UInt
+
+pub let usb_support_d1_command : UInt
+
+pub let usb_support_d1_wakeup : UInt
+
+pub let usb_support_d2_command : UInt
+
+pub let usb_support_d2_wakeup : UInt
+
+pub let usb_support_d3_command : UInt
+
+pub let usb_test_mode_test_force_enable : UInt
+
+pub let usb_test_mode_test_j : UInt
+
+pub let usb_test_mode_test_k : UInt
+
+pub let usb_test_mode_test_packet : UInt
+
+pub let usb_test_mode_test_se0_nak : UInt
+
+pub let usb_transport_characteristics_bandwidth_available : UInt
+
+pub let usb_transport_characteristics_latency_available : UInt
+
+pub let usb_transport_characteristics_version_1 : UInt
+
+pub let usb_unregister_composite_device : UInt
+
+pub let usb_unregister_for_transport_characteristics_change : UInt
+
+pub let usb_user_buffer_too_small : Int
+
+pub let usb_user_device_not_started : Int
+
+pub let usb_user_error_not_mapped : Int
+
+pub let usb_user_feature_disabled : Int
+
+pub let usb_user_invalid_header_parameter : Int
+
+pub let usb_user_invalid_parameter : Int
+
+pub let usb_user_invalid_request_code : Int
+
+pub let usb_user_miniport_error : Int
+
+pub let usb_user_no_device_connected : Int
+
+pub let usb_user_not_supported : Int
+
+pub let usb_user_success : Int
+
+pub let usbd_default_maximum_transfer_size : UInt
+
+pub let usbd_default_pipe_transfer : UInt
+
+pub let usbd_endpoint_offload_hardware_assisted : Int
+
+pub let usbd_endpoint_offload_mode_not_supported : Int
+
+pub let usbd_endpoint_offload_software_assisted : Int
+
+pub let usbd_iso_start_frame_range : UInt
+
+pub let usbd_pf_change_max_packet : UInt
+
+pub let usbd_pf_enable_rt_thread_access : UInt
+
+pub let usbd_pf_handles_ssp_high_bandwidth_isoch : UInt
+
+pub let usbd_pf_interactive_priority : UInt
+
+pub let usbd_pf_map_add_transfers : UInt
+
+pub let usbd_pf_priority_mask : UInt
+
+pub let usbd_pf_short_packet_opt : UInt
+
+pub let usbd_pf_ssp_high_bandwidth_isoch : UInt
+
+pub let usbd_pf_video_priority : UInt
+
+pub let usbd_pf_voice_priority : UInt
+
+pub let usbd_pipe_type_bulk : Int
+
+pub let usbd_pipe_type_control : Int
+
+pub let usbd_pipe_type_interrupt : Int
+
+pub let usbd_pipe_type_isochronous : Int
+
+pub let usbd_port_connected : UInt
+
+pub let usbd_port_enabled : UInt
+
+pub let usbd_short_transfer_ok : UInt
+
+pub let usbd_start_iso_transfer_asap : UInt
+
+pub let usbd_transfer_direction : UInt
+
+pub let usbd_transfer_direction_in : UInt
+
+pub let usbd_transfer_direction_out : UInt
+
+pub let usbdi_version : UInt
+
+pub let usbfn_bus_speed_full : Int
+
+pub let usbfn_bus_speed_high : Int
+
+pub let usbfn_bus_speed_low : Int
+
+pub let usbfn_bus_speed_maximum : Int
+
+pub let usbfn_bus_speed_super : Int
+
+pub let usbfn_charging_downstream_port : Int
+
+pub let usbfn_dedicated_charging_port : Int
+
+pub let usbfn_device_state_addressed : Int
+
+pub let usbfn_device_state_attached : Int
+
+pub let usbfn_device_state_configured : Int
+
+pub let usbfn_device_state_default : Int
+
+pub let usbfn_device_state_detached : Int
+
+pub let usbfn_device_state_minimum : Int
+
+pub let usbfn_device_state_state_maximum : Int
+
+pub let usbfn_device_state_suspended : Int
+
+pub let usbfn_direction_in : Int
+
+pub let usbfn_direction_maximum : Int
+
+pub let usbfn_direction_minimum : Int
+
+pub let usbfn_direction_out : Int
+
+pub let usbfn_direction_rx : Int
+
+pub let usbfn_direction_tx : Int
+
+pub let usbfn_event_attach : Int
+
+pub let usbfn_event_bus_tear_down : Int
+
+pub let usbfn_event_configured : Int
+
+pub let usbfn_event_detach : Int
+
+pub let usbfn_event_maximum : Int
+
+pub let usbfn_event_minimum : Int
+
+pub let usbfn_event_port_type : Int
+
+pub let usbfn_event_reset : Int
+
+pub let usbfn_event_resume : Int
+
+pub let usbfn_event_set_interface : Int
+
+pub let usbfn_event_setup_packet : Int
+
+pub let usbfn_event_suspend : Int
+
+pub let usbfn_event_un_configured : Int
+
+pub let usbfn_interrupt_endpoint_size_not_updateable_mask : UInt
+
+pub let usbfn_invalid_dedicated_charging_port : Int
+
+pub let usbfn_port_type_maximum : Int
+
+pub let usbfn_proprietary_dedicated_charging_port : Int
+
+pub let usbfn_standard_downstream_port : Int
+
+pub let usbfn_unknown_port : Int
+
+pub let usbscan_pipe_bulk : Int
+
+pub let usbscan_pipe_control : Int
+
+pub let usbscan_pipe_interrupt : Int
+
+pub let usbscan_pipe_isochronous : Int
+
+pub let usbuser_clear_rootport_feature : UInt
+
+pub let usbuser_get_bandwidth_information : UInt
+
+pub let usbuser_get_bus_statistics_0 : UInt
+
+pub let usbuser_get_controller_driver_key : UInt
+
+pub let usbuser_get_controller_info_0 : UInt
+
+pub let usbuser_get_power_state_map : UInt
+
+pub let usbuser_get_roothub_symbolic_name : UInt
+
+pub let usbuser_get_rootport_status : UInt
+
+pub let usbuser_get_usb2_hw_version : UInt
+
+pub let usbuser_get_usb_driver_version : UInt
+
+pub let usbuser_invalid_request : UInt
+
+pub let usbuser_op_close_raw_device : UInt
+
+pub let usbuser_op_mask_devonly_api : UInt
+
+pub let usbuser_op_mask_hctest_api : UInt
+
+pub let usbuser_op_open_raw_device : UInt
+
+pub let usbuser_op_raw_reset_port : UInt
+
+pub let usbuser_op_send_one_packet : UInt
+
+pub let usbuser_op_send_raw_command : UInt
+
+pub let usbuser_pass_thru : UInt
+
+pub let usbuser_set_rootport_feature : UInt
+
+pub let usbuser_usb_refresh_hct_reg : UInt
+
+pub let usbuser_version : UInt
+
+pub let wdm_usb_power_device_d0 : Int
+
+pub let wdm_usb_power_device_d1 : Int
+
+pub let wdm_usb_power_device_d2 : Int
+
+pub let wdm_usb_power_device_d3 : Int
+
+pub let wdm_usb_power_device_unspecified : Int
+
+pub let wdm_usb_power_not_mapped : Int
+
+pub let wdm_usb_power_system_hibernate : Int
+
+pub let wdm_usb_power_system_shutdown : Int
+
+pub let wdm_usb_power_system_sleeping1 : Int
+
+pub let wdm_usb_power_system_sleeping2 : Int
+
+pub let wdm_usb_power_system_sleeping3 : Int
+
+pub let wdm_usb_power_system_unspecified : Int
+
+pub let wdm_usb_power_system_working : Int
+
+pub fn win_usb_abort_pipe_raw(@core.RawAddress, UInt) -> @core.RawWin32Call[Int]
+
+pub fn win_usb_control_transfer_raw(@core.RawAddress, Bytes, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn win_usb_flush_pipe_raw(@core.RawAddress, UInt) -> @core.RawWin32Call[Int]
+
+pub fn win_usb_free_raw(@core.RawAddress) -> Int
+
+pub fn win_usb_get_adjusted_frame_number_raw(@core.RawAddress, Int64) -> @core.RawWin32Call[Int]
+
+pub fn win_usb_get_associated_interface_raw(@core.RawAddress, UInt, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn win_usb_get_current_alternate_setting_raw(@core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn win_usb_get_current_frame_number_and_qpc_raw(@core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn win_usb_get_current_frame_number_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn win_usb_get_descriptor_raw(@core.RawAddress, UInt, UInt, UInt, @core.RawAddress, UInt, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn win_usb_get_overlapped_result_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, Int) -> @core.RawWin32Call[Int]
+
+pub fn win_usb_get_pipe_policy_raw(@core.RawAddress, UInt, UInt, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn win_usb_get_power_policy_raw(@core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn win_usb_initialize_raw(@core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn win_usb_parse_configuration_descriptor_raw(@core.RawAddress, @core.RawAddress, Int, Int, Int, Int, Int) -> @core.RawWin32Call[@core.RawAddress]
+
+pub fn win_usb_parse_descriptors_raw(@core.RawAddress, UInt, @core.RawAddress, Int) -> @core.RawWin32Call[@core.RawAddress]
+
+pub fn win_usb_query_device_information_raw(@core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn win_usb_query_interface_settings_raw(@core.RawAddress, UInt, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn win_usb_query_pipe_ex_raw(@core.RawAddress, UInt, UInt, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn win_usb_query_pipe_raw(@core.RawAddress, UInt, UInt, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn win_usb_read_isoch_pipe_asap_raw(@core.RawAddress, UInt, UInt, Int, UInt, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn win_usb_read_isoch_pipe_raw(@core.RawAddress, UInt, UInt, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn win_usb_read_pipe_raw(@core.RawAddress, UInt, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn win_usb_register_isoch_buffer_raw(@core.RawAddress, UInt, @core.RawAddress, UInt, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn win_usb_reset_pipe_raw(@core.RawAddress, UInt) -> @core.RawWin32Call[Int]
+
+pub fn win_usb_set_current_alternate_setting_raw(@core.RawAddress, UInt) -> @core.RawWin32Call[Int]
+
+pub fn win_usb_set_pipe_policy_raw(@core.RawAddress, UInt, UInt, UInt, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn win_usb_set_power_policy_raw(@core.RawAddress, UInt, UInt, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn win_usb_start_tracking_for_time_sync_raw(@core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn win_usb_stop_tracking_for_time_sync_raw(@core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn win_usb_unregister_isoch_buffer_raw(@core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn win_usb_write_isoch_pipe_asap_raw(@core.RawAddress, UInt, UInt, Int, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn win_usb_write_isoch_pipe_raw(@core.RawAddress, UInt, UInt, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn win_usb_write_pipe_raw(@core.RawAddress, UInt, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub let wmi_usb_device_node_information : UInt
+
+pub let wmi_usb_driver_information : UInt
+
+pub let wmi_usb_driver_notification : UInt
+
+pub let wmi_usb_hub_node_information : UInt
+
+pub let wmi_usb_performance_information : UInt
+
+pub let wmi_usb_power_device_enable : UInt
+
+pub let write_data_pipe : Int
+
+// Errors
+
+// Types and methods
+
+// Type aliases
+pub using @3543f4ba7bf05224 {type ALTERNATEINTERFACE_ba033dfcc513 as ALTERNATEINTERFACE}
+
+pub using @3543f4ba7bf05224 {type AnonymousEStruct_0752bf65a965 as AnonymousEStruct_0752bf65a9}
+
+pub using @3543f4ba7bf05224 {type AnonymousEStruct_3875c06d11b2 as AnonymousEStruct_3875c06d11}
+
+pub using @3543f4ba7bf05224 {type AnonymousEStruct_3de728958cd6 as AnonymousEStruct_3de728958c}
+
+pub using @3543f4ba7bf05224 {type AnonymousEStruct_454529378b09 as AnonymousEStruct_454529378b}
+
+pub using @3543f4ba7bf05224 {type AnonymousEStruct_46d3f771d9a1 as AnonymousEStruct_46d3f771d9}
+
+pub using @3543f4ba7bf05224 {type AnonymousEStruct_55bd7eaff566 as AnonymousEStruct_55bd7eaff5}
+
+pub using @3543f4ba7bf05224 {type AnonymousEStruct_5a4dc31e6f7f as AnonymousEStruct_5a4dc31e6f}
+
+pub using @3543f4ba7bf05224 {type AnonymousEStruct_60dfd83403c5 as AnonymousEStruct_60dfd83403}
+
+pub using @3543f4ba7bf05224 {type AnonymousEStruct_75fd4ffc10ce as AnonymousEStruct_75fd4ffc10}
+
+pub using @3543f4ba7bf05224 {type AnonymousEStruct_7d78b163e335 as AnonymousEStruct_7d78b163e3}
+
+pub using @3543f4ba7bf05224 {type AnonymousEStruct_832fcac7e58f as AnonymousEStruct_832fcac7e5}
+
+pub using @3543f4ba7bf05224 {type AnonymousEStruct_841b7846f2e0 as AnonymousEStruct_841b7846f2}
+
+pub using @3543f4ba7bf05224 {type AnonymousEStruct_84888dc7cb41 as AnonymousEStruct_84888dc7cb}
+
+pub using @3543f4ba7bf05224 {type AnonymousEStruct_87fab82d3be8 as AnonymousEStruct_87fab82d3b}
+
+pub using @3543f4ba7bf05224 {type AnonymousEStruct_a00264214342 as AnonymousEStruct_a002642143}
+
+pub using @3543f4ba7bf05224 {type AnonymousEStruct_a786458ee1e5 as AnonymousEStruct_a786458ee1}
+
+pub using @3543f4ba7bf05224 {type AnonymousEStruct_afa296c9180b as AnonymousEStruct_afa296c918}
+
+pub using @3543f4ba7bf05224 {type AnonymousEStruct_b3608ecc43b0 as AnonymousEStruct_b3608ecc43}
+
+pub using @3543f4ba7bf05224 {type AnonymousEStruct_b78ea3c69def as AnonymousEStruct_b78ea3c69d}
+
+pub using @3543f4ba7bf05224 {type AnonymousEStruct_c2bf812418be as AnonymousEStruct_c2bf812418}
+
+pub using @3543f4ba7bf05224 {type AnonymousEStruct_c7dd126fcd11 as AnonymousEStruct_c7dd126fcd}
+
+pub using @3543f4ba7bf05224 {type AnonymousEStruct_c9b8d689ebaf as AnonymousEStruct_c9b8d689eb}
+
+pub using @3543f4ba7bf05224 {type AnonymousEStruct_cd0882ec806e as AnonymousEStruct_cd0882ec80}
+
+pub using @3543f4ba7bf05224 {type AnonymousEStruct_d2203f2a62ca as AnonymousEStruct_d2203f2a62}
+
+pub using @3543f4ba7bf05224 {type AnonymousEStruct_d4f44ad2703a as AnonymousEStruct_d4f44ad270}
+
+pub using @3543f4ba7bf05224 {type AnonymousEStruct_dc4784be9e99 as AnonymousEStruct_dc4784be9e}
+
+pub using @3543f4ba7bf05224 {type AnonymousEStruct_e02885a11665 as AnonymousEStruct_e02885a116}
+
+pub using @3543f4ba7bf05224 {type AnonymousEStruct_e1afd6f14c7a as AnonymousEStruct_e1afd6f14c}
+
+pub using @3543f4ba7bf05224 {type AnonymousEStruct_ed791372b243 as AnonymousEStruct_ed791372b2}
+
+pub using @3543f4ba7bf05224 {type AnonymousEStruct_fa7174f434e7 as AnonymousEStruct_fa7174f434}
+
+pub using @3543f4ba7bf05224 {type AnonymousEUnion_84f67396b506 as AnonymousEUnion_84f67396b5}
+
+pub using @3543f4ba7bf05224 {type AnonymousEUnion_a26f855b34e1 as AnonymousEUnion_a26f855b34}
+
+pub using @3543f4ba7bf05224 {type AnonymousEUnion_c193bc98c6b8 as AnonymousEUnion_c193bc98c6}
+
+pub using @3543f4ba7bf05224 {type BM_481d74c59b61 as BM}
+
+pub using @3543f4ba7bf05224 {type BMREQUESTTYPE_951e2b7c584d as BMREQUESTTYPE}
+
+pub using @3543f4ba7bf05224 {type BmAttributesEUnion_2feb17eed143 as BmAttributesEUnion_2feb17eed1}
+
+pub using @3543f4ba7bf05224 {type BmAttributesEUnion_513a6d5573ff as BmAttributesEUnion_513a6d5573}
+
+pub using @3543f4ba7bf05224 {type BmAttributesEUnion_6166ea12f856 as BmAttributesEUnion_6166ea12f8}
+
+pub using @3543f4ba7bf05224 {type BmAttributesEUnion_6939404c5325 as BmAttributesEUnion_6939404c53}
+
+pub using @3543f4ba7bf05224 {type BmAttributesEUnion_7daaf6c25ace as BmAttributesEUnion_7daaf6c25a}
+
+pub using @3543f4ba7bf05224 {type BmCapabilitiesEUnion_f64cecd3f241 as BmCapabilitiesEUnion}
+
+pub using @3543f4ba7bf05224 {type BulkEStruct_10e652142418 as BulkEStruct}
+
+pub using @3543f4ba7bf05224 {type CHANNELINFO_7ec5660113a6 as CHANNELINFO}
+
+pub using @3543f4ba7bf05224 {type DEVICEDESCRIPTOR_d881d5f4effb as DEVICEDESCRIPTOR}
+
+pub using @3543f4ba7bf05224 {type DRVVERSION_fd256495a39d as DRVVERSION}
+
+pub using @3543f4ba7bf05224 {type EUSB2ISOCHENDPOINTCOMPANIONDESCRIPTOR_e2c0fff83b01 as EUSB2ISOCHENDPOINTCOMPANIONDESCRIPTOR}
+
+pub using @3543f4ba7bf05224 {type HCDISOSTATCOUNTERS_5d45ccc10564 as HCDISOSTATCOUNTERS}
+
+pub using @3543f4ba7bf05224 {type HCDSTATCOUNTERS_dd4db778c18e as HCDSTATCOUNTERS}
+
+pub using @3543f4ba7bf05224 {type HCDSTATINFORMATION1_3fd378efeebf as HCDSTATINFORMATION1}
+
+pub using @3543f4ba7bf05224 {type HCDSTATINFORMATION2_5e77b170ca65 as HCDSTATINFORMATION2}
+
+pub using @3543f4ba7bf05224 {type HUBDEVICECONFIGINFO_5e7162eaf1e0 as HUBDEVICECONFIGINFO}
+
+pub using @3543f4ba7bf05224 {type IOBLOCK_a051d564dc85 as IOBLOCK}
+
+pub using @3543f4ba7bf05224 {type IOBLOCKEX_2e24aa2e75b0 as IOBLOCKEX}
+
+pub using @3543f4ba7bf05224 {type IsochronousEStruct_b9f0aa47ef3d as IsochronousEStruct}
+
+pub using @3543f4ba7bf05224 {type MP_424f5da84515 as MP}
+
+pub using @3543f4ba7bf05224 {type OSSTRING_d0b33331c1fd as OSSTRING}
+
+pub using @3543f4ba7bf05224 {type PACKETPARAMETERS_7bf6591db5d5 as PACKETPARAMETERS}
+
+pub using @3543f4ba7bf05224 {type PIPETYPE_1ee23b911136 as PIPETYPE}
+
+pub using @3543f4ba7bf05224 {type RAWPIPETYPE_daf4a856de2d as RAWPIPETYPE}
+
+pub using @3543f4ba7bf05224 {type RAWRESETPORTPARAMETERS_7e023854b402 as RAWRESETPORTPARAMETERS}
+
+pub using @3543f4ba7bf05224 {type RAWROOTPORTFEATURE_1fb838dd7266 as RAWROOTPORTFEATURE}
+
+pub using @3543f4ba7bf05224 {type RAWROOTPORTPARAMETERS_b7433718cc1e as RAWROOTPORTPARAMETERS}
+
+pub using @3543f4ba7bf05224 {type SetupPacketEStruct_efdd2f241d19 as SetupPacketEStruct}
+
+pub using @3543f4ba7bf05224 {type UEUnion_71635c1a17a5 as UEUnion_71635c1a17}
+
+pub using @3543f4ba7bf05224 {type UEUnion_c998a064db9d as UEUnion_c998a064db}
+
+pub using @3543f4ba7bf05224 {type UEUnion_ea1c6a8d3d15 as UEUnion_ea1c6a8d3d}
+
+pub using @3543f4ba7bf05224 {type URB_a81c785f33cf as URB}
+
+pub using @3543f4ba7bf05224 {type URBBULKORINTERRUPTTRANSFER_3a1e164f5c93 as URBBULKORINTERRUPTTRANSFER}
+
+pub using @3543f4ba7bf05224 {type URBCONTROLDESCRIPTORREQUEST_4e8499729025 as URBCONTROLDESCRIPTORREQUEST}
+
+pub using @3543f4ba7bf05224 {type URBCONTROLFEATUREREQUEST_94da06554fe5 as URBCONTROLFEATUREREQUEST}
+
+pub using @3543f4ba7bf05224 {type URBCONTROLGETCONFIGURATIONREQUEST_69796c3ee18e as URBCONTROLGETCONFIGURATIONREQUEST}
+
+pub using @3543f4ba7bf05224 {type URBCONTROLGETINTERFACEREQUEST_e21bf9eba5e3 as URBCONTROLGETINTERFACEREQUEST}
+
+pub using @3543f4ba7bf05224 {type URBCONTROLGETSTATUSREQUEST_5a31aeb589c9 as URBCONTROLGETSTATUSREQUEST}
+
+pub using @3543f4ba7bf05224 {type URBCONTROLTRANSFER_a89418ff9e55 as URBCONTROLTRANSFER}
+
+pub using @3543f4ba7bf05224 {type URBCONTROLTRANSFEREX_d0fa727b8fac as URBCONTROLTRANSFEREX}
+
+pub using @3543f4ba7bf05224 {type URBCONTROLVENDORORCLASSREQUEST_f1fa02e46bb0 as URBCONTROLVENDORORCLASSREQUEST}
+
+pub using @3543f4ba7bf05224 {type URBFRAMELENGTHCONTROL_d4c3709dcb3d as URBFRAMELENGTHCONTROL}
+
+pub using @3543f4ba7bf05224 {type URBGETCURRENTFRAMENUMBER_dc3ca32569c4 as URBGETCURRENTFRAMENUMBER}
+
+pub using @3543f4ba7bf05224 {type URBGETFRAMELENGTH_982f8085b570 as URBGETFRAMELENGTH}
+
+pub using @3543f4ba7bf05224 {type URBGETISOCHPIPETRANSFERPATHDELAYS_77368ba47c81 as URBGETISOCHPIPETRANSFERPATHDELAYS}
+
+pub using @3543f4ba7bf05224 {type URBHCDAREA_5d3182a704f1 as URBHCDAREA}
+
+pub using @3543f4ba7bf05224 {type URBHEADER_4e70631c34a8 as URBHEADER}
+
+pub using @3543f4ba7bf05224 {type URBISOCHTRANSFER_f82fb2879fcc as URBISOCHTRANSFER}
+
+pub using @3543f4ba7bf05224 {type URBOPENSTATICSTREAMS_af740a5a5a8d as URBOPENSTATICSTREAMS}
+
+pub using @3543f4ba7bf05224 {type URBOSFEATUREDESCRIPTORREQUEST_2f37b2bc1d22 as URBOSFEATUREDESCRIPTORREQUEST}
+
+pub using @3543f4ba7bf05224 {type URBPIPEREQUEST_12dfc54f66b8 as URBPIPEREQUEST}
+
+pub using @3543f4ba7bf05224 {type URBSELECTCONFIGURATION_ba31b7bb5d54 as URBSELECTCONFIGURATION}
+
+pub using @3543f4ba7bf05224 {type URBSELECTINTERFACE_66eeaf050554 as URBSELECTINTERFACE}
+
+pub using @3543f4ba7bf05224 {type URBSETFRAMELENGTH_6c0665edd1f4 as URBSETFRAMELENGTH}
+
+pub using @3543f4ba7bf05224 {type USB20PORTCHANGE_4b45c4aea56e as USB20PORTCHANGE}
+
+pub using @3543f4ba7bf05224 {type USB20PORTSTATUS_02bf8d4b1fa7 as USB20PORTSTATUS}
+
+pub using @3543f4ba7bf05224 {type USB30HUBDESCRIPTOR_153c5f12773b as USB30HUBDESCRIPTOR}
+
+pub using @3543f4ba7bf05224 {type USB30PORTCHANGE_100d6ce4dc97 as USB30PORTCHANGE}
+
+pub using @3543f4ba7bf05224 {type USB30PORTSTATUS_1d9d40688d6c as USB30PORTSTATUS}
+
+pub using @3543f4ba7bf05224 {type USB4CONFIGSPACETYPE_12b0fc45fce5 as USB4CONFIGSPACETYPE}
+
+pub using @3543f4ba7bf05224 {type USB4HRDDEBUGREADCONFIGURATIONSPACEINPUT_ce5ae3dd2788 as USB4HRDDEBUGREADCONFIGURATIONSPACEINPUT}
+
+pub using @3543f4ba7bf05224 {type USB4HRDDEBUGREADCONFIGURATIONSPACEOUTPUT_829ad8fcf76c as USB4HRDDEBUGREADCONFIGURATIONSPACEOUTPUT}
+
+pub using @3543f4ba7bf05224 {type USB4HRDDEBUGROUTESTRING_ab3e11f239b2 as USB4HRDDEBUGROUTESTRING}
+
+pub using @3543f4ba7bf05224 {type USB4STATUS_e02d8d9e2908 as USB4STATUS}
+
+pub using @3543f4ba7bf05224 {type USBACQUIREINFO_f92e5554e89f as USBACQUIREINFO}
+
+pub using @3543f4ba7bf05224 {type USBBANDWIDTHINFO_c98b5d864b83 as USBBANDWIDTHINFO}
+
+pub using @3543f4ba7bf05224 {type USBBOSDESCRIPTOR_5ca2409f74fb as USBBOSDESCRIPTOR}
+
+pub using @3543f4ba7bf05224 {type USBBUSNOTIFICATION_399a10e1b56f as USBBUSNOTIFICATION}
+
+pub using @3543f4ba7bf05224 {type USBBUSSTATISTICS0_9fce6914b77c as USBBUSSTATISTICS0}
+
+pub using @3543f4ba7bf05224 {type USBCHANGEREGISTRATIONHANDLE_babecc7ae22d as USBCHANGEREGISTRATIONHANDLE}
+
+pub using @3543f4ba7bf05224 {type USBCLOSERAWDEVICEPARAMETERS_d3349a005e66 as USBCLOSERAWDEVICEPARAMETERS}
+
+pub using @3543f4ba7bf05224 {type USBCOMMONDESCRIPTOR_e29da3b2508b as USBCOMMONDESCRIPTOR}
+
+pub using @3543f4ba7bf05224 {type USBCOMPOSITEDEVICEINFO_55bc7439071e as USBCOMPOSITEDEVICEINFO}
+
+pub using @3543f4ba7bf05224 {type USBCOMPOSITEFUNCTIONINFO_618d4678ee50 as USBCOMPOSITEFUNCTIONINFO}
+
+pub using @3543f4ba7bf05224 {type USBCONFIGURATIONDESCRIPTOR_4161a81692c7 as USBCONFIGURATIONDESCRIPTOR}
+
+pub using @3543f4ba7bf05224 {type USBCONFIGURATIONPOWERDESCRIPTOR_5727f2dcafbd as USBCONFIGURATIONPOWERDESCRIPTOR}
+
+pub using @3543f4ba7bf05224 {type USBCONNECTIONNOTIFICATION_b0ea23b4d82c as USBCONNECTIONNOTIFICATION}
+
+pub using @3543f4ba7bf05224 {type USBCONNECTIONSTATUS_c29ba2212676 as USBCONNECTIONSTATUS}
+
+pub using @3543f4ba7bf05224 {type USBCONTROLLERDEVICEINFO_41cffafeeff6 as USBCONTROLLERDEVICEINFO}
+
+pub using @3543f4ba7bf05224 {type USBCONTROLLERFLAVOR_86d90564d662 as USBCONTROLLERFLAVOR}
+
+pub using @3543f4ba7bf05224 {type USBCONTROLLERINFO0_8b5e20e83f3e as USBCONTROLLERINFO0}
+
+pub using @3543f4ba7bf05224 {type USBCYCLEPORTPARAMS_df967654e295 as USBCYCLEPORTPARAMS}
+
+pub using @3543f4ba7bf05224 {type USBDDEVICEINFORMATION_b707729aa02f as USBDDEVICEINFORMATION}
+
+pub using @3543f4ba7bf05224 {type USBDEFAULTPIPESETUPPACKET_de07397e6102 as USBDEFAULTPIPESETUPPACKET}
+
+pub using @3543f4ba7bf05224 {type USBDENDPOINTOFFLOADINFORMATION_5543d2d2d162 as USBDENDPOINTOFFLOADINFORMATION}
+
+pub using @3543f4ba7bf05224 {type USBDENDPOINTOFFLOADINFORMATIONV1_ce527c25216e as USBDENDPOINTOFFLOADINFORMATIONV1}
+
+pub using @3543f4ba7bf05224 {type USBDENDPOINTOFFLOADMODE_d46b3701ec26 as USBDENDPOINTOFFLOADMODE}
+
+pub using @3543f4ba7bf05224 {type USBDESCRIPTORREQUEST_48b597a36715 as USBDESCRIPTORREQUEST}
+
+pub using @3543f4ba7bf05224 {type USBDEVICECAPABILITYBILLBOARDDESCRIPTOR_40bc26f271e5 as USBDEVICECAPABILITYBILLBOARDDESCRIPTOR}
+
+pub using @3543f4ba7bf05224 {type USBDEVICECAPABILITYCONTAINERIDDESCRIPTOR_78ea56ce5d5e as USBDEVICECAPABILITYCONTAINERIDDESCRIPTOR}
+
+pub using @3543f4ba7bf05224 {type USBDEVICECAPABILITYDESCRIPTOR_c62fb0b3d0cf as USBDEVICECAPABILITYDESCRIPTOR}
+
+pub using @3543f4ba7bf05224 {type USBDEVICECAPABILITYFIRMWARESTATUSDESCRIPTOR_fec06fa74a5a as USBDEVICECAPABILITYFIRMWARESTATUSDESCRIPTOR}
+
+pub using @3543f4ba7bf05224 {type USBDEVICECAPABILITYPDCONSUMERPORTDESCRIPTOR_98e1146d4aee as USBDEVICECAPABILITYPDCONSUMERPORTDESCRIPTOR}
+
+pub using @3543f4ba7bf05224 {type USBDEVICECAPABILITYPLATFORMDESCRIPTOR_1409915811bc as USBDEVICECAPABILITYPLATFORMDESCRIPTOR}
+
+pub using @3543f4ba7bf05224 {type USBDEVICECAPABILITYPOWERDELIVERYDESCRIPTOR_48a907b673fd as USBDEVICECAPABILITYPOWERDELIVERYDESCRIPTOR}
+
+pub using @3543f4ba7bf05224 {type USBDEVICECAPABILITYSUPERSPEEDPLUSSPEED_bde300581b65 as USBDEVICECAPABILITYSUPERSPEEDPLUSSPEED}
+
+pub using @3543f4ba7bf05224 {type USBDEVICECAPABILITYSUPERSPEEDPLUSUSBDESCRIPTOR_cbafd5e5e53c as USBDEVICECAPABILITYSUPERSPEEDPLUSUSBDESCRIPTOR}
+
+pub using @3543f4ba7bf05224 {type USBDEVICECAPABILITYSUPERSPEEDUSBDESCRIPTOR_2787ca818916 as USBDEVICECAPABILITYSUPERSPEEDUSBDESCRIPTOR}
+
+pub using @3543f4ba7bf05224 {type USBDEVICECAPABILITYUSB20EXTENSIONDESCRIPTOR_478d9263a93d as USBDEVICECAPABILITYUSB20EXTENSIONDESCRIPTOR}
+
+pub using @3543f4ba7bf05224 {type USBDEVICECHARACTERISTICS_33a42d4d67b5 as USBDEVICECHARACTERISTICS}
+
+pub using @3543f4ba7bf05224 {type USBDEVICEDESCRIPTOR_3d786a1c4563 as USBDEVICEDESCRIPTOR}
+
+pub using @3543f4ba7bf05224 {type USBDEVICEINFO_ee3c080a54ee as USBDEVICEINFO}
+
+pub using @3543f4ba7bf05224 {type USBDEVICENODEINFO_b5857cedb103 as USBDEVICENODEINFO}
+
+pub using @3543f4ba7bf05224 {type USBDEVICEPERFORMANCEINFO_3f1c999dbe97 as USBDEVICEPERFORMANCEINFO}
+
+pub using @3543f4ba7bf05224 {type USBDEVICEQUALIFIERDESCRIPTOR_d3bfefb504bf as USBDEVICEQUALIFIERDESCRIPTOR}
+
+pub using @3543f4ba7bf05224 {type USBDEVICESPEED_67364be3aa03 as USBDEVICESPEED}
+
+pub using @3543f4ba7bf05224 {type USBDEVICESTATE_2c47b18a37c2 as USBDEVICESTATE}
+
+pub using @3543f4ba7bf05224 {type USBDEVICESTATUS_5b5b9e90f641 as USBDEVICESTATUS}
+
+pub using @3543f4ba7bf05224 {type USBDEVICETYPE_edff0072c44c as USBDEVICETYPE}
+
+pub using @3543f4ba7bf05224 {type USBDINTERFACEINFORMATION_82e4796d2681 as USBDINTERFACEINFORMATION}
+
+pub using @3543f4ba7bf05224 {type USBDISOPACKETDESCRIPTOR_9f2aba5ecec5 as USBDISOPACKETDESCRIPTOR}
+
+pub using @3543f4ba7bf05224 {type USBDPIPEINFORMATION_01d3f0e4eacd as USBDPIPEINFORMATION}
+
+pub using @3543f4ba7bf05224 {type USBDPIPETYPE_5194c903a5b6 as USBDPIPETYPE}
+
+pub using @3543f4ba7bf05224 {type USBDRIVERVERSIONPARAMETERS_9f9660f492ea as USBDRIVERVERSIONPARAMETERS}
+
+pub using @3543f4ba7bf05224 {type USBDSTREAMINFORMATION_bfcb96c8020a as USBDSTREAMINFORMATION}
+
+pub using @3543f4ba7bf05224 {type USBDVERSIONINFORMATION_95a4a35548fb as USBDVERSIONINFORMATION}
+
+pub using @3543f4ba7bf05224 {type USBENDPOINTDESCRIPTOR_242c6e302871 as USBENDPOINTDESCRIPTOR}
+
+pub using @3543f4ba7bf05224 {type USBENDPOINTSTATUS_00108c81df63 as USBENDPOINTSTATUS}
+
+pub using @3543f4ba7bf05224 {type USBFNBUSCONFIGURATIONINFO_3e6cd657f686 as USBFNBUSCONFIGURATIONINFO}
+
+pub using @3543f4ba7bf05224 {type USBFNBUSSPEED_25e554bc3615 as USBFNBUSSPEED}
+
+pub using @3543f4ba7bf05224 {type USBFNCLASSINFORMATIONPACKET_ecc1f238c704 as USBFNCLASSINFORMATIONPACKET}
+
+pub using @3543f4ba7bf05224 {type USBFNCLASSINFORMATIONPACKETEX_e665c502e79b as USBFNCLASSINFORMATIONPACKETEX}
+
+pub using @3543f4ba7bf05224 {type USBFNCLASSINTERFACE_33601d3a968e as USBFNCLASSINTERFACE}
+
+pub using @3543f4ba7bf05224 {type USBFNCLASSINTERFACEEX_4950f6337fe6 as USBFNCLASSINTERFACEEX}
+
+pub using @3543f4ba7bf05224 {type USBFNDEVICESTATE_6aa9a569a9b8 as USBFNDEVICESTATE}
+
+pub using @3543f4ba7bf05224 {type USBFNDIRECTION_a0d6004bede9 as USBFNDIRECTION}
+
+pub using @3543f4ba7bf05224 {type USBFNEVENT_9dd0a6f106a7 as USBFNEVENT}
+
+pub using @3543f4ba7bf05224 {type USBFNINTERFACEINFO_ef21245b9730 as USBFNINTERFACEINFO}
+
+pub using @3543f4ba7bf05224 {type USBFNNOTIFICATION_c946017fae05 as USBFNNOTIFICATION}
+
+pub using @3543f4ba7bf05224 {type USBFNPIPEINFORMATION_dd4125205a28 as USBFNPIPEINFORMATION}
+
+pub using @3543f4ba7bf05224 {type USBFNPORTTYPE_e01f559b2215 as USBFNPORTTYPE}
+
+pub using @3543f4ba7bf05224 {type USBFNUSBSTRING_7c84edab8c08 as USBFNUSBSTRING}
+
+pub using @3543f4ba7bf05224 {type USBFRAMENUMBERANDQPCFORTIMESYNCINFORMATION_303f5a9d88ba as USBFRAMENUMBERANDQPCFORTIMESYNCINFORMATION}
+
+pub using @3543f4ba7bf05224 {type USBFUNCTIONSUSPENDOPTIONS_41c5efc2bdd0 as USBFUNCTIONSUSPENDOPTIONS}
+
+pub using @3543f4ba7bf05224 {type USBHCDDRIVERKEYNAME_341f7e0f468a as USBHCDDRIVERKEYNAME}
+
+pub using @3543f4ba7bf05224 {type USBHIGHSPEEDMAXPACKET_7de8b2e9f2b0 as USBHIGHSPEEDMAXPACKET}
+
+pub using @3543f4ba7bf05224 {type USBHUB30PORTREMOTEWAKEMASK_446a610d8918 as USBHUB30PORTREMOTEWAKEMASK}
+
+pub using @3543f4ba7bf05224 {type USBHUBCAPABILITIES_70b75d30005b as USBHUBCAPABILITIES}
+
+pub using @3543f4ba7bf05224 {type USBHUBCAPABILITIESEX_e223ed3ab7d8 as USBHUBCAPABILITIESEX}
+
+pub using @3543f4ba7bf05224 {type USBHUBCAPFLAGS_ef298af905a9 as USBHUBCAPFLAGS}
+
+pub using @3543f4ba7bf05224 {type USBHUBCHANGE_3e8a3f71296d as USBHUBCHANGE}
+
+pub using @3543f4ba7bf05224 {type USBHUBDESCRIPTOR_86e6aa76fb6e as USBHUBDESCRIPTOR}
+
+pub using @3543f4ba7bf05224 {type USBHUBDEVICEINFO_e83ec91af5a2 as USBHUBDEVICEINFO}
+
+pub using @3543f4ba7bf05224 {type USBHUBDEVICEUXDSETTINGS_c3852a92fbc7 as USBHUBDEVICEUXDSETTINGS}
+
+pub using @3543f4ba7bf05224 {type USBHUBINFORMATION_377985834ee2 as USBHUBINFORMATION}
+
+pub using @3543f4ba7bf05224 {type USBHUBINFORMATIONEX_1fa85535600e as USBHUBINFORMATIONEX}
+
+pub using @3543f4ba7bf05224 {type USBHUBNAME_ac025733b7a4 as USBHUBNAME}
+
+pub using @3543f4ba7bf05224 {type USBHUBNODE_027f5e1158a0 as USBHUBNODE}
+
+pub using @3543f4ba7bf05224 {type USBHUBPORTINFORMATION_421a3f4d694e as USBHUBPORTINFORMATION}
+
+pub using @3543f4ba7bf05224 {type USBHUBSTATUS_0135d8f09d23 as USBHUBSTATUS}
+
+pub using @3543f4ba7bf05224 {type USBHUBSTATUSANDCHANGE_879da19cd85d as USBHUBSTATUSANDCHANGE}
+
+pub using @3543f4ba7bf05224 {type USBHUBTYPE_2e995f83056e as USBHUBTYPE}
+
+pub using @3543f4ba7bf05224 {type USBIDLECALLBACK_31f79fecb493 as USBIDLECALLBACK}
+
+pub using @3543f4ba7bf05224 {type USBIDLECALLBACKINFO_3c5528d980d7 as USBIDLECALLBACKINFO}
+
+pub using @3543f4ba7bf05224 {type USBIDSTRING_57ffbfd9be99 as USBIDSTRING}
+
+pub using @3543f4ba7bf05224 {type USBINTERFACEASSOCIATIONDESCRIPTOR_e9010a7888f5 as USBINTERFACEASSOCIATIONDESCRIPTOR}
+
+pub using @3543f4ba7bf05224 {type USBINTERFACEDESCRIPTOR_563e845c5cdc as USBINTERFACEDESCRIPTOR}
+
+pub using @3543f4ba7bf05224 {type USBINTERFACEPOWERDESCRIPTOR_7edd29b1e622 as USBINTERFACEPOWERDESCRIPTOR}
+
+pub using @3543f4ba7bf05224 {type USBINTERFACESTATUS_73e6c6c26446 as USBINTERFACESTATUS}
+
+pub using @3543f4ba7bf05224 {type USBMIPARENTINFORMATION_49df4d377861 as USBMIPARENTINFORMATION}
+
+pub using @3543f4ba7bf05224 {type USBNODECONNECTIONATTRIBUTES_e7be27b776ce as USBNODECONNECTIONATTRIBUTES}
+
+pub using @3543f4ba7bf05224 {type USBNODECONNECTIONDRIVERKEYNAME_5f05d46d287b as USBNODECONNECTIONDRIVERKEYNAME}
+
+pub using @3543f4ba7bf05224 {type USBNODECONNECTIONINFORMATION_b9059fab6c21 as USBNODECONNECTIONINFORMATION}
+
+pub using @3543f4ba7bf05224 {type USBNODECONNECTIONINFORMATIONEX_64cb81d2de65 as USBNODECONNECTIONINFORMATIONEX}
+
+pub using @3543f4ba7bf05224 {type USBNODECONNECTIONINFORMATIONEXV2_11d2fa0f0c95 as USBNODECONNECTIONINFORMATIONEXV2}
+
+pub using @3543f4ba7bf05224 {type USBNODECONNECTIONINFORMATIONEXV2FLAGS_df9c4b79e8d5 as USBNODECONNECTIONINFORMATIONEXV2FLAGS}
+
+pub using @3543f4ba7bf05224 {type USBNODECONNECTIONNAME_6ba74fd21d18 as USBNODECONNECTIONNAME}
+
+pub using @3543f4ba7bf05224 {type USBNODECONNECTIONSUPERSPEEDPLUSINFORMATION_413ef7ab87b1 as USBNODECONNECTIONSUPERSPEEDPLUSINFORMATION}
+
+pub using @3543f4ba7bf05224 {type USBNODEINFORMATION_3b9ec4b6c7a9 as USBNODEINFORMATION}
+
+pub using @3543f4ba7bf05224 {type USBNOTIFICATION_73d53e9f98c1 as USBNOTIFICATION}
+
+pub using @3543f4ba7bf05224 {type USBNOTIFICATIONTYPE_805485b178f0 as USBNOTIFICATIONTYPE}
+
+pub using @3543f4ba7bf05224 {type USBOPENRAWDEVICEPARAMETERS_76b8d5adfe59 as USBOPENRAWDEVICEPARAMETERS}
+
+pub using @3543f4ba7bf05224 {type USBPASSTHRUPARAMETERS_c9c73dc4054b as USBPASSTHRUPARAMETERS}
+
+pub using @3543f4ba7bf05224 {type USBPIPEINFO_ab637cd3c543 as USBPIPEINFO}
+
+pub using @3543f4ba7bf05224 {type USBPORTCHANGE_a2d3759a3392 as USBPORTCHANGE}
+
+pub using @3543f4ba7bf05224 {type USBPORTCONNECTORPROPERTIES_8189824a9078 as USBPORTCONNECTORPROPERTIES}
+
+pub using @3543f4ba7bf05224 {type USBPORTEXTSTATUS_f36bf419380f as USBPORTEXTSTATUS}
+
+pub using @3543f4ba7bf05224 {type USBPORTEXTSTATUSANDCHANGE_be671b26f0db as USBPORTEXTSTATUSANDCHANGE}
+
+pub using @3543f4ba7bf05224 {type USBPORTPROPERTIES_e3d0dab059ba as USBPORTPROPERTIES}
+
+pub using @3543f4ba7bf05224 {type USBPORTSTATUS_fedc933572f3 as USBPORTSTATUS}
+
+pub using @3543f4ba7bf05224 {type USBPORTSTATUSANDCHANGE_c0b4b9be4dba as USBPORTSTATUSANDCHANGE}
+
+pub using @3543f4ba7bf05224 {type USBPOWERINFO_b6565f232feb as USBPOWERINFO}
+
+pub using @3543f4ba7bf05224 {type USBPROTOCOLS_0fa43140c9d2 as USBPROTOCOLS}
+
+pub using @3543f4ba7bf05224 {type USBROOTHUBNAME_d3c9523c5129 as USBROOTHUBNAME}
+
+pub using @3543f4ba7bf05224 {type USBSCANGETDESCRIPTOR_a2319b3c363f as USBSCANGETDESCRIPTOR}
+
+pub using @3543f4ba7bf05224 {type USBSCANPIPECONFIGURATION_c03040997cdf as USBSCANPIPECONFIGURATION}
+
+pub using @3543f4ba7bf05224 {type USBSCANPIPEINFORMATION_8704563af071 as USBSCANPIPEINFORMATION}
+
+pub using @3543f4ba7bf05224 {type USBSCANTIMEOUT_d8937096b56c as USBSCANTIMEOUT}
+
+pub using @3543f4ba7bf05224 {type USBSENDRAWCOMMANDPARAMETERS_ffc2a559db20 as USBSENDRAWCOMMANDPARAMETERS}
+
+pub using @3543f4ba7bf05224 {type USBSTARTTRACKINGFORTIMESYNCINFORMATION_24e0aa9f9dda as USBSTARTTRACKINGFORTIMESYNCINFORMATION}
+
+pub using @3543f4ba7bf05224 {type USBSTOPTRACKINGFORTIMESYNCINFORMATION_0edbfb2603cf as USBSTOPTRACKINGFORTIMESYNCINFORMATION}
+
+pub using @3543f4ba7bf05224 {type USBSTRINGDESCRIPTOR_605ae83cd8b9 as USBSTRINGDESCRIPTOR}
+
+pub using @3543f4ba7bf05224 {type USBSUPERSPEEDENDPOINTCOMPANIONDESCRIPTOR_63f6a56d0036 as USBSUPERSPEEDENDPOINTCOMPANIONDESCRIPTOR}
+
+pub using @3543f4ba7bf05224 {type USBSUPERSPEEDPLUSISOCHENDPOINTCOMPANIONDESCRIPTOR_790c84447a7d as USBSUPERSPEEDPLUSISOCHENDPOINTCOMPANIONDESCRIPTOR}
+
+pub using @3543f4ba7bf05224 {type USBTOPOLOGYADDRESS_7071105cf4ab as USBTOPOLOGYADDRESS}
+
+pub using @3543f4ba7bf05224 {type USBTRANSPORTCHARACTERISTICS_83e4f63a9206 as USBTRANSPORTCHARACTERISTICS}
+
+pub using @3543f4ba7bf05224 {type USBTRANSPORTCHARACTERISTICSCHANGENOTIFICATION_98d4da3d83c5 as USBTRANSPORTCHARACTERISTICSCHANGENOTIFICATION}
+
+pub using @3543f4ba7bf05224 {type USBTRANSPORTCHARACTERISTICSCHANGEREGISTRATION_2ec6814161a1 as USBTRANSPORTCHARACTERISTICSCHANGEREGISTRATION}
+
+pub using @3543f4ba7bf05224 {type USBTRANSPORTCHARACTERISTICSCHANGEUNREGISTRATION_2d1d630bc438 as USBTRANSPORTCHARACTERISTICSCHANGEUNREGISTRATION}
+
+pub using @3543f4ba7bf05224 {type USBUNICODENAME_d8bb3729b771 as USBUNICODENAME}
+
+pub using @3543f4ba7bf05224 {type USBUSB2HWVERSIONPARAMETERS_7d0bc5b5db95 as USBUSB2HWVERSIONPARAMETERS}
+
+pub using @3543f4ba7bf05224 {type USBUSERBANDWIDTHINFOREQUEST_049d62769487 as USBUSERBANDWIDTHINFOREQUEST}
+
+pub using @3543f4ba7bf05224 {type USBUSERBUSSTATISTICS0REQUEST_3e9be56c662e as USBUSERBUSSTATISTICS0REQUEST}
+
+pub using @3543f4ba7bf05224 {type USBUSERCLOSERAWDEVICE_83f4c1825f4a as USBUSERCLOSERAWDEVICE}
+
+pub using @3543f4ba7bf05224 {type USBUSERCONTROLLERINFO0_be3089fdd4c9 as USBUSERCONTROLLERINFO0}
+
+pub using @3543f4ba7bf05224 {type USBUSERCONTROLLERUNICODENAME_c91d3b4cb114 as USBUSERCONTROLLERUNICODENAME}
+
+pub using @3543f4ba7bf05224 {type USBUSERERRORCODE_b42c9aab339c as USBUSERERRORCODE}
+
+pub using @3543f4ba7bf05224 {type USBUSERGETDRIVERVERSION_d77be61488e6 as USBUSERGETDRIVERVERSION}
+
+pub using @3543f4ba7bf05224 {type USBUSERGETUSB2HWVERSION_31c4558051e9 as USBUSERGETUSB2HWVERSION}
+
+pub using @3543f4ba7bf05224 {type USBUSEROPENRAWDEVICE_2e8880b43acd as USBUSEROPENRAWDEVICE}
+
+pub using @3543f4ba7bf05224 {type USBUSERPASSTHRUREQUEST_cf9746c8bc7a as USBUSERPASSTHRUREQUEST}
+
+pub using @3543f4ba7bf05224 {type USBUSERPOWERINFOREQUEST_302b78f5e17a as USBUSERPOWERINFOREQUEST}
+
+pub using @3543f4ba7bf05224 {type USBUSERRAWRESETROOTPORT_1973ca75c7df as USBUSERRAWRESETROOTPORT}
+
+pub using @3543f4ba7bf05224 {type USBUSERREFRESHHCTREG_b6ec06215a31 as USBUSERREFRESHHCTREG}
+
+pub using @3543f4ba7bf05224 {type USBUSERREQUESTHEADER_55a629940474 as USBUSERREQUESTHEADER}
+
+pub using @3543f4ba7bf05224 {type USBUSERROOTPORTFEATUREREQUEST_18c24d1a273f as USBUSERROOTPORTFEATUREREQUEST}
+
+pub using @3543f4ba7bf05224 {type USBUSERROOTPORTPARAMETERS_2fc555ade2d5 as USBUSERROOTPORTPARAMETERS}
+
+pub using @3543f4ba7bf05224 {type USBUSERSENDONEPACKET_abde0e2be0d7 as USBUSERSENDONEPACKET}
+
+pub using @3543f4ba7bf05224 {type USBUSERSENDRAWCOMMAND_f0ed369f824e as USBUSERSENDRAWCOMMAND}
+
+pub using @3543f4ba7bf05224 {type USBWMIDEVICENODETYPE_7c68ae9f762d as USBWMIDEVICENODETYPE}
+
+pub using @3543f4ba7bf05224 {type VconnPowerEUnion_3c0dfd161ce2 as VconnPowerEUnion}
+
+pub using @3543f4ba7bf05224 {type WDMUSBPOWERSTATE_b4b77069d5cf as WDMUSBPOWERSTATE}
+
+pub using @3543f4ba7bf05224 {type WFunctionalitySupportEUnion_efbca8419b80 as WFunctionalitySupportEUnion}
+
+pub using @3543f4ba7bf05224 {type WINUSBINTERFACEHANDLE_cf55a1346d77 as WINUSBINTERFACEHANDLE}
+
+pub using @3543f4ba7bf05224 {type WINUSBPIPEINFORMATION_6cffba8aa05a as WINUSBPIPEINFORMATION}
+
+pub using @3543f4ba7bf05224 {type WINUSBPIPEINFORMATIONEX_add93aa88af7 as WINUSBPIPEINFORMATIONEX}
+
+pub using @3543f4ba7bf05224 {type WINUSBPIPEPOLICY_fad15f484856 as WINUSBPIPEPOLICY}
+
+pub using @3543f4ba7bf05224 {type WINUSBPOWERPOLICY_b2315ff9230e as WINUSBPOWERPOLICY}
+
+pub using @3543f4ba7bf05224 {type WINUSBSETUPPACKET_eb575ea3a97e as WINUSBSETUPPACKET}
+
+pub using @3543f4ba7bf05224 {type WIndex_167d412e83af as WIndex}
+
+pub using @3543f4ba7bf05224 {type WValue_12838e4bd84e as WValue}
+
+// Traits
+

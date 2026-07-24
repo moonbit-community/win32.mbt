@@ -1,0 +1,3826 @@
+// Generated using `moon info`, DON'T EDIT IT
+package "moonbit-community/win32-bindings/windows/win32/storage/file_system"
+
+import {
+  "moonbit-community/win32-bindings/runtime/core",
+  "moonbit-community/win32-bindings/scc/3633021c678f0cc3",
+}
+
+// Values
+pub let access_all : UInt
+
+pub let access_atrib : UInt
+
+pub let access_create : UInt
+
+pub let access_delete : UInt
+
+pub let access_exec : UInt
+
+pub let access_perm : UInt
+
+pub let access_read : UInt
+
+pub let access_write : UInt
+
+pub fn add(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn add_log_container_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn add_log_container_set_raw(@core.RawAddress, UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn add_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn add_user_name(@core.RawAddress, @core.RawAddress, UInt, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn add_user_name_raw(@core.RawAddress, @core.RawAddress, UInt, @core.RawAddress) -> Int
+
+pub fn add_user_sid(@core.RawAddress, @core.RawAddress, UInt, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn add_user_sid_raw(@core.RawAddress, @core.RawAddress, UInt, @core.RawAddress) -> Int
+
+pub fn add_users_to_encrypted_file_raw(@core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn advance_log_base_raw(@core.RawAddress, @core.RawAddress, UInt, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn align_reserved_log_raw(@core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn alloc_reserved_log_raw(@core.RawAddress, UInt, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn are_file_apis_ansi_raw() -> Int
+
+pub fn are_short_names_enabled_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub let backup_alternate_data : UInt
+
+pub let backup_data : UInt
+
+pub let backup_ea_data : UInt
+
+pub let backup_link : UInt
+
+pub let backup_object_id : UInt
+
+pub let backup_property_data : UInt
+
+pub fn backup_read_raw(@core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, Int, Int, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub let backup_reparse_data : UInt
+
+pub let backup_security_data : UInt
+
+pub fn backup_seek_raw(@core.RawAddress, UInt, UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub let backup_sparse_block : UInt
+
+pub let backup_txfs_data : UInt
+
+pub fn backup_write_raw(@core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, Int, Int, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn build_io_ring_cancel_request(@core.RawAddress, Bytes, UInt64, UInt64) -> Unit raise @core.WindowsError
+
+pub fn build_io_ring_cancel_request_raw(@core.RawAddress, Bytes, UInt64, UInt64) -> Int
+
+pub fn build_io_ring_flush_file(@core.RawAddress, Bytes, Int, UInt64, Int) -> Unit raise @core.WindowsError
+
+pub fn build_io_ring_flush_file_raw(@core.RawAddress, Bytes, Int, UInt64, Int) -> Int
+
+pub fn build_io_ring_read_file(@core.RawAddress, Bytes, Bytes, UInt, UInt64, UInt64, Int) -> Unit raise @core.WindowsError
+
+pub fn build_io_ring_read_file_raw(@core.RawAddress, Bytes, Bytes, UInt, UInt64, UInt64, Int) -> Int
+
+pub fn build_io_ring_read_file_scatter(@core.RawAddress, Bytes, UInt, @core.RawAddress, UInt, UInt64, UInt64, Int) -> Unit raise @core.WindowsError
+
+pub fn build_io_ring_read_file_scatter_raw(@core.RawAddress, Bytes, UInt, @core.RawAddress, UInt, UInt64, UInt64, Int) -> Int
+
+pub fn build_io_ring_register_buffers(@core.RawAddress, UInt, @core.RawAddress, UInt64) -> Unit raise @core.WindowsError
+
+pub fn build_io_ring_register_buffers_raw(@core.RawAddress, UInt, @core.RawAddress, UInt64) -> Int
+
+pub fn build_io_ring_register_file_handles(@core.RawAddress, UInt, @core.RawAddress, UInt64) -> Unit raise @core.WindowsError
+
+pub fn build_io_ring_register_file_handles_raw(@core.RawAddress, UInt, @core.RawAddress, UInt64) -> Int
+
+pub fn build_io_ring_write_file(@core.RawAddress, Bytes, Bytes, UInt, UInt64, Int, UInt64, Int) -> Unit raise @core.WindowsError
+
+pub fn build_io_ring_write_file_gather(@core.RawAddress, Bytes, UInt, @core.RawAddress, UInt, UInt64, Int, UInt64, Int) -> Unit raise @core.WindowsError
+
+pub fn build_io_ring_write_file_gather_raw(@core.RawAddress, Bytes, UInt, @core.RawAddress, UInt, UInt64, Int, UInt64, Int) -> Int
+
+pub fn build_io_ring_write_file_raw(@core.RawAddress, Bytes, Bytes, UInt, UInt64, Int, UInt64, Int) -> Int
+
+pub let bus_type1394 : Int
+
+pub let bus_type_ata : Int
+
+pub let bus_type_atapi : Int
+
+pub let bus_type_fibre : Int
+
+pub let bus_type_file_backed_virtual : Int
+
+pub let bus_type_max : Int
+
+pub let bus_type_max_reserved : Int
+
+pub let bus_type_mmc : Int
+
+pub let bus_type_nvme : Int
+
+pub let bus_type_nvmeof : Int
+
+pub let bus_type_raid : Int
+
+pub let bus_type_sas : Int
+
+pub let bus_type_sata : Int
+
+pub let bus_type_scm : Int
+
+pub let bus_type_scsi : Int
+
+pub let bus_type_sd : Int
+
+pub let bus_type_spaces : Int
+
+pub let bus_type_ssa : Int
+
+pub let bus_type_ufs : Int
+
+pub let bus_type_unknown : Int
+
+pub let bus_type_usb : Int
+
+pub let bus_type_virtual : Int
+
+pub let bus_typei_scsi : Int
+
+pub let callback_chunk_finished : UInt
+
+pub let callback_stream_switch : UInt
+
+pub fn check_name_legal_dos8_dot3_a_raw(@core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn check_name_legal_dos8_dot3_w_raw(@core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub let clfs_baselog_extension : String
+
+pub let clfs_client_record : UInt
+
+pub let clfs_container_active : UInt
+
+pub let clfs_container_active_pending_delete : UInt
+
+pub let clfs_container_inactive : UInt
+
+pub let clfs_container_initializing : UInt
+
+pub let clfs_container_pending_archive : UInt
+
+pub let clfs_container_pending_archive_and_delete : UInt
+
+pub let clfs_container_relative_prefix : String
+
+pub let clfs_container_stream_prefix : String
+
+pub let clfs_context_forward : Int
+
+pub let clfs_context_none : Int
+
+pub let clfs_context_previous : Int
+
+pub let clfs_context_undo_next : Int
+
+pub let clfs_data_record : UInt
+
+pub let clfs_flag_filter_intermediate_level : UInt
+
+pub let clfs_flag_filter_top_level : UInt
+
+pub let clfs_flag_force_append : UInt
+
+pub let clfs_flag_force_flush : UInt
+
+pub let clfs_flag_hidden_system_log : UInt
+
+pub let clfs_flag_ignore_share_access : UInt
+
+pub let clfs_flag_minifilter_level : UInt
+
+pub let clfs_flag_no_flags : UInt
+
+pub let clfs_flag_non_reentrant_filter : UInt
+
+pub let clfs_flag_read_in_progress : UInt
+
+pub let clfs_flag_reentrant_file_system : UInt
+
+pub let clfs_flag_reentrant_filter : UInt
+
+pub let clfs_flag_use_reservation : UInt
+
+pub let clfs_io_stats_default : Int
+
+pub let clfs_io_stats_max : Int
+
+pub let clfs_log_archive_disabled : Int
+
+pub let clfs_log_archive_enabled : Int
+
+pub let clfs_log_basic_information : Int
+
+pub let clfs_log_basic_information_physical : Int
+
+pub let clfs_log_physical_lsn_information : Int
+
+pub let clfs_log_physical_name_information : Int
+
+pub let clfs_log_stream_identifier_information : Int
+
+pub let clfs_log_system_marking_information : Int
+
+pub let clfs_marshalling_flag_disable_buff_init : UInt
+
+pub let clfs_marshalling_flag_none : UInt
+
+pub let clfs_max_container_info : UInt
+
+pub let clfs_mgmt_advance_tail_notification : Int
+
+pub let clfs_mgmt_client_registration_version : UInt
+
+pub let clfs_mgmt_log_full_handler_notification : Int
+
+pub let clfs_mgmt_log_unpinned_notification : Int
+
+pub let clfs_mgmt_log_write_notification : Int
+
+pub let clfs_mgmt_policy_auto_grow : Int
+
+pub let clfs_mgmt_policy_auto_shrink : Int
+
+pub let clfs_mgmt_policy_growth_rate : Int
+
+pub let clfs_mgmt_policy_invalid : Int
+
+pub let clfs_mgmt_policy_log_tail : Int
+
+pub let clfs_mgmt_policy_maximum_size : Int
+
+pub let clfs_mgmt_policy_minimum_size : Int
+
+pub let clfs_mgmt_policy_new_container_extension : Int
+
+pub let clfs_mgmt_policy_new_container_prefix : Int
+
+pub let clfs_mgmt_policy_new_container_size : Int
+
+pub let clfs_mgmt_policy_new_container_suffix : Int
+
+pub let clfs_mgmt_policy_version : UInt
+
+pub let clfs_null_record : UInt
+
+pub let clfs_restart_record : UInt
+
+pub let clfs_scan_backward : UInt
+
+pub let clfs_scan_buffered : UInt
+
+pub let clfs_scan_close : UInt
+
+pub let clfs_scan_forward : UInt
+
+pub let clfs_scan_init : UInt
+
+pub let clfs_scan_initialized : UInt
+
+pub fn clone(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn clone_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn close_and_reset_log_file_raw(@core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn close_encrypted_file_raw_raw(@core.RawAddress) -> Unit
+
+pub fn close_io_ring(@core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn close_io_ring_raw(@core.RawAddress) -> Int
+
+pub let cls_container_active : UInt
+
+pub let cls_container_active_pending_delete : UInt
+
+pub let cls_container_inactive : UInt
+
+pub let cls_container_initializing : UInt
+
+pub let cls_container_pending_archive : UInt
+
+pub let cls_container_pending_archive_and_delete : UInt
+
+pub let cls_context_forward : Int
+
+pub let cls_context_none : Int
+
+pub let cls_context_previous : Int
+
+pub let cls_context_undo_next : Int
+
+pub let cls_io_stats_default : Int
+
+pub let cls_io_stats_max : Int
+
+pub fn commit_complete_raw(@core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn commit_enlistment_raw(@core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn commit_transaction_async_raw(@core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn commit_transaction_raw(@core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn compare_file_time_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub let compression_format_default : UInt
+
+pub let compression_format_deflate : UInt
+
+pub let compression_format_lz4 : UInt
+
+pub let compression_format_lznt1 : UInt
+
+pub let compression_format_none : UInt
+
+pub let compression_format_xp10 : UInt
+
+pub let compression_format_xpress : UInt
+
+pub let compression_format_xpress_huff : UInt
+
+pub let compression_format_zlib : UInt
+
+pub fn copy_file2(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn copy_file2_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub let copy_file2_v2_disable_block_cloning : UInt
+
+pub let copy_file2_v2_dont_copy_junctions : UInt
+
+pub let copy_file2_v2_valid_flags : UInt
+
+pub fn copy_file_a_raw(@core.RawAddress, @core.RawAddress, Int) -> @core.RawWin32Call[Int]
+
+pub let copy_file_allow_decrypted_destination : UInt
+
+pub let copy_file_copy_symlink : UInt
+
+pub let copy_file_directory : UInt
+
+pub let copy_file_disable_pre_allocation : UInt
+
+pub let copy_file_disable_sparse_copy : UInt
+
+pub let copy_file_dont_request_dest_write_dac : UInt
+
+pub let copy_file_enable_low_free_space_mode : UInt
+
+pub let copy_file_enable_sparse_copy : UInt
+
+pub fn copy_file_ex_a_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, UInt) -> @core.RawWin32Call[Int]
+
+pub fn copy_file_ex_w_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, UInt) -> @core.RawWin32Call[Int]
+
+pub let copy_file_fail_if_exists : UInt
+
+pub fn copy_file_from_app_w_raw(@core.RawAddress, @core.RawAddress, Int) -> Int
+
+pub let copy_file_ignore_edp_block : UInt
+
+pub let copy_file_ignore_source_encryption : UInt
+
+pub let copy_file_no_buffering : UInt
+
+pub let copy_file_no_offload : UInt
+
+pub let copy_file_open_and_copy_reparse_point : UInt
+
+pub let copy_file_open_source_for_write : UInt
+
+pub let copy_file_request_compressed_traffic : UInt
+
+pub let copy_file_request_security_privileges : UInt
+
+pub let copy_file_restartable : UInt
+
+pub let copy_file_resume_from_pause : UInt
+
+pub let copy_file_skip_alternate_streams : UInt
+
+pub fn copy_file_transacted_a_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, UInt, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn copy_file_transacted_w_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, UInt, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn copy_file_w_raw(@core.RawAddress, @core.RawAddress, Int) -> @core.RawWin32Call[Int]
+
+pub fn copy_lz_file_raw(Int, Int) -> Int
+
+pub let copyfile2_callback_chunk_finished : Int
+
+pub let copyfile2_callback_chunk_started : Int
+
+pub let copyfile2_callback_error : Int
+
+pub let copyfile2_callback_max : Int
+
+pub let copyfile2_callback_none : Int
+
+pub let copyfile2_callback_poll_continue : Int
+
+pub let copyfile2_callback_stream_finished : Int
+
+pub let copyfile2_callback_stream_started : Int
+
+pub let copyfile2_io_cycle_size_max : UInt
+
+pub let copyfile2_io_cycle_size_min : UInt
+
+pub let copyfile2_io_rate_min : UInt
+
+pub let copyfile2_message_copy_offload : Int
+
+pub let copyfile2_phase_max : Int
+
+pub let copyfile2_phase_namegraft_copy : Int
+
+pub let copyfile2_phase_none : Int
+
+pub let copyfile2_phase_prepare_dest : Int
+
+pub let copyfile2_phase_prepare_source : Int
+
+pub let copyfile2_phase_read_source : Int
+
+pub let copyfile2_phase_server_copy : Int
+
+pub let copyfile2_phase_write_destination : Int
+
+pub let copyfile2_progress_cancel : Int
+
+pub let copyfile2_progress_continue : Int
+
+pub let copyfile2_progress_pause : Int
+
+pub let copyfile2_progress_quiet : Int
+
+pub let copyfile2_progress_stop : Int
+
+pub let create_always : UInt
+
+pub fn create_bind_link(@core.RawAddress, @core.RawAddress, Int, UInt, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub let create_bind_link_flag_merged : Int
+
+pub let create_bind_link_flag_none : Int
+
+pub let create_bind_link_flag_read_only : Int
+
+pub fn create_bind_link_raw(@core.RawAddress, @core.RawAddress, Int, UInt, @core.RawAddress) -> Int
+
+pub fn create_directory2_a_raw(@core.RawAddress, UInt, UInt, Int, @core.RawAddress) -> @core.RawAddress
+
+pub fn create_directory2_w_raw(@core.RawAddress, UInt, UInt, Int, @core.RawAddress) -> @core.RawAddress
+
+pub fn create_directory_a_raw(@core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn create_directory_ex_a_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn create_directory_ex_w_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn create_directory_from_app_w_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn create_directory_transacted_a_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn create_directory_transacted_w_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn create_directory_w_raw(@core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn create_enlistment_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, UInt, UInt, @core.RawAddress) -> @core.RawWin32Call[@core.RawAddress]
+
+pub fn create_enum_users(@core.RawAddress, @core.RawAddress, UInt, UInt, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn create_enum_users_raw(@core.RawAddress, @core.RawAddress, UInt, UInt, @core.RawAddress) -> Int
+
+pub fn create_file2_from_app_w_raw(@core.RawAddress, UInt, UInt, UInt, @core.RawAddress) -> @core.RawAddress
+
+pub fn create_file2_raw(@core.RawAddress, UInt, UInt, UInt, @core.RawAddress) -> @core.RawWin32Call[@core.RawAddress]
+
+pub fn create_file3_raw(@core.RawAddress, UInt, UInt, UInt, @core.RawAddress) -> @core.RawAddress
+
+pub fn create_file_a_raw(@core.RawAddress, UInt, UInt, @core.RawAddress, UInt, UInt, @core.RawAddress) -> @core.RawWin32Call[@core.RawAddress]
+
+pub fn create_file_from_app_w_raw(@core.RawAddress, UInt, UInt, @core.RawAddress, UInt, UInt, @core.RawAddress) -> @core.RawAddress
+
+pub fn create_file_transacted_a_raw(@core.RawAddress, UInt, UInt, @core.RawAddress, UInt, UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[@core.RawAddress]
+
+pub fn create_file_transacted_w_raw(@core.RawAddress, UInt, UInt, @core.RawAddress, UInt, UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[@core.RawAddress]
+
+pub fn create_file_w_raw(@core.RawAddress, UInt, UInt, @core.RawAddress, UInt, UInt, @core.RawAddress) -> @core.RawWin32Call[@core.RawAddress]
+
+pub fn create_hard_link_a_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn create_hard_link_transacted_a_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn create_hard_link_transacted_w_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn create_hard_link_w_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn create_io_ring(Int, Bytes, UInt, UInt, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn create_io_ring_raw(Int, Bytes, UInt, UInt, @core.RawAddress) -> Int
+
+pub fn create_log_container_scan_context_raw(@core.RawAddress, UInt, UInt, UInt, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn create_log_file_raw(@core.RawAddress, UInt, UInt, @core.RawAddress, UInt, UInt) -> @core.RawWin32Call[@core.RawAddress]
+
+pub fn create_log_marshalling_area_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, UInt, UInt, UInt, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub let create_new : UInt
+
+pub fn create_resource_manager_raw(@core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[@core.RawAddress]
+
+pub fn create_symbolic_link_a_raw(@core.RawAddress, @core.RawAddress, UInt) -> @core.RawWin32Call[UInt]
+
+pub fn create_symbolic_link_transacted_a_raw(@core.RawAddress, @core.RawAddress, UInt, @core.RawAddress) -> @core.RawWin32Call[UInt]
+
+pub fn create_symbolic_link_transacted_w_raw(@core.RawAddress, @core.RawAddress, UInt, @core.RawAddress) -> @core.RawWin32Call[UInt]
+
+pub fn create_symbolic_link_w_raw(@core.RawAddress, @core.RawAddress, UInt) -> @core.RawWin32Call[UInt]
+
+pub fn create_tape_partition_raw(@core.RawAddress, UInt, UInt, UInt) -> UInt
+
+pub fn create_transaction_manager_raw(@core.RawAddress, @core.RawAddress, UInt, UInt) -> @core.RawWin32Call[@core.RawAddress]
+
+pub fn create_transaction_raw(@core.RawAddress, @core.RawAddress, UInt, UInt, UInt, UInt, @core.RawAddress) -> @core.RawWin32Call[@core.RawAddress]
+
+pub fn create_user_batch(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn create_user_batch_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub let crm_protocol_dynamic_marshal_info : UInt
+
+pub let crm_protocol_explicit_marshal_only : UInt
+
+pub let crm_protocol_maximum_option : UInt
+
+pub let csc_cache_auto_reint : UInt
+
+pub let csc_cache_manual_reint : UInt
+
+pub let csc_cache_none : UInt
+
+pub let csc_cache_vdo : UInt
+
+pub let csc_mask : UInt
+
+pub let csc_mask_ext : UInt
+
+pub let csv_block_and_file_cache_callback_version : UInt
+
+pub let csv_block_cache_callback_version : UInt
+
+pub let ddd_exact_match_on_remove : UInt
+
+pub let ddd_luid_broadcast_drive : UInt
+
+pub let ddd_no_broadcast_system : UInt
+
+pub let ddd_raw_target_path : UInt
+
+pub let ddd_remove_definition : UInt
+
+pub fn decrypt_file_a_raw(@core.RawAddress, UInt) -> @core.RawWin32Call[Int]
+
+pub fn decrypt_file_w_raw(@core.RawAddress, UInt) -> @core.RawWin32Call[Int]
+
+pub fn define_dos_device_a_raw(UInt, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn define_dos_device_w_raw(UInt, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub let delete : UInt
+
+pub fn delete_file2_a_raw(@core.RawAddress, UInt) -> Int
+
+pub fn delete_file2_w_raw(@core.RawAddress, UInt) -> Int
+
+pub fn delete_file_a_raw(@core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn delete_file_from_app_w_raw(@core.RawAddress) -> Int
+
+pub fn delete_file_transacted_a_raw(@core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn delete_file_transacted_w_raw(@core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn delete_file_w_raw(@core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn delete_log_by_handle_raw(@core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn delete_log_file_raw(@core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn delete_log_marshalling_area_raw(@core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn delete_user(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn delete_user_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn delete_volume_mount_point_a_raw(@core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn delete_volume_mount_point_w_raw(@core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn deregister_manageable_log_client_raw(@core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub let directory_flags_disallow_path_redirects : Int
+
+pub let directory_flags_none : Int
+
+pub let diskquota_filestate_incomplete : UInt
+
+pub let diskquota_filestate_mask : UInt
+
+pub let diskquota_filestate_rebuilding : UInt
+
+pub let diskquota_logflag_user_limit : UInt
+
+pub let diskquota_logflag_user_threshold : UInt
+
+pub let diskquota_state_disabled : UInt
+
+pub let diskquota_state_enforce : UInt
+
+pub let diskquota_state_mask : UInt
+
+pub let diskquota_state_track : UInt
+
+pub let diskquota_user_account_deleted : UInt
+
+pub let diskquota_user_account_invalid : UInt
+
+pub let diskquota_user_account_resolved : UInt
+
+pub let diskquota_user_account_unavailable : UInt
+
+pub let diskquota_user_account_unknown : UInt
+
+pub let diskquota_user_account_unresolved : UInt
+
+pub let diskquota_username_resolve_async : UInt
+
+pub let diskquota_username_resolve_none : UInt
+
+pub let diskquota_username_resolve_sync : UInt
+
+pub fn duplicate_encryption_info_file_raw(@core.RawAddress, @core.RawAddress, UInt, UInt, @core.RawAddress) -> UInt
+
+pub let ea_container_name : String
+
+pub let ea_container_size : String
+
+pub let efs_compatibility_version_ncrypt_protector : UInt
+
+pub let efs_compatibility_version_pfile_protector : UInt
+
+pub let efs_efs_subver_efs_cert : UInt
+
+pub let efs_metadata_add_user : UInt
+
+pub let efs_metadata_general_op : UInt
+
+pub let efs_metadata_remove_user : UInt
+
+pub let efs_metadata_replace_user : UInt
+
+pub let efs_pfile_subver_appx : UInt
+
+pub let efs_pfile_subver_rms : UInt
+
+pub let efs_subver_unknown : UInt
+
+pub fn encrypt_file_a_raw(@core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn encrypt_file_w_raw(@core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn encryption_disable_raw(@core.RawAddress, Int) -> @core.RawWin32Call[Int]
+
+pub let enlistment_maximum_option : UInt
+
+pub let enlistment_object_path : String
+
+pub let enlistment_superior : UInt
+
+pub fn erase_tape_raw(@core.RawAddress, UInt, Int) -> UInt
+
+pub let extended_file_id_type : Int
+
+pub let file_action_added : UInt
+
+pub let file_action_modified : UInt
+
+pub let file_action_removed : UInt
+
+pub let file_action_renamed_new_name : UInt
+
+pub let file_action_renamed_old_name : UInt
+
+pub let file_add_file : UInt
+
+pub let file_add_subdirectory : UInt
+
+pub let file_alignment_info : Int
+
+pub let file_all_access : UInt
+
+pub let file_allocation_info : Int
+
+pub let file_append_data : UInt
+
+pub let file_attribute_archive : UInt
+
+pub let file_attribute_compressed : UInt
+
+pub let file_attribute_device : UInt
+
+pub let file_attribute_directory : UInt
+
+pub let file_attribute_ea : UInt
+
+pub let file_attribute_encrypted : UInt
+
+pub let file_attribute_hidden : UInt
+
+pub let file_attribute_integrity_stream : UInt
+
+pub let file_attribute_no_scrub_data : UInt
+
+pub let file_attribute_normal : UInt
+
+pub let file_attribute_not_content_indexed : UInt
+
+pub let file_attribute_offline : UInt
+
+pub let file_attribute_pinned : UInt
+
+pub let file_attribute_readonly : UInt
+
+pub let file_attribute_recall_on_data_access : UInt
+
+pub let file_attribute_recall_on_open : UInt
+
+pub let file_attribute_reparse_point : UInt
+
+pub let file_attribute_sparse_file : UInt
+
+pub let file_attribute_system : UInt
+
+pub let file_attribute_tag_info : Int
+
+pub let file_attribute_temporary : UInt
+
+pub let file_attribute_unpinned : UInt
+
+pub let file_attribute_virtual : UInt
+
+pub let file_basic_info : Int
+
+pub let file_begin : UInt
+
+pub let file_case_sensitive_by_name_info : Int
+
+pub let file_case_sensitive_info : Int
+
+pub let file_compression_info : Int
+
+pub let file_create_pipe_instance : UInt
+
+pub let file_current : UInt
+
+pub let file_delete_child : UInt
+
+pub let file_device_cd_rom : UInt
+
+pub let file_device_disk : UInt
+
+pub let file_device_dvd : UInt
+
+pub let file_device_tape : UInt
+
+pub let file_disposition_flag_delete : UInt
+
+pub let file_disposition_flag_do_not_delete : UInt
+
+pub let file_disposition_flag_force_image_section_check : UInt
+
+pub let file_disposition_flag_ignore_readonly_attribute : UInt
+
+pub let file_disposition_flag_on_close : UInt
+
+pub let file_disposition_flag_posix_semantics : UInt
+
+pub let file_disposition_info : Int
+
+pub let file_disposition_info_ex : Int
+
+pub fn file_encryption_status_a_raw(@core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn file_encryption_status_w_raw(@core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub let file_end : UInt
+
+pub let file_end_of_file_info : Int
+
+pub let file_execute : UInt
+
+pub let file_flag_backup_semantics : UInt
+
+pub let file_flag_delete_on_close : UInt
+
+pub let file_flag_first_pipe_instance : UInt
+
+pub let file_flag_no_buffering : UInt
+
+pub let file_flag_open_no_recall : UInt
+
+pub let file_flag_open_reparse_point : UInt
+
+pub let file_flag_overlapped : UInt
+
+pub let file_flag_posix_semantics : UInt
+
+pub let file_flag_random_access : UInt
+
+pub let file_flag_sequential_scan : UInt
+
+pub let file_flag_session_aware : UInt
+
+pub let file_flag_write_through : UInt
+
+pub let file_flush_data : Int
+
+pub let file_flush_default : Int
+
+pub let file_flush_min_metadata : Int
+
+pub let file_flush_no_sync : Int
+
+pub let file_full_directory_info : Int
+
+pub let file_full_directory_restart_info : Int
+
+pub let file_generic_execute : UInt
+
+pub let file_generic_read : UInt
+
+pub let file_generic_write : UInt
+
+pub let file_id_both_directory_info : Int
+
+pub let file_id_both_directory_restart_info : Int
+
+pub let file_id_extd_directory_info : Int
+
+pub let file_id_extd_directory_restart_info : Int
+
+pub let file_id_info : Int
+
+pub let file_id_type : Int
+
+pub let file_io_priority_hint_info : Int
+
+pub let file_list_directory : UInt
+
+pub let file_name_info : Int
+
+pub let file_name_normalized : UInt
+
+pub let file_name_opened : UInt
+
+pub let file_normalized_name_info : Int
+
+pub let file_notify_change_attributes : UInt
+
+pub let file_notify_change_creation : UInt
+
+pub let file_notify_change_dir_name : UInt
+
+pub let file_notify_change_file_name : UInt
+
+pub let file_notify_change_last_access : UInt
+
+pub let file_notify_change_last_write : UInt
+
+pub let file_notify_change_security : UInt
+
+pub let file_notify_change_size : UInt
+
+pub let file_provider_compression_lzx : UInt
+
+pub let file_provider_compression_xpress16_k : UInt
+
+pub let file_provider_compression_xpress4_k : UInt
+
+pub let file_provider_compression_xpress8_k : UInt
+
+pub let file_read_attributes : UInt
+
+pub let file_read_data : UInt
+
+pub let file_read_ea : UInt
+
+pub let file_remote_protocol_info : Int
+
+pub let file_rename_info : Int
+
+pub let file_rename_info_ex : Int
+
+pub let file_share_delete : UInt
+
+pub let file_share_none : UInt
+
+pub let file_share_read : UInt
+
+pub let file_share_write : UInt
+
+pub let file_standard_info : Int
+
+pub let file_stat_basic_by_name_info : Int
+
+pub let file_stat_by_name_info : Int
+
+pub let file_stat_lx_by_name_info : Int
+
+pub let file_storage_info : Int
+
+pub let file_stream_info : Int
+
+pub fn file_time_to_local_file_time_raw(@core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub let file_traverse : UInt
+
+pub let file_type_char : UInt
+
+pub let file_type_disk : UInt
+
+pub let file_type_pipe : UInt
+
+pub let file_type_remote : UInt
+
+pub let file_type_unknown : UInt
+
+pub let file_ver_get_localised : UInt
+
+pub let file_ver_get_neutral : UInt
+
+pub let file_ver_get_prefetched : UInt
+
+pub let file_write_attributes : UInt
+
+pub let file_write_data : UInt
+
+pub let file_write_ea : UInt
+
+pub let file_write_flags_none : Int
+
+pub let file_write_flags_write_through : Int
+
+pub fn find_close_change_notification_raw(@core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn find_close_raw(@core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub let find_ex_info_basic : Int
+
+pub let find_ex_info_max_info_level : Int
+
+pub let find_ex_info_standard : Int
+
+pub let find_ex_search_limit_to_devices : Int
+
+pub let find_ex_search_limit_to_directories : Int
+
+pub let find_ex_search_max_search_op : Int
+
+pub let find_ex_search_name_match : Int
+
+pub fn find_first_change_notification_a_raw(@core.RawAddress, Int, UInt) -> @core.RawWin32Call[@core.RawAddress]
+
+pub fn find_first_change_notification_w_raw(@core.RawAddress, Int, UInt) -> @core.RawWin32Call[@core.RawAddress]
+
+pub let find_first_ex_case_sensitive : UInt
+
+pub let find_first_ex_large_fetch : UInt
+
+pub let find_first_ex_on_disk_entries_only : UInt
+
+pub fn find_first_file_a_raw(@core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[@core.RawAddress]
+
+pub fn find_first_file_ex_a_raw(@core.RawAddress, Int, @core.RawAddress, Int, @core.RawAddress, UInt) -> @core.RawWin32Call[@core.RawAddress]
+
+pub fn find_first_file_ex_from_app_w_raw(@core.RawAddress, Int, @core.RawAddress, Int, @core.RawAddress, UInt) -> @core.RawAddress
+
+pub fn find_first_file_ex_w_raw(@core.RawAddress, Int, @core.RawAddress, Int, @core.RawAddress, UInt) -> @core.RawWin32Call[@core.RawAddress]
+
+pub fn find_first_file_name_transacted_w_raw(@core.RawAddress, UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[@core.RawAddress]
+
+pub fn find_first_file_name_w_raw(@core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[@core.RawAddress]
+
+pub fn find_first_file_transacted_a_raw(@core.RawAddress, Int, @core.RawAddress, Int, @core.RawAddress, UInt, @core.RawAddress) -> @core.RawWin32Call[@core.RawAddress]
+
+pub fn find_first_file_transacted_w_raw(@core.RawAddress, Int, @core.RawAddress, Int, @core.RawAddress, UInt, @core.RawAddress) -> @core.RawWin32Call[@core.RawAddress]
+
+pub fn find_first_file_w_raw(@core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[@core.RawAddress]
+
+pub fn find_first_stream_transacted_w_raw(@core.RawAddress, Int, @core.RawAddress, UInt, @core.RawAddress) -> @core.RawWin32Call[@core.RawAddress]
+
+pub fn find_first_stream_w_raw(@core.RawAddress, Int, @core.RawAddress, UInt) -> @core.RawWin32Call[@core.RawAddress]
+
+pub fn find_first_volume_a_raw(@core.RawAddress, UInt) -> @core.RawWin32Call[@core.RawAddress]
+
+pub fn find_first_volume_mount_point_a_raw(@core.RawAddress, @core.RawAddress, UInt) -> @core.RawWin32Call[@core.RawAddress]
+
+pub fn find_first_volume_mount_point_w_raw(@core.RawAddress, @core.RawAddress, UInt) -> @core.RawWin32Call[@core.RawAddress]
+
+pub fn find_first_volume_w_raw(@core.RawAddress, UInt) -> @core.RawWin32Call[@core.RawAddress]
+
+pub fn find_next_change_notification_raw(@core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn find_next_file_a_raw(@core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn find_next_file_name_w_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn find_next_file_w_raw(@core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn find_next_stream_w_raw(@core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn find_next_volume_a_raw(@core.RawAddress, @core.RawAddress, UInt) -> @core.RawWin32Call[Int]
+
+pub fn find_next_volume_mount_point_a_raw(@core.RawAddress, @core.RawAddress, UInt) -> @core.RawWin32Call[Int]
+
+pub fn find_next_volume_mount_point_w_raw(@core.RawAddress, @core.RawAddress, UInt) -> @core.RawWin32Call[Int]
+
+pub fn find_next_volume_w_raw(@core.RawAddress, @core.RawAddress, UInt) -> @core.RawWin32Call[Int]
+
+pub let find_stream_info_max_info_level : Int
+
+pub let find_stream_info_standard : Int
+
+pub fn find_user_name(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn find_user_name_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn find_user_sid(@core.RawAddress, @core.RawAddress, UInt, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn find_user_sid_raw(@core.RawAddress, @core.RawAddress, UInt, @core.RawAddress) -> Int
+
+pub fn find_volume_close_raw(@core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn find_volume_mount_point_close_raw(@core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn flush_file_buffers_raw(@core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn flush_log_buffers_raw(@core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn flush_log_to_lsn_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn flush_to_disk(@core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn flush_to_disk_raw(@core.RawAddress) -> Int
+
+pub fn free_encrypted_file_metadata_raw(@core.RawAddress) -> Unit
+
+pub fn free_encryption_certificate_hash_list_raw(@core.RawAddress) -> Unit
+
+pub fn free_reserved_log_raw(@core.RawAddress, UInt, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub let ft_types_definition : UInt
+
+pub fn get_account_status(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn get_account_status_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn get_binary_type_a_raw(@core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn get_binary_type_w_raw(@core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn get_compressed_file_size_a_raw(@core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[UInt]
+
+pub fn get_compressed_file_size_transacted_a_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[UInt]
+
+pub fn get_compressed_file_size_transacted_w_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[UInt]
+
+pub fn get_compressed_file_size_w_raw(@core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[UInt]
+
+pub fn get_current_clock_transaction_manager_raw(@core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn get_default_quota_limit(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn get_default_quota_limit_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn get_default_quota_limit_text(@core.RawAddress, @core.RawAddress, UInt) -> Unit raise @core.WindowsError
+
+pub fn get_default_quota_limit_text_raw(@core.RawAddress, @core.RawAddress, UInt) -> Int
+
+pub fn get_default_quota_threshold(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn get_default_quota_threshold_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn get_default_quota_threshold_text(@core.RawAddress, @core.RawAddress, UInt) -> Unit raise @core.WindowsError
+
+pub fn get_default_quota_threshold_text_raw(@core.RawAddress, @core.RawAddress, UInt) -> Int
+
+pub fn get_disk_free_space_a_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn get_disk_free_space_ex_a_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn get_disk_free_space_ex_w_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn get_disk_free_space_w_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn get_disk_space_information_a(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn get_disk_space_information_a_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn get_disk_space_information_w(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn get_disk_space_information_w_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn get_drive_type_a_raw(@core.RawAddress) -> UInt
+
+pub fn get_drive_type_w_raw(@core.RawAddress) -> UInt
+
+pub fn get_encrypted_file_metadata_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn get_enlistment_id_raw(@core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn get_enlistment_recovery_information_raw(@core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn get_expanded_name_a_raw(@core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn get_expanded_name_w_raw(@core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn get_file_attributes_a_raw(@core.RawAddress) -> @core.RawWin32Call[UInt]
+
+pub fn get_file_attributes_ex_a_raw(@core.RawAddress, Int, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn get_file_attributes_ex_from_app_w_raw(@core.RawAddress, Int, @core.RawAddress) -> Int
+
+pub fn get_file_attributes_ex_w_raw(@core.RawAddress, Int, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn get_file_attributes_transacted_a_raw(@core.RawAddress, Int, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn get_file_attributes_transacted_w_raw(@core.RawAddress, Int, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn get_file_attributes_w_raw(@core.RawAddress) -> @core.RawWin32Call[UInt]
+
+pub fn get_file_bandwidth_reservation_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub let get_file_ex_info_standard : Int
+
+pub let get_file_ex_max_info_level : Int
+
+pub fn get_file_information_by_handle_ex_raw(@core.RawAddress, Int, @core.RawAddress, UInt) -> @core.RawWin32Call[Int]
+
+pub fn get_file_information_by_handle_raw(@core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn get_file_information_by_name_raw(@core.RawAddress, Int, @core.RawAddress, UInt) -> Int
+
+pub fn get_file_size_ex_raw(@core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn get_file_size_raw(@core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[UInt]
+
+pub fn get_file_time_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn get_file_type_raw(@core.RawAddress) -> @core.RawWin32Call[UInt]
+
+pub fn get_file_version_info_a_raw(@core.RawAddress, UInt, UInt, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn get_file_version_info_ex_a_raw(UInt, @core.RawAddress, UInt, UInt, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn get_file_version_info_ex_w_raw(UInt, @core.RawAddress, UInt, UInt, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn get_file_version_info_size_a_raw(@core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[UInt]
+
+pub fn get_file_version_info_size_ex_a_raw(UInt, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[UInt]
+
+pub fn get_file_version_info_size_ex_w_raw(UInt, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[UInt]
+
+pub fn get_file_version_info_size_w_raw(@core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[UInt]
+
+pub fn get_file_version_info_w_raw(@core.RawAddress, UInt, UInt, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn get_final_path_name_by_handle_a_raw(@core.RawAddress, @core.RawAddress, UInt, UInt) -> @core.RawWin32Call[UInt]
+
+pub fn get_final_path_name_by_handle_w_raw(@core.RawAddress, @core.RawAddress, UInt, UInt) -> @core.RawWin32Call[UInt]
+
+pub fn get_full_path_name_a_raw(@core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[UInt]
+
+pub fn get_full_path_name_transacted_a_raw(@core.RawAddress, UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[UInt]
+
+pub fn get_full_path_name_transacted_w_raw(@core.RawAddress, UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[UInt]
+
+pub fn get_full_path_name_w_raw(@core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[UInt]
+
+pub fn get_id(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn get_id_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn get_io_ring_info(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn get_io_ring_info_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn get_log_container_name_raw(@core.RawAddress, UInt, @core.RawAddress, UInt, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn get_log_file_information_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn get_log_io_statistics_raw(@core.RawAddress, @core.RawAddress, UInt, Int, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn get_log_reservation_info_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn get_logical_drive_strings_a_raw(UInt, @core.RawAddress) -> @core.RawWin32Call[UInt]
+
+pub fn get_logical_drive_strings_w_raw(UInt, @core.RawAddress) -> @core.RawWin32Call[UInt]
+
+pub fn get_logical_drives_raw() -> @core.RawWin32Call[UInt]
+
+pub fn get_long_path_name_a_raw(@core.RawAddress, @core.RawAddress, UInt) -> @core.RawWin32Call[UInt]
+
+pub fn get_long_path_name_transacted_a_raw(@core.RawAddress, @core.RawAddress, UInt, @core.RawAddress) -> @core.RawWin32Call[UInt]
+
+pub fn get_long_path_name_transacted_w_raw(@core.RawAddress, @core.RawAddress, UInt, @core.RawAddress) -> @core.RawWin32Call[UInt]
+
+pub fn get_long_path_name_w_raw(@core.RawAddress, @core.RawAddress, UInt) -> @core.RawWin32Call[UInt]
+
+pub fn get_name(@core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, UInt, @core.RawAddress, UInt) -> Unit raise @core.WindowsError
+
+pub fn get_name_raw(@core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, UInt, @core.RawAddress, UInt) -> Int
+
+pub fn get_next_log_archive_extent_raw(@core.RawAddress, @core.RawAddress, UInt, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn get_notification_resource_manager_async_raw(@core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn get_notification_resource_manager_raw(@core.RawAddress, @core.RawAddress, UInt, UInt, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn get_quota_information(@core.RawAddress, @core.RawAddress, UInt) -> Unit raise @core.WindowsError
+
+pub fn get_quota_information_raw(@core.RawAddress, @core.RawAddress, UInt) -> Int
+
+pub fn get_quota_limit(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn get_quota_limit_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn get_quota_limit_text(@core.RawAddress, @core.RawAddress, UInt) -> Unit raise @core.WindowsError
+
+pub fn get_quota_limit_text_raw(@core.RawAddress, @core.RawAddress, UInt) -> Int
+
+pub fn get_quota_log_flags(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn get_quota_log_flags_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn get_quota_state(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn get_quota_state_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn get_quota_threshold(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn get_quota_threshold_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn get_quota_threshold_text(@core.RawAddress, @core.RawAddress, UInt) -> Unit raise @core.WindowsError
+
+pub fn get_quota_threshold_text_raw(@core.RawAddress, @core.RawAddress, UInt) -> Int
+
+pub fn get_quota_used(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn get_quota_used_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn get_quota_used_text(@core.RawAddress, @core.RawAddress, UInt) -> Unit raise @core.WindowsError
+
+pub fn get_quota_used_text_raw(@core.RawAddress, @core.RawAddress, UInt) -> Int
+
+pub fn get_short_path_name_a_raw(@core.RawAddress, @core.RawAddress, UInt) -> @core.RawWin32Call[UInt]
+
+pub fn get_short_path_name_w_raw(@core.RawAddress, @core.RawAddress, UInt) -> @core.RawWin32Call[UInt]
+
+pub fn get_sid(@core.RawAddress, @core.RawAddress, UInt) -> Unit raise @core.WindowsError
+
+pub fn get_sid_length(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn get_sid_length_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn get_sid_raw(@core.RawAddress, @core.RawAddress, UInt) -> Int
+
+pub let get_tape_drive_information : UInt
+
+pub let get_tape_media_information : UInt
+
+pub fn get_tape_parameters_raw(@core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn get_tape_position_raw(@core.RawAddress, UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn get_tape_status_raw(@core.RawAddress) -> UInt
+
+pub fn get_temp_file_name_a_raw(@core.RawAddress, @core.RawAddress, UInt, @core.RawAddress) -> @core.RawWin32Call[UInt]
+
+pub fn get_temp_file_name_w_raw(@core.RawAddress, @core.RawAddress, UInt, @core.RawAddress) -> @core.RawWin32Call[UInt]
+
+pub fn get_temp_path2_a_raw(UInt, @core.RawAddress) -> UInt
+
+pub fn get_temp_path2_w_raw(UInt, @core.RawAddress) -> UInt
+
+pub fn get_temp_path_a_raw(UInt, @core.RawAddress) -> @core.RawWin32Call[UInt]
+
+pub fn get_temp_path_w_raw(UInt, @core.RawAddress) -> @core.RawWin32Call[UInt]
+
+pub fn get_transaction_id_raw(@core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn get_transaction_information_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, UInt, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn get_transaction_manager_id_raw(@core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn get_volume_information_a_raw(@core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, UInt) -> @core.RawWin32Call[Int]
+
+pub fn get_volume_information_by_handle_w_raw(@core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, UInt) -> @core.RawWin32Call[Int]
+
+pub fn get_volume_information_w_raw(@core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, UInt) -> @core.RawWin32Call[Int]
+
+pub fn get_volume_name_for_volume_mount_point_a_raw(@core.RawAddress, @core.RawAddress, UInt) -> @core.RawWin32Call[Int]
+
+pub fn get_volume_name_for_volume_mount_point_w_raw(@core.RawAddress, @core.RawAddress, UInt) -> @core.RawWin32Call[Int]
+
+pub fn get_volume_path_name_a_raw(@core.RawAddress, @core.RawAddress, UInt) -> @core.RawWin32Call[Int]
+
+pub fn get_volume_path_name_w_raw(@core.RawAddress, @core.RawAddress, UInt) -> @core.RawWin32Call[Int]
+
+pub fn get_volume_path_names_for_volume_name_a_raw(@core.RawAddress, @core.RawAddress, UInt, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn get_volume_path_names_for_volume_name_w_raw(@core.RawAddress, @core.RawAddress, UInt, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn give_user_name_resolution_priority(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn give_user_name_resolution_priority_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn handle_log_full_raw(@core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn initialize(@core.RawAddress, @core.RawAddress, Int) -> Unit raise @core.WindowsError
+
+pub fn initialize_raw(@core.RawAddress, @core.RawAddress, Int) -> Int
+
+pub fn install_log_policy_raw(@core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub let invalid_file_attributes : UInt
+
+pub let invalid_file_size : UInt
+
+pub let invalid_set_file_pointer : UInt
+
+pub fn invalidate(@core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn invalidate_raw(@core.RawAddress) -> Int
+
+pub fn invalidate_sid_name_cache(@core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn invalidate_sid_name_cache_raw(@core.RawAddress) -> Int
+
+pub let io_priority_hint_low : Int
+
+pub let io_priority_hint_normal : Int
+
+pub let io_priority_hint_very_low : Int
+
+pub let ioctl_volume_allocate_bc_stream : UInt
+
+pub let ioctl_volume_base : UInt
+
+pub let ioctl_volume_bc_version : UInt
+
+pub let ioctl_volume_free_bc_stream : UInt
+
+pub let ioctl_volume_get_bc_properties : UInt
+
+pub let ioctl_volume_get_csvblockcache_callback : UInt
+
+pub let ioctl_volume_get_gpt_attributes : UInt
+
+pub let ioctl_volume_get_volume_disk_extents : UInt
+
+pub let ioctl_volume_is_clustered : UInt
+
+pub let ioctl_volume_is_csv : UInt
+
+pub let ioctl_volume_is_dynamic : UInt
+
+pub let ioctl_volume_is_io_capable : UInt
+
+pub let ioctl_volume_is_offline : UInt
+
+pub let ioctl_volume_is_partition : UInt
+
+pub let ioctl_volume_logical_to_physical : UInt
+
+pub let ioctl_volume_offline : UInt
+
+pub let ioctl_volume_online : UInt
+
+pub let ioctl_volume_physical_to_logical : UInt
+
+pub let ioctl_volume_post_online : UInt
+
+pub let ioctl_volume_prepare_for_critical_io : UInt
+
+pub let ioctl_volume_prepare_for_shrink : UInt
+
+pub let ioctl_volume_query_allocation_hint : UInt
+
+pub let ioctl_volume_query_failover_set : UInt
+
+pub let ioctl_volume_query_minimum_shrink_size : UInt
+
+pub let ioctl_volume_query_volume_number : UInt
+
+pub let ioctl_volume_read_plex : UInt
+
+pub let ioctl_volume_set_gpt_attributes : UInt
+
+pub let ioctl_volume_supports_online_offline : UInt
+
+pub let ioctl_volume_update_properties : UInt
+
+pub let ioring_create_advisory_flags_none : Int
+
+pub let ioring_create_required_flags_none : Int
+
+pub let ioring_create_skip_builder_param_checks : Int
+
+pub let ioring_feature_flags_none : Int
+
+pub let ioring_feature_set_completion_event : Int
+
+pub let ioring_feature_um_emulation : Int
+
+pub let ioring_op_cancel : Int
+
+pub let ioring_op_flush : Int
+
+pub let ioring_op_nop : Int
+
+pub let ioring_op_read : Int
+
+pub let ioring_op_read_scatter : Int
+
+pub let ioring_op_register_buffers : Int
+
+pub let ioring_op_register_files : Int
+
+pub let ioring_op_write : Int
+
+pub let ioring_op_write_gather : Int
+
+pub let ioring_ref_raw : Int
+
+pub let ioring_ref_registered : Int
+
+pub let ioring_version_1 : Int
+
+pub let ioring_version_2 : Int
+
+pub let ioring_version_3 : Int
+
+pub let ioring_version_4 : Int
+
+pub let ioring_version_invalid : Int
+
+pub let iosqe_flags_drain_preceding_ops : Int
+
+pub let iosqe_flags_none : Int
+
+pub fn is_io_ring_op_supported_raw(@core.RawAddress, Int) -> Int
+
+pub let ktm_marshal_blob_version_major : UInt
+
+pub let ktm_marshal_blob_version_minor : UInt
+
+pub fn local_file_time_to_file_time_raw(@core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn lock_file_ex_raw(@core.RawAddress, UInt, UInt, UInt, UInt, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn lock_file_raw(@core.RawAddress, UInt, UInt, UInt, UInt) -> @core.RawWin32Call[Int]
+
+pub let lockfile_exclusive_lock : UInt
+
+pub let lockfile_fail_immediately : UInt
+
+pub let log_policy_overwrite : UInt
+
+pub let log_policy_persist : UInt
+
+pub fn log_tail_advance_failure_raw(@core.RawAddress, UInt) -> @core.RawWin32Call[Int]
+
+pub fn lsn_block_offset_raw(@core.RawAddress) -> UInt
+
+pub fn lsn_container_raw(@core.RawAddress) -> UInt
+
+pub fn lsn_create_raw(UInt, UInt, UInt) -> UInt64
+
+pub fn lsn_equal_raw(@core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn lsn_greater_raw(@core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn lsn_increment_raw(@core.RawAddress) -> UInt64
+
+pub fn lsn_invalid_raw(@core.RawAddress) -> UInt
+
+pub fn lsn_less_raw(@core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn lsn_null_raw(@core.RawAddress) -> UInt
+
+pub fn lsn_record_sequence_raw(@core.RawAddress) -> UInt
+
+pub fn lz_close_raw(Int) -> Unit
+
+pub fn lz_copy_raw(Int, Int) -> Int
+
+pub fn lz_done_raw() -> Unit
+
+pub fn lz_init_raw(Int) -> Int
+
+pub fn lz_open_file_a_raw(@core.RawAddress, @core.RawAddress, UInt) -> Int
+
+pub fn lz_open_file_w_raw(@core.RawAddress, @core.RawAddress, UInt) -> Int
+
+pub fn lz_read_raw(Int, @core.RawAddress, Int) -> Int
+
+pub fn lz_seek_raw(Int, Int, Int) -> Int
+
+pub fn lz_start_raw() -> Int
+
+pub let lzerror_badinhandle : Int
+
+pub let lzerror_badouthandle : Int
+
+pub let lzerror_badvalue : Int
+
+pub let lzerror_globalloc : Int
+
+pub let lzerror_globlock : Int
+
+pub let lzerror_read : Int
+
+pub let lzerror_unknownalg : Int
+
+pub let lzerror_write : Int
+
+pub let max_resourcemanager_description_length : UInt
+
+pub let max_sid_size : UInt
+
+pub let max_transaction_description_length : UInt
+
+pub let maximum_file_id_type : Int
+
+pub let maximum_file_info_by_handle_class : Int
+
+pub let maximum_file_info_by_name_class : Int
+
+pub let maximum_io_priority_hint_type : Int
+
+pub let maximum_reparse_data_buffer_size : UInt
+
+pub fn move_file_a_raw(@core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn move_file_ex_a_raw(@core.RawAddress, @core.RawAddress, UInt) -> @core.RawWin32Call[Int]
+
+pub fn move_file_ex_w_raw(@core.RawAddress, @core.RawAddress, UInt) -> @core.RawWin32Call[Int]
+
+pub fn move_file_from_app_w_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn move_file_transacted_a_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, UInt, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn move_file_transacted_w_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, UInt, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn move_file_w_raw(@core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn move_file_with_progress_a_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, UInt) -> @core.RawWin32Call[Int]
+
+pub fn move_file_with_progress_w_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, UInt) -> @core.RawWin32Call[Int]
+
+pub let movefile_copy_allowed : UInt
+
+pub let movefile_create_hardlink : UInt
+
+pub let movefile_delay_until_reboot : UInt
+
+pub let movefile_fail_if_not_trackable : UInt
+
+pub let movefile_replace_existing : UInt
+
+pub let movefile_write_through : UInt
+
+pub fn net_connection_enum_raw(@core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn net_file_close_raw(@core.RawAddress, UInt) -> UInt
+
+pub fn net_file_enum_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn net_file_get_info_raw(@core.RawAddress, UInt, UInt, @core.RawAddress) -> UInt
+
+pub fn net_server_alias_add_raw(@core.RawAddress, UInt, @core.RawAddress) -> UInt
+
+pub fn net_server_alias_del_raw(@core.RawAddress, UInt, @core.RawAddress) -> UInt
+
+pub fn net_server_alias_enum_raw(@core.RawAddress, UInt, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn net_session_del_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn net_session_enum_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn net_session_get_info_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, UInt, @core.RawAddress) -> UInt
+
+pub fn net_share_add_raw(@core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn net_share_check_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn net_share_del_ex_raw(@core.RawAddress, UInt, @core.RawAddress) -> UInt
+
+pub fn net_share_del_raw(@core.RawAddress, @core.RawAddress, UInt) -> UInt
+
+pub fn net_share_del_sticky_raw(@core.RawAddress, @core.RawAddress, UInt) -> UInt
+
+pub fn net_share_enum_raw(@core.RawAddress, UInt, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn net_share_enum_sticky_raw(@core.RawAddress, UInt, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn net_share_get_info_raw(@core.RawAddress, @core.RawAddress, UInt, @core.RawAddress) -> UInt
+
+pub fn net_share_set_info_raw(@core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn net_statistics_get_raw(@core.RawAddress, @core.RawAddress, UInt, UInt, @core.RawAddress) -> UInt
+
+pub fn next(@core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn next_raw(@core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> Int
+
+pub let ntms_allocate_error_if_unavailable : Int
+
+pub let ntms_allocate_fromscratch : Int
+
+pub let ntms_allocate_new : Int
+
+pub let ntms_allocate_next : Int
+
+pub let ntms_applicationname_length : UInt
+
+pub let ntms_asyncop_mount : Int
+
+pub let ntms_asyncstate_complete : Int
+
+pub let ntms_asyncstate_inprocess : Int
+
+pub let ntms_asyncstate_queued : Int
+
+pub let ntms_asyncstate_wait_operator : Int
+
+pub let ntms_asyncstate_wait_resource : Int
+
+pub let ntms_barcode_length : UInt
+
+pub let ntms_barcodestate_ok : Int
+
+pub let ntms_barcodestate_unreadable : Int
+
+pub let ntms_changer : Int
+
+pub let ntms_changer_type : Int
+
+pub let ntms_computer : Int
+
+pub let ntms_computername_length : UInt
+
+pub let ntms_control_access : Int
+
+pub let ntms_create_new : Int
+
+pub let ntms_deallocate_toscratch : Int
+
+pub let ntms_description_length : UInt
+
+pub let ntms_devicename_length : UInt
+
+pub let ntms_dismount_deferred : Int
+
+pub let ntms_dismount_immediate : Int
+
+pub let ntms_doorstate_closed : Int
+
+pub let ntms_doorstate_open : Int
+
+pub let ntms_doorstate_unknown : Int
+
+pub let ntms_drive : Int
+
+pub let ntms_drive_type : Int
+
+pub let ntms_drivestate_being_cleaned : Int
+
+pub let ntms_drivestate_dismountable : Int
+
+pub let ntms_drivestate_dismounted : Int
+
+pub let ntms_drivestate_loaded : Int
+
+pub let ntms_drivestate_mounted : Int
+
+pub let ntms_drivestate_unloaded : Int
+
+pub let ntms_eject_ask_user : Int
+
+pub let ntms_eject_force : Int
+
+pub let ntms_eject_immediate : Int
+
+pub let ntms_eject_queue : Int
+
+pub let ntms_eject_start : Int
+
+pub let ntms_eject_stop : Int
+
+pub let ntms_enum_default : Int
+
+pub let ntms_enum_rootpool : Int
+
+pub let ntms_error_on_duplicate : Int
+
+pub let ntms_event_complete : Int
+
+pub let ntms_event_signal : Int
+
+pub let ntms_i1_message_length : UInt
+
+pub let ntms_iedoor : Int
+
+pub let ntms_ieport : Int
+
+pub let ntms_initializing : Int
+
+pub let ntms_inject_retract : Int
+
+pub let ntms_inject_start : Int
+
+pub let ntms_inject_startmany : Int
+
+pub let ntms_inject_stop : Int
+
+pub let ntms_inventory_default : Int
+
+pub let ntms_inventory_fast : Int
+
+pub let ntms_inventory_max : Int
+
+pub let ntms_inventory_none : Int
+
+pub let ntms_inventory_omid : Int
+
+pub let ntms_inventory_slot : Int
+
+pub let ntms_inventory_stop : Int
+
+pub let ntms_library : Int
+
+pub let ntms_libraryflag_autodetectchange : Int
+
+pub let ntms_libraryflag_cleanerpresent : Int
+
+pub let ntms_libraryflag_fixedoffline : Int
+
+pub let ntms_libraryflag_ignorecleanerusesremaining : Int
+
+pub let ntms_libraryflag_recognizecleanerbarcode : Int
+
+pub let ntms_librarytype_offline : Int
+
+pub let ntms_librarytype_online : Int
+
+pub let ntms_librarytype_standalone : Int
+
+pub let ntms_librarytype_unknown : Int
+
+pub let ntms_libreqflags_noautopurge : Int
+
+pub let ntms_libreqflags_nofailedpurge : Int
+
+pub let ntms_librequest : Int
+
+pub let ntms_lm_cancelled : Int
+
+pub let ntms_lm_classify : Int
+
+pub let ntms_lm_cleandrive : Int
+
+pub let ntms_lm_deferred : Int
+
+pub let ntms_lm_deffered : Int
+
+pub let ntms_lm_disablechanger : Int
+
+pub let ntms_lm_disabledrive : Int
+
+pub let ntms_lm_disablelibrary : Int
+
+pub let ntms_lm_disablemedia : Int
+
+pub let ntms_lm_dismount : Int
+
+pub let ntms_lm_dooraccess : Int
+
+pub let ntms_lm_eject : Int
+
+pub let ntms_lm_ejectcleaner : Int
+
+pub let ntms_lm_enablechanger : Int
+
+pub let ntms_lm_enabledrive : Int
+
+pub let ntms_lm_enablelibrary : Int
+
+pub let ntms_lm_enablemedia : Int
+
+pub let ntms_lm_failed : Int
+
+pub let ntms_lm_inject : Int
+
+pub let ntms_lm_injectcleaner : Int
+
+pub let ntms_lm_inprocess : Int
+
+pub let ntms_lm_invalid : Int
+
+pub let ntms_lm_inventory : Int
+
+pub let ntms_lm_maxworkitem : Int
+
+pub let ntms_lm_mount : Int
+
+pub let ntms_lm_passed : Int
+
+pub let ntms_lm_processomid : Int
+
+pub let ntms_lm_queued : Int
+
+pub let ntms_lm_releasecleaner : Int
+
+pub let ntms_lm_remove : Int
+
+pub let ntms_lm_reservecleaner : Int
+
+pub let ntms_lm_stopped : Int
+
+pub let ntms_lm_updateomid : Int
+
+pub let ntms_lm_waiting : Int
+
+pub let ntms_lm_writescratch : Int
+
+pub let ntms_logical_media : Int
+
+pub let ntms_maxattr_length : UInt
+
+pub let ntms_maxattr_namelen : UInt
+
+pub let ntms_media_pool : Int
+
+pub let ntms_media_type : Int
+
+pub let ntms_mediarw_readonly : Int
+
+pub let ntms_mediarw_rewritable : Int
+
+pub let ntms_mediarw_unknown : Int
+
+pub let ntms_mediarw_writeonce : Int
+
+pub let ntms_mediastate_idle : Int
+
+pub let ntms_mediastate_inuse : Int
+
+pub let ntms_mediastate_loaded : Int
+
+pub let ntms_mediastate_mounted : Int
+
+pub let ntms_mediastate_operror : Int
+
+pub let ntms_mediastate_opreq : Int
+
+pub let ntms_mediastate_unloaded : Int
+
+pub let ntms_message_length : UInt
+
+pub let ntms_modify_access : Int
+
+pub let ntms_mount_error_if_offline : Int
+
+pub let ntms_mount_error_if_unavailable : Int
+
+pub let ntms_mount_error_not_available : Int
+
+pub let ntms_mount_error_offline : Int
+
+pub let ntms_mount_nowait : Int
+
+pub let ntms_mount_read : Int
+
+pub let ntms_mount_specific_drive : Int
+
+pub let ntms_mount_write : Int
+
+pub let ntms_needs_service : Int
+
+pub let ntms_not_present : Int
+
+pub let ntms_number_of_object_types : Int
+
+pub let ntms_obj_delete : Int
+
+pub let ntms_obj_insert : Int
+
+pub let ntms_obj_update : Int
+
+pub let ntms_object : Int
+
+pub let ntms_objectname_length : UInt
+
+pub let ntms_omid_type_filesystem_info : UInt
+
+pub let ntms_omid_type_raw_label : UInt
+
+pub let ntms_omidlabelid_length : UInt
+
+pub let ntms_omidlabelinfo_length : UInt
+
+pub let ntms_omidlabeltype_length : UInt
+
+pub let ntms_open_always : Int
+
+pub let ntms_open_existing : Int
+
+pub let ntms_opreq_cleaner : Int
+
+pub let ntms_opreq_deviceservice : Int
+
+pub let ntms_opreq_message : Int
+
+pub let ntms_opreq_movemedia : Int
+
+pub let ntms_opreq_newmedia : Int
+
+pub let ntms_opreq_unknown : Int
+
+pub let ntms_opreqflags_noalerts : Int
+
+pub let ntms_opreqflags_noautopurge : Int
+
+pub let ntms_opreqflags_nofailedpurge : Int
+
+pub let ntms_opreqflags_notrayicon : Int
+
+pub let ntms_oprequest : Int
+
+pub let ntms_opstate_active : Int
+
+pub let ntms_opstate_complete : Int
+
+pub let ntms_opstate_inprogress : Int
+
+pub let ntms_opstate_refused : Int
+
+pub let ntms_opstate_submitted : Int
+
+pub let ntms_opstate_unknown : Int
+
+pub let ntms_partition : Int
+
+pub let ntms_partstate_allocated : Int
+
+pub let ntms_partstate_available : Int
+
+pub let ntms_partstate_complete : Int
+
+pub let ntms_partstate_decommissioned : Int
+
+pub let ntms_partstate_foreign : Int
+
+pub let ntms_partstate_import : Int
+
+pub let ntms_partstate_incompatible : Int
+
+pub let ntms_partstate_reserved : Int
+
+pub let ntms_partstate_unknown : Int
+
+pub let ntms_partstate_unprepared : Int
+
+pub let ntms_physical_media : Int
+
+pub let ntms_poolhierarchy_length : UInt
+
+pub let ntms_poolpolicy_keepofflineimport : Int
+
+pub let ntms_poolpolicy_purgeofflinescratch : Int
+
+pub let ntms_pooltype_application : Int
+
+pub let ntms_pooltype_foreign : Int
+
+pub let ntms_pooltype_import : Int
+
+pub let ntms_pooltype_scratch : Int
+
+pub let ntms_pooltype_unknown : Int
+
+pub let ntms_portcontent_empty : Int
+
+pub let ntms_portcontent_full : Int
+
+pub let ntms_portcontent_unknown : Int
+
+pub let ntms_portposition_extended : Int
+
+pub let ntms_portposition_retracted : Int
+
+pub let ntms_portposition_unknown : Int
+
+pub let ntms_priority_default : Int
+
+pub let ntms_priority_high : Int
+
+pub let ntms_priority_highest : Int
+
+pub let ntms_priority_low : Int
+
+pub let ntms_priority_lowest : Int
+
+pub let ntms_priority_normal : Int
+
+pub let ntms_productname_length : UInt
+
+pub let ntms_ready : Int
+
+pub let ntms_revision_length : UInt
+
+pub let ntms_sequence_length : UInt
+
+pub let ntms_serialnumber_length : UInt
+
+pub let ntms_session_queryexpedite : Int
+
+pub let ntms_slotstate_empty : Int
+
+pub let ntms_slotstate_full : Int
+
+pub let ntms_slotstate_needsinventory : Int
+
+pub let ntms_slotstate_notpresent : Int
+
+pub let ntms_slotstate_unknown : Int
+
+pub let ntms_storageslot : Int
+
+pub let ntms_ui_destination : Int
+
+pub let ntms_uidest_add : Int
+
+pub let ntms_uidest_delete : Int
+
+pub let ntms_uidest_deleteall : Int
+
+pub let ntms_uioperation_max : Int
+
+pub let ntms_uitype_err : Int
+
+pub let ntms_uitype_info : Int
+
+pub let ntms_uitype_invalid : Int
+
+pub let ntms_uitype_max : Int
+
+pub let ntms_uitype_req : Int
+
+pub let ntms_unknown : Int
+
+pub let ntms_unknown_drive : Int
+
+pub let ntms_use_access : Int
+
+pub let ntms_username_length : UInt
+
+pub let ntms_vendorname_length : UInt
+
+pub let ntmsmli_maxappdescr : UInt
+
+pub let ntmsmli_maxidsize : UInt
+
+pub let ntmsmli_maxtype : UInt
+
+pub let object_id_type : Int
+
+pub let of_cancel : UInt
+
+pub let of_create : UInt
+
+pub let of_delete : UInt
+
+pub let of_exist : UInt
+
+pub let of_parse : UInt
+
+pub let of_prompt : UInt
+
+pub let of_read : UInt
+
+pub let of_readwrite : UInt
+
+pub let of_reopen : UInt
+
+pub let of_share_compat : UInt
+
+pub let of_share_deny_none : UInt
+
+pub let of_share_deny_read : UInt
+
+pub let of_share_deny_write : UInt
+
+pub let of_share_exclusive : UInt
+
+pub let of_verify : UInt
+
+pub let of_write : UInt
+
+pub fn on_user_name_changed(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn on_user_name_changed_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub let open_always : UInt
+
+pub fn open_encrypted_file_raw_a_raw(@core.RawAddress, UInt, @core.RawAddress) -> UInt
+
+pub fn open_encrypted_file_raw_w_raw(@core.RawAddress, UInt, @core.RawAddress) -> UInt
+
+pub fn open_enlistment_raw(UInt, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[@core.RawAddress]
+
+pub let open_existing : UInt
+
+pub fn open_file_by_id_raw(@core.RawAddress, @core.RawAddress, UInt, UInt, @core.RawAddress, UInt) -> @core.RawWin32Call[@core.RawAddress]
+
+pub fn open_file_raw(@core.RawAddress, @core.RawAddress, UInt) -> @core.RawWin32Call[Int]
+
+pub fn open_resource_manager_raw(UInt, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[@core.RawAddress]
+
+pub fn open_transaction_manager_by_id_raw(@core.RawAddress, UInt, UInt) -> @core.RawWin32Call[@core.RawAddress]
+
+pub fn open_transaction_manager_raw(@core.RawAddress, UInt, UInt) -> @core.RawWin32Call[@core.RawAddress]
+
+pub fn open_transaction_raw(UInt, @core.RawAddress) -> @core.RawWin32Call[@core.RawAddress]
+
+pub let perm_file_create : UInt
+
+pub let perm_file_read : UInt
+
+pub let perm_file_write : UInt
+
+pub let pipe_access_duplex : UInt
+
+pub let pipe_access_inbound : UInt
+
+pub let pipe_access_outbound : UInt
+
+pub fn pop_io_ring_completion(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn pop_io_ring_completion_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn pre_prepare_complete_raw(@core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn pre_prepare_enlistment_raw(@core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn prepare_complete_raw(@core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn prepare_enlistment_raw(@core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn prepare_log_archive_raw(@core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn prepare_tape_raw(@core.RawAddress, UInt, Int) -> UInt
+
+pub let progress_cancel : UInt
+
+pub let progress_continue : UInt
+
+pub let progress_quiet : UInt
+
+pub let progress_stop : UInt
+
+pub fn query_dos_device_a_raw(@core.RawAddress, @core.RawAddress, UInt) -> @core.RawWin32Call[UInt]
+
+pub fn query_dos_device_w_raw(@core.RawAddress, @core.RawAddress, UInt) -> @core.RawWin32Call[UInt]
+
+pub fn query_io_ring_capabilities(@core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn query_io_ring_capabilities_raw(@core.RawAddress) -> Int
+
+pub fn query_log_policy_raw(@core.RawAddress, Int, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn query_recovery_agents_on_encrypted_file_raw(@core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn query_users_on_encrypted_file_raw(@core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn re_open_file_raw(@core.RawAddress, UInt, UInt, UInt) -> @core.RawWin32Call[@core.RawAddress]
+
+pub let read_control : UInt
+
+pub fn read_directory_changes_ex_w_raw(@core.RawAddress, @core.RawAddress, UInt, Int, UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress, Int) -> @core.RawWin32Call[Int]
+
+pub fn read_directory_changes_w_raw(@core.RawAddress, @core.RawAddress, UInt, Int, UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub let read_directory_notify_extended_information : Int
+
+pub let read_directory_notify_full_information : Int
+
+pub let read_directory_notify_information : Int
+
+pub let read_directory_notify_maximum_information : Int
+
+pub fn read_encrypted_file_raw_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn read_file_ex_raw(@core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn read_file_raw(@core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn read_file_scatter_raw(@core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn read_log_archive_metadata_raw(@core.RawAddress, UInt, UInt, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn read_log_notification_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn read_log_record_raw(@core.RawAddress, @core.RawAddress, Int, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn read_log_restart_area_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn read_next_log_record_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn read_only_enlistment_raw(@core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn read_previous_log_restart_area_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn recover_enlistment_raw(@core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn recover_resource_manager_raw(@core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn recover_transaction_manager_raw(@core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn register_for_log_write_notification_raw(@core.RawAddress, UInt, Int) -> @core.RawWin32Call[Int]
+
+pub fn register_manageable_log_client_raw(@core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn remove(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn remove_all(@core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn remove_all_raw(@core.RawAddress) -> Int
+
+pub fn remove_bind_link(@core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn remove_bind_link_raw(@core.RawAddress) -> Int
+
+pub fn remove_directory2_a_raw(@core.RawAddress, Int) -> Int
+
+pub fn remove_directory2_w_raw(@core.RawAddress, Int) -> Int
+
+pub fn remove_directory_a_raw(@core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn remove_directory_from_app_w_raw(@core.RawAddress) -> Int
+
+pub fn remove_directory_transacted_a_raw(@core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn remove_directory_transacted_w_raw(@core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn remove_directory_w_raw(@core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn remove_log_container_raw(@core.RawAddress, @core.RawAddress, Int, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn remove_log_container_set_raw(@core.RawAddress, UInt, @core.RawAddress, Int, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn remove_log_policy_raw(@core.RawAddress, Int) -> @core.RawWin32Call[Int]
+
+pub fn remove_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn remove_users_from_encrypted_file_raw(@core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn rename_transaction_manager_raw(@core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn replace_file_a_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn replace_file_from_app_w_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn replace_file_w_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub let replacefile_ignore_acl_errors : UInt
+
+pub let replacefile_ignore_merge_errors : UInt
+
+pub let replacefile_write_through : UInt
+
+pub fn reserve_and_append_log_aligned_raw(@core.RawAddress, @core.RawAddress, UInt, UInt, @core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn reserve_and_append_log_raw(@core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn reset(@core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn reset_raw(@core.RawAddress) -> Int
+
+pub let resource_manager_communication : UInt
+
+pub let resource_manager_maximum_option : UInt
+
+pub let resource_manager_object_path : String
+
+pub let resource_manager_volatile : UInt
+
+pub fn rollback_complete_raw(@core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn rollback_enlistment_raw(@core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn rollback_transaction_async_raw(@core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn rollback_transaction_raw(@core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn rollforward_transaction_manager_raw(@core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn scan_log_containers_raw(@core.RawAddress, UInt, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn search_path_a_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[UInt]
+
+pub fn search_path_w_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[UInt]
+
+pub let security_anonymous : UInt
+
+pub let security_context_tracking : UInt
+
+pub let security_delegation : UInt
+
+pub let security_effective_only : UInt
+
+pub let security_identification : UInt
+
+pub let security_impersonation : UInt
+
+pub let security_sqos_present : UInt
+
+pub let security_valid_sqos_flags : UInt
+
+pub let sesi1_num_elements : UInt
+
+pub let sesi2_num_elements : UInt
+
+pub let sess_guest : UInt
+
+pub let sess_noencryption : UInt
+
+pub fn set_default_quota_limit(@core.RawAddress, Int64) -> Unit raise @core.WindowsError
+
+pub fn set_default_quota_limit_raw(@core.RawAddress, Int64) -> Int
+
+pub fn set_default_quota_threshold(@core.RawAddress, Int64) -> Unit raise @core.WindowsError
+
+pub fn set_default_quota_threshold_raw(@core.RawAddress, Int64) -> Int
+
+pub fn set_encrypted_file_metadata_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, UInt, @core.RawAddress) -> UInt
+
+pub fn set_end_of_file_raw(@core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn set_end_of_log_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn set_enlistment_recovery_information_raw(@core.RawAddress, UInt, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn set_file_apis_to_ansi_raw() -> Unit
+
+pub fn set_file_apis_to_oem_raw() -> Unit
+
+pub fn set_file_attributes_a_raw(@core.RawAddress, UInt) -> @core.RawWin32Call[Int]
+
+pub fn set_file_attributes_from_app_w_raw(@core.RawAddress, UInt) -> Int
+
+pub fn set_file_attributes_transacted_a_raw(@core.RawAddress, UInt, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn set_file_attributes_transacted_w_raw(@core.RawAddress, UInt, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn set_file_attributes_w_raw(@core.RawAddress, UInt) -> @core.RawWin32Call[Int]
+
+pub fn set_file_bandwidth_reservation_raw(@core.RawAddress, UInt, UInt, Int, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn set_file_completion_notification_modes_raw(@core.RawAddress, UInt) -> @core.RawWin32Call[Int]
+
+pub fn set_file_information_by_handle_raw(@core.RawAddress, Int, @core.RawAddress, UInt) -> @core.RawWin32Call[Int]
+
+pub fn set_file_io_overlapped_range_raw(@core.RawAddress, @core.RawAddress, UInt) -> @core.RawWin32Call[Int]
+
+pub fn set_file_pointer_ex_raw(@core.RawAddress, Int64, @core.RawAddress, UInt) -> @core.RawWin32Call[Int]
+
+pub fn set_file_pointer_raw(@core.RawAddress, Int, @core.RawAddress, UInt) -> @core.RawWin32Call[UInt]
+
+pub fn set_file_short_name_a_raw(@core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn set_file_short_name_w_raw(@core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn set_file_time_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn set_file_valid_data_raw(@core.RawAddress, Int64) -> @core.RawWin32Call[Int]
+
+pub fn set_io_ring_completion_event(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn set_io_ring_completion_event_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn set_log_archive_mode_raw(@core.RawAddress, Int) -> @core.RawWin32Call[Int]
+
+pub fn set_log_archive_tail_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn set_log_file_size_with_policy_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn set_quota_limit(@core.RawAddress, Int64, Int) -> Unit raise @core.WindowsError
+
+pub fn set_quota_limit_raw(@core.RawAddress, Int64, Int) -> Int
+
+pub fn set_quota_log_flags(@core.RawAddress, UInt) -> Unit raise @core.WindowsError
+
+pub fn set_quota_log_flags_raw(@core.RawAddress, UInt) -> Int
+
+pub fn set_quota_state(@core.RawAddress, UInt) -> Unit raise @core.WindowsError
+
+pub fn set_quota_state_raw(@core.RawAddress, UInt) -> Int
+
+pub fn set_quota_threshold(@core.RawAddress, Int64, Int) -> Unit raise @core.WindowsError
+
+pub fn set_quota_threshold_raw(@core.RawAddress, Int64, Int) -> Int
+
+pub fn set_resource_manager_completion_port_raw(@core.RawAddress, @core.RawAddress, UInt64) -> @core.RawWin32Call[Int]
+
+pub fn set_search_path_mode_raw(UInt) -> @core.RawWin32Call[Int]
+
+pub let set_tape_drive_information : UInt
+
+pub let set_tape_media_information : UInt
+
+pub fn set_tape_parameters_raw(@core.RawAddress, UInt, @core.RawAddress) -> UInt
+
+pub fn set_tape_position_raw(@core.RawAddress, UInt, UInt, UInt, UInt, Int) -> UInt
+
+pub fn set_transaction_information_raw(@core.RawAddress, UInt, UInt, UInt, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn set_user_file_encryption_key_ex_raw(@core.RawAddress, UInt, UInt, @core.RawAddress) -> UInt
+
+pub fn set_user_file_encryption_key_raw(@core.RawAddress) -> UInt
+
+pub fn set_volume_label_a_raw(@core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn set_volume_label_w_raw(@core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn set_volume_mount_point_a_raw(@core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn set_volume_mount_point_w_raw(@core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub let share_current_uses_parmnum : UInt
+
+pub let share_file_sd_parmnum : UInt
+
+pub let share_max_uses_parmnum : UInt
+
+pub let share_netname_parmnum : UInt
+
+pub let share_passwd_parmnum : UInt
+
+pub let share_path_parmnum : UInt
+
+pub let share_permissions_parmnum : UInt
+
+pub let share_qos_policy_parmnum : UInt
+
+pub let share_remark_parmnum : UInt
+
+pub let share_server_parmnum : UInt
+
+pub let share_type_parmnum : UInt
+
+pub let shi1005_flags_access_based_directory_enum : UInt
+
+pub let shi1005_flags_allow_namespace_caching : UInt
+
+pub let shi1005_flags_cluster_managed : UInt
+
+pub let shi1005_flags_compress_data : UInt
+
+pub let shi1005_flags_dfs : UInt
+
+pub let shi1005_flags_dfs_root : UInt
+
+pub let shi1005_flags_disable_client_buffering : UInt
+
+pub let shi1005_flags_disable_directory_handle_leasing : UInt
+
+pub let shi1005_flags_enable_ca : UInt
+
+pub let shi1005_flags_enable_hash : UInt
+
+pub let shi1005_flags_encrypt_data : UInt
+
+pub let shi1005_flags_force_levelii_oplock : UInt
+
+pub let shi1005_flags_force_shared_delete : UInt
+
+pub let shi1005_flags_identity_remoting : UInt
+
+pub let shi1005_flags_isolated_transport : UInt
+
+pub let shi1005_flags_reserved : UInt
+
+pub let shi1005_flags_restrict_exclusive_opens : UInt
+
+pub let shi1_num_elements : UInt
+
+pub let shi2_num_elements : UInt
+
+pub let shi_uses_unlimited : UInt
+
+pub fn shutdown_name_resolution(@core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn shutdown_name_resolution_raw(@core.RawAddress) -> Int
+
+pub fn single_phase_reject_raw(@core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn skip(@core.RawAddress, UInt) -> Unit raise @core.WindowsError
+
+pub fn skip_raw(@core.RawAddress, UInt) -> Int
+
+pub let specific_rights_all : UInt
+
+pub let standard_rights_all : UInt
+
+pub let standard_rights_execute : UInt
+
+pub let standard_rights_read : UInt
+
+pub let standard_rights_required : UInt
+
+pub let standard_rights_write : UInt
+
+pub let statsopt_clr : UInt
+
+pub let stype_device : UInt
+
+pub let stype_disktree : UInt
+
+pub let stype_ipc : UInt
+
+pub let stype_mask : UInt
+
+pub let stype_printq : UInt
+
+pub let stype_reserved1 : UInt
+
+pub let stype_reserved2 : UInt
+
+pub let stype_reserved3 : UInt
+
+pub let stype_reserved4 : UInt
+
+pub let stype_reserved5 : UInt
+
+pub let stype_reserved_all : UInt
+
+pub let stype_special : UInt
+
+pub let stype_temporary : UInt
+
+pub fn submit_io_ring(@core.RawAddress, UInt, UInt, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn submit_io_ring_raw(@core.RawAddress, UInt, UInt, @core.RawAddress) -> Int
+
+pub let symbolic_link_flag_allow_unprivileged_create : UInt
+
+pub let symbolic_link_flag_directory : UInt
+
+pub let synchronize : UInt
+
+pub let tape_absolute_block : UInt
+
+pub let tape_absolute_position : UInt
+
+pub let tape_erase_long : UInt
+
+pub let tape_erase_short : UInt
+
+pub let tape_filemarks : UInt
+
+pub let tape_fixed_partitions : UInt
+
+pub let tape_format : UInt
+
+pub let tape_initiator_partitions : UInt
+
+pub let tape_load : UInt
+
+pub let tape_lock : UInt
+
+pub let tape_logical_block : UInt
+
+pub let tape_logical_position : UInt
+
+pub let tape_long_filemarks : UInt
+
+pub let tape_rewind : UInt
+
+pub let tape_select_partitions : UInt
+
+pub let tape_setmarks : UInt
+
+pub let tape_short_filemarks : UInt
+
+pub let tape_space_end_of_data : UInt
+
+pub let tape_space_filemarks : UInt
+
+pub let tape_space_relative_blocks : UInt
+
+pub let tape_space_sequential_fmks : UInt
+
+pub let tape_space_sequential_smks : UInt
+
+pub let tape_space_setmarks : UInt
+
+pub let tape_tension : UInt
+
+pub let tape_unload : UInt
+
+pub let tape_unlock : UInt
+
+pub fn terminate_log_archive_raw(@core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn terminate_read_log_raw(@core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub let transaction_do_not_promote : UInt
+
+pub let transaction_manager_commit_default : UInt
+
+pub let transaction_manager_commit_lowest : UInt
+
+pub let transaction_manager_commit_system_hives : UInt
+
+pub let transaction_manager_commit_system_volume : UInt
+
+pub let transaction_manager_corrupt_for_progress : UInt
+
+pub let transaction_manager_corrupt_for_recovery : UInt
+
+pub let transaction_manager_maximum_option : UInt
+
+pub let transaction_manager_volatile : UInt
+
+pub let transaction_maximum_option : UInt
+
+pub let transaction_notification_tm_online_flag_is_clustered : UInt
+
+pub let transaction_notify_commit : UInt
+
+pub let transaction_notify_commit_complete : UInt
+
+pub let transaction_notify_commit_finalize : UInt
+
+pub let transaction_notify_commit_request : UInt
+
+pub let transaction_notify_delegate_commit : UInt
+
+pub let transaction_notify_enlist_mask : UInt
+
+pub let transaction_notify_enlist_preprepare : UInt
+
+pub let transaction_notify_indoubt : UInt
+
+pub let transaction_notify_last_recover : UInt
+
+pub let transaction_notify_marshal : UInt
+
+pub let transaction_notify_mask : UInt
+
+pub let transaction_notify_prepare : UInt
+
+pub let transaction_notify_prepare_complete : UInt
+
+pub let transaction_notify_preprepare : UInt
+
+pub let transaction_notify_preprepare_complete : UInt
+
+pub let transaction_notify_promote : UInt
+
+pub let transaction_notify_promote_new : UInt
+
+pub let transaction_notify_propagate_pull : UInt
+
+pub let transaction_notify_propagate_push : UInt
+
+pub let transaction_notify_recover : UInt
+
+pub let transaction_notify_recover_query : UInt
+
+pub let transaction_notify_request_outcome : UInt
+
+pub let transaction_notify_rm_disconnected : UInt
+
+pub let transaction_notify_rollback : UInt
+
+pub let transaction_notify_rollback_complete : UInt
+
+pub let transaction_notify_single_phase_commit : UInt
+
+pub let transaction_notify_tm_online : UInt
+
+pub let transaction_object_path : String
+
+pub let transaction_outcome_aborted : Int
+
+pub let transaction_outcome_committed : Int
+
+pub let transaction_outcome_undetermined : Int
+
+pub let transactionmanager_object_path : String
+
+pub let truncate_existing : UInt
+
+pub fn truncate_log_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn txf_get_thread_mini_version_for_create_raw(@core.RawAddress) -> Unit
+
+pub fn txf_log_create_file_read_context_raw(@core.RawAddress, UInt64, UInt64, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn txf_log_create_range_read_context_raw(@core.RawAddress, UInt64, UInt64, @core.RawAddress, @core.RawAddress, UInt, @core.RawAddress) -> Int
+
+pub fn txf_log_destroy_read_context_raw(@core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn txf_log_read_records_raw(@core.RawAddress, UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub let txf_log_record_generic_type_abort : UInt
+
+pub let txf_log_record_generic_type_commit : UInt
+
+pub let txf_log_record_generic_type_data : UInt
+
+pub let txf_log_record_generic_type_prepare : UInt
+
+pub fn txf_log_record_get_file_name_raw(@core.RawAddress, UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn txf_log_record_get_generic_type_raw(@core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> Int
+
+pub let txf_log_record_type_affected_file : UInt
+
+pub let txf_log_record_type_truncate : UInt
+
+pub let txf_log_record_type_write : UInt
+
+pub fn txf_read_metadata_info_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn txf_set_thread_mini_version_for_create_raw(UInt) -> Unit
+
+pub let txfs_miniversion_committed_view : UInt
+
+pub let txfs_miniversion_default_view : UInt
+
+pub let txfs_miniversion_dirty_view : UInt
+
+pub fn unlock_file_ex_raw(@core.RawAddress, UInt, UInt, UInt, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn unlock_file_raw(@core.RawAddress, UInt, UInt, UInt, UInt) -> @core.RawWin32Call[Int]
+
+pub fn validate_log_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn ver_find_file_a_raw(UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn ver_find_file_w_raw(UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn ver_install_file_a_raw(UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn ver_install_file_w_raw(UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn ver_language_name_a_raw(UInt, @core.RawAddress, UInt) -> UInt
+
+pub fn ver_language_name_w_raw(UInt, @core.RawAddress, UInt) -> UInt
+
+pub fn ver_query_value_a_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn ver_query_value_w_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub let vff_bufftoosmall : UInt
+
+pub let vff_curnedest : UInt
+
+pub let vff_fileinuse : UInt
+
+pub let vfff_issharedfile : UInt
+
+pub let vft2_drv_comm : Int
+
+pub let vft2_drv_display : Int
+
+pub let vft2_drv_inputmethod : Int
+
+pub let vft2_drv_installable : Int
+
+pub let vft2_drv_keyboard : Int
+
+pub let vft2_drv_language : Int
+
+pub let vft2_drv_mouse : Int
+
+pub let vft2_drv_network : Int
+
+pub let vft2_drv_printer : Int
+
+pub let vft2_drv_sound : Int
+
+pub let vft2_drv_system : Int
+
+pub let vft2_drv_versioned_printer : Int
+
+pub let vft2_font_raster : Int
+
+pub let vft2_font_truetype : Int
+
+pub let vft2_font_vector : Int
+
+pub let vft2_unknown : Int
+
+pub let vft_app : Int
+
+pub let vft_dll : Int
+
+pub let vft_drv : Int
+
+pub let vft_font : Int
+
+pub let vft_static_lib : Int
+
+pub let vft_unknown : Int
+
+pub let vft_vxd : Int
+
+pub let vif_accessviolation : UInt
+
+pub let vif_bufftoosmall : UInt
+
+pub let vif_cannotcreate : UInt
+
+pub let vif_cannotdelete : UInt
+
+pub let vif_cannotdeletecur : UInt
+
+pub let vif_cannotloadcabinet : UInt
+
+pub let vif_cannotloadlz32 : UInt
+
+pub let vif_cannotreaddst : UInt
+
+pub let vif_cannotreadsrc : UInt
+
+pub let vif_cannotrename : UInt
+
+pub let vif_diffcodepg : UInt
+
+pub let vif_difflang : UInt
+
+pub let vif_difftype : UInt
+
+pub let vif_fileinuse : UInt
+
+pub let vif_mismatch : UInt
+
+pub let vif_outofmemory : UInt
+
+pub let vif_outofspace : UInt
+
+pub let vif_sharingviolation : UInt
+
+pub let vif_srcold : UInt
+
+pub let vif_tempfile : UInt
+
+pub let vif_writeprot : UInt
+
+pub let viff_dontdeleteold : UInt
+
+pub let viff_forceinstall : UInt
+
+pub let volume_name_dos : UInt
+
+pub let volume_name_guid : UInt
+
+pub let volume_name_none : UInt
+
+pub let volume_name_nt : UInt
+
+pub let vos_base : UInt
+
+pub let vos_dos : UInt
+
+pub let vos_dos_windows16 : UInt
+
+pub let vos_dos_windows32 : UInt
+
+pub let vos_nt : UInt
+
+pub let vos_nt_windows32 : UInt
+
+pub let vos_os216 : UInt
+
+pub let vos_os216_pm16 : UInt
+
+pub let vos_os232 : UInt
+
+pub let vos_os232_pm32 : UInt
+
+pub let vos_pm16 : UInt
+
+pub let vos_pm32 : UInt
+
+pub let vos_unknown : UInt
+
+pub let vos_wince : UInt
+
+pub let vos_windows16 : UInt
+
+pub let vos_windows32 : UInt
+
+pub let vs_ff_debug : UInt
+
+pub let vs_ff_infoinferred : UInt
+
+pub let vs_ff_patched : UInt
+
+pub let vs_ff_prerelease : UInt
+
+pub let vs_ff_privatebuild : UInt
+
+pub let vs_ff_specialbuild : UInt
+
+pub let vs_ffi_fileflagsmask : Int
+
+pub let vs_ffi_signature : Int
+
+pub let vs_ffi_strucversion : Int
+
+pub let vs_user_defined : UInt
+
+pub let vs_version_info : UInt
+
+pub let wim_boot_not_os_wim : UInt
+
+pub let wim_boot_os_wim : UInt
+
+pub let wim_entry_flag_not_active : UInt
+
+pub let wim_entry_flag_suspended : UInt
+
+pub let wim_external_file_info_flag_not_active : UInt
+
+pub let wim_external_file_info_flag_suspended : UInt
+
+pub let wim_provider_hash_size : UInt
+
+pub let winefs_setuserkey_set_capabilities : UInt
+
+pub fn wof_enum_entries(@core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn wof_enum_entries_raw(@core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn wof_file_enum_files(@core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn wof_file_enum_files_raw(@core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn wof_get_driver_version(@core.RawAddress, UInt, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn wof_get_driver_version_raw(@core.RawAddress, UInt, @core.RawAddress) -> Int
+
+pub fn wof_is_external_file(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn wof_is_external_file_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub let wof_provider_file : UInt
+
+pub let wof_provider_wim : UInt
+
+pub fn wof_set_file_data_location(@core.RawAddress, UInt, @core.RawAddress, UInt) -> Unit raise @core.WindowsError
+
+pub fn wof_set_file_data_location_raw(@core.RawAddress, UInt, @core.RawAddress, UInt) -> Int
+
+pub fn wof_should_compress_binaries_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn wof_wim_add_entry(@core.RawAddress, @core.RawAddress, UInt, UInt, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn wof_wim_add_entry_raw(@core.RawAddress, @core.RawAddress, UInt, UInt, @core.RawAddress) -> Int
+
+pub fn wof_wim_enum_files(@core.RawAddress, Int64, @core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn wof_wim_enum_files_raw(@core.RawAddress, Int64, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn wof_wim_remove_entry(@core.RawAddress, Int64) -> Unit raise @core.WindowsError
+
+pub fn wof_wim_remove_entry_raw(@core.RawAddress, Int64) -> Int
+
+pub fn wof_wim_suspend_entry(@core.RawAddress, Int64) -> Unit raise @core.WindowsError
+
+pub fn wof_wim_suspend_entry_raw(@core.RawAddress, Int64) -> Int
+
+pub fn wof_wim_update_entry(@core.RawAddress, Int64, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn wof_wim_update_entry_raw(@core.RawAddress, Int64, @core.RawAddress) -> Int
+
+pub fn wow64_disable_wow64_fs_redirection_raw(@core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn wow64_enable_wow64_fs_redirection_raw(UInt) -> UInt
+
+pub fn wow64_revert_wow64_fs_redirection_raw(@core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub let write_dac : UInt
+
+pub fn write_encrypted_file_raw_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn write_file_ex_raw(@core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn write_file_gather_raw(@core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn write_file_raw(@core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn write_log_restart_area_raw(@core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub let write_owner : UInt
+
+pub fn write_tapemark_raw(@core.RawAddress, UInt, UInt, Int) -> UInt
+
+// Errors
+
+// Types and methods
+
+// Type aliases
+pub using @3633021c678f0cc3 {type AnonymousEStruct_92c87e2463d9 as AnonymousEStruct}
+
+pub using @3633021c678f0cc3 {type AnonymousEUnion_8f7fea74218b as AnonymousEUnion_8f7fea7421}
+
+pub using @3633021c678f0cc3 {type AnonymousEUnion_dd5a43eaad71 as AnonymousEUnion_dd5a43eaad}
+
+pub using @3633021c678f0cc3 {type AnonymousEUnion_ed49a09ef0a3 as AnonymousEUnion_ed49a09ef0}
+
+pub using @3633021c678f0cc3 {type AutoGrowEStruct_931c51200ae8 as AutoGrowEStruct}
+
+pub using @3633021c678f0cc3 {type AutoShrinkEStruct_975469a4ce38 as AutoShrinkEStruct}
+
+pub using @3633021c678f0cc3 {type BYHANDLEFILEINFORMATION_a1c03ec66ab7 as BYHANDLEFILEINFORMATION}
+
+pub using @3633021c678f0cc3 {type BufferUnion_a39a50ad77b8 as BufferUnion}
+
+pub using @3633021c678f0cc3 {type CACHEACCESSCHECK_35ef60b68bad as CACHEACCESSCHECK}
+
+pub using @3633021c678f0cc3 {type CACHEDESTROYCALLBACK_eb7b85b6a2a3 as CACHEDESTROYCALLBACK}
+
+pub using @3633021c678f0cc3 {type CACHEKEYCOMPARE_26e9ec550678 as CACHEKEYCOMPARE}
+
+pub using @3633021c678f0cc3 {type CACHEKEYHASH_9c6ff10c2ed8 as CACHEKEYHASH}
+
+pub using @3633021c678f0cc3 {type CACHEREADCALLBACK_985b2dfb8d89 as CACHEREADCALLBACK}
+
+pub using @3633021c678f0cc3 {type CLAIMMEDIALABEL_daf3b7ead82d as CLAIMMEDIALABEL}
+
+pub using @3633021c678f0cc3 {type CLAIMMEDIALABELEX_cf8ed2b27191 as CLAIMMEDIALABELEX}
+
+pub using @3633021c678f0cc3 {type CLFSBLOCKALLOCATION_a443c3847ece as CLFSBLOCKALLOCATION}
+
+pub using @3633021c678f0cc3 {type CLFSBLOCKDEALLOCATION_564a4a61bb17 as CLFSBLOCKDEALLOCATION}
+
+pub using @3633021c678f0cc3 {type CLFSCONTEXTMODE_8f44fe992429 as CLFSCONTEXTMODE}
+
+pub using @3633021c678f0cc3 {type CLFSFLAG_597a70849c9e as CLFSFLAG}
+
+pub using @3633021c678f0cc3 {type CLFSIOSTATSCLASS_94cffc8fc168 as CLFSIOSTATSCLASS}
+
+pub using @3633021c678f0cc3 {type CLFSLOGARCHIVEMODE_44168a77bead as CLFSLOGARCHIVEMODE}
+
+pub using @3633021c678f0cc3 {type CLFSLOGNAMEINFORMATION_d3bf366604fe as CLFSLOGNAMEINFORMATION}
+
+pub using @3633021c678f0cc3 {type CLFSMGMTNOTIFICATION_492e8d40f580 as CLFSMGMTNOTIFICATION}
+
+pub using @3633021c678f0cc3 {type CLFSMGMTNOTIFICATIONTYPE_24e8cf556576 as CLFSMGMTNOTIFICATIONTYPE}
+
+pub using @3633021c678f0cc3 {type CLFSMGMTPOLICY_02e565f73bf9 as CLFSMGMTPOLICY}
+
+pub using @3633021c678f0cc3 {type CLFSMGMTPOLICYTYPE_db2f05ad0aeb as CLFSMGMTPOLICYTYPE}
+
+pub using @3633021c678f0cc3 {type CLFSNODEID_cd79cd57e775 as CLFSNODEID}
+
+pub using @3633021c678f0cc3 {type CLFSPHYSICALLSNINFORMATION_85ffe0682e2b as CLFSPHYSICALLSNINFORMATION}
+
+pub using @3633021c678f0cc3 {type CLFSSTREAMIDINFORMATION_20a14e731fb8 as CLFSSTREAMIDINFORMATION}
+
+pub using @3633021c678f0cc3 {type CLSARCHIVEDESCRIPTOR_d70dafbd953b as CLSARCHIVEDESCRIPTOR}
+
+pub using @3633021c678f0cc3 {type CLSCONTAINERINFORMATION_3b2d223d5c85 as CLSCONTAINERINFORMATION}
+
+pub using @3633021c678f0cc3 {type CLSCONTEXTMODE_03f9e0843c78 as CLSCONTEXTMODE}
+
+pub using @3633021c678f0cc3 {type CLSINFORMATION_91da43ca579e as CLSINFORMATION}
+
+pub using @3633021c678f0cc3 {type CLSIOSTATISTICS_80f570ec0575 as CLSIOSTATISTICS}
+
+pub using @3633021c678f0cc3 {type CLSIOSTATISTICSHEADER_dca1e59cd4cd as CLSIOSTATISTICSHEADER}
+
+pub using @3633021c678f0cc3 {type CLSIOSTATSCLASS_032dbe29ff62 as CLSIOSTATSCLASS}
+
+pub using @3633021c678f0cc3 {type CLSLOGINFORMATIONCLASS_8412a33ac99a as CLSLOGINFORMATIONCLASS}
+
+pub using @3633021c678f0cc3 {type CLSLSN_c90bb05e7e5f as CLSLSN}
+
+pub using @3633021c678f0cc3 {type CLSSCANCONTEXT_5073f13c244e as CLSSCANCONTEXT}
+
+pub using @3633021c678f0cc3 {type CLSWRITEENTRY_be242b7f73d5 as CLSWRITEENTRY}
+
+pub using @3633021c678f0cc3 {type COMPRESSIONFORMAT_47333d1ee60a as COMPRESSIONFORMAT}
+
+pub using @3633021c678f0cc3 {type CONNECTIONINFO0_2396c5c5acb7 as CONNECTIONINFO0}
+
+pub using @3633021c678f0cc3 {type CONNECTIONINFO1_27c759fdea3e as CONNECTIONINFO1}
+
+pub using @3633021c678f0cc3 {type COPYFILE2COPYPHASE_4db0a74cc351 as COPYFILE2COPYPHASE}
+
+pub using @3633021c678f0cc3 {type COPYFILE2CREATEOPLOCKKEYS_2189e728ac35 as COPYFILE2CREATEOPLOCKKEYS}
+
+pub using @3633021c678f0cc3 {type COPYFILE2EXTENDEDPARAMETERS_2e2f0ed3c70c as COPYFILE2EXTENDEDPARAMETERS}
+
+pub using @3633021c678f0cc3 {type COPYFILE2EXTENDEDPARAMETERSV2_31784ce8c63e as COPYFILE2EXTENDEDPARAMETERSV2}
+
+pub using @3633021c678f0cc3 {type COPYFILE2MESSAGE_0ccfe5d452b1 as COPYFILE2MESSAGE}
+
+pub using @3633021c678f0cc3 {type COPYFILE2MESSAGEACTION_3fb9803578e8 as COPYFILE2MESSAGEACTION}
+
+pub using @3633021c678f0cc3 {type COPYFILE2MESSAGETYPE_009a361ed7ca as COPYFILE2MESSAGETYPE}
+
+pub using @3633021c678f0cc3 {type COPYFILE2V2FLAGS_d01090e1d0a1 as COPYFILE2V2FLAGS}
+
+pub using @3633021c678f0cc3 {type COPYFILEFLAGS_cd7ea265f708 as COPYFILEFLAGS}
+
+pub using @3633021c678f0cc3 {type COPYPROGRESSROUTINEPROGRESS_83229306f4f1 as COPYPROGRESSROUTINEPROGRESS}
+
+pub using @3633021c678f0cc3 {type CREATEBINDLINKFLAGS_46a11454033f as CREATEBINDLINKFLAGS}
+
+pub using @3633021c678f0cc3 {type CREATEFILE2EXTENDEDPARAMETERS_bd52137a3574 as CREATEFILE2EXTENDEDPARAMETERS}
+
+pub using @3633021c678f0cc3 {type CREATEFILE3EXTENDEDPARAMETERS_de9354b2deeb as CREATEFILE3EXTENDEDPARAMETERS}
+
+pub using @3633021c678f0cc3 {type CREATETAPEPARTITIONMETHOD_bcb13113497e as CREATETAPEPARTITIONMETHOD}
+
+pub using @3633021c678f0cc3 {type ChunkFinishedEStruct_311746656eaf as ChunkFinishedEStruct}
+
+pub using @3633021c678f0cc3 {type ChunkStartedEStruct_9073bff4930d as ChunkStartedEStruct}
+
+pub using @3633021c678f0cc3 {type DEFINEDOSDEVICEFLAGS_c5ec0790681f as DEFINEDOSDEVICEFLAGS}
+
+pub using @3633021c678f0cc3 {type DIRECTORYFLAGS_1a4e9ca6e197 as DIRECTORYFLAGS}
+
+pub using @3633021c678f0cc3 {type DISKQUOTAUSERINFORMATION_03a1e4a48986 as DISKQUOTAUSERINFORMATION}
+
+pub using @3633021c678f0cc3 {type DISKQUOTAUSERNAMERESOLVE_1a6ff6e565dc as DISKQUOTAUSERNAMERESOLVE}
+
+pub using @3633021c678f0cc3 {type DISKSPACEINFORMATION_ddc1b30833b3 as DISKSPACEINFORMATION}
+
+pub using @3633021c678f0cc3 {type EFSCERTIFICATEBLOB_7ab4a7033766 as EFSCERTIFICATEBLOB}
+
+pub using @3633021c678f0cc3 {type EFSCOMPATIBILITYINFO_fda3d30e17a4 as EFSCOMPATIBILITYINFO}
+
+pub using @3633021c678f0cc3 {type EFSDECRYPTIONSTATUSINFO_e6e5103a86ec as EFSDECRYPTIONSTATUSINFO}
+
+pub using @3633021c678f0cc3 {type EFSENCRYPTIONSTATUSINFO_1ce7fa7926e4 as EFSENCRYPTIONSTATUSINFO}
+
+pub using @3633021c678f0cc3 {type EFSHASHBLOB_4be4657c1197 as EFSHASHBLOB}
+
+pub using @3633021c678f0cc3 {type EFSKEYINFO_21e291d1fe98 as EFSKEYINFO}
+
+pub using @3633021c678f0cc3 {type EFSPINBLOB_51f80a5e2821 as EFSPINBLOB}
+
+pub using @3633021c678f0cc3 {type EFSRPCBLOB_d06a1a6ab1a8 as EFSRPCBLOB}
+
+pub using @3633021c678f0cc3 {type EFSVERSIONINFO_b0b8847e0335 as EFSVERSIONINFO}
+
+pub using @3633021c678f0cc3 {type ENCRYPTEDFILEMETADATASIGNATURE_aa59f96d8508 as ENCRYPTEDFILEMETADATASIGNATURE}
+
+pub using @3633021c678f0cc3 {type ENCRYPTIONCERTIFICATE_192d03a55f1d as ENCRYPTIONCERTIFICATE}
+
+pub using @3633021c678f0cc3 {type ENCRYPTIONCERTIFICATEHASH_5581f78806a4 as ENCRYPTIONCERTIFICATEHASH}
+
+pub using @3633021c678f0cc3 {type ENCRYPTIONCERTIFICATEHASHLIST_b420780ec56a as ENCRYPTIONCERTIFICATEHASHLIST}
+
+pub using @3633021c678f0cc3 {type ENCRYPTIONCERTIFICATELIST_7b36ed7d3348 as ENCRYPTIONCERTIFICATELIST}
+
+pub using @3633021c678f0cc3 {type ENCRYPTIONPROTECTOR_722c7c0aafd7 as ENCRYPTIONPROTECTOR}
+
+pub using @3633021c678f0cc3 {type ENCRYPTIONPROTECTORLIST_2fdb9d029a9b as ENCRYPTIONPROTECTORLIST}
+
+pub using @3633021c678f0cc3 {type ERASETAPETYPE_4b152f404427 as ERASETAPETYPE}
+
+pub using @3633021c678f0cc3 {type ErrorEStruct_856d76b31c9a as ErrorEStruct}
+
+pub using @3633021c678f0cc3 {type FCACHECREATECALLBACK_4f06ebb3985e as FCACHECREATECALLBACK}
+
+pub using @3633021c678f0cc3 {type FCACHERICHCREATECALLBACK_aa4c22a726e6 as FCACHERICHCREATECALLBACK}
+
+pub using @3633021c678f0cc3 {type FHOVERLAPPED_311132045c6c as FHOVERLAPPED}
+
+pub using @3633021c678f0cc3 {type FILEACCESSRIGHTS_298ff1a3bb14 as FILEACCESSRIGHTS}
+
+pub using @3633021c678f0cc3 {type FILEACTION_c6127d44af62 as FILEACTION}
+
+pub using @3633021c678f0cc3 {type FILEALIGNMENTINFO_0319b9028640 as FILEALIGNMENTINFO}
+
+pub using @3633021c678f0cc3 {type FILEALLOCATIONINFO_eca48eaa0e02 as FILEALLOCATIONINFO}
+
+pub using @3633021c678f0cc3 {type FILEATTRIBUTETAGINFO_4b7a4579128a as FILEATTRIBUTETAGINFO}
+
+pub using @3633021c678f0cc3 {type FILEBASICINFO_ec18a2242cda as FILEBASICINFO}
+
+pub using @3633021c678f0cc3 {type FILECASESENSITIVEINFO_0d4f805a1fe3 as FILECASESENSITIVEINFO}
+
+pub using @3633021c678f0cc3 {type FILECOMPRESSIONINFO_418270c975e6 as FILECOMPRESSIONINFO}
+
+pub using @3633021c678f0cc3 {type FILECREATIONDISPOSITION_72d35ad86b59 as FILECREATIONDISPOSITION}
+
+pub using @3633021c678f0cc3 {type FILEDEVICETYPE_9f6e72336a62 as FILEDEVICETYPE}
+
+pub using @3633021c678f0cc3 {type FILEDISPOSITIONINFO_e4d7c9fc25c3 as FILEDISPOSITIONINFO}
+
+pub using @3633021c678f0cc3 {type FILEDISPOSITIONINFOEX_c2044c2f21c5 as FILEDISPOSITIONINFOEX}
+
+pub using @3633021c678f0cc3 {type FILEDISPOSITIONINFOEXFLAGS_947f4d95d705 as FILEDISPOSITIONINFOEXFLAGS}
+
+pub using @3633021c678f0cc3 {type FILEENDOFFILEINFO_99bb6366021f as FILEENDOFFILEINFO}
+
+pub using @3633021c678f0cc3 {type FILEEXTENT_2bdd524d80dc as FILEEXTENT}
+
+pub using @3633021c678f0cc3 {type FILEFLAGSANDATTRIBUTES_59508f6cf024 as FILEFLAGSANDATTRIBUTES}
+
+pub using @3633021c678f0cc3 {type FILEFLUSHMODE_ccf1b6bf3e51 as FILEFLUSHMODE}
+
+pub using @3633021c678f0cc3 {type FILEFULLDIRINFO_27027b51afe1 as FILEFULLDIRINFO}
+
+pub using @3633021c678f0cc3 {type FILEID128_cbd2c52f3599 as FILEID128}
+
+pub using @3633021c678f0cc3 {type FILEIDBOTHDIRINFO_64e930fd47d5 as FILEIDBOTHDIRINFO}
+
+pub using @3633021c678f0cc3 {type FILEIDDESCRIPTOR_e1890edc70f3 as FILEIDDESCRIPTOR}
+
+pub using @3633021c678f0cc3 {type FILEIDEXTDDIRINFO_b6607d87a2c3 as FILEIDEXTDDIRINFO}
+
+pub using @3633021c678f0cc3 {type FILEIDINFO_a4a961a9d875 as FILEIDINFO}
+
+pub using @3633021c678f0cc3 {type FILEIDTYPE_c0e54abb0e56 as FILEIDTYPE}
+
+pub using @3633021c678f0cc3 {type FILEINFO2_f45cd263f8bc as FILEINFO2}
+
+pub using @3633021c678f0cc3 {type FILEINFO3_9e9edec67e5a as FILEINFO3}
+
+pub using @3633021c678f0cc3 {type FILEINFOBYHANDLECLASS_87349e856ffa as FILEINFOBYHANDLECLASS}
+
+pub using @3633021c678f0cc3 {type FILEINFOBYNAMECLASS_6ae34ba2e492 as FILEINFOBYNAMECLASS}
+
+pub using @3633021c678f0cc3 {type FILEINFOFLAGSPERMISSIONS_6974317f7ec8 as FILEINFOFLAGSPERMISSIONS}
+
+pub using @3633021c678f0cc3 {type FILEIOPRIORITYHINTINFO_eeea30f7dae7 as FILEIOPRIORITYHINTINFO}
+
+pub using @3633021c678f0cc3 {type FILENAMEINFO_a87a350de017 as FILENAMEINFO}
+
+pub using @3633021c678f0cc3 {type FILENOTIFYCHANGE_1e44a866c7c1 as FILENOTIFYCHANGE}
+
+pub using @3633021c678f0cc3 {type FILENOTIFYEXTENDEDINFORMATION_55ab1c735636 as FILENOTIFYEXTENDEDINFORMATION}
+
+pub using @3633021c678f0cc3 {type FILENOTIFYINFORMATION_ff1e2bc9692d as FILENOTIFYINFORMATION}
+
+pub using @3633021c678f0cc3 {type FILEREMOTEPROTOCOLINFO_23306963295e as FILEREMOTEPROTOCOLINFO}
+
+pub using @3633021c678f0cc3 {type FILERENAMEINFO_8dc472561dc3 as FILERENAMEINFO}
+
+pub using @3633021c678f0cc3 {type FILESEGMENTELEMENT_7a5fa8a7d282 as FILESEGMENTELEMENT}
+
+pub using @3633021c678f0cc3 {type FILESHAREMODE_749dcab1e511 as FILESHAREMODE}
+
+pub using @3633021c678f0cc3 {type FILESTANDARDINFO_572f8b7fbeaa as FILESTANDARDINFO}
+
+pub using @3633021c678f0cc3 {type FILESTATBASICINFORMATION_ae1fd340c9a2 as FILESTATBASICINFORMATION}
+
+pub using @3633021c678f0cc3 {type FILESTORAGEINFO_d7ac1b19113b as FILESTORAGEINFO}
+
+pub using @3633021c678f0cc3 {type FILESTREAMINFO_3b27a98cf601 as FILESTREAMINFO}
+
+pub using @3633021c678f0cc3 {type FILETYPE_db64d3061184 as FILETYPE}
+
+pub using @3633021c678f0cc3 {type FILEWRITEFLAGS_11beba9cf038 as FILEWRITEFLAGS}
+
+pub using @3633021c678f0cc3 {type FINDEXINFOLEVELS_1bf18c69ff73 as FINDEXINFOLEVELS}
+
+pub using @3633021c678f0cc3 {type FINDEXSEARCHOPS_930eff2f3d2b as FINDEXSEARCHOPS}
+
+pub using @3633021c678f0cc3 {type FINDFIRSTEXFLAGS_4dc11dba89d7 as FINDFIRSTEXFLAGS}
+
+pub using @3633021c678f0cc3 {type FIOCONTEXT_3c39a4d82012 as FIOCONTEXT}
+
+pub using @3633021c678f0cc3 {type GETFILEEXINFOLEVELS_bcd2f3eed6af as GETFILEEXINFOLEVELS}
+
+pub using @3633021c678f0cc3 {type GETFILEVERSIONINFOFLAGS_cf1568990537 as GETFILEVERSIONINFOFLAGS}
+
+pub using @3633021c678f0cc3 {type GETFINALPATHNAMEBYHANDLEFLAGS_c26d6f97f82a as GETFINALPATHNAMEBYHANDLEFLAGS}
+
+pub using @3633021c678f0cc3 {type GETTAPEDRIVEPARAMETERSOPERATION_74f758644a20 as GETTAPEDRIVEPARAMETERSOPERATION}
+
+pub using @3633021c678f0cc3 {type GenericReparseBufferEStruct_337c1873765f as GenericReparseBufferEStruct}
+
+pub using @3633021c678f0cc3 {type GenericReservedEStruct_a86e132b0bfe as GenericReservedEStruct}
+
+pub using @3633021c678f0cc3 {type GrowthRateEStruct_c4cbc7735cb7 as GrowthRateEStruct}
+
+pub using @3633021c678f0cc3 {type HIORING_1e4fc65988cc as HIORING}
+
+pub using @3633021c678f0cc3 {type HandleUnion_e808d429d888 as HandleUnion}
+
+pub using @3633021c678f0cc3 {type IDiskQuotaControl_5099293ec707 as IDiskQuotaControl}
+
+pub using @3633021c678f0cc3 {type IDiskQuotaEvents_8d5d52a07cb3 as IDiskQuotaEvents}
+
+pub using @3633021c678f0cc3 {type IDiskQuotaUser_1f985a32605a as IDiskQuotaUser}
+
+pub using @3633021c678f0cc3 {type IDiskQuotaUserBatch_176678813998 as IDiskQuotaUserBatch}
+
+pub using @3633021c678f0cc3 {type IEnumDiskQuotaUsers_99f0fcd6bcb7 as IEnumDiskQuotaUsers}
+
+pub using @3633021c678f0cc3 {type IORINGBUFFERINFO_d646cf9dbf31 as IORINGBUFFERINFO}
+
+pub using @3633021c678f0cc3 {type IORINGBUFFERREF_bf9f43b1ebd8 as IORINGBUFFERREF}
+
+pub using @3633021c678f0cc3 {type IORINGCAPABILITIES_d8a47bed75c7 as IORINGCAPABILITIES}
+
+pub using @3633021c678f0cc3 {type IORINGCQE_a97ecd27bed0 as IORINGCQE}
+
+pub using @3633021c678f0cc3 {type IORINGCREATEADVISORYFLAGS_69726cef6031 as IORINGCREATEADVISORYFLAGS}
+
+pub using @3633021c678f0cc3 {type IORINGCREATEFLAGS_656acf727da1 as IORINGCREATEFLAGS}
+
+pub using @3633021c678f0cc3 {type IORINGCREATEREQUIREDFLAGS_4f2598f53f4a as IORINGCREATEREQUIREDFLAGS}
+
+pub using @3633021c678f0cc3 {type IORINGFEATUREFLAGS_bfb7776c80c9 as IORINGFEATUREFLAGS}
+
+pub using @3633021c678f0cc3 {type IORINGHANDLEREF_11398ac07324 as IORINGHANDLEREF}
+
+pub using @3633021c678f0cc3 {type IORINGINFO_d071c2b71ee0 as IORINGINFO}
+
+pub using @3633021c678f0cc3 {type IORINGOPCODE_80dbbfaafacc as IORINGOPCODE}
+
+pub using @3633021c678f0cc3 {type IORINGREFKIND_710524f34d14 as IORINGREFKIND}
+
+pub using @3633021c678f0cc3 {type IORINGREGISTEREDBUFFER_807d34352d84 as IORINGREGISTEREDBUFFER}
+
+pub using @3633021c678f0cc3 {type IORINGSQEFLAGS_60a29eb988d4 as IORINGSQEFLAGS}
+
+pub using @3633021c678f0cc3 {type IORINGVERSION_a80644ec8dbc as IORINGVERSION}
+
+pub using @3633021c678f0cc3 {type InfoEUnion_40f4dfe064fb as InfoEUnion_40f4dfe064}
+
+pub using @3633021c678f0cc3 {type InfoEUnion_720e13e12d06 as InfoEUnion_720e13e12d}
+
+pub using @3633021c678f0cc3 {type InfoEUnion_77d3d5b01d8b as InfoEUnion_77d3d5b01d}
+
+pub using @3633021c678f0cc3 {type InfoEUnion_c7a53bc32847 as InfoEUnion_c7a53bc328}
+
+pub using @3633021c678f0cc3 {type InfoEUnion_d28dbcf23f75 as InfoEUnion_d28dbcf23f}
+
+pub using @3633021c678f0cc3 {type KCRMMARSHALHEADER_4e465abe60b2 as KCRMMARSHALHEADER}
+
+pub using @3633021c678f0cc3 {type KCRMPROTOCOLBLOB_f0f72bd3852f as KCRMPROTOCOLBLOB}
+
+pub using @3633021c678f0cc3 {type KCRMTRANSACTIONBLOB_412d928b5314 as KCRMTRANSACTIONBLOB}
+
+pub using @3633021c678f0cc3 {type LOCKFILEFLAGS_678fe2741796 as LOCKFILEFLAGS}
+
+pub using @3633021c678f0cc3 {type LOGMANAGEMENTCALLBACKS_c66d304b373e as LOGMANAGEMENTCALLBACKS}
+
+pub using @3633021c678f0cc3 {type LPPROGRESSROUTINE_b8d8f632ea9c as LPPROGRESSROUTINE}
+
+pub using @3633021c678f0cc3 {type LPPROGRESSROUTINECALLBACKREASON_16bd42539a60 as LPPROGRESSROUTINECALLBACKREASON}
+
+pub using @3633021c678f0cc3 {type LZOPENFILESTYLE_5a675ac5796b as LZOPENFILESTYLE}
+
+pub using @3633021c678f0cc3 {type LogTailEStruct_9006313aa77e as LogTailEStruct}
+
+pub using @3633021c678f0cc3 {type MAXMEDIALABEL_3e118c7ed6a5 as MAXMEDIALABEL}
+
+pub using @3633021c678f0cc3 {type MOVEFILEFLAGS_e2e8c95b619e as MOVEFILEFLAGS}
+
+pub using @3633021c678f0cc3 {type MaximumSizeEStruct_39d9db4b5012 as MaximumSizeEStruct}
+
+pub using @3633021c678f0cc3 {type MediaLabelInfo_730cc570fd0f as MediaLabelInfo}
+
+pub using @3633021c678f0cc3 {type MinimumSizeEStruct_935902b337bf as MinimumSizeEStruct}
+
+pub using @3633021c678f0cc3 {type NAMECACHECONTEXT_7726a136b962 as NAMECACHECONTEXT}
+
+pub using @3633021c678f0cc3 {type NTMSALLOCATIONINFORMATION_8305fc4b5ff6 as NTMSALLOCATIONINFORMATION}
+
+pub using @3633021c678f0cc3 {type NTMSASYNCIO_5c1553352abb as NTMSASYNCIO}
+
+pub using @3633021c678f0cc3 {type NTMSCHANGERINFORMATIONA_3f20e0d57e8d as NTMSCHANGERINFORMATIONA}
+
+pub using @3633021c678f0cc3 {type NTMSCHANGERINFORMATIONW_1ad535cb3fcf as NTMSCHANGERINFORMATIONW}
+
+pub using @3633021c678f0cc3 {type NTMSCHANGERTYPEINFORMATIONA_5a5f4f5cb039 as NTMSCHANGERTYPEINFORMATIONA}
+
+pub using @3633021c678f0cc3 {type NTMSCHANGERTYPEINFORMATIONW_aa0c19b07837 as NTMSCHANGERTYPEINFORMATIONW}
+
+pub using @3633021c678f0cc3 {type NTMSCOMPUTERINFORMATION_8fc5e6189f97 as NTMSCOMPUTERINFORMATION}
+
+pub using @3633021c678f0cc3 {type NTMSDRIVEINFORMATIONA_fba8c390e930 as NTMSDRIVEINFORMATIONA}
+
+pub using @3633021c678f0cc3 {type NTMSDRIVEINFORMATIONW_af64ec5a1705 as NTMSDRIVEINFORMATIONW}
+
+pub using @3633021c678f0cc3 {type NTMSDRIVETYPEINFORMATIONA_4ef4f32ad8c7 as NTMSDRIVETYPEINFORMATIONA}
+
+pub using @3633021c678f0cc3 {type NTMSDRIVETYPEINFORMATIONW_58a0e56cd8d2 as NTMSDRIVETYPEINFORMATIONW}
+
+pub using @3633021c678f0cc3 {type NTMSFILESYSTEMINFO_2dbd7107d7e1 as NTMSFILESYSTEMINFO}
+
+pub using @3633021c678f0cc3 {type NTMSI1LIBRARYINFORMATION_bad5a25cac0f as NTMSI1LIBRARYINFORMATION}
+
+pub using @3633021c678f0cc3 {type NTMSI1LIBREQUESTINFORMATIONA_1b63c2ab86eb as NTMSI1LIBREQUESTINFORMATIONA}
+
+pub using @3633021c678f0cc3 {type NTMSI1LIBREQUESTINFORMATIONW_0067e02ace84 as NTMSI1LIBREQUESTINFORMATIONW}
+
+pub using @3633021c678f0cc3 {type NTMSI1OBJECTINFORMATIONA_012ac3fa6834 as NTMSI1OBJECTINFORMATIONA}
+
+pub using @3633021c678f0cc3 {type NTMSI1OBJECTINFORMATIONW_474164424e06 as NTMSI1OBJECTINFORMATIONW}
+
+pub using @3633021c678f0cc3 {type NTMSI1OPREQUESTINFORMATIONA_deabd0a92187 as NTMSI1OPREQUESTINFORMATIONA}
+
+pub using @3633021c678f0cc3 {type NTMSI1OPREQUESTINFORMATIONW_d0d88b3549f2 as NTMSI1OPREQUESTINFORMATIONW}
+
+pub using @3633021c678f0cc3 {type NTMSI1PARTITIONINFORMATIONA_885ff6393c46 as NTMSI1PARTITIONINFORMATIONA}
+
+pub using @3633021c678f0cc3 {type NTMSI1PARTITIONINFORMATIONW_3c9d00dc92d1 as NTMSI1PARTITIONINFORMATIONW}
+
+pub using @3633021c678f0cc3 {type NTMSI1PMIDINFORMATIONA_7449b17edc3f as NTMSI1PMIDINFORMATIONA}
+
+pub using @3633021c678f0cc3 {type NTMSI1PMIDINFORMATIONW_71fdd5e27f59 as NTMSI1PMIDINFORMATIONW}
+
+pub using @3633021c678f0cc3 {type NTMSIEDOORINFORMATION_7e8c1ca95ae4 as NTMSIEDOORINFORMATION}
+
+pub using @3633021c678f0cc3 {type NTMSIEPORTINFORMATION_1a66d7d33981 as NTMSIEPORTINFORMATION}
+
+pub using @3633021c678f0cc3 {type NTMSLIBRARYINFORMATION_cd72930cf150 as NTMSLIBRARYINFORMATION}
+
+pub using @3633021c678f0cc3 {type NTMSLIBREQUESTINFORMATIONA_80c32a2a6f2c as NTMSLIBREQUESTINFORMATIONA}
+
+pub using @3633021c678f0cc3 {type NTMSLIBREQUESTINFORMATIONW_3ac97c18f641 as NTMSLIBREQUESTINFORMATIONW}
+
+pub using @3633021c678f0cc3 {type NTMSLMIDINFORMATION_03d8d293aa3c as NTMSLMIDINFORMATION}
+
+pub using @3633021c678f0cc3 {type NTMSMEDIAPOOLINFORMATION_d434934dd278 as NTMSMEDIAPOOLINFORMATION}
+
+pub using @3633021c678f0cc3 {type NTMSMEDIATYPEINFORMATION_c513d6211d14 as NTMSMEDIATYPEINFORMATION}
+
+pub using @3633021c678f0cc3 {type NTMSMOUNTINFORMATION_2d11186b66ec as NTMSMOUNTINFORMATION}
+
+pub using @3633021c678f0cc3 {type NTMSNOTIFICATIONINFORMATION_3f3ed9be4d30 as NTMSNOTIFICATIONINFORMATION}
+
+pub using @3633021c678f0cc3 {type NTMSOBJECTINFORMATIONA_82382818d3b1 as NTMSOBJECTINFORMATIONA}
+
+pub using @3633021c678f0cc3 {type NTMSOBJECTINFORMATIONW_f1918358bff1 as NTMSOBJECTINFORMATIONW}
+
+pub using @3633021c678f0cc3 {type NTMSOMIDTYPE_8df0c9b6fb1c as NTMSOMIDTYPE}
+
+pub using @3633021c678f0cc3 {type NTMSOPREQUESTINFORMATIONA_7c17d868ce34 as NTMSOPREQUESTINFORMATIONA}
+
+pub using @3633021c678f0cc3 {type NTMSOPREQUESTINFORMATIONW_1c1d0dc2a6e7 as NTMSOPREQUESTINFORMATIONW}
+
+pub using @3633021c678f0cc3 {type NTMSPARTITIONINFORMATIONA_9cf1e287f8d0 as NTMSPARTITIONINFORMATIONA}
+
+pub using @3633021c678f0cc3 {type NTMSPARTITIONINFORMATIONW_ebf02eb37a2d as NTMSPARTITIONINFORMATIONW}
+
+pub using @3633021c678f0cc3 {type NTMSPMIDINFORMATIONA_057170fa6abe as NTMSPMIDINFORMATIONA}
+
+pub using @3633021c678f0cc3 {type NTMSPMIDINFORMATIONW_b3cfe4efe3cd as NTMSPMIDINFORMATIONW}
+
+pub using @3633021c678f0cc3 {type NTMSSTORAGESLOTINFORMATION_76b5066c1493 as NTMSSTORAGESLOTINFORMATION}
+
+pub using @3633021c678f0cc3 {type NewContainerExtensionEStruct_8f82de797381 as NewContainerExtensionEStruct}
+
+pub using @3633021c678f0cc3 {type NewContainerPrefixEStruct_189d6192cae2 as NewContainerPrefixEStruct}
+
+pub using @3633021c678f0cc3 {type NewContainerSizeEStruct_5d1b1cc4c023 as NewContainerSizeEStruct}
+
+pub using @3633021c678f0cc3 {type NewContainerSuffixEStruct_8002dabb5d77 as NewContainerSuffixEStruct}
+
+pub using @3633021c678f0cc3 {type NtmsAccessMask_aa3a71cab9a2 as NtmsAccessMask}
+
+pub using @3633021c678f0cc3 {type NtmsAllocateOptions_2b5d53ab10bb as NtmsAllocateOptions}
+
+pub using @3633021c678f0cc3 {type NtmsAllocationPolicy_fdfbeef183e9 as NtmsAllocationPolicy}
+
+pub using @3633021c678f0cc3 {type NtmsAsyncOperations_e446ce1ffdba as NtmsAsyncOperations}
+
+pub using @3633021c678f0cc3 {type NtmsAsyncStatus_bc088bc3f8d2 as NtmsAsyncStatus}
+
+pub using @3633021c678f0cc3 {type NtmsBarCodeState_b38b1959c57b as NtmsBarCodeState}
+
+pub using @3633021c678f0cc3 {type NtmsCreateNtmsMediaOptions_710e90d6a016 as NtmsCreateNtmsMediaOptions}
+
+pub using @3633021c678f0cc3 {type NtmsCreateOptions_376a6c257952 as NtmsCreateOptions}
+
+pub using @3633021c678f0cc3 {type NtmsDeallocationPolicy_0b35961f56a0 as NtmsDeallocationPolicy}
+
+pub using @3633021c678f0cc3 {type NtmsDismountOptions_39ff3545f8a6 as NtmsDismountOptions}
+
+pub using @3633021c678f0cc3 {type NtmsDoorState_cdd162e23a5c as NtmsDoorState}
+
+pub using @3633021c678f0cc3 {type NtmsDriveState_2c4e03537ded as NtmsDriveState}
+
+pub using @3633021c678f0cc3 {type NtmsDriveType_1332a755f303 as NtmsDriveType}
+
+pub using @3633021c678f0cc3 {type NtmsEjectOperation_1e383c1f6b4b as NtmsEjectOperation}
+
+pub using @3633021c678f0cc3 {type NtmsEnumerateOption_a1e6dfee3d55 as NtmsEnumerateOption}
+
+pub using @3633021c678f0cc3 {type NtmsInjectOperation_83eea9ba5f4a as NtmsInjectOperation}
+
+pub using @3633021c678f0cc3 {type NtmsInventoryMethod_84234cbdee1e as NtmsInventoryMethod}
+
+pub using @3633021c678f0cc3 {type NtmsLibRequestFlags_07f14177a5b2 as NtmsLibRequestFlags}
+
+pub using @3633021c678f0cc3 {type NtmsLibraryFlags_f3b5743f241c as NtmsLibraryFlags}
+
+pub using @3633021c678f0cc3 {type NtmsLibraryType_8247c8644f3e as NtmsLibraryType}
+
+pub using @3633021c678f0cc3 {type NtmsLmOperation_bb9c312d5182 as NtmsLmOperation}
+
+pub using @3633021c678f0cc3 {type NtmsLmState_d56d3e9ed745 as NtmsLmState}
+
+pub using @3633021c678f0cc3 {type NtmsMediaPoolPolicy_ac6e5f46e800 as NtmsMediaPoolPolicy}
+
+pub using @3633021c678f0cc3 {type NtmsMediaState_d7e6e925e310 as NtmsMediaState}
+
+pub using @3633021c678f0cc3 {type NtmsMountOptions_ccc448021171 as NtmsMountOptions}
+
+pub using @3633021c678f0cc3 {type NtmsMountPriority_9496c1a4ec34 as NtmsMountPriority}
+
+pub using @3633021c678f0cc3 {type NtmsNotificationOperations_572725792394 as NtmsNotificationOperations}
+
+pub using @3633021c678f0cc3 {type NtmsObjectsTypes_ad492a1a4e0e as NtmsObjectsTypes}
+
+pub using @3633021c678f0cc3 {type NtmsOpRequestFlags_f5bc48b64e37 as NtmsOpRequestFlags}
+
+pub using @3633021c678f0cc3 {type NtmsOperationalState_ee4b7a3e4295 as NtmsOperationalState}
+
+pub using @3633021c678f0cc3 {type NtmsOpreqCommand_42bd14da1007 as NtmsOpreqCommand}
+
+pub using @3633021c678f0cc3 {type NtmsOpreqState_fe319db66a4a as NtmsOpreqState}
+
+pub using @3633021c678f0cc3 {type NtmsPartitionState_620b52aa082e as NtmsPartitionState}
+
+pub using @3633021c678f0cc3 {type NtmsPoolType_1b4eacb98521 as NtmsPoolType}
+
+pub using @3633021c678f0cc3 {type NtmsPortContent_ef4c88638cb0 as NtmsPortContent}
+
+pub using @3633021c678f0cc3 {type NtmsPortPosition_66581b2d28d9 as NtmsPortPosition}
+
+pub using @3633021c678f0cc3 {type NtmsReadWriteCharacteristics_81c29eb9bafd as NtmsReadWriteCharacteristics}
+
+pub using @3633021c678f0cc3 {type NtmsSessionOptions_6e3cc75a1fe4 as NtmsSessionOptions}
+
+pub using @3633021c678f0cc3 {type NtmsSlotState_4cc74364c1e6 as NtmsSlotState}
+
+pub using @3633021c678f0cc3 {type NtmsUIOperations_675b15d12d76 as NtmsUIOperations}
+
+pub using @3633021c678f0cc3 {type NtmsUITypes_b49550849151 as NtmsUITypes}
+
+pub using @3633021c678f0cc3 {type OFSTRUCT_4681698dd039 as OFSTRUCT}
+
+pub using @3633021c678f0cc3 {type PCLFSCOMPLETIONROUTINE_26ea5b0ba6e8 as PCLFSCOMPLETIONROUTINE}
+
+pub using @3633021c678f0cc3 {type PCOPYFILE2PROGRESSROUTINE_15c8e7f6f025 as PCOPYFILE2PROGRESSROUTINE}
+
+pub using @3633021c678f0cc3 {type PFEEXPORTFUNC_495225e9f8b4 as PFEEXPORTFUNC}
+
+pub using @3633021c678f0cc3 {type PFEIMPORTFUNC_049d6188d0a5 as PFEIMPORTFUNC}
+
+pub using @3633021c678f0cc3 {type PFNIOCOMPLETION_cf1e8dda515c as PFNIOCOMPLETION}
+
+pub using @3633021c678f0cc3 {type PLOGFULLHANDLERCALLBACK_ab68b4d714de as PLOGFULLHANDLERCALLBACK}
+
+pub using @3633021c678f0cc3 {type PLOGTAILADVANCECALLBACK_c79bd1a5aa4c as PLOGTAILADVANCECALLBACK}
+
+pub using @3633021c678f0cc3 {type PLOGUNPINNEDCALLBACK_9537f859fd46 as PLOGUNPINNEDCALLBACK}
+
+pub using @3633021c678f0cc3 {type PREPARETAPEOPERATION_b8cfd2b122f3 as PREPARETAPEOPERATION}
+
+pub using @3633021c678f0cc3 {type PRIORITYHINT_0679ea1c8f49 as PRIORITYHINT}
+
+pub using @3633021c678f0cc3 {type PolicyParametersEUnion_e269257083ea as PolicyParametersEUnion}
+
+pub using @3633021c678f0cc3 {type PollContinueEStruct_8b951249d387 as PollContinueEStruct}
+
+pub using @3633021c678f0cc3 {type ProtocolSpecificEUnion_5f0153c776d0 as ProtocolSpecificEUnion}
+
+pub using @3633021c678f0cc3 {type READDIRECTORYNOTIFYINFORMATIONCLASS_3048141ae7c9 as READDIRECTORYNOTIFYINFORMATIONCLASS}
+
+pub using @3633021c678f0cc3 {type REPARSEGUIDDATABUFFER_559cb690f79e as REPARSEGUIDDATABUFFER}
+
+pub using @3633021c678f0cc3 {type REPLACEFILEFLAGS_cd4bac422466 as REPLACEFILEFLAGS}
+
+pub using @3633021c678f0cc3 {type SERVERALIASINFO0_f1461c0eb931 as SERVERALIASINFO0}
+
+pub using @3633021c678f0cc3 {type SESSIONINFO0_bfc36eea4944 as SESSIONINFO0}
+
+pub using @3633021c678f0cc3 {type SESSIONINFO1_f359334d5d4d as SESSIONINFO1}
+
+pub using @3633021c678f0cc3 {type SESSIONINFO10_1b95b2eaf650 as SESSIONINFO10}
+
+pub using @3633021c678f0cc3 {type SESSIONINFO2_24577635251d as SESSIONINFO2}
+
+pub using @3633021c678f0cc3 {type SESSIONINFO502_889d616c3b21 as SESSIONINFO502}
+
+pub using @3633021c678f0cc3 {type SESSIONINFOUSERFLAGS_61c0a7f97894 as SESSIONINFOUSERFLAGS}
+
+pub using @3633021c678f0cc3 {type SETFILEPOINTERMOVEMETHOD_7d312b2faefd as SETFILEPOINTERMOVEMETHOD}
+
+pub using @3633021c678f0cc3 {type SHAREINFO0_cd2c64f627bd as SHAREINFO0}
+
+pub using @3633021c678f0cc3 {type SHAREINFO1_152eb49f903c as SHAREINFO1}
+
+pub using @3633021c678f0cc3 {type SHAREINFO1004_f8b99b231a2f as SHAREINFO1004}
+
+pub using @3633021c678f0cc3 {type SHAREINFO1005_39434762925f as SHAREINFO1005}
+
+pub using @3633021c678f0cc3 {type SHAREINFO1006_3e26192d812e as SHAREINFO1006}
+
+pub using @3633021c678f0cc3 {type SHAREINFO1501_29ba22b3fe36 as SHAREINFO1501}
+
+pub using @3633021c678f0cc3 {type SHAREINFO1503_f6b5fa6e7bc4 as SHAREINFO1503}
+
+pub using @3633021c678f0cc3 {type SHAREINFO2_6c4080832f63 as SHAREINFO2}
+
+pub using @3633021c678f0cc3 {type SHAREINFO501_89bb5849ac3a as SHAREINFO501}
+
+pub using @3633021c678f0cc3 {type SHAREINFO502_a695a61e0cab as SHAREINFO502}
+
+pub using @3633021c678f0cc3 {type SHAREINFO503_78fb037cc316 as SHAREINFO503}
+
+pub using @3633021c678f0cc3 {type SHAREINFOPERMISSIONS_e38a71be1356 as SHAREINFOPERMISSIONS}
+
+pub using @3633021c678f0cc3 {type SHARETYPE_914bdc265243 as SHARETYPE}
+
+pub using @3633021c678f0cc3 {type STATSERVER0_2dead63a3d09 as STATSERVER0}
+
+pub using @3633021c678f0cc3 {type STATWORKSTATION0_ead94b28d561 as STATWORKSTATION0}
+
+pub using @3633021c678f0cc3 {type STORAGEBUSTYPE_9234607ac26a as STORAGEBUSTYPE}
+
+pub using @3633021c678f0cc3 {type STREAMINFOLEVELS_8d0944835fb1 as STREAMINFOLEVELS}
+
+pub using @3633021c678f0cc3 {type SYMBOLICLINKFLAGS_5114a175bd66 as SYMBOLICLINKFLAGS}
+
+pub using @3633021c678f0cc3 {type ServerEStruct_212ae763aeae as ServerEStruct}
+
+pub using @3633021c678f0cc3 {type ShareEStruct_802f24e52347 as ShareEStruct}
+
+pub using @3633021c678f0cc3 {type Smb2EStruct_e88bd56287b3 as Smb2EStruct}
+
+pub using @3633021c678f0cc3 {type StreamFinishedEStruct_82e40b5dea57 as StreamFinishedEStruct}
+
+pub using @3633021c678f0cc3 {type StreamStartedEStruct_c50097bd756b as StreamStartedEStruct}
+
+pub using @3633021c678f0cc3 {type TAPEERASE_fe5a65ab47f2 as TAPEERASE}
+
+pub using @3633021c678f0cc3 {type TAPEGETPOSITION_70fbd3a564dd as TAPEGETPOSITION}
+
+pub using @3633021c678f0cc3 {type TAPEINFORMATIONTYPE_9e7f00ad6939 as TAPEINFORMATIONTYPE}
+
+pub using @3633021c678f0cc3 {type TAPEMARKTYPE_a5f19b0f7903 as TAPEMARKTYPE}
+
+pub using @3633021c678f0cc3 {type TAPEPOSITIONMETHOD_34fca8cb24bf as TAPEPOSITIONMETHOD}
+
+pub using @3633021c678f0cc3 {type TAPEPOSITIONTYPE_75262a895b00 as TAPEPOSITIONTYPE}
+
+pub using @3633021c678f0cc3 {type TAPEPREPARE_c20c41bc366a as TAPEPREPARE}
+
+pub using @3633021c678f0cc3 {type TAPESETPOSITION_039cc7793210 as TAPESETPOSITION}
+
+pub using @3633021c678f0cc3 {type TAPEWRITEMARKS_df17df1cd73a as TAPEWRITEMARKS}
+
+pub using @3633021c678f0cc3 {type TRANSACTIONNOTIFICATION_49ff33751024 as TRANSACTIONNOTIFICATION}
+
+pub using @3633021c678f0cc3 {type TRANSACTIONNOTIFICATIONMARSHALARGUMENT_565096098a13 as TRANSACTIONNOTIFICATIONMARSHALARGUMENT}
+
+pub using @3633021c678f0cc3 {type TRANSACTIONNOTIFICATIONPROPAGATEARGUMENT_15d030737607 as TRANSACTIONNOTIFICATIONPROPAGATEARGUMENT}
+
+pub using @3633021c678f0cc3 {type TRANSACTIONNOTIFICATIONRECOVERYARGUMENT_06e36524ffe8 as TRANSACTIONNOTIFICATIONRECOVERYARGUMENT}
+
+pub using @3633021c678f0cc3 {type TRANSACTIONNOTIFICATIONSAVEPOINTARGUMENT_b7ad8f6dd51a as TRANSACTIONNOTIFICATIONSAVEPOINTARGUMENT}
+
+pub using @3633021c678f0cc3 {type TRANSACTIONNOTIFICATIONTMONLINEARGUMENT_decf80b100d7 as TRANSACTIONNOTIFICATIONTMONLINEARGUMENT}
+
+pub using @3633021c678f0cc3 {type TRANSACTIONOUTCOME_fe5193966bd4 as TRANSACTIONOUTCOME}
+
+pub using @3633021c678f0cc3 {type TXFID_5ea90e81168b as TXFID}
+
+pub using @3633021c678f0cc3 {type TXFLOGRECORDAFFECTEDFILE_e362b21227da as TXFLOGRECORDAFFECTEDFILE}
+
+pub using @3633021c678f0cc3 {type TXFLOGRECORDBASE_d66668883f6e as TXFLOGRECORDBASE}
+
+pub using @3633021c678f0cc3 {type TXFLOGRECORDTRUNCATE_a9b0f994b3a4 as TXFLOGRECORDTRUNCATE}
+
+pub using @3633021c678f0cc3 {type TXFLOGRECORDTYPE_e206ecda8f59 as TXFLOGRECORDTYPE}
+
+pub using @3633021c678f0cc3 {type TXFLOGRECORDWRITE_b1dec123d489 as TXFLOGRECORDWRITE}
+
+pub using @3633021c678f0cc3 {type TXFSMINIVERSION_bd0c35f58da5 as TXFSMINIVERSION}
+
+pub using @3633021c678f0cc3 {type VERFINDFILEFLAGS_269ac0b1c108 as VERFINDFILEFLAGS}
+
+pub using @3633021c678f0cc3 {type VERFINDFILESTATUS_cfe2537677be as VERFINDFILESTATUS}
+
+pub using @3633021c678f0cc3 {type VERINSTALLFILEFLAGS_46904c63710f as VERINSTALLFILEFLAGS}
+
+pub using @3633021c678f0cc3 {type VERINSTALLFILESTATUS_cc6ca80470a1 as VERINSTALLFILESTATUS}
+
+pub using @3633021c678f0cc3 {type VOLUMEALLOCATEBCSTREAMINPUT_ede5f5dfe275 as VOLUMEALLOCATEBCSTREAMINPUT}
+
+pub using @3633021c678f0cc3 {type VOLUMEALLOCATEBCSTREAMOUTPUT_79de45c2c229 as VOLUMEALLOCATEBCSTREAMOUTPUT}
+
+pub using @3633021c678f0cc3 {type VOLUMEALLOCATIONHINTINPUT_f324163abd85 as VOLUMEALLOCATIONHINTINPUT}
+
+pub using @3633021c678f0cc3 {type VOLUMEALLOCATIONHINTOUTPUT_334ba780bb67 as VOLUMEALLOCATIONHINTOUTPUT}
+
+pub using @3633021c678f0cc3 {type VOLUMECRITICALIO_8da55e54e98e as VOLUMECRITICALIO}
+
+pub using @3633021c678f0cc3 {type VOLUMEFAILOVERSET_fdad1e32a7ba as VOLUMEFAILOVERSET}
+
+pub using @3633021c678f0cc3 {type VOLUMEGETBCPROPERTIESINPUT_b2b7b4611ec4 as VOLUMEGETBCPROPERTIESINPUT}
+
+pub using @3633021c678f0cc3 {type VOLUMEGETBCPROPERTIESOUTPUT_a067204d21f3 as VOLUMEGETBCPROPERTIESOUTPUT}
+
+pub using @3633021c678f0cc3 {type VOLUMELOGICALOFFSET_29cf33584b99 as VOLUMELOGICALOFFSET}
+
+pub using @3633021c678f0cc3 {type VOLUMENUMBER_e9d72d57053a as VOLUMENUMBER}
+
+pub using @3633021c678f0cc3 {type VOLUMEPHYSICALOFFSET_28b9f06afd1a as VOLUMEPHYSICALOFFSET}
+
+pub using @3633021c678f0cc3 {type VOLUMEPHYSICALOFFSETS_e7b1f233eb50 as VOLUMEPHYSICALOFFSETS}
+
+pub using @3633021c678f0cc3 {type VOLUMEREADPLEXINPUT_8ff79e839c7c as VOLUMEREADPLEXINPUT}
+
+pub using @3633021c678f0cc3 {type VOLUMESETGPTATTRIBUTESINFORMATION_7190507115b9 as VOLUMESETGPTATTRIBUTESINFORMATION}
+
+pub using @3633021c678f0cc3 {type VOLUMESHRINKINFO_7462ba197f45 as VOLUMESHRINKINFO}
+
+pub using @3633021c678f0cc3 {type VSFIXEDFILEINFO_a4126cbdf960 as VSFIXEDFILEINFO}
+
+pub using @3633021c678f0cc3 {type VSFIXEDFILEINFOFILEFLAGS_2e77a3b8b36f as VSFIXEDFILEINFOFILEFLAGS}
+
+pub using @3633021c678f0cc3 {type VSFIXEDFILEINFOFILEOS_b3f7b19b6312 as VSFIXEDFILEINFOFILEOS}
+
+pub using @3633021c678f0cc3 {type VSFIXEDFILEINFOFILESUBTYPE_3fd22786606b as VSFIXEDFILEINFOFILESUBTYPE}
+
+pub using @3633021c678f0cc3 {type VSFIXEDFILEINFOFILETYPE_2c4a58290927 as VSFIXEDFILEINFOFILETYPE}
+
+pub using @3633021c678f0cc3 {type WIMENTRYINFO_dd75ea2400d6 as WIMENTRYINFO}
+
+pub using @3633021c678f0cc3 {type WIMEXTERNALFILEINFO_7dce3c7e9ed9 as WIMEXTERNALFILEINFO}
+
+pub using @3633021c678f0cc3 {type WIN32FILEATTRIBUTEDATA_cf8a69ffe210 as WIN32FILEATTRIBUTEDATA}
+
+pub using @3633021c678f0cc3 {type WIN32FINDDATAA_a8682f267845 as WIN32FINDDATAA}
+
+pub using @3633021c678f0cc3 {type WIN32FINDDATAW_d1622493f815 as WIN32FINDDATAW}
+
+pub using @3633021c678f0cc3 {type WIN32FINDSTREAMDATA_fbc87db2ec88 as WIN32FINDSTREAMDATA}
+
+pub using @3633021c678f0cc3 {type WIN32STREAMID_8ae30d026b40 as WIN32STREAMID}
+
+pub using @3633021c678f0cc3 {type WINSTREAMID_b0ed986f476a as WINSTREAMID}
+
+pub using @3633021c678f0cc3 {type WOFFILECOMPRESSIONINFOV0_7f4d0df84b62 as WOFFILECOMPRESSIONINFOV0}
+
+pub using @3633021c678f0cc3 {type WOFFILECOMPRESSIONINFOV1_6bdfa3014e91 as WOFFILECOMPRESSIONINFOV1}
+
+pub using @3633021c678f0cc3 {type WofEnumEntryProc_ee165d72a487 as WofEnumEntryProc}
+
+pub using @3633021c678f0cc3 {type WofEnumFilesProc_3740e7061feb as WofEnumFilesProc}
+
+// Traits
+

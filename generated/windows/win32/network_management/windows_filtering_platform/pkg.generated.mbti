@@ -1,0 +1,2358 @@
+// Generated using `moon info`, DON'T EDIT IT
+package "moonbit-community/win32-bindings/windows/win32/network_management/windows_filtering_platform"
+
+import {
+  "moonbit-community/win32-bindings/runtime/core",
+  "moonbit-community/win32-bindings/scc/f96315895a1fe9be",
+}
+
+// Values
+pub let dl_broadcast : Int
+
+pub let dl_multicast : Int
+
+pub let dl_unicast : Int
+
+pub let fwp_action_block : UInt
+
+pub let fwp_action_callout_inspection : UInt
+
+pub let fwp_action_callout_terminating : UInt
+
+pub let fwp_action_callout_unknown : UInt
+
+pub let fwp_action_continue : UInt
+
+pub let fwp_action_flag_callout : UInt
+
+pub let fwp_action_flag_non_terminating : UInt
+
+pub let fwp_action_flag_terminating : UInt
+
+pub let fwp_action_none : UInt
+
+pub let fwp_action_none_no_match : UInt
+
+pub let fwp_action_permit : UInt
+
+pub let fwp_actrl_match_filter : UInt
+
+pub let fwp_af_ether : Int
+
+pub let fwp_af_inet : Int
+
+pub let fwp_af_inet6 : Int
+
+pub let fwp_af_none : Int
+
+pub let fwp_byte_array16_type : Int
+
+pub let fwp_byte_array6_size : UInt
+
+pub let fwp_byte_array6_type : Int
+
+pub let fwp_byte_blob_type : Int
+
+pub let fwp_bytemap_array64_size : UInt
+
+pub let fwp_callout_flag_allow_l2_batch_classify : UInt
+
+pub let fwp_callout_flag_allow_mid_stream_inspection : UInt
+
+pub let fwp_callout_flag_allow_offload : UInt
+
+pub let fwp_callout_flag_allow_reclassify : UInt
+
+pub let fwp_callout_flag_allow_rsc : UInt
+
+pub let fwp_callout_flag_allow_uro : UInt
+
+pub let fwp_callout_flag_allow_uso : UInt
+
+pub let fwp_callout_flag_conditional_on_flow : UInt
+
+pub let fwp_callout_flag_enable_commit_add_notify : UInt
+
+pub let fwp_callout_flag_reserved1 : UInt
+
+pub let fwp_callout_flag_reserved2 : UInt
+
+pub let fwp_classify_option_local_only_mapping : Int
+
+pub let fwp_classify_option_loose_source_mapping : Int
+
+pub let fwp_classify_option_max : Int
+
+pub let fwp_classify_option_mcast_bcast_lifetime : Int
+
+pub let fwp_classify_option_multicast_state : Int
+
+pub let fwp_classify_option_secure_socket_authip_mm_policy_key : Int
+
+pub let fwp_classify_option_secure_socket_authip_qm_policy_key : Int
+
+pub let fwp_classify_option_secure_socket_security_flags : Int
+
+pub let fwp_classify_option_unicast_lifetime : Int
+
+pub let fwp_condition_flag_is_appcontainer_loopback : UInt
+
+pub let fwp_condition_flag_is_auth_fw : UInt
+
+pub let fwp_condition_flag_is_connection_redirected : UInt
+
+pub let fwp_condition_flag_is_fragment : UInt
+
+pub let fwp_condition_flag_is_fragment_group : UInt
+
+pub let fwp_condition_flag_is_honoring_policy_authorize : UInt
+
+pub let fwp_condition_flag_is_implicit_bind : UInt
+
+pub let fwp_condition_flag_is_inbound_pass_thru : UInt
+
+pub let fwp_condition_flag_is_ipsec_natt_reclassify : UInt
+
+pub let fwp_condition_flag_is_ipsec_secured : UInt
+
+pub let fwp_condition_flag_is_loopback : UInt
+
+pub let fwp_condition_flag_is_name_app_specified : UInt
+
+pub let fwp_condition_flag_is_non_appcontainer_loopback : UInt
+
+pub let fwp_condition_flag_is_outbound_pass_thru : UInt
+
+pub let fwp_condition_flag_is_promiscuous : UInt
+
+pub let fwp_condition_flag_is_proxy_connection : UInt
+
+pub let fwp_condition_flag_is_raw_endpoint : UInt
+
+pub let fwp_condition_flag_is_reassembled : UInt
+
+pub let fwp_condition_flag_is_reauthorize : UInt
+
+pub let fwp_condition_flag_is_reclassify : UInt
+
+pub let fwp_condition_flag_is_reserved : UInt
+
+pub let fwp_condition_flag_is_wildcard_bind : UInt
+
+pub let fwp_condition_flag_requires_ale_classify : UInt
+
+pub let fwp_condition_l2_if_connector_present : UInt
+
+pub let fwp_condition_l2_is_ip_fragment_group : UInt
+
+pub let fwp_condition_l2_is_malformed_packet : UInt
+
+pub let fwp_condition_l2_is_mobile_broadband : UInt
+
+pub let fwp_condition_l2_is_native_ethernet : UInt
+
+pub let fwp_condition_l2_is_vm2_vm : UInt
+
+pub let fwp_condition_l2_is_wifi : UInt
+
+pub let fwp_condition_l2_is_wifi_direct_data : UInt
+
+pub let fwp_condition_reauthorize_reason_check_offload : UInt
+
+pub let fwp_condition_reauthorize_reason_classify_completion : UInt
+
+pub let fwp_condition_reauthorize_reason_edp_policy_changed : UInt
+
+pub let fwp_condition_reauthorize_reason_ipsec_properties_changed : UInt
+
+pub let fwp_condition_reauthorize_reason_mid_stream_inspection : UInt
+
+pub let fwp_condition_reauthorize_reason_new_arrival_interface : UInt
+
+pub let fwp_condition_reauthorize_reason_new_inbound_mcast_bcast_packet : UInt
+
+pub let fwp_condition_reauthorize_reason_new_nexthop_interface : UInt
+
+pub let fwp_condition_reauthorize_reason_policy_change : UInt
+
+pub let fwp_condition_reauthorize_reason_profile_crossing : UInt
+
+pub let fwp_condition_reauthorize_reason_proxy_handle_changed : UInt
+
+pub let fwp_condition_reauthorize_reason_socket_property_changed : UInt
+
+pub let fwp_condition_socket_property_flag_allow_edge_traffic : UInt
+
+pub let fwp_condition_socket_property_flag_deny_edge_traffic : UInt
+
+pub let fwp_condition_socket_property_flag_is_system_port_rpc : UInt
+
+pub let fwp_data_type_max : Int
+
+pub let fwp_direction_inbound : Int
+
+pub let fwp_direction_max : Int
+
+pub let fwp_direction_outbound : Int
+
+pub let fwp_double : Int
+
+pub let fwp_empty : Int
+
+pub let fwp_ether_encap_method_ether_v2 : Int
+
+pub let fwp_ether_encap_method_snap : Int
+
+pub let fwp_ether_encap_method_snap_w_oui_zero : Int
+
+pub let fwp_filter_enum_flag_best_terminating_match : UInt
+
+pub let fwp_filter_enum_flag_boottime_only : UInt
+
+pub let fwp_filter_enum_flag_include_boottime : UInt
+
+pub let fwp_filter_enum_flag_include_disabled : UInt
+
+pub let fwp_filter_enum_flag_reserved1 : UInt
+
+pub let fwp_filter_enum_flag_sorted : UInt
+
+pub let fwp_filter_enum_fully_contained : Int
+
+pub let fwp_filter_enum_overlapping : Int
+
+pub let fwp_filter_enum_type_max : Int
+
+pub let fwp_float : Int
+
+pub let fwp_int16 : Int
+
+pub let fwp_int32 : Int
+
+pub let fwp_int64 : Int
+
+pub let fwp_int8 : Int
+
+pub let fwp_ip_version_max : Int
+
+pub let fwp_ip_version_none : Int
+
+pub let fwp_ip_version_v4 : Int
+
+pub let fwp_ip_version_v6 : Int
+
+pub let fwp_match_equal : Int
+
+pub let fwp_match_equal_case_insensitive : Int
+
+pub let fwp_match_flags_all_set : Int
+
+pub let fwp_match_flags_any_set : Int
+
+pub let fwp_match_flags_none_set : Int
+
+pub let fwp_match_greater : Int
+
+pub let fwp_match_greater_or_equal : Int
+
+pub let fwp_match_less : Int
+
+pub let fwp_match_less_or_equal : Int
+
+pub let fwp_match_not_equal : Int
+
+pub let fwp_match_not_prefix : Int
+
+pub let fwp_match_prefix : Int
+
+pub let fwp_match_range : Int
+
+pub let fwp_match_type_max : Int
+
+pub let fwp_network_connection_policy_max : Int
+
+pub let fwp_network_connection_policy_next_hop : Int
+
+pub let fwp_network_connection_policy_next_hop_interface : Int
+
+pub let fwp_network_connection_policy_source_address : Int
+
+pub let fwp_option_value_allow_global_multicast_state : UInt
+
+pub let fwp_option_value_allow_multicast_state : UInt
+
+pub let fwp_option_value_deny_multicast_state : UInt
+
+pub let fwp_option_value_disable_local_only_mapping : UInt
+
+pub let fwp_option_value_disable_loose_source : UInt
+
+pub let fwp_option_value_enable_local_only_mapping : UInt
+
+pub let fwp_option_value_enable_loose_source : UInt
+
+pub let fwp_range_type : Int
+
+pub let fwp_security_descriptor_type : Int
+
+pub let fwp_sid : Int
+
+pub let fwp_single_data_type_max : Int
+
+pub let fwp_token_access_information_type : Int
+
+pub let fwp_token_information_type : Int
+
+pub let fwp_uint16 : Int
+
+pub let fwp_uint32 : Int
+
+pub let fwp_uint64 : Int
+
+pub let fwp_uint8 : Int
+
+pub let fwp_unicode_string_type : Int
+
+pub let fwp_v4_addr_mask : Int
+
+pub let fwp_v6_addr_mask : Int
+
+pub let fwp_v6_addr_size : UInt
+
+pub let fwp_vswitch_network_type_external : Int
+
+pub let fwp_vswitch_network_type_internal : Int
+
+pub let fwp_vswitch_network_type_private : Int
+
+pub let fwp_vswitch_network_type_unknown : Int
+
+pub let fwpm_actrl_add : UInt
+
+pub let fwpm_actrl_add_link : UInt
+
+pub let fwpm_actrl_begin_read_txn : UInt
+
+pub let fwpm_actrl_begin_write_txn : UInt
+
+pub let fwpm_actrl_classify : UInt
+
+pub let fwpm_actrl_enum : UInt
+
+pub let fwpm_actrl_open : UInt
+
+pub let fwpm_actrl_read : UInt
+
+pub let fwpm_actrl_read_stats : UInt
+
+pub let fwpm_actrl_subscribe : UInt
+
+pub let fwpm_actrl_write : UInt
+
+pub let fwpm_appc_network_capability_internet_client : Int
+
+pub let fwpm_appc_network_capability_internet_client_server : Int
+
+pub let fwpm_appc_network_capability_internet_private_network : Int
+
+pub let fwpm_auto_weight_bits : UInt
+
+pub fn fwpm_callout_add0_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn fwpm_callout_create_enum_handle0_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn fwpm_callout_delete_by_id0_raw(@core.RawAddress, UInt) -> UInt
+
+pub fn fwpm_callout_delete_by_key0_raw(@core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn fwpm_callout_destroy_enum_handle0_raw(@core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn fwpm_callout_enum0_raw(@core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub let fwpm_callout_flag_persistent : UInt
+
+pub let fwpm_callout_flag_registered : UInt
+
+pub let fwpm_callout_flag_uses_provider_context : UInt
+
+pub fn fwpm_callout_get_by_id0_raw(@core.RawAddress, UInt, @core.RawAddress) -> UInt
+
+pub fn fwpm_callout_get_by_key0_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn fwpm_callout_get_security_info_by_key0_raw(@core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn fwpm_callout_set_security_info_by_key0_raw(@core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn fwpm_callout_subscribe_changes0_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn fwpm_callout_subscriptions_get0_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn fwpm_callout_unsubscribe_changes0_raw(@core.RawAddress, @core.RawAddress) -> UInt
+
+pub let fwpm_change_add : Int
+
+pub let fwpm_change_delete : Int
+
+pub let fwpm_change_type_max : Int
+
+pub let fwpm_classify_options_context : Int
+
+pub fn fwpm_connection_create_enum_handle0_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn fwpm_connection_destroy_enum_handle0_raw(@core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn fwpm_connection_enum0_raw(@core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub let fwpm_connection_enum_flag_query_bytes_transferred : UInt
+
+pub let fwpm_connection_event_add : Int
+
+pub let fwpm_connection_event_delete : Int
+
+pub let fwpm_connection_event_max : Int
+
+pub fn fwpm_connection_get_by_id0_raw(@core.RawAddress, UInt64, @core.RawAddress) -> UInt
+
+pub fn fwpm_connection_get_security_info0_raw(@core.RawAddress, UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn fwpm_connection_policy_add0_raw(@core.RawAddress, @core.RawAddress, Int, UInt64, UInt, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn fwpm_connection_policy_delete_by_key0_raw(@core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn fwpm_connection_set_security_info0_raw(@core.RawAddress, UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn fwpm_connection_subscribe0_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn fwpm_connection_unsubscribe0_raw(@core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn fwpm_dynamic_keyword_subscribe0_raw(UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn fwpm_dynamic_keyword_unsubscribe0_raw(@core.RawAddress) -> UInt
+
+pub fn fwpm_engine_close0_raw(@core.RawAddress) -> UInt
+
+pub let fwpm_engine_collect_net_events : Int
+
+pub fn fwpm_engine_get_option0_raw(@core.RawAddress, Int, @core.RawAddress) -> UInt
+
+pub fn fwpm_engine_get_security_info0_raw(@core.RawAddress, UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub let fwpm_engine_monitor_ipsec_connections : Int
+
+pub let fwpm_engine_name_cache : Int
+
+pub let fwpm_engine_net_event_match_any_keywords : Int
+
+pub fn fwpm_engine_open0_raw(@core.RawAddress, UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub let fwpm_engine_option_max : Int
+
+pub let fwpm_engine_option_packet_batch_inbound : UInt
+
+pub let fwpm_engine_option_packet_queue_forward : UInt
+
+pub let fwpm_engine_option_packet_queue_inbound : UInt
+
+pub let fwpm_engine_option_packet_queue_none : UInt
+
+pub let fwpm_engine_packet_queuing : Int
+
+pub fn fwpm_engine_set_option0_raw(@core.RawAddress, Int, @core.RawAddress) -> UInt
+
+pub fn fwpm_engine_set_security_info0_raw(@core.RawAddress, UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub let fwpm_engine_txn_watchdog_timeout_in_msec : Int
+
+pub let fwpm_field_flags : Int
+
+pub let fwpm_field_ip_address : Int
+
+pub let fwpm_field_raw_data : Int
+
+pub let fwpm_field_type_max : Int
+
+pub fn fwpm_filter_add0_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn fwpm_filter_create_enum_handle0_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn fwpm_filter_delete_by_id0_raw(@core.RawAddress, UInt64) -> UInt
+
+pub fn fwpm_filter_delete_by_key0_raw(@core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn fwpm_filter_destroy_enum_handle0_raw(@core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn fwpm_filter_enum0_raw(@core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub let fwpm_filter_flag_boottime : UInt
+
+pub let fwpm_filter_flag_clear_action_right : UInt
+
+pub let fwpm_filter_flag_disabled : UInt
+
+pub let fwpm_filter_flag_gameos_only : UInt
+
+pub let fwpm_filter_flag_has_provider_context : UInt
+
+pub let fwpm_filter_flag_has_security_realm_provider_context : UInt
+
+pub let fwpm_filter_flag_indexed : UInt
+
+pub let fwpm_filter_flag_ipsec_no_acquire_initiate : UInt
+
+pub let fwpm_filter_flag_none : UInt
+
+pub let fwpm_filter_flag_permit_if_callout_unregistered : UInt
+
+pub let fwpm_filter_flag_persistent : UInt
+
+pub let fwpm_filter_flag_reserved0 : UInt
+
+pub let fwpm_filter_flag_reserved1 : UInt
+
+pub let fwpm_filter_flag_reserved2 : UInt
+
+pub let fwpm_filter_flag_silent_mode : UInt
+
+pub let fwpm_filter_flag_systemos_only : UInt
+
+pub fn fwpm_filter_get_by_id0_raw(@core.RawAddress, UInt64, @core.RawAddress) -> UInt
+
+pub fn fwpm_filter_get_by_key0_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn fwpm_filter_get_security_info_by_key0_raw(@core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn fwpm_filter_set_security_info_by_key0_raw(@core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn fwpm_filter_subscribe_changes0_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn fwpm_filter_subscriptions_get0_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn fwpm_filter_unsubscribe_changes0_raw(@core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn fwpm_free_memory0_raw(@core.RawAddress) -> Unit
+
+pub let fwpm_general_context : Int
+
+pub fn fwpm_get_app_id_from_file_name0_raw(@core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn fwpm_i_psec_tunnel_add0_raw(@core.RawAddress, UInt, @core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn fwpm_i_psec_tunnel_add1_raw(@core.RawAddress, UInt, @core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn fwpm_i_psec_tunnel_add2_raw(@core.RawAddress, UInt, @core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn fwpm_i_psec_tunnel_add3_raw(@core.RawAddress, UInt, @core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn fwpm_i_psec_tunnel_delete_by_key0_raw(@core.RawAddress, @core.RawAddress) -> UInt
+
+pub let fwpm_ipsec_authip_mm_context : Int
+
+pub let fwpm_ipsec_authip_qm_transport_context : Int
+
+pub let fwpm_ipsec_authip_qm_tunnel_context : Int
+
+pub let fwpm_ipsec_dosp_context : Int
+
+pub let fwpm_ipsec_ike_mm_context : Int
+
+pub let fwpm_ipsec_ike_qm_transport_context : Int
+
+pub let fwpm_ipsec_ike_qm_tunnel_context : Int
+
+pub let fwpm_ipsec_ikev2_mm_context : Int
+
+pub let fwpm_ipsec_ikev2_qm_transport_context : Int
+
+pub let fwpm_ipsec_ikev2_qm_tunnel_context : Int
+
+pub let fwpm_ipsec_keying_context : Int
+
+pub fn fwpm_layer_create_enum_handle0_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn fwpm_layer_destroy_enum_handle0_raw(@core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn fwpm_layer_enum0_raw(@core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub let fwpm_layer_flag_buffered : UInt
+
+pub let fwpm_layer_flag_builtin : UInt
+
+pub let fwpm_layer_flag_classify_mostly : UInt
+
+pub let fwpm_layer_flag_kernel : UInt
+
+pub fn fwpm_layer_get_by_id0_raw(@core.RawAddress, UInt, @core.RawAddress) -> UInt
+
+pub fn fwpm_layer_get_by_key0_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn fwpm_layer_get_security_info_by_key0_raw(@core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn fwpm_layer_set_security_info_by_key0_raw(@core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn fwpm_net_event_create_enum_handle0_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn fwpm_net_event_destroy_enum_handle0_raw(@core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn fwpm_net_event_enum0_raw(@core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn fwpm_net_event_enum1_raw(@core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn fwpm_net_event_enum2_raw(@core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn fwpm_net_event_enum3_raw(@core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn fwpm_net_event_enum4_raw(@core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn fwpm_net_event_enum5_raw(@core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub let fwpm_net_event_flag_app_id_set : UInt
+
+pub let fwpm_net_event_flag_effective_name_set : UInt
+
+pub let fwpm_net_event_flag_enterprise_id_set : UInt
+
+pub let fwpm_net_event_flag_ip_protocol_set : UInt
+
+pub let fwpm_net_event_flag_ip_version_set : UInt
+
+pub let fwpm_net_event_flag_local_addr_set : UInt
+
+pub let fwpm_net_event_flag_local_port_set : UInt
+
+pub let fwpm_net_event_flag_package_id_set : UInt
+
+pub let fwpm_net_event_flag_policy_flags_set : UInt
+
+pub let fwpm_net_event_flag_reauth_reason_set : UInt
+
+pub let fwpm_net_event_flag_remote_addr_set : UInt
+
+pub let fwpm_net_event_flag_remote_port_set : UInt
+
+pub let fwpm_net_event_flag_scope_id_set : UInt
+
+pub let fwpm_net_event_flag_user_id_set : UInt
+
+pub let fwpm_net_event_ikeext_em_failure_flag_benign : UInt
+
+pub let fwpm_net_event_ikeext_em_failure_flag_multiple : UInt
+
+pub let fwpm_net_event_ikeext_mm_failure_flag_benign : UInt
+
+pub let fwpm_net_event_ikeext_mm_failure_flag_multiple : UInt
+
+pub let fwpm_net_event_keyword_capability_allow : UInt
+
+pub let fwpm_net_event_keyword_capability_drop : UInt
+
+pub let fwpm_net_event_keyword_classify_allow : UInt
+
+pub let fwpm_net_event_keyword_inbound_bcast : UInt
+
+pub let fwpm_net_event_keyword_inbound_mcast : UInt
+
+pub let fwpm_net_event_keyword_port_scanning_drop : UInt
+
+pub fn fwpm_net_event_subscribe0_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn fwpm_net_event_subscribe1_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn fwpm_net_event_subscribe2_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn fwpm_net_event_subscribe3_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn fwpm_net_event_subscribe4_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn fwpm_net_event_subscriptions_get0_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub let fwpm_net_event_type_capability_allow : Int
+
+pub let fwpm_net_event_type_capability_drop : Int
+
+pub let fwpm_net_event_type_classify_allow : Int
+
+pub let fwpm_net_event_type_classify_drop : Int
+
+pub let fwpm_net_event_type_classify_drop_mac : Int
+
+pub let fwpm_net_event_type_ikeext_em_failure : Int
+
+pub let fwpm_net_event_type_ikeext_mm_failure : Int
+
+pub let fwpm_net_event_type_ikeext_qm_failure : Int
+
+pub let fwpm_net_event_type_ipsec_dosp_drop : Int
+
+pub let fwpm_net_event_type_ipsec_kernel_drop : Int
+
+pub let fwpm_net_event_type_lpm_packet_arrival : Int
+
+pub let fwpm_net_event_type_max : Int
+
+pub fn fwpm_net_event_unsubscribe0_raw(@core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn fwpm_net_events_get_security_info0_raw(@core.RawAddress, UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn fwpm_net_events_set_security_info0_raw(@core.RawAddress, UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub let fwpm_network_connection_policy_context : Int
+
+pub fn fwpm_provider_add0_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn fwpm_provider_context_add0_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn fwpm_provider_context_add1_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn fwpm_provider_context_add2_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn fwpm_provider_context_add3_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn fwpm_provider_context_create_enum_handle0_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn fwpm_provider_context_delete_by_id0_raw(@core.RawAddress, UInt64) -> UInt
+
+pub fn fwpm_provider_context_delete_by_key0_raw(@core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn fwpm_provider_context_destroy_enum_handle0_raw(@core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn fwpm_provider_context_enum0_raw(@core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn fwpm_provider_context_enum1_raw(@core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn fwpm_provider_context_enum2_raw(@core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn fwpm_provider_context_enum3_raw(@core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub let fwpm_provider_context_flag_downlevel : UInt
+
+pub let fwpm_provider_context_flag_persistent : UInt
+
+pub fn fwpm_provider_context_get_by_id0_raw(@core.RawAddress, UInt64, @core.RawAddress) -> UInt
+
+pub fn fwpm_provider_context_get_by_id1_raw(@core.RawAddress, UInt64, @core.RawAddress) -> UInt
+
+pub fn fwpm_provider_context_get_by_id2_raw(@core.RawAddress, UInt64, @core.RawAddress) -> UInt
+
+pub fn fwpm_provider_context_get_by_id3_raw(@core.RawAddress, UInt64, @core.RawAddress) -> UInt
+
+pub fn fwpm_provider_context_get_by_key0_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn fwpm_provider_context_get_by_key1_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn fwpm_provider_context_get_by_key2_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn fwpm_provider_context_get_by_key3_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn fwpm_provider_context_get_security_info_by_key0_raw(@core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn fwpm_provider_context_set_security_info_by_key0_raw(@core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn fwpm_provider_context_subscribe_changes0_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn fwpm_provider_context_subscriptions_get0_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub let fwpm_provider_context_type_max : Int
+
+pub fn fwpm_provider_context_unsubscribe_changes0_raw(@core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn fwpm_provider_create_enum_handle0_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn fwpm_provider_delete_by_key0_raw(@core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn fwpm_provider_destroy_enum_handle0_raw(@core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn fwpm_provider_enum0_raw(@core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub let fwpm_provider_flag_disabled : UInt
+
+pub let fwpm_provider_flag_persistent : UInt
+
+pub fn fwpm_provider_get_by_key0_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn fwpm_provider_get_security_info_by_key0_raw(@core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn fwpm_provider_set_security_info_by_key0_raw(@core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn fwpm_provider_subscribe_changes0_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn fwpm_provider_subscriptions_get0_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn fwpm_provider_unsubscribe_changes0_raw(@core.RawAddress, @core.RawAddress) -> UInt
+
+pub let fwpm_service_running : Int
+
+pub let fwpm_service_start_pending : Int
+
+pub let fwpm_service_state_max : Int
+
+pub let fwpm_service_stop_pending : Int
+
+pub let fwpm_service_stopped : Int
+
+pub fn fwpm_session_create_enum_handle0_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn fwpm_session_destroy_enum_handle0_raw(@core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn fwpm_session_enum0_raw(@core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub let fwpm_session_flag_dynamic : UInt
+
+pub let fwpm_session_flag_reserved : UInt
+
+pub fn fwpm_sub_layer_add0_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn fwpm_sub_layer_create_enum_handle0_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn fwpm_sub_layer_delete_by_key0_raw(@core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn fwpm_sub_layer_destroy_enum_handle0_raw(@core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn fwpm_sub_layer_enum0_raw(@core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn fwpm_sub_layer_get_by_key0_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn fwpm_sub_layer_get_security_info_by_key0_raw(@core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn fwpm_sub_layer_set_security_info_by_key0_raw(@core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn fwpm_sub_layer_subscribe_changes0_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn fwpm_sub_layer_subscriptions_get0_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn fwpm_sub_layer_unsubscribe_changes0_raw(@core.RawAddress, @core.RawAddress) -> UInt
+
+pub let fwpm_sublayer_flag_persistent : UInt
+
+pub let fwpm_subscription_flag_notify_on_add : UInt
+
+pub let fwpm_subscription_flag_notify_on_delete : UInt
+
+pub let fwpm_system_port_iphttps_in : Int
+
+pub let fwpm_system_port_iphttps_out : Int
+
+pub let fwpm_system_port_rpc_epmap : Int
+
+pub let fwpm_system_port_teredo : Int
+
+pub let fwpm_system_port_type_max : Int
+
+pub fn fwpm_system_ports_get0_raw(@core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn fwpm_system_ports_subscribe0_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn fwpm_system_ports_unsubscribe0_raw(@core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn fwpm_transaction_abort0_raw(@core.RawAddress) -> UInt
+
+pub fn fwpm_transaction_begin0_raw(@core.RawAddress, UInt) -> UInt
+
+pub fn fwpm_transaction_commit0_raw(@core.RawAddress) -> UInt
+
+pub let fwpm_tunnel_flag_enable_virtual_if_tunneling : UInt
+
+pub let fwpm_tunnel_flag_point_to_point : UInt
+
+pub let fwpm_tunnel_flag_reserved0 : UInt
+
+pub let fwpm_txn_read_only : UInt
+
+pub let fwpm_vswitch_event_disabled_for_inspection : Int
+
+pub let fwpm_vswitch_event_enabled_for_inspection : Int
+
+pub let fwpm_vswitch_event_filter_add_to_incomplete_layer : Int
+
+pub let fwpm_vswitch_event_filter_engine_not_in_required_position : Int
+
+pub let fwpm_vswitch_event_filter_engine_reorder : Int
+
+pub let fwpm_vswitch_event_max : Int
+
+pub let fwpm_weight_range_ike_exemptions : UInt
+
+pub let fwpm_weight_range_ipsec : UInt
+
+pub fn fwpmv_switch_event_subscribe0_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn fwpmv_switch_event_unsubscribe0_raw(@core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn fwpmv_switch_events_get_security_info0_raw(@core.RawAddress, UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn fwpmv_switch_events_set_security_info0_raw(@core.RawAddress, UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub let fwps_ale_endpoint_flag_ipsec_secured : UInt
+
+pub let fwps_classify_out_flag_absorb : UInt
+
+pub let fwps_classify_out_flag_ale_fast_cache_check : UInt
+
+pub let fwps_classify_out_flag_ale_fast_cache_possible : UInt
+
+pub let fwps_classify_out_flag_buffer_limit_reached : UInt
+
+pub let fwps_classify_out_flag_no_more_data : UInt
+
+pub let fwps_filter_flag_clear_action_right : UInt
+
+pub let fwps_filter_flag_has_security_realm_provider_context : UInt
+
+pub let fwps_filter_flag_ipsec_no_acquire_initiate : UInt
+
+pub let fwps_filter_flag_or_conditions : UInt
+
+pub let fwps_filter_flag_permit_if_callout_unregistered : UInt
+
+pub let fwps_filter_flag_reserved0 : UInt
+
+pub let fwps_filter_flag_reserved1 : UInt
+
+pub let fwps_filter_flag_reserved2 : UInt
+
+pub let fwps_filter_flag_silent_mode : UInt
+
+pub let fwps_incoming_flag_absorb : UInt
+
+pub let fwps_incoming_flag_cache_safe : UInt
+
+pub let fwps_incoming_flag_connection_failing_indication : UInt
+
+pub let fwps_incoming_flag_enforce_query : UInt
+
+pub let fwps_incoming_flag_is_local_only_flow : UInt
+
+pub let fwps_incoming_flag_is_loose_source_flow : UInt
+
+pub let fwps_incoming_flag_mid_stream_inspection : UInt
+
+pub let fwps_incoming_flag_reclassify : UInt
+
+pub let fwps_incoming_flag_reserved0 : UInt
+
+pub let fwps_l2_incoming_flag_is_raw_ipv4_framing : UInt
+
+pub let fwps_l2_incoming_flag_is_raw_ipv6_framing : UInt
+
+pub let fwps_l2_incoming_flag_reclassify_multi_destination : UInt
+
+pub let fwps_l2_metadata_field_ethernet_mac_header_size : UInt
+
+pub let fwps_l2_metadata_field_reserved : UInt
+
+pub let fwps_l2_metadata_field_vswitch_destination_port_id : UInt
+
+pub let fwps_l2_metadata_field_vswitch_packet_context : UInt
+
+pub let fwps_l2_metadata_field_vswitch_source_nic_index : UInt
+
+pub let fwps_l2_metadata_field_vswitch_source_port_id : UInt
+
+pub let fwps_l2_metadata_field_wifi_operation_mode : UInt
+
+pub let fwps_metadata_field_ale_classify_required : UInt
+
+pub let fwps_metadata_field_compartment_id : UInt
+
+pub let fwps_metadata_field_completion_handle : UInt
+
+pub let fwps_metadata_field_destination_interface_index : UInt
+
+pub let fwps_metadata_field_destination_prefix : UInt
+
+pub let fwps_metadata_field_discard_reason : UInt
+
+pub let fwps_metadata_field_ether_frame_length : UInt
+
+pub let fwps_metadata_field_flow_handle : UInt
+
+pub let fwps_metadata_field_forward_layer_inbound_pass_thru : UInt
+
+pub let fwps_metadata_field_forward_layer_outbound_pass_thru : UInt
+
+pub let fwps_metadata_field_fragment_data : UInt
+
+pub let fwps_metadata_field_icmp_id_and_sequence : UInt
+
+pub let fwps_metadata_field_ip_header_size : UInt
+
+pub let fwps_metadata_field_local_redirect_target_pid : UInt
+
+pub let fwps_metadata_field_original_destination : UInt
+
+pub let fwps_metadata_field_packet_direction : UInt
+
+pub let fwps_metadata_field_packet_system_critical : UInt
+
+pub let fwps_metadata_field_parent_endpoint_handle : UInt
+
+pub let fwps_metadata_field_path_mtu : UInt
+
+pub let fwps_metadata_field_process_id : UInt
+
+pub let fwps_metadata_field_process_path : UInt
+
+pub let fwps_metadata_field_redirect_record_handle : UInt
+
+pub let fwps_metadata_field_remote_scope_id : UInt
+
+pub let fwps_metadata_field_reserved : UInt
+
+pub let fwps_metadata_field_source_interface_index : UInt
+
+pub let fwps_metadata_field_sub_process_tag : UInt
+
+pub let fwps_metadata_field_system_flags : UInt
+
+pub let fwps_metadata_field_token : UInt
+
+pub let fwps_metadata_field_transport_control_data : UInt
+
+pub let fwps_metadata_field_transport_endpoint_handle : UInt
+
+pub let fwps_metadata_field_transport_header_include_header : UInt
+
+pub let fwps_metadata_field_transport_header_size : UInt
+
+pub let fwps_right_action_write : UInt
+
+pub fn i_psec_dosp_get_security_info0_raw(@core.RawAddress, UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn i_psec_dosp_get_statistics0_raw(@core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn i_psec_dosp_set_security_info0_raw(@core.RawAddress, UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn i_psec_dosp_state_create_enum_handle0_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn i_psec_dosp_state_destroy_enum_handle0_raw(@core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn i_psec_dosp_state_enum0_raw(@core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn i_psec_get_statistics0_raw(@core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn i_psec_get_statistics1_raw(@core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn i_psec_key_manager_add_and_register0_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn i_psec_key_manager_get_security_info_by_key0_raw(@core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn i_psec_key_manager_set_security_info_by_key0_raw(@core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn i_psec_key_manager_unregister_and_delete0_raw(@core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn i_psec_key_managers_get0_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn i_psec_sa_context_add_inbound0_raw(@core.RawAddress, UInt64, @core.RawAddress) -> UInt
+
+pub fn i_psec_sa_context_add_inbound1_raw(@core.RawAddress, UInt64, @core.RawAddress) -> UInt
+
+pub fn i_psec_sa_context_add_outbound0_raw(@core.RawAddress, UInt64, @core.RawAddress) -> UInt
+
+pub fn i_psec_sa_context_add_outbound1_raw(@core.RawAddress, UInt64, @core.RawAddress) -> UInt
+
+pub fn i_psec_sa_context_create0_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn i_psec_sa_context_create1_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn i_psec_sa_context_create_enum_handle0_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn i_psec_sa_context_delete_by_id0_raw(@core.RawAddress, UInt64) -> UInt
+
+pub fn i_psec_sa_context_destroy_enum_handle0_raw(@core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn i_psec_sa_context_enum0_raw(@core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn i_psec_sa_context_enum1_raw(@core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn i_psec_sa_context_expire0_raw(@core.RawAddress, UInt64) -> UInt
+
+pub fn i_psec_sa_context_get_by_id0_raw(@core.RawAddress, UInt64, @core.RawAddress) -> UInt
+
+pub fn i_psec_sa_context_get_by_id1_raw(@core.RawAddress, UInt64, @core.RawAddress) -> UInt
+
+pub fn i_psec_sa_context_get_spi0_raw(@core.RawAddress, UInt64, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn i_psec_sa_context_get_spi1_raw(@core.RawAddress, UInt64, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn i_psec_sa_context_set_spi0_raw(@core.RawAddress, UInt64, @core.RawAddress, UInt) -> UInt
+
+pub fn i_psec_sa_context_subscribe0_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn i_psec_sa_context_subscriptions_get0_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn i_psec_sa_context_unsubscribe0_raw(@core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn i_psec_sa_context_update0_raw(@core.RawAddress, UInt64, @core.RawAddress) -> UInt
+
+pub fn i_psec_sa_create_enum_handle0_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn i_psec_sa_db_get_security_info0_raw(@core.RawAddress, UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn i_psec_sa_db_set_security_info0_raw(@core.RawAddress, UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn i_psec_sa_destroy_enum_handle0_raw(@core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn i_psec_sa_enum0_raw(@core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn i_psec_sa_enum1_raw(@core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub let ikeext_anonymous : Int
+
+pub let ikeext_authentication_method_type_max : Int
+
+pub let ikeext_cert_auth_allow_http_cert_lookup : UInt
+
+pub let ikeext_cert_auth_disable_ssl_cert_validation : UInt
+
+pub let ikeext_cert_auth_enable_crl_check_strong : UInt
+
+pub let ikeext_cert_auth_flag_disable_crl_check : UInt
+
+pub let ikeext_cert_auth_flag_disable_request_payload : UInt
+
+pub let ikeext_cert_auth_flag_ssl_one_way : UInt
+
+pub let ikeext_cert_auth_url_contains_bundle : UInt
+
+pub let ikeext_cert_config_enterprise_store : Int
+
+pub let ikeext_cert_config_explicit_trust_list : Int
+
+pub let ikeext_cert_config_trusted_root_store : Int
+
+pub let ikeext_cert_config_type_max : Int
+
+pub let ikeext_cert_config_unspecified : Int
+
+pub let ikeext_cert_credential_flag_nap_cert : UInt
+
+pub let ikeext_cert_criteria_cn : Int
+
+pub let ikeext_cert_criteria_dc : Int
+
+pub let ikeext_cert_criteria_dns : Int
+
+pub let ikeext_cert_criteria_name_type_max : Int
+
+pub let ikeext_cert_criteria_o : Int
+
+pub let ikeext_cert_criteria_ou : Int
+
+pub let ikeext_cert_criteria_rfc822 : Int
+
+pub let ikeext_cert_criteria_upn : Int
+
+pub let ikeext_cert_flag_disable_request_payload : UInt
+
+pub let ikeext_cert_flag_enable_account_mapping : UInt
+
+pub let ikeext_cert_flag_follow_renewal_certificate : UInt
+
+pub let ikeext_cert_flag_ignore_init_cert_map_failure : UInt
+
+pub let ikeext_cert_flag_intermediate_ca : UInt
+
+pub let ikeext_cert_flag_prefer_nap_certificate_outbound : UInt
+
+pub let ikeext_cert_flag_select_nap_certificate : UInt
+
+pub let ikeext_cert_flag_use_nap_certificate : UInt
+
+pub let ikeext_cert_flag_verify_nap_certificate : UInt
+
+pub let ikeext_cert_hash_len : UInt
+
+pub let ikeext_certificate : Int
+
+pub let ikeext_certificate_ecdsa_p256 : Int
+
+pub let ikeext_certificate_ecdsa_p384 : Int
+
+pub let ikeext_cipher_3_des : Int
+
+pub let ikeext_cipher_aes_128 : Int
+
+pub let ikeext_cipher_aes_192 : Int
+
+pub let ikeext_cipher_aes_256 : Int
+
+pub let ikeext_cipher_aes_gcm_128_16_icv : Int
+
+pub let ikeext_cipher_aes_gcm_256_16_icv : Int
+
+pub let ikeext_cipher_des : Int
+
+pub let ikeext_cipher_type_max : Int
+
+pub let ikeext_dh_ecp_256 : Int
+
+pub let ikeext_dh_ecp_384 : Int
+
+pub let ikeext_dh_group_1 : Int
+
+pub let ikeext_dh_group_14 : Int
+
+pub let ikeext_dh_group_2 : Int
+
+pub let ikeext_dh_group_2048 : Int
+
+pub let ikeext_dh_group_24 : Int
+
+pub let ikeext_dh_group_max : Int
+
+pub let ikeext_dh_group_none : Int
+
+pub let ikeext_eap : Int
+
+pub let ikeext_eap_flag_local_auth_only : UInt
+
+pub let ikeext_eap_flag_remote_auth_only : UInt
+
+pub let ikeext_em_sa_state_auth_complete : Int
+
+pub let ikeext_em_sa_state_complete : Int
+
+pub let ikeext_em_sa_state_final : Int
+
+pub let ikeext_em_sa_state_max : Int
+
+pub let ikeext_em_sa_state_none : Int
+
+pub let ikeext_em_sa_state_sent_atts : Int
+
+pub let ikeext_em_sa_state_sspi_sent : Int
+
+pub fn ikeext_get_statistics0_raw(@core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn ikeext_get_statistics1_raw(@core.RawAddress, @core.RawAddress) -> UInt
+
+pub let ikeext_impersonation_max : Int
+
+pub let ikeext_impersonation_none : Int
+
+pub let ikeext_impersonation_socket_principal : Int
+
+pub let ikeext_integrity_md5 : Int
+
+pub let ikeext_integrity_sha1 : Int
+
+pub let ikeext_integrity_sha_256 : Int
+
+pub let ikeext_integrity_sha_384 : Int
+
+pub let ikeext_integrity_type_max : Int
+
+pub let ikeext_ipv6_cga : Int
+
+pub let ikeext_kerb_auth_disable_initiator_token_generation : UInt
+
+pub let ikeext_kerb_auth_dont_accept_explicit_credentials : UInt
+
+pub let ikeext_kerb_auth_force_proxy_on_initiator : UInt
+
+pub let ikeext_kerberos : Int
+
+pub let ikeext_key_module_authip : Int
+
+pub let ikeext_key_module_ike : Int
+
+pub let ikeext_key_module_ikev2 : Int
+
+pub let ikeext_key_module_max : Int
+
+pub let ikeext_mm_sa_state_complete : Int
+
+pub let ikeext_mm_sa_state_final : Int
+
+pub let ikeext_mm_sa_state_final_sent : Int
+
+pub let ikeext_mm_sa_state_max : Int
+
+pub let ikeext_mm_sa_state_none : Int
+
+pub let ikeext_mm_sa_state_sa_sent : Int
+
+pub let ikeext_mm_sa_state_sspi_sent : Int
+
+pub let ikeext_ntlm_v2 : Int
+
+pub let ikeext_ntlm_v2_auth_dont_accept_explicit_credentials : UInt
+
+pub let ikeext_policy_enable_ikev2_fragmentation : UInt
+
+pub let ikeext_policy_flag_disable_diagnostics : UInt
+
+pub let ikeext_policy_flag_enable_optional_dh : UInt
+
+pub let ikeext_policy_flag_ims_vpn : UInt
+
+pub let ikeext_policy_flag_mobike_not_supported : UInt
+
+pub let ikeext_policy_flag_no_impersonation_luid_verify : UInt
+
+pub let ikeext_policy_flag_no_machine_luid_verify : UInt
+
+pub let ikeext_policy_flag_point_to_site : UInt
+
+pub let ikeext_policy_flag_site_to_site : UInt
+
+pub let ikeext_policy_support_low_power_mode : UInt
+
+pub let ikeext_preshared_key : Int
+
+pub let ikeext_psk_flag_local_auth_only : UInt
+
+pub let ikeext_psk_flag_remote_auth_only : UInt
+
+pub let ikeext_qm_sa_state_complete : Int
+
+pub let ikeext_qm_sa_state_final : Int
+
+pub let ikeext_qm_sa_state_initial : Int
+
+pub let ikeext_qm_sa_state_max : Int
+
+pub let ikeext_qm_sa_state_none : Int
+
+pub let ikeext_reserved : Int
+
+pub let ikeext_reserved_auth_disable_initiator_token_generation : UInt
+
+pub fn ikeext_sa_create_enum_handle0_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn ikeext_sa_db_get_security_info0_raw(@core.RawAddress, UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn ikeext_sa_db_set_security_info0_raw(@core.RawAddress, UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn ikeext_sa_delete_by_id0_raw(@core.RawAddress, UInt64) -> UInt
+
+pub fn ikeext_sa_destroy_enum_handle0_raw(@core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn ikeext_sa_enum0_raw(@core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn ikeext_sa_enum1_raw(@core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn ikeext_sa_enum2_raw(@core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn ikeext_sa_get_by_id0_raw(@core.RawAddress, UInt64, @core.RawAddress) -> UInt
+
+pub fn ikeext_sa_get_by_id1_raw(@core.RawAddress, UInt64, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn ikeext_sa_get_by_id2_raw(@core.RawAddress, UInt64, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub let ikeext_sa_role_initiator : Int
+
+pub let ikeext_sa_role_max : Int
+
+pub let ikeext_sa_role_responder : Int
+
+pub let ikeext_ssl : Int
+
+pub let ikeext_ssl_ecdsa_p256 : Int
+
+pub let ikeext_ssl_ecdsa_p384 : Int
+
+pub let ipsec_auth_aes_128 : Int
+
+pub let ipsec_auth_aes_192 : Int
+
+pub let ipsec_auth_aes_256 : Int
+
+pub let ipsec_auth_config_gcm_aes_128 : UInt
+
+pub let ipsec_auth_config_gcm_aes_192 : UInt
+
+pub let ipsec_auth_config_gcm_aes_256 : UInt
+
+pub let ipsec_auth_config_hmac_md5_96 : UInt
+
+pub let ipsec_auth_config_hmac_sha_1_96 : UInt
+
+pub let ipsec_auth_config_hmac_sha_256_128 : UInt
+
+pub let ipsec_auth_config_max : UInt
+
+pub let ipsec_auth_max : Int
+
+pub let ipsec_auth_md5 : Int
+
+pub let ipsec_auth_sha_1 : Int
+
+pub let ipsec_auth_sha_256 : Int
+
+pub let ipsec_cipher_config_cbc_3_des : UInt
+
+pub let ipsec_cipher_config_cbc_aes_128 : UInt
+
+pub let ipsec_cipher_config_cbc_aes_192 : UInt
+
+pub let ipsec_cipher_config_cbc_aes_256 : UInt
+
+pub let ipsec_cipher_config_cbc_des : UInt
+
+pub let ipsec_cipher_config_gcm_aes_128 : UInt
+
+pub let ipsec_cipher_config_gcm_aes_192 : UInt
+
+pub let ipsec_cipher_config_gcm_aes_256 : UInt
+
+pub let ipsec_cipher_config_max : UInt
+
+pub let ipsec_cipher_type_3_des : Int
+
+pub let ipsec_cipher_type_aes_128 : Int
+
+pub let ipsec_cipher_type_aes_192 : Int
+
+pub let ipsec_cipher_type_aes_256 : Int
+
+pub let ipsec_cipher_type_des : Int
+
+pub let ipsec_cipher_type_max : Int
+
+pub let ipsec_dosp_dscp_disable_value : UInt
+
+pub let ipsec_dosp_flag_disable_authip : UInt
+
+pub let ipsec_dosp_flag_disable_default_block : UInt
+
+pub let ipsec_dosp_flag_enable_ikev1 : UInt
+
+pub let ipsec_dosp_flag_enable_ikev2 : UInt
+
+pub let ipsec_dosp_flag_filter_block : UInt
+
+pub let ipsec_dosp_flag_filter_exempt : UInt
+
+pub let ipsec_dosp_rate_limit_disable_value : UInt
+
+pub let ipsec_failure_me : Int
+
+pub let ipsec_failure_none : Int
+
+pub let ipsec_failure_peer : Int
+
+pub let ipsec_failure_point_max : Int
+
+pub let ipsec_key_manager_flag_dictate_key : UInt
+
+pub let ipsec_keying_policy_flag_terminating_match : UInt
+
+pub let ipsec_pfs_1 : Int
+
+pub let ipsec_pfs_14 : Int
+
+pub let ipsec_pfs_2 : Int
+
+pub let ipsec_pfs_2048 : Int
+
+pub let ipsec_pfs_24 : Int
+
+pub let ipsec_pfs_ecp_256 : Int
+
+pub let ipsec_pfs_ecp_384 : Int
+
+pub let ipsec_pfs_max : Int
+
+pub let ipsec_pfs_mm : Int
+
+pub let ipsec_pfs_none : Int
+
+pub let ipsec_policy_flag_bandwidth1 : UInt
+
+pub let ipsec_policy_flag_bandwidth2 : UInt
+
+pub let ipsec_policy_flag_bandwidth3 : UInt
+
+pub let ipsec_policy_flag_bandwidth4 : UInt
+
+pub let ipsec_policy_flag_clear_df_on_tunnel : UInt
+
+pub let ipsec_policy_flag_dont_negotiate_byte_lifetime : UInt
+
+pub let ipsec_policy_flag_dont_negotiate_second_lifetime : UInt
+
+pub let ipsec_policy_flag_enable_server_addr_assignment : UInt
+
+pub let ipsec_policy_flag_enable_v6_in_v4_tunneling : UInt
+
+pub let ipsec_policy_flag_key_manager_allow_dictate_key : UInt
+
+pub let ipsec_policy_flag_key_manager_allow_notify_key : UInt
+
+pub let ipsec_policy_flag_nat_encap_allow_general_nat_traversal : UInt
+
+pub let ipsec_policy_flag_nat_encap_allow_peer_behind_nat : UInt
+
+pub let ipsec_policy_flag_nd_boundary : UInt
+
+pub let ipsec_policy_flag_nd_secure : UInt
+
+pub let ipsec_policy_flag_point_to_site_tunnel : UInt
+
+pub let ipsec_policy_flag_reserved1 : UInt
+
+pub let ipsec_policy_flag_site_to_site_tunnel : UInt
+
+pub let ipsec_policy_flag_tunnel_allow_outbound_clear_connection : UInt
+
+pub let ipsec_policy_flag_tunnel_bypass_already_secure_connection : UInt
+
+pub let ipsec_policy_flag_tunnel_bypass_icmpv6 : UInt
+
+pub let ipsec_sa_bundle_flag_allow_null_target_name_match : UInt
+
+pub let ipsec_sa_bundle_flag_assume_udp_context_outbound : UInt
+
+pub let ipsec_sa_bundle_flag_clear_df_on_tunnel : UInt
+
+pub let ipsec_sa_bundle_flag_enable_optional_asymmetric_idle : UInt
+
+pub let ipsec_sa_bundle_flag_force_inbound_connections : UInt
+
+pub let ipsec_sa_bundle_flag_force_outbound_connections : UInt
+
+pub let ipsec_sa_bundle_flag_forward_path_initiator : UInt
+
+pub let ipsec_sa_bundle_flag_guarantee_encryption : UInt
+
+pub let ipsec_sa_bundle_flag_ip_in_ip_pkt : UInt
+
+pub let ipsec_sa_bundle_flag_locally_dictated_keys : UInt
+
+pub let ipsec_sa_bundle_flag_low_power_mode_support : UInt
+
+pub let ipsec_sa_bundle_flag_nd_boundary : UInt
+
+pub let ipsec_sa_bundle_flag_nd_peer_boundary : UInt
+
+pub let ipsec_sa_bundle_flag_nd_peer_nat_boundary : UInt
+
+pub let ipsec_sa_bundle_flag_nd_secure : UInt
+
+pub let ipsec_sa_bundle_flag_nlb : UInt
+
+pub let ipsec_sa_bundle_flag_no_explicit_cred_match : UInt
+
+pub let ipsec_sa_bundle_flag_no_impersonation_luid_verify : UInt
+
+pub let ipsec_sa_bundle_flag_no_machine_luid_verify : UInt
+
+pub let ipsec_sa_bundle_flag_peer_supports_guarantee_encryption : UInt
+
+pub let ipsec_sa_bundle_flag_sa_offloaded : UInt
+
+pub let ipsec_sa_bundle_flag_suppress_duplicate_deletion : UInt
+
+pub let ipsec_sa_bundle_flag_tunnel_bandwidth1 : UInt
+
+pub let ipsec_sa_bundle_flag_tunnel_bandwidth2 : UInt
+
+pub let ipsec_sa_bundle_flag_tunnel_bandwidth3 : UInt
+
+pub let ipsec_sa_bundle_flag_tunnel_bandwidth4 : UInt
+
+pub let ipsec_sa_bundle_flag_using_dictated_keys : UInt
+
+pub let ipsec_sa_context_event_add : Int
+
+pub let ipsec_sa_context_event_delete : Int
+
+pub let ipsec_sa_context_event_max : Int
+
+pub let ipsec_token_mode_extended : Int
+
+pub let ipsec_token_mode_main : Int
+
+pub let ipsec_token_mode_max : Int
+
+pub let ipsec_token_principal_local : Int
+
+pub let ipsec_token_principal_max : Int
+
+pub let ipsec_token_principal_peer : Int
+
+pub let ipsec_token_type_impersonation : Int
+
+pub let ipsec_token_type_machine : Int
+
+pub let ipsec_token_type_max : Int
+
+pub let ipsec_traffic_type_max : Int
+
+pub let ipsec_traffic_type_transport : Int
+
+pub let ipsec_traffic_type_tunnel : Int
+
+pub let ipsec_transform_ah : Int
+
+pub let ipsec_transform_esp_auth : Int
+
+pub let ipsec_transform_esp_auth_and_cipher : Int
+
+pub let ipsec_transform_esp_auth_fw : Int
+
+pub let ipsec_transform_esp_cipher : Int
+
+pub let ipsec_transform_type_max : Int
+
+// Errors
+
+// Types and methods
+
+// Type aliases
+pub using @f96315895a1fe9be {type Anonymous1EStruct_16e7e75499b1 as Anonymous1EStruct_16e7e75499}
+
+pub using @f96315895a1fe9be {type Anonymous1EStruct_d3b01d89ec10 as Anonymous1EStruct_d3b01d89ec}
+
+pub using @f96315895a1fe9be {type Anonymous1EUnion_0dde3e4151e7 as Anonymous1EUnion_0dde3e4151}
+
+pub using @f96315895a1fe9be {type Anonymous1EUnion_0f69056d8b70 as Anonymous1EUnion_0f69056d8b}
+
+pub using @f96315895a1fe9be {type Anonymous1EUnion_16a8139c7d55 as Anonymous1EUnion_16a8139c7d}
+
+pub using @f96315895a1fe9be {type Anonymous1EUnion_1b7b89f23dde as Anonymous1EUnion_1b7b89f23d}
+
+pub using @f96315895a1fe9be {type Anonymous1EUnion_1f7c08fdccf7 as Anonymous1EUnion_1f7c08fdcc}
+
+pub using @f96315895a1fe9be {type Anonymous1EUnion_22eb1e355e4e as Anonymous1EUnion_22eb1e355e}
+
+pub using @f96315895a1fe9be {type Anonymous1EUnion_321cdee7c06e as Anonymous1EUnion_321cdee7c0}
+
+pub using @f96315895a1fe9be {type Anonymous1EUnion_425b544dbf88 as Anonymous1EUnion_425b544dbf}
+
+pub using @f96315895a1fe9be {type Anonymous1EUnion_4abd5f461259 as Anonymous1EUnion_4abd5f4612}
+
+pub using @f96315895a1fe9be {type Anonymous1EUnion_677fc6547c24 as Anonymous1EUnion_677fc6547c}
+
+pub using @f96315895a1fe9be {type Anonymous1EUnion_95ffce48113f as Anonymous1EUnion_95ffce4811}
+
+pub using @f96315895a1fe9be {type Anonymous1EUnion_9715e17fd045 as Anonymous1EUnion_9715e17fd0}
+
+pub using @f96315895a1fe9be {type Anonymous1EUnion_a04ed27d74a3 as Anonymous1EUnion_a04ed27d74}
+
+pub using @f96315895a1fe9be {type Anonymous1EUnion_b284b3572349 as Anonymous1EUnion_b284b35723}
+
+pub using @f96315895a1fe9be {type Anonymous1EUnion_b51680660db0 as Anonymous1EUnion_b51680660d}
+
+pub using @f96315895a1fe9be {type Anonymous1EUnion_cba129dfdff1 as Anonymous1EUnion_cba129dfdf}
+
+pub using @f96315895a1fe9be {type Anonymous1EUnion_e8182a2124c6 as Anonymous1EUnion_e8182a2124}
+
+pub using @f96315895a1fe9be {type Anonymous1EUnion_fae69d17562b as Anonymous1EUnion_fae69d1756}
+
+pub using @f96315895a1fe9be {type Anonymous2EStruct_89c5da56ba29 as Anonymous2EStruct_89c5da56ba}
+
+pub using @f96315895a1fe9be {type Anonymous2EStruct_9681e27208ae as Anonymous2EStruct_9681e27208}
+
+pub using @f96315895a1fe9be {type Anonymous2EUnion_0bef8969716f as Anonymous2EUnion_0bef896971}
+
+pub using @f96315895a1fe9be {type Anonymous2EUnion_0fdcdd1f3d75 as Anonymous2EUnion_0fdcdd1f3d}
+
+pub using @f96315895a1fe9be {type Anonymous2EUnion_2b9ebb4cfe88 as Anonymous2EUnion_2b9ebb4cfe}
+
+pub using @f96315895a1fe9be {type Anonymous2EUnion_2d936bb4451b as Anonymous2EUnion_2d936bb445}
+
+pub using @f96315895a1fe9be {type Anonymous2EUnion_5077a1fa97a6 as Anonymous2EUnion_5077a1fa97}
+
+pub using @f96315895a1fe9be {type Anonymous2EUnion_5315649112d4 as Anonymous2EUnion_5315649112}
+
+pub using @f96315895a1fe9be {type Anonymous2EUnion_666c325774ef as Anonymous2EUnion_666c325774}
+
+pub using @f96315895a1fe9be {type Anonymous2EUnion_6a52494d0215 as Anonymous2EUnion_6a52494d02}
+
+pub using @f96315895a1fe9be {type Anonymous2EUnion_7a2b17272029 as Anonymous2EUnion_7a2b172720}
+
+pub using @f96315895a1fe9be {type Anonymous2EUnion_858491423bff as Anonymous2EUnion_858491423b}
+
+pub using @f96315895a1fe9be {type Anonymous2EUnion_8b8efc9c399a as Anonymous2EUnion_8b8efc9c39}
+
+pub using @f96315895a1fe9be {type Anonymous2EUnion_8e750b5d130a as Anonymous2EUnion_8e750b5d13}
+
+pub using @f96315895a1fe9be {type Anonymous2EUnion_aff52ca48149 as Anonymous2EUnion_aff52ca481}
+
+pub using @f96315895a1fe9be {type Anonymous2EUnion_b1ed12a2d8c4 as Anonymous2EUnion_b1ed12a2d8}
+
+pub using @f96315895a1fe9be {type Anonymous2EUnion_ce95b2d60813 as Anonymous2EUnion_ce95b2d608}
+
+pub using @f96315895a1fe9be {type Anonymous2EUnion_d1e9b87ccdaa as Anonymous2EUnion_d1e9b87ccd}
+
+pub using @f96315895a1fe9be {type Anonymous2EUnion_d5fdabb07351 as Anonymous2EUnion_d5fdabb073}
+
+pub using @f96315895a1fe9be {type Anonymous2EUnion_e470ac876bb8 as Anonymous2EUnion_e470ac876b}
+
+pub using @f96315895a1fe9be {type Anonymous3EStruct_468e117d82bb as Anonymous3EStruct_468e117d82}
+
+pub using @f96315895a1fe9be {type Anonymous3EStruct_c14be81e254b as Anonymous3EStruct_c14be81e25}
+
+pub using @f96315895a1fe9be {type Anonymous3EUnion_4a790c585a7f as Anonymous3EUnion_4a790c585a}
+
+pub using @f96315895a1fe9be {type Anonymous3EUnion_54b4018435e5 as Anonymous3EUnion_54b4018435}
+
+pub using @f96315895a1fe9be {type Anonymous3EUnion_abafd7a2ebc9 as Anonymous3EUnion_abafd7a2eb}
+
+pub using @f96315895a1fe9be {type AnonymousEStruct_1fca83ba014c as AnonymousEStruct_1fca83ba01}
+
+pub using @f96315895a1fe9be {type AnonymousEStruct_2c9e0ce48818 as AnonymousEStruct_2c9e0ce488}
+
+pub using @f96315895a1fe9be {type AnonymousEStruct_806512ef5467 as AnonymousEStruct_806512ef54}
+
+pub using @f96315895a1fe9be {type AnonymousEStruct_b970814da03a as AnonymousEStruct_b970814da0}
+
+pub using @f96315895a1fe9be {type AnonymousEStruct_bbeb7541134c as AnonymousEStruct_bbeb754113}
+
+pub using @f96315895a1fe9be {type AnonymousEStruct_cae9f51de499 as AnonymousEStruct_cae9f51de4}
+
+pub using @f96315895a1fe9be {type AnonymousEUnion_05255960c30e as AnonymousEUnion_05255960c3}
+
+pub using @f96315895a1fe9be {type AnonymousEUnion_1c1831e7dd18 as AnonymousEUnion_1c1831e7dd}
+
+pub using @f96315895a1fe9be {type AnonymousEUnion_1ea57fc0f7eb as AnonymousEUnion_1ea57fc0f7}
+
+pub using @f96315895a1fe9be {type AnonymousEUnion_2154137448ef as AnonymousEUnion_2154137448}
+
+pub using @f96315895a1fe9be {type AnonymousEUnion_2931e2a7f251 as AnonymousEUnion_2931e2a7f2}
+
+pub using @f96315895a1fe9be {type AnonymousEUnion_29e4bbde38e4 as AnonymousEUnion_29e4bbde38}
+
+pub using @f96315895a1fe9be {type AnonymousEUnion_334c7fb8163b as AnonymousEUnion_334c7fb816}
+
+pub using @f96315895a1fe9be {type AnonymousEUnion_42487e982101 as AnonymousEUnion_42487e9821}
+
+pub using @f96315895a1fe9be {type AnonymousEUnion_490ef03c47ce as AnonymousEUnion_490ef03c47}
+
+pub using @f96315895a1fe9be {type AnonymousEUnion_534a59547aca as AnonymousEUnion_534a59547a}
+
+pub using @f96315895a1fe9be {type AnonymousEUnion_591478784fa2 as AnonymousEUnion_591478784f}
+
+pub using @f96315895a1fe9be {type AnonymousEUnion_6d288e50165b as AnonymousEUnion_6d288e5016}
+
+pub using @f96315895a1fe9be {type AnonymousEUnion_6e582387d7f9 as AnonymousEUnion_6e582387d7}
+
+pub using @f96315895a1fe9be {type AnonymousEUnion_72278c6c0079 as AnonymousEUnion_72278c6c00}
+
+pub using @f96315895a1fe9be {type AnonymousEUnion_7373a18c90cf as AnonymousEUnion_7373a18c90}
+
+pub using @f96315895a1fe9be {type AnonymousEUnion_7adeafa6287f as AnonymousEUnion_7adeafa628}
+
+pub using @f96315895a1fe9be {type AnonymousEUnion_9e398ba8a77e as AnonymousEUnion_9e398ba8a7}
+
+pub using @f96315895a1fe9be {type AnonymousEUnion_9ffd90999135 as AnonymousEUnion_9ffd909991}
+
+pub using @f96315895a1fe9be {type AnonymousEUnion_a1875edf1ae1 as AnonymousEUnion_a1875edf1a}
+
+pub using @f96315895a1fe9be {type AnonymousEUnion_a212aab6f8a2 as AnonymousEUnion_a212aab6f8}
+
+pub using @f96315895a1fe9be {type AnonymousEUnion_a357931de9b8 as AnonymousEUnion_a357931de9}
+
+pub using @f96315895a1fe9be {type AnonymousEUnion_a67beb11184b as AnonymousEUnion_a67beb1118}
+
+pub using @f96315895a1fe9be {type AnonymousEUnion_a80f64cd9808 as AnonymousEUnion_a80f64cd98}
+
+pub using @f96315895a1fe9be {type AnonymousEUnion_a81dda02f89f as AnonymousEUnion_a81dda02f8}
+
+pub using @f96315895a1fe9be {type AnonymousEUnion_a911e2d0cb57 as AnonymousEUnion_a911e2d0cb}
+
+pub using @f96315895a1fe9be {type AnonymousEUnion_aeb2950e32b9 as AnonymousEUnion_aeb2950e32}
+
+pub using @f96315895a1fe9be {type AnonymousEUnion_b1f472267ab6 as AnonymousEUnion_b1f472267a}
+
+pub using @f96315895a1fe9be {type AnonymousEUnion_b8186ce4ea25 as AnonymousEUnion_b8186ce4ea}
+
+pub using @f96315895a1fe9be {type AnonymousEUnion_bb2a394e1045 as AnonymousEUnion_bb2a394e10}
+
+pub using @f96315895a1fe9be {type AnonymousEUnion_bdf7fa3e117d as AnonymousEUnion_bdf7fa3e11}
+
+pub using @f96315895a1fe9be {type AnonymousEUnion_e79b8963bb94 as AnonymousEUnion_e79b8963bb}
+
+pub using @f96315895a1fe9be {type AnonymousEUnion_edb3494f8e47 as AnonymousEUnion_edb3494f8e}
+
+pub using @f96315895a1fe9be {type AnonymousEUnion_f703d87bc8dc as AnonymousEUnion_f703d87bc8}
+
+pub using @f96315895a1fe9be {type AnonymousEUnion_fa87358d7d5a as AnonymousEUnion_fa87358d7d}
+
+pub using @f96315895a1fe9be {type DLADDRESSTYPE_7b1bb9b34de0 as DLADDRESSTYPE}
+
+pub using @f96315895a1fe9be {type FWPACTIONTYPE_daf1915a3d02 as FWPACTIONTYPE}
+
+pub using @f96315895a1fe9be {type FWPAF_39ded64da61a as FWPAF}
+
+pub using @f96315895a1fe9be {type FWPBYTEARRAY16_4e6b616d5570 as FWPBYTEARRAY16}
+
+pub using @f96315895a1fe9be {type FWPBYTEARRAY6_c33ecce02555 as FWPBYTEARRAY6}
+
+pub using @f96315895a1fe9be {type FWPBYTEBLOB_6008149dacd0 as FWPBYTEBLOB}
+
+pub using @f96315895a1fe9be {type FWPCLASSIFYOPTIONTYPE_9f279228eeb2 as FWPCLASSIFYOPTIONTYPE}
+
+pub using @f96315895a1fe9be {type FWPCONDITIONVALUE0_d3c18ab367d0 as FWPCONDITIONVALUE0}
+
+pub using @f96315895a1fe9be {type FWPDATATYPE_f25828294414 as FWPDATATYPE}
+
+pub using @f96315895a1fe9be {type FWPDIRECTION_62aca6d4d3f9 as FWPDIRECTION}
+
+pub using @f96315895a1fe9be {type FWPETHERENCAPMETHOD_104ea67c08d5 as FWPETHERENCAPMETHOD}
+
+pub using @f96315895a1fe9be {type FWPFILTERENUMTYPE_ac8feb9a5300 as FWPFILTERENUMTYPE}
+
+pub using @f96315895a1fe9be {type FWPIPVERSION_0278ffe0e767 as FWPIPVERSION}
+
+pub using @f96315895a1fe9be {type FWPMACTION0_b7a8efdc432e as FWPMACTION0}
+
+pub using @f96315895a1fe9be {type FWPMAPPCNETWORKCAPABILITYTYPE_0fcb4ae5a50e as FWPMAPPCNETWORKCAPABILITYTYPE}
+
+pub using @f96315895a1fe9be {type FWPMATCHTYPE_7ca32044fba5 as FWPMATCHTYPE}
+
+pub using @f96315895a1fe9be {type FWPMCALLOUT0_b678238d8954 as FWPMCALLOUT0}
+
+pub using @f96315895a1fe9be {type FWPMCALLOUTCHANGE0_d6f5264e2d55 as FWPMCALLOUTCHANGE0}
+
+pub using @f96315895a1fe9be {type FWPMCALLOUTCHANGECALLBACK0_2f212e76dd0e as FWPMCALLOUTCHANGECALLBACK0}
+
+pub using @f96315895a1fe9be {type FWPMCALLOUTENUMHANDLE_73aa4cb69f42 as FWPMCALLOUTENUMHANDLE}
+
+pub using @f96315895a1fe9be {type FWPMCALLOUTENUMTEMPLATE0_ccc51ac627a2 as FWPMCALLOUTENUMTEMPLATE0}
+
+pub using @f96315895a1fe9be {type FWPMCALLOUTSUBSCRIPTION0_869edc941b8d as FWPMCALLOUTSUBSCRIPTION0}
+
+pub using @f96315895a1fe9be {type FWPMCHANGETYPE_08d861a1febc as FWPMCHANGETYPE}
+
+pub using @f96315895a1fe9be {type FWPMCLASSIFYOPTION0_8e5a21821526 as FWPMCLASSIFYOPTION0}
+
+pub using @f96315895a1fe9be {type FWPMCLASSIFYOPTIONS0_cd76ce8af532 as FWPMCLASSIFYOPTIONS0}
+
+pub using @f96315895a1fe9be {type FWPMCONNECTION0_1db0fa3ec6ba as FWPMCONNECTION0}
+
+pub using @f96315895a1fe9be {type FWPMCONNECTIONCALLBACK0_f9aa2ffeed14 as FWPMCONNECTIONCALLBACK0}
+
+pub using @f96315895a1fe9be {type FWPMCONNECTIONENUMHANDLE_84be9712ae37 as FWPMCONNECTIONENUMHANDLE}
+
+pub using @f96315895a1fe9be {type FWPMCONNECTIONENUMTEMPLATE0_0326f4ab7548 as FWPMCONNECTIONENUMTEMPLATE0}
+
+pub using @f96315895a1fe9be {type FWPMCONNECTIONEVENTTYPE_f42383ac415e as FWPMCONNECTIONEVENTTYPE}
+
+pub using @f96315895a1fe9be {type FWPMCONNECTIONSUBSCRIPTION0_d7f66d9109e5 as FWPMCONNECTIONSUBSCRIPTION0}
+
+pub using @f96315895a1fe9be {type FWPMDISPLAYDATA0_5170796389b2 as FWPMDISPLAYDATA0}
+
+pub using @f96315895a1fe9be {type FWPMDYNAMICKEYWORDCALLBACK0_c1a36b2b1188 as FWPMDYNAMICKEYWORDCALLBACK0}
+
+pub using @f96315895a1fe9be {type FWPMENGINEHANDLE_58515040e12b as FWPMENGINEHANDLE}
+
+pub using @f96315895a1fe9be {type FWPMENGINEOPTION_8e49b5c0b69d as FWPMENGINEOPTION}
+
+pub using @f96315895a1fe9be {type FWPMFIELD0_cfab12405083 as FWPMFIELD0}
+
+pub using @f96315895a1fe9be {type FWPMFIELDTYPE_a7f6e770128d as FWPMFIELDTYPE}
+
+pub using @f96315895a1fe9be {type FWPMFILTER0_f38dff79864d as FWPMFILTER0}
+
+pub using @f96315895a1fe9be {type FWPMFILTERCHANGE0_909656b93342 as FWPMFILTERCHANGE0}
+
+pub using @f96315895a1fe9be {type FWPMFILTERCHANGECALLBACK0_39158b0afc33 as FWPMFILTERCHANGECALLBACK0}
+
+pub using @f96315895a1fe9be {type FWPMFILTERCONDITION0_0e5d5fa404c9 as FWPMFILTERCONDITION0}
+
+pub using @f96315895a1fe9be {type FWPMFILTERENUMHANDLE_df8566c2e061 as FWPMFILTERENUMHANDLE}
+
+pub using @f96315895a1fe9be {type FWPMFILTERENUMTEMPLATE0_a66ae9707422 as FWPMFILTERENUMTEMPLATE0}
+
+pub using @f96315895a1fe9be {type FWPMFILTERFLAGS_4aced67eb51b as FWPMFILTERFLAGS}
+
+pub using @f96315895a1fe9be {type FWPMFILTERSUBSCRIPTION0_cf6d436373ba as FWPMFILTERSUBSCRIPTION0}
+
+pub using @f96315895a1fe9be {type FWPMLAYER0_3ed1d35e0cd6 as FWPMLAYER0}
+
+pub using @f96315895a1fe9be {type FWPMLAYERENUMHANDLE_d11e0bbae86c as FWPMLAYERENUMHANDLE}
+
+pub using @f96315895a1fe9be {type FWPMLAYERENUMTEMPLATE0_9e2f947ac98b as FWPMLAYERENUMTEMPLATE0}
+
+pub using @f96315895a1fe9be {type FWPMLAYERSTATISTICS0_c1089305f788 as FWPMLAYERSTATISTICS0}
+
+pub using @f96315895a1fe9be {type FWPMLAYERSTATISTICS1_7217e11f62c6 as FWPMLAYERSTATISTICS1}
+
+pub using @f96315895a1fe9be {type FWPMNETEVENT0_d926093820c2 as FWPMNETEVENT0}
+
+pub using @f96315895a1fe9be {type FWPMNETEVENT1_61d5ec60210b as FWPMNETEVENT1}
+
+pub using @f96315895a1fe9be {type FWPMNETEVENT2_bd31012be63a as FWPMNETEVENT2}
+
+pub using @f96315895a1fe9be {type FWPMNETEVENT3_2e433bc1c9fe as FWPMNETEVENT3}
+
+pub using @f96315895a1fe9be {type FWPMNETEVENT4_8abbb73bf818 as FWPMNETEVENT4}
+
+pub using @f96315895a1fe9be {type FWPMNETEVENT5_82ce6b3c9d5a as FWPMNETEVENT5}
+
+pub using @f96315895a1fe9be {type FWPMNETEVENTCALLBACK0_7cc33251c250 as FWPMNETEVENTCALLBACK0}
+
+pub using @f96315895a1fe9be {type FWPMNETEVENTCALLBACK1_b6b13cbccead as FWPMNETEVENTCALLBACK1}
+
+pub using @f96315895a1fe9be {type FWPMNETEVENTCALLBACK2_68108426e599 as FWPMNETEVENTCALLBACK2}
+
+pub using @f96315895a1fe9be {type FWPMNETEVENTCALLBACK3_7d9799dab869 as FWPMNETEVENTCALLBACK3}
+
+pub using @f96315895a1fe9be {type FWPMNETEVENTCALLBACK4_dc0fd5d65d8d as FWPMNETEVENTCALLBACK4}
+
+pub using @f96315895a1fe9be {type FWPMNETEVENTCAPABILITYALLOW0_a49c876a8957 as FWPMNETEVENTCAPABILITYALLOW0}
+
+pub using @f96315895a1fe9be {type FWPMNETEVENTCAPABILITYDROP0_3e853a6d4a19 as FWPMNETEVENTCAPABILITYDROP0}
+
+pub using @f96315895a1fe9be {type FWPMNETEVENTCLASSIFYALLOW0_6e3f239c9880 as FWPMNETEVENTCLASSIFYALLOW0}
+
+pub using @f96315895a1fe9be {type FWPMNETEVENTCLASSIFYDROP0_3065e85f6df9 as FWPMNETEVENTCLASSIFYDROP0}
+
+pub using @f96315895a1fe9be {type FWPMNETEVENTCLASSIFYDROP1_46b1475ce18e as FWPMNETEVENTCLASSIFYDROP1}
+
+pub using @f96315895a1fe9be {type FWPMNETEVENTCLASSIFYDROP2_afaf4385eded as FWPMNETEVENTCLASSIFYDROP2}
+
+pub using @f96315895a1fe9be {type FWPMNETEVENTCLASSIFYDROPMAC0_c4df7d770a62 as FWPMNETEVENTCLASSIFYDROPMAC0}
+
+pub using @f96315895a1fe9be {type FWPMNETEVENTENUMHANDLE_1dc7f9ee48cb as FWPMNETEVENTENUMHANDLE}
+
+pub using @f96315895a1fe9be {type FWPMNETEVENTENUMTEMPLATE0_538f6fe914c5 as FWPMNETEVENTENUMTEMPLATE0}
+
+pub using @f96315895a1fe9be {type FWPMNETEVENTHEADER0_a5c8e310a9b2 as FWPMNETEVENTHEADER0}
+
+pub using @f96315895a1fe9be {type FWPMNETEVENTHEADER1_1e692b3b3595 as FWPMNETEVENTHEADER1}
+
+pub using @f96315895a1fe9be {type FWPMNETEVENTHEADER2_32ceec576ae4 as FWPMNETEVENTHEADER2}
+
+pub using @f96315895a1fe9be {type FWPMNETEVENTHEADER3_64809b5b8132 as FWPMNETEVENTHEADER3}
+
+pub using @f96315895a1fe9be {type FWPMNETEVENTIKEEXTEMFAILURE0_8fb999665a23 as FWPMNETEVENTIKEEXTEMFAILURE0}
+
+pub using @f96315895a1fe9be {type FWPMNETEVENTIKEEXTEMFAILURE1_3612488c7f29 as FWPMNETEVENTIKEEXTEMFAILURE1}
+
+pub using @f96315895a1fe9be {type FWPMNETEVENTIKEEXTMMFAILURE0_f250c28e2ac7 as FWPMNETEVENTIKEEXTMMFAILURE0}
+
+pub using @f96315895a1fe9be {type FWPMNETEVENTIKEEXTMMFAILURE1_f837c39096f3 as FWPMNETEVENTIKEEXTMMFAILURE1}
+
+pub using @f96315895a1fe9be {type FWPMNETEVENTIKEEXTMMFAILURE2_9d3a9a361fd8 as FWPMNETEVENTIKEEXTMMFAILURE2}
+
+pub using @f96315895a1fe9be {type FWPMNETEVENTIKEEXTQMFAILURE0_0ebf54006bdc as FWPMNETEVENTIKEEXTQMFAILURE0}
+
+pub using @f96315895a1fe9be {type FWPMNETEVENTIKEEXTQMFAILURE1_3b1ca6e74dc0 as FWPMNETEVENTIKEEXTQMFAILURE1}
+
+pub using @f96315895a1fe9be {type FWPMNETEVENTIPSECDOSPDROP0_5bd1985ba7f7 as FWPMNETEVENTIPSECDOSPDROP0}
+
+pub using @f96315895a1fe9be {type FWPMNETEVENTIPSECKERNELDROP0_5ff986244ac2 as FWPMNETEVENTIPSECKERNELDROP0}
+
+pub using @f96315895a1fe9be {type FWPMNETEVENTLPMPACKETARRIVAL0_1a3dfbd1ffe6 as FWPMNETEVENTLPMPACKETARRIVAL0}
+
+pub using @f96315895a1fe9be {type FWPMNETEVENTSUBSCRIPTION0_965084909bc7 as FWPMNETEVENTSUBSCRIPTION0}
+
+pub using @f96315895a1fe9be {type FWPMNETEVENTTYPE_614c2d53fe57 as FWPMNETEVENTTYPE}
+
+pub using @f96315895a1fe9be {type FWPMNETWORKCONNECTIONPOLICYSETTING0_974c64c76050 as FWPMNETWORKCONNECTIONPOLICYSETTING0}
+
+pub using @f96315895a1fe9be {type FWPMNETWORKCONNECTIONPOLICYSETTINGS0_ea993630dc7c as FWPMNETWORKCONNECTIONPOLICYSETTINGS0}
+
+pub using @f96315895a1fe9be {type FWPMPROVIDER0_f5ebcf9acdf7 as FWPMPROVIDER0}
+
+pub using @f96315895a1fe9be {type FWPMPROVIDERCHANGE0_e511e641d9a6 as FWPMPROVIDERCHANGE0}
+
+pub using @f96315895a1fe9be {type FWPMPROVIDERCHANGECALLBACK0_0865b86cd168 as FWPMPROVIDERCHANGECALLBACK0}
+
+pub using @f96315895a1fe9be {type FWPMPROVIDERCONTEXT0_b264ef09ec31 as FWPMPROVIDERCONTEXT0}
+
+pub using @f96315895a1fe9be {type FWPMPROVIDERCONTEXT1_6feb343e26bd as FWPMPROVIDERCONTEXT1}
+
+pub using @f96315895a1fe9be {type FWPMPROVIDERCONTEXT2_61199511c21d as FWPMPROVIDERCONTEXT2}
+
+pub using @f96315895a1fe9be {type FWPMPROVIDERCONTEXT3_4fdcaf43867e as FWPMPROVIDERCONTEXT3}
+
+pub using @f96315895a1fe9be {type FWPMPROVIDERCONTEXTCHANGE0_bc1ef48a9659 as FWPMPROVIDERCONTEXTCHANGE0}
+
+pub using @f96315895a1fe9be {type FWPMPROVIDERCONTEXTCHANGECALLBACK0_dac9a02c1b57 as FWPMPROVIDERCONTEXTCHANGECALLBACK0}
+
+pub using @f96315895a1fe9be {type FWPMPROVIDERCONTEXTENUMHANDLE_35bf8c496dfc as FWPMPROVIDERCONTEXTENUMHANDLE}
+
+pub using @f96315895a1fe9be {type FWPMPROVIDERCONTEXTENUMTEMPLATE0_e835d18b1cbc as FWPMPROVIDERCONTEXTENUMTEMPLATE0}
+
+pub using @f96315895a1fe9be {type FWPMPROVIDERCONTEXTSUBSCRIPTION0_a000f74c893a as FWPMPROVIDERCONTEXTSUBSCRIPTION0}
+
+pub using @f96315895a1fe9be {type FWPMPROVIDERCONTEXTTYPE_0ebd85a75eae as FWPMPROVIDERCONTEXTTYPE}
+
+pub using @f96315895a1fe9be {type FWPMPROVIDERENUMHANDLE_1c783c6ff870 as FWPMPROVIDERENUMHANDLE}
+
+pub using @f96315895a1fe9be {type FWPMPROVIDERENUMTEMPLATE0_77cec795c50f as FWPMPROVIDERENUMTEMPLATE0}
+
+pub using @f96315895a1fe9be {type FWPMPROVIDERSUBSCRIPTION0_44110a592e68 as FWPMPROVIDERSUBSCRIPTION0}
+
+pub using @f96315895a1fe9be {type FWPMSERVICESTATE_840fe25531a2 as FWPMSERVICESTATE}
+
+pub using @f96315895a1fe9be {type FWPMSESSION0_ecc2989d1542 as FWPMSESSION0}
+
+pub using @f96315895a1fe9be {type FWPMSESSIONENUMHANDLE_6d014af9c9ee as FWPMSESSIONENUMHANDLE}
+
+pub using @f96315895a1fe9be {type FWPMSESSIONENUMTEMPLATE0_68970ea77fde as FWPMSESSIONENUMTEMPLATE0}
+
+pub using @f96315895a1fe9be {type FWPMSTATISTICS0_854c4f99f09b as FWPMSTATISTICS0}
+
+pub using @f96315895a1fe9be {type FWPMSTATISTICS1_7c128dc168af as FWPMSTATISTICS1}
+
+pub using @f96315895a1fe9be {type FWPMSUBLAYER0_5acbd95bd8cc as FWPMSUBLAYER0}
+
+pub using @f96315895a1fe9be {type FWPMSUBLAYERCHANGE0_bae13e658af2 as FWPMSUBLAYERCHANGE0}
+
+pub using @f96315895a1fe9be {type FWPMSUBLAYERCHANGECALLBACK0_d78d273604ae as FWPMSUBLAYERCHANGECALLBACK0}
+
+pub using @f96315895a1fe9be {type FWPMSUBLAYERENUMHANDLE_7805528ff1a5 as FWPMSUBLAYERENUMHANDLE}
+
+pub using @f96315895a1fe9be {type FWPMSUBLAYERENUMTEMPLATE0_64ccf4b10d8e as FWPMSUBLAYERENUMTEMPLATE0}
+
+pub using @f96315895a1fe9be {type FWPMSUBLAYERSUBSCRIPTION0_b483e98507c5 as FWPMSUBLAYERSUBSCRIPTION0}
+
+pub using @f96315895a1fe9be {type FWPMSUBSCRIPTIONFLAGS_40683e1caea0 as FWPMSUBSCRIPTIONFLAGS}
+
+pub using @f96315895a1fe9be {type FWPMSYSTEMPORTS0_a85065b01992 as FWPMSYSTEMPORTS0}
+
+pub using @f96315895a1fe9be {type FWPMSYSTEMPORTSBYTYPE0_d5b52a16b963 as FWPMSYSTEMPORTSBYTYPE0}
+
+pub using @f96315895a1fe9be {type FWPMSYSTEMPORTSCALLBACK0_756a28b547a8 as FWPMSYSTEMPORTSCALLBACK0}
+
+pub using @f96315895a1fe9be {type FWPMSYSTEMPORTTYPE_45732e44f797 as FWPMSYSTEMPORTTYPE}
+
+pub using @f96315895a1fe9be {type FWPMVSWITCHEVENT0_583e8b47fece as FWPMVSWITCHEVENT0}
+
+pub using @f96315895a1fe9be {type FWPMVSWITCHEVENTCALLBACK0_6e719f44ed7c as FWPMVSWITCHEVENTCALLBACK0}
+
+pub using @f96315895a1fe9be {type FWPMVSWITCHEVENTSUBSCRIPTION0_dd500f4eedb6 as FWPMVSWITCHEVENTSUBSCRIPTION0}
+
+pub using @f96315895a1fe9be {type FWPMVSWITCHEVENTTYPE_37dabcb0b2c3 as FWPMVSWITCHEVENTTYPE}
+
+pub using @f96315895a1fe9be {type FWPNETWORKCONNECTIONPOLICYSETTINGTYPE_0746fe027f42 as FWPNETWORKCONNECTIONPOLICYSETTINGTYPE}
+
+pub using @f96315895a1fe9be {type FWPRANGE0_0553ab7be3a7 as FWPRANGE0}
+
+pub using @f96315895a1fe9be {type FWPTOKENINFORMATION_0ef06057074a as FWPTOKENINFORMATION}
+
+pub using @f96315895a1fe9be {type FWPV4ADDRANDMASK_caa72d061091 as FWPV4ADDRANDMASK}
+
+pub using @f96315895a1fe9be {type FWPV6ADDRANDMASK_f31e0b48a476 as FWPV6ADDRANDMASK}
+
+pub using @f96315895a1fe9be {type FWPVALUE0_6e2bfe160eba as FWPVALUE0}
+
+pub using @f96315895a1fe9be {type FWPVSWITCHNETWORKTYPE_617782eb44bb as FWPVSWITCHNETWORKTYPE}
+
+pub using @f96315895a1fe9be {type IKEEXTAUTHENTICATIONIMPERSONATIONTYPE_dc7271a8342e as IKEEXTAUTHENTICATIONIMPERSONATIONTYPE}
+
+pub using @f96315895a1fe9be {type IKEEXTAUTHENTICATIONMETHOD0_9a4de635051f as IKEEXTAUTHENTICATIONMETHOD0}
+
+pub using @f96315895a1fe9be {type IKEEXTAUTHENTICATIONMETHOD1_ba7f83ef3ff4 as IKEEXTAUTHENTICATIONMETHOD1}
+
+pub using @f96315895a1fe9be {type IKEEXTAUTHENTICATIONMETHOD2_9a8cabd780ee as IKEEXTAUTHENTICATIONMETHOD2}
+
+pub using @f96315895a1fe9be {type IKEEXTAUTHENTICATIONMETHODTYPE_017b94ddadf5 as IKEEXTAUTHENTICATIONMETHODTYPE}
+
+pub using @f96315895a1fe9be {type IKEEXTCERTAUTH_9cb46cfc4aaa as IKEEXTCERTAUTH}
+
+pub using @f96315895a1fe9be {type IKEEXTCERTCONFIGTYPE_1d2f38f548a6 as IKEEXTCERTCONFIGTYPE}
+
+pub using @f96315895a1fe9be {type IKEEXTCERTCRITERIANAMETYPE_4ae294dd318d as IKEEXTCERTCRITERIANAMETYPE}
+
+pub using @f96315895a1fe9be {type IKEEXTCERTEKUS0_348267096f2f as IKEEXTCERTEKUS0}
+
+pub using @f96315895a1fe9be {type IKEEXTCERTFLAGS_4815caa90f26 as IKEEXTCERTFLAGS}
+
+pub using @f96315895a1fe9be {type IKEEXTCERTIFICATEAUTHENTICATION0_595937bd1405 as IKEEXTCERTIFICATEAUTHENTICATION0}
+
+pub using @f96315895a1fe9be {type IKEEXTCERTIFICATEAUTHENTICATION1_cfa4782f5e7d as IKEEXTCERTIFICATEAUTHENTICATION1}
+
+pub using @f96315895a1fe9be {type IKEEXTCERTIFICATEAUTHENTICATION2_0510d8de0bbe as IKEEXTCERTIFICATEAUTHENTICATION2}
+
+pub using @f96315895a1fe9be {type IKEEXTCERTIFICATECREDENTIAL0_6f95d59fe9f0 as IKEEXTCERTIFICATECREDENTIAL0}
+
+pub using @f96315895a1fe9be {type IKEEXTCERTIFICATECREDENTIAL1_8f3ba7af444e as IKEEXTCERTIFICATECREDENTIAL1}
+
+pub using @f96315895a1fe9be {type IKEEXTCERTIFICATECRITERIA0_c07d176cae35 as IKEEXTCERTIFICATECRITERIA0}
+
+pub using @f96315895a1fe9be {type IKEEXTCERTNAME0_2e7b00c7aca8 as IKEEXTCERTNAME0}
+
+pub using @f96315895a1fe9be {type IKEEXTCERTROOTCONFIG0_41092a28bf2c as IKEEXTCERTROOTCONFIG0}
+
+pub using @f96315895a1fe9be {type IKEEXTCIPHERALGORITHM0_76645bf8b433 as IKEEXTCIPHERALGORITHM0}
+
+pub using @f96315895a1fe9be {type IKEEXTCIPHERTYPE_986c4ee6fdc8 as IKEEXTCIPHERTYPE}
+
+pub using @f96315895a1fe9be {type IKEEXTCOMMONSTATISTICS0_ef794ec1f4cc as IKEEXTCOMMONSTATISTICS0}
+
+pub using @f96315895a1fe9be {type IKEEXTCOMMONSTATISTICS1_d706391d5115 as IKEEXTCOMMONSTATISTICS1}
+
+pub using @f96315895a1fe9be {type IKEEXTCOOKIEPAIR0_5f9bf18614d8 as IKEEXTCOOKIEPAIR0}
+
+pub using @f96315895a1fe9be {type IKEEXTCREDENTIAL0_0025cbf86674 as IKEEXTCREDENTIAL0}
+
+pub using @f96315895a1fe9be {type IKEEXTCREDENTIAL1_61f778bafb27 as IKEEXTCREDENTIAL1}
+
+pub using @f96315895a1fe9be {type IKEEXTCREDENTIAL2_f5e02fad0584 as IKEEXTCREDENTIAL2}
+
+pub using @f96315895a1fe9be {type IKEEXTCREDENTIALPAIR0_91245b9cadeb as IKEEXTCREDENTIALPAIR0}
+
+pub using @f96315895a1fe9be {type IKEEXTCREDENTIALPAIR1_55bdd2ddcce3 as IKEEXTCREDENTIALPAIR1}
+
+pub using @f96315895a1fe9be {type IKEEXTCREDENTIALPAIR2_9ded64abd5a4 as IKEEXTCREDENTIALPAIR2}
+
+pub using @f96315895a1fe9be {type IKEEXTCREDENTIALS0_8eaa5d0d2f50 as IKEEXTCREDENTIALS0}
+
+pub using @f96315895a1fe9be {type IKEEXTCREDENTIALS1_634bbe25e7bd as IKEEXTCREDENTIALS1}
+
+pub using @f96315895a1fe9be {type IKEEXTCREDENTIALS2_46cb696522a1 as IKEEXTCREDENTIALS2}
+
+pub using @f96315895a1fe9be {type IKEEXTDHGROUP_af99849f1463 as IKEEXTDHGROUP}
+
+pub using @f96315895a1fe9be {type IKEEXTEAPAUTHENTICATION0_28aa0191e687 as IKEEXTEAPAUTHENTICATION0}
+
+pub using @f96315895a1fe9be {type IKEEXTEAPAUTHENTICATIONFLAGS_3282fd065643 as IKEEXTEAPAUTHENTICATIONFLAGS}
+
+pub using @f96315895a1fe9be {type IKEEXTEMPOLICY0_c53290f9b6b4 as IKEEXTEMPOLICY0}
+
+pub using @f96315895a1fe9be {type IKEEXTEMPOLICY1_d789927dafd8 as IKEEXTEMPOLICY1}
+
+pub using @f96315895a1fe9be {type IKEEXTEMPOLICY2_0c43e742be6b as IKEEXTEMPOLICY2}
+
+pub using @f96315895a1fe9be {type IKEEXTEMSASTATE_7848b69a42fb as IKEEXTEMSASTATE}
+
+pub using @f96315895a1fe9be {type IKEEXTINTEGRITYALGORITHM0_44af738a9f6d as IKEEXTINTEGRITYALGORITHM0}
+
+pub using @f96315895a1fe9be {type IKEEXTINTEGRITYTYPE_09f646bfd959 as IKEEXTINTEGRITYTYPE}
+
+pub using @f96315895a1fe9be {type IKEEXTIPV6CGAAUTHENTICATION0_472c461bcd1f as IKEEXTIPV6CGAAUTHENTICATION0}
+
+pub using @f96315895a1fe9be {type IKEEXTIPVERSIONSPECIFICCOMMONSTATISTICS0_6c48ca176ab1 as IKEEXTIPVERSIONSPECIFICCOMMONSTATISTICS0}
+
+pub using @f96315895a1fe9be {type IKEEXTIPVERSIONSPECIFICCOMMONSTATISTICS1_57c96c4d7c1c as IKEEXTIPVERSIONSPECIFICCOMMONSTATISTICS1}
+
+pub using @f96315895a1fe9be {type IKEEXTIPVERSIONSPECIFICKEYMODULESTATISTICS0_f8cc3e4e7379 as IKEEXTIPVERSIONSPECIFICKEYMODULESTATISTICS0}
+
+pub using @f96315895a1fe9be {type IKEEXTIPVERSIONSPECIFICKEYMODULESTATISTICS1_4bc01e563d85 as IKEEXTIPVERSIONSPECIFICKEYMODULESTATISTICS1}
+
+pub using @f96315895a1fe9be {type IKEEXTKERBEROSAUTHENTICATION0_04ec0d4bfefe as IKEEXTKERBEROSAUTHENTICATION0}
+
+pub using @f96315895a1fe9be {type IKEEXTKERBEROSAUTHENTICATION1_46cdb5dcaf90 as IKEEXTKERBEROSAUTHENTICATION1}
+
+pub using @f96315895a1fe9be {type IKEEXTKERBEROSAUTHENTICATIONFLAGS_c66369bd2d6b as IKEEXTKERBEROSAUTHENTICATIONFLAGS}
+
+pub using @f96315895a1fe9be {type IKEEXTKEYMODULESTATISTICS0_77a075f9771d as IKEEXTKEYMODULESTATISTICS0}
+
+pub using @f96315895a1fe9be {type IKEEXTKEYMODULESTATISTICS1_950224d3faa5 as IKEEXTKEYMODULESTATISTICS1}
+
+pub using @f96315895a1fe9be {type IKEEXTKEYMODULETYPE_2591f4644e48 as IKEEXTKEYMODULETYPE}
+
+pub using @f96315895a1fe9be {type IKEEXTMMSASTATE_9a940c87a6aa as IKEEXTMMSASTATE}
+
+pub using @f96315895a1fe9be {type IKEEXTNAMECREDENTIAL0_23ef61381738 as IKEEXTNAMECREDENTIAL0}
+
+pub using @f96315895a1fe9be {type IKEEXTNTLMV2AUTHENTICATION0_ea06a791845f as IKEEXTNTLMV2AUTHENTICATION0}
+
+pub using @f96315895a1fe9be {type IKEEXTPOLICY0_93695cce9c84 as IKEEXTPOLICY0}
+
+pub using @f96315895a1fe9be {type IKEEXTPOLICY1_9e0c21cbea1c as IKEEXTPOLICY1}
+
+pub using @f96315895a1fe9be {type IKEEXTPOLICY2_6b893de21ac7 as IKEEXTPOLICY2}
+
+pub using @f96315895a1fe9be {type IKEEXTPOLICYFLAG_24c966bd83f8 as IKEEXTPOLICYFLAG}
+
+pub using @f96315895a1fe9be {type IKEEXTPRESHAREDKEYAUTHENTICATION0_623ca6bc1efa as IKEEXTPRESHAREDKEYAUTHENTICATION0}
+
+pub using @f96315895a1fe9be {type IKEEXTPRESHAREDKEYAUTHENTICATION1_bf1f954f4405 as IKEEXTPRESHAREDKEYAUTHENTICATION1}
+
+pub using @f96315895a1fe9be {type IKEEXTPRESHAREDKEYAUTHENTICATIONFLAGS_72a5456e4a4a as IKEEXTPRESHAREDKEYAUTHENTICATIONFLAGS}
+
+pub using @f96315895a1fe9be {type IKEEXTPROPOSAL0_968a99fa8f80 as IKEEXTPROPOSAL0}
+
+pub using @f96315895a1fe9be {type IKEEXTQMSASTATE_467b3c822513 as IKEEXTQMSASTATE}
+
+pub using @f96315895a1fe9be {type IKEEXTRESERVEDAUTHENTICATION0_91d456781d90 as IKEEXTRESERVEDAUTHENTICATION0}
+
+pub using @f96315895a1fe9be {type IKEEXTRESERVEDAUTHENTICATIONFLAGS_92150f3e976d as IKEEXTRESERVEDAUTHENTICATIONFLAGS}
+
+pub using @f96315895a1fe9be {type IKEEXTSADETAILS0_016f22e64a1b as IKEEXTSADETAILS0}
+
+pub using @f96315895a1fe9be {type IKEEXTSADETAILS1_c5e3f82153e4 as IKEEXTSADETAILS1}
+
+pub using @f96315895a1fe9be {type IKEEXTSADETAILS2_cb154950c496 as IKEEXTSADETAILS2}
+
+pub using @f96315895a1fe9be {type IKEEXTSAENUMHANDLE_86cf35ca8222 as IKEEXTSAENUMHANDLE}
+
+pub using @f96315895a1fe9be {type IKEEXTSAENUMTEMPLATE0_663bf31dd1c4 as IKEEXTSAENUMTEMPLATE0}
+
+pub using @f96315895a1fe9be {type IKEEXTSAROLE_46129c7e9511 as IKEEXTSAROLE}
+
+pub using @f96315895a1fe9be {type IKEEXTSTATISTICS0_7c5b05dec653 as IKEEXTSTATISTICS0}
+
+pub using @f96315895a1fe9be {type IKEEXTSTATISTICS1_32654802cb98 as IKEEXTSTATISTICS1}
+
+pub using @f96315895a1fe9be {type IKEEXTTRAFFIC0_de0c9fe17f6a as IKEEXTTRAFFIC0}
+
+pub using @f96315895a1fe9be {type IPSECADDRESSINFO0_b6029628850a as IPSECADDRESSINFO0}
+
+pub using @f96315895a1fe9be {type IPSECAGGREGATEDROPPACKETSTATISTICS0_abbfc7841835 as IPSECAGGREGATEDROPPACKETSTATISTICS0}
+
+pub using @f96315895a1fe9be {type IPSECAGGREGATEDROPPACKETSTATISTICS1_a3e58115c538 as IPSECAGGREGATEDROPPACKETSTATISTICS1}
+
+pub using @f96315895a1fe9be {type IPSECAGGREGATESASTATISTICS0_b6e7fd83ae19 as IPSECAGGREGATESASTATISTICS0}
+
+pub using @f96315895a1fe9be {type IPSECAHDROPPACKETSTATISTICS0_884eb134385a as IPSECAHDROPPACKETSTATISTICS0}
+
+pub using @f96315895a1fe9be {type IPSECAUTHANDCIPHERTRANSFORM0_58e1a20ee7ca as IPSECAUTHANDCIPHERTRANSFORM0}
+
+pub using @f96315895a1fe9be {type IPSECAUTHTRANSFORM0_9fe7e71efdeb as IPSECAUTHTRANSFORM0}
+
+pub using @f96315895a1fe9be {type IPSECAUTHTRANSFORMID0_84ebb667faa9 as IPSECAUTHTRANSFORMID0}
+
+pub using @f96315895a1fe9be {type IPSECAUTHTYPE_a31a2db5c7c9 as IPSECAUTHTYPE}
+
+pub using @f96315895a1fe9be {type IPSECCIPHERTRANSFORM0_edec8c297393 as IPSECCIPHERTRANSFORM0}
+
+pub using @f96315895a1fe9be {type IPSECCIPHERTRANSFORMID0_5292a0d35fc2 as IPSECCIPHERTRANSFORMID0}
+
+pub using @f96315895a1fe9be {type IPSECCIPHERTYPE_5533e4722c06 as IPSECCIPHERTYPE}
+
+pub using @f96315895a1fe9be {type IPSECDOSPFLAGS_44885c8f3146 as IPSECDOSPFLAGS}
+
+pub using @f96315895a1fe9be {type IPSECDOSPOPTIONS0_c73fda82ebc8 as IPSECDOSPOPTIONS0}
+
+pub using @f96315895a1fe9be {type IPSECDOSPSTATE0_9290d52f8330 as IPSECDOSPSTATE0}
+
+pub using @f96315895a1fe9be {type IPSECDOSPSTATEENUMHANDLE_6d20173800f1 as IPSECDOSPSTATEENUMHANDLE}
+
+pub using @f96315895a1fe9be {type IPSECDOSPSTATEENUMTEMPLATE0_4850e5575419 as IPSECDOSPSTATEENUMTEMPLATE0}
+
+pub using @f96315895a1fe9be {type IPSECDOSPSTATISTICS0_caaa3e9cb6b9 as IPSECDOSPSTATISTICS0}
+
+pub using @f96315895a1fe9be {type IPSECESPDROPPACKETSTATISTICS0_13c0837b90ae as IPSECESPDROPPACKETSTATISTICS0}
+
+pub using @f96315895a1fe9be {type IPSECFAILUREPOINT_168c546ecab2 as IPSECFAILUREPOINT}
+
+pub using @f96315895a1fe9be {type IPSECGETSPI0_259322ddf950 as IPSECGETSPI0}
+
+pub using @f96315895a1fe9be {type IPSECGETSPI1_21aa87adfa57 as IPSECGETSPI1}
+
+pub using @f96315895a1fe9be {type IPSECID0_d85258b6c3ae as IPSECID0}
+
+pub using @f96315895a1fe9be {type IPSECKEYINGPOLICY0_1504484d19a1 as IPSECKEYINGPOLICY0}
+
+pub using @f96315895a1fe9be {type IPSECKEYINGPOLICY1_f8a3a390a765 as IPSECKEYINGPOLICY1}
+
+pub using @f96315895a1fe9be {type IPSECKEYMANAGER0_7af395730e7f as IPSECKEYMANAGER0}
+
+pub using @f96315895a1fe9be {type IPSECKEYMANAGERCALLBACKS0_e1b103cc758c as IPSECKEYMANAGERCALLBACKS0}
+
+pub using @f96315895a1fe9be {type IPSECKEYMANAGERDICTATEKEY0_4f393d3a1039 as IPSECKEYMANAGERDICTATEKEY0}
+
+pub using @f96315895a1fe9be {type IPSECKEYMANAGERKEYDICTATIONCHECK0_5a2658da3fe1 as IPSECKEYMANAGERKEYDICTATIONCHECK0}
+
+pub using @f96315895a1fe9be {type IPSECKEYMANAGERNOTIFYKEY0_bfff5b227b16 as IPSECKEYMANAGERNOTIFYKEY0}
+
+pub using @f96315895a1fe9be {type IPSECKEYMODULESTATE0_85eb2982ec77 as IPSECKEYMODULESTATE0}
+
+pub using @f96315895a1fe9be {type IPSECPFSGROUP_d77a66ff5f8d as IPSECPFSGROUP}
+
+pub using @f96315895a1fe9be {type IPSECPOLICYFLAG_be19e340c930 as IPSECPOLICYFLAG}
+
+pub using @f96315895a1fe9be {type IPSECPROPOSAL0_7e5b007cb199 as IPSECPROPOSAL0}
+
+pub using @f96315895a1fe9be {type IPSECSA0_437128888fb3 as IPSECSA0}
+
+pub using @f96315895a1fe9be {type IPSECSAAUTHANDCIPHERINFORMATION0_44b092ab7760 as IPSECSAAUTHANDCIPHERINFORMATION0}
+
+pub using @f96315895a1fe9be {type IPSECSAAUTHINFORMATION0_62eef0632239 as IPSECSAAUTHINFORMATION0}
+
+pub using @f96315895a1fe9be {type IPSECSABUNDLE0_5ae6d2e489ae as IPSECSABUNDLE0}
+
+pub using @f96315895a1fe9be {type IPSECSABUNDLE1_9503d85aa84d as IPSECSABUNDLE1}
+
+pub using @f96315895a1fe9be {type IPSECSABUNDLEFLAGS_bab31d38c303 as IPSECSABUNDLEFLAGS}
+
+pub using @f96315895a1fe9be {type IPSECSACIPHERINFORMATION0_3ce4ffb10bcf as IPSECSACIPHERINFORMATION0}
+
+pub using @f96315895a1fe9be {type IPSECSACONTEXT0_e721e92a8d76 as IPSECSACONTEXT0}
+
+pub using @f96315895a1fe9be {type IPSECSACONTEXT1_536b4087b488 as IPSECSACONTEXT1}
+
+pub using @f96315895a1fe9be {type IPSECSACONTEXTCALLBACK0_43f08f8edff7 as IPSECSACONTEXTCALLBACK0}
+
+pub using @f96315895a1fe9be {type IPSECSACONTEXTCHANGE0_b149913c0748 as IPSECSACONTEXTCHANGE0}
+
+pub using @f96315895a1fe9be {type IPSECSACONTEXTENUMHANDLE_749120e5de2e as IPSECSACONTEXTENUMHANDLE}
+
+pub using @f96315895a1fe9be {type IPSECSACONTEXTENUMTEMPLATE0_a594a8e8c8f0 as IPSECSACONTEXTENUMTEMPLATE0}
+
+pub using @f96315895a1fe9be {type IPSECSACONTEXTEVENTTYPE0_d00db1561936 as IPSECSACONTEXTEVENTTYPE0}
+
+pub using @f96315895a1fe9be {type IPSECSACONTEXTSUBSCRIPTION0_ee662d35cb43 as IPSECSACONTEXTSUBSCRIPTION0}
+
+pub using @f96315895a1fe9be {type IPSECSADETAILS0_980333c41f6d as IPSECSADETAILS0}
+
+pub using @f96315895a1fe9be {type IPSECSADETAILS1_4bac72c128b1 as IPSECSADETAILS1}
+
+pub using @f96315895a1fe9be {type IPSECSAENUMHANDLE_4b86223bb03d as IPSECSAENUMHANDLE}
+
+pub using @f96315895a1fe9be {type IPSECSAENUMTEMPLATE0_84e99c01d5d4 as IPSECSAENUMTEMPLATE0}
+
+pub using @f96315895a1fe9be {type IPSECSAIDLETIMEOUT0_2416aa80e620 as IPSECSAIDLETIMEOUT0}
+
+pub using @f96315895a1fe9be {type IPSECSALIFETIME0_08b793c2c97d as IPSECSALIFETIME0}
+
+pub using @f96315895a1fe9be {type IPSECSATRANSFORM0_d10ed6339caa as IPSECSATRANSFORM0}
+
+pub using @f96315895a1fe9be {type IPSECSTATISTICS0_ab46e6162797 as IPSECSTATISTICS0}
+
+pub using @f96315895a1fe9be {type IPSECSTATISTICS1_eb1634385f9a as IPSECSTATISTICS1}
+
+pub using @f96315895a1fe9be {type IPSECTOKEN0_5e358169951d as IPSECTOKEN0}
+
+pub using @f96315895a1fe9be {type IPSECTOKENMODE_d96aac17f05b as IPSECTOKENMODE}
+
+pub using @f96315895a1fe9be {type IPSECTOKENPRINCIPAL_22651fa8acea as IPSECTOKENPRINCIPAL}
+
+pub using @f96315895a1fe9be {type IPSECTOKENTYPE_e3be8f91cb76 as IPSECTOKENTYPE}
+
+pub using @f96315895a1fe9be {type IPSECTRAFFIC0_78f5a48ad2a7 as IPSECTRAFFIC0}
+
+pub using @f96315895a1fe9be {type IPSECTRAFFIC1_4e798b4b6986 as IPSECTRAFFIC1}
+
+pub using @f96315895a1fe9be {type IPSECTRAFFICSELECTOR0_e62229c39f17 as IPSECTRAFFICSELECTOR0}
+
+pub using @f96315895a1fe9be {type IPSECTRAFFICSELECTORPOLICY0_3f713c3b043a as IPSECTRAFFICSELECTORPOLICY0}
+
+pub using @f96315895a1fe9be {type IPSECTRAFFICSTATISTICS0_27a27d005507 as IPSECTRAFFICSTATISTICS0}
+
+pub using @f96315895a1fe9be {type IPSECTRAFFICSTATISTICS1_ba988029fd50 as IPSECTRAFFICSTATISTICS1}
+
+pub using @f96315895a1fe9be {type IPSECTRAFFICTYPE_57ad131423c8 as IPSECTRAFFICTYPE}
+
+pub using @f96315895a1fe9be {type IPSECTRANSFORMTYPE_2fdf5bdbd559 as IPSECTRANSFORMTYPE}
+
+pub using @f96315895a1fe9be {type IPSECTRANSPORTPOLICY0_bb0e21d61f5c as IPSECTRANSPORTPOLICY0}
+
+pub using @f96315895a1fe9be {type IPSECTRANSPORTPOLICY1_accfdd91d6ef as IPSECTRANSPORTPOLICY1}
+
+pub using @f96315895a1fe9be {type IPSECTRANSPORTPOLICY2_a449b776f54a as IPSECTRANSPORTPOLICY2}
+
+pub using @f96315895a1fe9be {type IPSECTUNNELENDPOINT0_e81327529a89 as IPSECTUNNELENDPOINT0}
+
+pub using @f96315895a1fe9be {type IPSECTUNNELENDPOINTS0_9bc231aad8db as IPSECTUNNELENDPOINTS0}
+
+pub using @f96315895a1fe9be {type IPSECTUNNELENDPOINTS1_3a20d2e589b8 as IPSECTUNNELENDPOINTS1}
+
+pub using @f96315895a1fe9be {type IPSECTUNNELENDPOINTS2_d821f64121c4 as IPSECTUNNELENDPOINTS2}
+
+pub using @f96315895a1fe9be {type IPSECTUNNELPOLICY0_5524258b3451 as IPSECTUNNELPOLICY0}
+
+pub using @f96315895a1fe9be {type IPSECTUNNELPOLICY1_03c4ffb8381b as IPSECTUNNELPOLICY1}
+
+pub using @f96315895a1fe9be {type IPSECTUNNELPOLICY2_84b5ad89b66c as IPSECTUNNELPOLICY2}
+
+pub using @f96315895a1fe9be {type IPSECTUNNELPOLICY3_a50c659ff4a4 as IPSECTUNNELPOLICY3}
+
+pub using @f96315895a1fe9be {type IPSECV4UDPENCAPSULATION0_fa583b38722c as IPSECV4UDPENCAPSULATION0}
+
+pub using @f96315895a1fe9be {type IPSECVIRTUALIFTUNNELINFO0_411e6e12e3ba as IPSECVIRTUALIFTUNNELINFO0}
+
+pub using @f96315895a1fe9be {type PositionInfoEStruct_c0a13f6e9bef as PositionInfoEStruct}
+
+pub using @f96315895a1fe9be {type ReorderInfoEStruct_fa7a36a3a8ac as ReorderInfoEStruct}
+
+// Traits
+

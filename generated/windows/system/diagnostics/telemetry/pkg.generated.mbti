@@ -1,0 +1,72 @@
+// Generated using `moon info`, DON'T EDIT IT
+package "moonbit-community/win32-bindings/windows/system/diagnostics/telemetry"
+
+import {
+  "moonbit-community/win32-bindings/runtime/com",
+  "moonbit-community/win32-bindings/runtime/core",
+  "moonbit-community/win32-bindings/scc/20ffd2d39a5ea7a5",
+  "moonbitlang/core/ref",
+}
+
+// Values
+pub fn activatable_factory() -> @com.ComPtr[@com.IInspectable] raise @core.WindowsError
+
+pub fn get_status(@core.RawAddress) -> Int raise @core.WindowsError
+
+pub fn get_status_raw(@core.RawAddress, @ref.Ref[Int]) -> Int
+
+pub fn get_storage_size(@core.RawAddress) -> UInt raise @core.WindowsError
+
+pub fn get_storage_size_raw(@core.RawAddress, @ref.Ref[UInt]) -> Int
+
+pub fn get_upload_quota_size(@core.RawAddress) -> UInt raise @core.WindowsError
+
+pub fn get_upload_quota_size_raw(@core.RawAddress, @ref.Ref[UInt]) -> Int
+
+pub fn put_storage_size(@core.RawAddress, UInt) -> Unit raise @core.WindowsError
+
+pub fn put_storage_size_raw(@core.RawAddress, UInt) -> Int
+
+pub fn put_upload_quota_size(@core.RawAddress, UInt) -> Unit raise @core.WindowsError
+
+pub fn put_upload_quota_size_raw(@core.RawAddress, UInt) -> Int
+
+pub fn register__747cacb1fb_raw(@core.RawAddress, @core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub fn register__f174ee4f9c_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @ref.Ref[UInt64]) -> Int
+
+pub let settings_out_of_range : Int
+
+pub fn static_factory(@core.Guid) -> @com.ComPtr[@com.IInspectable] raise @core.WindowsError
+
+pub let status_2462b00c43 : String
+
+pub let status_90b63c6a5e : String
+
+pub let storage_size_6532d0a5c3 : String
+
+pub let storage_size_d9201bf6f0 : String
+
+pub let success : Int
+
+pub let unknown_failure : Int
+
+pub let upload_quota_size_1216377a3d : String
+
+pub let upload_quota_size_8d1259925e : String
+
+// Errors
+
+// Types and methods
+
+// Type aliases
+pub using @20ffd2d39a5ea7a5 {type PlatformTelemetryClient_07a9ec63d1b4 as PlatformTelemetryClient}
+
+pub using @20ffd2d39a5ea7a5 {type PlatformTelemetryRegistrationResult_324c393e8900 as PlatformTelemetryRegistrationResult}
+
+pub using @20ffd2d39a5ea7a5 {type PlatformTelemetryRegistrationSettings_a7e7a6d1b7c9 as PlatformTelemetryRegistrationSettings}
+
+pub using @20ffd2d39a5ea7a5 {type PlatformTelemetryRegistrationStatus_5417797b3b87 as PlatformTelemetryRegistrationStatus}
+
+// Traits
+

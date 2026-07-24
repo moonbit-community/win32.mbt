@@ -1,0 +1,132 @@
+// Generated using `moon info`, DON'T EDIT IT
+package "moonbit-community/win32-bindings/windows/win32/security/tpm"
+
+import {
+  "moonbit-community/win32-bindings/runtime/core",
+  "moonbit-community/win32-bindings/scc/e9fff811733ec41e",
+}
+
+// Values
+pub fn create_virtual_smart_card(@core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, UInt, @core.RawAddress, UInt, @core.RawAddress, UInt, @core.RawAddress, UInt, Int, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn create_virtual_smart_card_raw(@core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, UInt, @core.RawAddress, UInt, @core.RawAddress, UInt, @core.RawAddress, UInt, Int, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn create_virtual_smart_card_with_attestation(@core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, UInt, @core.RawAddress, UInt, @core.RawAddress, UInt, @core.RawAddress, UInt, @core.RawAddress, UInt, Int, Int, @core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn create_virtual_smart_card_with_attestation_raw(@core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, UInt, @core.RawAddress, UInt, @core.RawAddress, UInt, @core.RawAddress, UInt, @core.RawAddress, UInt, Int, Int, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn create_virtual_smart_card_with_pin_policy(@core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, UInt, @core.RawAddress, UInt, @core.RawAddress, UInt, @core.RawAddress, UInt, @core.RawAddress, UInt, Int, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn create_virtual_smart_card_with_pin_policy_raw(@core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, UInt, @core.RawAddress, UInt, @core.RawAddress, UInt, @core.RawAddress, UInt, @core.RawAddress, UInt, Int, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn destroy_virtual_smart_card(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn destroy_virtual_smart_card_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn report_error(@core.RawAddress, Int) -> Unit raise @core.WindowsError
+
+pub fn report_error_raw(@core.RawAddress, Int) -> Int
+
+pub fn report_progress(@core.RawAddress, Int) -> Unit raise @core.WindowsError
+
+pub fn report_progress_raw(@core.RawAddress, Int) -> Int
+
+pub let tpmvsc_attestation_aik_and_certificate : Int
+
+pub let tpmvsc_attestation_aik_only : Int
+
+pub let tpmvsc_attestation_none : Int
+
+pub let tpmvsc_default_admin_algorithm_id : UInt
+
+pub let tpmvscmgr_error_card_create : Int
+
+pub let tpmvscmgr_error_card_destroy : Int
+
+pub let tpmvscmgr_error_generate_filesystem : Int
+
+pub let tpmvscmgr_error_generate_locate_reader : Int
+
+pub let tpmvscmgr_error_impersonation : Int
+
+pub let tpmvscmgr_error_pin_complexity : Int
+
+pub let tpmvscmgr_error_reader_count_limit : Int
+
+pub let tpmvscmgr_error_terminal_services_session : Int
+
+pub let tpmvscmgr_error_vgidssimulator_create : Int
+
+pub let tpmvscmgr_error_vgidssimulator_destroy : Int
+
+pub let tpmvscmgr_error_vgidssimulator_initialize : Int
+
+pub let tpmvscmgr_error_vgidssimulator_read_property : Int
+
+pub let tpmvscmgr_error_vgidssimulator_write_property : Int
+
+pub let tpmvscmgr_error_vreader_create : Int
+
+pub let tpmvscmgr_error_vreader_destroy : Int
+
+pub let tpmvscmgr_error_vreader_initialize : Int
+
+pub let tpmvscmgr_error_vtpmsmartcard_create : Int
+
+pub let tpmvscmgr_error_vtpmsmartcard_destroy : Int
+
+pub let tpmvscmgr_error_vtpmsmartcard_initialize : Int
+
+pub let tpmvscmgr_status_card_created : Int
+
+pub let tpmvscmgr_status_card_destroyed : Int
+
+pub let tpmvscmgr_status_generate_authenticating : Int
+
+pub let tpmvscmgr_status_generate_running : Int
+
+pub let tpmvscmgr_status_generate_waiting : Int
+
+pub let tpmvscmgr_status_vgidssimulator_creating : Int
+
+pub let tpmvscmgr_status_vgidssimulator_destroying : Int
+
+pub let tpmvscmgr_status_vgidssimulator_initializing : Int
+
+pub let tpmvscmgr_status_vreader_creating : Int
+
+pub let tpmvscmgr_status_vreader_destroying : Int
+
+pub let tpmvscmgr_status_vreader_initializing : Int
+
+pub let tpmvscmgr_status_vtpmsmartcard_creating : Int
+
+pub let tpmvscmgr_status_vtpmsmartcard_destroying : Int
+
+pub let tpmvscmgr_status_vtpmsmartcard_initializing : Int
+
+// Errors
+
+// Types and methods
+
+// Type aliases
+pub using @e9fff811733ec41e {type ITpmVirtualSmartCardManager_eb0002b25ae2 as ITpmVirtualSmartCardManager}
+
+pub using @e9fff811733ec41e {type ITpmVirtualSmartCardManager2_de9d33d385da as ITpmVirtualSmartCardManager2}
+
+pub using @e9fff811733ec41e {type ITpmVirtualSmartCardManager3_e27b79828c7a as ITpmVirtualSmartCardManager3}
+
+pub using @e9fff811733ec41e {type ITpmVirtualSmartCardManagerStatusCallback_c9d80fac2169 as ITpmVirtualSmartCardManagerStatusCallback}
+
+pub using @e9fff811733ec41e {type RemoteTpmVirtualSmartCardManager_1ab786d1365b as RemoteTpmVirtualSmartCardManager}
+
+pub using @e9fff811733ec41e {type TPMVSCATTESTATIONTYPE_95a5f86652b2 as TPMVSCATTESTATIONTYPE}
+
+pub using @e9fff811733ec41e {type TPMVSCMGRERROR_1bab6617aa77 as TPMVSCMGRERROR}
+
+pub using @e9fff811733ec41e {type TPMVSCMGRSTATUS_d528327b2269 as TPMVSCMGRSTATUS}
+
+pub using @e9fff811733ec41e {type TpmVirtualSmartCardManager_425cf12f2d1e as TpmVirtualSmartCardManager}
+
+// Traits
+

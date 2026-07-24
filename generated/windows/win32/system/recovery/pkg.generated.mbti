@@ -1,0 +1,56 @@
+// Generated using `moon info`, DON'T EDIT IT
+package "moonbit-community/win32-bindings/windows/win32/system/recovery"
+
+import {
+  "moonbit-community/win32-bindings/runtime/core",
+  "moonbit-community/win32-bindings/scc/ea51c88eaada1d43",
+}
+
+// Values
+pub fn application_recovery_finished_raw(Int) -> Unit
+
+pub fn application_recovery_in_progress(@core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn application_recovery_in_progress_raw(@core.RawAddress) -> Int
+
+pub fn get_application_recovery_callback(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn get_application_recovery_callback_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn get_application_restart_settings(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn get_application_restart_settings_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> Int
+
+pub fn register_application_recovery_callback(@core.RawAddress, @core.RawAddress, UInt, UInt) -> Unit raise @core.WindowsError
+
+pub fn register_application_recovery_callback_raw(@core.RawAddress, @core.RawAddress, UInt, UInt) -> Int
+
+pub fn register_application_restart(@core.RawAddress, UInt) -> Unit raise @core.WindowsError
+
+pub fn register_application_restart_raw(@core.RawAddress, UInt) -> Int
+
+pub let restart_no_crash : UInt
+
+pub let restart_no_hang : UInt
+
+pub let restart_no_patch : UInt
+
+pub let restart_no_reboot : UInt
+
+pub fn unregister_application_recovery_callback() -> Unit raise @core.WindowsError
+
+pub fn unregister_application_recovery_callback_raw() -> Int
+
+pub fn unregister_application_restart() -> Unit raise @core.WindowsError
+
+pub fn unregister_application_restart_raw() -> Int
+
+// Errors
+
+// Types and methods
+
+// Type aliases
+pub using @ea51c88eaada1d43 {type REGISTERAPPLICATIONRESTARTFLAGS_205b062b93d6 as REGISTERAPPLICATIONRESTARTFLAGS}
+
+// Traits
+

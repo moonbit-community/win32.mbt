@@ -1,0 +1,88 @@
+// Generated using `moon info`, DON'T EDIT IT
+package "moonbit-community/win32-bindings/windows/win32/system/remote_assistance"
+
+import {
+  "moonbit-community/win32-bindings/runtime/core",
+  "moonbit-community/win32-bindings/scc/e9287a2907a64469",
+}
+
+// Values
+pub let dispid_event_on_context_data : UInt
+
+pub let dispid_event_on_send_error : UInt
+
+pub let dispid_event_on_state_changed : UInt
+
+pub let dispid_event_on_termination : UInt
+
+pub fn get_flags(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn get_flags_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn get_remote_user(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn get_remote_user_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn get_state(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn get_state_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub let rsf_invitee : Int
+
+pub let rsf_inviter : Int
+
+pub let rsf_none : Int
+
+pub let rsf_original_inviter : Int
+
+pub let rsf_remote_legacysession : Int
+
+pub let rsf_remote_win7_session : Int
+
+pub let rss_accepted : Int
+
+pub let rss_cancelled : Int
+
+pub let rss_connected : Int
+
+pub let rss_declined : Int
+
+pub let rss_invitation : Int
+
+pub let rss_ready : Int
+
+pub let rss_terminated : Int
+
+pub let rss_unknown : Int
+
+pub fn send_context_data(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn send_context_data_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn set_rendezvous_session(@core.RawAddress, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn set_rendezvous_session_raw(@core.RawAddress, @core.RawAddress) -> Int
+
+pub fn terminate(@core.RawAddress, Int, @core.RawAddress) -> Unit raise @core.WindowsError
+
+pub fn terminate_raw(@core.RawAddress, Int, @core.RawAddress) -> Int
+
+// Errors
+
+// Types and methods
+
+// Type aliases
+pub using @e9287a2907a64469 {type DRendezvousSessionEvents_06a2e96f06f6 as DRendezvousSessionEvents}
+
+pub using @e9287a2907a64469 {type IRendezvousApplication_3fbe62799bd0 as IRendezvousApplication}
+
+pub using @e9287a2907a64469 {type IRendezvousSession_ff0d8855a42c as IRendezvousSession}
+
+pub using @e9287a2907a64469 {type RENDEZVOUSSESSIONFLAGS_b41bb31c2643 as RENDEZVOUSSESSIONFLAGS}
+
+pub using @e9287a2907a64469 {type RENDEZVOUSSESSIONSTATE_317f532ce722 as RENDEZVOUSSESSIONSTATE}
+
+pub using @e9287a2907a64469 {type RendezvousApplication_efe08cefcce6 as RendezvousApplication}
+
+// Traits
+

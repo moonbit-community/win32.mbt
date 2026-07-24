@@ -1,0 +1,1162 @@
+// Generated using `moon info`, DON'T EDIT IT
+package "moonbit-community/win32-bindings/windows/win32/networking/http_server"
+
+import {
+  "moonbit-community/win32-bindings/runtime/core",
+  "moonbit-community/win32-bindings/scc/1df52b0f62fc95df",
+}
+
+// Values
+pub let cache_range_chunk_size : Int
+
+pub let create_request_queue_external_id_property : Int
+
+pub let create_request_queue_max : Int
+
+pub let delegate_request_delegate_url_property : Int
+
+pub let delegate_request_reserved_property : Int
+
+pub let ex_param_type_cert_config : Int
+
+pub let ex_param_type_error_headers : Int
+
+pub let ex_param_type_http2_settings_limits : Int
+
+pub let ex_param_type_http2_window : Int
+
+pub let ex_param_type_http_performance : Int
+
+pub let ex_param_type_max : Int
+
+pub let ex_param_type_tls_restrictions : Int
+
+pub let ex_param_type_tls_session_ticket_keys : Int
+
+pub let header_wait_timeout : Int
+
+pub let http503_response_verbosity_basic : Int
+
+pub let http503_response_verbosity_full : Int
+
+pub let http503_response_verbosity_limited : Int
+
+pub fn http_add_fragment_to_cache_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn http_add_url_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn http_add_url_to_url_group_raw(UInt64, @core.RawAddress, UInt64, UInt) -> UInt
+
+pub let http_auth_enable_basic : UInt
+
+pub let http_auth_enable_digest : UInt
+
+pub let http_auth_enable_kerberos : UInt
+
+pub let http_auth_enable_negotiate : UInt
+
+pub let http_auth_enable_ntlm : UInt
+
+pub let http_auth_ex_flag_capture_credential : UInt
+
+pub let http_auth_ex_flag_enable_kerberos_credential_caching : UInt
+
+pub let http_auth_status_failure : Int
+
+pub let http_auth_status_not_authenticated : Int
+
+pub let http_auth_status_success : Int
+
+pub let http_authentication_hardening_legacy : Int
+
+pub let http_authentication_hardening_medium : Int
+
+pub let http_authentication_hardening_strict : Int
+
+pub let http_cache_policy_maximum : Int
+
+pub let http_cache_policy_nocache : Int
+
+pub let http_cache_policy_time_to_live : Int
+
+pub let http_cache_policy_user_invalidates : Int
+
+pub fn http_cancel_http_request_raw(@core.RawAddress, UInt64, @core.RawAddress) -> UInt
+
+pub let http_cert_check_mode_cached_revocation : UInt
+
+pub let http_cert_check_mode_cached_urls : UInt
+
+pub let http_cert_check_mode_no_aia : UInt
+
+pub let http_cert_check_mode_no_revocation : UInt
+
+pub let http_cert_check_mode_no_usage_check : UInt
+
+pub let http_cert_check_mode_use_revocation_freshness : UInt
+
+pub let http_channel_bind_client_service : UInt
+
+pub let http_channel_bind_dotless_service : UInt
+
+pub let http_channel_bind_no_service_name_check : UInt
+
+pub let http_channel_bind_proxy : UInt
+
+pub let http_channel_bind_proxy_cohosting : UInt
+
+pub let http_channel_bind_secure_channel_token : UInt
+
+pub fn http_close_request_queue_raw(@core.RawAddress) -> UInt
+
+pub fn http_close_server_session_raw(UInt64) -> UInt
+
+pub fn http_close_url_group_raw(UInt64) -> UInt
+
+pub fn http_create_http_handle_raw(@core.RawAddress, UInt) -> UInt
+
+pub let http_create_request_queue_flag_controller : UInt
+
+pub let http_create_request_queue_flag_delegation : UInt
+
+pub let http_create_request_queue_flag_open_existing : UInt
+
+pub fn http_create_request_queue_raw(Bytes, @core.RawAddress, @core.RawAddress, UInt, @core.RawAddress) -> UInt
+
+pub fn http_create_server_session_raw(Bytes, @core.RawAddress, UInt) -> UInt
+
+pub fn http_create_url_group_raw(UInt64, @core.RawAddress, UInt) -> UInt
+
+pub let http_data_chunk_from_file_handle : Int
+
+pub let http_data_chunk_from_fragment_cache : Int
+
+pub let http_data_chunk_from_fragment_cache_ex : Int
+
+pub let http_data_chunk_from_memory : Int
+
+pub let http_data_chunk_from_win_http_fast_forwarding : Int
+
+pub let http_data_chunk_maximum : Int
+
+pub let http_data_chunk_trailers : Int
+
+pub fn http_declare_push_raw(@core.RawAddress, UInt64, Int, @core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn http_delegate_request_ex_raw(@core.RawAddress, @core.RawAddress, UInt64, UInt64, UInt, @core.RawAddress) -> UInt
+
+pub fn http_delete_service_configuration_raw(@core.RawAddress, Int, @core.RawAddress, UInt, @core.RawAddress) -> UInt
+
+pub let http_demand_cbt : UInt
+
+pub let http_enabled_state_active : Int
+
+pub let http_enabled_state_inactive : Int
+
+pub let http_feature_api_timings : Int
+
+pub let http_feature_automatic_chunked_encoding : Int
+
+pub let http_feature_cache_tls_client_hello : Int
+
+pub let http_feature_dedicated_req_queue_delegation_type : Int
+
+pub let http_feature_delegate_ex : Int
+
+pub let http_feature_disable_aia_flag : Int
+
+pub let http_feature_disable_tls_session_id : Int
+
+pub let http_feature_dscp : Int
+
+pub let http_feature_fast_forward_response : Int
+
+pub let http_feature_http3 : Int
+
+pub let http_feature_idle_connection_timeout_request_property : Int
+
+pub let http_feature_last : Int
+
+pub let http_feature_query_cipher_info : Int
+
+pub let http_feature_query_initial_packet_ttl : Int
+
+pub let http_feature_response_trailers : Int
+
+pub let http_feature_tls_dual_certs : Int
+
+pub let http_feature_tls_handshake_performance_counters : Int
+
+pub let http_feature_tls_session_tickets : Int
+
+pub let http_feature_unknown : Int
+
+pub let http_featuremax : Int
+
+pub fn http_find_url_group_id_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn http_flush_response_cache_raw(@core.RawAddress, @core.RawAddress, UInt, @core.RawAddress) -> UInt
+
+pub let http_flush_response_flag_recursive : UInt
+
+pub fn http_get_extension_raw(Bytes, UInt, @core.RawAddress, UInt) -> UInt
+
+pub let http_header_accept : Int
+
+pub let http_header_accept_charset : Int
+
+pub let http_header_accept_encoding : Int
+
+pub let http_header_accept_language : Int
+
+pub let http_header_accept_ranges : Int
+
+pub let http_header_age : Int
+
+pub let http_header_allow : Int
+
+pub let http_header_authorization : Int
+
+pub let http_header_cache_control : Int
+
+pub let http_header_connection : Int
+
+pub let http_header_content_encoding : Int
+
+pub let http_header_content_language : Int
+
+pub let http_header_content_length : Int
+
+pub let http_header_content_location : Int
+
+pub let http_header_content_md5 : Int
+
+pub let http_header_content_range : Int
+
+pub let http_header_content_type : Int
+
+pub let http_header_cookie : Int
+
+pub let http_header_date : Int
+
+pub let http_header_etag : Int
+
+pub let http_header_expect : Int
+
+pub let http_header_expires : Int
+
+pub let http_header_from : Int
+
+pub let http_header_host : Int
+
+pub let http_header_if_match : Int
+
+pub let http_header_if_modified_since : Int
+
+pub let http_header_if_none_match : Int
+
+pub let http_header_if_range : Int
+
+pub let http_header_if_unmodified_since : Int
+
+pub let http_header_keep_alive : Int
+
+pub let http_header_last_modified : Int
+
+pub let http_header_location : Int
+
+pub let http_header_max_forwards : Int
+
+pub let http_header_maximum : Int
+
+pub let http_header_pragma : Int
+
+pub let http_header_proxy_authenticate : Int
+
+pub let http_header_proxy_authorization : Int
+
+pub let http_header_range : Int
+
+pub let http_header_referer : Int
+
+pub let http_header_request_maximum : Int
+
+pub let http_header_response_maximum : Int
+
+pub let http_header_retry_after : Int
+
+pub let http_header_server : Int
+
+pub let http_header_set_cookie : Int
+
+pub let http_header_te : Int
+
+pub let http_header_trailer : Int
+
+pub let http_header_transfer_encoding : Int
+
+pub let http_header_translate : Int
+
+pub let http_header_upgrade : Int
+
+pub let http_header_user_agent : Int
+
+pub let http_header_vary : Int
+
+pub let http_header_via : Int
+
+pub let http_header_warning : Int
+
+pub let http_header_www_authenticate : Int
+
+pub let http_initialize_config : UInt
+
+pub fn http_initialize_raw(Bytes, UInt, @core.RawAddress) -> UInt
+
+pub let http_initialize_server : UInt
+
+pub fn http_is_feature_supported_raw(Int) -> Int
+
+pub let http_log_data_type_fields : Int
+
+pub let http_log_field_bytes_recv : UInt
+
+pub let http_log_field_bytes_sent : UInt
+
+pub let http_log_field_client_ip : UInt
+
+pub let http_log_field_client_port : UInt
+
+pub let http_log_field_computer_name : UInt
+
+pub let http_log_field_cookie : UInt
+
+pub let http_log_field_correlation_id : UInt
+
+pub let http_log_field_date : UInt
+
+pub let http_log_field_ext_fault_code_ext : UInt64
+
+pub let http_log_field_fault_code : UInt
+
+pub let http_log_field_host : UInt
+
+pub let http_log_field_method : UInt
+
+pub let http_log_field_queue_name : UInt
+
+pub let http_log_field_reason : UInt
+
+pub let http_log_field_referer : UInt
+
+pub let http_log_field_server_ip : UInt
+
+pub let http_log_field_server_port : UInt
+
+pub let http_log_field_site_id : UInt
+
+pub let http_log_field_site_name : UInt
+
+pub let http_log_field_status : UInt
+
+pub let http_log_field_stream_id : UInt
+
+pub let http_log_field_stream_id_ex : UInt
+
+pub let http_log_field_sub_status : UInt
+
+pub let http_log_field_time : UInt
+
+pub let http_log_field_time_taken : UInt
+
+pub let http_log_field_transport_type : UInt
+
+pub let http_log_field_uri : UInt
+
+pub let http_log_field_uri_query : UInt
+
+pub let http_log_field_uri_stem : UInt
+
+pub let http_log_field_user_agent : UInt
+
+pub let http_log_field_user_name : UInt
+
+pub let http_log_field_version : UInt
+
+pub let http_log_field_win32_status : UInt
+
+pub let http_logging_flag_local_time_rollover : UInt
+
+pub let http_logging_flag_log_errors_only : UInt
+
+pub let http_logging_flag_log_success_only : UInt
+
+pub let http_logging_flag_use_utf8_conversion : UInt
+
+pub let http_logging_rollover_daily : Int
+
+pub let http_logging_rollover_hourly : Int
+
+pub let http_logging_rollover_monthly : Int
+
+pub let http_logging_rollover_size : Int
+
+pub let http_logging_rollover_weekly : Int
+
+pub let http_logging_type_iis : Int
+
+pub let http_logging_type_ncsa : Int
+
+pub let http_logging_type_raw : Int
+
+pub let http_logging_type_w3_c : Int
+
+pub let http_max_server_queue_length : UInt
+
+pub let http_min_server_queue_length : UInt
+
+pub let http_none : Int
+
+pub fn http_prepare_url_raw(@core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub let http_protection_level_edge_restricted : Int
+
+pub let http_protection_level_restricted : Int
+
+pub let http_protection_level_unrestricted : Int
+
+pub let http_qos_setting_type_bandwidth : Int
+
+pub let http_qos_setting_type_connection_limit : Int
+
+pub let http_qos_setting_type_flow_rate : Int
+
+pub fn http_query_request_property_raw(@core.RawAddress, UInt64, Int, @core.RawAddress, UInt, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn http_query_request_queue_property_raw(@core.RawAddress, Int, @core.RawAddress, UInt, UInt, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn http_query_server_session_property_raw(UInt64, Int, @core.RawAddress, UInt, @core.RawAddress) -> UInt
+
+pub fn http_query_service_configuration_raw(@core.RawAddress, Int, @core.RawAddress, UInt, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn http_query_url_group_property_raw(UInt64, Int, @core.RawAddress, UInt, @core.RawAddress) -> UInt
+
+pub fn http_read_fragment_from_cache_raw(@core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn http_receive_client_certificate_raw(@core.RawAddress, UInt64, UInt, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub let http_receive_full_chain : UInt
+
+pub fn http_receive_http_request_raw(@core.RawAddress, UInt64, UInt, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub let http_receive_request_entity_body_flag_fill_buffer : UInt
+
+pub fn http_receive_request_entity_body_raw(@core.RawAddress, UInt64, UInt, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub let http_receive_request_flag_copy_body : UInt
+
+pub let http_receive_request_flag_flush_body : UInt
+
+pub let http_receive_secure_channel_token : UInt
+
+pub fn http_remove_url_from_url_group_raw(UInt64, @core.RawAddress, UInt) -> UInt
+
+pub fn http_remove_url_raw(@core.RawAddress, @core.RawAddress) -> UInt
+
+pub let http_request_auth_flag_token_for_cached_cred : UInt
+
+pub let http_request_auth_type_basic : Int
+
+pub let http_request_auth_type_digest : Int
+
+pub let http_request_auth_type_kerberos : Int
+
+pub let http_request_auth_type_negotiate : Int
+
+pub let http_request_auth_type_none : Int
+
+pub let http_request_auth_type_ntlm : Int
+
+pub let http_request_flag_fast_forwarding_allowed : UInt
+
+pub let http_request_flag_fast_forwarding_response_allowed : UInt
+
+pub let http_request_flag_http2 : UInt
+
+pub let http_request_flag_http3 : UInt
+
+pub let http_request_flag_ip_routed : UInt
+
+pub let http_request_flag_more_entity_body_exists : UInt
+
+pub let http_request_info_type_auth : Int
+
+pub let http_request_info_type_channel_bind : Int
+
+pub let http_request_info_type_dscp_tag : Int
+
+pub let http_request_info_type_initial_packet_ttl : Int
+
+pub let http_request_info_type_quic_stats : Int
+
+pub let http_request_info_type_quic_stats_v2 : Int
+
+pub let http_request_info_type_request_sizing : Int
+
+pub let http_request_info_type_request_timing : Int
+
+pub let http_request_info_type_ssl_protocol : Int
+
+pub let http_request_info_type_ssl_token_binding : Int
+
+pub let http_request_info_type_ssl_token_binding_draft : Int
+
+pub let http_request_info_type_tcp_info_v0 : Int
+
+pub let http_request_info_type_tcp_info_v1 : Int
+
+pub let http_request_info_type_tcp_info_v2 : Int
+
+pub let http_request_info_type_transport_idle_connection_timeout : Int
+
+pub let http_request_property_dscp_tag : Int
+
+pub let http_request_property_isb : Int
+
+pub let http_request_property_quic_api_timings : Int
+
+pub let http_request_property_quic_stats : Int
+
+pub let http_request_property_quic_stats_v2 : Int
+
+pub let http_request_property_quic_stream_stats : Int
+
+pub let http_request_property_sni : Int
+
+pub let http_request_property_sni_flag_no_sni : UInt
+
+pub let http_request_property_sni_flag_sni_used : UInt
+
+pub let http_request_property_sni_host_max_length : UInt
+
+pub let http_request_property_stream_error : Int
+
+pub let http_request_property_tcp_info_v0 : Int
+
+pub let http_request_property_tcp_info_v1 : Int
+
+pub let http_request_property_tcp_info_v2 : Int
+
+pub let http_request_property_tls_cipher_info : Int
+
+pub let http_request_property_tls_client_hello : Int
+
+pub let http_request_property_transport_idle_connection_timeout : Int
+
+pub let http_request_property_wsk_api_timings : Int
+
+pub let http_request_sizing_info_flag_first_request : UInt
+
+pub let http_request_sizing_info_flag_tcp_fast_open : UInt
+
+pub let http_request_sizing_info_flag_tls_false_start : UInt
+
+pub let http_request_sizing_info_flag_tls_session_resumption : UInt
+
+pub let http_request_sizing_type_headers : Int
+
+pub let http_request_sizing_type_max : Int
+
+pub let http_request_sizing_type_tls_handshake_leg1_client_data : Int
+
+pub let http_request_sizing_type_tls_handshake_leg1_server_data : Int
+
+pub let http_request_sizing_type_tls_handshake_leg2_client_data : Int
+
+pub let http_request_sizing_type_tls_handshake_leg2_server_data : Int
+
+pub let http_request_timing_type_connection_start : Int
+
+pub let http_request_timing_type_data_start : Int
+
+pub let http_request_timing_type_http2_header_decode_end : Int
+
+pub let http_request_timing_type_http2_header_decode_start : Int
+
+pub let http_request_timing_type_http2_stream_start : Int
+
+pub let http_request_timing_type_http3_header_decode_end : Int
+
+pub let http_request_timing_type_http3_header_decode_start : Int
+
+pub let http_request_timing_type_http3_stream_start : Int
+
+pub let http_request_timing_type_max : Int
+
+pub let http_request_timing_type_request_delivered_for_delegation : Int
+
+pub let http_request_timing_type_request_delivered_for_inspection : Int
+
+pub let http_request_timing_type_request_delivered_for_io : Int
+
+pub let http_request_timing_type_request_header_parse_end : Int
+
+pub let http_request_timing_type_request_header_parse_start : Int
+
+pub let http_request_timing_type_request_queued_for_delegation : Int
+
+pub let http_request_timing_type_request_queued_for_inspection : Int
+
+pub let http_request_timing_type_request_queued_for_io : Int
+
+pub let http_request_timing_type_request_returned_after_delegation : Int
+
+pub let http_request_timing_type_request_returned_after_inspection : Int
+
+pub let http_request_timing_type_request_routing_end : Int
+
+pub let http_request_timing_type_request_routing_start : Int
+
+pub let http_request_timing_type_tls_attributes_query_end : Int
+
+pub let http_request_timing_type_tls_attributes_query_start : Int
+
+pub let http_request_timing_type_tls_certificate_load_end : Int
+
+pub let http_request_timing_type_tls_certificate_load_start : Int
+
+pub let http_request_timing_type_tls_client_cert_query_end : Int
+
+pub let http_request_timing_type_tls_client_cert_query_start : Int
+
+pub let http_request_timing_type_tls_handshake_leg1_end : Int
+
+pub let http_request_timing_type_tls_handshake_leg1_start : Int
+
+pub let http_request_timing_type_tls_handshake_leg2_end : Int
+
+pub let http_request_timing_type_tls_handshake_leg2_start : Int
+
+pub let http_response_flag_more_entity_body_exists : UInt
+
+pub let http_response_flag_multiple_encodings_available : UInt
+
+pub let http_response_info_flags_preserve_order : UInt
+
+pub let http_response_info_type_authentication_property : Int
+
+pub let http_response_info_type_channel_bind : Int
+
+pub let http_response_info_type_multiple_known_headers : Int
+
+pub let http_response_info_type_qo_s_property : Int
+
+pub let http_scheme_http : Int
+
+pub let http_scheme_https : Int
+
+pub let http_scheme_maximum : Int
+
+pub fn http_send_http_response_raw(@core.RawAddress, UInt64, UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn http_send_response_entity_body_raw(@core.RawAddress, UInt64, UInt, UInt, @core.RawAddress, @core.RawAddress, @core.RawAddress, UInt, @core.RawAddress, @core.RawAddress) -> UInt
+
+pub let http_send_response_flag_automatic_chunking : UInt
+
+pub let http_send_response_flag_buffer_data : UInt
+
+pub let http_send_response_flag_disconnect : UInt
+
+pub let http_send_response_flag_enable_nagling : UInt
+
+pub let http_send_response_flag_goaway : UInt
+
+pub let http_send_response_flag_more_data : UInt
+
+pub let http_send_response_flag_opaque : UInt
+
+pub let http_send_response_flag_process_ranges : UInt
+
+pub let http_server503_verbosity_property : Int
+
+pub let http_server_authentication_property : Int
+
+pub let http_server_binding_property : Int
+
+pub let http_server_channel_bind_property : Int
+
+pub let http_server_delegation_property : Int
+
+pub let http_server_extended_authentication_property : Int
+
+pub let http_server_fast_forwarding_property : Int
+
+pub let http_server_listen_endpoint_property : Int
+
+pub let http_server_logging_property : Int
+
+pub let http_server_protection_level_property : Int
+
+pub let http_server_qos_property : Int
+
+pub let http_server_queue_length_property : Int
+
+pub let http_server_request_info_property : Int
+
+pub let http_server_state_property : Int
+
+pub let http_server_timeouts_property : Int
+
+pub let http_service_binding_type_a : Int
+
+pub let http_service_binding_type_none : Int
+
+pub let http_service_binding_type_w : Int
+
+pub let http_service_config_cache : Int
+
+pub let http_service_config_ip_listen_list : Int
+
+pub let http_service_config_max : Int
+
+pub let http_service_config_query_exact : Int
+
+pub let http_service_config_query_max : Int
+
+pub let http_service_config_query_next : Int
+
+pub let http_service_config_setting : Int
+
+pub let http_service_config_ssl_ccs_cert_info : Int
+
+pub let http_service_config_ssl_ccs_cert_info_ex : Int
+
+pub let http_service_config_ssl_cert_info : Int
+
+pub let http_service_config_ssl_cert_info_ex : Int
+
+pub let http_service_config_ssl_flag_disable_http2 : UInt
+
+pub let http_service_config_ssl_flag_disable_legacy_tls : UInt
+
+pub let http_service_config_ssl_flag_disable_ocsp_stapling : UInt
+
+pub let http_service_config_ssl_flag_disable_quic : UInt
+
+pub let http_service_config_ssl_flag_disable_session_id : UInt
+
+pub let http_service_config_ssl_flag_disable_tls12 : UInt
+
+pub let http_service_config_ssl_flag_disable_tls13 : UInt
+
+pub let http_service_config_ssl_flag_enable_cache_client_hello : UInt
+
+pub let http_service_config_ssl_flag_enable_client_correlation : UInt
+
+pub let http_service_config_ssl_flag_enable_session_ticket : UInt
+
+pub let http_service_config_ssl_flag_enable_token_binding : UInt
+
+pub let http_service_config_ssl_flag_log_extended_events : UInt
+
+pub let http_service_config_ssl_flag_negotiate_client_cert : UInt
+
+pub let http_service_config_ssl_flag_no_raw_filter : UInt
+
+pub let http_service_config_ssl_flag_reject : UInt
+
+pub let http_service_config_ssl_flag_use_ds_mapper : UInt
+
+pub let http_service_config_ssl_scoped_ccs_cert_info : Int
+
+pub let http_service_config_ssl_scoped_ccs_cert_info_ex : Int
+
+pub let http_service_config_ssl_sni_cert_info : Int
+
+pub let http_service_config_ssl_sni_cert_info_ex : Int
+
+pub let http_service_config_timeout : Int
+
+pub let http_service_config_url_acl_info : Int
+
+pub fn http_set_request_property_raw(@core.RawAddress, UInt64, Int, @core.RawAddress, UInt, @core.RawAddress) -> UInt
+
+pub fn http_set_request_queue_property_raw(@core.RawAddress, Int, @core.RawAddress, UInt, UInt, @core.RawAddress) -> UInt
+
+pub fn http_set_server_session_property_raw(UInt64, Int, @core.RawAddress, UInt) -> UInt
+
+pub fn http_set_service_configuration_raw(@core.RawAddress, Int, @core.RawAddress, UInt, @core.RawAddress) -> UInt
+
+pub fn http_set_url_group_property_raw(UInt64, Int, @core.RawAddress, UInt) -> UInt
+
+pub fn http_shutdown_request_queue_raw(@core.RawAddress) -> UInt
+
+pub let http_ssl_cert_sha_hash_length : UInt
+
+pub let http_ssl_cert_store_name_length : UInt
+
+pub fn http_terminate_raw(UInt, @core.RawAddress) -> UInt
+
+pub let http_tls_throttle : Int
+
+pub fn http_update_service_configuration_raw(@core.RawAddress, Int, @core.RawAddress, UInt, @core.RawAddress) -> UInt
+
+pub let http_url_flag_remove_all : UInt
+
+pub let http_verb_connect : Int
+
+pub let http_verb_copy : Int
+
+pub let http_verb_delete : Int
+
+pub let http_verb_get : Int
+
+pub let http_verb_head : Int
+
+pub let http_verb_invalid : Int
+
+pub let http_verb_lock : Int
+
+pub let http_verb_maximum : Int
+
+pub let http_verb_mkcol : Int
+
+pub let http_verb_move : Int
+
+pub let http_verb_options : Int
+
+pub let http_verb_post : Int
+
+pub let http_verb_propfind : Int
+
+pub let http_verb_proppatch : Int
+
+pub let http_verb_put : Int
+
+pub let http_verb_search : Int
+
+pub let http_verb_trace : Int
+
+pub let http_verb_track : Int
+
+pub let http_verb_unknown : Int
+
+pub let http_verb_unlock : Int
+
+pub let http_verb_unparsed : Int
+
+pub let http_version : String
+
+pub fn http_wait_for_demand_start_raw(@core.RawAddress, @core.RawAddress) -> UInt
+
+pub fn http_wait_for_disconnect_ex_raw(@core.RawAddress, UInt64, UInt, @core.RawAddress) -> UInt
+
+pub fn http_wait_for_disconnect_raw(@core.RawAddress, UInt64, @core.RawAddress) -> UInt
+
+pub let idle_connection_timeout : Int
+
+pub let max_cache_response_size : Int
+
+pub let performance_param_aggressive_icw : Int
+
+pub let performance_param_decrypt_on_sspi_thread : Int
+
+pub let performance_param_max : Int
+
+pub let performance_param_max_concurrent_client_streams : Int
+
+pub let performance_param_max_receive_buffer_size : Int
+
+pub let performance_param_max_send_buffer_size : Int
+
+pub let performance_param_send_buffering_flags : Int
+
+// Errors
+
+// Types and methods
+
+// Type aliases
+pub using @1df52b0f62fc95df {type AnonymousEUnion_3b4efb1d9dbb as AnonymousEUnion_3b4efb1d9d}
+
+pub using @1df52b0f62fc95df {type AnonymousEUnion_c8883c63905f as AnonymousEUnion_c8883c6390}
+
+pub using @1df52b0f62fc95df {type FromFileHandleEStruct_1e367ce503ed as FromFileHandleEStruct}
+
+pub using @1df52b0f62fc95df {type FromFragmentCacheEStruct_df628d466932 as FromFragmentCacheEStruct}
+
+pub using @1df52b0f62fc95df {type FromFragmentCacheExEStruct_f7b39497338c as FromFragmentCacheExEStruct}
+
+pub using @1df52b0f62fc95df {type FromMemoryEStruct_e2f62ea726fd as FromMemoryEStruct}
+
+pub using @1df52b0f62fc95df {type FromWinHttpFastForwardingEStruct_cff7477219cd as FromWinHttpFastForwardingEStruct}
+
+pub using @1df52b0f62fc95df {type HTTP2SETTINGSLIMITSPARAM_d97d27d64933 as HTTP2SETTINGSLIMITSPARAM}
+
+pub using @1df52b0f62fc95df {type HTTP2WINDOWSIZEPARAM_0dcd7681646b as HTTP2WINDOWSIZEPARAM}
+
+pub using @1df52b0f62fc95df {type HTTP503RESPONSEVERBOSITY_b236be88954f as HTTP503RESPONSEVERBOSITY}
+
+pub using @1df52b0f62fc95df {type HTTPAPIVERSION_cf7e60c51dbf as HTTPAPIVERSION}
+
+pub using @1df52b0f62fc95df {type HTTPAUTHENTICATIONHARDENINGLEVELS_76ff63f01d59 as HTTPAUTHENTICATIONHARDENINGLEVELS}
+
+pub using @1df52b0f62fc95df {type HTTPAUTHSTATUS_adf5af1341c1 as HTTPAUTHSTATUS}
+
+pub using @1df52b0f62fc95df {type HTTPBANDWIDTHLIMITINFO_ffd76025718d as HTTPBANDWIDTHLIMITINFO}
+
+pub using @1df52b0f62fc95df {type HTTPBINDINGINFO_4265dab748e0 as HTTPBINDINGINFO}
+
+pub using @1df52b0f62fc95df {type HTTPBYTERANGE_7948e918ca67 as HTTPBYTERANGE}
+
+pub using @1df52b0f62fc95df {type HTTPCACHEPOLICY_6bd6ee9761ff as HTTPCACHEPOLICY}
+
+pub using @1df52b0f62fc95df {type HTTPCACHEPOLICYTYPE_d8c12902532b as HTTPCACHEPOLICYTYPE}
+
+pub using @1df52b0f62fc95df {type HTTPCERTCONFIGENTRY_2bf4e541766a as HTTPCERTCONFIGENTRY}
+
+pub using @1df52b0f62fc95df {type HTTPCERTCONFIGPARAM_8a51dbef694e as HTTPCERTCONFIGPARAM}
+
+pub using @1df52b0f62fc95df {type HTTPCHANNELBINDINFO_4be393fa23f3 as HTTPCHANNELBINDINFO}
+
+pub using @1df52b0f62fc95df {type HTTPCONNECTIONLIMITINFO_0a559e58cd87 as HTTPCONNECTIONLIMITINFO}
+
+pub using @1df52b0f62fc95df {type HTTPCOOKEDURL_b72c6203c2cb as HTTPCOOKEDURL}
+
+pub using @1df52b0f62fc95df {type HTTPCREATEREQUESTQUEUEPROPERTYID_dcb3c9abd80f as HTTPCREATEREQUESTQUEUEPROPERTYID}
+
+pub using @1df52b0f62fc95df {type HTTPCREATEREQUESTQUEUEPROPERTYINFO_4c2de2f5776c as HTTPCREATEREQUESTQUEUEPROPERTYINFO}
+
+pub using @1df52b0f62fc95df {type HTTPDATACHUNK_23411884ed0c as HTTPDATACHUNK}
+
+pub using @1df52b0f62fc95df {type HTTPDATACHUNKTYPE_44cd001c74bc as HTTPDATACHUNKTYPE}
+
+pub using @1df52b0f62fc95df {type HTTPDELEGATEREQUESTPROPERTYID_323fa3c65142 as HTTPDELEGATEREQUESTPROPERTYID}
+
+pub using @1df52b0f62fc95df {type HTTPDELEGATEREQUESTPROPERTYINFO_7596fdfea1ed as HTTPDELEGATEREQUESTPROPERTYINFO}
+
+pub using @1df52b0f62fc95df {type HTTPENABLEDSTATE_bfb7642f3e38 as HTTPENABLEDSTATE}
+
+pub using @1df52b0f62fc95df {type HTTPERRORHEADERSPARAM_91cb1db5e5f4 as HTTPERRORHEADERSPARAM}
+
+pub using @1df52b0f62fc95df {type HTTPFASTFORWARDINFO_7e77efc69fd6 as HTTPFASTFORWARDINFO}
+
+pub using @1df52b0f62fc95df {type HTTPFEATUREID_581ff0ea9499 as HTTPFEATUREID}
+
+pub using @1df52b0f62fc95df {type HTTPFLOWRATEINFO_86129567141f as HTTPFLOWRATEINFO}
+
+pub using @1df52b0f62fc95df {type HTTPHEADERID_9af5d9903ea1 as HTTPHEADERID}
+
+pub using @1df52b0f62fc95df {type HTTPINITIALIZE_5b58111a2906 as HTTPINITIALIZE}
+
+pub using @1df52b0f62fc95df {type HTTPKNOWNHEADER_00528a9a2e57 as HTTPKNOWNHEADER}
+
+pub using @1df52b0f62fc95df {type HTTPLISTENENDPOINTINFO_25d7152cf6c7 as HTTPLISTENENDPOINTINFO}
+
+pub using @1df52b0f62fc95df {type HTTPLOGDATA_04d4241c9a2d as HTTPLOGDATA}
+
+pub using @1df52b0f62fc95df {type HTTPLOGDATATYPE_60dd8b1e7e33 as HTTPLOGDATATYPE}
+
+pub using @1df52b0f62fc95df {type HTTPLOGFIELDSDATA_968ae53a01ed as HTTPLOGFIELDSDATA}
+
+pub using @1df52b0f62fc95df {type HTTPLOGGINGINFO_c69eb12dd779 as HTTPLOGGINGINFO}
+
+pub using @1df52b0f62fc95df {type HTTPLOGGINGROLLOVERTYPE_10fe7aca3923 as HTTPLOGGINGROLLOVERTYPE}
+
+pub using @1df52b0f62fc95df {type HTTPLOGGINGTYPE_1a7f1839753e as HTTPLOGGINGTYPE}
+
+pub using @1df52b0f62fc95df {type HTTPMULTIPLEKNOWNHEADERS_1beec55a4970 as HTTPMULTIPLEKNOWNHEADERS}
+
+pub using @1df52b0f62fc95df {type HTTPPERFORMANCEPARAM_3c615b958ef9 as HTTPPERFORMANCEPARAM}
+
+pub using @1df52b0f62fc95df {type HTTPPERFORMANCEPARAMTYPE_2025c61c6f75 as HTTPPERFORMANCEPARAMTYPE}
+
+pub using @1df52b0f62fc95df {type HTTPPROPERTYFLAGS_aaedd321ae41 as HTTPPROPERTYFLAGS}
+
+pub using @1df52b0f62fc95df {type HTTPPROTECTIONLEVELINFO_82b4804ec456 as HTTPPROTECTIONLEVELINFO}
+
+pub using @1df52b0f62fc95df {type HTTPPROTECTIONLEVELTYPE_6585d47674a3 as HTTPPROTECTIONLEVELTYPE}
+
+pub using @1df52b0f62fc95df {type HTTPQOSSETTINGINFO_5df360c143e2 as HTTPQOSSETTINGINFO}
+
+pub using @1df52b0f62fc95df {type HTTPQOSSETTINGTYPE_3d42cdfb6369 as HTTPQOSSETTINGTYPE}
+
+pub using @1df52b0f62fc95df {type HTTPQUERYREQUESTQUALIFIERQUIC_7511dbc57a5e as HTTPQUERYREQUESTQUALIFIERQUIC}
+
+pub using @1df52b0f62fc95df {type HTTPQUERYREQUESTQUALIFIERTCP_50bda3b2ce49 as HTTPQUERYREQUESTQUALIFIERTCP}
+
+pub using @1df52b0f62fc95df {type HTTPQUICAPITIMINGS_cffbf2811a55 as HTTPQUICAPITIMINGS}
+
+pub using @1df52b0f62fc95df {type HTTPQUICCONNECTIONAPITIMINGS_1eed2f4163a0 as HTTPQUICCONNECTIONAPITIMINGS}
+
+pub using @1df52b0f62fc95df {type HTTPQUICSTREAMAPITIMINGS_770495097e3e as HTTPQUICSTREAMAPITIMINGS}
+
+pub using @1df52b0f62fc95df {type HTTPQUICSTREAMREQUESTSTATS_35d77ed75a29 as HTTPQUICSTREAMREQUESTSTATS}
+
+pub using @1df52b0f62fc95df {type HTTPRECEIVEHTTPREQUESTFLAGS_a936c8218f8c as HTTPRECEIVEHTTPREQUESTFLAGS}
+
+pub using @1df52b0f62fc95df {type HTTPREQUESTAUTHINFO_24f61e3d9b90 as HTTPREQUESTAUTHINFO}
+
+pub using @1df52b0f62fc95df {type HTTPREQUESTAUTHTYPE_1bda9c05406f as HTTPREQUESTAUTHTYPE}
+
+pub using @1df52b0f62fc95df {type HTTPREQUESTCHANNELBINDSTATUS_a2849af2a258 as HTTPREQUESTCHANNELBINDSTATUS}
+
+pub using @1df52b0f62fc95df {type HTTPREQUESTDSCPINFO_89615c8ffb62 as HTTPREQUESTDSCPINFO}
+
+pub using @1df52b0f62fc95df {type HTTPREQUESTHEADERS_609eabeaf0da as HTTPREQUESTHEADERS}
+
+pub using @1df52b0f62fc95df {type HTTPREQUESTINFO_efed2430de6f as HTTPREQUESTINFO}
+
+pub using @1df52b0f62fc95df {type HTTPREQUESTINFOPROPERTYINFO_456416a6ea37 as HTTPREQUESTINFOPROPERTYINFO}
+
+pub using @1df52b0f62fc95df {type HTTPREQUESTINFOTYPE_6dff1d9bab1f as HTTPREQUESTINFOTYPE}
+
+pub using @1df52b0f62fc95df {type HTTPREQUESTINITIALPACKETTTLINFO_850e9d69e9a4 as HTTPREQUESTINITIALPACKETTTLINFO}
+
+pub using @1df52b0f62fc95df {type HTTPREQUESTPROPERTY_f96a76c8ed17 as HTTPREQUESTPROPERTY}
+
+pub using @1df52b0f62fc95df {type HTTPREQUESTPROPERTYSNI_da69037dae2c as HTTPREQUESTPROPERTYSNI}
+
+pub using @1df52b0f62fc95df {type HTTPREQUESTPROPERTYSTREAMERROR_f0677703d766 as HTTPREQUESTPROPERTYSTREAMERROR}
+
+pub using @1df52b0f62fc95df {type HTTPREQUESTQUEUEHANDLE_b1dab94815bd as HTTPREQUESTQUEUEHANDLE}
+
+pub using @1df52b0f62fc95df {type HTTPREQUESTSIZINGINFO_723ebe859df6 as HTTPREQUESTSIZINGINFO}
+
+pub using @1df52b0f62fc95df {type HTTPREQUESTSIZINGTYPE_836c6073e592 as HTTPREQUESTSIZINGTYPE}
+
+pub using @1df52b0f62fc95df {type HTTPREQUESTTIMINGINFO_27924a396ee7 as HTTPREQUESTTIMINGINFO}
+
+pub using @1df52b0f62fc95df {type HTTPREQUESTTIMINGTYPE_68436c484cba as HTTPREQUESTTIMINGTYPE}
+
+pub using @1df52b0f62fc95df {type HTTPREQUESTTOKENBINDINGINFO_237acc26ced7 as HTTPREQUESTTOKENBINDINGINFO}
+
+pub using @1df52b0f62fc95df {type HTTPREQUESTTRANSPORTIDLECONNECTIONTIMEOUTINFO_b6780c4c7ac2 as HTTPREQUESTTRANSPORTIDLECONNECTIONTIMEOUTINFO}
+
+pub using @1df52b0f62fc95df {type HTTPREQUESTV1_8b088c7f5e45 as HTTPREQUESTV1}
+
+pub using @1df52b0f62fc95df {type HTTPREQUESTV2_3ffb3fdd7234 as HTTPREQUESTV2}
+
+pub using @1df52b0f62fc95df {type HTTPRESPONSEHEADERS_e36ac166892f as HTTPRESPONSEHEADERS}
+
+pub using @1df52b0f62fc95df {type HTTPRESPONSEINFO_f2e2569709fe as HTTPRESPONSEINFO}
+
+pub using @1df52b0f62fc95df {type HTTPRESPONSEINFOTYPE_3307b2088012 as HTTPRESPONSEINFOTYPE}
+
+pub using @1df52b0f62fc95df {type HTTPRESPONSEV1_fd53193b4725 as HTTPRESPONSEV1}
+
+pub using @1df52b0f62fc95df {type HTTPRESPONSEV2_434137c59f85 as HTTPRESPONSEV2}
+
+pub using @1df52b0f62fc95df {type HTTPSCHEME_2133ba429d0c as HTTPSCHEME}
+
+pub using @1df52b0f62fc95df {type HTTPSERVERAUTHENTICATIONBASICPARAMS_4d76ef0f4996 as HTTPSERVERAUTHENTICATIONBASICPARAMS}
+
+pub using @1df52b0f62fc95df {type HTTPSERVERAUTHENTICATIONDIGESTPARAMS_17478e0c222a as HTTPSERVERAUTHENTICATIONDIGESTPARAMS}
+
+pub using @1df52b0f62fc95df {type HTTPSERVERAUTHENTICATIONINFO_6aac869b7618 as HTTPSERVERAUTHENTICATIONINFO}
+
+pub using @1df52b0f62fc95df {type HTTPSERVERPROPERTY_37b7645993d8 as HTTPSERVERPROPERTY}
+
+pub using @1df52b0f62fc95df {type HTTPSERVICEBINDINGA_6a7feec14b6a as HTTPSERVICEBINDINGA}
+
+pub using @1df52b0f62fc95df {type HTTPSERVICEBINDINGBASE_1af71d4e8f93 as HTTPSERVICEBINDINGBASE}
+
+pub using @1df52b0f62fc95df {type HTTPSERVICEBINDINGTYPE_9ddcf3b88c17 as HTTPSERVICEBINDINGTYPE}
+
+pub using @1df52b0f62fc95df {type HTTPSERVICEBINDINGW_980c7302559f as HTTPSERVICEBINDINGW}
+
+pub using @1df52b0f62fc95df {type HTTPSERVICECONFIGCACHEKEY_e0a9de499c61 as HTTPSERVICECONFIGCACHEKEY}
+
+pub using @1df52b0f62fc95df {type HTTPSERVICECONFIGCACHESET_240a31be223b as HTTPSERVICECONFIGCACHESET}
+
+pub using @1df52b0f62fc95df {type HTTPSERVICECONFIGID_23f68e7a828b as HTTPSERVICECONFIGID}
+
+pub using @1df52b0f62fc95df {type HTTPSERVICECONFIGIPLISTENPARAM_71f286b24c90 as HTTPSERVICECONFIGIPLISTENPARAM}
+
+pub using @1df52b0f62fc95df {type HTTPSERVICECONFIGIPLISTENQUERY_6a12b91ca1ce as HTTPSERVICECONFIGIPLISTENQUERY}
+
+pub using @1df52b0f62fc95df {type HTTPSERVICECONFIGQUERYTYPE_fe880c354276 as HTTPSERVICECONFIGQUERYTYPE}
+
+pub using @1df52b0f62fc95df {type HTTPSERVICECONFIGSETTINGKEY_da22249527bd as HTTPSERVICECONFIGSETTINGKEY}
+
+pub using @1df52b0f62fc95df {type HTTPSERVICECONFIGSETTINGSET_25501a7954ff as HTTPSERVICECONFIGSETTINGSET}
+
+pub using @1df52b0f62fc95df {type HTTPSERVICECONFIGSSLCCSKEY_4a704580037a as HTTPSERVICECONFIGSSLCCSKEY}
+
+pub using @1df52b0f62fc95df {type HTTPSERVICECONFIGSSLCCSQUERY_32881c2a8f6b as HTTPSERVICECONFIGSSLCCSQUERY}
+
+pub using @1df52b0f62fc95df {type HTTPSERVICECONFIGSSLCCSQUERYEX_ffa8e26da403 as HTTPSERVICECONFIGSSLCCSQUERYEX}
+
+pub using @1df52b0f62fc95df {type HTTPSERVICECONFIGSSLCCSSET_9f8ec4eee693 as HTTPSERVICECONFIGSSLCCSSET}
+
+pub using @1df52b0f62fc95df {type HTTPSERVICECONFIGSSLCCSSETEX_b4b50133a2b0 as HTTPSERVICECONFIGSSLCCSSETEX}
+
+pub using @1df52b0f62fc95df {type HTTPSERVICECONFIGSSLKEY_228a41ee3f04 as HTTPSERVICECONFIGSSLKEY}
+
+pub using @1df52b0f62fc95df {type HTTPSERVICECONFIGSSLKEYEX_8dbed9a2eab2 as HTTPSERVICECONFIGSSLKEYEX}
+
+pub using @1df52b0f62fc95df {type HTTPSERVICECONFIGSSLPARAM_474d1bc64779 as HTTPSERVICECONFIGSSLPARAM}
+
+pub using @1df52b0f62fc95df {type HTTPSERVICECONFIGSSLPARAMEX_9a3e99fcf873 as HTTPSERVICECONFIGSSLPARAMEX}
+
+pub using @1df52b0f62fc95df {type HTTPSERVICECONFIGSSLQUERY_32601c8bfebd as HTTPSERVICECONFIGSSLQUERY}
+
+pub using @1df52b0f62fc95df {type HTTPSERVICECONFIGSSLQUERYEX_16ee1d8bfdec as HTTPSERVICECONFIGSSLQUERYEX}
+
+pub using @1df52b0f62fc95df {type HTTPSERVICECONFIGSSLSET_2ddba31d5235 as HTTPSERVICECONFIGSSLSET}
+
+pub using @1df52b0f62fc95df {type HTTPSERVICECONFIGSSLSETEX_fe02f3f7f813 as HTTPSERVICECONFIGSSLSETEX}
+
+pub using @1df52b0f62fc95df {type HTTPSERVICECONFIGSSLSNIKEY_0106c8db5490 as HTTPSERVICECONFIGSSLSNIKEY}
+
+pub using @1df52b0f62fc95df {type HTTPSERVICECONFIGSSLSNIQUERY_07e46c81c37f as HTTPSERVICECONFIGSSLSNIQUERY}
+
+pub using @1df52b0f62fc95df {type HTTPSERVICECONFIGSSLSNIQUERYEX_cc35677419d9 as HTTPSERVICECONFIGSSLSNIQUERYEX}
+
+pub using @1df52b0f62fc95df {type HTTPSERVICECONFIGSSLSNISET_a17792c6f16e as HTTPSERVICECONFIGSSLSNISET}
+
+pub using @1df52b0f62fc95df {type HTTPSERVICECONFIGSSLSNISETEX_889a5d01d65c as HTTPSERVICECONFIGSSLSNISETEX}
+
+pub using @1df52b0f62fc95df {type HTTPSERVICECONFIGTIMEOUTKEY_34ab1bad9760 as HTTPSERVICECONFIGTIMEOUTKEY}
+
+pub using @1df52b0f62fc95df {type HTTPSERVICECONFIGTIMEOUTSET_2c7c1c0e1677 as HTTPSERVICECONFIGTIMEOUTSET}
+
+pub using @1df52b0f62fc95df {type HTTPSERVICECONFIGURLACLKEY_c3784dd02c78 as HTTPSERVICECONFIGURLACLKEY}
+
+pub using @1df52b0f62fc95df {type HTTPSERVICECONFIGURLACLPARAM_509b2007f076 as HTTPSERVICECONFIGURLACLPARAM}
+
+pub using @1df52b0f62fc95df {type HTTPSERVICECONFIGURLACLQUERY_44ed520208cc as HTTPSERVICECONFIGURLACLQUERY}
+
+pub using @1df52b0f62fc95df {type HTTPSERVICECONFIGURLACLSET_8d2dd3d087b1 as HTTPSERVICECONFIGURLACLSET}
+
+pub using @1df52b0f62fc95df {type HTTPSSLCLIENTCERTINFO_fb2cd03c9532 as HTTPSSLCLIENTCERTINFO}
+
+pub using @1df52b0f62fc95df {type HTTPSSLINFO_fae8bbd00629 as HTTPSSLINFO}
+
+pub using @1df52b0f62fc95df {type HTTPSSLPROTOCOLINFO_144105c3f0f4 as HTTPSSLPROTOCOLINFO}
+
+pub using @1df52b0f62fc95df {type HTTPSSLSERVICECONFIGEXPARAMTYPE_a5bba438d919 as HTTPSSLSERVICECONFIGEXPARAMTYPE}
+
+pub using @1df52b0f62fc95df {type HTTPSTATEINFO_2951fd50ffdd as HTTPSTATEINFO}
+
+pub using @1df52b0f62fc95df {type HTTPTIMEOUTLIMITINFO_e4554b3a0603 as HTTPTIMEOUTLIMITINFO}
+
+pub using @1df52b0f62fc95df {type HTTPTLSRESTRICTIONSPARAM_ac372e1e6bbc as HTTPTLSRESTRICTIONSPARAM}
+
+pub using @1df52b0f62fc95df {type HTTPTLSSESSIONTICKETKEYSPARAM_b09404a130a5 as HTTPTLSSESSIONTICKETKEYSPARAM}
+
+pub using @1df52b0f62fc95df {type HTTPTRANSPORTADDRESS_4b2309bcd277 as HTTPTRANSPORTADDRESS}
+
+pub using @1df52b0f62fc95df {type HTTPUNKNOWNHEADER_1b7b9d00d594 as HTTPUNKNOWNHEADER}
+
+pub using @1df52b0f62fc95df {type HTTPVERB_19b4af50fbb3 as HTTPVERB}
+
+pub using @1df52b0f62fc95df {type HTTPVERSION_0a982268712b as HTTPVERSION}
+
+pub using @1df52b0f62fc95df {type HTTPWINHTTPFASTFORWARDINGDATA_b6b77ab2fe65 as HTTPWINHTTPFASTFORWARDINGDATA}
+
+pub using @1df52b0f62fc95df {type HTTPWSKAPITIMINGS_8377d377d25a as HTTPWSKAPITIMINGS}
+
+pub using @1df52b0f62fc95df {type TrailersEStruct_92e6257ab415 as TrailersEStruct}
+
+// Traits
+

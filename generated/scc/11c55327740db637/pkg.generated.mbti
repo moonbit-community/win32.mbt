@@ -1,0 +1,152 @@
+// Generated using `moon info`, DON'T EDIT IT
+package "moonbit-community/win32-bindings/scc/11c55327740db637"
+
+import {
+  "moonbit-community/win32-bindings/runtime/core",
+  "moonbitlang/core/debug",
+}
+
+// Values
+pub fn create_toolhelp32_snapshot_ebf85c7a0a63_raw(UInt, UInt) -> @core.RawWin32Call[@core.RawAddress]
+
+pub fn heap32_first_65e3371e41bd_raw(@core.RawAddress, UInt, UInt64) -> @core.RawWin32Call[Int]
+
+pub fn heap32_list_first_d6b9d18593a0_raw(@core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn heap32_list_next_1e6c01f14529_raw(@core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn heap32_next_00bb9f434d7d_raw(@core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub let heapentry32_68951307f825_alignment : Int
+
+pub let heapentry32_68951307f825_size : Int
+
+pub let heaplist32_9d55bde4ae7c_alignment : Int
+
+pub let heaplist32_9d55bde4ae7c_size : Int
+
+pub let hf32_default_4bf66480a85c : UInt
+
+pub let hf32_shared_cbd8e7ba8cc4 : UInt
+
+pub let lf32_fixed_1760bd2fb7e8 : UInt
+
+pub let lf32_free_6fb86a03a0a6 : UInt
+
+pub let lf32_moveable_120d5a876e66 : UInt
+
+pub let max_module_name32_5d2d203a6b2a : UInt
+
+pub fn module32_first_57a8eee7e53b_raw(@core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn module32_first_w_4a2df8c31586_raw(@core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn module32_next_e9d6275a2fc4_raw(@core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn module32_next_w_241fbba92667_raw(@core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub let moduleentry32_2d22ddbb0f93_alignment : Int
+
+pub let moduleentry32_2d22ddbb0f93_size : Int
+
+pub let moduleentry32_w_86f2c8c0374f_alignment : Int
+
+pub let moduleentry32_w_86f2c8c0374f_size : Int
+
+pub fn process32_first_54727b9acb86_raw(@core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn process32_first_w_d6ad1b7b81cf_raw(@core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn process32_next_89f237aec4ac_raw(@core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn process32_next_w_a0024f9a3669_raw(@core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub let processentry32_d54e69bf3b81_alignment : Int
+
+pub let processentry32_d54e69bf3b81_size : Int
+
+pub let processentry32_w_b24a72ccca2e_alignment : Int
+
+pub let processentry32_w_b24a72ccca2e_size : Int
+
+pub let th32_cs_inherit_761bdf66ed9c : UInt
+
+pub let th32_cs_snapall_c0c024a61fb8 : UInt
+
+pub let th32_cs_snapheaplist_61ecb7ea1a87 : UInt
+
+pub let th32_cs_snapmodule32_0ea8f074c962 : UInt
+
+pub let th32_cs_snapmodule_d5e29c409159 : UInt
+
+pub let th32_cs_snapprocess_22e23b138097 : UInt
+
+pub let th32_cs_snapthread_411a0cad9d2b : UInt
+
+pub fn thread32_first_faa24c14d379_raw(@core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub fn thread32_next_99b0858440a8_raw(@core.RawAddress, @core.RawAddress) -> @core.RawWin32Call[Int]
+
+pub let threadentry32_6f26e5b243be_alignment : Int
+
+pub let threadentry32_6f26e5b243be_size : Int
+
+pub fn toolhelp32_read_process_memory_d46a58a3efc2_raw(UInt, @core.RawAddress, @core.RawAddress, UInt64, @core.RawAddress) -> Int
+
+// Errors
+
+// Types and methods
+pub(all) struct CREATETOOLHELPSNAPSHOTFLAGS_0bdfc67cf020(Int) derive(Compare, Eq, @debug.Debug)
+pub fn CREATETOOLHELPSNAPSHOTFLAGS_0bdfc67cf020::from_int(Int) -> Self
+pub fn CREATETOOLHELPSNAPSHOTFLAGS_0bdfc67cf020::to_int(Self) -> Int
+
+pub(all) struct HEAPENTRY32FLAGS_dab1ebdd1bb9(Int) derive(Compare, Eq, @debug.Debug)
+pub fn HEAPENTRY32FLAGS_dab1ebdd1bb9::from_int(Int) -> Self
+pub fn HEAPENTRY32FLAGS_dab1ebdd1bb9::to_int(Self) -> Int
+
+pub(all) struct HEAPENTRY32_68951307f825 {
+  raw_bytes : Bytes
+} derive(Eq, @debug.Debug)
+pub fn HEAPENTRY32_68951307f825::bytes(Self) -> Bytes
+pub fn HEAPENTRY32_68951307f825::from_bytes(Bytes) -> Self raise @core.WindowsError
+
+pub(all) struct HEAPLIST32_9d55bde4ae7c {
+  raw_bytes : Bytes
+} derive(Eq, @debug.Debug)
+pub fn HEAPLIST32_9d55bde4ae7c::bytes(Self) -> Bytes
+pub fn HEAPLIST32_9d55bde4ae7c::from_bytes(Bytes) -> Self raise @core.WindowsError
+
+pub(all) struct MODULEENTRY32W_86f2c8c0374f {
+  raw_bytes : Bytes
+} derive(Eq, @debug.Debug)
+pub fn MODULEENTRY32W_86f2c8c0374f::bytes(Self) -> Bytes
+pub fn MODULEENTRY32W_86f2c8c0374f::from_bytes(Bytes) -> Self raise @core.WindowsError
+
+pub(all) struct MODULEENTRY32_2d22ddbb0f93 {
+  raw_bytes : Bytes
+} derive(Eq, @debug.Debug)
+pub fn MODULEENTRY32_2d22ddbb0f93::bytes(Self) -> Bytes
+pub fn MODULEENTRY32_2d22ddbb0f93::from_bytes(Bytes) -> Self raise @core.WindowsError
+
+pub(all) struct PROCESSENTRY32W_b24a72ccca2e {
+  raw_bytes : Bytes
+} derive(Eq, @debug.Debug)
+pub fn PROCESSENTRY32W_b24a72ccca2e::bytes(Self) -> Bytes
+pub fn PROCESSENTRY32W_b24a72ccca2e::from_bytes(Bytes) -> Self raise @core.WindowsError
+
+pub(all) struct PROCESSENTRY32_d54e69bf3b81 {
+  raw_bytes : Bytes
+} derive(Eq, @debug.Debug)
+pub fn PROCESSENTRY32_d54e69bf3b81::bytes(Self) -> Bytes
+pub fn PROCESSENTRY32_d54e69bf3b81::from_bytes(Bytes) -> Self raise @core.WindowsError
+
+pub(all) struct THREADENTRY32_6f26e5b243be {
+  raw_bytes : Bytes
+} derive(Eq, @debug.Debug)
+pub fn THREADENTRY32_6f26e5b243be::bytes(Self) -> Bytes
+pub fn THREADENTRY32_6f26e5b243be::from_bytes(Bytes) -> Self raise @core.WindowsError
+
+// Type aliases
+
+// Traits
+

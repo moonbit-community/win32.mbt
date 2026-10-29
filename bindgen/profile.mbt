@@ -25,15 +25,15 @@ fn known_kernel_library(name : String) -> Bool {
 }
 
 ///|
-let x64_architecture_mask : UInt = 0x2U
+let x64_architecture_mask : UInt32 = 0x2U
 
 ///|
 fn semantic_architecture_mask(
   attributes : @metadata.AttributeSemanticIndex,
-  model_index : Int,
+  model_index : Int32,
   owner : @metadata.DecodedIndex,
-) -> UInt? raise BindgenError {
-  let mut result : UInt? = None
+) -> UInt32? raise BindgenError {
+  let mut result : UInt32? = None
   for attribute in attributes.for_owner(model_index, owner) {
     if attribute.kind != SupportedArchitectureAttributeSemantic {
       continue
@@ -70,7 +70,10 @@ fn semantic_architecture_mask(
 }
 
 ///|
-fn architecture_matches_profile(profile : BindgenProfile, mask : UInt?) -> Bool {
+fn architecture_matches_profile(
+  profile : BindgenProfile,
+  mask : UInt32?,
+) -> Bool {
   match profile {
     X64Desktop => mask is None || (mask.unwrap() & x64_architecture_mask) != 0U
   }
@@ -80,8 +83,8 @@ fn architecture_matches_profile(profile : BindgenProfile, mask : UInt?) -> Bool 
 fn type_profile_mask(
   attributes : @metadata.AttributeSemanticIndex,
   universe : @metadata.ResolvedUniverse,
-  location : (Int, Int),
-) -> UInt? raise BindgenError {
+  location : (Int32, Int32),
+) -> UInt32? raise BindgenError {
   type_profile_mask_at_rid(
     attributes,
     universe.models[location.0],
@@ -95,10 +98,10 @@ fn type_profile_mask(
 fn type_profile_mask_at_rid(
   attributes : @metadata.AttributeSemanticIndex,
   model : @metadata.MetadataModel,
-  model_index : Int,
-  type_rid : Int,
-  depth : Int,
-) -> UInt? raise BindgenError {
+  model_index : Int32,
+  type_rid : Int32,
+  depth : Int32,
+) -> UInt32? raise BindgenError {
   if depth > 64 ||
     type_rid <= 0 ||
     type_rid >= model.type_indexes_by_rid.length() {
@@ -141,9 +144,9 @@ fn type_profile_mask_at_rid(
 ///|
 fn method_profile_mask(
   attributes : @metadata.AttributeSemanticIndex,
-  model_index : Int,
+  model_index : Int32,
   method_model : @metadata.MetadataMethod,
-) -> UInt? raise BindgenError {
+) -> UInt32? raise BindgenError {
   semantic_architecture_mask(attributes, model_index, {
     table: MethodDef,
     row: method_model.source.rid,
@@ -161,7 +164,7 @@ fn profile_member_key(stable_key : String) -> String {
 }
 
 ///|
-fn profile_source_key(model_index : Int, source_rid : Int) -> String {
+fn profile_source_key(model_index : Int32, source_rid : Int32) -> String {
   "\{model_index}:\{source_rid}"
 }
 
@@ -171,8 +174,8 @@ fn select_type_location(
   attributes : @metadata.AttributeSemanticIndex,
   entry : @metadata.ResolvedTypeEntry,
   profile : BindgenProfile,
-) -> ((Int, Int), String?) raise {
-  let matching : Array[(Int, Int)] = []
+) -> ((Int32, Int32), String?) raise {
+  let matching : Array[(Int32, Int32)] = []
   for location in entry.variant_locations {
     if architecture_matches_profile(
         profile,
@@ -215,14 +218,14 @@ fn select_type_location(
 fn select_type_methods(
   universe : @metadata.ResolvedUniverse,
   attributes : @metadata.AttributeSemanticIndex,
-  model_index : Int,
-  type_index : Int,
+  model_index : Int32,
+  type_index : Int32,
   profile : BindgenProfile,
   excluded_sources : Map[String, String],
 ) -> Array[@metadata.MetadataMethod] raise {
   let model = universe.models[model_index]
   let type_model = model.types[type_index]
-  let groups : Map[String, Array[Int]] = Map([])
+  let groups : Map[String, Array[Int32]] = Map([])
   for method_index, method_model in type_model.methods {
     let identity = @metadata.method_member_identity(
       model, type_model, method_model,
@@ -233,7 +236,7 @@ fn select_type_methods(
       None => groups[key] = [method_index]
     }
   }
-  let selected_indexes : Array[Int] = []
+  let selected_indexes : Array[Int32] = []
   for _, candidates in groups {
     let matching = [
       for method_index in candidates if architecture_matches_profile(
@@ -280,7 +283,7 @@ fn rebuild_profile_members(
   universe : @metadata.ResolvedUniverse,
 ) -> @metadata.ResolvedUniverse raise BindgenError {
   let members = @metadata.build_member_identities(universe)
-  let type_indexes : Map[String, Int] = Map([])
+  let type_indexes : Map[String, Int32] = Map([])
   for index, entry in universe.types {
     type_indexes[entry.stable_key] = index
   }
@@ -298,7 +301,7 @@ fn rebuild_profile_members(
     }
     members_by_type[index].push(resolved_member)
   }
-  { ..universe, members, members_by_type }
+  { ..universe, members, members_by_type, }
 }
 
 ///|
@@ -348,7 +351,7 @@ pub fn select_profile_variants(
   }
   let selected_models = [
     for index, model in universe.models => {
-      { ..model, types: model_types[index] }
+      { ..model, types: model_types[index], }
     }
   ]
   let selected_universe = rebuild_profile_members({
@@ -380,7 +383,7 @@ pub fn select_profile_variants(
       None => ()
     }
   }
-  { universe: selected_universe, exclusions }
+  { universe: selected_universe, exclusions, }
 }
 
 ///|
@@ -409,7 +412,7 @@ pub fn classify_desktop_library(library : String) -> ProfileDecision {
       ),
     }
   } else {
-    { included: true, policy_id: desktop_policy_version, reason: None }
+    { included: true, policy_id: desktop_policy_version, reason: None, }
   }
 }
 

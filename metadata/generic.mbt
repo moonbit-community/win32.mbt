@@ -1,7 +1,7 @@
 ///|
 pub(all) struct RawGenericParameter {
-  rid : Int
-  number : Int
+  rid : Int32
+  number : Int32
   attributes : GenericParamAttributes
   owner : DecodedIndex
   name : String
@@ -123,7 +123,7 @@ pub fn load_generic_parameters(
 /// GenericParam.Number is a dense zero-based map for its exact owner scope.
 pub fn validate_generic_parameter_scope(
   parameters : Array[RawGenericParameter],
-  expected_arity : Int,
+  expected_arity : Int32,
   owner_description : String,
 ) -> Unit raise MetadataError {
   if parameters.length() != expected_arity {

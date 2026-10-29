@@ -9,10 +9,10 @@ pub(all) enum ParameterDirection {
 
 ///|
 pub(all) struct ResolvedParameterSemantics {
-  sequence : Int
+  sequence : Int32
   direction : ParameterDirection
   by_ref : Bool
-  metadata_rid : Int?
+  metadata_rid : Int32?
   marshal : RawFieldMarshal?
   length_arguments : Array[AttributeSemanticInteger]
   readonly_array_compat : Bool
@@ -40,13 +40,13 @@ fn signature_is_by_ref(signature : TypeSignature) -> Bool {
 ///|
 fn parameter_semantics_for_slot(
   attributes : AttributeSemanticIndex,
-  model_index : Int,
+  model_index : Int32,
   slot : MethodParamSlot,
 ) -> ResolvedParameterSemantics raise MetadataError {
   let by_ref = signature_is_by_ref(slot.signature)
   let mut is_in = !by_ref
   let mut is_out = false
-  let mut metadata_rid : Int? = None
+  let mut metadata_rid : Int32? = None
   let mut marshal : RawFieldMarshal? = None
   let length_arguments : Array[AttributeSemanticInteger] = []
   let mut readonly_array_compat = false
@@ -116,10 +116,10 @@ fn parameter_semantics_for_slot(
 ///|
 fn return_parameter_semantics(
   attributes : AttributeSemanticIndex,
-  model_index : Int,
+  model_index : Int32,
   binding : MethodParamBinding,
 ) -> ResolvedParameterSemantics {
-  let mut metadata_rid : Int? = None
+  let mut metadata_rid : Int32? = None
   let mut marshal : RawFieldMarshal? = None
   match binding.return_metadata {
     Some(metadata) => {
@@ -127,7 +127,7 @@ fn return_parameter_semantics(
       marshal = metadata.marshal
       // Semantic attributes remain queryable through the owner index.
       ignore(
-        attributes.for_owner(model_index, { table: Param, row: metadata.rid }),
+        attributes.for_owner(model_index, { table: Param, row: metadata.rid, }),
       )
     }
     None => ()
@@ -148,14 +148,14 @@ fn return_parameter_semantics(
 /// Consume MethodParamBinding slots; never advance by physical Param row order.
 pub fn resolve_method_parameter_semantics(
   attributes : AttributeSemanticIndex,
-  model_index : Int,
+  model_index : Int32,
   method_model : MetadataMethod,
 ) -> ResolvedMethodParameterSemantics raise MetadataError {
   let parameters : Array[ResolvedParameterSemantics] = []
   for slot in method_model.parameters.parameters {
     parameters.push(parameter_semantics_for_slot(attributes, model_index, slot))
   }
-  let owner : DecodedIndex = { table: MethodDef, row: method_model.source.rid }
+  let owner : DecodedIndex = { table: MethodDef, row: method_model.source.rid, }
   let mut is_default_overload = false
   let return_value_names : Array[String] = []
   for attribute in attributes.for_owner(model_index, owner) {

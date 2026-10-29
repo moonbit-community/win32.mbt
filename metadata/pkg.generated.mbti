@@ -8,7 +8,7 @@ import {
 // Values
 pub fn analyze_custom_attribute(MaterializedCustomAttribute) -> SemanticCustomAttribute raise MetadataError
 
-pub fn bind_method_parameters(Tables, MetadataHeaps, AssociationIndex, Int, MethodSignature) -> MethodParamBinding raise MetadataError
+pub fn bind_method_parameters(Tables, MetadataHeaps, AssociationIndex, Int32, MethodSignature) -> MethodParamBinding raise MetadataError
 
 pub fn build_association_index(Tables, MetadataHeaps, limits? : ParserLimits) -> AssociationIndex raise MetadataError
 
@@ -38,33 +38,33 @@ pub fn classify_attribute_identity(TypeIdentity) -> AttributeSemanticKind
 
 pub fn classify_method_signature(MethodSignature) -> SignatureProjection
 
-pub fn decode_coded_index(Tables, UInt, CodedIndexKind, Nullability) -> DecodedIndex? raise MetadataError
+pub fn decode_coded_index(Tables, UInt32, CodedIndexKind, Nullability) -> DecodedIndex? raise MetadataError
 
-pub fn decode_constant(Int, Bytes) -> ConstantValue raise MetadataError
+pub fn decode_constant(Int32, Bytes) -> ConstantValue raise MetadataError
 
-pub fn decode_event_attributes(UInt) -> EventAttributes
+pub fn decode_event_attributes(UInt32) -> EventAttributes
 
-pub fn decode_field_attributes(UInt) -> FieldAttributes
+pub fn decode_field_attributes(UInt32) -> FieldAttributes
 
-pub fn decode_generic_param_attributes(UInt) -> GenericParamAttributes
+pub fn decode_generic_param_attributes(UInt32) -> GenericParamAttributes
 
 pub fn decode_inventory_profiles(String) -> Array[InventoryProfile] raise MetadataError
 
-pub fn decode_method_attributes(UInt) -> MethodAttributes
+pub fn decode_method_attributes(UInt32) -> MethodAttributes
 
-pub fn decode_method_impl_attributes(UInt) -> MethodImplAttributes
+pub fn decode_method_impl_attributes(UInt32) -> MethodImplAttributes
 
-pub fn decode_param_attributes(UInt) -> ParamAttributes
+pub fn decode_param_attributes(UInt32) -> ParamAttributes
 
-pub fn decode_param_metadata(UInt, Int) -> ParamMetadata raise MetadataError
+pub fn decode_param_metadata(UInt32, Int32) -> ParamMetadata raise MetadataError
 
-pub fn decode_property_attributes(UInt) -> PropertyAttributes
+pub fn decode_property_attributes(UInt32) -> PropertyAttributes
 
 pub fn decode_raw_custom_attribute(Bytes, limits? : ParserLimits) -> RawCustomAttribute raise MetadataError
 
-pub fn decode_simple_index(Tables, UInt, TableKind, Nullability) -> DecodedIndex? raise MetadataError
+pub fn decode_simple_index(Tables, UInt32, TableKind, Nullability) -> DecodedIndex? raise MetadataError
 
-pub fn decode_type_attributes(UInt) -> TypeAttributes
+pub fn decode_type_attributes(UInt32) -> TypeAttributes
 
 pub fn ecma_structural_validate(MetadataModel) -> Unit raise MetadataError
 
@@ -120,17 +120,17 @@ pub fn profile_type_content_equivalent(MetadataModel, MetadataType, MetadataMode
 
 pub fn raw_attribute_type_name(MetadataModel, RawCustomAttributeAssociation) -> String? raise MetadataError
 
-pub fn read_compressed_int(Reader) -> Int raise MetadataError
+pub fn read_compressed_int(Reader) -> Int32 raise MetadataError
 
-pub fn read_compressed_uint(Reader) -> UInt raise MetadataError
+pub fn read_compressed_uint(Reader) -> UInt32 raise MetadataError
 
 pub fn require_no_unknown_projection_attributes(Array[SemanticCustomAttribute]) -> Unit raise MetadataError
 
-pub fn resolve_method_parameter_semantics(AttributeSemanticIndex, Int, MetadataMethod) -> ResolvedMethodParameterSemantics raise MetadataError
+pub fn resolve_method_parameter_semantics(AttributeSemanticIndex, Int32, MetadataMethod) -> ResolvedMethodParameterSemantics raise MetadataError
 
-pub fn resolve_pinvoke(Tables, MetadataHeaps, Int) -> PInvokeInfo raise MetadataError
+pub fn resolve_pinvoke(Tables, MetadataHeaps, Int32) -> PInvokeInfo raise MetadataError
 
-pub fn resolved_winrt_metadata_signature(ResolvedUniverse, TypeHierarchyIndex, RuntimeClassIndex, AttributeSemanticIndex, Int, TypeSignature, type_arguments? : Array[ResolvedWinRtType], method_arguments? : Array[ResolvedWinRtType]) -> String raise MetadataError
+pub fn resolved_winrt_metadata_signature(ResolvedUniverse, TypeHierarchyIndex, RuntimeClassIndex, AttributeSemanticIndex, Int32, TypeSignature, type_arguments? : Array[ResolvedWinRtType], method_arguments? : Array[ResolvedWinRtType]) -> String raise MetadataError
 
 pub fn resolved_winrt_parameterized_iid(String) -> Bytes raise MetadataError
 
@@ -140,19 +140,19 @@ pub fn resolved_winrt_type_signature(ResolvedUniverse, TypeHierarchyIndex, Runti
 
 pub fn sort_diagnostics(Array[Diagnostic]) -> Array[Diagnostic]
 
-pub fn split_metadata_arity(String) -> (String, Int) raise MetadataError
+pub fn split_metadata_arity(String) -> (String, Int32) raise MetadataError
 
 pub fn substitute_method_spec_target_signature(MethodSignature, MethodSpecSignature, limits? : ParserLimits) -> MethodSignature raise MetadataError
 
 pub fn substitute_type_signature(TypeSignature, GenericEnvironment, limits? : ParserLimits) -> TypeSignature raise MetadataError
 
-pub fn table_kind_from_id(Int) -> TableKind?
+pub fn table_kind_from_id(Int32) -> TableKind?
 
 pub fn table_schema(TableKind) -> Array[ColumnSpec]
 
 pub fn unresolved_winrt_signature(TypeSignature) -> UnresolvedWinRtSignature raise MetadataError
 
-pub fn validate_generic_parameter_scope(Array[RawGenericParameter], Int, String) -> Unit raise MetadataError
+pub fn validate_generic_parameter_scope(Array[RawGenericParameter], Int32, String) -> Unit raise MetadataError
 
 pub fn validate_inventory_profile(MetadataModel, InventoryProfile) -> Unit raise MetadataError
 
@@ -176,27 +176,27 @@ pub(all) suberror MetadataError {
 // Types and methods
 pub(all) struct ArrayMarshal {
   element_type : NativeType?
-  parameter_number : Int?
-  element_multiplier : Int?
-  constant_elements : Int?
+  parameter_number : Int32?
+  element_multiplier : Int32?
+  constant_elements : Int32?
 } derive(Eq, @debug.Debug)
-pub fn ArrayMarshal::computed_element_count(Self, Int?) -> Int? raise MetadataError
+pub fn ArrayMarshal::computed_element_count(Self, Int32?) -> Int32? raise MetadataError
 
 pub(all) struct ArrayShape {
-  rank : Int
-  sizes : Array[Int]
-  lower_bounds : Array[Int]
+  rank : Int32
+  sizes : Array[Int32]
+  lower_bounds : Array[Int32]
 } derive(Eq, @debug.Debug)
 
 pub(all) struct AssemblyIdentity {
   name : String
-  major : Int
-  minor : Int
-  build : Int
-  revision : Int
+  major : Int32
+  minor : Int32
+  build : Int32
+  revision : Int32
   culture : String
   public_key_or_token : Bytes
-  flags : UInt
+  flags : UInt32
 } derive(Eq, @debug.Debug)
 pub fn AssemblyIdentity::stable_key(Self) -> String
 
@@ -211,7 +211,7 @@ pub fn AssociationIndex::marshal_for(Self, DecodedIndex) -> RawFieldMarshal?
 pub(all) struct AttributeArgument {
   declared_type : AttributeValueType
   value : AttributeValue
-  raw_offset : Int
+  raw_offset : Int32
   raw_bytes : Bytes
 } derive(Eq, @debug.Debug)
 
@@ -219,7 +219,7 @@ pub(all) struct AttributeNamedArgument {
   kind : AttributeNamedKind
   name : String
   argument : AttributeArgument
-  raw_offset : Int
+  raw_offset : Int32
   raw_bytes : Bytes
 } derive(Eq, @debug.Debug)
 
@@ -231,12 +231,12 @@ pub(all) enum AttributeNamedKind {
 pub(all) struct AttributeSemanticIndex {
   entries : Array[LocatedSemanticAttribute]
 } derive(Eq, @debug.Debug)
-pub fn AttributeSemanticIndex::availability_for_owner(Self, Int, DecodedIndex) -> Array[AvailabilityConstraint] raise MetadataError
-pub fn AttributeSemanticIndex::effective_availability(Self, Int, DecodedIndex, Array[DecodedIndex]) -> EffectiveAvailability raise MetadataError
-pub fn AttributeSemanticIndex::for_owner(Self, Int, DecodedIndex) -> Array[SemanticCustomAttribute]
-pub fn AttributeSemanticIndex::has_kind(Self, Int, DecodedIndex, AttributeSemanticKind) -> Bool
+pub fn AttributeSemanticIndex::availability_for_owner(Self, Int32, DecodedIndex) -> Array[AvailabilityConstraint] raise MetadataError
+pub fn AttributeSemanticIndex::effective_availability(Self, Int32, DecodedIndex, Array[DecodedIndex]) -> EffectiveAvailability raise MetadataError
+pub fn AttributeSemanticIndex::for_owner(Self, Int32, DecodedIndex) -> Array[SemanticCustomAttribute]
+pub fn AttributeSemanticIndex::has_kind(Self, Int32, DecodedIndex, AttributeSemanticKind) -> Bool
 pub fn AttributeSemanticIndex::require_no_unknown_projection_attributes(Self) -> Unit raise MetadataError
-pub fn AttributeSemanticIndex::winrt_member_visibility(Self, Int, DecodedIndex, Bool) -> WinRtMemberVisibility
+pub fn AttributeSemanticIndex::winrt_member_visibility(Self, Int32, DecodedIndex, Bool) -> WinRtMemberVisibility
 
 pub(all) enum AttributeSemanticInteger {
   AttributeSemanticSigned(Int64)
@@ -318,15 +318,15 @@ pub(all) enum AttributeValue {
   AttributeNullValue
   AttributeBooleanValue(Bool)
   AttributeCharValue(UInt16)
-  AttributeI1Value(Int)
+  AttributeI1Value(Int32)
   AttributeU1Value(Byte)
-  AttributeI2Value(Int)
+  AttributeI2Value(Int32)
   AttributeU2Value(UInt16)
-  AttributeI4Value(Int)
-  AttributeU4Value(UInt)
+  AttributeI4Value(Int32)
+  AttributeU4Value(UInt32)
   AttributeI8Value(Int64)
   AttributeU8Value(UInt64)
-  AttributeR4BitsValue(UInt)
+  AttributeR4BitsValue(UInt32)
   AttributeR8BitsValue(UInt64)
   AttributeStringValue(String)
   AttributeTypeValue(String, TypeIdentity?)
@@ -358,7 +358,7 @@ pub(all) enum AttributeValueType {
 pub(all) struct AvailabilityConstraint {
   kind : AvailabilityConstraintKind
   contract : TypeIdentity?
-  version : UInt?
+  version : UInt32?
   text : String?
   source : SourceToken
   owner : DecodedIndex
@@ -381,7 +381,7 @@ pub(all) struct BlobHeap {
   bytes : Bytes
   limits : ParserLimits
 } derive(Eq, @debug.Debug)
-pub fn BlobHeap::get(Self, UInt) -> Bytes raise MetadataError
+pub fn BlobHeap::get(Self, UInt32) -> Bytes raise MetadataError
 
 pub(all) enum CallingConvention {
   DefaultCall
@@ -395,12 +395,12 @@ pub(all) enum CallingConvention {
 
 pub(all) struct CliHeader {
   header_span : FileSpan
-  header_size : UInt
+  header_size : UInt32
   runtime_major : UInt16
   runtime_minor : UInt16
-  flags : UInt
-  metadata_rva : UInt
-  metadata_size : UInt
+  flags : UInt32
+  metadata_rva : UInt32
+  metadata_size : UInt32
   metadata_span : FileSpan
 } derive(Eq, @debug.Debug)
 
@@ -419,8 +419,8 @@ pub(all) enum CodedIndexKind {
   ResolutionScope
   TypeOrMethodDef
 } derive(Eq, @debug.Debug)
-pub fn CodedIndexKind::tag_bits(Self) -> Int
-pub fn CodedIndexKind::target(Self, Int) -> TableKind?
+pub fn CodedIndexKind::tag_bits(Self) -> Int32
+pub fn CodedIndexKind::target(Self, Int32) -> TableKind?
 
 pub(all) enum ColumnKind {
   U8Column
@@ -442,22 +442,22 @@ pub(all) enum ConstantValue {
   NullConstant
   BoolConstant(Bool)
   CharConstant(UInt16)
-  I1Constant(Int)
+  I1Constant(Int32)
   U1Constant(Byte)
-  I2Constant(Int)
+  I2Constant(Int32)
   U2Constant(UInt16)
-  I4Constant(Int)
-  U4Constant(UInt)
+  I4Constant(Int32)
+  U4Constant(UInt32)
   I8Constant(Int64)
   U8Constant(UInt64)
-  R4Bits(UInt)
+  R4Bits(UInt32)
   R8Bits(UInt64)
   StringConstant(String)
 } derive(Eq, @debug.Debug)
 
 pub(all) struct DecodedIndex {
   table : TableKind
-  row : Int
+  row : Int32
 } derive(Eq, @debug.Debug)
 
 pub(all) struct Diagnostic {
@@ -467,7 +467,7 @@ pub(all) struct Diagnostic {
   source_file : String
   source_sha256 : String
   metadata_token : String?
-  offset : Int?
+  offset : Int32?
   item_path : String
   message : String
   help : String
@@ -482,14 +482,14 @@ pub(all) struct EffectiveAvailability {
 } derive(Eq, @debug.Debug)
 
 pub(all) struct EventAttributes {
-  raw : UInt
+  raw : UInt32
   is_special_name : Bool
   is_runtime_special_name : Bool
 } derive(Eq, @debug.Debug)
 
 pub(all) struct FieldAttributes {
-  raw : UInt
-  visibility : Int
+  raw : UInt32
+  visibility : Int32
   is_static : Bool
   is_init_only : Bool
   is_literal : Bool
@@ -501,12 +501,12 @@ pub(all) struct FieldAttributes {
 } derive(Eq, @debug.Debug)
 
 pub(all) struct FileSpan {
-  offset : Int
-  size : Int
+  offset : Int32
+  size : Int32
 } derive(Eq, @debug.Debug)
 
 pub(all) struct FixedArrayMarshal {
-  element_count : Int
+  element_count : Int32
   element_type : NativeType?
 } derive(Eq, @debug.Debug)
 
@@ -516,8 +516,8 @@ pub(all) struct GenericEnvironment {
 } derive(Eq, @debug.Debug)
 
 pub(all) struct GenericParamAttributes {
-  raw : UInt
-  variance : Int
+  raw : UInt32
+  variance : Int32
   reference_type_constraint : Bool
   value_type_constraint : Bool
   default_constructor_constraint : Bool
@@ -526,7 +526,7 @@ pub(all) struct GenericParamAttributes {
 pub(all) struct GuidHeap {
   bytes : Bytes
 } derive(Eq, @debug.Debug)
-pub fn GuidHeap::get(Self, UInt) -> Bytes? raise MetadataError
+pub fn GuidHeap::get(Self, UInt32) -> Bytes? raise MetadataError
 
 pub(all) struct InventoryProfile {
   filename : String
@@ -535,7 +535,7 @@ pub(all) struct InventoryProfile {
 } derive(Eq, @debug.Debug)
 
 pub(all) struct LocatedSemanticAttribute {
-  model_index : Int
+  model_index : Int32
   owner : DecodedIndex
   value : SemanticCustomAttribute
 } derive(Eq, @debug.Debug)
@@ -551,7 +551,7 @@ pub(all) struct MemberIdentity {
   kind : MemberKind
   metadata_name : String
   normalized_signature : String
-  generic_arity : Int
+  generic_arity : Int32
   association : String
 } derive(Eq, @debug.Debug)
 pub fn MemberIdentity::stable_key(Self) -> String
@@ -580,8 +580,8 @@ pub(all) struct MetadataField {
   signature : TypeSignature
   constant : RawConstantAssociation?
   marshal : RawFieldMarshal?
-  layout_offset : UInt?
-  rva : UInt?
+  layout_offset : UInt32?
+  rva : UInt32?
   custom_attributes : Array[RawCustomAttributeAssociation]
   projection_eligible : Bool
 } derive(Eq, @debug.Debug)
@@ -620,7 +620,7 @@ pub(all) struct MetadataMethod {
 
 pub(all) struct MetadataMethodImplementation {
   source : SourceToken
-  class_rid : Int
+  class_rid : Int32
   body : DecodedIndex
   declaration : DecodedIndex
 } derive(Eq, @debug.Debug)
@@ -630,18 +630,18 @@ pub(all) struct MetadataModel {
   source_sha256 : String
   file_kind : MetadataFileKind
   root_version : String
-  cli_flags : UInt
+  cli_flags : UInt32
   assembly : AssemblyIdentity
   generic_parameters : Array[RawGenericParameter]
   types : Array[MetadataType]
-  type_indexes_by_rid : Array[Int]
-  method_owner_type_indexes : Array[Int]
+  type_indexes_by_rid : Array[Int32]
+  method_owner_type_indexes : Array[Int32]
   namespaces : Array[MetadataNamespace]
   tables : Tables
   heaps : MetadataHeaps
   associations : AssociationIndex
 } derive(Eq, @debug.Debug)
-pub fn MetadataModel::enclosing_type_rid(Self, Int) -> Int? raise MetadataError
+pub fn MetadataModel::enclosing_type_rid(Self, Int32) -> Int32? raise MetadataError
 pub fn MetadataModel::owner_source_signature(Self, DecodedIndex) -> String
 pub fn MetadataModel::owner_source_signature_index(Self) -> Map[String, String]
 pub fn MetadataModel::type_by_identity(Self, TypeIdentity) -> MetadataType?
@@ -650,7 +650,7 @@ pub fn MetadataModel::types_in_namespace(Self, String) -> Array[MetadataType]
 
 pub(all) struct MetadataNamespace {
   name : String
-  type_indexes : Array[Int]
+  type_indexes : Array[Int32]
 } derive(Eq, @debug.Debug)
 
 pub(all) struct MetadataProperty {
@@ -667,7 +667,7 @@ pub(all) struct MetadataProperty {
 pub(all) struct MetadataRoot {
   version : String
   flags : UInt16
-  directory_end : Int
+  directory_end : Int32
   streams : Array[StreamHandle]
   table_stream : StreamHandle
   strings_heap : StreamHandle?
@@ -706,8 +706,8 @@ pub(all) enum MetadataTypeCategory {
 } derive(Compare, Eq, @debug.Debug)
 
 pub(all) struct MethodAttributes {
-  raw : UInt
-  visibility : Int
+  raw : UInt32
+  visibility : Int32
   is_static : Bool
   is_virtual : Bool
   is_abstract : Bool
@@ -719,8 +719,8 @@ pub(all) struct MethodAttributes {
 } derive(Eq, @debug.Debug)
 
 pub(all) struct MethodImplAttributes {
-  raw : UInt
-  code_type : Int
+  raw : UInt32
+  code_type : Int32
   is_managed : Bool
   preserve_sig : Bool
   internal_call : Bool
@@ -736,7 +736,7 @@ pub(all) struct MethodParamBinding {
 } derive(Eq, @debug.Debug)
 
 pub(all) struct MethodParamSlot {
-  sequence : Int
+  sequence : Int32
   signature : TypeSignature
   metadata : RawParamMetadata?
 } derive(Eq, @debug.Debug)
@@ -744,7 +744,7 @@ pub(all) struct MethodParamSlot {
 pub(all) struct MethodSemanticAssociation {
   source : SourceToken
   role : MethodSemanticRole
-  method_rid : Int
+  method_rid : Int32
   association : DecodedIndex
 } derive(Eq, @debug.Debug)
 
@@ -768,11 +768,11 @@ pub(all) struct MethodSignature {
   calling_convention : CallingConvention
   has_this : Bool
   explicit_this : Bool
-  generic_arity : Int
-  parameter_count : Int
+  generic_arity : Int32
+  parameter_count : Int32
   return_type : TypeSignature
   parameters : Array[TypeSignature]
-  sentinel_index : Int?
+  sentinel_index : Int32?
 } derive(Eq, @debug.Debug)
 
 pub(all) struct MethodSpecSignature {
@@ -822,10 +822,10 @@ pub(all) enum NativeType {
   NativeIInspectable
   NativeHString
   NativeLPUtf8Str
-  NativeFixedString(Int)
+  NativeFixedString(Int32)
   NativeFixedArray(FixedArrayMarshal)
   NativeArray(ArrayMarshal)
-  KnownUnsupported(Int, Bytes)
+  KnownUnsupported(Int32, Bytes)
 } derive(Eq, @debug.Debug)
 
 pub(all) enum Nullability {
@@ -849,8 +849,8 @@ pub(all) enum PInvokeCharSet {
 } derive(Eq, @debug.Debug)
 
 pub(all) struct PInvokeInfo {
-  method_rid : Int
-  impl_map_rid : Int
+  method_rid : Int32
+  impl_map_rid : Int32
   dll_name : String
   entry_point : String
   charset : PInvokeCharSet
@@ -859,7 +859,7 @@ pub(all) struct PInvokeInfo {
   exact_spelling : Bool
   best_fit : PInvokeSwitch
   throw_on_unmappable : PInvokeSwitch
-  raw_mapping_flags : UInt
+  raw_mapping_flags : UInt32
 } derive(Eq, @debug.Debug)
 
 pub(all) enum PInvokeSwitch {
@@ -869,7 +869,7 @@ pub(all) enum PInvokeSwitch {
 } derive(Eq, @debug.Debug)
 
 pub(all) struct ParamAttributes {
-  raw : UInt
+  raw : UInt32
   is_in : Bool
   is_out : Bool
   is_optional : Bool
@@ -879,7 +879,7 @@ pub(all) struct ParamAttributes {
 
 pub(all) struct ParamMetadata {
   attributes : ParamAttributes
-  sequence : Int
+  sequence : Int32
   is_return : Bool
 } derive(Eq, @debug.Debug)
 
@@ -892,29 +892,29 @@ pub(all) enum ParameterDirection {
 } derive(Compare, Eq, @debug.Debug)
 
 pub(all) struct ParserLimits {
-  max_file_size : Int
-  max_stream_size : Int
-  max_blob_size : Int
-  max_table_rows : Int
-  max_signature_depth : Int
-  max_attribute_depth : Int
-  max_generic_args : Int
-  max_single_allocation : Int
+  max_file_size : Int32
+  max_stream_size : Int32
+  max_blob_size : Int32
+  max_table_rows : Int32
+  max_signature_depth : Int32
+  max_attribute_depth : Int32
+  max_generic_args : Int32
+  max_single_allocation : Int32
 } derive(Eq, @debug.Debug)
 pub fn ParserLimits::default_for_winmd() -> Self
-pub fn ParserLimits::with_max_file_size(Self, Int) -> Self
+pub fn ParserLimits::with_max_file_size(Self, Int32) -> Self
 
 pub(all) struct PeImage {
   data : Bytes
   kind : PeKind
-  optional_offset : Int
-  optional_size : Int
-  data_directory_offset : Int
-  number_of_rva_and_sizes : UInt
+  optional_offset : Int32
+  optional_size : Int32
+  data_directory_offset : Int32
+  number_of_rva_and_sizes : UInt32
   sections : Array[PeSection]
 } derive(Eq, @debug.Debug)
-pub fn PeImage::data_directory(Self, Int) -> (UInt, UInt) raise MetadataError
-pub fn PeImage::map_rva_span(Self, UInt, UInt) -> FileSpan raise MetadataError
+pub fn PeImage::data_directory(Self, Int32) -> (UInt32, UInt32) raise MetadataError
+pub fn PeImage::map_rva_span(Self, UInt32, UInt32) -> FileSpan raise MetadataError
 pub fn PeImage::span_bytes(Self, FileSpan) -> Bytes raise MetadataError
 
 pub(all) enum PeKind {
@@ -923,10 +923,10 @@ pub(all) enum PeKind {
 } derive(Eq, @debug.Debug)
 
 pub(all) struct PeSection {
-  virtual_size : UInt
-  virtual_address : UInt
-  raw_size : UInt
-  raw_offset : UInt
+  virtual_size : UInt32
+  virtual_address : UInt32
+  raw_size : UInt32
+  raw_offset : UInt32
 } derive(Eq, @debug.Debug)
 
 pub(all) enum PrimitiveType {
@@ -951,7 +951,7 @@ pub(all) enum PrimitiveType {
 } derive(Eq, @debug.Debug)
 
 pub(all) struct PropertyAttributes {
-  raw : UInt
+  raw : UInt32
   is_special_name : Bool
   is_runtime_special_name : Bool
   has_default : Bool
@@ -959,7 +959,7 @@ pub(all) struct PropertyAttributes {
 
 pub(all) struct PropertySignature {
   has_this : Bool
-  parameter_count : Int
+  parameter_count : Int32
   property_type : TypeSignature
   parameters : Array[TypeSignature]
 } derive(Eq, @debug.Debug)
@@ -972,9 +972,9 @@ pub(all) enum RawAssociation {
 } derive(Eq, @debug.Debug)
 
 pub(all) struct RawConstantAssociation {
-  row_rid : Int
+  row_rid : Int32
   owner : DecodedIndex
-  element_type : Int
+  element_type : Int32
   value : ConstantValue
 } derive(Eq, @debug.Debug)
 
@@ -983,21 +983,21 @@ pub(all) struct RawCustomAttribute {
 } derive(Eq, @debug.Debug)
 
 pub(all) struct RawCustomAttributeAssociation {
-  row_rid : Int
+  row_rid : Int32
   owner : DecodedIndex
   constructor_token : DecodedIndex
   value : RawCustomAttribute
 } derive(Eq, @debug.Debug)
 
 pub(all) struct RawFieldMarshal {
-  row_rid : Int
+  row_rid : Int32
   owner : DecodedIndex
   native_type : NativeType
 } derive(Eq, @debug.Debug)
 
 pub(all) struct RawGenericParameter {
-  rid : Int
-  number : Int
+  rid : Int32
+  number : Int32
   attributes : GenericParamAttributes
   owner : DecodedIndex
   name : String
@@ -1005,8 +1005,8 @@ pub(all) struct RawGenericParameter {
 } derive(Eq, @debug.Debug)
 
 pub(all) struct RawParamMetadata {
-  rid : Int
-  sequence : Int
+  rid : Int32
+  sequence : Int32
   name : String
   attributes : ParamAttributes
   constant : RawConstantAssociation?
@@ -1015,36 +1015,36 @@ pub(all) struct RawParamMetadata {
 } derive(Eq, @debug.Debug)
 
 pub(all) struct RawSecurityAssociation {
-  row_rid : Int
+  row_rid : Int32
   owner : DecodedIndex
-  action : UInt
+  action : UInt32
   permission_set : Bytes
 } derive(Eq, @debug.Debug)
 
 pub(all) struct Reader {
   data : Bytes
-  start : Int
-  length : Int
-  mut position : Int
+  start : Int32
+  length : Int32
+  mut position : Int32
 }
 pub fn Reader::new(Bytes) -> Self
 pub fn Reader::peek_u8(Self) -> Byte raise MetadataError
-pub fn Reader::position(Self) -> Int
-pub fn Reader::read_bytes(Self, Int) -> Bytes raise MetadataError
+pub fn Reader::position(Self) -> Int32
+pub fn Reader::read_bytes(Self, Int32) -> Bytes raise MetadataError
 pub fn Reader::read_u16_le(Self) -> UInt16 raise MetadataError
-pub fn Reader::read_u32_le(Self) -> UInt raise MetadataError
+pub fn Reader::read_u32_le(Self) -> UInt32 raise MetadataError
 pub fn Reader::read_u64_le(Self) -> UInt64 raise MetadataError
 pub fn Reader::read_u8(Self) -> Byte raise MetadataError
-pub fn Reader::remaining(Self) -> Int
-pub fn Reader::seek(Self, Int) -> Unit raise MetadataError
-pub fn Reader::slice(Self, Int, Int) -> Self raise MetadataError
+pub fn Reader::remaining(Self) -> Int32
+pub fn Reader::seek(Self, Int32) -> Unit raise MetadataError
+pub fn Reader::slice(Self, Int32, Int32) -> Self raise MetadataError
 
 pub(all) struct ResolvedAttributeConstructor {
   declaring_type : TypeIdentity
   name : String
   signature : MethodSignature
   normalized_signature : String
-  model_index : Int
+  model_index : Int32
   token : DecodedIndex
   source : SourceToken
 } derive(Eq, @debug.Debug)
@@ -1057,8 +1057,8 @@ pub(all) struct ResolvedCustomAttribute {
 } derive(Eq, @debug.Debug)
 
 pub(all) struct ResolvedHierarchyVariant {
-  model_index : Int
-  type_index : Int
+  model_index : Int32
+  type_index : Int32
   source : SourceToken
   base_type : ResolvedTypeReference?
   interfaces : Array[ResolvedTypeReference]
@@ -1067,16 +1067,16 @@ pub(all) struct ResolvedHierarchyVariant {
 pub(all) struct ResolvedMember {
   identity : MemberIdentity
   stable_key : String
-  model_index : Int
-  type_index : Int
+  model_index : Int32
+  type_index : Int32
   location : ResolvedMemberLocation
 } derive(Eq, @debug.Debug)
 
 pub(all) enum ResolvedMemberLocation {
-  ResolvedField(Int)
-  ResolvedMethod(Int)
-  ResolvedProperty(Int)
-  ResolvedEvent(Int)
+  ResolvedField(Int32)
+  ResolvedMethod(Int32)
+  ResolvedProperty(Int32)
+  ResolvedEvent(Int32)
 } derive(Eq, @debug.Debug)
 
 pub(all) struct ResolvedMethodImplementation {
@@ -1111,10 +1111,10 @@ pub(all) struct ResolvedMethodTarget {
 } derive(Eq, @debug.Debug)
 
 pub(all) struct ResolvedParameterSemantics {
-  sequence : Int
+  sequence : Int32
   direction : ParameterDirection
   by_ref : Bool
-  metadata_rid : Int?
+  metadata_rid : Int32?
   marshal : RawFieldMarshal?
   length_arguments : Array[AttributeSemanticInteger]
   readonly_array_compat : Bool
@@ -1127,8 +1127,8 @@ pub(all) struct ResolvedRuntimeClass {
 } derive(Eq, @debug.Debug)
 
 pub(all) struct ResolvedRuntimeClassVariant {
-  model_index : Int
-  type_index : Int
+  model_index : Int32
+  type_index : Int32
   source : SourceToken
   identity : TypeIdentity
   interfaces : Array[ResolvedRuntimeInterface]
@@ -1153,9 +1153,9 @@ pub(all) struct ResolvedRuntimeInterface {
 pub(all) struct ResolvedTypeEntry {
   identity : TypeIdentity
   stable_key : String
-  model_index : Int
-  type_index : Int
-  variant_locations : Array[(Int, Int)]
+  model_index : Int32
+  type_index : Int32
+  variant_locations : Array[(Int32, Int32)]
   profile_variants : Bool
   name_ambiguous : Bool
   provenance : Array[SourceToken]
@@ -1186,22 +1186,22 @@ pub(all) struct ResolvedUniverse {
   method_specifications : Array[Array[ResolvedMethodSpecification?]]
   unresolved : Array[UnresolvedReference]
 } derive(Eq, @debug.Debug)
-pub fn ResolvedUniverse::analyze_model_custom_attributes(Self, Int, TypeHierarchyIndex) -> Array[SemanticCustomAttribute] raise MetadataError
+pub fn ResolvedUniverse::analyze_model_custom_attributes(Self, Int32, TypeHierarchyIndex) -> Array[SemanticCustomAttribute] raise MetadataError
 pub fn ResolvedUniverse::lookup_method_by_signature(Self, TypeIdentity, String, String) -> ResolvedMember? raise MetadataError
-pub fn ResolvedUniverse::materialize_model_custom_attributes(Self, Int, TypeHierarchyIndex, limits? : ParserLimits) -> Array[MaterializedCustomAttribute] raise MetadataError
+pub fn ResolvedUniverse::materialize_model_custom_attributes(Self, Int32, TypeHierarchyIndex, limits? : ParserLimits) -> Array[MaterializedCustomAttribute] raise MetadataError
 pub fn ResolvedUniverse::members_of(Self, TypeIdentity) -> Array[ResolvedMember]
 pub fn ResolvedUniverse::require_no_blocking_unresolved(Self) -> Unit raise MetadataError
 pub fn ResolvedUniverse::require_no_unresolved(Self) -> Unit raise MetadataError
-pub fn ResolvedUniverse::resolve_attribute_constructor(Self, Int, DecodedIndex) -> ResolvedAttributeConstructor raise MetadataError
-pub fn ResolvedUniverse::resolve_constructor_attribute_type(Self, Int, RawCustomAttributeAssociation) -> TypeIdentity? raise MetadataError
-pub fn ResolvedUniverse::resolve_custom_attribute(Self, Int, RawCustomAttributeAssociation) -> ResolvedCustomAttribute raise MetadataError
-pub fn ResolvedUniverse::resolve_member_ref(Self, Int, Int) -> ResolvedMember? raise MetadataError
-pub fn ResolvedUniverse::resolve_member_ref_declaring_type(Self, Int, DecodedIndex) -> TypeIdentity? raise MetadataError
-pub fn ResolvedUniverse::resolve_method_def(Self, Int, Int) -> ResolvedMember? raise MetadataError
-pub fn ResolvedUniverse::resolve_method_token(Self, Int, DecodedIndex) -> ResolvedMember? raise MetadataError
-pub fn ResolvedUniverse::resolve_model_custom_attributes(Self, Int) -> Array[ResolvedCustomAttribute] raise MetadataError
+pub fn ResolvedUniverse::resolve_attribute_constructor(Self, Int32, DecodedIndex) -> ResolvedAttributeConstructor raise MetadataError
+pub fn ResolvedUniverse::resolve_constructor_attribute_type(Self, Int32, RawCustomAttributeAssociation) -> TypeIdentity? raise MetadataError
+pub fn ResolvedUniverse::resolve_custom_attribute(Self, Int32, RawCustomAttributeAssociation) -> ResolvedCustomAttribute raise MetadataError
+pub fn ResolvedUniverse::resolve_member_ref(Self, Int32, Int32) -> ResolvedMember? raise MetadataError
+pub fn ResolvedUniverse::resolve_member_ref_declaring_type(Self, Int32, DecodedIndex) -> TypeIdentity? raise MetadataError
+pub fn ResolvedUniverse::resolve_method_def(Self, Int32, Int32) -> ResolvedMember? raise MetadataError
+pub fn ResolvedUniverse::resolve_method_token(Self, Int32, DecodedIndex) -> ResolvedMember? raise MetadataError
+pub fn ResolvedUniverse::resolve_model_custom_attributes(Self, Int32) -> Array[ResolvedCustomAttribute] raise MetadataError
 pub fn ResolvedUniverse::resolve_serialized_type_name(Self, String) -> TypeIdentity? raise MetadataError
-pub fn ResolvedUniverse::resolve_type_token(Self, Int, DecodedIndex) -> ResolvedTypeReference? raise MetadataError
+pub fn ResolvedUniverse::resolve_type_token(Self, Int32, DecodedIndex) -> ResolvedTypeReference? raise MetadataError
 pub fn ResolvedUniverse::type_by_identity(Self, TypeIdentity) -> ResolvedTypeEntry?
 pub fn ResolvedUniverse::types_by_full_name(Self, String, String) -> Array[ResolvedTypeEntry]
 pub fn ResolvedUniverse::types_in_namespace(Self, String) -> Array[ResolvedTypeEntry]
@@ -1262,7 +1262,7 @@ pub(all) struct SourceToken {
   source_file : String
   source_sha256 : String
   table : TableKind
-  rid : Int
+  rid : Int32
 } derive(Eq, @debug.Debug)
 
 pub(all) struct StreamHandle {
@@ -1273,13 +1273,13 @@ pub(all) struct StreamHandle {
 pub(all) struct StringHeap {
   bytes : Bytes
 } derive(Eq, @debug.Debug)
-pub fn StringHeap::get(Self, UInt) -> String raise MetadataError
+pub fn StringHeap::get(Self, UInt32) -> String raise MetadataError
 
 pub(all) struct TableInfo {
   kind : TableKind
-  row_count : Int
-  row_width : Int
-  row_offset : Int
+  row_count : Int32
+  row_width : Int32
+  row_offset : Int32
 } derive(Eq, @debug.Debug)
 
 pub(all) enum TableKind {
@@ -1329,38 +1329,38 @@ pub(all) enum TableKind {
   MethodSpec
   GenericParamConstraint
 } derive(Compare, Eq, @debug.Debug)
-pub fn TableKind::id(Self) -> Int
+pub fn TableKind::id(Self) -> Int32
 pub fn TableKind::name(Self) -> String
 
 pub(all) struct TableRow {
   table : TableKind
-  rid : Int
-  values : Array[(String, UInt)]
+  rid : Int32
+  values : Array[(String, UInt32)]
 } derive(Eq, @debug.Debug)
-pub fn TableRow::value(Self, String) -> UInt?
+pub fn TableRow::value(Self, String) -> UInt32?
 
 pub(all) struct Tables {
   bytes : Bytes
   compressed : Bool
   heap_sizes : Byte
   header_marker : Byte
-  extra_data : UInt?
+  extra_data : UInt32?
   terminal_zero_dword : Bool
   valid_mask : UInt64
   sorted_mask : UInt64
-  row_counts : Array[Int]
+  row_counts : Array[Int32]
   infos : Array[TableInfo]
 } derive(Eq, @debug.Debug)
-pub fn Tables::get_nullable_row(Self, Nullability, TableKind, UInt) -> TableRow? raise MetadataError
-pub fn Tables::get_row(Self, TableKind, Int) -> TableRow raise MetadataError
-pub fn Tables::row_count(Self, TableKind) -> Int
-pub fn Tables::row_list(Self, RowListKind, Int) -> Array[TableRow] raise MetadataError
+pub fn Tables::get_nullable_row(Self, Nullability, TableKind, UInt32) -> TableRow? raise MetadataError
+pub fn Tables::get_row(Self, TableKind, Int32) -> TableRow raise MetadataError
+pub fn Tables::row_count(Self, TableKind) -> Int32
+pub fn Tables::row_list(Self, RowListKind, Int32) -> Array[TableRow] raise MetadataError
 pub fn Tables::validate_row_list(Self, RowListKind) -> Unit raise MetadataError
 
 pub(all) struct TypeAttributes {
-  raw : UInt
-  visibility : Int
-  layout : Int
+  raw : UInt32
+  visibility : Int32
+  layout : Int32
   is_interface : Bool
   is_abstract : Bool
   is_sealed : Bool
@@ -1375,11 +1375,11 @@ pub(all) struct TypeHierarchyIndex {
 pub fn TypeHierarchyIndex::type_by_identity(Self, TypeIdentity) -> ResolvedTypeHierarchy?
 
 pub(all) enum TypeIdentity {
-  CliTypeIdentity(AssemblyIdentity, String, String, TypeIdentity?, Int)
-  WinRtTypeIdentity(String, String, TypeIdentity?, Int)
+  CliTypeIdentity(AssemblyIdentity, String, String, TypeIdentity?, Int32)
+  WinRtTypeIdentity(String, String, TypeIdentity?, Int32)
 } derive(Eq, @debug.Debug)
 pub fn TypeIdentity::assembly_name(Self) -> String?
-pub fn TypeIdentity::generic_arity(Self) -> Int
+pub fn TypeIdentity::generic_arity(Self) -> Int32
 pub fn TypeIdentity::metadata_name(Self) -> String
 pub fn TypeIdentity::namespace_name(Self) -> String
 pub fn TypeIdentity::serialized_name(Self) -> String
@@ -1387,8 +1387,8 @@ pub fn TypeIdentity::stable_key(Self) -> String
 
 pub(all) struct TypeLayout {
   kind : TypeLayoutKind
-  packing_size : Int?
-  class_size : UInt?
+  packing_size : Int32?
+  class_size : UInt32?
 } derive(Eq, @debug.Debug)
 
 pub(all) enum TypeLayoutKind {
@@ -1403,8 +1403,8 @@ pub(all) enum TypeSignature {
   ByRef(TypeSignature)
   ValueType(DecodedIndex)
   ClassType(DecodedIndex)
-  TypeVariable(Int)
-  MethodVariable(Int)
+  TypeVariable(Int32)
+  MethodVariable(Int32)
   MultiDimensionalArray(TypeSignature, ArrayShape)
   SzArray(TypeSignature)
   GenericInstance(Bool, DecodedIndex, Array[TypeSignature])
@@ -1422,7 +1422,7 @@ pub(all) enum UnresolvedDisposition {
 pub(all) struct UnresolvedReference {
   source_file : String
   source_table : TableKind
-  source_rid : Int
+  source_rid : Int32
   scope : String
   reference_chain : Array[String]
   message : String
@@ -1432,8 +1432,8 @@ pub(all) struct UnresolvedReference {
 pub(all) enum UnresolvedWinRtSignature {
   WinRtPrimitive(WinRtPrimitiveToken)
   WinRtMetadataType(Bool, DecodedIndex)
-  WinRtTypeVariable(Int)
-  WinRtMethodVariable(Int)
+  WinRtTypeVariable(Int32)
+  WinRtMethodVariable(Int32)
   WinRtPointer(UnresolvedWinRtSignature)
   WinRtByRef(UnresolvedWinRtSignature)
   WinRtArray(UnresolvedWinRtSignature, ArrayShape)
@@ -1449,7 +1449,7 @@ pub(all) struct UserStringHeap {
   bytes : Bytes
   limits : ParserLimits
 } derive(Eq, @debug.Debug)
-pub fn UserStringHeap::get(Self, UInt) -> String raise MetadataError
+pub fn UserStringHeap::get(Self, UInt32) -> String raise MetadataError
 
 pub(all) enum WinRtMemberVisibility {
   OrdinaryPublicMember

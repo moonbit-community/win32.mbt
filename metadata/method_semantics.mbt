@@ -13,7 +13,7 @@ pub(all) enum MethodSemanticRole {
 pub(all) struct MethodSemanticAssociation {
   source : SourceToken
   role : MethodSemanticRole
-  method_rid : Int
+  method_rid : Int32
   association : DecodedIndex
 } derive(Debug, Eq)
 
@@ -44,7 +44,7 @@ pub(all) struct MetadataEvent {
 /// Raw MethodImpl tokens remain lossless until the global member resolver runs.
 pub(all) struct MetadataMethodImplementation {
   source : SourceToken
-  class_rid : Int
+  class_rid : Int32
   body : DecodedIndex
   declaration : DecodedIndex
 } derive(Debug, Eq)
@@ -63,14 +63,14 @@ fn semantics_source(
   source_file : String,
   source_sha256 : String,
   table : TableKind,
-  rid : Int,
+  rid : Int32,
 ) -> SourceToken {
-  { source_file, source_sha256, table, rid }
+  { source_file, source_sha256, table, rid, }
 }
 
 ///|
 fn decode_method_semantic_role(
-  raw : UInt,
+  raw : UInt32,
 ) -> MethodSemanticRole raise MetadataError {
   match raw {
     0x0001 => SetterSemantic
@@ -87,7 +87,7 @@ fn decode_method_semantic_role(
 }
 
 ///|
-fn semantic_role_order(role : MethodSemanticRole) -> Int {
+fn semantic_role_order(role : MethodSemanticRole) -> Int32 {
   match role {
     GetterSemantic => 0
     SetterSemantic => 1
@@ -99,7 +99,7 @@ fn semantic_role_order(role : MethodSemanticRole) -> Int {
 }
 
 ///|
-fn build_method_owner_map(tables : Tables) -> Array[Int] raise MetadataError {
+fn build_method_owner_map(tables : Tables) -> Array[Int32] raise MetadataError {
   let owners = Array::make(tables.row_count(MethodDef) + 1, 0)
   for type_rid in 1..<=tables.row_count(TypeDef) {
     for method_row in tables.row_list_unchecked(TypeDefMethods, type_rid) {
@@ -120,7 +120,7 @@ fn build_association_owner_map(
   map_table : TableKind,
   child_table : TableKind,
   list_kind : RowListKind,
-) -> Array[Int] raise MetadataError {
+) -> Array[Int32] raise MetadataError {
   let owners = Array::make(tables.row_count(child_table) + 1, 0)
   let mapped_types = Array::make(tables.row_count(TypeDef) + 1, false)
   for map_rid in 1..<=tables.row_count(map_table) {
@@ -164,7 +164,7 @@ fn build_association_owner_map(
 ///|
 fn method_projection_eligible(
   tables : Tables,
-  method_rid : Int,
+  method_rid : Int32,
 ) -> Bool raise MetadataError {
   let attributes = decode_method_attributes(
     tables.get_row(MethodDef, method_rid).value("Flags").unwrap(),
@@ -345,7 +345,7 @@ pub fn build_method_semantics_model(
   )
   for rid in 1..<=tables.row_count(Property) {
     let row = tables.get_row(Property, rid)
-    let owner : DecodedIndex = { table: Property, row: rid }
+    let owner : DecodedIndex = { table: Property, row: rid, }
     let attributes = decode_property_attributes(row.value("Flags").unwrap())
     properties_by_type[property_owners[rid]].push({
       source: semantics_source(source_file, source_sha256, Property, rid),
@@ -383,7 +383,7 @@ pub fn build_method_semantics_model(
         "MD0945", "method_semantics", 0, "Event.EventType is null",
       )
     }
-    let owner : DecodedIndex = { table: Event, row: rid }
+    let owner : DecodedIndex = { table: Event, row: rid, }
     let attributes = decode_event_attributes(row.value("EventFlags").unwrap())
     events_by_type[event_owners[rid]].push({
       source: semantics_source(source_file, source_sha256, Event, rid),
@@ -494,9 +494,9 @@ fn resolved_method_key(value : ResolvedMember) -> String {
 ///|
 fn resolved_method_cycle_message(
   labels : Array[String],
-  stack : Array[Int],
-  cycle_start : Int,
-  target : Int,
+  stack : Array[Int32],
+  cycle_start : Int32,
+  target : Int32,
 ) -> String {
   let builder = StringBuilder()
   for index in cycle_start..<stack.length() {
@@ -514,12 +514,12 @@ fn resolved_method_cycle_message(
 
 ///|
 fn visit_method_impl_graph(
-  node_index : Int,
+  node_index : Int32,
   labels : Array[String],
-  edges : Array[Array[Int]],
-  state : Array[Int],
-  stack : Array[Int],
-  max_depth : Int,
+  edges : Array[Array[Int32]],
+  state : Array[Int32],
+  stack : Array[Int32],
+  max_depth : Int32,
 ) -> Unit raise MetadataError {
   if stack.length() >= max_depth {
     return metadata_fail(
@@ -622,7 +622,7 @@ pub fn build_resolved_method_implementations(
     }
   })
   let labels : Array[String] = []
-  let indexes : Map[String, Int] = Map([])
+  let indexes : Map[String, Int32] = Map([])
   for implementation in output {
     let key = resolved_method_key(implementation.body)
     if indexes.get(key) is None {
@@ -630,7 +630,7 @@ pub fn build_resolved_method_implementations(
       labels.push(key)
     }
   }
-  let edges : Array[Array[Int]] = Array::makei(labels.length(), _ => [])
+  let edges : Array[Array[Int32]] = Array::makei(labels.length(), _ => [])
   for implementation in output {
     let source = indexes[resolved_method_key(implementation.body)]
     match indexes.get(resolved_method_key(implementation.declaration)) {

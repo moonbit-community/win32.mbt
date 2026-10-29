@@ -49,7 +49,7 @@ pub(all) enum TableKind {
 } derive(Debug, Eq, Compare)
 
 ///|
-pub fn TableKind::id(self : TableKind) -> Int {
+pub fn TableKind::id(self : TableKind) -> Int32 {
   match self {
     Module => 0
     TypeRef => 1
@@ -100,7 +100,7 @@ pub fn TableKind::id(self : TableKind) -> Int {
 }
 
 ///|
-pub fn table_kind_from_id(id : Int) -> TableKind? {
+pub fn table_kind_from_id(id : Int32) -> TableKind? {
   match id {
     0 => Some(Module)
     1 => Some(TypeRef)

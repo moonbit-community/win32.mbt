@@ -22,9 +22,9 @@ pub(all) enum PrimitiveType {
 
 ///|
 pub(all) struct ArrayShape {
-  rank : Int
-  sizes : Array[Int]
-  lower_bounds : Array[Int]
+  rank : Int32
+  sizes : Array[Int32]
+  lower_bounds : Array[Int32]
 } derive(Debug, Eq)
 
 ///|
@@ -34,8 +34,8 @@ pub(all) enum TypeSignature {
   ByRef(TypeSignature)
   ValueType(DecodedIndex)
   ClassType(DecodedIndex)
-  TypeVariable(Int)
-  MethodVariable(Int)
+  TypeVariable(Int32)
+  MethodVariable(Int32)
   MultiDimensionalArray(TypeSignature, ArrayShape)
   SzArray(TypeSignature)
   GenericInstance(Bool, DecodedIndex, Array[TypeSignature])
@@ -61,17 +61,17 @@ pub(all) struct MethodSignature {
   calling_convention : CallingConvention
   has_this : Bool
   explicit_this : Bool
-  generic_arity : Int
-  parameter_count : Int
+  generic_arity : Int32
+  parameter_count : Int32
   return_type : TypeSignature
   parameters : Array[TypeSignature]
-  sentinel_index : Int?
+  sentinel_index : Int32?
 } derive(Debug, Eq)
 
 ///|
 pub(all) struct PropertySignature {
   has_this : Bool
-  parameter_count : Int
+  parameter_count : Int32
   property_type : TypeSignature
   parameters : Array[TypeSignature]
 } derive(Debug, Eq)
@@ -104,10 +104,10 @@ pub(all) enum SignatureProjection {
 
 ///|
 fn compressed_count(
-  raw : UInt,
+  raw : UInt32,
   limits : ParserLimits,
   code : String,
-) -> Int raise MetadataError {
+) -> Int32 raise MetadataError {
   if raw.to_uint64() > limits.max_generic_args.to_uint64() {
     return metadata_fail(
       code, "signature", 0, "signature count exceeds ParserLimits.max_generic_args",
@@ -121,7 +121,7 @@ fn parse_type_inner(
   reader : Reader,
   tables : Tables,
   limits : ParserLimits,
-  depth : Int,
+  depth : Int32,
 ) -> TypeSignature raise MetadataError {
   if depth > limits.max_signature_depth {
     return metadata_fail(
@@ -191,7 +191,7 @@ fn parse_type_inner(
           "MD0606", "signature", element_offset, "ARRAY size count exceeds rank",
         )
       }
-      let sizes : Array[Int] = []
+      let sizes : Array[Int32] = []
       for _ in 0..<size_count {
         sizes.push(read_compressed_uint(reader).reinterpret_as_int())
       }
@@ -205,11 +205,11 @@ fn parse_type_inner(
           "MD0609", "signature", element_offset, "ARRAY lower-bound count exceeds rank",
         )
       }
-      let lower_bounds : Array[Int] = []
+      let lower_bounds : Array[Int32] = []
       for _ in 0..<bound_count {
         lower_bounds.push(read_compressed_int(reader))
       }
-      MultiDimensionalArray(element_type, { rank, sizes, lower_bounds })
+      MultiDimensionalArray(element_type, { rank, sizes, lower_bounds, })
     }
     0x15 => {
       let discriminator = reader.read_u8().to_int()
@@ -281,7 +281,7 @@ fn parse_type_inner(
 }
 
 ///|
-fn calling_convention(value : Int) -> CallingConvention? {
+fn calling_convention(value : Int32) -> CallingConvention? {
   match value {
     0x00 => Some(DefaultCall)
     0x01 => Some(CCall)
@@ -299,7 +299,7 @@ fn parse_method_reader(
   reader : Reader,
   tables : Tables,
   limits : ParserLimits,
-  depth : Int,
+  depth : Int32,
 ) -> MethodSignature raise MetadataError {
   if depth > limits.max_signature_depth {
     return metadata_fail(
@@ -330,7 +330,7 @@ fn parse_method_reader(
   )
   let return_type = parse_type_inner(reader, tables, limits, depth + 1)
   let parameters : Array[TypeSignature] = []
-  let mut sentinel_index : Int? = None
+  let mut sentinel_index : Int32? = None
   while parameters.length() < parameter_count {
     if reader.peek_u8() == 0x41 {
       ignore(reader.read_u8())
@@ -466,7 +466,12 @@ pub fn parse_property_signature(
     parameters.push(parse_type_inner(reader, tables, limits, 0))
   }
   require_consumed(reader)
-  { has_this: (header & 0x20) != 0, parameter_count, property_type, parameters }
+  {
+    has_this: (header & 0x20) != 0,
+    parameter_count,
+    property_type,
+    parameters,
+  }
 }
 
 ///|
@@ -511,7 +516,7 @@ fn substitute_method_inner(
   signature : MethodSignature,
   environment : GenericEnvironment,
   limits : ParserLimits,
-  depth : Int,
+  depth : Int32,
 ) -> MethodSignature raise MetadataError {
   let parameters : Array[TypeSignature] = []
   for parameter in signature.parameters {
@@ -536,7 +541,7 @@ fn substitute_type_inner(
   signature : TypeSignature,
   environment : GenericEnvironment,
   limits : ParserLimits,
-  depth : Int,
+  depth : Int32,
 ) -> TypeSignature raise MetadataError {
   if depth > limits.max_signature_depth {
     return metadata_fail(
@@ -626,7 +631,7 @@ fn substitute_method_spec_type_inner(
   signature : TypeSignature,
   arguments : Array[TypeSignature],
   limits : ParserLimits,
-  depth : Int,
+  depth : Int32,
 ) -> TypeSignature raise MetadataError {
   if depth > limits.max_signature_depth {
     return metadata_fail(
@@ -700,7 +705,7 @@ fn substitute_method_spec_target_signature_inner(
   signature : MethodSignature,
   arguments : Array[TypeSignature],
   limits : ParserLimits,
-  depth : Int,
+  depth : Int32,
 ) -> MethodSignature raise MetadataError {
   let parameters : Array[TypeSignature] = []
   for parameter in signature.parameters {

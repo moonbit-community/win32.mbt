@@ -25,5 +25,5 @@ pub fn decode_raw_custom_attribute(
       "MD0711", "custom_attribute", 0, "custom attribute prolog must be 0x0001",
     )
   }
-  { payload: blob[2:].to_owned() }
+  { payload: blob[2:].to_owned(), }
 }

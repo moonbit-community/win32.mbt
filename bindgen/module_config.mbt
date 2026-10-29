@@ -75,5 +75,5 @@ pub fn parse_bindings_module_config(
   let source_root = source_root.unwrap_or(".")
   let source_root = if source_root.is_empty() { "." } else { source_root }
   validate_source_root(source_root)
-  { name, source_root }
+  { name, source_root, }
 }

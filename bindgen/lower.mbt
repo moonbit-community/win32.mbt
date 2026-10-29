@@ -24,7 +24,7 @@ fn primitive_abi(
 }
 
 ///|
-fn align_up(value : Int, alignment : Int) -> Int {
+fn align_up(value : Int32, alignment : Int32) -> Int32 {
   if alignment <= 1 {
     value
   } else {
@@ -33,7 +33,7 @@ fn align_up(value : Int, alignment : Int) -> Int {
 }
 
 ///|
-fn scalar_size_alignment(scalar : AbiScalar) -> (Int, Int) {
+fn scalar_size_alignment(scalar : AbiScalar) -> (Int32, Int32) {
   match scalar {
     AbiI8 | AbiU8 => (1, 1)
     AbiI16 | AbiU16 | AbiChar16 => (2, 2)
@@ -43,7 +43,7 @@ fn scalar_size_alignment(scalar : AbiScalar) -> (Int, Int) {
 }
 
 ///|
-fn abi_size_alignment(abi_type : ExactAbiType) -> (Int, Int)? {
+fn abi_size_alignment(abi_type : ExactAbiType) -> (Int32, Int32)? {
   match abi_type {
     AbiVoid => Some((0, 1))
     AbiScalarType(scalar) => Some(scalar_size_alignment(scalar))
@@ -74,7 +74,7 @@ fn enum_underlying_abi(
   universe : @metadata.ResolvedUniverse,
   hierarchy : @metadata.TypeHierarchyIndex,
   identity : @metadata.TypeIdentity,
-  depth : Int,
+  depth : Int32,
   layouts : Map[String, AggregateLayout],
 ) -> ExactAbiType raise @metadata.MetadataError {
   guard universe.type_by_identity(identity) is Some(entry) else {
@@ -101,7 +101,7 @@ fn enum_underlying_abi(
 ///|
 fn semantic_named_identity(
   universe : @metadata.ResolvedUniverse,
-  model_index : Int,
+  model_index : Int32,
   signature : @metadata.TypeSignature,
 ) -> @metadata.TypeIdentity? raise @metadata.MetadataError {
   match signature {
@@ -123,7 +123,7 @@ fn semantic_named_identity(
 fn aggregate_field_adaptation(
   universe : @metadata.ResolvedUniverse,
   hierarchy : @metadata.TypeHierarchyIndex,
-  model_index : Int,
+  model_index : Int32,
   signature : @metadata.TypeSignature,
   abi_type : ExactAbiType,
   is_const : Bool,
@@ -207,7 +207,7 @@ pub fn aggregate_layout(
   universe : @metadata.ResolvedUniverse,
   hierarchy : @metadata.TypeHierarchyIndex,
   identity : @metadata.TypeIdentity,
-  depth : Int,
+  depth : Int32,
   layouts : Map[String, AggregateLayout],
 ) -> AggregateLayout raise @metadata.MetadataError {
   let layout_key = identity.stable_key()
@@ -325,7 +325,7 @@ fn transparent_struct_abi(
   universe : @metadata.ResolvedUniverse,
   hierarchy : @metadata.TypeHierarchyIndex,
   identity : @metadata.TypeIdentity,
-  depth : Int,
+  depth : Int32,
   layouts : Map[String, AggregateLayout],
 ) -> ExactAbiType? raise @metadata.MetadataError {
   guard universe.type_by_identity(identity) is Some(entry) else { return None }
@@ -354,7 +354,7 @@ fn named_abi_type(
   universe : @metadata.ResolvedUniverse,
   hierarchy : @metadata.TypeHierarchyIndex,
   identity : @metadata.TypeIdentity,
-  depth : Int,
+  depth : Int32,
   layouts : Map[String, AggregateLayout],
   winrt_abi : Bool,
 ) -> ExactAbiType raise @metadata.MetadataError {
@@ -470,7 +470,7 @@ fn named_abi_type(
 }
 
 ///|
-fn fixed_array_count(shape : @metadata.ArrayShape) -> Int {
+fn fixed_array_count(shape : @metadata.ArrayShape) -> Int32 {
   if shape.sizes.is_empty() {
     return 0
   }
@@ -488,9 +488,9 @@ fn fixed_array_count(shape : @metadata.ArrayShape) -> Int {
 fn exact_abi_type(
   universe : @metadata.ResolvedUniverse,
   hierarchy : @metadata.TypeHierarchyIndex,
-  model_index : Int,
+  model_index : Int32,
   signature : @metadata.TypeSignature,
-  depth : Int,
+  depth : Int32,
   layouts : Map[String, AggregateLayout],
   winrt_abi : Bool,
 ) -> ExactAbiType raise @metadata.MetadataError {
@@ -721,8 +721,8 @@ fn dynamic_array_signature(
 ///|
 fn reserve_parameter_name(
   base : String,
-  index : Int,
-  seen : Map[String, Int],
+  index : Int32,
+  seen : Map[String, Int32],
 ) -> String {
   let occurrence = seen.get(base).unwrap_or(0)
   seen[base] = occurrence + 1
@@ -749,8 +749,8 @@ fn lowered_signature_is_callable(signature : LoweredSignature) -> Bool {
 ///|
 fn lowered_parameter_name(
   slot : @metadata.MethodParamSlot,
-  index : Int,
-  seen : Map[String, Int],
+  index : Int32,
+  seen : Map[String, Int32],
 ) -> String {
   let base = match slot.metadata {
     Some(metadata) if !metadata.name.is_empty() =>
@@ -765,7 +765,7 @@ fn lower_method(
   universe : @metadata.ResolvedUniverse,
   hierarchy : @metadata.TypeHierarchyIndex,
   attributes : @metadata.AttributeSemanticIndex,
-  model_index : Int,
+  model_index : Int32,
   method_model : @metadata.MetadataMethod,
   layouts : Map[String, AggregateLayout],
 ) -> LoweredSignature raise @metadata.MetadataError {
@@ -784,7 +784,7 @@ fn lower_method(
       ownership: BorrowedOwnership,
     })
   }
-  let seen : Map[String, Int] = Map([
+  let seen : Map[String, Int32] = Map([
     ("this", 1),
     ("this_", 1),
     ("last_error_", 1),
@@ -924,7 +924,7 @@ fn lower_method(
 ///|
 fn parameter_has_semantic_attribute(
   attributes : @metadata.AttributeSemanticIndex,
-  model_index : Int,
+  model_index : Int32,
   slot : @metadata.MethodParamSlot,
   kind : @metadata.AttributeSemanticKind,
 ) -> Bool {
@@ -942,7 +942,7 @@ fn parameter_has_semantic_attribute(
 }
 
 ///|
-fn semantic_integer_index(value : @metadata.AttributeSemanticInteger) -> Int? {
+fn semantic_integer_index(value : @metadata.AttributeSemanticInteger) -> Int32? {
   match value {
     AttributeSemanticSigned(value) =>
       if value >= 0L && value <= 0x7fffffffL {
@@ -962,12 +962,12 @@ fn semantic_integer_index(value : @metadata.AttributeSemanticInteger) -> Int? {
 ///|
 fn parameter_length_index(
   attributes : @metadata.AttributeSemanticIndex,
-  model_index : Int,
+  model_index : Int32,
   method_model : @metadata.MetadataMethod,
-  parameter_index : Int,
+  parameter_index : Int32,
   semantics : @metadata.ResolvedParameterSemantics,
-) -> Int? {
-  let candidates : Array[Int] = []
+) -> Int32? {
+  let candidates : Array[Int32] = []
   for value in semantics.length_arguments {
     match semantic_integer_index(value) {
       Some(index) if !candidates.contains(index) => candidates.push(index)
@@ -1101,9 +1101,9 @@ fn safe_parameter_value_type(
   hierarchy : @metadata.TypeHierarchyIndex,
   named_by_serialized : Map[String, @metadata.TypeIdentity],
   attributes : @metadata.AttributeSemanticIndex,
-  model_index : Int,
+  model_index : Int32,
   method_model : @metadata.MetadataMethod,
-  parameter_index : Int,
+  parameter_index : Int32,
   raw_parameter : LoweredParameter,
   semantics : @metadata.ResolvedParameterSemantics,
 ) -> (SafeValueType, SafeArrayLengthBinding?)? raise @metadata.MetadataError {
@@ -1250,7 +1250,7 @@ fn safe_return_projection(
   universe : @metadata.ResolvedUniverse,
   hierarchy : @metadata.TypeHierarchyIndex,
   named_by_serialized : Map[String, @metadata.TypeIdentity],
-  model_index : Int,
+  model_index : Int32,
   method_model : @metadata.MetadataMethod,
   raw_signature : LoweredSignature,
 ) -> SafeReturnProjection {
@@ -1304,7 +1304,7 @@ fn lower_safe_signature(
   hierarchy : @metadata.TypeHierarchyIndex,
   named_by_serialized : Map[String, @metadata.TypeIdentity],
   attributes : @metadata.AttributeSemanticIndex,
-  model_index : Int,
+  model_index : Int32,
   method_model : @metadata.MetadataMethod,
   raw_signature : LoweredSignature,
 ) -> SafeSignature? raise @metadata.MetadataError {
@@ -1317,7 +1317,7 @@ fn lower_safe_signature(
     attributes, model_index, method_model,
   )
   let parameters : Array[SafeParameter] = []
-  let hidden_length_parameters : Map[Int, Unit] = Map([])
+  let hidden_length_parameters : Map[Int32, Unit] = Map([])
   for index, raw_parameter in raw_signature.parameters {
     guard safe_parameter_value_type(
         universe,
@@ -1509,7 +1509,7 @@ pub fn lower_projected_items(
               is Some(
                 {
                   location: IndexedMethod(model_index, type_index, method_index),
-                  ..,
+                  ..
                 }
               ) else {
               output[item_index] = {
@@ -1583,7 +1583,7 @@ pub fn lower_projected_items(
           is Some(
             {
               location: IndexedMethod(model_index, type_index, method_index),
-              ..,
+              ..
             }
           ) else {
           output[item_index] = {

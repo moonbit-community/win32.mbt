@@ -56,7 +56,7 @@ pub fn decode_inventory_profiles(
           "MD0867", "inventory", 0, "inventory metadata_kind is unknown",
         )
     }
-    output.push({ filename, sha256, file_kind })
+    output.push({ filename, sha256, file_kind, })
   }
   output.sort_by((left, right) => left.filename.compare(right.filename))
   for index in 1..<output.length() {

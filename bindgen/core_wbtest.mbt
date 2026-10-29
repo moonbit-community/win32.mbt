@@ -101,10 +101,10 @@ test "stable naming handles acronyms, arity, keywords, and leading digits" {
 test "SCC owner packages are deterministic and condensation is acyclic" {
   let nodes = ["a", "b", "c", "d"]
   let edges = [
-    { from_package: "a", to_package: "b" },
-    { from_package: "b", to_package: "a" },
-    { from_package: "b", to_package: "c" },
-    { from_package: "c", to_package: "d" },
+    { from_package: "a", to_package: "b", },
+    { from_package: "b", to_package: "a", },
+    { from_package: "b", to_package: "c", },
+    { from_package: "c", to_package: "d", },
   ]
   let components = owner_components(nodes, edges, X64Desktop)
   assert_eq(components.length(), 3)
@@ -180,7 +180,7 @@ test "bindings module config requires a non-escaping source root" {
         #|source = "."
       ),
     ),
-    { name: "moonbit-community/win32api", source_root: "." },
+    { name: "moonbit-community/win32api", source_root: ".", },
   )
   try
     parse_bindings_module_config(
@@ -203,7 +203,7 @@ fn projected_test_item(
   kind : BindgenItemKind,
   member_name : String?,
   public_name : String,
-  status? : ProjectionStatus = EmittedRaw,
+  status~ : ProjectionStatus = EmittedRaw,
 ) -> ProjectedItem {
   {
     identity: {
@@ -268,7 +268,7 @@ fn winrt_overload_test_item(
   type_name : String,
   metadata_name : String,
   projected_member_name : String?,
-  source_rid : Int,
+  source_rid : Int32,
 ) -> IndexedItem {
   let base = indexed_test_item(
     key,
@@ -363,7 +363,7 @@ test "WinRT overload aliases drive facade names and validate groups" {
   )
   assert_eq(without_count.identity.member_name, Some("FindMessagesAsync"))
   assert_eq(with_count.identity.member_name, Some("FindMessagesAsync"))
-  let missing = { ..with_count, projected_member_name: None }
+  let missing = { ..with_count, projected_member_name: None, }
   assert_invalid_overload_group(
     [without_count, missing],
     "missing OverloadAttribute",
@@ -380,12 +380,12 @@ test "WinRT overload aliases drive facade names and validate groups" {
   assert_eq(indexed_item_public_name(missing), "find_messages_async")
   let win32_without_count = {
     ..without_count,
-    identity: { ..without_count.identity, kind: Win32InterfaceMethodItem },
+    identity: { ..without_count.identity, kind: Win32InterfaceMethodItem, },
     projected_member_name: None,
   }
   let win32_with_count = {
     ..with_count,
-    identity: { ..with_count.identity, kind: Win32InterfaceMethodItem },
+    identity: { ..with_count.identity, kind: Win32InterfaceMethodItem, },
     projected_member_name: None,
   }
   validate_winrt_overload_groups([win32_without_count, win32_with_count])
@@ -667,7 +667,7 @@ test "generated type helpers are reserved for real metadata members" {
   )
   let member_item = {
     ..member_base,
-    identity: { ..member_base.identity, type_name: "Access" },
+    identity: { ..member_base.identity, type_name: "Access", },
     type_identity: identity,
     public_scope: TypeApiScope(identity),
   }
@@ -693,7 +693,7 @@ test "unreadable duplicate metadata fails instead of adding a hash" {
     )
     items.push({
       ..base,
-      identity: { ..base.identity, type_name: "IDuplicate" },
+      identity: { ..base.identity, type_name: "IDuplicate", },
       type_identity: identity,
       public_scope: TypeApiScope(identity),
     })
@@ -763,7 +763,7 @@ test "enum constants emit typed zero-argument associated functions" {
   )
   let type_item = {
     ..type_item_base,
-    identity: { ..type_item_base.identity, type_name: "Access" },
+    identity: { ..type_item_base.identity, type_name: "Access", },
     type_identity: identity,
     consumer_signature: Some("type-projection"),
   }
@@ -775,7 +775,7 @@ test "enum constants emit typed zero-argument associated functions" {
   )
   let constant_item = {
     ..constant_base,
-    identity: { ..constant_base.identity, type_name: "Access" },
+    identity: { ..constant_base.identity, type_name: "Access", },
     type_identity: identity,
     public_scope: TypeApiScope(identity),
   }
@@ -831,21 +831,21 @@ test "enum constant names drop a redundant owner prefix" {
   assert_eq(
     indexed_item_public_name({
       ..enum_item,
-      identity: { ..enum_item.identity, member_name: Some("ACCESS_1") },
+      identity: { ..enum_item.identity, member_name: Some("ACCESS_1"), },
     }),
     "n_1",
   )
   assert_eq(
     indexed_item_public_name({
       ..enum_item,
-      identity: { ..enum_item.identity, member_name: Some("ACCESS_PROTECTED") },
+      identity: { ..enum_item.identity, member_name: Some("ACCESS_PROTECTED"), },
     }),
     "protected_",
   )
   assert_eq(
     indexed_item_public_name({
       ..enum_item,
-      identity: { ..enum_item.identity, member_name: Some("ACCESS_SPECIAL") },
+      identity: { ..enum_item.identity, member_name: Some("ACCESS_SPECIAL"), },
       type_category: StructMetadataType,
     }),
     "access_special",
@@ -899,7 +899,7 @@ test "hidden ABI targets enter closure without becoming facade symbols" {
   )
   let surface = {
     ..surface_base,
-    identity: { ..surface_base.identity, type_name: "Widget" },
+    identity: { ..surface_base.identity, type_name: "Widget", },
     public_scope: TypeApiScope(class_identity),
     type_identity: class_identity,
     surface_abi: Some({
@@ -1030,7 +1030,7 @@ test "factory checked consumers use only the typed RuntimeClass wrapper" {
   let base = projected_class_method_test_item(
     "widget-create", "Widget", "create",
   )
-  let factory_item = { ..base, consumer_signature: Some("winrt-class-method") }
+  let factory_item = { ..base, consumer_signature: Some("winrt-class-method"), }
   let builder = StringBuilder()
   write_owner_consumer_wrapper(
     builder,
@@ -1078,20 +1078,20 @@ test "generated package imports follow the declarations that use them" {
   }
   assert_false(
     runtime_class_source_uses_winrt(
-      { ..type_method, status: EmittedRaw },
+      { ..type_method, status: EmittedRaw, },
       indexed_factory,
     ),
   )
   assert_true(
     runtime_class_source_uses_winrt(
-      { ..type_method, status: EmittedRawAndConsumer },
+      { ..type_method, status: EmittedRawAndConsumer, },
       indexed_factory,
     ),
   )
   assert_true(
     runtime_class_source_uses_winrt(
-      { ..type_method, status: EmittedRawAndConsumer },
-      { ..indexed_factory, location: IndexedRuntimeClassMethod(0, 0, 0, None) },
+      { ..type_method, status: EmittedRawAndConsumer, },
+      { ..indexed_factory, location: IndexedRuntimeClassMethod(0, 0, 0, None), },
     ),
   )
 }

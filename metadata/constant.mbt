@@ -3,21 +3,24 @@ pub(all) enum ConstantValue {
   NullConstant
   BoolConstant(Bool)
   CharConstant(UInt16)
-  I1Constant(Int)
+  I1Constant(Int32)
   U1Constant(Byte)
-  I2Constant(Int)
+  I2Constant(Int32)
   U2Constant(UInt16)
-  I4Constant(Int)
-  U4Constant(UInt)
+  I4Constant(Int32)
+  U4Constant(UInt32)
   I8Constant(Int64)
   U8Constant(UInt64)
-  R4Bits(UInt)
+  R4Bits(UInt32)
   R8Bits(UInt64)
   StringConstant(String)
 } derive(Debug, Eq)
 
 ///|
-fn require_constant_size(blob : Bytes, size : Int) -> Unit raise MetadataError {
+fn require_constant_size(
+  blob : Bytes,
+  size : Int32,
+) -> Unit raise MetadataError {
   if blob.length() != size {
     metadata_fail("MD0700", "constant", 0, "constant blob has the wrong width")
   }
@@ -26,7 +29,7 @@ fn require_constant_size(blob : Bytes, size : Int) -> Unit raise MetadataError {
 ///|
 /// Decode Constant.Value without normalizing IEEE-754 raw bit patterns.
 pub fn decode_constant(
-  element_type : Int,
+  element_type : Int32,
   blob : Bytes,
 ) -> ConstantValue raise MetadataError {
   let reader = Reader::new(blob)

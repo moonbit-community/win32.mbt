@@ -130,7 +130,9 @@ async test "clean removes stale generated files without touching maintained sour
       content: "runtime interface\n",
       kind: "interface",
     }
-    let plan : @bindgen.GenerationPlan = { files: [current, runtime_interface] }
+    let plan : @bindgen.GenerationPlan = {
+      files: [current, runtime_interface],
+    }
     install_generation_plan(root, plan, true)
     assert_eq(
       @fs.read_file(path_join(root, current.relative_path)).text(),

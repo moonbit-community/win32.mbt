@@ -70,7 +70,7 @@ fn row_list_spec(kind : RowListKind) -> RowListSpec {
 }
 
 ///|
-fn list_raw_to_int(raw : UInt, code : String) -> Int raise MetadataError {
+fn list_raw_to_int(raw : UInt32, code : String) -> Int32 raise MetadataError {
   if raw.to_uint64() > 0x7fffffffUL {
     return metadata_fail(
       code, "row_list", 0, "list index exceeds supported range",
@@ -178,7 +178,7 @@ pub fn Tables::validate_row_list(
 fn Tables::row_list_unchecked(
   self : Tables,
   kind : RowListKind,
-  owner_rid : Int,
+  owner_rid : Int32,
 ) -> Array[TableRow] raise MetadataError {
   let spec = row_list_spec(kind)
   let owner = self.get_row(spec.owner_table, owner_rid)
@@ -217,7 +217,7 @@ fn Tables::row_list_unchecked(
 pub fn Tables::row_list(
   self : Tables,
   kind : RowListKind,
-  owner_rid : Int,
+  owner_rid : Int32,
 ) -> Array[TableRow] raise MetadataError {
   self.validate_row_list(kind)
   self.row_list_unchecked(kind, owner_rid)

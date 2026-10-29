@@ -2,9 +2,9 @@
 pub(all) struct ResolvedTypeEntry {
   identity : TypeIdentity
   stable_key : String
-  model_index : Int
-  type_index : Int
-  variant_locations : Array[(Int, Int)]
+  model_index : Int32
+  type_index : Int32
+  variant_locations : Array[(Int32, Int32)]
   profile_variants : Bool
   name_ambiguous : Bool
   provenance : Array[SourceToken]
@@ -14,7 +14,7 @@ pub(all) struct ResolvedTypeEntry {
 pub(all) struct UnresolvedReference {
   source_file : String
   source_table : TableKind
-  source_rid : Int
+  source_rid : Int32
   scope : String
   reference_chain : Array[String]
   message : String
@@ -53,7 +53,7 @@ pub(all) struct ResolvedUniverse {
 fn token_shape_key(
   model : MetadataModel,
   token : DecodedIndex,
-  depth : Int,
+  depth : Int32,
 ) -> String {
   if depth > 64 {
     return "depth"
@@ -125,7 +125,7 @@ fn primitive_shape_key(value : PrimitiveType) -> String {
 }
 
 ///|
-fn int_array_key(values : Array[Int]) -> String {
+fn int_array_key(values : Array[Int32]) -> String {
   let builder = StringBuilder()
   for value in values {
     builder.write_string("\{value},")
@@ -137,7 +137,7 @@ fn int_array_key(values : Array[Int]) -> String {
 fn method_signature_shape_key(
   model : MetadataModel,
   signature : MethodSignature,
-  depth : Int,
+  depth : Int32,
 ) -> String {
   let convention = match signature.calling_convention {
     DefaultCall => "default"
@@ -169,7 +169,7 @@ fn method_signature_shape_key(
 fn type_signature_shape_key(
   model : MetadataModel,
   signature : TypeSignature,
-  depth : Int,
+  depth : Int32,
 ) -> String {
   if depth > 128 {
     return "depth"
@@ -853,8 +853,8 @@ pub fn profile_type_content_equivalent(
 fn type_architecture_mask(
   model : MetadataModel,
   type_model : MetadataType,
-) -> UInt? raise MetadataError {
-  let mut result : UInt? = None
+) -> UInt32? raise MetadataError {
+  let mut result : UInt32? = None
   for attribute in type_model.custom_attributes {
     if raw_attribute_type_name(model, attribute) ==
       Some("Windows.Win32.Foundation.Metadata.SupportedArchitectureAttribute") {
@@ -969,7 +969,7 @@ fn build_type_entries(
       for location in entry.variant_locations {
         variant_locations.push(location)
       }
-      merged[merged.length() - 1] = { ..old, provenance, variant_locations }
+      merged[merged.length() - 1] = { ..old, provenance, variant_locations, }
     } else {
       merged.push(entry)
     }
@@ -1007,7 +1007,7 @@ fn build_type_entries(
         }
       }
     }
-    merged[entry_index] = { ..entry, profile_variants, name_ambiguous }
+    merged[entry_index] = { ..entry, profile_variants, name_ambiguous, }
   }
   (merged, by_rid)
 }
@@ -1015,7 +1015,7 @@ fn build_type_entries(
 ///|
 fn load_assembly_ref_identity(
   model : MetadataModel,
-  rid : Int,
+  rid : Int32,
 ) -> AssemblyIdentity raise MetadataError {
   guard model.heaps.strings is Some(strings) else {
     return metadata_fail(
@@ -1099,7 +1099,7 @@ fn bind_assembly_ref_identity(
 fn type_entry_index(
   entries : Array[ResolvedTypeEntry],
   identity : TypeIdentity,
-) -> Int? {
+) -> Int32? {
   let key = identity.stable_key()
   let mut low = 0
   let mut high = entries.length()
@@ -1124,7 +1124,7 @@ fn unique_cli_identity_by_name(
   entries : Array[ResolvedTypeEntry],
   namespace_name : String,
   metadata_name : String,
-  arity : Int,
+  arity : Int32,
 ) -> TypeIdentity? {
   let mut result : TypeIdentity? = None
   for entry in entries {
@@ -1156,7 +1156,7 @@ fn unique_cli_identity_by_name(
 fn unique_nested_identity_by_name(
   entries : Array[ResolvedTypeEntry],
   metadata_name : String,
-  arity : Int,
+  arity : Int32,
 ) -> TypeIdentity? {
   let mut result : TypeIdentity? = None
   for entry in entries {
@@ -1179,9 +1179,9 @@ fn unique_nested_identity_by_name(
 
 ///|
 fn visiting_contains(
-  visiting : Array[(Int, Int)],
-  model_index : Int,
-  rid : Int,
+  visiting : Array[(Int32, Int32)],
+  model_index : Int32,
+  rid : Int32,
 ) -> Bool {
   for item in visiting {
     if item.0 == model_index && item.1 == rid {
@@ -1209,9 +1209,9 @@ fn concrete_type_identity(
 fn resolve_exported_type_inner(
   models : Array[MetadataModel],
   entries : Array[ResolvedTypeEntry],
-  model_index : Int,
-  rid : Int,
-  visiting : Array[(Int, Int)],
+  model_index : Int32,
+  rid : Int32,
+  visiting : Array[(Int32, Int32)],
   cache : Map[String, TypeIdentity?],
 ) -> TypeIdentity? raise MetadataError {
   let cache_key = "\{model_index}:\{rid}"
@@ -1408,9 +1408,9 @@ fn resolve_type_ref_inner(
   models : Array[MetadataModel],
   entries : Array[ResolvedTypeEntry],
   exported : Array[Array[TypeIdentity?]],
-  model_index : Int,
-  rid : Int,
-  visiting : Array[(Int, Int)],
+  model_index : Int32,
+  rid : Int32,
+  visiting : Array[(Int32, Int32)],
   cache : Map[String, TypeIdentity?],
 ) -> TypeIdentity? raise MetadataError {
   let cache_key = "\{model_index}:\{rid}"
@@ -1446,7 +1446,7 @@ fn resolve_type_ref_inner(
   let next_visiting = visiting.copy()
   next_visiting.push((model_index, rid))
   let nested_owner = match scope {
-    Some({ table: TypeRef, row: owner_rid }) =>
+    Some({ table: TypeRef, row: owner_rid, }) =>
       resolve_type_ref_inner(
         models, entries, exported, model_index, owner_rid, next_visiting, cache,
       )
@@ -1455,7 +1455,7 @@ fn resolve_type_ref_inner(
   let candidate = match model.file_kind {
     WinRtMetadata =>
       match scope {
-        Some({ table: AssemblyRef, row: assembly_rid }) => {
+        Some({ table: AssemblyRef, row: assembly_rid, }) => {
           let external_assembly = load_assembly_ref_identity(
             model, assembly_rid,
           )
@@ -1473,7 +1473,7 @@ fn resolve_type_ref_inner(
       }
     CliWin32Metadata => {
       let assembly = match scope {
-        Some({ table: AssemblyRef, row: assembly_rid }) =>
+        Some({ table: AssemblyRef, row: assembly_rid, }) =>
           bind_assembly_ref_identity(
             models,
             load_assembly_ref_identity(model, assembly_rid),
@@ -1484,7 +1484,7 @@ fn resolve_type_ref_inner(
     }
   }
   let forwarded = match scope {
-    Some({ table: AssemblyRef, row: assembly_rid }) if nested_owner is None =>
+    Some({ table: AssemblyRef, row: assembly_rid, }) if nested_owner is None =>
       forwarded_identity_by_name(
         models,
         exported,
@@ -1549,7 +1549,7 @@ fn resolve_type_ref_inner(
 ///|
 fn unresolved_type_ref(
   model : MetadataModel,
-  rid : Int,
+  rid : Int32,
 ) -> UnresolvedReference raise MetadataError {
   let row = model.tables.get_row(TypeRef, rid)
   let identity_text = match model.heaps.strings {
@@ -1607,7 +1607,7 @@ fn unresolved_type_ref(
 /// Preserve a broken forwarding row as a first-class unresolved source token.
 fn unresolved_exported_type(
   model : MetadataModel,
-  rid : Int,
+  rid : Int32,
 ) -> UnresolvedReference raise MetadataError {
   let row = model.tables.get_row(ExportedType, rid)
   guard model.heaps.strings is Some(strings) else {
@@ -1648,9 +1648,9 @@ fn append_unresolved_assembly_ref(
   unresolved : Array[UnresolvedReference],
   seen : Map[String, Bool],
   model : MetadataModel,
-  assembly_rid : Int,
+  assembly_rid : Int32,
   dependent_table : TableKind,
-  dependent_rid : Int,
+  dependent_rid : Int32,
   disposition : UnresolvedDisposition,
 ) -> Unit raise MetadataError {
   let key = "\{model.source_file}:\{assembly_rid}"
@@ -1761,7 +1761,7 @@ pub fn build_resolved_universe(
             Implementation,
             RequiredIndex,
           )
-          is Some({ table: AssemblyRef, row: assembly_rid }) {
+          is Some({ table: AssemblyRef, row: assembly_rid, }) {
           append_unresolved_assembly_ref(
             unresolved,
             unresolved_assemblies,
@@ -1804,7 +1804,7 @@ pub fn build_resolved_universe(
             ResolutionScope,
             NullableIndex,
           )
-          is Some({ table: AssemblyRef, row: assembly_rid }) {
+          is Some({ table: AssemblyRef, row: assembly_rid, }) {
           append_unresolved_assembly_ref(
             unresolved,
             unresolved_assemblies,
@@ -1859,7 +1859,7 @@ pub fn build_resolved_universe(
     }
     members_by_type[index].push(resolved_member)
   }
-  let with_members = { ..universe, members, members_by_type }
+  let with_members = { ..universe, members, members_by_type, }
   let member_ref_unresolved = with_members.unresolved_member_reference_reports()
   let (method_specifications, method_spec_unresolved) = build_resolved_method_specifications(
     with_members,
@@ -1881,13 +1881,13 @@ pub fn build_resolved_universe(
       left.source_rid - right.source_rid
     }
   })
-  { ..with_members, method_specifications, unresolved: final_unresolved }
+  { ..with_members, method_specifications, unresolved: final_unresolved, }
 }
 
 ///|
 pub fn ResolvedUniverse::resolve_type_token(
   self : ResolvedUniverse,
-  model_index : Int,
+  model_index : Int32,
   token : DecodedIndex,
 ) -> ResolvedTypeReference? raise MetadataError {
   if model_index < 0 || model_index >= self.models.length() {
@@ -2028,7 +2028,7 @@ fn serialized_type_parts(
         )
       }
     }
-    (type_name, Some({ name: parts[0], version, culture, public_key_token }))
+    (type_name, Some({ name: parts[0], version, culture, public_key_token, }))
   }
 }
 

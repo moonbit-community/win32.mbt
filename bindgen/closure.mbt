@@ -128,5 +128,5 @@ pub fn build_dependency_closure(
   }
   let keys = reached.keys().to_array()
   keys.sort_by(stable_text_compare)
-  { keys, predecessor_edges: predecessors }
+  { keys, predecessor_edges: predecessors, }
 }

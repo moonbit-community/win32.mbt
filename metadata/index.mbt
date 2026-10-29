@@ -24,11 +24,11 @@ pub(all) enum CodedIndexKind {
 ///|
 pub(all) struct DecodedIndex {
   table : TableKind
-  row : Int
+  row : Int32
 } derive(Debug, Eq)
 
 ///|
-pub fn CodedIndexKind::tag_bits(self : CodedIndexKind) -> Int {
+pub fn CodedIndexKind::tag_bits(self : CodedIndexKind) -> Int32 {
   match self {
     TypeDefOrRef
     | HasConstant
@@ -46,7 +46,7 @@ pub fn CodedIndexKind::tag_bits(self : CodedIndexKind) -> Int {
 }
 
 ///|
-pub fn CodedIndexKind::target(self : CodedIndexKind, tag : Int) -> TableKind? {
+pub fn CodedIndexKind::target(self : CodedIndexKind, tag : Int32) -> TableKind? {
   match self {
     TypeDefOrRef =>
       match tag {
@@ -159,7 +159,7 @@ pub fn CodedIndexKind::target(self : CodedIndexKind, tag : Int) -> TableKind? {
 }
 
 ///|
-fn raw_uint_to_int(raw : UInt, code : String) -> Int raise MetadataError {
+fn raw_uint_to_int(raw : UInt32, code : String) -> Int32 raise MetadataError {
   if raw.to_uint64() > 0x7fffffffUL {
     return metadata_fail(
       code, "tables", 0, "metadata index exceeds supported row budget",
@@ -172,7 +172,7 @@ fn raw_uint_to_int(raw : UInt, code : String) -> Int raise MetadataError {
 /// Decode a simple index with the null rule supplied by its specific column.
 pub fn decode_simple_index(
   tables : Tables,
-  raw : UInt,
+  raw : UInt32,
   target : TableKind,
   nullability : Nullability,
 ) -> DecodedIndex? raise MetadataError {
@@ -189,14 +189,14 @@ pub fn decode_simple_index(
       "MD0402", "tables", 0, "simple index row is out of range",
     )
   }
-  Some({ table: target, row })
+  Some({ table: target, row, })
 }
 
 ///|
 /// Decode a coded index only after applying its column-specific null rule.
 pub fn decode_coded_index(
   tables : Tables,
-  raw : UInt,
+  raw : UInt32,
   kind : CodedIndexKind,
   nullability : Nullability,
 ) -> DecodedIndex? raise MetadataError {
@@ -221,7 +221,7 @@ pub fn decode_coded_index(
       "MD0406", "tables", 0, "coded index row is out of range",
     )
   }
-  Some({ table, row })
+  Some({ table, row, })
 }
 
 ///|
@@ -230,7 +230,7 @@ pub fn Tables::get_nullable_row(
   self : Tables,
   nullability : Nullability,
   target : TableKind,
-  raw : UInt,
+  raw : UInt32,
 ) -> TableRow? raise MetadataError {
   guard decode_simple_index(self, raw, target, nullability) is Some(index) else {
     return None

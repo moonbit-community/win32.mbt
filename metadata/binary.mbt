@@ -2,28 +2,28 @@
 /// A bounds-checked reader over an immutable byte span.
 pub(all) struct Reader {
   data : Bytes
-  start : Int
-  length : Int
-  mut position : Int
+  start : Int32
+  length : Int32
+  mut position : Int32
 }
 
 ///|
 pub fn Reader::new(data : Bytes) -> Reader {
-  { data, start: 0, length: data.length(), position: 0 }
+  { data, start: 0, length: data.length(), position: 0, }
 }
 
 ///|
-fn span_is_valid(offset : Int, size : Int, limit : Int) -> Bool {
+fn span_is_valid(offset : Int32, size : Int32, limit : Int32) -> Bool {
   offset >= 0 && size >= 0 && offset <= limit && size <= limit - offset
 }
 
 ///|
-pub fn Reader::position(self : Reader) -> Int {
+pub fn Reader::position(self : Reader) -> Int32 {
   self.position
 }
 
 ///|
-pub fn Reader::remaining(self : Reader) -> Int {
+pub fn Reader::remaining(self : Reader) -> Int32 {
   self.length - self.position
 }
 
@@ -41,7 +41,10 @@ pub fn Reader::peek_u8(self : Reader) -> Byte raise MetadataError {
 }
 
 ///|
-pub fn Reader::seek(self : Reader, position : Int) -> Unit raise MetadataError {
+pub fn Reader::seek(
+  self : Reader,
+  position : Int32,
+) -> Unit raise MetadataError {
   if !span_is_valid(position, 0, self.length) {
     metadata_fail(
       "MD0001", "binary", position, "reader seek is outside its span",
@@ -53,15 +56,15 @@ pub fn Reader::seek(self : Reader, position : Int) -> Unit raise MetadataError {
 ///|
 pub fn Reader::slice(
   self : Reader,
-  offset : Int,
-  size : Int,
+  offset : Int32,
+  size : Int32,
 ) -> Reader raise MetadataError {
   if !span_is_valid(offset, size, self.length) {
     return metadata_fail(
       "MD0002", "binary", offset, "reader slice is outside its span",
     )
   }
-  { data: self.data, start: self.start + offset, length: size, position: 0 }
+  { data: self.data, start: self.start + offset, length: size, position: 0, }
 }
 
 ///|
@@ -87,7 +90,7 @@ pub fn Reader::read_u16_le(self : Reader) -> UInt16 raise MetadataError {
 }
 
 ///|
-pub fn Reader::read_u32_le(self : Reader) -> UInt raise MetadataError {
+pub fn Reader::read_u32_le(self : Reader) -> UInt32 raise MetadataError {
   let b0 = self.read_u8().to_uint()
   let b1 = self.read_u8().to_uint()
   let b2 = self.read_u8().to_uint()
@@ -105,7 +108,7 @@ pub fn Reader::read_u64_le(self : Reader) -> UInt64 raise MetadataError {
 ///|
 pub fn Reader::read_bytes(
   self : Reader,
-  size : Int,
+  size : Int32,
 ) -> Bytes raise MetadataError {
   if !span_is_valid(self.position, size, self.length) {
     return metadata_fail(

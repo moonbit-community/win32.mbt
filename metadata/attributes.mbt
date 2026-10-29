@@ -1,8 +1,8 @@
 ///|
 pub(all) struct TypeAttributes {
-  raw : UInt
-  visibility : Int
-  layout : Int
+  raw : UInt32
+  visibility : Int32
+  layout : Int32
   is_interface : Bool
   is_abstract : Bool
   is_sealed : Bool
@@ -13,8 +13,8 @@ pub(all) struct TypeAttributes {
 
 ///|
 pub(all) struct FieldAttributes {
-  raw : UInt
-  visibility : Int
+  raw : UInt32
+  visibility : Int32
   is_static : Bool
   is_init_only : Bool
   is_literal : Bool
@@ -27,8 +27,8 @@ pub(all) struct FieldAttributes {
 
 ///|
 pub(all) struct MethodAttributes {
-  raw : UInt
-  visibility : Int
+  raw : UInt32
+  visibility : Int32
   is_static : Bool
   is_virtual : Bool
   is_abstract : Bool
@@ -41,8 +41,8 @@ pub(all) struct MethodAttributes {
 
 ///|
 pub(all) struct MethodImplAttributes {
-  raw : UInt
-  code_type : Int
+  raw : UInt32
+  code_type : Int32
   is_managed : Bool
   preserve_sig : Bool
   internal_call : Bool
@@ -53,7 +53,7 @@ pub(all) struct MethodImplAttributes {
 
 ///|
 pub(all) struct ParamAttributes {
-  raw : UInt
+  raw : UInt32
   is_in : Bool
   is_out : Bool
   is_optional : Bool
@@ -63,7 +63,7 @@ pub(all) struct ParamAttributes {
 
 ///|
 pub(all) struct PropertyAttributes {
-  raw : UInt
+  raw : UInt32
   is_special_name : Bool
   is_runtime_special_name : Bool
   has_default : Bool
@@ -71,15 +71,15 @@ pub(all) struct PropertyAttributes {
 
 ///|
 pub(all) struct EventAttributes {
-  raw : UInt
+  raw : UInt32
   is_special_name : Bool
   is_runtime_special_name : Bool
 } derive(Debug, Eq)
 
 ///|
 pub(all) struct GenericParamAttributes {
-  raw : UInt
-  variance : Int
+  raw : UInt32
+  variance : Int32
   reference_type_constraint : Bool
   value_type_constraint : Bool
   default_constructor_constraint : Bool
@@ -89,12 +89,12 @@ pub(all) struct GenericParamAttributes {
 /// Param flags and the row's semantic Sequence are decoded together when needed.
 pub(all) struct ParamMetadata {
   attributes : ParamAttributes
-  sequence : Int
+  sequence : Int32
   is_return : Bool
 } derive(Debug, Eq)
 
 ///|
-pub fn decode_type_attributes(raw : UInt) -> TypeAttributes {
+pub fn decode_type_attributes(raw : UInt32) -> TypeAttributes {
   {
     raw,
     visibility: (raw & 0x00000007U).reinterpret_as_int(),
@@ -109,7 +109,7 @@ pub fn decode_type_attributes(raw : UInt) -> TypeAttributes {
 }
 
 ///|
-pub fn decode_field_attributes(raw : UInt) -> FieldAttributes {
+pub fn decode_field_attributes(raw : UInt32) -> FieldAttributes {
   {
     raw,
     visibility: (raw & 0x0007U).reinterpret_as_int(),
@@ -125,7 +125,7 @@ pub fn decode_field_attributes(raw : UInt) -> FieldAttributes {
 }
 
 ///|
-pub fn decode_method_attributes(raw : UInt) -> MethodAttributes {
+pub fn decode_method_attributes(raw : UInt32) -> MethodAttributes {
   {
     raw,
     visibility: (raw & 0x0007U).reinterpret_as_int(),
@@ -141,7 +141,7 @@ pub fn decode_method_attributes(raw : UInt) -> MethodAttributes {
 }
 
 ///|
-pub fn decode_method_impl_attributes(raw : UInt) -> MethodImplAttributes {
+pub fn decode_method_impl_attributes(raw : UInt32) -> MethodImplAttributes {
   {
     raw,
     code_type: (raw & 0x0003U).reinterpret_as_int(),
@@ -155,7 +155,7 @@ pub fn decode_method_impl_attributes(raw : UInt) -> MethodImplAttributes {
 }
 
 ///|
-pub fn decode_param_attributes(raw : UInt) -> ParamAttributes {
+pub fn decode_param_attributes(raw : UInt32) -> ParamAttributes {
   {
     raw,
     is_in: (raw & 0x0001U) != 0U,
@@ -168,8 +168,8 @@ pub fn decode_param_attributes(raw : UInt) -> ParamAttributes {
 
 ///|
 pub fn decode_param_metadata(
-  raw : UInt,
-  sequence : Int,
+  raw : UInt32,
+  sequence : Int32,
 ) -> ParamMetadata raise MetadataError {
   if sequence < 0 || sequence > 0xffff {
     return metadata_fail(
@@ -184,7 +184,7 @@ pub fn decode_param_metadata(
 }
 
 ///|
-pub fn decode_property_attributes(raw : UInt) -> PropertyAttributes {
+pub fn decode_property_attributes(raw : UInt32) -> PropertyAttributes {
   {
     raw,
     is_special_name: (raw & 0x0200U) != 0U,
@@ -194,7 +194,7 @@ pub fn decode_property_attributes(raw : UInt) -> PropertyAttributes {
 }
 
 ///|
-pub fn decode_event_attributes(raw : UInt) -> EventAttributes {
+pub fn decode_event_attributes(raw : UInt32) -> EventAttributes {
   {
     raw,
     is_special_name: (raw & 0x0200U) != 0U,
@@ -203,7 +203,7 @@ pub fn decode_event_attributes(raw : UInt) -> EventAttributes {
 }
 
 ///|
-pub fn decode_generic_param_attributes(raw : UInt) -> GenericParamAttributes {
+pub fn decode_generic_param_attributes(raw : UInt32) -> GenericParamAttributes {
   {
     raw,
     variance: (raw & 0x0003U).reinterpret_as_int(),

@@ -40,7 +40,7 @@ fn c_string_literal(value : String) -> String {
 }
 
 ///|
-fn decimal_ordinal(value : String) -> Int {
+fn decimal_ordinal(value : String) -> Int32 {
   let mut output = 0
   if value.length() <= 1 || value[0] != '#' {
     return 0
@@ -121,7 +121,7 @@ fn scalar_c_type(scalar : AbiScalar) -> String {
 }
 
 ///|
-fn abi_storage_size(abi_type : ExactAbiType) -> Int {
+fn abi_storage_size(abi_type : ExactAbiType) -> Int32 {
   match abi_size_alignment(abi_type) {
     Some((size, _)) => size
     None => 0
@@ -188,7 +188,7 @@ fn write_moon_parameters(
 fn write_moon_parameters_until(
   builder : StringBuilder,
   signature : LoweredSignature,
-  end : Int,
+  end : Int32,
   include_last_error : Bool,
 ) -> Unit {
   let mut wrote = false
@@ -228,7 +228,7 @@ fn write_call_arguments(
 fn write_call_arguments_until(
   builder : StringBuilder,
   signature : LoweredSignature,
-  end : Int,
+  end : Int32,
   include_last_error : Bool,
 ) -> Unit {
   let mut wrote = false
@@ -411,7 +411,7 @@ fn write_owner_raw_wrapper(
 }
 
 ///|
-fn consumer_visible_parameter_count(signature : LoweredSignature) -> Int {
+fn consumer_visible_parameter_count(signature : LoweredSignature) -> Int32 {
   signature.parameters.length() - signature.consumer_hidden_parameters
 }
 
@@ -850,8 +850,8 @@ fn write_owner_safe_wrapper(
   for parameter in signature.parameters {
     write_safe_parameter_prelude(builder, parameter)
   }
-  let safe_by_raw_index : Map[Int, SafeParameter] = Map([])
-  let length_by_raw_index : Map[Int, SafeParameter] = Map([])
+  let safe_by_raw_index : Map[Int32, SafeParameter] = Map([])
+  let length_by_raw_index : Map[Int32, SafeParameter] = Map([])
   for parameter in signature.parameters {
     safe_by_raw_index[parameter.raw_parameter_index] = parameter
     match parameter.length_binding {
@@ -1191,7 +1191,7 @@ fn aggregate_scalar_moon_type(scalar : AbiScalar) -> String {
 }
 
 ///|
-fn aggregate_scalar_read_source(scalar : AbiScalar, offset : Int) -> String {
+fn aggregate_scalar_read_source(scalar : AbiScalar, offset : Int32) -> String {
   let call = match scalar {
     AbiI8 => "read_i8"
     AbiU8 => "read_u8"
@@ -1215,7 +1215,7 @@ fn aggregate_scalar_read_source(scalar : AbiScalar, offset : Int) -> String {
 ///|
 fn aggregate_scalar_write_source(
   scalar : AbiScalar,
-  offset : Int,
+  offset : Int32,
   value : String,
 ) -> String {
   let call = match scalar {
@@ -1489,7 +1489,7 @@ fn write_aggregate_callback_accessors(
 }
 
 ///|
-fn aggregate_enum_read_source(scalar : AbiScalar, offset : Int) -> String {
+fn aggregate_enum_read_source(scalar : AbiScalar, offset : Int32) -> String {
   let raw = aggregate_scalar_read_source(scalar, offset)
   match scalar {
     AbiI8 | AbiI16 | AbiI32 | AbiHResult => raw
@@ -1827,7 +1827,7 @@ fn type_facade_declaration(item : ProjectedItem) -> String {
 }
 
 ///|
-fn guid_component(bytes : Bytes, start : Int, count : Int) -> UInt {
+fn guid_component(bytes : Bytes, start : Int32, count : Int32) -> UInt32 {
   let mut result = 0U
   for index in start..<(start + count) {
     result = (result << 8) | bytes[index].to_uint()
@@ -2412,7 +2412,7 @@ fn write_c_target_arguments(
 ///|
 fn resolved_method_item_key(
   universe : @metadata.ResolvedUniverse,
-  model_index : Int,
+  model_index : Int32,
   method_model : @metadata.MetadataMethod,
 ) -> String? raise @metadata.MetadataError {
   match
@@ -2503,8 +2503,8 @@ fn collect_interface_method_keys(
 fn interface_slot_index(
   universe : @metadata.ResolvedUniverse,
   hierarchy : @metadata.TypeHierarchyIndex,
-) -> Map[String, Int] raise @metadata.MetadataError {
-  let slots : Map[String, Int] = Map([])
+) -> Map[String, Int32] raise @metadata.MetadataError {
+  let slots : Map[String, Int32] = Map([])
   let remaps = method_impl_targets(universe)
   for entry in universe.types {
     guard hierarchy.type_by_identity(entry.identity) is Some(node) &&
@@ -2600,7 +2600,7 @@ fn write_c_checked_adapter(
     builder.write_string("  ")
   }
   builder.write_string("\{ffi_export_name(item)}(")
-  let optional_by_raw_index : Map[Int, SafeParameter] = Map([])
+  let optional_by_raw_index : Map[Int32, SafeParameter] = Map([])
   for parameter in safe_signature.parameters {
     if parameter.optional {
       optional_by_raw_index[parameter.raw_parameter_index] = parameter
@@ -2634,7 +2634,7 @@ fn write_c_call_stub(
   item : ProjectedItem,
   method_model : @metadata.MetadataMethod,
   signature : LoweredSignature,
-  interface_slots : Map[String, Int],
+  interface_slots : Map[String, Int32],
   dispatch_key : String?,
 ) -> Unit raise BindgenError {
   let item_hash = stable_hash(item.identity.canonical_key, length=16)
@@ -3350,7 +3350,7 @@ pub fn emit_bindings(
             is Some(
               {
                 location: IndexedMethod(model_index, type_index, method_index),
-                ..,
+                ..
               }
             ) {
             call_items.push(
@@ -3376,7 +3376,7 @@ pub fn emit_bindings(
             is Some(
               {
                 location: IndexedMethod(model_index, type_index, method_index),
-                ..,
+                ..
               }
             ) else {
             return bindgen_fail(

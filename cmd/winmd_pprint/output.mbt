@@ -2,7 +2,7 @@
 fn windows_metadata_file_digest(
   projection : Projection,
   file : String,
-) -> (Int, String) {
+) -> (Int32, String) {
   let mut record_count = 0
   for section in windows_metadata_sections {
     let records = projection.records[windows_metadata_key(file, section)]
@@ -54,7 +54,7 @@ fn Projection::dump_text(
   self : Projection,
   file~ : String,
   section~ : String,
-  chunk~ : Int,
+  chunk~ : Int32,
 ) -> String raise {
   let records = self.records_for_selection(file, section)
   if chunk < 0 {
@@ -72,7 +72,7 @@ fn Projection::dump_text(
     )
   }
   let start = chunk * windows_metadata_chunk_size
-  let count = Int::min(windows_metadata_chunk_size, records.length() - start)
+  let count = Int32::min(windows_metadata_chunk_size, records.length() - start)
   let output = StringBuilder()
   for offset in 0..<count {
     output.write_string((start + offset).to_string())

@@ -11,7 +11,7 @@ pub(all) enum WinRtMemberVisibility {
 /// Protected members never enter the ordinary public projection by accident.
 pub fn AttributeSemanticIndex::winrt_member_visibility(
   self : AttributeSemanticIndex,
-  model_index : Int,
+  model_index : Int32,
   owner : DecodedIndex,
   metadata_public : Bool,
 ) -> WinRtMemberVisibility {

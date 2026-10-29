@@ -54,7 +54,7 @@ pub fn parse_inventory(text : String) -> Array[InventoryInput] raise {
   guard root.get("schema_version") is Some(schema) else {
     return bindgen_fail("inventory: missing schema_version")
   }
-  let schema_version : Int = @json.from_json(schema)
+  let schema_version : Int32 = @json.from_json(schema)
   if schema_version != 1 {
     return bindgen_fail(
       "inventory: unsupported schema version \{schema_version}",

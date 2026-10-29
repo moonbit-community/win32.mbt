@@ -2,20 +2,20 @@
 /// Complete CLI assembly identity; public-key/token bytes remain exact.
 pub(all) struct AssemblyIdentity {
   name : String
-  major : Int
-  minor : Int
-  build : Int
-  revision : Int
+  major : Int32
+  minor : Int32
+  build : Int32
+  revision : Int32
   culture : String
   public_key_or_token : Bytes
-  flags : UInt
+  flags : UInt32
 } derive(Debug, Eq)
 
 ///|
 /// CLI identities are assembly-qualified; WinRT identities intentionally are not.
 pub(all) enum TypeIdentity {
-  CliTypeIdentity(AssemblyIdentity, String, String, TypeIdentity?, Int)
-  WinRtTypeIdentity(String, String, TypeIdentity?, Int)
+  CliTypeIdentity(AssemblyIdentity, String, String, TypeIdentity?, Int32)
+  WinRtTypeIdentity(String, String, TypeIdentity?, Int32)
 } derive(Debug, Eq)
 
 ///|
@@ -86,7 +86,7 @@ pub fn TypeIdentity::metadata_name(self : TypeIdentity) -> String {
 }
 
 ///|
-pub fn TypeIdentity::generic_arity(self : TypeIdentity) -> Int {
+pub fn TypeIdentity::generic_arity(self : TypeIdentity) -> Int32 {
   match self {
     CliTypeIdentity(_, _, _, _, arity) | WinRtTypeIdentity(_, _, _, arity) =>
       arity
@@ -122,7 +122,7 @@ pub fn TypeIdentity::assembly_name(self : TypeIdentity) -> String? {
 }
 
 ///|
-fn parse_decimal_suffix(value : StringView) -> Int? {
+fn parse_decimal_suffix(value : StringView) -> Int32? {
   if value.is_empty() {
     return None
   }
@@ -141,7 +141,7 @@ fn parse_decimal_suffix(value : StringView) -> Int? {
 /// Split ECMA metadata `Name`/`Name`N form while retaining the stable base name.
 pub fn split_metadata_arity(
   value : String,
-) -> (String, Int) raise MetadataError {
+) -> (String, Int32) raise MetadataError {
   let mut tick = -1
   for index, unit in value {
     if unit.to_int() == 96 {

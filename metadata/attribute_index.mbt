@@ -1,6 +1,6 @@
 ///|
 pub(all) struct LocatedSemanticAttribute {
-  model_index : Int
+  model_index : Int32
   owner : DecodedIndex
   value : SemanticCustomAttribute
 } derive(Debug, Eq)
@@ -13,11 +13,11 @@ pub(all) struct AttributeSemanticIndex {
 
 ///|
 fn located_attribute_compare(
-  left_model : Int,
+  left_model : Int32,
   left_owner : DecodedIndex,
-  right_model : Int,
+  right_model : Int32,
   right_owner : DecodedIndex,
-) -> Int {
+) -> Int32 {
   if left_model != right_model {
     left_model - right_model
   } else {
@@ -61,7 +61,7 @@ pub fn build_attribute_semantic_index(
 ///|
 pub fn AttributeSemanticIndex::for_owner(
   self : AttributeSemanticIndex,
-  model_index : Int,
+  model_index : Int32,
   owner : DecodedIndex,
 ) -> Array[SemanticCustomAttribute] {
   let mut low = 0
@@ -94,7 +94,7 @@ pub fn AttributeSemanticIndex::for_owner(
 ///|
 pub fn AttributeSemanticIndex::has_kind(
   self : AttributeSemanticIndex,
-  model_index : Int,
+  model_index : Int32,
   owner : DecodedIndex,
   kind : AttributeSemanticKind,
 ) -> Bool {

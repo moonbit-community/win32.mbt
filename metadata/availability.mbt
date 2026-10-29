@@ -17,7 +17,7 @@ pub(all) enum AvailabilityConstraintKind {
 pub(all) struct AvailabilityConstraint {
   kind : AvailabilityConstraintKind
   contract : TypeIdentity?
-  version : UInt?
+  version : UInt32?
   text : String?
   source : SourceToken
   owner : DecodedIndex
@@ -30,7 +30,7 @@ pub(all) struct EffectiveAvailability {
 } derive(Debug, Eq)
 
 ///|
-fn semantic_unsigned_u32(value : AttributeSemanticInteger) -> UInt? {
+fn semantic_unsigned_u32(value : AttributeSemanticInteger) -> UInt32? {
   match value {
     AttributeSemanticUnsigned(value) if value <= 0xffffffffUL =>
       Some(value.to_uint())
@@ -60,7 +60,7 @@ fn availability_from_attribute(
     _ => None
   }
   guard kind is Some(kind) else { return None }
-  let mut version : UInt? = None
+  let mut version : UInt32? = None
   // Version is the last UInt32-shaped fixed argument. This skips preceding
   // enum values such as DeprecationType and CompositionType.
   let fixed = attribute.materialized.fixed_arguments
@@ -118,7 +118,7 @@ fn availability_from_attribute(
 ///|
 pub fn AttributeSemanticIndex::availability_for_owner(
   self : AttributeSemanticIndex,
-  model_index : Int,
+  model_index : Int32,
   owner : DecodedIndex,
 ) -> Array[AvailabilityConstraint] raise MetadataError {
   let output : Array[AvailabilityConstraint] = []
@@ -135,7 +135,7 @@ pub fn AttributeSemanticIndex::availability_for_owner(
 /// Direct and inherited provenance remain separate and in stable source order.
 pub fn AttributeSemanticIndex::effective_availability(
   self : AttributeSemanticIndex,
-  model_index : Int,
+  model_index : Int32,
   owner : DecodedIndex,
   inherited_owners : Array[DecodedIndex],
 ) -> EffectiveAvailability raise MetadataError {
@@ -156,5 +156,5 @@ pub fn AttributeSemanticIndex::effective_availability(
       left.source.rid - right.source.rid
     }
   })
-  { direct, inherited }
+  { direct, inherited, }
 }

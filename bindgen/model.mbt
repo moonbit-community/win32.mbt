@@ -1,5 +1,5 @@
 ///|
-pub let bindgen_schema_version : Int = 4
+pub let bindgen_schema_version : Int32 = 4
 
 ///|
 pub let desktop_policy_version : String = "x64-desktop-v2"
@@ -59,7 +59,7 @@ pub(all) struct ItemIdentity {
   kind : BindgenItemKind
   source_file : String
   source_table : String
-  source_rid : Int
+  source_rid : Int32
 } derive(Debug, Eq)
 
 ///|
@@ -165,8 +165,8 @@ pub(all) enum ExactAbiType {
     Array[ExactAbiType],
     ExactAbiType
   )
-  AbiAggregate(String, Int, Int)
-  AbiFixedArray(ExactAbiType, Int)
+  AbiAggregate(String, Int32, Int32)
+  AbiFixedArray(ExactAbiType, Int32)
   AbiArray(ExactAbiType)
   AbiInterfacePointer(String)
   AbiHString
@@ -200,9 +200,9 @@ pub(all) enum AggregateFieldAdaptation {
 ///|
 pub(all) struct AggregateFieldLayout {
   metadata_name : String
-  offset : Int
-  size : Int
-  alignment : Int
+  offset : Int32
+  size : Int32
+  alignment : Int32
   abi_type : ExactAbiType
   semantic_type : @metadata.TypeSignature
   adaptation : AggregateFieldAdaptation
@@ -214,9 +214,9 @@ pub(all) struct AggregateFieldLayout {
 /// location has already been profile-filtered before this model is built.
 pub(all) struct AggregateLayout {
   identity : @metadata.TypeIdentity
-  size : Int
-  alignment : Int
-  packing : Int
+  size : Int32
+  alignment : Int32
+  packing : Int32
   explicit_layout : Bool
   fields : Array[AggregateFieldLayout]
 } derive(Debug, Eq)
@@ -253,11 +253,11 @@ pub(all) struct LoweredSignature {
   parameters : Array[LoweredParameter]
   return_abi : ExactAbiType
   return_carrier : FfiCarrier
-  aggregate_return_size : Int?
+  aggregate_return_size : Int32?
   set_last_error : Bool
   is_winrt_abi : Bool
   logical_return_abi : ExactAbiType?
-  consumer_hidden_parameters : Int
+  consumer_hidden_parameters : Int32
 } derive(Debug, Eq)
 
 ///|
@@ -288,7 +288,7 @@ pub(all) enum SafeValueType {
 
 ///|
 pub(all) struct SafeArrayLengthBinding {
-  length_parameter_index : Int
+  length_parameter_index : Int32
   includes_nul : Bool
   code_units : Bool
 } derive(Debug, Eq)
@@ -296,7 +296,7 @@ pub(all) struct SafeArrayLengthBinding {
 ///|
 pub(all) struct SafeParameter {
   name : String
-  raw_parameter_index : Int
+  raw_parameter_index : Int32
   value_type : SafeValueType
   optional : Bool
   direction : @metadata.ParameterDirection
@@ -433,13 +433,13 @@ pub(all) struct OwnerComponent {
 
 ///|
 pub(all) enum IndexedLocation {
-  IndexedType(Int, Int)
-  IndexedField(Int, Int, Int)
-  IndexedMethod(Int, Int, Int)
-  IndexedProperty(Int, Int, Int)
-  IndexedEvent(Int, Int, Int)
-  IndexedRuntimeClassMethod(Int, Int, Int, String?)
-  IndexedRuntimeClassInstanceMethod(Int, Int)
+  IndexedType(Int32, Int32)
+  IndexedField(Int32, Int32, Int32)
+  IndexedMethod(Int32, Int32, Int32)
+  IndexedProperty(Int32, Int32, Int32)
+  IndexedEvent(Int32, Int32, Int32)
+  IndexedRuntimeClassMethod(Int32, Int32, Int32, String?)
+  IndexedRuntimeClassInstanceMethod(Int32, Int32)
   IndexedRuntimeHelper(String)
 } derive(Debug, Eq)
 

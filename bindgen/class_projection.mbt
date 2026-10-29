@@ -21,7 +21,7 @@ priv enum WinRtProjectedType {
 fn winrt_projected_type(
   universe : @metadata.ResolvedUniverse,
   hierarchy : @metadata.TypeHierarchyIndex,
-  model_index : Int,
+  model_index : Int32,
   signature : @metadata.TypeSignature,
 ) -> WinRtProjectedType? raise {
   match signature {
@@ -77,7 +77,7 @@ fn winrt_class_method_safe_signature(
   universe : @metadata.ResolvedUniverse,
   hierarchy : @metadata.TypeHierarchyIndex,
   kind : @metadata.RuntimeFactoryKind,
-  model_index : Int,
+  model_index : Int32,
   method_model : @metadata.MetadataMethod,
 ) -> Bool raise {
   if method_model.signature.generic_arity != 0 ||
@@ -176,7 +176,7 @@ fn winrt_class_method_abi_supported(
   universe : @metadata.ResolvedUniverse,
   hierarchy : @metadata.TypeHierarchyIndex,
   kind : @metadata.RuntimeFactoryKind,
-  model_index : Int,
+  model_index : Int32,
   method_model : @metadata.MetadataMethod,
   signature : LoweredSignature,
 ) -> Bool raise {
@@ -254,7 +254,7 @@ fn winrt_class_method_types_reachable(
   universe : @metadata.ResolvedUniverse,
   hierarchy : @metadata.TypeHierarchyIndex,
   kind : @metadata.RuntimeFactoryKind,
-  model_index : Int,
+  model_index : Int32,
   method_model : @metadata.MetadataMethod,
   class_item : ProjectedItem,
   projected_by_key : Map[String, ProjectedItem],

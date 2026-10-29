@@ -34,6 +34,7 @@ jobs:
         with:
           node-version: 22
       - run: moon version --all
+      - run: moon update
       - name: Stage the independent bindings module
         if: inputs.module == 'win32api'
         run: |

@@ -1,0 +1,81 @@
+name: Publish verified Windows modules
+on:
+  workflow_dispatch:
+    inputs:
+      module:
+        description: Module to validate
+        required: true
+        type: choice
+        options: [win32, win32api]
+      publish:
+        description: Publish after successful authenticated dry run
+        required: true
+        type: boolean
+        default: false
+permissions:
+  contents: read
+jobs:
+  publish:
+    if: github.ref == 'refs/heads/main'
+    runs-on: windows-latest
+    timeout-minutes: 60
+    env:
+      MODULE_DIRECTORY: ${{ inputs.module == 'win32api' && 'generated' || '.' }}
+      PUBLISH_RELEASE: ${{ inputs.publish }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: ilammy/msvc-dev-cmd@v1
+        with:
+          arch: x64
+      - uses: hustcer/setup-moonbit@develop
+        with:
+          version: nightly
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - run: moon version --all
+      - name: Stage the independent bindings module
+        if: inputs.module == 'win32api'
+        run: |
+          $stagedModule = Join-Path $env:RUNNER_TEMP 'win32api-release'
+          python tools/package_win32api.py --stage $stagedModule
+          if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
+          "MODULE_DIRECTORY=$stagedModule" >> $env:GITHUB_ENV
+      - name: Check and test selected module
+        run: |
+          moon -C $env:MODULE_DIRECTORY check --target native *> publish-check.log
+          if ($LASTEXITCODE -ne 0) { Get-Content publish-check.log -Tail 100; exit $LASTEXITCODE }
+          moon -C $env:MODULE_DIRECTORY test --target native -j 2 *> publish-test.log
+          if ($LASTEXITCODE -ne 0) { Get-Content publish-test.log -Tail 100; exit $LASTEXITCODE }
+          Get-Content publish-test.log -Tail 10
+          moon -C $env:MODULE_DIRECTORY package *> publish-package.log
+          if ($LASTEXITCODE -ne 0) { Get-Content publish-package.log -Tail 100; exit $LASTEXITCODE }
+      - name: Validate standalone parser distribution
+        if: inputs.module == 'win32'
+        run: |
+          python tools/check_parser_archive.py _build/publish/moonbit-community-win32-0.1.0.zip *> publish-archive-test.log
+          if ($LASTEXITCODE -ne 0) { Get-Content publish-archive-test.log -Tail 100; exit $LASTEXITCODE }
+      - name: Validate registry acceptance and optionally publish
+        env:
+          MOONCAKES_CREDENTIALS: ${{ secrets.MOONCAKES_MOONBIT_COMMUNITY_TOKEN }}
+        run: |
+          if (-not $env:MOONCAKES_CREDENTIALS) { throw "Missing organization Mooncakes publishing credentials" }
+          $credentialPath = Join-Path $env:USERPROFILE '.moon/credentials.json'
+          try {
+            [System.IO.File]::WriteAllText($credentialPath, $env:MOONCAKES_CREDENTIALS)
+            moon -C $env:MODULE_DIRECTORY publish --dry-run *> publish-dry-run.log
+            if ($LASTEXITCODE -ne 0) { Get-Content publish-dry-run.log -Tail 100; exit $LASTEXITCODE }
+            Get-Content publish-dry-run.log -Tail 20
+            if ($env:PUBLISH_RELEASE -eq 'true') {
+              moon -C $env:MODULE_DIRECTORY publish *> publish-result.log
+              if ($LASTEXITCODE -ne 0) { Get-Content publish-result.log -Tail 100; exit $LASTEXITCODE }
+              Get-Content publish-result.log -Tail 20
+            }
+          } finally {
+            Remove-Item $credentialPath -ErrorAction SilentlyContinue
+          }
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: release-${{ inputs.module }}-logs
+          path: 'publish-*.log'

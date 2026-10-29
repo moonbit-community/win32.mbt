@@ -6,7 +6,7 @@ This repository contains two distinct modules:
   semantic metadata model, binding generator, and diagnostic command-line tools.
 - `moonbit-community/win32api` in `generated/` provides the generated Windows
   x64 desktop native bindings. Its public packages and raw-pointer ownership
-  rules are documented in [the generated module README](generated/README.mbt.md).
+  rules are documented in [the generated module README](https://github.com/moonbit-community/win32.mbt/blob/main/generated/README.mbt.md).
 
 The parser and generator tests use the pinned `winmd/` inventory and binary
 fixtures under `metadata/testdata/`. The generated bindings require Windows x64,
@@ -47,14 +47,32 @@ both archives and validate the Windows CI result before publishing:
 
 ```text
 moon package
-moon -C generated package
+python tools/package_win32api.py
 ```
 
-The current root archive also contains the nested `generated/` module. An
-October 2026 audit measured approximately 71 MB compressed / 572 MB expanded
-for the root archive, and 61 MB compressed / 535 MB expanded for the generated
-module. Ignored build products are not included. No generated public packages
-have been removed to reduce these sizes. Before the first release, decide
-whether the parser distribution should retain the nested source bundle or
-package the existing modules separately, and verify registry acceptance of
-both intended archives.
+The root `.moonignore` excludes `generated/` because it is the independent
+`moonbit-community/win32api` module, not a package in `moonbit-community/win32`.
+The parser archive retains the generator, complete pinned WinMD inventory,
+binary test fixtures, and diagnostic tools. The `win32api` archive retains all
+public facades, SCC implementation packages, runtime support, and tests; it is
+packaged and validated separately, without dropping public packages to reduce
+its size.
+
+The generated archive is approximately 61 MB compressed / 535 MB expanded.
+Registry acceptance and Windows validation must be established before that
+module's first release. Build products are excluded from both archives.
+
+When generating bindings, `--out` names an existing consumer module whose
+`moon.mod` identifies the output namespace. Its hand-maintained runtime support
+is provided by `win32api`; it is not emitted by the parser's binding generator.
+Use the repository checkout for full regeneration as documented in `TODO.md`.
+
+The packaging helper stages every bindings source file outside the parent
+module before packaging. This is necessary because Moon also applies the
+parent `.moonignore` when invoked directly inside `generated/`. The helper
+checks that no staged source file is missing from the archive. The publication
+workflow uses the same complete staging process before checking and testing.
+
+The manual publication workflow validates the selected module on Windows, then
+runs an authenticated registry dry run. Its publish switch defaults to false;
+enabling it publishes only after those checks succeed.

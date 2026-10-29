@@ -45,15 +45,28 @@ jobs:
           if ($LASTEXITCODE -ne 0) { Get-Content root-release-test.log -Tail 100; exit $LASTEXITCODE }
           Get-Content root-release-test.log -Tail 5
       - run: node --test tools/compare_dump_test.mjs
+      - name: Stage complete bindings distribution
+        run: |
+          $stagedModule = Join-Path $env:RUNNER_TEMP 'win32api-validation'
+          python tools/package_win32api.py --stage $stagedModule
+          if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
+          "BINDINGS_DIRECTORY=$stagedModule" >> $env:GITHUB_ENV
       - name: Check all generated bindings
         run: |
-          moon -C generated check --target native *> generated-check.log
+          moon -C $env:BINDINGS_DIRECTORY check --target native *> generated-check.log
           if ($LASTEXITCODE -ne 0) { Get-Content generated-check.log -Tail 100; exit $LASTEXITCODE }
       - name: Test generated runtime and Windows API bindings
         run: |
-          moon -C generated test --target native -j 2 *> generated-test.log
+          moon -C $env:BINDINGS_DIRECTORY test --target native -j 2 *> generated-test.log
           if ($LASTEXITCODE -ne 0) { Get-Content generated-test.log -Tail 100; exit $LASTEXITCODE }
           Get-Content generated-test.log -Tail 10
+      - name: Validate standalone parser archive
+        run: |
+          moon package *> root-package.log
+          if ($LASTEXITCODE -ne 0) { Get-Content root-package.log -Tail 100; exit $LASTEXITCODE }
+          python tools/check_parser_archive.py _build/publish/moonbit-community-win32-0.1.0.zip *> root-archive-test.log
+          if ($LASTEXITCODE -ne 0) { Get-Content root-archive-test.log -Tail 100; exit $LASTEXITCODE }
+          Get-Content root-archive-test.log -Tail 15
       - uses: actions/upload-artifact@v4
         if: always()
         with:

@@ -90,7 +90,7 @@ fn test_digest_projection() -> Projection {
   }
   records[windows_metadata_key("A|中", "fields")] = ["field-a", "field-b"]
   records[windows_metadata_key("A|中", "types")] = ["type-z"]
-  { files, records }
+  { files, records, }
 }
 
 ///|
@@ -110,7 +110,7 @@ fn test_assert_dump_fails(
   projection : Projection,
   file : String,
   section : String,
-  chunk : Int,
+  chunk : Int32,
 ) -> Unit raise {
   try projection.dump_text(file~, section~, chunk~) catch {
     _ => ()

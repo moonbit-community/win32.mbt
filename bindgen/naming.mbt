@@ -6,7 +6,7 @@ fn identifier_chars(value : String) -> Array[Char] {
 }
 
 ///|
-pub fn stable_text_compare(left : String, right : String) -> Int {
+pub fn stable_text_compare(left : String, right : String) -> Int32 {
   let shared = left.length().min(right.length())
   for index in 0..<shared {
     let difference = left[index].to_int() - right[index].to_int()
@@ -267,7 +267,7 @@ pub fn public_type_name(identity : @metadata.TypeIdentity) -> String {
 }
 
 ///|
-fn should_add_word_boundary(chars : ArrayView[Char], index : Int) -> Bool {
+fn should_add_word_boundary(chars : ArrayView[Char], index : Int32) -> Bool {
   if index == 0 || !chars[index].is_ascii_uppercase() {
     return false
   }
@@ -316,7 +316,7 @@ pub fn namespace_package_path(namespace_name : String) -> String {
 }
 
 ///|
-pub fn stable_hash(value : String, length? : Int = 12) -> String {
+pub fn stable_hash(value : String, length~ : Int32 = 12) -> String {
   let digest = @crypto.bytes_to_hex_string(@crypto.sha256(@utf8.encode(value)))
   let count = if length < 1 {
     1

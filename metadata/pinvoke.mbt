@@ -25,8 +25,8 @@ pub(all) enum PInvokeSwitch {
 ///|
 /// Fully resolved ECMA-335 ImplMap semantics for one MethodDef.
 pub(all) struct PInvokeInfo {
-  method_rid : Int
-  impl_map_rid : Int
+  method_rid : Int32
+  impl_map_rid : Int32
   dll_name : String
   entry_point : String
   charset : PInvokeCharSet
@@ -35,12 +35,12 @@ pub(all) struct PInvokeInfo {
   exact_spelling : Bool
   best_fit : PInvokeSwitch
   throw_on_unmappable : PInvokeSwitch
-  raw_mapping_flags : UInt
+  raw_mapping_flags : UInt32
 } derive(Debug, Eq)
 
 ///|
 fn decode_mapping_flags(
-  raw : UInt,
+  raw : UInt32,
 ) -> (
   PInvokeCharSet,
   PInvokeCallingConvention,
@@ -226,7 +226,7 @@ pub fn validate_pinvoke_tables(
 pub fn resolve_pinvoke(
   tables : Tables,
   heaps : MetadataHeaps,
-  method_rid : Int,
+  method_rid : Int32,
 ) -> PInvokeInfo raise MetadataError {
   ignore(tables.get_row(MethodDef, method_rid))
   for info in validate_pinvoke_tables(tables, heaps) {

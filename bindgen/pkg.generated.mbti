@@ -7,11 +7,11 @@ import {
 }
 
 // Values
-pub fn aggregate_layout(@metadata.ResolvedUniverse, @metadata.TypeHierarchyIndex, @metadata.TypeIdentity, Int, Map[String, AggregateLayout]) -> AggregateLayout raise @metadata.MetadataError
+pub fn aggregate_layout(@metadata.ResolvedUniverse, @metadata.TypeHierarchyIndex, @metadata.TypeIdentity, Int32, Map[String, AggregateLayout]) -> AggregateLayout raise @metadata.MetadataError
 
 pub fn apply_selectors(ArrayView[ItemIdentity], ArrayView[String], ArrayView[String]) -> Array[String] raise BindgenError
 
-pub let bindgen_schema_version : Int
+pub let bindgen_schema_version : Int32
 
 pub fn build_bindgen_index(@metadata.ResolvedUniverse, profile_exclusions? : Map[String, String]) -> BindgenIndex raise
 
@@ -57,11 +57,11 @@ pub fn select_profile_variants(@metadata.ResolvedUniverse, BindgenProfile) -> Pr
 
 pub fn stabilize_api_names(ArrayView[ProjectedItem]) -> Array[ProjectedItem] raise BindgenError
 
-pub fn stable_hash(String, length? : Int) -> String
+pub fn stable_hash(String, length? : Int32) -> String
 
 pub fn stable_lower_snake(String) -> String
 
-pub fn stable_text_compare(String, String) -> Int
+pub fn stable_text_compare(String, String) -> Int32
 
 pub fn stable_upper_camel(String) -> String
 
@@ -106,9 +106,9 @@ pub(all) enum AggregateFieldAdaptation {
 
 pub(all) struct AggregateFieldLayout {
   metadata_name : String
-  offset : Int
-  size : Int
-  alignment : Int
+  offset : Int32
+  size : Int32
+  alignment : Int32
   abi_type : ExactAbiType
   semantic_type : @metadata.TypeSignature
   adaptation : AggregateFieldAdaptation
@@ -117,9 +117,9 @@ pub(all) struct AggregateFieldLayout {
 
 pub(all) struct AggregateLayout {
   identity : @metadata.TypeIdentity
-  size : Int
-  alignment : Int
-  packing : Int
+  size : Int32
+  alignment : Int32
+  packing : Int32
   explicit_layout : Bool
   fields : Array[AggregateFieldLayout]
 } derive(Eq, @debug.Debug)
@@ -205,8 +205,8 @@ pub(all) enum ExactAbiType {
   AbiScalarType(AbiScalar)
   AbiPointer(ExactAbiType, Bool)
   AbiFunctionPointer(@metadata.CallingConvention, String?, Array[ExactAbiType], ExactAbiType)
-  AbiAggregate(String, Int, Int)
-  AbiFixedArray(ExactAbiType, Int)
+  AbiAggregate(String, Int32, Int32)
+  AbiFixedArray(ExactAbiType, Int32)
   AbiArray(ExactAbiType)
   AbiInterfacePointer(String)
   AbiHString
@@ -271,13 +271,13 @@ pub(all) struct IndexedItem {
 } derive(Eq, @debug.Debug)
 
 pub(all) enum IndexedLocation {
-  IndexedType(Int, Int)
-  IndexedField(Int, Int, Int)
-  IndexedMethod(Int, Int, Int)
-  IndexedProperty(Int, Int, Int)
-  IndexedEvent(Int, Int, Int)
-  IndexedRuntimeClassMethod(Int, Int, Int, String?)
-  IndexedRuntimeClassInstanceMethod(Int, Int)
+  IndexedType(Int32, Int32)
+  IndexedField(Int32, Int32, Int32)
+  IndexedMethod(Int32, Int32, Int32)
+  IndexedProperty(Int32, Int32, Int32)
+  IndexedEvent(Int32, Int32, Int32)
+  IndexedRuntimeClassMethod(Int32, Int32, Int32, String?)
+  IndexedRuntimeClassInstanceMethod(Int32, Int32)
   IndexedRuntimeHelper(String)
 } derive(Eq, @debug.Debug)
 
@@ -295,7 +295,7 @@ pub(all) struct ItemIdentity {
   kind : BindgenItemKind
   source_file : String
   source_table : String
-  source_rid : Int
+  source_rid : Int32
 } derive(Eq, @debug.Debug)
 pub fn ItemIdentity::display_name(Self) -> String
 
@@ -310,11 +310,11 @@ pub(all) struct LoweredSignature {
   parameters : Array[LoweredParameter]
   return_abi : ExactAbiType
   return_carrier : FfiCarrier
-  aggregate_return_size : Int?
+  aggregate_return_size : Int32?
   set_last_error : Bool
   is_winrt_abi : Bool
   logical_return_abi : ExactAbiType?
-  consumer_hidden_parameters : Int
+  consumer_hidden_parameters : Int32
 } derive(Eq, @debug.Debug)
 
 pub(all) struct OwnerComponent {
@@ -380,7 +380,7 @@ pub(all) enum PublicApiScope {
 } derive(Eq, @debug.Debug)
 
 pub(all) struct SafeArrayLengthBinding {
-  length_parameter_index : Int
+  length_parameter_index : Int32
   includes_nul : Bool
   code_units : Bool
 } derive(Eq, @debug.Debug)
@@ -396,7 +396,7 @@ pub(all) struct SafeCallbackType {
 
 pub(all) struct SafeParameter {
   name : String
-  raw_parameter_index : Int
+  raw_parameter_index : Int32
   value_type : SafeValueType
   optional : Bool
   direction : @metadata.ParameterDirection

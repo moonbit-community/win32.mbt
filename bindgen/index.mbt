@@ -221,7 +221,7 @@ fn member_ordinary_public(
   attributes
   .winrt_member_visibility(
     member_entry.model_index,
-    { table: source.table, row: source.rid },
+    { table: source.table, row: source.rid, },
     metadata_public,
   )
   .ordinary_public()
@@ -389,7 +389,7 @@ fn indexed_member(
     naming_qualifiers: member_naming_qualifiers(member_entry, universe),
     equivalence_key: member_equivalence_key(member_entry, universe),
     surface_abi: if member_entry.location is ResolvedMethod(_) {
-      Some({ surface_member_key: canonical_key, abi_target_key: canonical_key })
+      Some({ surface_member_key: canonical_key, abi_target_key: canonical_key, })
     } else {
       None
     },
@@ -479,7 +479,7 @@ fn class_instance_method_item_key(
 ///|
 fn resolved_reference_named_identity(
   universe : @metadata.ResolvedUniverse,
-  model_index : Int,
+  model_index : Int32,
   reference : @metadata.ResolvedTypeReference,
 ) -> @metadata.TypeIdentity? raise {
   match reference {
@@ -847,7 +847,7 @@ fn add_dependency(
     "\{kind.stable_name()}\u0000\{detail}"
   if !seen.contains(key) {
     seen[key] = ()
-    dependencies.push({ from_key, to_key, kind, detail })
+    dependencies.push({ from_key, to_key, kind, detail, })
   }
 }
 
@@ -882,7 +882,7 @@ fn add_resolved_reference_dependency(
 ///|
 fn collect_signature_dependencies(
   universe : @metadata.ResolvedUniverse,
-  model_index : Int,
+  model_index : Int32,
   from_key : String,
   signature : @metadata.TypeSignature,
   kind : DependencyKind,
@@ -1284,7 +1284,7 @@ fn namespace_graph(
       let key = "\{from_package}\u0000\{to_package}"
       if !edge_set.contains(key) {
         edge_set[key] = ()
-        edges.push({ from_package, to_package })
+        edges.push({ from_package, to_package, })
       }
     }
   }

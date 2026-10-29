@@ -18,9 +18,9 @@ pub fn MetadataModel::owner_source_signature_index(
 ) -> Map[String, String] {
   let output : Map[String, String] = Map([])
   for type_model in self.types {
-    output[metadata_owner_key({ table: TypeDef, row: type_model.source.rid })] = "type:\{type_model.identity.stable_key()}"
+    output[metadata_owner_key({ table: TypeDef, row: type_model.source.rid, })] = "type:\{type_model.identity.stable_key()}"
     for field_model in type_model.fields {
-      output[metadata_owner_key({ table: Field, row: field_model.source.rid })] = "field:\{type_model.identity.stable_key()}:\{field_model.name}:" +
+      output[metadata_owner_key({ table: Field, row: field_model.source.rid, })] = "field:\{type_model.identity.stable_key()}:\{field_model.name}:" +
         normalize_type_signature(self, field_model.signature)
     }
     for method_model in type_model.methods {
@@ -33,13 +33,13 @@ pub fn MetadataModel::owner_source_signature_index(
       })] = method_signature
       match method_model.parameters.return_metadata {
         Some(metadata) =>
-          output[metadata_owner_key({ table: Param, row: metadata.rid })] = "return:\{method_signature}"
+          output[metadata_owner_key({ table: Param, row: metadata.rid, })] = "return:\{method_signature}"
         None => ()
       }
       for slot in method_model.parameters.parameters {
         match slot.metadata {
           Some(metadata) =>
-            output[metadata_owner_key({ table: Param, row: metadata.rid })] = "param:\{method_signature}:\{slot.sequence}:" +
+            output[metadata_owner_key({ table: Param, row: metadata.rid, })] = "param:\{method_signature}:\{slot.sequence}:" +
               normalize_type_signature(self, slot.signature)
           None => ()
         }
@@ -53,7 +53,7 @@ pub fn MetadataModel::owner_source_signature_index(
         normalize_property_signature(self, property_model.signature)
     }
     for event_model in type_model.events {
-      output[metadata_owner_key({ table: Event, row: event_model.source.rid })] = "event:\{type_model.identity.stable_key()}:\{event_model.name}:" +
+      output[metadata_owner_key({ table: Event, row: event_model.source.rid, })] = "event:\{type_model.identity.stable_key()}:\{event_model.name}:" +
         token_shape_key(self, event_model.event_type, 0)
     }
     for implementation in type_model.interfaces {

@@ -1,6 +1,6 @@
 ///|
 /// Decode a canonical ECMA-335 compressed unsigned integer.
-pub fn read_compressed_uint(reader : Reader) -> UInt raise MetadataError {
+pub fn read_compressed_uint(reader : Reader) -> UInt32 raise MetadataError {
   let offset = reader.position()
   let first = reader.read_u8().to_uint()
   if (first & 0x80U) == 0U {
@@ -32,7 +32,7 @@ pub fn read_compressed_uint(reader : Reader) -> UInt raise MetadataError {
 
 ///|
 /// Decode canonical ECMA-335 rotated two's-complement signed compression.
-pub fn read_compressed_int(reader : Reader) -> Int raise MetadataError {
+pub fn read_compressed_int(reader : Reader) -> Int32 raise MetadataError {
   let offset = reader.position()
   let first = reader.read_u8().to_uint()
   let (raw, bits, encoded_bytes) = if (first & 0x80U) == 0U {

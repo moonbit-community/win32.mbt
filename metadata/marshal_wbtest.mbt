@@ -5,7 +5,7 @@ test "marshal::plain, LPArray, ByValArray, and WinRT interface kinds" {
   assert_true(parse_native_type(b"\x2e") is NativeIInspectable)
   assert_true(
     parse_native_type(b"\x1e\x04\x07")
-    is NativeFixedArray({ element_count: 4, element_type: Some(NativeI4) }),
+    is NativeFixedArray({ element_count: 4, element_type: Some(NativeI4), }),
   )
   guard parse_native_type(b"\x2a\x07\x01\x02\x03") is NativeArray(array) else {
     fail("expected ARRAY marshal descriptor")

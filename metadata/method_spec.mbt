@@ -22,9 +22,9 @@ pub(all) struct ResolvedMethodSpecification {
 ///|
 fn first_unresolved_signature_token(
   universe : ResolvedUniverse,
-  model_index : Int,
+  model_index : Int32,
   signature : TypeSignature,
-  depth : Int,
+  depth : Int32,
 ) -> DecodedIndex? raise MetadataError {
   if depth > ParserLimits::default_for_winmd().max_signature_depth {
     return metadata_fail(
@@ -107,7 +107,7 @@ fn first_unresolved_signature_token(
 /// Resolve MethodDefOrRef to an exact signature without inventing an external body.
 fn resolve_method_spec_target(
   universe : ResolvedUniverse,
-  model_index : Int,
+  model_index : Int32,
   token : DecodedIndex,
 ) -> ResolvedMethodTarget? raise MetadataError {
   let model = universe.models[model_index]
@@ -196,8 +196,8 @@ fn resolve_method_spec_target(
 ///|
 fn unresolved_method_spec(
   universe : ResolvedUniverse,
-  model_index : Int,
-  rid : Int,
+  model_index : Int32,
+  rid : Int32,
   target : DecodedIndex,
 ) -> UnresolvedReference raise MetadataError {
   let model = universe.models[model_index]
@@ -221,7 +221,7 @@ fn unresolved_method_spec(
         MemberRefParent,
         RequiredIndex,
       )
-      is Some({ table: TypeRef, row: type_ref_rid }) {
+      is Some({ table: TypeRef, row: type_ref_rid, }) {
       for report in universe.unresolved {
         if report.source_file == model.source_file &&
           report.source_table == TypeRef &&

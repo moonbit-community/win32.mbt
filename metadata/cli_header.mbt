@@ -1,12 +1,12 @@
 ///|
 pub(all) struct CliHeader {
   header_span : FileSpan
-  header_size : UInt
+  header_size : UInt32
   runtime_major : UInt16
   runtime_minor : UInt16
-  flags : UInt
-  metadata_rva : UInt
-  metadata_size : UInt
+  flags : UInt32
+  metadata_rva : UInt32
+  metadata_size : UInt32
   metadata_span : FileSpan
 } derive(Debug, Eq)
 

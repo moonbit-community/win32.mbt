@@ -11,3 +11,7 @@ source = "."
 preferred_target = "native"
 
 supported_targets = "native"
+
+repository = "https://github.com/moonbit-community/win32.mbt"
+
+readme = "README.mbt.md"

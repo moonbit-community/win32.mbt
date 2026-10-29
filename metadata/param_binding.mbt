@@ -1,8 +1,8 @@
 ///|
 /// Optional metadata attached to one exact Param.Sequence value.
 pub(all) struct RawParamMetadata {
-  rid : Int
-  sequence : Int
+  rid : Int32
+  sequence : Int32
   name : String
   attributes : ParamAttributes
   constant : RawConstantAssociation?
@@ -13,7 +13,7 @@ pub(all) struct RawParamMetadata {
 ///|
 /// A signature slot always exists even when its optional Param row is absent.
 pub(all) struct MethodParamSlot {
-  sequence : Int
+  sequence : Int32
   signature : TypeSignature
   metadata : RawParamMetadata?
 } derive(Debug, Eq)
@@ -33,7 +33,7 @@ fn decode_param_row_metadata(
 ) -> RawParamMetadata raise MetadataError {
   let sequence = row.value("Sequence").unwrap().reinterpret_as_int()
   let attributes = decode_param_attributes(row.value("Flags").unwrap())
-  let owner : DecodedIndex = { table: Param, row: row.rid }
+  let owner : DecodedIndex = { table: Param, row: row.rid, }
   let constant = associations.constant_for(owner)
   let marshal = associations.marshal_for(owner)
   if attributes.has_default != (constant is Some(_)) {
@@ -63,7 +63,7 @@ fn bind_method_parameters_unchecked(
   tables : Tables,
   heaps : MetadataHeaps,
   associations : AssociationIndex,
-  method_rid : Int,
+  method_rid : Int32,
   signature : MethodSignature,
 ) -> MethodParamBinding raise MetadataError {
   if signature.parameter_count != signature.parameters.length() {
@@ -112,7 +112,7 @@ fn bind_method_parameters_unchecked(
       metadata: metadata_by_sequence[sequence],
     })
   }
-  { return_signature: signature.return_type, return_metadata, parameters }
+  { return_signature: signature.return_type, return_metadata, parameters, }
 }
 
 ///|
@@ -121,7 +121,7 @@ pub fn bind_method_parameters(
   tables : Tables,
   heaps : MetadataHeaps,
   associations : AssociationIndex,
-  method_rid : Int,
+  method_rid : Int32,
   signature : MethodSignature,
 ) -> MethodParamBinding raise MetadataError {
   tables.validate_row_list(MethodDefParams)

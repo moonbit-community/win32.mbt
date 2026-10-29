@@ -22,8 +22,8 @@ pub(all) enum WinRtPrimitiveToken {
 pub(all) enum UnresolvedWinRtSignature {
   WinRtPrimitive(WinRtPrimitiveToken)
   WinRtMetadataType(Bool, DecodedIndex)
-  WinRtTypeVariable(Int)
-  WinRtMethodVariable(Int)
+  WinRtTypeVariable(Int32)
+  WinRtMethodVariable(Int32)
   WinRtPointer(UnresolvedWinRtSignature)
   WinRtByRef(UnresolvedWinRtSignature)
   WinRtArray(UnresolvedWinRtSignature, ArrayShape)
@@ -216,12 +216,12 @@ fn resolved_reference_signature(
   hierarchy : TypeHierarchyIndex,
   runtime_classes : RuntimeClassIndex,
   attributes : AttributeSemanticIndex,
-  model_index : Int,
+  model_index : Int32,
   reference : ResolvedTypeReference,
   type_arguments : Array[ResolvedWinRtType],
   method_arguments : Array[ResolvedWinRtType],
   visiting : Array[String],
-  depth : Int,
+  depth : Int32,
 ) -> String raise MetadataError {
   match reference {
     ResolvedNamedType(identity) =>
@@ -258,7 +258,7 @@ fn resolved_struct_signature(
   attributes : AttributeSemanticIndex,
   identity : TypeIdentity,
   visiting : Array[String],
-  depth : Int,
+  depth : Int32,
 ) -> String raise MetadataError {
   guard universe.type_by_identity(identity) is Some(entry) else {
     return metadata_fail(
@@ -314,7 +314,7 @@ fn resolved_runtime_class_signature(
   attributes : AttributeSemanticIndex,
   identity : TypeIdentity,
   visiting : Array[String],
-  depth : Int,
+  depth : Int32,
 ) -> String raise MetadataError {
   guard runtime_classes.by_identity(identity) is Some(runtime_class) else {
     return metadata_fail(
@@ -361,7 +361,7 @@ fn resolved_named_signature(
   attributes : AttributeSemanticIndex,
   identity : TypeIdentity,
   visiting : Array[String],
-  depth : Int,
+  depth : Int32,
 ) -> String raise MetadataError {
   if identity.namespace_name() == "System" {
     return match identity.metadata_name() {
@@ -442,7 +442,7 @@ fn resolved_winrt_type_signature_inner(
   attributes : AttributeSemanticIndex,
   value : ResolvedWinRtType,
   visiting : Array[String],
-  depth : Int,
+  depth : Int32,
 ) -> String raise MetadataError {
   if depth > ParserLimits::default_for_winmd().max_signature_depth {
     return metadata_fail(
@@ -546,12 +546,12 @@ fn resolved_metadata_signature_inner(
   hierarchy : TypeHierarchyIndex,
   runtime_classes : RuntimeClassIndex,
   attributes : AttributeSemanticIndex,
-  model_index : Int,
+  model_index : Int32,
   signature : TypeSignature,
   type_arguments : Array[ResolvedWinRtType],
   method_arguments : Array[ResolvedWinRtType],
   visiting : Array[String],
-  depth : Int,
+  depth : Int32,
 ) -> String raise MetadataError {
   match signature {
     Primitive(value) =>
@@ -651,7 +651,7 @@ fn resolved_metadata_signature_inner(
 ///|
 fn resolved_metadata_type(
   universe : ResolvedUniverse,
-  model_index : Int,
+  model_index : Int32,
   signature : TypeSignature,
   type_arguments : Array[ResolvedWinRtType],
   method_arguments : Array[ResolvedWinRtType],
@@ -710,7 +710,7 @@ pub fn resolved_winrt_metadata_signature(
   hierarchy : TypeHierarchyIndex,
   runtime_classes : RuntimeClassIndex,
   attributes : AttributeSemanticIndex,
-  model_index : Int,
+  model_index : Int32,
   signature : TypeSignature,
   type_arguments? : Array[ResolvedWinRtType],
   method_arguments? : Array[ResolvedWinRtType],

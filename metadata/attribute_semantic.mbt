@@ -357,7 +357,7 @@ fn collect_semantic_argument(
 }
 
 ///|
-fn semantic_u32(value : AttributeValue) -> UInt? {
+fn semantic_u32(value : AttributeValue) -> UInt32? {
   match value {
     AttributeU4Value(value) => Some(value)
     AttributeEnumValue(_, inner) => semantic_u32(inner)
@@ -514,7 +514,7 @@ pub fn analyze_custom_attribute(
 ///|
 pub fn ResolvedUniverse::analyze_model_custom_attributes(
   self : ResolvedUniverse,
-  model_index : Int,
+  model_index : Int32,
   hierarchy : TypeHierarchyIndex,
 ) -> Array[SemanticCustomAttribute] raise MetadataError {
   let output : Array[SemanticCustomAttribute] = []

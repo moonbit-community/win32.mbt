@@ -11,7 +11,7 @@ let usage : String =
 ///|
 priv enum CliMode {
   Digest
-  Dump(String, String, Int)
+  Dump(String, String, Int32)
 }
 
 ///|
@@ -30,7 +30,7 @@ priv struct InventoryEntry {
 ///|
 fn option_value(
   args : ArrayView[String],
-  index : Int,
+  index : Int32,
   option : String,
 ) -> String raise {
   if index + 1 >= args.length() {
@@ -51,7 +51,7 @@ fn parse_args(args : ArrayView[String]) -> CliArgs raise {
     index = index + 2
   }
   if index < args.length() && (args[index] == "-h" || args[index] == "--help") {
-    return { repo_root, mode: None }
+    return { repo_root, mode: None, }
   }
   if index >= args.length() {
     fail("missing command\n\n\{usage}")
@@ -68,7 +68,7 @@ fn parse_args(args : ArrayView[String]) -> CliArgs raise {
     "dump" => {
       let mut file : String? = None
       let mut section : String? = None
-      let mut chunk : Int? = None
+      let mut chunk : Int32? = None
       while index < args.length() {
         match args[index] {
           "--file" => {
@@ -109,7 +109,7 @@ fn parse_args(args : ArrayView[String]) -> CliArgs raise {
     }
     command => fail("unknown command \{command}\n\n\{usage}")
   }
-  { repo_root, mode: Some(mode) }
+  { repo_root, mode: Some(mode), }
 }
 
 ///|
@@ -181,7 +181,7 @@ fn inventory_entries(text : String) -> Array[InventoryEntry] raise {
   guard root.get("schema_version") is Some(schema) else {
     fail("inventory: missing schema_version")
   }
-  let schema_version : Int = @json.from_json(schema)
+  let schema_version : Int32 = @json.from_json(schema)
   if schema_version != 1 {
     fail("inventory: unsupported schema version \{schema_version}")
   }
@@ -204,7 +204,7 @@ fn inventory_entries(text : String) -> Array[InventoryEntry] raise {
       "winrt" => @metadata.WinRtMetadata
       kind => fail("inventory: unknown metadata_kind \{kind}")
     }
-    output.push({ filename, sha256, file_kind })
+    output.push({ filename, sha256, file_kind, })
   }
   if output.is_empty() {
     fail("inventory: files array is empty")

@@ -3,7 +3,7 @@ pub(all) struct SourceToken {
   source_file : String
   source_sha256 : String
   table : TableKind
-  rid : Int
+  rid : Int32
 } derive(Debug, Eq)
 
 ///|
@@ -16,8 +16,8 @@ pub(all) enum TypeLayoutKind {
 ///|
 pub(all) struct TypeLayout {
   kind : TypeLayoutKind
-  packing_size : Int?
-  class_size : UInt?
+  packing_size : Int32?
+  class_size : UInt32?
 } derive(Debug, Eq)
 
 ///|
@@ -28,8 +28,8 @@ pub(all) struct MetadataField {
   signature : TypeSignature
   constant : RawConstantAssociation?
   marshal : RawFieldMarshal?
-  layout_offset : UInt?
-  rva : UInt?
+  layout_offset : UInt32?
+  rva : UInt32?
   custom_attributes : Array[RawCustomAttributeAssociation]
   projection_eligible : Bool
 } derive(Debug, Eq)
@@ -78,7 +78,7 @@ pub(all) struct MetadataType {
 ///|
 pub(all) struct MetadataNamespace {
   name : String
-  type_indexes : Array[Int]
+  type_indexes : Array[Int32]
 } derive(Debug, Eq)
 
 ///|
@@ -88,12 +88,12 @@ pub(all) struct MetadataModel {
   source_sha256 : String
   file_kind : MetadataFileKind
   root_version : String
-  cli_flags : UInt
+  cli_flags : UInt32
   assembly : AssemblyIdentity
   generic_parameters : Array[RawGenericParameter]
   types : Array[MetadataType]
-  type_indexes_by_rid : Array[Int]
-  method_owner_type_indexes : Array[Int]
+  type_indexes_by_rid : Array[Int32]
+  method_owner_type_indexes : Array[Int32]
   namespaces : Array[MetadataNamespace]
   tables : Tables
   heaps : MetadataHeaps
@@ -105,9 +105,9 @@ fn source_token(
   source_file : String,
   source_sha256 : String,
   table : TableKind,
-  rid : Int,
+  rid : Int32,
 ) -> SourceToken {
-  { source_file, source_sha256, table, rid }
+  { source_file, source_sha256, table, rid, }
 }
 
 ///|
@@ -180,9 +180,9 @@ fn build_type_layouts(
 ///|
 fn build_field_layouts(
   tables : Tables,
-) -> (Array[UInt?], Array[UInt?]) raise MetadataError {
-  let offsets : Array[UInt?] = Array::make(tables.row_count(Field) + 1, None)
-  let rvas : Array[UInt?] = Array::make(tables.row_count(Field) + 1, None)
+) -> (Array[UInt32?], Array[UInt32?]) raise MetadataError {
+  let offsets : Array[UInt32?] = Array::make(tables.row_count(Field) + 1, None)
+  let rvas : Array[UInt32?] = Array::make(tables.row_count(Field) + 1, None)
   for rid in 1..<=tables.row_count(FieldLayout) {
     let row = tables.get_row(FieldLayout, rid)
     guard decode_simple_index(
@@ -367,7 +367,7 @@ pub fn build_metadata_model(
       let attributes = decode_field_attributes(
         field_row.value("Flags").unwrap(),
       )
-      let owner : DecodedIndex = { table: Field, row: field_row.rid }
+      let owner : DecodedIndex = { table: Field, row: field_row.rid, }
       fields.push({
         source: source_token(source_file, source_sha256, Field, field_row.rid),
         name: strings.get(field_row.value("Name").unwrap()),
@@ -408,7 +408,7 @@ pub fn build_metadata_model(
         signature.generic_arity,
         "MethodDef:\{method_row.rid}",
       )
-      let owner : DecodedIndex = { table: MethodDef, row: method_row.rid }
+      let owner : DecodedIndex = { table: MethodDef, row: method_row.rid, }
       methods.push({
         source: source_token(
           source_file,
@@ -450,7 +450,7 @@ pub fn build_metadata_model(
       TypeDefOrRef,
       NullableIndex,
     )
-    let owner : DecodedIndex = { table: TypeDef, row: type_rid }
+    let owner : DecodedIndex = { table: TypeDef, row: type_rid, }
     let attributes = type_attributes[type_rid - 1]
     validate_generic_parameter_scope(
       generic_parameters_by_type[type_rid],
@@ -488,7 +488,7 @@ pub fn build_metadata_model(
       method_owner_type_indexes[method_model.source.rid] = type_index
     }
   }
-  let namespace_indexes : Map[String, Int] = Map([])
+  let namespace_indexes : Map[String, Int32] = Map([])
   let namespaces : Array[MetadataNamespace] = []
   for type_index, type_model in types {
     let namespace_name = type_model.identity.namespace_name()
@@ -496,7 +496,7 @@ pub fn build_metadata_model(
       Some(index) => namespaces[index].type_indexes.push(type_index)
       None => {
         namespace_indexes[namespace_name] = namespaces.length()
-        namespaces.push({ name: namespace_name, type_indexes: [type_index] })
+        namespaces.push({ name: namespace_name, type_indexes: [type_index], })
       }
     }
   }
@@ -540,8 +540,8 @@ pub fn MetadataModel::types_in_namespace(
 /// globally interned nested type name.
 pub fn MetadataModel::enclosing_type_rid(
   self : MetadataModel,
-  nested_type_rid : Int,
-) -> Int? raise MetadataError {
+  nested_type_rid : Int32,
+) -> Int32? raise MetadataError {
   for rid in 1..<=self.tables.row_count(NestedClass) {
     let row = self.tables.get_row(NestedClass, rid)
     guard decode_simple_index(

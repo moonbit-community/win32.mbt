@@ -6,7 +6,7 @@
 //
 // Or manually declare it in `import`, for example:
 // import {
-//   "moonbitlang/x@0.4.6",
+//   "moonbitlang/x@0.5.6",
 // }
 
 name = "moonbit-community/win32"
@@ -15,7 +15,7 @@ version = "0.1.0"
 
 readme = "README.mbt.md"
 
-repository = ""
+repository = "https://github.com/moonbit-community/win32.mbt"
 
 license = "Apache-2.0"
 
@@ -25,7 +25,7 @@ description = "A MoonBit parser and semantic model for Windows Metadata (WinMD) 
 
 import {
   "moonbitlang/async@0.20.1",
-  "moonbitlang/x@0.4.45",
+  "moonbitlang/x@0.5.6",
 }
 
 preferred_target = "native"

@@ -25,8 +25,8 @@ pub(all) struct ResolvedRuntimeInterface {
 
 ///|
 pub(all) struct ResolvedRuntimeClassVariant {
-  model_index : Int
-  type_index : Int
+  model_index : Int32
+  type_index : Int32
   source : SourceToken
   identity : TypeIdentity
   interfaces : Array[ResolvedRuntimeInterface]
@@ -325,7 +325,7 @@ pub fn build_runtime_class_index(
         left.source.rid - right.source.rid
       }
     })
-    classes.push({ identity: node.identity, variants })
+    classes.push({ identity: node.identity, variants, })
   }
   { classes, }
 }

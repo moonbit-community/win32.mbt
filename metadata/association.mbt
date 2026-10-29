@@ -1,14 +1,14 @@
 ///|
 pub(all) struct RawConstantAssociation {
-  row_rid : Int
+  row_rid : Int32
   owner : DecodedIndex
-  element_type : Int
+  element_type : Int32
   value : ConstantValue
 } derive(Debug, Eq)
 
 ///|
 pub(all) struct RawCustomAttributeAssociation {
-  row_rid : Int
+  row_rid : Int32
   owner : DecodedIndex
   constructor_token : DecodedIndex
   value : RawCustomAttribute
@@ -16,9 +16,9 @@ pub(all) struct RawCustomAttributeAssociation {
 
 ///|
 pub(all) struct RawSecurityAssociation {
-  row_rid : Int
+  row_rid : Int32
   owner : DecodedIndex
-  action : UInt
+  action : UInt32
   permission_set : Bytes
 } derive(Debug, Eq)
 
@@ -47,7 +47,7 @@ fn RawAssociation::owner(self : RawAssociation) -> DecodedIndex {
 }
 
 ///|
-fn RawAssociation::row_rid(self : RawAssociation) -> Int {
+fn RawAssociation::row_rid(self : RawAssociation) -> Int32 {
   match self {
     ConstantAssociation(value) => value.row_rid
     CustomAttributeAssociation(value) => value.row_rid
@@ -57,7 +57,7 @@ fn RawAssociation::row_rid(self : RawAssociation) -> Int {
 }
 
 ///|
-fn RawAssociation::kind_order(self : RawAssociation) -> Int {
+fn RawAssociation::kind_order(self : RawAssociation) -> Int32 {
   match self {
     ConstantAssociation(_) => 0
     CustomAttributeAssociation(_) => 1
@@ -67,7 +67,7 @@ fn RawAssociation::kind_order(self : RawAssociation) -> Int {
 }
 
 ///|
-fn owner_compare(left : DecodedIndex, right : DecodedIndex) -> Int {
+fn owner_compare(left : DecodedIndex, right : DecodedIndex) -> Int32 {
   let table_order = left.table.id() - right.table.id()
   if table_order != 0 {
     table_order

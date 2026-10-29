@@ -4,7 +4,7 @@ pub(all) struct ResolvedAttributeConstructor {
   name : String
   signature : MethodSignature
   normalized_signature : String
-  model_index : Int
+  model_index : Int32
   token : DecodedIndex
   source : SourceToken
 } derive(Debug, Eq)
@@ -44,7 +44,7 @@ fn validate_attribute_constructor_shape(
 /// Resolve MethodDefOrRef to a declaring TypeIdentity and exact constructor signature.
 pub fn ResolvedUniverse::resolve_attribute_constructor(
   self : ResolvedUniverse,
-  model_index : Int,
+  model_index : Int32,
   token : DecodedIndex,
 ) -> ResolvedAttributeConstructor raise MetadataError {
   if model_index < 0 || model_index >= self.models.length() {
@@ -144,7 +144,7 @@ pub fn ResolvedUniverse::resolve_attribute_constructor(
 ///|
 pub fn ResolvedUniverse::resolve_custom_attribute(
   self : ResolvedUniverse,
-  model_index : Int,
+  model_index : Int32,
   attribute : RawCustomAttributeAssociation,
 ) -> ResolvedCustomAttribute raise MetadataError {
   let model = self.models[model_index]
@@ -168,7 +168,7 @@ pub fn ResolvedUniverse::resolve_custom_attribute(
 /// Resolve every attribute row in physical RID order for deterministic diagnostics.
 pub fn ResolvedUniverse::resolve_model_custom_attributes(
   self : ResolvedUniverse,
-  model_index : Int,
+  model_index : Int32,
 ) -> Array[ResolvedCustomAttribute] raise MetadataError {
   let output : Array[ResolvedCustomAttribute] = []
   for association in self.models[model_index].associations.entries {

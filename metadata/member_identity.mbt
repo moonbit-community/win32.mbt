@@ -12,24 +12,24 @@ pub(all) struct MemberIdentity {
   kind : MemberKind
   metadata_name : String
   normalized_signature : String
-  generic_arity : Int
+  generic_arity : Int32
   association : String
 } derive(Debug, Eq)
 
 ///|
 pub(all) enum ResolvedMemberLocation {
-  ResolvedField(Int)
-  ResolvedMethod(Int)
-  ResolvedProperty(Int)
-  ResolvedEvent(Int)
+  ResolvedField(Int32)
+  ResolvedMethod(Int32)
+  ResolvedProperty(Int32)
+  ResolvedEvent(Int32)
 } derive(Debug, Eq)
 
 ///|
 pub(all) struct ResolvedMember {
   identity : MemberIdentity
   stable_key : String
-  model_index : Int
-  type_index : Int
+  model_index : Int32
+  type_index : Int32
   location : ResolvedMemberLocation
 } derive(Debug, Eq)
 
@@ -316,8 +316,8 @@ pub fn ResolvedUniverse::lookup_method_by_signature(
 ///|
 fn declaring_type_for_method_def(
   universe : ResolvedUniverse,
-  model_index : Int,
-  method_rid : Int,
+  model_index : Int32,
+  method_rid : Int32,
 ) -> TypeIdentity? {
   let model = universe.models[model_index]
   if method_rid <= 0 || method_rid >= model.method_owner_type_indexes.length() {
@@ -335,8 +335,8 @@ fn declaring_type_for_method_def(
 /// Resolve a MethodDef into the same normalized member space as MemberRef.
 pub fn ResolvedUniverse::resolve_method_def(
   self : ResolvedUniverse,
-  model_index : Int,
-  method_rid : Int,
+  model_index : Int32,
+  method_rid : Int32,
 ) -> ResolvedMember? raise MetadataError {
   if model_index < 0 || model_index >= self.models.length() {
     return metadata_fail(
@@ -375,7 +375,7 @@ fn type_spec_declaring_token(signature : TypeSignature) -> DecodedIndex? {
 /// Resolve the declaring type encoded by MemberRefParent, including TypeSpec.
 pub fn ResolvedUniverse::resolve_member_ref_declaring_type(
   self : ResolvedUniverse,
-  model_index : Int,
+  model_index : Int32,
   owner : DecodedIndex,
 ) -> TypeIdentity? raise MetadataError {
   let model = self.models[model_index]
@@ -414,8 +414,8 @@ pub fn ResolvedUniverse::resolve_member_ref_declaring_type(
 /// Resolve a MemberRef owner/name/signature against normalized global members.
 pub fn ResolvedUniverse::resolve_member_ref(
   self : ResolvedUniverse,
-  model_index : Int,
-  member_ref_rid : Int,
+  model_index : Int32,
+  member_ref_rid : Int32,
 ) -> ResolvedMember? raise MetadataError {
   let model = self.models[model_index]
   guard model.heaps.strings is Some(strings) else {
@@ -478,7 +478,7 @@ pub fn ResolvedUniverse::resolve_member_ref(
 ///|
 pub fn ResolvedUniverse::resolve_method_token(
   self : ResolvedUniverse,
-  model_index : Int,
+  model_index : Int32,
   token : DecodedIndex,
 ) -> ResolvedMember? raise MetadataError {
   match token.table {
@@ -495,7 +495,7 @@ pub fn ResolvedUniverse::resolve_method_token(
 /// Attribute constructor resolution returns a real declaring TypeIdentity.
 pub fn ResolvedUniverse::resolve_constructor_attribute_type(
   self : ResolvedUniverse,
-  model_index : Int,
+  model_index : Int32,
   attribute : RawCustomAttributeAssociation,
 ) -> TypeIdentity? raise MetadataError {
   match attribute.constructor_token.table {
@@ -571,7 +571,7 @@ fn ResolvedUniverse::unresolved_member_reference_reports(
         continue
       }
       let mut disposition = BlockingUnresolved
-      if failed_token is Some({ table: TypeRef, row: type_ref_rid }) {
+      if failed_token is Some({ table: TypeRef, row: type_ref_rid, }) {
         for report in self.unresolved {
           if report.source_file == model.source_file &&
             report.source_table == TypeRef &&

@@ -33,12 +33,12 @@ async fn attribute_value_fixture(
     signature,
     normalized_signature: normalize_method_signature(model, signature),
     model_index: 0,
-    token: { table: MemberRef, row: 1 },
+    token: { table: MemberRef, row: 1, },
     source,
   }
   let resolved : ResolvedCustomAttribute = {
-    source: { ..source, table: CustomAttribute },
-    owner: { table: MethodDef, row: 1 },
+    source: { ..source, table: CustomAttribute, },
+    owner: { table: MethodDef, row: 1, },
     ctor,
     raw: { payload, },
   }
@@ -50,14 +50,14 @@ async fn attribute_value_fixture(
 async fn semantic_test_attribute(
   kind : AttributeSemanticKind,
   owner : DecodedIndex,
-  source_rid : Int,
+  source_rid : Int32,
   integer_arguments : Array[AttributeSemanticInteger],
   type_arguments : Array[TypeIdentity],
   string_arguments : Array[String],
 ) -> SemanticCustomAttribute {
   let (universe, hierarchy, resolved) = attribute_value_fixture([], b"\x00\x00")
-  let source = { ..resolved.source, rid: source_rid }
-  let resolved = { ..resolved, source, owner }
+  let source = { ..resolved.source, rid: source_rid, }
+  let resolved = { ..resolved, source, owner, }
   {
     materialized: materialize_custom_attribute(universe, hierarchy, resolved),
     kind,
@@ -115,7 +115,7 @@ fn parse_error_code(bytes : Bytes) -> String {
 fn mutate_table_u16(
   tables : Tables,
   kind : TableKind,
-  column_offset : Int,
+  column_offset : Int32,
   value : UInt16,
 ) -> Tables {
   let info = tables.info(kind).unwrap()
@@ -124,26 +124,26 @@ fn mutate_table_u16(
   })
   bytes[info.row_offset + column_offset] = (value.to_uint() & 0xffU).to_byte()
   bytes[info.row_offset + column_offset + 1] = (value.to_uint() >> 8).to_byte()
-  { ..tables, bytes: Bytes::from_array(bytes) }
+  { ..tables, bytes: Bytes::from_array(bytes), }
 }
 
 ///|
 fn with_table_row_count(
   tables : Tables,
   kind : TableKind,
-  count : Int,
+  count : Int32,
 ) -> Tables {
   let row_counts = tables.row_counts.copy()
   row_counts[kind.id()] = count
   let infos : Array[TableInfo] = []
   for info in tables.infos {
     if info.kind == kind {
-      infos.push({ ..info, row_count: count })
+      infos.push({ ..info, row_count: count, })
     } else {
       infos.push(info)
     }
   }
-  { ..tables, row_counts, infos }
+  { ..tables, row_counts, infos, }
 }
 
 ///|
@@ -159,24 +159,32 @@ fn duplicate_first_table_row(tables : Tables, kind : TableKind) -> Tables {
   let infos : Array[TableInfo] = []
   for info in tables.infos {
     if info.kind == kind {
-      infos.push({ ..info, row_count: info.row_count + 1 })
+      infos.push({ ..info, row_count: info.row_count + 1, })
     } else if info.row_offset >= insert_at {
-      infos.push({ ..info, row_offset: info.row_offset + target.row_width })
+      infos.push({ ..info, row_offset: info.row_offset + target.row_width, })
     } else {
       infos.push(info)
     }
   }
-  { ..tables, bytes, row_counts, infos }
+  { ..tables, bytes, row_counts, infos, }
 }
 
 ///|
-fn write_test_u16(bytes : FixedArray[Byte], offset : Int, value : UInt) -> Unit {
+fn write_test_u16(
+  bytes : FixedArray[Byte],
+  offset : Int32,
+  value : UInt32,
+) -> Unit {
   bytes[offset] = (value & 0xffU).to_byte()
   bytes[offset + 1] = ((value >> 8) & 0xffU).to_byte()
 }
 
 ///|
-fn write_test_u32(bytes : FixedArray[Byte], offset : Int, value : UInt) -> Unit {
+fn write_test_u32(
+  bytes : FixedArray[Byte],
+  offset : Int32,
+  value : UInt32,
+) -> Unit {
   write_test_u16(bytes, offset, value)
   write_test_u16(bytes, offset + 2, value >> 16)
 }
@@ -225,7 +233,7 @@ fn with_exported_type_fixture(
   }
   let heaps = {
     ..model.heaps,
-    strings: Some({ bytes: strings.bytes + string_suffix }),
+    strings: Some({ bytes: strings.bytes + string_suffix, }),
   }
   let file_bytes : FixedArray[Byte] = FixedArray::make(8, 0)
   write_test_u16(file_bytes, 4, file_name_index.reinterpret_as_uint())
@@ -254,7 +262,7 @@ fn with_exported_type_fixture(
     ExportedType,
     Bytes::from_array(exported_bytes),
   )
-  { ..model, tables, heaps }
+  { ..model, tables, heaps, }
 }
 
 ///|
@@ -277,10 +285,10 @@ async fn synthetic_runtime_class_model(
   types[0] = {
     ..types[0],
     identity,
-    attributes: { ..types[0].attributes, is_windows_runtime: true },
+    attributes: { ..types[0].attributes, is_windows_runtime: true, },
     interfaces,
   }
-  { ..model, file_kind: WinRtMetadata, types }
+  { ..model, file_kind: WinRtMetadata, types, }
 }
 
 ///|
@@ -308,14 +316,14 @@ fn required_winrt_identity(
 async test "association::constant, custom attribute, and marshal attach by coded owner" {
   let (tables, heaps) = fixture_heaps("minimal_pe32.winmd")
   let index = build_association_index(tables, heaps)
-  guard index.constant_for({ table: Field, row: 1 }) is Some(constant) else {
+  guard index.constant_for({ table: Field, row: 1, }) is Some(constant) else {
     fail("field constant association is missing")
   }
   assert_true(constant.value is I4Constant(42))
-  let attributes = index.custom_attributes_for({ table: MethodDef, row: 1 })
+  let attributes = index.custom_attributes_for({ table: MethodDef, row: 1, })
   assert_eq(attributes.length(), 1)
-  assert_true(attributes[0].constructor_token == { table: MemberRef, row: 1 })
-  guard index.marshal_for({ table: Param, row: 1 }) is Some(descriptor) else {
+  assert_true(attributes[0].constructor_token == { table: MemberRef, row: 1, })
+  guard index.marshal_for({ table: Param, row: 1, }) is Some(descriptor) else {
     fail("parameter marshal association is missing")
   }
   assert_true(descriptor.native_type is NativeArray(_))
@@ -332,7 +340,7 @@ async test "attribute_index::semantic owner lookup is deterministic" {
   let universe = build_resolved_universe([model])
   let hierarchy = build_type_hierarchy(universe)
   let index = build_attribute_semantic_index(universe, hierarchy)
-  let values = index.for_owner(0, { table: MethodDef, row: 1 })
+  let values = index.for_owner(0, { table: MethodDef, row: 1, })
   assert_eq(values.length(), 1)
   assert_true(values[0].kind == UnknownAttributeSemantic)
   assert_true(!values[0].projection_affecting)
@@ -377,7 +385,7 @@ async test "attribute_resolve::TypeSpec owner resolves and malformed owners neve
   // Blob length 2: ELEMENT_TYPE_CLASS + TypeDefOrRef(TypeDef RID 1).
   let heaps = {
     ..model.heaps,
-    blobs: Some({ ..blobs, bytes: blobs.bytes + b"\x02\x12\x04" }),
+    blobs: Some({ ..blobs, bytes: blobs.bytes + b"\x02\x12\x04", }),
   }
   let type_spec_info = member_tables.info(TypeSpec).unwrap()
   let table_bytes = FixedArray::makei(member_tables.bytes.length(), index => {
@@ -388,8 +396,8 @@ async test "attribute_resolve::TypeSpec owner resolves and malformed owners neve
     type_spec_info.row_offset,
     class_blob_index.reinterpret_as_uint(),
   )
-  let tables = { ..member_tables, bytes: Bytes::from_array(table_bytes) }
-  let positive_model = { ..model, tables, heaps }
+  let tables = { ..member_tables, bytes: Bytes::from_array(table_bytes), }
+  let positive_model = { ..model, tables, heaps, }
   let positive_universe = build_resolved_universe([positive_model])
   let attribute = positive_model.associations.custom_attributes_for({
       table: MethodDef,
@@ -399,7 +407,7 @@ async test "attribute_resolve::TypeSpec owner resolves and malformed owners neve
   assert_true(resolved.ctor.declaring_type == positive_model.types[0].identity)
 
   // The original TypeSpec is a primitive and therefore has no declaring type.
-  let malformed_model = { ..model, tables: member_tables }
+  let malformed_model = { ..model, tables: member_tables, }
   let malformed_universe = build_resolved_universe([malformed_model])
   let malformed_code = try {
     ignore(malformed_universe.resolve_custom_attribute(0, attribute))
@@ -413,7 +421,7 @@ async test "attribute_resolve::TypeSpec owner resolves and malformed owners neve
     ignore(
       positive_universe.resolve_custom_attribute(0, {
         ..attribute,
-        constructor_token: { table: TypeSpec, row: 1 },
+        constructor_token: { table: TypeSpec, row: 1, },
       }),
     )
     "none"
@@ -450,7 +458,7 @@ async test "attribute_semantic::normalizes both GUID attribute encodings" {
   )
   let winrt_raw = {
     ..winrt_raw,
-    ctor: { ..winrt_raw.ctor, declaring_type: winrt_identity },
+    ctor: { ..winrt_raw.ctor, declaring_type: winrt_identity, },
   }
   let winrt = analyze_custom_attribute(
     materialize_custom_attribute(universe, hierarchy, winrt_raw),
@@ -478,7 +486,7 @@ async test "attribute_semantic::normalizes both GUID attribute encodings" {
   )
   let system_raw = {
     ..system_raw,
-    ctor: { ..system_raw.ctor, declaring_type: system_identity },
+    ctor: { ..system_raw.ctor, declaring_type: system_identity, },
   }
   let system = analyze_custom_attribute(
     materialize_custom_attribute(universe, hierarchy, system_raw),
@@ -557,8 +565,8 @@ async test "availability::direct and inherited constraints preserve provenance" 
     "fixture-sha256",
     CliWin32Metadata,
   )
-  let type_owner : DecodedIndex = { table: TypeDef, row: 1 }
-  let method_owner : DecodedIndex = { table: MethodDef, row: 1 }
+  let type_owner : DecodedIndex = { table: TypeDef, row: 1, }
+  let method_owner : DecodedIndex = { table: MethodDef, row: 1, }
   let inherited = semantic_test_attribute(
     ContractVersionAttributeSemantic,
     type_owner,
@@ -585,9 +593,9 @@ async test "availability::direct and inherited constraints preserve provenance" 
   )
   let index : AttributeSemanticIndex = {
     entries: [
-      { model_index: 0, owner: type_owner, value: inherited },
-      { model_index: 0, owner: type_owner, value: deprecated },
-      { model_index: 0, owner: method_owner, value: direct },
+      { model_index: 0, owner: type_owner, value: inherited, },
+      { model_index: 0, owner: type_owner, value: deprecated, },
+      { model_index: 0, owner: method_owner, value: direct, },
     ],
   }
   let availability = index.effective_availability(0, method_owner, [type_owner]) catch {
@@ -611,7 +619,7 @@ async test "availability::direct and inherited constraints preserve provenance" 
 
 ///|
 async test "visibility::protected and overridable never become ordinary public" {
-  let owner : DecodedIndex = { table: MethodDef, row: 1 }
+  let owner : DecodedIndex = { table: MethodDef, row: 1, }
   let protected_attribute = semantic_test_attribute(
     ProtectedAttributeSemantic,
     owner,
@@ -630,8 +638,8 @@ async test "visibility::protected and overridable never become ordinary public" 
   )
   let index : AttributeSemanticIndex = {
     entries: [
-      { model_index: 0, owner, value: protected_attribute },
-      { model_index: 0, owner, value: overridable },
+      { model_index: 0, owner, value: protected_attribute, },
+      { model_index: 0, owner, value: overridable, },
     ],
   }
   let visibility = index.winrt_member_visibility(0, owner, true)
@@ -650,11 +658,11 @@ async test "generic::owner scope, flags, name, and constraints decode from table
   let parameter = parameters[0]
   assert_eq(parameter.number, 0)
   assert_eq(parameter.name, "T")
-  assert_true(parameter.owner == { table: TypeDef, row: 1 })
+  assert_true(parameter.owner == { table: TypeDef, row: 1, })
   assert_true(parameter.attributes.reference_type_constraint)
   assert_true(parameter.attributes.default_constructor_constraint)
   assert_eq(parameter.constraints.length(), 1)
-  assert_true(parameter.constraints[0] == { table: TypeRef, row: 2 })
+  assert_true(parameter.constraints[0] == { table: TypeRef, row: 2, })
   validate_generic_parameter_scope(parameters, 1, "fixture")
   let count_code = try {
     validate_generic_parameter_scope(parameters, 2, "fixture")
@@ -664,7 +672,7 @@ async test "generic::owner scope, flags, name, and constraints decode from table
   }
   assert_eq(count_code, "MD0797")
   let sparse = parameters.copy()
-  sparse[0] = { ..sparse[0], number: 1 }
+  sparse[0] = { ..sparse[0], number: 1, }
   let sparse_code = try {
     validate_generic_parameter_scope(sparse, 1, "fixture")
     "none"
@@ -716,9 +724,9 @@ async test "hierarchy::rejects Extends and interface inheritance cycles" {
   let cyclic_types = model.types.copy()
   cyclic_types[0] = {
     ..cyclic_types[0],
-    extends: Some({ table: TypeDef, row: cyclic_types[0].source.rid }),
+    extends: Some({ table: TypeDef, row: cyclic_types[0].source.rid, }),
   }
-  let cyclic_model = { ..model, types: cyclic_types }
+  let cyclic_model = { ..model, types: cyclic_types, }
   let extends_code = try {
     ignore(build_type_hierarchy(build_resolved_universe([cyclic_model])))
     "none"
@@ -730,7 +738,7 @@ async test "hierarchy::rejects Extends and interface inheritance cycles" {
   let interface_types = model.types.copy()
   interface_types[0] = {
     ..interface_types[0],
-    attributes: { ..interface_types[0].attributes, is_interface: true },
+    attributes: { ..interface_types[0].attributes, is_interface: true, },
     extends: None,
     interfaces: [
       {
@@ -740,12 +748,12 @@ async test "hierarchy::rejects Extends and interface inheritance cycles" {
           table: InterfaceImpl,
           rid: 1,
         },
-        interface_type: { table: TypeDef, row: interface_types[0].source.rid },
+        interface_type: { table: TypeDef, row: interface_types[0].source.rid, },
         custom_attributes: [],
       },
     ],
   }
-  let interface_model = { ..model, types: interface_types }
+  let interface_model = { ..model, types: interface_types, }
   let interface_code = try {
     ignore(build_type_hierarchy(build_resolved_universe([interface_model])))
     "none"
@@ -774,7 +782,7 @@ async test "marshal::FieldMarshal raw-model hook attaches decoded ABI to Param o
   let (tables, heaps) = fixture_heaps("minimal_pe32.winmd")
   let values = load_field_marshals(tables, heaps)
   assert_eq(values.length(), 1)
-  assert_true(values[0].owner == { table: Param, row: 1 })
+  assert_true(values[0].owner == { table: Param, row: 1, })
   assert_true(values[0].native_type is NativeArray(_))
   let param = tables.get_row(Param, 1)
   assert_true(
@@ -866,8 +874,8 @@ async test "method_semantics::rejects malformed roles and MethodImpl cycles" {
           rid: 1,
         },
         class_rid: types[0].source.rid,
-        body: { table: MethodDef, row: 3 },
-        declaration: { table: MethodDef, row: 3 },
+        body: { table: MethodDef, row: 3, },
+        declaration: { table: MethodDef, row: 3, },
       },
     ],
   }
@@ -1021,7 +1029,7 @@ async test "param_binding::return row stays separate and out-of-range/duplicate 
     storage[param_list] = 3
     storage[param_list + 1] = 0
   }
-  let duplicate = { ..duplicate, bytes: Bytes::from_array(storage) }
+  let duplicate = { ..duplicate, bytes: Bytes::from_array(storage), }
   let duplicate_code = try {
     ignore(bind_method_parameters(duplicate, heaps, associations, 1, signature))
     "none"
@@ -1058,7 +1066,7 @@ async test "param_binding::physical order cannot shift a gap or return row" {
     storage[param_list] = 3
     storage[param_list + 1] = 0
   }
-  let rows = { ..rows, bytes: Bytes::from_array(storage) }
+  let rows = { ..rows, bytes: Bytes::from_array(storage), }
   let signature : MethodSignature = {
     calling_convention: DefaultCall,
     has_this: false,
@@ -1118,7 +1126,7 @@ async test "param_semantics::LengthIs is bound by Param RID and authoring hints 
   guard method_model.parameters.parameters[0].metadata is Some(metadata) else {
     fail("fixture parameter metadata is absent")
   }
-  let owner : DecodedIndex = { table: Param, row: metadata.rid }
+  let owner : DecodedIndex = { table: Param, row: metadata.rid, }
   let length = semantic_test_attribute(
     LengthIsAttributeSemantic,
     owner,
@@ -1128,7 +1136,7 @@ async test "param_semantics::LengthIs is bound by Param RID and authoring hints 
     [],
   )
   let length_index : AttributeSemanticIndex = {
-    entries: [{ model_index: 0, owner, value: length }],
+    entries: [{ model_index: 0, owner, value: length, }],
   }
   let semantics = resolve_method_parameter_semantics(
     length_index, 0, method_model,
@@ -1149,7 +1157,7 @@ async test "param_semantics::LengthIs is bound by Param RID and authoring hints 
   let contradiction = try {
     ignore(
       resolve_method_parameter_semantics(
-        { entries: [{ model_index: 0, owner, value: writeonly }] },
+        { entries: [{ model_index: 0, owner, value: writeonly, }], },
         0,
         method_model,
       ),
@@ -1173,8 +1181,8 @@ async test "param_semantics::LengthIs is bound by Param RID and authoring hints 
       resolve_method_parameter_semantics(
         {
           entries: [
-            { model_index: 0, owner, value: writeonly },
-            { model_index: 0, owner, value: readonly_attribute },
+            { model_index: 0, owner, value: writeonly, },
+            { model_index: 0, owner, value: readonly_attribute, },
           ],
         },
         0,
@@ -1365,7 +1373,7 @@ async test "resolve::CLI TypeRef uses assembly identity and global tagged lookup
   )
   let universe = build_resolved_universe([model])
   assert_true(universe.unresolved.is_empty())
-  guard universe.resolve_type_token(0, { table: TypeRef, row: 1 })
+  guard universe.resolve_type_token(0, { table: TypeRef, row: 1, })
     is Some(ResolvedNamedType(identity)) else {
     fail("fixture TypeRef did not resolve")
   }
@@ -1389,7 +1397,7 @@ async test "resolve::unresolved references are reported and never become placeho
   // TypeRef.TypeName follows its ResolutionScope column.
   bytes[type_ref.row_offset + 2] = 0
   bytes[type_ref.row_offset + 3] = 0
-  let tables = { ..model.tables, bytes: Bytes::from_array(bytes) }
+  let tables = { ..model.tables, bytes: Bytes::from_array(bytes), }
   let model = { ..model, tables, }
   let universe = build_resolved_universe([model])
   assert_true(!universe.unresolved.is_empty())
@@ -1419,7 +1427,7 @@ async test "resolve::broken AssemblyRef scope is reported as its own source toke
   bytes[second_name] = 0
   bytes[second_name + 1] = 0
   let universe = build_resolved_universe([
-    { ..model, tables: { ..model.tables, bytes: Bytes::from_array(bytes) } },
+    { ..model, tables: { ..model.tables, bytes: Bytes::from_array(bytes), }, },
   ])
   assert_true(
     universe.unresolved.search_by(value => value.source_table == AssemblyRef)
@@ -1466,7 +1474,7 @@ async test "resolve::non-whitelisted System types remain blocking unresolved" {
     type_ref_info.row_offset + type_ref_info.row_width + 2,
     generic_name,
   )
-  let tables = { ..model.tables, bytes: Bytes::from_array(bytes) }
+  let tables = { ..model.tables, bytes: Bytes::from_array(bytes), }
   let universe = build_resolved_universe([{ ..model, tables, }])
   assert_true(
     universe.unresolved.search_by(value => {
@@ -1534,7 +1542,7 @@ async test "resolve::MethodSpec resolves target and substitutes MVAR" {
   // Blob length 3: GENERICINST, one argument, ELEMENT_TYPE_STRING.
   let heaps = {
     ..model.heaps,
-    blobs: Some({ ..blobs, bytes: blobs.bytes + b"\x03\x0a\x01\x0e" }),
+    blobs: Some({ ..blobs, bytes: blobs.bytes + b"\x03\x0a\x01\x0e", }),
   }
   let row : FixedArray[Byte] = FixedArray::make(4, 0)
   write_test_u16(row, 0, (target_rid * 2).reinterpret_as_uint())
@@ -1544,7 +1552,7 @@ async test "resolve::MethodSpec resolves target and substitutes MVAR" {
     MethodSpec,
     Bytes::from_array(row),
   )
-  let universe = build_resolved_universe([{ ..model, types, tables, heaps }])
+  let universe = build_resolved_universe([{ ..model, types, tables, heaps, }])
   guard universe.method_specifications[0][1] is Some(specification) else {
     fail("MethodSpec was not resolved")
   }
@@ -1576,7 +1584,7 @@ async test "resolve::identical duplicate types intern and layout conflicts fail"
   let types = model.types.copy()
   types[0] = {
     ..types[0],
-    layout: { ..types[0].layout, class_size: Some(123U) },
+    layout: { ..types[0].layout, class_size: Some(123U), },
   }
   let code = try {
     ignore(build_resolved_universe([model, { ..model, types, }]))
@@ -1600,7 +1608,7 @@ async test "resolve::AssemblyRef binding distinguishes public key tokens" {
     flags: model.assembly.flags | 0x0001U,
     public_key_or_token: b"candidate-full-public-key",
   }
-  let signed_model = { ..model, assembly: signed_candidate }
+  let signed_model = { ..model, assembly: signed_candidate, }
   let matching_reference = {
     ..signed_candidate,
     flags: signed_candidate.flags & 0xfffffffeU,
@@ -1628,7 +1636,7 @@ async test "resolve::serialized CLI type names honor full assembly qualification
     "fixture-sha256",
     CliWin32Metadata,
   )
-  let assembly_v2 = { ..model.assembly, major: 2 }
+  let assembly_v2 = { ..model.assembly, major: 2, }
   let types_v2 = model.types.copy()
   types_v2[0] = {
     ..types_v2[0],
@@ -1684,9 +1692,9 @@ async test "resolve::WinRT identity survives assembly and file movement" {
     None,
     winrt_types[0].identity.generic_arity(),
   )
-  winrt_types[0] = { ..winrt_types[0], identity: winrt_identity }
-  let first = { ..model, file_kind: WinRtMetadata, types: winrt_types }
-  let second_assembly = { ..model.assembly, name: "Moved.Assembly" }
+  winrt_types[0] = { ..winrt_types[0], identity: winrt_identity, }
+  let first = { ..model, file_kind: WinRtMetadata, types: winrt_types, }
+  let second_assembly = { ..model.assembly, name: "Moved.Assembly", }
   let second = {
     ..first,
     source_file: "second.winmd",
@@ -1704,7 +1712,7 @@ async test "resolve::WinRT identity survives assembly and file movement" {
 ///|
 async test "runtime_class::static-only class has no invented default interface" {
   let model = synthetic_runtime_class_model([])
-  let owner : DecodedIndex = { table: TypeDef, row: model.types[0].source.rid }
+  let owner : DecodedIndex = { table: TypeDef, row: model.types[0].source.rid, }
   let static_attribute = semantic_test_attribute(
     StaticAttributeSemantic,
     owner,
@@ -1714,7 +1722,7 @@ async test "runtime_class::static-only class has no invented default interface" 
     [],
   )
   let attributes : AttributeSemanticIndex = {
-    entries: [{ model_index: 0, owner, value: static_attribute }],
+    entries: [{ model_index: 0, owner, value: static_attribute, }],
   }
   let universe = build_resolved_universe([model])
   let hierarchy = build_type_hierarchy(universe)
@@ -1742,7 +1750,7 @@ async test "runtime_class::static-only class has no invented default interface" 
 ///|
 async test "runtime_class::instance interfaces require exactly one default" {
   let base_model = synthetic_runtime_class_model([])
-  let interface_token : DecodedIndex = { table: TypeRef, row: 2 }
+  let interface_token : DecodedIndex = { table: TypeRef, row: 2, }
   let first : MetadataInterfaceImplementation = {
     source: {
       source_file: base_model.source_file,
@@ -1770,11 +1778,11 @@ async test "runtime_class::instance interfaces require exactly one default" {
 
   let second : MetadataInterfaceImplementation = {
     ..first,
-    source: { ..first.source, rid: 2 },
+    source: { ..first.source, rid: 2, },
   }
   let duplicate_model = synthetic_runtime_class_model([first, second])
-  let first_owner : DecodedIndex = { table: InterfaceImpl, row: 1 }
-  let second_owner : DecodedIndex = { table: InterfaceImpl, row: 2 }
+  let first_owner : DecodedIndex = { table: InterfaceImpl, row: 1, }
+  let second_owner : DecodedIndex = { table: InterfaceImpl, row: 2, }
   let first_default = semantic_test_attribute(
     DefaultAttributeSemantic,
     first_owner,
@@ -1793,8 +1801,8 @@ async test "runtime_class::instance interfaces require exactly one default" {
   )
   let default_attributes : AttributeSemanticIndex = {
     entries: [
-      { model_index: 0, owner: first_owner, value: first_default },
-      { model_index: 0, owner: second_owner, value: second_default },
+      { model_index: 0, owner: first_owner, value: first_default, },
+      { model_index: 0, owner: second_owner, value: second_default, },
     ],
   }
   let duplicate_universe = build_resolved_universe([duplicate_model])
@@ -1858,13 +1866,13 @@ async test "signature::pointer, byref, arrays, generics, modifiers, and function
   guard generic is GenericInstance(false, owner, arguments) else {
     fail("expected generic instance signature")
   }
-  assert_true(owner == { table: TypeRef, row: 1 })
+  assert_true(owner == { table: TypeRef, row: 1, })
   assert_true(arguments[0] is Primitive(I4Type))
   assert_true(parse_type_signature(b"\x13\x00", tables) is TypeVariable(0))
   assert_true(parse_type_signature(b"\x1e\x01", tables) is MethodVariable(1))
   assert_true(
     parse_type_signature(b"\x1f\x05\x08", tables)
-    is RequiredModifier({ table: TypeRef, row: 1 }, Primitive(I4Type)),
+    is RequiredModifier({ table: TypeRef, row: 1, }, Primitive(I4Type)),
   )
   assert_true(
     parse_type_signature(b"\x1b\x00\x00\x01", tables)
@@ -2001,7 +2009,7 @@ async test "tables::decode all fixture rows and coded indexes" {
   assert_true(type_def.value("MethodList") == Some(1U))
   assert_true(
     decode_coded_index(tables, 5U, TypeDefOrRef, RequiredIndex) ==
-    Some({ table: TypeRef, row: 1 }),
+    Some({ table: TypeRef, row: 1, }),
   )
   assert_true(
     decode_coded_index(tables, 0U, TypeDefOrRef, NullableIndex) is None,
@@ -2063,7 +2071,7 @@ async test "validation::inventory profile is the sole validator selector" {
     profile.file_kind,
   )
   validate_inventory_profile(model, profile)
-  let mismatch = { ..profile, file_kind: WinRtMetadata }
+  let mismatch = { ..profile, file_kind: WinRtMetadata, }
   let code = try {
     validate_inventory_profile(model, mismatch)
     "none"

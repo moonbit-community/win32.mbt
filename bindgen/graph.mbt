@@ -1,8 +1,8 @@
 ///|
 fn build_node_index(
   nodes : ArrayView[String],
-) -> Map[String, Int] raise BindgenError {
-  let index : Map[String, Int] = Map([])
+) -> Map[String, Int32] raise BindgenError {
+  let index : Map[String, Int32] = Map([])
   for position, node in nodes {
     if index.contains(node) {
       return bindgen_fail("package graph contains duplicate node \{node}")
@@ -16,9 +16,9 @@ fn build_node_index(
 fn build_adjacency(
   nodes : ArrayView[String],
   edges : ArrayView[PackageEdge],
-  index : Map[String, Int],
-) -> Array[Array[Int]] raise BindgenError {
-  let adjacency : Array[Array[Int]] = Array::makei(nodes.length(), _ => [])
+  index : Map[String, Int32],
+) -> Array[Array[Int32]] raise BindgenError {
+  let adjacency : Array[Array[Int32]] = Array::makei(nodes.length(), _ => [])
   for edge in edges {
     guard index.get(edge.from_package) is Some(from) else {
       return bindgen_fail(
@@ -42,14 +42,14 @@ fn build_adjacency(
 
 ///|
 fn tarjan_visit(
-  vertex : Int,
-  adjacency : ArrayView[Array[Int]],
-  next_index : Ref[Int],
-  indexes : Array[Int],
-  lowlinks : Array[Int],
-  stack : Array[Int],
+  vertex : Int32,
+  adjacency : ArrayView[Array[Int32]],
+  next_index : Ref[Int32],
+  indexes : Array[Int32],
+  lowlinks : Array[Int32],
+  stack : Array[Int32],
   on_stack : Array[Bool],
-  output : Array[Array[Int]],
+  output : Array[Array[Int32]],
 ) -> Unit {
   indexes[vertex] = next_index.val
   lowlinks[vertex] = next_index.val
@@ -67,7 +67,7 @@ fn tarjan_visit(
     }
   }
   if lowlinks[vertex] == indexes[vertex] {
-    let component : Array[Int] = []
+    let component : Array[Int32] = []
     for ;; {
       let component_member = stack.pop().unwrap()
       on_stack[component_member] = false
@@ -92,8 +92,8 @@ pub fn strongly_connected_components(
   let indexes = Array::make(nodes.length(), -1)
   let lowlinks = Array::make(nodes.length(), -1)
   let on_stack = Array::make(nodes.length(), false)
-  let stack : Array[Int] = []
-  let raw : Array[Array[Int]] = []
+  let stack : Array[Int32] = []
+  let raw : Array[Array[Int32]] = []
   let next_index = Ref(0)
   for vertex in 0..<nodes.length() {
     if indexes[vertex] == -1 {
@@ -126,7 +126,7 @@ pub fn owner_components(
       members.join("\n"),
       length=16,
     )
-    output.push({ members, owner_package: "scc/\{digest}", digest })
+    output.push({ members, owner_package: "scc/\{digest}", digest, })
   }
   output
 }
@@ -160,7 +160,7 @@ pub fn condensation_edges(
       let key = "\{from}\u0000\{to}"
       if !seen.contains(key) {
         seen[key] = ()
-        output.push({ from_package: from, to_package: to })
+        output.push({ from_package: from, to_package: to, })
       }
     }
   }

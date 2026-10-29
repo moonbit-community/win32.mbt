@@ -13,7 +13,7 @@ pub(all) struct Diagnostic {
   source_file : String
   source_sha256 : String
   metadata_token : String?
-  offset : Int?
+  offset : Int32?
   item_path : String
   message : String
   help : String
@@ -30,7 +30,7 @@ pub(all) suberror MetadataError {
 fn[T] metadata_fail(
   code : String,
   phase : String,
-  offset : Int,
+  offset : Int32,
   message : String,
 ) -> T raise MetadataError {
   raise MetadataError({
@@ -50,7 +50,7 @@ fn[T] metadata_fail(
 }
 
 ///|
-fn optional_int_key(value : Int?) -> String {
+fn optional_int_key(value : Int32?) -> String {
   match value {
     None => "-"
     Some(number) => number.to_string()

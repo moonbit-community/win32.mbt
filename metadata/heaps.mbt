@@ -70,7 +70,7 @@ pub fn build_heaps(
     Some(handle) => {
       let bytes = stream_bytes(root, handle)
       require_zero_prefix(bytes, "#Blob")
-      let heap : BlobHeap = { bytes, limits }
+      let heap : BlobHeap = { bytes, limits, }
       Some(heap)
     }
   }
@@ -95,11 +95,11 @@ pub fn build_heaps(
     Some(handle) => {
       let bytes = stream_bytes(root, handle)
       require_zero_prefix(bytes, "#US")
-      let heap : UserStringHeap = { bytes, limits }
+      let heap : UserStringHeap = { bytes, limits, }
       Some(heap)
     }
   }
-  let heaps = { strings, blobs, guids, user_strings }
+  let heaps = { strings, blobs, guids, user_strings, }
   if tables is Some(tables) {
     heaps.validate_referenced_presence(tables)
   }
@@ -149,10 +149,10 @@ fn MetadataHeaps::validate_referenced_presence(
 
 ///|
 fn heap_offset(
-  raw : UInt,
-  length : Int,
+  raw : UInt32,
+  length : Int32,
   code : String,
-) -> Int raise MetadataError {
+) -> Int32 raise MetadataError {
   if raw.to_uint64() >= length.to_uint64() {
     return metadata_fail(code, "heaps", 0, "heap index is out of range")
   }
@@ -163,7 +163,7 @@ fn heap_offset(
 /// #Strings offsets may point to a valid UTF-8 suffix inside another entry.
 pub fn StringHeap::get(
   self : StringHeap,
-  raw : UInt,
+  raw : UInt32,
 ) -> String raise MetadataError {
   if raw == 0U {
     return ""
@@ -187,7 +187,10 @@ pub fn StringHeap::get(
 }
 
 ///|
-pub fn BlobHeap::get(self : BlobHeap, raw : UInt) -> Bytes raise MetadataError {
+pub fn BlobHeap::get(
+  self : BlobHeap,
+  raw : UInt32,
+) -> Bytes raise MetadataError {
   if raw == 0U {
     return b""
   }
@@ -211,7 +214,10 @@ pub fn BlobHeap::get(self : BlobHeap, raw : UInt) -> Bytes raise MetadataError {
 
 ///|
 /// #GUID uses one-based 16-byte handles; zero means no GUID.
-pub fn GuidHeap::get(self : GuidHeap, raw : UInt) -> Bytes? raise MetadataError {
+pub fn GuidHeap::get(
+  self : GuidHeap,
+  raw : UInt32,
+) -> Bytes? raise MetadataError {
   if raw == 0U {
     return None
   }
@@ -228,7 +234,7 @@ pub fn GuidHeap::get(self : GuidHeap, raw : UInt) -> Bytes? raise MetadataError 
 /// Decode one #US entry, validating compressed length, UTF-16LE, and terminal kind.
 pub fn UserStringHeap::get(
   self : UserStringHeap,
-  raw : UInt,
+  raw : UInt32,
 ) -> String raise MetadataError {
   if raw == 0U {
     return ""

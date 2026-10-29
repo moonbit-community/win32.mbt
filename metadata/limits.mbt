@@ -1,14 +1,14 @@
 ///|
 /// Shared denial-of-service limits for library, CLI, fixtures, and fuzzing.
 pub(all) struct ParserLimits {
-  max_file_size : Int
-  max_stream_size : Int
-  max_blob_size : Int
-  max_table_rows : Int
-  max_signature_depth : Int
-  max_attribute_depth : Int
-  max_generic_args : Int
-  max_single_allocation : Int
+  max_file_size : Int32
+  max_stream_size : Int32
+  max_blob_size : Int32
+  max_table_rows : Int32
+  max_signature_depth : Int32
+  max_attribute_depth : Int32
+  max_generic_args : Int32
+  max_single_allocation : Int32
 } derive(Debug, Eq)
 
 ///|
@@ -30,7 +30,7 @@ pub fn ParserLimits::default_for_winmd() -> ParserLimits {
 /// Override only the file-size budget; all other defaults remain identical.
 pub fn ParserLimits::with_max_file_size(
   self : ParserLimits,
-  value : Int,
+  value : Int32,
 ) -> ParserLimits {
-  { ..self, max_file_size: value }
+  { ..self, max_file_size: value, }
 }

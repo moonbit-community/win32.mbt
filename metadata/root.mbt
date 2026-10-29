@@ -8,7 +8,7 @@ pub(all) struct StreamHandle {
 pub(all) struct MetadataRoot {
   version : String
   flags : UInt16
-  directory_end : Int
+  directory_end : Int32
   streams : Array[StreamHandle]
   table_stream : StreamHandle
   strings_heap : StreamHandle?
@@ -70,10 +70,10 @@ fn stream_name(reader : Reader) -> String raise MetadataError {
 
 ///|
 fn root_offset(
-  value : UInt,
-  root_size : Int,
+  value : UInt32,
+  root_size : Int32,
   code : String,
-) -> Int raise MetadataError {
+) -> Int32 raise MetadataError {
   if value.to_uint64() > root_size.to_uint64() {
     return metadata_fail(
       code, "metadata_root", root_size, "stream offset exceeds metadata root",
@@ -180,7 +180,7 @@ pub fn parse_metadata_root(
         )
       }
     }
-    streams.push({ name, span: { offset, size } })
+    streams.push({ name, span: { offset, size, }, })
   }
   let directory_end = reader.position()
   for stream in streams {

@@ -1,8 +1,8 @@
 ///|
 test "heaps::string suffix and invalid UTF-8 boundary" {
-  let suffix_heap : StringHeap = { bytes: b"\x00hello\x00" }
+  let suffix_heap : StringHeap = { bytes: b"\x00hello\x00", }
   assert_eq(suffix_heap.get(2U), "ello")
-  let invalid_heap : StringHeap = { bytes: b"\x00\xc3\xa9\x00" }
+  let invalid_heap : StringHeap = { bytes: b"\x00\xc3\xa9\x00", }
   let code = try {
     ignore(invalid_heap.get(2U))
     "none"
@@ -38,7 +38,7 @@ test "signature::canonical compressed integer vectors" {
 ///|
 test "heaps::blob and GUID bounds are checked" {
   let limits = ParserLimits::default_for_winmd()
-  let blob : BlobHeap = { bytes: b"\x00\x05ab", limits }
+  let blob : BlobHeap = { bytes: b"\x00\x05ab", limits, }
   let blob_code = try {
     ignore(blob.get(1U))
     "none"
@@ -46,7 +46,7 @@ test "heaps::blob and GUID bounds are checked" {
     MetadataError(diagnostic) => diagnostic.code
   }
   assert_eq(blob_code, "MD0520")
-  let guid : GuidHeap = { bytes: b"\x00\x01" }
+  let guid : GuidHeap = { bytes: b"\x00\x01", }
   let guid_code = try {
     ignore(guid.get(1U))
     "none"

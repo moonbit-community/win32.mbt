@@ -1,0 +1,74 @@
+name: Windows toolchain health
+on:
+  push:
+    branches: [main]
+  pull_request:
+permissions:
+  contents: read
+jobs:
+  windows:
+    runs-on: windows-latest
+    timeout-minutes: 60
+    strategy:
+      fail-fast: false
+      matrix:
+        version: [latest, nightly]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: ilammy/msvc-dev-cmd@v1
+        with:
+          arch: x64
+      - uses: hustcer/setup-moonbit@develop
+        with:
+          version: ${{ matrix.version }}
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - run: moon version --all
+      - run: moon update
+      - name: Check parser and generator
+        run: |
+          moon check --target native *> root-check.log
+          if ($LASTEXITCODE -ne 0) { Get-Content root-check.log -Tail 100; exit $LASTEXITCODE }
+      - run: moon fmt --check
+      - name: Check parser and generator interfaces
+        run: |
+          moon info --target native *> root-info.log
+          if ($LASTEXITCODE -ne 0) { Get-Content root-info.log -Tail 100; exit $LASTEXITCODE }
+          git diff --exit-code
+      - name: Test parser, WinMD fixtures, and generator
+        run: |
+          moon test --target native *> root-test.log
+          if ($LASTEXITCODE -ne 0) { Get-Content root-test.log -Tail 100; exit $LASTEXITCODE }
+          Get-Content root-test.log -Tail 5
+          moon test --target native --release *> root-release-test.log
+          if ($LASTEXITCODE -ne 0) { Get-Content root-release-test.log -Tail 100; exit $LASTEXITCODE }
+          Get-Content root-release-test.log -Tail 5
+      - run: node --test tools/compare_dump_test.mjs
+      - name: Stage complete bindings distribution
+        run: |
+          $stagedModule = Join-Path $env:RUNNER_TEMP 'win32api-validation'
+          python tools/package_win32api.py --stage $stagedModule
+          if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
+          "BINDINGS_DIRECTORY=$stagedModule" >> $env:GITHUB_ENV
+      - name: Check all generated bindings
+        run: |
+          moon -C $env:BINDINGS_DIRECTORY check --target native *> generated-check.log
+          if ($LASTEXITCODE -ne 0) { Get-Content generated-check.log -Tail 100; exit $LASTEXITCODE }
+      - name: Test generated runtime and Windows API bindings
+        run: |
+          moon -C $env:BINDINGS_DIRECTORY test --target native -j 2 *> generated-test.log
+          if ($LASTEXITCODE -ne 0) { Get-Content generated-test.log -Tail 100; exit $LASTEXITCODE }
+          Get-Content generated-test.log -Tail 10
+      - name: Validate standalone parser archive
+        run: |
+          moon package *> root-package.log
+          if ($LASTEXITCODE -ne 0) { Get-Content root-package.log -Tail 100; exit $LASTEXITCODE }
+          python tools/check_parser_archive.py _build/publish/moonbit-community-win32-0.1.0.zip *> root-archive-test.log
+          if ($LASTEXITCODE -ne 0) { Get-Content root-archive-test.log -Tail 100; exit $LASTEXITCODE }
+          Get-Content root-archive-test.log -Tail 15
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: windows-${{ matrix.version }}-logs
+          path: '*.log'

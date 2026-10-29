@@ -24,15 +24,15 @@ pub(all) enum AttributeValue {
   AttributeNullValue
   AttributeBooleanValue(Bool)
   AttributeCharValue(UInt16)
-  AttributeI1Value(Int)
+  AttributeI1Value(Int32)
   AttributeU1Value(Byte)
-  AttributeI2Value(Int)
+  AttributeI2Value(Int32)
   AttributeU2Value(UInt16)
-  AttributeI4Value(Int)
-  AttributeU4Value(UInt)
+  AttributeI4Value(Int32)
+  AttributeU4Value(UInt32)
   AttributeI8Value(Int64)
   AttributeU8Value(UInt64)
-  AttributeR4BitsValue(UInt)
+  AttributeR4BitsValue(UInt32)
   AttributeR8BitsValue(UInt64)
   AttributeStringValue(String)
   AttributeTypeValue(String, TypeIdentity?)
@@ -46,7 +46,7 @@ pub(all) enum AttributeValue {
 pub(all) struct AttributeArgument {
   declared_type : AttributeValueType
   value : AttributeValue
-  raw_offset : Int
+  raw_offset : Int32
   raw_bytes : Bytes
 } derive(Debug, Eq)
 
@@ -61,7 +61,7 @@ pub(all) struct AttributeNamedArgument {
   kind : AttributeNamedKind
   name : String
   argument : AttributeArgument
-  raw_offset : Int
+  raw_offset : Int32
   raw_bytes : Bytes
 } derive(Debug, Eq)
 
@@ -172,7 +172,7 @@ fn enum_underlying_type(
 ///|
 fn resolved_signature_identity(
   universe : ResolvedUniverse,
-  model_index : Int,
+  model_index : Int32,
   token : DecodedIndex,
 ) -> TypeIdentity raise MetadataError {
   guard universe.resolve_type_token(model_index, token)
@@ -188,10 +188,10 @@ fn resolved_signature_identity(
 fn attribute_type_from_signature(
   universe : ResolvedUniverse,
   hierarchy : TypeHierarchyIndex,
-  model_index : Int,
+  model_index : Int32,
   signature : TypeSignature,
   limits : ParserLimits,
-  depth : Int,
+  depth : Int32,
 ) -> AttributeValueType raise MetadataError {
   if depth > limits.max_attribute_depth {
     return metadata_fail(
@@ -342,7 +342,7 @@ fn attribute_type_from_field_or_property(
   hierarchy : TypeHierarchyIndex,
   reader : Reader,
   limits : ParserLimits,
-  depth : Int,
+  depth : Int32,
 ) -> AttributeValueType raise MetadataError {
   if depth > limits.max_attribute_depth {
     return metadata_fail(
@@ -418,7 +418,7 @@ fn read_attribute_argument(
   payload : Bytes,
   declared_type : AttributeValueType,
   limits : ParserLimits,
-  depth : Int,
+  depth : Int32,
 ) -> AttributeArgument raise MetadataError {
   if depth > limits.max_attribute_depth {
     return metadata_fail(
@@ -623,13 +623,13 @@ pub fn materialize_custom_attribute(
       "custom attribute payload has trailing bytes",
     )
   }
-  { resolved, fixed_arguments, named_arguments }
+  { resolved, fixed_arguments, named_arguments, }
 }
 
 ///|
 pub fn ResolvedUniverse::materialize_model_custom_attributes(
   self : ResolvedUniverse,
-  model_index : Int,
+  model_index : Int32,
   hierarchy : TypeHierarchyIndex,
   limits? : ParserLimits,
 ) -> Array[MaterializedCustomAttribute] raise MetadataError {

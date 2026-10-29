@@ -1,5 +1,5 @@
 ///|
-fn windows_metadata_hex_nibble(value : Int) -> Char {
+fn windows_metadata_hex_nibble(value : Int32) -> Char {
   if value < 10 {
     (48 + value).unsafe_to_char()
   } else {
@@ -19,7 +19,7 @@ fn windows_metadata_text(value : String) -> String {
 }
 
 ///|
-fn windows_metadata_hex_u32(value : UInt, width : Int) -> String {
+fn windows_metadata_hex_u32(value : UInt32, width : Int32) -> String {
   let output = StringBuilder()
   for shift = width - 1; shift >= 0; shift = shift - 1 {
     let nibble = ((value >> (shift * 4)) & 15U).reinterpret_as_int()
@@ -29,7 +29,7 @@ fn windows_metadata_hex_u32(value : UInt, width : Int) -> String {
 }
 
 ///|
-fn windows_metadata_hex_u64(value : UInt64, width : Int) -> String {
+fn windows_metadata_hex_u64(value : UInt64, width : Int32) -> String {
   let output = StringBuilder()
   for shift = width - 1; shift >= 0; shift = shift - 1 {
     let nibble = ((value >> (shift * 4)) & 15UL).to_int()
@@ -39,8 +39,8 @@ fn windows_metadata_hex_u64(value : UInt64, width : Int) -> String {
 }
 
 ///|
-fn windows_metadata_rust_string_compare(left : String, right : String) -> Int {
-  let shared = Int::min(left.length(), right.length())
+fn windows_metadata_rust_string_compare(left : String, right : String) -> Int32 {
+  let shared = Int32::min(left.length(), right.length())
   for index in 0..<shared {
     let difference = left[index].to_int() - right[index].to_int()
     if difference != 0 {
@@ -77,7 +77,7 @@ fn windows_metadata_raw_type_name(
 ///|
 fn windows_metadata_generic_numbers(
   type_model : @metadata.MetadataType,
-) -> Array[Int] {
+) -> Array[Int32] {
   let parameters = type_model.generic_parameters.copy()
   parameters.sort_by((left, right) => left.number - right.number)
   [
@@ -148,7 +148,7 @@ fn windows_metadata_primitive(value : @metadata.PrimitiveType) -> String raise {
 fn windows_metadata_type_def_or_ref_key(
   model : @metadata.MetadataModel,
   token : @metadata.DecodedIndex,
-  generic_numbers : ArrayView[Int],
+  generic_numbers : ArrayView[Int32],
 ) -> String raise {
   match token.table {
     @metadata.TypeDef | @metadata.TypeRef => {
@@ -181,7 +181,7 @@ fn windows_metadata_type_def_or_ref_key(
 fn windows_metadata_type_code_key(
   model : @metadata.MetadataModel,
   signature : @metadata.TypeSignature,
-  generic_numbers : ArrayView[Int],
+  generic_numbers : ArrayView[Int32],
 ) -> String raise {
   match signature {
     @metadata.Primitive(value) => windows_metadata_primitive(value)
@@ -245,7 +245,7 @@ fn windows_metadata_type_code_key(
 fn windows_metadata_type_key(
   model : @metadata.MetadataModel,
   signature : @metadata.TypeSignature,
-  generic_numbers : ArrayView[Int],
+  generic_numbers : ArrayView[Int32],
 ) -> String raise {
   let (without_modifiers, is_const) = windows_metadata_strip_modifiers(
     model, signature,

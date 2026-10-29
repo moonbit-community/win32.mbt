@@ -117,7 +117,7 @@ fn merge_equivalent_pinvokes(
   items : Array[ProjectedItem],
 ) -> Array[ProjectedItem] {
   let output = items.copy()
-  let groups : Map[String, Array[Int]] = Map([])
+  let groups : Map[String, Array[Int32]] = Map([])
   for index, item in output {
     guard item.status.is_emitted() &&
       item.public_scope == PackageApiScope &&
@@ -303,7 +303,7 @@ fn reserved_public_symbol_keys(
         "raw_address", "with_raw_address",
       ] {
       let key = public_symbol_key(
-        { ..item, public_scope: TypeApiScope(item.type_identity) },
+        { ..item, public_scope: TypeApiScope(item.type_identity), },
         package_name,
         symbol,
       )
@@ -317,9 +317,9 @@ fn reserved_public_symbol_keys(
 fn colliding_item_indexes(
   items : ArrayView[ProjectedItem],
   reserved : Map[String, Unit],
-) -> Map[Int, Unit] {
-  let groups : Map[String, Array[Int]] = Map([])
-  let output : Map[Int, Unit] = Map([])
+) -> Map[Int32, Unit] {
+  let groups : Map[String, Array[Int32]] = Map([])
+  let output : Map[Int32, Unit] = Map([])
   for index, item in items {
     guard item.status.is_emitted() &&
       item.public_package is Some(package_name) &&
@@ -377,8 +377,8 @@ fn reserve_candidate(
 ///|
 fn naming_failure(
   items : ArrayView[ProjectedItem],
-  colliding : Map[Int, Unit],
-  failed_index : Int,
+  colliding : Map[Int32, Unit],
+  failed_index : Int32,
 ) -> String {
   let failed = items[failed_index]
   let lines : Array[String] = [
@@ -447,7 +447,7 @@ fn disambiguate_readably(
     guard selected is Some(selected) else {
       return bindgen_fail(naming_failure(output, colliding, index))
     }
-    output[index] = { ..item, public_name: Some(selected) }
+    output[index] = { ..item, public_name: Some(selected), }
     reserve_candidate(output[index], package_name, selected, used)
   }
   output

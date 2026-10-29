@@ -12,8 +12,8 @@ pub(all) enum MetadataTypeCategory {
 ///|
 /// A hierarchy variant retains the exact file/type location that contributed it.
 pub(all) struct ResolvedHierarchyVariant {
-  model_index : Int
-  type_index : Int
+  model_index : Int32
+  type_index : Int32
   source : SourceToken
   base_type : ResolvedTypeReference?
   interfaces : Array[ResolvedTypeReference]
@@ -93,8 +93,8 @@ fn hierarchy_variant_category(
 ///|
 fn hierarchy_node_indexes(
   nodes : Array[ResolvedTypeHierarchy],
-) -> Map[String, Int] {
-  let indexes : Map[String, Int] = Map([])
+) -> Map[String, Int32] {
+  let indexes : Map[String, Int32] = Map([])
   for index, value in nodes {
     indexes[value.identity.stable_key()] = index
   }
@@ -103,9 +103,9 @@ fn hierarchy_node_indexes(
 
 ///|
 fn named_internal_node(
-  indexes : Map[String, Int],
+  indexes : Map[String, Int32],
   reference : ResolvedTypeReference,
-) -> Int? {
+) -> Int32? {
   match reference {
     ResolvedNamedType(identity) => indexes.get(identity.stable_key())
     ResolvedTypeSpecification(_) => None
@@ -115,9 +115,9 @@ fn named_internal_node(
 ///|
 fn hierarchy_cycle_message(
   nodes : Array[ResolvedTypeHierarchy],
-  stack : Array[Int],
-  cycle_start : Int,
-  target : Int,
+  stack : Array[Int32],
+  cycle_start : Int32,
+  target : Int32,
 ) -> String {
   let builder = StringBuilder()
   for index in cycle_start..<stack.length() {
@@ -143,16 +143,16 @@ fn hierarchy_cycle_message(
 /// Validate the single-parent Extends graph in linear time.
 fn validate_base_graph(
   nodes : Array[ResolvedTypeHierarchy],
-  base_edges : Array[Int?],
-  max_depth : Int,
+  base_edges : Array[Int32?],
+  max_depth : Int32,
 ) -> Unit raise MetadataError {
   let state = Array::make(nodes.length(), 0)
   for start in 0..<nodes.length() {
     if state[start] != 0 {
       continue
     }
-    let stack : Array[Int] = []
-    let mut current : Int? = Some(start)
+    let stack : Array[Int32] = []
+    let mut current : Int32? = Some(start)
     while current is Some(index) && state[index] == 0 {
       if stack.length() >= max_depth {
         return metadata_fail(
@@ -185,12 +185,12 @@ fn validate_base_graph(
 
 ///|
 fn visit_interface_graph(
-  node_index : Int,
+  node_index : Int32,
   nodes : Array[ResolvedTypeHierarchy],
-  edges : Array[Array[Int]],
-  state : Array[Int],
-  stack : Array[Int],
-  max_depth : Int,
+  edges : Array[Array[Int32]],
+  state : Array[Int32],
+  stack : Array[Int32],
+  max_depth : Int32,
 ) -> Unit raise MetadataError {
   if stack.length() >= max_depth {
     return metadata_fail(
@@ -225,8 +225,8 @@ fn visit_interface_graph(
 ///|
 fn validate_interface_graph(
   nodes : Array[ResolvedTypeHierarchy],
-  edges : Array[Array[Int]],
-  max_depth : Int,
+  edges : Array[Array[Int32]],
+  max_depth : Int32,
 ) -> Unit raise MetadataError {
   let state = Array::make(nodes.length(), 0)
   for index in 0..<nodes.length() {
@@ -324,8 +324,10 @@ pub fn build_type_hierarchy(
     })
   }
   let indexes = hierarchy_node_indexes(nodes)
-  let base_edges : Array[Int?] = Array::make(nodes.length(), None)
-  let interface_edges : Array[Array[Int]] = Array::makei(nodes.length(), _ => [])
+  let base_edges : Array[Int32?] = Array::make(nodes.length(), None)
+  let interface_edges : Array[Array[Int32]] = Array::makei(nodes.length(), _ => {
+    []
+  })
   for node_index, hierarchy in nodes {
     for variant in hierarchy.variants {
       match variant.base_type {
@@ -368,7 +370,7 @@ pub fn build_type_hierarchy(
         base_edges[index] is Some(parent) {
         if nodes[parent].category == AttributeMetadataType ||
           nodes[parent].category == DelegateMetadataType {
-          nodes[index] = { ..nodes[index], category: nodes[parent].category }
+          nodes[index] = { ..nodes[index], category: nodes[parent].category, }
           progress = true
         }
       }

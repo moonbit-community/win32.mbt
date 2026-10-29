@@ -21,7 +21,7 @@ pub fn parse_selector(text : String) -> Selector raise BindgenError {
     return bindgen_fail("selector must not be empty")
   }
   if normalized == "all" {
-    return { kind: SelectAll, value: "", original: text }
+    return { kind: SelectAll, value: "", original: text, }
   }
   let (kind, value) = match normalized.split_once(":") {
     Some(("namespace", value)) => (SelectNamespace, value.to_owned())
@@ -35,7 +35,7 @@ pub fn parse_selector(text : String) -> Selector raise BindgenError {
   if value.is_empty() {
     return bindgen_fail("selector \{text} requires a non-empty value")
   }
-  { kind, value, original: text }
+  { kind, value, original: text, }
 }
 
 ///|

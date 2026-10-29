@@ -6,36 +6,36 @@ pub(all) enum PeKind {
 
 ///|
 pub(all) struct FileSpan {
-  offset : Int
-  size : Int
+  offset : Int32
+  size : Int32
 } derive(Debug, Eq)
 
 ///|
 pub(all) struct PeSection {
-  virtual_size : UInt
-  virtual_address : UInt
-  raw_size : UInt
-  raw_offset : UInt
+  virtual_size : UInt32
+  virtual_address : UInt32
+  raw_size : UInt32
+  raw_offset : UInt32
 } derive(Debug, Eq)
 
 ///|
 pub(all) struct PeImage {
   data : Bytes
   kind : PeKind
-  optional_offset : Int
-  optional_size : Int
-  data_directory_offset : Int
-  number_of_rva_and_sizes : UInt
+  optional_offset : Int32
+  optional_size : Int32
+  data_directory_offset : Int32
+  number_of_rva_and_sizes : UInt32
   sections : Array[PeSection]
 } derive(Debug, Eq)
 
 ///|
 fn uint_to_file_offset(
-  value : UInt,
-  file_size : Int,
+  value : UInt32,
+  file_size : Int32,
   code : String,
   phase : String,
-) -> Int raise MetadataError {
+) -> Int32 raise MetadataError {
   if value.to_uint64() > file_size.to_uint64() {
     return metadata_fail(
       code, phase, file_size, "32-bit file offset exceeds the input span",
@@ -46,9 +46,9 @@ fn uint_to_file_offset(
 
 ///|
 fn checked_file_span(
-  offset : Int,
-  size : Int,
-  limit : Int,
+  offset : Int32,
+  size : Int32,
+  limit : Int32,
   code : String,
 ) -> Unit raise MetadataError {
   if offset < 0 || size < 0 || offset > limit || size > limit - offset {
@@ -148,7 +148,7 @@ pub fn parse_pe(
       )
       checked_file_span(raw_start, raw_length, data.length(), "MD0112")
     }
-    sections.push({ virtual_size, virtual_address, raw_size, raw_offset })
+    sections.push({ virtual_size, virtual_address, raw_size, raw_offset, })
   }
   {
     data,
@@ -165,8 +165,8 @@ pub fn parse_pe(
 /// Read one data-directory entry, proving it lies inside SizeOfOptionalHeader.
 pub fn PeImage::data_directory(
   self : PeImage,
-  index : Int,
-) -> (UInt, UInt) raise MetadataError {
+  index : Int32,
+) -> (UInt32, UInt32) raise MetadataError {
   if index < 0 || index.to_uint64() >= self.number_of_rva_and_sizes.to_uint64() {
     return metadata_fail(
       "MD0113",
@@ -192,8 +192,8 @@ pub fn PeImage::data_directory(
 /// Map a complete non-empty RVA span into exactly one raw-backed section.
 pub fn PeImage::map_rva_span(
   self : PeImage,
-  rva : UInt,
-  size : UInt,
+  rva : UInt32,
+  size : UInt32,
 ) -> FileSpan raise MetadataError {
   if size == 0U {
     return metadata_fail(
@@ -229,7 +229,7 @@ pub fn PeImage::map_rva_span(
             "MD0117", "pe", 0, "RVA span maps beyond the input file",
           )
         }
-        matches.push({ offset: file_start.to_int(), size: length.to_int() })
+        matches.push({ offset: file_start.to_int(), size: length.to_int(), })
       } else {
         virtual_tail_match = true
       }

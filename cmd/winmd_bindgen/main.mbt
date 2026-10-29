@@ -52,7 +52,7 @@ fn initial_args() -> CliArgs {
 ///|
 fn option_value(
   args : ArrayView[String],
-  index : Int,
+  index : Int32,
   option : String,
 ) -> String raise {
   if index + 1 >= args.length() {
@@ -99,7 +99,7 @@ fn parse_args(args : ArrayView[String]) -> CliArgs raise {
   while index < args.length() {
     match args[index] {
       "-h" | "--help" => {
-        result = { ..result, help: true }
+        result = { ..result, help: true, }
         index = index + 1
       }
       "--inventory" => {
@@ -122,7 +122,7 @@ fn parse_args(args : ArrayView[String]) -> CliArgs raise {
         if result.out is Some(_) {
           fail("--out may only be specified once")
         }
-        result = { ..result, out: Some(option_value(args, index, "--out")) }
+        result = { ..result, out: Some(option_value(args, index, "--out")), }
         index = index + 2
       }
       "--filter" => {
@@ -138,7 +138,7 @@ fn parse_args(args : ArrayView[String]) -> CliArgs raise {
           fail("--profile may only be specified once")
         }
         explicit_profile = true
-        result = { ..result, profile: option_value(args, index, "--profile") }
+        result = { ..result, profile: option_value(args, index, "--profile"), }
         index = index + 2
       }
       "--clean" => {
@@ -362,9 +362,9 @@ fn projection_summary(
   config : @bindgen.BindingsModuleConfig,
   source_root : String,
 ) -> String {
-  let counts : Map[String, Int] = Map([])
-  let kind_counts : Map[String, Int] = Map([])
-  let owner_counts : Map[String, Int] = Map([])
+  let counts : Map[String, Int32] = Map([])
+  let kind_counts : Map[String, Int32] = Map([])
+  let owner_counts : Map[String, Int32] = Map([])
   for item in projected {
     let status = item.status.stable_name()
     counts[status] = counts.get(status).unwrap_or(0) + 1

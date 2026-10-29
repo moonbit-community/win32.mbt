@@ -1,5 +1,5 @@
 ///|
-let windows_metadata_chunk_size : Int = 256
+let windows_metadata_chunk_size : Int32 = 256
 
 ///|
 let windows_metadata_sections : ReadOnlyArray[String] = ReadOnlyArray::from_array([
@@ -98,7 +98,7 @@ fn windows_metadata_bindgen_reads_attribute_arguments(
 fn windows_metadata_project_custom_attribute(
   records : Map[String, Array[String]],
   model : @metadata.MetadataModel,
-  model_index : Int,
+  model_index : Int32,
   universe : @metadata.ResolvedUniverse,
   hierarchy : @metadata.TypeHierarchyIndex,
   attribute : @metadata.RawCustomAttributeAssociation,
@@ -138,9 +138,9 @@ fn windows_metadata_project_custom_attribute(
 fn windows_metadata_project_field(
   records : Map[String, Array[String]],
   model : @metadata.MetadataModel,
-  owner_rid : Int,
+  owner_rid : Int32,
   field : @metadata.MetadataField,
-  generic_numbers : ArrayView[Int],
+  generic_numbers : ArrayView[Int32],
 ) -> Unit raise {
   let file = model.source_file
   let rid = field.source.rid
@@ -176,7 +176,7 @@ fn windows_metadata_project_field(
 fn windows_metadata_project_param(
   records : Map[String, Array[String]],
   file : String,
-  method_rid : Int,
+  method_rid : Int32,
   parameter : @metadata.RawParamMetadata,
 ) -> Unit {
   windows_metadata_add(
@@ -194,9 +194,9 @@ fn windows_metadata_project_param(
 fn windows_metadata_project_method(
   records : Map[String, Array[String]],
   model : @metadata.MetadataModel,
-  owner_rid : Int,
+  owner_rid : Int32,
   method_model : @metadata.MetadataMethod,
-  generic_numbers : ArrayView[Int],
+  generic_numbers : ArrayView[Int32],
 ) -> Unit raise {
   let file = model.source_file
   let rid = method_model.source.rid
@@ -338,7 +338,7 @@ fn windows_metadata_project_type(
 fn windows_metadata_project_table_sections(
   records : Map[String, Array[String]],
   model : @metadata.MetadataModel,
-  included_types : Map[Int, Unit],
+  included_types : Map[Int32, Unit],
 ) -> Unit raise {
   let file = model.source_file
   for rid in 1..<=model.tables.row_count(@metadata.NestedClass) {
@@ -375,8 +375,8 @@ fn windows_metadata_project_table_sections(
 ///|
 fn windows_metadata_included_types(
   model : @metadata.MetadataModel,
-) -> Map[Int, Unit] raise {
-  let included : Map[Int, Unit] = Map([])
+) -> Map[Int32, Unit] raise {
+  let included : Map[Int32, Unit] = Map([])
   for type_model in model.types {
     let (namespace_name, _) = windows_metadata_raw_type_name(model, {
       table: @metadata.TypeDef,
@@ -407,7 +407,7 @@ fn windows_metadata_included_types(
 ///|
 fn windows_metadata_has_attribute(
   universe : @metadata.ResolvedUniverse,
-  model_index : Int,
+  model_index : Int32,
   type_model : @metadata.MetadataType,
   expected_name : String,
 ) -> Bool raise {
@@ -471,7 +471,7 @@ fn windows_metadata_bindgen_includes_api_method(
 fn windows_metadata_item(
   records : Map[String, Array[String]],
   file : String,
-  rid : Int,
+  rid : Int32,
   kind : String,
   namespace_name : String,
   lookup_name : String,
@@ -490,11 +490,11 @@ fn windows_metadata_item(
 fn windows_metadata_project_items(
   records : Map[String, Array[String]],
   model : @metadata.MetadataModel,
-  model_index : Int,
+  model_index : Int32,
   universe : @metadata.ResolvedUniverse,
 ) -> Unit raise {
   let file = model.source_file
-  let nested_types : Map[Int, Unit] = Map([])
+  let nested_types : Map[Int32, Unit] = Map([])
   for rid in 1..<=model.tables.row_count(@metadata.NestedClass) {
     let row = model.tables.get_row(@metadata.NestedClass, rid)
     let inner = row.value("NestedClass").unwrap().reinterpret_as_int()
@@ -504,7 +504,7 @@ fn windows_metadata_project_items(
     let rid = type_model.source.rid
     let (namespace_name, metadata_name) = windows_metadata_raw_type_name(
       model,
-      { table: @metadata.TypeDef, row: rid },
+      { table: @metadata.TypeDef, row: rid, },
     )
     if namespace_name.is_empty() && metadata_name != "<Module>" {
       continue
@@ -646,5 +646,5 @@ fn project(
       values.sort_by(windows_metadata_rust_string_compare)
     }
   }
-  { files, records }
+  { files, records, }
 }

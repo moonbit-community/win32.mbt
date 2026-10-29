@@ -19,16 +19,16 @@ pub(all) struct ColumnSpec {
 ///|
 pub(all) struct TableInfo {
   kind : TableKind
-  row_count : Int
-  row_width : Int
-  row_offset : Int
+  row_count : Int32
+  row_width : Int32
+  row_offset : Int32
 } derive(Debug, Eq)
 
 ///|
 pub(all) struct TableRow {
   table : TableKind
-  rid : Int
-  values : Array[(String, UInt)]
+  rid : Int32
+  values : Array[(String, UInt32)]
 } derive(Debug, Eq)
 
 ///|
@@ -37,17 +37,17 @@ pub(all) struct Tables {
   compressed : Bool
   heap_sizes : Byte
   header_marker : Byte
-  extra_data : UInt?
+  extra_data : UInt32?
   terminal_zero_dword : Bool
   valid_mask : UInt64
   sorted_mask : UInt64
-  row_counts : Array[Int]
+  row_counts : Array[Int32]
   infos : Array[TableInfo]
 } derive(Debug, Eq)
 
 ///|
 fn column(name : String, kind : ColumnKind) -> ColumnSpec {
-  { name, kind }
+  { name, kind, }
 }
 
 ///|
@@ -282,12 +282,12 @@ pub fn table_schema(kind : TableKind) -> Array[ColumnSpec] {
 }
 
 ///|
-pub fn Tables::row_count(self : Tables, kind : TableKind) -> Int {
+pub fn Tables::row_count(self : Tables, kind : TableKind) -> Int32 {
   self.row_counts[kind.id()]
 }
 
 ///|
-fn simple_index_width(row_counts : Array[Int], table : TableKind) -> Int {
+fn simple_index_width(row_counts : Array[Int32], table : TableKind) -> Int32 {
   if row_counts[table.id()] < 0x10000 {
     2
   } else {
@@ -296,7 +296,10 @@ fn simple_index_width(row_counts : Array[Int], table : TableKind) -> Int {
 }
 
 ///|
-fn coded_index_width(row_counts : Array[Int], coded : CodedIndexKind) -> Int {
+fn coded_index_width(
+  row_counts : Array[Int32],
+  coded : CodedIndexKind,
+) -> Int32 {
   let threshold = 1 << (16 - coded.tag_bits())
   let mut largest = 0
   for tag in 0..<(1 << coded.tag_bits()) {
@@ -313,10 +316,10 @@ fn coded_index_width(row_counts : Array[Int], coded : CodedIndexKind) -> Int {
 
 ///|
 fn column_width(
-  row_counts : Array[Int],
+  row_counts : Array[Int32],
   heap_sizes : Byte,
   kind : ColumnKind,
-) -> Int {
+) -> Int32 {
   match kind {
     U8Column => 1
     U16Column => 2
@@ -331,10 +334,10 @@ fn column_width(
 
 ///|
 fn row_width(
-  row_counts : Array[Int],
+  row_counts : Array[Int32],
   heap_sizes : Byte,
   kind : TableKind,
-) -> Int {
+) -> Int32 {
   let mut width = 0
   for spec in table_schema(kind) {
     width = width + column_width(row_counts, heap_sizes, spec.kind)
@@ -343,7 +346,7 @@ fn row_width(
 }
 
 ///|
-fn read_width(reader : Reader, width : Int) -> UInt raise MetadataError {
+fn read_width(reader : Reader, width : Int32) -> UInt32 raise MetadataError {
   match width {
     1 => reader.read_u8().to_uint()
     2 => reader.read_u16_le().to_uint()
@@ -421,7 +424,7 @@ pub fn parse_tables(
     }
   }
   // The CLR ExtraData extension follows the variable row-count vector.
-  let mut extra_data : UInt? = None
+  let mut extra_data : UInt32? = None
   if (heap_sizes & 0x40) != 0 {
     extra_data = Some(reader.read_u32_le())
   }
@@ -444,7 +447,7 @@ pub fn parse_tables(
         )
       }
       let span = width * count
-      infos.push({ kind, row_count: count, row_width: width, row_offset })
+      infos.push({ kind, row_count: count, row_width: width, row_offset, })
       row_offset = row_offset + span
     }
   }
@@ -500,7 +503,7 @@ fn Tables::info(self : Tables, kind : TableKind) -> TableInfo? {
 pub fn Tables::get_row(
   self : Tables,
   kind : TableKind,
-  rid : Int,
+  rid : Int32,
 ) -> TableRow raise MetadataError {
   guard self.info(kind) is Some(info) else {
     return metadata_fail(
@@ -514,16 +517,16 @@ pub fn Tables::get_row(
   }
   let offset = info.row_offset + (rid - 1) * info.row_width
   let reader = Reader::new(self.bytes).slice(offset, info.row_width)
-  let values : Array[(String, UInt)] = []
+  let values : Array[(String, UInt32)] = []
   for spec in table_schema(kind) {
     let width = column_width(self.row_counts, self.heap_sizes, spec.kind)
     values.push((spec.name, read_width(reader, width)))
   }
-  { table: kind, rid, values }
+  { table: kind, rid, values, }
 }
 
 ///|
-pub fn TableRow::value(self : TableRow, name : String) -> UInt? {
+pub fn TableRow::value(self : TableRow, name : String) -> UInt32? {
   for entry in self.values {
     let (column_name, value) = entry
     if column_name == name {
@@ -534,7 +537,7 @@ pub fn TableRow::value(self : TableRow, name : String) -> UInt? {
 }
 
 ///|
-fn sorted_key_columns(kind : TableKind) -> Array[Int] {
+fn sorted_key_columns(kind : TableKind) -> Array[Int32] {
   match kind {
     InterfaceImpl => [0]
     Constant => [1]
@@ -560,8 +563,8 @@ fn sorted_key_columns(kind : TableKind) -> Array[Int] {
 fn row_key_compare(
   left : TableRow,
   right : TableRow,
-  columns : Array[Int],
-) -> Int {
+  columns : Array[Int32],
+) -> Int32 {
   for column_index in columns {
     let left_value = left.values[column_index].1
     let right_value = right.values[column_index].1

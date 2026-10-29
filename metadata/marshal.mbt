@@ -37,32 +37,32 @@ pub(all) enum NativeType {
   NativeIInspectable
   NativeHString
   NativeLPUtf8Str
-  NativeFixedString(Int)
+  NativeFixedString(Int32)
   NativeFixedArray(FixedArrayMarshal)
   NativeArray(ArrayMarshal)
-  KnownUnsupported(Int, Bytes)
+  KnownUnsupported(Int32, Bytes)
 } derive(Debug, Eq)
 
 ///|
 /// ARRAY preserves all four optional fields independently.
 pub(all) struct ArrayMarshal {
   element_type : NativeType?
-  parameter_number : Int?
-  element_multiplier : Int?
-  constant_elements : Int?
+  parameter_number : Int32?
+  element_multiplier : Int32?
+  constant_elements : Int32?
 } derive(Debug, Eq)
 
 ///|
 /// FIXEDARRAY/ByValArray has a required element count and optional subtype.
 pub(all) struct FixedArrayMarshal {
-  element_count : Int
+  element_count : Int32
   element_type : NativeType?
 } derive(Debug, Eq)
 
 ///|
 /// Raw-model hook that attaches a decoded FieldMarshal row to its exact owner.
 pub(all) struct RawFieldMarshal {
-  row_rid : Int
+  row_rid : Int32
   owner : DecodedIndex
   native_type : NativeType
 } derive(Debug, Eq)
@@ -72,7 +72,7 @@ fn marshal_count(
   reader : Reader,
   limits : ParserLimits,
   code : String,
-) -> Int raise MetadataError {
+) -> Int32 raise MetadataError {
   let raw = read_compressed_uint(reader)
   if raw.to_uint64() > limits.max_single_allocation.to_uint64() {
     return metadata_fail(
@@ -216,8 +216,8 @@ pub fn parse_native_type(
 /// Compute ARRAY elements as parameter * ElemMult + NumElem using checked arithmetic.
 pub fn ArrayMarshal::computed_element_count(
   self : ArrayMarshal,
-  parameter_value : Int?,
-) -> Int? raise MetadataError {
+  parameter_value : Int32?,
+) -> Int32? raise MetadataError {
   let constant = self.constant_elements.unwrap_or(0)
   let parameter_part = match self.parameter_number {
     None => 0L
